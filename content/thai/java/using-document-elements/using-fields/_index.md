@@ -239,7 +239,7 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
     {
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs args)
         {
-            // ไม่ทำอะไร.
+            // ไม่ต้องทำอะไรเลย
         }
         /// <สรุป>
         /// สิ่งนี้เรียกว่าเมื่อกลไกจัดการจดหมายเวียนพบฟิลด์รูปภาพ:XXX ผสานในเอกสาร
@@ -320,7 +320,7 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
         }
         public void /*IFieldMergingCallback.*/imageFieldMerging(ImageFieldMergingArgs args)
         {
-            // ไม่ทำอะไร.
+            // ไม่ต้องทำอะไรเลย
         }
         private DocumentBuilder mBuilder;
         private int mRowIdx;

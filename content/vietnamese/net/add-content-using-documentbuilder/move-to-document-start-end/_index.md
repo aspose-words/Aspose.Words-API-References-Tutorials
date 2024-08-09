@@ -9,13 +9,13 @@ url: /vi/net/add-content-using-documentbuilder/move-to-document-start-end/
 ---
 ## Giới thiệu
 
-Này! Vì vậy, bạn đang làm việc với các tài liệu Word và cần một cách để nhanh chóng chuyển về phần đầu hoặc phần cuối của tài liệu theo chương trình, phải không? Vâng, bạn đang ở đúng nơi! Trong hướng dẫn này, chúng ta sẽ tìm hiểu cách di chuyển con trỏ đến đầu hoặc cuối tài liệu Word bằng Aspose.Words cho .NET. Hãy tin tôi đi, khi hoàn thành việc này, bạn sẽ điều hướng tài liệu của mình như một người chuyên nghiệp. Bắt đầu nào!
+Này! Vì vậy, bạn đang làm việc với các tài liệu Word và cần một cách để nhanh chóng chuyển về phần đầu hoặc phần cuối của tài liệu theo chương trình, phải không? Vâng, bạn đang ở đúng nơi! Trong hướng dẫn này, chúng ta sẽ tìm hiểu cách di chuyển con trỏ đến đầu hoặc cuối tài liệu Word bằng Aspose.Words cho .NET. Hãy tin tôi đi, khi hoàn thành việc này, bạn sẽ điều hướng tài liệu của mình như một người chuyên nghiệp. Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
 Trước khi chúng ta đi sâu vào mã, hãy đảm bảo bạn có mọi thứ mình cần:
 
-1.  Aspose.Words for .NET: Đây là công cụ kỳ diệu mà chúng ta sẽ sử dụng. Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/) hoặc lấy một[dùng thử miễn phí](https://releases.aspose.com/).
+1.  Aspose.Words for .NET: Đây là công cụ kỳ diệu mà chúng ta sẽ sử dụng. bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/) hoặc lấy một[dùng thử miễn phí](https://releases.aspose.com/).
 2. Môi trường phát triển .NET: Visual Studio là một lựa chọn chắc chắn.
 3. Kiến thức cơ bản về C#: Đừng lo lắng, bạn không cần phải là một chuyên gia, nhưng một chút làm quen sẽ giúp ích rất nhiều.
 
@@ -63,11 +63,11 @@ builder.MoveToDocumentEnd();
 Console.WriteLine("\nThis is the end of the document.");
 ```
 
-`MoveToDocumentEnd()` đặt con trỏ ở cuối, sẵn sàng để bạn thêm nhiều nội dung hơn. Dễ như ăn bánh!
+`MoveToDocumentEnd()` đặt con trỏ ở cuối, sẵn sàng để bạn thêm nhiều nội dung hơn. Dễ thôi!
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Di chuyển đến đầu và cuối tài liệu trong Aspose.Words cho .NET thật dễ dàng khi bạn biết cách. Tính năng đơn giản nhưng mạnh mẽ này có thể giúp bạn tiết kiệm rất nhiều thời gian, đặc biệt khi làm việc với các tài liệu lớn hơn. Vì vậy, lần tới khi bạn cần xem lại tài liệu của mình, bạn sẽ biết chính xác phải làm gì!
+Và bạn có nó! Di chuyển đến đầu và cuối tài liệu trong Aspose.Words cho .NET thật dễ dàng khi bạn biết cách. Tính năng đơn giản nhưng mạnh mẽ này có thể giúp bạn tiết kiệm rất nhiều thời gian, đặc biệt khi làm việc với các tài liệu lớn hơn. Vì vậy, lần tới khi bạn cần xem lại tài liệu của mình, bạn sẽ biết chính xác phải làm gì!
 
 ## Câu hỏi thường gặp
 

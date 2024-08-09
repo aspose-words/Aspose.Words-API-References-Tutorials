@@ -41,7 +41,7 @@ Innan vi börjar manipulera vårt dokument måste vi ange katalogen där våra d
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där ditt Word-dokument finns.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där ditt Word-dokument finns.
 
 ## Steg 2: Ladda Word-dokumentet
 

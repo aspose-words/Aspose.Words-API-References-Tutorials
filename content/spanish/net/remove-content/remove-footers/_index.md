@@ -9,7 +9,7 @@ url: /es/net/remove-content/remove-footers/
 ---
 ## Introducción
 
-¿Alguna vez te has encontrado con dificultades para eliminar pies de página de un documento de Word? ¡No estás solo! Mucha gente se enfrenta a este desafío, especialmente cuando se trata de documentos que tienen diferentes pies de página en distintas páginas. Afortunadamente, Aspose.Words para .NET proporciona una solución perfecta para esto. En este tutorial, le explicaremos cómo eliminar pies de página de un documento de Word usando Aspose.Words para .NET. Esta guía es perfecta para desarrolladores que buscan manipular documentos de Word mediante programación con facilidad y eficiencia.
+¿Alguna vez ha tenido dificultades para eliminar pies de página de un documento de Word? ¡No estás solo! Mucha gente se enfrenta a este desafío, especialmente cuando se trata de documentos que tienen diferentes pies de página en distintas páginas. Afortunadamente, Aspose.Words para .NET proporciona una solución perfecta para esto. En este tutorial, le explicaremos cómo eliminar pies de página de un documento de Word usando Aspose.Words para .NET. Esta guía es perfecta para desarrolladores que buscan manipular documentos de Word mediante programación con facilidad y eficiencia.
 
 ## Requisitos previos
 
@@ -95,7 +95,7 @@ doc.Save(dataDir + "RemoveContent.RemoveFooters.docx");
  Sí, puede utilizar un enfoque similar para eliminar encabezados accediendo`HeaderFooterType.HeaderFirst`, `HeaderFooterType.HeaderPrimary` , y`HeaderFooterType.HeaderEven`.
 
 ### ¿Aspose.Words para .NET es de uso gratuito?
- Aspose.Words para .NET es un producto comercial, pero puede obtener una[prueba gratis](https://releases.aspose.com/) para probar sus características.
+ Aspose.Words para .NET es un producto comercial, pero puede obtener una[prueba gratuita](https://releases.aspose.com/) para probar sus características.
 
 ### ¿Puedo manipular otros elementos de un documento de Word usando Aspose.Words?
 ¡Absolutamente! Aspose.Words proporciona amplias funcionalidades para manipular texto, imágenes, tablas y más dentro de documentos de Word.

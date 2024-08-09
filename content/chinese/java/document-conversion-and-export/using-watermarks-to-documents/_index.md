@@ -121,7 +121,7 @@ options.setFontFamily("Times New Roman");
 
 ### 如何使水印变得半透明？
 
-要使水印半透明，请设置`setSemitransparent`财产`true`在里面`TextWatermarkOptions`.
+要使水印半透明，请设置`setSemitransparent`财产`true`在`TextWatermarkOptions`.
 
 ### 我可以在文档的特定部分添加水印吗？
 

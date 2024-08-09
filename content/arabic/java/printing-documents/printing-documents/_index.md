@@ -109,7 +109,7 @@ class MultipagePrintDocument implements Printable
         // حدد رقم الصفحة الأخيرة المراد طباعتها على هذه الورقة.
         int pageTo = Math.max(startPage + mPagesPerSheet - 1, toPage);
         //قم بالمرور عبر الصفحات المحددة من الصفحة الحالية المخزنة لحسابها
-        // آخر صفحة.
+        // الصفحة الأخيرة.
         for (int pageIndex = startPage; pageIndex <= pageTo; pageIndex++) {
             // حساب مؤشرات الأعمدة والصفوف.
             int rowIdx = (int) Math.floor((pageIndex - startPage) / thumbCount.getWidth());

@@ -180,7 +180,7 @@ doc.save(outPath + "WorkingWithMarkdown.CreateMarkdownDocument.md");
 ### Можно ли использовать Aspose.Words для Java бесплатно? 
     Aspose.Words for Java — коммерческий продукт, для использования которого требуется лицензия. Вы можете получить лицензию от[здесь](https://purchase.aspose.com/buy).
 
-### Существуют ли какие-либо учебные пособия или документация по Aspose.Words для Java? 
+### Существуют ли какие-либо руководства или документация по Aspose.Words для Java? 
     Да, вы можете найти подробные руководства и документацию на[Документация по API Aspose.Words для Java](https://reference.aspose.com/words/java/).
 
 ### Где я могу получить поддержку Aspose.Words для Java? 

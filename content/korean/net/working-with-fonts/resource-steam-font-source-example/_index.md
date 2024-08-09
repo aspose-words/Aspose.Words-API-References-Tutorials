@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /ko/net/working-with-fonts/resource-steam-font-source-example/
 ---
+## 소개
 
 .NET에서 문서 작업을 하고 Aspose.Words를 사용하는 경우 글꼴 소스 관리는 문서가 예상대로 보이도록 하는 데 중요한 측면이 될 수 있습니다. Aspose.Words는 리소스 스트림 사용을 포함하여 글꼴을 처리하는 강력한 방법을 제공합니다. 이 가이드에서는 .NET용 Aspose.Words를 사용하여 리소스 스트림을 글꼴 소스로 사용하는 방법을 안내합니다. 뛰어들어보자!
 
@@ -103,7 +104,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 
 ### Q4: Aspose.Words에 대한 지원은 어디서 찾을 수 있나요?
 
- 방문하다[Aspose.Words 지원 포럼](https://forum.aspose.com/c/words/8) 도움을 위해.
+ 방문[Aspose.Words 지원 포럼](https://forum.aspose.com/c/words/8) 도움을 위해.
 
 ### Q5: Aspose.Words에 대한 임시 라이선스를 얻을 수 있나요?
 

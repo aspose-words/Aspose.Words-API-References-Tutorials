@@ -1,6 +1,6 @@
 ---
-title: Skriv alla Css-regler i en fil
-linktitle: Skriv alla Css-regler i en fil
+title: Skriv alla CSS-regler i en fil
+linktitle: Skriv alla CSS-regler i en fil
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du konverterar Word-dokument till HTML med Aspose.Words för .NET med alla CSS-regler i en enda fil för renare kod och enklare underhåll.
 type: docs
@@ -16,7 +16,7 @@ Har du någonsin funnit dig trasslad i nätet av CSS-regler utspridda överallt 
 Innan vi dyker in i det nitty-gritty, låt oss få våra ankor på rad. Här är vad du behöver för att komma igång:
 
 1.  Aspose.Words for .NET: Se till att du har Aspose.Words for .NET-biblioteket. Om du inte har det än så kan du[ladda ner den här](https://releases.aspose.com/words/net/).
-2. .NET-utvecklingsmiljö: Du behöver en .NET-utvecklingsmiljö konfigurerad på din maskin. Visual Studio är ett populärt val.
+2. .NET-utvecklingsmiljö: Du behöver en .NET-utvecklingsmiljö konfigurerad på din dator. Visual Studio är ett populärt val.
 3. Grundläggande kunskaper i C#: En grundläggande förståelse för C#-programmering kommer att vara till hjälp.
 4. Ett Word-dokument: Ha ett Word-dokument (.docx) redo som du vill konvertera.
 

@@ -2,94 +2,90 @@
 title: Revisionen in Sprechblasen anzeigen
 linktitle: Revisionen in Sprechblasen anzeigen
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Zeigen Sie Revisionen in Sprechblasen mit Aspose.Words für .NET an.
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Revisionen in Sprechblasen anzeigen. Diese ausführliche Anleitung führt Sie durch jeden Schritt und stellt sicher, dass Ihre Dokumentänderungen klar und organisiert sind.
 type: docs
 weight: 10
 url: /de/net/working-with-revisions/show-revisions-in-balloons/
 ---
+## Einführung
 
-In dieser Schritt-für-Schritt-Anleitung zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET Revisionen in Sprechblasen in einem Word-Dokument anzeigen. Wir stellen Ihnen den vollständigen Quellcode zur Verfügung und zeigen Ihnen, wie Sie die Markdown-Ausgabe formatieren.
+Das Nachverfolgen von Änderungen in einem Word-Dokument ist für die Zusammenarbeit und Bearbeitung von entscheidender Bedeutung. Aspose.Words für .NET bietet robuste Tools zum Verwalten dieser Revisionen und sorgt so für Übersichtlichkeit und einfache Überprüfung. Mit diesem Leitfaden können Sie Revisionen in Sprechblasen anzeigen, sodass Sie leichter erkennen können, welche Änderungen vorgenommen wurden und von wem.
 
-## Schritt 1: Dokument einlegen
+## Voraussetzungen
 
-Der erste Schritt besteht darin, das Dokument mit den Revisionen hochzuladen.
+Bevor wir beginnen, stellen Sie sicher, dass Sie Folgendes haben:
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(MyDir + "Revisions.docx");
-```
+-  Aspose.Words für .NET-Bibliothek. Sie können es herunterladen[Hier](https://releases.aspose.com/words/net/).
+-  Eine gültige Aspose-Lizenz. Wenn Sie keine haben, können Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/).
+- Visual Studio oder jede andere IDE, die .NET-Entwicklung unterstützt.
+- Grundlegende Kenntnisse von C# und .NET Framework.
 
-## Schritt 2: Konfigurieren Sie die Anzeigeoptionen für Rezensionen
+## Namespaces importieren
 
-Wir werden die Anzeigeoptionen so konfigurieren, dass Revisionen in Sprechblasen sichtbar werden.
-
-```csharp
-doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
-doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
-doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
-```
-
-## Schritt 3: Speichern Sie das Dokument im PDF-Format
-
-Abschließend speichern wir das Dokument als PDF, wobei die Änderungen in Sprechblasen angezeigt werden.
+Als Erstes importieren wir die erforderlichen Namespaces in Ihr C#-Projekt. Diese Namespaces sind für den Zugriff auf die Aspose.Words-Funktionen unerlässlich.
 
 ```csharp
-doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
+using Aspose.Words;
+using Aspose.Words.Layout;
+using Aspose.Words.RevisionOptions;
 ```
 
-## Markdown-Ausgabeformate
+Lassen Sie uns den Prozess in einfache, leicht zu befolgende Schritte unterteilen.
 
-Die Ausgabe kann zur besseren Lesbarkeit in Markdown formatiert werden. Beispiel:
+## Schritt 1: Laden Sie Ihr Dokument
 
-```markdown
-- Revisions are Showed in bubbles with revision bars on the right side.
-```
-
-### Beispielquellcode für „Show Revisions In Balloons“ mit Aspose.Words für .NET
-
-Hier ist der vollständige Quellcode zum Anzeigen von Revisionen in Sprechblasen in einem Dokument mit Aspose.Words für .NET:
+Zuerst müssen wir das Dokument laden, das die Revisionen enthält. Stellen Sie sicher, dass Ihr Dokumentpfad korrekt ist.
 
 ```csharp
 // Der Pfad zum Dokumentverzeichnis.
-string dataDir = "YOUR DOCUMENT DIRECTORY";	
-Document doc = new Document(MyDir + "Revisions.docx");
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Revisions.docx");
+```
 
+## Schritt 2: Revisionsoptionen konfigurieren
+
+Als Nächstes konfigurieren wir die Revisionsoptionen, um eingefügte Revisionen inline anzuzeigen und gelöschte und formatierte Revisionen in Sprechblasen anzuzeigen. Dadurch können die verschiedenen Revisionstypen leichter unterschieden werden.
+
+```csharp
 // Rendert, fügt Revisionen inline ein und löscht und formatiert Revisionen in Sprechblasen.
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
 doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
+```
+
+## Schritt 3: Position der Revisionsleisten festlegen
+
+Um das Dokument noch lesbarer zu machen, können wir die Position der Revisionsleisten festlegen. In diesem Beispiel platzieren wir sie auf der rechten Seite der Seite.
+
+```csharp
 // Rendert Revisionsleisten auf der rechten Seite einer Seite.
 doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
+```
 
+## Schritt 4: Speichern Sie das Dokument
+
+Abschließend speichern wir das Dokument als PDF. So können wir die Änderungen im gewünschten Format sehen.
+
+```csharp
 doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
 ```
 
 ## Abschluss
 
-In diesem Tutorial haben wir gelernt, wie man mit Aspose.Words für .NET Revisionen in Sprechblasen in einem Word-Dokument anzeigt. Durch die Verwendung der entsprechenden Anzeigeoptionen konnten wir die Revisionen in Sprechblasen mit Revisionsbalken auf der rechten Seite sichtbar machen. Aspose.Words für .NET bietet viele leistungsstarke Funktionen zum Bearbeiten von Word-Dokumenten, einschließlich Revisionsverwaltung. Jetzt können Sie dieses Wissen nutzen, um mit Aspose.Words für .NET Revisionen in Sprechblasen in Ihren eigenen Word-Dokumenten anzuzeigen.
+Und da haben Sie es! Indem Sie diese einfachen Schritte befolgen, können Sie mit Aspose.Words für .NET problemlos Revisionen in Sprechblasen anzeigen. Dies macht das Überprüfen und Zusammenarbeiten an Dokumenten zum Kinderspiel und stellt sicher, dass alle Änderungen klar sichtbar und organisiert sind. Viel Spaß beim Programmieren!
 
+## Häufig gestellte Fragen
 
-### Häufig gestellte Fragen
+### Kann ich die Farbe der Revisionsleisten anpassen?
+Ja, Aspose.Words ermöglicht es Ihnen, die Farbe der Revisionsleisten nach Ihren Wünschen anzupassen.
 
-#### F: Wie lade ich ein Dokument in Aspose.Words für .NET hoch?
+### Ist es möglich, in Sprechblasen nur bestimmte Revisionstypen anzuzeigen?
+Auf jeden Fall. Sie können Aspose.Words so konfigurieren, dass in Sprechblasen nur bestimmte Revisionstypen angezeigt werden, z. B. Löschungen oder Formatierungsänderungen.
 
- A: Verwenden Sie die`Document` Klasse von Aspose.Words für .NET, um ein Dokument aus einer Datei zu laden. Sie können den vollständigen Dokumentpfad angeben.
+### Wie erhalte ich eine temporäre Lizenz für Aspose.Words?
+ Sie können eine temporäre Lizenz erhalten[Hier](https://purchase.aspose.com/temporary-license/).
 
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
+### Kann ich Aspose.Words für .NET mit anderen Programmiersprachen verwenden?
+Aspose.Words ist in erster Linie für .NET konzipiert, Sie können es jedoch mit jeder .NET-unterstützten Sprache verwenden, einschließlich VB.NET und C.++/CLI.
 
-#### F: Wie werden mit Aspose.Words für .NET Revisionen in Sprechblasen angezeigt?
-
- A: Verwenden Sie die`ShowInBalloons` Eigentum der`RevisionOptions` Objekt, um die Anzeige von Revisionen in Sprechblasen zu konfigurieren. Sie können diese Eigenschaft festlegen auf`ShowInBalloons.FormatAndDelete` um Revisionen in Sprechblasen mit Lösch- und Formatierungsrevisionen anzuzeigen.
-
-```csharp
-doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
-```
-
-#### F: Wie speichere ich mit Aspose.Words für .NET ein Dokument im PDF-Format?
-
- A: Verwenden Sie die`Save` Methode der`Document` Objekt, um das Dokument im PDF-Format zu speichern. Sie müssen den vollständigen Zielpfad mit der Erweiterung „.pdf“ angeben.
-
-```csharp
-doc.Save("path/to/destination/document.pdf");
-```
+### Unterstützt Aspose.Words außer Word auch andere Dokumentformate?
+Ja, Aspose.Words unterstützt verschiedene Dokumentformate, darunter PDF, HTML, EPUB und mehr.

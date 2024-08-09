@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-txtloadoptions/document-text-direction/
 ---
-## Úvod
+## Zavedení
 
 Při práci s dokumenty aplikace Word, zejména s těmi, které obsahují více jazyků nebo speciální potřeby formátování, může být rozhodující nastavení směru textu. Například při práci s jazyky se zápisem zprava doleva, jako je hebrejština nebo arabština, možná budete muset odpovídajícím způsobem upravit směr textu. V této příručce si projdeme, jak nastavit směr textu dokumentu pomocí Aspose.Words pro .NET. 
 
@@ -58,7 +58,7 @@ TxtLoadOptions loadOptions = new TxtLoadOptions { DocumentDirection = DocumentDi
 Document doc = new Document(dataDir + "Hebrew text.txt", loadOptions);
 ```
 
- Tady,`"Hebrew text.txt"` je název vašeho textového souboru. Ujistěte se, že tento soubor existuje ve vašem zadaném adresáři.
+ Zde,`"Hebrew text.txt"` je název vašeho textového souboru. Ujistěte se, že tento soubor existuje ve vašem zadaném adresáři.
 
 ## Krok 4: Otevřete a zkontrolujte obousměrné formátování odstavce
 
@@ -79,7 +79,7 @@ Nakonec dokument uložte, abyste změny použili a zachovali.
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 ```
 
- Tady,`"WorkingWithTxtLoadOptions.DocumentTextDirection.docx"` je název výstupního souboru. Ujistěte se, že jste vybrali název, který odráží změny, které jste provedli.
+ Zde,`"WorkingWithTxtLoadOptions.DocumentTextDirection.docx"` je název výstupního souboru. Ujistěte se, že jste vybrali název, který odráží změny, které jste provedli.
 
 ## Závěr
 
@@ -105,4 +105,4 @@ Nastavení směru textu v dokumentech aplikace Word je s Aspose.Words pro .NET j
 
 ### Kde najdu další informace o Aspose.Words pro .NET?
 
- Pro více podrobností se podívejte na[Aspose.Words pro dokumentaci .NET](https://reference.aspose.com/words/net/) . Můžete také prozkoumat další zdroje, např[Odkaz ke stažení](https://releases.aspose.com/words/net/), [Koupit](https://purchase.aspose.com/buy), [Zkušební verze zdarma](https://releases.aspose.com/), [Dočasná licence](https://purchase.aspose.com/temporary-license/) , a[Podpěra, podpora](https://forum.aspose.com/c/words/8).
+ Pro více podrobností se podívejte na[Aspose.Words pro dokumentaci .NET](https://reference.aspose.com/words/net/) . Můžete také prozkoumat další zdroje, např[Odkaz ke stažení](https://releases.aspose.com/words/net/), [Nakoupit](https://purchase.aspose.com/buy), [Bezplatná zkušební verze](https://releases.aspose.com/), [Dočasná licence](https://purchase.aspose.com/temporary-license/) a[Podpora](https://forum.aspose.com/c/words/8).

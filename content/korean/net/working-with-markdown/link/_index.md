@@ -2,57 +2,82 @@
 title: 링크
 linktitle: 링크
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 링크를 삽입하는 방법을 알아보세요. 단계별 가이드.
+description: 이 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에 하이퍼링크를 삽입하는 방법을 알아보세요. 대화형 링크로 문서를 쉽게 개선하세요.
 type: docs
 weight: 10
 url: /ko/net/working-with-markdown/link/
 ---
+## 소개
 
-이 예에서는 Aspose.Words for .NET에서 링크 기능을 사용하는 방법을 안내합니다. 링크는 웹사이트나 기타 문서에 대한 클릭 가능한 참조를 만드는 데 사용됩니다.
+Word 문서에 하이퍼링크를 추가하면 문서를 정적 텍스트에서 동적 대화형 리소스로 변환할 수 있습니다. 외부 웹사이트, 이메일 주소 또는 문서 내의 다른 섹션에 연결하는 경우 Aspose.Words for .NET은 이러한 작업을 프로그래밍 방식으로 처리할 수 있는 강력하고 유연한 방법을 제공합니다. 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에 하이퍼링크를 삽입하는 방법을 살펴보겠습니다. 
 
-## 1단계: 문서 생성기 사용
+## 전제 조건
 
-먼저 문서 생성기를 사용하여 문서에 콘텐츠를 추가하겠습니다.
+코드를 살펴보기 전에 시작하려면 몇 가지 사항이 필요합니다.
+
+1.  Visual Studio: 컴퓨터에 Visual Studio가 설치되어 있는지 확인하세요. 다음에서 다운로드할 수 있습니다.[마이크로소프트의 웹사이트](https://visualstudio.microsoft.com/).
+
+2.  .NET용 Aspose.Words: Aspose.Words 라이브러리가 필요합니다. 다음에서 다운로드할 수 있습니다.[Aspose 웹사이트](https://releases.aspose.com/words/net/).
+
+3. 기본 C# 지식: 이 튜토리얼에는 C# 코드 작성이 포함되므로 C# 프로그래밍에 익숙하면 도움이 됩니다.
+
+4.  Aspose 라이선스: 무료 평가판이나 임시 라이선스로 시작할 수 있습니다. 자세한 내용은 다음을 방문하세요.[Aspose의 무료 평가판 페이지](https://releases.aspose.com/).
+
+## 네임스페이스 가져오기
+
+시작하려면 필요한 네임스페이스를 가져와야 합니다. C# 프로젝트에서 이를 수행하는 방법은 다음과 같습니다.
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+이러한 네임스페이스는 Word 문서와 테이블을 조작하는 데 필요한 필수 클래스와 메서드를 제공합니다.
+
+Aspose.Words for .NET을 사용하여 Word 문서에 하이퍼링크를 삽입하는 과정을 살펴보겠습니다. 이를 명확하고 실행 가능한 단계로 나누어 보겠습니다.
+
+## 1단계: DocumentBuilder 초기화
+
+ 문서에 내용을 추가하려면 다음을 사용해야 합니다.`DocumentBuilder`. 이 클래스는 텍스트와 하이퍼링크를 포함하여 다양한 유형의 콘텐츠를 삽입하는 메서드를 제공합니다.
+
+```csharp
+// DocumentBuilder 인스턴스 만들기
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## 2단계: 링크 삽입
+ 그만큼`DocumentBuilder` 클래스는 문서를 구성하고 수정할 수 있는 다목적 도구입니다.
 
- 다음을 사용하여 링크를 삽입할 수 있습니다.`InsertHyperlink` 문서 생성기의 방법. 여기서는 "Aspose"라는 링크 텍스트와 대상 URL을 지정해야 합니다.
+## 2단계: 하이퍼링크 삽입
+
+ 이제 문서에 하이퍼링크를 삽입해 보겠습니다. 사용`InsertHyperlink` 에서 제공하는 방법`DocumentBuilder`. 
 
 ```csharp
+// 하이퍼링크 삽입
 builder.InsertHyperlink("Aspose", "https://www.aspose.com", 거짓);
 ```
 
-### .NET용 Aspose.Words와의 링크에 대한 예제 소스 코드
+각 매개변수의 역할은 다음과 같습니다.
+- `"Aspose"`: 하이퍼링크로 표시될 텍스트입니다.
+- `"https://www.aspose.com"`: 하이퍼링크가 가리키는 URL입니다.
+- `false` 이 매개변수는 링크를 하이퍼링크로 표시할지 여부를 결정합니다. 다음으로 설정`false` 표준 텍스트 하이퍼링크로 만듭니다.
 
+## 결론
 
-```csharp
-// 문서 빌더를 사용하여 문서에 콘텐츠를 추가합니다.
-DocumentBuilder builder = new DocumentBuilder();
+Aspose.Words for .NET을 사용하여 Word 문서에 하이퍼링크를 삽입하는 것은 간단한 과정입니다. 다음 단계를 따르면 문서에 대화형 링크를 쉽게 추가하여 기능과 사용자 참여를 향상시킬 수 있습니다. 이 기능은 참조, 외부 리소스 또는 탐색 요소가 포함된 문서를 만드는 데 특히 유용합니다.
 
-// 링크를 삽입하세요.
-builder.InsertHyperlink("Aspose", "https://www.aspose.com", 거짓);
-```
-축하합니다! 이제 Aspose.Words for .NET에서 링크 기능을 사용하는 방법을 배웠습니다.
+## FAQ
 
+### Word 문서에 여러 하이퍼링크를 삽입하려면 어떻게 해야 합니까?
+ 간단히 반복하세요.`InsertHyperlink` 추가하려는 각 하이퍼링크에 대해 서로 다른 매개 변수를 사용하는 메서드입니다.
 
-### FAQ
+### 하이퍼링크 텍스트의 스타일을 지정할 수 있나요?
+ 예, 다음을 사용할 수 있습니다.`DocumentBuilder` 하이퍼링크 텍스트에 서식을 적용하는 방법.
 
-#### Q: Aspose.Words의 URL에 어떻게 연결할 수 있나요?
+### 동일한 문서 내의 특정 섹션에 대한 하이퍼링크를 어떻게 만듭니까?
+문서의 책갈피를 사용하여 내부 링크를 만듭니다. 책갈피를 삽입한 다음 해당 책갈피를 가리키는 하이퍼링크를 만듭니다.
 
- A: Aspose.Words의 URL 주소에 연결하려면 다음을 사용할 수 있습니다.`<a>` 태그를 지정하세요.`href` URL 주소가 포함된 속성입니다. 예를 들어 다음을 사용할 수 있습니다.`<a href="https://www.aspose.com">Click Here</a>` 표시 텍스트 "여기를 클릭하세요"를 사용하여 URL "https://www.example.com"에 하이퍼링크합니다.
+### Aspose.Words를 사용하여 이메일 하이퍼링크를 추가할 수 있습니까?
+ 예, 다음을 사용하여 이메일 하이퍼링크를 생성할 수 있습니다.`mailto:` 하이퍼링크 URL의 프로토콜, 예:`mailto:example@example.com`.
 
-#### Q: Aspose.Words의 내부 북마크에 연결할 수 있나요?
-
- A: 예, Aspose.Words의 내부 북마크에 연결하는 것이 가능합니다. 당신은 사용할 수 있습니다`<a>` 태그를 지정하세요.`href` 해시(#) 뒤에 책갈피 이름이 포함된 속성입니다. 예를 들어,`<a href="#bookmark1">Go to bookmark 1</a>` 문서의 "bookmark1"이라는 책갈피에 연결됩니다.
-
-#### Q: Aspose.Words에서 링크의 표시 텍스트를 어떻게 사용자 정의할 수 있나요?
-
- A: Aspose.Words에서 링크의 표시 텍스트를 사용자 정의하려면`<a>` 태그. 예를 들어,`<a href="https://www.aspose.com">Click here</a>` "여기를 클릭하세요"라는 텍스트가 하이퍼링크로 표시됩니다.
-
-#### Q: Aspose.Words에서 링크 대상을 지정할 수 있나요?
-
-A: 예, Aspose.Words에서 링크 대상을 지정할 수 있습니다.`target` 의 속성`<a>` 꼬리표. 예를 들어,`<a href="https://www.aspose.com" target="_blank">Open in new window</a>` 새 창이나 탭에서 링크가 열립니다.
+### 클라우드 서비스에 저장된 문서에 연결해야 하면 어떻게 되나요?
+URL에 액세스할 수 있는 한 클라우드 서비스에 저장된 문서를 가리키는 URL을 포함하여 모든 URL에 연결할 수 있습니다.

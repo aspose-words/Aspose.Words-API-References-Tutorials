@@ -73,7 +73,7 @@ Document dstDocument = new Document(dataDir + "Northwind traders.docx");
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = true };
 ```
 
- व्यवस्थित करके`IgnoreHeaderFooter` को`true`, हम Aspose.Words को मर्ज प्रक्रिया के दौरान हेडर और फ़ुटर को अनदेखा करने के लिए कह रहे हैं।
+ सेटिंग करके`IgnoreHeaderFooter` को`true`, हम Aspose.Words को मर्ज प्रक्रिया के दौरान हेडर और फ़ुटर को अनदेखा करने के लिए कह रहे हैं।
 
 ## चरण 4: दस्तावेज़ों को मर्ज करें
 

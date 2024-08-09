@@ -20,7 +20,7 @@ Bu belge formatı işleme yolculuğuna çıkmak için öncelikle ortamımızı k
 
 ### Aspose.Words for Java'nın Kurulumu
 
-Aspose.Words for Java'yı kullanmak için Aspose.Words JAR dosyasını projenize eklemeniz gerekir. Bu adımları takip et:
+Aspose.Words for Java'yı kullanmak için Aspose.Words JAR dosyasını projenize eklemeniz gerekir. Şu adımları izleyin:
 
 1.  Aspose.Words for Java'yı indirin: Aspose web sitesini ziyaret edin[Burada](https://releases.aspose.com/words/java/) Aspose.Words for Java'nın en son sürümünü edinmek için.
 

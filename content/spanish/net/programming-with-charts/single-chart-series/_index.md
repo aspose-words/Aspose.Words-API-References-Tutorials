@@ -2,7 +2,7 @@
 title: Personalizar series de gráficos únicos en un gráfico
 linktitle: Personalizar series de gráficos únicos en un gráfico
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a personalizar series de gráficos individuales en un documento de Word usando Aspose.Words para .NET. Siga nuestra guía paso a paso para disfrutar de una experiencia perfecta.
+description: Aprenda a personalizar series de gráficos únicos en un documento de Word usando Aspose.Words para .NET. Siga nuestra guía paso a paso para disfrutar de una experiencia perfecta.
 type: docs
 weight: 10
 url: /es/net/programming-with-charts/single-chart-series/
@@ -112,7 +112,7 @@ doc.Save(dataDir + "WorkingWithCharts.SingleChartSeries.docx");
 Aspose.Words para .NET es una poderosa biblioteca que le permite crear, editar, convertir y manipular documentos de Word mediante programación.
 
 ### ¿Puedo utilizar Aspose.Words gratis?
- Sí, puedes empezar con un[prueba gratis](https://releases.aspose.com/).
+ Sí, puedes empezar con un[prueba gratuita](https://releases.aspose.com/).
 
 ### ¿Cómo obtengo soporte para Aspose.Words?
  Puede obtener apoyo de la comunidad Aspose en su[foro](https://forum.aspose.com/c/words/8).
@@ -121,4 +121,4 @@ Aspose.Words para .NET es una poderosa biblioteca que le permite crear, editar, 
 ¡Absolutamente! Aspose.Words admite varios tipos de gráficos, como gráficos de barras, circulares y de dispersión.
 
 ### ¿Dónde puedo encontrar más documentación?
- Revisar la[documentación](https://reference.aspose.com/words/net/) para obtener guías y ejemplos más detallados.
+ Mira el[documentación](https://reference.aspose.com/words/net/) para obtener guías y ejemplos más detallados.

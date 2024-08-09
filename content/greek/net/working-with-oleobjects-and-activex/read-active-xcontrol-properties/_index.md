@@ -2,106 +2,122 @@
 title: Διαβάστε τις ιδιότητες του Active XControl από το αρχείο Word
 linktitle: Διαβάστε τις ιδιότητες του Active XControl από το αρχείο Word
 second_title: Aspose.Words Document Processing API
-description: Διαβάστε τις ιδιότητες των στοιχείων ελέγχου ActiveX σε ένα αρχείο Word με το Aspose.Words για .NET.
+description: Μάθετε πώς να διαβάζετε τις ιδιότητες ελέγχου ActiveX από αρχεία Word χρησιμοποιώντας το Aspose.Words για .NET σε έναν οδηγό βήμα προς βήμα. Βελτιώστε τις δεξιότητές σας στον αυτοματισμό εγγράφων.
 type: docs
 weight: 10
 url: /el/net/working-with-oleobjects-and-activex/read-active-xcontrol-properties/
 ---
+## Εισαγωγή
 
-Σε αυτόν τον οδηγό βήμα προς βήμα, θα σας δείξουμε πώς να διαβάζετε τις ιδιότητες των στοιχείων ελέγχου ActiveX σε ένα αρχείο Word χρησιμοποιώντας το Aspose.Words για .NET. Θα σας παρέχουμε τον πλήρη πηγαίο κώδικα και θα σας δείξουμε πώς να μορφοποιήσετε την έξοδο σήμανσης.
+Στη σημερινή ψηφιακή εποχή, η αυτοματοποίηση είναι το κλειδί για την ενίσχυση της παραγωγικότητας. Εάν εργάζεστε με έγγραφα του Word που περιέχουν στοιχεία ελέγχου ActiveX, ίσως χρειαστεί να διαβάσετε τις ιδιότητές τους για διάφορους σκοπούς. Τα στοιχεία ελέγχου ActiveX, όπως τα πλαίσια ελέγχου και τα κουμπιά, μπορούν να περιέχουν σημαντικά δεδομένα. Χρησιμοποιώντας το Aspose.Words για .NET, μπορείτε να εξαγάγετε και να χειρίζεστε αποτελεσματικά αυτά τα δεδομένα μέσω προγραμματισμού.
 
-## Βήμα 1: Αρχικοποίηση εγγράφου
+## Προαπαιτούμενα
 
- Το πρώτο βήμα είναι να αρχικοποιήσετε το`Document` αντικείμενο φορτώνοντας το έγγραφο του Word που περιέχει τα στοιχεία ελέγχου ActiveX. Φροντίστε να αντικαταστήσετε`MyDir` με την πραγματική διαδρομή προς τον κατάλογο που περιέχει το έγγραφο.
+Πριν ξεκινήσουμε, βεβαιωθείτε ότι έχετε τα εξής:
+
+1.  Aspose.Words for .NET Library: Μπορείτε να το κατεβάσετε από[εδώ](https://releases.aspose.com/words/net/).
+2. Visual Studio ή οποιοδήποτε C# IDE: Για να γράψετε και να εκτελέσετε τον κώδικά σας.
+3. Ένα έγγραφο του Word με στοιχεία ελέγχου ActiveX: Για παράδειγμα, "ActiveX controls.docx".
+4. Βασικές γνώσεις C#: Απαραίτητη η εξοικείωση με τον προγραμματισμό C#.
+
+## Εισαγωγή χώρων ονομάτων
+
+Αρχικά, ας εισαγάγουμε τους απαραίτητους χώρους ονομάτων για εργασία με το Aspose.Words για .NET.
 
 ```csharp
-Document doc = new Document(MyDir + "ActiveX controls.docx");
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Ole;
+using System;
 ```
 
-## Βήμα 2: Ανάκτηση στοιχείων ελέγχου ActiveX
+## Βήμα 1: Φορτώστε το έγγραφο του Word
 
- Σε αυτό το βήμα, θα επαναλάβουμε το καθένα`Shape` του εγγράφου για να ανακτήσετε τα στοιχεία ελέγχου ActiveX και να διαβάσετε τις ιδιότητές τους.
+Για να ξεκινήσετε, θα χρειαστεί να φορτώσετε το έγγραφο του Word που περιέχει τα στοιχεία ελέγχου ActiveX.
+
+```csharp
+// Διαδρομή στον κατάλογο εγγράφων σας
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "ActiveX controls.docx");
+```
+
+## Βήμα 2: Αρχικοποιήστε μια συμβολοσειρά για διατήρηση ιδιοτήτων
+
+Στη συνέχεια, αρχικοποιήστε μια κενή συμβολοσειρά για να αποθηκεύσετε τις ιδιότητες των στοιχείων ελέγχου ActiveX.
 
 ```csharp
 string properties = "";
-foreach(Shape shape in doc.GetChildNodes(NodeType.Shape, true))
+```
+
+## Βήμα 3: Επανάληψη μέσω σχημάτων στο έγγραφο
+
+Πρέπει να επαναλάβουμε όλα τα σχήματα του εγγράφου για να βρούμε τα στοιχεία ελέγχου ActiveX.
+
+```csharp
+foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))
 {
-     if (shape.OleFormat is null) break;
+    if (shape.OleFormat is null) continue;
+    
+    OleControl oleControl = shape.OleFormat.OleControl;
+    if (oleControl.IsForms2OleControl)
+    {
+        // Επεξεργαστείτε το στοιχείο ελέγχου ActiveX
+    }
+}
+```
 
-     OleControl oleControl = shape.OleFormat.OleControl;
-     if (oleControl.IsForms2OleControl)
-     {
-         Forms2OleControl checkBox = (Forms2OleControl)oleControl;
-         properties = properties + "\nCaption: " + checkBox.Caption;
-         properties = properties + "\nValue: " + checkBox.Value;
-         properties = properties + "\nEnabled: " + checkBox.Enabled;
-         properties = properties + "\nType: " + checkBox.Type;
-         if (checkBox. ChildNodes != null)
-         {
-             properties = properties + "\nChildNodes: " + checkBox.ChildNodes;
-         }
+## Βήμα 4: Εξαγωγή ιδιοτήτων από τα στοιχεία ελέγχου ActiveX
 
-         properties += "\n";
-     }
+Εντός του βρόχου, ελέγξτε εάν το στοιχείο ελέγχου είναι Forms2OleControl. Αν είναι, πετάξτε το και εξάγετε τις ιδιότητες.
+
+```csharp
+Forms2OleControl checkBox = (Forms2OleControl) oleControl;
+properties += "\nCaption: " + checkBox.Caption;
+properties += "\nValue: " + checkBox.Value;
+properties += "\nEnabled: " + checkBox.Enabled;
+properties += "\nType: " + checkBox.Type;
+
+if (checkBox.ChildNodes != null)
+{
+    properties += "\nChildNodes: " + checkBox.ChildNodes;
 }
 
-properties = properties + "\nTotal ActiveX Controls found: " + doc.GetChildNodes(NodeType.Shape, true).Count;
+properties += "\n";
+```
+
+## Βήμα 5: Μετρήστε τα συνολικά στοιχεία ελέγχου ActiveX
+
+Μετά την επανάληψη όλων των σχημάτων, μετρήστε τον συνολικό αριθμό των στοιχείων ελέγχου ActiveX που βρέθηκαν.
+
+```csharp
+properties += "\nTotal ActiveX Controls found: " + doc.GetChildNodes(NodeType.Shape, true).Count;
+```
+
+## Βήμα 6: Εμφάνιση των Ιδιοτήτων
+
+Τέλος, εκτυπώστε τις ιδιότητες που έχουν εξαχθεί στην κονσόλα.
+
+```csharp
 Console.WriteLine("\n" + properties);
 ```
 
-### Παράδειγμα πηγαίου κώδικα για τις ιδιότητες Read Active XControl χρησιμοποιώντας Aspose.Words για .NET
+## Σύναψη
 
-Ακολουθεί ο πλήρης πηγαίος κώδικας για την ανάγνωση ιδιοτήτων των στοιχείων ελέγχου ActiveX χρησιμοποιώντας το Aspose.Words για .NET:
+Και ορίστε το! Μάθατε με επιτυχία πώς να διαβάζετε τις ιδιότητες ελέγχου ActiveX από ένα έγγραφο του Word χρησιμοποιώντας το Aspose.Words για .NET. Αυτό το σεμινάριο κάλυψε τη φόρτωση ενός εγγράφου, την επανάληψη μέσω σχημάτων και την εξαγωγή ιδιοτήτων από τα στοιχεία ελέγχου ActiveX. Ακολουθώντας αυτά τα βήματα, μπορείτε να αυτοματοποιήσετε την εξαγωγή σημαντικών δεδομένων από τα έγγραφα του Word, βελτιώνοντας την αποτελεσματικότητα της ροής εργασιών σας.
 
-```csharp
-	Document doc = new Document(MyDir + "ActiveX controls.docx");
+## Συχνές ερωτήσεις
 
-	string properties = "";
-	foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))
-	{
-		if (shape.OleFormat is null) break;
+### Τι είναι τα στοιχεία ελέγχου ActiveX στα έγγραφα του Word;
+Τα στοιχεία ελέγχου ActiveX είναι διαδραστικά αντικείμενα ενσωματωμένα σε έγγραφα του Word, όπως πλαίσια ελέγχου, κουμπιά και πεδία κειμένου, που χρησιμοποιούνται για τη δημιουργία φορμών και την αυτοματοποίηση εργασιών.
 
-		OleControl oleControl = shape.OleFormat.OleControl;
-		if (oleControl.IsForms2OleControl)
-		{
-			Forms2OleControl checkBox = (Forms2OleControl) oleControl;
-			properties = properties + "\nCaption: " + checkBox.Caption;
-			properties = properties + "\nValue: " + checkBox.Value;
-			properties = properties + "\nEnabled: " + checkBox.Enabled;
-			properties = properties + "\nType: " + checkBox.Type;
-			if (checkBox.ChildNodes != null)
-			{
-				properties = properties + "\nChildNodes: " + checkBox.ChildNodes;
-			}
+### Μπορώ να τροποποιήσω τις ιδιότητες των στοιχείων ελέγχου ActiveX χρησιμοποιώντας το Aspose.Words για .NET;
+Ναι, το Aspose.Words για .NET σάς επιτρέπει να τροποποιείτε τις ιδιότητες των στοιχείων ελέγχου ActiveX μέσω προγραμματισμού.
 
-			properties += "\n";
-		}
-	}
+### Είναι δωρεάν η χρήση του Aspose.Words για .NET;
+ Το Aspose.Words για .NET προσφέρει μια δωρεάν δοκιμή, αλλά θα χρειαστεί να αγοράσετε μια άδεια χρήσης για συνεχή χρήση. Μπορείτε να λάβετε μια δωρεάν δοκιμή[εδώ](https://releases.aspose.com/).
 
-	properties = properties + "\nTotal ActiveX Controls found: " + doc.GetChildNodes(NodeType.Shape, true).Count;
-	Console.WriteLine("\n" + properties);
-```
+### Μπορώ να χρησιμοποιήσω το Aspose.Words για .NET με άλλες γλώσσες .NET εκτός από τη C#;
+Ναι, το Aspose.Words για .NET μπορεί να χρησιμοποιηθεί με οποιαδήποτε γλώσσα .NET, συμπεριλαμβανομένων των VB.NET και F#.
 
-## συμπέρασμα
-
-Αυτός ο οδηγός σάς έδειξε πώς να διαβάζετε τις ιδιότητες των στοιχείων ελέγχου ActiveX σε ένα αρχείο Word χρησιμοποιώντας το Aspose.Words για .NET. Ακολουθώντας τα βήματα που περιγράφονται, μπορείτε να αρχικοποιήσετε το έγγραφο, να ανακτήσετε στοιχεία ελέγχου ActiveX και να διαβάσετε τις ιδιότητές τους. Χρησιμοποιήστε το δείγμα κώδικα που παρέχεται ως σημείο εκκίνησης και προσαρμόστε τον στις συγκεκριμένες ανάγκες σας.
-
-Η ανάγνωση των ιδιοτήτων των στοιχείων ελέγχου ActiveX σάς επιτρέπει να εξαγάγετε σημαντικές πληροφορίες από τα αρχεία του Word που περιέχουν αυτά τα στοιχεία ελέγχου. Το Aspose.Words για .NET προσφέρει ισχυρές δυνατότητες για επεξεργασία λέξεων με στοιχεία ελέγχου ActiveX και αυτοματοποίηση της επεξεργασίας των εγγράφων σας.
-
-### Συχνές ερωτήσεις
-
-#### Ε: Ποιο είναι το πρώτο βήμα για την ανάγνωση ιδιοτήτων των στοιχείων ελέγχου ActiveX σε ένα αρχείο Word;
-
- Α: Το πρώτο βήμα είναι να αρχικοποιήσετε το`Document` αντικείμενο φορτώνοντας το έγγραφο του Word που περιέχει τα στοιχεία ελέγχου ActiveX. Φροντίστε να αντικαταστήσετε`MyDir` με την πραγματική διαδρομή προς τον κατάλογο που περιέχει το έγγραφο.
-
-#### Ε: Πώς μπορώ να εισάγω στοιχεία ελέγχου ActiveX στο έγγραφο;
-
- Α: Για να ανακτήσετε στοιχεία ελέγχου ActiveX, πρέπει να επαναλάβετε το καθένα`Shape` του εγγράφου και ελέγξτε αν πρόκειται για στοιχείο ελέγχου ActiveX. Χρησιμοποιήστε το`OleFormat` Ιδιοκτησία του`Shape` για πρόσβαση στο`OleControl` αντικείμενο και να ανακτήσετε τις απαραίτητες ιδιότητες.
-
-#### Ε: Ποιες ιδιότητες των στοιχείων ελέγχου ActiveX μπορώ να διαβάσω;
-
-Α: Μπορείτε να διαβάσετε διάφορες ιδιότητες των στοιχείων ελέγχου ActiveX, όπως λεζάντα, τιμή, κατάσταση ενεργοποίησης ή απενεργοποίησης, τύπος και childNodes που σχετίζονται με το στοιχείο ελέγχου.
-
-#### Ε: Πώς μπορώ να βρω τον συνολικό αριθμό των στοιχείων ελέγχου ActiveX στο έγγραφο;
-
- Α: Για να λάβετε τον συνολικό αριθμό των στοιχείων ελέγχου ActiveX στο έγγραφο, μπορείτε να χρησιμοποιήσετε το`GetChildNodes` μέθοδος του`Document` αντικείμενο που προσδιορίζει το`NodeType.Shape` τύπου και συμπεριλαμβανομένων των θυγατρικών κόμβων.
+### Πού μπορώ να βρω περισσότερη τεκμηρίωση για το Aspose.Words για .NET;
+ Μπορείτε να βρείτε αναλυτική τεκμηρίωση[εδώ](https://reference.aspose.com/words/net/).

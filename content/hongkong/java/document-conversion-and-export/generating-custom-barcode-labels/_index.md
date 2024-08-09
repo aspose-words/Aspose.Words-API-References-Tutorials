@@ -10,7 +10,7 @@ url: /zh-hant/java/document-conversion-and-export/generating-custom-barcode-labe
 
 ## 在 Aspose.Words for Java 中產生自訂條碼標籤簡介
 
-在本綜合指南中，我們將深入研究使用 Aspose.Words for Java 產生自訂條碼標籤的過程。 Aspose.Words for Java 是一個功能強大的 API，允許開發人員以程式設計方式操作 Word 文件。其顯著的功能之一是能夠使用條碼標籤，這使其成為需要客製化條碼解決方案的企業和組織的寶貴工具。
+在本綜合指南中，我們將深入研究使用 Aspose.Words for Java 產生自訂條碼標籤的過程。 Aspose.Words for Java 是一個功能強大的 API，允許開發人員以程式設計方式操作 Word 文件。其顯著功能之一是能夠使用條碼標籤，這使其成為需要客製化條碼解決方案的企業和組織的寶貴工具。
 
 ## 先決條件
 

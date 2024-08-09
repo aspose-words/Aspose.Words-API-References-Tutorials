@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-webextension/using-web-extension-task-panes/
 ---
-## introduzione
+## Introduzione
 
 Benvenuti in questo tutorial approfondito sull'utilizzo dei pannelli attività delle estensioni Web in un documento Word utilizzando Aspose.Words per .NET. Se hai sempre desiderato migliorare i tuoi documenti Word con riquadri attività interattivi, sei nel posto giusto. Questa guida ti guiderà attraverso ogni passaggio per raggiungere questo obiettivo senza problemi.
 

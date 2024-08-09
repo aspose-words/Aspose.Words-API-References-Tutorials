@@ -15,7 +15,7 @@ url: /ko/net/working-with-vba-macros/modify-vba-macros/
 
 코드를 시작하기 전에 필요한 모든 것이 갖추어져 있는지 확인하십시오.
 
-1.  .NET 라이브러리용 Aspose.Words: .NET용 Aspose.Words의 최신 버전이 있는지 확인하세요. 당신은 할 수 있습니다[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+1.  .NET 라이브러리용 Aspose.Words: .NET용 Aspose.Words의 최신 버전이 있는지 확인하세요. 당신은 할 수 있습니다[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 2. 개발 환경: Visual Studio와 같은 .NET 개발 환경은 코드를 작성하고 테스트하는 데 필수적입니다.
 3. 기본 C# 지식: C#에 대한 기본적인 이해는 코드 조각을 따라가는 데 도움이 됩니다.
 4.  샘플 Word 문서:[워드 문서](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) 기존 VBA 매크로가 준비되어 있습니다. 이것이 매크로 수정을 위한 테스트 대상이 됩니다.

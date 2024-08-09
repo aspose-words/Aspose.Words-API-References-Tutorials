@@ -126,5 +126,5 @@ Ya, Anda dapat mengotomatiskan proses memperbarui Smart Art di beberapa dokumen 
 ### Apakah saya memerlukan lisensi khusus untuk Aspose.Words untuk menggunakan fitur ini?
  Lisensi Aspose.Words yang valid diperlukan untuk menggunakan fitur-fiturnya di luar periode evaluasi. Anda bisa mendapatkan lisensi sementara[Di Sini](https://purchase.aspose.com/temporary-license/).
 
-### Di mana saya dapat menemukan lebih banyak dokumentasi tentang Aspose.Words?
+### Di mana saya dapat menemukan dokumentasi lebih lanjut tentang Aspose.Words?
  Anda dapat mengakses dokumentasinya[Di Sini](https://reference.aspose.com/words/net/).

@@ -9,7 +9,7 @@ url: /fr/net/clone-and-combine-documents/insert-document-at-replace/
 ---
 ## Introduction
 
-Salut les maestros du document ! Vous êtes-vous déjà retrouvé plongé dans le code, essayant de comprendre comment insérer un document Word dans un autre de manière transparente ? N'ayez crainte, car aujourd'hui, nous plongeons dans le monde d'Aspose.Words pour .NET pour rendre cette tâche un jeu d'enfant. Nous allons parcourir un guide détaillé, étape par étape, sur la façon d'utiliser cette puissante bibliothèque pour insérer des documents à des points spécifiques lors d'une opération de recherche et de remplacement. Prêt à devenir un assistant Aspose.Words ? Commençons!
+Salut les maestros du document ! Vous êtes-vous déjà retrouvé plongé dans le code, essayant de comprendre comment insérer un document Word dans un autre de manière transparente ? N'ayez crainte, car aujourd'hui, nous plongeons dans le monde d'Aspose.Words pour .NET pour rendre cette tâche un jeu d'enfant. Nous allons parcourir un guide détaillé, étape par étape, sur la façon d'utiliser cette puissante bibliothèque pour insérer des documents à des points spécifiques lors d'une opération de recherche et de remplacement. Prêt à devenir un assistant Aspose.Words ? Commençons !
 
 ## Conditions préalables
 
@@ -147,7 +147,7 @@ Cette méthode se charge d'importer les nœuds du document à insérer et de les
 
 ## Conclusion
 
-Et voila! Un guide complet pour insérer un document dans un autre à l'aide d'Aspose.Words pour .NET. En suivant ces étapes, vous pouvez facilement automatiser les tâches d'assemblage et de manipulation de documents. Que vous construisiez un système de gestion de documents ou que vous ayez simplement besoin de rationaliser votre flux de traitement de documents, Aspose.Words est votre fidèle compagnon.
+Et voilà ! Un guide complet pour insérer un document dans un autre à l'aide d'Aspose.Words pour .NET. En suivant ces étapes, vous pouvez facilement automatiser les tâches d'assemblage et de manipulation de documents. Que vous construisiez un système de gestion de documents ou que vous ayez simplement besoin de rationaliser votre flux de traitement de documents, Aspose.Words est votre fidèle compagnon.
 
 ## FAQ
 
@@ -164,4 +164,4 @@ Oui, vous pouvez modifier le gestionnaire de rappel pour gérer plusieurs insert
 Vous pouvez obtenir de l'aide en visitant le[Forum Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### Puis-je conserver la mise en forme du document inséré ?
- Oui le`NodeImporter` La classe vous permet de spécifier la manière dont le formatage est géré lors de l'importation de nœuds d'un document à un autre.
+ Oui, le`NodeImporter` La classe vous permet de spécifier la manière dont le formatage est géré lors de l'importation de nœuds d'un document à un autre.

@@ -9,7 +9,7 @@ url: /de/net/programming-with-docsaveoptions/do-not-compress-small-metafiles/
 ---
 ## Einführung
 
-Im Bereich der Dokumentverarbeitung kann die Optimierung der Speicherung Ihrer Dateien deren Qualität und Benutzerfreundlichkeit erheblich verbessern. Aspose.Words für .NET bietet eine Vielzahl von Funktionen, um sicherzustellen, dass Ihre Word-Dokumente präzise gespeichert werden. Eine dieser Funktionen ist die Option „Kleine Metadateien nicht komprimieren“. Dieses Tutorial führt Sie durch den Prozess der Nutzung dieser Funktion, um die Integrität Ihrer Metadateien in Word-Dokumenten aufrechtzuerhalten. Lassen Sie uns eintauchen!
+Im Bereich der Dokumentenverarbeitung kann die Optimierung der Speicherung Ihrer Dateien deren Qualität und Benutzerfreundlichkeit erheblich verbessern. Aspose.Words für .NET bietet eine Vielzahl von Funktionen, um sicherzustellen, dass Ihre Word-Dokumente präzise gespeichert werden. Eine dieser Funktionen ist die Option „Kleine Metadateien nicht komprimieren“. Dieses Tutorial führt Sie durch den Prozess der Nutzung dieser Funktion, um die Integrität Ihrer Metadateien in Word-Dokumenten aufrechtzuerhalten. Lassen Sie uns eintauchen!
 
 ## Voraussetzungen
 

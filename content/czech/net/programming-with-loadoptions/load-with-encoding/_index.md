@@ -7,15 +7,15 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-loadoptions/load-with-encoding/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Takže pracujete s dokumenty Wordu a potřebujete načíst jeden se specifickým kódováním? Možná jste narazili na dokumenty s textem zakódovaným v něčem jako UTF-7 a lámete si hlavu, jak s nimi zacházet. Tak to jste na správném místě! V tomto tutoriálu se ponoříme hluboko do toho, jak můžete načíst dokument aplikace Word se specifickým kódováním pomocí Aspose.Words for .NET. Tato výkonná knihovna vám umožňuje manipulovat s dokumenty aplikace Word způsobem, o kterém jste si pravděpodobně nikdy nemysleli, že je to možné. Začněme!
+Ahoj! Takže pracujete s dokumenty Wordu a potřebujete načíst jeden se specifickým kódováním? Možná jste narazili na dokumenty s textem zakódovaným v něčem jako UTF-7 a lámete si hlavu, jak s nimi zacházet. Tak to jste na správném místě! V tomto tutoriálu se ponoříme hluboko do toho, jak můžete načíst dokument aplikace Word se specifickým kódováním pomocí Aspose.Words for .NET. Tato výkonná knihovna vám umožňuje manipulovat s dokumenty aplikace Word způsobem, o kterém jste si pravděpodobně nikdy nemysleli, že je to možné. Začněme!
 
 ## Předpoklady
 
 Než se vrhneme na to, co potřebujete, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words pro .NET: Můžete[stažení](https://releases.aspose.com/words/net/) poslední verze.
+1.  Aspose.Words pro .NET: Můžete[stáhnout](https://releases.aspose.com/words/net/) nejnovější verzi.
 2. Vývojové prostředí .NET: Visual Studio funguje perfektně.
 3. Dokument aplikace Word: Ujistěte se, že je zakódován ve formátu, se kterým se zabýváte, například UTF-7.
 
@@ -81,7 +81,7 @@ UTF-7 (7-bit Unicode Transformation Format) je kódování, které bylo navržen
  Ano, Aspose.Words podporuje různá kódování, jako je UTF-8, UTF-16 a další. Stačí nastavit`Encoding` majetek v`LoadOptions` podle toho.
 
 ### Je Aspose.Words zdarma k použití?
- Aspose.Words nabízí bezplatnou zkušební verzi, kterou si můžete stáhnout[tady](https://releases.aspose.com/) Pro plné funkce budete muset zakoupit licenci od[Aspose](https://purchase.aspose.com/buy).
+ Aspose.Words nabízí bezplatnou zkušební verzi, kterou si můžete stáhnout[zde](https://releases.aspose.com/) Pro plné funkce budete muset zakoupit licenci od[Aspose](https://purchase.aspose.com/buy).
 
 ### Mohu načíst dokumenty ze streamu místo cesty k souboru?
  Absolutně! Aspose.Words podporuje načítání dokumentů ze streamů. Stačí předat stream a možnosti načtení`Document` konstruktér.

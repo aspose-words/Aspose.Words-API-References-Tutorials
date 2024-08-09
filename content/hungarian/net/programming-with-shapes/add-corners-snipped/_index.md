@@ -33,7 +33,7 @@ Most bontsuk le több lépésre a „Corners Snipped” alakzat hozzáadásának
 
 ## 1. lépés: Inicializálja a Dokumentumot és a DocumentBuildert
 
- Az első dolog, amit tennünk kell, hogy létrehozunk egy új dokumentumot, és inicializáljuk a`DocumentBuilder` tárgy. Ez az építő segít nekünk tartalmat hozzáadni a dokumentumunkhoz.
+ Az első dolog, amit tennünk kell, hogy létrehozunk egy új dokumentumot, és inicializáljuk a`DocumentBuilder` objektum. Ez az építő segít nekünk tartalmat hozzáadni a dokumentumunkhoz.
 
 ```csharp
 // A dokumentumkönyvtár elérési útja
@@ -80,7 +80,7 @@ Hasonlóképpen, a dokumentuma mostantól egy egyéni „Sarkok levágott” ala
 
 ## Következtetés
 
-Tessék, itt van! Egyéni alakzatok hozzáadása a Word-dokumentumokhoz az Aspose.Words for .NET használatával egyszerű, és nagymértékben javíthatja a dokumentumok vizuális vonzerejét. Ha követi ezeket a lépéseket, egyszerűen beilleszthet egy „Sarkok levágott” alakzatot, és biztosíthatja, hogy a dokumentum megfeleljen a szükséges szabványoknak. Boldog kódolást!
+Megvan! Egyéni alakzatok hozzáadása a Word-dokumentumokhoz az Aspose.Words for .NET használatával egyszerű, és nagymértékben javíthatja a dokumentumok vizuális vonzerejét. Ha követi ezeket a lépéseket, egyszerűen beilleszthet egy „Sarkok levágott” alakzatot, és biztosíthatja, hogy a dokumentum megfeleljen a szükséges szabványoknak. Boldog kódolást!
 
 ## GYIK
 

@@ -55,7 +55,7 @@ mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtB
 
 ## 4. lépés: Dokumentumok beszúrása a körlevél-egyesítés során
 
-Az Aspose.Words for Java programban a körlevél-művelet során dokumentumokat szúrhat be. Itt van, hogyan:
+Az Aspose.Words for Java programban a körlevél-művelet során dokumentumokat szúrhat be. Íme, hogyan:
 
 ```java
 Document mainDoc = new Document("Your Directory Path" + "Document insertion 1.docx");

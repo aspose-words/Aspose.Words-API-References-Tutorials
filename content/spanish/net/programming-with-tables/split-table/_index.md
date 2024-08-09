@@ -118,5 +118,5 @@ Sí, puede fusionar tablas moviendo filas de una tabla a otra utilizando método
 ### ¿Este método funciona con tablas anidadas?
 Sí, Aspose.Words para .NET también admite operaciones en tablas anidadas.
 
-### ¿Puedo automatizar este proceso para múltiples documentos?
+### ¿Puedo automatizar este proceso para varios documentos?
 ¡Absolutamente! Puede crear una secuencia de comandos o una aplicación para automatizar el proceso de división de tablas para varios documentos.

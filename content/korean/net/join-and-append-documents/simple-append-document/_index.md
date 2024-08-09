@@ -18,7 +18,7 @@ url: /ko/net/join-and-append-documents/simple-append-document/
 1.  .NET용 Aspose.Words: 아직 다운로드하지 않았다면 다음에서 라이브러리를 다운로드하세요.[여기](https://releases.aspose.com/words/net/).
 2. 개발 환경: Visual Studio 또는 기타 .NET 호환 IDE를 사용할 수 있습니다.
 3. C#에 대한 기본 지식: 이 자습서에서는 사용자가 C# 프로그래밍에 대한 기본 지식을 가지고 있다고 가정합니다.
-4. 두 개의 Word 문서: 병합할 두 개의 Word 문서가 준비되어 있는지 확인하십시오.
+4. 두 개의 Word 문서: 병합할 두 개의 Word 문서가 준비되어 있는지 확인하세요.
 
 ## 네임스페이스 가져오기
 
@@ -72,7 +72,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
  다시 한번, 우리는 새로운 것을 만듭니다`Document` 개체를 선택하고 디렉터리에서 "Northwind traders.docx"라는 파일을 로드합니다.
 
-## 5단계: 원본 문서 추가
+## 5단계: 소스 문서 추가
 
  이곳이 바로 마법이 일어나는 곳입니다! 다음을 사용하여 소스 문서를 대상 문서에 추가하겠습니다.`AppendDocument` 방법.
 

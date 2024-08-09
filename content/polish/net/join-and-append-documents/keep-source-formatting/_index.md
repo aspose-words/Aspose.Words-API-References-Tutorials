@@ -94,4 +94,4 @@ Tak, Aspose.Words obsługuje platformę .NET Core, umożliwiając korzystanie z 
 Aspose.Words zapewnia wydajne interfejsy API do pracy z dużymi dokumentami, w tym funkcje paginacji i zarządzania pamięcią.
 
 ### Gdzie mogę znaleźć więcej zasobów i wsparcia dla Aspose.Words?
- Odwiedzić[Aspose.Words dla dokumentacji .NET](https://reference.aspose.com/words/net/) szczegółowe odniesienia do API, przykłady i przewodniki.
+ Odwiedź[Aspose.Words dla dokumentacji .NET](https://reference.aspose.com/words/net/) szczegółowe odniesienia do API, przykłady i przewodniki.

@@ -51,7 +51,7 @@ Konfigurera projektet
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Den här raden ställer in katalogen där dina dokument kommer att sparas. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din katalog.
+ Den här raden ställer in katalogen där dina dokument kommer att sparas. Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din katalog.
 
 ## Steg 2: Initiera Document and DocumentBuilder
 

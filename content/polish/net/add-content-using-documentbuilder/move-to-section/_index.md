@@ -94,4 +94,4 @@ Tak, Aspose.Words dla .NET obsługuje dowolny język .NET, w tym VB.NET i F#.
  Możesz uzyskać wsparcie od[Forum Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### Czy mogę używać Aspose.Words dla .NET w projekcie komercyjnym?
- Tak, ale musisz kupić licencję od[Kup Link](https://purchase.aspose.com/buy).
+ Tak, ale musisz kupić licencję od[kup link](https://purchase.aspose.com/buy).

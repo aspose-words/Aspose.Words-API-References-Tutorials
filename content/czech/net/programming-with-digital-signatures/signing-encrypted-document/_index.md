@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-digital-signatures/signing-encrypted-document/
 ---
-## Úvod
+## Zavedení
 
 Přemýšleli jste někdy, jak podepsat zašifrovaný dokument aplikace Word? Dnes si tento proces projdeme pomocí Aspose.Words for .NET. Připoutejte se a připravte se na podrobný, poutavý a zábavný tutoriál!
 
@@ -15,7 +15,7 @@ Přemýšleli jste někdy, jak podepsat zašifrovaný dokument aplikace Word? Dn
 
 Než se ponoříte do kódu, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET: Stáhněte a nainstalujte z[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Stáhněte a nainstalujte z[zde](https://releases.aspose.com/words/net/).
 2. Visual Studio: Ujistěte se, že jej máte nainstalovaný.
 3. Platný certifikát: Budete potřebovat soubor certifikátu .pfx.
 4. Základní znalost C#: Pochopení základů učiní tento tutoriál plynulejším.
@@ -57,7 +57,7 @@ Budete potřebovat adresář pro uložení dokumentů a certifikátů aplikace W
 
 ## Krok 4: Napsání kódu
 
- Nyní se pojďme ponořit do kódu. Otevři tvůj`Program.cs` a začněte nastavením cesty k adresáři dokumentů a inicializací souboru`SignOptions` s dešifrovacím heslem.
+ Nyní se pojďme ponořit do kódu. Otevřete svůj`Program.cs` a začněte nastavením cesty k adresáři dokumentů a inicializací souboru`SignOptions` s dešifrovacím heslem.
 
 ```csharp
 // Cesta k adresáři dokumentů.

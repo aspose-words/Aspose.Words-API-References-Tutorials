@@ -152,7 +152,7 @@ Ya, Anda dapat mengkloning beberapa bagian dengan mengulangi kumpulan bagian dan
 
 ### Bagaimana cara menyesuaikan bagian yang dikloning?
 
- Anda dapat menyesuaikan bagian yang dikloning dengan mengubah properti dan kontennya setelah kloning. Menggunakan`Section` metode kelas dan properti untuk membuat perubahan.
+ Anda dapat menyesuaikan bagian yang dikloning dengan mengubah properti dan kontennya setelah kloning. Gunakan`Section` metode kelas dan properti untuk membuat perubahan.
 
 ### Apakah Aspose.Words kompatibel dengan versi Word yang berbeda?
 

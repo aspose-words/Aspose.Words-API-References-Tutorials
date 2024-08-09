@@ -2,95 +2,91 @@
 title: Wstaw obiekt Ole do dokumentu programu Word jako ikonę
 linktitle: Wstaw obiekt Ole do dokumentu programu Word jako ikonę
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak wstawić obiekt OLE do dokumentu programu Word jako ikonę za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak wstawić obiekt OLE jako ikonę w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby ulepszyć swoje dokumenty.
 type: docs
 weight: 10
 url: /pl/net/working-with-oleobjects-and-activex/insert-ole-object-as-icon/
 ---
+## Wstęp
 
-Oto przewodnik krok po kroku wyjaśniający poniższy kod źródłowy C#, który ilustruje, jak wstawić obiekt OLE do dokumentu programu Word jako ikonę przy użyciu Aspose.Words dla .NET.
+Czy kiedykolwiek musiałeś osadzić obiekt OLE, na przykład prezentację programu PowerPoint lub arkusz kalkulacyjny programu Excel, w dokumencie programu Word, ale chciałeś, aby wyglądał on jako zgrabna mała ikona, a nie pełny obiekt? Cóż, jesteś we właściwym miejscu! W tym samouczku przeprowadzimy Cię przez proces wstawiania obiektu OLE jako ikony w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Pod koniec tego przewodnika będziesz w stanie bezproblemowo integrować obiekty OLE ze swoimi dokumentami, czyniąc je bardziej interaktywnymi i atrakcyjnymi wizualnie.
 
-## Krok 1: Zaimportuj niezbędne referencje
-Zanim zaczniesz, upewnij się, że zaimportowałeś do swojego projektu niezbędne odniesienia do korzystania z Aspose.Words dla .NET. Obejmuje to importowanie biblioteki Aspose.Words i dodanie wymaganych przestrzeni nazw do pliku źródłowego.
+## Warunki wstępne
+
+Zanim zagłębimy się w najdrobniejsze szczegóły, omówmy, czego potrzebujesz:
+
+1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowany Aspose.Words dla .NET. Jeśli jeszcze go nie zainstalowałeś, możesz go pobrać ze strony[Strona z wydaniami Aspose](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: potrzebujesz zintegrowanego środowiska programistycznego (IDE), takiego jak Visual Studio.
+3. Podstawowa znajomość języka C#: Pomocna będzie podstawowa znajomość programowania w języku C#.
+
+## Importuj przestrzenie nazw
+
+Najpierw musisz zaimportować niezbędne przestrzenie nazw. Jest to niezbędne do uzyskania dostępu do funkcji biblioteki Aspose.Words.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Drawing;
 ```
 
-## Krok 2: Utwórz nowy dokument i generator dokumentów
- Na tym etapie utworzymy nowy dokument za pomocą pliku`Document` klasę i narzędzie do tworzenia dokumentów przy użyciu metody`DocumentBuilder` klasa.
+## Krok 1: Utwórz nowy dokument
+
+Na początek musisz utworzyć nową instancję dokumentu Word.
 
 ```csharp
+// Ścieżka do katalogu dokumentów
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 3: Wstaw obiekt OLE jako ikonę
- Skorzystaj z Konstruktora Dokumentów`InsertOleObjectAsIcon` metoda wstawiania obiektu OLE jako ikony do dokumentu. Określ ścieżkę pliku OLE, flagę wyświetlania, ścieżkę ikony i nazwę osadzonego obiektu.
+Ten fragment kodu inicjuje nowy dokument programu Word i obiekt DocumentBuilder, który służy do tworzenia zawartości dokumentu.
+
+## Krok 2: Wstaw obiekt OLE jako ikonę
+
+ Teraz wstawmy obiekt OLE jako ikonę. The`InsertOleObjectAsIcon` Wykorzystywana jest w tym celu metoda klasy DocumentBuilder.
 
 ```csharp
-builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "Logo icon.ico", "My embedded file");
+builder.InsertOleObjectAsIcon("path_to_your_presentation.pptx", false, "path_to_your_icon.ico", "My embedded file");
 ```
 
-## Krok 4: Zapisz dokument
- Skorzystaj z dokumentu`Save` metoda zapisania dokumentu do pliku.
+Rozłóżmy tę metodę:
+- `"path_to_your_presentation.pptx"`: To jest ścieżka do obiektu OLE, który chcesz osadzić.
+- `false` : Ten parametr logiczny określa, czy obiekt OLE ma być wyświetlany jako ikona. Ponieważ chcemy ikony, ustawiamy ją na`false`.
+- `"path_to_your_icon.ico"`: To jest ścieżka do pliku ikony, którego chcesz użyć dla obiektu OLE.
+- `"My embedded file"`: To jest etykieta, która pojawi się pod ikoną.
+
+## Krok 3: Zapisz dokument
+
+Na koniec musisz zapisać dokument. Wybierz katalog, w którym chcesz zapisać swój plik.
 
 ```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");
+doc.Save(dataDir + "WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");
 ```
 
-### Przykładowy kod źródłowy do wstawiania obiektu OLE jako ikony za pomocą Aspose.Words dla .NET
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "Logo icon.ico", "My embedded file");
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");
-```
-
-To jest kompletny przykładowy kod do wstawiania obiektu OLE jako ikony za pomocą Aspose.Words dla .NET. Pamiętaj, aby zaimportować niezbędne odniesienia i wykonać opisane wcześniej kroki, aby zintegrować ten kod ze swoim projektem.
+Ta linia kodu zapisuje dokument w określonej ścieżce.
 
 ## Wniosek
 
-Podsumowując, zapoznaliśmy się z przewodnikiem krok po kroku dotyczącym wstawiania obiektu OLE jako ikony w dokumencie programu Word przy użyciu Aspose.Words dla .NET.
+Gratulacje! Pomyślnie nauczyłeś się wstawiać obiekt OLE jako ikonę w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Ta technika nie tylko pomaga w osadzaniu złożonych obiektów, ale także pozwala zachować porządek i profesjonalizm w dokumencie.
 
-Wykonując te kroki, będziesz mógł pomyślnie wstawić obiekt OLE jako ikonę w dokumentach Word przy użyciu Aspose.Words dla .NET. Pamiętaj, aby zaimportować niezbędne odniesienia i postępować zgodnie z instrukcjami, aby uzyskać pożądane rezultaty.
+## Często zadawane pytania
 
-### Często zadawane pytania dotyczące wstawiania obiektu ole w dokumencie programu Word jako ikony
+### Czy za pomocą tej metody mogę używać różnych typów obiektów OLE?
 
-#### P. Jakie odniesienia są potrzebne, aby wstawić obiekt OLE jako ikonę w dokumencie programu Word przy użyciu Aspose.Words dla .NET?
+Tak, możesz osadzać różne typy obiektów OLE, takie jak arkusze kalkulacyjne Excel, prezentacje PowerPoint, a nawet pliki PDF.
 
-O: Aby używać Aspose.Words dla .NET, musisz zaimportować do swojego projektu następujące odniesienia:
+### Jak uzyskać bezpłatną wersję próbną Aspose.Words dla .NET?
 
-```csharp
-using Aspose.Words;
-using Aspose.Words.Drawing;
-```
+ Możesz uzyskać bezpłatną wersję próbną od[Strona z wydaniami Aspose](https://releases.aspose.com/).
 
-#### P. Jak utworzyć nowy dokument i generator dokumentów w Aspose.Words dla .NET?
+### Co to jest obiekt OLE?
 
- Odp.: Możesz utworzyć nowy dokument za pomocą`Document` klasę i narzędzie do tworzenia dokumentów przy użyciu metody`DocumentBuilder`klasa. Oto przykład :
+OLE (Object Linking and Embedding) to technologia opracowana przez firmę Microsoft, która umożliwia osadzanie i łączenie dokumentów i innych obiektów.
 
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
+### Czy potrzebuję licencji, aby używać Aspose.Words dla .NET?
 
-#### P. Jak wstawić obiekt OLE jako ikonę w dokumencie?
+ Tak, Aspose.Words dla .NET wymaga licencji. Można go kupić w serwisie[Strona zakupu Aspose](https://purchase.aspose.com/buy) lub zdobądź[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) do oceny.
 
- O: Skorzystaj z Konstruktora Dokumentów`InsertOleObjectAsIcon` metoda wstawiania obiektu OLE jako ikony. Określ ścieżkę pliku OLE, flagę wyświetlania, ścieżkę ikony i nazwę osadzonego obiektu. Oto przykład :
+### Gdzie mogę znaleźć więcej samouczków na temat Aspose.Words dla .NET?
 
-```csharp
-builder.InsertOleObjectAsIcon(MyDir + "Presentation.pptx", false, ImagesDir + "Logo icon.ico", "My embedded file");
-```
-
-#### P. Jak zapisać dokument z wstawionym obiektem OLE jako ikoną?
-
- O: Skorzystaj z dokumentu`Save`metoda zapisania dokumentu do pliku. Oto przykład :
-
-```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIcon.docx");
-```
+ Więcej samouczków i dokumentacji można znaleźć na stronie[Strona dokumentacji Aspose](https://reference.aspose.com/words/net/).

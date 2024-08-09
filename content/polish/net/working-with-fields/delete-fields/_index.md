@@ -15,7 +15,7 @@ W dziedzinie przetwarzania i automatyzacji dokumentów Aspose.Words dla .NET wyr
 
 Zanim zagłębisz się w ten samouczek, upewnij się, że spełnione są następujące wymagania wstępne:
 
-### Wymagania Systemowe
+### Wymagania dotyczące oprogramowania
 
 1. Visual Studio: zainstalowany i skonfigurowany w twoim systemie.
 2.  Aspose.Words dla .NET: Pobrany i zintegrowany z projektem Visual Studio. Można go pobrać z[Tutaj](https://releases.aspose.com/words/net/).
@@ -100,4 +100,4 @@ Bloków try-catch można używać do obsługi wyjątków, które mogą wystąpi�
 Tak, pokazana tutaj metoda dotyczy wyłącznie pól i pozostawia inną treść bez zmian.
 
 ### Gdzie mogę znaleźć więcej zasobów i wsparcia dla Aspose.Words?
- Odwiedzić[Dokumentacja Aspose.Words dla .NET API](https://reference.aspose.com/words/net/) i[Forum Aspose.Words](https://forum.aspose.com/c/words/8) w celu uzyskania dalszej pomocy.
+ Odwiedź[Dokumentacja Aspose.Words dla .NET API](https://reference.aspose.com/words/net/) i[Forum Aspose.Words](https://forum.aspose.com/c/words/8) w celu uzyskania dalszej pomocy.

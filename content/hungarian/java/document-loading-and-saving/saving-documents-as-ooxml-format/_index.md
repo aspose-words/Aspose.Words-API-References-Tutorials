@@ -37,7 +37,7 @@ doc.save("EncryptedDoc.docx", saveOptions);
 
 ## OOXML-kompatibilitás beállítása
 
-A dokumentum mentésekor megadhatja az OOXML megfelelőségi szintet. Például beállíthatja ISO 29500:2008 (szigorú) értékre. Itt van, hogyan:
+A dokumentum mentésekor megadhatja az OOXML megfelelőségi szintet. Például beállíthatja ISO 29500:2008 (szigorú) értékre. Íme, hogyan:
 
 ```java
 import com.aspose.words.Document;
@@ -61,7 +61,7 @@ doc.save("ComplianceDoc.docx", saveOptions);
 
 ## Utolsó megtakarított idő tulajdonság frissítése
 
-Mentéskor választhatja a dokumentum "Utolsó megtakarított idő" tulajdonságának frissítését. Itt van, hogyan:
+Mentéskor választhatja a dokumentum "Utolsó megtakarított idő" tulajdonságának frissítését. Íme, hogyan:
 
 ```java
 import com.aspose.words.Document;
@@ -80,7 +80,7 @@ doc.save("UpdatedLastSavedTime.docx", saveOptions);
 
 ## Az örökölt vezérlőkarakterek megtartása
 
-Ha a dokumentum örökölt vezérlőkaraktereket tartalmaz, dönthet úgy, hogy megtartja azokat a mentés során. Itt van, hogyan:
+Ha a dokumentum örökölt vezérlőkaraktereket tartalmaz, dönthet úgy, hogy megtartja azokat a mentés során. Íme, hogyan:
 
 ```java
 import com.aspose.words.Document;
@@ -100,7 +100,7 @@ doc.save("LegacyControlCharsPreserved.docx", saveOptions);
 
 ## A tömörítési szint beállítása
 
-A tömörítési szintet a dokumentum mentésekor állíthatja be. Beállíthatja például SUPER_FAST értékre a minimális tömörítés érdekében. Itt van, hogyan:
+A tömörítési szintet a dokumentum mentésekor állíthatja be. Beállíthatja például SUPER_FAST értékre a minimális tömörítés érdekében. Íme, hogyan:
 
 ```java
 import com.aspose.words.Document;

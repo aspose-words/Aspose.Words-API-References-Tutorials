@@ -126,10 +126,10 @@ Aspose.Words para .NET es una potente biblioteca de procesamiento de documentos 
  Puedes descargarlo e instalarlo desde[enlace de descarga](https://releases.aspose.com/words/net/). Siga las instrucciones de instalación proporcionadas.
 
 ### ¿Puedo probar Aspose.Words para .NET gratis?
- Sí, puedes conseguir un[prueba gratis](https://releases.aspose.com/) o un[licencia temporal](https://purchase.aspose.com/temporary-license/)para evaluar el producto.
+ Sí, puedes conseguir un[prueba gratuita](https://releases.aspose.com/) o un[licencia temporal](https://purchase.aspose.com/temporary-license/)para evaluar el producto.
 
 ### ¿Aspose.Words para .NET es compatible con .NET Core?
 Sí, Aspose.Words para .NET es compatible con .NET Core, .NET Standard y .NET Framework.
 
 ### ¿Dónde puedo obtener soporte para Aspose.Words para .NET?
- Puedes visitar el[Foro de soporte](https://forum.aspose.com/c/words/8) para obtener ayuda y asistencia de la comunidad y expertos de Aspose.
+ Puedes visitar el[foro de soporte](https://forum.aspose.com/c/words/8) para obtener ayuda y asistencia de la comunidad y expertos de Aspose.

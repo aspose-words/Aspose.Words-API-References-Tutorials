@@ -86,7 +86,7 @@ table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
 table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
 ```
 
- Her kenarlık türü (sol, sağ, üst, alt) ayrı ayrı ayarlanır. Kullanırız`LineStyle.Single` sağlam bir çizgi için`1.5` çizgi genişliği için ve`Color.Green` kenarlık rengi için.
+ Her kenarlık türü (sol, sağ, üst, alt) ayrı ayrı ayarlanır. Kullanıyoruz`LineStyle.Single` sağlam bir çizgi için`1.5` çizgi genişliği için ve`Color.Green` kenarlık rengi için.
 
 ## Adım 6: Hücre Gölgelemeyi Uygulayın
 
@@ -110,23 +110,23 @@ Bu adım, belgenizi uygulanan biçimlendirmeyle kaydeder. Güzel biçimlendirilm
 
 ## Çözüm
 
-İşte buyur! Bu adımları izleyerek, Aspose.Words for .NET'i kullanarak bir Word belgesindeki tabloya anahat kenarlığını başarıyla uyguladınız. Bu eğitim belgenin yüklenmesini, tabloya erişmeyi, hizalamayı, mevcut sınırları temizlemeyi, yeni kenarlıklar uygulamayı, hücre gölgelendirmeyi eklemeyi ve son olarak belgeyi kaydetmeyi kapsıyordu. 
+Ve işte karşınızda! Bu adımları izleyerek, Aspose.Words for .NET'i kullanarak bir Word belgesindeki tabloya anahat kenarlığını başarıyla uyguladınız. Bu eğitim belgenin yüklenmesini, tabloya erişmeyi, hizalamayı, mevcut sınırları temizlemeyi, yeni kenarlıklar uygulamayı, hücre gölgelendirmeyi eklemeyi ve son olarak belgeyi kaydetmeyi kapsıyordu. 
 
 Bu becerilerle tablolarınızın görsel sunumunu geliştirebilir, belgelerinizi daha profesyonel ve çekici hale getirebilirsiniz. Mutlu kodlama!
 
 ## SSS'ler
 
 ### Tablonun her kenarlığına farklı stiller uygulayabilir miyim?  
- Evet, parametreleri ayarlayarak her kenarlığa farklı stiller ve renkler uygulayabilirsiniz.`SetBorder` yöntem.
+ Evet, parametreleri ayarlayarak her kenarlığa farklı stiller ve renkler uygulayabilirsiniz.`SetBorder` Yöntem.
 
 ### Kenarlığın genişliğini nasıl değiştirebilirim?  
- Üçüncü parametreyi değiştirerek genişliği değiştirebilirsiniz.`SetBorder` yöntem. Örneğin,`1.5` 1,5 puntoluk bir genişlik ayarlar.
+ Üçüncü parametreyi değiştirerek genişliği değiştirebilirsiniz.`SetBorder` Yöntem. Örneğin,`1.5` 1,5 puntoluk bir genişlik ayarlar.
 
 ### Gölgelendirmeyi tek tek hücrelere uygulamak mümkün mü?  
- Evet, her hücreye erişerek ve`SetShading` yöntem.
+ Evet, her hücreye erişerek ve`SetShading` Yöntem.
 
 ### Kenarlıklar ve gölgelendirme için başka renkler kullanabilir miyim?  
  Kesinlikle! Mevcut olan herhangi bir rengi kullanabilirsiniz`System.Drawing.Color` sınıf.
 
 ### Tabloyu yatay olarak nasıl ortalayabilirim?  
-`table.Alignment = TableAlignment.Center;` koddaki satır, tabloyu sayfada yatay olarak ortalar.
+`table.Alignment = TableAlignment.Center;` Koddaki satır, tabloyu sayfada yatay olarak ortalar.

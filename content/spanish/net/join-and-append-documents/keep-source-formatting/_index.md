@@ -1,6 +1,6 @@
 ---
-title: Coserva el formato original
-linktitle: Coserva el formato original
+title: Mantener el formato fuente
+linktitle: Mantener el formato fuente
 second_title: API de procesamiento de documentos Aspose.Words
 description: Aprenda a fusionar documentos de Word conservando el formato utilizando Aspose.Words para .NET. Ideal para desarrolladores que buscan automatizar tareas de ensamblaje de documentos.
 type: docs

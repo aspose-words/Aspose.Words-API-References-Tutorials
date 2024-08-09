@@ -11,14 +11,14 @@ Hướng dẫn Aspose.Words for .NET về Xử lý văn bản bằng PdfSaveOpti
 
 Bạn sẽ tìm hiểu cách điều chỉnh các tùy chọn chất lượng hình ảnh, chọn mức nén cho hình ảnh, đặt cài đặt bảo mật PDF như mã hóa và quyền, thậm chí chèn hình mờ vào tệp PDF được tạo. Các hướng dẫn cũng bao gồm các mẫu mã chi tiết để giúp bạn thực hành các tính năng này trong dự án của mình.
 
-Cho dù bạn muốn chuyển đổi tài liệu Word sang PDF để phân phối, lưu trữ hoặc in trực tuyến, những hướng dẫn này sẽ cung cấp cho bạn kiến thức để đạt được kết quả chính xác, chất lượng cao. Với Aspose.Words for .NET và PdfSaveOptions, bạn có thể tối ưu hóa quy trình chuyển đổi tệp và nhận được các tệp PDF đáp ứng nhu cầu cụ thể của mình.
+Cho dù bạn muốn chuyển đổi tài liệu Word sang PDF để phân phối, lưu trữ hay in trực tuyến, những hướng dẫn này sẽ cung cấp cho bạn kiến thức để đạt được kết quả chính xác, chất lượng cao. Với Aspose.Words for .NET và PdfSaveOptions, bạn có thể tối ưu hóa quy trình chuyển đổi tệp và nhận được các tệp PDF đáp ứng nhu cầu cụ thể của mình.
 
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
 | [Hiển thị tiêu đề tài liệu trong thanh tiêu đề cửa sổ](./display-doc-title-in-window-titlebar/) | Tìm hiểu cách hiển thị tiêu đề tài liệu trên thanh tiêu đề cửa sổ của tệp PDF bằng Aspose.Words for .NET với hướng dẫn từng bước này. |
 | [Cảnh báo kết xuất Pdf](./pdf-render-warnings/) | Hướng dẫn từng bước để xử lý các cảnh báo hiển thị PDF bằng Aspose.Words cho .NET. |
-| [Thêm chữ ký số vào PDF bằng Người giữ chứng chỉ](./digitally-signed-pdf-using-certificate-holder/) | Bảo mật các tệp PDF của bạn bằng chữ ký điện tử bằng Aspose.Words for .NET. Hãy làm theo hướng dẫn từng bước này để thêm chữ ký điện tử vào tệp PDF của bạn một cách dễ dàng. |
+| [Thêm chữ ký số vào PDF bằng Người giữ chứng chỉ](./digitally-signed-pdf-using-certificate-holder/) | Bảo mật các tệp PDF của bạn bằng chữ ký điện tử bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn từng bước này để thêm chữ ký điện tử vào tệp PDF của bạn một cách dễ dàng. |
 | [Nhúng phông chữ vào tài liệu PDF](./embedded-all-fonts/) | Nhúng phông chữ vào tài liệu PDF một cách dễ dàng bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết này. Đảm bảo sự xuất hiện nhất quán trên tất cả các thiết bị. |
 | [Nhúng phông chữ tập hợp con vào tài liệu PDF](./embedded-subset-fonts/) | Giảm kích thước tệp PDF bằng cách chỉ nhúng các tập hợp phông chữ cần thiết bằng Aspose.Words cho .NET. Làm theo hướng dẫn từng bước của chúng tôi để tối ưu hóa tệp PDF của bạn một cách hiệu quả. |
 | [Giảm kích thước PDF bằng cách tắt phông chữ nhúng](./disable-embed-windows-fonts/) | Giảm kích thước PDF bằng cách tắt phông chữ được nhúng bằng Aspose.Words for .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để tối ưu hóa tài liệu của bạn nhằm lưu trữ và chia sẻ hiệu quả. |

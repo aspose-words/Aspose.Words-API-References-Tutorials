@@ -14,9 +14,9 @@ Para trabalhar com nós no Aspose.Words for .NET, os desenvolvedores podem utili
  ## Tutoriais
 | Título | Descrição |
 | --- | --- |
-| [Usar tipo de nó](./use-node-type/) | Aprenda como usar o tipo de nó para acessar informações específicas do documento com Aspose.Words for .NET. |
-| [Obtenha o nó pai](./get-parent-node/) | Aprenda como obter o nó pai de um elemento específico com Aspose.Words for .NET. |
-| [Documento do proprietário](./owner-document/) | Aprenda como usar o documento do proprietário em Aspose.Words for .NET. |
-| [Enumerar nós filhos](./enumerate-child-nodes/) | Aprenda como enumerar nós filhos em um parágrafo com Aspose.Words for .NET. |
-| [Acesso digitado](./typed-access/) | Aprenda como usar o acesso digitado para manipular tabelas em Aspose.Words for .NET. |
-| [Criar e adicionar nó de parágrafo](./create-and-add-paragraph-node/) | Crie e adicione um nó de parágrafo aos seus documentos do Word com Aspose.Words for .NET. |
+| [Usar tipo de nó](./use-node-type/) | Descubra como dominar a propriedade NodeType em Aspose.Words for .NET com nosso guia detalhado. Perfeito para desenvolvedores que buscam aprimorar suas habilidades de processamento de documentos. |
+| [Obtenha o nó pai](./get-parent-node/) | Aprenda como obter o nó pai de uma seção de documento usando Aspose.Words for .NET com este tutorial passo a passo detalhado. |
+| [Documento do proprietário](./owner-document/) | Aprenda como trabalhar com o Documento do Proprietário no Aspose.Words for .NET. Este guia passo a passo aborda a criação e manipulação de nós em um documento. |
+| [Enumerar nós filhos](./enumerate-child-nodes/) | Aprenda como enumerar nós filhos em um documento do Word usando Aspose.Words for .NET com este tutorial passo a passo. |
+| [Acesso digitado](./typed-access/) | Aprenda como usar o acesso digitado no Aspose.Words for .NET para manipular facilmente elementos do documento, como tabelas e linhas. Este guia passo a passo simplifica seu fluxo de trabalho. |
+| [Criar e adicionar nó de parágrafo](./create-and-add-paragraph-node/) | Aprenda como criar e adicionar um nó de parágrafo em um documento usando Aspose.Words for .NET com este tutorial passo a passo detalhado. |

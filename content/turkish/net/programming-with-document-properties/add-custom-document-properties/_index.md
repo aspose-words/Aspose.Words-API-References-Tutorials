@@ -9,7 +9,7 @@ url: /tr/net/programming-with-document-properties/add-custom-document-properties
 ---
 ## giriiş
 
-Selam! Aspose.Words for .NET dünyasına dalıyor ve Word dosyalarınıza özel belge özelliklerini nasıl ekleyeceğinizi merak mı ediyorsunuz? Peki, doğru yere geldiniz! Özel özellikler, yerleşik özelliklerin kapsamadığı ek meta verileri depolamak için son derece yararlı olabilir. İster bir belgeyi yetkilendirmek, ister revizyon numarası eklemek, hatta belirli tarihleri eklemek olsun, özel özellikler ihtiyacınızı karşılar. Bu eğitimde, Aspose.Words for .NET'i kullanarak bu özellikleri sorunsuz bir şekilde ekleme adımlarında size yol göstereceğiz. başlamaya hazır mısın? Hadi dalalım!
+Selam! Aspose.Words for .NET dünyasına dalıyor ve Word dosyalarınıza özel belge özelliklerini nasıl ekleyeceğinizi merak mı ediyorsunuz? Peki, doğru yere geldiniz! Özel özellikler, yerleşik özelliklerin kapsamadığı ek meta verileri depolamak için son derece yararlı olabilir. İster bir belgeyi yetkilendirmek, ister revizyon numarası eklemek, hatta belirli tarihleri eklemek olsun, özel özellikler ihtiyacınızı karşılar. Bu eğitimde, Aspose.Words for .NET'i kullanarak bu özellikleri sorunsuz bir şekilde ekleme adımlarında size yol göstereceğiz. Başlamaya hazır mısınız? Hadi dalalım!
 
 ## Önkoşullar
 
@@ -113,7 +113,7 @@ customDocumentProperties.Add("Authorized Amount", 123.45);
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak özel belge özelliklerini bir Word belgesine başarıyla eklediniz. Bu özellikler, ihtiyaçlarınıza özel ek meta verileri depolamak için inanılmaz derecede faydalı olabilir. Yetki ayrıntılarını, revizyon numaralarını veya belirli tutarları izliyor olsanız da, özel özellikler esnek bir çözüm sunar.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak özel belge özelliklerini bir Word belgesine başarıyla eklediniz. Bu özellikler, ihtiyaçlarınıza özel ek meta verileri depolamak için inanılmaz derecede faydalı olabilir. Yetki ayrıntılarını, revizyon numaralarını veya belirli tutarları izliyor olsanız da, özel özellikler esnek bir çözüm sunar.
 
 Aspose.Words for .NET'te uzmanlaşmanın anahtarının pratik olduğunu unutmayın. Bu nedenle, farklı özellikleri denemeye devam edin ve belgelerinizi nasıl geliştirebileceklerini görün. Mutlu kodlama!
 

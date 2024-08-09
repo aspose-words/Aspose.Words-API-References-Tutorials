@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.DocumentPageSetup.docx
 
 ## Conclusion
 
-Et voila! Avec ces étapes simples, vous avez configuré la mise en page de votre document à l'aide d'Aspose.Words pour .NET. Ce processus peut vous éviter bien des problèmes de formatage et garantir à vos documents un aspect professionnel et soigné. Ainsi, la prochaine fois que vous travaillerez sur un projet, n'oubliez pas ce guide et parcourez la configuration de votre page comme un pro.
+Et voilà ! Avec ces étapes simples, vous avez configuré la mise en page de votre document à l'aide d'Aspose.Words pour .NET. Ce processus peut vous éviter bien des problèmes de formatage et garantir à vos documents un aspect professionnel et soigné. Ainsi, la prochaine fois que vous travaillerez sur un projet, n'oubliez pas ce guide et parcourez la configuration de votre page comme un pro.
 
 ## FAQ
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-pdfsaveoptions/additional-text-positioning/
 ---
-## introduzione
+## Introduzione
 
 Sei pronto per tuffarti nel mondo di Aspose.Words per .NET e sbloccare la magia del posizionamento preciso del testo nei tuoi PDF? Allaccia le cinture, perché questa guida ti condurrà in un viaggio emozionante attraverso i passaggi per migliorare il posizionamento del testo PDF con la funzione Posizionamento testo aggiuntivo. Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato, questo tutorial ti fornirà tutto ciò che devi sapere.
 
@@ -54,7 +54,7 @@ Una volta impostato il progetto, il passaggio successivo è caricare il document
 
 ## Passaggio 3: configura le opzioni di salvataggio del PDF
 
- La magia accade qui! Configureremo il`PdfSaveOptions` per abilitare il posizionamento aggiuntivo del testo.
+ La magia avviene qui! Configureremo il`PdfSaveOptions` per abilitare il posizionamento aggiuntivo del testo.
 
 1.  Crea oggetto PdfSaveOptions: crea un'istanza del file`PdfSaveOptions` classe.
     ```csharp
@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.AdditionalTextPositioning.pdf", sa
 
 ## Conclusione
 
-il gioco è fatto! Seguendo questi passaggi, hai migliorato con successo il posizionamento del testo nel tuo PDF utilizzando Aspose.Words per .NET. Questa potente funzionalità garantisce che i tuoi PDF abbiano un aspetto nitido e professionale, con il testo posizionato esattamente dove dovrebbe essere.
+Ed ecco qua! Seguendo questi passaggi, hai migliorato con successo il posizionamento del testo nel tuo PDF utilizzando Aspose.Words per .NET. Questa potente funzionalità garantisce che i tuoi PDF abbiano un aspetto nitido e professionale, con il testo posizionato esattamente dove dovrebbe essere.
 
 ## Domande frequenti
 

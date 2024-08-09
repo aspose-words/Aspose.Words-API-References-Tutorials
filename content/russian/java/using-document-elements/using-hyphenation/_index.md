@@ -64,7 +64,7 @@ doc.save(outPath + "WorkingWithHyphenation.LoadHyphenationDictionaryForLanguage.
 
 ### 2. Могу ли я использовать переносы на нескольких языках?
 
-Да, ты можешь. Aspose.Words for Java позволяет регистрировать и загружать словари расстановки переносов для разных языков.
+Да, вы можете. Aspose.Words for Java позволяет регистрировать и загружать словари расстановки переносов для разных языков.
 
 ### 3. Легко ли интегрировать Aspose.Words for Java в мой Java-проект?
 

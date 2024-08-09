@@ -66,7 +66,7 @@ Son olarak belgemizi kaydetmemiz gerekiyor. Bu adım, tüm sıkı çalışmalar�
 doc.Save(dataDir + "WorkingWithFields.RemoveField.docx");
 ```
 
-İşte buyur! Aspose.Words for .NET'i kullanarak Word belgenizdeki bir alanı başarıyla kaldırdınız. Ama durun, dahası da var! Her ayrıntıyı anladığınızdan emin olmak için bunu daha da detaylandıralım.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak Word belgenizdeki bir alanı başarıyla kaldırdınız. Ama durun, dahası da var! Her ayrıntıyı anladığınızdan emin olmak için bunu daha da detaylandıralım.
 
 ## Çözüm
 

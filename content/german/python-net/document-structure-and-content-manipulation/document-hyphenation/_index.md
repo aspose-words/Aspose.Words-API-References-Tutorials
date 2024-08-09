@@ -57,7 +57,7 @@ doc.save("sample_document.docx")
 
 ## Verwalten des Textflusses
 
-### Seitennummerierung
+### Pagination
 
 Durch die Seitennummerierung wird sichergestellt, dass Ihr Inhalt angemessen in Seiten unterteilt ist. Dies ist insbesondere bei größeren Dokumenten wichtig, um die Lesbarkeit zu gewährleisten. Sie können die Seitennummerierungseinstellungen basierend auf den Anforderungen Ihres Dokuments steuern.
 

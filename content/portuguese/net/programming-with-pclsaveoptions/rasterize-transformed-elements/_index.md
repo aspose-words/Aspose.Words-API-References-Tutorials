@@ -64,7 +64,7 @@ PclSaveOptions saveOptions = new PclSaveOptions
 };
 ```
 
- Aqui,`RasterizeTransformedElements` está configurado para`false` , o que significa que os elementos transformados não serão rasterizados. Você pode configurá-lo para`true` se você quiser que eles sejam rasterizados.
+ Aqui,`RasterizeTransformedElements` está definido para`false` , o que significa que os elementos transformados não serão rasterizados. Você pode configurá-lo para`true` se você quiser que eles sejam rasterizados.
 
 ## Etapa 4: converter o documento
 
@@ -87,13 +87,13 @@ Converter documentos do Word com elementos transformados para o formato PCL pode
 Sim, o Aspose.Words for .NET pode ser usado em vários tipos de aplicativos, incluindo aplicativos da web. Garanta o licenciamento e a configuração adequados.
 
 ### Para quais outros formatos o Aspose.Words for .NET pode ser convertido?  
-Aspose.Words oferece suporte a uma ampla variedade de formatos, incluindo PDF, HTML, EPUB e muito mais. Verifica a[documentação](https://reference.aspose.com/words/net/) para obter uma lista completa.
+Aspose.Words oferece suporte a uma ampla variedade de formatos, incluindo PDF, HTML, EPUB e muito mais. Verifique o[documentação](https://reference.aspose.com/words/net/) para obter uma lista completa.
 
 ### É possível rasterizar apenas elementos específicos do documento?  
  Atualmente, o`RasterizeTransformedElements` opção se aplica a todos os elementos transformados no documento. Para um controle mais granular, considere processar os elementos separadamente antes da conversão.
 
 ### Como posso solucionar problemas com a conversão de documentos?  
- Certifique-se de ter a versão mais recente do Aspose.Words e verifique a documentação para quaisquer problemas específicos de conversão. Além disso, o[Fórum de suporte](https://forum.aspose.com/c/words/8) é um ótimo lugar para pedir ajuda.
+ Certifique-se de ter a versão mais recente do Aspose.Words e verifique a documentação para quaisquer problemas específicos de conversão. Além disso, o[fórum de suporte](https://forum.aspose.com/c/words/8) é um ótimo lugar para pedir ajuda.
 
 ### Há alguma limitação para a versão de teste do Aspose.Words for .NET?  
- A versão de teste possui algumas limitações, como a marca d'água de avaliação. Para uma experiência totalmente funcional, considere adquirir um[licença temporária](https://purchase.aspose.com/temporary-license/).
+ A versão de teste possui algumas limitações, como a marca d’água de avaliação. Para uma experiência totalmente funcional, considere adquirir um[licença temporária](https://purchase.aspose.com/temporary-license/).

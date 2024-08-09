@@ -97,7 +97,7 @@ Thêm hình mờ văn bản vào tài liệu Word của bạn bằng Aspose.Word
 
 ### Làm cách nào để thay đổi màu của hình mờ?
 
- Bạn có thể thay đổi màu của hình mờ bằng cách đặt`Color` tài sản ở`TextWatermarkOptions` cho bất kỳ`System.Drawing.Color` giá trị.
+ Bạn có thể thay đổi màu của hình mờ bằng cách đặt`Color` tài sản ở`TextWatermarkOptions` đến bất kỳ`System.Drawing.Color` giá trị.
 
 ### Có thể thêm nhiều hình mờ vào một tài liệu không?
 
@@ -105,7 +105,7 @@ Aspose.Words hỗ trợ thêm một hình mờ cùng một lúc. Để thêm nhi
 
 ### Tôi có thể điều chỉnh vị trí của hình mờ không?
 
- Các`WatermarkLayout`thuộc tính xác định hướng nhưng việc điều chỉnh vị trí chính xác không được hỗ trợ trực tiếp. Bạn có thể cần phải sử dụng các kỹ thuật khác để có được vị trí chính xác.
+ các`WatermarkLayout`thuộc tính xác định hướng nhưng việc điều chỉnh vị trí chính xác không được hỗ trợ trực tiếp. Bạn có thể cần phải sử dụng các kỹ thuật khác để có được vị trí chính xác.
 
 ### Nếu tôi cần hình mờ bán trong suốt thì sao?
 

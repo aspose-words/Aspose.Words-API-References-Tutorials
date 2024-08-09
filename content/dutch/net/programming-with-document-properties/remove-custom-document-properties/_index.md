@@ -9,7 +9,7 @@ url: /nl/net/programming-with-document-properties/remove-custom-document-propert
 ---
 ## Invoering
 
-Bent u ooit verstrikt geraakt in het web van aangepaste documenteigenschappen in uw Word-bestanden? Je bent niet alleen! Het beheren van deze eigenschappen kan lastig zijn, maar met Aspose.Words voor .NET kunt u dit proces moeiteloos stroomlijnen. In deze zelfstudie begeleiden we u bij het verwijderen van aangepaste documenteigenschappen met Aspose.Words voor .NET. Of u nu een doorgewinterde ontwikkelaar bent of net begint, u zult deze handleiding eenvoudig en duidelijk vinden. Klaar om erin te duiken? Laten we beginnen!
+Bent u ooit verstrikt geraakt in het web van aangepaste documenteigenschappen in uw Word-bestanden? Je bent niet de enige! Het beheren van deze eigenschappen kan lastig zijn, maar met Aspose.Words voor .NET kunt u dit proces moeiteloos stroomlijnen. In deze zelfstudie begeleiden we u bij het verwijderen van aangepaste documenteigenschappen met Aspose.Words voor .NET. Of u nu een doorgewinterde ontwikkelaar bent of net begint, u zult deze handleiding eenvoudig en duidelijk vinden. Klaar om erin te duiken? Laten we beginnen!
 
 ## Vereisten
 
@@ -101,10 +101,10 @@ Aspose.Words voor .NET is een krachtige bibliotheek voor het programmatisch werk
 Aspose.Words voor .NET is speciaal ontworpen voor .NET-toepassingen. Aspose biedt echter vergelijkbare bibliotheken voor Java en andere platforms.
 
 ### 3. Hoe krijg ik een gratis proefversie van Aspose.Words voor .NET?
- Jij kan[download een gratis proefversie](https://releases.aspose.com/) van de Aspose-website.
+ Dat kan[download een gratis proefversie](https://releases.aspose.com/) van de Aspose-website.
 
 ### 4. Waar kan ik meer tutorials vinden over Aspose.Words voor .NET?
  Bekijk de[documentatie](https://reference.aspose.com/words/net/) voor meer tutorials en voorbeelden.
 
 ### 5. Hoe kan ik een licentie kopen voor Aspose.Words voor .NET?
- Jij kan[koop een licentie](https://purchase.aspose.com/buy) rechtstreeks van de Aspose-website.
+ Dat kan[koop een licentie](https://purchase.aspose.com/buy) rechtstreeks van de Aspose-website.

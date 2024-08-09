@@ -2,63 +2,71 @@
 title: Pogrubiony tekst
 linktitle: Pogrubiony tekst
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak pogrubić tekst za pomocą Aspose.Words dla .NET Przewodnik krok po kroku.
+description: Dowiedz się, jak pogrubić tekst w dokumentach programu Word za pomocą Aspose.Words dla .NET, korzystając z naszego przewodnika krok po kroku. Idealny do automatyzacji formatowania dokumentów.
 type: docs
 weight: 10
 url: /pl/net/working-with-markdown/bold-text/
 ---
+## Wstęp
 
-W tym przykładzie powiemy Ci, jak pogrubić tekst za pomocą Aspose.Words dla .NET. Pogrubienie tekstu sprawia, że jest on bardziej widoczny i wyeksponowany.
+Hej, miłośnicy dokumentów! Jeśli nurkujesz w świat przetwarzania dokumentów za pomocą Aspose.Words dla .NET, czeka Cię prawdziwa gratka. Ta potężna biblioteka oferuje mnóstwo funkcji do programowego manipulowania dokumentami programu Word. Dzisiaj przeprowadzimy Cię przez jedną z takich funkcji - jak pogrubić tekst za pomocą Aspose.Words dla .NET. Niezależnie od tego, czy generujesz raporty, tworzysz dynamiczne dokumenty, czy automatyzujesz proces dokumentacji, nauka kontrolowania formatowania tekstu jest niezbędna. Gotowy, aby wyróżnić swój tekst? Zacznijmy!
 
-## Krok 1: Korzystanie z generatora dokumentów
+## Warunki wstępne
 
-Najpierw użyjemy generatora dokumentów, aby dodać treść do naszego dokumentu.
+Zanim przejdziemy do kodu, musisz skonfigurować kilka rzeczy:
 
-```csharp
-DocumentBuilder builder = new DocumentBuilder();
-```
+1.  Aspose.Words dla .NET: Upewnij się, że masz najnowszą wersję Aspose.Words dla .NET. Jeśli jeszcze tego nie zrobiłeś, możesz pobrać go z[Tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: IDE, takie jak Visual Studio, do pisania i uruchamiania kodu.
+3. Podstawowa znajomość języka C#: Znajomość programowania w języku C# pomoże Ci postępować zgodnie z przykładami.
 
-## Krok 2: Pogrubiony tekst
+## Importuj przestrzenie nazw
 
- Możemy pogrubić tekst, ustawiając kreatora dokumentów`Font.Bold`własność do`true`.
-
-```csharp
-builder.Font.Bold = true;
-```
-
-## Krok 3: Dodaj treść do dokumentu
-
- Teraz możemy dodać treść do dokumentu za pomocą metod tworzenia dokumentów, takich jak`Writeln`, który dodaje wiersz tekstu.
+Na początek zaimportujmy niezbędne przestrzenie nazw. Umożliwi nam to dostęp do funkcjonalności Aspose.Words bez ciągłego odwoływania się do pełnych ścieżek przestrzeni nazw.
 
 ```csharp
-builder.Writeln("This text will be bold");
+using System;
+using Aspose.Words;
+using Aspose.Words.Tables;
 ```
 
-## Przykładowy kod źródłowy pogrubionego tekstu przy użyciu Aspose.Words dla .NET
+Teraz podzielmy proces pogrubiania tekstu w dokumencie programu Word za pomocą Aspose.Words dla .NET.
 
+## Krok 1: Zainicjuj DocumentBuider
+
+ The`DocumentBuilder` class zapewnia szybki i łatwy sposób dodawania treści do dokumentu. Zainicjujmy to.
 
 ```csharp
 // Użyj narzędzia do tworzenia dokumentów, aby dodać treść do dokumentu.
 DocumentBuilder builder = new DocumentBuilder();
-
-// Pogrub tekst.
-builder.Font.Bold = true;
-builder.Writeln("This text will be Bold");  
 ```
 
-Gratulacje! Nauczyłeś się teraz, jak pogrubiać tekst za pomocą Aspose.Words dla .NET.
+## Krok 2: Pogrub tekst
 
+ Teraz przychodzi zabawna część – pogrubienie tekstu. Ustalimy`Bold` własność`Font` oponować`true` i napisz nasz pogrubiony tekst.
 
-### Często zadawane pytania
+```csharp
+// Pogrubienie tekstu.
+builder.Font.Bold = true;
+builder.Writeln("This text will be Bold");
+```
 
-#### P: Jak mogę pogrubić tekst w Aspose.Words?
+## Wniosek
 
- O: Aby pogrubić tekst w Aspose.Words, możesz użyć opcji`Font.Bold` własność`Run` obiekt. Możesz ustawić tę właściwość na`true` pogrubić określony tekst. Możesz na przykład użyć`run.Font.Bold=true` aby pogrubić tekst wewnątrz`Run` obiekt.
+I masz to! Pomyślnie pogrubiłeś tekst w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Ta prosta, ale potężna funkcja to tylko wierzchołek góry lodowej, jeśli chodzi o to, co możesz osiągnąć dzięki Aspose.Words. Eksperymentuj więc i odkrywaj, aby uwolnić pełny potencjał zadań związanych z automatyzacją dokumentów.
 
-#### P: Czy można pogrubić kilka fragmentów tekstu w tym samym akapicie?
+## Często zadawane pytania
 
- Odp.: Tak, możesz pogrubić wiele fragmentów tekstu w jednym akapicie, używając opcji wielokrotnych`Run` obiekty. Możesz utworzyć wiele`Run` obiektów i ustaw`Font.Bold`własność do`true` dla każdego obiektu, aby pogrubić wybrane fragmenty tekstu. Następnie możesz dodać je do akapitu za pomocą`Paragraph.AppendChild(run)` metoda.
+### Czy mogę pogrubić tylko część tekstu?
+ Tak, możesz. Skorzystaj z`DocumentBuilder` aby sformatować określone sekcje tekstu.
 
-#### P: Czy mogę pogrubić tekst znajdujący się w tabeli lub komórce w Aspose.Words?
+### Czy można również zmienić kolor tekstu?
+ Absolutnie! Możesz skorzystać z`builder.Font.Color`właściwość, aby ustawić kolor tekstu.
 
- O: Tak, możesz pogrubić tekst znajdujący się w tabeli lub komórce w Aspose.Words. Możesz przejść do żądanej komórki lub akapitu, korzystając z odpowiednich metod, a następnie zastosować pogrubione formatowanie, korzystając z opcji`Font.Bold` własność`Run` Lub`Paragraph` obiekt.
+### Czy mogę zastosować wiele stylów czcionek jednocześnie?
+ Tak, możesz. Na przykład możesz jednocześnie pogrubić i pochylić tekst, ustawiając oba`builder.Font.Bold`I`builder.Font.Italic` Do`true`.
+
+### Jakie inne opcje formatowania tekstu są dostępne?
+Aspose.Words zapewnia szeroką gamę opcji formatowania tekstu, takich jak rozmiar czcionki, podkreślenie, przekreślenie i inne.
+
+### Czy potrzebuję licencji, aby korzystać z Aspose.Words?
+ Możesz używać Aspose.Words z bezpłatną wersją próbną lub licencją tymczasową, ale dla pełnej funkcjonalności zaleca się zakup licencji. Sprawdź[kupić](https://purchase.aspose.com/buy) stronę, aby uzyskać więcej szczegółów.

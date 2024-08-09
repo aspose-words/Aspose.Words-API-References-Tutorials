@@ -7,15 +7,15 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-table-styles-and-formatting/expand-formatting-on-cells-and-row-from-style/
 ---
-## Úvod
+## Zavedení
 
-Přistihli jste se někdy, že potřebujete použít konzistentní styl napříč tabulkami v dokumentech aplikace Word? Ruční úprava každé buňky může být zdlouhavá a náchylná k chybám. To je místo, kde se Aspose.Words for .NET hodí. Tento výukový program vás provede procesem rozšíření formátování na buňky a řádky ze stylu tabulky a zajistí, že vaše dokumenty budou vypadat uhlazeně a profesionálně bez dalších potíží.
+Přistihli jste se někdy, že potřebujete použít konzistentní styl napříč tabulkami v dokumentech aplikace Word? Ruční úprava každé buňky může být zdlouhavá a náchylná k chybám. To je místo, kde se Aspose.Words for .NET hodí. Tento výukový program vás provede procesem rozšíření formátování buněk a řádků ze stylu tabulky a zajistí, že vaše dokumenty budou vypadat uhlazeně a profesionálně bez dalších potíží.
 
 ## Předpoklady
 
 Než se pustíme do podrobností, ujistěte se, že máte na svém místě následující:
 
--  Aspose.Words for .NET: Můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Můžete si ji stáhnout[zde](https://releases.aspose.com/words/net/).
 - Visual Studio: Bude fungovat jakákoli nejnovější verze.
 - Základní znalost C#: Znalost programování v C# je nezbytná.
 - Ukázkový dokument: Připravte si dokument aplikace Word s tabulkou, nebo můžete použít ten uvedený v příkladu kódu.

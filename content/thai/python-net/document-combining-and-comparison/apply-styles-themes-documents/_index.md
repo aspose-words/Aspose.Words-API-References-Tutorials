@@ -151,7 +151,7 @@ doc.range.clear_formatting()
 
 ### ฉันจะดาวน์โหลด Aspose.Words สำหรับ Python ได้อย่างไร
 
- คุณสามารถดาวน์โหลด Aspose.Words สำหรับ Python ได้จากเว็บไซต์:[ลิ้งค์ดาวน์โหลด](https://releases.aspose.com/words/python/).
+ คุณสามารถดาวน์โหลด Aspose.Words สำหรับ Python ได้จากเว็บไซต์:[ลิงค์ดาวน์โหลด](https://releases.aspose.com/words/python/).
 
 ### ฉันสามารถสร้างสไตล์ที่กำหนดเองของตัวเองได้หรือไม่?
 

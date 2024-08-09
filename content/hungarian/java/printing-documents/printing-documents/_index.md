@@ -182,7 +182,7 @@ class MultipagePrintDocument implements Printable
 
 ## Következtetés
 
-Gratulálunk! Sikeresen kinyomtatott egy Word-dokumentumot az Aspose.Words for Java használatával. Ez a lépésenkénti útmutató segít abban, hogy a dokumentumnyomtatást zökkenőmentesen integrálja Java-alkalmazásaiba.
+Gratulálok! Sikeresen kinyomtatott egy Word-dokumentumot az Aspose.Words for Java használatával. Ez a lépésenkénti útmutató segít abban, hogy a dokumentumnyomtatást zökkenőmentesen integrálja Java-alkalmazásaiba.
 
 ## GYIK
 

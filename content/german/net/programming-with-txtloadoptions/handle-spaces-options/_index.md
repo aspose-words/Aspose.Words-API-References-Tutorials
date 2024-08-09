@@ -99,7 +99,7 @@ Der Umgang mit Leerzeichen in Textdokumenten ist eine häufige, aber entscheiden
 ## Häufig gestellte Fragen
 
 ### Wie kann ich mit Aspose.Words für .NET Leerzeichen in Textdateien behandeln?  
- Du kannst den ... benutzen`TxtLoadOptions` Klasse, um anzugeben, wie führende und nachfolgende Leerzeichen beim Laden von Textdateien verwaltet werden sollen.
+ Sie können die`TxtLoadOptions` Klasse, um anzugeben, wie führende und nachfolgende Leerzeichen beim Laden von Textdateien verwaltet werden sollen.
 
 ### Kann ich führende Leerzeichen in meinem Dokument beibehalten?  
  Ja, Sie können die`TxtLoadOptions` um führende Leerzeichen beizubehalten, indem Sie`LeadingSpacesOptions` Zu`TxtLeadingSpacesOptions.None`.

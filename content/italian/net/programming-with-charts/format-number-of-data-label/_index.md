@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-charts/format-number-of-data-label/
 ---
-## introduzione
+## Introduzione
 
 La creazione di documenti accattivanti e informativi spesso implica l'inclusione di grafici con etichette dati ben formattate. Se sei uno sviluppatore .NET che desidera migliorare i tuoi documenti Word con grafici sofisticati, Aspose.Words per .NET è una fantastica libreria per aiutarti a raggiungere questo obiettivo. Questo tutorial ti guiderà attraverso il processo di formattazione delle etichette dei numeri in un grafico utilizzando Aspose.Words per .NET, passo dopo passo.
 

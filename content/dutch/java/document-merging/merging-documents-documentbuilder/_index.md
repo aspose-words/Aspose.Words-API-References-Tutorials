@@ -85,7 +85,7 @@ Ja, u kunt de volgorde van de inhoud bepalen door de volgorde aan te passen waar
 
 ### Is Aspose.Words geschikt voor geavanceerde documentmanipulatietaken?
 
-Absoluut! Aspose.Words voor Java biedt een breed scala aan functies voor geavanceerde documentmanipulatie, inclusief maar niet beperkt tot samenvoegen, splitsen, opmaken en meer.
+Absoluut! Aspose.Words voor Java biedt een breed scala aan functies voor geavanceerde documentmanipulatie, inclusief maar niet beperkt tot samenvoegen, splitsen, opmaak en meer.
 
 ### Ondersteunt Aspose.Words naast DOCX ook andere documentformaten?
 

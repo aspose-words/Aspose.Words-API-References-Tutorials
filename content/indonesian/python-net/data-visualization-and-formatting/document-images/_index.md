@@ -44,7 +44,7 @@ shape = doc.pages[0].shapes.add_remote_image("https://contoh.com/image.jpg", 100
 
 ## Menyesuaikan Ukuran dan Penempatan Gambar
 
-Mengontrol ukuran dan penempatan gambar memastikan gambar melengkapi konten Anda dengan mulus.
+Mengontrol ukuran dan penempatan gambar memastikan gambar melengkapi konten Anda dengan lancar.
 
 ```python
 # Set image size
@@ -149,7 +149,7 @@ Memasukkan gambar multimedia ke dalam dokumen Anda adalah sebuah terobosan. Deng
 
 ### Bisakah saya menambahkan keterangan pada gambar yang saya sisipkan?
 
- Ya, Anda dapat menambahkan keterangan ke gambar menggunakan Aspose.Words. Menggunakan`add_caption` metode dan sesuaikan tampilan keterangan.
+ Ya, Anda dapat menambahkan keterangan ke gambar menggunakan Aspose.Words. Gunakan`add_caption` metode dan sesuaikan tampilan keterangan.
 
 ### Format apa yang dapat saya gunakan untuk mengekspor dokumen saya?
 

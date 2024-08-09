@@ -15,7 +15,7 @@ url: /ko/net/programming-with-htmlsaveoptions/export-roundtrip-information/
 
 기본 사항을 살펴보기 전에 필요한 모든 것이 있는지 확인하겠습니다.
 
-1.  .NET용 Aspose.Words: 최신 버전인지 확인하세요.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+1.  .NET용 Aspose.Words: 최신 버전인지 확인하세요.[여기서 다운로드하세요](https://releases.aspose.com/words/net/).
 2. 개발 환경: Visual Studio 또는 기타 C# 호환 IDE.
 3. C#에 대한 기본 지식: C# 및 .NET 프레임워크에 어느 정도 익숙해지면 도움이 됩니다.
 4. 라이센스: 전체 라이센스가 없는 경우 임시 라이센스를 사용할 수 있습니다. 그것을 얻으십시오[여기](https://purchase.aspose.com/temporary-license/).

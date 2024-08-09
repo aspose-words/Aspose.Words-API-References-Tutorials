@@ -9,7 +9,7 @@ url: /pl/net/programming-with-tables/horizontal-merge/
 ---
 ## Wstęp
 
-No hej! Gotowy do zanurzenia się w świat Aspose.Words dla .NET? Dzisiaj zajmiemy się bardzo przydatną funkcją: poziomym łączeniem tabel. Może to zabrzmi trochę technicznie, ale nie martw się, wspieram Cię. Pod koniec tego samouczka będziesz profesjonalistą w programowym łączeniu komórek w dokumentach programu Word. Zatem zakasujmy rękawy i zaczynajmy!
+Hej tam! Gotowy do zanurzenia się w świat Aspose.Words dla .NET? Dzisiaj zajmiemy się bardzo przydatną funkcją: poziomym łączeniem tabel. Może to zabrzmi trochę technicznie, ale nie martw się, wspieram Cię. Pod koniec tego samouczka będziesz profesjonalistą w programowym łączeniu komórek w dokumentach programu Word. Zatem zakasujmy rękawy i zaczynajmy!
 
 ## Warunki wstępne
 
@@ -44,7 +44,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Ten fragment kodu konfiguruje nowy dokument i przygotowuje plik`DocumentBuilder` dla akcji.
+ Ten fragment kodu konfiguruje nowy dokument i przygotowuje plik`DocumentBuilder` do działania.
 
 ## Krok 2: Wstawianie pierwszej komórki
 
@@ -108,7 +108,7 @@ Aspose.Words dla .NET to potężna biblioteka, która umożliwia programistom tw
 ### Czy mogę scalić komórki w pionie za pomocą Aspose.Words dla .NET?
  Tak, możesz także łączyć komórki w pionie, używając opcji`CellFormat.VerticalMerge` nieruchomość.
 
-### Czy korzystanie z Aspose.Words dla .NET jest darmowe?
+### Czy korzystanie z Aspose.Words dla .NET jest bezpłatne?
  Aspose.Words dla .NET oferuje bezpłatną wersję próbną, ale aby uzyskać pełną funkcjonalność, musisz kupić licencję. Możesz uzyskać licencję tymczasową[Tutaj](https://purchase.aspose.com/temporary-license/).
 
 ### Jak mogę dowiedzieć się więcej o Aspose.Words dla .NET?

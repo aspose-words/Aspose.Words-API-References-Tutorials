@@ -126,7 +126,7 @@ Wykonując poniższe kroki, możesz skutecznie obsługiwać ostrzeżenia o rende
 
 ### P1: Czy za pomocą tej metody mogę obsługiwać inne typy ostrzeżeń?
 
- Tak`IWarningCallback` interfejs może obsługiwać różnego rodzaju ostrzeżenia, nie tylko te związane z renderowaniem plików PDF.
+ Tak,`IWarningCallback` interfejs może obsługiwać różnego rodzaju ostrzeżenia, nie tylko te związane z renderowaniem plików PDF.
 
 ### P2: Gdzie mogę pobrać bezpłatną wersję próbną Aspose.Words dla .NET?
 
@@ -138,7 +138,7 @@ MetafileRenderingOptions to ustawienia określające sposób renderowania metapl
 
 ### P4: Gdzie mogę znaleźć wsparcie dla Aspose.Words?
 
- Odwiedzić[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8) do pomocy.
+ Odwiedź[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8) o pomoc.
 
 ### P5: Czy można uzyskać tymczasową licencję na Aspose.Words?
 

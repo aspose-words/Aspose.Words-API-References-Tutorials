@@ -239,7 +239,7 @@ HandleMergeField 类的源代码
     {
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs args)
         {
-            //没做什么。
+            //什么也不做。
         }
         /// <摘要>
         /// 当邮件合并引擎在文档中遇到 Image:XXX 合并字段时调用此方法。
@@ -320,7 +320,7 @@ HandleMergeField 类的源代码
         }
         public void /*IFieldMergingCallback.*/imageFieldMerging(ImageFieldMergingArgs args)
         {
-            //没做什么。
+            //什么也不做。
         }
         private DocumentBuilder mBuilder;
         private int mRowIdx;
@@ -353,7 +353,7 @@ HandleMergeField 类的源代码
 }
 ```
 
-## 六，结论
+## 6. 结论
 
 恭喜！您已经学会了如何使用 Aspose.Words for Java 中的字段来动态操作 Word 文档。这个强大的 API 让您可以完全控制您的文档，这对 Java 开发人员来说是一笔宝贵的财富。
 

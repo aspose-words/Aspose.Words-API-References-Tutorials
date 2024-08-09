@@ -87,7 +87,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetTableTitleAndDescript
 ช่วยให้บริบท โดยเฉพาะในเอกสารขนาดใหญ่ที่มีหลายตาราง
 
 ### Aspose.Words สำหรับ .NET ฟรีหรือไม่
- ไม่ แต่คุณสามารถเริ่มต้นด้วย[ทดลองฟรี](https://releases.aspose.com/).
+ ไม่ แต่คุณสามารถเริ่มต้นด้วย[ทดลองใช้ฟรี](https://releases.aspose.com/).
 
 ### ฉันสามารถปรับแต่งด้านอื่นๆ ของตารางโดยใช้ Aspose.Words สำหรับ .NET ได้หรือไม่
 อย่างแน่นอน! คุณสามารถปรับแต่งตารางและเอกสารของคุณได้เกือบทุกด้าน

@@ -15,7 +15,7 @@ Si vous avez déjà travaillé avec des documents Word et avez eu besoin de modi
 
 Avant de passer aux choses sérieuses concernant la modification des contrôles de contenu, assurez-vous d'avoir les éléments suivants :
 
-1.  Aspose.Words pour .NET installé : assurez-vous que la bibliothèque Aspose.Words est installée. Sinon, vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/).
+1.  Aspose.Words pour .NET installé : assurez-vous que la bibliothèque Aspose.Words est installée. Sinon, vous pouvez[téléchargez-le ici](https://releases.aspose.com/words/net/).
 
 2. Connaissance de base de C# : ce didacticiel suppose que vous connaissez les concepts de base de la programmation C#.
 

@@ -17,7 +17,7 @@ V tomto podrobném průvodci prozkoumáme, jak rozdělit dokumenty na stránky H
 Než začneme, ujistěte se, že máte splněny následující předpoklady:
 
 - Java Development Kit (JDK) nainstalovaný ve vašem systému.
--  Aspose.Words pro knihovnu Java. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/java/).
+-  Aspose.Words pro knihovnu Java. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/java/).
 
 ## Krok 1: Importujte potřebné balíčky
 
@@ -139,7 +139,7 @@ V tomto komplexním průvodci jsme se zabývali procesem rozdělování dokument
 
 ### Jak nainstaluji Aspose.Words for Java?
 
- Chcete-li nainstalovat Aspose.Words for Java, můžete si stáhnout knihovnu z[tady](https://releases.aspose.com/words/java/) a postupujte podle pokynů k instalaci uvedených v dokumentaci.
+ Chcete-li nainstalovat Aspose.Words for Java, můžete si stáhnout knihovnu z[zde](https://releases.aspose.com/words/java/) a postupujte podle pokynů k instalaci uvedených v dokumentaci.
 
 ### Mohu přizpůsobit výstup HTML?
 

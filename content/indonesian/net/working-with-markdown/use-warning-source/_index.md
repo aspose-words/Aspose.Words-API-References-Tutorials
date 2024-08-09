@@ -9,14 +9,14 @@ url: /id/net/working-with-markdown/use-warning-source/
 ---
 ## Perkenalan
 
- Pernahkah Anda mengelola dan memformat dokumen secara terprogram? Jika ya, Anda mungkin menghadapi kerumitan dalam menangani berbagai jenis dokumen dan memastikan semuanya terlihat baik-baik saja. Masuk ke Aspose.Words untuk .NET – perpustakaan canggih yang menyederhanakan pemrosesan dokumen. Hari ini, kita akan mendalami fitur spesifik: menggunakan`WarningSource`kelas untuk menangkap dan menangani peringatan saat bekerja dengan Markdown. Mari kita mulai perjalanan ini untuk menguasai Aspose.Words untuk .NET!
+Pernahkah Anda mengelola dan memformat dokumen secara terprogram? Jika ya, Anda mungkin menghadapi kerumitan dalam menangani berbagai jenis dokumen dan memastikan semuanya terlihat baik-baik saja. Masuk ke Aspose.Words untuk .NET – perpustakaan canggih yang menyederhanakan pemrosesan dokumen. Hari ini, kita akan mendalami fitur spesifik: menggunakan`WarningSource` kelas untuk menangkap dan menangani peringatan saat bekerja dengan Markdown. Mari kita mulai perjalanan ini untuk menguasai Aspose.Words untuk .NET!
 
 ## Prasyarat
 
 Sebelum kita masuk ke seluk beluknya, pastikan Anda telah menyiapkan hal berikut:
 
 1. Visual Studio: Versi terbaru apa pun bisa digunakan.
-2.  Aspose.Words untuk .NET: Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+2.  Aspose.Words untuk .NET: Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 3. Pengetahuan Dasar tentang C#: Mengetahui cara Anda menggunakan C# akan membantu Anda mengikutinya dengan lancar.
 4.  Contoh File DOCX: Untuk tutorial ini, kami akan menggunakan file bernama`Emphases markdown warning.docx`.
 
@@ -39,7 +39,7 @@ Setiap proyek membutuhkan dasar yang kuat, bukan? Mari kita mulai dengan menyiap
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya tempat file DOCX Anda berada.
+ Mengganti`"YOUR DOCUMENT DIRECTORY"`dengan jalur sebenarnya tempat file DOCX Anda berada.
 
 ## Langkah 2: Memuat Dokumen
 
@@ -53,7 +53,7 @@ Document doc = new Document(dataDir + "Emphases markdown warning.docx");
 
 ## Langkah 3: Menyiapkan Koleksi Peringatan
 
- Bayangkan membaca buku dengan catatan tempel yang menyoroti poin-poin penting. Itu`WarningInfoCollection`melakukan hal itu untuk pemrosesan dokumen kami.
+ Bayangkan membaca buku dengan catatan tempel yang menyoroti poin-poin penting. Itu`WarningInfoCollection` melakukan hal itu untuk pemrosesan dokumen kami.
 
 ```csharp
 WarningInfoCollection warnings = new WarningInfoCollection();
@@ -88,7 +88,7 @@ Baris ini menyimpan dokumen sebagai file Markdown di direktori yang ditentukan.
 
 ## Kesimpulan
 
- Dan itu dia! Anda baru saja mempelajari cara menggunakan`WarningSource`kelas di Aspose.Words untuk .NET untuk menangani peringatan penurunan harga. Tutorial ini mencakup penyiapan proyek Anda, memuat dokumen, mengumpulkan dan memproses peringatan, dan menyimpan dokumen akhir. Dengan pengetahuan ini, Anda lebih siap untuk mengelola pemrosesan dokumen di aplikasi Anda. Teruslah bereksperimen dan jelajahi kemampuan luas Aspose.Words untuk .NET!
+Dan itu dia! Anda baru saja mempelajari cara menggunakan`WarningSource` kelas di Aspose.Words untuk .NET untuk menangani peringatan penurunan harga. Tutorial ini mencakup penyiapan proyek Anda, memuat dokumen, mengumpulkan dan memproses peringatan, dan menyimpan dokumen akhir. Dengan pengetahuan ini, Anda lebih siap untuk mengelola pemrosesan dokumen di aplikasi Anda. Teruslah bereksperimen dan jelajahi kemampuan luas Aspose.Words untuk .NET!
 
 ## FAQ
 
@@ -102,7 +102,7 @@ Aspose.Words for .NET adalah perpustakaan untuk bekerja dengan dokumen Word seca
  Sumber peringatan menunjukkan asal mula peringatan yang dihasilkan selama pemrosesan dokumen. Misalnya,`WarningSource.Markdown` menunjukkan peringatan terkait pemrosesan penurunan harga.
 
 ### Bisakah saya menyesuaikan penanganan peringatan di Aspose.Words?
- Ya, Anda dapat menyesuaikan penanganan peringatan dengan menerapkan`IWarningCallback` antarmuka dan mengaturnya ke dokumen`WarningCallback` Properti.
+ Ya, Anda dapat menyesuaikan penanganan peringatan dengan menerapkan`IWarningCallback`antarmuka dan mengaturnya ke dokumen`WarningCallback` milik.
 
 ### Bagaimana cara menyimpan dokumen dalam format berbeda menggunakan Aspose.Words?
  Anda dapat menyimpan dokumen dalam berbagai format (seperti DOCX, PDF, Markdown) menggunakan`Save` metode`Document` kelas, menentukan format yang diinginkan sebagai parameter.

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/apply-license/apply-metered-license/
 ---
-## introduzione
+## Introduzione
 
 Aspose.Words per .NET è una potente libreria che ti consente di lavorare con documenti Word nelle tue applicazioni .NET. Una delle sue caratteristiche principali è la possibilità di applicare una licenza a consumo. Questo modello di licenza è perfetto per le aziende e gli sviluppatori che preferiscono un approccio con pagamento in base al consumo. Con una licenza a consumo paghi solo per ciò che utilizzi, rendendola una soluzione flessibile ed economica. In questa guida ti guideremo attraverso il processo di applicazione di una licenza misurata al tuo progetto Aspose.Words per .NET.
 
@@ -90,7 +90,7 @@ Ciò garantisce che se qualcosa va storto, riceverai un messaggio di errore sign
 
 ## Conclusione
 
-il gioco è fatto! Applicare una licenza a consumo in Aspose.Words per .NET è semplice una volta suddivisa in passaggi gestibili. Questo modello di licenza offre flessibilità e risparmi sui costi, rendendolo una scelta eccellente per molti sviluppatori. Ricorda, la chiave è impostare correttamente le chiavi a consumo e gestire eventuali eccezioni che potrebbero verificarsi. Buona programmazione!
+Ed ecco qua! Applicare una licenza a consumo in Aspose.Words per .NET è semplice una volta suddivisa in passaggi gestibili. Questo modello di licenza offre flessibilità e risparmi sui costi, rendendolo una scelta eccellente per molti sviluppatori. Ricorda, la chiave è impostare correttamente le chiavi a consumo e gestire eventuali eccezioni che potrebbero verificarsi. Buona programmazione!
 
 ## Domande frequenti
 

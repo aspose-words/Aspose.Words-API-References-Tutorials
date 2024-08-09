@@ -9,7 +9,7 @@ url: /hu/net/programming-with-markdownsaveoptions/export-into-markdown-with-tabl
 ---
 ## Bevezetés
 
-Halihó! Gondolkozott már azon, hogyan exportálhatja Word-dokumentumát Markdown formátumba tökéletesen igazított táblázatokkal? Függetlenül attól, hogy Ön fejlesztő a dokumentáción, vagy csak valaki, aki szereti a Markdownt, ez az útmutató az Ön számára készült. Elmerülünk az Aspose.Words for .NET használatával ennek eléréséhez. Készen áll arra, hogy Word-táblázatait szépen igazított Markdown-táblázatokká alakítsa? Kezdjük el!
+Szia! Gondolkozott már azon, hogyan exportálhatja Word-dokumentumát Markdown formátumba tökéletesen igazított táblázatokkal? Függetlenül attól, hogy Ön fejlesztő a dokumentáción, vagy csak valaki, aki szereti a Markdownt, ez az útmutató az Ön számára készült. Elmerülünk az Aspose.Words for .NET használatával ennek eléréséhez. Készen áll arra, hogy Word-táblázatait szépen igazított Markdown-táblázatokká alakítsa? Kezdjük is!
 
 ## Előfeltételek
 

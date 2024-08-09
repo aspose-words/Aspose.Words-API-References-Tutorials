@@ -9,7 +9,7 @@ url: /hu/net/programming-with-table-styles-and-formatting/modify-row-formatting/
 ---
 ## Bevezetés
 
-Szüksége volt már arra, hogy módosítsa a sorok formázását Word-dokumentumaiban? Lehet, hogy a táblázat első sorát szeretné kiemelni, vagy biztosítani szeretné, hogy a táblázatok a különböző oldalakon jól nézzenek ki. Nos, szerencséd van! Ebben az oktatóanyagban mélyrehatóan belemerülünk abba, hogyan lehet módosítani a sorformázást Word dokumentumokban az Aspose.Words for .NET használatával. Akár tapasztalt fejlesztő, akár csak most kezdi, ez az útmutató világos, részletes útmutatásokkal végigvezeti Önt minden lépésen. Készen áll arra, hogy professzionális megjelenést adjon dokumentumainak? Kezdjük el!
+Szüksége volt már arra, hogy módosítsa a sorok formázását Word-dokumentumaiban? Lehet, hogy a táblázat első sorát szeretné kiemelni, vagy biztosítani szeretné, hogy a táblázatok a különböző oldalakon jól nézzenek ki. Nos, szerencséd van! Ebben az oktatóanyagban mélyrehatóan belemerülünk abba, hogyan lehet módosítani a sorformázást Word dokumentumokban az Aspose.Words for .NET használatával. Akár tapasztalt fejlesztő, akár csak most kezdi, ez az útmutató világos, részletes útmutatásokkal végigvezeti Önt minden lépésen. Készen áll arra, hogy professzionális megjelenést adjon dokumentumainak? Kezdjük is!
 
 ## Előfeltételek
 
@@ -91,7 +91,7 @@ Végül gondoskodunk arról, hogy a sor oldalakra szakadjon. Ez különösen has
 firstRow.RowFormat.AllowBreakAcrossPages = true;
 ```
 
- Beállítás`AllowBreakAcrossPages` nak nek`true` lehetővé teszi a sor oldalak közötti felosztását, ha szükséges. Ez biztosítja, hogy a táblázat megőrizze szerkezetét még akkor is, ha több oldalt ölel fel.
+ Beállítás`AllowBreakAcrossPages` hogy`true` lehetővé teszi a sor oldalak közötti felosztását, ha szükséges. Ez biztosítja, hogy a táblázat megőrizze szerkezetét még akkor is, ha több oldalt ölel fel.
 
 ## Következtetés
 

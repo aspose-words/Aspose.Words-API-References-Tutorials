@@ -98,7 +98,7 @@ Aspose.Words untuk Java memberdayakan Anda untuk memisahkan dan mengekstrak kont
 
 ### Bisakah saya membagi dokumen berdasarkan kriteria khusus?
 
- Ya, Anda dapat menentukan kriteria khusus untuk memisahkan dokumen menggunakan Aspose.Words untuk Java. Cukup buat kustom Anda`DocumentSplitCriteria` penerapan.
+ Ya, Anda dapat menentukan kriteria khusus untuk memisahkan dokumen menggunakan Aspose.Words untuk Java. Cukup buat kustom Anda`DocumentSplitCriteria` pelaksanaan.
 
 ### Format file apa yang didukung Aspose.Words untuk Java?
 

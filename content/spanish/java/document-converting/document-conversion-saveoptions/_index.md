@@ -14,7 +14,7 @@ Aspose.Words para Java es una biblioteca de Java que proporciona una amplia func
 
 ## Configurando su entorno Java
 
-Antes de poder comenzar a usar Aspose.Words para Java, debe configurar su entorno de desarrollo Java. Siga estos pasos para comenzar:
+Antes de poder comenzar a utilizar Aspose.Words para Java, debe configurar su entorno de desarrollo Java. Siga estos pasos para comenzar:
 
 - Paso 1: descargue e instale el kit de desarrollo Java (JDK)
 - Paso 2: cree un nuevo proyecto Java en su entorno de desarrollo integrado (IDE) favorito
@@ -53,7 +53,7 @@ run.getFont().setColor(Color.RED);
 
 ## Conversión de documentos con SaveOptions
 
- Ahora, vayamos al corazón de este tutorial: la conversión de documentos usando Aspose.Words. Para convertir un documento, necesitará utilizar el`Save` especifique el formato de salida usando SaveOptions. A continuación se muestra un ejemplo de conversión de un documento a PDF:
+ Ahora, vayamos al corazón de este tutorial: la conversión de documentos usando Aspose.Words. Para convertir un documento, necesitará utilizar el`Save`método y especifique el formato de salida usando SaveOptions. A continuación se muestra un ejemplo de conversión de un documento a PDF:
 
 ```java
 // Especifique el formato de salida como PDF

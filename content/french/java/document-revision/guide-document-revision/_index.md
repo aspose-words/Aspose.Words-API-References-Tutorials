@@ -2,7 +2,7 @@
 title: Le guide ultime de la révision des documents
 linktitle: Le guide ultime de la révision des documents
 second_title: API de traitement de documents Java Aspose.Words
-description: Révision du document maître avec Aspose.Words pour Java ! Gérez efficacement les modifications, acceptez/rejetez les révisions et collaborez en toute transparence. Commencez maintenant!
+description: Révision du document maître avec Aspose.Words pour Java ! Gérez efficacement les modifications, acceptez/rejetez les révisions et collaborez en toute transparence. Commencez maintenant !
 type: docs
 weight: 10
 url: /fr/java/document-revision/guide-document-revision/

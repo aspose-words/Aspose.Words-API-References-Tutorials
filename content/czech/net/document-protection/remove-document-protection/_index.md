@@ -8,15 +8,15 @@ weight: 10
 url: /cs/net/document-protection/remove-document-protection/
 ---
 
-## Úvod
+## Zavedení
 
-Nazdárek! Zjistili jste někdy, že jste kvůli nastavení ochrany nemohli mít přístup k vlastnímu dokumentu aplikace Word? Je to jako snažit se otevřít dveře špatným klíčem – frustrující, že? Ale nebojte se! S Aspose.Words for .NET můžete snadno odstranit ochranu z dokumentů aplikace Word. Tento výukový program vás provede procesem krok za krokem a zajistí, že budete moci během okamžiku znovu získat plnou kontrolu nad svými dokumenty. Pojďme se ponořit!
+Ahoj! Zjistili jste někdy, že jste kvůli nastavení ochrany nemohli mít přístup k vlastnímu dokumentu aplikace Word? Je to jako snažit se otevřít dveře špatným klíčem – frustrující, že? Ale nebojte se! S Aspose.Words for .NET můžete snadno odstranit ochranu z dokumentů aplikace Word. Tento výukový program vás provede procesem krok za krokem a zajistí, že budete moci během okamžiku znovu získat plnou kontrolu nad svými dokumenty. Pojďme se ponořit!
 
 ## Předpoklady
 
 Než se pustíme do kódu, ujistěte se, že máme vše, co potřebujeme:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte knihovnu Aspose.Words for .NET. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte knihovnu Aspose.Words for .NET. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Vývojové prostředí .NET jako Visual Studio.
 3. Základní znalost C#: Pochopení základů C# vám pomůže pokračovat.
 
@@ -53,7 +53,7 @@ Někdy jsou dokumenty chráněny bez hesla. V takových případech můžeme och
 doc.Unprotect();
 ```
 
-A je to! Váš dokument je nyní nechráněný. Ale co když existuje heslo?
+To je vše! Váš dokument je nyní nechráněný. Ale co když existuje heslo?
 
 ## Krok 3: Odstraňte ochranu heslem
 

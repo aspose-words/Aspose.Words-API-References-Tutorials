@@ -9,7 +9,7 @@ url: /fr/net/working-with-fields/insert-field-using-field-builder/
 ---
 ## Introduction
 
-Salut! Vous êtes-vous déjà demandé comment insérer des champs dynamiques dans vos documents Word par programmation ? Eh bien, ne vous inquiétez plus ! Dans ce didacticiel, nous plongerons dans les merveilles d'Aspose.Words for .NET, une puissante bibliothèque qui vous permet de créer, manipuler et transformer des documents Word de manière transparente. Plus précisément, nous expliquerons comment insérer des champs à l'aide de Field Builder. Commençons!
+Salut! Vous êtes-vous déjà demandé comment insérer des champs dynamiques dans vos documents Word par programmation ? Eh bien, ne vous inquiétez plus ! Dans ce didacticiel, nous plongerons dans les merveilles d'Aspose.Words for .NET, une puissante bibliothèque qui vous permet de créer, manipuler et transformer des documents Word de manière transparente. Plus précisément, nous expliquerons comment insérer des champs à l'aide de Field Builder. Commençons !
 
 ## Conditions préalables
 
@@ -62,7 +62,7 @@ FieldBuilder fieldBuilder = new FieldBuilder(FieldType.FieldIf)
     .AddArgument("right expression");
 ```
 
-## Étape 4 : ajouter des arguments au FieldBuilder
+## Étape 4 : Ajouter des arguments au FieldBuilder
 
 Maintenant, nous allons ajouter les arguments nécessaires à notre FieldBuilder. Cela inclura nos expressions et le texte que nous souhaitons insérer.
 
@@ -95,11 +95,11 @@ Enfin, sauvons notre document et vérifions les résultats.
 doc.Save(dataDir + "InsertFieldWithFieldBuilder.docx");
 ```
 
-Et voila! Vous avez réussi à insérer un champ dans un document Word à l'aide d'Aspose.Words pour .NET.
+Et voilà ! Vous avez réussi à insérer un champ dans un document Word à l'aide d'Aspose.Words pour .NET.
 
 ## Conclusion
 
-Toutes nos félicitations! Vous venez d'apprendre à insérer dynamiquement des champs dans un document Word à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité puissante peut être incroyablement utile pour créer des documents dynamiques nécessitant une fusion de données en temps réel. Continuez à expérimenter différents types de champs et explorez les capacités étendues d’Aspose.Words.
+Félicitations! Vous venez d'apprendre à insérer dynamiquement des champs dans un document Word à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité puissante peut être incroyablement utile pour créer des documents dynamiques nécessitant une fusion de données en temps réel. Continuez à expérimenter différents types de champs et explorez les capacités étendues d’Aspose.Words.
 
 ## FAQ
 

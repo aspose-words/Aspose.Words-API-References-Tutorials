@@ -87,7 +87,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetTableTitleAndDescript
 특히 여러 테이블이 포함된 대규모 문서에서 컨텍스트를 제공하는 데 도움이 됩니다.
 
 ### .NET용 Aspose.Words는 무료인가요?
- 아니요, 하지만 다음과 같이 시작할 수 있습니다.[무료 시험판](https://releases.aspose.com/).
+ 아니요, 하지만 다음과 같이 시작할 수 있습니다.[무료 평가판](https://releases.aspose.com/).
 
 ### .NET용 Aspose.Words를 사용하여 테이블의 다른 측면을 사용자 정의할 수 있나요?
 전적으로! 테이블과 문서의 거의 모든 측면을 사용자 정의할 수 있습니다.

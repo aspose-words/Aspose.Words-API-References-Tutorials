@@ -2,95 +2,98 @@
 title: Daftar Berpoin
 linktitle: Daftar Berpoin
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara membuat daftar berpoin dengan Aspose.Words untuk .NET Panduan langkah demi langkah.
+description: Pelajari cara membuat dan mengkustomisasi daftar berpoin di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini.
 type: docs
 weight: 10
 url: /id/net/working-with-markdown/bulleted-list/
 ---
+## Perkenalan
 
-Dalam tutorial ini, kami akan memberi tahu Anda cara membuat daftar berpoin dengan Aspose.Words untuk .NET. Daftar berpoin digunakan untuk membuat daftar item tanpa menggunakan penomoran.
+Siap terjun ke dunia Aspose.Words untuk .NET? Hari ini, kita akan memandu pembuatan daftar poin di dokumen Word Anda. Baik Anda mengatur ide, membuat daftar item, atau hanya menambahkan sedikit struktur ke dokumen Anda, daftar berpoin sangat berguna. Jadi, mari kita mulai!
 
-## Langkah 1: Menggunakan pembuat dokumen
+## Prasyarat
 
-Pertama, kita akan menggunakan pembuat dokumen untuk menambahkan konten ke dokumen kita.
+Sebelum kita terjun ke kesenangan coding, pastikan Anda memiliki semua yang Anda butuhkan:
+
+1.  Aspose.Words untuk .NET: Pastikan Anda telah menginstal perpustakaan Aspose.Words. Jika Anda belum memilikinya, Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Lingkungan pengembangan AC# seperti Visual Studio.
+3. Pengetahuan C# Dasar: Pemahaman dasar tentang pemrograman C# akan membantu Anda mengikutinya.
+
+## Impor Namespace
+
+Hal pertama yang pertama, mari impor namespace yang diperlukan. Ini seperti menyiapkan panggung agar kode kita berjalan dengan lancar.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Sekarang, mari kita bagi prosesnya menjadi langkah-langkah yang mudah dan dapat dikelola.
+
+## Langkah 1: Buat Dokumen Baru
+
+Baiklah, mari kita mulai dengan membuat dokumen baru. Di sinilah semua keajaiban akan terjadi.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Langkah 2: Menerapkan Daftar Berpoin Default
+## Langkah 2: Terapkan Format Daftar Poin
 
- Kita dapat menerapkan daftar poin default menggunakan pembuat dokumen`ApplyBulletDefault` metode.
+Selanjutnya, kita akan menerapkan format daftar poin. Ini memberi tahu dokumen bahwa kita akan memulai daftar poin.
 
 ```csharp
 builder.ListFormat.ApplyBulletDefault();
 ```
 
-## Langkah 3: Menyesuaikan Format Poin
+## Langkah 3: Sesuaikan Daftar Poin
 
- Kita dapat menyesuaikan format poin dengan mengakses properti`ListFormat.List.ListLevels[0]`. Dalam contoh ini, kita menggunakan tanda hubung "-" sebagai tanda peluru.
+Di sini, kami akan menyesuaikan daftar poin sesuai keinginan kami. Untuk contoh ini, kita akan menggunakan tanda hubung (-) sebagai poinnya.
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
 ```
 
-## Langkah 4: Menambahkan item ke daftar
+## Langkah 4: Tambahkan Item Daftar
 
- Sekarang kita dapat menambahkan item ke daftar poin menggunakan pembuat dokumen`Writeln` metode.
-
-```csharp
-builder. Writen("Element 1");
-builder. Writen("Element 2");
-```
-
-## Langkah 5: Menghapus lekukan dari daftar
-
- Jika kita ingin membuat sublist, kita dapat menambah indentasinya menggunakan`ListFormat.ListIndent()` metode. Dalam contoh ini, kami menambahkan sublist ke item 2a dan 2b.
+Sekarang, mari tambahkan beberapa item ke daftar poin kita. Di sinilah Anda bisa berkreasi dan menambahkan konten apa pun yang Anda butuhkan.
 
 ```csharp
-builder.ListFormat.ListIndent();
-builder. Writeln("Element 2a");
-builder.Writeln("Element 2b");
-```
-### Contoh kode sumber untuk Daftar Berpoin menggunakan Aspose.Words untuk .NET
-
-
-```csharp
-// Gunakan pembuat dokumen untuk menambahkan konten ke dokumen.
-DocumentBuilder builder = new DocumentBuilder();
-
-builder.ListFormat.ApplyBulletDefault();
-builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
-
 builder.Writeln("Item 1");
 builder.Writeln("Item 2");
-
-builder.ListFormat.ListIndent();
-
-builder.Writeln("Item 2a");
-builder.Writeln("Item 2b");
 ```
 
-Selamat! Anda sekarang telah mempelajari cara membuat daftar berpoin dengan Aspose.Words untuk .NET.
+## Langkah 5: Tambahkan Sub-Item
 
-### FAQ
+Agar lebih menarik, mari tambahkan beberapa sub-item di bawah "Item 2". Ini membantu dalam mengatur subpoin.
 
-#### T: Bagaimana cara membuat daftar berpoin di Markdown?
+```csharp
+builder.ListFormat.ListIndent();
+builder.Writeln("Item 2a");
+builder.Writeln("Item 2b");
+builder.ListFormat.ListOutdent(); // Kembali ke tingkat daftar utama
+```
 
-J: Untuk membuat daftar berpoin di Markdown, awali setiap item daftar dengan simbol poin (`-`, `*` , atau`+`), diikuti dengan spasi.
+## Kesimpulan
 
-#### T: Bisakah Anda menyusun daftar poin di Markdown?
+Dan itu dia! Anda baru saja membuat daftar poin di dokumen Word menggunakan Aspose.Words untuk .NET. Ini adalah proses yang mudah, namun sangat ampuh untuk mengatur dokumen Anda. Baik Anda membuat daftar sederhana atau daftar bertingkat yang kompleks, Aspose.Words siap membantu Anda.
 
-J: Ya, daftar berpoin dapat disarangkan di Markdown dengan menambahkan empat spasi offset di depan setiap item daftar yang disarangkan.
+Jangan ragu untuk bereksperimen dengan gaya dan format daftar yang berbeda sesuai kebutuhan Anda. Selamat membuat kode!
 
-#### T: Bagaimana cara menyesuaikan simbol poin?
+## FAQ
 
-J: Dalam Markdown standar, simbol poin sudah ditentukan sebelumnya. Namun, beberapa editor Markdown memungkinkan Anda menyesuaikannya menggunakan ekstensi tertentu.
+### Bisakah saya menggunakan simbol poin yang berbeda dalam daftar?
+    Ya, Anda dapat menyesuaikan simbol poin dengan mengubah`NumberFormat` milik.
 
-#### T: Apakah daftar berpoin di Markdown mendukung indentasi?
+### Bagaimana cara menambahkan lebih banyak tingkat lekukan?
+    Gunakan`ListIndent` metode untuk menambahkan lebih banyak level dan`ListOutdent` untuk kembali ke level yang lebih tinggi.
 
-J: Ya, daftar berpoin dalam lekukan dukungan penurunan harga. Anda dapat menambahkan shift ke kiri menggunakan spasi atau tab.
+### Apakah mungkin untuk menggabungkan daftar poin dan nomor?
+   Sangat! Anda dapat beralih antara format poin dan angka menggunakan`ApplyNumberDefault`Dan`ApplyBulletDefault` metode.
 
-#### T: Dapatkah tautan atau teks sebaris ditambahkan ke item daftar?
+### Bisakah saya menata teks di item daftar?
+    Ya, Anda dapat menerapkan gaya, font, dan pemformatan yang berbeda pada teks dalam item daftar menggunakan`Font` properti dari`DocumentBuilder`.
 
-J: Ya, Anda dapat menambahkan link atau teks sebaris ke item daftar menggunakan sintaks penurunan harga yang sesuai.
+### Bagaimana cara membuat daftar poin multi-kolom?
+   Anda bisa menggunakan pemformatan tabel untuk membuat daftar multi-kolom, di mana setiap sel berisi daftar berpoin terpisah.

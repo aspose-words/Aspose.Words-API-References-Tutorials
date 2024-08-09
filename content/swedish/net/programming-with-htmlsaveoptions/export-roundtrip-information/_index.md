@@ -18,7 +18,7 @@ Innan vi hoppar in i muttrarna och bultarna, låt oss se till att vi har allt vi
 1.  Aspose.Words för .NET: Se till att du har den senaste versionen.[Ladda ner den här](https://releases.aspose.com/words/net/).
 2. Utvecklingsmiljö: Visual Studio eller någon annan C#-kompatibel IDE.
 3. Grundläggande kunskaper om C#: Det hjälper att ha lite bekantskap med C# och .NET framework.
-4. Licens: Du kan använda en tillfällig licens om du inte har en fullständig. Förstår[här](https://purchase.aspose.com/temporary-license/).
+4. Licens: Du kan använda en tillfällig licens om du inte har en fullständig. Få det[här](https://purchase.aspose.com/temporary-license/).
 
 ## Importera namnområden
 

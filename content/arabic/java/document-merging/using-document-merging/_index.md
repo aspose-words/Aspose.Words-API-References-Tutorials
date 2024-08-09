@@ -2,7 +2,7 @@
 title: استخدام دمج المستندات
 linktitle: استخدام دمج المستندات
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة مستندات جافا
-description: تعلم كيفية دمج مستندات Word بسلاسة باستخدام Aspose.Words لـ Java. يمكنك دمج التعارضات وتنسيقها والتعامل معها بكفاءة في بضع خطوات فقط. نبدأ الآن!
+description: تعلم كيفية دمج مستندات Word بسلاسة باستخدام Aspose.Words لـ Java. يمكنك دمج التعارضات وتنسيقها والتعامل معها بكفاءة في بضع خطوات فقط. ابدأ الآن!
 type: docs
 weight: 10
 url: /ar/java/document-merging/using-document-merging/

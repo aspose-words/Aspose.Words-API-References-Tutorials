@@ -41,7 +41,7 @@ Eerst moeten we de map instellen waarin we ons document zullen opslaan. Zie dit 
 string dataDir = "YOUR_DOCUMENT_DIRECTORY";
 ```
 
- Vervangen`"YOUR_DOCUMENT_DIRECTORY"` met het daadwerkelijke pad naar uw map.
+ Vervangen`"YOUR_DOCUMENT_DIRECTORY"` met het daadwerkelijke pad naar uw directory.
 
 ## Stap 2: Initialiseer DocumentBuilder
 
@@ -67,7 +67,7 @@ Field field = builder.InsertField(FieldType.FieldDate, true);
 field.LocaleId = 1049;
 ```
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Laten we tot slot ons document opslaan. Met deze stap worden alle wijzigingen voltooid die we hebben aangebracht.
 

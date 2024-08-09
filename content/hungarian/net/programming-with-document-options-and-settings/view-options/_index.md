@@ -9,13 +9,13 @@ url: /hu/net/programming-with-document-options-and-settings/view-options/
 ---
 ## Bevezetés
 
-Szia kódolótárs! Gondolkozott már azon, hogyan módosíthatja a Word-dokumentumok megtekintésének módját az Aspose.Words for .NET használatával? Akár másik nézettípusra szeretne váltani, akár nagyítani és kicsinyíteni szeretne, hogy tökéletes képet kapjon a dokumentumáról, jó helyen jár. Ma az Aspose.Words for .NET világába merülünk, különös tekintettel a nézetbeállítások manipulálására. Mindent egyszerű, könnyen emészthető lépésekre bontunk, így Ön rövid időn belül szakértő lesz. Kész? Kezdjük el!
+Szia kódolótárs! Gondolkozott már azon, hogyan módosíthatja a Word-dokumentumok megtekintésének módját az Aspose.Words for .NET használatával? Akár másik nézettípusra szeretne váltani, akár nagyítani és kicsinyíteni szeretne, hogy tökéletes képet kapjon a dokumentumáról, jó helyen jár. Ma az Aspose.Words for .NET világába merülünk, különös tekintettel a nézetbeállítások manipulálására. Mindent egyszerű, könnyen emészthető lépésekre bontunk, így Ön rövid időn belül szakértő lesz. Kész? Kezdjük is!
 
 ## Előfeltételek
 
 Mielőtt belemerülnénk a kódba, győződjünk meg arról, hogy mindennel rendelkezünk, amit követnünk kell az oktatóanyaggal együtt. Íme egy gyors ellenőrző lista:
 
-1.  Aspose.Words for .NET Library: Győződjön meg arról, hogy rendelkezik az Aspose.Words for .NET könyvtárral. tudsz[töltse le itt](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Győződjön meg arról, hogy rendelkezik az Aspose.Words for .NET könyvtárral. Tudod[töltse le itt](https://releases.aspose.com/words/net/).
 2. Fejlesztési környezet: A gépre telepítve kell lennie egy IDE-nek, mint a Visual Studio.
 3. Alapvető C# ismerete: Bár a dolgokat egyszerűnek tartjuk, a C# alapvető ismerete hasznos lesz.
 4. Word-dokumentum minta: Készítsen Word-mintadokumentumot. Ebben az oktatóanyagban "Document.docx" néven fogjuk hivatkozni.
@@ -62,7 +62,7 @@ Néha nagyítani vagy kicsinyíteni kell, hogy jobban lássa a dokumentumot. Ez 
 doc.ViewOptions.ZoomPercent = 50;
 ```
 
- Beállításával a`ZoomPercent` nak nek`50`, a tényleges méret 50%-ára kicsinyítjük. Ezt az értéket igényeinek megfelelően állíthatja be.
+ Beállításával a`ZoomPercent` hogy`50`, a tényleges méret 50%-ára kicsinyítjük. Ezt az értéket igényeinek megfelelően állíthatja be.
 
 ## 4. lépés: Mentse el a dokumentumot
 

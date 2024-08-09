@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-txtloadoptions/detect-numbering-with-whitespaces/
 ---
-## introduzione
+## Introduzione
 
 Aspose.Words per gli appassionati di .NET! Oggi ci addentreremo in un'affascinante funzionalità che può rendere la gestione degli elenchi nei documenti in chiaro un gioco da ragazzi. Hai mai avuto a che fare con file di testo in cui alcune righe dovrebbero essere elenchi, ma semplicemente non sembrano corrette quando vengono caricate in un documento Word? Bene, abbiamo un bel asso nella manica: rilevare la numerazione con spazi bianchi. Questo tutorial ti guiderà attraverso come utilizzare il file`DetectNumberingWithWhitespaces` opzione in Aspose.Words per .NET per garantire che i tuoi elenchi vengano riconosciuti correttamente, anche quando c'è spazio bianco tra i numeri e il testo.
 
@@ -66,7 +66,7 @@ const string textDoc = "Full stop delimiters:\n" +
 
 ## Passaggio 3: configura LoadOptions
 
- Per rilevare la numerazione con spazi bianchi, dobbiamo impostare il file`DetectNumberingWithWhitespaces` opzione a`true` in un`TxtLoadOptions` oggetto.
+ Per rilevare la numerazione con spazi bianchi, dobbiamo impostare il file`DetectNumberingWithWhitespaces` opzione a`true` nell'a`TxtLoadOptions` oggetto.
 
 ```csharp
 TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
@@ -90,7 +90,7 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.doc
 
 ## Conclusione
 
-il gioco è fatto! Con solo poche righe di codice, hai imparato l'arte di rilevare la numerazione con spazi bianchi nei documenti di testo normale utilizzando Aspose.Words per .NET. Questa funzionalità può essere incredibilmente utile quando si ha a che fare con vari formati di testo e si garantisce che gli elenchi siano rappresentati accuratamente nei documenti di Word. Quindi la prossima volta che incontrerai questi elenchi complicati, saprai esattamente cosa fare.
+Ed ecco qua! Con solo poche righe di codice, hai imparato l'arte di rilevare la numerazione con spazi bianchi nei documenti di testo normale utilizzando Aspose.Words per .NET. Questa funzionalità può essere incredibilmente utile quando si ha a che fare con vari formati di testo e si garantisce che gli elenchi siano rappresentati accuratamente nei documenti di Word. Quindi la prossima volta che incontrerai questi elenchi complicati, saprai esattamente cosa fare.
 
 ## Domande frequenti
 

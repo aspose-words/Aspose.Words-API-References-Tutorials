@@ -134,7 +134,7 @@ download_link = "https://releases.aspose.com/words/python/” + save_response.sa
 
 ## Wniosek
 
-tym przewodniku omówiliśmy wykorzystanie pakietu Office Math i interfejsu API Aspose.Words dla języka Python do obsługi zaawansowanych wyrażeń matematycznych w dokumentach. Nauczyłeś się tworzyć, formatować, wyrównywać i uzasadniać równania, a także wstawiać złożone wyrażenia. Teraz możesz bez obaw włączać treści matematyczne do swoich dokumentów, niezależnie od tego, czy są to materiały edukacyjne, artykuły naukowe czy prezentacje.
+tym przewodniku omówiliśmy wykorzystanie pakietu Office Math i interfejsu API Aspose.Words dla języka Python do obsługi zaawansowanych wyrażeń matematycznych w dokumentach. Nauczyłeś się tworzyć, formatować, wyrównywać i uzasadniać równania, a także wstawiać złożone wyrażenia. Teraz możesz bez obaw włączać treści matematyczne do swoich dokumentów, niezależnie od tego, czy są to materiały edukacyjne, artykuły badawcze czy prezentacje.
 
 ## Często zadawane pytania
 

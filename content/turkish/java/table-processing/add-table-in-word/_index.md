@@ -70,7 +70,7 @@ doc.getFirstSection().getBody().appendChild(table);
 
 ## Adım 8: Belgeyi Kaydedin
 
- Word belgesini kullanarak istediğiniz bir konuma kaydedin.`save()` yöntem.
+ Word belgesini kullanarak istediğiniz bir konuma kaydedin.`save()` Yöntem.
 
 ```java
 doc.save(""output.docx"");

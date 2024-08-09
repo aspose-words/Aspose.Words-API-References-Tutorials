@@ -10,7 +10,7 @@ url: /id/net/find-and-replace-text/replace-with-string/
 
 ## Perkenalan
 
-Hai! Pernahkah Anda mendapati diri Anda sibuk membaca dokumen Word dan perlu mengganti kata atau frasa tertentu? Kamu tidak sendiri. Baik itu memperbarui istilah, memperbaiki kesalahan, atau sekadar mempercantik konten Anda, mengetahui cara menemukan dan mengganti teks dalam dokumen secara efisien sangatlah penting. Hari ini, kami menyelami dunia Aspose.Words for .NET yang menakjubkan untuk menunjukkan kepada Anda cara mengganti string di dokumen Word Anda seperti seorang profesional.
+Hai! Pernahkah Anda mendapati diri Anda sibuk membaca dokumen Word dan perlu mengganti kata atau frasa tertentu? Anda tidak sendirian. Baik itu memperbarui istilah, memperbaiki kesalahan, atau sekadar mempercantik konten Anda, mengetahui cara menemukan dan mengganti teks dalam dokumen secara efisien sangatlah penting. Hari ini, kami menyelami dunia Aspose.Words for .NET yang menakjubkan untuk menunjukkan kepada Anda cara mengganti string di dokumen Word Anda seperti seorang profesional.
 
 ## Prasyarat
 
@@ -81,7 +81,7 @@ Terakhir, kami menyimpan dokumen yang dimodifikasi. Inilah saatnya kita membingk
 doc.Save(dataDir + "FindAndReplace.ReplaceWithString.docx");
 ```
 
- Dokumen disimpan di direktori tertentu dengan nama`FindAndReplace.ReplaceWithString.docx`. Dan voila! Kami telah berhasil melakukan operasi temukan dan ganti.
+ Dokumen disimpan di direktori tertentu dengan nama`FindAndReplace.ReplaceWithString.docx`. Dan voila! Kami telah berhasil melakukan operasi cari dan ganti.
 
 ## Kesimpulan
 

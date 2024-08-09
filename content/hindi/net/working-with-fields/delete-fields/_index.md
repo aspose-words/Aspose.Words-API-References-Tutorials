@@ -100,4 +100,4 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 हां, यहां दर्शाई गई विधि विशेष रूप से केवल फ़ील्ड को लक्षित करती है तथा अन्य सामग्री को अपरिवर्तित छोड़ देती है।
 
 ### मैं Aspose.Words के लिए अधिक संसाधन और समर्थन कहां पा सकता हूं?
- दौरा करना[.NET API के लिए Aspose.Words दस्तावेज़](https://reference.aspose.com/words/net/) और यह[Aspose.Words फ़ोरम](https://forum.aspose.com/c/words/8) अधिक सहायता के लिए।
+ दौरा करना[.NET API के लिए Aspose.Words दस्तावेज़](https://reference.aspose.com/words/net/) और यह[Aspose.Words फ़ोरम](https://forum.aspose.com/c/words/8) आगे की सहायता के लिए.

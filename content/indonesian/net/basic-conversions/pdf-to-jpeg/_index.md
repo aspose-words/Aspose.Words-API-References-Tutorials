@@ -36,7 +36,7 @@ Baiklah, mari kita ke bagian yang menyenangkan! Kami akan membagi prosesnya menj
 Sebelum mendalami kodenya, Anda perlu menyiapkan proyek Anda. Begini caranya:
 
 1. Buka Visual Studio: Mulailah dengan meluncurkan Visual Studio dan membuat proyek C# baru.
-2.  Instal Aspose.Words: Gunakan NuGet Package Manager untuk menginstal Aspose.Words untuk .NET. Kamu bisa menemukannya[Di Sini](https://releases.aspose.com/words/net/).
+2.  Instal Aspose.Words: Gunakan NuGet Package Manager untuk menginstal Aspose.Words untuk .NET. Anda dapat menemukannya[Di Sini](https://releases.aspose.com/words/net/).
 
 ```shell
 Install-Package Aspose.Words
@@ -85,10 +85,10 @@ Sangat! Anda dapat menelusuri direktori PDF dan mengonversi masing-masing ke JPE
 Ya, benar! Anda dapat menyimpan PDF Anda sebagai PNG, BMP, dan lainnya.
 
 ### Apakah Aspose.Words kompatibel dengan .NET Core?
-Memang itu. Aspose.Words mendukung .NET Framework dan .NET Core.
+Memang benar. Aspose.Words mendukung .NET Framework dan .NET Core.
 
 ### Apakah saya memerlukan lisensi untuk menggunakan Aspose.Words?
  Anda bisa mendapatkan uji coba gratis[Di Sini](https://releases.aspose.com/) atau membeli lisensi[Di Sini](https://purchase.aspose.com/buy).
 
 ### Di mana saya dapat menemukan lebih banyak tutorial tentang Aspose.Words?
- Lihat[dokumentasi](https://reference.aspose.com/words/net/) untuk sejumlah tutorial dan panduan.
+ Lihat[dokumentasi](https://reference.aspose.com/words/net/) untuk banyak tutorial dan panduan.

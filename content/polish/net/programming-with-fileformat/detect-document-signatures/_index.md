@@ -91,7 +91,7 @@ Nie, Aspose.Words dla .NET nie zachowuje podpisów cyfrowych podczas otwierania 
 
 ### Czy istnieje sposób na wykrycie wielu podpisów cyfrowych na dokumencie?
 
- Tak`HasDigitalSignature` właściwość może wskazywać obecność jednego lub większej liczby podpisów cyfrowych na dokumencie.
+ Tak,`HasDigitalSignature` właściwość może wskazywać obecność jednego lub większej liczby podpisów cyfrowych na dokumencie.
 
 ### Jak uzyskać bezpłatną wersję próbną Aspose.Words dla .NET?
 

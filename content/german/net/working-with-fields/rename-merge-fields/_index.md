@@ -99,7 +99,7 @@ Wenn ein Seriendruckfeld nicht vorhanden ist, wird es vom Code einfach überspru
 
 ### Ist Aspose.Words für .NET kostenlos?
 
- Aspose.Words für .NET ist ein kommerzielles Produkt, aber Sie können ein[Kostenlose Testphase](https://releases.aspose.com/) um es auszuwerten.
+ Aspose.Words für .NET ist ein kommerzielles Produkt, aber Sie können ein[Kostenlose Testversion](https://releases.aspose.com/) um es auszuwerten.
 
 ### Wo finde ich weitere Dokumentation zu Aspose.Words für .NET?
 

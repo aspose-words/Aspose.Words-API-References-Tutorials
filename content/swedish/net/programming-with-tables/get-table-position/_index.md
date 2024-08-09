@@ -9,7 +9,7 @@ url: /sv/net/programming-with-tables/get-table-position/
 ---
 ## Introduktion
 
-Har du någonsin hamnat i en knipa när du försöker ta reda på den exakta positionen för en tabell i ditt Word-dokument? Oavsett om det är för att anpassa ditt innehåll perfekt eller bara av nyfikenhet, kan det vara väldigt praktiskt att känna till bordets position. Idag dyker vi djupt in i hur man får tabellpositionen med Aspose.Words för .NET. Vi delar upp det i lagom stora steg så även om du är nybörjare kommer du att kunna följa med utan problem. Är du redo att bli en Word-dokumentguide? Låt oss börja!
+Har du någonsin hamnat i en knipa när du försöker ta reda på den exakta positionen för en tabell i ditt Word-dokument? Oavsett om det är för att anpassa ditt innehåll perfekt eller bara av nyfikenhet, kan det vara väldigt praktiskt att känna till bordets position. Idag dyker vi djupt in i hur man får tabellpositionen med Aspose.Words för .NET. Vi delar upp det i lagom stora steg så även om du är nybörjare kommer du att kunna följa med utan problem. Är du redo att bli en Word-dokumentguide? Låt oss komma igång!
 
 ## Förutsättningar
 

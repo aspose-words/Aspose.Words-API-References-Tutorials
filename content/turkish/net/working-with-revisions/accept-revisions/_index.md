@@ -2,88 +2,40 @@
 title: Düzeltmeleri Kabul Et
 linktitle: Düzeltmeleri Kabul Et
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak bir Word belgesindeki revizyonları nasıl kabul edeceğinizi öğrenin
+description: Aspose.Words for .NET ile belge revizyonlarında ustalaşın. Değişiklikleri zahmetsizce izlemeyi, kabul etmeyi ve reddetmeyi öğrenin. Belge yönetimi becerilerinizi geliştirin.
 type: docs
 weight: 10
 url: /tr/net/working-with-revisions/accept-revisions/
 ---
+## giriiş
 
-Bu eğitimde, Aspose.Words for .NET'in Revizyonları Kabul Et özelliğini kullanarak bir Word belgesindeki revizyonları kabul etme konusunda size yol göstereceğiz. Kaynak kodunu anlamak ve belgede yapılan değişiklikleri kabul etmek için aşağıdaki adımları izleyin.
+Kendinizi birden fazla katkıda bulunanların yaptığı her değişikliği takip etmeye çalışırken hiç belge revizyonları labirentinde buldunuz mu? Aspose.Words for .NET ile Word belgelerindeki revizyonları yönetmek artık çok kolay. Bu güçlü kitaplık, geliştiricilerin değişiklikleri zahmetsizce izlemesine, kabul etmesine ve reddetmesine olanak tanıyarak belgelerinizin düzenli ve güncel kalmasını sağlar. Bu eğitimde, Aspose.Words for .NET kullanarak belge revizyonlarını, belgenin başlatılmasından tüm değişikliklerin kabul edilmesine kadar adım adım ele alacağız.
 
-## 1. Adım: Belge İçeriğini Ekleme ve Düzenleme
+## Önkoşullar
 
-Bu örnekte bir belge oluşturuyoruz ve içerik ekliyoruz. Değişiklikleri ve revizyonları göstermek için birkaç paragraf kullanıyoruz. İşte nasıl:
+Başlamadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
 
-```csharp
-// Belgeler dizininin yolu.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-Body body = doc.FirstSection.Body;
-Paragraph para = body.FirstParagraph;
+- Makinenizde Visual Studio yüklü.
+- .NET çerçevesi (tercihen en son sürüm).
+-  Aspose.Words for .NET kitaplığı. İndirebilirsin[Burada](https://releases.aspose.com/words/net/).
+- C# programlamanın temel anlayışı.
 
-// İlk paragrafa metin ekleyin, ardından iki paragraf daha ekleyin.
-para.AppendChild(new Run(doc, "Paragraph 1. "));
-body.AppendParagraph("Paragraph 2.");
-body.AppendParagraph("Paragraph 3.");
-```
+Şimdi ayrıntılara geçelim ve Aspose.Words for .NET ile belge revizyonlarında nasıl uzmanlaşabileceğimizi görelim.
 
-## 2. Adım: İncelemeleri izleyin ve inceleme ekleyin
+## Ad Alanlarını İçe Aktar
 
-Revizyon takibini etkinleştirip dokümana revizyon ekliyoruz. İşte nasıl:
+Öncelikle Aspose.Words ile çalışmak için gerekli ad alanlarını içe aktarmanız gerekir. Kod dosyanızın en üstüne aşağıdaki kullanma yönergelerini ekleyin:
 
 ```csharp
-doc.StartTrackRevisions("John Doe", DateTime.Now);
-
-// Bu paragraf bir revizyondur ve karşılık gelen "IsInsertRevision" bayrağını içerecektir.
-para = body.AppendParagraph("Paragraph 4.");
-Assert.True(para.IsInsertRevision);
+using Aspose.Words;
+using Aspose.Words.Revision;
 ```
 
-## 3. Adım: Bir paragrafı silin ve düzeltmeleri yönetin
+Süreci yönetilebilir adımlara ayıralım. Kodun her bölümünü anladığınızdan emin olmak için her adım ayrıntılı olarak açıklanacaktır.
 
-Bir paragrafı sileriz ve kayıtlı revizyonları kontrol ederiz. İşte nasıl:
+## 1. Adım: Belgeyi Başlatın
 
-```csharp
-ParagraphCollection paragraphs = body.Paragraphs;
-Assert.AreEqual(4, paragraphs.Count);
-para = paragraphs[2];
-para.Remove();
-
-// Revizyonları takip ettiğimiz için paragraf hala belgede mevcut ve "IsDeleteRevision" bayrağı ayarlanmış olacak
-// ve biz tüm incelemeleri kabul edene veya reddedene kadar Microsoft Word'de inceleme olarak görüntülenecektir.
-Assert.AreEqual(4, paragraphs.Count);
-Assert.True(para.IsDeleteRevision);
-```
-
-## 4. Adım: Değişiklikleri Kabul Edin
-
-Belgedeki tüm değişiklikleri kabul ediyoruz. İşte nasıl:
-
-```csharp
-doc.AcceptAllRevisions();
-Assert.AreEqual(3, paragraphs.Count);
-Assert.That(para, Is.Empty);
-```
-
-## 5. Adım: İncelemeleri izlemeyi bırakın
-
-Belgedeki değişikliklerin artık revizyon olarak görünmemesi için revizyonları izlemeyi bırakacağız. İşte nasıl:
-
-```csharp
-doc.StopTrackRevisions();
-```
-## Adım 6: Belgeyi kaydetme
-
- Metin giriş formu alanını ekledikten sonra, belgeyi kullanarak belgeyi istediğiniz konuma kaydedin.`Save`yöntem. Uygun dosya yolunu sağladığınızdan emin olun:
-
-```csharp
-doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
-```
-
-### Aspose.Words for .NET kullanarak Düzeltmeleri Kabul Etme için örnek kaynak kodu
-
-Aspose.Words for .NET kullanarak bir belgedeki değişiklikleri kabul etmek için tam kaynak kodu:
-
+Başlamak için yeni bir belge oluşturmamız ve birkaç paragraf eklememiz gerekiyor. Bu, revizyonların izlenmesine zemin hazırlayacaktır.
 
 ```csharp
 // Belgeler dizininin yolu.
@@ -96,93 +48,102 @@ Paragraph para = body.FirstParagraph;
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2. ");
 body.AppendParagraph("Paragraph 3. ");
+```
 
-//Hiçbiri herhangi bir revizyon türü olarak kayıtlı olmayan üç paragrafımız var
-// Revizyonları takip ederken dokümana herhangi bir içerik ekler/kaldırırsak,
-// belgede bu şekilde görüntülenecek ve kabul/reddedilebilecektir.
+Bu adımda yeni bir belge oluşturduk ve ona üç paragraf ekledik. Bu paragraflar revizyon takibimiz için temel oluşturacaktır.
+
+## 2. Adım: Düzeltmeleri İzlemeye Başlayın
+
+Daha sonra revizyon takibini etkinleştirmemiz gerekiyor. Bu, belgede yapılan değişiklikleri yakalamamıza olanak tanır.
+
+```csharp
+// Revizyonları izlemeye başlayın.
 doc.StartTrackRevisions("John Doe", DateTime.Now);
+```
 
+ Arayarak`StartTrackRevisions`, belgenin sonraki tüm değişiklikleri izlemesini sağlıyoruz. Yazarın adı ve geçerli tarih parametre olarak iletilir.
+
+## 3. Adım: Revizyon Ekleme
+
+Artık revizyon takibi etkinleştirildiğine göre yeni bir paragraf ekleyelim. Bu ekleme revizyon olarak işaretlenecektir.
+
+```csharp
 // Bu paragraf bir revizyondur ve uygun "IsInsertRevision" bayrağına sahip olacaktır.
 para = body.AppendParagraph("Paragraph 4. ");
-Assert.True(para.IsInsertRevision);
+```
 
+Buraya yeni bir paragraf ("Paragraf 4.") eklenmiştir. Revizyon takibi etkinleştirildiği için bu paragraf revizyon olarak işaretlenir.
+
+## 4. Adım: Bir Paragrafı Kaldırma
+
+Daha sonra mevcut bir paragrafı kaldırıp revizyonun nasıl takip edildiğini gözlemleyeceğiz.
+
+```csharp
 // Belgenin paragraf koleksiyonunu alın ve bir paragrafı kaldırın.
 ParagraphCollection paragraphs = body.Paragraphs;
-Assert.AreEqual(4, paragraphs.Count);
 para = paragraphs[2];
 para.Remove();
+```
 
-// Revizyonları takip ettiğimiz için paragraf hala belgede mevcut ve "IsDeleteRevision" ayarına sahip olacak
-// ve biz tüm revizyonları kabul edene veya reddedene kadar Microsoft Word'de revizyon olarak görüntülenecektir.
-Assert.AreEqual(4, paragraphs.Count);
-Assert.True(para.IsDeleteRevision);
+Bu adımda üçüncü paragraf kaldırılır. Revizyon takibi nedeniyle bu silme işlemi kaydedilir ve paragraf belgeden hemen kaldırılmak yerine silinmek üzere işaretlenir.
 
-// Değişiklikleri kabul ettiğimizde revizyon paragrafını sil kaldırılır.
+## Adım 5: Tüm Düzeltmeleri Kabul Edin
+
+Son olarak, izlenen tüm revizyonları kabul ederek belgedeki değişiklikleri sağlamlaştıralım.
+
+```csharp
+// Tüm düzeltmeleri kabul edin.
 doc.AcceptAllRevisions();
-Assert.AreEqual(3, paragraphs.Count);
-Assert.That(para, Is.Empty);
+```
 
-// Revizyonların takibinin durdurulması bu metnin normal metin olarak görünmesini sağlar.
-// Belge değiştirildiğinde revizyonlar sayılmaz.
+ Arayarak`AcceptAllRevisions`tüm değişikliklerin (ekleme ve silmelerin) kabul edilmesini ve belgeye uygulanmasını sağlıyoruz. Revizyonlar artık işaretlenmemektedir ve belgeye entegre edilmektedir.
+
+## Adım 6: Düzeltmeleri İzlemeyi Durdurun
+
+### Revizyon Takibini Devre Dışı Bırak
+
+Özetlemek gerekirse, daha fazla değişikliği kaydetmeyi durdurmak için revizyon izlemeyi devre dışı bırakabiliriz.
+
+```csharp
+// Revizyonları izlemeyi bırakın.
 doc.StopTrackRevisions();
+```
 
+Bu adım, belgenin yeni değişiklikleri izlemesini durdurur ve sonraki tüm düzenlemeleri normal içerik olarak ele alır.
+
+## Adım 7: Belgeyi Kaydedin
+
+Son olarak değiştirilen belgeyi belirtilen dizine kaydedin.
+
+```csharp
 // Belgeyi kaydedin.
 doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
 ```
+
+Belgeyi kaydederek tüm değişikliklerimizin ve kabul edilen revizyonlarımızın korunmasını sağlıyoruz.
+
 ## Çözüm
 
-Bu eğitimde Aspose.Words for .NET'in Revizyonları Kabul Et özelliğini kullanarak bir Word belgesindeki revizyonları nasıl kabul edeceğimizi öğrendik. Belge içeriğini ekleme ve düzenleme, revizyonları izleme, revize edilen paragrafı silme, tüm değişiklikleri kabul etme ve revizyonları izlemeyi durdurma adımlarını izledik. Artık Aspose.Words for .NET'i kullanarak bu bilgiyi kendi Word belgelerinizdeki revizyonları etkili bir şekilde yönetmek için uygulayabilirsiniz.
+Belge revizyonlarını yönetmek göz korkutucu bir görev olabilir, ancak Aspose.Words for .NET ile bu kolay ve verimli hale gelir. Bu kılavuzda özetlenen adımları izleyerek Word belgelerinizdeki değişiklikleri kolayca izleyebilir, kabul edebilir ve reddedebilir, belgelerinizin her zaman güncel ve doğru olmasını sağlayabilirsiniz. Peki neden bekleyelim? Aspose.Words dünyasına dalın ve belge yönetiminizi bugün kolaylaştırın!
 
-### SSS
+## SSS'ler
 
-#### S: Aspose.Words for .NET'te revizyon takibini nasıl etkinleştiririm?
+### Aspose.Words for .NET'te revizyonları izlemeye nasıl başlarım?
 
-#### Çözüm 1:
+ numaralı telefonu arayarak revizyonları takip etmeye başlayabilirsiniz.`StartTrackRevisions` belge nesnenizdeki yöntemi ve yazarın adını ve geçerli tarihi ileterek.
 
- C: Aspose.Words for .NET'te revizyon izlemeyi etkinleştirmek için`StartTrackRevisions` yöntemi`Document` nesneyi seçin ve revizyon takibi için yazar adını ve başlangıç tarihini belirtin.
+### Herhangi bir noktada revizyonları izlemeyi durdurabilir miyim?
 
-```csharp
-doc.StartTrackRevisions("John Doe", DateTime.Now);
-```
+Evet, arayarak revizyonları izlemeyi durdurabilirsiniz.`StopTrackRevisions` belge nesnenizdeki yöntem.
 
-#### Çözüm 2:
+### Bir belgedeki tüm düzeltmeleri nasıl kabul edebilirim?
 
- C: Ayrıca revizyon takibini aşağıdaki komutu kullanarak da etkinleştirebilirsiniz:`Document` kabul eden yapıcı`trackRevisions`Ve`author` parametreler.
+ Tüm düzeltmeleri kabul etmek için`AcceptAllRevisions` belge nesnenizdeki yöntem.
 
-```csharp
-Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });
-```
+### Belirli revizyonları reddedebilir miyim?
 
-#### S: Aspose.Words for .NET ile bir belgedeki tüm değişiklikler nasıl kabul edilir?
+ Evet, belirli düzeltmelere giderek ve`Reject` Yöntem.
 
- C: Kullan`AcceptAllRevisions` yöntemi`Document` belgede yapılan tüm değişiklikleri kabul etmeye itiraz edin.
+### Aspose.Words for .NET'i nereden indirebilirim?
 
-```csharp
-doc.AcceptAllRevisions();
-```
-
-#### S: Değiştirilen bir belgeyi kabul edilen düzeltmelerle nasıl kaydedebilirim?
-
- Kullan`Save` yöntemi`Document` Değiştirilen belgeyi kabul edilen revizyonlarla kaydetmeye itiraz edin. Doğru dosya yolunu sağladığınızdan emin olun.
-
-```csharp
-doc.Save("path/to/the/document.docx");
-```
-
-#### S: Aspose.Words for .NET'te revizyonları izlemeyi nasıl durdurabilirim?
-
- C: Kullan`StopTrackRevisions` yöntemi`Document` İzleme revizyonlarını durdurmaya itiraz edin.
-
-```csharp
-doc.StopTrackRevisions();
-```
-
-#### S: Aspose.Words for .NET ile bir belgedeki revize edilmiş bir paragrafı nasıl silebilirim?
-
- C: Bir belgedeki gözden geçirilmiş bir paragrafı kaldırmak için`Remove` Paragraf toplama yöntemi.
-
-```csharp
-ParagraphCollection paragraphs = body.Paragraphs;
-Paragraph para = paragraphs[2];
-para.Remove();
-```
+ Aspose.Words for .NET'i şu adresten indirebilirsiniz:[indirme bağlantısı](https://releases.aspose.com/words/net/).

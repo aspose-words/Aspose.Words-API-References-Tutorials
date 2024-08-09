@@ -24,7 +24,7 @@ Aspose.Words for Java 是一個基於 Java 的 API，可讓您有效率地處理
 
 ## 設定環境
 
-要開始使用 Aspose.Words for Java，您需要設定開發環境。按著這些次序：
+要開始使用 Aspose.Words for Java，您需要設定開發環境。請依照下列步驟操作：
 
 1. 在您最喜歡的整合開發環境 (IDE) 中建立一個新的 Java 專案。
 

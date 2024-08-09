@@ -9,7 +9,7 @@ url: /de/net/programming-with-sdt/structured-document-tag-range-start-xml-mappin
 ---
 ## Einführung
 
-Wollten Sie schon immer einmal XML-Daten dynamisch in ein Word-Dokument einfügen? Nun, Sie haben Glück! Aspose.Words für .NET macht diese Aufgabe zum Kinderspiel. In diesem Tutorial tauchen wir tief in die XML-Zuordnung strukturierter Tagbereichsstarts für Dokumente ein. Mit dieser Funktion können Sie benutzerdefinierte XML-Teile an Inhaltssteuerelemente binden und so sicherstellen, dass Ihr Dokumentinhalt nahtlos mit Ihren XML-Daten aktualisiert wird. Bereit, Ihre Dokumente in dynamische Meisterwerke zu verwandeln.
+Wollten Sie schon immer einmal XML-Daten dynamisch in ein Word-Dokument einfügen? Nun, Sie haben Glück! Aspose.Words für .NET macht diese Aufgabe zum Kinderspiel. In diesem Tutorial tauchen wir tief in die XML-Zuordnung strukturierter Dokument-Tagbereichsstarts ein. Mit dieser Funktion können Sie benutzerdefinierte XML-Teile an Inhaltssteuerelemente binden und so sicherstellen, dass Ihr Dokumentinhalt nahtlos mit Ihren XML-Daten aktualisiert wird. Bereit, Ihre Dokumente in dynamische Meisterwerke zu verwandeln.
 
 ## Voraussetzungen
 

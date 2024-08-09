@@ -16,7 +16,7 @@ Bạn đã bao giờ gặp phải tình huống cần cập nhật động các 
 Trước khi đi sâu vào mã, hãy đảm bảo bạn có sẵn các công cụ cần thiết:
 
 -  Aspose.Words for .NET: Đây là thư viện mạnh mẽ cho phép bạn làm việc với các tài liệu Word theo chương trình. Đi tới phần tải xuống trên trang web Aspose[Liên kết tải xuống](https://releases.aspose.com/words/net/) để lấy bản sao của bạn. - Bạn có thể chọn dùng thử miễn phí hoặc khám phá các tùy chọn cấp phép khác nhau của họ[liên kết](https://purchase.aspose.com/buy).
-- Môi trường phát triển .NET: Visual Studio, Visual Studio Code hoặc bất kỳ .NET IDE nào khác mà bạn chọn sẽ đóng vai trò là sân chơi phát triển của bạn.
+- Môi trường phát triển .NET: Visual Studio, Visual Studio Code hoặc bất kỳ IDE .NET nào khác mà bạn chọn sẽ đóng vai trò là sân chơi phát triển của bạn.
 - Tài liệu Word mẫu: Tạo một tài liệu Word đơn giản (như "Bookmarks.docx") có chứa một số văn bản và chèn dấu trang (chúng tôi sẽ đề cập đến cách thực hiện việc này sau) để thực hành.
 
 ## Nhập không gian tên

@@ -61,8 +61,8 @@ Lär dig hur du formaterar stycken och text i Word-dokument med Aspose.Words fö
 ### [Spåra och granska dokumentrevisioner](./document-revisions/)
 Lär dig hur du spårar och granskar dokumentrevisioner med Aspose.Words för Python. Steg-för-steg guide med källkod för effektivt samarbete. Förbättra din dokumenthantering idag!
 ### [Hantera dokumentsektioner och layout](./document-sections/)
-Lär dig hur du hanterar dokumentsektioner och layouter med Aspose.Words för Python. Skapa, ändra avsnitt, anpassa layouter och mer. Börja nu! 
+Lär dig hur du hanterar dokumentsektioner och layouter med Aspose.Words för Python. Skapa, ändra avsnitt, anpassa layouter och mer. Kom igång nu! 
 ### [Förbättra visuellt innehåll med textrutor i Word-dokument](./document-textboxes/)
 Förbättra dokumentbilder med Aspose.Words Python! Lär dig steg-för-steg hur du skapar och anpassar textrutor i Word-dokument. Förhöj innehållslayout, formatering och stil för engagerande dokument.
 ### [Låsa upp avancerad automatisering med VBA-makron i Word-dokument](./document-vba-macros/)
-Lås upp avancerad automatisering i Word-dokument med Aspose.Words Python API och VBA-makron. Lär dig steg för steg med källkod och vanliga frågor. Förbättra produktiviteten nu. Tillträde kl[Länk].
+Lås upp avancerad automatisering i Word-dokument med Aspose.Words Python API och VBA-makron. Lär dig steg för steg med källkod och vanliga frågor. Öka produktiviteten nu. Tillträde kl[Länk].

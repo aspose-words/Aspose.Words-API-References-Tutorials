@@ -9,13 +9,13 @@ url: /fr/net/programming-with-imagesaveoptions/format-1bpp-indexed/
 ---
 ## Introduction
 
-Vous êtes-vous déjà demandé comment enregistrer un document Word sous forme d’image en noir et blanc avec seulement quelques lignes de code ? Eh bien, vous avez de la chance ! Aujourd'hui, nous nous penchons sur une petite astuce intéressante utilisant Aspose.Words pour .NET qui vous permet de convertir vos documents en images indexées de 1 Mb/s. Ce format est parfait pour certains types d’archivage numérique, d’impression ou lorsque vous avez besoin de gagner de la place. Nous décomposerons chaque étape pour que ce soit aussi simple que du gâteau. Prêt à commencer? Allons-y !
+Vous êtes-vous déjà demandé comment enregistrer un document Word sous forme d’image en noir et blanc avec seulement quelques lignes de code ? Eh bien, vous avez de la chance ! Aujourd'hui, nous nous penchons sur une petite astuce intéressante utilisant Aspose.Words pour .NET qui vous permet de convertir vos documents en images indexées de 1 Mb/s. Ce format est parfait pour certains types d’archivage numérique, d’impression ou lorsque vous avez besoin de gagner de la place. Nous décomposerons chaque étape pour que ce soit aussi simple que du gâteau. Prêt à commencer ? Allons-y !
 
 ## Conditions préalables
 
 Avant de mettre la main à la pâte, vous devez mettre en place quelques éléments :
 
--  Aspose.Words pour .NET : assurez-vous que la bibliothèque est installée. Tu peux[Télécharger les ici](https://releases.aspose.com/words/net/).
+-  Aspose.Words pour .NET : assurez-vous que la bibliothèque est installée. Tu peux[téléchargez-le ici](https://releases.aspose.com/words/net/).
 - Environnement de développement .NET : Visual Studio est une bonne option, mais vous pouvez utiliser n'importe quel environnement avec lequel vous êtes à l'aise.
 - Connaissance de base de C# : Ne vous inquiétez pas, nous allons garder les choses simples, mais un peu de familiarité avec C# sera utile.
 - Un document Word : préparez un exemple de document Word à convertir.
@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.Format1BppIndexed.Png", saveOpti
 
 ## Conclusion
 
-Et voila! Avec seulement quelques lignes de code, vous avez transformé votre document Word en une image indexée de 1 Bpp à l'aide d'Aspose.Words pour .NET. Cette méthode est incroyablement utile pour créer des images à contraste élevé et peu encombrantes à partir de vos documents. Désormais, vous pouvez facilement l'intégrer dans vos projets et flux de travail. Bon codage !
+Et voilà ! Avec seulement quelques lignes de code, vous avez transformé votre document Word en une image indexée de 1 Bpp à l'aide d'Aspose.Words pour .NET. Cette méthode est incroyablement utile pour créer des images à contraste élevé et peu encombrantes à partir de vos documents. Désormais, vous pouvez facilement l'intégrer dans vos projets et flux de travail. Bon codage !
 
 ## FAQ
 

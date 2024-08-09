@@ -16,7 +16,7 @@ Si vous êtes un développeur cherchant à automatiser la création et le format
 Avant d'entrer dans les détails, assurons-nous que vous disposez de tout ce dont vous avez besoin pour suivre ce didacticiel.
 
 1. Environnement de développement : assurez-vous d'avoir configuré un environnement de développement. Visual Studio est un excellent choix.
-2.  Aspose.Words pour .NET : téléchargez et installez la bibliothèque Aspose.Words pour .NET. Tu peux l'avoir[ici](https://releases.aspose.com/words/net/).
+2.  Aspose.Words pour .NET : téléchargez et installez la bibliothèque Aspose.Words pour .NET. Vous pouvez l'obtenir[ici](https://releases.aspose.com/words/net/).
 3.  Licence : obtenez une licence temporaire si vous n'en avez pas une complète. L'obtenir[ici](https://purchase.aspose.com/temporary-license/).
 4. Connaissances de base en C# : une connaissance du framework C# et .NET sera bénéfique.
 
@@ -111,7 +111,7 @@ Cela enregistre votre document magnifiquement formaté avec des listes à plusie
 
 ## Conclusion
 
-Et voila! Vous avez créé avec succès une liste à plusieurs niveaux dans un document Word à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque vous permet d'automatiser facilement des tâches de formatage de documents complexes. N'oubliez pas que la maîtrise de ces outils permet non seulement de gagner du temps, mais garantit également la cohérence et le professionnalisme de votre processus de génération de documents.
+Et voilà ! Vous avez créé avec succès une liste à plusieurs niveaux dans un document Word à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque vous permet d'automatiser facilement des tâches de formatage de documents complexes. N'oubliez pas que la maîtrise de ces outils permet non seulement de gagner du temps, mais garantit également la cohérence et le professionnalisme de votre processus de génération de documents.
 
 ## FAQ
 

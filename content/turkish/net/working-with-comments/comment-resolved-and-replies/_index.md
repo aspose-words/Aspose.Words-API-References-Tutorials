@@ -32,7 +32,7 @@ Süreci basit, takip edilmesi kolay adımlara ayıralım. Her adım, kodu ve iş
 
 ## 1. Adım: Belgeyi Yükleyin
 
- Başlamak için yorumları içeren Word belgesini yükleyin. Kullan`Document` Bunun için sınıf.
+ Başlamak için yorumları içeren Word belgesini yükleyin. Kullanın`Document` Bunun için sınıf.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

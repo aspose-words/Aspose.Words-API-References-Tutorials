@@ -2,7 +2,7 @@
 title: إدارة أقسام الوثيقة والتخطيط
 linktitle: إدارة أقسام الوثيقة والتخطيط
 second_title: Aspose.Words Python إدارة المستندات API
-description: تعرف على كيفية إدارة أقسام المستند وتخطيطاته باستخدام Aspose.Words for Python. إنشاء الأقسام وتعديلها وتخصيص التخطيطات والمزيد. نبدأ الآن!
+description: تعرف على كيفية إدارة أقسام المستند وتخطيطاته باستخدام Aspose.Words for Python. إنشاء الأقسام وتعديلها وتخصيص التخطيطات والمزيد. ابدأ الآن!
 type: docs
 weight: 24
 url: /ar/python-net/document-structure-and-content-manipulation/document-sections/
@@ -96,7 +96,7 @@ doc_builder.write("Content after page break.")
 نعم، يدعم Aspose.Words تنسيقات Word المختلفة، بما في ذلك DOC وDOCX وRTF والمزيد.
 
 ### كيف يمكنني إضافة صور إلى الرؤوس أو التذييلات؟
- يمكنك استخدام ال`Shape` فئة لإضافة الصور إلى الرؤوس أو التذييلات. تحقق من وثائق API للحصول على إرشادات مفصلة.
+ يمكنك استخدام`Shape` فئة لإضافة الصور إلى الرؤوس أو التذييلات. تحقق من وثائق API للحصول على إرشادات مفصلة.
 
 ### أين يمكنني تنزيل أحدث إصدار من Aspose.Words for Python؟
  يمكنك تنزيل أحدث إصدار من Aspose.Words for Python من[صفحة إصدارات Aspose.Words](https://releases.aspose.com/words/python/).

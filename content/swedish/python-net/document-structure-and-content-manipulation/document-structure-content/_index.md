@@ -24,7 +24,7 @@ pip install aspose-words
 
 ## Ladda och skapa Word-dokument
 
-Du kan ladda ett befintligt Word-dokument eller skapa ett nytt från början. Här är hur:
+Du kan ladda ett befintligt Word-dokument eller skapa ett nytt från början. Så här gör du:
 
 ```python
 from aspose.words import Document
@@ -178,7 +178,7 @@ for data in dataset:
 
 - Håll din kod organiserad genom att använda funktioner för olika dokumenthanteringsuppgifter.
 - Använd undantagshantering för att på ett elegant sätt hantera fel under dokumentbehandling.
--  Kolla[Aspose.Words dokumentation](https://reference.aspose.com/words/python-net/) för detaljerade API-referenser och exempel.
+-  Kontrollera[Aspose.Words dokumentation](https://reference.aspose.com/words/python-net/) för detaljerade API-referenser och exempel.
 
 ## Slutsats
 

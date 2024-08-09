@@ -97,7 +97,7 @@ doc.Save(dataDir + "WorkWithWatermark.AddTextWatermarkWithSpecificOptions.docx")
 
 ### كيف يمكنني تغيير لون العلامة المائية؟
 
- يمكنك تغيير لون العلامة المائية عن طريق ضبط`Color` الممتلكات في`TextWatermarkOptions` لأي`System.Drawing.Color` قيمة.
+ يمكنك تغيير لون العلامة المائية عن طريق ضبط`Color` الممتلكات في`TextWatermarkOptions` إلى أي`System.Drawing.Color` قيمة.
 
 ### هل من الممكن إضافة علامات مائية متعددة إلى مستند؟
 

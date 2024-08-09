@@ -10,7 +10,7 @@ url: /id/net/working-with-textboxes/break-a-link/
 
 ## Perkenalan
 
-Halo, rekan-rekan pengembang dan penggemar dokumen! 🌟 Jika Anda pernah bekerja dengan dokumen Word, Anda pasti tahu bahwa mengelola kotak teks terkadang terasa seperti menggembalakan kucing. Mereka perlu diatur, ditautkan, dan terkadang diputuskan tautannya untuk memastikan konten Anda mengalir semulus simfoni yang disetel dengan baik. Hari ini, kita mempelajari cara memutus tautan penerusan di kotak teks menggunakan Aspose.Words untuk .NET. Ini mungkin terdengar teknis, tapi jangan khawatir—saya akan memandu Anda melalui setiap langkah dengan gaya percakapan yang ramah. Baik Anda sedang menyiapkan formulir, buletin, atau dokumen kompleks apa pun, memutus tautan ke depan dapat membantu Anda mendapatkan kembali kendali atas tata letak dokumen Anda.
+Halo, rekan-rekan pengembang dan penggemar dokumen! 🌟 Jika Anda pernah bekerja dengan dokumen Word, Anda pasti tahu bahwa mengelola kotak teks terkadang terasa seperti menggembala kucing. Mereka perlu diatur, ditautkan, dan terkadang dibatalkan tautannya untuk memastikan konten Anda mengalir semulus simfoni yang disetel dengan baik. Hari ini, kita mempelajari cara memutus tautan penerusan di kotak teks menggunakan Aspose.Words untuk .NET. Ini mungkin terdengar teknis, tapi jangan khawatir—saya akan memandu Anda melalui setiap langkah dengan gaya percakapan yang ramah. Baik Anda sedang menyiapkan formulir, buletin, atau dokumen kompleks apa pun, memutus tautan ke depan dapat membantu Anda mendapatkan kembali kendali atas tata letak dokumen Anda.
 
 ## Prasyarat
 
@@ -118,9 +118,9 @@ Memutus tautan maju memungkinkan Anda mengatur ulang atau mengisolasi konten dal
 
  Ya, Anda dapat menautkan ulang kotak teks dengan mengatur`Next` properti ke kotak teks lain, secara efektif membuat urutan baru.
 
-### Apakah mungkin untuk memeriksa apakah kotak teks memiliki tautan penerusan sebelum memutusnya?
+### Apakah mungkin untuk memeriksa apakah kotak teks memiliki tautan maju sebelum memutusnya?
 
- Ya, Anda dapat memeriksa apakah kotak teks memiliki tautan penerusan dengan memeriksanya`Next` Properti. Jika bukan nol, kotak teks memiliki tautan penerusan.
+ Ya, Anda dapat memeriksa apakah kotak teks memiliki tautan penerusan dengan memeriksanya`Next` milik. Jika bukan nol, kotak teks memiliki tautan penerusan.
 
 ### Bisakah pemutusan tautan memengaruhi tata letak dokumen?
 

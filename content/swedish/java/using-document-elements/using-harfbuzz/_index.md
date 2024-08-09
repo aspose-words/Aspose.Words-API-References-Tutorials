@@ -28,7 +28,7 @@ För att komma igång, skapa ett nytt Java-projekt och inkludera Aspose.Words fo
 
 ## Steg 2: Ladda ett Word-dokument
 
- I det här steget laddar vi ett exempel på Word-dokument som vi vill arbeta med. Byta ut`"Your Document Directory"` med den faktiska sökvägen till ditt Word-dokument:
+ I det här steget laddar vi ett exempel på Word-dokument som vi vill arbeta med. Ersätta`"Your Document Directory"` med den faktiska sökvägen till ditt Word-dokument:
 
 ```java
 String dataDir = "Your Document Directory";
@@ -46,7 +46,7 @@ doc.getLayoutOptions().setTextShaperFactory(HarfBuzzTextShaperFactory.getInstanc
 
 ## Steg 4: Spara dokumentet
 
- Nu när vi har konfigurerat HarfBuzz-textformning kan vi spara dokumentet. Byta ut`"Your Output Directory"` med önskad utdatakatalog och filnamn:
+ Nu när vi har konfigurerat HarfBuzz-textformning kan vi spara dokumentet. Ersätta`"Your Output Directory"` med önskad utdatakatalog och filnamn:
 
 ```java
 String outPath = "Your Output Directory";

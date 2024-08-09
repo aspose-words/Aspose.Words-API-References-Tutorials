@@ -15,7 +15,7 @@ Prêt à vous plonger dans des trucs technologiques géniaux ? Aujourd'hui, nou
 
 Avant de passer à la partie amusante, assurons-nous que vous disposez de tout ce dont vous avez besoin :
 
-1.  Aspose.Words pour la bibliothèque .NET : vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/) . Si vous ne l'avez pas encore acheté, procurez-vous un[essai gratuit](https://releases.aspose.com/) ou[achetez-le ici](https://purchase.aspose.com/buy).
+1.  Aspose.Words pour la bibliothèque .NET : vous pouvez[téléchargez-le ici](https://releases.aspose.com/words/net/) . Si vous ne l'avez pas encore acheté, procurez-vous un[essai gratuit](https://releases.aspose.com/) ou[achetez-le ici](https://purchase.aspose.com/buy).
 2. Environnement de développement : Visual Studio ou tout autre IDE prenant en charge .NET.
 3. Connaissance de base de C# : vous devrez être à l'aise avec C# pour suivre.
 
@@ -73,9 +73,9 @@ Cette ligne enregistre le document sous un nouveau nom, afin que vous puissiez f
 
 ## Conclusion
 
-Et voila! Vous venez d'apprendre à reconnaître le texte UTF-8 dans les documents Word à l'aide d'Aspose.Words pour .NET. Cette petite astuce peut vous éviter bien des maux de tête lorsque vous traitez des documents multilingues ou des caractères spéciaux.
+Et voilà ! Vous venez d'apprendre à reconnaître le texte UTF-8 dans les documents Word à l'aide d'Aspose.Words pour .NET. Cette petite astuce peut vous éviter bien des maux de tête lorsque vous traitez des documents multilingues ou des caractères spéciaux.
 
-N'oubliez pas que les étapes clés consistent à configurer les options de chargement, à charger votre document et à l'enregistrer. C'est aussi simple que ça! Alors, allez-y et essayez-le. Vous serez étonné de voir à quel point il est facile de gérer du texte complexe dans vos documents Word.
+N'oubliez pas que les étapes clés consistent à configurer les options de chargement, à charger votre document et à l'enregistrer. C'est aussi simple que ça ! Alors, allez-y et essayez-le. Vous serez étonné de voir à quel point il est facile de gérer du texte complexe dans vos documents Word.
 
 ## FAQ
 

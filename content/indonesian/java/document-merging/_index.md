@@ -25,7 +25,7 @@ Secara keseluruhan, tutorial penggabungan dokumen menggunakan Aspose.Words untuk
 ## Tutorial Penggabungan Dokumen
 
 ### [Menggunakan Penggabungan Dokumen](./using-document-merging/)
-Pelajari cara menggabungkan dokumen Word dengan lancar menggunakan Aspose.Words untuk Java. Menggabungkan, memformat, dan menangani konflik secara efisien hanya dalam beberapa langkah. Mulai sekarang!
+Pelajari cara menggabungkan dokumen Word dengan lancar menggunakan Aspose.Words untuk Java. Menggabungkan, memformat, dan menangani konflik secara efisien hanya dalam beberapa langkah. Mulailah sekarang!
 ### [Menggabungkan dan Mengkloning Dokumen](./combining-cloning-documents/)
 Pelajari cara menggabungkan dan mengkloning dokumen dengan mudah di Java menggunakan Aspose.Words. Panduan langkah demi langkah ini mencakup semua yang perlu Anda ketahui.
 ### [Menggabungkan dan Menambahkan Dokumen](./joining-appending-documents/)

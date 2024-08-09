@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /es/net/working-with-headers-and-footers/create-header-footer/
 ---
+## Introducción
 
 Agregar encabezados y pies de página a sus documentos puede mejorar su profesionalismo y legibilidad. Con Aspose.Words para .NET, puede crear y personalizar fácilmente encabezados y pies de página para sus documentos de Word. En este tutorial, lo guiaremos a través del proceso paso a paso, asegurándonos de que pueda implementar estas funciones sin problemas.
 
@@ -40,7 +41,7 @@ string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 ## Paso 2: cree un nuevo documento
 
- Crea un nuevo documento y un`DocumentBuilder` para facilitar la adición de contenidos.
+ Crea un nuevo documento y un`DocumentBuilder`para facilitar la adición de contenido.
 
 ```csharp
 Document doc = new Document();
@@ -168,22 +169,22 @@ Si sigue estos pasos, puede agregar y personalizar de manera efectiva encabezado
 
 ## Preguntas frecuentes
 
-### P1: ¿Qué es Aspose.Words para .NET?
+### ¿Qué es Aspose.Words para .NET?
 
 Aspose.Words para .NET es una biblioteca que permite a los desarrolladores crear, editar y convertir documentos de Word mediante programación dentro de aplicaciones .NET.
 
-### P2: ¿Puedo agregar imágenes al encabezado o pie de página?
+### ¿Puedo agregar imágenes al encabezado o pie de página?
 
  Sí, puedes agregar fácilmente imágenes al encabezado o pie de página usando el`DocumentBuilder.InsertImage` método.
 
-### P3: ¿Cómo configuro diferentes encabezados y pies de página para la primera página?
+### ¿Cómo configuro diferentes encabezados y pies de página para la primera página?
 
  Puede configurar diferentes encabezados y pies de página para la primera página utilizando el`DifferentFirstPageHeaderFooter` propiedad de la`PageSetup` clase.
 
-### P4: ¿Dónde puedo encontrar más documentación sobre Aspose.Words?
+### ¿Dónde puedo encontrar más documentación sobre Aspose.Words?
 
  Puede encontrar documentación completa sobre el[Página de documentación de la API de Aspose.Words](https://reference.aspose.com/words/net/).
 
-### P5: ¿Hay soporte disponible para Aspose.Words?
+### ¿Hay soporte disponible para Aspose.Words?
 
- Sí, Aspose ofrece soporte a través de su[Foro de soporte](https://forum.aspose.com/c/words/8).
+ Sí, Aspose ofrece soporte a través de su[foro de soporte](https://forum.aspose.com/c/words/8).

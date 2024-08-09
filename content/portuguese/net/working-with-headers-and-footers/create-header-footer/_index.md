@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /pt/net/working-with-headers-and-footers/create-header-footer/
 ---
+## Introdução
 
 Adicionar cabeçalhos e rodapés aos seus documentos pode aumentar seu profissionalismo e legibilidade. Com Aspose.Words for .NET, você pode criar e personalizar facilmente cabeçalhos e rodapés para seus documentos do Word. Neste tutorial, orientaremos você no processo passo a passo, garantindo que você possa implementar esses recursos perfeitamente.
 
@@ -14,7 +15,7 @@ Adicionar cabeçalhos e rodapés aos seus documentos pode aumentar seu profissio
 
 Antes de começar, certifique-se de ter o seguinte:
 
--  Aspose.Words for .NET: Baixe e instale a partir do[Link para Download](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Baixe e instale a partir do[link para baixar](https://releases.aspose.com/words/net/).
 - Ambiente de desenvolvimento: como Visual Studio, para escrever e executar seu código.
 - Conhecimento básico de C#: Compreensão de C# e .NET framework.
 - Documento de amostra: um documento de amostra para aplicar cabeçalhos e rodapés ou criar um novo conforme mostrado no tutorial.
@@ -40,7 +41,7 @@ string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 ## Etapa 2: crie um novo documento
 
- Crie um novo documento e um`DocumentBuilder` para facilitar a adição de conteúdo.
+ Crie um novo documento e um`DocumentBuilder`para facilitar a adição de conteúdo.
 
 ```csharp
 Document doc = new Document();
@@ -168,22 +169,22 @@ Seguindo essas etapas, você pode adicionar e personalizar com eficácia cabeça
 
 ## Perguntas frequentes
 
-### Q1: O que é Aspose.Words para .NET?
+### O que é Aspose.Words para .NET?
 
 Aspose.Words for .NET é uma biblioteca que permite aos desenvolvedores criar, editar e converter documentos do Word programaticamente em aplicativos .NET.
 
-### P2: Posso adicionar imagens ao cabeçalho ou rodapé?
+### Posso adicionar imagens ao cabeçalho ou rodapé?
 
  Sim, você pode adicionar facilmente imagens ao cabeçalho ou rodapé usando o`DocumentBuilder.InsertImage` método.
 
-### P3: Como defino cabeçalhos e rodapés diferentes para a primeira página?
+### Como defino cabeçalhos e rodapés diferentes para a primeira página?
 
  Você pode definir cabeçalhos e rodapés diferentes para a primeira página usando o`DifferentFirstPageHeaderFooter` propriedade do`PageSetup` aula.
 
-### Q4: Onde posso encontrar mais documentação sobre Aspose.Words?
+### Onde posso encontrar mais documentação sobre Aspose.Words?
 
  Você pode encontrar documentação abrangente sobre o[Página de documentação da API Aspose.Words](https://reference.aspose.com/words/net/).
 
-### Q5: Existe suporte disponível para Aspose.Words?
+### Existe suporte disponível para Aspose.Words?
 
- Sim, Aspose oferece suporte por meio de seu[Fórum de suporte](https://forum.aspose.com/c/words/8).
+ Sim, Aspose oferece suporte por meio de seu[fórum de suporte](https://forum.aspose.com/c/words/8).

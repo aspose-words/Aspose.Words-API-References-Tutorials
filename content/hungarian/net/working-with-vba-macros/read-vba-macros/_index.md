@@ -15,7 +15,7 @@ Sziasztok, Word dokumentumvarázslók! Gondolkozott már azon, hogy mi történi
 
 Mielőtt belemerülnénk a kódba, győződjön meg arról, hogy mindennel rendelkezik, amire szüksége van:
 
-1.  Aspose.Words for .NET Library: A Word-dokumentumok kezeléséhez az Aspose.Words for .NET legújabb verziójára lesz szüksége. tudsz[töltse le itt](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: A Word-dokumentumok kezeléséhez az Aspose.Words for .NET legújabb verziójára lesz szüksége. Tudod[töltse le itt](https://releases.aspose.com/words/net/).
 2. Fejlesztői környezet: A .NET fejlesztői környezet, például a Visual Studio, elengedhetetlen a kód írásához és teszteléséhez.
 3. Alapvető C# ismeretek: A C# alapvető ismerete segít eligazodni a kódrészletek és fogalmak között.
 4.  Word dokumentum minta: Legyen a[Word dokumentum](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) VBA-makróval. Ez lesz a forrásunk a makrók olvasásához.
@@ -59,7 +59,7 @@ dokumentumkönyvtár beállítása után a következő lépés az olvasni kívá
 Document doc = new Document(dataDir + "VBA project.docm");
 ```
 
- Ez a sor betölti a "VBA project.docm" nevű Word-dokumentumot a megadott könyvtárból a`doc` tárgy.
+ Ez a sor betölti a "VBA project.docm" nevű Word-dokumentumot a megadott könyvtárból a`doc` objektum.
 
 ## 3. lépés: Hozzáférés a VBA Projecthez
 
@@ -117,7 +117,7 @@ Ez egy egyszerű példa egy VBA makróra, amely egy üzenetdobozt jelenít meg a
 
 És megvan! Sikeresen beolvasott VBA-makrókat egy Word-dokumentumból az Aspose.Words for .NET használatával. Ez az oktatóanyag a környezet beállításától és a dokumentum betöltésétől a VBA-projekt eléréséig és a makrók beolvasásáig mindenre kiterjedt. Az Aspose.Words segítségével hatékony eszköz áll rendelkezésére a feladatok automatizálásához, a dokumentumok testreszabásához és a VBA világának mélyére ásáshoz.
 
- Ha szeretne többet megtudni, a[API dokumentáció](https://reference.aspose.com/words/net/) remek hely a kezdéshez. És ha valaha is kérdései támadnak, vagy segítségre van szüksége, a[támogatói fórum](https://forum.aspose.com/c/words/8) ott van neked.
+ Ha szeretne többet megtudni, a[API dokumentáció](https://reference.aspose.com/words/net/) remek hely a kezdéshez. És ha valaha is kérdései támadnak, vagy segítségre van szüksége, a[támogatási fórum](https://forum.aspose.com/c/words/8) ott van neked.
 
 Jó kódolást, és a makrók mindig zökkenőmentesen működjenek!
 
@@ -130,7 +130,7 @@ Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi a fejl
 A VBA-makrókat bármely Word-dokumentumból olvashatja, amely VBA-projektet tartalmaz. A dokumentumnak makróképes formátumban (.docm) kell lennie.
 
 ### Hogyan szerkeszthetem a VBA makrókat olvasásuk után?  
- A makrók elolvasása után módosíthatja a`SourceCode` tulajdona a`VbaModule` tárgy. Ezután mentse el a dokumentumot a módosítások alkalmazásához.
+ A makrók elolvasása után módosíthatja a`SourceCode` tulajdona a`VbaModule` objektum. Ezután mentse el a dokumentumot a módosítások alkalmazásához.
 
 ### Az Aspose.Words for .NET kompatibilis a Word összes verziójával?  
 Az Aspose.Words for .NET a Word-verziók széles skálájával kompatibilis, így a dokumentumok zökkenőmentesen működnek a különböző platformokon.

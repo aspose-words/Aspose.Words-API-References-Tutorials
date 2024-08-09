@@ -9,7 +9,7 @@ url: /tr/net/working-with-section/delete-section-content/
 ---
 ## giriiş
 
-Merhaba, Word tutkunları! Hiç kendinizi uzun bir belgenin içinde buldunuz mu ve metnin her bir parçasını manuel olarak silmeden belirli bir bölümün içeriğini sihirli bir şekilde temizlemeyi dilediniz mi? Şanslısın! Bu kılavuzda Aspose.Words for .NET kullanarak bir Word belgesindeki bir bölümün içeriğinin nasıl silineceğini inceleyeceğiz. Bu şık numara size çok zaman kazandıracak ve belge düzenleme sürecinizi çok daha sorunsuz hale getirecek. Dalmaya hazır mısınız? Başlayalım!
+Merhaba, Word tutkunları! Hiç kendinizi uzun bir belgenin içinde buldunuz mu ve metnin her bir parçasını manuel olarak silmeden belirli bir bölümün içeriğini sihirli bir şekilde temizlemeyi dilediniz mi? Şanslısın! Bu kılavuzda Aspose.Words for .NET kullanarak bir Word belgesindeki bir bölümün içeriğinin nasıl silineceğini inceleyeceğiz. Bu şık numara size çok zaman kazandıracak ve belge düzenleme sürecinizi çok daha sorunsuz hale getirecek. Dalmaya hazır mısınız? Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -84,7 +84,7 @@ doc.Save(dataDir + "Document_Without_Section_Content.docx");
 
 ## Çözüm
 
-İşte buyur! 🎉 Aspose.Words for .NET'i kullanarak bir Word belgesindeki bir bölümün içeriğini başarıyla temizlediniz. Bu yöntem, özellikle büyük belgelerle veya tekrarlanan görevlerle uğraşırken gerçek bir cankurtaran olabilir. Unutmayın, pratik mükemmelleştirir, bu nedenle Aspose.Words'ün farklı özelliklerini denemeye devam ederek bir belge işleme uzmanı olun. Mutlu kodlama!
+Ve işte karşınızda! 🎉 Aspose.Words for .NET'i kullanarak bir Word belgesindeki bir bölümün içeriğini başarıyla temizlediniz. Bu yöntem, özellikle büyük belgelerle veya tekrarlanan görevlerle uğraşırken gerçek bir cankurtaran olabilir. Unutmayın, pratik mükemmelleştirir, bu nedenle Aspose.Words'ün farklı özelliklerini denemeye devam ederek bir belge işleme uzmanı olun. Mutlu kodlama!
 
 ## SSS
 
@@ -105,7 +105,7 @@ foreach (Section section in doc.Sections)
 
 ### Bu yöntem üstbilgileri ve altbilgileri de kaldırıyor mu?
 
- HAYIR,`ClearContent()` üstbilgileri ve altbilgileri etkilemez. Üstbilgileri ve altbilgileri temizlemek için şunu kullanırsınız:`ClearHeadersFooters()` yöntem.
+ HAYIR,`ClearContent()` üstbilgileri ve altbilgileri etkilemez. Üstbilgileri ve altbilgileri temizlemek için şunu kullanırsınız:`ClearHeadersFooters()` Yöntem.
 
 ### Aspose.Words for .NET, Word belgelerinin tüm sürümleriyle uyumlu mu?
 

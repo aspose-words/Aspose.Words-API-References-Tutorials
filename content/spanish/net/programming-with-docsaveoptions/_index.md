@@ -17,5 +17,5 @@ Siguiendo estos tutoriales, aprenderá las mejores prácticas para guardar sus d
 | Título | Descripción |
 | --- | --- |
 | [Cifrar documento con contraseña](./encrypt-document-with-password/) | Aprenda cómo cifrar un documento con una contraseña usando Aspose.Words para .NET en esta guía detallada paso a paso. Asegure su información confidencial sin esfuerzo. |
-| [No comprimir metarchivos pequeños](./do-not-compress-small-metafiles/) | Aprenda a utilizar Aspose.Words para .NET para garantizar que los metarchivos pequeños en documentos de Word no se compriman y preserven su calidad e integridad. Guía paso a paso incluida. |
-| [No guardar viñeta de imagen](./do-not-save-picture-bullet/) | Aprenda cómo manejar viñetas de imágenes en Aspose.Words para .NET con nuestra guía paso a paso. Simplifique la gestión de documentos y cree documentos profesionales de Word sin esfuerzo. |
+| [No comprimir metarchivos pequeños](./do-not-compress-small-metafiles/) | Aprenda a utilizar Aspose.Words para .NET para garantizar que los metarchivos pequeños en documentos de Word no se compriman, preservando su calidad e integridad. Guía paso a paso incluida. |
+| [No guardar viñeta de imagen](./do-not-save-picture-bullet/) | Aprenda cómo manejar viñetas de imágenes en Aspose.Words para .NET con nuestra guía paso a paso. Simplifique la gestión de documentos y cree documentos de Word profesionales sin esfuerzo. |

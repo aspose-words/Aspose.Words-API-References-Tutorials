@@ -71,7 +71,7 @@ string text = doc.Range.Text;
 
 ## Steg 4: Visa den extraherade texten
 
-Slutligen, för att verifiera att din textextraktion fungerade, kan du visa den extraherade texten i konsolen. Här är hur:
+Slutligen, för att verifiera att din textextraktion fungerade, kan du visa den extraherade texten i konsolen. Så här gör du:
 
 Visa texten
 

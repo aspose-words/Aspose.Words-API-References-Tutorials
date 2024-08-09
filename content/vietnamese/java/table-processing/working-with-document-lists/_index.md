@@ -8,7 +8,7 @@ weight: 11
 url: /vi/java/table-processing/working-with-document-lists/
 ---
 
-Bạn đã sẵn sàng đi sâu vào thế giới thao tác tài liệu trong Java với Aspose.Words chưa? Trong hướng dẫn toàn diện này, chúng ta sẽ khám phá những điều phức tạp khi làm việc với danh sách tài liệu bằng Aspose.Words cho Java. Chúng tôi sẽ cung cấp cho bạn hướng dẫn từng bước và ví dụ về mã nguồn để giúp bạn khai thác toàn bộ sức mạnh của API Java linh hoạt này. Bắt đầu nào!
+Bạn đã sẵn sàng đi sâu vào thế giới thao tác tài liệu trong Java với Aspose.Words chưa? Trong hướng dẫn toàn diện này, chúng ta sẽ khám phá những điều phức tạp khi làm việc với danh sách tài liệu bằng Aspose.Words cho Java. Chúng tôi sẽ cung cấp cho bạn hướng dẫn từng bước và ví dụ về mã nguồn để giúp bạn khai thác toàn bộ sức mạnh của API Java linh hoạt này. Hãy bắt đầu!
 
 ## Giới thiệu
 
@@ -125,7 +125,7 @@ Có, bạn có thể tùy chỉnh định dạng của các mục trong danh sá
 Tuyệt đối! Aspose.Words for Java hỗ trợ nhiều định dạng tài liệu, bao gồm DOCX, PDF, HTML, v.v.
 
 ### Làm cách nào để chuyển đổi danh sách tài liệu sang PDF?
-Để chuyển đổi danh sách tài liệu sang PDF, chỉ cần tải tài liệu bằng Aspose.Words cho Java và lưu nó ở định dạng PDF. Nó là dễ dàng!
+Để chuyển đổi danh sách tài liệu sang PDF, chỉ cần tải tài liệu bằng Aspose.Words cho Java và lưu nó ở định dạng PDF. Thật dễ dàng!
 
 ### Aspose.Words for Java có hỗ trợ làm việc với các bảng trong tài liệu không?
 Có, Aspose.Words for Java cung cấp hỗ trợ rộng rãi để làm việc với các bảng, cho phép bạn tạo, sửa đổi và trích xuất dữ liệu dạng bảng một cách dễ dàng.

@@ -62,7 +62,7 @@ Om uw hyperlinks een aparte uitstraling te geven, kunt u de kleur ervan wijzigen
 theme.Colors.Hyperlink = Color.Gold;
 ```
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Nadat u alle gewenste wijzigingen in het thema hebt aangebracht, slaat u ten slotte het document op. Deze stap zorgt ervoor dat uw wijzigingen worden toegepast en dat het document wordt bijgewerkt.
 
@@ -89,4 +89,4 @@ Absoluut! Aspose.Words voor .NET biedt uitgebreide opties voor het aanpassen van
  U kunt verwijzen naar de[Aspose.Words-documentatie](https://reference.aspose.com/words/net/) voor meer diepgaande informatie.
 
 ### Welke ondersteuningsopties zijn beschikbaar als ik problemen tegenkom?  
- Aspose biedt een[Helpforum](https://forum.aspose.com/c/words/8) waar u hulp kunt krijgen van de gemeenschap en het Aspose-team.
+ Aspose biedt een[ondersteuningsforum](https://forum.aspose.com/c/words/8) waar u hulp kunt krijgen van de gemeenschap en het Aspose-team.

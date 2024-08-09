@@ -19,7 +19,7 @@ Avant de plonger dans le didacticiel, assurez-vous d'avoir les éléments suivan
 
 2. Visual Studio : un environnement de développement comme Visual Studio vous aidera à écrire et à exécuter le code.
 
-3. Connaissance de base de C# : Une connaissance de la programmation C# et .NET sera bénéfique car nous écrirons du code dans ce langage.
+3. Connaissance de base de C# : Une connaissance de la programmation C# et .NET sera bénéfique car nous écrirons du code dans ce langage.
 
 4. .NET Framework : assurez-vous que votre projet cible une version compatible du .NET Framework.
 
@@ -83,7 +83,7 @@ Dans cet exemple, nous ajoutons un paragraphe contenant le texte « Hello World
 
 ## Étape 5 : ajouter la zone de texte enrichi au document
 
- Ajouter le`StructuredDocumentTag` au corps du document.
+ Ajoutez le`StructuredDocumentTag` au corps du document.
 
 ```csharp
 doc.FirstSection.Body.AppendChild(sdtRichText);

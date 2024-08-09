@@ -57,7 +57,7 @@ builder.writeln("Hello, world!");
 
 ### 5.2 Görüntü Ekleme
 
- Word belgesine resim eklemek için,`DocumentBuilder` sınıfın`insertImage()` yöntem.
+ Word belgesine resim eklemek için,`DocumentBuilder` sınıfın`insertImage()` Yöntem.
 
 ```java
 // Belgeye resim ekleme

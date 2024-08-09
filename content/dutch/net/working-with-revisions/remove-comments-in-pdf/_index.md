@@ -2,88 +2,91 @@
 title: Verwijder opmerkingen in pdf-bestand
 linktitle: Verwijder opmerkingen in pdf-bestand
 second_title: Aspose.Words-API voor documentverwerking
-description: Verwijder opmerkingen in een PDF-bestand met Aspose.Words voor .NET.
+description: Leer hoe u opmerkingen uit een PDF-bestand verwijdert met Aspose.Words voor .NET met onze stapsgewijze handleiding.
 type: docs
 weight: 10
 url: /nl/net/working-with-revisions/remove-comments-in-pdf/
 ---
+## Invoering
 
-In deze stapsgewijze handleiding vertellen we u hoe u opmerkingen in een PDF-bestand kunt verwijderen met Aspose.Words voor .NET. We voorzien u van de volledige broncode en laten u zien hoe u de markdown-uitvoer kunt formatteren.
+Hallo daar, mede-ontwikkelaars! Bent u ooit verstrikt geraakt in een wirwar van opmerkingen tijdens het werken met PDF-bestanden? Je bent niet de enige. Of het nu gaat om peer reviews of samenwerkingsprojecten, opmerkingen kunnen uw documenten soms onoverzichtelijk maken. Gelukkig voor ons biedt Aspose.Words voor .NET een naadloze manier om deze vervelende annotaties te verwijderen. Vandaag zullen we het proces stap voor stap doorlopen. Dus doe je gordel om en laten we in de wereld van Aspose.Words duiken!
 
-## Stap 1: Het document laden
+## Vereisten
 
-De eerste stap is het laden van het document met de opmerkingen.
+Voordat we beginnen, zorgen we ervoor dat u alles heeft wat u nodig heeft:
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(MyDir + "Revisions.docx");
-```
+1.  Aspose.Words voor .NET: Zorg ervoor dat de bibliotheek is geïnstalleerd. Je kunt het downloaden van[hier](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: Elke .NET-compatibele IDE, zoals Visual Studio.
+3. Basiskennis van C#: Het helpt als u bekend bent met de basisprincipes van programmeren in C#.
+4. Een document met commentaar: We hebben een Word-document (.docx) met commentaar nodig om te testen.
 
-## Stap 2: Verberg opmerkingen in PDF
+Als je hiermee helemaal klaar bent, gaan we verder met het spannende gedeelte!
 
-We zullen de lay-outoptie configureren om opmerkingen te verbergen bij het genereren van de PDF.
+## Naamruimten importeren
 
-```csharp
-doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
-```
-
-## Stap 3: Sla het document op als PDF
-
-Ten slotte slaan we het document op in PDF-formaat door de opmerkingen te verwijderen.
+Allereerst moeten we de benodigde naamruimten importeren. Hierdoor kunnen we de klassen en methoden van Aspose.Words gebruiken.
 
 ```csharp
-doc.Save(dataDir + "WorkingWithRevisions.RemoveCommentsInPdf.pdf");
+using Aspose.Words;
+using Aspose.Words.Layout;
 ```
 
-## Markdown-uitvoerformaten
+Deze naamruimten geven ons toegang tot de documentverwerkings- en lay-outopties die we nodig hebben.
 
-De uitvoer kan in markdown worden opgemaakt om de leesbaarheid te verbeteren. Bijvoorbeeld :
+## Stap 1: Laad het document
 
-```markdown
-- Comments are hidden in the generated PDF.
-```
+Laten we beginnen met het laden van het document dat de opmerkingen bevat. Dit document moet worden opgeslagen in een map waartoe u toegang heeft.
 
-### Voorbeeldbroncode voor het verwijderen van opmerkingen in pdf met Aspose.Words voor .NET
-
-Hier is de volledige broncode om opmerkingen in een PDF-bestand te verwijderen met Aspose.Words voor .NET:
 
 ```csharp
 // Het pad naar de documentenmap.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(MyDir + "Revisions.docx");
+Document doc = new Document(dataDir + "Revisions.docx");
+```
 
+ In dit fragment vervangt u`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw documentmap. We laden een document met de naam`Revisions.docx`.
+
+## Stap 2: Verberg opmerkingen in de PDF
+
+Vervolgens moeten we de opmerkingen verbergen, zodat ze niet verschijnen in de PDF-versie van ons document. Aspose.Words maakt dit ongelooflijk eenvoudig.
+
+```csharp
 // Verberg opmerkingen in de PDF.
 doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
+```
 
+Deze coderegel vertelt Aspose.Words om opmerkingen te verbergen bij het weergeven van het document.
+
+## Stap 3: Sla het document op als PDF
+
+Ten slotte slaan we het gewijzigde document op als PDF. Deze stap zorgt ervoor dat onze opmerkingen worden verwijderd in het uitvoerbestand.
+
+
+```csharp
 doc.Save(dataDir + "WorkingWithRevisions.RemoveCommentsInPdf.pdf");
 ```
 
+Hier slaan we het document op in dezelfde map met een nieuwe naam, wat aangeeft dat de opmerkingen in de PDF-versie zijn verwijderd.
+
 ## Conclusie
 
-In deze zelfstudie hebben we geleerd hoe u opmerkingen uit een PDF-bestand kunt verwijderen met Aspose.Words voor .NET. Door de juiste lay-outopties te gebruiken, konden we de opmerkingen verbergen bij het genereren van de PDF. Aspose.Words voor .NET biedt grote flexibiliteit om Word-bestanden te manipuleren en naar verschillende formaten te converteren, waaronder PDF. U kunt deze kennis nu toepassen om opmerkingen in uw eigen PDF-bestanden te verwijderen met Aspose.Words voor .NET.
+En daar heb je het! In slechts een paar eenvoudige stappen hebben we met succes opmerkingen uit een PDF-bestand verwijderd met Aspose.Words voor .NET. Deze krachtige bibliotheek vereenvoudigt de manipulatie van documenten, waardoor het een fluitje van een cent wordt om taken uit te voeren die anders omslachtig zouden zijn.
 
-### Veelgestelde vragen over het verwijderen van opmerkingen in pdf-bestanden
+Vergeet niet: oefening baart kunst. Dus ga je gang en probeer dit uit met je documenten. U zult versteld staan hoeveel schoner en professioneler uw PDF's eruitzien zonder dat al die opmerkingen de marges vervuilen.
 
-#### Vraag: Hoe upload ik een document in Aspose.Words voor .NET?
+## Veelgestelde vragen
 
- EEN: Gebruik de`Document` klasse van Aspose.Words voor .NET om een document uit een bestand te laden. U kunt het volledige documentpad opgeven.
+### Wat moet ik doen als ik sommige reacties wil behouden, maar andere wil verwijderen?
+ U kunt opmerkingen selectief verbergen door de commentaarknooppunten rechtstreeks in het document te manipuleren voordat u de`CommentDisplayMode`.
 
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
+### Kan ik Aspose.Words naast PDF ook voor andere bestandsformaten gebruiken?
+Absoluut! Aspose.Words ondersteunt een breed scala aan bestandsindelingen, waaronder DOCX, TXT, HTML en meer.
 
-#### Vraag: Hoe kan ik opmerkingen verbergen in een PDF die is gegenereerd met Aspose.Words voor .NET?
+### Is er een gratis proefversie beschikbaar voor Aspose.Words?
+ Ja, u kunt een gratis proefperiode krijgen[hier](https://releases.aspose.com/).
 
- EEN: Gebruik de`CommentDisplayMode` eigendom van de`LayoutOptions` object om te configureren hoe opmerkingen worden weergegeven bij het genereren van de PDF. Als u opmerkingen wilt verbergen, stelt u deze eigenschap in op`CommentDisplayMode.Hide`.
+### Wat moet ik doen als ik problemen ondervind tijdens het gebruik van Aspose.Words?
+ U kunt een bezoek brengen aan de[ondersteuningsforum](https://forum.aspose.com/c/words/8) voor hulp bij eventuele problemen waarmee u te maken kunt krijgen.
 
-```csharp
-doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
-```
-
-#### Vraag: Hoe kan ik een document opslaan als PDF met Aspose.Words voor .NET?
-
- EEN: Gebruik de`Save` werkwijze van de`Document` object om het document in PDF-formaat op te slaan. Geef het volledige pad van het PDF-bestand op.
-
-```csharp
-doc.Save("path/to/the/file.pdf");
-```
+### Hoe kan ik een licentie kopen voor Aspose.Words?
+ U kunt een licentie kopen bij[hier](https://purchase.aspose.com/buy).

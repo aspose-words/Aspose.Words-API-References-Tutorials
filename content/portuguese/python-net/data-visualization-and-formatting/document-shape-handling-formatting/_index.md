@@ -14,7 +14,7 @@ Os documentos modernos não se tratam apenas do conteúdo que contêm; seu apelo
 
 ## Configurando o Ambiente
 
- Antes de começarmos a criar formatos de documentos impressionantes, certifique-se de ter o Aspose.Words for Python instalado. Você pode baixá-lo no[Link para Download](https://releases.aspose.com/words/python/) . Além disso, consulte o[documentação](https://reference.aspose.com/words/python-net/) para obter orientação abrangente sobre o uso da biblioteca.
+ Antes de começarmos a criar formatos de documentos impressionantes, certifique-se de ter o Aspose.Words for Python instalado. Você pode baixá-lo no[link para baixar](https://releases.aspose.com/words/python/) . Além disso, consulte o[documentação](https://reference.aspose.com/words/python-net/) para obter orientação abrangente sobre o uso da biblioteca.
 
 ## Criando um Documento Básico
 
@@ -86,7 +86,7 @@ Criar formas e layouts de documentos visualmente impressionantes não é mais um
 ## Perguntas frequentes
 
 ### Como faço o download do Aspose.Words para Python?
- Você pode baixar Aspose.Words para Python em[Link para Download](https://releases.aspose.com/words/python/).
+ Você pode baixar Aspose.Words para Python em[link para baixar](https://releases.aspose.com/words/python/).
 
 ### Onde posso encontrar documentação abrangente para Aspose.Words for Python?
  Consulte o[documentação](https://reference.aspose.com/words/python-net/) para obter orientação detalhada sobre como usar Aspose.Words para Python.

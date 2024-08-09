@@ -2,7 +2,7 @@
 title: Word Belgesinde Sınırsız Düzenlenebilir Bölgeler
 linktitle: Word Belgesinde Sınırsız Düzenlenebilir Bölgeler
 second_title: Aspose.Words Belge İşleme API'si
-description: Bu kapsamlı adım adım kılavuzla Aspose.Words for .NET kullanarak bir Word belgesinde sınırsız düzenlenebilir bölgelerin nasıl oluşturulacağını öğrenin.
+description: Bu kapsamlı adım adım kılavuzla Aspose.Words for .NET kullanarak bir Word belgesinde nasıl sınırsız düzenlenebilir bölgeler oluşturacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/document-protection/unrestricted-editable-regions/
@@ -112,7 +112,7 @@ Son olarak belgeyi uygulanan koruma ve düzenlenebilir bölgelerle birlikte kayd
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesinde başarıyla sınırsız düzenlenebilir bölgeler oluşturdunuz. Bu özellik, bir belgenin belirli bölümlerinin değişmeden kalmasının gerektiği, diğerlerinin düzenlenebildiği işbirliği ortamları için inanılmaz derecede faydalıdır. 
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesinde başarıyla sınırsız düzenlenebilir bölgeler oluşturdunuz. Bu özellik, bir belgenin belirli bölümlerinin değişmeden kalmasının gerektiği, diğerlerinin düzenlenebildiği işbirliği ortamları için inanılmaz derecede faydalıdır. 
 
  Aspose.Words'ten en iyi şekilde yararlanmak için daha karmaşık senaryoları ve farklı koruma seviyelerini deneyin. Herhangi bir sorunuz varsa veya sorunla karşılaşırsanız, şuraya göz atmaktan çekinmeyin:[dokümantasyon](https://reference.aspose.com/words/net/) veya iletişime geçin[Destek](https://forum.aspose.com/c/words/8).
 

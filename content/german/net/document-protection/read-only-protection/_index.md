@@ -45,7 +45,7 @@ builder.Write("Open document as read-only");
 Erläuterung:
 
 - Wir beginnen mit der Definition des Verzeichnispfads, in dem das Dokument gespeichert wird.
--  Ein neuer`Document` Objekt wird erstellt und ein`DocumentBuilder` ist damit verbunden.
+-  Ein neues`Document` Objekt wird erstellt und ein`DocumentBuilder` ist damit verbunden.
 - Mithilfe des Builders fügen wir dem Dokument eine einfache Textzeile hinzu.
 
 ## Schritt 2: Schreibschutz-Passwort festlegen
@@ -114,7 +114,7 @@ Und da haben Sie es! Sie haben erfolgreich ein schreibgeschütztes Word-Dokument
 Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Entwickler Word-Dokumente programmgesteuert mit C# oder anderen .NET-Sprachen erstellen, ändern, konvertieren und schützen können.
 
 ### Kann ich den Leseschutz von einem Dokument entfernen?
- Ja, Sie können den Nur-Lese-Schutz entfernen, indem Sie den`Unprotect` Methode und geben Sie das richtige Passwort ein.
+ Ja, Sie können den Nur-Lese-Schutz entfernen, indem Sie den`Unprotect` Methode und Eingabe des richtigen Passworts.
 
 ### Ist das im Dokument festgelegte Passwort verschlüsselt?
 Ja, Aspose.Words verschlüsselt das Passwort, um die Sicherheit des geschützten Dokuments zu gewährleisten.

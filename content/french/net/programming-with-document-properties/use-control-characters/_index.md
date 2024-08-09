@@ -95,7 +95,7 @@ Enfin, sauvons notre document modifié. Vous pouvez l'enregistrer au format .doc
 doc.Save("path/to/your/modified/document.docx");
 ```
 
-Et voilà ! Vous venez d'automatiser une partie de votre flux de documents. À quel point cela est cool?
+Et voilà ! Vous venez d'automatiser une partie de votre flux de documents. C'est pas cool ?
 
 ## Conclusion
 
@@ -116,4 +116,4 @@ Il prend en charge une variété de formats, notamment .doc, .docx, .pdf, .html,
 Une connaissance de base de C# est utile, mais la bibliothèque est conçue pour être conviviale pour les développeurs de tous niveaux.
 
 ### Où puis-je trouver plus d’informations ou obtenir de l’aide ?
- Vérifiez[Documentation Aspose.Words](https://reference.aspose.com/words/net/) ou visitez le[forum d'entraide](https://forum.aspose.com/c/words/8).
+ Découvrez le[Documentation Aspose.Words](https://reference.aspose.com/words/net/) ou visitez le[forum d'assistance](https://forum.aspose.com/c/words/8).

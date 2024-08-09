@@ -14,7 +14,7 @@ Các hướng dẫn cũng bao gồm các khái niệm cơ bản về thao tác h
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Kiểm soát ngưỡng tiếp xúc cho quá trình nhị phân hóa Tiff](./expose-threshold-control-for-tiff-binarization/) | Tìm hiểu cách hiển thị kiểm soát ngưỡng cho quá trình nhị phân TIFF trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước toàn diện này. |
+| [Kiểm soát ngưỡng tiếp xúc cho nhị phân hóa Tiff](./expose-threshold-control-for-tiff-binarization/) | Tìm hiểu cách hiển thị kiểm soát ngưỡng cho quá trình nhị phân TIFF trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước toàn diện này. |
 | [Nhận phạm vi trang Tiff](./get-tiff-page-range/) | Tìm hiểu cách chuyển đổi các phạm vi trang cụ thể từ tài liệu Word sang tệp TIFF bằng Aspose.Words cho .NET với hướng dẫn từng bước này. |
 | [Định dạng 1Bpp được lập chỉ mục](./format-1bpp-indexed/) | Tìm hiểu cách chuyển đổi tài liệu Word thành hình ảnh được lập chỉ mục 1Bpp bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để chuyển đổi dễ dàng. |
 | [Nhận phạm vi trang Jpeg](./get-jpeg-page-range/) | Chuyển đổi các trang cụ thể của tài liệu Word sang JPEG bằng cài đặt tùy chỉnh bằng Aspose.Words cho .NET. Tìm hiểu cách điều chỉnh độ sáng, độ tương phản và độ phân giải theo từng bước. |

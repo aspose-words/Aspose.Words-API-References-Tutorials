@@ -9,7 +9,7 @@ url: /pl/net/working-with-fields/field-code/
 ---
 ## Wstęp
 
-tym przewodniku omówimy, jak pracować z kodami pól w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Pod koniec tego samouczka będziesz już w stanie swobodnie poruszać się po polach, wyodrębniać ich kody i wykorzystywać te informacje do swoich potrzeb. Niezależnie od tego, czy chcesz sprawdzić właściwości pól, czy zautomatyzować modyfikacje dokumentów, ten przewodnik krok po kroku pomoże Ci z łatwością posługiwać się kodami pól.
+tym przewodniku omówimy, jak pracować z kodami pól w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Pod koniec tego samouczka będziesz już w stanie swobodnie poruszać się po polach, wyodrębniać ich kody i wykorzystywać te informacje do swoich potrzeb. Niezależnie od tego, czy chcesz sprawdzić właściwości pól, czy zautomatyzować modyfikacje dokumentów, dzięki temu przewodnikowi krok po kroku z łatwością zdobędziesz biegłość w obsłudze kodów pól.
 
 ## Warunki wstępne
 

@@ -36,7 +36,7 @@ Erstellen eines neuen Projekts in Visual Studio
 ## Schritt 2: Installieren Sie Aspose.Words für .NET
 
 Installation über den NuGet-Paket-Manager  
-Klicken Sie mit der rechten Maustaste auf Ihr Projekt im Solution Explorer, wählen Sie "NuGet-Pakete verwalten" und suchen Sie nach`Aspose.Words`. Es installieren.
+Klicken Sie mit der rechten Maustaste auf Ihr Projekt im Solution Explorer, wählen Sie "NuGet-Pakete verwalten" und suchen Sie nach`Aspose.Words`. Installieren Sie es.
 
 ## Schritt 3: Initialisieren Sie das Dokument
 

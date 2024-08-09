@@ -99,7 +99,7 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ## 結論
 
-現在你就擁有了！只需幾行程式碼，我們就可以使用 Aspose.Words for .NET 成功地從 Word 文件中刪除分頁符號。該庫使文檔操作變得簡單而有效率。無論您處理大型文件還是小型文檔，Aspose.Words 都能提供完成工作所需的工具。
+現在你就得到它了！只需幾行程式碼，我們就可以使用 Aspose.Words for .NET 成功地從 Word 文件中刪除分頁符號。該庫使文檔操作變得簡單而有效率。無論您處理大型文件還是小型文檔，Aspose.Words 都能提供完成工作所需的工具。
 
 ## 常見問題解答
 

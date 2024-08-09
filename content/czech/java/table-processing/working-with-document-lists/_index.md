@@ -10,7 +10,7 @@ url: /cs/java/table-processing/working-with-document-lists/
 
 Jste připraveni ponořit se do světa manipulace s dokumenty v Javě s Aspose.Words? V tomto obsáhlém průvodci prozkoumáme složitosti práce se seznamy dokumentů pomocí Aspose.Words for Java. Poskytneme vám podrobné pokyny a příklady zdrojového kódu, které vám pomohou využít plný výkon tohoto všestranného Java API. Začněme!
 
-## Úvod
+## Zavedení
 
 Aspose.Words for Java je robustní API, které umožňuje vývojářům Java pracovat s různými aspekty zpracování dokumentů. V této příručce se zaměříme na správu seznamů dokumentů, což je základní úkol v automatizaci dokumentů. Ať už potřebujete vytvořit, upravit nebo extrahovat informace ze seznamů dokumentů, Aspose.Words pro Java vás pokryje.
 
@@ -116,7 +116,7 @@ public class ExtractListItemsExample {
 ## Často kladené otázky (FAQ)
 
 ### Jak přidám odrážky do seznamu dokumentů?
- Chcete-li do seznamu dokumentů přidat odrážky, použijte při vytváření seznamu příslušnou šablonu ListTemplate. Například použijte`ListTemplate.BULLET_DEFAULT` namísto`ListTemplate.NUMBER_DEFAULT`.
+ Chcete-li do seznamu dokumentů přidat odrážky, použijte při vytváření seznamu příslušnou šablonu ListTemplate. Například použijte`ListTemplate.BULLET_DEFAULT` místo`ListTemplate.NUMBER_DEFAULT`.
 
 ### Mohu změnit formátování položek seznamu?
 Ano, můžete upravit formátování položek seznamu, včetně písma, velikosti, barvy a dalších, pomocí funkcí formátování Aspose.Words for Java.

@@ -24,7 +24,7 @@ Antes de profundizar en el código, asegúrese de cumplir con los siguientes req
 
 ## Configurar el entorno
 
-Para comenzar a usar Aspose.Words para Java, necesita configurar su entorno de desarrollo. Sigue estos pasos:
+Para comenzar a usar Aspose.Words para Java, necesita configurar su entorno de desarrollo. Siga estos pasos:
 
 1. Cree un nuevo proyecto Java en su entorno de desarrollo integrado (IDE) favorito.
 

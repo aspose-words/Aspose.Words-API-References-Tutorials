@@ -15,7 +15,7 @@ Sind Sie es leid, sich mit riesigen Word-Dokumenten herumzuschlagen, deren Navig
 
 Bevor wir uns in die Einzelheiten stürzen, stellen wir sicher, dass wir alles haben, was wir für die Arbeit mit Aspose.Words für .NET benötigen:
 
-1.  Aspose.Words für .NET-Bibliothek: Sie benötigen diese Bibliothek. Sie können[hier herunterladen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET-Bibliothek: Sie benötigen diese Bibliothek. Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Visual Studio oder eine andere .NET-kompatible IDE.
 3. Grundlegende Kenntnisse in C#: Wenn Sie hier sind, gehe ich davon aus, dass Sie bereits mit C# vertraut sind.
 

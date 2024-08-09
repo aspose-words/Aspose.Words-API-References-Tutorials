@@ -2,93 +2,113 @@
 title: Liste der verfügbaren Schriftarten abrufen
 linktitle: Liste der verfügbaren Schriftarten abrufen
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie in diesem Tutorial, wie Sie die Liste der in Aspose.Words für .NET verfügbaren Schriftarten erhalten.
+description: In diesem ausführlichen Schritt-für-Schritt-Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET eine Liste der verfügbaren Schriftarten erhalten. Verbessern Sie Ihre Fähigkeiten im Bereich der Schriftartenverwaltung.
 type: docs
 weight: 10
 url: /de/net/working-with-fonts/get-list-of-available-fonts/
 ---
-In diesem Tutorial erklären wir, wie Sie die Liste der in Aspose.Words für .NET verfügbaren Schriftarten abrufen. Die Liste der verfügbaren Schriftarten informiert Sie darüber, welche Schriftarten Sie in Ihren Dokumenten verwenden können. Wir führen Sie Schritt für Schritt durch, damit Sie den Code in Ihrem .NET-Projekt verstehen und implementieren können.
+## Einführung
+
+Hatten Sie schon einmal Probleme, die Schriftarten in Ihren Word-Dokumenten zu verwalten? Wenn Sie ein .NET-Entwickler sind, ist Aspose.Words für .NET die Rettung für Sie! Diese leistungsstarke Bibliothek hilft Ihnen nicht nur dabei, Word-Dokumente programmgesteuert zu erstellen und zu bearbeiten, sondern bietet auch umfangreiche Funktionen zur Schriftartenverwaltung. In dieser Anleitung führen wir Sie Schritt für Schritt durch die Anleitung, wie Sie mit Aspose.Words für .NET eine Liste der verfügbaren Schriftarten erhalten. Wir unterteilen es in leicht verständliche Schritte, damit Sie es problemlos befolgen können. Lassen Sie uns also loslegen und die Schriftartenverwaltung zum Kinderspiel machen!
 
 ## Voraussetzungen
-Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Elemente verfügen:
-- Gute Kenntnisse der Programmiersprache C#
-- Die in Ihrem Projekt installierte Aspose.Words-Bibliothek für .NET
 
-## Schritt 1: Dokumentverzeichnis festlegen
- Zuerst müssen Sie den Verzeichnispfad auf den Speicherort Ihres Word-Dokuments setzen. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad.
+Bevor wir beginnen, benötigen Sie einige Dinge:
+
+-  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Bibliothek Aspose.Words für .NET installiert haben. Sie können sie hier herunterladen:[Hier](https://releases.aspose.com/words/net/).
+- Visual Studio: Dieses Beispiel verwendet Visual Studio als Entwicklungsumgebung.
+- .NET Framework: Stellen Sie sicher, dass .NET Framework auf Ihrem Computer installiert ist.
+- Dokumentverzeichnis: Ein Verzeichnispfad, in dem Ihre Dokumente gespeichert sind.
+
+## Namespaces importieren
+
+Importieren Sie zunächst die erforderlichen Namespaces in Ihr Projekt:
 
 ```csharp
-// Pfad zu Ihrem Dokumentverzeichnis
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Collections.Generic;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Schritt 2: Schriftartquellen konfigurieren
- Als nächstes erstellen wir eine Instanz von`FontSettings` und holen Sie sich die bestehenden Fontquellen mit dem`GetFontsSources()` Methode. Wir werden auch eine neue Schriftartquelle hinzufügen, indem wir einen Ordner mit Schriftarten angeben.
+## Schritt 1: Initialisieren Sie die Schrifteinstellungen
+
+Der erste Schritt besteht darin, die Schriftarteinstellungen zu initialisieren. Dadurch können Sie die Schriftartquellen für Ihre Dokumente verwalten.
 
 ```csharp
-// Konfigurieren von Schriftartquellen
 FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-
-// Hinzufügen einer neuen Schriftartquelle
-FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-fontSources.Add(folderFontSource);
-
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
 ```
 
-## Schritt 3: Liste der verfügbaren Schriftarten abrufen
- Nun durchsuchen wir die verfügbaren Schriftarten mit dem`GetAvailableFonts()` Methode für die erste aktualisierte Schriftartquelle.
+- FontSettings: Mit dieser Klasse werden die Einstellungen für Schriftartersetzung und Schriftartquellen festgelegt.
+- fontSources: Wir erstellen eine Liste vorhandener Schriftquellen aus den aktuellen Schrifteinstellungen.
+
+## Schritt 2: Dokumentverzeichnis definieren
+
+Geben Sie als Nächstes den Pfad zu Ihrem Dokumentverzeichnis an. Hier sucht Aspose.Words nach Schriftarten.
 
 ```csharp
-// Liste der verfügbaren Schriftarten abrufen
-foreach(PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
-{
-Console.WriteLine("Font Family Name: " + fontInfo.FontFamilyName);
-Console.WriteLine("Full font name: " + fontInfo.FullFontName);
-Console.WriteLine("Version: " + fontInfo.Version);
-Console.WriteLine("Path: " + fontInfo.FilePath);
-}
-```
-
-
-### Beispielquellcode zum Abrufen einer Liste verfügbarer Schriftarten mit Aspose.Words für .NET 
-
-```csharp
-
-// Pfad zu Ihrem Dokumentverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
-FontSettings fontSettings = new FontSettings();
-List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-// Fügen Sie eine neue Ordnerquelle hinzu, die Aspose.Words anweist, im folgenden Ordner nach Schriftarten zu suchen.
+-  dataDir: Diese Zeichenfolge enthält den Pfad zum Verzeichnis, in dem sich Ihre Schriftarten befinden. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"` mit dem tatsächlichen Pfad.
+
+## Schritt 3: Benutzerdefinierten Schriftartordner hinzufügen
+
+Fügen Sie jetzt eine neue Ordnerquelle hinzu, um Aspose.Words anzuweisen, in diesem Ordner nach Schriftarten zu suchen.
+
+```csharp
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-// Fügen Sie den benutzerdefinierten Ordner, der unsere Schriftarten enthält, zur Liste der vorhandenen Schriftartenquellen hinzu.
+```
+
+- FolderFontSource: Diese Klasse repräsentiert eine Ordner-Schriftquelle. Der zweite Parameter (`true`) gibt an, ob rekursiv in Unterordnern nach Schriftarten gesucht werden soll.
+
+## Schritt 4: Schriftartquellen aktualisieren
+
+Fügen Sie den benutzerdefinierten Schriftartordner zur Liste der vorhandenen Schriftartquellen hinzu und aktualisieren Sie die Schriftarteinstellungen.
+
+```csharp
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
+```
+
+- fontSources.Add(folderFontSource): Fügt den benutzerdefinierten Schriftartenordner zu den vorhandenen Schriftartenquellen hinzu.
+- updatedFontSources: Konvertiert die Liste der Schriftquellen in ein Array.
+
+## Schritt 5: Schriftarten abrufen und anzeigen
+
+Rufen Sie abschließend die verfügbaren Schriftarten ab und zeigen Sie deren Details an.
+
+```csharp
 foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
 {
-	Console.WriteLine("FontFamilyName : " + fontInfo.FontFamilyName);
-	Console.WriteLine("FullFontName  : " + fontInfo.FullFontName);
-	Console.WriteLine("Version  : " + fontInfo.Version);
-	Console.WriteLine("FilePath : " + fontInfo.FilePath);
+    Console.WriteLine("FontFamilyName : " + fontInfo.FontFamilyName);
+    Console.WriteLine("FullFontName  : " + fontInfo.FullFontName);
+    Console.WriteLine("Version  : " + fontInfo.Version);
+    Console.WriteLine("FilePath : " + fontInfo.FilePath);
 }
-
 ```
 
+- GetAvailableFonts(): Ruft die Liste der verfügbaren Schriftarten aus der ersten Schriftartquelle in der aktualisierten Liste ab.
+-  fontInfo: Eine Instanz von`PhysicalFontInfo` mit Details zu jeder Schriftart.
+
 ## Abschluss
-In diesem Tutorial haben wir gesehen, wie man die Liste der in Aspose.Words für .NET verfügbaren Schriftarten erhält. So erfahren Sie, welche Schriftarten Sie in Ihren Dokumenten verwenden können. Nutzen Sie diese Funktion, um geeignete Schriftarten für Ihre Anforderungen auszuwählen.
 
-### Häufig gestellte Fragen
+Herzlichen Glückwunsch! Sie haben mit Aspose.Words für .NET erfolgreich eine Liste der verfügbaren Schriftarten abgerufen. Dieses Tutorial hat Sie durch jeden Schritt geführt, von der Initialisierung der Schriftarteinstellungen bis zur Anzeige der Schriftartdetails. Mit diesem Wissen können Sie jetzt Schriftarten in Ihren Word-Dokumenten problemlos verwalten. Denken Sie daran, dass Aspose.Words für .NET ein leistungsstarkes Tool ist, das Ihre Dokumentverarbeitungsfunktionen erheblich verbessern kann. Entdecken Sie also weitere Funktionen, um Ihren Entwicklungsprozess noch effizienter zu gestalten.
 
-#### F: Wie kann ich die Liste der in Aspose.Words verfügbaren Schriftarten abrufen?
+## Häufig gestellte Fragen
 
- A: Um die Liste der in Aspose.Words verfügbaren Schriftarten abzurufen, können Sie den`FontsProvider` Klasse und die`GetAvailableFonts` Methode. Diese Methode gibt eine Liste aller auf Ihrem System installierten Schriftarten zurück.
+### Kann ich Aspose.Words für .NET mit anderen .NET-Frameworks verwenden?
+Ja, Aspose.Words für .NET ist mit verschiedenen .NET-Frameworks kompatibel, einschließlich .NET Core und .NET 5+.
 
-#### F: Kann ich die Liste der verfügbaren Schriftarten in Aspose.Words nach bestimmten Kriterien filtern?
+### Wie installiere ich Aspose.Words für .NET?
+Sie können es über den NuGet Package Manager in Visual Studio installieren, indem Sie nach „Aspose.Words“ suchen.
 
-A: Ja, Sie können die Liste der in Aspose.Words verfügbaren Schriftarten nach bestimmten Kriterien filtern. Sie können Schriftarten beispielsweise nach Familie, Stil oder Sprache filtern.
+### Ist es möglich, mehrere benutzerdefinierte Schriftartordner hinzuzufügen?
+ Ja, Sie können mehrere benutzerdefinierte Schriftartenordner hinzufügen, indem Sie mehrere erstellen`FolderFontSource` Instanzen und Hinzufügen dieser zur Liste der Schriftartquellen.
 
-#### F: Wie kann ich die Liste der verfügbaren Schriftarten in meinen Word-Dokumenten verwenden?
+### Kann ich Schriftdetails aus einer bestimmten Schriftquelle abrufen?
+ Ja, Sie können Schriftartdetails aus jeder Schriftartquelle abrufen, indem Sie den Index der Schriftartquelle im`updatedFontSources` -Array.
 
- A: Um die Liste der in Ihren Word-Dokumenten verfügbaren Schriftarten zu verwenden, können Sie die Liste durchsuchen und die entsprechenden Schriftarten mithilfe der Methoden und Eigenschaften des`FontSettings` Klasse in Aspose.Words.
+### Unterstützt Aspose.Words für .NET die Schriftartenersetzung?
+Ja, es unterstützt die Schriftartersetzung, um sicherzustellen, dass Text korrekt wiedergegeben wird, auch wenn die Originalschriftart nicht verfügbar ist.

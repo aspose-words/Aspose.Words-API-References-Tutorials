@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /hu/net/working-with-headers-and-footers/create-header-footer/
 ---
+## Bevezetés
 
 Fejlécek és láblécek hozzáadása a dokumentumokhoz javíthatja azok professzionalizmusát és olvashatóságát. Az Aspose.Words for .NET segítségével egyszerűen létrehozhat és testreszabhat fejlécet és láblécet Word-dokumentumaihoz. Ebben az oktatóanyagban lépésről lépésre végigvezetjük a folyamaton, így biztosítva, hogy ezeket a funkciókat zökkenőmentesen tudja megvalósítani.
 
@@ -40,7 +41,7 @@ string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 ## 2. lépés: Hozzon létre egy új dokumentumot
 
- Hozzon létre egy új dokumentumot, és a`DocumentBuilder` a tartalom hozzáadásának megkönnyítése érdekében.
+ Hozzon létre egy új dokumentumot, és a`DocumentBuilder` tartalom hozzáadásának megkönnyítése érdekében.
 
 ```csharp
 Document doc = new Document();
@@ -168,22 +169,22 @@ Ha követi ezeket a lépéseket, az Aspose.Words for .NET segítségével haték
 
 ## GYIK
 
-### 1. kérdés: Mi az Aspose.Words for .NET?
+### Mi az Aspose.Words for .NET?
 
 Az Aspose.Words for .NET egy olyan könyvtár, amely lehetővé teszi a fejlesztők számára Word-dokumentumok programozott létrehozását, szerkesztését és konvertálását .NET-alkalmazásokon belül.
 
-### 2. kérdés: Hozzáadhatok képeket a fejléchez vagy lábléchez?
+### Hozzáadhatok képeket a fejléchez vagy lábléchez?
 
  Igen, egyszerűen hozzáadhat képeket a fejléchez vagy lábléchez a`DocumentBuilder.InsertImage` módszer.
 
-### 3. kérdés: Hogyan állíthatok be különböző fejlécet és láblécet az első oldalon?
+### Hogyan állíthatok be különböző fejlécet és láblécet az első oldalhoz?
 
  Különböző fejléceket és lábléceket állíthat be az első oldalhoz a segítségével`DifferentFirstPageHeaderFooter` tulajdona a`PageSetup` osztály.
 
-### 4. kérdés: Hol találok további dokumentációt az Aspose.Wordsről?
+### Hol találok további dokumentációt az Aspose.Wordsről?
 
  Részletes dokumentációt találhat a[Aspose.Words API dokumentációs oldal](https://reference.aspose.com/words/net/).
 
-### 5. kérdés: Van-e támogatás az Aspose.Words számára?
+### Van-e támogatás az Aspose.Words számára?
 
- Igen, az Aspose támogatást nyújt rajtuk keresztül[támogatói fórum](https://forum.aspose.com/c/words/8).
+ Igen, az Aspose támogatást nyújt rajtuk keresztül[támogatási fórum](https://forum.aspose.com/c/words/8).

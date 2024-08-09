@@ -18,7 +18,7 @@ Sebelum kita masuk ke seluk beluk kode bidang, pastikan Anda memiliki hal beriku
 1.  Aspose.Words untuk .NET: Pastikan Anda telah menginstal Aspose.Words. Jika tidak, Anda dapat mengunduhnya dari[Aspose.Words untuk Rilis .NET](https://releases.aspose.com/words/net/).
 2. Visual Studio: Anda memerlukan lingkungan pengembangan terintegrasi (IDE) seperti Visual Studio untuk menulis dan menjalankan kode .NET Anda.
 3. Pengetahuan Dasar C#: Keakraban dengan pemrograman C# akan membantu Anda mengikuti contoh dan cuplikan kode.
-4. Contoh Dokumen: Siapkan contoh dokumen Word dengan kode bidang. Untuk tutorial ini, anggap saja Anda memiliki nama dokumen`Hyperlinks.docx` dengan berbagai kode bidang.
+4. Contoh Dokumen: Siapkan contoh dokumen Word dengan kode bidang. Untuk tutorial ini, anggaplah Anda memiliki nama dokumen`Hyperlinks.docx` dengan berbagai kode bidang.
 
 ## Impor Namespace
 
@@ -91,7 +91,7 @@ Penjelasan: Loop yang ditingkatkan ini mencetak kode bidang dan hasilnya ke kons
 
 ## Kesimpulan
 
-Bekerja dengan kode bidang di dokumen Word menggunakan Aspose.Words untuk .NET dapat menjadi alat yang ampuh untuk mengotomatisasi dan menyesuaikan penanganan dokumen. Dengan mengikuti panduan ini, Anda kini mengetahui cara mengakses dan memproses kode bidang secara efisien. Baik Anda perlu memeriksa bidang atau memodifikasinya, Anda memiliki dasar untuk mulai mengintegrasikan fitur-fitur ini ke dalam aplikasi Anda.
+Bekerja dengan kode bidang di dokumen Word menggunakan Aspose.Words untuk .NET dapat menjadi alat yang ampuh untuk mengotomatisasi dan menyesuaikan penanganan dokumen. Dengan mengikuti panduan ini, Anda kini mengetahui cara mengakses dan memproses kode bidang secara efisien. Baik Anda perlu memeriksa bidang atau memodifikasinya, Anda memiliki landasan untuk mulai mengintegrasikan fitur-fitur ini ke dalam aplikasi Anda.
 
 Jangan ragu untuk menjelajahi lebih lanjut tentang Aspose.Words dan bereksperimen dengan berbagai jenis bidang dan kode. Semakin banyak Anda berlatih, semakin mahir Anda memanfaatkan alat-alat ini untuk membuat dokumen Word yang dinamis dan responsif.
 
@@ -115,4 +115,4 @@ Kode bidang adalah tempat penampung dalam dokumen Word yang secara dinamis mengh
 
 ### Di mana saya dapat memperoleh informasi lebih lanjut tentang Aspose.Words?
 
-Untuk dokumentasi rinci, tutorial, dan dukungan, kunjungi[Dokumentasi Aspose.Words](https://reference.aspose.com/words/net/), [Unduh Halaman](https://releases.aspose.com/words/net/) , atau[Forum Dukungan](https://forum.aspose.com/c/words/8).
+Untuk dokumentasi rinci, tutorial, dan dukungan, kunjungi[Dokumentasi Aspose.Words](https://reference.aspose.com/words/net/), [Halaman unduh](https://releases.aspose.com/words/net/) , atau[Forum Dukungan](https://forum.aspose.com/c/words/8).

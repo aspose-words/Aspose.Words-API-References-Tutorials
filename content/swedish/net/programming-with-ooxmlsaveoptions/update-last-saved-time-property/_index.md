@@ -38,7 +38,7 @@ Först måste du ange sökvägen till din dokumentkatalog. Det är här ditt bef
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din katalog.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din katalog.
 
 ## Steg 2: Ladda ditt Word-dokument
 

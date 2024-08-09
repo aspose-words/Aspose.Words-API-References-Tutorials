@@ -15,7 +15,7 @@ Việc chuyển đổi tài liệu Word thành hình ảnh có thể cực kỳ 
 
 Trước khi chúng ta bắt đầu, bạn sẽ cần chuẩn bị sẵn một số thứ:
 
--  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt Aspose.Words for .NET. Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt Aspose.Words for .NET. bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 - Môi trường phát triển: Môi trường phát triển AC# như Visual Studio.
 - Tài liệu mẫu: Một tài liệu Word để làm việc. Bạn có thể sử dụng bất kỳ tệp .docx nào cho hướng dẫn này.
 - Kiến thức C# cơ bản: Làm quen với lập trình C#.
@@ -66,7 +66,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options)
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã chuyển đổi thành công một trang cụ thể của tài liệu Word thành hình ảnh JPEG với các cài đặt tùy chỉnh bằng Aspose.Words cho .NET. Quá trình này có thể được điều chỉnh để phù hợp với nhiều nhu cầu khác nhau, cho dù bạn đang chuẩn bị hình ảnh cho trang web, tạo bản xem trước tài liệu hay hơn thế nữa.
+Và bạn có nó! Bạn đã chuyển đổi thành công một trang cụ thể của tài liệu Word thành hình ảnh JPEG với các cài đặt tùy chỉnh bằng Aspose.Words for .NET. Quá trình này có thể được điều chỉnh để phù hợp với nhiều nhu cầu khác nhau, cho dù bạn đang chuẩn bị hình ảnh cho trang web, tạo bản xem trước tài liệu hay hơn thế nữa.
 
 ## Câu hỏi thường gặp
 

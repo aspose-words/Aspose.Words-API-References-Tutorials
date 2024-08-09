@@ -9,7 +9,7 @@ url: /sv/net/find-and-replace-text/replace-text-in-footer/
 ---
 ## Introduktion
 
-Hallå där! Är du redo att dyka in i dokumenthanteringens värld med Aspose.Words för .NET? Idag ska vi ta itu med en intressant uppgift: att ersätta text i sidfoten i ett Word-dokument. Denna handledning guidar dig genom hela processen steg-för-steg. Oavsett om du är en erfaren utvecklare eller precis har börjat, kommer du att tycka att den här guiden är användbar och lätt att följa. Så låt oss börja på vår resa för att bemästra textersättning i sidfötter med Aspose.Words för .NET!
+Hej där! Är du redo att dyka in i dokumenthanteringens värld med Aspose.Words för .NET? Idag ska vi ta itu med en intressant uppgift: att ersätta text i sidfoten i ett Word-dokument. Denna handledning guidar dig genom hela processen steg-för-steg. Oavsett om du är en erfaren utvecklare eller precis har börjat, kommer du att tycka att den här guiden är användbar och lätt att följa. Så låt oss börja på vår resa för att bemästra textersättning i sidfötter med Aspose.Words för .NET!
 
 ## Förutsättningar
 
@@ -39,7 +39,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Footer.docx");
 ```
 
- I det här steget, byt ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där ditt dokument är lagrat. De`Document` objekt`doc` har nu vårt laddade dokument.
+ I detta steg, byt ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där ditt dokument är lagrat. De`Document` objekt`doc` har nu vårt laddade dokument.
 
 ## Steg 2: Öppna sidfoten
 
@@ -64,7 +64,7 @@ FindReplaceOptions options = new FindReplaceOptions
 };
 ```
 
- I det här exemplet,`MatchCase` är satt till`false` att ignorera fallskillnader, och`FindWholeWordsOnly` är satt till`false` för att tillåta partiella matchningar i ord.
+ I det här exemplet,`MatchCase` är inställd på`false` att ignorera fallskillnader, och`FindWholeWordsOnly` är inställd på`false` för att tillåta partiella matchningar i ord.
 
 ## Steg 4: Byt ut texten i sidfoten
 

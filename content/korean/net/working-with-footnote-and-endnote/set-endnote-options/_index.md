@@ -2,45 +2,61 @@
 title: 미주 옵션 설정
 linktitle: 미주 옵션 설정
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 Word 문서에서 미주 옵션을 설정하는 방법을 알아보세요. 예제 소스 코드가 포함된 단계별 튜토리얼입니다.
+description: 이 포괄적인 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 미주 옵션을 설정하는 방법을 알아보세요.
 type: docs
 weight: 10
 url: /ko/net/working-with-footnote-and-endnote/set-endnote-options/
 ---
+## 소개
 
-이 단계별 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에서 미주 옵션을 설정하는 방법을 안내합니다. 제공된 C# 소스 코드를 설명하고 이를 자신의 프로젝트에 구현하는 방법을 보여 드리겠습니다.
+미주를 효율적으로 관리하여 Word 문서를 향상시키고 싶으십니까? 더 이상 보지 마세요! 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에서 미주 옵션을 설정하는 과정을 안내합니다. 이 가이드를 마치면 문서 요구 사항에 맞게 미주를 사용자 정의하는 전문가가 될 것입니다.
 
- 시작하려면 개발 환경에 Aspose.Words for .NET이 설치 및 설정되어 있는지 확인하세요. 아직 수행하지 않은 경우 다음에서 라이브러리를 다운로드하여 설치하십시오.[Aspose.Releases]https://releases.aspose.com/words/net/.
+## 전제 조건
 
-## 1단계: 문서 개체 초기화
+튜토리얼을 시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
 
- 먼저, 초기화`Document` 소스 문서에 대한 경로를 제공하여 개체를 만듭니다.
+-  .NET용 Aspose.Words: .NET용 Aspose.Words 라이브러리가 설치되어 있는지 확인하세요. 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/net/).
+- 개발 환경: Visual Studio와 같은 개발 환경을 설정합니다.
+- C#에 대한 기본 지식: C# 프로그래밍에 대한 기본적인 이해가 있으면 도움이 됩니다.
+
+## 네임스페이스 가져오기
+
+시작하려면 필요한 네임스페이스를 가져와야 합니다. 이러한 네임스페이스는 Word 문서를 조작하는 데 필요한 클래스 및 메서드에 대한 액세스를 제공합니다.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Notes;
+```
+
+## 1단계: 문서 로드
+
+ 먼저 미주 옵션을 설정하려는 문서를 로드해 보겠습니다. 우리는`Document` 이를 수행하려면 Aspose.Words 라이브러리의 클래스를 사용하세요.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-## 2단계: DocumentBuilder 개체 초기화
+## 2단계: DocumentBuilder 초기화
 
- 다음으로 초기화`DocumentBuilder` 문서에 대한 작업을 수행하는 개체:
+ 다음으로 초기화하겠습니다.`DocumentBuilder`수업. 이 클래스는 문서에 내용을 추가하는 간단한 방법을 제공합니다.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 3단계: 텍스트 및 미주 추가하기
+## 3단계: 텍스트 추가 및 미주 삽입
 
- 사용`Write` 의 방법`DocumentBuilder` 문서에 텍스트를 추가하는 개체와`InsertFootnote` 미주 삽입 방법:
+ 이제 문서에 텍스트를 추가하고 미주를 삽입해 보겠습니다. 그만큼`InsertFootnote` 의 방법`DocumentBuilder` 클래스를 사용하면 문서에 미주를 추가할 수 있습니다.
 
 ```csharp
 builder.Write("Some text");
 builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
 ```
 
-## 4단계: 미주 옵션 설정하기
+## 4단계: 미주 옵션 액세스 및 설정
 
- 액세스`EndnoteOptions`미주 옵션을 수정하려면 문서의 속성을 사용하세요. 이 예에서는 각 페이지에서 다시 시작하도록 다시 시작 규칙과 섹션 끝 위치를 설정했습니다.
+ 미주 옵션을 사용자 정의하려면`EndnoteOptions` 의 재산`Document` 수업. 그런 다음 다시 시작 규칙 및 위치와 같은 다양한 옵션을 설정할 수 있습니다.
 
 ```csharp
 EndnoteOptions option = doc.EndnoteOptions;
@@ -50,51 +66,29 @@ option.Position = EndnotePosition.EndOfSection;
 
 ## 5단계: 문서 저장
 
-마지막으로 수정된 문서를 저장합니다.
+ 마지막으로 업데이트된 미주 옵션을 사용하여 문서를 저장해 보겠습니다. 그만큼`Save` 의 방법`Document` 클래스를 사용하면 문서를 지정된 디렉터리에 저장할 수 있습니다.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 ```
 
-그게 다야! .NET용 Aspose.Words를 사용하여 Word 문서에서 미주 옵션을 성공적으로 설정했습니다.
+## 결론
 
-### .NET용 Aspose.Words를 사용하여 미주 옵션 설정에 대한 예제 소스 코드
+Aspose.Words for .NET을 사용하여 Word 문서에서 미주 옵션을 설정하는 것은 다음과 같은 간단한 단계를 통해 매우 쉽습니다. 다시 시작 규칙과 미주의 위치를 사용자 정의하여 특정 요구 사항에 맞게 문서를 맞춤화할 수 있습니다. Aspose.Words를 사용하면 Word 문서를 조작하는 기능을 손쉽게 사용할 수 있습니다.
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";	
-Document doc = new Document(dataDir + "Document.docx");
-DocumentBuilder builder = new DocumentBuilder(doc);
+## FAQ
 
-builder.Write("Some text");
-builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
+### .NET용 Aspose.Words란 무엇입니까?
+Aspose.Words for .NET은 Word 문서를 프로그래밍 방식으로 조작하기 위한 강력한 라이브러리입니다. 이를 통해 개발자는 다양한 형식의 Word 문서를 생성, 수정 및 변환할 수 있습니다.
 
-EndnoteOptions option = doc.EndnoteOptions;
-option.RestartRule = FootnoteNumberingRule.RestartPage;
-option.Position = EndnotePosition.EndOfSection;
+### Aspose.Words를 무료로 사용할 수 있나요?
+ Aspose.Words를 무료 평가판으로 사용할 수 있습니다. 장기간 사용하려면 다음에서 라이센스를 구매하세요.[여기](https://purchase.aspose.com/buy).
 
-doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
-```
+### 미주란 무엇입니까?
+미주는 섹션이나 문서의 끝에 있는 참조 또는 메모입니다. 추가 정보나 인용을 제공합니다.
 
-자신의 프로젝트에서 이 코드를 자유롭게 사용하고 특정 요구 사항에 따라 수정하십시오.
+### 미주의 모양을 어떻게 사용자 정의합니까?
+ 다음을 사용하여 번호 매기기, 위치, 다시 시작 규칙과 같은 미주 옵션을 사용자 정의할 수 있습니다.`EndnoteOptions` .NET용 Aspose.Words의 클래스입니다.
 
-### FAQ
-
-#### Q: Aspose.Words에서 어떻게 미주의 스타일을 지정할 수 있나요?
-
- A: Aspose.Words에서 미주의 스타일을 지정하려면 다음을 사용할 수 있습니다.`EndnoteOptions` 수업과`SeparatorNoteTextStyle` 재산. 이 속성을 사용하여 미주의 글꼴 스타일, 크기, 색상 등을 지정할 수 있습니다.
-
-#### Q: 문서의 미주 번호 매기기를 사용자 정의할 수 있습니까?
-
- A: 예, 문서의 미주 번호 매기기를 사용자 정의할 수 있습니다. 당신은 사용할 수 있습니다`RestartRule`그리고`NumberStyle` 의 속성`EndnoteOptions` 특정 재시작 규칙과 번호 매기기 스타일을 정의하는 클래스입니다.
-
-#### Q: 문서에서 미주를 배치하려면 어떻게 해야 합니까?
-
-A: 문서에서 미주 위치를 지정하려면`Position` 의 재산`EndnoteOptions` 수업. 미주를 각 페이지 하단, 각 섹션 끝, 문서 끝 중 어디에 배치할지 지정할 수 있습니다.
-
-#### Q: 미주 번호 매기기 형식을 사용자 정의할 수 있나요?
-
- A: 예, Aspose.Words에서 미주 번호 매기기 형식을 사용자 정의할 수 있습니다. 사용`NumberFormat` 의 재산`EndnoteOptions` 아라비아 숫자, 로마 숫자, 문자 등 원하는 형식을 설정하는 클래스입니다.
-
-#### Q: 문서의 섹션 간에 미주 번호를 계속 매길 수 있나요?
-
- A: 예, 문서의 섹션 간에 미주 번호를 계속 매기는 것이 가능합니다. 사용`RestartRule` 의 재산`EndnoteOptions` 클래스로 설정하고`RestartContinuous` 섹션 간에 번호 매기기를 계속할 수 있습니다.
+### .NET용 Aspose.Words에 대한 추가 문서는 어디서 찾을 수 있나요?
+ 자세한 문서는 다음에서 확인할 수 있습니다.[.NET 문서용 Aspose.Words](https://reference.aspose.com/words/net/) 페이지.

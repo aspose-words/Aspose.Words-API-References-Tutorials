@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /de/net/working-with-fonts/receive-warning-notification/
 ---
+## Einführung
 
 Sind Sie es leid, sich mit unerwarteten Schriftartproblemen in Ihren Dokumenten herumzuschlagen? Mit Aspose.Words für .NET können Sie über mögliche Probleme während der Dokumentverarbeitung benachrichtigt werden, sodass Sie die Dokumentqualität leichter aufrechterhalten können. Diese umfassende Anleitung führt Sie durch die Einrichtung von Warnbenachrichtigungen in Aspose.Words und stellt sicher, dass Sie nie wieder eine wichtige Warnung verpassen.
 
@@ -15,9 +16,9 @@ Sind Sie es leid, sich mit unerwarteten Schriftartproblemen in Ihren Dokumenten 
 Bevor wir loslegen, stellen Sie sicher, dass Sie Folgendes haben:
 
 - Grundkenntnisse in C#: Die Vertrautheit mit C# hilft Ihnen, die Schritte zu verstehen und umzusetzen.
--  Aspose.Words für .NET-Bibliothek: Laden Sie es herunter und installieren Sie es von der[Download-Link](https://releases.aspose.com/words/net/).
+-  Aspose.Words für .NET-Bibliothek: Laden Sie es herunter und installieren Sie es von der[Downloadlink](https://releases.aspose.com/words/net/).
 - Entwicklungsumgebung: Ein Setup wie Visual Studio zum Schreiben und Ausführen Ihres Codes.
--  Beispieldokument: Halten Sie ein Beispieldokument bereit (z. B.`Rendering.docx`) arbeiten mit.
+-  Beispieldokument: Halten Sie ein Beispieldokument bereit (z. B.`Rendering.docx`) zum Arbeiten.
 
 ## Namespaces importieren
 
@@ -69,7 +70,7 @@ doc.WarningCallback = callback;
 ```
 ## Schritt 5: Seitenlayout aktualisieren
 
- Ruf den`UpdatePageLayout` -Methode. Dadurch wird das Dokument im Speicher gerendert und es werden alle Warnungen erfasst, die während des Renderings auftreten.
+ Rufen Sie die`UpdatePageLayout` -Methode. Dadurch wird das Dokument im Speicher gerendert und es werden alle Warnungen erfasst, die während des Renderings auftreten.
 
 ```csharp
 doc.UpdatePageLayout();
@@ -101,11 +102,11 @@ Nein, Sie können nur eine Standardschriftart als Ersatz angeben. Sie können je
 
 ###  F3: Kann ich andere Arten von Warnungen mit`IWarningCallback`?
 
- Ja das`IWarningCallback`Die Schnittstelle kann verschiedene Arten von Warnungen verarbeiten, nicht nur die Schriftartersetzung.
+ Ja, die`IWarningCallback`Die Schnittstelle kann verschiedene Arten von Warnungen verarbeiten, nicht nur die Schriftartersetzung.
 
 ### F4: Wo finde ich Unterstützung für Aspose.Words?
 
- Besuche den[Aspose.Words Support-Forum](https://forum.aspose.com/c/words/8) zur Hilfe.
+ Besuchen Sie die[Aspose.Words Support-Forum](https://forum.aspose.com/c/words/8) um Hilfe.
 
 ### F5: Ist es möglich, eine temporäre Lizenz für Aspose.Words zu erhalten?
 

@@ -9,7 +9,7 @@ url: /id/net/programming-with-fileformat/detect-document-signatures/
 ---
 ## Perkenalan
 
-Memastikan integritas dan keaslian dokumen Word Anda sangatlah penting, terutama di era digital saat ini. Salah satu cara untuk mencapai hal ini adalah dengan menggunakan tanda tangan digital. Dalam tutorial ini, kita akan mendalami bagaimana Anda dapat mendeteksi tanda tangan digital pada dokumen Word menggunakan Aspose.Words untuk .NET. Kami akan membahas semuanya mulai dari dasar hingga panduan langkah demi langkah, memastikan Anda memiliki pemahaman yang komprehensif pada akhirnya.
+Memastikan integritas dan keaslian dokumen Word Anda sangatlah penting, terutama di era digital saat ini. Salah satu cara untuk mencapai hal ini adalah dengan menggunakan tanda tangan digital. Dalam tutorial ini, kita akan mendalami cara mendeteksi tanda tangan digital pada dokumen Word menggunakan Aspose.Words untuk .NET. Kami akan membahas semuanya mulai dari dasar hingga panduan langkah demi langkah, memastikan Anda memiliki pemahaman yang komprehensif pada akhirnya.
 
 ## Prasyarat
 

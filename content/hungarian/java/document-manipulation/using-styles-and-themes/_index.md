@@ -10,7 +10,7 @@ url: /hu/java/document-manipulation/using-styles-and-themes/
 
 ## Bevezetés az Aspose.Words for Java stílusok és témák használatába
 
-Ebben az útmutatóban megvizsgáljuk, hogyan dolgozhat stílusokkal és témákkal az Aspose.Words for Java programban, hogy javítsa a dokumentumok formázását és megjelenését. Olyan témákkal foglalkozunk, mint a stílusok lekérése, a stílusok másolása, a témák kezelése és a stíluselválasztók beszúrása. Kezdjük el!
+Ebben az útmutatóban megvizsgáljuk, hogyan dolgozhat stílusokkal és témákkal az Aspose.Words for Java programban, hogy javítsa a dokumentumok formázását és megjelenését. Olyan témákkal foglalkozunk, mint a stílusok lekérése, a stílusok másolása, a témák kezelése és a stíluselválasztók beszúrása. Kezdjük is!
 
 ## Stílusok lekérése
 
@@ -82,7 +82,7 @@ public void setThemeProperties() throws Exception
 
 Ezek a részletek bemutatják, hogyan lehet lekérni és módosítani a téma tulajdonságait, például a betűtípusokat és a színeket.
 
-## Stíluselválasztók beillesztése
+## Stíluselválasztók beszúrása
 
 A stíluselválasztók hasznosak különböző stílusok egyetlen bekezdésen belüli alkalmazásakor. Íme egy példa a stíluselválasztók beszúrására:
 

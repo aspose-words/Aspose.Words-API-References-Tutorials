@@ -9,7 +9,7 @@ url: /fr/net/programming-with-sdt/set-content-control-style/
 ---
 ## Introduction
 
-Avez-vous déjà eu envie d'égayer vos documents Word avec des styles personnalisés, mais vous êtes retrouvé empêtré dans des problèmes techniques ? Eh bien, vous avez de la chance ! Aujourd'hui, nous plongeons dans le monde de la définition de styles de contrôle de contenu à l'aide d'Aspose.Words pour .NET. C'est plus facile que vous ne le pensez, et à la fin de ce didacticiel, vous styliserez vos documents comme un pro. Nous vous guiderons pas à pas, en nous assurant que vous comprenez chaque partie du processus. Prêt à transformer vos documents Word ? Commençons!
+Avez-vous déjà eu envie d'égayer vos documents Word avec des styles personnalisés, mais vous êtes retrouvé empêtré dans des problèmes techniques ? Eh bien, vous avez de la chance ! Aujourd'hui, nous plongeons dans le monde de la définition de styles de contrôle de contenu à l'aide d'Aspose.Words pour .NET. C'est plus facile que vous ne le pensez, et à la fin de ce didacticiel, vous styliserez vos documents comme un pro. Nous vous guiderons pas à pas, en nous assurant que vous comprenez chaque partie du processus. Prêt à transformer vos documents Word ? Commençons !
 
 ## Conditions préalables
 
@@ -86,7 +86,7 @@ Dans cette étape, nous enregistrons le document modifié sous un nouveau nom po
 
 ## Conclusion
 
-Et voila! Vous venez d'apprendre à définir des styles de contrôle de contenu dans des documents Word à l'aide d'Aspose.Words pour .NET. En suivant ces étapes simples, vous pouvez facilement personnaliser l'apparence de vos documents Word, les rendant plus attrayants et professionnels. Continuez à expérimenter différents styles et éléments de document pour libérer pleinement la puissance d'Aspose.Words.
+Et voilà ! Vous venez d'apprendre à définir des styles de contrôle de contenu dans des documents Word à l'aide d'Aspose.Words pour .NET. En suivant ces étapes simples, vous pouvez facilement personnaliser l'apparence de vos documents Word, les rendant plus attrayants et professionnels. Continuez à expérimenter différents styles et éléments de document pour libérer pleinement la puissance d'Aspose.Words.
 
 ## FAQ
 
@@ -103,4 +103,4 @@ Oui, vous pouvez stocker le style d'origine avant d'apporter des modifications e
 Absolument! Cette méthode fonctionne pour divers éléments du document. Ajustez simplement le code pour cibler l’élément souhaité.
 
 ### Aspose.Words prend-il en charge d'autres plates-formes que .NET ?  
-Oui, Aspose.Words est disponible pour Java, C++ , et d'autres plateformes. Vérifiez leur[Documentation](https://reference.aspose.com/words/net/) pour plus de détails.
+Oui, Aspose.Words est disponible pour Java, C++ , et d'autres plateformes. Vérifiez leur[documentation](https://reference.aspose.com/words/net/) pour plus de détails.

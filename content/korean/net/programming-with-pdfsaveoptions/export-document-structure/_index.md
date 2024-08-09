@@ -15,7 +15,7 @@ url: /ko/net/programming-with-pdfsaveoptions/export-document-structure/
 
 이 여정을 시작하기 전에 시작하는 데 필요한 모든 필수 사항을 모아 보겠습니다.
 
-- .NET용 Aspose.Words: Aspose.Words 라이브러리가 설치되어 있는지 확인하세요. 그렇지 않다면 할 수 있습니다[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+- .NET용 Aspose.Words: Aspose.Words 라이브러리가 설치되어 있는지 확인하세요. 그렇지 않다면 할 수 있습니다[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 - 개발 환경: Visual Studio와 같은 .NET 호환 개발 환경입니다.
 -  샘플 문서: Word 문서(예:`Paragraphs.docx`)을 PDF로 변환합니다.
 

@@ -2,101 +2,111 @@
 title: 在每个部分重新启动列表
 linktitle: 在每个部分重新启动列表
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 将编号列表重置为 Word 文档中的各个部分。
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文档的每个部分重新启动列表。按照我们详细的分步指南有效地管理列表。
 type: docs
 weight: 10
 url: /zh/net/working-with-list/restart-list-at-each-section/
 ---
+## 介绍
 
-在本分步教程中，我们将向您展示如何使用 Aspose.Words for .NET 将编号列表重置为 Word 文档中的每个部分。我们将解释提供的 C# 源代码并向您展示如何在您自己的项目中实现它。
+创建结构化且组织良好的文档有时感觉就像解决一个复杂的难题。这个难题的一部分是有效地管理列表，特别是当您希望它们在每个部分重新启动时。使用 Aspose.Words for .NET，您可以无缝地实现这一点。让我们深入了解如何使用 Aspose.Words for .NET 在 Word 文档的每个部分重新启动列表。
 
-首先，请确保已在开发环境中安装并配置了 Aspose.Words for .NET。如果尚未安装，请从以下位置下载并安装该库[Aspose.发布]https://releases.aspose.com/words/net/。
+## 先决条件
 
-## 步骤 1：创建文档和列表
+在开始之前，请确保您已准备好以下内容：
 
-首先，创建一个新文档并添加一个默认编号列表：
+1.  Aspose.Words for .NET：从以下网址下载并安装最新版本[Aspose 版本](https://releases.aspose.com/words/net/)页。
+2. .NET 环境：安装 .NET 后设置您的开发环境。
+3. 对 C# 的基本了解：建议熟悉 C# 编程语言。
+4.  Aspose 许可证：您可以选择[临时执照](https://purchase.aspose.com/temporary-license/)如果你没有。
+
+## 导入命名空间
+
+在编写代码之前，请确保导入必要的命名空间：
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+现在，让我们将该过程分解为多个步骤，以使其易于遵循。
+
+## 步骤 1：初始化文档
+
+首先，您需要创建一个新的文档实例。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
-
-doc.Lists.Add(ListTemplate.NumberDefault);
-
-List list = doc.Lists[0];
-list. IsRestartAtEachSection = true;
 ```
 
-## 第 2 步：将项目添加到列表中
+## 第 2 步：添加编号列表
 
-然后使用`DocumentBuilder`将项目添加到列表中。您可以使用循环将多个项目添加到列表中：
+接下来，向文档添加编号列表。此列表将遵循默认编号格式。
+
+```csharp
+doc.Lists.Add(ListTemplate.NumberDefault);
+```
+
+## 步骤 3：访问列表并设置重新启动属性
+
+检索刚刚创建的列表并设置其`IsRestartAtEachSection`财产`true`这可确保列表在每个新部分重新开始编号。
+
+```csharp
+List list = doc.Lists[0];
+list.IsRestartAtEachSection = true;
+```
+
+## 步骤 4：创建文档生成器并关联列表
+
+创建一个`DocumentBuilder`将内容插入文档并将其与列表关联。
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.ListFormat.List = list;
+```
 
+## 步骤 5：添加列表项并插入分节符
+
+现在，将项目添加到列表中。为了说明重新启动功能，我们将在一定数量的项目后插入分节符。
+
+```csharp
 for (int i = 1; i < 45; i++)
 {
-     builder.Writeln($"List item {i}");
+    builder.Writeln($"List item {i}");
 
-     if (i == 15)
-         builder.InsertBreak(BreakType.SectionBreakNewPage);
+    if (i == 15)
+        builder.InsertBreak(BreakType.SectionBreakNewPage);
 }
 ```
 
-在此示例中，我们在第 15 个列表项后插入分节符来说明重新编号。
+## 步骤 6：保存文档
 
-## 步骤3：保存修改后的文档
-
-最后保存修改后的文档：
+最后，使用适当的选项保存文档以确保合规。
 
 ```csharp
 OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Transitional };
-
 doc.Save(dataDir + "ResetListAtEachSection.docx", options);
 ```
 
-所以！您已成功使用 Aspose.Words for .NET 将编号列表重置为 Word 文档中的每个部分。
+## 结论
 
-### 在每个部分重置列表的示例源代码
+就这样！按照这些步骤，您可以使用 Aspose.Words for .NET 轻松地在 Word 文档的每个部分重新启动列表。此功能对于创建结构良好的文档非常有用，这些文档需要单独的部分并带有自己的列表编号。使用 Aspose.Words，处理此类任务变得轻而易举，让您专注于制作高质量的内容。
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
+## 常见问题解答
 
-doc.Lists.Add(ListTemplate.NumberDefault);
+### 我可以在每个部分为不同列表类型重新启动列表吗？
+是的，Aspose.Words for .NET 允许您重新启动各种列表类型，包括项目符号和编号列表。
 
-List list = doc.Lists[0];
-list. IsRestartAtEachSection = true;
+### 如果我想自定义编号格式怎么办？
+您可以通过修改`ListTemplate`创建列表时的属性。
 
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.ListFormat.List = list;
+### 列表中项目的数量有限制吗？
+不，使用 Aspose.Words for .NET 时列表中的项目数量没有具体限制。
 
-for (int i = 1; i < 45; i++)
-{
-	 builder.Writeln($"List item {i}");
+### 我可以在其他文档格式（例如 PDF）中使用此功能吗？
+是的，您可以使用 Aspose.Words 将 Word 文档转换为 PDF 等其他格式，同时保留列表结构。
 
-	 if (i == 15)
-		 builder.InsertBreak(BreakType.SectionBreakNewPage);
-}
-
-OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Transitional };
-
-doc.Save(dataDir + "ResetListAtEachSection.docx", options);
-
-```
-
-请随意在您自己的项目中使用此代码并进行修改以满足您的特定需求。
-
-### 常见问题解答
-
-#### 问：如何在 Aspose.Words 中的每个部分重新启动列表？
-
-答：要在 Aspose.Words 中的每个部分重新启动列表，您需要创建一个实例`List`类并为其分配一个编号列表。然后您可以使用`List.IsRestartAtEachSection`属性指定应在每个部分重新开始编号。您可以将此列表与文档的一个或多个部分关联，以便在每个部分正确重新开始编号。
-
-#### 问：我可以自定义 Aspose.Words 中列表的编号格式吗？
-
-答：是的，您可以在 Aspose.Words 中自定义列表的编号格式。`List`该类提供了几个属性，例如`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`等。您可以使用这些属性来设置列表类型（编号、项目符号等）、编号格式（阿拉伯数字、罗马数字、字母等）和其他编号格式选项。
-
-#### 问：是否可以在 Aspose.Words 中的编号列表中添加其他级别？
-
-答：是的，可以在 Aspose.Words 中的编号列表中添加其他级别。`ListLevel`类允许您为列表的每个级别设置格式属性。您可以设置前缀、后缀、对齐、缩进等选项。这允许您创建具有多个层次结构的列表。
+### 如何免费试用 Aspose.Words for .NET？
+您可以从[Aspose 版本](https://releases.aspose.com/)页。

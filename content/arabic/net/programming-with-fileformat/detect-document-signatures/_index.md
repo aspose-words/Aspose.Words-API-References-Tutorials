@@ -35,7 +35,7 @@ using Aspose.Words;
 
 ### 1.1 إنشاء مشروع جديد
 
- افتح Visual Studio وقم بإنشاء مشروع Console App (.NET Core) جديد. أطلق عليه اسما`DigitalSignatureDetector`.
+ افتح Visual Studio وقم بإنشاء مشروع Console App (.NET Core) جديد. سمها`DigitalSignatureDetector`.
 
 ### 1.2 تثبيت Aspose.Words لـ .NET
 
@@ -47,7 +47,7 @@ using Aspose.Words;
 
 ## الخطوة 2: إضافة مسار دليل المستند
 
-الآن، نحن بحاجة إلى تحديد المسار إلى الدليل حيث يتم تخزين المستند الخاص بك.
+الآن، نحن بحاجة إلى تحديد المسار إلى الدليل حيث تم تخزين المستند الخاص بك.
 
 ```csharp
 // المسار إلى دليل المستندات.

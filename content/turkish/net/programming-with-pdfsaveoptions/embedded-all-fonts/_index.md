@@ -76,7 +76,7 @@ Bu satırda, Word belgesinde kullanılan tüm yazı tiplerini katıştırarak be
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak yazı tiplerini bir PDF belgesine başarıyla gömdünüz. Bu bilgiyle, PDF'lerinizin nerede görüntülenirse görüntülensinler amaçlanan görünümlerini korumasını sağlayabilirsiniz. Çok hoş değil mi? Şimdi devam edin ve kendi belgelerinizle deneyin.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak yazı tiplerini bir PDF belgesine başarıyla gömdünüz. Bu bilgiyle, PDF'lerinizin nerede görüntülenirse görüntülensinler amaçlanan görünümlerini korumasını sağlayabilirsiniz. Çok hoş değil mi? Şimdi devam edin ve kendi belgelerinizle deneyin.
 
 ## SSS'ler
 

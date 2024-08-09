@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/find-and-replace-text/recognize-and-substitutions-within-replacement-patterns/
 ---
-## Úvod
+## Zavedení
 
 Vítejte na vzrušující cestě do světa manipulace s textem pomocí Aspose.Words pro .NET! Dnes prozkoumáme, jak rozpoznat a nahradit text v rámci nahrazovacích vzorů, což je klíčová dovednost pro automatizaci a vylepšení vašich úloh zpracování dokumentů. Pojďme se ponořit!
 
@@ -15,7 +15,7 @@ Vítejte na vzrušující cestě do světa manipulace s textem pomocí Aspose.Wo
 
 Než si ušpiníme ruce kódem, ujistěte se, že máte vše, co potřebujete:
 
--  Aspose.Words for .NET: Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Postačí jakékoli IDE, jako je Visual Studio.
 - Základní znalost C#: Pokud jste obeznámeni s C#, můžete začít!
 
@@ -80,7 +80,7 @@ Nyní provedeme operaci výměny. Tady se děje kouzlo!
 doc.Range.Replace(regex, @"$2 take money from $1", options);
 ```
 
- Tady,`$2`a`$1` jsou substituční vzory.`$2` odkazuje na druhou zachycenou skupinu (Paul) a`$1` odkazuje na první zachycenou skupinu (Jason). Výsledkem bude "Paul si vezme peníze od Jasona."
+ Zde,`$2`a`$1` jsou substituční vzory.`$2` odkazuje na druhou zachycenou skupinu (Paul) a`$1` odkazuje na první zachycenou skupinu (Jason). Výsledkem bude "Paul si vezme peníze od Jasona."
 
 ## Krok 6: Uložte dokument
 
@@ -94,7 +94,7 @@ Dokument můžete uložit v různých formátech, jako je DOCX, PDF, HTML atd. A
 
 ## Závěr
 
-Gratulujeme! Úspěšně jste se naučili, jak rozpoznat a nahradit text v nahrazovacích vzorech pomocí Aspose.Words pro .NET. Tato výkonná funkce vám může ušetřit spoustu času a úsilí při zpracování dokumentů. Ať už automatizujete sestavy, generujete dokumenty nebo jednoduše spravujete text, Aspose.Words vám pomůže.
+Gratuluji! Úspěšně jste se naučili, jak rozpoznat a nahradit text v nahrazovacích vzorech pomocí Aspose.Words pro .NET. Tato výkonná funkce vám může ušetřit spoustu času a úsilí při zpracování dokumentů. Ať už automatizujete sestavy, generujete dokumenty nebo jednoduše spravujete text, Aspose.Words vám pomůže.
 
 ## FAQ
 
@@ -111,4 +111,4 @@ Ano, Aspose.Words podporuje regulární výrazy pro operace hledání a nahrazov
  Substituční vzorce, jako`$1`a`$2`, odkazují na zachycené skupiny v regulárním výrazu. Používají se k přeuspořádání nebo opětovnému použití částí shodného textu v náhradním řetězci.
 
 ### Jak získám podporu pro Aspose.Words for .NET?
- Podporu můžete získat na fórech komunity Aspose[tady](https://forum.aspose.com/c/words/8).
+ Podporu můžete získat na fórech komunity Aspose[zde](https://forum.aspose.com/c/words/8).

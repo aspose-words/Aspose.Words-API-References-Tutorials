@@ -96,7 +96,7 @@ builder.InsertDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
 Wyjaśnienie:
-To polecenie łączy dokument źródłowy z dokumentem docelowym w bieżącym miejscu (czyli na końcu, po podziale strony) i używa stylów dokumentu docelowego, inteligentnie stosując style źródłowe tam, gdzie jest to potrzebne.
+To polecenie łączy dokument źródłowy z dokumentem docelowym w bieżącym miejscu (czyli na końcu, po podziale strony) i używa stylów dokumentu docelowego, inteligentnie stosując style źródłowe tam, gdzie jest to konieczne.
 
 ## Krok 6: Zapisz połączony dokument
 

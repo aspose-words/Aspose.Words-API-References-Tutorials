@@ -8,10 +8,10 @@ weight: 12
 url: /it/java/table-processing/creating-tables-rows/
 ---
 
-## introduzione
+## Introduzione
 La creazione di tabelle e righe nei documenti è un aspetto fondamentale dell'elaborazione dei documenti e Aspose.Words per Java rende questo compito più semplice che mai. In questa guida passo passo, esploreremo come utilizzare Aspose.Words per Java per creare tabelle e righe nei tuoi documenti. Che tu stia creando report, generando fatture o creando qualsiasi documento che richieda la presentazione di dati strutturati, questa guida fa al caso tuo.
 
-## Ponendo le basi
+## Preparare il palco
  Prima di immergerci nei dettagli essenziali, assicuriamoci di avere la configurazione necessaria per lavorare con Aspose.Words per Java. Assicurati di aver scaricato e installato la libreria. Se non l'hai già fatto, puoi trovare il link per il download[Qui](https://releases.aspose.com/words/java/).
 
 ## Costruire Tabelle

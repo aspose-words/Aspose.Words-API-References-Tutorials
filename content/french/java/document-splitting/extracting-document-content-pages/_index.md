@@ -18,7 +18,7 @@ Aspose.Words for Java change la donne lorsqu'il s'agit de travailler avec des do
 
 ### Configuration de votre environnement de développement
 
-Avant de pouvoir commencer à travailler avec Aspose.Words pour Java, nous devons configurer notre environnement de développement. Suivez ces étapes:
+Avant de pouvoir commencer à travailler avec Aspose.Words pour Java, nous devons configurer notre environnement de développement. Suivez ces étapes :
 
 1. Installer Java : Si Java n'est pas installé, téléchargez et installez la dernière version à partir du site Web.
 
@@ -156,4 +156,4 @@ Aspose.Words for Java nécessite une licence valide pour une utilisation commerc
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez terminé le guide étape par étape sur l'extraction du contenu d'un document par page à l'aide d'Aspose.Words pour Java. Vous possédez désormais un ensemble de compétences précieuses pour travailler avec des documents Word par programmation. N'hésitez pas à explorer davantage de fonctionnalités d'Aspose.Words et à libérer votre créativité dans la manipulation de documents.
+Félicitations! Vous avez terminé le guide étape par étape sur l'extraction du contenu d'un document par page à l'aide d'Aspose.Words pour Java. Vous possédez désormais un ensemble de compétences précieuses pour travailler avec des documents Word par programmation. N'hésitez pas à explorer davantage de fonctionnalités d'Aspose.Words et à libérer votre créativité dans la manipulation de documents.

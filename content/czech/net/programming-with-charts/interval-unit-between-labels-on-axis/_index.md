@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-charts/interval-unit-between-labels-on-axis/
 ---
-## Úvod
+## Zavedení
 
 Vítejte v našem komplexním průvodci používáním Aspose.Words pro .NET! Ať už jste zkušený vývojář nebo teprve začínáte, tento článek vás provede vším, co potřebujete vědět o využití Aspose.Words k programové manipulaci a generování dokumentů Wordu v aplikacích .NET.
 
@@ -16,7 +16,7 @@ Vítejte v našem komplexním průvodci používáním Aspose.Words pro .NET! A�
 Než se ponoříte do Aspose.Words, ujistěte se, že máte následující nastavení:
 - Visual Studio nainstalované na vašem počítači
 - Základní znalost programovacího jazyka C#
--  Přístup ke knihovně Aspose.Words for .NET (odkaz ke stažení[tady](https://releases.aspose.com/words/net/))
+-  Přístup ke knihovně Aspose.Words for .NET (odkaz ke stažení[zde](https://releases.aspose.com/words/net/))
 
 ## Import jmenných prostorů a Začínáme
 
@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithCharts.IntervalUnitBetweenLabelsOnAxis.docx");
 
 ## Závěr
 
-Gratulujeme! Naučili jste se integrovat a manipulovat s grafy pomocí Aspose.Words pro .NET. Tato výkonná knihovna umožňuje vývojářům bez námahy vytvářet dynamické a vizuálně přitažlivé dokumenty.
+Gratuluji! Naučili jste se integrovat a manipulovat s grafy pomocí Aspose.Words pro .NET. Tato výkonná knihovna umožňuje vývojářům bez námahy vytvářet dynamické a vizuálně přitažlivé dokumenty.
 
 
 ## FAQ
@@ -83,13 +83,13 @@ Gratulujeme! Naučili jste se integrovat a manipulovat s grafy pomocí Aspose.Wo
 Aspose.Words for .NET je knihovna pro zpracování dokumentů, která umožňuje vývojářům vytvářet, upravovat a převádět dokumenty aplikace Word v aplikacích .NET.
 
 ### Kde najdu dokumentaci k Aspose.Words pro .NET?
- Můžete najít podrobnou dokumentaci[tady](https://reference.aspose.com/words/net/).
+ Můžete najít podrobnou dokumentaci[zde](https://reference.aspose.com/words/net/).
 
 ### Mohu Aspose.Words for .NET vyzkoušet před nákupem?
- Ano, můžete si stáhnout bezplatnou zkušební verzi[tady](https://releases.aspose.com/).
+ Ano, můžete si stáhnout bezplatnou zkušební verzi[zde](https://releases.aspose.com/).
 
 ### Jak získám podporu pro Aspose.Words for .NET?
  Pro podporu a komunitní diskuse navštivte[Fórum Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### Kde si mohu zakoupit licenci pro Aspose.Words pro .NET?
- Můžete si zakoupit licenci[tady](https://purchase.aspose.com/buy).
+ Můžete si zakoupit licenci[zde](https://purchase.aspose.com/buy).

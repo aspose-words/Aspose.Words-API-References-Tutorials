@@ -28,13 +28,13 @@ using System;
 using Aspose.Words;
 ```
 
-## Guía paso por paso
+## Guía paso a paso
 
 Dividamos el proceso en pasos simples y fáciles de seguir. Cada paso lo guiará a través de una parte específica de la tarea, asegurándose de que comprenda todo con claridad.
 
 ## Paso 1: configura tu proyecto
 
-Lo primero es lo primero, configure su proyecto C# en Visual Studio. Así es cómo:
+Lo primero es lo primero, configure su proyecto C# en Visual Studio. He aquí cómo:
 
 1. Cree un nuevo proyecto: abra Visual Studio, vaya a Archivo > Nuevo > Proyecto y seleccione una aplicación de consola (.NET Core o .NET Framework).
 2. Instale Aspose.Words: haga clic derecho en su proyecto en el Explorador de soluciones, seleccione "Administrar paquetes NuGet", busque "Aspose.Words" e instálelo.
@@ -75,7 +75,7 @@ Console.WriteLine("The protection type of the document is: " + protectionType);
 Aspose.Words para .NET es una poderosa biblioteca que le permite crear, editar, convertir y manipular documentos de Word mediante programación.
 
 ### ¿Puedo utilizar Aspose.Words gratis?
- Puedes empezar con un[prueba gratis](https://releases.aspose.com/) , pero para obtener una funcionalidad completa, deberá adquirir una licencia. Revisar la[opciones de compra](https://purchase.aspose.com/buy).
+ Puedes empezar con un[prueba gratuita](https://releases.aspose.com/) , pero para obtener una funcionalidad completa, deberá adquirir una licencia. Mira el[opciones de compra](https://purchase.aspose.com/buy).
 
 ### ¿Qué tipos de protección puede detectar Aspose.Words?
 Aspose.Words puede detectar varios tipos de protección, como NoProtection, ReadOnly, AllowOnlyRevisions, AllowOnlyComments y AllowOnlyFormFields.

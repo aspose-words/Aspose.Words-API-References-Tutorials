@@ -69,7 +69,7 @@ Bunu, arkadaşlarınızı bulmak için bir kalabalığı taramak gibi düşünü
 
 ## 3. Adım: Sekme Duraklarını Değiştirin
 
-Neden? Sihir yapılan yer burasıdır. Sekme duraklarını değiştirmek, İçindekiler Tablonuza daha temiz bir görünüm kazandırır.
+Neden? Sihrin gerçekleştiği yer burasıdır. Sekme duraklarını değiştirmek, İçindekiler Tablonuza daha temiz bir görünüm kazandırır.
 
 Nasıl? Mevcut sekme durağını kaldırın ve değiştirilmiş bir konuma yenisini ekleyin:
 
@@ -86,7 +86,7 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-Bu, oturma odanızdaki mobilyaları tam istediğiniz gibi olana kadar ayarlamaya benziyor. Mükemmellik için bu sekme duraklarını ayarlıyoruz.
+Bu, oturma odanızdaki mobilyaları tam istediğiniz gibi olana kadar ayarlamaya benzer. Mükemmellik için bu sekme duraklarını ayarlıyoruz.
 
 ## Adım 4: Değiştirilen Belgeyi Kaydedin
 
@@ -108,16 +108,16 @@ Aspose.Words for .NET kullanarak bir Word belgesindeki TOC sekme duraklarını d
 ## SSS'ler
 
 ### Farklı TOC düzeyleri için sekme duraklarını ayrı ayrı değiştirebilir miyim?
-Evet yapabilirsin! Sadece her bir TOC seviyesini (Toc1, Toc2, vb.) kontrol edin ve buna göre ayarlayın.
+Evet, yapabilirsin! Sadece her bir TOC seviyesini (Toc1, Toc2, vb.) kontrol edin ve buna göre ayarlayın.
 
 ### Belgemde birden fazla İçindekiler varsa ne olur?
 Kod, İçindekiler stilindeki tüm paragrafları tarar, böylece belgede bulunan tüm İçindekiler'i değiştirir.
 
-### Bir TOC girişine birden fazla sekme durağı eklemek mümkün mü?
- Kesinlikle! ayarlayarak gerektiği kadar sekme durağı ekleyebilirsiniz.`para.ParagraphFormat.TabStops` Toplamak.
+### Bir TOC girişine birden fazla sekme durağı eklemek mümkün müdür?
+ Kesinlikle! ayarlayarak gerektiği kadar sekme durağı ekleyebilirsiniz.`para.ParagraphFormat.TabStops` koleksiyon.
 
 ### Sekme durağı hizalamasını ve kılavuz stilini değiştirebilir miyim?
 Evet, yeni bir sekme durağı eklerken farklı hizalamalar ve lider stilleri belirtebilirsiniz.
 
 ### Aspose.Words for .NET'i kullanmak için lisansa ihtiyacım var mı?
- Evet, Aspose.Words for .NET'i deneme süresinin ötesinde kullanmak için geçerli bir lisansa ihtiyacınız var. Alabilirsin[geçici lisans](https://purchase.aspose.com/temporary-license/) veya[al bir tane](https://purchase.aspose.com/buy).
+ Evet, Aspose.Words for .NET'i deneme süresinin ötesinde kullanmak için geçerli bir lisansa ihtiyacınız var. Alabilirsin[geçici lisans](https://purchase.aspose.com/temporary-license/) veya[bir tane al](https://purchase.aspose.com/buy).

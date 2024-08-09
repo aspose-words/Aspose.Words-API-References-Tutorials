@@ -15,7 +15,7 @@ Aspose.Words for Java adalah API berbasis Java yang memberdayakan pengembang unt
 
 ## Menerapkan Gaya dan Font: Dasar-dasar
 
-### Mulai
+### Memulai
  Untuk memulai, Anda perlu menyiapkan lingkungan pengembangan Java dan mengunduh pustaka Aspose.Words untuk Java. Anda dapat menemukan tautan unduhan[Di Sini](https://releases.aspose.com/words/java/). Pastikan untuk menyertakan perpustakaan dalam proyek Anda.
 
 ### Membuat Dokumen

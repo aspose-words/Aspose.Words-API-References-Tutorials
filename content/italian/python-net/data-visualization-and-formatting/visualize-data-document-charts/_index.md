@@ -8,7 +8,7 @@ weight: 10
 url: /it/python-net/data-visualization-and-formatting/visualize-data-document-charts/
 ---
 
-## introduzione
+## Introduzione
 
 La visualizzazione dei dati è una tecnica potente per rendere le informazioni più accessibili e comprensibili. Grafici, grafici e diagrammi forniscono una rappresentazione visiva di set di dati complessi, consentendo ai lettori di identificare tendenze, modelli e approfondimenti a colpo d'occhio.
 

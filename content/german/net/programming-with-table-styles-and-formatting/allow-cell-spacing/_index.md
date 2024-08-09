@@ -29,7 +29,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-## Schritt für Schritt Anleitung
+## Schritt-für-Schritt-Anleitung
 
 Lassen Sie uns nun den Vorgang zum Zulassen von Zellenabständen in einer Tabelle in leicht verständliche Schritte aufschlüsseln.
 

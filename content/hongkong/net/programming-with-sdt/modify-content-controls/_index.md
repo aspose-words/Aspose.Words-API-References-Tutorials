@@ -15,7 +15,7 @@ url: /zh-hant/net/programming-with-sdt/modify-content-controls/
 
 在我們深入討論修改內容控制項的細節之前，請確保您具備以下條件：
 
-1. 已安裝 Aspose.Words for .NET：確保已安裝 Aspose.Words 程式庫。如果沒有，您可以[在這裡下載](https://releases.aspose.com/words/net/).
+1. 已安裝 Aspose.Words for .NET：確保已安裝 Aspose.Words 程式庫。如果沒有，你可以[在這裡下載](https://releases.aspose.com/words/net/).
 
 2. C# 基礎知識：本教學假設您熟悉基本的 C# 程式設計概念。
 

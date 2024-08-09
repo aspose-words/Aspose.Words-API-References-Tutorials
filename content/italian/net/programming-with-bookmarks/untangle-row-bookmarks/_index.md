@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-bookmarks/untangle-row-bookmarks/
 ---
-## introduzione
+## Introduzione
 
 Hai mai riscontrato una situazione in cui l'eliminazione di una riga in un documento Word tramite un segnalibro rovina altri segnalibri nelle righe adiacenti? Questo può essere incredibilmente frustrante, soprattutto quando si ha a che fare con tabelle complesse. Per fortuna, Aspose.Words per .NET offre una soluzione potente: districare i segnalibri di riga. 
 
@@ -17,7 +17,7 @@ Questa guida ti guiderà attraverso il processo di districare i segnalibri di ri
 
 Prima di immergerti, avrai bisogno di alcune cose:
 
-1.  Aspose.Words per .NET: questa libreria commerciale fornisce funzionalità per lavorare con documenti Word a livello di codice. 2. Puoi scaricare una versione di prova gratuita da[Link per scaricare](https://releases.aspose.com/words/net/) o acquistare una licenza da[acquistare](https://purchase.aspose.com/buy).
+1.  Aspose.Words per .NET: questa libreria commerciale fornisce funzionalità per lavorare con documenti Word a livello di codice. 2. Puoi scaricare una versione di prova gratuita da[collegamento per il download](https://releases.aspose.com/words/net/) o acquistare una licenza da[acquistare](https://purchase.aspose.com/buy).
 3. Ambiente di sviluppo AC#: Visual Studio o qualsiasi altro IDE C# funzionerà perfettamente.
 4. Un documento Word con segnalibri di riga: utilizzeremo un documento di esempio denominato "Segnalibri colonna tabella.docx" a scopo dimostrativo.
 
@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "Table column bookmarks.docx");
 
 ## Passaggio 2: districare i segnalibri delle righe
 
- Qui è dove avviene la magia! IL`Untangle` la funzione si occupa di districare i segnalibri delle righe. Analizziamo le sue funzionalità:
+ È qui che avviene la magia! IL`Untangle` la funzione si occupa di districare i segnalibri delle righe. Analizziamo le sue funzionalità:
 
 ```csharp
 private void Untangle(Document doc)
@@ -65,7 +65,7 @@ private void Untangle(Document doc)
 Ecco una spiegazione passo passo di cosa fa il codice:
 
  Iteriamo attraverso tutti i segnalibri nel documento utilizzando a`foreach` ciclo continuo.
-Per ogni segnalibro, recuperiamo la riga madre sia dell'inizio del segnalibro (`bookmark.BookmarkStart`) e la fine del segnalibro (`bookmark.BookmarkEnd` ) usando il`GetAncestor` metodo.
+Per ogni segnalibro, recuperiamo la riga madre sia dell'inizio del segnalibro (`bookmark.BookmarkStart`) e la fine del segnalibro (`bookmark.BookmarkEnd` ) utilizzando il`GetAncestor` metodo.
 Controlliamo quindi se sono state trovate entrambe le righe (`row1 != null`E`row2 != null`) e se sono righe adiacenti (`row1.NextSibling == row2`). Ciò garantisce di modificare solo i segnalibri che si estendono su righe adiacenti.
 Se le condizioni sono soddisfatte, spostiamo il nodo finale del segnalibro alla fine dell'ultimo paragrafo nell'ultima cella della riga superiore (`row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd)`) districandoli efficacemente.
 
@@ -119,7 +119,7 @@ Ciò salva il documento con i segnalibri districati e tutte le righe cancellate 
 
 ### Aspose.Words per .NET è gratuito?
 
- Aspose.Words per .NET è una libreria commerciale con una versione di prova gratuita disponibile. Puoi scaricarlo da[Link per scaricare](https://releases.aspose.com/words/net/).
+ Aspose.Words per .NET è una libreria commerciale con una versione di prova gratuita disponibile. Puoi scaricarlo da[collegamento per il download](https://releases.aspose.com/words/net/).
 
 ### Posso districare manualmente i segnalibri di riga in Word?
 

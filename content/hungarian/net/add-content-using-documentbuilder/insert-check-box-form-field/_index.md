@@ -18,7 +18,7 @@ Mielőtt belemerülnénk az apró kavicsba, győződjünk meg arról, hogy minde
 - Fejlesztési környezet: Egy olyan IDE, mint a Visual Studio lesz a játszótere.
 - A C# alapvető ismerete: Bár mindent részletesen leírunk, a C# alapszintű ismerete előnyös lesz.
 
-Tekerésre készen állsz? Kezdjük el!
+Tekerésre készen állsz? Kezdjük is!
 
 ## A szükséges névterek importálása
 
@@ -88,7 +88,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertCheckBoxFormField.docx"
 
 ## Következtetés
 
-Gratulálunk! Sikeresen beszúrt egy jelölőnégyzet űrlapmezőt egy Word-dokumentumba az Aspose.Words for .NET használatával. Ezekkel a lépésekkel mostantól interaktív dokumentumokat hozhat létre, amelyek fokozzák a felhasználók elkötelezettségét és az adatgyűjtést. Az Aspose.Words for .NET ereje végtelen lehetőségeket nyit meg a dokumentumok automatizálásában és testreszabásában.
+Gratulálok! Sikeresen beszúrt egy jelölőnégyzet űrlapmezőt egy Word-dokumentumba az Aspose.Words for .NET használatával. Ezekkel a lépésekkel mostantól interaktív dokumentumokat hozhat létre, amelyek fokozzák a felhasználók elkötelezettségét és az adatgyűjtést. Az Aspose.Words for .NET ereje végtelen lehetőségeket nyit meg a dokumentumok automatizálásában és testreszabásában.
 
 ## GYIK
 

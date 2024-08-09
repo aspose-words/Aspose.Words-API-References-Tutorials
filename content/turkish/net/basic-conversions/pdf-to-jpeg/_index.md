@@ -36,7 +36,7 @@ Neyse gelelim işin eğlenceli kısmına! Süreci takip edilmesi kolay adımlara
 Koda dalmadan önce projenizi ayarlamanız gerekir. İşte nasıl:
 
 1. Visual Studio'yu açın: Visual Studio'yu başlatıp yeni bir C# projesi oluşturarak başlayın.
-2.  Aspose.Words'ü yükleyin: Aspose.Words for .NET'i yüklemek için NuGet Paket Yöneticisini kullanın. Bulabilirsin[Burada](https://releases.aspose.com/words/net/).
+2.  Aspose.Words'ü yükleyin: Aspose.Words for .NET'i yüklemek için NuGet Paket Yöneticisini kullanın. Onu bulabilirsin[Burada](https://releases.aspose.com/words/net/).
 
 ```shell
 Install-Package Aspose.Words
@@ -74,7 +74,7 @@ PDF'miz yüklendiğinde dönüşümü gerçekleştirme zamanı geldi. Bu adım �
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak PDF'yi JPEG'e dönüştürmek çok kolaydır. Yalnızca birkaç satır kodla belgelerinizi dönüştürebilir ve olasılıklar dünyasının kapılarını açabilirsiniz. İster iş akışınızı kolaylaştırmak isteyen bir geliştirici olun, ister yalnızca kodlarla uğraşmayı seven biri olun, Aspose.Words size yardımcı olacaktır.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak PDF'yi JPEG'e dönüştürmek çok kolaydır. Yalnızca birkaç satır kodla belgelerinizi dönüştürebilir ve olasılıklar dünyasının kapılarını açabilirsiniz. İster iş akışınızı kolaylaştırmak isteyen bir geliştirici olun, ister yalnızca kodlarla uğraşmayı seven biri olun, Aspose.Words size yardımcı olacaktır.
 
 ## SSS'ler
 
@@ -85,10 +85,10 @@ Kesinlikle! Bir PDF dizininde dolaşabilir ve her birini JPEG'e dönüştürebil
 Evet öyle! PDF'lerinizi PNG, BMP ve daha fazlası olarak kaydedebilirsiniz.
 
 ### Aspose.Words .NET Core ile uyumlu mu?
-Gerçekten öyle. Aspose.Words hem .NET Framework'ü hem de .NET Core'u destekler.
+Gerçekten de öyle. Aspose.Words hem .NET Framework'ü hem de .NET Core'u destekler.
 
 ### Aspose.Words'ü kullanmak için lisansa ihtiyacım var mı?
  Ücretsiz deneme alabilirsiniz[Burada](https://releases.aspose.com/) veya bir lisans satın alın[Burada](https://purchase.aspose.com/buy).
 
 ### Aspose.Words hakkında daha fazla eğitimi nerede bulabilirim?
- Kontrol et[dokümantasyon](https://reference.aspose.com/words/net/) Çok sayıda öğretici ve kılavuz için.
+ Şuna göz atın:[dokümantasyon](https://reference.aspose.com/words/net/) Çok sayıda öğretici ve kılavuz için.

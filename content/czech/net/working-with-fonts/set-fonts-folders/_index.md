@@ -2,80 +2,104 @@
 title: Nastavte složky písem
 linktitle: Nastavte složky písem
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Podrobný průvodce nastavením složek písem při vykreslování dokumentu pomocí Aspose.Words for .NET.
+description: Naučte se, jak nastavit vlastní složky písem v Aspose.Words pro .NET pomocí tohoto komplexního průvodce krok za krokem. Ideální pro vývojáře, kteří chtějí vylepšit písma dokumentů.
 type: docs
 weight: 10
 url: /cs/net/working-with-fonts/set-fonts-folders/
 ---
+## Zavedení
 
-V tomto tutoriálu vás provedeme krok za krokem procesem nastavení složek písem při vykreslování dokumentu pomocí Aspose.Words for .NET. Vysvětlíme vám přibalený zdrojový kód C# a poskytneme vám komplexního průvodce, který vám pomůže pochopit a implementovat tuto funkci ve vašich vlastních projektech. Na konci tohoto tutoriálu budete vědět, jak určit složky písem, které se mají použít při vykreslování dokumentů pomocí Aspose.Words for .NET.
+Ahoj! Jste připraveni ponořit se do světa vlastních písem v Aspose.Words pro .NET? Začněme. Tento tutoriál vás provede procesem nastavení vlastních složek písem a zajistí, že vaše dokumenty budou vypadat přesně tak, jak chcete. Ať už jste zkušený vývojář nebo teprve začínáte, tento průvodce vás provede každým krokem. Tak, pojďme, aby ty fonty vypadaly báječně!
 
-## Krok 1: Definujte adresář dokumentů
-Nejprve musíte nastavit cestu k adresáři dokumentů. Toto je umístění, kam chcete uložit upravený vykreslený dokument. Nahraďte "VAŠE ADRESÁŘ DOKUMENTŮ" příslušnou cestou.
+## Předpoklady
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Než se do toho pustíme, ujistěte se, že máte vše, co potřebujete:
 
-## Krok 2: Nastavte zdroje písem
- Poté můžete nastavit zdroje písem pomocí`FontSettings.DefaultInstance` třída a`SetFontsSources()` metoda. V tomto příkladu používáme jak zdroj systémových písem, tak zdroj písem vlastní složky. Nezapomeňte upravit cestu ke složce vlastních písem podle svých potřeb.
+-  Aspose.Words pro .NET: Můžete[stáhnout](https://releases.aspose.com/words/net/) pokud jste to ještě neudělali.
+- Visual Studio: Bude fungovat jakákoli verze, ale nejnovější je vždy nejlepší.
+- Dokument: Pro tento tutoriál použijeme dokument aplikace Word. Můžete si vytvořit vlastní nebo použít existující.
+- Vlastní písma: Připravte si vlastní písma. Použijeme je k ukázce, jak nastavit složky písem.
 
-```csharp
-FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
-{
-new SystemFontSource(),
-new FolderFontSource("C:\\MyFonts\\", true)
-});
-```
+## Importovat jmenné prostory
 
-## Krok 3: Načtěte dokument k vykreslení
- Nyní můžete načíst dokument k vykreslení pomocí`Document` třída. Ujistěte se, že jste zadali správnou cestu dokumentu.
+Nejprve importujme potřebné jmenné prostory. To je nezbytné pro přístup ke třídám a metodám, které potřebujeme z Aspose.Words.
 
 ```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Krok 4: Uložte vykreslený dokument
- Nakonec můžete vykreslený dokument uložit do souboru pomocí`Save()` metoda`Document` třída. Ujistěte se, že jste zadali správnou cestu a název souboru.
+Po importu těchto jmenných prostorů jsme připraveni začít nastavovat naše vlastní složky písem.
 
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
-```
+## Krok 1: Definujte svůj adresář dokumentů
 
-### Ukázkový zdrojový kód pro složky Set Fonts pomocí Aspose.Words pro .NET 
+ Začněme definováním cesty k adresáři s dokumenty. Zde je uložen váš dokument aplikace Word. Budeme používat proměnnou tzv`dataDir` pro uložení této cesty.
+
 ```csharp
 // Cesta k vašemu adresáři dokumentů
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+ Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k vašemu adresáři. To je zásadní, protože Aspose.Words bude muset vědět, kde najde váš dokument.
+
+## Krok 2: Nastavte zdroje písem
+
+ Dále musíme nastavit zdroje písem. Zde říkáme Aspose.Words, kde najdou naše vlastní písma. Budeme používat`FontSettings.DefaultInstance.SetFontsSources` způsob, jak toho dosáhnout.
+
+```csharp
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
 {
 	new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true)
 });
+```
+
+Zde je to, co děláme:
+
+- SystemFontSource: Toto říká Aspose.Words, aby použilo výchozí fonty systému.
+-  FolderFontSource: Zde určujeme složku obsahující naše vlastní písma. Nahradit`"C:\\MyFonts\\"` s cestou k vašemu adresáři vlastních písem. The`true` Parametr označuje, že by měly být zahrnuty také podadresáře.
+
+## Krok 3: Vložte svůj dokument
+
+Nyní, když jsme nastavili zdroje písem, je čas načíst dokument, se kterým chceme pracovat. Použijeme`Document` třída z Aspose.Slova k tomu.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+ Zajistěte to`"Rendering.docx"` je název vašeho dokumentu aplikace Word. Pokud má váš dokument jiný název, nezapomeňte jej odpovídajícím způsobem aktualizovat.
+
+## Krok 4: Uložte dokument jako PDF
+
+ Nakonec uložme náš dokument jako PDF, abychom viděli vlastní písma v akci. Použijeme`Save` metoda`Document` třída.
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 ```
 
+Tím se váš dokument uloží jako PDF do určeného adresáře s použitím vlastních písem, která jsme nastavili dříve.
+
 ## Závěr
-tomto tutoriálu jsme se naučili, jak nastavit složky písem při vykreslování dokumentu pomocí Aspose.Words for .NET. Podle tohoto podrobného průvodce můžete snadno určit zdroje písem, které se mají použít při vykreslování dokumentů. Aspose.Words nabízí výkonné a flexibilní API pro zpracování textu s písmy ve vašich dokumentech. S těmito znalostmi můžete ovládat a přizpůsobovat zdroje písem používané při vykreslování dokumentů podle vašich specifických potřeb.
 
-### FAQ
+A tady to máte! Úspěšně jste nastavili vlastní složky písem v Aspose.Words pro .NET a uložili dokument jako PDF s těmito vlastními písmy. Docela cool, že? Přizpůsobení písem může výrazně změnit vzhled vašich dokumentů a nyní přesně víte, jak na to. Šťastné kódování!
 
-#### Otázka: Jak mohu nakonfigurovat složky písem v dokumentu aplikace Word pomocí Aspose.Words?
+## FAQ
 
-Odpověď: Chcete-li konfigurovat složky písem v dokumentu aplikace Word pomocí Aspose.Words, můžete použít rozhraní API k určení vlastních složek písem, které se mají použít při generování nebo úpravách dokumentu. To umožní Wordu najít písma potřebná ke správnému vykreslení.
+### Jak nainstaluji Aspose.Words for .NET?
 
-#### Otázka: Je možné přidávat vlastní písma do dokumentu aplikace Word pomocí Aspose.Words?
+ Můžete[stáhnout](https://releases.aspose.com/words/net/) nejnovější verzi Aspose.Words pro .NET z webu.
 
-Odpověď: Ano, pomocí Aspose.Words můžete do dokumentu aplikace Word přidat vlastní písma. Rozhraní API vám umožňuje vložit konkrétní písma do dokumentu a zajistit, že se zobrazí správně, i když písma nejsou nainstalována v systému koncového uživatele.
+### Mohu použít více vlastních složek písem?
 
-#### Otázka: Co se stane, když v dokumentu aplikace Word chybí požadovaná písma?
+ Ano, můžete přidat více`FolderFontSource` instance k`SetFontsSources`metoda pro použití písem z různých adresářů.
 
-Odpověď: Pokud v dokumentu aplikace Word chybí požadovaná písma, Aspose.Words dokáže tento problém detekovat a poskytnout vám možnosti, jak jej opravit. Můžete se rozhodnout nahradit chybějící písma alternativními písmy nebo zahrnout chybějící písma do dokumentu, což zajistí správné zobrazení.
+### Je nutné zahrnout systémová písma?
 
-#### Otázka: Jak mohu odstranit vlastní písma z dokumentu aplikace Word pomocí Aspose.Words?
+Zahrnutí systémových písem je volitelné, ale doporučuje se, aby byla zajištěna dostupnost všech standardních písem.
 
-Odpověď: Chcete-li odebrat vlastní písma z dokumentu aplikace Word pomocí Aspose.Words, můžete použít rozhraní API k vyčištění dokumentu a odstranění vlastních písem, která již nejsou potřeba. Tím se zmenší velikost souboru a usnadní se správa písem.
+### Jaké typy souborů podporuje Aspose.Words?
 
-#### Otázka: Je důležité konfigurovat složky písem v dokumentu aplikace Word?
+Aspose.Words podporuje širokou škálu formátů souborů, včetně DOCX, DOC, PDF, TXT, HTML a mnoha dalších.
 
-Odpověď: Ano, je důležité nakonfigurovat složky písem v dokumentu aplikace Word, abyste zajistili správné zobrazení použitých písem. Zadáním vlastních složek písem pro použití s Aspose.Words zajistíte, že budou k dispozici požadovaná písma pro správné vykreslení dokumentů aplikace Word.
+### Jak mohu získat dočasnou licenci pro Aspose.Words?
+
+ Můžete získat a[dočasná licence](https://purchase.aspose.com/temporary-license/) z webu Aspose, abyste mohli vyzkoušet všechny funkce Aspose.Words.

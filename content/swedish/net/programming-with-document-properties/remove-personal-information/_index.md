@@ -9,7 +9,7 @@ url: /sv/net/programming-with-document-properties/remove-personal-information/
 ---
 ## Introduktion
 
-Hallå där! Har du någonsin sett dig själv att drunkna i dokumenthanteringsuppgifter? Vi har alla varit där. Oavsett om du har att göra med kontrakt, rapporter eller bara det dagliga arbetet med pappersarbete, är det en livräddare att ha ett verktyg som förenklar processen. Ange Aspose.Words för .NET. Denna pärla av ett bibliotek låter dig automatisera dokumentskapande, manipulation och konvertering som ett proffs. Idag går vi igenom en superhändig funktion: att ta bort personlig information från ett dokument. Låt oss dyka in!
+Hej där! Har du någonsin sett dig själv att drunkna i dokumenthanteringsuppgifter? Vi har alla varit där. Oavsett om du har att göra med kontrakt, rapporter eller bara det dagliga arbetet med pappersarbete, är det en livräddare att ha ett verktyg som förenklar processen. Ange Aspose.Words för .NET. Denna pärla av ett bibliotek låter dig automatisera dokumentskapande, manipulation och konvertering som ett proffs. Idag går vi igenom en superhändig funktion: att ta bort personlig information från ett dokument. Låt oss dyka in!
 
 ## Förutsättningar
 
@@ -76,7 +76,7 @@ Personlig information inkluderar författarnamn, dokumentegenskaper och annan me
 
 ### Är Aspose.Words för .NET gratis?
 
- Aspose.Words erbjuder en[gratis provperiod](https://releases.aspose.com/) så du kan testa det, men du måste köpa en licens för full funktionalitet. Kolla in[prissättning](https://purchase.aspose.com/buy) för mer detaljer.
+ Aspose.Words erbjuder en[gratis provperiod](https://releases.aspose.com/) så du kan testa det, men du måste köpa en licens för full funktionalitet. Kolla in[prissättning](https://purchase.aspose.com/buy) för mer information.
 
 ### Kan jag använda Aspose.Words för andra dokumentformat?
 
@@ -88,4 +88,4 @@ Absolut! Aspose.Words stöder en mängd olika format inklusive DOCX, PDF, HTML o
 
 ### Vilka andra funktioner erbjuder Aspose.Words?
 
-Aspose.Words är fullproppad med funktioner. Du kan skapa, redigera, konvertera och manipulera dokument på många olika sätt. För en fullständig lista, kolla in[dokumentation](https://reference.aspose.com/words/net/).
+Aspose.Words är fullspäckad med funktioner. Du kan skapa, redigera, konvertera och manipulera dokument på många olika sätt. För en fullständig lista, kolla in[dokumentation](https://reference.aspose.com/words/net/).

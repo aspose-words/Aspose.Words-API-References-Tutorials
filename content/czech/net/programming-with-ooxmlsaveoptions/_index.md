@@ -9,7 +9,7 @@ url: /cs/net/programming-with-ooxmlsaveoptions/
 ---
 Výukové programy Aspose.Words for .NET o textovém zpracování s OOXMLSaveOptions poskytují podrobné pokyny pro manipulaci s možnostmi uložení OOXML ve vašich dokumentech. Tyto výukové programy vás provedou kroky přizpůsobení nastavení zálohování, jako je zpětná kompatibilita, komprese obrazu a manipulace s vloženými písmy. Naučíte se používat tyto možnosti k dosažení přesných výsledků zálohování optimalizovaných pro vaše specifické potřeby.
 
- Výukové programy vám také poskytují praktické příklady kódu, které ilustrují použití různých funkcí OOXMLSaveOptions. Naučíte se, jak určit možnosti uložení při vytváření nebo úpravě dokumentu aplikace Word pomocí metod, jako je např`CompatibilityOptions`, `ImageCompression` , a`ExportFontResources`. Výukové programy vám pomohou pochopit, jak tyto možnosti ovlivňují výstupní formát, a vybrat vhodná nastavení pro vaše projekty.
+ Výukové programy vám také poskytují praktické příklady kódu, které ilustrují použití různých funkcí OOXMLSaveOptions. Naučíte se, jak určit možnosti uložení při vytváření nebo úpravě dokumentu aplikace Word pomocí metod, jako je např`CompatibilityOptions`, `ImageCompression` a`ExportFontResources`. Výukové programy vám pomohou pochopit, jak tyto možnosti ovlivňují výstupní formát, a vybrat vhodná nastavení pro vaše projekty.
 
 Ať už chcete vytvářet dokumenty kompatibilní se staršími verzemi aplikace Word, zmenšovat velikost souborů komprimací obrázků nebo vkládat specifická písma, návody Aspose.Words for .NET na Words Processing s OOXMLSaveOptions vás tím vším provedou. nezbytné kroky. Budete moci plně využívat funkce ukládání OOXML a vytvářet profesionální a optimalizované dokumenty Wordu.
 

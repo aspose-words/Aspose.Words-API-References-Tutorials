@@ -52,7 +52,7 @@ Definiera sökvägen till din dokumentkatalog. Det är här ditt Word-dokument f
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din katalog.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din katalog.
 
 ### Steg 2.2: Ladda dokumentet
 Ladda ditt Word-dokument i projektet.
@@ -96,7 +96,7 @@ Grattis! Du har framgångsrikt exporterat Cid-URL:er för MHTML-resurser med Asp
 Att exportera Cid-URL:er för MHTML-resurser säkerställer att inbäddade resurser i din MHTML-fil är korrekt refererade, vilket förbättrar dokumentportabilitet och integritet.
 
 ### Kan jag anpassa utdataformatet ytterligare?
- Ja, Aspose.Words för .NET erbjuder omfattande anpassningsalternativ för att spara dokument. Referera till[dokumentation](https://reference.aspose.com/words/net/) för mer detaljer.
+ Ja, Aspose.Words för .NET erbjuder omfattande anpassningsalternativ för att spara dokument. Se till[dokumentation](https://reference.aspose.com/words/net/) för mer information.
 
 ### Behöver jag en licens för att använda Aspose.Words för .NET?
  Ja, du behöver en licens för att använda Aspose.Words för .NET. Du kan få en gratis provperiod[här](https://releases.aspose.com/) eller köp en licens[här](https://purchase.aspose.com/buy).

@@ -9,7 +9,7 @@ url: /nl/net/programming-with-document-properties/remove-personal-information/
 ---
 ## Invoering
 
-Hallo daar! Bent u ooit verdronken in documentbeheertaken? We hebben het allemaal weleens meegemaakt. Of u nu te maken heeft met contracten, rapporten of gewoon met de dagelijkse sleur van papierwerk: een tool die het proces vereenvoudigt, is een redder in nood. Voer Aspose.Words in voor .NET. Met dit juweeltje van een bibliotheek kunt u het maken, manipuleren en converteren van documenten als een professional automatiseren. Vandaag laten we je een superhandige functie zien: persoonlijke gegevens uit een document verwijderen. Laten we erin duiken!
+Hé daar! Bent u ooit verdronken in documentbeheertaken? We zijn er allemaal geweest. Of u nu te maken heeft met contracten, rapporten of gewoon met de dagelijkse sleur van papierwerk: een tool die het proces vereenvoudigt, is een redder in nood. Voer Aspose.Words in voor .NET. Met dit juweeltje van een bibliotheek kunt u het maken, manipuleren en converteren van documenten als een professional automatiseren. Vandaag laten we je een superhandige functie zien: persoonlijke gegevens uit een document verwijderen. Laten we erin duiken!
 
 ## Vereisten
 
@@ -76,7 +76,7 @@ Persoonlijke informatie omvat auteursnamen, documenteigenschappen en andere meta
 
 ### Is Aspose.Words voor .NET gratis?
 
- Aspose.Words biedt een[gratis proefperiode](https://releases.aspose.com/) u kunt het dus uitproberen, maar u moet een licentie aanschaffen voor de volledige functionaliteit. Bekijk de[prijzen](https://purchase.aspose.com/buy) voor meer details.
+ Aspose.Words biedt een[gratis proefperiode](https://releases.aspose.com/) u kunt het dus uitproberen, maar u moet een licentie aanschaffen voor de volledige functionaliteit. Bekijk de[prijzen](https://purchase.aspose.com/buy) voor meer informatie.
 
 ### Kan ik Aspose.Words voor andere documentformaten gebruiken?
 
@@ -84,7 +84,7 @@ Absoluut! Aspose.Words ondersteunt verschillende formaten, waaronder DOCX, PDF, 
 
 ### Hoe krijg ik ondersteuning als ik problemen tegenkom?
 
- U kunt de Aspose.Words bezoeken[Helpforum](https://forum.aspose.com/c/words/8) voor hulp bij eventuele problemen of vragen die u heeft.
+ U kunt de Aspose.Words bezoeken[ondersteuningsforum](https://forum.aspose.com/c/words/8) voor hulp bij eventuele problemen of vragen die u heeft.
 
 ### Welke andere functies biedt Aspose.Words?
 

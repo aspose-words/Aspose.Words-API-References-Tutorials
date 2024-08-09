@@ -15,7 +15,7 @@ Pernah bertanya-tanya bagaimana cara melacak properti waktu terakhir yang disimp
 
 Sebelum kita masuk ke panduan langkah demi langkah, ada beberapa hal yang Anda perlukan:
 
-1.  Aspose.Words for .NET: Pastikan Anda telah menginstal Aspose.Words for .NET. Jika belum, Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Pastikan Anda telah menginstal Aspose.Words for .NET. Jika belum, Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Lingkungan pengembangan seperti Visual Studio.
 3. Pengetahuan Dasar C#: Memahami dasar-dasar pemrograman C# akan sangat membantu.
 

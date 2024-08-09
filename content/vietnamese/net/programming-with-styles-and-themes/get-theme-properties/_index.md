@@ -48,7 +48,7 @@ Document doc = new Document();
 
 ## Bước 2: Truy cập đối tượng chủ đề
 
- Khi bạn đã có đối tượng tài liệu của mình, bước tiếp theo là truy cập chủ đề của nó. Các`Theme` tài sản của`Document`lớp cung cấp quyền truy cập vào các cài đặt chủ đề khác nhau.
+ Khi bạn đã có đối tượng tài liệu của mình, bước tiếp theo là truy cập chủ đề của nó. các`Theme` tài sản của`Document`lớp cung cấp quyền truy cập vào các cài đặt chủ đề khác nhau.
 
 ```csharp
 Aspose.Words.Themes.Theme theme = doc.Theme;
@@ -64,7 +64,7 @@ Các chủ đề trong tài liệu Word thường bao gồm cài đặt cho các
 Console.WriteLine(theme.MajorFonts.Latin);
 ```
 
- Các`MajorFonts` thuộc tính cung cấp quyền truy cập vào các cài đặt phông chữ chính. Trong ví dụ này, chúng tôi đang truy xuất cụ thể phông chữ Latinh được sử dụng trong chủ đề. Bạn có thể sử dụng mã tương tự để có được các phông chữ chính khác như phông chữ Đông Á hoặc Chữ viết phức tạp.
+ các`MajorFonts` thuộc tính cung cấp quyền truy cập vào các cài đặt phông chữ chính. Trong ví dụ này, chúng tôi đang truy xuất cụ thể phông chữ Latinh được sử dụng trong chủ đề. Bạn có thể sử dụng mã tương tự để có được các phông chữ chính khác như phông chữ Đông Á hoặc Chữ viết phức tạp.
 
 ## Bước 4: Truy xuất phông chữ nhỏ
 
@@ -84,7 +84,7 @@ Chủ đề cũng xác định nhiều màu sắc khác nhau được sử dụn
 Console.WriteLine(theme.Colors.Accent1);
 ```
 
- Các`Colors` tài sản của`Theme` class cho phép bạn truy xuất các điểm nhấn màu khác nhau được xác định trong chủ đề, cho phép bạn quản lý và áp dụng các cách phối màu nhất quán trong tài liệu của mình.
+ các`Colors` tài sản của`Theme` class cho phép bạn truy xuất các điểm nhấn màu khác nhau được xác định trong chủ đề, cho phép bạn quản lý và áp dụng các cách phối màu nhất quán trong tài liệu của mình.
 
 ## Phần kết luận
 

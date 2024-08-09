@@ -50,7 +50,7 @@ doc.FirstSection.Remove();
 
 ## 結論
 
- Word文書をプログラムで操作すると、時間と労力を大幅に節約できます。Aspose.Words for .NETを使用すると、セクションの削除などの作業が簡単になります。[ドキュメンテーション](https://reference.aspose.com/words/net/)さらに強力な機能をアンロックします。コーディングを楽しんでください!
+ Word文書をプログラムで操作すると、時間と労力を大幅に節約できます。Aspose.Words for .NETを使用すると、セクションの削除などの作業が簡単になります。[ドキュメント](https://reference.aspose.com/words/net/)さらに強力な機能をアンロックします。コーディングを楽しんでください!
 
 ## よくある質問
 

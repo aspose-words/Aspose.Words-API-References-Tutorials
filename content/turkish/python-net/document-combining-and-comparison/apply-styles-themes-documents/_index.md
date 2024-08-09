@@ -151,13 +151,13 @@ Aspose.Words for Python'u kullanarak stil ve tema uygulamak, görsel olarak çek
 
 ### Aspose.Words for Python'u nasıl indirebilirim?
 
- Aspose.Words for Python'u web sitesinden indirebilirsiniz:[İndirme: {link](https://releases.aspose.com/words/python/).
+ Aspose.Words for Python'u web sitesinden indirebilirsiniz:[İndirme Bağlantısı](https://releases.aspose.com/words/python/).
 
 ### Kendi özel stillerimi oluşturabilir miyim?
 
 Kesinlikle! Aspose.Words for Python, benzersiz marka kimliğinizi yansıtan özel stiller oluşturmanıza olanak tanır.
 
-### Belge stiline yönelik bazı pratik kullanım durumları nelerdir?
+### Belge stiline yönelik bazı pratik kullanım örnekleri nelerdir?
 
 Belge stili, markalı raporlar oluşturma, özgeçmiş tasarlama ve akademik makaleleri biçimlendirme gibi çeşitli senaryolarda uygulanabilir.
 

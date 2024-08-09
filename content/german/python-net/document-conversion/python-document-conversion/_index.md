@@ -16,7 +16,7 @@ In der Welt des Informationsaustauschs spielen Dokumente eine entscheidende Roll
 
 ### Was ist Dokumentkonvertierung?
 
-Unter Dokumentkonvertierung versteht man den Prozess der Konvertierung von Dateien von einem Format in ein anderes, ohne den Inhalt zu verändern. Dies ermöglicht nahtlose Übergänge zwischen verschiedenen Dateitypen, wie Word-Dokumenten, PDFs und mehr. Diese Flexibilität stellt sicher, dass Benutzer unabhängig von der verwendeten Software auf Dateien zugreifen, diese anzeigen und bearbeiten können.
+Unter Dokumentkonvertierung versteht man den Prozess der Konvertierung von Dateien von einem Format in ein anderes, ohne den Inhalt zu verändern. Sie ermöglicht nahtlose Übergänge zwischen verschiedenen Dateitypen, wie Word-Dokumenten, PDFs und mehr. Diese Flexibilität stellt sicher, dass Benutzer unabhängig von der Software, die sie verwenden, auf Dateien zugreifen, sie anzeigen und bearbeiten können.
 
 ### Die Bedeutung der Dokumentkonvertierung
 

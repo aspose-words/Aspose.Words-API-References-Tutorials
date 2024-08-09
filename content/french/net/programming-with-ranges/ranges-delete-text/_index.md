@@ -79,7 +79,7 @@ doc.Save(dataDir + "WorkingWithRangesDeleteText.ModifiedDocument.docx");
 
 ## Conclusion
 
-Toutes nos félicitations! Vous venez d'apprendre à supprimer du texte d'une plage dans un document Word à l'aide d'Aspose.Words pour .NET. Ce didacticiel a couvert la configuration de votre répertoire de projet, le chargement d'un document, la suppression de texte d'une section spécifique et l'enregistrement du document modifié. Aspose.Words for .NET fournit un ensemble robuste d'outils pour la manipulation de documents Word, et ce n'est que la pointe de l'iceberg.
+Félicitations! Vous venez d'apprendre à supprimer du texte d'une plage dans un document Word à l'aide d'Aspose.Words pour .NET. Ce didacticiel a couvert la configuration de votre répertoire de projet, le chargement d'un document, la suppression de texte d'une section spécifique et l'enregistrement du document modifié. Aspose.Words for .NET fournit un ensemble robuste d'outils pour la manipulation de documents Word, et ce n'est que la pointe de l'iceberg.
 
 ## FAQ
 

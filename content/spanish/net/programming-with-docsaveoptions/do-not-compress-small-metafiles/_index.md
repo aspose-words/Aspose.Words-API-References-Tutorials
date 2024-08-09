@@ -2,7 +2,7 @@
 title: No comprimir metarchivos pequeños
 linktitle: No comprimir metarchivos pequeños
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a utilizar Aspose.Words para .NET para garantizar que los metarchivos pequeños en documentos de Word no se compriman y preserven su calidad e integridad. Guía paso a paso incluida.
+description: Aprenda a utilizar Aspose.Words para .NET para garantizar que los metarchivos pequeños en documentos de Word no se compriman, preservando su calidad e integridad. Guía paso a paso incluida.
 type: docs
 weight: 10
 url: /es/net/programming-with-docsaveoptions/do-not-compress-small-metafiles/
@@ -18,7 +18,7 @@ Antes de comenzar, asegúrese de tener lo siguiente:
 -  Aspose.Words para .NET: descargue e instale la última versión desde[aquí](https://releases.aspose.com/words/net/).
 - Entorno de desarrollo: Visual Studio o cualquier otro IDE compatible.
 - Comprensión básica de C#: familiaridad con el lenguaje de programación C# y el marco .NET.
--  Licencia Aspose: Para desbloquear todo el potencial de Aspose.Words, considere obtener una[licencia](https://purchase.aspose.com/buy) . También puedes usar un[licencia temporal](https://purchase.aspose.com/temporary-license/) Para evaluar.
+-  Licencia Aspose: Para desbloquear todo el potencial de Aspose.Words, considere obtener una[licencia](https://purchase.aspose.com/buy) . También puedes usar un[licencia temporal](https://purchase.aspose.com/temporary-license/) para evaluación.
 
 ## Importar espacios de nombres
 
@@ -94,7 +94,7 @@ Sí, Aspose.Words para .NET le permite configurar opciones de guardado para vari
 
 ### ¿Necesito una licencia para usar Aspose.Words para .NET?
 
- Si bien puede utilizar Aspose.Words para .NET sin una licencia para evaluación, se requiere una licencia para desbloquear la funcionalidad completa. Puedes obtener una licencia[aquí](https://purchase.aspose.com/buy) usar un[licencia temporal](https://purchase.aspose.com/temporary-license/) Para evaluar.
+ Si bien puede utilizar Aspose.Words para .NET sin una licencia para evaluación, se requiere una licencia para desbloquear la funcionalidad completa. Puedes obtener una licencia[aquí](https://purchase.aspose.com/buy) usar un[licencia temporal](https://purchase.aspose.com/temporary-license/) para evaluación.
 
 ### ¿Cómo puedo asegurarme de que mis documentos cumplan con los estándares PDF/A?
 

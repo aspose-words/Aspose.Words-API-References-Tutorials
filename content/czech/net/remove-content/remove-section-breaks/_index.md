@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/remove-content/remove-section-breaks/
 ---
-## Úvod
+## Zavedení
 
 Odstranění zalomení oddílů v dokumentu aplikace Word může být trochu složité, ale s Aspose.Words pro .NET se to stane hračkou. V tomto komplexním průvodci vás provedeme procesem krok za krokem a zajistíme, že můžete efektivně odstranit konce oddílů a zefektivnit váš dokument. Ať už jste zkušený vývojář nebo teprve začínáte, tato příručka je navržena tak, aby byla poutavá, podrobná a snadno sledovatelná.
 
@@ -15,7 +15,7 @@ Odstranění zalomení oddílů v dokumentu aplikace Word může být trochu slo
 
 Než se pustíte do výukového programu, proberme si základy, které budete muset dodržovat:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Pokud jste jej ještě nenainstalovali, můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Pokud jste jej ještě nenainstalovali, můžete si jej stáhnout[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Potřebujete vývojové prostředí, jako je Visual Studio.
 3. Základní znalost C#: Vyžaduje se znalost programování v C#.
 4. Dokument aplikace Word: Připravte si dokument aplikace Word (.docx) s konce oddílů k úpravě.

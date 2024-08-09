@@ -9,7 +9,7 @@ url: /tr/net/programming-with-officemath/math-equations/
 ---
 ## giriiş
 
-Word belgelerindeki matematik denklemleri dünyasına dalmaya hazır mısınız? Bugün, Word dosyalarınızda matematiksel denklemler oluşturmak ve yapılandırmak için Aspose.Words for .NET'i nasıl kullanabileceğinizi keşfedeceğiz. İster öğrenci, ister öğretmen, ister sadece denklemlerle çalışmayı seven biri olun, bu kılavuz size her adımda yol gösterecektir. Devam etmeden önce her bir parçayı anlamanızı sağlamak için bunu takip edilmesi kolay bölümlere ayıracağız. Başlayalım!
+Word belgelerindeki matematik denklemleri dünyasına dalmaya hazır mısınız? Bugün, Word dosyalarınızda matematiksel denklemler oluşturmak ve yapılandırmak için Aspose.Words for .NET'i nasıl kullanabileceğinizi keşfedeceğiz. İster öğrenci, ister öğretmen, ister sadece denklemlerle çalışmayı seven biri olun, bu kılavuz size her adımda yol gösterecektir. Devam etmeden önce her bir parçayı anlamanızı sağlamak için bunu takip edilmesi kolay bölümlere ayıracağız. Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -81,7 +81,7 @@ doc.Save(dataDir + "WorkingWithOfficeMath.MathEquations.docx");
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesinde matematiksel denklemleri başarıyla yapılandırdınız. Bu basit adımları izleyerek denklemlerin görünümünü ve hizalamasını ihtiyaçlarınıza uyacak şekilde özelleştirebilirsiniz. İster bir matematik ödevi hazırlıyor olun, ister bir araştırma makalesi yazıyor olun, ister eğitim materyalleri oluşturuyor olun, Aspose.Words for .NET, Word belgelerindeki denklemlerle çalışmayı kolaylaştırır.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesinde matematiksel denklemleri başarıyla yapılandırdınız. Bu basit adımları izleyerek denklemlerin görünümünü ve hizalamasını ihtiyaçlarınıza uyacak şekilde özelleştirebilirsiniz. İster bir matematik ödevi hazırlıyor olun, ister bir araştırma makalesi yazıyor olun, ister eğitim materyalleri oluşturuyor olun, Aspose.Words for .NET, Word belgelerindeki denklemlerle çalışmayı kolaylaştırır.
 
 ## SSS'ler
 

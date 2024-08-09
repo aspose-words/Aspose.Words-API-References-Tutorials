@@ -65,4 +65,4 @@ Aspose.Words는 성능에 최적화되어 있으며 대용량 텍스트 파일�
 예, Aspose.Words API를 사용하여 여러 텍스트 파일을 일괄 처리하여 문서 변환 작업을 간소화할 수 있습니다.
 
 ### Aspose.Words에 대한 추가 리소스와 지원은 어디서 찾을 수 있나요?
- 방문하다[Aspose.Words 문서](https://reference.aspose.com/words/net/)그리고[지원 포럼](https://forum.aspose.com/c/words/8) 더 많은 정보와 도움을 원하시면.
+ 방문[Aspose.Words 문서](https://reference.aspose.com/words/net/)그리고[지원 포럼](https://forum.aspose.com/c/words/8) 더 많은 정보와 도움을 원하시면.

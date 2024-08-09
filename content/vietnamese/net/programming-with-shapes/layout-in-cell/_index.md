@@ -15,10 +15,10 @@ Nếu bạn từng muốn tinh chỉnh bố cục các ô bảng trong tài li�
 
 Trước khi chúng ta chuyển sang mã, hãy đảm bảo bạn có mọi thứ mình cần:
 
-1.  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt thư viện Aspose.Words for .NET. Nếu chưa, bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt thư viện Aspose.Words for .NET. Nếu chưa, bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Bạn sẽ cần thiết lập môi trường phát triển với .NET. Visual Studio là một lựa chọn tuyệt vời nếu bạn đang tìm kiếm đề xuất.
 3. Kiến thức cơ bản về C#: Mặc dù tôi sẽ giải thích từng bước nhưng hiểu biết cơ bản về C# sẽ giúp bạn thực hiện dễ dàng hơn.
-4.  Thư mục Tài liệu: Chuẩn bị đường dẫn thư mục nơi bạn sẽ lưu tài liệu của mình. Chúng ta sẽ gọi điều này là`YOUR DOCUMENT DIRECTORY`.
+4.  Thư mục tài liệu: Chuẩn bị đường dẫn thư mục nơi bạn sẽ lưu tài liệu của mình. Chúng ta sẽ gọi điều này là`YOUR DOCUMENT DIRECTORY`.
 
 ## Nhập không gian tên
 
@@ -127,7 +127,7 @@ doc.Save(dataDir + "WorkingWithShapes.LayoutInCell.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã tạo thành công tài liệu Word với bố cục bảng tùy chỉnh và thêm hình mờ bằng Aspose.Words cho .NET. Hướng dẫn này nhằm mục đích cung cấp hướng dẫn rõ ràng, từng bước để giúp bạn hiểu từng phần của quy trình. Với những kỹ năng này, giờ đây bạn có thể tạo các tài liệu Word phức tạp và tùy chỉnh hơn theo chương trình.
+Và bạn có nó! Bạn đã tạo thành công tài liệu Word với bố cục bảng tùy chỉnh và thêm hình mờ bằng Aspose.Words cho .NET. Hướng dẫn này nhằm mục đích cung cấp hướng dẫn rõ ràng, từng bước để giúp bạn hiểu từng phần của quy trình. Với những kỹ năng này, giờ đây bạn có thể tạo các tài liệu Word phức tạp và tùy chỉnh hơn theo chương trình.
 
 ## Câu hỏi thường gặp
 

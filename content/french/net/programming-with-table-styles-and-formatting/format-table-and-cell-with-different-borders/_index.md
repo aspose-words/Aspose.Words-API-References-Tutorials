@@ -127,7 +127,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDi
 
 ## Conclusion
 
-Et voila! Vous venez d'apprendre à formater des tableaux et des cellules avec des bordures différentes à l'aide d'Aspose.Words pour .NET. En personnalisant les bordures des tableaux et l’ombrage des cellules, vous pouvez améliorer considérablement l’attrait visuel de vos documents. Alors n'hésitez plus, expérimentez différents styles et faites ressortir vos documents !
+Et voilà ! Vous venez d'apprendre à formater des tableaux et des cellules avec des bordures différentes à l'aide d'Aspose.Words pour .NET. En personnalisant les bordures des tableaux et l’ombrage des cellules, vous pouvez améliorer considérablement l’attrait visuel de vos documents. Alors n'hésitez plus, expérimentez différents styles et faites ressortir vos documents !
 
 ## FAQ
 

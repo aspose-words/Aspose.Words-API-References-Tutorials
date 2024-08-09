@@ -121,7 +121,7 @@ Aspose.Words voor .NET is een krachtige bibliotheek voor het programmatisch werk
 Ja, Aspose.Words voor .NET kan worden gebruikt met elke door .NET ondersteunde taal, inclusief C#, VB.NET en F#.
 
 ### Hoe kan ik ondersteuning krijgen voor Aspose.Words voor .NET?
- U kunt ondersteuning krijgen van de Aspose-gemeenschap en experts door naar de[Helpforum](https://forum.aspose.com/c/words/8).
+ U kunt ondersteuning krijgen van de Aspose-gemeenschap en experts door naar de[ondersteuningsforum](https://forum.aspose.com/c/words/8).
 
 ### Is er een proefversie van Aspose.Words voor .NET beschikbaar?
  Ja, u kunt een gratis proefperiode krijgen van[hier](https://releases.aspose.com/).

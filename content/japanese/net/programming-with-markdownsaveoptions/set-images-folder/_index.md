@@ -79,7 +79,7 @@ MarkdownSaveOptions saveOptions = new MarkdownSaveOptions
 
 ### 2.4 ドキュメントをMarkdownとして保存する
 
-使う`MemoryStream`ドキュメントを Markdown 形式で保存します。
+使用`MemoryStream`ドキュメントを Markdown 形式で保存します。
 
 ```csharp
 using (MemoryStream stream = new MemoryStream())
@@ -90,7 +90,7 @@ using (MemoryStream stream = new MemoryStream())
 
 ## 結論
 
-Aspose.Words for .NET を使用して、表のコンテンツの位置合わせを行った Word 文書を Markdown にエクスポートするのは、次の手順に従えば簡単です。数行のコードで、変換プロセスを自動化し、コンテンツが適切にフォーマットされるようにすることができます。これで、見栄えがよく、構造が維持されるので、Markdown 形式で文書を簡単に共有できます。
+Aspose.Words for .NET を使用して、表のコンテンツの位置合わせを行った Word 文書を Markdown にエクスポートするのは、次の手順に従えば簡単です。数行のコードで、変換プロセスを自動化し、コンテンツが適切にフォーマットされるようにすることができます。これで、見栄えがよく構造が維持されるので、Markdown 形式で文書を簡単に共有できます。
 
 ## よくある質問
 

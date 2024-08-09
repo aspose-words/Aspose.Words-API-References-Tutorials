@@ -34,7 +34,7 @@ Desbloqueie o poder do Aspose.Words for Java no manuseio de diversos formatos de
 ### [Otimizando o carregamento de documentos com opções HTML, RTF e TXT](./optimizing-document-loading-options/)
 Otimize o carregamento de documentos com Aspose.Words para Java. Melhore a velocidade e a eficiência de arquivos HTML, RTF e TXT. Aumente a experiência do usuário hoje!
 ### [Salvamento eficiente de documentos com opções de DOC, HTML e imagem](./efficient-document-saving-options/)
-Aprenda a salvar documentos de maneira eficiente com Aspose.Words para Java. Este guia passo a passo abrange opções de DOC, HTML e imagens, aprimorando suas habilidades de gerenciamento de documentos
+Aprenda a salvar documentos de maneira eficiente com Aspose.Words for Java. Este guia passo a passo abrange opções de DOC, HTML e imagens, aprimorando suas habilidades de gerenciamento de documentos
 ### [Dominando as configurações avançadas de salvamento de documentos](./mastering-advanced-save-settings/)
 Domine as configurações avançadas de salvamento de documentos com Aspose.Words para Java. Aprenda a formatar, proteger, otimizar e automatizar a criação de documentos sem esforço.
 ### [Manipulando o conteúdo do documento com limpeza, campos e dados XML](./manipulating-document-content/)

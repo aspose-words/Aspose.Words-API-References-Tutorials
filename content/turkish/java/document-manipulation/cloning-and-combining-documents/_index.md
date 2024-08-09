@@ -14,7 +14,7 @@ Bu eğitimde Aspose.Words for Java kullanarak belgelerin nasıl kopyalanıp birl
 
 ## Adım 1: Bir Belgeyi Klonlamak
 
- Aspose.Words for Java'da bir belgeyi kopyalamak için şunu kullanabilirsiniz:`deepClone()` yöntem. İşte basit bir örnek:
+ Aspose.Words for Java'da bir belgeyi kopyalamak için şunu kullanabilirsiniz:`deepClone()` Yöntem. İşte basit bir örnek:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Document.docx");
@@ -74,7 +74,7 @@ Aspose.Words for Java'da belgeleri klonlamak ve birleştirmek çeşitli teknikle
 
 ### Aspose.Words for Java'da bir belgeyi nasıl kopyalarım?
 
- Aspose.Words for Java'da bir belgeyi aşağıdaki komutu kullanarak kopyalayabilirsiniz:`deepClone()` yöntem. İşte bir örnek:
+ Aspose.Words for Java'da bir belgeyi aşağıdaki komutu kullanarak kopyalayabilirsiniz:`deepClone()` Yöntem. İşte bir örnek:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Document.docx");

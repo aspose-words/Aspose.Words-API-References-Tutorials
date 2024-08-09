@@ -13,6 +13,6 @@ Words Processing with Lists は、Aspose.Words for .NET ライブラリを使用
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [各セクションでリストを再開する](./restart-list-at-each-section/)  | Aspose.Words for .NET を使用して、Word 文書内の各セクションに番号付きリストをリセットする方法を学習します。 |
-| [リストレベルを指定する](./specify-list-level/) | Aspose.Words for .NET を使用して Word 文書のリスト レベルを指定する方法を学習します。 |
-| [再開リスト番号](./restart-list-number/) | Aspose.Words for .NET を使用して Word 文書内のリストの番号をリセットする方法を学習します。 |
+| [各セクションでリストを再開する](./restart-list-at-each-section/)  | Aspose.Words for .NET を使用して、Word 文書の各セクションでリストを再開する方法を学びます。詳細なステップバイステップ ガイドに従って、リストを効果的に管理します。 |
+| [リストレベルを指定する](./specify-list-level/) | Aspose.Words for .NET を使用して、Word 文書に複数レベルの番号付きリストと箇条書きリストを作成する方法を学びます。ステップ バイ ステップ ガイドが含まれています。.NET 開発者に最適です。 |
+| [再開リスト番号](./restart-list-number/) | Aspose.Words for .NET を使用して Word 文書のリスト番号を再開する方法を学びます。この 2,000 語の詳細なガイドには、セットアップから高度なカスタマイズまで、知っておく必要のあるすべての内容が記載されています。 |

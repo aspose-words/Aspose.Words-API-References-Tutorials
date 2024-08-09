@@ -1,6 +1,6 @@
 ---
-title: Uporządkowana lista
-linktitle: Uporządkowana lista
+title: Zamówiona lista
+linktitle: Zamówiona lista
 second_title: Aspose.Words API do przetwarzania dokumentów
 description: Dowiedz się, jak tworzyć uporządkowane listy w dokumentach programu Word za pomocą Aspose.Words dla .NET, korzystając z naszego przewodnika krok po kroku. Idealny do automatyzacji tworzenia dokumentów.
 type: docs
@@ -15,7 +15,7 @@ Zdecydowałeś się więc zagłębić w Aspose.Words dla .NET, aby programowo tw
 
 Zanim zagłębimy się w kod, potrzebujemy kilku rzeczy:
 
-1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowany Aspose.Words dla .NET. Jeśli nie, możesz go pobrać[Tutaj](https://releases.aspose.com/words/net/).
+1. Aspose.Words dla .NET: Upewnij się, że masz zainstalowany Aspose.Words dla .NET. Jeśli nie, możesz go pobrać[Tutaj](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: Visual Studio lub dowolne inne IDE kompatybilne z .NET.
 3. Podstawowa znajomość języka C#: Powinieneś znać podstawy języka C#, aby móc łatwo je opanować.
 
@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.Lists;
 ```
 
-Podzielmy kod na małe kroki i wyjaśnijmy każdą część. Gotowy? No to ruszamy!
+Podzielmy kod na małe kroki i wyjaśnijmy każdą część. Gotowy? Zaczynamy!
 
 ## Krok 1: Zainicjuj dokument
 
@@ -82,7 +82,7 @@ Programowe tworzenie uporządkowanej listy w dokumencie programu Word może pocz
 ## Często zadawane pytania
 
 ### Czy mogę dostosować styl numeracji listy?  
- Tak, możesz dostosować styl numeracji za pomocą`ListFormat` nieruchomości. Można ustawić różne style numerowania, takie jak cyfry rzymskie, litery itp.
+ Tak, możesz dostosować styl numeracji za pomocą`ListFormat`właściwości. Można ustawić różne style numerowania, takie jak cyfry rzymskie, litery itp.
 
 ### Jak dodać więcej poziomów wcięć?  
  Możesz skorzystać z`ListIndent` metodę wielokrotnie, aby utworzyć głębsze poziomy podlist. Każde wezwanie do`ListIndent` dodaje jeden poziom wcięcia.

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-charts/single-chart-data-point/
 ---
-## Úvod
+## Zavedení
 
 Přemýšleli jste někdy nad tím, jak můžete nechat své grafy vyskakovat pomocí jedinečných datových bodů? No, dnes je váš šťastný den! Ponoříme se do přizpůsobení jednoho datového bodu grafu pomocí Aspose.Words pro .NET. Připoutejte se na projížďku pomocí podrobného tutoriálu, který je nejen informativní, ale také zábavný a snadno sledovatelný.
 
@@ -40,7 +40,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Tady,`dataDir` je cesta k adresáři, kam uložíte dokument. The`DocumentBuilder` class pomáhá při vytváření dokumentu.
+ Zde,`dataDir` je cesta k adresáři, kam uložíte dokument. The`DocumentBuilder` class pomáhá při vytváření dokumentu.
 
 ## Krok 2: Vložte graf
 

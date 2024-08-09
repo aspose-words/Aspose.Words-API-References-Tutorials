@@ -115,4 +115,4 @@ Aspose.Words を使用すると、ドキュメントの複製が簡単になり�
 
 ### Aspose.Words for .NET に関するその他のチュートリアルはどこで見つかりますか?
 
-チェックしてください[ドキュメンテーション](https://reference.aspose.com/words/net/)そしてその[Aspose コミュニティ フォーラム](https://forum.aspose.com/c/words/8)さらなるリソースとサポートについては、こちらをご覧ください。
+チェックしてください[ドキュメント](https://reference.aspose.com/words/net/)そして[Aspose コミュニティ フォーラム](https://forum.aspose.com/c/words/8)さらなるリソースとサポートについては、こちらをご覧ください。

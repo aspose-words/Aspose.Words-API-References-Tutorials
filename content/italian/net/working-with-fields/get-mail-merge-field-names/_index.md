@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/working-with-fields/get-mail-merge-field-names/
 ---
-## introduzione
+## Introduzione
 
 Benvenuti in questa guida sull'estrazione dei nomi dei campi di stampa unione da un documento Word utilizzando Aspose.Words per .NET. Che tu stia generando lettere personalizzate, creando report personalizzati o semplicemente automatizzando i flussi di lavoro dei documenti, i campi della stampa unione sono essenziali. Fungono come segnaposto nel documento che vengono sostituiti con dati reali durante il processo di unione. Se lavori con Aspose.Words per .NET, sei fortunato: questa potente libreria semplifica incredibilmente l'interazione con questi campi. In questo tutorial, illustreremo un modo semplice ma efficace per recuperare i nomi dei campi di stampa unione in un documento, consentendoti di comprendere e gestire meglio le operazioni di stampa unione.
 
@@ -92,7 +92,7 @@ Questa riga di codice stampa il numero totale di campi di stampa unione nel docu
 
 Congratulazioni! Ora hai imparato come estrarre i nomi dei campi di stampa unione da un documento di Word utilizzando Aspose.Words per .NET. Questa tecnica è uno strumento prezioso per gestire e automatizzare i flussi di lavoro dei documenti, semplificando la gestione dei contenuti personalizzati. Seguendo questi passaggi è possibile identificare e utilizzare in modo efficiente i campi di stampa unione nei documenti.
 
- Se hai domande o hai bisogno di ulteriore assistenza, non esitare a esplorare il[Documentazione Aspose.Words](https://reference.aspose.com/words/net/) o unisciti a[Chiedi comunità](https://forum.aspose.com/c/words/8) per supporto. Buona programmazione!
+ Se hai domande o hai bisogno di ulteriore assistenza, non esitare a esplorare il[Documentazione Aspose.Words](https://reference.aspose.com/words/net/) o unisciti a[Chiedi comunità](https://forum.aspose.com/c/words/8) per il supporto. Buona programmazione!
 
 ## Domande frequenti
 

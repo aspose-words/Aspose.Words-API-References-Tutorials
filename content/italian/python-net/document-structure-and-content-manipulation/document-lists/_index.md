@@ -16,7 +16,7 @@ Gli elenchi sono disponibili in due tipi principali: puntati e numerati. Permett
 
 ## Impostazione dell'ambiente
 
-Prima di immergerci nella creazione e gestione degli elenchi, assicurati di avere installata la libreria Aspose.Words per Python. Puoi scaricarlo da[Qui](https://releases.aspose.com/words/python/) . Inoltre, fare riferimento alla documentazione API all'indirizzo[questo link](https://reference.aspose.com/words/python-net/) per informazioni dettagliate.
+Prima di immergerci nella creazione e gestione degli elenchi, assicurati di avere installata la libreria Aspose.Words per Python. Puoi scaricarlo da[Qui](https://releases.aspose.com/words/python/) . Inoltre, fare riferimento alla documentazione API all'indirizzo[questo collegamento](https://reference.aspose.com/words/python-net/) per informazioni dettagliate.
 
 ## Creazione di elenchi puntati
 
@@ -96,7 +96,7 @@ Gli elenchi possono avere più livelli, il che è utile per creare elenchi nidif
 
 Le sottoliste rappresentano un modo efficace per organizzare gerarchicamente le informazioni. Puoi aggiungere facilmente elenchi secondari utilizzando l'API Python Aspose.Words.
 
-## Conversione di testo semplice in elenchi
+## Conversione di testo normale in elenchi
 
 Se disponi di testo esistente che desideri convertire in elenchi, Aspose.Words Python fornisce metodi per analizzare e formattare il testo di conseguenza.
 
@@ -115,7 +115,7 @@ In questo tutorial, abbiamo esplorato come creare e gestire elenchi nei document
 ## Domande frequenti
 
 ### Come installo Aspose.Words per Python?
- È possibile scaricare la libreria da[questo link](https://releases.aspose.com/words/python/) e seguire le istruzioni di installazione fornite nella documentazione.
+ È possibile scaricare la libreria da[questo collegamento](https://releases.aspose.com/words/python/) e seguire le istruzioni di installazione fornite nella documentazione.
 
 ### Posso personalizzare lo stile di numerazione dei miei elenchi?
 Assolutamente! Aspose.Words Python ti consente di personalizzare formati di numerazione, stili di punti elenco e allineamento per adattare i tuoi elenchi alle tue esigenze specifiche.

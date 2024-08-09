@@ -8,7 +8,7 @@ weight: 10
 url: /zh-hant/net/apply-license/
 ---
 
-本頁面提供了有關如何在使用 Aspose.Words for .NET 的專案中套用授權的詳細指南。本教學逐步說明如何使用授權啟動Aspose.Words的所有功能。它還提供範例程式碼來說明許可過程。請按照本指南申請許可證並充分利用 .NET 應用程式中強大的 Aspose.Words 程式庫。
+本頁提供了有關如何在使用 Aspose.Words for .NET 的專案中應用授權的詳細指南。本教學逐步說明如何使用授權啟動Aspose.Words的所有功能。它還提供範例程式碼來說明許可過程。請按照本指南申請許可證並充分利用 .NET 應用程式中強大的 Aspose.Words 程式庫。
 
  ## 教學
 | 標題 | 描述 |

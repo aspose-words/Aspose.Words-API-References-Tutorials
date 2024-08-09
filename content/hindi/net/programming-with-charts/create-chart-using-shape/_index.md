@@ -86,7 +86,7 @@ doc.Save(dataDir + "WorkingWithCharts.CreateChartUsingShape.docx");
 
 ### क्या मैं अन्य प्रकार के चार्ट बनाने के लिए Aspose.Words for .NET का उपयोग कर सकता हूँ?
 
- हां, .NET के लिए Aspose.Words विभिन्न चार्ट प्रकारों का समर्थन करता है, जिसमें बार चार्ट, पाई चार्ट और बहुत कुछ शामिल है। आप दस्तावेज़ देख सकते हैं[यहाँ](https://reference.aspose.com/words/net/) अधिक जानकारी के लिए।
+ हां, .NET के लिए Aspose.Words विभिन्न चार्ट प्रकारों का समर्थन करता है, जिसमें बार चार्ट, पाई चार्ट और बहुत कुछ शामिल है। आप दस्तावेज़ देख सकते हैं[यहाँ](https://reference.aspose.com/words/net/) अधिक जानकारी के लिए.
 
 ### मैं खरीदने से पहले .NET के लिए Aspose.Words कैसे आज़मा सकता हूँ?
 

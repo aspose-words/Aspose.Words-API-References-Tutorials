@@ -44,7 +44,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## الخطوة 2: أدخل القاعدة الأفقية
 
- استخدم ال`InsertHorizontalRule()` طريقة`DocumentBuilder` فئة لإضافة قاعدة أفقية.
+ استخدم`InsertHorizontalRule()` طريقة`DocumentBuilder` فئة لإضافة قاعدة أفقية.
 
 ```csharp
 Shape shape = builder.InsertHorizontalRule();

@@ -13,7 +13,7 @@ Pernahkah Anda menemukan diri Anda terjerat dalam jaringan bidang di dokumen Wor
 
 ## Prasyarat
 
-Sebelum kita beralih ke perapalan ejaan, eh, pengkodean, ada beberapa hal yang perlu Anda siapkan. Anggap saja ini sebagai perangkat wizard Anda:
+Sebelum kita terjun ke perapalan ejaan, eh, pengkodean, ada beberapa hal yang perlu Anda siapkan. Anggap saja ini sebagai perangkat wizard Anda:
 
 -  Aspose.Words untuk .NET: Pastikan Anda telah menginstal perpustakaan. Anda bisa mendapatkannya dari[Di Sini](https://releases.aspose.com/words/net/).
 - Lingkungan Pengembangan .NET: Baik itu Visual Studio atau IDE lain, siapkan lingkungan Anda.
@@ -30,7 +30,7 @@ using Aspose.Words;
 using Aspose.Words.Fields;
 ```
 
-Sekarang, mari kita uraikan proses konversi kolom IF dalam paragraf menjadi teks biasa. Kami akan melakukan ini selangkah demi selangkah, sehingga mudah untuk diikuti.
+Sekarang, mari kita uraikan proses konversi kolom IF dalam paragraf menjadi teks biasa. Kami akan melakukan ini langkah demi langkah, sehingga mudah untuk diikuti.
 
 ## Langkah 1: Siapkan Direktori Dokumen Anda
 

@@ -15,7 +15,7 @@ Amikor a dokumentumkezelésről van szó, kulcsfontosságú az oldalelrendezés 
 
 Mielőtt belemerülnénk a kódba, nézzük meg, mire van szüksége az induláshoz.
 
--  Aspose.Words for .NET: Az Aspose.Words for .NET-re telepítve kell lennie. tudsz[töltse le itt](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Az Aspose.Words for .NET-re telepítve kell lennie. Tudod[töltse le itt](https://releases.aspose.com/words/net/).
 - Fejlesztői környezet: Bármely .NET-kompatibilis IDE (pl. Visual Studio).
 - Alapvető C# ismerete: A C# programozás ismerete elengedhetetlen.
 

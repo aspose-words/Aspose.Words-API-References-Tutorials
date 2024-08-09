@@ -151,7 +151,7 @@ Door stijlen en thema's toe te passen met Aspose.Words voor Python kunt u visuee
 
 ### Hoe kan ik Aspose.Words voor Python downloaden?
 
- U kunt Aspose.Words voor Python downloaden van de website:[Download link](https://releases.aspose.com/words/python/).
+ U kunt Aspose.Words voor Python downloaden van de website:[Downloadlink](https://releases.aspose.com/words/python/).
 
 ### Kan ik mijn eigen aangepaste stijlen maken?
 

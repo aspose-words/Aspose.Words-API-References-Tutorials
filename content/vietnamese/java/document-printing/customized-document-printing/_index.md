@@ -67,7 +67,7 @@ doc.print("printerName");
 
 Aspose.Words for Java cung cấp các tùy chọn tùy chỉnh nâng cao, bao gồm đầu trang, chân trang và cài đặt trang. Khám phá tài liệu API để biết thêm chi tiết.
 
-## Xử lý sự cố
+## Khắc phục sự cố
 
 Gặp phải vấn đề? Tham khảo tài liệu Aspose.Words for Java để biết các mẹo khắc phục sự cố.
 

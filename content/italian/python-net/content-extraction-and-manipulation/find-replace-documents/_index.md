@@ -106,7 +106,7 @@ La gestione e la manipolazione efficiente dei documenti Word spesso implica oper
 
 ### Posso sostituire il testo solo all'interno di un intervallo specifico di pagine?
 
- Si, puoi. Prima di eseguire la sostituzione, specificare l'intervallo di pagine utilizzando il file`doc.get_child_nodes()` metodo per ottenere il contenuto delle pagine specifiche.
+ Sì, puoi. Prima di eseguire la sostituzione, specificare l'intervallo di pagine utilizzando il file`doc.get_child_nodes()` metodo per ottenere il contenuto delle pagine specifiche.
 
 ### È possibile annullare un'operazione di ricerca e sostituzione?
 

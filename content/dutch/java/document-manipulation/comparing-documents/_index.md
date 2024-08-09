@@ -14,7 +14,7 @@ Documentvergelijking omvat het analyseren van twee documenten en het identificer
 
 ## Uw omgeving instellen
 
- Voordat we in documentvergelijking duiken, moet u ervoor zorgen dat Aspose.Words voor Java is geïnstalleerd. U kunt de bibliotheek downloaden via de[Aspose.Words voor Java-releases](https://releases.aspose.com/words/java/) bladzijde. Eenmaal gedownload, neemt u het op in uw Java-project.
+ Voordat we in documentvergelijking duiken, moet u ervoor zorgen dat Aspose.Words voor Java is geïnstalleerd. U kunt de bibliotheek downloaden via de[Aspose.Words voor Java-releases](https://releases.aspose.com/words/java/) pagina. Eenmaal gedownload, neemt u het op in uw Java-project.
 
 ## Basisdocumentvergelijking
 
@@ -35,7 +35,7 @@ Aspose.Words voor Java biedt uitgebreide opties voor het aanpassen van documentv
 
 ## Negeer opmaak
 
- Om verschillen in opmaak te negeren, gebruikt u de`setIgnoreFormatting` keuze.
+ Om verschillen in opmaak te negeren, gebruikt u de`setIgnoreFormatting` optie.
 
 ```java
 CompareOptions options = new CompareOptions();
@@ -45,7 +45,7 @@ docA.compare(docB, "user", new Date(), options);
 
 ## Negeer kop- en voetteksten
 
- Om kop- en voetteksten van de vergelijking uit te sluiten, stelt u de`setIgnoreHeadersAndFooters` keuze.
+ Om kop- en voetteksten van de vergelijking uit te sluiten, stelt u de`setIgnoreHeadersAndFooters` optie.
 
 ```java
 CompareOptions options = new CompareOptions();

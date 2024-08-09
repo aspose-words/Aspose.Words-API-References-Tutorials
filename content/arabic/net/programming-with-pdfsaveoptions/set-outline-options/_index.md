@@ -15,7 +15,7 @@ url: /ar/net/programming-with-pdfsaveoptions/set-outline-options/
 
 قبل البدء، هناك بعض الأشياء التي ستحتاج إلى التأكد من حصولك عليها:
 
-1.  Aspose.Words for .NET: تأكد من تثبيت Aspose.Words for .NET. إذا لم يكن الأمر كذلك، يمكنك[تحميل أحدث نسخة هنا](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: تأكد من تثبيت Aspose.Words for .NET. إذا لم يكن الأمر كذلك، يمكنك[قم بتنزيل أحدث إصدار هنا](https://releases.aspose.com/words/net/).
 2. بيئة تطوير .NET: ستحتاج إلى بيئة تطوير .NET عاملة، مثل Visual Studio.
 3. الفهم الأساسي لـ C#: الإلمام بلغة البرمجة C# سيساعدك على المتابعة بسهولة.
 4. مستند Word: جهز مستند Word لتحويله إلى ملف PDF.
@@ -68,7 +68,7 @@ saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;
 
 ## الخطوة 3: احفظ المستند بصيغة PDF
 
- من خلال تكوين الخيارات، تصبح جاهزًا لحفظ المستند بتنسيق PDF. استخدم ال`Save` طريقة`Document` فئة وتمرير مسار الملف وحفظ الخيارات.
+ من خلال تكوين الخيارات، تصبح جاهزًا لحفظ المستند بتنسيق PDF. استخدم`Save` طريقة`Document` فئة وتمرير مسار الملف وحفظ الخيارات.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.SetOutlineOptions.pdf", saveOptions);

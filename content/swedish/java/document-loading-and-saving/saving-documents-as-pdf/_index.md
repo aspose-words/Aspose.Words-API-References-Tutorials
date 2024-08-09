@@ -29,7 +29,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions();
 doc.save("output.pdf", saveOptions);
 ```
 
- Byta ut`"input.docx"` med sökvägen till ditt Word-dokument och`"output.pdf"` med önskad sökväg till PDF-filen.
+ Ersätta`"input.docx"` med sökvägen till ditt Word-dokument och`"output.pdf"` med önskad sökväg till PDF-filen.
 
 ## Styra PDF-sparalternativ
 
@@ -127,7 +127,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions();
 doc.save("output.pdf", saveOptions);
 ```
 
- Byta ut`"input.docx"` med sökvägen till ditt Word-dokument och`"output.pdf"` med önskad sökväg till PDF-filen.
+ Ersätta`"input.docx"` med sökvägen till ditt Word-dokument och`"output.pdf"` med önskad sökväg till PDF-filen.
 
 ### Kan jag bädda in typsnitt i PDF-filen som genereras av Aspose.Words för Java?
 

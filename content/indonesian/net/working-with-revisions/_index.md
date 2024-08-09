@@ -16,12 +16,12 @@ Baik Anda seorang pemula atau pengembang berpengalaman, tutorial ini akan memban
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Terima Revisi](./accept-revisions/) | Pelajari cara menerima revisi dokumen Word menggunakan Aspose.Words untuk .NET. |
-| [Dapatkan Jenis Kata Revisi](./get-revision-types/) | Dapatkan revisi jenis kata dalam dokumen Word dengan Aspose.Words untuk .NET. |
-| [Dapatkan Grup Revisi](./get-revision-groups/) | Dapatkan detail grup revisi dalam dokumen Word dengan Aspose.Words untuk .NET. |
-| [Hapus Komentar Di File Pdf](./remove-comments-in-pdf/) | Hapus komentar dalam file PDF dengan Aspose.Words untuk .NET. |
-| [Tampilkan Revisi Dalam Balon](./show-revisions-in-balloons/) | Tampilkan revisi dalam balon dengan Aspose.Words untuk .NET. |
-| [Dapatkan Detail Grup Revisi](./get-revision-group-details/) | Dapatkan detail grup revisi dalam dokumen Word dengan Aspose.Words untuk .NET. |
-| [Akses Versi Revisi](./access-revised-version/) | Akses versi revisi dokumen Word dengan Aspose.Words untuk .NET. |
-| [Pindahkan Node Dalam Dokumen yang Dilacak](./move-node-in-tracked-document/) | Pindahkan node dalam dokumen yang dilacak dengan Aspose.Words untuk .NET. |
-| [Revisi Bentuk](./shape-revision/) | Merevisi bentuk dalam dokumen Word dengan Aspose.Words untuk .NET. |
+| [Terima Revisi](./accept-revisions/) | Revisi dokumen master dengan Aspose.Words untuk .NET. Belajar melacak, menerima, dan menolak perubahan dengan mudah. Tingkatkan keterampilan manajemen dokumen Anda. |
+| [Dapatkan Jenis Kata Revisi](./get-revision-types/) |Pelajari cara mendapatkan revisi jenis kata dalam dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah ini membantu Anda menangani revisi dokumen secara efisien. |
+| [Dapatkan Grup Revisi](./get-revision-groups/) | Pelajari cara mengambil grup revisi dari dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang komprehensif ini. Sempurna untuk manajemen dokumen. |
+| [Hapus Komentar Di File Pdf](./remove-comments-in-pdf/) | Pelajari cara menghapus komentar dari file PDF menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. |
+| [Tampilkan Revisi Dalam Balon](./show-revisions-in-balloons/) | Pelajari cara menampilkan revisi dalam balon menggunakan Aspose.Words untuk .NET. Panduan terperinci ini memandu Anda melalui setiap langkah, memastikan perubahan dokumen Anda jelas dan teratur. |
+| [Dapatkan Detail Grup Revisi](./get-revision-group-details/) | Dapatkan detail grup revisi dengan mudah di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. Sempurna untuk pengembang .NET. |
+| [Akses Versi Revisi](./access-revised-version/) | Pelajari cara mengakses dan menampilkan versi revisi dokumen menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk pengelolaan dokumen yang lancar. |
+| [Pindahkan Node Dalam Dokumen yang Dilacak](./move-node-in-tracked-document/) | Pelajari cara memindahkan node dalam dokumen Word yang dilacak menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami yang terperinci. Sempurna untuk pengembang. |
+| [Revisi Bentuk](./shape-revision/) | Pelajari cara menangani revisi bentuk di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan komprehensif ini. Kuasai pelacakan perubahan, penyisipan bentuk, dan banyak lagi. |

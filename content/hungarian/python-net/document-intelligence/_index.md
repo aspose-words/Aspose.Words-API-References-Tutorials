@@ -24,4 +24,4 @@ A Document Intelligence elsajátításával az Aspose.Words for Python segítsé
 
 ## Python dokumentumintelligencia oktatóanyagok
 ### [Mesterdokumentum-intelligencia](./master-document-intelligence/)
-Dokumentum-intelligencia elsajátítása az Aspose.Words for Python segítségével. A munkafolyamatok automatizálása, az adatok elemzése és a dokumentumok hatékony feldolgozása. Kezd el most!
+Dokumentum-intelligencia elsajátítása az Aspose.Words for Python segítségével. A munkafolyamatok automatizálása, az adatok elemzése és a dokumentumok hatékony feldolgozása. Kezdje el most!

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-table-styles-and-formatting/apply-row-formatting/
 ---
-## introduzione
+## Introduzione
 
 Se stai cercando di ravvivare i tuoi documenti Word con una formattazione delle righe fantasiosa, sei nel posto giusto! In questo tutorial, approfondiremo come applicare la formattazione delle righe utilizzando Aspose.Words per .NET. Analizzeremo ogni passaggio, rendendo più facile per te seguirlo e applicarlo ai tuoi progetti.
 
@@ -43,7 +43,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Passaggio 2: avvia una nuova tabella
 
- Successivamente, inizieremo una nuova tabella utilizzando il file`DocumentBuilder`oggetto. Qui è dove avviene la magia.
+ Successivamente, inizieremo una nuova tabella utilizzando il file`DocumentBuilder`oggetto. È qui che avviene la magia.
 
 ```csharp
 Table table = builder.StartTable();
@@ -91,7 +91,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx"
 
 ## Conclusione
 
-E il gioco è fatto! Hai applicato con successo la formattazione delle righe a una tabella in un documento di Word utilizzando Aspose.Words per .NET. Questa tecnica semplice ma potente può migliorare notevolmente la leggibilità e l'estetica dei tuoi documenti.
+Ed ecco qua! Hai applicato con successo la formattazione delle righe a una tabella in un documento di Word utilizzando Aspose.Words per .NET. Questa tecnica semplice ma potente può migliorare notevolmente la leggibilità e l'estetica dei tuoi documenti.
 
 ## Domande frequenti
 

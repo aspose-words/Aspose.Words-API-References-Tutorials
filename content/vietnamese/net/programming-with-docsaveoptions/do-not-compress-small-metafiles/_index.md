@@ -53,7 +53,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Text added to a document.");
 ```
 
- Ở đây, chúng ta khởi tạo một`Document` đối tượng và cách sử dụng`DocumentBuilder` để thêm một số văn bản vào nó. Các`Writeln` phương pháp thêm một dòng văn bản vào tài liệu.
+ Ở đây, chúng ta khởi tạo một`Document` đối tượng và cách sử dụng`DocumentBuilder` để thêm một số văn bản vào nó. các`Writeln` phương pháp thêm một dòng văn bản vào tài liệu.
 
 ## Bước 3: Định cấu hình tùy chọn lưu
 

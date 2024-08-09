@@ -19,7 +19,7 @@ Kodlamaya başlamadan önce takip etmeniz gereken her şeye sahip olduğunuzdan 
 1.  Aspose.Words for .NET Kütüphanesi: Aspose.Words for .NET'in en son sürümüne ihtiyacınız olacak. Henüz yapmadıysanız, yapabilirsiniz[buradan indir](https://releases.aspose.com/words/net/).
 2. Geliştirme Ortamı: Kodunuzu yazmak ve test etmek için Visual Studio gibi bir .NET geliştirme ortamı gerekli olacaktır.
 3. Temel C# Bilgisi: Kodda gezinirken temel C# anlayışı faydalı olacaktır.
-4. Örnek Belge Dizini: Word belgelerinizi kaydedeceğiniz bir dizini hazır bulundurun. Sihir yapılan yer burasıdır!
+4. Örnek Belge Dizini: Word belgelerinizi kaydedeceğiniz bir dizini hazır bulundurun. Sihrin gerçekleştiği yer burası!
 
 ## Ad Alanlarını İçe Aktar
 
@@ -98,7 +98,7 @@ Bu kesitte:
 -  Yeni bir tane yaratıyoruz`VbaModule` nesne.
 - Modülün adını "AsposeModule" olarak belirledik.
 -  Modül tipini şu şekilde tanımlıyoruz:`VbaModuleType.ProceduralModule`Bu, prosedürleri (altprogramlar veya işlevler) içerdiği anlamına gelir.
--  biz ayarladık`SourceCode` basit bir "Merhaba Dünya!" makro.
+-  Biz ayarladık`SourceCode` basit bir "Merhaba Dünya!" makro.
 
 ## Adım 5: Belgeyi Kaydetme
 
@@ -118,7 +118,7 @@ Bu satır, belgeyi belirttiğiniz dizine "WorkingWithVba.CreateVbaProject.docm" 
 
 Tebrikler! Aspose.Words for .NET'i kullanarak bir Word belgesinde başarıyla bir VBA projesi oluşturdunuz. Bu eğitim, ortamınızı ayarlamaktan VBA kodunu yazıp kaydetmeye kadar her şeyi kapsıyordu. Aspose.Words ile görevleri otomatikleştirebilir, makrolar oluşturabilir ve Word belgelerinizi asla mümkün olmayacağını düşünmediğiniz şekillerde özelleştirebilirsiniz.
 
- Daha fazlasını keşfetmeye istekliyseniz,[API belgeleri](https://reference.aspose.com/words/net/) bir bilgi hazinesidir. Ve eğer yardıma ihtiyacın olursa,[destek Forumu](https://forum.aspose.com/c/words/8) sadece bir tık uzakta.
+ Daha fazlasını keşfetmeye istekliyseniz,[API belgeleri](https://reference.aspose.com/words/net/) bir bilgi hazinesidir. Ve eğer yardıma ihtiyacın olursa,[destek forumu](https://forum.aspose.com/c/words/8) sadece bir tık uzakta.
 
 Mutlu kodlamalar ve unutmayın, tek sınır hayal gücünüzdür!
 
@@ -128,7 +128,7 @@ Mutlu kodlamalar ve unutmayın, tek sınır hayal gücünüzdür!
 Aspose.Words for .NET, geliştiricilerin .NET uygulamalarında Word belgeleri oluşturmasına, düzenlemesine ve dönüştürmesine olanak tanıyan kapsamlı bir kitaplıktır. Belge iş akışlarını otomatikleştirmek ve VBA ile işlevselliği geliştirmek için mükemmeldir.
 
 ### Aspose.Words'ü ücretsiz deneyebilir miyim?  
- Evet, Aspose.Words'ü deneyebilirsiniz.[ücretsiz deneme](https://releases.aspose.com/) veya bir tane al[geçici lisans](https://purchase.aspose.com/temporary-license/) Evrim için.
+ Evet, Aspose.Words'ü deneyebilirsiniz.[ücretsiz deneme](https://releases.aspose.com/) veya bir tane al[geçici lisans](https://purchase.aspose.com/temporary-license/) değerlendirme için.
 
 ### Bir Word belgesine VBA kodunu nasıl eklerim?  
  Bir VBA kodu oluşturarak ekleyebilirsiniz.`VbaModule` ve onun ayarlanması`SourceCode` makro kodunuzla mülk. Daha sonra modülü dosyanıza ekleyin.`VbaProject`.

@@ -137,7 +137,7 @@ Parabéns! Você inseriu com sucesso uma tabela diretamente em um documento do W
  Você pode baixar Aspose.Words para .NET em[página de download](https://releases.aspose.com/words/net/).
 
 ### Posso experimentar o Aspose.Words for .NET antes de comprar?
- Sim, você pode solicitar um[teste grátis](https://releases.aspose.com/) avaliar a biblioteca antes de comprar.
+ Sim, você pode solicitar um[teste gratuito](https://releases.aspose.com/) avaliar a biblioteca antes de comprar.
 
 ### Como faço para adquirir o Aspose.Words para .NET?
 Você pode comprar Aspose.Words para .NET no[página de compra](https://purchase.aspose.com/buy).

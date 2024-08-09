@@ -36,14 +36,14 @@ Lo primero es lo primero: debe configurar su proyecto en Visual Studio. Si ya ti
 
 1. Abra Visual Studio: inicie Visual Studio y cree un nuevo proyecto de aplicación de consola C#.
 2.  Nombra tu proyecto: dale a tu proyecto un nombre significativo. Algo como`CloneWordDocumentDemo` servirá.
-3.  Agregue referencia de Aspose.Words: haga clic derecho en su proyecto en el Explorador de soluciones, elija`Manage NuGet Packages` y buscar`Aspose.Words`. Instalarlo.
+3.  Agregue referencia de Aspose.Words: haga clic derecho en su proyecto en el Explorador de soluciones, elija`Manage NuGet Packages` y buscar`Aspose.Words`. Instálalo.
 
 ## Paso 2: prepare su entorno
 
 Ahora que su proyecto está configurado, preparemos el entorno:
 
 1.  Cree un directorio para sus documentos: necesitará una carpeta donde se almacenarán sus documentos. llamémoslo`Documents`.
-2.  Agregue su documento de muestra: coloque su`Document.docx` dentro de`Documents` carpeta. Este es el archivo que clonaremos.
+2.  Agregue su documento de muestra: coloque su`Document.docx` dentro del`Documents` carpeta. Este es el archivo que clonaremos.
 
 ## Paso 3: cargue el documento original
 
@@ -115,4 +115,4 @@ Finalmente, verifiquemos si nuestro documento clonado es el esperado:
 
 ### ¿Dónde puedo encontrar más tutoriales sobre Aspose.Words para .NET?
 
- Revisar la[documentación](https://reference.aspose.com/words/net/) y el[Aspose foros de la comunidad](https://forum.aspose.com/c/words/8) para obtener más recursos y apoyo.
+ Mira el[documentación](https://reference.aspose.com/words/net/) y el[Aspose foros de la comunidad](https://forum.aspose.com/c/words/8) para obtener más recursos y apoyo.

@@ -19,7 +19,7 @@ Aspose.Words for Java je knihovna Java, která vám umožňuje programově manip
 Než se ponoříme do kódu, ujistěte se, že máte splněny následující předpoklady:
 
 - Java Development Kit (JDK) nainstalovaný ve vašem systému.
--  Knihovna Aspose.Words for Java, kterou si můžete stáhnout[tady](https://releases.aspose.com/words/java/).
+-  Knihovna Aspose.Words for Java, kterou si můžete stáhnout[zde](https://releases.aspose.com/words/java/).
 
 ## 3. Nastavení vašeho prostředí
 
@@ -542,7 +542,7 @@ private CompositeNode splitCompositeAtNode(CompositeNode baseNode, Node targetNo
 	CompositeNode cloneNode = (CompositeNode) baseNode.deepClone(false);
 	Node node = targetNode;
 	int currentPageNum = pageNumberFinder.getPage(baseNode);
-	// Přesuňte všechny uzly nalezené na další stránce do zkopírovaného uzlu. Řadové uzly zpracujte samostatně.
+	// Přesuňte všechny uzly nalezené na další stránce do zkopírovaného uzlu. Řadové uzly manipulujte samostatně.
 	if (baseNode.getNodeType() != NodeType.ROW)
 	{
 		CompositeNode composite = cloneNode;
@@ -663,7 +663,7 @@ private static void removePageBreak(Run run)
 ## Závěr
 
 Nyní jste se naučili, jak rozdělit dokument na samostatné stránky pomocí Aspose.Words for Java. Tato příručka poskytuje komplexní výukový program krok za krokem s příklady zdrojového kódu. Tento kód můžete dále přizpůsobit a rozšířit tak, aby vyhovoval vašim specifickým požadavkům při práci s dokumenty.
-Rozhodně! Pojďme přidat sekci FAQ do našeho průvodce rozdělením dokumentů na stránky pomocí Aspose.Words for Java.
+Jistě! Pojďme přidat sekci FAQ do našeho průvodce rozdělením dokumentů na stránky pomocí Aspose.Words for Java.
 
 ## FAQ
 
@@ -671,7 +671,7 @@ Rozhodně! Pojďme přidat sekci FAQ do našeho průvodce rozdělením dokument�
 
 Chcete-li do projektu přidat Aspose.Words for Java, postupujte takto:
 
-1.  Stáhněte si knihovnu Aspose.Words for Java z[tady](https://releases.aspose.com/words/java/).
+1.  Stáhněte si knihovnu Aspose.Words for Java z[zde](https://releases.aspose.com/words/java/).
 2. Přidejte stažený soubor JAR do cesty třídy vašeho projektu.
 3. Nyní můžete ve svém projektu začít používat Aspose.Words for Java.
 

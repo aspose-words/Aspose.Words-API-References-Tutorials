@@ -14,11 +14,11 @@ Készen állsz egy utazásra, hogy elsajátítsd a dokumentumtartalom oldalakonk
 
 Az Aspose.Words for Java játékmódot jelent, amikor a Word-dokumentumokkal programozottan kell dolgozni. Akár tapasztalt Java-fejlesztő, akár csak most kezdi a kódolási utat, ez az útmutató végigvezeti Önt a dokumentumtartalom oldalankénti kinyerésének folyamatán, értékes készségkészletet biztosítva a különféle alkalmazásokhoz.
 
-## Elkezdeni
+## Kezdő lépések
 
 ### Fejlesztői környezet beállítása
 
-Mielőtt elkezdhetnénk dolgozni az Aspose.Words for Java-val, be kell állítani a fejlesztői környezetünket. Kovesd ezeket a lepeseket:
+Mielőtt elkezdhetnénk dolgozni az Aspose.Words for Java-val, be kell állítani a fejlesztői környezetünket. Kövesse az alábbi lépéseket:
 
 1. Java telepítése: Ha nincs telepítve a Java, töltse le és telepítse a legújabb verziót a webhelyről.
 
@@ -156,4 +156,4 @@ Az Aspose.Words for Java kereskedelmi használatra érvényes licenc szükséges
 
 ## Következtetés
 
-Gratulálunk! Elkészítette az Aspose.Words for Java használatával a dokumentumtartalom oldalankénti kibontására vonatkozó, lépésről lépésre szóló útmutatót. Most értékes készségekkel rendelkezik a Word-dokumentumok programozott kezeléséhez. Nyugodtan fedezze fel az Aspose.Words további funkcióit, és engedje szabadjára kreativitását a dokumentumkezelésben.
+Gratulálok! Elkészítette az Aspose.Words for Java használatával a dokumentumtartalom oldalankénti kibontására vonatkozó, lépésről lépésre szóló útmutatót. Most értékes készségekkel rendelkezik a Word-dokumentumok programozott kezeléséhez. Nyugodtan fedezze fel az Aspose.Words további funkcióit, és engedje szabadjára kreativitását a dokumentumkezelésben.

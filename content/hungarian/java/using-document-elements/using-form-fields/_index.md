@@ -2,7 +2,7 @@
 title: Űrlapmezők használata az Aspose.Words for Java programban
 linktitle: Űrlapmezők használata
 second_title: Aspose.Words Java Document Processing API
-description: Tanulja meg az Aspose.Words for Java használatát űrlapmezőkkel rendelkező interaktív Word-dokumentumok létrehozásához. Kezd el most!
+description: Tanulja meg az Aspose.Words for Java használatát űrlapmezőkkel rendelkező interaktív Word-dokumentumok létrehozásához. Kezdje el most!
 type: docs
 weight: 14
 url: /hu/java/using-document-elements/using-form-fields/

@@ -2,106 +2,122 @@
 title: Leggi le proprietà XControl attive dal file Word
 linktitle: Leggi le proprietà XControl attive dal file Word
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Leggi le proprietà dei controlli ActiveX in un file Word con Aspose.Words per .NET.
+description: Scopri come leggere le proprietà del controllo ActiveX dai file Word utilizzando Aspose.Words per .NET in una guida passo passo. Migliora le tue capacità di automazione dei documenti.
 type: docs
 weight: 10
 url: /it/net/working-with-oleobjects-and-activex/read-active-xcontrol-properties/
 ---
+## Introduzione
 
-In questa guida passo passo, ti mostreremo come leggere le proprietà dei controlli ActiveX in un file Word utilizzando Aspose.Words per .NET. Ti forniremo il codice sorgente completo e ti mostreremo come formattare l'output di markdown.
+Nell'era digitale di oggi, l'automazione è fondamentale per migliorare la produttività. Se lavori con documenti Word che contengono controlli ActiveX, potrebbe essere necessario leggerne le proprietà per vari scopi. I controlli ActiveX, come caselle di controllo e pulsanti, possono contenere dati importanti. Utilizzando Aspose.Words per .NET, puoi estrarre e manipolare in modo efficiente questi dati a livello di codice.
 
-## Passaggio 1: inizializzazione del documento
+## Prerequisiti
 
- Il primo passo è inizializzare il file`Document` oggetto caricando il documento Word contenente i controlli ActiveX. Assicurati di sostituire`MyDir` con il percorso effettivo della directory contenente il documento.
+Prima di iniziare, assicurati di avere quanto segue:
+
+1.  Aspose.Words per .NET Library: puoi scaricarlo da[Qui](https://releases.aspose.com/words/net/).
+2. Visual Studio o qualsiasi IDE C#: per scrivere ed eseguire il tuo codice.
+3. Un documento Word con controlli ActiveX: ad esempio "controlli ActiveX.docx".
+4. Conoscenza di base di C#: è necessaria la familiarità con la programmazione C#.
+
+## Importa spazi dei nomi
+
+Innanzitutto, importiamo gli spazi dei nomi necessari per lavorare con Aspose.Words per .NET.
 
 ```csharp
-Document doc = new Document(MyDir + "ActiveX controls.docx");
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Ole;
+using System;
 ```
 
-## Passaggio 2: ripristina i controlli ActiveX
+## Passaggio 1: caricare il documento Word
 
- In questo passaggio, ripeteremo ciascuno di essi`Shape` del documento per recuperare i controlli ActiveX e leggerne le proprietà.
+Per iniziare, dovrai caricare il documento Word che contiene i controlli ActiveX.
+
+```csharp
+// Percorso della directory dei documenti
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "ActiveX controls.docx");
+```
+
+## Passaggio 2: inizializzare una stringa per conservare le proprietà
+
+Inizializzare quindi una stringa vuota per memorizzare le proprietà dei controlli ActiveX.
 
 ```csharp
 string properties = "";
-foreach(Shape shape in doc.GetChildNodes(NodeType.Shape, true))
-{
-     if (shape.OleFormat is null) break;
-
-     OleControl oleControl = shape.OleFormat.OleControl;
-     if (oleControl.IsForms2OleControl)
-     {
-         Forms2OleControl checkBox = (Forms2OleControl)oleControl;
-         properties = properties + "\nCaption: " + checkBox.Caption;
-         properties = properties + "\nValue: " + checkBox.Value;
-         properties = properties + "\nEnabled: " + checkBox.Enabled;
-         properties = properties + "\nType: " + checkBox.Type;
-         if (checkBox. ChildNodes != null)
-         {
-             properties = properties + "\nChildNodes: " + checkBox.ChildNodes;
-         }
-
-         properties += "\n";
-     }
-}
-
-properties = properties + "\nTotal ActiveX Controls found: " + doc.GetChildNodes(NodeType.Shape, true).Count;
-Console.WriteLine("\n" + properties);
 ```
 
-### Codice sorgente di esempio per la lettura delle proprietà Active XControl utilizzando Aspose.Words per .NET
+## Passaggio 3: scorrere le forme nel documento
 
-Ecco il codice sorgente completo per leggere le proprietà dei controlli ActiveX utilizzando Aspose.Words per .NET:
+Dobbiamo scorrere tutte le forme nel documento per trovare i controlli ActiveX.
 
 ```csharp
-	Document doc = new Document(MyDir + "ActiveX controls.docx");
+foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))
+{
+    if (shape.OleFormat is null) continue;
+    
+    OleControl oleControl = shape.OleFormat.OleControl;
+    if (oleControl.IsForms2OleControl)
+    {
+        // Elaborare il controllo ActiveX
+    }
+}
+```
 
-	string properties = "";
-	foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))
-	{
-		if (shape.OleFormat is null) break;
+## Passaggio 4: estrarre le proprietà dai controlli ActiveX
 
-		OleControl oleControl = shape.OleFormat.OleControl;
-		if (oleControl.IsForms2OleControl)
-		{
-			Forms2OleControl checkBox = (Forms2OleControl) oleControl;
-			properties = properties + "\nCaption: " + checkBox.Caption;
-			properties = properties + "\nValue: " + checkBox.Value;
-			properties = properties + "\nEnabled: " + checkBox.Enabled;
-			properties = properties + "\nType: " + checkBox.Type;
-			if (checkBox.ChildNodes != null)
-			{
-				properties = properties + "\nChildNodes: " + checkBox.ChildNodes;
-			}
+All'interno del ciclo, controlla se il controllo è un Forms2OleControl. Se lo è, lancialo ed estrai le proprietà.
 
-			properties += "\n";
-		}
-	}
+```csharp
+Forms2OleControl checkBox = (Forms2OleControl) oleControl;
+properties += "\nCaption: " + checkBox.Caption;
+properties += "\nValue: " + checkBox.Value;
+properties += "\nEnabled: " + checkBox.Enabled;
+properties += "\nType: " + checkBox.Type;
 
-	properties = properties + "\nTotal ActiveX Controls found: " + doc.GetChildNodes(NodeType.Shape, true).Count;
-	Console.WriteLine("\n" + properties);
+if (checkBox.ChildNodes != null)
+{
+    properties += "\nChildNodes: " + checkBox.ChildNodes;
+}
+
+properties += "\n";
+```
+
+## Passaggio 5: contare i controlli ActiveX totali
+
+Dopo aver eseguito l'iterazione di tutte le forme, contare il numero totale di controlli ActiveX trovati.
+
+```csharp
+properties += "\nTotal ActiveX Controls found: " + doc.GetChildNodes(NodeType.Shape, true).Count;
+```
+
+## Passaggio 6: visualizzare le proprietà
+
+Infine, stampa le proprietà estratte sulla console.
+
+```csharp
+Console.WriteLine("\n" + properties);
 ```
 
 ## Conclusione
 
-Questa guida ti ha mostrato come leggere le proprietà dei controlli ActiveX in un file Word utilizzando Aspose.Words per .NET. Seguendo i passaggi descritti è possibile inizializzare il documento, recuperare i controlli ActiveX e leggerne le proprietà. Utilizza il codice di esempio fornito come punto di partenza e personalizzalo in base alle tue esigenze specifiche.
+Ed ecco qua! Hai imparato con successo come leggere le proprietà del controllo ActiveX da un documento Word utilizzando Aspose.Words per .NET. Questo tutorial ha trattato il caricamento di un documento, l'iterazione delle forme e l'estrazione delle proprietà dai controlli ActiveX. Seguendo questi passaggi, puoi automatizzare l'estrazione di dati importanti dai tuoi documenti Word, migliorando l'efficienza del tuo flusso di lavoro.
 
-La lettura delle proprietà dei controlli ActiveX consente di estrarre informazioni importanti dai file Word contenenti questi controlli. Aspose.Words per .NET offre potenti funzionalità per l'elaborazione di parole con controlli ActiveX e automatizzando l'elaborazione dei documenti.
+## Domande frequenti
 
-### Domande frequenti
+### Cosa sono i controlli ActiveX nei documenti di Word?
+I controlli ActiveX sono oggetti interattivi incorporati nei documenti di Word, come caselle di controllo, pulsanti e campi di testo, utilizzati per creare moduli e automatizzare le attività.
 
-#### D: Qual è il primo passaggio per leggere le proprietà dei controlli ActiveX in un file Word?
+### Posso modificare le proprietà dei controlli ActiveX utilizzando Aspose.Words per .NET?
+Sì, Aspose.Words per .NET consente di modificare le proprietà dei controlli ActiveX a livello di codice.
 
- R: Il primo passo è inizializzare il file`Document` oggetto caricando il documento Word contenente i controlli ActiveX. Assicurati di sostituire`MyDir` con il percorso effettivo della directory contenente il documento.
+### Aspose.Words per .NET è gratuito?
+ Aspose.Words per .NET offre una prova gratuita, ma dovrai acquistare una licenza per l'uso continuato. Puoi ottenere una prova gratuita[Qui](https://releases.aspose.com/).
 
-#### D: Come posso inserire i controlli ActiveX nel documento?
+### Posso utilizzare Aspose.Words per .NET con altri linguaggi .NET oltre a C#?
+Sì, Aspose.Words per .NET può essere utilizzato con qualsiasi linguaggio .NET, inclusi VB.NET e F#.
 
- R: Per recuperare i controlli ActiveX, è necessario scorrere ciascuno di essi`Shape` del documento e verificare se si tratta di un controllo ActiveX. Usa il`OleFormat` proprietà di`Shape` per accedere al`OleControl` oggetto e recuperare le proprietà necessarie.
-
-#### D: quali proprietà dei controlli ActiveX posso leggere?
-
-R: Puoi leggere varie proprietà dei controlli ActiveX, come didascalia, valore, stato abilitato o disabilitato, tipo e childNode associati al controllo.
-
-#### D: Come posso ottenere il numero totale di controlli ActiveX nel documento?
-
- R: Per ottenere il numero totale di controlli ActiveX nel documento, puoi utilizzare il file`GetChildNodes` metodo del`Document` oggetto che specifica il`NodeType.Shape` digitare e includere i nodi figlio.
+### Dove posso trovare ulteriore documentazione su Aspose.Words per .NET?
+ Puoi trovare documentazione dettagliata[Qui](https://reference.aspose.com/words/net/).

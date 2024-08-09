@@ -9,13 +9,13 @@ url: /tr/net/programming-with-loadoptions/load-with-encoding/
 ---
 ## giriiş
 
-Selam! Yani Word belgeleriyle çalışıyorsunuz ve belirli bir kodlamaya sahip bir belge yüklemeniz mi gerekiyor? Belki UTF-7 gibi kodlanmış metinlere sahip belgelerle karşılaşmışsınızdır ve bunları nasıl kullanacağınız konusunda kafanızı karıştırıyorsunuzdur. Peki, doğru yerdesiniz! Bu eğitimde, Aspose.Words for .NET'i kullanarak belirli bir kodlamaya sahip bir Word belgesini nasıl yükleyebileceğinizi derinlemesine inceliyoruz. Bu güçlü kitaplık, Word belgelerini muhtemelen asla mümkün olduğunu düşünmediğiniz şekillerde değiştirmenize olanak tanır. Başlayalım!
+Selam! Yani Word belgeleriyle çalışıyorsunuz ve belirli bir kodlamaya sahip bir belge yüklemeniz mi gerekiyor? Belki UTF-7 gibi kodlanmış metinlere sahip belgelerle karşılaşmışsınızdır ve bunları nasıl kullanacağınız konusunda kafanızı karıştırıyorsunuzdur. Peki, doğru yerdesiniz! Bu eğitimde, Aspose.Words for .NET'i kullanarak belirli bir kodlamaya sahip bir Word belgesini nasıl yükleyebileceğinizi derinlemesine inceliyoruz. Bu güçlü kitaplık, Word belgelerini muhtemelen asla mümkün olduğunu düşünmediğiniz şekillerde değiştirmenize olanak tanır. Hadi başlayalım!
 
 ## Önkoşullar
 
 İşin özüne geçmeden önce, ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
-1.  Aspose.Words for .NET: Yapabilirsin[indirmek](https://releases.aspose.com/words/net/) Son sürüm.
+1.  Aspose.Words for .NET: Yapabilirsin[indirmek](https://releases.aspose.com/words/net/) en son sürüm.
 2. .NET Geliştirme Ortamı: Visual Studio mükemmel çalışıyor.
 3. Bir Word Belgesi: UTF-7 gibi, kullandığınız formatta kodlandığından emin olun.
 
@@ -70,7 +70,7 @@ Bu kod satırı, daha önce ayarladığımız kodlama seçeneklerini kullanarak 
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak belirli bir kodlamaya sahip bir Word belgesini başarıyla yüklediniz. Bu güçlü kitaplık, farklı metin kodlamalarını yönetmeyi son derece kolaylaştırır ve belgelerinizin doğru şekilde işlenmesini sağlar. İster eski belgelerle uğraşıyor olun, ister uluslararası metinlerle çalışıyor olun, Aspose.Words yanınızdadır.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak belirli bir kodlamaya sahip bir Word belgesini başarıyla yüklediniz. Bu güçlü kitaplık, farklı metin kodlamalarını yönetmeyi son derece kolaylaştırır ve belgelerinizin doğru şekilde işlenmesini sağlar. İster eski belgelerle uğraşıyor olun, ister uluslararası metinlerle çalışıyor olun, Aspose.Words yanınızdadır.
 
 ## SSS'ler
 
@@ -86,5 +86,5 @@ UTF-7 (7 bit Unicode Dönüşüm Formatı), bir dizi ASCII karakter kullanarak U
 ### Belgeleri dosya yolu yerine bir akıştan yükleyebilir miyim?
  Kesinlikle! Aspose.Words, akışlardan belge yüklemeyi destekler. Akışı ve yükleme seçeneklerini aktarmanız yeterlidir.`Document` yapıcı.
 
-### Sorunlarla karşılaşırsam nereden destek alabilirim?
+### Sorunla karşılaşırsam nereden destek alabilirim?
  Ziyaret edebilirsiniz[Aspose.Words Destek Forumu](https://forum.aspose.com/c/words/8) topluluktan ve Aspose destek ekibinden yardım için.

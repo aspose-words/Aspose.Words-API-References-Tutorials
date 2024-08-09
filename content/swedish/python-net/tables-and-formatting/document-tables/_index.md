@@ -92,7 +92,7 @@ cell.cell_format.shading.background_pattern_color = Color.light_gray
 
 ## Lägga till sidhuvuden och sidfötter i tabeller:
 
- Tabeller kan dra nytta av att ha sidhuvuden och sidfötter som ger sammanhang eller ytterligare information. Du kan lägga till sidhuvuden och sidfötter i tabeller med hjälp av`Table.title`och`Table.description` egenskaper.
+ Tabeller kan dra nytta av att ha sidhuvuden och sidfötter som ger sammanhang eller ytterligare information. Du kan lägga till sidhuvuden och sidfötter i tabeller med hjälp av`Table.title`och`Table.description` fastigheter.
 
 ```python
 # Set table title (header)

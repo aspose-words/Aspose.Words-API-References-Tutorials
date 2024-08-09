@@ -16,7 +16,7 @@ Se você é um desenvolvedor que deseja automatizar a criação e formatação d
 Antes de entrarmos nos detalhes essenciais, vamos garantir que você tenha tudo o que precisa para seguir este tutorial.
 
 1. Ambiente de desenvolvimento: certifique-se de ter um ambiente de desenvolvimento configurado. Visual Studio é uma ótima escolha.
-2.  Aspose.Words for .NET: Baixe e instale a biblioteca Aspose.Words for .NET. Você pode conseguir isso[aqui](https://releases.aspose.com/words/net/).
+2.  Aspose.Words for .NET: Baixe e instale a biblioteca Aspose.Words for .NET. Você pode conseguir[aqui](https://releases.aspose.com/words/net/).
 3.  Licença: Obtenha uma licença temporária se não tiver uma licença completa. Pegue[aqui](https://purchase.aspose.com/temporary-license/).
 4. Conhecimento básico de C#: Familiaridade com C# e .NET framework será benéfica.
 

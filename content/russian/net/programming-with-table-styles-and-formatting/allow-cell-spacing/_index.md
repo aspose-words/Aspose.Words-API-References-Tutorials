@@ -81,7 +81,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 
 ### Шаг 4.1: Разрешить интервал между ячейками
 
- Установить`AllowCellSpacing` свойство таблицы`true`.
+ Установите`AllowCellSpacing` свойство таблицы`true`.
 
 ```csharp
 table.AllowCellSpacing = true;
@@ -99,7 +99,7 @@ table.CellSpacing = 2;
 
 Наконец, сохраните измененный документ в указанном вами каталоге.
 
- Использовать`Save` способ сохранить документ.
+ Используйте`Save` способ сохранить документ.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.AllowCellSpacing.docx");

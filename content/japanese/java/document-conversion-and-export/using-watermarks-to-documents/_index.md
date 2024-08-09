@@ -121,7 +121,7 @@ options.setFontFamily("Times New Roman");
 
 ### 透かしを半透明にするにはどうすればいいですか?
 
-透かしを半透明にするには、`setSemitransparent`財産に`true`の中に`TextWatermarkOptions`.
+透かしを半透明にするには、`setSemitransparent`財産に`true`の`TextWatermarkOptions`.
 
 ### ドキュメントの特定のセクションに透かしを追加できますか?
 

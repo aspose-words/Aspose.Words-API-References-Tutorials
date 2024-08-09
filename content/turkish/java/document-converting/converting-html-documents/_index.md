@@ -20,7 +20,7 @@ Kodun ayrıntılarına girmeden önce aşağıdaki önkoşullara sahip olduğunu
 -  Aspose.Words for Java kütüphanesi. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/java/).
 - Java programlamanın temel anlayışı.
 
-## Adım adım rehber
+## Adım Adım Kılavuz
 
 ## 1. Adım: Projenizi Kurma
 
@@ -72,7 +72,7 @@ try {
 
 ## Çözüm
 
-Aspose.Words for Java kullanarak HTML'yi belgelere dönüştürmek basit bir işlemdir. Yalnızca birkaç satır kodla web içeriğini profesyonel olarak biçimlendirilmiş Word belgelerine dönüştürebilirsiniz. Bu güçlü API, belge manipülasyonunun karmaşıklığını basitleştirerek onu geliştiriciler için paha biçilmez bir araç haline getirir.
+Aspose.Words for Java kullanarak HTML'yi belgelere dönüştürmek basit bir işlemdir. Yalnızca birkaç satır kodla web içeriğini profesyonelce biçimlendirilmiş Word belgelerine dönüştürebilirsiniz. Bu güçlü API, belge manipülasyonunun karmaşıklığını basitleştirerek onu geliştiriciler için paha biçilmez bir araç haline getirir.
 
 ## SSS'ler
 

@@ -109,7 +109,7 @@ class MultipagePrintDocument implements Printable
         // Bu kağıda yazdırılacak son sayfanın numarasını seçin.
         int pageTo = Math.max(startPage + mPagesPerSheet - 1, toPage);
         //Saklanan geçerli sayfadan hesaplanan sayfaya seçilen sayfalar arasında geçiş yapın
-        // son Sayfa.
+        // son sayfa.
         for (int pageIndex = startPage; pageIndex <= pageTo; pageIndex++) {
             // Sütun ve satır endekslerini hesaplayın.
             int rowIdx = (int) Math.floor((pageIndex - startPage) / thumbCount.getWidth());

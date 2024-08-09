@@ -1,6 +1,6 @@
 ---
-title: Satuan ukur
-linktitle: Satuan ukur
+title: Satuan Ukur
+linktitle: Satuan Ukur
 second_title: API Pemrosesan Dokumen Aspose.Words
 description: Pelajari cara mengonfigurasi fitur unit pengukuran di Aspose.Words untuk .NET untuk mempertahankan format dokumen selama konversi ODT.
 type: docs
@@ -53,7 +53,7 @@ Pastikan dokumen Word Anda, bernama "Document.docx", ada di direktori yang diten
 
 ## Langkah 3: Konfigurasikan Satuan Pengukuran
 
- Sekarang, mari konfigurasikan unit pengukuran untuk konversi ODT. Ini adalah dimana keajaiban terjadi. Kami akan menyiapkannya`OdtSaveOptions` menggunakan inci sebagai satuan pengukuran.
+ Sekarang, mari konfigurasikan unit pengukuran untuk konversi ODT. Di sinilah keajaiban terjadi. Kami akan menyiapkannya`OdtSaveOptions` menggunakan inci sebagai satuan pengukuran.
 
 ```csharp
 // Konfigurasi opsi cadangan dengan fitur "Unit pengukuran".
@@ -89,7 +89,7 @@ Aspose.Words for .NET adalah perpustakaan yang kuat untuk bekerja dengan dokumen
  Ya, Anda dapat mengunduh uji coba gratis Aspose.Words untuk .NET dari[Di Sini](https://releases.aspose.com/).
 
 ### Di mana saya dapat menemukan dokumentasi Aspose.Words untuk .NET?
- Anda dapat mengakses dokumentasi komprehensif untuk Aspose.Words untuk .NET di[Link ini](https://reference.aspose.com/words/net/).
+ Anda dapat mengakses dokumentasi komprehensif untuk Aspose.Words untuk .NET di[tautan ini](https://reference.aspose.com/words/net/).
 
 ### Bagaimana saya bisa mendapatkan dukungan untuk Aspose.Words untuk .NET?
- Untuk dukungan, Anda dapat mengunjungi forum Aspose.Words di[Link ini](https://forum.aspose.com/c/words/8).
+ Untuk dukungan, Anda dapat mengunjungi forum Aspose.Words di[tautan ini](https://forum.aspose.com/c/words/8).

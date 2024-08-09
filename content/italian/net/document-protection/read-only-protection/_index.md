@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/document-protection/read-only-protection/
 ---
-## introduzione
+## Introduzione
 
 Quando si tratta di gestire documenti Word, ci sono momenti in cui è necessario renderli di sola lettura per proteggerne il contenuto. Che si tratti di condividere informazioni importanti senza il rischio di modifiche accidentali o di garantire l'integrità di documenti legali, la protezione di sola lettura è una funzionalità preziosa. In questo tutorial esploreremo come implementare la protezione di sola lettura in un documento Word utilizzando Aspose.Words per .NET. Ti guideremo attraverso ogni passaggio in modo dettagliato e coinvolgente, assicurandoti che tu possa seguirlo facilmente.
 
@@ -106,7 +106,7 @@ Spiegazione:
 
 ## Conclusione
 
-E il gioco è fatto! Hai creato con successo un documento Word protetto di sola lettura utilizzando Aspose.Words per .NET. Questa funzionalità garantisce che i contenuti del documento rimangano intatti e inalterati, fornendo un ulteriore livello di sicurezza. Che tu stia condividendo informazioni sensibili o documenti legali, la protezione di sola lettura è uno strumento indispensabile nel tuo arsenale di gestione dei documenti.
+Ed ecco qua! Hai creato con successo un documento Word protetto di sola lettura utilizzando Aspose.Words per .NET. Questa funzionalità garantisce che i contenuti del documento rimangano intatti e inalterati, fornendo un ulteriore livello di sicurezza. Che tu stia condividendo informazioni sensibili o documenti legali, la protezione di sola lettura è uno strumento indispensabile nel tuo arsenale di gestione dei documenti.
 
 ## Domande frequenti
 

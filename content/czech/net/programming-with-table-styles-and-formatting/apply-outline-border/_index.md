@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-table-styles-and-formatting/apply-outline-border/
 ---
-## Úvod
+## Zavedení
 
 dnešním tutoriálu se ponoříme do světa manipulace s dokumenty pomocí Aspose.Words for .NET. Konkrétně se naučíme, jak aplikovat ohraničení obrysu na tabulku v dokumentu aplikace Word. Toto je fantastická dovednost, kterou můžete mít ve své sadě nástrojů, pokud často pracujete s automatickým generováním a formátováním dokumentů. Začněme tedy na této cestě k tomu, aby vaše stoly byly nejen funkční, ale také vizuálně přitažlivé.
 
@@ -15,7 +15,7 @@ dnešním tutoriálu se ponoříme do světa manipulace s dokumenty pomocí Aspo
 
 Než se pustíme do kódu, budete potřebovat několik věcí:
 
-1.  Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Vhodné vývojové prostředí, jako je Visual Studio.
 3. Základní znalost C#: Základní znalost C# vám pomůže pokračovat ve výukovém programu.
 
@@ -53,7 +53,7 @@ Dále musíme přistupovat ke konkrétní tabulce, kterou chceme formátovat.
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
- Tady,`GetChild` metoda načte první tabulku v dokumentu. Parametry`NodeType.Table, 0, true` ujistěte se, že máme správný typ uzlu.
+ Zde,`GetChild` metoda načte první tabulku v dokumentu. Parametry`NodeType.Table, 0, true` ujistěte se, že máme správný typ uzlu.
 
 ## Krok 3: Zarovnejte tabulku
 
@@ -96,7 +96,7 @@ Aby byl stůl vizuálně přitažlivější, vyplňte buňky světle zelenou bar
 table.SetShading(TextureIndex.TextureSolid, Color.LightGreen, Color.Empty);
 ```
 
- Tady,`SetShading` slouží k nanesení jednolité světle zelené barvy na buňky, čímž stůl vynikne.
+ Zde,`SetShading` slouží k nanesení jednolité světle zelené barvy na buňky, čímž stůl vynikne.
 
 ## Krok 7: Uložte dokument
 

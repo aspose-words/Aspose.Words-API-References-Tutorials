@@ -17,7 +17,7 @@ Aspose.Words for Java は、開発者が Microsoft Word を必要とせずに Wo
 
 ## 開発環境の設定
 
-コーディングの面に入る前に、開発環境を設定することが重要です。Javaがインストールされていることを確認し、Aspose.Words for Javaライブラリをダウンロードして構成します。詳細なインストール手順については、[ドキュメンテーション](https://reference.aspose.com/words/java/).
+コーディングの面に入る前に、開発環境を設定することが重要です。Javaがインストールされていることを確認し、Aspose.Words for Javaライブラリをダウンロードして構成します。詳細なインストール手順については、[ドキュメント](https://reference.aspose.com/words/java/).
 
 ## 新しいドキュメントを作成する
 

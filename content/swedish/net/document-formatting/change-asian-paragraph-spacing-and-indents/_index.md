@@ -9,7 +9,7 @@ url: /sv/net/document-formatting/change-asian-paragraph-spacing-and-indents/
 ---
 ## Introduktion
 
-Hallå där! Har du någonsin undrat hur man justerar mellanrum och indrag i ett Word-dokument, särskilt när det gäller asiatisk typografi? Om du arbetar med dokument som innehåller språk som kinesiska, japanska eller koreanska kanske du har märkt att standardinställningarna inte alltid klipper det. Frukta inte! I den här handledningen kommer vi att dyka in i hur du kan ändra asiatiskt styckeavstånd och indrag med Aspose.Words för .NET. Det är enklare än du tror och kan få dina dokument att se mycket mer professionella ut. Är du redo att förstärka din dokumentformatering? Låt oss börja!
+Hej där! Har du någonsin undrat hur man justerar mellanrum och indrag i ett Word-dokument, särskilt när det gäller asiatisk typografi? Om du arbetar med dokument som innehåller språk som kinesiska, japanska eller koreanska kanske du har märkt att standardinställningarna inte alltid klipper det. Var inte rädd! I den här handledningen kommer vi att dyka in i hur du kan ändra asiatiskt styckeavstånd och indrag med Aspose.Words för .NET. Det är enklare än du tror och kan få dina dokument att se mycket mer professionella ut. Är du redo att förstärka din dokumentformatering? Låt oss komma igång!
 
 ## Förutsättningar
 

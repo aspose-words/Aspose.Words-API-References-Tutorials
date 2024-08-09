@@ -2,7 +2,7 @@
 title: Kenali Dan Substitusi Dalam Pola Penggantian
 linktitle: Kenali Dan Substitusi Dalam Pola Penggantian
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mengenali dan mengganti teks dalam pola penggantian menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah dengan contoh terperinci.
+description: Pelajari cara mengenali dan mengganti teks dalam pola penggantian menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah dengan contoh mendetail.
 type: docs
 weight: 10
 url: /id/net/find-and-replace-text/recognize-and-substitutions-within-replacement-patterns/
@@ -74,7 +74,7 @@ FindReplaceOptions options = new FindReplaceOptions { UseSubstitutions = true };
 
 ## Langkah 5: Lakukan Penggantian
 
-Sekarang, mari kita lakukan operasi penggantian. Ini adalah dimana keajaiban terjadi!
+Sekarang, mari kita lakukan operasi penggantian. Di sinilah keajaiban terjadi!
 
 ```csharp
 doc.Range.Replace(regex, @"$2 take money from $1", options);
@@ -99,7 +99,7 @@ Selamat! Anda telah berhasil mempelajari cara mengenali dan mengganti teks dalam
 ## FAQ
 
 ### Apa itu Aspose.Words untuk .NET?
-Aspose.Words for .NET adalah perpustakaan yang kuat untuk bekerja dengan dokumen Word di aplikasi .NET. Ini memungkinkan Anda membuat, memodifikasi, dan mengonversi dokumen secara terprogram.
+Aspose.Words for .NET adalah perpustakaan yang kuat untuk bekerja dengan dokumen Word dalam aplikasi .NET. Ini memungkinkan Anda membuat, memodifikasi, dan mengonversi dokumen secara terprogram.
 
 ### Bagaimana cara menginstal Aspose.Words untuk .NET?
  Anda dapat menginstal Aspose.Words untuk .NET dari[tautan unduhan](https://releases.aspose.com/words/net/). Ikuti petunjuk instalasi yang disediakan.

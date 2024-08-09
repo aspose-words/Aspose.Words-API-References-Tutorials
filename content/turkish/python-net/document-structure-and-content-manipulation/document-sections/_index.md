@@ -2,7 +2,7 @@
 title: Belge Bölümlerini ve Düzenini Yönetme
 linktitle: Belge Bölümlerini ve Düzenini Yönetme
 second_title: Aspose.Words Python Doküman Yönetimi API'si
-description: Aspose.Words for Python ile belge bölümlerini ve düzenlerini nasıl yöneteceğinizi öğrenin. Bölümler oluşturun, değiştirin, düzenleri özelleştirin ve daha fazlasını yapın. Şimdi başla!
+description: Aspose.Words for Python ile belge bölümlerini ve düzenlerini nasıl yöneteceğinizi öğrenin. Bölümler oluşturun, değiştirin, düzenleri özelleştirin ve daha fazlasını yapın. Şimdi başlayın!
 type: docs
 weight: 24
 url: /tr/python-net/document-structure-and-content-manipulation/document-sections/

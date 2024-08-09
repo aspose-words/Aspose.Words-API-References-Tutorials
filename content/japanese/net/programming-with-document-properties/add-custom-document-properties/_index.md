@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "Properties.docx");
 
 ## ステップ2: カスタムドキュメントプロパティにアクセスする
 
-次に、Word 文書のカスタム ドキュメント プロパティにアクセスします。ここに、すべてのカスタム メタデータが保存されます。
+次に、Word 文書のカスタム ドキュメント プロパティにアクセスします。ここにすべてのカスタム メタデータが保存されます。
 
 ```csharp
 CustomDocumentProperties customDocumentProperties = doc.CustomDocumentProperties;

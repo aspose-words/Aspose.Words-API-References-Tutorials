@@ -15,7 +15,7 @@ url: /es/net/programming-with-document-properties/remove-custom-document-propert
 
 Antes de pasar al código, asegurémonos de que tiene todo lo que necesita:
 
-1.  Aspose.Words para la biblioteca .NET: puede[descarguelo aqui](https://releases.aspose.com/words/net/).
+1.  Aspose.Words para la biblioteca .NET: puede[descárgalo aquí](https://releases.aspose.com/words/net/).
 2. .NET Framework: asegúrese de tener .NET Framework instalado en su máquina.
 3. Conocimientos básicos de C#: Es útil estar familiarizado con la programación en C#.
 
@@ -104,7 +104,7 @@ Aspose.Words para .NET está diseñado específicamente para aplicaciones .NET. 
  Puede[descargar una prueba gratuita](https://releases.aspose.com/) del sitio web de Aspose.
 
 ### 4. ¿Dónde puedo encontrar más tutoriales sobre Aspose.Words para .NET?
- Revisar la[documentación](https://reference.aspose.com/words/net/) para más tutoriales y ejemplos.
+ Mira el[documentación](https://reference.aspose.com/words/net/) para más tutoriales y ejemplos.
 
 ### 5. ¿Cómo puedo adquirir una licencia de Aspose.Words para .NET?
  Puede[comprar una licencia](https://purchase.aspose.com/buy) directamente desde el sitio web de Aspose.

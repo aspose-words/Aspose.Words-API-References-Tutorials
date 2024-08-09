@@ -7,9 +7,9 @@ type: docs
 weight: 10
 url: /cs/net/add-content-using-documentbuilder/insert-combo-box-form-field/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Jste připraveni ponořit se do světa automatizace dokumentů? Ať už jste zkušený vývojář nebo teprve začínáte, jste na správném místě. Dnes prozkoumáme, jak vložit pole formuláře se seznamem do dokumentu aplikace Word pomocí Aspose.Words for .NET. Věřte mi, že na konci tohoto tutoriálu budete profesionálem ve snadném vytváření interaktivních dokumentů. Takže, vezměte si šálek kávy, posaďte se a můžeme začít!
+Ahoj! Jste připraveni ponořit se do světa automatizace dokumentů? Ať už jste zkušený vývojář nebo teprve začínáte, jste na správném místě. Dnes prozkoumáme, jak vložit pole formuláře se seznamem do dokumentu aplikace Word pomocí Aspose.Words for .NET. Věřte mi, že na konci tohoto tutoriálu budete profesionálem ve snadném vytváření interaktivních dokumentů. Takže, vezměte si šálek kávy, posaďte se a můžeme začít!
 
 ## Předpoklady
 

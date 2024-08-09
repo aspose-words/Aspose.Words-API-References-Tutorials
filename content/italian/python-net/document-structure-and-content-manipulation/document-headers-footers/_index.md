@@ -12,7 +12,7 @@ Intestazioni e piè di pagina nei documenti di Word svolgono un ruolo cruciale n
 
 ## Iniziare con Aspose.Words per Python
 
-Prima di immergerti nella manipolazione di intestazioni e piè di pagina, devi impostare Aspose.Words per Python. Segui questi passi:
+Prima di immergerti nella manipolazione di intestazioni e piè di pagina, devi impostare Aspose.Words per Python. Segui questi passaggi:
 
 1. Installazione: installa Aspose.Words per Python utilizzando pip.
 

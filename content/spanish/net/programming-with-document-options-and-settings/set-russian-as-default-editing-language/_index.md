@@ -2,7 +2,7 @@
 title: Establecer ruso como idioma de edición predeterminado
 linktitle: Establecer ruso como idioma de edición predeterminado
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda cómo configurar el ruso como idioma de edición predeterminado en documentos de Word usando Aspose.Words para .NET. Siga nuestra guía paso a paso para obtener instrucciones detalladas.
+description: Aprenda a configurar el ruso como idioma de edición predeterminado en documentos de Word usando Aspose.Words para .NET. Siga nuestra guía paso a paso para obtener instrucciones detalladas.
 type: docs
 weight: 10
 url: /es/net/programming-with-document-options-and-settings/set-russian-as-default-editing-language/

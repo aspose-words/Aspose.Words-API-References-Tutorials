@@ -60,7 +60,7 @@ Därefter måste du ange sökvägen till din dokumentkatalog. Det är här ditt 
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
 
 ## Steg 4: Ladda dokumentet
 
@@ -74,7 +74,7 @@ Document doc = new Document(dataDir + "No default editing language.docx", loadOp
 
 ## Steg 5: Kontrollera språkinställningarna
 
- När du har laddat dokumentet är det viktigt att kontrollera om språkinställningarna har tillämpats korrekt. Du kan göra detta genom att kontrollera`LocaleIdFarEast` fast egendom.
+ När du har laddat dokumentet är det viktigt att kontrollera om språkinställningarna har tillämpats korrekt. Du kan göra detta genom att kontrollera`LocaleIdFarEast` egendom.
 
 ```csharp
 int localeIdFarEast = doc.Styles.DefaultFont.LocaleIdFarEast;
@@ -99,7 +99,7 @@ Och där har du det! Du har framgångsrikt lagt till japanska som redigeringsspr
  Ja, du behöver en licens för kommersiellt bruk. Du kan köpa en[här](https://purchase.aspose.com/buy) eller få en tillfällig licens[här](https://purchase.aspose.com/temporary-license/).
 
 ### Vilka andra funktioner erbjuder Aspose.Words för .NET?
- Aspose.Words för .NET erbjuder ett brett utbud av funktioner, inklusive generering av dokument, konvertering, manipulation och mer. Kolla in[dokumentation](https://reference.aspose.com/words/net/) för mer detaljer.
+ Aspose.Words för .NET erbjuder ett brett utbud av funktioner, inklusive generering av dokument, konvertering, manipulation och mer. Kolla in[dokumentation](https://reference.aspose.com/words/net/) för mer information.
 
 ### Kan jag prova Aspose.Words för .NET innan jag köper det?
  Absolut! Du kan ladda ner en gratis testversion[här](https://releases.aspose.com/).

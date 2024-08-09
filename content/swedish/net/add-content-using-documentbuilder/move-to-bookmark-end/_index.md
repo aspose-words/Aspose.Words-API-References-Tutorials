@@ -1,6 +1,6 @@
 ---
-title: Flytta till bokmärke slut i Word-dokument
-linktitle: Flytta till bokmärke slut i Word-dokument
+title: Flytta till bokmärkesslut i Word-dokument
+linktitle: Flytta till bokmärkesslut i Word-dokument
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du flyttar till ett bokmärkesände i ett Word-dokument med Aspose.Words för .NET. Följ vår detaljerade, steg-för-steg-guide för exakt dokumenthantering.
 type: docs
@@ -109,7 +109,7 @@ När du är i slutet av bokmärket kan du infoga text eller annat innehåll. Lå
 builder.Writeln("This is a bookmark.");
 ```
 
-Och det är allt! Du har lyckats flytta till slutet av ett bokmärke och infogat text där.
+Och det är det! Du har lyckats flytta till slutet av ett bokmärke och infogat text där.
 
 ## Steg 6: Spara dokumentet
 
@@ -138,7 +138,7 @@ Där har du det! Du har precis lärt dig hur du flyttar till slutet av ett bokm�
 
 ### 3. Kan jag infoga andra typer av innehåll i bokmärkesänden?
 
- Ja, DocumentBuilder låter dig infoga olika innehållstyper som tabeller, bilder och mer. Kolla[dokumentation](https://reference.aspose.com/words/net/) för mer detaljer.
+ Ja, DocumentBuilder låter dig infoga olika innehållstyper som tabeller, bilder och mer. Kontrollera[dokumentation](https://reference.aspose.com/words/net/) för mer information.
 
 ### 4. Hur får jag en tillfällig licens för Aspose.Words?
 

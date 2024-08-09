@@ -87,7 +87,7 @@ Definir a direção do texto em documentos do Word é um processo simples com As
 
 ## Perguntas frequentes
 
-###  O que é`DocumentDirection` property used for?
+###  Qual é o`DocumentDirection` property used for?
 
  O`DocumentDirection` propriedade em`TxtLoadOptions` determina a direção do texto do documento. Pode ser definido para`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , ou`DocumentDirection.RightToLeft`.
 
@@ -105,4 +105,4 @@ Definir a direção do texto em documentos do Word é um processo simples com As
 
 ### Onde posso encontrar mais informações sobre o Aspose.Words for .NET?
 
- Para mais detalhes, confira o[Documentação Aspose.Words para .NET](https://reference.aspose.com/words/net/) . Você também pode explorar recursos adicionais como[Link para Download](https://releases.aspose.com/words/net/), [Comprar](https://purchase.aspose.com/buy), [Teste grátis](https://releases.aspose.com/), [Licença temporária](https://purchase.aspose.com/temporary-license/) , e[Apoiar](https://forum.aspose.com/c/words/8).
+ Para mais detalhes, confira o[Documentação Aspose.Words para .NET](https://reference.aspose.com/words/net/) . Você também pode explorar recursos adicionais como[Baixar link](https://releases.aspose.com/words/net/), [Comprar](https://purchase.aspose.com/buy), [Teste grátis](https://releases.aspose.com/), [Licença temporária](https://purchase.aspose.com/temporary-license/) , e[Apoiar](https://forum.aspose.com/c/words/8).

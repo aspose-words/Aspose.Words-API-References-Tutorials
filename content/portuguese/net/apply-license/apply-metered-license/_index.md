@@ -64,7 +64,7 @@ Para confirmar se a licença foi aplicada corretamente, vamos realizar uma opera
 Console.WriteLine(doc.PageCount);
 ```
 
-Esta etapa garante que seu documento seja carregado e processado usando a licença limitada.
+Esta etapa garante que seu documento seja carregado e processado usando a licença medida.
 
 ## Etapa 5: lidar com exceções
 

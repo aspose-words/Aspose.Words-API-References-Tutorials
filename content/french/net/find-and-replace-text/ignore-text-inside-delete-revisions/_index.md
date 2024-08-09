@@ -17,7 +17,7 @@ Avant de vous lancer dans ce didacticiel, assurez-vous que les conditions préal
 - Connaissance de base du langage de programmation C#.
 - Visual Studio installé sur votre système.
 -  Bibliothèque Aspose.Words for .NET intégrée à votre projet. Vous pouvez le télécharger depuis[ici](https://releases.aspose.com/words/net/).
-- Accès à Aspose.Words pour .NET[Documentation](https://reference.aspose.com/words/net/) pour référence.
+- Accès à Aspose.Words pour .NET[documentation](https://reference.aspose.com/words/net/) pour référence.
 
 ## Importer des espaces de noms
 

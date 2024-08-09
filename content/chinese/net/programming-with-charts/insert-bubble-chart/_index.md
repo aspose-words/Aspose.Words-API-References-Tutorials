@@ -89,7 +89,7 @@ doc.Save(dataDir + "WorkingWithCharts.InsertBubbleChart.docx");
 
 ### 我可以自定义气泡图的外观吗？
 
-当然！Aspose.Words for .NET 提供广泛的自定义选项，从颜色和标签到数据系列格式。查看[文档](https://reference.aspose.com/words/net/)更多细节。
+当然！Aspose.Words for .NET 提供广泛的自定义选项，从颜色和标签到数据系列格式。查看[文档](https://reference.aspose.com/words/net/)了解更多详情。
 
 ### 是否可以在单个文档中添加多个图表？
 

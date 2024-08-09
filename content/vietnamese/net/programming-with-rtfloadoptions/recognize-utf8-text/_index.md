@@ -15,7 +15,7 @@ Sẵn sàng để đi sâu vào một số nội dung công nghệ tuyệt vời
 
 Trước khi chuyển sang phần thú vị, hãy đảm bảo bạn có mọi thứ mình cần:
 
-1.  Aspose.Words for .NET Thư viện: Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/) . Nếu bạn chưa mua thì hãy mua ngay[dùng thử miễn phí](https://releases.aspose.com/) hoặc[mua nó ở đây](https://purchase.aspose.com/buy).
+1.  Aspose.Words for .NET Thư viện: Bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/) . Nếu bạn chưa mua thì hãy mua ngay[dùng thử miễn phí](https://releases.aspose.com/) hoặc[mua nó ở đây](https://purchase.aspose.com/buy).
 2. Môi trường phát triển: Visual Studio hoặc bất kỳ IDE nào khác hỗ trợ .NET.
 3. Kiến thức cơ bản về C#: Bạn sẽ cần phải thành thạo C# để theo dõi.
 
@@ -73,7 +73,7 @@ Dòng này lưu tài liệu với một tên mới để bạn có thể dễ d�
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn vừa học cách nhận dạng văn bản UTF-8 trong tài liệu Word bằng Aspose.Words cho .NET. Thủ thuật nhỏ này có thể giúp bạn đỡ đau đầu khi xử lý các tài liệu đa ngôn ngữ hoặc các ký tự đặc biệt.
+Và bạn có nó! Bạn vừa học cách nhận dạng văn bản UTF-8 trong tài liệu Word bằng Aspose.Words cho .NET. Thủ thuật nhỏ này có thể giúp bạn đỡ đau đầu khi xử lý các tài liệu đa ngôn ngữ hoặc các ký tự đặc biệt.
 
 Hãy nhớ rằng các bước chính là thiết lập các tùy chọn tải, tải tài liệu của bạn và lưu nó. Nó đơn giản như vậy! Vì vậy, hãy tiếp tục và thử xem. Bạn sẽ ngạc nhiên về việc xử lý văn bản phức tạp trong tài liệu Word của mình dễ dàng đến mức nào.
 

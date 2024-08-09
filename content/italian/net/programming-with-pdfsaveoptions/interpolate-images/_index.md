@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-pdfsaveoptions/interpolate-images/
 ---
-## introduzione
+## Introduzione
 
 Quando si tratta di elaborazione dei documenti, una delle esigenze più comuni è garantire che le immagini appaiano nitide e chiare nell'output finale. Che tu stia generando report, manuali o qualsiasi documento in cui la qualità visiva è fondamentale, l'interpolazione delle immagini nel tuo PDF può fare una grande differenza. Oggi approfondiremo come utilizzare Aspose.Words per .NET per interpolare le immagini quando si salva un documento Word come PDF. Questa tecnica garantisce che le tue immagini appaiano nitide, anche a diversi livelli di zoom o risoluzioni.
 

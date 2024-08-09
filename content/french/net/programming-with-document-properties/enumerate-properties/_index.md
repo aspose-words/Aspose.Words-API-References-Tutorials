@@ -15,7 +15,7 @@ Vous cherchez à travailler avec des documents Word par programmation ? Aspose.
 
 Avant de plonger dans le didacticiel, vous aurez besoin de quelques éléments pour commencer :
 
--  Aspose.Words pour .NET : vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/).
+-  Aspose.Words pour .NET : vous pouvez[téléchargez-le ici](https://releases.aspose.com/words/net/).
 - Environnement de développement : Visual Studio est recommandé, mais vous pouvez utiliser n'importe quel IDE C#.
 - Connaissance de base de C# : Une compréhension fondamentale de C# vous aidera à suivre.
 
@@ -95,7 +95,7 @@ foreach (DocumentProperty prop in doc.CustomDocumentProperties)
 
 ## Conclusion
 
-Et voila! Vous avez réussi à énumérer les propriétés intégrées et personnalisées d'un document Word à l'aide d'Aspose.Words pour .NET. Ce n'est que la pointe de l'iceberg en ce qui concerne ce que vous pouvez faire avec Aspose.Words. Que vous automatisiez la génération de documents ou manipuliez des documents complexes, Aspose.Words fournit un riche ensemble de fonctionnalités pour vous faciliter la vie.
+Et voilà ! Vous avez réussi à énumérer les propriétés intégrées et personnalisées d'un document Word à l'aide d'Aspose.Words pour .NET. Ce n'est que la pointe de l'iceberg en ce qui concerne ce que vous pouvez faire avec Aspose.Words. Que vous automatisiez la génération de documents ou manipuliez des documents complexes, Aspose.Words fournit un riche ensemble de fonctionnalités pour vous faciliter la vie.
 
 ## FAQ
 
@@ -112,4 +112,4 @@ Et voila! Vous avez réussi à énumérer les propriétés intégrées et person
 Oui, Aspose.Words prend en charge plusieurs langages .NET, dont VB.NET.
 
 ### Où puis-je trouver plus d’exemples ?
- Vérifiez[Documentation Aspose.Words pour .NET](https://reference.aspose.com/words/net/) pour plus d’exemples et d’informations détaillées.
+ Découvrez le[Documentation Aspose.Words pour .NET](https://reference.aspose.com/words/net/) pour plus d’exemples et d’informations détaillées.

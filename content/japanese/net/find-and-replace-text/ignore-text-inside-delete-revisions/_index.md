@@ -9,7 +9,7 @@ url: /ja/net/find-and-replace-text/ignore-text-inside-delete-revisions/
 ---
 ## 導入
 
-.NET 開発の分野では、Aspose.Words は Microsoft Word ドキュメントをプログラムで操作するための強力なライブラリとして際立っています。熟練した開発者でも、初心者でも、Aspose.Words の機能を習得すると、Word ドキュメントを効率的に操作、作成、管理する能力が大幅に向上します。このチュートリアルでは、その強力な機能の 1 つである、Aspose.Words for .NET を使用してドキュメント内の追跡された変更を処理する機能について詳しく説明します。
+.NET 開発の分野では、Aspose.Words は Microsoft Word ドキュメントをプログラムで操作するための堅牢なライブラリとして際立っています。熟練した開発者でも、初心者でも、Aspose.Words の機能を習得すると、Word ドキュメントを効率的に操作、作成、管理する能力が大幅に向上します。このチュートリアルでは、その強力な機能の 1 つである、Aspose.Words for .NET を使用してドキュメント内の追跡された変更を処理する機能について詳しく説明します。
 
 ## 前提条件
 
@@ -17,7 +17,7 @@ url: /ja/net/find-and-replace-text/ignore-text-inside-delete-revisions/
 - C# プログラミング言語に関する基本的な知識。
 - Visual Studio がシステムにインストールされています。
 -  Aspose.Words for .NETライブラリがプロジェクトに統合されます。ダウンロードはこちらから[ここ](https://releases.aspose.com/words/net/).
-- Aspose.Words for .NET へのアクセス[ドキュメンテーション](https://reference.aspose.com/words/net/)参考のため。
+- Aspose.Words for .NET へのアクセス[ドキュメント](https://reference.aspose.com/words/net/)参考までに。
 
 ## 名前空間のインポート
 
@@ -80,7 +80,7 @@ Aspose Web サイトからライブラリをダウンロードし、Visual Studi
 ### Aspose.Words for .NET を使用して、追跡されたリビジョンをプログラムで元に戻すことはできますか?
 はい、Aspose.Words for .NET を使用すると、追跡されたリビジョンをプログラムで管理および元に戻すことができ、ドキュメント編集ワークフローを正確に制御できます。
 
-### Aspose.Words for .NET は、履歴が追跡された大規模なドキュメントの処理に適していますか?
+### Aspose.Words for .NET は、履歴が追跡された大きなドキュメントの処理に適していますか?
 Aspose.Words for .NET は、大規模な追跡されたリビジョンを含む大規模なドキュメントを効率的に処理するように最適化されています。
 
 ### Aspose.Words for .NET のその他のリソースやサポートはどこで見つかりますか?

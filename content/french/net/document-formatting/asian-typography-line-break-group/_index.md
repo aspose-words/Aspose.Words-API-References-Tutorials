@@ -9,7 +9,7 @@ url: /fr/net/document-formatting/asian-typography-line-break-group/
 ---
 ## Introduction
 
-Vous êtes-vous déjà demandé comment affiner la typographie de vos documents Word à la perfection ? Surtout lorsqu’il s’agit de langues asiatiques, les nuances des sauts de ligne et du formatage peuvent être assez délicates. Mais ne vous inquiétez pas, nous avons ce qu'il vous faut ! Dans ce guide complet, nous expliquons comment contrôler les sauts de ligne de typographie asiatique dans les documents Word à l'aide d'Aspose.Words pour .NET. Que vous soyez un développeur chevronné ou débutant, ce didacticiel étape par étape vous guidera à travers tout ce que vous devez savoir. Prêt à rendre vos documents impeccables ? Commençons!
+Vous êtes-vous déjà demandé comment affiner la typographie de vos documents Word à la perfection ? Surtout lorsqu’il s’agit de langues asiatiques, les nuances des sauts de ligne et du formatage peuvent être assez délicates. Mais ne vous inquiétez pas, nous avons ce qu'il vous faut ! Dans ce guide complet, nous expliquons comment contrôler les sauts de ligne de typographie asiatique dans les documents Word à l'aide d'Aspose.Words pour .NET. Que vous soyez un développeur chevronné ou débutant, ce didacticiel étape par étape vous guidera à travers tout ce que vous devez savoir. Prêt à rendre vos documents impeccables ? Commençons !
 
 ## Conditions préalables
 
@@ -83,7 +83,7 @@ doc.Save(dataDir + "DocumentFormatting.AsianTypographyLineBreakGroup.docx");
 
 ## Conclusion
 
-Et voila! Avec seulement quelques lignes de code, vous maîtrisez l'art de contrôler les sauts de ligne de typographie asiatique dans les documents Word à l'aide d'Aspose.Words pour .NET. Cet outil puissant vous permet d'effectuer des ajustements précis, garantissant ainsi à vos documents un aspect professionnel et soigné. Que vous prépariez un rapport, une présentation ou tout autre document contenant du texte asiatique, ces étapes vous aideront à conserver une mise en forme impeccable. 
+Et voilà ! Avec seulement quelques lignes de code, vous maîtrisez l'art de contrôler les sauts de ligne de typographie asiatique dans les documents Word à l'aide d'Aspose.Words pour .NET. Cet outil puissant vous permet d'effectuer des ajustements précis, garantissant ainsi à vos documents un aspect professionnel et soigné. Que vous prépariez un rapport, une présentation ou tout autre document contenant du texte asiatique, ces étapes vous aideront à conserver une mise en forme impeccable. 
 
 ## FAQ
 

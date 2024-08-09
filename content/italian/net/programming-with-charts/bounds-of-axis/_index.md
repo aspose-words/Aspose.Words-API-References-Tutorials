@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-charts/bounds-of-axis/
 ---
-## introduzione
+## Introduzione
 
 Stai cercando di creare documenti professionali con grafici in .NET? Sei nel posto giusto! Questa guida ti guiderà attraverso il processo di utilizzo di Aspose.Words per .NET per impostare i limiti dell'asse in un grafico. Analizzeremo ogni passaggio per assicurarti di poterlo seguire facilmente, anche se sei nuovo nella libreria. Quindi, tuffiamoci e iniziamo!
 
@@ -121,4 +121,4 @@ Aspose.Words per .NET è una libreria che consente di creare, modificare e conve
  È disponibile la documentazione dettagliata[Qui](https://reference.aspose.com/words/net/).
 
 ### Come posso ottenere supporto per Aspose.Words?
- Puoi visitare il[Forum di assistenza](https://forum.aspose.com/c/words/8) per assistenza.
+ Puoi visitare il[forum di supporto](https://forum.aspose.com/c/words/8) per assistenza.

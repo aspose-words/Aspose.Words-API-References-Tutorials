@@ -89,7 +89,7 @@ doc.Save(dataDir + "WorkingWithCharts.InsertBubbleChart.docx");
 
 ### バブルチャートの外観をカスタマイズできますか?
 
-もちろんです！Aspose.Words for .NET は、色やラベルからデータ系列の書式設定まで、幅広いカスタマイズ オプションを提供します。[ドキュメンテーション](https://reference.aspose.com/words/net/)詳細については。
+もちろんです！Aspose.Words for .NET は、色やラベルからデータ系列の書式設定まで、幅広いカスタマイズ オプションを提供します。[ドキュメント](https://reference.aspose.com/words/net/)詳細についてはこちらをご覧ください。
 
 ### 1 つのドキュメントに複数のグラフを追加することは可能ですか?
 

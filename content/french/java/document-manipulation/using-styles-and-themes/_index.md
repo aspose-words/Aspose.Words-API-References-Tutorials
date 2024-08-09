@@ -10,7 +10,7 @@ url: /fr/java/document-manipulation/using-styles-and-themes/
 
 ## Introduction à l'utilisation des styles et des thèmes dans Aspose.Words pour Java
 
-Dans ce guide, nous explorerons comment utiliser les styles et les thèmes dans Aspose.Words for Java pour améliorer le formatage et l'apparence de vos documents. Nous aborderons des sujets tels que la récupération de styles, la copie de styles, la gestion de thèmes et l'insertion de séparateurs de style. Commençons!
+Dans ce guide, nous explorerons comment utiliser les styles et les thèmes dans Aspose.Words for Java pour améliorer le formatage et l'apparence de vos documents. Nous aborderons des sujets tels que la récupération de styles, la copie de styles, la gestion de thèmes et l'insertion de séparateurs de style. Commençons !
 
 ## Récupération de styles
 
@@ -84,7 +84,7 @@ Ces extraits montrent comment récupérer et modifier les propriétés du thème
 
 ## Insertion de séparateurs de style
 
-Les séparateurs de style sont utiles pour appliquer différents styles dans un même paragraphe. Voici un exemple de la façon d'insérer des séparateurs de style :
+Les séparateurs de style sont utiles pour appliquer différents styles dans un seul paragraphe. Voici un exemple de la façon d'insérer des séparateurs de style :
 
 ```java
 @Test

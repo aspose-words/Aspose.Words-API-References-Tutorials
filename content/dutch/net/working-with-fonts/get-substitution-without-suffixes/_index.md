@@ -7,17 +7,18 @@ type: docs
 weight: 10
 url: /nl/net/working-with-fonts/get-substitution-without-suffixes/
 ---
+## Invoering
 
-Welkom bij deze uitgebreide handleiding over het beheren van lettertypevervanging met Aspose.Words voor .NET. Als u ooit last heeft gehad van lettertypen die niet correct in uw documenten verschijnen, bent u hier aan het juiste adres. In deze zelfstudie leert u stapsgewijs hoe u lettertypevervanging zonder achtervoegsels efficiënt kunt afhandelen. Laten we beginnen!
+Welkom bij deze uitgebreide handleiding over het beheren van lettertypevervanging met Aspose.Words voor .NET. Als u ooit last heeft gehad van lettertypen die niet correct in uw documenten verschijnen, bent u hier aan het juiste adres. In deze zelfstudie leert u stapsgewijs hoe u lettertypevervanging zonder achtervoegsels efficiënt kunt afhandelen.
 
 ## Vereisten
 
 Voordat u in de zelfstudie duikt, moet u ervoor zorgen dat u over het volgende beschikt:
 
 - Basiskennis van C#: Als u C#-programmering begrijpt, wordt het gemakkelijker om de stappen te volgen en te implementeren.
--  Aspose.Words voor .NET-bibliotheek: Download en installeer de bibliotheek van de .NET-bibliotheek[download link](https://releases.aspose.com/words/net/).
+-  Aspose.Words voor .NET-bibliotheek: Download en installeer de bibliotheek van de .NET-bibliotheek[downloadlink](https://releases.aspose.com/words/net/).
 - Ontwikkelomgeving: Zet een ontwikkelomgeving zoals Visual Studio op om uw code te schrijven en uit te voeren.
-- Voorbeelddocument: een voorbeelddocument (bijv.`Rendering.docx`) om mee te werken tijdens deze zelfstudie.
+-  Voorbeelddocument: een voorbeelddocument (bijv.`Rendering.docx`) om mee te werken tijdens deze zelfstudie.
 
 ## Naamruimten importeren
 
@@ -26,7 +27,6 @@ Eerst moeten we de benodigde naamruimten importeren om toegang te krijgen tot de
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Fonts;
-using Aspose.Words.WarningInfo;
 using System.Collections.Generic;
 ```
 
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## Stap 5: Maak de klasse Waarschuwingshandler aan
 
-Om waarschuwingen effectief af te handelen, maakt u een aangepaste klasse die de`IWarningCallback` koppel. Deze klasse registreert en registreert waarschuwingen voor lettertypevervanging.
+ Om waarschuwingen effectief af te handelen, maakt u een aangepaste klasse die de`IWarningCallback` interface. Deze klasse registreert en registreert waarschuwingen voor lettertypevervanging.
 
 ```csharp
 public class DocumentSubstitutionWarnings : IWarningCallback
@@ -92,8 +92,8 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 }
 ```
 
-In deze klas:
--  De`Warning` methode registreert waarschuwingen met betrekking tot lettertypevervanging.
+In deze klasse:
+-  De`Warning`methode registreert waarschuwingen met betrekking tot lettertypevervanging.
 -  De`FontWarnings` collection slaat deze waarschuwingen op voor verdere inspectie of registratie.
 
 ## Conclusie
@@ -102,22 +102,22 @@ U hebt nu het proces van het vervangen van lettertypen zonder achtervoegsels ond
 
 ## Veelgestelde vragen
 
-### V1: Hoe kan ik lettertypen uit meerdere aangepaste mappen gebruiken?
+### Hoe kan ik lettertypen uit meerdere aangepaste mappen gebruiken?
 
  Je kunt er meerdere toevoegen`FolderFontSource` exemplaren naar de`fontSources` lijst en update de lettertypebronnen dienovereenkomstig.
 
-### V2: Waar kan ik een gratis proefversie van Aspose.Words voor .NET downloaden?
+### Waar kan ik een gratis proefversie van Aspose.Words voor .NET downloaden?
 
  U kunt een gratis proefversie downloaden van de[Aspose gratis proefpagina](https://releases.aspose.com/).
 
-###  Vraag 3: Kan ik meerdere soorten waarschuwingen afhandelen met behulp van`IWarningCallback`?
+###  Kan ik meerdere soorten waarschuwingen afhandelen met behulp van`IWarningCallback`?
 
- Ja de`IWarningCallback` Met de interface kunt u verschillende soorten waarschuwingen afhandelen, niet alleen lettertypevervanging.
+ Ja, de`IWarningCallback` Met de interface kunt u verschillende soorten waarschuwingen afhandelen, niet alleen lettertypevervanging.
 
-### V4: Waar kan ik ondersteuning krijgen voor Aspose.Words?
+### Waar kan ik ondersteuning krijgen voor Aspose.Words?
 
  Voor ondersteuning kunt u terecht op de[Aspose.Words-ondersteuningsforum](https://forum.aspose.com/c/words/8).
 
-### Vraag 5: Is het mogelijk om een tijdelijke licentie aan te schaffen?
+### Is het mogelijk om een tijdelijke licentie aan te schaffen?
 
  Ja, u kunt een tijdelijke licentie verkrijgen bij de[tijdelijke licentiepagina](https://purchase.aspose.com/temporary-license/).

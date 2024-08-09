@@ -10,7 +10,7 @@ url: /pl/java/document-manipulation/splitting-documents-into-pages/
 
 Jeśli pracujesz z przetwarzaniem dokumentów w języku Java, Aspose.Words for Java to potężny interfejs API, który może pomóc w efektywnym dzieleniu dokumentów na osobne strony. W tym samouczku krok po kroku przeprowadzimy Cię przez proces dzielenia dokumentów przy użyciu dostarczonego kodu źródłowego. Pod koniec tego samouczka będziesz mógł z łatwością dzielić dokumenty, co poprawi Twoje możliwości zarządzania dokumentami.
 
-## 1. Wstęp
+## 1. Wprowadzenie
 
 Aspose.Words for Java to biblioteka Java, która umożliwia programowe manipulowanie dokumentami programu Word. Jednym z typowych zadań jest podzielenie dokumentu na osobne strony, co może być przydatne do różnych celów, takich jak archiwizacja, drukowanie lub przetwarzanie dokumentów.
 

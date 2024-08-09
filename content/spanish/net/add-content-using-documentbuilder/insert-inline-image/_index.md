@@ -44,7 +44,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Paso 2: inserte la imagen en línea
 
- Utilizar el`InsertImage` método de la`DocumentBuilder` clase para insertar una imagen en el documento en la posición actual.
+ Utilice el`InsertImage` método de la`DocumentBuilder` clase para insertar una imagen en el documento en la posición actual.
 
 ```csharp
 string imagePath = "PATH_TO_YOUR_IMAGE_FILE";

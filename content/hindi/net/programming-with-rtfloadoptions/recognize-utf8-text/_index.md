@@ -49,7 +49,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 RtfLoadOptions loadOptions = new RtfLoadOptions { RecognizeUtf8Text = true };
 ```
 
- व्यवस्थित करके`RecognizeUtf8Text` को`true`, हम Aspose.Words को UTF-8 टेक्स्ट पर नज़र रखने के लिए कह रहे हैं। यह विभिन्न प्रकार के वर्णों वाले दस्तावेज़ों से निपटने के दौरान बहुत उपयोगी है।
+ सेटिंग करके`RecognizeUtf8Text` को`true`, हम Aspose.Words को UTF-8 टेक्स्ट पर नज़र रखने के लिए कह रहे हैं। यह विभिन्न प्रकार के वर्णों वाले दस्तावेज़ों से निपटने के दौरान बहुत उपयोगी है।
 
 ## चरण 3: दस्तावेज़ लोड करें
 

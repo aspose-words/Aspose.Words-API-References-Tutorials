@@ -9,7 +9,7 @@ url: /hu/net/document-formatting/space-between-asian-and-latin-text/
 ---
 ## Bevezetés
 
-Halihó! Volt már olyan elkeserítő pillanata, amikor Word-dokumentummal dolgozik, és az ázsiai és a latin szöveg közötti térköz egyszerűen nem tűnik megfelelőnek? Olyan ez, mintha különböző készletekből próbálnád összeilleszteni a puzzle darabjait, és ez bárkit megőrjít! De ne aggódj, gondoskodtam rólad. Ma az Aspose.Words for .NET világába merülünk, hogy pontosan ezt a problémát kezeljük. Az oktatóanyag végére pontosan tudni fogja, hogyan állíthatja be automatikusan az ázsiai és latin szöveg közötti távolságot a Word-dokumentumokban, mint egy profi.
+Szia! Volt már olyan elkeserítő pillanata, amikor Word-dokumentummal dolgozik, és az ázsiai és a latin szöveg közötti térköz egyszerűen nem tűnik megfelelőnek? Olyan ez, mintha különböző készletekből próbálnád összeilleszteni a puzzle darabjait, és ez bárkit megőrjít! De ne aggódj, gondoskodtam rólad. Ma az Aspose.Words for .NET világába merülünk, hogy pontosan ezt a problémát kezeljük. Az oktatóanyag végére pontosan tudni fogja, hogyan állíthatja be automatikusan az ázsiai és latin szöveg közötti távolságot a Word-dokumentumokban, mint egy profi.
 
 ## Előfeltételek
 
@@ -20,7 +20,7 @@ Mielőtt belevágnánk a varázslatba, győződjünk meg arról, hogy mindenünk
 3. Alapvető C# ismerete: Nem kell varázslónak lenned, de egy kis ismerkedés sokat segít.
 4.  Érvényes licenc: Ingyenes próbaverzió[itt](https://releases.aspose.com/) vagy vásároljon licencet[itt](https://purchase.aspose.com/buy).
 
-Rendben, megvan minden? Fantasztikus! Mossuk be a kezünket.
+Rendben, megvan minden? Döbbenetes! Mossuk be a kezünket.
 
 ## Névterek importálása
 
@@ -55,7 +55,7 @@ paragraphFormat.AddSpaceBetweenFarEastAndAlpha = true;
 paragraphFormat.AddSpaceBetweenFarEastAndDigit = true;
 ```
 
- A beállítással`AddSpaceBetweenFarEastAndAlpha`és`AddSpaceBetweenFarEastAndDigit` nak nek`true`, azt mondjuk az Aspose.Words-nek, hogy automatikusan állítsa be az ázsiai karakterek és a latin betűk vagy számjegyek közötti távolságot.
+ Beállítás által`AddSpaceBetweenFarEastAndAlpha`és`AddSpaceBetweenFarEastAndDigit` hogy`true`, azt mondjuk az Aspose.Words-nek, hogy automatikusan állítsa be az ázsiai karakterek és a latin betűk vagy számjegyek közötti távolságot.
 
 ## 3. lépés: Szöveg hozzáadása a dokumentumhoz
 

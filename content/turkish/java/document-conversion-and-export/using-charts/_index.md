@@ -127,11 +127,11 @@ Bu eğitimde Aspose.Words for Java kullanarak grafiklerle nasıl çalışılaca�
 
 ### Bir grafiğe birden fazla seriyi nasıl ekleyebilirim?
 
- kullanarak bir grafiğe birden fazla seri ekleyebilirsiniz.`chart.getSeries().add()` yöntem. Seri adını, kategorileri ve veri değerlerini belirttiğinizden emin olun.
+ kullanarak bir grafiğe birden fazla seri ekleyebilirsiniz.`chart.getSeries().add()` Yöntem. Seri adını, kategorileri ve veri değerlerini belirttiğinizden emin olun.
 
 ### Veri etiketlerini özel sayı biçimleriyle nasıl biçimlendirebilirim?
 
-Veri etiketlerini şuraya erişerek biçimlendirebilirsiniz:`DataLabels` bir serinin özellikleri ve kullanılarak istenilen format kodunun ayarlanması`getNumberFormat().setFormatCode()`.
+Veri etiketlerini şuraya erişerek biçimlendirebilirsiniz:`DataLabels` bir serinin özellikleri ve kullanılarak istenen format kodunun ayarlanması`getNumberFormat().setFormatCode()`.
 
 ### Bir grafikte eksen özelliklerini nasıl özelleştiririm?
 

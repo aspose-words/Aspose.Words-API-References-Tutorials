@@ -15,8 +15,8 @@ Những hướng dẫn này cung cấp cho bạn cách tiếp cận thực hành
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Chèn đối tượng Ole vào tài liệu Word](./insert-ole-object/) | Tìm hiểu cách chèn đối tượng OLE vào tài liệu word bằng Aspose.Words cho .NET. |
-| [Chèn đối tượng Ole vào Word bằng gói Ole](./insert-ole-object-with-ole-package/) | Tìm hiểu cách chèn đối tượng OLE trong word bằng gói OLE vào tài liệu bằng Aspose.Words cho .NET. |
-| [Chèn đối tượng Ole vào tài liệu Word dưới dạng biểu tượng](./insert-ole-object-as-icon/) | Tìm hiểu cách chèn đối tượng OLE vào tài liệu word dưới dạng biểu tượng với Aspose.Words cho .NET. |
-| [Chèn đối tượng Ole làm biểu tượng bằng luồng](./insert-ole-object-as-icon-using-stream/) | Tìm hiểu cách chèn đối tượng OLE làm biểu tượng bằng luồng với Aspose.Words cho .NET. |
-| [Đọc thuộc tính XControl hoạt động từ tệp Word](./read-active-xcontrol-properties/) | Đọc thuộc tính của điều khiển ActiveX trong tệp Word bằng Aspose.Words for .NET. |
+| [Chèn đối tượng Ole vào tài liệu Word](./insert-ole-object/) | Tìm hiểu cách chèn đối tượng OLE vào tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước này. Nâng cao tài liệu của bạn với nội dung được nhúng. |
+| [Chèn đối tượng Ole vào Word bằng gói Ole](./insert-ole-object-with-ole-package/) | Tìm hiểu cách chèn đối tượng OLE vào tài liệu Word bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn chi tiết từng bước của chúng tôi để nhúng tệp một cách liền mạch. |
+| [Chèn đối tượng Ole vào tài liệu Word dưới dạng biểu tượng](./insert-ole-object-as-icon/) | Tìm hiểu cách chèn đối tượng OLE làm biểu tượng trong tài liệu Word bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn từng bước của chúng tôi để cải thiện tài liệu của bạn. |
+| [Chèn đối tượng Ole làm biểu tượng bằng luồng](./insert-ole-object-as-icon-using-stream/) | Tìm hiểu cách chèn đối tượng OLE làm biểu tượng bằng cách sử dụng luồng có Aspose.Words dành cho .NET trong hướng dẫn chi tiết từng bước này. |
+| [Đọc thuộc tính XControl hoạt động từ tệp Word](./read-active-xcontrol-properties/) | Tìm hiểu cách đọc thuộc tính điều khiển ActiveX từ tệp Word bằng Aspose.Words cho .NET trong hướng dẫn từng bước. Nâng cao kỹ năng tự động hóa tài liệu của bạn. |

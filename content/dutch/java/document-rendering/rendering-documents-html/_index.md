@@ -64,7 +64,7 @@ public class DocumentRenderer {
 }
 ```
 
-Met deze code wordt uw document in HTML-indeling opgeslagen. U kunt de HTML-uitvoer verder aanpassen door de`HtmlSaveOptions` zoals nodig.
+Met deze code wordt uw document in HTML-indeling opgeslagen. U kunt de HTML-uitvoer verder aanpassen door de`HtmlSaveOptions` indien nodig.
 
 ## Stap 4: De code uitvoeren
 

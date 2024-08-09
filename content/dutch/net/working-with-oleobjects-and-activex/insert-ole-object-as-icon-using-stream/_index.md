@@ -2,125 +2,98 @@
 title: Voeg Ole-object in als pictogram met behulp van Stream
 linktitle: Voeg Ole-object in als pictogram met behulp van Stream
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u een OLE-object als pictogram invoegt met behulp van een stream met Aspose.Words voor .NET.
+description: Leer hoe u een OLE-object als pictogram invoegt met behulp van een stream met Aspose.Words voor .NET in deze gedetailleerde, stapsgewijze zelfstudie.
 type: docs
 weight: 10
 url: /nl/net/working-with-oleobjects-and-activex/insert-ole-object-as-icon-using-stream/
 ---
+## Invoering
 
-Hier is een stapsgewijze handleiding om de onderstaande C#-broncode uit te leggen, waarin wordt geïllustreerd hoe u een OLE-object als pictogram kunt invoegen met behulp van een stream met Aspose.Words voor .NET.
+In deze tutorial duiken we in een supercoole functie van Aspose.Words voor .NET: een OLE-object (Object Linking and Embedding) invoegen als een pictogram met behulp van een stream. Of u nu een PowerPoint-presentatie, een Excel-spreadsheet of een ander type bestand insluit, deze handleiding laat u precies zien hoe u dit moet doen. Klaar om aan de slag te gaan? Laten we gaan!
 
-## Stap 1: Importeer de benodigde referenties
-Zorg ervoor dat u, voordat u begint, de benodigde referenties hebt geïmporteerd om Aspose.Words voor .NET in uw project te gebruiken. Dit omvat het importeren van de Aspose.Words-bibliotheek en het toevoegen van de vereiste naamruimten aan uw bronbestand.
+## Vereisten
+
+Voordat we ingaan op de code, zijn er een paar dingen die je nodig hebt:
+
+-  Aspose.Words voor .NET: als je dat nog niet hebt gedaan,[downloaden](https://releases.aspose.com/words/net/) en installeer Aspose.Words voor .NET.
+- Ontwikkelomgeving: Visual Studio of een andere C#-ontwikkelomgeving.
+- Invoerbestanden: het bestand dat u wilt insluiten (bijvoorbeeld een PowerPoint-presentatie) en een pictogramafbeelding.
+
+## Naamruimten importeren
+
+Zorg er om te beginnen voor dat u de benodigde naamruimten in uw project heeft geïmporteerd:
 
 ```csharp
+using System;
+using System.IO;
 using Aspose.Words;
 using Aspose.Words.Drawing;
-using System.IO;
 ```
 
-## Stap 2: Maak een nieuw document en een documentgenerator
- In deze stap maken we een nieuw document met behulp van de`Document` klasse en een documentbouwer met behulp van de`DocumentBuilder` klas.
+Laten we het proces stap voor stap opsplitsen, zodat het gemakkelijk te volgen is.
+
+## Stap 1: Maak een nieuw document
+
+Eerst maken we een nieuw document en een documentbouwer om ermee te werken.
 
 ```csharp
+// Pad naar uw documentmap
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Stap 3: Voeg een OLE-object in als een pictogram uit een stream
- Gebruik die van de Document Builder`InsertOleObjectAsIcon` methode om een OLE-object als een pictogram uit een stream in het document in te voegen. Geef de gegevensstroom, het objecttype, het pictogrampad en de naam van het ingesloten object op.
+ Denk aan`Document` als uw blanco canvas en`DocumentBuilder` als je penseel. We zijn onze tools aan het opzetten om te beginnen met het maken van ons meesterwerk.
+
+## Stap 2: Bereid de stream voor
+
+Vervolgens moeten we een geheugenstroom voorbereiden die het bestand bevat dat we willen insluiten. In dit voorbeeld sluiten we een PowerPoint-presentatie in.
 
 ```csharp
-using (MemoryStream stream = new MemoryStream(File.ReadAllBytes(MyDir + "Presentation.pptx")))
+using (MemoryStream stream = new MemoryStream(File.ReadAllBytes("Path_to_your_directory/Presentation.pptx")))
 {
-     builder.InsertOleObjectAsIcon(stream, "Package", ImagesDir + "Logo icon.ico", "My embedded file");
+```
+
+Deze stap is hetzelfde als het aanbrengen van verf op het penseel. We zijn ons bestand aan het voorbereiden om te worden ingesloten.
+
+## Stap 3: Voeg het OLE-object in als een pictogram
+
+Nu gebruiken we de documentbuilder om het OLE-object in het document in te voegen. We specificeren de bestandsstream, de ProgID voor het type bestand (in dit geval "Pakket"), het pad naar de pictogramafbeelding en een label voor het ingesloten bestand.
+
+```csharp
+builder.InsertOleObjectAsIcon(stream, "Package", "Path_to_your_directory/Logo icon.ico", "My embedded file");
 }
 ```
+
+Dit is waar de magie gebeurt! We sluiten ons bestand in en geven het weer als een pictogram in het document.
 
 ## Stap 4: Sla het document op
- Gebruik die van het document`Save` methode om het document in een bestand op te slaan.
+
+Ten slotte slaan we het document op een opgegeven pad op.
 
 ```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
+doc.Save(dataDir + "WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
 ```
 
-### Voorbeeldbroncode voor het invoegen van een OLE-object als pictogram met behulp van een stream met Aspose.Words voor .NET
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-using (MemoryStream stream = new MemoryStream(File.ReadAllBytes(MyDir + "Presentation.pptx")))
-{
-     builder.InsertOleObjectAsIcon(stream, "Package", ImagesDir + "Logo icon.ico", "My embedded file");
-}
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
-```
-
-Dit is een compleet codevoorbeeld voor het invoegen van een OLE-object als pictogram met behulp van een stream met Aspose.Words voor .NET. Zorg ervoor dat u de nodige referenties importeert en volg de eerder beschreven stappen om deze code in uw project te integreren.
+Deze stap is alsof u uw voltooide schilderij in een lijst plaatst en aan de muur hangt. Uw document is nu klaar voor gebruik!
 
 ## Conclusie
 
-In de stapsgewijze handleiding hierboven wordt uitgelegd hoe u een OLE-object als pictogram in een Word-document kunt invoegen met behulp van een stroom met Aspose.Words voor .NET. Door de beschreven stappen te volgen, kunt u deze functionaliteit in uw project integreren. Zorg ervoor dat u de benodigde referenties importeert, een nieuwe document- en documentgenerator maakt, het OLE-object invoegt als een pictogram uit de stream en vervolgens het document opslaat. Gebruik de meegeleverde voorbeeldcode als uitgangspunt en pas deze aan uw behoeften aan.
+En daar heb je het! U hebt met succes een OLE-object als pictogram in een Word-document ingesloten met Aspose.Words voor .NET. Met deze krachtige functie kunt u eenvoudig dynamische en interactieve documenten maken. Of u nu presentaties, spreadsheets of andere bestanden insluit, Aspose.Words maakt het een fluitje van een cent. Dus ga uw gang, probeer het uit en zie het verschil dat het kan maken in uw documenten!
 
-### Veelgestelde vragen
+## Veelgestelde vragen
 
-#### V. Hoe importeer ik de benodigde referenties om Aspose.Words voor .NET te gebruiken?
+### Kan ik met deze methode verschillende soorten bestanden insluiten?
+Ja, u kunt elk bestandstype insluiten dat door OLE wordt ondersteund, inclusief Word, Excel, PowerPoint en meer.
 
-A. Om de benodigde referenties te importeren, moet u deze stappen volgen:
+### Heb ik een speciale licentie nodig om Aspose.Words voor .NET te gebruiken?
+ Ja, voor Aspose.Words voor .NET is een licentie vereist. Je kunt een[gratis proefperiode](https://releases.aspose.com/) of koop een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/) voor testen.
 
- Voeg het volgende toe`using` uitspraken bovenaan uw bronbestand:
+### Kan ik het pictogram dat voor het OLE-object wordt gebruikt, aanpassen?
+ Absoluut! U kunt elk afbeeldingsbestand voor het pictogram gebruiken door het pad op te geven in het`InsertOleObjectAsIcon` methode.
 
-```csharp
-using Aspose.Words;
-using Aspose.Words.Drawing;
-using System.IO;
-```
-Zorg ervoor dat u de Aspose.Words-bibliotheek aan uw project hebt toegevoegd.
+### Wat gebeurt er als de bestands- of pictogrampaden onjuist zijn?
+De methode genereert een uitzondering. Zorg ervoor dat de paden naar uw bestanden correct zijn om fouten te voorkomen.
 
-#### V. Hoe maak ik een nieuw document en een nieuwe documentbuilder met Aspose.Words voor .NET?
-
-A. Om een nieuw document en documentgenerator aan te maken, kunt u deze stappen volgen:
-
- Gebruik de`Document` klasse om een nieuw document te maken:
-
-```csharp
-Document doc = new Document();
-```
- Gebruik de`DocumentBuilder` class om een documentbouwer te maken die is gekoppeld aan het eerder gemaakte document:
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-#### V. Hoe kan ik een OLE-object invoegen als een pictogram uit een stream met behulp van Aspose.Words voor .NET?
-
-A. Om een OLE-object als pictogram uit een stream in te voegen, kunt u deze stappen volgen:
-
- Gebruik de`InsertOleObjectAsIcon` methode van de documentgenerator om het OLE-object in te voegen:
-
-```csharp
-using (MemoryStream stream = new MemoryStream(File.ReadAllBytes(MyDir + "Presentation.pptx")))
-{
-  builder.InsertOleObjectAsIcon(stream, "Package", ImagesDir + "Logo icon.ico", "My embedded file");
-}
-```
-
-#### V. Hoe kan ik het document in een bestand opslaan?
-
-A.  Om het document in een bestand op te slaan, kunt u de`Save` methode van het document waarin het bestemmingspad wordt gespecificeerd:
-
-```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
-```
-
-#### V. Hoe sluit ik de code in voor het invoegen van een OLE-object als een pictogram uit een stream in mijn project?
-
-A. Volg deze stappen om de code voor het invoegen van een OLE-object als een pictogram uit een stream in uw project in te sluiten:
-- Importeer de benodigde referenties door de juiste toe te voegen`using` verklaringen.
--  Maak een nieuw document en een documentbuilder met behulp van de`Document`En`DocumentBuilder` klassen.
-- Gebruik de code voor het invoegen van het OLE-object als een pictogram uit een stream.
--  Sla het document op met behulp van de`Save` methode met het juiste bestemmingspad.
-
-Door deze stappen te volgen, kunt u met Aspose.Words voor .NET een OLE-object als pictogram uit een stream invoegen. Zorg ervoor dat u de instructies volgt en de nodige referenties importeert om de gewenste resultaten te krijgen.
+### Is het mogelijk om het ingesloten object te koppelen in plaats van het in te sluiten?
+Ja, met Aspose.Words kunt u gekoppelde OLE-objecten invoegen, die naar het bestand verwijzen zonder de inhoud ervan in te sluiten.

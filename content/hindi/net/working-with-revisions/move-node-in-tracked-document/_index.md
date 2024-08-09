@@ -2,144 +2,130 @@
 title: ट्रैक किए गए दस्तावेज़ में नोड ले जाएँ
 linktitle: ट्रैक किए गए दस्तावेज़ में नोड ले जाएँ
 second_title: Aspose.Words दस्तावेज़ प्रसंस्करण API
-description: .NET के लिए Aspose.Words के साथ ट्रैक किए गए दस्तावेज़ में नोड्स को स्थानांतरित करें।
+description: हमारे विस्तृत, चरण-दर-चरण गाइड के साथ .NET के लिए Aspose.Words का उपयोग करके ट्रैक किए गए Word दस्तावेज़ में नोड्स को स्थानांतरित करना सीखें। डेवलपर्स के लिए बिल्कुल सही।
 type: docs
 weight: 10
 url: /hi/net/working-with-revisions/move-node-in-tracked-document/
 ---
+## परिचय
 
-इस चरण-दर-चरण मार्गदर्शिका में, हम आपको Aspose.Words for .NET का उपयोग करके ट्रैक किए गए Word दस्तावेज़ में नोड को स्थानांतरित करने का तरीका बताएंगे। हम आपको पूरा स्रोत कोड प्रदान करेंगे और आपको मार्कडाउन आउटपुट को फ़ॉर्मेट करने का तरीका दिखाएंगे।
+नमस्ते, Aspose.Words के उत्साही लोगों! अगर आपको कभी संशोधनों को ट्रैक करते समय Word दस्तावेज़ में नोड को स्थानांतरित करने की आवश्यकता हुई है, तो आप सही जगह पर हैं। आज, हम .NET के लिए Aspose.Words का उपयोग करके इसे प्राप्त करने के तरीके के बारे में जानेंगे। न केवल आप चरण-दर-चरण प्रक्रिया सीखेंगे, बल्कि आप अपने दस्तावेज़ हेरफेर को सुचारू और कुशल बनाने के लिए कुछ सुझाव और तरकीबें भी सीखेंगे।
 
-## चरण 1: दस्तावेज़ बनाना
+## आवश्यक शर्तें
 
-पहला चरण एक नया दस्तावेज़ बनाना और पैराग्राफ़ जोड़ना है।
+इससे पहले कि हम कुछ कोड के साथ अपना हाथ गंदा करें, आइए सुनिश्चित करें कि आपके पास वह सब कुछ है जो आपको चाहिए:
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Writeln("Paragraph 1");
-builder.Writeln("Paragraph 2");
-builder.Writeln("Paragraph 3");
-builder.Writeln("Paragraph 4");
-builder.Writeln("Paragraph 5");
-builder.Writeln("Paragraph 6");
-Body body = doc.FirstSection.Body;
-Console.WriteLine("Number of paragraphs: {0}", body.Paragraphs.Count);
-```
+-  .NET के लिए Aspose.Words: इसे डाउनलोड करें[यहाँ](https://releases.aspose.com/words/net/).
+- .NET वातावरण: सुनिश्चित करें कि आपके पास एक संगत .NET विकास वातावरण स्थापित है।
+- बुनियादी C# ज्ञान: यह ट्यूटोरियल मानता है कि आपको C# की बुनियादी समझ है।
 
-## चरण 2: संशोधनों पर नज़र रखें
+सब कुछ समझ में आ गया? बढ़िया! चलिए अब उन नामस्थानों पर चलते हैं जिन्हें हमें आयात करना है।
 
-हम दस्तावेज़ में संशोधन ट्रैकिंग सक्षम करने जा रहे हैं।
+## नामस्थान आयात करें
+
+सबसे पहले, हमें आवश्यक नेमस्पेस आयात करने की आवश्यकता है। ये Aspose.Words के साथ काम करने और दस्तावेज़ नोड्स को संभालने के लिए आवश्यक हैं।
 
 ```csharp
-doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
+using Aspose.Words;
+using System;
 ```
 
-## चरण 3: नोड को स्थानांतरित करें
+ठीक है, चलिए इस प्रक्रिया को प्रबंधनीय चरणों में विभाजित करते हैं। प्रत्येक चरण को विस्तार से समझाया जाएगा ताकि आप समझ सकें कि प्रत्येक बिंदु पर क्या हो रहा है।
 
-हम संशोधन तैयार करते समय नोड (पैराग्राफ) को एक स्थान से दूसरे स्थान पर ले जाएंगे।
+## चरण 1: दस्तावेज़ को आरंभ करें
 
-```csharp
-Node node = body.Paragraphs[3];
-Node endNode = body.Paragraphs[5].NextSibling;
-Node referenceNode = body.Paragraphs[0];
-while (node != endNode)
-{
-     Node nextNode = node. NextSibling;
-     body. InsertBefore(node, referenceNode);
-     node = nextNode;
-}
-```
-
-## चरण 4: समीक्षाओं पर नज़र रखना बंद करें
-
-हम दस्तावेज़ में संशोधनों पर नज़र रखना बंद कर देंगे.
-
-```csharp
-doc.StopTrackRevisions();
-```
-
-## चरण 5: दस्तावेज़ को सहेजना
-
- टेक्स्ट इनपुट फॉर्म फ़ील्ड डालने के बाद, दस्तावेज़ को इच्छित स्थान पर सहेजें`Save`विधि। उचित फ़ाइल पथ प्रदान करना सुनिश्चित करें:
-
-```csharp
-Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
-doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
-```
-
-
-### .NET के लिए Aspose.Words का उपयोग करके ट्रैक किए गए दस्तावेज़ में नोड ले जाने के लिए उदाहरण स्रोत कोड
-
-.NET के लिए Aspose.Words का उपयोग करके ट्रैक किए गए दस्तावेज़ में नोड को स्थानांतरित करने के लिए पूर्ण स्रोत कोड यहां दिया गया है:
-
+ आरंभ करने के लिए, हमें एक नया दस्तावेज़ आरंभ करना होगा और एक का उपयोग करना होगा`DocumentBuilder` कुछ पैराग्राफ जोड़ने के लिए.
 
 ```csharp
 // दस्तावेज़ निर्देशिका का पथ.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+
+// कुछ पैराग्राफ जोड़ना
 builder.Writeln("Paragraph 1");
 builder.Writeln("Paragraph 2");
 builder.Writeln("Paragraph 3");
 builder.Writeln("Paragraph 4");
 builder.Writeln("Paragraph 5");
 builder.Writeln("Paragraph 6");
+
+// प्रारंभिक पैराग्राफ़ संख्या की जाँच करें
 Body body = doc.FirstSection.Body;
 Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
+```
 
-// संशोधनों पर नज़र रखना शुरू करें.
+## चरण 2: संशोधनों पर नज़र रखना शुरू करें
+
+इसके बाद, हमें संशोधनों को ट्रैक करना शुरू करना होगा। यह महत्वपूर्ण है क्योंकि यह हमें दस्तावेज़ में किए गए परिवर्तनों को देखने की अनुमति देता है।
+
+```csharp
+// संशोधनों पर नज़र रखना शुरू करें
 doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
+```
 
-// किसी नोड को एक स्थान से दूसरे स्थान पर ले जाते समय संशोधन उत्पन्न करें।
+## चरण 3: नोड्स को स्थानांतरित करें
+
+अब हमारे कार्य का मुख्य भाग आता है: नोड को एक स्थान से दूसरे स्थान पर ले जाना। हम तीसरे पैराग्राफ को स्थानांतरित करेंगे और इसे पहले पैराग्राफ से पहले रखेंगे।
+
+```csharp
+// स्थानांतरित किए जाने वाले नोड और उसकी अंतिम सीमा को परिभाषित करें
 Node node = body.Paragraphs[3];
 Node endNode = body.Paragraphs[5].NextSibling;
 Node referenceNode = body.Paragraphs[0];
+
+// नोड्स को निर्धारित सीमा के भीतर ले जाएं
 while (node != endNode)
 {
-	Node nextNode = node.NextSibling;
-	body.InsertBefore(node, referenceNode);
-	node = nextNode;
+    Node nextNode = node.NextSibling;
+    body.InsertBefore(node, referenceNode);
+    node = nextNode;
 }
+```
 
-// संशोधनों पर नज़र रखने की प्रक्रिया बंद करें.
+## चरण 4: संशोधनों पर नज़र रखना बंद करें
+
+एक बार जब हम नोड्स को स्थानांतरित कर देते हैं, तो हमें संशोधनों को ट्रैक करना बंद करना होगा।
+
+```csharp
+// संशोधनों पर नज़र रखना बंद करें
 doc.StopTrackRevisions();
+```
 
-// मूव-फ्रॉम श्रेणी में 3 अतिरिक्त पैराग्राफ हैं।
-Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
+## चरण 5: दस्तावेज़ सहेजें
+
+अंत में, आइए अपने संशोधित दस्तावेज़ को निर्दिष्ट निर्देशिका में सहेजें।
+
+```csharp
+// संशोधित दस्तावेज़ सहेजें
 doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
+
+// अंतिम पैराग्राफ़ की संख्या आउटपुट करें
+Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
 ```
 
 ## निष्कर्ष
 
-इस ट्यूटोरियल में, हमने सीखा कि Aspose.Words for .NET का उपयोग करके ट्रैक किए गए Word दस्तावेज़ में नोड को कैसे स्थानांतरित किया जाए। दस्तावेज़ बनाने, संशोधन ट्रैकिंग सक्षम करने, नोड को स्थानांतरित करने और संशोधन ट्रैकिंग को रोकने के चरणों का पालन करके, हम इस हेरफेर को सफलतापूर्वक करने में सक्षम थे। Aspose.Words for .NET Word दस्तावेज़ों के साथ Words प्रोसेसिंग के लिए एक शक्तिशाली उपकरण है और संशोधनों के प्रबंधन के लिए उन्नत सुविधाएँ प्रदान करता है। अब आप इस ज्ञान का उपयोग Aspose.Words for .NET का उपयोग करके संशोधनों को ट्रैक करते हुए अपने स्वयं के Word दस्तावेज़ों में नोड्स को स्थानांतरित करने के लिए कर सकते हैं।
+और अब यह हो गया! आपने .NET के लिए Aspose.Words का उपयोग करके ट्रैक किए गए दस्तावेज़ में नोड को सफलतापूर्वक स्थानांतरित कर दिया है। यह शक्तिशाली लाइब्रेरी Word दस्तावेज़ों को प्रोग्रामेटिक रूप से हेरफेर करना आसान बनाती है। चाहे आप बदलाव बना रहे हों, संपादित कर रहे हों या ट्रैक कर रहे हों, Aspose.Words आपकी मदद कर सकता है। तो, आगे बढ़ें और इसे आज़माएँ। हैप्पी कोडिंग!
 
-### अक्सर पूछे जाने वाले प्रश्न
+## अक्सर पूछे जाने वाले प्रश्न
 
-#### प्रश्न: मैं Aspose.Words for .NET दस्तावेज़ में संशोधन ट्रैकिंग कैसे सक्षम कर सकता हूं?
+### .NET के लिए Aspose.Words क्या है?
 
- A: किसी Aspose.Words for .NET दस्तावेज़ में संशोधन ट्रैकिंग सक्षम करने के लिए, आप इसका उपयोग कर सकते हैं`StartTrackRevisions` की विधि`Document` ऑब्जेक्ट। यह विधि संशोधन के लेखक का नाम और संशोधनों के अनुवर्ती की आरंभ तिथि को पैरामीटर के रूप में लेती है।
+Aspose.Words for .NET, Word दस्तावेज़ों के साथ प्रोग्रामेटिक रूप से काम करने के लिए एक क्लास लाइब्रेरी है। यह डेवलपर्स को .NET अनुप्रयोगों के भीतर Word दस्तावेज़ बनाने, संपादित करने, परिवर्तित करने और प्रिंट करने की अनुमति देता है।
 
-```csharp
-doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
-```
+### मैं Aspose.Words का उपयोग करके Word दस्तावेज़ में संशोधनों को कैसे ट्रैक करूँ?
 
-#### प्रश्न: मैं संशोधन उत्पन्न किए बिना ट्रैक किए गए दस्तावेज़ में नोड को कैसे स्थानांतरित कर सकता हूं?
+ संशोधनों को ट्रैक करने के लिए, का उपयोग करें`StartTrackRevisions` विधि पर`Document` यह संशोधन ट्रैकिंग को सक्षम करेगा, दस्तावेज़ में किए गए किसी भी परिवर्तन को दिखाएगा।
 
- उत्तर: यदि आप संशोधन उत्पन्न किए बिना ट्रैक किए गए दस्तावेज़ में नोड को स्थानांतरित करना चाहते हैं, तो आप इसका उपयोग कर सकते हैं`Remove`और`InsertAfter` या`InsertBefore` के तरीके`Node` ऑब्जेक्ट। उदाहरण के लिए, एक पैराग्राफ को दूसरे पैराग्राफ के बाद ले जाने के लिए, आप निम्नलिखित कोड का उपयोग कर सकते हैं:
+### क्या मैं Aspose.Words में एकाधिक नोड्स स्थानांतरित कर सकता हूँ?
 
-```csharp
-Node nodeToMove = document.FirstSection.Body.Paragraphs[0];
-Node referenceNode = document.FirstSection.Body.Paragraphs[1];
-nodeToMove.Remove();
-document.FirstSection.Body.InsertAfter(nodeToMove, referenceNode);
-```
+हां, आप कई नोड्स को उन पर पुनरावृत्ति करके और इस तरह के तरीकों का उपयोग करके स्थानांतरित कर सकते हैं`InsertBefore` या`InsertAfter` उन्हें वांछित स्थान पर रखने के लिए।
 
-#### प्रश्न: मैं Aspose.Words for .NET दस्तावेज़ में संशोधन ट्रैकिंग कैसे रोक सकता हूँ?
+### मैं Aspose.Words में संशोधनों की ट्रैकिंग कैसे रोकूँ?
 
- A: किसी Aspose.Words for .NET दस्तावेज़ में संशोधनों को ट्रैक करना बंद करने के लिए, आप इसका उपयोग कर सकते हैं`StopTrackRevisions` की विधि`Document` वस्तु।
+ उपयोग`StopTrackRevisions` विधि पर`Document` संशोधनों पर नज़र रखने को रोकने पर आपत्ति।
 
-```csharp
-doc.StopTrackRevisions();
-```
+### मैं .NET के लिए Aspose.Words पर अधिक दस्तावेज़ कहां पा सकता हूं?
+
+ आप विस्तृत दस्तावेज पा सकते हैं[यहाँ](https://reference.aspose.com/words/net/).

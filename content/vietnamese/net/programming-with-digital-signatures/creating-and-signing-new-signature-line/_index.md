@@ -9,12 +9,12 @@ url: /vi/net/programming-with-digital-signatures/creating-and-signing-new-signat
 ---
 ## Giới thiệu
 
-Này! Như vậy, bạn đã có một tài liệu Word và bạn cần thêm dòng chữ ký rồi ký điện tử. Nghe có vẻ phức tạp? Không có gì! Nhờ Aspose.Words dành cho .NET, bạn có thể đạt được điều này một cách liền mạch chỉ với một vài dòng mã. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn toàn bộ quá trình từ thiết lập môi trường đến lưu tài liệu của bạn bằng chữ ký mới sáng bóng. Sẵn sàng? Hãy đi sâu vào!
+Này! Như vậy, bạn đã có một tài liệu Word và bạn cần thêm dòng chữ ký rồi ký điện tử. Nghe có vẻ phức tạp? Không có gì! Nhờ Aspose.Words for .NET, bạn có thể đạt được điều này một cách liền mạch chỉ với một vài dòng mã. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn toàn bộ quá trình từ thiết lập môi trường đến lưu tài liệu của bạn bằng chữ ký mới sáng bóng. Sẵn sàng? Hãy đi sâu vào!
 
 ## Điều kiện tiên quyết
 
 Trước khi chúng ta chuyển sang mã, hãy đảm bảo bạn có mọi thứ bạn cần:
-1.  Aspose.Words cho .NET - Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words cho .NET - Bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển .NET - Visual Studio rất được khuyến khích.
 3. Tài liệu cần ký - Tạo một tài liệu Word đơn giản hoặc sử dụng tài liệu hiện có.
 4.  Tệp chứng chỉ - Điều này cần thiết cho chữ ký số. Bạn có thể sử dụng một`.pfx` tài liệu.
@@ -97,7 +97,7 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Với các bước này, bạn đã tạo thành công tài liệu Word mới, thêm dòng chữ ký và ký tên kỹ thuật số bằng Aspose.Words cho .NET. Đó là một công cụ mạnh mẽ giúp việc tự động hóa tài liệu trở nên dễ dàng. Cho dù bạn đang xử lý các hợp đồng, thỏa thuận hay bất kỳ tài liệu chính thức nào, phương pháp này đều đảm bảo chúng được ký và xác thực một cách an toàn.
+Và bạn có nó! Với các bước này, bạn đã tạo thành công tài liệu Word mới, thêm dòng chữ ký và ký tên kỹ thuật số bằng Aspose.Words cho .NET. Đó là một công cụ mạnh mẽ giúp việc tự động hóa tài liệu trở nên dễ dàng. Cho dù bạn đang xử lý các hợp đồng, thỏa thuận hay bất kỳ tài liệu chính thức nào, phương pháp này đều đảm bảo chúng được ký và xác thực một cách an toàn.
 
 ## Câu hỏi thường gặp
 

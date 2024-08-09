@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/find-and-replace-text/ignore-text-inside-delete-revisions/
 ---
-## Úvod
+## Zavedení
 
 V oblasti vývoje .NET vyniká Aspose.Words jako robustní knihovna pro programovou práci s dokumenty Microsoft Word. Ať už jste zkušený vývojář nebo teprve začínáte, zvládnutí schopností Aspose.Words může výrazně zlepšit vaši schopnost efektivně manipulovat, vytvářet a spravovat dokumenty Word. Tento výukový program se ponoří do jedné z jeho výkonných funkcí: zpracování sledovaných revizí v dokumentech pomocí Aspose.Words for .NET.
 
@@ -16,7 +16,7 @@ V oblasti vývoje .NET vyniká Aspose.Words jako robustní knihovna pro programo
 Než se ponoříte do tohoto tutoriálu, ujistěte se, že máte splněny následující předpoklady:
 - Základní znalost programovacího jazyka C#.
 - Visual Studio nainstalované ve vašem systému.
--  Knihovna Aspose.Words for .NET integrovaná do vašeho projektu. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+-  Knihovna Aspose.Words for .NET integrovaná do vašeho projektu. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 - Přístup k Aspose.Words pro .NET[dokumentace](https://reference.aspose.com/words/net/) pro referenci.
 
 ## Importovat jmenné prostory

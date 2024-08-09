@@ -107,7 +107,7 @@ Ja, Sie können eine Liste von Dokumenten durchlaufen und auf jedes Dokument die
 
 ### Ist Aspose.Words für .NET kostenlos?
 
- Aspose.Words für .NET ist eine kostenpflichtige Bibliothek, die Sie aber kostenlos testen können. Schauen Sie sich die[Kostenlose Testphase](https://releases.aspose.com/)!
+ Aspose.Words für .NET ist eine kostenpflichtige Bibliothek, die Sie aber kostenlos testen können. Schauen Sie sich die[Kostenlose Testversion](https://releases.aspose.com/)!
 
 ### Welche anderen Schutzarten kann ich auf ein Word-Dokument anwenden?
 

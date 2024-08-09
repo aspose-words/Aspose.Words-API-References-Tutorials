@@ -10,13 +10,13 @@ url: /fr/net/programming-with-loadoptions/set-ms-word-version/
 ---
 ## Introduction
 
-Vous est-il déjà arrivé de devoir travailler avec des versions spécifiques de documents MS Word sans savoir comment les configurer par programme ? Tu n'es pas seul! Dans ce didacticiel, nous passerons en revue le processus de configuration de la version de MS Word à l'aide d'Aspose.Words pour .NET. Il s'agit d'un outil fantastique qui facilite la manipulation des documents Word. Nous plongerons dans le vif du sujet, en décomposant chaque étape pour garantir que vous soyez opérationnel et opérationnel. Prêt à commencer? Allons-y !
+Vous est-il déjà arrivé de devoir travailler avec des versions spécifiques de documents MS Word sans savoir comment les configurer par programme ? Vous n'êtes pas seul ! Dans ce didacticiel, nous passerons en revue le processus de configuration de la version de MS Word à l'aide d'Aspose.Words pour .NET. Il s'agit d'un outil fantastique qui facilite la manipulation des documents Word. Nous plongerons dans le vif du sujet, en décomposant chaque étape pour garantir que vous soyez opérationnel et opérationnel. Prêt à commencer ? Allons-y !
 
 ## Conditions préalables
 
 Avant de passer au code, assurons-nous que vous disposez de tout ce dont vous avez besoin :
 
--  Aspose.Words pour .NET : assurez-vous de disposer de la dernière version.[Télécharger les ici](https://releases.aspose.com/words/net/).
+-  Aspose.Words pour .NET : assurez-vous de disposer de la dernière version.[Téléchargez-le ici](https://releases.aspose.com/words/net/).
 - Environnement de développement : vous pouvez utiliser Visual Studio ou tout autre IDE compatible .NET.
 - Connaissance de base de C# : même si nous gardons les choses simples, une compréhension de base de C# est nécessaire.
 - Exemple de document : préparez un document Word dans votre répertoire de documents à des fins de test.
@@ -86,4 +86,4 @@ Absolument! Aspose.Words prend en charge .NET Framework, .NET Core et .NET 5+.
 Oui, Aspose.Words est une bibliothèque complète qui vous permet de manipuler presque tous les aspects des documents Word.
 
 ### Où puis-je trouver plus d’exemples et de documentation ?
- Vérifiez[Documentation](https://reference.aspose.com/words/net/) pour plus d’exemples et d’informations détaillées.
+ Découvrez le[documentation](https://reference.aspose.com/words/net/) pour plus d’exemples et d’informations détaillées.

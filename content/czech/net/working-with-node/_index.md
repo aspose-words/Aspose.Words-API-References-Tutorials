@@ -14,9 +14,9 @@ Pro práci s uzly v Aspose.Words pro .NET mohou vývojáři využít Document Ob
  ## Tutoriály
 | Titul | Popis |
 | --- | --- |
-| [Použijte typ uzlu](./use-node-type/) | Naučte se používat typ uzlu pro přístup k informacím specifickým pro dokument pomocí Aspose.Words for .NET. |
-| [Získejte nadřazený uzel](./get-parent-node/) | Naučte se, jak získat nadřazený uzel konkrétního prvku pomocí Aspose.Words for .NET. |
-| [Dokument vlastníka](./owner-document/) | Naučte se používat dokument vlastníka v Aspose.Words pro .NET. |
-| [Vyjmenujte podřízené uzly](./enumerate-child-nodes/) | Naučte se, jak vytvořit výčet podřízených uzlů v odstavci pomocí Aspose.Words for .NET. |
-| [Zadaný přístup](./typed-access/) | Naučte se používat zadaný přístup k manipulaci s tabulkami v Aspose.Words for .NET. |
-| [Vytvořit a přidat uzel odstavce](./create-and-add-paragraph-node/) | Vytvořte a přidejte uzel odstavce do dokumentů aplikace Word pomocí Aspose.Words pro .NET. |
+| [Použijte typ uzlu](./use-node-type/) | Objevte, jak zvládnout vlastnost NodeType v Aspose.Words pro .NET s naším podrobným průvodcem. Ideální pro vývojáře, kteří chtějí zlepšit své dovednosti v oblasti zpracování dokumentů. |
+| [Získejte nadřazený uzel](./get-parent-node/) | Naučte se, jak získat nadřazený uzel sekce dokumentu pomocí Aspose.Words for .NET pomocí tohoto podrobného, podrobného tutoriálu. |
+| [Dokument vlastníka](./owner-document/) | Naučte se pracovat s dokumentem vlastníka v Aspose.Words pro .NET. Tento podrobný průvodce popisuje vytváření a manipulaci s uzly v dokumentu. |
+| [Vyjmenujte podřízené uzly](./enumerate-child-nodes/) | Naučte se, jak vytvořit výčet podřízených uzlů v dokumentu aplikace Word pomocí Aspose.Words for .NET pomocí tohoto podrobného kurzu. |
+| [Zadaný přístup](./typed-access/) | Naučte se používat zadaný přístup v Aspose.Words pro .NET ke snadné manipulaci s prvky dokumentu, jako jsou tabulky a řádky. Tento průvodce krok za krokem zjednoduší váš pracovní postup. |
+| [Vytvořit a přidat uzel odstavce](./create-and-add-paragraph-node/) | Naučte se, jak vytvořit a přidat uzel odstavce do dokumentu pomocí Aspose.Words for .NET pomocí tohoto podrobného, podrobného návodu. |

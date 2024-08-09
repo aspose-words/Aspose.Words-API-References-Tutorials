@@ -26,7 +26,7 @@ Webbővítmény munkaablak dokumentumhoz való hozzáadásához kövesse az alá
 Document doc = new Document();
 ```
 
-##  Hozzon létre egy`TaskPane` instance and add it to the document's web extension task panes:
+##  Hozzon létre a`TaskPane` instance and add it to the document's web extension task panes:
 
 ```java
 TaskPane taskPane = new TaskPane();

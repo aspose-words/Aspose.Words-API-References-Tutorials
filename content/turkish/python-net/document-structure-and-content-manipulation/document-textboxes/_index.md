@@ -98,7 +98,7 @@ Bu kılavuzda Aspose.Words Python API'sini kullanarak Word belgelerindeki metin 
 
 ### Bir metin kutusunu nasıl yeniden boyutlandırabilirim?
 
- Bir metin kutusunu yeniden boyutlandırmak için genişlik ve yükseklik özelliklerini aşağıdakileri kullanarak ayarlayabilirsiniz:`width`Ve`height` Öznitellikler.
+ Bir metin kutusunu yeniden boyutlandırmak için genişlik ve yükseklik özelliklerini aşağıdakileri kullanarak ayarlayabilirsiniz:`width`Ve`height` nitelikler.
 
 ### Bir metin kutusunu döndürebilir miyim?
 
@@ -114,6 +114,6 @@ Kesinlikle! Ek kaynaklar veya referanslar sağlamak için metin kutusu içeriği
 
 ### Metin kutularını belgeler arasında kopyalayıp yapıştırmak mümkün mü?
 
- Evet, bir metin kutusunu bir belgeden kopyalayıp başka bir belgeye yapıştırabilirsiniz.`builder.insert_node` yöntem.
+ Evet, bir metin kutusunu bir belgeden kopyalayıp başka bir belgeye yapıştırabilirsiniz.`builder.insert_node` Yöntem.
 
 Aspose.Words for Python ile, metin kutularını sorunsuz bir şekilde birleştiren, görsel olarak çekici ve iyi yapılandırılmış belgeler oluşturacak araçlara sahipsiniz. Word belgelerinizin etkisini artırmak için farklı stiller, düzenler ve içeriklerle denemeler yapın. Mutlu belge tasarımı!

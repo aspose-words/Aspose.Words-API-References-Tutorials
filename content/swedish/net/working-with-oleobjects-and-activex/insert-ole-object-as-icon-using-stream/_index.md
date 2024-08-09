@@ -2,125 +2,98 @@
 title: Infoga Ole-objekt som ikon med hjälp av Stream
 linktitle: Infoga Ole-objekt som ikon med hjälp av Stream
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du infogar ett OLE-objekt som en ikon med hjälp av en ström med Aspose.Words för .NET.
+description: Lär dig hur du infogar ett OLE-objekt som en ikon med hjälp av en ström med Aspose.Words för .NET i denna detaljerade, steg-för-steg handledning.
 type: docs
 weight: 10
 url: /sv/net/working-with-oleobjects-and-activex/insert-ole-object-as-icon-using-stream/
 ---
+## Introduktion
 
-Här är en steg-för-steg-guide för att förklara C#-källkoden nedan som illustrerar hur man infogar ett OLE-objekt som en ikon med hjälp av en stream med Aspose.Words för .NET.
+den här handledningen dyker vi in i en supercool funktion i Aspose.Words för .NET: infoga ett OLE-objekt (Object Linking and Embedding) som en ikon med hjälp av en ström. Oavsett om du bäddar in en PowerPoint-presentation, ett Excel-kalkylblad eller någon annan typ av fil kommer den här guiden att visa dig exakt hur du gör det. Redo att börja? Låt oss gå!
 
-## Steg 1: Importera nödvändiga referenser
-Innan du börjar, se till att du har importerat de nödvändiga referenserna för att använda Aspose.Words för .NET i ditt projekt. Detta inkluderar att importera Aspose.Words-biblioteket och lägga till de nödvändiga namnområdena till din källfil.
+## Förutsättningar
+
+Innan vi hoppar in i koden finns det några saker du behöver:
+
+-  Aspose.Words för .NET: Om du inte redan har gjort det,[ladda ner](https://releases.aspose.com/words/net/) och installera Aspose.Words för .NET.
+- Utvecklingsmiljö: Visual Studio eller någon annan C#-utvecklingsmiljö.
+- Indatafiler: Filen du vill bädda in (t.ex. en PowerPoint-presentation) och en ikonbild.
+
+## Importera namnområden
+
+För att börja, se till att du har importerat de nödvändiga namnrymden i ditt projekt:
 
 ```csharp
+using System;
+using System.IO;
 using Aspose.Words;
 using Aspose.Words.Drawing;
-using System.IO;
 ```
 
-## Steg 2: Skapa ett nytt dokument och dokumentgenerator
- I det här steget kommer vi att skapa ett nytt dokument med hjälp av`Document` klass och en dokumentbyggare med hjälp av`DocumentBuilder` klass.
+Låt oss bryta ner processen steg för steg för att göra den lätt att följa.
+
+## Steg 1: Skapa ett nytt dokument
+
+Först skapar vi ett nytt dokument och en dokumentbyggare för att arbeta med det.
 
 ```csharp
+// Sökväg till din dokumentkatalog
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Steg 3: Infoga ett OLE-objekt som en ikon från en ström
- Använd dokumentbyggarens`InsertOleObjectAsIcon` metod för att infoga ett OLE-objekt som en ikon från en ström i dokumentet. Ange dataström, objekttyp, ikonsökväg och namn på det inbäddade objektet.
+ Tänka på`Document` som din tomma duk och`DocumentBuilder` som din målarpensel. Vi ställer in våra verktyg för att börja skapa vårt mästerverk.
+
+## Steg 2: Förbered strömmen
+
+Därefter måste vi förbereda en minnesström som innehåller filen vi vill bädda in. I det här exemplet bäddar vi in en PowerPoint-presentation.
 
 ```csharp
-using (MemoryStream stream = new MemoryStream(File.ReadAllBytes(MyDir + "Presentation.pptx")))
+using (MemoryStream stream = new MemoryStream(File.ReadAllBytes("Path_to_your_directory/Presentation.pptx")))
 {
-     builder.InsertOleObjectAsIcon(stream, "Package", ImagesDir + "Logo icon.ico", "My embedded file");
+```
+
+Detta steg är som att ladda din färg på penseln. Vi förbereder vår fil för att bäddas in.
+
+## Steg 3: Infoga OLE-objektet som en ikon
+
+Nu kommer vi att använda dokumentbyggaren för att infoga OLE-objektet i dokumentet. Vi anger filströmmen, ProgID för filtypen (i det här fallet "paket"), sökvägen till ikonbilden och en etikett för den inbäddade filen.
+
+```csharp
+builder.InsertOleObjectAsIcon(stream, "Package", "Path_to_your_directory/Logo icon.ico", "My embedded file");
 }
 ```
+
+Det är här magin händer! Vi bäddar in vår fil och visar den som en ikon i dokumentet.
 
 ## Steg 4: Spara dokumentet
- Använd dokumentets`Save` metod för att spara dokumentet till en fil.
+
+Slutligen sparar vi dokumentet till en angiven sökväg.
 
 ```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
+doc.Save(dataDir + "WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
 ```
 
-### Exempel på källkod för att infoga ett OLE-objekt som en ikon med en ström med Aspose.Words för .NET
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-using (MemoryStream stream = new MemoryStream(File.ReadAllBytes(MyDir + "Presentation.pptx")))
-{
-     builder.InsertOleObjectAsIcon(stream, "Package", ImagesDir + "Logo icon.ico", "My embedded file");
-}
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
-```
-
-Detta är ett komplett kodexempel för att infoga ett OLE-objekt som en ikon med hjälp av en ström med Aspose.Words för .NET. Var noga med att importera nödvändiga referenser och följ stegen som beskrivits tidigare för att integrera denna kod i ditt projekt.
+Detta steg är som att sätta din färdiga målning i en ram och hänga upp den på väggen. Ditt dokument är nu redo att användas!
 
 ## Slutsats
 
-Steg-för-steg-guiden ovan förklarar hur man infogar ett OLE-objekt som en ikon i ett Word-dokument med hjälp av ett flöde med Aspose.Words för .NET. Genom att följa de beskrivna stegen kommer du att kunna integrera denna funktionalitet i ditt projekt. Se till att importera nödvändiga referenser, skapa ett nytt dokument och dokumentgenerator, infoga OLE-objektet som en ikon från strömmen och spara sedan dokumentet. Använd exempelkoden som tillhandahålls som utgångspunkt och anpassa den efter dina behov.
+Och där har du det! Du har framgångsrikt bäddat in ett OLE-objekt som en ikon i ett Word-dokument med Aspose.Words för .NET. Denna kraftfulla funktion kan hjälpa dig att skapa dynamiska och interaktiva dokument med lätthet. Oavsett om du bäddar in presentationer, kalkylblad eller andra filer, gör Aspose.Words det enkelt. Så fortsätt, prova det och se vilken skillnad det kan göra i dina dokument!
 
-### FAQ's
+## FAQ's
 
-#### F. Hur importerar man nödvändiga referenser för att använda Aspose.Words för .NET?
+### Kan jag bädda in olika typer av filer med den här metoden?
+Ja, du kan bädda in alla filtyper som stöds av OLE, inklusive Word, Excel, PowerPoint och mer.
 
-A. För att importera nödvändiga referenser måste du följa dessa steg:
+### Behöver jag en speciell licens för att använda Aspose.Words för .NET?
+ Ja, Aspose.Words för .NET kräver en licens. Du kan få en[gratis provperiod](https://releases.aspose.com/) eller köp en[tillfällig licens](https://purchase.aspose.com/temporary-license/) för testning.
 
- Lägg till följande`using` uttalanden överst i din källfil:
+### Kan jag anpassa ikonen som används för OLE-objektet?
+ Absolut! Du kan använda vilken bildfil som helst för ikonen genom att ange dess sökväg i`InsertOleObjectAsIcon` metod.
 
-```csharp
-using Aspose.Words;
-using Aspose.Words.Drawing;
-using System.IO;
-```
-Se till att du har lagt till Aspose.Words-biblioteket i ditt projekt.
+### Vad händer om fil- eller ikonsökvägarna är felaktiga?
+Metoden ger ett undantag. Se till att sökvägarna till dina filer är korrekta för att undvika fel.
 
-#### F. Hur skapar man ett nytt dokument- och dokumentbyggare med Aspose.Words för .NET?
-
-A. För att skapa ett nytt dokument och dokumentgenerator kan du följa dessa steg:
-
- Använd`Document` klass för att skapa ett nytt dokument:
-
-```csharp
-Document doc = new Document();
-```
- Använd`DocumentBuilder` klass för att skapa en dokumentbyggare kopplad till det tidigare skapade dokumentet:
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-#### F. Hur infogar man ett OLE-objekt som en ikon från en ström med Aspose.Words för .NET?
-
-A. För att infoga ett OLE-objekt som en ikon från en ström kan du följa dessa steg:
-
- Använd`InsertOleObjectAsIcon` metod för dokumentgeneratorn för att infoga OLE-objektet:
-
-```csharp
-using (MemoryStream stream = new MemoryStream(File.ReadAllBytes(MyDir + "Presentation.pptx")))
-{
-  builder.InsertOleObjectAsIcon(stream, "Package", ImagesDir + "Logo icon.ico", "My embedded file");
-}
-```
-
-#### F. Hur sparar man dokumentet i en fil?
-
-A.  För att spara dokumentet till en fil kan du använda`Save` metod för dokumentet som anger destinationssökvägen:
-
-```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
-```
-
-#### F. Hur bäddar jag in koden för att infoga ett OLE-objekt som en ikon från en ström i mitt projekt?
-
-A. För att bädda in koden för att infoga ett OLE-objekt som en ikon från en ström i ditt projekt, följ dessa steg:
-- Importera nödvändiga referenser genom att lägga till lämpliga`using` uttalanden.
--  Skapa ett nytt dokument och en dokumentbyggare med hjälp av`Document`och`DocumentBuilder` klasser.
-- Använd koden för att infoga OLE-objektet som en ikon från en ström.
--  Spara dokumentet med hjälp av`Save` metod med lämplig destinationssökväg.
-
-Genom att följa dessa steg kommer du att framgångsrikt kunna infoga ett OLE-objekt som en ikon från en ström med Aspose.Words för .NET. Se till att följa instruktionerna och importera nödvändiga referenser för att få önskat resultat.
+### Är det möjligt att länka det inbäddade objektet istället för att bädda in det?
+Ja, Aspose.Words låter dig infoga länkade OLE-objekt, som refererar till filen utan att bädda in dess innehåll.

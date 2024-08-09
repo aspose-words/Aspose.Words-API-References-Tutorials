@@ -58,7 +58,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 4. lépés: Helyezze be a buborékdiagramot
 
- Most jön az izgalmas rész – a buborékdiagram beillesztése. Használjuk a`InsertChart` típusdiagram hozzáadásának módszere`Bubble` dokumentumunkhoz.
+ Most jön az izgalmas rész – a buborékdiagram beillesztése. Használjuk a`InsertChart` típusdiagram hozzáadásának módja`Bubble` dokumentumunkhoz.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Bubble, 432, 252);
@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithCharts.InsertBubbleChart.docx");
 
 ## Következtetés
 
-Gratulálunk! Sikeresen beszúrt egy buborékdiagramot egy Word-dokumentumba az Aspose.Words for .NET használatával. Ezzel a hatékony eszközzel könnyedén hozhat létre dinamikus és tetszetős dokumentumokat. Függetlenül attól, hogy jelentéseket, prezentációkat vagy bármilyen más típusú dokumentumot készít, ennek a technikának az elsajátítása kétségtelenül növeli a termelékenységet.
+Gratulálok! Sikeresen beszúrt egy buborékdiagramot egy Word-dokumentumba az Aspose.Words for .NET használatával. Ezzel a hatékony eszközzel könnyedén hozhat létre dinamikus és tetszetős dokumentumokat. Függetlenül attól, hogy jelentéseket, prezentációkat vagy bármilyen más típusú dokumentumot készít, ennek a technikának az elsajátítása kétségtelenül növeli a termelékenységet.
 
 ## GYIK
 
@@ -97,7 +97,7 @@ Igen, annyi diagramot adhat hozzá, amennyire szüksége van. Egyszerűen ismét
 
 ### Használhatom az Aspose.Words for .NET programot más .NET nyelvekkel?
 
-Egyértelműen. Míg ez az útmutató C#-t használ, az Aspose.Words for .NET kompatibilis más .NET-nyelvekkel, például a VB.NET-tel.
+Határozottan. Míg ez az útmutató C#-t használ, az Aspose.Words for .NET kompatibilis más .NET-nyelvekkel, például a VB.NET-tel.
 
 ### Hogyan szerezhetem be az Aspose.Words for .NET ingyenes próbaverzióját?
 

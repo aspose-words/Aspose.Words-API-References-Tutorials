@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/embedded-all-fonts/
 ---
-## Úvod
+## Zavedení
 
 Ahoj, tech nadšenci! Už jste se někdy ocitli v bahně při pokusu vložit písma do dokumentu PDF pomocí Aspose.Words pro .NET? Tak to jste na správném místě! V tomto tutoriálu se ponoříme hluboko do toho nejnutnějšího vkládání písem do vašich PDF. Ať už jste začátečník nebo ostřílený profík, tento průvodce vás jednoduchým a poutavým způsobem provede každým krokem. Na konci budete mít jistotu, že si vaše soubory PDF udrží svůj zamýšlený vzhled a dojem, bez ohledu na to, kde si je prohlížíte. Takže, začneme, ano?
 
@@ -15,12 +15,12 @@ Ahoj, tech nadšenci! Už jste se někdy ocitli v bahně při pokusu vložit pí
 
 Než se pustíme do podrobného průvodce, ujistěte se, že máte vše, co potřebujete. Zde je rychlý kontrolní seznam:
 
-1. Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou nejnovější verzi. Můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou nejnovější verzi. Můžete si jej stáhnout[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Visual Studio nebo jakékoli kompatibilní vývojové prostředí .NET.
 3. Základní znalost C#: Základní znalost C# vám pomůže pokračovat.
 4. Ukázkový dokument aplikace Word: Mějte ukázkový dokument aplikace Word (`Rendering.docx`) připravené v adresáři dokumentů.
 
- Pokud ještě nemáte Aspose.Words pro .NET, vyzkoušejte si bezplatnou zkušební verzi[tady](https://releases.aspose.com/) nebo si ho koupit[tady](https://purchase.aspose.com/buy) . Potřebujete dočasnou licenci? Můžete získat jeden[tady](https://purchase.aspose.com/temporary-license/).
+ Pokud ještě nemáte Aspose.Words pro .NET, vyzkoušejte si bezplatnou zkušební verzi[zde](https://releases.aspose.com/) nebo si ho koupit[zde](https://purchase.aspose.com/buy) . Potřebujete dočasnou licenci? Můžete získat jeden[zde](https://purchase.aspose.com/temporary-license/).
 
 ## Importovat jmenné prostory
 
@@ -35,7 +35,7 @@ Nyní si tento proces rozdělíme do snadno pochopitelných kroků. Každý krok
 
 ## Krok 1: Nastavte adresář dokumentů
 
-Než se ponoříte do kódu, musíte nastavit adresář dokumentů. Zde je váš vzorový dokument aplikace Word (`Rendering.docx`) a bude uloženo výstupní PDF.
+Než se ponoříte do kódu, musíte nastavit adresář dokumentů. Zde je váš ukázkový dokument Word (`Rendering.docx`) a bude uloženo výstupní PDF.
 
 ```csharp
 // Cesta k adresáři dokumentů.

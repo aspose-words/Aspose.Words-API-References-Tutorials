@@ -15,7 +15,7 @@ url: /ko/net/programming-with-document-properties/enumerate-properties/
 
 튜토리얼을 시작하기 전에 시작해야 할 몇 가지 사항이 있습니다.
 
--  .NET용 Aspose.Words: 다음을 수행할 수 있습니다.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+-  .NET용 Aspose.Words: 다음을 수행할 수 있습니다.[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 - 개발 환경: Visual Studio가 권장되지만 모든 C# IDE를 사용할 수 있습니다.
 - C#에 대한 기본 지식: C#에 대한 기본적인 이해가 있으면 따라가는 데 도움이 됩니다.
 
@@ -103,7 +103,7 @@ foreach (DocumentProperty prop in doc.CustomDocumentProperties)
  예, 다음을 사용하여 새로운 사용자 정의 속성을 추가할 수 있습니다.`CustomDocumentProperties` 수집.
 
 ### Aspose.Words는 무료로 사용할 수 있나요?
- Aspose.Words는 다음을 제공합니다.[무료 시험판](https://releases.aspose.com/) 그리고 다른[구매 옵션](https://purchase.aspose.com/buy).
+ Aspose.Words는 다음을 제공합니다.[무료 평가판](https://releases.aspose.com/) 그리고 다른[구매 옵션](https://purchase.aspose.com/buy).
 
 ### Aspose.Words에 대한 지원을 받으려면 어떻게 해야 하나요?
  Aspose 커뮤니티에서 지원을 받을 수 있습니다[여기](https://forum.aspose.com/c/words/8).

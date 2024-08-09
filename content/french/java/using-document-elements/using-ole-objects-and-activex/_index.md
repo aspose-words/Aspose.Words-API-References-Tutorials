@@ -2,7 +2,7 @@
 title: Utilisation d'objets OLE et de contrôles ActiveX dans Aspose.Words pour Java
 linktitle: Utilisation des objets OLE et des contrôles ActiveX
 second_title: API de traitement de documents Java Aspose.Words
-description: Apprenez à utiliser les objets OLE et les contrôles ActiveX dans Aspose.Words pour Java. Créez facilement des documents interactifs. Commencez maintenant!
+description: Apprenez à utiliser les objets OLE et les contrôles ActiveX dans Aspose.Words pour Java. Créez facilement des documents interactifs. Commencez maintenant !
 type: docs
 weight: 21
 url: /fr/java/using-document-elements/using-ole-objects-and-activex/
@@ -112,7 +112,7 @@ Dans ce code, nous parcourons les formes d'un document Word, identifions les con
 
 ### Conclusion
 
-Toutes nos félicitations! Vous avez appris à utiliser des objets OLE et des contrôles ActiveX dans Aspose.Words pour Java. Ces fonctionnalités ouvrent un monde de possibilités pour créer des documents dynamiques et interactifs.
+Félicitations! Vous avez appris à utiliser des objets OLE et des contrôles ActiveX dans Aspose.Words pour Java. Ces fonctionnalités ouvrent un monde de possibilités pour créer des documents dynamiques et interactifs.
 
 ### FAQ
 

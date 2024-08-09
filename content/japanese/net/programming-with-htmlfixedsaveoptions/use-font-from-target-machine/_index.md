@@ -101,13 +101,13 @@ System.Diagnostics.Process.Start(dataDir + "WorkingWithHtmlFixedSaveOptions.UseF
 はい、Aspose.Words for .NET はさまざまなドキュメント形式をサポートしており、異なる形式に対して同様の保存オプションを構成できます。
 
 ### ターゲットマシンに必要なフォントがない場合はどうなりますか?
-ターゲットマシンに必要なフォントがない場合、ドキュメントが意図したとおりにレンダリングされない可能性があります。必要に応じてフォントを埋め込むことをお勧めします。
+ターゲットマシンに必要なフォントがない場合、ドキュメントは意図したとおりにレンダリングされない可能性があります。必要に応じてフォントを埋め込むことをお勧めします。
 
 ### ドキュメントにフォントを埋め込むにはどうすればいいですか?
-フォントの埋め込みは、`FontSettings` Aspose.Words for .NETのクラス。[ドキュメンテーション](https://reference.aspose.com/words/net/)詳細については。
+フォントの埋め込みは、`FontSettings` Aspose.Words for .NETのクラス。[ドキュメント](https://reference.aspose.com/words/net/)詳細についてはこちらをご覧ください。
 
 ### 保存する前にドキュメントをプレビューする方法はありますか?
-はい、`DocumentRenderer`クラスを使用して、保存前にドキュメントをプレビューできます。Aspose.Words for .NETをご覧ください。[ドキュメンテーション](https://reference.aspose.com/words/net/)詳細については。
+はい、`DocumentRenderer`クラスを使用して、保存前にドキュメントをプレビューできます。Aspose.Words for .NETをご覧ください。[ドキュメント](https://reference.aspose.com/words/net/)詳細についてはこちらをご覧ください。
 
 ### HTML 出力をさらにカスタマイズできますか?
-絶対に！`HtmlFixedSaveOptions`クラスはHTML出力をカスタマイズするためのさまざまなプロパティを提供します。[ドキュメンテーション](https://reference.aspose.com/words/net/)利用可能なすべてのオプション。
+絶対に！`HtmlFixedSaveOptions`クラスはHTML出力をカスタマイズするためのさまざまなプロパティを提供します。[ドキュメント](https://reference.aspose.com/words/net/)利用可能なすべてのオプション。

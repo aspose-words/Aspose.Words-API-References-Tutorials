@@ -54,7 +54,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- व्यवस्थित करके`DisplayDocTitle` को`true`, हम Aspose.Words को पीडीएफ विंडो के शीर्षक बार में दस्तावेज़ शीर्षक का उपयोग करने का निर्देश देते हैं।
+ सेटिंग करके`DisplayDocTitle` को`true`, हम Aspose.Words को पीडीएफ विंडो के शीर्षक बार में दस्तावेज़ शीर्षक का उपयोग करने का निर्देश देते हैं।
 
 ## चरण 3: दस्तावेज़ को PDF के रूप में सहेजें
 

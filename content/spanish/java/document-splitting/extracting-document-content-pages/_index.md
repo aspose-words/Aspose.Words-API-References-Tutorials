@@ -18,7 +18,7 @@ Aspose.Words para Java cambia las reglas del juego cuando se trata de trabajar c
 
 ### Configurar su entorno de desarrollo
 
-Antes de que podamos comenzar a trabajar con Aspose.Words para Java, necesitamos configurar nuestro entorno de desarrollo. Sigue estos pasos:
+Antes de que podamos comenzar a trabajar con Aspose.Words para Java, necesitamos configurar nuestro entorno de desarrollo. Siga estos pasos:
 
 1. Instale Java: si no tiene Java instalado, descargue e instale la última versión del sitio web.
 
@@ -61,7 +61,7 @@ Ahora que tenemos nuestro documento cargado, analicemos su estructura:
 // Crear un visitante de documentos
 DocumentVisitor visitor = new DocumentVisitor();
 
-// Recorrer el documento
+// Recorrer el documento.
 doc.accept(visitor);
 
 //El contenido extraído ahora está disponible para el visitante.
@@ -144,7 +144,7 @@ Sí, Aspose.Words para Java es compatible con Java 11 y versiones superiores.
 
 ### ¿Cuáles son algunos errores comunes y cómo solucionarlos?
 
-Los errores comunes en Aspose.Words para Java suelen estar relacionados con la estructura o el formato del documento. Consulte la documentación y los foros de la comunidad para obtener sugerencias para la resolución de problemas.
+Los errores comunes en Aspose.Words para Java suelen estar relacionados con la estructura o el formato del documento. Consulte la documentación y los foros de la comunidad para obtener sugerencias para la solución de problemas.
 
 ### ¿Cómo puedo contribuir a la comunidad Aspose.Words para Java?
 

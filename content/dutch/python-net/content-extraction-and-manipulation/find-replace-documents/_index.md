@@ -88,7 +88,7 @@ doc.range.replace("old_text", "", False, False, format_callback)
 
 ## Stap 7: Wijzigingen toepassen
 
-Nadat u de zoek- en vervangbewerkingen hebt uitgevoerd, slaat u het document met de wijzigingen op:
+Nadat u de zoek- en vervangbewerkingen hebt uitgevoerd, slaat u het document op met de wijzigingen:
 
 ```python
 doc.save("path/to/save/document.docx")

@@ -14,7 +14,7 @@ Las firmas digitales desempeñan un papel crucial a la hora de garantizar la aut
 
 Antes de profundizar en la implementación, asegúrese de tener implementados los siguientes requisitos previos:
 
--  Aspose.Words para Java: Descargue e instale Aspose.Words para Java desde[aquí](https://releases.aspose.com/words/java/).
+-  Aspose.Words para Java: descargue e instale Aspose.Words para Java desde[aquí](https://releases.aspose.com/words/java/).
 
 ## Configurando su proyecto
 
@@ -75,7 +75,7 @@ En esta guía, hemos aprendido cómo implementar firmas digitales en documentos 
 
 ## Preguntas frecuentes
 
-### ¿Que es una asignatura digital?
+### ¿Qué es una firma digital?
 
 Una firma digital es una técnica criptográfica que verifica la autenticidad e integridad de un documento o mensaje digital.
 

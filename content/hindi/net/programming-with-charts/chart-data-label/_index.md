@@ -19,7 +19,7 @@ url: /hi/net/programming-with-charts/chart-data-label/
 2. .NET फ्रेमवर्क: सुनिश्चित करें कि आपके पास .NET फ्रेमवर्क 4.0 या बाद का संस्करण है।
 3.  Aspose.Words for .NET: Aspose.Words for .NET को डाउनलोड करें और इंस्टॉल करें[लिंक को डाउनलोड करें](https://releases.aspose.com/words/net/).
 4. C# का बुनियादी ज्ञान: C# प्रोग्रामिंग से परिचित होना आवश्यक है।
-5.  वैध लाइसेंस: प्राप्त करें[अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/) या यहाँ से खरीदें[लिंक खरीदें](https://purchase.aspose.com/buy).
+5.  वैध लाइसेंस: प्राप्त करें[अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/) या यहाँ से खरीदें[खरीदें लिंक](https://purchase.aspose.com/buy).
 
 ## नामस्थान आयात करें
 

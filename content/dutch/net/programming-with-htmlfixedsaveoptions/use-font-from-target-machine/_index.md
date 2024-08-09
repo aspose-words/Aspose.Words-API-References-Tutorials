@@ -104,7 +104,7 @@ Ja, Aspose.Words voor .NET ondersteunt verschillende documentformaten, en u kunt
 Als de doelcomputer niet over de vereiste lettertypen beschikt, wordt het document mogelijk niet weergegeven zoals bedoeld. Het is altijd een goed idee om lettertypen in te sluiten wanneer dat nodig is.
 
 ### Hoe sluit ik lettertypen in een document in?
- Het insluiten van lettertypen kan met behulp van de`FontSettings` klasse in Aspose.Words voor .NET. Verwijs naar de[documentatie](https://reference.aspose.com/words/net/) voor meer details.
+ Het insluiten van lettertypen kan met behulp van de`FontSettings` klasse in Aspose.Words voor .NET. Raadpleeg de[documentatie](https://reference.aspose.com/words/net/) voor meer informatie.
 
 ### Is er een manier om een voorbeeld van het document te bekijken voordat u het opslaat?
  Ja, u kunt gebruik maken van de`DocumentRenderer` class om een voorbeeld van het document te bekijken voordat u het opslaat. Bekijk Aspose.Words voor .NET[documentatie](https://reference.aspose.com/words/net/) voor meer informatie.

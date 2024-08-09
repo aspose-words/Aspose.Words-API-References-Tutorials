@@ -16,7 +16,7 @@ En estos tutoriales, los desarrolladores aprenderán cómo realizar un seguimien
 
 ## Control de versiones e historial de documentos
 
-Los tutoriales se centran en el control de versiones y la gestión del historial de documentos con Aspose.Words para Java. Los desarrolladores explorarán técnicas para guardar y administrar diferentes versiones de documentos, facilitando el acceso fácil a iteraciones anteriores. Aspose.Words simplifica el control de versiones, lo que permite a los desarrolladores manejar las revisiones de documentos de manera efectiva.
+Los tutoriales se centran en el control de versiones y la gestión del historial de documentos con Aspose.Words para Java. Los desarrolladores explorarán técnicas para guardar y administrar diferentes versiones de documentos, facilitando un fácil acceso a iteraciones anteriores. Aspose.Words simplifica el control de versiones, lo que permite a los desarrolladores manejar las revisiones de documentos de manera efectiva.
 
 ## Automatización de tareas de revisión
 
@@ -26,7 +26,7 @@ Al dominar la revisión de documentos con Aspose.Words para Java, los desarrolla
 
 ## Tutoriales de revisión de documentos
 ### [La guía definitiva para la revisión de documentos](./guide-document-revision/)
-¡Revisión de documentos maestros con Aspose.Words para Java! Administre cambios de manera eficiente, acepte/rechace revisiones y colabore sin problemas. ¡Empieza ahora!
+¡Revisión de documentos maestros con Aspose.Words para Java! Administre cambios de manera eficiente, acepte/rechace revisiones y colabore sin problemas. ¡Empiece ahora!
 ### [Seguimiento y gestión de revisiones de documentos](./tracking-managing-document-revisions/)
 Aprenda a realizar un seguimiento y gestionar revisiones de documentos con Aspose.Words para Java en esta guía completa. Obtenga instrucciones paso a paso y ejemplos de código fuente.
 ### [Comparación de versiones de documentos](./comparing-document-versions/)

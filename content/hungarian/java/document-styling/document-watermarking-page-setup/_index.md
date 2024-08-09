@@ -15,7 +15,7 @@ A dokumentumkezelés területén az Aspose.Words for Java hatékony eszköz, ame
 
 ### Vízjelek hozzáadása
 
-Vízjelek hozzáadása a dokumentumokhoz kulcsfontosságú lehet a márkaépítés vagy a tartalom biztonsága szempontjából. Az Aspose.Words for Java egyszerűvé teszi ezt a feladatot. Itt van, hogyan:
+Vízjelek hozzáadása a dokumentumokhoz kulcsfontosságú lehet a márkaépítés vagy a tartalom biztonsága szempontjából. Az Aspose.Words for Java egyszerűvé teszi ezt a feladatot. Íme, hogyan:
 
 ```java
 // Töltse be a dokumentumot
@@ -45,7 +45,7 @@ doc.save("document_with_watermark.docx");
 
 Tovább szabhatja a vízjeleket a betűtípus, a méret, a szín és az elforgatás beállításával. Ez a rugalmasság biztosítja, hogy a vízjel zökkenőmentesen illeszkedjen a dokumentum stílusához.
 
-## Oldal beállítása
+## Oldalbeállítás
 
 ### Oldalméret és tájolás
 

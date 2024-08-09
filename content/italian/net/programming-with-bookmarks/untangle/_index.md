@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-bookmarks/untangle/
 ---
-## introduzione
+## Introduzione
 
 Navigare in un documento Word a livello di codice può essere un po' come trovare la strada in un labirinto. Potresti incontrare segnalibri, intestazioni, tabelle e altri elementi che devono essere manipolati. Oggi ci immergeremo in un compito comune ma intricato: districare i segnalibri in un documento Word utilizzando Aspose.Words per .NET. Questo tutorial ti guiderà attraverso il processo passo dopo passo, assicurandoti di comprendere ogni parte del viaggio.
 
@@ -111,7 +111,7 @@ Questo tutorial riguarda i segnalibri che si estendono su due righe adiacenti. P
 
 ### È disponibile una versione di prova di Aspose.Words per .NET?
 
- Si, puoi[scarica una versione di prova gratuita](https://releases.aspose.com/) dal sito Web Aspose per esplorare le funzionalità della libreria.
+ Sì, puoi[scarica una versione di prova gratuita](https://releases.aspose.com/) dal sito Web Aspose per esplorare le funzionalità della libreria.
 
 ### Come posso ottenere supporto se riscontro problemi?
 

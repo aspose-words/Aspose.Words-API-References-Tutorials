@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/remove-source-headers-footers/
 ---
-## Úvod
+## Zavedení
 
 tomto komplexním průvodci se ponoříme do toho, jak efektivně odstranit záhlaví a zápatí z dokumentu aplikace Word pomocí Aspose.Words for .NET. Záhlaví a zápatí se běžně používají pro číslování stránek, názvy dokumentů nebo jiný opakující se obsah v dokumentech aplikace Word. Ať už slučujete dokumenty nebo čistíte formátování, zvládnutí tohoto procesu může zefektivnit vaše úkoly správy dokumentů. Pojďme prozkoumat proces krok za krokem, jak toho dosáhnout pomocí Aspose.Words for .NET.
 
@@ -16,7 +16,7 @@ tomto komplexním průvodci se ponoříme do toho, jak efektivně odstranit záh
 Než se pustíte do výukového programu, ujistěte se, že máte nastaveny následující předpoklady:
 
 1. Vývojové prostředí: Mějte nainstalované Visual Studio nebo jiné vývojové prostředí .NET.
-2.  Aspose.Words for .NET: Ujistěte se, že jste si stáhli a nainstalovali Aspose.Words for .NET. Pokud ne, můžete to získat od[tady](https://releases.aspose.com/words/net/).
+2.  Aspose.Words for .NET: Ujistěte se, že jste si stáhli a nainstalovali Aspose.Words for .NET. Pokud ne, můžete to získat od[zde](https://releases.aspose.com/words/net/).
 3. Základní znalosti: Znalost programování v C# a základy .NET frameworku.
 
 ## Importovat jmenné prostory

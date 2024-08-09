@@ -16,7 +16,7 @@ url: /ja/net/working-with-hyphenation/hyphenation-callback/
 
 コードに取り掛かる前に、必要なものがすべて揃っていることを確認しましょう。
 
-1.  Aspose.Words for .NET: ライブラリがあることを確認してください。[ここからダウンロード](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: ライブラリがあることを確認してください。[ここからダウンロード](https://releases.aspose.com/words/net/).
 2. IDE: Visual Studio のような開発環境。
 3. C# の基礎知識: C# と .NET フレームワークの理解。
 4. ハイフネーション辞書: 使用する予定の言語のハイフネーション辞書。

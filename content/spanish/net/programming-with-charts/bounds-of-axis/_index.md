@@ -15,7 +15,7 @@ url: /es/net/programming-with-charts/bounds-of-axis/
 
 Antes de comenzar, asegúrese de tener lo siguiente:
 
--  Aspose.Words para .NET: puedes[descargar](https://releases.aspose.com/words/net/) la última versión o utilizar una[prueba gratis](https://releases.aspose.com/).
+-  Aspose.Words para .NET: puedes[descargar](https://releases.aspose.com/words/net/) la última versión o utilizar una[prueba gratuita](https://releases.aspose.com/).
 - .NET Framework: asegúrese de tener .NET instalado en su sistema.
 - IDE: un entorno de desarrollo como Visual Studio.
 
@@ -100,7 +100,7 @@ Finalmente, guarde su documento en el directorio especificado.
 doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 ```
 
-¡Y eso es! Ha creado con éxito un documento con un gráfico utilizando Aspose.Words para .NET. 
+¡Y eso es todo! Ha creado con éxito un documento con un gráfico utilizando Aspose.Words para .NET. 
 
 ## Conclusión
 
@@ -115,10 +115,10 @@ Aspose.Words para .NET es una biblioteca que le permite crear, modificar y conve
  Puedes descargarlo desde[aquí](https://releases.aspose.com/words/net/) y siga las instrucciones de instalación proporcionadas.
 
 ### ¿Puedo utilizar Aspose.Words gratis?
- Sí, puedes usar un[prueba gratis](https://releases.aspose.com/) o conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/).
+ Sí, puedes usar un[prueba gratuita](https://releases.aspose.com/) o conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/).
 
 ### ¿Dónde puedo encontrar documentación para Aspose.Words para .NET?
  La documentación detallada está disponible.[aquí](https://reference.aspose.com/words/net/).
 
 ### ¿Cómo puedo obtener soporte para Aspose.Words?
- Puedes visitar el[Foro de soporte](https://forum.aspose.com/c/words/8) para asistencia.
+ Puedes visitar el[foro de soporte](https://forum.aspose.com/c/words/8) para obtener ayuda.

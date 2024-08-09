@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Bu bölümde Aspose.Words for .NET'i kullanarak sekmeli girintili çok düzeyli bir liste oluşturacağız. Bu adımları takip et:
+Bu bölümde Aspose.Words for .NET'i kullanarak sekmeli girintili çok düzeyli bir liste oluşturacağız. Şu adımları izleyin:
 
 ## 1. Adım: Belgenizi Ayarlayın
 
@@ -118,7 +118,7 @@ Bu eğitimde Aspose.Words for .NET'i kullanarak sekmeli girintili çok düzeyli 
 Evet, Aspose.Words liste stillerinin çeşitli düzeylerde özelleştirilmesine olanak tanır. Farklı stiller elde etmek için liste biçimlendirme seçeneklerini değiştirebilirsiniz.
 
 ### Rakamlar yerine madde işaretleri kullanmam gerekirse ne olur?
- Kullan`ListFormat.ApplyBulletDefault()` bunun yerine yöntem`ApplyNumberDefault()` madde işaretli bir liste oluşturmak için.
+ Kullanın`ListFormat.ApplyBulletDefault()` bunun yerine yöntem`ApplyNumberDefault()` madde işaretli bir liste oluşturmak için.
 
 ### Girinti için kullanılan sekme karakterinin boyutunu nasıl ayarlayabilirim?
  Maalesef sekme boyutu`TxtSaveOptions`sabittir. Girinti boyutunu ayarlamak için boşluk kullanmanız veya liste formatını doğrudan özelleştirmeniz gerekebilir.

@@ -1,6 +1,6 @@
 ---
-title: 建立新簽名行並設定提供者 ID
-linktitle: 建立新簽名行並設定提供者 ID
+title: 建立新的簽名行並設定提供者 ID
+linktitle: 建立新的簽名行並設定提供者 ID
 second_title: Aspose.Words 文件處理 API
 description: 了解如何使用 Aspose.Words for .NET 在 Word 文件中建立新的簽名行並設定提供者 ID。逐步指南。
 type: docs
@@ -9,7 +9,7 @@ url: /zh-hant/net/programming-with-digital-signatures/create-new-signature-line-
 ---
 ## 介紹
 
-嘿，科技愛好者們！有沒有想過如何以程式設計方式在 Word 文件中新增簽名行？好吧，今天我們將深入探討使用 Aspose.Words for .NET。本指南將引導您完成每一步，讓您在 Word 文件中建立新的簽名行和設定提供者 ID 變得非常簡單。無論您是要自動化文件處理還是只是想簡化工作流程，本教學都能滿足您的要求。
+嘿，科技愛好者們！有沒有想過如何以程式設計方式在 Word 文件中新增簽名行？好吧，今天我們將深入探討使用 Aspose.Words for .NET。本指南將引導您完成每個步驟，讓您在 Word 文件中建立新的簽名行和設定提供者 ID 變得非常簡單。無論您是要自動化文件處理還是只是想簡化工作流程，本教學都能滿足您的要求。
 
 ## 先決條件
 
@@ -125,7 +125,7 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLineProviderId.docx"
 
 ## 結論
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 在 Word 文件中成功建立了新的簽名行並設定了提供者 ID。這個強大的程式庫使管理和自動化文件處理任務變得非常容易。嘗試一下，看看它如何簡化您的工作流程。
+現在你就得到它了！您已使用 Aspose.Words for .NET 在 Word 文件中成功建立了新的簽名行並設定了提供者 ID。這個強大的程式庫使管理和自動化文件處理任務變得異常容易。嘗試一下，看看它如何簡化您的工作流程。
 
 ## 常見問題解答
 

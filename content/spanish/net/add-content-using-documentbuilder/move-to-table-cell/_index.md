@@ -94,5 +94,5 @@ Console.WriteLine(table.Rows[2].Cells[3].GetText().Trim());
  Sí,`DocumentBuilder` le permite insertar imágenes, tablas y otros elementos en la posición actual dentro de la celda.
 
 ### ¿Cómo guardo el documento modificado?
- Utilizar el`Save` método de la`Document` class para guardar los cambios. Por ejemplo:`doc.Save(dataDir + "UpdatedTables.docx");`
+ Utilice el`Save` método de la`Document` class para guardar los cambios. Por ejemplo:`doc.Save(dataDir + "UpdatedTables.docx");`
 

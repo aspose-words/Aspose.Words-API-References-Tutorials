@@ -78,7 +78,7 @@ Cette ligne de code enregistre le document avec les styles appliqués dans le r�
 
 ## Conclusion
 
-Et voila! Vous venez de styliser votre document Word à l'aide d'Aspose.Words pour .NET. Plutôt cool, non ? Avec seulement quelques lignes de code, vous pouvez transformer vos documents simples en chefs-d'œuvre visuellement attrayants. Alors n'hésitez plus, expérimentez différents styles et faites ressortir vos documents !
+Et voilà ! Vous venez de styliser votre document Word à l'aide d'Aspose.Words pour .NET. Plutôt cool, non ? Avec seulement quelques lignes de code, vous pouvez transformer vos documents simples en chefs-d'œuvre visuellement attrayants. Alors n'hésitez plus, expérimentez différents styles et faites ressortir vos documents !
 
 ## FAQ
 

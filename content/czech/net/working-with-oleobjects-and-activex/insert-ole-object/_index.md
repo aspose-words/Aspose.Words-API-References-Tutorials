@@ -1,109 +1,77 @@
 ---
-title: Vložit objekt Ole do dokumentu aplikace Word
-linktitle: Vložit objekt Ole do dokumentu aplikace Word
+title: Vložit objekt OLE do dokumentu aplikace Word
+linktitle: Vložit objekt OLE do dokumentu aplikace Word
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak vložit objekt OLE do dokumentu aplikace Word pomocí Aspose.Words for .NET.
+description: Naučte se vkládat objekty OLE do dokumentů aplikace Word pomocí Aspose.Words for .NET pomocí tohoto podrobného průvodce. Vylepšete své dokumenty pomocí vloženého obsahu.
 type: docs
 weight: 10
 url: /cs/net/working-with-oleobjects-and-activex/insert-ole-object/
 ---
+## Zavedení
 
-Zde je průvodce krok za krokem, který vysvětluje zdrojový kód C# níže, který ilustruje, jak vložit objekt OLE do dokumentu aplikace Word pomocí Aspose.Words for .NET.
+Při práci s dokumenty Wordu v .NET může být nezbytná integrace různých typů dat. Jednou z výkonných funkcí je schopnost vkládat objekty OLE (Object Linking and Embedding) do dokumentů aplikace Word. Objekty OLE mohou být libovolného typu obsahu, jako jsou tabulky aplikace Excel, prezentace PowerPoint nebo obsah HTML. V této příručce si projdeme, jak vložit objekt OLE do dokumentu aplikace Word pomocí Aspose.Words for .NET. Pojďme se ponořit!
 
-## Krok 1: Importujte potřebné reference
-Než začnete, ujistěte se, že jste do svého projektu naimportovali potřebné reference pro použití Aspose.Words for .NET. To zahrnuje import knihovny Aspose.Words a přidání požadovaných jmenných prostorů do zdrojového souboru.
+## Předpoklady
+
+Než začneme, ujistěte se, že máte následující:
+
+1. Aspose.Words for .NET Library: Stáhněte si ji z[zde](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí: Visual Studio nebo jakékoli jiné vývojové prostředí .NET.
+3. Základní znalost C#: Předpokládá se znalost programování v C#.
+
+## Importovat jmenné prostory
+
+Nejprve se ujistěte, že jste do svého projektu C# importovali potřebné jmenné prostory:
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Drawing;
 ```
 
-## Krok 2: Vytvořte nový dokument a generátor dokumentů
- V tomto kroku vytvoříme nový dokument pomocí`Document` třída a tvůrce dokumentů pomocí`DocumentBuilder` třída.
+Pojďme si tento proces rozdělit na zvládnutelné kroky.
+
+## Krok 1: Vytvořte nový dokument
+
+Nejprve budete muset vytvořit nový dokument aplikace Word. To bude sloužit jako kontejner pro náš objekt OLE.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 3: Vložte objekt OLE
- Použijte Tvůrce dokumentů`InsertOleObject`metoda pro vložení objektu OLE do dokumentu. Zadejte adresu URL objektu OLE, typ objektu, možnosti zobrazení a další nezbytná nastavení.
+## Krok 2: Vložte objekt OLE
+
+ Dále použijete`DocumentBuilder`třídy pro vložení objektu OLE. Zde jako náš příklad používáme soubor HTML umístěný na adrese „http://www.aspose.com“.
 
 ```csharp
-builder. InsertOleObject("http://www.aspose.com", "htmlsoubor", true, true, null);
+builder.InsertOleObject("http://www.aspose.com", "htmlsoubor", true, true, null);
 ```
 
-## Krok 4: Uložte dokument
- Použijte dokument`Save` způsob uložení dokumentu do souboru.
+## Krok 3: Uložte dokument
+
+Nakonec uložte dokument do zadané cesty. Ujistěte se, že cesta je správná a přístupná.
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");
 ```
-
-### Příklad zdrojového kódu pro vložení objektu OLE pomocí Aspose.Words for .NET
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder. InsertOleObject("http://www.aspose.com", "htmlsoubor", true, true, null);
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");
-```
-
-Toto je kompletní ukázka kódu pro vložení objektu OLE pomocí Aspose.Words for .NET. Nezapomeňte importovat potřebné reference a postupujte podle výše popsaných kroků k integraci tohoto kódu do vašeho projektu.
 
 ## Závěr
 
-Závěrem lze říci, že vkládání objektů OLE do dokumentu aplikace Word je výkonná funkce, kterou nabízí Aspose.Words for .NET. Pomocí této knihovny můžete snadno vkládat objekty OLE, jako jsou soubory HTML, tabulky Excel, prezentace PowerPoint atd., do dokumentů aplikace Word.
+Vkládání objektů OLE do dokumentů aplikace Word pomocí Aspose.Words for .NET je výkonná funkce, která umožňuje zahrnutí různých typů obsahu. Ať už se jedná o soubor HTML, tabulku aplikace Excel nebo jakýkoli jiný obsah kompatibilní s OLE, tato schopnost může výrazně zlepšit funkčnost a interaktivitu vašich dokumentů aplikace Word. Podle kroků uvedených v této příručce můžete hladce integrovat objekty OLE do svých dokumentů, čímž se stanou dynamičtějšími a poutavějšími.
 
-tomto článku jsme prošli podrobným průvodcem, který vysvětluje zdrojový kód v C#, který ukazuje, jak vložit objekt OLE do dokumentu aplikace Word. Probrali jsme potřebné reference, vytvoření nového dokumentu a generátoru dokumentů a kroky pro vložení objektu OLE a uložení dokumentu.
+## FAQ
 
-### Časté dotazy pro vkládání objektu OLE do dokumentu aplikace Word
+### Jaké typy objektů OLE mohu vložit pomocí Aspose.Words for .NET?
+Můžete vkládat různé typy objektů OLE, včetně souborů HTML, tabulek Excel, prezentací PowerPoint a dalšího obsahu kompatibilního s OLE.
 
-#### Otázka: Jaké přihlašovací údaje musím importovat, abych mohl používat Aspose.Words pro .NET?
+### Mohu zobrazit objekt OLE jako ikonu místo jeho skutečného obsahu?
+ Ano, můžete si zvolit zobrazení objektu OLE jako ikonu nastavením`asIcon` parametr k`true`.
 
-A: Chcete-li používat Aspose.Words pro .NET, musíte importovat následující odkazy:
+### Je možné propojit objekt OLE s jeho zdrojovým souborem?
+ Ano, nastavením`isLinked` parametr k`true`, můžete propojit objekt OLE s jeho zdrojovým souborem.
 
-```csharp
-using Aspose.Words;
-using Aspose.Words.Drawing;
-```
+### Jak mohu upravit ikonu použitou pro objekt OLE?
+ Vlastní ikonu můžete poskytnout poskytnutím`Image` objekt jako`image` parametr v`InsertOleObject` metoda.
 
-#### Otázka: Jak vytvořit nový dokument a generátor dokumentů?
-
- Odpověď: Můžete vytvořit nový dokument pomocí`Document` třída a tvůrce dokumentů pomocí`DocumentBuilder` třídy, jak je uvedeno níže:
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-#### Otázka: Jak vložit objekt OLE do dokumentu?
-
- A: Použijte`InsertOleObject` metoda tvůrce dokumentů (`DocumentBuilder`) pro vložení objektu OLE do dokumentu. Zadejte adresu URL objektu OLE, typ objektu, možnosti zobrazení a další nezbytná nastavení. Zde je příklad:
-
-```csharp
-builder. InsertOleObject("http://www.aspose.com", "htmlsoubor", true, true, null);
-```
-
-#### Otázka: Jak uložit dokument?
-
- A: Použijte dokument`Save`způsob uložení dokumentu do souboru. Zde je příklad:
-
-```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");
-```
-
-#### Otázka: Můžete poskytnout úplný příklad vložení objektu OLE pomocí Aspose.Words for .NET?
-
-Odpověď: Zde je kompletní ukázkový kód pro vložení objektu OLE pomocí Aspose.Words for .NET. Nezapomeňte importovat potřebné reference a postupujte podle výše popsaných kroků k integraci tohoto kódu do vašeho projektu:
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder. InsertOleObject("http://www.aspose.com", "htmlsoubor", true, true, null);
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");
-```
+### Kde najdu další dokumentaci k Aspose.Words pro .NET?
+ Podrobnou dokumentaci najdete na[Stránka dokumentace Aspose.Words for .NET](https://reference.aspose.com/words/net/).

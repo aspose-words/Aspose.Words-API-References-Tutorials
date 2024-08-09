@@ -104,7 +104,7 @@ dstDoc.Save("appended_document.docx");
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesindeki yer imlerine eklenmiş bir bölümdeki metni başarıyla eklediniz. Bu güçlü araç, belge üzerinde değişiklik yapmayı çocuk oyuncağı haline getiriyor ve artık elinizde bir numara daha var. Mutlu kodlama!
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesindeki yer imlerine eklenmiş bir bölümdeki metni başarıyla eklediniz. Bu güçlü araç, belge üzerinde değişiklik yapmayı çocuk oyuncağı haline getiriyor ve artık elinizde bir numara daha var. Mutlu kodlama!
 
 ## SSS'ler
 

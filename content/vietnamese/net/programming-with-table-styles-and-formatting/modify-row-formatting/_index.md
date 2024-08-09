@@ -9,7 +9,7 @@ url: /vi/net/programming-with-table-styles-and-formatting/modify-row-formatting/
 ---
 ## Giới thiệu
 
-Bạn đã bao giờ cần điều chỉnh định dạng của các hàng trong tài liệu Word của mình chưa? Có thể bạn đang cố gắng làm nổi bật hàng đầu tiên trong bảng hoặc đảm bảo rằng các bảng của bạn trông đẹp mắt trên các trang khác nhau. Vâng, bạn thật may mắn! Trong hướng dẫn này, chúng ta sẽ đi sâu vào cách sửa đổi định dạng hàng trong tài liệu Word bằng Aspose.Words cho .NET. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay chỉ mới bắt đầu, hướng dẫn này sẽ hướng dẫn bạn từng bước một cách rõ ràng, chi tiết. Bạn đã sẵn sàng mang đến cho tài liệu của mình vẻ bóng bẩy và chuyên nghiệp chưa? Bắt đầu nào!
+Bạn đã bao giờ cần điều chỉnh định dạng của các hàng trong tài liệu Word của mình chưa? Có thể bạn đang cố gắng làm nổi bật hàng đầu tiên trong bảng hoặc đảm bảo rằng các bảng của bạn trông đẹp mắt trên các trang khác nhau. Vâng, bạn thật may mắn! Trong hướng dẫn này, chúng ta sẽ đi sâu vào cách sửa đổi định dạng hàng trong tài liệu Word bằng Aspose.Words cho .NET. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay chỉ mới bắt đầu, hướng dẫn này sẽ hướng dẫn bạn từng bước một cách rõ ràng, chi tiết. Bạn đã sẵn sàng mang đến cho tài liệu của mình vẻ bóng bẩy và chuyên nghiệp chưa? Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
@@ -51,7 +51,7 @@ Tiếp theo, chúng ta cần truy cập vào bảng trong tài liệu. Aspose.Wo
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 ```
 
-Ở đây, chúng tôi đang truy xuất bảng đầu tiên trong tài liệu. Các`GetChild` phương thức được sử dụng để tìm nút bảng, với`NodeType.Table` chỉ định loại nút chúng tôi đang tìm kiếm. Các`0` cho biết chúng tôi muốn bảng đầu tiên và`true` đảm bảo chúng tôi tìm kiếm toàn bộ tài liệu.
+Ở đây, chúng tôi đang truy xuất bảng đầu tiên trong tài liệu. các`GetChild` phương thức được sử dụng để tìm nút bảng, với`NodeType.Table` chỉ định loại nút chúng tôi đang tìm kiếm. các`0` cho biết chúng tôi muốn bảng đầu tiên và`true` đảm bảo chúng tôi tìm kiếm toàn bộ tài liệu.
 
 ## Bước 3: Truy xuất hàng đầu tiên
 
@@ -61,7 +61,7 @@ Với bảng hiện có thể truy cập được, bước tiếp theo là truy 
 Row firstRow = table.FirstRow;
 ```
 
- Các`FirstRow` thuộc tính cho chúng ta hàng đầu tiên trong bảng. Bây giờ, chúng ta đã sẵn sàng bắt đầu sửa đổi định dạng của nó.
+ các`FirstRow` thuộc tính cho chúng ta hàng đầu tiên trong bảng. Bây giờ, chúng ta đã sẵn sàng bắt đầu sửa đổi định dạng của nó.
 
 ## Bước 4: Sửa đổi đường viền hàng
 
@@ -95,7 +95,7 @@ firstRow.RowFormat.AllowBreakAcrossPages = true;
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Chỉ với một vài dòng mã, chúng tôi đã sửa đổi định dạng hàng trong tài liệu Word bằng Aspose.Words cho .NET. Cho dù bạn đang điều chỉnh đường viền, thay đổi chiều cao hàng hay đảm bảo các hàng ngắt giữa các trang, các bước này đều cung cấp nền tảng vững chắc để tùy chỉnh bảng của bạn. Tiếp tục thử nghiệm các cài đặt khác nhau và xem cách chúng có thể cải thiện hình thức và chức năng của tài liệu của bạn.
+Và bạn có nó! Chỉ với một vài dòng mã, chúng tôi đã sửa đổi định dạng hàng trong tài liệu Word bằng Aspose.Words cho .NET. Cho dù bạn đang điều chỉnh đường viền, thay đổi chiều cao hàng hay đảm bảo các hàng ngắt giữa các trang, các bước này đều cung cấp nền tảng vững chắc để tùy chỉnh bảng của bạn. Tiếp tục thử nghiệm các cài đặt khác nhau và xem cách chúng có thể cải thiện hình thức và chức năng của tài liệu của bạn.
 
 ## Câu hỏi thường gặp
 

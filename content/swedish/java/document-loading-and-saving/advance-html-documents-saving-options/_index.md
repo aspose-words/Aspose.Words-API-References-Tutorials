@@ -10,7 +10,7 @@ url: /sv/java/document-loading-and-saving/advance-html-documents-saving-options/
 
 I den här handledningen kommer vi att utforska de avancerade alternativen för att spara HTML-dokument som tillhandahålls av Aspose.Words för Java. Aspose.Words är ett kraftfullt Java API för att arbeta med Word-dokument, och det erbjuder ett brett utbud av funktioner för dokumentmanipulation och konvertering.
 
-## 1. Introduktion
+## 1. Inledning
 Aspose.Words för Java låter dig arbeta med Word-dokument programmatiskt. I den här handledningen kommer vi att fokusera på avancerade alternativ för att spara HTML-dokument, som gör att du kan kontrollera hur Word-dokument konverteras till HTML.
 
 ## 2. Exportera information om tur och retur

@@ -167,7 +167,7 @@ footer.getRange().replace("text-to-replace", "new-text", options);
 doc.save("modified-document.docx");
 ```
 
-Ini memungkinkan Anda melakukan penggantian teks secara khusus di header dan footer.
+Ini memungkinkan Anda melakukan penggantian teks khusus di header dan footer.
 
 ## Menampilkan Perubahan Urutan Header dan Footer
 
@@ -339,7 +339,7 @@ Aspose.Words untuk Java memberikan kemampuan komprehensif untuk menemukan dan me
 
 ### Bagaimana cara mengunduh Aspose.Words untuk Java?
 
- Anda dapat mengunduh Aspose.Words untuk Java dari situs web dengan mengunjungi[Link ini](https://releases.aspose.com/words/java/).
+ Anda dapat mengunduh Aspose.Words untuk Java dari situs web dengan mengunjungi[tautan ini](https://releases.aspose.com/words/java/).
 
 ### Bisakah saya menggunakan ekspresi reguler untuk penggantian teks?
 

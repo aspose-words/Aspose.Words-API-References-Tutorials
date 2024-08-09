@@ -107,7 +107,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.AllowCellSpacing.docx");
 
 ## Következtetés
 
-Gratulálunk! Sikeresen megtanulta, hogyan engedélyezhet cellaközöket egy táblázatban az Aspose.Words for .NET segítségével. Ez a kis változtatás jelentősen javíthatja a táblázatok kinézetét és hangulatát, professzionálisabbá és olvashatóbbá teszi dokumentumait. Ne feledje, a gyakorlat teszi a mestert, ezért ne habozzon kísérletezni a különböző beállításokkal, és megtudja, mi a legjobb az Ön számára.
+Gratulálok! Sikeresen megtanulta, hogyan engedélyezhet cellaközöket egy táblázatban az Aspose.Words for .NET segítségével. Ez a kis változtatás jelentősen javíthatja a táblázatok kinézetét és hangulatát, professzionálisabbá és olvashatóbbá teszi dokumentumait. Ne feledje, a gyakorlat teszi a mestert, ezért ne habozzon kísérletezni a különböző beállításokkal, és megtudja, mi a legjobb az Ön számára.
 
 ## GYIK
 

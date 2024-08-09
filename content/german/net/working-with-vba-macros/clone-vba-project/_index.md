@@ -16,10 +16,10 @@ Hallo liebe Entwicklerkollegen! Haben Sie sich schon einmal mit der Komplexität
 
 Bevor wir beginnen, stellen wir sicher, dass Sie alles vorbereitet haben:
 
-1.  Aspose.Words für .NET-Bibliothek: Sie benötigen die neueste Version von Aspose.Words für .NET. Wenn Sie dies noch nicht getan haben, können Sie[hier herunterladen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET-Bibliothek: Sie benötigen die neueste Version von Aspose.Words für .NET. Wenn Sie dies noch nicht getan haben, können Sie[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Eine .NET-Entwicklungsumgebung wie Visual Studio ist zum Schreiben und Testen Ihres Codes unerlässlich.
 3. Grundlegende C#-Kenntnisse: Grundlegende Kenntnisse in C# helfen Ihnen dabei, den Codeausschnitten zu folgen.
-4.  Beispiel eines Word-Dokuments:[Word-Datei](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm)(.docm) mit einem VBA-Projekt, mit dem Sie sofort arbeiten können. Sie können Ihr eigenes erstellen oder ein vorhandenes verwenden.
+4.  Beispiel eines Word-Dokuments:[Word-Dokument](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm)(.docm) mit einem VBA-Projekt, mit dem Sie sofort arbeiten können. Sie können Ihr eigenes erstellen oder ein vorhandenes verwenden.
 
 ## Namespaces importieren
 
@@ -94,7 +94,7 @@ Diese Zeile speichert das neue Dokument mit dem geklonten VBA-Projekt als „Wor
 
 Und da haben Sie es! Sie haben gerade die Kunst gemeistert, ein VBA-Projekt in Word-Dokumenten mit Aspose.Words für .NET zu klonen. Diese leistungsstarke Bibliothek macht das Arbeiten mit komplexen Word-Dokumenten zum Kinderspiel, von einfachen Textmanipulationen bis hin zu komplizierten VBA-Projekten. Indem Sie dieser Anleitung folgen, haben Sie nicht nur gelernt, wie Sie VBA-Projekte klonen, sondern auch die Grundlage für die weitere Erkundung der umfangreichen Funktionen von Aspose.Words gelegt.
 
- Wenn Sie neugierig sind und tiefer eintauchen möchten, vergessen Sie nicht, sich die[API-Dokumentation](https://reference.aspose.com/words/net/) . Für Fragen oder Unterstützung steht Ihnen die[Hilfeforum](https://forum.aspose.com/c/words/8) ist immer ein großartiger Ort, um mit anderen Entwicklern in Kontakt zu treten.
+ Wenn Sie neugierig sind und tiefer eintauchen möchten, vergessen Sie nicht, sich die[API-Dokumentation](https://reference.aspose.com/words/net/) . Für Fragen oder Unterstützung steht Ihnen die[Support-Forum](https://forum.aspose.com/c/words/8) ist immer ein großartiger Ort, um mit anderen Entwicklern in Kontakt zu treten.
 
 Viel Spaß beim Programmieren und denken Sie daran: Jedes Abenteuer der Dokumentbearbeitung beginnt mit einer einzigen Codezeile!
 
@@ -104,7 +104,7 @@ Viel Spaß beim Programmieren und denken Sie daran: Jedes Abenteuer der Dokument
 Aspose.Words für .NET ist eine vielseitige Bibliothek zum Erstellen, Bearbeiten und Konvertieren von Word-Dokumenten in .NET-Anwendungen. Es ist ideal für die Automatisierung von Dokumentaufgaben.
 
 ### Kann ich Aspose.Words kostenlos nutzen?  
- Ja, Sie können Aspose.Words mit einem[Kostenlose Testphase](https://releases.aspose.com/) oder erhalten Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) zu Auswertungszwecken.
+ Ja, Sie können Aspose.Words mit einem[Kostenlose Testversion](https://releases.aspose.com/) oder erhalten Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) zu Auswertungszwecken.
 
 ### Wie klone ich ein VBA-Projekt in Aspose.Words?  
 Um ein VBA-Projekt zu klonen, laden Sie das Originaldokument, klonen Sie das VBA-Projekt und speichern Sie das neue Dokument mit dem geklonten Projekt.

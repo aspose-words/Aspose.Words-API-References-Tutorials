@@ -75,7 +75,7 @@ Trong hướng dẫn này, chúng tôi đã trình bày cách tắt ngắt hàng
  Có, bạn có thể vô hiệu hóa ngắt hàng cho các hàng cụ thể bằng cách truy cập vào hàng mong muốn và đặt nó`AllowBreakAcrossPages`tài sản để`false`.
 
 ### Phương pháp này có hoạt động với các bảng có ô được hợp nhất không?  
- Có, phương pháp này áp dụng cho các bảng có ô được hợp nhất. Bất động sản`AllowBreakAcrossPages` áp dụng cho toàn bộ hàng, bất kể việc hợp nhất ô.
+ Có, phương pháp này áp dụng cho các bảng có ô được hợp nhất. tài sản`AllowBreakAcrossPages` áp dụng cho toàn bộ hàng, bất kể việc hợp nhất ô.
 
 ### Phương pháp này có hoạt động không nếu bảng được lồng bên trong một bảng khác?  
 Có, bạn có thể truy cập và sửa đổi các bảng lồng nhau theo cách tương tự. Đảm bảo bạn tham chiếu chính xác bảng lồng nhau theo chỉ mục của nó hoặc các thuộc tính khác.

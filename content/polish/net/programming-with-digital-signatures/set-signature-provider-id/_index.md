@@ -9,13 +9,13 @@ url: /pl/net/programming-with-digital-signatures/set-signature-provider-id/
 ---
 ## Wstęp
 
-No hej! Masz więc ten niesamowity dokument programu Word, który wymaga podpisu cyfrowego, prawda? Ale nie byle jaki podpis — musisz ustawić konkretny identyfikator dostawcy podpisu. Niezależnie od tego, czy zajmujesz się dokumentami prawnymi, umowami czy jakąkolwiek dokumentacją, dodanie bezpiecznego podpisu cyfrowego ma kluczowe znaczenie. W tym samouczku przeprowadzę Cię przez cały proces ustawiania identyfikatora dostawcy podpisu w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Gotowy? Zanurzmy się!
+Hej tam! Masz więc ten niesamowity dokument programu Word, który wymaga podpisu cyfrowego, prawda? Ale nie byle jaki podpis — musisz ustawić konkretny identyfikator dostawcy podpisu. Niezależnie od tego, czy zajmujesz się dokumentami prawnymi, umowami czy jakąkolwiek dokumentacją, dodanie bezpiecznego podpisu cyfrowego ma kluczowe znaczenie. W tym samouczku przeprowadzę Cię przez cały proces ustawiania identyfikatora dostawcy podpisu w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Gotowy? Zanurzmy się!
 
 ## Warunki wstępne
 
 Zanim zaczniemy, upewnij się, że masz następujące elementy:
 
-1. Aspose.Words dla biblioteki .NET: Jeśli jeszcze tego nie zrobiłeś,[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1. Aspose.Words dla biblioteki .NET: Jeśli jeszcze tego nie zrobiłeś,[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: Visual Studio lub dowolne IDE zgodne z C#.
 3. Dokument programu Word: dokument z linią podpisu (`Signature line.docx`).
 4.  Certyfikat cyfrowy: A`.pfx` plik certyfikatu (np.`morzal.pfx`).

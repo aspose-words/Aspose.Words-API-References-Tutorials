@@ -9,7 +9,7 @@ url: /nl/net/join-and-append-documents/update-page-layout/
 ---
 ## Invoering
 
-Hallo daar! Als u ooit programmatisch met Word-documenten hebt gewerkt, weet u hoe cruciaal het is om pagina-indelingen effectief te beheren. Of u nu rapporten genereert, sjablonen maakt of eenvoudigweg documentontwerpen aanpast, het is van cruciaal belang dat uw paginalay-outs fris en accuraat blijven. Vandaag duiken we in hoe u paginalay-outs in Word-documenten kunt bijwerken met Aspose.Words voor .NET. We doorlopen het proces stap voor stap, zodat u vol vertrouwen met de lay-out van uw documenten kunt omgaan en ervoor kunt zorgen dat alles er goed uitziet.
+Hé daar! Als u ooit programmatisch met Word-documenten hebt gewerkt, weet u hoe cruciaal het is om pagina-indelingen effectief te beheren. Of u nu rapporten genereert, sjablonen maakt of eenvoudigweg documentontwerpen aanpast, het is van cruciaal belang dat uw paginalay-outs fris en accuraat blijven. Vandaag duiken we in hoe u paginalay-outs in Word-documenten kunt bijwerken met Aspose.Words voor .NET. We doorlopen het proces stap voor stap, zodat u vol vertrouwen met de lay-out van uw documenten kunt omgaan en ervoor kunt zorgen dat alles er goed uitziet.
 
 ## Vereisten
 
@@ -38,7 +38,7 @@ using Aspose.Words.Layout;
 
 Deze naamruimten geven u toegang tot de klassen en methoden die u nodig hebt om met Word-documenten te werken en hun lay-outs te manipuleren.
 
-Nu we aan onze vereisten hebben voldaan, gaan we over tot het daadwerkelijke proces. We zullen het opsplitsen in een reeks eenvoudige stappen:
+Nu we aan onze vereisten hebben voldaan, gaan we over tot het eigenlijke proces. We zullen het opsplitsen in een reeks eenvoudige stappen:
 
 ## Stap 1: Laad uw document
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-charts/hide-chart-axis/
 ---
-## Úvod
+## Zavedení
 
 Vytváření dynamických a vizuálně přitažlivých dokumentů aplikace Word často zahrnuje začlenění tabulek a grafů. Jeden takový scénář může vyžadovat skrytí osy grafu pro čistší prezentaci. Aspose.Words for .NET poskytuje komplexní a snadno použitelné API pro takové úkoly. Tento výukový program vás provede kroky ke skrytí osy grafu v dokumentu aplikace Word pomocí Aspose.Words for .NET.
 
@@ -15,7 +15,7 @@ Vytváření dynamických a vizuálně přitažlivých dokumentů aplikace Word 
 
 Než se pustíme do výukového programu, ujistěte se, že máte následující předpoklady:
 
--  Aspose.Words for .NET: Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Jakékoli IDE, které podporuje vývoj .NET, jako je Visual Studio.
 - .NET Framework: Ujistěte se, že máte na svém počítači nainstalované rozhraní .NET Framework.
 - Základní znalost C#: Výhodou bude znalost programovacího jazyka C#.
@@ -44,7 +44,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- V tomto kroku definujeme cestu, kam bude dokument uložen. Poté vytvoříme nový`Document` objekt a a`DocumentBuilder` objekt začít budovat náš dokument.
+ V tomto kroku definujeme cestu, kam bude dokument uložen. Poté vytvoříme nový`Document` objekt a a`DocumentBuilder` začněte budovat náš dokument.
 
 ## Krok 2: Vložte graf
 
@@ -101,7 +101,7 @@ Tento příkaz uloží dokument aplikace Word s grafem do zadané cesty.
 
 ## Závěr
 
-Gratulujeme! Úspěšně jste se naučili, jak skrýt osu grafu v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato výkonná knihovna usnadňuje programovou manipulaci s dokumenty Wordu. Podle těchto kroků můžete s minimálním úsilím vytvářet přizpůsobené a profesionálně vypadající dokumenty.
+Gratuluji! Úspěšně jste se naučili, jak skrýt osu grafu v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato výkonná knihovna usnadňuje programovou manipulaci s dokumenty Wordu. Podle těchto kroků můžete s minimálním úsilím vytvářet přizpůsobené a profesionálně vypadající dokumenty.
 
 ## FAQ
 
@@ -112,10 +112,10 @@ Aspose.Words for .NET je výkonné API pro vytváření, úpravy, konverzi a man
  Ano, můžete skrýt obě osy nastavením`Hidden` majetek obou`AxisX`a`AxisY` na`true`.
 
 ### Je k dispozici bezplatná zkušební verze pro Aspose.Words pro .NET?
- Ano, můžete získat bezplatnou zkušební verzi[tady](https://releases.aspose.com/).
+ Ano, můžete získat bezplatnou zkušební verzi[zde](https://releases.aspose.com/).
 
 ### Kde najdu další dokumentaci?
- Podrobnou dokumentaci najdete na Aspose.Words pro .NET[tady](https://reference.aspose.com/words/net/).
+ Podrobnou dokumentaci najdete na Aspose.Words pro .NET[zde](https://reference.aspose.com/words/net/).
 
 ### Jak mohu získat podporu pro Aspose.Words pro .NET?
- Můžete získat podporu od komunity Aspose[tady](https://forum.aspose.com/c/words/8).
+ Můžete získat podporu od komunity Aspose[zde](https://forum.aspose.com/c/words/8).

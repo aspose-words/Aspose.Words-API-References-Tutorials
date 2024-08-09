@@ -15,7 +15,7 @@ url: /ko/net/programming-with-imagesaveoptions/get-jpeg-page-range/
 
 시작하기 전에 몇 가지 사항이 준비되어 있어야 합니다.
 
--  .NET용 Aspose.Words: .NET용 Aspose.Words가 설치되어 있는지 확인하세요. 당신은 할 수 있습니다[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+-  .NET용 Aspose.Words: .NET용 Aspose.Words가 설치되어 있는지 확인하세요. 당신은 할 수 있습니다[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 - 개발 환경: Visual Studio와 같은 AC# 개발 환경.
 - 샘플 문서: 작업할 Word 문서입니다. 이 튜토리얼에서는 모든 .docx 파일을 사용할 수 있습니다.
 - 기본 C# 지식: C# 프로그래밍에 익숙합니다.

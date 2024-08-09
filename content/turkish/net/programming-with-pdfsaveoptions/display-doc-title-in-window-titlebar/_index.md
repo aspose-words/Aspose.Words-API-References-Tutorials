@@ -9,7 +9,7 @@ url: /tr/net/programming-with-pdfsaveoptions/display-doc-title-in-window-titleba
 ---
 ## giriiş
 
-PDF'lerinizin daha da profesyonel görünmesini sağlamaya hazır mısınız? Küçük ama etkili bir değişiklik, belge başlığının pencere başlık çubuğunda görüntülenmesidir. Bu, PDF'nize bir ad etiketi koyarak onu anında tanınabilir hale getirmek gibidir. Bugün bunu Aspose.Words for .NET kullanarak nasıl başaracağımızı ele alacağız. Bu kılavuzun sonunda süreç hakkında çok net bir anlayışa sahip olacaksınız. Başlayalım!
+PDF'lerinizin daha da profesyonel görünmesini sağlamaya hazır mısınız? Küçük ama etkili bir değişiklik, belge başlığının pencere başlık çubuğunda görüntülenmesidir. Bu, PDF'nize bir ad etiketi koyarak onu anında tanınabilir hale getirmek gibidir. Bugün bunu Aspose.Words for .NET kullanarak nasıl başaracağımızı ele alacağız. Bu kılavuzun sonunda süreç hakkında çok net bir anlayışa sahip olacaksınız. Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -68,7 +68,7 @@ Bu kod satırı, belgenizi başlık çubuğunda görüntülenecek şekilde PDF f
 
 ## Çözüm
 
-İşte buyur! Yalnızca birkaç satır kodla, Aspose.Words for .NET'i kullanarak PDF'nizi belge başlığını pencere başlık çubuğunda görüntüleyecek şekilde başarıyla yapılandırdınız. Bu küçük geliştirme, PDF'lerinizin daha parlak ve profesyonel görünmesini sağlayabilir.
+Ve işte karşınızda! Yalnızca birkaç satır kodla, Aspose.Words for .NET'i kullanarak PDF'nizi belge başlığını pencere başlık çubuğunda görüntüleyecek şekilde başarıyla yapılandırdınız. Bu küçük geliştirme, PDF'lerinizin daha parlak ve profesyonel görünmesini sağlayabilir.
 
 ## SSS'ler
 

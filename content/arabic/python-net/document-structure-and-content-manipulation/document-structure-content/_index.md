@@ -24,7 +24,7 @@ pip install aspose-words
 
 ## تحميل وإنشاء مستندات Word
 
-يمكنك تحميل مستند Word موجود أو إنشاء مستند جديد من البداية. إليك الطريقة:
+يمكنك تحميل مستند Word موجود أو إنشاء مستند جديد من البداية. وإليك الطريقة:
 
 ```python
 from aspose.words import Document
@@ -178,7 +178,7 @@ for data in dataset:
 
 - حافظ على تنظيم التعليمات البرمجية الخاصة بك باستخدام وظائف لمهام معالجة المستندات المختلفة.
 - استخدم معالجة الاستثناءات للتعامل مع الأخطاء بأمان أثناء معالجة المستندات.
--  افحص ال[وثائق Aspose.Words](https://reference.aspose.com/words/python-net/) للحصول على مراجع وأمثلة تفصيلية لواجهة برمجة التطبيقات.
+-  تحقق من[وثائق Aspose.Words](https://reference.aspose.com/words/python-net/) للحصول على مراجع وأمثلة تفصيلية لواجهة برمجة التطبيقات.
 
 ## خاتمة
 
@@ -204,7 +204,7 @@ pip install aspose-words
 
 ### أين يمكنني العثور على مزيد من المعلومات حول ميزات Aspose.Words Python؟
 
- للحصول على معلومات شاملة حول ميزات Aspose.Words Python، راجع[توثيق](https://reference.aspose.com/words/python-net/).
+ للحصول على معلومات شاملة حول ميزات Aspose.Words Python، راجع[الوثائق](https://reference.aspose.com/words/python-net/).
 
 ### كيف يمكنني حفظ مستندي بتنسيق PDF باستخدام Aspose.Words؟
 

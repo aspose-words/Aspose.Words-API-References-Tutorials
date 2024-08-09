@@ -59,7 +59,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Etapa 3: configurar a compactação básica de imagem
 
- Criar uma`PdfSaveOptions`objeto para configurar as opções de salvamento de PDF, incluindo compactação de imagem. Colocou o`ImageCompression`propriedade para`PdfImageCompression.Jpeg` para usar compactação JPEG para imagens.
+ Crie um`PdfSaveOptions`objeto para configurar as opções de salvamento de PDF, incluindo compactação de imagem. Defina o`ImageCompression`propriedade para`PdfImageCompression.Jpeg` para usar compactação JPEG para imagens.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression.pdf", saveOpti
 
 ## Etapa 5: Configurar compactação avançada com conformidade com PDF/A
 
- Para uma compactação ainda melhor, especialmente se precisar cumprir os padrões PDF/A, você pode configurar opções adicionais. Colocou o`Compliance`propriedade para`PdfCompliance.PdfA2u` e ajuste o`JpegQuality` propriedade.
+ Para uma compactação ainda melhor, especialmente se precisar cumprir os padrões PDF/A, você pode configurar opções adicionais. Defina o`Compliance`propriedade para`PdfCompliance.PdfA2u` e ajuste o`JpegQuality` propriedade.
 
 ```csharp
 PdfSaveOptions saveOptionsA2U = new PdfSaveOptions
@@ -127,7 +127,7 @@ Sim, Aspose.Words oferece suporte à conformidade com PDF/A, permitindo que voc�
 Configurações de qualidade JPEG mais altas resultam em melhor qualidade de imagem, mas em tamanhos de arquivo maiores, enquanto configurações de qualidade mais baixas reduzem o tamanho do arquivo, mas podem afetar a clareza da imagem.
 
 ### Onde posso encontrar mais informações sobre o Aspose.Words for .NET?
- Você pode explorar mais sobre o Aspose.Words for .NET em seu[Documentação](https://reference.aspose.com/words/net/), [Apoiar](https://forum.aspose.com/c/words/8) , e[Download](https://releases.aspose.com/words/net/) Páginas.
+ Você pode explorar mais sobre o Aspose.Words for .NET em seu[Documentação](https://reference.aspose.com/words/net/), [Apoiar](https://forum.aspose.com/c/words/8) , e[Download](https://releases.aspose.com/words/net/) páginas.
 
 ### Exemplo de código-fonte para compactação de imagens com Aspose.Words for .NET
 

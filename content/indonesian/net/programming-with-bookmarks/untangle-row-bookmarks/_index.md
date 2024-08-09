@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "Table column bookmarks.docx");
 
 ## Langkah 2: Menguraikan Penanda Baris
 
- Ini adalah dimana keajaiban terjadi! Itu`Untangle` fungsi menangani penguraian penanda baris. Mari kita uraikan fungsinya:
+ Di sinilah keajaiban terjadi! Itu`Untangle` fungsi menangani penguraian penanda baris. Mari kita uraikan fungsinya:
 
 ```csharp
 private void Untangle(Document doc)
@@ -92,7 +92,7 @@ Terakhir, kami memeriksa apakah bookmark dan barisnya ada (`bookmark != null` Da
 
 ## Langkah 4: Verifikasi Penguraian Kekusutan
 
- Selagi`Untangle` fungsi harus memastikan keamanan bookmark lain, selalu merupakan praktik yang baik untuk memverifikasi. Inilah cara kami memeriksa apakah proses penguraian tidak secara tidak sengaja menghapus bagian akhir bookmark lain:
+ Sementara itu`Untangle` fungsi harus memastikan keamanan bookmark lain, selalu merupakan praktik yang baik untuk memverifikasi. Inilah cara kami memeriksa apakah proses penguraian tidak secara tidak sengaja menghapus bagian akhir bookmark lain:
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
@@ -127,7 +127,7 @@ Meskipun secara teknis memungkinkan, menguraikan bookmark secara manual di Word 
 
 ###  Apa yang terjadi jika`Untangle` function encounters an error?
 
-Kode tersebut menyertakan pengendali pengecualian yang memunculkan pengecualian jika proses penguraian secara tidak sengaja menghapus akhir bookmark lain. Anda dapat menyesuaikan penanganan kesalahan ini agar sesuai dengan kebutuhan spesifik Anda.
+Kode tersebut menyertakan pengendali pengecualian yang melontarkan pengecualian jika proses penguraian secara tidak sengaja menghapus akhir bookmark lain. Anda dapat menyesuaikan penanganan kesalahan ini agar sesuai dengan kebutuhan spesifik Anda.
 
 ### Bisakah saya menggunakan kode ini untuk menguraikan bookmark di baris yang tidak berdekatan?
 

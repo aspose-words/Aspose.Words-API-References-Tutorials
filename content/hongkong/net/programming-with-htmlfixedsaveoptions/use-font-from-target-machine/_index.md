@@ -89,7 +89,7 @@ doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.htm
 System.Diagnostics.Process.Start(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html");
 ```
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 在 Word 文件中成功使用了目標電腦中的字型。
+現在你就得到它了！您已使用 Aspose.Words for .NET 在 Word 文件中成功使用了目標電腦中的字型。
 
 ## 結論
 
@@ -104,7 +104,7 @@ System.Diagnostics.Process.Start(dataDir + "WorkingWithHtmlFixedSaveOptions.UseF
 如果目標電腦沒有所需的字體，則文件可能無法如預期般呈現。必要時嵌入字體總是一個好主意。
 
 ### 如何在文件中嵌入字體？
-嵌入字體可以使用`FontSettings`Aspose.Words for .NET 中的類別。請參閱[文件](https://reference.aspose.com/words/net/)更多細節。
+嵌入字體可以使用`FontSettings`Aspose.Words for .NET 中的類別。請參閱[文件](https://reference.aspose.com/words/net/)了解更多詳情。
 
 ### 有沒有辦法在儲存之前預覽文件？
 是的，您可以使用`DocumentRenderer`類別在儲存之前預覽文件。查看 Aspose.Words for .NET[文件](https://reference.aspose.com/words/net/)了解更多。

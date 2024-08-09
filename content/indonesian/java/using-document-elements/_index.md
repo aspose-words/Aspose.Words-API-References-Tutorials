@@ -58,7 +58,7 @@ Pelajari cara menggunakan Markdown di Aspose.Words untuk Java dengan tutorial la
 ### [Menggunakan Node di Aspose.Words untuk Java](./using-nodes/)
 Pelajari cara memanipulasi node di Aspose.Words untuk Java dengan tutorial langkah demi langkah ini. Buka kunci kekuatan pemrosesan dokumen.
 ### [Menggunakan Objek OLE dan Kontrol ActiveX di Aspose.Words untuk Java](./using-ole-objects-and-activex/)
-Pelajari cara menggunakan objek OLE dan kontrol ActiveX di Aspose.Words untuk Java. Buat dokumen interaktif dengan mudah. Mulai sekarang!
+Pelajari cara menggunakan objek OLE dan kontrol ActiveX di Aspose.Words untuk Java. Buat dokumen interaktif dengan mudah. Mulailah sekarang!
 ### [Menggunakan Revisi di Aspose.Words untuk Java](./using-revisions/)
 Pelajari cara menggunakan kontrol revisi Aspose.Words untuk Java secara efisien. Panduan langkah demi langkah untuk pengembang. Optimalkan manajemen dokumen Anda.
 ### [Menggunakan Bagian di Aspose.Words untuk Java](./using-sections/)

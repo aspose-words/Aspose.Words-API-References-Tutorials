@@ -105,7 +105,7 @@ doc.Save(dataDir + "WorkingWithFields.InsertMailMergeAddressBlockFieldUsingDOM.d
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak Adres Mektup Birleştirme Adres Bloğu alanını bir Word belgesine başarıyla eklediniz. Bu güçlü kitaplık, Word belgelerini programlı olarak yönetmeyi kolaylaştırarak zamandan ve emekten tasarruf etmenizi sağlar. Belge işleme görevlerinizde daha da fazla potansiyelin kilidini açmak için Aspose.Words'ün diğer özelliklerini denemeye devam edin.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak Adres Mektup Birleştirme Adres Bloğu alanını bir Word belgesine başarıyla eklediniz. Bu güçlü kitaplık, Word belgelerini programlı olarak yönetmeyi kolaylaştırarak zamandan ve emekten tasarruf etmenizi sağlar. Belge işleme görevlerinizde daha da fazla potansiyelin kilidini açmak için Aspose.Words'ün diğer özelliklerini denemeye devam edin.
 
 ## SSS'ler
 
@@ -122,4 +122,4 @@ Adres Mektup Birleştirme Adres Bloğu, Word'de, bir veri kaynağından adres bi
  Aspose topluluğundan ve teknik ekipten destek alabilirsiniz[Burada](https://forum.aspose.com/c/words/8).
 
 ### Aspose.Words ile Word belgelerinin diğer yönlerini otomatikleştirebilir miyim?
-Kesinlikle! Aspose.Words for .NET belge oluşturmayı, düzenlemeyi, dönüştürmeyi ve daha fazlasını otomatikleştirmek için çok çeşitli özellikler sunar. Kontrol et[dokümantasyon](https://reference.aspose.com/words/net/) daha fazla ayrıntı için.
+Kesinlikle! Aspose.Words for .NET belge oluşturmayı, düzenlemeyi, dönüştürmeyi ve daha fazlasını otomatikleştirmek için çok çeşitli özellikler sunar. Şuna göz atın:[dokümantasyon](https://reference.aspose.com/words/net/) daha fazla ayrıntı için.

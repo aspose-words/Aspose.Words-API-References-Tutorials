@@ -7,9 +7,9 @@ type: docs
 weight: 10
 url: /cs/net/working-with-section/modify-page-setup-in-all-sections/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Pokud jste někdy potřebovali upravit nastavení stránky ve více částech dokumentu aplikace Word, jste na správném místě. V tomto tutoriálu vás provedu procesem pomocí Aspose.Words pro .NET. Tato výkonná knihovna vám umožňuje programově ovládat téměř každý aspekt dokumentů aplikace Word, což z ní činí nástroj pro vývojáře. Takže si dejte šálek kávy a pojďme se pustit do této cesty krok za krokem ke zvládnutí úprav nastavení stránky!
+Ahoj! Pokud jste někdy potřebovali upravit nastavení stránky ve více částech dokumentu aplikace Word, jste na správném místě. V tomto tutoriálu vás provedu procesem pomocí Aspose.Words pro .NET. Tato výkonná knihovna vám umožňuje programově ovládat téměř každý aspekt dokumentů aplikace Word, což z ní činí nástroj pro vývojáře. Takže si dejte šálek kávy a pojďme se pustit do této cesty krok za krokem ke zvládnutí úprav nastavení stránky!
 
 ## Předpoklady
 
@@ -103,7 +103,7 @@ Aspose.Words for .NET je komplexní knihovna pro programovou práci s dokumenty 
 
 ### 3. Jak mohu upravit další vlastnosti nastavení stránky?
 
- Aspose.Words umožňuje upravit různé vlastnosti nastavení stránky, jako je orientace, okraje a velikost papíru. Odkazovat na[API dokumentace](https://reference.aspose.com/words/net/) pro podrobné pokyny.
+ Aspose.Words umožňuje upravit různé vlastnosti nastavení stránky, jako je orientace, okraje a velikost papíru. Viz[API dokumentace](https://reference.aspose.com/words/net/) pro podrobné pokyny.
 
 ### 4. Jak získám podporu pro Aspose.Words for .NET?
 

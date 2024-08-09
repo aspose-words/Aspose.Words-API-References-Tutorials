@@ -14,10 +14,10 @@ Mussten Sie schon einmal ein Dokument mit einem Passwort schützen? Damit sind S
 ## Voraussetzungen
 
 Bevor wir uns mit dem Code die Hände schmutzig machen, benötigen Sie ein paar Dinge:
-1.  Aspose.Words für .NET: Sie können[hier herunterladen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET: Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Visual Studio oder eine beliebige C#-IDE Ihrer Wahl.
 3. .NET Framework: Stellen Sie sicher, dass Sie es installiert haben.
-4.  Lizenz: Sie können beginnen mit einer[Kostenlose Testphase](https://releases.aspose.com/) oder erhalten Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) für den vollen Funktionsumfang.
+4.  Lizenz: Sie können beginnen mit einer[Kostenlose Testversion](https://releases.aspose.com/) oder erhalten Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) für den vollen Funktionsumfang.
 
 Alles erledigt? Super! Fahren wir mit der Einrichtung unseres Projekts fort.
 
@@ -91,7 +91,7 @@ Und da haben Sie es! Sie haben gerade gelernt, wie Sie mit Aspose.Words für .NE
 ## Häufig gestellte Fragen
 
 ### Kann ich eine andere Art der Verschlüsselung verwenden?
- Ja, Aspose.Words für .NET unterstützt verschiedene Verschlüsselungsmethoden. Überprüfen Sie die[Dokumentation](https://reference.aspose.com/words/net/) für mehr Details.
+ Ja, Aspose.Words für .NET unterstützt verschiedene Verschlüsselungsmethoden. Überprüfen Sie die[Dokumentation](https://reference.aspose.com/words/net/) für weitere Details.
 
 ### Was passiert, wenn ich mein Dokumentpasswort vergesse?
 Wenn Sie das Passwort vergessen, können Sie leider nicht auf das Dokument zugreifen. Bewahren Sie Ihre Passwörter gut auf!

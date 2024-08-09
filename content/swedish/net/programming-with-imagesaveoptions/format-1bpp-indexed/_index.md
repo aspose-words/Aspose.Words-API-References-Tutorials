@@ -9,7 +9,7 @@ url: /sv/net/programming-with-imagesaveoptions/format-1bpp-indexed/
 ---
 ## Introduktion
 
-Har du någonsin undrat hur man sparar ett Word-dokument som en svartvit bild med bara några rader kod? Nåväl, du har tur! Idag dyker vi in i ett snyggt litet trick med Aspose.Words för .NET som låter dig konvertera dina dokument till 1Bpp indexerade bilder. Det här formatet är perfekt för vissa typer av digital arkivering, utskrift eller när du behöver spara utrymme. Vi kommer att dela upp varje steg för att göra det så enkelt som en plätt. Redo att komma igång? Låt oss dyka in!
+Har du någonsin undrat hur man sparar ett Word-dokument som en svartvit bild med bara några rader kod? Nåväl, du har tur! Idag dyker vi in i ett snyggt litet trick med Aspose.Words för .NET som låter dig konvertera dina dokument till 1Bpp indexerade bilder. Det här formatet är perfekt för vissa typer av digital arkivering, utskrift eller när du behöver spara utrymme. Vi kommer att dela upp varje steg för att göra det så enkelt som en plätt. Redo att börja? Låt oss dyka in!
 
 ## Förutsättningar
 
@@ -82,7 +82,7 @@ Och där har du det! Med bara några rader kod har du förvandlat ditt Word-doku
 En 1Bpp (1 bit per pixel) indexerad bild är ett svartvitt bildformat där varje pixel representeras av en enda bit, antingen 0 eller 1. Detta format är mycket utrymmeseffektivt.
 
 ### Kan jag konvertera flera sidor i ett Word-dokument samtidigt?
- Jo det kan du. Ändra`PageSet` egendom i`ImageSaveOptions` för att inkludera flera sidor eller hela dokumentet.
+ Ja, det kan du. Ändra`PageSet` egendom i`ImageSaveOptions` för att inkludera flera sidor eller hela dokumentet.
 
 ### Behöver jag en licens för att använda Aspose.Words för .NET?
  Ja, Aspose.Words för .NET kräver en licens för full funktionalitet. Du kan få en[tillfällig licens här](https://purchase.aspose.com/temporary-license/).

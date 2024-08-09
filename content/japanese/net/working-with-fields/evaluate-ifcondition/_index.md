@@ -21,7 +21,7 @@ url: /ja/net/working-with-fields/evaluate-ifcondition/
 
 3. C# の基礎知識: C# プログラミング言語と .NET フレームワークに精通していること。
 
-4.  Asposeライセンス: Aspose.Wordsのライセンス版を使用している場合は、ライセンスが適切に設定されていることを確認してください。[一時ライセンス](https://purchase.aspose.com/temporary-license/)必要に応じて。
+4.  Asposeライセンス: Aspose.Wordsのライセンス版を使用している場合は、ライセンスが適切に設定されていることを確認してください。[一時ライセンス](https://purchase.aspose.com/temporary-license/)必要であれば。
 
 5. Word フィールドの理解: Word フィールド、特に IF フィールドに関する知識は役立ちますが、必須ではありません。
 
@@ -47,7 +47,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## ステップ2: IFフィールドを挿入する
 
-とともに`DocumentBuilder`インスタンスの準備ができたら、次のステップはドキュメントに IF フィールドを挿入することです。IF フィールドを使用すると、条件を指定し、条件が真か偽かに基づいて異なる出力を定義できます。
+と`DocumentBuilder`インスタンスの準備ができたら、次のステップはドキュメントに IF フィールドを挿入することです。IF フィールドを使用すると、条件を指定し、条件が真か偽かに基づいて異なる出力を定義できます。
 
 ```csharp
 //ドキュメントに IF フィールドを挿入します。

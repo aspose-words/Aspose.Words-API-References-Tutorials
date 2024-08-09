@@ -10,7 +10,7 @@ url: /cs/java/printing-documents/printing-documents/
 
 Pokud chcete tisknout dokumenty pomocí Aspose.Words for Java, jste na správném místě. V tomto podrobném průvodci vás provedeme procesem tisku dokumentů pomocí Aspose.Words for Java pomocí poskytnutého zdrojového kódu.
 
-## Úvod
+## Zavedení
 
 Tisk dokumentů je běžným úkolem mnoha aplikací. Aspose.Words for Java poskytuje výkonné API pro práci s dokumenty Wordu, včetně možnosti je tisknout. V tomto tutoriálu vás krok za krokem provedeme procesem tisku dokumentu aplikace Word.
 
@@ -109,7 +109,7 @@ class MultipagePrintDocument implements Printable
         // Vyberte číslo poslední stránky, která se má vytisknout na tento list papíru.
         int pageTo = Math.max(startPage + mPagesPerSheet - 1, toPage);
         //Procházejte vybrané stránky od uložené aktuální stránky k vypočtené
-        // poslední strana.
+        // poslední stránka.
         for (int pageIndex = startPage; pageIndex <= pageTo; pageIndex++) {
             // Vypočítejte sloupcové a řádkové indexy.
             int rowIdx = (int) Math.floor((pageIndex - startPage) / thumbCount.getWidth());
@@ -122,7 +122,7 @@ class MultipagePrintDocument implements Printable
                 int leftPos = (int) (thumbLeft + pf.getImageableX());
                 int topPos = (int) (thumbTop + pf.getImageableY());
                 // Vykreslete stránku dokumentu do grafického objektu pomocí vypočítaných souřadnic
-                // a velikost zástupného symbolu pro miniaturu.
+                // a velikost zástupného symbolu miniatur.
                 // Užitečná návratová hodnota je měřítko, ve kterém byla stránka vykreslena.
                 float scale = mDocument.renderToSize(pageIndex, (Graphics2D) g, leftPos, topPos, (int) thumbSize.x,
                         (int) thumbSize.y);
@@ -182,7 +182,7 @@ class MultipagePrintDocument implements Printable
 
 ## Závěr
 
-Gratulujeme! Úspěšně jste vytiskli dokument aplikace Word pomocí Aspose.Words for Java. Tento podrobný průvodce by vám měl pomoci bezproblémově integrovat tisk dokumentů do vašich aplikací Java.
+Gratuluji! Úspěšně jste vytiskli dokument aplikace Word pomocí Aspose.Words for Java. Tento podrobný průvodce by vám měl pomoci bezproblémově integrovat tisk dokumentů do vašich aplikací Java.
 
 ## Nejčastější dotazy
 

@@ -14,7 +14,7 @@ Aspose.Words for Java je výkonná knihovna, která umožňuje vývojářům pra
 
 ## Předpoklady
 
-Než se ponoříme do příkladů kódu, ujistěte se, že máte Aspose.Words for Java nainstalovaný a nastavený v projektu Java. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/java/).
+Než se ponoříme do příkladů kódu, ujistěte se, že máte Aspose.Words for Java nainstalovaný a nastavený v projektu Java. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/java/).
 
 ## Pomocná metoda 1: Extrahování odstavců podle stylu
 
@@ -71,7 +71,7 @@ public static ArrayList<Node> extractContentBetweenNodes(Node startNode, Node en
     // Tato metoda je o něco složitější než běžný extraktor, jak musíme zohlednit
     // při extrakci pomocí vložených uzlů, polí, záložek atd., aby to bylo užitečné.
     while (isExtracting) {
-        // Klonujte aktuální uzel a jeho potomky, abyste získali kopii.
+        // Naklonujte aktuální uzel a jeho potomky, abyste získali kopii.
         Node cloneNode = currNode.deepClone(true);
         boolean isEndingNode = currNode.equals(endNode);
         if (isStartingNode || isEndingNode) {
@@ -146,7 +146,7 @@ Extrahování obsahu z dokumentů aplikace Word může být klíčovou součást
 
 ### Jak mohu nainstalovat Aspose.Words pro Java?
 
- Chcete-li nainstalovat Aspose.Words for Java, můžete si jej stáhnout z webu Aspose. Návštěva[tady](https://releases.aspose.com/words/java/) získat nejnovější verzi.
+ Chcete-li nainstalovat Aspose.Words for Java, můžete si jej stáhnout z webu Aspose. Návštěva[zde](https://releases.aspose.com/words/java/) získat nejnovější verzi.
 
 ### Mohu extrahovat obsah z konkrétních částí dokumentu aplikace Word?
 

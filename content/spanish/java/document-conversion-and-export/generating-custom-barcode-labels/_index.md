@@ -18,7 +18,7 @@ Antes de profundizar en los detalles de la generación de etiquetas de códigos 
 
 1. Entorno de desarrollo de Java: asegúrese de tener Java y un entorno de desarrollo integrado (IDE) instalado en su sistema.
 
-2.  Aspose.Words para Java: Descargue e instale Aspose.Words para Java desde[aquí](https://releases.aspose.com/words/java/).
+2.  Aspose.Words para Java: descargue e instale Aspose.Words para Java desde[aquí](https://releases.aspose.com/words/java/).
 
 3. Conocimientos básicos de Java: la familiaridad con la programación Java será útil ya que escribiremos código Java para crear etiquetas de códigos de barras personalizadas.
 

@@ -34,7 +34,7 @@ Podzielmy proces konwersji na łatwe do wykonania etapy, abyś mógł łatwo go 
 Zanim zagłębisz się w kod, upewnij się, że projekt jest poprawnie skonfigurowany.
 
 1. Utwórz nowy projekt: Otwórz program Visual Studio i utwórz nowy projekt w języku C#.
-2. Zainstaluj Aspose.Words dla .NET: Użyj Menedżera pakietów NuGet, aby zainstalować bibliotekę Aspose.Words dla .NET. Możesz to zrobić, klikając projekt prawym przyciskiem myszy, wybierając „Zarządzaj pakietami NuGet” i wyszukując „Aspose.Words”.
+2. Zainstaluj Aspose.Words dla .NET: Użyj Menedżera pakietów NuGet, aby zainstalować bibliotekę Aspose.Words dla .NET. Możesz to zrobić, klikając projekt prawym przyciskiem myszy, wybierając opcję „Zarządzaj pakietami NuGet” i wyszukując frazę „Aspose.Words”.
 
 ## Krok 2: Dodaj ścieżkę katalogu dokumentów
 

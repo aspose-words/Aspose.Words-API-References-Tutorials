@@ -24,4 +24,4 @@ Genom att behärska Document Intelligence med Aspose.Words för Python kan utvec
 
 ## Handledning för Python Document Intelligence
 ### [Master Document Intelligence](./master-document-intelligence/)
-Bemästra dokumentintelligens med Aspose.Words för Python. Automatisera arbetsflöden, analysera data och bearbeta dokument effektivt. Börja nu!
+Bemästra dokumentintelligens med Aspose.Words för Python. Automatisera arbetsflöden, analysera data och bearbeta dokument effektivt. Kom igång nu!

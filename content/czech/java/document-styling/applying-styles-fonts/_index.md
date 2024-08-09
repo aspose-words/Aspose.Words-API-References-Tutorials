@@ -9,14 +9,14 @@ url: /cs/java/document-styling/applying-styles-fonts/
 ---
 Ve světě zpracování dokumentů vyniká Aspose.Words for Java jako výkonný nástroj pro manipulaci a formátování dokumentů. Pokud chcete vytvářet dokumenty s vlastními styly a písmy, jste na správném místě. Tento komplexní průvodce vás provede procesem krok za krokem, doplněný příklady zdrojového kódu. Na konci tohoto článku budete mít odborné znalosti pro snadné použití stylů a písem na vaše dokumenty.
 
-## Úvod
+## Zavedení
 
 Aspose.Words for Java je API založené na Javě, které umožňuje vývojářům pracovat s různými formáty dokumentů, včetně DOCX, DOC, RTF a dalších. V této příručce se zaměříme na aplikaci stylů a písem na dokumenty pomocí této univerzální knihovny.
 
 ## Použití stylů a písem: Základy
 
 ### Začínáme
- Chcete-li začít, budete muset nastavit vývojové prostředí Java a stáhnout knihovnu Aspose.Words for Java. Odkaz ke stažení najdete[tady](https://releases.aspose.com/words/java/). Nezapomeňte knihovnu zahrnout do svého projektu.
+ Chcete-li začít, budete muset nastavit vývojové prostředí Java a stáhnout knihovnu Aspose.Words for Java. Odkaz ke stažení najdete[zde](https://releases.aspose.com/words/java/). Nezapomeňte knihovnu zahrnout do svého projektu.
 
 ### Vytvoření dokumentu
 Začněme vytvořením nového dokumentu pomocí Aspose.Words for Java:

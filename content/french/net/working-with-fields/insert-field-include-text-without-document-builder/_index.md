@@ -30,7 +30,7 @@ using Aspose.Words.Fields;
 
 Maintenant, décomposons l'exemple en plusieurs étapes. Chaque étape sera expliquée en détail pour garantir la clarté.
 
-## Étape 1 : Définir le chemin du répertoire
+## Étape 1 : définir le chemin du répertoire
 
 La première étape consiste à définir le chemin d’accès à votre répertoire de documents. C'est ici que vos documents Word seront stockés et accessibles.
 
@@ -93,7 +93,7 @@ doc.Save(dataDir + "InsertionFieldFieldIncludeTextWithoutDocumentBuilder.docx");
 
 ## Conclusion
 
-Et voila! En suivant ces étapes, vous pouvez facilement insérer un FieldIncludeText sans utiliser DocumentBuilder dans Aspose.Words pour .NET. Cette approche offre un moyen rationalisé d'inclure le contenu d'un document dans un autre, ce qui simplifie considérablement vos tâches d'automatisation de documents.
+Et voilà ! En suivant ces étapes, vous pouvez facilement insérer un FieldIncludeText sans utiliser DocumentBuilder dans Aspose.Words pour .NET. Cette approche offre un moyen rationalisé d'inclure le contenu d'un document dans un autre, ce qui simplifie considérablement vos tâches d'automatisation de documents.
 
 ## FAQ
 

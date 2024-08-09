@@ -99,7 +99,7 @@ Si no existe un campo de combinación, el código simplemente lo omite. No se ar
 
 ### ¿Aspose.Words para .NET es gratuito?
 
- Aspose.Words para .NET es un producto comercial, pero puede utilizar un[prueba gratis](https://releases.aspose.com/) para evaluarlo.
+ Aspose.Words para .NET es un producto comercial, pero puede utilizar un[prueba gratuita](https://releases.aspose.com/) para evaluarlo.
 
 ### ¿Dónde puedo encontrar más documentación sobre Aspose.Words para .NET?
 

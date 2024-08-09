@@ -120,10 +120,10 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", save
 `CssClassNamePrefix`свойство работает с внешним CSS. Для встроенного CSS вам понадобится другой подход.
 
 ### Как включить другие параметры сохранения HTML?
- Вы можете настроить различные свойства`HtmlSaveOptions` чтобы настроить вывод HTML. Проверить[документация](https://reference.aspose.com/words/net/) Больше подробностей.
+ Вы можете настроить различные свойства`HtmlSaveOptions` чтобы настроить вывод HTML. Проверьте[документация](https://reference.aspose.com/words/net/) для более подробной информации.
 
 ### Можно ли сохранить HTML в поток?
  Абсолютно! Вы можете сохранить документ в потоке, передав объект потока в`Save` метод.
 
 ### Как мне получить поддержку, если у меня возникнут проблемы?
- Вы можете получить поддержку от[Форум Aspose](https://forum.aspose.com/c/words/8).
+ Вы можете получить поддержку от[Aspose форум](https://forum.aspose.com/c/words/8).

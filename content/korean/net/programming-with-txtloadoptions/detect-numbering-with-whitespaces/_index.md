@@ -66,7 +66,7 @@ const string textDoc = "Full stop delimiters:\n" +
 
 ## 3단계: LoadOptions 구성
 
- 공백이 포함된 번호 매기기를 감지하려면 다음을 설정해야 합니다.`DetectNumberingWithWhitespaces` 옵션`true` 안에`TxtLoadOptions` 물체.
+ 공백이 포함된 번호 매기기를 감지하려면 다음을 설정해야 합니다.`DetectNumberingWithWhitespaces` 옵션`true` 에`TxtLoadOptions` 물체.
 
 ```csharp
 TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };

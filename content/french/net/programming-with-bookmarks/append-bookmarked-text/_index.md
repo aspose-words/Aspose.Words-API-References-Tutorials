@@ -9,13 +9,13 @@ url: /fr/net/programming-with-bookmarks/append-bookmarked-text/
 ---
 ## Introduction
 
-Salut! Avez-vous déjà essayé d'ajouter du texte à partir d'une section marquée d'un signet dans un document Word et avez-vous trouvé cela difficile ? Tu es chanceux! Ce didacticiel vous guidera tout au long du processus d'utilisation d'Aspose.Words pour .NET. Nous le décomposerons en étapes simples afin que vous puissiez suivre facilement. Plongeons-nous et ajoutons ce texte mis en signet comme un pro !
+Salut! Avez-vous déjà essayé d'ajouter du texte à partir d'une section marquée d'un signet dans un document Word et avez-vous trouvé cela difficile ? Vous avez de la chance ! Ce didacticiel vous guidera tout au long du processus d'utilisation d'Aspose.Words pour .NET. Nous le décomposerons en étapes simples afin que vous puissiez suivre facilement. Plongeons-nous et ajoutons ce texte mis en signet comme un pro !
 
 ## Conditions préalables
 
 Avant de commencer, assurons-nous que vous disposez de tout ce dont vous avez besoin :
 
--  Aspose.Words pour .NET : assurez-vous de l'avoir installé. Sinon, vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/).
+-  Aspose.Words pour .NET : assurez-vous de l'avoir installé. Sinon, vous pouvez[téléchargez-le ici](https://releases.aspose.com/words/net/).
 - Environnement de développement : tout environnement de développement .NET comme Visual Studio.
 - Connaissance de base de C# : Comprendre les concepts de base de la programmation C# sera utile.
 - Document Word avec signets : un document Word avec des signets configurés, que nous utiliserons pour ajouter du texte.
@@ -104,7 +104,7 @@ dstDoc.Save("appended_document.docx");
 
 ## Conclusion
 
-Et voila! Vous avez ajouté avec succès le texte d’une section marquée d’un signet dans un document Word à l’aide d’Aspose.Words pour .NET. Cet outil puissant facilite la manipulation de documents et vous avez désormais un tour de plus dans votre sac. Bon codage !
+Et voilà ! Vous avez ajouté avec succès le texte d’une section marquée d’un signet dans un document Word à l’aide d’Aspose.Words pour .NET. Cet outil puissant facilite la manipulation de documents et vous avez désormais un tour de plus dans votre sac. Bon codage !
 
 ## FAQ
 

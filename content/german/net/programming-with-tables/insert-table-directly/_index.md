@@ -137,7 +137,7 @@ Herzlichen Glückwunsch! Sie haben mit Aspose.Words für .NET erfolgreich eine T
  Sie können Aspose.Words für .NET herunterladen von der[Download-Seite](https://releases.aspose.com/words/net/).
 
 ### Kann ich Aspose.Words für .NET vor dem Kauf ausprobieren?
- Ja, Sie können eine[Kostenlose Testphase](https://releases.aspose.com/) um die Bibliothek vor dem Kauf zu bewerten.
+ Ja, Sie können eine[Kostenlose Testversion](https://releases.aspose.com/) um die Bibliothek vor dem Kauf zu bewerten.
 
 ### Wie kaufe ich Aspose.Words für .NET?
 Sie können Aspose.Words für .NET kaufen bei der[Kaufseite](https://purchase.aspose.com/buy).

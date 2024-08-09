@@ -43,7 +43,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 LoadOptions loadOptions = new LoadOptions { ConvertShapeToOfficeMath = true };
 ```
 
- Σε αυτό το βήμα, καθορίζουμε τον κατάλογο όπου βρίσκεται το έγγραφό μας και διαμορφώνουμε τις επιλογές φόρτωσης. ο`ConvertShapeToOfficeMath` ιδιοκτησία έχει οριστεί σε`true` για να ενεργοποιήσετε τη μετατροπή.
+ Σε αυτό το βήμα, καθορίζουμε τον κατάλογο όπου βρίσκεται το έγγραφό μας και διαμορφώνουμε τις επιλογές φόρτωσης. Ο`ConvertShapeToOfficeMath` ιδιοκτησία έχει οριστεί σε`true` για να ενεργοποιήσετε τη μετατροπή.
 
 ## Βήμα 2: Φορτώστε το έγγραφο
 
@@ -54,7 +54,7 @@ LoadOptions loadOptions = new LoadOptions { ConvertShapeToOfficeMath = true };
 Document doc = new Document(dataDir + "Office math.docx", loadOptions);
 ```
 
- Εδώ, χρησιμοποιούμε το`Document` τάξη για να φορτώσει το έγγραφο Word μας. ο`loadOptions`Η παράμετρος διασφαλίζει ότι τυχόν σχήματα στο έγγραφο μετατρέπονται σε Office Math κατά τη διαδικασία φόρτωσης.
+ Εδώ, χρησιμοποιούμε το`Document` τάξη για να φορτώσει το έγγραφο Word μας. Ο`loadOptions`Η παράμετρος διασφαλίζει ότι τυχόν σχήματα στο έγγραφο μετατρέπονται σε Office Math κατά τη διαδικασία φόρτωσης.
 
 ## Βήμα 3: Αποθηκεύστε το έγγραφο
 
@@ -65,9 +65,9 @@ Document doc = new Document(dataDir + "Office math.docx", loadOptions);
 doc.Save(dataDir + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveFormat.Docx);
 ```
 
- Σε αυτό το βήμα, αποθηκεύουμε το τροποποιημένο έγγραφο πίσω στον κατάλογο. ο`SaveFormat.Docx` διασφαλίζει ότι το έγγραφο αποθηκεύεται σε μορφή DOCX.
+ Σε αυτό το βήμα, αποθηκεύουμε το τροποποιημένο έγγραφο πίσω στον κατάλογο. Ο`SaveFormat.Docx` διασφαλίζει ότι το έγγραφο αποθηκεύεται σε μορφή DOCX.
 
-## συμπέρασμα
+## Σύναψη
 
 Η μετατροπή σχημάτων σε Office Math σε έγγραφα του Word χρησιμοποιώντας το Aspose.Words για .NET είναι μια απλή διαδικασία όταν αναλύεται σε αυτά τα απλά βήματα. Ακολουθώντας αυτόν τον οδηγό, μπορείτε να βελτιώσετε τις δυνατότητες επεξεργασίας εγγράφων σας και να διασφαλίσετε ότι τα έγγραφά σας Word έχουν τη σωστή μορφή.
 

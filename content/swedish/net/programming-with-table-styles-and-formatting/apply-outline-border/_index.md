@@ -43,7 +43,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
- I det här steget använder vi`Document` klass från Aspose.Words för att ladda ett befintligt dokument. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där ditt dokument är lagrat.
+ I det här steget använder vi`Document` klass från Aspose.Words för att ladda ett befintligt dokument. Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där ditt dokument är lagrat.
 
 ## Steg 2: Gå till tabellen
 
@@ -100,7 +100,7 @@ table.SetShading(TextureIndex.TextureSolid, Color.LightGreen, Color.Empty);
 
 ## Steg 7: Spara dokumentet
 
-Slutligen, spara det ändrade dokumentet.
+Spara slutligen det ändrade dokumentet.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyOutlineBorder.docx");

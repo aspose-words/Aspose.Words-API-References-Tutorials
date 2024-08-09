@@ -339,7 +339,7 @@ Aspose.Words voor Java biedt uitgebreide mogelijkheden voor het vinden en vervan
 
 ### Hoe download ik Aspose.Words voor Java?
 
- U kunt Aspose.Words voor Java downloaden van de website door naar[deze link](https://releases.aspose.com/words/java/).
+ U kunt Aspose.Words voor Java downloaden van de website door naar[deze koppeling](https://releases.aspose.com/words/java/).
 
 ### Kan ik reguliere expressies gebruiken voor tekstvervanging?
 

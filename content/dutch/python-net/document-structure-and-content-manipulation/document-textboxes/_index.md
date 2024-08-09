@@ -116,4 +116,4 @@ Absoluut! U kunt hyperlinks in de inhoud van het tekstvak invoegen om aanvullend
 
  Ja, u kunt een tekstvak uit het ene document kopiëren en in een ander document plakken met behulp van de`builder.insert_node` methode.
 
-Met Aspose.Words voor Python beschikt u over de tools om visueel aantrekkelijke en goed gestructureerde documenten te maken waarin tekstvakken naadloos zijn verwerkt. Experimenteer met verschillende stijlen, lay-outs en inhoud om de impact van uw Word-documenten te vergroten. Veel plezier met het ontwerpen van documenten!
+Met Aspose.Words voor Python beschikt u over de tools om visueel aantrekkelijke en goed gestructureerde documenten te maken waarin tekstvakken naadloos zijn opgenomen. Experimenteer met verschillende stijlen, lay-outs en inhoud om de impact van uw Word-documenten te vergroten. Veel plezier met het ontwerpen van documenten!

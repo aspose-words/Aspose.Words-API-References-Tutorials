@@ -1,6 +1,6 @@
 ---
-title: Dodaj Komentarze
-linktitle: Dodaj Komentarze
+title: Dodaj komentarze
+linktitle: Dodaj komentarze
 second_title: Aspose.Words API do przetwarzania dokumentów
 description: Dowiedz się, jak dodawać komentarze do dokumentów programu Word za pomocą Aspose.Words dla .NET, korzystając z naszego przewodnika. Ulepsz proces współpracy nad dokumentami bez wysiłku.
 type: docs

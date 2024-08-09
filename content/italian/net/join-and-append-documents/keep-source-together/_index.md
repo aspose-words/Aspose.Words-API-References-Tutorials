@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/join-and-append-documents/keep-source-together/
 ---
-## introduzione
+## Introduzione
 
 Nell'era digitale di oggi, la manipolazione programmatica dei documenti Word è essenziale in vari settori. Aspose.Words per .NET consente agli sviluppatori di automatizzare le attività di gestione dei documenti in modo efficiente. Questa guida completa ti guiderà attraverso il processo di unione dei documenti preservando la formattazione originale utilizzando Aspose.Words per .NET.
 

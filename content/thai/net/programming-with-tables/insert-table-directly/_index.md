@@ -137,7 +137,7 @@ doc.Save(dataDir + "WorkingWithTables.InsertTableDirectly.docx");
  คุณสามารถดาวน์โหลด Aspose.Words สำหรับ .NET ได้จาก[หน้าดาวน์โหลด](https://releases.aspose.com/words/net/).
 
 ### ฉันสามารถลองใช้ Aspose.Words สำหรับ .NET ก่อนซื้อได้หรือไม่
- ใช่ คุณสามารถขอ[ทดลองฟรี](https://releases.aspose.com/) เพื่อประเมินห้องสมุดก่อนซื้อ
+ ใช่ คุณสามารถขอ[ทดลองใช้ฟรี](https://releases.aspose.com/) เพื่อประเมินห้องสมุดก่อนซื้อ
 
 ### ฉันจะซื้อ Aspose.Words สำหรับ .NET ได้อย่างไร
 คุณสามารถซื้อ Aspose.Words สำหรับ .NET ได้จาก[หน้าซื้อ](https://purchase.aspose.com/buy).

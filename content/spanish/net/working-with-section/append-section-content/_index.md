@@ -16,7 +16,7 @@ url: /es/net/working-with-section/append-section-content/
 Antes de comenzar, hay algunas cosas que necesitará:
 
 1. Conocimientos básicos de C#: no es necesario ser un experto, pero un conocimiento básico de C# será útil.
-2.  Aspose.Words para .NET: puedes[descarguelo aqui](https://releases.aspose.com/words/net/) . Si no desea comprarlo de inmediato, puede optar por un[prueba gratis](https://releases.aspose.com/).
+2.  Aspose.Words para .NET: puedes[descárgalo aquí](https://releases.aspose.com/words/net/) . Si no desea comprarlo de inmediato, puede optar por un[prueba gratuita](https://releases.aspose.com/).
 3. Visual Studio: cualquier versión debería funcionar, pero se recomienda la última versión.
 4. .NET Framework: asegúrese de tenerlo instalado en su máquina.
 
@@ -112,7 +112,7 @@ Aspose.Words para .NET es una poderosa biblioteca que permite a los desarrollado
 
 ### 2. ¿Puedo utilizar Aspose.Words para .NET de forma gratuita?
 
- Puedes probar Aspose.Words para .NET usando un[prueba gratis](https://releases.aspose.com/). Para un uso prolongado, deberá adquirir una licencia.
+ Puedes probar Aspose.Words para .NET usando un[prueba gratuita](https://releases.aspose.com/). Para un uso prolongado, deberá adquirir una licencia.
 
 ## 3. ¿Cuáles son las características principales de Aspose.Words para .NET?
 

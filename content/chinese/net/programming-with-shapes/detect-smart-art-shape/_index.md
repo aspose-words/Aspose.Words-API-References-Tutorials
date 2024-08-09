@@ -94,7 +94,7 @@ Aspose.Words for .NET 是一个功能强大的库，允许开发人员以编程�
 
 ### 3. 如何检测文档中的其他类型的形状？
 
-您可以修改 LINQ 查询以检查其他属性或形状类型。请参阅[文档](https://reference.aspose.com/words/net/)更多细节。
+您可以修改 LINQ 查询以检查其他属性或形状类型。请参阅[文档](https://reference.aspose.com/words/net/)了解更多详情。
 
 ### 4. 如何获得 Aspose.Words for .NET 的支持？
 

@@ -55,7 +55,7 @@ builder.Writeln("sad mad bad");
 
 ## Bước 3: Xác định các tùy chọn Tìm và Thay thế
 
- Để thực hiện thay thế biểu thức chính quy, chúng ta cần thiết lập một số tùy chọn. Các`FindReplaceOptions`lớp cho phép chúng ta chỉ định cách hoạt động của thao tác tìm và thay thế.
+ Để thực hiện thay thế biểu thức chính quy, chúng ta cần thiết lập một số tùy chọn. các`FindReplaceOptions`lớp cho phép chúng ta chỉ định cách hoạt động của thao tác tìm và thay thế.
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions();
@@ -85,7 +85,7 @@ doc.Save(dataDir + "FindAndReplace.ReplaceWithRegex.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã sử dụng thành công biểu thức chính quy để tìm và thay thế văn bản trong tài liệu Word bằng Aspose.Words cho .NET. Tính năng mạnh mẽ này có thể giúp bạn tiết kiệm rất nhiều thời gian và công sức, đặc biệt khi xử lý các mẫu văn bản phức tạp. Cho dù bạn đang dọn dẹp tài liệu, định dạng văn bản hay thực hiện các thay đổi hàng loạt, biểu thức chính quy với Aspose.Words dành cho .NET là công cụ bạn cần có trong kho vũ khí của mình.
+Và bạn có nó! Bạn đã sử dụng thành công biểu thức chính quy để tìm và thay thế văn bản trong tài liệu Word bằng Aspose.Words cho .NET. Tính năng mạnh mẽ này có thể giúp bạn tiết kiệm rất nhiều thời gian và công sức, đặc biệt khi xử lý các mẫu văn bản phức tạp. Cho dù bạn đang dọn dẹp tài liệu, định dạng văn bản hay thực hiện các thay đổi hàng loạt, biểu thức chính quy với Aspose.Words dành cho .NET là công cụ bạn cần có trong kho vũ khí của mình.
 
 ## Câu hỏi thường gặp
 

@@ -42,7 +42,7 @@ doc.getMailMerge().execute(new String[] { "Option_1", "Option_2" }, new Object[]
 doc.save("WorkingWithCleanupOptions.CleanupParagraphsWithPunctuationMarks.docx");
 ```
 
-Dalam contoh ini, kita membuat dokumen baru, menyisipkan kolom gabungan, dan mengatur opsi pembersihan untuk menghapus paragraf kosong. Selain itu, kami mengaktifkan penghapusan paragraf dengan tanda baca. Setelah menjalankan gabungan surat, dokumen disimpan dengan pembersihan yang ditentukan diterapkan.
+Dalam contoh ini, kita membuat dokumen baru, menyisipkan bidang gabungan, dan mengatur opsi pembersihan untuk menghapus paragraf kosong. Selain itu, kami mengaktifkan penghapusan paragraf dengan tanda baca. Setelah menjalankan gabungan surat, dokumen disimpan dengan pembersihan yang ditentukan diterapkan.
 
 ## Langkah 2: Menghapus Wilayah yang Tidak Digabung
 
@@ -150,7 +150,7 @@ Opsi pembersihan di Aspose.Words untuk Java adalah pengaturan yang memungkinkan 
 
 ###  Apa tujuan dari`REMOVE_UNUSED_REGIONS` cleanup option?
 
- Itu`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` opsi ini digunakan untuk menghapus wilayah dalam dokumen yang tidak memiliki data terkait selama proses penggabungan surat. Ini membantu menjaga dokumen Anda tetap rapi dengan membuang placeholder yang tidak digunakan.
+ Itu`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` Opsi ini digunakan untuk menghapus wilayah dalam dokumen yang tidak memiliki data terkait selama proses penggabungan surat. Ini membantu menjaga dokumen Anda tetap rapi dengan membuang placeholder yang tidak digunakan.
 
 ### Bisakah saya menghapus baris tabel kosong dari dokumen menggunakan Aspose.Words untuk Java?
 

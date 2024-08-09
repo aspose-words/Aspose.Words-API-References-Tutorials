@@ -68,7 +68,7 @@ We moeten nu een samenvoegbewerking uitvoeren om de velden met daadwerkelijke ge
 doc.MailMerge.Execute(new string[] { "Date2" }, new object[] { new DateTime(2011, 1, 1) });
 ```
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Ten slotte slaan we het document op in de opgegeven map. Met deze stap wordt het proces van het wijzigen van de veldupdatecultuurbron voltooid.
 

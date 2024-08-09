@@ -96,7 +96,7 @@ In questa guida, abbiamo esplorato varie tecniche per dividere i documenti in As
 
 ### Come posso iniziare con Aspose.Words per Java?
 
- Iniziare con Aspose.Words per Java è facile. È possibile scaricare la libreria dal sito Web Aspose e seguire la documentazione per le istruzioni di installazione e utilizzo. Visita[Aspose.Words per la documentazione Java](https://reference.aspose.com/words/java/) per ulteriori dettagli.
+ Iniziare con Aspose.Words per Java è facile. È possibile scaricare la libreria dal sito Web Aspose e seguire la documentazione per le istruzioni di installazione e utilizzo. Visita[Aspose.Words per la documentazione Java](https://reference.aspose.com/words/java/) per maggiori dettagli
 
 ### Quali sono le caratteristiche principali di Aspose.Words per Java?
 

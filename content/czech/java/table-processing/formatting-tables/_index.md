@@ -10,7 +10,7 @@ url: /cs/java/table-processing/formatting-tables/
 
 Jste připraveni vydat se na cestu k zvládnutí umění formátování tabulek v dokumentech pomocí Aspose.Words for Java? V tomto obsáhlém průvodci se ponoříme hluboko do světa formátování dokumentů, konkrétně se zaměříme na tabulky. Aspose.Words for Java je výkonný nástroj, který vám umožní snadno vytvářet, manipulovat a vylepšovat tabulky ve vašich dokumentech.
 
-## Úvod
+## Zavedení
 
 Aspose.Words for Java je knihovna Java, která umožňuje pracovat s různými aspekty zpracování dokumentů. Ať už se zabýváte zprávami, smlouvami nebo jakýmkoli jiným dokumentem, který obsahuje tabulky, tato knihovna může být vaším důvěryhodným společníkem. Díky jeho rozsáhlým funkcím a možnostem můžete dosáhnout přesného a profesionálního formátování dokumentů.
 
@@ -20,7 +20,7 @@ Než se ponoříme do toho nejnutnějšího formátování tabulek, nastavíme n
 
 ### Instalace
 
- Chcete-li začít, budete si muset stáhnout a nainstalovat Aspose.Words for Java. Odkaz ke stažení najdete[tady](https://releases.aspose.com/words/java/). Po instalaci můžete tuto knihovnu začít používat k programové práci s dokumenty.
+ Chcete-li začít, budete si muset stáhnout a nainstalovat Aspose.Words for Java. Odkaz ke stažení najdete[zde](https://releases.aspose.com/words/java/). Po instalaci můžete tuto knihovnu začít používat k programové práci s dokumenty.
 
 ### Přidání Aspose.Words pro Java do vašeho projektu
 
@@ -79,7 +79,7 @@ Ve formátování se děje kouzlo. Aspose.Words for Java poskytuje nepřeberné 
 
 ### Úprava šířky sloupců
 
-Můžete ovládat šířku sloupců, abyste zajistili, že tabulka bude vypadat vizuálně přitažlivě. Zde je návod, jak upravit šířku sloupců:
+Můžete ovládat šířku sloupců, abyste zajistili, že tabulka bude vypadat vizuálně přitažlivě. Takto můžete upravit šířku sloupců:
 
 ```java
 // Nastavte preferovanou šířku sloupce
@@ -88,7 +88,7 @@ cell1.getCellFormat().setPreferredWidth(100.0);
 
 ### Použití hranic
 
-Přidání ohraničení do tabulky může zlepšit její čitelnost. Styly ohraničení můžete také upravit:
+Přidání ohraničení do tabulky může zlepšit její čitelnost. Styly ohraničení můžete také přizpůsobit:
 
 ```java
 // Použijte ohraničení na buňku

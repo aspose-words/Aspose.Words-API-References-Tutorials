@@ -99,14 +99,14 @@ doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesine şekilleri başarılı bir şekilde eklediniz ve değiştirdiniz. Bu eğitimde temel bilgiler yer alıyordu ancak Aspose.Words, şekillerle çalışmak için özel stiller, bağlayıcılar ve grup şekilleri gibi daha birçok gelişmiş özellik sunuyor.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesine şekilleri başarılı bir şekilde eklediniz ve değiştirdiniz. Bu eğitimde temel bilgiler yer alıyordu ancak Aspose.Words, şekillerle çalışmak için özel stiller, bağlayıcılar ve grup şekilleri gibi daha birçok gelişmiş özellik sunuyor.
 
  Daha ayrıntılı bilgi için şu adresi ziyaret edin:[Aspose.Words for .NET belgeleri](https://reference.aspose.com/words/net/).
 
 ## SSS'ler
 
 ### Farklı şekil türlerini nasıl eklerim?
-Değiştirebilirsin`ShapeType` içinde`InsertShape` Daireler, dikdörtgenler ve oklar gibi farklı türdeki şekilleri ekleme yöntemini kullanın.
+değiştirebilirsiniz`ShapeType` içinde`InsertShape` Daireler, dikdörtgenler ve oklar gibi farklı türdeki şekilleri ekleme yöntemini kullanın.
 
 ### Şekillerin içine metin ekleyebilir miyim?
  Evet, kullanabilirsiniz`builder.Write` Şekilleri ekledikten sonra içine metin ekleme yöntemi.
@@ -115,7 +115,7 @@ Değiştirebilirsin`ShapeType` içinde`InsertShape` Daireler, dikdörtgenler ve 
  Evet, aşağıdaki gibi özellikleri ayarlayarak şekillere stil verebilirsiniz:`FillColor`, `StrokeColor` , Ve`StrokeWeight`.
 
 ### Şekilleri diğer öğelere göre nasıl konumlandırırım?
- Kullan`RelativeHorizontalPosition`Ve`RelativeVerticalPosition` şekilleri belgedeki diğer öğelere göre konumlandırmak için özellikler.
+ Kullanın`RelativeHorizontalPosition`Ve`RelativeVerticalPosition` şekilleri belgedeki diğer öğelere göre konumlandırmak için özellikler.
 
 ### Birden fazla şekli birlikte gruplayabilir miyim?
  Evet, Aspose.Words for .NET, şekilleri gruplandırmanıza olanak tanır.`GroupShape` sınıf.

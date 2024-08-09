@@ -116,7 +116,7 @@ if template.range.bookmarks.get(bookmark_name):
 
 ## Zaawansowane techniki zakładek
 
-Gdy lepiej zaznajomisz się z zakładkami, możesz poznać zaawansowane techniki, takie jak zakładki zagnieżdżone, zakładki obejmujące wiele sekcji i nie tylko. Techniki te umożliwiają tworzenie wyrafinowanych struktur dokumentów i usprawnianie interakcji użytkownika.
+W miarę lepszego zaznajomienia się z zakładkami możesz poznać zaawansowane techniki, takie jak zakładki zagnieżdżone, zakładki obejmujące wiele sekcji i nie tylko. Techniki te umożliwiają tworzenie wyrafinowanych struktur dokumentów i usprawnianie interakcji użytkownika.
 
 ## Wniosek
 

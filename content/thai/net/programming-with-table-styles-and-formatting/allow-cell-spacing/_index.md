@@ -81,7 +81,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 
 ### ขั้นตอนที่ 4.1: อนุญาตให้มีระยะห่างระหว่างเซลล์
 
- ตั้ง`AllowCellSpacing` คุณสมบัติของตารางถึง`true`.
+ ตั้งค่า`AllowCellSpacing` คุณสมบัติของตารางถึง`true`.
 
 ```csharp
 table.AllowCellSpacing = true;

@@ -97,7 +97,7 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
         {
             if (mBuilder == null)
                 mBuilder = new DocumentBuilder(e.getDocument());
-            //すべてのブール値をチェック ボックス フォーム フィールドとして出力することにしました。
+            //すべてのブール値をチェック ボックス フォーム フィールドとして出力することに決定しました。
             if (e.getFieldValue() instanceof /*boolean*/Boolean)
             {
                 // 「カーソル」を現在のマージ フィールドに移動します。
@@ -239,7 +239,7 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
     {
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs args)
         {
-            //何もしない。
+            //何もしないでください。
         }
         /// <要約>
         /// これは、差し込み印刷エンジンがドキュメント内で Image:XXX 差し込み印刷フィールドに遭遇したときに呼び出されます。
@@ -320,7 +320,7 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
         }
         public void /*IFieldMergingCallback.*/imageFieldMerging(ImageFieldMergingArgs args)
         {
-            //何もしない。
+            //何もしないでください。
         }
         private DocumentBuilder mBuilder;
         private int mRowIdx;

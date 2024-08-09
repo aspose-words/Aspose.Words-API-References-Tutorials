@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fields/replace-hyperlinks/
 ---
-## Úvod
+## Zavedení
 
 Ve světě vývoje .NET je správa a manipulace s dokumenty zásadním úkolem, který často vyžaduje efektivní manipulaci s hypertextovými odkazy v dokumentech. Aspose.Words for .NET poskytuje výkonné funkce pro bezproblémové nahrazení hypertextových odkazů a zajišťuje, že vaše dokumenty jsou dynamicky propojeny se správnými zdroji. Tento návod se ponoří hluboko do toho, jak toho můžete dosáhnout pomocí Aspose.Words pro .NET, a provede vás procesem krok za krokem.
 
@@ -16,7 +16,7 @@ Ve světě vývoje .NET je správa a manipulace s dokumenty zásadním úkolem, 
 Než se ponoříte do nahrazení hypertextových odkazů pomocí Aspose.Words for .NET, ujistěte se, že máte následující:
 
 - Visual Studio: Nainstalované a nastavené pro vývoj .NET.
--  Aspose.Words for .NET: Staženo a odkazováno ve vašem projektu. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Staženo a odkazováno ve vašem projektu. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 - Znalost C#: Základní znalost psaní a kompilace kódu.
 
 ## Importovat jmenné prostory
@@ -83,13 +83,13 @@ Nahrazení hypertextových odkazů v dokumentech pomocí Aspose.Words for .NET j
 Ano, Aspose.Words bezproblémově podporuje složité struktury, jako jsou tabulky, obrázky a hypertextové odkazy.
 
 ### Je k dispozici zkušební verze pro Aspose.Words pro .NET?
- Ano, můžete si stáhnout bezplatnou zkušební verzi z[tady](https://releases.aspose.com/).
+ Ano, můžete si stáhnout bezplatnou zkušební verzi z[zde](https://releases.aspose.com/).
 
 ### Kde najdu dokumentaci k Aspose.Words pro .NET?
- K dispozici je podrobná dokumentace[tady](https://reference.aspose.com/words/net/).
+ K dispozici je podrobná dokumentace[zde](https://reference.aspose.com/words/net/).
 
 ### Jak mohu získat dočasné licencování pro Aspose.Words pro .NET?
- Lze získat dočasné licence[tady](https://purchase.aspose.com/temporary-license/).
+ Lze získat dočasné licence[zde](https://purchase.aspose.com/temporary-license/).
 
 ### Jaké možnosti podpory jsou k dispozici pro Aspose.Words pro .NET?
  Můžete získat podporu komunity nebo posílat dotazy na[Fórum Aspose.Words](https://forum.aspose.com/c/words/8).

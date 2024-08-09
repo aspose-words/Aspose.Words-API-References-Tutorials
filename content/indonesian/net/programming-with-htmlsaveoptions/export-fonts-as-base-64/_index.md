@@ -90,13 +90,13 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportFontsAsBase64 = true }
 Terakhir, mari simpan dokumen dengan opsi yang dikonfigurasi.
 
 
- Menggunakan`Save` metode`Document` kelas untuk menyimpan dokumen Anda:
+ Gunakan`Save` metode`Document` kelas untuk menyimpan dokumen Anda:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportFontsAsBase64.html", saveOptions);
 ```
 
-Baris ini akan menyimpan dokumen Anda sebagai file HTML dengan font yang diekspor sebagai Base64, memastikan font tersebut tertanam dalam HTML.
+Baris ini akan menyimpan dokumen Anda sebagai file HTML dengan font yang diekspor sebagai Base64, memastikan font tersebut tertanam di dalam HTML.
 
 ## Kesimpulan
 

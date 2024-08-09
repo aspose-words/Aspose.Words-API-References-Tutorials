@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-digital-signatures/signing-existing-signature-line/
 ---
-## introduzione
+## Introduzione
 
 Ehilà! Ti è mai capitato di dover firmare un documento digitale ma di trovarlo un po' complicato? Sei fortunato perché oggi approfondiremo come firmare senza sforzo una riga di firma esistente in un documento Word utilizzando Aspose.Words per .NET. Questo tutorial ti guiderà attraverso il processo passo dopo passo, assicurandoti di padroneggiare questa attività in pochissimo tempo.
 
@@ -71,7 +71,7 @@ CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", 
 
 ## Passaggio 5: firma il documento
 
-Ora combiniamo tutti i componenti per firmare il documento. Qui è dove avviene la magia!
+Ora combiniamo tutti i componenti per firmare il documento. È qui che avviene la magia!
 
 ```csharp
 DigitalSignatureUtil.Sign(
@@ -84,7 +84,7 @@ DigitalSignatureUtil.Sign(
 
 ## Conclusione
 
-E il gioco è fatto! Hai firmato con successo una riga di firma esistente in un documento di Word utilizzando Aspose.Words per .NET. Non troppo difficile, vero? Con questi passaggi ora puoi firmare digitalmente i documenti, aggiungendo quel ulteriore livello di autenticità e professionalità. Quindi la prossima volta che qualcuno ti invia un documento da firmare, saprai esattamente cosa fare!
+Ed ecco qua! Hai firmato con successo una riga di firma esistente in un documento di Word utilizzando Aspose.Words per .NET. Non troppo difficile, vero? Con questi passaggi ora puoi firmare digitalmente i documenti, aggiungendo quel ulteriore livello di autenticità e professionalità. Quindi la prossima volta che qualcuno ti invia un documento da firmare, saprai esattamente cosa fare!
 
 ## Domande frequenti
 

@@ -68,7 +68,7 @@ saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;
 
 ## Krok 3: Zapisz dokument w formacie PDF
 
- Po skonfigurowaniu opcji możesz zapisać dokument w formacie PDF. Użyj`Save` metoda`Document` class i podaj ścieżkę pliku oraz opcje zapisu.
+ Po skonfigurowaniu opcji możesz zapisać dokument w formacie PDF. Skorzystaj z`Save` metoda`Document` class i podaj ścieżkę pliku oraz opcje zapisu.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.SetOutlineOptions.pdf", saveOptions);

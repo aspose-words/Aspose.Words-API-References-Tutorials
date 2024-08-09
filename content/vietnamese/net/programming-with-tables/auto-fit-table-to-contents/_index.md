@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
- Các`Aspose.Words` không gian tên cung cấp chức năng cốt lõi để xử lý tài liệu Word, trong khi`Aspose.Words.Tables` bao gồm các lớp đặc biệt để làm việc với bảng.
+ các`Aspose.Words` không gian tên cung cấp chức năng cốt lõi để xử lý tài liệu Word, trong khi`Aspose.Words.Tables` bao gồm các lớp đặc biệt để làm việc với bảng.
 
 ## Bước 1: Thiết lập thư mục tài liệu của bạn
 
@@ -83,12 +83,12 @@ Bước này sẽ lưu tài liệu đã cập nhật của bạn bằng tên m�
 
 ## Phần kết luận
 
-Tự động khớp bảng với nội dung bằng Aspose.Words cho .NET là một quy trình đơn giản có thể cải thiện đáng kể diện mạo tài liệu Word của bạn. Bằng cách làm theo các bước được nêu ở trên, bạn có thể đảm bảo rằng các bảng của bạn tự động điều chỉnh để phù hợp với nội dung của chúng, giúp bạn tiết kiệm thời gian và công sức trong việc định dạng. Cho dù bạn đang xử lý các tập dữ liệu lớn hay chỉ cần các bảng của mình trông gọn gàng, tính năng này thực sự là một công cụ thay đổi cuộc chơi. Chúc mừng mã hóa!
+Tự động khớp bảng với nội dung bằng Aspose.Words cho .NET là một quy trình đơn giản có thể cải thiện đáng kể diện mạo tài liệu Word của bạn. Bằng cách làm theo các bước được nêu ở trên, bạn có thể đảm bảo rằng các bảng của mình tự động điều chỉnh để phù hợp với nội dung của chúng, giúp bạn tiết kiệm thời gian và công sức trong việc định dạng. Cho dù bạn đang xử lý các tập dữ liệu lớn hay chỉ cần các bảng của mình trông gọn gàng, tính năng này thực sự là một công cụ thay đổi cuộc chơi. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 
 ### Tôi có thể tự động chỉ khớp các cột cụ thể trong bảng không?
- Các`AutoFit` phương pháp áp dụng cho toàn bộ bảng. Nếu bạn cần điều chỉnh các cột cụ thể, bạn có thể cần phải đặt độ rộng cột theo cách thủ công.
+ các`AutoFit` phương pháp áp dụng cho toàn bộ bảng. Nếu bạn cần điều chỉnh các cột cụ thể, bạn có thể cần phải đặt độ rộng cột theo cách thủ công.
 
 ### Nếu tài liệu của tôi chứa nhiều bảng thì sao?
  Bạn có thể lặp qua tất cả các bảng trong tài liệu bằng cách sử dụng`doc.GetChildNodes(NodeType.Table, true)` và áp dụng tính năng tự động điều chỉnh khi cần thiết.

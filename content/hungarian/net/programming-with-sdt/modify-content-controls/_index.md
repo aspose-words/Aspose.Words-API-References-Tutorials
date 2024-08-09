@@ -15,11 +15,11 @@ Ha valaha is dolgozott Word-dokumentumokkal, és módosítania kellett a struktu
 
 Mielőtt belevágnánk a tartalomvezérlők módosításának aprólékos dolgaiba, győződjön meg arról, hogy rendelkezik a következőkkel:
 
-1.  Aspose.Words for .NET telepítve: Győződjön meg arról, hogy telepítve van az Aspose.Words könyvtár. Ha nem, akkor megteheti[töltse le itt](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET telepítve: Győződjön meg arról, hogy telepítve van az Aspose.Words könyvtár. Ha nem, akkor lehet[töltse le itt](https://releases.aspose.com/words/net/).
 
 2. Alapvető C# ismerete: Ez az oktatóanyag feltételezi, hogy ismeri az alapvető C# programozási fogalmakat.
 
-3. .NET fejlesztői környezet: A .NET-alkalmazások futtatásához be kell állítania egy IDE-t, mint a Visual Studio.
+3. .NET fejlesztői környezet: A .NET-alkalmazások futtatásához be kell állítania egy IDE-t, például a Visual Studio-t.
 
 4. Mintadokumentum: Word-mintadokumentumot fogunk használni különféle típusú SDT-kkel. Használhatja a példában szereplőt, vagy létrehozhatja sajátját.
 
@@ -75,7 +75,7 @@ if (sdt.SdtType == SdtType.PlainText)
 
 ## 4. lépés: A legördülő lista SDT-k módosítása
 
- A legördülő listás SDT-k esetén módosíthatja a kiválasztott elemet a`ListItems` Gyűjtemény. Itt kiválasztjuk a lista harmadik elemét.
+ A legördülő listás SDT-k esetén módosíthatja a kiválasztott elemet a`ListItems` gyűjtemény. Itt kiválasztjuk a lista harmadik elemét.
 
 ```csharp
 if (sdt.SdtType == SdtType.DropDownList)
@@ -181,4 +181,4 @@ doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");
 
 ```
 
-Ez az! Sikeresen módosította a Word-dokumentum különböző típusú tartalomvezérlőit az Aspose.Words for .NET segítségével.
+Ennyi! Sikeresen módosította a Word-dokumentum különböző típusú tartalomvezérlőit az Aspose.Words for .NET segítségével.

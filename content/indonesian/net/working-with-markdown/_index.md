@@ -13,22 +13,22 @@ Pemrosesan Kata dengan Markdown menyediakan sumber daya komprehensif untuk mempe
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Teks tebal](./bold-text/) | Pelajari cara menebalkan teks dengan Aspose.Words untuk .NET Panduan langkah demi langkah. |
-| [Teks Miring](./italic-text/) | Pelajari cara membuat teks miring dengan Aspose.Words untuk .NET Panduan langkah demi langkah. |
-| [Dicoret](./strikethrough/) | Pelajari cara menerapkan gaya teks coretan dengan Aspose.Words for .NET Panduan langkah demi langkah. |
-| [Kode Sebaris](./inline-code/) | Pelajari cara menyejajarkan kode dengan Aspose.Words untuk .NET Panduan langkah demi langkah. |
-| [Tautan otomatis](./autolink/) | Pelajari cara menyisipkan tautan otomatis dengan Aspose.Words untuk .NET Panduan langkah demi langkah. |
-| [Tautan](./link/) | Pelajari cara menyisipkan tautan dengan Aspose.Words untuk .NET. Panduan langkah demi langkah. |
+| [Teks Tebal](./bold-text/) | Pelajari cara membuat teks tebal di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. Sempurna untuk mengotomatiskan pemformatan dokumen Anda. |
+| [Teks Miring](./italic-text/) | Pelajari cara menerapkan pemformatan miring pada teks di dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah dengan contoh kode disertakan. |
+| [Dicoret](./strikethrough/) | Pelajari cara menerapkan pemformatan coretan pada teks menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. Tingkatkan keterampilan pemrosesan dokumen Anda. |
+| [Kode Sebaris](./inline-code/) | Pelajari cara menerapkan gaya kode sebaris di dokumen Word menggunakan Aspose.Words untuk .NET. Tutorial ini mencakup backtick tunggal dan ganda untuk pemformatan kode. |
+| [Tautan otomatis](./autolink/) | Pelajari cara menyisipkan dan mengkustomisasi hyperlink di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan mendetail ini. Sempurnakan dokumen Anda dengan mudah. |
+| [Link](./link/) | Pelajari cara menyisipkan hyperlink ke dalam dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. Sempurnakan dokumen Anda dengan tautan interaktif dengan mudah. |
 | [Gambar](./image/) | Pelajari cara menambahkan gambar ke dokumen Anda menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. Sempurnakan dokumen Anda dengan visual dalam waktu singkat. |
-| [Aturan Horisontal](./horizontal-rule/) | Pelajari cara menyisipkan aturan horizontal dengan Aspose.Words untuk .NET Panduan langkah demi langkah. |
-| [Menuju](./heading/) | Pelajari cara menggunakan heading dengan Aspose.Words untuk .NET Panduan langkah demi langkah. |
-| [Judul Seteks](./setext-heading/) | Pelajari cara menggunakan judul Setext untuk memformat dokumen Anda dengan Aspose.Words for .NET Panduan langkah demi langkah. |
-| [Kode Indentasi](./indented-code/) | Pelajari cara menggunakan kode indentasi dengan Aspose.Words untuk .NET Panduan langkah demi langkah. |
-| [Kode Berpagar](./fenced-code/) | Pelajari cara menggunakan fitur kode berpagar dengan Aspose.Words untuk .NET Panduan langkah demi langkah. |
-| [Mengutip](./quote/) | Pelajari cara menggunakan kutipan dengan Aspose.Words untuk .NET Panduan langkah demi langkah. |
-| [Daftar Berpoin](./bulleted-list/) | Pelajari cara membuat daftar berpoin dengan Aspose.Words untuk .NET Panduan langkah demi langkah. |
-| [Daftar pesanan](./ordered-list/) | Pelajari cara membuat daftar berurutan di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. Sempurna untuk mengotomatiskan pembuatan dokumen. |
+| [Aturan Horisontal](./horizontal-rule/) | Pelajari cara menambahkan aturan horizontal di dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan terperinci langkah demi langkah ini untuk menyempurnakan tata letak dokumen Anda. |
+| [Menuju](./heading/) | Pelajari cara menguasai pemformatan dokumen menggunakan Aspose.Words untuk .NET. Panduan ini memberikan tutorial tentang menambahkan judul dan menyesuaikan dokumen Word Anda. |
+| [Judul Seteks](./setext-heading/) | Pelajari cara menggunakan Aspose.Words untuk .NET untuk mengotomatiskan pembuatan dan pemformatan dokumen Word dengan tutorial langkah demi langkah yang komprehensif ini. |
+| [Kode Indentasi](./indented-code/) | Pelajari cara menambahkan dan menata blok kode indentasi di dokumen Word menggunakan Aspose.Words untuk .NET dengan tutorial langkah demi langkah yang mendetail ini. |
+| [Kode Berpagar](./fenced-code/) | Pelajari cara menambahkan kode berpagar dan string info ke dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah disertakan. Tingkatkan keterampilan pemformatan dokumen Anda. |
+| [Mengutip](./quote/) | Pelajari cara menambahkan tanda kutip dan blokquote bertumpuk ke dokumen Word Anda menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah ini untuk menguasai pembuatan dokumen. |
+| [Daftar Berpoin](./bulleted-list/) | Pelajari cara membuat dan mengkustomisasi daftar berpoin di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. |
+| [Daftar Pesanan](./ordered-list/) | Pelajari cara membuat daftar berurutan di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. Sempurna untuk mengotomatiskan pembuatan dokumen. |
 | [Meja](./table/) | Pelajari cara membuat dan mengkustomisasi tabel di Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. Sempurna untuk menghasilkan dokumen terstruktur dan menarik secara visual. |
-| [Baca Dokumen Penurunan Harga](./read-markdown-document/) | Pelajari cara membaca dokumen penurunan harga dengan Aspose.Words untuk .NET Panduan langkah demi langkah. |
-| [Penekanan](./emphases/) | Pelajari cara menggunakan penekanan (tebal dan miring) dengan Aspose.Words for .NET Panduan langkah demi langkah. |
+| [Baca Dokumen Penurunan Harga](./read-markdown-document/) | Pelajari cara membaca dan memanipulasi dokumen Markdown menggunakan Aspose.Words untuk .NET dengan tutorial langkah demi langkah yang mendetail ini. Sempurna untuk pengembang dari semua tingkatan. |
+| [Penekanan](./emphases/) | Pelajari cara membuat teks yang ditekankan di Markdown menggunakan Aspose.Words untuk .NET. Panduan ini mencakup gaya tebal, miring, dan gabungan dengan petunjuk langkah demi langkah. |
 | [Gunakan Sumber Peringatan](./use-warning-source/) | Kuasai Aspose.Words untuk .NET dengan panduan langkah demi langkah tentang penggunaan kelas WarningSource untuk menangani peringatan penurunan harga. Sempurna untuk pengembang C#. |

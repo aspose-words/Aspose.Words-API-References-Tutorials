@@ -52,7 +52,7 @@ Ahora, configuremos las opciones del esquema.
 
 ### Establecer niveles de esquema de encabezados
 
- El`HeadingsOutlineLevels` La propiedad define cuántos niveles de encabezados deben incluirse en el esquema del PDF. Por ejemplo, si lo configura en 3, incluirá hasta tres niveles de títulos en el esquema del PDF.
+ El`HeadingsOutlineLevels` La propiedad define cuántos niveles de encabezados deben incluirse en el esquema del PDF. Por ejemplo, si lo configura en 3, incluirá hasta tres niveles de encabezados en el esquema del PDF.
 
 ```csharp
 saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
@@ -68,7 +68,7 @@ saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;
 
 ## Paso 3: guarde el documento como PDF
 
- Con las opciones configuradas, estará listo para guardar el documento como PDF. Utilizar el`Save` método de la`Document` class y pase la ruta del archivo y guarde las opciones.
+ Con las opciones configuradas, estará listo para guardar el documento como PDF. Utilice el`Save` método de la`Document` class y pase la ruta del archivo y guarde las opciones.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.SetOutlineOptions.pdf", saveOptions);

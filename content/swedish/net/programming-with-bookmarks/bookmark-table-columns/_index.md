@@ -9,7 +9,7 @@ url: /sv/net/programming-with-bookmarks/bookmark-table-columns/
 ---
 ## Introduktion
 
-Om du funderar på att förbättra dina färdigheter i dokumentautomatisering, då har du en njutning. Denna handledning guidar dig genom processen att bokmärka tabellkolumner i ett Word-dokument med Aspose.Words för .NET. Redo att dyka i? Låt oss börja!
+Om du funderar på att förbättra dina färdigheter i dokumentautomatisering, då har du en njutning. Denna handledning guidar dig genom processen att bokmärka tabellkolumner i ett Word-dokument med Aspose.Words för .NET. Redo att dyka i? Låt oss komma igång!
 
 ## Förutsättningar
 
@@ -115,7 +115,7 @@ Och där har du det! Du har framgångsrikt bokmärkt tabellkolumner i ett Word-d
 Aspose.Words för .NET är ett kraftfullt bibliotek för att arbeta med Word-dokument programmatiskt. Det låter dig skapa, ändra och konvertera dokument utan att behöva installera Microsoft Word.
 
 ### Hur installerar jag Aspose.Words för .NET?
- Du kan ladda ner Aspose.Words för .NET från[hemsida](https://releases.aspose.com/words/net/). Följ installationsinstruktionerna som tillhandahålls.
+ Du kan ladda ner Aspose.Words för .NET från[webbplats](https://releases.aspose.com/words/net/). Följ installationsinstruktionerna som tillhandahålls.
 
 ### Kan jag använda Aspose.Words för .NET med andra programmeringsspråk?
 Ja, Aspose.Words för .NET kan användas med alla .NET-stödda språk, inklusive C#, VB.NET och F#.

@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /fr/net/working-with-headers-and-footers/create-header-footer/
 ---
+## Introduction
 
 L'ajout d'en-têtes et de pieds de page à vos documents peut améliorer leur professionnalisme et leur lisibilité. Avec Aspose.Words pour .NET, vous pouvez facilement créer et personnaliser des en-têtes et des pieds de page pour vos documents Word. Dans ce didacticiel, nous vous guiderons pas à pas tout au long du processus, afin de vous assurer que vous pouvez mettre en œuvre ces fonctionnalités de manière transparente.
 
@@ -40,7 +41,7 @@ string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 ## Étape 2 : Créer un nouveau document
 
- Créez un nouveau document et un`DocumentBuilder` pour faciliter l’ajout de contenu.
+ Créez un nouveau document et un`DocumentBuilder`pour faciliter l’ajout de contenu.
 
 ```csharp
 Document doc = new Document();
@@ -118,7 +119,7 @@ builder.EndRow();
 builder.EndTable();
 ```
 
-## Étape 7 : ajouter du contenu et des sauts de page
+## Étape 7 : Ajouter du contenu et des sauts de page
 
 Accédez à la fin du document, ajoutez un saut de page et créez une nouvelle section avec des paramètres de page différents.
 
@@ -168,22 +169,22 @@ En suivant ces étapes, vous pouvez ajouter et personnaliser efficacement des en
 
 ## FAQ
 
-### Q1 : Qu'est-ce qu'Aspose.Words pour .NET ?
+### Qu’est-ce qu’Aspose.Words pour .NET ?
 
 Aspose.Words for .NET est une bibliothèque qui permet aux développeurs de créer, modifier et convertir des documents Word par programme dans des applications .NET.
 
-### Q2 : Puis-je ajouter des images à l’en-tête ou au pied de page ?
+### Puis-je ajouter des images à l’en-tête ou au pied de page ?
 
  Oui, vous pouvez facilement ajouter des images à l'en-tête ou au pied de page en utilisant le`DocumentBuilder.InsertImage` méthode.
 
-### Q3 : Comment définir différents en-têtes et pieds de page pour la première page ?
+### Comment définir différents en-têtes et pieds de page pour la première page ?
 
  Vous pouvez définir différents en-têtes et pieds de page pour la première page en utilisant le`DifferentFirstPageHeaderFooter` propriété du`PageSetup` classe.
 
-### Q4 : Où puis-je trouver plus de documentation sur Aspose.Words ?
+### Où puis-je trouver plus de documentation sur Aspose.Words ?
 
  Vous pouvez trouver une documentation complète sur le[Page de documentation de l'API Aspose.Words](https://reference.aspose.com/words/net/).
 
-### Q5 : Existe-t-il une assistance disponible pour Aspose.Words ?
+### Existe-t-il une assistance disponible pour Aspose.Words ?
 
- Oui, Aspose offre une assistance via son[forum d'entraide](https://forum.aspose.com/c/words/8).
+ Oui, Aspose offre une assistance via son[forum d'assistance](https://forum.aspose.com/c/words/8).

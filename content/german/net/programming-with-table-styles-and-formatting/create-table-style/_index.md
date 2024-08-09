@@ -14,7 +14,7 @@ Sind Sie schon einmal beim Versuch, Tabellen in Ihren Word-Dokumenten mit .NET z
 ## Voraussetzungen
 
 Bevor wir uns in den Code stürzen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
-- Aspose.Words für .NET: Stellen Sie sicher, dass Sie diese leistungsstarke Bibliothek installiert haben. Sie können[hier herunterladen](https://releases.aspose.com/words/net/).
+- Aspose.Words für .NET: Stellen Sie sicher, dass Sie diese leistungsstarke Bibliothek installiert haben. Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 - Entwicklungsumgebung: Visual Studio oder eine andere .NET-Entwicklungsumgebung.
 - Grundkenntnisse in C#: Einige Kenntnisse der C#-Programmierung sind hilfreich.
 

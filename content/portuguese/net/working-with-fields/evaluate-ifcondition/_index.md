@@ -15,7 +15,7 @@ Ao trabalhar com documentos dinâmicos, muitas vezes é essencial incluir lógic
 
 Antes de mergulhar no tutorial, certifique-se de ter o seguinte:
 
-1.  Biblioteca Aspose.Words for .NET: Certifique-se de ter a biblioteca Aspose.Words for .NET instalada. Você pode baixá-lo no[local na rede Internet](https://releases.aspose.com/words/net/).
+1.  Biblioteca Aspose.Words for .NET: Certifique-se de ter a biblioteca Aspose.Words for .NET instalada. Você pode baixá-lo no[site](https://releases.aspose.com/words/net/).
 
 2. Visual Studio: qualquer versão do Visual Studio que ofereça suporte ao desenvolvimento .NET. Certifique-se de ter um projeto .NET configurado onde possa integrar o Aspose.Words.
 
@@ -92,7 +92,7 @@ Um campo IF é um campo do Word que permite inserir lógica condicional em seu d
 ### Como insiro um campo IF em um documento?
  Você pode inserir um campo IF usando o`InsertField` método do`DocumentBuilder` class, especificando a condição que você deseja avaliar.
 
-###  O que`EvaluateCondition` method do?
+###  O que faz`EvaluateCondition` method do?
  O`EvaluateCondition` O método avalia a condição especificada em um campo IF e retorna o resultado, indicando se a condição é verdadeira ou falsa.
 
 ### Posso usar condições complexas com o campo IF?

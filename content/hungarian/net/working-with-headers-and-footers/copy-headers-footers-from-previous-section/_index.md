@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /hu/net/working-with-headers-and-footers/copy-headers-footers-from-previous-section/
 ---
+## Bevezetés
 
 Fejlécek és láblécek hozzáadása és másolása a dokumentumokhoz nagymértékben növelheti azok professzionalizmusát és konzisztenciáját. Az Aspose.Words for .NET segítségével ez a feladat egyszerűvé és nagymértékben testreszabhatóvá válik. Ebben az átfogó oktatóanyagban lépésről lépésre végigvezetjük a fejlécek és láblécek Word-dokumentumok egyik szakaszából a másikba másolásának folyamatán.
 
@@ -81,54 +82,28 @@ Végül mentse a dokumentumot a kívánt helyre. Ez a lépés biztosítja, hogy 
 doc.Save("OutputDocument.docx");
 ```
 
-## Minden lépés részletes magyarázata
-
-### 1. lépés: Hozzon létre egy új dokumentumot
-
- Ebben a lépésben inicializáljuk a`Document` osztály és a`DocumentBuilder` . A`DocumentBuilder` egy segítő osztály, amely leegyszerűsíti a tartalom hozzáadásának folyamatát a dokumentumban.
-
-### 2. lépés: Nyissa meg az Aktuális részt
-
- Az aktuális részt lekérjük a használatával`builder.CurrentSection`Ez a szakasz lesz a cél, ahová az előző rész fejléceit és lábléceit másoljuk.
-
-### 3. lépés: Határozza meg az előző szakaszt
-
- Az ellenőrzéssel`currentSection.PreviousSibling`, megkapjuk az előző részt. Ha az előző szakasz nulla, a metódus további műveletek végrehajtása nélkül tér vissza. Ez az ellenőrzés megakadályozza azokat a hibákat, amelyek akkor fordulhatnak elő, ha nincs előző szakasz.
-
-### 4. lépés: Törölje a meglévő fejléceket és lábléceket
-
-Töröljük a meglévő fejléceket és lábléceket az aktuális szakaszban, hogy ne kerüljön sor több fej- és lábléckészletre.
-
-### 5. lépés: Fejlécek és láblécek másolása
-
- Foreach ciklust használva mindegyiket iteráljuk`HeaderFooter` az előző részben. A`Clone(true)` metódus létrehozza a fejléc vagy a lábléc mély másolatát, biztosítva, hogy minden tartalma és formázása megmaradjon.
-
-### 6. lépés: Mentse el a dokumentumot
-
- A`doc.Save("OutputDocument.docx")` sor minden változtatást a dokumentumba ír, a megadott fájlnévvel mentve azt.
-
 ## Következtetés
 
 fejlécek és láblécek másolása egy Word-dokumentum egyik szakaszából a másikba az Aspose.Words for .NET használatával egyszerű és hatékony. Ennek a lépésenkénti útmutatónak a követésével biztosíthatja, hogy dokumentumai egységes és professzionális megjelenésűek legyenek minden szakaszban.
 
 ## GYIK
 
-### 1. kérdés: Mi az Aspose.Words for .NET?
+### Mi az Aspose.Words for .NET?
 
 Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára Word-dokumentumok programozott létrehozását, kezelését és konvertálását a .NET-alkalmazásokon belül.
 
-### 2. kérdés: Másolhatok fejlécet és láblécet bármelyik szakaszból egy másik szakaszba?
+### Másolhatok fejlécet és láblécet bármelyik szakaszból egy másik szakaszba?
 
 Igen, a fejléceket és lábléceket másolhatja a Word-dokumentum bármely része között az oktatóanyagban leírt módszerrel.
 
-### 3. kérdés: Hogyan kezelhetem a különböző fejléceket és lábléceket páratlan és páros oldalakhoz?
+### Hogyan kezelhetem a különböző fejléceket és lábléceket páratlan és páros oldalakhoz?
 
  Különböző fejléceket és lábléceket állíthat be páratlan és páros oldalakhoz a segítségével`PageSetup.OddAndEvenPagesHeaderFooter` ingatlan.
 
-### 4. kérdés: Hol találhatok további információt az Aspose.Words for .NET-ről?
+### Hol találhatok további információt az Aspose.Words for .NET-ről?
 
  Részletes dokumentációt találhat a[Aspose.Words API dokumentációs oldal](https://reference.aspose.com/words/net/).
 
-### 5. kérdés: Elérhető ingyenes próbaverzió az Aspose.Words for .NET számára?
+### Létezik ingyenes próbaverzió az Aspose.Words for .NET számára?
 
  Igen, letölthet egy ingyenes próbaverziót a webhelyről[letöltési oldal](https://releases.aspose.com/).

@@ -17,7 +17,7 @@ Když se vydáte na cestu k využití Aspose.Words for Java, prvním krokem je l
 
 2. Získejte licenční soubor: Po zakoupení obdržíte licenční soubor. Tento soubor je zásadní pro konfiguraci Aspose.Words ve vašem projektu Java.
 
-3.  Integrace licence: Chcete-li povolit Aspose.Words, integrujte licenci do své aplikace Java. To obvykle zahrnuje načtení licenčního souboru a jeho použití v Aspose.Words. Odkazovat na[API dokumentace](https://reference.aspose.com/words/java/) pro podrobné ukázky kódu.
+3.  Integrace licence: Chcete-li povolit Aspose.Words, integrujte licenci do své aplikace Java. To obvykle zahrnuje načtení licenčního souboru a jeho použití v Aspose.Words. Viz[API dokumentace](https://reference.aspose.com/words/java/) pro podrobné ukázky kódu.
 
 ## Nastavení konfigurace
 

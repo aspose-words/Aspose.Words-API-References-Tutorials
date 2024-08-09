@@ -64,7 +64,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
-ここで、新しい`PdfSaveOptions`オブジェクトを設定し、`EncryptionDetails` 。 パスワード`"Aspose"`PDF を暗号化するために使用されます。
+ここで、新しい`PdfSaveOptions`オブジェクトを設定し、`EncryptionDetails`パスワード`"Aspose"`PDF を暗号化するために使用されます。
 
 ## ステップ4: 暗号化されたPDFを保存する
 

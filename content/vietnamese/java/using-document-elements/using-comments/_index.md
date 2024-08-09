@@ -87,4 +87,4 @@ Aspose.Words for Java cho phép bạn thêm nhận xét có độ dài khác nha
 
 ### 5. Tôi có thể truy cập Aspose.Words cho Java ở đâu?
 
-Bây giờ bạn đã hiểu biết toàn diện về cách làm việc với các nhận xét trong Aspose.Words cho Java, bạn có thể bắt đầu tạo các tài liệu động và mang tính thông tin một cách dễ dàng. Chúc mừng mã hóa!
+Bây giờ bạn đã hiểu biết toàn diện về cách làm việc với các nhận xét trong Aspose.Words cho Java, bạn có thể bắt đầu tạo các tài liệu động và giàu thông tin một cách dễ dàng. Chúc mừng mã hóa!

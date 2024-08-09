@@ -109,7 +109,7 @@ Sim, Aspose.Words suporta vários formatos de Word, incluindo DOC, DOCX, RTF e m
 
 ### Onde posso encontrar mais recursos no Aspose.Words?
 
- Para mais informações, você pode visitar o[Documentação da API Aspose.Words](https://reference.aspose.com/words/net/) ou o[Fórum de suporte](https://forum.aspose.com/c/words/8) para ajuda e discussões.
+ Para mais informações, você pode visitar o[Documentação da API Aspose.Words](https://reference.aspose.com/words/net/) ou o[fórum de suporte](https://forum.aspose.com/c/words/8) para ajuda e discussões.
 
 ### Posso experimentar o Aspose.Words for .NET gratuitamente?
 

@@ -9,7 +9,7 @@ url: /fr/net/programming-with-htmlsaveoptions/resolve-font-names/
 ---
 ## Introduction
 
-Salut, camarade codeur ! Si vous avez déjà été confronté à des problèmes de police lors de l'enregistrement de documents Word au format HTML, vous n'êtes pas seul. Les polices peuvent être délicates, mais ne vous inquiétez pas ; Je te couvre. Aujourd'hui, nous examinons comment résoudre les noms de polices dans vos documents Word à l'aide d'Aspose.Words pour .NET. Ce guide vous guidera pas à pas tout au long du processus, garantissant que vos polices s'affichent parfaitement au format HTML.
+Salut, camarade codeur ! Si vous avez déjà été confronté à des problèmes de police lors de l'enregistrement de documents Word au format HTML, vous n'êtes pas seul. Les polices peuvent être délicates, mais ne vous inquiétez pas ; Je te soutiens. Aujourd'hui, nous examinons comment résoudre les noms de polices dans vos documents Word à l'aide d'Aspose.Words pour .NET. Ce guide vous guidera pas à pas tout au long du processus, garantissant que vos polices s'affichent parfaitement au format HTML.
 
 ## Conditions préalables
 
@@ -67,7 +67,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Html)
 ```
 
 Explication:
- Nous créons une instance de`HtmlSaveOptions` avec`SaveFormat.Html` . Le`PrettyFormat` l'option rend la sortie HTML plus lisible, et`ResolveFontNames` garantit que les noms de polices sont résolus.
+ Nous créons une instance de`HtmlSaveOptions` avec`SaveFormat.Html` . Le`PrettyFormat` L'option rend la sortie HTML plus lisible, et`ResolveFontNames` garantit que les noms de polices sont résolus.
 
 ## Étape 4 : Enregistrer le document au format HTML
 
@@ -82,7 +82,7 @@ Explication:
 
 ## Conclusion
 
-Et voila! En suivant ces étapes, vous avez réussi à résoudre les noms de polices lors de la conversion d'un document Word en HTML à l'aide d'Aspose.Words pour .NET. Cela garantit non seulement que vos polices s'affichent correctement, mais donne également à votre sortie HTML un aspect soigné et professionnel. Bon codage !
+Et voilà ! En suivant ces étapes, vous avez réussi à résoudre les noms de polices lors de la conversion d'un document Word en HTML à l'aide d'Aspose.Words pour .NET. Cela garantit non seulement que vos polices s'affichent correctement, mais donne également à votre sortie HTML un aspect soigné et professionnel. Bon codage !
 
 ## FAQ
 

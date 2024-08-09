@@ -15,8 +15,8 @@ url: /th/net/working-with-oleobjects-and-activex/
  ## บทช่วยสอน
 | ชื่อ | คำอธิบาย |
 | --- | --- |
-| [แทรกวัตถุ Ole ในเอกสาร Word](./insert-ole-object/) | เรียนรู้วิธีแทรกวัตถุ OLE ในเอกสาร word โดยใช้ Aspose.Words สำหรับ .NET |
-| [แทรกวัตถุ Ole ใน Word ด้วยแพ็คเกจ Ole](./insert-ole-object-with-ole-package/) | เรียนรู้วิธีแทรกวัตถุ OLE ใน Word ด้วยแพ็คเกจ OLE ลงในเอกสารโดยใช้ Aspose.Words สำหรับ .NET |
-| [แทรกวัตถุ Ole ในเอกสาร Word เป็นไอคอน](./insert-ole-object-as-icon/) | เรียนรู้วิธีแทรกวัตถุ OLE ในเอกสาร word เป็นไอคอนด้วย Aspose.Words สำหรับ .NET |
-| [แทรกวัตถุ Ole เป็นไอคอนโดยใช้สตรีม](./insert-ole-object-as-icon-using-stream/) | เรียนรู้วิธีแทรกวัตถุ OLE เป็นไอคอนโดยใช้สตรีมด้วย Aspose.Words สำหรับ .NET |
-| [อ่านคุณสมบัติ XControl ที่ใช้งานอยู่จากไฟล์ Word](./read-active-xcontrol-properties/) | อ่านคุณสมบัติของตัวควบคุม ActiveX ในไฟล์ Word ด้วย Aspose.Words สำหรับ .NET |
+| [แทรกวัตถุ Ole ในเอกสาร Word](./insert-ole-object/) | เรียนรู้วิธีแทรกวัตถุ OLE ในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET พร้อมคำแนะนำทีละขั้นตอนนี้ ปรับปรุงเอกสารของคุณด้วยเนื้อหาที่ฝังไว้ |
+| [แทรกวัตถุ Ole ใน Word ด้วยแพ็คเกจ Ole](./insert-ole-object-with-ole-package/) | เรียนรู้วิธีแทรกวัตถุ OLE ในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET ปฏิบัติตามคำแนะนำทีละขั้นตอนโดยละเอียดของเราเพื่อฝังไฟล์ได้อย่างราบรื่น |
+| [แทรกวัตถุ Ole ในเอกสาร Word เป็นไอคอน](./insert-ole-object-as-icon/) | เรียนรู้วิธีแทรกวัตถุ OLE เป็นไอคอนในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET ปฏิบัติตามคำแนะนำทีละขั้นตอนของเราเพื่อปรับปรุงเอกสารของคุณ |
+| [แทรกวัตถุ Ole เป็นไอคอนโดยใช้สตรีม](./insert-ole-object-as-icon-using-stream/) | เรียนรู้วิธีแทรกวัตถุ OLE เป็นไอคอนโดยใช้สตรีมด้วย Aspose.Words สำหรับ .NET ในบทช่วยสอนแบบละเอียดทีละขั้นตอนนี้ |
+| [อ่านคุณสมบัติ XControl ที่ใช้งานอยู่จากไฟล์ Word](./read-active-xcontrol-properties/) | เรียนรู้วิธีอ่านคุณสมบัติการควบคุม ActiveX จากไฟล์ Word โดยใช้ Aspose.Words สำหรับ .NET ในคำแนะนำทีละขั้นตอน พัฒนาทักษะการทำงานอัตโนมัติของเอกสารของคุณ |

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-tables/keep-table-together/
 ---
-## Úvod
+## Zavedení
 
 Už jste někdy byli frustrovaní, když se tabulka v dokumentu aplikace Word rozdělí na dvě stránky? Jako by se vaše pečlivě sestavené informace najednou rozhodly dát si v polovině přestávku! Udržování tabulek pohromadě na jedné stránce je klíčové pro čitelnost a prezentaci. Ať už jde o zprávu, návrh projektu nebo jen osobní dokument, rozdělení tabulek může být docela nepříjemné. Naštěstí pro nás má Aspose.Words pro .NET šikovný způsob, jak tento problém vyřešit. V tomto tutoriálu si projdeme kroky, jak udržet vaše stoly neporušené a vypadat ostře. Pojďme se ponořit!
 
@@ -15,7 +15,7 @@ Už jste někdy byli frustrovaní, když se tabulka v dokumentu aplikace Word ro
 
 Než začneme, ujistěte se, že máte následující:
 
-1.  Aspose.Words for .NET – Pokud jste jej ještě nenainstalovali, můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET – Pokud jste jej ještě nenainstalovali, můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 2. Dokument aplikace Word s tabulkou – Budeme pracovat s ukázkovým dokumentem, který má tabulku zahrnující více stránek.
 3. Základní znalost C# – Tento tutoriál předpokládá, že máte základní znalosti o programování v C#.
 
@@ -89,7 +89,7 @@ Pokud je tabulka příliš velká na to, aby se vešla na jednu stránku, bude s
  Ano, můžete procházet všechny tabulky v dokumentu a použít`KeepWithNext` vlastnost ke každému odstavci.
 
 ### Potřebuji pro Aspose.Words pro .NET placenou licenci?  
-Můžete začít s bezplatnou zkušební verzí od[tady](https://releases.aspose.com/), ale pro plnou funkčnost se doporučuje placená licence.
+Můžete začít s bezplatnou zkušební verzí od[zde](https://releases.aspose.com/), ale pro plnou funkčnost se doporučuje placená licence.
 
 ### Mohu na tabulku použít jiné formátování a přitom ji udržet pohromadě?  
 Absolutně! Tabulku můžete naformátovat podle potřeby a zajistit, aby zůstala pohromadě na jedné stránce.

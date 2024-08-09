@@ -21,7 +21,7 @@ Zanim zagłębisz się w samouczek, upewnij się, że posiadasz następujące el
 
 3. Podstawowa znajomość C#: Znajomość języka programowania C# i frameworku .NET.
 
-4.  Licencja Aspose: Jeśli używasz licencjonowanej wersji Aspose.Words, upewnij się, że licencja jest poprawnie skonfigurowana. Możesz dostać[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) Jeśli potrzebne.
+4.  Licencja Aspose: Jeśli używasz licencjonowanej wersji Aspose.Words, upewnij się, że licencja jest poprawnie skonfigurowana. Możesz zdobyć[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) jeśli potrzeba.
 
 5. Zrozumienie pól słów: Znajomość pól słów, w szczególności pola JEŻELI, będzie pomocna, ale nie obowiązkowa.
 
@@ -80,7 +80,7 @@ Console.WriteLine(actualResult);
 
 ## Wniosek
 
-Ocena warunków JEŻELI w dokumentach programu Word przy użyciu Aspose.Words dla .NET to skuteczny sposób dodawania zawartości dynamicznej w oparciu o określone kryteria. Postępując zgodnie z tym przewodnikiem, nauczyłeś się, jak utworzyć dokument, wstawić pole JEŻELI, ocenić jego stan i wyświetlić wynik. Ta funkcjonalność jest przydatna do generowania spersonalizowanych raportów, dokumentów z zawartością warunkową lub w dowolnym scenariuszu, w którym wymagana jest zawartość dynamiczna.
+Ocena warunków JEŻELI w dokumentach programu Word przy użyciu Aspose.Words dla .NET to skuteczny sposób dodawania zawartości dynamicznej w oparciu o określone kryteria. Postępując zgodnie z tym przewodnikiem, nauczyłeś się, jak utworzyć dokument, wstawić pole JEŻELI, ocenić jego stan i wyświetlić wynik. Ta funkcjonalność jest przydatna do generowania spersonalizowanych raportów, dokumentów z zawartością warunkową lub w dowolnym scenariuszu, w którym potrzebna jest zawartość dynamiczna.
 
 Możesz eksperymentować z różnymi warunkami i wynikami, aby w pełni zrozumieć, jak wykorzystać pola JEŻELI w swoich dokumentach.
 
@@ -99,4 +99,4 @@ Pole JEŻELI to pole programu Word, które umożliwia wstawienie logiki warunkow
 Tak, w polu JEŻELI można używać złożonych warunków, określając w razie potrzeby różne wyrażenia i porównania.
 
 ### Gdzie mogę znaleźć więcej informacji na temat Aspose.Words dla .NET?
- Więcej informacji można znaleźć na stronie[Dokumentacja Aspose.Words](https://reference.aspose.com/words/net/)lub zapoznaj się z dodatkowymi zasobami i opcjami wsparcia dostarczonymi przez Aspose.
+ Aby uzyskać więcej informacji, odwiedź stronę[Dokumentacja Aspose.Words](https://reference.aspose.com/words/net/)lub zapoznaj się z dodatkowymi zasobami i opcjami wsparcia dostarczonymi przez Aspose.

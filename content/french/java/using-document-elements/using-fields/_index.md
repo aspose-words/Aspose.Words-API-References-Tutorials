@@ -239,7 +239,7 @@ Code source de la classe HandleMergeField
     {
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs args)
         {
-            // Ne fais rien.
+            // Ne faites rien.
         }
         /// <résumé>
         /// Ceci est appelé lorsque le moteur de publipostage rencontre le champ de fusion Image:XXX dans le document.
@@ -320,7 +320,7 @@ Code source de la classe HandleMergeField
         }
         public void /*IFieldMergingCallback.*/imageFieldMerging(ImageFieldMergingArgs args)
         {
-            // Ne fais rien.
+            // Ne faites rien.
         }
         private DocumentBuilder mBuilder;
         private int mRowIdx;
@@ -353,9 +353,9 @@ Code source de la classe HandleMergeField
 }
 ```
 
-## 6. Conclusion
+## 6.Conclusion
 
-Toutes nos félicitations! Vous avez appris à utiliser les champs dans Aspose.Words pour Java pour manipuler dynamiquement des documents Word. Cette API puissante vous donne un contrôle total sur vos documents, ce qui en fait un atout précieux pour les développeurs Java.
+Félicitations! Vous avez appris à utiliser les champs dans Aspose.Words pour Java pour manipuler dynamiquement des documents Word. Cette API puissante vous donne un contrôle total sur vos documents, ce qui en fait un atout précieux pour les développeurs Java.
 
 ## 7. FAQ
 

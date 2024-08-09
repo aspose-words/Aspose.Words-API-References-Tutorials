@@ -52,7 +52,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 3. Adım: İlk Metni Yazın
 
- Kullanmak`DocumentBuilder`, belgeye bir başlangıç metni yazacağız. Bu, köprümüzün nereye ekleneceğine ilişkin bağlamı ayarlar.
+ kullanarak`DocumentBuilder`, belgeye bir başlangıç metni yazacağız. Bu, köprümüzün nereye ekleneceğinin bağlamını oluşturur.
 
 ```csharp
 builder.Write("Please make sure to visit ");
@@ -68,7 +68,7 @@ builder.Font.Style = doc.Styles[StyleIdentifier.Hyperlink];
 
 ## Adım 5: Köprüyü Ekleme
 
- Şimdi köprüyü aşağıdaki komutu kullanarak ekliyoruz:`InsertHyperlink`yöntem. Bu yöntem üç parametre alır: görüntü metni, URL ve bağlantının köprü olarak biçimlendirilmesi gerekip gerekmediğini belirten bir boole.
+ Şimdi köprüyü aşağıdaki komutu kullanarak ekliyoruz:`InsertHyperlink`Yöntem. Bu yöntem üç parametre alır: görüntü metni, URL ve bağlantının köprü olarak biçimlendirilmesi gerekip gerekmediğini belirten bir boole.
 
 ```csharp
 builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", false);
@@ -122,4 +122,4 @@ Aspose.Words for .NET kullanarak bir Word belgesine köprüler eklemek, adımlar
 
 ### Bir köprüyü eklendikten sonra kaldırmak mümkün müdür?
 
- Evet, şuraya erişerek bir köprüyü kaldırabilirsiniz:`FieldHyperlink` ve arayarak`Remove` yöntem.
+ Evet, şuraya erişerek bir köprüyü kaldırabilirsiniz:`FieldHyperlink` ve arayarak`Remove` Yöntem.

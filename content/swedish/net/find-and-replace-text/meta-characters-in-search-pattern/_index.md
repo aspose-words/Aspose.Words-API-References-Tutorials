@@ -39,7 +39,7 @@ Innan du börjar manipulera dokumentet måste du definiera sökvägen till din d
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"`med den faktiska sökvägen där du vill spara dina dokument.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"`med den faktiska sökvägen där du vill spara dina dokument.
 
 ## Steg 2: Skapa ett nytt dokument
 

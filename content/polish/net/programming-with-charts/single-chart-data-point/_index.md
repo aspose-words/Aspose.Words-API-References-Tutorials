@@ -15,7 +15,7 @@ Czy zastanawiałeś się kiedyś, jak sprawić, by Twoje wykresy wyróżniały s
 
 Zanim zaczniemy, upewnijmy się, że masz wszystkie niezbędne elementy:
 
--  Aspose.Words dla biblioteki .NET: Upewnij się, że masz najnowszą wersję.[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+-  Aspose.Words dla biblioteki .NET: Upewnij się, że masz najnowszą wersję.[Pobierz go tutaj](https://releases.aspose.com/words/net/).
 - .NET Framework: Upewnij się, że na komputerze jest zainstalowana platforma .NET Framework.
 - Podstawowa znajomość języka C#: Pomocna będzie podstawowa znajomość programowania w języku C#.
 - Zintegrowane środowisko programistyczne (IDE): zalecany jest program Visual Studio.

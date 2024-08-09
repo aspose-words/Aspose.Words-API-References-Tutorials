@@ -95,7 +95,7 @@ doc.VbaProject.Modules.Add(module);
 ```
 
 Ebben a részletben:
--  Létrehozunk egy újat`VbaModule` tárgy.
+-  Létrehozunk egy újat`VbaModule` objektum.
 - A modul nevét "AsposeModule"-ra állítottuk.
 -  A modul típusát a következőképpen határozzuk meg`VbaModuleType.ProceduralModule`, ami azt jelenti, hogy eljárásokat (alprogramokat vagy függvényeket) tartalmaz.
 -  Beállítottuk a`SourceCode` tulajdon egy egyszerű "Hello, World!" makró.
@@ -116,9 +116,9 @@ Ez a sor a dokumentumot "WorkingWithVba.CreateVbaProject.docm" néven menti a me
 
 ## Következtetés
 
-Gratulálunk! Sikeresen létrehozott egy VBA-projektet egy Word-dokumentumban az Aspose.Words for .NET használatával. Ez az oktatóanyag a környezet beállításától a VBA-kód írásáig és mentéséig mindenre kiterjedt. Az Aspose.Words segítségével olyan módon automatizálhatja a feladatokat, makrókat hozhat létre, és testreszabhatja Word-dokumentumait, ahogyan azt soha nem is gondolta.
+Gratulálok! Sikeresen létrehozott egy VBA-projektet egy Word-dokumentumban az Aspose.Words for .NET használatával. Ez az oktatóanyag a környezet beállításától a VBA-kód írásáig és mentéséig mindenre kiterjedt. Az Aspose.Words segítségével olyan módon automatizálhatja a feladatokat, makrókat hozhat létre, és testreszabhatja Word-dokumentumait, ahogyan azt soha nem is gondolta.
 
- Ha még többet szeretne felfedezni, a[API dokumentáció](https://reference.aspose.com/words/net/) információkincs tárháza. És ha valaha segítségre van szüksége, a[támogatói fórum](https://forum.aspose.com/c/words/8) csak egy kattintásnyira van.
+ Ha még többet szeretne felfedezni, a[API dokumentáció](https://reference.aspose.com/words/net/) információ kincsesbánya. És ha valaha segítségre van szüksége, a[támogatási fórum](https://forum.aspose.com/c/words/8) csak egy kattintásnyira van.
 
 Jó kódolást, és ne feledd, csak a képzeleted szab határt!
 

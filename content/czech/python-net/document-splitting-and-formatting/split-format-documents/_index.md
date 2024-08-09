@@ -12,7 +12,7 @@ V dnešním uspěchaném digitálním světě je efektivní správa a formátov�
 ## Předpoklady
 Než se pustíme do výukového programu, ujistěte se, že máte splněny následující předpoklady:
 - Základní znalost programovacího jazyka Python.
--  Nainstalován Aspose.Words pro Python. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/python/).
+-  Nainstalován Aspose.Words pro Python. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/python/).
 - Vzorový dokument pro testování.
 
 ## Krok 1: Vložte dokument

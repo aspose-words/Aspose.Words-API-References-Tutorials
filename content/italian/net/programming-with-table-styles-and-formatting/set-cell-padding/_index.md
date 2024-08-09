@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-table-styles-and-formatting/set-cell-padding/
 ---
-## introduzione
+## Introduzione
 
 Ti sei mai chiesto come aggiungere un po' di spazio extra attorno al testo in una cella di tabella nel tuo documento Word? Bene, sei nel posto giusto! Questo tutorial ti guiderà attraverso il processo di impostazione del riempimento delle celle utilizzando Aspose.Words per .NET. Se stai cercando di rendere il tuo documento più raffinato o vuoi semplicemente far risaltare i dati della tua tabella, regolare il riempimento delle celle è uno strumento semplice ma potente. Analizzeremo ogni passaggio per assicurarti di poterlo seguire facilmente, anche se sei nuovo in Aspose.Words per .NET.
 
@@ -55,7 +55,7 @@ builder.InsertCell();
 
 ## Passaggio 3: impostare il riempimento delle celle
 
-Qui è dove avviene la magia! Imposteremo la quantità di spazio (in punti) da aggiungere a sinistra, in alto, a destra e in fondo al contenuto della cella.
+È qui che avviene la magia! Imposteremo la quantità di spazio (in punti) da aggiungere a sinistra, in alto, a destra e in fondo al contenuto della cella.
 
 ```csharp
 // Imposta il riempimento per la cella
@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetCellPadding.docx");
 
 ## Conclusione
 
-E il gioco è fatto! Hai impostato correttamente il riempimento delle celle in un documento di Word utilizzando Aspose.Words per .NET. Questa funzionalità semplice ma potente può migliorare significativamente la leggibilità e l'estetica delle tue tabelle. Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato, speriamo che questa guida sia stata utile e facile da seguire. Buona programmazione!
+Ed ecco qua! Hai impostato correttamente il riempimento delle celle in un documento di Word utilizzando Aspose.Words per .NET. Questa funzionalità semplice ma potente può migliorare significativamente la leggibilità e l'estetica delle tue tabelle. Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato, speriamo che questa guida sia stata utile e facile da seguire. Buona programmazione!
 
 ## Domande frequenti
 

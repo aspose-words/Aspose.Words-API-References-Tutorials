@@ -55,7 +55,7 @@ Document doc = new Document(dataDir + "Image bullet points.docx");
 
 ## 3. Adım: Kaydetme Seçeneklerini Yapılandırın
 
-Şimdi resim madde işaretlerinin kaydedilmemesi gerektiğini belirtmek için kaydetme seçeneklerini yapılandıralım. Sihir yapılan yer burasıdır!
+Şimdi resim madde işaretlerinin kaydedilmemesi gerektiğini belirtmek için kaydetme seçeneklerini yapılandıralım. Sihrin gerçekleştiği yer burası!
 
 ```csharp
 // "Resim Madde İşaretini Kaydetme" özelliğiyle kaydetme seçeneklerini yapılandırın
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", save
 
 ## Çözüm
 
-İşte buyur! Yalnızca birkaç satır kodla Aspose.Words for .NET'i, bir belgeyi kaydederken resim işaretlerini çıkaracak şekilde başarıyla yapılandırdınız. Bu, görüntü madde işaretlerinin dikkati dağıtmadığı, temiz ve tutarlı bir görünüme ihtiyaç duyduğunuzda inanılmaz derecede yararlı olabilir.
+Ve işte karşınızda! Yalnızca birkaç satır kodla Aspose.Words for .NET'i, bir belgeyi kaydederken resim işaretlerini çıkaracak şekilde başarıyla yapılandırdınız. Bu, görüntü madde işaretlerinin dikkati dağıtmadığı, temiz ve tutarlı bir görünüme ihtiyaç duyduğunuzda inanılmaz derecede yararlı olabilir.
 
 ## SSS'ler
 

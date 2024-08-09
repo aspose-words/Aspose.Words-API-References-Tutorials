@@ -10,7 +10,7 @@ url: /nl/net/programming-with-loadoptions/set-ms-word-version/
 ---
 ## Invoering
 
-Ooit gemerkt dat u met specifieke versies van MS Word-documenten moest werken, maar niet wist hoe u dit programmatisch moest instellen? Je bent niet alleen! In deze zelfstudie doorlopen we het proces van het instellen van de MS Word-versie met Aspose.Words voor .NET. Dit is een fantastisch hulpmiddel dat het manipuleren van Word-documenten een fluitje van een cent maakt. We duiken in de kern van de zaak, waarbij we elke stap opsplitsen om ervoor te zorgen dat u soepel aan de slag kunt. klaar om te beginnen? Laten we erin duiken!
+Ooit gemerkt dat u met specifieke versies van MS Word-documenten moest werken, maar niet wist hoe u dit programmatisch moest instellen? Je bent niet de enige! In deze zelfstudie doorlopen we het proces van het instellen van de MS Word-versie met Aspose.Words voor .NET. Dit is een fantastisch hulpmiddel dat het manipuleren van Word-documenten een fluitje van een cent maakt. We duiken in de kern van de zaak, waarbij we elke stap opsplitsen om ervoor te zorgen dat u soepel aan de slag kunt. Klaar om aan de slag te gaan? Laten we erin duiken!
 
 ## Vereisten
 

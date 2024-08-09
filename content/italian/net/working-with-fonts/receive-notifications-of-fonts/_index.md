@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/working-with-fonts/receive-notifications-of-fonts/
 ---
-
+## Introduzione
 
 Se hai mai riscontrato problemi con i caratteri che non vengono visualizzati correttamente nei tuoi documenti, non sei il solo. Gestire le impostazioni dei caratteri e ricevere notifiche sulla sostituzione dei caratteri può farti risparmiare un sacco di mal di testa. In questa guida completa, esploreremo come gestire le notifiche sui caratteri utilizzando Aspose.Words per .NET, assicurando che i tuoi documenti appaiano sempre al meglio.
 
@@ -117,7 +117,7 @@ No, puoi specificare solo un carattere predefinito per la sostituzione. Tuttavia
 
 ### Q4: Dove posso trovare supporto per Aspose.Words?
 
- Visitare il[Forum di supporto di Aspose.Words](https://forum.aspose.com/c/words/8) per assistenza.
+ Visita il[Forum di supporto di Aspose.Words](https://forum.aspose.com/c/words/8) per assistenza.
 
 ### Q5: È possibile ottenere una licenza temporanea per Aspose.Words?
 

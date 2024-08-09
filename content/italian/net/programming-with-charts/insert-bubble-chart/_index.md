@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-charts/insert-bubble-chart/
 ---
-## introduzione
+## Introduzione
 
 Ti sei mai chiesto come rendere i tuoi documenti Word più dinamici e visivamente accattivanti? Un modo per raggiungere questo obiettivo è incorporare i grafici. In questa guida, approfondiremo le specifiche dell'inserimento di un grafico a bolle in un documento Word utilizzando Aspose.Words per .NET. È più semplice di quanto potresti pensare e alla fine di questo tutorial sarai in grado di farlo senza sforzo.
 
@@ -58,7 +58,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Passaggio 4: inserisci il grafico a bolle
 
- Ora arriva la parte emozionante: inserire il grafico a bolle. Noi usiamo il`InsertChart` metodo per aggiungere un grafico di tipo`Bubble` al nostro documento.
+ Ora arriva la parte emozionante: inserire il grafico a bolle. Usiamo il`InsertChart` metodo per aggiungere un grafico di tipo`Bubble` al nostro documento.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Bubble, 432, 252);
@@ -89,7 +89,7 @@ Congratulazioni! Hai inserito con successo un grafico a bolle in un documento di
 
 ### Posso personalizzare l'aspetto del grafico a bolle?
 
- Assolutamente! Aspose.Words per .NET offre un'ampia gamma di opzioni di personalizzazione, dai colori e le etichette alla formattazione delle serie di dati. Dai un'occhiata a[documentazione](https://reference.aspose.com/words/net/) per ulteriori dettagli.
+ Assolutamente! Aspose.Words per .NET offre un'ampia gamma di opzioni di personalizzazione, dai colori e le etichette alla formattazione delle serie di dati. Dai un'occhiata a[documentazione](https://reference.aspose.com/words/net/) per maggiori dettagli
 
 ### È possibile aggiungere più grafici a un singolo documento?
 

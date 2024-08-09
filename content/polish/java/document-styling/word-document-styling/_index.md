@@ -144,7 +144,7 @@ font.setUnderline(Underline.SINGLE);
 
 ### 3. Używanie kolorów i efektów tekstowych
 
-Aby zastosować kolory i inne efekty tekstowe, użyj także klasy Font.
+Aby zastosować kolory i inne efekty tekstowe, użyj również klasy Font.
 
 ```java
 font.setColor(Color.RED);

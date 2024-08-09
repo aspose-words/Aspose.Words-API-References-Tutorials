@@ -140,4 +140,4 @@ Ustawić`importFormatOptions.setIgnoreTextBoxes(false)` aby uwzględnić pola te
 
 ### Co się stanie, jeśli chcę połączyć/odłączyć nagłówki i stopki między dokumentami?
 
- Możesz łączyć nagłówki i stopki za pomocą`linkToPrevious(true)` lub rozłącz je za pomocą`linkToPrevious(false)` w razie potrzeby.
+ Możesz łączyć nagłówki i stopki za pomocą`linkToPrevious(true)` lub rozłącz je za pomocą`linkToPrevious(false)` według potrzeb.

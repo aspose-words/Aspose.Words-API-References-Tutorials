@@ -47,7 +47,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 
 ## Steg 2: Identifiera tabellerna
 
- Därefter måste du identifiera de tabeller du vill kombinera. Aspose.Words låter dig hämta tabeller från ett dokument med hjälp av`GetChild` metod. Här är hur:
+ Därefter måste du identifiera de tabeller du vill kombinera. Aspose.Words låter dig hämta tabeller från ett dokument med hjälp av`GetChild` metod. Så här gör du:
 
 ```csharp
 Table firstTable = (Table) doc.GetChild(NodeType.Table, 0, true);
@@ -78,19 +78,19 @@ secondTable.Remove();
 
 ## Steg 5: Spara dokumentet
 
-Slutligen, spara det ändrade dokumentet. Detta steg säkerställer att dina ändringar skrivs till filen:
+Spara slutligen det ändrade dokumentet. Detta steg säkerställer att dina ändringar skrivs till filen:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.CombineRows.docx");
 ```
 
-Och det är allt! Du har framgångsrikt kombinerat rader från två tabeller till en med Aspose.Words för .NET.
+Och det är det! Du har framgångsrikt kombinerat rader från två tabeller till en med Aspose.Words för .NET.
 
 ## Slutsats
 
 Att kombinera rader från flera tabeller till en kan förenkla dina dokumentbearbetningsuppgifter avsevärt. Med Aspose.Words för .NET blir denna uppgift enkel och effektiv. Genom att följa denna steg-för-steg-guide kan du enkelt slå samman tabeller och effektivisera ditt arbetsflöde.
 
-Om du behöver mer information eller har några frågor kan du[Aspose.Words dokumentation](https://reference.aspose.com/words/net/) är en utmärkt resurs. Du kan också utforska köpalternativ[här](https://purchase.aspose.com/buy) eller skaffa en[tillfällig licens](https://purchase.aspose.com/temporary-license/) för provning.
+Om du behöver mer information eller har några frågor kan du[Aspose.Words dokumentation](https://reference.aspose.com/words/net/) är en utmärkt resurs. Du kan också utforska köpalternativ[här](https://purchase.aspose.com/buy) eller skaffa en[tillfällig licens](https://purchase.aspose.com/temporary-license/) för testning.
 
 ## FAQ's
 

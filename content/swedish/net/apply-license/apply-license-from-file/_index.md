@@ -9,7 +9,7 @@ url: /sv/net/apply-license/apply-license-from-file/
 ---
 ## Introduktion
 
-Hallå där! Om du dyker in i Aspose.Words-världen för .NET får du en njutning. Detta kraftfulla bibliotek låter dig skapa, redigera och konvertera Word-dokument programmatiskt. Men innan du sätter igång är det viktigt att veta hur man tillämpar en licens från en fil för att låsa upp dess fulla potential. I den här guiden går vi igenom processen steg för steg, så att du kan få din licens inställd snabbt och effektivt.
+Hej där! Om du dyker in i Aspose.Words-världen för .NET får du en njutning. Detta kraftfulla bibliotek låter dig skapa, redigera och konvertera Word-dokument programmatiskt. Men innan du sätter igång är det viktigt att veta hur man tillämpar en licens från en fil för att låsa upp dess fulla potential. I den här guiden går vi igenom processen steg för steg, så att du kan få din licens inställd snabbt och effektivt.
 
 ## Förutsättningar
 

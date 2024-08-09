@@ -56,7 +56,7 @@ Esta linha adiciona o texto “Aqui está uma imagem SVG:” ao seu documento. �
 
 ## Etapa 3: inserir imagem SVG
 
- Agora a parte divertida! Inseriremos uma imagem SVG em nosso documento usando o`InsertHtml` método.
+ Agora, a parte divertida! Inseriremos uma imagem SVG em nosso documento usando o`InsertHtml` método.
 
 ```csharp
 builder.InsertHtml(

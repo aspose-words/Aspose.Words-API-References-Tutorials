@@ -114,13 +114,13 @@ doc.Save("ManipulatedDocument.docx");
 
 ## Conclusión
 
-¡Y eso es una envoltura! Hemos explorado cómo administrar las posiciones del cursor en documentos de Word con Aspose.Words para .NET. Desde configurar su proyecto hasta manipular el cursor y agregar texto, ahora tiene una base sólida sobre la cual construir. Continúe experimentando y vea qué otras funciones interesantes puede descubrir en esta sólida biblioteca. ¡Feliz codificación!
+¡Y eso es todo! Hemos explorado cómo administrar las posiciones del cursor en documentos de Word con Aspose.Words para .NET. Desde configurar su proyecto hasta manipular el cursor y agregar texto, ahora tiene una base sólida sobre la cual construir. Siga experimentando y vea qué otras funciones interesantes puede descubrir en esta sólida biblioteca. ¡Feliz codificación!
 
 ## Preguntas frecuentes
 
 ### ¿Qué es Aspose.Words para .NET?
 
-Aspose.Words para .NET es una potente biblioteca que permite a los desarrolladores crear, manipular y convertir documentos de Word mediante programación utilizando C# u otros lenguajes .NET.
+Aspose.Words para .NET es una poderosa biblioteca que permite a los desarrolladores crear, manipular y convertir documentos de Word mediante programación usando C# u otros lenguajes .NET.
 
 ### ¿Puedo utilizar Aspose.Words gratis?
 

@@ -2,88 +2,115 @@
 title: Abilita Disabilita sostituzione carattere
 linktitle: Abilita Disabilita sostituzione carattere
 second_title: API di elaborazione dei documenti Aspose.Words
-description: In questo tutorial, scopri come abilitare o disabilitare la sostituzione dei caratteri in un documento Word con Aspose.Words per .NET.
+description: Scopri come abilitare o disabilitare la sostituzione dei caratteri nei documenti di Word utilizzando Aspose.Words per .NET. Assicurati che i tuoi documenti appaiano coerenti su tutte le piattaforme.
 type: docs
 weight: 10
 url: /it/net/working-with-fonts/enable-disable-font-substitution/
 ---
-In questo tutorial ti spiegheremo come abilitare o disabilitare la sostituzione dei caratteri in un documento Word durante il rendering utilizzando la libreria Aspose.Words per .NET. L'abilitazione o la disabilitazione della sostituzione dei caratteri consente di controllare se i caratteri mancanti vengono automaticamente sostituiti con un carattere predefinito. Ti guideremo passo dopo passo per aiutarti a comprendere e implementare il codice nel tuo progetto .NET.
+## Introduzione
+
+Ti sei mai trovato in una situazione in cui i caratteri scelti meticolosamente in un documento Word vengono sostituiti quando vengono visualizzati su un altro computer? Fastidioso, vero? Ciò accade a causa della sostituzione dei caratteri, un processo in cui il sistema sostituisce un carattere mancante con uno disponibile. Ma non preoccuparti! Con Aspose.Words per .NET, puoi gestire e controllare facilmente la sostituzione dei caratteri. In questo tutorial ti guideremo attraverso i passaggi per abilitare o disabilitare la sostituzione dei caratteri nei tuoi documenti Word, assicurandoti che i tuoi documenti abbiano sempre l'aspetto che desideri.
 
 ## Prerequisiti
-Prima di iniziare, assicurati di avere i seguenti elementi:
-- Una conoscenza pratica del linguaggio di programmazione C#
-- La libreria Aspose.Words per .NET installata nel tuo progetto
-- Un documento Word di cui desideri eseguire il rendering con o senza sostituzione del carattere
 
-## Passaggio 1: definire la directory dei documenti
- Innanzitutto, devi impostare il percorso della directory sulla posizione del tuo documento Word. Sostituire`"YOUR DOCUMENT DIRECTORY"` nel codice con il percorso appropriato.
+Prima di addentrarci nei passaggi, assicuriamoci di avere tutto ciò di cui hai bisogno:
+
+-  Aspose.Words per .NET: scarica la versione più recente[Qui](https://releases.aspose.com/words/net/).
+- Visual Studio: qualsiasi versione che supporti .NET.
+- Conoscenza di base di C#: questo ti aiuterà a seguire gli esempi di codifica.
+
+## Importa spazi dei nomi
+
+Per iniziare, assicurati di aver importato gli spazi dei nomi necessari nel tuo progetto. Aggiungi questi nella parte superiore del tuo file C#:
 
 ```csharp
-// Percorso della directory dei documenti
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Passaggio 2: carica il documento e configura le impostazioni del carattere
- Successivamente, caricheremo il documento Word di cui desideri eseguire il rendering e creeremo un'istanza del file`FontSettings` classe per gestire le impostazioni dei caratteri. Imposteremo la sostituzione del carattere predefinito specificando il nome del carattere in`DefaultFontName` e disabilitare l'override delle informazioni sui caratteri con`Enabled` impostato`false`.
+Ora suddividiamo il processo in passaggi semplici e gestibili.
+
+## Passaggio 1: imposta il tuo progetto
+
+Innanzitutto, imposta un nuovo progetto in Visual Studio e aggiungi un riferimento alla libreria Aspose.Words per .NET. Se non l'hai già fatto, scaricalo da[Sito web Aspose](https://releases.aspose.com/words/net/).
+
+## Passaggio 2: carica il documento
+
+Successivamente, carica il documento con cui vuoi lavorare. Ecco come farlo:
 
 ```csharp
-// Caricare il documento
-Document doc = new Document(dataDir + "Rendering.docx");
-
-// Configura le impostazioni dei caratteri
-FontSettings fontSettings = new FontSettings();
-fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
-fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
-
-// Applicare le impostazioni del carattere al documento
-doc.FontSettings = fontSettings;
-```
-
-## Passaggio 3: salva il documento renderizzato
-Infine, salveremo il documento renderizzato, che rispetterà le impostazioni di sostituzione del carattere definite.
-
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
-```
-
-
-### Codice sorgente di esempio per Abilitare Disabilitare la sostituzione dei caratteri utilizzando Aspose.Words per .NET 
-
-```csharp
-
 // Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
-FontSettings fontSettings = new FontSettings();
-fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
-fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
-doc.FontSettings = fontSettings;
-doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
+```
 
+ Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory dei documenti. Questo codice carica il documento in memoria in modo da poterlo manipolare.
+
+## Passaggio 3: configura le impostazioni dei caratteri
+
+ Ora creiamo un file`FontSettings` oggetto per gestire le impostazioni di sostituzione dei caratteri:
+
+```csharp
+FontSettings fontSettings = new FontSettings();
+```
+
+## Passaggio 4: imposta la sostituzione del carattere predefinito
+
+Imposta la sostituzione del carattere predefinito con un carattere di tua scelta. Questo carattere verrà utilizzato se il carattere originale non è disponibile:
+
+```csharp
+fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
+```
+
+In questo esempio, utilizziamo Arial come carattere predefinito.
+
+## Passaggio 5: disabilita la sostituzione delle informazioni sui caratteri
+
+Per disabilitare la sostituzione delle informazioni sui caratteri, che impedisce al sistema di sostituire i caratteri mancanti con quelli disponibili, utilizzare il seguente codice:
+
+```csharp
+fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
+```
+
+## Passaggio 6: applicare le impostazioni dei caratteri al documento
+
+Ora applica queste impostazioni al tuo documento:
+
+```csharp
+doc.FontSettings = fontSettings;
+```
+
+## Passaggio 7: salva il documento
+
+Infine, salva il documento modificato. Puoi salvarlo nel formato che preferisci. Per questo tutorial, lo salveremo come PDF:
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 ```
 
 ## Conclusione
-In questo tutorial, abbiamo visto come abilitare o disabilitare la sostituzione dei caratteri in un documento Word durante il rendering con Aspose.Words per .NET. Controllando la sostituzione dei caratteri, puoi influenzare il modo in cui i caratteri mancanti vengono gestiti nei documenti renderizzati. Non esitare a utilizzare questa funzionalità per personalizzare la gestione dei caratteri nei tuoi documenti Word.
 
-### Domande frequenti
+Ed ecco qua! Seguendo questi passaggi, puoi facilmente controllare la sostituzione dei caratteri nei tuoi documenti Word utilizzando Aspose.Words per .NET. Ciò garantisce che i tuoi documenti mantengano l'aspetto previsto, indipendentemente da dove vengono visualizzati.
 
-#### D: Come posso abilitare la sostituzione dei caratteri in un documento Word con Aspose.Words?
+## Domande frequenti
 
-R: Per abilitare la sostituzione dei caratteri in un documento Word con Aspose.Words, è possibile utilizzare l'API per specificare i caratteri sostitutivi da utilizzare quando i caratteri richiesti non sono disponibili. Ciò garantirà una visualizzazione coerente del testo, anche senza i caratteri originali.
+### Posso utilizzare caratteri diversi da Arial per la sostituzione?
 
-#### D: È possibile disabilitare la sostituzione dei caratteri in un documento Word con Aspose.Words?
+ Assolutamente! Puoi specificare qualsiasi carattere disponibile sul tuo sistema modificando il nome del carattere nel file`DefaultFontName` proprietà.
 
-R: Sì, con Aspose.Words puoi disabilitare la sostituzione dei caratteri in un documento Word. Utilizzando l'API, è possibile impedire a Word di sostituire i caratteri richiesti con altri caratteri, mantenendo l'aspetto originale del testo.
+### Cosa succede se il carattere predefinito specificato non è disponibile?
 
-#### D: Cosa succede quando mancano i caratteri richiesti durante la sostituzione in un documento Word?
+Se il carattere predefinito non è disponibile, Aspose.Words utilizzerà un meccanismo di fallback del sistema per trovare un sostituto appropriato.
 
-R: Quando mancano i caratteri richiesti durante la sostituzione in un documento di Word, Aspose.Words può rilevare questo problema e fornire opzioni per risolverlo. Puoi scegliere di sostituire i caratteri mancanti con caratteri alternativi o includere i caratteri mancanti nel documento, garantendo la corretta visualizzazione.
+### Posso abilitare nuovamente la sostituzione dei caratteri dopo averla disabilitata?
 
-#### D: Come posso gestire i caratteri mancanti quando li sostituisco in un documento Word con Aspose.Words?
+ Sì, puoi attivare/disattivare il file`Enabled` proprietà di`FontInfoSubstitution` tornare a`true` se desideri abilitare nuovamente la sostituzione dei caratteri.
 
-R: Per gestire i caratteri mancanti durante la sostituzione in un documento Word con Aspose.Words, è possibile utilizzare l'API per rilevare i caratteri mancanti e fornire opzioni di risoluzione. Puoi scegliere di sostituire i caratteri mancanti con caratteri alternativi o includere i caratteri mancanti nel documento, a seconda delle tue esigenze.
+### C'è un modo per verificare quali caratteri vengono sostituiti?
 
-#### D: È importante controllare la sostituzione dei caratteri in un documento Word?
+Sì, Aspose.Words fornisce metodi per registrare e tenere traccia della sostituzione dei caratteri, consentendoti di vedere quali caratteri vengono sostituiti.
 
-R: Sì, è importante controllare la sostituzione dei caratteri in un documento Word per mantenere l'integrità visiva del testo. Utilizzando Aspose.Words per abilitare o disabilitare la sostituzione dei caratteri, è possibile garantire che vengano utilizzati i caratteri richiesti ed evitare problemi con caratteri mancanti o sostituiti.
+### Posso utilizzare questo metodo per altri formati di documenti oltre a DOCX?
+
+Decisamente! Aspose.Words supporta vari formati e puoi applicare queste impostazioni dei caratteri a qualsiasi formato supportato.

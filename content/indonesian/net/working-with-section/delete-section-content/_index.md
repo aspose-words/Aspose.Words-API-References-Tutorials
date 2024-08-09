@@ -64,7 +64,7 @@ Section section = doc.Sections[0];
 
 ## Langkah 4: Hapus Konten Bagian
 
-Sekarang, mari kita hapus konten di bagian yang diakses.
+Sekarang, mari hapus konten di bagian yang diakses.
 
 ```csharp
 section.ClearContent();

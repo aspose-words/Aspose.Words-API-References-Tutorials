@@ -29,7 +29,7 @@ using Aspose.Words;
 using Aspose.Words.WebExtensions;
 ```
 
-## Schritt für Schritt Anleitung
+## Schritt-für-Schritt-Anleitung
 
 Lassen Sie uns den Vorgang nun in leicht verständliche Schritte unterteilen.
 

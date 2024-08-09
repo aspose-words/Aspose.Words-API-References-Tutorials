@@ -131,7 +131,7 @@ builder.end_row()
 builder.end_table()
 ```
 
-## Encabezados y pies de pagina
+## Encabezados y pies de página
 
 Los encabezados y pies de página proporcionan información coherente en todas las páginas del documento:
 

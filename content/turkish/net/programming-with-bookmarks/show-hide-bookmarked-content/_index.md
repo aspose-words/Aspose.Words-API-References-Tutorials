@@ -9,7 +9,7 @@ url: /tr/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 ## giriiş
 
-Aspose.Words for .NET ile belge işleme dünyasına dalmaya hazır mısınız? İster belge görevlerini otomatikleştirmek isteyen bir geliştirici olun, ister yalnızca Word dosyalarını programlı olarak işlemeyi merak eden biri olun, doğru yerdesiniz. Bugün, Aspose.Words for .NET'i kullanarak bir Word belgesinde yer imlerine eklenmiş içeriğin nasıl gösterileceğini ve gizleneceğini inceleyeceğiz. Bu adım adım kılavuz, yer işaretlerine dayalı olarak içerik görünürlüğünü kontrol etme konusunda sizi profesyonel yapacaktır. Başlayalım!
+Aspose.Words for .NET ile belge işleme dünyasına dalmaya hazır mısınız? İster belge görevlerini otomatikleştirmek isteyen bir geliştirici olun, ister yalnızca Word dosyalarını programlı olarak işlemeyi merak eden biri olun, doğru yerdesiniz. Bugün, Aspose.Words for .NET'i kullanarak bir Word belgesinde yer imlerine eklenmiş içeriğin nasıl gösterileceğini ve gizleneceğini inceleyeceğiz. Bu adım adım kılavuz, yer işaretlerine dayalı olarak içerik görünürlüğünü kontrol etme konusunda sizi profesyonel yapacaktır. Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -114,7 +114,7 @@ Bu, belgeyi yaptığımız değişikliklerle birlikte kaydeder.
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesinde yer imlerine eklenmiş içeriği nasıl gösterip gizleyeceğinizi öğrendiniz. Bu güçlü araç, ister raporları otomatikleştiriyor olun, ister şablonlar oluşturuyor olun, ister yalnızca Word dosyalarıyla uğraşıyor olun, belge üzerinde değişiklik yapmayı çocuk oyuncağı haline getirir. Mutlu kodlama!
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesinde yer imlerine eklenmiş içeriği nasıl gösterip gizleyeceğinizi öğrendiniz. Bu güçlü araç, ister raporları otomatikleştiriyor olun, ister şablonlar oluşturuyor olun, ister yalnızca Word dosyalarıyla uğraşıyor olun, belge üzerinde değişiklik yapmayı çocuk oyuncağı haline getirir. Mutlu kodlama!
 
 ## SSS'ler
 

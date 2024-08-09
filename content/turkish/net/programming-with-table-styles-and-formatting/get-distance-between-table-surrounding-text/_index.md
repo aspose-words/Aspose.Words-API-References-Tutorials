@@ -78,7 +78,7 @@ Console.WriteLine("Distance from Left: " + table.DistanceLeft);
 
 ## Çözüm
 
-İşte buyur! Bu adımları izleyerek Aspose.Words for .NET'i kullanarak Word belgelerinizdeki bir tablo ile onu çevreleyen metin arasındaki mesafeleri kolayca alabilirsiniz. Bu basit ama güçlü teknik, belge düzeninizde ince ayar yapmanıza olanak tanıyarak onu daha okunabilir ve görsel olarak çekici hale getirir. Mutlu kodlama!
+Ve işte karşınızda! Bu adımları izleyerek Aspose.Words for .NET'i kullanarak Word belgelerinizdeki bir tablo ile onu çevreleyen metin arasındaki mesafeleri kolayca alabilirsiniz. Bu basit ama güçlü teknik, belge düzeninizde ince ayar yapmanıza olanak tanıyarak onu daha okunabilir ve görsel olarak çekici hale getirir. Mutlu kodlama!
 
 ## SSS'ler
 

@@ -49,7 +49,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
  Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real onde seus arquivos estão armazenados. Este caminho será usado para ler o arquivo DOCX e gravar o arquivo RTF convertido.
 
-## Etapa 2: carregar o documento DOCX
+## Etapa 2: carregue o documento DOCX
 
 Objetivo: Abra e carregue o arquivo DOCX que deseja converter.
 
@@ -94,7 +94,7 @@ Parabéns! Você aprendeu com sucesso como converter um arquivo DOCX para o form
 Sim, Aspose.Words suporta vários formatos, então você pode converter documentos de formatos como DOC, DOCX e HTML para RTF.
 
 ### Preciso de uma licença para usar o Aspose.Words?
- Embora você possa usar o Aspose.Words em modo de teste, para uso estendido ou projetos comerciais, você deve adquirir uma licença. Você pode obter um[licença temporária](https://purchase.aspose.com/temporary-license/) para avaliação.
+ Embora você possa usar o Aspose.Words em modo de teste, para uso prolongado ou projetos comerciais, você deve adquirir uma licença. Você pode obter um[licença temporária](https://purchase.aspose.com/temporary-license/) para avaliação.
 
 ### O que devo fazer se o resultado da conversão não for o esperado?
  Verifique seu documento de entrada para problemas de compatibilidade ou consulte o[Documentação Aspose.Words](https://reference.aspose.com/words/net/) para dicas de solução de problemas.
@@ -103,4 +103,4 @@ Sim, Aspose.Words suporta vários formatos, então você pode converter document
 Absolutamente! Integre esse código em seus aplicativos ou scripts para automatizar o processo de conversão como parte de seus fluxos de trabalho de gerenciamento de documentos.
 
 ### Onde posso encontrar mais ajuda se tiver problemas?
- Visite a[Fórum de suporte Aspose](https://forum.aspose.com/c/words/8) para ajuda e suporte da comunidade relacionado ao Aspose.Words.
+ Visite o[Fórum de suporte Aspose](https://forum.aspose.com/c/words/8) para ajuda e suporte da comunidade relacionado ao Aspose.Words.

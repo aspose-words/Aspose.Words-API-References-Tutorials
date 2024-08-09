@@ -86,7 +86,7 @@ doc.Save(dataDir + "WorkingWithPdfLoadOptions.LoadPageRangeOfPdf.pdf");
 
 ## Következtetés
 
-Tessék, itt van! Sikeresen betöltött egy adott oldaltartományt egy PDF-dokumentumból az Aspose.Words for .NET segítségével. Ezzel a nagy teljesítményű könyvtárral gyerekjáték a PDF-fájlok kezelése, lehetővé téve, hogy arra összpontosítson, ami igazán számít – robusztus és hatékony alkalmazások létrehozására. Akár egy kis projekten, akár egy nagyszabású vállalati megoldáson dolgozik, az Aspose.Words nélkülözhetetlen eszköz a .NET arzenáljában.
+Megvan! Sikeresen betöltött egy adott oldaltartományt egy PDF-dokumentumból az Aspose.Words for .NET segítségével. Ezzel a nagy teljesítményű könyvtárral gyerekjáték a PDF-fájlok kezelése, lehetővé téve, hogy arra összpontosítson, ami igazán számít – robusztus és hatékony alkalmazások létrehozására. Akár egy kis projekten, akár egy nagyszabású vállalati megoldáson dolgozik, az Aspose.Words nélkülözhetetlen eszköz a .NET arzenáljában.
 
 ## GYIK
 

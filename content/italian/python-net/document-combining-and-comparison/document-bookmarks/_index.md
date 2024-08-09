@@ -8,7 +8,7 @@ weight: 11
 url: /it/python-net/document-combining-and-comparison/document-bookmarks/
 ---
 
-## introduzione
+## Introduzione
 
 Nell'era digitale di oggi, gestire documenti di grandi dimensioni è diventato un compito comune. Scorrere infinite pagine per trovare informazioni specifiche può richiedere molto tempo ed essere frustrante. I segnalibri dei documenti vengono in soccorso consentendoti di creare segnali virtuali all'interno del tuo documento. Questi segnali, noti anche come segnalibri, fungono da scorciatoie a sezioni specifiche, consentendoti di passare immediatamente al contenuto di cui hai bisogno.
 

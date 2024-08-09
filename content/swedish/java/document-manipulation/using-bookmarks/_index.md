@@ -30,7 +30,7 @@ builder.endBookmark("My Bookmark");
 
 ## Steg 2: Få åtkomst till bokmärken
 
-Du kan komma åt bokmärken i ett dokument med hjälp av deras index eller namn. Här är hur:
+Du kan komma åt bokmärken i ett dokument med hjälp av deras index eller namn. Så här gör du:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Bookmarks.docx");
@@ -38,7 +38,7 @@ Document doc = new Document("Your Directory Path" + "Bookmarks.docx");
 // Efter index:
 Bookmark bookmark1 = doc.getRange().getBookmarks().get(0);
 
-// Vid namn:
+// Efter namn:
 Bookmark bookmark2 = doc.getRange().getBookmarks().get("MyBookmark3");
 ```
 
@@ -57,7 +57,7 @@ bookmark.setText("This is new bookmarked text.");
 
 ## Steg 4: Arbeta med bokmärkt text
 
-Du kan kopiera bokmärkt text och lägga till den i ett annat dokument. Här är hur:
+Du kan kopiera bokmärkt text och lägga till den i ett annat dokument. Så här gör du:
 
 ```java
 Document srcDoc = new Document("Your Directory Path" + "Bookmarks.docx");

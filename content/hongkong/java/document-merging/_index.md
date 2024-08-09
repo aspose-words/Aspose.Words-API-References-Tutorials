@@ -29,7 +29,7 @@ url: /zh-hant/java/document-merging/
 ### [組合和克隆文檔](./combining-cloning-documents/)
 了解如何使用 Aspose.Words 在 Java 中輕鬆組合和複製文件。本逐步指南涵蓋了您需要了解的所有內容。
 ### [加入和附加文檔](./joining-appending-documents/)
-了解如何使用 Aspose.Words for Java 加入和附加文件。包含程式碼範例的逐步指南，可實現高效率的文件操作。
+了解如何使用 Aspose.Words for Java 加入和追加文件。包含程式碼範例的逐步指南，可實現高效率的文件操作。
 ### [比較文件的差異](./comparing-documents-for-differences/)
 了解如何使用 Java 中的 Aspose.Words 比較文件的差異。我們的逐步指南可確保準確的文件管理。
 ### [使用 DocumentBuilder 合併文檔](./merging-documents-documentbuilder/)

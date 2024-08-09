@@ -22,7 +22,7 @@ Bevor wir mit dem Programmieren beginnen, stellen wir sicher, dass wir alles hab
 
 ## Namespaces importieren
 
-Bevor Sie die Aspose.Words-Bibliothek für .NET verwenden können, müssen Sie die erforderlichen Namespaces in Ihr Projekt einbinden. Das ist, als würden Sie Ihrem Code sagen: „Hey, ich muss ein paar Spezialwerkzeuge verwenden, also lass sie uns einbinden.“
+Bevor Sie die Aspose.Words für .NET-Bibliothek verwenden können, müssen Sie die erforderlichen Namespaces in Ihr Projekt einbinden. Das ist, als würden Sie Ihrem Code sagen: „Hey, ich muss ein paar Spezialwerkzeuge verwenden, also lass sie uns einbinden.“
 
 ```csharp
 using Aspose.Words;
@@ -36,7 +36,7 @@ Als Erstes müssen Sie Ihr Projekt in Visual Studio einrichten. Wenn Sie bereits
 
 1. Öffnen Sie Visual Studio: Starten Sie Visual Studio und erstellen Sie ein neues C#-Konsolen-App-Projekt.
 2.  Benennen Sie Ihr Projekt: Geben Sie Ihrem Projekt einen aussagekräftigen Namen. So etwas wie`CloneWordDocumentDemo` wird tun.
-3.  Aspose.Words-Referenz hinzufügen: Klicken Sie mit der rechten Maustaste auf Ihr Projekt im Solution Explorer und wählen Sie`Manage NuGet Packages` und suchen Sie nach`Aspose.Words`. Es installieren.
+3.  Aspose.Words-Referenz hinzufügen: Klicken Sie mit der rechten Maustaste auf Ihr Projekt im Solution Explorer und wählen Sie`Manage NuGet Packages` und suchen Sie nach`Aspose.Words`. Installieren Sie es.
 
 ## Schritt 2: Bereiten Sie Ihre Umgebung vor
 
@@ -115,4 +115,4 @@ Natürlich! Sobald Sie ein Dokument geklont haben, können Sie es wie jedes ande
 
 ### Wo finde ich weitere Tutorials zu Aspose.Words für .NET?
 
- Besuche die[Dokumentation](https://reference.aspose.com/words/net/) und das[Aspose-Community-Foren](https://forum.aspose.com/c/words/8) für weitere Ressourcen und Unterstützung.
+ Schauen Sie sich die[Dokumentation](https://reference.aspose.com/words/net/) und die[Aspose-Community-Foren](https://forum.aspose.com/c/words/8) für weitere Ressourcen und Unterstützung.

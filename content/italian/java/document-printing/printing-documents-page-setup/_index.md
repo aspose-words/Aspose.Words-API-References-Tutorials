@@ -8,13 +8,13 @@ weight: 11
 url: /it/java/document-printing/printing-documents-page-setup/
 ---
 
-## introduzione
+## Introduzione
 
 La stampa di documenti con un'impostazione precisa della pagina è fondamentale quando si tratta di creare report, fatture o qualsiasi materiale stampato dall'aspetto professionale. Aspose.Words per Java semplifica questo processo per gli sviluppatori Java, consentendo loro di controllare ogni aspetto del layout della pagina.
 
 ## Impostazione dell'ambiente di sviluppo
 
-Prima di iniziare, assicuriamoci di disporre di un ambiente di sviluppo adeguato. Avrai bisogno:
+Prima di iniziare, assicuriamoci di disporre di un ambiente di sviluppo adeguato. Avrai bisogno di:
 
 - Kit di sviluppo Java (JDK)
 - Ambiente di sviluppo integrato (IDE) come Eclipse o IntelliJ IDEA
@@ -26,7 +26,7 @@ Inizia creando un nuovo progetto Java nell'IDE scelto. Dategli un nome significa
 
 ## Aggiunta di Aspose.Words per Java al tuo progetto
 
-Per utilizzare Aspose.Words per Java, devi aggiungere la libreria al tuo progetto. Segui questi passi:
+Per utilizzare Aspose.Words per Java, devi aggiungere la libreria al tuo progetto. Segui questi passaggi:
 
 1.  Scarica la libreria Aspose.Words per Java da[Qui](https://releases.aspose.com/words/java/).
 

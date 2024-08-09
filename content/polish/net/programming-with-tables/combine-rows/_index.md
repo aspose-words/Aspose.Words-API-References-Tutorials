@@ -84,13 +84,13 @@ Na koniec zapisz zmodyfikowany dokument. Ten krok gwarantuje, że zmiany zostan�
 doc.Save(dataDir + "WorkingWithTables.CombineRows.docx");
 ```
 
-I to wszystko! Pomyślnie połączyłeś wiersze z dwóch tabel w jedną za pomocą Aspose.Words dla .NET.
+I tyle! Pomyślnie połączyłeś wiersze z dwóch tabel w jedną za pomocą Aspose.Words dla .NET.
 
 ## Wniosek
 
 Łączenie wierszy z wielu tabel w jedną może znacznie uprościć zadania związane z przetwarzaniem dokumentów. Dzięki Aspose.Words dla .NET zadanie to staje się proste i wydajne. Postępując zgodnie z tym przewodnikiem krok po kroku, możesz łatwo łączyć tabele i usprawniać przepływ pracy.
 
-Jeśli potrzebujesz więcej informacji lub masz jakieś pytania,[Dokumentacja Aspose.Words](https://reference.aspose.com/words/net/) jest doskonałym źródłem. Możesz także sprawdzić opcje zakupu[Tutaj](https://purchase.aspose.com/buy) lub zdobądź[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) dla testów.
+Jeśli potrzebujesz więcej informacji lub masz jakieś pytania,[Dokumentacja Aspose.Words](https://reference.aspose.com/words/net/) jest doskonałym źródłem. Możesz także sprawdzić opcje zakupu[Tutaj](https://purchase.aspose.com/buy) lub zdobądź[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) do testowania.
 
 ## Często zadawane pytania
 

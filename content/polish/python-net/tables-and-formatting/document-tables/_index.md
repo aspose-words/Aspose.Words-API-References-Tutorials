@@ -16,7 +16,7 @@ Tabele są podstawowym narzędziem prezentacji uporządkowanych danych w dokumen
 
 ## Znaczenie optymalizacji tabeli:
 
-Efektywna optymalizacja tabel znacząco przyczynia się do lepszego zrozumienia danych. Umożliwia czytelnikom szybkie i dokładne wydobywanie spostrzeżeń ze złożonych zbiorów danych. Dobrze zoptymalizowana tabela zwiększa atrakcyjność wizualną i czytelność całego dokumentu, co czyni ją niezbędną umiejętnością dla profesjonalistów z różnych branż.
+Efektywna optymalizacja tabel znacząco przyczynia się do lepszego zrozumienia danych. Umożliwia czytelnikom szybkie i dokładne wydobywanie spostrzeżeń ze złożonych zbiorów danych. Dobrze zoptymalizowana tabela zwiększa atrakcyjność wizualną i czytelność całego dokumentu, dzięki czemu jest to niezbędna umiejętność dla profesjonalistów z różnych branż.
 
 ## Pierwsze kroki z Aspose.Words dla Pythona:
 
@@ -92,7 +92,7 @@ cell.cell_format.shading.background_pattern_color = Color.light_gray
 
 ## Dodawanie nagłówków i stopek do tabel:
 
- Tabele mogą zyskać na nagłówkach i stopkach, które dostarczają kontekstu lub dodatkowych informacji. Możesz dodawać nagłówki i stopki do tabel za pomocą`Table.title`I`Table.description` nieruchomości.
+ Tabele mogą zyskać na nagłówkach i stopkach, które dostarczają kontekstu lub dodatkowych informacji. Możesz dodawać nagłówki i stopki do tabel za pomocą`Table.title`I`Table.description` właściwości.
 
 ```python
 # Set table title (header)

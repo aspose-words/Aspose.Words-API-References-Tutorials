@@ -68,7 +68,7 @@ series1.Name = "Chart Series Name 2";
 
 ## Bước 5: Làm mịn các đường kẻ
 
-Bạn muốn những đường nét đó trông mịn màng và bóng bẩy? Hãy thực hiện điều đó bằng cách sử dụng spline Catmull-Rom.
+Bạn muốn những đường nét đó trông mịn màng và bóng bẩy? Hãy thực hiện điều đó bằng cách sử dụng splines Catmull-Rom.
 
 ```csharp
 series0.Smooth = true;
@@ -104,7 +104,7 @@ doc.Save(dataDir + "WorkingWithCharts.SingleChartSeries.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã tùy chỉnh thành công một chuỗi biểu đồ trong tài liệu Word bằng Aspose.Words for .NET. Khá tuyệt phải không? Đây chỉ là đỉnh của tảng băng trôi; còn rất nhiều điều bạn có thể làm với Aspose.Words. Vì vậy, hãy tiếp tục thử nghiệm và tạo ra những tài liệu tuyệt vời!
+Và bạn có nó! Bạn đã tùy chỉnh thành công một chuỗi biểu đồ trong tài liệu Word bằng Aspose.Words for .NET. Khá tuyệt phải không? Đây chỉ là phần nổi của tảng băng trôi; còn rất nhiều điều bạn có thể làm với Aspose.Words. Vì vậy, hãy tiếp tục thử nghiệm và tạo ra những tài liệu tuyệt vời!
 
 ## Câu hỏi thường gặp
 

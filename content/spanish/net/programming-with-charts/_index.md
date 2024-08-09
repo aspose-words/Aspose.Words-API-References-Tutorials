@@ -11,7 +11,7 @@ Los tutoriales de programación de gráficos de Aspose.Words para .NET ofrecen u
 
 En estos tutoriales, aprenderá a crear diferentes tipos de gráficos, como gráficos de barras, gráficos circulares, gráficos de áreas, gráficos de líneas, etc. También aprenderá a personalizar elementos de gráficos como títulos, leyendas, etiquetas de datos y ejes. Los tutoriales le mostrarán cómo manipular los datos del gráfico agregando, modificando o eliminando series de datos.
 
-Con estos tutoriales, podrá mejorar sus documentos de Word agregando gráficos visualmente atractivos e informativos. Aprenderá cómo aprovechar las funciones gráficas avanzadas de Aspose.Words para .NET e integrarlas de manera efectiva en sus aplicaciones. Explore estos tutoriales para ampliar sus habilidades gráficas en Aspose.Words.
+Con estos tutoriales, podrá mejorar sus documentos de Word agregando gráficos visualmente atractivos e informativos. Aprenderá cómo aprovechar las funciones de gráficos avanzadas de Aspose.Words para .NET e integrarlas de manera efectiva en sus aplicaciones. Explore estos tutoriales para ampliar sus habilidades gráficas en Aspose.Words.
 
  ## Tutoriales
 | Título | Descripción |
@@ -33,4 +33,4 @@ Con estos tutoriales, podrá mejorar sus documentos de Word agregando gráficos 
 | [Personalizar la etiqueta de datos del gráfico](./chart-data-label/) | Aprenda a personalizar etiquetas de datos de gráficos usando Aspose.Words para .NET en una guía paso a paso. Perfecto para desarrolladores .NET. |
 | [Establecer opciones predeterminadas para etiquetas de datos en un gráfico](./default-options-for-data-labels/) | Aprenda a configurar opciones predeterminadas para etiquetas de datos en un gráfico usando Aspose.Words para .NET. Siga nuestra guía paso a paso para crear y personalizar gráficos sin esfuerzo. |
 | [Personalice un único punto de datos de un gráfico en un gráfico](./single-chart-data-point/) | Aprenda a personalizar puntos de datos de gráficos únicos usando Aspose.Words para .NET en una guía detallada paso a paso. Mejore sus gráficos con marcadores y tamaños únicos. |
-| [Personalizar series de gráficos únicos en un gráfico](./single-chart-series/) | Aprenda a personalizar series de gráficos individuales en un documento de Word usando Aspose.Words para .NET. Siga nuestra guía paso a paso para disfrutar de una experiencia perfecta. |
+| [Personalizar series de gráficos únicos en un gráfico](./single-chart-series/) | Aprenda a personalizar series de gráficos únicos en un documento de Word usando Aspose.Words para .NET. Siga nuestra guía paso a paso para disfrutar de una experiencia perfecta. |

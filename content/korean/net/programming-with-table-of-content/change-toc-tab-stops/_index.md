@@ -15,11 +15,11 @@ Word 문서에서 목차(TOC)를 멋지게 만드는 방법이 궁금하신가�
 
 시작하기 전에 필요한 모든 것이 갖추어져 있는지 확인하십시오.
 
-1.  .NET용 Aspose.Words: 다음을 수행할 수 있습니다.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+1.  .NET용 Aspose.Words: 다음을 수행할 수 있습니다.[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 2. 개발 환경: Visual Studio 또는 C# 호환 IDE.
 3. Word 문서: 특히 TOC가 포함된 문서입니다.
 
-다 알아냈어? 엄청난! 하자 롤.
+다 알아냈어? 엄청난! 굴러 가자.
 
 ## 네임스페이스 가져오기
 
@@ -108,7 +108,7 @@ doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 ## FAQ
 
 ### 다양한 TOC 수준에 대한 탭 정지를 개별적으로 수정할 수 있습니까?
-그래 넌 할수있어! 각 특정 TOC 수준(Toc1, Toc2 등)을 확인하고 그에 따라 조정하세요.
+예, 가능합니다! 각 특정 TOC 수준(Toc1, Toc2 등)을 확인하고 그에 따라 조정하세요.
 
 ### 내 문서에 목차가 여러 개 있으면 어떻게 되나요?
 코드는 모든 TOC 스타일 단락을 검색하므로 문서에 있는 모든 TOC를 수정합니다.
@@ -120,4 +120,4 @@ doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 예, 새 탭 정지를 추가할 때 다양한 정렬과 지시선 스타일을 지정할 수 있습니다.
 
 ### .NET용 Aspose.Words를 사용하려면 라이선스가 필요합니까?
- 예, 평가판 기간 이후에 Aspose.Words for .NET을 사용하려면 유효한 라이센스가 필요합니다. 당신은 얻을 수 있습니다[임시 면허증](https://purchase.aspose.com/temporary-license/) 또는[하나 사](https://purchase.aspose.com/buy).
+ 예, 평가판 기간 이후에 Aspose.Words for .NET을 사용하려면 유효한 라이센스가 필요합니다. 당신은 얻을 수 있습니다[임시 면허증](https://purchase.aspose.com/temporary-license/) 또는[하나 사다](https://purchase.aspose.com/buy).

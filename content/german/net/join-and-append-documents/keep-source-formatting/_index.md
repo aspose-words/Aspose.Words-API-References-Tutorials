@@ -94,4 +94,4 @@ Ja, Aspose.Words unterstützt .NET Core, sodass Sie es plattformübergreifend ve
 Aspose.Words bietet effiziente APIs für die Arbeit mit großen Dokumenten, einschließlich Funktionen zur Seitennummerierung und Speicherverwaltung.
 
 ### Wo finde ich weitere Ressourcen und Support für Aspose.Words?
- Besuche den[Aspose.Words für .NET-Dokumentation](https://reference.aspose.com/words/net/) für detaillierte API-Referenzen, Beispiele und Anleitungen.
+ Besuchen Sie die[Aspose.Words für .NET-Dokumentation](https://reference.aspose.com/words/net/) für detaillierte API-Referenzen, Beispiele und Anleitungen.

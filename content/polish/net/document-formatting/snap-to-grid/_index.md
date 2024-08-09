@@ -137,4 +137,4 @@ Tak, chociaż do celów próbnych możesz używać licencji tymczasowej, w celu 
 Nie, włączenie opcji Przyciągaj do siatki nie wpływa znacząco na wydajność dokumentu.
 
 ### Gdzie mogę znaleźć więcej informacji na temat Aspose.Words dla .NET?
- Odwiedzić[dokumentacja](https://reference.aspose.com/words/net/)szczegółowe informacje i przykłady.
+ Odwiedź[dokumentacja](https://reference.aspose.com/words/net/)szczegółowe informacje i przykłady.

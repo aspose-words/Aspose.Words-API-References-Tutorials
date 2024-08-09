@@ -15,7 +15,7 @@ A Word dokumentumok PDF formátumba konvertálása gyakori követelmény a kül�
 
 Mielőtt elkezdenénk, győződjünk meg arról, hogy mindennel rendelkezik, amire szüksége van:
 
-1.  Aspose.Words for .NET: Győződjön meg arról, hogy a legújabb verzióval rendelkezik. tudsz[töltse le itt](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Győződjön meg arról, hogy a legújabb verzióval rendelkezik. Tudod[töltse le itt](https://releases.aspose.com/words/net/).
 2. Fejlesztői környezet: Visual Studio vagy bármely más IDE, amely támogatja a .NET fejlesztést.
 3. Alapvető C# ismerete: Az alapok megértése segít követni a kódrészleteket.
 
@@ -40,7 +40,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Ebben a lépésben meghatározzuk a dokumentumkönyvtárunk elérési útját, és betöltjük a "Rendering.docx" nevű Word dokumentumot egy`Document` tárgy.
+ Ebben a lépésben meghatározzuk a dokumentumkönyvtárunk elérési útját, és betöltjük a "Rendering.docx" nevű Word dokumentumot egy`Document` objektum.
 
 ## 2. lépés: Konfigurálja a PDF mentési beállításokat
 

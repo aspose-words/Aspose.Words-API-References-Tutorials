@@ -108,7 +108,7 @@ doc.Save(dataDir + "WorkingWithCharts.InsertAreaChart.docx");
 ### 可以自定义图表的外观吗？
 当然！Aspose.Words for .NET 提供了大量选项来自定义图表的外观。
 
-### 我可以向单个 Word 文档添加多个图表吗？
+### 我可以在单个 Word 文档中添加多个图表吗？
 是的，您可以在一个 Word 文档中插入所需数量的图表。
 
 ### Aspose.Words for .NET 是否支持其他图表类型？

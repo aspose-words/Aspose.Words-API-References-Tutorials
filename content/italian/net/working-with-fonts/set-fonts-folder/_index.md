@@ -2,75 +2,99 @@
 title: Imposta la cartella dei caratteri
 linktitle: Imposta la cartella dei caratteri
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come impostare la directory dei caratteri in Aspose.Words per .NET e garantire la disponibilità dei caratteri utilizzati nei tuoi documenti.
+description: Scopri come impostare una cartella di caratteri personalizzati in Aspose.Words per .NET per garantire che i tuoi documenti Word vengano visualizzati correttamente senza caratteri mancanti.
 type: docs
 weight: 10
 url: /it/net/working-with-fonts/set-fonts-folder/
 ---
-In questo tutorial, ti mostreremo come impostare la directory dei caratteri in Aspose.Words per .NET. Imparerai come specificare la directory contenente i caratteri utilizzati nel tuo documento Word.
+## Introduzione
+
+Hai mai riscontrato problemi con caratteri mancanti mentre lavoravi con documenti Word nella tua applicazione .NET? Beh, non sei solo. L'impostazione della cartella dei caratteri corretta può risolvere questo problema senza problemi. In questa guida ti spiegheremo come impostare la cartella dei caratteri utilizzando Aspose.Words per .NET. Immergiamoci!
 
 ## Prerequisiti
-Prima di iniziare, assicurati di avere i seguenti elementi:
-- Una conoscenza pratica del linguaggio di programmazione C#
-- La libreria Aspose.Words per .NET installata nel tuo progetto
+
+Prima di iniziare, assicurati di avere quanto segue:
+
+- Visual Studio installato sul tuo computer
+- Configurazione di .NET Framework
+-  Aspose.Words per la libreria .NET. Se non l'hai già fatto, puoi scaricarlo da[Qui](https://releases.aspose.com/words/net/).
+
+## Importa spazi dei nomi
+
+Innanzitutto, devi importare gli spazi dei nomi necessari per lavorare con Aspose.Words. Aggiungi le seguenti righe nella parte superiore del file di codice:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fonts;
+```
+
+L'impostazione della cartella dei caratteri è semplice se segui attentamente questi passaggi.
 
 ## Passaggio 1: definire la directory dei documenti
-Inizia impostando il percorso della directory sulla posizione del tuo documento Word. Sostituire`"YOUR DOCUMENT DIRECTORY"` nel codice con il percorso appropriato.
+
+Prima di ogni altra cosa, definisci il percorso della directory dei tuoi documenti. Questa directory conterrà i tuoi documenti Word e i caratteri che desideri utilizzare.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## Passaggio 2: imposta la directory dei caratteri
- Crea un'istanza di`FontSettings` classe e utilizzare il file`SetFontsFolder` metodo per specificare la directory contenente i caratteri. Sostituire`"Fonts"` con il nome della directory dei caratteri effettiva.
-
-```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.SetFontsFolder(dataDir + "Fonts", false);
-```
-
-## Passaggio 3: carica il documento con le impostazioni dei caratteri
- Usa il`LoadOptions` classe per specificare le impostazioni dei caratteri nel file`FontSettings` opzione. Quindi utilizzare il`Document` class per caricare il documento utilizzando queste opzioni.
-
-```csharp
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.FontSettings = fontSettings;
-Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
-
-```
-
-### Codice sorgente di esempio per la cartella Imposta caratteri utilizzando Aspose.Words per .NET 
-
-```csharp
-
 // Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-FontSettings fontSettings = new FontSettings();
-fontSettings.SetFontsFolder(dataDir + "Fonts", false);
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.FontSettings = fontSettings;
-Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
-
 ```
 
+ Assicurati di sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory.
+
+## Passaggio 2: inizializzare FontSettings
+
+ Ora è necessario inizializzare il file`FontSettings` oggetto. Questo oggetto consente di specificare cartelle di caratteri personalizzate.
+
+```csharp
+FontSettings fontSettings = new FontSettings();
+```
+
+## Passaggio 3: imposta la cartella dei caratteri
+
+ Utilizzando il`SetFontsFolder` metodo del`FontSettings` oggetto, specificare la cartella in cui sono archiviati i caratteri personalizzati.
+
+```csharp
+fontSettings.SetFontsFolder(dataDir + "Fonts", false);
+```
+
+ Qui,`dataDir + "Fonts"` punta alla cartella denominata "Fonts" nella directory dei documenti. Il secondo parametro,`false`, indica che la cartella non è ricorsiva.
+
+## Passaggio 4: crea opzioni di caricamento
+
+ Successivamente, crea un'istanza di`LoadOptions` classe. Questa lezione ti aiuterà a caricare il documento con le impostazioni del carattere specificate.
+
+```csharp
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.FontSettings = fontSettings;
+```
+
+## Passaggio 5: caricare il documento
+
+ Infine, carica il documento Word utilizzando il file`Document` classe e il`LoadOptions` oggetto.
+
+```csharp
+Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
+```
+
+ Assicurati di questo`"Rendering.docx"` è il nome del documento Word. Puoi sostituirlo con il nome del tuo file.
+
 ## Conclusione
-Congratulazioni! Ora sai come impostare la directory dei caratteri in Aspose.Words per .NET. È possibile utilizzare questa funzionalità per garantire la disponibilità dei caratteri utilizzati nel documento e per garantire la coerenza nella visualizzazione dei caratteri.
 
-### Domande frequenti
+Ed ecco qua! Seguendo questi passaggi, puoi facilmente impostare una cartella di caratteri personalizzata in Aspose.Words per .NET, assicurando che tutti i tuoi caratteri siano visualizzati correttamente. Questa semplice configurazione può farti risparmiare un sacco di grattacapi e far sì che i tuoi documenti abbiano esattamente l'aspetto che desideri.
 
-#### D: Come posso impostare una cartella di caratteri personalizzata in Aspose.Words?
+## Domande frequenti
 
- R: Per impostare una cartella di caratteri personalizzati in Aspose.Words, puoi utilizzare il file`FontsFolder` classe e il`SetFontsFolders` metodo che specifica il percorso della cartella contenente i caratteri.
+### Perché devo impostare una cartella di caratteri personalizzata?
+L'impostazione di una cartella di caratteri personalizzata garantisce che tutti i caratteri utilizzati nei documenti di Word vengano visualizzati correttamente, evitando problemi di caratteri mancanti.
 
-#### D: Posso impostare più cartelle di caratteri in Aspose.Words?
+### Posso impostare più cartelle di caratteri?
+ Sì, puoi usare il`SetFontsFolders` metodo per specificare più cartelle.
 
- R: Sì, puoi impostare più cartelle di caratteri in Aspose.Words chiamando il file`SetFontsFolders` più volte con i percorsi delle diverse cartelle di caratteri che desideri utilizzare.
+### Cosa succede se un font non viene trovato?
+Aspose.Words proverà a sostituire il carattere mancante con uno simile tra i caratteri di sistema.
 
-#### D: Cosa succede se un font utilizzato nel documento non è presente nelle cartelle dei font definite?
+### Aspose.Words è compatibile con .NET Core?
+Sì, Aspose.Words supporta .NET Core insieme a .NET Framework.
 
-R: Se un carattere utilizzato nel documento non è presente nelle cartelle dei caratteri definite in Aspose.Words, verrà utilizzato invece un carattere sostitutivo. Ciò garantisce che il testo nel documento venga sempre visualizzato correttamente, anche se il carattere originale non è disponibile.
-
-#### D: Le cartelle dei caratteri definite in Aspose.Words hanno la priorità sui caratteri installati nel sistema?
-
-R: Sì, le cartelle dei caratteri definite in Aspose.Words hanno la precedenza sui caratteri installati nel sistema. Ciò significa che se sia nelle cartelle dei font definite che nei font di sistema è presente un font con lo stesso nome, durante l'elaborazione dei documenti Word verrà utilizzata la versione presente nella cartella dei font.
+### Dove posso ottenere supporto se riscontro problemi?
+ Puoi ottenere supporto da[Forum di supporto di Aspose.Words](https://forum.aspose.com/c/words/8).

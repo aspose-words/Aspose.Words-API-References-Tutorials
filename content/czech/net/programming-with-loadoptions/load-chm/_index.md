@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-loadoptions/load-chm/
 ---
-## Úvod
+## Zavedení
 
 Pokud jde o integraci souborů CHM do dokumentu aplikace Word, Aspose.Words for .NET nabízí bezproblémové řešení. Ať už vytváříte technickou dokumentaci nebo slučujete různé zdroje do jednoho dokumentu, tento výukový program vás provede každým krokem jasným a poutavým způsobem.
 
@@ -99,7 +99,7 @@ doc.Save(outputPath);
 
 ## Závěr
 
-Gratulujeme! Úspěšně jste nahráli soubor CHM do dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato výkonná knihovna usnadňuje integraci různých formátů souborů do dokumentů aplikace Word a poskytuje robustní řešení pro vaše potřeby dokumentace.
+Gratuluji! Úspěšně jste nahráli soubor CHM do dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato výkonná knihovna usnadňuje integraci různých formátů souborů do dokumentů aplikace Word a poskytuje robustní řešení pro vaše potřeby v oblasti dokumentace.
 
 ## FAQ
 

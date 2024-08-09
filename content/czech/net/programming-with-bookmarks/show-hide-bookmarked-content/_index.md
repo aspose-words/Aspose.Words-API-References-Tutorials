@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
-## Úvod
+## Zavedení
 
 Jste připraveni ponořit se do světa manipulace s dokumenty s Aspose.Words pro .NET? Ať už jste vývojář, který chce automatizovat úlohy s dokumenty, nebo jen někdo, kdo se zajímá o práci se soubory Wordu programově, jste na správném místě. Dnes prozkoumáme, jak zobrazit a skrýt obsah označený záložkou v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento podrobný průvodce z vás udělá profesionála v ovládání viditelnosti obsahu na základě záložek. Začněme!
 
@@ -16,7 +16,7 @@ Jste připraveni ponořit se do světa manipulace s dokumenty s Aspose.Words pro
 Než se vrhneme na to, co je v pořádku, je několik věcí, které budete potřebovat:
 
 1. Visual Studio: Jakákoli verze kompatibilní s .NET.
-2.  Aspose.Words pro .NET: Stáhněte si ji[tady](https://releases.aspose.com/words/net/).
+2.  Aspose.Words pro .NET: Stáhněte si ji[zde](https://releases.aspose.com/words/net/).
 3. Základní porozumění C#: Pokud umíte napsat jednoduchý program „Hello World“, můžete začít.
 4. Dokument aplikace Word se záložkami: Pro tento výukový program použijeme vzorový dokument se záložkami.
 
@@ -48,7 +48,7 @@ Do projektu budete muset přidat Aspose.Words for .NET. Můžete to udělat pomo
 2. Vyhledejte "Aspose.Words".
 3. Nainstalujte balíček.
 
-Skvělý! Nyní, když je náš projekt nastaven, přejděme k načítání našeho dokumentu.
+Velký! Nyní, když je náš projekt nastaven, přejděme k načítání našeho dokumentu.
 
 ## Krok 2: Vložení dokumentu
 
@@ -118,7 +118,7 @@ tady to máte! Právě jste se naučili, jak zobrazit a skrýt obsah se záložk
 
 ## FAQ
 
-### Mohu přepínat více záložek najednou?
+### Mohu přepnout více záložek najednou?
  Ano, můžete zavolat na`ShowHideBookmarkedContent` pro každou záložku, kterou chcete přepnout.
 
 ### Ovlivňuje skrytí obsahu strukturu dokumentu?
@@ -128,7 +128,7 @@ Ne, skrytí obsahu ovlivní pouze jeho viditelnost. Obsah zůstává v dokumentu
 Tato metoda konkrétně přepíná spouštění textu. U ostatních typů obsahu budete muset upravit logiku procházení uzlu.
 
 ### Je Aspose.Words for .NET zdarma?
- Aspose.Words nabízí bezplatnou zkušební verzi[tady](https://releases.aspose.com/) , ale pro produkční použití je vyžadována plná licence. Můžete si jej zakoupit[tady](https://purchase.aspose.com/buy).
+ Aspose.Words nabízí bezplatnou zkušební verzi[zde](https://releases.aspose.com/) , ale pro produkční použití je vyžadována plná licence. Můžete si jej zakoupit[zde](https://purchase.aspose.com/buy).
 
 ### Jak mohu získat podporu, pokud narazím na problémy?
- Můžete získat podporu od komunity Aspose[tady](https://forum.aspose.com/c/words/8).
+ Můžete získat podporu od komunity Aspose[zde](https://forum.aspose.com/c/words/8).

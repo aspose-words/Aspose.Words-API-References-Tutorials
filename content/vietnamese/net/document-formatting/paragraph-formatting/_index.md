@@ -9,7 +9,7 @@ url: /vi/net/document-formatting/paragraph-formatting/
 ---
 ## Giới thiệu
 
-Bạn đã bao giờ thấy mình bị mắc kẹt trong cuộc chiến không hồi kết với định dạng tài liệu Word chưa? Bạn không cô đơn. Tất cả chúng ta đều đã ở đó, loay hoay với việc cài đặt đoạn văn, chỉ để kết thúc bằng một tài liệu trông giống một trò chơi ghép hình hơn là một báo cáo chuyên nghiệp. Nhưng đoán xem? Có một giải pháp kỳ diệu cho mọi vấn đề về định dạng của bạn – Aspose.Words for .NET. Hãy tưởng tượng có một công cụ có thể định dạng các đoạn văn của bạn chính xác theo cách bạn muốn mà không phải đau đầu như thường lệ. Nghe có vẻ mơ mộng phải không? Chà, hãy sẵn sàng vì chúng ta sắp đi sâu vào thế giới định dạng đoạn văn với Aspose.Words dành cho .NET, làm cho tài liệu của bạn trông bóng bẩy và chuyên nghiệp chỉ với một vài dòng mã.
+Bạn đã bao giờ thấy mình bị mắc kẹt trong cuộc chiến không hồi kết với định dạng tài liệu Word chưa? Bạn không đơn độc. Tất cả chúng ta đều đã ở đó, loay hoay với các cài đặt đoạn văn, chỉ để kết thúc với một tài liệu trông giống một trò chơi ghép hình hơn là một báo cáo chuyên nghiệp. Nhưng đoán xem? Có một giải pháp kỳ diệu cho mọi vấn đề về định dạng của bạn – Aspose.Words for .NET. Hãy tưởng tượng có một công cụ có thể định dạng các đoạn văn của bạn chính xác theo cách bạn muốn mà không phải đau đầu như thường lệ. Nghe có vẻ mơ mộng phải không? Chà, hãy sẵn sàng vì chúng ta sắp đi sâu vào thế giới định dạng đoạn văn với Aspose.Words dành cho .NET, làm cho tài liệu của bạn trông bóng bẩy và chuyên nghiệp chỉ với một vài dòng mã.
 
 ## Điều kiện tiên quyết
 
@@ -20,7 +20,7 @@ Trước khi bắt tay vào cuộc phiêu lưu định dạng này, hãy chuẩn
 3. .NET Framework: Đảm bảo nó đã được cài đặt.
 4. Kiến thức cơ bản về C#: Đừng lo lắng, bạn không cần phải là một chuyên gia, chỉ cần hiểu biết cơ bản là đủ.
 
-Có mọi thứ? Tuyệt vời! Tiếp tục nào.
+Có mọi thứ? Tuyệt vời! Hãy tiếp tục.
 
 ## Nhập không gian tên
 
@@ -86,7 +86,7 @@ Cuối cùng nhưng không kém phần quan trọng, hãy lưu tài liệu có �
 doc.Save(dataDir + "DocumentFormatting.ParagraphFormatting.docx");
 ```
 
-Và Voila! Tài liệu của bạn được lưu với định dạng được chỉ định. Dễ dàng phải không?
+Và thì đấy! Tài liệu của bạn được lưu với định dạng được chỉ định. Dễ dàng phải không?
 
 ## Phần kết luận
 

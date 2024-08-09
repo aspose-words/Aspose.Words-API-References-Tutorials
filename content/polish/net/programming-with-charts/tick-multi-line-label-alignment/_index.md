@@ -15,7 +15,7 @@ Hej, miłośnicy technologii! Czy kiedykolwiek zastanawiałeś się, jak zaznacz
 
 Zanim zagłębimy się w świat wieloliniowego wyrównywania etykiet, upewnijmy się, że masz wszystko w rzędzie. Oto, czego będziesz potrzebować:
 
-1.  Aspose.Words dla .NET: Upewnij się, że masz najnowszą wersję Aspose.Words dla .NET. Jeśli nie, możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla .NET: Upewnij się, że masz najnowszą wersję Aspose.Words dla .NET. Jeśli nie, możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. Środowisko .NET: Upewnij się, że środowisko programistyczne jest skonfigurowane z platformą .NET.
 3. Podstawowa znajomość języka C#: Podstawowa znajomość języka C# sprawi, że ta podróż będzie płynniejsza.
 
@@ -64,7 +64,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 Wstawmy wykres do naszego dokumentu. W tym przykładzie użyjemy wykresu punktowego.
 
- Używając`InsertChart` metoda`DocumentBuilder` class, możemy wstawić do naszego dokumentu wykres punktowy.
+ Korzystanie z`InsertChart` metoda`DocumentBuilder` class, możemy wstawić do naszego dokumentu wykres punktowy.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Scatter, 450, 250);
@@ -94,7 +94,7 @@ axis.TickLabelAlignment = ParagraphAlignment.Right;
 
 Na koniec zapiszmy nasz dokument z pożądanymi zmianami.
 
- Użyj`Save` metoda`Document` class, aby zapisać dokument w określonym katalogu.
+ Skorzystaj z`Save` metoda`Document` class, aby zapisać dokument w określonym katalogu.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");

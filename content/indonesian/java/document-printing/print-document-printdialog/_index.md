@@ -90,7 +90,7 @@ settings.setPageRange("1-3, 5");
 
 ### Bagaimana cara mengubah ukuran kertas untuk pencetakan?
 
-Untuk mengubah ukuran kertas untuk pencetakan, Anda dapat menggunakan`PageSetup` kelas dan atur`PaperSize` Properti. Berikut ini contohnya:
+Untuk mengubah ukuran kertas untuk pencetakan, Anda dapat menggunakan`PageSetup` kelas dan atur`PaperSize` milik. Berikut ini contohnya:
 
 ```java
 Document doc = new Document("sample.docx");

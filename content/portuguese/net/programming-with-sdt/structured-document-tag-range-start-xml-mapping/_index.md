@@ -16,7 +16,7 @@ Você já quis inserir dados XML dinamicamente em um documento do Word? Bem, voc
 Antes de passarmos para a parte de codificação, vamos ter certeza de que você tem tudo o que precisa:
 
 1.  Biblioteca Aspose.Words for .NET: certifique-se de ter a versão mais recente. Você pode baixá-lo[aqui](https://releases.aspose.com/words/net/).
-2. Ambiente de desenvolvimento: Visual Studio ou qualquer outro IDE que suporte C#.
+2. Ambiente de Desenvolvimento: Visual Studio ou qualquer outro IDE que suporte C#.
 3. Conhecimento básico de C#: Familiaridade com programação C# é obrigatória.
 4. Documento do Word: um exemplo de documento do Word para trabalhar.
 
@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.doc
 
 ## Conclusão
 
-aí está! Você mapeou com êxito uma parte XML para uma tag de documento estruturado em um documento do Word usando Aspose.Words for .NET. Este poderoso recurso permite criar documentos dinâmicos e baseados em dados sem esforço. Esteja você gerando relatórios, faturas ou qualquer outro tipo de documento, o mapeamento XML pode agilizar significativamente seu fluxo de trabalho.
+aí está! Você mapeou com êxito uma parte XML para uma tag de documento estruturado em um documento do Word usando Aspose.Words for .NET. Este recurso poderoso permite criar documentos dinâmicos e baseados em dados sem esforço. Esteja você gerando relatórios, faturas ou qualquer outro tipo de documento, o mapeamento XML pode agilizar significativamente seu fluxo de trabalho.
 
 ## Perguntas frequentes
 

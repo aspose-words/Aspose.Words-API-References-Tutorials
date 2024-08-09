@@ -52,7 +52,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 3. lépés: Írja meg a kezdő szöveget
 
- Használni a`DocumentBuilder`, írunk néhány kezdő szöveget a dokumentumba. Ez beállítja a kontextust, ahol a hiperhivatkozásunk be lesz illesztve.
+ A`DocumentBuilder`, írunk néhány kezdő szöveget a dokumentumhoz. Ez beállítja a kontextust, ahol a hiperhivatkozásunk be lesz illesztve.
 
 ```csharp
 builder.Write("Please make sure to visit ");

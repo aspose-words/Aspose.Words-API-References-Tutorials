@@ -128,7 +128,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã tạo thành công một bảng kiểu dáng trong tài liệu Word bằng Aspose.Words cho .NET. Thư viện mạnh mẽ này giúp bạn dễ dàng tự động hóa và tùy chỉnh các tài liệu Word để đáp ứng nhu cầu chính xác của mình. Cho dù bạn đang tạo báo cáo, hóa đơn hay bất kỳ loại tài liệu nào khác, Aspose.Words đều có thể hỗ trợ bạn.
+Và bạn có nó! Bạn đã tạo thành công một bảng kiểu dáng trong tài liệu Word bằng Aspose.Words cho .NET. Thư viện mạnh mẽ này giúp bạn dễ dàng tự động hóa và tùy chỉnh các tài liệu Word để đáp ứng nhu cầu chính xác của mình. Cho dù bạn đang tạo báo cáo, hóa đơn hay bất kỳ loại tài liệu nào khác, Aspose.Words đều có thể hỗ trợ bạn.
 
 ## Câu hỏi thường gặp
 

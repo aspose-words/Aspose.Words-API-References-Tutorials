@@ -69,7 +69,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOpti
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bằng cách làm theo các bước này, bạn có thể dễ dàng cập nhật thuộc tính được in cuối cùng trong tài liệu PDF bằng Aspose.Words for .NET. Phương pháp này đảm bảo quy trình quản lý tài liệu của bạn luôn hiệu quả và cập nhật. Hãy dùng thử và xem nó đơn giản hóa quy trình làm việc của bạn như thế nào.
+Và bạn có nó! Bằng cách làm theo các bước này, bạn có thể dễ dàng cập nhật thuộc tính được in cuối cùng trong tài liệu PDF bằng Aspose.Words for .NET. Phương pháp này đảm bảo quy trình quản lý tài liệu của bạn luôn hiệu quả và cập nhật. Hãy dùng thử và xem nó đơn giản hóa quy trình làm việc của bạn như thế nào.
 
 ## Câu hỏi thường gặp
 

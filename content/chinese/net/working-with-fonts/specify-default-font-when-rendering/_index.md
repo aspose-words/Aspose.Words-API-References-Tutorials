@@ -2,80 +2,94 @@
 title: 渲染时指定默认字体
 linktitle: 渲染时指定默认字体
 second_title: Aspose.Words 文档处理 API
-description: 使用 Aspose.Words for .NET 呈现文档时指定默认字体的分步指南。
+description: 了解如何在使用 Aspose.Words for .NET 呈现 Word 文档时指定默认字体。确保跨平台的文档外观一致。
 type: docs
 weight: 10
 url: /zh/net/working-with-fonts/specify-default-font-when-rendering/
 ---
+## 介绍
 
-在本教程中，我们将引导您逐步完成使用 Aspose.Words for .NET 渲染文档时指定默认字体的过程。我们将解释捆绑的 C# 源代码并为您提供全面的指南，以帮助您理解并在自己的项目中实现此功能。在本教程结束时，您将了解如何指定使用 Aspose.Words for .NET 渲染文档时要使用的默认字体。
+确保您的 Word 文档在不同平台上正确呈现可能是一项挑战，尤其是在处理字体兼容性时。保持一致外观的一种方法是将文档呈现为 PDF 或其他格式时指定默认字体。在本教程中，我们将探讨如何使用 Aspose.Words for .NET 设置默认字体，这样您的文档无论在哪里查看都会看起来很棒。
 
-## 步骤1：定义文档目录
-首先，您需要设置文档目录的路径。这是您要保存编辑后的渲染文档的位置。将“YOUR DOCUMENTS DIRECTORY”替换为适当的路径。
+## 先决条件
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+在深入研究代码之前，让我们先介绍一下本教程需要遵循的内容：
 
-## 第 2 步：加载要渲染的文档
-接下来，您需要使用`Document`类。请确保指定正确的文档路径。
+- Aspose.Words for .NET：确保安装了最新版本。您可以下载[这里](https://releases.aspose.com/words/net/).
+- 开发环境：Visual Studio 或任何其他.NET 开发环境。
+- C# 基础知识：本教程假设您熟悉 C# 编程。
 
-```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
-```
+## 导入命名空间
 
-## 步骤 3：设置默认字体
-现在，您可以通过创建`FontSettings`类和设置`DefaultFontName`的财产`DefaultFontSubstitution`反对`DefaultFontSubstitution`目的`SubstitutionSettings`的`FontSettings`.
+首先，您需要导入必要的命名空间。这将允许您访问使用 Aspose.Words 所需的类和方法。
 
 ```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial Unicode MS";
-doc.FontSettings = fontSettings;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## 步骤 4：保存渲染的文档
-最后，您可以使用`Save()`方法`Document`类。请确保指定正确的路径和文件名。
+现在，让我们将指定默认字体的过程分解为易于遵循的步骤。
 
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
-```
+## 步骤 1：设置文档目录
 
-### 使用 Aspose.Words for .NET 渲染时指定默认字体的示例源代码 
+首先，定义文档目录的路径。这是存储输入和输出文件的地方。
 
 ```csharp
 //文档目录的路径
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+## 步骤 2：加载文档
+
+接下来，加载要渲染的文档。在此示例中，我们将使用名为“Rendering.docx”的文件。
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## 步骤 3：配置字体设置
+
+创建一个实例`FontSettings`并指定默认字体。如果在渲染过程中找不到定义的字体，Aspose.Words 将使用机器上最接近的可用字体。
+
+```csharp
 FontSettings fontSettings = new FontSettings();
-//如果在渲染过程中找不到此处定义的默认字体，则
-//而是使用机器上最接近的字体。
 fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial Unicode MS";
+```
+
+## 步骤 4：将字体设置应用于文档
+
+将配置的字体设置分配给您的文档。
+
+```csharp
 doc.FontSettings = fontSettings;
+```
+
+## 步骤 5：保存文档
+
+最后，以所需的格式保存文档。在本例中，我们将其保存为 PDF。
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ```
 
 ## 结论
-在本教程中，我们学习了如何使用 Aspose.Words for .NET 渲染文档时指定默认字体。按照本分步指南，您可以轻松设置渲染文档时使用的默认字体。Aspose.Words 提供强大而灵活的 API，用于处理文档中的字体文字。有了这些知识，您可以根据特定需求控制和自定义文档的渲染。
 
-### 常见问题解答
+通过执行这些步骤，您可以确保您的 Word 文档使用指定的默认字体呈现，从而在不同平台上保持一致性。这对于广泛共享或在字体可用性不同的系统上查看的文档尤其有用。
 
-#### 问：在 Aspose.Words 中转换为 PDF 时如何指定默认字体？
 
-答：要在 Aspose.Words 中转换为 PDF 时指定默认字体，您可以使用`PdfOptions`类并设置`DefaultFontName`属性为所需字体的名称。
+## 常见问题解答
 
-#### 问：转换为 PDF 时默认字体不可用怎么办？
+### 为什么要在 Aspose.Words 中指定默认字体？
+指定默认字体可确保您的文档在不同平台上显示一致，即使原始字体不可用。
 
-答：如果在转换为 PDF 时指定的默认字体不可用，Aspose.Words 将使用替代字体来显示转换后的文档中的文本。这可能会导致外观与原始字体略有不同。
+### 如果在渲染过程中找不到默认字体会发生什么？
+Aspose.Words 将使用机器上最接近的可用字体来尽可能保持文档的外观。
 
-#### 问：我可以为其他输出格式（例如 DOCX 或 HTML）指定默认字体吗？
+### 我可以指定多个默认字体吗？
+不可以，您只能指定一种默认字体。不过，您可以使用`FontSettings`班级。
 
-答：是的，您可以使用适当的转换选项并为每种格式设置相应的属性来为其他输出格式（如 DOCX 或 HTML）指定默认字体。
+### Aspose.Words for .NET 是否与所有版本的 Word 文档兼容？
+是的，Aspose.Words for .NET 支持多种 Word 文档格式，包括 DOC、DOCX、RTF 等。
 
-#### 问：如何检查 Aspose.Words 中指定的默认字体？
-
-答：要检查 Aspose.Words 中指定的默认字体，您可以使用`DefaultFontName`的财产`PdfOptions`类并检索配置的字体的名称。
-
-#### 问：是否可以为文档的每个部分指定不同的默认字体？
-
-答：是的，可以使用特定于每个部分的格式化选项为文档的每个部分指定不同的默认字体。但是，这需要使用 Aspose.Words 功能对文档进行更高级的操作。
+### 如果我遇到问题，可以在哪里获得支持？
+您可以从 Aspose 社区和开发人员处获得支持[Aspose.Words 支持论坛](https://forum.aspose.com/c/words/8).

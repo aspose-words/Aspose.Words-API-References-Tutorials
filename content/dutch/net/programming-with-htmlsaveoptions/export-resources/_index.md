@@ -43,7 +43,7 @@ Allereerst moet u het pad naar uw documentenmap opgeven. Dit is waar uw Word-doc
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw map.
+ Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw directory.
 
 ## Stap 2: Laad het Word-document
 

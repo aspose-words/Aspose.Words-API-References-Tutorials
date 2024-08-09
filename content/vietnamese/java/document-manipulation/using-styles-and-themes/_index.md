@@ -10,7 +10,7 @@ url: /vi/java/document-manipulation/using-styles-and-themes/
 
 ## Giới thiệu về Sử dụng Kiểu và Chủ đề trong Aspose.Words cho Java
 
-Trong hướng dẫn này, chúng ta sẽ khám phá cách làm việc với các kiểu và chủ đề trong Aspose.Words cho Java để nâng cao định dạng và giao diện tài liệu của bạn. Chúng tôi sẽ đề cập đến các chủ đề như truy xuất kiểu, sao chép kiểu, quản lý chủ đề và chèn dấu phân cách kiểu. Bắt đầu nào!
+Trong hướng dẫn này, chúng ta sẽ khám phá cách làm việc với các kiểu và chủ đề trong Aspose.Words cho Java để nâng cao định dạng và giao diện tài liệu của bạn. Chúng tôi sẽ đề cập đến các chủ đề như truy xuất kiểu, sao chép kiểu, quản lý chủ đề và chèn dấu phân cách kiểu. Hãy bắt đầu!
 
 ## Truy xuất kiểu
 

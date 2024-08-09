@@ -282,7 +282,7 @@ doc.save("PageLayoutDocument.docx");
 
 Bu örnekte sayfanın her tarafına 1 inçlik eşit kenar boşlukları ayarladık.
 
-## Başlık ve altbilgi
+## Üstbilgi ve Altbilgi
 
 Üstbilgiler ve altbilgiler, belgenizin her sayfasına tutarlı bilgi eklemek için gereklidir. Üstbilgiler ve altbilgilerle nasıl çalışılacağı aşağıda açıklanmıştır:
 
@@ -359,7 +359,7 @@ doc.save("Document.pdf", SaveFormat.PDF);
 
 Bu kod parçacığı belgeyi PDF dosyası olarak kaydeder.
 
-## Gelişmiş özellikler
+## Gelişmiş Özellikler
 
 Aspose.Words for Java, karmaşık belge işlemleri için gelişmiş özellikler sunar. Bunlara adres-mektup birleştirme, belge karşılaştırma ve daha fazlası dahildir. Bu ileri düzey konulara ilişkin ayrıntılı rehberlik için belgeleri inceleyin.
 

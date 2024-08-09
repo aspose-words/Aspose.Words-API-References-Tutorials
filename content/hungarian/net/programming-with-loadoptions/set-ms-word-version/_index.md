@@ -38,7 +38,7 @@ Először is meg kell határoznia, hol találhatók a dokumentumok. Ez döntő f
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-## 2. lépés: Konfigurálja a Betöltési beállításokat
+## 2. lépés: Konfigurálja a betöltési beállításokat
 
 Ezután konfigurálnia kell a betöltési beállításokat. Itt történik a varázslat! Ha beállítja az MS Word verzióját a betöltési beállításoknál, akkor megmondja az Aspose.Words számára, hogy a Word melyik verzióját emulálja a dokumentum betöltésekor.
 

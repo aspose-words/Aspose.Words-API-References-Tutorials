@@ -94,7 +94,7 @@ doc.Save(dataDir + "WorkingWithSdt.ComboBoxContentControl.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã tạo thành công điều khiển nội dung hộp tổ hợp trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo các bước này, bạn có thể thêm các yếu tố tương tác vào tài liệu của mình, nâng cao chức năng và trải nghiệm người dùng của chúng.
+Và bạn có nó! Bạn đã tạo thành công điều khiển nội dung hộp tổ hợp trong tài liệu Word bằng Aspose.Words for .NET. Bằng cách làm theo các bước này, bạn có thể thêm các yếu tố tương tác vào tài liệu của mình, nâng cao chức năng và trải nghiệm người dùng của chúng.
 
 Hãy thoải mái thử nghiệm các loại điều khiển nội dung khác nhau và tùy chỉnh chúng cho phù hợp với nhu cầu của bạn. Nếu bạn có bất kỳ câu hỏi nào hoặc gặp phải bất kỳ vấn đề nào, đừng ngần ngại liên hệ để được hỗ trợ.
 

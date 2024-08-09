@@ -20,7 +20,7 @@ Innan vi dyker in, låt oss se till att vi har allt vi behöver:
 3. IDE: En integrerad utvecklingsmiljö som Visual Studio.
 4.  Tillfällig licens: Du kan få en[här](https://purchase.aspose.com/temporary-license/).
 
-Se till att du har installerat Aspose.Words för .NET och ställt in din utvecklingsmiljö. Redo? Låt oss börja!
+Se till att du har installerat Aspose.Words för .NET och ställt in din utvecklingsmiljö. Redo? Låt oss komma igång!
 
 ## Importera namnområden
 
@@ -45,7 +45,7 @@ För att använda Aspose.Words måste vi lägga till det i vårt projekt. Höger
 
 ### Initiera din dokumentkatalog
 
- Vi behöver en katalog där vårt dokument kommer att sparas. För den här handledningen, låt oss använda en platshållarkatalog. Byta ut`"YOUR DOCUMENTS DIRECTORY"` med den faktiska sökvägen där du vill spara ditt dokument.
+ Vi behöver en katalog där vårt dokument kommer att sparas. För den här handledningen, låt oss använda en platshållarkatalog. Ersätta`"YOUR DOCUMENTS DIRECTORY"` med den faktiska sökvägen där du vill spara ditt dokument.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -74,13 +74,13 @@ det här exemplet infogar vi ett MERGEFIELD, som vanligtvis används för koppli
 
 ### Spara dokumentet
 
-Efter att ha infogat fältet måste vi spara vårt dokument. Här är hur:
+Efter att ha infogat fältet måste vi spara vårt dokument. Så här gör du:
 
 ```csharp
 doc.Save(dataDir + "InsertionField.docx");
 ```
 
-Och det är allt! Du har framgångsrikt infogat ett fält i ditt Word-dokument.
+Och det är det! Du har framgångsrikt infogat ett fält i ditt Word-dokument.
 
 ## Slutsats
 

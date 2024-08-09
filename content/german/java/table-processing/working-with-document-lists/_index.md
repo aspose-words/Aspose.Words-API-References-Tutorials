@@ -43,7 +43,7 @@ public class DocumentListExample {
         // Initialisieren eines neuen Dokuments
         Document doc = new Document();
 
-        // Erstelle eine Liste
+        // Erstellen einer Liste
         List list = doc.getLists().add(ListTemplate.NUMBER_DEFAULT);
 
         // Listenelemente hinzufügen

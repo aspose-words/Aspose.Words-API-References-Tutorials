@@ -74,7 +74,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
 ```
 
-وهناك لديك! يتم الآن حفظ ملف PDF الخاص بك في الدليل المحدد بدون تلك الخطوط الأساسية الضخمة.
+وهنا لديك! يتم الآن حفظ ملف PDF الخاص بك في الدليل المحدد بدون تلك الخطوط الأساسية الضخمة.
 
 ## خاتمة
 

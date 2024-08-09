@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-headers-and-footers/copy-headers-footers-from-previous-section/
 ---
+## Zavedení
 
 Přidávání a kopírování záhlaví a zápatí do vašich dokumentů může výrazně zvýšit jejich profesionalitu a konzistenci. S Aspose.Words pro .NET se tento úkol stává přímočarým a vysoce přizpůsobitelným. V tomto obsáhlém tutoriálu vás krok za krokem provedeme procesem kopírování záhlaví a zápatí z jedné sekce do druhé v dokumentech aplikace Word.
 
@@ -81,54 +82,28 @@ Nakonec dokument uložte na požadované místo. Tento krok zajistí, že všech
 doc.Save("OutputDocument.docx");
 ```
 
-## Podrobné vysvětlení každého kroku
-
-### Krok 1: Vytvořte nový dokument
-
- V tomto kroku inicializujeme novou instanci`Document` třída a a`DocumentBuilder` . The`DocumentBuilder` je pomocná třída, která zjednodušuje proces přidávání obsahu do dokumentu.
-
-### Krok 2: Vstupte do aktuální sekce
-
- Načteme aktuální sekci pomocí`builder.CurrentSection`Tato sekce bude cílem, kam zkopírujeme záhlaví a zápatí z předchozí sekce.
-
-### Krok 3: Definujte předchozí sekci
-
- Kontrolou`currentSection.PreviousSibling`, získáme předchozí část. Pokud je předchozí sekce nulová, metoda se vrátí bez provedení dalších akcí. Tato kontrola zabraňuje chybám, které by mohly nastat, pokud neexistuje žádná předchozí sekce.
-
-### Krok 4: Vymažte existující záhlaví a zápatí
-
-Vymažeme všechna existující záhlaví a zápatí v aktuální sekci, abychom zajistili, že neskončíme s několika sadami záhlaví a zápatí.
-
-### Krok 5: Zkopírujte záhlaví a zápatí
-
- Pomocí smyčky foreach každou iterujeme`HeaderFooter` v předchozí části. The`Clone(true)` metoda vytvoří hlubokou kopii záhlaví nebo zápatí, čímž zajistí zachování veškerého obsahu a formátování.
-
-### Krok 6: Uložte dokument
-
- The`doc.Save("OutputDocument.docx")` řádek zapíše všechny změny do dokumentu a uloží jej pod zadaným názvem souboru.
-
 ## Závěr
 
 Kopírování záhlaví a zápatí z jedné sekce do druhé v dokumentu aplikace Word pomocí Aspose.Words for .NET je jednoduché a efektivní. Dodržováním tohoto podrobného průvodce můžete zajistit, že si vaše dokumenty udrží konzistentní a profesionální vzhled ve všech částech.
 
-## Nejčastější dotazy
+## FAQ
 
-### Q1: Co je Aspose.Words pro .NET?
+### Co je Aspose.Words for .NET?
 
 Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vytvářet, manipulovat a převádět dokumenty Word programově v rámci aplikací .NET.
 
-### Q2: Mohu zkopírovat záhlaví a zápatí z libovolné sekce do jiné?
+### Mohu zkopírovat záhlaví a zápatí z libovolné sekce do jiné?
 
 Ano, můžete kopírovat záhlaví a zápatí mezi libovolnými oddíly v dokumentu aplikace Word pomocí metody popsané v tomto kurzu.
 
-### Otázka 3: Jak zpracuji různá záhlaví a zápatí pro liché a sudé stránky?
+### Jak zpracuji různá záhlaví a zápatí pro liché a sudé stránky?
 
  Můžete nastavit různá záhlaví a zápatí pro liché a sudé stránky pomocí`PageSetup.OddAndEvenPagesHeaderFooter` vlastnictví.
 
-### Q4: Kde najdu další informace o Aspose.Words pro .NET?
+### Kde najdu další informace o Aspose.Words pro .NET?
 
  Komplexní dokumentaci naleznete na[Stránka dokumentace API Aspose.Words](https://reference.aspose.com/words/net/).
 
-### Q5: Je k dispozici bezplatná zkušební verze pro Aspose.Words pro .NET?
+### Je k dispozici bezplatná zkušební verze pro Aspose.Words pro .NET?
 
  Ano, můžete si stáhnout bezplatnou zkušební verzi z[stránka ke stažení](https://releases.aspose.com/).

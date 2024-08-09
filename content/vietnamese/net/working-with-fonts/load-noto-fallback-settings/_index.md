@@ -2,77 +2,104 @@
 title: Tải cài đặt dự phòng Noto
 linktitle: Tải cài đặt dự phòng Noto
 second_title: API xử lý tài liệu Aspose.Words
-description: Trong hướng dẫn này, hãy tìm hiểu cách tải các tham số ghi đè Noto vào tài liệu Word bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách tải cài đặt dự phòng Noto trong tài liệu Word bằng Aspose.Words cho .NET. Làm theo hướng dẫn từng bước của chúng tôi để đảm bảo tất cả các ký tự hiển thị chính xác.
 type: docs
 weight: 10
 url: /vi/net/working-with-fonts/load-noto-fallback-settings/
 ---
-Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn cách tải cài đặt thay thế phông chữ Noto vào tài liệu Word bằng Thư viện Aspose.Words cho .NET. Cài đặt Thay thế phông chữ Noto cho phép bạn quản lý việc thay thế phông chữ khi hiển thị hoặc in tài liệu. Chúng tôi sẽ hướng dẫn bạn từng bước để giúp bạn hiểu và triển khai mã trong dự án .NET của mình.
+## Giới thiệu
+
+Trong hướng dẫn này, chúng ta sẽ khám phá cách tải cài đặt dự phòng Noto trong tài liệu Word bằng Aspose.Words cho .NET. Quá trình này đảm bảo rằng phông chữ trong tài liệu của bạn được hiển thị chính xác, ngay cả khi một số ký tự bị thiếu trong phông chữ gốc. Cho dù bạn đang xử lý tài liệu đa ngôn ngữ hay ký tự đặc biệt, cài đặt dự phòng Noto có thể là cứu cánh.
 
 ## Điều kiện tiên quyết
-Trước khi bắt đầu, hãy đảm bảo bạn có các mục sau:
-- Kiến thức làm việc về ngôn ngữ lập trình C#
-- Thư viện Aspose.Words cho .NET được cài đặt trong dự án của bạn
 
-## Bước 1: Xác định thư mục tài liệu
- Trước tiên, bạn cần đặt đường dẫn thư mục đến vị trí tài liệu Word của mình. Thay thế`"YOUR DOCUMENT DIRECTORY"` trong mã với đường dẫn thích hợp.
+Trước khi đi sâu vào hướng dẫn từng bước, hãy xem qua các điều kiện tiên quyết mà bạn cần:
+
+1.  Aspose.Words for .NET Library: Đảm bảo bạn có phiên bản Aspose.Words mới nhất cho .NET. Bạn có thể tải nó xuống[đây](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển: Visual Studio hoặc bất kỳ môi trường phát triển .NET tương thích nào khác.
+3. Kiến thức cơ bản về C#: Cần phải làm quen với lập trình C#.
+4. Tài liệu Word: Tài liệu Word mẫu để áp dụng cài đặt dự phòng Noto.
+
+## Nhập không gian tên
+
+Để bắt đầu, bạn cần nhập các không gian tên cần thiết vào dự án của mình. Các không gian tên này cung cấp quyền truy cập vào các lớp và phương thức cần thiết để thao tác với tài liệu Word bằng Aspose.Words cho .NET.
 
 ```csharp
-// Đường dẫn đến thư mục tài liệu của bạn
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Bước 2: Tải tài liệu và định cấu hình cài đặt thay thế phông chữ
- Tiếp theo, chúng ta sẽ tải tài liệu bằng cách sử dụng`Document` lớp và định cấu hình cài đặt ghi đè phông chữ bằng cách sử dụng`FontSettings` lớp học. Chúng tôi sẽ tải cài đặt dự phòng phông chữ Noto bằng cách sử dụng`LoadNotoFallbackSettings()` phương pháp.
+Bây giờ, hãy chia quy trình thành các bước đơn giản, dễ quản lý. Thực hiện theo để tải cài đặt dự phòng Noto vào tài liệu Word của bạn.
+
+## Bước 1: Thiết lập dự án của bạn
+
+Đầu tiên, bạn cần thiết lập dự án của mình. Mở môi trường phát triển của bạn và tạo một dự án mới hoặc mở một dự án hiện có.
+
+1. Tạo dự án mới: Nếu bạn chưa có dự án, hãy tạo một dự án mới trong Visual Studio bằng cách chọn 'Tạo dự án mới'.
+2. Thêm Aspose.Words cho .NET: Thêm thư viện Aspose.Words cho .NET vào dự án của bạn thông qua Trình quản lý gói NuGet. Tìm kiếm 'Aspose.Words' và cài đặt phiên bản mới nhất.
+
+## Bước 2: Xác định thư mục tài liệu của bạn
+
+Tiếp theo, xác định đường dẫn đến thư mục tài liệu của bạn. Đây là nơi lưu trữ tài liệu Word của bạn.
 
 ```csharp
-// Tải tài liệu và định cấu hình cài đặt thay thế phông chữ
-Document doc = new Document(dataDir + "Rendering.docx");
-FontSettings fontSettings = new FontSettings();
-fontSettings.FallbackSettings.LoadNotoFallbackSettings();
-doc.FontSettings = fontSettings;
-```
-
-## Bước 3: Lưu tài liệu
-Cuối cùng, chúng tôi sẽ lưu tài liệu với cài đặt thay thế phông chữ Noto được áp dụng.
-
-```csharp
-// Lưu tài liệu
-doc.Save(dataDir + "WorkingWithFonts.NotoFallbackSettings.pdf");
-```
-
-
-### Mã nguồn mẫu cho Cài đặt dự phòng Noto bằng Aspose.Words cho .NET 
-```csharp
-
-// Đường dẫn đến thư mục tài liệu của bạn
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+ Thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục tài liệu của bạn.
+
+## Bước 3: Tải tài liệu của bạn
+
+Tải tài liệu Word mà bạn muốn áp dụng cài đặt dự phòng Noto. Sử dụng`Document` lớp từ không gian tên Aspose.Words.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+Đảm bảo rằng tài liệu của bạn được đặt tên là "Rendering.docx" hoặc thay đổi tên tệp cho phù hợp.
+
+## Bước 4: Định cấu hình cài đặt phông chữ
+
+ Tạo một thể hiện của`FontSettings` class và tải cài đặt dự phòng Noto. Bước này định cấu hình cài đặt phông chữ để sử dụng phông chữ Noto làm phông chữ dự phòng.
+
+```csharp
 FontSettings fontSettings = new FontSettings();
 fontSettings.FallbackSettings.LoadNotoFallbackSettings();
-doc.FontSettings = fontSettings;
-doc.Save(dataDir + "WorkingWithFonts.NotoFallbackSettings.pdf");
+```
 
+## Bước 5: Áp dụng cài đặt phông chữ cho tài liệu
+
+Gán cài đặt phông chữ được định cấu hình cho tài liệu của bạn. Điều này đảm bảo rằng tài liệu sẽ sử dụng cài đặt dự phòng Noto.
+
+```csharp
+doc.FontSettings = fontSettings;
+```
+
+## Bước 6: Lưu tài liệu
+
+Cuối cùng, lưu tài liệu đã sửa đổi. Bạn có thể lưu nó ở bất kỳ định dạng nào được Aspose.Words hỗ trợ. Trong trường hợp này, chúng tôi sẽ lưu nó dưới dạng PDF.
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.NotoFallbackSettings.pdf");
 ```
 
 ## Phần kết luận
-Trong hướng dẫn này, chúng ta đã biết cách tải cài đặt thay thế phông chữ Noto trong tài liệu Word bằng Aspose.Words cho .NET. Cài đặt thay thế phông chữ Noto cho phép bạn quản lý việc thay thế phông chữ để cải thiện việc hiển thị và in tài liệu của bạn. Vui lòng sử dụng tính năng này để tùy chỉnh việc thay thế phông chữ theo nhu cầu của bạn.
 
-### Câu hỏi thường gặp
+Chúc mừng! Bạn đã tải thành công cài đặt dự phòng Noto trong tài liệu Word của mình bằng Aspose.Words for .NET. Hướng dẫn này bao gồm mọi thứ từ thiết lập dự án của bạn đến lưu tài liệu cuối cùng. Bằng cách làm theo các bước này, bạn có thể đảm bảo rằng tài liệu của mình hiển thị chính xác tất cả các ký tự, ngay cả khi phông chữ gốc thiếu một số ký tự.
 
-#### Câu hỏi: Làm cách nào tôi có thể tải cài đặt thay thế phông chữ Noto trong tài liệu Word bằng Aspose.Words?
+## Câu hỏi thường gặp
 
-Trả lời: Để tải cài đặt thay thế phông chữ Noto trong tài liệu Word bằng Aspose.Words, trước tiên bạn phải tải xuống phông chữ Noto từ nguồn chính thức. Sau đó, bạn có thể sử dụng API Aspose.Words để tải các phông chữ đó vào tài liệu và định cấu hình chúng để thay thế khi cần.
+### Cài đặt dự phòng Noto là gì?
+Cài đặt dự phòng Noto cung cấp một bộ phông chữ dự phòng toàn diện để đảm bảo rằng tất cả các ký tự trong tài liệu đều được hiển thị chính xác.
 
-#### Câu hỏi: Việc sử dụng phông chữ Noto để thay thế trong tài liệu Word có đảm bảo hiển thị văn bản nhất quán không?
+### Tại sao tôi nên sử dụng cài đặt dự phòng Noto?
+Sử dụng cài đặt dự phòng Noto đảm bảo rằng tài liệu của bạn có thể hiển thị nhiều loại ký tự, đặc biệt là trong các tài liệu đa ngôn ngữ.
 
-Đáp: Có, việc sử dụng phông chữ Noto để thay thế trong tài liệu Word sẽ đảm bảo hiển thị văn bản nhất quán. Phông chữ Noto được thiết kế để hỗ trợ nhiều ngôn ngữ và ký tự, giúp duy trì giao diện nhất quán ngay cả khi không có sẵn phông chữ được yêu cầu.
+### Tôi có thể sử dụng cài đặt dự phòng khác ngoài Noto không?
+Có, Aspose.Words cho phép bạn định cấu hình các cài đặt dự phòng khác dựa trên yêu cầu của bạn.
 
-#### Hỏi: Phông chữ Noto có miễn phí không?
+### Làm cách nào để cài đặt Aspose.Words cho .NET?
+Bạn có thể cài đặt Aspose.Words cho .NET thông qua Trình quản lý gói NuGet trong Visual Studio.
 
-Trả lời: Có, phông chữ Noto là nguồn mở và miễn phí. Chúng có thể được tải xuống và sử dụng miễn phí trong các dự án của bạn. Điều này làm cho nó trở thành một lựa chọn tuyệt vời để cải thiện khả năng hiển thị phông chữ trong tài liệu Word của bạn mà không cần phải đầu tư vào phông chữ thương mại.
-
-#### Hỏi: Việc sử dụng phông chữ Noto có làm cho tài liệu Word của tôi dễ truy nhập hơn không?
-
-Đáp: Có, việc sử dụng phông chữ Noto để thay thế trong tài liệu Word sẽ giúp tài liệu của bạn dễ tiếp cận hơn. Phông chữ Noto hỗ trợ nhiều ngôn ngữ và ký tự, đảm bảo người dùng xem tài liệu của bạn bằng các ngôn ngữ khác nhau dễ đọc và dễ hiểu hơn.
+### Có bản dùng thử miễn phí Aspose.Words cho .NET không?
+ Có, bạn có thể tải xuống bản dùng thử miễn phí[đây](https://releases.aspose.com/).

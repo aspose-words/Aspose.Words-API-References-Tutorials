@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");
 ## よくある質問
 
 ### Aspose.Words for .NET を使用して他のタイプのフィールドを変換できますか?
-はい、Aspose.Words for .NETでは、IFフィールドだけでなく、さまざまなタイプのフィールドを操作できます。[ドキュメンテーション](https://reference.aspose.com/words/net/)詳細については。
+はい、Aspose.Words for .NETでは、IFフィールドだけでなく、さまざまなタイプのフィールドを操作できます。[ドキュメント](https://reference.aspose.com/words/net/)詳細についてはこちらをご覧ください。
 
 ### Word 文書の IF フィールドとは何ですか?
 IF フィールドは、特定の条件に基づいてテキストを表示する条件付きフィールドです。Word 文書で動的なコンテンツを作成する場合によく使用されます。

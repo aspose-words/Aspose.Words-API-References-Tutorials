@@ -9,7 +9,7 @@ url: /tr/net/working-with-markdown/use-warning-source/
 ---
 ## giriiş
 
- Belgeleri programlı olarak yönetmek ve biçimlendirmek zorunda kaldınız mı? Eğer öyleyse, muhtemelen farklı belge türlerini kullanmanın ve her şeyin doğru görünmesini sağlamanın karmaşıklığıyla karşı karşıya kalmışsınızdır. Belge işlemeyi kolaylaştıran güçlü bir kütüphane olan Aspose.Words for .NET'e girin. Bugün belirli bir özelliğe dalacağız:`WarningSource`Markdown ile çalışırken uyarıları yakalamak ve işlemek için sınıf. Aspose.Words for .NET'te ustalaşmak için bu yolculuğa çıkalım!
+Belgeleri programlı olarak yönetmek ve biçimlendirmek zorunda kaldınız mı? Eğer öyleyse, muhtemelen farklı belge türlerini kullanmanın ve her şeyin doğru görünmesini sağlamanın karmaşıklığıyla karşı karşıya kalmışsınızdır. Belge işlemeyi kolaylaştıran güçlü bir kütüphane olan Aspose.Words for .NET'e girin. Bugün belirli bir özelliğe dalacağız:`WarningSource` Markdown ile çalışırken uyarıları yakalamak ve işlemek için sınıf. Aspose.Words for .NET'te ustalaşmak için bu yolculuğa çıkalım!
 
 ## Önkoşullar
 
@@ -39,7 +39,7 @@ Her projenin sağlam bir temele ihtiyacı vardır, değil mi? Belge dizinimizin 
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` DOCX dosyanızın bulunduğu gerçek yolla.
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"`DOCX dosyanızın bulunduğu gerçek yolla.
 
 ## Adım 2: Belgeyi Yükleme
 
@@ -53,7 +53,7 @@ Document doc = new Document(dataDir + "Emphases markdown warning.docx");
 
 ## 3. Adım: Uyarı Koleksiyonunu Ayarlama
 
- Önemli noktaların vurgulandığı yapışkan notların olduğu bir kitap okuduğunuzu hayal edin.`WarningInfoCollection`bunu belge işlememiz için yapar.
+ Önemli noktaların vurgulandığı yapışkan notların olduğu bir kitap okuduğunuzu hayal edin.`WarningInfoCollection` bunu belge işlememiz için yapar.
 
 ```csharp
 WarningInfoCollection warnings = new WarningInfoCollection();
@@ -88,7 +88,7 @@ Bu satır, belgeyi belirtilen dizine Markdown dosyası olarak kaydeder.
 
 ## Çözüm
 
- İşte buyur! Az önce nasıl kullanılacağını öğrendin`WarningSource`Markdown uyarılarını işlemek için Aspose.Words for .NET'teki sınıf. Bu eğitici projenizi oluşturmayı, bir belgeyi yüklemeyi, uyarıları toplayıp işlemeyi ve son belgeyi kaydetmeyi kapsıyordu. Bu bilgiyle uygulamalarınızdaki belge işlemeyi yönetmek için daha donanımlı olursunuz. Aspose.Words for .NET'in geniş yeteneklerini denemeye ve keşfetmeye devam edin!
+Ve işte karşınızda! Az önce nasıl kullanılacağını öğrendin`WarningSource` Markdown uyarılarını işlemek için Aspose.Words for .NET'teki sınıf. Bu eğitici projenizi oluşturmayı, bir belgeyi yüklemeyi, uyarıları toplayıp işlemeyi ve son belgeyi kaydetmeyi kapsıyordu. Bu bilgiyle uygulamalarınızdaki belge işlemeyi yönetmek için daha donanımlı olursunuz. Aspose.Words for .NET'in geniş yeteneklerini denemeye ve keşfetmeye devam edin!
 
 ## SSS'ler
 
@@ -102,7 +102,7 @@ Aspose.Words for .NET, Word belgeleriyle programlı olarak çalışmaya yönelik
  Uyarı kaynakları, belgenin işlenmesi sırasında oluşturulan uyarıların kaynağını gösterir. Örneğin,`WarningSource.Markdown` Markdown işlemiyle ilgili bir uyarıyı belirtir.
 
 ### Aspose.Words'te uyarı işlemeyi özelleştirebilir miyim?
- Evet, aşağıdakileri uygulayarak uyarı işlemeyi özelleştirebilirsiniz:`IWarningCallback` arayüz ve onu belgenin ayarlarına ayarlama`WarningCallback` mülk.
+ Evet, aşağıdakileri uygulayarak uyarı işlemeyi özelleştirebilirsiniz:`IWarningCallback`arayüz ve onu belgenin ayarlarına ayarlama`WarningCallback` mülk.
 
 ### Aspose.Words kullanarak bir belgeyi farklı formatlarda nasıl kaydederim?
  Bir belgeyi çeşitli formatlarda (DOCX, PDF, Markdown gibi) kaydedebilirsiniz.`Save` yöntemi`Document` sınıf, istenen formatı parametre olarak belirtir.

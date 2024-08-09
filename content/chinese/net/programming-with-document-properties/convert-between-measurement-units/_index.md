@@ -99,4 +99,4 @@ doc.Save("ConvertedDocument.docx");
 是的，您可以使用`Section`班级。
 
 ### Aspose.Words 还提供哪些其他功能？
- Aspose.Words 支持多种功能，包括文档转换、邮件合并和广泛的格式化选项。检查[文档](https://reference.aspose.com/words/net/)更多细节。
+ Aspose.Words 支持多种功能，包括文档转换、邮件合并和广泛的格式化选项。检查[文档](https://reference.aspose.com/words/net/)了解更多详情。

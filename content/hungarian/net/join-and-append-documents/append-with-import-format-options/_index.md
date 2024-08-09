@@ -9,7 +9,7 @@ url: /hu/net/join-and-append-documents/append-with-import-format-options/
 ---
 ## Bevezetés
 
-Halihó! Volt már olyan, hogy több Word-dokumentumot kellett egyesítenie egybe, de elakadt a kellemetlen formázási problémák? Ne félj! Ma mélyrehatóan belemerülünk abba, hogyan fűzhet egy Word-dokumentumot a másikhoz az Aspose.Words for .NET használatával, miközben a formázás tiszta és rendezett marad. Kapcsold be, mert ennek az útmutatónak a végére egy dokumentum-összevonó maestro leszel!
+Szia! Volt már olyan, hogy több Word-dokumentumot kellett egyesítenie egybe, de elakadt a kellemetlen formázási problémák? Ne félj! Ma mélyrehatóan belemerülünk abba, hogyan fűzhet egy Word-dokumentumot a másikhoz az Aspose.Words for .NET használatával, miközben a formázás tiszta és rendezett marad. Kapcsold be, mert ennek az útmutatónak a végére egy dokumentum-összevonó maestro leszel!
 
 ## Előfeltételek
 
@@ -72,7 +72,7 @@ Ideje mindent összehozni! A forrásdokumentumot hozzáfűzzük a céldokumentum
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
- Íme, csatoljuk`srcDoc` nak nek`dstDoc` célstílusok használatával. A`options` paraméter biztosítja a formázási szabályaink alkalmazását.
+ Íme, csatoljuk`srcDoc` hogy`dstDoc` célstílusok használatával. A`options` paraméter biztosítja a formázási szabályaink alkalmazását.
 
 ## 5. lépés: Mentse el az egyesített dokumentumot
 
@@ -82,7 +82,7 @@ Végül, de nem utolsósorban mentsük el az újonnan egyesített dokumentumunka
 dstDoc.Save(dataDir + "MergedDocument.docx");
 ```
 
-Bumm! Sikeresen egyesített két Word-dokumentumot, miközben a formázás nem változott. 
+Fellendülés! Sikeresen egyesített két Word-dokumentumot, miközben a formázás nem változott. 
 
 ## Következtetés
 
@@ -91,7 +91,7 @@ Bumm! Sikeresen egyesített két Word-dokumentumot, miközben a formázás nem v
 ## GYIK
 
 ### Megtarthatom a céldokumentum számozását a forrás helyett?
- Igen, módosíthatja a`ImportFormatOptions` elérni ezt.
+ Igen, módosíthatja a`ImportFormatOptions` ennek eléréséhez.
 
 ### Mi van, ha nincs Aspose.Words for .NET?
  Ingyenes próbaverziót letölthet a webhelyről[itt](https://releases.aspose.com/).

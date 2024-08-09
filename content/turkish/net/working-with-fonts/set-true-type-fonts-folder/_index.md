@@ -2,82 +2,96 @@
 title: True Type Yazı Tipleri Klasörünü Ayarla
 linktitle: True Type Yazı Tipleri Klasörünü Ayarla
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak bir belgeyi oluştururken gerçek tip yazı tipleri klasörünü ayarlamaya yönelik adım adım kılavuz.
+description: Aspose.Words for .NET kullanarak Word belgelerinde True Type Fonts klasörünü nasıl ayarlayacağınızı öğrenin. Tutarlı yazı tipi yönetimi sağlamak için ayrıntılı, adım adım kılavuzumuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/working-with-fonts/set-true-type-fonts-folder/
 ---
+## giriiş
 
-Bu eğitimde, Aspose.Words for .NET kullanarak bir belgeyi işlerken doğru tip yazı tipleri klasörünü ayarlamanız için size adım adım yol göstereceğiz. Birlikte verilen C# kaynak kodunu açıklayacağız ve bu özelliği anlamanıza ve kendi projelerinizde uygulamanıza yardımcı olacak kapsamlı bir kılavuz sunacağız. Bu eğitimin sonunda, Aspose.Words for .NET kullanarak belgelerinizi işlerken kullanılacak True Type yazı tiplerini içeren özel bir klasörü nasıl belirleyeceğinizi öğreneceksiniz.
+Aspose.Words for .NET'i kullanarak Word belgelerinde yazı tipi yönetiminin büyüleyici dünyasına dalıyoruz. Doğru yazı tiplerini yerleştirmede veya belgenizin her cihazda mükemmel görünmesini sağlamada zorluk yaşadıysanız doğru yerdesiniz. Belgelerinizin yazı tipi yönetimini kolaylaştırmak, belgelerinizde tutarlılık ve netlik sağlamak için True Type Yazı Tipleri klasörünü ayarlama sürecini adım adım anlatacağız.
 
-## 1. Adım: Belge dizinini tanımlayın
-Öncelikle belgeler dizininizin yolunu ayarlamanız gerekir. Bu, düzenlenmiş işlenmiş belgenizi kaydetmek istediğiniz konumdur. "BELGELERİNİZ DİZİNİ"ni uygun yolla değiştirin.
+## Önkoşullar
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+İşin özüne geçmeden önce, başarıya hazır olduğunuzdan emin olmak için birkaç önkoşulu ele alalım:
 
-## 2. Adım: Oluşturulacak belgeyi yükleyin
- Daha sonra, belgeyi kullanarak oluşturulacak belgeyi yüklemeniz gerekir.`Document` sınıf. Doğru belge yolunu belirttiğinizden emin olun.
+1.  Aspose.Words for .NET: En son sürümün kurulu olduğundan emin olun. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: Visual Studio gibi çalışan bir .NET geliştirme ortamı.
+3. Temel C# Bilgisi: C# programlamaya aşinalık faydalı olacaktır.
+4. Örnek Belge: Çalışmak istediğiniz bir Word belgesini hazır bulundurun.
 
-```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
-```
+## Ad Alanlarını İçe Aktar
 
-## 3. Adım: True Type Yazı Tipleri Klasörünü Ayarlayın
-Artık, bir örneğini oluşturarak oluşturma sırasında kullanılacak gerçek tip yazı tiplerinin klasörünü belirtebilirsiniz.`FontSettings` sınıf ve kullanımı`SetFontsFolder()` yazı tipleri klasörünü ayarlama yöntemi. True Type yazı tiplerinizi içeren özel bir klasör belirtebilirsiniz. İkinci parametre`SetFontsFolder()` belirtilen klasörün alt klasörlerinde de arama yapmak isteyip istemediğinizi belirtir.
+Öncelikle gerekli ad alanlarını içe aktarmamız gerekiyor. Bunlar her şeyin yolunda gitmesini sağlayan sahne arkası ekibi gibidir.
 
 ```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
-doc.FontSettings = fontSettings;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## 4. Adım: İşlenen belgeyi kaydedin
- Son olarak, oluşturulan belgeyi kullanarak bir dosyaya kaydedebilirsiniz.`Save()` yöntemi`Document` sınıf. Doğru yolu ve dosya adını belirttiğinizden emin olun.
+## 1. Adım: Belgenizi Yükleyin
 
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
-```
-
-### Aspose.Words for .NET kullanarak Set True Type Fonts Klasörü için örnek kaynak kodu 
+ Belgenizi yükleyerek başlayalım. biz kullanacağız`Document` Mevcut bir Word belgesini yüklemek için Aspose.Words'ten sınıf.
 
 ```csharp
 // Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Adım 2: FontSettings'i Başlatın
+
+ Daha sonra, örneğinin bir örneğini oluşturacağız.`FontSettings`sınıf. Bu sınıf, yazı tiplerinin belgemizde nasıl işleneceğini özelleştirmemize olanak tanır.
+
+```csharp
 FontSettings fontSettings = new FontSettings();
-// Bu ayarın, varsayılan olarak aranan tüm varsayılan yazı tipi kaynaklarını geçersiz kılacağını unutmayın. Artık yalnızca bu klasörler aranacak
-// Yazı tiplerini oluştururken veya gömerken kullanılan yazı tipleri. Sistem yazı tipi kaynaklarını korurken fazladan bir yazı tipi kaynağı eklemek için hem FontSettings.GetFontSources hem de kullanın.
-// Bunun yerine FontSettings.SetFontSources
+```
+
+## 3. Adım: Yazı Tipleri Klasörünü Ayarlayın
+
+Şimdi heyecan verici kısım geliyor. True Type Fontlarımızın bulunduğu klasörü belirteceğiz. Bu adım, Aspose.Words'ün yazı tiplerini oluştururken veya gömerken bu klasördeki yazı tiplerini kullanmasını sağlar.
+
+```csharp
+// Bu ayarın, varsayılan olarak aranan tüm varsayılan yazı tipi kaynaklarını geçersiz kılacağını unutmayın.
+// Artık yazı tipleri oluşturulurken veya gömülürken yalnızca bu klasörlerde yazı tipleri aranacaktır.
 fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
+```
+
+## Adım 4: Yazı Tipi Ayarlarını Belgeye Uygulayın
+
+Yazı tipi ayarlarımız yapılandırıldığında artık bu ayarları belgemize uygulayacağız. Bu adım, belgemizin belirtilen yazı tiplerini kullandığından emin olmak için çok önemlidir.
+
+```csharp
 // Yazı tipi ayarlarını belirleme
 doc.FontSettings = fontSettings;
-doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
+```
+
+## Adım 5: Belgeyi Kaydedin
+
+Son olarak belgeyi kaydedeceğiz. Bunu çeşitli formatlarda kaydedebilirsiniz, ancak bu eğitimde onu PDF olarak kaydedeceğiz.
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.SetTrueTypeFontsFolder.pdf");
 ```
 
 ## Çözüm
-Bu eğitimde Aspose.Words for .NET kullanarak bir belgeyi oluştururken true type fonts klasörünü nasıl ayarlayacağımızı öğrendik. Bu adım adım kılavuzu izleyerek belgelerinizi oluştururken kullanılacak True Type yazı tiplerini içeren özel bir klasörü kolayca belirtebilirsiniz. Aspose.Words, belgelerinizdeki yazı tipleriyle Kelime İşleme için güçlü ve esnek bir API sunar. Bu bilgiyle belgelerinizi özel ihtiyaçlarınıza göre işlerken kullanılan yazı tiplerini kontrol edebilir ve özelleştirebilirsiniz.
 
-### SSS'ler
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak Word belgeleriniz için başarıyla True Type Fonts klasörünü oluşturdunuz. Bu, belgelerinizin tüm platformlarda tutarlı ve profesyonel görünmesini sağlar. Yazı tipi yönetimi, belge oluşturmanın kritik bir yönüdür ve Aspose.Words ile inanılmaz derecede basittir.
 
-#### S: Aspose.Words'te TrueType yazı tipleri klasörünü nasıl yapılandırabilirim?
+## SSS'ler
 
- C: Aspose.Words'te TrueType yazı tipleri klasörünü yapılandırmak için`SetTrueTypeFontsFolder` yöntemi`Fonts` TrueType yazı tiplerini içeren klasörün konumunu belirten sınıf.
+### Birden fazla yazı tipi klasörü kullanabilir miyim?
+ Evet, birden fazla yazı tipi klasörünü birleştirerek kullanabilirsiniz`FontSettings.GetFontSources`Ve`FontSettings.SetFontSources`.
 
-#### S: Hangi tür yazı tipleri TrueType yazı tipleri olarak kabul edilir?
+### Belirtilen yazı tipi klasörü mevcut değilse ne olur?
+Belirtilen yazı tipi klasörü mevcut değilse Aspose.Words yazı tiplerini bulamayacak ve onun yerine varsayılan sistem yazı tipleri kullanılacaktır.
 
-C: TrueType yazı tipleri popüler bir yazı tipi biçimidir. Genellikle Word belgelerinde kullanılırlar ve .ttf veya .ttc dosya uzantısına sahiptirler.
+### Varsayılan yazı tipi ayarlarına geri dönebilir miyim?
+ Evet, varsayılan yazı tipi ayarlarına sıfırlayarak geri dönebilirsiniz.`FontSettings` misal.
 
-#### S: Aspose.Words'te birden fazla TrueType yazı tipi klasörü belirtebilir miyim?
+### Yazı tiplerini belgeye gömmek mümkün mü?
+Evet, Aspose.Words, farklı cihazlar arasında tutarlılık sağlamak için yazı tiplerini belgeye yerleştirmenize olanak tanır.
 
-C: Evet, Aspose.Words'te birden fazla TrueType yazı tipi klasörü belirleyebilirsiniz.`SetTrueTypeFontsFolder` yöntemi`Fonts` klasör konumlarının listesini içeren sınıf.
-
-#### S: Aspose.Words'te yapılandırılan TrueType yazı tipleri klasörünü nasıl kontrol edebilirim?
-
- C: Aspose.Words'te yapılandırılmış TrueType Fonts klasörünü kontrol etmek için`GetTrueTypeFontsFolder` yöntemi`Fonts` Yapılandırılmış TrueType Yazı Tipleri klasörünün konumunu almak için sınıf.
-
-#### S: Aspose.Words'te TrueType yazı tipleri klasörünü yapılandırmak neden önemlidir?
-
-C: Aspose.Words'te TrueType yazı tipleri klasörünü ayarlamak önemlidir çünkü Aspose.Words'ün Word belgelerini işlerken gereken yazı tiplerini bulmasına yardımcı olur. Bu, farklı sistemlerde bile belge formatı ve görünümünde tutarlılık sağlar.
+### Belgemi hangi formatlarda kaydedebilirim?
+Aspose.Words, PDF, DOCX, HTML ve daha fazlasını içeren çeşitli formatları destekler.

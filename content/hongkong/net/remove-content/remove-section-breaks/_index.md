@@ -53,7 +53,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 
 ## 第 3 步：迭代各部分
 
-刪除分節符的關鍵是迭代文件中的各個部分，從倒數第二個部分開始並向第一個部分移動。
+刪除分節符的關鍵是迭代文件中的各個部分，從倒數第二個部分開始一直到第一個部分。
 
 1. 循環穿過部分：創建一個從倒數第二個部分開始向後移動的循環。
 ```csharp
@@ -67,7 +67,7 @@ for (int i = doc.Sections.Count - 2; i >= 0; i--)
 
 在循環中，您將把目前部分的內容複製到最後一個部分的開頭，然後刪除目前部分。
 
-1. 複製內容：使用`PrependContent`複製內容的方法。
+1. 複製內容：使用`PrependContent`方法複製內容。
 ```csharp
 doc.LastSection.PrependContent(doc.Sections[i]);
 ```
@@ -87,7 +87,7 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ## 結論
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 成功從 Word 文件中刪除了分節符。此方法可確保您的文件精簡且沒有不必要的分節符，從而更易於管理和編輯。
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功從 Word 文件中刪除了分節符。此方法可確保您的文件精簡且沒有不必要的分節符，從而更易於管理和編輯。
 
 ## 常見問題解答
 

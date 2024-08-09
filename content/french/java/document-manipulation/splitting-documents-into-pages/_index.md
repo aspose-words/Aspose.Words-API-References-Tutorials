@@ -26,7 +26,7 @@ Avant de plonger dans le code, assurez-vous que les conditions préalables suiva
 Pour commencer, configurez votre environnement de développement comme suit :
 
 - Créez un projet Java dans votre environnement de développement intégré (IDE) préféré.
-- Ajoutez la bibliothèque Aspose.Words pour Java à votre projet. Vous pouvez vous référer au[Documentation](https://reference.aspose.com/words/java/) pour des instructions détaillées.
+- Ajoutez la bibliothèque Aspose.Words pour Java à votre projet. Vous pouvez vous référer au[documentation](https://reference.aspose.com/words/java/) pour des instructions détaillées.
 
 ## 4. Comprendre le code source
 

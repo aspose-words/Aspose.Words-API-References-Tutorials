@@ -2,140 +2,103 @@
 title: 使用 Ole 包在 Word 中插入 Ole 对象
 linktitle: 使用 Ole 包在 Word 中插入 Ole 对象
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 将带有 OLE 包的 OLE 对象插入文档。
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中插入 OLE 对象。按照我们详细的分步指南无缝嵌入文件。
 type: docs
 weight: 10
 url: /zh/net/working-with-oleobjects-and-activex/insert-ole-object-with-ole-package/
 ---
+## 介绍
 
-下面是一步一步的指南，解释下面的 C# 源代码，说明如何使用 Aspose.Words for .NET 使用 OLE 包在 Word 中插入 OLE 对象。
+如果您曾经想将文件嵌入 Word 文档，那么您来对地方了。无论是 ZIP 文件、Excel 工作表还是任何其他文件类型，将其直接嵌入 Word 文档都非常有用。想象一下，这就像在您的文档中有一个秘密隔间，您可以在其中存放各种宝藏。今天，我们将介绍如何使用 Aspose.Words for .NET 来实现这一点。准备好成为 Word 大师了吗？让我们开始吧！
 
-## 步骤 1：导入必要的参考资料
-开始之前，请确保已将使用 Aspose.Words for .NET 所需的引用导入到项目中。这包括导入 Aspose.Words 库并将所需的命名空间添加到源文件中。
+## 先决条件
+
+在开始之前，请确保您已准备好以下内容：
+
+1. Aspose.Words for .NET：如果你还没有，请从[这里](https://releases.aspose.com/words/net/).
+2. 开发环境：Visual Studio 或任何其他 .NET 开发环境。
+3. 对 C# 的基本了解：您不需要成为专家，但了解 C# 会有所帮助。
+4. 文档目录：您可以存储和检索文档的文件夹。
+
+## 导入命名空间
+
+首先，让我们理清命名空间。您需要在项目中包含以下命名空间：
 
 ```csharp
+using System;
+using System.IO;
 using Aspose.Words;
 using Aspose.Words.Drawing;
-using System.IO;
 ```
 
-## 第 2 步：创建新文档和文档生成器
-在此步骤中，我们将使用`Document`类和使用文档生成器`DocumentBuilder`班级。
+让我们将其分解成小步骤，这样就很容易理解了。
+
+## 步骤 1：设置文档
+
+想象一下，您是一位拥有空白画布的艺术家。首先，我们需要一张空白画布，也就是我们的 Word 文档。设置方法如下：
 
 ```csharp
+//文档目录的路径
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 步骤 3：插入带有 OLE 包的 OLE 对象
-使用文档生成器的`InsertOleObject`方法将带有 OLE 包的 OLE 对象插入文档。指定数据流、对象类型、显示选项和其他必要的设置。
+此代码初始化一个新的 Word 文档并设置一个 DocumentBuilder，我们将使用它来将内容插入到我们的文档中。
+
+## 第 2 步：读取 Ole 对象
+
+接下来，让我们读取要嵌入的文件。想象一下拿起你想藏在秘密隔间的宝藏：
 
 ```csharp
-byte[] bs = File.ReadAllBytes(MyDir + "Zip file.zip");
+byte[] bs = File.ReadAllBytes(dataDir + "Zip file.zip");
+```
+
+此行从 ZIP 文件中读取所有字节并将它们存储在字节数组中。
+
+## 步骤 3：插入 Ole 对象
+
+现在到了神奇的部分。我们将把文件嵌入到我们的 Word 文档中：
+
+```csharp
 using (Stream stream = new MemoryStream(bs))
 {
-     Shape shape = builder.InsertOleObject(stream, "Package", true, null);
-     OlePackage olePackage = shape.OleFormat.OlePackage;
-     olePackage.FileName = "filename.zip";
-     olePackage.DisplayName = "displayname.zip";
+    Shape shape = builder.InsertOleObject(stream, "Package", true, null);
+    OlePackage olePackage = shape.OleFormat.OlePackage;
+    olePackage.FileName = "filename.zip";
+    olePackage.DisplayName = "displayname.zip";
 }
 ```
+
+在这里，我们从字节数组创建一个内存流，并使用`InsertOleObject`方法将其嵌入到文档中。我们还为嵌入的对象设置了文件名和显示名称。
 
 ## 步骤 4：保存文档
-使用文档的`Save`方法将文档保存到文件。
+
+最后，让我们保存我们的杰作：
 
 ```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
+doc.Save(dataDir + "WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
 ```
 
-### 使用 Aspose.Words for .NET 的 OLE 包插入 OLE 对象的示例源代码
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-byte[] bs = File.ReadAllBytes(MyDir + "Zip file.zip");
-using (Stream stream = new MemoryStream(bs))
-{
-     Shape shape = builder.InsertOleObject(stream, "Package", true, null);
-     OlePackage olePackage = shape.OleFormat.OlePackage;
-     olePackage.FileName = "filename.zip";
-     olePackage.DisplayName = "displayname.zip";
-}
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
-```
-
-这是使用 Aspose.Words for .NET 的 OLE 包插入 OLE 对象的完整代码示例。请确保导入必要的引用并按照前面描述的步骤将此代码集成到您的项目中。
+这会将嵌入文件的文档保存在指定的目录中。
 
 ## 结论
 
-总之，我们已经完成了一步一步的指南，使用 Aspose.Words for .NET 将 OLE 对象插入到带有 OLE 包的 Word 文档中。
+就这样！您已成功使用 Aspose.Words for .NET 将 OLE 对象嵌入 Word 文档。这就像在文档中添加了一颗随时可以揭开的隐藏宝石。从技术文档到动态报告，这种技术对于各种应用程序都非常有用。 
 
-通过遵循这些步骤，您将能够使用 Aspose.Words for .NET 将带有 OLE 包的 OLE 对象成功插入到 Word 文档中。请务必导入必要的引用并仔细遵循说明以获得所需的结果。
+## 常见问题解答
 
-### 使用 ole 包在 Word 中插入 ole 对象的常见问题解答
+### 我可以使用此方法嵌入其他文件类型吗？
+是的，您可以嵌入各种文件类型，例如 Excel 表、PDF 和图像。
 
-#### 问：我需要导入哪些凭证才能使用 Aspose.Words for .NET？
+### 我需要 Aspose.Words 的许可证吗？
+是的，您需要有效的执照。您可以获得[临时执照](https://purchase.aspose.com/temporary-license/)进行评估。
 
-答：要使用 Aspose.Words for .NET，您需要导入以下参考：
+### 如何自定义 OLE 对象的显示名称？
+您可以设置`DisplayName`的财产`OlePackage`进行自定义。
 
-```csharp
-using Aspose.Words;
-using Aspose.Words.Drawing;
-using System.IO;
-```
+### Aspose.Words 与 .NET Core 兼容吗？
+是的，Aspose.Words 同时支持 .NET Framework 和 .NET Core。
 
-#### 问：如何创建新文档和文档生成器？
-
-答：您可以使用`Document`类和使用文档生成器`DocumentBuilder`类，如下图所示：
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-#### 问：如何将带有 OLE 包的 OLE 对象插入到文档中？
-
-答：使用`InsertOleObject`文档生成器的方法（`DocumentBuilder`) 将带有 OLE 包的 OLE 对象插入文档。指定数据流、对象类型、显示选项和其他必要的设置。以下是示例：
-
-```csharp
-byte[] bs = File.ReadAllBytes(MyDir + "File_zip.zip");
-using (Stream stream = new MemoryStream(bs))
-{
-      Shape shape = builder.InsertOleObject(stream, "Package", true, null);
-      OlePackage olePackage = shape.OleFormat.OlePackage;
-      olePackage.FileName = "file_name.zip";
-      olePackage.DisplayName = "display_name.zip";
-}
-```
-
-#### 问：如何保存文档？
-
-答：使用文档`Save`方法将文档保存到文件。以下是示例：
-
-```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
-```
-
-#### 问：您能提供使用 Aspose.Words for .NET 的 OLE 包插入 OLE 对象的完整示例吗？
-
-答：这是使用 Aspose.Words for .NET 插入带有 OLE 包的 OLE 对象的完整示例代码。请确保导入必要的引用并按照前面描述的步骤将此代码集成到您的项目中：
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-byte[] bs = File.ReadAllBytes(MyDir + "File_zip.zip");
-using (Stream stream = new MemoryStream(bs))
-{
-      Shape shape = builder.InsertOleObject(stream, "Package", true, null);
-      OlePackage olePackage = shape.OleFormat.OlePackage;
-      olePackage.FileName = "file_name.zip";
-      olePackage.DisplayName = "display_name.zip";
-}
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
-```
-
-至此，我们完成了使用 Aspose.Words for .NET 将带有 OLE 包的 OLE 对象插入 Word 文档的教程。请随意导入必要的引用并按照所述步骤将此代码集成到您的项目中。如果您有任何其他问题，请随时与我们联系。
+### 我可以编辑 Word 文档中嵌入的 OLE 对象吗？
+不可以，您无法直接在 Word 中编辑 OLE 对象。您需要在其本机应用程序中打开它。

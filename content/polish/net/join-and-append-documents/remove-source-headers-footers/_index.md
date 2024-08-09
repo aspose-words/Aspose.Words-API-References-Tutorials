@@ -98,4 +98,4 @@ Nagłówki i stopki z dokumentu źródłowego mogą być kontynuowane w dokumenc
 Tak, Aspose.Words dla .NET umożliwia usuwanie nagłówków i stopek przy jednoczesnym zachowaniu pozostałej części formatowania dokumentu.
 
 ### Gdzie mogę znaleźć więcej zasobów i wsparcia dla Aspose.Words dla .NET?
- Odwiedzić[Aspose.Words dla dokumentacji .NET](https://reference.aspose.com/words/net/) szczegółowe odniesienia do API i przykłady.
+ Odwiedź[Aspose.Words dla dokumentacji .NET](https://reference.aspose.com/words/net/) szczegółowe odniesienia do API i przykłady.

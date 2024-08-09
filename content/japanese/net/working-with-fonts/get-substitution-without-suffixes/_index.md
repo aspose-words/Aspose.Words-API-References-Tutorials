@@ -7,8 +7,9 @@ type: docs
 weight: 10
 url: /ja/net/working-with-fonts/get-substitution-without-suffixes/
 ---
+## 導入
 
-Aspose.Words for .NET を使用してフォント置換を管理する包括的なガイドへようこそ。ドキュメントにフォントが正しく表示されないことに悩んだことがあるなら、このガイドはまさにうってつけです。このチュートリアルでは、サフィックスなしでフォント置換を効率的に処理するための手順を段階的に説明します。さあ、始めましょう!
+Aspose.Words for .NET を使用してフォント置換を管理する包括的なガイドへようこそ。ドキュメントにフォントが正しく表示されないことに悩んだことがあるなら、このガイドはまさにうってつけです。このチュートリアルでは、サフィックスなしでフォント置換を効率的に処理するための手順を段階的に説明します。
 
 ## 前提条件
 
@@ -26,7 +27,6 @@ Aspose.Words for .NET を使用してフォント置換を管理する包括的�
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Fonts;
-using Aspose.Words.WarningInfo;
 using System.Collections.Generic;
 ```
 
@@ -102,22 +102,22 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 
 ## よくある質問
 
-### Q1: 複数のカスタム ディレクトリのフォントを使用するにはどうすればよいですか?
+### 複数のカスタム ディレクトリのフォントを使用するにはどうすればよいですか?
 
 複数追加できます`FolderFontSource`インスタンスに`fontSources`それに応じてフォント ソースをリストし、更新します。
 
-### Q2: Aspose.Words for .NET の無料試用版はどこからダウンロードできますか?
+### Aspose.Words for .NET の無料試用版はどこからダウンロードできますか?
 
 無料トライアルは以下からダウンロードできます。[Aspose 無料トライアルページ](https://releases.aspose.com/).
 
-###  Q3: 複数の種類の警告を処理できますか？`IWarningCallback`?
+### 複数の種類の警告を処理できますか？`IWarningCallback`?
 
-はい`IWarningCallback`インターフェースを使用すると、フォントの置換だけでなく、さまざまな種類の警告を処理できます。
+はい、`IWarningCallback`インターフェースを使用すると、フォントの置換だけでなく、さまざまな種類の警告を処理できます。
 
-### Q4: Aspose.Words のサポートはどこで受けられますか?
+### Aspose.Words のサポートはどこで受けられますか?
 
 サポートについては、[Aspose.Words サポート フォーラム](https://forum.aspose.com/c/words/8).
 
-### Q5: 一時ライセンスを購入することは可能ですか？
+### 一時ライセンスを購入することは可能ですか？
 
 はい、臨時免許証は取得できます。[一時ライセンスページ](https://purchase.aspose.com/temporary-license/).

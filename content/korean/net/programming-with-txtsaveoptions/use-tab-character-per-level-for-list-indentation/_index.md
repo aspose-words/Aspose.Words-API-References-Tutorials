@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-이 섹션에서는 Aspose.Words for .NET을 사용하여 탭 들여쓰기가 있는 다중 레벨 목록을 만듭니다. 다음과 같이하세요:
+이 섹션에서는 Aspose.Words for .NET을 사용하여 탭 들여쓰기가 있는 다중 레벨 목록을 만듭니다. 다음 단계를 따르세요.
 
 ## 1단계: 문서 설정
 
@@ -121,7 +121,7 @@ doc.Save(dataDir + "WorkingWithTxtSaveOptions.UseTabCharacterPerLevelForListInde
  사용`ListFormat.ApplyBulletDefault()` 대신 방법`ApplyNumberDefault()` 글머리 기호 목록을 만들려면
 
 ### 들여쓰기에 사용되는 탭 문자의 크기를 어떻게 조정하나요?
- 불행히도 탭 크기는`TxtSaveOptions`고쳐 졌어. 들여쓰기 크기를 조정하려면 공백을 사용하거나 목록 형식을 직접 사용자 정의해야 할 수도 있습니다.
+ 불행히도 탭 크기는`TxtSaveOptions`고정되어 있습니다. 들여쓰기 크기를 조정하려면 공백을 사용하거나 목록 형식을 직접 사용자 정의해야 할 수도 있습니다.
 
 ### PDF 또는 DOCX와 같은 다른 형식으로 내보낼 때 이 설정을 사용할 수 있습니까?
 특정 탭 문자 설정은 텍스트 파일에 적용됩니다. PDF 또는 DOCX와 같은 형식의 경우 해당 형식 내에서 서식 옵션을 조정해야 합니다.

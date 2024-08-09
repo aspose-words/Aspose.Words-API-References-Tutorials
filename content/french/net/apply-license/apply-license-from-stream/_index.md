@@ -9,13 +9,13 @@ url: /fr/net/apply-license/apply-license-from-stream/
 ---
 ## Introduction
 
-Salut, amis codeurs ! Si vous plongez dans le monde d'Aspose.Words pour .NET, l'une des premières choses à faire est d'appliquer une licence pour libérer tout le potentiel de la bibliothèque. Dans ce guide, nous vous expliquerons comment appliquer une licence à partir d'un flux. Croyez-moi, c'est plus facile qu'il n'y paraît, et à la fin de ce didacticiel, votre application sera opérationnelle et fonctionnera sans problème. Prêt à commencer? Allons-y!
+Salut, amis codeurs ! Si vous plongez dans le monde d'Aspose.Words pour .NET, l'une des premières choses à faire est d'appliquer une licence pour libérer tout le potentiel de la bibliothèque. Dans ce guide, nous vous expliquerons comment appliquer une licence à partir d'un flux. Croyez-moi, c'est plus facile qu'il n'y paraît, et à la fin de ce didacticiel, votre application sera opérationnelle et fonctionnera sans problème. Prêt à commencer ? Allons-y!
 
 ## Conditions préalables
 
 Avant de mettre la main à la pâte, assurons-nous que vous disposez de tout ce dont vous avez besoin :
 
-1.  Aspose.Words pour .NET : assurez-vous que la bibliothèque est installée. Sinon, vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/).
+1.  Aspose.Words pour .NET : assurez-vous que la bibliothèque est installée. Sinon, vous pouvez[téléchargez-le ici](https://releases.aspose.com/words/net/).
 2.  Fichier de licence : vous avez besoin d'un fichier de licence valide. Si vous n'en avez pas, vous pouvez en obtenir un[permis temporaire](https://purchase.aspose.com/temporary-license/) à des fins de tests.
 3. Connaissances de base en C# : une compréhension de base de la programmation C# est supposée.
 
@@ -80,7 +80,7 @@ catch (Exception e)
 
 ## Conclusion
 
-Et voila! L'application d'une licence à partir d'un flux dans Aspose.Words for .NET est un processus simple une fois que vous connaissez les étapes. En suivant ce guide, vous vous assurez que votre application peut exploiter toutes les capacités d'Aspose.Words sans aucune limitation. Si vous rencontrez des problèmes, n'hésitez pas à consulter le[Documentation](https://reference.aspose.com/words/net/) ou demander de l'aide sur le[forum d'entraide](https://forum.aspose.com/c/words/8). Bon codage !
+Et voilà ! L'application d'une licence à partir d'un flux dans Aspose.Words for .NET est un processus simple une fois que vous connaissez les étapes. En suivant ce guide, vous vous assurez que votre application peut exploiter toutes les capacités d'Aspose.Words sans aucune limitation. Si vous rencontrez des problèmes, n'hésitez pas à consulter le[documentation](https://reference.aspose.com/words/net/) ou demander de l'aide sur le[forum d'assistance](https://forum.aspose.com/c/words/8). Bon codage !
 
 ## FAQ
 

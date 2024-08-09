@@ -29,9 +29,9 @@ using Aspose.Words;
 
 Décomposons le processus en étapes claires :
 
-## Étape 1 : Charger des documents
+## Étape 1 : Charger les documents
 
- Tout d'abord, chargez les documents source et destination dans`Document` objets:
+ Tout d'abord, chargez les documents source et destination dans`Document` objets :
 
 ```csharp
 // Chemin d'accès à votre répertoire de documents
@@ -85,7 +85,7 @@ Oui, Aspose.Words gère différentes mises en page de manière transparente, en 
 ### La liaison des en-têtes et des pieds de page affecte-t-elle les autres formats des documents ?
 Non, la liaison des en-têtes et des pieds de page n'affecte que les sections spécifiées, laissant intacts les autres contenus et le formatage.
 
-### Aspose.Words est-il compatible avec toutes les versions de .NET ?
+### Aspose.Words est-il compatible avec toutes les versions de .NET ?
 Aspose.Words prend en charge différentes versions de .NET Framework et .NET Core, garantissant la compatibilité entre les plates-formes.
 
 ### Puis-je dissocier les en-têtes et les pieds de page après les avoir liés ?

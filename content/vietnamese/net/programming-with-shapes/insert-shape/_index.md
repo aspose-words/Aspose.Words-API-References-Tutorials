@@ -99,14 +99,14 @@ doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã chèn và thao tác thành công các hình dạng trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn này bao gồm những điều cơ bản, nhưng Aspose.Words cung cấp nhiều tính năng nâng cao hơn để làm việc với các hình dạng, chẳng hạn như kiểu tùy chỉnh, trình kết nối và hình dạng nhóm.
+Và bạn có nó! Bạn đã chèn và thao tác thành công các hình dạng trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn này bao gồm những điều cơ bản, nhưng Aspose.Words cung cấp nhiều tính năng nâng cao hơn để làm việc với các hình dạng, chẳng hạn như kiểu tùy chỉnh, trình kết nối và hình dạng nhóm.
 
  Để biết thêm thông tin chi tiết, hãy truy cập[Aspose.Words cho tài liệu .NET](https://reference.aspose.com/words/net/).
 
 ## Câu hỏi thường gặp
 
 ### Làm cách nào để chèn các loại hình dạng khác nhau?
-Bạn có thể thay đổi`ShapeType` bên trong`InsertShape` phương pháp chèn các loại hình dạng khác nhau như hình tròn, hình chữ nhật và mũi tên.
+Bạn có thể thay đổi`ShapeType` trong`InsertShape` phương pháp chèn các loại hình dạng khác nhau như hình tròn, hình chữ nhật và mũi tên.
 
 ### Tôi có thể thêm văn bản bên trong các hình dạng không?
  Có, bạn có thể sử dụng`builder.Write` phương pháp thêm văn bản bên trong các hình sau khi chèn chúng.

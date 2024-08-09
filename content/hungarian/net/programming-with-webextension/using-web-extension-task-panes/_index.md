@@ -63,7 +63,7 @@ TaskPane taskPane = new TaskPane();
 doc.WebExtensionTaskPanes.Add(taskPane);
 ```
 
- Itt létrehozunk egy újat`TaskPane` objektumot, és adja hozzá a dokumentumhoz`WebExtensionTaskPanes` Gyűjtemény.
+ Itt létrehozunk egy újat`TaskPane` objektumot, és adja hozzá a dokumentumhoz`WebExtensionTaskPanes` gyűjtemény.
 
 ### 4. lépés: A munkaablak konfigurálása
 
@@ -147,7 +147,7 @@ Ez a kód betölti a dokumentumot, és kinyomtatja a konzol minden egyes munkaab
 
 ## Következtetés
 
-És ez az! Sikeresen hozzáadott és konfigurált egy webbővítmény munkaablakot egy Word-dokumentumban az Aspose.Words for .NET használatával. Ez a hatékony funkció jelentősen javíthatja Word-dokumentumait, mivel további funkciókat biztosít közvetlenül a dokumentumon belül. 
+És ennyi! Sikeresen hozzáadott és konfigurált egy webbővítmény munkaablakot egy Word-dokumentumban az Aspose.Words for .NET használatával. Ez a hatékony funkció jelentősen javíthatja Word-dokumentumait, mivel további funkciókat biztosít közvetlenül a dokumentumon belül. 
 
 ## GYIK
 

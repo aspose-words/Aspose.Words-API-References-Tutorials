@@ -2,186 +2,128 @@
 title: Rewizja kształtu
 linktitle: Rewizja kształtu
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Poprawiaj kształty w dokumencie Word za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak radzić sobie z poprawkami kształtów w dokumentach programu Word przy użyciu Aspose.Words dla .NET, korzystając z tego obszernego przewodnika. Opanuj śledzenie zmian, wstawianie kształtów i nie tylko.
 type: docs
 weight: 10
 url: /pl/net/working-with-revisions/shape-revision/
 ---
+## Wstęp
 
-tym przewodniku krok po kroku przeprowadzimy Cię przez proces wprowadzania poprawek do kształtów w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Dostarczymy Ci pełny kod źródłowy i pokażemy, jak sformatować wynik przeceny.
+Programowe edytowanie dokumentów programu Word może być trudnym zadaniem, zwłaszcza jeśli chodzi o obsługę kształtów. Niezależnie od tego, czy tworzysz raporty, projektujesz szablony, czy po prostu automatyzujesz tworzenie dokumentów, możliwość śledzenia poprawek kształtu i zarządzania nimi ma kluczowe znaczenie. Aspose.Words dla .NET oferuje potężny interfejs API, dzięki któremu proces ten jest płynny i wydajny. W tym samouczku zagłębimy się w szczegóły poprawiania kształtów w dokumentach programu Word, upewniając się, że masz narzędzia i wiedzę potrzebne do łatwego zarządzania dokumentami.
 
-## Krok 1: Tworzenie dokumentu i dodawanie kształtów
+## Warunki wstępne
 
-Pierwszym krokiem jest utworzenie nowego dokumentu i dodanie kształtów.
+Zanim zagłębimy się w kod, upewnijmy się, że masz wszystko, czego potrzebujesz:
+
+-  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words. Możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
+- Środowisko programistyczne: Należy mieć skonfigurowane środowisko programistyczne, takie jak Visual Studio.
+- Podstawowa znajomość języka C#: Znajomość języka programowania C# i podstawowych koncepcji programowania obiektowego.
+- Dokument programu Word: dokument programu Word do pracy lub można go utworzyć w trakcie samouczka.
+
+## Importuj przestrzenie nazw
+
+Najpierw zaimportujmy niezbędne przestrzenie nazw. Dzięki nim uzyskamy dostęp do klas i metod niezbędnych do obsługi dokumentów i kształtów Worda.
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+```
+
+## Krok 1: Konfigurowanie katalogu dokumentów
+
+Zanim zaczniemy pracować z kształtami, musimy zdefiniować ścieżkę do naszego katalogu dokumentów. Tutaj będziemy zapisywać nasze zmodyfikowane dokumenty.
+
+```csharp
+// Ścieżka do katalogu dokumentów.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## Krok 2: Tworzenie nowego dokumentu
+
+Utwórzmy nowy dokument programu Word, w którym będziemy wstawiać i poprawiać kształty.
 
 ```csharp
 Document doc = new Document();
-Assert.False(doc.TrackRevisions);
-
-Shape shape = new Shape(doc, ShapeType.Cube);
-shape. WrapType = WrapType. Inline;
-shape. Width = 100.0;
-shape. Height = 100.0;
-doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 ```
 
-## Krok 2: Śledź poprawki i dodaj kolejny kształt
+## Krok 3: Wstawianie kształtu wbudowanego
 
-Włączymy śledzenie wersji i dodamy kolejny kształt.
-
-```csharp
-doc.StartTrackRevisions("John Doe");
-
-shape = new Shape(doc, ShapeType.Sun);
-shape. WrapType = WrapType. Inline;
-shape. Width = 100.0;
-shape. Height = 100.0;
-doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
-```
-
-## Krok 3: Pobierz kolekcję kształtów i sprawdź, czy nie ma poprawek
-
-Pobierzemy kolekcję kształtów z dokumentu i sprawdzimy wersje powiązane z każdym kształtem.
+Zaczniemy od wstawienia kształtu wbudowanego do naszego dokumentu bez śledzenia poprawek. Kształt osadzony to taki, który płynie wraz z tekstem.
 
 ```csharp
-List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-Assert.True(shapes[0].IsDeleteRevision);
-
-Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-Assert.True(shapes[1].IsInsertRevision);
-```
-
-## Krok 4: Sprawdzanie wersji przenoszenia kształtu
-
-Załadujemy istniejący dokument zawierający wersje przemieszczeń kształtu i sprawdzimy powiązane wersje.
-
-```csharp
-doc = new Document(MyDir + "Revision shape.docx");
-
-shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert. False(shapes[0].IsMoveFromRevision);
-Assert.True(shapes[0].IsMoveToRevision);
-
-Assert.True(shapes[1].IsMoveFromRevision);
-Assert. False(shapes[1].IsMoveToRevision);
-```
-
-### Przykładowy kod źródłowy dla Shape Revision przy użyciu Aspose.Words dla .NET
-
-Oto kompletny kod źródłowy umożliwiający wprowadzanie poprawek do kształtów w dokumencie przy użyciu Aspose.Words dla .NET:
-
-```csharp
-Document doc = new Document();
-
-//Wstaw kształt osadzony bez śledzenia wersji.
-Assert.False(doc.TrackRevisions);
 Shape shape = new Shape(doc, ShapeType.Cube);
 shape.WrapType = WrapType.Inline;
 shape.Width = 100.0;
 shape.Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
+```
 
-// Rozpocznij śledzenie wersji, a następnie wstaw inny kształt.
+## Krok 4: Rozpoczęcie śledzenia wersji
+
+Aby śledzić zmiany w naszym dokumencie, musimy włączyć śledzenie wersji. Jest to niezbędne do identyfikacji modyfikacji dokonanych w kształtach.
+
+```csharp
 doc.StartTrackRevisions("John Doe");
+```
+
+## Krok 5: Wstawianie innego kształtu z wersjami
+
+Teraz, gdy włączone jest śledzenie wersji, wstawmy kolejny kształt. Tym razem wszelkie zmiany będą śledzone.
+
+```csharp
 shape = new Shape(doc, ShapeType.Sun);
 shape.WrapType = WrapType.Inline;
 shape.Width = 100.0;
 shape.Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
+```
 
-// Pobierz kolekcję kształtów dokumentu, która zawiera tylko dwa dodane przez nas kształty.
+## Krok 6: Odzyskiwanie i modyfikowanie kształtów
+
+Możemy pobrać wszystkie kształty z dokumentu i zmodyfikować je według potrzeb. Tutaj zdobędziemy kształty i usuniemy pierwszy.
+
+```csharp
 List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-// Usuń pierwszy kształt.
 shapes[0].Remove();
+```
 
-// Ponieważ usunęliśmy ten kształt podczas śledzenia zmian, kształt liczy się jako usunięta wersja.
-Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-Assert.True(shapes[0].IsDeleteRevision);
+## Krok 7: Zapisywanie dokumentu
 
-// Śledząc zmiany, wstawiliśmy kolejny kształt, więc ten kształt będzie się liczył jako wersja wstawiania.
-Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-Assert.True(shapes[1].IsInsertRevision);
+Po dokonaniu zmian musimy zapisać dokument. Dzięki temu wszystkie poprawki i modyfikacje zostaną zapisane.
 
-// Dokument zawiera jeden kształt, który został przeniesiony, ale wersje polegające na przeniesieniu kształtu będą miały dwa wystąpienia tego kształtu.
-// Jeden będzie kształtem w miejscu docelowym, a drugi będzie kształtem w jego pierwotnej lokalizacji.
-doc = new Document(MyDir + "Revision shape.docx");
+```csharp
+doc.Save(dataDir + "Revision shape.docx");
+```
 
+## Krok 8: Obsługa wersji przeniesionych kształtów
+
+Kiedy kształt jest przenoszony, Aspose.Words śledzi to jako wersję. Oznacza to, że będą dwa wystąpienia kształtu: jedno w pierwotnym położeniu i drugie w nowym położeniu.
+
+```csharp
+doc = new Document(dataDir + "Revision shape.docx");
 shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-// Jest to ruch do rewizji, także kształtu w miejscu docelowym.
-Assert.False(shapes[0].IsMoveFromRevision);
-Assert.True(shapes[0].IsMoveToRevision);
-
-// Jest to przejście od rewizji, czyli kształtu w jego pierwotnym położeniu.
-Assert.True(shapes[1].IsMoveFromRevision);
-Assert.False(shapes[1].IsMoveToRevision);
 ```
 
 ## Wniosek
 
-tym samouczku nauczyliśmy się, jak wprowadzać poprawki do kształtów w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Postępując zgodnie z etapami tworzenia dokumentu, włączając śledzenie wersji, sprawdzając wersje powiązane z każdym kształtem i sprawdzając wersje pod kątem przenoszenia kształtów, byliśmy w stanie pomyślnie zarządzać wersjami. Aspose.Words dla .NET oferuje potężny interfejs API do przetwarzania tekstu z recenzjami i formularzami w dokumentach Word.
+I masz to! Pomyślnie nauczyłeś się, jak obsługiwać poprawki kształtów w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Niezależnie od tego, czy zarządzasz szablonami dokumentów, automatyzujesz raporty, czy po prostu śledzisz zmiany, umiejętności te są nieocenione. Postępując zgodnie z tym przewodnikiem krok po kroku, nie tylko opanowałeś podstawy, ale także zyskałeś wgląd w bardziej zaawansowane techniki obsługi dokumentów.
 
-### Często zadawane pytania
+## Często zadawane pytania
 
-#### P: Jak mogę utworzyć nowy dokument i dodać kształty w Aspose.Words dla .NET?
+### Co to jest Aspose.Words dla .NET?
+Aspose.Words dla .NET to potężna biblioteka, która umożliwia programistom tworzenie, modyfikowanie i konwertowanie dokumentów programu Word programowo przy użyciu języka C#.
 
-O: Aby utworzyć nowy dokument i dodać kształty w Aspose.Words dla .NET, możesz użyć poniższego kodu. Tutaj dodajemy dwa kształty, sześcian i słońce, do pierwszej części dokumentu:
+### Czy mogę śledzić zmiany wprowadzone w innych elementach w dokumencie programu Word?
+Tak, Aspose.Words dla .NET obsługuje śledzenie zmian w różnych elementach, w tym w tekście, tabelach i innych.
 
-```csharp
-Document doc = new Document();
-Assert.False(doc.TrackRevisions);
+### Jak mogę uzyskać bezpłatną wersję próbną Aspose.Words dla .NET?
+ Możesz uzyskać bezpłatną wersję próbną Aspose.Words dla .NET[Tutaj](https://releases.aspose.com/).
 
-Shape shape = new Shape(doc, ShapeType.Cube);
-shape. WrapType = WrapType. Inline;
-shape. Width = 100.0;
-shape. Height = 100.0;
-doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
-```
+### Czy możliwe jest programowe akceptowanie lub odrzucanie poprawek?
+Tak, Aspose.Words dla .NET udostępnia metody programowego akceptowania lub odrzucania wersji.
 
-#### P: Jak włączyć śledzenie wersji w Aspose.Words dla .NET?
-
- O: Aby włączyć śledzenie wersji w Aspose.Words dla .NET, możesz użyć`StartTrackRevisions` metoda`Document` obiekt. Ta metoda przyjmuje jako parametr nazwisko autora wersji:
-
-```csharp
-doc.StartTrackRevisions("John Doe");
-```
-
-#### P: Jak mogę sprawdzić wersje powiązane z każdym kształtem w dokumencie Aspose.Words dla .NET?
-
-O: Aby sprawdzić wersje powiązane z każdym kształtem w dokumencie Aspose.Words for .NET, możesz uzyskać kolekcję kształtów dokumentu za pomocą`GetChildNodes` metoda z`NodeType.Shape` typ węzła. Następnie możesz uzyskać dostęp do każdego kształtu`IsDeleteRevision`, `IsInsertRevision`, `IsMoveFromRevision` , I`IsMoveToRevision` właściwości, aby określić, jaki typ rewizji jest powiązany z kształtem:
-
-```csharp
-List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-Assert.True(shapes[0].IsDeleteRevision);
-
-Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-Assert.True(shapes[1].IsInsertRevision);
-```
-
-#### P: Jak mogę sprawdzić przemieszczenia kształtów w dokumencie Aspose.Words dla .NET?
-
- Odp.: Aby sprawdzić zmiany przemieszczeń kształtu w dokumencie Aspose.Words for .NET, możesz załadować istniejący dokument zawierający wersje przesunięć kształtu. Następnie możesz uzyskać dostęp do każdego kształtu`IsMoveFromRevision`I`IsMoveToRevision` właściwości, aby określić, czy jest przenoszony, a jeśli tak, skąd i dokąd:
-
-```csharp
-doc = new Document(MyDir + "Revision shape.docx");
-
-shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert. False(shapes[0].IsMoveFromRevision);
-Assert.True(shapes[0].IsMoveToRevision);
-
-Assert.True(shapes[1].IsMoveFromRevision);
-Assert. False(shapes[1].IsMoveToRevision);
-```
+### Czy mogę używać Aspose.Words dla .NET z innymi językami .NET oprócz C#?
+Absolutnie! Aspose.Words dla .NET może być używany z dowolnym językiem .NET, w tym VB.NET i F#.

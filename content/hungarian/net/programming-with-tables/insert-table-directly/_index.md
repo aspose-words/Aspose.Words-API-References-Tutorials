@@ -129,7 +129,7 @@ Ez a kód menti a dokumentumot a beszúrt táblázattal.
 
 ## Következtetés
 
-Gratulálunk! Sikeresen beszúrt egy táblázatot közvetlenül egy Word-dokumentumba az Aspose.Words for .NET segítségével. Ezzel a folyamattal összetett táblák programozottan hozhatók létre, így sokkal könnyebbé válik a dokumentumautomatizálási feladatai. Akár jelentéseket, számlákat vagy bármilyen más dokumentumtípust készít, a táblák kezelésének megértése alapvető készség.
+Gratulálok! Sikeresen beszúrt egy táblázatot közvetlenül egy Word-dokumentumba az Aspose.Words for .NET segítségével. Ezzel a folyamattal összetett táblák programozottan hozhatók létre, így sokkal könnyebbé válik a dokumentumautomatizálási feladatai. Akár jelentéseket, számlákat vagy bármilyen más dokumentumtípust készít, a táblák kezelésének megértése alapvető készség.
 
 ## GYIK
 

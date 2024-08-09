@@ -65,4 +65,4 @@ Sí, Aspose.Words admite varios marcos .NET, lo que garantiza la compatibilidad 
 Sí, puede procesar por lotes varios archivos de texto utilizando las API de Aspose.Words para optimizar sus tareas de conversión de documentos.
 
 ### ¿Dónde puedo encontrar más recursos y soporte para Aspose.Words?
- Visita el[Documentación de Aspose.Words](https://reference.aspose.com/words/net/)y[Foro de soporte](https://forum.aspose.com/c/words/8) para más información y asistencia.
+ Visita el[Documentación de Aspose.Words](https://reference.aspose.com/words/net/)y[foro de soporte](https://forum.aspose.com/c/words/8) para más información y asistencia.

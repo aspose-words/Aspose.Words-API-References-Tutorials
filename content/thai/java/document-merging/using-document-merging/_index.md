@@ -2,7 +2,7 @@
 title: การใช้การรวมเอกสาร
 linktitle: การใช้การรวมเอกสาร
 second_title: Aspose.Words Java การประมวลผลเอกสาร API
-description: เรียนรู้การรวมเอกสาร Word ได้อย่างราบรื่นโดยใช้ Aspose.Words สำหรับ Java รวม จัดรูปแบบ และจัดการข้อขัดแย้งอย่างมีประสิทธิภาพในไม่กี่ขั้นตอน เริ่มตอนนี้เลย!
+description: เรียนรู้การรวมเอกสาร Word ได้อย่างราบรื่นโดยใช้ Aspose.Words สำหรับ Java รวม จัดรูปแบบ และจัดการข้อขัดแย้งอย่างมีประสิทธิภาพในไม่กี่ขั้นตอน เริ่มต้นทันที!
 type: docs
 weight: 10
 url: /th/java/document-merging/using-document-merging/
@@ -165,7 +165,7 @@ public class DocumentMerger {
 }
 ```
 
- โดยใช้`ImportFormatMode.KEEP_DIFFERENT_STYLES`, Aspose.Words ยังคงรักษาสไตล์ที่แตกต่างกันระหว่างเอกสารต้นทางและปลายทาง จึงสามารถแก้ไขข้อขัดแย้งได้อย่างสวยงาม
+ โดยการใช้`ImportFormatMode.KEEP_DIFFERENT_STYLES`, Aspose.Words ยังคงรักษาสไตล์ที่แตกต่างกันระหว่างเอกสารต้นทางและปลายทาง จึงสามารถแก้ไขข้อขัดแย้งได้อย่างสวยงาม
 
 ## 9. แนวทางปฏิบัติที่ดีที่สุดสำหรับการรวมเอกสาร
 

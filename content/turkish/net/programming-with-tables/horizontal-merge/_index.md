@@ -44,7 +44,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Bu kod parçacığı yeni bir belge oluşturur ve`DocumentBuilder` hareket için.
+ Bu kod parçacığı yeni bir belge oluşturur ve`DocumentBuilder` eylem için.
 
 ## Adım 2: İlk Hücreyi Ekleme
 
@@ -98,7 +98,7 @@ Bu kod parçacığı tabloyu tamamlar ve belgeyi belirtilen dizine kaydeder.
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesindeki hücreleri yatay olarak birleştirme sanatında artık ustalaştınız. Bu adımları takip ederek karmaşık tablo yapılarını kolaylıkla oluşturabilirsiniz. Belgelerinizi ihtiyaç duyduğunuz kadar dinamik ve esnek hale getirmek için Aspose.Words'ün yeteneklerini denemeye ve keşfetmeye devam edin. Mutlu kodlama!
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesindeki hücreleri yatay olarak birleştirme sanatında artık ustalaştınız. Bu adımları takip ederek karmaşık tablo yapılarını kolaylıkla oluşturabilirsiniz. Belgelerinizi ihtiyaç duyduğunuz kadar dinamik ve esnek hale getirmek için Aspose.Words'ün yeteneklerini denemeye ve keşfetmeye devam edin. Mutlu kodlama!
 
 ## SSS'ler
 

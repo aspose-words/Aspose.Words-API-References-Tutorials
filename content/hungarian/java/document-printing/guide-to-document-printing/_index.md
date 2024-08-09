@@ -40,7 +40,7 @@ Kezdjük egy egyszerű Word dokumentum létrehozásával az Aspose.Words for Jav
 
 ### A dokumentum objektum inicializálása
 
- Új Word-dokumentum létrehozásához inicializálnia kell a`Document` tárgy:
+ Új Word-dokumentum létrehozásához inicializálnia kell a`Document` objektum:
 
 ```java
 Document doc = new Document();

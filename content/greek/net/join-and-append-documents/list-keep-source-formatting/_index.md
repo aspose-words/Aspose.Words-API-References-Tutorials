@@ -1,6 +1,6 @@
 ---
-title: Μορφοποίηση πηγής διατήρησης λίστας
-linktitle: Μορφοποίηση πηγής διατήρησης λίστας
+title: List Keep Μορφοποίηση πηγής
+linktitle: List Keep Μορφοποίηση πηγής
 second_title: Aspose.Words Document Processing API
 description: Μάθετε πώς να συγχωνεύετε έγγραφα του Word διατηρώντας παράλληλα τη μορφοποίηση χρησιμοποιώντας το Aspose.Words για .NET. Αυτό το σεμινάριο παρέχει οδηγίες βήμα προς βήμα για απρόσκοπτη συγχώνευση εγγράφων.
 type: docs
@@ -66,7 +66,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
 ```
 
-## συμπέρασμα
+## Σύναψη
 
 Συμπερασματικά, η συγχώνευση εγγράφων διατηρώντας την αρχική τους μορφοποίηση είναι απλή με το Aspose.Words για .NET. Αυτό το σεμινάριο σάς καθοδήγησε στη διαδικασία, διασφαλίζοντας ότι το συγχωνευμένο έγγραφό σας διατηρεί τη διάταξη και το στυλ του εγγράφου προέλευσης.
 

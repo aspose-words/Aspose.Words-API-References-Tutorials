@@ -1,6 +1,6 @@
 ---
-title: Danh sách được yêu cầu
-linktitle: Danh sách được yêu cầu
+title: Danh sách đặt hàng
+linktitle: Danh sách đặt hàng
 second_title: API xử lý tài liệu Aspose.Words
 description: Tìm hiểu cách tạo danh sách có thứ tự trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước của chúng tôi. Hoàn hảo để tự động hóa việc tạo tài liệu.
 type: docs
@@ -9,13 +9,13 @@ url: /vi/net/working-with-markdown/ordered-list/
 ---
 ## Giới thiệu
 
-Vì vậy, bạn đã quyết định đi sâu vào Aspose.Words for .NET để tạo các tài liệu Word tuyệt vời theo chương trình. Sự lựa chọn tuyệt vời! Hôm nay, chúng ta sẽ chia sẻ cách tạo danh sách có thứ tự trong tài liệu Word. Chúng tôi sẽ thực hiện từng bước một, vì vậy, cho dù bạn là người mới viết mã hay một chuyên gia dày dạn kinh nghiệm, bạn sẽ thấy hướng dẫn này cực kỳ hữu ích. Bắt đầu nào!
+Vì vậy, bạn đã quyết định đi sâu vào Aspose.Words for .NET để tạo các tài liệu Word tuyệt vời theo chương trình. Sự lựa chọn tuyệt vời! Hôm nay, chúng ta sẽ chia sẻ cách tạo danh sách có thứ tự trong tài liệu Word. Chúng tôi sẽ thực hiện từng bước một, vì vậy, cho dù bạn là người mới viết mã hay một chuyên gia dày dạn kinh nghiệm, bạn sẽ thấy hướng dẫn này cực kỳ hữu ích. Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
 Trước khi chúng ta đi sâu vào mã, có một số điều bạn cần:
 
-1.  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt Aspose.Words for .NET. Nếu không, bạn có thể tải xuống[đây](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Đảm bảo bạn đã cài đặt Aspose.Words for .NET. Nếu không, bạn có thể tải xuống[đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Visual Studio hoặc bất kỳ IDE tương thích .NET nào khác.
 3. Kiến thức cơ bản về C#: Bạn nên nắm vững kiến thức cơ bản về C# để dễ dàng theo dõi.
 
@@ -73,7 +73,7 @@ builder.Writeln("Item 2a");
 builder.Writeln("Item 2b");
 ```
 
- Các`ListIndent` phương thức thụt lề danh sách, tạo danh sách phụ. Bây giờ bạn đang tạo một danh sách phân cấp, giống như một danh sách việc cần làm lồng nhau.
+ các`ListIndent` phương thức thụt lề danh sách, tạo danh sách phụ. Bây giờ bạn đang tạo một danh sách phân cấp, giống như một danh sách việc cần làm lồng nhau.
 
 ## Phần kết luận
 
@@ -82,10 +82,10 @@ Việc tạo danh sách có thứ tự trong tài liệu Word theo chương trì
 ## Câu hỏi thường gặp
 
 ### Tôi có thể tùy chỉnh kiểu đánh số của danh sách không?  
- Có, bạn có thể tùy chỉnh kiểu đánh số bằng cách sử dụng`ListFormat` của cải. Bạn có thể đặt các kiểu đánh số khác nhau như chữ số La Mã, chữ cái, v.v.
+ Có, bạn có thể tùy chỉnh kiểu đánh số bằng cách sử dụng`ListFormat`của cải. Bạn có thể đặt các kiểu đánh số khác nhau như chữ số La Mã, chữ cái, v.v.
 
 ### Làm cách nào để thêm nhiều mức thụt lề hơn?  
- Bạn có thể dùng`ListIndent` nhiều lần để tạo ra các cấp độ danh sách phụ sâu hơn. Mỗi cuộc gọi tới`ListIndent` thêm một mức thụt lề.
+ Bạn có thể sử dụng`ListIndent` nhiều lần để tạo ra các cấp độ danh sách phụ sâu hơn. Mỗi cuộc gọi đến`ListIndent` thêm một mức thụt lề.
 
 ### Tôi có thể trộn lẫn các dấu đầu dòng và danh sách đánh số không?  
  Tuyệt đối! Bạn có thể áp dụng các định dạng danh sách khác nhau trong cùng một tài liệu bằng cách sử dụng`ListFormat` tài sản.

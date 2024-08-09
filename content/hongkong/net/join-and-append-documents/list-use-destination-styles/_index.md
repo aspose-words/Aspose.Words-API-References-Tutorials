@@ -74,7 +74,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 
 ## 結論
 
-你有它！使用 Aspose.Words for .NET 可以輕鬆合併文檔，而不必擔心格式問題。無論您正在處理一個大項目還是只是需要整理一些文件，此方法都將使您的清單看起來清晰。因此，下次您遇到文件合併困境時，請記住本指南並像專業人士一樣解決它！
+給你了！使用 Aspose.Words for .NET 可以輕鬆合併文檔，而不必擔心格式問題。無論您正在處理一個大項目還是只是需要整理一些文件，此方法都將使您的清單看起來清晰。因此，下次您遇到文件合併困境時，請記住本指南並像專業人士一樣解決它！
 
 ## 常見問題解答
 

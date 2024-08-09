@@ -91,7 +91,7 @@ Dengan menyematkan objek OLE dan kontrol ActiveX, Anda dapat meningkatkan intera
 
 ### Bagaimana cara mengubah ukuran objek yang disematkan?
 
-Untuk mengubah ukuran objek yang disematkan, klik objek tersebut untuk memilihnya. Anda akan melihat pegangan pengubah ukuran yang dapat Anda gunakan untuk menyesuaikan dimensinya.
+Untuk mengubah ukuran objek yang disematkan, klik objek tersebut untuk memilihnya. Anda akan melihat pengatur ukuran yang dapat Anda gunakan untuk menyesuaikan dimensinya.
 
 ### Mengapa kontrol ActiveX saya tidak berfungsi?
 

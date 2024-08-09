@@ -14,9 +14,9 @@ Per lavorare con i nodi in Aspose.Words per .NET, gli sviluppatori possono utili
  ## Tutorial
 | Titolo | Descrizione |
 | --- | --- |
-| [Utilizza il tipo di nodo](./use-node-type/) | Scopri come utilizzare il tipo di nodo per accedere a informazioni specifiche sul documento con Aspose.Words per .NET. |
-| [Ottieni il nodo genitore](./get-parent-node/) | Scopri come ottenere il nodo genitore di un elemento specifico con Aspose.Words per .NET. |
-| [Documento del proprietario](./owner-document/) | Scopri come utilizzare il documento proprietario in Aspose.Words per .NET. |
-| [Enumerare i nodi figlio](./enumerate-child-nodes/) | Scopri come enumerare i nodi figlio in un paragrafo con Aspose.Words per .NET. |
-| [Accesso digitato](./typed-access/) | Scopri come utilizzare l'accesso digitato per manipolare le tabelle in Aspose.Words per .NET. |
-| [Crea e aggiungi nodo paragrafo](./create-and-add-paragraph-node/) | Crea e aggiungi un nodo di paragrafo ai tuoi documenti Word con Aspose.Words per .NET. |
+| [Utilizza il tipo di nodo](./use-node-type/) | Scopri come padroneggiare la proprietà NodeType in Aspose.Words per .NET con la nostra guida dettagliata. Perfetto per gli sviluppatori che desiderano migliorare le proprie capacità di elaborazione dei documenti. |
+| [Ottieni il nodo genitore](./get-parent-node/) | Scopri come ottenere il nodo padre di una sezione di documento utilizzando Aspose.Words per .NET con questo tutorial dettagliato passo dopo passo. |
+| [Documento del proprietario](./owner-document/) | Scopri come lavorare con il documento proprietario in Aspose.Words per .NET. Questa guida passo passo illustra la creazione e la manipolazione dei nodi all'interno di un documento. |
+| [Enumerare i nodi figlio](./enumerate-child-nodes/) | Scopri come enumerare i nodi figlio in un documento Word utilizzando Aspose.Words per .NET con questo tutorial passo passo. |
+| [Accesso digitato](./typed-access/) | Scopri come utilizzare l'accesso digitato in Aspose.Words per .NET per manipolare facilmente elementi del documento come tabelle e righe. Questa guida passo passo semplifica il tuo flusso di lavoro. |
+| [Crea e aggiungi nodo paragrafo](./create-and-add-paragraph-node/) | Scopri come creare e aggiungere un nodo di paragrafo in un documento utilizzando Aspose.Words per .NET con questo tutorial dettagliato passo dopo passo. |

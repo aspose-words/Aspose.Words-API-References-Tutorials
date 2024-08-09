@@ -9,11 +9,11 @@ url: /hu/net/programming-with-shapes/add-group-shape/
 ---
 ## Bevezetés
 
-gazdag vizuális elemekkel rendelkező összetett dokumentumok létrehozása néha ijesztő feladat lehet, különösen csoportos alakzatok kezelésekor. De ne félj! Az Aspose.Words for .NET leegyszerűsíti ezt a folyamatot, és olyan egyszerűvé teszi, mint a torta. Ebben az oktatóanyagban végigvezetjük azokat a lépéseket, amelyekkel csoportalakzatokat adhat hozzá Word-dokumentumaihoz. Készen állsz a merülésre? Kezdjük el!
+gazdag vizuális elemekkel rendelkező összetett dokumentumok létrehozása néha ijesztő feladat lehet, különösen csoportos alakzatok kezelésekor. De ne félj! Az Aspose.Words for .NET leegyszerűsíti ezt a folyamatot, és olyan egyszerűvé teszi, mint a torta. Ebben az oktatóanyagban végigvezetjük azokat a lépéseket, amelyekkel csoportalakzatokat adhat hozzá Word-dokumentumaihoz. Készen állsz a merülésre? Kezdjük is!
 
 ## Előfeltételek
 
-Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következőkkel:
+Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik az alábbiakkal:
 
 1.  Aspose.Words for .NET: Letöltheti a[Az Aspose kiadási oldala](https://releases.aspose.com/words/net/).
 2. Fejlesztői környezet: Visual Studio vagy bármely más, .NET-tel kompatibilis IDE.
@@ -45,7 +45,7 @@ doc.EnsureMinimum();
 
 ## 2. lépés: Hozza létre a GroupShape objektumot
 
- Ezután létre kell hoznunk a`GroupShape`tárgy. Ez az objektum tárolóként fog szolgálni más formák számára, lehetővé téve, hogy csoportosítsuk őket.
+ Ezután létre kell hoznunk a`GroupShape`objektum. Ez az objektum tárolóként fog szolgálni más formák számára, lehetővé téve, hogy csoportosítsuk őket.
 
 ```csharp
 GroupShape groupShape = new GroupShape(doc);

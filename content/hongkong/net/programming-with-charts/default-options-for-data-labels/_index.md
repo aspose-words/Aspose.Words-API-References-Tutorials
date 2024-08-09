@@ -122,7 +122,7 @@ doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
 
 ## 結論
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 成功建立了帶有自訂餅圖的 Word 文件。這個功能強大的庫可以輕鬆實現文件創建和操作的自動化，從而節省您的時間和精力。無論您是產生報告、發票或任何其他類型的文檔，Aspose.Words 都能滿足您的需求。
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功建立了帶有自訂餅圖的 Word 文件。這個功能強大的庫可以輕鬆實現文件創建和操作的自動化，從而節省您的時間和精力。無論您是產生報告、發票或任何其他類型的文檔，Aspose.Words 都能滿足您的需求。
 
 隨意探索[Aspose.Words 文檔](https://reference.aspose.com/words/net/)了解更多功能和範例。快樂編碼！
 
@@ -135,7 +135,7 @@ doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
 您可以透過以下方式獲得支持[Aspose.Words 支援論壇](https://forum.aspose.com/c/words/8).
 
 ### 我可以添加其他類型的圖表嗎？
-是的，Aspose.Words 支援各種圖表類型，例如長條圖、折線圖和長條圖。檢查[文件](https://reference.aspose.com/words/net/)更多細節。
+是的，Aspose.Words 支援各種圖表類型，例如長條圖、折線圖和長條圖。檢查[文件](https://reference.aspose.com/words/net/)了解更多詳情。
 
 ### Aspose.Words 與 .NET Core 相容嗎？
 是的，Aspose.Words 與 .NET Core 相容。您可以在以下位置找到更多信息[文件](https://reference.aspose.com/words/net/).

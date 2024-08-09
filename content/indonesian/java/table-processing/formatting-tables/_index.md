@@ -8,7 +8,7 @@ weight: 13
 url: /id/java/table-processing/formatting-tables/
 ---
 
-Apakah Anda siap untuk memulai perjalanan menguasai seni memformat tabel dalam dokumen menggunakan Aspose.Words untuk Java? Dalam panduan komprehensif ini, kita akan mempelajari lebih dalam dunia pemformatan dokumen, khususnya berfokus pada tabel. Aspose.Words untuk Java adalah alat canggih yang memungkinkan Anda membuat, memanipulasi, dan menyempurnakan tabel dalam dokumen Anda dengan mudah.
+Apakah Anda siap untuk memulai perjalanan menguasai seni memformat tabel dalam dokumen menggunakan Aspose.Words untuk Java? Dalam panduan komprehensif ini, kita akan mempelajari lebih dalam dunia pemformatan dokumen, khususnya berfokus pada tabel. Aspose.Words untuk Java adalah alat canggih yang memungkinkan Anda membuat, memanipulasi, dan menyempurnakan tabel di dokumen Anda dengan mudah.
 
 ## Perkenalan
 
@@ -139,7 +139,7 @@ table.setStyleIdentifier(StyleIdentifier.LIGHT_SHADING_ACCENT_1);
 
 ### Bagaimana cara mengubah warna latar belakang sel tabel?
 
- Anda dapat mengubah warna latar belakang sel tabel menggunakan`Shading` Properti. Berikut ini contohnya:
+ Anda dapat mengubah warna latar belakang sel tabel menggunakan`Shading` milik. Berikut ini contohnya:
 
 ```java
 cell1.getCellFormat().getShading().setBackgroundPatternColor(Color.LIGHT_GRAY);

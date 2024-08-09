@@ -44,7 +44,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Đoạn mã này thiết lập một tài liệu mới và chuẩn bị`DocumentBuilder` hành động.
+ Đoạn mã này thiết lập một tài liệu mới và chuẩn bị`DocumentBuilder` cho hành động.
 
 ## Bước 2: Chèn ô đầu tiên
 
@@ -98,7 +98,7 @@ doc.Save(dataDir + "WorkingWithTables.HorizontalMerge.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn vừa nắm vững nghệ thuật hợp nhất các ô theo chiều ngang trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo các bước này, bạn có thể tạo các cấu trúc bảng phức tạp một cách dễ dàng. Hãy tiếp tục thử nghiệm và khám phá các khả năng của Aspose.Words để làm cho tài liệu của bạn trở nên năng động và linh hoạt như bạn cần. Chúc mừng mã hóa!
+Và bạn có nó! Bạn vừa nắm vững nghệ thuật hợp nhất các ô theo chiều ngang trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo các bước này, bạn có thể tạo các cấu trúc bảng phức tạp một cách dễ dàng. Hãy tiếp tục thử nghiệm và khám phá các khả năng của Aspose.Words để làm cho tài liệu của bạn trở nên năng động và linh hoạt như bạn cần. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 

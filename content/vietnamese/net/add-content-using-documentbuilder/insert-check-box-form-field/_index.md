@@ -18,7 +18,7 @@ Trước khi đi sâu vào chi tiết, hãy đảm bảo bạn có mọi thứ m
 - Môi trường phát triển: Một IDE như Visual Studio sẽ là sân chơi của bạn.
 - Hiểu biết cơ bản về C#: Mặc dù chúng tôi sẽ trình bày mọi thứ một cách chi tiết, nhưng việc nắm bắt cơ bản về C# sẽ có ích.
 
-Chuẩn bị để lăn? Bắt đầu nào!
+Sẵn sàng để cuộn? Hãy bắt đầu!
 
 ## Nhập các không gian tên cần thiết
 
@@ -54,7 +54,7 @@ Document doc = new Document();
 
 ## Bước 3: Khởi tạo Trình tạo tài liệu
 
- Các`DocumentBuilder` class là công cụ bạn chọn để thêm nội dung vào tài liệu. Hãy coi nó như cọ vẽ và bảng màu của bạn.
+ các`DocumentBuilder` class là công cụ bạn chọn để thêm nội dung vào tài liệu. Hãy coi nó như cọ vẽ và bảng màu của bạn.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -64,7 +64,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Bước 4: Chèn trường biểu mẫu hộp kiểm
 
-Đến phần thú vị! Bây giờ chúng ta sẽ chèn một trường biểu mẫu hộp kiểm vào tài liệu của mình.
+Đây là phần thú vị! Bây giờ chúng ta sẽ chèn một trường biểu mẫu hộp kiểm vào tài liệu của mình.
 
 ```csharp
 builder.InsertCheckBox("CheckBox", true, true, 0);
@@ -98,7 +98,7 @@ Aspose.Words for .NET là một thư viện mạnh mẽ cho phép các nhà phá
 
 ### Làm cách nào tôi có thể tải Aspose.Words cho .NET?
 
- Bạn có thể tải xuống Aspose.Words cho .NET từ[trang mạng](https://releases.aspose.com/words/net/) . Ngoài ra còn có một tùy chọn cho[dùng thử miễn phí](https://releases.aspose.com/) nếu bạn muốn khám phá các tính năng của nó.
+ Bạn có thể tải xuống Aspose.Words cho .NET từ[trang web](https://releases.aspose.com/words/net/) . Ngoài ra còn có một tùy chọn cho[dùng thử miễn phí](https://releases.aspose.com/) nếu bạn muốn khám phá các tính năng của nó.
 
 ### Tôi có thể sử dụng Aspose.Words cho .NET với bất kỳ ứng dụng .NET nào không?
 

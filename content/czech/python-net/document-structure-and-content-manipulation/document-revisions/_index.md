@@ -16,7 +16,7 @@ Revize dokumentu zahrnují sledování změn provedených v dokumentu v průběh
 
 ## Nastavení Aspose.Words pro Python
 
- Než začneme, ujistěte se, že máte nainstalovaný Aspose.Words pro Python. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/python/). Po instalaci můžete do skriptu Python importovat potřebné moduly a začít.
+ Než začneme, ujistěte se, že máte nainstalovaný Aspose.Words pro Python. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/python/). Po instalaci můžete do skriptu Python importovat potřebné moduly a začít.
 
 ```python
 import asposewords
@@ -113,7 +113,7 @@ Aspose.Words pro Python zjednodušuje revize a sledování dokumentů, zlepšuje
 
 ### Jak nainstaluji Aspose.Words pro Python?
 
- Aspose.Words pro Python si můžete stáhnout z[tady](https://releases.aspose.com/words/python/). Postupujte podle pokynů k instalaci a nastavte jej ve vašem prostředí.
+ Aspose.Words pro Python si můžete stáhnout z[zde](https://releases.aspose.com/words/python/). Postupujte podle pokynů k instalaci a nastavte jej ve vašem prostředí.
 
 ### Mohu zakázat sledování revizí pro konkrétní části dokumentu?
 

@@ -9,7 +9,7 @@ url: /sv/net/programming-with-htmlsaveoptions/add-css-class-name-prefix/
 ---
 ## Introduktion
 
-Välkommen! Om du dyker in i Aspose.Words-världen för .NET får du en njutning. Idag ska vi utforska hur man lägger till ett CSS-klassnamnsprefix när man sparar ett Word-dokument som HTML med Aspose.Words för .NET. Den här funktionen är väldigt praktisk när du vill undvika klassnamnskonflikter i dina HTML-filer.
+Välkomna! Om du dyker in i Aspose.Words-världen för .NET får du en njutning. Idag ska vi utforska hur man lägger till ett CSS-klassnamnsprefix när man sparar ett Word-dokument som HTML med Aspose.Words för .NET. Den här funktionen är väldigt praktisk när du vill undvika klassnamnskonflikter i dina HTML-filer.
 
 ## Förutsättningar
 
@@ -47,7 +47,7 @@ Om du inte redan har gjort det, lägg till Aspose.Words för .NET till ditt proj
 Install-Package Aspose.Words
 ```
 
-Bra! Nu är vi redo att börja koda.
+Stor! Nu är vi redo att börja koda.
 
 ## Steg 2: Ladda ditt dokument
 
@@ -114,13 +114,13 @@ Och där har du det! Genom att följa dessa steg har du framgångsrikt lagt till
 ## FAQ's
 
 ### Kan jag använda ett annat prefix för varje sparoperation?
- Ja, du kan anpassa prefixet varje gång du sparar ett dokument genom att ändra`CssClassNamePrefix` fast egendom.
+ Ja, du kan anpassa prefixet varje gång du sparar ett dokument genom att ändra`CssClassNamePrefix` egendom.
 
 ### Stöder den här metoden inline CSS?
  De`CssClassNamePrefix`egenskapen fungerar med extern CSS. För inline CSS behöver du ett annat tillvägagångssätt.
 
 ### Hur kan jag inkludera andra HTML-sparalternativ?
- Du kan konfigurera olika egenskaper för`HtmlSaveOptions` för att anpassa din HTML-utdata. Kolla[dokumentation](https://reference.aspose.com/words/net/) för mer detaljer.
+ Du kan konfigurera olika egenskaper för`HtmlSaveOptions` för att anpassa din HTML-utdata. Kontrollera[dokumentation](https://reference.aspose.com/words/net/) för mer information.
 
 ### Är det möjligt att spara HTML-koden i en stream?
  Absolut! Du kan spara dokumentet i en ström genom att skicka strömobjektet till`Save` metod.

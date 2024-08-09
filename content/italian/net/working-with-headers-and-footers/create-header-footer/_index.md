@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /it/net/working-with-headers-and-footers/create-header-footer/
 ---
+## Introduzione
 
 L'aggiunta di intestazioni e piè di pagina ai tuoi documenti può migliorarne la professionalità e la leggibilità. Con Aspose.Words per .NET, puoi facilmente creare e personalizzare intestazioni e piè di pagina per i tuoi documenti Word. In questo tutorial ti guideremo attraverso il processo passo dopo passo, assicurandoti di poter implementare queste funzionalità senza problemi.
 
@@ -14,7 +15,7 @@ L'aggiunta di intestazioni e piè di pagina ai tuoi documenti può migliorarne l
 
 Prima di iniziare, assicurati di avere quanto segue:
 
--  Aspose.Words per .NET: scarica e installa da[Link per scaricare](https://releases.aspose.com/words/net/).
+-  Aspose.Words per .NET: scarica e installa da[collegamento per il download](https://releases.aspose.com/words/net/).
 - Ambiente di sviluppo: come Visual Studio, per scrivere ed eseguire il codice.
 - Conoscenza di base di C#: comprensione di C# e .NET framework.
 - Documento di esempio: un documento di esempio a cui applicare intestazioni e piè di pagina o crearne uno nuovo come mostrato nel tutorial.
@@ -40,7 +41,7 @@ string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 ## Passaggio 2: crea un nuovo documento
 
- Creare un nuovo documento e a`DocumentBuilder` per facilitare l'aggiunta di contenuti.
+ Creare un nuovo documento e a`DocumentBuilder`per facilitare l'aggiunta di contenuti.
 
 ```csharp
 Document doc = new Document();
@@ -168,22 +169,22 @@ Seguendo questi passaggi, puoi aggiungere e personalizzare in modo efficace inte
 
 ## Domande frequenti
 
-### Q1: Cos'è Aspose.Words per .NET?
+### Cos'è Aspose.Words per .NET?
 
 Aspose.Words per .NET è una libreria che consente agli sviluppatori di creare, modificare e convertire documenti Word a livello di codice all'interno delle applicazioni .NET.
 
-### Q2: Posso aggiungere immagini all'intestazione o al piè di pagina?
+### Posso aggiungere immagini all'intestazione o al piè di pagina?
 
  Sì, puoi aggiungere facilmente immagini all'intestazione o al piè di pagina utilizzando il file`DocumentBuilder.InsertImage` metodo.
 
-### Q3: Come posso impostare intestazioni e piè di pagina diversi per la prima pagina?
+### Come faccio a impostare intestazioni e piè di pagina diversi per la prima pagina?
 
  È possibile impostare intestazioni e piè di pagina diversi per la prima pagina utilizzando il comando`DifferentFirstPageHeaderFooter` proprietà del`PageSetup` classe.
 
-### Q4: Dove posso trovare ulteriore documentazione su Aspose.Words?
+### Dove posso trovare ulteriore documentazione su Aspose.Words?
 
  È possibile trovare una documentazione completa su[Pagina della documentazione dell'API Aspose.Words](https://reference.aspose.com/words/net/).
 
-### Q5: è disponibile il supporto per Aspose.Words?
+### È disponibile supporto per Aspose.Words?
 
- Sì, Aspose offre supporto tramite il loro[Forum di assistenza](https://forum.aspose.com/c/words/8).
+ Sì, Aspose offre supporto tramite il loro[forum di supporto](https://forum.aspose.com/c/words/8).

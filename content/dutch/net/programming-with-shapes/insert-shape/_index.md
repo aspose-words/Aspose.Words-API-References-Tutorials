@@ -82,7 +82,7 @@ secondShape.Rotation = 30.0;
 
 Dit codefragment voegt een ander tekstvak in met dezelfde afmetingen en rotatie als het eerste, maar zonder de positie ervan te specificeren.
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
  Na het toevoegen van de vormen is de laatste stap het opslaan van het document. Wij gebruiken de`OoxmlSaveOptions` om het opslagformaat op te geven.
 

@@ -8,7 +8,7 @@ weight: 10
 url: /it/net/working-with-vba-macros/clone-vba-module/
 ---
 
-## introduzione
+## Introduzione
 
 Ehi, colleghi sviluppatori! Sei pronto per tuffarti nel mondo di Aspose.Words per .NET? Che tu abbia appena iniziato con la manipolazione dei documenti o che tu sia un programmatore esperto, questa guida ti guiderà attraverso tutto ciò che devi sapere su come lavorare con progetti VBA nei documenti Word. Dalla clonazione dei moduli al salvataggio dei tuoi documenti, tratteremo tutto in un semplice tutorial passo passo. Quindi, prendi la tua bevanda preferita, siediti e cominciamo!
 
@@ -105,9 +105,9 @@ Questa riga salva il nuovo documento con il nome "WorkingWithVba.CloneVbaModule.
 
 ## Conclusione
 
-il gioco è fatto! Hai clonato con successo un modulo VBA da un documento Word a un altro utilizzando Aspose.Words per .NET. Questa potente libreria semplifica incredibilmente la manipolazione dei documenti Word e i passaggi che abbiamo trattato sono solo la punta dell'iceberg. Che tu stia automatizzando la creazione di documenti, modificando contenuti o gestendo progetti VBA, Aspose.Words ti copre.
+Ed ecco qua! Hai clonato con successo un modulo VBA da un documento Word a un altro utilizzando Aspose.Words per .NET. Questa potente libreria semplifica incredibilmente la manipolazione dei documenti Word e i passaggi che abbiamo trattato sono solo la punta dell'iceberg. Che tu stia automatizzando la creazione di documenti, modificando contenuti o gestendo progetti VBA, Aspose.Words ti copre.
 
- Se sei interessato a esplorare più funzionalità, dai un'occhiata a[Documentazione dell'API](https://reference.aspose.com/words/net/) . Ho bisogno di aiuto? Visitare il[Forum di assistenza](https://forum.aspose.com/c/words/8) per assistenza.
+ Se sei interessato a esplorare più funzionalità, dai un'occhiata a[Documentazione dell'API](https://reference.aspose.com/words/net/) . Hai bisogno di aiuto? Visita il[forum di supporto](https://forum.aspose.com/c/words/8) per assistenza.
 
 Buona programmazione e ricorda: la pratica rende perfetti!
 

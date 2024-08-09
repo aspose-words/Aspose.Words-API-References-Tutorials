@@ -77,7 +77,7 @@ Table tableClone = (Table) table.Clone(true);
 
 ## الخطوة 5: أدخل الجدول المستنسخ في المستند
 
- قم بإدراج الجدول المستنسخ في المستند مباشرة بعد الجدول الأصلي. استخدم ال`InsertAfter` طريقة لهذا.
+ قم بإدراج الجدول المستنسخ في المستند مباشرة بعد الجدول الأصلي. استخدم`InsertAfter` طريقة لهذا.
 
 ```csharp
 table.ParentNode.InsertAfter(tableClone, table);

@@ -80,7 +80,7 @@ Et juste comme ça, votre document contient désormais une forme personnalisée 
 
 ## Conclusion
 
-Voilà! L'ajout de formes personnalisées à vos documents Word à l'aide d'Aspose.Words pour .NET est simple et peut considérablement améliorer l'attrait visuel de vos documents. En suivant ces étapes, vous pouvez facilement insérer une forme « Coins coupés » et vous assurer que votre document répond aux normes requises. Bon codage !
+Et voilà ! L'ajout de formes personnalisées à vos documents Word à l'aide d'Aspose.Words pour .NET est simple et peut considérablement améliorer l'attrait visuel de vos documents. En suivant ces étapes, vous pouvez facilement insérer une forme « Coins coupés » et vous assurer que votre document répond aux normes requises. Bon codage !
 
 ## FAQ
 

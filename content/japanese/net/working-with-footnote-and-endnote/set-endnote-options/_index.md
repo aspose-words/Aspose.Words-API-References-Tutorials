@@ -2,45 +2,61 @@
 title: 文末脚注オプションの設定
 linktitle: 文末脚注オプションの設定
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書の文末脚注オプションを設定する方法を学びます。サンプル ソース コードを使用したステップバイステップのチュートリアルです。
+description: この包括的なステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書の文末脚注オプションを設定する方法を学習します。
 type: docs
 weight: 10
 url: /ja/net/working-with-footnote-and-endnote/set-endnote-options/
 ---
+## 導入
 
-このステップバイステップのチュートリアルでは、Aspose.Words for .NET を使用して Word 文書の文末脚注オプションを設定する方法について説明します。提供されている C# ソース コードについて説明し、独自のプロジェクトに実装する方法を示します。
+エンドノートを効率的に管理して Word 文書を強化したいとお考えですか? もう探す必要はありません! このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書のエンドノート オプションを設定する手順を説明します。このガイドを読み終える頃には、エンドノートを文書のニーズに合わせてカスタマイズするプロになれているでしょう。
 
-始めるには、開発環境にAspose.Words for .NETがインストールされ、セットアップされていることを確認してください。まだインストールされていない場合は、次の場所からライブラリをダウンロードしてインストールしてください。[Aspose.Releases]https://releases.aspose.com/words/net/.
+## 前提条件
 
-## ステップ1: ドキュメントオブジェクトの初期化
+チュートリアルに進む前に、次の前提条件が満たされていることを確認してください。
 
-まず、`Document`ソース ドキュメントへのパスを指定してオブジェクトを作成します。
+-  Aspose.Words for .NET: Aspose.Words for .NETライブラリがインストールされていることを確認してください。ダウンロードはこちらから行えます。[ここ](https://releases.aspose.com/words/net/).
+- 開発環境: Visual Studio などの開発環境をセットアップします。
+- C# の基礎知識: C# プログラミングの基本的な理解が役立ちます。
+
+## 名前空間のインポート
+
+開始するには、必要な名前空間をインポートする必要があります。これらの名前空間は、Word 文書の操作に必要なクラスとメソッドへのアクセスを提供します。
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Notes;
+```
+
+## ステップ1: ドキュメントを読み込む
+
+まず、文末脚注オプションを設定したい文書を読み込みます。`Document`これを実現するには、Aspose.Words ライブラリのクラスを使用します。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-## ステップ 2: DocumentBuilder オブジェクトの初期化
+## ステップ2: DocumentBuilderを初期化する
 
-次に、`DocumentBuilder`ドキュメントに対して操作を実行するオブジェクト:
+次に、`DocumentBuilder`クラス。このクラスは、ドキュメントにコンテンツを追加する簡単な方法を提供します。
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## ステップ3: テキストと文末脚注の追加
+## ステップ3: テキストを追加して文末脚注を挿入する
 
-使用`Write`方法の`DocumentBuilder`オブジェクトを使用して文書にテキストを追加し、`InsertFootnote`文末脚注を挿入する方法:
+さて、文書にテキストを追加し、文末脚注を挿入してみましょう。`InsertFootnote`方法の`DocumentBuilder`クラスを使用すると、ドキュメントに文末脚注を追加できます。
 
 ```csharp
 builder.Write("Some text");
 builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
 ```
 
-## ステップ4: Endnoteオプションの設定
+## ステップ4: Endnoteオプションにアクセスして設定する
 
-アクセス`EndnoteOptions`ドキュメントのプロパティを使用して、文末脚注のオプションを変更します。この例では、再開ルールを各ページで再開するように設定し、位置をセクションの最後に設定しています。
+エンドノートのオプションをカスタマイズするには、`EndnoteOptions`の財産`Document`クラス。その後、再開ルールや位置などのさまざまなオプションを設定できます。
 
 ```csharp
 EndnoteOptions option = doc.EndnoteOptions;
@@ -50,51 +66,29 @@ option.Position = EndnotePosition.EndOfSection;
 
 ## ステップ5: ドキュメントを保存する
 
-最後に、変更したドキュメントを保存します。
+最後に、更新された文末脚注オプションで文書を保存しましょう。`Save`方法の`Document`クラスを使用すると、ドキュメントを指定されたディレクトリに保存できます。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 ```
 
-これで完了です。Aspose.Words for .NET を使用して、Word 文書の文末脚注オプションを正常に設定できました。
+## 結論
 
-### Aspose.Words for .NET を使用して Endnote オプションを設定するためのサンプル ソース コード
+Aspose.Words for .NET を使用して Word 文書に文末脚注オプションを設定するのは、これらの簡単な手順で簡単です。文末脚注の再開ルールと位置をカスタマイズすることで、特定の要件を満たすように文書を調整できます。Aspose.Words を使用すると、Word 文書を簡単に操作できます。
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";	
-Document doc = new Document(dataDir + "Document.docx");
-DocumentBuilder builder = new DocumentBuilder(doc);
+## よくある質問
 
-builder.Write("Some text");
-builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
+### Aspose.Words for .NET とは何ですか?
+Aspose.Words for .NET は、Word 文書をプログラムで操作するための強力なライブラリです。開発者は、さまざまな形式で Word 文書を作成、変更、変換できます。
 
-EndnoteOptions option = doc.EndnoteOptions;
-option.RestartRule = FootnoteNumberingRule.RestartPage;
-option.Position = EndnotePosition.EndOfSection;
+### Aspose.Words を無料で使用できますか?
+ Aspose.Wordsは無料トライアルでご利用いただけます。延長使用の場合は、ライセンスをご購入ください。[ここ](https://purchase.aspose.com/buy).
 
-doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
-```
+### 文末脚注とは何ですか?
+文末脚注は、セクションまたは文書の末尾に配置される参考文献または注記です。追加情報や引用を提供します。
 
-このコードを独自のプロジェクトで自由に使用し、特定の要件に応じて変更してください。
+### 文末脚注の外観をカスタマイズするにはどうすればよいですか?
+番号付け、位置、再開ルールなどの文末脚注オプションをカスタマイズするには、`EndnoteOptions` Aspose.Words for .NET のクラス。
 
-### よくある質問
-
-#### Q: Aspose.Words で文末脚注のスタイルを設定するにはどうすればいいですか?
-
- A: Aspose.Wordsで文末脚注のスタイルを設定するには、`EndnoteOptions`クラスと`SeparatorNoteTextStyle`プロパティ。このプロパティを使用して、文末脚注のフォント スタイル、サイズ、色などを指定できます。
-
-#### Q: 文書内の文末脚注の番号付けをカスタマイズすることは可能ですか?
-
- A: はい、文書内の文末脚注の番号付けをカスタマイズすることは可能です。`RestartRule`そして`NumberStyle`の特性`EndnoteOptions`特定の再開ルールと番号付けスタイルを定義するクラス。
-
-#### Q: 文書内で文末脚注を配置するにはどうすればいいですか?
-
-A: 文書内で文末脚注を配置するには、`Position`の財産`EndnoteOptions`クラス。文末脚注を各ページの下部、各セクションの末尾、または文書の末尾に配置するかどうかを指定できます。
-
-#### Q: 文末脚注の番号付け形式をカスタマイズできますか?
-
- A: はい、Aspose.Wordsでは文末脚注の番号付けの形式をカスタマイズできます。`NumberFormat`の財産`EndnoteOptions`アラビア数字、ローマ数字、文字などの希望の形式を設定するクラス。
-
-#### Q: 文書のセクション間で文末脚注の番号付けを継続することは可能ですか?
-
- A: はい、文書のセクション間で文末脚注の番号を継続することは可能です。`RestartRule`の財産`EndnoteOptions`クラスに設定して`RestartContinuous`セクション間で番号を継続できるようにするため。
+### Aspose.Words for .NET に関する詳細なドキュメントはどこで入手できますか?
+詳細なドキュメントは、[Aspose.Words for .NET ドキュメント](https://reference.aspose.com/words/net/)ページ。

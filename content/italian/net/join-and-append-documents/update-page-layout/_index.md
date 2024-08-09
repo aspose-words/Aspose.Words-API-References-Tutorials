@@ -7,9 +7,9 @@ type: docs
 weight: 10
 url: /it/net/join-and-append-documents/update-page-layout/
 ---
-## introduzione
+## Introduzione
 
-Ehilà! Se hai mai lavorato con documenti di Word a livello di programmazione, sai quanto sia fondamentale gestire i layout di pagina in modo efficace. Che tu stia generando report, creando modelli o semplicemente modificando la progettazione di documenti, mantenere i layout di pagina freschi e accurati è fondamentale. Oggi approfondiremo come aggiornare i layout di pagina nei documenti di Word utilizzando Aspose.Words per .NET. Seguiremo il processo passo dopo passo, così sarai in grado di gestire con sicurezza i layout dei tuoi documenti e assicurarti che tutto sembri perfetto.
+Ehilà! Se hai mai lavorato con documenti di Word a livello di codice, sai quanto sia fondamentale gestire i layout di pagina in modo efficace. Che tu stia generando report, creando modelli o semplicemente modificando la progettazione di documenti, mantenere i layout di pagina freschi e accurati è fondamentale. Oggi approfondiremo come aggiornare i layout di pagina nei documenti di Word utilizzando Aspose.Words per .NET. Seguiremo il processo passo dopo passo, così sarai in grado di gestire con sicurezza i layout dei tuoi documenti e assicurarti che tutto sembri perfetto.
 
 ## Prerequisiti
 

@@ -106,7 +106,7 @@ doc.Save(dataDir + "ExportedDocument.html", saveOptions);
 
 ## Conclusion
 
-Et voila! Vous avez exporté avec succès un champ de formulaire de saisie de texte sous forme de texte brut à l'aide d'Aspose.Words pour .NET. Ce guide aurait dû vous donner une approche claire, étape par étape, pour accomplir cette tâche. N'oubliez pas que la pratique rend parfait, alors continuez à expérimenter différentes options et paramètres pour voir ce que vous pouvez faire d'autre avec Aspose.Words.
+Et voilà ! Vous avez exporté avec succès un champ de formulaire de saisie de texte sous forme de texte brut à l'aide d'Aspose.Words pour .NET. Ce guide aurait dû vous donner une approche claire, étape par étape, pour accomplir cette tâche. N'oubliez pas que la pratique rend parfait, alors continuez à expérimenter différentes options et paramètres pour voir ce que vous pouvez faire d'autre avec Aspose.Words.
 
 ## FAQ
 
@@ -124,7 +124,7 @@ Et voila! Vous avez exporté avec succès un champ de formulaire de saisie de te
 
 ### Puis-je personnaliser le HTML exporté ?
 
- Absolument! Aspose.Words propose diverses options pour personnaliser la sortie HTML. Se référer au[Documentation](https://reference.aspose.com/words/net/) pour plus de détails.
+ Absolument! Aspose.Words propose diverses options pour personnaliser la sortie HTML. Référez-vous au[documentation](https://reference.aspose.com/words/net/) pour plus de détails.
 
 ### Aspose.Words est-il compatible avec .NET Core ?
 

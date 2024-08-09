@@ -9,7 +9,7 @@ url: /hu/net/working-with-fields/insert-field-using-field-builder/
 ---
 ## Bevezetés
 
-Halihó! Valaha azon kapta magát, hogy vakarja a fejét, és azon töprengett, hogyan illeszthet be dinamikus mezőket programozottan Word-dokumentumaiba? Nos, ne aggódj tovább! Ebben az oktatóanyagban belemerülünk az Aspose.Words for .NET csodáiba. Ez egy hatékony könyvtár, amely lehetővé teszi Word-dokumentumok zökkenőmentes létrehozását, kezelését és átalakítását. Pontosabban végigvezetjük a mezők beszúrását a Field Builder segítségével. Kezdjük el!
+Szia! Valaha azon kapta magát, hogy vakarja a fejét, és azon töprengett, hogyan illeszthet be dinamikus mezőket programozottan Word-dokumentumaiba? Nos, ne aggódj tovább! Ebben az oktatóanyagban belemerülünk az Aspose.Words for .NET csodáiba. Ez egy hatékony könyvtár, amely lehetővé teszi Word-dokumentumok zökkenőmentes létrehozását, kezelését és átalakítását. Pontosabban végigvezetjük a mezők beszúrását a Field Builder segítségével. Kezdjük is!
 
 ## Előfeltételek
 
@@ -99,7 +99,7 @@ doc.Save(dataDir + "InsertFieldWithFieldBuilder.docx");
 
 ## Következtetés
 
-Gratulálunk! Most tanulta meg, hogyan lehet dinamikusan beszúrni mezőket egy Word-dokumentumba az Aspose.Words for .NET segítségével. Ez a hatékony funkció hihetetlenül hasznos lehet olyan dinamikus dokumentumok létrehozásához, amelyek valós idejű adategyesítést igényelnek. Folytassa a kísérletezést a különböző mezőtípusokkal, és fedezze fel az Aspose.Words kiterjedt lehetőségeit.
+Gratulálok! Most tanulta meg, hogyan lehet dinamikusan beszúrni mezőket egy Word-dokumentumba az Aspose.Words for .NET segítségével. Ez a hatékony funkció hihetetlenül hasznos lehet olyan dinamikus dokumentumok létrehozásához, amelyek valós idejű adategyesítést igényelnek. Folytassa a kísérletezést a különböző mezőtípusokkal, és fedezze fel az Aspose.Words kiterjedt lehetőségeit.
 
 ## GYIK
 

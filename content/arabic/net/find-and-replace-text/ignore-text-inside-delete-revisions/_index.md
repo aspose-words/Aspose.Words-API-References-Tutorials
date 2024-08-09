@@ -17,7 +17,7 @@ url: /ar/net/find-and-replace-text/ignore-text-inside-delete-revisions/
 - المعرفة الأساسية بلغة البرمجة C#.
 - تم تثبيت Visual Studio على نظامك.
 -  Aspose.Words لمكتبة .NET مدمجة في مشروعك. يمكنك تنزيله من[هنا](https://releases.aspose.com/words/net/).
-- الوصول إلى Aspose.Words لـ .NET[توثيق](https://reference.aspose.com/words/net/) كمرجع.
+- الوصول إلى Aspose.Words لـ .NET[الوثائق](https://reference.aspose.com/words/net/) كمرجع.
 
 ## استيراد مساحات الأسماء
 

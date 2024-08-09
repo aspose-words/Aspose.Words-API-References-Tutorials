@@ -15,7 +15,7 @@ Si vous avez toujours voulu affiner la disposition des cellules de votre tableau
 
 Avant de passer au code, assurons-nous que vous disposez de tout ce dont vous avez besoin :
 
-1.  Aspose.Words for .NET : assurez-vous que la bibliothèque Aspose.Words for .NET est installée. Si ce n'est pas le cas, vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET : assurez-vous que la bibliothèque Aspose.Words for .NET est installée. Si ce n'est pas le cas, vous pouvez[téléchargez-le ici](https://releases.aspose.com/words/net/).
 2. Environnement de développement : vous aurez besoin d'un environnement de développement configuré avec .NET. Visual Studio est un excellent choix si vous recherchez des recommandations.
 3. Connaissance de base de C# : pendant que j'expliquerai chaque étape, une compréhension de base de C# vous aidera à suivre plus facilement.
 4.  Répertoire de documents : préparez un chemin de répertoire dans lequel vous enregistrerez vos documents. Nous appellerons cela`YOUR DOCUMENT DIRECTORY`.
@@ -127,7 +127,7 @@ doc.Save(dataDir + "WorkingWithShapes.LayoutInCell.docx");
 
 ## Conclusion
 
-Et voila! Vous avez créé avec succès un document Word avec une disposition de tableau personnalisée et ajouté un filigrane à l'aide d'Aspose.Words pour .NET. Ce didacticiel visait à fournir un guide clair, étape par étape, pour vous aider à comprendre chaque partie du processus. Grâce à ces compétences, vous pouvez désormais créer par programmation des documents Word plus sophistiqués et personnalisés.
+Et voilà ! Vous avez créé avec succès un document Word avec une disposition de tableau personnalisée et ajouté un filigrane à l'aide d'Aspose.Words pour .NET. Ce didacticiel visait à fournir un guide clair, étape par étape, pour vous aider à comprendre chaque partie du processus. Grâce à ces compétences, vous pouvez désormais créer par programmation des documents Word plus sophistiqués et personnalisés.
 
 ## FAQ
 

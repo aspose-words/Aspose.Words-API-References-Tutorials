@@ -9,7 +9,7 @@ url: /hu/net/working-with-section/modify-page-setup-in-all-sections/
 ---
 ## Bevezetés
 
-Halihó! Ha valaha is módosítania kellett az oldalbeállításokat egy Word-dokumentum több szakaszában, akkor jó helyen jár. Ebben az oktatóanyagban végigvezetem a folyamaton az Aspose.Words for .NET használatával. Ez a nagy teljesítményű könyvtár lehetővé teszi a Word-dokumentumok szinte minden aspektusának programozott vezérlését, így a fejlesztők számára kiváló eszköz. Szóval, igyál meg egy csésze kávét, és induljunk el ezen a lépésről lépésre vezető úton az oldalbeállítások módosításainak elsajátítására!
+Szia! Ha valaha is módosítania kellett az oldalbeállításokat egy Word-dokumentum több szakaszában, akkor jó helyen jár. Ebben az oktatóanyagban végigvezetem a folyamaton az Aspose.Words for .NET használatával. Ez a nagy teljesítményű könyvtár lehetővé teszi a Word-dokumentumok szinte minden aspektusának programozott vezérlését, így a fejlesztők számára kiváló eszköz. Szóval, igyál meg egy csésze kávét, és induljunk el ezen a lépésről lépésre vezető úton az oldalbeállítások módosításainak elsajátítására!
 
 ## Előfeltételek
 
@@ -103,7 +103,7 @@ Az Aspose.Words for .NET egy átfogó programkönyvtár a Word-dokumentumokkal v
 
 ### 3. Hogyan módosíthatom az oldalbeállítás egyéb tulajdonságait?
 
- Az Aspose.Words lehetővé teszi különböző oldalbeállítási tulajdonságok, például tájolás, margók és papírméret módosítását. Utal[API dokumentáció](https://reference.aspose.com/words/net/) részletes utasításokért.
+ Az Aspose.Words lehetővé teszi különböző oldalbeállítási tulajdonságok, például tájolás, margók és papírméret módosítását. Lásd a[API dokumentáció](https://reference.aspose.com/words/net/) részletes utasításokért.
 
 ### 4. Hogyan kaphatok támogatást az Aspose.Words for .NET-hez?
 

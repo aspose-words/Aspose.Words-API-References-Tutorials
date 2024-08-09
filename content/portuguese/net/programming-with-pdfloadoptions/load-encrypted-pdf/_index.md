@@ -91,7 +91,7 @@ doc = new Document(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", l
 
 E aí está! Carregar um PDF criptografado com Aspose.Words for .NET não é apenas fácil – é totalmente divertido. Seguindo essas etapas, você desbloqueou a capacidade de lidar com a criptografia de PDF como um profissional. Lembre-se de que a chave para dominar qualquer ferramenta é a prática, por isso não hesite em experimentar e explorar.
 
- Se você tiver alguma dúvida ou precisar de mais assistência, o[Documentação Aspose.Words](https://reference.aspose.com/words/net/)e[Fórum de suporte](https://forum.aspose.com/c/words/8) são ótimos lugares para começar.
+ Se você tiver alguma dúvida ou precisar de mais assistência, o[Documentação Aspose.Words](https://reference.aspose.com/words/net/)e[fórum de suporte](https://forum.aspose.com/c/words/8) são ótimos lugares para começar.
 
 ## Perguntas frequentes
 

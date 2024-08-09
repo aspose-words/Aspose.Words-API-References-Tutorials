@@ -2,85 +2,100 @@
 title: Zeilenabstand für Schriftart abrufen
 linktitle: Zeilenabstand für Schriftart abrufen
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: In diesem Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET den Schriftzeilenabstand in einem Word-Dokument ändern.
+description: Erfahren Sie in diesem Schritt-für-Schritt-Tutorial, wie Sie mit Aspose.Words für .NET den Zeilenabstand von Schriftarten festlegen. Perfekt für Entwickler.
 type: docs
 weight: 10
 url: /de/net/working-with-fonts/get-font-line-spacing/
 ---
-In diesem Tutorial zeigen wir Ihnen, wie Sie den Zeilenabstand der Schrift in einem Word-Dokument mithilfe der Aspose.Words-Bibliothek für .NET festlegen. Der Zeilenabstand der Schrift definiert den vertikalen Abstand zwischen Textzeilen. Wir führen Sie Schritt für Schritt durch den Code und helfen Ihnen, ihn in Ihrem .NET-Projekt zu verstehen und zu implementieren.
+## Einführung
+
+Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Sie Word-Dokumente programmgesteuert erstellen, bearbeiten und konvertieren können. Eine häufige Aufgabe, die Sie möglicherweise ausführen müssen, ist das Abrufen des Zeilenabstands einer bestimmten Schriftart in einem Dokument. In diesem Tutorial führen wir Sie Schritt für Schritt durch den Prozess und stellen sicher, dass Sie mit Aspose.Words für .NET problemlos den Zeilenabstand einer Schriftart ermitteln können. 
 
 ## Voraussetzungen
-Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Elemente verfügen:
-- Gute Kenntnisse der Programmiersprache C#
-- Die in Ihrem Projekt installierte Aspose.Words-Bibliothek für .NET
 
-## Schritt 1: Neues Dokument und Dokumentgenerator erstellen
- Zunächst erstellen wir ein neues Dokument durch die Instanziierung des`Document` Klasse und einen Dokument-Builder durch Instanziierung der`DocumentBuilder` Klasse.
+Bevor wir uns in den Code vertiefen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
+
+1.  Aspose.Words für .NET-Bibliothek: Laden Sie die neueste Version herunter und installieren Sie sie von[Hier](https://releases.aspose.com/words/net/).
+2. Entwicklungsumgebung: Stellen Sie sicher, dass Sie eine IDE wie Visual Studio eingerichtet haben.
+3. Grundkenntnisse in C#: Dieses Tutorial setzt voraus, dass Sie über Grundkenntnisse der C#-Programmierung verfügen.
+
+## Namespaces importieren
+
+Zuerst müssen Sie die erforderlichen Namespaces in Ihr C#-Projekt importieren. Diese Namespaces ermöglichen Ihnen den Zugriff auf die Aspose.Words-Funktionen.
 
 ```csharp
-// Neues Dokument erstellen
-Document doc = new Document();
+using System;
+using Aspose.Words;
+using Aspose.Words.Fonts;
+```
 
-//Erstellen Sie einen Dokumentgenerator
+Lassen Sie uns den Vorgang zum Festlegen des Zeilenabstands einer Schrift in einfache, überschaubare Schritte aufteilen.
+
+## Schritt 1: Neues Dokument erstellen
+
+Der erste Schritt besteht darin, mit Aspose.Words für .NET eine neue Word-Dokumentinstanz zu erstellen.
+
+```csharp
+Document doc = new Document();
+```
+
+## Schritt 2: DocumentBuilder initialisieren
+
+Als nächstes müssen wir initialisieren die`DocumentBuilder` Objekt. Dieses Objekt hilft uns, den Dokumentinhalt zu erstellen und zu bearbeiten.
+
+```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Schritt 2: Konfigurieren Sie die Schriftart
- Als nächstes konfigurieren wir die Schriftart, indem wir die`Name` Eigenschaft des Dokumentgenerators.
+## Schritt 3: Festlegen der Schrifteigenschaften
+
+Nun legen wir die Schrifteigenschaften für den Text fest, den wir einfügen möchten. Für dieses Beispiel verwenden wir die Schriftart „Calibri“.
 
 ```csharp
-// Konfigurieren der Schriftart
 builder.Font.Name = "Calibri";
 ```
 
-## Schritt 3: Text zum Dokument hinzufügen
-Wir werden jetzt den Dokumentgenerator verwenden, um dem Dokument formatierten Text hinzuzufügen.
+## Schritt 4: Text in das Dokument schreiben
+
+ Mit dem`DocumentBuilder` Objekt, schreiben Sie einen Text in das Dokument. Dieser Text verwendet die Schrifteigenschaften, die wir im vorherigen Schritt festgelegt haben.
 
 ```csharp
-// Hinzufügen von Text zum Dokument
-builder. Writen("qText");
+builder.Writeln("Sample Text");
 ```
 
-## Schritt 4: Zeilenabstand der Schrift ermitteln
- Nun greifen wir auf die`Font` Objekt des ersten Absatzes des Dokuments und ruft den Wert des`LineSpacing` Eigentum.
+## Schritt 5: Abrufen des Font-Objekts
+
+Um den Zeilenabstand zu erhalten, müssen wir auf das Schriftobjekt des gerade hinzugefügten Textes zugreifen. Dies können wir tun, indem wir durch die Dokumentstruktur bis zum ersten Absatzlauf navigieren.
 
 ```csharp
-// Den Zeilenabstand der Schriftart ermitteln
 Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
-Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
-### Beispielquellcode zum Abrufen des Zeilenabstands von Schriftarten mit Aspose.Words für .NET 
+## Schritt 6: Den Zeilenabstand ermitteln
+
+Schließlich rufen wir den Zeilenabstand aus dem Schriftobjekt ab und drucken ihn auf der Konsole.
+
 ```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Font.Name = "Calibri";
-builder.Writeln("qText");
-Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
 Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
 ## Abschluss
-In diesem Tutorial haben wir gesehen, wie man mit Aspose.Words für .NET den Zeilenabstand der Schrift in einem Word-Dokument erhält. Der Zeilenabstand der Schrift ist wichtig, um den vertikalen Abstand zwischen Textzeilen zu steuern. Sie können diese Funktion gerne verwenden, um das Erscheinungsbild Ihres Textes in Ihren Dokumenten anzupassen.
 
-### Häufig gestellte Fragen
+Und da haben Sie es! Das Abrufen des Schriftzeilenabstands mit Aspose.Words für .NET ist unkompliziert, wenn Sie es in diese einfachen Schritte aufteilen. Egal, ob Sie ein neues Dokument erstellen oder mit einem vorhandenen arbeiten, Aspose.Words bietet alle Tools, die Sie zum effizienten Verwalten von Schrifteigenschaften benötigen.
 
-#### F: Wie kann ich den Zeilenabstand eines bestimmten Textes in einem Word-Dokument ändern?
+## Häufig gestellte Fragen
 
-A: Mit Aspose.Words können Sie den Zeilenabstand von bestimmten Texten in einem Word-Dokument ganz einfach ändern. Verwenden Sie die API, um den gewünschten Text auszuwählen und den Zeilenabstand durch Angabe des entsprechenden Werts anzupassen.
+### Was ist Aspose.Words für .NET?
+Aspose.Words für .NET ist eine leistungsstarke Bibliothek, die es Entwicklern ermöglicht, Word-Dokumente programmgesteuert mit C# zu erstellen, zu bearbeiten und zu konvertieren.
 
-#### F: Ist es möglich, in einem Word-Dokument einen exakten Zeilenabstand festzulegen?
+### Kann ich Aspose.Words für .NET in anderen .NET-Sprachen verwenden?
+Ja, Sie können Aspose.Words für .NET mit jeder .NET-Sprache verwenden, einschließlich VB.NET und F#.
 
-A: Ja, Aspose.Words ermöglicht es Ihnen, einen genauen Zeilenabstand in einem Word-Dokument festzulegen. Sie können mithilfe der API einen genauen Wert für den Zeilenabstand angeben.
+### Wie kann ich Aspose.Words für .NET herunterladen?
+ Sie können die neueste Version von Aspose.Words für .NET herunterladen von[Hier](https://releases.aspose.com/words/net/).
 
-#### F: Wie kann ich den Zeilenabstand für das gesamte Word-Dokument anpassen?
+### Gibt es eine kostenlose Testversion für Aspose.Words für .NET?
+ Ja, Sie können eine kostenlose Testversion erhalten von[Hier](https://releases.aspose.com/).
 
-A: Mit Aspose.Words können Sie den Zeilenabstand für das gesamte Word-Dokument ganz einfach anpassen. Verwenden Sie die von der API bereitgestellten Methoden, um den gewünschten Zeilenabstand für das gesamte Dokument festzulegen.
-
-#### F: Unterstützt Aspose.Words mehrere Zeilenabstände?
-
-A: Ja, Aspose.Words unterstützt mehrere Zeilenabstände in Word-Dokumenten. Sie können für die Zeilen Ihres Textes mehrere Abstände festlegen, z. B. das 1,5-fache oder das 2-fache des normalen Abstands.
-
-#### F: Wie kann ich beim Anpassen des Zeilenabstands Probleme mit Zeilenüberlappungen vermeiden?
-
-A: Um Probleme mit Zeilenüberlappungen beim Anpassen des Zeilenabstands zu vermeiden, achten Sie darauf, geeignete Abstandswerte zu wählen. Testen Sie auch die endgültige Darstellung Ihres Dokuments, um sicherzustellen, dass der Text lesbar und gut formatiert bleibt.
+### Wo finde ich die Dokumentation für Aspose.Words für .NET?
+ Die Dokumentation für Aspose.Words für .NET ist verfügbar[Hier](https://reference.aspose.com/words/net/).

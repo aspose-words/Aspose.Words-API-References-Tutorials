@@ -56,7 +56,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 Maintenant que vous avez le tableau, il est temps d'obtenir les valeurs de distance. Ces valeurs représentent l'espace entre le tableau et le texte environnant de chaque côté : haut, bas, gauche et droite.
 
 ```csharp
-// Obtenir la distance entre le tableau et le texte environnant
+// Obtenez la distance entre le tableau et le texte environnant
 Console.WriteLine("\nGet distance between table left, right, bottom, top and the surrounding text.");
 Console.WriteLine("Distance from Top: " + table.DistanceTop);
 Console.WriteLine("Distance from Bottom: " + table.DistanceBottom);
@@ -78,7 +78,7 @@ Console.WriteLine("Distance from Left: " + table.DistanceLeft);
 
 ## Conclusion
 
-Et voila! En suivant ces étapes, vous pouvez facilement récupérer les distances entre un tableau et le texte environnant dans vos documents Word à l'aide d'Aspose.Words pour .NET. Cette technique simple mais puissante vous permet d'affiner la mise en page de votre document, le rendant plus lisible et visuellement attrayant. Bon codage !
+Et voilà ! En suivant ces étapes, vous pouvez facilement récupérer les distances entre un tableau et le texte environnant dans vos documents Word à l'aide d'Aspose.Words pour .NET. Cette technique simple mais puissante vous permet d'affiner la mise en page de votre document, le rendant plus lisible et visuellement attrayant. Bon codage !
 
 ## FAQ
 
@@ -95,4 +95,4 @@ Absolument! Aspose.Words prend en charge .NET Core et vous pouvez utiliser le m�
 Vous pouvez installer Aspose.Words pour .NET via NuGet Package Manager dans Visual Studio. Recherchez simplement « Aspose.Words » et installez le package.
 
 ### Existe-t-il des limitations sur les types de documents pris en charge par Aspose.Words ?
- Aspose.Words prend en charge un large éventail de formats de documents, notamment DOCX, DOC, PDF, HTML, etc. Vérifier la[Documentation](https://reference.aspose.com/words/net/) pour une liste complète des formats pris en charge.
+ Aspose.Words prend en charge un large éventail de formats de documents, notamment DOCX, DOC, PDF, HTML, etc. Vérifiez le[documentation](https://reference.aspose.com/words/net/) pour une liste complète des formats pris en charge.

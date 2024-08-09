@@ -1,6 +1,6 @@
 ---
-title: Techniques de fractionnement et d'extraction de documents
-linktitle: Techniques de fractionnement et d'extraction de documents
+title: Techniques de fractionnement et d’extraction de documents
+linktitle: Techniques de fractionnement et d’extraction de documents
 second_title: API de traitement de documents Java Aspose.Words
 description: Apprenez le fractionnement et l'extraction de documents à l'aide d'Aspose.Words pour Java. Guide étape par étape avec code source pour une manipulation efficace. Libérez la puissance d’Aspose
 type: docs
@@ -24,7 +24,7 @@ Avant de plonger dans le code, assurez-vous que les conditions préalables suiva
 
 ## Configuration de l'environnement
 
-Pour commencer à utiliser Aspose.Words pour Java, vous devez configurer votre environnement de développement. Suivez ces étapes:
+Pour commencer à utiliser Aspose.Words pour Java, vous devez configurer votre environnement de développement. Suivez ces étapes :
 
 1. Créez un nouveau projet Java dans votre environnement de développement intégré (IDE) préféré.
 

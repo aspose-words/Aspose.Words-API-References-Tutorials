@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-sdt/multi-section/
 ---
-## Úvod
+## Zavedení
 
 Vítejte v tomto komplexním průvodci o práci s víceoddílovými strukturovanými značkami dokumentu v Aspose.Words pro .NET! Pokud se noříte do světa manipulace s dokumenty a potřebujete efektivně zacházet se strukturovanými značkami dokumentů (SDT), jste na správném místě. Ať už automatizujete zpracování dokumentů, generujete sestavy nebo jednoduše spravujete složité dokumenty, pochopení toho, jak pracovat s SDT, může být neuvěřitelně cenné. V tomto tutoriálu projdeme procesem krok za krokem a zajistíme, že pochopíte každý detail práce s těmito značkami ve vašich aplikacích .NET.
 
@@ -54,7 +54,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
 ```
 
- Tady,`"Multi-section structured document tags.docx"`by měl být nahrazen názvem souboru vašeho dokumentu. Ujistěte se, že je tento soubor umístěn v určeném adresáři.
+ Zde,`"Multi-section structured document tags.docx"`by měl být nahrazen názvem souboru vašeho dokumentu. Ujistěte se, že je tento soubor umístěn v určeném adresáři.
 
 ## Krok 3: Načtěte štítky strukturovaného dokumentu
 
@@ -80,7 +80,7 @@ Tato smyčka vytiskne název každého tagu strukturovaného dokumentu do konzol
 
 ## Závěr
 
-Gratulujeme! Nyní jste se naučili pracovat s víceoddílovými strukturovanými značkami dokumentu pomocí Aspose.Words pro .NET. Pomocí těchto kroků můžete efektivně manipulovat se strukturovanými značkami dokumentů v dokumentech aplikace Word. Ať už automatizujete pracovní toky dokumentů nebo spravujete složité dokumenty, tyto dovednosti rozšíří vaši schopnost dynamicky zacházet se strukturovaným obsahem.
+Gratuluji! Nyní jste se naučili pracovat s víceoddílovými strukturovanými značkami dokumentu pomocí Aspose.Words pro .NET. Pomocí těchto kroků můžete efektivně manipulovat se strukturovanými značkami dokumentů v dokumentech aplikace Word. Ať už automatizujete pracovní toky dokumentů nebo spravujete složité dokumenty, tyto dovednosti rozšíří vaši schopnost dynamicky zacházet se strukturovaným obsahem.
 
  Nebojte se experimentovat s kódem a přizpůsobit jej tak, aby vyhovoval vašim konkrétním potřebám. Pro pokročilejší funkce a podrobnou dokumentaci se podívejte na[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/).
 
@@ -115,4 +115,4 @@ foreach (StructuredDocumentTagRangeStart tag in tags)
 	Console.WriteLine(tag.Title);
 ```
 
-A je to! Úspěšně jste načetli a zpracovali víceoddílové strukturované tagy dokumentu ve vašem dokumentu Word pomocí Aspose.Words for .NET.
+To je vše! Úspěšně jste načetli a zpracovali víceoddílové strukturované tagy dokumentu ve vašem dokumentu Word pomocí Aspose.Words for .NET.

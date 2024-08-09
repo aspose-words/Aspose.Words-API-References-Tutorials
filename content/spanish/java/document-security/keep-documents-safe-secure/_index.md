@@ -12,7 +12,7 @@ En esta era digital, donde la información es clave, mantener sus documentos seg
 
 ## 1. Introducción
 
-En este acelerado mundo digital, la seguridad de los documentos electrónicos se ha convertido en una máxima prioridad tanto para particulares como para empresas. Las filtraciones de datos y los ciberataques han generado preocupación sobre la confidencialidad y la integridad de la información sensible. Aspose.Words para Java viene al rescate proporcionando un conjunto completo de funciones para garantizar que sus documentos permanezcan seguros contra el acceso no autorizado.
+En este acelerado mundo digital, la seguridad de los documentos electrónicos se ha convertido en una máxima prioridad tanto para particulares como para empresas. Las violaciones de datos y los ataques cibernéticos han generado preocupación sobre la confidencialidad y la integridad de la información confidencial. Aspose.Words para Java viene al rescate proporcionando un conjunto completo de funciones para garantizar que sus documentos permanezcan seguros contra el acceso no autorizado.
 
 ## 2. Comprender la seguridad de los documentos
 
@@ -20,7 +20,7 @@ Antes de profundizar en los aspectos técnicos, comprendamos los conceptos funda
 
 ### Tipos de protección de documentos
 
-- #### Protección de contraseña:
+- #### Protección con contraseña:
  Restrinja el acceso a sus documentos con una contraseña, asegurándose de que solo los usuarios autorizados puedan abrirlos y verlos.
 - #### Cifrado:
  Convierta el contenido del documento a un formato codificado utilizando algoritmos de cifrado, haciéndolo indescifrable sin la clave de descifrado correcta.
@@ -50,7 +50,7 @@ Antes de continuar con la seguridad de los documentos, primero familiaricémonos
 Instalar Aspose.Words para Java es un proceso sencillo. Siga estos sencillos pasos para agregar la biblioteca a su proyecto Java:
 
 1. ### Descargar:
-  Ve a la[Lanzamientos.Aspose](https://releases.aspose.com/words/java/) y descargue el paquete Aspose.Words para Java.
+  Ir al[Lanzamientos.Aspose](https://releases.aspose.com/words/java/) y descargue el paquete Aspose.Words para Java.
 
 2. ### Extracto:
  Extraiga el paquete descargado a una ubicación conveniente en su computadora.

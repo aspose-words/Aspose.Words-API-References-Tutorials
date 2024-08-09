@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fields/insert-advance-field-with-out-document-builder/
 ---
-## Úvod
+## Zavedení
 
 Chcete vylepšit své manipulace s dokumenty Word pomocí Aspose.Words pro .NET? Tak to jste na správném místě! V tomto tutoriálu vás provedeme procesem vložení pole zálohy do dokumentu aplikace Word bez použití třídy DocumentBuilder. Na konci této příručky budete dobře rozumět tomu, jak toho dosáhnout pomocí Aspose.Words for .NET. Pojďme se tedy ponořit a učinit vaše zpracování dokumentů ještě výkonnějším a všestrannějším!
 
@@ -15,10 +15,10 @@ Chcete vylepšit své manipulace s dokumenty Word pomocí Aspose.Words pro .NET?
 
 Než začneme, ujistěte se, že máte následující:
 
--  Aspose.Words for .NET Library: Můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET Library: Můžete si ji stáhnout[zde](https://releases.aspose.com/words/net/).
 - Visual Studio: Bude stačit jakákoli nejnovější verze.
 - Základní znalost C#: Tento tutoriál předpokládá, že máte základní znalosti o programování v C#.
--  Licence Aspose.Words: Získejte dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/) pokud žádný nemáte.
+-  Licence Aspose.Words: Získejte dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/) pokud žádný nemáte.
 
 ## Importovat jmenné prostory
 
@@ -140,11 +140,11 @@ Ano, můžete použít DocumentBuilder k vložení pokročilých polí, ale tent
 
 ### Kde najdu další příklady použití Aspose.Words?
 
- Kompletní dokumentaci a příklady naleznete na[Aspose.Words pro dokumentaci .NET](https://reference.aspose.com/words/net/) strana.
+ Komplexní dokumentaci a příklady naleznete na[Aspose.Words pro dokumentaci .NET](https://reference.aspose.com/words/net/) strana.
 
 ### Je Aspose.Words for .NET zdarma k použití?
 
- Aspose.Words for .NET nabízí bezplatnou zkušební verzi, kterou si můžete stáhnout[tady](https://releases.aspose.com/). Pro plnou funkčnost si budete muset zakoupit licenci.
+ Aspose.Words for .NET nabízí bezplatnou zkušební verzi, kterou si můžete stáhnout[zde](https://releases.aspose.com/). Pro plnou funkčnost si budete muset zakoupit licenci.
 
 ### Jak získám podporu pro Aspose.Words for .NET?
 

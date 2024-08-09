@@ -10,7 +10,7 @@ url: /vi/net/programming-with-shapes/detect-smart-art-shape/
 
 ## Giới thiệu
 
-Này! Bạn đã bao giờ cần làm việc với SmartArt trong tài liệu Word theo chương trình chưa? Cho dù bạn đang tự động hóa báo cáo, tạo tài liệu động hay chỉ đi sâu vào xử lý tài liệu, Aspose.Words for .NET đều có thể giúp bạn. Trong hướng dẫn này, chúng ta sẽ khám phá cách phát hiện các hình dạng SmartArt trong tài liệu Word bằng Aspose.Words for .NET. Chúng tôi sẽ chia nhỏ từng bước thành một hướng dẫn chi tiết, dễ làm theo. Đến cuối bài viết này, bạn sẽ có thể xác định các hình dạng SmartArt trong bất kỳ tài liệu Word nào một cách dễ dàng!
+Này! Bạn đã bao giờ cần làm việc với SmartArt trong tài liệu Word theo chương trình chưa? Cho dù bạn đang tự động hóa báo cáo, tạo tài liệu động hay chỉ đi sâu vào xử lý tài liệu, Aspose.Words for .NET đều có thể giúp bạn. Trong hướng dẫn này, chúng ta sẽ khám phá cách phát hiện các hình dạng SmartArt trong tài liệu Word bằng Aspose.Words cho .NET. Chúng tôi sẽ chia nhỏ từng bước thành một hướng dẫn chi tiết, dễ làm theo. Đến cuối bài viết này, bạn sẽ có thể xác định các hình dạng SmartArt trong bất kỳ tài liệu Word nào một cách dễ dàng!
 
 ## Điều kiện tiên quyết
 
@@ -66,7 +66,7 @@ int count = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().Count(shape =>
 Console.WriteLine("The document has {0} shapes with SmartArt.", count);
 ```
 
- Ở bước này, chúng ta sử dụng LINQ để lọc và đếm các hình có SmartArt. Các`GetChildNodes` phương thức lấy tất cả các hình dạng và`HasSmartArt` kiểm tra thuộc tính xem hình dạng có chứa SmartArt hay không.
+ Ở bước này, chúng ta sử dụng LINQ để lọc và đếm các hình có SmartArt. các`GetChildNodes` phương thức lấy tất cả các hình dạng và`HasSmartArt` kiểm tra thuộc tính xem hình dạng có chứa SmartArt hay không.
 
 ## Bước 4: Chạy mã
 
@@ -80,7 +80,7 @@ Thay thế "X" bằng số lượng hình dạng SmartArt thực tế trong tài
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã học thành công cách phát hiện các hình dạng SmartArt trong tài liệu Word bằng Aspose.Words for .NET. Hướng dẫn này đề cập đến việc thiết lập môi trường của bạn, tải tài liệu, phát hiện các hình dạng SmartArt và chạy mã. Aspose.Words cung cấp nhiều tính năng, vì vậy hãy nhớ khám phá[Tài liệu API](https://reference.aspose.com/words/net/) để mở khóa toàn bộ tiềm năng của nó.
+Và bạn có nó! Bạn đã học thành công cách phát hiện các hình dạng SmartArt trong tài liệu Word bằng Aspose.Words for .NET. Hướng dẫn này đề cập đến việc thiết lập môi trường của bạn, tải tài liệu, phát hiện các hình dạng SmartArt và chạy mã. Aspose.Words cung cấp nhiều tính năng, vì vậy hãy nhớ khám phá[Tài liệu API](https://reference.aspose.com/words/net/) để mở khóa toàn bộ tiềm năng của nó.
 
 ## Câu hỏi thường gặp
 
@@ -94,7 +94,7 @@ Aspose.Words for .NET là một thư viện mạnh mẽ cho phép các nhà phá
 
 ### 3. Làm cách nào để phát hiện các loại hình dạng khác trong tài liệu?
 
- Bạn có thể sửa đổi truy vấn LINQ để kiểm tra các thuộc tính hoặc loại hình dạng khác. Tham khảo đến[tài liệu](https://reference.aspose.com/words/net/) để biết thêm chi tiết.
+ Bạn có thể sửa đổi truy vấn LINQ để kiểm tra các thuộc tính hoặc loại hình dạng khác. Tham khảo[tài liệu](https://reference.aspose.com/words/net/) để biết thêm chi tiết.
 
 ### 4. Làm cách nào để nhận được hỗ trợ cho Aspose.Words cho .NET?
 

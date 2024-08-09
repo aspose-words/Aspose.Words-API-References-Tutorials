@@ -106,7 +106,7 @@ Mengelola dan memanipulasi dokumen Word secara efisien sering kali melibatkan op
 
 ### Bisakah saya mengganti teks hanya dalam rentang halaman tertentu?
 
- Ya kamu bisa. Sebelum melakukan penggantian, tentukan rentang halaman menggunakan`doc.get_child_nodes()` metode untuk mendapatkan konten halaman tertentu.
+ Ya, kamu bisa. Sebelum melakukan penggantian, tentukan rentang halaman menggunakan`doc.get_child_nodes()` metode untuk mendapatkan konten halaman tertentu.
 
 ### Apakah operasi pencarian dan penggantian dapat dibatalkan?
 

@@ -120,7 +120,7 @@ Yer imlerine daha aşina oldukça, iç içe yer imleri, birden fazla bölüme ya
 
 ## Çözüm
 
-Belge yer imleri, büyük belgelerde verimli bir şekilde gezinmenizi ve bunları yönetmenizi sağlayan paha biçilmez araçlardır. Aspose.Words for Python API ile yer imleriyle ilgili özellikleri uygulamalarınıza sorunsuz bir şekilde entegre etme olanağına sahip olursunuz, böylece belge işleme görevlerinizi daha sorunsuz ve daha akıcı hale getirebilirsiniz.
+Belge yer imleri, büyük belgelerde verimli bir şekilde gezinmenizi ve bunları yönetmenizi sağlayan paha biçilmez araçlardır. Aspose.Words for Python API ile yer imleriyle ilgili özellikleri uygulamalarınıza sorunsuz bir şekilde entegre etme olanağına sahip olursunuz, böylece belge işleme görevlerinizi daha sorunsuz ve daha akıcı hale getirirsiniz.
 
 ## SSS'ler
 

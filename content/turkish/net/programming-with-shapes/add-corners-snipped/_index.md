@@ -80,12 +80,12 @@ Ve böylece, belgeniz artık gerekli uyumluluk seçenekleriyle kaydedilmiş öze
 
 ## Çözüm
 
-İşte aldın! Aspose.Words for .NET'i kullanarak Word belgelerinize özel şekiller eklemek basittir ve belgelerinizin görsel çekiciliğini büyük ölçüde artırabilir. Bu adımları izleyerek kolayca "Köşeler Kesilmiş" şekli ekleyebilir ve belgenizin gerekli standartları karşıladığından emin olabilirsiniz. Mutlu kodlama!
+İşte burada! Aspose.Words for .NET'i kullanarak Word belgelerinize özel şekiller eklemek basittir ve belgelerinizin görsel çekiciliğini büyük ölçüde artırabilir. Bu adımları izleyerek kolayca "Köşeler Kesilmiş" şekli ekleyebilir ve belgenizin gerekli standartları karşıladığından emin olabilirsiniz. Mutlu kodlama!
 
 ## SSS'ler
 
 ### "Kesilmiş Köşeler" şeklinin boyutunu özelleştirebilir miyim?
-Evet, boyutları değiştirerek boyutu ayarlayabilirsiniz.`InsertShape` yöntem.
+Evet, boyutları değiştirerek boyutu ayarlayabilirsiniz.`InsertShape` Yöntem.
 
 ### Başka türde şekiller eklemek mümkün mü?
  Kesinlikle! Aspose.Words çeşitli şekilleri destekler. Sadece değiştir`ShapeType` istediğiniz şekle getirin.

@@ -2,7 +2,7 @@
 title: Rozpoznawanie i podstawienia w ramach wzorców zastępczych
 linktitle: Rozpoznawanie i podstawienia w ramach wzorców zastępczych
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak rozpoznawać i zastępować tekst we wzorcach zamiany za pomocą Aspose.Words dla .NET. Przewodnik krok po kroku ze szczegółowymi przykładami.
+description: Dowiedz się, jak rozpoznawać i zastępować tekst we wzorcach zamiany przy użyciu Aspose.Words dla .NET. Przewodnik krok po kroku ze szczegółowymi przykładami.
 type: docs
 weight: 10
 url: /pl/net/find-and-replace-text/recognize-and-substitutions-within-replacement-patterns/

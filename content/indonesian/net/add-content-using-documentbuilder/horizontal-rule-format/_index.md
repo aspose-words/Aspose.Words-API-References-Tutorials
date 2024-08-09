@@ -44,7 +44,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Langkah 2: Masukkan Aturan Horizontal
 
- Menggunakan`InsertHorizontalRule()` metode`DocumentBuilder` kelas untuk menambahkan aturan horizontal.
+ Gunakan`InsertHorizontalRule()` metode`DocumentBuilder` kelas untuk menambahkan aturan horizontal.
 
 ```csharp
 Shape shape = builder.InsertHorizontalRule();

@@ -10,7 +10,7 @@ url: /hu/net/join-and-append-documents/append-document/
 
 ## Bevezetés
 
-Halihó! Szüksége volt már arra, hogy két Word-dokumentumot egyesítsen egybe úgy, hogy az eredeti formázást érintetlenül hagyja? Akár jelentéseket állít össze, akár kiterjedt projektdokumentációt készít, akár csak egyszerűsíteni próbálja dokumentumkezelését, az Aspose.Words for .NET nagyban megkönnyítheti az életét. Ebben az oktatóanyagban megvizsgáljuk, hogyan fűzhet hozzá egy Word-dokumentumot a másikhoz az Aspose.Words for .NET használatával, részletesen lebontva az egyes lépéseket. Az útmutató végére profi módon egyesítheti a dokumentumokat!
+Szia! Szüksége volt már arra, hogy két Word-dokumentumot egyesítsen egybe úgy, hogy az eredeti formázást érintetlenül hagyja? Akár jelentéseket állít össze, akár kiterjedt projektdokumentációt készít, akár csak egyszerűsíteni próbálja dokumentumkezelését, az Aspose.Words for .NET nagyban megkönnyítheti az életét. Ebben az oktatóanyagban megvizsgáljuk, hogyan fűzhet hozzá egy Word-dokumentumot a másikhoz az Aspose.Words for .NET használatával, részletesen lebontva az egyes lépéseket. Az útmutató végére profi módon egyesítheti a dokumentumokat!
 
 ## Előfeltételek
 

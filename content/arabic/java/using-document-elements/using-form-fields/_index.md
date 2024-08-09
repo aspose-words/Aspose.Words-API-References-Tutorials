@@ -2,7 +2,7 @@
 title: استخدام حقول النموذج في Aspose.Words لـ Java
 linktitle: استخدام حقول النموذج
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة مستندات جافا
-description: تعلم كيفية استخدام Aspose.Words for Java لإنشاء مستندات Word تفاعلية تحتوي على حقول النماذج. نبدأ الآن!
+description: تعلم كيفية استخدام Aspose.Words for Java لإنشاء مستندات Word تفاعلية تحتوي على حقول النماذج. ابدأ الآن!
 type: docs
 weight: 14
 url: /ar/java/using-document-elements/using-form-fields/

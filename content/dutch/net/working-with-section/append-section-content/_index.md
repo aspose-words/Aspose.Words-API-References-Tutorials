@@ -9,7 +9,7 @@ url: /nl/net/working-with-section/append-section-content/
 ---
 ## Invoering
 
-Hallo daar! Heeft u zich ooit afgevraagd hoe u Word-documenten programmatisch kunt manipuleren met behulp van .NET? Als u op zoek bent naar een robuuste bibliotheek om Word-documenttaken uit te voeren, dan is Aspose.Words voor .NET uw beste keuze. Vandaag begeleid ik u bij het toevoegen van secties aan een Word-document met Aspose.Words voor .NET. Of je nu een nieuweling of een doorgewinterde ontwikkelaar bent, deze tutorial helpt je de basisprincipes en enkele geavanceerde concepten onder de knie te krijgen. Dus laten we erin duiken!
+Hé daar! Heeft u zich ooit afgevraagd hoe u Word-documenten programmatisch kunt manipuleren met behulp van .NET? Als u op zoek bent naar een robuuste bibliotheek om Word-documenttaken uit te voeren, dan is Aspose.Words voor .NET uw beste keuze. Vandaag begeleid ik u bij het toevoegen van secties aan een Word-document met Aspose.Words voor .NET. Of je nu een nieuweling of een doorgewinterde ontwikkelaar bent, deze tutorial helpt je de basisprincipes en enkele geavanceerde concepten onder de knie te krijgen. Dus laten we erin duiken!
 
 ## Vereisten
 

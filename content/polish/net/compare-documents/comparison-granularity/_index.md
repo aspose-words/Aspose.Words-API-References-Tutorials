@@ -95,7 +95,7 @@ O: Aby użyć szczegółowości porównania w Aspose.Words dla .NET, wykonaj nas
 2. Dodaj niezbędne zespoły do swojego projektu, odwołując się do Aspose.Words.
 3.  Utwórz dokumenty, które chcesz porównać, korzystając z narzędzia`DocumentBuilder` klasa.
 4.  Skonfiguruj opcje porównania, tworząc plik`CompareOptions` obiekt i ustawienie`Granularity` właściwość do pożądanego poziomu (np.`Granularity.CharLevel` dla porównania na poziomie postaci).
-5.  Użyj`Compare`metodę na jednym dokumencie, przekazując drugi dokument i`CompareOptions` obiekt jako parametry. Ta metoda porówna dokumenty na podstawie określonej szczegółowości i zapisze zmiany w pierwszym dokumencie.
+5.  Skorzystaj z`Compare`metodę na jednym dokumencie, przekazując drugi dokument i`CompareOptions` obiekt jako parametry. Ta metoda porówna dokumenty na podstawie określonej szczegółowości i zapisze zmiany w pierwszym dokumencie.
 
 #### P: Jakie są dostępne poziomy szczegółowości porównania w Aspose.Words dla .NET?
 

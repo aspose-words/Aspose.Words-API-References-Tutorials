@@ -20,7 +20,7 @@ Neste guia abrangente, mergulharemos no mundo das formas de documentos em Aspose
 
 ### Inserindo um GroupShape
 
- A`GroupShape` permite agrupar várias formas. Veja como você pode criar e inserir um`GroupShape`:
+ UM`GroupShape` permite agrupar várias formas. Veja como você pode criar e inserir um`GroupShape`:
 
 ```java
 Document doc = new Document();

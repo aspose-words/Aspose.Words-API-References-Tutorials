@@ -9,7 +9,7 @@ url: /hu/net/document-protection/unrestricted-section/
 ---
 ## Bevezetés
 
-Halihó! Készen áll, hogy belemerüljön az Aspose.Words for .NET világába? Ma valami rendkívül praktikus dologgal foglalkozunk: hogyan lehet egy Word-dokumentum egyes szakaszait feloldani, miközben más részeket védeni kell. Ha valaha is meg kellett védenie a dokumentum egyes részeit, de másokat nyitva hagyott szerkesztésre, ez az oktatóanyag az Ön számára készült. Kezdjük el!
+Szia! Készen áll, hogy belemerüljön az Aspose.Words for .NET világába? Ma valami rendkívül praktikus dologgal foglalkozunk: hogyan lehet egy Word-dokumentum egyes szakaszait feloldani, miközben más részeket védeni kell. Ha valaha is meg kellett védenie a dokumentum egyes részeit, de másokat nyitva hagyott szerkesztésre, ez az oktatóanyag az Ön számára készült. Kezdjük is!
 
 ## Előfeltételek
 
@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- A`Document` osztály inicializál egy új dokumentumot, és a`DocumentBuilder` segít abban, hogy tartalmat adjunk könnyen dokumentumunkhoz.
+ A`Document` osztály inicializál egy új dokumentumot, és a`DocumentBuilder` segít abban, hogy tartalmat egyszerűen hozzáadhassunk dokumentumunkhoz.
 
 ## 2. lépés: Szekciók beszúrása
 

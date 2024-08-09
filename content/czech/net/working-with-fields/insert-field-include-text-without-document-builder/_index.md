@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fields/insert-field-include-text-without-document-builder/
 ---
-## Úvod
+## Zavedení
 
 Ve světě automatizace a manipulace s dokumenty představuje Aspose.Words for .NET výkonný nástroj. Dnes se ponoříme do podrobného průvodce, jak vložit FieldIncludeText bez použití DocumentBuilder. Tento tutoriál vás provede procesem krok za krokem a zajistí, že porozumíte každé části kódu a jejímu účelu.
 
@@ -15,7 +15,7 @@ Ve světě automatizace a manipulace s dokumenty představuje Aspose.Words for .
 
 Než se ponoříme do kódu, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou nejnovější verzi. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou nejnovější verzi. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí .NET: Jakékoli IDE kompatibilní s .NET, jako je Visual Studio.
 3. Základní znalost C#: Znalost programování v C# vám pomůže pokračovat.
 
@@ -110,4 +110,4 @@ FieldIncludeText konkrétně pracuje s dokumenty aplikace Word. Pro jiné formá
 Ano, Aspose.Words for .NET podporuje .NET Framework, .NET Core a .NET 5/6.
 
 ### Jak mohu získat bezplatnou zkušební verzi Aspose.Words pro .NET?  
- Můžete získat bezplatnou zkušební verzi od[tady](https://releases.aspose.com/).
+ Můžete získat bezplatnou zkušební verzi od[zde](https://releases.aspose.com/).

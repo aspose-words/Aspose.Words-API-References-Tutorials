@@ -15,7 +15,7 @@ Bạn đã bao giờ tự hỏi làm cách nào để duy trì tỷ lệ hình �
 
 Trước khi đi sâu vào mã, hãy xem qua những gì bạn cần để bắt đầu:
 
-- Thư viện Aspose.Words for .NET: Bạn cần cài đặt Aspose.Words for .NET. Nếu bạn chưa có, bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+- Thư viện Aspose.Words for .NET: Bạn cần cài đặt Aspose.Words for .NET. Nếu bạn chưa có, bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 - Môi trường phát triển: Đảm bảo bạn đã thiết lập môi trường phát triển .NET. Visual Studio là một lựa chọn phổ biến.
 - Kiến thức cơ bản về C#: Một số kiến thức quen thuộc về lập trình C# sẽ rất hữu ích.
 

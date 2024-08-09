@@ -15,7 +15,7 @@ url: /ar/net/working-with-fields/delete-fields/
 
 قبل الغوص في هذا البرنامج التعليمي، تأكد من توفر المتطلبات الأساسية التالية:
 
-### متطلبات البرنامج
+### متطلبات البرمجيات
 
 1. Visual Studio: تم تثبيته وتكوينه على نظامك.
 2.  Aspose.Words for .NET: تم تنزيله ودمجه في مشروع Visual Studio الخاص بك. يمكنك تنزيله من[هنا](https://releases.aspose.com/words/net/).
@@ -100,4 +100,4 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 نعم، الطريقة الموضحة هنا تستهدف الحقول فقط وتترك المحتويات الأخرى دون تغيير.
 
 ### أين يمكنني العثور على المزيد من الموارد والدعم لـ Aspose.Words؟
- قم بزيارة[Aspose.Words لوثائق .NET API](https://reference.aspose.com/words/net/) و ال[منتدى Aspose.Words](https://forum.aspose.com/c/words/8) لمزيد من المساعدة.
+ قم بزيارة[Aspose.Words لوثائق .NET API](https://reference.aspose.com/words/net/) و[منتدى Aspose.Words](https://forum.aspose.com/c/words/8) لمزيد من المساعدة.

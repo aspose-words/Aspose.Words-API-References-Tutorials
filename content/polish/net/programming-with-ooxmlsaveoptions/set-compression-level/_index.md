@@ -87,7 +87,7 @@ OoxmlSaveOptions saveOptions = new OoxmlSaveOptions
 
 Na koniec zapisz dokument z nowymi ustawieniami kompresji.
 
- Użyj`Save` metoda zapisania dokumentu z określonym poziomem kompresji.
+ Skorzystaj z`Save` metoda zapisania dokumentu z określonym poziomem kompresji.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.SetCompressionLevel.docx", saveOptions);

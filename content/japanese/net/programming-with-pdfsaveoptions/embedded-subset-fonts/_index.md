@@ -73,7 +73,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf", saveOptions
 必要なフォント サブセットのみを埋め込むと、ドキュメントの外観や読みやすさを損なうことなく、PDF ファイルのサイズを大幅に削減できます。
 
 ### 必要に応じて、完全なフォントの埋め込みに戻すことはできますか?
-はい、できます。`EmbedFullFonts`財産に`true`の中に`PdfSaveOptions`.
+はい、できます。`EmbedFullFonts`財産に`true`の`PdfSaveOptions`.
 
 ### Aspose.Words for .NET は他の PDF 最適化機能もサポートしていますか?
 もちろんです! Aspose.Words for .NET には、画像の圧縮や未使用のオブジェクトの削除など、PDF を最適化するためのさまざまなオプションが用意されています。

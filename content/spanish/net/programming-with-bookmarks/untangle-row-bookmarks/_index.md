@@ -19,7 +19,7 @@ Antes de sumergirte, necesitarás algunas cosas:
 
 1.  Aspose.Words para .NET: esta biblioteca comercial proporciona funcionalidades para trabajar con documentos de Word mediante programación. 2. Puedes descargar una prueba gratuita desde[enlace de descarga](https://releases.aspose.com/words/net/) o comprar una licencia de[comprar](https://purchase.aspose.com/buy).
 3. Entorno de desarrollo AC#: Visual Studio o cualquier otro IDE de C# funcionará perfectamente.
-4. Un documento de Word con marcadores de fila: utilizaremos un documento de muestra llamado "Marcadores de columna de tabla.docx" con fines de demostración.
+4. Un documento de Word con marcadores de fila: usaremos un documento de muestra llamado "Marcadores de columna de tabla.docx" con fines de demostración.
 
 ## Importar espacios de nombres
 
@@ -65,7 +65,7 @@ private void Untangle(Document doc)
 Aquí hay una explicación paso a paso de lo que hace el código:
 
  Repetimos todos los marcadores del documento utilizando un`foreach` bucle.
-Para cada marcador, recuperamos la fila principal tanto del inicio del marcador (`bookmark.BookmarkStart`) y el final del marcador (`bookmark.BookmarkEnd` ) utilizando el`GetAncestor` método.
+Para cada marcador, recuperamos la fila principal tanto del inicio del marcador (`bookmark.BookmarkStart`) y el final del marcador (`bookmark.BookmarkEnd` ) usando el`GetAncestor` método.
 Luego verificamos si se encuentran ambas filas (`row1 != null`y`row2 != null`) y si son filas adyacentes (`row1.NextSibling == row2`). Esto garantiza que solo modifiquemos los marcadores que abarcan filas adyacentes.
 Si se cumplen las condiciones, movemos el nodo final del marcador al final del último párrafo en la última celda de la fila superior (`row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd)`) desenredarlos efectivamente.
 
@@ -87,12 +87,12 @@ Aquí hay un desglose de esta función:
 
 Tomamos el nombre del marcador (`bookmarkName`) como entrada.
  Recuperamos el objeto marcador correspondiente usando`doc.Range.Bookmarks[bookmarkName]`.
-Luego comenzamos a usar la fila principal del marcador.`GetAncestor` (Similar a`Untangle` función).
+Luego comenzamos a usar la fila principal del marcador.`GetAncestor` (similar a la`Untangle` función).
 Finalmente, verificamos si el marcador y la fila existen (`bookmark != null` y
 
 ## Paso 4: verificar el desenredado
 
- Mientras que la`Untangle` La función debe garantizar la seguridad de otros marcadores, siempre es una buena práctica verificarlo. Así es como podemos verificar si el proceso de desenredado no eliminó accidentalmente el final de otro marcador:
+ Mientras que el`Untangle` La función debe garantizar la seguridad de otros marcadores, siempre es una buena práctica verificarlo. Así es como podemos verificar si el proceso de desenredado no eliminó accidentalmente el final de otro marcador:
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)

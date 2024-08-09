@@ -45,7 +45,7 @@ Agregue Aspose.Words a su proyecto
 
 ## Paso 2: cargue su documento
 
-A continuación, cargaremos el documento que contiene los saltos de página que deseas eliminar.
+A continuación, cargaremos el documento que contiene los saltos de página que desea eliminar.
 
 Cargar el documento
 ```csharp

@@ -2,7 +2,7 @@
 title: Document invoegen met Builder
 linktitle: Document invoegen met Builder
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u twee Word-documenten samenvoegt met Aspose.Words voor .NET. Stapsgewijze handleiding om een document in te voegen met DocumentBuilder en de opmaak te behouden.
+description: Leer hoe u twee Word-documenten kunt samenvoegen met Aspose.Words voor .NET. Stapsgewijze handleiding om een document in te voegen met DocumentBuilder en de opmaak te behouden.
 type: docs
 weight: 10
 url: /nl/net/join-and-append-documents/insert-document-with-builder/
@@ -90,7 +90,7 @@ Nu komt het spannende gedeelte: het invoegen van het brondocument in het doeldoc
 builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
- De ... gebruiken`InsertDocument` Met deze methode kunnen we het volledige brondocument in het doeldocument invoegen. De`ImportFormatMode.KeepSourceFormatting` zorgt ervoor dat de opmaak van het brondocument behouden blijft.
+ Met behulp van de`InsertDocument` Met deze methode kunnen we het volledige brondocument in het doeldocument invoegen. De`ImportFormatMode.KeepSourceFormatting` zorgt ervoor dat de opmaak van het brondocument behouden blijft.
 
 ## Stap 7: Het samengevoegde document opslaan
 
@@ -121,4 +121,4 @@ Aspose.Words voor .NET is een krachtige bibliotheek waarmee ontwikkelaars Word-d
 Absoluut! De beschreven methode kan worden opgenomen in grotere toepassingen om documentverwerkingstaken te automatiseren.
 
 ### Waar kan ik meer bronnen en ondersteuning vinden?  
-Voor meer informatie kunt u kijken op de[documentatie](https://reference.aspose.com/words/net/) , of bezoek de[Helpforum](https://forum.aspose.com/c/words/8) Voor assistentie.
+Voor meer informatie kunt u kijken op de[documentatie](https://reference.aspose.com/words/net/) , of bezoek de[ondersteuningsforum](https://forum.aspose.com/c/words/8) voor hulp.

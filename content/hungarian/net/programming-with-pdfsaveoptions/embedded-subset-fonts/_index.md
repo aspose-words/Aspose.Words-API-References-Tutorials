@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## 2. lépés: Konfigurálja a PDF mentési beállításokat
 
- Ezután konfiguráljuk a`PdfSaveOptions` hogy csak a szükséges betűkészlet-alkészletek legyenek beágyazva. A beállítással`EmbedFullFonts` nak nek`false`, azt mondjuk az Aspose.Words-nek, hogy csak a dokumentumban használt karakterjeleket ágyazza be.
+ Ezután konfiguráljuk a`PdfSaveOptions` hogy csak a szükséges betűkészlet-alkészletek legyenek beágyazva. Beállítás által`EmbedFullFonts` hogy`false`, azt mondjuk az Aspose.Words-nek, hogy csak a dokumentumban használt karakterjeleket ágyazza be.
 
 ```csharp
 // A kimeneti PDF a dokumentumban lévő betűtípusok részhalmazait fogja tartalmazni.
@@ -73,7 +73,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf", saveOptions
 Csak a szükséges betűkészlet-alkészletek beágyazásával jelentősen csökkenthető a PDF-fájl mérete anélkül, hogy a dokumentum megjelenése és olvashatósága csökkenne.
 
 ### Ha szükséges, visszatérhetek a teljes betűtípusok beágyazásához?
- Igen tudsz. Egyszerűen állítsa be a`EmbedFullFonts`tulajdonát`true` ban,-ben`PdfSaveOptions`.
+ Igen, megteheti. Egyszerűen állítsa be a`EmbedFullFonts`tulajdonát`true` a`PdfSaveOptions`.
 
 ### Az Aspose.Words for .NET támogat más PDF-optimalizálási funkciókat?
 Teljesen! Az Aspose.Words for .NET számos lehetőséget kínál a PDF-fájlok optimalizálására, beleértve a képtömörítést és a nem használt objektumok eltávolítását.

@@ -7,15 +7,15 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/escape-uri/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Přemýšleli jste někdy, jak zacházet s URI při ukládání dokumentu aplikace Word jako PDF pomocí Aspose.Words for .NET? Jste na správném místě! Dnes se ponoříme hluboko do únikových URI v dokumentech PDF, abychom zajistili jejich správnou funkci při převodu dokumentu. Vydejme se na tuto cestu společně, krok za krokem, a ujistěte se, že na cestě pochopíte každý koncept.
+Ahoj! Přemýšleli jste někdy, jak zacházet s URI při ukládání dokumentu aplikace Word jako PDF pomocí Aspose.Words for .NET? Jste na správném místě! Dnes se ponoříme hluboko do únikových URI v dokumentech PDF, abychom zajistili jejich správnou funkci při převodu dokumentu. Vydejme se na tuto cestu společně, krok za krokem, a ujistěte se, že na cestě pochopíte každý koncept.
 
 ## Předpoklady
 
 Než začneme, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nejnovější verzi. Můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nejnovější verzi. Můžete si jej stáhnout[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Visual Studio nebo jakékoli jiné vývojové prostředí .NET.
 3. Základní znalost C#: Tento tutoriál předpokládá, že máte základní znalosti o programování v C#.
 
@@ -50,7 +50,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Tady,`Document` je váš nový dokument aplikace Word a`DocumentBuilder` je pomocná třída, která zjednodušuje proces vytváření dokumentu.
+ Zde,`Document` je váš nový dokument aplikace Word a`DocumentBuilder` je pomocná třída, která zjednodušuje proces vytváření dokumentu.
 
 ## Krok 3: Vložte hypertextový odkaz
 
@@ -94,8 +94,8 @@ Absolutně! Aspose.Words podporuje různé typy odkazů, včetně odkazů na int
 
 ### Jak mohu získat bezplatnou zkušební verzi Aspose.Words pro .NET?
 
- Můžete získat bezplatnou zkušební verzi[tady](https://releases.aspose.com/).
+ Můžete získat bezplatnou zkušební verzi[zde](https://releases.aspose.com/).
 
 ### Kde najdu podrobnější dokumentaci k Aspose.Words pro .NET?
 
- Můžete najít podrobnou dokumentaci[tady](https://reference.aspose.com/words/net/).
+ Můžete najít podrobnou dokumentaci[zde](https://reference.aspose.com/words/net/).

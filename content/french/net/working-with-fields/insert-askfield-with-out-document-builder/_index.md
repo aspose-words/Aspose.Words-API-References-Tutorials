@@ -9,7 +9,7 @@ url: /fr/net/working-with-fields/insert-askfield-with-out-document-builder/
 ---
 ## Introduction
 
-Cherchez-vous à maîtriser l’automatisation des documents avec Aspose.Words pour .NET ? Vous êtes arrivé au bon endroit! Aujourd'hui, nous allons vous expliquer comment insérer un champ ASK sans utiliser de Document Builder. Il s'agit d'une fonctionnalité intéressante lorsque vous souhaitez que votre document invite les utilisateurs à effectuer des saisies spécifiques, rendant ainsi vos documents Word plus interactifs et dynamiques. Alors allons-y et rendons vos documents plus intelligents !
+Cherchez-vous à maîtriser l’automatisation des documents avec Aspose.Words pour .NET ? Vous êtes au bon endroit ! Aujourd'hui, nous allons vous expliquer comment insérer un champ ASK sans utiliser de Document Builder. Il s'agit d'une fonctionnalité intéressante lorsque vous souhaitez que votre document invite les utilisateurs à effectuer des saisies spécifiques, rendant ainsi vos documents Word plus interactifs et dynamiques. Alors allons-y et rendons vos documents plus intelligents !
 
 ## Conditions préalables
 
@@ -103,7 +103,7 @@ Cette ligne enregistre le document avec le champ ASK inséré. Et voilà, votre 
 
 ## Conclusion
 
-Toutes nos félicitations! Vous venez d'ajouter un champ ASK à un document Word à l'aide d'Aspose.Words pour .NET sans Document Builder. Cette fonctionnalité peut améliorer considérablement l'interaction de l'utilisateur avec vos documents, les rendant plus flexibles et conviviaux. Continuez à expérimenter différents champs et propriétés pour libérer tout le potentiel d’Aspose.Words. Bon codage !
+Félicitations! Vous venez d'ajouter un champ ASK à un document Word à l'aide d'Aspose.Words pour .NET sans Document Builder. Cette fonctionnalité peut améliorer considérablement l'interaction de l'utilisateur avec vos documents, les rendant plus flexibles et conviviaux. Continuez à expérimenter différents champs et propriétés pour libérer tout le potentiel d’Aspose.Words. Bon codage !
 
 ## FAQ
 

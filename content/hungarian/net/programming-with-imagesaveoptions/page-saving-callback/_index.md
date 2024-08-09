@@ -9,7 +9,7 @@ url: /hu/net/programming-with-imagesaveoptions/page-saving-callback/
 ---
 ## Bevezetés
 
-Halihó! Érezte már valaha, hogy egy Word-dokumentum minden oldalát külön képként kell elmentenie? Lehet, hogy egy nagy jelentést szeretne könnyen emészthető látványelemekre bontani, vagy bélyegképeket kell létrehoznia az előnézethez. Bármi is legyen az ok, az Aspose.Words for .NET használatával ez a feladat gyerekjáték. Ebben az útmutatóban végigvezetjük az oldalmentő visszahívás beállításának folyamatán, amellyel a dokumentum minden oldalát egyedi PNG-képként mentheti el. Egyből merüljünk bele!
+Szia! Érezte már valaha, hogy egy Word-dokumentum minden oldalát külön képként kell elmentenie? Lehet, hogy egy nagy jelentést szeretne könnyen emészthető látványelemekre bontani, vagy bélyegképeket kell létrehoznia az előnézethez. Bármi is legyen az ok, az Aspose.Words for .NET használatával ez a feladat gyerekjáték. Ebben az útmutatóban végigvezetjük az oldalmentő visszahívás beállításának folyamatán, amellyel a dokumentum minden oldalát egyedi PNG-képként mentheti el. Egyből merüljünk bele!
 
 ## Előfeltételek
 
@@ -92,7 +92,7 @@ Boldog kódolást!
 ## GYIK
 
 ### Menthetek oldalakat a PNG-től eltérő formátumban?  
- Igen, mentheti az oldalakat különböző formátumokban, például JPEG, BMP és TIFF formátumban, ha módosítja a`SaveFormat` ban ben`ImageSaveOptions`.
+ Igen, mentheti az oldalakat különböző formátumokban, például JPEG, BMP és TIFF formátumban, ha módosítja a`SaveFormat` be`ImageSaveOptions`.
 
 ### Mi a teendő, ha csak bizonyos oldalakat akarok menteni?  
  A menteni kívánt oldalakat a gomb beállításával adhatja meg`PageSet` paraméter be`ImageSaveOptions`.

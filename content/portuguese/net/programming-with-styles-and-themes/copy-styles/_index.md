@@ -75,7 +75,7 @@ E aí está! Copiar estilos entre documentos do Word usando Aspose.Words for .NE
 ###  Qual é o propósito do`CopyStylesFromTemplate` method?  
  O`CopyStylesFromTemplate` O método copia estilos de um documento para outro, garantindo que o documento de destino herde a formatação do documento de origem.
 
-###  Eu posso usar`CopyStylesFromTemplate` with documents in different formats?  
+###  Posso usar`CopyStylesFromTemplate` with documents in different formats?  
  Não, o`CopyStylesFromTemplate` O método funciona apenas com documentos no mesmo formato, normalmente DOCX.
 
 ### Como posso verificar se os estilos foram copiados com sucesso?  

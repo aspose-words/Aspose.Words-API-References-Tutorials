@@ -9,7 +9,7 @@ url: /sv/net/enable-opentype-features/open-type-features/
 ---
 ## Introduktion
 
-Är du redo att dyka in i världen av OpenType-funktioner med Aspose.Words för .NET? Spänn fast dig, för vi är på väg att ge dig ut på en engagerande resa som inte bara kommer att förbättra dina Word-dokument utan också göra dig till en Aspose.Words-expert. Låt oss börja!
+Är du redo att dyka in i världen av OpenType-funktioner med Aspose.Words för .NET? Spänn fast dig, för vi är på väg att ge dig ut på en engagerande resa som inte bara kommer att förbättra dina Word-dokument utan också göra dig till en Aspose.Words-expert. Låt oss komma igång!
 
 ## Förutsättningar
 
@@ -56,7 +56,7 @@ Skapa en strängvariabel för att hålla sökvägen till din dokumentkatalog. De
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"`med den faktiska sökvägen där ditt dokument finns.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"`med den faktiska sökvägen där ditt dokument finns.
 
 ### Laddar dokumentet
 
@@ -106,7 +106,7 @@ HarfBuzz är en textformningsmotor med öppen källkod som ger robust stöd för
 Ja, Aspose.Words stöder olika textformningsmotorer. HarfBuzz rekommenderas dock starkt på grund av dess omfattande stöd för OpenType-funktioner.
 
 ### Är Aspose.Words kompatibel med alla .NET-versioner?
- Aspose.Words stöder olika .NET-versioner, inklusive .NET Framework, .NET Core och .NET Standard. Kolla[dokumentation](https://reference.aspose.com/words/net/) för detaljerad kompatibilitetsinformation.
+ Aspose.Words stöder olika .NET-versioner, inklusive .NET Framework, .NET Core och .NET Standard. Kontrollera[dokumentation](https://reference.aspose.com/words/net/) för detaljerad kompatibilitetsinformation.
 
 ### Hur kan jag prova Aspose.Words innan jag köper?
  Du kan ladda ner en gratis testversion från[Aspose hemsida](https://releases.aspose.com/) och begära en tillfällig licens[här](https://purchase.aspose.com/temporary-license/).

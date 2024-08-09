@@ -23,7 +23,7 @@ Avant de plonger dans le vif du sujet de la culture de la mise à jour sur le te
 
 4.  Licence Aspose : pour bénéficier de toutes les fonctionnalités, vous aurez peut-être besoin d'une licence. Vous pouvez en acheter un[ici](https://purchase.aspose.com/buy) ou obtenir un permis temporaire[ici](https://purchase.aspose.com/temporary-license/).
 
-5.  Accès à la documentation et au support : Pour toute aide supplémentaire, le[Documentation Aspose](https://reference.aspose.com/words/net/)et[Forum d'entraide](https://forum.aspose.com/c/words/8) sont d'excellentes ressources.
+5.  Accès à la documentation et au support : Pour toute aide supplémentaire, le[Documentation Aspose](https://reference.aspose.com/words/net/)et[Forum d'assistance](https://forum.aspose.com/c/words/8) sont d'excellentes ressources.
 
 ## Importer des espaces de noms
 

@@ -64,7 +64,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 Laten we een diagram in ons document invoegen. Voor dit voorbeeld gebruiken we een spreidingsdiagram.
 
- De ... gebruiken`InsertChart` werkwijze van de`DocumentBuilder` klasse, kunnen we een spreidingsdiagram in ons document invoegen.
+ Met behulp van de`InsertChart` werkwijze van de`DocumentBuilder` klasse, kunnen we een spreidingsdiagram in ons document invoegen.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Scatter, 450, 250);

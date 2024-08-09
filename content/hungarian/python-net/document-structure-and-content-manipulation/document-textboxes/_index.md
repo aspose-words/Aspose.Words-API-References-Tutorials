@@ -98,7 +98,7 @@ Ebben az útmutatóban megvizsgáltuk a vizuális tartalom szövegdobozokkal tö
 
 ### Hogyan lehet átméretezni egy szövegdobozt?
 
- Szövegdoboz átméretezéséhez módosíthatja a szélességi és magassági tulajdonságait a gombbal`width`és`height` attribútumokat.
+ Szövegdoboz átméretezéséhez módosíthatja a szélességi és magassági tulajdonságait a gombbal`width`és`height` attribútumok.
 
 ### Elforgathatom a szövegdobozt?
 
@@ -106,7 +106,7 @@ Ebben az útmutatóban megvizsgáltuk a vizuális tartalom szövegdobozokkal tö
 
 ### Hogyan adhatok szegélyeket egy szövegdobozhoz?
 
- Szegélyeket adhat hozzá a szövegdobozokhoz a`textbox.border`ingatlan és megjelenésének testreszabása.
+ A szövegdobozhoz szegélyeket adhat hozzá a`textbox.border`ingatlan és megjelenésének testreszabása.
 
 ### Beágyazhatok hiperhivatkozásokat egy szövegdobozba?
 

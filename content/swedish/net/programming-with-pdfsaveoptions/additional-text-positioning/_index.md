@@ -54,7 +54,7 @@ När ditt projekt är konfigurerat är nästa steg att ladda Word-dokumentet du 
 
 ## Steg 3: Konfigurera PDF-sparalternativ
 
- Magin händer här! Vi kommer att konfigurera`PdfSaveOptions` för att möjliggöra ytterligare textpositionering.
+ Magin händer här! Vi kommer att konfigurera`PdfSaveOptions` för att aktivera ytterligare textpositionering.
 
 1.  Skapa PdfSaveOptions-objekt: Instantiera`PdfSaveOptions` klass.
     ```csharp

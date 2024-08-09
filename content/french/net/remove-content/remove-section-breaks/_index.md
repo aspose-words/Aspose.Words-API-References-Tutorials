@@ -36,7 +36,7 @@ Maintenant, décomposons le processus en étapes gérables.
 Tout d’abord, configurez votre projet dans votre environnement de développement préféré. Créez un nouveau projet d'application console si vous partez de zéro.
 
 1. Ouvrez Visual Studio : lancez Visual Studio et créez un nouveau projet d'application console (.NET Core).
-2. Ajouter Aspose.Words pour .NET : vous pouvez ajouter Aspose.Words à votre projet via NuGet Package Manager. Cliquez avec le bouton droit sur votre projet dans l'Explorateur de solutions, sélectionnez « Gérer les packages NuGet » et recherchez « Aspose.Words ». Installez le paquet.
+2. Ajouter Aspose.Words pour .NET : vous pouvez ajouter Aspose.Words à votre projet via NuGet Package Manager. Cliquez avec le bouton droit sur votre projet dans l'Explorateur de solutions, sélectionnez « Gérer les packages NuGet » et recherchez « Aspose.Words ». Installez le paquet.
 
 ## Étape 2 : Chargez votre document
 
@@ -87,7 +87,7 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ## Conclusion
 
-Et voila! Vous avez supprimé avec succès les sauts de section de votre document Word à l'aide d'Aspose.Words pour .NET. Cette méthode garantit que votre document est rationalisé et exempt de sauts de section inutiles, ce qui le rend beaucoup plus facile à gérer et à modifier.
+Et voilà ! Vous avez supprimé avec succès les sauts de section de votre document Word à l'aide d'Aspose.Words pour .NET. Cette méthode garantit que votre document est rationalisé et exempt de sauts de section inutiles, ce qui le rend beaucoup plus facile à gérer et à modifier.
 
 ## FAQ
 

@@ -16,7 +16,7 @@ Này, những người đam mê công nghệ! Bạn đã sẵn sàng khám phá 
 
 Trước khi bắt đầu viết mã, hãy đảm bảo bạn có mọi thứ bạn cần để làm theo:
 
-1.  Aspose.Words for .NET Library: Bạn sẽ cần phiên bản Aspose.Words mới nhất cho .NET. Nếu bạn chưa có, bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Bạn sẽ cần phiên bản Aspose.Words mới nhất cho .NET. Nếu bạn chưa có, bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Môi trường phát triển .NET như Visual Studio sẽ rất cần thiết để viết và kiểm tra mã của bạn.
 3. Kiến thức cơ bản về C#: Hiểu biết cơ bản về C# sẽ hữu ích khi chúng ta điều hướng qua mã.
 4. Thư mục Tài liệu Mẫu: Chuẩn bị sẵn một thư mục để bạn lưu tài liệu Word của mình. Đây là nơi phép thuật xảy ra!
@@ -112,7 +112,7 @@ Bây giờ chúng ta đã thiết lập dự án VBA và thêm một mô-đun c�
 doc.Save(dataDir + "WorkingWithVba.CreateVbaProject.docm");
 ```
 
-Dòng này lưu tài liệu dưới dạng "WorkingWithVba.CreateVbaProject.docm" trong thư mục đã chỉ định của bạn. Và Voila! Bạn đã tạo một tài liệu Word bằng dự án VBA.
+Dòng này lưu tài liệu dưới dạng "WorkingWithVba.CreateVbaProject.docm" trong thư mục đã chỉ định của bạn. Và thì đấy! Bạn đã tạo một tài liệu Word bằng dự án VBA.
 
 ## Phần kết luận
 

@@ -24,7 +24,7 @@ Vous avez tout ? Super! Allons-y.
 
 ## Importer des espaces de noms
 
-Pour commencer, vous devez importer les espaces de noms nécessaires dans votre projet C#. Voici comment:
+Pour commencer, vous devez importer les espaces de noms nécessaires dans votre projet C#. Voici comment procéder :
 
 ```csharp
 using Aspose.Words;

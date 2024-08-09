@@ -15,7 +15,7 @@ url: /es/net/programming-with-charts/number-format-for-axis/
 
 Antes de comenzar, asegurémonos de que tiene todo lo que necesita. Aquí hay una lista de verificación rápida:
 
--  Aspose.Words para .NET: asegúrese de tenerlo instalado. Si no, puedes[descarguelo aqui](https://releases.aspose.com/words/net/).
+-  Aspose.Words para .NET: asegúrese de tenerlo instalado. Si no, puedes[descárgalo aquí](https://releases.aspose.com/words/net/).
 - .NET Framework: asegúrese de tener instalado un .NET framework compatible.
 - Entorno de desarrollo: un IDE como Visual Studio funcionará perfectamente.
 - Conocimientos básicos de C#: esto le ayudará a seguir los ejemplos de codificación.
@@ -98,7 +98,7 @@ Ahora que todo está configurado, es hora de guardar su documento. Este paso es 
 doc.Save(dataDir + "WorkingWithCharts.NumberFormatForAxis.docx");
 ```
 
- Aquí el`Save` El método guarda el documento en la ruta especificada con el nombre de archivo.`WorkingWithCharts.NumberFormatForAxis.docx`.
+ Aquí, el`Save` El método guarda el documento en la ruta especificada con el nombre de archivo.`WorkingWithCharts.NumberFormatForAxis.docx`.
 
 ## Conclusión
 

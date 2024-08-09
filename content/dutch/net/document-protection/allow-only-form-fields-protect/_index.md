@@ -9,7 +9,7 @@ url: /nl/net/document-protection/allow-only-form-fields-protect/
 ---
 ## Invoering
 
-Hallo daar! Heeft u ooit specifieke delen van een Word-document moeten beschermen terwijl andere delen bewerkbaar moesten blijven? Aspose.Words voor .NET maakt dit supergemakkelijk. In deze zelfstudie gaan we dieper in op de manier waarop u in een Word-document alleen bescherming van formuliervelden kunt toestaan. Aan het einde van deze handleiding beschikt u over een gedegen kennis van documentbeveiliging met Aspose.Words voor .NET. Klaar? Laten we erin springen!
+Hé daar! Heeft u ooit specifieke delen van een Word-document moeten beschermen terwijl andere delen bewerkbaar moesten blijven? Aspose.Words voor .NET maakt dit supergemakkelijk. In deze zelfstudie gaan we dieper in op de manier waarop u in een Word-document alleen bescherming van formuliervelden kunt toestaan. Aan het einde van deze handleiding beschikt u over een gedegen kennis van documentbeveiliging met Aspose.Words voor .NET. Klaar? Laten we erin springen!
 
 ## Vereisten
 
@@ -53,7 +53,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Text added to a document.");
 ```
 
- Hier maken we een nieuwe`Document`En`DocumentBuilder` voorbeeld. De`DocumentBuilder` stelt ons in staat tekst aan ons document toe te voegen.
+ Hier maken we een nieuwe`Document`En`DocumentBuilder` aanleg. De`DocumentBuilder` stelt ons in staat tekst aan ons document toe te voegen.
 
 ## Stap 4: Bescherm het document
 
@@ -67,7 +67,7 @@ doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
 
 Deze coderegel beschermt het document en staat alleen toe dat formuliervelden worden bewerkt. Het wachtwoord "wachtwoord" wordt gebruikt om de beveiliging af te dwingen.
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Sla het beveiligde document op  
 Laten we ten slotte ons document opslaan in de opgegeven map.

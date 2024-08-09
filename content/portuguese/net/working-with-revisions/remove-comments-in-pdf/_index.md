@@ -2,88 +2,91 @@
 title: Remover comentários em arquivo PDF
 linktitle: Remover comentários em arquivo PDF
 second_title: API de processamento de documentos Aspose.Words
-description: Remova comentários em um arquivo PDF com Aspose.Words for .NET.
+description: Aprenda como remover comentários de um arquivo PDF usando Aspose.Words for .NET com nosso guia passo a passo.
 type: docs
 weight: 10
 url: /pt/net/working-with-revisions/remove-comments-in-pdf/
 ---
+## Introdução
 
-Neste guia passo a passo, mostraremos como remover comentários em um arquivo PDF usando Aspose.Words for .NET. Forneceremos o código-fonte completo e mostraremos como formatar a saída do markdown.
+Olá, colegas desenvolvedores! Você já se viu envolvido em uma confusão de comentários ao lidar com arquivos PDF? Você não está sozinho. Quer sejam revisões de pares ou projetos colaborativos, os comentários às vezes podem sobrecarregar seus documentos. Para nossa sorte, o Aspose.Words for .NET oferece uma maneira perfeita de remover essas anotações incômodas. Hoje, percorreremos o processo passo a passo. Então, aperte o cinto e vamos mergulhar no mundo do Aspose.Words!
 
-## Passo 1: Carregando o documento
+## Pré-requisitos
 
-O primeiro passo é carregar o documento que contém os comentários.
+Antes de começarmos, vamos ter certeza de que você tem tudo o que precisa:
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(MyDir + "Revisions.docx");
-```
+1.  Aspose.Words for .NET: Certifique-se de ter a biblioteca instalada. Você pode baixá-lo em[aqui](https://releases.aspose.com/words/net/).
+2. Ambiente de desenvolvimento: Qualquer IDE compatível com .NET, como Visual Studio.
+3. Conhecimento básico de C#: Ajuda se você estiver familiarizado com os fundamentos da programação C#.
+4. Um documento com comentários: precisaremos de um documento Word (.docx) com comentários para testar.
 
-## Passo 2: Ocultar comentários em PDF
+Se você está pronto com isso, vamos para a parte emocionante!
 
-Iremos configurar a opção de layout para ocultar comentários ao gerar o PDF.
+## Importar namespaces
 
-```csharp
-doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
-```
-
-## Etapa 3: salve o documento como PDF
-
-Por fim, salvaremos o documento em formato PDF excluindo os comentários.
+Em primeiro lugar, precisamos importar os namespaces necessários. Isso nos permite usar as classes e métodos fornecidos por Aspose.Words.
 
 ```csharp
-doc.Save(dataDir + "WorkingWithRevisions.RemoveCommentsInPdf.pdf");
+using Aspose.Words;
+using Aspose.Words.Layout;
 ```
 
-## Formatos de saída Markdown
+Esses namespaces nos dão acesso às opções de manuseio e layout de documentos que precisaremos.
 
-A saída pode ser formatada em markdown para melhorar a legibilidade. Por exemplo :
+## Etapa 1: carregue o documento
 
-```markdown
-- Comments are hidden in the generated PDF.
-```
+Vamos começar carregando o documento que contém os comentários. Este documento deve ser armazenado em um diretório ao qual você tenha acesso.
 
-### Exemplo de código-fonte para remover comentários em PDF usando Aspose.Words for .NET
-
-Aqui está o código-fonte completo para remover comentários em um arquivo PDF usando Aspose.Words for .NET:
 
 ```csharp
 // O caminho para o diretório de documentos.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(MyDir + "Revisions.docx");
+Document doc = new Document(dataDir + "Revisions.docx");
+```
 
+ Neste trecho, substitua`"YOUR DOCUMENT DIRECTORY"` com o caminho real para o diretório do seu documento. Estamos carregando um documento chamado`Revisions.docx`.
+
+## Passo 2: Ocultar comentários no PDF
+
+A seguir, precisamos ocultar os comentários para que não apareçam na versão PDF do nosso documento. Aspose.Words torna isso incrivelmente simples.
+
+```csharp
 // Ocultar comentários no PDF.
 doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
+```
 
+Esta linha de código diz ao Aspose.Words para ocultar comentários ao renderizar o documento.
+
+## Etapa 3: salve o documento como PDF
+
+Finalmente, salvamos o documento modificado como PDF. Esta etapa garante que nossos comentários sejam removidos do arquivo de saída.
+
+
+```csharp
 doc.Save(dataDir + "WorkingWithRevisions.RemoveCommentsInPdf.pdf");
 ```
 
+Aqui salvamos o documento no mesmo diretório com um novo nome, indicando que os comentários foram removidos na versão PDF.
+
 ## Conclusão
 
-Neste tutorial, aprendemos como remover comentários de um arquivo PDF usando Aspose.Words for .NET. Utilizando as opções de layout adequadas, conseguimos ocultar os comentários ao gerar o PDF. Aspose.Words for .NET oferece grande flexibilidade para manipular arquivos Word e convertê-los para diferentes formatos, incluindo PDF. Agora você pode aplicar esse conhecimento para remover comentários em seus próprios arquivos PDF usando Aspose.Words for .NET.
+E aí está! Em apenas algumas etapas simples, removemos com sucesso comentários de um arquivo PDF usando Aspose.Words for .NET. Esta poderosa biblioteca simplifica a manipulação de documentos, facilitando o gerenciamento de tarefas que, de outra forma, seriam complicadas.
 
-### Perguntas frequentes para remover comentários em arquivo PDF
+Lembre-se de que a prática leva à perfeição. Então, vá em frente e experimente isso com seus documentos. Você ficará surpreso ao ver como seus PDFs ficam mais limpos e profissionais, sem todos aqueles comentários bagunçando as margens.
 
-#### P: Como fazer upload de um documento no Aspose.Words for .NET?
+## Perguntas frequentes
 
- R: Use o`Document` classe de Aspose.Words for .NET para carregar um documento de um arquivo. Você pode especificar o caminho completo do documento.
+### E se eu quiser manter alguns comentários, mas remover outros?
+ Você pode ocultar comentários seletivamente manipulando os nós de comentários diretamente no documento antes de definir o`CommentDisplayMode`.
 
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
+### Posso usar Aspose.Words para outros formatos de arquivo além de PDF?
+Absolutamente! Aspose.Words oferece suporte a uma ampla variedade de formatos de arquivo, incluindo DOCX, TXT, HTML e muito mais.
 
-#### P: Como ocultar comentários em PDF gerados com Aspose.Words for .NET?
+### Existe um teste gratuito disponível para Aspose.Words?
+ Sim, você pode obter um teste gratuito[aqui](https://releases.aspose.com/).
 
- R: Use o`CommentDisplayMode` propriedade do`LayoutOptions` objeto para configurar como os comentários são exibidos ao gerar o PDF. Para ocultar comentários, defina esta propriedade como`CommentDisplayMode.Hide`.
+### E se eu encontrar problemas ao usar o Aspose.Words?
+ Você pode visitar o[fórum de suporte](https://forum.aspose.com/c/words/8) para obter ajuda com quaisquer problemas que você possa enfrentar.
 
-```csharp
-doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
-```
-
-#### P: Como salvar um documento como PDF com Aspose.Words for .NET?
-
- R: Use o`Save` método do`Document` objeto para salvar o documento em formato PDF. Especifique o caminho completo do arquivo PDF.
-
-```csharp
-doc.Save("path/to/the/file.pdf");
-```
+### Como posso adquirir uma licença do Aspose.Words?
+ Você pode comprar uma licença de[aqui](https://purchase.aspose.com/buy).

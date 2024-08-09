@@ -18,7 +18,7 @@ url: /el/java/using-document-elements/using-hyphenation/
 
 Πριν ξεκινήσουμε τη χρήση συλλαβισμού στο Aspose.Words για Java, πρέπει να ρυθμίσετε το περιβάλλον ανάπτυξής σας. Βεβαιωθείτε ότι έχετε τα εξής:
 
-- Εγκατεστημένο Java Development Kit (JDK).
+- Εγκαταστάθηκε το Java Development Kit (JDK).
 - Aspose.Words για βιβλιοθήκη Java
 - Ένα ενσωματωμένο περιβάλλον ανάπτυξης Java (IDE)
 
@@ -64,7 +64,7 @@ doc.save(outPath + "WorkingWithHyphenation.LoadHyphenationDictionaryForLanguage.
 
 ### 2. Μπορώ να χρησιμοποιήσω συλλαβισμό σε πολλές γλώσσες;
 
-Ναι μπορείς. Το Aspose.Words για Java σάς επιτρέπει να καταχωρείτε και να φορτώνετε λεξικά συλλαβισμού για διαφορετικές γλώσσες.
+Ναι, μπορείς. Το Aspose.Words για Java σάς επιτρέπει να καταχωρείτε και να φορτώνετε λεξικά συλλαβισμού για διαφορετικές γλώσσες.
 
 ### 3. Είναι εύκολο να ενσωματωθεί το Aspose.Words for Java στο έργο Java;
 
@@ -76,4 +76,4 @@ doc.save(outPath + "WorkingWithHyphenation.LoadHyphenationDictionaryForLanguage.
 
 ### 5. Πώς μπορώ να αποκτήσω πρόσβαση στο Aspose.Words για Java;
 
- Για να αποκτήσετε πρόσβαση στο Aspose.Words για Java,[Κάντε κλικ ΕΔΩ](https://purchase.aspose.com/buy). Ζήστε τη δύναμη της επεξεργασίας εγγράφων στις εφαρμογές σας Java!
+ Για να αποκτήσετε πρόσβαση στο Aspose.Words για Java,[κάντε κλικ εδώ](https://purchase.aspose.com/buy). Ζήστε τη δύναμη της επεξεργασίας εγγράφων στις εφαρμογές σας Java!

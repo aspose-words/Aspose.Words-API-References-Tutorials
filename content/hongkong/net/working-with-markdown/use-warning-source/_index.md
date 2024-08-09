@@ -88,7 +88,7 @@ doc.Save(dataDir + "WorkingWithMarkdown.UseWarningSource.md");
 
 ## 結論
 
-現在你就擁有了！您剛剛學習如何使用`WarningSource`Aspose.Words for .NET 中的類別用於處理 Markdown 警告。本教學介紹了設定項目、載入文件、收集和處理警告以及保存最終文件。有了這些知識，您就可以更好地管理應用程式中的文件處理。繼續試驗並探索 Aspose.Words for .NET 的巨大功能！
+現在你就得到它了！您剛剛學習如何使用`WarningSource`Aspose.Words for .NET 中的類別用於處理 Markdown 警告。本教學介紹了設定項目、載入文件、收集和處理警告以及保存最終文件。有了這些知識，您就可以更好地管理應用程式中的文件處理。繼續試驗並探索 Aspose.Words for .NET 的巨大功能！
 
 ## 常見問題解答
 

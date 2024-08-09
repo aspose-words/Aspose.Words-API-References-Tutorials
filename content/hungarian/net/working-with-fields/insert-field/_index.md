@@ -20,7 +20,7 @@ Mielőtt belemerülnénk, győződjünk meg arról, hogy mindennel rendelkezünk
 3. IDE: Integrált fejlesztői környezet, mint a Visual Studio.
 4.  Ideiglenes jogosítvány: Kaphat egyet[itt](https://purchase.aspose.com/temporary-license/).
 
-Győződjön meg arról, hogy telepítette az Aspose.Words for .NET programot, és beállította a fejlesztői környezetet. Kész? Kezdjük el!
+Győződjön meg arról, hogy telepítette az Aspose.Words for .NET programot, és beállította a fejlesztői környezetet. Kész? Kezdjük is!
 
 ## Névterek importálása
 
@@ -74,17 +74,17 @@ Ebben a példában egy MERGEFIELD-t szúrunk be, amelyet általában körlevél-
 
 ### Mentse el a dokumentumot
 
-A mező beillesztése után el kell mentenünk a dokumentumunkat. Itt van, hogyan:
+A mező beillesztése után el kell mentenünk a dokumentumunkat. Íme, hogyan:
 
 ```csharp
 doc.Save(dataDir + "InsertionField.docx");
 ```
 
-És ez az! Sikeresen beszúrt egy mezőt a Word-dokumentumba.
+És ennyi! Sikeresen beszúrt egy mezőt a Word-dokumentumba.
 
 ## Következtetés
 
-Gratulálunk! Most tanulta meg, hogyan illeszthet be mezőt egy Word-dokumentumba az Aspose.Words for .NET használatával. Ez a nagy teljesítményű könyvtár számos funkciót kínál, hogy a dokumentumautomatizálást egy sétát tegye a parkban. Folytassa a kísérletezést és az Aspose.Words által kínált különféle funkciók felfedezését. Boldog kódolást!
+Gratulálok! Most tanulta meg, hogyan illeszthet be mezőt egy Word-dokumentumba az Aspose.Words for .NET használatával. Ez a nagy teljesítményű könyvtár számos funkciót kínál, hogy a dokumentumautomatizálást egy sétát tegye a parkban. Folytassa a kísérletezést és az Aspose.Words által kínált különféle funkciók felfedezését. Boldog kódolást!
 
 ## GYIK
 

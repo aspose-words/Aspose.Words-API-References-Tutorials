@@ -8,15 +8,15 @@ weight: 10
 url: /cs/net/working-with-hyphenation/hyphenation-callback/
 ---
 
-## Úvod
+## Zavedení
 
-Nazdárek! Zapletli jste se někdy do složitosti formátování textu, zejména při práci s jazyky, které vyžadují dělení slov? Nejsi sám. Dělení slov, i když je klíčové pro správné rozvržení textu, může být trochu bolehlav. Ale Hádej co? Aspose.Words for .NET vám drží záda. Tato výkonná knihovna umožňuje bezproblémovou správu formátování textu, včetně zpracování dělení slov pomocí mechanismu zpětného volání. Zaujalo? Pojďme se ponořit do toho, jak můžete implementovat zpětné volání dělení slov pomocí Aspose.Words pro .NET.
+Ahoj! Zapletli jste se někdy do složitosti formátování textu, zejména při práci s jazyky, které vyžadují dělení slov? Nejsi sám. Dělení slov, i když je klíčové pro správné rozvržení textu, může být trochu bolehlav. Ale hádejte co? Aspose.Words for .NET vám drží záda. Tato výkonná knihovna umožňuje bezproblémovou správu formátování textu, včetně zpracování dělení slov pomocí mechanismu zpětného volání. Zaujalo? Pojďme se ponořit do toho, jak můžete implementovat zpětné volání dělení slov pomocí Aspose.Words pro .NET.
 
 ## Předpoklady
 
 Než si ušpiníme ruce kódem, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte knihovnu. Můžeš[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Ujistěte se, že máte knihovnu. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
 2. IDE: Vývojové prostředí jako Visual Studio.
 3. Základní znalost C#: Pochopení C# a .NET frameworku.
 4. Slovníky dělení slov: Slovníky dělení slov pro jazyky, které plánujete používat.
@@ -68,7 +68,7 @@ Nyní načteme dokument, který vyžaduje dělení slov.
 Document document = new Document(dataDir + "German text.docx");
 ```
 
- Zde načítáme německý textový dokument. Můžete vyměnit`"German text.docx"` s názvem souboru vašeho dokumentu.
+Zde načítáme německý textový dokument. Můžete vyměnit`"German text.docx"` s názvem souboru vašeho dokumentu.
 
 ## Krok 4: Uložte dokument
 
@@ -129,9 +129,9 @@ public class CustomHyphenationCallback : IHyphenationCallback
 
 ## Závěr
 
-A tady to máte! Právě jste se naučili, jak implementovat zpětné volání dělení slov v Aspose.Words pro .NET. Pomocí těchto kroků můžete zajistit, že vaše dokumenty budou krásně naformátované bez ohledu na jazyk. Ať už máte co do činění s angličtinou, němčinou nebo jakýmkoli jiným jazykem, tato metoda vám umožní zvládnout dělení slov bez námahy.
+tady to máte! Právě jste se naučili, jak implementovat zpětné volání dělení slov v Aspose.Words pro .NET. Pomocí těchto kroků můžete zajistit, že vaše dokumenty budou krásně naformátované bez ohledu na jazyk. Ať už máte co do činění s angličtinou, němčinou nebo jakýmkoli jiným jazykem, tato metoda vám umožní zvládnout dělení slov bez námahy.
 
-## Nejčastější dotazy
+## FAQ
 
 ### Co je Aspose.Words for .NET?
 Aspose.Words for .NET je výkonná knihovna pro manipulaci s dokumenty, která umožňuje vývojářům vytvářet, upravovat a převádět dokumenty programově.
@@ -140,10 +140,10 @@ Aspose.Words for .NET je výkonná knihovna pro manipulaci s dokumenty, která u
 Dělení slov zlepšuje rozvržení textu rozdělením slov na vhodná místa, což zajišťuje čitelnější a vizuálně přitažlivější dokument.
 
 ### Mohu používat Aspose.Words zdarma?
- Aspose.Words nabízí bezplatnou zkušební verzi. Můžeš to dostat[tady](https://releases.aspose.com/).
+ Aspose.Words nabízí bezplatnou zkušební verzi. Můžete to získat[zde](https://releases.aspose.com/).
 
 ### Jak získám slovník dělení slov?
 Slovníky dělení slov si můžete stáhnout z různých online zdrojů nebo si v případě potřeby vytvořit vlastní.
 
 ### Co se stane, když chybí slovník dělení slov?
- Pokud slovník chybí,`RequestDictionary` metoda vyvolá výjimku, kterou můžete zpracovat za účelem informování uživatele nebo poskytnutí nouzového řešení.
+ Pokud slovník chybí,`RequestDictionary`metoda vyvolá výjimku, kterou můžete zpracovat za účelem informování uživatele nebo poskytnutí nouzového řešení.

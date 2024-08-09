@@ -63,10 +63,10 @@ Mit Aspose.Words für Java wird das Konvertieren von Dokumenten in Bilder in Jav
 ## Häufig gestellte Fragen
 
 ### Wie kann ich die Bildauflösung bei der Konvertierung einstellen?
- Um die Bildauflösung einzustellen, verwenden Sie die`setResolution` Methode von`ImageSaveOptions` und geben Sie die gewünschte Auflösung in Punkten pro Zoll (DPI) an.
+ Um die Bildauflösung einzustellen, verwenden Sie die`setResolution` Methode der`ImageSaveOptions` und geben Sie die gewünschte Auflösung in Punkten pro Zoll (DPI) an.
 
 ### Kann ich bestimmte Seiten des Dokuments in Bilder umwandeln?
- Ja, Sie können einen Seitenbereich angeben mit dem`setPageCount`Und`setPageIndex` Methoden von`ImageSaveOptions` um bestimmte Seiten in Bilder umzuwandeln.
+ Ja, Sie können einen Seitenbereich angeben mit dem`setPageCount`Und`setPageIndex` Methoden der`ImageSaveOptions` um bestimmte Seiten in Bilder umzuwandeln.
 
 ### Ist Aspose.Words für Java für die Stapelkonvertierung von Dokumenten geeignet?
 Auf jeden Fall! Sie können Aspose.Words für Java verwenden, um mehrere Dokumente effizient stapelweise in Bilder umzuwandeln.

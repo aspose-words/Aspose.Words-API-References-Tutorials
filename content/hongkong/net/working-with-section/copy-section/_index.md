@@ -91,7 +91,7 @@ dstDoc.Save(dataDir + "WorkingWithSection.CopySection.docx");
 
 ## 結論
 
-現在你就擁有了！ 🎉 您已使用 Aspose.Words for .NET 成功將一個部分從一個 Word 文件複製到另一個文件。這項強大的功能可以為您節省大量的時間和精力，特別是在處理複雜的文件或重複性任務時。請記住，掌握 Aspose.Words 的關鍵在於練習和嘗試不同的功能。快樂編碼！
+現在你就得到它了！ 🎉 您已使用 Aspose.Words for .NET 成功將一個部分從一個 Word 文件複製到另一個文件。這項強大的功能可以為您節省大量的時間和精力，特別是在處理複雜的文件或重複性任務時。請記住，掌握 Aspose.Words 的關鍵在於練習和嘗試不同的功能。快樂編碼！
 
 ## 常見問題解答
 
@@ -109,7 +109,7 @@ dstDoc.Save(dataDir + "WorkingWithSection.CopySection.docx");
 
 ### 在哪裡可以找到有關 Aspose.Words 的更多資源？
 
-欲了解更多信息，您可以訪問[Aspose.Words API 文檔](https://reference.aspose.com/words/net/)或者[支援論壇](https://forum.aspose.com/c/words/8)尋求幫助和討論。
+欲了解更多信息，您可以訪問[Aspose.Words API 文檔](https://reference.aspose.com/words/net/)或[支援論壇](https://forum.aspose.com/c/words/8)尋求幫助和討論。
 
 ### 可以免費試用 Aspose.Words for .NET 嗎？
 

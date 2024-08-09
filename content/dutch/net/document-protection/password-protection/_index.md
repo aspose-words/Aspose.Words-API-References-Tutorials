@@ -9,13 +9,13 @@ url: /nl/net/document-protection/password-protection/
 ---
 ## Invoering
 
-Hallo daar! Heeft u zich ooit afgevraagd hoe u uw Word-documenten kunt beveiligen tegen ongewenste bewerkingen en nieuwsgierige blikken? Nou, je hebt geluk, want vandaag duiken we in de wereld van wachtwoordbeveiliging met Aspose.Words voor .NET. Het is alsof je je agenda op slot zet: alleen cooler en technisch onderlegder. Laten we samen aan deze reis beginnen en leren hoe we onze documenten veilig en gezond kunnen houden!
+Hé daar! Heeft u zich ooit afgevraagd hoe u uw Word-documenten kunt beveiligen tegen ongewenste bewerkingen en nieuwsgierige blikken? Nou, je hebt geluk, want vandaag duiken we in de wereld van wachtwoordbeveiliging met Aspose.Words voor .NET. Het is alsof je je agenda op slot zet: alleen cooler en technisch onderlegder. Laten we samen aan deze reis beginnen en leren hoe we onze documenten veilig en gezond kunnen houden!
 
 ## Vereisten
 
 Voordat we ingaan op de details van het beveiligen van uw Word-documenten met een wachtwoord, zijn er een paar dingen die u nodig heeft:
 
-1.  Aspose.Words voor .NET: Zorg ervoor dat u over de Aspose.Words voor .NET-bibliotheek beschikt. Jij kan[download het hier](https://releases.aspose.com/words/net/).
+1.  Aspose.Words voor .NET: Zorg ervoor dat u over de Aspose.Words voor .NET-bibliotheek beschikt. Dat kan[download het hier](https://releases.aspose.com/words/net/).
 2. Ontwikkelomgeving: Visual Studio of een andere C#-ontwikkelomgeving.
 3. Basiskennis van C#: Een fundamenteel begrip van C#-programmeren.
 4.  Aspose-licentie: verkrijg een licentie van[hier](https://purchase.aspose.com/buy)of gebruik een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/) voor evaluatie.
@@ -50,7 +50,7 @@ Install-Package Aspose.Words
 
 Nu ons project is opgezet, gaan we een Word-document maken dat we kunnen beschermen.
 
- In uw`Program.cs` bestand, initialiseer een nieuw exemplaar van het`Document` klas. Deze klasse vertegenwoordigt het Word-document waarmee u gaat werken.
+ In jouw`Program.cs` bestand, initialiseer een nieuw exemplaar van het`Document` klas. Deze klasse vertegenwoordigt het Word-document waarmee u gaat werken.
 
 ```csharp
 // Het pad naar de documentenmap.

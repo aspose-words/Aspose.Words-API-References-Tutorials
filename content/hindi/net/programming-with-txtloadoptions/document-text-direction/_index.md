@@ -69,7 +69,7 @@ Paragraph paragraph = doc.FirstSection.Body.FirstParagraph;
 Console.WriteLine(paragraph.ParagraphFormat.Bidi);
 ```
 
-यह चरण डिबगिंग और यह सत्यापित करने के लिए उपयोगी है कि दस्तावेज़ की पाठ दिशा अपेक्षा के अनुसार लागू की गई है।
+यह चरण डिबगिंग और यह सत्यापित करने के लिए उपयोगी है कि दस्तावेज़ की पाठ दिशा अपेक्षा के अनुरूप लागू की गई है।
 
 ## चरण 5: दस्तावेज़ को नई सेटिंग्स के साथ सहेजें
 
@@ -87,7 +87,7 @@ Word दस्तावेज़ों में टेक्स्ट दिश
 
 ## अक्सर पूछे जाने वाले प्रश्न
 
-###  क्या है`DocumentDirection` property used for?
+###  क्या है?`DocumentDirection` property used for?
 
 `DocumentDirection` संपत्ति में`TxtLoadOptions` दस्तावेज़ के लिए पाठ की दिशा निर्धारित करता है। इसे इस प्रकार सेट किया जा सकता है`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , या`DocumentDirection.RightToLeft`.
 

@@ -15,7 +15,7 @@ Selamat datang! Jika Anda mendalami dunia Aspose.Words untuk .NET, Anda akan men
 
 Sebelum kita mulai, pastikan Anda memiliki hal berikut:
 
--  Aspose.Words untuk .NET: Jika Anda belum menginstalnya,[Unduh di sini](https://releases.aspose.com/words/net/).
+-  Aspose.Words untuk .NET: Jika Anda belum menginstalnya,[unduh di sini](https://releases.aspose.com/words/net/).
 - Lingkungan Pengembangan: Visual Studio atau C# IDE lainnya.
 -  Dokumen Word: Kami akan menggunakan dokumen bernama`Rendering.docx`. Tempatkan di direktori proyek Anda.
 
@@ -47,7 +47,7 @@ Jika Anda belum melakukannya, tambahkan Aspose.Words for .NET ke proyek Anda mel
 Install-Package Aspose.Words
 ```
 
-Besar! Sekarang, kami siap untuk memulai coding.
+Besar! Sekarang, kami siap untuk memulai pengkodean.
 
 ## Langkah 2: Muat Dokumen Anda
 
@@ -114,13 +114,13 @@ Dan itu dia! Dengan mengikuti langkah-langkah ini, Anda telah berhasil menambahk
 ## FAQ
 
 ### Bisakah saya menggunakan awalan berbeda untuk setiap operasi penyimpanan?
- Ya, Anda dapat menyesuaikan awalan setiap kali Anda menyimpan dokumen dengan mengubah`CssClassNamePrefix` Properti.
+ Ya, Anda dapat menyesuaikan awalan setiap kali Anda menyimpan dokumen dengan mengubah`CssClassNamePrefix` milik.
 
 ### Apakah metode ini mendukung CSS sebaris?
  Itu`CssClassNamePrefix`properti berfungsi dengan CSS eksternal. Untuk CSS sebaris, Anda memerlukan pendekatan berbeda.
 
 ### Bagaimana cara menyertakan opsi penyimpanan HTML lainnya?
- Anda dapat mengonfigurasi berbagai properti`HtmlSaveOptions` untuk menyesuaikan keluaran HTML Anda. Periksalah[dokumentasi](https://reference.aspose.com/words/net/) untuk lebih jelasnya.
+ Anda dapat mengonfigurasi berbagai properti`HtmlSaveOptions` untuk menyesuaikan keluaran HTML Anda. Periksa[dokumentasi](https://reference.aspose.com/words/net/) untuk lebih jelasnya.
 
 ### Apakah mungkin menyimpan HTML ke aliran?
  Sangat! Anda dapat menyimpan dokumen ke aliran dengan meneruskan objek aliran ke`Save` metode.

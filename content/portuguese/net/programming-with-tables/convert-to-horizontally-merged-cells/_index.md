@@ -71,13 +71,13 @@ E é isso! Você converteu com êxito células mescladas verticalmente em célul
 Aspose.Words for .NET foi projetado principalmente para linguagens .NET como C#. No entanto, você pode usá-lo com outras linguagens suportadas por .NET, como VB.NET.
 
 ### Existe um teste gratuito disponível para Aspose.Words for .NET?  
- Sim, você pode baixar um[teste grátis](https://releases.aspose.com/) do site Aspose.
+ Sim, você pode baixar um[teste gratuito](https://releases.aspose.com/) do site Aspose.
 
 ### Como posso obter suporte se encontrar problemas?  
- Você pode visitar o[Aspose fórum de suporte](https://forum.aspose.com/c/words/8) para assistência.
+ Você pode visitar o[Aspose fórum de suporte](https://forum.aspose.com/c/words/8) para obter assistência.
 
 ### Posso aplicar uma licença de um arquivo ou stream?  
 Sim, Aspose.Words for .NET permite que você aplique uma licença de um arquivo e de um fluxo. Você pode encontrar mais informações no[documentação](https://reference.aspose.com/words/net/).
 
 ### Que outros recursos o Aspose.Words for .NET oferece?  
- Aspose.Words for .NET oferece uma ampla gama de recursos, incluindo geração, manipulação, conversão e renderização de documentos. Confira a[documentação](https://reference.aspose.com/words/net/) para mais detalhes.
+ Aspose.Words for .NET oferece uma ampla gama de recursos, incluindo geração, manipulação, conversão e renderização de documentos. Confira o[documentação](https://reference.aspose.com/words/net/) para mais detalhes.

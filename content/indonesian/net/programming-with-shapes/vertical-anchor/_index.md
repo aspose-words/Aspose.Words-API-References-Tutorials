@@ -15,7 +15,7 @@ Pernahkah Anda merasa perlu mengontrol dengan tepat di mana teks muncul di dalam
 
 Sebelum kita mendalami dasar-dasar penahan vertikal, Anda perlu menyiapkan beberapa hal:
 
-1.  Aspose.Words for .NET: Pastikan Anda telah menginstal perpustakaan Aspose.Words for .NET. Jika Anda belum memilikinya, Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Pastikan Anda telah menginstal perpustakaan Aspose.Words for .NET. Jika Anda belum memilikinya, Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 2. Visual Studio: Tutorial ini mengasumsikan Anda menggunakan Visual Studio atau .NET IDE lainnya untuk pengkodean.
 3. Pengetahuan Dasar tentang C#: Keakraban dengan C# dan .NET akan membantu Anda mengikutinya dengan lancar.
 
@@ -62,7 +62,7 @@ Di sinilah keajaiban terjadi! Anda dapat mengatur perataan vertikal teks di dala
 textBox.TextBox.VerticalAnchor = TextBoxAnchor.Bottom;
 ```
 
- Pada kasus ini,`TextBoxAnchor.Bottom`memastikan bahwa teks akan ditambatkan ke bagian bawah kotak teks. Jika Anda menginginkannya terpusat atau sejajar ke atas, Anda akan menggunakannya`TextBoxAnchor.Center` atau`TextBoxAnchor.Top`, masing-masing.
+ Dalam hal ini,`TextBoxAnchor.Bottom`memastikan bahwa teks akan ditambatkan ke bagian bawah kotak teks. Jika Anda menginginkannya terpusat atau sejajar ke atas, Anda akan menggunakannya`TextBoxAnchor.Center` atau`TextBoxAnchor.Top`, masing-masing.
 
 ## Langkah 4: Tambahkan Teks ke Kotak Teks
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/split-document/by-page-range/
 ---
-## introduzione
+## Introduzione
 
 Ti sei mai trovato ad aver bisogno solo di poche pagine da un pesante documento Word? Forse hai bisogno di condividere una sezione specifica con un collega o estrarre un capitolo per un report. In ogni caso, dividere un documento Word per intervallo di pagine può essere un vero toccasana. Con Aspose.Words per .NET, questo compito diventa un gioco da ragazzi. In questa guida ti spiegheremo come dividere un documento Word in base a un intervallo di pagine specifico utilizzando Aspose.Words per .NET. Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato, questo tutorial passo passo ti aiuterà a raggiungere facilmente il tuo obiettivo.
 
@@ -73,7 +73,7 @@ Dividere un documento Word per intervallo di pagine utilizzando Aspose.Words per
 
 ### Posso dividere più intervalli di pagine contemporaneamente?
 
-Si, puoi. Dovrai ripetere il processo di estrazione per ogni intervallo di cui hai bisogno e salvarli come documenti separati.
+Sì, puoi. Dovrai ripetere il processo di estrazione per ogni intervallo di cui hai bisogno e salvarli come documenti separati.
 
 ### Cosa succede se devo dividere per sezioni specifiche invece che per intervalli di pagine?
 

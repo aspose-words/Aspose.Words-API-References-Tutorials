@@ -16,7 +16,7 @@ Hallo, Programmierkollege! Haben Sie sich schon einmal im Netz der Word-Dokument
 Bevor wir beginnen, stellen wir sicher, dass wir alles haben, was wir brauchen:
 
 -  Visual Studio: Sie können es herunterladen von[Hier](https://visualstudio.microsoft.com/).
--  Aspose.Words für .NET: Hol es dir von der[Download-Link](https://releases.aspose.com/words/net/).
+-  Aspose.Words für .NET: Hol es dir von der[Downloadlink](https://releases.aspose.com/words/net/).
 -  Eine gültige Aspose.Words-Lizenz: Sie können eine temporäre Lizenz erhalten[Hier](https://purchase.aspose.com/temporary-license/) wenn Sie keines haben.
 
 Und natürlich sind einige Grundkenntnisse in C# und .NET von großem Nutzen.
@@ -130,7 +130,7 @@ Da haben Sie es! Sie haben gerade gelernt, wie Sie mit Aspose.Words für .NET zu
 
 ### 1. Kann ich zum Anfang eines Lesezeichens statt zum Ende gehen?
 
- Absolut! Stellen Sie einfach die`isBookmarkStart` Parameter auf`true`Und`isBookmarkEnd` Zu`false` im`MoveToBookmark` Methode.
+ Absolut! Stellen Sie einfach die`isBookmarkStart` Parameter auf`true`Und`isBookmarkEnd` Zu`false` im`MoveToBookmark` Verfahren.
 
 ### 2. Was ist, wenn mein Lesezeichenname falsch ist?
 
@@ -138,7 +138,7 @@ Da haben Sie es! Sie haben gerade gelernt, wie Sie mit Aspose.Words für .NET zu
 
 ### 3. Kann ich am Ende des Lesezeichens andere Arten von Inhalten einfügen?
 
- Ja, DocumentBuilder ermöglicht Ihnen das Einfügen verschiedener Inhaltstypen wie Tabellen, Bilder und mehr. Überprüfen Sie die[Dokumentation](https://reference.aspose.com/words/net/) für mehr Details.
+ Ja, DocumentBuilder ermöglicht Ihnen das Einfügen verschiedener Inhaltstypen wie Tabellen, Bilder und mehr. Überprüfen Sie die[Dokumentation](https://reference.aspose.com/words/net/) für weitere Details.
 
 ### 4. Wie erhalte ich eine temporäre Lizenz für Aspose.Words?
 

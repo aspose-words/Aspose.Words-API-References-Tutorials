@@ -2,79 +2,91 @@
 title: Yazı Tipi Klasörlerini Öncelikli Olarak Ayarla
 linktitle: Yazı Tipi Klasörlerini Öncelikli Olarak Ayarla
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak bir belgeyi işlerken yazı tipi klasörlerini öncelikli olarak ayarlamaya yönelik adım adım kılavuz.
+description: Aspose.Words for .NET kullanarak Word belgelerinde yazı tipi klasörlerini öncelikli olarak nasıl ayarlayacağınızı öğrenin. Kılavuzumuz belgelerinizin her zaman mükemmel şekilde işlenmesini sağlar.
 type: docs
 weight: 10
 url: /tr/net/working-with-fonts/set-fonts-folders-with-priority/
 ---
+## giriiş
 
-Bu eğitimde, Aspose.Words for .NET kullanarak bir belgeyi işlerken yazı tipi klasörlerini öncelikli olarak ayarlamanız için size adım adım yol göstereceğiz. Birlikte verilen C# kaynak kodunu açıklayacağız ve bu özelliği anlamanıza ve kendi projelerinizde uygulamanıza yardımcı olacak kapsamlı bir kılavuz sunacağız. Bu eğitimin sonunda, Aspose.Words for .NET kullanarak belgelerinizi işlerken özel arama önceliğine sahip birden fazla yazı tipi klasörünü nasıl belirleyeceğinizi öğreneceksiniz.
+Belge işleme dünyasında, özel yazı tipi klasörleri ayarlamak, belgelerinizin nerede görüntülenirse görüntülensin mükemmel şekilde görüntülenmesini sağlamada büyük fark yaratabilir. Bugün Aspose.Words for .NET'i kullanarak Word belgelerinizde yazı tipi klasörlerini öncelikli olarak nasıl ayarlayabileceğinizi ele alacağız. Bu kapsamlı kılavuz, süreci mümkün olduğunca sorunsuz hale getirerek her adımda size yol gösterecektir.
 
-## 1. Adım: Belge dizinini tanımlayın
-Öncelikle belgeler dizininizin yolunu ayarlamanız gerekir. Bu, düzenlenmiş işlenmiş belgenizi kaydetmek istediğiniz konumdur. "BELGELERİNİZ DİZİNİ"ni uygun yolla değiştirin.
+## Önkoşullar
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Başlamadan önce ihtiyacımız olan her şeye sahip olduğumuzdan emin olalım. İşte hızlı bir kontrol listesi:
 
-## 2. Adım: Yazı tipi klasörlerini öncelikli olarak ayarlayın
- Daha sonra yazı tipi klasörlerini öncelikli olarak ayarlayabilirsiniz.`FontSettings` sınıf ve`SetFontsSources()`yöntem. Örneklerini kullanarak birden fazla yazı tipi kaynağı belirtebilirsiniz.`SystemFontSource`Ve`FolderFontSource`. Bu örnekte iki yazı tipi kaynağı tanımladık: varsayılan sistem yazı tipi kaynağı ve önceliği 1 olan özel yazı tipi klasörü.
+-  Aspose.Words for .NET: Bu kütüphanenin kurulu olması gerekmektedir. Henüz sahip değilseniz, yapabilirsiniz[buradan indir](https://releases.aspose.com/words/net/).
+- Geliştirme Ortamı: Visual Studio gibi çalışan bir .NET geliştirme ortamına sahip olduğunuzdan emin olun.
+-  Belge Dizini: Belgeleriniz için bir dizininizin olduğundan emin olun. Örneklerimiz için kullanacağız`"YOUR DOCUMENT DIRECTORY"` bu yol için yer tutucu olarak.
 
-```csharp
-FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
-{
-new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true, 1)
-});
-```
+## Ad Alanlarını İçe Aktar
 
-## 3. Adım: Oluşturulacak belgeyi yükleyin
- Artık oluşturulacak belgeyi kullanarak yükleyebilirsiniz.`Document` sınıf. Doğru belge yolunu belirttiğinizden emin olun.
+Öncelikle gerekli ad alanlarını içe aktarmamız gerekiyor. Bu ad alanları Aspose.Words tarafından sağlanan sınıflara ve yöntemlere erişim için gereklidir.
 
 ```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## 4. Adım: İşlenen belgeyi kaydedin
- Son olarak, oluşturulan belgeyi kullanarak bir dosyaya kaydedebilirsiniz.`Save()` yöntemi`Document` sınıf. Doğru yolu ve dosya adını belirttiğinizden emin olun.
+Şimdi yazı tipi klasörlerini öncelikli olarak ayarlamak için her adımı ayrı ayrı inceleyelim.
 
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
-```
+## 1. Adım: Yazı Tipi Kaynaklarınızı Ayarlayın
 
-### Aspose.Words for .NET kullanarak Yazı Tipleri Klasörlerini Öncelikli Ayarlama için örnek kaynak kodu 
+Başlamak için yazı tipi kaynaklarını tanımlamak isteyeceksiniz. Burası Aspose.Words'e yazı tiplerini nerede arayacağınızı söyleyeceğiniz yerdir. Birden fazla yazı tipi klasörü belirtebilir ve hatta bunların önceliklerini ayarlayabilirsiniz.
+
 ```csharp
 // Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
 {
-	new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true,1)
+    new SystemFontSource(), 
+    new FolderFontSource("C:\\MyFonts\\", true, 1)
 });
+```
+
+Bu örnekte iki yazı tipi kaynağı ayarlıyoruz:
+- SystemFontSource: Sisteminizde yüklü olan tüm yazı tiplerini içeren varsayılan yazı tipi kaynağıdır.
+-  FolderFontSource: Bu, şu adreste bulunan özel bir yazı tipi klasörüdür:`C:\\MyFonts\\` .`true` parametresi bu klasörün yinelemeli olarak taranması gerektiğini belirtir ve`1` önceliğini belirler.
+
+## 2. Adım: Belgenizi Yükleyin
+
+Ardından, çalışmak istediğiniz belgeyi yükleyin. Belgenin belirttiğiniz dizinde bulunduğundan emin olun.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+ Bu kod satırı adlı bir belgeyi yükler.`Rendering.docx` belge dizininizden.
+
+## 3. Adım: Belgenizi Yeni Yazı Tipi Ayarlarıyla Kaydedin
+
+Son olarak belgenizi kaydedin. Belgeyi kaydettiğinizde Aspose.Words belirttiğiniz yazı tipi ayarlarını kullanacaktır.
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
 ```
 
+ Bu, belgeyi belge dizininize şu adla PDF olarak kaydeder:`WorkingWithFonts.SetFontsFoldersWithPriority.pdf`.
+
 ## Çözüm
-Bu eğitimde, Aspose.Words for .NET kullanarak bir belgeyi işlerken yazı tipi klasörlerini öncelikli olarak nasıl ayarlayacağımızı öğrendik. Bu adım adım kılavuzu izleyerek, belgelerinizi oluştururken özel arama önceliğine sahip birden fazla yazı tipi klasörünü kolayca belirtebilirsiniz. Aspose.Words, belgelerinizdeki yazı tipleriyle Kelime İşleme için güçlü ve esnek bir API sunar. Bu bilgiyle belgelerinizi özel ihtiyaçlarınıza göre işlerken kullanılan yazı tipi kaynaklarını kontrol edebilir ve özelleştirebilirsiniz.
 
-### SSS'ler
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak öncelikli yazı tipi klasörlerini başarıyla oluşturdunuz. Özel yazı tipi klasörleri ve öncelikleri belirleyerek belgelerinizin nerede görüntülenirse görüntülensin tutarlı bir şekilde görüntülenmesini sağlayabilirsiniz. Bu, özellikle belirli yazı tiplerinin varsayılan olarak yüklenmediği ortamlarda kullanışlıdır.
 
-#### S: Aspose.Words'te yazı tipi klasörlerini öncelikli olarak nasıl ayarlayabilirim?
+## SSS'ler
 
- C: Aspose.Words'te yazı tipi klasörlerini öncelikli olarak ayarlamak için`SetFontsFoldersWithPriority` yöntemi`Fonts` yazı tipi klasörü konumlarını ve öncelik sırasını belirterek sınıf.
+### Neden özel yazı tipi klasörleri ayarlamam gerekiyor?
+Özel yazı tipi klasörleri ayarlamak, görüntülendikleri sistemde yüklü olmayan yazı tiplerini kullansalar bile belgelerinizin doğru şekilde oluşturulmasını sağlar.
 
-#### S: Bir yazı tipi farklı önceliğe sahip birden fazla klasörde mevcutsa ne olur?
+### Birden fazla özel yazı tipi klasörü ayarlayabilir miyim?
+Evet, birden fazla yazı tipi klasörü belirleyebilirsiniz. Aspose.Words her klasör için önceliği ayarlamanıza olanak tanıyarak en önemli yazı tiplerinin ilk önce bulunmasını sağlar.
 
-C: Bir yazı tipi farklı önceliğe sahip birden fazla klasörde mevcutsa Aspose.Words, belgeleri işlerken klasördeki en yüksek öncelikli sürümü kullanacaktır.
+### Belirtilen tüm kaynaklarda bir yazı tipi eksikse ne olur?
+Belirtilen tüm kaynaklarda bir yazı tipi eksikse Aspose.Words, belgenin hala okunabilir olmasını sağlamak için bir yedek yazı tipi kullanacaktır.
 
-#### S: Aspose.Words'te aynı önceliğe sahip birden fazla yazı tipi klasörü belirtebilir miyim?
+### Sistem yazı tiplerinin önceliğini değiştirebilir miyim?
+Sistem yazı tipleri her zaman varsayılan olarak dahil edilir, ancak bunların önceliklerini özel yazı tipi klasörlerinize göre ayarlayabilirsiniz.
 
-C: Evet, Aspose.Words'te aynı önceliğe sahip birden fazla yazı tipi klasörü belirleyebilirsiniz. Aspose.Words, belgelerinizdeki yazı tiplerini ararken hepsini eşit öncelikli olarak değerlendirecektir.
-
-#### S: Aspose.Words'te öncelikli olarak tanımlanan yazı tipi klasörlerini nasıl kontrol edebilirim?
-
- C: Aspose.Words'te öncelikli olarak tanımlanan yazı tipi klasörlerini kontrol etmek için`GetFolders` yöntemi`Fonts` Öncelik sıraları da dahil olmak üzere yapılandırılmış yazı tipi klasörlerinin listesini almak için class.
-
-#### S: Aspose.Words'te yazı tipi klasörlerini öncelikli olarak ayarlamanın faydası nedir?
-
-C: Aspose.Words'te yazı tipi klasörlerini öncelikli olarak ayarlamak, Word belgelerinizdeki yazı tiplerinin arama sırasını kontrol etmenize olanak tanır. Bu, istediğiniz yazı tiplerinin kullanıldığından emin olmanıza ve istenmeyen yazı tipi değiştirme sorunlarından kaçınmanıza yardımcı olur.
+### Özel yazı tipi klasörleri için ağ yollarını kullanmak mümkün mü?
+Evet, ağ yollarını özel yazı tipi klasörleri olarak belirleyerek yazı tipi kaynaklarını bir ağ konumunda merkezileştirmenize olanak tanıyabilirsiniz.

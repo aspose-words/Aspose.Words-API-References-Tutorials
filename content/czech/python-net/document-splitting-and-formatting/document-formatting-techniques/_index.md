@@ -171,4 +171,4 @@ pip install aspose-words
 ### Do jakých formátů mohu exportovat své dokumenty?
 Aspose.Words umožňuje exportovat vaše dokumenty do různých formátů, včetně PDF, DOCX a dalších.
 
- Další podrobnosti a přístup k dokumentaci Aspose.Words pro Python a ke stažení naleznete na adrese[tady](https://reference.aspose.com/words/python-net/).
+ Další podrobnosti a přístup k dokumentaci Aspose.Words pro Python a ke stažení naleznete na adrese[zde](https://reference.aspose.com/words/python-net/).

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/working-with-section/delete-section/
 ---
-## introduzione
+## Introduzione
 
 Quindi, hai deciso di tuffarti nel mondo della manipolazione dei documenti utilizzando Aspose.Words per .NET. Scelta fantastica! Aspose.Words è una libreria potente per la gestione di tutto ciò che riguarda i documenti di Word. Che tu abbia a che fare con la creazione, la modifica o la conversione, Aspose.Words ti copre. In questa guida spiegheremo come eliminare una sezione da un documento Word. Pronto a diventare un professionista Aspose? Iniziamo!
 
@@ -55,7 +55,7 @@ doc.FirstSection.Remove();
 ## Domande frequenti
 
 ### Posso eliminare più sezioni contemporaneamente?
-Si, puoi. Basta scorrere le sezioni che desideri eliminare e rimuoverle una per una.
+Sì, puoi. Basta scorrere le sezioni che desideri eliminare e rimuoverle una per una.
 
 ### Aspose.Words per .NET è gratuito?
  Aspose.Words offre una prova gratuita che puoi ottenere[Qui](https://releases.aspose.com/) Per usufruire delle funzionalità complete è necessario acquistare una licenza[Qui](https://purchase.aspose.com/buy).

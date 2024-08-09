@@ -9,11 +9,11 @@ url: /pl/net/basic-conversions/docx-to-pdf/
 ---
 ## Wstęp
 
-No hej! Czy zdarzyło Ci się kiedyś przekonwertować dokument Word na plik PDF? Jest to dość częste zadanie, szczególnie w zastosowaniach profesjonalnych, gdzie preferowane są pliki PDF ze względu na ich stałe formatowanie i funkcje zabezpieczeń. Jeśli pracujesz z .NET, masz szczęście, ponieważ Aspose.Words dla .NET sprawia, że ten proces jest dziecinnie prosty. W tym samouczku szczegółowo omawiamy konwersję pliku Word do formatu PDF za pomocą Aspose.Words dla .NET. Przygotuj się na przewodnik krok po kroku, który będzie łatwy w obsłudze nawet dla nowicjuszy. Zacznijmy!
+Hej tam! Czy zdarzyło Ci się kiedyś przekonwertować dokument programu Word na plik PDF? Jest to dość częste zadanie, szczególnie w zastosowaniach profesjonalnych, gdzie preferowane są pliki PDF ze względu na ich stałe formatowanie i funkcje zabezpieczeń. Jeśli pracujesz z .NET, masz szczęście, ponieważ Aspose.Words dla .NET sprawia, że ten proces jest dziecinnie prosty. W tym samouczku szczegółowo omawiamy konwersję pliku Word do formatu PDF za pomocą Aspose.Words dla .NET. Przygotuj się na przewodnik krok po kroku, który będzie łatwy w obsłudze nawet dla nowicjuszy. Zacznijmy!
 
 ## Warunki wstępne
 
-Zanim przejdziemy do sedno, upewnijmy się, że masz wszystko, czego potrzebujesz, aby rozpocząć:
+Zanim przejdziemy do sedno, upewnijmy się, że masz wszystko, czego potrzebujesz, aby zacząć:
 
 1.  Biblioteka Aspose.Words dla .NET: Możesz ją pobrać z[Tutaj](https://releases.aspose.com/words/net/).
 2. .NET Framework: Upewnij się, że na komputerze jest zainstalowana platforma .NET Framework.
@@ -44,7 +44,7 @@ Musisz dodać bibliotekę Aspose.Words for .NET do swojego projektu. Można to z
 
 1. Kliknij prawym przyciskiem myszy projekt w Eksploratorze rozwiązań.
 2. Wybierz „Zarządzaj pakietami NuGet”.
-3.  Szukaj`Aspose.Words` i zainstaluj go.
+3.  Wyszukaj`Aspose.Words` i zainstaluj go.
 
 ## Krok 2: Załaduj dokument Word
 

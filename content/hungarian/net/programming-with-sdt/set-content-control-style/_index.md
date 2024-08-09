@@ -9,7 +9,7 @@ url: /hu/net/programming-with-sdt/set-content-control-style/
 ---
 ## Bevezetés
 
-Előfordult már, hogy szerette volna Word-dokumentumait néhány egyedi stílussal feldobni, de belegabalyodott a technikai gazba? Nos, szerencséd van! Ma az Aspose.Words for .NET használatával tartalomvezérlési stílusok beállításának világába merülünk. Könnyebb, mint gondolná, és az oktatóanyag végére profi stílusban alakíthatja dokumentumait. Lépésről lépésre végigvezetjük Önt mindenen, ügyelve arra, hogy megértse a folyamat minden részét. Készen áll a Word-dokumentumok átalakítására? Kezdjük el!
+Előfordult már, hogy szerette volna Word-dokumentumait néhány egyedi stílussal feldobni, de belegabalyodott a technikai gazba? Nos, szerencséd van! Ma az Aspose.Words for .NET használatával tartalomvezérlési stílusok beállításának világába merülünk. Könnyebb, mint gondolná, és az oktatóanyag végére profi stílusban alakíthatja dokumentumait. Lépésről lépésre végigvezetjük Önt mindenen, ügyelve arra, hogy megértse a folyamat minden részét. Készen áll a Word-dokumentumok átalakítására? Kezdjük is!
 
 ## Előfeltételek
 

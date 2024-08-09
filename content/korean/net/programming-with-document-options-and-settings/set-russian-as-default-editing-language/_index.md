@@ -23,7 +23,7 @@ url: /ko/net/programming-with-document-options-and-settings/set-russian-as-defau
 
 ## 네임스페이스 가져오기
 
-세부 사항을 알아보기 전에 프로젝트에 필요한 네임스페이스를 가져왔는지 확인하세요. 이러한 네임스페이스는 Word 문서를 조작하는 데 필요한 클래스 및 메서드에 대한 액세스를 제공합니다.
+세부 사항을 알아보기 전에 프로젝트에 필요한 네임스페이스를 가져왔는지 확인하세요. 이러한 네임스페이스는 Word 문서를 조작하는 데 필요한 클래스와 메서드에 대한 액세스를 제공합니다.
 
 ```csharp
 using Aspose.Words;

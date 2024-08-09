@@ -101,9 +101,9 @@ Cela enregistrera le document fusionné dans le répertoire spécifié avec le n
 
 ## Conclusion
 
-Et voila! Vous avez réussi à fusionner deux documents Word tout en ignorant leurs en-têtes et pieds de page à l'aide d'Aspose.Words pour .NET. Cette méthode est pratique pour diverses tâches de gestion de documents où la maintenance de sections spécifiques du document est cruciale.
+Et voilà ! Vous avez réussi à fusionner deux documents Word tout en ignorant leurs en-têtes et pieds de page à l'aide d'Aspose.Words pour .NET. Cette méthode est pratique pour diverses tâches de gestion de documents où la maintenance de sections spécifiques du document est cruciale.
 
-Travailler avec Aspose.Words pour .NET peut rationaliser considérablement vos flux de travail de traitement de documents. N'oubliez pas que si jamais vous êtes bloqué ou avez besoin de plus d'informations, vous pouvez toujours consulter le[Documentation](https://reference.aspose.com/words/net/).
+Travailler avec Aspose.Words pour .NET peut rationaliser considérablement vos flux de travail de traitement de documents. N'oubliez pas que si jamais vous êtes bloqué ou avez besoin de plus d'informations, vous pouvez toujours consulter le[documentation](https://reference.aspose.com/words/net/).
 
 ## FAQ
 

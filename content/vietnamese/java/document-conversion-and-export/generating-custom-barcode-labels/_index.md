@@ -20,7 +20,7 @@ Trước khi đi sâu vào chi tiết tạo nhãn mã vạch tùy chỉnh, hãy 
 
 2.  Aspose.Words for Java: Tải xuống và cài đặt Aspose.Words cho Java từ[đây](https://releases.aspose.com/words/java/).
 
-3. Kiến thức cơ bản về Java: Làm quen với lập trình Java sẽ rất hữu ích vì chúng ta sẽ viết mã Java để tạo nhãn mã vạch tùy chỉnh.
+3. Kiến thức cơ bản về Java: Làm quen với lập trình Java sẽ hữu ích vì chúng ta sẽ viết mã Java để tạo nhãn mã vạch tùy chỉnh.
 
 ## Tạo nhãn mã vạch tùy chỉnh
 

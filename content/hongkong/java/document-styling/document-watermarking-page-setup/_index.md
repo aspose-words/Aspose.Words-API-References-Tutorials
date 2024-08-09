@@ -15,7 +15,7 @@ url: /zh-hant/java/document-styling/document-watermarking-page-setup/
 
 ### 添加浮水印
 
-為文件添加浮水印對於品牌推廣或保護內容至關重要。 Aspose.Words for Java 讓這項任務變得簡單。就是這樣：
+為文件添加浮水印對於品牌推廣或保護內容至關重要。 Aspose.Words for Java 讓這項任務變得簡單。方法如下：
 
 ```java
 //載入文檔

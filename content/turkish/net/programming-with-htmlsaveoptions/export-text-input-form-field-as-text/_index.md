@@ -106,7 +106,7 @@ doc.Save(dataDir + "ExportedDocument.html", saveOptions);
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir metin giriş formu alanını başarıyla düz metin olarak dışa aktardınız. Bu kılavuz size bu görevi başarmanız için açık ve adım adım bir yaklaşım sunmuş olmalıdır. Unutmayın, pratik mükemmelleştirir; bu nedenle Aspose.Words ile başka neler yapabileceğinizi görmek için farklı seçenekler ve ayarlarla denemeler yapmaya devam edin.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir metin giriş formu alanını başarıyla düz metin olarak dışa aktardınız. Bu kılavuz size bu görevi başarmanız için açık ve adım adım bir yaklaşım sunmuş olmalıdır. Unutmayın, pratik mükemmelleştirir; bu nedenle Aspose.Words ile başka neler yapabileceğinizi görmek için farklı seçenekler ve ayarlarla denemeler yapmaya devam edin.
 
 ## SSS'ler
 
@@ -124,7 +124,7 @@ doc.Save(dataDir + "ExportedDocument.html", saveOptions);
 
 ### Dışa aktarılan HTML'yi özelleştirebilir miyim?
 
- Kesinlikle! Aspose.Words, HTML çıktısını özelleştirmek için çeşitli seçenekler sunar. Bakın[dokümantasyon](https://reference.aspose.com/words/net/) daha fazla ayrıntı için.
+ Kesinlikle! Aspose.Words, HTML çıktısını özelleştirmek için çeşitli seçenekler sunar. Şuraya bakın:[dokümantasyon](https://reference.aspose.com/words/net/) daha fazla ayrıntı için.
 
 ### Aspose.Words .NET Core ile uyumlu mu?
 

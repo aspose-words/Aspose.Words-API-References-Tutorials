@@ -1,6 +1,6 @@
 ---
-title: Kiểm soát ngưỡng tiếp xúc cho quá trình nhị phân hóa Tiff
-linktitle: Kiểm soát ngưỡng tiếp xúc cho quá trình nhị phân hóa Tiff
+title: Kiểm soát ngưỡng tiếp xúc cho nhị phân hóa Tiff
+linktitle: Kiểm soát ngưỡng tiếp xúc cho nhị phân hóa Tiff
 second_title: API xử lý tài liệu Aspose.Words
 description: Tìm hiểu cách hiển thị kiểm soát ngưỡng cho quá trình nhị phân TIFF trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước toàn diện này.
 type: docs
@@ -9,7 +9,7 @@ url: /vi/net/programming-with-imagesaveoptions/expose-threshold-control-for-tiff
 ---
 ## Giới thiệu
 
-Bạn đã bao giờ tự hỏi làm cách nào để kiểm soát ngưỡng nhị phân TIFF trong tài liệu Word của mình chưa? Bạn đang ở đúng nơi! Hướng dẫn này sẽ hướng dẫn bạn từng bước quy trình bằng cách sử dụng Aspose.Words cho .NET. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu, bạn sẽ thấy hướng dẫn này hấp dẫn, dễ làm theo và có tất cả thông tin chi tiết bạn cần để hoàn thành công việc. Sẵn sàng để đi sâu vào? Đi nào!
+Bạn đã bao giờ tự hỏi làm cách nào để kiểm soát ngưỡng nhị phân TIFF trong tài liệu Word của mình chưa? Bạn đang ở đúng nơi! Hướng dẫn này sẽ hướng dẫn bạn từng bước quy trình bằng cách sử dụng Aspose.Words cho .NET. Cho dù bạn là nhà phát triển dày dạn hay chỉ mới bắt đầu, bạn sẽ thấy hướng dẫn này hấp dẫn, dễ làm theo và có tất cả thông tin chi tiết bạn cần để hoàn thành công việc. Sẵn sàng để đi sâu vào? Đi thôi!
 
 ## Điều kiện tiên quyết
 
@@ -66,7 +66,7 @@ ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.Tiff)
 Hãy chia nhỏ điều này:
 -  TiffCompression: Đặt kiểu nén cho hình ảnh TIFF. Ở đây, chúng tôi đang sử dụng`Ccitt3`.
 -  ImageColorMode: Đặt chế độ màu. Chúng tôi đặt nó thành`Grayscale` để tạo ra một ảnh thang độ xám.
--  TiffBinarizationMethod: Chỉ định phương pháp nhị phân hóa. Đang sử dụng`FloydSteinbergDithering`.
+-  TiffBinarizationMethod: Chỉ định phương pháp nhị phân hóa. Chúng tôi đang sử dụng`FloydSteinbergDithering`.
 - ThresholdForFloydSteinbergDithering: Đặt ngưỡng cho phối màu Floyd-Steinberg. Giá trị cao hơn có nghĩa là ít pixel đen hơn.
 
 ## Bước 4: Lưu tài liệu dưới dạng TIFF
@@ -81,11 +81,11 @@ Dòng mã này lưu tài liệu vào đường dẫn đã chỉ định với c�
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn vừa học cách hiển thị kiểm soát ngưỡng cho quá trình nhị phân TIFF trong tài liệu Word bằng Aspose.Words cho .NET. Thư viện mạnh mẽ này giúp bạn dễ dàng thao tác với tài liệu Word theo nhiều cách khác nhau, bao gồm chuyển đổi chúng sang các định dạng khác nhau bằng cài đặt tùy chỉnh. Hãy dùng thử và xem nó có thể đơn giản hóa các tác vụ xử lý tài liệu của bạn như thế nào!
+Và bạn có nó! Bạn vừa học cách hiển thị kiểm soát ngưỡng cho quá trình nhị phân TIFF trong tài liệu Word bằng Aspose.Words cho .NET. Thư viện mạnh mẽ này giúp bạn dễ dàng thao tác với tài liệu Word theo nhiều cách khác nhau, bao gồm chuyển đổi chúng sang các định dạng khác nhau bằng cài đặt tùy chỉnh. Hãy dùng thử và xem nó có thể đơn giản hóa các tác vụ xử lý tài liệu của bạn như thế nào!
 
 ## Câu hỏi thường gặp
 
-### Nhị phân TIFF là gì?
+### Nhị phân hóa TIFF là gì?
 Nhị phân hóa TIFF là quá trình chuyển đổi hình ảnh thang độ xám hoặc màu thành hình ảnh đen trắng (nhị phân).
 
 ### Tại sao nên sử dụng phối màu Floyd-Steinberg?

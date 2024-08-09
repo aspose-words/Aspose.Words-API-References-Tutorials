@@ -102,7 +102,7 @@ E aí está! Você acabou de automatizar o processo de localização e substitui
 ## Perguntas frequentes
 
 ### Posso substituir vários textos diferentes de uma vez?
- Sim você pode. Basta ligar para o`Replace` método para cada texto que você deseja substituir.
+ Sim, você pode. Basta ligar para o`Replace` método para cada texto que você deseja substituir.
 
 ### O Aspose.Words para .NET é gratuito?
 Aspose.Words for .NET oferece uma avaliação gratuita, mas para funcionalidade completa, você precisará adquirir uma licença. Confira seus[preços](https://purchase.aspose.com/buy) para mais detalhes.

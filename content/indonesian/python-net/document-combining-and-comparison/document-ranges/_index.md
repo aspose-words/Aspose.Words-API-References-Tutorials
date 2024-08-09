@@ -146,7 +146,7 @@ pip install aspose-words
 
 ### Bisakah saya mengekstrak konten tertentu dari dokumen?
 
-Ya kamu bisa. Tentukan rentang konten menggunakan teknik navigasi dokumen, lalu ekstrak konten yang diinginkan menggunakan rentang yang ditentukan.
+Ya, kamu bisa. Tentukan rentang konten menggunakan teknik navigasi dokumen, lalu ekstrak konten yang diinginkan menggunakan rentang yang ditentukan.
 
 ### Apakah mungkin untuk menggabungkan beberapa dokumen menggunakan Aspose.Words untuk Python?
 

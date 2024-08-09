@@ -107,4 +107,4 @@ WMF (Windows Metafile) เป็นรูปแบบกราฟิกที่
 
 ### ฉันจะหาข้อมูลเพิ่มเติมเกี่ยวกับ Aspose.Words ได้ที่ไหน
 
- คุณสามารถสำรวจเพิ่มเติมเกี่ยวกับ Aspose.Words ได้ใน[เอกสาร Aspose.Words](https://reference.aspose.com/words/net/) - สำหรับการดาวน์โหลด การทดลองใช้ และการสนับสนุน โปรดไปที่[หน้าดาวน์โหลด Aspose.Words](https://releases.aspose.com/words/net/), [ซื้อ Aspose.Words](https://purchase.aspose.com/buy), [ทดลองฟรี](https://releases.aspose.com/), [ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/) , และ[สนับสนุน](https://forum.aspose.com/c/words/8).
+ คุณสามารถสำรวจเพิ่มเติมเกี่ยวกับ Aspose.Words ได้ใน[เอกสาร Aspose.Words](https://reference.aspose.com/words/net/) - สำหรับการดาวน์โหลด การทดลองใช้ และการสนับสนุน โปรดไปที่[หน้าดาวน์โหลด Aspose.Words](https://releases.aspose.com/words/net/), [ซื้อ Aspose.Words](https://purchase.aspose.com/buy), [ทดลองใช้ฟรี](https://releases.aspose.com/), [ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/) , และ[สนับสนุน](https://forum.aspose.com/c/words/8).

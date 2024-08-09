@@ -24,7 +24,7 @@ url: /zh-hant/net/programming-with-pdfsaveoptions/interpolate-images/
 
 ## 導入命名空間
 
-首先，您需要將必要的命名空間匯入到您的 C# 專案中。就是這樣：
+首先，您需要將必要的命名空間匯入到您的 C# 專案中。方法如下：
 
 ```csharp
 using Aspose.Words;

@@ -2,7 +2,7 @@
 title: Belge Revizyonu İçin Nihai Kılavuz
 linktitle: Belge Revizyonu İçin Nihai Kılavuz
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Aspose.Words for Java ile belge revizyonunda uzmanlaşın! Değişiklikleri verimli bir şekilde yönetin, revizyonları kabul edin/reddedin ve sorunsuz bir şekilde işbirliği yapın. Şimdi başla!
+description: Aspose.Words for Java ile belge revizyonunda uzmanlaşın! Değişiklikleri verimli bir şekilde yönetin, revizyonları kabul edin/reddedin ve sorunsuz bir şekilde işbirliği yapın. Şimdi başlayın!
 type: docs
 weight: 10
 url: /tr/java/document-revision/guide-document-revision/
@@ -151,7 +151,7 @@ Biçimlendirme revizyonları yazı tipi stilleri, girinti, hizalama ve diğer d�
 
 ### 4.3 Yorumlar ve Takip Edilen Değişiklikler
 
-Ortak çalışanlar geri bildirim ve öneri sağlamak için sıklıkla yorumları kullanır. Takip edilen değişiklikler ise belgede yapılan değişikliklerin kaydını tutar. Aspose.Words, yorumları ve takip edilen değişiklikleri programlı bir şekilde yönetmenize olanak tanır.
+Ortak çalışanlar geri bildirim ve öneri sağlamak için sıklıkla yorumları kullanır. Takip edilen değişiklikler ise belgede yapılan değişikliklerin kaydını tutar. Aspose.Words, yorumları ve takip edilen değişiklikleri programlı bir şekilde yönetmenize olanak sağlar.
 
 ### 4.4 Gelişmiş Revizyon İşleme
 

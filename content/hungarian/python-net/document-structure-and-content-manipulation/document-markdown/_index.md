@@ -16,7 +16,7 @@ Az Aspose.Words for Python egy sokoldalú könyvtár, amely lehetővé teszi a f
 
 ## Környezetének beállítása
 
-Mielőtt belemerülnénk a kódba, győződjön meg arról, hogy környezetünk megfelelően van beállítva. Kovesd ezeket a lepeseket:
+Mielőtt belemerülnénk a kódba, győződjön meg arról, hogy környezetünk megfelelően van beállítva. Kövesse az alábbi lépéseket:
 
 1. Telepítse a Python-t a rendszerére.
 2. Telepítse az Aspose.Words for Python könyvtárat a pip használatával:
@@ -73,7 +73,7 @@ builder.insert_html(markdown_table)
 
 ## Oldalelrendezés és formázás
 
-Az Aspose.Words széles körű szabályozást kínál az oldal elrendezése és formázása felett. Beállíthatja a margókat, beállíthatja az oldalméretet és sok mást:
+Az Aspose.Words széles körű szabályozást kínál az oldal elrendezése és formázása felett. Beállíthatja a margókat, beállíthatja az oldalméretet stb.:
 
 ```python
 section = doc.sections[0]

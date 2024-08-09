@@ -73,7 +73,7 @@ doc1.save("joined_document.docx");
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez appris avec succès comment joindre et ajouter des documents à l'aide d'Aspose.Words pour Java. Cette bibliothèque polyvalente vous permet de manipuler des documents sans effort, ce qui en fait un outil inestimable pour les développeurs Java.
+Félicitations! Vous avez appris avec succès comment joindre et ajouter des documents à l'aide d'Aspose.Words pour Java. Cette bibliothèque polyvalente vous permet de manipuler des documents sans effort, ce qui en fait un outil inestimable pour les développeurs Java.
 
 ## FAQ
 

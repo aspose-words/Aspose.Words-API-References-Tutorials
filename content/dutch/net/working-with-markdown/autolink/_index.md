@@ -2,68 +2,97 @@
 title: Automatische koppeling
 linktitle: Automatische koppeling
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u autolink invoegt met Aspose.Words voor .NET Stapsgewijze handleiding.
+description: Leer met deze gedetailleerde handleiding hoe u hyperlinks in Word-documenten kunt invoegen en aanpassen met Aspose.Words voor .NET. Verbeter uw documenten moeiteloos.
 type: docs
 weight: 10
 url: /nl/net/working-with-markdown/autolink/
 ---
+## Invoering
 
-In dit voorbeeld leggen we uit hoe u de functie "Autolink" kunt gebruiken met Aspose.Words voor .NET. Met deze functie kunt u automatisch hyperlinks in uw document invoegen.
+Het creëren van een verzorgd, professioneel document vereist vaak de mogelijkheid om hyperlinks effectief in te voegen en te beheren. Of u nu links naar websites, e-mailadressen of andere documenten moet toevoegen, Aspose.Words voor .NET biedt een robuuste set tools om u te helpen dit te bereiken. In deze zelfstudie onderzoeken we hoe u hyperlinks in Word-documenten kunt invoegen en aanpassen met Aspose.Words voor .NET, waarbij we elke stap opsplitsen om het proces eenvoudig en toegankelijk te maken.
 
-## Stap 1: Een documentgenerator gebruiken
+## Vereisten
 
-Eerst gebruiken we een documentgenerator om inhoud aan ons document toe te voegen.
+Voordat we in de stappen duiken, zorgen we ervoor dat je alles hebt wat je nodig hebt:
+
+-  Aspose.Words voor .NET: Download en installeer de nieuwste versie van[hier](https://releases.aspose.com/words/net/).
+- Ontwikkelomgeving: een IDE zoals Visual Studio.
+- .NET Framework: Zorg ervoor dat de juiste versie is geïnstalleerd.
+- Basiskennis van C#: Bekendheid met programmeren in C# kan nuttig zijn.
+
+## Naamruimten importeren
+
+Om aan de slag te gaan, moet u ervoor zorgen dat u de benodigde naamruimten in uw project importeert. Hierdoor heeft u naadloos toegang tot de functionaliteiten van Aspose.Words.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Stap 1: Uw project opzetten
+
+Stel eerst uw project in Visual Studio in. Open Visual Studio en maak een nieuwe consoletoepassing. Noem het iets relevants, zoals 'HyperlinkDemo'.
+
+## Stap 2: Initialiseer Document en DocumentBuilder
+
+Initialiseer vervolgens een nieuw document en een DocumentBuilder-object. De DocumentBuilder is een handig hulpmiddel waarmee u verschillende elementen in uw Word-document kunt invoegen.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Stap 2: Een hyperlink invoegen
+## Stap 3: Voeg een hyperlink naar een website in
 
- We kunnen een hyperlink invoegen met behulp van de`InsertHyperlink` methode van de documentgenerator. We specificeren de URL en de tekst die voor de link moet worden weergegeven.
-
-```csharp
-builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", false);
-```
-
-## Stap 3: Een e-mailadres als link invoegen
-
-We kunnen ook een e-mailadres als link invoegen met het voorvoegsel "mailto:". Hierdoor kunnen gebruikers op de link klikken om hun standaard e-mailclient te openen.
+ Om een hyperlink naar een website in te voegen, gebruikt u de`InsertHyperlink` methode. U moet de weergavetekst, de URL en een booleaanse waarde opgeven die aangeeft of de link als hyperlink moet worden weergegeven.
 
 ```csharp
-builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
+// Voeg een hyperlink naar een website toe.
+builder.InsertHyperlink("Aspose Website", "https://www.aspose.com", false);
 ```
 
-## Stap 4: Het document opslaan
+Hierdoor wordt een klikbare link ingevoegd met de tekst "Aspose Website" die doorverwijst naar de Aspose-startpagina.
 
-Ten slotte kunnen we het document in het gewenste formaat opslaan.
+## Stap 4: Voeg een hyperlink naar een e-mailadres in
 
-### Voorbeeldbroncode voor Autolink met Aspose.Words voor .NET
-
+ Een link naar een e-mailadres invoegen is net zo eenvoudig. Gebruik hetzelfde`InsertHyperlink` methode, maar met een "mailto:" voorvoegsel in de URL.
 
 ```csharp
-// Gebruik een documentbuilder om inhoud aan het document toe te voegen.
-DocumentBuilder builder = new DocumentBuilder();
-
-// Voeg hyperlink in.
-builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", false);
-builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
+// Voeg een hyperlink naar een e-mailadres in.
+builder.InsertHyperlink("Contact Support", "mailto:support@aspose.com", false);
 ```
 
+ Als u nu op "Contact opnemen met ondersteuning" klikt, wordt de standaard e-mailclient geopend met een nieuw e-mailadres geadresseerd`support@aspose.com`.
 
-Gefeliciteerd! U hebt nu geleerd hoe u de functie "Autolink" kunt gebruiken met Aspose.Words voor .NET.
+## Stap 5: Pas het uiterlijk van de hyperlink aan
 
+Hyperlinks kunnen worden aangepast aan de stijl van uw document. U kunt de kleur, grootte en andere kenmerken van het lettertype wijzigen met behulp van de`Font` eigendom van de DocumentBuilder.
 
-### Veelgestelde vragen
+```csharp
+// Pas het uiterlijk van de hyperlink aan.
+builder.Font.Color = System.Drawing.Color.Blue;
+builder.Font.Underline = Underline.Single;
+builder.InsertHyperlink("Styled Link", "https://www.aspose.com", false);
+```
 
-#### Vraag: Hoe kan ik een automatische link naar een URL-adres in Aspose.Words maken?
+Dit fragment voegt een blauwe, onderstreepte hyperlink in, waardoor deze opvalt in uw document.
 
- A: Om een automatische link naar een URL-adres in Aspose.Words te maken, kunt u de`<a>` labelen met de`href` attribuut dat het URL-adres bevat. U kunt bijvoorbeeld gebruiken`<a href="https://www.aspose.com">https://www.aspose.com</a>` om automatisch te linken naar "https://www.aspose.com".
+## Conclusie
 
-#### Vraag: Is het mogelijk om de weergavetekst van een automatische link in Aspose.Words aan te passen?
+Het invoegen en aanpassen van hyperlinks in Word-documenten met Aspose.Words voor .NET is een fluitje van een cent als u de stappen kent. Door deze handleiding te volgen, kunt u uw documenten uitbreiden met nuttige links, waardoor ze interactiever en professioneler worden. Of het nu gaat om het linken naar websites, e-mailadressen of het aanpassen van het uiterlijk, Aspose.Words biedt alle tools die u nodig heeft.
 
- A: Ja, u kunt de weergavetekst van een automatische link in Aspose.Words aanpassen. In plaats van het URL-adres als weergavetekst te gebruiken, kunt u elke andere tekst gebruiken door de inhoud tussen de`<a>` labels. U kunt bijvoorbeeld gebruiken`<a href="https://www.aspose.com">Click here</a>`om de tekst "Klik hier" als automatische link weer te geven.
+## Veelgestelde vragen
 
-#### Vraag: Hoe kan ik extra attributen toevoegen aan een autolink in Aspose.Words?
+### Kan ik hyperlinks naar andere documenten invoegen?
+Ja, u kunt hyperlinks naar andere documenten invoegen door het bestandspad als URL op te geven.
 
- A: Om extra attributen toe te voegen aan een automatische link in Aspose.Words, kunt u extra HTML-attributen gebruiken in de`<a>` label. U kunt bijvoorbeeld gebruiken`<a href="https://www.aspose.com" target="_blank">Link</a>` om de link in een nieuw venster of tabblad te openen met behulp van de` attribute target="_blank"`.
+### Hoe verwijder ik een hyperlink?
+ U kunt een hyperlink verwijderen met behulp van de`Remove` methode op het hyperlinkknooppunt.
+
+### Kan ik tooltips aan hyperlinks toevoegen?
+Ja, u kunt tooltips toevoegen door de`ScreenTip` eigendom van de hyperlink.
+
+### Is het mogelijk om hyperlinks in het hele document anders op te maken?
+ Ja, u kunt hyperlinks anders opmaken door de`Font` eigenschappen voordat u elke hyperlink invoegt.
+
+### Hoe kan ik een bestaande hyperlink bijwerken of wijzigen?
+U kunt een bestaande hyperlink bijwerken door deze te openen via de documentknooppunten en de eigenschappen ervan te wijzigen.

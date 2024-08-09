@@ -7,17 +7,18 @@ type: docs
 weight: 10
 url: /vi/net/working-with-fonts/get-substitution-without-suffixes/
 ---
+## Giới thiệu
 
-Chào mừng bạn đến với hướng dẫn toàn diện này về cách quản lý thay thế phông chữ bằng Aspose.Words cho .NET. Nếu bạn từng gặp khó khăn với việc phông chữ không xuất hiện chính xác trong tài liệu của mình thì bạn đã đến đúng nơi. Hướng dẫn này sẽ đưa bạn qua quy trình từng bước để xử lý việc thay thế phông chữ không có hậu tố một cách hiệu quả. Bắt đầu nào!
+Chào mừng bạn đến với hướng dẫn toàn diện này về cách quản lý thay thế phông chữ bằng Aspose.Words cho .NET. Nếu bạn từng gặp khó khăn với việc phông chữ không xuất hiện chính xác trong tài liệu của mình thì bạn đã đến đúng nơi. Hướng dẫn này sẽ đưa bạn qua quy trình từng bước để xử lý việc thay thế phông chữ không có hậu tố một cách hiệu quả.
 
 ## Điều kiện tiên quyết
 
 Trước khi đi sâu vào hướng dẫn, hãy đảm bảo bạn có những điều sau:
 
 - Kiến thức cơ bản về C#: Hiểu biết về lập trình C# sẽ giúp bạn dễ dàng theo dõi và thực hiện các bước hơn.
--  Aspose.Words for .NET Library: Tải xuống và cài đặt thư viện từ[Liên kết tải xuống](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET Library: Tải xuống và cài đặt thư viện từ[liên kết tải xuống](https://releases.aspose.com/words/net/).
 - Môi trường phát triển: Thiết lập môi trường phát triển như Visual Studio để viết và chạy mã của bạn.
-- Tài liệu mẫu: Một tài liệu mẫu (ví dụ:`Rendering.docx`) để làm việc trong hướng dẫn này.
+-  Tài liệu mẫu: Một tài liệu mẫu (ví dụ:`Rendering.docx`) để làm việc trong hướng dẫn này.
 
 ## Nhập không gian tên
 
@@ -26,7 +27,6 @@ Trước khi đi sâu vào hướng dẫn, hãy đảm bảo bạn có những �
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Fonts;
-using Aspose.Words.WarningInfo;
 using System.Collections.Generic;
 ```
 
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## Bước 5: Tạo lớp xử lý cảnh báo
 
-Để xử lý cảnh báo một cách hiệu quả, hãy tạo một lớp tùy chỉnh triển khai`IWarningCallback` giao diện. Lớp này sẽ ghi lại và ghi lại mọi cảnh báo thay thế phông chữ.
+ Để xử lý cảnh báo một cách hiệu quả, hãy tạo một lớp tùy chỉnh triển khai`IWarningCallback` giao diện. Lớp này sẽ ghi lại và ghi lại mọi cảnh báo thay thế phông chữ.
 
 ```csharp
 public class DocumentSubstitutionWarnings : IWarningCallback
@@ -92,9 +92,9 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 }
 ```
 
-Trong lớp học này:
--  Các`Warning` phương pháp ghi lại các cảnh báo liên quan đến việc thay thế phông chữ.
--  Các`FontWarnings` bộ sưu tập lưu trữ những cảnh báo này để kiểm tra hoặc ghi nhật ký thêm.
+Trong lớp này:
+-  các`Warning`phương pháp ghi lại các cảnh báo liên quan đến việc thay thế phông chữ.
+-  các`FontWarnings` bộ sưu tập lưu trữ những cảnh báo này để kiểm tra hoặc ghi nhật ký thêm.
 
 ## Phần kết luận
 
@@ -102,22 +102,22 @@ Bây giờ bạn đã thành thạo quy trình xử lý việc thay thế phông
 
 ## Câu hỏi thường gặp
 
-### Câu hỏi 1: Làm cách nào tôi có thể sử dụng phông chữ từ nhiều thư mục tùy chỉnh?
+### Làm cách nào tôi có thể sử dụng phông chữ từ nhiều thư mục tùy chỉnh?
 
  Bạn có thể thêm nhiều`FolderFontSource` các trường hợp để`fontSources` liệt kê và cập nhật các nguồn phông chữ tương ứng.
 
-### Câu hỏi 2: Tôi có thể tải xuống bản dùng thử miễn phí Aspose.Words cho .NET ở đâu?
+### Tôi có thể tải xuống bản dùng thử miễn phí Aspose.Words cho .NET ở đâu?
 
  Bạn có thể tải xuống bản dùng thử miễn phí từ[Trang dùng thử miễn phí](https://releases.aspose.com/).
 
-###  Câu hỏi 3: Tôi có thể xử lý nhiều loại cảnh báo bằng cách sử dụng`IWarningCallback`?
+###  Tôi có thể xử lý nhiều loại cảnh báo bằng cách sử dụng`IWarningCallback`?
 
- Vâng`IWarningCallback` Giao diện cho phép bạn xử lý nhiều loại cảnh báo khác nhau, không chỉ thay thế phông chữ.
+ Vâng, cái`IWarningCallback` Giao diện cho phép bạn xử lý nhiều loại cảnh báo khác nhau, không chỉ thay thế phông chữ.
 
-### Câu hỏi 4: Tôi có thể nhận hỗ trợ cho Aspose.Words ở đâu?
+### Tôi có thể nhận hỗ trợ cho Aspose.Words ở đâu?
 
  Để được hỗ trợ, hãy truy cập[Diễn đàn hỗ trợ Aspose.Words](https://forum.aspose.com/c/words/8).
 
-### Câu hỏi 5: Có thể mua giấy phép tạm thời không?
+### Có thể mua giấy phép tạm thời?
 
  Có, bạn có thể xin giấy phép tạm thời từ[trang giấy phép tạm thời](https://purchase.aspose.com/temporary-license/).

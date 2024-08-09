@@ -14,7 +14,7 @@ Các tài liệu hiện đại không chỉ xoay quanh nội dung chứa đựng
 
 ## Thiết lập môi trường
 
- Trước khi chúng ta đi sâu vào việc tạo các hình dạng tài liệu ấn tượng, hãy đảm bảo bạn đã cài đặt Aspose.Words cho Python. Bạn có thể tải nó xuống từ[Liên kết tải xuống](https://releases.aspose.com/words/python/) . Ngoài ra, hãy tham khảo các[tài liệu](https://reference.aspose.com/words/python-net/) để được hướng dẫn toàn diện về cách sử dụng thư viện.
+ Trước khi chúng ta đi sâu vào việc tạo các hình dạng tài liệu ấn tượng, hãy đảm bảo bạn đã cài đặt Aspose.Words for Python. Bạn có thể tải nó xuống từ[liên kết tải xuống](https://releases.aspose.com/words/python/) . Ngoài ra, hãy tham khảo các[tài liệu](https://reference.aspose.com/words/python-net/) để được hướng dẫn toàn diện về cách sử dụng thư viện.
 
 ## Tạo một tài liệu cơ bản
 
@@ -86,10 +86,10 @@ Việc tạo các hình dạng và bố cục tài liệu ấn tượng về m�
 ## Câu hỏi thường gặp
 
 ### Làm cách nào để tải xuống Aspose.Words cho Python?
- Bạn có thể tải xuống Aspose.Words cho Python từ[Liên kết tải xuống](https://releases.aspose.com/words/python/).
+ Bạn có thể tải xuống Aspose.Words cho Python từ[liên kết tải xuống](https://releases.aspose.com/words/python/).
 
 ### Tôi có thể tìm tài liệu toàn diện về Aspose.Words cho Python ở đâu?
- Tham khảo đến[tài liệu](https://reference.aspose.com/words/python-net/) để được hướng dẫn chi tiết về cách sử dụng Aspose.Words cho Python.
+ Tham khảo[tài liệu](https://reference.aspose.com/words/python-net/) để được hướng dẫn chi tiết về cách sử dụng Aspose.Words cho Python.
 
 ### Tôi có thể tùy chỉnh màu sắc và kiểu dáng của hình dạng không?
 Tuyệt đối! Aspose.Words for Python cung cấp các tùy chọn để tùy chỉnh màu sắc, kích thước và kiểu dáng của hình dạng để phù hợp với sở thích thiết kế của bạn.

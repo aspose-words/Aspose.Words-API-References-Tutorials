@@ -12,7 +12,7 @@ Im heutigen digitalen Zeitalter spielt das Rendern von Dokumenten in verschieden
 
 ## Erste Schritte mit Aspose.Words für Java
 
-Bevor wir uns mit den technischen Details befassen, sollten wir verstehen, was Aspose.Words für Java ist. Es handelt sich um eine leistungsstarke Java-API, mit der Sie programmgesteuert mit Word-Dokumenten arbeiten können. Egal, ob Sie Word-Dokumente erstellen, ändern oder rendern müssen, Aspose.Words für Java bietet Ihnen alles.
+Bevor wir uns mit den technischen Details befassen, sollten wir verstehen, was Aspose.Words für Java ist. Es handelt sich um eine leistungsstarke Java-API, mit der Sie programmgesteuert mit Word-Dokumenten arbeiten können. Egal, ob Sie Word-Dokumente erstellen, ändern oder rendern müssen, Aspose.Words für Java bietet alles.
 
 ## Die Bedeutung der Dokumentwiedergabe
 

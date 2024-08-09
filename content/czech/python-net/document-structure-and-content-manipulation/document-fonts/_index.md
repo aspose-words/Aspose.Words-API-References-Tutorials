@@ -9,7 +9,7 @@ url: /cs/python-net/document-structure-and-content-manipulation/document-fonts/
 ---
 V oblasti zpracování textu hrají fonty a styly textu zásadní roli při efektivním předávání informací. Ať už vytváříte formální dokument, kreativní dílo nebo prezentaci, pochopení toho, jak manipulovat s písmy a styly textu, může výrazně zvýšit vizuální přitažlivost a čitelnost vašeho obsahu. V tomto článku se ponoříme do světa písem, prozkoumáme různé možnosti stylování textu a uvedeme praktické příklady pomocí Aspose.Words pro Python API.
 
-## Úvod
+## Zavedení
 
 Efektivní formátování dokumentu přesahuje pouhé předávání obsahu; upoutá čtenářovu pozornost a zlepšuje porozumění. K tomuto procesu významně přispívají písma a styly textu. Než se pustíme do praktické implementace pomocí Aspose.Words pro Python, pojďme prozkoumat základní koncepty písem a stylingu textu.
 
@@ -153,7 +153,7 @@ Ano, můžete použít více stylů na stejný text odpovídající úpravou vla
 
 ### Je možné upravit mezery mezi znaky?
 
-Ano, Aspose.Words vám umožňuje upravit mezery mezi znaky pomocí`kerning` majetek z`Font` třída.
+Ano, Aspose.Words vám umožňuje upravit mezery mezi znaky pomocí`kerning` vlastnictvím`Font` třída.
 
 ### Podporuje Aspose.Words import písem z externích zdrojů?
 
@@ -161,4 +161,4 @@ Ano, Aspose.Words podporuje vkládání písem z externích zdrojů, aby bylo za
 
 ### Kde mohu získat přístup k dokumentaci a souborům ke stažení Aspose.Words pro Python?
 
- Pro dokumentaci Aspose.Words pro Python navštivte[tady](https://reference.aspose.com/words/python-net/) . Chcete-li si knihovnu stáhnout, navštivte[tady](https://releases.aspose.com/words/python/).
+ Pro dokumentaci Aspose.Words pro Python navštivte[zde](https://reference.aspose.com/words/python-net/) . Chcete-li si knihovnu stáhnout, navštivte[zde](https://releases.aspose.com/words/python/).

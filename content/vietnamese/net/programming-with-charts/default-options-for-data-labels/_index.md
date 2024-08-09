@@ -16,7 +16,7 @@ Này! Bạn có hào hứng đi sâu vào thế giới tự động hóa tài li
 Trước khi chúng ta bắt đầu, hãy đảm bảo rằng bạn có mọi thứ bạn cần để làm theo hướng dẫn này. Dưới đây là danh sách kiểm tra nhanh:
 
 - Visual Studio hoặc bất kỳ IDE tương thích .NET nào khác: Đây là nơi bạn sẽ viết và chạy mã của mình.
--  Aspose.Words cho .NET: Bạn có thể[tải xuống phiên bản mới nhất](https://releases.aspose.com/words/net/) và cài đặt nó trong dự án của bạn.
+-  Aspose.Words cho .NET: Bạn có thể[tải về phiên bản mới nhất](https://releases.aspose.com/words/net/) và cài đặt nó trong dự án của bạn.
 - Kiến thức cơ bản về lập trình C#: Mặc dù hướng dẫn này thân thiện với người mới bắt đầu nhưng làm quen một chút với C# sẽ rất hữu ích.
 - Đã cài đặt .NET Framework: Đảm bảo rằng bạn đã cài đặt .NET Framework trên máy của mình.
 -  Giấy phép tạm thời cho Aspose.Words: Nhận một giấy phép[đây](https://purchase.aspose.com/temporary-license/) để mở khóa đầy đủ chức năng.
@@ -37,7 +37,7 @@ using Aspose.Words.ReportingServices;
 ## Bước 1: Tạo một tài liệu mới
 
 
- Hành trình bắt đầu bằng việc tạo một tài liệu mới và khởi tạo một`DocumentBuilder` . Các`DocumentBuilder` lớp cung cấp một tập hợp các phương thức để thao tác nội dung tài liệu một cách dễ dàng.
+ Hành trình bắt đầu bằng việc tạo một tài liệu mới và khởi tạo một`DocumentBuilder` . các`DocumentBuilder` lớp cung cấp một tập hợp các phương thức để thao tác nội dung tài liệu một cách dễ dàng.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu của bạn
@@ -50,13 +50,13 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-### Giải trình
+### Giải thích
 
- Trong bước này, chúng tôi đã thiết lập tài liệu và trình tạo mà chúng tôi sẽ sử dụng để chèn và định dạng nội dung của mình. Các`dataDir` biến giữ đường dẫn nơi chúng ta sẽ lưu tài liệu cuối cùng của mình.
+ Trong bước này, chúng tôi đã thiết lập tài liệu và trình tạo mà chúng tôi sẽ sử dụng để chèn và định dạng nội dung của mình. các`dataDir` biến giữ đường dẫn nơi chúng ta sẽ lưu tài liệu cuối cùng của mình.
 
 ## Bước 2: Chèn biểu đồ
 
- Tiếp theo, chúng ta sẽ thêm biểu đồ hình tròn vào tài liệu của mình. Các`InsertChart` phương pháp của`DocumentBuilder` class khiến việc này trở nên cực kỳ dễ dàng.
+ Tiếp theo, chúng ta sẽ thêm biểu đồ hình tròn vào tài liệu của mình. các`InsertChart` phương pháp của`DocumentBuilder` class khiến việc này trở nên cực kỳ dễ dàng.
 
 ```csharp
 // Chèn biểu đồ hình tròn
@@ -66,9 +66,9 @@ Shape shape = builder.InsertChart(ChartType.Pie, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-### Giải trình
+### Giải thích
 
-Ở đây, chúng tôi đang chèn biểu đồ hình tròn vào tài liệu của mình. Các`InsertChart` phương thức yêu cầu loại biểu đồ, chiều rộng và chiều cao làm tham số. Sau khi chèn biểu đồ, chúng ta truy cập vào đối tượng biểu đồ để thao tác thêm.
+Ở đây, chúng tôi đang chèn biểu đồ hình tròn vào tài liệu của mình. các`InsertChart` phương thức yêu cầu loại biểu đồ, chiều rộng và chiều cao làm tham số. Sau khi chèn biểu đồ, chúng ta truy cập vào đối tượng biểu đồ để thao tác thêm.
 
 ## Bước 3: Tùy chỉnh chuỗi biểu đồ
 
@@ -84,7 +84,7 @@ ChartSeries series = chart.Series.Add("Aspose Series 1",
     new double[] { 2.7, 3.2, 0.8 });
 ```
 
-### Giải trình
+### Giải thích
 
 Trong bước này, chúng tôi đảm bảo biểu đồ của mình trống bằng cách xóa mọi chuỗi có sẵn. Sau đó, chúng tôi thêm một chuỗi mới với các danh mục và giá trị tùy chỉnh sẽ được hiển thị trong biểu đồ hình tròn của chúng tôi.
 
@@ -103,7 +103,7 @@ labels.ShowLeaderLines = false;
 labels.Separator = " - ";
 ```
 
-### Giải trình
+### Giải thích
 
  Ở đây, chúng ta đang truy cập`DataLabels`thuộc tính của loạt sản phẩm của chúng tôi để tùy chỉnh giao diện và thông tin hiển thị trên mỗi nhãn dữ liệu. Chúng tôi đã chọn hiển thị cả phần trăm và giá trị, ẩn dòng dẫn đầu và đặt dấu phân cách tùy chỉnh.
 
@@ -116,13 +116,13 @@ Cuối cùng, chúng ta sẽ lưu tài liệu của mình vào thư mục đã c
 doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
 ```
 
-### Giải trình
+### Giải thích
 
  Ở bước cuối cùng này, chúng tôi lưu tài liệu của mình bằng cách sử dụng`Save` phương pháp. Tài liệu sẽ được lưu vào thư mục được chỉ định bởi`dataDir`, với tên "WorkingWithCharts.DefaultOptionsForDataLabels.docx".
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã tạo thành công tài liệu Word có biểu đồ hình tròn tùy chỉnh bằng Aspose.Words cho .NET. Thư viện mạnh mẽ này giúp bạn dễ dàng tự động hóa việc tạo và thao tác tài liệu, giúp bạn tiết kiệm thời gian và công sức. Cho dù bạn đang tạo báo cáo, hóa đơn hay bất kỳ loại tài liệu nào khác, Aspose.Words đều có thể hỗ trợ bạn.
+Và bạn có nó! Bạn đã tạo thành công tài liệu Word có biểu đồ hình tròn tùy chỉnh bằng Aspose.Words cho .NET. Thư viện mạnh mẽ này giúp bạn dễ dàng tự động hóa việc tạo và thao tác tài liệu, giúp bạn tiết kiệm thời gian và công sức. Cho dù bạn đang tạo báo cáo, hóa đơn hay bất kỳ loại tài liệu nào khác, Aspose.Words đều có thể hỗ trợ bạn.
 
  Hãy thoải mái khám phá[Tài liệu Aspose.Words](https://reference.aspose.com/words/net/) để biết thêm các tính năng và ví dụ. Chúc mừng mã hóa!
 

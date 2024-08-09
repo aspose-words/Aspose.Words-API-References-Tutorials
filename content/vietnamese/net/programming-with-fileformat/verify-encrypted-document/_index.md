@@ -52,11 +52,11 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 Console.WriteLine(info.IsEncrypted);
 ```
 
-Đó là tất cả ! Bạn đã kiểm tra thành công xem tài liệu có được mã hóa bằng Aspose.Words cho .NET hay không.
+Thế thôi! Bạn đã kiểm tra thành công xem tài liệu có được mã hóa bằng Aspose.Words cho .NET hay không.
 
 ## Phần kết luận
 
- Và bạn có nó rồi đấy! Bạn đã xác minh thành công trạng thái mã hóa của tài liệu Word bằng Aspose.Words cho .NET. Thật ngạc nhiên khi một vài dòng mã có thể khiến cuộc sống của chúng ta dễ dàng hơn nhiều phải không? Nếu bạn có bất kỳ câu hỏi nào hoặc gặp phải bất kỳ vấn đề nào, đừng ngần ngại liên hệ trên[Diễn đàn hỗ trợ Aspose](https://forum.aspose.com/c/words/8).
+ Và bạn có nó! Bạn đã xác minh thành công trạng thái mã hóa của tài liệu Word bằng Aspose.Words cho .NET. Thật ngạc nhiên khi một vài dòng mã có thể khiến cuộc sống của chúng ta dễ dàng hơn nhiều phải không? Nếu bạn có bất kỳ câu hỏi nào hoặc gặp phải bất kỳ vấn đề nào, đừng ngần ngại liên hệ trên[Diễn đàn hỗ trợ Aspose](https://forum.aspose.com/c/words/8).
 
 ## Câu hỏi thường gặp
 

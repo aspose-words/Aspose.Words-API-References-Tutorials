@@ -39,7 +39,7 @@ Först måste vi definiera sökvägen till vår dokumentkatalog. Det är här v�
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där du vill spara ditt dokument.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där du vill spara ditt dokument.
 
 ## Steg 2: Skapa ett nytt dokument
 
@@ -52,7 +52,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Steg 3: Skriv inledande text
 
- Använda`DocumentBuilder`, skriver vi lite inledande text till dokumentet. Detta ställer in sammanhanget för var vår hyperlänk kommer att infogas.
+ Med hjälp av`DocumentBuilder`, kommer vi att skriva lite inledande text till dokumentet. Detta ställer in sammanhanget för var vår hyperlänk kommer att infogas.
 
 ```csharp
 builder.Write("Please make sure to visit ");

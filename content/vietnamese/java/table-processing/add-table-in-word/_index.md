@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## Bước 6: Tạo bảng và thêm hàng
 
- Tạo một cái mới`Table`đối tượng và chỉ định số hàng và cột.
+ Tạo một cái mới`Table`đối tượng và chỉ định số lượng hàng và cột.
 
 ```java
 Table table = new Table(doc);

@@ -64,7 +64,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- Beállítás`UseCoreFonts` nak nek`true` biztosítja, hogy az olyan alapvető betűtípusok, mint az Arial és a Times New Roman, ne legyenek beágyazva a PDF-be, ami jelentősen csökkenti a fájlméretet.
+ Beállítás`UseCoreFonts` hogy`true` biztosítja, hogy az olyan alapvető betűtípusok, mint az Arial és a Times New Roman, ne legyenek beágyazva a PDF-be, ami jelentősen csökkenti a fájlméretet.
 
 ## 4. lépés: Mentse el a dokumentumot PDF formátumban
 

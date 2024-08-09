@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "Document.docx");
 doc.Save(dataDir + "ConvertedDocument.epub", SaveFormat.Epub);
 ```
 
-## συμπέρασμα
+## Σύναψη
 
 Σε αυτό το σεμινάριο, εξερευνήσαμε πώς να μετατρέψετε αρχεία DOCX σε μορφή EPUB χρησιμοποιώντας το Aspose.Words για .NET. Ακολουθώντας αυτά τα απλά βήματα, μπορείτε να ενσωματώσετε απρόσκοπτα τις δυνατότητες μετατροπής εγγράφων στις εφαρμογές σας .NET.
 
@@ -59,7 +59,7 @@ doc.Save(dataDir + "ConvertedDocument.epub", SaveFormat.Epub);
 Ναι, το Aspose.Words υποστηρίζει πλήρως .NET Core και .NET Framework.
 
 ### Πού μπορώ να βρω περισσότερα παραδείγματα και τεκμηρίωση για το Aspose.Words;
- Επισκέψου το[Aspose.Words για τεκμηρίωση .NET](https://reference.aspose.com/words/net/) για λεπτομερή παραδείγματα και αναφορά API.
+ Επισκεφθείτε το[Aspose.Words για τεκμηρίωση .NET](https://reference.aspose.com/words/net/) για λεπτομερή παραδείγματα και αναφορά API.
 
 ### Πώς μπορώ να λάβω υποστήριξη για ζητήματα που σχετίζονται με το Aspose.Words;
  Για υποστήριξη, επισκεφθείτε το[Aspose.Words φόρουμ](https://forum.aspose.com/c/words/8) όπου μπορείτε να κάνετε ερωτήσεις και να αλληλεπιδράσετε με την κοινότητα.

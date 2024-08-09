@@ -2,7 +2,7 @@
 title: A végső útmutató a dokumentumok átdolgozásához
 linktitle: A végső útmutató a dokumentumok átdolgozásához
 second_title: Aspose.Words Java Document Processing API
-description: Fődokumentum revízió az Aspose.Words for Java segítségével! Hatékonyan kezelheti a változtatásokat, elfogadhatja/elutasíthatja a revíziókat, és zökkenőmentesen működhet együtt. Kezd el most!
+description: Fődokumentum revízió az Aspose.Words for Java segítségével! Hatékonyan kezelheti a változtatásokat, elfogadhatja/elutasíthatja a revíziókat, és zökkenőmentesen működhet együtt. Kezdje el most!
 type: docs
 weight: 10
 url: /hu/java/document-revision/guide-document-revision/

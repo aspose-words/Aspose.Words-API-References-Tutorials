@@ -71,7 +71,7 @@ Döngü içerisinde geçerli bölümün içeriğini son bölümün başına kopy
 ```csharp
 doc.LastSection.PrependContent(doc.Sections[i]);
 ```
-2.  Bölümü Kaldır: Kullanarak bölümü kaldırın.`Remove` yöntem.
+2.  Bölümü Kaldır: Kullanarak bölümü kaldırın.`Remove` Yöntem.
 ```csharp
 doc.Sections[i].Remove();
 ```
@@ -87,7 +87,7 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak Word belgenizdeki bölüm sonlarını başarıyla kaldırdınız. Bu yöntem, belgenizin akıcı olmasını ve gereksiz bölüm sonlarından arındırılmasını sağlayarak, yönetilmesini ve düzenlenmesini çok daha kolay hale getirir.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak Word belgenizdeki bölüm sonlarını başarıyla kaldırdınız. Bu yöntem, belgenizin akıcı olmasını ve gereksiz bölüm sonlarından arındırılmasını sağlayarak, yönetilmesini ve düzenlenmesini çok daha kolay hale getirir.
 
 ## SSS'ler
 

@@ -2,71 +2,97 @@
 title: Odsazený kód
 linktitle: Odsazený kód
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se používat odsazený kód s Aspose.Words pro .NET Podrobný průvodce.
+description: Naučte se přidávat a upravovat odsazené bloky kódu v dokumentech aplikace Word pomocí Aspose.Words for .NET pomocí tohoto podrobného, podrobného kurzu.
 type: docs
 weight: 10
 url: /cs/net/working-with-markdown/indented-code/
 ---
+## Zavedení
 
-V tomto příkladu vysvětlíme, jak používat funkci odsazeného kódu s Aspose.Words pro .NET. Odsazený kód se používá k vizuální reprezentaci bloků kódu se specifickým formátováním.
+Přemýšleli jste někdy, jak přidat dotek přizpůsobení vašim dokumentům Word pomocí Aspose.Words pro .NET? Představte si, že máte možnost stylizovat text pomocí specifického formátování nebo přesně spravovat obsah, a to vše při použití robustní knihovny navržené pro bezproblémovou manipulaci s dokumenty. V tomto tutoriálu se ponoříme do toho, jak můžete stylizovat text, abyste vytvořili odsazené bloky kódu v dokumentech aplikace Word. Ať už chcete přidat úryvkům kódu profesionální vkus nebo jednoduše potřebujete čistý způsob prezentace informací, Aspose.Words nabízí výkonné řešení.
 
-## Krok 1: Použití generátoru dokumentů
+## Předpoklady
 
-Nejprve použijeme generátor dokumentů k přidání obsahu do našeho dokumentu.
+Než se pustíme do toho, je několik věcí, které musíte mít na svém místě:
+
+1.  Aspose.Words for .NET Library: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words. Můžete si jej stáhnout z[místo](https://releases.aspose.com/words/net/).
+   
+2. Visual Studio nebo jakékoli .NET IDE: K zápisu a spuštění kódu budete potřebovat IDE. Visual Studio je oblíbená volba, ale bude fungovat jakékoli IDE kompatibilní s .NET.
+   
+3. Základní znalost C#: Pochopení základů C# vám pomůže snáze následovat příklady.
+
+4. .NET Framework: Ujistěte se, že je váš projekt nastaven tak, aby používal rozhraní .NET Framework kompatibilní s Aspose.Words.
+
+5.  Dokumentace Aspose.Words: Seznamte se s[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) pro další podrobnosti a reference.
+
+Máte vše připraveno? Velký! Přejděme k zábavnější části.
+
+## Importovat jmenné prostory
+
+Chcete-li začít s Aspose.Words ve svém projektu .NET, budete muset importovat potřebné jmenné prostory. Tento krok zajistí, že váš projekt bude mít přístup ke všem třídám a metodám poskytovaným knihovnou Aspose.Words. Můžete to udělat takto:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+Tyto jmenné prostory vám umožňují pracovat s objekty dokumentů a manipulovat s obsahem v souborech aplikace Word.
+
+Nyní si projdeme proces přidávání a stylování odsazeného bloku kódu do dokumentu aplikace Word pomocí Aspose.Words. Rozdělíme si to do několika jasných kroků:
+
+## Krok 1: Nastavte svůj dokument
+
+ Nejprve musíte vytvořit nový dokument nebo načíst existující. Tento krok zahrnuje inicializaci`Document` objekt, který bude sloužit jako základ pro vaši práci.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Krok 2: Přidejte styl pro odsazený kód
+ Zde vytváříme nový dokument a používáme`DocumentBuilder` začít přidávat obsah.
 
- Přidáme vlastní styl pro odsazený kód pomocí`Styles.Add` metoda`Document` objekt. V tomto příkladu vytváříme styl nazvaný "IndentedCode" pro odsazený kód.
+## Krok 2: Definujte vlastní styl
+
+Dále definujeme vlastní styl pro odsazený kód. Tento styl zajistí, že vaše bloky kódu budou mít odlišný vzhled. 
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");
-builder.ParagraphFormat.Style = indentedCode;
+indentedCode.ParagraphFormat.LeftIndent = 20; // Nastavte levé odsazení stylu
+indentedCode.Font.Name = "Courier New"; // Pro kód použijte písmo s proměnnou mezerou
+indentedCode.Font.Size = 10; // Nastavte menší velikost písma pro kód
 ```
 
-## Krok 3: Přidejte odsazený kód
+V tomto kroku vytváříme nový styl odstavce nazvaný „IndentedCode“, nastavujeme levé odsazení na 20 bodů a používáme písmo s neproporcionálním písmem (běžně používané pro kód).
 
-Nyní můžeme přidat odsazený blok kódu pomocí vlastního stylu „IndentedCode“.
+## Krok 3: Použijte styl a přidejte obsah
+
+S definovaným stylem jej nyní můžeme použít a přidat odsazený kód do našeho dokumentu.
 
 ```csharp
-builder.Writeln("This is an indented code block");
-```
-
-### Příklad zdrojového kódu pro odsazený kód s Aspose.Words pro .NET
-
-```csharp
-// K přidání obsahu do dokumentu použijte tvůrce dokumentů.
-DocumentBuilder builder = new DocumentBuilder();
-
-Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");
 builder.ParagraphFormat.Style = indentedCode;
-builder.Writeln("This is an indented code");
+builder.Writeln("This is an indented code block.");
 ```
 
-gratuluji! Nyní jste se naučili, jak používat funkci odsazeného kódu s Aspose.Words pro .NET.
+Zde nastavujeme formát odstavce na náš vlastní styl a píšeme řádek textu, který se zobrazí jako odsazený blok kódu.
 
+## Závěr
 
-### FAQ
+A tady to máte – jednoduchý, ale účinný způsob, jak přidávat a upravovat odsazené bloky kódu v dokumentech aplikace Word pomocí Aspose.Words for .NET. Pomocí těchto kroků můžete zlepšit čitelnost úryvků kódu a dodat svým dokumentům profesionální vzhled. Ať už připravujete technické zprávy, dokumentaci ke kódu nebo jakýkoli jiný typ obsahu, který vyžaduje formátovaný kód, Aspose.Words poskytuje nástroje, které potřebujete k efektivnímu provedení práce.
 
-#### Otázka: Co je odsazený kód v Markdown?
+Nebojte se experimentovat s různými styly a nastaveními, abyste přizpůsobili vzhled a dojem z bloků kódu tak, aby vyhovovaly vašim potřebám. Šťastné kódování!
 
-Odpověď: Odsazený kód v Markdown je metoda formátování používaná k zobrazení kódu v dokumentu Markdown. Skládá se z odsazení každého řádku kódu mezerami nebo tabulátory.
+## FAQ
 
-#### Otázka: Jak používat odsazený kód v Markdown?
+### Mohu upravit odsazení bloku kódu?  
+ Ano, můžete upravit`LeftIndent` vlastnost stylu zvětšit nebo zmenšit odsazení.
 
-Odpověď: Chcete-li v Markdown použít odsazený kód, odsaďte každý řádek kódu mezerami nebo tabulátory.
+### Jak mohu změnit písmo použité pro blok kódu?  
+ Můžete nastavit`Font.Name`vlastnost libovolnému písmu s proměnnou mezerou podle vašeho výběru, jako je „Courier New“ nebo „Consolas“.
 
-#### Otázka: Jaké jsou výhody odsazeného kódu v Markdown?
+### Je možné přidat více bloků kódu s různými styly?  
+Absolutně! Můžete definovat více stylů s různými názvy a podle potřeby je aplikovat na různé bloky kódu.
 
-Odpověď: Odsazený kód v Markdown zlepšuje čitelnost kódu a usnadňuje čtenářům porozumění.
+### Mohu na blok kódu použít jiné možnosti formátování?  
+Ano, styl si můžete přizpůsobit pomocí různých možností formátování, včetně barvy písma, barvy pozadí a zarovnání.
 
-#### Otázka: Jaký je rozdíl mezi odsazeným kódem a bloky kódu v Markdown?
-
-Odpověď: Odsazený kód se používá pro malé úryvky kódu vložené do textu, zatímco bloky kódu se používají k zobrazení větších částí kódu v samostatném formátování.
-
-#### Otázka: Je odsazený kód v Markdown podporován všemi editory Markdown?
-
-Odpověď: Podpora odsazeného kódu v Markdown se může mezi editory Markdown lišit. Abyste si byli jisti, zkontrolujte konkrétní dokumentaci vydavatele.
+### Jak mohu otevřít uložený dokument po jeho vytvoření?  
+Chcete-li zobrazit stylizovaný obsah, můžete dokument otevřít pomocí libovolného textového procesoru, jako je Microsoft Word nebo kompatibilního softwaru.

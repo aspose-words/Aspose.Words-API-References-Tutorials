@@ -72,7 +72,7 @@ builder.EndRow();
 builder.EndTable();
 ```
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Ten slotte moeten we ons document opslaan. Kies een locatie in uw map om het nieuw gemaakte Word-bestand op te slaan.
 

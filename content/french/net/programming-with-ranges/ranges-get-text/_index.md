@@ -9,7 +9,7 @@ url: /fr/net/programming-with-ranges/ranges-get-text/
 ---
 ## Introduction
 
-Avez-vous déjà eu besoin d'extraire du texte d'un document Word par programmation ? Que vous automatisiez le traitement de documents ou que vous ayez simplement besoin de récupérer du contenu spécifique à partir d'un fichier Word, Aspose.Words for .NET est là pour vous. Cette puissante bibliothèque vous permet de manipuler facilement des documents Word, en fournissant des outils robustes pour extraire, éditer et créer du contenu. Dans ce didacticiel, nous vous guiderons tout au long du processus d'extraction de texte d'un document Word à l'aide d'Aspose.Words pour .NET, en le décomposant étape par étape pour vous assurer que vous pouvez suivre le processus de manière transparente.
+Avez-vous déjà eu besoin d'extraire du texte d'un document Word par programmation ? Que vous automatisiez le traitement de documents ou que vous ayez simplement besoin de récupérer du contenu spécifique à partir d'un fichier Word, Aspose.Words for .NET est là pour vous. Cette puissante bibliothèque vous permet de manipuler facilement des documents Word, en fournissant des outils robustes pour extraire, éditer et créer du contenu. Dans ce didacticiel, nous vous guiderons tout au long du processus d'extraction de texte d'un document Word à l'aide d'Aspose.Words for .NET, en le décomposant étape par étape pour vous assurer que vous pouvez suivre le processus de manière transparente.
 
 ## Conditions préalables
 
@@ -71,7 +71,7 @@ string text = doc.Range.Text;
 
 ## Étape 4 : Afficher le texte extrait
 
-Enfin, pour vérifier que votre extraction de texte a fonctionné, vous pouvez afficher le texte extrait dans la console. Voici comment:
+Enfin, pour vérifier que votre extraction de texte a fonctionné, vous pouvez afficher le texte extrait dans la console. Voici comment procéder :
 
 Afficher le texte
 
@@ -84,7 +84,7 @@ Cette étape imprime le texte extrait sur la console, vous permettant de voir le
 
 ## Conclusion
 
-Et voila! L'extraction de texte d'un document Word à l'aide d'Aspose.Words pour .NET est simple lorsque vous le décomposez en ces étapes simples. En suivant ce guide, vous pouvez automatiser le processus d'extraction de texte dans vos applications .NET, économisant ainsi du temps et des efforts.
+Et voilà ! L'extraction de texte d'un document Word à l'aide d'Aspose.Words pour .NET est simple lorsque vous le décomposez en ces étapes simples. En suivant ce guide, vous pouvez automatiser le processus d'extraction de texte dans vos applications .NET, économisant ainsi du temps et des efforts.
 
 ## FAQ
 

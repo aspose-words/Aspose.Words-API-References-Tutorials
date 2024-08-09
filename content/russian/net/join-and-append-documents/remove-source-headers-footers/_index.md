@@ -98,4 +98,4 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.RemoveSourceHeadersFooters.docx");
 Да, Aspose.Words for .NET позволяет удалять верхние и нижние колонтитулы, сохраняя при этом остальную часть форматирования документа.
 
 ### Где я могу найти дополнительные ресурсы и поддержку Aspose.Words для .NET?
- Посетить[Документация Aspose.Words для .NET](https://reference.aspose.com/words/net/) подробные ссылки и примеры API.
+ Посетите[Документация Aspose.Words для .NET](https://reference.aspose.com/words/net/) подробные ссылки и примеры API.

@@ -50,7 +50,7 @@ Document doc = new Document();
 
 ## 第 3 步：建立文件產生器
 
-DocumentBuilder 類別提供了一種建構文件的簡單方法。我們將使用它來插入圖表。
+DocumentBuilder 類別提供了一種建構文件的簡單方法。我們將使用它來插入我們的圖表。
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -89,7 +89,7 @@ doc.Save(dataDir + "WorkingWithCharts.InsertBubbleChart.docx");
 
 ### 我可以自訂氣泡圖的外觀嗎？
 
-絕對地！ Aspose.Words for .NET 提供了廣泛的自訂選項，從顏色和標籤到資料系列格式。查看[文件](https://reference.aspose.com/words/net/)更多細節。
+絕對地！ Aspose.Words for .NET 提供了廣泛的自訂選項，從顏色和標籤到資料系列格式。查看[文件](https://reference.aspose.com/words/net/)了解更多詳情。
 
 ### 是否可以將多個圖表新增到單一文件中？
 

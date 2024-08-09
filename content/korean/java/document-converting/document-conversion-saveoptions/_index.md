@@ -77,7 +77,7 @@ Aspose.Words for Java는 문서 변환을 위한 광범위한 출력 형식을 �
 
 ### Java용 Aspose.Words를 어떻게 설치하나요?
 
- Java용 Aspose.Words 설치는 간단합니다. 방문하다[다운로드 페이지](https://releases.aspose.com/words/java/)개발 환경에 맞는 설치 지침을 따르세요.
+ Java용 Aspose.Words 설치는 간단합니다. 방문[다운로드 페이지](https://releases.aspose.com/words/java/)개발 환경에 맞는 설치 지침을 따르세요.
 
 ### Aspose.Words의 SaveOptions는 무엇입니까?
 

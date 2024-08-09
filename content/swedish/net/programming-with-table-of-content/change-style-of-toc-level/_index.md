@@ -9,7 +9,7 @@ url: /sv/net/programming-with-table-of-content/change-style-of-toc-level/
 ---
 ## Introduktion
 
-Om du någonsin har behövt skapa ett professionellt Word-dokument vet du hur avgörande en innehållsförteckning (TOC) kan vara. Det organiserar inte bara ditt innehåll utan ger också en touch av professionalism. Det kan dock vara lite knepigt att anpassa innehållsförteckningen för att matcha din stil. I den här handledningen går vi igenom hur du ändrar innehållsförteckningen i ett Word-dokument med Aspose.Words för .NET. Redo att dyka i? Låt oss börja!
+Om du någonsin har behövt skapa ett professionellt Word-dokument vet du hur avgörande en innehållsförteckning (TOC) kan vara. Det organiserar inte bara ditt innehåll utan ger också en touch av professionalism. Det kan dock vara lite knepigt att anpassa innehållsförteckningen för att matcha din stil. I den här handledningen går vi igenom hur du ändrar innehållsförteckningen i ett Word-dokument med Aspose.Words för .NET. Redo att dyka i? Låt oss komma igång!
 
 ## Förutsättningar
 

@@ -9,14 +9,14 @@ url: /ko/net/working-with-markdown/use-warning-source/
 ---
 ## 소개
 
- 프로그래밍 방식으로 문서를 관리하고 서식을 지정해야 했던 적이 있습니까? 그렇다면 다양한 문서 유형을 처리하고 모든 것이 제대로 표시되는지 확인하는 복잡성에 직면했을 것입니다. 문서 처리를 단순화하는 강력한 라이브러리인 Aspose.Words for .NET을 입력하세요. 오늘은 특정 기능에 대해 알아보겠습니다.`WarningSource`Markdown으로 작업할 때 경고를 포착하고 처리하는 클래스입니다. .NET용 Aspose.Words를 마스터하기 위한 여정을 시작해 보세요!
+프로그래밍 방식으로 문서를 관리하고 서식을 지정해야 했던 적이 있습니까? 그렇다면 다양한 문서 유형을 처리하고 모든 것이 제대로 표시되는지 확인하는 복잡성에 직면했을 것입니다. 문서 처리를 단순화하는 강력한 라이브러리인 Aspose.Words for .NET을 입력하세요. 오늘은 특정 기능에 대해 알아보겠습니다.`WarningSource` Markdown으로 작업할 때 경고를 포착하고 처리하는 클래스입니다. .NET용 Aspose.Words를 마스터하기 위한 여정을 시작해 보세요!
 
 ## 전제 조건
 
 핵심을 다루기 전에 다음 사항이 준비되었는지 확인하세요.
 
 1. Visual Studio: 최신 버전이라면 모두 가능합니다.
-2.  .NET용 Aspose.Words: 다음을 수행할 수 있습니다.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+2.  .NET용 Aspose.Words: 다음을 수행할 수 있습니다.[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 3. C#에 대한 기본 지식: C#에 대한 방법을 알면 원활하게 따라가는 데 도움이 됩니다.
 4.  샘플 DOCX 파일: 이 튜토리얼에서는`Emphases markdown warning.docx`.
 
@@ -39,7 +39,7 @@ using Aspose.Words.Saving;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- 바꾸다`"YOUR DOCUMENT DIRECTORY"` DOCX 파일이 있는 실제 경로를 사용하세요.
+ 바꾸다`"YOUR DOCUMENT DIRECTORY"`DOCX 파일이 있는 실제 경로를 사용하세요.
 
 ## 2단계: 문서 로드
 
@@ -53,7 +53,7 @@ Document doc = new Document(dataDir + "Emphases markdown warning.docx");
 
 ## 3단계: 경고 수집 설정
 
- 중요한 점을 강조하는 스티커 메모가 붙은 책을 읽는다고 상상해 보십시오. 그만큼`WarningInfoCollection`문서 처리를 위해 바로 그렇게 합니다.
+ 중요한 점을 강조하는 스티커 메모가 붙은 책을 읽는다고 상상해 보십시오. 그만큼`WarningInfoCollection` 문서 처리를 위해 바로 그렇게 합니다.
 
 ```csharp
 WarningInfoCollection warnings = new WarningInfoCollection();
@@ -88,7 +88,7 @@ doc.Save(dataDir + "WorkingWithMarkdown.UseWarningSource.md");
 
 ## 결론
 
- 그리고 거기에 있습니다! 방금 사용법을 배웠습니다.`WarningSource`Markdown 경고를 처리하기 위한 .NET용 Aspose.Words의 클래스입니다. 이 튜토리얼에서는 프로젝트 설정, 문서 로드, 경고 수집 및 처리, 최종 문서 저장에 대해 다뤘습니다. 이러한 지식을 바탕으로 애플리케이션에서 문서 처리를 더 효과적으로 관리할 수 있습니다. .NET용 Aspose.Words의 방대한 기능을 계속 실험하고 탐색해 보세요!
+그리고 거기에 있습니다! 방금 사용법을 배웠습니다.`WarningSource` Markdown 경고를 처리하기 위한 .NET용 Aspose.Words의 클래스입니다. 이 튜토리얼에서는 프로젝트 설정, 문서 로드, 경고 수집 및 처리, 최종 문서 저장에 대해 다뤘습니다. 이러한 지식을 바탕으로 애플리케이션에서 문서 처리를 더 효과적으로 관리할 수 있습니다. .NET용 Aspose.Words의 방대한 기능을 계속 실험하고 탐색해 보세요!
 
 ## FAQ
 
@@ -102,7 +102,7 @@ Aspose.Words for .NET은 프로그래밍 방식으로 Word 문서를 작업하�
  경고 소스는 문서 처리 중에 생성된 경고의 출처를 나타냅니다. 예를 들어,`WarningSource.Markdown` Markdown 처리와 관련된 경고를 나타냅니다.
 
 ### Aspose.Words에서 경고 처리를 사용자 정의할 수 있나요?
- 예, 다음을 구현하여 경고 처리를 맞춤설정할 수 있습니다.`IWarningCallback` 인터페이스를 문서의 인터페이스로 설정`WarningCallback` 재산.
+ 예, 다음을 구현하여 경고 처리를 맞춤설정할 수 있습니다.`IWarningCallback`인터페이스를 문서의 인터페이스로 설정`WarningCallback` 재산.
 
 ### Aspose.Words를 사용하여 문서를 다른 형식으로 어떻게 저장합니까?
  다음을 사용하여 다양한 형식(예: DOCX, PDF, Markdown)으로 문서를 저장할 수 있습니다.`Save` 의 방법`Document` 클래스, 원하는 형식을 매개변수로 지정합니다.

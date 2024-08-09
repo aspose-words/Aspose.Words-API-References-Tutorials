@@ -9,7 +9,7 @@ url: /vi/net/programming-with-bookmarks/bookmark-table-columns/
 ---
 ## Giới thiệu
 
-Nếu bạn đang tìm cách nâng cao kỹ năng tự động hóa tài liệu của mình thì bạn sẽ được điều trị. Hướng dẫn này sẽ hướng dẫn bạn quy trình đánh dấu các cột trong bảng trong tài liệu Word bằng Aspose.Words cho .NET. Sẵn sàng để đi sâu vào? Bắt đầu nào!
+Nếu bạn đang tìm cách nâng cao kỹ năng tự động hóa tài liệu của mình thì bạn sẽ được điều trị. Hướng dẫn này sẽ hướng dẫn bạn quy trình đánh dấu các cột trong bảng trong tài liệu Word bằng Aspose.Words cho .NET. Sẵn sàng để đi sâu vào? Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
@@ -107,7 +107,7 @@ foreach (Bookmark bookmark in doc.Range.Bookmarks)
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã đánh dấu thành công các cột trong bảng trong tài liệu Word bằng Aspose.Words cho .NET. Quá trình này không chỉ giúp tổ chức tài liệu của bạn mà còn giúp điều hướng và thao tác các phần cụ thể dễ dàng hơn. Đánh dấu trang là một tính năng mạnh mẽ có thể nâng cao đáng kể khả năng quản lý tài liệu của bạn.
+Và bạn có nó! Bạn đã đánh dấu thành công các cột trong bảng trong tài liệu Word bằng Aspose.Words cho .NET. Quá trình này không chỉ giúp tổ chức tài liệu của bạn mà còn giúp điều hướng và thao tác các phần cụ thể dễ dàng hơn. Đánh dấu trang là một tính năng mạnh mẽ có thể nâng cao đáng kể khả năng quản lý tài liệu của bạn.
 
 ## Câu hỏi thường gặp
 
@@ -115,7 +115,7 @@ Và bạn có nó rồi đấy! Bạn đã đánh dấu thành công các cột 
 Aspose.Words for .NET là một thư viện mạnh mẽ để làm việc với các tài liệu Word theo chương trình. Nó cho phép bạn tạo, sửa đổi và chuyển đổi tài liệu mà không cần cài đặt Microsoft Word.
 
 ### Làm cách nào để cài đặt Aspose.Words cho .NET?
- Bạn có thể tải xuống Aspose.Words cho .NET từ[trang mạng](https://releases.aspose.com/words/net/). Thực hiện theo các hướng dẫn cài đặt được cung cấp.
+ Bạn có thể tải xuống Aspose.Words cho .NET từ[trang web](https://releases.aspose.com/words/net/). Thực hiện theo các hướng dẫn cài đặt được cung cấp.
 
 ### Tôi có thể sử dụng Aspose.Words cho .NET với các ngôn ngữ lập trình khác không?
 Có, Aspose.Words for .NET có thể được sử dụng với bất kỳ ngôn ngữ nào được .NET hỗ trợ, bao gồm C#, VB.NET và F#.

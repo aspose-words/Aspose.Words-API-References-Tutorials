@@ -101,7 +101,7 @@ Ici, nous ajoutons du texte juste après le champ de fusion, garantissant ainsi 
 
 ## Conclusion
 
-Et voila! Passer à un champ de fusion dans un document Word à l’aide d’Aspose.Words pour .NET est aussi simple que bonjour lorsque vous le décomposez en étapes simples. En suivant ce guide, vous pouvez naviguer et manipuler sans effort vos documents Word, rendant ainsi vos tâches d'automatisation de documents un jeu d'enfant. Ainsi, la prochaine fois que vous vous retrouverez dans un dédale de champs de fusion, vous aurez la carte pour vous guider !
+Et voilà ! Passer à un champ de fusion dans un document Word à l’aide d’Aspose.Words pour .NET est aussi simple que bonjour lorsque vous le décomposez en étapes simples. En suivant ce guide, vous pouvez naviguer et manipuler sans effort vos documents Word, rendant ainsi vos tâches d'automatisation de documents un jeu d'enfant. Ainsi, la prochaine fois que vous vous retrouverez dans un dédale de champs de fusion, vous aurez la carte pour vous guider !
 
 ## FAQ
 
@@ -112,7 +112,7 @@ Aspose.Words for .NET est une bibliothèque puissante qui permet aux développeu
  Vous pouvez télécharger et installer Aspose.Words pour .NET à partir de[ici](https://releases.aspose.com/words/net/). Suivez les instructions d'installation fournies sur le site Web.
 
 ### Puis-je utiliser Aspose.Words pour .NET avec .NET Core ?
- Oui, Aspose.Words pour .NET est compatible avec .NET Core. Vous pouvez trouver plus de détails dans le[Documentation](https://reference.aspose.com/words/net/).
+ Oui, Aspose.Words pour .NET est compatible avec .NET Core. Vous pouvez trouver plus de détails dans le[documentation](https://reference.aspose.com/words/net/).
 
 ### Comment puis-je obtenir une licence temporaire pour Aspose.Words ?
  Vous pouvez obtenir une licence temporaire auprès de[ce lien](https://purchase.aspose.com/temporary-license/).

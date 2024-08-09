@@ -9,7 +9,7 @@ url: /sv/net/programming-with-pdfsaveoptions/skip-embedded-arial-and-times-roman
 ---
 ## Introduktion
 
-Har du någonsin hamnat i en situation där din PDF-fil är alldeles för stor? Det är som att packa för en semester och inse att din resväska spricker i sömmarna. Du vet att du behöver gå ner i vikt, men vad släpper du taget om? När du arbetar med PDF-filer, särskilt de som konverterats från Word-dokument, kan inbäddade teckensnitt öka din filstorlek. Tack och lov erbjuder Aspose.Words för .NET en snygg lösning för att hålla dina PDF-filer slanka och elaka. I den här handledningen kommer vi att dyka in i hur du optimerar din PDF-storlek genom att hoppa över inbäddade Arial- och Times Roman-teckensnitt. Låt oss börja!
+Har du någonsin hamnat i en situation där din PDF-fil är alldeles för stor? Det är som att packa för en semester och inse att din resväska spricker i sömmarna. Du vet att du behöver gå ner i vikt, men vad släpper du taget om? När du arbetar med PDF-filer, särskilt de som konverterats från Word-dokument, kan inbäddade teckensnitt öka din filstorlek. Tack och lov erbjuder Aspose.Words för .NET en snygg lösning för att hålla dina PDF-filer slanka och elaka. I den här handledningen kommer vi att dyka in i hur du optimerar din PDF-storlek genom att hoppa över inbäddade Arial- och Times Roman-teckensnitt. Låt oss komma igång!
 
 ## Förutsättningar
 

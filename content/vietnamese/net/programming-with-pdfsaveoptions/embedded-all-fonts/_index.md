@@ -76,7 +76,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddedFontsInPdf.pdf", saveOptio
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã nhúng thành công phông chữ vào tài liệu PDF bằng Aspose.Words cho .NET. Với kiến thức này, bạn có thể đảm bảo rằng các tệp PDF của bạn vẫn giữ được hình thức như mong muốn, bất kể chúng được xem ở đâu. Điều đó không tuyệt vời sao? Bây giờ, hãy tiếp tục và thử với các tài liệu của riêng bạn.
+Và bạn có nó! Bạn đã nhúng thành công phông chữ vào tài liệu PDF bằng Aspose.Words cho .NET. Với kiến thức này, bạn có thể đảm bảo rằng các tệp PDF của bạn vẫn giữ được hình thức như mong muốn, bất kể chúng được xem ở đâu. Điều đó không tuyệt vời sao? Bây giờ, hãy tiếp tục và thử với các tài liệu của riêng bạn.
 
 ## Câu hỏi thường gặp
 

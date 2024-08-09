@@ -115,4 +115,4 @@ Ano, můžete sloučit libovolný počet dokumentů pomocí`append_document` met
 
 ### Kde získám přístup ke knihovně a zdrojům?
 
- Vstupte do knihovny a dozvíte se více na[tady](https://releases.aspose.com/words/python/).
+ Vstupte do knihovny a dozvíte se více na[zde](https://releases.aspose.com/words/python/).

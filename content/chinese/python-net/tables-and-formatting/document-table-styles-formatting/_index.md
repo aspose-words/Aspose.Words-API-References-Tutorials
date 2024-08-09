@@ -26,7 +26,7 @@ url: /zh/python-net/tables-and-formatting/document-table-styles-formatting/
     import aspose.words
     ```
 
-3. 加载文档：加载现有文档或使用 Aspose.Words API 创建新文档。
+3. 加载文档：使用 Aspose.Words API 加载现有文档或创建新文档。
 
 ## 创建表格并将其插入文档
 

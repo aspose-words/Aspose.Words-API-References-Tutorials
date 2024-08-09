@@ -46,7 +46,7 @@ Document doc = new Document(dataDir + "YourDocument.docx");
 
 ## Bước 3: Đặt mật khẩu (Tùy chọn)
 
-Việc đặt mật khẩu là tùy chọn nhưng nó có thể thêm một lớp bảo mật bổ sung cho tài liệu của bạn trước khi bạn sửa đổi nó.
+Việc đặt mật khẩu là tùy chọn nhưng nó có thể thêm một lớp bảo mật bổ sung vào tài liệu của bạn trước khi bạn sửa đổi nó.
 
 ```csharp
 //Nhập mật khẩu dài tối đa 15 ký tự.
@@ -101,7 +101,7 @@ Có, việc đặt mật khẩu là tùy chọn. Bạn có thể trực tiếp x
 
 ### Điều gì xảy ra nếu tài liệu đã có một kiểu bảo vệ khác?
 
- Các`doc.Protect(ProtectionType.NoProtection)` phương pháp đảm bảo rằng tất cả các loại biện pháp bảo vệ được loại bỏ khỏi tài liệu.
+ các`doc.Protect(ProtectionType.NoProtection)` phương pháp đảm bảo rằng tất cả các loại biện pháp bảo vệ được loại bỏ khỏi tài liệu.
 
 ### Có cách nào để biết liệu tài liệu có ở chế độ chỉ đọc hay không trước khi loại bỏ hạn chế?
 

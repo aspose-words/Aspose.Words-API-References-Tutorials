@@ -15,7 +15,7 @@ Willkommen in der wunderbaren Welt von Aspose.Words für .NET! Heute tauchen wir
 
 Bevor wir uns in die Einzelheiten stürzen, stellen wir sicher, dass wir alles haben, was wir brauchen:
 
-1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die neueste Version haben.[Hier herunterladen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die neueste Version haben.[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Visual Studio oder eine andere C#-kompatible IDE.
 3. Grundkenntnisse in C#: Es ist hilfreich, wenn Sie sich ein wenig mit C# und dem .NET-Framework auskennen.
 4. Lizenz: Sie können eine temporäre Lizenz verwenden, wenn Sie keine Volllizenz haben. Hol sie dir[Hier](https://purchase.aspose.com/temporary-license/).

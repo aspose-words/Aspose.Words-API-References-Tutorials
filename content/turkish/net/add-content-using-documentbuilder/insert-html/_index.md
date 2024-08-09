@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Tamam, bunu adım adım inceleyelim. Hazır? Başlayalım!
+Tamam, bunu adım adım inceleyelim. Hazır? Hadi başlayalım!
 
 ## 1. Adım: Belge Dizininizi Ayarlama
 
@@ -62,7 +62,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Adım 4: HTML İçeriği Ekleme
 
- Şimdi işin eğlenceli kısmı geliyor; HTML içeriğini ekleme. Kullanmak`InsertHtml` yöntemi`DocumentBuilder` sınıfımızda HTML'yi doğrudan Word belgemize gömebiliriz.
+ Şimdi işin eğlenceli kısmı geliyor; HTML içeriğini ekleme. kullanarak`InsertHtml` yöntemi`DocumentBuilder` sınıfımızda HTML'yi doğrudan Word belgemize gömebiliriz.
 
 ```csharp
 builder.InsertHtml(
@@ -82,7 +82,7 @@ Son olarak belgemizi belirtilen dizine kaydedeceğiz.
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
 ```
 
-İşte buyur! Aspose.Words for .NET'i kullanarak HTML'yi bir Word belgesine eklediniz. Çak beşlik!
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak HTML'yi bir Word belgesine eklediniz. Çak bir beşlik!
 
 ## Çözüm
 

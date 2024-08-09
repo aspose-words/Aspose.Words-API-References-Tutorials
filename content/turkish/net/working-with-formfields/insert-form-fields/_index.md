@@ -2,76 +2,100 @@
 title: Form Alanları Ekle
 linktitle: Form Alanları Ekle
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak açılır form alanlarını Word belgelerine nasıl ekleyeceğinizi öğrenin.
+description: Ayrıntılı, adım adım kılavuzumuzla Aspose.Words for .NET kullanarak bir Word belgesine nasıl birleşik giriş kutusu form alanı ekleyeceğinizi öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-formfields/insert-form-fields/
 ---
+## giriiş
 
-Bu adım adım eğitimde, Aspose.Words for .NET kullanarak form alanlarını, özellikle açılır form alanını bir Word belgesine nasıl ekleyeceğiniz konusunda size rehberlik edeceğiz. Sağlanan C# kaynak kodunu açıklayacağız ve bunu kendi projelerinizde nasıl uygulayacağınızı göstereceğiz.
+Word belgelerindeki form alanları, etkileşimli formlar veya şablonlar oluşturmak için inanılmaz derecede yararlı olabilir. İster bir anket, ister bir başvuru formu veya kullanıcı girişi gerektiren başka bir belge oluşturuyor olun, form alanları önemlidir. Bu eğitimde, Aspose.Words for .NET'i kullanarak bir Word belgesine birleşik giriş kutusu form alanı ekleme sürecinde size yol göstereceğiz. Süreci kapsamlı bir şekilde anlamanızı sağlamak için ön koşullardan ayrıntılı adımlara kadar her şeyi ele alacağız.
 
- Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve kurulu olduğundan emin olun. Henüz yapmadıysanız, kitaplığı şuradan indirip yükleyin.[Aspose.Releases]https://releases.aspose.com/words/net/.
+## Önkoşullar
 
-## Adım 1: Document ve DocumentBuilder Nesnelerini Başlatma
+Koda dalmadan önce, başlamak için ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
- İlk olarak, başlat`Document`Ve`DocumentBuilder` nesneler:
+1.  Aspose.Words for .NET: Aspose.Words for .NET'in kurulu olduğundan emin olun. Değilse, adresinden indirebilirsiniz.[Burada](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: Visual Studio gibi bir IDE'ye ihtiyacınız olacak.
+3. .NET Framework: Makinenizde .NET Framework'ün kurulu olduğundan emin olun.
+
+## Ad Alanlarını İçe Aktar
+
+Başlangıç olarak gerekli ad alanlarını içe aktarmanız gerekir. Bu ad alanları Aspose.Words for .NET'te Word belgeleriyle çalışmak için kullanacağınız sınıfları ve yöntemleri içerir.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+Şimdi birleşik giriş kutusu form alanı eklemek için adım adım kılavuza bakalım.
+
+## 1. Adım: Yeni Bir Belge Oluşturun
+
+Öncelikle yeni bir Word belgesi oluşturmanız gerekiyor. Bu belge, form alanlarınızı eklemek için tuval görevi görecektir.
+
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 2. Adım: Açılır Form Alanı Ekleme
+ Bu adımda örneğinin bir örneğini oluşturuyoruz.`Document` sınıf. Bu örnek Word belgesini temsil eder. Daha sonra bunun bir örneğini oluşturuyoruz.`DocumentBuilder` Belgeye içerik eklemek için yöntemler sağlayan sınıf.
 
- Daha sonra açılır form alanı için seçenekleri belirleyin ve bunu kullanarak belgeye ekleyin.`InsertComboBox` yöntemi`DocumentBuilder` nesne. Bu örnekte, "Açılır" adında üç seçeneğe sahip bir açılır form alanı ekliyoruz: "Bir", "İki" ve "Üç":
+## Adım 2: Açılan Kutu Öğelerini Tanımlayın
+
+Daha sonra açılan kutuya eklemek istediğiniz öğeleri tanımlayın. Bu öğeler seçilebilecek seçenekler olacaktır.
 
 ```csharp
 string[] items = { "One", "Two", "Three" };
+```
+
+ Burada adında bir dize dizisi oluşturuyoruz.`items` "Bir", "İki" ve "Üç" seçeneklerini içerir.
+
+## Adım 3: Birleşik Giriş Kutusunu takın
+
+ Şimdi, açılan kutuyu kullanarak belgeye ekleyin.`DocumentBuilder` misal.
+
+```csharp
 builder.InsertComboBox("DropDown", items, 0);
 ```
 
-## Adım 3: Belgeyi Kaydetme
+ Bu adımda şunu kullanıyoruz:`InsertComboBox` yöntemi`DocumentBuilder` sınıf. İlk parametre birleşik giriş kutusunun adıdır ("DropDown"), ikinci parametre öğe dizisidir ve üçüncü parametre varsayılan olarak seçilen öğenin (bu durumda ilk öğe) dizinidir.
 
-Son olarak belgeyi kaydedin:
+## Adım 4: Belgeyi Kaydedin
+
+Son olarak belgeyi istediğiniz konuma kaydedin.
 
 ```csharp
 doc.Save("OutputDocument.docx");
 ```
 
-Bu kadar! Aspose.Words for .NET'i kullanarak bir Word belgesine başarıyla bir açılır form alanı eklediniz.
+Bu kod satırı, belgeyi projenizin dizinine "OutputDocument.docx" olarak kaydeder. Başka bir yere kaydetmek istiyorsanız farklı bir yol belirleyebilirsiniz.
 
-### Aspose.Words for .NET kullanarak Form Alanları Ekleme için örnek kaynak kodu
+## Çözüm
 
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+Bu adımları izleyerek, Aspose.Words for .NET'i kullanarak bir Word belgesine başarıyla bir birleşik giriş kutusu form alanı eklediniz. Bu süreç diğer form alanı türlerini de içerecek şekilde uyarlanabilir ve belgelerinizi etkileşimli ve kullanıcı dostu hale getirebilir.
 
-string[] items = { "One", "Two", "Three" };
-builder.InsertComboBox("DropDown", items, 0);
+Form alanları eklemek, Word belgelerinizin işlevselliğini büyük ölçüde geliştirerek dinamik içerik ve kullanıcı etkileşimine olanak tanır. Aspose.Words for .NET bu süreci basit ve verimli hale getirerek profesyonel belgeleri kolaylıkla oluşturmanıza olanak tanır.
 
-doc.Save("OutputDocument.docx");
-```
+## SSS'ler
 
-Bu kodu kendi projelerinizde kullanmaktan ve özel gereksinimlerinize göre değiştirmekten çekinmeyin.
+### Bir belgeye birden fazla açılan kutu ekleyebilir miyim?
 
-### SSS'ler
+Evet, ekleme adımlarını farklı adlar ve öğelerle tekrarlayarak belgenize birden çok açılan kutu veya başka form alanı ekleyebilirsiniz.
 
-#### S: Aspose.Words'e metin tipi form alanını nasıl ekleyebilirim?
+### Açılan kutuda farklı bir varsayılan seçili öğeyi nasıl ayarlayabilirim?
 
- C: Aspose.Words'e metin tipinde bir form alanı eklemek için`FormField` sınıfını seçin ve ayarlayın`Type`mülkiyet`FormFieldType.Text`. Ad, etiket ve seçenekler gibi diğer özellikleri de özelleştirebilirsiniz.
+Varsayılan olarak seçilen öğeyi, üçüncü parametreyi değiştirerek değiştirebilirsiniz.`InsertComboBox` Yöntem. Örneğin, bunu şu şekilde ayarlamak`1` varsayılan olarak ikinci öğeyi seçecektir.
 
-#### S: Bir belgede onay kutusu tipinde bir form alanı oluşturmak mümkün mü?
+### Birleşik giriş kutusunun görünümünü özelleştirebilir miyim?
 
- C: Evet, Aspose.Words belgesinde onay kutusu tipinde bir form alanı oluşturmak mümkündür. Şunu kullanabilirsiniz:`FormField` sınıfını seçin ve ayarlayın`Type`mülkiyet`FormFieldType.CheckBox` Bir onay kutusu oluşturmak için. Daha sonra onay kutusunun özelliklerini gerektiği gibi özelleştirebilirsiniz.
+ Form alanlarının görünümü Aspose.Words'deki çeşitli özellikler ve yöntemler kullanılarak özelleştirilebilir. Şuraya bakın:[dokümantasyon](https://reference.aspose.com/words/net/) daha fazla ayrıntı için.
 
-#### S: Bir belgeye açılır tipte bir form alanını nasıl ekleyebilirim?
+### Metin girişi veya onay kutuları gibi başka türde form alanları eklemek mümkün müdür?
 
- C: Aspose.Words belgesine açılır tipte bir form alanı eklemek için`FormField` sınıfını seçin ve ayarlayın`Type`mülkiyet`FormFieldType.DropDown` . Daha sonra açılır menü seçeneklerini kullanarak ayarlayabilirsiniz.`DropDownItems` mülk.
+ Evet, Aspose.Words for .NET, metin giriş alanları, onay kutuları ve daha fazlası dahil olmak üzere çeşitli form alanı türlerini destekler. Örnekleri ve ayrıntılı kılavuzları şu adreste bulabilirsiniz:[dokümantasyon](https://reference.aspose.com/words/net/).
 
-#### S: Aspose.Words'te bir form alanı için varsayılan bir değer ayarlayabilir miyim?
+### Satın almadan önce Aspose.Words for .NET'i nasıl deneyebilirim?
 
-C: Evet, Aspose.Words'te bir form alanı için varsayılan bir değer belirleyebilirsiniz. Kullan`FormField.Result` form alanının başlangıç değerini belirtme özelliği.
-
-#### S: Aspose.Words'teki form alanlarına girilen verileri nasıl alabilirim?
-
- C: Aspose.Words'teki form alanlarına girilen verileri almak için`FormField.Result` Kullanıcı tarafından girilen değeri içeren özellik. Bu özelliğe belgenizdeki her form alanı için erişebilirsiniz.
+ Ücretsiz deneme sürümünü şuradan indirebilirsiniz:[Burada](https://releases.aspose.com/) ve geçici lisans talebinde bulunun[Burada](https://purchase.aspose.com/temporary-license/).

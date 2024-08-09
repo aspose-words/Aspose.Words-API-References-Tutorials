@@ -9,7 +9,7 @@ url: /id/net/clone-and-combine-documents/cloning-document/
 ---
 ## Perkenalan
 
-Hai! Pernahkah Anda merasa perlu mengkloning dokumen Word menggunakan Aspose.Words untuk .NET? Ini tidak sesulit kedengarannya, dan saya di sini untuk memandu Anda melaluinya langkah demi langkah. Baik Anda seorang pengembang berpengalaman atau baru memulai, tutorial ini akan memandu Anda melalui proses dengan cara percakapan yang sederhana. Pada akhirnya, Anda akan memiliki dokumen Word hasil kloning yang siap digunakan. Jadi, mari selami!
+Hai! Pernahkah Anda merasa perlu mengkloning dokumen Word menggunakan Aspose.Words untuk .NET? Ini tidak sesulit kedengarannya, dan saya di sini untuk memandu Anda melewatinya langkah demi langkah. Baik Anda seorang pengembang berpengalaman atau baru memulai, tutorial ini akan memandu Anda melalui proses dengan cara percakapan yang sederhana. Pada akhirnya, Anda akan memiliki dokumen Word hasil kloning yang siap digunakan. Jadi, mari selami!
 
 ## Prasyarat
 
@@ -35,7 +35,7 @@ Sederhana, bukan? Sekarang, mari beralih ke bagian yang menarik: mengkloning dok
 Hal pertama yang pertama, Anda perlu menyiapkan proyek Anda di Visual Studio. Jika Anda sudah menyiapkan proyek, Anda dapat melewati langkah ini. Jika tidak, ikuti:
 
 1. Buka Visual Studio: Jalankan Visual Studio dan buat proyek Aplikasi Konsol C# baru.
-2.  Beri Nama Proyek Anda: Berikan nama yang bermakna pada proyek Anda. Sesuatu seperti`CloneWordDocumentDemo` akan melakukan.
+2.  Beri Nama Proyek Anda: Berikan nama yang bermakna pada proyek Anda. Sesuatu seperti`CloneWordDocumentDemo` akan melakukannya.
 3.  Tambahkan Referensi Aspose.Words: Klik kanan pada proyek Anda di Solution Explorer, pilih`Manage NuGet Packages` , dan cari`Aspose.Words`. Instal itu.
 
 ## Langkah 2: Persiapkan Lingkungan Anda

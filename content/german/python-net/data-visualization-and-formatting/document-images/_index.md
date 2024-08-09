@@ -145,7 +145,7 @@ Das Einbinden von Rich-Media-Bildern in Ihre Dokumente ist ein echter Game-Chang
 
 ### Wie füge ich mit Aspose.Words für Python Bilder von URLs ein?
 
- Du kannst den ... benutzen`add_remote_image` Methode zum Einfügen von Bildern aus URLs. Geben Sie einfach die URL und die gewünschte Position an.
+ Sie können die`add_remote_image` Methode zum Einfügen von Bildern aus URLs. Geben Sie einfach die URL und die gewünschte Position an.
 
 ### Kann ich den eingefügten Bildern Bildunterschriften hinzufügen?
 

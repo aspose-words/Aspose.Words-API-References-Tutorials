@@ -62,7 +62,7 @@ OdtSaveOptions saveOptions = new OdtSaveOptions { MeasureUnit = OdtSaveMeasureUn
 
  Ebben a példában a mértékegységet hüvelykre állítjuk be. Választhat más egységeket is, mint pl`OdtSaveMeasureUnit.Centimeters` vagy`OdtSaveMeasureUnit.Points` az Ön igényeitől függően.
 
-## 4. lépés: Alakítsa át a dokumentumot ODT-re
+## 4. lépés: Alakítsa át a dokumentumot ODT-vé
 
  Végül konvertáljuk a Word dokumentumot ODT formátumba a konfigurált formátum használatával`OdtSaveOptions`.
 
@@ -89,7 +89,7 @@ Az Aspose.Words for .NET egy hatékony könyvtár Word-dokumentumokkal való pro
  Igen, letöltheti az Aspose.Words for .NET ingyenes próbaverzióját a webhelyről[itt](https://releases.aspose.com/).
 
 ### Hol találom az Aspose.Words for .NET dokumentációját?
- Az Aspose.Words for .NET átfogó dokumentációját a következő címen érheti el[ez a link](https://reference.aspose.com/words/net/).
+ Az Aspose.Words for .NET átfogó dokumentációját a következő címen érheti el[ezt a linket](https://reference.aspose.com/words/net/).
 
 ### Hogyan kaphatok támogatást az Aspose.Words for .NET-hez?
- Támogatásért keresse fel az Aspose.Words fórumot a címen[ez a link](https://forum.aspose.com/c/words/8).
+ Támogatásért keresse fel az Aspose.Words fórumot a címen[ezt a linket](https://forum.aspose.com/c/words/8).

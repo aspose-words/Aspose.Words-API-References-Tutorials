@@ -118,7 +118,7 @@ Aspose.Words for .NET kullanarak Word belgelerindeki Smart Art çizimlerini gün
 Akıllı Sanat, Microsoft Word'de bilgi ve verileri temsil eden görsel olarak çekici diyagramlar ve grafikler oluşturmanıza olanak tanıyan bir özelliktir.
 
 ### Smart Art çizimlerini neden güncellemem gerekiyor?
-Smart Art'ın güncellenmesi, grafiklerin belgenizdeki en son değişiklikleri yansıtmasını sağlayarak doğruluğu ve sunumu geliştirir.
+Smart Art'ın güncellenmesi, grafiklerin belgenizdeki en son değişiklikleri yansıtmasını sağlayarak doğruluğu ve sunumu iyileştirir.
 
 ### Smart Art grafiklerini bir grup belgede güncelleyebilir miyim?
 Evet, Smart Art'ı birden çok belgede güncelleme işlemini, bir dosya koleksiyonu üzerinde yineleyerek ve aynı adımları uygulayarak otomatikleştirebilirsiniz.

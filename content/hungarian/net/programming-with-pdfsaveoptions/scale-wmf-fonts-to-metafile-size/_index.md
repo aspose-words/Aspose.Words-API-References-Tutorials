@@ -15,7 +15,7 @@ Amikor PDF fájlokkal dolgozik, különösen a WMF (Windows Metafile) grafikát 
 
 Mielőtt belemerülne a lépésekbe, győződjön meg arról, hogy rendelkezik a következőkkel:
 
-1. Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van az Aspose.Words könyvtár. Ha nem, akkor megteheti[töltse le itt](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van az Aspose.Words könyvtár. Ha nem, akkor lehet[töltse le itt](https://releases.aspose.com/words/net/).
 2. Fejlesztői környezet: Ez az oktatóanyag feltételezi, hogy be van állítva egy .NET fejlesztői környezet (például a Visual Studio), ahol írhat és futtathat C# kódot.
 3. A .NET programozás alapjai: Hasznos lesz az alapvető .NET programozási fogalmak és a C# szintaxis ismerete.
 4. Word dokumentum WMF grafikával: Szüksége lesz egy WMF grafikát tartalmazó Word dokumentumra. Használhatja saját dokumentumát, vagy létrehozhat egyet teszteléshez.
@@ -55,7 +55,7 @@ MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 };
 ```
 
- A`MetafileRenderingOptions` osztály lehetőséget biztosít a metafájlok (például a WMF) megjelenítésére. A beállítással`ScaleWmfFontsToMetafileSize` nak nek`false`, akkor utasítja az Aspose.Words-t, hogy ne méretezze át a betűtípusokat a metafájl méretének megfelelően, ami segíthet a PDF teljes méretének csökkentésében.
+ A`MetafileRenderingOptions` osztály lehetőséget biztosít a metafájlok (például a WMF) megjelenítésére. Beállítás által`ScaleWmfFontsToMetafileSize` hogy`false`, akkor utasítja az Aspose.Words-t, hogy ne méretezze át a betűtípusokat a metafájl méretének megfelelően, ami segíthet a PDF teljes méretének csökkentésében.
 
 ## 3. lépés: Állítsa be a PDF mentési beállításokat
 
@@ -69,7 +69,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- A`PdfSaveOptions` osztály lehetővé teszi különböző beállítások megadását a dokumentum PDF formátumban történő mentéséhez. A korábban konfigurált hozzárendelésével`MetafileRenderingOptions` hoz`MetafileRenderingOptions` tulajdona`PdfSaveOptions`, biztosítja, hogy a dokumentum a kívánt metafájl-megjelenítési beállításoknak megfelelően kerüljön mentésre.
+ A`PdfSaveOptions` osztály lehetővé teszi különböző beállítások megadását a dokumentum PDF formátumban történő mentéséhez. A korábban konfigurált hozzárendelésével`MetafileRenderingOptions` a`MetafileRenderingOptions` tulajdona`PdfSaveOptions`, biztosítja, hogy a dokumentum a kívánt metafájl-megjelenítési beállításoknak megfelelően kerüljön mentésre.
 
 ## 4. lépés: Mentse el a dokumentumot PDF formátumban
 

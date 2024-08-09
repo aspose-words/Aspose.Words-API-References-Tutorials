@@ -2,7 +2,7 @@
 title: Word 文書から VBA モジュールを複製する
 linktitle: Word 文書から VBA モジュールを複製する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用すると、Word ドキュメント内の VBA モジュールを簡単に複製できます。シームレスなドキュメント操作については、ステップ バイ ステップ ガイドに従ってください。
+description: Aspose.Words for .NET を使用すると、Word ドキュメント内の VBA モジュールを簡単に複製できます。シームレスなドキュメント操作については、当社のステップバイステップ ガイドに従ってください。
 type: docs
 weight: 10
 url: /ja/net/working-with-vba-macros/clone-vba-module/

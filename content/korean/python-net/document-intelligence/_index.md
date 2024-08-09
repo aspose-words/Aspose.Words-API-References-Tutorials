@@ -20,7 +20,7 @@ Document Intelligence는 AI와 머신러닝을 활용하여 문서에서 통찰�
 
 ## 문서 관리 역량 강화
 
-Python용 Aspose.Words로 Document Intelligence를 마스터함으로써 개발자는 문서 관리 기능을 강화할 수 있습니다. 자습서에서는 단계별 지침, 코드 샘플 및 실제 예제를 제공하여 개발자가 보다 스마트하고 데이터 기반 문서 처리 및 관리를 위해 Document Intelligence의 잠재력을 활용할 수 있도록 합니다. 이 튜토리얼을 활용하여 문서를 비즈니스의 귀중한 자산으로 바꿔보세요.
+Python용 Aspose.Words로 Document Intelligence를 마스터함으로써 개발자는 문서 관리 기능을 강화할 수 있습니다. 튜토리얼은 단계별 지침, 코드 샘플 및 실제 예제를 제공하여 개발자가 보다 스마트하고 데이터 기반 문서 처리 및 관리를 위해 Document Intelligence의 잠재력을 활용할 수 있도록 합니다. 이 튜토리얼을 활용하여 문서를 비즈니스의 귀중한 자산으로 바꿔보세요.
 
 ## Python 문서 인텔리전스 튜토리얼
 ### [마스터 문서 인텔리전스](./master-document-intelligence/)

@@ -14,9 +14,9 @@ Untuk bekerja dengan node di Aspose.Words untuk .NET, pengembang dapat memanfaat
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Gunakan Tipe Node](./use-node-type/) | Pelajari cara menggunakan tipe simpul untuk mengakses informasi spesifik dokumen dengan Aspose.Words untuk .NET. |
-| [Dapatkan Node Induk](./get-parent-node/) | Pelajari cara mendapatkan simpul induk dari elemen tertentu dengan Aspose.Words untuk .NET. |
-| [Dokumen Pemilik](./owner-document/) | Pelajari cara menggunakan dokumen pemilik di Aspose.Words untuk .NET. |
-| [Hitung Node Anak](./enumerate-child-nodes/) | Pelajari cara menghitung simpul anak dalam paragraf dengan Aspose.Words untuk .NET. |
-| [Akses yang Diketik](./typed-access/) | Pelajari cara menggunakan akses yang diketik untuk memanipulasi tabel di Aspose.Words untuk .NET. |
-| [Buat Dan Tambahkan Node Paragraf](./create-and-add-paragraph-node/) | Buat dan tambahkan simpul paragraf ke dokumen Word Anda dengan Aspose.Words untuk .NET. |
+| [Gunakan Tipe Node](./use-node-type/) | Temukan cara menguasai properti NodeType di Aspose.Words untuk .NET dengan panduan terperinci kami. Sempurna untuk pengembang yang ingin meningkatkan keterampilan pemrosesan dokumen mereka. |
+| [Dapatkan Node Induk](./get-parent-node/) | Pelajari cara mendapatkan simpul induk dari bagian dokumen menggunakan Aspose.Words untuk .NET dengan tutorial langkah demi langkah yang mendetail ini. |
+| [Dokumen Pemilik](./owner-document/) | Pelajari cara bekerja dengan Dokumen Pemilik di Aspose.Words untuk .NET. Panduan langkah demi langkah ini mencakup pembuatan dan manipulasi node dalam dokumen. |
+| [Hitung Node Anak](./enumerate-child-nodes/) | Pelajari cara menghitung simpul anak dalam dokumen Word menggunakan Aspose.Words untuk .NET dengan tutorial langkah demi langkah ini. |
+| [Akses yang Diketik](./typed-access/) | Pelajari cara menggunakan Akses yang Diketik di Aspose.Words untuk .NET untuk memanipulasi elemen dokumen seperti tabel dan baris dengan mudah. Panduan langkah demi langkah ini menyederhanakan alur kerja Anda. |
+| [Buat Dan Tambahkan Node Paragraf](./create-and-add-paragraph-node/) | Pelajari cara membuat dan menambahkan simpul paragraf dalam dokumen menggunakan Aspose.Words untuk .NET dengan tutorial langkah demi langkah yang mendetail ini. |

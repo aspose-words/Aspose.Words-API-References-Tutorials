@@ -52,7 +52,7 @@ Shape shape = builder.InsertHorizontalRule();
 
 ## Stap 3: Pas het horizontale regelformaat aan
 
- Toegang krijgen tot`HorizontalRuleFormat` eigenschap van de ingevoegde vorm om het uiterlijk van de horizontale lijn aan te passen.
+ Toegang tot de`HorizontalRuleFormat` eigenschap van de ingevoegde vorm om het uiterlijk van de horizontale lijn aan te passen.
 
 ```csharp
 HorizontalRuleFormat horizontalRuleFormat = shape.HorizontalRuleFormat;

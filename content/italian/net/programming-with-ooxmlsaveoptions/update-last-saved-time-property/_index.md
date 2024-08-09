@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-ooxmlsaveoptions/update-last-saved-time-property/
 ---
-## introduzione
+## Introduzione
 
 Ti sei mai chiesto come tenere traccia dell'ultima proprietà temporale salvata nei tuoi documenti Word a livello di codice? Se hai a che fare con più documenti e devi conservare i relativi metadati, aggiornare la proprietà dell'ultimo tempo salvato può essere molto utile. Oggi ti guiderò attraverso questo processo utilizzando Aspose.Words per .NET. Quindi allacciatevi le cinture e tuffiamoci!
 
@@ -75,7 +75,7 @@ Ciò salverà il documento con la proprietà aggiornata dell'ora dell'ultimo sal
 
 ## Conclusione
 
-E il gioco è fatto! Seguendo questi passaggi, puoi facilmente aggiornare la proprietà dell'ultimo tempo salvato dei tuoi documenti Word utilizzando Aspose.Words per .NET. Ciò è particolarmente utile per mantenere metadati accurati nei documenti, che possono essere cruciali per i sistemi di gestione dei documenti e varie altre applicazioni.
+Ed ecco qua! Seguendo questi passaggi, puoi facilmente aggiornare la proprietà dell'ultimo tempo salvato dei tuoi documenti Word utilizzando Aspose.Words per .NET. Ciò è particolarmente utile per mantenere metadati accurati nei documenti, che possono essere cruciali per i sistemi di gestione dei documenti e varie altre applicazioni.
 
 ## Domande frequenti
 

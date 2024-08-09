@@ -458,7 +458,7 @@ public int visitParagraphEnd(Paragraph paragraph) throws Exception {
 	for (Node cloneNode : splitComposite(paragraph))
 	{
 		Paragraph clonePara = (Paragraph) cloneNode;
-		//从克隆的段落中删除列表编号，但保留相同的缩进量
+		//从克隆的段落中删除列表编号，但保留缩进不变
 		//因为该段落应该是之前项目的一部分。
 		if (paragraph.isListItem())
 		{

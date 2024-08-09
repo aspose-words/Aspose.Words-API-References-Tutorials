@@ -144,4 +144,4 @@ I masz to! Właśnie nauczyłeś się formatować tabele i komórki z różnymi 
 Chociaż Aspose.Words nie obsługuje bezpośrednio obrazów jako tła komórek, możesz wstawić obraz do komórki i dostosować jego rozmiar, aby pokryć cały obszar komórki.
 
 ### Jak scalić komórki w tabeli?
- Możesz łączyć komórki za pomocą`CellFormat.HorizontalMerge`I`CellFormat.VerticalMerge` nieruchomości.
+ Możesz łączyć komórki za pomocą`CellFormat.HorizontalMerge`I`CellFormat.VerticalMerge` właściwości.

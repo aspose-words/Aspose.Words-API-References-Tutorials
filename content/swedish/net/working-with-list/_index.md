@@ -13,6 +13,6 @@ Ordbehandling med listor är en omfattande resurs som guidar dig genom ordbehand
  ## Handledningar
 | Titel | Beskrivning |
 | --- | --- |
-| [Starta om lista vid varje avsnitt](./restart-list-at-each-section/)  | Lär dig hur du återställer en numrerad lista till varje avsnitt i ett Word-dokument med Aspose.Words för .NET. |
-| [Ange listnivå](./specify-list-level/) | Lär dig hur du anger listnivån i ett Word-dokument med Aspose.Words för .NET. |
-| [Starta om listnummer](./restart-list-number/) | Lär dig hur du återställer numret på en lista i ett Word-dokument med Aspose.Words för .NET. |
+| [Starta om lista vid varje avsnitt](./restart-list-at-each-section/)  | Lär dig hur du startar om listor vid varje avsnitt i Word-dokument med Aspose.Words för .NET. Följ vår detaljerade steg-för-steg-guide för att hantera listor effektivt. |
+| [Ange listnivå](./specify-list-level/) | Lär dig hur du skapar numrerade och punktlistor på flera nivåer i Word-dokument med Aspose.Words för .NET. Steg-för-steg-guide ingår. Perfekt för .NET-utvecklare. |
+| [Starta om listnummer](./restart-list-number/) | Lär dig hur du startar om listnummer i Word-dokument med Aspose.Words för .NET. Denna detaljerade guide på 2000 ord täcker allt du behöver veta, från installation till avancerad anpassning. |

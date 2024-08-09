@@ -12,7 +12,7 @@ Header dan footer di dokumen Word memainkan peran penting dalam memberikan konte
 
 ## Memulai dengan Aspose.Words untuk Python
 
-Sebelum mendalami manipulasi header dan footer, Anda perlu menyiapkan Aspose.Words untuk Python. Ikuti langkah ini:
+Sebelum mendalami manipulasi header dan footer, Anda perlu menyiapkan Aspose.Words untuk Python. Ikuti langkah-langkah berikut:
 
 1. Instalasi: Instal Aspose.Words untuk Python menggunakan pip.
 

@@ -9,7 +9,7 @@ url: /nl/net/programming-with-pdfsaveoptions/escape-uri/
 ---
 ## Invoering
 
-Hallo daar! Heeft u zich ooit afgevraagd hoe u met URI's moet omgaan bij het opslaan van een Word-document als PDF met Aspose.Words voor .NET? Je bent op de juiste plek! Vandaag gaan we dieper in op het ontsnappen van URI's in PDF-documenten om ervoor te zorgen dat ze correct functioneren wanneer uw document wordt geconverteerd. Laten we deze reis samen stap voor stap ondernemen, zodat u elk concept gaandeweg begrijpt.
+Hé daar! Heeft u zich ooit afgevraagd hoe u met URI's moet omgaan bij het opslaan van een Word-document als PDF met Aspose.Words voor .NET? Je bent op de juiste plek! Vandaag gaan we dieper in op het ontsnappen van URI's in PDF-documenten om ervoor te zorgen dat ze correct functioneren wanneer uw document wordt geconverteerd. Laten we deze reis samen stap voor stap ondernemen, zodat u elk concept gaandeweg begrijpt.
 
 ## Vereisten
 
@@ -57,7 +57,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Laten we nu een hyperlink in het document invoegen. Deze hyperlink zal de focus zijn van ons URI-escape-proces.
 
 ```csharp
-builder.InsertHyperlink("Testlink", "https://www.google.com/search?q=aspose", false);
+builder.InsertHyperlink("Testlink", "https://www.google.com/search?q= aspose", false);
 ```
 
  In deze lijn,`"Testlink"` is de weergavetekst voor de hyperlink, en`"https://www.google.com/search?q= aspose"` is de URL. De`false` parameter geeft aan dat de link niet als hyperlink moet worden opgemaakt (dat wil zeggen dat hij niet onderstreept en blauw is).

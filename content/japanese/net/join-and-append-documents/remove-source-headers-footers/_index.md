@@ -98,4 +98,4 @@ Aspose.Words for .NET を使用して Word 文書からヘッダーとフッタ�
 はい、Aspose.Words for .NET を使用すると、ドキュメントの残りの書式を維持しながら、ヘッダーとフッターを削除できます。
 
 ### Aspose.Words for .NET のその他のリソースやサポートはどこで見つかりますか?
-訪問[Aspose.Words for .NET ドキュメント](https://reference.aspose.com/words/net/)詳細な API リファレンスと例については、こちらをご覧ください。
+訪問する[Aspose.Words for .NET ドキュメント](https://reference.aspose.com/words/net/)詳細な API リファレンスと例については、こちらをご覧ください。

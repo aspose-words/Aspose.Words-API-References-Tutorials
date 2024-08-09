@@ -2,7 +2,7 @@
 title: แปลง Docx เป็น Epub
 linktitle: คอนเสิร์ต Docx To Epub
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: แปลง DOCX เป็น EPUB ได้อย่างง่ายดายด้วย Aspose.Words สำหรับ .NET ปฏิบัติตามบทช่วยสอนของเราเพื่อการผสานรวมเข้ากับแอปพลิเคชัน .NET ของคุณได้อย่างราบรื่น
+description: แปลง DOCX เป็น EPUB ได้อย่างง่ายดายด้วย Aspose.Words สำหรับ .NET ปฏิบัติตามบทช่วยสอนของเราเพื่อการผสานรวมเข้ากับแอปพลิเคชัน .NET ของคุณอย่างราบรื่น
 type: docs
 weight: 10
 url: /th/net/basic-conversions/docx-to-epub/

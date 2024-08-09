@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-tables/get-table-position/
 ---
-## introduzione
+## Introduzione
 
 Ti sei mai trovato in difficoltà cercando di capire la posizione esatta di una tabella all'interno del tuo documento Word? Che sia per allineare perfettamente i tuoi contenuti o semplicemente per curiosità, conoscere la posizione di una tabella può essere molto utile. Oggi approfondiremo come ottenere la posizione della tabella utilizzando Aspose.Words per .NET. Lo suddivideremo in piccoli passaggi, quindi anche se sei un principiante, sarai in grado di seguirlo senza intoppi. Pronto a diventare un mago dei documenti Word? Iniziamo!
 
@@ -79,7 +79,7 @@ Una volta eseguito il codice, vedrai i dettagli della posizione della tabella st
 
 ## Conclusione
 
-E il gioco è fatto! Seguendo questi semplici passaggi, hai imparato come determinare la posizione di una tabella in un documento Word utilizzando Aspose.Words per .NET. Che sia per un perfetto allineamento o semplicemente per soddisfare la tua curiosità, sapere come ottenere la posizione di un tavolo può essere incredibilmente utile. Continua a sperimentare ed esplorare altre funzionalità di Aspose.Words per diventare un vero maestro dei documenti Word!
+Ed ecco qua! Seguendo questi semplici passaggi, hai imparato come determinare la posizione di una tabella in un documento Word utilizzando Aspose.Words per .NET. Che sia per un perfetto allineamento o semplicemente per soddisfare la tua curiosità, sapere come ottenere la posizione di un tavolo può essere incredibilmente utile. Continua a sperimentare ed esplorare altre funzionalità di Aspose.Words per diventare un vero maestro dei documenti Word!
 
 ## Domande frequenti
 

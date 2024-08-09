@@ -18,7 +18,7 @@ Belge otomasyonu dünyasında Aspose.Words for .NET, geliştiricilere Word belge
 - Geliştirme Ortamı: Visual Studio gibi bir IDE oyun alanınız olacak.
 - Temel C# Anlayışı: Her şeyi ayrıntılı olarak ele alacak olsak da, temel C# kavrayışı faydalı olacaktır.
 
-Yuvarlanmaya hazır mısın? Başlayalım!
+Yuvarlanmaya hazır mısın? Hadi başlayalım!
 
 ## Gerekli Ad Alanlarını İçe Aktarma
 
@@ -98,7 +98,7 @@ Aspose.Words for .NET, geliştiricilerin .NET kullanarak Word belgelerini progra
 
 ### Aspose.Words for .NET'i nasıl edinebilirim?
 
- Aspose.Words for .NET'i şu adresten indirebilirsiniz:[İnternet sitesi](https://releases.aspose.com/words/net/) . Ayrıca bir seçenek de var[ücretsiz deneme](https://releases.aspose.com/) özelliklerini keşfetmek istiyorsanız.
+ Aspose.Words for .NET'i şu adresten indirebilirsiniz:[web sitesi](https://releases.aspose.com/words/net/) . Ayrıca bir seçenek de var[ücretsiz deneme](https://releases.aspose.com/) özelliklerini keşfetmek istiyorsanız.
 
 ### Aspose.Words for .NET'i herhangi bir .NET uygulamasıyla kullanabilir miyim?
 

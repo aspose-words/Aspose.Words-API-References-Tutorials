@@ -2,7 +2,7 @@
 title: Sajátítsa el a dokumentumintelligenciát
 linktitle: Sajátítsa el a dokumentumintelligenciát
 second_title: Aspose.Words Python Document Management API
-description: Dokumentum-intelligencia elsajátítása az Aspose.Words for Python segítségével. A munkafolyamatok automatizálása, az adatok elemzése és a dokumentumok hatékony feldolgozása. Kezd el most!
+description: Dokumentum-intelligencia elsajátítása az Aspose.Words for Python segítségével. A munkafolyamatok automatizálása, az adatok elemzése és a dokumentumok hatékony feldolgozása. Kezdje el most!
 type: docs
 weight: 10
 url: /hu/python-net/document-intelligence/master-document-intelligence/
@@ -138,7 +138,7 @@ doc.save("output.docx")
 
 ## Python-könyvtárak kihasználása a dokumentumintelligencia érdekében
 
-### NLP-technikák a dokumentumelemzéshez
+### NLP technikák a dokumentumelemzéshez
 
 A természetes nyelvi feldolgozó (NLP) könyvtárak erejét kombinálja az Aspose.Words-szel, hogy mélyreható dokumentumelemzést, hangulatelemzést és entitásfelismerést végezzen.
 

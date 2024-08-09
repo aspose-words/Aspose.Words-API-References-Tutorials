@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 Förklaring:
- Här,`dataDir` håller sökvägen till din dokumentkatalog. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen på ditt system.
+ Här,`dataDir` håller sökvägen till din dokumentkatalog. Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen på ditt system.
 
 ## Steg 2: Ladda Word-dokumentet
 
@@ -96,7 +96,7 @@ Aspose.Words för .NET är ett kraftfullt bibliotek som låter utvecklare skapa,
  Ja, men det kommer att ha vissa begränsningar. För full funktionalitet kan du köpa en licens[här](https://purchase.aspose.com/buy) eller få en tillfällig licens[här](https://purchase.aspose.com/temporary-license/).
 
 ### Varför visas inte mina teckensnitt korrekt i HTML?
- Detta kan hända om teckensnitten inte löses korrekt under konverteringen. Använder sig av`ResolveFontNames = true` i`HtmlSaveOptions` kan hjälpa till att lösa det här problemet.
+ Detta kan hända om teckensnitten inte löses korrekt under konverteringen. Använder`ResolveFontNames = true` i`HtmlSaveOptions` kan hjälpa till att lösa det här problemet.
 
 ### Var kan jag få support för Aspose.Words för .NET?
  Du kan få stöd från[Aspose.Words supportforum](https://forum.aspose.com/c/words/8).

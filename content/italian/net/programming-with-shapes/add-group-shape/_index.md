@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-shapes/add-group-shape/
 ---
-## introduzione
+## Introduzione
 
 Creare documenti complessi con ricchi elementi visivi a volte può essere un compito arduo, soprattutto quando si ha a che fare con forme di gruppo. Ma non temere! Aspose.Words per .NET semplifica questo processo, rendendolo facile come una torta. In questo tutorial ti guideremo attraverso i passaggi per aggiungere forme di gruppo ai tuoi documenti Word. Pronti a tuffarvi? Iniziamo!
 
@@ -113,7 +113,7 @@ Infine, salva il documento nella directory specificata.
 doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");
 ```
 
-il gioco è fatto! Il tuo documento con forme di gruppo è pronto.
+Ed ecco qua! Il tuo documento con forme di gruppo è pronto.
 
 ## Conclusione
 

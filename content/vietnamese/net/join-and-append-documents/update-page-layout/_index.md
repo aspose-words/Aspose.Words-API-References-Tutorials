@@ -15,7 +15,7 @@ Này! Nếu bạn đã từng làm việc với các tài liệu Word theo chư�
 
 Trước khi chúng ta bắt đầu, hãy đảm bảo bạn đã chuẩn bị sẵn những điều sau:
 
-1.  Aspose.Words for .NET: Thư viện này rất cần thiết để thao tác các tài liệu Word theo chương trình. Nếu bạn chưa có, bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Thư viện này rất cần thiết để thao tác các tài liệu Word theo chương trình. Nếu bạn chưa có, bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
    
 2. Visual Studio: Bạn sẽ cần một IDE để viết và chạy mã .NET của mình. Visual Studio là một lựa chọn phổ biến.
 

@@ -1,6 +1,6 @@
 ---
-title: Açık Tip Özellikleri
-linktitle: Açık Tip Özellikleri
+title: Açık Tip Özellikler
+linktitle: Açık Tip Özellikler
 second_title: Aspose.Words Belge İşleme API'si
 description: Bu ayrıntılı, adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerinde OpenType özelliklerini nasıl etkinleştireceğinizi öğrenin.
 type: docs
@@ -9,7 +9,7 @@ url: /tr/net/enable-opentype-features/open-type-features/
 ---
 ## giriiş
 
-Aspose.Words for .NET'i kullanarak OpenType özellikleri dünyasına dalmaya hazır mısınız? Kemerlerinizi bağlayın, çünkü yalnızca Word belgelerinizi geliştirmekle kalmayacak, aynı zamanda sizi bir Aspose.Words uzmanı yapacak ilgi çekici bir yolculuğa çıkmak üzereyiz. Başlayalım!
+Aspose.Words for .NET'i kullanarak OpenType özellikleri dünyasına dalmaya hazır mısınız? Kemerlerinizi bağlayın, çünkü yalnızca Word belgelerinizi geliştirmekle kalmayacak, aynı zamanda sizi bir Aspose.Words uzmanı yapacak ilgi çekici bir yolculuğa çıkmak üzereyiz. Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -90,7 +90,7 @@ Bu kod satırı, HarfBuzz tarafından etkinleştirilen OpenType özelliklerini b
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak Word belgenizdeki OpenType özelliklerini başarıyla etkinleştirdiniz. Bu adımları izleyerek gelişmiş tipografik yeteneklerin kilidini açarak belgelerinizin profesyonel ve şık görünmesini sağlayabilirsiniz.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak Word belgenizdeki OpenType özelliklerini başarıyla etkinleştirdiniz. Bu adımları izleyerek gelişmiş tipografik yeteneklerin kilidini açarak belgelerinizin profesyonel ve şık görünmesini sağlayabilirsiniz.
 
 Ama burada durma! Aspose.Words'ün diğer özelliklerini keşfedin ve belgelerinizi nasıl daha da geliştirebileceğinizi görün. Unutmayın, pratik mükemmelleştirir; bu nedenle denemeye ve öğrenmeye devam edin.
 

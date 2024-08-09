@@ -16,7 +16,7 @@ Ebben az útmutatóban megvizsgáljuk, hogyan lehet érzékeny információkat t
 
 ## Fejlesztői környezet beállítása
 
-Mielőtt elkezdenénk dolgozni az Aspose.Words for Java-val, be kell állítanunk a fejlesztői környezetünket. Kovesd ezeket a lepeseket:
+Mielőtt elkezdenénk dolgozni az Aspose.Words for Java-val, be kell állítanunk a fejlesztői környezetünket. Kövesse az alábbi lépéseket:
 
 1.  Az Aspose.Words for Java letöltése és telepítése: Látogassa meg[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) az Aspose.Words for Java legújabb verziójának letöltéséhez.
 

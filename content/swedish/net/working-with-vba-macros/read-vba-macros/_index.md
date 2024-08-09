@@ -45,7 +45,7 @@ Ställ in sökvägen till din katalog så här:
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där dina Word-dokument finns. Det är här det roliga börjar!
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där dina Word-dokument finns. Det är här det roliga börjar!
 
 ## Steg 2: Ladda Word-dokumentet
 
@@ -103,7 +103,7 @@ Utdata från ovanstående kod kommer att visa VBA-makrokoden för varje modul i 
 
 ### Exempel utgång
 
-Du kan se utdata så här:
+Du kanske ser utdata så här:
 
 ```
 Sub HelloWorld()

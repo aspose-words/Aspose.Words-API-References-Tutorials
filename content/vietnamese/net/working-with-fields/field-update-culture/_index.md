@@ -38,7 +38,7 @@ Bây giờ bạn đã thiết lập xong, hãy chia nhỏ quá trình định c�
 
 ## Bước 1: Thiết lập tài liệu và DocumentBuilder của bạn
 
- Trước tiên, bạn cần tạo một tài liệu mới và một`DocumentBuilder` sự vật. Các`DocumentBuilder` là một lớp tiện dụng cho phép bạn xây dựng và sửa đổi tài liệu Word một cách dễ dàng.
+ Trước tiên, bạn cần tạo một tài liệu mới và một`DocumentBuilder` sự vật. các`DocumentBuilder` là một lớp tiện dụng cho phép bạn xây dựng và sửa đổi tài liệu Word một cách dễ dàng.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu.
@@ -49,7 +49,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Trong bước này, bạn chỉ định thư mục nơi bạn muốn lưu tài liệu của mình. Các`Document` lớp khởi tạo một tài liệu Word mới và`DocumentBuilder` lớp giúp bạn chèn và định dạng nội dung.
+ Trong bước này, bạn chỉ định thư mục nơi bạn muốn lưu tài liệu của mình. các`Document` lớp khởi tạo một tài liệu Word mới và`DocumentBuilder` lớp giúp bạn chèn và định dạng nội dung.
 
 ## Bước 2: Chèn trường thời gian
 

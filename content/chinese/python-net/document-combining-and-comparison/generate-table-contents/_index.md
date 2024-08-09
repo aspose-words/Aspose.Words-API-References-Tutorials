@@ -1,6 +1,6 @@
 ---
-title: 为 Word 文档制作全面的目录
-linktitle: 为 Word 文档制作全面的目录
+title: 为 Word 文档制作综合目录
+linktitle: 为 Word 文档制作综合目录
 second_title: Aspose.Words Python 文档管理 API
 description: 使用 Aspose.Words for Python 制作易于阅读的目录。学习无缝生成、自定义和更新文档结构。
 type: docs

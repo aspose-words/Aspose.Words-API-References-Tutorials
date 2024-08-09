@@ -26,7 +26,7 @@ Bir belgeye web uzantısı görev bölmesi eklemek için şu adımları izleyin:
 Document doc = new Document();
 ```
 
-##  Oluşturmak`TaskPane` instance and add it to the document's web extension task panes:
+##  Bir oluştur`TaskPane` instance and add it to the document's web extension task panes:
 
 ```java
 TaskPane taskPane = new TaskPane();

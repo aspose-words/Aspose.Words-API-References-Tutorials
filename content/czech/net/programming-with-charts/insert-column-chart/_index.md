@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-charts/insert-column-chart/
 ---
-## Úvod
+## Zavedení
 
 V tomto tutoriálu se naučíte, jak vylepšit své dokumenty Word vložením vizuálně atraktivních sloupcových grafů pomocí Aspose.Words for .NET. Sloupcové grafy jsou efektivní pro vizualizaci datových trendů a srovnání, díky čemuž jsou vaše dokumenty informativnější a poutavější.
 
@@ -16,7 +16,7 @@ V tomto tutoriálu se naučíte, jak vylepšit své dokumenty Word vložením vi
 Než začneme, ujistěte se, že máte následující:
 
 - Základní znalost programování v C# a prostředí .NET.
--  Aspose.Words for .NET nainstalované ve vašem vývojovém prostředí. Můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET nainstalované ve vašem vývojovém prostředí. Můžete si jej stáhnout[zde](https://releases.aspose.com/words/net/).
 - Textový editor nebo integrované vývojové prostředí (IDE), jako je Visual Studio.
 
 ## Import jmenných prostorů
@@ -52,7 +52,7 @@ Chart chart = shape.Chart;
 
 ## Krok 3: Přidejte data do grafu
 
- Přidejte datové řady do grafu pomocí`Series` majetek z`Chart` objekt.
+ Přidejte datové řady do grafu pomocí`Series` vlastnictvím`Chart` objekt.
 
 ```csharp
 chart.Series.Add("Aspose Series 1", new string[] { "Category 1", "Category 2" }, new double[] { 1, 2 });
@@ -68,7 +68,7 @@ doc.Save(dataDir + "InsertColumnChart.docx");
 
 ## Závěr
 
-Gratulujeme! Úspěšně jste se naučili, jak vložit sloupcový graf do dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato dovednost může výrazně zvýšit vizuální přitažlivost a informační hodnotu vašich dokumentů, díky čemuž bude prezentace dat jasnější a účinnější.
+Gratuluji! Úspěšně jste se naučili, jak vložit sloupcový graf do dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato dovednost může výrazně zvýšit vizuální přitažlivost a informační hodnotu vašich dokumentů, díky čemuž bude prezentace dat jasnější a účinnější.
 
 ## FAQ
 

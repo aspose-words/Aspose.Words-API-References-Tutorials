@@ -1,6 +1,6 @@
 ---
-title: Evaluar la condición IF
-linktitle: Evaluar la condición IF
+title: Evaluar condición IF
+linktitle: Evaluar condición IF
 second_title: API de procesamiento de documentos Aspose.Words
 description: Aprenda a evaluar condiciones IF en documentos de Word usando Aspose.Words para .NET. Esta guía paso a paso cubre la inserción, la evaluación y la visualización de resultados.
 type: docs
@@ -92,7 +92,7 @@ Un campo SI es un campo de Word que le permite insertar lógica condicional en s
 ### ¿Cómo inserto un campo SI en un documento?
  Puede insertar un campo SI usando el`InsertField` método de la`DocumentBuilder` clase, especificando la condición que desea evaluar.
 
-###  Que hace`EvaluateCondition` method do?
+###  ¿Qué hace?`EvaluateCondition` method do?
  El`EvaluateCondition` El método evalúa la condición especificada en un campo IF y devuelve el resultado, indicando si la condición es verdadera o falsa.
 
 ### ¿Puedo utilizar condiciones complejas con el campo IF?

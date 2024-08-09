@@ -48,7 +48,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## الخطوة 3: التعامل مع محتوى المستند
 
- استخدم ال`DocumentBuilder` كائن لمعالجة المحتوى حسب الحاجة. على سبيل المثال، قم بإضافة نص أو تنسيق.
+ استخدم`DocumentBuilder` كائن لمعالجة المحتوى حسب الحاجة. على سبيل المثال، قم بإضافة نص أو تنسيق.
 
 ```csharp
 builder.Writeln("Insert your text or content manipulation code here!");

@@ -41,7 +41,7 @@ doc.track_revisions = True
 
 ## Aggiunta di revisioni al documento
 
-Quando vengono apportate modifiche al documento, Aspose.Words può tracciarle automaticamente come revisioni. Ad esempio, se vogliamo sostituire una parola specifica, possiamo farlo tenendo traccia del cambiamento:
+Quando vengono apportate modifiche al documento, Aspose.Words può monitorarle automaticamente come revisioni. Ad esempio, se vogliamo sostituire una parola specifica, possiamo farlo tenendo traccia del cambiamento:
 
 ```python
 run = doc.get_child_nodes(asposewords.NodeType.RUN, True)[0]

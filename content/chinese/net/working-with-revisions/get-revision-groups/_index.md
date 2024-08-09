@@ -2,86 +2,103 @@
 title: 获取修订组
 linktitle: 获取修订组
 second_title: Aspose.Words 文档处理 API
-description: 使用 Aspose.Words for .NET 获取 Word 文档中的修订组。
+description: 通过这份全面的分步指南，了解如何使用 Aspose.Words for .NET 从 Word 文档中检索修订组。非常适合文档管理。
 type: docs
 weight: 10
 url: /zh/net/working-with-revisions/get-revision-groups/
 ---
+## 介绍
 
-在本分步指南中，我们将告诉您如何使用 Aspose.Words for .NET 获取 Word 文档中的修订组。我们将为您提供完整的源代码并向您展示如何格式化 markdown 输出。
+在动态的文档处理世界中，跟踪 Word 文档中的更改和修订至关重要。Aspose.Words for .NET 提供了一组强大的功能来无缝处理此类要求。在本教程中，我们将引导您完成使用 Aspose.Words for .NET 从 Word 文档中检索修订组的过程。所以，让我们深入研究并简化您的文档管理任务！
 
-## 步骤 1：加载文档
+## 先决条件
 
-第一步是上传包含修订内容的文档。
+在开始之前，请确保您已满足以下先决条件：
+
+1.  Aspose.Words for .NET 库：请确保您已下载并安装了最新版本的 Aspose.Words for .NET。您可以下载它[这里](https://releases.aspose.com/words/net/).
+2. 开发环境：设置.NET 开发环境（例如 Visual Studio）。
+3. C# 基础知识：熟悉 C# 编程将会有所帮助。
+
+## 导入命名空间
+
+首先，您需要在 C# 项目中导入必要的命名空间。此步骤可确保您可以访问 Aspose.Words for .NET 提供的类和方法。
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Revision;
 ```
 
-## 第 2 步：浏览修订组
+现在，让我们将从 Word 文档中获取修订组的过程分解为易于遵循的步骤。
 
-接下来，我们将循环遍历文档中存在的修订组并显示其详细信息，例如作者、修订类型和修订文本。
+## 步骤 1：初始化文档
+
+第一步是初始化`Document`对象，其中包含 Word 文档的路径。此对象将允许您访问和操作文档的内容。
 
 ```csharp
-foreach(RevisionGroup group in doc.Revisions.Groups)
+//文档目录的路径。
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Revisions.docx");
+```
+
+## 第 2 步：访问修订组
+
+接下来，您将访问文档中的修订组。修订组有助于组织不同作者所做的更改。
+
+```csharp
+foreach (RevisionGroup group in doc.Revisions.Groups)
 {
-     Console.WriteLine("{0}, {1}:", group.Author, group.RevisionType);
-     Console.WriteLine(group.Text);
+    Console.WriteLine("{0}, {1}:", group.Author, group.RevisionType);
+    Console.WriteLine(group.Text);
 }
 ```
 
+## 步骤 3：迭代修订组
 
-### 使用 Aspose.Words for .NET 获取修订组的示例源代码
-
-以下是使用 Aspose.Words for .NET 获取文档中的修订组的完整源代码：
+在此步骤中，您将遍历每个修订组以检索详细信息，例如修订的作者、修订的类型以及与每个修订相关的文本。
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
-
-foreach(RevisionGroup group in doc.Revisions.Groups)
+foreach (RevisionGroup group in doc.Revisions.Groups)
 {
-	 Console.WriteLine("{0}, {1}:", group.Author, group.RevisionType);
-	 Console.WriteLine(group.Text);
+    Console.WriteLine("{0}, {1}:", group.Author, group.RevisionType);
+    Console.WriteLine(group.Text);
+}
+```
+
+## 步骤 4：显示修订信息
+
+最后，显示收集到的修订信息。这将帮助您了解谁做了哪些更改以及这些更改的性质。
+
+```csharp
+foreach (RevisionGroup group in doc.Revisions.Groups)
+{
+    Console.WriteLine("{0}, {1}:", group.Author, group.RevisionType);
+    Console.WriteLine(group.Text);
 }
 ```
 
 ## 结论
 
-在本教程中，我们学习了如何使用 Aspose.Words for .NET 获取 Word 文档中的修订组。我们按照步骤加载文档并浏览审阅组，显示作者和审阅类型等详细信息。现在，您可以应用这些知识使用 Aspose.Words for .NET 分析您自己的 Word 文档的修订。
+使用 Aspose.Words for .NET 从 Word 文档中检索修订组是一个简单的过程。按照本教程中概述的步骤，您可以轻松管理和跟踪文档中的更改。无论您是在合作项目还是只是关注编辑，此功能无疑都将证明是无价的。
 
-### 常见问题解答
+## 常见问题解答
 
-#### 问：如何在 Aspose.Words for .NET 中上传文档？
+### 我可以过滤特定作者的修订吗？
 
-答：使用`Document` Aspose.Words for .NET 类用于从文件加载文档。您可以指定完整的文档路径。
+是的，您可以通过勾选`Author`每个人的财产`RevisionGroup`在迭代过程中。
 
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
+### 如何获得 Aspose.Words for .NET 的免费试用版？
 
-#### 问：如何在 Aspose.Words for .NET 中浏览文档中的修订组？
+您可以免费试用 Aspose.Words for .NET[这里](https://releases.aspose.com/).
 
-答：使用`Groups`文档的属性`Revisions`对象来获取修订组的集合。然后，您可以使用循环来遍历每个审阅组。
+### Aspose.Words for .NET 还提供哪些其他功能来管理修订？
 
-```csharp
-foreach(RevisionGroup group in doc.Revisions.Groups)
-{
-     //在此处理每个审核组
-}
-```
+ Aspose.Words for .NET 提供接受或拒绝修订、比较文档等功能。查看[文档](https://reference.aspose.com/words/net/)了解详细信息。
 
-#### 问：如何在 Aspose.Words for .NET 中获取评审组的作者？
+### 是否可以获得对 Aspose.Words for .NET 的支持？
 
-答：使用`Author`的财产`RevisionGroup`对象来获取修订组的作者。
+是的，您可以从 Aspose 社区获得支持[这里](https://forum.aspose.com/c/words/8).
 
-```csharp
-string author = group.Author;
-```
+### 如何购买 Aspose.Words for .NET？
 
-#### 问：如何在 Aspose.Words for .NET 中获取修订组的修订类型？
-
-答：使用`RevisionType`的财产`RevisionGroup`对象来获取组的修订类型。
-
-```csharp
-string revisionType = group.RevisionType;
-```
+您可以购买 Aspose.Words for .NET[这里](https://purchase.aspose.com/buy).

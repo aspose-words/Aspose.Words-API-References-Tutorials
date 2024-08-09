@@ -11,7 +11,7 @@ url: /tr/java/table-processing/creating-tables-rows/
 ## giriiş
 Belgelerde tablolar ve satırlar oluşturmak belge işlemenin temel bir unsurudur ve Aspose.Words for Java bu görevi her zamankinden daha kolay hale getirir. Bu adım adım kılavuzda, belgelerinizde tablolar ve satırlar oluşturmak için Aspose.Words for Java'yı nasıl kullanabileceğinizi keşfedeceğiz. İster rapor oluşturuyor olun, ister fatura oluşturuyor olun, ister yapılandırılmış veri sunumu gerektiren herhangi bir belge oluşturuyor olun, bu kılavuz ihtiyacınızı karşılayacaktır.
 
-## Sahneyi hazırlamak
+## Sahneyi Ayarlamak
  En ince ayrıntılara dalmadan önce Aspose.Words for Java ile çalışmak için gerekli kuruluma sahip olduğunuzdan emin olalım. Kütüphaneyi indirip yüklediğinizden emin olun. Henüz yapmadıysanız indirme bağlantısını bulabilirsiniz[Burada](https://releases.aspose.com/words/java/).
 
 ## Bina Masaları
@@ -89,13 +89,13 @@ table.getRows().removeAt(1);
 
 ## SSS
 ### Tablonun kenarlık rengini nasıl ayarlarım?
- Bir tablonun kenarlık rengini aşağıdaki komutu kullanarak ayarlayabilirsiniz:`Table` sınıfın`setBorders` yöntem. İşte bir örnek:
+ Bir tablonun kenarlık rengini aşağıdaki komutu kullanarak ayarlayabilirsiniz:`Table` sınıfın`setBorders` Yöntem. İşte bir örnek:
 ```java
 table.setBorders(Color.BLUE, LineStyle.SINGLE, 1.0);
 ```
 
 ### Bir tablodaki hücreleri birleştirebilir miyim?
- Evet, kullanarak bir tablodaki hücreleri birleştirebilirsiniz.`Cell` sınıfın`getCellFormat().setHorizontalMerge` yöntem. Örnek:
+ Evet, kullanarak bir tablodaki hücreleri birleştirebilirsiniz.`Cell` sınıfın`getCellFormat().setHorizontalMerge` Yöntem. Örnek:
 ```java
 Cell firstCell = table.getRows().get(0).getCells().get(0);
 firstCell.getCellFormat().setHorizontalMerge(CellMerge.FIRST);
@@ -115,7 +115,7 @@ Evet, bir veritabanından verileri içe aktarabilir ve belgenizdeki bir tabloyu 
  Tablo hücrelerindeki metni şuraya erişerek biçimlendirebilirsiniz:`Run` nesneleri ve gerektiği gibi biçimlendirmeyi uygulayın. Örneğin yazı tipi boyutunu veya stilini değiştirmek.
 
 ### Belgeyi farklı formatlara aktarabilir miyim?
- Aspose.Words for Java, belgenizi DOCX, PDF, HTML ve daha fazlasını içeren çeşitli formatlarda kaydetmenize olanak tanır. Kullan`Document.save` İstenilen formatı belirtme yöntemini kullanın.
+ Aspose.Words for Java, belgenizi DOCX, PDF, HTML ve daha fazlasını içeren çeşitli formatlarda kaydetmenize olanak tanır. Kullanın`Document.save` İstenilen formatı belirtme yöntemini kullanın.
 
 ## Çözüm
 Aspose.Words for Java kullanarak belgelerde tablolar ve satırlar oluşturmak, belge otomasyonu için güçlü bir özelliktir. Bu kapsamlı kılavuzda sağlanan kaynak kodu ve rehberlik sayesinde, Java uygulamalarınızda Aspose.Words for Java'nın potansiyelinden yararlanmak için iyi bir donanıma sahipsiniz. İster raporlar, ister belgeler, ister sunumlar oluşturuyor olun, yapılandırılmış veri sunumu yalnızca bir kod parçacığı kadar yakınınızdadır.

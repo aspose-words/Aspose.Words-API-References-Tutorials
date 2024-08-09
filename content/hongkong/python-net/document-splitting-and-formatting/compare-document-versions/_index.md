@@ -29,7 +29,7 @@ url: /zh-hant/python-net/document-splitting-and-formatting/compare-document-vers
 
 ## 載入文件版本
 
-要比較文件版本，您需要將文件載入到記憶體中。就是這樣：
+要比較文件版本，您需要將文件載入到記憶體中。方法如下：
 
 ```python
 doc1_path = "path/to/first/document.docx"

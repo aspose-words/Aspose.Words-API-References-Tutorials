@@ -232,7 +232,7 @@ for (Shape shape : (Iterable<Shape>) shapes) {
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez appris à extraire le contenu de documents à l'aide d'Aspose.Words pour Java. Ce guide couvrait diverses techniques d'extraction, notamment le contenu entre les nœuds de niveau bloc, les signets, les plages de commentaires, les paragraphes, etc. Vous êtes désormais équipé pour gérer efficacement l’extraction du contenu des documents dans vos applications Java.
+Félicitations! Vous avez appris à extraire le contenu de documents à l'aide d'Aspose.Words pour Java. Ce guide couvrait diverses techniques d'extraction, notamment le contenu entre les nœuds de niveau bloc, les signets, les plages de commentaires, les paragraphes, etc. Vous êtes désormais équipé pour gérer efficacement l’extraction du contenu des documents dans vos applications Java.
 
 ## FAQ
 

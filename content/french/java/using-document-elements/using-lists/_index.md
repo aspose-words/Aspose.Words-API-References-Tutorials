@@ -8,7 +8,7 @@ weight: 18
 url: /fr/java/using-document-elements/using-lists/
 ---
 
-Dans ce didacticiel complet, nous explorerons comment utiliser efficacement les listes dans Aspose.Words for Java, une API puissante permettant de travailler par programmation avec des documents Microsoft Word. Les listes sont essentielles pour structurer et organiser le contenu de vos documents. Nous aborderons deux aspects clés du travail avec les listes : le redémarrage des listes à chaque section et la spécification des niveaux de liste. Allons-y !
+Dans ce didacticiel complet, nous explorerons comment utiliser efficacement les listes dans Aspose.Words for Java, une API puissante permettant de travailler avec des documents Microsoft Word par programmation. Les listes sont essentielles pour structurer et organiser le contenu de vos documents. Nous aborderons deux aspects clés du travail avec les listes : le redémarrage des listes à chaque section et la spécification des niveaux de liste. Allons-y !
 
 ## Introduction à Aspose.Words pour Java
 
@@ -214,7 +214,7 @@ En suivant ces étapes, vous pouvez créer des documents avec des niveaux de lis
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez appris à utiliser efficacement les listes dans Aspose.Words for Java. Les listes sont cruciales pour organiser et présenter le contenu de vos documents. Que vous ayez besoin de redémarrer des listes à chaque section ou de spécifier des niveaux de liste, Aspose.Words for Java fournit les outils dont vous avez besoin pour créer des documents d'aspect professionnel.
+Félicitations! Vous avez appris à utiliser efficacement les listes dans Aspose.Words for Java. Les listes sont cruciales pour organiser et présenter le contenu de vos documents. Que vous ayez besoin de redémarrer des listes à chaque section ou de spécifier des niveaux de liste, Aspose.Words for Java fournit les outils dont vous avez besoin pour créer des documents d'aspect professionnel.
 
 Vous pouvez désormais utiliser ces fonctionnalités en toute confiance pour améliorer vos tâches de génération et de formatage de documents. Si vous avez des questions ou avez besoin d'aide supplémentaire, n'hésitez pas à contacter le[Forum communautaire Aspose](https://forum.aspose.com/) pour le soutien.
 

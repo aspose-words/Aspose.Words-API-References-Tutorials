@@ -100,7 +100,7 @@ Los encabezados y pies de página de las secciones anteriores normalmente se con
 ### ¿Existe un límite en la cantidad de secciones que puedo eliminar en un documento?
 No, Aspose.Words puede manejar documentos con una gran cantidad de secciones.
 
-### ¿Puedo automatizar este proceso para múltiples documentos?
+### ¿Puedo automatizar este proceso para varios documentos?
 ¡Absolutamente! Puede crear una secuencia de comandos para iterar sobre varios documentos y aplicar este método.
 
 ### ¿La eliminación de saltos de sección afecta el formato del documento?

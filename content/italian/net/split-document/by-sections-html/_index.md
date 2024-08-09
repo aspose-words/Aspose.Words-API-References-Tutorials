@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/split-document/by-sections-html/
 ---
-## introduzione
+## Introduzione
 
 Ti stai immergendo nel mondo dell'automazione dei documenti e vuoi imparare come dividere un documento Word per sezioni in HTML utilizzando Aspose.Words per .NET? Sei nel posto giusto! Questa guida è realizzata appositamente per te, ricca di passaggi dettagliati, spiegazioni accattivanti e un tono amichevole. Rimbocchiamoci le maniche e iniziamo questo entusiasmante viaggio!
 
@@ -72,7 +72,7 @@ Con le nostre opzioni di salvataggio configurate, il passaggio finale è salvare
 doc.Save(dataDir + "SplitDocument.BySectionsHtml.html", options);
 ```
 
-E il gioco è fatto! Hai diviso con successo un documento Word per sezioni in HTML utilizzando Aspose.Words per .NET.
+Ed ecco qua! Hai diviso con successo un documento Word per sezioni in HTML utilizzando Aspose.Words per .NET.
 
 ## Conclusione
 

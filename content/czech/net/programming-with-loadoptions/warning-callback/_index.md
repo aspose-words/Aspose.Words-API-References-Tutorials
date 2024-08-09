@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-loadoptions/warning-callback/
 ---
-## Úvod
+## Zavedení
 
 Přemýšleli jste někdy, jak zachytit a zpracovat varování při programové práci s dokumenty Wordu? Pomocí Aspose.Words for .NET můžete implementovat zpětné volání s varováním pro řešení potenciálních problémů, které nastanou během zpracování dokumentu. Tento výukový program vás provede procesem krok za krokem a zajistí, že budete mít komplexní znalosti o tom, jak nakonfigurovat a používat funkci zpětného volání upozornění ve vašich projektech.
 
@@ -17,7 +17,7 @@ Než se pustíte do implementace, ujistěte se, že máte následující předpo
 
 - Základní znalost programování v C#
 - Visual Studio nainstalované na vašem počítači
--  Knihovna Aspose.Words for .NET (můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/))
+-  Knihovna Aspose.Words for .NET (můžete si ji stáhnout[zde](https://releases.aspose.com/words/net/))
 -  Platná licence pro Aspose.Words (pokud ji nemáte, získejte a[dočasná licence](https://purchase.aspose.com/temporary-license/))
 
 ## Importovat jmenné prostory

@@ -13,7 +13,7 @@ url: /zh/net/remove-content/remove-footers/
 
 ## 先决条件
 
-在深入讨论细节之前，让我们确保您已准备好所需的一切：
+在深入讨论细节之前，让我们先确保您已准备好所需的一切：
 
 - Aspose.Words for .NET：如果你还没有，请从[这里](https://releases.aspose.com/words/net/).
 - .NET Framework：确保您已安装.NET 框架。

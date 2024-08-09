@@ -2,7 +2,7 @@
 title: 在 Aspose.Words for Java 中格式化文檔
 linktitle: 格式化文檔
 second_title: Aspose.Words Java 文件處理 API
-description: 透過我們的綜合指南了解在 Aspose.Words for Java 中格式化文件的技巧。探索強大的功能並提高您的文件處理技能。
+description: 透過我們的綜合指南了解在 Aspose.Words for Java 中格式化文件的藝術。探索強大的功能並提高您的文件處理技能。
 type: docs
 weight: 29
 url: /zh-hant/java/document-manipulation/formatting-documents/

@@ -15,7 +15,7 @@ url: /ko/net/apply-license/apply-license-from-stream/
 
 손을 더럽히기 전에 필요한 모든 것이 있는지 확인합시다.
 
-1.  .NET용 Aspose.Words: 라이브러리가 설치되어 있는지 확인하세요. 그렇지 않다면 할 수 있습니다[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+1.  .NET용 Aspose.Words: 라이브러리가 설치되어 있는지 확인하세요. 그렇지 않다면 할 수 있습니다[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 2.  라이센스 파일: 유효한 라이센스 파일이 필요합니다. 가지고 있지 않다면, 얻을 수 있습니다.[임시 면허증](https://purchase.aspose.com/temporary-license/) 테스트 목적으로.
 3. 기본 C# 지식: C# 프로그래밍에 대한 기본적인 이해가 있다고 가정합니다.
 
@@ -52,7 +52,7 @@ using (MemoryStream stream = new MemoryStream(File.ReadAllBytes("Aspose.Words.li
 
 ## 3단계: 라이선스 적용
 
- 내`using` 차단하면 전화를 걸게 됩니다.`SetLicense` 당신의 방법`license` 객체, 메모리 스트림을 전달합니다. 이 메서드는 Aspose.Words에 대한 라이선스를 설정합니다.
+ 내에서`using` 차단하면 전화를 걸게 됩니다.`SetLicense` 당신의 방법`license` 객체, 메모리 스트림을 전달합니다. 이 메서드는 Aspose.Words에 대한 라이선스를 설정합니다.
 
 ```csharp
 license.SetLicense(stream);

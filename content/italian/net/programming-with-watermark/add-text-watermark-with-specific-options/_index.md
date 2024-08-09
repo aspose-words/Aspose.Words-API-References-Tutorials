@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-watermark/add-text-watermark-with-specific-options/
 ---
-## introduzione
+## Introduzione
 
 Le filigrane possono essere un'aggiunta elegante e funzionale ai tuoi documenti Word, servendo a contrassegnare i documenti come riservati o ad aggiungere un tocco personalizzato. In questo tutorial esploreremo come aggiungere una filigrana di testo a un documento Word utilizzando Aspose.Words per .NET. Approfondiremo le opzioni specifiche che puoi configurare, come famiglia di caratteri, dimensione del carattere, colore e layout. Alla fine, sarai in grado di personalizzare la filigrana del tuo documento per adattarla alle tue esigenze. Quindi, prendi il tuo editor di codice e iniziamo!
 
@@ -109,4 +109,4 @@ Aspose.Words supporta l'aggiunta di una filigrana alla volta. Per aggiungere pi�
 
 ### Cosa succede se ho bisogno di una filigrana semitrasparente?
 
- Impostare il`IsSemitrasparent`proprietà a`true` per rendere semitrasparente la filigrana.
+ Imposta il`IsSemitrasparent`proprietà a`true` per rendere semitrasparente la filigrana.

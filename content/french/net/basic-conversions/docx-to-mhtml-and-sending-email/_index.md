@@ -81,7 +81,7 @@ client.Send(message);
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez converti avec succès un document DOCX en MHTML et l'avez envoyé par e-mail à l'aide d'Aspose.Words pour .NET. Ce processus implique de charger le document, de le convertir en MHTML, de créer un message électronique et de l'envoyer à l'aide d'un client SMTP. Avec ces étapes, vous pouvez facilement automatiser la conversion et l'envoi par courrier électronique des documents dans vos applications.
+Félicitations! Vous avez converti avec succès un document DOCX en MHTML et l'avez envoyé par e-mail à l'aide d'Aspose.Words pour .NET. Ce processus implique de charger le document, de le convertir en MHTML, de créer un message électronique et de l'envoyer à l'aide d'un client SMTP. Avec ces étapes, vous pouvez facilement automatiser la conversion et l'envoi par courrier électronique des documents dans vos applications.
 
 ## FAQ
 

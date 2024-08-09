@@ -29,7 +29,7 @@ using Aspose.Words.Drawing;
 using Aspose.Words.Saving;
 ```
 
-Aspose.Words for .NET kullanarak Word belgenize sütun grafiği eklemek için şu adımları izleyin:
+Aspose.Words for .NET'i kullanarak Word belgenize sütun grafiği eklemek için şu adımları izleyin:
 
 ## 1. Adım: Yeni Bir Belge Oluşturun
 
@@ -43,7 +43,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Adım 2: Sütun Grafiğini Ekleyin
 
- Kullan`InsertChart` yöntemi`DocumentBuilder`Sütun grafiği eklemek için sınıf.
+ Kullanın`InsertChart` yöntemi`DocumentBuilder`Sütun grafiği eklemek için sınıf.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);

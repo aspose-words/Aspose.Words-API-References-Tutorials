@@ -82,7 +82,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 Aspose.Words for .NET — мощная библиотека для программной работы с документами Word. Он позволяет создавать, изменять и конвертировать документы в различных форматах.
 
 ### Как установить Aspose.Words для .NET?
- Вы можете скачать его с сайта[Веб-сайт](https://releases.aspose.com/words/net/) и следуйте инструкциям по установке в[документация](https://reference.aspose.com/words/net/).
+ Вы можете скачать его с сайта[веб-сайт](https://releases.aspose.com/words/net/) и следуйте инструкциям по установке в[документация](https://reference.aspose.com/words/net/).
 
 ### Могу ли я использовать Aspose.Words бесплатно?
  Aspose.Words предлагает[бесплатная пробная версия](https://releases.aspose.com/) с ограниченными возможностями. Для полного доступа вам необходимо приобрести лицензию[здесь](https://purchase.aspose.com/buy).

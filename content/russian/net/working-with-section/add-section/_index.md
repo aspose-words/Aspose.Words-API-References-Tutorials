@@ -83,7 +83,7 @@ doc.Sections.Add(sectionToAdd);
 
 ### Использование DocumentBuilder для нового раздела
 
-Чтобы добавить контент в новый раздел, вам необходимо установить`DocumentBuilder` курсор на новый раздел:
+ Чтобы добавить контент в новый раздел, вам необходимо установить`DocumentBuilder` курсор на новый раздел:
 
 ```csharp
 builder.MoveToSection(doc.Sections.IndexOf(sectionToAdd));

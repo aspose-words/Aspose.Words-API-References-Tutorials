@@ -65,7 +65,7 @@ private void Untangle(Document doc)
 以下是代码功能的逐步解释：
 
 我们使用`foreach`环形。
-对于每个书签，我们检索书签起始行的父行（`bookmark.BookmarkStart`）和书签结束（`bookmark.BookmarkEnd` ） 使用`GetAncestor`方法。
+对于每个书签，我们检索书签起始行的父行（`bookmark.BookmarkStart`）和书签结束（`bookmark.BookmarkEnd` ）使用`GetAncestor`方法。
 然后我们检查是否找到了两行（`row1 != null`和`row2 != null`）并且如果它们是相邻行（`row1.NextSibling == row2`）。这确保我们只修改跨越相邻行的书签。
 如果满足条件，我们将书签结束节点移动到顶行最后一个单元格中最后一段的末尾 (`row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd)`) 有效地解开它们。
 

@@ -1,6 +1,6 @@
 ---
-title: Bryt länken framåt i Word-dokument
-linktitle: Bryt länken framåt i Word-dokument
+title: Bryt vidarelänken i Word-dokument
+linktitle: Bryt vidarelänken i Word-dokument
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du bryter länkar i Word-dokumenttextrutor med Aspose.Words för .NET. Följ vår guide för en smidigare dokumenthanteringsupplevelse.
 type: docs
@@ -94,7 +94,7 @@ Ibland kan en textruta vara en del av en kedja, med andra rutor som länkar till
 
 ### Bryta inkommande länkar
 
- För att bryta en inkommande länk, kontrollera om`Previous` textrutan finns och ring`BreakForwardLink` på det:
+ För att bryta en inkommande länk, kontrollera om`Previous` textrutan finns och ring`BreakForwardLink` på den:
 
 ```csharp
 textBox.Previous?.BreakForwardLink();
@@ -120,7 +120,7 @@ Genom att bryta framåt länkar kan du omorganisera eller isolera innehåll i di
 
 ### Är det möjligt att kontrollera om en textruta har en framåtlänk innan den bryts?
 
- Ja, du kan kontrollera om en textruta har en framåtlänk genom att inspektera`Next` fast egendom. Om den inte är null har textrutan en framåtlänk.
+ Ja, du kan kontrollera om en textruta har en framåtlänk genom att inspektera`Next` egendom. Om den inte är null har textrutan en framåtlänk.
 
 ### Kan brytande länkar påverka dokumentets layout?
 

@@ -46,7 +46,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Bước 2: Chèn ô đầu tiên
 
-Bây giờ, hãy chèn ô đầu tiên vào bảng của chúng ta và đặt tính năng hợp nhất theo chiều dọc của ô đó thành ô đầu tiên trong phạm vi đã hợp nhất.
+Bây giờ, hãy chèn ô đầu tiên vào bảng của chúng ta và đặt tính năng hợp nhất theo chiều dọc của nó thành ô đầu tiên trong phạm vi được hợp nhất.
 
 ```csharp
 builder.InsertCell();
@@ -98,7 +98,7 @@ Dòng này lưu tài liệu với tên tệp được chỉ định trong thư m
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bằng cách làm theo các bước này, bạn đã triển khai thành công việc hợp nhất theo chiều dọc trong tài liệu Word bằng Aspose.Words cho .NET. Tính năng này có thể nâng cao đáng kể khả năng đọc và sắp xếp tài liệu của bạn, khiến chúng trở nên chuyên nghiệp hơn và dễ điều hướng hơn. Cho dù bạn đang xử lý các bảng đơn giản hay cấu trúc dữ liệu phức tạp, việc thành thạo việc hợp nhất theo chiều dọc sẽ mang lại cho bạn lợi thế trong việc định dạng tài liệu.
+Và bạn có nó! Bằng cách làm theo các bước này, bạn đã triển khai thành công việc hợp nhất theo chiều dọc trong tài liệu Word bằng Aspose.Words cho .NET. Tính năng này có thể nâng cao đáng kể khả năng đọc và sắp xếp tài liệu của bạn, khiến chúng trở nên chuyên nghiệp hơn và dễ điều hướng hơn. Cho dù bạn đang xử lý các bảng đơn giản hay cấu trúc dữ liệu phức tạp, việc thành thạo việc hợp nhất theo chiều dọc sẽ mang lại cho bạn lợi thế trong việc định dạng tài liệu.
 
 ## Câu hỏi thường gặp
 

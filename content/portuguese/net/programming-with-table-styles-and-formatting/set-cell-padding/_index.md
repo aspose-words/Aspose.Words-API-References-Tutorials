@@ -9,7 +9,7 @@ url: /pt/net/programming-with-table-styles-and-formatting/set-cell-padding/
 ---
 ## Introdução
 
-Já se perguntou como adicionar um pouco de espaço extra ao redor do texto em uma célula da tabela no seu documento do Word? Bem, você está no lugar certo! Este tutorial irá orientá-lo no processo de configuração do preenchimento de células usando Aspose.Words for .NET. Se você deseja deixar seu documento mais sofisticado ou apenas deseja destacar os dados da tabela, ajustar o preenchimento das células é uma ferramenta simples, mas poderosa. Descreveremos cada etapa para garantir que você possa acompanhar facilmente, mesmo se você for novo no Aspose.Words for .NET.
+Já se perguntou como adicionar um pouco de espaço extra ao redor do texto em uma célula da tabela no seu documento do Word? Bem, você está no lugar certo! Este tutorial irá orientá-lo no processo de configuração do preenchimento de células usando Aspose.Words for .NET. Se você deseja deixar seu documento mais sofisticado ou apenas destacar os dados da tabela, ajustar o preenchimento das células é uma ferramenta simples, mas poderosa. Descreveremos cada etapa para garantir que você possa acompanhar facilmente, mesmo se você for novo no Aspose.Words for .NET.
 
 ## Pré-requisitos
 

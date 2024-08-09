@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/document-formatting/space-between-asian-and-latin-text/
 ---
-## introduzione
+## Introduzione
 
 Ehilà! Hai mai avuto quel momento frustrante in cui stai lavorando con un documento Word e la spaziatura tra il testo asiatico e quello latino non sembra corretta? È come provare a mettere insieme i pezzi di un puzzle di set diversi e può far impazzire chiunque! Ma non preoccuparti, ti ho coperto. Oggi ci immergiamo nel mondo di Aspose.Words per .NET per affrontare esattamente questo problema. Alla fine di questo tutorial, saprai esattamente come regolare automaticamente lo spazio tra il testo asiatico e quello latino nei tuoi documenti Word come un professionista.
 
@@ -55,7 +55,7 @@ paragraphFormat.AddSpaceBetweenFarEastAndAlpha = true;
 paragraphFormat.AddSpaceBetweenFarEastAndDigit = true;
 ```
 
- IMPOSTANDO`AddSpaceBetweenFarEastAndAlpha`E`AddSpaceBetweenFarEastAndDigit` A`true`, diciamo ad Aspose.Words di regolare automaticamente la spaziatura tra i caratteri asiatici e le lettere o cifre latine.
+ Impostando`AddSpaceBetweenFarEastAndAlpha`E`AddSpaceBetweenFarEastAndDigit` A`true`, diciamo ad Aspose.Words di regolare automaticamente la spaziatura tra i caratteri asiatici e le lettere o cifre latine.
 
 ## Passaggio 3: aggiunta di testo al documento
 
@@ -80,7 +80,7 @@ Con questa riga di codice salviamo il nostro documento nella directory specifica
 
 ## Conclusione
 
-E il gioco è fatto! Hai appena imparato come regolare automaticamente lo spazio tra il testo asiatico e quello latino in un documento Word utilizzando Aspose.Words per .NET. È come avere una bacchetta magica per una formattazione perfetta. Ora vai avanti e stupisci i tuoi amici e colleghi con le tue nuove abilità. Ricorda, gli strumenti giusti fanno la differenza e Aspose.Words per .NET è sicuramente uno strumento che vale la pena avere nel tuo arsenale.
+Ed ecco qua! Hai appena imparato come regolare automaticamente lo spazio tra il testo asiatico e quello latino in un documento Word utilizzando Aspose.Words per .NET. È come avere una bacchetta magica per una formattazione perfetta. Ora vai avanti e stupisci i tuoi amici e colleghi con le tue nuove abilità. Ricorda, gli strumenti giusti fanno la differenza e Aspose.Words per .NET è sicuramente uno strumento che vale la pena avere nel tuo arsenale.
 
 ## Domande frequenti
 

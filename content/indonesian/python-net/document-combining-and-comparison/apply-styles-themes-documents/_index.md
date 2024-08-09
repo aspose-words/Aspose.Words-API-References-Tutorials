@@ -45,7 +45,7 @@ font.style_identifier = StyleIdentifier.STRONG
 
 ## Memformat Paragraf dengan Gaya
 
-Gaya juga mempengaruhi pemformatan paragraf. Sesuaikan perataan, spasi, dan lainnya menggunakan gaya.
+Gaya juga mempengaruhi format paragraf. Sesuaikan perataan, spasi, dan lainnya menggunakan gaya.
 
 ```python
 from asposewords import ParagraphAlignment

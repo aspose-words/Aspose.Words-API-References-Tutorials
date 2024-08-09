@@ -16,7 +16,7 @@ Bonjour, chers développeurs et passionnés de documents ! 🌟 Si vous avez d�
 
 Avant de commencer, assurons-nous que vous disposez de tout ce dont vous avez besoin :
 
-1.  Bibliothèque Aspose.Words pour .NET : assurez-vous que vous disposez de la dernière version.[Télécharger les ici](https://releases.aspose.com/words/net/).
+1.  Bibliothèque Aspose.Words pour .NET : assurez-vous que vous disposez de la dernière version.[Téléchargez-le ici](https://releases.aspose.com/words/net/).
 2. Environnement de développement : un environnement de développement compatible .NET comme Visual Studio.
 3. Connaissances de base en C# : Comprendre la syntaxe de base C# sera utile.
 4. Exemple de document Word : même si nous allons en créer un à partir de zéro, disposer d'un échantillon peut être utile pour les tests.
@@ -94,7 +94,7 @@ Parfois, une zone de texte peut faire partie d’une chaîne, avec d’autres zo
 
 ### Rompre les liens entrants
 
- Pour rompre un lien entrant, vérifiez si le`Previous` la zone de texte existe et appelle`BreakForwardLink` dessus:
+ Pour rompre un lien entrant, vérifiez si le`Previous` la zone de texte existe et appelle`BreakForwardLink` dessus :
 
 ```csharp
 textBox.Previous?.BreakForwardLink();
@@ -104,9 +104,9 @@ textBox.Previous?.BreakForwardLink();
 
 ## Conclusion
 
-Et voila! 🎉 Vous avez appris avec succès comment supprimer des liens dans des zones de texte à l'aide d'Aspose.Words pour .NET. Que vous nettoyiez un document, le prépariez pour un nouveau format ou que vous expérimentiez simplement, ces étapes vous aideront à gérer vos zones de texte avec précision. Rompre les liens, c'est comme démêler un nœud, parfois nécessaire pour garder les choses propres et bien rangées. 
+Et voilà ! 🎉 Vous avez appris avec succès comment supprimer des liens dans des zones de texte à l'aide d'Aspose.Words pour .NET. Que vous nettoyiez un document, le prépariez pour un nouveau format ou que vous expérimentiez simplement, ces étapes vous aideront à gérer vos zones de texte avec précision. Rompre les liens, c'est comme démêler un nœud, parfois nécessaire pour garder les choses propres et bien rangées. 
 
- Si vous souhaitez en savoir plus sur ce qu'Aspose.Words peut faire, leur[Documentation](https://reference.aspose.com/words/net/) est un trésor d'informations. Bon codage et que vos documents soient toujours bien organisés !
+ Si vous souhaitez en savoir plus sur ce qu'Aspose.Words peut faire, leur[documentation](https://reference.aspose.com/words/net/) est un trésor d'informations. Bon codage et que vos documents soient toujours bien organisés !
 
 ## FAQ
 
@@ -128,4 +128,4 @@ La rupture des liens peut potentiellement affecter la mise en page, surtout si l
 
 ### Où puis-je trouver plus de ressources sur l’utilisation d’Aspose.Words ?
 
- Pour plus d’informations et de ressources, vous pouvez visiter le[Documentation Aspose.Words](https://reference.aspose.com/words/net/)et[forum d'entraide](https://forum.aspose.com/c/words/8).
+ Pour plus d’informations et de ressources, vous pouvez visiter le[Documentation Aspose.Words](https://reference.aspose.com/words/net/)et[forum d'assistance](https://forum.aspose.com/c/words/8).

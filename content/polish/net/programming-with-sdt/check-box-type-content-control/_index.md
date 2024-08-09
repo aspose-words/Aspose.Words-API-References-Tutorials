@@ -99,4 +99,4 @@ Tak, Aspose.Words obsługuje różne typy kontroli treści, w tym kontrolki teks
  Tak, możesz pobrać bezpłatną wersję próbną ze strony[Strona Aspose](https://releases.aspose.com/).
 
 ### Gdzie mogę uzyskać pomoc, jeśli napotkam problemy?
- Możesz odwiedzić[Forum wsparcia Aspose](https://forum.aspose.com/c/words/8) do pomocy.
+ Możesz odwiedzić[Forum wsparcia Aspose](https://forum.aspose.com/c/words/8) o pomoc.

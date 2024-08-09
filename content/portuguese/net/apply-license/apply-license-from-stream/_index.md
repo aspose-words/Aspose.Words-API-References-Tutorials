@@ -80,12 +80,12 @@ catch (Exception e)
 
 ## Conclusão
 
- aí está! Aplicar uma licença de um fluxo no Aspose.Words for .NET é um processo simples, uma vez que você conhece as etapas. Seguindo este guia, você garante que seu aplicativo possa aproveitar todos os recursos do Aspose.Words sem quaisquer limitações. Se você encontrar algum problema, não hesite em verificar o[documentação](https://reference.aspose.com/words/net/) ou procure ajuda no[Fórum de suporte](https://forum.aspose.com/c/words/8). Boa codificação!
+ aí está! Aplicar uma licença de um fluxo no Aspose.Words for .NET é um processo simples, uma vez que você conhece as etapas. Seguindo este guia, você garante que seu aplicativo possa aproveitar todos os recursos do Aspose.Words sem quaisquer limitações. Se você encontrar algum problema, não hesite em verificar o[documentação](https://reference.aspose.com/words/net/) ou procure ajuda no[fórum de suporte](https://forum.aspose.com/c/words/8). Boa codificação!
 
 ## Perguntas frequentes
 
 ### Por que preciso solicitar uma licença para Aspose.Words?
-A aplicação de uma licença desbloqueia todos os recursos do Aspose.Words, removendo quaisquer limitações ou marcas d'água.
+A aplicação de uma licença desbloqueia todos os recursos do Aspose.Words, removendo quaisquer limitações ou marcas d’água.
 
 ### Posso usar uma licença de teste?
  Sim, você pode obter um[licença temporária](https://purchase.aspose.com/temporary-license/) para fins de avaliação.
@@ -94,7 +94,7 @@ A aplicação de uma licença desbloqueia todos os recursos do Aspose.Words, rem
  Certifique-se de que seu arquivo de licença esteja intacto e não modificado. Se os problemas persistirem, entre em contato[apoiar](https://forum.aspose.com/c/words/8).
 
 ### Onde devo armazenar meu arquivo de licença?
-Armazene-o em um local seguro no diretório do seu projeto e garanta que ele esteja acessível ao seu aplicativo.
+Armazene-o em um local seguro no diretório do seu projeto e certifique-se de que ele esteja acessível ao seu aplicativo.
 
 ###5. Posso aplicar a licença de outras fontes, como um stream da web?
 Sim, o mesmo princípio se aplica. Apenas certifique-se de que o fluxo contenha os dados do arquivo de licença.

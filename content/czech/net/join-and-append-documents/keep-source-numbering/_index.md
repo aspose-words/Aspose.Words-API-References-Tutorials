@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/keep-source-numbering/
 ---
-## Úvod
+## Zavedení
 
  Při práci s Aspose.Words for .NET lze import dokumentů z jednoho zdroje do druhého při zachování formátování efektivně zvládnout pomocí`NodeImporter` třída. Tento tutoriál vás provede procesem krok za krokem.
 
@@ -15,7 +15,7 @@ url: /cs/net/join-and-append-documents/keep-source-numbering/
 
 Než začnete, ujistěte se, že máte následující:
 - Visual Studio nainstalované na vašem počítači.
--  Aspose.Words for .NET nainstalován. Pokud ne, stáhněte si jej z[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET nainstalován. Pokud ne, stáhněte si jej z[zde](https://releases.aspose.com/words/net/).
 - Základní znalost programování v C# a .NET.
 
 ## Importovat jmenné prostory

@@ -15,7 +15,7 @@ Podczas pracy z plikami PDF, szczególnie tymi wygenerowanymi z dokumentów prog
 
 Zanim przejdziesz do kolejnych kroków, upewnij się, że masz następujące elementy:
 
-1. Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words. Jeśli nie, możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1. Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words. Jeśli nie, możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: w tym samouczku założono, że masz skonfigurowane środowisko programistyczne .NET (takie jak Visual Studio), w którym możesz pisać i wykonywać kod C#.
 3. Podstawowa znajomość programowania .NET: Pomocna będzie znajomość podstawowych koncepcji programowania .NET i składni języka C#.
 4. Dokument Word z grafiką WMF: Będziesz potrzebował dokumentu Word zawierającego grafikę WMF. Możesz użyć własnego dokumentu lub utworzyć go do testów.
@@ -55,7 +55,7 @@ MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 };
 ```
 
- The`MetafileRenderingOptions` class udostępnia opcje renderowania metaplików (takich jak WMF). Przez ustawienie`ScaleWmfFontsToMetafileSize` Do`false`, instruujesz Aspose.Words, aby nie skalował czcionek zgodnie z rozmiarem metapliku, co może pomóc w zmniejszeniu ogólnego rozmiaru pliku PDF.
+ The`MetafileRenderingOptions` class udostępnia opcje renderowania metaplików (takich jak WMF). Ustawiając`ScaleWmfFontsToMetafileSize` Do`false`, instruujesz Aspose.Words, aby nie skalował czcionek zgodnie z rozmiarem metapliku, co może pomóc w zmniejszeniu ogólnego rozmiaru pliku PDF.
 
 ## Krok 3: Ustaw opcje zapisywania plików PDF
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/list-use-destination-styles/
 ---
-## Úvod
+## Zavedení
 
 Zkoušeli jste někdy sloučit dokumenty Wordu a zamotali jste se s formátováním? Je to jako zkusit občas smíchat olej a vodu, že? No, dnes se ponoříme do úhledného triku pomocí Aspose.Words pro .NET, který vás ušetří této bolesti hlavy. Naučíme se, jak importovat seznamy z jednoho dokumentu do druhého, aniž bychom si pokazili číslování a styly. Jste připraveni si trochu usnadnit život? Začněme!
 
@@ -15,7 +15,7 @@ Zkoušeli jste někdy sloučit dokumenty Wordu a zamotali jste se s formátován
 
 Než se pustíme do kouzla, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET: Pokud jste to ještě neudělali, stáhněte si ji[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Pokud jste to ještě neudělali, stáhněte si ji[zde](https://releases.aspose.com/words/net/).
 2. Visual Studio: Bude stačit jakákoli nejnovější verze.
 3. Základní porozumění C#: Nemusíte být čaroděj, ale trocha znalosti vám pomůže.
 
@@ -30,7 +30,7 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Máš to? Skvělý. Pojďme si to nyní rozebrat krok za krokem.
+Máš to? Děsivý. Pojďme si to nyní rozebrat krok za krokem.
 
 ## Krok 1: Nastavte cesty k dokumentu
 
@@ -52,7 +52,7 @@ Document srcDoc = new Document(dataDir + "Document source with list.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
- Tady,`srcDoc` je váš zdrojový dokument (ten se seznamy, které chcete zkopírovat), a`dstDoc` je váš cílový dokument (ten, kam chcete tyto seznamy vložit).
+ Zde,`srcDoc` je váš zdrojový dokument (ten se seznamy, které chcete zkopírovat), a`dstDoc` je váš cílový dokument (ten, kam chcete tyto seznamy vložit).
 
 ## Krok 3: Nakonfigurujte možnosti importu
 
@@ -82,10 +82,10 @@ Tady to máš! Slučování dokumentů bez ztráty mysli na problémy s formáto
 Aspose.Words for .NET je výkonná knihovna pro programovou práci s dokumenty Wordu. Umožňuje vytvářet, upravovat a převádět dokumenty v různých formátech.
 
 ### Jak nainstaluji Aspose.Words for .NET?
- Můžete si jej stáhnout z[webová stránka](https://releases.aspose.com/words/net/) a postupujte podle pokynů k instalaci v[dokumentace](https://reference.aspose.com/words/net/).
+ Můžete si jej stáhnout z[webové stránky](https://releases.aspose.com/words/net/) a postupujte podle pokynů k instalaci v[dokumentace](https://reference.aspose.com/words/net/).
 
 ### Mohu používat Aspose.Words zdarma?
- Aspose.Words nabízí a[zkušební verze zdarma](https://releases.aspose.com/) s omezenými funkcemi. Pro plný přístup si budete muset zakoupit licenci[tady](https://purchase.aspose.com/buy).
+ Aspose.Words nabízí a[zkušební verze zdarma](https://releases.aspose.com/) s omezenými funkcemi. Pro plný přístup si budete muset zakoupit licenci[zde](https://purchase.aspose.com/buy).
 
 ### Co jsou možnosti ImportFormat?
  ImportFormatOptions umožňují určit, jak se bude zpracovávat formátování při importu obsahu z jednoho dokumentu do druhého. Například,`KeepSourceNumbering` zajišťuje zachování číslování seznamů ze zdrojového dokumentu.

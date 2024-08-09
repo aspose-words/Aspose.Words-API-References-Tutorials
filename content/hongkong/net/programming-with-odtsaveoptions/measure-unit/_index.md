@@ -71,11 +71,11 @@ OdtSaveOptions saveOptions = new OdtSaveOptions { MeasureUnit = OdtSaveMeasureUn
 doc.Save(dataDir + "WorkingWithOdtSaveOptions.MeasureUnit.odt", saveOptions);
 ```
 
-此行程式碼將轉換後的文件保存在指定的目錄中，並套用新的度量單位。
+此行程式碼將轉換後的文件保存在指定的目錄中，並套用新的測量單位。
 
 ## 結論
 
-現在你就擁有了！透過執行下列步驟，您可以輕鬆設定 Aspose.Words for .NET 中的測量單位功能，以確保在轉換過程中保留文件的佈局。無論您使用的是英吋、公分還是點，本教學向您展示如何輕鬆控製文件的格式。
+現在你就得到它了！透過執行下列步驟，您可以輕鬆設定 Aspose.Words for .NET 中的測量單位功能，以確保在轉換過程中保留文件的佈局。無論您使用的是英吋、公分還是點，本教學向您展示如何輕鬆控製文件的格式。
 
 ## 常見問題解答
 

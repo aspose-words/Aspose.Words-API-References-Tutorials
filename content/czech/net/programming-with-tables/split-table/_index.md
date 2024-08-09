@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-tables/split-table/
 ---
-## Úvod
+## Zavedení
 
 Stalo se vám někdy, že pracujete s velkou tabulkou v dokumentu aplikace Word a přáli byste si, abyste ji mohli rozdělit na dvě menší, lépe ovladatelné tabulky? No, dnes se ponoříme do toho, jak přesně toho můžete dosáhnout pomocí Aspose.Words pro .NET. Ať už máte co do činění s rozsáhlými datovými tabulkami nebo složitými strukturami dokumentů, rozdělení tabulek může pomoci zlepšit čitelnost a organizaci. Pojďme prozkoumat krok za krokem proces rozdělení tabulky pomocí Aspose.Words for .NET.
 

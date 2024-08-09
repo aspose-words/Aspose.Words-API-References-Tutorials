@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");
 ## الأسئلة الشائعة
 
 ### هل يمكنني تحويل أنواع أخرى من الحقول باستخدام Aspose.Words لـ .NET؟
- نعم، يسمح لك Aspose.Words for .NET بمعالجة أنواع مختلفة من الحقول، وليس فقط حقول IF. يمكنك استكشاف[توثيق](https://reference.aspose.com/words/net/) لمزيد من التفاصيل.
+ نعم، يسمح لك Aspose.Words for .NET بمعالجة أنواع مختلفة من الحقول، وليس فقط حقول IF. يمكنك استكشاف[الوثائق](https://reference.aspose.com/words/net/) لمزيد من التفاصيل.
 
 ### ما هي حقول IF في مستندات Word؟
 حقول IF هي حقول شرطية تعرض النص بناءً على شروط معينة. يتم استخدامها غالبًا لإنشاء محتوى ديناميكي في مستندات Word.

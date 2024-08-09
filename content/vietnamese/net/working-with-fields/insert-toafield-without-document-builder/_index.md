@@ -63,7 +63,7 @@ doc.FirstSection.Body.AppendChild(para);
 
 Đây là một sự cố:
 - Paragraph para = new Paragraph(doc);: Tạo một đoạn văn mới trong tài liệu.
--  FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTOAEEntry, false);: Thêm trường TA vào đoạn văn. Các`FieldType.FieldTOAEntry` chỉ định rằng đây là trường mục nhập TOA.
+-  FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTOAEEntry, false);: Thêm trường TA vào đoạn văn. các`FieldType.FieldTOAEntry` chỉ định rằng đây là trường mục nhập TOA.
 - fieldTA.EntryCategory = "1";: Đặt danh mục mục nhập. Điều này rất hữu ích cho việc phân loại các loại mục khác nhau.
 - fieldTA.LongCites = "Value 0";: Chỉ định văn bản trích dẫn dài. Đây là văn bản sẽ xuất hiện trong TOA.
 - doc.FirstSection.Body.AppendChild(para);: Nối đoạn văn có trường TA vào nội dung tài liệu.
@@ -106,7 +106,7 @@ doc.Save(dataDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.docx"
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã thêm thành công trường TOA vào tài liệu Word mà không cần sử dụng trình tạo tài liệu. Bằng cách làm theo các bước này, bạn có thể quản lý trích dẫn một cách hiệu quả và tạo các bảng thẩm quyền toàn diện trong các tài liệu pháp lý của mình. Aspose.Words for .NET giúp quá trình này diễn ra suôn sẻ và hiệu quả, cung cấp cho bạn các công cụ để xử lý các tác vụ tài liệu phức tạp một cách dễ dàng.
+Và bạn có nó! Bạn đã thêm thành công trường TOA vào tài liệu Word mà không cần sử dụng trình tạo tài liệu. Bằng cách làm theo các bước này, bạn có thể quản lý trích dẫn một cách hiệu quả và tạo các bảng thẩm quyền toàn diện trong các tài liệu pháp lý của mình. Aspose.Words for .NET giúp quá trình này diễn ra suôn sẻ và hiệu quả, cung cấp cho bạn các công cụ để xử lý các tác vụ tài liệu phức tạp một cách dễ dàng.
 
 ## Câu hỏi thường gặp
 

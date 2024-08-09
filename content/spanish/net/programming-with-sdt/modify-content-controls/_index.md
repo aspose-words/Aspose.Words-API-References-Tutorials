@@ -15,7 +15,7 @@ Si alguna vez trabajó con documentos de Word y necesitó modificar controles de
 
 Antes de entrar en el meollo de la cuestión de modificar los controles de contenido, asegúrese de tener lo siguiente:
 
-1.  Aspose.Words para .NET instalado: asegúrese de tener instalada la biblioteca Aspose.Words. Si no, puedes[descarguelo aqui](https://releases.aspose.com/words/net/).
+1.  Aspose.Words para .NET instalado: asegúrese de tener instalada la biblioteca Aspose.Words. Si no, puedes[descárgalo aquí](https://releases.aspose.com/words/net/).
 
 2. Conocimientos básicos de C#: este tutorial asume que está familiarizado con los conceptos básicos de programación de C#.
 
@@ -134,7 +134,7 @@ Sí, puede eliminar SDT accediendo a los nodos del documento y eliminando el SDT
 
 4. ¿Cómo manejo los SDT que están anidados dentro de otros elementos?
 
- Utilizar el`GetChildNodes` método con parámetros apropiados para acceder a SDT anidados.
+ Utilice el`GetChildNodes` método con parámetros apropiados para acceder a SDT anidados.
 
 5. ¿Qué debo hacer si el SDT que necesito modificar no está visible en el documento?
 

@@ -2,7 +2,7 @@
 title: استخدام بيانات XML في Aspose.Words لـ Java
 linktitle: استخدام بيانات XML
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة مستندات جافا
-description: أطلق العنان لقوة Aspose.Words لـ Java. تعلم معالجة بيانات XML، ودمج البريد، وبناء جملة الشارب من خلال البرامج التعليمية خطوة بخطوة.
+description: أطلق العنان لقوة Aspose.Words لـ Java. تعلم معالجة بيانات XML ودمج البريد وبناء جملة الشارب باستخدام برامج تعليمية خطوة بخطوة.
 type: docs
 weight: 12
 url: /ar/java/document-manipulation/using-xml-data/
@@ -15,7 +15,7 @@ url: /ar/java/document-manipulation/using-xml-data/
 ## المتطلبات الأساسية
 
 قبل أن نبدأ، تأكد من توفر المتطلبات الأساسية التالية:
-- [Aspose.Words لجافا](https://products.aspose.com/words/java/) المثبتة.
+- [Aspose.Words لجافا](https://products.aspose.com/words/java/) مثبتة.
 - نماذج من ملفات بيانات XML للعملاء والأوامر والبائعين.
 - نماذج من مستندات Word لوجهات دمج البريد.
 

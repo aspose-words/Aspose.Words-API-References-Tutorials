@@ -53,7 +53,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 
 ## Langkah 3: Iterasi Melalui Bagian
 
-Kunci untuk menghilangkan hentian bagian adalah dengan mengulangi bagian-bagian dalam dokumen, dimulai dari bagian kedua terakhir dan bergerak menuju bagian pertama.
+Kunci untuk menghilangkan hentian bagian adalah dengan mengulangi bagian-bagian dalam dokumen, mulai dari bagian kedua terakhir dan bergerak menuju bagian pertama.
 
 1. Loop Through Sections: Buat loop yang dimulai dari bagian kedua terakhir dan bergerak mundur.
 ```csharp

@@ -137,4 +137,4 @@ Oui, même si vous pouvez utiliser une licence temporaire à des fins d'évaluat
 Non, l'activation de Snap to Grid n'a pas d'impact significatif sur les performances du document.
 
 ### Où puis-je trouver plus d’informations sur Aspose.Words pour .NET ?
- Visiter le[Documentation](https://reference.aspose.com/words/net/)pour des informations détaillées et des exemples.
+ Visitez le[documentation](https://reference.aspose.com/words/net/)pour des informations détaillées et des exemples.

@@ -52,7 +52,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 Console.WriteLine(info.IsEncrypted);
 ```
 
-Ez minden ! Sikeresen ellenőrizte, hogy egy dokumentum titkosítva van-e az Aspose.Words for .NET használatával.
+Ez minden! Sikeresen ellenőrizte, hogy egy dokumentum titkosítva van-e az Aspose.Words for .NET használatával.
 
 ## Következtetés
 

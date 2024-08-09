@@ -13,7 +13,7 @@ Ebből az oktatóanyagból megtudhatja, hogyan javíthatja Word-dokumentumait az
 
 ## Előfeltételek
 
-Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következőkkel:
+Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik az alábbiakkal:
 
 - C# programozási és .NET környezeti alapismeretek.
 -  Az Aspose.Words for .NET telepítve van a fejlesztői környezetében. Letöltheti[itt](https://releases.aspose.com/words/net/).
@@ -33,7 +33,7 @@ Kövesse az alábbi lépéseket egy oszlopdiagram beszúrásához a Word-dokumen
 
 ## 1. lépés: Hozzon létre egy új dokumentumot
 
- Először hozzon létre egy új Word dokumentumot, és inicializálja a`DocumentBuilder` tárgy.
+ Először hozzon létre egy új Word dokumentumot, és inicializálja a`DocumentBuilder` objektum.
 
 ```csharp
 string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
@@ -50,9 +50,9 @@ Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## 3. lépés: Adatok hozzáadása a diagramhoz
+## 3. lépés: Adjon hozzá adatokat a diagramhoz
 
- Adjon hozzá adatsorokat a diagramhoz a`Series` tulajdona a`Chart` tárgy.
+ Adjon hozzá adatsorokat a diagramhoz a`Series` tulajdona a`Chart` objektum.
 
 ```csharp
 chart.Series.Add("Aspose Series 1", new string[] { "Category 1", "Category 2" }, new double[] { 1, 2 });
@@ -68,7 +68,7 @@ doc.Save(dataDir + "InsertColumnChart.docx");
 
 ## Következtetés
 
-Gratulálunk! Sikeresen megtanulta, hogyan lehet oszlopdiagramot beszúrni egy Word-dokumentumba az Aspose.Words for .NET használatával. Ez a készség nagyban növelheti a dokumentumok vizuális vonzerejét és informatív értékét, így az adatok megjelenítése világosabb és hatásosabb.
+Gratulálok! Sikeresen megtanulta, hogyan lehet oszlopdiagramot beszúrni egy Word-dokumentumba az Aspose.Words for .NET használatával. Ez a készség nagyban növelheti a dokumentumok vizuális vonzerejét és informatív értékét, így az adatok megjelenítése világosabb és hatásosabb.
 
 ## GYIK
 

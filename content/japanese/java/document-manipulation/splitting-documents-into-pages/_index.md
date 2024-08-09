@@ -26,7 +26,7 @@ Aspose.Words for Java は、Word 文書をプログラムで操作できる Java
 まず、開発環境を次のように設定します。
 
 - 好みの統合開発環境 (IDE) で Java プロジェクトを作成します。
-- Aspose.Words for Javaライブラリをプロジェクトに追加します。[ドキュメンテーション](https://reference.aspose.com/words/java/)詳細な手順については、こちらをご覧ください。
+- Aspose.Words for Javaライブラリをプロジェクトに追加します。[ドキュメント](https://reference.aspose.com/words/java/)詳細な手順については、こちらをご覧ください。
 
 ## 4. ソースコードの理解
 
@@ -446,7 +446,7 @@ public int visitTableEnd(Table table) throws Exception {
 	return VisitorAction.CONTINUE;
 }
 public int visitParagraphEnd(Paragraph paragraph) throws Exception {
-	//段落にセクション区切りのみが含まれる場合は、偽の run into を追加します。
+	//段落にセクション区切りのみが含まれる場合は、偽のセクション区切りを追加します。
 	if (paragraph.isEndOfSection() && paragraph.getChildNodes().getCount() == 1 &&
 		"\f".equals(paragraph.getChildNodes().get(0).getText()))
 	{

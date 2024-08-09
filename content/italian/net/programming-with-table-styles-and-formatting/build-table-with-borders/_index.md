@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-table-styles-and-formatting/build-table-with-borders/
 ---
-## introduzione
+## Introduzione
 
 La creazione di tabelle con bordi personalizzati in un documento Word può rendere i tuoi contenuti visivamente accattivanti e ben organizzati. Con Aspose.Words per .NET, puoi facilmente creare e formattare tabelle con un controllo preciso su bordi, stili e colori. Questo tutorial ti guiderà attraverso il processo passo dopo passo, assicurandoti di avere una comprensione dettagliata di ogni parte del codice.
 

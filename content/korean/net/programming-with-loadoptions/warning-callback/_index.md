@@ -62,7 +62,7 @@ Document doc = new Document(dataDir + "Document.docx", loadOptions);
 
 ## 4단계: 경고 콜백 클래스 구현
 
- 구현하는 클래스를 생성합니다.`IWarningCallback` 상호 작용. 이 클래스는 문서 처리 중에 경고를 처리하는 방법을 정의합니다.
+ 구현하는 클래스를 생성합니다.`IWarningCallback` 인터페이스. 이 클래스는 문서 처리 중에 경고를 처리하는 방법을 정의합니다.
 
 ```csharp
 private class DocumentLoadingWarningCallback : IWarningCallback
@@ -94,7 +94,7 @@ private class DocumentLoadingWarningCallback : IWarningCallback
 경고 콜백을 사용하면 문서 처리 중에 발생하는 경고를 포착하고 처리할 수 있어 잠재적인 문제를 사전에 해결하는 데 도움이 됩니다.
 
 ### 경고 콜백 기능은 어떻게 설정하나요?
- 다음을 구성해야 합니다.`LoadOptions` 와 더불어`WarningCallback` 속성을 구현하고 경고를 처리하는 클래스를 구현합니다.`IWarningCallback` 상호 작용.
+ 다음을 구성해야 합니다.`LoadOptions` 와 함께`WarningCallback` 속성을 구현하고 경고를 처리하는 클래스를 구현합니다.`IWarningCallback` 인터페이스.
 
 ### 유효한 라이선스가 없어도 경고 콜백 기능을 사용할 수 있나요?
  무료 평가판으로 사용할 수 있지만 전체 기능을 사용하려면 유효한 라이센스를 얻는 것이 좋습니다. 당신은 얻을 수 있습니다[임시 면허증은 여기](https://purchase.aspose.com/temporary-license/).

@@ -15,7 +15,7 @@ Bekerja dengan dokumen secara terprogram bisa jadi sedikit menakutkan jika Anda 
 
 Sebelum kita mendalami kodenya, pastikan Anda memiliki semua yang dibutuhkan untuk memulai:
 
-1.  Aspose.Words untuk .NET: Anda harus mengunduh dan menginstal Aspose.Words untuk .NET. Kamu bisa menemukannya[Di Sini](https://releases.aspose.com/words/net/).
+1.  Aspose.Words untuk .NET: Anda harus mengunduh dan menginstal Aspose.Words untuk .NET. Anda dapat menemukannya[Di Sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Instalasi Visual Studio atau IDE lain yang berfungsi yang mendukung pengembangan .NET.
 3. Pemahaman Dasar C#: Keakraban dengan pemrograman C# akan bermanfaat karena kita akan menggunakannya sebagai contoh.
 

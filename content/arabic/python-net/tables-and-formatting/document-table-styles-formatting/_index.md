@@ -51,7 +51,7 @@ url: /ar/python-net/tables-and-formatting/document-table-styles-formatting/
 
 3. تكرار الصفوف: أضف صفوفًا وخلايا حسب الحاجة، باتباع نمط مماثل.
 
-4.  إدراج جدول في المستند: أخيرًا، قم بإدراج الجدول في المستند باستخدام الملف`end_table` طريقة.
+4.  إدراج جدول في المستند: وأخيرًا، قم بإدراج الجدول في المستند باستخدام الملف`end_table` طريقة.
 
     ```python
     builder.end_table()
@@ -68,7 +68,7 @@ url: /ar/python-net/tables-and-formatting/document-table-styles-formatting/
         cell.cell_format.preferred_width = aspose.words.PreferredWidth.from_points(100)
     ```
 
-2. حشو الخلايا: أضف حشوة إلى الخلايا لتحسين التباعد.
+2. حشوة الخلية: قم بإضافة حشوة إلى الخلايا لتحسين التباعد.
 
     ```python
     for row in table.rows:

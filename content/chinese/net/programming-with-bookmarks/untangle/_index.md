@@ -111,7 +111,7 @@ row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 
 ### 是否有 Aspose.Words for .NET 的试用版？
 
-是的你可以[下载免费试用版](https://releases.aspose.com/)从 Aspose 网站探索该库的功能。
+是的，你可以[下载免费试用版](https://releases.aspose.com/)从 Aspose 网站探索该库的功能。
 
 ### 如果我遇到问题，如何获得支持？
 

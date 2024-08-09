@@ -89,7 +89,7 @@ Aspose.Words für .NET ist eine Klassenbibliothek zur Verarbeitung von Word-Doku
 
 ### Kann ich Text aus einem bestimmten Absatz statt aus einem Abschnitt löschen?
 
-Ja, Sie können Text aus einem bestimmten Absatz löschen, indem Sie auf den gewünschten Absatz zugreifen und die`Range.Delete` Methode.
+Ja, Sie können Text aus einem bestimmten Absatz löschen, indem Sie auf den gewünschten Absatz zugreifen und die`Range.Delete` Verfahren.
 
 ### Ist es möglich, Text bedingt zu löschen?
 

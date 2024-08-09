@@ -18,7 +18,7 @@ Sebelum kita mendalami detailnya, pastikan Anda memiliki semua yang Anda perluka
 - Aspose.Words untuk .NET: Pastikan Anda menginstal versi terbaru. Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/net/).
 - Lingkungan Pengembangan: Semua IDE yang mendukung .NET, seperti Visual Studio.
 - Pengetahuan Dasar C#: Keakraban dengan pemrograman C# sangat penting.
-- Dokumen Word: Dokumen Word berisi bentuk yang ingin Anda ubah menjadi Office Math.
+- Dokumen Word: Dokumen Word berisi bentuk yang ingin Anda konversi ke Office Math.
 
 ## Impor Namespace
 

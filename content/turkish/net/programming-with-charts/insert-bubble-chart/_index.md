@@ -89,7 +89,7 @@ Tebrikler! Aspose.Words for .NET'i kullanarak bir Word belgesine başarıyla kab
 
 ### Kabarcık grafiğinin görünümünü özelleştirebilir miyim?
 
- Kesinlikle! Aspose.Words for .NET, renk ve etiketlerden veri serisi formatlamasına kadar çok çeşitli özelleştirme seçenekleri sunar. Kontrol et[dokümantasyon](https://reference.aspose.com/words/net/) daha fazla ayrıntı için.
+ Kesinlikle! Aspose.Words for .NET, renk ve etiketlerden veri serisi formatlamasına kadar çok çeşitli özelleştirme seçenekleri sunar. Şuna göz atın:[dokümantasyon](https://reference.aspose.com/words/net/) daha fazla ayrıntı için.
 
 ### Tek bir belgeye birden fazla grafik eklemek mümkün mü?
 
@@ -101,7 +101,7 @@ Kesinlikle. Bu kılavuz C# kullanıyor olsa da Aspose.Words for .NET, VB.NET gib
 
 ### Aspose.Words for .NET'in ücretsiz deneme sürümünü nasıl edinebilirim?
 
- adresinden ücretsiz deneme alabilirsiniz.[İnternet sitesi](https://releases.aspose.com/). Bu, satın almadan önce özellikleri test etmenize olanak tanır.
+ adresinden ücretsiz deneme alabilirsiniz.[web sitesi](https://releases.aspose.com/). Bu, satın almadan önce özellikleri test etmenize olanak tanır.
 
 ### Aspose.Words for .NET için daha fazla eğitim ve desteği nerede bulabilirim?
 

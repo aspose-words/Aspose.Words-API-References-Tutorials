@@ -125,7 +125,7 @@ Ja, Sie können mehrere bearbeitbare Bereiche erstellen, indem Sie bearbeitbare 
 Aspose.Words unterstützt verschiedene Schutztypen wie AllowOnlyComments, AllowOnlyFormFields und NoProtection.
 
 ### Ist es möglich, den Schutz eines Dokuments aufzuheben?
- Ja, Sie können den Schutz entfernen mit dem`Unprotect` Methode und geben Sie das richtige Passwort ein.
+ Ja, Sie können den Schutz entfernen mit dem`Unprotect` Methode und Eingabe des richtigen Passworts.
 
 ### Kann ich für verschiedene Bereiche unterschiedliche Passwörter festlegen?
 Nein, der Schutz auf Dokumentebene wendet ein einziges Kennwort für das gesamte Dokument an.

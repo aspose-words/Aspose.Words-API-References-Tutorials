@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-tables/repeat-rows-on-subsequent-pages/
 ---
-## Úvod
+## Zavedení
 
 Programové vytvoření dokumentu aplikace Word může být náročný úkol, zvláště když potřebujete zachovat formátování na více stránkách. Zkusili jste někdy vytvořit tabulku ve Wordu, abyste si uvědomili, že vaše řádky záhlaví se na následujících stránkách neopakují? Neboj se! S Aspose.Words for .NET můžete snadno zajistit, aby se záhlaví vaší tabulky opakovalo na každé stránce, což vašim dokumentům poskytne profesionální a uhlazený vzhled. V tomto tutoriálu vás provedeme kroky, jak toho dosáhnout, pomocí jednoduchých příkladů kódu a podrobných vysvětlení. Pojďme se ponořit!
 
@@ -15,7 +15,7 @@ Programové vytvoření dokumentu aplikace Word může být náročný úkol, zv
 
 Než začneme, ujistěte se, že máte následující:
 
-1.  Aspose.Words for .NET: Můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Můžete si ji stáhnout[zde](https://releases.aspose.com/words/net/).
 2. .NET Framework nainstalovaný na vašem počítači.
 3. Visual Studio nebo jakékoli jiné IDE, které podporuje vývoj .NET.
 4. Základní znalost programování v C#.
@@ -106,7 +106,7 @@ tady to máte! Pomocí několika řádků kódu můžete pomocí Aspose.Words fo
 ## FAQ
 
 ### Mohu dále upravit řádky záhlaví?
- Ano, na řádky záhlaví můžete použít další formátování úpravou vlastností`ParagraphFormat`, `RowFormat` , a`CellFormat`.
+ Ano, na řádky záhlaví můžete použít další formátování úpravou vlastností`ParagraphFormat`, `RowFormat` a`CellFormat`.
 
 ### Je možné přidat do tabulky více sloupců?
  Absolutně! Můžete přidat tolik sloupců, kolik potřebujete, vložením více buněk do`InsertCell` metoda.
@@ -118,4 +118,4 @@ tady to máte! Pomocí několika řádků kódu můžete pomocí Aspose.Words fo
  Ano, existující tabulky můžete upravovat tak, že k nim přistoupíte prostřednictvím`Document` objekt a použití podobného formátování.
 
 ### Jaké další možnosti formátování tabulky jsou dostupné v Aspose.Words pro .NET?
- Aspose.Words for .NET nabízí širokou škálu možností formátování tabulky, včetně slučování buněk, nastavení ohraničení a zarovnání tabulky. Podívejte se na[dokumentace](https://reference.aspose.com/words/net/) Více podrobností.
+ Aspose.Words for .NET nabízí širokou škálu možností formátování tabulky, včetně slučování buněk, nastavení ohraničení a zarovnání tabulky. Podívejte se na[dokumentace](https://reference.aspose.com/words/net/) pro více podrobností.

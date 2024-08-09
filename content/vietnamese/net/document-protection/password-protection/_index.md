@@ -15,7 +15,7 @@ Này! Bạn đã bao giờ tự hỏi làm cách nào để có thể bảo mậ
 
 Trước khi chúng ta đi sâu vào nội dung chi tiết của việc bảo vệ tài liệu Word bằng mật khẩu, bạn sẽ cần một số thứ:
 
-1.  Aspose.Words for .NET: Đảm bảo bạn có thư viện Aspose.Words for .NET. Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Đảm bảo bạn có thư viện Aspose.Words for .NET. bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Visual Studio hoặc bất kỳ môi trường phát triển C# nào khác.
 3. Kiến thức C# cơ bản: Hiểu biết cơ bản về lập trình C#.
 4.  Aspose License: Nhận giấy phép từ[đây](https://purchase.aspose.com/buy)hoặc sử dụng một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) để đánh giá.
@@ -32,7 +32,7 @@ using System;
 
 ## Bước 1: Thiết lập dự án
 
-Trước khi có thể thêm bảo vệ bằng mật khẩu vào tài liệu của mình, bạn cần thiết lập dự án của mình. Bắt đầu nào.
+Trước khi có thể thêm bảo vệ bằng mật khẩu vào tài liệu của mình, bạn cần thiết lập dự án của mình. Hãy bắt đầu.
 
 ### Tạo một dự án mới
 
@@ -88,7 +88,7 @@ doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã thêm thành công tính năng bảo vệ bằng mật khẩu vào tài liệu Word của mình bằng Aspose.Words for .NET. Nó giống như việc có một khóa kỹ thuật số cho những tài liệu quan trọng nhất của bạn, đảm bảo chúng được an toàn trước những con mắt tò mò. Cho dù bạn đang bảo vệ thông tin nhạy cảm hay chỉ muốn thêm một lớp bảo mật bổ sung, Aspose.Words đều giúp việc này trở nên đơn giản và hiệu quả. Chúc mừng mã hóa!
+Và bạn có nó! Bạn đã thêm thành công tính năng bảo vệ bằng mật khẩu vào tài liệu Word của mình bằng Aspose.Words for .NET. Nó giống như việc có một khóa kỹ thuật số cho những tài liệu quan trọng nhất của bạn, đảm bảo chúng được an toàn trước những con mắt tò mò. Cho dù bạn đang bảo vệ thông tin nhạy cảm hay chỉ muốn thêm một lớp bảo mật bổ sung, Aspose.Words đều giúp việc này trở nên đơn giản và hiệu quả. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 

@@ -14,7 +14,7 @@ Aspose.Words voor Java is een robuuste bibliotheek waarmee Java-ontwikkelaars ge
 
 ## Documentwijzigingen begrijpen
 
-Voordat we ingaan op de implementatie, moeten we eerst begrijpen wat documentwijzigingen zijn. Documentwijzigingen omvatten bewerkingen, invoegingen, verwijderingen en opmaakwijzigingen die binnen een document worden aangebracht. Deze wijzigingen worden doorgaans bijgehouden met behulp van een revisiefunctie.
+Voordat we in de implementatie duiken, moeten we eerst begrijpen wat documentwijzigingen zijn. Documentwijzigingen omvatten bewerkingen, invoegingen, verwijderingen en opmaakwijzigingen die binnen een document worden aangebracht. Deze wijzigingen worden doorgaans bijgehouden met behulp van een revisiefunctie.
 
 ## Een document laden
 

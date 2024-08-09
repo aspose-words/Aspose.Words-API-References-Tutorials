@@ -104,4 +104,4 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.PageSavingCallback.png", imageSa
 大きなドキュメントの場合は、メモリ使用量を効率的に管理するために、ページをバッチで処理することを検討してください。
 
 ### Aspose.Words for .NET の詳細情報はどこで入手できますか?  
-チェックしてください[ドキュメンテーション](https://reference.aspose.com/words/net/)包括的なガイドと例については、こちらをご覧ください。
+チェックしてください[ドキュメント](https://reference.aspose.com/words/net/)包括的なガイドと例については、こちらをご覧ください。

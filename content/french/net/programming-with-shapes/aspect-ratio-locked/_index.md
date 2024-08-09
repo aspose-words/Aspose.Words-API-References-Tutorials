@@ -15,7 +15,7 @@ Vous êtes-vous déjà demandé comment conserver les proportions parfaites des 
 
 Avant de plonger dans le code, passons en revue ce dont vous avez besoin pour commencer :
 
-- Bibliothèque Aspose.Words pour .NET : vous devez avoir installé Aspose.Words pour .NET. Si ce n'est pas déjà fait, vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/).
+- Bibliothèque Aspose.Words pour .NET : vous devez avoir installé Aspose.Words pour .NET. Si ce n'est pas déjà fait, vous pouvez[téléchargez-le ici](https://releases.aspose.com/words/net/).
 - Environnement de développement : assurez-vous d'avoir configuré un environnement de développement .NET. Visual Studio est un choix populaire.
 - Connaissance de base de C# : Une certaine familiarité avec la programmation C# sera utile.
 
@@ -78,7 +78,7 @@ doc.Save(dataDir + "WorkingWithShapes.AspectRatioLocked.docx");
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez appris avec succès comment définir les proportions des formes dans les documents Word à l'aide d'Aspose.Words pour .NET. En suivant ces étapes, vous pouvez vous assurer que vos images et formes conservent leurs proportions, donnant ainsi à vos documents un aspect professionnel et soigné. N'hésitez pas à expérimenter différentes images et formes pour voir comment la fonction de verrouillage des proportions fonctionne dans divers scénarios.
+Félicitations! Vous avez appris avec succès comment définir les proportions des formes dans les documents Word à l'aide d'Aspose.Words pour .NET. En suivant ces étapes, vous pouvez vous assurer que vos images et formes conservent leurs proportions, donnant ainsi à vos documents un aspect professionnel et soigné. N'hésitez pas à expérimenter différentes images et formes pour voir comment la fonction de verrouillage des proportions fonctionne dans divers scénarios.
 
 ## FAQ
 

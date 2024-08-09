@@ -15,7 +15,7 @@ Készen áll arra, hogy Word dokumentumkezelési készségeit a következő szin
 
 Mielőtt belevetnénk magunkat a klónozási táblázatok finomságába, győződjön meg arról, hogy rendelkezik a következő előfeltételekkel:
 
-1. Aspose.Words for .NET telepítve: Győződjön meg arról, hogy az Aspose.Words for .NET telepítve van a gépén. Ha még nem telepítette, letöltheti a webhelyről[webhely](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET telepítve: Győződjön meg arról, hogy az Aspose.Words for .NET telepítve van a gépén. Ha még nem telepítette, letöltheti a webhelyről[telek](https://releases.aspose.com/words/net/).
 
 2. Visual Studio vagy bármilyen .NET IDE: A kód írásához és teszteléséhez fejlesztői környezetre van szüksége. A Visual Studio népszerű választás .NET-fejlesztéshez.
 

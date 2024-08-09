@@ -9,7 +9,7 @@ url: /id/java/using-document-elements/using-nodes/
 ---
 Dalam tutorial komprehensif ini, kita akan mempelajari dunia bekerja dengan node di Aspose.Words untuk Java. Node adalah elemen mendasar dari struktur dokumen, dan memahami cara memanipulasinya sangat penting untuk tugas pemrosesan dokumen. Kita akan mengeksplorasi berbagai aspek, termasuk mendapatkan node induk, menghitung node anak, serta membuat dan menambahkan node paragraf.
 
-## 1. Perkenalan
+## 1. Pendahuluan
 Aspose.Words for Java adalah perpustakaan yang kuat untuk bekerja dengan dokumen Word secara terprogram. Node mewakili berbagai elemen dalam dokumen Word, seperti paragraf, proses, bagian, dan banyak lagi. Dalam tutorial ini, kita akan mempelajari cara memanipulasi node ini secara efisien.
 
 ## 2. Memulai

@@ -10,7 +10,7 @@ url: /de/java/using-document-elements/using-nodes/
 In diesem umfassenden Tutorial tauchen wir in die Welt der Arbeit mit Knoten in Aspose.Words für Java ein. Knoten sind grundlegende Elemente der Struktur eines Dokuments, und das Verständnis ihrer Manipulation ist für die Dokumentverarbeitungsaufgaben von entscheidender Bedeutung. Wir werden verschiedene Aspekte untersuchen, darunter das Abrufen von übergeordneten Knoten, das Aufzählen von untergeordneten Knoten und das Erstellen und Hinzufügen von Absatzknoten.
 
 ## 1. Einleitung
-Aspose.Words für Java ist eine leistungsstarke Bibliothek für die programmgesteuerte Arbeit mit Word-Dokumenten. Knoten stellen verschiedene Elemente innerhalb eines Word-Dokuments dar, wie Absätze, Läufe, Abschnitte und mehr. In diesem Tutorial werden wir untersuchen, wie man diese Knoten effizient manipuliert.
+Aspose.Words für Java ist eine leistungsstarke Bibliothek für die programmgesteuerte Arbeit mit Word-Dokumenten. Knoten repräsentieren verschiedene Elemente innerhalb eines Word-Dokuments, wie Absätze, Läufe, Abschnitte und mehr. In diesem Tutorial werden wir untersuchen, wie man diese Knoten effizient manipuliert.
 
 ## 2. Erste Schritte
 Bevor wir in die Details eintauchen, richten wir eine grundlegende Projektstruktur mit Aspose.Words für Java ein. Stellen Sie sicher, dass Sie die Bibliothek in Ihrem Java-Projekt installiert und konfiguriert haben.

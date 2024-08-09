@@ -2,7 +2,7 @@
 title: 删除部分内容
 linktitle: 删除部分内容
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 删除 Word 文档中的节内容。本分步指南可确保高效的文档管理。
+description: 了解如何使用 Aspose.Words for .NET 删除 Word 文档中的部分内容。本分步指南可确保高效的文档管理。
 type: docs
 weight: 10
 url: /zh/net/working-with-section/delete-section-content/

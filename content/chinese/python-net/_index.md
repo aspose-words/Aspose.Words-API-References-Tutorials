@@ -37,7 +37,7 @@ Aspose.Words Python 教程指导开发人员实现文档处理工作流程自动
 ### [内容提取和操作](./content-extraction-and-manipulation/)
 通过 Aspose.Words 教程探索内容提取和操作的世界。了解如何使用 Python 和 .NET 高效地提取和操作内容，从而增强您的文档处理能力。
 ### [文档合并与比较](./document-combining-and-comparison/)
-发现使用 Aspose.Words for Python 和 .NET 进行文档合并和比较的全面教程。了解如何无缝合并和比较文档，从而增强文档处理工作流程。
+发现使用 Aspose.Words for Python 和 .NET 进行文档合并和比较的全面教程。了解如何无缝合并和比较文档，增强您的文档处理工作流程。
 ### [文档分割和格式化](./document-splitting-and-formatting/)
 探索 Aspose.Words 教程，了解如何使用 Python 和 .NET 进行文档拆分和格式化。学习如何高效地拆分和格式化文档，从而增强您的文档处理任务。 
 ### [文档选项和设置](./document-options-and-settings/)

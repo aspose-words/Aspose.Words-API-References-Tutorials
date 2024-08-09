@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-tables/set-relative-horizontal-or-vertical-position/
 ---
-## introduzione
+## Introduzione
 
 Ti sei mai sentito bloccato su come posizionare le tabelle nel modo desiderato nei tuoi documenti Word? Beh, non sei solo. Che tu stia creando un report professionale o una brochure elegante, allineare le tabelle può fare la differenza. È qui che Aspose.Words per .NET torna utile. Questo tutorial ti guiderà passo dopo passo su come impostare le posizioni relative orizzontali o verticali per le tabelle nei tuoi documenti Word. Immergiamoci!
 
@@ -83,7 +83,7 @@ Questo comando salva il documento modificato con un nuovo nome, assicurandoti di
 
 ## Conclusione
 
-E il gioco è fatto! Hai impostato con successo le relative posizioni orizzontali e verticali per una tabella in un documento di Word utilizzando Aspose.Words per .NET. Con questa nuova abilità, puoi migliorare il layout e la leggibilità dei tuoi documenti, rendendoli più professionali e raffinati. Continua a sperimentare posizioni diverse e scopri cosa funziona meglio per le tue esigenze.
+Ed ecco qua! Hai impostato con successo le relative posizioni orizzontali e verticali per una tabella in un documento di Word utilizzando Aspose.Words per .NET. Con questa nuova abilità, puoi migliorare il layout e la leggibilità dei tuoi documenti, rendendoli più professionali e raffinati. Continua a sperimentare posizioni diverse e scopri cosa funziona meglio per le tue esigenze.
 
 ## Domande frequenti
 

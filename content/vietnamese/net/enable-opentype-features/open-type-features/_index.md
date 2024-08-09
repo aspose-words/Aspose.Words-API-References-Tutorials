@@ -9,7 +9,7 @@ url: /vi/net/enable-opentype-features/open-type-features/
 ---
 ## Giới thiệu
 
-Bạn đã sẵn sàng đi sâu vào thế giới các tính năng OpenType bằng Aspose.Words cho .NET chưa? Hãy sẵn sàng vì chúng ta sắp bắt đầu một hành trình hấp dẫn không chỉ nâng cao tài liệu Word của bạn mà còn giúp bạn trở thành chuyên gia Aspose.Words. Bắt đầu nào!
+Bạn đã sẵn sàng đi sâu vào thế giới các tính năng OpenType bằng Aspose.Words cho .NET chưa? Hãy sẵn sàng vì chúng ta sắp bắt đầu một hành trình hấp dẫn không chỉ nâng cao tài liệu Word của bạn mà còn giúp bạn trở thành chuyên gia Aspose.Words. Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
@@ -90,7 +90,7 @@ Dòng mã này lưu tài liệu ở định dạng PDF, kết hợp các tính n
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã kích hoạt thành công các tính năng OpenType trong tài liệu Word của mình bằng Aspose.Words for .NET. Bằng cách làm theo các bước này, bạn có thể mở khóa các khả năng đánh máy nâng cao, đảm bảo tài liệu của bạn trông chuyên nghiệp và bóng bẩy.
+Và bạn có nó! Bạn đã kích hoạt thành công các tính năng OpenType trong tài liệu Word của mình bằng Aspose.Words for .NET. Bằng cách làm theo các bước này, bạn có thể mở khóa các khả năng đánh máy nâng cao, đảm bảo tài liệu của bạn trông chuyên nghiệp và bóng bẩy.
 
 Nhưng đừng dừng lại ở đây! Khám phá thêm các tính năng của Aspose.Words và xem cách bạn có thể nâng cao hơn nữa tài liệu của mình. Hãy nhớ rằng, luyện tập sẽ tạo nên sự hoàn hảo, vì vậy hãy tiếp tục thử nghiệm và học hỏi.
 

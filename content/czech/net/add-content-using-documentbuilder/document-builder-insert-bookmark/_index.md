@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/add-content-using-documentbuilder/document-builder-insert-bookmark/
 ---
-## Úvod
+## Zavedení
 
 Vytváření a správa dokumentů aplikace Word pomocí programu může někdy připadat jako procházení bludištěm. Ale s Aspose.Words pro .NET je to snadné! Tato příručka vás provede procesem vložení záložky do dokumentu aplikace Word pomocí knihovny Aspose.Words for .NET. Tak se připoutejte a pojďme se ponořit do světa automatizace dokumentů.
 
@@ -15,7 +15,7 @@ Vytváření a správa dokumentů aplikace Word pomocí programu může někdy p
 
 Než si ušpiníme ruce nějakým kódem, ujistěte se, že máme vše, co potřebujeme:
 
-1.  Aspose.Words for .NET: Stáhněte si a nainstalujte nejnovější verzi z[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Stáhněte si a nainstalujte nejnovější verzi z[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Ujistěte se, že máte IDE jako Visual Studio nastavené pro vývoj .NET.
 3. Základní znalost C#: Určitá znalost C# bude užitečná.
 
@@ -51,7 +51,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Tady,`Document` vytvoří novou instanci dokumentu a`DocumentBuilder` nám poskytuje nástroje pro přidávání obsahu do dokumentu.
+ Zde,`Document` vytvoří novou instanci dokumentu a`DocumentBuilder` nám poskytuje nástroje pro přidávání obsahu do dokumentu.
 
 ## Krok 3: Spusťte záložku
 
@@ -112,4 +112,4 @@ Ano, můžete přidat více záložek. Jen se ujistěte, že každá záložka m
 Absolutně! Do záložky můžete přidat text, tabulky, obrázky nebo jakékoli jiné prvky.
 
 ### Je Aspose.Words for .NET zdarma k použití?
-Aspose.Words for .NET je komerční produkt, ale můžete si stáhnout bezplatnou zkušební verzi z[tady](https://releases.aspose.com/).
+Aspose.Words for .NET je komerční produkt, ale můžete si stáhnout bezplatnou zkušební verzi z[zde](https://releases.aspose.com/).

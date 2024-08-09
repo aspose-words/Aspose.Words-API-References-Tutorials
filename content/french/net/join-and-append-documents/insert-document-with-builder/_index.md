@@ -104,7 +104,7 @@ En enregistrant le document, nous terminons le processus de fusion des deux docu
 
 ## Conclusion
 
-Et voila! Vous avez réussi à insérer un document dans un autre à l'aide d'Aspose.Words pour .NET. Cette méthode est non seulement efficace mais préserve également le formatage des deux documents, garantissant une fusion transparente. Que vous travailliez sur un projet ponctuel ou que vous ayez besoin d'automatiser le traitement de documents, Aspose.Words for .NET est là pour vous.
+Et voilà ! Vous avez réussi à insérer un document dans un autre à l'aide d'Aspose.Words pour .NET. Cette méthode est non seulement efficace mais préserve également le formatage des deux documents, garantissant une fusion transparente. Que vous travailliez sur un projet ponctuel ou que vous ayez besoin d'automatiser le traitement de documents, Aspose.Words for .NET est là pour vous.
 
 ## FAQ
 
@@ -121,4 +121,4 @@ Aspose.Words for .NET est une bibliothèque puissante qui permet aux développeu
 Absolument! La méthode décrite peut être intégrée à des applications plus vastes pour automatiser les tâches de traitement de documents.
 
 ### Où puis-je trouver plus de ressources et d’assistance ?  
-Pour plus d'informations, vous pouvez consulter le[Documentation](https://reference.aspose.com/words/net/) , ou visitez le[forum d'entraide](https://forum.aspose.com/c/words/8) à l'aide.
+Pour plus d'informations, vous pouvez consulter le[documentation](https://reference.aspose.com/words/net/) , ou visitez le[forum d'assistance](https://forum.aspose.com/c/words/8) pour obtenir de l'aide.

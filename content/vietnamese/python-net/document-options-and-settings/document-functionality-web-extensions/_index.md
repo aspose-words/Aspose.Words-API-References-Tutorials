@@ -133,4 +133,4 @@ Aspose.Words hỗ trợ nhiều định dạng khác nhau để lưu tài liệu
 
 ### Có cách nào để tối ưu hóa hiệu suất của tiện ích mở rộng web không?
 
-Để tối ưu hóa hiệu suất của tiện ích mở rộng web, hãy giảm thiểu các yêu cầu bên ngoài, sử dụng tính năng tải không đồng bộ và thực hiện kiểm tra kỹ lưỡng trên các trình duyệt và thiết bị khác nhau.
+Để tối ưu hóa hiệu suất của tiện ích mở rộng web, hãy giảm thiểu các yêu cầu bên ngoài, sử dụng tải không đồng bộ và thực hiện kiểm tra kỹ lưỡng trên các trình duyệt và thiết bị khác nhau.

@@ -77,7 +77,7 @@ Cela enregistrera le document modifié sous un nouveau nom, garantissant ainsi d
 
 ## Conclusion
 
-Et voila! En quelques étapes simples, vous avez appris à automatiser le processus d'affichage des erreurs grammaticales et orthographiques dans un document Word à l'aide d'Aspose.Words pour .NET. Cela vous fait non seulement gagner du temps, mais garantit également que vos documents sont exempts d'erreurs et professionnels.
+Et voilà ! En quelques étapes simples, vous avez appris à automatiser le processus d'affichage des erreurs grammaticales et orthographiques dans un document Word à l'aide d'Aspose.Words pour .NET. Cela vous fait non seulement gagner du temps, mais garantit également que vos documents sont exempts d'erreurs et professionnels.
 
  À propos, si vous n'avez pas encore essayé Aspose.Words pour .NET, vous pouvez télécharger un essai gratuit[ici](https://releases.aspose.com/) . Si vous devez acheter une licence, vous pouvez le faire[ici](https://purchase.aspose.com/buy) Et si jamais vous avez besoin d'aide, n'hésitez pas à visiter leur[forum](https://forum.aspose.com/c/words/8).
 

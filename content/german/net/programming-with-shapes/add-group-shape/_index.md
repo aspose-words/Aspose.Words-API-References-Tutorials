@@ -131,7 +131,7 @@ Das Hinzufügen von Gruppenformen zu Ihren Word-Dokumenten muss kein kompliziert
  Sie können die`GroupShape` durch Einstellen seiner`Left`Und`Top` Eigenschaften.
 
 ### Kann ich den Formen innerhalb der Gruppenform Text hinzufügen?
- Ja, Sie können Text zu Formen hinzufügen, indem Sie`AppendChild` Methode zum Hinzufügen eines`Paragraph` enthaltend`Run` Knoten mit Text.
+ Ja, Sie können Text zu Formen hinzufügen mit dem`AppendChild` Methode zum Hinzufügen eines`Paragraph` enthaltend`Run` Knoten mit Text.
 
 ### Ist es möglich, Formen dynamisch basierend auf Benutzereingaben zu gruppieren?
 Ja, Sie können Formen dynamisch basierend auf Benutzereingaben erstellen und gruppieren, indem Sie die Eigenschaften und Methoden entsprechend anpassen.

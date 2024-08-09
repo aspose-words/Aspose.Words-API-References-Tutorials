@@ -61,8 +61,8 @@ Leer hoe u alinea's en tekst in Word-documenten kunt opmaken met Aspose.Words vo
 ### [Documentrevisies volgen en beoordelen](./document-revisions/)
 Leer hoe u documentrevisies kunt bijhouden en beoordelen met Aspose.Words voor Python. Stap-voor-stap handleiding met broncode voor efficiënt samenwerken. Verbeter vandaag nog uw documentbeheer!
 ### [Documentsecties en lay-out beheren](./document-sections/)
-Leer hoe u documentsecties en lay-outs beheert met Aspose.Words voor Python. Creëer, wijzig secties, pas lay-outs aan en meer. Begin nu! 
+Leer hoe u documentsecties en lay-outs beheert met Aspose.Words voor Python. Creëer, wijzig secties, pas lay-outs aan en meer. Ga nu aan de slag! 
 ### [Visuele inhoud verbeteren met tekstvakken in Word-documenten](./document-textboxes/)
 Verbeter documentvisuals met Aspose.Words Python! Leer stap voor stap hoe u tekstvakken in Word-documenten kunt maken en aanpassen. Verbeter de lay-out, opmaak en stijl van de inhoud voor aantrekkelijke documenten.
 ### [Geavanceerde automatisering ontgrendelen met VBA-macro's in Word-documenten](./document-vba-macros/)
-Ontgrendel geavanceerde automatisering in Word-documenten met Aspose.Words Python API en VBA-macro's. Leer stap voor stap met de broncode en veelgestelde vragen. Verbeter nu de productiviteit. Toegang op[Koppeling].
+Ontgrendel geavanceerde automatisering in Word-documenten met Aspose.Words Python API en VBA-macro's. Leer stap voor stap met de broncode en veelgestelde vragen. Verbeter nu de productiviteit. Toegang op[Link].

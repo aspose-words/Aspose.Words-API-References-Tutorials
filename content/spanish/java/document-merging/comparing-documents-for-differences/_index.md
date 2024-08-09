@@ -10,7 +10,7 @@ url: /es/java/document-merging/comparing-documents-for-differences/
 
 ## Introducción a la comparación de documentos en busca de diferencias
 
-En el mundo en constante evolución de la gestión de documentos, garantizar la precisión y coherencia de sus documentos es primordial. Ya sea que esté tratando con contratos legales, informes financieros o simplemente realizando un seguimiento de las revisiones de sus documentos, la capacidad de comparar documentos en busca de diferencias es una característica crucial. Esta guía paso a paso lo guiará a través del proceso de comparar documentos en busca de diferencias utilizando Aspose.Words para Java, una poderosa API para trabajar con documentos de Word.
+En el mundo en constante evolución de la gestión de documentos, garantizar la precisión y coherencia de sus documentos es primordial. Ya sea que esté tratando con contratos legales, informes financieros o simplemente realizando un seguimiento de las revisiones de sus documentos, la capacidad de comparar documentos en busca de diferencias es una característica crucial. Esta guía paso a paso lo guiará a través del proceso de comparar documentos en busca de diferencias utilizando Aspose.Words para Java, una potente API para trabajar con documentos de Word.
 
 ## Requisitos previos
 
@@ -50,7 +50,7 @@ comparer.compare();
 
 ## Paso 3: guarde el resultado de la comparación
 
-Después de comparar los documentos, querrás guardar el resultado. Aspose.Words le permite guardar el resultado de la comparación como un documento nuevo. Así es cómo:
+Después de comparar los documentos, querrás guardar el resultado. Aspose.Words le permite guardar el resultado de la comparación como un documento nuevo. He aquí cómo:
 
 ```java
 // Guarde el resultado de la comparación

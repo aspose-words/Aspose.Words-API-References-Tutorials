@@ -34,7 +34,7 @@ using Aspose.Words;
 
 ## الخطوة 1: قم بإعداد مشروعك
 
-أول الأشياء أولاً، قم بإعداد مشروع C# الخاص بك في Visual Studio. إليك الطريقة:
+أول الأشياء أولاً، قم بإعداد مشروع C# الخاص بك في Visual Studio. وإليك الطريقة:
 
 1. إنشاء مشروع جديد: افتح Visual Studio، وانتقل إلى ملف > جديد > المشروع، وحدد تطبيق وحدة التحكم (.NET Core أو .NET Framework).
 2. تثبيت Aspose.Words: انقر بزر الماوس الأيمن على مشروعك في Solution Explorer، وحدد "إدارة حزم NuGet"، وابحث عن "Aspose.Words"، وقم بتثبيته.
@@ -51,7 +51,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## الخطوة 3: احصل على نوع الحماية
 
-هذا هو المكان الذي يحدث السحر! سنقوم باسترداد نوع الحماية للمستند باستخدام Aspose.Words.
+هذا هو المكان الذي يحدث فيه السحر! سنقوم باسترداد نوع الحماية للمستند باستخدام Aspose.Words.
 
 ```csharp
 ProtectionType protectionType = doc.ProtectionType;
@@ -67,7 +67,7 @@ Console.WriteLine("The protection type of the document is: " + protectionType);
 
 ## خاتمة
 
-وهناك لديك! لقد نجحت في استرداد نوع الحماية لمستند Word باستخدام Aspose.Words لـ .NET. يمكن أن يكون هذا مفيدًا بشكل لا يصدق لضمان تأمين مستنداتك بشكل صحيح أو لأغراض التدقيق فقط. تذكر أن Aspose.Words يقدم الكثير من الميزات الأخرى التي يمكن أن تساعدك في التعامل مع مستندات Word بسهولة. جربها، وترميز سعيد!
+وهنا لديك! لقد نجحت في استرداد نوع الحماية لمستند Word باستخدام Aspose.Words لـ .NET. يمكن أن يكون هذا مفيدًا بشكل لا يصدق لضمان تأمين مستنداتك بشكل صحيح أو لأغراض التدقيق فقط. تذكر أن Aspose.Words يقدم الكثير من الميزات الأخرى التي يمكن أن تساعدك في التعامل مع مستندات Word بسهولة. جربها، وترميز سعيد!
 
 ## الأسئلة الشائعة
 
@@ -75,7 +75,7 @@ Console.WriteLine("The protection type of the document is: " + protectionType);
 Aspose.Words for .NET هي مكتبة قوية تتيح لك إنشاء مستندات Word وتحريرها وتحويلها ومعالجتها برمجيًا.
 
 ### هل يمكنني استخدام Aspose.Words مجانًا؟
- يمكنك البدء بـ أ[تجربة مجانية](https://releases.aspose.com/) ، ولكن للحصول على الوظائف الكاملة، ستحتاج إلى شراء ترخيص. تفحص ال[خيارات الشراء](https://purchase.aspose.com/buy).
+ يمكنك البدء بـ أ[تجربة مجانية](https://releases.aspose.com/) ، ولكن للحصول على الوظائف الكاملة، ستحتاج إلى شراء ترخيص. تحقق من[خيارات الشراء](https://purchase.aspose.com/buy).
 
 ### ما هي أنواع الحماية التي يمكن لـ Aspose.Words اكتشافها؟
 يمكن لـ Aspose.Words اكتشاف أنواع الحماية المختلفة مثل NoProtection وReadOnly وAllowOnlyRevisions وAllowOnlyComments وAllowOnlyFormFields.

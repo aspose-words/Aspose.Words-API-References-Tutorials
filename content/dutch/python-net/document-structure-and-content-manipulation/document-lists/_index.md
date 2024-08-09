@@ -16,7 +16,7 @@ Lijsten zijn er in twee hoofdtypen: met opsommingstekens en genummerd. Hiermee k
 
 ## De omgeving instellen
 
-Voordat we dieper ingaan op het maken en behiern van lijsten, moet u ervoor zorgen dat de Aspose.Words voor Python-bibliotheek is geïnstalleerd. Je kunt het downloaden van[here](https://releases.aspose.com/words/python/) . Raadpleeg bovendien de API-documentatie op[deze link](https://reference.aspose.com/words/python-net/) voor gedetailleerde informatie.
+Voordat we dieper ingaan op het maken en behiern van lijsten, moet u ervoor zorgen dat de Aspose.Words voor Python-bibliotheek is geïnstalleerd. Je kunt het downloaden van[here](https://releases.aspose.com/words/python/) . Raadpleeg bovendien de API-documentatie op[deze koppeling](https://reference.aspose.com/words/python-net/) voor gedetailleerde informatie.
 
 ## Lijsten met opsommingstekens maken
 
@@ -115,7 +115,7 @@ In deze zelfstudie hebben we onderzocht hoe u lijsten in Word-documenten kunt ma
 ## Veelgestelde vragen
 
 ### Hoe installeer ik Aspose.Words voor Python?
- U kunt de bibliotheek downloaden van[deze link](https://releases.aspose.com/words/python/) en volg de installatie-instructies in de documentatie.
+ U kunt de bibliotheek downloaden van[deze koppeling](https://releases.aspose.com/words/python/) en volg de installatie-instructies in de documentatie.
 
 ### Kan ik de nummeringsstijl voor mijn lijsten aanpassen?
 Absoluut! Met Aspose.Words Python kunt u nummeringsformaten, opsommingstekens en uitlijning aanpassen om uw lijsten aan uw specifieke behoeften aan te passen.

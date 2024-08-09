@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fields/get-mail-merge-field-names/
 ---
-## Úvod
+## Zavedení
 
 Vítejte v této příručce o extrahování názvů polí hromadné korespondence z dokumentu aplikace Word pomocí Aspose.Words for .NET. Pole hromadné korespondence jsou nezbytná, ať už generujete personalizované dopisy, vytváříte vlastní sestavy nebo jednoduše automatizujete pracovní toky dokumentů. Fungují jako zástupné symboly ve vašem dokumentu, které jsou během procesu sloučení nahrazeny skutečnými daty. Pokud pracujete s Aspose.Words pro .NET, máte štěstí – tato výkonná knihovna neuvěřitelně usnadňuje interakci s těmito poli. V tomto kurzu projdeme jednoduchým, ale účinným způsobem, jak načíst názvy polí hromadné korespondence v dokumentu, což vám umožní lépe porozumět a spravovat operace hromadné korespondence.
 
@@ -90,9 +90,9 @@ Tento řádek kódu vytiskne celkový počet polí hromadné korespondence v dok
 
 ## Závěr
 
-Gratulujeme! Nyní jste se naučili, jak extrahovat názvy polí hromadné korespondence z dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato technika je cenným nástrojem pro správu a automatizaci pracovních toků dokumentů, což usnadňuje práci s personalizovaným obsahem. Pomocí těchto kroků můžete efektivně identifikovat pole hromadné korespondence v dokumentech a pracovat s nimi.
+Gratuluji! Nyní jste se naučili, jak extrahovat názvy polí hromadné korespondence z dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato technika je cenným nástrojem pro správu a automatizaci pracovních toků dokumentů, což usnadňuje práci s personalizovaným obsahem. Pomocí těchto kroků můžete efektivně identifikovat pole hromadné korespondence v dokumentech a pracovat s nimi.
 
- Pokud máte nějaké dotazy nebo potřebujete další pomoc, neváhejte prozkoumat[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) nebo se připojte k[Aspose komunita](https://forum.aspose.com/c/words/8) pro podporu. Šťastné kódování!
+ Pokud máte nějaké dotazy nebo potřebujete další pomoc, neváhejte prozkoumat[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) nebo se připojte k[Aspose komunita](https://forum.aspose.com/c/words/8) za podporu. Šťastné kódování!
 
 ## FAQ
 

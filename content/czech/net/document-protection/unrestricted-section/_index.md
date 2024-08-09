@@ -7,9 +7,9 @@ type: docs
 weight: 10
 url: /cs/net/document-protection/unrestricted-section/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Jste připraveni ponořit se do světa Aspose.Words pro .NET? Dnes řešíme něco super praktického: jak odemknout konkrétní sekce v dokumentu aplikace Word a zároveň zachovat ochranu ostatních částí. Pokud jste někdy potřebovali zabezpečit některé části vašeho dokumentu, ale ostatní jste nechali otevřené pro úpravy, tento návod je pro vás. Začněme!
+Ahoj! Jste připraveni ponořit se do světa Aspose.Words pro .NET? Dnes řešíme něco super praktického: jak odemknout konkrétní sekce v dokumentu aplikace Word a zároveň zachovat ochranu ostatních částí. Pokud jste někdy potřebovali zabezpečit některé části vašeho dokumentu, ale ostatní jste nechali otevřené pro úpravy, tento návod je pro vás. Začněme!
 
 ## Předpoklady
 
@@ -135,7 +135,7 @@ Ano, podle potřeby můžete selektivně chránit a zrušit ochranu více sekcí
 Ano, dokument můžete znovu otevřít a upravit nastavení ochrany podle potřeby.
 
 ### Jaké další typy ochrany jsou dostupné v Aspose.Words?
- Aspose.Words podporuje několik typů ochrany včetně`ReadOnly`, `Comments` , a`TrackedChanges`.
+ Aspose.Words podporuje několik typů ochrany včetně`ReadOnly`, `Comments` a`TrackedChanges`.
 
 ### Mohu chránit dokument bez hesla?
 Ano, dokument můžete chránit bez zadání hesla.

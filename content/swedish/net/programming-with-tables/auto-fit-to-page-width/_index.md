@@ -46,7 +46,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
- I det här steget definierar du sökvägen där ditt dokument lagras och laddar det i en`Document` objekt. Byta ut`"YOUR DOCUMENT DIRECTORY"`med den faktiska sökvägen där ditt dokument finns.
+ I det här steget definierar du sökvägen där ditt dokument lagras och laddar det i en`Document` objekt. Ersätta`"YOUR DOCUMENT DIRECTORY"`med den faktiska sökvägen där ditt dokument finns.
 
 ## Steg 2: Gå till tabellen
 

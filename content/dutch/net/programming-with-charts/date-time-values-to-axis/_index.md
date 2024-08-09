@@ -67,7 +67,7 @@ chart.Series.Clear();
 
 ## Stap 5: Voeg datum- en tijdwaarden toe aan de reeks
 
-Voeg uw datum- en tijdwaarden toe aan de diagramserie. Deze stap omvat het maken van arrays voor datums en bijbehorende waarden.
+Voeg uw datum- en tijdwaarden toe aan de diagramreeks. Deze stap omvat het maken van arrays voor datums en bijbehorende waarden.
 
 ```csharp
 chart.Series.Add("Aspose Series 1",

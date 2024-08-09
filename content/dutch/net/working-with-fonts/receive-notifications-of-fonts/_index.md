@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /nl/net/working-with-fonts/receive-notifications-of-fonts/
 ---
-
+## Invoering
 
 Als u ooit problemen heeft ondervonden waarbij lettertypen niet correct werden weergegeven in uw documenten, bent u niet de enige. Het beheren van lettertype-instellingen en het ontvangen van meldingen over lettertypevervangingen kan u veel kopzorgen besparen. In deze uitgebreide handleiding onderzoeken we hoe u met lettertypemeldingen omgaat met Aspose.Words voor .NET, zodat uw documenten er altijd op hun best uitzien.
 
@@ -61,7 +61,7 @@ fontSettings.SetFontsFolder(string.Empty, false);
 
 ## Stap 4: Stel de waarschuwingscallback in
 
- Om waarschuwingen voor lettertypevervanging vast te leggen en af te handelen, maakt u een klasse die de`IWarningCallback` koppel. Deze klasse registreert alle waarschuwingen die optreden tijdens de documentverwerking.
+ Om waarschuwingen voor lettertypevervanging vast te leggen en af te handelen, maakt u een klasse die de`IWarningCallback` interface. Deze klasse registreert alle waarschuwingen die optreden tijdens de documentverwerking.
 
 ```csharp
 public class HandleDocumentWarnings : IWarningCallback
@@ -113,11 +113,11 @@ Nee, u kunt slechts één standaardlettertype ter vervanging opgeven. U kunt ech
 
 ###  Vraag 3: Kan ik andere soorten waarschuwingen verwerken?`IWarningCallback`?
 
- Ja de`IWarningCallback`interface kan verschillende soorten waarschuwingen verwerken, niet alleen lettertypevervanging.
+ Ja, de`IWarningCallback`interface kan verschillende soorten waarschuwingen verwerken, niet alleen lettertypevervanging.
 
 ### V4: Waar kan ik ondersteuning vinden voor Aspose.Words?
 
- Bezoek de[Aspose.Words-ondersteuningsforum](https://forum.aspose.com/c/words/8) Voor assistentie.
+ Bezoek de[Aspose.Words-ondersteuningsforum](https://forum.aspose.com/c/words/8) voor hulp.
 
 ### V5: Is het mogelijk om een tijdelijke licentie voor Aspose.Words te krijgen?
 

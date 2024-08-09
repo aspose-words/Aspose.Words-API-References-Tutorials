@@ -106,8 +106,8 @@ doc.getFirstSection().getBody().getFirstParagraph().appendChild(group);
 Możesz kontrolować kolejność wyświetlania kształtów, korzystając z kolejności Z:
 
 ```java
-shape1.setZOrder(1); // Przesuń na wierzch
-shape2.setZOrder(0); // Wyślij wstecz
+shape1.setZOrder(1); // Wysuń na przód
+shape2.setZOrder(0); // Wyślij do tyłu
 ```
 
 ## Zapisywanie dokumentu
@@ -161,7 +161,7 @@ shape.setFillColor(Color.GREEN);
 
 ### Czy mogę dodać tekst do kształtu?
 
- Tak, możesz dodać tekst wewnątrz kształtu. Użyj`getTextPath` właściwość kształtu, aby ustawić tekst i dostosować jego formatowanie.
+ Tak, możesz dodać tekst wewnątrz kształtu. Skorzystaj z`getTextPath` właściwość kształtu, aby ustawić tekst i dostosować jego formatowanie.
 
 ### Jak mogę ułożyć kształty w określonej kolejności?
 

@@ -106,7 +106,7 @@ doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
 ## GYIK
 
 ### Hogyan illeszthetek be különböző típusú alakzatokat?
-Meg tudod változtatni a`ShapeType` ban,-ben`InsertShape` különböző típusú formák, például körök, téglalapok és nyilak beszúrásának módszere.
+Meg tudod változtatni a`ShapeType` a`InsertShape` különböző típusú formák, például körök, téglalapok és nyilak beszúrásának módszere.
 
 ### Hozzáadhatok szöveget az alakzatokhoz?
  Igen, használhatod a`builder.Write` módszer szöveg hozzáadására az alakzatokba azok beillesztése után.

@@ -16,7 +16,7 @@ Salut les passionnés de technologie ! Êtes-vous prêt à explorer le monde fa
 
 Avant de commencer à coder, assurons-nous que vous disposez de tout ce dont vous avez besoin pour suivre :
 
-1.  Bibliothèque Aspose.Words pour .NET : vous aurez besoin de la dernière version d'Aspose.Words pour .NET. Si ce n'est pas déjà fait, vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/).
+1.  Bibliothèque Aspose.Words pour .NET : vous aurez besoin de la dernière version d'Aspose.Words pour .NET. Si ce n'est pas déjà fait, vous pouvez[téléchargez-le ici](https://releases.aspose.com/words/net/).
 2. Environnement de développement : Un environnement de développement .NET comme Visual Studio sera essentiel pour écrire et tester votre code.
 3. Connaissances de base en C# : une compréhension de base de C# sera utile lorsque nous parcourrons le code.
 4. Exemple de répertoire de documents : préparez un répertoire dans lequel vous enregistrerez vos documents Word. C'est ici que la magie opère !
@@ -116,9 +116,9 @@ Cette ligne enregistre le document sous le nom « WorkingWithVba.CreateVbaProjec
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez créé avec succès un projet VBA dans un document Word à l'aide d'Aspose.Words pour .NET. Ce didacticiel couvre tout, de la configuration de votre environnement à l'écriture et à l'enregistrement du code VBA. Avec Aspose.Words, vous pouvez automatiser des tâches, créer des macros et personnaliser vos documents Word d'une manière que vous n'auriez jamais cru possible.
+Félicitations! Vous avez créé avec succès un projet VBA dans un document Word à l'aide d'Aspose.Words pour .NET. Ce didacticiel couvre tout, de la configuration de votre environnement à l'écriture et à l'enregistrement du code VBA. Avec Aspose.Words, vous pouvez automatiser des tâches, créer des macros et personnaliser vos documents Word d'une manière que vous n'auriez jamais cru possible.
 
- Si vous avez envie d'explorer davantage, le[Documentation API](https://reference.aspose.com/words/net/) est un trésor d'informations. Et si jamais tu as besoin d'aide, le[forum d'entraide](https://forum.aspose.com/c/words/8) est à portée de clic.
+ Si vous avez envie d'explorer davantage, le[Documentation API](https://reference.aspose.com/words/net/) est un trésor d'informations. Et si jamais tu as besoin d'aide, le[forum d'assistance](https://forum.aspose.com/c/words/8) est à portée de clic.
 
 Bon codage, et rappelez-vous, la seule limite est votre imagination !
 

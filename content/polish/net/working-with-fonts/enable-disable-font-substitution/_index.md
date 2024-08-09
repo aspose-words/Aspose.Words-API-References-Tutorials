@@ -2,88 +2,115 @@
 title: Włącz opcję Wyłącz zastępowanie czcionek
 linktitle: Włącz opcję Wyłącz zastępowanie czcionek
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: tym samouczku dowiesz się, jak włączyć lub wyłączyć zastępowanie czcionek w dokumencie programu Word za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak włączyć lub wyłączyć zastępowanie czcionek w dokumentach programu Word za pomocą Aspose.Words dla .NET. Upewnij się, że Twoje dokumenty wyglądają spójnie na wszystkich platformach.
 type: docs
 weight: 10
 url: /pl/net/working-with-fonts/enable-disable-font-substitution/
 ---
-W tym samouczku przeprowadzimy Cię przez proces włączania lub wyłączania zastępowania czcionek w dokumencie programu Word podczas jego renderowania przy użyciu biblioteki Aspose.Words dla platformy .NET. Włączenie lub wyłączenie zastępowania czcionek pozwala kontrolować, czy brakujące czcionki są automatycznie zastępowane czcionką domyślną. Poprowadzimy Cię krok po kroku, aby pomóc Ci zrozumieć i wdrożyć kod w Twoim projekcie .NET.
+## Wstęp
+
+Czy kiedykolwiek znalazłeś się w sytuacji, w której starannie wybrane czcionki w dokumencie programu Word są zastępowane podczas przeglądania na innym komputerze? Irytujące, prawda? Dzieje się tak na skutek zastępowania czcionek – procesu, podczas którego system zastępuje brakującą czcionkę dostępną. Ale nie martw się! Dzięki Aspose.Words dla .NET możesz łatwo zarządzać i kontrolować podstawianie czcionek. W tym samouczku przeprowadzimy Cię przez kroki umożliwiające włączenie lub wyłączenie zastępowania czcionek w dokumentach programu Word, dzięki czemu Twoje dokumenty zawsze będą wyglądać dokładnie tak, jak chcesz.
 
 ## Warunki wstępne
-Zanim zaczniesz, upewnij się, że masz następujące elementy:
-- Praktyczna znajomość języka programowania C#
-- Biblioteka Aspose.Words dla .NET zainstalowana w Twoim projekcie
-- Dokument programu Word, który chcesz renderować z podstawieniem czcionek lub bez
 
-## Krok 1: Zdefiniuj katalog dokumentów
- Najpierw musisz ustawić ścieżkę katalogu do lokalizacji dokumentu programu Word. Zastępować`"YOUR DOCUMENT DIRECTORY"` w kodzie odpowiednią ścieżką.
+Zanim przejdziesz do kolejnych kroków, upewnij się, że masz wszystko, czego potrzebujesz:
+
+-  Aspose.Words dla .NET: Pobierz najnowszą wersję[Tutaj](https://releases.aspose.com/words/net/).
+- Visual Studio: dowolna wersja obsługująca platformę .NET.
+- Podstawowa znajomość języka C#: Pomoże Ci to w podążaniu za przykładami kodowania.
+
+## Importuj przestrzenie nazw
+
+Aby rozpocząć, upewnij się, że w projekcie zaimportowano niezbędne przestrzenie nazw. Dodaj je na górze pliku C#:
 
 ```csharp
-// Ścieżka do katalogu dokumentów
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Krok 2: Prześlij dokument i skonfiguruj ustawienia czcionki
- Następnie załadujemy dokument programu Word, który chcesz wyrenderować, i utworzymy instancję pliku`FontSettings` klasa do obsługi ustawień czcionek. Ustawimy domyślne zastąpienie czcionki, określając nazwę czcionki w`DefaultFontName` i wyłącz zastępowanie informacji o czcionce za pomocą`Enabled` Ustawić`false`.
+Podzielmy teraz proces na proste, łatwe do wykonania kroki.
+
+## Krok 1: Skonfiguruj swój projekt
+
+Najpierw skonfiguruj nowy projekt w Visual Studio i dodaj odwołanie do biblioteki Aspose.Words for .NET. Jeśli jeszcze tego nie zrobiłeś, pobierz go z[Strona Aspose](https://releases.aspose.com/words/net/).
+
+## Krok 2: Załaduj swój dokument
+
+Następnie załaduj dokument, z którym chcesz pracować. Oto jak to zrobić:
 
 ```csharp
-// Załaduj dokument
-Document doc = new Document(dataDir + "Rendering.docx");
-
-// Skonfiguruj ustawienia czcionek
-FontSettings fontSettings = new FontSettings();
-fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
-fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
-
-// Zastosuj ustawienia czcionki do dokumentu
-doc.FontSettings = fontSettings;
-```
-
-## Krok 3: Zapisz wyrenderowany dokument
-Na koniec zapiszemy wyrenderowany dokument, który będzie uwzględniał zdefiniowane ustawienia zastępowania czcionek.
-
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
-```
-
-
-### Przykładowy kod źródłowy opcji Włącz wyłączanie zastępowania czcionek przy użyciu Aspose.Words dla .NET 
-
-```csharp
-
 // Ścieżka do katalogu dokumentów
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
-FontSettings fontSettings = new FontSettings();
-fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
-fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
-doc.FontSettings = fontSettings;
-doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
+```
 
+ Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu dokumentów. Ten kod ładuje dokument do pamięci, dzięki czemu można nim manipulować.
+
+## Krok 3: Skonfiguruj ustawienia czcionek
+
+ Teraz utwórzmy`FontSettings` obiekt do zarządzania ustawieniami zastępowania czcionek:
+
+```csharp
+FontSettings fontSettings = new FontSettings();
+```
+
+## Krok 4: Ustaw domyślne zastępowanie czcionek
+
+Ustaw domyślną zamianę czcionki na wybraną czcionkę. Ta czcionka zostanie użyta, jeśli oryginalna czcionka nie jest dostępna:
+
+```csharp
+fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
+```
+
+W tym przykładzie używamy czcionki Arial jako domyślnej czcionki.
+
+## Krok 5: Wyłącz zastępowanie informacji o czcionkach
+
+Aby wyłączyć podstawianie informacji o czcionkach, co uniemożliwia systemowi zastępowanie brakujących czcionek dostępnymi, użyj następującego kodu:
+
+```csharp
+fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
+```
+
+## Krok 6: Zastosuj ustawienia czcionki do dokumentu
+
+Teraz zastosuj te ustawienia do swojego dokumentu:
+
+```csharp
+doc.FontSettings = fontSettings;
+```
+
+## Krok 7: Zapisz swój dokument
+
+Na koniec zapisz zmodyfikowany dokument. Możesz zapisać go w dowolnym formacie. Na potrzeby tego samouczka zapiszemy go w formacie PDF:
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 ```
 
 ## Wniosek
-W tym samouczku widzieliśmy, jak włączyć lub wyłączyć zastępowanie czcionek w dokumencie programu Word podczas renderowania go za pomocą Aspose.Words dla .NET. Kontrolując zastępowanie czcionek, możesz wpływać na sposób obsługi brakujących czcionek w renderowanych dokumentach. Nie wahaj się użyć tej funkcji, aby dostosować zarządzanie czcionkami w dokumentach Word.
 
-### Często zadawane pytania
+I masz to! Wykonując poniższe kroki, możesz łatwo kontrolować zastępowanie czcionek w dokumentach programu Word za pomocą Aspose.Words dla .NET. Dzięki temu Twoje dokumenty zachowają zamierzony wygląd i styl, niezależnie od tego, gdzie są przeglądane.
 
-#### P: Jak mogę włączyć zastępowanie czcionek w dokumencie Word za pomocą Aspose.Words?
+## Często zadawane pytania
 
-Odp.: Aby włączyć zastępowanie czcionek w dokumencie Word za pomocą Aspose.Words, możesz użyć interfejsu API w celu określenia czcionek zastępczych, które mają być używane, gdy wymagane czcionki nie są dostępne. Zapewni to spójną wizualizację tekstu, nawet bez oryginalnych czcionek.
+### Czy w zamian mogę użyć czcionek innych niż Arial?
 
-#### P: Czy można wyłączyć zastępowanie czcionek w dokumencie Word za pomocą Aspose.Words?
+ Absolutnie! Możesz określić dowolną czcionkę dostępną w systemie, zmieniając nazwę czcionki w pliku`DefaultFontName` nieruchomość.
 
-Odp.: Tak, za pomocą Aspose.Words możesz wyłączyć podstawianie czcionek w dokumencie Word. Korzystając z API, możesz uniemożliwić programowi Word zastępowanie wymaganych czcionek innymi czcionkami, co pozwala zachować oryginalny wygląd tekstu.
+### Co się stanie, jeśli określona domyślna czcionka nie będzie dostępna?
 
-#### P: Co się stanie, jeśli podczas zastępowania w dokumencie programu Word zabraknie wymaganych czcionek?
+Jeśli domyślna czcionka nie jest dostępna, Aspose.Words użyje systemowego mechanizmu awaryjnego, aby znaleźć odpowiedni zamiennik.
 
-Odp.: Jeśli podczas zastępowania w dokumencie Word brakuje wymaganych czcionek, Aspose.Words może wykryć ten problem i udostępnić opcje jego rozwiązania. Możesz zastąpić brakujące czcionki czcionkami alternatywnymi lub dołączyć brakujące czcionki do dokumentu, zapewniając prawidłowe przeglądanie.
+### Czy mogę ponownie włączyć funkcję zastępowania czcionek po jej wyłączeniu?
 
-#### P: Jak mogę sobie poradzić z brakującymi czcionkami podczas zastępowania w dokumencie Word za pomocą Aspose.Words?
+ Tak, możesz przełączyć`Enabled` własność`FontInfoSubstitution` z powrotem do`true` jeśli chcesz ponownie włączyć podstawianie czcionek.
 
-Odp.: Aby obsłużyć brakujące czcionki podczas zastępowania w dokumencie Word za pomocą Aspose.Words, możesz użyć interfejsu API do wykrywania brakujących czcionek i zapewnienia opcji rozdzielczości. W zależności od potrzeb możesz zastąpić brakujące czcionki czcionkami alternatywnymi lub dołączyć brakujące czcionki do dokumentu.
+### Czy istnieje sposób sprawdzenia, które czcionki są zastępowane?
 
-#### P: Czy kontrolowanie zastępowania czcionek w dokumencie programu Word jest ważne?
+Tak, Aspose.Words udostępnia metody rejestrowania i śledzenia zastępowań czcionek, dzięki czemu możesz zobaczyć, które czcionki są zastępowane.
 
-Odp.: Tak, ważne jest kontrolowanie zastępowania czcionek w dokumencie programu Word, aby zachować wizualną integralność tekstu. Używając Aspose.Words do włączania lub wyłączania zastępowania czcionek, możesz mieć pewność, że wymagane czcionki zostaną użyte i uniknąć problemów z brakującymi lub zastąpionymi czcionkami.
+### Czy mogę użyć tej metody do innych formatów dokumentów niż DOCX?
+
+Zdecydowanie! Aspose.Words obsługuje różne formaty i możesz zastosować te ustawienia czcionek do dowolnego obsługiwanego formatu.

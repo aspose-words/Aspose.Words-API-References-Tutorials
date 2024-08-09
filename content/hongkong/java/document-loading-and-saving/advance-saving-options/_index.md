@@ -58,7 +58,7 @@ public void doNotCompressSmallMetafiles() throws Exception {
 
 ## 避免保存圖片項目符號
 
-圖片項目符號可能很引人注目，但您可能想排除它們。就是這樣：
+圖片項目符號可能很引人注目，但您可能想排除它們。方法如下：
 
 ```java
 @Test

@@ -134,7 +134,7 @@ L'insertion d'une image flottante dans un document Word à l'aide d'Aspose.Words
 
 ### Quels autres types d’habillage sont disponibles pour les images ?
 
- Aspose.Words prend en charge différents types de wrapper tels que`Inline`, `TopBottom`, `Tight`, `Through`, et plus. Vous pouvez choisir celui qui correspond le mieux à la mise en page de votre document.
+ Aspose.Words prend en charge différents types de wrapper tels que`Inline`, `TopBottom`, `Tight`, `Through`, et plus encore. Vous pouvez choisir celui qui correspond le mieux à la mise en page de votre document.
 
 ### Puis-je utiliser différents formats d’image ?
 

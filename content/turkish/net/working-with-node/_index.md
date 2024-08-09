@@ -14,9 +14,9 @@ Aspose.Words for .NET'te düğümlerle çalışmak için geliştiriciler kütüp
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Düğüm Türünü Kullan](./use-node-type/) | Aspose.Words for .NET ile belgeye özel bilgilere erişmek için düğüm tipini nasıl kullanacağınızı öğrenin. |
-| [Ana Düğümü Alın](./get-parent-node/) | Aspose.Words for .NET ile belirli bir öğenin üst düğümünü nasıl alacağınızı öğrenin. |
-| [Sahip Belgesi](./owner-document/) | Aspose.Words for .NET'te sahip belgesini nasıl kullanacağınızı öğrenin. |
-| [Alt Düğümleri Numaralandır](./enumerate-child-nodes/) | Aspose.Words for .NET ile alt düğümleri bir paragrafta nasıl numaralandıracağınızı öğrenin. |
-| [Yazılı Erişim](./typed-access/) | Aspose.Words for .NET'te tabloları yönetmek için yazılı erişimi nasıl kullanacağınızı öğrenin. |
-| [Paragraf Düğümü Oluşturma ve Ekleme](./create-and-add-paragraph-node/) | Aspose.Words for .NET ile Word belgelerinize bir paragraf düğümü oluşturun ve ekleyin. |
+| [Düğüm Türünü Kullan](./use-node-type/) | Ayrıntılı kılavuzumuzla Aspose.Words for .NET'te NodeType özelliğine nasıl hakim olacağınızı keşfedin. Belge işleme becerilerini geliştirmek isteyen geliştiriciler için mükemmeldir. |
+| [Ana Düğümü Alın](./get-parent-node/) | Bu ayrıntılı, adım adım eğitimle Aspose.Words for .NET kullanarak bir belge bölümünün ana düğümünü nasıl alacağınızı öğrenin. |
+| [Sahip Belgesi](./owner-document/) | Aspose.Words for .NET'te Sahip Belgesi ile nasıl çalışılacağını öğrenin. Bu adım adım kılavuz, bir belgede düğüm oluşturmayı ve değiştirmeyi kapsar. |
+| [Alt Düğümleri Numaralandır](./enumerate-child-nodes/) | Bu adım adım eğitimle Aspose.Words for .NET kullanarak bir Word belgesindeki alt düğümleri nasıl numaralandıracağınızı öğrenin. |
+| [Yazılı Erişim](./typed-access/) | Tablolar ve satırlar gibi belge öğelerini kolayca yönetmek için Aspose.Words for .NET'te Yazılı Erişimi nasıl kullanacağınızı öğrenin. Bu adım adım kılavuz iş akışınızı basitleştirir. |
+| [Paragraf Düğümü Oluşturma ve Ekleme](./create-and-add-paragraph-node/) | Bu ayrıntılı, adım adım eğitimle Aspose.Words for .NET kullanarak bir belgede nasıl paragraf düğümü oluşturulacağını ve ekleneceğini öğrenin. |

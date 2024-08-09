@@ -86,7 +86,7 @@ Diese einfache Codezeile zeigt uns, wo sich unser Cursor im Dokument befindet, u
 
 ### Zu einem bestimmten Absatz wechseln
 
-Um den Cursor zu einem bestimmten Absatz zu bewegen, müssen wir durch die Dokumentknoten navigieren. So geht das:
+Um den Cursor zu einem bestimmten Absatz zu bewegen, müssen wir durch die Dokumentknoten navigieren. So können Sie das tun:
 
 ```csharp
 builder.MoveTo(doc.FirstSection.Body.Paragraphs[0]);

@@ -163,7 +163,7 @@ Kiểu dáng tài liệu có thể được áp dụng trong nhiều tình huố
 
 ### Các chủ đề cải thiện hình thức tài liệu như thế nào?
 
-Các chủ đề mang đến giao diện gắn kết bằng cách nhóm các phong cách lại với nhau, mang lại bản trình bày tài liệu thống nhất và chuyên nghiệp.
+Các chủ đề mang lại giao diện gắn kết bằng cách nhóm các phong cách lại với nhau, mang lại bản trình bày tài liệu thống nhất và chuyên nghiệp.
 
 ### Có thể xóa định dạng khỏi tài liệu của tôi không?
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-tables/convert-to-horizontally-merged-cells/
 ---
-## introduzione
+## Introduzione
 
 Quando si lavora con le tabelle nei documenti Word, spesso è necessario gestire l'unione delle celle per ottenere un layout più pulito e organizzato. Aspose.Words per .NET fornisce un modo potente per convertire celle unite verticalmente in celle unite orizzontalmente, assicurando che la tua tabella abbia l'aspetto desiderato. In questo tutorial ti guideremo attraverso il processo passo dopo passo.
 
@@ -80,4 +80,4 @@ Aspose.Words per .NET è progettato principalmente per linguaggi .NET come C#. T
 Sì, Aspose.Words per .NET ti consente di applicare una licenza sia da un file che da uno stream. Puoi trovare maggiori informazioni in[documentazione](https://reference.aspose.com/words/net/).
 
 ### Quali altre funzionalità offre Aspose.Words per .NET?  
- Aspose.Words per .NET offre un'ampia gamma di funzionalità tra cui la generazione, la manipolazione, la conversione e il rendering di documenti. Dai un'occhiata a[documentazione](https://reference.aspose.com/words/net/) per ulteriori dettagli.
+ Aspose.Words per .NET offre un'ampia gamma di funzionalità tra cui la generazione, la manipolazione, la conversione e il rendering di documenti. Dai un'occhiata a[documentazione](https://reference.aspose.com/words/net/) per maggiori dettagli

@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.doc
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã ánh xạ thành công một phần XML tới thẻ tài liệu có cấu trúc trong tài liệu Word bằng Aspose.Words cho .NET. Tính năng mạnh mẽ này cho phép bạn tạo các tài liệu động và dựa trên dữ liệu một cách dễ dàng. Cho dù bạn đang tạo báo cáo, hóa đơn hay bất kỳ loại tài liệu nào khác, ánh xạ XML có thể hợp lý hóa đáng kể quy trình làm việc của bạn.
+Và bạn có nó! Bạn đã ánh xạ thành công một phần XML tới thẻ tài liệu có cấu trúc trong tài liệu Word bằng Aspose.Words cho .NET. Tính năng mạnh mẽ này cho phép bạn tạo các tài liệu động và dựa trên dữ liệu một cách dễ dàng. Cho dù bạn đang tạo báo cáo, hóa đơn hay bất kỳ loại tài liệu nào khác, ánh xạ XML có thể hợp lý hóa đáng kể quy trình làm việc của bạn.
 
 ## Câu hỏi thường gặp
 

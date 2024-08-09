@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/add-content-using-documentbuilder/create-new-document/
 ---
-## introduzione
+## Introduzione
 Ci stiamo tuffando in profondità nel mondo di Aspose.Words per .NET, un gioiello di libreria per tutte le tue esigenze di manipolazione dei documenti. Che tu stia generando report dinamici, automatizzando la creazione di documenti o semplicemente stanco di svolgere attività ripetitive manualmente, Aspose.Words è qui per salvare la situazione. Rimbocchiamoci le maniche e sporchiamoci le mani creando un nuovo documento Word da zero utilizzando questo potente strumento.
 
 ## Prerequisiti
@@ -77,7 +77,7 @@ Infine, dobbiamo salvare il nostro capolavoro. Questo passaggio è come incornic
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.CreateNewDocument.docx");
 ```
 
-E il gioco è fatto! Hai appena creato un nuovo documento Word utilizzando Aspose.Words per .NET.
+Ed ecco qua! Hai appena creato un nuovo documento Word utilizzando Aspose.Words per .NET.
 
 ## Conclusione
 

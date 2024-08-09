@@ -69,7 +69,7 @@ aí está! Excluir todas as seções de um documento do Word usando Aspose.Words
  Você pode comprá-lo em[aqui](https://purchase.aspose.com/buy).
 
 ### Existe algum suporte disponível para Aspose.Words for .NET?
- Sim, você pode obter suporte da comunidade Aspose[aqui](https://forum.aspose.com/c/words/8).
+Sim, você pode obter suporte da comunidade Aspose[aqui](https://forum.aspose.com/c/words/8).
 
 ### E se eu precisar de uma licença temporária?
  Você pode obter uma licença temporária em[aqui](https://purchase.aspose.com/temporary-license/).

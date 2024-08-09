@@ -2,7 +2,7 @@
 title: Actualizar la propiedad de la última hora guardada
 linktitle: Actualizar la propiedad de la última hora guardada
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda cómo actualizar la propiedad de la última hora guardada en documentos de Word usando Aspose.Words para .NET. Siga nuestra guía detallada paso a paso.
+description: Aprenda a actualizar la propiedad de la última hora guardada en documentos de Word usando Aspose.Words para .NET. Siga nuestra guía detallada paso a paso.
 type: docs
 weight: 10
 url: /es/net/programming-with-ooxmlsaveoptions/update-last-saved-time-property/
@@ -15,7 +15,7 @@ url: /es/net/programming-with-ooxmlsaveoptions/update-last-saved-time-property/
 
 Antes de pasar a la guía paso a paso, hay algunas cosas que necesitará:
 
-1.  Aspose.Words para .NET: asegúrese de tener instalado Aspose.Words para .NET. Si no lo has hecho, puedes[descarguelo aqui](https://releases.aspose.com/words/net/).
+1.  Aspose.Words para .NET: asegúrese de tener instalado Aspose.Words para .NET. Si no lo has hecho, puedes[descárgalo aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: un entorno de desarrollo como Visual Studio.
 3. Conocimientos básicos de C#: será útil comprender los conceptos básicos de la programación en C#.
 

@@ -2,7 +2,7 @@
 title: Uso de campos de formulario en Aspose.Words para Java
 linktitle: Usando campos de formulario
 second_title: API de procesamiento de documentos Java Aspose.Words
-description: Aprenda a utilizar Aspose.Words para Java para crear documentos de Word interactivos con campos de formulario. ¡Empieza ahora!
+description: Aprenda a utilizar Aspose.Words para Java para crear documentos de Word interactivos con campos de formulario. ¡Empiece ahora!
 type: docs
 weight: 14
 url: /es/java/using-document-elements/using-form-fields/

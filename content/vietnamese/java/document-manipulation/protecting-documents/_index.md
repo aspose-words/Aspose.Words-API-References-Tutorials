@@ -32,7 +32,7 @@ Document doc = new Document("Your Directory Path" + "Document.docx");
 doc.unprotect();
 ```
 
- Các`unprotect` Phương pháp này loại bỏ mọi biện pháp bảo vệ được áp dụng cho tài liệu, giúp tài liệu có thể truy cập được mà không cần mật khẩu.
+ các`unprotect` Phương pháp này loại bỏ mọi biện pháp bảo vệ được áp dụng cho tài liệu, giúp tài liệu có thể truy cập được mà không cần mật khẩu.
 
 ## Kiểm tra loại bảo vệ tài liệu
 
@@ -43,7 +43,7 @@ Document doc = new Document("Your Directory Path" + "Document.docx");
 int protectionType = doc.getProtectionType();
 ```
 
- Các`getProtectionType` phương thức trả về một số nguyên biểu thị loại bảo vệ được áp dụng cho tài liệu.
+ các`getProtectionType` phương thức trả về một số nguyên biểu thị loại bảo vệ được áp dụng cho tài liệu.
 
 
 ## Phần kết luận

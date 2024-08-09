@@ -95,7 +95,7 @@ Metode ini menyisipkan pemisah gaya, memastikan bahwa teks yang mengikutinya dap
 
 Judul: Tambahkan Teks Berformat Tambahan
 
-Penjelasan: Tambahkan teks yang diformat dengan gaya khusus yang Anda tentukan sebelumnya. Ini menunjukkan bagaimana pemisah gaya memungkinkan transisi yang mulus antar gaya yang berbeda.
+Penjelasan: Tambahkan teks yang diformat dengan gaya khusus yang Anda tentukan sebelumnya. Ini menunjukkan bagaimana pemisah gaya memungkinkan transisi yang mulus antara gaya yang berbeda.
 
 ```csharp
 // Tambahkan teks dengan gaya lain.

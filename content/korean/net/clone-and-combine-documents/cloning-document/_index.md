@@ -35,7 +35,7 @@ using Aspose.Words;
 먼저 Visual Studio에서 프로젝트를 설정해야 합니다. 이미 프로젝트가 준비되어 있으면 이 단계를 건너뛸 수 있습니다. 그렇지 않은 경우 다음을 따르십시오.
 
 1. Visual Studio 열기: Visual Studio를 실행하고 새 C# 콘솔 앱 프로젝트를 만듭니다.
-2.  프로젝트 이름 지정: 프로젝트에 의미 있는 이름을 지정하세요. 다음과 같은 것`CloneWordDocumentDemo` 할 것입니다.
+2.  프로젝트 이름 지정: 프로젝트에 의미 있는 이름을 지정하십시오. 다음과 같은 것`CloneWordDocumentDemo` 할 것입니다.
 3.  Aspose.Words 참조 추가: 솔루션 탐색기에서 프로젝트를 마우스 오른쪽 버튼으로 클릭하고`Manage NuGet Packages` , 검색`Aspose.Words`. 설치하세요.
 
 ## 2단계: 환경 준비
@@ -43,7 +43,7 @@ using Aspose.Words;
 이제 프로젝트가 설정되었으므로 환경을 준비해 보겠습니다.
 
 1.  문서용 디렉토리 만들기: 문서를 저장할 폴더가 필요합니다. 그것을 부르자`Documents`.
-2.  샘플 문서 추가:`Document.docx` 안에`Documents` 폴더. 이것이 우리가 복제할 파일입니다.
+2.  샘플 문서 추가:`Document.docx` 안에`Documents` 접는 사람. 이것이 우리가 복제할 파일입니다.
 
 ## 3단계: 원본 문서 넣기
 

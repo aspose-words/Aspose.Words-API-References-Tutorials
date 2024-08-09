@@ -105,7 +105,7 @@ Belge gereksinimlerinizi karşılamak için son not ayarlarını daha da özelle
 	}
 ```
 
-## 7. Karar
+## 7. Sonuç
 
 Bu eğitimde Aspose.Words for Java'da dipnotlar ve sonnotlarla nasıl çalışılacağını araştırdık. Bu özellikler, uygun alıntılar ve referanslarla iyi yapılandırılmış belgeler oluşturmak için çok değerlidir.
 

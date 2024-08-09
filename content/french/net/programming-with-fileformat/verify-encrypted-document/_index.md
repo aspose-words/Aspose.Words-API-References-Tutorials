@@ -56,7 +56,7 @@ C'est tout ! Vous avez vérifié avec succès si un document est crypté à l'ai
 
 ## Conclusion
 
- Et voila! Vous avez vérifié avec succès l'état de cryptage d'un document Word à l'aide d'Aspose.Words pour .NET. N'est-il pas étonnant de voir à quel point quelques lignes de code peuvent nous rendre la vie tellement plus facile ? Si vous avez des questions ou rencontrez des problèmes, n'hésitez pas à nous contacter sur le[Forum d'assistance Aspose](https://forum.aspose.com/c/words/8).
+ Et voilà ! Vous avez vérifié avec succès l'état de cryptage d'un document Word à l'aide d'Aspose.Words pour .NET. N'est-il pas étonnant de voir à quel point quelques lignes de code peuvent nous rendre la vie tellement plus facile ? Si vous avez des questions ou rencontrez des problèmes, n'hésitez pas à nous contacter sur le[Forum d'assistance Aspose](https://forum.aspose.com/c/words/8).
 
 ## FAQ
 

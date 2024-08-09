@@ -2,82 +2,96 @@
 title: 트루타입 글꼴 폴더 설정
 linktitle: 트루타입 글꼴 폴더 설정
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 문서를 렌더링할 때 트루타입 글꼴 폴더 설정에 대한 단계별 가이드입니다.
+description: .NET용 Aspose.Words를 사용하여 Word 문서에서 트루타입 글꼴 폴더를 설정하는 방법을 알아보세요. 일관된 글꼴 관리를 보장하려면 자세한 단계별 가이드를 따르세요.
 type: docs
 weight: 10
 url: /ko/net/working-with-fonts/set-true-type-fonts-folder/
 ---
+## 소개
 
-이 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 문서를 렌더링할 때 트루타입 글꼴 폴더를 설정하는 단계별 프로세스를 안내합니다. 번들로 제공되는 C# 소스 코드를 설명하고 자신의 프로젝트에서 이 기능을 이해하고 구현하는 데 도움이 되는 포괄적인 가이드를 제공합니다. 이 튜토리얼이 끝나면 Aspose.Words for .NET을 사용하여 문서를 렌더링할 때 사용할 트루타입 글꼴이 포함된 사용자 정의 폴더를 지정하는 방법을 알게 됩니다.
+우리는 .NET용 Aspose.Words를 사용하여 Word 문서에서 글꼴 관리의 매혹적인 세계로 뛰어들고 있습니다. 올바른 글꼴을 삽입하거나 모든 장치에서 문서가 완벽하게 보이도록 하는 데 어려움을 겪어 본 적이 있다면 올바른 위치에 오셨습니다. 문서의 글꼴 관리를 간소화하고 문서의 일관성과 명확성을 보장하기 위해 트루타입 글꼴 폴더를 설정하는 과정을 살펴보겠습니다.
 
-## 1단계: 문서 디렉터리 정의
-먼저 문서 디렉터리의 경로를 설정해야 합니다. 편집된 렌더링 문서를 저장하려는 위치입니다. "YOUR DOCUMENTS DIRECTORY"를 적절한 경로로 바꾸십시오.
+## 전제 조건
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+핵심적인 내용으로 넘어가기 전에 성공을 위한 준비가 완료되었는지 확인하기 위한 몇 가지 전제 조건을 살펴보겠습니다.
 
-## 2단계: 렌더링할 문서 로드
- 다음으로 렌더링할 문서를 로드해야 합니다.`Document` 수업. 올바른 문서 경로를 지정하십시오.
+1.  .NET용 Aspose.Words: 최신 버전이 설치되어 있는지 확인하세요. 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/net/).
+2. 개발 환경: Visual Studio와 같은 작업 .NET 개발 환경입니다.
+3. C#에 대한 기본 지식: C# 프로그래밍에 익숙하면 도움이 됩니다.
+4. 샘플 문서: 작업할 Word 문서를 준비하세요.
 
-```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
-```
+## 네임스페이스 가져오기
 
-## 3단계: 트루타입 글꼴 폴더 설정
-이제 인스턴스를 생성하여 렌더링할 때 사용할 트루타입 글꼴 폴더를 지정할 수 있습니다.`FontSettings` 수업과 사용`SetFontsFolder()` 글꼴 폴더를 설정하는 방법. 트루타입 글꼴이 포함된 사용자 정의 폴더를 지정할 수 있습니다. 두 번째 매개변수는`SetFontsFolder()` 지정된 폴더의 하위 폴더도 검색할지 여부를 나타냅니다.
+먼저 필요한 네임스페이스를 가져와야 합니다. 이들은 모든 일이 원활하게 진행되도록 보장하는 무대 뒤의 승무원과 같습니다.
 
 ```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
-doc.FontSettings = fontSettings;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## 4단계: 렌더링된 문서 저장
- 마지막으로 다음을 사용하여 렌더링된 문서를 파일로 저장할 수 있습니다.`Save()` 의 방법`Document` 수업. 올바른 경로와 파일 이름을 지정하십시오.
+## 1단계: 문서 로드
 
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
-```
-
-### .NET용 Aspose.Words를 사용하여 트루타입 글꼴 폴더 설정에 대한 샘플 소스 코드 
+ 문서를 로드하는 것부터 시작해 보겠습니다. 우리는`Document` Aspose.Words의 클래스를 사용하여 기존 Word 문서를 로드합니다.
 
 ```csharp
 // 문서 디렉터리 경로
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## 2단계: FontSettings 초기화
+
+ 다음으로,`FontSettings`수업. 이 클래스를 사용하면 문서에서 글꼴을 처리하는 방법을 사용자 정의할 수 있습니다.
+
+```csharp
 FontSettings fontSettings = new FontSettings();
-// 이 설정은 기본적으로 검색되는 모든 기본 글꼴 소스를 재정의합니다. 이제 이 폴더만 검색됩니다.
-// 글꼴을 렌더링하거나 포함할 때 글꼴. 시스템 글꼴 소스를 유지하면서 추가 글꼴 소스를 추가하려면 FontSettings.GetFontSources와
-// 대신 FontSettings.SetFontSources
+```
+
+## 3단계: 글꼴 폴더 설정
+
+이제 흥미로운 부분이 다가옵니다. 트루타입 글꼴이 있는 폴더를 지정하겠습니다. 이 단계를 통해 Aspose.Words는 글꼴을 렌더링하거나 포함할 때 이 폴더의 글꼴을 사용합니다.
+
+```csharp
+// 이 설정은 기본적으로 검색되는 모든 기본 글꼴 소스를 재정의합니다.
+// 이제 글꼴을 렌더링하거나 포함할 때 이러한 폴더에서만 글꼴이 검색됩니다.
 fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
+```
+
+## 4단계: 문서에 글꼴 설정 적용
+
+글꼴 설정이 구성되었으므로 이제 이러한 설정을 문서에 적용하겠습니다. 이 단계는 문서가 지정된 글꼴을 활용하는지 확인하는 데 중요합니다.
+
+```csharp
 // 글꼴 설정 지정
 doc.FontSettings = fontSettings;
-doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
+```
+
+## 5단계: 문서 저장
+
+마지막으로 문서를 저장하겠습니다. 다양한 형식으로 저장할 수 있지만 이 튜토리얼에서는 PDF로 저장하겠습니다.
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.SetTrueTypeFontsFolder.pdf");
 ```
 
 ## 결론
-이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 문서를 렌더링할 때 트루타입 글꼴 폴더를 설정하는 방법을 배웠습니다. 이 단계별 가이드를 따르면 문서를 렌더링할 때 사용할 트루타입 글꼴이 포함된 사용자 정의 폴더를 쉽게 지정할 수 있습니다. Aspose.Words는 문서의 글꼴을 사용한 단어 처리를 위한 강력하고 유연한 API를 제공합니다. 이러한 지식을 바탕으로 문서를 특정 요구에 맞게 렌더링할 때 사용되는 글꼴을 제어하고 사용자 정의할 수 있습니다.
 
-### FAQ
+그리고 거기에 있습니다! .NET용 Aspose.Words를 사용하여 Word 문서에 대한 True Type Fonts 폴더를 성공적으로 설정했습니다. 이를 통해 문서가 모든 플랫폼에서 일관되고 전문적으로 보일 수 있습니다. 글꼴 관리는 문서 작성의 중요한 측면이며 Aspose.Words를 사용하면 매우 간단합니다.
 
-#### Q: Aspose.Words에서 트루타입 글꼴 폴더를 어떻게 구성할 수 있나요?
+## FAQ
 
- A: Aspose.Words에서 트루타입 글꼴 폴더를 구성하려면 다음을 사용할 수 있습니다.`SetTrueTypeFontsFolder` 의 방법`Fonts` 트루타입 글꼴이 포함된 폴더의 위치를 지정하는 클래스입니다.
+### 여러 글꼴 폴더를 사용할 수 있나요?
+ 예, 여러 글꼴 폴더를 결합하여 사용할 수 있습니다`FontSettings.GetFontSources`그리고`FontSettings.SetFontSources`.
 
-#### Q: 트루타입 글꼴로 간주되는 글꼴 유형은 무엇입니까?
+### 지정한 글꼴 폴더가 존재하지 않으면 어떻게 되나요?
+지정된 글꼴 폴더가 없으면 Aspose.Words는 글꼴을 찾을 수 없으며 대신 기본 시스템 글꼴이 사용됩니다.
 
-A: 트루타입 글꼴은 널리 사용되는 글꼴 형식입니다. Word 문서에서 자주 사용되며 파일 확장자는 .ttf 또는 .ttc입니다.
+### 기본 글꼴 설정으로 되돌릴 수 있나요?
+ 예, 재설정하면 기본 글꼴 설정으로 되돌릴 수 있습니다.`FontSettings` 사례.
 
-#### Q: Aspose.Words에서 여러 트루타입 글꼴 폴더를 지정할 수 있나요?
+### 문서에 글꼴을 포함시킬 수 있나요?
+예, Aspose.Words를 사용하면 문서에 글꼴을 포함시켜 다양한 장치에서 일관성을 보장할 수 있습니다.
 
-A: 예, Aspose.Words에서 여러 트루타입 글꼴 폴더를 지정할 수 있습니다.`SetTrueTypeFontsFolder` 의 방법`Fonts` 폴더 위치 목록이 있는 클래스입니다.
-
-#### Q: Aspose.Words에 구성된 트루타입 글꼴 폴더를 어떻게 확인할 수 있나요?
-
- A: Aspose.Words에 구성된 TrueType Fonts 폴더를 확인하려면 다음을 사용할 수 있습니다.`GetTrueTypeFontsFolder` 의 방법`Fonts` 클래스를 사용하여 구성된 TrueType 글꼴 폴더의 위치를 가져옵니다.
-
-#### Q: Aspose.Words에서 트루타입 글꼴 폴더를 구성하는 것이 왜 중요한가요?
-
-A: Aspose.Words에서 트루타입 글꼴 폴더를 설정하는 것은 Aspose.Words가 Word 문서를 처리할 때 필요한 글꼴을 찾는 데 도움이 되기 때문에 중요합니다. 이를 통해 서로 다른 시스템에서도 문서 형식 및 모양의 일관성이 보장됩니다.
+### 내 문서를 어떤 형식으로 저장할 수 있나요?
+Aspose.Words는 PDF, DOCX, HTML 등을 포함한 다양한 형식을 지원합니다.

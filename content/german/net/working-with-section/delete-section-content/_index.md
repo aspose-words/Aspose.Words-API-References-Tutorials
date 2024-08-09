@@ -105,7 +105,7 @@ foreach (Section section in doc.Sections)
 
 ### Entfernt diese Methode auch Kopf- und Fußzeilen?
 
- NEIN,`ClearContent()` wirkt sich nicht auf Kopf- und Fußzeilen aus. Um Kopf- und Fußzeilen zu löschen, verwenden Sie die`ClearHeadersFooters()` Methode.
+ NEIN,`ClearContent()` wirkt sich nicht auf Kopf- und Fußzeilen aus. Um Kopf- und Fußzeilen zu löschen, verwenden Sie die`ClearHeadersFooters()` Verfahren.
 
 ### Ist Aspose.Words für .NET mit allen Versionen von Word-Dokumenten kompatibel?
 

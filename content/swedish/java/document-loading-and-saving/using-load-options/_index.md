@@ -206,7 +206,7 @@ I den här handledningen har vi fördjupat oss i olika aspekter av att arbeta me
 
 ### Hur anger jag MS Word-versionen för dokumentladdning?
 
- Använda sig av`loadOptions.setMswVersion(MsWordVersion.WORD_2010)` för att ange MS Word-versionen för dokumentladdning.
+ Använda`loadOptions.setMswVersion(MsWordVersion.WORD_2010)` för att ange MS Word-versionen för dokumentladdning.
 
 ###  Vad är syftet med`setTempFolder` method in Load Options?
 

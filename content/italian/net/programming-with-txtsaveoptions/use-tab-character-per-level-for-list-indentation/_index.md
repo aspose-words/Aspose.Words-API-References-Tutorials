@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-txtsaveoptions/use-tab-character-per-level-for-list-indentation/
 ---
-## introduzione
+## Introduzione
 
 Gli elenchi sono fondamentali per organizzare i contenuti, sia che tu stia redigendo un rapporto, scrivendo un documento di ricerca o preparando una presentazione. Tuttavia, quando si tratta di presentare elenchi con più livelli di rientro, ottenere il formato desiderato può essere un po’ complicato. Utilizzando Aspose.Words per .NET, puoi gestire facilmente il rientro dell'elenco e personalizzare il modo in cui viene rappresentato ogni livello. In questo tutorial ci concentreremo sulla creazione di un elenco con più livelli di rientro, utilizzando i caratteri di tabulazione per una formattazione precisa. Al termine di questa guida avrai una chiara comprensione di come impostare e salvare il documento con lo stile di rientro corretto.
 
@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-In questa sezione creeremo un elenco multilivello con rientro a schede utilizzando Aspose.Words per .NET. Segui questi passi:
+In questa sezione creeremo un elenco multilivello con rientro a schede utilizzando Aspose.Words per .NET. Segui questi passaggi:
 
 ## Passaggio 1: imposta il documento
 
@@ -121,7 +121,7 @@ Sì, Aspose.Words consente la personalizzazione degli stili di elenco a vari liv
  Usa il`ListFormat.ApplyBulletDefault()` metodo invece di`ApplyNumberDefault()` per creare un elenco puntato.
 
 ### Come posso regolare la dimensione del carattere di tabulazione utilizzato per il rientro?
- Sfortunatamente, la dimensione della scheda è in`TxtSaveOptions`è aggiustato. Per regolare la dimensione del rientro, potrebbe essere necessario utilizzare spazi o personalizzare direttamente la formattazione dell'elenco.
+ Sfortunatamente, la dimensione della scheda è in`TxtSaveOptions`è fisso. Per regolare la dimensione del rientro, potrebbe essere necessario utilizzare spazi o personalizzare direttamente la formattazione dell'elenco.
 
 ### Posso utilizzare queste impostazioni durante l'esportazione in altri formati come PDF o DOCX?
 Le impostazioni specifiche dei caratteri di tabulazione si applicano ai file di testo. Per formati come PDF o DOCX, dovresti modificare le opzioni di formattazione all'interno di tali formati.

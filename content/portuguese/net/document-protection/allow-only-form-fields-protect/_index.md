@@ -53,7 +53,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Text added to a document.");
 ```
 
- Aqui, criamos um novo`Document`e`DocumentBuilder` instância. O`DocumentBuilder` nos permite adicionar texto ao nosso documento.
+ Aqui, criamos um novo`Document`e`DocumentBuilder` exemplo. O`DocumentBuilder` nos permite adicionar texto ao nosso documento.
 
 ## Etapa 4: proteja o documento
 

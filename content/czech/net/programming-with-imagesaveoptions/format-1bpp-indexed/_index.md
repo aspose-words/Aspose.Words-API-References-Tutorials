@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-imagesaveoptions/format-1bpp-indexed/
 ---
-## Úvod
+## Zavedení
 
 Přemýšleli jste někdy nad tím, jak uložit dokument aplikace Word jako černobílý obrázek s několika řádky kódu? Tak to máš štěstí! Dnes se ponoříme do úhledného malého triku pomocí Aspose.Words pro .NET, který vám umožní převést vaše dokumenty na 1Bpp indexované obrázky. Tento formát je ideální pro určité typy digitální archivace, tisku nebo když potřebujete ušetřit místo. Každý krok rozebereme, aby to bylo snadné jako facka. Jste připraveni začít? Pojďme se ponořit!
 
@@ -15,7 +15,7 @@ Přemýšleli jste někdy nad tím, jak uložit dokument aplikace Word jako čer
 
 Než si ušpiníme ruce, je potřeba mít připraveno několik věcí:
 
--  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu. Můžeš[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí .NET: Visual Studio je dobrá volba, ale můžete použít jakékoli prostředí, které vám vyhovuje.
 - Základní znalost C#: Nebojte se, budeme to dělat jednoduše, ale trocha znalosti C# pomůže.
 - Dokument aplikace Word: Připravte si ukázkový dokument aplikace Word ke konverzi.
@@ -82,7 +82,7 @@ A tady to máte! Pomocí několika řádků kódu jste pomocí Aspose.Words for 
 Indexovaný obrázek 1Bpp (1 bit na pixel) je formát černobílého obrázku, kde je každý pixel reprezentován jedním bitem, buď 0, nebo 1. Tento formát je vysoce prostorově nenáročný.
 
 ### Mohu převést více stránek dokumentu aplikace Word najednou?
- Ano můžeš. Upravte`PageSet` nemovitost v`ImageSaveOptions` zahrnout více stránek nebo celý dokument.
+ Ano, můžete. Upravte`PageSet` nemovitost v`ImageSaveOptions` zahrnout více stránek nebo celý dokument.
 
 ### Potřebuji licenci k používání Aspose.Words pro .NET?
  Ano, Aspose.Words for .NET vyžaduje licenci pro plnou funkčnost. Můžete získat a[dočasná licence zde](https://purchase.aspose.com/temporary-license/).

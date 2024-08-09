@@ -99,7 +99,7 @@ En daar heb je het! U hebt met succes Japans als bewerkingstaal aan uw document 
  Ja, voor commercieel gebruik heeft u een licentie nodig. Je kunt er een kopen[hier](https://purchase.aspose.com/buy) of vraag een tijdelijke licentie aan[hier](https://purchase.aspose.com/temporary-license/).
 
 ### Welke andere functies biedt Aspose.Words voor .NET?
- Aspose.Words voor .NET biedt een breed scala aan functies, waaronder het genereren, converteren, manipuleren en meer van documenten. Bekijk de[documentatie](https://reference.aspose.com/words/net/) voor meer details.
+ Aspose.Words voor .NET biedt een breed scala aan functies, waaronder het genereren, converteren, manipuleren en meer van documenten. Bekijk de[documentatie](https://reference.aspose.com/words/net/) voor meer informatie.
 
 ### Kan ik Aspose.Words voor .NET uitproberen voordat ik het koop?
  Absoluut! U kunt een gratis proefversie downloaden[hier](https://releases.aspose.com/).

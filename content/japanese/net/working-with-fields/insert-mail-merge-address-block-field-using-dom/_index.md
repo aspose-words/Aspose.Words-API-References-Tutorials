@@ -15,7 +15,7 @@ Word 文書をプログラムで効率的に管理および操作する方法を
 
 細かい点に入る前に、必要なものがすべて揃っているかどうか確認しましょう。
 
-1.  Aspose.Words for .NET: まだダウンロードしていない場合は、最新バージョンをダウンロードしてください。[ここ](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: まだダウンロードしていない場合は、最新バージョンをこちらからダウンロードしてください。[ここ](https://releases.aspose.com/words/net/).
 2. Visual Studio: マシンに Visual Studio がインストールされていることを確認します。
 3. C# の基本的な理解: このガイドでは、読者が C# プログラミングに精通していることを前提としています。
 4.  Asposeライセンス: 無料トライアルをご利用いただけます[ここ](https://releases.aspose.com/)または臨時免許証を取得する[ここ](https://purchase.aspose.com/temporary-license/).
@@ -122,4 +122,4 @@ Aspose.Words for .NET は、開発者が .NET アプリケーションを使用�
  Asposeコミュニティと技術チームからサポートを受けることができます[ここ](https://forum.aspose.com/c/words/8).
 
 ### Aspose.Words を使用して Word 文書の他の側面を自動化できますか?
-もちろんです！Aspose.Words for .NETは、ドキュメントの生成、編集、変換などを自動化する幅広い機能を提供します。[ドキュメンテーション](https://reference.aspose.com/words/net/)詳細については。
+もちろんです！Aspose.Words for .NETは、ドキュメントの生成、編集、変換などを自動化する幅広い機能を提供します。[ドキュメント](https://reference.aspose.com/words/net/)詳細についてはこちらをご覧ください。

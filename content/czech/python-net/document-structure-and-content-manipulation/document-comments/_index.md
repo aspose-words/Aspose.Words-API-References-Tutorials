@@ -10,7 +10,7 @@ url: /cs/python-net/document-structure-and-content-manipulation/document-comment
 
 Komentáře hrají klíčovou roli při spolupráci a kontrole dokumentů a umožňují více jednotlivcům sdílet své myšlenky a návrhy v rámci dokumentu aplikace Word. Aspose.Words for Python poskytuje výkonné rozhraní API, které umožňuje vývojářům bez námahy pracovat s komentáři v dokumentech aplikace Word. V tomto článku prozkoumáme, jak využít funkce komentářů v dokumentech aplikace Word pomocí Aspose.Words pro Python.
 
-## Úvod
+## Zavedení
 
 Spolupráce je základním aspektem tvorby dokumentů a komentáře poskytují bezproblémový způsob, jak může více uživatelů sdílet svou zpětnou vazbu a myšlenky v rámci dokumentu. Aspose.Words for Python, výkonná knihovna pro manipulaci s dokumenty, umožňuje vývojářům programově pracovat s dokumenty Wordu, včetně přidávání, úprav a načítání komentářů.
 

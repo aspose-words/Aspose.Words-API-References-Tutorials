@@ -15,7 +15,7 @@ Salut! Vous êtes-vous déjà demandé comment rendre vos documents Word super c
 
 Avant de mettre la main à la pâte, assurons-nous d’avoir tout ce dont nous avons besoin :
 
-1.  Aspose.Words pour .NET : vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/).
+1.  Aspose.Words pour .NET : vous pouvez[téléchargez-le ici](https://releases.aspose.com/words/net/).
 2. Environnement de développement : Visual Studio ou tout autre IDE prenant en charge .NET.
 3. Connaissance de base de C# : vous n'avez pas besoin d'être un assistant, mais connaître C# vous aidera.
 
@@ -65,7 +65,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.OptimizeForMsWord.docx
 
 ## Conclusion
 
-Et voila! Avec seulement quelques lignes de code, vous avez optimisé votre document pour MS Word 2016 à l'aide d'Aspose.Words pour .NET. Cela garantit que votre document aura fière allure, quelle que soit la version de Word utilisée par votre public. C'est aussi simple et direct. Alors n’hésitez plus et essayez-le ! Vos documents vous remercieront.
+Et voilà ! Avec seulement quelques lignes de code, vous avez optimisé votre document pour MS Word 2016 à l'aide d'Aspose.Words pour .NET. Cela garantit que votre document aura fière allure, quelle que soit la version de Word utilisée par votre public. C'est aussi simple et direct. Alors n’hésitez plus et essayez-le ! Vos documents vous remercieront.
 
 ## FAQ
 

@@ -94,5 +94,5 @@ Selamat! Anda baru saja mempelajari cara berpindah ke sel tabel tertentu di doku
  Ya,`DocumentBuilder` memungkinkan Anda menyisipkan gambar, tabel, dan elemen lain pada posisi saat ini di dalam sel.
 
 ### Bagaimana cara menyimpan dokumen yang diubah?
- Menggunakan`Save` metode`Document` kelas untuk menyimpan perubahan Anda. Misalnya:`doc.Save(dataDir + "UpdatedTables.docx");`
+ Gunakan`Save` metode`Document` kelas untuk menyimpan perubahan Anda. Misalnya:`doc.Save(dataDir + "UpdatedTables.docx");`
 

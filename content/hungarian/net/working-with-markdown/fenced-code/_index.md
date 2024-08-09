@@ -2,79 +2,110 @@
 title: Bekerített kód
 linktitle: Bekerített kód
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan használhatja az elkerített kód funkciót az Aspose.Words for .NET segítségével Lépésről lépésre.
+description: Ismerje meg, hogyan adhat hozzá elkerített kódokat és információs karakterláncokat Word-dokumentumokhoz az Aspose.Words for .NET használatával. Lépésről lépésre útmutató mellékelve. Javítsa dokumentumformázási készségeit.
 type: docs
 weight: 10
 url: /hu/net/working-with-markdown/fenced-code/
 ---
+## Bevezetés
 
-Ebben a példában végigvezetjük, hogyan használhatja az elkerített kód funkciót az Aspose.Words for .NET-hez. Az elkerített kód meghatározott formátumú kódblokkok megjelenítésére szolgál.
+Szia kódolótárs! Ma az Aspose.Words for .NET világába merülünk, hogy elsajátíthassuk az elkerített kódok és az információs karakterláncokkal ellátott kódok Word-dokumentumaihoz való hozzáadásának művészetét. Képzelje el Word-dokumentumát vászonként, és Ön, a művész, egy tapasztalt fejlesztő pontosságával fog festeni. Az Aspose.Words segítségével programozottan javíthatja dokumentumait strukturált, formázott kódblokkokkal, így műszaki dokumentumai professzionalizmussal és egyértelműséggel ragyognak.
 
-## 1. lépés: Dokumentumgenerátor használata
+## Előfeltételek
 
-Először egy dokumentumgenerátort fogunk használni, hogy tartalmat adjunk a dokumentumunkhoz.
+Mielőtt belevágnánk az oktatóanyagba, győződjünk meg arról, hogy mindennel rendelkezik, amire szüksége van:
+
+- A C# alapismeretei: A C# általános ismerete segít a fogalmak gyors megértésében.
+-  Aspose.Words for .NET: Az Aspose.Words for .NET-re telepítve kell lennie. Ha még nem vetted meg, vedd meg[itt](https://releases.aspose.com/words/net/).
+- Fejlesztési környezet: Visual Studio vagy bármely más C# IDE, amivel jól érzi magát.
+
+## Névterek importálása
+
+Először is importálnia kell a szükséges névtereket. Ez olyan, mintha az összes eszközt összegyűjtené egy projekt elindítása előtt.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Style;
+```
+
+Most pedig bontsuk le a folyamatot lépésről lépésre.
+
+## 1. lépés: A projekt beállítása
+
+Mielőtt gyönyörű, formázott kódblokkokat hozhatnánk létre a Word-dokumentumban, be kell állítanunk egy új projektet a Visual Studióban.
+
+1. Új projekt létrehozása: Nyissa meg a Visual Studio-t, és hozzon létre egy új C# konzolalkalmazást.
+2. Az Aspose.Words hivatkozás hozzáadása: Az Aspose.Words telepítése a NuGet Package Manager segítségével. Ezt úgy teheti meg, hogy jobb gombbal kattint a projektjére a Solution Explorerben, kiválasztja a „NuGet-csomagok kezelése” lehetőséget, és rákeres az Aspose.Words kifejezésre.
+
+## 2. lépés: Inicializálja a DocumentBuildert
+
+Most, hogy a projekt be van állítva, inicializáljuk a DocumentBuildert, amely a fő eszközünk lesz a Word-dokumentum tartalom hozzáadásához.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## 2. lépés: Stílus hozzáadása a bekerített kódhoz
+## 3. lépés: Hozzon létre egy stílust a bekerített kódhoz
 
- Egyéni stílust adunk hozzá az elkerített kódhoz a`Styles.Add` módszere a`Document` tárgy. Ebben a példában létrehozunk egy "FencedCode" nevű stílust az elkerített kódhoz.
+Az elkerített kód hozzáadásához először létre kell hoznunk egy stílust. Tekintsd ezt úgy, mint a kódblokk témáját.
 
 ```csharp
 Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");
-builder.ParagraphFormat.Style = fencedCode;
+fencedCode.Font.Name = "Courier New";
+fencedCode.Font.Size = 10;
+fencedCode.ParagraphFormat.LeftIndent = 20;
+fencedCode.ParagraphFormat.RightIndent = 20;
+fencedCode.ParagraphFormat.Shading.BackgroundPatternColor = Color.LightGray;
 ```
 
-## 3. lépés: Elkerített kód hozzáadása információ nélkül
+## 4. lépés: Adjon hozzá elkerített kódot a dokumentumhoz
 
-Most hozzáadhatunk egy elkerített kódblokkot információs karakterlánc nélkül a "FencedCode" egyéni stílus használatával.
+Ha készen áll a stílusunk, most már egy elkerített kódblokkot is hozzáadhatunk a dokumentumhoz.
 
 ```csharp
-builder.Writeln("This is an fenced code");
+builder.ParagraphFormat.Style = fencedCode;
+builder.Writeln("This is a fenced code block");
 ```
 
-## 4. lépés: Adjon hozzá elkerített kódot információs karakterlánccal
+## 5. lépés: Hozzon létre egy stílust a bekerített kódhoz az információs karakterlánccal
 
-Hozzáadhatunk egy elkerített kódblokkot egy információs karakterlánccal egy másik egyedi stílus használatával. Ebben a példában egy "FencedCode.C#" nevű stílust hozunk létre, amely egy C# kód blokkját reprezentálja.
+Néha érdemes lehet megadni a programozási nyelvet, vagy további információkat kell hozzáadni a kódblokkhoz. Alkossunk ehhez egy stílust.
 
 ```csharp
 Style fencedCodeWithInfo = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode.C#");
-builder.ParagraphFormat.Style = fencedCodeWithInfo;
-builder.Writeln("This is a fenced code with info string");
+fencedCodeWithInfo.Font.Name = "Courier New";
+fencedCodeWithInfo.Font.Size = 10;
+fencedCodeWithInfo.ParagraphFormat.LeftIndent = 20;
+fencedCodeWithInfo.ParagraphFormat.RightIndent = 20;
+fencedCodeWithInfo.ParagraphFormat.Shading.BackgroundPatternColor = Color.LightGray;
 ```
 
-### Példa forráskód a Fenced Code-hoz az Aspose.Words for .NET használatával
+## 6. lépés: Adjon hozzá elkerített kódot az információs karakterlánccal a dokumentumhoz
+
+Most adjunk hozzá egy elkerített kódblokkot egy információs karakterlánccal, amely jelzi, hogy C# kódról van szó.
 
 ```csharp
-// Használjon dokumentumkészítőt, hogy tartalmat adjon a dokumentumhoz.
-DocumentBuilder builder = new DocumentBuilder();
-
-Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");
-builder.ParagraphFormat.Style = fencedCode;
-builder.Writeln("This is an fenced code");
-
-Style fencedCodeWithInfo = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode.C#");
 builder.ParagraphFormat.Style = fencedCodeWithInfo;
-builder.Writeln("This is a fenced code with info string");
+builder.Writeln("This is a fenced code block with info string - C#");
 ```
 
-### GYIK
+## Következtetés
 
-#### K: Mi az a tagolt kód a Markdownban?
+Gratulálok! Az Aspose.Words for .NET segítségével elkerített kódblokkokat és elkerített kódokat adott hozzá a Word-dokumentumokhoz. Ez csak a jéghegy csúcsa. Az Aspose.Words segítségével automatizálhatja és új magasságokba emelheti dokumentumfeldolgozását. Folytasd a felfedezést és boldog kódolást!
 
-V: A Markdown elválasztott kódja egy formázási módszer, amelyet a Markdown dokumentumban lévő kód megjelenítésére használnak. Ez a kód meghatározott határolókkal való keretezéséből áll.
+## GYIK
 
-#### K: Milyen előnyei vannak a Markdown elválasztó kódjának?
+### Mi az Aspose.Words for .NET?
+Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára Word-dokumentumok programozott létrehozását, kezelését és konvertálását.
 
-V: A Markdown elválasztott kódja javítja a kód olvashatóságát, és könnyebben érthetővé teszi az olvasók számára. Egyes Markdown szerkesztőkben lehetővé teszi a szintaxis kiemelésének megőrzését is.
+### Használhatom az Aspose.Words programot más programozási nyelvekkel?
+Az Aspose.Words elsősorban a .NET nyelveket támogatja, de vannak verziók Java, Python és más nyelvekre is.
 
-#### K: Mi a különbség a tagolt és a behúzott kód között a Markdownban?
+### Az Aspose.Words ingyenesen használható?
+ Az Aspose.Words kereskedelmi termék, de ingyenes próbaverziót is letölthet[itt](https://releases.aspose.com/)jellemzőinek feltárására.
 
-V: A tagolt kód meghatározott határolókat használ a kód bezárására, míg a behúzott kód minden kódsort szóközökkel vagy tabulátorokkal behúz.
+### Hogyan kaphatok támogatást az Aspose.Words számára?
+ Támogatást kaphat az Aspose közösségtől és a fejlesztőktől[itt](https://forum.aspose.com/c/words/8).
 
-#### K: Az összes Markdown-szerkesztő támogatja a Markdown elválasztott kódját?
-
-V: A Markdown tagolt kódjának támogatása a Markdown szerkesztőkben eltérő lehet. Ellenőrizze a kiadója konkrét dokumentációját, hogy megbizonyosodjon róla.
-
+### Milyen egyéb funkciókat kínál az Aspose.Words?
+Az Aspose.Words szolgáltatások széles skáláját kínálja, beleértve a dokumentumkonverziót, a sablon alapú dokumentumgenerálást, a jelentéskészítést és még sok mást.

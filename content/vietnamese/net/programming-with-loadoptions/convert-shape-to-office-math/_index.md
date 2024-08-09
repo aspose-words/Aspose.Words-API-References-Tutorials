@@ -43,7 +43,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 LoadOptions loadOptions = new LoadOptions { ConvertShapeToOfficeMath = true };
 ```
 
- Trong bước này, chúng tôi chỉ định thư mục chứa tài liệu của chúng tôi và định cấu hình các tùy chọn tải. Các`ConvertShapeToOfficeMath` tài sản được đặt thành`true` để kích hoạt chuyển đổi.
+ Trong bước này, chúng tôi chỉ định thư mục chứa tài liệu của chúng tôi và định cấu hình các tùy chọn tải. các`ConvertShapeToOfficeMath` tài sản được đặt thành`true` để kích hoạt chuyển đổi.
 
 ## Bước 2: Tải tài liệu
 
@@ -54,7 +54,7 @@ Tiếp theo, chúng tôi sẽ tải tài liệu với các tùy chọn đã ch�
 Document doc = new Document(dataDir + "Office math.docx", loadOptions);
 ```
 
- Ở đây, chúng tôi sử dụng`Document` class để tải tài liệu Word của chúng tôi. Các`loadOptions`tham số đảm bảo rằng mọi hình dạng trong tài liệu đều được chuyển đổi sang Office Math trong quá trình tải.
+ Ở đây, chúng tôi sử dụng`Document` class để tải tài liệu Word của chúng tôi. các`loadOptions`tham số đảm bảo rằng mọi hình dạng trong tài liệu đều được chuyển đổi sang Office Math trong quá trình tải.
 
 ## Bước 3: Lưu tài liệu
 
@@ -65,7 +65,7 @@ Cuối cùng, chúng ta sẽ lưu tài liệu ở định dạng mong muốn.
 doc.Save(dataDir + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveFormat.Docx);
 ```
 
- Ở bước này, chúng ta lưu tài liệu đã sửa đổi trở lại thư mục. Các`SaveFormat.Docx` đảm bảo rằng tài liệu được lưu ở định dạng DOCX.
+ Ở bước này, chúng ta lưu tài liệu đã sửa đổi trở lại thư mục. các`SaveFormat.Docx` đảm bảo rằng tài liệu được lưu ở định dạng DOCX.
 
 ## Phần kết luận
 

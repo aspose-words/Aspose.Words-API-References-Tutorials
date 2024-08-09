@@ -37,7 +37,7 @@ Till att börja med måste vi ladda dokumentet som vi vill dela upp på sidor. S
 Document doc = new Document("path/to/your/document.docx");
 ```
 
- Byta ut`"path/to/your/document.docx"` med den faktiska sökvägen till ditt Word-dokument.
+ Ersätta`"path/to/your/document.docx"` med den faktiska sökvägen till ditt Word-dokument.
 
 ## Steg 2: Dela upp dokumentet i sidor
 

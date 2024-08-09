@@ -138,7 +138,7 @@ doc.Save(dataDir + "ClonedDocument.docx");
 
 ## 結論
 
-現在你就擁有了！ 🎉 您已使用 Aspose.Words for .NET 成功複製了 Word 文件中的一個部分。這項強大的功能可以節省您大量的時間和精力，特別是在處理重複的文件結構時。請記住，部分是組織內容的好方法，並且能夠以程式設計方式複製它們將效率提升到一個全新的水平。快樂編碼！
+現在你就得到它了！ 🎉 您已使用 Aspose.Words for .NET 成功複製了 Word 文件中的一個部分。這項強大的功能可以節省您大量的時間和精力，特別是在處理重複的文件結構時。請記住，部分是組織內容的好方法，並且能夠以程式設計方式複製它們將效率提升到一個全新的水平。快樂編碼！
 
 ## 常見問題解答
 
@@ -160,4 +160,4 @@ Word 文件中的節是可以有自己的版面和格式的段，例如頁首、
 
 ### 在哪裡可以找到有關 Aspose.Words 的更多資源？
 
-欲了解更多信息，您可以訪問[Aspose.Words 文檔](https://reference.aspose.com/words/net/)或者[支援論壇](https://forum.aspose.com/c/words/8)尋求幫助和討論。
+欲了解更多信息，您可以訪問[Aspose.Words 文檔](https://reference.aspose.com/words/net/)或[支援論壇](https://forum.aspose.com/c/words/8)尋求幫助和討論。

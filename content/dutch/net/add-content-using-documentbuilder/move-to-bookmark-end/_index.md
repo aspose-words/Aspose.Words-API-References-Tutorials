@@ -9,14 +9,14 @@ url: /nl/net/add-content-using-documentbuilder/move-to-bookmark-end/
 ---
 ## Invoering
 
-Hallo daar, mede-codeur! Bent u ooit verstrikt geraakt in het web van manipulaties van Word-documenten, terwijl u probeerde uit te vinden hoe u precies naar het einde van een bladwijzer kon gaan en er direct daarna inhoud aan kon toevoegen? Nou, vandaag is je geluksdag! We duiken diep in Aspose.Words voor .NET, een krachtige bibliotheek waarmee u Word-documenten als een professional kunt verwerken. Deze tutorial leidt u door de stappen om naar het einde van een bladwijzer te gaan en daar wat tekst in te voegen. Laten we deze show op de weg krijgen!
+Hallo daar, mede-codeur! Ben je ooit verstrikt geraakt in het web van manipulaties van Word-documenten, terwijl je probeerde uit te vinden hoe je precies naar het einde van een bladwijzer kon gaan en er direct daarna inhoud aan kon toevoegen? Nou, vandaag is je geluksdag! We duiken diep in Aspose.Words voor .NET, een krachtige bibliotheek waarmee u Word-documenten als een professional kunt verwerken. Deze tutorial leidt u door de stappen om naar het einde van een bladwijzer te gaan en daar wat tekst in te voegen. Laten we deze show op de weg krijgen!
 
 ## Vereisten
 
 Voordat we beginnen, zorgen we ervoor dat we alles hebben wat we nodig hebben:
 
 -  Visual Studio: u kunt het downloaden van[hier](https://visualstudio.microsoft.com/).
--  Aspose.Words voor .NET: Pak het van de[download link](https://releases.aspose.com/words/net/).
+-  Aspose.Words voor .NET: Pak het van de[downloadlink](https://releases.aspose.com/words/net/).
 -  Een geldige Aspose.Words-licentie: u kunt een tijdelijke licentie krijgen[hier](https://purchase.aspose.com/temporary-license/) als je er geen hebt.
 
 En natuurlijk kom je met enige basiskennis van C# en .NET al een heel eind.
@@ -138,7 +138,7 @@ Daar heb je het! U hebt zojuist geleerd hoe u naar het einde van een bladwijzer 
 
 ### 3. Kan ik andere soorten inhoud invoegen aan het bladwijzereinde?
 
- Ja, met DocumentBuilder kunt u verschillende inhoudstypen invoegen, zoals tabellen, afbeeldingen en meer. Controleer de[documentatie](https://reference.aspose.com/words/net/) voor meer details.
+ Ja, met DocumentBuilder kunt u verschillende inhoudstypen invoegen, zoals tabellen, afbeeldingen en meer. Controleer de[documentatie](https://reference.aspose.com/words/net/) voor meer informatie.
 
 ### 4. Hoe krijg ik een tijdelijke licentie voor Aspose.Words?
 

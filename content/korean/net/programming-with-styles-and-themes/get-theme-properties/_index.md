@@ -108,7 +108,7 @@ Aspose.Words for .NET은 .NET 애플리케이션 내에서 Word 문서를 관리
 
 ### Word 문서에 새 테마를 어떻게 적용하나요?
 
- 새 테마를 적용하려면 테마 속성을 설정해야 합니다.`Document` 물체. 을 체크 해봐[Aspose.Words 문서](https://reference.aspose.com/words/net/) 테마 적용에 대한 자세한 내용은
+ 새 테마를 적용하려면 테마 속성을 설정해야 합니다.`Document` 물체. 확인해보세요[Aspose.Words 문서](https://reference.aspose.com/words/net/) 테마 적용에 대한 자세한 내용은
 
 ### .NET용 Aspose.Words에 대한 지원은 어디서 받을 수 있나요?
 

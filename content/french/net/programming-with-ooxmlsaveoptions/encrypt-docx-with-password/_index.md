@@ -69,7 +69,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.EncryptDocxWithPassword.docx", s
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez chiffré avec succès un fichier DOCX à l'aide d'Aspose.Words pour .NET. En suivant ces étapes simples, vous pouvez vous assurer que vos documents sont sécurisés et accessibles uniquement aux personnes disposant du mot de passe correct. N'oubliez pas que le cryptage est un outil puissant pour protéger les informations sensibles, alors intégrez-le régulièrement à vos pratiques de gestion de documents.
+Félicitations! Vous avez chiffré avec succès un fichier DOCX à l'aide d'Aspose.Words pour .NET. En suivant ces étapes simples, vous pouvez vous assurer que vos documents sont sécurisés et accessibles uniquement aux personnes disposant du mot de passe correct. N'oubliez pas que le cryptage est un outil puissant pour protéger les informations sensibles, alors intégrez-le régulièrement à vos pratiques de gestion de documents.
 
 ## FAQ
 

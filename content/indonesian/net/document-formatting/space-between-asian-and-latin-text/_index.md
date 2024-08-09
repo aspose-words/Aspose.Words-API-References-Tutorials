@@ -2,7 +2,7 @@
 title: Spasi Antara Teks Asia dan Latin Dalam Dokumen Word
 linktitle: Spasi Antara Teks Asia dan Latin Dalam Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menyesuaikan spasi antara teks Asia dan Latin secara otomatis di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami yang terperinci.
+description: Pelajari cara menyesuaikan spasi antara teks Asia dan Latin secara otomatis di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami yang mendetail.
 type: docs
 weight: 10
 url: /id/net/document-formatting/space-between-asian-and-latin-text/
@@ -47,7 +47,7 @@ Di sini, kita menentukan direktori tempat dokumen kita akan disimpan, membuat do
 
 ## Langkah 2: Mengonfigurasi Pemformatan Paragraf
 
-Selanjutnya, kita perlu menyesuaikan pengaturan format paragraf. Anggap saja ini sebagai menyesuaikan ruang kerja Anda agar semuanya pas.
+Selanjutnya, kita perlu menyesuaikan pengaturan pemformatan paragraf. Anggap saja ini sebagai menyesuaikan ruang kerja Anda agar semuanya pas.
 
 ```csharp
 ParagraphFormat paragraphFormat = builder.ParagraphFormat;

@@ -79,7 +79,7 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeader
 
 بعد تحميل مستنداتنا وتكوين خيارات الاستيراد، حان الوقت لدمج المستندات.
 
-هيريس كيفية القيام بذلك:
+وإليك كيفية القيام بذلك:
 
 ```csharp
 dstDocument.AppendDocument(srcDocument, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
@@ -101,9 +101,9 @@ dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");
 
 ## خاتمة
 
-وهناك لديك! لقد نجحت في دمج مستندي Word مع تجاهل الرؤوس والتذييلات الخاصة بهما باستخدام Aspose.Words for .NET. تعد هذه الطريقة مفيدة لمهام إدارة المستندات المختلفة حيث يكون الحفاظ على أقسام معينة من المستندات أمرًا بالغ الأهمية.
+وهنا لديك! لقد نجحت في دمج مستندي Word مع تجاهل الرؤوس والتذييلات الخاصة بهما باستخدام Aspose.Words for .NET. تعد هذه الطريقة مفيدة لمهام إدارة المستندات المختلفة حيث يكون الحفاظ على أقسام معينة من المستندات أمرًا بالغ الأهمية.
 
-يمكن أن يؤدي العمل مع Aspose.Words لـ .NET إلى تبسيط سير عمل معالجة المستندات بشكل كبير. تذكر، إذا واجهتك مشكلة أو كنت بحاجة إلى مزيد من المعلومات، فيمكنك دائمًا الاطلاع على[توثيق](https://reference.aspose.com/words/net/).
+يمكن أن يؤدي العمل مع Aspose.Words لـ .NET إلى تبسيط سير عمل معالجة المستندات بشكل كبير. تذكر، إذا واجهتك مشكلة أو كنت بحاجة إلى مزيد من المعلومات، فيمكنك دائمًا الاطلاع على[الوثائق](https://reference.aspose.com/words/net/).
 
 ## الأسئلة الشائعة
 
@@ -113,7 +113,7 @@ dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");
 
 ### هل من الممكن الاحتفاظ بالرؤوس والتذييلات بدلاً من تجاهلها؟
 
- قطعاً. ببساطة قم بضبطها`IgnoreHeaderFooter` ل`false` في ال`ImportFormatOptions`.
+ قطعاً. ببساطة قم بضبطها`IgnoreHeaderFooter` ل`false` في`ImportFormatOptions`.
 
 ### هل أحتاج إلى ترخيص لاستخدام Aspose.Words لـ .NET؟
 
@@ -123,6 +123,6 @@ dstDocument.Save(dataDir + "JoinAndAppendDocuments.IgnoreHeaderFooter.docx");
 
  نعم، يمكنك إلحاق مستندات متعددة في حلقة من خلال تكرار الأمر`AppendDocument` طريقة لكل وثيقة إضافية.
 
-### أين يمكنني العثور على المزيد من الأمثلة والوثائق الخاصة بـ Aspose.Words for .NET؟
+### أين يمكنني العثور على المزيد من الأمثلة والوثائق الخاصة بـ Aspose.Words لـ .NET؟
 
  يمكنك العثور على وثائق وأمثلة شاملة على الموقع[موقع أسبوز](https://reference.aspose.com/words/net/).

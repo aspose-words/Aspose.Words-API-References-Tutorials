@@ -111,7 +111,7 @@ public void convertMetafilesToPng() throws Exception {
 }
 ```
 
- Um Metadateien (z. B. WMF) während des Ladens von Dokumenten in PNG-Bilder umzuwandeln, können Sie den`setConvertMetafilesToPng(true)` Methode.
+ Um Metadateien (z. B. WMF) während des Ladens von Dokumenten in PNG-Bilder umzuwandeln, können Sie den`setConvertMetafilesToPng(true)` Verfahren.
 
 ## Vollständiger Quellcode zum Arbeiten mit Ladeoptionen in Aspose.Words für Java
 

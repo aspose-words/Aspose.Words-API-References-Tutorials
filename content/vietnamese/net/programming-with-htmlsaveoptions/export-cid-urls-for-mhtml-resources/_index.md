@@ -96,7 +96,7 @@ Chúc mừng! Bạn đã xuất thành công URL Cid cho tài nguyên MHTML bằ
 Xuất URL Cid cho tài nguyên MHTML đảm bảo rằng tài nguyên được nhúng trong tệp MHTML của bạn được tham chiếu chính xác, cải thiện tính di động và tính toàn vẹn của tài liệu.
 
 ### Tôi có thể tùy chỉnh thêm định dạng đầu ra không?
- Có, Aspose.Words for .NET cung cấp các tùy chọn tùy chỉnh mở rộng để lưu tài liệu. Tham khảo đến[tài liệu](https://reference.aspose.com/words/net/) để biết thêm chi tiết.
+ Có, Aspose.Words for .NET cung cấp các tùy chọn tùy chỉnh mở rộng để lưu tài liệu. Tham khảo[tài liệu](https://reference.aspose.com/words/net/) để biết thêm chi tiết.
 
 ### Tôi có cần giấy phép để sử dụng Aspose.Words cho .NET không?
  Có, bạn cần có giấy phép để sử dụng Aspose.Words cho .NET. Bạn có thể nhận bản dùng thử miễn phí[đây](https://releases.aspose.com/) hoặc mua giấy phép[đây](https://purchase.aspose.com/buy).

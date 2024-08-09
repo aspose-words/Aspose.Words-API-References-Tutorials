@@ -64,7 +64,7 @@ Si su documento está protegido con una contraseña, deberá proporcionar esa co
 doc.Unprotect("currentPassword");
 ```
 
- Reemplazar`"currentPassword"` con la contraseña real utilizada para proteger el documento. Una vez que proporcione la contraseña correcta, se levanta la protección.
+ Reemplazar`"currentPassword"` con la contraseña real utilizada para proteger el documento. Una vez que proporcione la contraseña correcta, se eliminará la protección.
 
 ## Paso 4: agregar y quitar protección
 
@@ -107,7 +107,7 @@ Sí, puede recorrer una lista de documentos y aplicar la misma lógica de despro
 
 ### ¿Aspose.Words para .NET es gratuito?
 
- Aspose.Words para .NET es una biblioteca paga, pero puedes probarla gratis. Revisar la[prueba gratis](https://releases.aspose.com/)!
+ Aspose.Words para .NET es una biblioteca paga, pero puedes probarla gratis. Mira el[prueba gratuita](https://releases.aspose.com/)!
 
 ### ¿Qué otros tipos de protección puedo aplicar a un documento de Word?
 

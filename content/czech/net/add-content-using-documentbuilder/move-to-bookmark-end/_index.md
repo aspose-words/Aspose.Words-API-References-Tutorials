@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/add-content-using-documentbuilder/move-to-bookmark-end/
 ---
-## Úvod
+## Zavedení
 
 Ahoj, kolego kodéru! Už jste se někdy zapletli do sítě manipulací s dokumenty Wordu a snažili jste se přijít na to, jak se přesně přesunout na konec záložky a přidat obsah hned za něj? No, dnes je váš šťastný den! Ponoříme se hluboko do Aspose.Words for .NET, výkonné knihovny, která vám umožní pracovat s dokumenty Wordu jako profesionálové. Tento výukový program vás provede kroky, jak přejít na konec záložky a vložit tam nějaký text. Vydejme tuto show na cestu!
 
@@ -15,9 +15,9 @@ Ahoj, kolego kodéru! Už jste se někdy zapletli do sítě manipulací s dokume
 
 Než začneme, ujistěte se, že máme vše, co potřebujeme:
 
--  Visual Studio: Můžete si jej stáhnout z[tady](https://visualstudio.microsoft.com/).
+-  Visual Studio: Můžete si jej stáhnout z[zde](https://visualstudio.microsoft.com/).
 -  Aspose.Words pro .NET: Získejte to z[odkaz ke stažení](https://releases.aspose.com/words/net/).
--  Platná licence Aspose.Words: Můžete získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/) pokud žádný nemáte.
+-  Platná licence Aspose.Words: Můžete získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/) pokud žádný nemáte.
 
 A samozřejmě, některé základní znalosti C# a .NET budou daleko.
 
@@ -109,7 +109,7 @@ Jakmile jste na konci záložky, můžete vložit text nebo jakýkoli jiný obsa
 builder.Writeln("This is a bookmark.");
 ```
 
-A to je vše! Úspěšně jste se přesunuli na konec záložky a vložili jste tam text.
+A je to! Úspěšně jste se přesunuli na konec záložky a vložili jste tam text.
 
 ## Krok 6: Uložte dokument
 
@@ -138,7 +138,7 @@ Tady to máš! Právě jste se naučili, jak se přesunout na konec záložky v 
 
 ### 3. Mohu na konec záložky vložit jiné typy obsahu?
 
- Ano, DocumentBuilder umožňuje vkládat různé typy obsahu, jako jsou tabulky, obrázky a další. Zkontrolovat[dokumentace](https://reference.aspose.com/words/net/) Více podrobností.
+ Ano, DocumentBuilder umožňuje vkládat různé typy obsahu, jako jsou tabulky, obrázky a další. Zkontrolujte[dokumentace](https://reference.aspose.com/words/net/) pro více podrobností.
 
 ### 4. Jak získám dočasnou licenci pro Aspose.Words?
 

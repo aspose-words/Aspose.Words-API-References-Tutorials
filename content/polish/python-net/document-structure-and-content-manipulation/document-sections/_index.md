@@ -2,7 +2,7 @@
 title: Zarządzanie sekcjami i układem dokumentu
 linktitle: Zarządzanie sekcjami i układem dokumentu
 second_title: Aspose.Words API do zarządzania dokumentami w języku Python
-description: Dowiedz się, jak zarządzać sekcjami i układami dokumentów za pomocą Aspose.Words dla Pythona. Twórz, modyfikuj sekcje, dostosowuj układy i nie tylko. Zacznij teraz!
+description: Dowiedz się, jak zarządzać sekcjami i układami dokumentów za pomocą Aspose.Words dla Pythona. Twórz, modyfikuj sekcje, dostosowuj układy i nie tylko. Zacznij już teraz!
 type: docs
 weight: 24
 url: /pl/python-net/document-structure-and-content-manipulation/document-sections/
@@ -68,7 +68,7 @@ footer.paragraphs.add_run("Footer Text")
 
 ## Zarządzanie podziałami stron
 
-Podziały stron zapewniają płynny przepływ treści pomiędzy sekcjami. Możesz wstawiać podziały stron w określonych miejscach dokumentu:
+Podziały stron zapewniają płynny przepływ treści między sekcjami. Możesz wstawiać podziały stron w określonych miejscach dokumentu:
 
 ```python
 # Insert page break

@@ -17,7 +17,7 @@ Ez az útmutató végigvezeti Önt a sor könyvjelzők feloldásán a Word-dokum
 
 Mielőtt merülne, szüksége lesz néhány dologra:
 
-1.  Aspose.Words for .NET: Ez a kereskedelmi könyvtár olyan funkciókat biztosít, amelyek segítségével programozottan dolgozhat Word dokumentumokkal. 2. Ingyenes próbaverziót tölthet le a webhelyről[letöltési link](https://releases.aspose.com/words/net/) vagy vásároljon licencet innen[megvesz](https://purchase.aspose.com/buy).
+1.  Aspose.Words for .NET: Ez a kereskedelmi könyvtár olyan funkciókat biztosít, amelyek segítségével programozottan dolgozhat Word dokumentumokkal. 2. Ingyenes próbaverziót tölthet le a webhelyről[letöltési link](https://releases.aspose.com/words/net/) vagy vásároljon licencet innen[vétel](https://purchase.aspose.com/buy).
 3. AC# fejlesztői környezet: A Visual Studio vagy bármely más C# IDE tökéletesen működik.
 4. Word-dokumentum soros könyvjelzőkkel: A „Táblázat oszlopos könyvjelzői.docx” elnevezésű mintadokumentumot használjuk demonstrációs célokra.
 
@@ -65,7 +65,7 @@ private void Untangle(Document doc)
 Íme lépésről lépésre a kód működésének magyarázata:
 
  A dokumentumban található összes könyvjelzőn keresztül iterálunk az a`foreach` hurok.
-Minden könyvjelzőnél lekérjük mindkét könyvjelző kezdősorának szülősorát (`bookmark.BookmarkStart`) és a könyvjelző vége (`bookmark.BookmarkEnd` ) használni a`GetAncestor` módszer.
+Minden könyvjelzőnél lekérjük mindkét könyvjelző kezdősorának szülősorát (`bookmark.BookmarkStart`) és a könyvjelző vége (`bookmark.BookmarkEnd` ) segítségével`GetAncestor` módszer.
 Ezután ellenőrizzük, hogy mindkét sor megtalálható-e (`row1 != null`és`row2 != null`) és ha szomszédos sorok (`row1.NextSibling == row2`). Ez biztosítja, hogy csak a szomszédos sorokon átívelő könyvjelzőket módosítsuk.
 Ha a feltételek teljesülnek, a könyvjelző végcsomópontját áthelyezzük a felső sor utolsó cellájának utolsó bekezdésének végére (`row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd)`) hatékonyan kibogozni őket.
 
@@ -92,7 +92,7 @@ Végül ellenőrizzük, hogy létezik-e a könyvjelző és a sor (`bookmark != n
 
 ## 4. lépés: Ellenőrizze a kibontást
 
- Amíg a`Untangle` funkciónak biztosítania kell a többi könyvjelző biztonságát, ezt mindig jó gyakorlat ellenőrizni. Így ellenőrizhetjük, hogy a kibontási folyamat nem törölte-e véletlenül egy másik könyvjelző végét:
+ Míg a`Untangle` funkciónak biztosítania kell a többi könyvjelző biztonságát, ezt mindig jó gyakorlat ellenőrizni. Így ellenőrizhetjük, hogy a kibontási folyamat nem törölte-e véletlenül egy másik könyvjelző végét:
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)

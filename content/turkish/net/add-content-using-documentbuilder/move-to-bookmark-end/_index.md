@@ -9,14 +9,14 @@ url: /tr/net/add-content-using-documentbuilder/move-to-bookmark-end/
 ---
 ## giriiş
 
-Merhaba kodlayıcı arkadaşım! Kendinizi hiç Word belgesi manipülasyonları ağına karışmış halde buldunuz mu, tam olarak bir yer işaretinin sonuna nasıl gideceğinizi ve hemen ardından içerik ekleyeceğinizi bulmaya çalışırken buldunuz mu? Güzel, bugün senin şanslı günün! Word belgelerini bir profesyonel gibi kullanmanızı sağlayan güçlü bir kütüphane olan Aspose.Words for .NET'in derinliklerine dalıyoruz. Bu eğitim, bir yer iminin sonuna gitme ve oraya bir miktar metin ekleme adımlarında size yol gösterecektir. Haydi bu gösteriyi yollara taşıyalım!
+Merhaba kodlayıcı arkadaşım! Kendinizi hiç Word belgesi manipülasyonları ağına karışmış halde buldunuz mu, tam olarak bir yer işaretinin sonuna nasıl gideceğinizi ve hemen ardından içerik ekleyeceğinizi bulmaya çalışırken buldunuz mu? Peki, bugün şanslı günün! Word belgelerini bir profesyonel gibi kullanmanızı sağlayan güçlü bir kütüphane olan Aspose.Words for .NET'in derinliklerine dalıyoruz. Bu eğitim, bir yer iminin sonuna gitme ve oraya bir miktar metin ekleme adımlarında size yol gösterecektir. Haydi bu gösteriyi yollara taşıyalım!
 
 ## Önkoşullar
 
 Başlamadan önce ihtiyacımız olan her şeye sahip olduğumuzdan emin olalım:
 
 -  Visual Studio: Buradan indirebilirsiniz.[Burada](https://visualstudio.microsoft.com/).
--  Aspose.Words for .NET: Onu şuradan alın:[İndirme: {link](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Onu şuradan alın:[indirme bağlantısı](https://releases.aspose.com/words/net/).
 -  Geçerli bir Aspose.Words lisansı: Geçici bir lisans alabilirsiniz[Burada](https://purchase.aspose.com/temporary-license/) eğer sende yoksa.
 
 Ve elbette, bazı temel C# ve .NET bilgilerinin size çok faydası olacaktır.
@@ -109,7 +109,7 @@ Yer iminin sonuna geldiğinizde metin veya başka herhangi bir içerik ekleyebil
 builder.Writeln("This is a bookmark.");
 ```
 
-Ve bu kadar! Başarıyla bir yer iminin sonuna taşındınız ve oraya metin eklediniz.
+İşte bu kadar! Başarıyla bir yer iminin sonuna taşındınız ve oraya metin eklediniz.
 
 ## Adım 6: Belgeyi Kaydedin
 
@@ -124,13 +124,13 @@ doc.Save(dataDir + "UpdatedBookmarks.docx");
 
 ## Çözüm
 
-İşte aldın! Aspose.Words for .NET'i kullanarak bir Word belgesinde yer işaretinin sonuna nasıl gideceğinizi öğrendiniz. Bu güçlü özellik, belge işleme görevlerinizi çok daha verimli hale getirerek tonlarca zaman ve çabadan tasarruf etmenizi sağlayabilir. Unutmayın, pratik mükemmelleştirir. Bu beceride ustalaşmak için farklı yer imleri ve belge yapılarını denemeye devam edin.
+İşte burada! Aspose.Words for .NET'i kullanarak bir Word belgesinde yer iminin sonuna nasıl gidileceğini az önce öğrendiniz. Bu güçlü özellik, belge işleme görevlerinizi çok daha verimli hale getirerek tonlarca zaman ve çabadan tasarruf etmenizi sağlayabilir. Unutmayın, pratik mükemmelleştirir. Bu beceride ustalaşmak için farklı yer imleri ve belge yapılarını denemeye devam edin.
 
 ## SSS'ler
 
 ### 1. Bir yer iminin sonu yerine başına gidebilir miyim?
 
- Kesinlikle! Sadece ayarlayın`isBookmarkStart` parametre`true`Ve`isBookmarkEnd` ile`false` içinde`MoveToBookmark` yöntem.
+ Kesinlikle! Sadece ayarlayın`isBookmarkStart` parametre`true`Ve`isBookmarkEnd` ile`false` içinde`MoveToBookmark` Yöntem.
 
 ### 2. Yer imi adım yanlışsa ne olur?
 

@@ -70,7 +70,7 @@ I masz to! Pomyślnie usunąłeś pole z dokumentu programu Word przy użyciu As
 
 ## Wniosek
 
-I to jest okład! Nauczyłeś się, jak usuwać pola z dokumentu programu Word przy użyciu Aspose.Words dla .NET. To proste, ale potężne narzędzie, które może zaoszczędzić mnóstwo czasu i wysiłku. A teraz śmiało uprzątnij te dokumenty jak profesjonalista!
+I to jest opakowanie! Nauczyłeś się, jak usuwać pola z dokumentu programu Word przy użyciu Aspose.Words dla .NET. To proste, ale potężne narzędzie, które może zaoszczędzić mnóstwo czasu i wysiłku. A teraz śmiało uprzątnij te dokumenty jak profesjonalista!
 
 ## Często zadawane pytania
 

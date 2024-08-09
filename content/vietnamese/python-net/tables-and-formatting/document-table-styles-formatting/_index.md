@@ -49,7 +49,7 @@ Trước khi chúng ta đi sâu vào chi tiết cụ thể về kiểu và đị
     builder.end_row()
     ```
 
-3. Hàng lặp lại: Thêm hàng và ô nếu cần, theo mẫu tương tự.
+3. Lặp lại hàng: Thêm hàng và ô nếu cần, theo mẫu tương tự.
 
 4.  Chèn bảng vào tài liệu: Cuối cùng, chèn bảng vào tài liệu bằng cách sử dụng`end_table` phương pháp.
 

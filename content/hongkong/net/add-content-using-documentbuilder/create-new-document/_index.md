@@ -8,7 +8,7 @@ weight: 10
 url: /zh-hant/net/add-content-using-documentbuilder/create-new-document/
 ---
 ## 介紹
-我們正在深入探討 Aspose.Words for .NET 的世界，這是一個能夠滿足您所有文件操作需求的寶藏庫。無論您是產生動態報告、自動建立文檔，還是只是厭倦了手動執行重複性任務，Aspose.Words 都可以幫助您解決問題。讓我們捲起袖子，親自動手，使用這個強大的工具從頭開始建立一個新的 Word 文件。
+我們正在深入探討 Aspose.Words for .NET 的世界，這是一個能夠滿足您所有文件操作需求的寶藏庫。無論您是要產生動態報告、自動建立文檔，還是只是厭倦了手動執行重複性任務，Aspose.Words 都可以幫助您解決問題。讓我們捲起袖子，親自動手，使用這個強大的工具從頭開始建立一個新的 Word 文件。
 
 ## 先決條件
 
@@ -77,7 +77,7 @@ builder.Writeln("Hello World!");
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.CreateNewDocument.docx");
 ```
 
-現在你就擁有了！您剛剛使用 Aspose.Words for .NET 建立了一個新的 Word 文件。
+現在你就得到它了！您剛剛使用 Aspose.Words for .NET 建立了一個新的 Word 文件。
 
 ## 結論
 

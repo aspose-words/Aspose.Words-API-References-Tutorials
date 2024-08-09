@@ -9,7 +9,7 @@ url: /ar/net/join-and-append-documents/list-use-destination-styles/
 ---
 ## مقدمة
 
-هل سبق لك أن حاولت دمج مستندات Word وتشابكت مع التنسيق؟ إنه مثل محاولة خلط الزيت والماء في بعض الأحيان، أليس كذلك؟ حسنًا، سنتعمق اليوم في خدعة رائعة باستخدام Aspose.Words for .NET والتي ستنقذك من هذا الصداع. سنتعلم كيفية استيراد القوائم من مستند إلى آخر دون العبث بالترقيم والأنماط. على استعداد لجعل حياتك أسهل قليلا؟ هيا بنا نبدأ!
+هل سبق لك أن حاولت دمج مستندات Word وتشابكت مع التنسيق؟ إنه مثل محاولة خلط الزيت والماء في بعض الأحيان، أليس كذلك؟ حسنًا، سنتعمق اليوم في خدعة رائعة باستخدام Aspose.Words for .NET والتي ستنقذك من هذا الصداع. سنتعلم كيفية استيراد القوائم من مستند إلى آخر دون العبث بالترقيم والأنماط. على استعداد لجعل حياتك أسهل قليلا؟ دعونا نبدأ!
 
 ## المتطلبات الأساسية
 
@@ -19,7 +19,7 @@ url: /ar/net/join-and-append-documents/list-use-destination-styles/
 2. Visual Studio: أي إصدار حديث سيفي بالغرض.
 3. الفهم الأساسي لـ C#: لست بحاجة إلى أن تكون معالجًا، ولكن بعض المعرفة ستساعدك.
 
- تأكد من تثبيت Aspose.Words وإعداده في مشروعك. إذا لم تكن متأكدًا من كيفية القيام بذلك، فإن[توثيق](https://reference.aspose.com/words/net/) مكان عظيم للبدء.
+ تأكد من تثبيت Aspose.Words وإعداده في مشروعك. إذا لم تكن متأكدًا من كيفية القيام بذلك، فإن[الوثائق](https://reference.aspose.com/words/net/) مكان عظيم للبدء.
 
 ## استيراد مساحات الأسماء
 
@@ -41,7 +41,7 @@ using Aspose.Words.Saving;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- يستبدل`"YOUR DOCUMENT DIRECTORY"` بالمسار الفعلي حيث يتم تخزين المستندات الخاصة بك. الحق سهلة؟
+ يستبدل`"YOUR DOCUMENT DIRECTORY"` بالمسار الفعلي حيث يتم تخزين المستندات الخاصة بك. سهل، أليس كذلك؟
 
 ## الخطوة 2: قم بتحميل مستندات المصدر والوجهة الخاصة بك
 
@@ -64,7 +64,7 @@ ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = tr
 
 ## الخطوة 4: إلحاق المستند المصدر بالمستند الوجهة
 
-الآن، دعونا نفعل الدمج. هذا هو المكان الذي يحدث السحر. نقوم بإلحاق المستند المصدر بالمستند الوجهة أثناء استخدام خيارات الاستيراد المحددة.
+الآن، دعونا نفعل الدمج. هذا هو المكان الذي يحدث فيه السحر. نقوم بإلحاق المستند المصدر بالمستند الوجهة أثناء استخدام خيارات الاستيراد المحددة.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
@@ -82,7 +82,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 تعد Aspose.Words for .NET مكتبة قوية للعمل مع مستندات Word برمجيًا. يسمح لك بإنشاء وتعديل وتحويل المستندات بتنسيقات مختلفة.
 
 ### كيف أقوم بتثبيت Aspose.Words لـ .NET؟
- يمكنك تنزيله من[موقع إلكتروني](https://releases.aspose.com/words/net/) واتبع تعليمات التثبيت في[توثيق](https://reference.aspose.com/words/net/).
+ يمكنك تنزيله من[موقع إلكتروني](https://releases.aspose.com/words/net/) واتبع تعليمات التثبيت في[الوثائق](https://reference.aspose.com/words/net/).
 
 ### هل يمكنني استخدام Aspose.Words مجانًا؟
  يقدم Aspose.Words أ[تجربة مجانية](https://releases.aspose.com/) مع ميزات محدودة. للوصول الكامل، سوف تحتاج إلى شراء ترخيص[هنا](https://purchase.aspose.com/buy).

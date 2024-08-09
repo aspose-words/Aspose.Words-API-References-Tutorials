@@ -77,12 +77,12 @@ Document doc = new Document(dataDir + "WMF with image.docx", loadOptions);
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez réussi à convertir des métafichiers en PNG dans un document Word à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité puissante peut simplifier la gestion des graphiques dans vos documents, les rendant plus accessibles et plus faciles à gérer. Bon codage !
+Félicitations! Vous avez réussi à convertir des métafichiers en PNG dans un document Word à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité puissante peut simplifier la gestion des graphiques dans vos documents, les rendant plus accessibles et plus faciles à gérer. Bon codage !
 
 ## FAQ
 
 ### Puis-je convertir d’autres types de fichiers que les métafichiers en PNG ?
- Aspose.Words for .NET offre une prise en charge étendue de divers formats de fichiers. Vérifier la[Documentation](https://reference.aspose.com/words/net/) pour plus de détails.
+ Aspose.Words for .NET offre une prise en charge étendue de divers formats de fichiers. Vérifiez le[documentation](https://reference.aspose.com/words/net/) pour plus de détails.
 
 ### Existe-t-il un moyen de traiter plusieurs documents par lots ?
 Oui, vous pouvez parcourir un répertoire de documents et appliquer les mêmes options de chargement à chaque fichier.
@@ -94,4 +94,4 @@ Les métafichiers resteront dans leur format d'origine, qui pourrait ne pas êtr
  Oui, une licence est requise pour bénéficier de toutes les fonctionnalités. Vous pouvez obtenir un[permis temporaire](https://purchase.aspose.com/temporary-license/) à des fins d'essai.
 
 ### Puis-je utiliser cette méthode pour d’autres formats graphiques comme JPEG ou GIF ?
- Cette méthode spécifique est destinée aux métafichiers, mais Aspose.Words for .NET prend en charge différents formats d'image. Se référer au[Documentation](https://reference.aspose.com/words/net/) pour plus d'informations.
+ Cette méthode spécifique est destinée aux métafichiers, mais Aspose.Words for .NET prend en charge différents formats d'image. Référez-vous au[documentation](https://reference.aspose.com/words/net/) pour plus d'informations.

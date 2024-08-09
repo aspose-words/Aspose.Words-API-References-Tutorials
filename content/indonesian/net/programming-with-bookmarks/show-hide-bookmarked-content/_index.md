@@ -90,7 +90,7 @@ public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool is
 
 -  Pengambilan Bookmark:`Bookmark bm = doc.Range.Bookmarks[bookmarkName];` mengambil bookmark.
 - Node Traversal: Kami melintasi node di dalam bookmark.
--  Pengalih Visibilitas: Jika simpulnya adalah a`Run` (rangkaian teks yang berdekatan), kami mengaturnya`Hidden` Properti.
+-  Pengalih Visibilitas: Jika simpulnya adalah a`Run` (rangkaian teks yang berdekatan), kami mengaturnya`Hidden` milik.
 
 ## Langkah 4: Menerapkan Metode
 

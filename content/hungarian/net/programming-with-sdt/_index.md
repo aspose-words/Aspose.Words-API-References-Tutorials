@@ -11,7 +11,7 @@ Az Aspose.Words for .NET oktatóanyagai lehetővé teszik a könyvtár funkciói
 
 Ezekből az oktatóanyagokból megtudhatja, hogyan adhat hozzá és távolíthat el SDT-vezérlőket, hogyan szabhatja testre azokat meghatározott tulajdonságokkal, és hogyan érheti el és módosíthatja az adataikat. Azt is megtudhatja, hogyan használhatja az SDT-vezérlőkkel kapcsolatos eseményeket egyéni műveletek végrehajtására az adatok módosítása vagy érvényesítése során.
 
-Az oktatóanyagokban található kódminták segítenek megérteni az SDT-vezérlők fogalmait, és saját projektjeiben gyakorolni a funkcionalitást. Akár kezdő, akár tapasztalt fejlesztő, ezek az oktatóanyagok segítenek elsajátítani az SDT-vezérlők használatát az Aspose.Words for .NET-ben, és javítani a Word dokumentumfejlesztési készségeit.
+Az oktatóanyagokban található kódminták segítenek megérteni az SDT-vezérlők fogalmait, és saját projektjeiben gyakorolni a funkcionalitást. Akár kezdő, akár tapasztalt fejlesztő, ezek az oktatóanyagok segítenek elsajátítani az Aspose.Words for .NET SDT vezérlőinek használatát, és javítani a Word dokumentumfejlesztési készségeit.
 
  ## Oktatóanyagok
 | Cím | Leírás |

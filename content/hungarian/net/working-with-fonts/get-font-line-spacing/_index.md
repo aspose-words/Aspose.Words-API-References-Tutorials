@@ -2,85 +2,100 @@
 title: Szerezze be a betűtípus sorközt
 linktitle: Szerezze be a betűtípus sorközt
 second_title: Aspose.Words Document Processing API
-description: Ebből az oktatóanyagból megtudhatja, hogyan állíthat be betűtípus-sortávolságot egy Word-dokumentumban az Aspose.Words for .NET segítségével.
+description: Ebből a lépésenkénti oktatóanyagból megtudhatja, hogyan állíthatja be a betűtípusok sorközét az Aspose.Words for .NET használatával. Tökéletes fejlesztőknek.
 type: docs
 weight: 10
 url: /hu/net/working-with-fonts/get-font-line-spacing/
 ---
-Ebben az oktatóanyagban elmondjuk, hogyan állíthatja be a betűtípusok sorközét egy Word-dokumentumban az Aspose.Words könyvtár segítségével a .NET-hez. A betűtípus sortávolsága határozza meg a szövegsorok közötti függőleges teret. Lépésről lépésre segítünk megérteni és megvalósítani a kódot a .NET-projektben.
+## Bevezetés
+
+Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi Word-dokumentumok programozott létrehozását, kezelését és konvertálását. Az egyik gyakori feladat, amelyet el kell végeznie, egy adott betűtípus sorközének lekérése a dokumentumban. Ebben az oktatóanyagban lépésről lépésre végigvezetjük a folyamaton, biztosítva, hogy könnyen beállíthassa a betűtípusok sorközét az Aspose.Words for .NET használatával. 
 
 ## Előfeltételek
-Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következőkkel:
-- C# programozási nyelv gyakorlati ismerete
-- A projektben telepített .NET Aspose.Words könyvtár
 
-## 1. lépés: Hozzon létre egy új dokumentumot és dokumentumgenerátort
- Először is létrehozunk egy új dokumentumot a példányosítással`Document` osztályt és egy dokumentumkészítőt a példányosításával`DocumentBuilder` osztály.
+Mielőtt belemerülnénk a kódba, győződjön meg arról, hogy a következő előfeltételek teljesülnek:
+
+1.  Aspose.Words for .NET Library: Töltse le és telepítse a legújabb verziót innen[itt](https://releases.aspose.com/words/net/).
+2. Fejlesztési környezet: Győződjön meg arról, hogy be van állítva egy olyan IDE, mint a Visual Studio.
+3. Alapvető C# ismeretek: Ez az oktatóanyag feltételezi, hogy rendelkezik alapvető ismeretekkel a C# programozásról.
+
+## Névterek importálása
+
+Először is importálnia kell a szükséges névtereket a C# projektbe. Ezek a névterek lehetővé teszik az Aspose.Words funkciók elérését.
 
 ```csharp
-// Hozzon létre egy új dokumentumot
-Document doc = new Document();
+using System;
+using Aspose.Words;
+using Aspose.Words.Fonts;
+```
 
-//Hozzon létre egy dokumentumgenerátort
+Bontsuk le egyszerű, kezelhető lépésekre a betűtípus-sortávolság meghatározásának folyamatát.
+
+## 1. lépés: Hozzon létre egy új dokumentumot
+
+Az első lépés egy új Word-dokumentumpéldány létrehozása az Aspose.Words for .NET használatával.
+
+```csharp
+Document doc = new Document();
+```
+
+## 2. lépés: Inicializálja a DocumentBuilder programot
+
+Ezután inicializálnunk kell a`DocumentBuilder` objektum. Ez az objektum segít nekünk a dokumentum tartalmának felépítésében és kezelésében.
+
+```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 2. lépés: Konfigurálja a betűtípust
- Ezután konfiguráljuk a betűtípust a`Name` a dokumentumgenerátor tulajdonsága.
+## 3. lépés: Állítsa be a betűtípus tulajdonságait
+
+Most beállítjuk a betűtípus tulajdonságait a beszúrni kívánt szöveghez. Ebben a példában a "Calibri" betűtípust fogjuk használni.
 
 ```csharp
-// Konfigurálja a betűtípust
 builder.Font.Name = "Calibri";
 ```
 
-## 3. lépés: Szöveg hozzáadása a dokumentumhoz
-Most a dokumentumgenerátort fogjuk használni, hogy formázott szöveget adjunk a dokumentumhoz.
+## 4. lépés: Írjon szöveget a dokumentumba
+
+ A`DocumentBuilder` objektumot, írjon be szöveget a dokumentumba. Ez a szöveg az előző lépésben beállított betűtípus-tulajdonságokat fogja használni.
 
 ```csharp
-// Szöveg hozzáadása a dokumentumhoz
-builder. Writen("qText");
+builder.Writeln("Sample Text");
 ```
 
-## 4. lépés: Szerezze be a betűtípus sortávolságát
- Most elérjük a`Font` tárgya a dokumentum első bekezdésében, és lekéri a értékét`LineSpacing` ingatlan.
+## 5. lépés: A betűtípus objektum lekérése
+
+A sorköz eléréséhez el kell érnünk az imént hozzáadott szöveg font objektumát. Ezt úgy teheti meg, hogy a dokumentum szerkezetében navigál az első bekezdés futtatásához.
 
 ```csharp
-// Szerezze meg a betűtípus sorközét
 Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
-Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
-### Minta forráskód a Betűtípus-sortávolság beszerzéséhez az Aspose.Words for .NET használatával 
+## 6. lépés: Állítsa be a sorközt
+
+Végül a font objektumból lekérjük a sortávolságot, és kinyomtatjuk a konzolra.
+
 ```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Font.Name = "Calibri";
-builder.Writeln("qText");
-Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
 Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
 ## Következtetés
-Ebben az oktatóanyagban azt láthattuk, hogyan állíthatja be a betűtípusok sorközét egy Word-dokumentumban az Aspose.Words for .NET segítségével. A betűtípus sorköze fontos a szövegsorok közötti függőleges térköz szabályozásához. Nyugodtan használhatja ezt a funkciót a szöveg megjelenésének személyre szabásához a dokumentumokban.
 
-### GYIK
+És megvan! A betűtípus sorközének lekérése az Aspose.Words for .NET használatával egyszerű, ha ezeket az egyszerű lépéseket lebontja. Akár új dokumentumot hoz létre, akár egy meglévővel dolgozik, az Aspose.Words minden eszközt biztosít a betűtípus-tulajdonságok hatékony kezeléséhez.
 
-#### K: Hogyan módosíthatom egy Word-dokumentumban az adott szöveg sorközét?
+## GYIK
 
-V: Az Aspose.Words segítségével egyszerűen módosíthatja a Word-dokumentumban szereplő szövegek sorközét. Az API segítségével válassza ki a kívánt szöveget, és állítsa be a sorok közötti távolságot a megfelelő érték megadásával.
+### Mi az Aspose.Words for .NET?
+Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi a fejlesztők számára Word-dokumentumok programozott C# használatával történő létrehozását, kezelését és konvertálását.
 
-#### K: Lehetséges pontos térközt alkalmazni a sorok között egy Word dokumentumban?
+### Használhatom az Aspose.Words for .NET programot más .NET nyelveken?
+Igen, az Aspose.Words for .NET bármely .NET nyelvvel használható, beleértve a VB.NET-et és az F#-ot is.
 
-V: Igen, az Aspose.Words lehetővé teszi, hogy pontos térközt alkalmazzon a sorok között egy Word-dokumentumban. Az API segítségével pontos értéket adhat meg a sorközhöz.
+### Hogyan tölthetem le az Aspose.Words for .NET fájlt?
+ Letöltheti az Aspose.Words for .NET legújabb verzióját innen[itt](https://releases.aspose.com/words/net/).
 
-#### K: Hogyan állíthatom be a sorközt a teljes Word dokumentumban?
+### Létezik ingyenes próbaverzió az Aspose.Words for .NET számára?
+ Igen, ingyenes próbaverziót kaphat a webhelyen[itt](https://releases.aspose.com/).
 
-V: Az Aspose.Words segítségével egyszerűen beállíthatja a sorközt a teljes Word-dokumentumban. Az API által biztosított módszerekkel adja meg a kívánt sorközt a teljes dokumentumhoz.
-
-#### K: Az Aspose.Words támogatja a többszörös sortávolságot?
-
-V: Igen, az Aspose.Words támogatja a többszörös sortávolságot a Word dokumentumokban. Több szóközt is beállíthat, például a normál térköz 1,5-szeresét vagy kétszeresét a szöveg soraihoz.
-
-#### K: Hogyan kerülhetem el a sorátfedéssel kapcsolatos problémákat a sorköz beállításakor?
-
-V: A sorok közötti átfedési problémák elkerülése érdekében a sorok közötti térköz beállításakor ügyeljen a megfelelő térköz értékek kiválasztására. Tesztelje a dokumentum végső megjelenítését is, hogy megbizonyosodjon arról, hogy a szöveg olvasható és jól formázott marad.
+### Hol találom az Aspose.Words for .NET dokumentációját?
+ Az Aspose.Words for .NET dokumentációja elérhető[itt](https://reference.aspose.com/words/net/).

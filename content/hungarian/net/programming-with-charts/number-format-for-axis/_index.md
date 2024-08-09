@@ -9,13 +9,13 @@ url: /hu/net/programming-with-charts/number-format-for-axis/
 ---
 ## Bevezetés
 
-Halihó! Dolgozott már diagramokkal a dokumentumaiban, és azt kívánta, bárcsak formázhatná a tengelyén lévő számokat, hogy professzionálisabbnak tűnjenek? Nos, szerencséd van! Ebben az oktatóanyagban részletesen megvizsgáljuk, hogyan érheti el ezt az Aspose.Words for .NET használatával. Ez a hatékony könyvtár lehetővé teszi a Word-dokumentumok olyan egyszerű kezelését, mint a torta. Ma pedig arra összpontosítunk, hogy ezeket a diagramtengelyeket egyedi számformátumokkal alakítsuk át.
+Szia! Dolgozott már diagramokkal a dokumentumaiban, és azt kívánta, bárcsak formázhatná a tengelyén lévő számokat, hogy professzionálisabbnak tűnjenek? Nos, szerencséd van! Ebben az oktatóanyagban részletesen megvizsgáljuk, hogyan érheti el ezt az Aspose.Words for .NET használatával. Ez a hatékony könyvtár lehetővé teszi a Word-dokumentumok olyan egyszerű kezelését, mint a torta. Ma pedig arra összpontosítunk, hogy ezeket a diagramtengelyeket egyedi számformátumokkal alakítsuk át.
 
 ## Előfeltételek
 
 Mielőtt elkezdenénk, győződjünk meg arról, hogy mindennel megvan, amire szüksége van. Íme egy gyors ellenőrző lista:
 
--  Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van. Ha nem, akkor megteheti[töltse le itt](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van. Ha nem, akkor lehet[töltse le itt](https://releases.aspose.com/words/net/).
 - .NET-keretrendszer: Győződjön meg arról, hogy kompatibilis .NET-keretrendszer van telepítve.
 - Fejlesztési környezet: Az olyan IDE, mint a Visual Studio, tökéletesen működik.
 - Alapvető C# ismerete: Ez segít követni a kódolási példákat.

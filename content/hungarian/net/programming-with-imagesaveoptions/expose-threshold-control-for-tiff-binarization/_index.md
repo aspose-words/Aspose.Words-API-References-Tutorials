@@ -9,7 +9,7 @@ url: /hu/net/programming-with-imagesaveoptions/expose-threshold-control-for-tiff
 ---
 ## Bevezetés
 
-Gondolkozott már azon, hogyan szabályozhatja a TIFF-binarizálás küszöbét Word-dokumentumaiban? Jó helyen jársz! Ez az útmutató lépésről lépésre végigvezeti a folyamaton az Aspose.Words for .NET használatával. Akár tapasztalt fejlesztő, akár csak most kezdi, ezt az oktatóanyagot lebilincselőnek, könnyen követhetőnek találja, és minden olyan részletet tartalmaz, amelyre szüksége van a munka elvégzéséhez. Készen állsz a merülésre? Gyerünk!
+Gondolkozott már azon, hogyan szabályozhatja a TIFF-binarizálás küszöbét Word-dokumentumaiban? Jó helyen jársz! Ez az útmutató lépésről lépésre végigvezeti a folyamaton az Aspose.Words for .NET használatával. Akár tapasztalt fejlesztő, akár csak most kezdi, ezt az oktatóanyagot lebilincselőnek, könnyen követhetőnek találja, és minden olyan részletet tartalmaz, amelyre szüksége van a munka elvégzéséhez. Készen állsz a merülésre? Menjünk!
 
 ## Előfeltételek
 

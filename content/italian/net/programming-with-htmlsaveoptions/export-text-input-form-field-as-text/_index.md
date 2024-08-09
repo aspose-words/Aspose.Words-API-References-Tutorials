@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-htmlsaveoptions/export-text-input-form-field-as-text/
 ---
-## introduzione
+## Introduzione
 
 Quindi ti stai immergendo nel mondo di Aspose.Words per .NET? Scelta fantastica! Se stai cercando informazioni su come esportare un campo modulo di input di testo come testo, sei nel posto giusto. Che tu abbia appena iniziato o stia rispolverando le tue abilità, questa guida ti guiderà attraverso tutto ciò che devi sapere. Cominciamo, ok?
 
@@ -106,7 +106,7 @@ doc.Save(dataDir + "ExportedDocument.html", saveOptions);
 
 ## Conclusione
 
-E il gioco è fatto! Hai esportato con successo un campo modulo di input di testo come testo normale utilizzando Aspose.Words per .NET. Questa guida dovrebbe fornirti un approccio chiaro e passo passo per raggiungere questo compito. Ricorda, la pratica rende perfetti, quindi continua a sperimentare diverse opzioni e impostazioni per vedere cos'altro puoi fare con Aspose.Words.
+Ed ecco qua! Hai esportato con successo un campo modulo di input di testo come testo normale utilizzando Aspose.Words per .NET. Questa guida dovrebbe fornirti un approccio chiaro e passo passo per raggiungere questo compito. Ricorda, la pratica rende perfetti, quindi continua a sperimentare diverse opzioni e impostazioni per vedere cos'altro puoi fare con Aspose.Words.
 
 ## Domande frequenti
 
@@ -124,7 +124,7 @@ E il gioco è fatto! Hai esportato con successo un campo modulo di input di test
 
 ### Posso personalizzare l'HTML esportato?
 
- Assolutamente! Aspose.Words fornisce varie opzioni per personalizzare l'output HTML. Fare riferimento al[documentazione](https://reference.aspose.com/words/net/) per ulteriori dettagli.
+ Assolutamente! Aspose.Words fornisce varie opzioni per personalizzare l'output HTML. Fare riferimento al[documentazione](https://reference.aspose.com/words/net/) per maggiori dettagli
 
 ### Aspose.Words è compatibile con .NET Core?
 

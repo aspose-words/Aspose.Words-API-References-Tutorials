@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-pdfsaveoptions/escape-uri/
 ---
-## introduzione
+## Introduzione
 
 Ehilà! Ti sei mai chiesto come gestire gli URI quando salvi un documento Word come PDF utilizzando Aspose.Words per .NET? Sei nel posto giusto! Oggi approfondiremo gli URI di escape nei documenti PDF per garantire che funzionino correttamente quando il documento viene convertito. Intraprendiamo questo viaggio insieme, passo dopo passo, assicurandoci di comprendere ogni concetto lungo il percorso.
 
@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");
 
 ## Conclusione
 
-E il gioco è fatto! Hai appena imparato come eseguire l'escape degli URI durante il salvataggio di un documento Word come PDF utilizzando Aspose.Words per .NET. Questo processo garantisce che i collegamenti ipertestuali rimangano funzionali e formattati correttamente nel PDF risultante. 
+Ed ecco qua! Hai appena imparato come eseguire l'escape degli URI durante il salvataggio di un documento Word come PDF utilizzando Aspose.Words per .NET. Questo processo garantisce che i collegamenti ipertestuali rimangano funzionali e formattati correttamente nel PDF risultante. 
 
 Ricorda, padroneggiare queste piccole ma significative tecniche può migliorare notevolmente la qualità e la funzionalità dei tuoi documenti. Buona programmazione!
 

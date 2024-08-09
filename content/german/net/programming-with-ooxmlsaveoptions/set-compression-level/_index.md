@@ -101,7 +101,7 @@ Navigieren Sie nach dem Ausführen Ihrer Anwendung zum angegebenen Verzeichnis u
 
 Und da haben Sie es! Sie haben die Komprimierungsstufe für ein Word-Dokument mit Aspose.Words für .NET erfolgreich eingestellt. Dies kann die Dateigröße erheblich reduzieren und die Leistung bei der Arbeit mit großen Dokumenten verbessern. Vergessen Sie nicht, andere Komprimierungsstufen auszuprobieren, um das beste Gleichgewicht zwischen Dateigröße und Leistung für Ihre Anforderungen zu finden.
 
-Wenn Sie Fragen haben oder auf Probleme stoßen, besuchen Sie die[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/) oder wenden Sie sich an ihre[Hilfeforum](https://forum.aspose.com/c/words/8).
+Wenn Sie Fragen haben oder auf Probleme stoßen, besuchen Sie die[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/) oder wenden Sie sich an ihre[Support Forum](https://forum.aspose.com/c/words/8).
 
 ## Häufig gestellte Fragen
 
@@ -123,4 +123,4 @@ Ja, Aspose.Words für .NET unterstützt die Komprimierung für verschiedene Doku
 
 ### Wo erhalte ich Unterstützung, wenn Probleme auftreten?
 
- Sie können Unterstützung von der Aspose-Community erhalten, indem Sie deren[Hilfeforum](https://forum.aspose.com/c/words/8).
+ Sie können Unterstützung von der Aspose-Community erhalten, indem Sie deren[Support Forum](https://forum.aspose.com/c/words/8).

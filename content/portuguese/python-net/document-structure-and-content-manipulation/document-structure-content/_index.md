@@ -178,7 +178,7 @@ for data in dataset:
 
 - Mantenha seu código organizado usando funções para diferentes tarefas de manipulação de documentos.
 - Utilize o tratamento de exceções para lidar com erros durante o processamento de documentos.
--  Verifica a[Documentação Aspose.Words](https://reference.aspose.com/words/python-net/) para referências e exemplos detalhados de API.
+-  Verifique o[Documentação Aspose.Words](https://reference.aspose.com/words/python-net/) para referências e exemplos detalhados de API.
 
 ## Conclusão
 

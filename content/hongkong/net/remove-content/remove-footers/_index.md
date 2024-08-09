@@ -9,7 +9,7 @@ url: /zh-hant/net/remove-content/remove-footers/
 ---
 ## 介紹
 
-您是否曾經發現自己很難從 Word 文件中刪除頁腳？你不是一個人！許多人都面臨著這項挑戰，尤其是在處理不同頁面上具有不同頁腳的文件時。值得慶幸的是，Aspose.Words for .NET 為此提供了一個無縫的解決方案。在本教學中，我們將引導您了解如何使用 Aspose.Words for .NET 從 Word 文件中刪除頁尾。本指南非常適合希望以程式設計方式輕鬆有效率地操作 Word 文件的開發人員。
+您是否曾經發現自己很難從 Word 文件中刪除頁腳？你並不孤單！許多人都面臨著這項挑戰，尤其是在處理不同頁面上具有不同頁腳的文件時。值得慶幸的是，Aspose.Words for .NET 為此提供了一個無縫的解決方案。在本教學中，我們將引導您了解如何使用 Aspose.Words for .NET 從 Word 文件中刪除頁尾。本指南非常適合希望以程式設計方式輕鬆且有效率地操作 Word 文件的開發人員。
 
 ## 先決條件
 
@@ -87,7 +87,7 @@ doc.Save(dataDir + "RemoveContent.RemoveFooters.docx");
 
 ## 結論
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 成功從 Word 文件中刪除了頁尾。這個強大的程式庫使您可以輕鬆地以程式設計方式操作 Word 文檔，從而節省您的時間和精力。無論您是處理單頁文件還是多部分報告，Aspose.Words for .NET 都能滿足您的需求。
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功從 Word 文件中刪除了頁尾。這個強大的程式庫使您可以輕鬆地以程式設計方式操作 Word 文檔，從而節省您的時間和精力。無論您是處理單頁文件還是多部分報告，Aspose.Words for .NET 都能滿足您的需求。
 
 ## 常見問題解答
 

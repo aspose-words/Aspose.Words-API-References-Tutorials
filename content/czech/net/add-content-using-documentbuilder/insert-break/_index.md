@@ -7,9 +7,9 @@ type: docs
 weight: 10
 url: /cs/net/add-content-using-documentbuilder/insert-break/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Jste připraveni ponořit se do světa Aspose.Words pro .NET? Tato výkonná knihovna je jako švýcarský armádní nůž pro manipulaci s dokumenty Word. Ať už řešíte složité úkoly automatizace dokumentů nebo jen potřebujete přidat jednoduchý konec stránky, Aspose.Words vám pomůže. V tomto tutoriálu si krok za krokem projdeme, jak vložit konce do dokumentu aplikace Word. Takže, vezměte si šálek kávy a můžeme začít!
+Ahoj! Jste připraveni ponořit se do světa Aspose.Words pro .NET? Tato výkonná knihovna je jako švýcarský armádní nůž pro manipulaci s dokumenty Word. Ať už řešíte složité úkoly automatizace dokumentů nebo jen potřebujete přidat jednoduchý konec stránky, Aspose.Words vám pomůže. V tomto tutoriálu si krok za krokem projdeme, jak vložit konce do dokumentu aplikace Word. Takže, vezměte si šálek kávy a můžeme začít!
 
 ## Předpoklady
 

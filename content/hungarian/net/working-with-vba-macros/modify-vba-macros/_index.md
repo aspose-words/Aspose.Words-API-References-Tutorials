@@ -15,7 +15,7 @@ url: /hu/net/working-with-vba-macros/modify-vba-macros/
 
 Mielőtt belevágnánk a kódba, győződjünk meg arról, hogy mindennel rendelkezik, amire szüksége van:
 
-1.  Aspose.Words for .NET Library: Győződjön meg arról, hogy az Aspose.Words for .NET legújabb verziójával rendelkezik. tudsz[töltse le itt](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Győződjön meg arról, hogy az Aspose.Words for .NET legújabb verziójával rendelkezik. Tudod[töltse le itt](https://releases.aspose.com/words/net/).
 2. Fejlesztői környezet: A .NET fejlesztői környezet, például a Visual Studio elengedhetetlen a kód írásához és teszteléséhez.
 3. Alapvető C# ismeretek: A C# alapvető ismerete segít a kódrészletek követésében.
 4.  Word dokumentum minta: Legyen a[Word dokumentum](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) meglévő VBA-makróval. Ez lesz a teszt alanyunk a makrók módosításához.
@@ -59,7 +59,7 @@ A könyvtárunk beállítása után a következő lépés a Word dokumentum bet�
 Document doc = new Document(dataDir + "VBA project.docm");
 ```
 
- Ez a sor betölti a "VBA project.docm" nevű Word-dokumentumot a megadott könyvtárból a`doc` tárgy.
+ Ez a sor betölti a "VBA project.docm" nevű Word-dokumentumot a megadott könyvtárból a`doc` objektum.
 
 ## 3. lépés: Hozzáférés a VBA Projecthez
 
@@ -110,7 +110,7 @@ Ez a sor a módosított VBA makróval rendelkező dokumentumot "WorkingWithVba.M
 
 És megvan! Sikeresen módosította a VBA-makrókat egy Word-dokumentumban az Aspose.Words for .NET használatával. Ez az oktatóanyag mindenre kiterjedt, a dokumentum betöltésétől és a VBA-projekt elérésétől a makrókód módosításáig és a módosított dokumentum mentéséig. Az Aspose.Words segítségével könnyedén automatizálhatja a feladatokat, testreszabhatja a dokumentumokat, és még VBA makróval is játszhat az igényeinek megfelelően.
 
- Ha még többet szeretne felfedezni, a[API dokumentáció](https://reference.aspose.com/words/net/) egy fantasztikus forrás. És ha valaha is akadozik, a[támogatói fórum](https://forum.aspose.com/c/words/8) mindig ott van, hogy segítsen.
+ Ha még többet szeretne felfedezni, a[API dokumentáció](https://reference.aspose.com/words/net/) egy fantasztikus forrás. És ha valaha is akadozik, a[támogatási fórum](https://forum.aspose.com/c/words/8) mindig ott van, hogy segítsen.
 
 Kellemes kódolást, és ne feledje, az ég szab határt a Word-dokumentumok automatizálásában!
 

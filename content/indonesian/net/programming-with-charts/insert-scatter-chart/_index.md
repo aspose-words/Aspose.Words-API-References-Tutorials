@@ -43,7 +43,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Langkah 2: Masukkan Bagan Sebar
 
- Menggunakan`InsertChart` metode`DocumentBuilder` kelas untuk menyisipkan diagram sebar ke dalam dokumen.
+ Gunakan`InsertChart` metode`DocumentBuilder` kelas untuk menyisipkan diagram sebar ke dalam dokumen.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Scatter, 432, 252);

@@ -9,7 +9,7 @@ url: /tr/net/document-protection/remove-read-only-restriction/
 ---
 ## giriiş
 
-Doğru araçları ve yöntemleri bilmiyorsanız, bir Word belgesinden salt okunur kısıtlamayı kaldırmak oldukça zor bir iş olabilir. Neyse ki Aspose.Words for .NET bunu başarmanın kusursuz bir yolunu sunuyor. Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesindeki salt okunur kısıtlamayı kaldırma sürecinde size yol göstereceğiz.
+Doğru araçları ve yöntemleri bilmiyorsanız, bir Word belgesinden salt okunur kısıtlamasını kaldırmak oldukça zor bir iş olabilir. Neyse ki Aspose.Words for .NET bunu başarmanın kusursuz bir yolunu sunuyor. Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesindeki salt okunur kısıtlamayı kaldırma sürecinde size yol göstereceğiz.
 
 ## Önkoşullar
 
@@ -89,7 +89,7 @@ doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
 
 ## Çözüm
 
-Ve bu kadar! Aspose.Words for .NET'i kullanarak bir Word belgesindeki salt okunur kısıtlamayı başarıyla kaldırdınız. Bu süreç basittir ve belgelerinizin gereksiz kısıtlamalar olmadan serbestçe düzenlenebilmesini sağlar. 
+İşte bu kadar! Aspose.Words for .NET'i kullanarak bir Word belgesindeki salt okunur kısıtlamayı başarıyla kaldırdınız. Bu süreç basittir ve belgelerinizin gereksiz kısıtlamalar olmadan serbestçe düzenlenebilmesini sağlar. 
 
 İster küçük bir proje üzerinde çalışıyor olun ister birden fazla belgeyle ilgileniyor olun, belge korumalarının nasıl yönetileceğini bilmek size çok fazla zaman ve güçlük kazandırabilir. Öyleyse devam edin ve projelerinizde deneyin. Mutlu kodlama!
 

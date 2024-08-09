@@ -150,7 +150,7 @@ public static Document generateDocument(Document srcDoc, ArrayList<Node> nodes) 
 
 ### 我可以从 Word 文档的特定部分提取内容吗？
 
-是的，您可以使用本文中提到的方法从 Word 文档的特定部分提取内容。只需指定定义要提取的部分的起始和结束节点即可。
+是的，您可以使用本文中提到的方法从 Word 文档的特定部分提取内容。只需指定定义要提取的部分的起始节点和结束节点即可。
 
 ### Aspose.Words for Java 与 Java 11 兼容吗？
 

@@ -103,4 +103,4 @@ using (MemoryStream dstStream = new MemoryStream())
 전적으로! 이 코드를 애플리케이션이나 스크립트에 통합하여 문서 관리 워크플로의 일부로 변환 프로세스를 자동화하세요.
 
 ### 문제가 발생하면 어디에서 추가 도움을 받을 수 있나요?
- 방문하다[Aspose 지원 포럼](https://forum.aspose.com/c/words/8) Aspose.Words와 관련된 커뮤니티 도움말 및 지원을 받으려면
+ 방문[Aspose 지원 포럼](https://forum.aspose.com/c/words/8) Aspose.Words와 관련된 커뮤니티 도움말 및 지원을 받으려면

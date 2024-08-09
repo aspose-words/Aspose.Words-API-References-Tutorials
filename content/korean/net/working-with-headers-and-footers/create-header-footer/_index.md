@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /ko/net/working-with-headers-and-footers/create-header-footer/
 ---
+## 소개
 
 문서에 머리글과 바닥글을 추가하면 문서의 전문성과 가독성을 높일 수 있습니다. .NET용 Aspose.Words를 사용하면 Word 문서의 머리글과 바닥글을 쉽게 만들고 사용자 지정할 수 있습니다. 이 튜토리얼에서는 이러한 기능을 원활하게 구현할 수 있도록 프로세스를 단계별로 안내합니다.
 
@@ -40,7 +41,7 @@ string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 ## 2단계: 새 문서 만들기
 
- 새 문서를 만들고`DocumentBuilder` 콘텐츠 추가를 용이하게 합니다.
+ 새 문서를 만들고`DocumentBuilder`콘텐츠 추가를 용이하게 합니다.
 
 ```csharp
 Document doc = new Document();
@@ -59,7 +60,7 @@ pageSetup.DifferentFirstPageHeaderFooter = true;
 pageSetup.HeaderDistance = 20;
 ```
 
-## 4단계: 첫 번째 페이지에 머리글 추가
+## 4단계: 첫 페이지에 머리글 추가
 
 첫 번째 페이지의 헤더 섹션으로 이동하여 헤더 텍스트를 구성합니다.
 
@@ -166,24 +167,24 @@ private static void CopyHeadersFootersFromPreviousSection(Section section)
 
 다음 단계를 수행하면 Aspose.Words for .NET을 사용하여 Word 문서에 머리글과 바닥글을 효과적으로 추가하고 사용자 지정할 수 있습니다. 이렇게 하면 문서의 모양과 전문성이 향상되어 읽기 쉽고 매력적입니다.
 
-## 자주 묻는 질문
+## FAQ
 
-### Q1: .NET용 Aspose.Words란 무엇입니까?
+### .NET용 Aspose.Words란 무엇입니까?
 
 Aspose.Words for .NET은 개발자가 .NET 애플리케이션 내에서 프로그래밍 방식으로 Word 문서를 생성, 편집 및 변환할 수 있게 해주는 라이브러리입니다.
 
-### Q2: 머리글이나 바닥글에 이미지를 추가할 수 있나요?
+### 머리글이나 바닥글에 이미지를 추가할 수 있나요?
 
  예, 다음을 사용하여 머리글이나 바닥글에 이미지를 쉽게 추가할 수 있습니다.`DocumentBuilder.InsertImage` 방법.
 
-### Q3: 첫 페이지에 머리글과 바닥글을 다르게 설정하려면 어떻게 해야 합니까?
+### 첫 페이지에 머리글과 바닥글을 다르게 설정하려면 어떻게 해야 하나요?
 
  다음을 사용하여 첫 번째 페이지에 다른 머리글과 바닥글을 설정할 수 있습니다.`DifferentFirstPageHeaderFooter` 의 재산`PageSetup` 수업.
 
-### Q4: Aspose.Words에 대한 추가 문서는 어디서 찾을 수 있나요?
+### Aspose.Words에 대한 추가 문서는 어디서 찾을 수 있나요?
 
  다음에서 포괄적인 문서를 찾을 수 있습니다.[Aspose.Words API 문서 페이지](https://reference.aspose.com/words/net/).
 
-### Q5: Aspose.Words에 대한 지원이 제공됩니까?
+### Aspose.Words에 대한 지원이 제공됩니까?
 
  예, Aspose는 다음을 통해 지원을 제공합니다.[지원 포럼](https://forum.aspose.com/c/words/8).

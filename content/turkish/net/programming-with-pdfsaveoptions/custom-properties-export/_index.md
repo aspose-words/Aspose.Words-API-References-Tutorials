@@ -77,7 +77,7 @@ Aspose.Words for .NET kullanarak özel özellikleri bir PDF belgesine aktarmak, 
 Özel özellikler, bir belgeye eklenen, yazar, şirket adı veya belgeye yerleştirilmesi gereken diğer ilgili verileri içerebilen meta verilerdir.
 
 ### Özel özellikleri dışa aktarmak için neden Aspose.Words for .NET kullanmalıyım?
-Aspose.Words for .NET, Word belgelerini düzenlemek ve bunları PDF olarak dışa aktarmak için güçlü ve kullanımı kolay bir API sunarak özel özelliklerin korunmasını ve erişilebilir olmasını sağlar.
+Aspose.Words for .NET, Word belgelerini düzenlemek ve bunları PDF olarak dışa aktarmak için sağlam ve kullanımı kolay bir API sunarak özel özelliklerin korunmasını ve erişilebilir olmasını sağlar.
 
 ### Bir belgeye birden fazla özel özellik ekleyebilir miyim?
  Evet, bir belgeye birden fazla özel özelliği çağırarak ekleyebilirsiniz.`Add`Eklemek istediğiniz her özellik için yöntem.
@@ -85,5 +85,5 @@ Aspose.Words for .NET, Word belgelerini düzenlemek ve bunları PDF olarak dış
 ### Aspose.Words for .NET'i kullanarak başka hangi formatlara aktarabilirim?
 Aspose.Words for .NET, DOCX, HTML, EPUB ve çok daha fazlası dahil olmak üzere çeşitli formatlara aktarmayı destekler.
 
-### Sorunlarla karşılaşırsam nereden destek alabilirim?
+### Sorunla karşılaşırsam nereden destek alabilirim?
  Destek için şu adresi ziyaret edebilirsiniz:[Aspose.Words destek forumu](https://forum.aspose.com/c/words/8) yardım için.

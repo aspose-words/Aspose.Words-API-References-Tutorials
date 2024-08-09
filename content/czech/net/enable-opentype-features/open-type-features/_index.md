@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/enable-opentype-features/open-type-features/
 ---
-## Úvod
+## Zavedení
 
 Jste připraveni ponořit se do světa funkcí OpenType pomocí Aspose.Words pro .NET? Připoutejte se, protože se chystáme vyrazit na poutavou cestu, která nejen vylepší vaše dokumenty Wordu, ale také z vás udělá experta na Aspose.Words. Začněme!
 
@@ -15,7 +15,7 @@ Jste připraveni ponořit se do světa funkcí OpenType pomocí Aspose.Words pro
 
 Než začneme, ujistěte se, že máte následující:
 
-1.  Aspose.Words for .NET: Můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Můžete si ji stáhnout[zde](https://releases.aspose.com/words/net/).
 2. .NET Framework: Ujistěte se, že máte nainstalovanou kompatibilní verzi rozhraní .NET Framework.
 3. Visual Studio: Integrované vývojové prostředí (IDE) pro kódování.
 4. Základní znalost C#: Tento tutoriál předpokládá, že máte základní znalosti o programování v C#.
@@ -70,7 +70,7 @@ Tento řádek kódu otevře zadaný dokument, abychom s ním mohli manipulovat.
 
 ## Krok 3: Povolte funkce OpenType
 
- HarfBuzz je open-source nástroj pro tvarování textu, který bezproblémově spolupracuje s Aspose.Words. Abychom povolili funkce OpenType, musíme nastavit`TextShaperFactory` majetek z`LayoutOptions` objekt.
+ HarfBuzz je open-source nástroj pro tvarování textu, který bezproblémově spolupracuje s Aspose.Words. Abychom povolili funkce OpenType, musíme nastavit`TextShaperFactory` vlastnictvím`LayoutOptions` objekt.
 
 ```csharp
 doc.LayoutOptions.TextShaperFactory = HarfBuzzTextShaperFactory.Instance;
@@ -106,7 +106,7 @@ HarfBuzz je open-source modul pro tvarování textu, který poskytuje robustní 
 Ano, Aspose.Words podporuje různé motory pro tvarování textu. HarfBuzz je však vysoce doporučen kvůli jeho komplexní podpoře funkcí OpenType.
 
 ### Je Aspose.Words kompatibilní se všemi verzemi .NET?
- Aspose.Words podporuje různé verze .NET, včetně .NET Framework, .NET Core a .NET Standard. Zkontrolovat[dokumentace](https://reference.aspose.com/words/net/) pro podrobné informace o kompatibilitě.
+ Aspose.Words podporuje různé verze .NET, včetně .NET Framework, .NET Core a .NET Standard. Zkontrolujte[dokumentace](https://reference.aspose.com/words/net/) pro podrobné informace o kompatibilitě.
 
 ### Jak mohu vyzkoušet Aspose.Words před nákupem?
- Můžete si stáhnout bezplatnou zkušební verzi z[Aspose webové stránky](https://releases.aspose.com/) a požádat o dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
+ Můžete si stáhnout bezplatnou zkušební verzi z[Aspose webové stránky](https://releases.aspose.com/) a požádat o dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).

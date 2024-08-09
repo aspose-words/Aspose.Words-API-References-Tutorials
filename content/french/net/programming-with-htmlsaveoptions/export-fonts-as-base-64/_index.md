@@ -9,7 +9,7 @@ url: /fr/net/programming-with-htmlsaveoptions/export-fonts-as-base-64/
 ---
 ## Introduction
 
-Lorsqu'il s'agit de manipuler des documents Word par programmation, Aspose.Words for .NET est une centrale électrique. L'une de ses fonctionnalités intéressantes consiste à exporter des polices au format Base64 dans des fichiers HTML, garantissant ainsi que les polices sont intégrées et affichées correctement dans différents navigateurs et systèmes. Dans ce didacticiel, nous verrons comment y parvenir. Prêt à rendre les polices de vos documents Word adaptées au Web ? Commençons!
+Lorsqu'il s'agit de manipuler des documents Word par programmation, Aspose.Words for .NET est une centrale électrique. L'une de ses fonctionnalités intéressantes consiste à exporter des polices au format Base64 dans des fichiers HTML, garantissant ainsi que les polices sont intégrées et affichées correctement dans différents navigateurs et systèmes. Dans ce didacticiel, nous verrons comment y parvenir. Prêt à rendre les polices de vos documents Word adaptées au Web ? Commençons !
 
 ## Conditions préalables
 
@@ -100,7 +100,7 @@ Cette ligne enregistrera votre document sous forme de fichier HTML avec les poli
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez exporté avec succès des polices au format Base64 à partir d'un document Word à l'aide d'Aspose.Words pour .NET. Cela garantit que vos polices sont préservées et affichées correctement sur différentes plates-formes. Que vous prépariez des documents pour un affichage sur le Web ou que vous garantissiez simplement la compatibilité, cette fonctionnalité est incroyablement utile.
+Félicitations! Vous avez exporté avec succès des polices au format Base64 à partir d'un document Word à l'aide d'Aspose.Words pour .NET. Cela garantit que vos polices sont préservées et affichées correctement sur différentes plates-formes. Que vous prépariez des documents pour un affichage sur le Web ou que vous garantissiez simplement la compatibilité, cette fonctionnalité est incroyablement utile.
 
 ## FAQ
 

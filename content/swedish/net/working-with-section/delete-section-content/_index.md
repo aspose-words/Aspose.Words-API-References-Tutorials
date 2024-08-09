@@ -9,7 +9,7 @@ url: /sv/net/working-with-section/delete-section-content/
 ---
 ## Introduktion
 
-Hej där, andra Word-entusiaster! Har du någonsin hamnat i knädjupt i ett långt dokument och önskat att du på magiskt sätt kunde rensa innehållet i ett specifikt avsnitt utan att manuellt radera varje bit av text? Nåväl, du har tur! I den här guiden kommer vi att utforska hur man tar bort innehållet i ett avsnitt i ett Word-dokument med Aspose.Words för .NET. Detta fiffiga trick kommer att spara massor av tid och göra din dokumentredigeringsprocessen mycket smidigare. Redo att dyka i? Låt oss börja!
+Hej där, andra Word-entusiaster! Har du någonsin hamnat i knädjupt i ett långt dokument och önskat att du på magiskt sätt kunde rensa innehållet i ett specifikt avsnitt utan att manuellt radera varje bit av text? Nåväl, du har tur! I den här guiden kommer vi att utforska hur man tar bort innehållet i ett avsnitt i ett Word-dokument med Aspose.Words för .NET. Detta fiffiga trick kommer att spara massor av tid och göra din dokumentredigeringsprocessen mycket smidigare. Redo att dyka i? Låt oss komma igång!
 
 ## Förutsättningar
 
@@ -80,7 +80,7 @@ Slutligen måste vi spara vårt modifierade dokument för att säkerställa att 
 doc.Save(dataDir + "Document_Without_Section_Content.docx");
 ```
 
- Byta ut`dataDir + "Document_Without_Section_Content.docx"` med den faktiska sökvägen där du vill spara ditt ändrade dokument. Denna kodrad sparar den uppdaterade Word-filen utan innehållet i det angivna avsnittet.
+ Ersätta`dataDir + "Document_Without_Section_Content.docx"` med den faktiska sökvägen där du vill spara ditt ändrade dokument. Denna kodrad sparar den uppdaterade Word-filen utan innehållet i det angivna avsnittet.
 
 ## Slutsats
 
@@ -105,7 +105,7 @@ foreach (Section section in doc.Sections)
 
 ### Tar den här metoden bort sidhuvuden och sidfötter också?
 
- Nej,`ClearContent()` påverkar inte sidhuvuden och sidfötter. För att rensa sidhuvuden och sidfötter skulle du använda`ClearHeadersFooters()` metod.
+ Inga,`ClearContent()` påverkar inte sidhuvuden och sidfötter. För att rensa sidhuvuden och sidfötter använder du`ClearHeadersFooters()` metod.
 
 ### Är Aspose.Words för .NET kompatibelt med alla versioner av Word-dokument?
 

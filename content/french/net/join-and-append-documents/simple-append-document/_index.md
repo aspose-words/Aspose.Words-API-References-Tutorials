@@ -9,7 +9,7 @@ url: /fr/net/join-and-append-documents/simple-append-document/
 ---
 ## Introduction
 
-Salut! Avez-vous déjà eu besoin de fusionner deux documents Word de manière transparente ? Eh bien, vous avez de la chance ! Aujourd'hui, nous plongeons dans le monde d'Aspose.Words for .NET, une bibliothèque puissante qui vous permet de manipuler des documents Word par programme. Plus précisément, nous nous concentrerons sur la façon d'ajouter un document à un autre en quelques étapes simples. Que vous créiez des rapports, combiniez des sections d'un projet ou rationalisiez simplement la gestion de documents, ce guide est là pour vous. Alors, commençons!
+Salut! Avez-vous déjà eu besoin de fusionner deux documents Word de manière transparente ? Eh bien, vous avez de la chance ! Aujourd'hui, nous plongeons dans le monde d'Aspose.Words for .NET, une bibliothèque puissante qui vous permet de manipuler des documents Word par programme. Plus précisément, nous nous concentrerons sur la façon d'ajouter un document à un autre en quelques étapes simples. Que vous créiez des rapports, combiniez des sections d'un projet ou rationalisiez simplement la gestion de documents, ce guide est là pour vous. Alors commençons !
 
 ## Conditions préalables
 
@@ -96,7 +96,7 @@ Cette ligne de code enregistre le document fusionné sous un nouveau nom, garant
 
 ## Conclusion
 
-Et voila! Vous avez réussi à ajouter un document Word à un autre à l'aide d'Aspose.Words pour .NET. Cette méthode simple peut vous faire gagner beaucoup de temps et d’efforts, en particulier lorsque vous traitez des documents volumineux ou un formatage complexe. Alors n’hésitez plus et essayez-le dans vos projets. Bon codage !
+Et voilà ! Vous avez réussi à ajouter un document Word à un autre à l'aide d'Aspose.Words pour .NET. Cette méthode simple peut vous faire gagner beaucoup de temps et d’efforts, en particulier lorsque vous traitez des documents volumineux ou un formatage complexe. Alors n’hésitez plus et essayez-le dans vos projets. Bon codage !
 
 ## FAQ
 
@@ -106,7 +106,7 @@ Et voila! Vous avez réussi à ajouter un document Word à un autre à l'aide d'
 
 ### Que faire si mes documents ont un format différent ?
 
- Vous pouvez contrôler la manière dont le formatage est géré à l'aide de l'option`ImportFormatMode` paramètre. Les options incluent`KeepSourceFormatting`, `UseDestinationStyles`, et plus.
+ Vous pouvez contrôler la manière dont le formatage est géré à l'aide de l'option`ImportFormatMode` paramètre. Les options incluent`KeepSourceFormatting`, `UseDestinationStyles`, et plus encore.
 
 ### L’utilisation d’Aspose.Words est-elle gratuite ?
 

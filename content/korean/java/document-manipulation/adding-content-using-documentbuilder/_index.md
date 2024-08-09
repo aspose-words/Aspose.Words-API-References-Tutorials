@@ -10,7 +10,7 @@ url: /ko/java/document-manipulation/adding-content-using-documentbuilder/
 
 ## Aspose.Words for Java에서 DocumentBuilder를 사용하여 콘텐츠 추가하기 소개
 
-이 단계별 가이드에서는 Java의 DocumentBuilder용 Aspose.Words를 사용하여 Word 문서에 다양한 유형의 콘텐츠를 추가하는 방법을 살펴보겠습니다. 텍스트, 표, 가로 규칙, 양식 필드, HTML, 하이퍼링크, 목차, 인라인 및 플로팅 이미지, 단락 등을 삽입하는 방법을 다룹니다. 시작하자!
+이 단계별 가이드에서는 Java의 DocumentBuilder용 Aspose.Words를 사용하여 Word 문서에 다양한 유형의 콘텐츠를 추가하는 방법을 살펴보겠습니다. 텍스트, 표, 가로 규칙, 양식 필드, HTML, 하이퍼링크, 목차, 인라인 및 플로팅 이미지, 단락 등을 삽입하는 방법을 다룹니다. 시작해 봅시다!
 
 ## 전제 조건
 

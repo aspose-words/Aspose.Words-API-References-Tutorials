@@ -29,7 +29,7 @@ Nézzük meg a szöveges fájl Word-dokumentummá konvertálásának lépéseit 
 
 ### 1. lépés: Töltse be a szöveges fájlt
 
- Először töltse be a szövegfájlt egy Aspose.Words-be`Document` tárgy:
+ Először töltse be a szövegfájlt egy Aspose.Words-be`Document` objektum:
 ```csharp
 // Adja meg a könyvtár elérési útját, ahol a szövegfájl található
 string dataDir = "YOUR_DOCUMENT_DIRECTORY/";
@@ -65,4 +65,4 @@ Igen, az Aspose.Words különféle .NET-keretrendszereket támogat, biztosítva 
 Igen, az Aspose.Words API-k segítségével több szövegfájl kötegelt feldolgozására is lehetőség nyílik a dokumentumkonverziós feladatok egyszerűsítésére.
 
 ### Hol találok további forrásokat és támogatást az Aspose.Words számára?
- Meglátogatni a[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/)és[támogatói fórum](https://forum.aspose.com/c/words/8) további információkért és segítségért.
+ Látogassa meg a[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/)és[támogatási fórum](https://forum.aspose.com/c/words/8) további információkért és segítségért.

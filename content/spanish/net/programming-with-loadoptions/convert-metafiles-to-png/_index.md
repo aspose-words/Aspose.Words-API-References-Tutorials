@@ -30,7 +30,7 @@ using Aspose.Words;
 using Aspose.Words.Loading;
 ```
 
-## Guía paso por paso
+## Guía paso a paso
 
 Ahora, dividamos el proceso en pasos fáciles de seguir.
 
@@ -82,7 +82,7 @@ Document doc = new Document(dataDir + "WMF with image.docx", loadOptions);
 ## Preguntas frecuentes
 
 ### ¿Puedo convertir otros tipos de archivos además de metarchivos a PNG?
- Aspose.Words para .NET proporciona un amplio soporte para varios formatos de archivo. Comprobar el[documentación](https://reference.aspose.com/words/net/) para más detalles.
+ Aspose.Words para .NET proporciona un amplio soporte para varios formatos de archivo. Compruebe el[documentación](https://reference.aspose.com/words/net/) para más detalles.
 
 ### ¿Existe alguna forma de procesar por lotes varios documentos?
 Sí, puede recorrer un directorio de documentos y aplicar las mismas opciones de carga a cada archivo.
@@ -94,4 +94,4 @@ Los metarchivos permanecerán en su formato original, que puede no ser compatibl
  Sí, se requiere una licencia para una funcionalidad completa. Puedes conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/) con fines de prueba.
 
 ### ¿Puedo utilizar este método para otros formatos gráficos como JPEG o GIF?
- Este método específico es para metarchivos, pero Aspose.Words para .NET admite varios formatos de imagen. Referirse a[documentación](https://reference.aspose.com/words/net/) para más información.
+ Este método específico es para metarchivos, pero Aspose.Words para .NET admite varios formatos de imagen. Consulte el[documentación](https://reference.aspose.com/words/net/) para más información.

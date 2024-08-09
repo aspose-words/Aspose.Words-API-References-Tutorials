@@ -15,7 +15,7 @@ Vous êtes-vous déjà demandé comment faire ressortir vos graphiques avec des 
 
 Avant de commencer, assurons-nous que vous disposez de tous les éléments essentiels :
 
--  Aspose.Words pour la bibliothèque .NET : assurez-vous de disposer de la dernière version.[Télécharger les ici](https://releases.aspose.com/words/net/).
+-  Aspose.Words pour la bibliothèque .NET : assurez-vous de disposer de la dernière version.[Téléchargez-le ici](https://releases.aspose.com/words/net/).
 - .NET Framework : assurez-vous que .NET Framework est installé sur votre ordinateur.
 - Compréhension de base de C# : Une compréhension de base de la programmation C# sera utile.
 - Environnement de développement intégré (IDE) : Visual Studio est recommandé.
@@ -118,7 +118,7 @@ doc.Save(dataDir + "WorkingWithCharts.SingleChartDataPoint.docx");
 
 ## Conclusion
 
-Et voila! Vous avez personnalisé avec succès des points de données individuels dans un graphique à l'aide d'Aspose.Words pour .NET. En modifiant quelques propriétés, vous pouvez rendre vos graphiques beaucoup plus informatifs et visuellement attrayants. Alors, allez-y et expérimentez différents marqueurs et tailles pour voir ce qui fonctionne le mieux pour vos données.
+Et voilà ! Vous avez personnalisé avec succès des points de données individuels dans un graphique à l'aide d'Aspose.Words pour .NET. En modifiant quelques propriétés, vous pouvez rendre vos graphiques beaucoup plus informatifs et visuellement attrayants. Alors, allez-y et expérimentez différents marqueurs et tailles pour voir ce qui fonctionne le mieux pour vos données.
 
 ## FAQ
 

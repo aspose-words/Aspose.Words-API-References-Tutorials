@@ -69,7 +69,7 @@ Und da haben Sie es! Das Löschen aller Abschnitte in einem Word-Dokument mit As
  Sie können es kaufen bei[Hier](https://purchase.aspose.com/buy).
 
 ### Gibt es Support für Aspose.Words für .NET?
- Ja, Sie können Unterstützung von der Aspose-Community erhalten[Hier](https://forum.aspose.com/c/words/8).
+Ja, Sie können Unterstützung von der Aspose-Community erhalten[Hier](https://forum.aspose.com/c/words/8).
 
 ### Was ist, wenn ich eine vorläufige Lizenz benötige?
  Eine vorläufige Lizenz erhalten Sie bei[Hier](https://purchase.aspose.com/temporary-license/).

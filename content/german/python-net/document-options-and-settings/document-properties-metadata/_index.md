@@ -132,7 +132,7 @@ Ja, Sie können Metadatenaktualisierungen mit Aspose.Words automatisieren. Sie k
 
 ### Wie kann ich vertrauliche Informationen in Metadaten schützen?
 
- Um vertrauliche Informationen in Metadaten zu schützen, können Sie bestimmte Eigenschaften entfernen mit dem`remove` Methode.
+ Um vertrauliche Informationen in Metadaten zu schützen, können Sie bestimmte Eigenschaften entfernen mit dem`remove` Verfahren.
 
 ### Was sind die Best Practices zum Verwalten von Dokumenteigenschaften?
 

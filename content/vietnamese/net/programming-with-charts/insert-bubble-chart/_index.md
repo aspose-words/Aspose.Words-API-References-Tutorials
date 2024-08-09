@@ -101,7 +101,7 @@ Chắc chắn. Mặc dù hướng dẫn này sử dụng C# nhưng Aspose.Words 
 
 ### Làm cách nào để tôi có được bản dùng thử miễn phí Aspose.Words cho .NET?
 
- Bạn có thể dùng thử miễn phí từ[trang mạng](https://releases.aspose.com/). Điều này cho phép bạn kiểm tra các tính năng trước khi mua hàng.
+ Bạn có thể dùng thử miễn phí từ[trang web](https://releases.aspose.com/). Điều này cho phép bạn kiểm tra các tính năng trước khi mua hàng.
 
 ### Tôi có thể tìm thêm hướng dẫn và hỗ trợ cho Aspose.Words cho .NET ở đâu?
 

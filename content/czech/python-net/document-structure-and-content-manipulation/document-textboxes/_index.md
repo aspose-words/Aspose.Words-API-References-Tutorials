@@ -10,7 +10,7 @@ url: /cs/python-net/document-structure-and-content-manipulation/document-textbox
 
 Textová pole jsou výkonnou funkcí v dokumentech aplikace Word, která vám umožní vytvářet vizuálně přitažlivá a organizovaná rozvržení obsahu. S Aspose.Words pro Python můžete posunout generování dokumentů na další úroveň bezproblémovou integrací textových polí do vašich dokumentů. V tomto podrobném průvodci prozkoumáme, jak vylepšit vizuální obsah pomocí textových polí pomocí Aspose.Words Python API.
 
-## Úvod
+## Zavedení
 
 Textová pole poskytují všestranný způsob prezentace obsahu v dokumentu aplikace Word. Umožňují vám izolovat text a obrázky, ovládat jejich umístění a aplikovat formátování konkrétně na obsah v textovém poli. Tato příručka vás provede procesem používání Aspose.Words pro Python k vytváření a přizpůsobení textových polí ve vašich dokumentech.
 

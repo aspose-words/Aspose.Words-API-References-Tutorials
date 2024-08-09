@@ -2,7 +2,7 @@
 title: Kuasai Kecerdasan Dokumen
 linktitle: Kuasai Kecerdasan Dokumen
 second_title: API Manajemen Dokumen Aspose.Words Python
-description: Kuasai kecerdasan dokumen dengan Aspose.Words untuk Python. Otomatiskan alur kerja, analisis data, dan proses dokumen secara efisien. Mulai sekarang!
+description: Kuasai kecerdasan dokumen dengan Aspose.Words untuk Python. Otomatiskan alur kerja, analisis data, dan proses dokumen secara efisien. Mulailah sekarang!
 type: docs
 weight: 10
 url: /id/python-net/document-intelligence/master-document-intelligence/
@@ -48,7 +48,7 @@ doc.save("output.docx")
 
 ### Mengekstrak Teks dan Metadata
 
-Perpustakaan memungkinkan Anda mengekstrak teks dan metadata dari dokumen Word secara efisien. Hal ini sangat berguna untuk penambangan data dan analisis konten. Di bawah ini adalah contoh cara mengekstrak teks dari dokumen Word:
+Perpustakaan memungkinkan Anda mengekstrak teks dan metadata dari dokumen Word secara efisien. Ini sangat berguna untuk penambangan data dan analisis konten. Di bawah ini adalah contoh cara mengekstrak teks dari dokumen Word:
 
 ```python
 import aspose.words as aw

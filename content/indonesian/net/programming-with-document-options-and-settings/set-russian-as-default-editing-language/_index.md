@@ -32,7 +32,7 @@ using Aspose.Words.Loading;
 
 ## Langkah 1: Menyiapkan LoadOptions
 
- Pertama, kita perlu mengkonfigurasi`LoadOptions` untuk mengatur bahasa pengeditan default ke Rusia. Langkah ini melibatkan pembuatan sebuah instance dari`LoadOptions` dan mengaturnya`LanguagePreferences.DefaultEditingLanguage` Properti.
+ Pertama, kita perlu mengkonfigurasi`LoadOptions` untuk mengatur bahasa pengeditan default ke Rusia. Langkah ini melibatkan pembuatan sebuah instance dari`LoadOptions` dan mengaturnya`LanguagePreferences.DefaultEditingLanguage` milik.
 
 ### Buat Instans LoadOptions
 

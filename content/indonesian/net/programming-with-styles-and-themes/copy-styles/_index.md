@@ -75,7 +75,7 @@ Dan itu dia! Menyalin gaya antar dokumen Word menggunakan Aspose.Words untuk .NE
 ###  Apa tujuan dari`CopyStylesFromTemplate` method?  
  Itu`CopyStylesFromTemplate` metode menyalin gaya dari satu dokumen ke dokumen lainnya, memastikan bahwa dokumen target mewarisi format dokumen sumber.
 
-###  Bisakah saya menggunakan`CopyStylesFromTemplate` with documents in different formats?  
+###  Dapatkah saya menggunakan`CopyStylesFromTemplate` with documents in different formats?  
  Tidak, itu`CopyStylesFromTemplate` metode ini hanya berfungsi dengan dokumen dalam format yang sama, biasanya DOCX.
 
 ### Bagaimana cara memeriksa apakah gaya telah berhasil disalin?  

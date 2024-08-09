@@ -64,7 +64,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 Belgemize bir grafik ekleyelim. Bu örnek için bir dağılım grafiği kullanacağız.
 
- Kullanmak`InsertChart` yöntemi`DocumentBuilder` sınıfımızda belgemize bir dağılım grafiği ekleyebiliriz.
+ kullanarak`InsertChart` yöntemi`DocumentBuilder` sınıfımızda belgemize bir dağılım grafiği ekleyebiliriz.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Scatter, 450, 250);
@@ -84,7 +84,7 @@ ChartAxis axis = shape.Chart.AxisX;
 
 Şimdi sihir geliyor! Çok satırlı etiketler için onay etiketi hizalamasını ayarlayacağız.
 
- Yı kur`TickLabelAlignment` eksenin özelliği`ParagraphAlignment.Right`.
+ Ayarla`TickLabelAlignment` eksenin özelliği`ParagraphAlignment.Right`.
 
 ```csharp
 axis.TickLabelAlignment = ParagraphAlignment.Right;
@@ -94,7 +94,7 @@ axis.TickLabelAlignment = ParagraphAlignment.Right;
 
 Son fakat en az değil, belgemizi istenen değişikliklerle kaydedelim.
 
- Kullan`Save` yöntemi`Document` Belgeyi belirtilen dizine kaydetmek için sınıf.
+ Kullanın`Save` yöntemi`Document` Belgeyi belirtilen dizine kaydetmek için sınıf.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir grafikte çok satırlı etiket hizalamasını başarıyla işaretlediniz. Bu adımları izleyerek grafiklerinizi özel ihtiyaçlarınızı karşılayacak şekilde zahmetsizce özelleştirebilirsiniz. İster profesyonel bir rapor hazırlıyor olun ister sadece deneme yapıyor olun, Aspose.Words for .NET işinizi halletmeniz için gereken esnekliği ve gücü sağlar. Mutlu kodlama!
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir grafikte çok satırlı etiket hizalamasını başarıyla işaretlediniz. Bu adımları izleyerek grafiklerinizi özel ihtiyaçlarınızı karşılayacak şekilde zahmetsizce özelleştirebilirsiniz. İster profesyonel bir rapor hazırlıyor olun ister sadece deneme yapıyor olun, Aspose.Words for .NET işinizi halletmeniz için gereken esnekliği ve gücü sağlar. Mutlu kodlama!
 
 ## SSS'ler
 
@@ -112,7 +112,7 @@ doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
 
 ### Aspose.Words for .NET'i nasıl yüklerim?
 
- Aspose.Words for .NET'i şu adresten indirebilirsiniz:[İnternet sitesi](https://releases.aspose.com/words/net/)Orada verilen kurulum talimatlarını izleyin.
+ Aspose.Words for .NET'i şu adresten indirebilirsiniz:[web sitesi](https://releases.aspose.com/words/net/)Orada verilen kurulum talimatlarını izleyin.
 
 ### Aspose.Words for .NET'i ücretsiz kullanabilir miyim?
 

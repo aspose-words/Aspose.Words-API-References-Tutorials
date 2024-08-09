@@ -9,7 +9,7 @@ url: /es/net/programming-with-table-styles-and-formatting/allow-cell-spacing/
 ---
 ## Introducción
 
-¡Bienvenido a esta guía completa sobre cómo permitir el espaciado de celdas en una tabla usando Aspose.Words para .NET! Si alguna vez ha trabajado con tablas en documentos de Word, sabrá que el espaciado puede marcar una gran diferencia en legibilidad y estética. En este tutorial, lo guiaremos a través del proceso de habilitar el espaciado de celdas en sus tablas, paso a paso. Cubriremos todo, desde configurar su entorno hasta escribir el código y ejecutar su aplicación. Entonces, abróchate el cinturón y ¡sumergámonos en el mundo de Aspose.Words para .NET!
+¡Bienvenido a esta guía completa sobre cómo permitir el espaciado de celdas en una tabla usando Aspose.Words para .NET! Si alguna vez ha trabajado con tablas en documentos de Word, sabrá que el espaciado puede marcar una gran diferencia en legibilidad y estética. En este tutorial, lo guiaremos a través del proceso de habilitar el espaciado de celdas en sus tablas, paso a paso. Cubriremos todo, desde configurar su entorno hasta escribir el código y ejecutar su aplicación. Así que abróchate el cinturón y ¡sumergámonos en el mundo de Aspose.Words para .NET!
 
 ## Requisitos previos
 
@@ -29,7 +29,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-## Guía paso por paso
+## Guía paso a paso
 
 Ahora, analicemos el proceso de permitir el espaciado de celdas en una tabla en pasos fáciles de seguir.
 
@@ -81,7 +81,7 @@ Ahora, habilitemos el espaciado de celdas para la tabla.
 
 ### Paso 4.1: Permitir el espaciado entre celdas
 
- Selecciona el`AllowCellSpacing` propiedad de la tabla para`true`.
+ Establecer el`AllowCellSpacing` propiedad de la tabla para`true`.
 
 ```csharp
 table.AllowCellSpacing = true;
@@ -99,7 +99,7 @@ table.CellSpacing = 2;
 
 Finalmente, guarde el documento modificado en su directorio especificado.
 
- Utilizar el`Save` método para guardar su documento.
+ Utilice el`Save` método para guardar su documento.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.AllowCellSpacing.docx");

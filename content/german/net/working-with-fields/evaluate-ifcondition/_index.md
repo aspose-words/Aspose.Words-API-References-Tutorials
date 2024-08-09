@@ -21,7 +21,7 @@ Bevor Sie mit dem Lernprogramm beginnen, stellen Sie sicher, dass Sie über Folg
 
 3. Grundlegende Kenntnisse in C#: Vertrautheit mit der Programmiersprache C# und dem .NET-Framework.
 
-4.  Aspose-Lizenz: Wenn Sie eine lizenzierte Version von Aspose.Words verwenden, stellen Sie sicher, dass Ihre Lizenz richtig konfiguriert ist. Sie können eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) wenn benötigt.
+4.  Aspose-Lizenz: Wenn Sie eine lizenzierte Version von Aspose.Words verwenden, stellen Sie sicher, dass Ihre Lizenz richtig konfiguriert ist. Sie können eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) falls erforderlich.
 
 5. Verständnis von Word-Feldern: Kenntnisse über Word-Felder, insbesondere das WENN-Feld, sind hilfreich, aber nicht zwingend erforderlich.
 
@@ -92,7 +92,7 @@ Ein WENN-Feld ist ein Word-Feld, mit dem Sie bedingte Logik in Ihr Dokument einf
 ### Wie füge ich ein WENN-Feld in ein Dokument ein?
  Sie können ein WENN-Feld einfügen mit dem`InsertField` Methode der`DocumentBuilder` Klasse und geben Sie die Bedingung an, die Sie auswerten möchten.
 
-###  Was macht`EvaluateCondition` method do?
+###  Was bedeutet`EvaluateCondition` method do?
  Der`EvaluateCondition` Die Methode wertet die in einem WENN-Feld angegebene Bedingung aus und gibt das Ergebnis zurück, das angibt, ob die Bedingung wahr oder falsch ist.
 
 ### Kann ich mit dem WENN-Feld komplexe Bedingungen verwenden?

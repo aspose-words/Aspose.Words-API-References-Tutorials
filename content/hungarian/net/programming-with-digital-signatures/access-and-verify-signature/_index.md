@@ -9,7 +9,7 @@ url: /hu/net/programming-with-digital-signatures/access-and-verify-signature/
 ---
 ## Bevezetés
 
-Sziasztok, tech-rajongó kollégák! Volt már olyan helyzetben, amikor el kellett érnie és ellenőriznie kellett a digitális aláírásokat egy Word-dokumentumban, de fogalma sem volt, hol kezdje? Nos, szerencséd van! Ma az Aspose.Words for .NET csodálatos világába merülünk, amely egy olyan hatékony könyvtár, amely a Word-dokumentumok kezelését gyerekjátékká teszi. Lépésről lépésre végigvezetjük a folyamaton, így az útmutató végére profi lesz a Word-dokumentumok digitális aláírásainak ellenőrzésében. Kezdjük el!
+Sziasztok, tech-rajongó kollégák! Volt már olyan helyzetben, amikor el kellett érnie és ellenőriznie kellett a digitális aláírásokat egy Word-dokumentumban, de fogalma sem volt, hol kezdje? Nos, szerencséd van! Ma az Aspose.Words for .NET csodálatos világába merülünk, amely egy olyan hatékony könyvtár, amely a Word-dokumentumok kezelését gyerekjátékká teszi. Lépésről lépésre végigvezetjük a folyamaton, így az útmutató végére profi lesz a Word-dokumentumok digitális aláírásainak ellenőrzésében. Kezdjük is!
 
 ## Előfeltételek
 
@@ -29,11 +29,11 @@ using Aspose.Words;
 using Aspose.Words.DigitalSignatures;
 ```
 
-Rendben, bontsuk ezt kezelhető lépésekre. Minden lépés végigvezeti Önt a folyamat egy meghatározott részén. Kész? Gyerünk!
+Rendben, bontsuk ezt kezelhető lépésekre. Minden lépés végigvezeti Önt a folyamat egy meghatározott részén. Kész? Menjünk!
 
 ## 1. lépés: Állítsa be projektjét
 
-A digitális aláírás ellenőrzése előtt be kell állítania a projektet a Visual Studióban. Itt van, hogyan:
+A digitális aláírás ellenőrzése előtt be kell állítania a projektet a Visual Studióban. Íme, hogyan:
 
 ### Hozzon létre egy új projektet
 

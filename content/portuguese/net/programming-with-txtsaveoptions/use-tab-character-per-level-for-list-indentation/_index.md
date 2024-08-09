@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Nesta seção, criaremos uma lista multinível com recuo com guias usando Aspose.Words for .NET. Siga esses passos:
+Nesta seção, criaremos uma lista multinível com recuo com guias usando Aspose.Words for .NET. Siga estas etapas:
 
 ## Etapa 1: configure seu documento
 
@@ -121,7 +121,7 @@ Sim, Aspose.Words permite a personalização de estilos de lista em vários nív
  Use o`ListFormat.ApplyBulletDefault()` método em vez de`ApplyNumberDefault()` para criar uma lista com marcadores.
 
 ### Como posso ajustar o tamanho do caractere de tabulação usado para recuo?
- Infelizmente, o tamanho da guia em`TxtSaveOptions`está consertado. Para ajustar o tamanho do recuo, pode ser necessário usar espaços ou personalizar diretamente a formatação da lista.
+ Infelizmente, o tamanho da guia em`TxtSaveOptions`é fixo. Para ajustar o tamanho do recuo, pode ser necessário usar espaços ou personalizar diretamente a formatação da lista.
 
 ### Posso usar essas configurações ao exportar para outros formatos como PDF ou DOCX?
 As configurações específicas de caracteres de tabulação se aplicam a arquivos de texto. Para formatos como PDF ou DOCX, você precisará ajustar as opções de formatação nesses formatos.

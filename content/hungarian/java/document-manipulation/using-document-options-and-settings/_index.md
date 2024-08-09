@@ -37,7 +37,7 @@ public void showGrammaticalAndSpellingErrors() throws Exception
 
 pontosság a legfontosabb a dokumentumok kezelése során. Az Aspose.Words for Java lehetővé teszi a nyelvtani és helyesírási hibák kiemelését a dokumentumokban, így hatékonyabbá teszi a lektorálást és a szerkesztést.
 
-## A nem használt stílusok és listák tisztítása
+## A nem használt stílusok és listák megtisztítása
 
 ```java
 @Test

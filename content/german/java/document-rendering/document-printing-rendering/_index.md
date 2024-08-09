@@ -74,7 +74,7 @@ Aspose.Words für Java ist ein leistungsstarkes Tool zum Drucken und Rendern von
 
 ### Kann ich mehrere Kopien eines Dokuments ausdrucken?
 
- Ja, Sie können mehrere Kopien drucken, indem Sie die Anzahl der Kopien beim Anruf angeben.`print` Methode.
+ Ja, Sie können mehrere Kopien drucken, indem Sie beim Anruf die Anzahl der Kopien angeben.`print` Verfahren.
 
 ### Wie kann ich ein Dokument in ein Bild umwandeln?
 
@@ -82,7 +82,7 @@ Aspose.Words für Java ist ein leistungsstarkes Tool zum Drucken und Rendern von
 
 ### Ist Aspose.Words für Java für die Verarbeitung umfangreicher Dokumente geeignet?
 
-Ja, Aspose.Words für Java ist sowohl für die Dokumentenverarbeitung im kleinen als auch im großen Maßstab konzipiert und stellt somit eine vielseitige Wahl für verschiedene Anwendungen dar.
+Ja, Aspose.Words für Java ist sowohl für die Dokumentverarbeitung im kleinen als auch im großen Maßstab konzipiert und stellt somit eine vielseitige Wahl für verschiedene Anwendungen dar.
 
 ### Wo finde ich weitere Beispiele und Dokumentation?
 

@@ -75,7 +75,7 @@ FieldPage field = new FieldPage(doc);
 header.appendChild(field);
 ```
 
-## Empfohlene Vorgehensweise
+## Bewährte Methoden
 
 Um ein nahtloses Erlebnis beim Gestalten von Kopf- und Fußzeilen von Dokumenten zu gewährleisten, beachten Sie die folgenden bewährten Methoden:
 
@@ -95,7 +95,7 @@ header.removeAllChildren();
 
 ### Kann ich für gerade und ungerade Seiten unterschiedliche Kopf- und Fußzeilen haben?
 
-Ja, Sie können unterschiedliche Kopf- und Fußzeilen für gerade und ungerade Seiten haben. Aspose.Words für Java ermöglicht Ihnen, separate Kopf- und Fußzeilen für verschiedene Seitentypen anzugeben, z. B. für gerade, ungerade und erste Seiten.
+Ja, Sie können unterschiedliche Kopf- und Fußzeilen für gerade und ungerade Seiten haben. Aspose.Words für Java ermöglicht Ihnen, separate Kopf- und Fußzeilen für unterschiedliche Seitentypen anzugeben, z. B. für gerade, ungerade und erste Seiten.
 
 ### Ist es möglich, Hyperlinks in Kopf- oder Fußzeilen einzufügen?
 

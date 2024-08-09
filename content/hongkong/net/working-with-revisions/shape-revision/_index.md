@@ -2,186 +2,128 @@
 title: 形狀修正
 linktitle: 形狀修正
 second_title: Aspose.Words 文件處理 API
-description: 使用 Aspose.Words for .NET 修改 Word 文件中的形狀。
+description: 透過這份綜合指南，了解如何使用 Aspose.Words for .NET 處理 Word 文件中的形狀修訂。掌握追蹤更改、插入形狀等。
 type: docs
 weight: 10
 url: /zh-hant/net/working-with-revisions/shape-revision/
 ---
+## 介紹
 
-在本逐步指南中，我們將引導您了解如何使用 Aspose.Words for .NET 對 Word 文件中的形狀進行修改。我們將為您提供完整的原始程式碼，並向您展示如何格式化 Markdown 輸出。
+以程式方式編輯 Word 文件可能是一項艱鉅的任務，尤其是在處理形狀時。無論您是建立報告、設計範本還是只是自動建立文檔，追蹤和管理形狀修訂的能力都至關重要。 Aspose.Words for .NET 提供了強大的 API 來使流程無縫且有效率。在本教學中，我們將深入探討修改 Word 文件中的形狀的細節，確保您擁有輕鬆管理文件的工具和知識。
 
-## 第 1 步：建立文件並新增形狀
+## 先決條件
 
-第一步是建立一個新文件並添加形狀。
+在我們深入研究程式碼之前，讓我們確保您擁有所需的一切：
+
+-  Aspose.Words for .NET：確保您已安裝 Aspose.Words 程式庫。你可以[在這裡下載](https://releases.aspose.com/words/net/).
+- 開發環境：您應該設定一個開發環境，例如 Visual Studio。
+- 對C#的基本了解：熟悉C#程式語言和物件導向程式設計的基本概念。
+- Word 文件：要使用的 Word 文檔，或者您可以在教學期間建立一個。
+
+## 導入命名空間
+
+首先，讓我們導入必要的名稱空間。這些將使我們能夠存取處理 Word 文件和形狀所需的類別和方法。
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+```
+
+## 第 1 步：設定您的文件目錄
+
+在開始使用形狀之前，我們需要定義文檔目錄的路徑。這是我們保存修改後的文件的地方。
+
+```csharp
+//文檔目錄的路徑。
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## 第 2 步：建立新文檔
+
+讓我們建立一個新的 Word 文檔，在其中插入和修改形狀。
 
 ```csharp
 Document doc = new Document();
-Assert.False(doc.TrackRevisions);
-
-Shape shape = new Shape(doc, ShapeType.Cube);
-shape. WrapType = WrapType. Inline;
-shape. Width = 100.0;
-shape. Height = 100.0;
-doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 ```
 
-## 第 2 步：追蹤修訂並新增另一個形狀
+## 第 3 步：插入內嵌形狀
 
-我們將開啟修訂追蹤並新增另一個形狀。
-
-```csharp
-doc.StartTrackRevisions("John Doe");
-
-shape = new Shape(doc, ShapeType.Sun);
-shape. WrapType = WrapType. Inline;
-shape. Width = 100.0;
-shape. Height = 100.0;
-doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
-```
-
-## 第 3 步：取得形狀集合並檢查修訂情況
-
-我們將從文件中取得形狀集合併檢查與每個形狀相關的修訂。
+我們將首先在文件中插入內聯形狀，而不追蹤修訂。內聯形狀是一種隨文字流動的形狀。
 
 ```csharp
-List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-Assert.True(shapes[0].IsDeleteRevision);
-
-Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-Assert.True(shapes[1].IsInsertRevision);
-```
-
-## 第 4 步：檢查形狀移動修訂
-
-我們將載入包含形狀位移修訂的現有文件並檢查相關修訂。
-
-```csharp
-doc = new Document(MyDir + "Revision shape.docx");
-
-shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert. False(shapes[0].IsMoveFromRevision);
-Assert.True(shapes[0].IsMoveToRevision);
-
-Assert.True(shapes[1].IsMoveFromRevision);
-Assert. False(shapes[1].IsMoveToRevision);
-```
-
-### 使用 Aspose.Words for .NET 進行形狀修訂的範例原始程式碼
-
-以下是使用 Aspose.Words for .NET 修改文件中的形狀的完整原始碼：
-
-```csharp
-Document doc = new Document();
-
-//插入內聯形狀而不追蹤修訂。
-Assert.False(doc.TrackRevisions);
 Shape shape = new Shape(doc, ShapeType.Cube);
 shape.WrapType = WrapType.Inline;
 shape.Width = 100.0;
 shape.Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
+```
 
-//開始追蹤修訂，然後插入另一個形狀。
+## 第 4 步：開始追蹤修訂
+
+為了追蹤文件中的更改，我們需要啟用修訂追蹤。這對於識別對形狀的修改至關重要。
+
+```csharp
 doc.StartTrackRevisions("John Doe");
+```
+
+## 第 5 步：插入另一個經過修改的形狀
+
+現在已啟用修訂跟踪，讓我們插入另一個形狀。這一次，任何更改都會被追蹤。
+
+```csharp
 shape = new Shape(doc, ShapeType.Sun);
 shape.WrapType = WrapType.Inline;
 shape.Width = 100.0;
 shape.Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
+```
 
-//取得文件的形狀集合，其中僅包含我們新增的兩個形狀。
+## 第 6 步：檢索和修改形狀
+
+我們可以檢索文件中的所有形狀並根據需要修改它們。在這裡，我們將獲取形狀並刪除第一個形狀。
+
+```csharp
 List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-//刪除第一個形狀。
 shapes[0].Remove();
+```
 
-//因為我們在追蹤更改時刪除了該形狀，所以該形狀算作刪除修訂。
-Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-Assert.True(shapes[0].IsDeleteRevision);
+## 步驟7：儲存文檔
 
-//我們在追蹤更改時插入了另一個形狀，因此該形狀將被視為插入修訂。
-Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-Assert.True(shapes[1].IsInsertRevision);
+進行更改後，我們需要儲存文件。這可確保儲存所有修訂和修改。
 
-//該文件有一個已移動的形狀，但形狀移動修訂將有該形狀的兩個實例。
-//一個是其到達目的地的形狀，另一個是其原始位置的形狀。
-doc = new Document(MyDir + "Revision shape.docx");
+```csharp
+doc.Save(dataDir + "Revision shape.docx");
+```
 
+## 第 8 步：處理形狀移動修改
+
+當形狀移動時，Aspose.Words 會將此作為修訂進行追蹤。這意味著該形狀將有兩個實例：一個位於其原始位置，一個位於其新位置。
+
+```csharp
+doc = new Document(dataDir + "Revision shape.docx");
 shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-//這是向修正的移動，也是到達目的地的形狀。
-Assert.False(shapes[0].IsMoveFromRevision);
-Assert.True(shapes[0].IsMoveToRevision);
-
-//這是修訂後的移動，即其原始位置的形狀。
-Assert.True(shapes[1].IsMoveFromRevision);
-Assert.False(shapes[1].IsMoveToRevision);
 ```
 
 ## 結論
 
-在本教學中，我們學習如何使用 Aspose.Words for .NET 對 Word 文件中的形狀進行修改。透過遵循建立文件、啟用修訂追蹤、檢查與每個形狀關聯的修訂以及檢查移動形狀的修訂的步驟，我們能夠成功管理修訂。 Aspose.Words for .NET 提供了強大的 API，用於文字處理，包括 Word 文件中的評論和表單。
+現在你就得到它了！您已成功學習如何使用 Aspose.Words for .NET 處理 Word 文件中的形狀修訂。無論您是管理文件範本、自動化報告還是只是追蹤更改，這些技能都是非常寶貴的。透過遵循本逐步指南，您不僅掌握了基礎知識，而且還深入了解了更高級的文件處理技術。
 
-### 常見問題解答
+## 常見問題解答
 
-#### Q：如何在 Aspose.Words for .NET 中建立新文件並新增形狀？
+### 什麼是 Aspose.Words for .NET？
+Aspose.Words for .NET 是一個功能強大的程式庫，可讓開發人員使用 C# 以程式設計方式建立、修改和轉換 Word 文件。
 
-答：要在 Aspose.Words for .NET 中建立新文件並新增形狀，您可以使用下列程式碼。這裡我們在文件的第一部分添加兩個形狀，一個立方體和一個太陽：
+### 我可以追蹤 Word 文件中其他元素所做的更改嗎？
+是的，Aspose.Words for .NET 支援追蹤各種元素的更改，包括文字、表格等。
 
-```csharp
-Document doc = new Document();
-Assert.False(doc.TrackRevisions);
+### 如何獲得 Aspose.Words for .NET 的免費試用版？
+您可以免費試用 Aspose.Words for .NET[這裡](https://releases.aspose.com/).
 
-Shape shape = new Shape(doc, ShapeType.Cube);
-shape. WrapType = WrapType. Inline;
-shape. Width = 100.0;
-shape. Height = 100.0;
-doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
-```
+### 是否可以以程式方式接受或拒絕修訂？
+是的，Aspose.Words for .NET 提供了以程式設計方式接受或拒絕修訂的方法。
 
-#### Q：如何在 Aspose.Words for .NET 中啟用修訂追蹤？
-
-答：要在 Aspose.Words for .NET 中啟用修訂跟踪，您可以使用`StartTrackRevisions`的方法`Document`目的。此方法將修訂作者的姓名作為參數：
-
-```csharp
-doc.StartTrackRevisions("John Doe");
-```
-
-#### Q：如何檢查與 Aspose.Words for .NET 文件中每個形狀相關的修訂？
-
-答：若要檢查與 Aspose.Words for .NET 文件中每個形狀關聯的修訂，您可以使用下列命令取得文件的形狀集合：`GetChildNodes`方法與`NodeType.Shape`節點類型。然後您可以訪問每個形狀的`IsDeleteRevision`, `IsInsertRevision`, `IsMoveFromRevision`， 和`IsMoveToRevision`屬性來決定與形狀關聯的修訂類型：
-
-```csharp
-List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-Assert.True(shapes[0].IsDeleteRevision);
-
-Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-Assert.True(shapes[1].IsInsertRevision);
-```
-
-#### Q：如何檢查 Aspose.Words for .NET 文件中形狀的位移修訂？
-
-答：若要檢查 Aspose.Words for .NET 文件中的形狀位移修訂，您可以載入包含形狀位移修訂的現有文件。然後您可以訪問每個形狀的`IsMoveFromRevision`和`IsMoveToRevision`屬性來確定它是否正在移動，如果是，則從何處移動到何處：
-
-```csharp
-doc = new Document(MyDir + "Revision shape.docx");
-
-shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert. False(shapes[0].IsMoveFromRevision);
-Assert.True(shapes[0].IsMoveToRevision);
-
-Assert.True(shapes[1].IsMoveFromRevision);
-Assert. False(shapes[1].IsMoveToRevision);
-```
+### 我可以將 Aspose.Words for .NET 與 C# 以外的其他 .NET 語言一起使用嗎？
+絕對地！ Aspose.Words for .NET 可與任何 .NET 語言一起使用，包括 VB.NET 和 F#。

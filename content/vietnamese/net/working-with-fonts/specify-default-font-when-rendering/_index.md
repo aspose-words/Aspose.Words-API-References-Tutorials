@@ -2,80 +2,94 @@
 title: Chỉ định phông chữ mặc định khi kết xuất
 linktitle: Chỉ định phông chữ mặc định khi kết xuất
 second_title: API xử lý tài liệu Aspose.Words
-description: Hướng dẫn từng bước để chỉ định phông chữ mặc định khi hiển thị tài liệu bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách chỉ định phông chữ mặc định khi hiển thị tài liệu Word bằng Aspose.Words cho .NET. Đảm bảo sự xuất hiện tài liệu nhất quán trên các nền tảng.
 type: docs
 weight: 10
 url: /vi/net/working-with-fonts/specify-default-font-when-rendering/
 ---
+## Giới thiệu
 
-Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình từng bước để chỉ định phông chữ mặc định khi hiển thị tài liệu bằng Aspose.Words cho .NET. Chúng tôi sẽ giải thích mã nguồn C# đi kèm và cung cấp cho bạn hướng dẫn toàn diện để giúp bạn hiểu và triển khai tính năng này trong các dự án của riêng bạn. Đến cuối hướng dẫn này, bạn sẽ biết cách chỉ định phông chữ mặc định để sử dụng khi hiển thị tài liệu của mình bằng Aspose.Words cho .NET.
+Việc đảm bảo tài liệu Word của bạn hiển thị chính xác trên các nền tảng khác nhau có thể là một thách thức, đặc biệt là khi xử lý khả năng tương thích phông chữ. Một cách để duy trì hình thức nhất quán là chỉ định phông chữ mặc định khi hiển thị tài liệu của bạn sang PDF hoặc các định dạng khác. Trong hướng dẫn này, chúng ta sẽ khám phá cách đặt phông chữ mặc định bằng Aspose.Words cho .NET, để tài liệu của bạn trông đẹp mắt cho dù chúng được xem ở đâu.
 
-## Bước 1: Xác định thư mục tài liệu
-Đầu tiên, bạn cần đặt đường dẫn đến thư mục tài liệu của mình. Đây là vị trí bạn muốn lưu tài liệu được hiển thị đã chỉnh sửa của mình. Thay thế "THƯ VIỆN TÀI LIỆU CỦA BẠN" bằng đường dẫn thích hợp.
+## Điều kiện tiên quyết
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Trước khi đi sâu vào mã, hãy trình bày những gì bạn cần làm theo cùng với hướng dẫn này:
 
-## Bước 2: Load tài liệu cần render
- Tiếp theo, bạn cần tải tài liệu để kết xuất bằng cách sử dụng`Document` lớp học. Đảm bảo chỉ định đường dẫn tài liệu chính xác.
+- Aspose.Words for .NET: Đảm bảo bạn đã cài đặt phiên bản mới nhất. Bạn có thể tải nó xuống[đây](https://releases.aspose.com/words/net/).
+- Môi trường phát triển: Visual Studio hoặc bất kỳ môi trường phát triển .NET nào khác.
+- Kiến thức cơ bản về C#: Hướng dẫn này giả định rằng bạn cảm thấy thoải mái với lập trình C#.
 
-```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
-```
+## Nhập không gian tên
 
-## Bước 3: Đặt phông chữ mặc định
- Bây giờ bạn có thể chỉ định phông chữ mặc định để sử dụng khi hiển thị bằng cách tạo một phiên bản của`FontSettings` lớp và thiết lập`DefaultFontName` tài sản của`DefaultFontSubstitution` phản đối`DefaultFontSubstitution` sự vật`SubstitutionSettings` của`FontSettings`.
+Để bắt đầu, bạn cần nhập các không gian tên cần thiết. Những thứ này sẽ cho phép bạn truy cập các lớp và phương thức cần thiết để làm việc với Aspose.Words.
 
 ```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial Unicode MS";
-doc.FontSettings = fontSettings;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Bước 4: Lưu tài liệu được kết xuất
- Cuối cùng, bạn có thể lưu tài liệu được kết xuất vào một tệp bằng cách sử dụng`Save()` phương pháp của`Document` lớp học. Đảm bảo chỉ định đúng đường dẫn và tên tệp.
+Bây giờ, hãy chia nhỏ quy trình chỉ định phông chữ mặc định thành các bước dễ thực hiện.
 
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
-```
+## Bước 1: Thiết lập thư mục tài liệu của bạn
 
-### Mã nguồn mẫu cho Chỉ định phông chữ mặc định khi kết xuất bằng Aspose.Words cho .NET 
+Đầu tiên, xác định đường dẫn đến thư mục tài liệu của bạn. Đây là nơi các tập tin đầu vào và đầu ra của bạn sẽ được lưu trữ.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu của bạn
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+## Bước 2: Tải tài liệu của bạn
+
+Tiếp theo, tải tài liệu bạn muốn kết xuất. Trong ví dụ này, chúng tôi sẽ sử dụng tệp có tên "Rendering.docx".
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Bước 3: Định cấu hình cài đặt phông chữ
+
+ Tạo một thể hiện của`FontSettings` và chỉ định phông chữ mặc định. Nếu không tìm thấy phông chữ đã xác định trong quá trình kết xuất, Aspose.Words sẽ sử dụng phông chữ gần nhất có sẵn trên máy.
+
+```csharp
 FontSettings fontSettings = new FontSettings();
-// Nếu không thể tìm thấy phông chữ mặc định được xác định ở đây trong quá trình kết xuất thì
-// thay vào đó, phông chữ gần nhất trên máy sẽ được sử dụng.
 fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial Unicode MS";
+```
+
+## Bước 4: Áp dụng cài đặt phông chữ cho tài liệu
+
+Gán cài đặt phông chữ được định cấu hình cho tài liệu của bạn.
+
+```csharp
 doc.FontSettings = fontSettings;
+```
+
+## Bước 5: Lưu tài liệu
+
+Cuối cùng, lưu tài liệu ở định dạng mong muốn. Trong trường hợp này, chúng tôi sẽ lưu nó dưới dạng PDF.
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ```
 
 ## Phần kết luận
-Trong hướng dẫn này, chúng ta đã tìm hiểu cách chỉ định phông chữ mặc định khi hiển thị tài liệu bằng Aspose.Words cho .NET. Bằng cách làm theo hướng dẫn từng bước này, bạn có thể dễ dàng đặt phông chữ mặc định để sử dụng khi hiển thị tài liệu của mình. Aspose.Words cung cấp API mạnh mẽ và linh hoạt để Xử lý văn bản với phông chữ trong tài liệu của bạn. Với kiến thức này, bạn có thể kiểm soát và tùy chỉnh việc hiển thị tài liệu theo nhu cầu cụ thể của mình.
 
-### Câu hỏi thường gặp
+Bằng cách làm theo các bước này, bạn có thể đảm bảo rằng tài liệu Word của mình hiển thị với phông chữ mặc định được chỉ định, duy trì tính nhất quán trên các nền tảng khác nhau. Điều này có thể đặc biệt hữu ích đối với các tài liệu được chia sẻ rộng rãi hoặc được xem trên các hệ thống có sẵn phông chữ khác nhau.
 
-#### Câu hỏi: Làm cách nào tôi có thể chỉ định phông chữ mặc định khi chuyển đổi sang PDF trong Aspose.Words?
 
- Trả lời: Để chỉ định phông chữ mặc định khi chuyển đổi sang PDF trong Aspose.Words, bạn có thể sử dụng`PdfOptions` lớp và thiết lập`DefaultFontName` thuộc tính thành tên của phông chữ mong muốn.
+## Câu hỏi thường gặp
 
-#### Hỏi: Điều gì sẽ xảy ra nếu phông chữ mặc định không có sẵn khi chuyển đổi sang PDF?
+### Tại sao chỉ định phông chữ mặc định trong Aspose.Words?
+Việc chỉ định phông chữ mặc định sẽ đảm bảo tài liệu của bạn xuất hiện nhất quán trên các nền tảng khác nhau, ngay cả khi phông chữ gốc không có sẵn.
 
-Trả lời: Nếu phông chữ mặc định được chỉ định không có sẵn khi chuyển đổi sang PDF, Aspose.Words sẽ sử dụng phông chữ thay thế để hiển thị văn bản trong tài liệu được chuyển đổi. Điều này có thể gây ra một chút khác biệt về hình thức so với phông chữ gốc.
+### Điều gì xảy ra nếu không tìm thấy phông chữ mặc định trong quá trình kết xuất?
+Aspose.Words sẽ sử dụng phông chữ gần nhất có sẵn trên máy để duy trì hình thức của tài liệu giống nhất có thể.
 
-#### Hỏi: Tôi có thể chỉ định phông chữ mặc định cho các định dạng đầu ra khác, chẳng hạn như DOCX hoặc HTML không?
+### Tôi có thể chỉ định nhiều phông chữ mặc định không?
+ Không, bạn chỉ có thể chỉ định một phông chữ mặc định. Tuy nhiên, bạn có thể xử lý việc thay thế phông chữ cho các trường hợp cụ thể bằng cách sử dụng`FontSettings` lớp học.
 
-Trả lời: Có, bạn có thể chỉ định phông chữ mặc định cho các định dạng đầu ra khác như DOCX hoặc HTML bằng cách sử dụng các tùy chọn chuyển đổi thích hợp và đặt thuộc tính tương ứng cho từng định dạng.
+### Aspose.Words for .NET có tương thích với tất cả các phiên bản của tài liệu Word không?
+Có, Aspose.Words for .NET hỗ trợ nhiều định dạng tài liệu Word, bao gồm DOC, DOCX, RTF, v.v.
 
-#### Câu hỏi: Làm cách nào tôi có thể kiểm tra phông chữ mặc định được chỉ định trong Aspose.Words?
-
- Trả lời: Để kiểm tra phông chữ mặc định được chỉ định trong Aspose.Words, bạn có thể sử dụng`DefaultFontName` tài sản của`PdfOptions` class và lấy tên của phông chữ được cấu hình.
-
-#### Hỏi: Có thể chỉ định phông chữ mặc định khác nhau cho từng phần của tài liệu không?
-
-Đáp: Có, có thể chỉ định phông chữ mặc định khác nhau cho từng phần của tài liệu bằng cách sử dụng các tùy chọn định dạng dành riêng cho từng phần. Tuy nhiên, điều này sẽ yêu cầu thao tác tài liệu nâng cao hơn bằng cách sử dụng các tính năng Aspose.Words.
+### Tôi có thể nhận hỗ trợ ở đâu nếu gặp vấn đề?
+ Bạn có thể nhận được hỗ trợ từ cộng đồng Aspose và các nhà phát triển trên[Diễn đàn hỗ trợ Aspose.Words](https://forum.aspose.com/c/words/8).

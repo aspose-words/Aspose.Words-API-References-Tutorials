@@ -116,4 +116,4 @@ Het ondersteunt verschillende formaten, waaronder .doc, .docx, .pdf, .html en me
 Basiskennis van C# is nuttig, maar de bibliotheek is ontworpen om gebruiksvriendelijk te zijn voor ontwikkelaars op alle niveaus.
 
 ### Waar kan ik meer informatie vinden of ondersteuning krijgen?
- Bekijk de[Aspose.Words-documentatie](https://reference.aspose.com/words/net/) of bezoek de[Helpforum](https://forum.aspose.com/c/words/8).
+ Bekijk de[Aspose.Words-documentatie](https://reference.aspose.com/words/net/) of bezoek de[ondersteuningsforum](https://forum.aspose.com/c/words/8).

@@ -14,7 +14,7 @@ Ooit vastgelopen in een doolhof van tekstvervangingen in Word-documenten? Als je
 ## Vereisten
 
 Voordat we in de kern duiken, zorgen we ervoor dat je alles hebt wat je nodig hebt:
--  Aspose.Woorden voor .NET:[Download link](https://releases.aspose.com/words/net/)
+-  Aspose.Woorden voor .NET:[Downloadlink](https://releases.aspose.com/words/net/)
 - .NET Framework: zorg ervoor dat het is geïnstalleerd.
 - Basiskennis van C#: Met een beetje codeerkennis kom je al een heel eind.
 - Teksteditor of IDE: Visual Studio wordt sterk aanbevolen.
@@ -84,7 +84,7 @@ In deze code vervangen we de tekst 'sectie' gevolgd door een alinea-einde (`&p`)
 
 ## Stap 5: Sectie-einden invoegen
 
-Vervolgens vervangen we een aangepaste teksttag door een sectie-einde. Het is alsof je een tijdelijke aanduiding vervangt door iets functioneler.
+Vervolgens vervangen we een aangepaste teksttag door een sectie-einde. Het is alsof je een tijdelijke aanduiding vervangt door iets functionelers.
 
 ```csharp
 // Voeg een sectie-einde in in plaats van een aangepaste teksttag.

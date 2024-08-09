@@ -15,7 +15,7 @@ Bạn đã bao giờ tự hỏi làm thế nào để lưu tài liệu Word dư�
 
 Trước khi chúng ta bắt tay vào việc, có một số thứ bạn cần chuẩn bị sẵn:
 
--  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt thư viện. Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt thư viện. bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 - Môi trường phát triển .NET: Visual Studio là một lựa chọn tốt, nhưng bạn có thể sử dụng bất kỳ môi trường nào mà bạn cảm thấy thoải mái.
 - Kiến thức cơ bản về C#: Đừng lo lắng, chúng tôi sẽ nói đơn giản nhưng làm quen một chút với C# sẽ hữu ích.
 - Tài liệu Word: Chuẩn bị sẵn một tài liệu Word mẫu để chuyển đổi.
@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.Format1BppIndexed.Png", saveOpti
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Chỉ với một vài dòng mã, bạn đã chuyển đổi tài liệu Word của mình thành hình ảnh được lập chỉ mục 1Bpp bằng Aspose.Words cho .NET. Phương pháp này cực kỳ hữu ích để tạo hình ảnh có độ tương phản cao, tiết kiệm không gian từ tài liệu của bạn. Giờ đây, bạn có thể dễ dàng tích hợp tính năng này vào các dự án và quy trình làm việc của mình. Chúc mừng mã hóa!
+Và bạn có nó! Chỉ với một vài dòng mã, bạn đã chuyển đổi tài liệu Word của mình thành hình ảnh được lập chỉ mục 1Bpp bằng Aspose.Words cho .NET. Phương pháp này cực kỳ hữu ích để tạo hình ảnh có độ tương phản cao, tiết kiệm không gian từ tài liệu của bạn. Giờ đây, bạn có thể dễ dàng tích hợp tính năng này vào các dự án và quy trình làm việc của mình. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 
@@ -88,7 +88,7 @@ Hình ảnh được lập chỉ mục 1Bpp (1 Bit trên mỗi pixel) là địn
  Có, Aspose.Words for .NET yêu cầu giấy phép để có đầy đủ chức năng. Bạn có thể nhận được một[giấy phép tạm thời ở đây](https://purchase.aspose.com/temporary-license/).
 
 ### Tôi có thể chuyển đổi tài liệu Word của mình sang những định dạng hình ảnh nào khác?
- Aspose.Words hỗ trợ nhiều định dạng hình ảnh khác nhau bao gồm JPEG, BMP và TIFF. Đơn giản chỉ cần thay đổi`SaveFormat` bên trong`ImageSaveOptions`.
+ Aspose.Words hỗ trợ nhiều định dạng hình ảnh khác nhau bao gồm JPEG, BMP và TIFF. Đơn giản chỉ cần thay đổi`SaveFormat` trong`ImageSaveOptions`.
 
 ### Tôi có thể tìm thêm tài liệu về Aspose.Words cho .NET ở đâu?
  Bạn có thể tìm thấy tài liệu chi tiết về[Trang tài liệu Aspose.Words cho .NET](https://reference.aspose.com/words/net/).

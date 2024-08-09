@@ -128,7 +128,7 @@ Dodawanie kształtów grupowych do dokumentów programu Word nie musi być skomp
  Absolutnie! Każdy kształt można stylizować indywidualnie, korzystając z właściwości dostępnych w pliku`Shape` klasa.
 
 ### Jak ustawić GroupShape w dokumencie?
- Możesz ustawić`GroupShape` ustawiając jego`Left`I`Top` nieruchomości.
+ Możesz ustawić`GroupShape` ustawiając jego`Left`I`Top` właściwości.
 
 ### Czy mogę dodać tekst do kształtów w GroupShape?
  Tak, możesz dodawać tekst do kształtów za pomocą`AppendChild` metoda dodania a`Paragraph` zawierający`Run` węzły z tekstem.

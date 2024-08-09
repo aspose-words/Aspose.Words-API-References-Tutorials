@@ -33,7 +33,7 @@ Okej, låt oss komma in på den roliga delen – kodning! Vi delar upp processen
 
 ## Steg 1: Konfigurera ditt projekt
 
-Först till kvarn, skapa ett nytt projekt i din IDE. Här är hur:
+Först till kvarn, skapa ett nytt projekt i din IDE. Så här gör du:
 
 - Öppna Visual Studio.
 - Skapa ett nytt C# Console Application-projekt.

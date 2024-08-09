@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/basic-conversions/pdf-to-jpeg/
 ---
-## Úvod
+## Zavedení
 
 Ocitli jste se někdy v situaci, kdy jste potřebovali převést soubor PDF na obrázek JPEG? Třeba pro snadnější sdílení, vložení do prezentace nebo jen pro rychlý náhled? Tak to máš štěstí! V tomto tutoriálu se ponoříme hluboko do světa Aspose.Words pro .NET, abychom vám ukázali, jak přesně uložit PDF jako JPEG. Věřte mi, je to jednodušší, než si myslíte. Takže, vezměte si šálek kávy, posaďte se a pojďme přeměnit tyto PDF na úžasné JPEG!
 
@@ -15,10 +15,10 @@ Ocitli jste se někdy v situaci, kdy jste potřebovali převést soubor PDF na o
 
 Než se pustíme do toho hnusného, ujistíme se, že máme všechny kachny v řadě. Zde je to, co potřebujete:
 
-1. Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou tuto výkonnou knihovnu. Pokud ne, můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou tuto výkonnou knihovnu. Pokud ne, můžete si jej stáhnout[zde](https://releases.aspose.com/words/net/).
 2. .NET Framework: Ujistěte se, že máte na svém počítači nastavené prostředí .NET.
 3. Visual Studio: Bude stačit jakákoli verze, pokud vám vyhovuje její procházení.
-4.  Soubor PDF: Připravte si soubor PDF ke konverzi. V tomto tutoriálu použijeme soubor s názvem`Pdf Document.pdf`.
+4.  Soubor PDF: Připravte si soubor PDF ke konverzi. Pro tento tutoriál použijeme soubor s názvem`Pdf Document.pdf`.
 
 ## Importovat jmenné prostory
 
@@ -36,7 +36,7 @@ Dobře, pojďme k zábavnější části! Tento proces rozdělíme do snadno poc
 Než se ponoříte do kódu, musíte svůj projekt nastavit. Zde je postup:
 
 1. Otevřete Visual Studio: Začněte spuštěním Visual Studia a vytvořením nového projektu C#.
-2.  Instalace Aspose.Words: K instalaci Aspose.Words for .NET použijte NuGet Package Manager. Můžete to najít[tady](https://releases.aspose.com/words/net/).
+2.  Instalace Aspose.Words: K instalaci Aspose.Words for .NET použijte NuGet Package Manager. Můžete to najít[zde](https://releases.aspose.com/words/net/).
 
 ```shell
 Install-Package Aspose.Words
@@ -82,13 +82,13 @@ tady to máte! Převod PDF na JPEG pomocí Aspose.Words for .NET je snadný jako
 Absolutně! Můžete procházet adresářem PDF a každý z nich převést na JPEG.
 
 ### Podporuje Aspose.Words jiné formáty obrázků?
-Ano! Soubory PDF můžete uložit jako PNG, BMP a další.
+Ano, platí! Soubory PDF můžete uložit jako PNG, BMP a další.
 
 ### Je Aspose.Words kompatibilní s .NET Core?
 Opravdu, je. Aspose.Words podporuje jak .NET Framework, tak .NET Core.
 
 ### Potřebuji licenci k používání Aspose.Words?
- Můžete získat bezplatnou zkušební verzi[tady](https://releases.aspose.com/) nebo zakoupit licenci[tady](https://purchase.aspose.com/buy).
+ Můžete získat bezplatnou zkušební verzi[zde](https://releases.aspose.com/) nebo zakoupit licenci[zde](https://purchase.aspose.com/buy).
 
 ### Kde najdu další návody na Aspose.Words?
  Podívejte se na[dokumentace](https://reference.aspose.com/words/net/) za nepřeberné množství návodů a návodů.

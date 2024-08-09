@@ -20,7 +20,7 @@ Antes de sumergirnos en el código, asegurémonos de tener todo configurado. Est
 3. Entorno de desarrollo: un IDE como Visual Studio le hará la vida más fácil.
 4. Conocimientos básicos de C#: no es necesario ser un experto, pero unos conocimientos básicos le ayudarán.
 
-¿Tengo todo? ¡Excelente! Empecemos.
+¿Tienes todo? ¡Excelente! Empecemos.
 
 ## Importar espacios de nombres
 
@@ -102,7 +102,7 @@ Aspose.Words para .NET admite múltiples versiones de .NET Framework, pero siemp
 ### ¿Cuál es la ventaja de convertir SVG a EMF o WMF?
 La conversión de SVG a EMF o WMF garantiza que los gráficos vectoriales se conserven y representen correctamente en entornos que pueden no ser totalmente compatibles con SVG.
 
-### ¿Puedo automatizar este proceso para múltiples documentos?
+### ¿Puedo automatizar este proceso para varios documentos?
 ¡Absolutamente! Puede recorrer varios archivos HTML y aplicar el mismo proceso para automatizar la conversión para el procesamiento por lotes.
 
 ### ¿Dónde puedo encontrar más recursos y soporte para Aspose.Words para .NET?

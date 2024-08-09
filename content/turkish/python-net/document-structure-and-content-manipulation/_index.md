@@ -61,7 +61,7 @@ Aspose.Words for Python'u kullanarak Word belgelerindeki paragrafları ve metni 
 ### [Doküman Revizyonlarının Takibi ve İncelenmesi](./document-revisions/)
 Aspose.Words for Python'u kullanarak belge revizyonlarını nasıl takip edeceğinizi ve inceleyeceğinizi öğrenin. Verimli işbirliği için kaynak kodu içeren adım adım kılavuz. Belge yönetiminizi bugün geliştirin!
 ### [Belge Bölümlerini ve Düzenini Yönetme](./document-sections/)
-Aspose.Words for Python ile belge bölümlerini ve düzenlerini nasıl yöneteceğinizi öğrenin. Bölümler oluşturun, değiştirin, düzenleri özelleştirin ve daha fazlasını yapın. Şimdi başla! 
+Aspose.Words for Python ile belge bölümlerini ve düzenlerini nasıl yöneteceğinizi öğrenin. Bölümler oluşturun, değiştirin, düzenleri özelleştirin ve daha fazlasını yapın. Şimdi başlayın! 
 ### [Word Belgelerinde Görsel İçeriği Metin Kutularıyla Zenginleştirme](./document-textboxes/)
 Aspose.Words Python'u kullanarak belge görsellerini geliştirin! Word belgelerinde metin kutularının nasıl oluşturulacağını ve özelleştirileceğini adım adım öğrenin. İlgi çekici belgeler için içerik düzenini, biçimlendirmesini ve stilini yükseltin.
 ### [Word Belgelerinde VBA Makrolarıyla Gelişmiş Otomasyonun Kilidini Açma](./document-vba-macros/)

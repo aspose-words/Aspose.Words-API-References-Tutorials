@@ -48,7 +48,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Шаг 4. Настройте параметры сохранения PDF-файла
+## Шаг 4. Настройте параметры сохранения PDF
 
  Нам нужно настроить параметры сохранения PDF, чтобы обновить последнее напечатанное свойство. Создайте новый экземпляр`PdfSaveOptions` и установите`UpdateLastPrintedProperty`собственность`true`.
 

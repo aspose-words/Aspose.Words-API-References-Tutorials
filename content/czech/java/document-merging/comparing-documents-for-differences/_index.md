@@ -17,7 +17,7 @@ neustále se vyvíjejícím světě správy dokumentů je prvořadé zajistit p�
 Než se ponoříme do podrobností, ujistěte se, že máte vše, co potřebujete:
 
 - Základní znalost programování v Javě.
--  Nainstalovaná knihovna Aspose.Words for Java. Můžete si jej stáhnout[tady](https://releases.aspose.com/words/java/).
+-  Nainstalovaná knihovna Aspose.Words for Java. Můžete si jej stáhnout[zde](https://releases.aspose.com/words/java/).
 - Integrované vývojové prostředí (IDE) jako IntelliJ IDEA nebo Eclipse.
 
 ## Nastavení vašeho projektu Java
@@ -69,7 +69,7 @@ Porovnání rozdílů mezi dokumenty pomocí Aspose.Words for Java je jednoduch�
 
 ### Jak nainstaluji Aspose.Words for Java?
 
- Chcete-li nainstalovat Aspose.Words for Java, navštivte stránku pro stahování[tady](https://releases.aspose.com/words/java/) a postupujte podle dodaných pokynů k instalaci.
+ Chcete-li nainstalovat Aspose.Words for Java, navštivte stránku pro stahování[zde](https://releases.aspose.com/words/java/) a postupujte podle dodaných pokynů k instalaci.
 
 ### Mohu porovnávat dokumenty s různými formáty, jako jsou DOCX a PDF?
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-tables/horizontal-merge/
 ---
-## introduzione
+## Introduzione
 
 Ehilà! Pronto a tuffarti nel mondo di Aspose.Words per .NET? Oggi affronteremo una funzionalità estremamente utile: l'unione orizzontale delle tabelle. Potrebbe sembrare un po' tecnico, ma non preoccuparti, ti copro le spalle. Alla fine di questo tutorial sarai un professionista nell'unire le celle nei tuoi documenti Word a livello di codice. Allora rimbocchiamoci le maniche e cominciamo!
 
@@ -44,7 +44,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Questo frammento di codice imposta un nuovo documento e prepara il file`DocumentBuilder` per azione.
+ Questo frammento di codice imposta un nuovo documento e prepara il file`DocumentBuilder` per l'azione.
 
 ## Passaggio 2: inserimento della prima cella
 
@@ -98,7 +98,7 @@ Questo frammento di codice completa la tabella e salva il documento nella direct
 
 ## Conclusione
 
-E il gioco è fatto! Hai appena imparato l'arte di unire orizzontalmente le celle in un documento Word utilizzando Aspose.Words per .NET. Seguendo questi passaggi è possibile creare facilmente strutture di tabelle complesse. Continua a sperimentare ed esplorare le funzionalità di Aspose.Words per rendere i tuoi documenti dinamici e flessibili di cui hai bisogno. Buona programmazione!
+Ed ecco qua! Hai appena imparato l'arte di unire orizzontalmente le celle in un documento Word utilizzando Aspose.Words per .NET. Seguendo questi passaggi è possibile creare facilmente strutture di tabelle complesse. Continua a sperimentare ed esplorare le funzionalità di Aspose.Words per rendere i tuoi documenti dinamici e flessibili di cui hai bisogno. Buona programmazione!
 
 ## Domande frequenti
 

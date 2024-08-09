@@ -60,7 +60,7 @@ Document doc = new Document(dataDir + "Document.docx", loadOptions);
 
 ## Çözüm
 
-İşte buyur! Word belgelerinizi yüklerken geçici bir klasör kullanarak, özellikle büyük dosyalarla çalışırken uygulamalarınızın performansını ve verimliliğini önemli ölçüde artırabilirsiniz. Aspose.Words for .NET'in bu basit ama güçlü özelliği, kaynakların daha iyi yönetilmesine yardımcı olur ve belgelerin daha sorunsuz işlenmesini sağlar.
+Ve işte karşınızda! Word belgelerinizi yüklerken geçici bir klasör kullanarak, özellikle büyük dosyalarla çalışırken uygulamalarınızın performansını ve verimliliğini önemli ölçüde artırabilirsiniz. Aspose.Words for .NET'in bu basit ama güçlü özelliği, kaynakların daha iyi yönetilmesine yardımcı olur ve belgelerin daha sorunsuz işlenmesini sağlar.
 
 ## SSS'ler
 

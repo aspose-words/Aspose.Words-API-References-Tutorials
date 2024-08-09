@@ -157,9 +157,9 @@ Javítsa a táblázat megjelenését szegélyek és árnyékolás hozzáadásáv
     cell.cell_format.shading.background_pattern_color = aspose.words.Color.from_rgb(230, 230, 230)
     ```
 
-## Munka a cellatartalommal és az igazítással
+## Munka a cellatartalommal és -igazítással
 
-Hatékonyan kezelheti a cellatartalmat és az igazítást a jobb olvashatóság érdekében:
+Hatékonyan kezelheti a cella tartalmát és igazítását a jobb olvashatóság érdekében:
 
 1. Cellatartalom: Tartalom, például szöveg és kép beszúrása a cellákba.
 
@@ -210,7 +210,7 @@ Győződjön meg arról, hogy a táblázat elrendezése automatikusan igazodik a
 
 ## Táblázatok exportálása különböző formátumokba
 
-Ha elkészült a táblázat, exportálhatja különféle formátumokba, például PDF vagy DOCX formátumba:
+Ha a táblázat elkészült, exportálhatja különféle formátumokba, például PDF vagy DOCX formátumba:
 
 1. Mentés PDF-ként: Mentse el a dokumentumot a táblázattal PDF-fájlként.
 

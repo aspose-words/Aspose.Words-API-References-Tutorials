@@ -73,7 +73,7 @@ Section section = doc.Sections[0];
 section.ClearContent();
 ```
 
-- `section.ClearContent();`刪除指定節中的所有內容，保持節結構完整。
+- `section.ClearContent();`刪除指定節中的所有內容，保持節結構不變。
 
 ## 在該部分中新增內容
 
@@ -101,7 +101,7 @@ doc.Save(dataDir + "ModifiedDocument.docx");
 
 ## 結論
 
-現在你就擁有了！ 🎉 您已使用 Aspose.Words for .NET 成功存取並操作了 Word 文件中的部分。無論您是清除內容、新增文字或執行其他部分操作，Aspose.Words 都能讓流程順利且有效率。不斷嘗試不同的功能，成為文件操作精靈。快樂編碼！
+現在你就得到它了！ 🎉 您已使用 Aspose.Words for .NET 成功存取並操作了 Word 文件中的部分。無論您是清除內容、新增文字或執行其他部分操作，Aspose.Words 都能讓流程順利且有效率。不斷嘗試不同的功能，成為文件操作精靈。快樂編碼！
 
 ## 常見問題解答
 

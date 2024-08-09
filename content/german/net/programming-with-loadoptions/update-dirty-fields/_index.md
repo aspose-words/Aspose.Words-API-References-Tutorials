@@ -16,7 +16,7 @@ Waren Sie schon einmal in einer Situation, in der Sie ein Word-Dokument voller F
 
 Bevor wir ins Detail gehen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
 
-1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die neueste Version haben. Wenn nicht, können Sie[hier herunterladen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die neueste Version haben. Wenn nicht, können Sie[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. .NET Framework: Jede mit Aspose.Words kompatible Version.
 3. Grundkenntnisse in C#: Kenntnisse in der C#-Programmierung sind von Vorteil.
 4. Beispiel eines Word-Dokuments: Ein Dokument mit fehlerhaften Feldern, die aktualisiert werden müssen.
@@ -92,4 +92,4 @@ Ja, Aspose.Words bietet die Flexibilität, bestimmte Felder zu aktualisieren, ab
 Ja, Aspose.Words ist eine leistungsstarke Bibliothek, die die programmgesteuerte Bearbeitung von Word-Dokumenten vereinfacht.
 
 ### Wo finde ich weitere Informationen zu Aspose.Words?
- Besuche die[Dokumentation](https://reference.aspose.com/words/net/) für detaillierte Anleitungen und Beispiele.
+ Schauen Sie sich die[Dokumentation](https://reference.aspose.com/words/net/) für detaillierte Anleitungen und Beispiele.

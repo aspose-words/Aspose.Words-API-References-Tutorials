@@ -28,7 +28,7 @@ A kezdéshez hozzon létre egy új Java-projektet kedvenc integrált fejlesztők
 
 ## 2. lépés: Inicializálja a dokumentumobjektumot
 
- Java kódjában importálja a szükséges Aspose.Words osztályokat, és inicializáljon egy újat`Document` tárgy.
+ Java kódjában importálja a szükséges Aspose.Words osztályokat, és inicializáljon egy újat`Document` objektum.
 
 ```java
 import com.aspose.words.*;
@@ -42,7 +42,7 @@ public class HTMLToWordConversion {
 
 ## 3. lépés: Töltsön be HTML tartalmat
 
- Ezután töltse be a konvertálni kívánt HTML-tartalmat`Document` tárgy. Használhatja a`DocumentBuilder` osztályt erre a célra.
+ Ezután töltse be a konvertálni kívánt HTML-tartalmat`Document` objektum. Használhatja a`DocumentBuilder` osztályt erre a célra.
 
 ```java
 DocumentBuilder builder = new DocumentBuilder(doc);

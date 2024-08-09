@@ -16,7 +16,7 @@ url: /ru/java/document-security/document-redaction-data-protection/
 
 ## Настройка среды разработки
 
-Прежде чем мы начнем работать с Aspose.Words для Java, нам необходимо настроить среду разработки. Следуй этим шагам:
+Прежде чем мы начнем работать с Aspose.Words для Java, нам необходимо настроить среду разработки. Выполните следующие действия:
 
 1.  Загрузите и установите Aspose.Words для Java: посетите[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) чтобы загрузить последнюю версию Aspose.Words для Java.
 

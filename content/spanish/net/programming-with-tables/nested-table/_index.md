@@ -9,7 +9,7 @@ url: /es/net/programming-with-tables/nested-table/
 ---
 ## Introducción
 
-¿Alguna vez has necesitado crear una tabla anidada dentro de un documento de Word mediante programación? Ya sea que esté generando informes, facturas o cualquier tipo de documento que requiera una estructura tabular detallada, Aspose.Words para .NET puede ser su mejor amigo. En este tutorial, profundizaremos en el proceso de creación de tablas anidadas en documentos de Word usando Aspose.Words para .NET. Cubriremos todo, desde los requisitos previos hasta la implementación del código final. ¡Entonces empecemos!
+¿Alguna vez has necesitado crear una tabla anidada dentro de un documento de Word mediante programación? Ya sea que esté generando informes, facturas o cualquier tipo de documento que requiera una estructura tabular detallada, Aspose.Words para .NET puede ser su mejor amigo. En este tutorial, profundizaremos en el proceso de creación de tablas anidadas en documentos de Word usando Aspose.Words para .NET. Cubriremos todo, desde los requisitos previos hasta la implementación del código final. Entonces, ¡comencemos!
 
 ## Requisitos previos
 
@@ -44,7 +44,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Paso 2: crear la tabla exterior
 
-Ahora, creemos la tabla exterior. Comenzaremos insertando la primera celda y agregándole contenido.
+Ahora, creemos la tabla exterior. Comenzaremos insertando la primera celda y agregándole algo de contenido.
 
 ### Paso 2.1: inserte la primera celda de la tabla exterior
 

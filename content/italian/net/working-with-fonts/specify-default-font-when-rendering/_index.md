@@ -2,80 +2,94 @@
 title: Specificare il carattere predefinito durante il rendering
 linktitle: Specificare il carattere predefinito durante il rendering
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Guida passo passo per specificare il carattere predefinito durante il rendering di un documento utilizzando Aspose.Words per .NET.
+description: Scopri come specificare un carattere predefinito durante il rendering di documenti Word utilizzando Aspose.Words per .NET. Garantisci un aspetto coerente dei documenti su tutte le piattaforme.
 type: docs
 weight: 10
 url: /it/net/working-with-fonts/specify-default-font-when-rendering/
 ---
+## Introduzione
 
-In questo tutorial ti guideremo attraverso il processo passo passo per specificare il carattere predefinito durante il rendering di un documento utilizzando Aspose.Words per .NET. Spiegheremo il codice sorgente C# in bundle e ti forniremo una guida completa per aiutarti a comprendere e implementare questa funzionalità nei tuoi progetti. Alla fine di questo tutorial, saprai come specificare un carattere predefinito da utilizzare durante il rendering dei tuoi documenti utilizzando Aspose.Words per .NET.
+Garantire che i tuoi documenti Word vengano visualizzati correttamente su piattaforme diverse può essere una sfida, soprattutto quando si ha a che fare con la compatibilità dei caratteri. Un modo per mantenere un aspetto coerente è specificare un carattere predefinito durante il rendering dei documenti in PDF o altri formati. In questo tutorial esploreremo come impostare un carattere predefinito utilizzando Aspose.Words per .NET, in modo che i tuoi documenti abbiano un bell'aspetto indipendentemente da dove vengono visualizzati.
 
-## Passaggio 1: definire la directory dei documenti
-Innanzitutto, devi impostare il percorso della directory dei documenti. Questa è la posizione in cui desideri salvare il documento renderizzato modificato. Sostituisci "DIRECTORY DOCUMENTI" con il percorso appropriato.
+## Prerequisiti
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Prima di immergerci nel codice, vediamo cosa dovrai seguire insieme a questo tutorial:
 
-## Passaggio 2: caricare il documento da renderizzare
- Successivamente, è necessario caricare il documento da renderizzare utilizzando il file`Document` classe. Assicurati di specificare il percorso corretto del documento.
+- Aspose.Words per .NET: assicurati di avere installata la versione più recente. Puoi scaricarlo[Qui](https://releases.aspose.com/words/net/).
+- Ambiente di sviluppo: Visual Studio o qualsiasi altro ambiente di sviluppo .NET.
+- Conoscenza di base di C#: questo tutorial presuppone che tu abbia dimestichezza con la programmazione in C#.
 
-```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
-```
+## Importa spazi dei nomi
 
-## Passaggio 3: imposta il carattere predefinito
- Ora puoi specificare il carattere predefinito da utilizzare durante il rendering creando un'istanza del file`FontSettings` classe e impostando il file`DefaultFontName` proprietà del`DefaultFontSubstitution` opporsi al`DefaultFontSubstitution` oggetto`SubstitutionSettings` Di`FontSettings`.
+Per iniziare, devi importare gli spazi dei nomi necessari. Questi ti permetteranno di accedere alle classi e ai metodi necessari per lavorare con Aspose.Words.
 
 ```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial Unicode MS";
-doc.FontSettings = fontSettings;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Passaggio 4: salva il documento renderizzato
- Infine, puoi salvare il documento renderizzato in un file utilizzando il file`Save()` metodo del`Document` classe. Assicurati di specificare il percorso e il nome file corretti.
+Ora suddividiamo il processo di specifica di un carattere predefinito in passaggi facili da seguire.
 
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
-```
+## Passaggio 1: imposta la directory dei documenti
 
-### Codice sorgente di esempio per specificare il carattere predefinito durante il rendering utilizzando Aspose.Words per .NET 
+Innanzitutto, definisci il percorso della directory dei documenti. Qui è dove verranno archiviati i file di input e di output.
 
 ```csharp
 // Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+## Passaggio 2: carica il documento
+
+Successivamente, carica il documento di cui desideri eseguire il rendering. In questo esempio utilizzeremo un file denominato "Rendering.docx".
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Passaggio 3: configura le impostazioni dei caratteri
+
+ Crea un'istanza di`FontSettings` e specificare il carattere predefinito. Se il carattere definito non può essere trovato durante il rendering, Aspose.Words utilizzerà il carattere disponibile più vicino sulla macchina.
+
+```csharp
 FontSettings fontSettings = new FontSettings();
-// Se il carattere predefinito definito qui non può essere trovato durante il rendering, allora
-// viene invece utilizzato il carattere più vicino presente sulla macchina.
 fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial Unicode MS";
+```
+
+## Passaggio 4: applica le impostazioni dei caratteri al documento
+
+Assegna le impostazioni dei caratteri configurate al tuo documento.
+
+```csharp
 doc.FontSettings = fontSettings;
+```
+
+## Passaggio 5: salva il documento
+
+Infine, salva il documento nel formato desiderato. In questo caso, lo salveremo come PDF.
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ```
 
 ## Conclusione
-In questo tutorial, abbiamo imparato come specificare il carattere predefinito durante il rendering di un documento utilizzando Aspose.Words per .NET. Seguendo questa guida passo passo, puoi facilmente impostare un carattere predefinito da utilizzare durante il rendering dei tuoi documenti. Aspose.Words offre un'API potente e flessibile per l'elaborazione delle parole con i caratteri nei tuoi documenti. Con questa conoscenza, puoi controllare e personalizzare il rendering dei tuoi documenti in base alle tue esigenze specifiche.
 
-### Domande frequenti
+Seguendo questi passaggi puoi assicurarti che i tuoi documenti Word vengano visualizzati con un carattere predefinito specificato, mantenendo la coerenza tra piattaforme diverse. Ciò può essere particolarmente utile per i documenti ampiamente condivisi o visualizzati su sistemi con diversa disponibilità di caratteri.
 
-#### D: Come posso specificare un carattere predefinito durante la conversione in PDF in Aspose.Words?
 
- R: Per specificare un carattere predefinito durante la conversione in PDF in Aspose.Words, è possibile utilizzare il file`PdfOptions` classe e impostare il file`DefaultFontName` proprietà al nome del carattere desiderato.
+## Domande frequenti
 
-#### D: Cosa succede se il carattere predefinito non è disponibile durante la conversione in PDF?
+### Perché specificare un carattere predefinito in Aspose.Words?
+Specificare un carattere predefinito garantisce che il documento appaia coerente su diverse piattaforme, anche se i caratteri originali non sono disponibili.
 
-R: Se il carattere predefinito specificato non è disponibile durante la conversione in PDF, Aspose.Words utilizzerà un carattere sostitutivo per visualizzare il testo nel documento convertito. Ciò potrebbe causare una leggera differenza nell'aspetto rispetto al carattere originale.
+### Cosa succede se il carattere predefinito non viene trovato durante il rendering?
+Aspose.Words utilizzerà il carattere disponibile più vicino sulla macchina per mantenere l'aspetto del documento il più fedele possibile.
 
-#### D: Posso specificare un carattere predefinito per altri formati di output, come DOCX o HTML?
+### Posso specificare più caratteri predefiniti?
+ No, puoi specificare solo un carattere predefinito. Tuttavia, puoi gestire la sostituzione dei caratteri per casi specifici utilizzando il file`FontSettings` classe.
 
-R: Sì, puoi specificare un carattere predefinito per altri formati di output come DOCX o HTML utilizzando le opzioni di conversione appropriate e impostando la proprietà corrispondente per ciascun formato.
+### Aspose.Words per .NET è compatibile con tutte le versioni dei documenti Word?
+Sì, Aspose.Words per .NET supporta un'ampia gamma di formati di documenti Word, inclusi DOC, DOCX, RTF e altri.
 
-#### D: Come posso controllare il carattere predefinito specificato in Aspose.Words?
-
- R: Per verificare il carattere predefinito specificato in Aspose.Words, è possibile utilizzare il file`DefaultFontName` proprietà del`PdfOptions` classe e recuperare il nome del carattere configurato.
-
-#### D: È possibile specificare un carattere predefinito diverso per ciascuna sezione del documento?
-
-R: Sì, è possibile specificare un carattere predefinito diverso per ciascuna sezione del documento utilizzando le opzioni di formattazione specifiche per ciascuna sezione. Tuttavia, ciò richiederebbe una manipolazione più avanzata del documento utilizzando le funzionalità di Aspose.Words.
+### Dove posso ottenere supporto se riscontro problemi?
+ Puoi ottenere supporto dalla comunità Aspose e dagli sviluppatori su[Forum di supporto di Aspose.Words](https://forum.aspose.com/c/words/8).

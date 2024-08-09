@@ -2,80 +2,94 @@
 title: Geef het standaardlettertype op bij het renderen
 linktitle: Geef het standaardlettertype op bij het renderen
 second_title: Aspose.Words-API voor documentverwerking
-description: Stapsgewijze handleiding voor het opgeven van het standaardlettertype bij het renderen van een document met Aspose.Words voor .NET.
+description: Leer hoe u een standaardlettertype kunt opgeven bij het renderen van Word-documenten met Aspose.Words voor .NET. Zorg voor een consistente weergave van documenten op alle platforms.
 type: docs
 weight: 10
 url: /nl/net/working-with-fonts/specify-default-font-when-rendering/
 ---
+## Invoering
 
-In deze zelfstudie leiden we u stapsgewijs door het proces om het standaardlettertype op te geven bij het renderen van een document met Aspose.Words voor .NET. We leggen de gebundelde C#-broncode uit en bieden u een uitgebreide handleiding om u te helpen deze functie te begrijpen en in uw eigen projecten te implementeren. Aan het einde van deze zelfstudie weet u hoe u een standaardlettertype kunt opgeven dat u wilt gebruiken bij het renderen van uw documenten met Aspose.Words voor .NET.
+Ervoor zorgen dat uw Word-documenten correct worden weergegeven op verschillende platforms kan een uitdaging zijn, vooral als het om lettertypecompatibiliteit gaat. Eén manier om een consistent uiterlijk te behouden is door een standaardlettertype op te geven bij het renderen van uw documenten naar PDF of andere formaten. In deze zelfstudie onderzoeken we hoe u een standaardlettertype kunt instellen met Aspose.Words voor .NET, zodat uw documenten er geweldig uitzien, waar ze ook worden bekeken.
 
-## Stap 1: Definieer de documentmap
-Eerst moet u het pad naar uw documentenmap instellen. Dit is de locatie waar u uw bewerkte, gerenderde document wilt opslaan. Vervang "UW DOCUMENTENDIRECTORY" door het juiste pad.
+## Vereisten
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Voordat we in de code duiken, laten we eerst bespreken wat je moet volgen in deze tutorial:
 
-## Stap 2: Laad het document dat u wilt renderen
- Vervolgens moet u het document laden om te renderen met behulp van de`Document` klas. Zorg ervoor dat u het juiste documentpad opgeeft.
+- Aspose.Words voor .NET: Zorg ervoor dat de nieuwste versie is geïnstalleerd. Je kunt het downloaden[hier](https://releases.aspose.com/words/net/).
+- Ontwikkelomgeving: Visual Studio of een andere .NET-ontwikkelomgeving.
+- Basiskennis van C#: In deze tutorial wordt ervan uitgegaan dat u vertrouwd bent met programmeren in C#.
 
-```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
-```
+## Naamruimten importeren
 
-## Stap 3: Stel het standaardlettertype in
- Nu kunt u het standaardlettertype opgeven dat u bij het renderen wilt gebruiken, door een exemplaar van het`FontSettings` klasse en het instellen van de`DefaultFontName` eigendom van de`DefaultFontSubstitution` bezwaar maken tegen de`DefaultFontSubstitution` voorwerp`SubstitutionSettings` van`FontSettings`.
+Om aan de slag te gaan, moet u de benodigde naamruimten importeren. Hiermee krijgt u toegang tot de klassen en methoden die nodig zijn om met Aspose.Words te werken.
 
 ```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial Unicode MS";
-doc.FontSettings = fontSettings;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Stap 4: Sla het gerenderde document op
- Ten slotte kunt u het gerenderde document opslaan in een bestand met behulp van de`Save()` werkwijze van de`Document` klas. Zorg ervoor dat u het juiste pad en de juiste bestandsnaam opgeeft.
+Laten we nu het proces van het opgeven van een standaardlettertype opsplitsen in eenvoudig te volgen stappen.
 
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
-```
+## Stap 1: Stel uw documentenmap in
 
-### Voorbeeldbroncode voor Specificeer standaardlettertype bij weergave met Aspose.Words voor .NET 
+Definieer eerst het pad naar uw documentmap. Dit is waar uw invoer- en uitvoerbestanden worden opgeslagen.
 
 ```csharp
 // Pad naar uw documentmap
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+## Stap 2: Laad uw document
+
+Laad vervolgens het document dat u wilt renderen. In dit voorbeeld gebruiken we een bestand met de naam "Rendering.docx".
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Stap 3: Configureer lettertype-instellingen
+
+ Maak een exemplaar van`FontSettings` en geef het standaardlettertype op. Als het gedefinieerde lettertype tijdens het renderen niet kan worden gevonden, gebruikt Aspose.Words het dichtstbijzijnde beschikbare lettertype op de machine.
+
+```csharp
 FontSettings fontSettings = new FontSettings();
-// Als het hier gedefinieerde standaardlettertype niet kan worden gevonden tijdens het renderen, dan
-// In plaats daarvan wordt het dichtstbijzijnde lettertype op de machine gebruikt.
 fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial Unicode MS";
+```
+
+## Stap 4: Pas lettertype-instellingen toe op het document
+
+Wijs de geconfigureerde lettertype-instellingen toe aan uw document.
+
+```csharp
 doc.FontSettings = fontSettings;
+```
+
+## Stap 5: Bewaar het document
+
+Sla het document ten slotte op in het gewenste formaat. In dit geval slaan we het op als PDF.
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ```
 
 ## Conclusie
-In deze zelfstudie hebben we geleerd hoe u het standaardlettertype kunt opgeven bij het renderen van een document met Aspose.Words voor .NET. Door deze stapsgewijze handleiding te volgen, kunt u eenvoudig een standaardlettertype instellen dat u kunt gebruiken bij het renderen van uw documenten. Aspose.Words biedt een krachtige en flexibele API voor woordenverwerking met lettertypen in uw documenten. Met deze kennis kunt u de weergave van uw documenten controleren en aanpassen aan uw specifieke behoeften.
 
-### Veelgestelde vragen
+Door deze stappen te volgen, kunt u ervoor zorgen dat uw Word-documenten worden weergegeven met een opgegeven standaardlettertype, waardoor de consistentie op verschillende platforms behouden blijft. Dit kan met name handig zijn voor documenten die op grote schaal worden gedeeld of worden bekeken op systemen met een variërende beschikbaarheid van lettertypen.
 
-#### Vraag: Hoe kan ik een standaardlettertype opgeven bij het converteren naar PDF in Aspose.Words?
 
- A: Om een standaardlettertype op te geven bij het converteren naar PDF in Aspose.Words, kunt u de`PdfOptions` klasse en stel de`DefaultFontName` eigenschap toe aan de naam van het gewenste lettertype.
+## Veelgestelde vragen
 
-#### Vraag: Wat moet ik doen als het standaardlettertype niet beschikbaar is bij het converteren naar PDF?
+### Waarom een standaardlettertype opgeven in Aspose.Words?
+Als u een standaardlettertype opgeeft, zorgt u ervoor dat uw document er consistent uitziet op verschillende platforms, zelfs als de originele lettertypen niet beschikbaar zijn.
 
-A: Als het opgegeven standaardlettertype niet beschikbaar is bij het converteren naar PDF, gebruikt Aspose.Words een vervangend lettertype om de tekst in het geconverteerde document weer te geven. Dit kan een klein verschil in uiterlijk veroorzaken met het originele lettertype.
+### Wat gebeurt er als het standaardlettertype tijdens het renderen niet wordt gevonden?
+Aspose.Words gebruikt het dichtstbijzijnde beschikbare lettertype op de machine om de weergave van het document zo goed mogelijk te behouden.
 
-#### Vraag: Kan ik een standaardlettertype opgeven voor andere uitvoerformaten, zoals DOCX of HTML?
+### Kan ik meerdere standaardlettertypen opgeven?
+ Nee, u kunt slechts één standaardlettertype opgeven. U kunt echter in specifieke gevallen lettertypevervanging afhandelen met behulp van de`FontSettings` klas.
 
-A: Ja, u kunt een standaardlettertype opgeven voor andere uitvoerformaten, zoals DOCX of HTML, door de juiste conversieopties te gebruiken en de bijbehorende eigenschap voor elk formaat in te stellen.
+### Is Aspose.Words voor .NET compatibel met alle versies van Word-documenten?
+Ja, Aspose.Words voor .NET ondersteunt een breed scala aan Word-documentformaten, waaronder DOC, DOCX, RTF en meer.
 
-#### Vraag: Hoe kan ik het standaardlettertype controleren dat is opgegeven in Aspose.Words?
-
- A: Om het standaardlettertype dat is opgegeven in Aspose.Words te controleren, kunt u de`DefaultFontName` eigendom van de`PdfOptions` class en haal de naam van het geconfigureerde lettertype op.
-
-#### Vraag: Is het mogelijk om voor elke sectie van het document een ander standaardlettertype op te geven?
-
-A: Ja, het is mogelijk om voor elke sectie van het document een ander standaardlettertype op te geven met behulp van opmaakopties die specifiek zijn voor elke sectie. Dit zou echter een meer geavanceerde manipulatie van het document vereisen met behulp van de Aspose.Words-functies.
+### Waar kan ik ondersteuning krijgen als ik problemen tegenkom?
+ U kunt ondersteuning krijgen van de Aspose-gemeenschap en ontwikkelaars op de[Aspose.Words-ondersteuningsforum](https://forum.aspose.com/c/words/8).

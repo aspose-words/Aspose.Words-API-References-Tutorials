@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fields/insert-mail-merge-address-block-field-using-dom/
 ---
-## Úvod
+## Zavedení
 
 Přemýšleli jste někdy, jak efektivně spravovat a manipulovat s dokumenty Wordu programově? Ať už jste nadšenec, který se snaží automatizovat generování dokumentů, nebo vývojář, který má za úkol složité zpracování dokumentů, použití robustní knihovny, jako je Aspose.Words pro .NET, může změnit hru. Dnes se ponoříme do vzrušující funkce: jak vložit pole bloku adresy hromadné korespondence pomocí Document Object Model (DOM). Připoutejte se a získejte průvodce krok za krokem, díky kterému bude tento proces hračkou!
 
@@ -15,10 +15,10 @@ Přemýšleli jste někdy, jak efektivně spravovat a manipulovat s dokumenty Wo
 
 Než se vrhneme na to, co potřebujete, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET: Pokud jste to ještě neudělali, stáhněte si nejnovější verzi z[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Pokud jste to ještě neudělali, stáhněte si nejnovější verzi z[zde](https://releases.aspose.com/words/net/).
 2. Visual Studio: Ujistěte se, že máte na svém počítači nainstalované Visual Studio.
 3. Základní porozumění C#: Tato příručka předpokládá, že se vyznáte v programování v C#.
-4.  Aspose License: Můžete použít bezplatnou zkušební verzi od[tady](https://releases.aspose.com/) nebo získat dočasnou licenci od[tady](https://purchase.aspose.com/temporary-license/).
+4.  Aspose License: Můžete použít bezplatnou zkušební verzi od[zde](https://releases.aspose.com/) nebo získat dočasnou licenci od[zde](https://purchase.aspose.com/temporary-license/).
 
 ## Importovat jmenné prostory
 
@@ -113,13 +113,13 @@ tady to máte! Úspěšně jste vložili pole Blok adresy hromadné korespondenc
 Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vytvářet, upravovat, převádět a tisknout dokumenty aplikace Word programově pomocí aplikací .NET.
 
 ### Mohu používat Aspose.Words zdarma?
- Aspose.Words nabízí bezplatnou zkušební verzi, kterou si můžete stáhnout[tady](https://releases.aspose.com/) . Pro delší použití můžete zvážit zakoupení licence[tady](https://purchase.aspose.com/buy).
+ Aspose.Words nabízí bezplatnou zkušební verzi, kterou si můžete stáhnout[zde](https://releases.aspose.com/) . Pro delší použití můžete zvážit zakoupení licence[zde](https://purchase.aspose.com/buy).
 
 ### Co je blok adresy hromadné korespondence?
 Blok adresy hromadné korespondence je pole v aplikaci Word, které vám umožňuje vkládat informace o adrese ze zdroje dat ve specifickém formátu, takže je ideální pro generování personalizovaných dopisů nebo štítků.
 
 ### Jak získám podporu pro Aspose.Words?
- Můžete získat podporu od komunity Aspose a technického týmu[tady](https://forum.aspose.com/c/words/8).
+ Můžete získat podporu od komunity Aspose a technického týmu[zde](https://forum.aspose.com/c/words/8).
 
 ### Mohu pomocí Aspose.Words automatizovat další aspekty dokumentů aplikace Word?
-Absolutně! Aspose.Words for .NET poskytuje širokou škálu funkcí pro automatizaci generování, editace, konverze a dalších dokumentů. Podívejte se na[dokumentace](https://reference.aspose.com/words/net/) Více podrobností.
+Absolutně! Aspose.Words for .NET poskytuje širokou škálu funkcí pro automatizaci generování, editace, konverze a dalších dokumentů. Podívejte se na[dokumentace](https://reference.aspose.com/words/net/) pro více podrobností.

@@ -2,75 +2,99 @@
 title: Állítsa be a Fonts mappát
 linktitle: Állítsa be a Fonts mappát
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan állíthatja be a betűtípus-könyvtárat az Aspose.Words for .NET-ben, és hogyan biztosíthatja a dokumentumokban használt betűtípusok elérhetőségét.
+description: Ismerje meg, hogyan állíthat be egyéni betűtípusmappát az Aspose.Words for .NET-ben, hogy a Word-dokumentumok helyesen jelenjenek meg, anélkül, hogy betűtípusok hiányoznának.
 type: docs
 weight: 10
 url: /hu/net/working-with-fonts/set-fonts-folder/
 ---
-Ebben az oktatóanyagban bemutatjuk, hogyan állíthatja be a fonts könyvtárat az Aspose.Words for .NET-ben. Megtanulja, hogyan adhatja meg a Word-dokumentumban használt betűtípusokat tartalmazó könyvtárat.
+## Bevezetés
+
+Találkozott már olyan problémákkal, hogy hiányzik a betűtípus, miközben Word-dokumentumokkal dolgozott .NET-alkalmazásában? Nos, nem vagy egyedül. A megfelelő betűtípusmappa beállítása zökkenőmentesen megoldhatja ezt a problémát. Ebben az útmutatóban végigvezetjük, hogyan állíthatja be a fonts mappát az Aspose.Words for .NET használatával. Merüljünk el!
 
 ## Előfeltételek
+
 Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következőkkel:
-- C# programozási nyelv gyakorlati ismerete
-- A projektben telepített .NET Aspose.Words könyvtár
+
+- A Visual Studio telepítve van a gépedre
+- .NET-keretrendszer beállítása
+-  Aspose.Words a .NET könyvtárhoz. Ha még nem tette meg, letöltheti innen[itt](https://releases.aspose.com/words/net/).
+
+## Névterek importálása
+
+Először is importálnia kell a szükséges névtereket az Aspose.Words használatához. Adja hozzá a következő sorokat a kódfájl tetejéhez:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fonts;
+```
+
+betűtípusmappa beállítása egyszerű, ha gondosan követi ezeket a lépéseket.
 
 ## 1. lépés: Határozza meg a dokumentumkönyvtárat
-Először állítsa be a könyvtár elérési útját a Word-dokumentum helyére. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a kódban a megfelelő elérési úttal.
+
+Minden más előtt határozza meg a dokumentumkönyvtár elérési útját. Ez a könyvtár tartalmazza a Word-dokumentumokat és a használni kívánt betűtípusokat.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## 2. lépés: Állítsa be a betűtípus-könyvtárat
- Hozzon létre egy példányt a`FontSettings` osztályt, és használja a`SetFontsFolder` metódussal adja meg a betűtípusokat tartalmazó könyvtárat. Cserélje ki`"Fonts"` a tényleges fonts könyvtár nevével.
-
-```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.SetFontsFolder(dataDir + "Fonts", false);
-```
-
-## 3. lépés: Töltse be a dokumentumot a betűtípus-beállításokkal
- Használja a`LoadOptions` osztályban a betűtípus-beállítások megadásához`FontSettings` választási lehetőség. Ezután használja a`Document` osztályt a dokumentum betöltéséhez ezekkel a beállításokkal.
-
-```csharp
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.FontSettings = fontSettings;
-Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
-
-```
-
-### Minta forráskód a Set Fonts mappához az Aspose.Words for .NET használatával 
-
-```csharp
-
 // A dokumentumkönyvtár elérési útja
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-FontSettings fontSettings = new FontSettings();
-fontSettings.SetFontsFolder(dataDir + "Fonts", false);
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.FontSettings = fontSettings;
-Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
-
 ```
 
+ Ügyeljen arra, hogy cserélje ki`"YOUR DOCUMENT DIRECTORY"` a címtár tényleges elérési útjával.
+
+## 2. lépés: A FontSettings inicializálása
+
+ Most inicializálnia kell a`FontSettings` objektum. Ez az objektum lehetővé teszi egyéni betűtípus-mappák megadását.
+
+```csharp
+FontSettings fontSettings = new FontSettings();
+```
+
+## 3. lépés: Állítsa be a Fonts mappát
+
+ A`SetFontsFolder` módszere a`FontSettings` objektumot, adja meg azt a mappát, ahol az egyéni betűtípusokat tárolja.
+
+```csharp
+fontSettings.SetFontsFolder(dataDir + "Fonts", false);
+```
+
+ Itt,`dataDir + "Fonts"` a "Fonts" nevű mappára mutat a dokumentumkönyvtárban. A második paraméter,`false`, azt jelzi, hogy a mappa nem rekurzív.
+
+## 4. lépés: Hozzon létre LoadOptions
+
+ Ezután hozzon létre egy példányt a`LoadOptions` osztály. Ez az osztály segít a dokumentum betöltésében a megadott betűtípus-beállításokkal.
+
+```csharp
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.FontSettings = fontSettings;
+```
+
+## 5. lépés: Töltse be a dokumentumot
+
+ Végül töltse be a Word dokumentumot a`Document` osztály és a`LoadOptions` objektum.
+
+```csharp
+Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
+```
+
+ Győződjön meg róla`"Rendering.docx"` a Word dokumentum neve. Lecserélheti a fájl nevére.
+
 ## Következtetés
-Gratulálok ! Most már tudja, hogyan kell beállítani a fonts könyvtárat az Aspose.Words for .NET-ben. Ezzel a funkcióval biztosíthatja a dokumentumban használt betűtípusok elérhetőségét, valamint a betűtípusok megjelenítésének következetességét.
 
-### GYIK
+És megvan! Az alábbi lépések követésével könnyedén beállíthat egy egyéni betűtípus-mappát az Aspose.Words for .NET-ben, így biztosítva, hogy az összes betűtípus helyesen jelenik meg. Ezzel az egyszerű beállítással sok fejfájást megkímélhet, és a dokumentumok pontosan úgy néznek ki, ahogy szeretné.
 
-#### K: Hogyan állíthatok be egyéni betűtípus-mappát az Aspose.Words-ben?
+## GYIK
 
- V: Egyéni betűtípusmappa beállításához az Aspose.Words alkalmazásban használhatja a`FontsFolder` osztály és a`SetFontsFolders` metódus, amely megadja a betűtípusokat tartalmazó mappa elérési útját.
+### Miért kell egyéni betűtípus mappát beállítanom?
+Egyéni betűtípusmappa beállítása biztosítja, hogy a Word-dokumentumokban használt összes betűtípus helyesen jelenjen meg, elkerülve ezzel a hiányzó betűtípusokkal kapcsolatos problémákat.
 
-#### K: Beállíthatok több betűtípus mappát az Aspose.Wordsben?
+### Beállíthatok több betűtípus mappát?
+ Igen, használhatod a`SetFontsFolders` módszer több mappa megadására.
 
- V: Igen, több betűtípus-mappát is beállíthat az Aspose.Words-ben a következő meghívásával`SetFontsFolders` metódust többször is a használni kívánt különböző betűtípusmappák elérési útjával.
+### Mi történik, ha a betűtípus nem található?
+Az Aspose.Words megpróbálja a hiányzó betűtípust egy hasonlóval helyettesíteni a rendszer betűtípusai közül.
 
-#### K: Mi történik, ha a dokumentumban használt betűtípus nem található a megadott betűtípus mappákban?
+### Az Aspose.Words kompatibilis a .NET Core-al?
+Igen, az Aspose.Words támogatja a .NET Core-t és a .NET-keretrendszert.
 
-V: Ha a dokumentumban használt betűtípus nem található az Aspose.Words-ben meghatározott betűtípus-mappákban, akkor a rendszer egy helyettesítő betűtípust használ helyette. Ez biztosítja, hogy a dokumentum szövege mindig helyesen jelenjen meg, még akkor is, ha az eredeti betűtípus nem elérhető.
-
-#### K: Az Aspose.Words-ben meghatározott betűtípus-mappák elsőbbséget élveznek a rendszerre telepített betűtípusokkal szemben?
-
-V: Igen, az Aspose.Words-ben meghatározott betűkészlet-mappák elsőbbséget élveznek a rendszerre telepített betűtípusokkal szemben. Ez azt jelenti, hogy ha egy azonos nevű betűtípus megtalálható mind a definiált betűtípusmappákban, mind a rendszer betűtípusaiban, akkor a Word-dokumentumok feldolgozása során a fontmappában lévő verzió kerül felhasználásra.
+### Hol kaphatok támogatást, ha problémákkal szembesülök?
+ Támogatást kaphat a[Aspose.Words támogatási fórum](https://forum.aspose.com/c/words/8).

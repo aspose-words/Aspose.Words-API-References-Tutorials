@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/add-content-using-documentbuilder/move-to-table-cell/
 ---
-## Úvod
+## Zavedení
 
 Přesun do konkrétní buňky tabulky v dokumentu aplikace Word může znít jako skličující úkol, ale s Aspose.Words pro .NET je to hračka! Ať už automatizujete sestavy, vytváříte dynamické dokumenty nebo jen potřebujete programově manipulovat s daty tabulek, tato výkonná knihovna vám pomůže. Pojďme se ponořit do toho, jak se můžete přesunout do buňky tabulky a přidat do ní obsah pomocí Aspose.Words for .NET.
 
@@ -77,7 +77,7 @@ Console.WriteLine(table.Rows[2].Cells[3].GetText().Trim());
 
 ## Závěr
 
-Gratulujeme! Právě jste se naučili, jak se přesunout na konkrétní buňku tabulky v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato výkonná knihovna zjednodušuje manipulaci s dokumenty, takže vaše kódovací úlohy jsou efektivnější a příjemnější. Ať už pracujete na složitých sestavách nebo na jednoduchých úpravách dokumentů, Aspose.Words poskytuje nástroje, které potřebujete.
+Gratuluji! Právě jste se naučili, jak se přesunout na konkrétní buňku tabulky v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato výkonná knihovna zjednodušuje manipulaci s dokumenty, takže vaše kódovací úlohy jsou efektivnější a příjemnější. Ať už pracujete na složitých sestavách nebo na jednoduchých úpravách dokumentů, Aspose.Words poskytuje nástroje, které potřebujete.
 
 ## FAQ
 

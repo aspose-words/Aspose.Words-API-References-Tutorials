@@ -51,7 +51,7 @@ Document dstDoc = new Document(dataDir + "destination.docx");
 
  Használja ki a`PageSetup` a szakasz tulajdonsága az elrendezési viselkedés konfigurálásához.
 
- Állítsa be a`SectionStart` tulajdona`PageSetup` nak nek`SectionStart.NewPage`. Ez biztosítja egy új oldal létrehozását, mielőtt a forrástartalom hozzáfűződik a céldokumentumhoz.
+ Állítsa be a`SectionStart` tulajdona`PageSetup` hogy`SectionStart.NewPage`. Ez biztosítja egy új oldal létrehozását, mielőtt a forrástartalom hozzáfűződik a céldokumentumhoz.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
@@ -93,7 +93,7 @@ dstDoc.Save(dataDir + "final_document.docx");
 
 ### Újraindíthatom az oldalszámozást egy szakasz közepén?
 
- Sajnos az Aspose.Words for .NET nem támogatja közvetlenül az oldalszámozás újraindítását egyetlen szakaszon belül. Azonban hasonló hatást érhet el, ha új szakaszt hoz létre a kívánt ponton és beállítással`RestartPageNumbering` nak nek`true` ahhoz a szakaszhoz.
+ Sajnos az Aspose.Words for .NET nem támogatja közvetlenül az oldalszámozás újraindítását egyetlen szakaszon belül. Azonban hasonló hatást érhet el, ha új szakaszt hoz létre a kívánt ponton és beállítással`RestartPageNumbering` hogy`true` ahhoz a szakaszhoz.
 
 ### Hogyan szabhatom testre a kezdőoldal számát újraindítás után?
 

@@ -55,7 +55,7 @@ mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtB
 
 ## الخطوة 4: إدراج المستندات أثناء دمج المراسلات
 
-يمكنك إدراج المستندات أثناء عملية دمج البريد في Aspose.Words for Java. إليك الطريقة:
+يمكنك إدراج المستندات أثناء عملية دمج البريد في Aspose.Words for Java. وإليك الطريقة:
 
 ```java
 Document mainDoc = new Document("Your Directory Path" + "Document insertion 1.docx");

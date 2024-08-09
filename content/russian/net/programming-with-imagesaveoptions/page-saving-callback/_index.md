@@ -2,7 +2,7 @@
 title: Обратный вызов при сохранении страницы
 linktitle: Обратный вызов при сохранении страницы
 second_title: API обработки документов Aspose.Words
-description: Научитесь сохранять каждую страницу документа Word как отдельное изображение PNG с помощью Aspose.Words for .NET с помощью нашего подробного пошагового руководства.
+description: Научитесь сохранять каждую страницу документа Word как отдельное изображение PNG с помощью Aspose.Words для .NET с помощью нашего подробного пошагового руководства.
 type: docs
 weight: 10
 url: /ru/net/programming-with-imagesaveoptions/page-saving-callback/

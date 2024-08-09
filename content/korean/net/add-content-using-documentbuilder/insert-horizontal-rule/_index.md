@@ -15,7 +15,7 @@ url: /ko/net/add-content-using-documentbuilder/insert-horizontal-rule/
 
 핵심적인 내용을 살펴보기 전에 시작하는 데 필요한 모든 것이 갖추어져 있는지 확인하겠습니다. 간단한 체크리스트는 다음과 같습니다.
 
-1.  .NET용 Aspose.Words: 최신 버전인지 확인하세요. 당신은 할 수 있습니다[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+1.  .NET용 Aspose.Words: 최신 버전인지 확인하세요. 당신은 할 수 있습니다[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 2. 개발 환경: Visual Studio와 같이 .NET을 지원하는 모든 IDE.
 3. C#에 대한 기본 지식: C# 프로그래밍에 익숙하면 이 튜토리얼이 더 원활해집니다.
 4. 문서 디렉토리: Word 문서를 저장할 수 있는 디렉토리가 필요합니다.
@@ -117,7 +117,7 @@ Aspose.Words for .NET은 개발자가 C#을 사용하여 프로그래밍 방식�
 
 ### Aspose.Words를 무료로 사용할 수 있나요?
 
- Aspose.Words는 다음을 제공합니다.[무료 시험판](https://releases.aspose.com/) 라이센스를 구매하기 전에 해당 기능을 시험해 볼 수 있습니다.
+ Aspose.Words는 다음을 제공합니다.[무료 평가판](https://releases.aspose.com/) 라이센스를 구매하기 전에 해당 기능을 시험해 볼 수 있습니다.
 
 ### .NET용 Aspose.Words에 대한 추가 튜토리얼은 어디서 찾을 수 있나요?
 

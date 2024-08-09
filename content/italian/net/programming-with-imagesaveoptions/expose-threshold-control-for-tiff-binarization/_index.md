@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-imagesaveoptions/expose-threshold-control-for-tiff-binarization/
 ---
-## introduzione
+## Introduzione
 
 Ti sei mai chiesto come controllare la soglia per la binarizzazione TIFF nei tuoi documenti Word? Sei nel posto giusto! Questa guida ti guiderà attraverso il processo passo dopo passo utilizzando Aspose.Words per .NET. Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato, troverai questo tutorial coinvolgente, facile da seguire e ricco di tutti i dettagli necessari per portare a termine il lavoro. Pronti a tuffarvi? Andiamo!
 
@@ -81,7 +81,7 @@ Questa riga di codice salva il documento nel percorso specificato con le opzioni
 
 ## Conclusione
 
-E il gioco è fatto! Hai appena imparato come esporre il controllo della soglia per la binarizzazione TIFF in un documento Word utilizzando Aspose.Words per .NET. Questa potente libreria semplifica la manipolazione dei documenti Word in vari modi, inclusa la conversione in formati diversi con impostazioni personalizzate. Provatelo e scoprite come può semplificare le vostre attività di elaborazione dei documenti!
+Ed ecco qua! Hai appena imparato come esporre il controllo della soglia per la binarizzazione TIFF in un documento Word utilizzando Aspose.Words per .NET. Questa potente libreria semplifica la manipolazione dei documenti Word in vari modi, inclusa la conversione in formati diversi con impostazioni personalizzate. Provatelo e scoprite come può semplificare le vostre attività di elaborazione dei documenti!
 
 ## Domande frequenti
 

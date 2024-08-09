@@ -89,7 +89,7 @@ Gefeliciteerd! U hebt met succes een bellendiagram in een Word-document ingevoeg
 
 ### Kan ik het uiterlijk van het bellendiagram aanpassen?
 
- Absoluut! Aspose.Words voor .NET biedt een breed scala aan aanpassingsopties, van kleuren en labels tot de opmaak van gegevensreeksen. Bekijk de[documentatie](https://reference.aspose.com/words/net/) voor meer details.
+ Absoluut! Aspose.Words voor .NET biedt een breed scala aan aanpassingsopties, van kleuren en labels tot de opmaak van gegevensreeksen. Bekijk de[documentatie](https://reference.aspose.com/words/net/) voor meer informatie.
 
 ### Is het mogelijk om meerdere diagrammen aan één document toe te voegen?
 

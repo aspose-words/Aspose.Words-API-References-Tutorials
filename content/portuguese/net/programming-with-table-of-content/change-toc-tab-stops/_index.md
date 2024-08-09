@@ -108,7 +108,7 @@ Alterar as paradas de tabulação do sumário em um documento do Word usando Asp
 ## Perguntas frequentes
 
 ### Posso modificar as paradas de tabulação para diferentes níveis de sumário separadamente?
-Sim você pode! Basta verificar cada nível de TOC específico (Toc1, Toc2, etc.) e ajustar de acordo.
+Sim, você pode! Basta verificar cada nível de TOC específico (Toc1, Toc2, etc.) e ajustar de acordo.
 
 ### E se meu documento tiver vários sumários?
 O código procura todos os parágrafos com estilo de índice, portanto, modificará todos os índices presentes no documento.

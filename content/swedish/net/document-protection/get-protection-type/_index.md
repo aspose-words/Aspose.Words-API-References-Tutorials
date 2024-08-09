@@ -9,7 +9,7 @@ url: /sv/net/document-protection/get-protection-type/
 ---
 ## Introduktion
 
-Hallå där! Har du någonsin undrat hur man kontrollerar skyddstypen för dina Word-dokument programmatiskt? Oavsett om du säkrar känsliga uppgifter eller bara är nyfikna på dokumentets status, kan det vara väldigt praktiskt att veta hur man får skyddstypen. Idag går vi igenom processen med Aspose.Words för .NET, ett kraftfullt bibliotek som gör det enkelt att arbeta med Word-dokument. Spänn fast och låt oss dyka in!
+Hej där! Har du någonsin undrat hur man kontrollerar skyddstypen för dina Word-dokument programmatiskt? Oavsett om du säkrar känsliga uppgifter eller bara är nyfikna på dokumentets status, kan det vara väldigt praktiskt att veta hur man får skyddstypen. Idag går vi igenom processen med Aspose.Words för .NET, ett kraftfullt bibliotek som gör det enkelt att arbeta med Word-dokument. Spänn fast och låt oss dyka in!
 
 ## Förutsättningar
 
@@ -34,14 +34,14 @@ Låt oss dela upp processen i enkla steg som är lätta att följa. Varje steg g
 
 ## Steg 1: Konfigurera ditt projekt
 
-Först till kvarn, ställ in ditt C#-projekt i Visual Studio. Här är hur:
+Först till kvarn, ställ in ditt C#-projekt i Visual Studio. Så här gör du:
 
 1. Skapa ett nytt projekt: Öppna Visual Studio, gå till Arkiv > Nytt > Projekt och välj en konsolapp (.NET Core eller .NET Framework).
 2. Installera Aspose.Words: Högerklicka på ditt projekt i Solution Explorer, välj "Manage NuGet Packages", sök efter "Aspose.Words" och installera det.
 
 ## Steg 2: Ladda ditt dokument
 
- Nu när ditt projekt är konfigurerat, låt oss ladda Word-dokumentet du vill kontrollera. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till ditt dokument.
+ Nu när ditt projekt är konfigurerat, låt oss ladda Word-dokumentet du vill kontrollera. Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till ditt dokument.
 
 ```csharp
 // Sökväg till din dokumentkatalog

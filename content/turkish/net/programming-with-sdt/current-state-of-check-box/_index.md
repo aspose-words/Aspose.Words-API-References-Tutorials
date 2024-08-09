@@ -97,7 +97,7 @@ Birden fazla onay kutusunu yönetmek için, yapılandırılmış belge etiketler
 ### Aspose.Words for .NET'i bir Word belgesinde yeni onay kutuları oluşturmak için kullanabilir miyim?
  Evet, şu türden yapılandırılmış belge etiketleri ekleyerek yeni onay kutuları oluşturabilirsiniz:`SdtType.Checkbox` belgenize.
 
-### Bir belgeden onay kutusunun durumunu okumak mümkün mü?
+### Bir belgeden onay kutusunun durumunu okumak mümkün müdür?
  Kesinlikle. Şuraya erişerek bir onay kutusunun durumunu okuyabilirsiniz:`Checked` mülkiyeti`StructuredDocumentTag` eğer türdense`SdtType.Checkbox`.
 
 ### Aspose.Words for .NET için nasıl geçici lisans alabilirim?

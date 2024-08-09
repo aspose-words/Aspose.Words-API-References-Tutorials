@@ -216,7 +216,7 @@ Bằng cách làm theo các bước này, bạn có thể tạo tài liệu vớ
 
 Chúc mừng! Bạn đã học cách làm việc hiệu quả với các danh sách trong Aspose.Words cho Java. Danh sách rất quan trọng để tổ chức và trình bày nội dung trong tài liệu của bạn. Cho dù bạn cần khởi động lại danh sách ở từng phần hay chỉ định cấp độ danh sách, Aspose.Words for Java đều cung cấp các công cụ bạn cần để tạo tài liệu trông chuyên nghiệp.
 
-Giờ đây, bạn có thể tự tin sử dụng các tính năng này để nâng cao tác vụ tạo và định dạng tài liệu của mình. Nếu bạn có bất kỳ thắc mắc hoặc cần hỗ trợ thêm, đừng ngần ngại liên hệ với[Diễn đàn cộng đồng Aspose](https://forum.aspose.com/) để hỗ trợ.
+Giờ đây, bạn có thể tự tin sử dụng các tính năng này để nâng cao tác vụ tạo và định dạng tài liệu của mình. Nếu bạn có bất kỳ thắc mắc hoặc cần hỗ trợ thêm, đừng ngần ngại liên hệ với[Diễn đàn cộng đồng Aspose](https://forum.aspose.com/) để được hỗ trợ.
 
 ## Câu hỏi thường gặp
 

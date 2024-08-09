@@ -105,13 +105,13 @@ Możesz dodatkowo dostosować ustawienia przypisu końcowego, aby spełnić wyma
 	}
 ```
 
-## 7. Wnioski
+## 7. Wniosek
 
 W tym samouczku omówiliśmy, jak pracować z przypisami dolnymi i końcowymi w Aspose.Words dla Java. Funkcje te są nieocenione przy tworzeniu dokumentów o dobrze zorganizowanej strukturze z odpowiednimi cytatami i odniesieniami.
 
 Teraz, gdy już nauczyłeś się korzystać z przypisów dolnych i końcowych, możesz ulepszyć formatowanie dokumentu i uczynić jego treść bardziej profesjonalną.
 
-### Często Zadawane Pytania
+### Często zadawane pytania
 
 ### 1. Jaka jest różnica między przypisami dolnymi a przypisami końcowymi?
 Przypisy dolne pojawiają się na dole strony, natomiast przypisy końcowe są gromadzone na końcu sekcji lub dokumentu.

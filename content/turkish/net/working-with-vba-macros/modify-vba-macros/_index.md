@@ -108,9 +108,9 @@ Bu satır, değiştirilmiş VBA makrosunu içeren belgeyi belirttiğiniz dizine 
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesindeki VBA makrolarını başarıyla değiştirdiniz. Bu eğitim, belgenizi yüklemekten VBA projesine erişmeye, makro kodunu değiştirmeye ve değiştirilen belgeyi kaydetmeye kadar her şeyi kapsıyordu. Aspose.Words ile görevleri kolayca otomatikleştirebilir, belgelerinizi özelleştirebilir ve hatta ihtiyaçlarınıza uyacak şekilde VBA makrolarıyla oynayabilirsiniz.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesindeki VBA makrolarını başarıyla değiştirdiniz. Bu eğitim, belgenizi yüklemekten VBA projesine erişmeye, makro kodunu değiştirmeye ve değiştirilen belgeyi kaydetmeye kadar her şeyi kapsıyordu. Aspose.Words ile görevleri kolayca otomatikleştirebilir, belgelerinizi özelleştirebilir ve hatta ihtiyaçlarınıza uyacak şekilde VBA makrolarıyla oynayabilirsiniz.
 
- Daha fazlasını keşfetmeye istekliyseniz,[API belgeleri](https://reference.aspose.com/words/net/) harika bir kaynaktır. Ve eğer bir engelle karşılaşırsan,[destek Forumu](https://forum.aspose.com/c/words/8) size yardımcı olmak için her zaman oradadır.
+ Daha fazlasını keşfetmeye istekliyseniz,[API belgeleri](https://reference.aspose.com/words/net/) harika bir kaynaktır. Ve eğer bir engelle karşılaşırsan,[destek forumu](https://forum.aspose.com/c/words/8) size yardımcı olmak için her zaman oradadır.
 
 Mutlu kodlamalar ve unutmayın, konu Word belgelerinizi otomatikleştirmek olduğunda sınır gökyüzüdür!
 

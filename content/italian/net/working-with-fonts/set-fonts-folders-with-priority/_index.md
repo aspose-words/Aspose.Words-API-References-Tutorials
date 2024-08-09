@@ -2,79 +2,91 @@
 title: Imposta le cartelle dei caratteri con priorità
 linktitle: Imposta le cartelle dei caratteri con priorità
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Guida passo passo per impostare le cartelle dei caratteri con priorità durante il rendering di un documento utilizzando Aspose.Words per .NET.
+description: Scopri come impostare le cartelle dei caratteri con priorità nei documenti di Word utilizzando Aspose.Words per .NET. La nostra guida garantisce che i tuoi documenti vengano visualizzati perfettamente ogni volta.
 type: docs
 weight: 10
 url: /it/net/working-with-fonts/set-fonts-folders-with-priority/
 ---
+## Introduzione
 
-In questo tutorial, ti guideremo attraverso il processo passo passo per impostare le cartelle dei caratteri con priorità durante il rendering di un documento utilizzando Aspose.Words per .NET. Spiegheremo il codice sorgente C# in bundle e ti forniremo una guida completa per aiutarti a comprendere e implementare questa funzionalità nei tuoi progetti. Alla fine di questo tutorial, saprai come specificare più cartelle di caratteri con priorità di ricerca personalizzata durante il rendering dei tuoi documenti utilizzando Aspose.Words per .NET.
+Nel mondo della manipolazione dei documenti, l'impostazione di cartelle di caratteri personalizzate può fare un'enorme differenza nel garantire che i tuoi documenti vengano visualizzati perfettamente, indipendentemente da dove vengono visualizzati. Oggi approfondiremo come impostare le cartelle dei caratteri con priorità nei documenti di Word utilizzando Aspose.Words per .NET. Questa guida completa ti guiderà attraverso ogni passaggio, rendendo il processo il più agevole possibile.
 
-## Passaggio 1: definire la directory dei documenti
-Innanzitutto, devi impostare il percorso della directory dei documenti. Questa è la posizione in cui desideri salvare il documento renderizzato modificato. Sostituisci "DIRECTORY DOCUMENTI" con il percorso appropriato.
+## Prerequisiti
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Prima di iniziare, assicuriamoci di avere tutto ciò di cui abbiamo bisogno. Ecco una rapida lista di controllo:
 
-## Passaggio 2: imposta la priorità sulle cartelle dei caratteri
- Quindi puoi impostare le cartelle dei caratteri con priorità utilizzando il file`FontSettings` classe e il`SetFontsSources()`metodo. È possibile specificare più origini di caratteri utilizzando istanze di`SystemFontSource`E`FolderFontSource`. In questo esempio, abbiamo definito due origini di caratteri: l'origine di caratteri di sistema predefinita e una cartella di caratteri personalizzata con priorità 1.
+-  Aspose.Words per .NET: è necessario che questa libreria sia installata. Se non ce l'hai ancora, puoi[scaricalo qui](https://releases.aspose.com/words/net/).
+- Ambiente di sviluppo: assicurati di disporre di un ambiente di sviluppo .NET funzionante, come Visual Studio.
+-  Directory dei documenti: assicurati di avere una directory per i tuoi documenti. Per i nostri esempi, useremo`"YOUR DOCUMENT DIRECTORY"` come segnaposto per questo percorso.
 
-```csharp
-FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
-{
-new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true, 1)
-});
-```
+## Importa spazi dei nomi
 
-## Passaggio 3: caricare il documento da renderizzare
- Ora puoi caricare il documento da renderizzare utilizzando il file`Document` classe. Assicurati di specificare il percorso corretto del documento.
+Per prima cosa, dobbiamo importare gli spazi dei nomi necessari. Questi spazi dei nomi sono essenziali per accedere alle classi e ai metodi forniti da Aspose.Words.
 
 ```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Passaggio 4: salva il documento renderizzato
- Infine, puoi salvare il documento renderizzato in un file utilizzando il file`Save()` metodo del`Document` classe. Assicurati di specificare il percorso e il nome file corretti.
+Ora analizziamo ogni passaggio per impostare le cartelle dei caratteri con priorità.
 
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
-```
+## Passaggio 1: imposta le origini dei caratteri
 
-### Codice sorgente di esempio per Imposta cartelle di caratteri con priorità utilizzando Aspose.Words per .NET 
+Per iniziare, ti consigliamo di definire le fonti dei caratteri. Qui è dove dici ad Aspose.Words dove cercare i caratteri. Puoi specificare più cartelle di caratteri e persino impostarne la priorità.
+
 ```csharp
 // Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
 {
-	new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true,1)
+    new SystemFontSource(), 
+    new FolderFontSource("C:\\MyFonts\\", true, 1)
 });
+```
+
+In questo esempio, stiamo impostando due origini di caratteri:
+- SystemFontSource: questa è l'origine dei caratteri predefinita che include tutti i caratteri installati sul sistema.
+-  FolderFontSource: questa è una cartella di caratteri personalizzati situata in`C:\\MyFonts\\` . IL`true` Il parametro specifica che questa cartella deve essere scansionata in modo ricorsivo e`1` stabilisce la sua priorità.
+
+## Passaggio 2: carica il documento
+
+Successivamente, carica il documento con cui vuoi lavorare. Assicurati che il documento si trovi nella directory specificata.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+ Questa riga di codice carica un documento denominato`Rendering.docx` dalla directory dei documenti.
+
+## Passaggio 3: salva il documento con le nuove impostazioni del carattere
+
+Infine, salva il tuo documento. Quando salvi il documento, Aspose.Words utilizzerà le impostazioni del carattere specificate.
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
 ```
 
+ Ciò salva il documento come PDF nella directory dei documenti con il nome`WorkingWithFonts.SetFontsFoldersWithPriority.pdf`.
+
 ## Conclusione
-In questo tutorial, abbiamo imparato come impostare le cartelle dei caratteri con priorità durante il rendering di un documento utilizzando Aspose.Words per .NET. Seguendo questa guida passo passo, puoi facilmente specificare più cartelle di caratteri con priorità di ricerca personalizzata durante il rendering dei tuoi documenti. Aspose.Words offre un'API potente e flessibile per l'elaborazione delle parole con i caratteri nei tuoi documenti. Con questa conoscenza, puoi controllare e personalizzare le origini dei caratteri utilizzate durante il rendering dei tuoi documenti in base alle tue esigenze specifiche.
 
-### Domande frequenti
+Ed ecco qua! Hai impostato correttamente le cartelle dei caratteri con priorità utilizzando Aspose.Words per .NET. Specificando cartelle e priorità di caratteri personalizzate, puoi garantire che i tuoi documenti vengano visualizzati in modo coerente, indipendentemente da dove vengono visualizzati. Ciò è particolarmente utile in ambienti in cui i caratteri specifici non sono installati per impostazione predefinita.
 
-#### D: Come posso impostare le cartelle dei caratteri con priorità in Aspose.Words?
+## Domande frequenti
 
- R: Per impostare le cartelle dei caratteri con priorità in Aspose.Words, puoi utilizzare il file`SetFontsFoldersWithPriority` metodo del`Fonts` classe specificando le posizioni delle cartelle dei caratteri e il loro ordine di priorità.
+### Perché dovrei impostare cartelle di caratteri personalizzate?
+L'impostazione di cartelle di caratteri personalizzate garantisce che i tuoi documenti vengano visualizzati correttamente, anche se utilizzano caratteri non installati sul sistema in cui vengono visualizzati.
 
-#### D: Cosa succede se un font è presente in più cartelle con priorità diversa?
+### Posso impostare più cartelle di caratteri personalizzati?
+Sì, puoi specificare più cartelle di caratteri. Aspose.Words ti consente di impostare la priorità per ciascuna cartella, assicurando che i caratteri più importanti vengano trovati per primi.
 
-R: Se un carattere è presente in più cartelle con priorità diversa, Aspose.Words utilizzerà la versione della cartella con la priorità più alta durante l'elaborazione dei documenti.
+### Cosa succede se un carattere manca da tutte le fonti specificate?
+Se un carattere manca da tutte le fonti specificate, Aspose.Words utilizzerà un carattere di fallback per garantire che il documento sia ancora leggibile.
 
-#### D: Posso specificare più cartelle di caratteri con la stessa priorità in Aspose.Words?
+### Posso modificare la priorità dei caratteri di sistema?
+I caratteri di sistema sono sempre inclusi per impostazione predefinita, ma puoi impostare la loro priorità rispetto alle cartelle dei caratteri personalizzati.
 
-R: Sì, puoi specificare più cartelle di caratteri con la stessa priorità in Aspose.Words. Aspose.Words li considererà tutti con la stessa priorità durante la ricerca dei caratteri nei tuoi documenti.
-
-#### D: Come posso controllare le cartelle dei caratteri definite con priorità in Aspose.Words?
-
- R: Per controllare le cartelle dei caratteri definite con priorità in Aspose.Words, puoi utilizzare il file`GetFolders` metodo del`Fonts` class per ottenere l'elenco delle cartelle di caratteri configurate incluso il loro ordine di priorità.
-
-#### D: A che serve impostare le cartelle dei caratteri con priorità in Aspose.Words?
-
-R: L'impostazione delle cartelle dei caratteri con priorità in Aspose.Words consente di controllare l'ordine di ricerca dei caratteri nei documenti di Word. Ciò ti aiuta a garantire che vengano utilizzati i caratteri desiderati ed evitare problemi di sostituzione dei caratteri indesiderati.
+### È possibile utilizzare percorsi di rete per cartelle di caratteri personalizzati?
+Sì, puoi specificare percorsi di rete come cartelle di caratteri personalizzate, consentendoti di centralizzare le risorse dei caratteri in un percorso di rete.

@@ -90,7 +90,7 @@ Bu, bir şeyler ters giderse uygulamanızın çökmesi yerine anlamlı bir hata 
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'te ölçülü lisans uygulamak, bunu yönetilebilir adımlara ayırdığınızda çok kolaydır. Bu lisanslama modeli esneklik ve maliyet tasarrufu sunarak birçok geliştirici için mükemmel bir seçimdir. Unutmayın, önemli olan ölçülü anahtarlarınızı doğru şekilde ayarlamak ve ortaya çıkabilecek istisnaları ele almaktır. Mutlu kodlama!
+Ve işte karşınızda! Aspose.Words for .NET'te ölçülü lisans uygulamak, bunu yönetilebilir adımlara ayırdığınızda çok kolaydır. Bu lisanslama modeli esneklik ve maliyet tasarrufu sunarak birçok geliştirici için mükemmel bir seçimdir. Unutmayın, önemli olan ölçülü anahtarlarınızı doğru şekilde ayarlamak ve ortaya çıkabilecek istisnaları ele almaktır. Mutlu kodlama!
 
 ## SSS'ler
 

@@ -2,82 +2,96 @@
 title: Nastavte složku True Type písem
 linktitle: Nastavte složku True Type písem
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Podrobný průvodce nastavením složky true type fonts při vykreslování dokumentu pomocí Aspose.Words for .NET.
+description: Naučte se, jak nastavit složku True Type Fonts v dokumentech aplikace Word pomocí Aspose.Words for .NET. Postupujte podle našeho podrobného průvodce krok za krokem, abyste zajistili konzistentní správu písem.
 type: docs
 weight: 10
 url: /cs/net/working-with-fonts/set-true-type-fonts-folder/
 ---
+## Zavedení
 
-V tomto tutoriálu vás provedeme krok za krokem procesem nastavení složky true type fonts při vykreslování dokumentu pomocí Aspose.Words for .NET. Vysvětlíme vám přibalený zdrojový kód C# a poskytneme vám komplexního průvodce, který vám pomůže pochopit a implementovat tuto funkci ve vašich vlastních projektech. Na konci tohoto tutoriálu budete vědět, jak určit vlastní složku obsahující písma True Type, která se použije při vykreslování dokumentů pomocí Aspose.Words for .NET.
+ponoříme se do fascinujícího světa správy písem v dokumentech Word pomocí Aspose.Words for .NET. Pokud jste se někdy potýkali s vložením správných písem nebo zajištěním toho, aby váš dokument vypadal dokonale na každém zařízení, jste na správném místě. Projdeme si procesem nastavení složky True Type Fonts, abychom zjednodušili správu písem vašeho dokumentu a zajistili konzistenci a jasnost vašich dokumentů.
 
-## Krok 1: Definujte adresář dokumentů
-Nejprve musíte nastavit cestu k adresáři dokumentů. Toto je umístění, kam chcete uložit upravený vykreslený dokument. Nahraďte "VAŠE ADRESÁŘ DOKUMENTŮ" příslušnou cestou.
+## Předpoklady
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Než se vrhneme na to, co děláte, proberme několik předpokladů, abyste měli jistotu, že jste všichni připraveni k úspěchu:
 
-## Krok 2: Načtěte dokument k vykreslení
- Dále musíte načíst dokument k vykreslení pomocí`Document` třída. Ujistěte se, že jste zadali správnou cestu dokumentu.
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou nejnovější verzi. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí: Pracovní vývojové prostředí .NET, jako je Visual Studio.
+3. Základní znalost C#: Užitečná bude znalost programování v C#.
+4. Ukázkový dokument: Připravte si dokument Word, se kterým chcete pracovat.
 
-```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
-```
+## Importovat jmenné prostory
 
-## Krok 3: Nastavte složku True Type písem
-Nyní můžete určit složku true type fontů, která se má použít při vykreslování, vytvořením instance`FontSettings` třídy a pomocí`SetFontsFolder()` způsob nastavení složky písem. Můžete určit vlastní složku obsahující vaše písma True Type. Druhý parametr do`SetFontsFolder()` označuje, zda chcete prohledávat také podsložky zadané složky.
+Nejprve musíme importovat potřebné jmenné prostory. Jsou jako posádka v zákulisí, která zajišťuje, že vše běží hladce.
 
 ```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
-doc.FontSettings = fontSettings;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Krok 4: Uložte vykreslený dokument
- Nakonec můžete vykreslený dokument uložit do souboru pomocí`Save()` metoda`Document` třída. Ujistěte se, že jste zadali správnou cestu a název souboru.
+## Krok 1: Vložte svůj dokument
 
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
-```
-
-### Ukázkový zdrojový kód pro Set True Type Fonts Folder pomocí Aspose.Words for .NET 
+ Začněme načtením dokumentu. Použijeme`Document` třídy z Aspose.Words k načtení existujícího dokumentu aplikace Word.
 
 ```csharp
 // Cesta k vašemu adresáři dokumentů
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Krok 2: Inicializujte nastavení písma
+
+ Dále vytvoříme instanci`FontSettings`třída. Tato třída nám umožňuje přizpůsobit způsob zacházení s písmy v našem dokumentu.
+
+```csharp
 FontSettings fontSettings = new FontSettings();
-// Upozorňujeme, že toto nastavení přepíše všechny výchozí zdroje písem, které jsou ve výchozím nastavení prohledávány. Nyní se budou hledat pouze tyto složky
-// Písma při vykreslování nebo vkládání písem. Chcete-li přidat další zdroj písem při zachování systémových zdrojů písem, použijte FontSettings.GetFontSources a
-// Místo toho FontSettings.SetFontSources
+```
+
+## Krok 3: Nastavte složku Fonts
+
+Nyní přichází ta vzrušující část. Určíme složku, kde se nacházejí naše písma True Type. Tento krok zajistí, že Aspose.Words použije písma z této složky při vykreslování nebo vkládání písem.
+
+```csharp
+// Upozorňujeme, že toto nastavení přepíše všechny výchozí zdroje písem, které jsou ve výchozím nastavení prohledávány.
+// Nyní budou při vykreslování nebo vkládání písem vyhledány pouze tyto složky.
 fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
+```
+
+## Krok 4: Použijte nastavení písma na dokument
+
+S nakonfigurovaným nastavením písma nyní tato nastavení použijeme na náš dokument. Tento krok je zásadní pro zajištění toho, aby náš dokument používal specifikovaná písma.
+
+```csharp
 // Nastavte nastavení písma
 doc.FontSettings = fontSettings;
-doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
+```
+
+## Krok 5: Uložte dokument
+
+Nakonec dokument uložíme. Můžete si jej uložit v různých formátech, ale pro tento tutoriál jej uložíme jako PDF.
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.SetTrueTypeFontsFolder.pdf");
 ```
 
 ## Závěr
-tomto tutoriálu jsme se naučili, jak nastavit složku true type fonts při vykreslování dokumentu pomocí Aspose.Words for .NET. Podle tohoto podrobného průvodce můžete snadno určit vlastní složku obsahující písma True Type, která se použije při vykreslování dokumentů. Aspose.Words nabízí výkonné a flexibilní API pro zpracování textu s písmy ve vašich dokumentech. S těmito znalostmi můžete ovládat a upravovat písma používaná při vykreslování dokumentů podle vašich specifických potřeb.
 
-### FAQ
+tady to máte! Úspěšně jste nastavili složku True Type Fonts pro vaše dokumenty Word pomocí Aspose.Words for .NET. Díky tomu budou vaše dokumenty vypadat konzistentně a profesionálně na všech platformách. Správa písem je kritickým aspektem při vytváření dokumentů as Aspose.Words je neuvěřitelně přímočará.
 
-#### Otázka: Jak mohu nakonfigurovat složku písem TrueType v Aspose.Words?
+## FAQ
 
- A: Chcete-li nakonfigurovat složku písem TrueType v Aspose.Words, můžete použít`SetTrueTypeFontsFolder` metoda`Fonts` třída určující umístění složky obsahující písma TrueType.
+### Mohu použít více složek písem?
+ Ano, kombinací můžete použít více složek písem`FontSettings.GetFontSources`a`FontSettings.SetFontSources`.
 
-#### Otázka: Jaké typy písem jsou považovány za písma TrueType?
+### Co když zadaná složka písem neexistuje?
+Pokud zadaná složka písem neexistuje, Aspose.Words nebude moci najít písma a místo toho budou použita výchozí systémová písma.
 
-Odpověď: Písma TrueType jsou oblíbeným formátem písem. Často se používají v dokumentech aplikace Word a mají příponu souboru .ttf nebo .ttc.
+### Mohu se vrátit k výchozímu nastavení písma?
+ Ano, k výchozímu nastavení písma se můžete vrátit resetováním`FontSettings` instance.
 
-#### Otázka: Mohu zadat více složek písem TrueType v Aspose.Words?
+### Je možné do dokumentu vložit písma?
+Ano, Aspose.Words vám umožňuje vkládat písma do dokumentu, abyste zajistili konzistenci napříč různými zařízeními.
 
-Odpověď: Ano, můžete zadat více složek písem TrueType v Aspose.Words pomocí`SetTrueTypeFontsFolder` metoda`Fonts` třída se seznamem umístění složek.
-
-#### Otázka: Jak mohu zkontrolovat složku písem TrueType nakonfigurovanou v Aspose.Words?
-
- A: Chcete-li zkontrolovat nakonfigurovanou složku TrueType Fonts v Aspose.Words, můžete použít`GetTrueTypeFontsFolder` metoda`Fonts` třídy, abyste získali umístění nakonfigurované složky písem TrueType.
-
-#### Otázka: Proč je důležité nakonfigurovat složku písem TrueType v Aspose.Words?
-
-Odpověď: Nastavení složky písem TrueType v Aspose.Words je důležité, protože pomáhá Aspose.Words najít písma potřebná při zpracování dokumentů aplikace Word. To zajišťuje konzistenci formátování a vzhledu dokumentu, a to i napříč různými systémy.
+### V jakých formátech mohu uložit svůj dokument?
+Aspose.Words podporuje různé formáty včetně PDF, DOCX, HTML a dalších.

@@ -9,13 +9,13 @@ url: /fr/net/working-with-vba-macros/modify-vba-macros/
 ---
 ## Introduction
 
-Bonjour, chers codeurs et passionnés d’automatisation de documents ! Êtes-vous prêt à faire passer votre jeu de documents Word au niveau supérieur ? Aujourd'hui, nous plongeons dans le monde fascinant des macros VBA (Visual Basic for Applications) dans les documents Word. Plus précisément, nous explorerons comment modifier les macros VBA existantes à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite l'automatisation des tâches, la personnalisation des documents et même la modification de ces macros embêtantes. Que vous cherchiez à mettre à jour vos macros ou que vous soyez simplement curieux de connaître le processus, ce didacticiel est là pour vous. Alors, commençons!
+Bonjour, chers codeurs et passionnés d’automatisation de documents ! Êtes-vous prêt à faire passer votre jeu de documents Word au niveau supérieur ? Aujourd'hui, nous plongeons dans le monde fascinant des macros VBA (Visual Basic for Applications) dans les documents Word. Plus précisément, nous explorerons comment modifier les macros VBA existantes à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite l'automatisation des tâches, la personnalisation des documents et même la modification de ces macros embêtantes. Que vous cherchiez à mettre à jour vos macros ou que vous soyez simplement curieux de connaître le processus, ce didacticiel est là pour vous. Alors commençons !
 
 ## Conditions préalables
 
 Avant de passer au code, assurons-nous que vous disposez de tout ce dont vous avez besoin :
 
-1.  Bibliothèque Aspose.Words pour .NET : assurez-vous de disposer de la dernière version d'Aspose.Words pour .NET. Tu peux[Télécharger les ici](https://releases.aspose.com/words/net/).
+1.  Bibliothèque Aspose.Words pour .NET : assurez-vous de disposer de la dernière version d'Aspose.Words pour .NET. Tu peux[téléchargez-le ici](https://releases.aspose.com/words/net/).
 2. Environnement de développement : un environnement de développement .NET tel que Visual Studio est essentiel pour écrire et tester votre code.
 3. Connaissances de base de C# : Une compréhension de base de C# vous aidera à suivre les extraits de code.
 4.  Exemple de document Word : ayez un[Document Word](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) avec les macros VBA existantes prêtes. Ce sera notre sujet de test pour modifier les macros.
@@ -108,9 +108,9 @@ Cette ligne enregistre le document avec la macro VBA modifiée sous le nom « Wo
 
 ## Conclusion
 
-Et voila! Vous avez modifié avec succès des macros VBA dans un document Word à l'aide d'Aspose.Words pour .NET. Ce didacticiel couvre tout, depuis le chargement de votre document et l'accès au projet VBA jusqu'à la modification du code de la macro et l'enregistrement du document modifié. Avec Aspose.Words, vous pouvez facilement automatiser des tâches, personnaliser vos documents et même jouer avec les macros VBA en fonction de vos besoins.
+Et voilà ! Vous avez modifié avec succès des macros VBA dans un document Word à l'aide d'Aspose.Words pour .NET. Ce didacticiel couvre tout, depuis le chargement de votre document et l'accès au projet VBA jusqu'à la modification du code de la macro et l'enregistrement du document modifié. Avec Aspose.Words, vous pouvez facilement automatiser des tâches, personnaliser vos documents et même jouer avec les macros VBA en fonction de vos besoins.
 
- Si vous avez envie d'explorer davantage, le[Documentation API](https://reference.aspose.com/words/net/) est une ressource fantastique. Et si jamais vous rencontrez un problème, le[forum d'entraide](https://forum.aspose.com/c/words/8) est toujours là pour vous aider.
+ Si vous avez envie d'explorer davantage, le[Documentation API](https://reference.aspose.com/words/net/) est une ressource fantastique. Et si jamais vous rencontrez un problème, le[forum d'assistance](https://forum.aspose.com/c/words/8) est toujours là pour vous aider.
 
 Bon codage, et n'oubliez pas qu'il n'y a aucune limite lorsqu'il s'agit d'automatiser vos documents Word !
 

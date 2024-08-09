@@ -89,7 +89,7 @@ No, la función Posicionamiento de texto adicional es específica de las convers
  Sí, puedes obtener un[licencia temporal](https://purchase.aspose.com/temporary-license/) o comprar una licencia completa[aquí](https://purchase.aspose.com/buy).
 
 ### ¿Hay una prueba gratuita disponible?
- Sí, puedes descargar un[prueba gratis](https://releases.aspose.com/) de Aspose.Words para .NET.
+ Sí, puedes descargar un[prueba gratuita](https://releases.aspose.com/) de Aspose.Words para .NET.
 
 ### ¿Dónde puedo encontrar más documentación sobre Aspose.Words para .NET?
  La documentación detallada está disponible en el[Aspose sitio web](https://reference.aspose.com/words/net/).

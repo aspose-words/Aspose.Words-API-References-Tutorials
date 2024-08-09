@@ -110,7 +110,7 @@ Cette étape enregistre votre document avec la mise en forme appliquée. Vous po
 
 ## Conclusion
 
-Et voila! En suivant ces étapes, vous avez appliqué avec succès une bordure de contour à un tableau dans un document Word à l'aide d'Aspose.Words pour .NET. Ce didacticiel couvrait le chargement du document, l'accès au tableau, son alignement, la suppression des bordures existantes, l'application de nouvelles bordures, l'ajout d'un ombrage de cellule et enfin l'enregistrement du document. 
+Et voilà ! En suivant ces étapes, vous avez appliqué avec succès une bordure de contour à un tableau dans un document Word à l'aide d'Aspose.Words pour .NET. Ce didacticiel couvrait le chargement du document, l'accès au tableau, son alignement, la suppression des bordures existantes, l'application de nouvelles bordures, l'ajout d'un ombrage de cellule et enfin l'enregistrement du document. 
 
 Grâce à ces compétences, vous pouvez améliorer la présentation visuelle de vos tableaux, rendant vos documents plus professionnels et attrayants. Bon codage !
 

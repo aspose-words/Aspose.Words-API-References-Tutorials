@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/working-with-section/copy-section/
 ---
 
-## Úvod
+## Zavedení
 
 Ahoj, příznivci Wordu! 📄 Stalo se vám někdy, že jste potřebovali zkopírovat část z jednoho dokumentu Wordu do druhého, ale uvízli jste v neustálém ručním úsilí? No, už se nebojte! S Aspose.Words pro .NET můžete tento úkol snadno automatizovat. Tato příručka vás krok za krokem provede procesem kopírování oddílů mezi dokumenty a zajistí, že můžete zjednodušit pracovní postup správy dokumentů. Jste připraveni se ponořit? Začněme!
 
@@ -16,7 +16,7 @@ Ahoj, příznivci Wordu! 📄 Stalo se vám někdy, že jste potřebovali zkopí
 
 Než se pustíme do hrubky, ujistěte se, že máte následující nastavení:
 
-1.  Aspose.Words for .NET Library: Stáhněte si nejnovější verzi[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Stáhněte si nejnovější verzi[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: IDE kompatibilní s .NET jako Visual Studio.
 3. Základní znalost C#: Znalost C# vám pomůže pokračovat.
 4. Ukázkové dokumenty Word: Pro tento výukový program použijeme dva ukázkové dokumenty.
@@ -37,7 +37,7 @@ Pojďme si příklad rozebrat do podrobného průvodce krok za krokem. Každý k
 
 Než se ponoříte do kódu, ujistěte se, že máte nainstalovanou knihovnu Aspose.Words a dva vzorové dokumenty Wordu.
 
-1.  Stáhněte a nainstalujte Aspose.Words: Get it[tady](https://releases.aspose.com/words/net/).
+1.  Stáhněte a nainstalujte Aspose.Words: Get it[zde](https://releases.aspose.com/words/net/).
 2. Nastavení projektu: Otevřete Visual Studio a vytvořte nový projekt .NET.
 3. Přidat referenci Aspose.Words: Zahrňte do projektu knihovnu Aspose.Words.
 
@@ -109,8 +109,8 @@ Ano, Aspose.Words podporuje různé formáty Wordu, včetně DOC, DOCX, RTF a da
 
 ### Kde najdu další zdroje na Aspose.Words?
 
- Pro více informací můžete navštívit[Aspose.Words API dokumentace](https://reference.aspose.com/words/net/) nebo[Fórum podpory](https://forum.aspose.com/c/words/8) za pomoc a diskusi.
+ Pro více informací můžete navštívit[Aspose.Words API dokumentace](https://reference.aspose.com/words/net/) nebo[fórum podpory](https://forum.aspose.com/c/words/8) za pomoc a diskusi.
 
 ### Mohu vyzkoušet Aspose.Words pro .NET zdarma?
 
- Ano, můžete si stáhnout bezplatnou zkušební verzi[tady](https://releases.aspose.com/).
+ Ano, můžete si stáhnout bezplatnou zkušební verzi[zde](https://releases.aspose.com/).

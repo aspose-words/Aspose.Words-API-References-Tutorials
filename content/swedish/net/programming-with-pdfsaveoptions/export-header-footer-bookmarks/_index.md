@@ -72,7 +72,7 @@ Och där har du det! Genom att följa dessa steg kan du enkelt exportera bokmär
 
 ### Kan jag exportera alla bokmärken från Word-dokumentet till PDF?
 
- Jo det kan du. I den`PdfSaveOptions`, kan du justera inställningarna för att inkludera alla bokmärken om det behövs.
+ Ja, det kan du. I den`PdfSaveOptions`, kan du justera inställningarna för att inkludera alla bokmärken om det behövs.
 
 ### Vad händer om jag också vill exportera bokmärken från dokumentets brödtext?
 

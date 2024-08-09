@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-charts/insert-area-chart/
 ---
-## introduzione
+## Introduzione
 
 Benvenuti in questa guida passo passo su come inserire un grafico ad area in un documento Word utilizzando Aspose.Words per .NET. Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato, questo tutorial ti guiderà attraverso tutto ciò che devi sapere per creare grafici ad area straordinari e informativi nei tuoi documenti Word. Tratteremo i prerequisiti, ti mostreremo come importare gli spazi dei nomi necessari e ti guideremo attraverso ogni fase del processo con istruzioni chiare e facili da seguire.
 

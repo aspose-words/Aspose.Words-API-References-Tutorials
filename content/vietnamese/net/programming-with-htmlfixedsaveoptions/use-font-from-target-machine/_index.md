@@ -9,7 +9,7 @@ url: /vi/net/programming-with-htmlfixedsaveoptions/use-font-from-target-machine/
 ---
 ## Giới thiệu
 
-Bạn đã sẵn sàng bước vào thế giới hấp dẫn của Aspose.Words dành cho .NET chưa? Hãy thắt dây an toàn vì chúng tôi sắp đưa bạn vào cuộc hành trình xuyên qua thế giới huyền diệu của phông chữ. Hôm nay, chúng tôi tập trung vào cách sử dụng phông chữ từ máy mục tiêu khi làm việc với tài liệu Word. Tính năng tiện lợi này đảm bảo rằng tài liệu của bạn trông chính xác như bạn dự định, bất kể nó được xem ở đâu. Bắt đầu nào!
+Bạn đã sẵn sàng bước vào thế giới hấp dẫn của Aspose.Words dành cho .NET chưa? Hãy thắt dây an toàn vì chúng tôi sắp đưa bạn vào cuộc hành trình xuyên qua thế giới huyền diệu của phông chữ. Hôm nay, chúng tôi tập trung vào cách sử dụng phông chữ từ máy mục tiêu khi làm việc với tài liệu Word. Tính năng tiện lợi này đảm bảo rằng tài liệu của bạn trông chính xác như bạn dự định, bất kể nó được xem ở đâu. Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
@@ -33,7 +33,7 @@ using Aspose.Words.Saving;
 
 ## Bước 1: Tải tài liệu Word
 
- Bước đầu tiên trong hướng dẫn của chúng tôi là tải tài liệu Word. Đây là nơi mà tất cả bắt đầu. Chúng tôi sẽ sử dụng`Document` class từ thư viện Aspose.Words để đạt được điều này.
+ Bước đầu tiên trong hướng dẫn của chúng tôi là tải tài liệu Word. Đây là nơi tất cả bắt đầu. Chúng tôi sẽ sử dụng`Document` class từ thư viện Aspose.Words để đạt được điều này.
 
 ### Bước 1.1: Xác định đường dẫn tài liệu
 
@@ -89,7 +89,7 @@ Cuối cùng nhưng không kém phần quan trọng, việc xác minh kết qu�
 System.Diagnostics.Process.Start(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html");
 ```
 
-Và bạn có nó rồi đấy! Bạn đã sử dụng thành công phông chữ từ máy đích trong tài liệu Word của mình bằng Aspose.Words for .NET.
+Và bạn có nó! Bạn đã sử dụng thành công phông chữ từ máy đích trong tài liệu Word của mình bằng Aspose.Words for .NET.
 
 ## Phần kết luận
 
@@ -104,10 +104,10 @@ Có, Aspose.Words for .NET hỗ trợ nhiều định dạng tài liệu khác n
 Nếu máy mục tiêu không có phông chữ được yêu cầu thì tài liệu có thể không hiển thị như dự định. Việc nhúng phông chữ khi cần thiết luôn là một ý tưởng hay.
 
 ### Làm cách nào để nhúng phông chữ vào tài liệu?
- Việc nhúng phông chữ có thể được thực hiện bằng cách sử dụng`FontSettings` lớp trong Aspose.Words cho .NET. Tham khảo đến[tài liệu](https://reference.aspose.com/words/net/) để biết thêm chi tiết.
+ Việc nhúng phông chữ có thể được thực hiện bằng cách sử dụng`FontSettings` lớp trong Aspose.Words cho .NET. Tham khảo[tài liệu](https://reference.aspose.com/words/net/) để biết thêm chi tiết.
 
 ### Có cách nào để xem trước tài liệu trước khi lưu không?
  Có, bạn có thể sử dụng`DocumentRenderer` class để xem trước tài liệu trước khi lưu. Hãy xem Aspose.Words dành cho .NET[tài liệu](https://reference.aspose.com/words/net/) để biết thêm thông tin.
 
 ### Tôi có thể tùy chỉnh thêm đầu ra HTML không?
- Tuyệt đối! Các`HtmlFixedSaveOptions` lớp cung cấp các thuộc tính khác nhau để tùy chỉnh đầu ra HTML. Khám phá cái[tài liệu](https://reference.aspose.com/words/net/) cho tất cả các tùy chọn có sẵn.
+ Tuyệt đối! các`HtmlFixedSaveOptions` lớp cung cấp các thuộc tính khác nhau để tùy chỉnh đầu ra HTML. Khám phá[tài liệu](https://reference.aspose.com/words/net/) cho tất cả các tùy chọn có sẵn.

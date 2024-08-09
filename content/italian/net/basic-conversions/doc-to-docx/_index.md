@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/basic-conversions/doc-to-docx/
 ---
-## introduzione
+## Introduzione
 
 In questo tutorial esploreremo come convertire i file DOC in formato DOCX utilizzando Aspose.Words per .NET. Aspose.Words è una potente libreria di elaborazione documenti che consente agli sviluppatori di manipolare e convertire i documenti Word a livello di codice.
 
@@ -73,4 +73,4 @@ Sì, Aspose.Words supporta la conversione tra vari formati, inclusi DOC, DOCX, R
  È possibile acquistare una licenza[Qui](https://purchase.aspose.com/buy).
 
 ### Dove posso ottenere supporto per Aspose.Words?
- Per supporto, visitare Aspose.Words[Forum](https://forum.aspose.com/c/words/8).
+ Per supporto, visitare Aspose.Words[foro](https://forum.aspose.com/c/words/8).

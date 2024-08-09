@@ -15,7 +15,7 @@ Entonces, ha decidido sumergirse en Aspose.Words para .NET para crear increíble
 
 Antes de profundizar en el código, hay algunas cosas que necesitará:
 
-1.  Aspose.Words para .NET: asegúrese de tener instalado Aspose.Words para .NET. Si no lo haces, puedes descargarlo.[aquí](https://releases.aspose.com/words/net/).
+1. Aspose.Words para .NET: asegúrese de tener instalado Aspose.Words para .NET. Si no lo haces, puedes descargarlo.[aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: Visual Studio o cualquier otro IDE compatible con .NET.
 3. Conocimientos básicos de C#: debe sentirse cómodo con los conceptos básicos de C# para poder seguirlos fácilmente.
 
@@ -53,7 +53,7 @@ Esta línea de código configura la numeración de su lista. Fácil, ¿verdad?
 
 ## Paso 3: agregar elementos de la lista
 
-A continuación, agreguemos algunos elementos a nuestra lista. Imagina que estás anotando una lista de compras.
+continuación, agreguemos algunos elementos a nuestra lista. Imagina que estás anotando una lista de compras.
 
 ```csharp
 builder.Writeln("Item 1");
@@ -64,7 +64,7 @@ Con estas líneas, estás agregando los dos primeros elementos a tu lista.
 
 ## Paso 4: sangrar la lista
 
-¿Qué sucede si desea agregar subelementos debajo de un artículo? ¡Vamos a hacer eso!
+¿Qué sucede si desea agregar subelementos debajo de un artículo? ¡Hagamos eso!
 
 ```csharp
 builder.ListFormat.ListIndent();
@@ -82,7 +82,7 @@ Crear una lista ordenada en un documento de Word mediante programación puede pa
 ## Preguntas frecuentes
 
 ### ¿Puedo personalizar el estilo de numeración de la lista?  
- Sí, puedes personalizar el estilo de numeración usando el`ListFormat` propiedades. Puede configurar diferentes estilos de numeración como números romanos, letras, etc.
+ Sí, puedes personalizar el estilo de numeración usando el`ListFormat`propiedades. Puede configurar diferentes estilos de numeración como números romanos, letras, etc.
 
 ### ¿Cómo agrego más niveles de sangría?  
  Puedes usar el`ListIndent` método varias veces para crear niveles más profundos de sublistas. Cada llamada a`ListIndent` agrega un nivel de sangría.

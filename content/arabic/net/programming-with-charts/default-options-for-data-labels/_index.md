@@ -122,7 +122,7 @@ doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
 
 ## خاتمة
 
-وهناك لديك! لقد نجحت في إنشاء مستند Word باستخدام مخطط دائري مخصص باستخدام Aspose.Words لـ .NET. تسهل هذه المكتبة القوية أتمتة إنشاء المستندات ومعالجتها، مما يوفر لك الوقت والجهد. سواء كنت تقوم بإنشاء تقارير، أو فواتير، أو أي نوع آخر من المستندات، فإن Aspose.Words يوفر لك كل ما تحتاجه.
+وهنا لديك! لقد نجحت في إنشاء مستند Word باستخدام مخطط دائري مخصص باستخدام Aspose.Words لـ .NET. تسهل هذه المكتبة القوية أتمتة إنشاء المستندات ومعالجتها، مما يوفر لك الوقت والجهد. سواء كنت تقوم بإنشاء تقارير، أو فواتير، أو أي نوع آخر من المستندات، فإن Aspose.Words يوفر لك كل ما تحتاجه.
 
  لا تتردد في استكشاف[وثائق Aspose.Words](https://reference.aspose.com/words/net/) لمزيد من الميزات والأمثلة. ترميز سعيد!
 
@@ -135,10 +135,10 @@ doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
  يمكنك الحصول على الدعم من خلال[منتدى دعم Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### هل يمكنني إضافة أنواع أخرى من الرسوم البيانية؟
- نعم، يدعم Aspose.Words أنواعًا مختلفة من المخططات مثل المخططات الشريطية والخطية والعمودية. افحص ال[توثيق](https://reference.aspose.com/words/net/) لمزيد من التفاصيل.
+ نعم، يدعم Aspose.Words أنواعًا مختلفة من المخططات مثل المخططات الشريطية والخطية والعمودية. تحقق من[الوثائق](https://reference.aspose.com/words/net/) لمزيد من التفاصيل.
 
 ### هل Aspose.Words متوافق مع .NET Core؟
- نعم، Aspose.Words متوافق مع .NET Core. يمكنك العثور على مزيد من المعلومات في[توثيق](https://reference.aspose.com/words/net/).
+ نعم، Aspose.Words متوافق مع .NET Core. يمكنك العثور على مزيد من المعلومات في[الوثائق](https://reference.aspose.com/words/net/).
 
 ### كيف يمكنني شراء ترخيص لـ Aspose.Words؟
  يمكنك شراء ترخيص من[متجر أسبوز](https://purchase.aspose.com/buy).

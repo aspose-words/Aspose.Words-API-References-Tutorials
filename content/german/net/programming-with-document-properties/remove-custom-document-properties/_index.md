@@ -15,7 +15,7 @@ Haben Sie sich schon einmal im Netz der benutzerdefinierten Dokumenteigenschafte
 
 Bevor wir uns in den Code stürzen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
 
-1.  Aspose.Words für .NET-Bibliothek: Sie können[hier herunterladen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET-Bibliothek: Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. .NET Framework: Stellen Sie sicher, dass .NET Framework auf Ihrem Computer installiert ist.
 3. Grundkenntnisse in C#: Kenntnisse in der C#-Programmierung sind hilfreich.
 
@@ -104,7 +104,7 @@ Aspose.Words für .NET ist speziell für .NET-Anwendungen konzipiert. Aspose bie
  Du kannst[Kostenlose Testversion herunterladen](https://releases.aspose.com/) von der Aspose-Website.
 
 ### 4. Wo finde ich weitere Tutorials zu Aspose.Words für .NET?
- Besuche die[Dokumentation](https://reference.aspose.com/words/net/) für weitere Tutorials und Beispiele.
+ Schauen Sie sich die[Dokumentation](https://reference.aspose.com/words/net/) für weitere Tutorials und Beispiele.
 
 ### 5. Wie kann ich eine Lizenz für Aspose.Words für .NET erwerben?
  Du kannst[eine Lizenz kaufen](https://purchase.aspose.com/buy) direkt von der Aspose-Website.

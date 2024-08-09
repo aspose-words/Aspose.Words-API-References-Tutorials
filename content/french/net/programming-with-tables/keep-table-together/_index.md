@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 
 ## Conclusion
 
-Et voila! Avec seulement quelques lignes de code, vous pouvez empêcher vos tableaux de se diviser sur plusieurs pages de vos documents Word. Cette solution simple mais efficace garantit que vos tableaux restent soignés et professionnels, améliorant ainsi la lisibilité de vos documents. Aspose.Words for .NET facilite la gestion de ces problèmes de formatage, vous permettant de vous concentrer sur la création d'un contenu de qualité.
+Et voilà ! Avec seulement quelques lignes de code, vous pouvez empêcher vos tableaux de se diviser sur plusieurs pages de vos documents Word. Cette solution simple mais efficace garantit que vos tableaux restent soignés et professionnels, améliorant ainsi la lisibilité de vos documents. Aspose.Words for .NET facilite la gestion de ces problèmes de formatage, vous permettant de vous concentrer sur la création d'un contenu de qualité.
 
 ## FAQ
 

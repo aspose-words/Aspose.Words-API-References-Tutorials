@@ -29,7 +29,7 @@ Cuando se trabaja en documentos de forma colaborativa, es fundamental realizar u
 
 ## Cargando versiones de documentos
 
-Para comparar versiones de documentos, debe cargar los archivos en la memoria. Así es cómo:
+Para comparar versiones de documentos, debe cargar los archivos en la memoria. He aquí cómo:
 
 ```python
 doc1_path = "path/to/first/document.docx"

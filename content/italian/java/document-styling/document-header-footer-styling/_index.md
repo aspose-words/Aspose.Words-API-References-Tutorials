@@ -10,7 +10,7 @@ url: /it/java/document-styling/document-header-footer-styling/
 Stai cercando di migliorare le tue capacità di formattazione dei documenti con Java? In questa guida completa, ti guideremo attraverso il processo di styling delle intestazioni e dei piè di pagina dei documenti utilizzando Aspose.Words per Java. Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato il tuo viaggio, le nostre istruzioni dettagliate e gli esempi di codice sorgente ti aiuteranno a padroneggiare questo aspetto cruciale dell'elaborazione dei documenti.
 
 
-## introduzione
+## Introduzione
 
 La formattazione dei documenti gioca un ruolo fondamentale nella creazione di documenti dall'aspetto professionale. Intestazioni e piè di pagina sono componenti essenziali che forniscono contesto e struttura ai tuoi contenuti. Con Aspose.Words per Java, una potente API per la manipolazione dei documenti, puoi personalizzare facilmente intestazioni e piè di pagina per soddisfare le tue esigenze specifiche.
 
@@ -111,7 +111,7 @@ header.getFirstParagraph().getParagraphFormat().setAlignment(ParagraphAlignment.
 
 ### Posso aggiungere campi personalizzati, come titoli di documenti, alle intestazioni o ai piè di pagina?
 
-Sì, puoi aggiungere campi personalizzati alle intestazioni o ai piè di pagina. Creare un`Run` elemento e inserirlo nel contenuto dell'intestazione o del piè di pagina, fornendo il testo desiderato. Personalizza la formattazione secondo necessità.
+Sì, puoi aggiungere campi personalizzati alle intestazioni o ai piè di pagina. Crea un`Run` elemento e inserirlo nel contenuto dell'intestazione o del piè di pagina, fornendo il testo desiderato. Personalizza la formattazione secondo necessità.
 
 ### Aspose.Words per Java è compatibile con diversi formati di documenti?
 

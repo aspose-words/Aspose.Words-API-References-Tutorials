@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/compare-documents/compare-for-equal/
 ---
-## Úvod
+## Zavedení
 
 Při práci s dokumenty aplikace Word může být zásadním úkolem zajistit, aby dva dokumenty byly totožné. Ať už porovnáváte různé verze smlouvy, kontrolujete neoprávněné změny nebo ověřujete integritu dokumentů, automatický způsob porovnávání dokumentů může ušetřit značný čas a úsilí. Aspose.Words for .NET nabízí robustní řešení pro porovnání dokumentů aplikace Word a identifikaci jakýchkoli rozdílů. V tomto článku vás provedeme procesem porovnání dvou dokumentů Wordu pro dosažení rovnosti pomocí Aspose.Words for .NET. 
 

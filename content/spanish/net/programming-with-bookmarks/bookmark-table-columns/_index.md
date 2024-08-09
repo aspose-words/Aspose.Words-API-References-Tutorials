@@ -121,7 +121,7 @@ Aspose.Words para .NET es una poderosa biblioteca para trabajar con documentos d
 Sí, Aspose.Words para .NET se puede utilizar con cualquier lenguaje compatible con .NET, incluidos C#, VB.NET y F#.
 
 ### ¿Cómo puedo obtener soporte para Aspose.Words para .NET?
- Puede obtener apoyo de la comunidad de Aspose y de expertos visitando el[Foro de soporte](https://forum.aspose.com/c/words/8).
+ Puede obtener apoyo de la comunidad de Aspose y de expertos visitando el[foro de soporte](https://forum.aspose.com/c/words/8).
 
 ### ¿Existe una versión de prueba de Aspose.Words para .NET disponible?
  Sí, puedes obtener una prueba gratuita desde[aquí](https://releases.aspose.com/).

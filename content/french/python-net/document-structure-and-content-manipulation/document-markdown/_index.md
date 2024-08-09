@@ -16,7 +16,7 @@ Aspose.Words for Python est une bibliothèque polyvalente qui permet aux dévelo
 
 ## Configuration de votre environnement
 
-Avant de plonger dans le code, assurons-nous que notre environnement est correctement configuré. Suivez ces étapes:
+Avant de plonger dans le code, assurons-nous que notre environnement est correctement configuré. Suivez ces étapes :
 
 1. Installez Python sur votre système.
 2. Installez la bibliothèque Aspose.Words pour Python à l'aide de pip :
@@ -62,7 +62,7 @@ markdown_with_image = "![Alt Text](image.png)"
 builder.insert_html(markdown_with_image)
 ```
 
-## Gestion des tables et des listes
+## Gestion des tableaux et des listes
 
 Les tableaux et les listes sont des éléments essentiels de nombreux documents. Markdown simplifie leur création :
 

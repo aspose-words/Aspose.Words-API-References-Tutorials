@@ -97,7 +97,7 @@ firstCell.CellFormat.Shading.ForegroundPatternColor = Color.LightGreen;
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesindeki hücre formatını başarıyla değiştirdik. Belgenin yüklenmesinden gölgelendirmenin uygulanmasına kadar her adım, belgenizin tam istediğiniz gibi görünmesi açısından çok önemlidir. Unutmayın, bunlar hücre biçimlendirmeyle yapabileceklerinize yalnızca birkaç örnektir. Aspose.Words for .NET keşfedilecek çok sayıda başka özellik sunar.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesindeki hücre formatını başarıyla değiştirdik. Belgenin yüklenmesinden gölgelendirmenin uygulanmasına kadar her adım, belgenizin tam istediğiniz gibi görünmesi açısından çok önemlidir. Unutmayın, bunlar hücre biçimlendirmeyle yapabileceklerinize yalnızca birkaç örnektir. Aspose.Words for .NET keşfedilecek çok sayıda başka özellik sunar.
 
 ## SSS
 
@@ -105,7 +105,7 @@ firstCell.CellFormat.Shading.ForegroundPatternColor = Color.LightGreen;
 Evet, tablonuzdaki hücreler arasında geçiş yapabilir ve her birine aynı formatı uygulayabilirsiniz.
 
 ### Değiştirilen belgeyi nasıl kaydederim?
- Kullan`doc.Save("output.docx")` Değişikliklerinizi kaydetme yöntemi.
+ Kullanın`doc.Save("output.docx")` Değişikliklerinizi kaydetme yöntemi.
 
 ### Farklı hücrelere farklı tonlar uygulamak mümkün mü?
 Kesinlikle! Sadece her hücreye ayrı ayrı erişin ve gölgelendirmesini ayarlayın.

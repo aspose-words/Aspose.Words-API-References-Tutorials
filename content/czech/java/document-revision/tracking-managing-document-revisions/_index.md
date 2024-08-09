@@ -8,7 +8,7 @@ weight: 10
 url: /cs/java/document-revision/tracking-managing-document-revisions/
 ---
 
-## Úvod
+## Zavedení
 
 dnešním digitálním světě je efektivní správa dokumentů zásadní pro firmy i jednotlivce. Zajištění správného sledování a správy vašich dokumentů může ušetřit čas, omezit chyby a zlepšit spolupráci. V tomto komplexním průvodci prozkoumáme, jak sledovat a spravovat revize dokumentů pomocí Aspose.Words for Java. Toto výkonné Java API nabízí širokou škálu funkcí, díky kterým je správa revizí dokumentů hračkou. Ať už jste zkušený vývojář nebo teprve začínáte, tento podrobný průvodce s příklady zdrojového kódu vám pomůže zvládnout umění sledování a správy revizí dokumentů.
 

@@ -20,7 +20,7 @@ Ennek a dokumentumformátum-kezelési útnak a megkezdéséhez először állít
 
 ### Az Aspose.Words for Java telepítése
 
-Az Aspose.Words for Java használatához hozzá kell adnia az Aspose.Words JAR fájlt a projekthez. Kovesd ezeket a lepeseket:
+Az Aspose.Words for Java használatához hozzá kell adnia az Aspose.Words JAR fájlt a projekthez. Kövesse az alábbi lépéseket:
 
 1.  Az Aspose.Words for Java letöltése: Látogassa meg az Aspose webhelyét[itt](https://releases.aspose.com/words/java/) az Aspose.Words for Java legújabb verziójának beszerzéséhez.
 

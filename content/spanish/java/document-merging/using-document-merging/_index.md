@@ -2,7 +2,7 @@
 title: Usar la combinación de documentos
 linktitle: Usar la combinación de documentos
 second_title: API de procesamiento de documentos Java Aspose.Words
-description: Aprenda a fusionar documentos de Word sin problemas utilizando Aspose.Words para Java. Combine, formatee y maneje conflictos de manera eficiente en solo unos pocos pasos. ¡Empieza ahora!
+description: Aprenda a fusionar documentos de Word sin problemas utilizando Aspose.Words para Java. Combine, formatee y maneje conflictos de manera eficiente en solo unos pocos pasos. ¡Empiece ahora!
 type: docs
 weight: 10
 url: /es/java/document-merging/using-document-merging/
@@ -165,7 +165,7 @@ public class DocumentMerger {
 }
 ```
 
- Mediante el uso`ImportFormatMode.KEEP_DIFFERENT_STYLES`, Aspose.Words conserva estilos que son diferentes entre los documentos de origen y de destino, resolviendo los conflictos con elegancia.
+ Al usar`ImportFormatMode.KEEP_DIFFERENT_STYLES`, Aspose.Words conserva estilos que son diferentes entre los documentos de origen y de destino, resolviendo los conflictos con elegancia.
 
 ## 9. Mejores prácticas para la fusión de documentos
 

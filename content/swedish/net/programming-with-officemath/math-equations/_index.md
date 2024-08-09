@@ -9,11 +9,11 @@ url: /sv/net/programming-with-officemath/math-equations/
 ---
 ## Introduktion
 
-Är du redo att dyka in i världen av matematiska ekvationer i Word-dokument? Idag ska vi utforska hur du kan använda Aspose.Words för .NET för att skapa och konfigurera matematiska ekvationer i dina Word-filer. Oavsett om du är student, lärare eller bara någon som älskar att arbeta med ekvationer, kommer den här guiden att leda dig genom varje steg. Vi delar upp det i avsnitt som är lätta att följa, så att du förstår varje del innan du går vidare. Låt oss börja!
+Är du redo att dyka in i världen av matematiska ekvationer i Word-dokument? Idag ska vi utforska hur du kan använda Aspose.Words för .NET för att skapa och konfigurera matematiska ekvationer i dina Word-filer. Oavsett om du är student, lärare eller bara någon som älskar att arbeta med ekvationer, kommer den här guiden att leda dig genom varje steg. Vi delar upp det i avsnitt som är lätta att följa, så att du förstår varje del innan du går vidare. Låt oss komma igång!
 
 ## Förutsättningar
 
-Innan vi hoppar in i de nitty-gritty detaljerna, låt oss se till att du har allt du behöver följa tillsammans med den här handledningen:
+Innan vi hoppar in i de små detaljerna, låt oss se till att du har allt du behöver följa tillsammans med den här handledningen:
 
 1.  Aspose.Words för .NET: Du måste ha Aspose.Words för .NET installerat. Om du inte har det än så kan du[ladda ner den här](https://releases.aspose.com/words/net/).
 2. Visual Studio: Alla versioner av Visual Studio kommer att fungera, men se till att den är installerad och redo att användas.
@@ -77,7 +77,7 @@ Slutligen, efter att ha konfigurerat ekvationen, måste vi spara dokumentet. Det
 doc.Save(dataDir + "WorkingWithOfficeMath.MathEquations.docx");
 ```
 
- Byta ut`"WorkingWithOfficeMath.MathEquations.docx"`med önskat filnamn. Denna kodrad sparar dokumentet och du är klar!
+ Ersätta`"WorkingWithOfficeMath.MathEquations.docx"`med önskat filnamn. Denna kodrad sparar dokumentet och du är klar!
 
 ## Slutsats
 

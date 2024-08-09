@@ -15,7 +15,7 @@ Pernah bertanya-tanya bagaimana cara menyimpan dokumen Word sebagai gambar hitam
 
 Sebelum kita mengotori tangan kita, ada beberapa hal yang perlu Anda siapkan:
 
--  Aspose.Words untuk .NET: Pastikan Anda telah menginstal perpustakaan. Kamu bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+-  Aspose.Words untuk .NET: Pastikan Anda telah menginstal perpustakaan. Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 - Lingkungan Pengembangan .NET: Visual Studio adalah pilihan yang bagus, tetapi Anda dapat menggunakan lingkungan apa pun yang Anda sukai.
 - Pengetahuan Dasar tentang C#: Jangan khawatir, kami akan membuatnya tetap sederhana, namun sedikit pemahaman tentang C# akan membantu.
 - Dokumen Word: Siapkan contoh dokumen Word untuk dikonversi.
@@ -48,7 +48,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Langkah 3: Konfigurasikan Opsi Penyimpanan Gambar
 
- Selanjutnya, kita perlu menyiapkan`ImageSaveOptions`Ini adalah dimana keajaiban terjadi. Kami akan mengkonfigurasinya untuk menyimpan gambar dalam format PNG dengan mode warna terindeks 1Bpp.
+ Selanjutnya, kita perlu menyiapkan`ImageSaveOptions`Di sinilah keajaiban terjadi. Kami akan mengkonfigurasinya untuk menyimpan gambar dalam format PNG dengan mode warna terindeks 1Bpp.
 
 ```csharp
 ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.Png)
@@ -82,13 +82,13 @@ Dan itu dia! Hanya dengan beberapa baris kode, Anda telah mengubah dokumen Word 
 Gambar berindeks 1Bpp (1 Bit Per Piksel) adalah format gambar hitam putih yang setiap pikselnya diwakili oleh satu bit, baik 0 atau 1. Format ini sangat hemat ruang.
 
 ### Bisakah saya mengonversi beberapa halaman dokumen Word sekaligus?
- Ya kamu bisa. Ubah`PageSet` properti di`ImageSaveOptions` untuk menyertakan beberapa halaman atau keseluruhan dokumen.
+ Ya, kamu bisa. Ubah`PageSet` properti di`ImageSaveOptions` untuk menyertakan beberapa halaman atau seluruh dokumen.
 
 ### Apakah saya memerlukan lisensi untuk menggunakan Aspose.Words untuk .NET?
  Ya, Aspose.Words untuk .NET memerlukan lisensi untuk fungsionalitas penuh. Anda bisa mendapatkan[izin sementara di sini](https://purchase.aspose.com/temporary-license/).
 
 ### Format gambar apa lagi yang dapat saya konversi ke dokumen Word saya?
- Aspose.Words mendukung berbagai format gambar termasuk JPEG, BMP, dan TIFF. Cukup ubah`SaveFormat` dalam`ImageSaveOptions`.
+ Aspose.Words mendukung berbagai format gambar termasuk JPEG, BMP, dan TIFF. Cukup ubah`SaveFormat` di`ImageSaveOptions`.
 
 ### Di mana saya dapat menemukan dokumentasi lebih lanjut tentang Aspose.Words untuk .NET?
  Anda dapat menemukan dokumentasi terperinci di[Halaman dokumentasi Aspose.Words untuk .NET](https://reference.aspose.com/words/net/).

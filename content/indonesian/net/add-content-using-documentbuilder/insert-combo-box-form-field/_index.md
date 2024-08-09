@@ -13,7 +13,7 @@ Hai! Apakah Anda siap terjun ke dunia otomatisasi dokumen? Baik Anda seorang pen
 
 ## Prasyarat
 
-Sebelum kita masuk ke detail seluk beluknya, pastikan Anda memiliki semua yang Anda butuhkan. Berikut daftar periksa singkat untuk membuat Anda bersiap dan siap:
+Sebelum kita masuk ke detail seluk beluknya, pastikan Anda memiliki semua yang Anda butuhkan. Berikut daftar periksa singkat untuk membuat Anda bersiap dan bersiap:
 
 1.  Aspose.Words untuk .NET: Pertama dan terpenting, Anda memerlukan perpustakaan Aspose.Words untuk .NET. Jika Anda belum mengunduhnya, Anda dapat mengambilnya dari[Asumsikan halaman Unduhan](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Pastikan Anda memiliki lingkungan pengembangan yang diatur dengan Visual Studio atau IDE lain yang mendukung .NET.

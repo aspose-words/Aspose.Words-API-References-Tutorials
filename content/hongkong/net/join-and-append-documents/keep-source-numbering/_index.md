@@ -78,7 +78,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
 ## 常見問題解答
 
 ### 我可以匯入不同格式的文件嗎？
-是的`NodeImporter`類別支援匯入具有不同格式樣式的文件。
+是的，`NodeImporter`類別支援匯入具有不同格式樣式的文件。
 
 ### 如果我的文件包含複雜的表格和圖像怎麼辦？
 Aspose.Words for .NET 在導入作業期間處理複雜的結構，例如表格和圖像。

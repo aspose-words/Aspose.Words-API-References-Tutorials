@@ -9,7 +9,7 @@ url: /es/net/programming-with-htmlsaveoptions/export-text-input-form-field-as-te
 ---
 ## Introducción
 
-Entonces, ¿te estás sumergiendo en el mundo de Aspose.Words para .NET? Impresionante elección! Si buscas aprender cómo exportar un campo de formulario de entrada de texto como texto, estás en el lugar correcto. Ya sea que recién esté comenzando o mejorando sus habilidades, esta guía lo guiará a través de todo lo que necesita saber. Empecemos, ¿de acuerdo?
+Entonces, ¿te estás sumergiendo en el mundo de Aspose.Words para .NET? Impresionante elección! Si buscas aprender cómo exportar un campo de formulario de entrada de texto como texto, estás en el lugar correcto. Ya sea que recién esté comenzando o repasando sus habilidades, esta guía lo guiará a través de todo lo que necesita saber. Empecemos, ¿de acuerdo?
 
 ## Requisitos previos
 
@@ -41,7 +41,7 @@ Antes de entrar en el código, asegurémonos de que nuestro proyecto esté confi
 
 1. Abra Visual Studio: comience abriendo Visual Studio o su entorno de desarrollo C# preferido.
 2.  Crear un nuevo proyecto: navegue hasta`File > New > Project` . Seleccionar`Console App (.NET Core)` o cualquier otro tipo de proyecto relevante.
-3.  Nombra tu proyecto: dale a tu proyecto un nombre significativo, algo como`AsposeWordsExportExample`.
+3.  Nombra tu proyecto: dale a tu proyecto un nombre significativo, algo así como`AsposeWordsExportExample`.
 
 ## Añadiendo Aspose.Words
 
@@ -124,7 +124,7 @@ doc.Save(dataDir + "ExportedDocument.html", saveOptions);
 
 ### ¿Puedo personalizar el HTML exportado?
 
- ¡Absolutamente! Aspose.Words proporciona varias opciones para personalizar la salida HTML. Referirse a[documentación](https://reference.aspose.com/words/net/) para más detalles.
+ ¡Absolutamente! Aspose.Words proporciona varias opciones para personalizar la salida HTML. Consulte el[documentación](https://reference.aspose.com/words/net/) para más detalles.
 
 ### ¿Aspose.Words es compatible con .NET Core?
 

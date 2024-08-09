@@ -44,7 +44,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- यह कोड स्निपेट एक नया दस्तावेज़ सेट करता है और तैयार करता है`DocumentBuilder` कार्रवाई के लिए।
+ यह कोड स्निपेट एक नया दस्तावेज़ सेट करता है और तैयार करता है`DocumentBuilder` कार्रवाई के लिए.
 
 ## चरण 2: पहला सेल सम्मिलित करना
 

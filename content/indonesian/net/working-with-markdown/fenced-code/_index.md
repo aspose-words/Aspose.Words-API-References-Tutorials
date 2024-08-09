@@ -2,79 +2,110 @@
 title: Kode Berpagar
 linktitle: Kode Berpagar
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menggunakan fitur kode berpagar dengan Aspose.Words untuk .NET Panduan langkah demi langkah.
+description: Pelajari cara menambahkan kode berpagar dan string info ke dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah disertakan. Tingkatkan keterampilan pemformatan dokumen Anda.
 type: docs
 weight: 10
 url: /id/net/working-with-markdown/fenced-code/
 ---
+## Perkenalan
 
-Dalam contoh ini, kami akan memandu Anda tentang cara menggunakan fitur kode berpagar dengan Aspose.Words untuk .NET. kode berpagar digunakan untuk mewakili blok kode dengan format tertentu.
+Hai, rekan pembuat kode! Hari ini, kita menyelami dunia Aspose.Words untuk .NET untuk menguasai seni menambahkan kode berpagar dan kode berpagar dengan string info ke dokumen Word Anda. Bayangkan dokumen Word Anda sebagai kanvas, dan Anda, sang seniman, akan melukis dengan ketelitian seperti seorang pengembang berpengalaman. Dengan Aspose.Words, Anda mendapatkan kemampuan untuk menyempurnakan dokumen Anda secara terprogram dengan blok kode yang terstruktur dan terformat, membuat dokumen teknis Anda bersinar dengan profesionalisme dan kejelasan.
 
-## Langkah 1: Menggunakan pembuat dokumen
+## Prasyarat
 
-Pertama, kita akan menggunakan pembuat dokumen untuk menambahkan konten ke dokumen kita.
+Sebelum kita masuk ke tutorial, pastikan Anda memiliki semua yang Anda butuhkan:
+
+- Pengetahuan dasar C#: Pemahaman umum tentang C# akan membantu Anda memahami konsep dengan cepat.
+-  Aspose.Words untuk .NET: Anda harus menginstal Aspose.Words untuk .NET. Jika Anda belum mendapatkannya, ambillah[Di Sini](https://releases.aspose.com/words/net/).
+- Lingkungan Pengembangan: Visual Studio atau IDE C# lainnya yang Anda sukai.
+
+## Impor Namespace
+
+Hal pertama yang pertama, Anda perlu mengimpor namespace yang diperlukan. Ini seperti mengumpulkan semua alat Anda sebelum memulai sebuah proyek.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Style;
+```
+
+Sekarang, mari kita uraikan prosesnya langkah demi langkah.
+
+## Langkah 1: Menyiapkan Proyek Anda
+
+Sebelum kita dapat membuat blok kode yang indah dan terformat di dokumen Word kita, kita perlu menyiapkan proyek baru di Visual Studio.
+
+1. Buat Proyek Baru: Buka Visual Studio dan buat Aplikasi Konsol C# baru.
+2. Tambahkan Referensi Aspose.Words: Instal Aspose.Words melalui NuGet Package Manager. Anda dapat melakukan ini dengan mengklik kanan proyek Anda di Solution Explorer, memilih "Kelola Paket NuGet," dan mencari Aspose.Words.
+
+## Langkah 2: Inisialisasi DocumentBuilder
+
+Sekarang proyek Anda sudah siap, mari kita inisialisasi DocumentBuilder, yang akan menjadi alat utama kita untuk menambahkan konten ke dokumen Word.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Langkah 2: Menambahkan gaya untuk kode berpagar
+## Langkah 3: Buat Gaya untuk Kode Berpagar
 
- Kami akan menambahkan gaya khusus untuk kode berpagar menggunakan`Styles.Add` metode`Document` obyek. Dalam contoh ini, kita membuat gaya yang disebut "FencedCode" untuk kode berpagar.
+Untuk menambahkan kode berpagar, pertama-tama kita perlu membuat gaya. Anggap saja ini sebagai pengaturan tema untuk blok kode kita.
 
 ```csharp
 Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");
-builder.ParagraphFormat.Style = fencedCode;
+fencedCode.Font.Name = "Courier New";
+fencedCode.Font.Size = 10;
+fencedCode.ParagraphFormat.LeftIndent = 20;
+fencedCode.ParagraphFormat.RightIndent = 20;
+fencedCode.ParagraphFormat.Shading.BackgroundPatternColor = Color.LightGray;
 ```
 
-## Langkah 3: Menambahkan kode berpagar tanpa info
+## Langkah 4: Tambahkan Kode Berpagar ke Dokumen
 
-Sekarang kita dapat menambahkan blok kode berpagar tanpa string informasi menggunakan gaya khusus "FencedCode".
+Dengan gaya kita yang siap, sekarang kita dapat menambahkan blok kode berpagar ke dokumen.
 
 ```csharp
-builder.Writeln("This is an fenced code");
+builder.ParagraphFormat.Style = fencedCode;
+builder.Writeln("This is a fenced code block");
 ```
 
-## Langkah 4: Tambahkan kode berpagar dengan string info
+## Langkah 5: Buat Style untuk Kode Berpagar dengan Info String
 
-Kita juga dapat menambahkan blok kode berpagar dengan serangkaian informasi menggunakan gaya khusus lainnya. Dalam contoh ini, kita membuat gaya yang disebut "FencedCode.C#" untuk mewakili blok kode C#.
+Terkadang, Anda mungkin ingin menentukan bahasa pemrograman atau menambahkan informasi tambahan ke blok kode Anda. Mari ciptakan gaya untuk itu.
 
 ```csharp
 Style fencedCodeWithInfo = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode.C#");
-builder.ParagraphFormat.Style = fencedCodeWithInfo;
-builder.Writeln("This is a fenced code with info string");
+fencedCodeWithInfo.Font.Name = "Courier New";
+fencedCodeWithInfo.Font.Size = 10;
+fencedCodeWithInfo.ParagraphFormat.LeftIndent = 20;
+fencedCodeWithInfo.ParagraphFormat.RightIndent = 20;
+fencedCodeWithInfo.ParagraphFormat.Shading.BackgroundPatternColor = Color.LightGray;
 ```
 
-### Contoh kode sumber untuk Kode Berpagar menggunakan Aspose.Words untuk .NET
+## Langkah 6: Tambahkan Kode Berpagar dengan Info String ke Dokumen
+
+Sekarang, mari tambahkan blok kode berpagar dengan string info untuk menunjukkan bahwa itu adalah kode C#.
 
 ```csharp
-// Gunakan pembuat dokumen untuk menambahkan konten ke dokumen.
-DocumentBuilder builder = new DocumentBuilder();
-
-Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");
-builder.ParagraphFormat.Style = fencedCode;
-builder.Writeln("This is an fenced code");
-
-Style fencedCodeWithInfo = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode.C#");
 builder.ParagraphFormat.Style = fencedCodeWithInfo;
-builder.Writeln("This is a fenced code with info string");
+builder.Writeln("This is a fenced code block with info string - C#");
 ```
 
-### FAQ
+## Kesimpulan
 
-#### T: Apa yang dimaksud dengan kode yang dibatasi dalam Markdown?
+Selamat! Anda baru saja menambahkan blok kode berpagar dan kode berpagar dengan string info ke dokumen Word Anda menggunakan Aspose.Words untuk .NET. Ini hanyalah puncak gunung es. Dengan Aspose.Words, Anda dapat mengotomatiskan dan meningkatkan pemrosesan dokumen Anda ke tingkat yang lebih tinggi. Teruslah menjelajah dan selamat coding!
 
-J: Kode yang dibatasi dalam Markdown adalah metode pemformatan yang digunakan untuk menampilkan kode dalam dokumen Markdown. Ini terdiri dari membingkai kode dengan pembatas tertentu.
+## FAQ
 
-#### T: Apa manfaat kode yang dibatasi dalam Markdown?
+### Apa itu Aspose.Words untuk .NET?
+Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang membuat, memanipulasi, dan mengonversi dokumen Word secara terprogram.
 
-J: Kode yang dibatasi dalam Markdown meningkatkan keterbacaan kode dan memudahkan pembaca untuk memahaminya. Ini juga memungkinkan pelestarian penyorotan sintaksis di beberapa editor Markdown.
+### Bisakah saya menggunakan Aspose.Words dengan bahasa pemrograman lain?
+Aspose.Words terutama mendukung bahasa .NET, tetapi ada versi yang tersedia untuk Java, Python, dan bahasa lainnya.
 
-#### T: Apa perbedaan antara kode yang dipisahkan dan yang menjorok ke dalam Markdown?
+### Apakah Aspose.Words gratis untuk digunakan?
+ Aspose.Words adalah produk komersial, tetapi Anda dapat mengunduh uji coba gratis[Di Sini](https://releases.aspose.com/)untuk menjelajahi fitur-fiturnya.
 
-J: Kode yang dibatasi menggunakan pembatas khusus untuk mengapit kode, sedangkan kode yang diindentasi melibatkan indentasi setiap baris kode dengan spasi atau tab.
+### Bagaimana saya bisa mendapatkan dukungan untuk Aspose.Words?
+ Anda bisa mendapatkan dukungan dari komunitas dan pengembang Aspose[Di Sini](https://forum.aspose.com/c/words/8).
 
-#### T: Apakah kode yang dibatasi dalam Markdown didukung oleh semua editor Markdown?
-
-J: Dukungan untuk kode yang dibatasi dalam Markdown mungkin berbeda antar editor Markdown. Periksa dokumentasi spesifik penerbit Anda untuk memastikannya.
-
+### Fitur lain apa yang ditawarkan Aspose.Words?
+Aspose.Words menawarkan berbagai fitur termasuk konversi dokumen, pembuatan dokumen berbasis template, pelaporan, dan banyak lagi.

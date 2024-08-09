@@ -9,7 +9,7 @@ url: /sv/net/programming-with-imagesaveoptions/page-saving-callback/
 ---
 ## Introduktion
 
-Hallå där! Har du någonsin känt behovet av att spara varje sida i ett Word-dokument som separata bilder? Kanske vill du dela upp en stor rapport i lättsmälta bilder, eller så kanske du behöver skapa miniatyrer för en förhandsvisning. Oavsett din anledning, att använda Aspose.Words för .NET gör den här uppgiften till en lek. I den här guiden går vi igenom processen för att ställa in en sidsparande återuppringning för att spara varje sida i ett dokument som en individuell PNG-bild. Låt oss dyka direkt in!
+Hej där! Har du någonsin känt behovet av att spara varje sida i ett Word-dokument som separata bilder? Kanske vill du dela upp en stor rapport i lättsmälta bilder, eller så kanske du behöver skapa miniatyrer för en förhandsvisning. Oavsett din anledning, att använda Aspose.Words för .NET gör den här uppgiften till en lek. I den här guiden går vi igenom processen för att ställa in en sidsparande återuppringning för att spara varje sida i ett dokument som en individuell PNG-bild. Låt oss dyka direkt in!
 
 ## Förutsättningar
 

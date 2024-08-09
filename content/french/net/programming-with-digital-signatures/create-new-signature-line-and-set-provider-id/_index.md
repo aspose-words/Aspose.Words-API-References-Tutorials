@@ -74,7 +74,7 @@ SignatureLine signatureLine = builder.InsertSignatureLine(signatureLineOptions).
 signatureLine.ProviderId = Guid.Parse("CF5A7BB4-8F3C-4756-9DF6-BEF7F13259A2");
 ```
 
- Ici le`InsertSignatureLine` La méthode ajoute la ligne de signature et nous lui attribuons un identifiant de fournisseur unique.
+ Ici, le`InsertSignatureLine` La méthode ajoute la ligne de signature et nous lui attribuons un identifiant de fournisseur unique.
 
 ## Étape 4 : Enregistrez le document
 
@@ -125,7 +125,7 @@ Cela signe le document et l'enregistre en tant que nouveau fichier.
 
 ## Conclusion
 
-Et voila! Vous avez réussi à créer une nouvelle ligne de signature et à définir l'ID du fournisseur dans un document Word à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite incroyablement la gestion et l'automatisation des tâches de traitement des documents. Essayez-le et voyez comment il peut rationaliser votre flux de travail.
+Et voilà ! Vous avez réussi à créer une nouvelle ligne de signature et à définir l'ID du fournisseur dans un document Word à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite incroyablement la gestion et l'automatisation des tâches de traitement des documents. Essayez-le et voyez comment il peut rationaliser votre flux de travail.
 
 ## FAQ
 

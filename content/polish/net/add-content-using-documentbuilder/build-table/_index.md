@@ -9,7 +9,7 @@ url: /pl/net/add-content-using-documentbuilder/build-table/
 ---
 ## Wstęp
 
-No hej! Czy chcesz programowo tworzyć tabele w dokumentach programu Word? Cóż, trafiłeś we właściwe miejsce! Dzisiaj zanurzymy się w magiczny świat Aspose.Words dla .NET. Ta potężna biblioteka pozwala manipulować dokumentami programu Word jak profesjonalista. Wyobraź sobie, że jesteś czarodziejem, a Aspose.Words to Twoja różdżka, która umożliwia tworzenie, edytowanie i formatowanie dokumentów jednym ruchem nadgarstka (a raczej linijką kodu). W tym samouczku skupimy się na tworzeniu tabeli w dokumencie programu Word. Więc chwyć kapelusz programisty i zaczynajmy!
+Hej tam! Czy chcesz programowo tworzyć tabele w dokumentach programu Word? Cóż, trafiłeś we właściwe miejsce! Dzisiaj zanurzymy się w magiczny świat Aspose.Words dla .NET. Ta potężna biblioteka pozwala manipulować dokumentami programu Word jak profesjonalista. Wyobraź sobie, że jesteś czarodziejem, a Aspose.Words to Twoja różdżka, która umożliwia tworzenie, edytowanie i formatowanie dokumentów jednym ruchem nadgarstka (a raczej linijką kodu). W tym samouczku skupimy się na tworzeniu tabeli w dokumencie programu Word. Więc chwyć kapelusz programisty i zaczynajmy!
 
 ## Warunki wstępne
 
@@ -19,7 +19,7 @@ Zanim rozpoczniemy naszą przygodę ze składaniem stołu, upewnijmy się, że u
 - .NET Framework (4.0 lub nowszy)
 - Aspose.Words dla biblioteki .NET
 
- Jeśli nie masz jeszcze Aspose.Words, możesz to łatwo zrobić[Pobierz to tutaj](https://releases.aspose.com/words/net/) . Możesz także zacząć od a[bezpłatna wersja próbna](https://releases.aspose.com/) jeśli chcesz przetestować wody. Dla tych, którzy są gotowi zaryzykować, możesz to zrobić[kupić licencję](https://purchase.aspose.com/buy) lub jeśli potrzebujesz więcej czasu na ocenę, weź plik[licencja tymczasowa](https://purchase.aspose.com/temporary-license/).
+ Jeśli nie masz jeszcze Aspose.Words, możesz to łatwo zrobić[pobierz go tutaj](https://releases.aspose.com/words/net/) . Możesz także zacząć od a[bezpłatna wersja próbna](https://releases.aspose.com/) jeśli chcesz przetestować wody. Dla tych, którzy są gotowi zaryzykować, możesz to zrobić[kupić licencję](https://purchase.aspose.com/buy) lub jeśli potrzebujesz więcej czasu na ocenę, weź plik[licencja tymczasowa](https://purchase.aspose.com/temporary-license/).
 
 ## Importuj przestrzenie nazw
 

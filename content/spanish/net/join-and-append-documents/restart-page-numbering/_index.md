@@ -47,11 +47,11 @@ Document dstDoc = new Document(dataDir + "destination.docx");
 
 ## Paso 2: Configurar el salto de sección:
 
- Acceder al`FirstSection` propiedad del documento fuente (`srcDoc`) para manipular la sección inicial. Se reiniciará la numeración de páginas de esta sección.
+ Accede al`FirstSection` propiedad del documento fuente (`srcDoc`) para manipular la sección inicial. Se reiniciará la numeración de páginas de esta sección.
 
  Utilice el`PageSetup` propiedad de la sección para configurar su comportamiento de diseño.
 
- Selecciona el`SectionStart` propiedad de`PageSetup` a`SectionStart.NewPage`. Esto garantiza que se cree una nueva página antes de que el contenido de origen se agregue al documento de destino.
+ Establecer el`SectionStart` propiedad de`PageSetup` a`SectionStart.NewPage`. Esto garantiza que se cree una nueva página antes de que el contenido de origen se agregue al documento de destino.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
@@ -105,7 +105,7 @@ Los números de página existentes en el documento fuente no se ven afectados. S
 
 ### ¿Puedo aplicar diferentes formatos de numeración (por ejemplo, números romanos)?
 
- ¡Absolutamente! Aspose.Words ofrece un amplio control sobre los formatos de numeración de páginas. Explorar el`NumberStyle` propiedad de la`HeaderFooter` Objeto para elegir entre varios estilos de numeración, como números romanos, letras o formatos personalizados.
+ ¡Absolutamente! Aspose.Words ofrece un amplio control sobre los formatos de numeración de páginas. Explora el`NumberStyle` propiedad de la`HeaderFooter` Objeto para elegir entre varios estilos de numeración, como números romanos, letras o formatos personalizados.
 
 ### ¿Dónde puedo encontrar más recursos o asistencia?
 

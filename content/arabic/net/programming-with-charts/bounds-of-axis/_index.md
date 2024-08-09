@@ -121,4 +121,4 @@ Aspose.Words for .NET هي مكتبة تتيح لك إنشاء مستندات Wo
  الوثائق التفصيلية متاحة[هنا](https://reference.aspose.com/words/net/).
 
 ### كيف يمكنني الحصول على الدعم لـ Aspose.Words؟
- يمكنك زيارة[منتدى الدعم](https://forum.aspose.com/c/words/8) للمساعدة.
+ يمكنك زيارة[منتدى الدعم](https://forum.aspose.com/c/words/8) للحصول على المساعدة.

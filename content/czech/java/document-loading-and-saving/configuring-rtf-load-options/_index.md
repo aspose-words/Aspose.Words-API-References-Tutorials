@@ -14,7 +14,7 @@ url: /cs/java/document-loading-and-saving/configuring-rtf-load-options/
 
 ## Předpoklady
 
- Než začnete, ujistěte se, že máte do projektu integrovanou knihovnu Aspose.Words for Java. Můžete si jej stáhnout z[webová stránka](https://releases.aspose.com/words/java/).
+ Než začnete, ujistěte se, že máte do projektu integrovanou knihovnu Aspose.Words for Java. Můžete si jej stáhnout z[webové stránky](https://releases.aspose.com/words/java/).
 
 ## Krok 1: Nastavení možností načítání RTF
 
@@ -25,7 +25,7 @@ RtfLoadOptions loadOptions = new RtfLoadOptions();
 loadOptions.setRecognizeUtf8Text(true);
 ```
 
- Tady,`loadOptions` je příkladem`RtfLoadOptions` , a my jsme použili`setRecognizeUtf8Text` metoda umožňující rozpoznávání textu UTF-8.
+ Zde,`loadOptions` je příkladem`RtfLoadOptions` , a my jsme použili`setRecognizeUtf8Text` metoda umožňující rozpoznávání textu UTF-8.
 
 ## Krok 2: Načtení dokumentu RTF
 

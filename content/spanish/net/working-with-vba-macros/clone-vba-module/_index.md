@@ -19,7 +19,7 @@ Antes de pasar al código, asegurémonos de que tiene todo lo que necesita. Aqu�
 1.  Aspose.Words para la biblioteca .NET: asegúrese de tener la última versión de la[Aspose.Words para la biblioteca .NET](https://releases.aspose.com/words/net/). Puedes descargarlo desde el sitio oficial.
 2. Entorno de desarrollo: necesitará un entorno de desarrollo .NET como Visual Studio.
 3. Conocimientos básicos de C#: Un conocimiento básico de C# será útil a medida que navegamos por el código.
-4.  Documento de muestra: Tener un[Documento de Word](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) con un proyecto VBA listo para trabajar. Puedes crear el tuyo propio o utilizar uno existente.
+4.  Documento de muestra: Tener un[documento de palabra](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) con un proyecto VBA listo para trabajar. Puedes crear el tuyo propio o utilizar uno existente.
 
 ## Importar espacios de nombres
 
@@ -107,7 +107,7 @@ Esta línea guarda el nuevo documento con el nombre "WorkingWithVba.CloneVbaModu
 
 ¡Y ahí lo tienes! Ha clonado con éxito un módulo VBA de un documento de Word a otro usando Aspose.Words para .NET. Esta poderosa biblioteca hace que sea increíblemente fácil manipular documentos de Word y los pasos que hemos cubierto son solo la punta del iceberg. Ya sea que esté automatizando la creación de documentos, modificando contenido o administrando proyectos VBA, Aspose.Words lo tiene cubierto.
 
- Si está interesado en explorar más funciones, consulte el[Documentación API](https://reference.aspose.com/words/net/) . ¿Necesitas ayuda? Visita el[Foro de soporte](https://forum.aspose.com/c/words/8) para asistencia.
+ Si está interesado en explorar más funciones, consulte el[Documentación API](https://reference.aspose.com/words/net/) . ¿Necesitar ayuda? Visita el[foro de soporte](https://forum.aspose.com/c/words/8) para obtener ayuda.
 
 Feliz codificación y recuerda: ¡la práctica hace la perfección!
 
@@ -117,7 +117,7 @@ Feliz codificación y recuerda: ¡la práctica hace la perfección!
 Aspose.Words para .NET es una poderosa biblioteca para crear, modificar y convertir documentos de Word en aplicaciones .NET. Es perfecto para automatizar los flujos de trabajo de documentos.
 
 ### ¿Puedo utilizar Aspose.Words gratis?  
- Sí, puedes probar Aspose.Words con un[prueba gratis](https://releases.aspose.com/) o conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/) para fines de evaluación.
+ Sí, puedes probar Aspose.Words con un[prueba gratuita](https://releases.aspose.com/) o conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/) para fines de evaluación.
 
 ### ¿Cómo clono un módulo VBA en Aspose.Words?  
 Para clonar un módulo VBA, cargue el documento original, clone el módulo deseado y agréguelo al proyecto VBA de un nuevo documento. Luego, guarde el nuevo documento.

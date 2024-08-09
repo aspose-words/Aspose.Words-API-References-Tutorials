@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fields/insert-merge-field-using-dom/
 ---
-## Úvod
+## Zavedení
 
 Pokud pracujete se zpracováním dokumentů v .NET, pravděpodobně jste narazili na Aspose.Words. Tato výkonná knihovna nabízí širokou škálu funkcí pro programovou manipulaci s dokumenty Wordu. V tomto tutoriálu se zaměříme na jednu konkrétní funkci: vložení slučovacího pole pomocí Document Object Model (DOM) v Aspose.Words pro .NET. Tato příručka vás provede každým krokem, od nastavení prostředí až po vložení a aktualizaci slučovacího pole v dokumentu aplikace Word.
 
@@ -111,13 +111,13 @@ Podle těchto kroků můžete snadno vložit a nakonfigurovat slučovací pole v
 Slučovací pole je zástupný symbol v dokumentu, který lze dynamicky nahradit daty ze zdroje dat, jako je databáze nebo soubor CSV.
 
 ###  Mohu používat Aspose.Words zdarma?
- Aspose.Words nabízí bezplatnou zkušební verzi, kterou si můžete stáhnout[tady](https://releases.aspose.com/). Pro dlouhodobé používání si budete muset zakoupit licenci.
+ Aspose.Words nabízí bezplatnou zkušební verzi, kterou si můžete stáhnout[zde](https://releases.aspose.com/). Pro dlouhodobé používání si budete muset zakoupit licenci.
 
 ###  Jak získám dočasnou licenci pro Aspose.Words?
- Dočasnou licenci můžete získat z webu Aspose[tady](https://purchase.aspose.com/temporary-license/).
+ Dočasnou licenci můžete získat z webu Aspose[zde](https://purchase.aspose.com/temporary-license/).
 
 ### Jaké verze .NET jsou podporovány Aspose.Words?
 Aspose.Words podporuje několik verzí .NET, včetně .NET Framework, .NET Core a .NET Standard.
 
 ###  Kde najdu dokumentaci API pro Aspose.Words?
- K dispozici je dokumentace API[tady](https://reference.aspose.com/words/net/).
+ K dispozici je dokumentace API[zde](https://reference.aspose.com/words/net/).

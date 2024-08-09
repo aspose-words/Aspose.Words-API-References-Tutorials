@@ -15,7 +15,7 @@ Zum Erstellen ansprechender und informativer Dokumente gehört häufig das Einf�
 
 Bevor Sie sich in den Code vertiefen, müssen einige Voraussetzungen erfüllt sein:
 
--  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Bibliothek Aspose.Words für .NET installiert haben. Wenn Sie sie noch nicht installiert haben, können Sie[hier herunterladen](https://releases.aspose.com/words/net/).
+-  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Bibliothek Aspose.Words für .NET installiert haben. Wenn Sie sie noch nicht installiert haben, können Sie[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 - Entwicklungsumgebung: Sie sollten eine .NET-Entwicklungsumgebung eingerichtet haben. Visual Studio wird dringend empfohlen.
 - Grundkenntnisse in C#: Kenntnisse in der C#-Programmierung sind unbedingt erforderlich, da es in diesem Tutorial um das Schreiben und Verstehen von C#-Code geht.
 -  Temporäre Lizenz: Um Aspose.Words ohne Einschränkungen nutzen zu können, erhalten Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/).

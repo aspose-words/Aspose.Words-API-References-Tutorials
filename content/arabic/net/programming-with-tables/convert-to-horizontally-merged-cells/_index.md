@@ -74,10 +74,10 @@ table.ConvertToHorizontallyMergedCells();
  نعم يمكنك تحميل أ[تجربة مجانية](https://releases.aspose.com/) من موقع Aspose.
 
 ### كيف يمكنني الحصول على الدعم إذا واجهت مشاكل؟  
- يمكنك زيارة[Aspose منتدى الدعم](https://forum.aspose.com/c/words/8) للمساعدة.
+ يمكنك زيارة[Aspose منتدى الدعم](https://forum.aspose.com/c/words/8) للحصول على المساعدة.
 
 ### هل يمكنني تطبيق ترخيص من ملف أو دفق؟  
-نعم، يسمح لك Aspose.Words for .NET بتطبيق ترخيص من كل من الملف والدفق. يمكنك العثور على مزيد من المعلومات في[توثيق](https://reference.aspose.com/words/net/).
+نعم، يسمح لك Aspose.Words for .NET بتطبيق ترخيص من كل من الملف والدفق. يمكنك العثور على مزيد من المعلومات في[الوثائق](https://reference.aspose.com/words/net/).
 
 ### ما هي الميزات الأخرى التي يقدمها Aspose.Words for .NET؟  
- يقدم Aspose.Words for .NET نطاقًا واسعًا من الميزات بما في ذلك إنشاء المستندات ومعالجتها وتحويلها وعرضها. تفحص ال[توثيق](https://reference.aspose.com/words/net/) لمزيد من التفاصيل.
+ يقدم Aspose.Words for .NET نطاقًا واسعًا من الميزات بما في ذلك إنشاء المستندات ومعالجتها وتحويلها وعرضها. تحقق من[الوثائق](https://reference.aspose.com/words/net/) لمزيد من التفاصيل.

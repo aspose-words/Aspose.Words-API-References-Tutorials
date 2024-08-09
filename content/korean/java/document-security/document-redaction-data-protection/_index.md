@@ -16,7 +16,7 @@ url: /ko/java/document-security/document-redaction-data-protection/
 
 ## 개발 환경 설정
 
-Aspose.Words for Java 작업을 시작하기 전에 개발 환경을 설정해야 합니다. 다음과 같이하세요:
+Aspose.Words for Java 작업을 시작하기 전에 개발 환경을 설정해야 합니다. 다음 단계를 따르세요.
 
 1.  Java용 Aspose.Words 다운로드 및 설치: 방문[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) Java용 Aspose.Words의 최신 버전을 다운로드하세요.
 
@@ -74,7 +74,7 @@ doc.save("redacted_and_protected.docx");
 
 ## 결론
 
-이 단계별 가이드에서는 Aspose.Words for Java를 사용하여 중요한 정보를 수정하고 Word 문서에 데이터 보호 조치를 적용하는 방법을 살펴보았습니다. 다음 단계를 따르면 다양한 산업 분야에서 문서의 기밀성과 보안을 보장할 수 있습니다.
+이 단계별 가이드에서는 Aspose.Words for Java를 사용하여 민감한 정보를 수정하고 Word 문서에 데이터 보호 조치를 적용하는 방법을 살펴보았습니다. 다음 단계를 따르면 다양한 산업 분야에서 문서의 기밀성과 보안을 보장할 수 있습니다.
 
 ## 자주 묻는 질문
 

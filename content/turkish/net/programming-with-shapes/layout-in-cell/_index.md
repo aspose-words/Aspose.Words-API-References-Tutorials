@@ -127,7 +127,7 @@ doc.Save(dataDir + "WorkingWithShapes.LayoutInCell.docx");
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak özelleştirilmiş tablo düzenine sahip bir Word belgesini başarıyla oluşturdunuz ve filigran eklediniz. Bu eğitim, sürecin her bölümünü anlamanıza yardımcı olacak açık ve adım adım bir kılavuz sağlamayı amaçladı. Bu becerilerle artık programlı olarak daha karmaşık ve özelleştirilmiş Word belgeleri oluşturabilirsiniz.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak özelleştirilmiş tablo düzenine sahip bir Word belgesini başarıyla oluşturdunuz ve filigran eklediniz. Bu eğitim, sürecin her bölümünü anlamanıza yardımcı olacak açık ve adım adım bir kılavuz sağlamayı amaçladı. Bu becerilerle artık programlı olarak daha karmaşık ve özelleştirilmiş Word belgeleri oluşturabilirsiniz.
 
 ## SSS'ler
 
@@ -138,10 +138,10 @@ doc.Save(dataDir + "WorkingWithShapes.LayoutInCell.docx");
  Değiştirebilirsiniz`RelativeHorizontalPosition`, `RelativeVerticalPosition`, `HorizontalAlignment` , Ve`VerticalAlignment` filigranın konumunu ayarlamaya yönelik özellikler.
 
 ### Filigran için metin yerine resim kullanmak mümkün mü?
- Kesinlikle! Bir oluşturabilirsiniz`Shape` türü ile`ShapeType.Image` ve görüntüsünü kullanarak ayarlayın.`ImageData.SetImage` yöntem.
+ Kesinlikle! Bir oluşturabilirsiniz`Shape` türü ile`ShapeType.Image` ve görüntüsünü kullanarak ayarlayın.`ImageData.SetImage` Yöntem.
 
 ### Farklı satır yüksekliklerine sahip tablolar oluşturabilir miyim?
 Evet, yüksekliği değiştirerek her sıra için farklı yükseklikler ayarlayabilirsiniz.`RowFormat.Height` Bu satıra hücreleri eklemeden önce özelliği.
 
 ### Belgeden filigranı nasıl kaldırabilirim?
- Filigranı belgenin şekiller koleksiyonunda bulup, filigranı çağırarak kaldırabilirsiniz.`Remove` yöntem.
+ Filigranı belgenin şekiller koleksiyonunda bulup, filigranı çağırarak kaldırabilirsiniz.`Remove` Yöntem.

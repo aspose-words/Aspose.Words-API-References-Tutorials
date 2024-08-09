@@ -9,7 +9,7 @@ url: /nl/net/programming-with-document-options-and-settings/optimize-for-ms-word
 ---
 ## Invoering
 
-Hallo daar! Heeft u zich ooit afgevraagd hoe u uw Word-documenten supercompatibel kunt maken met verschillende versies van MS Word? Stel je voor dat je uren hebt besteed aan het maken van het perfecte document, maar het ziet er allemaal rommelig uit als iemand het in een andere versie van Word opent. Jammer, toch? Welnu, dat is waar Aspose.Words voor .NET in beeld komt! Met deze handige tool kunt u met slechts een paar regels code uw documenten optimaliseren voor verschillende versies van MS Word. Laten we eens kijken hoe u dit moeiteloos kunt doen.
+Hé daar! Heeft u zich ooit afgevraagd hoe u uw Word-documenten supercompatibel kunt maken met verschillende versies van MS Word? Stel je voor dat je uren hebt besteed aan het maken van het perfecte document, maar het ziet er allemaal rommelig uit als iemand het in een andere versie van Word opent. Jammer, toch? Welnu, dat is waar Aspose.Words voor .NET in beeld komt! Met deze handige tool kunt u met slechts een paar regels code uw documenten optimaliseren voor verschillende versies van MS Word. Laten we eens kijken hoe u dit moeiteloos kunt doen.
 
 ## Vereisten
 
@@ -65,7 +65,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.OptimizeForMsWord.docx
 
 ## Conclusie
 
-En daar heb je het! Met slechts een paar regels code heeft u uw document geoptimaliseerd voor MS Word 2016 met Aspose.Words voor .NET. Dit zorgt ervoor dat uw document er geweldig uitziet, ongeacht welke versie van Word uw publiek gebruikt. Zo eenvoudig en duidelijk is het. Dus ga je gang en probeer het eens! Uw documenten zullen u dankbaar zijn.
+En daar heb je het! Met slechts een paar regels code hebt u uw document geoptimaliseerd voor MS Word 2016 met Aspose.Words voor .NET. Dit zorgt ervoor dat uw document er geweldig uitziet, ongeacht welke versie van Word uw publiek gebruikt. Zo eenvoudig en duidelijk is het. Dus ga je gang en probeer het eens! Uw documenten zullen u dankbaar zijn.
 
 ## Veelgestelde vragen
 

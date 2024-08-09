@@ -2,14 +2,14 @@
 title: Getalnotatie voor as in een diagram
 linktitle: Getalnotatie voor as in een diagram
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u diagramasnummers opmaakt met Aspose.Words voor .NET met deze stapsgewijze handleiding. Verbeter moeiteloos de leesbaarheid en professionaliteit van uw document.
+description: Leer hoe u diagramasnummers kunt opmaken met Aspose.Words voor .NET met deze stapsgewijze handleiding. Verbeter moeiteloos de leesbaarheid en professionaliteit van uw document.
 type: docs
 weight: 10
 url: /nl/net/programming-with-charts/number-format-for-axis/
 ---
 ## Invoering
 
-Hallo daar! Heeft u ooit met diagrammen in uw documenten gewerkt en wenste u dat u de cijfers op uw as kon opmaken om ze er professioneler uit te laten zien? Nou, je hebt geluk! In deze zelfstudie gaan we dieper in op hoe u precies dat kunt bereiken met Aspose.Words voor .NET. Met deze krachtige bibliotheek kunt u Word-documenten op een heel eenvoudige manier verwerken. En vandaag concentreren we ons erop de grafiekassen een make-over te geven met aangepaste getalnotaties.
+Hé daar! Heeft u ooit met diagrammen in uw documenten gewerkt en wenste u dat u de cijfers op uw as kon opmaken om ze er professioneler uit te laten zien? Nou, je hebt geluk! In deze zelfstudie gaan we dieper in op hoe u precies dat kunt bereiken met Aspose.Words voor .NET. Met deze krachtige bibliotheek kunt u Word-documenten op een heel eenvoudige manier verwerken. En vandaag concentreren we ons erop de grafiekassen een make-over te geven met aangepaste getalnotaties.
 
 ## Vereisten
 
@@ -98,7 +98,7 @@ Nu alles is ingesteld, is het tijd om uw document op te slaan. Deze stap is de g
 doc.Save(dataDir + "WorkingWithCharts.NumberFormatForAxis.docx");
 ```
 
- Hier de`Save` methode slaat het document op naar het opgegeven pad met de bestandsnaam`WorkingWithCharts.NumberFormatForAxis.docx`.
+ Hier, de`Save` methode slaat het document op naar het opgegeven pad met de bestandsnaam`WorkingWithCharts.NumberFormatForAxis.docx`.
 
 ## Conclusie
 

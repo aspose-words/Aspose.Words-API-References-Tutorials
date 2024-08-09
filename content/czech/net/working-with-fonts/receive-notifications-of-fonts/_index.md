@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fonts/receive-notifications-of-fonts/
 ---
-
+## Zavedení
 
 Pokud jste někdy čelili problémům s nesprávným vykreslováním písem ve vašich dokumentech, nejste sami. Správa nastavení písem a přijímání upozornění na nahrazování písem vám může ušetřit spoustu starostí. V tomto obsáhlém průvodci prozkoumáme, jak zacházet s upozorněními na písma pomocí Aspose.Words pro .NET a zajistit, aby vaše dokumenty vždy vypadaly co nejlépe.
 
@@ -18,7 +18,7 @@ Než se pustíme do podrobností, ujistěte se, že máte následující:
 - Základní znalost C#: Znalost programování v C# vám pomůže pokračovat.
 -  Aspose.Words for .NET Library: Stáhněte a nainstalujte ji z[oficiální odkaz ke stažení](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Nastavení jako Visual Studio pro psaní a spouštění vašeho kódu.
--  Vzorový dokument: Mějte vzorový dokument (např.`Rendering.docx`) připraven otestovat nastavení písma.
+-  Vzorový dokument: Mějte vzorový dokument (např.`Rendering.docx`) připraven k testování nastavení písma.
 
 ## Importovat jmenné prostory
 
@@ -101,7 +101,7 @@ Provedením těchto kroků jste nakonfigurovali aplikaci tak, aby zpracovávala 
 
 Nyní jste zvládli proces přijímání upozornění na nahrazení písem pomocí Aspose.Words for .NET. Tato dovednost vám pomůže zajistit, aby vaše dokumenty vždy vypadaly co nejlépe, i když nejsou k dispozici potřebná písma. Pokračujte v experimentování s různými nastaveními, abyste plně využili sílu Aspose.Words.
 
-## Nejčastější dotazy
+## FAQ
 
 ### Q1: Mohu zadat více výchozích písem?
 
@@ -117,7 +117,7 @@ Ne, můžete zadat pouze jedno výchozí písmo pro nahrazení. Můžete však n
 
 ### Q4: Kde najdu podporu pro Aspose.Words?
 
- Navštivte[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8) pro pomoc.
+ Navštivte[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8) o pomoc.
 
 ### Q5: Je možné získat dočasnou licenci pro Aspose.Words?
 

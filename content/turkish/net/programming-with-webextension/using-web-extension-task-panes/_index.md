@@ -29,7 +29,7 @@ using Aspose.Words;
 using Aspose.Words.WebExtensions;
 ```
 
-## Adım adım rehber
+## Adım Adım Kılavuz
 
 Şimdi süreci takip edilmesi kolay adımlara ayıralım.
 
@@ -63,7 +63,7 @@ TaskPane taskPane = new TaskPane();
 doc.WebExtensionTaskPanes.Add(taskPane);
 ```
 
- Burada yeni bir tane oluşturuyoruz`TaskPane` nesneyi seçin ve onu belgenin`WebExtensionTaskPanes` Toplamak.
+ Burada yeni bir tane oluşturuyoruz`TaskPane` nesneyi seçin ve onu belgenin`WebExtensionTaskPanes` koleksiyon.
 
 ### Adım 4: Görev Bölmesini Yapılandırma
 
@@ -147,7 +147,7 @@ Bu kod belgeyi yükler ve konsoldaki her görev bölmesinin sağlayıcısını, 
 
 ## Çözüm
 
-Ve bu kadar! Aspose.Words for .NET'i kullanarak bir Word belgesine Web Uzantısı Görev Bölmesini başarıyla eklediniz ve yapılandırdınız. Bu güçlü özellik, doğrudan belgenin içinde ek işlevler sağlayarak Word belgelerinizi önemli ölçüde geliştirebilir. 
+İşte bu kadar! Aspose.Words for .NET'i kullanarak bir Word belgesine Web Uzantısı Görev Bölmesini başarıyla eklediniz ve yapılandırdınız. Bu güçlü özellik, doğrudan belgenin içinde ek işlevler sağlayarak Word belgelerinizi önemli ölçüde geliştirebilir. 
 
 ## SSS'ler
 

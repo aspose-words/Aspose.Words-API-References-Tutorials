@@ -9,7 +9,7 @@ url: /vi/net/join-and-append-documents/list-use-destination-styles/
 ---
 ## Giới thiệu
 
-Bạn đã bao giờ thử hợp nhất các tài liệu Word và gặp rắc rối với việc định dạng chưa? Đôi khi nó giống như cố gắng trộn dầu và nước, phải không? Chà, hôm nay chúng ta sẽ đi sâu vào một thủ thuật đơn giản bằng cách sử dụng Aspose.Words cho .NET để giúp bạn thoát khỏi vấn đề đau đầu này. Chúng ta sẽ tìm hiểu cách nhập danh sách từ tài liệu này sang tài liệu khác mà không làm xáo trộn việc đánh số và kiểu dáng. Sẵn sàng để làm cho cuộc sống của bạn dễ dàng hơn một chút? Bắt đầu nào!
+Bạn đã bao giờ thử hợp nhất các tài liệu Word và gặp rắc rối với việc định dạng chưa? Đôi khi nó giống như cố gắng trộn dầu và nước, phải không? Chà, hôm nay chúng ta sẽ đi sâu vào một thủ thuật đơn giản bằng cách sử dụng Aspose.Words cho .NET để giúp bạn thoát khỏi vấn đề đau đầu này. Chúng ta sẽ tìm hiểu cách nhập danh sách từ tài liệu này sang tài liệu khác mà không làm xáo trộn việc đánh số và kiểu dáng. Sẵn sàng để làm cho cuộc sống của bạn dễ dàng hơn một chút? Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
@@ -82,7 +82,7 @@ Bạn đã hợp nhất thành công hai tài liệu, giữ nguyên danh sách.
 Aspose.Words for .NET là một thư viện mạnh mẽ để làm việc với các tài liệu Word theo chương trình. Nó cho phép bạn tạo, sửa đổi và chuyển đổi tài liệu ở nhiều định dạng khác nhau.
 
 ### Làm cách nào để cài đặt Aspose.Words cho .NET?
- Bạn có thể tải nó xuống từ[trang mạng](https://releases.aspose.com/words/net/) và làm theo hướng dẫn cài đặt trong[tài liệu](https://reference.aspose.com/words/net/).
+ Bạn có thể tải nó xuống từ[trang web](https://releases.aspose.com/words/net/) và làm theo hướng dẫn cài đặt trong[tài liệu](https://reference.aspose.com/words/net/).
 
 ### Tôi có thể sử dụng Aspose.Words miễn phí không?
  Aspose.Words cung cấp một[dùng thử miễn phí](https://releases.aspose.com/) với những tính năng hạn chế. Để có toàn quyền truy cập, bạn cần phải mua giấy phép[đây](https://purchase.aspose.com/buy).

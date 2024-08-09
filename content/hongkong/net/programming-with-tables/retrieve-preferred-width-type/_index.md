@@ -81,7 +81,7 @@ PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
 double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
-這些程式碼行存取表格第一行中的第一個儲存格並擷取其首選寬度類型和值。這`PreferredWidthType`可`Auto`, `Percent`， 或者`Point`，表示寬度是如何決定的。
+這些程式碼行存取表格第一行中的第一個儲存格並擷取其首選寬度類型和值。這`PreferredWidthType`可以是`Auto`, `Percent`， 或者`Point`，表示寬度是如何決定的。
 
 ## 第 6 步：顯示結果
 
@@ -96,7 +96,7 @@ Console.WriteLine("Preferred Width Value: " + value);
 
 ## 結論
 
-現在你就擁有了！當分解為可管理的步驟時，使用 Aspose.Words for .NET 擷取 Word 文件中表格儲存格的首選寬度類型非常簡單。透過遵循本指南，您可以輕鬆操作 Word 文件中的表格屬性，從而使您的文件管理任務更加有效率。
+現在你就得到它了！當分解為可管理的步驟時，使用 Aspose.Words for .NET 擷取 Word 文件中表格儲存格的首選寬度類型非常簡單。透過遵循本指南，您可以輕鬆操作 Word 文件中的表格屬性，從而使您的文件管理任務更加有效率。
 
 ## 常見問題解答
 
@@ -106,7 +106,7 @@ Console.WriteLine("Preferred Width Value: " + value);
 
 ### 可能的值是什麼`PreferredWidthType`?
 
-`PreferredWidthType`可`Auto`, `Percent`， 或者`Point`.
+`PreferredWidthType`可以是`Auto`, `Percent`， 或者`Point`.
 
 ### 是否可以透過程式設定首選寬度類型？
 

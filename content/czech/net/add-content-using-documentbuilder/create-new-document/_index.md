@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/add-content-using-documentbuilder/create-new-document/
 ---
-## Úvod
+## Zavedení
 Ponoříme se hluboko do světa Aspose.Words for .NET, klenotu knihovny pro všechny vaše potřeby manipulace s dokumenty. Ať už generujete dynamické sestavy, automatizujete vytváření dokumentů nebo vás jen nebaví dělat opakující se úkoly ručně, Aspose.Words je tu, aby vám zachránila situaci. Vyhrňme si rukávy a ušpiněme si ruce vytvořením nového dokumentu aplikace Word od začátku pomocí tohoto mocného nástroje.
 
 ## Předpoklady
@@ -15,7 +15,7 @@ Ponoříme se hluboko do světa Aspose.Words for .NET, klenotu knihovny pro vše
 Než se vrhneme na to, co potřebujete, ujistěte se, že máme vše, co potřebujeme:
 
 1.  Visual Studio: Naše kódovací hřiště. Pokud ji ještě nemáte, stáhněte si ji z[Visual Studio ke stažení](https://visualstudio.microsoft.com/downloads/).
-2.  Aspose.Words pro .NET: Hvězda show. Můžete to vzít z[tady](https://releases.aspose.com/words/net/).
+2.  Aspose.Words pro .NET: Hvězda show. Můžete to vzít z[zde](https://releases.aspose.com/words/net/).
 3.  .NET Framework: Ujistěte se, že máte nainstalované alespoň .NET Framework 4.0. Můžete jej zkontrolovat a nainstalovat prostřednictvím[Stránka ke stažení Microsoft .NET](https://dotnet.microsoft.com/download/dotnet-framework).
 
 ## Importovat jmenné prostory
@@ -81,7 +81,7 @@ A tady to máte! Právě jste vytvořili nový dokument aplikace Word pomocí As
 
 ## Závěr
 
-Gratulujeme! S Aspose.Words for .NET jste udělali své první kroky do světa automatizace dokumentů. Začali jsme od nuly, nastavili naše prostředí, vytvořili nový dokument, přidali nějaký obsah a uložili ho. Toto je jen špička ledovce. S Aspose.Words můžete manipulovat s dokumenty způsoby, které jste nikdy nepovažovali za možné – slučovat dokumenty, přidávat obrázky, vytvářet tabulky a mnoho dalšího.
+Gratuluji! S Aspose.Words for .NET jste udělali své první kroky do světa automatizace dokumentů. Začali jsme od nuly, nastavili naše prostředí, vytvořili nový dokument, přidali nějaký obsah a uložili ho. Toto je jen špička ledovce. S Aspose.Words můžete manipulovat s dokumenty způsoby, které jste nikdy nepovažovali za možné – slučovat dokumenty, přidávat obrázky, vytvářet tabulky a mnoho dalšího.
 
 ## FAQ
 

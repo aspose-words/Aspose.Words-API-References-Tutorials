@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-styles-and-themes/get-theme-properties/
 ---
-## Úvod
+## Zavedení
 
 Pokud jde o práci s dokumenty aplikace Word, schopnost manipulovat a získávat vlastnosti motivu může změnit hru. Ať už navrhujete sestavu, vytváříte návrh nebo jen upravujete estetiku dokumentu, pochopení toho, jak získat vlastnosti motivu, může výrazně zlepšit váš pracovní postup. V tomto tutoriálu se ponoříme do toho, jak můžete získat přístup k vlastnostem motivu a pracovat s nimi v dokumentu aplikace Word pomocí Aspose.Words for .NET.
 
@@ -23,7 +23,7 @@ Než začneme, budete potřebovat několik věcí, abyste zajistili hladký chod
 
 4.  Dokumentace Aspose.Words: Pro podrobné informace a další reference můžete vždy nahlédnout do[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/).
 
-5. Licence Aspose.Words: Pokud knihovnu používáte v produkčním prostředí, ujistěte se, že máte platnou licenci. Můžete si jeden zakoupit[tady](https://purchase.aspose.com/buy) , nebo pokud potřebujete dočasnou licenci, můžete ji získat[tady](https://purchase.aspose.com/temporary-license/).
+5. Licence Aspose.Words: Pokud knihovnu používáte v produkčním prostředí, ujistěte se, že máte platnou licenci. Můžete si jeden zakoupit[zde](https://purchase.aspose.com/buy) , nebo pokud potřebujete dočasnou licenci, můžete ji získat[zde](https://purchase.aspose.com/temporary-license/).
 
 ## Importovat jmenné prostory
 
@@ -48,7 +48,7 @@ Document doc = new Document();
 
 ## Krok 2: Přístup k objektu tématu
 
- Jakmile máte objekt dokumentu, dalším krokem je přístup k jeho motivu. The`Theme` majetek z`Document`class poskytuje přístup k různým nastavením motivů.
+ Jakmile máte objekt dokumentu, dalším krokem je přístup k jeho motivu. The`Theme` vlastnictvím`Document`class poskytuje přístup k různým nastavením motivů.
 
 ```csharp
 Aspose.Words.Themes.Theme theme = doc.Theme;
@@ -84,7 +84,7 @@ Motivy také definují různé barvy použité pro akcenty v dokumentu. Chcete-l
 Console.WriteLine(theme.Colors.Accent1);
 ```
 
- The`Colors` majetek z`Theme` class umožňuje načíst různé barevné akcenty definované v motivu, což umožňuje spravovat a používat konzistentní barevná schémata ve vašich dokumentech.
+ The`Colors` vlastnictvím`Theme` class umožňuje načíst různé barevné akcenty definované v motivu, což umožňuje spravovat a používat konzistentní barevná schémata ve vašich dokumentech.
 
 ## Závěr
 
@@ -108,7 +108,7 @@ Ano, vlastnosti motivu můžete načíst z nových i stávajících dokumentů a
 
 ### Jak mohu použít nový motiv na dokument aplikace Word?
 
- Chcete-li použít nový motiv, budete muset nastavit vlastnosti motivu na svém`Document` objekt. Zkontrolovat[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) podrobnosti o použití témat.
+ Chcete-li použít nový motiv, budete muset nastavit vlastnosti motivu na svém`Document` objekt. Zkontrolujte[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) podrobnosti o použití témat.
 
 ### Kde mohu získat podporu pro Aspose.Words pro .NET?
 

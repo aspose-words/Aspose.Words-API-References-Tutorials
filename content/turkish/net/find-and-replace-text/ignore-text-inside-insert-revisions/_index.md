@@ -80,7 +80,7 @@ Aspose.Words for .NET ile revizyonların içindeki metni göz ardı etme tekniğ
 ## SSS'ler
 
 ### Aspose.Words for .NET kullanarak bir Word belgesindeki revizyonları izlemeye nasıl başlayabilirim?
- Revizyonları izlemeye başlamak için şunu kullanın:`doc.StartTrackRevisions(author, date)` yöntem.
+ Revizyonları izlemeye başlamak için şunu kullanın:`doc.StartTrackRevisions(author, date)` Yöntem.
 
 ### Belge revizyonlarında eklenen metni göz ardı etmenin faydası nedir?
 Eklenen metnin göz ardı edilmesi, belge değişikliklerini verimli bir şekilde yönetirken temel içeriğe odaklanmaya yardımcı olur.

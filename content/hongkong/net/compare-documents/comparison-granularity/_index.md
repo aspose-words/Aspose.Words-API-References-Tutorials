@@ -2,12 +2,12 @@
 title: Word文件中的比較粒度
 linktitle: Word文件中的比較粒度
 second_title: Aspose.Words 文件處理 API
-description: 了解 Aspose.Words for .NET 的 Word 文檔功能中的比較粒度，該功能允許逐字符比較文檔，報告所做的更改。
+description: 了解 Aspose.Words for .NET 的 Word 文檔功能中的比較粒度，該功能允許逐個字元比較文檔，報告所做的更改。
 type: docs
 weight: 10
 url: /zh-hant/net/compare-documents/comparison-granularity/
 ---
-以下是解釋下面 C# 原始程式碼的逐步指南，該程式碼使用 Aspose.Words for .NET 的 Word 文件功能中的比較粒度。
+以下是解釋下面 C# 原始程式碼的逐步指南，該程式碼使用 Aspose.Words for .NET 的 Word 文件中的比較粒度功能。
 
 ## 第 1 步：簡介
 

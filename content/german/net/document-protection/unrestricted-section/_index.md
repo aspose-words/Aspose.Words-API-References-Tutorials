@@ -15,10 +15,10 @@ Hallo! Bereit, in die Welt von Aspose.Words für .NET einzutauchen? Heute besch�
 
 Bevor wir ins Detail gehen, stellen Sie sicher, dass Sie alles haben, was Sie brauchen:
 
--  Aspose.Words für .NET: Wenn Sie es noch nicht getan haben, können Sie[hier herunterladen](https://releases.aspose.com/words/net/).
+-  Aspose.Words für .NET: Wenn Sie es noch nicht getan haben, können Sie[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 - Visual Studio: Oder jede andere .NET-kompatible IDE.
 - Grundlegende Kenntnisse in C#: Ein wenig Vertrautheit mit C# wird Ihnen helfen, dieses Tutorial im Handumdrehen zu bewältigen.
--  Aspose Lizenz: Schnappen Sie sich eine[Kostenlose Testphase](https://releases.aspose.com/) oder erhalten Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) wenn du es zum Testen brauchst.
+-  Aspose Lizenz: Schnappen Sie sich eine[Kostenlose Testversion](https://releases.aspose.com/) oder erhalten Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) wenn du es zum Testen brauchst.
 
 ## Namespaces importieren
 

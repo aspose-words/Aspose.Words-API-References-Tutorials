@@ -9,13 +9,13 @@ url: /pl/net/add-content-using-documentbuilder/insert-horizontal-rule/
 ---
 ## Wstęp
 
-Hej, drodzy programiści! Czy zdarzyło Ci się kiedyś, że siedziałeś po kolana w projekcie dokumentu w programie Word i pomyślałeś: „Człowieku, naprawdę muszę tu wstawić poziomą linię, żeby wszystko rozdzielić”? Zastanów się? Masz szczęście! W dzisiejszym samouczku zagłębimy się w sposób wstawiania linii poziomej w dokumencie programu Word za pomocą Aspose.Words dla .NET. To nie jest zwykły samouczek — jest pełen szczegółowych kroków, wciągających wyjaśnień i odrobiny zabawy. Zatem zapnij pasy i przygotuj się, aby zostać profesjonalistą w obsłudze Aspose.Words dla .NET!
+Hej, drodzy programiści! Czy zdarzyło Ci się kiedyś, że siedziałeś po kolana w projekcie dokumentu w programie Word i pomyślałeś: „Człowieku, naprawdę muszę tu wstawić poziomą linię, żeby wszystko rozdzielić”? Cóż, zgadnij co? Masz szczęście! W dzisiejszym samouczku zagłębimy się w sposób wstawiania linii poziomej w dokumencie programu Word za pomocą Aspose.Words dla .NET. To nie jest zwykły samouczek — jest pełen szczegółowych kroków, wciągających wyjaśnień i odrobiny zabawy. Zatem zapnij pasy i przygotuj się, aby zostać profesjonalistą w obsłudze Aspose.Words dla .NET!
 
 ## Warunki wstępne
 
 Zanim zagłębimy się w szczegóły, upewnijmy się, że masz wszystko, czego potrzebujesz, aby zacząć. Oto krótka lista kontrolna:
 
-1.  Aspose.Words dla .NET: Upewnij się, że masz najnowszą wersję. Możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla .NET: Upewnij się, że masz najnowszą wersję. Możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: dowolne środowisko IDE obsługujące platformę .NET, takie jak Visual Studio.
 3. Podstawowa znajomość języka C#: Znajomość programowania w języku C# sprawi, że ten samouczek będzie płynniejszy.
 4. Katalog dokumentów: Będziesz potrzebować katalogu, w którym możesz zapisywać dokumenty programu Word.

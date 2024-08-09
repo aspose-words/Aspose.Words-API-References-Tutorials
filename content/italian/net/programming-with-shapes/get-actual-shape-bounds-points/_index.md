@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-shapes/get-actual-shape-bounds-points/
 ---
-## introduzione
+## Introduzione
 
 Hai mai provato a manipolare le forme nei tuoi documenti Word e ti sei chiesto quali fossero le loro dimensioni precise? Conoscere i limiti esatti delle forme può essere fondamentale per varie attività di modifica e formattazione dei documenti. Che tu stia creando un report dettagliato, una newsletter elegante o un volantino sofisticato, comprendere le dimensioni della forma garantisce che il tuo design abbia l'aspetto perfetto. In questa guida, approfondiremo come ottenere i limiti effettivi delle forme in punti utilizzando Aspose.Words per .NET. Pronto a rendere le tue forme perfette? Iniziamo!
 
@@ -73,7 +73,7 @@ Console.WriteLine(shape.GetShapeRenderer().BoundsInPoints);
 
 ## Conclusione
 
-il gioco è fatto! Hai recuperato con successo i limiti effettivi di una forma in punti utilizzando Aspose.Words per .NET. Questa conoscenza ti consente di manipolare e posizionare le forme con precisione, assicurando che i tuoi documenti appaiano esattamente come li immagini. Che tu stia progettando layout complessi o semplicemente abbia bisogno di modificare un elemento, comprendere i limiti della forma è un punto di svolta.
+Ed ecco qua! Hai recuperato con successo i limiti effettivi di una forma in punti utilizzando Aspose.Words per .NET. Questa conoscenza ti consente di manipolare e posizionare le forme con precisione, assicurando che i tuoi documenti appaiano esattamente come li immagini. Che tu stia progettando layout complessi o semplicemente abbia bisogno di modificare un elemento, comprendere i limiti della forma è un punto di svolta.
 
 ## Domande frequenti
 

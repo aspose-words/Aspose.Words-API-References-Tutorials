@@ -29,7 +29,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-## Hướng dẫn từng bước một
+## Hướng dẫn từng bước
 
 Bây giờ, hãy chia nhỏ quy trình cho phép giãn cách ô trong bảng thành các bước dễ thực hiện.
 

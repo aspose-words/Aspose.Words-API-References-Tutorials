@@ -16,7 +16,7 @@ Sziasztok kódolótársak! Volt már olyan, hogy mélyen belemerült egy projekt
 Mielőtt belevágnánk a kódba, győződjünk meg arról, hogy mindent megvan, amire szüksége van:
 
 1. A C# alapismeretei: Ez az oktatóanyag feltételezi, hogy kényelmesen ismeri a C# és .NET fogalmakat.
-2.  Visual Studio telepítve: Bármelyik legújabb verziója megfelel. Ha még nem rendelkezel vele, beszerezheted a[webhely](https://visualstudio.microsoft.com/).
+2.  Visual Studio telepítve: Bármelyik legújabb verziója megfelel. Ha még nem rendelkezel vele, beszerezheted a[telek](https://visualstudio.microsoft.com/).
 3.  Aspose.Words for .NET Library: Le kell töltenie és telepítenie kell ezt a könyvtárat. től lehet kapni[itt](https://releases.aspose.com/words/net/).
 
 Rendben, ha mindezzel készen van, folytassuk a dolgok beállítását!

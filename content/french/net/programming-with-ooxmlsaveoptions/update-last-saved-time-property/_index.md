@@ -15,7 +15,7 @@ Vous êtes-vous déjà demandé comment suivre par programme la dernière propri
 
 Avant de passer au guide étape par étape, vous aurez besoin de quelques éléments :
 
-1.  Aspose.Words pour .NET : assurez-vous que Aspose.Words pour .NET est installé. Si ce n'est pas le cas, vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/).
+1.  Aspose.Words pour .NET : assurez-vous que Aspose.Words pour .NET est installé. Si ce n'est pas le cas, vous pouvez[téléchargez-le ici](https://releases.aspose.com/words/net/).
 2. Environnement de développement : un environnement de développement comme Visual Studio.
 3. Connaissance de base de C# : Comprendre les bases de la programmation C# sera utile.
 
@@ -75,7 +75,7 @@ Cela enregistrera le document avec la propriété de dernière heure enregistré
 
 ## Conclusion
 
-Et voila! En suivant ces étapes, vous pouvez facilement mettre à jour la dernière propriété de temps enregistré de vos documents Word à l'aide d'Aspose.Words pour .NET. Ceci est particulièrement utile pour conserver des métadonnées précises dans vos documents, ce qui peut être crucial pour les systèmes de gestion de documents et diverses autres applications.
+Et voilà ! En suivant ces étapes, vous pouvez facilement mettre à jour la dernière propriété de temps enregistré de vos documents Word à l'aide d'Aspose.Words pour .NET. Ceci est particulièrement utile pour conserver des métadonnées précises dans vos documents, ce qui peut être crucial pour les systèmes de gestion de documents et diverses autres applications.
 
 ## FAQ
 

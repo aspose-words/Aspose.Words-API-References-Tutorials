@@ -17,7 +17,7 @@ Aspose.Words for Java est une bibliothèque Java qui permet aux développeurs de
 
 ## Configuration de votre environnement de développement
 
-Avant de plonger dans les aspects du codage, il est crucial de configurer votre environnement de développement. Assurez-vous que Java est installé, puis téléchargez et configurez la bibliothèque Aspose.Words for Java. Vous pouvez trouver des instructions d'installation détaillées dans le[Documentation](https://reference.aspose.com/words/java/).
+Avant de plonger dans les aspects du codage, il est crucial de configurer votre environnement de développement. Assurez-vous que Java est installé, puis téléchargez et configurez la bibliothèque Aspose.Words for Java. Vous pouvez trouver des instructions d'installation détaillées dans le[documentation](https://reference.aspose.com/words/java/).
 
 ## Création d'un nouveau document
 
@@ -427,6 +427,6 @@ pageSetup.setBottomMargin(72); // Marge inférieure en points
 
 ## Conclusion
 
-Dans ce guide complet, nous avons exploré les puissantes capacités d'Aspose.Words pour Java pour styliser les paragraphes et le texte des documents. Vous avez appris à créer, formater et améliorer vos documents par programmation, depuis la manipulation de texte de base jusqu'aux fonctionnalités avancées. Aspose.Words for Java permet aux développeurs d'automatiser efficacement les tâches de formatage de documents. Continuez à pratiquer et à expérimenter différentes fonctionnalités pour maîtriser le style de document avec Aspose.Words pour Java.
+Dans ce guide complet, nous avons exploré les puissantes capacités d'Aspose.Words pour Java pour styliser les paragraphes et le texte des documents. Vous avez appris à créer, formater et améliorer vos documents par programmation, depuis la manipulation de texte de base jusqu'aux fonctionnalités avancées. Aspose.Words for Java permet aux développeurs d'automatiser efficacement les tâches de formatage de documents. Continuez à pratiquer et à expérimenter différentes fonctionnalités pour maîtriser le style de document avec Aspose.Words for Java.
 
-Maintenant que vous savez parfaitement comment styliser des paragraphes et du texte dans des documents à l'aide d'Aspose.Words pour Java, vous êtes prêt à créer des documents magnifiquement formatés et adaptés à vos besoins spécifiques. Bon codage !
+Maintenant que vous savez parfaitement comment styliser des paragraphes et du texte dans des documents à l'aide d'Aspose.Words pour Java, vous êtes prêt à créer des documents magnifiquement formatés, adaptés à vos besoins spécifiques. Bon codage !

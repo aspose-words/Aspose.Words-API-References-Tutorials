@@ -38,7 +38,7 @@ Deze naamruimten bieden toegang tot de klassen en methoden die nodig zijn voor h
 
 Kop: Maak een nieuw document en bouwer
 
- Uitleg: Begin met het maken van een nieuw`Document` voorwerp en een`DocumentBuilder` voorbeeld. De`DocumentBuilder` Met class kunt u tekst en elementen in het document invoegen en opmaken.
+ Uitleg: Begin met het maken van een nieuw`Document` voorwerp en een`DocumentBuilder` aanleg. De`DocumentBuilder` Met class kunt u tekst en elementen in het document invoegen en opmaken.
 
 ```csharp
 // Pad naar uw documentmap
@@ -126,7 +126,7 @@ Experimenteer gerust met verschillende stijlen en scheiders om aan uw behoeften 
 ## Veelgestelde vragen
 
 ### Wat is een stijlscheidingsteken in Word-documenten?
-Een stijlscheidingsteken is een speciaal teken dat inhoud met verschillende stijlen in een Word-document scheidt, waardoor de consistente opmaak behouden blijft.
+Een stijlscheidingsteken is een speciaal teken dat inhoud met verschillende stijlen in een Word-document scheidt, waardoor een consistente opmaak behouden blijft.
 
 ### Hoe installeer ik Aspose.Words voor .NET?
  U kunt Aspose.Words voor .NET downloaden en installeren vanaf de[Aspose.Words releasespagina](https://releases.aspose.com/words/net/).

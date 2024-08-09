@@ -2,7 +2,7 @@
 title: Использование полей формы в Aspose.Words для Java
 linktitle: Использование полей формы
 second_title: API обработки Java-документов Aspose.Words
-description: Научитесь использовать Aspose.Words для Java для создания интерактивных документов Word с полями форм. Начать сейчас!
+description: Научитесь использовать Aspose.Words для Java для создания интерактивных документов Word с полями форм. Начните прямо сейчас!
 type: docs
 weight: 14
 url: /ru/java/using-document-elements/using-form-fields/

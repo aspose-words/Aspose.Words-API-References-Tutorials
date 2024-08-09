@@ -82,7 +82,7 @@ Grattis! Du har framgångsrikt konverterat metafiler till PNG i ett Word-dokumen
 ## Vanliga frågor
 
 ### Kan jag konvertera andra filtyper förutom metafiler till PNG?
- Aspose.Words för .NET ger omfattande stöd för olika filformat. Kolla[dokumentation](https://reference.aspose.com/words/net/) för mer detaljer.
+ Aspose.Words för .NET ger omfattande stöd för olika filformat. Kontrollera[dokumentation](https://reference.aspose.com/words/net/) för mer information.
 
 ### Finns det något sätt att batchbearbeta flera dokument?
 Ja, du kan gå igenom en katalog med dokument och använda samma laddningsalternativ för varje fil.
@@ -94,4 +94,4 @@ Metafiler kommer att förbli i sitt ursprungliga format, vilket kanske inte är 
  Ja, en licens krävs för full funktionalitet. Du kan få en[tillfällig licens](https://purchase.aspose.com/temporary-license/) för försöksändamål.
 
 ### Kan jag använda den här metoden för andra grafiska format som JPEG eller GIF?
- Denna specifika metod är för metafiler, men Aspose.Words för .NET stöder olika bildformat. Referera till[dokumentation](https://reference.aspose.com/words/net/) för mer information.
+ Denna specifika metod är för metafiler, men Aspose.Words för .NET stöder olika bildformat. Se till[dokumentation](https://reference.aspose.com/words/net/) för mer information.

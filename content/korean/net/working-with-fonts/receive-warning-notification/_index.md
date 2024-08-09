@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /ko/net/working-with-fonts/receive-warning-notification/
 ---
+## 소개
 
 문서에서 예상치 못한 글꼴 문제를 처리하는 데 지치셨나요? Aspose.Words for .NET을 사용하면 문서 처리 중 잠재적인 문제에 대한 알림을 받을 수 있으므로 문서 품질을 더 쉽게 유지할 수 있습니다. 이 포괄적인 가이드는 Aspose.Words에서 경고 알림을 설정하는 과정을 안내하여 중요한 경고를 다시는 놓치지 않도록 합니다.
 
@@ -47,7 +48,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## 3단계: 경고 콜백 설정
 
- 경고를 캡처하고 처리하려면 다음을 구현하는 클래스를 만듭니다.`IWarningCallback` 상호 작용. 이 클래스는 문서 처리 중에 발생하는 모든 경고를 기록합니다.
+ 경고를 캡처하고 처리하려면 다음을 구현하는 클래스를 만듭니다.`IWarningCallback` 인터페이스. 이 클래스는 문서 처리 중에 발생하는 모든 경고를 기록합니다.
 
 ```csharp
 public class HandleDocumentWarnings : IWarningCallback
@@ -69,7 +70,7 @@ doc.WarningCallback = callback;
 ```
 ## 5단계: 페이지 레이아웃 업데이트
 
- 를 불러`UpdatePageLayout` 방법. 이렇게 하면 문서가 메모리에 렌더링되고 렌더링 중에 발생하는 모든 경고가 캡처됩니다.
+ 전화`UpdatePageLayout` 방법. 이렇게 하면 문서가 메모리에 렌더링되고 렌더링 중에 발생하는 모든 경고가 캡처됩니다.
 
 ```csharp
 doc.UpdatePageLayout();
@@ -105,7 +106,7 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveWarningNotification.pdf");
 
 ### Q4: Aspose.Words에 대한 지원은 어디서 찾을 수 있나요?
 
- 방문하다[Aspose.Words 지원 포럼](https://forum.aspose.com/c/words/8) 도움을 위해.
+ 방문[Aspose.Words 지원 포럼](https://forum.aspose.com/c/words/8) 도움을 위해.
 
 ### Q5: Aspose.Words에 대한 임시 라이선스를 얻을 수 있나요?
 

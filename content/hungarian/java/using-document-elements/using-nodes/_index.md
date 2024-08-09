@@ -9,7 +9,7 @@ url: /hu/java/using-document-elements/using-nodes/
 ---
 Ebben az átfogó oktatóanyagban elmélyülünk az Aspose.Words for Java csomópontjaival való munka világában. A csomópontok a dokumentumok szerkezetének alapvető elemei, és a kezelésük megértése alapvető fontosságú a dokumentumfeldolgozási feladatokhoz. Különféle szempontokat fogunk megvizsgálni, beleértve a szülőcsomópontok megszerzését, a gyermek csomópontok felsorolását, valamint a bekezdéscsomópontok létrehozását és hozzáadását.
 
-## 1. Bemutatkozás
+## 1. Bevezetés
 Az Aspose.Words for Java egy hatékony könyvtár a Word-dokumentumokkal való programozott munkavégzéshez. A csomópontok a Word-dokumentum különböző elemeit képviselik, például bekezdéseket, futásokat, szakaszokat és egyebeket. Ebben az oktatóanyagban megvizsgáljuk, hogyan lehet hatékonyan manipulálni ezeket a csomópontokat.
 
 ## 2. Első lépések

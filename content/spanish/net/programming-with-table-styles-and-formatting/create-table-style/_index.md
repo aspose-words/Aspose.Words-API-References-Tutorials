@@ -2,7 +2,7 @@
 title: Crear estilo de tabla
 linktitle: Crear estilo de tabla
 second_title: API de procesamiento de documentos Aspose.Words
-description: Cree y aplique estilo a tablas en documentos de Word utilizando Aspose.Words para .NET. Aprenda paso a paso a mejorar sus documentos con formato de tabla profesional.
+description: Cree y aplique estilo a tablas en documentos de Word utilizando Aspose.Words para .NET. Aprenda paso a paso a mejorar sus documentos con formato de tablas profesional.
 type: docs
 weight: 10
 url: /es/net/programming-with-table-styles-and-formatting/create-table-style/
@@ -14,7 +14,7 @@ url: /es/net/programming-with-table-styles-and-formatting/create-table-style/
 ## Requisitos previos
 
 Antes de pasar al código, asegurémonos de que tiene todo lo que necesita:
-- Aspose.Words para .NET: asegúrese de tener instalada esta poderosa biblioteca. Puede[descarguelo aqui](https://releases.aspose.com/words/net/).
+- Aspose.Words para .NET: asegúrese de tener instalada esta poderosa biblioteca. Puede[descárgalo aquí](https://releases.aspose.com/words/net/).
 - Entorno de desarrollo: Visual Studio o cualquier otro entorno de desarrollo .NET.
 - Conocimientos básicos de C#: será útil tener cierta familiaridad con la programación en C#.
 

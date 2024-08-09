@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Passo 2: Configurar opções para salvar PDF
 
- A seguir, configuramos o`PdfSaveOptions` para garantir que apenas os subconjuntos de fontes necessários sejam incorporados. Definindo`EmbedFullFonts` para`false`, dizemos ao Aspose.Words para incorporar apenas os glifos usados no documento.
+ A seguir, configuramos o`PdfSaveOptions` para garantir que apenas os subconjuntos de fontes necessários sejam incorporados. Ao definir`EmbedFullFonts` para`false`, dizemos ao Aspose.Words para incorporar apenas os glifos usados no documento.
 
 ```csharp
 // O PDF de saída conterá subconjuntos das fontes do documento.
@@ -73,7 +73,7 @@ aí está! Seguindo estas etapas simples, você pode reduzir com eficiência o t
 Incorporar apenas os subconjuntos de fontes necessários pode reduzir significativamente o tamanho do arquivo PDF sem comprometer a aparência e a legibilidade do documento.
 
 ### Posso voltar a incorporar fontes completas, se necessário?
- Sim você pode. Basta definir o`EmbedFullFonts`propriedade para`true` no`PdfSaveOptions`.
+ Sim, você pode. Basta definir o`EmbedFullFonts`propriedade para`true` no`PdfSaveOptions`.
 
 ### O Aspose.Words for .NET oferece suporte a outros recursos de otimização de PDF?
 Absolutamente! Aspose.Words for .NET oferece uma variedade de opções para otimizar PDFs, incluindo compactação de imagens e remoção de objetos não utilizados.

@@ -28,7 +28,7 @@ using System;
 using Aspose.Words;
 ```
 
-## Hướng dẫn từng bước một
+## Hướng dẫn từng bước
 
 Hãy chia nhỏ quy trình thành các bước đơn giản, dễ thực hiện. Mỗi bước sẽ hướng dẫn bạn thực hiện một phần cụ thể của nhiệm vụ, đảm bảo bạn hiểu mọi thứ một cách rõ ràng.
 
@@ -67,7 +67,7 @@ Console.WriteLine("The protection type of the document is: " + protectionType);
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã truy xuất thành công loại bảo vệ của tài liệu Word bằng Aspose.Words cho .NET. Điều này có thể cực kỳ hữu ích để đảm bảo tài liệu của bạn được bảo mật đúng cách hoặc chỉ dành cho mục đích kiểm tra. Hãy nhớ rằng, Aspose.Words cung cấp rất nhiều tính năng khác có thể giúp bạn thao tác tài liệu Word một cách dễ dàng. Hãy dùng thử và chúc bạn viết mã vui vẻ!
+Và bạn có nó! Bạn đã truy xuất thành công loại bảo vệ của tài liệu Word bằng Aspose.Words cho .NET. Điều này có thể cực kỳ hữu ích để đảm bảo tài liệu của bạn được bảo mật đúng cách hoặc chỉ dành cho mục đích kiểm tra. Hãy nhớ rằng, Aspose.Words cung cấp rất nhiều tính năng khác có thể giúp bạn thao tác tài liệu Word một cách dễ dàng. Hãy dùng thử và chúc bạn viết mã vui vẻ!
 
 ## Câu hỏi thường gặp
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-shapes/aspect-ratio-locked/
 ---
-## Úvod
+## Zavedení
 
 Přemýšleli jste někdy, jak zachovat dokonalé proporce obrázků a tvarů v dokumentech aplikace Word? Někdy je potřeba zajistit, aby se vaše obrázky a tvary při změně velikosti nezkreslily. Zde se hodí uzamčení poměru stran. V tomto tutoriálu prozkoumáme, jak nastavit poměr stran tvarů v dokumentech aplikace Word pomocí Aspose.Words for .NET. Rozdělíme to do snadno pochopitelných kroků, abychom zajistili, že tyto dovednosti můžete s důvěrou aplikovat na své projekty.
 
@@ -78,7 +78,7 @@ doc.Save(dataDir + "WorkingWithShapes.AspectRatioLocked.docx");
 
 ## Závěr
 
-Gratulujeme! Úspěšně jste se naučili, jak nastavit poměr stran tvarů v dokumentech aplikace Word pomocí Aspose.Words for .NET. Dodržením těchto kroků zajistíte, že si vaše obrázky a tvary zachovají své proporce a vaše dokumenty budou vypadat profesionálně a vyleštěně. Nebojte se experimentovat s různými obrázky a tvary, abyste viděli, jak funkce uzamčení poměru stran funguje v různých scénářích.
+Gratuluji! Úspěšně jste se naučili, jak nastavit poměr stran tvarů v dokumentech aplikace Word pomocí Aspose.Words for .NET. Dodržením těchto kroků zajistíte, že si vaše obrázky a tvary zachovají své proporce a vaše dokumenty budou vypadat profesionálně a vyleštěně. Nebojte se experimentovat s různými obrázky a tvary, abyste viděli, jak funkce uzamčení poměru stran funguje v různých scénářích.
 
 ## FAQ
 
@@ -95,4 +95,4 @@ Absolutně! Funkci uzamčení poměru stran lze použít na jakýkoli tvar, vče
 Ano, Aspose.Words for .NET podporuje .NET Framework i .NET Core.
 
 ### Kde najdu další dokumentaci k Aspose.Words pro .NET?
- Můžete najít komplexní dokumentaci[tady](https://reference.aspose.com/words/net/).
+ Můžete najít komplexní dokumentaci[zde](https://reference.aspose.com/words/net/).

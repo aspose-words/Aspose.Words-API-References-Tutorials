@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /hu/net/working-with-fonts/receive-notifications-of-fonts/
 ---
-
+## Bevezetés
 
 Ha valaha is szembesült azzal, hogy a betűtípusok nem jelennek meg megfelelően a dokumentumokban, nincs egyedül. A betűkészlet-beállítások kezelése és a betűtípus-helyettesítésekről szóló értesítések fogadása sok fejfájástól kímélheti meg. Ebben az átfogó útmutatóban megvizsgáljuk, hogyan kezelheti a betűtípus-értesítéseket az Aspose.Words for .NET használatával, így biztosítva, hogy a dokumentumok mindig a legjobban nézzenek ki.
 
@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 2. lépés: Töltse be a dokumentumot
 
- Töltse be a dokumentumot egy Aspose.Words-be`Document` tárgy. Ez lehetővé teszi a dokumentum programozott kezelését.
+ Töltse be a dokumentumot egy Aspose.Words-be`Document` objektum. Ez lehetővé teszi a dokumentum programozott kezelését.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -117,7 +117,7 @@ Nem, csak egy alapértelmezett betűtípust adhat meg helyettesítéshez. Azonba
 
 ### 4. kérdés: Hol találok támogatást az Aspose.Words számára?
 
- Meglátogatni a[Aspose.Words támogatási fórum](https://forum.aspose.com/c/words/8) segítségért.
+ Látogassa meg a[Aspose.Words támogatási fórum](https://forum.aspose.com/c/words/8) segítségért.
 
 ### 5. kérdés: Kapható-e ideiglenes licenc az Aspose.Words számára?
 

@@ -77,7 +77,7 @@ Finalmente, después de insertar la tabla, debe guardar su documento. Este paso 
 doc.Save(dataDir + "WorkingWithTables.InsertTableFromHtml.docx");
 ```
 
-¡Y eso es! Ha insertado con éxito una tabla de HTML en un documento de Word usando Aspose.Words para .NET.
+¡Y eso es todo! Ha insertado con éxito una tabla de HTML en un documento de Word usando Aspose.Words para .NET.
 
 ## Conclusión
 

@@ -12,7 +12,7 @@ url: /zh-hant/net/working-with-formfields/
  ## 教學
 | 標題 | 描述 |
 | --- | --- |
-| [插入表單字段](./insert-form-fields/) | 了解如何使用 Aspose.Words for .NET 將下拉表單欄位插入 Word 文件中。 |
-| [表單欄位使用屬性](./form-fields-work-with-properties/) | 了解如何使用 Aspose.Words for .NET 處理 Word 文件中的表單欄位屬性。 |
-| [表單欄位取得表單欄位集合](./form-fields-get-form-fields-collection/) | 了解如何使用 Aspose.Words for .NET 擷取和操作 Word 文件中的表單欄位集合。 |
-| [表單欄位按名稱取得](./form-fields-get-by-name/) | 了解如何使用 Aspose.Words for .NET 在 Word 文件中按名稱擷取和修改表單欄位。 |
+| [插入表單字段](./insert-form-fields/) | 透過我們詳細的逐步指南，了解如何使用 Aspose.Words for .NET 在 Word 文件中插入組合框表單欄位。 |
+| [表單欄位使用屬性](./form-fields-work-with-properties/) | 透過我們詳細的逐步指南，了解如何使用 Aspose.Words for .NET 操作 Word 文件中的表單欄位。 |
+| [表單欄位取得表單欄位集合](./form-fields-get-form-fields-collection/) | 透過我們全面的逐步指南，了解如何使用 Aspose.Words for .NET 取得和操作 Word 文件中的表單欄位。 |
+| [表單欄位按名稱取得](./form-fields-get-by-name/) | 透過這份詳細的逐步指南，了解如何使用 Aspose.Words for .NET 在 Word 文件中按名稱取得和修改表單欄位。 |

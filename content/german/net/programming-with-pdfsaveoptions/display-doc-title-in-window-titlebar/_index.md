@@ -54,7 +54,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- Indem man es einstellt`DisplayDocTitle` Zu`true`weisen wir Aspose.Words an, den Dokumenttitel in der Titelleiste des PDF-Fensters zu verwenden.
+ Durch die Einstellung`DisplayDocTitle` Zu`true`weisen wir Aspose.Words an, den Dokumenttitel in der Titelleiste des PDF-Fensters zu verwenden.
 
 ## Schritt 3: Speichern Sie das Dokument als PDF
 

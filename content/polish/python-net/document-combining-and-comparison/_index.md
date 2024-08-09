@@ -2,14 +2,14 @@
 title: Łączenie i porównywanie dokumentów
 linktitle: Łączenie i porównywanie dokumentów
 second_title: Aspose.Words API do zarządzania dokumentami w języku Python
-description: Odkryj kompleksowe samouczki na temat łączenia i porównywania dokumentów przy użyciu Aspose.Words dla Pythona i .NET. Dowiedz się, jak płynnie łączyć i porównywać dokumenty, usprawniając przepływ pracy w zakresie przetwarzania dokumentów.
+description: Odkryj obszerne samouczki na temat łączenia i porównywania dokumentów przy użyciu Aspose.Words dla Pythona i .NET. Dowiedz się, jak płynnie łączyć i porównywać dokumenty, usprawniając przepływ pracy w zakresie przetwarzania dokumentów.
 type: docs
 weight: 12
 url: /pl/python-net/document-combining-and-comparison/
 ---
 ## Wprowadzenie do łączenia i porównywania dokumentów za pomocą Aspose.Words
 
-Witamy w świecie tutoriali Aspose.Words poświęconych łączeniu i porównywaniu dokumentów! W tej serii samouczków zagłębimy się w potężne możliwości Aspose.Words dla Pythona i .NET, umożliwiające łączenie i porównywanie dokumentów z łatwością i precyzją. Niezależnie od tego, czy pracujesz z umowami, raportami czy innymi dokumentami tekstowymi, opanowanie technik łączenia i porównywania dokumentów może znacznie usprawnić przepływ pracy w przetwarzaniu dokumentów.
+Witamy w świecie tutoriali Aspose.Words poświęconych łączeniu i porównywaniu dokumentów! W tej serii samouczków zagłębimy się w potężne możliwości Aspose.Words dla Pythona i .NET, umożliwiające łączenie i porównywanie dokumentów z łatwością i precyzją. Niezależnie od tego, czy pracujesz z umowami, raportami czy innymi dokumentami tekstowymi, opanowanie technik łączenia i porównywania dokumentów może znacząco usprawnić przepływ pracy związany z przetwarzaniem dokumentów.
 
 ## Znaczenie łączenia i porównywania dokumentów
 
@@ -29,7 +29,7 @@ Pod koniec tych samouczków będziesz wyposażony w umiejętności płynnego ł�
 
 ## Samouczki dotyczące łączenia i porównywania dokumentów
 ### [Łączenie i porównywanie dokumentów w programie Word](./merge-compare-documents/)
-Łącz i porównuj dokumenty programu Word bez wysiłku, korzystając z Aspose.Words dla Pythona. Dowiedz się, jak manipulować dokumentami, podkreślać różnice i automatyzować zadania.
+Łącz i porównuj dokumenty programu Word bez wysiłku, korzystając z Aspose.Words dla języka Python. Dowiedz się, jak manipulować dokumentami, podkreślać różnice i automatyzować zadania.
 ### [Wykorzystanie mocy zakładek w dokumentach](./document-bookmarks/)
 Dowiedz się, jak wykorzystać moc zakładek dokumentów przy użyciu Aspose.Words dla Pythona. Twórz, zarządzaj i poruszaj się po zakładkach, korzystając z przewodników krok po kroku i przykładów kodu.
 ### [Nawigowanie zakresami dokumentów w celu precyzyjnej edycji](./document-ranges/)

@@ -9,7 +9,7 @@ url: /nl/net/basic-conversions/docx-to-pdf/
 ---
 ## Invoering
 
-Hallo daar! Heeft u ooit een Word-document naar een PDF moeten converteren? Het is een vrij algemene taak, vooral in professionele omgevingen waar PDF's de voorkeur hebben vanwege hun vaste opmaak en beveiligingsfuncties. Als je met .NET werkt, heb je geluk, want Aspose.Words voor .NET maakt dit proces een fluitje van een cent. In deze zelfstudie gaan we dieper in op de manier waarop u een Word-bestand naar PDF kunt converteren met Aspose.Words voor .NET. Bereid u voor op een stapsgewijze handleiding die gemakkelijk te volgen is, zelfs als u een nieuweling bent. Laten we beginnen!
+Hé daar! Heeft u ooit een Word-document naar een PDF moeten converteren? Het is een vrij algemene taak, vooral in professionele omgevingen waar PDF's de voorkeur hebben vanwege hun vaste opmaak en beveiligingsfuncties. Als je met .NET werkt, heb je geluk, want Aspose.Words voor .NET maakt dit proces een fluitje van een cent. In deze zelfstudie gaan we dieper in op de manier waarop u een Word-bestand naar PDF kunt converteren met Aspose.Words voor .NET. Bereid u voor op een stapsgewijze handleiding die gemakkelijk te volgen is, zelfs als u een nieuweling bent. Laten we beginnen!
 
 ## Vereisten
 
@@ -44,7 +44,7 @@ U moet de Aspose.Words voor .NET-bibliotheek aan uw project toevoegen. U kunt di
 
 1. Klik met de rechtermuisknop op uw project in Solution Explorer.
 2. Selecteer "NuGet-pakketten beheren".
-3.  Zoeken`Aspose.Words` en installeer het.
+3.  Zoeken naar`Aspose.Words` en installeer het.
 
 ## Stap 2: Laad het Word-document
 

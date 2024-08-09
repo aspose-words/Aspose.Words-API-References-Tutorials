@@ -15,7 +15,7 @@ Sind Sie bereit, in die Welt der Dokumentformatierung in Word einzutauchen? Egal
 
 Bevor wir loslegen, stellen Sie sicher, dass Sie Folgendes haben:
 
-1.  Aspose.Words für .NET: Sie müssen diese Bibliothek in Ihrer .NET-Umgebung installiert haben. Sie können[hier herunterladen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET: Sie müssen diese Bibliothek in Ihrer .NET-Umgebung installiert haben. Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Grundkenntnisse in .NET: Wenn Sie mit C# oder einer anderen .NET-Sprache vertraut sind, können Sie die bereitgestellten Codeausschnitte besser verstehen.
 3. Eine Entwicklungsumgebung: Stellen Sie sicher, dass Sie eine IDE wie Visual Studio zum Schreiben und Ausführen von .NET-Code eingerichtet haben.
 
@@ -74,7 +74,7 @@ Hier ist eine Aufschlüsselung der Funktion dieses Codes:
 
 -  Initialisieren`styleName`: Wir beginnen mit einer leeren Zeichenfolge, um unsere Liste mit Stilnamen zu erstellen.
 -  Schleife durch die Stile: Die`foreach` Schleife iteriert über jeden`Style` im`styles` Sammlung.
-- Aktualisieren und Anzeigen`styleName` : Für jeden Stil fügen wir seinen Namen hinzu an`styleName` und drucken Sie es aus.
+- Aktualisieren und Anzeigen`styleName` : Für jeden Stil hängen wir seinen Namen an`styleName` und drucken Sie es aus.
 
 ## Schritt 4: Ausgabe anpassen
 

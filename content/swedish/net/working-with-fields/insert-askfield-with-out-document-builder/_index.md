@@ -19,7 +19,7 @@ Innan vi smutsar ner händerna med lite kod, låt oss se till att vi har allt in
 2. Utvecklingsmiljö: En lämplig IDE som Visual Studio.
 3. .NET Framework: Se till att du har .NET Framework installerat.
 
-Bra! Nu när vi är klara, låt oss börja med att importera de nödvändiga namnrymden.
+Stor! Nu när vi är klara, låt oss börja med att importera de nödvändiga namnrymden.
 
 ## Importera namnområden
 
@@ -44,7 +44,7 @@ Document doc = new Document();
 
 Det här kodavsnittet skapar ett nytt Word-dokument där vi lägger till vårt ASK-fält.
 
-## Steg 2: Gå till paragrafnoden
+## Steg 2: Öppna paragrafnoden
 
 I ett Word-dokument är innehållet organiserat i noder. Vi måste komma åt noden första stycket där vi infogar vårt ASK-fält:
 

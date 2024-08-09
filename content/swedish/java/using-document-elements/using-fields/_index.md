@@ -10,7 +10,7 @@ url: /sv/java/using-document-elements/using-fields/
 
 denna steg-för-steg handledning kommer vi att guida dig om hur du använder fält i Aspose.Words för Java för att enkelt manipulera dokument. Aspose.Words för Java är ett kraftfullt API som låter dig arbeta med Word-dokument programmatiskt, vilket ger dig full kontroll över deras innehåll och formatering.
 
-## 1. Introduktion
+## 1. Inledning
 
 Aspose.Words för Java är ett viktigt verktyg för alla som arbetar med Word-dokument i Java-applikationer. Fält är platshållare som kan lagra dynamisk data i ditt dokument. Denna handledning visar dig hur du arbetar med fält effektivt.
 
@@ -28,7 +28,7 @@ string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
 ```
 
- Byta ut`"Your Document Directory"`och`"Your Output Directory"` med lämpliga vägar.
+ Ersätta`"Your Document Directory"`och`"Your Output Directory"` med lämpliga vägar.
 
 ## 4. Anpassa Mail Merge
 
@@ -62,7 +62,7 @@ När du har anpassat ditt dokument kan du spara det med följande kod:
 doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
 ```
 
- Byta ut`"Your Output Directory"` med önskad utgångsväg.
+ Ersätta`"Your Output Directory"` med önskad utgångsväg.
 
 ## Komplett källkod
 ```java
@@ -239,7 +239,7 @@ Källkod för Class HandleMergeField
     {
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs args)
         {
-            // Göra ingenting.
+            // Gör ingenting.
         }
         /// <sammanfattning>
         /// Detta kallas när kopplingsmotorn stöter på Image:XXX kopplingsfält i dokumentet.
@@ -320,7 +320,7 @@ Källkod för Class HandleMergeField
         }
         public void /*IFieldMergingCallback.*/imageFieldMerging(ImageFieldMergingArgs args)
         {
-            // Göra ingenting.
+            // Gör ingenting.
         }
         private DocumentBuilder mBuilder;
         private int mRowIdx;
@@ -353,7 +353,7 @@ Källkod för Class HandleMergeField
 }
 ```
 
-## 6. Sammanfattning
+## 6. Slutsats
 
 Grattis! Du har lärt dig hur du använder fält i Aspose.Words för Java för att manipulera Word-dokument dynamiskt. Detta kraftfulla API ger dig fullständig kontroll över dina dokument, vilket gör det till en värdefull tillgång för Java-utvecklare.
 

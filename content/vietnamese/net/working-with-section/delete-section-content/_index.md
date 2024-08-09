@@ -9,7 +9,7 @@ url: /vi/net/working-with-section/delete-section-content/
 ---
 ## Giới thiệu
 
-Xin chào các bạn đam mê Word! Bạn đã bao giờ thấy mình đắm chìm trong một tài liệu dài và ước gì có thể xóa nội dung của một phần cụ thể một cách kỳ diệu mà không cần xóa từng đoạn văn bản theo cách thủ công? Vâng, bạn thật may mắn! Trong hướng dẫn này, chúng ta sẽ khám phá cách xóa nội dung của một phần trong tài liệu Word bằng Aspose.Words cho .NET. Thủ thuật tiện lợi này sẽ giúp bạn tiết kiệm rất nhiều thời gian và giúp quá trình chỉnh sửa tài liệu của bạn suôn sẻ hơn nhiều. Sẵn sàng để đi sâu vào? Bắt đầu nào!
+Xin chào các bạn đam mê Word! Bạn đã bao giờ thấy mình đắm chìm trong một tài liệu dài và ước gì có thể xóa nội dung của một phần cụ thể một cách kỳ diệu mà không cần xóa từng đoạn văn bản theo cách thủ công? Vâng, bạn thật may mắn! Trong hướng dẫn này, chúng ta sẽ khám phá cách xóa nội dung của một phần trong tài liệu Word bằng Aspose.Words cho .NET. Thủ thuật tiện lợi này sẽ giúp bạn tiết kiệm rất nhiều thời gian và giúp quá trình chỉnh sửa tài liệu của bạn suôn sẻ hơn nhiều. Sẵn sàng để đi sâu vào? Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
@@ -84,7 +84,7 @@ doc.Save(dataDir + "Document_Without_Section_Content.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! 🎉 Bạn đã xóa thành công nội dung của một phần trong tài liệu Word bằng Aspose.Words for .NET. Phương pháp này có thể là cứu cánh thực sự, đặc biệt khi xử lý các tài liệu lớn hoặc các công việc lặp đi lặp lại. Hãy nhớ rằng, luyện tập sẽ tạo nên sự hoàn hảo, vì vậy hãy tiếp tục thử nghiệm các tính năng khác nhau của Aspose.Words để trở thành một chuyên gia thao tác tài liệu. Chúc mừng mã hóa!
+Và bạn có nó! 🎉 Bạn đã xóa thành công nội dung của một phần trong tài liệu Word bằng Aspose.Words for .NET. Phương pháp này có thể là cứu cánh thực sự, đặc biệt khi xử lý các tài liệu lớn hoặc các công việc lặp đi lặp lại. Hãy nhớ rằng, luyện tập sẽ tạo nên sự hoàn hảo, vì vậy hãy tiếp tục thử nghiệm các tính năng khác nhau của Aspose.Words để trở thành một chuyên gia thao tác tài liệu. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 

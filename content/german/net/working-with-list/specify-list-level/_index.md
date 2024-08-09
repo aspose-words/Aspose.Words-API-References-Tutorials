@@ -2,19 +2,41 @@
 title: Listenebene angeben
 linktitle: Listenebene angeben
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET die Listenebene in einem Word-Dokument angeben.
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET mehrstufige nummerierte und Aufzählungslisten in Word-Dokumenten erstellen. Schritt-für-Schritt-Anleitung enthalten. Perfekt für .NET-Entwickler.
 type: docs
 weight: 10
 url: /de/net/working-with-list/specify-list-level/
 ---
+## Einführung
 
-In dieser Schritt-für-Schritt-Anleitung zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET die Listenebene in einem Word-Dokument festlegen. Wir erklären den bereitgestellten C#-Quellcode und zeigen Ihnen, wie Sie ihn in Ihren eigenen Projekten implementieren.
+Hallo, Programmiererkollege! Wenn Sie jemals mit dem Erstellen dynamischer und komplexer Listen in Word-Dokumenten mit .NET zu kämpfen hatten, erwartet Sie eine echte Freude. Heute tauchen wir in die Welt von Aspose.Words für .NET ein. Insbesondere konzentrieren wir uns auf das Festlegen von Listenebenen. Betrachten Sie es als eine Verbesserung Ihrer Dokumentfähigkeiten, mit der Sie mühelos professionelle, ausgefeilte Listen erstellen können. Am Ende dieses Handbuchs verfügen Sie über einen klaren Weg zum Erstellen von nummerierten und Aufzählungslisten mit mehreren Ebenen. Bereit? Lassen Sie uns direkt loslegen!
 
- Stellen Sie zunächst sicher, dass Aspose.Words für .NET in Ihrer Entwicklungsumgebung installiert und konfiguriert ist. Wenn Sie dies noch nicht getan haben, laden Sie die Bibliothek herunter und installieren Sie sie von[[Originaltext von Aspose.Releases]https://releases.aspose.com/words/net/.
+## Voraussetzungen
 
-## Schritt 1: Erstellen des Dokuments und des Dokumentgenerators
+Bevor wir uns ins Detail stürzen, stellen wir sicher, dass wir alles haben, was wir brauchen. Hier ist eine kurze Checkliste:
 
-Erstellen Sie zunächst ein neues Dokument und einen zugehörigen Dokumentgenerator:
+1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Bibliothek Aspose.Words für .NET installiert haben. Sie können sie herunterladen[Hier](https://releases.aspose.com/words/net/).
+2. Entwicklungsumgebung: Eine IDE wie Visual Studio wird Ihnen das Leben leichter machen.
+3. .NET Framework: Stellen Sie sicher, dass .NET Framework auf Ihrem Computer installiert ist.
+4. Grundlegende Kenntnisse in C#: Dieses Tutorial setzt voraus, dass Sie mit der grundlegenden C#-Programmierung vertraut sind.
+
+Alles dabei? Super! Dann legen wir los.
+
+## Namespaces importieren
+
+Als Erstes müssen wir die erforderlichen Namespaces importieren. Öffnen Sie Ihr C#-Projekt und fügen Sie die folgenden using-Direktiven hinzu:
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Dies bereitet die Grundlage für die Arbeit mit Aspose.Words in Ihrem Projekt.
+
+## Schritt 1: Einrichten des Dokuments und des DocumentBuilder
+
+ Beginnen wir mit der Erstellung eines neuen Dokuments und einer`DocumentBuilder` Objekt, damit zu arbeiten.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -22,113 +44,83 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Schritt 2: Erstellen und Anwenden einer nummerierten Liste
+## Schritt 2: Erstellen einer nummerierten Liste
 
-Erstellen Sie als Nächstes eine nummerierte Liste basierend auf einer der Listenvorlagen von Microsoft Word und wenden Sie sie auf den aktuellen Absatz im Dokument-Generator an:
+ Nun erstellen wir eine nummerierte Liste auf der Grundlage einer der Microsoft Word-Listenvorlagen und wenden sie auf die`DocumentBuilder`'s aktueller Absatz.
 
 ```csharp
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 ```
 
-## Schritt 3: Spezifikation der Listenebene
+## Schritt 3: Mehrere Listenebenen anwenden
 
- Verwenden Sie den Dokumentgenerator`ListLevelNumber` -Eigenschaft, um die Listenebene anzugeben und dem Absatz Text hinzuzufügen:
+Mit Aspose.Words können Sie bis zu neun Ebenen für eine Liste angeben. Wenden wir alle an, um zu sehen, wie es funktioniert.
 
 ```csharp
 for (int i = 0; i < 9; i++)
 {
-     builder.ListFormat.ListLevelNumber = i;
-     builder.Writeln("Level " + i);
+    builder.ListFormat.ListLevelNumber = i;
+    builder.Writeln("Level " + i);
 }
 ```
 
-Wiederholen Sie diese Schritte, um Listenebenen anzugeben und auf jeder Ebene Text hinzuzufügen.
+In dieser Schleife legen wir die Listenebene für jeden Absatz fest und schreiben eine Textzeile, die die Ebene angibt.
 
-## Schritt 4: Erstellen und Anwenden einer Aufzählungsliste
+## Schritt 4: Erstellen einer Aufzählungsliste
 
-Sie können eine Aufzählungsliste auch mithilfe einer der Listenvorlagen von Microsoft Word erstellen und anwenden:
+Lassen Sie uns als Nächstes den Kurs ändern und eine Aufzählungsliste erstellen. Dieses Mal verwenden wir eine andere Listenvorlage.
 
 ```csharp
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 ```
 
-## Schritt 5: Hinzufügen von Text zu Aufzählungslistenebenen
+## Schritt 5: Anwenden mehrerer Ebenen auf die Aufzählungsliste
 
- Verwenden Sie die`ListLevelNumber` -Eigenschaft erneut, um die Aufzählungslistenebene anzugeben und Text hinzuzufügen:
+Genau wie bei der nummerierten Liste wenden wir mehrere Ebenen auf unsere Aufzählungsliste an.
 
 ```csharp
 for (int i = 0; i < 9; i++)
 {
-     builder.ListFormat.ListLevelNumber = i;
-     builder.Writeln("Level " + i);
+    builder.ListFormat.ListLevelNumber = i;
+    builder.Writeln("Level " + i);
 }
 ```
 
-## Schritt 6: Formatierungsliste beenden
+## Schritt 6: Listenformatierung stoppen
 
- Um die Formatierung der Liste zu beenden, setzen Sie`null` zum`List`Eigenschaft des Dokumentgenerators:
-
-```csharp
-builder. ListFormat. List = null;
-```
-
-## Schritt 7: Speichern des geänderten Dokuments
-
-Speichern Sie das geänderte Dokument:
+Sehen wir uns abschließend an, wie wir die Listenformatierung beenden können, um zum normalen Text zurückzukehren.
 
 ```csharp
-builder.Document.Save(dataDir + "SpecifyListLevel.docx");
-```
-
-So! Sie haben die Listenebene in einem Word-Dokument erfolgreich mit Aspose.Words für .NET angegeben.
-
-### Beispielquellcode zum Festlegen der Listenebene
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-// Erstellen Sie eine nummerierte Liste basierend auf einer der Microsoft Word-Listenvorlagen
-//und wenden Sie es auf den aktuellen Absatz des Dokument-Generators an.
-builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
-
-// Diese Liste enthält neun Level. Probieren wir sie alle aus.
-for (int i = 0; i < 9; i++)
-{
-	builder.ListFormat.ListLevelNumber = i;
-	builder.Writeln("Level " + i);
-}
-
-// Erstellen Sie eine Aufzählungsliste basierend auf einer der Microsoft Word-Listenvorlagen
-//und wenden Sie es auf den aktuellen Absatz des Dokument-Generators an.
-builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
-
-for (int i = 0; i < 9; i++)
-{
-	builder.ListFormat.ListLevelNumber = i;
-	builder.Writeln("Level " + i);
-}
-
-// Auf diese Weise können Sie die Listenformatierung beenden.
 builder.ListFormat.List = null;
-
-builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
-            
 ```
 
-### Häufig gestellte Fragen
+## Schritt 7: Speichern des Dokuments
 
-#### F: Wie kann ich die Listenebene in Aspose.Words angeben?
+Nach all der harten Arbeit ist es Zeit, unser Dokument zu speichern. Speichern wir es unter einem aussagekräftigen Namen.
 
- A: Um die Listenebene in Aspose.Words festzulegen, müssen Sie eine Instanz des`List` Klasse und geben Sie ihr eine nummerierte Liste. Dann können Sie die`Paragraph.ListFormat.ListLevelNumber` -Eigenschaft, um die Ebene jedes Listenelements anzugeben. Sie können diese Liste mit einem Abschnitt Ihres Dokuments verknüpfen, damit die Listenelemente die gewünschte Ebene haben.
+```csharp
+builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
+```
 
-#### F: Ist es möglich, das Nummerierungsformat von Listenelementen in Aspose.Words zu ändern?
+Und das war’s! Sie haben gerade mit Aspose.Words für .NET ein Dokument mit komplexen Listenstrukturen erstellt.
 
- A: Ja, Sie können das Nummerierungsformat von Listenelementen in Aspose.Words ändern.`ListLevel` bietet hierfür mehrere Eigenschaften an, wie zum Beispiel`ListLevel.NumberFormat`, `ListLevel.NumberStyle`, `ListLevel.NumberPosition`usw. Mit diesen Eigenschaften können Sie das Nummerierungsformat für Listenelemente festlegen, beispielsweise arabische Ziffern, römische Ziffern, Buchstaben usw.
+## Abschluss
 
-#### F: Kann ich einer nummerierten Liste in Aspose.Words weitere Ebenen hinzufügen?
+Das Erstellen strukturierter und mehrstufiger Listen in Word-Dokumenten kann die Lesbarkeit und Professionalität erheblich verbessern. Mit Aspose.Words für .NET können Sie diesen Prozess automatisieren, was Ihnen Zeit spart und Konsistenz gewährleistet. Wir hoffen, dass dieser Leitfaden Ihnen geholfen hat zu verstehen, wie Sie Listenebenen effektiv angeben können. Experimentieren Sie weiter und sehen Sie, wie leistungsstark dieses Tool für Ihre Dokumentverarbeitungsanforderungen sein kann.
 
- A: Ja, es ist möglich, einer nummerierten Liste in Aspose.Words zusätzliche Ebenen hinzuzufügen.`ListLevel`Mit der Klasse können Sie Formatierungseigenschaften für jede Ebene der Liste festlegen. Sie können Optionen wie Präfix, Suffix, Ausrichtung, Einzug usw. festlegen. Auf diese Weise können Sie Listen mit mehreren Hierarchieebenen erstellen.
+## Häufig gestellte Fragen
 
+### Was ist Aspose.Words für .NET?
+Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Sie Word-Dokumente programmgesteuert in C# erstellen, bearbeiten, konvertieren und drucken können.
 
+### Kann ich Aspose.Words kostenlos nutzen?
+Aspose.Words bietet eine kostenlose Testversion an, die Sie herunterladen können[Hier](https://releases.aspose.com/) . Für eine Vollversion können Sie die Kaufoptionen prüfen[Hier](https://purchase.aspose.com/buy).
+
+### Wie viele Ebenen kann ich mit Aspose.Words in einer Liste angeben?
+Mit Aspose.Words können Sie bis zu neun Ebenen in einer Liste angeben.
+
+### Ist es möglich, nummerierte Listen und Aufzählungslisten in einem einzigen Dokument zu mischen?
+Ja, Sie können verschiedene Listentypen in einem einzigen Dokument mischen, indem Sie die Listenvorlage nach Bedarf ändern.
+
+### Wo finde ich weitere Dokumentation zu Aspose.Words für .NET?
+ Eine ausführliche Dokumentation finden Sie[Hier](https://reference.aspose.com/words/net/).

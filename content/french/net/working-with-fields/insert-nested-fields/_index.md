@@ -98,7 +98,7 @@ doc.Save(dataDir + "InsertNestedFields.docx");
 
 ## Conclusion
 
-Et voila! Vous avez inséré avec succès des champs imbriqués dans un document Word à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite incroyablement la manipulation de documents Word par programmation. Que vous génériez des rapports, créiez des modèles ou automatisiez des flux de travail documentaires, Aspose.Words est là pour vous.
+Et voilà ! Vous avez inséré avec succès des champs imbriqués dans un document Word à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite incroyablement la manipulation de documents Word par programmation. Que vous génériez des rapports, créiez des modèles ou automatisiez des flux de travail documentaires, Aspose.Words est là pour vous.
 
 ## FAQ
 

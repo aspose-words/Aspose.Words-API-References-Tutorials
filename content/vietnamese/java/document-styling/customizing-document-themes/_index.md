@@ -10,7 +10,7 @@ url: /vi/java/document-styling/customizing-document-themes/
 
 ## Giới thiệu
 
-Tùy chỉnh chủ đề tài liệu là một khía cạnh quan trọng của việc xử lý tài liệu trong các ứng dụng Java. Với Aspose.Words for Java, bạn có thể dễ dàng đạt được điều này. Trong hướng dẫn toàn diện này, chúng tôi sẽ hướng dẫn bạn từng bước về quy trình tùy chỉnh chủ đề tài liệu, cung cấp cho bạn các ví dụ về mã nguồn và thông tin chi tiết có giá trị trong quá trình thực hiện. Cho dù bạn là người mới bắt đầu hay nhà phát triển có kinh nghiệm, hướng dẫn này sẽ giúp bạn nắm vững nghệ thuật tùy chỉnh chủ đề tài liệu bằng Aspose.Words for Java.
+Tùy chỉnh chủ đề tài liệu là một khía cạnh quan trọng của việc xử lý tài liệu trong các ứng dụng Java. Với Aspose.Words for Java, bạn có thể dễ dàng đạt được điều này. Trong hướng dẫn toàn diện này, chúng tôi sẽ hướng dẫn bạn từng bước về quy trình tùy chỉnh chủ đề tài liệu, cung cấp cho bạn các ví dụ về mã nguồn và thông tin chi tiết có giá trị trong quá trình thực hiện. Cho dù bạn là người mới bắt đầu hay nhà phát triển có kinh nghiệm, hướng dẫn này sẽ giúp bạn nắm vững nghệ thuật tùy chỉnh chủ đề tài liệu bằng Aspose.Words cho Java.
 
 ## Bắt đầu
 

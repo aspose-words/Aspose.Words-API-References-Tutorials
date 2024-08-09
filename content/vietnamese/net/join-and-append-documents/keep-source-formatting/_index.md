@@ -94,4 +94,4 @@ Có, Aspose.Words hỗ trợ .NET Core, cho phép bạn sử dụng nó trên nh
 Aspose.Words cung cấp các API hiệu quả để làm việc với các tài liệu lớn, bao gồm các tính năng phân trang và quản lý bộ nhớ.
 
 ### Tôi có thể tìm thêm tài nguyên và hỗ trợ cho Aspose.Words ở đâu?
- Tham quan[Aspose.Words cho tài liệu .NET](https://reference.aspose.com/words/net/) để biết các tài liệu tham khảo, ví dụ và hướng dẫn chi tiết về API.
+ Ghé thăm[Aspose.Words cho tài liệu .NET](https://reference.aspose.com/words/net/) để biết các tài liệu tham khảo, ví dụ và hướng dẫn chi tiết về API.

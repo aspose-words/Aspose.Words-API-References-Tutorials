@@ -15,7 +15,7 @@ Als het gaat om documentmanipulatie, is het van cruciaal belang dat u de paginal
 
 Voordat we in de code duiken, laten we eerst bespreken wat u nodig heeft om aan de slag te gaan.
 
--  Aspose.Words voor .NET: Aspose.Words voor .NET moet geïnstalleerd zijn. Jij kan[download het hier](https://releases.aspose.com/words/net/).
+-  Aspose.Words voor .NET: Aspose.Words voor .NET moet geïnstalleerd zijn. Dat kan[download het hier](https://releases.aspose.com/words/net/).
 - Ontwikkelomgeving: Elke .NET-compatibele IDE (bijvoorbeeld Visual Studio).
 - Basiskennis van C#: Bekendheid met programmeren in C# is essentieel.
 
@@ -64,7 +64,7 @@ Het kiezen van het juiste papierformaat is essentieel, afhankelijk van het docum
 builder.PageSetup.PaperSize = PaperSize.Paper10x14; // Stel het papierformaat in op 10 x 14 inch.
 ```
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Sla het document ten slotte op in de door u opgegeven map. Deze stap zorgt ervoor dat al uw instellingen worden toegepast en het document klaar is voor gebruik.
 

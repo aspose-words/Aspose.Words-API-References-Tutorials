@@ -10,7 +10,7 @@ url: /it/python-net/document-structure-and-content-manipulation/document-fields/
 
 La manipolazione dei campi e dei dati nei documenti Word può migliorare notevolmente l'automazione dei documenti e la rappresentazione dei dati. In questa guida esploreremo come lavorare con campi e dati utilizzando l'API Aspose.Words per Python. Dall'inserimento di contenuti dinamici all'estrazione dei dati, tratteremo i passaggi essenziali insieme ad esempi di codice.
 
-## introduzione
+## Introduzione
 
 I documenti di Microsoft Word richiedono spesso contenuti dinamici come date, calcoli o dati provenienti da fonti esterne. Aspose.Words per Python fornisce un modo potente per interagire con questi elementi a livello di codice.
 

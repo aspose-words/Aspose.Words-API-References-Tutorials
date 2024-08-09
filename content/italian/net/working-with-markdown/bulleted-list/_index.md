@@ -2,95 +2,98 @@
 title: Elenco puntato
 linktitle: Elenco puntato
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come creare un elenco puntato con Aspose.Words per .NET Guida passo passo.
+description: Scopri come creare e personalizzare elenchi puntati nei documenti Word utilizzando Aspose.Words per .NET con questa guida passo passo.
 type: docs
 weight: 10
 url: /it/net/working-with-markdown/bulleted-list/
 ---
+## Introduzione
 
-In questo tutorial ti spiegheremo come creare un elenco puntato con Aspose.Words per .NET. Un elenco puntato viene utilizzato per elencare gli elementi senza utilizzare la numerazione.
+Pronto a tuffarti nel mondo di Aspose.Words per .NET? Oggi esamineremo la creazione di un elenco puntato nei documenti di Word. Che tu stia organizzando idee, elencando elementi o semplicemente aggiungendo un po' di struttura al tuo documento, gli elenchi puntati sono molto utili. Quindi, cominciamo!
 
-## Passaggio 1: utilizzo di un generatore di documenti
+## Prerequisiti
 
-Innanzitutto, utilizzeremo un generatore di documenti per aggiungere contenuto al nostro documento.
+Prima di tuffarci nel divertimento della codifica, assicuriamoci di avere tutto ciò di cui hai bisogno:
+
+1.  Aspose.Words per .NET: assicurati di avere la libreria Aspose.Words installata. Se non ce l'hai ancora, puoi[scaricalo qui](https://releases.aspose.com/words/net/).
+2. Ambiente di sviluppo: ambiente di sviluppo AC# come Visual Studio.
+3. Conoscenza di base di C#: una conoscenza di base della programmazione C# ti aiuterà a proseguire.
+
+## Importa spazi dei nomi
+
+Per prima cosa, importiamo gli spazi dei nomi necessari. È come preparare il terreno affinché il nostro codice funzioni senza intoppi.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Ora suddividiamo il processo in passaggi semplici e gestibili.
+
+## Passaggio 1: crea un nuovo documento
+
+Va bene, iniziamo creando un nuovo documento. È qui che avverrà tutta la magia.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Passaggio 2: applicazione di un elenco puntato predefinito
+## Passaggio 2: applica il formato elenco puntato
 
- Possiamo applicare un elenco puntato predefinito utilizzando quello del generatore di documenti`ApplyBulletDefault` metodo.
+Successivamente, applicheremo un formato di elenco puntato. Questo indica al documento che stiamo per iniziare un elenco puntato.
 
 ```csharp
 builder.ListFormat.ApplyBulletDefault();
 ```
 
-## Passaggio 3: personalizzare il formato del punto elenco
+## Passaggio 3: personalizza l'elenco puntato
 
- Possiamo personalizzare il formato del punto elenco accedendo alle proprietà di`ListFormat.List.ListLevels[0]`. In questo esempio utilizziamo il trattino "-" come punto elenco.
+Qui personalizzeremo l'elenco puntato a nostro piacimento. Per questo esempio, utilizzeremo un trattino (-) come punto elenco.
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
 ```
 
-## Passaggio 4: aggiunta di elementi all'elenco
+## Passaggio 4: aggiungi elementi all'elenco
 
- Ora possiamo aggiungere elementi all'elenco puntato utilizzando il generatore di documenti`Writeln` metodo.
-
-```csharp
-builder. Writen("Element 1");
-builder. Writen("Element 2");
-```
-
-## Passaggio 5: rimozione del rientro dall'elenco
-
- Se vogliamo creare una sottolista, possiamo aumentare il rientro utilizzando il comando`ListFormat.ListIndent()` metodo. In questo esempio, stiamo aggiungendo un sottoelenco agli elementi 2a e 2b.
+Ora aggiungiamo alcuni elementi al nostro elenco puntato. Qui è dove puoi diventare creativo e aggiungere qualsiasi contenuto di cui hai bisogno.
 
 ```csharp
-builder.ListFormat.ListIndent();
-builder. Writeln("Element 2a");
-builder.Writeln("Element 2b");
-```
-### Codice sorgente di esempio per l'elenco puntato utilizzando Aspose.Words per .NET
-
-
-```csharp
-// Utilizza un generatore di documenti per aggiungere contenuto al documento.
-DocumentBuilder builder = new DocumentBuilder();
-
-builder.ListFormat.ApplyBulletDefault();
-builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
-
 builder.Writeln("Item 1");
 builder.Writeln("Item 2");
-
-builder.ListFormat.ListIndent();
-
-builder.Writeln("Item 2a");
-builder.Writeln("Item 2b");
 ```
 
-Congratulazioni! Ora hai imparato come creare un elenco puntato con Aspose.Words per .NET.
+## Passaggio 5: aggiungi elementi secondari
 
-### Domande frequenti
+Per rendere le cose più interessanti, aggiungiamo alcune sottovoci sotto "Voce 2". Questo aiuta a organizzare i sottopunti.
 
-#### D: Come creare un elenco puntato in Markdown?
+```csharp
+builder.ListFormat.ListIndent();
+builder.Writeln("Item 2a");
+builder.Writeln("Item 2b");
+builder.ListFormat.ListOutdent(); // Ritorna al livello dell'elenco principale
+```
 
-R: Per creare un elenco puntato in Markdown, inizia ogni elemento dell'elenco con un simbolo di punto elenco (`-`, `*` , O`+`), seguito da uno spazio.
+## Conclusione
 
-#### D: È possibile nidificare elenchi puntati in Markdown?
+Ed ecco qua! Hai appena creato un elenco puntato in un documento Word utilizzando Aspose.Words per .NET. È un processo semplice, ma incredibilmente potente per organizzare i tuoi documenti. Sia che tu stia creando elenchi semplici o elenchi nidificati complessi, Aspose.Words ti copre.
 
-R: Sì, è possibile nidificare elenchi puntati in Markdown aggiungendo quattro spazi di offset davanti a ciascun elemento dell'elenco nidificato.
+Sentiti libero di sperimentare diversi stili e formati di elenchi in base alle tue esigenze. Buona programmazione!
 
-#### D: Come personalizzare i simboli dei proiettili?
+## Domande frequenti
 
-R: Nel Markdown standard, i simboli dei punti elenco sono predefiniti. Tuttavia, alcuni editor Markdown ti consentono di personalizzarli utilizzando estensioni specifiche.
+### Posso utilizzare diversi simboli di punti elenco nell'elenco?
+    Sì, puoi personalizzare i simboli dei punti elenco modificandoli`NumberFormat` proprietà.
 
-#### D: Gli elenchi puntati in Markdown supportano il rientro?
+### Come posso aggiungere più livelli di rientro?
+    Usa il`ListIndent` metodo per aggiungere più livelli e`ListOutdent` per tornare ad un livello superiore.
 
-R: Sì, gli elenchi puntati in Markdown supportano il rientro. Puoi aggiungere uno spostamento a sinistra utilizzando spazi o tabulazioni.
+### È possibile mischiare elenchi puntati e numerici?
+   Assolutamente! È possibile passare dal formato punto elenco a quello numerico utilizzando il comando`ApplyNumberDefault`E`ApplyBulletDefault` metodi.
 
-#### D: È possibile aggiungere collegamenti o testo in linea agli elementi dell'elenco?
+### Posso dare uno stile al testo negli elementi dell'elenco?
+    Sì, puoi applicare stili, caratteri e formattazioni diversi al testo all'interno degli elementi dell'elenco utilizzando il file`Font` proprietà del`DocumentBuilder`.
 
-R: Sì, puoi aggiungere collegamenti o testo in linea agli elementi dell'elenco utilizzando la sintassi Markdown appropriata.
+### Come posso creare un elenco puntato a più colonne?
+   Puoi utilizzare la formattazione della tabella per creare elenchi a più colonne, in cui ogni cella contiene un elenco puntato separato.

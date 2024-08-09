@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/add-content-using-documentbuilder/horizontal-rule-format/
 ---
-## Úvod
+## Zavedení
 
 V oblasti vývoje .NET může být programová manipulace a formátování dokumentů Wordu náročný úkol. Naštěstí Aspose.Words for .NET poskytuje robustní řešení, které umožňuje vývojářům snadno automatizovat vytváření, úpravy a správu dokumentů. Tento článek se ponoří do jedné ze základních funkcí: vkládání horizontálních pravidel do dokumentů aplikace Word. Ať už jste zkušený vývojář nebo s Aspose.Words teprve začínáte, zvládnutí této schopnosti zlepší váš proces generování dokumentů.
 
@@ -16,7 +16,7 @@ V oblasti vývoje .NET může být programová manipulace a formátování dokum
 Než se pustíte do implementace horizontálních pravidel pomocí Aspose.Words pro .NET, ujistěte se, že máte následující předpoklady:
 
 - Visual Studio: Nainstalujte Visual Studio IDE pro vývoj .NET.
-- Aspose.Words for .NET: Stáhněte si a nainstalujte Aspose.Words for .NET z[tady](https://releases.aspose.com/words/net/).
+- Aspose.Words for .NET: Stáhněte si a nainstalujte Aspose.Words for .NET z[zde](https://releases.aspose.com/words/net/).
 - Základní znalost C#: Znalost základů programovacího jazyka C#.
 -  Třída DocumentBuilder: Pochopení`DocumentBuilder` třídy v Aspose.Words pro manipulaci s dokumenty.
 
@@ -87,7 +87,7 @@ Zvládnutí vkládání horizontálních pravidel do dokumentů aplikace Word po
 Aspose.Words for .NET je výkonná knihovna pro programovou práci s dokumenty Wordu v aplikacích .NET.
 
 ### Jak si mohu stáhnout Aspose.Words pro .NET?
- Aspose.Words for .NET si můžete stáhnout z[tady](https://releases.aspose.com/words/net/).
+ Aspose.Words for .NET si můžete stáhnout z[zde](https://releases.aspose.com/words/net/).
 
 ### Mohu upravit vzhled vodorovných pravidel v Aspose.Words?
 Ano, pomocí Aspose.Words můžete přizpůsobit různé aspekty, jako je zarovnání, šířka, výška, barva a stínování vodorovných pravidel.

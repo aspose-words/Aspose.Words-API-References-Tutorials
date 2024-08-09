@@ -15,7 +15,7 @@ url: /es/net/join-and-append-documents/update-page-layout/
 
 Antes de comenzar, asegúrese de tener lo siguiente en su lugar:
 
-1.  Aspose.Words para .NET: esta biblioteca es esencial para manipular documentos de Word mediante programación. Si aún no lo has hecho, puedes[descarguelo aqui](https://releases.aspose.com/words/net/).
+1.  Aspose.Words para .NET: esta biblioteca es esencial para manipular documentos de Word mediante programación. Si aún no lo has hecho, puedes[descárgalo aquí](https://releases.aspose.com/words/net/).
    
 2. Visual Studio: necesitará un IDE para escribir y ejecutar su código .NET. Visual Studio es una opción popular.
 

@@ -16,7 +16,7 @@ Aspose.Words for Java je základním nástrojem pro každého, kdo pracuje s dok
 
 ## 2. Nastavení vašeho prostředí
 
- Než začnete, ujistěte se, že máte nainstalovaný Aspose.Words for Java. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/java/). Také se ujistěte, že máte v systému nainstalovanou Javu a integrované vývojové prostředí (IDE), jako je Eclipse nebo IntelliJ IDEA.
+ Než začnete, ujistěte se, že máte nainstalovaný Aspose.Words for Java. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/java/). Také se ujistěte, že máte v systému nainstalovanou Javu a integrované vývojové prostředí (IDE), jako je Eclipse nebo IntelliJ IDEA.
 
 ## 3. Načtení dokumentu aplikace Word
 
@@ -355,24 +355,24 @@ Zdrojový kód třídy HandleMergeField
 
 ## 6. Závěr
 
-Gratulujeme! Naučili jste se používat pole v Aspose.Words pro Java k dynamické manipulaci s dokumenty Wordu. Toto výkonné rozhraní API vám poskytuje úplnou kontrolu nad vašimi dokumenty, což z něj činí cenný přínos pro vývojáře v jazyce Java.
+Gratuluji! Naučili jste se používat pole v Aspose.Words pro Java k dynamické manipulaci s dokumenty Wordu. Toto výkonné rozhraní API vám poskytuje úplnou kontrolu nad vašimi dokumenty, což z něj činí cenný přínos pro vývojáře v jazyce Java.
 
 ## 7. Nejčastější dotazy
 
 ### Q1: Kde si mohu stáhnout Aspose.Words for Java?
- Aspose.Words for Java si můžete stáhnout z[tady](https://releases.aspose.com/words/java/).
+ Aspose.Words for Java si můžete stáhnout z[zde](https://releases.aspose.com/words/java/).
 
 ### Q2: Jak mohu získat dočasnou licenci pro Aspose.Words for Java?
- Dočasnou licenci můžete získat od[tady](https://purchase.aspose.com/temporary-license/).
+ Dočasnou licenci můžete získat od[zde](https://purchase.aspose.com/temporary-license/).
 
 ### Q3: Kde mohu získat podporu pro Aspose.Words pro Java?
- Pro podporu můžete navštívit fórum Aspose.Words[tady](https://forum.aspose.com/).
+ Pro podporu můžete navštívit fórum Aspose.Words[zde](https://forum.aspose.com/).
 
 ### Q4: Je Aspose.Words for Java vhodný pro zpracování obsahu HTML v dokumentech aplikace Word?
 Ano, Aspose.Words for Java poskytuje vynikající podporu pro práci s obsahem HTML v dokumentech aplikace Word.
 
 ### Q5: Mohu používat Aspose.Words for Java zdarma?
- Aspose.Words for Java je komerční produkt, ale jeho funkce můžete prozkoumat pomocí bezplatné zkušební verze[tady](https://releases.aspose.com/).
+ Aspose.Words for Java je komerční produkt, ale jeho funkce můžete prozkoumat pomocí bezplatné zkušební verze[zde](https://releases.aspose.com/).
 
 Začněte s Aspose.Words pro Java ještě dnes a převezměte kontrolu nad svými dokumenty Wordu jako nikdy předtím!
 

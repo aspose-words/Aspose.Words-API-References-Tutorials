@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.AdditionalTextPositioning.pdf", sa
 
 ## Çözüm
 
-İşte buyur! Bu adımları izleyerek Aspose.Words for .NET'i kullanarak PDF'nizdeki metin konumlandırmasını başarıyla geliştirdiniz. Bu güçlü özellik, metinlerin tam olması gerektiği yere konumlandırılmasıyla PDF'lerinizin net ve profesyonel görünmesini sağlar.
+Ve işte karşınızda! Bu adımları izleyerek Aspose.Words for .NET'i kullanarak PDF'nizdeki metin konumlandırmasını başarıyla geliştirdiniz. Bu güçlü özellik, metinlerin tam olması gerektiği yere konumlandırılmasıyla PDF'lerinizin net ve profesyonel görünmesini sağlar.
 
 ## SSS'ler
 

@@ -140,4 +140,4 @@ Impostato`importFormatOptions.setIgnoreTextBoxes(false)` per includere caselle d
 
 ### Cosa succede se voglio collegare/scollegare intestazioni e piè di pagina tra documenti?
 
- Puoi collegare intestazioni e piè di pagina con`linkToPrevious(true)` o scollegarli con`linkToPrevious(false)` come necessario.
+ Puoi collegare intestazioni e piè di pagina con`linkToPrevious(true)` o scollegarli con`linkToPrevious(false)` secondo necessità.

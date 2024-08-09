@@ -14,9 +14,9 @@ Pour travailler avec des nœuds dans Aspose.Words pour .NET, les développeurs p
  ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Utiliser le type de nœud](./use-node-type/) | Découvrez comment utiliser le type de nœud pour accéder aux informations spécifiques au document avec Aspose.Words for .NET. |
-| [Obtenir le nœud parent](./get-parent-node/) | Découvrez comment obtenir le nœud parent d'un élément spécifique avec Aspose.Words pour .NET. |
-| [Document du propriétaire](./owner-document/) | Découvrez comment utiliser le document propriétaire dans Aspose.Words pour .NET. |
-| [Énumérer les nœuds enfants](./enumerate-child-nodes/) | Découvrez comment énumérer les nœuds enfants dans un paragraphe avec Aspose.Words for .NET. |
-| [Accès tapé](./typed-access/) | Découvrez comment utiliser l'accès typé pour manipuler des tables dans Aspose.Words for .NET. |
-| [Créer et ajouter un nœud de paragraphe](./create-and-add-paragraph-node/) | Créez et ajoutez un nœud de paragraphe à vos documents Word avec Aspose.Words pour .NET. |
+| [Utiliser le type de nœud](./use-node-type/) | Découvrez comment maîtriser la propriété NodeType dans Aspose.Words pour .NET avec notre guide détaillé. Parfait pour les développeurs cherchant à améliorer leurs compétences en traitement de documents. |
+| [Obtenir le nœud parent](./get-parent-node/) | Découvrez comment obtenir le nœud parent d'une section de document à l'aide d'Aspose.Words for .NET avec ce didacticiel détaillé étape par étape. |
+| [Document du propriétaire](./owner-document/) | Découvrez comment utiliser le document propriétaire dans Aspose.Words pour .NET. Ce guide étape par étape couvre la création et la manipulation de nœuds dans un document. |
+| [Énumérer les nœuds enfants](./enumerate-child-nodes/) | Découvrez comment énumérer les nœuds enfants dans un document Word à l'aide d'Aspose.Words for .NET avec ce didacticiel étape par étape. |
+| [Accès tapé](./typed-access/) | Découvrez comment utiliser l'accès typé dans Aspose.Words pour .NET pour manipuler facilement des éléments de document tels que des tableaux et des lignes. Ce guide étape par étape simplifie votre flux de travail. |
+| [Créer et ajouter un nœud de paragraphe](./create-and-add-paragraph-node/) | Découvrez comment créer et ajouter un nœud de paragraphe dans un document à l'aide d'Aspose.Words for .NET avec ce didacticiel détaillé étape par étape. |

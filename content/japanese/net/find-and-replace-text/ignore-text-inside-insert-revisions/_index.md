@@ -89,7 +89,7 @@ Aspose.Words for .NET を使用して、挿入リビジョン内のテキスト�
 はい、適切な FindReplaceOptions 設定を使用して、無視された挿入テキストを元に戻すことができます。
 
 ### Aspose.Words for .NET に関する詳細なドキュメントはどこで入手できますか?
-訪問[Aspose.Words for .NET ドキュメント](https://reference.aspose.com/words/net/)詳細なガイドと API リファレンスについては、こちらをご覧ください。
+訪問する[Aspose.Words for .NET ドキュメント](https://reference.aspose.com/words/net/)詳細なガイドと API リファレンスについては、こちらをご覧ください。
 
 ### Aspose.Words for .NET 関連のクエリを議論するためのコミュニティ フォーラムはありますか?
 はい、訪問することができます[Aspose.Words フォーラム](https://forum.aspose.com/c/words/8)コミュニティのサポートとディスカッションのため。

@@ -49,7 +49,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-Asegúrese de que su documento de Word, llamado "Document.docx", esté presente en el directorio especificado.
+Asegúrese de que su documento de Word, llamado "Documento.docx", esté presente en el directorio especificado.
 
 ## Paso 3: configurar la unidad de medida
 

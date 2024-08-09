@@ -9,7 +9,7 @@ url: /ja/net/programming-with-document-options-and-settings/add-japanese-as-edit
 ---
 ## 導入
 
-ドキュメントを開こうとしたら、言語設定が間違っていたために読めないテキストの海に迷い込んでしまったことはありませんか? まるで外国語で地図を読もうとしているようなものです! さまざまな言語、特に日本語で書かれたドキュメントを扱うなら、Aspose.Words for .NET が頼りになるツールです。この記事では、Aspose.Words for .NET を使用してドキュメントに日本語を編集言語として追加する方法をステップごとに説明します。さあ、今すぐ始めてみましょう。翻訳で迷うことが二度とありません!
+ドキュメントを開こうとしたら、言語設定が間違っていたために読めないテキストの海に迷い込んでしまったことはありませんか? まるで外国語で地図を読もうとしているようなものです! さまざまな言語、特に日本語のドキュメントを扱っている場合は、Aspose.Words for .NET が頼りになるツールです。この記事では、Aspose.Words for .NET を使用してドキュメントに日本語を編集言語として追加する方法をステップごとに説明します。さあ、今すぐ始めてみましょう。翻訳で迷うことが二度とありません!
 
 ## 前提条件
 
@@ -17,7 +17,7 @@ url: /ja/net/programming-with-document-options-and-settings/add-japanese-as-edit
 
 1. Visual Studio: Visual Studio がインストールされていることを確認してください。これは、使用する統合開発環境 (IDE) です。
 2.  Aspose.Words for .NET: Aspose.Words for .NET がインストールされている必要があります。まだインストールしていない場合は、ダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
-3. サンプル文書: 編集したいサンプル文書を用意してください。`.docx`フォーマット。
+3. サンプル文書: 編集したいサンプル文書を用意してください。`.docx`形式。
 4. 基本的な C# の知識: C# プログラミングの基本的な理解があれば、例を理解するのに役立ちます。
 
 ## 名前空間のインポート
@@ -99,7 +99,7 @@ Console.WriteLine(
 はい、商用利用にはライセンスが必要です。ライセンスを購入することができます。[ここ](https://purchase.aspose.com/buy)または一時免許を取得する[ここ](https://purchase.aspose.com/temporary-license/).
 
 ### Aspose.Words for .NET には他にどのような機能がありますか?
- Aspose.Words for .NETは、ドキュメントの生成、変換、操作など、幅広い機能を提供します。[ドキュメンテーション](https://reference.aspose.com/words/net/)詳細については。
+ Aspose.Words for .NETは、ドキュメントの生成、変換、操作など、幅広い機能を提供します。[ドキュメント](https://reference.aspose.com/words/net/)詳細についてはこちらをご覧ください。
 
 ### Aspose.Words for .NET を購入する前に試用できますか?
 もちろんです！無料トライアルをダウンロードできます[ここ](https://releases.aspose.com/).

@@ -62,7 +62,7 @@ Hier gebeurt de magie! U kunt de verticale uitlijning van de tekst in het tekstv
 textBox.TextBox.VerticalAnchor = TextBoxAnchor.Bottom;
 ```
 
- In dit geval,`TextBoxAnchor.Bottom`zorgt ervoor dat de tekst aan de onderkant van het tekstvak wordt verankerd. Als je het gecentreerd of uitgelijnd wilt hebben met de bovenkant, zou je het gebruiken`TextBoxAnchor.Center` of`TextBoxAnchor.Top`respectievelijk.
+ In dit geval`TextBoxAnchor.Bottom`zorgt ervoor dat de tekst aan de onderkant van het tekstvak wordt verankerd. Als je het gecentreerd of uitgelijnd wilt hebben met de bovenkant, zou je het gebruiken`TextBoxAnchor.Center` of`TextBoxAnchor.Top`respectievelijk.
 
 ## Stap 4: Voeg tekst toe aan het tekstvak
 
@@ -75,7 +75,7 @@ builder.Write("Textbox contents");
 
  Hier,`MoveTo` zorgt ervoor dat de tekst in het tekstvak wordt ingevoegd, en`Write` voegt de daadwerkelijke tekst toe.
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 De laatste stap is het opslaan van uw document. Dit is alsof je je voltooide schilderij in een lijst plaatst.
 
@@ -85,7 +85,7 @@ doc.Save(dataDir + "WorkingWithShapes.VerticalAnchor.docx");
 
 ## Conclusie
 
-En daar heb je het! U hebt zojuist geleerd hoe u de verticale uitlijning van tekst in een tekstvak in een Word-document kunt regelen met behulp van Aspose.Words voor .NET. Of u tekst nu bovenaan, in het midden of onderaan verankert, deze functie geeft u nauwkeurige controle over de lay-out van uw document. Dus de volgende keer dat u de tekstplaatsing van uw document moet aanpassen, weet u precies wat u moet doen!
+En daar heb je het! U hebt zojuist geleerd hoe u de verticale uitlijning van tekst in een tekstvak in een Word-document kunt regelen met Aspose.Words voor .NET. Of u tekst nu bovenaan, in het midden of onderaan verankert, deze functie geeft u nauwkeurige controle over de lay-out van uw document. Dus de volgende keer dat u de tekstplaatsing van uw document moet aanpassen, weet u precies wat u moet doen!
 
 ## Veelgestelde vragen
 
@@ -99,7 +99,7 @@ Ja, u kunt verticale verankering gebruiken met andere vormen, hoewel tekstvakken
  U kunt het ankerpunt wijzigen door de`VerticalAnchor` eigenschap van het tekstvakvormobject.
 
 ### Is het mogelijk om tekst in het midden van het tekstvak te verankeren?
- Absoluut! Gebruik gewoon`TextBoxAnchor.Center` om de tekst verticaal in het tekstvak te centreren.
+ Absoluut! Gewoon gebruiken`TextBoxAnchor.Center` om de tekst verticaal in het tekstvak te centreren.
 
 ### Waar kan ik meer informatie vinden over Aspose.Words voor .NET?
  Bekijk de[Aspose.Words-documentatie](https://reference.aspose.com/words/net/) voor meer details en handleidingen.

@@ -45,7 +45,7 @@ OfficeMath officeMath = (OfficeMath) doc.getChild(NodeType.OFFICE_MATH, 0, true)
 
 ### ضبط نوع العرض
 
- يمكنك التحكم في كيفية عرض المعادلة داخل المستند. استخدم ال`setDisplayType` طريقة لتحديد ما إذا كان يجب عرضه سطريًا مع النص أم على سطره:
+ يمكنك التحكم في كيفية عرض المعادلة داخل المستند. استخدم`setDisplayType` طريقة لتحديد ما إذا كان يجب عرضه سطريًا مع النص أم على سطره:
 
 ```java
 officeMath.setDisplayType(OfficeMathDisplayType.DISPLAY);
@@ -90,7 +90,7 @@ doc.save("Your Directory Path" + "ModifiedOfficeMath.docx");
 
 ### هل يمكنني محاذاة معادلات Office Math بشكل مختلف داخل المستند الخاص بي؟
 
- نعم، يمكنك التحكم في محاذاة معادلات Office Math. استخدم ال`setJustification` طريقة لتحديد خيارات المحاذاة مثل اليسار أو اليمين أو المركز.
+ نعم، يمكنك التحكم في محاذاة معادلات Office Math. استخدم`setJustification` طريقة لتحديد خيارات المحاذاة مثل اليسار أو اليمين أو المركز.
 
 ### هل Aspose.Words for Java مناسب للتعامل مع المستندات الرياضية المعقدة؟
 

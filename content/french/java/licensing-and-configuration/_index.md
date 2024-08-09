@@ -7,7 +7,7 @@ type: docs
 weight: 23
 url: /fr/java/licensing-and-configuration/
 ---
-Dans le domaine du traitement de documents Java, Aspose.Words constitue une formidable boîte à outils. Que vous soyez un développeur chevronné ou que vous commenciez tout juste votre parcours dans le monde de la programmation Java, il est essentiel de comprendre les nuances des licences et de la configuration d'Aspose.Words. Cet article vous fournira un guide complet sur l'octroi de licences et la configuration d'Aspose.Words pour Java, vous garantissant ainsi d'exploiter tout son potentiel de manière transparente.
+Dans le domaine du traitement de documents Java, Aspose.Words constitue une formidable boîte à outils. Que vous soyez un développeur chevronné ou que vous commenciez tout juste votre parcours dans le monde de la programmation Java, il est essentiel de comprendre les nuances des licences et de la configuration d'Aspose.Words. Cet article vous fournira un guide complet sur l'octroi de licences et la configuration d'Aspose.Words pour Java, vous permettant d'exploiter tout son potentiel de manière transparente.
 
 ## Licence Aspose.Words pour Java
 
@@ -17,7 +17,7 @@ Lorsque vous vous lancez dans l’utilisation d’Aspose.Words pour Java, la pre
 
 2. Obtenez le fichier de licence : Après l'achat, vous recevrez un fichier de licence. Ce fichier est crucial pour configurer Aspose.Words dans votre projet Java.
 
-3.  Intégrer la licence : pour activer Aspose.Words, intégrez la licence dans votre application Java. Cela implique généralement de charger le fichier de licence et de l'appliquer à Aspose.Words. Se référer au[Documentation API](https://reference.aspose.com/words/java/) pour des exemples de code détaillés.
+3.  Intégrer la licence : pour activer Aspose.Words, intégrez la licence dans votre application Java. Cela implique généralement de charger le fichier de licence et de l'appliquer à Aspose.Words. Référez-vous au[Documentation API](https://reference.aspose.com/words/java/) pour des exemples de code détaillés.
 
 ## Paramètres de configuration
 

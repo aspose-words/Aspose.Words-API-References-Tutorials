@@ -44,7 +44,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## الخطوة 2: أدخل الصورة المضمنة
 
- استخدم ال`InsertImage` طريقة`DocumentBuilder` فئة لإدراج صورة في المستند في الموضع الحالي.
+ استخدم`InsertImage` طريقة`DocumentBuilder` فئة لإدراج صورة في المستند في الموضع الحالي.
 
 ```csharp
 string imagePath = "PATH_TO_YOUR_IMAGE_FILE";

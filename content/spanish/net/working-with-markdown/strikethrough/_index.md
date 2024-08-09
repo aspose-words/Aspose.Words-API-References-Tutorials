@@ -2,63 +2,78 @@
 title: Tachado
 linktitle: Tachado
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a aplicar el estilo de texto tachado con la guía paso a paso de Aspose.Words para .NET.
+description: Aprenda cómo aplicar formato tachado al texto usando Aspose.Words para .NET con nuestra guía paso a paso. Mejore sus habilidades de procesamiento de documentos.
 type: docs
 weight: 10
 url: /es/net/working-with-markdown/strikethrough/
 ---
+## Introducción
 
+Bienvenido a esta guía detallada sobre cómo aplicar formato tachado al texto usando Aspose.Words para .NET. Si buscas mejorar tus habilidades de procesamiento de documentos y agregar un toque único a tu texto, estás en el lugar correcto. ¡Vamos a sumergirnos!
 
-En este ejemplo, le mostraremos cómo aplicar el estilo de texto tachado usando Aspose.Words para .NET. El texto tachado se utiliza para indicar que el texto se elimina o ya no es válido.
+## Requisitos previos
 
-## Paso 1: usar un generador de documentos
+Antes de comenzar, asegúrese de tener lo siguiente:
 
-Primero, usaremos un generador de documentos para agregar contenido a nuestro documento.
+-  Aspose.Words para .NET: Descárgalo[aquí](https://releases.aspose.com/words/net/).
+- .NET Framework: asegúrese de tener .NET Framework instalado en su sistema.
+- Entorno de desarrollo: un IDE como Visual Studio.
+- Conocimientos básicos de C#: es necesaria estar familiarizado con la programación en C#.
+
+## Importar espacios de nombres
+
+Para comenzar, deberá importar los espacios de nombres necesarios. Estos son esenciales para acceder a la biblioteca Aspose.Words y sus funciones.
 
 ```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Paso 1: Inicialice DocumentBuilder
+
+ El`DocumentBuilder` class es una poderosa herramienta en Aspose.Words que le permite agregar contenido a su documento con facilidad.
+
+```csharp
+// Inicialice un DocumentBuilder.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Paso 2: aplicar estilo de texto tachado
+## Paso 2: establecer la propiedad tachada
 
- Habilitaremos el estilo de texto tachado configurando el`StrikeThrough` propiedad de la`Font` oponerse a`true`.
-
-```csharp
-builder.Font.StrikeThrough = true;
-```
-
-## Paso 3: agregue texto tachado
-
- Ahora podemos agregar texto tachado usando la función del generador de documentos.`Writeln` método.
+Ahora, apliquemos la propiedad de tachado a nuestro texto. Esto implica establecer el`StrikeThrough` propiedad de la`Font` oponerse a`true`.
 
 ```csharp
-builder.Writeln("This text will be StrikeThrough");
-```
-
-
-### Código fuente de ejemplo para texto tachado con Aspose.Words para .NET
-
-```csharp
-// Utilice un generador de documentos para agregar contenido al documento.
-DocumentBuilder builder = new DocumentBuilder();
-
 // Haz que el texto esté tachado.
 builder.Font.StrikeThrough = true;
+```
+
+## Paso 3: escribe texto tachado
+
+ Con la propiedad de tachado configurada, ahora podemos agregar nuestro texto. El`Writeln` El método agregará el texto al documento.
+
+```csharp
+// Escribe texto con tachado.
 builder.Writeln("This text will be StrikeThrough");
 ```
 
-¡Enhorabuena! Ahora ha aprendido cómo aplicar el estilo de texto tachado con Aspose.Words para .NET.
+## Conclusión
 
-### Preguntas frecuentes
+¡Y ahí lo tienes! Ha agregado con éxito formato tachado a su texto usando Aspose.Words para .NET. Esta poderosa biblioteca abre un mundo de posibilidades para el procesamiento y personalización de documentos. Ya sea que esté creando informes, cartas o cualquier otro tipo de documento, dominar estas funciones sin duda mejorará su productividad y la calidad de sus resultados.
 
-#### P: ¿Cómo puedo agregar el texto tachado en Aspose.Words?
+## Preguntas frecuentes
 
- R: Para agregar el texto tachado en Aspose.Words, puede usar el`Font.StrikeThrough` propiedad de la`Run` objeto. Puede establecer esta propiedad en`true` para agregar texto tachado a un texto específico. Por ejemplo, puedes usar`run.Font.StrikeThrough=true` para agregar el texto tachado en el`Run` objeto.
+### ¿Qué es Aspose.Words para .NET?
+Aspose.Words para .NET es una potente biblioteca de procesamiento de documentos que permite a los desarrolladores crear, manipular y convertir documentos de Word mediante programación.
 
-#### P: ¿Es posible agregar texto tachado a varios fragmentos de texto en el mismo párrafo?
+### ¿Puedo utilizar Aspose.Words para .NET en un proyecto comercial?
+ Sí, puede utilizar Aspose.Words para .NET en proyectos comerciales. Para opciones de compra, visite el[comprar pagina](https://purchase.aspose.com/buy).
 
- R: Sí, puedes agregar texto tachado a varias partes del texto en un solo párrafo usando múltiples`Run` objetos. Puedes crear múltiples`Run` objetos y establecer el`Font.StrikeThrough`propiedad a`true` para cada objeto para agregar el texto tachado a las partes de texto deseadas. Luego puedes agregarlos al párrafo usando el`Paragraph.AppendChild(run)` método.
+### ¿Hay una prueba gratuita disponible para Aspose.Words para .NET?
+ Sí, puedes descargar una prueba gratuita.[aquí](https://releases.aspose.com/).
 
-#### P: ¿Puedo agregar texto tachado al texto que está en una tabla o celda en Aspose.Words?
+### ¿Cómo obtengo soporte para Aspose.Words para .NET?
+Puede obtener apoyo de la comunidad de Aspose y de expertos en el[foro de soporte](https://forum.aspose.com/c/words/8).
 
- R: Sí, puede agregar texto tachado al texto que se encuentra en una tabla o celda en Aspose.Words. Puede saltar a la celda o párrafo que desee utilizando los métodos adecuados y luego aplicar el formato de texto tachado utilizando el`Font.StrikeThrough` propiedad de la`Run` o`Paragraph` objeto.
+### ¿Puedo aplicar otras opciones de formato de texto usando Aspose.Words para .NET?
+¡Absolutamente! Aspose.Words para .NET admite una amplia gama de opciones de formato de texto que incluyen negrita, cursiva, subrayado y más.

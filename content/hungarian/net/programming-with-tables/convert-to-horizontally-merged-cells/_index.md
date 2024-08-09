@@ -63,7 +63,7 @@ table.ConvertToHorizontallyMergedCells();
 
 ## Következtetés
 
-És ez az! Sikeresen konvertálta a függőlegesen egyesített cellákat vízszintesen egyesített cellákká egy Word-dokumentumban az Aspose.Words for .NET segítségével. Ezzel a módszerrel a táblázatok jól rendszerezettek és könnyebben olvashatók lesznek. Az alábbi lépések követésével testreszabhatja és módosíthatja a Word-dokumentumokat, hogy megfeleljenek sajátos igényeinek.
+És ennyi! Sikeresen konvertálta a függőlegesen egyesített cellákat vízszintesen egyesített cellákká egy Word-dokumentumban az Aspose.Words for .NET segítségével. Ezzel a módszerrel a táblázatok jól rendszerezettek és könnyebben olvashatók lesznek. Az alábbi lépések követésével testreszabhatja és módosíthatja a Word-dokumentumokat, hogy megfeleljenek sajátos igényeinek.
 
 ## GYIK
 

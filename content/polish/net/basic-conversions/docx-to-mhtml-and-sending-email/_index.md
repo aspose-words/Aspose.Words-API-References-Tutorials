@@ -36,7 +36,7 @@ Podzielmy proces na wiele etapów, aby mieć pewność, że dobrze zrozumiesz ka
 
 ## Krok 1: Załaduj dokument DOCX
 
- Najpierw musisz załadować dokument DOCX, który chcesz przekonwertować. Użyj`Document` class z Aspose.Words, aby załadować plik DOCX.
+ Najpierw musisz załadować dokument DOCX, który chcesz przekonwertować. Skorzystaj z`Document` class z Aspose.Words, aby załadować plik DOCX.
 
 ```csharp
 // Ścieżka do katalogu dokumentów.

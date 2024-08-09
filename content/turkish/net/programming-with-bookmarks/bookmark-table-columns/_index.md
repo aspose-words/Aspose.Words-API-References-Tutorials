@@ -9,7 +9,7 @@ url: /tr/net/programming-with-bookmarks/bookmark-table-columns/
 ---
 ## giriiş
 
-Belge otomasyon becerilerinizi geliştirmek istiyorsanız, o zaman bir fırsatla karşı karşıyasınız. Bu eğitim, Aspose.Words for .NET kullanarak bir Word belgesindeki tablo sütunlarına yer işareti koyma sürecinde size rehberlik edecektir. Dalmaya hazır mısınız? Başlayalım!
+Belge otomasyon becerilerinizi geliştirmek istiyorsanız, o zaman bir fırsatla karşı karşıyasınız. Bu eğitim, Aspose.Words for .NET kullanarak bir Word belgesindeki tablo sütunlarına yer işareti koyma sürecinde size rehberlik edecektir. Dalmaya hazır mısınız? Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -107,7 +107,7 @@ foreach (Bookmark bookmark in doc.Range.Bookmarks)
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesindeki tablo sütunlarını başarıyla işaretlediniz. Bu işlem yalnızca belgenizi düzenlemenize yardımcı olmakla kalmaz, aynı zamanda belirli bölümlerde gezinmeyi ve bunları yönetmeyi de kolaylaştırır. Yer imi, belge yönetimi yeteneklerinizi önemli ölçüde geliştirebilecek güçlü bir özelliktir.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesindeki tablo sütunlarını başarıyla işaretlediniz. Bu işlem yalnızca belgenizi düzenlemenize yardımcı olmakla kalmaz, aynı zamanda belirli bölümlerde gezinmeyi ve bunları yönetmeyi de kolaylaştırır. Yer imi, belge yönetimi yeteneklerinizi önemli ölçüde geliştirebilecek güçlü bir özelliktir.
 
 ## SSS'ler
 
@@ -115,13 +115,13 @@ foreach (Bookmark bookmark in doc.Range.Bookmarks)
 Aspose.Words for .NET, Word belgeleriyle programlı olarak çalışmak için güçlü bir kütüphanedir. Microsoft Word'ün kurulu olmasına gerek kalmadan belge oluşturmanıza, değiştirmenize ve dönüştürmenize olanak tanır.
 
 ### Aspose.Words for .NET'i nasıl yüklerim?
- Aspose.Words for .NET'i şu adresten indirebilirsiniz:[İnternet sitesi](https://releases.aspose.com/words/net/). Sağlanan kurulum talimatlarını izleyin.
+ Aspose.Words for .NET'i şu adresten indirebilirsiniz:[web sitesi](https://releases.aspose.com/words/net/). Sağlanan kurulum talimatlarını izleyin.
 
 ### Aspose.Words for .NET'i diğer programlama dilleriyle birlikte kullanabilir miyim?
 Evet, Aspose.Words for .NET, C#, VB.NET ve F# dahil .NET destekli herhangi bir dille kullanılabilir.
 
 ### Aspose.Words for .NET için nasıl destek alabilirim?
- adresini ziyaret ederek Aspose topluluğundan ve uzmanlardan destek alabilirsiniz.[destek Forumu](https://forum.aspose.com/c/words/8).
+ adresini ziyaret ederek Aspose topluluğundan ve uzmanlardan destek alabilirsiniz.[destek forumu](https://forum.aspose.com/c/words/8).
 
 ### Aspose.Words for .NET'in deneme sürümü mevcut mu?
  Evet, şu adresten ücretsiz deneme alabilirsiniz:[Burada](https://releases.aspose.com/).

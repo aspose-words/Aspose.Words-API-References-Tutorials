@@ -43,7 +43,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 ## Langkah 2: Konfigurasikan Opsi Pemuatan dengan Panggilan Balik Peringatan
 
- Selanjutnya, konfigurasikan opsi pemuatan dokumen. Ini melibatkan penciptaan a`LoadOptions` objek dan pengaturannya`WarningCallback` Properti.
+ Selanjutnya, konfigurasikan opsi pemuatan dokumen. Ini melibatkan penciptaan a`LoadOptions` objek dan pengaturannya`WarningCallback` milik.
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions

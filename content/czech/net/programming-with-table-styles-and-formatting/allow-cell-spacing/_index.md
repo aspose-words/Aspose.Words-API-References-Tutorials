@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-table-styles-and-formatting/allow-cell-spacing/
 ---
-## Úvod
+## Zavedení
 
 Vítejte v tomto komplexním průvodci, jak povolit mezery mezi buňkami v tabulce pomocí Aspose.Words pro .NET! Pokud jste někdy pracovali s tabulkami v dokumentech aplikace Word, víte, že mezery mohou mít velký vliv na čitelnost a estetiku. V tomto tutoriálu vás krok za krokem provedeme procesem povolení mezer mezi buňkami v tabulkách. Pokryjeme vše od nastavení vašeho prostředí po psaní kódu a spuštění vaší aplikace. Takže se připoutejte a pojďme se ponořit do světa Aspose.Words pro .NET!
 
@@ -15,7 +15,7 @@ Vítejte v tomto komplexním průvodci, jak povolit mezery mezi buňkami v tabul
 
 Než začneme, ujistěte se, že máte vše, co potřebujete:
 
-- Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+- Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Vývojové prostředí jako Visual Studio.
 - Základní porozumění C#: Znalost programování v C# je nezbytná.
 
@@ -81,7 +81,7 @@ Nyní povolme mezery mezi buňkami pro tabulku.
 
 ### Krok 4.1: Povolte mezery mezi buňkami
 
- Nastav`AllowCellSpacing` vlastnost tabulky na`true`.
+ Nastavte`AllowCellSpacing` vlastnost tabulky na`true`.
 
 ```csharp
 table.AllowCellSpacing = true;
@@ -107,7 +107,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.AllowCellSpacing.docx");
 
 ## Závěr
 
-Gratulujeme! Úspěšně jste se naučili, jak povolit mezery mezi buňkami v tabulce pomocí Aspose.Words for .NET. Tato malá změna může výrazně zlepšit vzhled a dojem z vašich tabulek, díky čemuž budou vaše dokumenty profesionálnější a čitelnější. Pamatujte, že cvičení dělá mistra, takže neváhejte experimentovat s různými nastaveními a uvidíte, co vám nejlépe vyhovuje.
+Gratuluji! Úspěšně jste se naučili, jak povolit mezery mezi buňkami v tabulce pomocí Aspose.Words for .NET. Tato malá změna může výrazně zlepšit vzhled a dojem z vašich tabulek, díky čemuž budou vaše dokumenty profesionálnější a čitelnější. Pamatujte, že cvičení dělá mistra, takže neváhejte experimentovat s různými nastaveními a uvidíte, co vám nejlépe vyhovuje.
 
 ## FAQ
 
@@ -125,8 +125,8 @@ Aspose.Words for .NET můžete nainstalovat pomocí Správce balíčků NuGet v 
 
 ### Je k dispozici bezplatná zkušební verze pro Aspose.Words pro .NET?
 
- Ano, můžete si stáhnout bezplatnou zkušební verzi z[tady](https://releases.aspose.com/).
+ Ano, můžete si stáhnout bezplatnou zkušební verzi z[zde](https://releases.aspose.com/).
 
 ### Kde najdu další dokumentaci k Aspose.Words pro .NET?
 
- Můžete najít komplexní dokumentaci[tady](https://reference.aspose.com/words/net/).
+ Můžete najít komplexní dokumentaci[zde](https://reference.aspose.com/words/net/).

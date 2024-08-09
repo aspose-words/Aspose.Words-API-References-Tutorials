@@ -2,7 +2,7 @@
 title: Dokumentum titkosítása jelszóval
 linktitle: Dokumentum titkosítása jelszóval
 second_title: Aspose.Words Document Processing API
-description: Ebből a részletes, lépésenkénti útmutatóból megtudhatja, hogyan titkosíthat egy dokumentumot jelszóval az Aspose.Words for .NET használatával. Gondoskodjon kényes információiról erőfeszítés nélkül.
+description: Ebből a részletes, lépésenkénti útmutatóból megtudhatja, hogyan titkosíthat egy dokumentumot jelszóval az Aspose.Words for .NET használatával. Gondoskodjon érzékeny információinak biztonságáról.
 type: docs
 weight: 10
 url: /hu/net/programming-with-docsaveoptions/encrypt-document-with-password/
@@ -23,7 +23,7 @@ Megvan minden? Nagy! Térjünk át projektünk felállítására.
 
 ## Névterek importálása
 
-Mielőtt elkezdenénk, importálnia kell a szükséges névtereket. Gondoljon a névterekre, mint a barkácsprojektjéhez szükséges eszközkészletre.
+Mielőtt elkezdené, importálnia kell a szükséges névtereket. Gondoljon a névterekre, mint a barkácsprojektjéhez szükséges eszközkészletre.
 
 ```csharp
 using Aspose.Words;
@@ -91,7 +91,7 @@ doc.Save(dataDir + "WorkingWithDocSaveOptions.EncryptDocumentWithPassword.docx",
 ## GYIK
 
 ### Használhatok más típusú titkosítást?
- Igen, az Aspose.Words for .NET különféle titkosítási módszereket támogat. Ellenőrizd a[dokumentáció](https://reference.aspose.com/words/net/) további részletekért.
+ Igen, az Aspose.Words for .NET különféle titkosítási módszereket támogat. Ellenőrizze a[dokumentáció](https://reference.aspose.com/words/net/) további részletekért.
 
 ### Mi a teendő, ha elfelejtem a dokumentum jelszavát?
 Sajnos, ha elfelejti a jelszót, nem fog tudni hozzáférni a dokumentumhoz. Ügyeljen a jelszavak biztonságára!

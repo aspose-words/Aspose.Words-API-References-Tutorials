@@ -62,7 +62,7 @@ for (int i = 0; i < pages.size(); i++) {
 }
 ```
 
- Ez a kódrészlet minden oldalt elment egy fájlnévvel, mint pl`page_1.docx`, `page_2.docx`, stb.
+ Ez a kódrészlet minden oldalt elment egy fájlnévvel, mint pl`page_1.docx`, `page_2.docx`és így tovább.
 
 ## Következtetés
 

@@ -9,7 +9,7 @@ url: /sv/net/programming-with-bookmarks/delete-row-by-bookmark/
 ---
 ## Introduktion
 
-Att ta bort en rad efter bokmärke i ett Word-dokument kan låta komplicerat, men med Aspose.Words för .NET är det enkelt. Den här guiden går igenom allt du behöver veta för att utföra denna uppgift effektivt. Redo att dyka i? Låt oss börja!
+Att ta bort en rad efter bokmärke i ett Word-dokument kan låta komplicerat, men med Aspose.Words för .NET är det enkelt. Den här guiden går igenom allt du behöver veta för att utföra denna uppgift effektivt. Redo att dyka i? Låt oss komma igång!
 
 ## Förutsättningar
 

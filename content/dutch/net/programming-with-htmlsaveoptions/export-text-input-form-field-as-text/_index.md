@@ -106,7 +106,7 @@ doc.Save(dataDir + "ExportedDocument.html", saveOptions);
 
 ## Conclusie
 
-En daar heb je het! U hebt met succes een tekstinvoerformulierveld als platte tekst geëxporteerd met Aspose.Words voor .NET. Deze gids had u een duidelijke, stapsgewijze aanpak moeten bieden om deze taak te volbrengen. Vergeet niet dat oefening kunst baart, dus blijf experimenteren met verschillende opties en instellingen om te zien wat je nog meer kunt doen met Aspose.Words.
+En daar heb je het! U hebt met succes een tekstinvoerformulierveld als platte tekst geëxporteerd met Aspose.Words voor .NET. Deze gids had u een duidelijke, stapsgewijze aanpak moeten bieden om deze taak te volbrengen. Vergeet niet dat oefening kunst baart, dus blijf experimenteren met verschillende opties en instellingen om te zien wat u nog meer kunt doen met Aspose.Words.
 
 ## Veelgestelde vragen
 
@@ -124,7 +124,7 @@ En daar heb je het! U hebt met succes een tekstinvoerformulierveld als platte te
 
 ### Kan ik de geëxporteerde HTML aanpassen?
 
- Absoluut! Aspose.Words biedt verschillende opties om de HTML-uitvoer aan te passen. Verwijs naar de[documentatie](https://reference.aspose.com/words/net/) voor meer details.
+ Absoluut! Aspose.Words biedt verschillende opties om de HTML-uitvoer aan te passen. Raadpleeg de[documentatie](https://reference.aspose.com/words/net/) voor meer informatie.
 
 ### Is Aspose.Words compatibel met .NET Core?
 

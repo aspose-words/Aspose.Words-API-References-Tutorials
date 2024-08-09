@@ -232,7 +232,7 @@ for (Shape shape : (Iterable<Shape>) shapes) {
 
 ## Következtetés
 
-Gratulálunk! Megtanulta, hogyan lehet tartalmat kivonni dokumentumokból az Aspose.Words for Java használatával. Ez az útmutató különféle kinyerési technikákat ismertetett, beleértve a blokkszintű csomópontok közötti tartalmat, a könyvjelzőket, a megjegyzéstartományokat, a bekezdéseket és egyebeket. Mostantól hatékonyan kezelheti a dokumentumtartalom-kinyerést a Java-alkalmazásokban.
+Gratulálok! Megtanulta, hogyan lehet tartalmat kivonni dokumentumokból az Aspose.Words for Java használatával. Ez az útmutató különféle kinyerési technikákat ismertetett, beleértve a blokkszintű csomópontok közötti tartalmat, a könyvjelzőket, a megjegyzéstartományokat, a bekezdéseket és egyebeket. Mostantól hatékonyan kezelheti a dokumentumtartalom-kinyerést a Java-alkalmazásokban.
 
 ## GYIK
 

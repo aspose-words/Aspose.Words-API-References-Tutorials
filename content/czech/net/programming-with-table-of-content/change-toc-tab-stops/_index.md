@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-table-of-content/change-toc-tab-stops/
 ---
-## Úvod
+## Zavedení
 
 Přemýšleli jste někdy, jak oživit obsah (TOC) v dokumentech aplikace Word? Možná chcete, aby zarážky tabulátoru dokonale zapadaly do profesionálního vzhledu. Jste na správném místě! Dnes se ponoříme hluboko do toho, jak můžete změnit zarážky TOC pomocí Aspose.Words pro .NET. Držte se a slibuji, že odejdete s veškerým know-how, aby váš TOC vypadal elegantně a úhledně.
 
@@ -19,7 +19,7 @@ Než začneme, ujistěte se, že máte vše, co potřebujete:
 2. Vývojové prostředí: Visual Studio nebo jakékoli IDE kompatibilní s C#.
 3. Dokument aplikace Word: Konkrétně takový, který obsahuje TOC.
 
-Máš to všechno? Skvělý! Pojďme na to.
+Máš to všechno? Děsivý! Pojďme válet.
 
 ## Importovat jmenné prostory
 
@@ -108,7 +108,7 @@ Změna zarážek tabulátoru obsahu v dokumentu aplikace Word pomocí Aspose.Wor
 ## FAQ
 
 ### Mohu upravit zarážky tabulátoru pro různé úrovně obsahu samostatně?
-Ano můžeš! Stačí zkontrolovat každou konkrétní úroveň TOC (Toc1, Toc2 atd.) a podle toho upravit.
+Ano, můžete! Stačí zkontrolovat každou konkrétní úroveň TOC (Toc1, Toc2 atd.) a podle toho upravit.
 
 ### Co když má můj dokument více obsahu?
 Kód vyhledá všechny odstavce ve stylu TOC, takže změní všechny TOC přítomné v dokumentu.
@@ -120,4 +120,4 @@ Kód vyhledá všechny odstavce ve stylu TOC, takže změní všechny TOC přít
 Ano, při přidávání nové zarážky tabulátoru můžete určit různé zarovnání a styly odkazu.
 
 ### Potřebuji licenci k používání Aspose.Words pro .NET?
- Ano, k používání Aspose.Words for .NET po zkušební době potřebujete platnou licenci. Můžete získat a[dočasná licence](https://purchase.aspose.com/temporary-license/) nebo[Koupit jeden](https://purchase.aspose.com/buy).
+ Ano, k používání Aspose.Words for .NET po zkušební době potřebujete platnou licenci. Můžete získat a[dočasná licence](https://purchase.aspose.com/temporary-license/) nebo[koupit jeden](https://purchase.aspose.com/buy).

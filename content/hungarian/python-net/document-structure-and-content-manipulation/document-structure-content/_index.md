@@ -24,7 +24,7 @@ pip install aspose-words
 
 ## Word dokumentumok betöltése és létrehozása
 
-Betölthet egy meglévő Word-dokumentumot, vagy létrehozhat egy újat a semmiből. Itt van, hogyan:
+Betölthet egy meglévő Word-dokumentumot, vagy létrehozhat egy újat a semmiből. Íme, hogyan:
 
 ```python
 from aspose.words import Document
@@ -178,7 +178,7 @@ for data in dataset:
 
 - Tartsa rendszerezett kódját a különböző dokumentumkezelési feladatokhoz szükséges funkciók használatával.
 - Használja a kivételkezelést a dokumentumok feldolgozása közbeni hibák kecses kezelésére.
--  Ellenőrizd a[Aspose.Words dokumentáció](https://reference.aspose.com/words/python-net/) részletes API-referenciákért és példákért.
+-  Ellenőrizze a[Aspose.Words dokumentáció](https://reference.aspose.com/words/python-net/) részletes API-referenciákért és példákért.
 
 ## Következtetés
 

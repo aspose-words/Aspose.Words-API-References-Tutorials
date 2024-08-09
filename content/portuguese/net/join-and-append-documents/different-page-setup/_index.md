@@ -133,7 +133,7 @@ Você também pode combinar as configurações de margem da mesma forma que comb
 Sim, Aspose.Words for .NET é totalmente compatível com .NET Core.
 
 ### Posso preservar estilos de ambos os documentos?
- Sim o`ImportFormatMode.KeepSourceFormatting` opção garante que os estilos do documento de origem sejam preservados.
+ Sim, o`ImportFormatMode.KeepSourceFormatting` opção garante que os estilos do documento de origem sejam preservados.
 
 ### Onde posso obter mais ajuda com Aspose.Words?
- Confira a[Documentação Aspose.Words](https://reference.aspose.com/words/net/) ou visite seu[Fórum de suporte](https://forum.aspose.com/c/words/8) para obter mais assistência.
+ Confira o[Documentação Aspose.Words](https://reference.aspose.com/words/net/) ou visite seu[fórum de suporte](https://forum.aspose.com/c/words/8) para obter mais assistência.

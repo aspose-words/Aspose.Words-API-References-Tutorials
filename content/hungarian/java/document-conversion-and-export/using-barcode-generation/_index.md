@@ -62,7 +62,7 @@ doc.save("WorkingWithBarcodeGenerator.GenerateACustomBarCodeImage.pdf");
 
 ## Következtetés
 
-Gratulálunk! Sikeresen megtanulta, hogyan hozhat létre egyéni vonalkódképeket az Aspose.Words for Java használatával. Ez a sokoldalú könyvtár a dokumentumok automatizálásának és manipulálásának lehetőségeinek világát nyitja meg.
+Gratulálok! Sikeresen megtanulta, hogyan hozhat létre egyéni vonalkódképeket az Aspose.Words for Java használatával. Ez a sokoldalú könyvtár a dokumentumok automatizálásának és manipulálásának lehetőségeinek világát nyitja meg.
 
 ## GYIK
 

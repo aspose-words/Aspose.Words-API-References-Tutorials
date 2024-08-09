@@ -2,7 +2,7 @@
 title: Aspose.Words for Java'da Form Alanlarını Kullanmak
 linktitle: Form Alanlarını Kullanma
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Form alanlarıyla etkileşimli Word belgeleri oluşturmak için Aspose.Words for Java'yı kullanmayı öğrenin. Şimdi başla!
+description: Form alanlarıyla etkileşimli Word belgeleri oluşturmak için Aspose.Words for Java'yı kullanmayı öğrenin. Şimdi başlayın!
 type: docs
 weight: 14
 url: /tr/java/using-document-elements/using-form-fields/

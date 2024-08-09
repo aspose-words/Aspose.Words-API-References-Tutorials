@@ -7,15 +7,15 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-tables/horizontal-merge/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Jste připraveni ponořit se do světa Aspose.Words pro .NET? Dnes se budeme zabývat super užitečnou funkcí: horizontálním slučováním v tabulkách. Může to znít trochu technicky, ale nebojte se, držím vám záda. Na konci tohoto kurzu budete profesionálem v programovém slučování buněk v dokumentech Wordu. Takže, vyhrňme si rukávy a začněme!
+Ahoj! Jste připraveni ponořit se do světa Aspose.Words pro .NET? Dnes se budeme zabývat super užitečnou funkcí: horizontálním slučováním v tabulkách. Může to znít trochu technicky, ale nebojte se, držím vám záda. Na konci tohoto kurzu budete profesionálem v programovém slučování buněk v dokumentech Wordu. Takže, vyhrňme si rukávy a začněme!
 
 ## Předpoklady
 
 Než se pustíme do toho, je několik věcí, které musíte mít na svém místě:
 
-1. Knihovna Aspose.Words for .NET: Pokud jste tak ještě neučinili, stáhněte si knihovnu Aspose.Words for .NET. Můžeš to chytit[tady](https://releases.aspose.com/words/net/).
+1. Knihovna Aspose.Words for .NET: Pokud jste tak ještě neučinili, stáhněte si knihovnu Aspose.Words for .NET. Můžeš to chytit[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Ujistěte se, že máte nastavené vhodné vývojové prostředí, jako je Visual Studio.
 3. Základní znalost C#: Základní znalost programování v C# bude přínosem.
 
@@ -98,7 +98,7 @@ Tento fragment kódu dokončí tabulku a uloží dokument do určeného adresá�
 
 ## Závěr
 
-A tady to máte! Právě jste zvládli umění horizontálního slučování buněk v dokumentu aplikace Word pomocí Aspose.Words for .NET. Podle těchto kroků můžete snadno vytvářet složité struktury tabulek. Pokračujte v experimentování a zkoumání možností Aspose.Words, aby byly vaše dokumenty tak dynamické a flexibilní, jak potřebujete. Šťastné kódování!
+A tady to máte! Právě jste zvládli umění horizontálního slučování buněk v dokumentu aplikace Word pomocí Aspose.Words for .NET. Pomocí těchto kroků můžete snadno vytvářet složité struktury tabulek. Pokračujte v experimentování a zkoumání možností Aspose.Words, aby byly vaše dokumenty tak dynamické a flexibilní, jak potřebujete. Šťastné kódování!
 
 ## FAQ
 
@@ -109,10 +109,10 @@ Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vyt
  Ano, buňky můžete také sloučit vertikálně pomocí`CellFormat.VerticalMerge` vlastnictví.
 
 ### Je Aspose.Words for .NET zdarma k použití?
- Aspose.Words for .NET nabízí bezplatnou zkušební verzi, ale pro plnou funkčnost si budete muset zakoupit licenci. Můžete získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
+ Aspose.Words for .NET nabízí bezplatnou zkušební verzi, ale pro plnou funkčnost si budete muset zakoupit licenci. Můžete získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
 
 ### Jak se mohu dozvědět více o Aspose.Words pro .NET?
- Můžete prozkoumat podrobnou dokumentaci[tady](https://reference.aspose.com/words/net/).
+ Můžete prozkoumat podrobnou dokumentaci[zde](https://reference.aspose.com/words/net/).
 
 ### Kde mohu získat podporu pro Aspose.Words pro .NET?
- V případě jakýchkoli dotazů nebo problémů můžete navštívit fórum podpory Aspose[tady](https://forum.aspose.com/c/words/8).
+ V případě jakýchkoli dotazů nebo problémů můžete navštívit fórum podpory Aspose[zde](https://forum.aspose.com/c/words/8).

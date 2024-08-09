@@ -2,186 +2,128 @@
 title: Revisão de forma
 linktitle: Revisão de forma
 second_title: API de processamento de documentos Aspose.Words
-description: Revise formas em um documento do Word com Aspose.Words for .NET.
+description: Aprenda como lidar com revisões de formas em documentos do Word usando Aspose.Words for .NET com este guia completo. Domine o rastreamento de alterações, a inserção de formas e muito mais.
 type: docs
 weight: 10
 url: /pt/net/working-with-revisions/shape-revision/
 ---
+## Introdução
 
-Neste guia passo a passo, orientaremos você sobre como fazer revisões de formas em um documento do Word usando Aspose.Words for .NET. Forneceremos o código-fonte completo e mostraremos como formatar a saída do markdown.
+Editar documentos do Word programaticamente pode ser uma tarefa difícil, especialmente quando se trata de lidar com formas. Esteja você criando relatórios, projetando modelos ou simplesmente automatizando a criação de documentos, a capacidade de rastrear e gerenciar revisões de formas é crucial. Aspose.Words for .NET oferece uma API poderosa para tornar esse processo contínuo e eficiente. Neste tutorial, nos aprofundaremos nas especificidades da revisão de formas em documentos do Word, garantindo que você tenha as ferramentas e o conhecimento para gerenciar seus documentos com facilidade.
 
-## Passo 1: Criando o documento e adicionando formas
+## Pré-requisitos
 
-A primeira etapa é criar um novo documento e adicionar formas.
+Antes de mergulharmos no código, vamos garantir que você tenha tudo o que precisa:
+
+-  Aspose.Words for .NET: Certifique-se de ter a biblioteca Aspose.Words instalada. Você pode[baixe aqui](https://releases.aspose.com/words/net/).
+- Ambiente de desenvolvimento: você deve ter um ambiente de desenvolvimento configurado, como o Visual Studio.
+- Compreensão básica de C#: Familiaridade com a linguagem de programação C# e conceitos básicos de programação orientada a objetos.
+- Documento Word: Um documento Word para trabalhar, ou você pode criar um durante o tutorial.
+
+## Importar namespaces
+
+Primeiro, vamos importar os namespaces necessários. Eles nos fornecerão acesso às classes e métodos necessários para lidar com documentos e formas do Word.
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+```
+
+## Etapa 1: configurando seu diretório de documentos
+
+Antes de começarmos a trabalhar com formas, precisamos definir o caminho para o nosso diretório de documentos. É aqui que salvaremos nossos documentos modificados.
+
+```csharp
+// O caminho para o diretório de documentos.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## Etapa 2: Criando um Novo Documento
+
+Vamos criar um novo documento Word onde inseriremos e revisaremos formas.
 
 ```csharp
 Document doc = new Document();
-Assert.False(doc.TrackRevisions);
-
-Shape shape = new Shape(doc, ShapeType.Cube);
-shape. WrapType = WrapType. Inline;
-shape. Width = 100.0;
-shape. Height = 100.0;
-doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 ```
 
-## Etapa 2: acompanhar as revisões e adicionar outra forma
+## Etapa 3: inserir uma forma embutida
 
-Ativaremos o rastreamento de revisão e adicionaremos outra forma.
-
-```csharp
-doc.StartTrackRevisions("John Doe");
-
-shape = new Shape(doc, ShapeType.Sun);
-shape. WrapType = WrapType. Inline;
-shape. Width = 100.0;
-shape. Height = 100.0;
-doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
-```
-
-## Etapa 3: obtenha a coleção de formas e verifique as revisões
-
-Obteremos a coleção de formas do documento e verificaremos as revisões associadas a cada forma.
+Começaremos inserindo uma forma embutida em nosso documento sem rastrear revisões. Uma forma embutida é aquela que flui com o texto.
 
 ```csharp
-List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-Assert.True(shapes[0].IsDeleteRevision);
-
-Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-Assert.True(shapes[1].IsInsertRevision);
-```
-
-## Etapa 4: verificar as revisões de movimentação de forma
-
-Carregaremos um documento existente contendo revisões de deslocamento de forma e verificaremos as revisões associadas.
-
-```csharp
-doc = new Document(MyDir + "Revision shape.docx");
-
-shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert. False(shapes[0].IsMoveFromRevision);
-Assert.True(shapes[0].IsMoveToRevision);
-
-Assert.True(shapes[1].IsMoveFromRevision);
-Assert. False(shapes[1].IsMoveToRevision);
-```
-
-### Exemplo de código-fonte para revisão de forma usando Aspose.Words for .NET
-
-Aqui está o código-fonte completo para fazer revisões de formas em um documento usando Aspose.Words for .NET:
-
-```csharp
-Document doc = new Document();
-
-//Insira uma forma embutida sem rastrear revisões.
-Assert.False(doc.TrackRevisions);
 Shape shape = new Shape(doc, ShapeType.Cube);
 shape.WrapType = WrapType.Inline;
 shape.Width = 100.0;
 shape.Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
+```
 
-// Comece a rastrear as revisões e insira outra forma.
+## Etapa 4: começando a rastrear revisões
+
+Para rastrear alterações em nosso documento, precisamos habilitar o rastreamento de revisões. Isso é essencial para identificar modificações feitas nas formas.
+
+```csharp
 doc.StartTrackRevisions("John Doe");
+```
+
+## Etapa 5: Inserindo Outra Forma com Revisões
+
+Agora que o rastreamento de revisão está habilitado, vamos inserir outra forma. Desta vez, quaisquer alterações serão rastreadas.
+
+```csharp
 shape = new Shape(doc, ShapeType.Sun);
 shape.WrapType = WrapType.Inline;
 shape.Width = 100.0;
 shape.Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
+```
 
-// Obtenha a coleção de formas do documento que inclui apenas as duas formas que adicionamos.
+## Etapa 6: Recuperando e Modificando Formas
+
+Podemos recuperar todas as formas do documento e modificá-las conforme necessário. Aqui, pegaremos as formas e removeremos a primeira.
+
+```csharp
 List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-// Remova a primeira forma.
 shapes[0].Remove();
+```
 
-// Como removemos essa forma enquanto as alterações estavam sendo rastreadas, a forma conta como uma revisão de exclusão.
-Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-Assert.True(shapes[0].IsDeleteRevision);
+## Etapa 7: salvando o documento
 
-// E inserimos outra forma enquanto rastreamos as alterações, para que essa forma conte como uma revisão de inserção.
-Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-Assert.True(shapes[1].IsInsertRevision);
+Depois de fazer nossas alterações, precisamos salvar o documento. Isso garante que todas as revisões e modificações sejam armazenadas.
 
-// O documento tem uma forma que foi movida, mas as revisões de movimentação de forma terão duas instâncias dessa forma.
-// Uma será a forma no seu destino de chegada e a outra será a forma no seu local original.
-doc = new Document(MyDir + "Revision shape.docx");
+```csharp
+doc.Save(dataDir + "Revision shape.docx");
+```
 
+## Etapa 8: Tratamento de revisões de movimentação de forma
+
+Quando uma forma é movida, o Aspose.Words rastreia isso como uma revisão. Isso significa que haverá duas instâncias da forma: uma em seu local original e outra em seu novo local.
+
+```csharp
+doc = new Document(dataDir + "Revision shape.docx");
 shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-// Este é o movimento para a revisão, também a forma no seu destino de chegada.
-Assert.False(shapes[0].IsMoveFromRevision);
-Assert.True(shapes[0].IsMoveToRevision);
-
-// Esta é a mudança da revisão, que é a forma em seu local original.
-Assert.True(shapes[1].IsMoveFromRevision);
-Assert.False(shapes[1].IsMoveToRevision);
 ```
 
 ## Conclusão
 
-Neste tutorial, aprendemos como fazer revisões de formas em um documento Word usando Aspose.Words for .NET. Seguindo as etapas de criação do documento, habilitando o rastreamento de revisões, verificando as revisões associadas a cada forma e verificando as revisões para mover as formas, conseguimos gerenciar as revisões com sucesso. Aspose.Words for .NET oferece uma API poderosa para processamento de palavras com revisões e formulários em documentos do Word.
+E aí está! Você aprendeu com sucesso como lidar com revisões de forma em documentos do Word usando Aspose.Words for .NET. Esteja você gerenciando modelos de documentos, automatizando relatórios ou simplesmente acompanhando alterações, essas habilidades são inestimáveis. Seguindo este guia passo a passo, você não apenas dominará o básico, mas também obterá informações sobre técnicas mais avançadas de manuseio de documentos.
 
-### Perguntas frequentes
+## Perguntas frequentes
 
-#### P: Como posso criar um novo documento e adicionar formas no Aspose.Words for .NET?
+### O que é Aspose.Words para .NET?
+Aspose.Words for .NET é uma biblioteca poderosa que permite aos desenvolvedores criar, modificar e converter documentos do Word programaticamente usando C#.
 
-R: Para criar um novo documento e adicionar formas no Aspose.Words for .NET, você pode usar o código a seguir. Aqui adicionamos duas formas, um cubo e um sol, à primeira seção do documento:
+### Posso rastrear alterações feitas em outros elementos de um documento do Word?
+Sim, Aspose.Words for .NET oferece suporte ao rastreamento de alterações em vários elementos, incluindo texto, tabelas e muito mais.
 
-```csharp
-Document doc = new Document();
-Assert.False(doc.TrackRevisions);
+### Como posso obter uma avaliação gratuita do Aspose.Words for .NET?
+ Você pode obter uma avaliação gratuita do Aspose.Words for .NET[aqui](https://releases.aspose.com/).
 
-Shape shape = new Shape(doc, ShapeType.Cube);
-shape. WrapType = WrapType. Inline;
-shape. Width = 100.0;
-shape. Height = 100.0;
-doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
-```
+### É possível aceitar ou rejeitar revisões programaticamente?
+Sim, Aspose.Words for .NET fornece métodos para aceitar ou rejeitar revisões programaticamente.
 
-#### P: Como habilito o rastreamento de revisão no Aspose.Words for .NET?
-
- R: Para habilitar o rastreamento de revisão no Aspose.Words for .NET, você pode usar o`StartTrackRevisions` método do`Document` objeto. Este método leva como parâmetro o nome do autor das revisões:
-
-```csharp
-doc.StartTrackRevisions("John Doe");
-```
-
-#### P: Como posso verificar as revisões associadas a cada forma em um documento Aspose.Words for .NET?
-
-R: Para verificar as revisões associadas a cada forma em um documento Aspose.Words for .NET, você pode obter a coleção de formas do documento usando o`GetChildNodes` método com o`NodeType.Shape` tipo de nó. Então você pode acessar cada forma`IsDeleteRevision`, `IsInsertRevision`, `IsMoveFromRevision` , e`IsMoveToRevision` propriedades para determinar que tipo de revisão está associada à forma:
-
-```csharp
-List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-Assert.True(shapes[0].IsDeleteRevision);
-
-Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-Assert.True(shapes[1].IsInsertRevision);
-```
-
-#### P: Como posso verificar revisões de deslocamento de formas em um documento Aspose.Words for .NET?
-
- R: Para verificar revisões de deslocamento de forma em um documento Aspose.Words para .NET, você pode carregar um documento existente que contenha revisões de deslocamento de forma. Então você pode acessar cada forma`IsMoveFromRevision`e`IsMoveToRevision` propriedades para determinar se ele está sendo movido e, em caso afirmativo, de onde e para onde:
-
-```csharp
-doc = new Document(MyDir + "Revision shape.docx");
-
-shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert. False(shapes[0].IsMoveFromRevision);
-Assert.True(shapes[0].IsMoveToRevision);
-
-Assert.True(shapes[1].IsMoveFromRevision);
-Assert. False(shapes[1].IsMoveToRevision);
-```
+### Posso usar Aspose.Words for .NET com outras linguagens .NET além de C#?
+Absolutamente! Aspose.Words for .NET pode ser usado com qualquer linguagem .NET, incluindo VB.NET e F#.

@@ -125,7 +125,7 @@ Ja, u kunt de opmaak van lijstitems, inclusief lettertype, grootte, kleur en mee
 Absoluut! Aspose.Words voor Java ondersteunt een breed scala aan documentformaten, waaronder DOCX, PDF, HTML en meer.
 
 ### Hoe kan ik een documentenlijst naar PDF converteren?
-Om een documentenlijst naar PDF te converteren, laadt u eenvoudigweg het document met Aspose.Words voor Java en slaat u het op in PDF-formaat. Het is zo makkelijk!
+Om een documentenlijst naar PDF te converteren, laadt u eenvoudigweg het document met Aspose.Words voor Java en slaat u het op in PDF-formaat. Zo eenvoudig is het!
 
 ### Ondersteunt Aspose.Words voor Java het werken met tabellen in documenten?
 Ja, Aspose.Words voor Java biedt uitgebreide ondersteuning voor het werken met tabellen, zodat u moeiteloos tabelgegevens kunt maken, wijzigen en extraheren.

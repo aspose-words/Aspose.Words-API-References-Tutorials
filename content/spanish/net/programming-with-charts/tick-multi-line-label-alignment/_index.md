@@ -15,7 +15,7 @@ url: /es/net/programming-with-charts/tick-multi-line-label-alignment/
 
 Antes de sumergirnos de lleno en el mundo de la alineación de etiquetas de varias líneas, asegurémonos de que tiene todo en orden. Esto es lo que necesitarás:
 
-1.  Aspose.Words para .NET: asegúrese de tener la última versión de Aspose.Words para .NET. Si no, puedes[descarguelo aqui](https://releases.aspose.com/words/net/).
+1.  Aspose.Words para .NET: asegúrese de tener la última versión de Aspose.Words para .NET. Si no, puedes[descárgalo aquí](https://releases.aspose.com/words/net/).
 2. Entorno .NET: asegúrese de que su entorno de desarrollo esté configurado con .NET.
 3. Conocimientos básicos de C#: una comprensión fundamental de C# hará que este viaje sea más sencillo.
 
@@ -64,7 +64,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 Insertemos un gráfico en nuestro documento. Usaremos un gráfico de dispersión para este ejemplo.
 
- Utilizando el`InsertChart` método de la`DocumentBuilder` clase, podemos insertar un gráfico de dispersión en nuestro documento.
+ Usando el`InsertChart` método de la`DocumentBuilder` clase, podemos insertar un gráfico de dispersión en nuestro documento.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Scatter, 450, 250);
@@ -84,7 +84,7 @@ ChartAxis axis = shape.Chart.AxisX;
 
 ¡Ahora viene la magia! Estableceremos la alineación de la etiqueta de marca para etiquetas de varias líneas.
 
- Selecciona el`TickLabelAlignment` propiedad del eje a`ParagraphAlignment.Right`.
+ Establecer el`TickLabelAlignment` propiedad del eje a`ParagraphAlignment.Right`.
 
 ```csharp
 axis.TickLabelAlignment = ParagraphAlignment.Right;
@@ -94,7 +94,7 @@ axis.TickLabelAlignment = ParagraphAlignment.Right;
 
 Por último, pero no menos importante, guardemos nuestro documento con los cambios deseados.
 
- Utilizar el`Save` método de la`Document` clase para guardar el documento en el directorio especificado.
+ Utilice el`Save` método de la`Document` clase para guardar el documento en el directorio especificado.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
@@ -116,7 +116,7 @@ doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
 
 ### ¿Puedo utilizar Aspose.Words para .NET de forma gratuita?
 
- Aspose ofrece una[prueba gratis](https://releases.aspose.com/) que puedes utilizar para evaluar el producto. Para obtener acceso completo, deberá adquirir una licencia.
+ Aspose ofrece una[prueba gratuita](https://releases.aspose.com/) que puedes utilizar para evaluar el producto. Para obtener acceso completo, deberá adquirir una licencia.
 
 ### ¿Dónde puedo obtener soporte para Aspose.Words para .NET?
 

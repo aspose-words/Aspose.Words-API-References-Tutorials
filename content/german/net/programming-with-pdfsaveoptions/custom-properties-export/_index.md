@@ -86,4 +86,4 @@ Aspose.Words für .NET bietet eine robuste und benutzerfreundliche API zum Bearb
 Aspose.Words für .NET unterstützt den Export in verschiedene Formate, darunter DOCX, HTML, EPUB und viele mehr.
 
 ### Wo erhalte ich Unterstützung, wenn Probleme auftreten?
- Für Unterstützung besuchen Sie bitte die[Aspose.Words Support-Forum](https://forum.aspose.com/c/words/8) zur Hilfe.
+ Für Unterstützung besuchen Sie bitte die[Aspose.Words Support-Forum](https://forum.aspose.com/c/words/8) um Hilfe.

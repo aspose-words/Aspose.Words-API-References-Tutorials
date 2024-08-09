@@ -15,7 +15,7 @@ Bạn đã bao giờ tự hỏi làm cách nào để theo dõi thuộc tính th
 
 Trước khi chúng ta chuyển sang hướng dẫn từng bước, có một số điều bạn cần:
 
-1.  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt Aspose.Words for .NET. Nếu chưa, bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt Aspose.Words for .NET. Nếu chưa, bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Một môi trường phát triển như Visual Studio.
 3. Kiến thức cơ bản về C#: Hiểu những điều cơ bản về lập trình C# sẽ rất hữu ích.
 
@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.UpdateLastSavedTimeProperty.docx
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bằng cách làm theo các bước này, bạn có thể dễ dàng cập nhật thuộc tính thời gian đã lưu cuối cùng của tài liệu Word bằng Aspose.Words cho .NET. Điều này đặc biệt hữu ích để duy trì siêu dữ liệu chính xác trong tài liệu của bạn, điều này có thể rất quan trọng đối với hệ thống quản lý tài liệu và nhiều ứng dụng khác.
+Và bạn có nó! Bằng cách làm theo các bước này, bạn có thể dễ dàng cập nhật thuộc tính thời gian đã lưu cuối cùng của tài liệu Word bằng Aspose.Words cho .NET. Điều này đặc biệt hữu ích để duy trì siêu dữ liệu chính xác trong tài liệu của bạn, điều này có thể rất quan trọng đối với hệ thống quản lý tài liệu và nhiều ứng dụng khác.
 
 ## Câu hỏi thường gặp
 

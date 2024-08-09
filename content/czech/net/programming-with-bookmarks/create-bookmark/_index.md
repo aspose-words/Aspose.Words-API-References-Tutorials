@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-bookmarks/create-bookmark/
 ---
-## Úvod
+## Zavedení
 
 Vytváření záložek v dokumentu aplikace Word může změnit hru, zvláště když chcete bez námahy procházet velkými dokumenty. Dnes si projdeme proces vytváření záložek pomocí Aspose.Words for .NET. Tento tutoriál vás provede krok za krokem a zajistí, že porozumíte každé části procesu. Takže, pojďme se rovnou ponořit!
 
@@ -15,7 +15,7 @@ Vytváření záložek v dokumentu aplikace Word může změnit hru, zvláště 
 
 Než začneme, musíte mít následující:
 
-1.  Aspose.Words for .NET Library: Stáhněte a nainstalujte z[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Stáhněte a nainstalujte z[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Visual Studio nebo jakékoli jiné vývojové prostředí .NET.
 3. Základní znalost C#: Pochopení základních pojmů programování v C#.
 
@@ -125,7 +125,7 @@ Absolutně! Při ukládání dokumentu jako PDF můžete vytvořit libovolný po
 
 ### Je možné smazat záložku?
 
- Ano, záložku můžete smazat pomocí`Bookmarks.Remove` zadáním názvu záložky.
+ Ano, záložku můžete odstranit pomocí`Bookmarks.Remove` zadáním názvu záložky.
 
 ### Mohu vytvářet záložky v jiných formátech než PDF?
 

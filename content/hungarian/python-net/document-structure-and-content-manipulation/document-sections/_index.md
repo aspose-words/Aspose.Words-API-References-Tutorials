@@ -2,7 +2,7 @@
 title: Dokumentumrészek és elrendezés kezelése
 linktitle: Dokumentumrészek és elrendezés kezelése
 second_title: Aspose.Words Python Document Management API
-description: Ismerje meg, hogyan kezelheti a dokumentumrészeket és elrendezéseket az Aspose.Words for Python segítségével. Hozzon létre, módosítsa szakaszokat, testreszabja az elrendezéseket és így tovább. Kezd el most!
+description: Ismerje meg, hogyan kezelheti a dokumentumrészeket és elrendezéseket az Aspose.Words for Python segítségével. Hozzon létre, módosítsa szakaszokat, testreszabja az elrendezéseket és így tovább. Kezdje el most!
 type: docs
 weight: 24
 url: /hu/python-net/document-structure-and-content-manipulation/document-sections/

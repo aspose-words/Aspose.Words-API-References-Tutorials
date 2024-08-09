@@ -60,7 +60,7 @@ Itt először hozzáadunk egy szabványos angol kifejezést. Ezután engedélyez
 
 ## 3. lépés: Konfigurálja a Bidi Marks mentési beállításait
 
- Annak érdekében, hogy a kétirányú jelölések helyesen legyenek elmentve a dokumentumban, konfigurálnia kell a`TxtSaveOptions` és engedélyezze a`AddBidiMarks` választási lehetőség.
+ Annak érdekében, hogy a kétirányú jelölések helyesen legyenek elmentve a dokumentumban, konfigurálnia kell a`TxtSaveOptions` és engedélyezze a`AddBidiMarks` opció.
 
 ```csharp
 // Adjon hozzá kétirányú jeleket
@@ -89,4 +89,4 @@ Igen, szükség szerint alkalmazhatja a kétirányú formázást a dokumentum ad
 A megadott példában a dokumentum szöveges fájlként van elmentve. Az Aspose.Words azonban támogatja a dokumentumok különféle formátumokban történő mentését is, miközben megőrzi a kétirányú jeleket.
 
 ### Hol találhatok további információt az Aspose.Words for .NET-ről?
- Az Aspose.Words for .NET-ről többet megtudhat a következőn keresztül[Aspose Dokumentáció](https://reference.aspose.com/words/net/) és elérje a[Támogatói fórum](https://forum.aspose.com/c/words/8) további segítségért.
+ Az Aspose.Words for .NET-ről többet megtudhat a következőn keresztül[Aspose Dokumentáció](https://reference.aspose.com/words/net/) és elérje a[Támogatási fórum](https://forum.aspose.com/c/words/8) további segítségért.

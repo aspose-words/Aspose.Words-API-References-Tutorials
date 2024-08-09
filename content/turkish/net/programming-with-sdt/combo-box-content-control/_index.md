@@ -94,7 +94,7 @@ doc.Save(dataDir + "WorkingWithSdt.ComboBoxContentControl.docx");
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesinde başarılı bir şekilde birleşik giriş kutusu içerik kontrolü oluşturdunuz. Bu adımları izleyerek belgelerinize etkileşimli öğeler ekleyerek işlevlerini ve kullanıcı deneyimini geliştirebilirsiniz.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesinde başarılı bir şekilde birleşik giriş kutusu içerik kontrolü oluşturdunuz. Bu adımları izleyerek belgelerinize etkileşimli öğeler ekleyerek işlevlerini ve kullanıcı deneyimini geliştirebilirsiniz.
 
 Farklı içerik kontrol türlerini denemekten ve bunları ihtiyaçlarınıza göre özelleştirmekten çekinmeyin. Herhangi bir sorunuz varsa veya herhangi bir sorunla karşılaşırsanız destek için iletişime geçmekten çekinmeyin.
 

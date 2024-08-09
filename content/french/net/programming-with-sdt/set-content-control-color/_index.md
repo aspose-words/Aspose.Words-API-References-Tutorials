@@ -85,7 +85,7 @@ Vous devrez parcourir tous les SDT du document et appliquer le changement de cou
 
 ### Est-il possible de définir d'autres propriétés des SDT en dehors de la couleur ?
 
- Oui le`StructuredDocumentTag` La classe possède diverses propriétés que vous pouvez définir, notamment la taille de la police, le style de police, etc. Reportez-vous à la documentation Aspose.Words pour plus de détails.
+ Oui, le`StructuredDocumentTag` La classe possède diverses propriétés que vous pouvez définir, notamment la taille de la police, le style de police, etc. Reportez-vous à la documentation Aspose.Words pour plus de détails.
 
 ### Puis-je ajouter des événements aux SDT, tels que des événements de clic ?
 

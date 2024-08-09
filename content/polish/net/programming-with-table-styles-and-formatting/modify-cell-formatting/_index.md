@@ -105,7 +105,7 @@ I masz to! Pomyślnie zmodyfikowaliśmy formatowanie komórek w dokumencie progr
 Tak, możesz przeglądać komórki w tabeli i stosować do każdej z nich to samo formatowanie.
 
 ### Jak zapisać zmodyfikowany dokument?
- Użyj`doc.Save("output.docx")` metodę zapisania zmian.
+ Skorzystaj z`doc.Save("output.docx")` metodę zapisania zmian.
 
 ### Czy można zastosować różne odcienie do różnych komórek?
 Absolutnie! Wystarczy uzyskać dostęp do każdej komórki indywidualnie i ustawić jej cieniowanie.

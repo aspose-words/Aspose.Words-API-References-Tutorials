@@ -16,12 +16,12 @@ url: /zh-hant/net/working-with-revisions/
  ## 教學
 | 標題 | 描述 |
 | --- | --- |
-| [接受修改](./accept-revisions/) | 了解如何使用 Aspose.Words for .NET 接受 Word 文件的修訂。 |
-| [取得單字的修訂類型](./get-revision-types/) | 使用 Aspose.Words for .NET 取得 Word 文件中單字的修訂類型。 |
-| [取得修訂組](./get-revision-groups/) | 使用 Aspose.Words for .NET 取得 Word 文件中的修訂群組詳細資訊。 |
-| [刪除 PDF 檔案中的註釋](./remove-comments-in-pdf/) | 使用 Aspose.Words for .NET 刪除 PDF 檔案中的註解。 |
-| [在氣球中顯示修訂](./show-revisions-in-balloons/) | 使用 Aspose.Words for .NET 在氣球中顯示修訂版本。 |
-| [取得修訂組詳細信息](./get-revision-group-details/) | 使用 Aspose.Words for .NET 取得 Word 文件中的修訂群組詳細資訊。 |
-| [存取修訂版本](./access-revised-version/) | 使用 Aspose.Words for .NET 存取 Word 文件的修訂版本。 |
-| [在追蹤文件中移動節點](./move-node-in-tracked-document/) | 使用 Aspose.Words for .NET 移動追蹤文件中的節點。 |
-| [形狀修正](./shape-revision/) | 使用 Aspose.Words for .NET 修改 Word 文件中的形狀。 |
+| [接受修改](./accept-revisions/) | 使用 Aspose.Words for .NET 掌握文件修訂。學習毫不費力地追蹤、接受和拒絕變更。提升您的文件管理技能。 |
+| [取得單字的修訂類型](./get-revision-types/) |了解如何使用 Aspose.Words for .NET 取得 Word 文件中單字的修訂類型。本逐步指南可協助您有效處理文件修訂。 |
+| [取得修訂組](./get-revision-groups/) | 透過這份全面的逐步指南，了解如何使用 Aspose.Words for .NET 從 Word 文件中擷取修訂群組。非常適合文件管理。 |
+| [刪除 PDF 檔案中的註釋](./remove-comments-in-pdf/) | 透過我們的逐步指南，了解如何使用 Aspose.Words for .NET 從 PDF 檔案中刪除註解。 |
+| [在氣球中顯示修訂](./show-revisions-in-balloons/) | 了解如何使用 Aspose.Words for .NET 在氣球中顯示修訂。本詳細指南將引導您完成每個步驟，確保您的文件變更清晰且有條理。 |
+| [取得修訂組詳細信息](./get-revision-group-details/) | 透過此逐步指南，使用 Aspose.Words for .NET 輕鬆取得 Word 文件中的修訂群組詳細資訊。非常適合 .NET 開發人員。 |
+| [存取修訂版本](./access-revised-version/) | 了解如何使用 Aspose.Words for .NET 存取和顯示文件的修訂版本。請遵循我們的無縫文件管理逐步指南。 |
+| [在追蹤文件中移動節點](./move-node-in-tracked-document/) | 透過我們詳細的逐步指南，了解如何使用 Aspose.Words for .NET 在追蹤的 Word 文件中移動節點。非常適合開發人員。 |
+| [形狀修正](./shape-revision/) | 透過這份綜合指南，了解如何使用 Aspose.Words for .NET 處理 Word 文件中的形狀修訂。掌握追蹤更改、插入形狀等。 |

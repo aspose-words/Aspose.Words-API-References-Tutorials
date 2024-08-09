@@ -9,7 +9,7 @@ url: /fr/net/programming-with-document-properties/remove-personal-information/
 ---
 ## Introduction
 
-Salut! Vous êtes-vous déjà retrouvé noyé dans des tâches de gestion de documents ? Nous y avons tous été. Qu'il s'agisse de contrats, de rapports ou simplement de la paperasse quotidienne, disposer d'un outil qui simplifie le processus peut vous sauver la vie. Entrez Aspose.Words pour .NET. Ce joyau de bibliothèque vous permet d'automatiser la création, la manipulation et la conversion de documents comme un pro. Aujourd'hui, nous allons vous présenter une fonctionnalité très pratique : supprimer des informations personnelles d'un document. Allons-y !
+Salut! Vous êtes-vous déjà retrouvé noyé dans des tâches de gestion de documents ? Nous sommes tous passés par là. Qu'il s'agisse de contrats, de rapports ou simplement de la paperasse quotidienne, disposer d'un outil qui simplifie le processus peut vous sauver la vie. Entrez Aspose.Words pour .NET. Ce joyau de bibliothèque vous permet d'automatiser la création, la manipulation et la conversion de documents comme un pro. Aujourd'hui, nous allons vous présenter une fonctionnalité très pratique : supprimer des informations personnelles d'un document. Allons-y !
 
 ## Conditions préalables
 
@@ -66,7 +66,7 @@ doc.Save(dataDir + "DocumentPropertiesAndVariables.RemovePersonalInformation.doc
 
 ## Conclusion
 
-Et voila! En quelques étapes simples, nous avons supprimé les informations personnelles d'un document à l'aide d'Aspose.Words for .NET. Ce n'est que la pointe de l'iceberg en ce qui concerne ce que vous pouvez faire avec cette puissante bibliothèque. Que vous automatisiez des rapports, gériez de gros volumes de documents ou que vous rendiez simplement votre flux de travail un peu plus fluide, Aspose.Words est là pour vous.
+Et voilà ! En quelques étapes simples, nous avons supprimé les informations personnelles d'un document à l'aide d'Aspose.Words for .NET. Ce n'est que la pointe de l'iceberg en ce qui concerne ce que vous pouvez faire avec cette puissante bibliothèque. Que vous automatisiez des rapports, gériez de gros volumes de documents ou que vous rendiez simplement votre flux de travail un peu plus fluide, Aspose.Words est là pour vous.
 
 ## FAQ
 
@@ -76,7 +76,7 @@ Les informations personnelles incluent les noms des auteurs, les propriétés du
 
 ### Aspose.Words pour .NET est-il gratuit ?
 
- Aspose.Words propose un[essai gratuit](https://releases.aspose.com/) vous pouvez donc le tester, mais vous devrez acheter une licence pour bénéficier de toutes les fonctionnalités. Vérifiez[prix](https://purchase.aspose.com/buy) pour plus de détails.
+ Aspose.Words propose un[essai gratuit](https://releases.aspose.com/) vous pouvez donc le tester, mais vous devrez acheter une licence pour bénéficier de toutes les fonctionnalités. Découvrez le[prix](https://purchase.aspose.com/buy) pour plus de détails.
 
 ### Puis-je utiliser Aspose.Words pour d’autres formats de documents ?
 
@@ -84,8 +84,8 @@ Absolument! Aspose.Words prend en charge une variété de formats, notamment DOC
 
 ### Comment puis-je obtenir de l'aide si je rencontre des problèmes ?
 
- Vous pouvez visiter le Aspose.Words[forum d'entraide](https://forum.aspose.com/c/words/8) pour obtenir de l'aide concernant tout problème ou toute question que vous pourriez avoir.
+ Vous pouvez visiter le Aspose.Words[forum d'assistance](https://forum.aspose.com/c/words/8) pour obtenir de l'aide concernant tout problème ou toute question que vous pourriez avoir.
 
 ### Quelles autres fonctionnalités Aspose.Words offre-t-il ?
 
-Aspose.Words regorge de fonctionnalités. Vous pouvez créer, modifier, convertir et manipuler des documents de nombreuses manières. Pour une liste complète, consultez le[Documentation](https://reference.aspose.com/words/net/).
+Aspose.Words regorge de fonctionnalités. Vous pouvez créer, modifier, convertir et manipuler des documents de nombreuses manières. Pour une liste complète, consultez le[documentation](https://reference.aspose.com/words/net/).

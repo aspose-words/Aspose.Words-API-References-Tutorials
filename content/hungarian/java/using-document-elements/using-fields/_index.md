@@ -2,7 +2,7 @@
 title: Mezők használata az Aspose.Words for Java-ban
 linktitle: Mezők használata
 second_title: Aspose.Words Java Document Processing API
-description: Tanulja meg az Aspose.Words for Java mezők hatékony használatát ebben a lépésről lépésre mutató oktatóanyagban. Dinamikus Word dokumentumokat hozhat létre könnyedén.
+description: Ebben a lépésenkénti oktatóanyagban tanulja meg az Aspose.Words for Java mezők hatékony használatát. Dinamikus Word dokumentumokat hozhat létre könnyedén.
 type: docs
 weight: 11
 url: /hu/java/using-document-elements/using-fields/
@@ -10,7 +10,7 @@ url: /hu/java/using-document-elements/using-fields/
 
 Ebben a lépésenkénti oktatóanyagban bemutatjuk, hogyan használhatja az Aspose.Words for Java mezőit a dokumentumok egyszerű kezeléséhez. Az Aspose.Words for Java egy hatékony API, amely lehetővé teszi a Word-dokumentumok programozott kezelését, így teljes ellenőrzést biztosít a tartalom és a formázás felett.
 
-## 1. Bemutatkozás
+## 1. Bevezetés
 
 Az Aspose.Words for Java alapvető eszköz azoknak, akik Word dokumentumokkal foglalkoznak Java alkalmazásokban. A mezők olyan helyőrzők, amelyek dinamikus adatokat tárolhatnak a dokumentumban. Ez az oktatóanyag megmutatja, hogyan kell hatékonyan dolgozni a mezőkkel.
 
@@ -100,7 +100,7 @@ A Class HandleMergeField forráskódja
             // Úgy döntöttünk, hogy az összes logikai értéket jelölőnégyzet űrlapmezőként akarjuk kiadni.
             if (e.getFieldValue() instanceof /*boolean*/Boolean)
             {
-                // Vigye a "kurzort" az aktuális egyesítési mezőre.
+                // Vigye a „kurzort” az aktuális egyesítési mezőre.
                 mBuilder.moveToMergeField(e.getFieldName());
                 String checkBoxName = MessageFormat.format("{0}{1}", e.getFieldName(), e.getRecordIndex());
                 mBuilder.insertCheckBox(checkBoxName, (Boolean) e.getFieldValue(), 0);
@@ -355,7 +355,7 @@ A Class HandleMergeField forráskódja
 
 ## 6. Következtetés
 
-Gratulálunk! Megtanulta az Aspose.Words for Java mezőinek használatát a Word dokumentumok dinamikus kezeléséhez. Ez a hatékony API teljes ellenőrzést biztosít a dokumentumok felett, így értékes eszköz a Java-fejlesztők számára.
+Gratulálok! Megtanulta az Aspose.Words for Java mezőinek használatát a Word dokumentumok dinamikus kezeléséhez. Ez a hatékony API teljes ellenőrzést biztosít a dokumentumok felett, így értékes eszköz a Java-fejlesztők számára.
 
 ## 7. GYIK
 

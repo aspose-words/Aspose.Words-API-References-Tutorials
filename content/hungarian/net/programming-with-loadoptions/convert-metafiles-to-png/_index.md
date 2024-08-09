@@ -77,12 +77,12 @@ Document doc = new Document(dataDir + "WMF with image.docx", loadOptions);
 
 ## Következtetés
 
-Gratulálunk! Sikeresen konvertálta a metafájlokat PNG-re egy Word-dokumentumban az Aspose.Words for .NET használatával. Ez a hatékony funkció leegyszerűsítheti a dokumentumokban lévő grafikák kezelését, így könnyebben hozzáférhetővé és könnyebben kezelhetővé válik. Boldog kódolást!
+Gratulálok! Sikeresen konvertálta a metafájlokat PNG-re egy Word-dokumentumban az Aspose.Words for .NET használatával. Ez a hatékony funkció leegyszerűsítheti a dokumentumokban lévő grafikák kezelését, így könnyebben hozzáférhetővé és könnyebben kezelhetővé válik. Boldog kódolást!
 
 ## GYIK
 
 ### A metafájlokon kívül más fájltípusokat is konvertálhatok PNG-re?
- Az Aspose.Words for .NET széles körű támogatást nyújt a különféle fájlformátumokhoz. Ellenőrizd a[dokumentáció](https://reference.aspose.com/words/net/) további részletekért.
+ Az Aspose.Words for .NET széles körű támogatást nyújt a különféle fájlformátumokhoz. Ellenőrizze a[dokumentáció](https://reference.aspose.com/words/net/) további részletekért.
 
 ### Van mód több dokumentum kötegelt feldolgozására?
 Igen, végiglapozhat egy dokumentumkönyvtárat, és minden fájlra ugyanazokat a betöltési beállításokat alkalmazhatja.
@@ -94,4 +94,4 @@ A metafájlok az eredeti formátumukban maradnak, ami nem biztos, hogy minden al
  Igen, a teljes funkcionalitáshoz licenc szükséges. Kaphatsz a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/) próba céljára.
 
 ### Használhatom ezt a módszert más grafikus formátumokhoz, például JPEG vagy GIF?
- Ez a módszer a metafájlokra vonatkozik, de az Aspose.Words for .NET különféle képformátumokat támogat. Utal[dokumentáció](https://reference.aspose.com/words/net/) további információért.
+ Ez a módszer a metafájlokra vonatkozik, de az Aspose.Words for .NET különféle képformátumokat támogat. Lásd a[dokumentáció](https://reference.aspose.com/words/net/) további információkért.

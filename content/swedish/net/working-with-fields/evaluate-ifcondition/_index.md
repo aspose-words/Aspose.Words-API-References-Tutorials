@@ -15,7 +15,7 @@ När du arbetar med dynamiska dokument är det ofta viktigt att inkludera villko
 
 Innan du dyker in i handledningen, se till att du har följande:
 
-1.  Aspose.Words for .NET Library: Se till att du har Aspose.Words for .NET-biblioteket installerat. Du kan ladda ner den från[hemsida](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Se till att du har Aspose.Words for .NET-biblioteket installerat. Du kan ladda ner den från[webbplats](https://releases.aspose.com/words/net/).
 
 2. Visual Studio: Alla versioner av Visual Studio som stöder .NET-utveckling. Se till att du har ett .NET-projekt inrättat där du kan integrera Aspose.Words.
 

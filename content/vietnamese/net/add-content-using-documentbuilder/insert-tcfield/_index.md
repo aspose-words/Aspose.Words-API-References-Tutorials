@@ -9,7 +9,7 @@ url: /vi/net/add-content-using-documentbuilder/insert-tcfield/
 ---
 ## Giới thiệu
 
-Này! Nếu bạn đang đi sâu vào thế giới tự động hóa tài liệu thì bạn đã đến đúng nơi. Hôm nay, chúng ta sẽ khám phá cách chèn trường TC (Mục lục) vào tài liệu Word bằng Aspose.Words cho .NET. Tin tôi đi, khi kết thúc hướng dẫn này, bạn sẽ cảm thấy mình giống như một phù thủy thực hiện các phép thuật trong tài liệu Word của mình. Sẵn sàng để bắt đầu? Làm thôi nào!
+Này! Nếu bạn đang đi sâu vào thế giới tự động hóa tài liệu thì bạn đã đến đúng nơi. Hôm nay, chúng ta sẽ khám phá cách chèn trường TC (Mục lục) vào tài liệu Word bằng Aspose.Words cho .NET. Tin tôi đi, khi kết thúc hướng dẫn này, bạn sẽ cảm thấy mình giống như một phù thủy thực hiện các phép thuật trong tài liệu Word của mình. Sẵn sàng để bắt đầu? Hãy làm điều này!
 
 ## Điều kiện tiên quyết
 
@@ -34,7 +34,7 @@ using Aspose.Words.Fields;
 
 ## Bước 1: Thiết lập dự án của bạn
 
-Trước khi bắt đầu viết mã, hãy thiết lập dự án của chúng ta. Mở môi trường phát triển của bạn và tạo một dự án .NET mới. Đảm bảo thêm tham chiếu đến thư viện Aspose.Words for .NET. Nếu bạn đang sử dụng NuGet, bạn có thể dễ dàng cài đặt nó thông qua Bảng điều khiển quản lý gói:
+Trước khi bắt đầu viết mã, hãy thiết lập dự án của chúng ta. Mở môi trường phát triển của bạn và tạo một dự án .NET mới. Đảm bảo thêm tham chiếu đến thư viện Aspose.Words cho .NET. Nếu bạn đang sử dụng NuGet, bạn có thể dễ dàng cài đặt nó thông qua Bảng điều khiển quản lý gói:
 
 ```shell
 Install-Package Aspose.Words
@@ -64,7 +64,7 @@ Bây giờ đến phần thú vị đây. Chúng tôi sẽ chèn trường TC v�
 builder.InsertField("TC \"Entry Text\" \\f t");
 ```
 
- Dòng mã này yêu cầu Aspose.Words chèn trường TC có văn bản nhập "Văn bản nhập". Các`\\f t`một phần là một công tắc xác định cách hiển thị mục nhập trong Mục lục.
+ Dòng mã này yêu cầu Aspose.Words chèn trường TC có văn bản nhập "Văn bản nhập". các`\\f t`một phần là một công tắc xác định cách hiển thị mục nhập trong Mục lục.
 
 ## Bước 4: Lưu tài liệu
 
@@ -79,7 +79,7 @@ Bùm! Bạn vừa tạo một tài liệu Word có trường TC. Điều đó tu
 
 ## Phần kết luận
 
- Và bạn có nó rồi đấy! Chúng tôi đã hướng dẫn cách chèn trường TC vào tài liệu Word bằng Aspose.Words cho .NET. Nó khá đơn giản phải không? Với những kỹ năng này, giờ đây bạn có thể tự động hóa và tùy chỉnh tài liệu Word của mình như một người chuyên nghiệp. Nếu bạn có bất kỳ câu hỏi hoặc gặp phải bất kỳ vấn đề nào, đừng ngần ngại kiểm tra[Tài liệu Aspose.Words](https://reference.aspose.com/words/net/) hoặc liên hệ với họ[diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8). Chúc mừng mã hóa!
+ Và bạn có nó! Chúng tôi đã hướng dẫn cách chèn trường TC vào tài liệu Word bằng Aspose.Words cho .NET. Nó khá đơn giản phải không? Với những kỹ năng này, giờ đây bạn có thể tự động hóa và tùy chỉnh tài liệu Word của mình như một người chuyên nghiệp. Nếu bạn có bất kỳ câu hỏi hoặc gặp phải bất kỳ vấn đề nào, đừng ngần ngại kiểm tra[Tài liệu Aspose.Words](https://reference.aspose.com/words/net/) hoặc liên hệ với họ[diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8). Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 

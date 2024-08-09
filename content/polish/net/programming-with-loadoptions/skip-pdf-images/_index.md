@@ -73,7 +73,7 @@ Po ustawieniu opcji ładowania możesz załadować dokument PDF. Ten krok jest k
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
- Upewnij się, że`"Pdf Document.pdf"` to nazwa pliku PDF w określonym katalogu.
+ Zapewnij to`"Pdf Document.pdf"` to nazwa pliku PDF w określonym katalogu.
 
 ## Wniosek
 

@@ -77,7 +77,7 @@ Trong hướng dẫn toàn diện này, chúng tôi đã khám phá thế giới
 
 ### Làm cách nào để cài đặt Aspose.Words cho Java?
 
- Việc cài đặt Aspose.Words cho Java rất đơn giản. Tham quan[trang tải xuống](https://releases.aspose.com/words/java/)và làm theo hướng dẫn cài đặt cho môi trường phát triển của bạn.
+ Việc cài đặt Aspose.Words cho Java rất đơn giản. Ghé thăm[trang tải xuống](https://releases.aspose.com/words/java/)và làm theo hướng dẫn cài đặt cho môi trường phát triển của bạn.
 
 ### SaveOptions trong Aspose.Words là gì?
 

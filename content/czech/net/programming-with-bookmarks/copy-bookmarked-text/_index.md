@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-bookmarks/copy-bookmarked-text/
 ---
-## Úvod
+## Zavedení
 
 Přistihli jste se někdy, že potřebujete zkopírovat konkrétní části z jednoho dokumentu aplikace Word do druhého? Tak to máš štěstí! V tomto tutoriálu vás provedeme tím, jak zkopírovat text se záložkou z jednoho dokumentu aplikace Word do druhého pomocí Aspose.Words for .NET. Ať už vytváříte dynamickou sestavu nebo automatizujete generování dokumentů, tato příručka vám celý proces zjednoduší.
 
@@ -15,7 +15,7 @@ Přistihli jste se někdy, že potřebujete zkopírovat konkrétní části z je
 
 Než se ponoříme, ujistěte se, že máte následující:
 
--  Aspose.Words for .NET Library: Můžete si ji stáhnout z[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET Library: Můžete si ji stáhnout z[zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Visual Studio nebo jakékoli jiné vývojové prostředí .NET.
 - Základní znalost C#: Znalost programování v C# a .NET frameworku.
 
@@ -38,7 +38,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document srcDoc = new Document(dataDir + "Bookmarks.docx");
 ```
 
- Tady,`dataDir` je cesta k vašemu adresáři dokumentů a`Bookmarks.docx` je zdrojový dokument.
+ Zde,`dataDir` je cesta k vašemu adresáři dokumentů a`Bookmarks.docx` je zdrojový dokument.
 
 ## Krok 2: Identifikujte záložku
 
@@ -104,7 +104,7 @@ dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 
 ## Závěr
 
-A to je vše! Úspěšně jste zkopírovali text označený záložkou z jednoho dokumentu aplikace Word do druhého pomocí Aspose.Words for .NET. Tato metoda je výkonná pro automatizaci úloh manipulace s dokumenty, díky čemuž je váš pracovní postup efektivnější a efektivnější.
+A je to! Úspěšně jste zkopírovali text označený záložkou z jednoho dokumentu aplikace Word do druhého pomocí Aspose.Words for .NET. Tato metoda je výkonná pro automatizaci úloh manipulace s dokumenty, díky čemuž je váš pracovní postup efektivnější a efektivnější.
 
 ## FAQ
 
@@ -115,7 +115,7 @@ Ano, můžete iterovat přes více záložek a použít stejnou metodu ke zkopí
  The`Range.Bookmarks` majetek se vrátí`null`, takže se ujistěte, že tento případ řešíte, abyste se vyhnuli výjimkám.
 
 ### Mohu zachovat formátování původní záložky?
- Absolutně! Použitím`ImportFormatMode.KeepSourceFormatting` zajišťuje zachování původního formátování.
+ Absolutně! Použití`ImportFormatMode.KeepSourceFormatting` zajišťuje zachování původního formátování.
 
 ### Existuje omezení velikosti textu označeného záložkou?
 Neexistuje žádný konkrétní limit, ale výkon se může u extrémně velkých dokumentů lišit.

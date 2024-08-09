@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /zh-hant/net/working-with-headers-and-footers/create-header-footer/
 ---
+## 介紹
 
 在文件中新增頁首和頁尾可以增強文件的專業性和可讀性。使用 Aspose.Words for .NET，您可以輕鬆地為 Word 文件建立和自訂頁首和頁尾。在本教程中，我們將逐步引導您完成該過程，確保您可以無縫地實現這些功能。
 
@@ -168,22 +169,22 @@ private static void CopyHeadersFootersFromPreviousSection(Section section)
 
 ## 常見問題解答
 
-### Q1：什麼是 Aspose.Words for .NET？
+### 什麼是 Aspose.Words for .NET？
 
 Aspose.Words for .NET 是一個函式庫，可讓開發人員在 .NET 應用程式中以程式設計方式建立、編輯和轉換 Word 文件。
 
-### Q2: 我可以在頁首或頁尾新增圖片嗎？
+### 我可以將圖像新增至頁首或頁尾嗎？
 
 是的，您可以使用以下命令輕鬆地將圖像新增至頁首或頁尾`DocumentBuilder.InsertImage`方法。
 
-### Q3：如何為首頁設定不同的頁首和頁尾？
+### 如何為首頁設定不同的頁首和頁尾？
 
 您可以使用以下指令為第一頁設定不同的頁首和頁尾`DifferentFirstPageHeaderFooter`的財產`PageSetup`班級。
 
-### Q4：在哪裡可以找到有關 Aspose.Words 的更多文件？
+### 在哪裡可以找到有關 Aspose.Words 的更多文件？
 
 您可以在以下位置找到全面的文檔[Aspose.Words API 文件頁面](https://reference.aspose.com/words/net/).
 
-### Q5：Aspose.Words 有支援嗎？
+### 是否支援 Aspose.Words？
 
 是的，Aspose 透過他們的[支援論壇](https://forum.aspose.com/c/words/8).

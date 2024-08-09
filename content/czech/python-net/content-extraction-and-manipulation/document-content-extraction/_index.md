@@ -8,13 +8,13 @@ weight: 11
 url: /cs/python-net/content-extraction-and-manipulation/document-content-extraction/
 ---
 
-## Úvod
+## Zavedení
 
 Efektivní extrahování obsahu z dokumentů aplikace Word je běžným požadavkem při zpracování dat, analýze obsahu a dalších. Aspose.Words for Python je výkonná knihovna, která poskytuje komplexní nástroje pro programovou práci s dokumenty Wordu.
 
 ## Předpoklady
 
- Než se ponoříme do kódu, ujistěte se, že máte nainstalovaný Python a knihovnu Aspose.Words. Knihovnu si můžete stáhnout z webu[tady](https://releases.aspose.com/words/python/). Kromě toho se ujistěte, že máte dokument Word připravený k testování.
+ Než se ponoříme do kódu, ujistěte se, že máte nainstalovaný Python a knihovnu Aspose.Words. Knihovnu si můžete stáhnout z webu[zde](https://releases.aspose.com/words/python/). Kromě toho se ujistěte, že máte dokument Word připravený k testování.
 
 ## Instalace Aspose.Words pro Python
 
@@ -125,4 +125,4 @@ Ano, obsah můžete extrahovat ze záhlaví i zápatí pomocí vhodného kódu.
 
 ### Kde najdu další informace o Aspose.Words pro Python?
 
- Pro komplexní dokumentaci a reference navštivte[tady](https://reference.aspose.com/words/python-net/).
+ Pro komplexní dokumentaci a reference navštivte[zde](https://reference.aspose.com/words/python-net/).

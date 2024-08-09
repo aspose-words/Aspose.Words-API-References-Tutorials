@@ -30,7 +30,7 @@ using Aspose.Words;
 using Aspose.Words.Loading;
 ```
 
-## Hướng dẫn từng bước một
+## Hướng dẫn từng bước
 
 Bây giờ, hãy chia quy trình thành các bước dễ thực hiện.
 
@@ -94,4 +94,4 @@ Siêu tệp sẽ vẫn ở định dạng ban đầu, có thể không tương t
  Có, cần có giấy phép để có đầy đủ chức năng. Bạn có thể nhận được một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) cho mục đích dùng thử.
 
 ### Tôi có thể sử dụng phương pháp này cho các định dạng đồ họa khác như JPEG hoặc GIF không?
- Phương pháp cụ thể này dành cho siêu tệp, nhưng Aspose.Words for .NET hỗ trợ nhiều định dạng hình ảnh khác nhau. Tham khảo đến[tài liệu](https://reference.aspose.com/words/net/) để biết thêm thông tin.
+ Phương pháp cụ thể này dành cho siêu tệp, nhưng Aspose.Words for .NET hỗ trợ nhiều định dạng hình ảnh khác nhau. Tham khảo[tài liệu](https://reference.aspose.com/words/net/) để biết thêm thông tin.

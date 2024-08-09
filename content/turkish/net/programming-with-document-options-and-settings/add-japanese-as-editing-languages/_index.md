@@ -9,15 +9,15 @@ url: /tr/net/programming-with-document-options-and-settings/add-japanese-as-edit
 ---
 ## giriiş
 
-Hiç bir belgeyi açmayı denediğinizde dil ayarlarının tamamen yanlış olması nedeniyle kendinizi okunamayan bir metin denizinde kaybolmuş halde buldunuz mu? Yabancı dilde bir haritayı okumaya çalışmak gibi! Farklı dillerdeki, özellikle de Japonca belgelerle çalışıyorsanız Aspose.Words for .NET sizin için en iyi araçtır. Bu makale, Aspose.Words for .NET kullanarak belgelerinize Japonca'yı düzenleme dili olarak nasıl ekleyeceğiniz konusunda size adım adım rehberlik edecektir. Haydi hemen dalalım ve bir daha asla çeviride kaybolmadığınızdan emin olalım!
+Hiç bir belgeyi açmayı denediğinizde dil ayarlarının tamamen yanlış olması nedeniyle kendinizi okunamayan bir metin denizinde kaybolmuş halde buldunuz mu? Yabancı dilde bir haritayı okumaya çalışmak gibi! Farklı dillerdeki, özellikle de Japonca belgelerle çalışıyorsanız Aspose.Words for .NET sizin için en iyi araçtır. Bu makale, Aspose.Words for .NET kullanarak belgelerinize Japonca'yı düzenleme dili olarak nasıl ekleyeceğiniz konusunda size adım adım rehberlik edecektir. Haydi hemen dalalım ve bir daha çevirinin içinde kaybolmadığınızdan emin olalım!
 
 ## Önkoşullar
 
-Başlamadan önce, yerine getirmeniz gereken birkaç şey var:
+Başlamadan önce, hazır bulundurmanız gereken birkaç şey var:
 
 1. Visual Studio: Visual Studio'nun kurulu olduğundan emin olun. Kullanacağımız entegre geliştirme ortamıdır (IDE).
 2.  Aspose.Words for .NET: Aspose.Words for .NET'in kurulu olması gerekir. Henüz sahip değilseniz indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
-3.  Örnek Belge: Düzenlemek istediğiniz örnek belgeyi hazır bulundurun. İçinde olmalı`.docx` biçim.
+3.  Örnek Belge: Düzenlemek istediğiniz örnek belgeyi hazır bulundurun. İçinde olmalı`.docx` biçimi.
 4. Temel C# Bilgisi: C# programlamaya ilişkin temel bir anlayış, örnekleri takip etmenize yardımcı olacaktır.
 
 ## Ad Alanlarını İçe Aktar
@@ -64,7 +64,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Adım 4: Belgeyi Yükleyin
 
-Her şey ayarlandığında belgenizi yükleme zamanı geldi. Sihir yapılan yer burasıdır!
+Her şey ayarlandığında belgenizi yükleme zamanı geldi. Sihrin gerçekleştiği yer burası!
 
 ```csharp
 Document doc = new Document(dataDir + "No default editing language.docx", loadOptions);
@@ -88,7 +88,7 @@ Bu kod, varsayılan FarEast dilinin Japonca olarak ayarlanıp ayarlanmadığın�
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak belgenize Japonca'yı düzenleme dili olarak başarıyla eklediniz. Bu, haritanıza yeni bir dil eklemek gibi, gezinmeyi ve anlamayı kolaylaştırıyor. İster çok dilli belgelerle çalışıyor olun, ister metninizin doğru biçimlendirildiğinden emin olmak istiyor olun, Aspose.Words yanınızdadır. Şimdi devam edin ve belge otomasyonu dünyasını güvenle keşfedin!
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak Japonca'yı belgenize düzenleme dili olarak başarıyla eklediniz. Bu, haritanıza yeni bir dil eklemek gibi, gezinmeyi ve anlamayı kolaylaştırıyor. İster çok dilli belgelerle çalışıyor olun, ister metninizin doğru biçimlendirildiğinden emin olmak istiyor olun, Aspose.Words yanınızdadır. Şimdi devam edin ve belge otomasyonu dünyasını güvenle keşfedin!
 
 ## SSS'ler
 
@@ -99,7 +99,7 @@ Bu kod, varsayılan FarEast dilinin Japonca olarak ayarlanıp ayarlanmadığın�
  Evet, ticari kullanım için lisansa ihtiyacınız var. Bir tane satın alabilirsin[Burada](https://purchase.aspose.com/buy) veya geçici lisans alın[Burada](https://purchase.aspose.com/temporary-license/).
 
 ### Aspose.Words for .NET başka hangi özellikleri sunuyor?
- Aspose.Words for .NET belge oluşturma, dönüştürme, işleme ve daha fazlasını içeren çok çeşitli özellikler sunar. Kontrol et[dokümantasyon](https://reference.aspose.com/words/net/) daha fazla ayrıntı için.
+ Aspose.Words for .NET belge oluşturma, dönüştürme, işleme ve daha fazlasını içeren çok çeşitli özellikler sunar. Şuna göz atın:[dokümantasyon](https://reference.aspose.com/words/net/) daha fazla ayrıntı için.
 
 ### Aspose.Words for .NET'i satın almadan önce deneyebilir miyim?
  Kesinlikle! Ücretsiz deneme sürümünü indirebilirsiniz[Burada](https://releases.aspose.com/).

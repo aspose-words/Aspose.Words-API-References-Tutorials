@@ -101,7 +101,7 @@ doc.Save(dataDir + "ModifiedDocument.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! 🎉 Bạn đã truy cập và thao tác thành công các phần trong tài liệu Word bằng Aspose.Words for .NET. Cho dù bạn đang xóa nội dung, thêm văn bản mới hay thực hiện các thao tác khác trong phần, Aspose.Words đều giúp quá trình này diễn ra suôn sẻ và hiệu quả. Tiếp tục thử nghiệm các tính năng khác nhau để trở thành trình hướng dẫn thao tác tài liệu. Chúc mừng mã hóa!
+Và bạn có nó! 🎉 Bạn đã truy cập và thao tác thành công các phần trong tài liệu Word bằng Aspose.Words for .NET. Cho dù bạn đang xóa nội dung, thêm văn bản mới hay thực hiện các thao tác khác trong phần, Aspose.Words đều giúp quá trình này diễn ra suôn sẻ và hiệu quả. Tiếp tục thử nghiệm các tính năng khác nhau để trở thành trình hướng dẫn thao tác tài liệu. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 

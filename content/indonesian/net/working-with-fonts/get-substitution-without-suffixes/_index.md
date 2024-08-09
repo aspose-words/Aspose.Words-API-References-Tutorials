@@ -7,8 +7,9 @@ type: docs
 weight: 10
 url: /id/net/working-with-fonts/get-substitution-without-suffixes/
 ---
+## Perkenalan
 
-Selamat datang di panduan komprehensif tentang mengelola substitusi font menggunakan Aspose.Words untuk .NET. Jika Anda pernah mengalami masalah dengan font yang tidak muncul dengan benar di dokumen Anda, Anda telah datang ke tempat yang tepat. Tutorial ini akan membawa Anda melalui proses langkah demi langkah untuk menangani substitusi font tanpa sufiks secara efisien. Mari kita mulai!
+Selamat datang di panduan komprehensif tentang mengelola substitusi font menggunakan Aspose.Words untuk .NET. Jika Anda pernah mengalami masalah dengan font yang tidak muncul dengan benar di dokumen Anda, Anda telah datang ke tempat yang tepat. Tutorial ini akan membawa Anda melalui proses langkah demi langkah untuk menangani substitusi font tanpa sufiks secara efisien.
 
 ## Prasyarat
 
@@ -17,7 +18,7 @@ Sebelum mendalami tutorial, pastikan Anda memiliki hal berikut:
 - Pengetahuan Dasar C#: Memahami pemrograman C# akan memudahkan untuk mengikuti dan mengimplementasikan langkah-langkahnya.
 -  Aspose.Words untuk .NET Library: Unduh dan instal perpustakaan dari[tautan unduhan](https://releases.aspose.com/words/net/).
 - Lingkungan Pengembangan: Siapkan lingkungan pengembangan seperti Visual Studio untuk menulis dan menjalankan kode Anda.
-- Contoh Dokumen: Contoh dokumen (misalnya,`Rendering.docx`) untuk digunakan selama tutorial ini.
+-  Contoh Dokumen: Contoh dokumen (misalnya,`Rendering.docx`) untuk digunakan selama tutorial ini.
 
 ## Impor Namespace
 
@@ -26,7 +27,6 @@ Pertama, kita perlu mengimpor namespace yang diperlukan untuk mengakses kelas da
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Fonts;
-using Aspose.Words.WarningInfo;
 using System.Collections.Generic;
 ```
 
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## Langkah 5: Buat Kelas Penangan Peringatan
 
-Untuk menangani peringatan secara efektif, buat kelas khusus yang mengimplementasikan`IWarningCallback` antarmuka. Kelas ini akan menangkap dan mencatat peringatan penggantian font apa pun.
+ Untuk menangani peringatan secara efektif, buat kelas khusus yang mengimplementasikan`IWarningCallback` antarmuka. Kelas ini akan menangkap dan mencatat peringatan penggantian font apa pun.
 
 ```csharp
 public class DocumentSubstitutionWarnings : IWarningCallback
@@ -93,7 +93,7 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 ```
 
 Di kelas ini:
--  Itu`Warning` metode menangkap peringatan terkait penggantian font.
+-  Itu`Warning`metode menangkap peringatan terkait penggantian font.
 -  Itu`FontWarnings` koleksi menyimpan peringatan ini untuk pemeriksaan atau pencatatan lebih lanjut.
 
 ## Kesimpulan
@@ -102,22 +102,22 @@ Anda sekarang telah menguasai proses penanganan substitusi font tanpa sufiks men
 
 ## FAQ
 
-### Q1: Bagaimana cara menggunakan font dari beberapa direktori khusus?
+### Bagaimana cara menggunakan font dari beberapa direktori khusus?
 
  Anda dapat menambahkan banyak`FolderFontSource` contoh ke`fontSources` daftar dan perbarui sumber font yang sesuai.
 
-### Q2: Di mana saya dapat mengunduh uji coba gratis Aspose.Words untuk .NET?
+### Di mana saya dapat mengunduh uji coba gratis Aspose.Words untuk .NET?
 
  Anda dapat mengunduh uji coba gratis dari[Asumsikan halaman uji coba gratis](https://releases.aspose.com/).
 
-###  Q3: Dapatkah saya menangani beberapa jenis peringatan menggunakan`IWarningCallback`?
+###  Bisakah saya menangani berbagai jenis peringatan menggunakan`IWarningCallback`?
 
  Ya, itu`IWarningCallback` antarmuka memungkinkan Anda menangani berbagai jenis peringatan, bukan hanya penggantian font.
 
-### Q4: Di mana saya bisa mendapatkan dukungan untuk Aspose.Words?
+### Di mana saya bisa mendapatkan dukungan untuk Aspose.Words?
 
  Untuk dukungan, kunjungi[Forum dukungan Aspose.Words](https://forum.aspose.com/c/words/8).
 
-### Q5: Apakah mungkin untuk membeli lisensi sementara?
+### Apakah mungkin untuk membeli lisensi sementara?
 
  Ya, Anda bisa mendapatkan lisensi sementara dari[halaman lisensi sementara](https://purchase.aspose.com/temporary-license/).

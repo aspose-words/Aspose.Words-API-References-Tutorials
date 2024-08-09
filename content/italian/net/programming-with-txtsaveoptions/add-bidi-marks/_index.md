@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-txtsaveoptions/add-bidi-marks/
 ---
-## introduzione
+## Introduzione
 
 Nel mondo dell'elaborazione dei documenti, il testo bidirezionale (Bidi) può spesso essere un po' complicato da gestire. Ciò è particolarmente vero quando si ha a che fare con lingue con direzioni del testo diverse, come l'arabo o l'ebraico. Fortunatamente, Aspose.Words per .NET semplifica la gestione di tali scenari. In questo tutorial, spiegheremo come aggiungere segni Bidi a un documento Word utilizzando Aspose.Words per .NET.
 
@@ -89,4 +89,4 @@ Sì, puoi applicare la formattazione Bidi a paragrafi o sezioni specifici del tu
 Nell'esempio fornito, il documento viene salvato come file di testo. Tuttavia, Aspose.Words supporta anche il salvataggio di documenti in vari formati preservando i segni Bidi.
 
 ### Dove posso trovare ulteriori informazioni su Aspose.Words per .NET?
- Puoi esplorare di più su Aspose.Words per .NET attraverso il[Richiedere documentazione](https://reference.aspose.com/words/net/) e accedi al[Forum di assistenza](https://forum.aspose.com/c/words/8) per ulteriore aiuto.
+ Puoi esplorare di più su Aspose.Words per .NET attraverso il[Richiedere documentazione](https://reference.aspose.com/words/net/) e accedi al[Forum di supporto](https://forum.aspose.com/c/words/8) per ulteriore aiuto.

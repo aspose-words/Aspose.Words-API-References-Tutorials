@@ -90,4 +90,4 @@ Ja, u kunt indien nodig HTML-pagina's terug naar Word-documenten converteren met
  U kunt gedetailleerde documentatie en codevoorbeelden vinden op de Aspose.Words voor Java-documentatiepagina[hier](https://reference.aspose.com/words/java/).
 
 
-Nu u een goed begrip heeft van hoe u Word-documenten in HTML-pagina's kunt splitsen met behulp van Aspose.Words voor Java, kunt u beginnen met het implementeren van deze functie in uw projecten. Veel codeerplezier!
+Nu u goed begrijpt hoe u Word-documenten in HTML-pagina's kunt splitsen met Aspose.Words voor Java, kunt u beginnen met het implementeren van deze functie in uw projecten. Veel codeerplezier!

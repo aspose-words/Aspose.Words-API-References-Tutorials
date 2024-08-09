@@ -8,7 +8,7 @@ weight: 12
 url: /cs/java/document-converting/converting-html-documents/
 ---
 
-## Úvod
+## Zavedení
 
 Aspose.Words for Java je knihovna bohatá na funkce, která umožňuje vývojářům pracovat s dokumenty Wordu programově. Podporuje širokou škálu formátů dokumentů, včetně DOC, DOCX, RTF a HTML. V této příručce se zaměříme na převod obsahu HTML do dokumentu aplikace Word pomocí tohoto univerzálního rozhraní API.
 
@@ -17,7 +17,7 @@ Aspose.Words for Java je knihovna bohatá na funkce, která umožňuje vývojá�
 Než se ponoříme do kódu, ujistěte se, že máte následující předpoklady:
 
 - Java Development Kit (JDK) nainstalovaný ve vašem systému.
--  Aspose.Words pro knihovnu Java. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/java/).
+-  Aspose.Words pro knihovnu Java. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/java/).
 - Základní znalost programování v Javě.
 
 ## Průvodce krok za krokem
@@ -58,7 +58,7 @@ Nyní, když jste načetli obsah HTML, můžete jej uložit jako dokument aplika
 doc.save("output.docx");
 ```
 
-## Krok 5: Řešení výjimek
+## Krok 5: Ošetřete výjimky
 
 Nezapomeňte zpracovat výjimky, které mohou nastat během procesu převodu. Je dobrým zvykem používat pro zpracování chyb bloky try-catch.
 
@@ -78,7 +78,7 @@ Převod HTML na dokumenty pomocí Aspose.Words for Java je jednoduchý proces. P
 
 ### Jak nainstaluji Aspose.Words for Java?
 
- Knihovnu Aspose.Words for Java si můžete stáhnout z[tady](https://releases.aspose.com/words/java/). Postupujte podle pokynů k instalaci uvedených na jejich webových stránkách.
+ Knihovnu Aspose.Words for Java si můžete stáhnout z[zde](https://releases.aspose.com/words/java/). Postupujte podle pokynů k instalaci uvedených na jejich webových stránkách.
 
 ### Mohu převést HTML pomocí stylů CSS do dokumentu aplikace Word?
 
@@ -94,4 +94,4 @@ Ano, Aspose.Words vyžaduje platnou licenci pro komerční použití. Licenci m�
 
 ### Mohu přizpůsobit proces převodu konkrétním požadavkům?
 
-Rozhodně! Aspose.Words poskytuje rozsáhlé možnosti přizpůsobení procesu převodu, což vám umožní přizpůsobit jej vašim konkrétním potřebám.
+Jistě! Aspose.Words poskytuje rozsáhlé možnosti přizpůsobení procesu převodu, což vám umožní přizpůsobit jej vašim konkrétním potřebám.

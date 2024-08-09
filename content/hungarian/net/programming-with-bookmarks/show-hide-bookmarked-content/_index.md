@@ -9,7 +9,7 @@ url: /hu/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 ## Bevezetés
 
-Készen áll, hogy belemerüljön a dokumentumkezelés világába az Aspose.Words for .NET segítségével? Akár fejlesztő, aki a dokumentumfeladatokat automatizálni szeretné, akár csak valaki, aki kíváncsi a Word-fájlok programozott kezelésére, jó helyen jár. Ma azt vizsgáljuk meg, hogyan jeleníthet meg és rejthet el könyvjelzőkkel ellátott tartalmat egy Word-dokumentumban az Aspose.Words for .NET segítségével. Ez a lépésenkénti útmutató profivá tesz a tartalom könyvjelzők alapján történő láthatóságának szabályozásában. Kezdjük el!
+Készen áll, hogy belemerüljön a dokumentumkezelés világába az Aspose.Words for .NET segítségével? Akár fejlesztő, aki a dokumentumfeladatokat automatizálni szeretné, akár csak valaki, aki kíváncsi a Word-fájlok programozott kezelésére, jó helyen jár. Ma azt vizsgáljuk meg, hogyan jeleníthet meg és rejthet el könyvjelzőkkel ellátott tartalmat egy Word-dokumentumban az Aspose.Words for .NET segítségével. Ez a lépésenkénti útmutató profivá tesz a tartalom könyvjelzők alapján történő láthatóságának szabályozásában. Kezdjük is!
 
 ## Előfeltételek
 
@@ -60,7 +60,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
- Ez a kódrészlet beállítja a dokumentumkönyvtár elérési útját, és betölti a dokumentumot a`doc` tárgy.
+ Ez a kódrészlet beállítja a dokumentumkönyvtár elérési útját, és betölti a dokumentumot a`doc` objektum.
 
 ## 3. lépés: A könyvjelzővel ellátott tartalom megjelenítése/elrejtése
 

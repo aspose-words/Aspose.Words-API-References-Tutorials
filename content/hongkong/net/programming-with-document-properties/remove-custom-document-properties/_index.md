@@ -9,7 +9,7 @@ url: /zh-hant/net/programming-with-document-properties/remove-custom-document-pr
 ---
 ## 介紹
 
-您是否曾發現自己在 Word 文件中的自訂文件屬性網絡中糾結？你不是一個人！管理這些屬性可能很麻煩，但使用 Aspose.Words for .NET，您可以毫不費力地簡化此過程。在本教學中，我們將引導您使用 Aspose.Words for .NET 刪除自訂文件屬性。無論您是經驗豐富的開發人員還是剛入門，您都會發現本指南簡單明了。準備好潛入了嗎？讓我們開始吧！
+您是否曾發現自己在 Word 文件中的自訂文件屬性網絡中糾結？你並不孤單！管理這些屬性可能很麻煩，但使用 Aspose.Words for .NET，您可以毫不費力地簡化此流程。在本教學中，我們將引導您使用 Aspose.Words for .NET 刪除自訂文件屬性。無論您是經驗豐富的開發人員還是剛入門，您都會發現本指南簡單明了。準備好潛入了嗎？讓我們開始吧！
 
 ## 先決條件
 
@@ -90,7 +90,7 @@ doc.Save(savePath);
 
 ## 結論
 
-現在你就擁有了！使用 Aspose.Words for .NET 刪除 Word 文件中的自訂文件屬性非常簡單。透過執行這些步驟，您可以有效地管理文件屬性，從而節省時間和精力。無論您是要清理元資料還是自動化文件處理，Aspose.Words for .NET 都能滿足您的需求。快樂編碼！
+現在你就得到它了！使用 Aspose.Words for .NET 刪除 Word 文件中的自訂文件屬性非常簡單。透過執行這些步驟，您可以有效地管理文件屬性，從而節省時間和精力。無論您是要清理元資料還是自動化文件處理，Aspose.Words for .NET 都能滿足您的需求。快樂編碼！
 
 ## 常見問題解答
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-watermark/add-text-watermark-with-specific-options/
 ---
-## Úvod
+## Zavedení
 
 Vodoznaky mohou být stylovým a funkčním doplňkem vašich dokumentů aplikace Word, který slouží účelům od označení dokumentů jako důvěrných až po přidání personalizovaného doteku. V tomto tutoriálu prozkoumáme, jak přidat textový vodoznak do dokumentu aplikace Word pomocí Aspose.Words for .NET. Ponoříme se do konkrétních možností, které můžete nakonfigurovat, jako je rodina písem, velikost písma, barva a rozvržení. Na konci budete moci upravit vodoznak dokumentu tak, aby přesně odpovídal vašim potřebám. Takže popadněte editor kódu a můžeme začít!
 
@@ -109,4 +109,4 @@ Aspose.Words podporuje přidávání jednoho vodoznaku najednou. Chcete-li přid
 
 ### Co když potřebuji poloprůhledný vodoznak?
 
- Nastav`IsSemitrasparent`majetek do`true` aby byl vodoznak poloprůhledný.
+ Nastavte`IsSemitrasparent`majetek do`true` aby byl vodoznak poloprůhledný.

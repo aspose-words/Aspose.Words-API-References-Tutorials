@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-document-properties/get-variables/
 ---
-## Úvod
+## Zavedení
 
 Ahoj, kolego kodéru! Jste připraveni ponořit se do světa Aspose.Words pro .NET? Připoutejte se, protože se chystáme vydat na cestu, díky které bude manipulace s dokumenty Wordu ve vašich aplikacích .NET hračkou. V této příručce rozebereme vše, co potřebujete vědět, krok za krokem, s jasným vysvětlením a konverzačním tónem. Takže si dejte šálek kávy, udělejte si pohodlí a můžeme začít!
 
@@ -16,7 +16,7 @@ Ahoj, kolego kodéru! Jste připraveni ponořit se do světa Aspose.Words pro .N
 Než se pustíme do hrubky, ujistěte se, že máte vše, co potřebujete:
 
 1. Základní znalost C# a .NET: Měli byste znát základy C# a .NET framework.
-2.  Knihovna Aspose.Words for .NET: Stáhněte si knihovnu Aspose.Words for .NET z[tady](https://releases.aspose.com/words/net/).
+2.  Knihovna Aspose.Words for .NET: Stáhněte si knihovnu Aspose.Words for .NET z[zde](https://releases.aspose.com/words/net/).
 3. Visual Studio: Ujistěte se, že máte na svém počítači nainstalované Visual Studio.
 
 ## Importovat jmenné prostory
@@ -55,7 +55,7 @@ Nyní do našeho projektu vložíme knihovnu Aspose.Words.
     string dataDir = "YOUR DOCUMENT DIRECTORY";
     ```
 
-2.  Vytvořit`Document` objekt a načtěte dokument:
+2.  Vytvořte a`Document` objekt a načtěte dokument:
     ```csharp
     Document doc = new Document(dataDir + "Document.docx");
     ```
@@ -106,7 +106,7 @@ A tady to máte! Úspěšně jste použili Aspose.Words for .NET k načtení dok
 Ano, Aspose.Words podporuje více jazyků, ale v tomto tutoriálu jsme se zaměřili na C#.
 
 ### Jak získám dočasnou licenci pro Aspose.Words?
- Dočasnou licenci můžete získat od[tady](https://purchase.aspose.com/temporary-license/).
+ Dočasnou licenci můžete získat od[zde](https://purchase.aspose.com/temporary-license/).
 
 ### Existuje způsob, jak manipulovat s jinými formáty dokumentů pomocí Aspose.Words?
 Absolutně! Aspose.Words podporuje různé formáty jako DOC, DOCX, ODT, RTF a další.

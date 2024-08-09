@@ -2,99 +2,112 @@
 title: Definir sistema de pastas de fontes e pasta personalizada
 linktitle: Definir sistema de pastas de fontes e pasta personalizada
 second_title: API de processamento de documentos Aspose.Words
-description: Guia passo a passo para configurar pastas de sistema e de fontes personalizadas ao renderizar um documento usando Aspose.Words for .NET.
+description: Aprenda como definir pastas de sistema e de fontes personalizadas em documentos do Word usando Aspose.Words for .NET, garantindo que seus documentos sejam exibidos corretamente em diferentes ambientes.
 type: docs
 weight: 10
 url: /pt/net/working-with-fonts/set-fonts-folders-system-and-custom-folder/
 ---
+## Introdução
 
-Neste tutorial, orientaremos você no processo passo a passo para definir pastas de fontes do sistema e uma pasta personalizada ao renderizar um documento usando Aspose.Words for .NET. Explicaremos o código-fonte C# incluído e forneceremos um guia completo para ajudá-lo a entender e implementar esse recurso em seus próprios projetos. Ao final deste tutorial, você saberá como especificar várias pastas de fontes, incluindo a pasta do sistema e uma pasta personalizada, para usar ao renderizar seus documentos usando Aspose.Words for .NET.
+Imagine que você está criando um documento com um estilo de fonte exclusivo, apenas para descobrir que as fontes não são exibidas corretamente em outra máquina. Frustrante, certo? É aqui que entra em jogo a configuração das pastas de fontes. Com Aspose.Words for .NET, você pode definir pastas de sistema e de fontes personalizadas para garantir que seus documentos sempre tenham a aparência desejada. Vamos ver como você pode conseguir isso.
 
-## Passo 1: Defina o diretório do documento
-Primeiro, você precisa definir o caminho para o diretório de documentos. Este é o local onde você deseja salvar o documento renderizado editado. Substitua "SEU DIRETÓRIO DE DOCUMENTOS" pelo caminho apropriado.
+## Pré-requisitos
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Antes de começarmos, certifique-se de ter o seguinte:
 
-## Passo 2: Carregue o documento para renderizar
- Então você pode carregar o documento para renderizar usando o`Document` aula. Certifique-se de especificar o caminho correto do documento.
+-  Biblioteca Aspose.Words for .NET: se ainda não o fez, faça o download[aqui](https://releases.aspose.com/words/net/).
+- Ambiente de desenvolvimento: um IDE como o Visual Studio.
+- Conhecimento básico de C#: A familiaridade com C# o ajudará a acompanhar os exemplos de código.
 
-```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
-```
+## Importar namespaces
 
-## Etapa 3: definir pastas de sistema e de fontes personalizadas
- Agora você pode definir pastas de fontes do sistema e uma pasta personalizada usando o`FontSettings` classe e o`SetFontsSources()` método. Primeiro, você precisa recuperar a lista de fontes de fontes dependentes do ambiente usando`GetFontsSources()` e armazene-o em uma lista. Então você pode criar uma nova instância de`FolderFontSource` especificando o caminho para a pasta personalizada que contém suas fontes. Adicione esta instância à lista de fontes de fontes existentes. Finalmente, use`SetFontsSources()` para atualizar as fontes de fontes com a nova lista.
+Primeiro, importe os namespaces necessários para o seu projeto:
 
 ```csharp
-FontSettings fontSettings = new FontSettings();
-List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-fontSources.Add(folderFontSource);
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
-fontSettings.SetFontsSources(updatedFontSources);
+using System;
+using System.Collections.Generic;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Etapa 4: aplicar configurações de fonte
- Em seguida, você precisa aplicar as configurações de fonte ao seu documento usando o`FontSettings` propriedade do`Document` aula.
+Agora, vamos dividir o processo em etapas simples.
 
-```csharp
-doc.FontSettings = fontSettings;
-```
+## Etapa 1: carregue o documento
 
-## Etapa 5: salve o documento renderizado
-Finalmente, você pode salvar o documento renderizado em um arquivo clicando
-
-   usando o`Save()` método do`Document` aula. Certifique-se de especificar o caminho e o nome do arquivo corretos.
-
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
-```
-
-### Exemplo de código-fonte para definir sistema de pastas de fontes e pasta personalizada usando Aspose.Words para .NET 
+ Para começar, carregue seu documento do Word em um Aspose.Words`Document` objeto. Este documento será aquele onde você deseja definir as pastas de fontes.
 
 ```csharp
 // Caminho para o diretório do seu documento
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Etapa 2: inicializar as configurações de fonte
+
+ Crie uma nova instância de`FontSettings`. Este objeto permitirá que você gerencie fontes de fontes.
+
+```csharp
 FontSettings fontSettings = new FontSettings();
-// Recuperar a matriz de fontes de fontes dependentes do ambiente que são pesquisadas por padrão.
-// Por exemplo, isso conterá uma fonte "Windows\Fonts\" em máquinas Windows.
-// Adicionamos esse array a uma nova Lista para tornar muito mais fácil adicionar ou remover entradas de fonte.
+```
+
+## Etapa 3: recuperar fontes de fontes do sistema
+
+Recuperar as fontes de fonte padrão do sistema. Em uma máquina Windows, isso normalmente inclui o "Windows\Fonts\"diretório.
+
+```csharp
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-// Adicione uma nova fonte de pasta que instruirá Aspose.Words a pesquisar fontes na seguinte pasta.
+```
+
+## Etapa 4: adicionar uma pasta de fontes personalizadas
+
+Adicione uma pasta personalizada que contenha suas fontes adicionais. Isso é útil se você tiver fontes específicas não instaladas no diretório de fontes do sistema.
+
+```csharp
 FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-// Adicione a pasta personalizada que contém nossas fontes à lista de fontes de fontes existentes.
 fontSources.Add(folderFontSource);
+```
+
+## Etapa 5: atualizar as fontes das fontes
+
+ Converta a lista de fontes de fontes de volta em um array e defina-a como`FontSettings` objeto.
+
+```csharp
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 fontSettings.SetFontsSources(updatedFontSources);
+```
+
+## Etapa 6: aplicar configurações de fonte ao documento
+
+ Por fim, aplique o configurado`FontSettings` ao seu documento e salve-o no formato desejado, como PDF.
+
+```csharp
 doc.FontSettings = fontSettings;
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ```
 
 ## Conclusão
-Neste tutorial, aprendemos como definir pastas de fontes do sistema e uma pasta personalizada ao renderizar um documento usando Aspose.Words for .NET. Seguindo este guia passo a passo, você pode especificar facilmente várias pastas de fontes, incluindo a pasta do sistema e uma pasta personalizada, para usar ao renderizar seus documentos. Aspose.Words oferece uma API poderosa e flexível para processamento de palavras com fontes em seus documentos. Com esse conhecimento, você pode controlar e personalizar as fontes de fontes usadas ao renderizar seus documentos de acordo com suas necessidades específicas.
 
-### Perguntas frequentes
+aí está! Seguindo essas etapas, você pode garantir que seus documentos do Word usem as fontes corretas, sejam elas do sistema ou personalizadas armazenadas em um diretório específico. Esta configuração ajuda a manter a integridade da aparência do seu documento em diferentes ambientes.
 
-#### P: Como posso definir pastas de fontes do sistema em Aspose.Words?
+## Perguntas frequentes
 
-R: Para definir pastas de fontes do sistema no Aspose.Words, você não precisa fazer nada. Aspose.Words usa automaticamente fontes do sistema instaladas em seu sistema operacional.
+### O que acontece se uma fonte estiver faltando nas pastas do sistema e nas pastas personalizadas?
 
-#### P: Como posso definir pastas de fontes personalizadas no Aspose.Words?
+Aspose.Words usará uma fonte padrão para substituir a fonte ausente, garantindo que o documento permaneça legível.
 
- R: Para definir as pastas de fontes personalizadas no Aspose.Words, você pode usar o`SetFontsFolders` método do`Fonts` classe especificando os locais das pastas de fontes personalizadas.
+### Posso adicionar várias pastas de fontes personalizadas?
 
-#### P: Posso especificar várias pastas de fontes personalizadas em Aspose.Words?
+ Sim, você pode adicionar várias pastas de fontes personalizadas repetindo o processo de criação`FolderFontSource` objetos e adicioná-los à lista de fontes de fontes.
 
- R: Sim, você pode especificar várias pastas de fontes personalizadas em Aspose.Words usando o`SetFontsFolders` método do`Fonts` class com uma lista de locais de pastas.
+### É possível usar caminhos de rede para pastas de fontes personalizadas?
 
-#### P: Como posso verificar as pastas de fontes definidas em Aspose.Words?
+ Sim, você pode especificar um caminho de rede no`FolderFontSource` construtor.
 
- Para verificar as pastas de fontes definidas em Aspose.Words, você pode usar o`GetFolders` método do`Fonts` class para obter a lista de pastas de fontes configuradas.
+### Quais formatos de arquivo o Aspose.Words suporta para salvar documentos?
 
-#### P: As fontes de pastas personalizadas têm prioridade sobre as fontes do sistema no Aspose.Words?
+Aspose.Words suporta vários formatos, incluindo DOCX, PDF, HTML e muito mais.
 
-R: Sim, as fontes de pastas personalizadas têm prioridade sobre as fontes do sistema no Aspose.Words. Se uma fonte estiver presente nas pastas personalizadas e nas fontes do sistema, o Aspose.Words usará a versão da pasta personalizada.
+### Como lidar com notificações de substituição de fontes?
+
+ Você pode lidar com notificações de substituição de fonte usando o`FontSettings` aula`FontSubstitutionWarning`evento.

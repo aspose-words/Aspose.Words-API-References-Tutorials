@@ -9,7 +9,7 @@ url: /tr/net/programming-with-shapes/add-group-shape/
 ---
 ## giriiş
 
-Zengin görsel öğeler içeren karmaşık belgeler oluşturmak, özellikle grup şekilleriyle uğraşırken bazen göz korkutucu bir görev olabilir. Ama korkmayın! Aspose.Words for .NET bu süreci basitleştirerek çok kolay hale getiriyor. Bu eğitimde, Word belgelerinize grup şekilleri ekleme adımlarında size yol göstereceğiz. Dalmaya hazır mısınız? Başlayalım!
+Zengin görsel öğeler içeren karmaşık belgeler oluşturmak, özellikle grup şekilleriyle uğraşırken bazen göz korkutucu bir görev olabilir. Ama korkmayın! Aspose.Words for .NET bu süreci basitleştirerek çok kolay hale getiriyor. Bu eğitimde, Word belgelerinize grup şekilleri ekleme adımlarında size yol göstereceğiz. Dalmaya hazır mısınız? Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -113,7 +113,7 @@ Son olarak belgeyi belirttiğiniz dizine kaydedin.
 doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");
 ```
 
-İşte buyur! Grup şekillerinin bulunduğu belgeniz hazır.
+Ve işte karşınızda! Grup şekillerinin bulunduğu belgeniz hazır.
 
 ## Çözüm
 
@@ -131,7 +131,7 @@ Word belgelerinize grup şekilleri eklemek karmaşık bir süreç olmak zorunda 
  Konumlandırabilirsiniz`GroupShape` ayarlayarak`Left`Ve`Top` özellikler.
 
 ### GroupShape içindeki şekillere metin ekleyebilir miyim?
- Evet, şekilleri kullanarak şekillere metin ekleyebilirsiniz.`AppendChild` ekleme yöntemi`Paragraph` kapsamak`Run` metin içeren düğümler.
+ Evet, şekilleri kullanarak şekillere metin ekleyebilirsiniz.`AppendChild` ekleme yöntemi`Paragraph` içeren`Run` metin içeren düğümler.
 
 ### Şekilleri kullanıcı girişine göre dinamik olarak gruplamak mümkün müdür?
 Evet, özellikleri ve yöntemleri uygun şekilde ayarlayarak, kullanıcı girişine göre şekilleri dinamik olarak oluşturabilir ve gruplandırabilirsiniz.

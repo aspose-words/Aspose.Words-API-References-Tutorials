@@ -30,7 +30,7 @@ using Aspose.Words;
 
 ## Steg 1: Definiera dokumentkatalogen
 
- För att börja måste du definiera sökvägen till katalogen där dina dokument finns. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
+ För att börja måste du definiera sökvägen till katalogen där dina dokument finns. Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -52,7 +52,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 Console.WriteLine(info.IsEncrypted);
 ```
 
-Det är allt ! Du har framgångsrikt kontrollerat om ett dokument är krypterat med Aspose.Words för .NET.
+Det är allt! Du har framgångsrikt kontrollerat om ett dokument är krypterat med Aspose.Words för .NET.
 
 ## Slutsats
 

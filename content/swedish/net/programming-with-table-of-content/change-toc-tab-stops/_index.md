@@ -1,6 +1,6 @@
 ---
-title: Ändra Toc-flikstopp i Word-dokument
-linktitle: Ändra Toc-flikstopp i Word-dokument
+title: Ändra Toc-tabstopp i Word-dokument
+linktitle: Ändra Toc-tabstopp i Word-dokument
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du ändrar TOC-tabstopp i Word-dokument med Aspose.Words för .NET. Den här steg-för-steg-guiden hjälper dig att skapa en innehållsförteckning med ett professionellt utseende.
 type: docs
@@ -19,7 +19,7 @@ Innan vi börjar, låt oss se till att du har allt du behöver:
 2. Utvecklingsmiljö: Visual Studio eller någon C#-kompatibel IDE.
 3. Ett Word-dokument: Närmare bestämt ett som innehåller en innehållsförteckning.
 
-Har du allt det där? Grymt bra! Nu kör vi.
+Har du allt det där? Fantastisk! Låt oss rulla.
 
 ## Importera namnområden
 
@@ -108,7 +108,7 @@ Att ändra innehållsförteckning-tabstopp i ett Word-dokument med Aspose.Words 
 ## FAQ's
 
 ### Kan jag ändra tabbstopp för olika innehållsförteckningsnivåer separat?
-Jo det kan du! Kontrollera bara för varje specifik TOC-nivå (Toc1, Toc2, etc.) och justera därefter.
+Ja, det kan du! Kontrollera bara för varje specifik TOC-nivå (Toc1, Toc2, etc.) och justera därefter.
 
 ### Vad händer om mitt dokument har flera innehållsförteckningar?
 Koden skannar efter alla innehållsförteckning-stilade stycken, så den kommer att ändra alla innehållsförteckningar som finns i dokumentet.

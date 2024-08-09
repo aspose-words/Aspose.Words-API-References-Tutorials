@@ -128,7 +128,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx
 
 ## 結論
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 在 Word 文件中成功建立了時尚的表格。這個強大的庫可以輕鬆自動化和自訂 Word 文檔，以滿足您的特定需求。無論您是建立報告、發票或任何其他類型的文檔，Aspose.Words 都能滿足您的需求。
+現在你就得到它了！您已使用 Aspose.Words for .NET 在 Word 文件中成功建立了時尚的表格。這個強大的庫可以輕鬆自動化和自訂 Word 文檔，以滿足您的特定需求。無論您是建立報告、發票或任何其他類型的文檔，Aspose.Words 都能滿足您的需求。
 
 ## 常見問題解答
 

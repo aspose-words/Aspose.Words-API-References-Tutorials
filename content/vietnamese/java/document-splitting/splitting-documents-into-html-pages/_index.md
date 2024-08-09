@@ -20,7 +20,7 @@ Trước khi chúng ta đi sâu vào mã, hãy đảm bảo bạn có sẵn các
 
 ## Giới thiệu
 
-Trong thế giới kỹ thuật số ngày nay, việc chuyển đổi tài liệu Word sang trang HTML là một yêu cầu phổ biến. Aspose.Words đơn giản hóa tác vụ này bằng cách cung cấp API Java cho phép chúng tôi chia tài liệu Word thành các trang HTML một cách dễ dàng. Bắt đầu nào.
+Trong thế giới kỹ thuật số ngày nay, việc chuyển đổi tài liệu Word sang trang HTML là một yêu cầu phổ biến. Aspose.Words đơn giản hóa tác vụ này bằng cách cung cấp API Java cho phép chúng tôi chia tài liệu Word thành các trang HTML một cách dễ dàng. Hãy bắt đầu.
 
 ## Thiết lập dự án
 

@@ -42,7 +42,7 @@ public class HTMLToWordConversion {
 
 ## الخطوة 3: تحميل محتوى HTML
 
- بعد ذلك، قم بتحميل محتوى HTML الذي تريد تحويله إلى ملف`Document` هدف. يمكنك استخدام ال`DocumentBuilder` الطبقة لهذا الغرض.
+ بعد ذلك، قم بتحميل محتوى HTML الذي تريد تحويله إلى ملف`Document` هدف. يمكنك استخدام`DocumentBuilder` الطبقة لهذا الغرض.
 
 ```java
 DocumentBuilder builder = new DocumentBuilder(doc);

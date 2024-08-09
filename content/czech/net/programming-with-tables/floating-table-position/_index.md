@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-tables/floating-table-position/
 ---
-## Úvod
+## Zavedení
 
 Jste připraveni ponořit se do světa manipulace s pozicemi tabulek v dokumentech aplikace Word pomocí Aspose.Words for .NET? Připoutejte se, protože dnes prozkoumáme, jak snadno ovládat plovoucí pozici stolů. Udělejme z vás během okamžiku průvodce polohováním stolu!
 

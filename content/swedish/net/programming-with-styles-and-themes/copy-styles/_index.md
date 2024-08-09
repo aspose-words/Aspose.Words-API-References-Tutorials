@@ -9,7 +9,7 @@ url: /sv/net/programming-with-styles-and-themes/copy-styles/
 ---
 ## Introduktion
 
-Om du någonsin har behövt få ett dokument att se konsekvent ut med ett annat, har du förmodligen ställts inför utmaningen att kopiera stilar. Föreställ dig att du är en designer med uppgift att se till att varje ny rapport matchar stilen i en befintlig mall. Med Aspose.Words för .NET kan du förenkla denna uppgift och hålla dina dokument skarpa och enhetliga. I den här handledningen kommer vi att dyka in i hur du enkelt kan kopiera stilar från ett Word-dokument till ett annat. Låt oss börja!
+Om du någonsin har behövt få ett dokument att se konsekvent ut med ett annat, har du förmodligen ställts inför utmaningen att kopiera stilar. Föreställ dig att du är en designer med uppgift att se till att varje ny rapport matchar stilen i en befintlig mall. Med Aspose.Words för .NET kan du förenkla denna uppgift och hålla dina dokument skarpa och enhetliga. I den här handledningen kommer vi att dyka in i hur du enkelt kan kopiera stilar från ett Word-dokument till ett annat. Låt oss komma igång!
 
 ## Förutsättningar
 
@@ -31,7 +31,7 @@ Genom att inkludera detta namnutrymme får du tillgång till alla kraftfulla fun
 
 ## Steg 1: Konfigurera din dokumentkatalog
 
- Först och främst måste du definiera sökvägen till din dokumentkatalog. Det är här Aspose.Words kommer att leta efter dina filer. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där dina dokument lagras.
+ Först och främst måste du definiera sökvägen till din dokumentkatalog. Det är här Aspose.Words kommer att leta efter dina filer. Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där dina dokument lagras.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

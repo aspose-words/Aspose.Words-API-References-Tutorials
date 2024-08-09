@@ -122,4 +122,4 @@ Aspose.Words for .NET은 개발자가 .NET 애플리케이션을 사용하여 �
  Aspose 커뮤니티 및 기술팀으로부터 지원을 받을 수 있습니다.[여기](https://forum.aspose.com/c/words/8).
 
 ### Aspose.Words를 사용하여 Word 문서의 다른 측면을 자동화할 수 있나요?
-전적으로! Aspose.Words for .NET은 문서 생성, 편집, 변환 등을 자동화하는 광범위한 기능을 제공합니다. 확인해 보세요[선적 서류 비치](https://reference.aspose.com/words/net/) 상세 사항은.
+전적으로! Aspose.Words for .NET은 문서 생성, 편집, 변환 등을 자동화하는 광범위한 기능을 제공합니다. 확인해 보세요[선적 서류 비치](https://reference.aspose.com/words/net/) 자세한 내용은

@@ -88,7 +88,7 @@ Actualizar y mostrar resultados de campo en documentos de Word con Aspose.Words 
 Puede actualizar varios tipos de campos, incluidos campos de fecha, propiedades de documento y campos de fórmula.
 
 ### ¿Necesito guardar el documento después de actualizar los campos?  
- No, llamando`UpdateFields` no guarda automáticamente el documento. Utilizar el`Save` método para guardar los cambios.
+ No, llamando`UpdateFields` no guarda automáticamente el documento. Utilice el`Save` método para guardar los cambios.
 
 ### ¿Puedo actualizar campos en una sección específica del documento?  
  Sí, puedes usar el`Document.Sections` propiedad para acceder a secciones específicas y actualizar campos dentro de ellas.

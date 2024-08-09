@@ -14,7 +14,7 @@ Dans ce guide étape par étape, nous explorerons comment enregistrer des docume
 
 ## Conditions préalables
 
-Avant de commencer, assurez-vous que les conditions préalables suivantes sont remplies :
+Avant de commencer, assurez-vous que vous disposez des conditions préalables suivantes :
 
 - Kit de développement Java (JDK) installé sur votre système.
 -  Bibliothèque Aspose.Words pour Java. Vous pouvez le télécharger depuis[ici](https://releases.aspose.com/words/java/).

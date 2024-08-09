@@ -239,7 +239,7 @@ Broncode van klasse HandleMergeField
     {
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs args)
         {
-            // Niets doen.
+            // Doe niets.
         }
         /// <samenvatting>
         /// Dit wordt aangeroepen wanneer de mail merge-engine het samenvoegveld Image:XXX in het document tegenkomt.
@@ -320,7 +320,7 @@ Broncode van klasse HandleMergeField
         }
         public void /*IFieldMergingCallback.*/imageFieldMerging(ImageFieldMergingArgs args)
         {
-            // Niets doen.
+            // Doe niets.
         }
         private DocumentBuilder mBuilder;
         private int mRowIdx;

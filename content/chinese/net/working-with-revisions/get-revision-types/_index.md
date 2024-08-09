@@ -2,100 +2,102 @@
 title: 获取单词的修订类型
 linktitle: 获取单词的修订类型
 second_title: Aspose.Words 文档处理 API
-description: 使用 Aspose.Words for .NET 获取 Word 文档中单词的修订类型。
+description: 了解如何使用 Aspose.Words for .NET 获取 Word 文档中单词的修订类型。本分步指南可帮助您高效处理文档修订。
 type: docs
 weight: 10
 url: /zh/net/working-with-revisions/get-revision-types/
 ---
+## 介绍
 
-在本分步指南中，我们将告诉您如何使用 Aspose.Words for .NET 获取 Word 文档中的单词修订类型。我们将为您提供完整的源代码并向您展示如何格式化 markdown 输出。
+您是否曾经发现自己深陷文档修订的海洋，不知道谁在何时移动了什么？您并不孤单。处理文档修订可能是一项繁琐的任务，尤其是在处理大量文档时。但是，不要担心！使用 Aspose.Words for .NET，您可以轻松识别和管理这些修订。在本指南中，我们将逐步指导您如何使用 Aspose.Words for .NET 获取 Word 文档中单词的修订类型。所以，系好安全带，让我们开始吧！
 
-## 步骤 1：加载文档
+## 先决条件
 
-第一步是上传包含修订内容的文档。
+在我们开始编写代码之前，您需要准备一些东西：
+
+1.  Aspose.Words for .NET Library：如果你还没有，请从[这里](https://releases.aspose.com/words/net/).
+2. 开发环境：Visual Studio 或任何其他.NET 兼容 IDE。
+3. C# 基础知识：了解 C# 编程语言将会很有帮助。
+4. 带有修订的 Word 文档：确保您有`.docx`使用跟踪更改的文件来测试代码。
+
+## 导入命名空间
+
+首先，您需要在 C# 项目中导入必要的命名空间。这将允许您访问 Aspose.Words for .NET 提供的功能。
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
+using Aspose.Words;
+using Aspose.Words.Revision;
+using System;
 ```
 
-## 第 2 步：逐步完成段落
+为了更好地理解和实施，我们将示例分解为多个步骤。
 
-接下来，我们将浏览文档的各个段落，并检查与每个段落相关的单词修订类型。
+## 步骤 1：设置文档目录
+
+首先，您需要定义文档目录的路径。这是您的 Word 文档及其修订版本所在的位置。
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+代替`"YOUR DOCUMENT DIRECTORY"`使用您的文档文件夹的实际路径。
+
+## 第 2 步：加载 Word 文档
+
+接下来，您需要将 Word 文档加载到您的项目中。此文档应该包含您要分析的修订。
+
+```csharp
+Document doc = new Document(dataDir + "Revisions.docx");
+```
+
+确保文件`Revisions.docx`存在于指定目录中。
+
+## 步骤 3：访问段落集合
+
+现在您的文档已加载，您需要访问文档正文第一节中的段落。这将帮助您遍历每个段落以检查修订。
 
 ```csharp
 ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
-for (int i = 0; i < paragraphs.Count; i++)
-{
-     if (paragraphs[i].IsMoveFromRevision)
-         Console.WriteLine("Paragraph {0} has been moved (deleted).", i);
-     if (paragraphs[i].IsMoveToRevision)
-         Console.WriteLine("Paragraph {0} has been moved (inserted).", i);
-}
 ```
 
-### 使用 Aspose.Words for .NET 获取修订类型的示例源代码
+## 步骤 4：遍历段落并检查修订
 
-以下是使用 Aspose.Words for .NET 获取文档中的修订类型的完整源代码：
+奇迹就在这里发生。您将遍历每个段落并检查它是否已被移动（删除或插入）。
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
-
-ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
 for (int i = 0; i < paragraphs.Count; i++)
 {
-	 if (paragraphs[i].IsMoveFromRevision)
-		 Console.WriteLine("Paragraph {0} has been moved (deleted).", i);
-	 if (paragraphs[i].IsMoveToRevision)
-		 Console.WriteLine("Paragraph {0} has been moved (inserted).", i);
+    if (paragraphs[i].IsMoveFromRevision)
+        Console.WriteLine("Paragraph {0} has been moved (deleted).", i);
+    if (paragraphs[i].IsMoveToRevision)
+        Console.WriteLine("Paragraph {0} has been moved (inserted).", i);
 }
 ```
+
+此循环遍历每个段落并使用`IsMoveFromRevision`和`IsMoveToRevision`属性来确定段落是否被移动（删除）或移动（插入）。
 
 ## 结论
 
-在本教程中，我们学习了如何使用 Aspose.Words for .NET 获取 Word 文档中的单词修订类型。我们按照步骤加载文档、浏览段落并检查与每个段落相关的单词评论类型。现在，您可以应用这些知识，使用 Aspose.Words for .NET 分析您自己的 Word 文档中的单词评论。
+就这样！只需几行代码，您就可以使用 Aspose.Words for .NET 轻松识别 Word 文档中的修订类型。这个功能强大的库使处理文档修订变得轻而易举，让您可以专注于更重要的任务。 
 
-### 获取修订类型的单词的常见问题解答
+## 常见问题解答
 
-#### 问：如何在 Aspose.Words for .NET 中上传文档？
+### 我可以使用 Aspose.Words for .NET 来跟踪特定用户所做的更改吗？
 
-答：使用`Document` Aspose.Words for .NET 类用于从文件加载文档。您可以指定完整的文档路径。
+是的，Aspose.Words for .NET 提供了访问修订详细信息的功能，包括更改的作者。
 
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
+### Aspose.Words for .NET 有免费试用版吗？
 
-#### 问：如何在 Aspose.Words for .NET 中循环遍历文档中的段落？
+当然！您可以免费试用[这里](https://releases.aspose.com/).
 
-答：使用`Paragraphs`文档部分的属性来获取段落集合。然后，您可以使用循环来遍历每个段落。
+### 如何为 Aspose.Words for .NET 申请临时许可证？
 
-```csharp
-ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
-for (int i = 0; i < paragraphs.Count; i++)
-{
-     //在这里处理每个段落
-}
-```
+您可以从[这里](https://purchase.aspose.com/temporary-license/).
 
-#### 问：如何检查 Aspose.Words for .NET 中某个段落是否已被移动（删除）？
+### 在哪里可以找到有关 Aspose.Words for .NET 的更详细文档？
 
-答：使用段落`IsMoveFromRevision`属性来检查它是否已被移动（删除）。
+详细文档可在[Aspose 网站](https://reference.aspose.com/words/net/).
 
-```csharp
-if (paragraph. IsMove
+### 我可以在非商业项目中使用 Aspose.Words for .NET 吗？
 
-FromRevision)
-{
-     //该段落已被移动（删除）
-}
-```
-
-#### 问：如何检查 Aspose.Words for .NET 中某个段落是否已被移动（插入）？
-
-答：使用段落`IsMoveToRevision`属性来检查它是否已被移动（插入）。
-
-```csharp
-if (paragraph.IsMoveToRevision)
-{
-     //该段落已被移动（插入）
-}
-```
+是的，Aspose.Words for .NET 可用于商业和非商业项目，但请务必检查许可条款。

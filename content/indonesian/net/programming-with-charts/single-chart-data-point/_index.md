@@ -9,7 +9,7 @@ url: /id/net/programming-with-charts/single-chart-data-point/
 ---
 ## Perkenalan
 
-Pernah bertanya-tanya bagaimana Anda bisa membuat bagan Anda menonjol dengan titik data yang unik? Baiklah, hari ini adalah hari keberuntungan kamu! Kami sedang mendalami penyesuaian satu titik data bagan menggunakan Aspose.Words untuk .NET. Bersiaplah untuk mengikuti tutorial langkah demi langkah yang tidak hanya informatif tetapi juga menyenangkan dan mudah diikuti.
+Pernah bertanya-tanya bagaimana Anda bisa membuat bagan Anda menonjol dengan titik data yang unik? Nah, hari ini adalah hari keberuntunganmu! Kami sedang mendalami penyesuaian satu titik data bagan menggunakan Aspose.Words untuk .NET. Bersiaplah untuk mengikuti tutorial langkah demi langkah yang tidak hanya informatif tetapi juga menyenangkan dan mudah diikuti.
 
 ## Prasyarat
 
@@ -104,7 +104,7 @@ dataPoint12.Marker.Symbol = MarkerSymbol.Star;
 dataPoint12.Marker.Size = 20;
 ```
 
- Untuk titik data ketiga masuk`series1`, kami menyetelnya menjadi terbalik jika nilainya negatif, mengubah simbol penanda menjadi bintang, dan menyetel ukuran penanda menjadi 20.
+ Untuk titik data ketiga masuk`series1`, kita menyetelnya menjadi invert jika nilainya negatif, mengubah simbol penanda menjadi bintang, dan menyetel ukuran penanda menjadi 20.
 
 ## Langkah 5: Simpan Dokumen
 
@@ -128,7 +128,7 @@ Sangat! Anda dapat menyesuaikan titik data dalam berbagai jenis bagan, termasuk 
 
 ### Apakah mungkin menambahkan label khusus ke titik data?
 
- Ya, Anda dapat menambahkan label khusus ke titik data menggunakan`ChartDataPoint.Label` Properti. Hal ini memungkinkan Anda memberikan lebih banyak konteks untuk setiap titik data.
+ Ya, Anda dapat menambahkan label khusus ke titik data menggunakan`ChartDataPoint.Label` milik. Hal ini memungkinkan Anda memberikan lebih banyak konteks untuk setiap titik data.
 
 ### Bagaimana cara menghapus titik data dari suatu rangkaian?
 

@@ -35,7 +35,7 @@ doc.getMailMerge().execute(fieldNames, fieldValues);
 doc.save("MergedDocument.docx");
 ```
 
- Trong mã này, chúng tôi tải mẫu tài liệu, thiết lập các trường phối thư và thực hiện phối. Các`HandleMergeField` lớp xử lý các loại trường cụ thể như hộp kiểm và nội dung HTML.
+ Trong mã này, chúng tôi tải mẫu tài liệu, thiết lập các trường phối thư và thực hiện phối. các`HandleMergeField` lớp xử lý các loại trường cụ thể như hộp kiểm và nội dung HTML.
 
 ## Trường có điều kiện
 
@@ -119,4 +119,4 @@ Các trường có điều kiện trong Aspose.Words cho Java cho phép bạn t�
 
 ### Aspose.Words cho Java có tương thích với các IDE Java khác nhau không?
 
-Có, Aspose.Words cho Java tương thích với nhiều Môi trường phát triển tích hợp Java (IDE) khác nhau như Eclipse, IntelliJ IDEA và NetBeans. Bạn có thể tích hợp nó vào IDE ưa thích của mình để hợp lý hóa các tác vụ xử lý tài liệu của mình.
+Có, Aspose.Words cho Java tương thích với nhiều Môi trường phát triển tích hợp Java (IDE) khác nhau như Eclipse, IntelliJ IDEA và NetBeans. Bạn có thể tích hợp nó vào IDE ưa thích để hợp lý hóa các tác vụ xử lý tài liệu của mình.

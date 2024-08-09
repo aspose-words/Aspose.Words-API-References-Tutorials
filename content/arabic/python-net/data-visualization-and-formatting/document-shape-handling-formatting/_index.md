@@ -1,6 +1,6 @@
 ---
-title: صياغة أشكال وتخطيطات المستندات المبهرة بصريًا
-linktitle: صياغة أشكال وتخطيطات المستندات المبهرة بصريًا
+title: صياغة أشكال وتخطيطات مستندات مبهرة بصريًا
+linktitle: صياغة أشكال وتخطيطات مستندات مبهرة بصريًا
 second_title: Aspose.Words Python إدارة المستندات API
 description: أنشئ تخطيطات مستندات مذهلة بصريًا باستخدام Aspose.Words for Python. تعرف على كيفية إضافة الأشكال وتخصيص الأنماط وإدراج الصور وإدارة تدفق النص وتحسين الجاذبية.
 type: docs
@@ -14,7 +14,7 @@ url: /ar/python-net/data-visualization-and-formatting/document-shape-handling-fo
 
 ## تهيئة البيئة
 
- قبل أن نتعمق في صياغة أشكال المستندات الرائعة، تأكد من تثبيت Aspose.Words for Python. يمكنك تنزيله من[رابط التحميل](https://releases.aspose.com/words/python/) . بالإضافة إلى ذلك، راجع[توثيق](https://reference.aspose.com/words/python-net/) للحصول على إرشادات شاملة حول استخدام المكتبة.
+ قبل أن نتعمق في صياغة أشكال المستندات الرائعة، تأكد من تثبيت Aspose.Words for Python. يمكنك تنزيله من[رابط التحميل](https://releases.aspose.com/words/python/) . بالإضافة إلى ذلك، راجع[الوثائق](https://reference.aspose.com/words/python-net/) للحصول على إرشادات شاملة حول استخدام المكتبة.
 
 ## إنشاء مستند أساسي
 
@@ -89,7 +89,7 @@ image.text_wrapping.side = aw.drawing.TextWrappingSide.BOTH
  يمكنك تنزيل Aspose.Words for Python من[رابط التحميل](https://releases.aspose.com/words/python/).
 
 ### أين يمكنني العثور على وثائق شاملة لـ Aspose.Words for Python؟
- الرجوع إلى[توثيق](https://reference.aspose.com/words/python-net/) للحصول على إرشادات مفصلة حول استخدام Aspose.Words for Python.
+ الرجوع إلى[الوثائق](https://reference.aspose.com/words/python-net/) للحصول على إرشادات مفصلة حول استخدام Aspose.Words for Python.
 
 ### هل يمكنني تخصيص ألوان وأنماط الأشكال؟
 قطعاً! يوفر Aspose.Words for Python خيارات لتخصيص ألوان الأشكال وأحجامها وأنماطها لتتناسب مع تفضيلات التصميم الخاصة بك.

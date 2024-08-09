@@ -2,140 +2,103 @@
 title: Εισαγωγή αντικειμένου Ole στο Word με το πακέτο Ole
 linktitle: Εισαγωγή αντικειμένου Ole στο Word με το πακέτο Ole
 second_title: Aspose.Words Document Processing API
-description: Μάθετε πώς να εισάγετε ένα αντικείμενο OLE με ένα πακέτο OLE σε ένα έγγραφο χρησιμοποιώντας το Aspose.Words για .NET.
+description: Μάθετε πώς να εισάγετε αντικείμενα OLE σε έγγραφα του Word χρησιμοποιώντας το Aspose.Words για .NET. Ακολουθήστε τον αναλυτικό μας οδηγό βήμα προς βήμα για την απρόσκοπτη ενσωμάτωση αρχείων.
 type: docs
 weight: 10
 url: /el/net/working-with-oleobjects-and-activex/insert-ole-object-with-ole-package/
 ---
+## Εισαγωγή
 
-Ακολουθεί ένας αναλυτικός οδηγός για να εξηγήσετε τον πηγαίο κώδικα C# παρακάτω, ο οποίος δείχνει πώς να εισαγάγετε ένα αντικείμενο OLE στο word με ένα πακέτο OLE χρησιμοποιώντας το Aspose.Words για .NET.
+Εάν θελήσατε ποτέ να ενσωματώσετε ένα αρχείο σε ένα έγγραφο του Word, βρίσκεστε στο σωστό μέρος. Είτε πρόκειται για αρχείο ZIP, φύλλο Excel ή οποιονδήποτε άλλο τύπο αρχείου, η ενσωμάτωσή του απευθείας στο έγγραφο του Word μπορεί να είναι απίστευτα χρήσιμη. Σκεφτείτε το σαν να έχετε ένα μυστικό διαμέρισμα στο έγγραφό σας όπου μπορείτε να αποθηκεύσετε κάθε είδους θησαυρούς. Και σήμερα, θα δούμε πώς να το κάνουμε αυτό χρησιμοποιώντας το Aspose.Words για .NET. Είστε έτοιμοι να γίνετε μάγος του Word; Ας βουτήξουμε!
 
-## Βήμα 1: Εισαγάγετε τις απαραίτητες αναφορές
-Πριν ξεκινήσετε, βεβαιωθείτε ότι έχετε εισαγάγει τις απαραίτητες αναφορές για να χρησιμοποιήσετε το Aspose.Words για .NET στο έργο σας. Αυτό περιλαμβάνει την εισαγωγή της βιβλιοθήκης Aspose.Words και την προσθήκη των απαιτούμενων χώρων ονομάτων στο αρχείο προέλευσης.
+## Προαπαιτούμενα
+
+Πριν ξεκινήσουμε, βεβαιωθείτε ότι έχετε τα εξής:
+
+1. Aspose.Words για .NET: Αν δεν το έχετε κάνει ήδη, κατεβάστε το από[εδώ](https://releases.aspose.com/words/net/).
+2. Ένα περιβάλλον ανάπτυξης: Visual Studio ή οποιοδήποτε άλλο περιβάλλον ανάπτυξης .NET.
+3. Βασική κατανόηση της C#: Δεν χρειάζεται να είστε ειδικός, αλλά η γνώση του τρόπου σας γύρω από την C# θα σας βοηθήσει.
+4. Κατάλογος εγγράφων: Ένας φάκελος όπου μπορείτε να αποθηκεύσετε και να ανακτήσετε έγγραφα.
+
+## Εισαγωγή χώρων ονομάτων
+
+Πρώτα πρώτα, ας βάλουμε σε σειρά τους χώρους ονομάτων μας. Πρέπει να συμπεριλάβετε τους ακόλουθους χώρους ονομάτων στο έργο σας:
 
 ```csharp
+using System;
+using System.IO;
 using Aspose.Words;
 using Aspose.Words.Drawing;
-using System.IO;
 ```
 
-## Βήμα 2: Δημιουργήστε ένα νέο πρόγραμμα δημιουργίας εγγράφων και εγγράφων
- Σε αυτό το βήμα, θα δημιουργήσουμε ένα νέο έγγραφο χρησιμοποιώντας το`Document` κλάση και ένα πρόγραμμα δημιουργίας εγγράφων χρησιμοποιώντας το`DocumentBuilder` τάξη.
+Ας το αναλύσουμε σε βήματα μεγέθους μπουκιάς, ώστε να είναι εύκολο να το ακολουθήσετε.
+
+## Βήμα 1: Ρυθμίστε το έγγραφό σας
+
+Φανταστείτε ότι είστε καλλιτέχνης με έναν κενό καμβά. Πρώτα, χρειαζόμαστε τον κενό καμβά μας, που είναι το έγγραφο του Word. Δείτε πώς το ρυθμίζετε:
 
 ```csharp
+// Διαδρομή στον κατάλογο εγγράφων σας
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Βήμα 3: Εισαγάγετε ένα αντικείμενο OLE με ένα πακέτο OLE
- Χρησιμοποιήστε το Document Generator's`InsertOleObject`μέθοδος εισαγωγής ενός αντικειμένου OLE με ένα πακέτο OLE στο έγγραφο. Καθορίστε τη ροή δεδομένων, τον τύπο αντικειμένου, τις επιλογές εμφάνισης και άλλες απαραίτητες ρυθμίσεις.
+Αυτός ο κώδικας προετοιμάζει ένα νέο έγγραφο του Word και δημιουργεί ένα DocumentBuilder, το οποίο θα χρησιμοποιήσουμε για την εισαγωγή περιεχομένου στο έγγραφό μας.
+
+## Βήμα 2: Διαβάστε το Ole Object σας
+
+Στη συνέχεια, ας διαβάσουμε το αρχείο που θέλετε να ενσωματώσετε. Σκεφτείτε το σαν να μαζεύετε τον θησαυρό που θέλετε να κρύψετε στο μυστικό σας διαμέρισμα:
 
 ```csharp
-byte[] bs = File.ReadAllBytes(MyDir + "Zip file.zip");
+byte[] bs = File.ReadAllBytes(dataDir + "Zip file.zip");
+```
+
+Αυτή η γραμμή διαβάζει όλα τα byte από το αρχείο ZIP και τα αποθηκεύει σε έναν πίνακα byte.
+
+## Βήμα 3: Εισαγάγετε το αντικείμενο Ole
+
+Τώρα έρχεται το μαγικό μέρος. Θα ενσωματώσουμε το αρχείο στο έγγραφο του Word:
+
+```csharp
 using (Stream stream = new MemoryStream(bs))
 {
-     Shape shape = builder.InsertOleObject(stream, "Package", true, null);
-     OlePackage olePackage = shape.OleFormat.OlePackage;
-     olePackage.FileName = "filename.zip";
-     olePackage.DisplayName = "displayname.zip";
+    Shape shape = builder.InsertOleObject(stream, "Package", true, null);
+    OlePackage olePackage = shape.OleFormat.OlePackage;
+    olePackage.FileName = "filename.zip";
+    olePackage.DisplayName = "displayname.zip";
 }
 ```
 
-## Βήμα 4: Αποθηκεύστε το έγγραφο
- Χρησιμοποιήστε το έγγραφο`Save` μέθοδο αποθήκευσης του εγγράφου σε αρχείο.
+ Εδώ, δημιουργούμε μια ροή μνήμης από τον πίνακα byte και χρησιμοποιούμε το`InsertOleObject` μέθοδος για να το ενσωματώσετε στο έγγραφο. Ορίσαμε επίσης το όνομα αρχείου και το εμφανιζόμενο όνομα για το ενσωματωμένο αντικείμενο.
+
+## Βήμα 4: Αποθηκεύστε το έγγραφό σας
+
+Επιτέλους, ας σώσουμε το αριστούργημά μας:
 
 ```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
+doc.Save(dataDir + "WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
 ```
 
-### Δείγμα πηγαίου κώδικα για την εισαγωγή ενός αντικειμένου OLE με ένα πακέτο OLE με Aspose.Words για .NET
+Αυτό αποθηκεύει το έγγραφο με το ενσωματωμένο αρχείο σας στον καθορισμένο κατάλογο.
 
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+## Σύναψη
 
-byte[] bs = File.ReadAllBytes(MyDir + "Zip file.zip");
-using (Stream stream = new MemoryStream(bs))
-{
-     Shape shape = builder.InsertOleObject(stream, "Package", true, null);
-     OlePackage olePackage = shape.OleFormat.OlePackage;
-     olePackage.FileName = "filename.zip";
-     olePackage.DisplayName = "displayname.zip";
-}
+Και ορίστε το! Έχετε ενσωματώσει με επιτυχία ένα αντικείμενο OLE σε ένα έγγραφο του Word χρησιμοποιώντας το Aspose.Words για .NET. Είναι σαν να προσθέτετε ένα κρυμμένο στολίδι μέσα στο έγγραφό σας που μπορεί να αποκαλυφθεί ανά πάσα στιγμή. Αυτή η τεχνική μπορεί να είναι απίστευτα χρήσιμη για μια ποικιλία εφαρμογών, από τεχνική τεκμηρίωση έως δυναμικές αναφορές. 
 
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
-```
+## Συχνές ερωτήσεις
 
-Αυτό είναι ένα πλήρες δείγμα κώδικα για την εισαγωγή ενός αντικειμένου OLE με ένα πακέτο OLE με Aspose.Words για .NET. Φροντίστε να εισαγάγετε τις απαραίτητες αναφορές και ακολουθήστε τα βήματα που περιγράφηκαν προηγουμένως για να ενσωματώσετε αυτόν τον κώδικα στο έργο σας.
+### Μπορώ να ενσωματώσω άλλους τύπους αρχείων χρησιμοποιώντας αυτήν τη μέθοδο;
+Ναι, μπορείτε να ενσωματώσετε διάφορους τύπους αρχείων, όπως φύλλα Excel, PDF και εικόνες.
 
-## συμπέρασμα
+### Χρειάζομαι άδεια για το Aspose.Words;
+ Ναι, χρειάζεστε έγκυρη άδεια. Μπορείτε να πάρετε ένα[προσωρινή άδεια](https://purchase.aspose.com/temporary-license/) για αξιολόγηση.
 
-Συμπερασματικά, έχουμε ακολουθήσει έναν οδηγό βήμα προς βήμα για την εισαγωγή ενός αντικειμένου OLE σε ένα έγγραφο του Word με ένα πακέτο OLE χρησιμοποιώντας Aspose.Words για .NET.
+### Πώς μπορώ να προσαρμόσω το εμφανιζόμενο όνομα του αντικειμένου OLE;
+ Μπορείτε να ορίσετε το`DisplayName` ιδιοκτησία του`OlePackage` για να το προσαρμόσετε.
 
-Ακολουθώντας αυτά τα βήματα, θα μπορείτε να εισαγάγετε με επιτυχία αντικείμενα OLE με πακέτα OLE στα έγγραφά σας του Word χρησιμοποιώντας το Aspose.Words για .NET. Φροντίστε να εισαγάγετε τις απαραίτητες αναφορές και ακολουθήστε προσεκτικά τις οδηγίες για να έχετε τα επιθυμητά αποτελέσματα.
+### Είναι το Aspose.Words συμβατό με .NET Core;
+Ναι, το Aspose.Words υποστηρίζει τόσο .NET Framework όσο και .NET Core.
 
-### Συχνές ερωτήσεις για την εισαγωγή αντικειμένου ole στο word με πακέτο ole
-
-#### Ε: Τι διαπιστευτήρια πρέπει να εισαγάγω για να χρησιμοποιήσω το Aspose.Words για .NET;
-
-Α: Για να χρησιμοποιήσετε το Aspose.Words για .NET, πρέπει να εισαγάγετε τις ακόλουθες αναφορές:
-
-```csharp
-using Aspose.Words;
-using Aspose.Words.Drawing;
-using System.IO;
-```
-
-#### Ε: Πώς να δημιουργήσετε ένα νέο έγγραφο και μια δημιουργία εγγράφων;
-
- Α: Μπορείτε να δημιουργήσετε ένα νέο έγγραφο χρησιμοποιώντας το`Document` κλάση και ένα πρόγραμμα δημιουργίας εγγράφων χρησιμοποιώντας το`DocumentBuilder` τάξη, όπως φαίνεται παρακάτω:
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-#### Ε: Πώς να εισαγάγετε ένα αντικείμενο OLE με ένα πακέτο OLE στο έγγραφο;
-
- Α: Χρησιμοποιήστε το`InsertOleObject` μέθοδος δημιουργίας εγγράφων (`DocumentBuilder`) για να εισαγάγετε ένα αντικείμενο OLE με ένα πακέτο OLE στο έγγραφο. Καθορίστε τη ροή δεδομένων, τον τύπο αντικειμένου, τις επιλογές εμφάνισης και άλλες απαραίτητες ρυθμίσεις. Εδώ είναι ένα παράδειγμα:
-
-```csharp
-byte[] bs = File.ReadAllBytes(MyDir + "File_zip.zip");
-using (Stream stream = new MemoryStream(bs))
-{
-      Shape shape = builder.InsertOleObject(stream, "Package", true, null);
-      OlePackage olePackage = shape.OleFormat.OlePackage;
-      olePackage.FileName = "file_name.zip";
-      olePackage.DisplayName = "display_name.zip";
-}
-```
-
-#### Ε: Πώς να αποθηκεύσετε το έγγραφο;
-
- Α: Χρησιμοποιήστε το έγγραφο`Save`μέθοδο αποθήκευσης του εγγράφου σε αρχείο. Εδώ είναι ένα παράδειγμα:
-
-```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
-```
-
-#### Ε: Μπορείτε να δώσετε ένα πλήρες παράδειγμα εισαγωγής αντικειμένου OLE με πακέτο OLE με Aspose.Words για .NET;
-
-Α: Ακολουθεί ένα πλήρες δείγμα κώδικα για την εισαγωγή ενός αντικειμένου OLE με ένα πακέτο OLE χρησιμοποιώντας το Aspose.Words για .NET. Φροντίστε να εισαγάγετε τις απαραίτητες αναφορές και ακολουθήστε τα βήματα που περιγράφηκαν προηγουμένως για να ενσωματώσετε αυτόν τον κώδικα στο έργο σας:
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-byte[] bs = File.ReadAllBytes(MyDir + "File_zip.zip");
-using (Stream stream = new MemoryStream(bs))
-{
-      Shape shape = builder.InsertOleObject(stream, "Package", true, null);
-      OlePackage olePackage = shape.OleFormat.OlePackage;
-      olePackage.FileName = "file_name.zip";
-      olePackage.DisplayName = "display_name.zip";
-}
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
-```
-
-Αυτό ολοκληρώνει το σεμινάριο μας σχετικά με την εισαγωγή ενός αντικειμένου OLE με ένα πακέτο OLE σε ένα έγγραφο του Word χρησιμοποιώντας το Aspose.Words για .NET. Μη διστάσετε να εισαγάγετε τις απαραίτητες αναφορές και ακολουθήστε τα βήματα που περιγράφονται για να ενσωματώσετε αυτόν τον κώδικα στο έργο σας. Εάν έχετε περαιτέρω ερωτήσεις, μη διστάσετε να επικοινωνήσετε μαζί μας.
+### Μπορώ να επεξεργαστώ το ενσωματωμένο αντικείμενο OLE στο έγγραφο του Word;
+Όχι, δεν μπορείτε να επεξεργαστείτε το αντικείμενο OLE απευθείας στο Word. Πρέπει να το ανοίξετε στην εγγενή του εφαρμογή.

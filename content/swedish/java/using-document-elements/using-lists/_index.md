@@ -216,7 +216,7 @@ Genom att följa dessa steg kan du skapa dokument med anpassade listnivåer, så
 
 Grattis! Du har lärt dig hur du arbetar med listor i Aspose.Words för Java effektivt. Listor är avgörande för att organisera och presentera innehåll i dina dokument. Oavsett om du behöver starta om listor vid varje avsnitt eller ange listnivåer, tillhandahåller Aspose.Words för Java de verktyg du behöver för att skapa professionella dokument.
 
-Nu kan du med säkerhet använda dessa funktioner för att förbättra dina dokumentgenererings- och formateringsuppgifter. Om du har några frågor eller behöver ytterligare hjälp, tveka inte att kontakta oss[Aspose community forum](https://forum.aspose.com/) för support.
+Nu kan du med säkerhet använda dessa funktioner för att förbättra dina dokumentgenererings- och formateringsuppgifter. Om du har några frågor eller behöver ytterligare hjälp, tveka inte att kontakta oss[Aspose community forum](https://forum.aspose.com/) för stöd.
 
 ## Vanliga frågor
 

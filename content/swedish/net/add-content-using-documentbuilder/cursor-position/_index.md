@@ -16,7 +16,7 @@ Hej där, andra kodare! Har du någonsin befunnit dig djupt inne i ett projekt o
 Innan vi hoppar in i koden, låt oss se till att du har allt du behöver:
 
 1. Grundläggande förståelse för C#: Denna handledning förutsätter att du är bekväm med C#- och .NET-koncept.
-2.  Visual Studio installerad: Alla nyare versioner fungerar. Om du inte har det ännu kan du hämta det från[webbplats](https://visualstudio.microsoft.com/).
+2.  Visual Studio installerad: Alla nyare versioner fungerar. Om du inte har det ännu kan du hämta det från[plats](https://visualstudio.microsoft.com/).
 3.  Aspose.Words för .NET Library: Du måste ladda ner och installera det här biblioteket. Du kan få det från[här](https://releases.aspose.com/words/net/).
 
 Okej, om du har allt det redo, låt oss gå vidare till att ställa in saker!

@@ -53,7 +53,7 @@ Document doc = new Document(dataDir + "ProtectedDocument.docx");
 doc.Unprotect();
 ```
 
-Đó là nó! Tài liệu của bạn bây giờ không được bảo vệ. Nhưng nếu có mật khẩu thì sao?
+Thế thôi! Tài liệu của bạn bây giờ không được bảo vệ. Nhưng nếu có mật khẩu thì sao?
 
 ## Bước 3: Xóa bảo vệ bằng mật khẩu
 
@@ -93,7 +93,7 @@ Thao tác này sẽ lưu tài liệu không được bảo vệ của bạn vào
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Việc xóa tính năng bảo vệ khỏi tài liệu Word bằng Aspose.Words cho .NET thật dễ dàng. Cho dù đó có phải là tài liệu được bảo vệ bằng mật khẩu hay không, Aspose.Words đều cung cấp cho bạn sự linh hoạt để quản lý việc bảo vệ tài liệu một cách dễ dàng. Giờ đây, bạn có thể mở khóa tài liệu của mình và kiểm soát hoàn toàn chỉ bằng một vài dòng mã.
+Và bạn có nó! Việc xóa tính năng bảo vệ khỏi tài liệu Word bằng Aspose.Words cho .NET thật dễ dàng. Cho dù đó có phải là tài liệu được bảo vệ bằng mật khẩu hay không, Aspose.Words đều cung cấp cho bạn sự linh hoạt để quản lý việc bảo vệ tài liệu một cách dễ dàng. Giờ đây, bạn có thể mở khóa tài liệu của mình và kiểm soát hoàn toàn chỉ bằng một vài dòng mã.
 
 ## Câu hỏi thường gặp
 

@@ -10,7 +10,7 @@ url: /it/java/document-splitting/extracting-document-content-pages/
 
 Sei pronto per intraprendere un viaggio per padroneggiare l'arte di estrarre il contenuto dei documenti per pagine utilizzando Aspose.Words per Java? Sei nel posto giusto! In questa guida completa, approfondiremo le complessità di Aspose.Words per Java, con istruzioni dettagliate ed esempi di codice sorgente per aiutarti a sbloccare tutto il potenziale di questa potente API Java.
 
-## introduzione
+## Introduzione
 
 Aspose.Words per Java rappresenta un punto di svolta quando si tratta di lavorare con documenti Word a livello di codice. Che tu sia uno sviluppatore Java esperto o che tu abbia appena iniziato il tuo viaggio nella codifica, questa guida ti guiderà attraverso il processo di estrazione del contenuto dei documenti per pagine, fornendoti un prezioso set di competenze per varie applicazioni.
 
@@ -18,7 +18,7 @@ Aspose.Words per Java rappresenta un punto di svolta quando si tratta di lavorar
 
 ### Configurazione dell'ambiente di sviluppo
 
-Prima di poter iniziare a lavorare con Aspose.Words per Java, dobbiamo configurare il nostro ambiente di sviluppo. Segui questi passi:
+Prima di poter iniziare a lavorare con Aspose.Words per Java, dobbiamo configurare il nostro ambiente di sviluppo. Segui questi passaggi:
 
 1. Installa Java: se Java non è installato, scarica e installa la versione più recente dal sito Web.
 

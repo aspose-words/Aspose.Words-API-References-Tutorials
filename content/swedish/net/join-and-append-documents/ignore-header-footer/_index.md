@@ -73,7 +73,7 @@ Här är koden för att konfigurera importalternativen:
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = true };
 ```
 
- Genom att sätta`IgnoreHeaderFooter` till`true`, säger vi till Aspose.Words att ignorera sidhuvuden och sidfötter under sammanslagningsprocessen.
+ Genom att ställa in`IgnoreHeaderFooter` till`true`, säger vi till Aspose.Words att ignorera sidhuvuden och sidfötter under sammanslagningsprocessen.
 
 ## Steg 4: Slå samman dokumenten
 

@@ -9,7 +9,7 @@ url: /hu/net/programming-with-document-properties/add-custom-document-properties
 ---
 ## Bevezetés
 
-Halihó! Elmerül az Aspose.Words for .NET világában, és azon töpreng, hogyan adhat hozzá egyéni dokumentumtulajdonságokat Word-fájljaihoz? Nos, jó helyre jött! Az egyéni tulajdonságok hihetetlenül hasznosak lehetnek további metaadatok tárolására, amelyeket nem fednek le a beépített tulajdonságok. Legyen szó egy dokumentum engedélyezéséről, egy revíziószám hozzáadásáról vagy akár konkrét dátumok beszúrásáról, az egyéni tulajdonságok biztosítják Önnek. Ebben az oktatóanyagban végigvezetjük a tulajdonságok zökkenőmentes hozzáadásának lépésein az Aspose.Words for .NET segítségével. Készen áll az indulásra? Merüljünk el!
+Szia! Elmerül az Aspose.Words for .NET világában, és azon töpreng, hogyan adhat hozzá egyéni dokumentumtulajdonságokat Word-fájljaihoz? Nos, jó helyre jött! Az egyéni tulajdonságok hihetetlenül hasznosak lehetnek további metaadatok tárolására, amelyeket nem fednek le a beépített tulajdonságok. Legyen szó egy dokumentum engedélyezéséről, egy revíziószám hozzáadásáról vagy akár konkrét dátumok beszúrásáról, az egyéni tulajdonságok biztosítják Önnek. Ebben az oktatóanyagban végigvezetjük a tulajdonságok zökkenőmentes hozzáadásának lépésein az Aspose.Words for .NET segítségével. Készen áll az indulásra? Merüljünk el!
 
 ## Előfeltételek
 

@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /zh/net/working-with-fonts/resource-steam-font-source-example/
 ---
+## 介绍
 
 如果您正在使用 .NET 处理文档并使用 Aspose.Words，那么管理字体源可能是确保文档外观符合预期的关键方面。Aspose.Words 提供了一种处理字体的强大方法，包括使用资源流。在本指南中，我们将介绍如何使用资源流作为 Aspose.Words for .NET 的字体源。让我们开始吧！
 
@@ -99,7 +100,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 
 ### 问题 3：我可以使用`IWarningCallback`?
 
-是的`IWarningCallback`界面可以处理各种类型的警告，而不仅仅是字体替换。
+是的，`IWarningCallback`界面可以处理各种类型的警告，而不仅仅是字体替换。
 
 ### Q4：在哪里可以找到对 Aspose.Words 的支持？
 

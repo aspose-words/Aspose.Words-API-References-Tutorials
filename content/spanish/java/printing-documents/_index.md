@@ -18,7 +18,7 @@ Antes de profundizar en los tutoriales, comprendamos por qué Aspose.Words para 
 
  Para iniciar su viaje hacia la impresión de documentos con Aspose.Words para Java, diríjase a nuestra documentación[aquí](https://reference.aspose.com/words/java/). Esta es su puerta de entrada a un tesoro de recursos que le ayudarán a dominar el arte de la impresión de documentos utilizando Java.
 
-## ¿Dónde empezar?
+## ¿Por dónde empezar?
 
 ¿Listo para embarcarte en tu viaje hacia el dominio de Aspose.Words para Java? Comience con el Tutorial 1 y avance a través de los tutoriales que despierten su interés y se alineen con las necesidades de su proyecto. Cada tutorial es un paso más hacia convertirse en un experto en impresión de documentos Java.
 
@@ -26,7 +26,7 @@ Antes de profundizar en los tutoriales, comprendamos por qué Aspose.Words para 
 
 En este artículo, le presentamos el mundo de la impresión de documentos utilizando Aspose.Words para Java. Con nuestra lista de tutoriales y el poder de Aspose.Words a su alcance, está bien equipado para superar cualquier desafío de impresión de documentos que se le presente. Empiece a explorar, experimentar y crear impresionantes documentos impresos con confianza.
 
- Recuerde, si tiene alguna pregunta o necesita más ayuda, no dude en visitar nuestro[Foro de soporte](https://forum.aspose.com/) o explorar[opciones de licencia temporal](https://purchase.aspose.com/temporary-license/) para potenciar su viaje con Aspose.Words para Java.
+ Recuerde, si tiene alguna pregunta o necesita más ayuda, no dude en visitar nuestro[foro de soporte](https://forum.aspose.com/) o explorar[opciones de licencia temporal](https://purchase.aspose.com/temporary-license/) para potenciar su viaje con Aspose.Words para Java.
 
 ## Tutoriales de impresión de documentos
 ### [Impresión de documentos en Aspose.Words para Java](./printing-documents/)

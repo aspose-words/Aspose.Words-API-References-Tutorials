@@ -113,7 +113,7 @@ Dan itu dia! Hanya dengan beberapa baris kode, kami telah mengubah paragraf bias
  Sangat! Aspose.Words untuk .NET memungkinkan Anda menyesuaikan setiap batas satu per satu. Atur saja`LineStyle` untuk setiap jenis perbatasan seperti yang ditunjukkan dalam panduan.
 
 ### Tekstur bayangan apa lagi yang tersedia?  
- Ada beberapa tekstur yang bisa Anda gunakan, seperti solid, garis horizontal, garis vertikal, dan lainnya. Periksalah[Asumsikan dokumentasi](https://reference.aspose.com/words/net/) untuk daftar lengkap.
+ Ada beberapa tekstur yang bisa Anda gunakan, seperti solid, garis horizontal, garis vertikal, dan lainnya. Periksa[Asumsikan dokumentasi](https://reference.aspose.com/words/net/) untuk daftar lengkap.
 
 ### Bagaimana cara mengubah warna tepi?  
  Anda dapat mengatur warna batas menggunakan`Color` properti untuk setiap perbatasan. Misalnya,`borders[BorderType.Left].Color = Color.Red;`.

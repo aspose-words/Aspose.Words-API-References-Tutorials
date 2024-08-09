@@ -43,7 +43,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Шаг 2. Вставьте точечную диаграмму
 
- Использовать`InsertChart` метод`DocumentBuilder` класс для вставки точечной диаграммы в документ.
+ Используйте`InsertChart` метод`DocumentBuilder` класс для вставки точечной диаграммы в документ.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Scatter, 432, 252);

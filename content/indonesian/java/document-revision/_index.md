@@ -26,7 +26,7 @@ Dengan menguasai revisi dokumen dengan Aspose.Words for Java, pengembang dapat m
 
 ## Tutorial Revisi Dokumen
 ### [Panduan Utama untuk Revisi Dokumen](./guide-document-revision/)
-Revisi dokumen master dengan Aspose.Words untuk Java! Kelola perubahan secara efisien, terima/tolak revisi, dan berkolaborasi dengan lancar. Mulai sekarang!
+Revisi dokumen master dengan Aspose.Words untuk Java! Kelola perubahan secara efisien, terima/tolak revisi, dan berkolaborasi dengan lancar. Mulailah sekarang!
 ### [Melacak dan Mengelola Revisi Dokumen](./tracking-managing-document-revisions/)
 Pelajari cara melacak dan mengelola revisi dokumen dengan Aspose.Words untuk Java dalam panduan komprehensif ini. Dapatkan petunjuk langkah demi langkah dan contoh kode sumber.
 ### [Membandingkan Versi Dokumen](./comparing-document-versions/)

@@ -88,7 +88,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportCidUrlsForMhtmlResources.mh
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez exporté avec succès les URL Cid pour les ressources MHTML à l'aide d'Aspose.Words pour .NET. Ce didacticiel vous a guidé tout au long de la configuration de votre projet, du chargement d'un document Word, de la configuration des options d'enregistrement HTML et de l'enregistrement du document au format MHTML. Vous pouvez désormais appliquer ces étapes à vos propres projets et améliorer vos tâches de gestion documentaire.
+Félicitations! Vous avez exporté avec succès les URL Cid pour les ressources MHTML à l'aide d'Aspose.Words pour .NET. Ce didacticiel vous a guidé tout au long de la configuration de votre projet, du chargement d'un document Word, de la configuration des options d'enregistrement HTML et de l'enregistrement du document au format MHTML. Vous pouvez désormais appliquer ces étapes à vos propres projets et améliorer vos tâches de gestion documentaire.
 
 ## FAQ
 
@@ -96,7 +96,7 @@ Toutes nos félicitations! Vous avez exporté avec succès les URL Cid pour les 
 L'exportation d'URL Cid pour les ressources MHTML garantit que les ressources intégrées dans votre fichier MHTML sont correctement référencées, améliorant ainsi la portabilité et l'intégrité du document.
 
 ### Puis-je personnaliser davantage le format de sortie ?
- Oui, Aspose.Words for .NET offre des options de personnalisation étendues pour l'enregistrement des documents. Se référer au[Documentation](https://reference.aspose.com/words/net/) pour plus de détails.
+ Oui, Aspose.Words for .NET offre des options de personnalisation étendues pour l'enregistrement des documents. Référez-vous au[documentation](https://reference.aspose.com/words/net/) pour plus de détails.
 
 ### Ai-je besoin d’une licence pour utiliser Aspose.Words pour .NET ?
  Oui, vous avez besoin d'une licence pour utiliser Aspose.Words pour .NET. Vous pouvez obtenir un essai gratuit[ici](https://releases.aspose.com/) ou acheter une licence[ici](https://purchase.aspose.com/buy).

@@ -2,186 +2,128 @@
 title: 形状修正
 linktitle: 形状修正
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書内の図形を修正します。
+description: この包括的なガイドでは、Aspose.Words for .NET を使用して Word 文書内の図形の修正を処理する方法を学びます。変更の追跡、図形の挿入などをマスターします。
 type: docs
 weight: 10
 url: /ja/net/working-with-revisions/shape-revision/
 ---
+## 導入
 
-このステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書内の図形を修正する方法について説明します。完全なソース コードを提供し、マークダウン出力の書式設定方法を説明します。
+Word 文書をプログラムで編集するのは、特に図形を扱う場合は大変な作業です。レポートを作成する場合でも、テンプレートを設計する場合でも、単に文書作成を自動化する場合でも、図形の修正を追跡および管理する機能は重要です。Aspose.Words for .NET は、このプロセスをシームレスかつ効率的にする強力な API を提供します。このチュートリアルでは、Word 文書内の図形の修正の詳細について詳しく説明し、文書を簡単に管理するためのツールと知識を身に付けられるようにします。
 
-## ステップ1: ドキュメントの作成と図形の追加
+## 前提条件
 
-最初のステップは、新しいドキュメントを作成し、図形を追加することです。
+コードに進む前に、必要なものがすべて揃っていることを確認しましょう。
+
+-  Aspose.Words for .NET: Aspose.Wordsライブラリがインストールされていることを確認してください。[ここからダウンロード](https://releases.aspose.com/words/net/).
+- 開発環境: Visual Studio などの開発環境をセットアップする必要があります。
+- C# の基本的な理解: C# プログラミング言語とオブジェクト指向プログラミングの基本概念に精通していること。
+- Word 文書: 作業に使用する Word 文書、またはチュートリアル中に作成することもできます。
+
+## 名前空間のインポート
+
+まず、必要な名前空間をインポートしましょう。これにより、Word 文書や図形の処理に必要なクラスやメソッドにアクセスできるようになります。
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+```
+
+## ステップ1: ドキュメントディレクトリの設定
+
+図形の操作を始める前に、ドキュメント ディレクトリへのパスを定義する必要があります。ここに変更したドキュメントを保存します。
+
+```csharp
+//ドキュメント ディレクトリへのパス。
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## ステップ2: 新しいドキュメントを作成する
+
+図形を挿入して修正する新しい Word 文書を作成しましょう。
 
 ```csharp
 Document doc = new Document();
-Assert.False(doc.TrackRevisions);
-
-Shape shape = new Shape(doc, ShapeType.Cube);
-shape. WrapType = WrapType. Inline;
-shape. Width = 100.0;
-shape. Height = 100.0;
-doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 ```
 
-## ステップ2: 変更を追跡し、別の図形を追加する
+## ステップ3: インラインシェイプの挿入
 
-リビジョン追跡をオンにして、別の図形を追加します。
-
-```csharp
-doc.StartTrackRevisions("John Doe");
-
-shape = new Shape(doc, ShapeType.Sun);
-shape. WrapType = WrapType. Inline;
-shape. Width = 100.0;
-shape. Height = 100.0;
-doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
-```
-
-## ステップ3: シェイプコレクションを取得してリビジョンを確認する
-
-ドキュメントから図形のコレクションを取得し、各図形に関連付けられているリビジョンを確認します。
+まず、変更履歴を追跡せずに、インライン図形をドキュメントに挿入します。インライン図形は、テキストに合わせて流れる図形です。
 
 ```csharp
-List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-Assert.True(shapes[0].IsDeleteRevision);
-
-Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-Assert.True(shapes[1].IsInsertRevision);
-```
-
-## ステップ4: 図形移動の修正を確認する
-
-形状変位の修正を含む既存のドキュメントを読み込み、関連する修正を確認します。
-
-```csharp
-doc = new Document(MyDir + "Revision shape.docx");
-
-shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert. False(shapes[0].IsMoveFromRevision);
-Assert.True(shapes[0].IsMoveToRevision);
-
-Assert.True(shapes[1].IsMoveFromRevision);
-Assert. False(shapes[1].IsMoveToRevision);
-```
-
-### Aspose.Words for .NET を使用した図形修正のサンプル ソース コード
-
-以下は、Aspose.Words for .NET を使用してドキュメント内の図形を修正するための完全なソース コードです。
-
-```csharp
-Document doc = new Document();
-
-//リビジョンを追跡せずにインライン シェイプを挿入します。
-Assert.False(doc.TrackRevisions);
 Shape shape = new Shape(doc, ShapeType.Cube);
 shape.WrapType = WrapType.Inline;
 shape.Width = 100.0;
 shape.Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
+```
 
-//修正の追跡を開始し、別の図形を挿入します。
+## ステップ4: 変更の追跡を開始する
+
+ドキュメントの変更を追跡するには、リビジョン追跡を有効にする必要があります。これは、図形に加えられた変更を識別するために不可欠です。
+
+```csharp
 doc.StartTrackRevisions("John Doe");
+```
+
+## ステップ5: 修正を加えた別の図形を挿入する
+
+リビジョンの追跡が有効になったので、別の図形を挿入してみましょう。今回は、すべての変更が追跡されます。
+
+```csharp
 shape = new Shape(doc, ShapeType.Sun);
 shape.WrapType = WrapType.Inline;
 shape.Width = 100.0;
 shape.Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
+```
 
-//追加した 2 つの図形だけを含むドキュメントの図形コレクションを取得します。
+## ステップ6: 図形の取得と変更
+
+ドキュメント内のすべての図形を取得し、必要に応じて変更できます。ここでは、図形を取得して最初の図形を削除します。
+
+```csharp
 List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-//最初の図形を削除します。
 shapes[0].Remove();
+```
 
-//変更が追跡されている間にその図形を削除したため、その図形は削除リビジョンとしてカウントされます。
-Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-Assert.True(shapes[0].IsDeleteRevision);
+## ステップ7: ドキュメントを保存する
 
-//また、変更を追跡しながら別の図形を挿入したので、その図形は挿入リビジョンとしてカウントされます。
-Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-Assert.True(shapes[1].IsInsertRevision);
+変更を加えた後は、ドキュメントを保存する必要があります。これにより、すべての改訂と修正が保存されます。
 
-//ドキュメントには移動された図形が 1 つありますが、図形移動のリビジョンにはその図形のインスタンスが 2 つ含まれます。
-// 1 つは到着先の形状になり、もう 1 つは元の位置の形状になります。
-doc = new Document(MyDir + "Revision shape.docx");
+```csharp
+doc.Save(dataDir + "Revision shape.docx");
+```
 
+## ステップ8: 図形移動の変更の処理
+
+図形が移動されると、Aspose.Words はこれをリビジョンとして追跡します。つまり、図形のインスタンスが 2 つ存在することになります。1 つは元の場所、もう 1 つは新しい場所にあります。
+
+```csharp
+doc = new Document(dataDir + "Revision shape.docx");
 shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-//これは修正への動きであり、到着先での形状でもあります。
-Assert.False(shapes[0].IsMoveFromRevision);
-Assert.True(shapes[0].IsMoveToRevision);
-
-//これは、元の場所にある形状であるリビジョンからの移動です。
-Assert.True(shapes[1].IsMoveFromRevision);
-Assert.False(shapes[1].IsMoveToRevision);
 ```
 
 ## 結論
 
-このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書内の図形を修正する方法を学びました。文書の作成、修正の追跡の有効化、各図形に関連付けられた修正の確認、図形の移動の修正の確認の手順に従うことで、修正を正常に管理できました。Aspose.Words for .NET は、Word 文書のレビューとフォームを備えた強力な Words Processing API を提供します。
+これで完了です。Aspose.Words for .NET を使用して Word 文書の図形の変更を処理する方法を学習できました。ドキュメント テンプレートの管理、レポートの自動化、または単に変更を追跡する場合でも、これらのスキルは非常に役立ちます。このステップ バイ ステップ ガイドに従うことで、基本を習得しただけでなく、より高度なドキュメント処理テクニックについても理解を深めることができます。
 
-### よくある質問
+## よくある質問
 
-#### Q: Aspose.Words for .NET で新しいドキュメントを作成し、図形を追加するにはどうすればよいですか?
+### Aspose.Words for .NET とは何ですか?
+Aspose.Words for .NET は、開発者が C# を使用してプログラム的に Word 文書を作成、変更、変換できるようにする強力なライブラリです。
 
-A: Aspose.Words for .NET で新しいドキュメントを作成し、図形を追加するには、次のコードを使用できます。ここでは、立方体と太陽の 2 つの図形をドキュメントの最初のセクションに追加します。
+### Word 文書内の他の要素に加えられた変更を追跡できますか?
+はい、Aspose.Words for .NET は、テキスト、表など、さまざまな要素の変更の追跡をサポートしています。
 
-```csharp
-Document doc = new Document();
-Assert.False(doc.TrackRevisions);
+### Aspose.Words for .NET の無料試用版を入手するにはどうすればいいですか?
+ Aspose.Words for .NETの無料トライアルを入手できます[ここ](https://releases.aspose.com/).
 
-Shape shape = new Shape(doc, ShapeType.Cube);
-shape. WrapType = WrapType. Inline;
-shape. Width = 100.0;
-shape. Height = 100.0;
-doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
-```
+### プログラムで修正を承認または拒否することは可能ですか?
+はい、Aspose.Words for .NET には、プログラムによって変更を承認または拒否するメソッドが用意されています。
 
-#### Q: Aspose.Words for .NET でリビジョン追跡を有効にするにはどうすればいいですか?
-
- A: Aspose.Words for .NETでリビジョントラッキングを有効にするには、`StartTrackRevisions`方法の`Document`オブジェクト。このメソッドは、リビジョンの作成者の名前をパラメータとして受け取ります。
-
-```csharp
-doc.StartTrackRevisions("John Doe");
-```
-
-#### Q: Aspose.Words for .NET ドキュメント内の各図形に関連付けられたリビジョンを確認するにはどうすればよいですか?
-
-A: Aspose.Words for .NETドキュメント内の各図形に関連付けられたリビジョンを確認するには、`GetChildNodes`方法`NodeType.Shape`ノードタイプ。その後、各シェイプの`IsDeleteRevision`, `IsInsertRevision`, `IsMoveFromRevision` 、 そして`IsMoveToRevision`シェイプに関連付けられているリビジョンの種類を決定するプロパティ:
-
-```csharp
-List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-Assert.True(shapes[0].IsDeleteRevision);
-
-Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-Assert.True(shapes[1].IsInsertRevision);
-```
-
-#### Q: Aspose.Words for .NET ドキュメント内の図形の変位リビジョンを確認するにはどうすればよいですか?
-
- A: Aspose.Words for .NET ドキュメント内の図形変位リビジョンを確認するには、図形変位リビジョンを含む既存のドキュメントをロードします。その後、各図形の`IsMoveFromRevision`そして`IsMoveToRevision`移動されているかどうか、移動されている場合はどこからどこへ移動されているかを判断するためのプロパティ:
-
-```csharp
-doc = new Document(MyDir + "Revision shape.docx");
-
-shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert. False(shapes[0].IsMoveFromRevision);
-Assert.True(shapes[0].IsMoveToRevision);
-
-Assert.True(shapes[1].IsMoveFromRevision);
-Assert. False(shapes[1].IsMoveToRevision);
-```
+### Aspose.Words for .NET を C# 以外の他の .NET 言語で使用できますか?
+もちろんです! Aspose.Words for .NET は、VB.NET や F# を含むあらゆる .NET 言語で使用できます。

@@ -8,16 +8,16 @@ weight: 10
 url: /cs/net/document-formatting/get-paragraph-style-separator/
 ---
 
-## Úvod
+## Zavedení
 
-Zkoušeli jste někdy procházet labyrintem dokumentu aplikace Word, aby vás zakopl o ty záludné oddělovače ve stylu odstavců? Pokud jste tam byli, víte, že boj je skutečný. Ale Hádej co? S Aspose.Words pro .NET je identifikace a manipulace s těmito oddělovači hračkou. Pojďme se ponořit do tohoto tutoriálu a udělat z vás profesionálního oddělovače ve stylu odstavců!
+Zkoušeli jste někdy procházet labyrintem dokumentu aplikace Word, aby vás zakopl o ty záludné oddělovače ve stylu odstavců? Pokud jste tam byli, víte, že boj je skutečný. Ale hádejte co? S Aspose.Words pro .NET je identifikace a manipulace s těmito oddělovači hračkou. Pojďme se ponořit do tohoto tutoriálu a udělat z vás profesionálního oddělovače ve stylu odstavců!
 
 ## Předpoklady
 
 Než se pustíme do kódu, ujistěte se, že máte všechny nástroje, které potřebujete:
 
 - Visual Studio: Ujistěte se, že jej máte nainstalovaný. Pokud ne, stáhněte si jej a nainstalujte z webu společnosti Microsoft.
-- Aspose.Words for .NET: Pokud ji ještě nemáte, stáhněte si nejnovější verzi[tady](https://releases.aspose.com/words/net/).
+- Aspose.Words for .NET: Pokud ji ještě nemáte, stáhněte si nejnovější verzi[zde](https://releases.aspose.com/words/net/).
 - Ukázkový dokument Word: Měl by obsahovat oddělovače stylu odstavců, se kterými budeme pracovat. Můžete vytvořit jeden nebo použít existující dokument.
 
 ## Importovat jmenné prostory

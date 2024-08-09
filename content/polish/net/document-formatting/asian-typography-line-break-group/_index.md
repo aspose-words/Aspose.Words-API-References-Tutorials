@@ -20,7 +20,7 @@ Zanim przejdziemy do najdrobniejszych szczegółów, jest kilka rzeczy, które m
 - Podstawowa znajomość języka C#: Chociaż wszystko wyjaśnimy, podstawowa znajomość języka C# będzie korzystna.
 - Dokument programu Word z typografią azjatycką: Przygotuj dokument programu Word zawierający typografię azjatycką. To będzie nasz plik roboczy.
 
-Mam wszystko? Świetnie! Przejdźmy do konfiguracji Twojego projektu.
+Masz wszystko? Świetnie! Przejdźmy do konfiguracji Twojego projektu.
 
 ## Importuj przestrzenie nazw
 

@@ -112,7 +112,7 @@ using Aspose.Words.Editing;
 
 ## 結論
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 在 Word 文件中成功建立不受限制的可編輯區域。此功能對於協作環境非常有用，在協作環境中，文件的某些部分需要保持不變，而其他部分可以進行編輯。 
+現在你就得到它了！您已使用 Aspose.Words for .NET 在 Word 文件中成功建立不受限制的可編輯區域。此功能對於協作環境非常有用，在協作環境中，文件的某些部分需要保持不變，而其他部分可以進行編輯。 
 
 嘗試更複雜的場景和不同的保護級別，以充分利用 Aspose.Words。如果您有任何疑問或遇到問題，請隨時查看[文件](https://reference.aspose.com/words/net/)或聯繫[支援](https://forum.aspose.com/c/words/8).
 

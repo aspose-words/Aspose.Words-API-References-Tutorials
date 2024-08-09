@@ -9,7 +9,7 @@ url: /fr/net/working-with-markdown/image/
 ---
 ## Introduction
 
-Êtes-vous prêt à plonger dans le monde d’Aspose.Words pour .NET ? Aujourd'hui, nous allons explorer comment ajouter des images à vos documents. Que vous travailliez sur un rapport, une brochure ou simplement pour pimenter un simple document, l'ajout d'images peut faire une énorme différence. Alors, commençons!
+Êtes-vous prêt à plonger dans le monde d’Aspose.Words pour .NET ? Aujourd'hui, nous allons explorer comment ajouter des images à vos documents. Que vous travailliez sur un rapport, une brochure ou simplement pour pimenter un simple document, l'ajout d'images peut faire une énorme différence. Alors commençons !
 
 ## Conditions préalables
 
@@ -46,7 +46,7 @@ Ensuite, vous allez insérer une image dans votre document. Voici comment procé
 Shape shape = builder.InsertImage("path_to_your_image.jpg");
 ```
 
- Remplacer`"path_to_your_image.jpg"` avec le chemin réel de votre fichier image. Le`InsertImage` La méthode ajoutera l’image à votre document.
+ Remplacer`"path_to_your_image.jpg"` avec le chemin réel de votre fichier image. Le`InsertImage`La méthode ajoutera l’image à votre document.
 
 ## Étape 3 : définir les propriétés de l'image
 
@@ -72,7 +72,7 @@ Aspose.Words prend en charge divers formats d'image, notamment JPEG, PNG, BMP, G
  Absolument! Vous pouvez définir les propriétés de hauteur et de largeur du`Shape` objet pour redimensionner les images.
 
 ### Est-il possible d'ajouter des images à partir d'une URL ?  
- Oui, vous pouvez ajouter des images à partir d'une URL en fournissant l'URL dans le champ`InsertImage` méthode.
+Oui, vous pouvez ajouter des images à partir d'une URL en fournissant l'URL dans le champ`InsertImage` méthode.
 
 ### Comment puis-je obtenir un essai gratuit d'Aspose.Words pour .NET ?  
  Vous pouvez obtenir un essai gratuit auprès du[Site Aspose](https://releases.aspose.com/).

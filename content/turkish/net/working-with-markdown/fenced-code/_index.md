@@ -2,79 +2,110 @@
 title: Çitle çevrili kod
 linktitle: Çitle çevrili kod
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile çitlenmiş kod özelliğini nasıl kullanacağınızı öğrenin. Adım adım kılavuz.
+description: Aspose.Words for .NET'i kullanarak Word belgelerine çitlerle çevrili kod ve bilgi dizelerini nasıl ekleyeceğinizi öğrenin. Adım adım kılavuz dahildir. Belge biçimlendirme becerilerinizi geliştirin.
 type: docs
 weight: 10
 url: /tr/net/working-with-markdown/fenced-code/
 ---
+## giriiş
 
-Bu örnekte, Aspose.Words for .NET ile çitlenmiş kod özelliğinin nasıl kullanılacağı konusunda size yol göstereceğiz. çitle çevrilmiş kod, belirli biçimlendirmeye sahip kod bloklarını temsil etmek için kullanılır.
+Merhaba kodlayıcı arkadaşım! Bugün Aspose.Words for .NET dünyasına dalıyoruz ve Word belgelerinize bilgi dizeleri içeren çitli kod ve çitli kod ekleme sanatında ustalaşıyoruz. Word belgenizi bir tuval olarak hayal edin ve sanatçı olarak siz de deneyimli bir geliştiricinin hassasiyetiyle resim yapmak üzeresiniz. Aspose.Words ile belgelerinizi yapılandırılmış, formatlanmış kod bloklarıyla programlı olarak geliştirme gücüne sahip olur, teknik belgelerinizin profesyonellik ve netlikle parlamasını sağlarsınız.
 
-## 1. Adım: Belge oluşturucuyu kullanma
+## Önkoşullar
 
-Öncelikle belgemize içerik eklemek için bir belge oluşturucu kullanacağız.
+Eğiticiye geçmeden önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
+
+- Temel C# bilgisi: C# hakkında genel bir anlayış, kavramları hızlı bir şekilde kavramanıza yardımcı olacaktır.
+-  Aspose.Words for .NET: Aspose.Words for .NET'in kurulu olması gerekir. Henüz almadıysanız mutlaka alın[Burada](https://releases.aspose.com/words/net/).
+- Geliştirme Ortamı: Visual Studio veya sizin için uygun olan herhangi bir C# IDE.
+
+## Ad Alanlarını İçe Aktar
+
+Öncelikle gerekli ad alanlarını içe aktarmanız gerekir. Bu, bir projeye başlamadan önce tüm araçlarınızı toplamaya benzer.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Style;
+```
+
+Şimdi süreci adım adım inceleyelim.
+
+## 1. Adım: Projenizi Kurma
+
+Word belgemizde güzel, biçimlendirilmiş kod blokları oluşturabilmemiz için önce Visual Studio'da yeni bir proje kurmamız gerekiyor.
+
+1. Yeni Bir Proje Oluşturun: Visual Studio'yu açın ve yeni bir C# Konsol Uygulaması oluşturun.
+2. Aspose.Words Referansı Ekle: Aspose.Words'ü NuGet Paket Yöneticisi aracılığıyla yükleyin. Bunu, Solution Explorer'da projenize sağ tıklayarak, "NuGet Paketlerini Yönet" seçeneğini seçip Aspose.Words'ü arayarak yapabilirsiniz.
+
+## Adım 2: DocumentBuilder'ı başlatın
+
+Artık projeniz ayarlandığına göre, Word belgesine içerik eklemek için ana aracımız olacak DocumentBuilder'ı başlatalım.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## 2. Adım: Sınırlandırılmış kod için stil ekleme
+## 3. Adım: Sınırlandırılmış Kod için Stil Oluşturun
 
- Çitlerle çevrili kod için özel bir stil ekleyeceğiz.`Styles.Add` yöntemi`Document` nesne. Bu örnekte çitlenmiş kod için "FencedCode" adında bir stil oluşturuyoruz.
+Sınırlandırılmış kod eklemek için öncelikle bir stil oluşturmamız gerekir. Bunu kod bloğumuzun temasını ayarlamak olarak düşünün.
 
 ```csharp
 Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");
-builder.ParagraphFormat.Style = fencedCode;
+fencedCode.Font.Name = "Courier New";
+fencedCode.Font.Size = 10;
+fencedCode.ParagraphFormat.LeftIndent = 20;
+fencedCode.ParagraphFormat.RightIndent = 20;
+fencedCode.ParagraphFormat.Shading.BackgroundPatternColor = Color.LightGray;
 ```
 
-## 3. Adım: Bilgi olmadan çitle çevrili kod ekleme
+## 4. Adım: Belgeye Korumalı Kod Ekleme
 
-Artık "FencedCode" özel stilini kullanarak hiçbir bilgi dizisi içermeyen çitlerle çevrili bir kod bloğu ekleyebiliriz.
+Stilimiz hazır olduğundan artık belgeye çitlerle çevrili bir kod bloğu ekleyebiliriz.
 
 ```csharp
-builder.Writeln("This is an fenced code");
+builder.ParagraphFormat.Style = fencedCode;
+builder.Writeln("This is a fenced code block");
 ```
 
-## 4. Adım: Bilgi dizesiyle çitlerle çevrili kod ekleyin
+## Adım 5: Bilgi Dizesi ile Korumalı Kod için Stil Oluşturun
 
-Ayrıca başka bir özel stil kullanarak bir dizi bilgi içeren çitlerle çevrili bir kod bloğu da ekleyebiliriz. Bu örnekte, bir C# kod bloğunu temsil etmek için "FencedCode.C#" adlı bir stil yaratıyoruz.
+Bazen programlama dilini belirtmek veya kod bloğunuza ekstra bilgi eklemek isteyebilirsiniz. Bunun için bir stil oluşturalım.
 
 ```csharp
 Style fencedCodeWithInfo = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode.C#");
-builder.ParagraphFormat.Style = fencedCodeWithInfo;
-builder.Writeln("This is a fenced code with info string");
+fencedCodeWithInfo.Font.Name = "Courier New";
+fencedCodeWithInfo.Font.Size = 10;
+fencedCodeWithInfo.ParagraphFormat.LeftIndent = 20;
+fencedCodeWithInfo.ParagraphFormat.RightIndent = 20;
+fencedCodeWithInfo.ParagraphFormat.Shading.BackgroundPatternColor = Color.LightGray;
 ```
 
-### Aspose.Words for .NET kullanan Korumalı Kod için örnek kaynak kodu
+## Adım 6: Belgeye Bilgi Dizesi İçeren Korumalı Kod Ekleme
+
+Şimdi bunun C# kodu olduğunu belirtmek için bilgi dizesi içeren çitlerle çevrili bir kod bloğu ekleyelim.
 
 ```csharp
-// Belgeye içerik eklemek için belge oluşturucuyu kullanın.
-DocumentBuilder builder = new DocumentBuilder();
-
-Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");
-builder.ParagraphFormat.Style = fencedCode;
-builder.Writeln("This is an fenced code");
-
-Style fencedCodeWithInfo = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode.C#");
 builder.ParagraphFormat.Style = fencedCodeWithInfo;
-builder.Writeln("This is a fenced code with info string");
+builder.Writeln("This is a fenced code block with info string - C#");
 ```
 
-### SSS'ler
+## Çözüm
 
-#### S: Markdown'da sınırlandırılmış kod nedir?
+Tebrikler! Aspose.Words for .NET'i kullanarak Word belgelerinize çitle çevrilmiş kod blokları ve bilgi dizeleri içeren çitle çevrilmiş kod eklediniz. Bu buzdağının sadece görünen kısmı. Aspose.Words ile belge işlemenizi otomatikleştirebilir ve yeni boyutlara taşıyabilirsiniz. Keşfetmeye ve mutlu kodlamaya devam edin!
 
-C: Markdown'daki sınırlandırılmış kod, Markdown belgesindeki kodu görüntülemek için kullanılan bir biçimlendirme yöntemidir. Kodun belirli sınırlayıcılarla çerçevelenmesinden oluşur.
+## SSS'ler
 
-#### S: Markdown'da sınırlandırılmış kodun faydaları nelerdir?
+### Aspose.Words for .NET nedir?
+Aspose.Words for .NET, geliştiricilerin Word belgelerini programlı olarak oluşturmasına, değiştirmesine ve dönüştürmesine olanak tanıyan güçlü bir kitaplıktır.
 
-C: Markdown'daki sınırlandırılmış kod, kodun okunabilirliğini artırır ve okuyucuların anlamasını kolaylaştırır. Ayrıca bazı Markdown düzenleyicilerinde sözdizimi vurgulamasının korunmasına da olanak tanır.
+### Aspose.Words'ü diğer programlama dilleriyle kullanabilir miyim?
+Aspose.Words öncelikli olarak .NET dillerini destekler ancak Java, Python ve diğer diller için sürümler mevcuttur.
 
-#### S: Markdown'da ayrılmış ve girintili kod arasındaki fark nedir?
+### Aspose.Words'ün kullanımı ücretsiz mi?
+ Aspose.Words ticari bir üründür ancak ücretsiz deneme sürümünü indirebilirsiniz[Burada](https://releases.aspose.com/)özelliklerini keşfetmek için.
 
-C: Sınırlandırılmış kod, kodu çevrelemek için belirli sınırlayıcılar kullanır; girintili kod ise her kod satırının boşluk veya sekmelerle girintilenmesini içerir.
+### Aspose.Words için nasıl destek alabilirim?
+ Aspose topluluğundan ve geliştiricilerden destek alabilirsiniz[Burada](https://forum.aspose.com/c/words/8).
 
-#### S: Markdown'daki sınırlandırılmış kod tüm Markdown editörleri tarafından destekleniyor mu?
-
-C: Markdown'da sınırlandırılmış kod desteği, Markdown editörleri arasında farklılık gösterebilir. Emin olmak için yayıncınızın özel belgelerini kontrol edin.
-
+### Aspose.Words başka hangi özellikleri sunuyor?
+Aspose.Words, belge dönüştürme, şablon tabanlı belge oluşturma, raporlama ve çok daha fazlasını içeren çok çeşitli özellikler sunar.

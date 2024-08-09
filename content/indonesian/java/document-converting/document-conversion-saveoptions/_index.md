@@ -77,7 +77,7 @@ Dalam panduan komprehensif ini, kami telah menjelajahi dunia konversi dokumen me
 
 ### Bagaimana cara menginstal Aspose.Words untuk Java?
 
- Menginstal Aspose.Words untuk Java sangatlah mudah. Mengunjungi[Unduh Halaman](https://releases.aspose.com/words/java/)dan ikuti petunjuk instalasi untuk lingkungan pengembangan Anda.
+ Menginstal Aspose.Words untuk Java sangatlah mudah. Kunjungi[halaman unduhan](https://releases.aspose.com/words/java/)dan ikuti petunjuk instalasi untuk lingkungan pengembangan Anda.
 
 ### Apa itu SaveOptions di Aspose.Words?
 
@@ -85,7 +85,7 @@ SaveOptions digunakan untuk menentukan format dan opsi untuk konversi dokumen. M
 
 ### Bisakah saya mengonversi dokumen Word ke PDF menggunakan Aspose.Words?
 
-Ya, Aspose.Words untuk Java memberikan dukungan tangguh untuk mengonversi dokumen Word ke format PDF. Anda dapat menyesuaikan pengaturan konversi untuk memenuhi kebutuhan spesifik Anda.
+Ya, Aspose.Words untuk Java memberikan dukungan kuat untuk mengonversi dokumen Word ke format PDF. Anda dapat menyesuaikan pengaturan konversi untuk memenuhi kebutuhan spesifik Anda.
 
 ### Bagaimana cara menangani kesalahan konversi dokumen?
 

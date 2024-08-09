@@ -10,7 +10,7 @@ url: /tr/java/document-manipulation/using-document-ranges/
 
 ## Aspose.Words for Java'da Belge Aralıklarını Kullanmaya Giriş
 
-Bu kapsamlı kılavuzda Aspose.Words for Java'da belge aralıklarının gücünden nasıl yararlanılacağını keşfedeceğiz. Bir belgenin belirli bölümlerindeki metni nasıl değiştireceğinizi ve çıkaracağınızı öğrenerek, Java belge işleme ihtiyaçlarınız için bir olasılıklar dünyasının kapılarını açacaksınız.
+Bu kapsamlı kılavuzda Aspose.Words for Java'da belge aralıklarının gücünden nasıl yararlanılacağını keşfedeceğiz. Bir belgenin belirli bölümlerinden metni nasıl değiştireceğinizi ve çıkaracağınızı öğrenerek, Java belge işleme ihtiyaçlarınız için bir olasılıklar dünyasının kapılarını açacaksınız.
 
 ## Başlarken
 
@@ -61,7 +61,7 @@ Aspose.Words for Java'daki belge aralığı, bir belgenin bağımsız olarak de�
 
 ### Bir belge aralığındaki içeriği nasıl silerim?
 
- Bir belge aralığındaki içeriği silmek için`delete()` yöntem. Örneğin,`doc.getRange().delete()` tüm belge aralığındaki içeriği silecektir.
+ Bir belge aralığındaki içeriği silmek için`delete()` Yöntem. Örneğin,`doc.getRange().delete()` tüm belge aralığındaki içeriği silecektir.
 
 ### Bir belge aralığındaki metni biçimlendirebilir miyim?
 

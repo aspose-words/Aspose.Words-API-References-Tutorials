@@ -9,7 +9,7 @@ url: /fr/net/join-and-append-documents/unlink-headers-footers/
 ---
 ## Introduction
 
-Dans le monde du traitement de documents, assurer la cohérence des en-têtes et des pieds de page peut parfois s’avérer un défi. Que vous fusionniez des documents ou que vous cherchiez simplement à avoir des en-têtes et des pieds de page différents pour différentes sections, il est essentiel de savoir comment les dissocier. Aujourd'hui, nous allons découvrir comment y parvenir en utilisant Aspose.Words pour .NET. Nous le détaillerons étape par étape afin que vous puissiez suivre facilement. Prêt à maîtriser la manipulation de documents ? Commençons!
+Dans le monde du traitement de documents, assurer la cohérence des en-têtes et des pieds de page peut parfois s’avérer un défi. Que vous fusionniez des documents ou que vous cherchiez simplement à avoir des en-têtes et des pieds de page différents pour différentes sections, il est essentiel de savoir comment les dissocier. Aujourd'hui, nous allons découvrir comment y parvenir en utilisant Aspose.Words pour .NET. Nous le détaillerons étape par étape afin que vous puissiez suivre facilement. Prêt à maîtriser la manipulation de documents ? Commençons !
 
 ## Conditions préalables
 
@@ -83,7 +83,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 
 ## Conclusion
 
-Et voila! En suivant ces étapes, vous avez réussi à dissocier les en-têtes et les pieds de page de votre document source et à les ajouter à votre document de destination à l'aide d'Aspose.Words pour .NET. Cette technique peut être particulièrement utile lorsque vous travaillez avec des documents complexes nécessitant des en-têtes et des pieds de page différents pour différentes sections. Bon codage !
+Et voilà ! En suivant ces étapes, vous avez réussi à dissocier les en-têtes et les pieds de page de votre document source et à les ajouter à votre document de destination à l'aide d'Aspose.Words pour .NET. Cette technique peut être particulièrement utile lorsque vous travaillez avec des documents complexes nécessitant des en-têtes et des pieds de page différents pour différentes sections. Bon codage !
 
 ## FAQ
 

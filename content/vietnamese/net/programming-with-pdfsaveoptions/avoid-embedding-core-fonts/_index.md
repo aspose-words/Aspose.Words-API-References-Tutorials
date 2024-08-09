@@ -74,7 +74,7 @@ Cuối cùng, chúng tôi lưu tài liệu Word dưới dạng PDF bằng các t
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
 ```
 
-Và bạn có nó rồi đấy! Tệp PDF của bạn hiện được lưu trong thư mục được chỉ định mà không có các phông chữ lõi cồng kềnh đó.
+Và bạn có nó! Tệp PDF của bạn hiện được lưu trong thư mục được chỉ định mà không có các phông chữ lõi cồng kềnh đó.
 
 ## Phần kết luận
 

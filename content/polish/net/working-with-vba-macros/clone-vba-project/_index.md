@@ -16,7 +16,7 @@ Witajcie, drodzy programiści! Czy kiedykolwiek byłeś zaplątany w zawiłości
 
 Zanim zaczniemy, upewnijmy się, że wszystko masz przygotowane:
 
-1.  Biblioteka Aspose.Words dla .NET: Będziesz potrzebować najnowszej wersji Aspose.Words dla .NET. Jeśli jeszcze tego nie zrobiłeś, możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1.  Biblioteka Aspose.Words dla .NET: Będziesz potrzebować najnowszej wersji Aspose.Words dla .NET. Jeśli jeszcze tego nie zrobiłeś, możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: Środowisko programistyczne .NET, takie jak Visual Studio, będzie niezbędne do pisania i testowania kodu.
 3. Podstawowa znajomość języka C#: Podstawowa znajomość języka C# pomoże Ci śledzić fragmenty kodu.
 4.  Przykładowy dokument Word: Masz plik a[Dokument Worda](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm)(.docm) zawierający projekt VBA gotowy do pracy. Możesz stworzyć własny lub skorzystać z już istniejącego.

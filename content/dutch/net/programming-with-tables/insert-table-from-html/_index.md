@@ -9,7 +9,7 @@ url: /nl/net/programming-with-tables/insert-table-from-html/
 ---
 ## Invoering
 
-Heeft u ooit een tabel uit HTML in een Word-document moeten invoegen? Of u nu aan een project werkt waarvoor u webinhoud naar een Word-document moet converteren of gewoon uw workflow probeert te stroomlijnen, Aspose.Words voor .NET heeft de oplossing voor u. In deze zelfstudie begeleiden we u door het hele proces van het invoegen van een tabel vanuit HTML in een Word-document met behulp van Aspose.Words voor .NET. We behandelen alles wat u nodig heeft, van de vereisten tot een gedetailleerde stapsgewijze handleiding. Klaar om erin te duiken? Laten we beginnen!
+Heeft u ooit een tabel uit HTML in een Word-document moeten invoegen? Of u nu aan een project werkt waarbij webinhoud naar een Word-document moet worden geconverteerd of u gewoon uw workflow probeert te stroomlijnen, Aspose.Words voor .NET heeft de oplossing voor u. In deze zelfstudie begeleiden we u door het hele proces van het invoegen van een tabel vanuit HTML in een Word-document met behulp van Aspose.Words voor .NET. We behandelen alles wat u nodig heeft, van de vereisten tot een gedetailleerde stapsgewijze handleiding. Klaar om erin te duiken? Laten we beginnen!
 
 ## Vereisten
 
@@ -81,7 +81,7 @@ En dat is het! U hebt met succes een tabel uit HTML in een Word-document ingevoe
 
 ## Conclusie
 
-Het invoegen van een tabel uit HTML in een Word-document kan uw workflow aanzienlijk stroomlijnen, vooral als het gaat om dynamische inhoud uit webbronnen. Aspose.Words voor .NET maakt dit proces ongelooflijk eenvoudig en efficiënt. Door de stappen in deze zelfstudie te volgen, kunt u eenvoudig HTML-tabellen naar Word-documenten converteren, zodat uw documenten altijd up-to-date en professioneel opgemaakt zijn.
+Het invoegen van een tabel uit HTML in een Word-document kan uw workflow aanzienlijk stroomlijnen, vooral als u te maken heeft met dynamische inhoud uit webbronnen. Aspose.Words voor .NET maakt dit proces ongelooflijk eenvoudig en efficiënt. Door de stappen in deze zelfstudie te volgen, kunt u eenvoudig HTML-tabellen naar Word-documenten converteren, zodat uw documenten altijd up-to-date en professioneel opgemaakt zijn.
 
 ## Veelgestelde vragen
 

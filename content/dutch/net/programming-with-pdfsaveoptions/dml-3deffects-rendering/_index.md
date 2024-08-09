@@ -43,7 +43,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Hier definiëren we het pad naar uw documentmap en laden we het Word-document met behulp van de`Document` klas. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw map.
+ Hier definiëren we het pad naar uw documentmap en laden we het Word-document met behulp van de`Document` klas. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw directory.
 
 ## Stap 2: Configureer de PDF-opslagopties
 

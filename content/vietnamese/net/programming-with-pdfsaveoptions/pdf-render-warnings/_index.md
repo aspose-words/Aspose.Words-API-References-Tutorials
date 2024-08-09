@@ -16,7 +16,7 @@ Nếu bạn đang làm việc với Aspose.Words cho .NET, việc quản lý c�
 Trước khi đi sâu vào hướng dẫn, hãy đảm bảo bạn có những điều sau:
 
 - Kiến thức cơ bản về C#: Làm quen với ngôn ngữ lập trình C#.
--  Aspose.Words for .NET: Tải xuống và cài đặt từ[Liên kết tải xuống](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Tải xuống và cài đặt từ[liên kết tải xuống](https://releases.aspose.com/words/net/).
 - Môi trường phát triển: Thiết lập như Visual Studio để viết và chạy mã của bạn.
 -  Tài liệu mẫu: Có tài liệu mẫu (ví dụ:`WMF with image.docx`) sẵn sàng để thử nghiệm.
 
@@ -126,7 +126,7 @@ Bằng cách làm theo các bước này, bạn có thể xử lý hiệu quả 
 
 ### Câu hỏi 1: Tôi có thể xử lý các loại cảnh báo khác bằng phương pháp này không?
 
- Vâng`IWarningCallback` Giao diện có thể xử lý nhiều loại cảnh báo khác nhau, không chỉ những loại cảnh báo liên quan đến hiển thị PDF.
+ Vâng, cái`IWarningCallback` Giao diện có thể xử lý nhiều loại cảnh báo khác nhau, không chỉ những loại cảnh báo liên quan đến hiển thị PDF.
 
 ### Câu hỏi 2: Tôi có thể tải xuống bản dùng thử miễn phí Aspose.Words cho .NET ở đâu?
 
@@ -138,7 +138,7 @@ MetafileRenderingOptions là các cài đặt xác định cách hiển thị c�
 
 ### Câu hỏi 4: Tôi có thể tìm hỗ trợ cho Aspose.Words ở đâu?
 
- Tham quan[Diễn đàn hỗ trợ Aspose.Words](https://forum.aspose.com/c/words/8) để được hỗ trợ.
+ Ghé thăm[Diễn đàn hỗ trợ Aspose.Words](https://forum.aspose.com/c/words/8) để được hỗ trợ.
 
 ### Câu hỏi 5: Có thể xin giấy phép tạm thời cho Aspose.Words không?
 

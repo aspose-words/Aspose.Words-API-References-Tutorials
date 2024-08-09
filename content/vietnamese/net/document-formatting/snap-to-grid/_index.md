@@ -137,4 +137,4 @@ Có, mặc dù bạn có thể sử dụng giấy phép tạm thời để đán
 Không, việc bật Snap to Grid không ảnh hưởng đáng kể đến hiệu suất tài liệu.
 
 ### Tôi có thể tìm thêm thông tin về Aspose.Words cho .NET ở đâu?
- Tham quan[tài liệu](https://reference.aspose.com/words/net/)để biết thông tin chi tiết và ví dụ.
+ Ghé thăm[tài liệu](https://reference.aspose.com/words/net/)để biết thông tin chi tiết và ví dụ.

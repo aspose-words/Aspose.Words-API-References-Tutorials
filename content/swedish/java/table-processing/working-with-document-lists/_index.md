@@ -8,7 +8,7 @@ weight: 11
 url: /sv/java/table-processing/working-with-document-lists/
 ---
 
-Är du redo att dyka in i världen av dokumentmanipulation i Java med Aspose.Words? I den här omfattande guiden kommer vi att utforska krångligheterna med att arbeta med dokumentlistor med Aspose.Words för Java. Vi kommer att förse dig med steg-för-steg-instruktioner och källkodsexempel för att hjälpa dig att utnyttja den fulla kraften i detta mångsidiga Java API. Låt oss börja!
+Är du redo att dyka in i världen av dokumentmanipulation i Java med Aspose.Words? I den här omfattande guiden kommer vi att utforska krångligheterna med att arbeta med dokumentlistor med Aspose.Words för Java. Vi kommer att förse dig med steg-för-steg-instruktioner och källkodsexempel för att hjälpa dig att utnyttja den fulla kraften i detta mångsidiga Java API. Låt oss komma igång!
 
 ## Introduktion
 
@@ -116,7 +116,7 @@ public class ExtractListItemsExample {
 ## Vanliga frågor (FAQs)
 
 ### Hur lägger jag till punktpunkter i en dokumentlista?
- För att lägga till punktpunkter till en dokumentlista, använd lämplig listmall när du skapar listan. Använd till exempel`ListTemplate.BULLET_DEFAULT` istället för`ListTemplate.NUMBER_DEFAULT`.
+ För att lägga till punktpunkter till en dokumentlista, använd lämplig listmall när du skapar listan. Använd till exempel`ListTemplate.BULLET_DEFAULT` i stället för`ListTemplate.NUMBER_DEFAULT`.
 
 ### Kan jag ändra formateringen av listobjekt?
 Ja, du kan anpassa formateringen av listobjekt, inklusive teckensnitt, storlek, färg och mer, med hjälp av Aspose.Words för Javas formateringsfunktioner.

@@ -131,7 +131,7 @@ builder.end_row()
 builder.end_table()
 ```
 
-## Kopf-und Fußzeilen
+## Kopf- und Fußzeilen
 
 Kopf- und Fußzeilen sorgen für konsistente Informationen auf allen Dokumentseiten:
 

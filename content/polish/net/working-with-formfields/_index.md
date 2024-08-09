@@ -12,7 +12,7 @@ Przetwarzanie słów z polami formularzy to wszechstronne źródło wiedzy, jak 
  ## Poradniki
 | Tytuł | Opis |
 | --- | --- |
-| [Wstaw pola formularza](./insert-form-fields/) | Dowiedz się, jak wstawiać rozwijane pola formularzy do dokumentów programu Word przy użyciu Aspose.Words dla .NET. |
-| [Pola formularza współpracują z właściwościami](./form-fields-work-with-properties/) | Dowiedz się, jak pracować z właściwościami pól formularza w dokumentach programu Word przy użyciu Aspose.Words dla .NET. |
-| [Pola formularzy Pobierz kolekcję pól formularzy](./form-fields-get-form-fields-collection/) | Dowiedz się, jak pobierać i manipulować kolekcją pól formularzy w dokumentach programu Word przy użyciu Aspose.Words dla .NET. |
-| [Pola formularza pobierane według nazwy](./form-fields-get-by-name/) | Dowiedz się, jak pobierać i modyfikować pola formularzy według nazw w dokumentach programu Word przy użyciu Aspose.Words dla .NET. |
+| [Wstaw pola formularza](./insert-form-fields/) | Dowiedz się, jak wstawić pole formularza pola kombi do dokumentu programu Word za pomocą Aspose.Words dla .NET, korzystając z naszego szczegółowego przewodnika krok po kroku. |
+| [Pola formularza współpracują z właściwościami](./form-fields-work-with-properties/) | Dowiedz się, jak manipulować polami formularzy w dokumentach programu Word za pomocą Aspose.Words dla .NET, korzystając z naszego szczegółowego przewodnika krok po kroku. |
+| [Pola formularzy Pobierz kolekcję pól formularzy](./form-fields-get-form-fields-collection/) | Dowiedz się, jak uzyskiwać i manipulować polami formularzy w dokumentach programu Word za pomocą Aspose.Words dla .NET, korzystając z naszego obszernego przewodnika krok po kroku. |
+| [Pola formularza pobierane według nazwy](./form-fields-get-by-name/) | Dowiedz się, jak pobierać i modyfikować pola formularzy według nazw w dokumentach programu Word przy użyciu Aspose.Words dla .NET, korzystając ze szczegółowego przewodnika krok po kroku. |

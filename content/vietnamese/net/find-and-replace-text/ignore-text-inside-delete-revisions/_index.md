@@ -2,7 +2,7 @@
 title: Bỏ qua văn bản bên trong Xóa bản sửa đổi
 linktitle: Bỏ qua văn bản bên trong Xóa bản sửa đổi
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách xử lý các bản sửa đổi được theo dõi trong tài liệu Word bằng Aspose.Words cho .NET. Làm chủ việc tự động hóa tài liệu với hướng dẫn toàn diện này.
+description: Tìm hiểu cách xử lý các bản sửa đổi được theo dõi trong tài liệu Word bằng Aspose.Words cho .NET. Tự động hóa tài liệu thành thạo với hướng dẫn toàn diện này.
 type: docs
 weight: 10
 url: /vi/net/find-and-replace-text/ignore-text-inside-delete-revisions/
@@ -78,7 +78,7 @@ Các bản sửa đổi được theo dõi trong tài liệu Word đề cập đ
 Bạn có thể tích hợp Aspose.Words cho .NET bằng cách tải xuống thư viện từ trang web Aspose và tham chiếu nó trong dự án Visual Studio của bạn.
 
 ### Tôi có thể hoàn nguyên các bản sửa đổi được theo dõi theo chương trình bằng Aspose.Words cho .NET không?
-Có, bạn có thể quản lý và hoàn nguyên các bản sửa đổi được theo dõi theo chương trình bằng cách sử dụng Aspose.Words cho .NET, cho phép kiểm soát chính xác quy trình chỉnh sửa tài liệu.
+Có, bạn có thể quản lý và hoàn nguyên các bản sửa đổi được theo dõi theo chương trình bằng cách sử dụng Aspose.Words for .NET, cho phép kiểm soát chính xác quy trình chỉnh sửa tài liệu.
 
 ### Aspose.Words cho .NET có phù hợp để xử lý các tài liệu lớn với các bản sửa đổi được theo dõi không?
 Aspose.Words for .NET được tối ưu hóa để xử lý các tài liệu lớn một cách hiệu quả, bao gồm cả những tài liệu có bản sửa đổi được theo dõi rộng rãi.

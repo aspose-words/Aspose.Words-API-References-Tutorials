@@ -17,11 +17,11 @@ url: /es/net/programming-with-shapes/detect-smart-art-shape/
 Antes de profundizar en los detalles, asegurémonos de tener todo configurado:
 
 1. Conocimientos básicos de C#: debe sentirse cómodo con la sintaxis y los conceptos de C#.
-2.  Aspose.Words para .NET: Descárgalo[aquí](https://releases.aspose.com/words/net/) . Si recién estás explorando, puedes comenzar con un[prueba gratis](https://releases.aspose.com/).
+2.  Aspose.Words para .NET: Descárgalo[aquí](https://releases.aspose.com/words/net/) . Si recién estás explorando, puedes comenzar con un[prueba gratuita](https://releases.aspose.com/).
 3. Visual Studio: cualquier versión reciente debería funcionar, pero se recomienda la última versión.
 4. .NET Framework: asegúrese de que esté instalado en su sistema.
 
-¿Listo para comenzar? ¡Impresionante! Saltemos de inmediato.
+¿Listo para empezar? ¡Impresionante! Saltemos de inmediato.
 
 ## Importar espacios de nombres
 
@@ -90,11 +90,11 @@ Aspose.Words para .NET es una poderosa biblioteca que permite a los desarrollado
 
 ### 2. ¿Puedo utilizar Aspose.Words para .NET de forma gratuita?
 
- Puedes probar Aspose.Words para .NET usando un[prueba gratis](https://releases.aspose.com/). Para un uso prolongado, deberá adquirir una licencia.
+ Puedes probar Aspose.Words para .NET usando un[prueba gratuita](https://releases.aspose.com/). Para un uso prolongado, deberá adquirir una licencia.
 
 ### 3. ¿Cómo detecto otros tipos de formas en un documento?
 
- Puede modificar la consulta LINQ para comprobar otras propiedades o tipos de formas. Referirse a[documentación](https://reference.aspose.com/words/net/) para más detalles.
+ Puede modificar la consulta LINQ para comprobar otras propiedades o tipos de formas. Consulte el[documentación](https://reference.aspose.com/words/net/) para más detalles.
 
 ### 4. ¿Cómo obtengo soporte para Aspose.Words para .NET?
 
@@ -102,4 +102,4 @@ Puede obtener soporte visitando el[Aspose foro de soporte](https://forum.aspose.
 
 ### 5. ¿Puedo manipular formas SmartArt mediante programación?
 
- Sí, Aspose.Words le permite manipular formas SmartArt mediante programación. Comprobar el[documentación](https://reference.aspose.com/words/net/) para obtener instrucciones detalladas.
+ Sí, Aspose.Words le permite manipular formas SmartArt mediante programación. Compruebe el[documentación](https://reference.aspose.com/words/net/) para obtener instrucciones detalladas.

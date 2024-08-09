@@ -2,14 +2,14 @@
 title: Ujawnij kontrolę progową dla binaryzacji Tiff
 linktitle: Ujawnij kontrolę progową dla binaryzacji Tiff
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak udostępnić kontrolę progową dla binaryzacji TIFF w dokumentach Word przy użyciu Aspose.Words dla .NET, korzystając z tego obszernego przewodnika krok po kroku.
+description: Dowiedz się, jak udostępnić kontrolę progową dla binaryzacji TIFF w dokumentach programu Word przy użyciu Aspose.Words dla .NET, korzystając z tego obszernego przewodnika krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/programming-with-imagesaveoptions/expose-threshold-control-for-tiff-binarization/
 ---
 ## Wstęp
 
-Czy zastanawiałeś się kiedyś, jak kontrolować próg binaryzacji TIFF w dokumentach Word? Jesteś we właściwym miejscu! Ten przewodnik przeprowadzi Cię krok po kroku przez proces korzystania z Aspose.Words dla .NET. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, ten samouczek będzie wciągający, łatwy do zrozumienia i zawierający wszystkie szczegóły potrzebne do wykonania pracy. Gotowy do nurkowania? Chodźmy!
+Czy zastanawiałeś się kiedyś, jak kontrolować próg binaryzacji TIFF w dokumentach Word? Jesteś we właściwym miejscu! Ten przewodnik przeprowadzi Cię krok po kroku przez proces korzystania z Aspose.Words dla .NET. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, ten samouczek będzie wciągający, łatwy do zrozumienia i zawierający wszystkie szczegóły potrzebne do wykonania zadania. Gotowy do nurkowania? chodźmy!
 
 ## Warunki wstępne
 
@@ -51,7 +51,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Krok 3: Skonfiguruj opcje zapisywania obrazu
 
- Teraz zaczyna się zabawa! Musimy skonfigurować opcje zapisywania obrazu, aby kontrolować binaryzację TIFF. Skorzystamy z`ImageSaveOptions` class do ustawiania różnych właściwości.
+ Teraz nadchodzi przyjemna część! Musimy skonfigurować opcje zapisywania obrazu, aby kontrolować binaryzację TIFF. Skorzystamy z`ImageSaveOptions` class do ustawiania różnych właściwości.
 
 ```csharp
 ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.Tiff)

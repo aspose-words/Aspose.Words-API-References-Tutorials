@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-vba-macros/modify-vba-macros/
 ---
-## Úvod
+## Zavedení
 
 Ahoj, kolegové kodéři a nadšenci do automatizace dokumentů! Jste připraveni posunout svou hru s dokumenty Word na další úroveň? Dnes se ponoříme do fascinujícího světa maker VBA (Visual Basic for Applications) v dokumentech aplikace Word. Konkrétně prozkoumáme, jak upravit existující makra VBA pomocí Aspose.Words for .NET. Tato výkonná knihovna usnadňuje automatizaci úloh, přizpůsobení dokumentů a dokonce vyladění těchto otravných maker. Ať už chcete aktualizovat svá makra nebo jste jen zvědaví na proces, tento tutoriál vám pomůže. Takže, pojďme začít!
 
@@ -15,7 +15,7 @@ Ahoj, kolegové kodéři a nadšenci do automatizace dokumentů! Jste připraven
 
 Než se pustíme do kódu, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET Library: Ujistěte se, že máte nejnovější verzi Aspose.Words for .NET. Můžeš[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Ujistěte se, že máte nejnovější verzi Aspose.Words for .NET. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Vývojové prostředí .NET, jako je Visual Studio, je nezbytné pro psaní a testování kódu.
 3. Základní znalost C#: Základní znalost C# vám pomůže sledovat úryvky kódu.
 4.  Ukázkový dokument Word: Mít a[Word dokument](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) s připravenými stávajícími makry VBA. Toto bude náš testovací předmět pro úpravu maker.
@@ -110,7 +110,7 @@ Tento řádek uloží dokument s upraveným makrem VBA jako "WorkingWithVba.Modi
 
 A tady to máte! Úspěšně jste upravili makra VBA v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento výukový program pokryl vše od načtení dokumentu a přístupu k projektu VBA až po změnu kódu makra a uložení upraveného dokumentu. S Aspose.Words můžete snadno automatizovat úkoly, upravovat své dokumenty a dokonce si hrát s makry VBA tak, aby vyhovovaly vašim potřebám.
 
- Pokud toužíte prozkoumat více,[API dokumentace](https://reference.aspose.com/words/net/) je fantastický zdroj. A pokud někdy narazíte na zádrhel,[Fórum podpory](https://forum.aspose.com/c/words/8) je tu vždy, aby vám pomohl.
+ Pokud toužíte prozkoumat více,[API dokumentace](https://reference.aspose.com/words/net/) je fantastický zdroj. A pokud někdy narazíte na zádrhel,[fórum podpory](https://forum.aspose.com/c/words/8) je tu vždy, aby vám pomohl.
 
 Veselé kódování a pamatujte, že nebe je limit, pokud jde o automatizaci vašich dokumentů Word!
 

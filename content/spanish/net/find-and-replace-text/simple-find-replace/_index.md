@@ -13,7 +13,7 @@ url: /es/net/find-and-replace-text/simple-find-replace/
 
 ## Requisitos previos
 
-Antes de sumergirnos en la magia del reemplazo de texto, asegurémonos de que tiene todo lo que necesita:
+Antes de sumergirnos en la magia del reemplazo de texto, asegurémonos de tener todo lo que necesita:
 
 1.  Aspose.Words para la biblioteca .NET: puede descargarlo desde[aquí](https://releases.aspose.com/words/net/) . Si aún no lo has hecho, consigue una prueba gratuita[aquí](https://releases.aspose.com/).
 
@@ -102,7 +102,7 @@ doc.Save(dataDir + "FindAndReplace.SimpleFindReplace.docx");
 ## Preguntas frecuentes
 
 ### ¿Puedo reemplazar varios textos diferentes a la vez?
- Sí tu puedes. Sólo llama al`Replace` método para cada texto que desee reemplazar.
+ Sí, puedes. Sólo llama al`Replace` método para cada texto que desee reemplazar.
 
 ### ¿Aspose.Words para .NET es gratuito?
 Aspose.Words para .NET ofrece una prueba gratuita, pero para obtener una funcionalidad completa, deberá comprar una licencia. Echa un vistazo a sus[precios](https://purchase.aspose.com/buy) para más detalles.

@@ -18,7 +18,7 @@ Czcionki odgrywają kluczową rolę w projektowaniu i czytelności dokumentów. 
 
 Zanim zagłębisz się w kod, upewnij się, że spełnione są następujące wymagania wstępne:
 
-1.  Biblioteka Aspose.Words for Java: Upewnij się, że pobrałeś i zainstalowałeś bibliotekę Aspose.Words for Java. Możesz[Pobierz to tutaj](https://releases.aspose.com/words/java/).
+1.  Biblioteka Aspose.Words for Java: Upewnij się, że pobrałeś i zainstalowałeś bibliotekę Aspose.Words for Java. Możesz[pobierz go tutaj](https://releases.aspose.com/words/java/).
 
 2. Środowisko programistyczne Java: Upewnij się, że masz skonfigurowane środowisko programistyczne Java.
 

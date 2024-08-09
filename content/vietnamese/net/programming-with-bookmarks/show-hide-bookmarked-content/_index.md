@@ -9,7 +9,7 @@ url: /vi/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 ## Giới thiệu
 
-Bạn đã sẵn sàng bước vào thế giới thao tác tài liệu với Aspose.Words cho .NET chưa? Cho dù bạn là nhà phát triển đang tìm cách tự động hóa các tác vụ tài liệu hay chỉ là người tò mò về cách xử lý tệp Word theo chương trình thì bạn đã đến đúng nơi. Hôm nay, chúng ta sẽ khám phá cách hiển thị và ẩn nội dung được đánh dấu trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn từng bước này sẽ giúp bạn trở thành chuyên gia trong việc kiểm soát khả năng hiển thị nội dung dựa trên dấu trang. Bắt đầu nào!
+Bạn đã sẵn sàng bước vào thế giới thao tác tài liệu với Aspose.Words cho .NET chưa? Cho dù bạn là nhà phát triển đang tìm cách tự động hóa các tác vụ tài liệu hay chỉ là người tò mò về cách xử lý tệp Word theo chương trình thì bạn đã đến đúng nơi. Hôm nay, chúng ta sẽ khám phá cách hiển thị và ẩn nội dung được đánh dấu trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn từng bước này sẽ giúp bạn trở thành chuyên gia trong việc kiểm soát khả năng hiển thị nội dung dựa trên dấu trang. Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
@@ -114,7 +114,7 @@ Thao tác này sẽ lưu tài liệu với những thay đổi mà chúng tôi �
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn vừa học cách hiển thị và ẩn nội dung được đánh dấu trong tài liệu Word bằng Aspose.Words for .NET. Công cụ mạnh mẽ này giúp thao tác tài liệu trở nên dễ dàng, cho dù bạn đang tự động hóa báo cáo, tạo mẫu hay chỉ mày mò các tệp Word. Chúc mừng mã hóa!
+Và bạn có nó! Bạn vừa học cách hiển thị và ẩn nội dung được đánh dấu trong tài liệu Word bằng Aspose.Words for .NET. Công cụ mạnh mẽ này giúp thao tác tài liệu trở nên dễ dàng, cho dù bạn đang tự động hóa báo cáo, tạo mẫu hay chỉ mày mò các tệp Word. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 

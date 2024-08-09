@@ -15,7 +15,7 @@ Hallo Technikbegeisterte! Haben Sie sich schon einmal am Kopf gekratzt und sich 
 
 Bevor wir uns kopfüber in die Welt der mehrzeiligen Etikettenausrichtung stürzen, sollten wir sicherstellen, dass Sie alles in Ordnung haben. Folgendes benötigen Sie:
 
-1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die neueste Version von Aspose.Words für .NET haben. Wenn nicht, können Sie[hier herunterladen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die neueste Version von Aspose.Words für .NET haben. Wenn nicht, können Sie[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. .NET-Umgebung: Stellen Sie sicher, dass Ihre Entwicklungsumgebung mit .NET eingerichtet ist.
 3. Grundkenntnisse in C#: Grundlegende Kenntnisse in C# erleichtern diesen Weg.
 
@@ -54,7 +54,7 @@ Document doc = new Document();
 
  Der`DocumentBuilder` Klasse in Aspose.Words ist ein leistungsstarkes Tool, das beim Erstellen von Dokumenten hilft. Wir werden es verwenden, um ein Diagramm in unser Dokument einzufügen.
 
- Initialisieren Sie eine Instanz des`DocumentBuilder` Klasse, und übergeben Sie unser Dokumentobjekt an seinen Konstruktor.
+ Initialisieren Sie eine Instanz des`DocumentBuilder` Klasse und übergibt unser Dokumentobjekt an seinen Konstruktor.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -64,7 +64,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 Fügen wir ein Diagramm in unser Dokument ein. Für dieses Beispiel verwenden wir ein Streudiagramm.
 
- Verwendung der`InsertChart` Methode der`DocumentBuilder` Klasse können wir ein Streudiagramm in unser Dokument einfügen.
+ Mit dem`InsertChart` Methode der`DocumentBuilder` Klasse können wir ein Streudiagramm in unser Dokument einfügen.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Scatter, 450, 250);
@@ -116,7 +116,7 @@ Und da haben Sie es! Sie haben die mehrzeilige Beschriftungsausrichtung in einem
 
 ### Kann ich Aspose.Words für .NET kostenlos verwenden?
 
- Aspose bietet eine[Kostenlose Testphase](https://releases.aspose.com/) mit dem Sie das Produkt testen können. Für den Vollzugriff müssen Sie eine Lizenz erwerben.
+ Aspose bietet eine[Kostenlose Testversion](https://releases.aspose.com/) mit dem Sie das Produkt testen können. Für den Vollzugriff müssen Sie eine Lizenz erwerben.
 
 ### Wo erhalte ich Support für Aspose.Words für .NET?
 

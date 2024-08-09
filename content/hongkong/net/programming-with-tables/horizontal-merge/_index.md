@@ -98,7 +98,7 @@ doc.Save(dataDir + "WorkingWithTables.HorizontalMerge.docx");
 
 ## 結論
 
-現在你就擁有了！您剛剛掌握了使用 Aspose.Words for .NET 在 Word 文件中水平合併儲存格的技巧。透過執行以下步驟，您可以輕鬆建立複雜的表格結構。不斷試驗和探索 Aspose.Words 的功能，使您的文件根據您的需求變得動態和靈活。快樂編碼！
+現在你就得到它了！您剛剛掌握了使用 Aspose.Words for .NET 在 Word 文件中水平合併儲存格的技巧。透過執行以下步驟，您可以輕鬆建立複雜的表格結構。不斷試驗和探索 Aspose.Words 的功能，使您的文件根據您的需求變得動態和靈活。快樂編碼！
 
 ## 常見問題解答
 

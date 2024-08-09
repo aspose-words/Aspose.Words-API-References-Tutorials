@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-document-options-and-settings/add-japanese-as-editing-languages/
 ---
-## Úvod
+## Zavedení
 
 Zkoušeli jste někdy otevřít dokument a zjistili jste, že jste ztraceni v moři nečitelného textu, protože nastavení jazyka bylo špatně? Je to jako snažit se číst mapu v cizím jazyce! Pokud pracujete s dokumenty v různých jazycích, zejména v japonštině, pak je Aspose.Words for .NET vaším oblíbeným nástrojem. Tento článek vás krok za krokem provede přidáním japonštiny jako jazyka pro úpravy do vašich dokumentů pomocí Aspose.Words for .NET. Pojďme se ponořit a ujistěte se, že se už nikdy neztratíte v překladu!
 
@@ -16,7 +16,7 @@ Zkoušeli jste někdy otevřít dokument a zjistili jste, že jste ztraceni v mo
 Než začneme, je potřeba mít připraveno několik věcí:
 
 1. Visual Studio: Ujistěte se, že máte nainstalované Visual Studio. Je to integrované vývojové prostředí (IDE), které budeme používat.
-2.  Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Pokud ji ještě nemáte, můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/).
+2.  Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Pokud ji ještě nemáte, můžete si ji stáhnout[zde](https://releases.aspose.com/words/net/).
 3.  Vzorový dokument: Připravte si vzorový dokument, který chcete upravit. Mělo by to být v`.docx` formát.
 4. Základní znalosti C#: Základní znalost programování v C# vám pomůže postupovat podle příkladů.
 
@@ -96,13 +96,13 @@ tady to máte! Úspěšně jste přidali japonštinu jako jazyk pro úpravy do d
  Ano, můžete přidat více jazyků pomocí`AddEditingLanguage` metoda pro každý jazyk.
 
 ### Potřebuji licenci k používání Aspose.Words pro .NET?
- Ano, pro komerční použití potřebujete licenci. Můžete si jeden koupit[tady](https://purchase.aspose.com/buy) nebo získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
+ Ano, pro komerční použití potřebujete licenci. Můžete si jeden koupit[zde](https://purchase.aspose.com/buy) nebo získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
 
 ### Jaké další funkce nabízí Aspose.Words for .NET?
- Aspose.Words for .NET nabízí širokou škálu funkcí včetně generování dokumentů, převodu, manipulace a dalších. Podívejte se na[dokumentace](https://reference.aspose.com/words/net/) Více podrobností.
+ Aspose.Words for .NET nabízí širokou škálu funkcí včetně generování dokumentů, převodu, manipulace a dalších. Podívejte se na[dokumentace](https://reference.aspose.com/words/net/) pro více podrobností.
 
 ### Mohu Aspose.Words for .NET vyzkoušet před jeho zakoupením?
- Absolutně! Můžete si stáhnout bezplatnou zkušební verzi[tady](https://releases.aspose.com/).
+ Absolutně! Můžete si stáhnout bezplatnou zkušební verzi[zde](https://releases.aspose.com/).
 
 ### Kde mohu získat podporu pro Aspose.Words pro .NET?
- Můžete získat podporu od komunity Aspose[tady](https://forum.aspose.com/c/words/8).
+ Můžete získat podporu od komunity Aspose[zde](https://forum.aspose.com/c/words/8).

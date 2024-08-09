@@ -15,7 +15,7 @@ Dus je hebt besloten om in Aspose.Words voor .NET te duiken om programmatisch ge
 
 Voordat we in de code duiken, zijn er een paar dingen die je nodig hebt:
 
-1.  Aspose.Words voor .NET: Zorg ervoor dat Aspose.Words voor .NET is geïnstalleerd. Als u dat niet doet, kunt u het downloaden[hier](https://releases.aspose.com/words/net/).
+1. Aspose.Words voor .NET: Zorg ervoor dat Aspose.Words voor .NET is geïnstalleerd. Als u dat niet doet, kunt u het downloaden[hier](https://releases.aspose.com/words/net/).
 2. Ontwikkelomgeving: Visual Studio of een andere .NET-compatibele IDE.
 3. Basiskennis van C#: U moet vertrouwd zijn met de basisprincipes van C#, zodat u deze gemakkelijk kunt volgen.
 
@@ -82,7 +82,7 @@ Programmatisch een geordende lijst in een Word-document maken kan in eerste inst
 ## Veelgestelde vragen
 
 ### Kan ik de nummeringsstijl van de lijst aanpassen?  
- Ja, u kunt de nummeringsstijl aanpassen met behulp van de`ListFormat` eigenschappen. U kunt verschillende nummeringsstijlen instellen, zoals Romeinse cijfers, letters, enz.
+ Ja, u kunt de nummeringsstijl aanpassen met behulp van de`ListFormat`eigenschappen. U kunt verschillende nummeringsstijlen instellen, zoals Romeinse cijfers, letters, enz.
 
 ### Hoe voeg ik meer inspringingsniveaus toe?  
  U kunt gebruik maken van de`ListIndent` methode meerdere keren uit om diepere niveaus van sublijsten te creëren. Elke oproep naar`ListIndent` voegt één niveau van inspringing toe.

@@ -73,7 +73,7 @@ Console.WriteLine("Cell shading before style expansion: " + cellShadingBefore);
 
 ## Steg 5: Expandera tabellstilar
 
- Det är här magin händer. Vi ringer`ExpandTableStylesToDirectFormatting` metod för att tillämpa tabellstilarna direkt på cellerna.
+ Här händer magin. Vi ringer`ExpandTableStylesToDirectFormatting` metod för att tillämpa tabellstilarna direkt på cellerna.
 
 ```csharp
 // Utöka tabellstilarna till direktformatering.
@@ -109,4 +109,4 @@ Absolut! Du kan gå igenom alla tabeller i ditt dokument och tillämpa samma ste
 När formatmallar har expanderats appliceras de direkt på cellerna. För att återgå måste du ladda om dokumentet eller återanvända stilarna manuellt.
 
 ### Fungerar den här metoden med alla versioner av Aspose.Words för .NET?
- Ja den`ExpandTableStylesToDirectFormatting` metod är tillgänglig i de senaste versionerna av Aspose.Words för .NET. Kontrollera alltid[dokumentation](https://reference.aspose.com/words/net/) för de senaste uppdateringarna.
+ Ja, den`ExpandTableStylesToDirectFormatting` metod är tillgänglig i de senaste versionerna av Aspose.Words för .NET. Kontrollera alltid[dokumentation](https://reference.aspose.com/words/net/) för de senaste uppdateringarna.

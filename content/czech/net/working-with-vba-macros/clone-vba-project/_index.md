@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/working-with-vba-macros/clone-vba-project/
 ---
 
-## Úvod
+## Zavedení
 
 Dobrý den, kolegové vývojáři! Už jste se někdy zapletli do složitosti programové manipulace s dokumenty Wordu? No, máte se na co těšit! V této příručce vás provedeme procesem použití Aspose.Words for .NET ke klonování projektu VBA z jednoho dokumentu aplikace Word do druhého. Ať už chcete automatizovat vytváření dokumentů nebo spravovat složité skripty VBA, tento výukový program vám pomůže. Pojďme se tedy ponořit a usnadnit manipulaci s dokumenty jako v neděli ráno!
 
@@ -94,7 +94,7 @@ Tento řádek uloží nový dokument s klonovaným projektem VBA jako „Working
 
 A tady to máte! Právě jste zvládli umění klonování projektu VBA do dokumentů aplikace Word pomocí Aspose.Words for .NET. Díky této výkonné knihovně je práce se složitými dokumenty Wordu hračkou, od jednoduchých textových manipulací až po složité projekty VBA. Podle tohoto průvodce jste se nejen naučili, jak klonovat projekty VBA, ale také jste položili základy pro další zkoumání rozsáhlých možností Aspose.Words.
 
- Pokud se chcete ponořit hlouběji, nezapomeňte se podívat[API dokumentace](https://reference.aspose.com/words/net/) . V případě jakýchkoli dotazů nebo podpory,[Fórum podpory](https://forum.aspose.com/c/words/8) je vždy skvělým místem pro spojení s ostatními vývojáři.
+ Pokud se chcete ponořit hlouběji, nezapomeňte se podívat[API dokumentace](https://reference.aspose.com/words/net/) . V případě jakýchkoli dotazů nebo podpory,[fórum podpory](https://forum.aspose.com/c/words/8) je vždy skvělým místem pro spojení s ostatními vývojáři.
 
 Šťastné kódování a pamatujte, že každé dobrodružství s manipulací s dokumenty začíná jediným řádkem kódu!
 

@@ -13,6 +13,6 @@ Words Processing with Lists egy átfogó forrás, amely végigvezeti Önt a Word
  ## Oktatóanyagok
 | Cím | Leírás |
 | --- | --- |
-| [Lista újraindítása minden szakasznál](./restart-list-at-each-section/)  | Ismerje meg, hogyan állíthat vissza számozott listát a Word-dokumentum egyes szakaszaihoz az Aspose.Words for .NET segítségével. |
-| [Adja meg a lista szintjét](./specify-list-level/) | Ismerje meg, hogyan adhatja meg a listaszintet egy Word-dokumentumban az Aspose.Words for .NET segítségével. |
-| [Indítsa újra a lista számát](./restart-list-number/) | Ismerje meg, hogyan állíthatja vissza a listák számát egy Word-dokumentumban az Aspose.Words for .NET segítségével. |
+| [Lista újraindítása minden szakasznál](./restart-list-at-each-section/)  | Ismerje meg, hogyan indíthatja újra a listákat a Word dokumentumok egyes szakaszaiban az Aspose.Words for .NET használatával. Kövesse részletes, lépésenkénti útmutatónkat a listák hatékony kezeléséhez. |
+| [Adja meg a lista szintjét](./specify-list-level/) | Ismerje meg, hogyan hozhat létre többszintű számozott és felsorolásjeles listákat Word dokumentumokban az Aspose.Words for .NET használatával. Lépésről lépésre útmutató mellékelve. Tökéletes .NET fejlesztőknek. |
+| [Indítsa újra a lista számát](./restart-list-number/) | Ismerje meg, hogyan indíthatja újra a listaszámokat a Word dokumentumokban az Aspose.Words for .NET használatával. Ez a részletes, 2000 szavas útmutató mindent tartalmaz, amit tudnia kell, a beállítástól a speciális testreszabásig. |

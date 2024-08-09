@@ -82,7 +82,7 @@ Document doc = new Document(dataDir + "WMF with image.docx", loadOptions);
 ## 자주 묻는 질문
 
 ### 메타파일 외에 다른 파일 형식을 PNG로 변환할 수 있나요?
- Aspose.Words for .NET은 다양한 파일 형식을 광범위하게 지원합니다. 을 체크 해봐[선적 서류 비치](https://reference.aspose.com/words/net/) 상세 사항은.
+ Aspose.Words for .NET은 다양한 파일 형식을 광범위하게 지원합니다. 확인해보세요[선적 서류 비치](https://reference.aspose.com/words/net/) 자세한 내용은
 
 ### 여러 문서를 일괄 처리하는 방법이 있나요?
 예, 문서 디렉터리를 반복하여 각 파일에 동일한 로드 옵션을 적용할 수 있습니다.
@@ -94,4 +94,4 @@ Document doc = new Document(dataDir + "WMF with image.docx", loadOptions);
  예, 전체 기능을 사용하려면 라이센스가 필요합니다. 당신은 얻을 수 있습니다[임시 면허증](https://purchase.aspose.com/temporary-license/) 재판 목적으로.
 
 ### JPEG 또는 GIF와 같은 다른 그래픽 형식에 이 방법을 사용할 수 있습니까?
- 이 특정 방법은 메타파일을 위한 것이지만 .NET용 Aspose.Words는 다양한 이미지 형식을 지원합니다. 다음을 참조하세요.[선적 서류 비치](https://reference.aspose.com/words/net/) 자세한 내용은.
+ 이 특정 방법은 메타파일을 위한 것이지만 .NET용 Aspose.Words는 다양한 이미지 형식을 지원합니다. 다음을 참조하세요.[선적 서류 비치](https://reference.aspose.com/words/net/) 자세한 내용은

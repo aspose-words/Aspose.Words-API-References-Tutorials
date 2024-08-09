@@ -2,85 +2,100 @@
 title: Regelafstand lettertype verkrijgen
 linktitle: Regelafstand lettertype verkrijgen
 second_title: Aspose.Words-API voor documentverwerking
-description: In deze zelfstudie leert u hoe u de regelafstand van lettertypen in een Word-document kunt verkrijgen met Aspose.Words voor .NET.
+description: Leer hoe u de regelafstand van lettertypen kunt verkrijgen met Aspose.Words voor .NET met deze stapsgewijze zelfstudie. Ideaal voor ontwikkelaars.
 type: docs
 weight: 10
 url: /nl/net/working-with-fonts/get-font-line-spacing/
 ---
-In deze zelfstudie gaan we u vertellen hoe u de regelafstand van het lettertype in een Word-document kunt verkrijgen met behulp van de Aspose.Words-bibliotheek voor .NET. De regelafstand van het lettertype definieert de verticale ruimte tussen tekstregels. We nemen u stap voor stap mee om u te helpen de code in uw .NET-project te begrijpen en te implementeren.
+## Invoering
+
+Aspose.Words voor .NET is een krachtige bibliotheek waarmee u Word-documenten programmatisch kunt maken, manipuleren en converteren. Een veel voorkomende taak die u mogelijk moet uitvoeren, is het ophalen van de regelafstand van een specifiek lettertype in een document. In deze zelfstudie leiden we u stap voor stap door het proces, zodat u eenvoudig de regelafstand van het lettertype kunt verkrijgen met Aspose.Words voor .NET. 
 
 ## Vereisten
-Zorg ervoor dat u over de volgende items beschikt voordat u begint:
-- Een praktische kennis van de programmeertaal C#
-- De Aspose.Words-bibliotheek voor .NET die in uw project is geïnstalleerd
 
-## Stap 1: Maak een nieuw document en een documentgenerator
- Eerst zullen we een nieuw document maken door het`Document` klasse en een documentbouwer door het`DocumentBuilder` klas.
+Voordat we in de code duiken, moet je ervoor zorgen dat je aan de volgende vereisten voldoet:
+
+1.  Aspose.Words voor .NET Library: Download en installeer de nieuwste versie van[hier](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: Zorg ervoor dat u een IDE zoals Visual Studio hebt geïnstalleerd.
+3. Basiskennis van C#: Deze tutorial gaat ervan uit dat je een basiskennis hebt van programmeren in C#.
+
+## Naamruimten importeren
+
+Eerst moet u de benodigde naamruimten in uw C#-project importeren. Met deze naamruimten krijgt u toegang tot de functionaliteiten van Aspose.Words.
 
 ```csharp
-// Maak een nieuw document
-Document doc = new Document();
+using System;
+using Aspose.Words;
+using Aspose.Words.Fonts;
+```
 
-//Maak een documentgenerator
+Laten we het proces van het verkrijgen van de regelafstand tussen lettertypen opsplitsen in eenvoudige, beheersbare stappen.
+
+## Stap 1: Maak een nieuw document
+
+De eerste stap is het maken van een nieuw Word-documentexemplaar met Aspose.Words voor .NET.
+
+```csharp
+Document doc = new Document();
+```
+
+## Stap 2: Initialiseer DocumentBuilder
+
+Vervolgens moeten we de`DocumentBuilder` voorwerp. Dit object zal ons helpen bij het construeren en manipuleren van de documentinhoud.
+
+```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Stap 2: Configureer het lettertype
- Vervolgens zullen we het lettertype configureren door de`Name` eigendom van de documentgenerator.
+## Stap 3: Stel de lettertype-eigenschappen in
+
+Nu stellen we de lettertype-eigenschappen in voor de tekst die we willen invoegen. Voor dit voorbeeld gebruiken we het lettertype "Calibri".
 
 ```csharp
-// Configureer het lettertype
 builder.Font.Name = "Calibri";
 ```
 
-## Stap 3: Voeg tekst toe aan het document
-We zullen nu de documentgenerator gebruiken om opgemaakte tekst aan het document toe te voegen.
+## Stap 4: Schrijf tekst naar het document
+
+ Met behulp van de`DocumentBuilder` object, schrijf wat tekst in het document. Deze tekst gebruikt de lettertype-eigenschappen die we in de vorige stap hebben ingesteld.
 
 ```csharp
-// Voeg tekst toe aan het document
-builder. Writen("qText");
+builder.Writeln("Sample Text");
 ```
 
-## Stap 4: Verkrijg de regelafstand van het lettertype
- Nu zullen we toegang krijgen tot de`Font` object van de eerste alinea van het document en haal de waarde op van de`LineSpacing` eigendom.
+## Stap 5: Haal het lettertypeobject op
+
+Om de regelafstand te bepalen, hebben we toegang nodig tot het lettertypeobject van de tekst die we zojuist hebben toegevoegd. Dit kunt u doen door door de documentstructuur naar de eerste alinearun te navigeren.
 
 ```csharp
-// Verkrijg de regelafstand van het lettertype
 Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
-Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
-### Voorbeeldbroncode voor Get Font Line Spacing met Aspose.Words voor .NET 
+## Stap 6: Verkrijg de regelafstand
+
+Ten slotte halen we de regelafstand op uit het lettertypeobject en drukken deze af naar de console.
+
 ```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Font.Name = "Calibri";
-builder.Writeln("qText");
-Font font = builder.Document.FirstSection.Body.FirstParagraph.Runs[0].Font;
 Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 ```
 
 ## Conclusie
-In deze tutorial hebben we gezien hoe je de regelafstand van het lettertype in een Word-document kunt krijgen met Aspose.Words voor .NET. De regelafstand van het lettertype is belangrijk voor het regelen van de verticale afstand tussen tekstregels. U kunt deze functie gerust gebruiken om de weergave van uw tekst in uw documenten aan te passen.
 
-### Veelgestelde vragen
+En daar heb je het! Het ophalen van de regelafstand van het lettertype met Aspose.Words voor .NET is eenvoudig als u het in deze eenvoudige stappen opsplitst. Of u nu een nieuw document maakt of met een bestaand document werkt, Aspose.Words biedt alle hulpmiddelen die u nodig hebt om de lettertype-eigenschappen efficiënt te beheren.
 
-#### Vraag: Hoe kan ik de regelafstand van specifieke tekst in een Word-document wijzigen?
+## Veelgestelde vragen
 
-A: Met Aspose.Words kunt u eenvoudig de regelafstand van specifieke tekst in een Word-document wijzigen. Gebruik de API om de gewenste tekst te selecteren en de afstand tussen de regels aan te passen door de juiste waarde op te geven.
+### Wat is Aspose.Words voor .NET?
+Aspose.Words voor .NET is een krachtige bibliotheek waarmee ontwikkelaars Word-documenten programmatisch kunnen maken, manipuleren en converteren met behulp van C#.
 
-#### Vraag: Is het mogelijk om exacte afstanden tussen regels toe te passen in een Word-document?
+### Kan ik Aspose.Words voor .NET in andere .NET-talen gebruiken?
+Ja, u kunt Aspose.Words voor .NET gebruiken met elke .NET-taal, inclusief VB.NET en F#.
 
-A: Ja, met Aspose.Words kunt u de exacte afstand tussen regels in een Word-document toepassen. Met behulp van de API kunt u een precieze waarde voor de regelafstand opgeven.
+### Hoe kan ik Aspose.Words voor .NET downloaden?
+ U kunt de nieuwste versie van Aspose.Words voor .NET downloaden van[hier](https://releases.aspose.com/words/net/).
 
-#### Vraag: Hoe kan ik de regelafstand voor het hele Word-document aanpassen?
+### Is er een gratis proefversie beschikbaar voor Aspose.Words voor .NET?
+ Ja, u kunt een gratis proefperiode krijgen van[hier](https://releases.aspose.com/).
 
-A: Met Aspose.Words kunt u eenvoudig de regelafstand voor het hele Word-document aanpassen. Gebruik de methoden van de API om de gewenste regelafstand voor het hele document op te geven.
-
-#### Vraag: Ondersteunt Aspose.Words meerdere regelafstanden?
-
-A: Ja, Aspose.Words ondersteunt meerdere regelafstanden in Word-documenten. U kunt meerdere spaties instellen, zoals 1,5 keer of 2 keer de normale spatiëring, voor de regels van uw tekst.
-
-#### Vraag: Hoe kan ik problemen met lijnoverlap voorkomen bij het aanpassen van de regelafstand?
-
-A: Om problemen met lijnoverlap te voorkomen bij het aanpassen van de afstand tussen lijnen, moet u ervoor zorgen dat u de juiste afstandswaarden kiest. Test ook de uiteindelijke weergave van uw document om er zeker van te zijn dat de tekst leesbaar en goed opgemaakt blijft.
+### Waar kan ik de documentatie voor Aspose.Words voor .NET vinden?
+ De documentatie voor Aspose.Words voor .NET is beschikbaar[hier](https://reference.aspose.com/words/net/).

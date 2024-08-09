@@ -16,7 +16,7 @@ Dalam panduan ini, kita akan mempelajari cara menyunting informasi sensitif dari
 
 ## Menyiapkan Lingkungan Pengembangan Anda
 
-Sebelum kita mulai bekerja dengan Aspose.Words untuk Java, kita perlu menyiapkan lingkungan pengembangan kita. Ikuti langkah ini:
+Sebelum kita mulai bekerja dengan Aspose.Words untuk Java, kita perlu menyiapkan lingkungan pengembangan kita. Ikuti langkah-langkah berikut:
 
 1.  Unduh dan Instal Aspose.Words untuk Java: Kunjungi[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) untuk mengunduh Aspose.Words versi terbaru untuk Java.
 

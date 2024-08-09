@@ -9,7 +9,7 @@ url: /pt/net/working-with-fields/convert-fields-in-body/
 ---
 ## Introdução
 
-No domínio do desenvolvimento .NET, o gerenciamento dinâmico do conteúdo do documento é essencial, muitas vezes exigindo a manipulação de vários tipos de campos nos documentos. Aspose.Words for .NET se destaca como um poderoso conjunto de ferramentas para desenvolvedores, oferecendo funcionalidades robustas para lidar com campos de documentos com eficiência. Este guia abrangente se concentra em como converter campos no corpo de um documento usando Aspose.Words for .NET, fornecendo instruções passo a passo para capacitar os desenvolvedores a aprimorar a automação e o gerenciamento de documentos.
+No domínio do desenvolvimento .NET, o gerenciamento dinâmico do conteúdo do documento é essencial, muitas vezes exigindo a manipulação de vários tipos de campos nos documentos. Aspose.Words for .NET se destaca como um poderoso conjunto de ferramentas para desenvolvedores, oferecendo funcionalidades robustas para lidar com campos de documentos de forma eficiente. Este guia abrangente se concentra em como converter campos no corpo de um documento usando Aspose.Words for .NET, fornecendo instruções passo a passo para capacitar os desenvolvedores a aprimorar a automação e o gerenciamento de documentos.
 
 ## Pré-requisitos
 
@@ -71,7 +71,7 @@ Dominar a arte de manipular campos de documentos usando Aspose.Words for .NET pe
 ## Perguntas frequentes
 
 ### O que são campos de documento no Aspose.Words for .NET?
-Os campos do documento em Aspose.Words são espaços reservados que podem armazenar e exibir dados dinâmicos, como datas, números de páginas e cálculos.
+Os campos do documento em Aspose.Words são espaços reservados que podem armazenar e exibir dados dinâmicos, como datas, números de página e cálculos.
 
 ### Como posso lidar com diferentes tipos de campos no Aspose.Words for .NET?
 Aspose.Words oferece suporte a vários tipos de campos como DATE, PAGE, MERGEFIELD e muito mais, permitindo que os desenvolvedores os manipulem programaticamente.

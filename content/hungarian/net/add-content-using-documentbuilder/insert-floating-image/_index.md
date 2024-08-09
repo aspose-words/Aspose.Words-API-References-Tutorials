@@ -134,7 +134,7 @@ Lebegő kép beszúrása Word-dokumentumba az Aspose.Words for .NET használatá
 
 ### Milyen más borítástípusok érhetők el a képekhez?
 
- Az Aspose.Words különféle tördelési típusokat támogat, mint pl`Inline`, `TopBottom`, `Tight`, `Through`, és több. Kiválaszthatja azt, amelyik a legjobban illik a dokumentum elrendezéséhez.
+ Az Aspose.Words különféle tördelési típusokat támogat, mint pl`Inline`, `TopBottom`, `Tight`, `Through`, és még sok más. Kiválaszthatja azt, amelyik a legjobban illik a dokumentum elrendezéséhez.
 
 ### Használhatok különböző képformátumokat?
 

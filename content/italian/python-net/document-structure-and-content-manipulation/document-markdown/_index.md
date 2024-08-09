@@ -16,7 +16,7 @@ Aspose.Words for Python è una libreria versatile che consente agli sviluppatori
 
 ## Configurazione dell'ambiente
 
-Prima di immergerci nel codice, assicuriamoci che il nostro ambiente sia configurato correttamente. Segui questi passi:
+Prima di immergerci nel codice, assicuriamoci che il nostro ambiente sia configurato correttamente. Segui questi passaggi:
 
 1. Installa Python sul tuo sistema.
 2. Installa la libreria Aspose.Words per Python utilizzando pip:

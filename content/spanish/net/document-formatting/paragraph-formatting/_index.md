@@ -9,7 +9,7 @@ url: /es/net/document-formatting/paragraph-formatting/
 ---
 ## Introducción
 
-¿Alguna vez te has encontrado atrapado en una batalla interminable con el formato de documentos de Word? No estás solo. Todos hemos pasado por eso, jugueteando con la configuración de los párrafos, sólo para terminar con un documento que parece más un rompecabezas que un informe profesional. ¿Pero adivina que? Existe una solución mágica para todos sus problemas de formato: Aspose.Words para .NET. Imagínese tener una herramienta que pueda formatear sus párrafos exactamente como usted desea, sin los dolores de cabeza habituales. Suena de ensueño, ¿verdad? Bueno, abróchese el cinturón porque estamos a punto de sumergirnos en el mundo del formato de párrafos con Aspose.Words para .NET, haciendo que sus documentos luzcan pulidos y profesionales con solo unas pocas líneas de código.
+¿Alguna vez te has encontrado atrapado en una batalla interminable con el formato de documentos de Word? No estás solo. Todos hemos pasado por eso, jugueteando con la configuración de los párrafos, sólo para terminar con un documento que parece más un rompecabezas que un informe profesional. ¿Pero adivina qué? Existe una solución mágica para todos sus problemas de formato: Aspose.Words para .NET. Imagínese tener una herramienta que pueda formatear sus párrafos exactamente como usted desea, sin los dolores de cabeza habituales. Suena de ensueño, ¿verdad? Bueno, abróchese el cinturón porque estamos a punto de sumergirnos en el mundo del formato de párrafos con Aspose.Words para .NET, haciendo que sus documentos luzcan pulidos y profesionales con solo unas pocas líneas de código.
 
 ## Requisitos previos
 
@@ -20,7 +20,7 @@ Antes de embarcarnos en esta aventura de formateo, preparemos nuestro conjunto d
 3. .NET Framework: asegúrese de que esté instalado.
 4. Conocimientos básicos de C#: no te preocupes, no necesitas ser un mago, bastará con algunos conocimientos básicos.
 
-¿Tengo todo? ¡Excelente! Vamonos.
+¿Tienes todo? ¡Excelente! Sigamos adelante.
 
 ## Importar espacios de nombres
 
@@ -86,7 +86,7 @@ Por último, pero no menos importante, guardemos nuestro documento bellamente fo
 doc.Save(dataDir + "DocumentFormatting.ParagraphFormatting.docx");
 ```
 
-¡Y voilá! Su documento se guarda con el formato especificado. Fácil, ¿verdad?
+¡Y listo! Su documento se guarda con el formato especificado. Fácil, ¿verdad?
 
 ## Conclusión
 

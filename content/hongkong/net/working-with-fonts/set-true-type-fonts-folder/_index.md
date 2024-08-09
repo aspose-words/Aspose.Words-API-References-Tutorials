@@ -2,82 +2,96 @@
 title: 設定 True Type 字型資料夾
 linktitle: 設定 True Type 字型資料夾
 second_title: Aspose.Words 文件處理 API
-description: 使用 Aspose.Words for .NET 渲染文件時設定 true type 字型資料夾的逐步指南。
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文件中設定 True Type Fonts 資料夾。請遵循我們詳細的分步指南，以確保一致的字體管理。
 type: docs
 weight: 10
 url: /zh-hant/net/working-with-fonts/set-true-type-fonts-folder/
 ---
+## 介紹
 
-在本教學中，我們將引導您完成使用 Aspose.Words for .NET 渲染文件時設定 true type 字型資料夾的逐步過程。我們將解釋捆綁的 C# 原始程式碼，並為您提供全面的指南，幫助您理解並在自己的專案中實現此功能。在本教學結束時，您將了解如何指定包含 True Type 字體的自訂資料夾，以便在使用 Aspose.Words for .NET 渲染文件時使用。
+我們正在使用 Aspose.Words for .NET 深入探索 Word 文件中字體管理的迷人世界。如果您曾經在嵌入正確的字體或確保文件在每台裝置上看起來都很完美方面遇到困難，那麼您來對地方了。我們將逐步介紹設定 True Type Fonts 資料夾的過程，以簡化文件的字型管理，確保文件的一致性和清晰度。
 
-## 步驟1：定義文檔目錄
-首先，您需要設定文檔目錄的路徑。這是您要儲存編輯後的渲染文件的位置。將“您的文件目錄”替換為適當的路徑。
+## 先決條件
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+在我們深入討論細節之前，讓我們先介紹一些先決條件，以確保您為成功做好準備：
 
-## 第 2 步：載入要渲染的文檔
-接下來，您需要使用以下命令載入要渲染的文檔`Document`班級。請務必指定正確的文件路徑。
+1.  Aspose.Words for .NET：確保您安裝了最新版本。您可以從以下位置下載：[這裡](https://releases.aspose.com/words/net/).
+2. 開發環境：工作的 .NET 開發環境，例如 Visual Studio。
+3. C# 基礎知識：熟悉 C# 程式設計將會有所幫助。
+4. 範例文件：準備好您想要使用的 Word 文件。
 
-```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
-```
+## 導入命名空間
 
-## 步驟 3：設定 True Type 字型資料夾
-現在，您可以透過建立一個實例來指定渲染時要使用的 true type 字體的資料夾`FontSettings`類別並使用`SetFontsFolder()`設定字體資料夾的方法。您可以指定包含 True Type 字型的自訂資料夾。第二個參數為`SetFontsFolder()`指示是否也要搜尋指定資料夾的子資料夾。
+首先，我們需要導入必要的名稱空間。他們就像後台工作人員一樣，確保一切順利進行。
 
 ```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
-doc.FontSettings = fontSettings;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## 步驟 4：儲存渲染的文檔
-最後，您可以使用以下命令將渲染的文檔儲存到檔案中`Save()`的方法`Document`班級。請務必指定正確的路徑和檔案名稱。
+## 第 1 步：載入您的文檔
 
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
-```
-
-### 使用 Aspose.Words for .NET 設定 True Type 字型資料夾的範例原始碼 
+讓我們從載入文檔開始。我們將使用`Document`Aspose.Words 中的類別載入現有的 Word 文件。
 
 ```csharp
 //文檔目錄的路徑
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## 第 2 步：初始化字體設置
+
+接下來，我們將建立一個實例`FontSettings`班級。這個類別允許我們自訂文件中字體的處理方式。
+
+```csharp
 FontSettings fontSettings = new FontSettings();
-//請注意，此設定將覆蓋預設搜尋的任何預設字體來源。現在只會搜尋這些資料夾
-//渲染或嵌入字體時的字體。若要在保留系統字體來源的同時新增額外的字體來源，請同時使用 FontSettings.GetFontSources 和
-//相反，FontSettings.SetFontSources
+```
+
+## 第三步：設定字體資料夾
+
+現在到了令人興奮的部分。我們將指定 True Type 字型所在的資料夾。此步驟可確保 Aspose.Words 在渲染或嵌入字體時使用此資料夾中的字體。
+
+```csharp
+//請注意，此設定將覆蓋預設搜尋的任何預設字體來源。
+//現在，在渲染或嵌入字體時，只會在這些資料夾中搜尋字體。
 fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
+```
+
+## 步驟 4：將字型設定套用到文檔
+
+配置好字體設定後，我們現在將這些設定套用到我們的文件中。此步驟對於確保我們的文件使用指定的字體至關重要。
+
+```csharp
 //設定字體設定
 doc.FontSettings = fontSettings;
-doc.Save(dataDir + "WorkingWithFonts.SetTrue TypeFontsFolder.pdf");
+```
+
+## 第 5 步：儲存文檔
+
+最後，我們將儲存文件。您可以將其儲存為各種格式，但在本教學中，我們將其儲存為 PDF。
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.SetTrueTypeFontsFolder.pdf");
 ```
 
 ## 結論
-在本教學中，我們學習如何在使用 Aspose.Words for .NET 渲染文件時設定 true type 字型資料夾。透過遵循此逐步指南，您可以輕鬆指定包含在渲染文件時使用的 True Type 字體的自訂資料夾。 Aspose.Words 提供了強大且靈活的 API，用於文件中字體的文字處理。有了這些知識，您就可以控制和自訂根據您的特定需求渲染文件時使用的字體。
 
-### 常見問題解答
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功為 Word 文件設定了 True Type Fonts 資料夾。這可確保您的文件在所有平台上看起來一致且專業。字體管理是文件建立的重要方面，而使用 Aspose.Words，它變得非常簡單。
 
-#### Q：如何在 Aspose.Words 中配置 TrueType 字體資料夾？
+## 常見問題解答
 
-答：要在 Aspose.Words 中設定 TrueType 字體資料夾，您可以使用`SetTrueTypeFontsFolder`的方法`Fonts`指定包含 TrueType 字型的資料夾位置的類別。
+### 我可以使用多個字體資料夾嗎？
+是的，您可以透過組合使用多個字體資料夾`FontSettings.GetFontSources`和`FontSettings.SetFontSources`.
 
-#### Q：什麼類型的字體被視為 TrueType 字體？
+### 如果指定的字型資料夾不存在怎麼辦？
+如果指定的字體資料夾不存在，Aspose.Words 將無法找到字體，而是使用預設的系統字體。
 
-答：TrueType 字型是一種流行的字型格式。它們通常在 Word 文件中使用，並具有 .ttf 或 .ttc 檔案副檔名。
+### 我可以恢復預設字體設定嗎？
+是的，您可以透過重置字體設定來恢復預設字體設置`FontSettings`實例。
 
-#### Q：我可以在 Aspose.Words 中指定多個 TrueType 字體資料夾嗎？
+### 是否可以在文件中嵌入字體？
+是的，Aspose.Words 允許您在文件中嵌入字體，以確保不同裝置之間的一致性。
 
-答：是的，您可以使用 Aspose.Words 中指定多個 TrueType 字體資料夾`SetTrueTypeFontsFolder`的方法`Fonts`帶有資料夾位置清單的類別。
-
-#### Q：如何檢查 Aspose.Words 中配置的 TrueType 字體資料夾？
-
-答：要檢查 Aspose.Words 中配置的 TrueType Fonts 資料夾，您可以使用`GetTrueTypeFontsFolder`的方法`Fonts`類別來取得配置的 TrueType Fonts 資料夾的位置。
-
-#### Q：為什麼在 Aspose.Words 中配置 TrueType 字體資料夾很重要？
-
-答：在Aspose.Words中設定TrueType字體資料夾很重要，因為它可以幫助Aspose.Words找到處理Word文件時所需的字體。這確保了文件格式和外觀的一致性，即使在不同的系統中也是如此。
+### 我可以將文件儲存為哪些格式？
+Aspose.Words 支援多種格式，包括 PDF、DOCX、HTML 等。

@@ -8,7 +8,7 @@ weight: 730
 url: /hu/net/working-with-headers-and-footers/
 ---
 
-fejlécekkel és láblécekkel ellátott szövegfeldolgozás átfogó forrás a Word-dokumentumok fejléceinek és lábléceinek kezeléséhez és testreszabásához az Aspose.Words könyvtár .NET-hez segítségével. Az oktatóanyagok részletes magyarázatokat, kódpéldákat és lépésről lépésre szóló utasításokat adnak fejlécek és láblécek hozzáadásához, módosításához és eltávolításához, különböző fejlécek és láblécek beállításához a dokumentum különböző szakaszaihoz, képek, táblázatok, dinamikus mezők beszúrásához és még sok máshoz. Ez az erőforrás elengedhetetlen azoknak a fejlesztőknek, akik professzionális, egyedi Word-dokumentumokat szeretnének létrehozni speciális igényeiknek megfelelő fejlécekkel és láblécekkel.
+A fejlécekkel és láblécekkel ellátott szövegfeldolgozás átfogó forrás a Word-dokumentumok fejléceinek és lábléceinek kezeléséhez és testreszabásához az Aspose.Words könyvtár .NET-hez segítségével. Az oktatóanyagok részletes magyarázatokat, kódpéldákat és lépésről lépésre szóló utasításokat adnak fejlécek és láblécek hozzáadásához, módosításához és eltávolításához, különböző fejlécek és láblécek beállításához a dokumentum különböző szakaszaihoz, képek, táblázatok, dinamikus mezők beszúrásához és még sok máshoz. Ez az erőforrás elengedhetetlen azoknak a fejlesztőknek, akik professzionális, egyedi Word-dokumentumokat szeretnének létrehozni speciális igényeiknek megfelelő fejlécekkel és láblécekkel.
 
 
  ## Oktatóanyagok

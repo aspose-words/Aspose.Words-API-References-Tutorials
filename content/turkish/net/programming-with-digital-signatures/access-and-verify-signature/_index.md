@@ -9,7 +9,7 @@ url: /tr/net/programming-with-digital-signatures/access-and-verify-signature/
 ---
 ## giriiş
 
-Merhaba teknoloji tutkunları! Hiç kendinizi bir Word belgesindeki dijital imzalara erişmeniz ve bunları doğrulamanız gerektiği ancak nereden başlayacağınız konusunda hiçbir fikrinizin olmadığı bir durumda buldunuz mu? Şanslısın! Bugün, Word belgelerinin kullanımını çocuk oyuncağı haline getiren güçlü bir kütüphane olan Aspose.Words for .NET'in harika dünyasına dalıyoruz. Süreç boyunca size adım adım yol göstereceğiz, böylece bu kılavuzun sonunda Word belgelerindeki dijital imzaları doğrulama konusunda uzman olacaksınız. Başlayalım!
+Merhaba teknoloji tutkunları! Hiç kendinizi bir Word belgesindeki dijital imzalara erişmeniz ve bunları doğrulamanız gerektiği ancak nereden başlayacağınız konusunda hiçbir fikrinizin olmadığı bir durumda buldunuz mu? Şanslısın! Bugün, Word belgelerinin kullanımını çocuk oyuncağı haline getiren güçlü bir kütüphane olan Aspose.Words for .NET'in harika dünyasına dalıyoruz. Süreç boyunca size adım adım yol göstereceğiz, böylece bu kılavuzun sonunda Word belgelerindeki dijital imzaları doğrulama konusunda uzman olacaksınız. Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -126,7 +126,7 @@ Bu, oluşabilecek tüm istisnaları yakalayacak ve bir hata mesajı yazdıracakt
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesindeki dijital imzalara başarıyla erişip bunları doğruladınız. Göründüğü kadar korkutucu değil, değil mi? Bu adımlarla, Word belgelerinizdeki dijital imzaları güvenle işleyebilir, orijinalliklerini ve bütünlüklerini sağlayabilirsiniz. Mutlu kodlama!
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesindeki dijital imzalara başarıyla erişip bunları doğruladınız. Göründüğü kadar korkutucu değil, değil mi? Bu adımlarla, Word belgelerinizdeki dijital imzaları güvenle işleyebilir, orijinalliklerini ve bütünlüklerini sağlayabilirsiniz. Mutlu kodlama!
 
 ## SSS'ler
 

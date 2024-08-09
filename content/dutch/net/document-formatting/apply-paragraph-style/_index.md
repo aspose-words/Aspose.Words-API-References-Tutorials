@@ -9,7 +9,7 @@ url: /nl/net/document-formatting/apply-paragraph-style/
 ---
 ## Invoering
 
-Hallo daar! Heeft u zich ooit afgevraagd hoe u uw Word-documenten kunt opfleuren met enkele hippe alineastijlen met behulp van Aspose.Words voor .NET? Of u nu een rapport voorbereidt, een voorstel maakt of gewoon wilt dat uw documenten er fantastisch uitzien, het toepassen van alineastijlen kan een wereld van verschil maken. In deze zelfstudie gaan we diep in op de kern van het toepassen van alineastijlen in een Word-document met Aspose.Words voor .NET. Dus doe je gordel om, pak een kop koffie en laten we gaan stylen!
+Hé daar! Heeft u zich ooit afgevraagd hoe u uw Word-documenten kunt opfleuren met enkele hippe alineastijlen met behulp van Aspose.Words voor .NET? Of u nu een rapport voorbereidt, een voorstel maakt of gewoon wilt dat uw documenten er fantastisch uitzien, het toepassen van alineastijlen kan een wereld van verschil maken. In deze zelfstudie gaan we diep in op de kern van het toepassen van alineastijlen in een Word-document met Aspose.Words voor .NET. Dus doe je gordel om, pak een kop koffie en laten we gaan stylen!
 
 ## Vereisten
 

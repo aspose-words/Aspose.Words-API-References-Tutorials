@@ -7,7 +7,7 @@ type: docs
 weight: 1400
 url: /tr/net/programming-with-sdt/
 ---
-Aspose.Words for .NET eğitimleri, kütüphanenin özelliklerini derinlemesine keşfetmenize ve Yapılandırılmış İçerik Kontrollerini (SDT'ler) kullanarak Word'de yapılandırılmış içerikle nasıl programlanacağını öğrenmenize olanak tanır. Bu adım adım eğitimler, Word belgelerinizdeki SDT denetimlerinden veri oluşturmak, değiştirmek ve çıkarmak için gerekli adımlarda size yol gösterir.
+Aspose.Words for .NET eğitimleri, kitaplığın özelliklerini derinlemesine keşfetmenize ve Yapılandırılmış İçerik Kontrollerini (SDT'ler) kullanarak Word'de yapılandırılmış içerikle nasıl programlanacağını öğrenmenize olanak tanır. Bu adım adım eğitimler, Word belgelerinizdeki SDT denetimlerinden veri oluşturmak, değiştirmek ve çıkarmak için gerekli adımlarda size yol gösterir.
 
 Bu eğitimlerde SDT kontrollerini nasıl ekleyip kaldıracağınızı, bunları belirli özelliklerle nasıl özelleştireceğinizi ve verilerine nasıl erişip değiştireceğinizi öğreneceksiniz. Verileri değiştirirken veya doğrularken özel eylemleri gerçekleştirmek için SDT kontrolleriyle ilgili olayları nasıl kullanacağınızı da öğreneceksiniz.
 

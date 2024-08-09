@@ -97,7 +97,7 @@ class MultipagePrintDocument implements Printable
         Dimension thumbCount = getThumbCount(mPagesPerSheet, pf);
         // Calcule el índice de la página que se representará a continuación.
         int pagesOnCurrentSheet = (int) (page * (thumbCount.getWidth() * thumbCount.getHeight()));
-        // Si el índice de la página es mayor que el rango total de páginas, entonces no hay nada.
+        // Si el índice de la página es mayor que el rango total de páginas, entonces no hay nada
         // más para renderizar.
         if (pagesOnCurrentSheet > (toPage - fromPage))
             return Printable.NO_SUCH_PAGE;

@@ -70,7 +70,7 @@ Dans cette dernière étape, nous enregistrons le document au format PDF dans le
 
 ## Conclusion
 
-Et voila! Vous avez réussi à réduire la taille de votre PDF en sous-échantillonnant les images à l'aide d'Aspose.Words pour .NET. Cela rend non seulement vos PDF plus faciles à gérer, mais permet également des téléchargements plus rapides et des expériences de visualisation plus fluides.
+Et voilà ! Vous avez réussi à réduire la taille de votre PDF en sous-échantillonnant les images à l'aide d'Aspose.Words pour .NET. Cela rend non seulement vos PDF plus faciles à gérer, mais permet également des téléchargements plus rapides et des expériences de visualisation plus fluides.
 
 ## FAQ
 

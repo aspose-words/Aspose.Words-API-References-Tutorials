@@ -55,7 +55,7 @@ MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 };
 ```
 
- De`MetafileRenderingOptions` klass ger alternativ för hur metafiler (som WMF) renderas. Genom att sätta`ScaleWmfFontsToMetafileSize` till`false`, instruerar du Aspose.Words att inte skala teckensnitt enligt metafilstorleken, vilket kan hjälpa till att minska den totala PDF-storleken.
+ De`MetafileRenderingOptions` klass ger alternativ för hur metafiler (som WMF) renderas. Genom att ställa in`ScaleWmfFontsToMetafileSize` till`false`, instruerar du Aspose.Words att inte skala teckensnitt enligt metafilstorleken, vilket kan hjälpa till att minska den totala PDF-storleken.
 
 ## Steg 3: Ställ in PDF-sparalternativ
 

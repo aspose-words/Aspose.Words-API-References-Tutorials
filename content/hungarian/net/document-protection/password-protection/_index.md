@@ -9,13 +9,13 @@ url: /hu/net/document-protection/password-protection/
 ---
 ## Bevezetés
 
-Halihó! Gondolkozott már azon, hogyan védheti meg Word-dokumentumait a nem kívánt szerkesztésektől és a leskelődő szemektől? Nos, szerencséje van, mert ma az Aspose.Words for .NET segítségével a jelszavas védelem világába merülünk. Ez olyan, mintha lakatot tennél a naplódra – csak menőbb és technikásabb. Induljunk el együtt erre az útra, és tanuljuk meg, hogyan őrizhetjük biztonságban és épségben dokumentumainkat!
+Szia! Gondolkozott már azon, hogyan védheti meg Word-dokumentumait a nem kívánt szerkesztésektől és a leskelődő szemektől? Nos, szerencséje van, mert ma az Aspose.Words for .NET segítségével a jelszavas védelem világába merülünk. Ez olyan, mintha lakatot tennél a naplódra – csak menőbb és technikásabb. Induljunk el együtt erre az útra, és tanuljuk meg, hogyan őrizhetjük biztonságban és épségben dokumentumainkat!
 
 ## Előfeltételek
 
 Mielőtt belevetnénk magunkat a Word-dokumentumok jelszóval való védelmének ügyébe, néhány dologra szüksége lesz:
 
-1.  Aspose.Words for .NET: Győződjön meg arról, hogy rendelkezik az Aspose.Words for .NET könyvtárral. tudsz[töltse le itt](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Győződjön meg arról, hogy rendelkezik az Aspose.Words for .NET könyvtárral. Tudod[töltse le itt](https://releases.aspose.com/words/net/).
 2. Fejlesztői környezet: Visual Studio vagy bármely más C# fejlesztői környezet.
 3. Alapvető C# ismeretek: A C# programozás alapvető ismerete.
 4.  Aspose Licenc: Szerezzen licencet a következőtől[itt](https://purchase.aspose.com/buy)vagy használja a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/) értékeléshez.
@@ -32,7 +32,7 @@ using System;
 
 ## 1. lépés: A projekt beállítása
 
-Mielőtt jelszavas védelmet adhatna dokumentumához, be kell állítania a projektet. Kezdjük el.
+Mielőtt jelszavas védelmet adhatna dokumentumához, be kell állítania a projektet. Kezdjük.
 
 ### Hozzon létre egy új projektet
 

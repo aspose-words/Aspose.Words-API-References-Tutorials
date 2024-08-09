@@ -18,7 +18,7 @@ Tyto výukové programy se ponoří do technik implementace ochrany dokumentů p
 
 Podrobné výukové programy pokrývají šifrování a digitální podpisy, což vývojářům umožňuje zabezpečit dokumenty proti narušení dat a manipulaci. Aspose.Words for Java umožňuje šifrování dokumentů pomocí silných šifrovacích algoritmů a jejich digitální podepisování za účelem ověření. Tato bezpečnostní opatření zajišťují integritu a pravost dokumentů, díky čemuž jsou vhodné pro legální a citlivé transakce.
 
-Zvládnutím zabezpečení dokumentů pomocí Aspose.Words for Java mohou vývojáři posílit své pracovní postupy zpracování textu a dokumentů. Výukové programy nabízejí podrobné pokyny a praktické příklady, které vývojáře vedou při implementaci robustní ochrany dokumentů. Projděte si tyto výukové programy, abyste zabezpečili citlivé informace a podpořili důvěru ve své procesy správy dokumentů.
+Zvládnutím zabezpečení dokumentů pomocí Aspose.Words for Java mohou vývojáři posílit své pracovní postupy zpracování textu a dokumentů. Výukové programy nabízejí podrobné pokyny a praktické příklady, které vývojářům pomohou při implementaci robustní ochrany dokumentů. Projděte si tyto výukové programy, abyste zabezpečili citlivé informace a podpořili důvěru ve své procesy správy dokumentů.
 
 ## Kurzy zabezpečení dokumentů
 ### [Jak udržet své dokumenty v bezpečí](./keep-documents-safe-secure/)

@@ -2,104 +2,108 @@
 title: 개정 그룹 세부 정보 가져오기
 linktitle: 개정 그룹 세부 정보 가져오기
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 Word 문서에서 개정 그룹 세부 정보를 가져옵니다.
+description: 이 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서의 개정 그룹 세부 정보를 쉽게 얻을 수 있습니다. .NET 개발자에게 적합합니다.
 type: docs
 weight: 10
 url: /ko/net/working-with-revisions/get-revision-group-details/
 ---
+## 소개
 
-이 단계별 가이드에서는 Aspose.Words for .NET을 사용하여 Word 문서의 개정 그룹 세부 정보를 얻는 방법을 보여 드리겠습니다. 전체 소스 코드를 제공하고 마크다운 출력 형식을 지정하는 방법을 보여 드리겠습니다.
+Word 문서 수정 사항의 핵심적인 세부 사항을 조사해야 했던 적이 있습니까? 프로젝트를 공동으로 진행하고 있으며 변경 사항을 꼼꼼하게 추적해야 할 수도 있습니다. .NET용 Aspose.Words를 사용하여 개정 그룹 세부 정보를 얻는 방법에 대한 멋진 튜토리얼을 살펴보실 예정이므로 준비하세요. 이 가이드를 마치면 개정 세부 사항을 추출하고 표시하는 전문가가 되어 문서 관리가 쉬워집니다.
 
-## 1단계: 문서 로드
+## 전제 조건
 
-첫 번째 단계는 개정 내용이 포함된 문서를 업로드하는 것입니다.
+이 코딩 여정을 시작하기 전에 필요한 모든 것이 갖추어져 있는지 확인하십시오.
+-  .NET용 Aspose.Words: 최신 버전이 설치되어 있는지 확인하세요. 그렇지 않은 경우 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/net/).
+- .NET 환경: 작동하는 .NET 개발 환경이 설정되어 있는지 확인하세요. Visual Studio는 훌륭한 옵션입니다.
+- 수정본이 포함된 Word 문서: 이 튜토리얼에서는 수정본이 포함된 샘플 Word 문서(`Revisions.docx`).
+
+## 네임스페이스 가져오기
+
+먼저, 프로젝트에 필요한 네임스페이스를 가져오겠습니다. 이는 Aspose.Words 기능에 액세스하는 데 중요합니다.
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
+using Aspose.Words;
+using System;
 ```
 
-## 2단계: 버전 찾아보기
+좋아요, 이것을 단계별로 분석해 보겠습니다. 각 단계는 Aspose.Words for .NET을 사용하여 개정 그룹 세부 정보를 얻는 과정을 안내합니다.
 
-다음으로 문서에 있는 개정판을 반복하여 유형, 작성자, 날짜 및 개정된 텍스트와 같은 세부 정보를 표시합니다.
+## 1단계: Word 문서 로드
+
+첫 번째 단계는 Word 문서를 로드하는 것입니다. 여기에 개정 내용이 저장됩니다.
+
+```csharp
+// 문서 디렉터리의 경로입니다.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Revisions.docx");
+```
+
+ 이 스니펫에서는`"YOUR DOCUMENT DIRECTORY"` 문서의 실제 경로와 함께. 이 코드는`Revisions.docx` 파일을`doc` 물체.
+
+## 2단계: 개정 컬렉션에 액세스
+
+ 이제 문서의 개정판에 액세스해 보겠습니다. Aspose.Words는 다음을 제공합니다.`Revisions` 반복할 수 있는 컬렉션입니다.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
 {
-     string groupText = revision.Group != null
-         ? "Revision group text: " + revision.Group.Text
-         : "The revision does not belong to any group";
-
-     Console.WriteLine("Type: " + revision.RevisionType);
-     Console.WriteLine("Author: " + revision.Author);
-     Console.WriteLine("Date: " + revision.DateTime);
-     Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
-     Console.WriteLine(groupText);
+    // 각 개정판 처리
 }
 ```
 
+이 루프는 문서의 각 개정판을 검토하여 세부 정보를 추출할 수 있도록 합니다.
 
-### .NET용 Aspose.Words를 사용하여 개정 그룹 세부 정보 가져오기에 대한 예제 소스 코드
+## 3단계: 개정 세부정보 추출
 
-다음은 .NET용 Aspose.Words를 사용하여 문서의 개정 그룹 세부 정보를 가져오는 전체 소스 코드입니다.
+루프 내에서 유형, 작성자, 날짜, 텍스트 등 각 개정판에 대한 다양한 세부 정보를 추출할 수 있습니다.
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
-
 foreach (Revision revision in doc.Revisions)
 {
-	 string groupText = revision.Group != null
-		 ? "Revision group text: " + revision.Group.Text
-		 : "The revision does not belong to any group";
-
-	 Console.WriteLine("Type: " + revision.RevisionType);
-	 Console.WriteLine("Author: " + revision.Author);
-	 Console.WriteLine("Date: " + revision.DateTime);
-	 Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
-	 Console.WriteLine(groupText);
+    Console.WriteLine("Type: " + revision.RevisionType);
+    Console.WriteLine("Author: " + revision.Author);
+    Console.WriteLine("Date: " + revision.DateTime);
+    Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
 }
 ```
+
+이 코드는 개정 유형, 작성자, 날짜 및 텍스트를 콘솔에 인쇄합니다.
+
+## 4단계: 개정 그룹 확인
+
+개정판이 그룹화되는 경우도 있습니다. 개정이 그룹에 속하는지 확인하고, 그렇다면 그룹의 텍스트를 표시해야 합니다.
+
+```csharp
+foreach (Revision revision in doc.Revisions)
+{
+    string groupText = revision.Group != null
+        ? "Revision group text: " + revision.Group.Text
+        : "The revision does not belong to any group";
+
+    Console.WriteLine(groupText);
+}
+```
+
+이 조각은 개정이 그룹의 일부이거나 어떤 그룹에도 속하지 않음을 나타내는 경우 그룹 텍스트를 인쇄합니다.
 
 ## 결론
 
-이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서의 개정 그룹 세부 정보를 얻는 방법을 배웠습니다. 루프와 적절한 속성을 사용하여 개정 유형, 작성자, 날짜 및 개정된 텍스트와 같은 세부 정보를 표시할 수 있었습니다. Aspose.Words for .NET은 개정 관리를 포함하여 Word 문서를 조작하기 위한 많은 강력한 기능을 제공합니다. 이제 이 지식을 사용하여 Aspose.Words for .NET을 사용하여 개정 그룹 세부 정보를 자신의 Word 문서로 가져올 수 있습니다.
+그리고 거기에 있습니다! 다음 단계를 수행하면 Aspose.Words for .NET을 사용하여 Word 문서의 수정 사항에 대한 자세한 정보를 쉽게 얻을 수 있습니다. 이 강력한 도구를 사용하면 변경 사항을 쉽게 관리하고 추적할 수 있어 협업 프로젝트가 원활하게 진행될 수 있습니다.
 
-### FAQ
+## FAQ
 
-#### Q: 수정된 문서를 Aspose.Words for .NET에 로드하려면 어떻게 해야 합니까?
+### .NET용 Aspose.Words란 무엇입니까?
+프로그래밍 방식으로 Word 문서를 생성, 편집, 변환 및 인쇄하기 위한 강력한 .NET 라이브러리입니다.
 
- 답변:`Document` 개정판이 포함된 파일에서 문서를 로드하는 .NET용 Aspose.Words 클래스입니다. 전체 문서 경로를 지정할 수 있습니다.
+### 다른 .NET 언어와 함께 .NET용 Aspose.Words를 사용할 수 있나요?
+전적으로! C#, VB.NET 및 ASP.NET을 포함한 모든 .NET 언어와 함께 사용할 수 있습니다.
 
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
+### .NET용 Aspose.Words의 무료 평가판을 어떻게 받을 수 있나요?
+ 무료 평가판을 받을 수 있습니다.[여기](https://releases.aspose.com/).
 
-#### Q: Aspose.Words for .NET에서 개정 그룹의 세부 정보를 어떻게 얻나요?
+### .NET용 Aspose.Words를 사용하려면 라이선스가 필요합니까?
+ 예, .NET용 Aspose.Words는 전체 기능을 사용하려면 라이선스가 필요합니다. 하나 구매하시면 됩니다[여기](https://purchase.aspose.com/buy) 아니면 임시면허를 취득하세요.[여기](https://purchase.aspose.com/temporary-license/).
 
-A: 루프를 사용하여 문서의 개정판을 살펴보고 각 개정판의 속성에 액세스하여 원하는 세부 정보를 얻으세요. 당신은 사용할 수 있습니다`RevisionType`, `Author`, `DateTime`그리고`ParentNode` 개정 유형, 작성자, 날짜 및 개정된 텍스트를 각각 가져오는 속성입니다.
-
-```csharp
-foreach (Revision revision in doc.Revisions)
-{
-      Console.WriteLine("Type: " + revision.RevisionType
-
-);
-      Console.WriteLine("Author: " + revision.Author);
-      Console.WriteLine("Date: " + revision.DateTime);
-      Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
-}
-```
-
-#### Q: 개정판이 Aspose.Words for .NET의 그룹에 속하는지 확인하는 방법은 무엇입니까?
-
- 답변:`Group` 의 재산`Revision` 개정이 그룹에 속하는지 확인하는 개체입니다. 만약`Group` 재산은`null`, 이는 개정이 어떤 그룹에도 속하지 않음을 의미합니다.
-
-```csharp
-if (revision.Group != null)
-{
-      // 개정이 그룹에 속해 있습니다.
-}
-else
-{
-      // 개정판이 어떤 그룹에도 속해 있지 않습니다.
-}
-```
+### .NET용 Aspose.Words에 대한 추가 문서는 어디서 찾을 수 있나요?
+ 자세한 문서가 제공됩니다.[여기](https://reference.aspose.com/words/net/).

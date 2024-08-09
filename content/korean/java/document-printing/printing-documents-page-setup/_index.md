@@ -14,7 +14,7 @@ url: /ko/java/document-printing/printing-documents-page-setup/
 
 ## 개발 환경 설정
 
-시작하기 전에 적합한 개발 환경이 준비되어 있는지 확인하겠습니다. 너는 필요할거야:
+시작하기 전에 적합한 개발 환경이 준비되어 있는지 확인하겠습니다. 다음이 필요합니다.
 
 - JDK(자바 개발 키트)
 - Eclipse 또는 IntelliJ IDEA와 같은 통합 개발 환경(IDE)
@@ -26,7 +26,7 @@ url: /ko/java/document-printing/printing-documents-page-setup/
 
 ## 프로젝트에 Java용 Aspose.Words 추가하기
 
-Aspose.Words for Java를 사용하려면 프로젝트에 라이브러리를 추가해야 합니다. 다음과 같이하세요:
+Aspose.Words for Java를 사용하려면 프로젝트에 라이브러리를 추가해야 합니다. 다음 단계를 따르세요.
 
 1.  다음에서 Aspose.Words for Java 라이브러리를 다운로드하세요.[여기](https://releases.aspose.com/words/java/).
 

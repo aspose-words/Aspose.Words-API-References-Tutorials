@@ -7,9 +7,9 @@ type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/append-document-to-blank/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Přistihli jste se někdy, že se škrábete na hlavě a přemýšlíte, jak bez problémů připojit dokument k prázdnému dokumentu pomocí Aspose.Words pro .NET? Nejsi sám! Ať už jste zkušený vývojář nebo se jen ponoříte do světa automatizace dokumentů, tento průvodce vám pomůže se v tomto procesu zorientovat. Jednotlivé kroky rozebereme tak, aby se daly snadno sledovat, i když nejste průvodce programováním. Takže si dejte šálek kávy, posaďte se a pojďme se ponořit do světa manipulace s dokumenty s Aspose.Words pro .NET!
+Ahoj! Přistihli jste se někdy, že se škrábete na hlavě a přemýšlíte, jak bez problémů připojit dokument k prázdnému dokumentu pomocí Aspose.Words pro .NET? Nejsi sám! Ať už jste zkušený vývojář nebo se jen ponoříte do světa automatizace dokumentů, tento průvodce vám pomůže se v tomto procesu zorientovat. Jednotlivé kroky rozebereme tak, aby se daly snadno sledovat, i když nejste průvodce programováním. Takže si dejte šálek kávy, posaďte se a pojďme se ponořit do světa manipulace s dokumenty s Aspose.Words pro .NET!
 
 ## Předpoklady
 
@@ -88,7 +88,7 @@ Tím zajistíte, že cílový dokument bude zcela prázdný a zabráníte tak ne
 
 ## Krok 4: Připojte zdrojový dokument
 
-S připraveným zdrojovým i cílovým dokumentem je čas připojit zdrojový dokument k prázdnému dokumentu.
+Když je zdrojový i cílový dokument připraven, je čas připojit zdrojový dokument k prázdnému dokumentu.
 
 1. Připojte zdrojový dokument k cílovému dokumentu:
 

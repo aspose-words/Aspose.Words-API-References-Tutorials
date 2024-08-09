@@ -55,7 +55,7 @@ Teraz dodajmy bibliotekę Aspose.Words do naszego projektu.
     string dataDir = "YOUR DOCUMENT DIRECTORY";
     ```
 
-2.  Stwórz`Document` obiekt i załaduj dokument:
+2.  Utwórz`Document` obiekt i załaduj dokument:
     ```csharp
     Document doc = new Document(dataDir + "Document.docx");
     ```

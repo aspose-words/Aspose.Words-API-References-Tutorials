@@ -2,144 +2,130 @@
 title: Przesuń węzeł w śledzonym dokumencie
 linktitle: Przesuń węzeł w śledzonym dokumencie
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Przenieś węzły w śledzonym dokumencie za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak przenosić węzły w śledzonym dokumencie programu Word za pomocą Aspose.Words dla .NET, korzystając z naszego szczegółowego przewodnika krok po kroku. Idealny dla programistów.
 type: docs
 weight: 10
 url: /pl/net/working-with-revisions/move-node-in-tracked-document/
 ---
+## Wstęp
 
-W tym przewodniku krok po kroku przeprowadzimy Cię przez proces przenoszenia węzła w śledzonym dokumencie programu Word za pomocą Aspose.Words dla .NET. Dostarczymy Ci pełny kod źródłowy i pokażemy, jak sformatować wynik przeceny.
+Hej, entuzjaści Aspose.Words! Jeśli kiedykolwiek musiałeś przenieść węzeł w dokumencie programu Word podczas śledzenia wersji, jesteś we właściwym miejscu. Dzisiaj zagłębimy się w to, jak to osiągnąć za pomocą Aspose.Words dla .NET. Nie tylko poznasz proces krok po kroku, ale także poznasz wskazówki i triki, dzięki którym manipulacja dokumentami będzie płynna i wydajna.
 
-## Krok 1: Tworzenie dokumentu
+## Warunki wstępne
 
-Pierwszym krokiem jest utworzenie nowego dokumentu i dodanie akapitów.
+Zanim zabrudzimy sobie ręce kodem, upewnijmy się, że mamy wszystko, czego potrzebujemy:
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Writeln("Paragraph 1");
-builder.Writeln("Paragraph 2");
-builder.Writeln("Paragraph 3");
-builder.Writeln("Paragraph 4");
-builder.Writeln("Paragraph 5");
-builder.Writeln("Paragraph 6");
-Body body = doc.FirstSection.Body;
-Console.WriteLine("Number of paragraphs: {0}", body.Paragraphs.Count);
-```
+-  Aspose.Words dla .NET: Pobierz[Tutaj](https://releases.aspose.com/words/net/).
+- Środowisko .NET: Upewnij się, że masz skonfigurowane kompatybilne środowisko programistyczne .NET.
+- Podstawowa znajomość języka C#: w tym samouczku założono, że masz podstawową wiedzę na temat języka C#.
 
-## Krok 2: Śledź poprawki
+Masz wszystko? Świetnie! Przejdźmy do przestrzeni nazw, które musimy zaimportować.
 
-Zamierzamy włączyć śledzenie wersji w dokumencie.
+## Importuj przestrzenie nazw
+
+Po pierwsze, musimy zaimportować niezbędne przestrzenie nazw. Są one niezbędne do pracy z Aspose.Words i obsługi węzłów dokumentów.
 
 ```csharp
-doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
+using Aspose.Words;
+using System;
 ```
 
-## Krok 3: Przenieś węzeł
+W porządku, podzielmy proces na łatwe do wykonania etapy. Każdy krok zostanie szczegółowo wyjaśniony, abyś miał pewność, że rozumiesz, co się dzieje w każdym momencie.
 
-Podczas generowania wersji przesuniemy węzeł (akapit) z jednej pozycji na drugą.
+## Krok 1: Zainicjuj dokument
 
-```csharp
-Node node = body.Paragraphs[3];
-Node endNode = body.Paragraphs[5].NextSibling;
-Node referenceNode = body.Paragraphs[0];
-while (node != endNode)
-{
-     Node nextNode = node. NextSibling;
-     body. InsertBefore(node, referenceNode);
-     node = nextNode;
-}
-```
-
-## Krok 4: Przestań śledzić recenzje
-
-Przestaniemy śledzić zmiany w dokumencie.
-
-```csharp
-doc.StopTrackRevisions();
-```
-
-## Krok 5: Zapisanie dokumentu
-
- Po wstawieniu pola formularza wprowadzania tekstu zapisz dokument w wybranej lokalizacji za pomocą przycisku`Save`metoda. Upewnij się, że podałeś odpowiednią ścieżkę pliku:
-
-```csharp
-Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
-doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
-```
-
-
-### Przykładowy kod źródłowy dla przenoszenia węzła w śledzonym dokumencie przy użyciu Aspose.Words dla .NET
-
-Oto pełny kod źródłowy do przenoszenia węzła w śledzonym dokumencie przy użyciu Aspose.Words dla .NET:
-
+ Na początek musimy zainicjować nowy dokument i użyć a`DocumentBuilder` dodać kilka akapitów.
 
 ```csharp
 // Ścieżka do katalogu dokumentów.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+
+// Dodanie kilku akapitów
 builder.Writeln("Paragraph 1");
 builder.Writeln("Paragraph 2");
 builder.Writeln("Paragraph 3");
 builder.Writeln("Paragraph 4");
 builder.Writeln("Paragraph 5");
 builder.Writeln("Paragraph 6");
+
+// Sprawdź początkową liczbę akapitów
 Body body = doc.FirstSection.Body;
 Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
+```
 
-// Rozpocznij śledzenie wersji.
+## Krok 2: Rozpocznij śledzenie wersji
+
+Następnie musimy rozpocząć śledzenie wersji. Jest to o tyle istotne, że pozwala zobaczyć zmiany wprowadzone w dokumencie.
+
+```csharp
+// Rozpocznij śledzenie wersji
 doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
+```
 
-// Generuj wersje podczas przenoszenia węzła z jednej lokalizacji do drugiej.
+## Krok 3: Przenieś węzły
+
+Teraz następuje główna część naszego zadania: przeniesienie węzła z jednej lokalizacji do drugiej. Przeniesiemy trzeci akapit i umieścimy go przed pierwszym akapitem.
+
+```csharp
+// Zdefiniuj węzeł, który ma zostać przesunięty i jego końcowy zasięg
 Node node = body.Paragraphs[3];
 Node endNode = body.Paragraphs[5].NextSibling;
 Node referenceNode = body.Paragraphs[0];
+
+// Przesuń węzły w zdefiniowanym zakresie
 while (node != endNode)
 {
-	Node nextNode = node.NextSibling;
-	body.InsertBefore(node, referenceNode);
-	node = nextNode;
+    Node nextNode = node.NextSibling;
+    body.InsertBefore(node, referenceNode);
+    node = nextNode;
 }
+```
 
-// Zatrzymaj proces śledzenia wersji.
+## Krok 4: Zatrzymaj śledzenie wersji
+
+Po przeniesieniu węzłów musimy zaprzestać śledzenia wersji.
+
+```csharp
+// Przestań śledzić wersje
 doc.StopTrackRevisions();
+```
 
-// W zakresie ruchu od znajdują się 3 dodatkowe akapity.
-Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
+## Krok 5: Zapisz dokument
+
+Na koniec zapiszmy nasz zmodyfikowany dokument we wskazanym katalogu.
+
+```csharp
+// Zapisz zmodyfikowany dokument
 doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
+
+// Wypisz końcową liczbę akapitów
+Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
 ```
 
 ## Wniosek
 
-W tym samouczku nauczyliśmy się, jak przenosić węzeł w śledzonym dokumencie programu Word za pomocą Aspose.Words dla .NET. Wykonując kroki tworzenia dokumentu, włączając śledzenie wersji, przesuwając węzeł i zatrzymując śledzenie wersji, udało nam się pomyślnie przeprowadzić tę manipulację. Aspose.Words dla .NET to potężne narzędzie do przetwarzania tekstu w dokumentach Word i oferuje zaawansowane funkcje zarządzania wersjami. Teraz możesz wykorzystać tę wiedzę do przenoszenia węzłów we własnych dokumentach programu Word, jednocześnie śledząc wersje za pomocą Aspose.Words dla .NET.
+I masz to! Pomyślnie przeniosłeś węzeł w śledzonym dokumencie za pomocą Aspose.Words dla .NET. Ta potężna biblioteka ułatwia programowe manipulowanie dokumentami programu Word. Niezależnie od tego, czy tworzysz, edytujesz czy śledzisz zmiany, Aspose.Words pomoże Ci. Więc śmiało, spróbuj. Miłego kodowania!
 
-### Często zadawane pytania
+## Często zadawane pytania
 
-#### P: Jak mogę włączyć śledzenie wersji w dokumencie Aspose.Words dla .NET?
+### Co to jest Aspose.Words dla .NET?
 
- O: Aby włączyć śledzenie wersji w dokumencie Aspose.Words dla .NET, możesz użyć opcji`StartTrackRevisions` metoda`Document` obiekt. Metoda ta przyjmuje jako parametry imię i nazwisko autora wersji oraz datę rozpoczęcia monitorowania wersji.
+Aspose.Words dla .NET to biblioteka klas do programowej pracy z dokumentami programu Word. Umożliwia programistom tworzenie, edytowanie, konwertowanie i drukowanie dokumentów programu Word w aplikacjach .NET.
 
-```csharp
-doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
-```
+### Jak śledzić wersje w dokumencie programu Word za pomocą Aspose.Words?
 
-#### P: Jak mogę przenieść węzeł w śledzonym dokumencie bez generowania poprawek?
+ Aby śledzić wersje, użyj opcji`StartTrackRevisions` metoda na`Document` obiekt. Umożliwi to śledzenie wersji i pokazanie wszelkich zmian wprowadzonych w dokumencie.
 
- Odp.: Jeśli chcesz przenieść węzeł w śledzonym dokumencie bez generowania wersji, możesz użyć opcji`Remove`I`InsertAfter` Lub`InsertBefore` metody`Node` obiekt. Na przykład, aby przenieść akapit za innym akapitem, możesz użyć następującego kodu:
+### Czy mogę przenosić wiele węzłów w Aspose.Words?
 
-```csharp
-Node nodeToMove = document.FirstSection.Body.Paragraphs[0];
-Node referenceNode = document.FirstSection.Body.Paragraphs[1];
-nodeToMove.Remove();
-document.FirstSection.Body.InsertAfter(nodeToMove, referenceNode);
-```
+Tak, możesz przenosić wiele węzłów, iterując po nich i używając metod takich jak`InsertBefore` Lub`InsertAfter` aby umieścić je w żądanym miejscu.
 
-#### P: Jak mogę zatrzymać śledzenie wersji w dokumencie Aspose.Words dla .NET?
+### Jak zatrzymać śledzenie wersji w Aspose.Words?
 
- O: Aby zatrzymać śledzenie wersji w dokumencie Aspose.Words dla .NET, możesz użyć opcji`StopTrackRevisions` metoda`Document` obiekt.
+ Skorzystaj z`StopTrackRevisions` metoda na`Document` sprzeciwić się zaprzestaniu śledzenia wersji.
 
-```csharp
-doc.StopTrackRevisions();
-```
+### Gdzie mogę znaleźć więcej dokumentacji na temat Aspose.Words dla .NET?
+
+ Można znaleźć szczegółową dokumentację[Tutaj](https://reference.aspose.com/words/net/).

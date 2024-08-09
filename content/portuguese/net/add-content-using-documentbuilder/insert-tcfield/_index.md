@@ -75,11 +75,11 @@ Finalmente, vamos salvar nosso documento. É aqui que todo o nosso trabalho duro
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTCField.docx");
 ```
 
-Estrondo! Você acabou de criar um documento Word com um campo TC. Quão incrível é isso?
+Bum! Você acabou de criar um documento Word com um campo TC. Quão incrível é isso?
 
 ## Conclusão
 
- E aí está! Vimos como inserir um campo TC em um documento do Word usando Aspose.Words for .NET. É bem simples, certo? Com essas habilidades, agora você pode automatizar e personalizar seus documentos do Word como um profissional. Se você tiver alguma dúvida ou tiver algum problema, não hesite em verificar o[Documentação Aspose.Words](https://reference.aspose.com/words/net/) ou entre em contato com eles[Fórum de suporte](https://forum.aspose.com/c/words/8). Boa codificação!
+ E aí está! Vimos como inserir um campo TC em um documento do Word usando Aspose.Words for .NET. É bem simples, certo? Com essas habilidades, agora você pode automatizar e personalizar seus documentos do Word como um profissional. Se você tiver alguma dúvida ou tiver algum problema, não hesite em verificar o[Documentação Aspose.Words](https://reference.aspose.com/words/net/) ou entre em contato com eles[fórum de suporte](https://forum.aspose.com/c/words/8). Boa codificação!
 
 ## Perguntas frequentes
 

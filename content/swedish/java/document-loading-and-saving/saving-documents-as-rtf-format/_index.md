@@ -59,7 +59,7 @@ Nu när vi har laddat dokumentet och konfigurerat RTF-sparalternativen är det d
 doc.save("path/to/output.rtf", saveOptions);
 ```
 
- Byta ut`"path/to/output.rtf"` med önskad sökväg och filnamn för RTF-utdatafilen.
+ Ersätta`"path/to/output.rtf"` med önskad sökväg och filnamn för RTF-utdatafilen.
 
 ## Komplett källkod för att spara dokument som RTF-format i Aspose.Words för Java
 

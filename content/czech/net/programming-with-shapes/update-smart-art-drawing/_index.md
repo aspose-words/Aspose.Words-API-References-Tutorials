@@ -2,12 +2,12 @@
 title: Aktualizujte Smart Art Drawing
 linktitle: Aktualizujte Smart Art Drawing
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak aktualizovat kresby Smart Art v dokumentech Word pomocí Aspose.Words for .NET, pomocí tohoto podrobného průvodce. Ujistěte se, že vaše vizualizace jsou vždy přesné.
+description: Naučte se, jak aktualizovat kresby Smart Art v dokumentech Word pomocí Aspose.Words for .NET, pomocí tohoto podrobného průvodce. Zajistěte, aby byly vaše vizualizace vždy přesné.
 type: docs
 weight: 10
 url: /cs/net/programming-with-shapes/update-smart-art-drawing/
 ---
-## Úvod
+## Zavedení
 
 Grafika Smart Art je fantastický způsob, jak vizuálně reprezentovat informace v dokumentech aplikace Word. Ať už připravujete obchodní zprávu, vzdělávací článek nebo prezentaci, Smart Art dokáže složitá data lépe stravovat. Jak se však dokumenty vyvíjejí, grafika Smart Art v nich může vyžadovat aktualizaci, aby odrážela nejnovější změny. Pokud používáte Aspose.Words pro .NET, můžete tento proces zefektivnit programově. Tento výukový program vás provede aktualizací kreseb Smart Art v dokumentech aplikace Word pomocí Aspose.Words for .NET, což usnadňuje udržování nových a přesných vizuálů.
 
@@ -124,7 +124,7 @@ Aktualizace Smart Art zajistí, že grafika bude odrážet nejnovější změny 
 Ano, proces aktualizace Smart Art ve více dokumentech můžete automatizovat tím, že budete iterovat kolekci souborů a použít stejné kroky.
 
 ### Potřebuji speciální licenci pro Aspose.Words, abych mohl používat tyto funkce?
- Pro používání jeho funkcí po zkušebním období je vyžadována platná licence Aspose.Words. Můžete získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
+ Pro používání jeho funkcí po zkušebním období je vyžadována platná licence Aspose.Words. Můžete získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
 
 ### Kde najdu další dokumentaci k Aspose.Words?
- Máte přístup k dokumentaci[tady](https://reference.aspose.com/words/net/).
+ Máte přístup k dokumentaci[zde](https://reference.aspose.com/words/net/).

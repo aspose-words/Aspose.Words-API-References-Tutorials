@@ -34,7 +34,7 @@ I din Java-kod måste du först ladda Word-dokumentet du vill dela. Här är ett
 Document doc = new Document("your-document.docx");
 ```
 
- Byta ut`"your-document.docx"` med sökvägen till ditt Word-dokument.
+ Ersätta`"your-document.docx"` med sökvägen till ditt Word-dokument.
 
 ## Dela upp dokumentet
 

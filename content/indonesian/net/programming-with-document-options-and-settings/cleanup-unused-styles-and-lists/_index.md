@@ -90,7 +90,7 @@ Dan itu dia! Anda telah berhasil membersihkan dokumen Word Anda dengan menghapus
 Aspose.Words for .NET adalah perpustakaan canggih yang memungkinkan Anda membuat, memodifikasi, dan mengonversi dokumen Word secara terprogram menggunakan C#.
 
 ### Bisakah saya menghapus gaya dan daftar yang tidak digunakan secara bersamaan?
-Ya, Anda dapat mengatur keduanya`UnusedLists`Dan`UnusedStyles` ke`true` dalam`CleanupOptions` untuk menghapus keduanya.
+Ya, Anda dapat mengatur keduanya`UnusedLists`Dan`UnusedStyles` ke`true` di`CleanupOptions` untuk menghapus keduanya.
 
 ### Apakah mungkin untuk membatalkan pembersihan?
 Tidak, setelah pembersihan selesai dan dokumen disimpan, Anda tidak dapat membatalkan perubahan. Selalu simpan cadangan dokumen asli Anda.

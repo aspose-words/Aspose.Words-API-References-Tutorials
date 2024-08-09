@@ -9,7 +9,7 @@ url: /sv/net/find-and-replace-text/replace-text-in-table/
 ---
 ## Introduktion
 
-Hallå där! Är du redo att dyka in i dokumentautomatiseringens värld med Aspose.Words för .NET? Idag tar vi itu med en superhändig handledning om hur man ersätter text i en tabell i ett Word-dokument. Föreställ dig att du har ett Word-dokument fyllt med tabeller och du behöver uppdatera specifik text i dessa tabeller. Att göra detta manuellt kan vara en verklig smärta, eller hur? Men oroa dig inte, med Aspose.Words för .NET kan du automatisera denna process med lätthet. Låt oss gå igenom detta steg-för-steg och få upp farten!
+Hej där! Är du redo att dyka in i dokumentautomatiseringens värld med Aspose.Words för .NET? Idag tar vi itu med en superhändig handledning om hur man ersätter text i en tabell i ett Word-dokument. Föreställ dig att du har ett Word-dokument fyllt med tabeller och du behöver uppdatera specifik text i dessa tabeller. Att göra detta manuellt kan vara en verklig smärta, eller hur? Men oroa dig inte, med Aspose.Words för .NET kan du automatisera denna process med lätthet. Låt oss gå igenom detta steg-för-steg och få upp farten!
 
 ## Förutsättningar
 
@@ -96,7 +96,7 @@ Ja, du kan gå igenom alla tabeller i dokumentet och tillämpa ersättningsmetod
  Du kan använda`FindReplaceOptions` för att ange formateringsalternativ för ersättningstexten.
 
 ### Är det möjligt att endast ersätta text i specifika rader eller kolumner?
- Ja, du kan rikta in dig på specifika rader eller kolumner genom att komma åt dem direkt via`Rows` eller`Cells` egenskaper.
+ Ja, du kan rikta in dig på specifika rader eller kolumner genom att komma åt dem direkt via`Rows` eller`Cells` fastigheter.
 
 ### Kan jag ersätta text med bilder eller andra objekt?
 Aspose.Words för .NET låter dig ersätta text med olika objekt, inklusive bilder, med hjälp av avancerade metoder.

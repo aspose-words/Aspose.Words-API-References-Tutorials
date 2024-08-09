@@ -7,15 +7,15 @@ type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/different-page-setup/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Jste připraveni ponořit se do fascinujícího světa manipulace s dokumenty s Aspose.Words pro .NET? Dnes řešíme něco docela pěkného: nastavení různých nastavení stránek při kombinování dokumentů Wordu. Ať už slučujete zprávy, vytváříte román nebo si jen tak pro zábavu pohráváte s dokumenty, tento průvodce vás tím krok za krokem provede. Začněme!
+Ahoj! Jste připraveni ponořit se do fascinujícího světa manipulace s dokumenty s Aspose.Words pro .NET? Dnes řešíme něco docela pěkného: nastavení různých nastavení stránek při kombinování dokumentů Wordu. Ať už slučujete zprávy, vytváříte román nebo si jen tak pro zábavu pohráváte s dokumenty, tento průvodce vás tím krok za krokem provede. Začněme!
 
 ## Předpoklady
 
 Než si ušpiníme ruce, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Můžeš[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
 2. .NET Framework: Jakákoli verze, která podporuje Aspose.Words for .NET.
 3. Vývojové prostředí: Visual Studio nebo jakékoli jiné IDE kompatibilní s .NET.
 4. Základní znalost C#: Jen základy pro pochopení syntaxe a struktury.
@@ -136,4 +136,4 @@ Ano, Aspose.Words for .NET je plně kompatibilní s .NET Core.
  Ano,`ImportFormatMode.KeepSourceFormatting` volba zajišťuje, že budou zachovány styly ze zdrojového dokumentu.
 
 ### Kde mohu získat další pomoc s Aspose.Words?
- Podívejte se na[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) nebo navštívit jejich[Fórum podpory](https://forum.aspose.com/c/words/8) pro další pomoc.
+ Podívejte se na[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) nebo navštívit jejich[fórum podpory](https://forum.aspose.com/c/words/8) pro další pomoc.

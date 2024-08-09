@@ -2,75 +2,99 @@
 title: Ustaw folder czcionek
 linktitle: Ustaw folder czcionek
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak ustawić katalog czcionek w Aspose.Words dla .NET i zapewnić dostępność czcionek używanych w dokumentach.
+description: Dowiedz się, jak ustawić niestandardowy folder czcionek w Aspose.Words dla .NET, aby mieć pewność, że dokumenty programu Word będą poprawnie renderowane bez brakujących czcionek.
 type: docs
 weight: 10
 url: /pl/net/working-with-fonts/set-fonts-folder/
 ---
-W tym samouczku pokażemy, jak ustawić katalog czcionek w Aspose.Words dla .NET. Dowiesz się, jak określić katalog zawierający czcionki używane w dokumencie programu Word.
+## Wstęp
+
+Czy kiedykolwiek napotkałeś problemy z brakującymi czcionkami podczas pracy z dokumentami programu Word w aplikacji .NET? Cóż, nie jesteś sam. Ustawienie prawidłowego folderu czcionek może bezproblemowo rozwiązać ten problem. W tym przewodniku przeprowadzimy Cię przez proces ustawiania folderu czcionek za pomocą Aspose.Words dla .NET. Zanurzmy się!
 
 ## Warunki wstępne
-Zanim zaczniesz, upewnij się, że masz następujące elementy:
-- Praktyczna znajomość języka programowania C#
-- Biblioteka Aspose.Words dla .NET zainstalowana w Twoim projekcie
+
+Zanim zaczniemy, upewnij się, że masz następujące elementy:
+
+- Program Visual Studio zainstalowany na Twoim komputerze
+- Konfiguracja .NET Framework
+-  Aspose.Words dla biblioteki .NET. Jeśli jeszcze tego nie zrobiłeś, możesz pobrać go z[Tutaj](https://releases.aspose.com/words/net/).
+
+## Importuj przestrzenie nazw
+
+Najpierw musisz zaimportować niezbędne przestrzenie nazw, aby móc pracować z Aspose.Words. Dodaj następujące wiersze na górze pliku kodu:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fonts;
+```
+
+Konfigurowanie folderu czcionek jest proste, jeśli dokładnie wykonasz poniższe kroki.
 
 ## Krok 1: Zdefiniuj katalog dokumentów
-Zacznij od ustawienia ścieżki katalogu do lokalizacji dokumentu programu Word. Zastępować`"YOUR DOCUMENT DIRECTORY"` w kodzie odpowiednią ścieżką.
+
+Przede wszystkim zdefiniuj ścieżkę do katalogu dokumentów. Ten katalog będzie zawierał dokumenty programu Word i czcionki, których chcesz użyć.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## Krok 2: Ustaw katalog czcionek
- Utwórz instancję`FontSettings` klasę i użyj`SetFontsFolder` metoda określenia katalogu zawierającego czcionki. Zastępować`"Fonts"` z nazwą aktualnego katalogu czcionek.
-
-```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.SetFontsFolder(dataDir + "Fonts", false);
-```
-
-## Krok 3: Załaduj dokument z ustawieniami czcionek
- Użyj`LoadOptions` class, aby określić ustawienia czcionki w pliku`FontSettings` opcja. Następnie użyj`Document` class, aby załadować dokument przy użyciu tych opcji.
-
-```csharp
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.FontSettings = fontSettings;
-Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
-
-```
-
-### Przykładowy kod źródłowy dla folderu Ustaw czcionki przy użyciu Aspose.Words dla .NET 
-
-```csharp
-
 // Ścieżka do katalogu dokumentów
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-FontSettings fontSettings = new FontSettings();
-fontSettings.SetFontsFolder(dataDir + "Fonts", false);
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.FontSettings = fontSettings;
-Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
-
 ```
 
+ Pamiętaj o wymianie`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu.
+
+## Krok 2: Zainicjuj ustawienia czcionek
+
+ Teraz musisz zainicjować plik`FontSettings` obiekt. Obiekt ten umożliwia określenie niestandardowych folderów czcionek.
+
+```csharp
+FontSettings fontSettings = new FontSettings();
+```
+
+## Krok 3: Ustaw folder Czcionki
+
+ Korzystanie z`SetFontsFolder` metoda`FontSettings` obiekt, określ folder, w którym przechowywane są niestandardowe czcionki.
+
+```csharp
+fontSettings.SetFontsFolder(dataDir + "Fonts", false);
+```
+
+ Tutaj,`dataDir + "Fonts"` wskazuje folder o nazwie „Fonts” w katalogu dokumentów. Drugi parametr,`false`, wskazuje, że folder nie jest rekurencyjny.
+
+## Krok 4: Utwórz opcje ładowania
+
+ Następnie utwórz instancję`LoadOptions` klasa. Ta klasa pomoże Ci załadować dokument z określonymi ustawieniami czcionki.
+
+```csharp
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.FontSettings = fontSettings;
+```
+
+## Krok 5: Załaduj dokument
+
+ Na koniec załaduj dokument Word za pomocą`Document` klasa i`LoadOptions` obiekt.
+
+```csharp
+Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
+```
+
+ Upewnij się, że`"Rendering.docx"` to nazwa dokumentu programu Word. Możesz zastąpić ją nazwą swojego pliku.
+
 ## Wniosek
-Gratulacje! Teraz wiesz, jak ustawić katalog czcionek w Aspose.Words dla .NET. Możesz użyć tej funkcji, aby zapewnić dostępność czcionek używanych w dokumencie i spójność wyświetlania czcionek.
 
-### Często zadawane pytania
+masz to! Wykonując poniższe kroki, możesz łatwo ustawić niestandardowy folder czcionek w Aspose.Words dla .NET, zapewniając, że wszystkie czcionki będą poprawnie renderowane. Ta prosta konfiguracja może zaoszczędzić wielu kłopotów i sprawić, że Twoje dokumenty będą wyglądać dokładnie tak, jak chcesz.
 
-#### P: Jak mogę ustawić niestandardowy folder czcionek w Aspose.Words?
+## Często zadawane pytania
 
- Odp.: Aby ustawić niestandardowy folder czcionek w Aspose.Words, możesz użyć`FontsFolder` klasa i`SetFontsFolders` metoda określająca ścieżkę do folderu zawierającego czcionki.
+### Dlaczego muszę ustawić niestandardowy folder czcionek?
+Ustawienie niestandardowego folderu czcionek gwarantuje, że wszystkie czcionki używane w dokumentach programu Word będą poprawnie renderowane, co pozwoli uniknąć problemów z brakującymi czcionkami.
 
-#### P: Czy mogę ustawić wiele folderów czcionek w Aspose.Words?
+### Czy mogę ustawić wiele folderów czcionek?
+ Tak, możesz skorzystać z`SetFontsFolders` metoda określania wielu folderów.
 
- O: Tak, możesz ustawić wiele folderów czcionek w Aspose.Words, wywołując metodę`SetFontsFolders` metodę wielokrotnie ze ścieżkami różnych folderów czcionek, których chcesz użyć.
+### Co się stanie, jeśli czcionka nie zostanie znaleziona?
+Aspose.Words spróbuje zastąpić brakującą czcionkę podobną z czcionek systemowych.
 
-#### P: Co się stanie, jeśli czcionka użyta w dokumencie nie będzie znajdować się w zdefiniowanych folderach czcionek?
+### Czy Aspose.Words jest kompatybilny z .NET Core?
+Tak, Aspose.Words obsługuje .NET Core wraz z .NET Framework.
 
-Odp.: Jeśli czcionka użyta w dokumencie nie występuje w folderach czcionek zdefiniowanych w Aspose.Words, zamiast niej zostanie użyta czcionka zastępcza. Dzięki temu tekst w dokumencie będzie zawsze wyświetlany poprawnie, nawet jeśli oryginalna czcionka nie jest dostępna.
-
-#### P: Czy foldery czcionek zdefiniowane w Aspose.Words mają pierwszeństwo przed czcionkami zainstalowanymi w systemie?
-
-O: Tak, foldery czcionek zdefiniowane w Aspose.Words mają pierwszeństwo przed czcionkami zainstalowanymi w systemie. Oznacza to, że jeśli czcionka o tej samej nazwie występuje zarówno w zdefiniowanych folderach czcionek, jak i czcionkach systemowych, przy przetwarzaniu dokumentów Worda używana będzie wersja z folderu czcionek.
+### Gdzie mogę uzyskać pomoc, jeśli napotkam problemy?
+ Możesz uzyskać wsparcie od[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8).

@@ -15,7 +15,7 @@ url: /ko/net/programming-with-document-options-and-settings/optimize-for-ms-word
 
 손을 더럽히기 전에 필요한 모든 것이 있는지 확인합시다.
 
-1.  .NET용 Aspose.Words: 다음을 수행할 수 있습니다.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+1.  .NET용 Aspose.Words: 다음을 수행할 수 있습니다.[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 2. 개발 환경: Visual Studio 또는 .NET을 지원하는 기타 IDE.
 3. C#에 대한 기본 지식: 마법사가 될 필요는 없지만 C#에 대한 지식이 있으면 도움이 됩니다.
 

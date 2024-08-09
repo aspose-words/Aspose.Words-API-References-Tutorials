@@ -52,7 +52,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## الخطوة 3: إدخال سطر التوقيع
 
- هذا هو المكان الذي يحدث السحر. نقوم بإدراج سطر التوقيع في وثيقتنا باستخدام`DocumentBuilder` فصل.
+ هذا هو المكان الذي يحدث فيه السحر. نقوم بإدراج سطر التوقيع في وثيقتنا باستخدام`DocumentBuilder` فصل.
 
 ```csharp
 SignatureLine signatureLine = builder.InsertSignatureLine(new SignatureLineOptions()).SignatureLine;
@@ -88,7 +88,7 @@ CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", 
 
 ## الخطوة 7: توقيع الوثيقة
 
- هذه هي الخطوة النهائية. نحن نستخدم ال`DigitalSignatureUtil`الصف لتوقيع الوثيقة. يتم حفظ المستند الموقع باسم جديد.
+ هذه هي الخطوة النهائية. نحن نستخدم`DigitalSignatureUtil`الصف لتوقيع الوثيقة. يتم حفظ المستند الموقع باسم جديد.
 
 ```csharp
 DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
@@ -97,7 +97,7 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
 
 ## خاتمة
 
-وهناك لديك! من خلال هذه الخطوات، تكون قد نجحت في إنشاء مستند Word جديد وإضافة سطر توقيع وتوقيعه رقميًا باستخدام Aspose.Words for .NET. إنها أداة قوية تجعل أتمتة المستندات أمرًا سهلاً. سواء كنت تتعامل مع عقود أو اتفاقيات أو أي مستندات رسمية، فإن هذه الطريقة تضمن توقيعها ومصادقتها بشكل آمن.
+وهنا لديك! من خلال هذه الخطوات، تكون قد نجحت في إنشاء مستند Word جديد وإضافة سطر توقيع وتوقيعه رقميًا باستخدام Aspose.Words for .NET. إنها أداة قوية تجعل أتمتة المستندات أمرًا سهلاً. سواء كنت تتعامل مع عقود أو اتفاقيات أو أي مستندات رسمية، فإن هذه الطريقة تضمن توقيعها ومصادقتها بشكل آمن.
 
 ## الأسئلة الشائعة
 
@@ -105,7 +105,7 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
 نعم، يمكنك استخدام تنسيقات الصور المختلفة مثل PNG، JPG، BMP، إلخ.
 
 ###  هل من الضروري استخدام أ`.pfx` file for the certificate?
- نعم ا`.pfx` الملف هو تنسيق شائع لتخزين معلومات التشفير بما في ذلك الشهادات والمفاتيح الخاصة.
+ نعم أ`.pfx` الملف هو تنسيق شائع لتخزين معلومات التشفير بما في ذلك الشهادات والمفاتيح الخاصة.
 
 ### هل يمكنني إضافة أسطر توقيع متعددة في مستند واحد؟
 قطعاً! يمكنك إدراج أسطر توقيع متعددة عن طريق تكرار خطوة الإدراج لكل توقيع.

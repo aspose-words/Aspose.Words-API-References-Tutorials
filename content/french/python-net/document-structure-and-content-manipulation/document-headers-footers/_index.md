@@ -12,7 +12,7 @@ Les en-têtes et pieds de page des documents Word jouent un rôle crucial en fou
 
 ## Premiers pas avec Aspose.Words pour Python
 
-Avant de vous plonger dans la manipulation des en-têtes et des pieds de page, vous devez configurer Aspose.Words pour Python. Suivez ces étapes:
+Avant de vous plonger dans la manipulation des en-têtes et des pieds de page, vous devez configurer Aspose.Words pour Python. Suivez ces étapes :
 
 1. Installation : installez Aspose.Words pour Python à l'aide de pip.
 
@@ -89,7 +89,7 @@ footer_run.text = "Page number: {PAGE} of {NUMPAGES} - Document created on {DATE
 
 ## Différents en-têtes et pieds de page pour les pages paires et impaires
 
-La création de différents en-têtes et pieds de page pour les pages paires et impaires peut ajouter une touche professionnelle à vos documents. Voici comment:
+La création de différents en-têtes et pieds de page pour les pages paires et impaires peut ajouter une touche professionnelle à vos documents. Voici comment procéder :
 
 1. Définition de la mise en page impaire et paire : définissez la mise en page pour autoriser différents en-têtes et pieds de page pour les pages paires et impaires.
 

@@ -17,7 +17,7 @@ Deze stapsgewijze handleiding zorgt ervoor dat u elk onderdeel van het proces be
 
 Voordat u in het codeergedeelte duikt, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
 
-1.  Aspose.Words voor .NET: U hebt de Aspose.Words voor .NET-bibliotheek nodig. Je kunt het downloaden van de[Aspose-releases](https://releases.aspose.com/words/net/) bladzijde.
+1.  Aspose.Words voor .NET: U hebt de Aspose.Words voor .NET-bibliotheek nodig. Je kunt het downloaden van de[Aspose-releases](https://releases.aspose.com/words/net/) pagina.
 2. Ontwikkelomgeving: Een IDE zoals Visual Studio wordt aanbevolen voor het coderen en uitvoeren van .NET-applicaties.
 3. Basiskennis van C#: Het begrijpen van de programmeertaal C# en het .NET-framework is essentieel voor het volgen van deze tutorial.
 
@@ -101,7 +101,7 @@ Aspose.Words voor .NET is een krachtige bibliotheek voor het programmatisch werk
 
 ### Hoe download ik Aspose.Words voor .NET?
 
- U kunt Aspose.Words voor .NET downloaden van de[Aspose-releases](https://releases.aspose.com/words/net/) bladzijde.
+ U kunt Aspose.Words voor .NET downloaden van de[Aspose-releases](https://releases.aspose.com/words/net/) pagina.
 
 ###  Wat is`LoadOptions` used for?
 

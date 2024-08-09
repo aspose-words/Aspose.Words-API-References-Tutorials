@@ -33,7 +33,7 @@ using Aspose.Words.Tables;
 
 ## 步驟1：初始化Aspose.Words文件和DocumentBuilder
 
-首先，初始化一個新的Aspose.Words`Document`物件和一個`DocumentBuilder`跟...共事：
+首先，初始化一個新的Aspose.Words`Document`物件和一個`DocumentBuilder`合作：
 
 ```csharp
 //初始化文件和DocumentBuilder

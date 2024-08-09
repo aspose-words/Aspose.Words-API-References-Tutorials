@@ -82,7 +82,7 @@ Memisahkan dokumen Word per bagian menjadi HTML sangatlah mudah dengan Aspose.Wo
 
 ### Apa itu Aspose.Words untuk .NET?
 
-Aspose.Words for .NET adalah perpustakaan yang kuat untuk bekerja dengan dokumen Word di aplikasi .NET. Ini memungkinkan Anda membuat, memodifikasi, dan mengonversi dokumen secara terprogram.
+Aspose.Words for .NET adalah perpustakaan yang kuat untuk bekerja dengan dokumen Word dalam aplikasi .NET. Ini memungkinkan Anda membuat, memodifikasi, dan mengonversi dokumen secara terprogram.
 
 ### Bisakah saya membagi dokumen Word berdasarkan kriteria lain?
 

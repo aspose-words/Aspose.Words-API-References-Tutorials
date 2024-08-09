@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-bookmarks/untangle/
 ---
-## Úvod
+## Zavedení
 
 Procházení dokumentu aplikace Word pomocí programu může být trochu jako hledání cesty bludištěm. Můžete se setkat se záložkami, nadpisy, tabulkami a dalšími prvky, se kterými je třeba manipulovat. Dnes se ponoříme do běžného, ale složitého úkolu: rozbalování záložek v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento tutoriál vás provede procesem krok za krokem a zajistí, že porozumíte každé části cesty.
 
@@ -111,7 +111,7 @@ Tento výukový program se zabývá záložkami, které se rozprostírají přes
 
 ### Je k dispozici zkušební verze Aspose.Words pro .NET?
 
- Ano můžeš[stáhnout zkušební verzi zdarma](https://releases.aspose.com/) z webu Aspose a prozkoumat funkce knihovny.
+ Ano, můžete[stáhnout zkušební verzi zdarma](https://releases.aspose.com/) z webu Aspose a prozkoumat funkce knihovny.
 
 ### Jak mohu získat podporu, pokud narazím na problémy?
 
@@ -119,4 +119,4 @@ Tento výukový program se zabývá záložkami, které se rozprostírají přes
 
 ### Potřebuji licenci k používání Aspose.Words pro .NET?
 
- Ano, Aspose.Words for .NET vyžaduje licenci pro plnou funkčnost. Můžete si zakoupit licenci[tady](https://purchase.aspose.com/buy) nebo požádat a[dočasná licence](https://purchase.aspose.com/temporary-license) pro účely hodnocení.
+ Ano, Aspose.Words for .NET vyžaduje licenci pro plnou funkčnost. Můžete si zakoupit licenci[zde](https://purchase.aspose.com/buy) nebo požádat a[dočasná licence](https://purchase.aspose.com/temporary-license) pro účely hodnocení.

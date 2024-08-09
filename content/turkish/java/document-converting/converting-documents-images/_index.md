@@ -66,7 +66,7 @@ Aspose.Words for Java ile belgeleri Java'da görsellere dönüştürmek artık �
  Görüntü çözünürlüğünü ayarlamak için`setResolution` yöntemi`ImageSaveOptions` ve istenen çözünürlüğü inç başına nokta (DPI) cinsinden belirtin.
 
 ### Belgenin belirli sayfalarını resimlere dönüştürebilir miyim?
- Evet, kullanarak bir sayfa aralığı belirleyebilirsiniz.`setPageCount`Ve`setPageIndex` Yöntemleri`ImageSaveOptions` belirli sayfaları resimlere dönüştürmek için.
+ Evet, kullanarak bir sayfa aralığı belirleyebilirsiniz.`setPageCount`Ve`setPageIndex` yöntemleri`ImageSaveOptions` belirli sayfaları resimlere dönüştürmek için.
 
 ### Aspose.Words for Java toplu belge dönüştürmeye uygun mu?
 Kesinlikle! Birden fazla belgeyi verimli bir şekilde toplu olarak görsellere dönüştürmek için Aspose.Words for Java'yı kullanabilirsiniz.

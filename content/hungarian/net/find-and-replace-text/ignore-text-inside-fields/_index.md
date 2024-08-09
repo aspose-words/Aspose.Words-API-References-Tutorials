@@ -39,14 +39,14 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 2. lépés: Szúrjon be egy mezőt szöveggel
 
- Használja a`InsertField` a metódusa`DocumentBuilder` szöveget tartalmazó mező hozzáadásához:
+ Használja a`InsertField` módszere`DocumentBuilder` szöveget tartalmazó mező hozzáadásához:
 ```csharp
 builder.InsertField("INCLUDETEXT", "Text in field");
 ```
 
 ## 3. lépés: A mezőkben lévő szöveg figyelmen kívül hagyása
 
- A mezők tartalmának figyelmen kívül hagyása mellett a szöveg módosításához használja a`FindReplaceOptions` a ... val`IgnoreFields` tulajdonság beállítva`true`:
+ A mezők tartalmának figyelmen kívül hagyása mellett a szöveg módosításához használja a`FindReplaceOptions` a`IgnoreFields` tulajdonság beállítva`true`:
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
 ```
@@ -59,7 +59,7 @@ Regex regex = new Regex("e");
 doc.Range.Replace(regex, "*", options);
 ```
 
-## 5. lépés: Módosított dokumentumszöveg kiadása
+## 5. lépés: A módosított dokumentumszöveg kiadása
 
 Töltse le és nyomtassa ki a módosított szöveget a végrehajtott cserék ellenőrzéséhez:
 ```csharp

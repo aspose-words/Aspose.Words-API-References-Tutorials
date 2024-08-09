@@ -10,7 +10,7 @@ url: /hu/net/working-with-section/copy-section/
 
 ## Bevezetés
 
-Sziasztok, Word rajongók! 📄 Előfordult már, hogy át kellett másolnia egy szakaszt egyik Word-dokumentumból a másikba, de azon kapta magát, hogy elakadt az ismétlődő manuális erőfeszítés? Nos, ne aggódj tovább! Az Aspose.Words for .NET segítségével könnyedén automatizálhatja ezt a feladatot. Ez az útmutató lépésről lépésre végigvezeti a szakaszok dokumentumok közötti másolásának folyamatán, így biztosítva a dokumentumkezelési munkafolyamat egyszerűsítését. Készen állsz a merülésre? Kezdjük el!
+Sziasztok, Word rajongók! 📄 Előfordult már, hogy át kellett másolnia egy szakaszt egyik Word-dokumentumból a másikba, de azon kapta magát, hogy elakadt az ismétlődő manuális erőfeszítés? Nos, ne aggódj tovább! Az Aspose.Words for .NET segítségével könnyedén automatizálhatja ezt a feladatot. Ez az útmutató lépésről lépésre végigvezeti a szakaszok dokumentumok közötti másolásának folyamatán, így biztosítva a dokumentumkezelési munkafolyamat egyszerűsítését. Készen állsz a merülésre? Kezdjük is!
 
 ## Előfeltételek
 
@@ -109,7 +109,7 @@ Igen, az Aspose.Words különféle Word-formátumokat támogat, beleértve a DOC
 
 ### Hol találok további forrásokat az Aspose.Words oldalon?
 
- További információért látogassa meg a[Aspose.Words API dokumentáció](https://reference.aspose.com/words/net/) vagy a[támogatói fórum](https://forum.aspose.com/c/words/8) segítségért és megbeszélésekért.
+ További információért látogassa meg a[Aspose.Words API dokumentáció](https://reference.aspose.com/words/net/) vagy a[támogatási fórum](https://forum.aspose.com/c/words/8) segítségért és megbeszélésekért.
 
 ### Kipróbálhatom ingyenesen az Aspose.Words for .NET-et?
 

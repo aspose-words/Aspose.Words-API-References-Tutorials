@@ -138,7 +138,7 @@ section.page_setup.odd_and_even_pages_header_footer = False
 
 ### Kann ich Kopf- und Fußzeilen Bilder hinzufügen?
 
- Ja, Sie können Bilder zu Kopf- und Fußzeilen hinzufügen, indem Sie`add_picture` Methode.
+ Ja, Sie können Bilder zu Kopf- und Fußzeilen hinzufügen, indem Sie`add_picture` Verfahren.
 
 ### Ist es möglich, unterschiedliche Kopfzeilen für gerade und ungerade Seiten zu haben?
 

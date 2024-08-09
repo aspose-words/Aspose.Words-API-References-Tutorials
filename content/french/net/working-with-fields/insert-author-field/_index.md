@@ -9,13 +9,13 @@ url: /fr/net/working-with-fields/insert-author-field/
 ---
 ## Introduction
 
-Dans ce didacticiel, nous approfondissons l'essentiel de la façon d'insérer un champ d'auteur dans un document Word à l'aide d'Aspose.Words pour .NET. Que vous automatisiez la création de documents pour votre entreprise ou que vous souhaitiez simplement personnaliser vos fichiers, ce guide étape par étape vous couvre. Nous passerons en revue tout, depuis la configuration de votre environnement jusqu'à l'enregistrement de votre document final. Commençons!
+Dans ce didacticiel, nous approfondissons l'essentiel de la façon d'insérer un champ d'auteur dans un document Word à l'aide d'Aspose.Words pour .NET. Que vous automatisiez la création de documents pour votre entreprise ou que vous souhaitiez simplement personnaliser vos fichiers, ce guide étape par étape vous couvre. Nous passerons en revue tout, depuis la configuration de votre environnement jusqu'à l'enregistrement de votre document final. Commençons !
 
 ## Conditions préalables
 
 Avant de passer au didacticiel, assurons-nous que vous disposez de tout ce dont vous avez besoin :
 
--  Aspose.Words pour la bibliothèque .NET : vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/).
+-  Aspose.Words pour la bibliothèque .NET : vous pouvez[téléchargez-le ici](https://releases.aspose.com/words/net/).
 - Visual Studio : c'est ici que nous allons écrire et exécuter notre code.
 - .NET Framework : assurez-vous qu'il est installé sur votre ordinateur.
 - Connaissance de base de C# : La familiarité avec la programmation C# vous aidera à suivre.
@@ -116,7 +116,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 doc.Save(dataDir + "InsertionAuthorField.docx");
 ```
 
-Et voila! Vous avez inséré avec succès un champ d'auteur dans un document Word à l'aide d'Aspose.Words pour .NET.
+Et voilà ! Vous avez inséré avec succès un champ d'auteur dans un document Word à l'aide d'Aspose.Words pour .NET.
 
 ## Conclusion
 
@@ -138,7 +138,7 @@ Aspose.Words propose un essai gratuit, mais pour bénéficier de toutes les fonc
 
 ### Puis-je ajouter d'autres types de champs à l'aide d'Aspose.Words ?
 
- Oui, Aspose.Words prend en charge différents types de champs, notamment la date, l'heure, le numéro de page, etc. Vérifier la[Documentation](https://reference.aspose.com/words/net/) pour plus de détails.
+ Oui, Aspose.Words prend en charge différents types de champs, notamment la date, l'heure, le numéro de page, etc. Vérifiez le[documentation](https://reference.aspose.com/words/net/) pour plus de détails.
 
 ### Où puis-je trouver de l'aide si je rencontre des problèmes ?
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/use-destination-styles/
 ---
-## Úvod
+## Zavedení
 
 Aspose.Words for .NET je výkonná knihovna pro programovou manipulaci s dokumenty Wordu. Ať už slučujete dokumenty nebo spravujete složité formátování, Aspose.Words nabízí robustní sadu funkcí, které vám usnadní úkoly. Dnes se ponoříme do toho, jak používat cílové styly při přidávání dokumentů. Tento průvodce vás provede vším od nezbytných předpokladů až po podrobné pokyny.
 
@@ -15,7 +15,7 @@ Aspose.Words for .NET je výkonná knihovna pro programovou manipulaci s dokumen
 
 Než začneme, ujistěte se, že máte vše, co potřebujete:
 
--  Aspose.Words for .NET: Pokud ji ještě nemáte, stáhněte si ji z[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Pokud ji ještě nemáte, stáhněte si ji z[zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Visual Studio nebo jakékoli jiné vývojové prostředí C#.
 - Základní znalost C#: Bude užitečné porozumět základům programování v C#.
 
@@ -88,4 +88,4 @@ U velkých dokumentů zvažte použití zpracování datových proudů, abyste s
 Aspose.Words umožňuje připojit dokumenty různých formátů, ale konečný dokument musí být uložen v jediném formátu.
 
 ### Jak mohu získat bezplatnou zkušební verzi Aspose.Words pro .NET?
- Můžete získat bezplatnou zkušební verzi[tady](https://releases.aspose.com/).
+ Můžete získat bezplatnou zkušební verzi[zde](https://releases.aspose.com/).

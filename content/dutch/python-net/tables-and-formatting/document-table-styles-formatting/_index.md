@@ -202,7 +202,7 @@ Zorg ervoor dat uw tafelindeling zich automatisch aanpast op basis van de inhoud
     table.allow_auto_fit = True
     ```
 
-2. Automatisch formaat van cellen wijzigen: schakel het automatisch aanpassen van de grootte van cellen in om inhoud te kunnen bevatten.
+2. Automatisch formaat van cellen wijzigen: schakel het automatisch aanpassen van de celgrootte in om inhoud te kunnen bevatten.
 
     ```python
     table.auto_fit(auto_fit_behaviour=aspose.words.AutoFitBehaviour.AUTO_FIT_TO_WINDOW)

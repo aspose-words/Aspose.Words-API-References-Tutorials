@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-在本節中，我們將使用 Aspose.Words for .NET 建立一個具有選項卡式縮排的多層清單。按著這些次序：
+在本節中，我們將使用 Aspose.Words for .NET 建立一個具有選項卡式縮排的多層清單。請依照下列步驟操作：
 
 ## 第 1 步：設定您的文檔
 

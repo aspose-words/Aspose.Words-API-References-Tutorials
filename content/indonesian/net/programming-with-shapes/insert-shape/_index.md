@@ -66,7 +66,7 @@ Shape shape = builder.InsertShape(ShapeType.TextBox, RelativeHorizontalPosition.
 shape.Rotation = 30.0;
 ```
 
-Pada contoh ini, kita menyisipkan kotak teks pada posisi (100, 100) dengan lebar dan tinggi masing-masing 50 satuan. Kami juga memutar bentuknya sebesar 30 derajat.
+Pada contoh ini kita menyisipkan text box pada posisi (100, 100) dengan lebar dan tinggi masing-masing 50 satuan. Kami juga memutar bentuknya sebesar 30 derajat.
 
 ## Langkah 4: Tambahkan Bentuk Lain
 
@@ -106,7 +106,7 @@ Dan itu dia! Anda telah berhasil menyisipkan dan memanipulasi bentuk dalam dokum
 ## FAQ
 
 ### Bagaimana cara menyisipkan berbagai jenis bentuk?
-Anda dapat mengubah`ShapeType` dalam`InsertShape` metode untuk menyisipkan berbagai jenis bentuk seperti lingkaran, persegi panjang, dan panah.
+Anda dapat mengubah`ShapeType` di`InsertShape` metode untuk menyisipkan berbagai jenis bentuk seperti lingkaran, persegi panjang, dan panah.
 
 ### Bisakah saya menambahkan teks di dalam bentuk?
  Ya, Anda dapat menggunakan`builder.Write` metode untuk menambahkan teks di dalam bentuk setelah memasukkannya.
@@ -115,7 +115,7 @@ Anda dapat mengubah`ShapeType` dalam`InsertShape` metode untuk menyisipkan berba
  Ya, Anda dapat mengatur gaya bentuk dengan mengatur properti seperti`FillColor`, `StrokeColor` , Dan`StrokeWeight`.
 
 ### Bagaimana cara memposisikan bentuk relatif terhadap elemen lainnya?
- Menggunakan`RelativeHorizontalPosition`Dan`RelativeVerticalPosition` properti untuk memposisikan bentuk relatif terhadap elemen lain dalam dokumen.
+ Gunakan`RelativeHorizontalPosition`Dan`RelativeVerticalPosition` properti untuk memposisikan bentuk relatif terhadap elemen lain dalam dokumen.
 
 ### Bisakah saya mengelompokkan beberapa bentuk menjadi satu?
  Ya, Aspose.Words untuk .NET memungkinkan Anda mengelompokkan bentuk menggunakan`GroupShape` kelas.

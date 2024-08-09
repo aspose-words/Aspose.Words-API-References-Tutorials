@@ -8,7 +8,7 @@ weight: 13
 url: /it/java/document-printing/printing-specific-document-pages/
 ---
 
-## introduzione
+## Introduzione
 
 La stampa di pagine specifiche di un documento può essere un requisito comune in varie applicazioni. Aspose.Words per Java semplifica questa attività fornendo un set completo di funzionalità per la gestione dei documenti Word. In questo tutorial creeremo un'applicazione Java che carica un documento Word e stampa solo le pagine desiderate.
 

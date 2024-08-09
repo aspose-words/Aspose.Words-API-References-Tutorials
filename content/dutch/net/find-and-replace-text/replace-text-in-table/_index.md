@@ -9,7 +9,7 @@ url: /nl/net/find-and-replace-text/replace-text-in-table/
 ---
 ## Invoering
 
-Hallo daar! Ben je klaar om in de wereld van documentautomatisering te duiken met Aspose.Words voor .NET? Vandaag behandelen we een superhandige tutorial over het vervangen van tekst in een tabel in een Word-document. Stel je voor dat je een Word-document hebt gevuld met tabellen en dat je specifieke tekst in die tabellen moet bijwerken. Dit handmatig doen kan heel lastig zijn, toch? Maar maak je geen zorgen, met Aspose.Words voor .NET kun je dit proces eenvoudig automatiseren. Laten we dit stap voor stap doornemen en u op de hoogte brengen!
+Hé daar! Ben je klaar om in de wereld van documentautomatisering te duiken met Aspose.Words voor .NET? Vandaag behandelen we een superhandige tutorial over het vervangen van tekst in een tabel in een Word-document. Stel je voor dat je een Word-document hebt gevuld met tabellen en dat je specifieke tekst in die tabellen moet bijwerken. Dit handmatig doen kan heel lastig zijn, toch? Maar maak je geen zorgen, met Aspose.Words voor .NET kun je dit proces eenvoudig automatiseren. Laten we dit stap voor stap doornemen en u op de hoogte brengen!
 
 ## Vereisten
 

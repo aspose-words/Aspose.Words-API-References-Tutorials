@@ -11,7 +11,7 @@ url: /fr/java/table-processing/creating-tables-rows/
 ## Introduction
 La création de tableaux et de lignes dans des documents est un aspect fondamental du traitement des documents, et Aspose.Words for Java rend cette tâche plus facile que jamais. Dans ce guide étape par étape, nous explorerons comment utiliser Aspose.Words pour Java pour créer des tableaux et des lignes dans vos documents. Que vous créiez des rapports, génériez des factures ou créiez tout document nécessitant une présentation de données structurées, ce guide est là pour vous.
 
-## La mise en scène
+## Préparer le terrain
  Avant de plonger dans les détails, assurons-nous que vous disposez de la configuration nécessaire pour travailler avec Aspose.Words pour Java. Assurez-vous d'avoir téléchargé et installé la bibliothèque. Si vous ne l'avez pas déjà fait, vous pouvez trouver le lien de téléchargement[ici](https://releases.aspose.com/words/java/).
 
 ## Construire des tableaux

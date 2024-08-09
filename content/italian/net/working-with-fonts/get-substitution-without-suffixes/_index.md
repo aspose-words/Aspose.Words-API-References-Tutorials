@@ -7,17 +7,18 @@ type: docs
 weight: 10
 url: /it/net/working-with-fonts/get-substitution-without-suffixes/
 ---
+## Introduzione
 
-Benvenuti in questa guida completa sulla gestione della sostituzione dei caratteri utilizzando Aspose.Words per .NET. Se hai mai avuto problemi con i caratteri che non vengono visualizzati correttamente nei tuoi documenti, sei nel posto giusto. Questo tutorial ti guiderà attraverso un processo passo passo per gestire in modo efficiente la sostituzione dei caratteri senza suffissi. Iniziamo!
+Benvenuti in questa guida completa sulla gestione della sostituzione dei caratteri utilizzando Aspose.Words per .NET. Se hai mai avuto problemi con i caratteri che non vengono visualizzati correttamente nei tuoi documenti, sei nel posto giusto. Questo tutorial ti guiderà attraverso un processo passo passo per gestire in modo efficiente la sostituzione dei caratteri senza suffissi.
 
 ## Prerequisiti
 
 Prima di immergerti nel tutorial, assicurati di avere quanto segue:
 
 - Conoscenza di base di C#: comprendere la programmazione in C# renderà più semplice seguire e implementare i passaggi.
--  Aspose.Words per .NET Library: scarica e installa la libreria da[Link per scaricare](https://releases.aspose.com/words/net/).
+-  Aspose.Words per .NET Library: scarica e installa la libreria da[collegamento per il download](https://releases.aspose.com/words/net/).
 - Ambiente di sviluppo: configura un ambiente di sviluppo come Visual Studio per scrivere ed eseguire il tuo codice.
-- Documento di esempio: un documento di esempio (ad es.`Rendering.docx`) con cui lavorare durante questo tutorial.
+-  Documento di esempio: un documento di esempio (ad es.`Rendering.docx`) con cui lavorare durante questo tutorial.
 
 ## Importa spazi dei nomi
 
@@ -26,7 +27,6 @@ Innanzitutto, dobbiamo importare gli spazi dei nomi necessari per accedere alle 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Fonts;
-using Aspose.Words.WarningInfo;
 using System.Collections.Generic;
 ```
 
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## Passaggio 5: creare la classe del gestore degli avvisi
 
-Per gestire gli avvisi in modo efficace, crea una classe personalizzata che implementi il file`IWarningCallback` interfaccia. Questa classe acquisirà e registrerà eventuali avvisi di sostituzione dei caratteri.
+ Per gestire gli avvisi in modo efficace, crea una classe personalizzata che implementi il file`IWarningCallback` interfaccia. Questa classe acquisirà e registrerà eventuali avvisi di sostituzione dei caratteri.
 
 ```csharp
 public class DocumentSubstitutionWarnings : IWarningCallback
@@ -93,7 +93,7 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 ```
 
 In questa classe:
--  IL`Warning` Il metodo acquisisce avvisi relativi alla sostituzione dei caratteri.
+-  IL`Warning`Il metodo acquisisce avvisi relativi alla sostituzione dei caratteri.
 -  IL`FontWarnings` collection memorizza questi avvisi per ulteriori controlli o registrazioni.
 
 ## Conclusione
@@ -102,22 +102,22 @@ Ora hai imparato il processo di gestione della sostituzione dei caratteri senza 
 
 ## Domande frequenti
 
-### Q1: Come posso utilizzare i caratteri da più directory personalizzate?
+### Come posso utilizzare i caratteri da più directory personalizzate?
 
  Puoi aggiungerne più di uno`FolderFontSource` istanze al`fontSources` elencare e aggiornare le fonti dei caratteri di conseguenza.
 
-### Q2: Dove posso scaricare una versione di prova gratuita di Aspose.Words per .NET?
+### Dove posso scaricare una versione di prova gratuita di Aspose.Words per .NET?
 
  È possibile scaricare una versione di prova gratuita da[Aspose la pagina di prova gratuita](https://releases.aspose.com/).
 
-###  Q3: Posso gestire più tipi di avvisi utilizzando`IWarningCallback`?
+###  Posso gestire più tipi di avvisi utilizzando`IWarningCallback`?
 
  Sì, il`IWarningCallback` l'interfaccia consente di gestire vari tipi di avvisi, non solo la sostituzione dei caratteri.
 
-### Q4: Dove posso ottenere supporto per Aspose.Words?
+### Dove posso ottenere supporto per Aspose.Words?
 
  Per supporto, visitare il[Forum di supporto di Aspose.Words](https://forum.aspose.com/c/words/8).
 
-### Q5: È possibile acquistare una licenza temporanea?
+### È possibile acquistare una licenza temporanea?
 
  Sì, puoi ottenere una licenza temporanea da[pagina della licenza temporanea](https://purchase.aspose.com/temporary-license/).

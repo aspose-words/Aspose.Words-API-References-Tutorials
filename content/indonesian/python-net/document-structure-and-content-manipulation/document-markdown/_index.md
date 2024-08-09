@@ -16,7 +16,7 @@ Aspose.Words untuk Python adalah perpustakaan serbaguna yang memungkinkan pengem
 
 ## Menyiapkan Lingkungan Anda
 
-Sebelum kita mendalami kodenya, pastikan lingkungan kita sudah diatur dengan benar. Ikuti langkah ini:
+Sebelum kita mendalami kodenya, pastikan lingkungan kita sudah diatur dengan benar. Ikuti langkah-langkah berikut:
 
 1. Instal Python di sistem Anda.
 2. Instal perpustakaan Aspose.Words untuk Python menggunakan pip:

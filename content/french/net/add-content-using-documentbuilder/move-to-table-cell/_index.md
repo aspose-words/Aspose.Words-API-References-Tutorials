@@ -58,7 +58,7 @@ C'est ici que la magie opère. Nous allons déplacer le constructeur vers une ce
 builder.MoveToCell(0, 2, 3, 0);
 ```
 
-## Étape 4 : ajouter du contenu à la cellule
+## Étape 4 : Ajouter du contenu à la cellule
 
 Maintenant que nous sommes à l'intérieur de la cellule, ajoutons du contenu.
 
@@ -77,7 +77,7 @@ Console.WriteLine(table.Rows[2].Cells[3].GetText().Trim());
 
 ## Conclusion
 
-Toutes nos félicitations! Vous venez d'apprendre comment accéder à une cellule de tableau spécifique dans un document Word à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque simplifie la manipulation des documents, rendant vos tâches de codage plus efficaces et plus agréables. Que vous travailliez sur des rapports complexes ou sur de simples modifications de documents, Aspose.Words fournit les outils dont vous avez besoin.
+Félicitations! Vous venez d'apprendre comment accéder à une cellule de tableau spécifique dans un document Word à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque simplifie la manipulation des documents, rendant vos tâches de codage plus efficaces et plus agréables. Que vous travailliez sur des rapports complexes ou sur de simples modifications de documents, Aspose.Words fournit les outils dont vous avez besoin.
 
 ## FAQ
 

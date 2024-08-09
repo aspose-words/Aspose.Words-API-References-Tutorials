@@ -59,7 +59,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 
 ## الخطوة 4: احفظ المستند بصيغة PDF
 
-بعد تكوين خيارات الحفظ، فإن الخطوة الأخيرة هي حفظ المستند كملف PDF. هذا هو المكان الذي يحدث السحر!
+بعد تكوين خيارات الحفظ، فإن الخطوة الأخيرة هي حفظ المستند كملف PDF. هذا هو المكان الذي يحدث فيه السحر!
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportDocumentStructure.pdf", saveOptions);

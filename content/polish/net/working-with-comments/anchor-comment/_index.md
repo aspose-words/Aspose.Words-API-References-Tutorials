@@ -127,7 +127,7 @@ Komentarze zakotwiczone służą do wyróżniania i komentowania określonych se
 ### Czy mogę dodać wiele komentarzy do tej samej sekcji tekstowej?
 Tak, możesz dodać wiele komentarzy do tej samej sekcji tekstowej, definiując wiele zakresów komentarzy.
 
-### Czy korzystanie z Aspose.Words dla .NET jest darmowe?
+### Czy korzystanie z Aspose.Words dla .NET jest bezpłatne?
 Aspose.Words dla .NET oferuje bezpłatną wersję próbną, którą możesz pobrać[Tutaj](https://releases.aspose.com/) . Aby uzyskać pełne funkcje, możesz kupić licencję[Tutaj](https://purchase.aspose.com/buy).
 
 ### Czy mogę dostosować wygląd komentarzy?

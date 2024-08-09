@@ -9,7 +9,7 @@ url: /hu/net/add-content-using-documentbuilder/insert-break/
 ---
 ## Bevezetés
 
-Halihó! Készen állsz, hogy belemerülj az Aspose.Words for .NET világába? Ez a nagy teljesítményű könyvtár olyan, mint egy svájci kés a Word dokumentumkezeléshez. Akár összetett dokumentum-automatizálási feladatokkal foglalkozik, akár csak egy egyszerű oldaltörést kell hozzáadnia, az Aspose.Words mindent megtesz. Ebben az oktatóanyagban lépésről lépésre bemutatjuk, hogyan lehet töréseket beszúrni egy Word-dokumentumba. Szóval, igyál egy csésze kávét, és kezdjük!
+Szia! Készen állsz, hogy belemerülj az Aspose.Words for .NET világába? Ez a nagy teljesítményű könyvtár olyan, mint egy svájci kés a Word dokumentumkezeléshez. Akár összetett dokumentum-automatizálási feladatokkal foglalkozik, akár csak egy egyszerű oldaltörést kell hozzáadnia, az Aspose.Words mindent megtesz. Ebben az oktatóanyagban lépésről lépésre bemutatjuk, hogyan lehet töréseket beszúrni egy Word-dokumentumba. Szóval, igyál egy csésze kávét, és kezdjük!
 
 ## Előfeltételek
 

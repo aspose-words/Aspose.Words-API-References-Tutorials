@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-tables/formatted-table/
 ---
-## Úvod
+## Zavedení
 
 Vytváření a formátování tabulek v dokumentech aplikace Word programově se může zdát jako skličující úkol, ale s Aspose.Words pro .NET se to stává přímočarým a ovladatelným. V tomto tutoriálu vás provedeme vytvořením formátované tabulky v dokumentu aplikace Word pomocí Aspose.Words for .NET. Pokryjeme vše od nastavení prostředí až po uložení dokumentu pomocí krásně formátované tabulky.
 
@@ -15,7 +15,7 @@ Vytváření a formátování tabulek v dokumentech aplikace Word programově se
 
 Než se ponoříte do kódu, ujistěte se, že máte vše, co potřebujete:
 
-1. Aspose.Words for .NET Library: Stáhněte si ji z[tady](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET Library: Stáhněte si ji z[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: IDE jako Visual Studio.
 3. .NET Framework: Ujistěte se, že máte na svém počítači nainstalované rozhraní .NET Framework.
 

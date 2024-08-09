@@ -17,7 +17,7 @@ Tanda hubung adalah proses memecah kata di akhir baris untuk meningkatkan tampil
 
 ### Pentingnya Tanda Hubung
 
-Tanda hubung memastikan dokumen Anda terlihat profesional dan menarik secara visual. Ini membantu menjaga aliran teks yang konsisten dan merata, menghilangkan gangguan yang disebabkan oleh spasi yang tidak teratur.
+Tanda hubung memastikan dokumen Anda terlihat profesional dan menarik secara visual. Ini membantu menjaga alur teks yang konsisten dan merata, menghilangkan gangguan yang disebabkan oleh spasi yang tidak teratur.
 
 ## Mengontrol Tanda Hubung
 
@@ -59,7 +59,7 @@ doc.save("sample_document.docx")
 
 ### Paginasi
 
-Penomoran halaman memastikan bahwa konten Anda dibagi menjadi beberapa halaman dengan tepat. Hal ini sangat penting untuk dokumen yang lebih besar untuk menjaga keterbacaan. Anda dapat mengontrol pengaturan penomoran halaman berdasarkan kebutuhan dokumen Anda.
+Penomoran halaman memastikan bahwa konten Anda dibagi menjadi beberapa halaman dengan tepat. Hal ini sangat penting untuk dokumen berukuran besar agar tetap mudah dibaca. Anda dapat mengontrol pengaturan penomoran halaman berdasarkan kebutuhan dokumen Anda.
 
 ### Istirahat Garis dan Halaman
 
@@ -98,7 +98,7 @@ Aspose.Words memungkinkan Anda untuk membenarkan atau menyelaraskan teks sesuai 
 
 ## Penanganan Janda dan Anak Yatim
 
-Janda (satu baris di bagian atas halaman) dan anak yatim (satu baris di bawah) dapat mengganggu alur dokumen Anda. Memanfaatkan pilihan untuk mencegah atau mengendalikan janda dan anak yatim piatu.
+Janda (satu baris di bagian atas halaman) dan anak yatim piatu (satu baris di bawah) dapat mengganggu alur dokumen Anda. Memanfaatkan pilihan untuk mencegah atau mengendalikan janda dan anak yatim piatu.
 
 ## Kesimpulan
 

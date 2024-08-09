@@ -9,13 +9,13 @@ url: /es/net/apply-license/apply-license-from-stream/
 ---
 ## Introducción
 
-¡Hola, compañeros programadores! Si se está sumergiendo en el mundo de Aspose.Words para .NET, una de las primeras cosas que debe hacer es solicitar una licencia para desbloquear todo el potencial de la biblioteca. En esta guía, le explicaremos cómo aplicar una licencia desde una transmisión. Créame, es más fácil de lo que parece y, al final de este tutorial, tendrá su aplicación funcionando sin problemas. ¿Listo para comenzar? ¡Vamos a entrar!
+¡Hola, compañeros programadores! Si se está sumergiendo en el mundo de Aspose.Words para .NET, una de las primeras cosas que debe hacer es solicitar una licencia para desbloquear todo el potencial de la biblioteca. En esta guía, le explicaremos cómo aplicar una licencia desde una transmisión. Créame, es más fácil de lo que parece y, al final de este tutorial, tendrá su aplicación funcionando sin problemas. ¿Listo para empezar? ¡Vamos a entrar!
 
 ## Requisitos previos
 
 Antes de ensuciarnos las manos, asegurémonos de que tiene todo lo que necesita:
 
-1.  Aspose.Words para .NET: asegúrese de tener la biblioteca instalada. Si no, puedes[descarguelo aqui](https://releases.aspose.com/words/net/).
+1.  Aspose.Words para .NET: asegúrese de tener la biblioteca instalada. Si no, puedes[descárgalo aquí](https://releases.aspose.com/words/net/).
 2.  Archivo de licencia: necesita un archivo de licencia válido. Si no tienes uno, puedes conseguir uno.[licencia temporal](https://purchase.aspose.com/temporary-license/) con fines de prueba.
 3. Conocimientos básicos de C#: se supone un conocimiento básico de la programación en C#.
 
@@ -52,7 +52,7 @@ using (MemoryStream stream = new MemoryStream(File.ReadAllBytes("Aspose.Words.li
 
 ## Paso 3: Aplicar la licencia
 
- Dentro de`using` bloquear, llamarás al`SetLicense` método en tu`license` objeto, pasando en el flujo de memoria. Este método establece la licencia para Aspose.Words.
+ dentro del`using` bloquear, llamarás al`SetLicense` método en tu`license` objeto, pasando en el flujo de memoria. Este método establece la licencia para Aspose.Words.
 
 ```csharp
 license.SetLicense(stream);
@@ -80,7 +80,7 @@ catch (Exception e)
 
 ## Conclusión
 
-¡Y ahí lo tienes! Aplicar una licencia de una secuencia en Aspose.Words para .NET es un proceso sencillo una vez que conoce los pasos. Si sigue esta guía, se asegurará de que su aplicación pueda aprovechar todas las capacidades de Aspose.Words sin ninguna limitación. Si encuentra algún problema, no dude en consultar el[documentación](https://reference.aspose.com/words/net/) o buscar ayuda en el[Foro de soporte](https://forum.aspose.com/c/words/8). ¡Feliz codificación!
+¡Y ahí lo tienes! Aplicar una licencia de una secuencia en Aspose.Words para .NET es un proceso sencillo una vez que conoce los pasos. Si sigue esta guía, se asegurará de que su aplicación pueda aprovechar todas las capacidades de Aspose.Words sin ninguna limitación. Si encuentra algún problema, no dude en consultar el[documentación](https://reference.aspose.com/words/net/) o buscar ayuda en el[foro de soporte](https://forum.aspose.com/c/words/8). ¡Feliz codificación!
 
 ## Preguntas frecuentes
 

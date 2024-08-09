@@ -27,7 +27,7 @@ doc = asposewords.Document("your_document.docx")
 
 ## Definição de títulos e subtítulos
 
-Para gerar um índice analítico, você precisa definir os títulos e subtítulos do seu documento. Use estilos de parágrafo apropriados para marcar essas seções. Por exemplo, use “Título 1” para títulos principais e “Título 2” para subtítulos.
+Para gerar um índice, você precisa definir os títulos e subtítulos do seu documento. Use estilos de parágrafo apropriados para marcar essas seções. Por exemplo, use “Título 1” para títulos principais e “Título 2” para subtítulos.
 
 ```python
 # Define headings and subheadings

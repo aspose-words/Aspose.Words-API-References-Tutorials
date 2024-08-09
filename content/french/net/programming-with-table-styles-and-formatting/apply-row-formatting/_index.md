@@ -91,7 +91,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx"
 
 ## Conclusion
 
-Et voila! Vous avez appliqué avec succès la mise en forme des lignes à un tableau dans un document Word à l'aide d'Aspose.Words pour .NET. Cette technique simple mais puissante peut grandement améliorer la lisibilité et l’esthétique de vos documents.
+Et voilà ! Vous avez appliqué avec succès la mise en forme des lignes à un tableau dans un document Word à l'aide d'Aspose.Words pour .NET. Cette technique simple mais puissante peut grandement améliorer la lisibilité et l’esthétique de vos documents.
 
 ## FAQ
 

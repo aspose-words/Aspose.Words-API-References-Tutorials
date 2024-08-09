@@ -121,7 +121,7 @@ options.setFontFamily("Times New Roman");
 
 ### كيف يمكنني جعل العلامة المائية شبه شفافة؟
 
- لجعل العلامة المائية شبه شفافة، قم بتعيين`setSemitransparent`الملكية ل`true` في ال`TextWatermarkOptions`.
+ لجعل العلامة المائية شبه شفافة، قم بتعيين`setSemitransparent`الملكية ل`true` في`TextWatermarkOptions`.
 
 ### هل يمكنني إضافة علامات مائية إلى أقسام معينة من المستند؟
 

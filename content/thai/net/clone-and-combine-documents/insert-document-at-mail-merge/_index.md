@@ -15,7 +15,7 @@ url: /th/net/clone-and-combine-documents/insert-document-at-mail-merge/
 
 ก่อนที่เราจะเริ่ม ตรวจสอบให้แน่ใจว่าคุณมีสิ่งต่อไปนี้:
 
-1.  Aspose.Words สำหรับ .NET: คุณทำได้[ดาวน์โหลดรุ่นล่าสุดที่นี่](https://releases.aspose.com/words/net/) - หากคุณต้องการซื้อใบอนุญาต คุณสามารถทำได้[ที่นี่](https://purchase.aspose.com/buy) - หรือคุณสามารถรับ[ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/) หรือลองใช้กับ[ทดลองฟรี](https://releases.aspose.com/).
+1.  Aspose.Words สำหรับ .NET: คุณทำได้[ดาวน์โหลดเวอร์ชันล่าสุดได้ที่นี่](https://releases.aspose.com/words/net/) - หากคุณต้องการซื้อใบอนุญาต คุณสามารถทำได้[ที่นี่](https://purchase.aspose.com/buy) - หรือคุณสามารถรับ[ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/) หรือลองใช้กับ[ทดลองใช้ฟรี](https://releases.aspose.com/).
 2. สภาพแวดล้อมการพัฒนา: Visual Studio หรือ C# IDE อื่น ๆ
 3. ความรู้พื้นฐานของ C#: ความคุ้นเคยกับการเขียนโปรแกรม C# จะทำให้บทช่วยสอนนี้เป็นเรื่องง่าย
 
@@ -139,7 +139,7 @@ private static void InsertDocument(Node insertionDestination, Document docToInse
 ## คำถามที่พบบ่อย
 
 ### ฉันสามารถแทรกเอกสารหลายฉบับในช่องผสานที่แตกต่างกันได้หรือไม่
-ใช่คุณสามารถ. เพียงระบุฟิลด์ผสานที่เหมาะสมและเส้นทางเอกสารที่เกี่ยวข้องใน`MailMerge.Execute` วิธี.
+ใช่คุณสามารถ เพียงระบุฟิลด์ผสานที่เหมาะสมและเส้นทางเอกสารที่เกี่ยวข้องใน`MailMerge.Execute` วิธี.
 
 ### เป็นไปได้ไหมที่จะจัดรูปแบบเอกสารที่แทรกแตกต่างจากเอกสารหลัก?
  อย่างแน่นอน! คุณสามารถใช้`ImportFormatMode` พารามิเตอร์ใน`NodeImporter` เพื่อควบคุมการจัดรูปแบบ

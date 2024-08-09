@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-table-styles-and-formatting/set-table-title-and-description/
 ---
-## introduzione
+## Introduzione
 
 Pronto a ravvivare i tuoi documenti Word aggiungendo titoli e descrizioni accattivanti alle tue tabelle? Sei nel posto giusto. Oggi ci immergiamo nella magia di Aspose.Words per .NET. Questo strumento è un vero punto di svolta per l'automazione dei documenti. Considerala la tua arma segreta per rendere i tuoi documenti Word super professionali senza sudare troppo. Allora rimbocchiamoci le maniche e iniziamo questa avventura.
 
@@ -76,7 +76,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetTableTitleAndDescript
 
 ## Conclusione
 
-il gioco è fatto! Hai appena aggiunto un titolo e una descrizione a una tabella in un documento di Word utilizzando Aspose.Words per .NET. È come aggiungere una ciliegina sulla torta del tuo documento. Questo piccolo tocco può rendere i tuoi documenti più informativi e professionali. Quindi vai avanti, sperimenta titoli e descrizioni diversi e fai brillare i tuoi documenti!
+Ed ecco qua! Hai appena aggiunto un titolo e una descrizione a una tabella in un documento di Word utilizzando Aspose.Words per .NET. È come aggiungere una ciliegina sulla torta del tuo documento. Questo piccolo tocco può rendere i tuoi documenti più informativi e professionali. Quindi vai avanti, sperimenta titoli e descrizioni diversi e fai brillare i tuoi documenti!
 
 ## Domande frequenti
 

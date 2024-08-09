@@ -1,6 +1,6 @@
 ---
-title: Füge Kommentare hinzu
-linktitle: Füge Kommentare hinzu
+title: Kommentare hinzufügen
+linktitle: Kommentare hinzufügen
 second_title: Aspose.Words Dokumentverarbeitungs-API
 description: Erfahren Sie in unserem Handbuch, wie Sie mit Aspose.Words für .NET Kommentare zu Ihren Word-Dokumenten hinzufügen. Verbessern Sie mühelos Ihren Dokumenten-Zusammenarbeitsprozess.
 type: docs

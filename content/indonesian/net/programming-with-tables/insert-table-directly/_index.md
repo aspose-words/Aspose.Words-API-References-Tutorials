@@ -14,7 +14,7 @@ Membuat tabel secara terprogram bisa menjadi sebuah tantangan, terutama ketika b
 
 Sebelum mendalami kodenya, pastikan Anda memiliki semua yang Anda perlukan untuk memulai. Berikut daftar periksa singkatnya:
 
-1.  Perpustakaan Aspose.Words untuk .NET: Pastikan Anda telah mengunduh dan menginstal perpustakaan Aspose.Words untuk .NET. Anda bisa mendapatkannya dari[Unduh Halaman](https://releases.aspose.com/words/net/).
+1.  Perpustakaan Aspose.Words untuk .NET: Pastikan Anda telah mengunduh dan menginstal perpustakaan Aspose.Words untuk .NET. Anda bisa mendapatkannya dari[halaman unduhan](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Lingkungan pengembangan seperti Visual Studio.
 3. Pengetahuan Dasar C#: Memahami dasar-dasar pemrograman C#.
 4. Direktori Dokumen: Jalur direktori tempat Anda menyimpan dokumen.
@@ -134,7 +134,7 @@ Selamat! Anda telah berhasil menyisipkan tabel langsung ke dokumen Word mengguna
 ## FAQ
 
 ### Bagaimana cara mengunduh Aspose.Words untuk .NET?
- Anda dapat mengunduh Aspose.Words untuk .NET dari[Unduh Halaman](https://releases.aspose.com/words/net/).
+ Anda dapat mengunduh Aspose.Words untuk .NET dari[halaman unduhan](https://releases.aspose.com/words/net/).
 
 ### Bisakah saya mencoba Aspose.Words untuk .NET sebelum membeli?
  Ya, Anda dapat meminta a[uji coba gratis](https://releases.aspose.com/) untuk mengevaluasi perpustakaan sebelum membeli.

@@ -15,10 +15,10 @@ Hej, entuzjaści technologii i czarodzieje dokumentów! 🌟 Czy kiedykolwiek st
 
 Zanim zagłębimy się w magię łączenia pól tekstowych, upewnijmy się, że mamy przygotowane wszystkie niezbędne elementy:
 
-1. Biblioteka Aspose.Words dla .NET: Będziesz potrzebować najnowszej wersji Aspose.Words dla .NET. Możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1. Biblioteka Aspose.Words dla .NET: Będziesz potrzebować najnowszej wersji Aspose.Words dla .NET. Możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: Środowisko programistyczne .NET, takie jak Visual Studio, jest niezbędne do pisania i testowania kodu.
 3. Podstawowa znajomość języka C#: Podstawowa znajomość języka C# pomoże Ci postępować zgodnie z przykładami kodu.
-4. Przykładowy dokument programu Word: Chociaż nie jest to absolutnie konieczne w tym samouczku, pomocne może być posiadanie przykładowego dokumentu programu Word w celu przetestowania połączonych pól tekstowych.
+4. Przykładowy dokument programu Word: Chociaż nie jest to absolutnie konieczne w przypadku tego samouczka, pomocne może być posiadanie przykładowego dokumentu programu Word w celu przetestowania połączonych pól tekstowych.
 
 ## Importuj przestrzenie nazw
 
@@ -66,7 +66,7 @@ W tym fragmencie:
 
 ## Krok 3: Dostęp do obiektów TextBox
 
- Każdy`Shape` obiekt ma`TextBox` Właściwość dająca dostęp do właściwości i metod pola tekstowego. Tutaj konfigurujemy zawartość pola tekstowego i linki.
+ Każdy`Shape` obiekt ma`TextBox` Właściwość zapewniająca dostęp do właściwości i metod pola tekstowego. Tutaj konfigurujemy zawartość pola tekstowego i linki.
 
 ### Pobieranie obiektów TextBox
 
@@ -81,7 +81,7 @@ TextBox textBox2 = shape2.TextBox;
 
 ## Krok 4: Łączenie pól tekstowych
 
- Magiczna chwila! Teraz łączymy`textBox1` Do`textBox2` . Oznacza to, że gdy tekst się przepełni`textBox1` , będzie kontynuowany w`textBox2`.
+ Magiczna chwila! Teraz łączymy`textBox1` Do`textBox2` . Oznacza to, że gdy tekst się przepełni`textBox1` , będzie kontynuowany`textBox2`.
 
 ### Sprawdzanie ważności łącza
 

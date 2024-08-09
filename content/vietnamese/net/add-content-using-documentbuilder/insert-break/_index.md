@@ -15,7 +15,7 @@ Này! Bạn đã sẵn sàng đi sâu vào thế giới của Aspose.Words cho .
 
 Trước khi bắt đầu viết mã, hãy đảm bảo rằng chúng ta có mọi thứ mình cần:
 
-1.  Aspose.Words for .NET Thư viện: Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/) . Nếu bạn là người mới sử dụng Aspose, bạn có thể muốn bắt đầu với[dùng thử miễn phí](https://releases.aspose.com/).
+1.  Aspose.Words for .NET Thư viện: Bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/) . Nếu bạn là người mới sử dụng Aspose, bạn có thể muốn bắt đầu với[dùng thử miễn phí](https://releases.aspose.com/).
 2. Môi trường phát triển: Visual Studio hoặc bất kỳ IDE tương thích .NET nào khác.
 3. .NET Framework: Đảm bảo bạn đã cài đặt .NET Framework.
 4. Kiến thức cơ bản về C#: Hướng dẫn này giả sử bạn đã quen thuộc với lập trình C#.
@@ -52,7 +52,7 @@ Document doc = new Document();
 
 ## Bước 3: Khởi tạo DocumentBuilder
 
- Các`DocumentBuilder` giống như cọ vẽ của bạn. Nó giúp bạn thêm nội dung vào tài liệu của bạn. Hãy khởi tạo nó.
+ các`DocumentBuilder` giống như cọ vẽ của bạn. Nó giúp bạn thêm nội dung vào tài liệu của bạn. Hãy khởi tạo nó.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -106,7 +106,7 @@ Cuối cùng nhưng không kém phần quan trọng, chúng ta cần lưu tài l
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
 ```
 
-Và bạn có nó rồi đấy! Bạn đã tạo thành công tài liệu Word và chèn ngắt trang bằng Aspose.Words cho .NET.
+Và bạn có nó! Bạn đã tạo thành công tài liệu Word và chèn ngắt trang bằng Aspose.Words cho .NET.
 
 ## Phần kết luận
 

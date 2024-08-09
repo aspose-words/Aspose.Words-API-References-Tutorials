@@ -89,7 +89,7 @@ Aspose.Words for .NET을 사용하여 문서 간 머리글과 바닥글을 연�
 Aspose.Words는 다양한 버전의 .NET Framework 및 .NET Core를 지원하여 플랫폼 간 호환성을 보장합니다.
 
 ### 머리글과 바닥글을 연결한 후 연결을 해제할 수 있나요?
-예, Aspose.Words API 메소드를 사용하여 머리글과 바닥글의 연결을 해제하여 개별 문서 서식을 복원할 수 있습니다.
+예, Aspose.Words API 메소드를 사용하여 머리글과 바닥글의 연결을 해제하여 개별 문서 형식을 복원할 수 있습니다.
 
 ### .NET용 Aspose.Words에 대한 자세한 문서는 어디서 찾을 수 있나요?
  방문하다[.NET 문서용 Aspose.Words](https://reference.aspose.com/words/net/) 포괄적인 가이드 및 API 참조를 확인하세요.

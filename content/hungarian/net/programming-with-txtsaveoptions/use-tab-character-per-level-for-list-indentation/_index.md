@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Ebben a részben egy többszintű listát fogunk létrehozni tabulátoros behúzással az Aspose.Words for .NET használatával. Kovesd ezeket a lepeseket:
+Ebben a részben egy többszintű listát fogunk létrehozni tabulátoros behúzással az Aspose.Words for .NET használatával. Kövesse az alábbi lépéseket:
 
 ## 1. lépés: Állítsa be a dokumentumot
 
@@ -121,7 +121,7 @@ Igen, az Aspose.Words lehetővé teszi a listastílusok testreszabását külön
  Használja a`ListFormat.ApplyBulletDefault()` módszer helyett`ApplyNumberDefault()` pontozott lista létrehozásához.
 
 ### Hogyan állíthatom be a behúzáshoz használt tabulátor karakter méretét?
- Sajnos a fül mérete be`TxtSaveOptions`megjavítva. A behúzás méretének módosításához szükség lehet szóközök használatára vagy a lista formázásának közvetlen testreszabására.
+ Sajnos a lap mérete be`TxtSaveOptions`rögzített. A behúzás méretének módosításához szükség lehet szóközök használatára vagy a lista formázásának közvetlen testreszabására.
 
 ### Használhatom ezeket a beállításokat, ha más formátumba, például PDF vagy DOCX formátumba exportálok?
 A tabulátor karakter beállításai a szöveges fájlokra vonatkoznak. Az olyan formátumok esetében, mint a PDF vagy a DOCX, ezeken a formátumokon belül módosítania kell a formázási beállításokat.

@@ -2,7 +2,7 @@
 title: Index de recherche
 linktitle: Index de recherche
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment trouver l'index des tableaux, des lignes et des cellules dans les documents Word à l'aide d'Aspose.Words pour .NET avec ce guide complet étape par étape.
+description: Découvrez comment trouver l'index des tableaux, des lignes et des cellules dans les documents Word à l'aide d'Aspose.Words for .NET avec ce guide complet étape par étape.
 type: docs
 weight: 10
 url: /fr/net/programming-with-tables/finding-index/

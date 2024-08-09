@@ -9,7 +9,7 @@ url: /fr/net/join-and-append-documents/append-document-to-blank/
 ---
 ## Introduction
 
-Salut! Vous êtes-vous déjà demandé comment ajouter de manière transparente un document à un document vierge à l'aide d'Aspose.Words pour .NET ? Tu n'es pas seul! Que vous soyez un développeur chevronné ou que vous vous lancez simplement dans le monde de l'automatisation des documents, ce guide est là pour vous aider à naviguer dans le processus. Nous détaillerons les étapes de manière à ce qu'elles soient faciles à suivre, même si vous n'êtes pas un expert en codage. Alors, prenez une tasse de café, asseyez-vous et plongeons dans le monde de la manipulation de documents avec Aspose.Words for .NET !
+Salut! Vous êtes-vous déjà demandé comment ajouter de manière transparente un document à un document vierge à l'aide d'Aspose.Words pour .NET ? Vous n'êtes pas seul ! Que vous soyez un développeur chevronné ou que vous vous lancez simplement dans le monde de l'automatisation des documents, ce guide est là pour vous aider à naviguer dans le processus. Nous détaillerons les étapes de manière à ce qu'elles soient faciles à suivre, même si vous n'êtes pas un expert en codage. Alors, prenez une tasse de café, asseyez-vous et plongeons dans le monde de la manipulation de documents avec Aspose.Words for .NET !
 
 ## Conditions préalables
 
@@ -108,7 +108,7 @@ Après avoir ajouté les documents, la dernière étape consiste à enregistrer 
    dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocumentToBlank.docx");
    ```
 
-Et voila! Vous avez réussi à ajouter un document à un document vierge à l'aide d'Aspose.Words pour .NET. N'était-ce pas plus facile que vous ne le pensiez ?
+Et voilà ! Vous avez réussi à ajouter un document à un document vierge à l'aide d'Aspose.Words pour .NET. N'était-ce pas plus facile que vous ne le pensiez ?
 
 ## Conclusion
 

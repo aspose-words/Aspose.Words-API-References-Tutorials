@@ -115,7 +115,7 @@ foreach (Bookmark bookmark in doc.Range.Bookmarks)
 Aspose.Words for .NET — мощная библиотека для программной работы с документами Word. Он позволяет создавать, изменять и конвертировать документы без установки Microsoft Word.
 
 ### Как установить Aspose.Words для .NET?
- Вы можете загрузить Aspose.Words для .NET с сайта[Веб-сайт](https://releases.aspose.com/words/net/). Следуйте предоставленным инструкциям по установке.
+ Вы можете загрузить Aspose.Words для .NET с сайта[веб-сайт](https://releases.aspose.com/words/net/). Следуйте предоставленным инструкциям по установке.
 
 ### Могу ли я использовать Aspose.Words для .NET с другими языками программирования?
 Да, Aspose.Words for .NET можно использовать с любым языком, поддерживаемым .NET, включая C#, VB.NET и F#.

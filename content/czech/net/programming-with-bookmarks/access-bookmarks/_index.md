@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-bookmarks/access-bookmarks/
 ---
-## Úvod
+## Zavedení
 
 V dnešní digitální době je automatizace úloh zpracování dokumentů nutností. Ať už pracujete s velkými sadami dokumentů nebo jen potřebujete zefektivnit svůj pracovní postup, pochopení toho, jak programově manipulovat s dokumenty Wordu, vám může ušetřit spoustu času. Jedním z důležitých aspektů je přístup k záložkám v dokumentu aplikace Word. Tato příručka vás provede procesem přístupu k záložkám v dokumentu aplikace Word pomocí Aspose.Words for .NET. Pojďme se tedy ponořit a dostat vás do tempa!
 
@@ -15,7 +15,7 @@ V dnešní digitální době je automatizace úloh zpracování dokumentů nutno
 
 Než se pustíme do podrobného průvodce, budete potřebovat několik věcí:
 
--  Aspose.Words for .NET: Stáhněte a nainstalujte jej z[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Stáhněte a nainstalujte jej z[zde](https://releases.aspose.com/words/net/).
 - .NET Framework: Ujistěte se, že jej máte nainstalovaný na vývojovém počítači.
 - Základní znalost C#: Tento tutoriál předpokládá, že máte základní znalosti o programování v C#.
 - Dokument aplikace Word: Ujistěte se, že máte dokument aplikace Word se záložkami k testování.
@@ -69,7 +69,7 @@ Vysvětlení:
 - `doc.Range.Bookmarks["MyBookmark3"]`: Toto zpřístupní záložku s názvem "MyBookmark3".
 - `Bookmark bookmark2 = doc.Range.Bookmarks["MyBookmark3"];` : Toto uloží zpřístupněnou záložku do`bookmark2` variabilní.
 
-## Krok 4: Manipulujte s obsahem záložky
+## Krok 4: Manipulujte s obsahem záložek
 
 Jakmile vstoupíte do záložky, můžete manipulovat s jejím obsahem. Můžete například aktualizovat text v záložce.
 

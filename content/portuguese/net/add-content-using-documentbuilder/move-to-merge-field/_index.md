@@ -13,10 +13,10 @@ Ei! Você já se viu enterrado em um documento do Word, tentando descobrir como 
 
 ## Pré-requisitos
 
-Antes de entrarmos no âmago da questão, vamos colocar nossos patos em uma fileira. Aqui está o que você precisa para começar:
+Antes de entrarmos no âmago da questão, vamos colocar nossos patos em ordem. Aqui está o que você precisa para começar:
 
 -  Visual Studio: certifique-se de ter o Visual Studio instalado em sua máquina. Se não, você pode baixá-lo[aqui](https://visualstudio.microsoft.com/).
--  Aspose.Words para .NET: Você precisa da biblioteca Aspose.Words. Você pode baixá-lo em[esse link](https://releases.aspose.com/words/net/).
+-  Aspose.Words para .NET: Você precisa da biblioteca Aspose.Words. Você pode baixá-lo em[este link](https://releases.aspose.com/words/net/).
 - .NET Framework: certifique-se de ter o .NET Framework instalado.
 
 ## Importar namespaces
@@ -115,7 +115,7 @@ Aspose.Words for .NET é uma biblioteca poderosa que permite aos desenvolvedores
  Sim, Aspose.Words for .NET é compatível com .NET Core. Você pode encontrar mais detalhes no[documentação](https://reference.aspose.com/words/net/).
 
 ### Como obtenho uma licença temporária do Aspose.Words?
- Você pode obter uma licença temporária em[esse link](https://purchase.aspose.com/temporary-license/).
+ Você pode obter uma licença temporária em[este link](https://purchase.aspose.com/temporary-license/).
 
 ### Onde posso encontrar mais exemplos e suporte para Aspose.Words for .NET?
  Para mais exemplos e suporte, visite o[Fórum Aspose.Words para .NET](https://forum.aspose.com/c/words/8).

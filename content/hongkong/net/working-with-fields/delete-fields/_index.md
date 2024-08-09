@@ -15,7 +15,7 @@ url: /zh-hant/net/working-with-fields/delete-fields/
 
 在深入學習本教程之前，請確保您具備以下先決條件：
 
-### 軟體要求
+### 軟體需求
 
 1. Visual Studio：已在您的系統上安裝並設定。
 2.  Aspose.Words for .NET：下載並整合到您的 Visual Studio 專案中。您可以從以下位置下載：[這裡](https://releases.aspose.com/words/net/).
@@ -100,4 +100,4 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 是的，這裡顯示的方法專門針對字段，其他內容保持不變。
 
 ### 在哪裡可以找到有關 Aspose.Words 的更多資源和支援？
-參觀[Aspose.Words for .NET API 文檔](https://reference.aspose.com/words/net/)和[Aspose.Words 論壇](https://forum.aspose.com/c/words/8)為進一步協助。
+參觀[Aspose.Words for .NET API 文檔](https://reference.aspose.com/words/net/)和[Aspose.Words 論壇](https://forum.aspose.com/c/words/8)以獲得進一步的幫助。

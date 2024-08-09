@@ -8,7 +8,7 @@ weight: 11
 url: /it/java/document-revision/comparing-document-versions/
 ---
 
-## introduzione
+## Introduzione
 
 Il confronto tra documenti implica l'analisi di due o più versioni di un documento per identificare differenze e somiglianze. Aspose.Words per Java fornisce gli strumenti per eseguire questa attività in modo efficiente. In questa guida ti guideremo attraverso l'intero processo, dalla configurazione del tuo ambiente di sviluppo al salvataggio del documento confrontato.
 

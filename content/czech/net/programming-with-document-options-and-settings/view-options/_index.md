@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-document-options-and-settings/view-options/
 ---
-## Úvod
+## Zavedení
 
 Ahoj, kolego kodéru! Přemýšleli jste někdy, jak změnit způsob zobrazení dokumentů aplikace Word pomocí Aspose.Words pro .NET? Ať už chcete přepnout na jiný typ zobrazení nebo přiblížit a oddálit, abyste na svůj dokument viděli dokonalý pohled, jste na správném místě. Dnes se ponoříme do světa Aspose.Words pro .NET, konkrétně se zaměříme na to, jak manipulovat s možnostmi zobrazení. Vše rozebereme do jednoduchých, stravitelných kroků, takže z vás bude během chvilky expert. Připraveni? Začněme!
 
@@ -15,7 +15,7 @@ Ahoj, kolego kodéru! Přemýšleli jste někdy, jak změnit způsob zobrazení 
 
 Než se po hlavě ponoříme do kódu, ujistěte se, že máme vše, co potřebujeme, abychom spolu s tímto tutoriálem dodrželi. Zde je rychlý kontrolní seznam:
 
-1.  Knihovna Aspose.Words for .NET: Ujistěte se, že máte knihovnu Aspose.Words for .NET. Můžeš[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Knihovna Aspose.Words for .NET: Ujistěte se, že máte knihovnu Aspose.Words for .NET. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Na vašem počítači byste měli mít nainstalované IDE jako Visual Studio.
 3. Základní znalost C#: I když budeme mít věci jednoduché, základní znalost C# bude prospěšná.
 4. Ukázkový dokument aplikace Word: Připravte si ukázkový dokument aplikace Word. Pro tento tutoriál jej budeme označovat jako „Document.docx“.
@@ -82,7 +82,7 @@ tady to máte! Změna možností zobrazení dokumentu aplikace Word pomocí Aspo
 
 ### Jaké další typy zobrazení mohu pro svůj dokument nastavit?
 
- Aspose.Words for .NET podporuje několik typů zobrazení, včetně`PrintLayout`, `WebLayout`, `Reading` , a`Outline`. Tyto možnosti můžete prozkoumat podle svých potřeb.
+ Aspose.Words for .NET podporuje několik typů zobrazení, včetně`PrintLayout`, `WebLayout`, `Reading` a`Outline`. Tyto možnosti můžete prozkoumat podle svých potřeb.
 
 ### Mohu nastavit různé úrovně přiblížení pro různé části mého dokumentu?
 

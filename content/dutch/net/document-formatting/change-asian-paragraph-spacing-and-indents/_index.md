@@ -9,7 +9,7 @@ url: /nl/net/document-formatting/change-asian-paragraph-spacing-and-indents/
 ---
 ## Invoering
 
-Hallo daar! Heeft u zich ooit afgevraagd hoe u de spatiëring en inspringingen in een Word-document kunt aanpassen, vooral als het om Aziatische typografie gaat? Als u werkt met documenten die talen als Chinees, Japans of Koreaans bevatten, is het u wellicht opgevallen dat de standaardinstellingen niet altijd volstaan. Wees niet bang! In deze zelfstudie gaan we in op hoe u de Aziatische alinea-afstand en inspringingen kunt wijzigen met Aspose.Words voor .NET. Het is eenvoudiger dan u denkt en uw documenten kunnen er veel professioneler uitzien. Klaar om uw documentopmaak te verfraaien? Laten we beginnen!
+Hé daar! Heeft u zich ooit afgevraagd hoe u de spatiëring en inspringingen in een Word-document kunt aanpassen, vooral als het om Aziatische typografie gaat? Als u werkt met documenten die talen als Chinees, Japans of Koreaans bevatten, is het u wellicht opgevallen dat de standaardinstellingen niet altijd volstaan. Vrees niet! In deze zelfstudie gaan we in op hoe u de Aziatische alinea-afstand en inspringingen kunt wijzigen met Aspose.Words voor .NET. Het is eenvoudiger dan u denkt en uw documenten kunnen er veel professioneler uitzien. Klaar om uw documentopmaak te verfraaien? Laten we beginnen!
 
 ## Vereisten
 
@@ -75,9 +75,9 @@ format.LineUnitBefore = 5;  // ParagraphFormat.SpaceBefore wordt bijgewerkt
 format.LineUnitAfter = 10;  // ParagraphFormat.SpaceAfter wordt bijgewerkt
 ```
 
-Door de regeleenheid ervoor en erna in te stellen op respectievelijk 5 en 10 eenheden, zorgt u ervoor dat er voldoende ruimte tussen de alinea's is, waardoor het document beter leesbaar wordt.
+Als u de regeleenheid voor en na instelt op respectievelijk 5 en 10 eenheden, zorgt u ervoor dat er voldoende ruimte tussen de alinea's is, waardoor het document beter leesbaar wordt.
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Ten slotte moeten we, nadat we al deze aanpassingen hebben aangebracht, het gewijzigde document opslaan.
 

@@ -1,13 +1,13 @@
 ---
-title: Lista ordinata
-linktitle: Lista ordinata
+title: Elenco ordinato
+linktitle: Elenco ordinato
 second_title: API di elaborazione dei documenti Aspose.Words
 description: Scopri come creare elenchi ordinati nei documenti Word utilizzando Aspose.Words per .NET con la nostra guida passo passo. Perfetto per automatizzare la creazione di documenti.
 type: docs
 weight: 10
 url: /it/net/working-with-markdown/ordered-list/
 ---
-## introduzione
+## Introduzione
 
 Quindi, hai deciso di immergerti in Aspose.Words per .NET per creare straordinari documenti Word a livello di codice. Scelta fantastica! Oggi analizzeremo come creare un elenco ordinato in un documento di Word. Lo procederemo passo dopo passo, quindi che tu sia un principiante della programmazione o un professionista esperto, troverai questa guida estremamente utile. Iniziamo!
 
@@ -15,7 +15,7 @@ Quindi, hai deciso di immergerti in Aspose.Words per .NET per creare straordinar
 
 Prima di immergerci nel codice, ci sono alcune cose di cui avrai bisogno:
 
-1.  Aspose.Words per .NET: assicurati di avere Aspose.Words per .NET installato. In caso contrario, puoi scaricarlo[Qui](https://releases.aspose.com/words/net/).
+1. Aspose.Words per .NET: assicurati di avere Aspose.Words per .NET installato. In caso contrario, puoi scaricarlo[Qui](https://releases.aspose.com/words/net/).
 2. Ambiente di sviluppo: Visual Studio o qualsiasi altro IDE compatibile con .NET.
 3. Conoscenza di base di C#: dovresti avere dimestichezza con le nozioni di base di C# per seguirle facilmente.
 
@@ -82,7 +82,7 @@ Creare un elenco ordinato in un documento Word a livello di programmazione può 
 ## Domande frequenti
 
 ### Posso personalizzare lo stile di numerazione dell'elenco?  
- Sì, puoi personalizzare lo stile di numerazione utilizzando il file`ListFormat` proprietà. Puoi impostare diversi stili di numerazione come numeri romani, lettere, ecc.
+ Sì, puoi personalizzare lo stile di numerazione utilizzando il file`ListFormat`proprietà. Puoi impostare diversi stili di numerazione come numeri romani, lettere, ecc.
 
 ### Come posso aggiungere più livelli di rientro?  
  Puoi usare il`ListIndent` metodo più volte per creare livelli più profondi di sottoelenchi. Ogni chiamata a`ListIndent` aggiunge un livello di rientro.

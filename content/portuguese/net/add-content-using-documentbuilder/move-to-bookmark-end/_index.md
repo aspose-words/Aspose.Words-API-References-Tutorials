@@ -16,7 +16,7 @@ Olá, colega programador! Você já se viu envolvido na teia de manipulações d
 Antes de começarmos, vamos ter certeza de que temos tudo o que precisamos:
 
 -  Visual Studio: você pode baixá-lo em[aqui](https://visualstudio.microsoft.com/).
--  Aspose.Words for .NET: pegue-o no[Link para Download](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: pegue-o no[link para baixar](https://releases.aspose.com/words/net/).
 -  Uma licença Aspose.Words válida: você pode obter uma licença temporária[aqui](https://purchase.aspose.com/temporary-license/) se você não tiver um.
 
 E, claro, algum conhecimento básico de C# e .NET será de grande ajuda.
@@ -138,7 +138,7 @@ Aí está! Você acabou de aprender como ir para o final de um marcador em um do
 
 ### 3. Posso inserir outros tipos de conteúdo no final do marcador?
 
- Sim, o DocumentBuilder permite inserir vários tipos de conteúdo, como tabelas, imagens e muito mais. Verifica a[documentação](https://reference.aspose.com/words/net/) para mais detalhes.
+ Sim, o DocumentBuilder permite inserir vários tipos de conteúdo, como tabelas, imagens e muito mais. Verifique o[documentação](https://reference.aspose.com/words/net/) para mais detalhes.
 
 ### 4. Como obtenho uma licença temporária do Aspose.Words?
 

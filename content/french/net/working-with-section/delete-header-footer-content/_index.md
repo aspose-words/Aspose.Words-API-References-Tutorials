@@ -9,7 +9,7 @@ url: /fr/net/working-with-section/delete-header-footer-content/
 ---
 ## Introduction
 
-Salut, les amateurs de documents Word ! 📝 Avez-vous déjà eu besoin d'effacer les en-têtes et les pieds de page d'un document Word, mais vous vous êtes retrouvé enlisé par cet effort manuel fastidieux ? Eh bien, ne vous inquiétez plus ! Avec Aspose.Words pour .NET, vous pouvez automatiser cette tâche en quelques étapes seulement. Ce guide vous guidera tout au long du processus de suppression du contenu d'en-tête et de pied de page d'un document Word à l'aide d'Aspose.Words pour .NET. Prêt à nettoyer ces documents ? Commençons!
+Salut, les amateurs de documents Word ! 📝 Avez-vous déjà eu besoin d'effacer les en-têtes et les pieds de page d'un document Word, mais vous vous êtes retrouvé enlisé par cet effort manuel fastidieux ? Eh bien, ne vous inquiétez plus ! Avec Aspose.Words pour .NET, vous pouvez automatiser cette tâche en quelques étapes seulement. Ce guide vous guidera tout au long du processus de suppression du contenu d'en-tête et de pied de page d'un document Word à l'aide d'Aspose.Words pour .NET. Prêt à nettoyer ces documents ? Commençons !
 
 ## Conditions préalables
 
@@ -84,7 +84,7 @@ doc.Save(dataDir + "Document_Without_Headers_Footers.docx");
 
 ## Conclusion
 
-Et voila! 🎉 Vous avez réussi à effacer les en-têtes et les pieds de page d'un document Word à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité pratique peut vous faire gagner beaucoup de temps, notamment lorsque vous traitez des documents volumineux ou des tâches répétitives. N'oubliez pas que la pratique rend parfait, alors continuez à expérimenter différentes fonctionnalités d'Aspose.Words pour devenir un véritable assistant de manipulation de documents. Bon codage !
+Et voilà ! 🎉 Vous avez réussi à effacer les en-têtes et les pieds de page d'un document Word à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité pratique peut vous faire gagner beaucoup de temps, notamment lorsque vous traitez des documents volumineux ou des tâches répétitives. N'oubliez pas que la pratique rend parfait, alors continuez à expérimenter différentes fonctionnalités d'Aspose.Words pour devenir un véritable assistant de manipulation de documents. Bon codage !
 
 ## FAQ
 

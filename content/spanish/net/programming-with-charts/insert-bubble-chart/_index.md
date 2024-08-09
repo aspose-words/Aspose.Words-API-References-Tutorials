@@ -89,7 +89,7 @@ doc.Save(dataDir + "WorkingWithCharts.InsertBubbleChart.docx");
 
 ### ¿Puedo personalizar la apariencia del gráfico de burbujas?
 
- ¡Absolutamente! Aspose.Words para .NET ofrece una amplia gama de opciones de personalización, desde colores y etiquetas hasta formato de series de datos. Revisar la[documentación](https://reference.aspose.com/words/net/) para más detalles.
+ ¡Absolutamente! Aspose.Words para .NET ofrece una amplia gama de opciones de personalización, desde colores y etiquetas hasta formato de series de datos. Mira el[documentación](https://reference.aspose.com/words/net/) para más detalles.
 
 ### ¿Es posible agregar varios gráficos a un solo documento?
 

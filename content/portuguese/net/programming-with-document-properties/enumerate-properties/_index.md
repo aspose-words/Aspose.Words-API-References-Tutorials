@@ -103,7 +103,7 @@ aí está! Você enumerou com êxito as propriedades internas e personalizadas d
  Sim, você pode adicionar novas propriedades personalizadas usando o`CustomDocumentProperties` coleção.
 
 ### O uso do Aspose.Words é gratuito?
- Aspose.Words oferece um[teste grátis](https://releases.aspose.com/) e diferente[opções de compra](https://purchase.aspose.com/buy).
+ Aspose.Words oferece um[teste gratuito](https://releases.aspose.com/) e diferente[opções de compra](https://purchase.aspose.com/buy).
 
 ### Como obtenho suporte para Aspose.Words?
  Você pode obter suporte da comunidade Aspose[aqui](https://forum.aspose.com/c/words/8).
@@ -112,4 +112,4 @@ aí está! Você enumerou com êxito as propriedades internas e personalizadas d
 Sim, Aspose.Words oferece suporte a várias linguagens .NET, incluindo VB.NET.
 
 ### Onde posso encontrar mais exemplos?
- Confira a[Documentação do Aspose.Words para .NET](https://reference.aspose.com/words/net/) para mais exemplos e informações detalhadas.
+ Confira o[Documentação do Aspose.Words para .NET](https://reference.aspose.com/words/net/) para mais exemplos e informações detalhadas.

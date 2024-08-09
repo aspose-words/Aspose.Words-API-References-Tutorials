@@ -9,7 +9,7 @@ url: /ja/net/add-content-using-documentbuilder/move-to-bookmark-end/
 ---
 ## 導入
 
-こんにちは、プログラマーの皆さん! ブックマークの末尾に正確に移動して、その直後にコンテンツを追加する方法を見つけようとして、Word 文書の操作に困ったことはありませんか? 今日はラッキーな日です! Word 文書をプロのように扱える強力なライブラリである Aspose.Words for .NET について詳しく説明します。このチュートリアルでは、ブックマークの末尾に移動して、そこにテキストを挿入する手順を説明します。さあ、始めましょう!
+こんにちは、プログラマーの皆さん！Word 文書の操作に困惑し、ブックマークの末尾に正確に移動して、その直後にコンテンツを追加する方法を見つけようとしたことはありますか？今日はラッキーな日です！Word 文書をプロのように扱える強力なライブラリである Aspose.Words for .NET について詳しく説明します。このチュートリアルでは、ブックマークの末尾に移動して、そこにテキストを挿入する手順を説明します。さあ、始めましょう！
 
 ## 前提条件
 
@@ -130,7 +130,7 @@ doc.Save(dataDir + "UpdatedBookmarks.docx");
 
 ### 1. ブックマークの最後ではなく先頭に移動できますか?
 
-もちろんです！`isBookmarkStart`パラメータに`true`そして`isBookmarkEnd`に`false`の中に`MoveToBookmark`方法。
+もちろんです！`isBookmarkStart`パラメータに`true`そして`isBookmarkEnd`に`false`の`MoveToBookmark`方法。
 
 ### 2. ブックマーク名が間違っている場合はどうなりますか?
 
@@ -138,7 +138,7 @@ doc.Save(dataDir + "UpdatedBookmarks.docx");
 
 ### 3. ブックマークの最後に他の種類のコンテンツを挿入できますか?
 
-はい、DocumentBuilderでは表や画像など様々なコンテンツタイプを挿入できます。[ドキュメンテーション](https://reference.aspose.com/words/net/)詳細については。
+はい、DocumentBuilderでは表や画像など様々なコンテンツタイプを挿入できます。[ドキュメント](https://reference.aspose.com/words/net/)詳細についてはこちらをご覧ください。
 
 ### 4. Aspose.Words の一時ライセンスを取得するにはどうすればよいですか?
 

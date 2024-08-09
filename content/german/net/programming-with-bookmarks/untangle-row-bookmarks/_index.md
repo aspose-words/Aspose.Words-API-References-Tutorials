@@ -17,7 +17,7 @@ Diese Anleitung führt Sie durch den Prozess der Entwirrung von Zeilenlesezeiche
 
 Bevor Sie loslegen, benötigen Sie einige Dinge:
 
-1.  Aspose.Words für .NET: Diese kommerzielle Bibliothek bietet Funktionen für die programmgesteuerte Arbeit mit Word-Dokumenten. 2. Sie können eine kostenlose Testversion herunterladen von[Download-Link](https://releases.aspose.com/words/net/) oder erwerben Sie eine Lizenz bei[kaufen](https://purchase.aspose.com/buy).
+1.  Aspose.Words für .NET: Diese kommerzielle Bibliothek bietet Funktionen für die programmgesteuerte Arbeit mit Word-Dokumenten. 2. Sie können eine kostenlose Testversion herunterladen von[Downloadlink](https://releases.aspose.com/words/net/) oder erwerben Sie eine Lizenz bei[kaufen](https://purchase.aspose.com/buy).
 3. AC#-Entwicklungsumgebung: Visual Studio oder jede andere C#-IDE funktionieren einwandfrei.
 4. Ein Word-Dokument mit Zeilenlesezeichen: Zu Demonstrationszwecken verwenden wir ein Beispieldokument mit dem Namen „Tabellenspaltenlesezeichen.docx“.
 
@@ -65,7 +65,7 @@ private void Untangle(Document doc)
 Hier ist eine schrittweise Erklärung, was der Code macht:
 
  Wir durchlaufen alle Lesezeichen im Dokument mit einem`foreach` Schleife.
-Für jedes Lesezeichen rufen wir die übergeordnete Zeile sowohl des Lesezeichenanfangs (`bookmark.BookmarkStart`) und das Lesezeichenende (`bookmark.BookmarkEnd` ) Verwendung der`GetAncestor` Methode.
+Für jedes Lesezeichen rufen wir die übergeordnete Zeile sowohl des Lesezeichenanfangs (`bookmark.BookmarkStart`) und das Lesezeichenende (`bookmark.BookmarkEnd` ) mit dem`GetAncestor` Verfahren.
 Anschließend prüfen wir, ob beide Zeilen gefunden werden (`row1 != null`Und`row2 != null`) und wenn es sich um benachbarte Zeilen handelt (`row1.NextSibling == row2`). Dadurch wird sichergestellt, dass wir nur Lesezeichen ändern, die sich über benachbarte Zeilen erstrecken.
 Wenn die Bedingungen erfüllt sind, verschieben wir den Lesezeichen-Endknoten an das Ende des letzten Absatzes in der letzten Zelle der obersten Zeile (`row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd)`) und entwirrt sie effektiv.
 
@@ -87,12 +87,12 @@ Hier ist eine Aufschlüsselung dieser Funktion:
 
 Wir nehmen den Lesezeichennamen (`bookmarkName`) als Eingabe.
  Wir ermitteln das entsprechende Lesezeichenobjekt mit`doc.Range.Bookmarks[bookmarkName]`.
-Wir erhalten dann die übergeordnete Zeile des Lesezeichens mit`GetAncestor` (ähnlich wie`Untangle` Funktion).
+Wir erhalten dann die übergeordnete Zeile des Lesezeichens mit`GetAncestor` (ähnlich wie die`Untangle` Funktion).
 Abschließend prüfen wir, ob das Lesezeichen und die Zeile vorhanden sind (`bookmark != null` Und
 
 ## Schritt 4: Entwirrung überprüfen
 
- Während`Untangle` Funktion soll die Sicherheit anderer Lesezeichen gewährleisten, es ist immer eine gute Praxis, dies zu überprüfen. So können wir überprüfen, ob beim Entwirrungsprozess nicht versehentlich das Ende eines anderen Lesezeichens gelöscht wurde:
+ Während die`Untangle` Funktion soll die Sicherheit anderer Lesezeichen gewährleisten, es ist immer eine gute Praxis, dies zu überprüfen. So können wir überprüfen, ob beim Entwirrungsprozess nicht versehentlich das Ende eines anderen Lesezeichens gelöscht wurde:
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)
@@ -103,7 +103,7 @@ Dieser Codeausschnitt prüft, ob das Ende des Lesezeichens mit dem Namen „ROW1
 
 ## Schritt 5: Speichern Sie das Dokument
 
- Nachdem Sie die Lesezeichen entwirrt und ggf. Zeilen gelöscht haben, speichern Sie das geänderte Dokument mit dem`Save` Methode:
+ Nachdem Sie die Lesezeichen entwirrt und ggf. Zeilen gelöscht haben, speichern Sie das geänderte Dokument mit dem`Save` Verfahren:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithBookmarks.UntangleRowBookmarks.docx");
@@ -119,7 +119,7 @@ Dadurch wird das Dokument mit den entwirrten Lesezeichen und allen gelöschten Z
 
 ### Ist Aspose.Words für .NET kostenlos?
 
- Aspose.Words für .NET ist eine kommerzielle Bibliothek mit einer kostenlosen Testversion. Sie können sie herunterladen von[Download-Link](https://releases.aspose.com/words/net/).
+ Aspose.Words für .NET ist eine kommerzielle Bibliothek mit einer kostenlosen Testversion. Sie können sie herunterladen von[Downloadlink](https://releases.aspose.com/words/net/).
 
 ### Kann ich Zeilenlesezeichen in Word manuell entwirren?
 

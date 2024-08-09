@@ -15,7 +15,7 @@ Beim Arbeiten mit Dokumenten, insbesondere für berufliche oder akademische Zwec
 
 Bevor Sie beginnen, müssen Sie Folgendes sicherstellen:
 
-1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie Aspose.Words für .NET installiert haben. Wenn nicht, können Sie[Laden Sie die neueste Version hier](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie Aspose.Words für .NET installiert haben. Wenn nicht, können Sie[Laden Sie hier die neueste Version herunter](https://releases.aspose.com/words/net/).
 2. Eine .NET-Entwicklungsumgebung: Sie benötigen eine funktionierende .NET-Entwicklungsumgebung wie beispielsweise Visual Studio.
 3. Grundlegende Kenntnisse in C#: Wenn Sie mit der Programmiersprache C# vertraut sind, können Sie den Schritten problemlos folgen.
 4. Ein Word-Dokument: Halten Sie ein Word-Dokument bereit, das Sie in ein PDF konvertieren.

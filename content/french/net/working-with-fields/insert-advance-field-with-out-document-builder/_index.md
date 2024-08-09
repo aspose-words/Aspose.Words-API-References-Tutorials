@@ -52,7 +52,7 @@ Maintenant que notre projet est mis en place, nous devons initialiser un nouveau
 
 ### Initialiser le document
 
-1.  Dans ton`Program.cs` fichier, commencez par créer un nouveau document :
+1.  Dans votre`Program.cs` fichier, commencez par créer un nouveau document :
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -126,7 +126,7 @@ Cela enregistre le document avec le champ avancé inclus.
 
 ## Conclusion
 
-Et voila! Vous avez réussi à insérer un champ avancé dans un document Word sans utiliser la classe DocumentBuilder. En suivant ces étapes, vous avez exploité la puissance d’Aspose.Words for .NET pour manipuler des documents Word par programme. Que vous automatisiez la génération de rapports ou créiez des modèles de documents complexes, ces connaissances vous seront sans aucun doute utiles. Continuez à expérimenter et à explorer les capacités d’Aspose.Words pour faire passer le traitement de vos documents au niveau supérieur !
+Et voilà ! Vous avez réussi à insérer un champ avancé dans un document Word sans utiliser la classe DocumentBuilder. En suivant ces étapes, vous avez exploité la puissance d’Aspose.Words for .NET pour manipuler des documents Word par programme. Que vous automatisiez la génération de rapports ou créiez des modèles de documents complexes, ces connaissances vous seront sans aucun doute utiles. Continuez à expérimenter et à explorer les capacités d’Aspose.Words pour faire passer le traitement de vos documents au niveau supérieur !
 
 ## FAQ
 

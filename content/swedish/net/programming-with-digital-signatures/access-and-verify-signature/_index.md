@@ -9,7 +9,7 @@ url: /sv/net/programming-with-digital-signatures/access-and-verify-signature/
 ---
 ## Introduktion
 
-Hej där, andra teknikentusiaster! Har du någonsin hamnat i en situation där du behövde komma åt och verifiera digitala signaturer i ett Word-dokument men hade ingen aning om var du skulle börja? Nåväl, du har tur! Idag dyker vi in i den underbara världen av Aspose.Words för .NET, ett kraftfullt bibliotek som gör det enkelt att hantera Word-dokument. Vi kommer att leda dig genom processen steg för steg, så i slutet av den här guiden kommer du att vara ett proffs på att verifiera digitala signaturer i Word-dokument. Låt oss börja!
+Hej där, andra teknikentusiaster! Har du någonsin hamnat i en situation där du behövde komma åt och verifiera digitala signaturer i ett Word-dokument men hade ingen aning om var du skulle börja? Nåväl, du har tur! Idag dyker vi in i den underbara världen av Aspose.Words för .NET, ett kraftfullt bibliotek som gör det enkelt att hantera Word-dokument. Vi kommer att leda dig genom processen steg för steg, så i slutet av den här guiden kommer du att vara ett proffs på att verifiera digitala signaturer i Word-dokument. Låt oss komma igång!
 
 ## Förutsättningar
 
@@ -29,11 +29,11 @@ using Aspose.Words;
 using Aspose.Words.DigitalSignatures;
 ```
 
-Okej, låt oss dela upp det här i hanterbara steg. Varje steg guidar dig genom en specifik del av processen. Redo? Nu går vi!
+Okej, låt oss dela upp det här i hanterbara steg. Varje steg guidar dig genom en specifik del av processen. Redo? Låt oss gå!
 
 ## Steg 1: Konfigurera ditt projekt
 
-Innan du kan verifiera en digital signatur måste du konfigurera ditt projekt i Visual Studio. Här är hur:
+Innan du kan verifiera en digital signatur måste du konfigurera ditt projekt i Visual Studio. Så här gör du:
 
 ### Skapa ett nytt projekt
 
@@ -58,7 +58,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Digitally signed.docx");
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog. Detta kodavsnitt initierar en ny`Document` objekt och laddar ditt signerade Word-dokument.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog. Detta kodavsnitt initierar en ny`Document` objekt och laddar ditt signerade Word-dokument.
 
 ## Steg 3: Få tillgång till de digitala signaturerna
 

@@ -115,4 +115,4 @@ Sí, Aspose.Words admite varios idiomas, pero en este tutorial nos hemos centrad
 Sí, puede integrar Aspose.Words en aplicaciones web, aplicaciones de escritorio y más.
 
 ### ¿Dónde puedo encontrar más ejemplos y documentación?
- Revisar la[Documentación de Aspose.Words](https://reference.aspose.com/words/net/) para obtener más ejemplos y guías detalladas.
+ Mira el[Documentación de Aspose.Words](https://reference.aspose.com/words/net/) para obtener más ejemplos y guías detalladas.

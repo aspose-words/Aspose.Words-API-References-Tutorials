@@ -15,7 +15,7 @@ Möchten Sie programmgesteuert mit Word-Dokumenten arbeiten? Aspose.Words für .
 
 Bevor wir mit dem Tutorial beginnen, benötigen Sie für den Einstieg einige Dinge:
 
--  Aspose.Words für .NET: Sie können[hier herunterladen](https://releases.aspose.com/words/net/).
+-  Aspose.Words für .NET: Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 - Entwicklungsumgebung: Visual Studio wird empfohlen, Sie können jedoch jede beliebige C#-IDE verwenden.
 - Grundkenntnisse in C#: Grundlegende Kenntnisse in C# erleichtern Ihnen den Lernprozess.
 
@@ -103,7 +103,7 @@ Und da haben Sie es! Sie haben erfolgreich sowohl integrierte als auch benutzerd
  Ja, Sie können neue benutzerdefinierte Eigenschaften hinzufügen mit dem`CustomDocumentProperties` Sammlung.
 
 ### Ist die Nutzung von Aspose.Words kostenlos?
- Aspose.Words bietet eine[Kostenlose Testphase](https://releases.aspose.com/) und anders[Kaufoptionen](https://purchase.aspose.com/buy).
+ Aspose.Words bietet eine[Kostenlose Testversion](https://releases.aspose.com/) und anders[Kaufoptionen](https://purchase.aspose.com/buy).
 
 ### Wie erhalte ich Support für Aspose.Words?
  Sie können Unterstützung von der Aspose-Community erhalten[Hier](https://forum.aspose.com/c/words/8).
@@ -112,4 +112,4 @@ Und da haben Sie es! Sie haben erfolgreich sowohl integrierte als auch benutzerd
 Ja, Aspose.Words unterstützt mehrere .NET-Sprachen, einschließlich VB.NET.
 
 ### Wo finde ich weitere Beispiele?
- Besuche die[Aspose.Words für .NET-Dokumentation](https://reference.aspose.com/words/net/) für weitere Beispiele und ausführliche Informationen.
+ Schauen Sie sich die[Aspose.Words für .NET-Dokumentation](https://reference.aspose.com/words/net/) für weitere Beispiele und ausführliche Informationen.

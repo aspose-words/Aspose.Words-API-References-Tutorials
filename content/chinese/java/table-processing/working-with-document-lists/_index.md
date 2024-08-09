@@ -116,7 +116,7 @@ public class ExtractListItemsExample {
 ## 常见问题 (FAQ)
 
 ### 如何在文档列表中添加项目符号？
-要将项目符号添加到文档列表中，请在创建列表时使用适当的 ListTemplate。例如，使用`ListTemplate.BULLET_DEFAULT`代替`ListTemplate.NUMBER_DEFAULT`.
+要将项目符号添加到文档列表中，请在创建列表时使用适当的 ListTemplate。例如，使用`ListTemplate.BULLET_DEFAULT`而不是`ListTemplate.NUMBER_DEFAULT`.
 
 ### 我可以更改列表项的格式吗？
 是的，您可以使用 Aspose.Words for Java 的格式化功能自定义列表项的格式，包括字体、大小、颜色等。

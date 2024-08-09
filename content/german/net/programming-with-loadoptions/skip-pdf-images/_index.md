@@ -73,7 +73,7 @@ Wenn die Ladeoptionen festgelegt sind, können Sie das PDF-Dokument laden. Diese
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
- Sicher gehen, dass`"Pdf Document.pdf"` ist der Name Ihrer PDF-Datei im angegebenen Verzeichnis.
+ Stellen Sie sicher, dass`"Pdf Document.pdf"` ist der Name Ihrer PDF-Datei im angegebenen Verzeichnis.
 
 ## Abschluss
 

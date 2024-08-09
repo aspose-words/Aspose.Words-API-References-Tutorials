@@ -45,7 +45,7 @@ Este fragmento de código primero define la ruta del directorio donde reside su 
 
 ## Paso 2: accede al marcador
 
- Piense en un marcador como una bandera que marca una ubicación específica dentro de su documento. Para modificar su contenido, primero debemos encontrarlo. Aspose.Words ofrece la`Bookmarks` colección dentro del`Range` objeto, permitiéndole recuperar un marcador específico por su nombre. Así es como lo hacemos:
+ Piense en un marcador como una bandera que marca una ubicación específica dentro de su documento. Para modificar su contenido, primero debemos encontrarlo. Aspose.Words ofrece la`Bookmarks` colección dentro del`Range` objeto, lo que le permite recuperar un marcador específico por su nombre. Así es como lo hacemos:
 
 ```csharp
 Bookmark bookmark = doc.Range.Bookmarks["MyBookmark1"];

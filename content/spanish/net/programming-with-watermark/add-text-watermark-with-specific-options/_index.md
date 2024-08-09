@@ -109,4 +109,4 @@ Aspose.Words admite agregar una marca de agua a la vez. Para agregar varias marc
 
 ### ¿Qué pasa si necesito una marca de agua semitransparente?
 
- Selecciona el`IsSemitrasparent`propiedad a`true` para que su marca de agua sea semitransparente.
+ Establecer el`IsSemitrasparent`propiedad a`true` para que su marca de agua sea semitransparente.

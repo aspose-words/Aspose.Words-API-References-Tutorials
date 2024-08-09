@@ -161,7 +161,7 @@ A biztonsági funkciókon kívül az Aspose.Words számos funkciót kínál szö
 
 ## Következtetés
 
-Összefoglalva, a dokumentumok védelme elengedhetetlen az érzékeny információk védelme és a bizalmas kezelés érdekében. A lépésenkénti útmutató követésével megtanulta, hogyan valósíthatja meg a dokumentumbiztonságot a Python segítségével az Aspose.Words for Python használatával. Emlékezik
+Összefoglalva, a dokumentumok védelme elengedhetetlen az érzékeny információk védelme és a bizalmas kezelés érdekében. A lépésenkénti útmutató követésével megtanulta, hogyan valósíthatja meg a dokumentumbiztonságot a Python segítségével az Aspose.Words for Python használatával. Emlékezz
 
  hogy alkalmazza a legjobb gyakorlatokat, és proaktív maradjon digitális eszközei védelmében.
 

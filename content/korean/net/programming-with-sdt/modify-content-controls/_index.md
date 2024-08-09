@@ -15,7 +15,7 @@ Word 문서로 작업한 적이 있고 .NET용 Aspose.Words를 사용하여 일�
 
 콘텐츠 컨트롤 수정의 핵심을 시작하기 전에 다음 사항이 있는지 확인하세요.
 
-1.  .NET용 Aspose.Words 설치: Aspose.Words 라이브러리가 설치되어 있는지 확인하세요. 그렇지 않다면 할 수 있습니다[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+1.  .NET용 Aspose.Words 설치: Aspose.Words 라이브러리가 설치되어 있는지 확인하세요. 그렇지 않다면 할 수 있습니다[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 
 2. C# 기본 지식: 이 자습서에서는 사용자가 기본 C# 프로그래밍 개념에 익숙하다고 가정합니다.
 

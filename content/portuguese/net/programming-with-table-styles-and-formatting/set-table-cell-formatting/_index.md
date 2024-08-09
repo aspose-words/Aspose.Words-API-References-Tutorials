@@ -15,7 +15,7 @@ Você já se perguntou como tornar seus documentos do Word mais profissionais e 
 
 Antes de começarmos, certifique-se de ter o seguinte:
 
-1.  Aspose.Words for .NET: Você pode baixá-lo no[Link para Download](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Você pode baixá-lo no[Baixar link](https://releases.aspose.com/words/net/).
 2. Ambiente de desenvolvimento: Visual Studio ou qualquer outro IDE que suporte desenvolvimento .NET.
 3. Conhecimento básico de C#: Compreensão dos conceitos básicos de programação e sintaxe em C#.
 4.  Seu diretório de documentos: certifique-se de ter um diretório designado para salvar seus documentos. Vamos nos referir a isso como`YOUR DOCUMENT DIRECTORY`.

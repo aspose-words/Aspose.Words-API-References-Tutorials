@@ -107,7 +107,7 @@ Diese Codezeile speichert das Dokument mit dem Namen "AddContentUsingDocumentBui
 Aspose.Words für .NET ist eine Bibliothek, die es Entwicklern ermöglicht, Word-Dokumente programmgesteuert mit C# zu erstellen, zu ändern und zu konvertieren.
 
 ### Kann ich Kopf- und Fußzeilen Bilder hinzufügen?
- Ja, Sie können Bilder zu Kopf- und Fußzeilen hinzufügen, indem Sie`DocumentBuilder.InsertImage` Methode.
+ Ja, Sie können Bilder zu Kopf- und Fußzeilen hinzufügen, indem Sie`DocumentBuilder.InsertImage` Verfahren.
 
 ### Ist es möglich, für jeden Abschnitt unterschiedliche Kopf- und Fußzeilen zu haben?
  Absolut! Sie können für jeden Abschnitt einzigartige Kopf- und Fußzeilen haben, indem Sie verschiedene`HeaderFooterType` für jeden Abschnitt.
@@ -116,4 +116,4 @@ Aspose.Words für .NET ist eine Bibliothek, die es Entwicklern ermöglicht, Word
 Sie können Tabellen, Bilder und verschiedene Formatierungsoptionen von Aspose.Words verwenden, um komplexe Layouts zu erstellen.
 
 ### Wo finde ich weitere Beispiele und Tutorials?
- Besuche die[Dokumentation](https://reference.aspose.com/words/net/) und das[Hilfeforum](https://forum.aspose.com/c/words/8) für weitere Beispiele und Community-Unterstützung.
+ Schauen Sie sich die[Dokumentation](https://reference.aspose.com/words/net/) und die[Support-Forum](https://forum.aspose.com/c/words/8) für weitere Beispiele und Community-Unterstützung.

@@ -99,7 +99,7 @@ Zastosuj licencję Metered
         }
 ```
 
-## 7. Wnioski
+## 7. Wniosek
 
 W tym samouczku omówiliśmy podstawowe kroki stosowania licencji na Aspose.Words dla Java. Licencjonowanie jest niezbędne, aby uwolnić pełny potencjał tej potężnej biblioteki. Teraz możesz bezproblemowo tworzyć, edytować i manipulować dokumentami programu Word w aplikacjach Java.
 
@@ -107,7 +107,7 @@ W tym samouczku omówiliśmy podstawowe kroki stosowania licencji na Aspose.Word
 ## Często zadawane pytania
 
 ### Jak uzyskać tymczasową licencję na Aspose.Words dla Java?
- Odwiedzić[Strona tymczasowej licencji Aspose](https://purchase.aspose.com/temporary-license/) ubiegać się o licencję tymczasową.
+ Odwiedź[Strona tymczasowej licencji Aspose](https://purchase.aspose.com/temporary-license/) ubiegać się o licencję tymczasową.
 
 ### Czy mogę używać Aspose.Words dla Java bez licencji?
 Tak, ale będzie działać w trybie próbnym z ograniczeniami. Aby uzyskać pełną funkcjonalność, zaleca się uzyskanie ważnej licencji.

@@ -9,7 +9,7 @@ url: /pl/net/programming-with-digital-signatures/signing-existing-signature-line
 ---
 ## Wstęp
 
-No hej! Czy kiedykolwiek musiałeś podpisać dokument cyfrowy, ale było to trochę kłopotliwe? Masz szczęście, ponieważ dzisiaj zagłębimy się w sposób, w jaki możesz bez wysiłku podpisać istniejącą linię podpisu w dokumencie programu Word za pomocą Aspose.Words dla .NET. Ten samouczek przeprowadzi Cię przez proces krok po kroku, dzięki czemu poradzisz sobie z tym zadaniem w mgnieniu oka.
+Hej tam! Czy kiedykolwiek musiałeś podpisać dokument cyfrowy, ale było to trochę kłopotliwe? Masz szczęście, ponieważ dzisiaj zagłębimy się w sposób, w jaki możesz bez wysiłku podpisać istniejącą linię podpisu w dokumencie programu Word za pomocą Aspose.Words dla .NET. Ten samouczek przeprowadzi Cię przez proces krok po kroku, dzięki czemu poradzisz sobie z tym zadaniem w mgnieniu oka.
 
 ## Warunki wstępne
 

@@ -64,7 +64,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- Hier erstellen wir ein neues`PdfSaveOptions` Objekt und legen Sie dessen`EncryptionDetails` . Das Passwort`"Aspose"` wird zum Verschlüsseln des PDFs verwendet.
+ Hier erstellen wir ein neues`PdfSaveOptions` Objekt und legen Sie dessen`EncryptionDetails` Das Passwort`"Aspose"` wird zum Verschlüsseln des PDFs verwendet.
 
 ## Schritt 4: Speichern der verschlüsselten PDF-Datei
 
@@ -91,7 +91,7 @@ doc = new Document(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", l
 
 Und da haben Sie es! Das Laden einer verschlüsselten PDF-Datei mit Aspose.Words für .NET ist nicht nur einfach, sondern macht auch richtig Spaß. Wenn Sie diese Schritte befolgen, können Sie PDF-Verschlüsselung wie ein Profi handhaben. Denken Sie daran, dass der Schlüssel zur Beherrschung jedes Tools Übung ist. Scheuen Sie sich also nicht, zu experimentieren und zu erkunden.
 
- Wenn Sie Fragen haben oder weitere Hilfe benötigen,[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/)Und[Hilfeforum](https://forum.aspose.com/c/words/8) sind ein guter Ausgangspunkt.
+ Wenn Sie Fragen haben oder weitere Hilfe benötigen,[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/)Und[Support-Forum](https://forum.aspose.com/c/words/8) sind ein guter Ausgangspunkt.
 
 ## Häufig gestellte Fragen
 

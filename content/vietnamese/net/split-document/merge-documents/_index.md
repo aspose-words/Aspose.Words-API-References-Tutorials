@@ -89,7 +89,7 @@ doc.Save(dataDir + "MergedDocumentInstance.docx");
 
 ## Phần kết luận
 
- Và bạn có nó rồi đấy! Bạn đã học cách hợp nhất các tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn này đề cập đến việc thiết lập môi trường của bạn, thực hiện các thao tác hợp nhất đơn giản, hợp nhất với các tùy chọn lưu, chuyển đổi các tài liệu đã hợp nhất thành PDF và tạo một phiên bản tài liệu từ các tài liệu đã hợp nhất. Aspose.Words cung cấp nhiều tính năng, vì vậy hãy nhớ khám phá[Tài liệu API](https://reference.aspose.com/words/net/) để mở khóa toàn bộ tiềm năng của nó.
+ Và bạn có nó! Bạn đã học cách hợp nhất các tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn này đề cập đến việc thiết lập môi trường của bạn, thực hiện các thao tác hợp nhất đơn giản, hợp nhất với các tùy chọn lưu, chuyển đổi các tài liệu đã hợp nhất thành PDF và tạo một phiên bản tài liệu từ các tài liệu đã hợp nhất. Aspose.Words cung cấp nhiều tính năng, vì vậy hãy nhớ khám phá[Tài liệu API](https://reference.aspose.com/words/net/) để mở khóa toàn bộ tiềm năng của nó.
 
 ## Câu hỏi thường gặp
 
@@ -103,7 +103,7 @@ Aspose.Words for .NET là một thư viện mạnh mẽ cho phép các nhà phá
 
 ### Làm cách nào để xử lý các định dạng khác nhau trong quá trình hợp nhất?
 
- Aspose.Words cung cấp nhiều chế độ định dạng hợp nhất khác nhau như`KeepSourceFormatting`Và`MergeFormatting` Tham khảo đến[Tài liệu API](https://reference.aspose.com/words/net/) để được hướng dẫn chi tiết.
+ Aspose.Words cung cấp nhiều chế độ định dạng hợp nhất khác nhau như`KeepSourceFormatting`Và`MergeFormatting` Tham khảo[Tài liệu API](https://reference.aspose.com/words/net/) để được hướng dẫn chi tiết.
 
 ### Làm cách nào để nhận được hỗ trợ cho Aspose.Words cho .NET?
 

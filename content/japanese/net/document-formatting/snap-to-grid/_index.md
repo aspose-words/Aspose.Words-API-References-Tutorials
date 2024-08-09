@@ -137,4 +137,4 @@ doc.Save(dataDir + "Paragraph.SnapToGrid.docx");
 いいえ、「グリッドにスナップ」を有効にしても、ドキュメントのパフォーマンスに大きな影響はありません。
 
 ### Aspose.Words for .NET の詳細情報はどこで入手できますか?
-訪問[ドキュメンテーション](https://reference.aspose.com/words/net/)詳細な情報と例については、こちらをご覧ください。
+訪問する[ドキュメント](https://reference.aspose.com/words/net/)詳細な情報と例については、こちらをご覧ください。

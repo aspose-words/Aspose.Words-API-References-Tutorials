@@ -115,7 +115,7 @@ public class AddTableInWord {
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez ajouté avec succès un tableau dans un document Word à l'aide d'Aspose.Words pour Java. Aspose.Words fournit une API robuste et efficace pour travailler avec des documents Word, facilitant la création, la manipulation et la personnalisation de tableaux et d'autres éléments dans vos documents.
+Félicitations! Vous avez ajouté avec succès un tableau dans un document Word à l'aide d'Aspose.Words pour Java. Aspose.Words fournit une API robuste et efficace pour travailler avec des documents Word, facilitant la création, la manipulation et la personnalisation de tableaux et d'autres éléments dans vos documents.
 
 En suivant ce guide étape par étape, vous avez appris à configurer l'environnement de développement, à créer un nouveau document Word, à ajouter un tableau avec des lignes et des colonnes et à enregistrer le document. N'hésitez pas à explorer davantage de fonctionnalités d'Aspose.Words pour améliorer davantage vos tâches de traitement de documents.
 

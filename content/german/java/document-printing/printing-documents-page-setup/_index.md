@@ -79,7 +79,7 @@ In diesem Artikel haben wir untersucht, wie man mit Aspose.Words für Java Dokum
 
 ### Kann ich mehrere Kopien eines Dokuments ausdrucken?
 
- Ja, Sie können mehrere Kopien eines Dokuments drucken, indem Sie die Anzahl der Kopien in den Druckeinstellungen festlegen, bevor Sie den`print()` Methode.
+ Ja, Sie können mehrere Kopien eines Dokuments drucken, indem Sie die Anzahl der Kopien in den Druckeinstellungen festlegen, bevor Sie den`print()` Verfahren.
 
 ### Ist Aspose.Words für Java mit verschiedenen Dokumentformaten kompatibel?
 

@@ -53,7 +53,7 @@ Tiếp theo, chúng ta cần truy cập vào bảng cụ thể mà chúng ta mu�
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
- Đây,`GetChild` phương thức tìm nạp bảng đầu tiên trong tài liệu. Những thông số`NodeType.Table, 0, true` đảm bảo chúng tôi có được loại nút chính xác.
+ Đây,`GetChild` phương thức tìm nạp bảng đầu tiên trong tài liệu. Các thông số`NodeType.Table, 0, true` đảm bảo chúng tôi có được loại nút chính xác.
 
 ## Bước 3: Căn chỉnh bảng
 
@@ -110,7 +110,7 @@ Bước này lưu tài liệu của bạn với định dạng được áp dụ
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bằng cách làm theo các bước này, bạn đã áp dụng thành công đường viền phác thảo cho bảng trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn này đề cập đến việc tải tài liệu, truy cập vào bảng, căn chỉnh nó, xóa các đường viền hiện có, áp dụng các đường viền mới, thêm bóng mờ cho ô và cuối cùng là lưu tài liệu. 
+Và bạn có nó! Bằng cách làm theo các bước này, bạn đã áp dụng thành công đường viền phác thảo cho bảng trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn này đề cập đến việc tải tài liệu, truy cập vào bảng, căn chỉnh nó, xóa các đường viền hiện có, áp dụng các đường viền mới, thêm bóng mờ cho ô và cuối cùng là lưu tài liệu. 
 
 Với những kỹ năng này, bạn có thể nâng cao cách trình bày trực quan các bảng của mình, làm cho tài liệu của bạn trở nên chuyên nghiệp và hấp dẫn hơn. Chúc mừng mã hóa!
 
@@ -129,4 +129,4 @@ Với những kỹ năng này, bạn có thể nâng cao cách trình bày trự
  Tuyệt đối! Bạn có thể sử dụng bất kỳ màu nào có sẵn trong`System.Drawing.Color` lớp học.
 
 ### Làm cách nào để căn giữa bảng theo chiều ngang?  
- Các`table.Alignment = TableAlignment.Center;` dòng trong mã sẽ căn giữa bảng theo chiều ngang trên trang.
+ các`table.Alignment = TableAlignment.Center;` dòng trong mã sẽ căn giữa bảng theo chiều ngang trên trang.

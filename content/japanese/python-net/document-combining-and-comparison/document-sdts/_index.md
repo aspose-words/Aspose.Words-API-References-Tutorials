@@ -2,7 +2,7 @@
 title: 構造化データに構造化ドキュメントタグ (SDT) を活用する
 linktitle: 構造化データに構造化ドキュメントタグ (SDT) を活用する
 second_title: Aspose.Words Python ドキュメント管理 API
-description: コンテンツを整理するための構造化ドキュメント タグ (SDT) のパワーを解き放ちます。Aspose.Words for Python を使用して SDT を実装する方法を学びます。
+description: コンテンツを整理するための構造化ドキュメント タグ (SDT) のパワーを活用します。Aspose.Words for Python を使用して SDT を実装する方法を学びます。
 type: docs
 weight: 13
 url: /ja/python-net/document-combining-and-comparison/document-sdts/

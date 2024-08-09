@@ -9,7 +9,7 @@ url: /pl/net/programming-with-ooxmlsaveoptions/encrypt-docx-with-password/
 ---
 ## Wstęp
 
-dzisiejszej erze cyfrowej zabezpieczanie poufnych informacji jest ważniejsze niż kiedykolwiek. Niezależnie od tego, czy są to dokumenty osobiste, pliki biznesowe czy artykuły akademickie, zabezpieczenie dokumentów programu Word przed nieautoryzowanym dostępem ma kluczowe znaczenie. W tym miejscu pojawia się szyfrowanie. Szyfrując pliki DOCX hasłem, możesz mieć pewność, że tylko osoby posiadające prawidłowe hasło będą mogły otwierać i czytać Twoje dokumenty. W tym samouczku przeprowadzimy Cię przez proces szyfrowania pliku DOCX przy użyciu Aspose.Words dla .NET. Nie martw się, jeśli jesteś w tym nowy — nasz przewodnik krok po kroku ułatwi Ci śledzenie i zabezpieczanie plików w mgnieniu oka.
+dzisiejszej erze cyfrowej zabezpieczanie poufnych informacji jest ważniejsze niż kiedykolwiek. Niezależnie od tego, czy są to dokumenty osobiste, pliki biznesowe czy artykuły akademickie, zabezpieczenie dokumentów programu Word przed nieautoryzowanym dostępem ma kluczowe znaczenie. Tutaj właśnie pojawia się szyfrowanie. Szyfrując pliki DOCX hasłem, możesz mieć pewność, że tylko osoby posiadające prawidłowe hasło będą mogły otwierać i czytać Twoje dokumenty. W tym samouczku przeprowadzimy Cię przez proces szyfrowania pliku DOCX przy użyciu Aspose.Words dla .NET. Nie martw się, jeśli jesteś w tym nowy — nasz przewodnik krok po kroku ułatwi Ci śledzenie i zabezpieczanie plików w mgnieniu oka.
 
 ## Warunki wstępne
 

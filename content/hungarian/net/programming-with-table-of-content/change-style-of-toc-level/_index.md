@@ -9,7 +9,7 @@ url: /hu/net/programming-with-table-of-content/change-style-of-toc-level/
 ---
 ## Bevezetés
 
-Ha valaha is szüksége volt egy professzionális Word-dokumentum létrehozására, tudja, milyen fontos lehet egy tartalomjegyzék (TOC). Nemcsak rendszerezi a tartalmat, hanem egy kis professzionalizmust is ad hozzá. Azonban a TOC testreszabása az Ön stílusának megfelelően kissé bonyolult lehet. Ebben az oktatóanyagban bemutatjuk, hogyan módosíthatja a tartalomjegyzék stílusát egy Word-dokumentumban az Aspose.Words for .NET használatával. Készen állsz a merülésre? Kezdjük el!
+Ha valaha is szüksége volt egy professzionális Word-dokumentum létrehozására, tudja, milyen fontos lehet egy tartalomjegyzék (TOC). Nemcsak rendszerezi a tartalmat, hanem egy kis professzionalizmust is ad hozzá. Azonban a TOC testreszabása az Ön stílusának megfelelően kissé bonyolult lehet. Ebben az oktatóanyagban bemutatjuk, hogyan módosíthatja a tartalomjegyzék stílusát egy Word-dokumentumban az Aspose.Words for .NET használatával. Készen állsz a merülésre? Kezdjük is!
 
 ## Előfeltételek
 

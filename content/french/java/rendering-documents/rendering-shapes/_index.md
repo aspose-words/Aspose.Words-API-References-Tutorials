@@ -75,7 +75,7 @@ render.save(outPath + "RenderShape.RenderShapeAsEmf.emf", imageOptions);
 
 ## 8. Conclusion
 
-Toutes nos félicitations! Vous avez appris avec succès comment restituer des formes dans Aspose.Words pour Java. Cette fonctionnalité ouvre un monde de possibilités lorsque vous travaillez avec des documents Word par programmation.
+Félicitations! Vous avez appris avec succès comment restituer des formes dans Aspose.Words pour Java. Cette fonctionnalité ouvre un monde de possibilités lorsque vous travaillez avec des documents Word par programmation.
 
 ## 9. FAQ
 

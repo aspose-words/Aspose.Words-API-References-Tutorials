@@ -13,6 +13,6 @@ Listelerle Kelime İşleme, Aspose.Words for .NET kütüphanesini kullanarak Wor
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Listeyi Her Bölümde Yeniden Başlatın](./restart-list-at-each-section/)  | Aspose.Words for .NET ile bir Word belgesindeki her bölüme numaralandırılmış listeyi nasıl sıfırlayacağınızı öğrenin. |
-| [Liste Düzeyini Belirtin](./specify-list-level/) | Aspose.Words for .NET ile bir Word belgesinde liste düzeyini nasıl belirleyeceğinizi öğrenin. |
-| [Liste Numarasını Yeniden Başlat](./restart-list-number/) | Aspose.Words for .NET ile bir Word belgesindeki listenin numarasını nasıl sıfırlayacağınızı öğrenin. |
+| [Listeyi Her Bölümde Yeniden Başlatın](./restart-list-at-each-section/)  | Aspose.Words for .NET kullanarak Word belgelerinin her bölümündeki listeleri nasıl yeniden başlatacağınızı öğrenin. Listeleri etkili bir şekilde yönetmek için ayrıntılı adım adım kılavuzumuzu izleyin. |
+| [Liste Düzeyini Belirtin](./specify-list-level/) | Aspose.Words for .NET kullanarak Word belgelerinde çok düzeyli numaralandırılmış ve madde işaretli listeler oluşturmayı öğrenin. Adım adım kılavuz dahildir. .NET geliştiricileri için mükemmel. |
+| [Liste Numarasını Yeniden Başlat](./restart-list-number/) | Aspose.Words for .NET kullanarak Word belgelerindeki liste numaralarını nasıl yeniden başlatacağınızı öğrenin. Bu ayrıntılı, 2000 kelimelik kılavuz, kurulumdan gelişmiş özelleştirmeye kadar bilmeniz gereken her şeyi kapsar. |

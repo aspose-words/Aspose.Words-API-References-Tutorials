@@ -78,7 +78,7 @@ Dòng mã này lưu tài liệu với các kiểu được áp dụng vào thư 
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn vừa tạo kiểu cho tài liệu Word của mình bằng Aspose.Words for .NET. Khá tuyệt phải không? Chỉ với một vài dòng mã, bạn có thể biến các tài liệu đơn giản của mình thành những kiệt tác trực quan hấp dẫn. Vì vậy, hãy tiếp tục, thử nghiệm các phong cách khác nhau và làm cho tài liệu của bạn trở nên nổi bật!
+Và bạn có nó! Bạn vừa tạo kiểu cho tài liệu Word của mình bằng Aspose.Words for .NET. Khá tuyệt phải không? Chỉ với một vài dòng mã, bạn có thể biến các tài liệu đơn giản của mình thành những kiệt tác trực quan hấp dẫn. Vì vậy, hãy tiếp tục, thử nghiệm các phong cách khác nhau và làm cho tài liệu của bạn trở nên nổi bật!
 
 ## Câu hỏi thường gặp
 

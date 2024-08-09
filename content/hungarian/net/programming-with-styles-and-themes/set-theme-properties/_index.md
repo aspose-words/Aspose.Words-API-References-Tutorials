@@ -89,4 +89,4 @@ Teljesen! Az Aspose.Words for .NET kiterjedt lehetőségeket kínál a tématula
  Hivatkozhat a[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/) részletesebb információkért.
 
 ### Milyen támogatási lehetőségek állnak rendelkezésre, ha problémákat tapasztalok?  
- Az Aspose biztosít a[támogatói fórum](https://forum.aspose.com/c/words/8) ahol segítséget kaphat a közösségtől és az Aspose csapatától.
+ Az Aspose biztosít a[támogatási fórum](https://forum.aspose.com/c/words/8) ahol segítséget kaphat a közösségtől és az Aspose csapatától.

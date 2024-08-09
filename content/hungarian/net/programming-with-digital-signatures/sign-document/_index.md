@@ -107,4 +107,4 @@ Igen, feltéve, hogy a .pfx fájl érvényes digitális tanúsítványt tartalma
  Az Aspose.Words for .NET egy kereskedelmi könyvtár. Letölthet egy ingyenes próbaverziót[itt](https://releases.aspose.com/) , de a teljes funkcionalitáshoz licencet kell vásárolnia. Megveheti[itt](https://purchase.aspose.com/buy).
 
 ### Hol találhatok további információt az Aspose.Words for .NET-ről?
- Átfogó dokumentációt találhat[itt](https://reference.aspose.com/words/net/) és támogatás[itt](https://forum.aspose.com/c/words/8).
+ Átfogó dokumentációt találhat[itt](https://reference.aspose.com/words/net/) és támogatást[itt](https://forum.aspose.com/c/words/8).

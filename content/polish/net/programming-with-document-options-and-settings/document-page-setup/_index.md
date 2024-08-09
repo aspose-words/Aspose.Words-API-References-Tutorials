@@ -32,7 +32,7 @@ using Aspose.Words.PageSetup;
 
 ## Krok 1: Załaduj swój dokument
 
-Po pierwsze, musisz załadować dokument. To jest podstawa, na której zbudujesz konfigurację swojej strony.
+Po pierwsze, musisz załadować dokument. To jest podstawa, na której zbudujesz konfigurację strony.
 
  Utwórz nową instancję`Document` class i załaduj dokument z określonego katalogu.
 

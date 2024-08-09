@@ -92,7 +92,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableR
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesinde başarıyla biçimlendirilmiş bir tablo oluşturdunuz. Bu süreç daha karmaşık gereksinimlere uyacak şekilde genişletilebilir ve özelleştirilebilir, ancak bu temel adımlar sağlam bir temel sağlar. Farklı biçimlendirme seçeneklerini deneyin ve belgelerinizi nasıl geliştirdiklerini görün.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesinde başarıyla biçimlendirilmiş bir tablo oluşturdunuz. Bu süreç daha karmaşık gereksinimlere uyacak şekilde genişletilebilir ve özelleştirilebilir, ancak bu temel adımlar sağlam bir temel sağlar. Farklı biçimlendirme seçeneklerini deneyin ve belgelerinizi nasıl geliştirdiklerini görün.
 
 ## SSS'ler
 

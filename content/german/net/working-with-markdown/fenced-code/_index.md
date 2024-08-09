@@ -2,79 +2,110 @@
 title: Eingezäunter Code
 linktitle: Eingezäunter Code
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie in der Schritt-für-Schritt-Anleitung, wie Sie die Funktion für eingezäunten Code mit Aspose.Words für .NET verwenden.
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET umzäunten Code und Info-Strings zu Word-Dokumenten hinzufügen. Schritt-für-Schritt-Anleitung enthalten. Verbessern Sie Ihre Fähigkeiten zur Dokumentformatierung.
 type: docs
 weight: 10
 url: /de/net/working-with-markdown/fenced-code/
 ---
+## Einführung
 
-In diesem Beispiel zeigen wir Ihnen Schritt für Schritt, wie Sie die Funktion „Fenced Code“ mit Aspose.Words für .NET verwenden. Fenced Code wird verwendet, um Codeblöcke mit einer bestimmten Formatierung darzustellen.
+Hallo, Programmiererkollege! Heute tauchen wir in die Welt von Aspose.Words für .NET ein, um die Kunst zu meistern, Ihren Word-Dokumenten umzäunten Code und umzäunten Code mit Info-Strings hinzuzufügen. Stellen Sie sich Ihr Word-Dokument als Leinwand vor, und Sie, der Künstler, malen mit der Präzision eines erfahrenen Entwicklers. Mit Aspose.Words erhalten Sie die Möglichkeit, Ihre Dokumente programmgesteuert mit strukturierten, formatierten Codeblöcken zu verbessern, sodass Ihre technischen Dokumente vor Professionalität und Klarheit erstrahlen.
 
-## Schritt 1: Einen Dokumentgenerator verwenden
+## Voraussetzungen
 
-Zuerst verwenden wir einen Dokumentgenerator, um unserem Dokument Inhalt hinzuzufügen.
+Bevor wir mit dem Tutorial beginnen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
+
+- Grundkenntnisse in C#: Allgemeine Kenntnisse in C# helfen Ihnen, die Konzepte schnell zu erfassen.
+-  Aspose.Words für .NET: Sie müssen Aspose.Words für .NET installiert haben. Wenn Sie es noch nicht haben, holen Sie es sich[Hier](https://releases.aspose.com/words/net/).
+- Entwicklungsumgebung: Visual Studio oder jede andere C#-IDE, mit der Sie vertraut sind.
+
+## Namespaces importieren
+
+Als Erstes müssen Sie die erforderlichen Namespaces importieren. Das ist so, als würden Sie alle Ihre Werkzeuge zusammentragen, bevor Sie ein Projekt starten.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Style;
+```
+
+Lassen Sie uns den Prozess nun Schritt für Schritt aufschlüsseln.
+
+## Schritt 1: Einrichten Ihres Projekts
+
+Bevor wir in unserem Word-Dokument schöne, formatierte Codeblöcke erstellen können, müssen wir in Visual Studio ein neues Projekt einrichten.
+
+1. Erstellen Sie ein neues Projekt: Öffnen Sie Visual Studio und erstellen Sie eine neue C#-Konsolenanwendung.
+2. Aspose.Words-Referenz hinzufügen: Installieren Sie Aspose.Words über den NuGet-Paket-Manager. Klicken Sie dazu im Solution Explorer mit der rechten Maustaste auf Ihr Projekt, wählen Sie „NuGet-Pakete verwalten“ und suchen Sie nach Aspose.Words.
+
+## Schritt 2: Initialisieren Sie den DocumentBuilder
+
+Nachdem Ihr Projekt nun eingerichtet ist, initialisieren wir den DocumentBuilder, der unser Haupttool zum Hinzufügen von Inhalten zum Word-Dokument sein wird.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Schritt 2: Einen Stil für eingezäunten Code hinzufügen
+## Schritt 3: Erstellen Sie einen Stil für eingezäunten Code
 
- Wir werden einen benutzerdefinierten Stil für den eingezäunten Code hinzufügen, indem wir den`Styles.Add` Methode der`Document` Objekt. In diesem Beispiel erstellen wir einen Stil namens „FencedCode“ für den eingezäunten Code.
+Um umzäunten Code hinzuzufügen, müssen wir zuerst einen Stil erstellen. Betrachten Sie dies als Festlegen des Designs für unseren Codeblock.
 
 ```csharp
 Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");
-builder.ParagraphFormat.Style = fencedCode;
+fencedCode.Font.Name = "Courier New";
+fencedCode.Font.Size = 10;
+fencedCode.ParagraphFormat.LeftIndent = 20;
+fencedCode.ParagraphFormat.RightIndent = 20;
+fencedCode.ParagraphFormat.Shading.BackgroundPatternColor = Color.LightGray;
 ```
 
-## Schritt 3: Hinzufügen von eingezäuntem Code ohne Informationen
+## Schritt 4: Fügen Sie dem Dokument abgeschirmten Code hinzu
 
-Jetzt können wir mit dem benutzerdefinierten Stil „FencedCode“ einen eingezäunten Codeblock ohne Informationszeichenfolge hinzufügen.
+Nachdem unser Stil fertig ist, können wir dem Dokument jetzt einen eingezäunten Codeblock hinzufügen.
 
 ```csharp
-builder.Writeln("This is an fenced code");
+builder.ParagraphFormat.Style = fencedCode;
+builder.Writeln("This is a fenced code block");
 ```
 
-## Schritt 4: Eingezäunten Code mit Info-String hinzufügen
+## Schritt 5: Erstellen Sie einen Stil für eingezäunten Code mit Info-String
 
-Wir können auch einen eingezäunten Codeblock mit einer Zeichenfolge von Informationen hinzufügen, indem wir einen anderen benutzerdefinierten Stil verwenden. In diesem Beispiel erstellen wir einen Stil namens „FencedCode.C#“, um einen Block von C#-Code darzustellen.
+Manchmal möchten Sie vielleicht die Programmiersprache angeben oder Ihrem Codeblock zusätzliche Informationen hinzufügen. Lassen Sie uns dafür einen Stil erstellen.
 
 ```csharp
 Style fencedCodeWithInfo = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode.C#");
-builder.ParagraphFormat.Style = fencedCodeWithInfo;
-builder.Writeln("This is a fenced code with info string");
+fencedCodeWithInfo.Font.Name = "Courier New";
+fencedCodeWithInfo.Font.Size = 10;
+fencedCodeWithInfo.ParagraphFormat.LeftIndent = 20;
+fencedCodeWithInfo.ParagraphFormat.RightIndent = 20;
+fencedCodeWithInfo.ParagraphFormat.Shading.BackgroundPatternColor = Color.LightGray;
 ```
 
-### Beispielquellcode für Fenced Code mit Aspose.Words für .NET
+## Schritt 6: Fügen Sie dem Dokument eingezäunten Code mit Info-String hinzu
+
+Fügen wir nun einen eingezäunten Codeblock mit einer Infozeichenfolge hinzu, um anzuzeigen, dass es sich um C#-Code handelt.
 
 ```csharp
-// Verwenden Sie einen Dokument-Generator, um dem Dokument Inhalt hinzuzufügen.
-DocumentBuilder builder = new DocumentBuilder();
-
-Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");
-builder.ParagraphFormat.Style = fencedCode;
-builder.Writeln("This is an fenced code");
-
-Style fencedCodeWithInfo = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode.C#");
 builder.ParagraphFormat.Style = fencedCodeWithInfo;
-builder.Writeln("This is a fenced code with info string");
+builder.Writeln("This is a fenced code block with info string - C#");
 ```
 
-### Häufig gestellte Fragen
+## Abschluss
 
-#### F: Was ist abgegrenzter Code in Markdown?
+Herzlichen Glückwunsch! Sie haben gerade mithilfe von Aspose.Words für .NET umzäunte Codeblöcke und umzäunten Code mit Info-Strings zu Ihren Word-Dokumenten hinzugefügt. Dies ist nur die Spitze des Eisbergs. Mit Aspose.Words können Sie Ihre Dokumentverarbeitung auf ein neues Niveau automatisieren und verbessern. Erkunden Sie weiter und viel Spaß beim Programmieren!
 
-A: Getrennter Code in Markdown ist eine Formatierungsmethode, die zum Anzeigen von Code in einem Markdown-Dokument verwendet wird. Dabei wird der Code mit bestimmten Trennzeichen umrahmt.
+## Häufig gestellte Fragen
 
-#### F: Welche Vorteile bietet abgegrenzter Code in Markdown?
+### Was ist Aspose.Words für .NET?
+Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Entwickler Word-Dokumente programmgesteuert erstellen, bearbeiten und konvertieren können.
 
-A: Durch Trennzeichen getrennter Code in Markdown verbessert die Lesbarkeit des Codes und erleichtert den Lesern das Verständnis. Außerdem bleibt die Syntaxhervorhebung in einigen Markdown-Editoren erhalten.
+### Kann ich Aspose.Words mit anderen Programmiersprachen verwenden?
+Aspose.Words unterstützt hauptsächlich .NET-Sprachen, es sind jedoch Versionen für Java, Python und andere Sprachen verfügbar.
 
-#### F: Was ist der Unterschied zwischen abgegrenztem und eingerücktem Code in Markdown?
+### Ist die Nutzung von Aspose.Words kostenlos?
+ Aspose.Words ist ein kommerzielles Produkt, aber Sie können eine kostenlose Testversion herunterladen[Hier](https://releases.aspose.com/)um seine Funktionen zu erkunden.
 
-A: Bei durch Trennzeichen getrenntem Code werden bestimmte Trennzeichen zum Einschließen des Codes verwendet, während bei eingerücktem Code jede Codezeile mit Leerzeichen oder Tabulatoren eingerückt wird.
+### Wie kann ich Support für Aspose.Words erhalten?
+ Sie können Unterstützung von der Aspose-Community und den Entwicklern erhalten[Hier](https://forum.aspose.com/c/words/8).
 
-#### F: Wird abgegrenzter Code in Markdown von allen Markdown-Editoren unterstützt?
-
-A: Die Unterstützung für durch Trennzeichen getrennten Code in Markdown kann je nach Markdown-Editor unterschiedlich sein. Überprüfen Sie zur Sicherheit die spezifische Dokumentation Ihres Herausgebers.
-
+### Welche weiteren Funktionen bietet Aspose.Words?
+Aspose.Words bietet eine breite Palette an Funktionen, darunter Dokumentkonvertierung, vorlagenbasierte Dokumenterstellung, Berichterstellung und vieles mehr.

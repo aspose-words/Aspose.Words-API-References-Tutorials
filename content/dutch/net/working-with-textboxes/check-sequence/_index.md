@@ -130,7 +130,7 @@ Met deze opdracht wordt het document opgeslagen als "TextBoxSequenceCheck.docx",
 
 ## Conclusie
 
-Klaar is kees! 🎉 Je hebt geleerd hoe je tekstvakken kunt maken, deze kunt koppelen en de volgorde ervan kunt controleren in een Word-document met Aspose.Words voor .NET. Deze vaardigheid is ongelooflijk handig voor het beheren van complexe documenten met meerdere gekoppelde tekstelementen, zoals nieuwsbrieven, formulieren of instructiehandleidingen.
+En dat is een omslag! 🎉 Je hebt geleerd hoe je tekstvakken kunt maken, deze kunt koppelen en de volgorde ervan kunt controleren in een Word-document met Aspose.Words voor .NET. Deze vaardigheid is ongelooflijk handig voor het beheren van complexe documenten met meerdere gekoppelde tekstelementen, zoals nieuwsbrieven, formulieren of instructiehandleidingen.
 
  Houd er rekening mee dat als u de volgorde van de tekstvakken begrijpt, u ervoor kunt zorgen dat uw inhoud logisch verloopt en gemakkelijk te volgen is voor uw lezers. Als je dieper wilt duiken in de mogelijkheden van Aspose.Words, dan is de[API-documentatie](https://reference.aspose.com/words/net/) is een uitstekende hulpbron.
 
@@ -151,4 +151,4 @@ Ja, tekstvakken kunnen in elke volgorde worden gekoppeld, inclusief niet-lineair
 Ja, u kunt de tekst binnen elk tekstvak afzonderlijk opmaken, waardoor u flexibiliteit krijgt in ontwerp en opmaak.
 
 ### Waar kan ik meer bronnen vinden over het werken met tekstvakken in Aspose.Words?
- Voor meer informatie, bekijk de[Aspose.Words-documentatie](https://reference.aspose.com/words/net/)En[Helpforum](https://forum.aspose.com/c/words/8).
+ Voor meer informatie, bekijk de[Aspose.Words-documentatie](https://reference.aspose.com/words/net/)En[ondersteuningsforum](https://forum.aspose.com/c/words/8).

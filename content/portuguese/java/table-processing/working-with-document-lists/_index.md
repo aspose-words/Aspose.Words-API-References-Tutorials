@@ -32,7 +32,7 @@ Para criar uma lista de documentos, siga estas etapas:
 3. Adicione itens de lista ao documento.
 4. Salve o documento.
 
-Aqui está um exemplo de trecho de código para você começar:
+Aqui está um trecho de código de exemplo para você começar:
 
 ```java
 // Importar pacotes necessários
@@ -125,7 +125,7 @@ Sim, você pode personalizar a formatação dos itens da lista, incluindo fonte,
 Absolutamente! Aspose.Words for Java oferece suporte a uma ampla variedade de formatos de documentos, incluindo DOCX, PDF, HTML e muito mais.
 
 ### Como posso converter uma lista de documentos em PDF?
-Para converter uma lista de documentos em PDF, basta carregar o documento usando Aspose.Words for Java e salvá-lo em formato PDF. É tão fácil!
+Para converter uma lista de documentos em PDF, basta carregar o documento usando Aspose.Words for Java e salvá-lo em formato PDF. É muito fácil!
 
 ### Aspose.Words for Java suporta trabalhar com tabelas em documentos?
 Sim, Aspose.Words for Java oferece amplo suporte para trabalhar com tabelas, permitindo criar, modificar e extrair dados tabulares sem esforço.

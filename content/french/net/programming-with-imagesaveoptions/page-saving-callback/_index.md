@@ -85,7 +85,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.PageSavingCallback.png", imageSa
 
 ## Conclusion
 
-Et voila! Vous avez configuré avec succès un rappel d'enregistrement de page pour enregistrer chaque page d'un document Word en tant qu'image PNG distincte à l'aide d'Aspose.Words pour .NET. Cette technique est incroyablement utile pour diverses applications, depuis la création d'aperçus de pages jusqu'à la génération d'images de pages individuelles pour les rapports. 
+Et voilà ! Vous avez configuré avec succès un rappel d'enregistrement de page pour enregistrer chaque page d'un document Word en tant qu'image PNG distincte à l'aide d'Aspose.Words pour .NET. Cette technique est incroyablement utile pour diverses applications, depuis la création d'aperçus de pages jusqu'à la génération d'images de pages individuelles pour les rapports. 
 
 Bon codage !
 
@@ -104,4 +104,4 @@ Bon codage !
 Pour les documents volumineux, envisagez de traiter les pages par lots pour gérer efficacement l'utilisation de la mémoire.
 
 ### Où puis-je trouver plus d’informations sur Aspose.Words pour .NET ?  
- Vérifiez[Documentation](https://reference.aspose.com/words/net/) pour des guides et des exemples complets.
+ Découvrez le[documentation](https://reference.aspose.com/words/net/) pour des guides et des exemples complets.

@@ -56,7 +56,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Shape shape = builder.InsertChart(ChartType.Area, 432, 252);
 ```
 
- Burada bir oluşturuyoruz`DocumentBuilder` nesneyi seçin ve bunu belgemize belirli boyutlarda (432x252) bir alan grafiği eklemek için kullanın.
+ Burada bir oluşturuyoruz`DocumentBuilder` nesnesini seçin ve onu belirli boyutlarda (432x252) bir alan grafiğini belgemize eklemek için kullanın.
 
 ## 3. Adım: Grafik Nesnesine Erişin
 

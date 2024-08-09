@@ -71,7 +71,7 @@ Innerhalb der Schleife kopieren Sie den Inhalt des aktuellen Abschnitts an den A
 ```csharp
 doc.LastSection.PrependContent(doc.Sections[i]);
 ```
-2.  Abschnitt entfernen: Entfernen Sie den Abschnitt mit dem`Remove` Methode.
+2.  Abschnitt entfernen: Entfernen Sie den Abschnitt mit dem`Remove` Verfahren.
 ```csharp
 doc.Sections[i].Remove();
 ```

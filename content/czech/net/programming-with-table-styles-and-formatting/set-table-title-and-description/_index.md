@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-table-styles-and-formatting/set-table-title-and-description/
 ---
-## Úvod
+## Zavedení
 
 Jste připraveni oživit své dokumenty Word přidáním elegantních názvů a popisů do svých tabulek? Jste na správném místě. Dnes se ponoříme do kouzla Aspose.Words pro .NET. Tento nástroj skutečně mění hru pro automatizaci dokumentů. Berte to jako svou tajnou zbraň, díky které budou vaše dokumenty Word vypadat super profesionálně, aniž byste se zapotili. Vyhrňme si tedy rukávy a pusťte se do tohoto dobrodružství.
 
@@ -15,7 +15,7 @@ Jste připraveni oživit své dokumenty Word přidáním elegantních názvů a 
 
 Než se vrhneme na to, co potřebujete, ujistěte se, že máte vše, co potřebujete. Zde je váš kontrolní seznam:
 
-1.  Aspose.Words for .NET: Pokud jste to ještě neudělali, budete si to muset vzít do rukou. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Pokud jste to ještě neudělali, budete si to muset vzít do rukou. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Visual Studio nebo jakékoli jiné C# IDE.
 3. Základní porozumění C#: Nic moc přepychového, jen základy.
 4. Ukázkový dokument Word: Budeme pracovat s dokumentem, který obsahuje tabulky. Můžete vytvořit jeden nebo použít existující dokument.

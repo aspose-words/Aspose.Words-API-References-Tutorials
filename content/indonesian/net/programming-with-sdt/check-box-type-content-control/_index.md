@@ -92,8 +92,8 @@ Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang
 ### Bagaimana cara menginstal Aspose.Words untuk .NET?
  Anda dapat menginstal Aspose.Words untuk .NET melalui NuGet Package Manager di Visual Studio atau mengunduhnya dari[Asumsikan situs web](https://releases.aspose.com/words/net/).
 
-### Bisakah saya menambahkan jenis kontrol konten lain menggunakan Aspose.Words?
-Ya, Aspose.Words mendukung berbagai tipe kontrol konten, termasuk kontrol teks, tanggal, dan kotak kombo.
+### Bisakah saya menambahkan jenis kontrol konten lainnya menggunakan Aspose.Words?
+Ya, Aspose.Words mendukung berbagai jenis kontrol konten, termasuk kontrol teks, tanggal, dan kotak kombo.
 
 ### Apakah ada uji coba gratis yang tersedia untuk Aspose.Words untuk .NET?
  Ya, Anda dapat mengunduh uji coba gratis dari[Asumsikan situs web](https://releases.aspose.com/).

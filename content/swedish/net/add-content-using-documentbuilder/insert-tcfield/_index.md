@@ -9,7 +9,7 @@ url: /sv/net/add-content-using-documentbuilder/insert-tcfield/
 ---
 ## Introduktion
 
-Hallå där! Om du dyker in i dokumentautomatiseringens värld är du på rätt plats. Idag ska vi utforska hur man infogar ett TC-fält (innehållsförteckning) i ett Word-dokument med Aspose.Words för .NET. Tro mig, i slutet av denna handledning kommer du att känna dig som en trollkarl som trollformar i dina Word-dokument. Redo att komma igång? Nu gör vi det!
+Hej där! Om du dyker in i dokumentautomatiseringens värld är du på rätt plats. Idag ska vi utforska hur man infogar ett TC-fält (innehållsförteckning) i ett Word-dokument med Aspose.Words för .NET. Tro mig, i slutet av denna handledning kommer du att känna dig som en trollkarl som trollformar i dina Word-dokument. Redo att börja? Låt oss göra det här!
 
 ## Förutsättningar
 

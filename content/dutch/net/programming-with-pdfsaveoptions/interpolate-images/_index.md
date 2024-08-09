@@ -20,11 +20,11 @@ Voordat we ingaan op de details, moeten we ervoor zorgen dat alles is ingesteld:
 3. Basiskennis van C#: Bekendheid met programmeren in C# en .NET zal u helpen dit probleemloos te volgen.
 4. Voorbeelddocument: Houd een Word-document bij de hand met afbeeldingen om mee te testen.
 
-Heb alles? Geweldig! Laten we erin duiken.
+Heb je alles? Geweldig! Laten we erin duiken.
 
 ## Naamruimten importeren
 
-Om aan de slag te gaan, moet u de benodigde naamruimten in uw C#-project importeren. Hier is hoe:
+Om aan de slag te gaan, moet u de benodigde naamruimten in uw C#-project importeren. Hier ziet u hoe:
 
 ```csharp
 using Aspose.Words;
@@ -54,7 +54,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
  Hier,`"Rendering.docx"` is de naam van uw Word-bestand. Zorg ervoor dat dit bestand in de opgegeven map bestaat.
 
-## Stap 3: Configureer PDF-opslagopties
+## Stap 3: Configureer de PDF-opslagopties
 
 Om ervoor te zorgen dat afbeeldingen worden geïnterpoleerd, moet u de`PdfSaveOptions`. Met deze klasse kunt u verschillende opties instellen voor de manier waarop uw document als PDF wordt opgeslagen. Concreet wilt u beeldinterpolatie inschakelen.
 
@@ -99,7 +99,7 @@ Aspose.Words ondersteunt voornamelijk beeldinterpolatie voor PDF's. Raadpleeg vo
 
 ### Hoe kan ik beeldinterpolatie testen voordat ik een licentie aanschaf?
 
- Jij kan[download een gratis proefversie](https://releases.aspose.com/) van Aspose.Words om beeldinterpolatie en andere functies te testen.
+ Dat kan[download een gratis proefversie](https://releases.aspose.com/) van Aspose.Words om beeldinterpolatie en andere functies te testen.
 
 ### Waar kan ik hulp krijgen als ik problemen tegenkom?
 

@@ -16,7 +16,7 @@ Hallo! Wenn Sie schon einmal Seiteneinstellungen in mehreren Abschnitten eines W
 Bevor wir loslegen, stellen wir sicher, dass wir alles haben, was wir brauchen:
 
 1. Grundkenntnisse in C#: Vertrautheit mit der Syntax und den Konzepten von C# ist erforderlich.
-2.  Aspose.Words für .NET: Sie können[hier herunterladen](https://releases.aspose.com/words/net/)Wenn Sie es nur ausprobieren möchten,[Kostenlose Testphase](https://releases.aspose.com/) ist verfügbar.
+2.  Aspose.Words für .NET: Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/)Wenn Sie es nur ausprobieren möchten,[Kostenlose Testversion](https://releases.aspose.com/) ist verfügbar.
 3. Visual Studio: Jede aktuelle Version sollte funktionieren, für ein optimales Erlebnis wird jedoch die neueste Version empfohlen.
 4. .NET Framework: Stellen Sie sicher, dass es auf Ihrem System installiert ist.
 
@@ -99,7 +99,7 @@ Aspose.Words für .NET ist eine umfassende Bibliothek für die programmgesteuert
 
 ### 2. Kann ich Aspose.Words für .NET kostenlos nutzen?
 
- Sie können Aspose.Words für .NET mit einem[Kostenlose Testphase](https://releases.aspose.com/)Für eine erweiterte Nutzung ist der Erwerb einer Lizenz erforderlich.
+ Sie können Aspose.Words für .NET mit einem[Kostenlose Testversion](https://releases.aspose.com/)Für eine erweiterte Nutzung ist der Erwerb einer Lizenz erforderlich.
 
 ### 3. Wie ändere ich andere Seiteneinrichtungseigenschaften?
 

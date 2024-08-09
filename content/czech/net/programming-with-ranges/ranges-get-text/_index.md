@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-ranges/ranges-get-text/
 ---
-## Úvod
+## Zavedení
 
 Potřebovali jste někdy programově extrahovat text z dokumentu aplikace Word? Ať už automatizujete zpracování dokumentů nebo jednoduše potřebujete získat konkrétní obsah ze souboru aplikace Word, Aspose.Words for .NET vás pokryje. Tato výkonná knihovna vám umožňuje snadno manipulovat s dokumenty aplikace Word a poskytuje robustní nástroje pro extrahování, úpravy a vytváření obsahu. V tomto tutoriálu vás provedeme procesem extrahování textu z dokumentu aplikace Word pomocí Aspose.Words for .NET a krok za krokem jej rozebereme, abyste mohli plynule pokračovat.
 
@@ -15,7 +15,7 @@ Potřebovali jste někdy programově extrahovat text z dokumentu aplikace Word? 
 
 Než se ponoříme do kódu, je třeba mít připraveno několik věcí:
 
-1.  Knihovna Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words for .NET. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+1.  Knihovna Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words for .NET. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Nastavte své vývojové prostředí. Visual Studio je oblíbenou volbou pro vývoj .NET.
 3. Dokument aplikace Word: Připravte si dokument aplikace Word, ze kterého chcete extrahovat text. Uložte jej do známého adresáře ve vašem systému.
 
@@ -94,7 +94,7 @@ Aspose.Words for .NET je výkonná knihovna pro manipulaci s dokumenty, která u
 
 ### Potřebuji licenci k používání Aspose.Words pro .NET?
 
- Ano, Aspose.Words for .NET je licencovaný produkt. Dočasnou licenci můžete získat od[tady](https://purchase.aspose.com/temporary-license/) nebo si to koupit od[tady](https://purchase.aspose.com/buy).
+ Ano, Aspose.Words for .NET je licencovaný produkt. Dočasnou licenci můžete získat od[zde](https://purchase.aspose.com/temporary-license/) nebo si to koupit od[zde](https://purchase.aspose.com/buy).
 
 ### Mohu používat Aspose.Words pro .NET s jinými jazyky .NET kromě C#?
 
@@ -102,8 +102,8 @@ Absolutně! Aspose.Words for .NET podporuje všechny jazyky .NET, včetně VB.NE
 
 ### Kde najdu dokumentaci k Aspose.Words pro .NET?
 
- Můžete najít komplexní dokumentaci[tady](https://reference.aspose.com/words/net/).
+ Můžete najít komplexní dokumentaci[zde](https://reference.aspose.com/words/net/).
 
 ### Jak získám podporu pro Aspose.Words for .NET?
 
- Pro podporu můžete navštívit fórum Aspose.Words[tady](https://forum.aspose.com/c/words/8).
+ Pro podporu můžete navštívit fórum Aspose.Words[zde](https://forum.aspose.com/c/words/8).

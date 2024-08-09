@@ -10,7 +10,7 @@ url: /hu/java/using-document-elements/using-comments/
 
 dokumentumfeldolgozás világában a megjegyzések hozzáadása a dokumentumokhoz elengedhetetlen funkció lehet. Lehetővé teszi az együttműködést, a visszajelzést és a tartalomra vonatkozó megjegyzéseket. Az Aspose.Words for Java robusztus és sokoldalú API-t biztosít a dokumentumokkal való munkavégzéshez, és ebben a lépésenkénti oktatóanyagban megvizsgáljuk, hogyan használhatjuk a megjegyzéseket az Aspose.Words for Java-ban.
 
-## 1. Bemutatkozás
+## 1. Bevezetés
 A megjegyzések értékesek a kód dokumentálásához vagy a dokumentumon belüli magyarázatokhoz. Az Aspose.Words for Java lehetővé teszi, hogy programozottan megjegyzéseket fűzzen a dokumentumokhoz, így kiváló választás dinamikus és interaktív dokumentumok létrehozásához.
 
 ## 2. A környezet beállítása

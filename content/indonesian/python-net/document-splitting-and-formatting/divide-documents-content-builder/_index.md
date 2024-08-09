@@ -70,7 +70,7 @@ builder.insert_break(aw.BreakType.SECTION_BREAK_NEW_PAGE)
 
 ## Contoh Kasus Penggunaan: Membuat Curriculum Vitae
 
-Mari kita pertimbangkan kasus penggunaan praktis: membuat curriculum vitae (CV) dengan bagian-bagian berbeda.
+Mari pertimbangkan kasus penggunaan praktis: membuat curriculum vitae (CV) dengan bagian-bagian berbeda.
 
 ```python
 # Add CV sections
@@ -101,4 +101,4 @@ Ya, Anda dapat menerapkan pemformatan, gaya, dan font yang berbeda ke setiap bag
 Sangat! Aspose.Words untuk Python banyak digunakan untuk menghasilkan berbagai jenis laporan dan dokumen dengan format yang tepat.
 
 ### Di mana saya dapat mengakses dokumentasi dan download?
- Mengunjungi[Aspose.Words untuk dokumentasi Python](https://reference.aspose.com/words/python-net/) dan unduh perpustakaan dari[Aspose.Words Rilis Python](https://releases.aspose.com/words/python/).
+ Kunjungi[Aspose.Words untuk dokumentasi Python](https://reference.aspose.com/words/python-net/) dan unduh perpustakaan dari[Aspose.Words Rilis Python](https://releases.aspose.com/words/python/).

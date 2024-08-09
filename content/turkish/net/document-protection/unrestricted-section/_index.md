@@ -9,7 +9,7 @@ url: /tr/net/document-protection/unrestricted-section/
 ---
 ## giriiş
 
-Selam! Aspose.Words for .NET dünyasına dalmaya hazır mısınız? Bugün süper pratik bir şeyle uğraşıyoruz: Bir Word belgesindeki belirli bölümlerin kilidini açarken diğer bölümleri korumayı nasıl sağlayacağız. Dokümanınızın bazı bölümlerini koruma altına alıp bazılarını düzenlemeye açık bırakmanız gerekiyorsa, bu eğitim tam size göre. Başlayalım!
+Selam! Aspose.Words for .NET dünyasına dalmaya hazır mısınız? Bugün süper pratik bir şeyle uğraşıyoruz: Bir Word belgesindeki belirli bölümlerin kilidini açarken diğer bölümleri korumayı nasıl sağlayacağız. Dokümanınızın bazı bölümlerini koruma altına alıp bazılarını düzenlemeye açık bırakmanız gerekiyorsa, bu eğitim tam size göre. Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -82,7 +82,7 @@ builder.Writeln("Section 2. Protected.");
 
 ### Belge Korumasını Etkinleştir
 
- Belgeyi korumak için şunu kullanacağız:`Protect` yöntem. Bu yöntem, aksi belirtilmedikçe yalnızca form alanlarının düzenlenebilmesini sağlar.
+ Belgeyi korumak için şunu kullanacağız:`Protect` Yöntem. Bu yöntem, aksi belirtilmedikçe yalnızca form alanlarının düzenlenebilmesini sağlar.
 
 ```csharp
 doc.Protect(ProtectionType.AllowOnlyFormFields, "password");
@@ -124,7 +124,7 @@ Bu adım, belgenin düzgün bir şekilde kaydedilmesini ve koruma ayarlarını k
 
 ## Çözüm
 
-İşte buyur! Bu adımları izleyerek, Aspose.Words for .NET'i kullanarak korumalı ve korumasız bölümlerin karışımından oluşan bir Word belgesini başarıyla oluşturdunuz. Bu yöntem, bir belgenin belirli bölümlerini kilitlerken diğer bölümlerini düzenlenebilir halde bırakmanız gerektiğinde son derece kullanışlıdır.
+Ve işte karşınızda! Bu adımları izleyerek, Aspose.Words for .NET'i kullanarak korumalı ve korumasız bölümlerin karışımından oluşan bir Word belgesini başarıyla oluşturdunuz. Bu yöntem, bir belgenin belirli bölümlerini kilitlerken diğer bölümlerini düzenlenebilir halde bırakmanız gerektiğinde son derece kullanışlıdır.
 
 ## SSS'ler
 

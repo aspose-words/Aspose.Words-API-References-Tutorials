@@ -1,6 +1,6 @@
 ---
-title: Seçenekleri gör
-linktitle: Seçenekleri gör
+title: Seçenekleri Görüntüle
+linktitle: Seçenekleri Görüntüle
 second_title: Aspose.Words Belge İşleme API'si
 description: Aspose.Words for .NET kullanarak Word belgelerindeki seçenekleri nasıl görüntüleyeceğinizi öğrenin. Bu kılavuz görünüm türlerini ayarlamayı, yakınlaştırma düzeylerini ayarlamayı ve belgenizi kaydetmeyi kapsar.
 type: docs
@@ -9,7 +9,7 @@ url: /tr/net/programming-with-document-options-and-settings/view-options/
 ---
 ## giriiş
 
-Merhaba kodlayıcı arkadaşım! Aspose.Words for .NET'i kullanarak Word belgelerinizi görüntüleme şeklinizi nasıl değiştireceğinizi hiç merak ettiniz mi? Farklı bir görünüm türüne geçmek veya belgenize mükemmel bir görünüm kazandırmak için yakınlaştırıp uzaklaştırmak istiyorsanız doğru yere geldiniz. Bugün Aspose.Words for .NET dünyasına dalıyoruz ve özellikle görünüm seçeneklerinin nasıl değiştirileceğine odaklanıyoruz. Her şeyi basit, sindirilebilir adımlara ayıracağız, böylece kısa sürede uzman olacaksınız. Hazır? Başlayalım!
+Merhaba kodlayıcı arkadaşım! Aspose.Words for .NET'i kullanarak Word belgelerinizi görüntüleme şeklinizi nasıl değiştireceğinizi hiç merak ettiniz mi? Farklı bir görünüm türüne geçmek veya belgenize mükemmel bir görünüm kazandırmak için yakınlaştırıp uzaklaştırmak istiyorsanız doğru yere geldiniz. Bugün Aspose.Words for .NET dünyasına dalıyoruz ve özellikle görünüm seçeneklerinin nasıl değiştirileceğine odaklanıyoruz. Her şeyi basit, sindirilebilir adımlara ayıracağız, böylece kısa sürede uzman olacaksınız. Hazır? Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -76,7 +76,7 @@ Bu kod satırı, değiştirilen belgeyi yeni bir adla kaydeder, böylece orijina
 
 ## Çözüm
 
-İşte buyur! Adımları öğrendikten sonra Aspose.Words for .NET'i kullanarak Word belgenizin görünüm seçeneklerini değiştirmek çok kolaydır. Bu öğreticiyi takip ederek bir belgeyi nasıl yükleyeceğinizi, görünüm türünü nasıl değiştireceğinizi, yakınlaştırma düzeyini nasıl ayarlayacağınızı ve belgeyi yeni ayarlarla nasıl kaydedeceğinizi öğrendiniz. Aspose.Words for .NET'te uzmanlaşmanın anahtarının pratik olduğunu unutmayın. Öyleyse devam edin ve sizin için en iyi olanı görmek için farklı ayarları deneyin. Mutlu kodlama!
+Ve işte karşınızda! Adımları öğrendikten sonra Aspose.Words for .NET'i kullanarak Word belgenizin görünüm seçeneklerini değiştirmek çok kolaydır. Bu öğreticiyi takip ederek bir belgeyi nasıl yükleyeceğinizi, görünüm türünü nasıl değiştireceğinizi, yakınlaştırma düzeyini nasıl ayarlayacağınızı ve belgeyi yeni ayarlarla nasıl kaydedeceğinizi öğrendiniz. Aspose.Words for .NET'te uzmanlaşmanın anahtarının pratik olduğunu unutmayın. Öyleyse devam edin ve sizin için en iyi olanı görmek için farklı ayarları deneyin. Mutlu kodlama!
 
 ## SSS'ler
 

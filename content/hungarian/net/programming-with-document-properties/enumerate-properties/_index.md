@@ -65,7 +65,7 @@ Console.WriteLine("1. Document name: {0}", doc.OriginalFileName);
 
 A beépített tulajdonságok a Microsoft Word által előre meghatározott metaadat-tulajdonságok. Ezek közé tartozik a cím, a szerző és egyebek.
 
-1.  Hozzáférés a beépített tulajdonságokhoz: Használja a`BuiltInDocumentProperties` Gyűjtemény.
+1.  Hozzáférés a beépített tulajdonságokhoz: Használja a`BuiltInDocumentProperties` gyűjtemény.
 2. Loop Through Properties: Ismételje meg a tulajdonságokat, és jelenítse meg a nevüket és értékeikat.
 
 Íme a kód:
@@ -81,7 +81,7 @@ foreach (DocumentProperty prop in doc.BuiltInDocumentProperties)
 
 Az egyéni tulajdonságok a felhasználó által meghatározott metaadat-tulajdonságok. Ezek bármi lehet, amit hozzá szeretne adni a dokumentumához.
 
-1.  Az egyéni tulajdonságok elérése: Használja a`CustomDocumentProperties` Gyűjtemény.
+1.  Az egyéni tulajdonságok elérése: Használja a`CustomDocumentProperties` gyűjtemény.
 2. Loop Through Properties: Ismételje meg a tulajdonságokat, és jelenítse meg a nevüket és értékeikat.
 
 Íme a kód:
@@ -100,7 +100,7 @@ foreach (DocumentProperty prop in doc.CustomDocumentProperties)
 ## GYIK
 
 ### Hozzáadhatok új tulajdonságokat egy dokumentumhoz?
- Igen, új egyéni tulajdonságokat adhat hozzá a`CustomDocumentProperties` Gyűjtemény.
+ Igen, új egyéni tulajdonságokat adhat hozzá a`CustomDocumentProperties` gyűjtemény.
 
 ### Az Aspose.Words ingyenesen használható?
  Az Aspose.Words ajánlatok a[ingyenes próbaverzió](https://releases.aspose.com/) és más[vásárlási lehetőségek](https://purchase.aspose.com/buy).

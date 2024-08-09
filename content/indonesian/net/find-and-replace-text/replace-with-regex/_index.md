@@ -65,7 +65,7 @@ Saat ini, kami menggunakan opsi default, namun Anda dapat menyesuaikannya jika d
 
 ## Langkah 4: Lakukan Penggantian Regex
 
- Sekarang tiba bagian menyenangkan! Kami akan menggunakan`Range.Replace` metode untuk mengganti semua kemunculan "sedih" atau "gila" dengan "buruk" menggunakan ekspresi reguler.
+ Sekarang sampai pada bagian yang menyenangkan! Kami akan menggunakan`Range.Replace` metode untuk mengganti semua kemunculan "sedih" atau "gila" dengan "buruk" menggunakan ekspresi reguler.
 
 ```csharp
 doc.Range.Replace(new Regex("[s|m]ad"), "bad", options);
@@ -90,13 +90,13 @@ Dan itu dia! Anda telah berhasil menggunakan regex untuk menemukan dan mengganti
 ## FAQ
 
 ### Bisakah saya menggunakan pola regex yang lebih kompleks dengan Aspose.Words untuk .NET?  
-Sangat! Aspose.Words mendukung berbagai pola regex. Anda dapat menyesuaikan pola agar sesuai dengan kebutuhan Anda.
+Sangat! Aspose.Words mendukung berbagai pola regex. Anda dapat menyesuaikan pola Anda agar sesuai dengan kebutuhan Anda.
 
 ### Apakah Aspose.Words untuk .NET mendukung operasi teks lainnya?  
 Ya, benar. Aspose.Words untuk .NET menawarkan serangkaian fitur yang kaya untuk memanipulasi dokumen Word, termasuk ekstraksi teks, pemformatan, dan banyak lagi.
 
 ### Bisakah saya mengganti teks di bagian tertentu dalam dokumen?  
-Ya kamu bisa. Anda dapat menggunakan metode berbeda untuk menargetkan bagian, paragraf, atau bahkan header dan footer tertentu di dokumen Anda.
+Ya, kamu bisa. Anda dapat menggunakan metode berbeda untuk menargetkan bagian, paragraf, atau bahkan header dan footer tertentu di dokumen Anda.
 
 ### Apakah ada cara untuk melihat perubahan sebelum menyimpan dokumen?  
 Meskipun Aspose.Words tidak menyediakan fitur pratinjau langsung, Anda selalu dapat menyimpan salinan dokumen sebelum membuat perubahan dan membandingkan versinya.

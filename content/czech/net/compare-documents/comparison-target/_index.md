@@ -7,16 +7,16 @@ type: docs
 weight: 10
 url: /cs/net/compare-documents/comparison-target/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Přistihli jste se někdy, že jste porovnávali dvě verze dokumentu aplikace Word a ručně sledovali každou malou změnu? Je to jako hledat jehlu v kupce sena, že? No, co kdybych vám řekl, že existuje super snadný způsob, jak to udělat pomocí Aspose.Words pro .NET? To je správně! Tato výkonná knihovna vám umožní rychle porovnávat dokumenty aplikace Word. Dnes vás provedu procesem krok za krokem. Jste připraveni stát se průvodcem porovnávání dokumentů? Pojďme se ponořit!
+Ahoj! Přistihli jste se někdy, že jste porovnávali dvě verze dokumentu aplikace Word a ručně sledovali každou malou změnu? Je to jako hledat jehlu v kupce sena, že? No, co kdybych vám řekl, že existuje super snadný způsob, jak to udělat pomocí Aspose.Words pro .NET? To je pravda! Tato výkonná knihovna vám umožní rychle porovnávat dokumenty aplikace Word. Dnes vás provedu procesem krok za krokem. Jste připraveni stát se průvodcem porovnávání dokumentů? Pojďme se ponořit!
 
 ## Předpoklady
 
 Než se pustíme do hrubky, ujistěte se, že máte vše, co potřebujete, abyste mohli začít:
 
-1.  Aspose.Words for .NET: Tuto knihovnu potřebujete. Pokud ho ještě nemáte, stáhněte si ho[tady](https://releases.aspose.com/words/net/).
-2.  Licence: K odemknutí plného potenciálu Aspose.Words budete potřebovat platnou licenci. Můžete si jeden koupit[tady](https://purchase.aspose.com/buy) nebo získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
+1.  Aspose.Words for .NET: Tuto knihovnu potřebujete. Pokud ho ještě nemáte, stáhněte si ho[zde](https://releases.aspose.com/words/net/).
+2.  Licence: K odemknutí plného potenciálu Aspose.Words budete potřebovat platnou licenci. Můžete si jeden koupit[zde](https://purchase.aspose.com/buy) nebo získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
 3. Vývojové prostředí: Visual Studio nebo jakékoli jiné IDE kompatibilní s .NET.
 4. Základní znalost C#: Nebojte se, nemusíte být profík, stačí základní znalost.
 
@@ -119,4 +119,4 @@ Absolutně! Aspose.Words nabízí řadu možností, jak přizpůsobit srovnání
 
 ### Kde najdu podrobnější dokumentaci?
 
- Můžete si prohlédnout komplexní dokumentaci[tady](https://reference.aspose.com/words/net/).
+ Můžete si prohlédnout komplexní dokumentaci[zde](https://reference.aspose.com/words/net/).

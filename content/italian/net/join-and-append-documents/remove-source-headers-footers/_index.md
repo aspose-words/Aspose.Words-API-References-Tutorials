@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/join-and-append-documents/remove-source-headers-footers/
 ---
-## introduzione
+## Introduzione
 
 In questa guida completa, approfondiremo come rimuovere in modo efficace intestazioni e piè di pagina da un documento Word utilizzando Aspose.Words per .NET. Intestazioni e piè di pagina vengono comunemente utilizzati per la numerazione delle pagine, i titoli dei documenti o altri contenuti ripetuti nei documenti di Word. Che tu stia unendo documenti o ripulendo la formattazione, padroneggiare questo processo può semplificare le attività di gestione dei documenti. Esploriamo il processo passo passo per raggiungere questo obiettivo utilizzando Aspose.Words per .NET.
 
@@ -98,4 +98,4 @@ Le intestazioni e i piè di pagina del documento di origine possono continuare n
 Sì, Aspose.Words per .NET ti consente di rimuovere intestazioni e piè di pagina preservando il resto della formattazione del documento.
 
 ### Dove posso trovare ulteriori risorse e supporto per Aspose.Words per .NET?
- Visitare il[Aspose.Words per la documentazione .NET](https://reference.aspose.com/words/net/) per riferimenti ed esempi API dettagliati.
+ Visita il[Aspose.Words per la documentazione .NET](https://reference.aspose.com/words/net/) per riferimenti ed esempi API dettagliati.

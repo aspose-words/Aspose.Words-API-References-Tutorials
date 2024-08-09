@@ -85,7 +85,7 @@ Après avoir apporté des modifications, enregistrez le document :
 doc.save("path/to/modified/document.docx")
 ```
 
-## Gestion des tables et des listes
+## Gestion des tableaux et des listes
 
 Travailler avec des tableaux et des listes implique de parcourir des lignes et des cellules :
 

@@ -7,7 +7,7 @@ type: docs
 weight: 12
 url: /cs/java/document-security/document-encryption-decryption/
 ---
-Rozhodně! Zde je podrobný návod, jak provádět šifrování a dešifrování dokumentů pomocí Aspose.Words for Java.
+Jistě! Zde je podrobný návod, jak provádět šifrování a dešifrování dokumentů pomocí Aspose.Words for Java.
 
 # Šifrování a dešifrování dokumentů pomocí Aspose.Words pro Java
 
@@ -18,7 +18,7 @@ V tomto tutoriálu prozkoumáme, jak šifrovat a dešifrovat dokumenty pomocí A
 Než začneme, ujistěte se, že máte následující:
 
 - [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/javase-downloads.html) nainstalováno.
-- [Aspose.Words for Java](https://products.aspose.com/words/java) knihovna. Můžete si jej stáhnout z[tady](https://downloads.aspose.com/words/java).
+- [Aspose.Words for Java](https://products.aspose.com/words/java) knihovna. Můžete si jej stáhnout z[zde](https://downloads.aspose.com/words/java).
 
 ## Krok 1: Vytvořte projekt Java
 

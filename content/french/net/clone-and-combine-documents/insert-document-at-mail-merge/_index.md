@@ -15,7 +15,7 @@ Bienvenue dans le monde de l'automatisation des documents avec Aspose.Words pour
 
 Avant de commencer, assurez-vous d'avoir les éléments suivants :
 
-1.  Aspose.Words pour .NET : vous pouvez[Télécharger la dernière version ici](https://releases.aspose.com/words/net/) . Si vous devez acheter une licence, vous pouvez le faire[ici](https://purchase.aspose.com/buy) . Alternativement, vous pouvez obtenir un[permis temporaire](https://purchase.aspose.com/temporary-license/) ou essayez-le avec un[essai gratuit](https://releases.aspose.com/).
+1.  Aspose.Words pour .NET : vous pouvez[téléchargez la dernière version ici](https://releases.aspose.com/words/net/) . Si vous devez acheter une licence, vous pouvez le faire[ici](https://purchase.aspose.com/buy) . Alternativement, vous pouvez obtenir un[permis temporaire](https://purchase.aspose.com/temporary-license/) ou essayez-le avec un[essai gratuit](https://releases.aspose.com/).
 2. Environnement de développement : Visual Studio ou tout autre IDE C#.
 3. Connaissance de base de C# : La familiarité avec la programmation C# fera de ce didacticiel un jeu d'enfant.
 
@@ -134,7 +134,7 @@ private static void InsertDocument(Node insertionDestination, Document docToInse
 
 ## Conclusion
 
-Et voila! Vous avez réussi à insérer des documents dans des champs spécifiques lors d'une opération de publipostage à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité puissante peut vous faire gagner beaucoup de temps et d’efforts, en particulier lorsque vous traitez de gros volumes de documents. Pensez-y comme si vous aviez un assistant personnel qui s’occupe de tout le gros du travail à votre place. Alors, allez-y et essayez-le. Bon codage !
+Et voilà ! Vous avez réussi à insérer des documents dans des champs spécifiques lors d'une opération de publipostage à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité puissante peut vous faire gagner beaucoup de temps et d’efforts, en particulier lorsque vous traitez de gros volumes de documents. Pensez-y comme si vous aviez un assistant personnel qui s’occupe de tout le gros du travail à votre place. Alors, allez-y et essayez-le. Bon codage !
 
 ## FAQ
 

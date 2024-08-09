@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-ooxmlsaveoptions/set-compression-level/
 ---
-## introduzione
+## Introduzione
 
 Pronti a tuffarvi nel mondo della compressione dei documenti con Aspose.Words per .NET? Che tu voglia ottimizzare l'archiviazione dei tuoi documenti o accelerare i tempi di elaborazione, l'impostazione del livello di compressione può fare un'enorme differenza. In questo tutorial, esamineremo il processo di impostazione del livello di compressione per un documento Word utilizzando Aspose.Words per .NET. Al termine di questa guida sarai un professionista nel rendere i tuoi documenti più snelli e semplici.
 
@@ -99,9 +99,9 @@ Dopo aver eseguito l'applicazione, vai alla directory specificata e controlla il
 
 ## Conclusione
 
-E il gioco è fatto! Hai impostato correttamente il livello di compressione per un documento Word utilizzando Aspose.Words per .NET. Ciò può ridurre significativamente le dimensioni del file e migliorare le prestazioni quando si lavora con documenti di grandi dimensioni. Non dimenticare di esplorare altri livelli di compressione per trovare il miglior equilibrio tra dimensioni del file e prestazioni per le tue esigenze.
+Ed ecco qua! Hai impostato correttamente il livello di compressione per un documento Word utilizzando Aspose.Words per .NET. Ciò può ridurre significativamente le dimensioni del file e migliorare le prestazioni quando si lavora con documenti di grandi dimensioni. Non dimenticare di esplorare altri livelli di compressione per trovare il miglior equilibrio tra dimensioni del file e prestazioni per le tue esigenze.
 
-Se hai domande o riscontri problemi, consulta il[Documentazione Aspose.Words](https://reference.aspose.com/words/net/) o contattare il loro[Forum di assistenza](https://forum.aspose.com/c/words/8).
+Se hai domande o riscontri problemi, consulta il[Documentazione Aspose.Words](https://reference.aspose.com/words/net/) o contattare il loro[Forum di supporto](https://forum.aspose.com/c/words/8).
 
 ## Domande frequenti
 
@@ -123,4 +123,4 @@ Sì, Aspose.Words per .NET supporta la compressione per vari formati di document
 
 ### Dove posso ottenere supporto se riscontro problemi?
 
- Puoi ottenere supporto dalla comunità Aspose visitando il loro[Forum di assistenza](https://forum.aspose.com/c/words/8).
+ Puoi ottenere supporto dalla comunità Aspose visitando il loro[Forum di supporto](https://forum.aspose.com/c/words/8).

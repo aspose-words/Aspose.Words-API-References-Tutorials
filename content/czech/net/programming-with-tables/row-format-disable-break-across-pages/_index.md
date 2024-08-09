@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-tables/row-format-disable-break-across-pages/
 ---
-## Úvod
+## Zavedení
 
 Při práci s tabulkami v dokumentech aplikace Word můžete chtít zajistit, aby se řádky na stránkách nelámaly, což může být nezbytné pro zachování čitelnosti a formátování dokumentů. Aspose.Words for .NET poskytuje snadný způsob, jak zakázat zalomení řádků na stránkách.
 
@@ -75,13 +75,13 @@ V tomto tutoriálu jsme ukázali, jak zakázat zalomení řádků mezi stránkam
  Ano, zalomení řádků pro konkrétní řádky můžete zakázat přístupem k požadovanému řádku a jeho nastavením`AllowBreakAcrossPages`majetek do`false`.
 
 ### Funguje tato metoda pro tabulky se sloučenými buňkami?  
- Ano, tato metoda funguje pro tabulky se sloučenými buňkami. Vlastnictví`AllowBreakAcrossPages` platí pro celý řádek bez ohledu na sloučení buněk.
+ Ano, tato metoda funguje pro tabulky se sloučenými buňkami. Nemovitost`AllowBreakAcrossPages` platí pro celý řádek bez ohledu na sloučení buněk.
 
 ### Bude tato metoda fungovat, pokud je tabulka vnořena do jiné tabulky?  
 Ano, stejným způsobem můžete přistupovat a upravovat vnořené tabulky. Ujistěte se, že správně odkazujete na vnořenou tabulku pomocí jejího indexu nebo jiných vlastností.
 
 ### Jak mohu zkontrolovat, zda řádek umožňuje přerušení mezi stránkami?  
- Můžete zkontrolovat, zda řádek umožňuje přerušení mezi stránkami přístupem k`AllowBreakAcrossPages` majetek z`RowFormat` a kontrolu jeho hodnoty.
+ Můžete zkontrolovat, zda řádek umožňuje přerušení mezi stránkami přístupem k`AllowBreakAcrossPages` vlastnictvím`RowFormat` a kontrolu jeho hodnoty.
 
 ### Existuje způsob, jak toto nastavení použít na všechny tabulky v dokumentu?  
 Ano, můžete procházet všechny tabulky v dokumentu a použít toto nastavení pro každou z nich.

@@ -99,7 +99,7 @@ table.CellSpacing = 2;
 
 Na koniec zapisz zmodyfikowany dokument w określonym katalogu.
 
- Użyj`Save` metoda zapisania dokumentu.
+ Skorzystaj z`Save` metoda zapisania dokumentu.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.AllowCellSpacing.docx");

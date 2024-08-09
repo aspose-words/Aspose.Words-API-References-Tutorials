@@ -10,7 +10,7 @@ url: /vi/java/document-manipulation/adding-content-using-documentbuilder/
 
 ## Giới thiệu về Thêm nội dung bằng DocumentBuilder trong Aspose.Words cho Java
 
-Trong hướng dẫn từng bước này, chúng ta sẽ khám phá cách sử dụng Aspose.Words cho DocumentBuilder của Java để thêm nhiều loại nội dung khác nhau vào tài liệu Word. Chúng tôi sẽ đề cập đến việc chèn văn bản, bảng, quy tắc ngang, trường biểu mẫu, HTML, siêu liên kết, mục lục, hình ảnh nội tuyến và nổi, đoạn văn, v.v. Bắt đầu nào!
+Trong hướng dẫn từng bước này, chúng ta sẽ khám phá cách sử dụng Aspose.Words cho DocumentBuilder của Java để thêm nhiều loại nội dung khác nhau vào tài liệu Word. Chúng tôi sẽ đề cập đến việc chèn văn bản, bảng, quy tắc ngang, trường biểu mẫu, HTML, siêu liên kết, mục lục, hình ảnh nội tuyến và nổi, đoạn văn, v.v. Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
@@ -215,7 +215,7 @@ doc.save("path/to/your/document.docx");
 
 ## Bước 10: Di chuyển con trỏ
 
- Bạn có thể điều khiển vị trí con trỏ trong tài liệu bằng nhiều phương pháp khác nhau như`moveToParagraph`, `moveToCell`và hơn thế nữa. Đây là một ví dụ:
+ Bạn có thể điều khiển vị trí con trỏ trong tài liệu bằng nhiều phương pháp khác nhau như`moveToParagraph`, `moveToCell`và hơn thế nữa Đây là một ví dụ:
 
 ```java
 Document doc = new Document();
@@ -285,7 +285,7 @@ builder.insertImage("path/to/your/image.png", RelativeHorizontalPosition.MARGIN,
 
 ### Hỏi: Tôi có thể định dạng văn bản và đoạn văn khi thêm nội dung không?
 
- Đáp: Có, bạn có thể định dạng văn bản và đoạn văn bằng cách sử dụng`DocumentBuilder`. Bạn có thể đặt thuộc tính phông chữ, căn chỉnh đoạn văn, thụt lề, v.v. Đây là một ví dụ:
+ Đ: Có, bạn có thể định dạng văn bản và đoạn văn bằng cách sử dụng`DocumentBuilder`. Bạn có thể đặt thuộc tính phông chữ, căn chỉnh đoạn văn, thụt lề, v.v. Đây là một ví dụ:
 
 ```java
 Document doc = new Document();
@@ -310,7 +310,7 @@ builder.writeln("This is a formatted paragraph.");
 
 ### Hỏi: Làm cách nào tôi có thể di chuyển con trỏ đến một vị trí cụ thể trong tài liệu?
 
- Đáp: Bạn có thể điều khiển vị trí con trỏ bằng các phương pháp như`moveToParagraph`, `moveToCell`và hơn thế nữa. Đây là một ví dụ:
+ Đáp: Bạn có thể điều khiển vị trí con trỏ bằng các phương pháp như`moveToParagraph`, `moveToCell`và hơn thế nữa Đây là một ví dụ:
 
 ```java
 Document doc = new Document();

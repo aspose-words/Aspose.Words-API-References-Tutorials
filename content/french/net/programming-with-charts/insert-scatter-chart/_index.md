@@ -68,7 +68,7 @@ doc.Save(dataDir + "WorkingWithCharts.InsertScatterChart.docx");
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez appris avec succès comment insérer un nuage de points dans votre document Word à l'aide d'Aspose.Words pour .NET. Les diagrammes à nuages de points sont d'excellents outils pour visualiser les relations entre les données, et avec Aspose.Words, vous pouvez les intégrer sans effort dans vos documents pour améliorer la clarté et la compréhension.
+Félicitations! Vous avez appris avec succès comment insérer un nuage de points dans votre document Word à l'aide d'Aspose.Words pour .NET. Les diagrammes à nuages de points sont d'excellents outils pour visualiser les relations entre les données, et avec Aspose.Words, vous pouvez les intégrer sans effort dans vos documents pour améliorer la clarté et la compréhension.
 
 ## FAQ
 

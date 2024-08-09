@@ -12,7 +12,7 @@ Words Processing with Form Fields は、Aspose.Words for .NET ライブラリを
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [フォームフィールドを挿入する](./insert-form-fields/) | Aspose.Words for .NET を使用して、Word 文書にドロップダウン フォーム フィールドを挿入する方法を学習します。 |
-| [フォームフィールドはプロパティと連携する](./form-fields-work-with-properties/) | Aspose.Words for .NET を使用して Word 文書内のフォーム フィールド プロパティを操作する方法を学習します。 |
-| [フォームフィールド フォームフィールドコレクションを取得](./form-fields-get-form-fields-collection/) | Aspose.Words for .NET を使用して Word 文書内のフォーム フィールド コレクションを取得および操作する方法を学習します。 |
-| [フォームフィールドを名前で取得](./form-fields-get-by-name/) | Aspose.Words for .NET を使用して、Word 文書内のフォーム フィールドを名前で取得および変更する方法を学習します。 |
+| [フォームフィールドを挿入する](./insert-form-fields/) | 詳細なステップバイステップ ガイドを使用して、Aspose.Words for .NET を使用して Word 文書にコンボ ボックス フォーム フィールドを挿入する方法を学習します。 |
+| [フォームフィールドはプロパティと連携する](./form-fields-work-with-properties/) | 詳細なステップバイステップ ガイドを使用して、Aspose.Words for .NET を使用して Word 文書内のフォーム フィールドを操作する方法を学習します。 |
+| [フォームフィールド フォームフィールドコレクションを取得](./form-fields-get-form-fields-collection/) | 包括的なステップバイステップ ガイドを使用して、Aspose.Words for .NET を使用して Word 文書内のフォーム フィールドを取得および操作する方法を学習します。 |
+| [フォームフィールドを名前で取得](./form-fields-get-by-name/) | この詳細なステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書内のフォーム フィールドを名前で取得および変更する方法を学習します。 |

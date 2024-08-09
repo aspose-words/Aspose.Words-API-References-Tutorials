@@ -111,7 +111,7 @@ header.getFirstParagraph().getParagraphFormat().setAlignment(ParagraphAlignment.
 
 ### Hozzáadhatok egyéni mezőket, például dokumentumcímeket a fejlécekhez vagy láblécekhez?
 
-Igen, egyéni mezőket is hozzáadhat a fejlécekhez vagy láblécekhez. Hozzon létre egy`Run` elemet, és illessze be a fejléc vagy lábléc tartalmába, megadva a kívánt szöveget. Igény szerint testreszabhatja a formázást.
+Igen, egyéni mezőket is hozzáadhat a fejlécekhez vagy láblécekhez. Hozzon létre a`Run` elemet, és illessze be a fejléc vagy lábléc tartalmába, megadva a kívánt szöveget. Igény szerint testreszabhatja a formázást.
 
 ### Az Aspose.Words for Java kompatibilis a különböző dokumentumformátumokkal?
 

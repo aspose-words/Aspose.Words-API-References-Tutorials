@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-htmlsaveoptions/export-fonts-as-base-64/
 ---
-## Úvod
+## Zavedení
 
 Pokud jde o programovou manipulaci s dokumenty Wordu, Aspose.Words for .NET je velmoc. Jednou z jeho šikovných funkcí je export písem jako Base64 do souborů HTML, což zajišťuje, že písma jsou vložena a správně zobrazena v různých prohlížečích a systémech. V tomto tutoriálu se ponoříme do toho, jak toho můžete dosáhnout. Jste připraveni upravit písma dokumentů aplikace Word na web? Začněme!
 
@@ -100,7 +100,7 @@ Tento řádek uloží váš dokument jako soubor HTML s fonty exportovanými jak
 
 ## Závěr
 
-Gratulujeme! Úspěšně jste exportovali písma jako Base64 z dokumentu aplikace Word pomocí Aspose.Words for .NET. Tím zajistíte, že vaše písma budou zachována a správně zobrazena na různých platformách. Ať už připravujete dokumenty pro zobrazení na webu nebo jednoduše zajišťujete kompatibilitu, tato funkce je neuvěřitelně užitečná.
+Gratuluji! Úspěšně jste exportovali písma jako Base64 z dokumentu aplikace Word pomocí Aspose.Words for .NET. Tím zajistíte, že vaše písma budou zachována a správně zobrazena na různých platformách. Ať už připravujete dokumenty pro zobrazení na webu nebo jednoduše zajišťujete kompatibilitu, tato funkce je neuvěřitelně užitečná.
 
 ## FAQ
 

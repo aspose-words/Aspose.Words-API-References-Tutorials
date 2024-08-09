@@ -11,7 +11,7 @@ url: /cs/java/document-conversion-and-export/
 Pokud chcete využít plný potenciál Aspose.Words for Java pro konverzi a export dokumentů, jste na správném místě. V tomto článku vám poskytneme podrobný seznam výukových programů, které vám pomohou zvládnout toto výkonné API.
 
 ## Začínáme s Aspose.Words pro Javu
-Jste v Aspose.Words pro Java noví? Bez obav! Tento tutoriál vás provede počátečním nastavením a poskytne vám pevný základ pro práci s tímto API. Za chvíli budete v provozu.
+Jste v Aspose.Words pro Java noví? Žádný strach! Tento tutoriál vás provede počátečním nastavením a poskytne vám pevný základ pro práci s tímto API. Za chvíli budete v provozu.
 
 ## Převod dokumentů do různých formátů
 Jednou z klíčových vlastností Aspose.Words for Java je jeho schopnost bezproblémově převádět dokumenty do různých formátů. Ať už potřebujete převést soubor DOCX do PDF nebo naopak, tento tutoriál vás provede procesem krok za krokem. Získáte hluboké znalosti o možnostech převodu a možnostech přizpůsobení.
@@ -23,7 +23,7 @@ Na konci těchto výukových programů budete vybaveni znalostmi a dovednostmi, 
 
 Ponořte se tedy do výše uvedených výukových programů a odemkněte plný potenciál Aspose.Words for Java ve svých projektech souvisejících s dokumenty. Šťastné kódování!
 
- Pro více informací se podívejte na[Aspose.Words for Java API dokumentace](https://reference.aspose.com/words/java/) a chcete-li začít, stáhněte si ji z[tady](https://releases.aspose.com/words/java/) . Pokud máte nějaké dotazy nebo potřebujete pomoc, neváhejte se na nás obrátit[Fórum podpory](https://forum.aspose.com/).
+ Pro více informací se podívejte na[Aspose.Words for Java API dokumentace](https://reference.aspose.com/words/java/) a chcete-li začít, stáhněte si ji z[zde](https://releases.aspose.com/words/java/) . Pokud máte nějaké dotazy nebo potřebujete pomoc, neváhejte se na nás obrátit[fórum podpory](https://forum.aspose.com/).
 
 ## Konverze dokumentů a výukové programy exportu
 ### [Generování vlastních štítků s čárovým kódem v Aspose.Words pro Java](./generating-custom-barcode-labels/)

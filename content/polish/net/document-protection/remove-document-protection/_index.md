@@ -10,7 +10,7 @@ url: /pl/net/document-protection/remove-document-protection/
 
 ## Wstęp
 
-No hej! Czy zdarzyło Ci się kiedyś, że dostęp do własnego dokumentu programu Word został zablokowany z powodu ustawień zabezpieczeń? To jakby próbować otworzyć drzwi złym kluczem – frustrujące, prawda? Ale nie bój się! Dzięki Aspose.Words dla .NET możesz łatwo usunąć ochronę z dokumentów Word. Ten samouczek przeprowadzi Cię przez cały proces krok po kroku, dzięki czemu w mgnieniu oka odzyskasz pełną kontrolę nad dokumentami. Zanurzmy się!
+Hej tam! Czy zdarzyło Ci się kiedyś, że dostęp do własnego dokumentu programu Word został zablokowany z powodu ustawień zabezpieczeń? To jakby próbować otworzyć drzwi złym kluczem – frustrujące, prawda? Ale nie bój się! Dzięki Aspose.Words dla .NET możesz łatwo usunąć ochronę z dokumentów Word. Ten samouczek przeprowadzi Cię przez cały proces krok po kroku, dzięki czemu w mgnieniu oka odzyskasz pełną kontrolę nad dokumentami. Zanurzmy się!
 
 ## Warunki wstępne
 
@@ -53,7 +53,7 @@ Czasami dokumenty są chronione bez hasła. W takich przypadkach możemy po pros
 doc.Unprotect();
 ```
 
-Otóż to! Twój dokument nie jest teraz chroniony. Ale co, jeśli istnieje hasło?
+To wszystko! Twój dokument nie jest teraz chroniony. Ale co, jeśli istnieje hasło?
 
 ## Krok 3: Usuń ochronę hasłem
 

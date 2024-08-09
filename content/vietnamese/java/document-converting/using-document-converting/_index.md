@@ -31,7 +31,7 @@ Aspose.Words cho phép bạn hợp nhất nhiều tài liệu thành một, giú
 Với Aspose.Words, bạn có thể thực hiện các tác vụ xử lý văn bản nâng cao, chẳng hạn như tìm và thay thế văn bản, làm việc với các đoạn văn và bảng cũng như xử lý siêu dữ liệu tài liệu.
 
 ## Nền tảng độc lập: 
-Aspose.Words độc lập với nền tảng, nghĩa là nó hoạt động trơn tru trên nhiều hệ điều hành khác nhau, khiến nó trở nên linh hoạt và có thể thích ứng với các môi trường phát triển khác nhau.
+Aspose.Words độc lập với nền tảng, nghĩa là nó hoạt động trơn tru trên nhiều hệ điều hành khác nhau, khiến nó trở nên linh hoạt và thích ứng với các môi trường phát triển khác nhau.
 
 ## Chuyển đổi tài liệu bằng Aspose.Words cho Java
 

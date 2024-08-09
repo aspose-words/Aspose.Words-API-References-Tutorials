@@ -86,7 +86,7 @@ Végül mentse el a módosított dokumentumot.
 
 ## Következtetés
 
-Gratulálunk! Sikeresen törölte a tartalomvezérlést egy Word-dokumentumból az Aspose.Words for .NET segítségével. Ezzel a hatékony könyvtárral gyerekjáték a Word-dokumentumok kezelése. Az alábbi lépések követésével könnyedén kezelheti a strukturált dokumentumcímkéket a projektekben.
+Gratulálok! Sikeresen törölte a tartalomvezérlést egy Word-dokumentumból az Aspose.Words for .NET segítségével. Ezzel a hatékony könyvtárral gyerekjáték a Word-dokumentumok kezelése. Az alábbi lépések követésével könnyedén kezelheti a strukturált dokumentumcímkéket a projektekben.
 
 ## GYIK
 

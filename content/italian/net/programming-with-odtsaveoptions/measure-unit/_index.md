@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-odtsaveoptions/measure-unit/
 ---
-## introduzione
+## Introduzione
 
 Ti è mai capitato di dover convertire i tuoi documenti Word in formati diversi ma di avere bisogno di un'unità di misura specifica per il tuo layout? Che tu abbia a che fare con pollici, centimetri o punti, è fondamentale garantire che il tuo documento mantenga la sua integrità durante il processo di conversione. In questo tutorial, esamineremo come configurare la funzionalità dell'unità di misura in Aspose.Words per .NET. Questa potente funzionalità garantisce che la formattazione del tuo documento venga preservata esattamente come ti serve durante la conversione in formato ODT (Open Document Text).
 
@@ -53,7 +53,7 @@ Assicurati che il tuo documento Word, denominato "Document.docx", sia presente n
 
 ## Passaggio 3: configurare l'unità di misura
 
- Ora configuriamo l'unità di misura per la conversione ODT. Qui è dove avviene la magia. Imposteremo il`OdtSaveOptions` utilizzare i pollici come unità di misura.
+ Ora configuriamo l'unità di misura per la conversione ODT. È qui che avviene la magia. Imposteremo il`OdtSaveOptions` utilizzare i pollici come unità di misura.
 
 ```csharp
 // Configurazione delle opzioni di backup con la funzionalità "Unità di misura".
@@ -75,7 +75,7 @@ Questa riga di codice salva il documento convertito nella directory specificata 
 
 ## Conclusione
 
-il gioco è fatto! Seguendo questi passaggi, puoi facilmente configurare la funzionalità dell'unità di misura in Aspose.Words per .NET per garantire che il layout del tuo documento venga preservato durante la conversione. Che tu stia lavorando con pollici, centimetri o punti, questo tutorial ti ha mostrato come assumere facilmente il controllo della formattazione del tuo documento.
+Ed ecco qua! Seguendo questi passaggi, puoi facilmente configurare la funzionalità dell'unità di misura in Aspose.Words per .NET per garantire che il layout del tuo documento venga preservato durante la conversione. Che tu stia lavorando con pollici, centimetri o punti, questo tutorial ti ha mostrato come assumere facilmente il controllo della formattazione del tuo documento.
 
 ## Domande frequenti
 
@@ -89,7 +89,7 @@ Aspose.Words per .NET è una potente libreria per lavorare con documenti Word a 
  Sì, puoi scaricare una versione di prova gratuita di Aspose.Words per .NET da[Qui](https://releases.aspose.com/).
 
 ### Dove posso trovare la documentazione per Aspose.Words per .NET?
- È possibile accedere alla documentazione completa per Aspose.Words per .NET all'indirizzo[questo link](https://reference.aspose.com/words/net/).
+ È possibile accedere alla documentazione completa per Aspose.Words per .NET all'indirizzo[questo collegamento](https://reference.aspose.com/words/net/).
 
 ### Come posso ottenere supporto per Aspose.Words per .NET?
- Per supporto, puoi visitare il forum Aspose.Words all'indirizzo[questo link](https://forum.aspose.com/c/words/8).
+ Per supporto, puoi visitare il forum Aspose.Words all'indirizzo[questo collegamento](https://forum.aspose.com/c/words/8).

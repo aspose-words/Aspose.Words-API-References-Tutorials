@@ -84,7 +84,7 @@ Slutligen, spara ditt dokument i den angivna katalogen. Detta säkerställer att
 doc.Save(dataDir + "UpdateCultureChamps.pdf");
 ```
 
- Byta ut`"YOUR DOCUMENTS DIRECTORY"` med sökvägen där du vill spara filen. Dokumentet kommer att sparas som en PDF med namnet`UpdateCultureChamps.pdf`.
+ Ersätta`"YOUR DOCUMENTS DIRECTORY"` med sökvägen där du vill spara filen. Dokumentet kommer att sparas som en PDF med namnet`UpdateCultureChamps.pdf`.
 
 ## Slutsats
 

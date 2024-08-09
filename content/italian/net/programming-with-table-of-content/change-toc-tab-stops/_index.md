@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-table-of-content/change-toc-tab-stops/
 ---
-## introduzione
+## Introduzione
 
 Ti sei mai chiesto come ravvivare il sommario (TOC) nei tuoi documenti Word? Forse vuoi che i punti di tabulazione si allineino perfettamente per quel tocco professionale. Sei nel posto giusto! Oggi approfondiremo come modificare le tabulazioni del sommario utilizzando Aspose.Words per .NET. Resta nei paraggi e ti prometto che te ne andrai con tutto il know-how per rendere il tuo sommario elegante e ordinato.
 
@@ -19,7 +19,7 @@ Prima di iniziare, assicuriamoci di avere tutto ciò di cui hai bisogno:
 2. Ambiente di sviluppo: Visual Studio o qualsiasi IDE compatibile con C#.
 3. Un documento Word: in particolare, uno che contiene un sommario.
 
-Capito tutto? Eccezionale! Diamoci dentro.
+Capito tutto? Eccezionale! Andiamo avanti.
 
 ## Importa spazi dei nomi
 
@@ -69,7 +69,7 @@ Immagina di scansionare una folla per trovare i tuoi amici. Qui stiamo cercando 
 
 ## Passaggio 3: modificare i punti di tabulazione
 
-Perché? Qui è dove avviene la magia. La modifica delle tabulazioni conferisce al sommario un aspetto più pulito.
+Perché? È qui che avviene la magia. La modifica delle tabulazioni conferisce al sommario un aspetto più pulito.
 
 Come? Rimuovi la tabulazione esistente e aggiungine una nuova in una posizione modificata:
 
@@ -108,7 +108,7 @@ La modifica delle tabulazioni del sommario in un documento Word utilizzando Aspo
 ## Domande frequenti
 
 ### Posso modificare separatamente le tabulazioni per diversi livelli di sommario?
-Si, puoi! Controlla semplicemente ogni livello TOC specifico (Toc1, Toc2, ecc.) e regolalo di conseguenza.
+Sì, puoi! Controlla semplicemente ogni livello TOC specifico (Toc1, Toc2, ecc.) e regolalo di conseguenza.
 
 ### Cosa succede se il mio documento ha più sommari?
 Il codice esegue la scansione di tutti i paragrafi in stile TOC, quindi modificherà tutti i TOC presenti nel documento.

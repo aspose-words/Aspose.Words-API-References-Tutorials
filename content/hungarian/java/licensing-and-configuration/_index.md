@@ -17,7 +17,7 @@ Amikor elindul az Aspose.Words for Java használatára, az első lépés a licen
 
 2. A licencfájl beszerzése: A vásárlás után kap egy licencfájlt. Ez a fájl kulcsfontosságú az Aspose.Words konfigurálásához a Java projektben.
 
-3.  A licenc integrálása: Az Aspose.Words engedélyezéséhez integrálja a licencet a Java alkalmazásba. Ez általában magában foglalja a licencfájl betöltését és az Aspose.Words alkalmazásban való alkalmazását. Utal[API dokumentáció](https://reference.aspose.com/words/java/) részletes kódmintákért.
+3.  A licenc integrálása: Az Aspose.Words engedélyezéséhez integrálja a licencet a Java alkalmazásba. Ez általában magában foglalja a licencfájl betöltését és az Aspose.Words alkalmazásban való alkalmazását. Lásd a[API dokumentáció](https://reference.aspose.com/words/java/) részletes kódmintákért.
 
 ## Konfigurációs beállítások
 

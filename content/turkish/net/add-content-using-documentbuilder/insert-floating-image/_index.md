@@ -77,7 +77,7 @@ string imagePath = dataDir + "Transparent background logo.png";
 
 Her şey ayarlandığında, kayan görüntüyü belgeye ekleyelim.
 
- Kullan`InsertImage` yöntemi`DocumentBuilder` resmin ekleneceği sınıf:
+ Kullanın`InsertImage` yöntemi`DocumentBuilder` resmin ekleneceği sınıf:
 
 ```csharp
 builder.InsertImage(imagePath,
@@ -134,7 +134,7 @@ Aspose.Words for .NET kullanarak bir Word belgesine kayan bir görüntü eklemek
 
 ### Görüntüler için başka hangi sarma türleri mevcuttur?
 
- Aspose.Words aşağıdakiler gibi çeşitli sarma türlerini destekler:`Inline`, `TopBottom`, `Tight`, `Through`, ve dahası. Belge düzeninize en uygun olanı seçebilirsiniz.
+ Aspose.Words aşağıdakiler gibi çeşitli sarma türlerini destekler:`Inline`, `TopBottom`, `Tight`, `Through`ve daha fazlası. Belge düzeninize en uygun olanı seçebilirsiniz.
 
 ### Farklı resim formatlarını kullanabilir miyim?
 

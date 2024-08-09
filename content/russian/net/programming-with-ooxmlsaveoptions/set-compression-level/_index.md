@@ -87,7 +87,7 @@ OoxmlSaveOptions saveOptions = new OoxmlSaveOptions
 
 Наконец, сохраните документ с новыми настройками сжатия.
 
- Использовать`Save` метод для сохранения документа с указанным уровнем сжатия.
+ Используйте`Save` метод для сохранения документа с указанным уровнем сжатия.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.SetCompressionLevel.docx", saveOptions);

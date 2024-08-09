@@ -9,7 +9,7 @@ url: /nl/net/programming-with-digital-signatures/set-signature-provider-id/
 ---
 ## Invoering
 
-Hallo daar! Dus je hebt een geweldig Word-document dat een digitale handtekening nodig heeft, toch? Maar niet zomaar een handtekening: u moet een specifieke handtekeningaanbieder-ID instellen. Of u nu juridische documenten, contracten of ander papierwerk verwerkt, het toevoegen van een veilige, digitale handtekening is van cruciaal belang. In deze zelfstudie begeleid ik u door het hele proces van het instellen van een handtekeningprovider-ID in een Word-document met behulp van Aspose.Words voor .NET. Klaar? Laten we erin duiken!
+Hé daar! Dus je hebt een geweldig Word-document dat een digitale handtekening nodig heeft, toch? Maar niet zomaar een handtekening: u moet een specifieke handtekeningaanbieder-ID instellen. Of u nu juridische documenten, contracten of ander papierwerk verwerkt, het toevoegen van een veilige, digitale handtekening is van cruciaal belang. In deze zelfstudie begeleid ik u door het hele proces van het instellen van een handtekeningprovider-ID in een Word-document met behulp van Aspose.Words voor .NET. Klaar? Laten we erin duiken!
 
 ## Vereisten
 

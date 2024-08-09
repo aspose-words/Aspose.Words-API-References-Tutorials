@@ -94,5 +94,5 @@ Console.WriteLine(table.Rows[2].Cells[3].GetText().Trim());
  Да,`DocumentBuilder` позволяет вставлять изображения, таблицы и другие элементы в текущую позицию внутри ячейки.
 
 ### Как сохранить измененный документ?
- Использовать`Save` метод`Document` class, чтобы сохранить изменения. Например:`doc.Save(dataDir + "UpdatedTables.docx");`
+ Используйте`Save` метод`Document` class, чтобы сохранить изменения. Например:`doc.Save(dataDir + "UpdatedTables.docx");`
 

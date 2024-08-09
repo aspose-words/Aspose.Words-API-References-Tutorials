@@ -15,7 +15,7 @@ Jeśli kiedykolwiek chciałeś programowo dostosować układ komórek tabeli w d
 
 Zanim przejdziemy do kodu, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
-1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words dla .NET. Jeśli tego nie zrobiłeś, możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words dla .NET. Jeśli tego nie zrobiłeś, możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: Będziesz potrzebować środowiska programistycznego skonfigurowanego z platformą .NET. Visual Studio to świetny wybór, jeśli szukasz rekomendacji.
 3. Podstawowa znajomość języka C#: chociaż wyjaśnię każdy krok, podstawowa znajomość języka C# ułatwi ci wykonanie wszystkich czynności.
 4.  Katalog dokumentów: Przygotuj ścieżkę katalogu, w którym będziesz zapisywać swoje dokumenty. Będziemy to nazywać`YOUR DOCUMENT DIRECTORY`.

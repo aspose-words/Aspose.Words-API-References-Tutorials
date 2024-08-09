@@ -2,63 +2,78 @@
 title: Přeškrtnutí
 linktitle: Přeškrtnutí
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se používat styl přeškrtnutého textu pomocí Aspose.Words for .NET Podrobný průvodce.
+description: Naučte se, jak použít přeškrtnuté formátování na text pomocí Aspose.Words for .NET s naším podrobným průvodcem. Vylepšete své dovednosti ve zpracování dokumentů.
 type: docs
 weight: 10
 url: /cs/net/working-with-markdown/strikethrough/
 ---
+## Zavedení
 
+Vítejte v tomto podrobném průvodci, jak použít přeškrtnuté formátování na text pomocí Aspose.Words for .NET. Pokud chcete zlepšit své dovednosti při zpracování dokumentů a dodat svému textu jedinečný nádech, jste na správném místě. Pojďme se ponořit!
 
-tomto příkladu vás provedeme tím, jak použít styl přeškrtnutého textu pomocí Aspose.Words for .NET. Přeškrtnutý text se používá k označení, že text je odstraněn nebo již není platný.
+## Předpoklady
 
-## Krok 1: Použití generátoru dokumentů
+Než začneme, ujistěte se, že máte následující:
 
-Nejprve použijeme generátor dokumentů k přidání obsahu do našeho dokumentu.
+-  Aspose.Words pro .NET: Stáhněte si ji[zde](https://releases.aspose.com/words/net/).
+- .NET Framework: Ujistěte se, že máte v systému nainstalované rozhraní .NET Framework.
+- Vývojové prostředí: IDE jako Visual Studio.
+- Základní znalost C#: Je nutná znalost programování v C#.
+
+## Importovat jmenné prostory
+
+Chcete-li začít, budete muset importovat potřebné jmenné prostory. Ty jsou nezbytné pro přístup ke knihovně Aspose.Words a jejím funkcím.
 
 ```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Krok 1: Inicializujte DocumentBuilder
+
+ The`DocumentBuilder` class je výkonný nástroj v Aspose.Words, který vám umožňuje snadno přidávat obsah do vašeho dokumentu.
+
+```csharp
+// Inicializujte DocumentBuilder.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Krok 2: Použijte styl přeškrtnutého textu
+## Krok 2: Nastavte vlastnost přeškrtnutí
 
- Styl přeškrtnutého textu povolíme nastavením`StrikeThrough` majetek z`Font` namítat proti`true`.
+Nyní aplikujme vlastnost přeškrtnutí na náš text. To zahrnuje nastavení`StrikeThrough` vlastnictvím`Font` namítat proti`true`.
 
 ```csharp
+// Přeškrtněte text.
 builder.Font.StrikeThrough = true;
 ```
 
-## Krok 3: Přidejte přeškrtnutý text
+## Krok 3: Napište text s přeškrtnutím
 
- Nyní můžeme přidat přeškrtnutý text pomocí generátoru dokumentů`Writeln` metoda.
+ S nastavenou vlastností přeškrtnutí nyní můžeme přidat náš text. The`Writeln` metoda přidá text do dokumentu.
 
 ```csharp
+// Napište text pomocí přeškrtnutého textu.
 builder.Writeln("This text will be StrikeThrough");
 ```
 
+## Závěr
 
-### Příklad zdrojového kódu pro přeškrtnutý text s Aspose.Words pro .NET
+A tady to máte! Úspěšně jste do textu přidali přeškrtnuté formátování pomocí Aspose.Words for .NET. Tato výkonná knihovna otevírá svět možností pro zpracování a přizpůsobení dokumentů. Ať už vytváříte zprávy, dopisy nebo jakýkoli jiný typ dokumentu, zvládnutí těchto funkcí nepochybně zvýší vaši produktivitu a kvalitu vašich výstupů.
 
-```csharp
-// K přidání obsahu do dokumentu použijte tvůrce dokumentů.
-DocumentBuilder builder = new DocumentBuilder();
+## FAQ
 
-// Proveďte přeškrtnutí textu.
-builder.Font.StrikeThrough = true;
-builder.Writeln("This text will be StrikeThrough");
-```
+### Co je Aspose.Words for .NET?
+Aspose.Words for .NET je výkonná knihovna pro zpracování dokumentů, která umožňuje vývojářům vytvářet, manipulovat a převádět dokumenty aplikace Word programově.
 
-gratuluji! Nyní jste se naučili, jak použít styl přeškrtnutého textu s Aspose.Words pro .NET.
+### Mohu použít Aspose.Words pro .NET v komerčním projektu?
+ Ano, Aspose.Words pro .NET můžete používat v komerčních projektech. Možnosti nákupu naleznete na[koupit stránku](https://purchase.aspose.com/buy).
 
-### FAQ
+### Je k dispozici bezplatná zkušební verze pro Aspose.Words pro .NET?
+ Ano, můžete si stáhnout bezplatnou zkušební verzi[zde](https://releases.aspose.com/).
 
-#### Otázka: Jak mohu přidat přeškrtnutý text do Aspose.Words?
+### Jak získám podporu pro Aspose.Words for .NET?
+Můžete získat podporu od komunity Aspose a odborníků na[fórum podpory](https://forum.aspose.com/c/words/8).
 
- A: Chcete-li přidat přeškrtnutý text do Aspose.Words, můžete použít`Font.StrikeThrough` majetek z`Run` objekt. Tuto vlastnost můžete nastavit na`true` přidat přeškrtnutý text ke konkrétnímu textu. Můžete například použít`run.Font.StrikeThrough=true` přidat přeškrtnutý text do`Run` objekt.
-
-#### Otázka: Je možné přidat přeškrtnutý text k několika částem textu ve stejném odstavci?
-
- Odpověď: Ano, můžete přidat přeškrtnutý text do více částí textu v jednom odstavci pomocí více`Run` objektů. Můžete vytvořit více`Run` objekty a nastavte`Font.StrikeThrough`majetek do`true` pro každý objekt přidat přeškrtnutý text do požadovaných částí textu. Poté je můžete přidat do odstavce pomocí`Paragraph.AppendChild(run)` metoda.
-
-#### Otázka: Mohu přidat přeškrtnutý text k textu, který je v tabulce nebo buňce v Aspose.Words?
-
- Odpověď: Ano, k textu, který je v tabulce nebo buňce v Aspose.Words, můžete přidat přeškrtnutý text. Můžete přeskočit na požadovanou buňku nebo odstavec pomocí vhodných metod a poté použít formátování přeškrtnutého textu pomocí`Font.StrikeThrough` majetek z`Run` nebo`Paragraph` objekt.
+### Mohu použít jiné možnosti formátování textu pomocí Aspose.Words for .NET?
+Absolutně! Aspose.Words for .NET podporuje širokou škálu možností formátování textu včetně tučného písma, kurzívy, podtržení a dalších.

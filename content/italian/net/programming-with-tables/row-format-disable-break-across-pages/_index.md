@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-tables/row-format-disable-break-across-pages/
 ---
-## introduzione
+## Introduzione
 
 Quando lavori con le tabelle nei documenti di Word, potresti voler assicurarti che le righe non si dividano tra le pagine, il che può essere essenziale per mantenere la leggibilità e la formattazione dei tuoi documenti. Aspose.Words per .NET fornisce un modo semplice per disabilitare le interruzioni di riga tra le pagine.
 

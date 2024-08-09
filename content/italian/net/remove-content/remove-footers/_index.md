@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/remove-content/remove-footers/
 ---
-## introduzione
+## Introduzione
 
 Ti sei mai trovato in difficoltà nel rimuovere i piè di pagina da un documento Word? Non sei solo! Molte persone affrontano questa sfida, soprattutto quando hanno a che fare con documenti che hanno piè di pagina diversi su varie pagine. Per fortuna, Aspose.Words per .NET fornisce una soluzione perfetta per questo. In questo tutorial ti spiegheremo come rimuovere i piè di pagina da un documento Word utilizzando Aspose.Words per .NET. Questa guida è perfetta per gli sviluppatori che desiderano manipolare i documenti Word a livello di programmazione con facilità ed efficienza.
 
@@ -87,7 +87,7 @@ doc.Save(dataDir + "RemoveContent.RemoveFooters.docx");
 
 ## Conclusione
 
-il gioco è fatto! Hai rimosso con successo i piè di pagina dal tuo documento Word utilizzando Aspose.Words per .NET. Questa potente libreria semplifica la manipolazione dei documenti Word a livello di codice, risparmiando tempo e fatica. Che tu abbia a che fare con documenti a pagina singola o report multi-sezione, Aspose.Words per .NET ti copre.
+Ed ecco qua! Hai rimosso con successo i piè di pagina dal tuo documento Word utilizzando Aspose.Words per .NET. Questa potente libreria semplifica la manipolazione dei documenti Word a livello di codice, risparmiando tempo e fatica. Che tu abbia a che fare con documenti a pagina singola o report multi-sezione, Aspose.Words per .NET ti copre.
 
 ## Domande frequenti
 

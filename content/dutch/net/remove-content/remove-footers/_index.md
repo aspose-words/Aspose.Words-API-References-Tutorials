@@ -9,7 +9,7 @@ url: /nl/net/remove-content/remove-footers/
 ---
 ## Invoering
 
-Heeft u ooit moeite gehad met het verwijderen van voetteksten uit een Word-document? Je bent niet alleen! Veel mensen worden met deze uitdaging geconfronteerd, vooral als ze te maken hebben met documenten met verschillende voetteksten op verschillende pagina's. Gelukkig biedt Aspose.Words voor .NET hiervoor een naadloze oplossing. In deze zelfstudie laten we u zien hoe u voetteksten uit een Word-document kunt verwijderen met Aspose.Words voor .NET. Deze handleiding is perfect voor ontwikkelaars die Word-documenten gemakkelijk en efficiënt programmatisch willen manipuleren.
+Heeft u ooit moeite gehad met het verwijderen van voetteksten uit een Word-document? Je bent niet de enige! Veel mensen worden met deze uitdaging geconfronteerd, vooral als ze te maken hebben met documenten met verschillende voetteksten op verschillende pagina's. Gelukkig biedt Aspose.Words voor .NET hiervoor een naadloze oplossing. In deze zelfstudie laten we u zien hoe u voetteksten uit een Word-document kunt verwijderen met Aspose.Words voor .NET. Deze handleiding is perfect voor ontwikkelaars die Word-documenten gemakkelijk en efficiënt programmatisch willen manipuleren.
 
 ## Vereisten
 
@@ -87,7 +87,7 @@ doc.Save(dataDir + "RemoveContent.RemoveFooters.docx");
 
 ## Conclusie
 
-En daar heb je het! U hebt de voetteksten met succes uit uw Word-document verwijderd met Aspose.Words voor .NET. Deze krachtige bibliotheek maakt het gemakkelijk om Word-documenten programmatisch te manipuleren, waardoor u tijd en moeite bespaart. Of u nu te maken heeft met documenten van één pagina of rapporten met meerdere secties, Aspose.Words voor .NET heeft de oplossing voor u.
+En daar heb je het! U hebt de voetteksten met succes uit uw Word-document verwijderd met Aspose.Words voor .NET. Deze krachtige bibliotheek maakt het eenvoudig om Word-documenten programmatisch te manipuleren, waardoor u tijd en moeite bespaart. Of u nu te maken heeft met documenten van één pagina of rapporten met meerdere secties, Aspose.Words voor .NET heeft de oplossing voor u.
 
 ## Veelgestelde vragen
 

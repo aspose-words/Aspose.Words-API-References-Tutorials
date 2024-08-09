@@ -96,7 +96,7 @@ doc.first_section.body.first_paragraph.append_child(shape)
 
 ## Enregistrement et exportation de documents :
 
-Enregistrez votre document modifié sous différents formats :
+Enregistrez votre document modifié dans différents formats :
 
 ```python
 doc.save("output.docx", aw.SaveFormat.DOCX)

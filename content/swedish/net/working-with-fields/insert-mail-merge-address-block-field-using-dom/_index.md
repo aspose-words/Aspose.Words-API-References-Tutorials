@@ -42,7 +42,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Steg 2: Leta reda på paragrafnoden
+## Steg 2: Leta upp styckenoden
 
 Därefter måste vi hitta stycket där vi vill infoga fältet Mail Merge Address Block. För det här exemplet använder vi det första stycket i dokumentet.
 
@@ -60,7 +60,7 @@ builder.MoveTo(para);
 
 ## Steg 4: Infoga adressblockfältet
 
-Det är här magin händer. Vi infogar ett Mail Merge Address Block-fält med hjälp av builder. De`InsertField` metod används för att skapa fältet.
+Här händer magin. Vi infogar ett Mail Merge Address Block-fält med hjälp av builder. De`InsertField` metod används för att skapa fältet.
 
 ```csharp
 FieldAddressBlock field = (FieldAddressBlock) builder.InsertField(FieldType.FieldAddressBlock, false);
@@ -122,4 +122,4 @@ Ett Mail Merge Address Block är ett fält i Word som låter dig infoga adressin
  Du kan få support från Aspose-communityt och det tekniska teamet[här](https://forum.aspose.com/c/words/8).
 
 ### Kan jag automatisera andra aspekter av Word-dokument med Aspose.Words?
-Absolut! Aspose.Words för .NET tillhandahåller ett brett utbud av funktioner för att automatisera dokumentgenerering, redigering, konvertering och mer. Kolla in[dokumentation](https://reference.aspose.com/words/net/) för mer detaljer.
+Absolut! Aspose.Words för .NET tillhandahåller ett brett utbud av funktioner för att automatisera dokumentgenerering, redigering, konvertering och mer. Kolla in[dokumentation](https://reference.aspose.com/words/net/) för mer information.

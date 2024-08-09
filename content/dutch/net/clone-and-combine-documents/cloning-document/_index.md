@@ -9,13 +9,13 @@ url: /nl/net/clone-and-combine-documents/cloning-document/
 ---
 ## Invoering
 
-Hallo daar! Heeft u ooit een Word-document moeten klonen met Aspose.Words voor .NET? Het is niet zo intimiderend als het klinkt, en ik ben hier om je er stap voor stap doorheen te begeleiden. Of je nu een doorgewinterde ontwikkelaar bent of net begint, deze tutorial leidt je op een eenvoudige, gemoedelijke manier door het proces. Tegen het einde heb je een gekloond Word-document klaar voor gebruik. Dus laten we er meteen in duiken!
+Hé daar! Heeft u ooit een Word-document moeten klonen met Aspose.Words voor .NET? Het is niet zo intimiderend als het klinkt, en ik ben hier om je er stap voor stap doorheen te begeleiden. Of je nu een doorgewinterde ontwikkelaar bent of net begint, deze tutorial leidt je op een eenvoudige, gemoedelijke manier door het proces. Tegen het einde heb je een gekloond Word-document klaar voor gebruik. Dus laten we er meteen in duiken!
 
 ## Vereisten
 
 Voordat we onze handen vuil maken aan wat coderen, moeten we ervoor zorgen dat we alles hebben wat we nodig hebben:
 
-1.  Aspose.Words voor .NET-bibliotheek: u kunt het downloaden van de[Aspose-releases](https://releases.aspose.com/words/net/) bladzijde.
+1.  Aspose.Words voor .NET-bibliotheek: u kunt het downloaden van de[Aspose-releases](https://releases.aspose.com/words/net/) pagina.
 2. Visual Studio: Elke recente versie zou voldoende moeten zijn.
 3. Basiskennis van C#: u hoeft geen expert te zijn, maar een beetje bekendheid kan helpen.
 4.  Een voorbeeld van een Word-document: voor deze zelfstudie noemen we het`Document.docx`.
@@ -35,7 +35,7 @@ Simpel, toch? Laten we nu verder gaan met het spannende gedeelte: een document k
 Allereerst moet u uw project in Visual Studio instellen. Als u al een project gereed heeft, kunt u deze stap overslaan. Zo niet, volg dan:
 
 1. Open Visual Studio: Start Visual Studio en maak een nieuw C# Console App-project.
-2.  Geef uw project een naam: geef uw project een betekenisvolle naam. Zoiets als`CloneWordDocumentDemo` zal ik doen.
+2.  Geef uw project een naam: Geef uw project een betekenisvolle naam. Zoiets als`CloneWordDocumentDemo` zal doen.
 3.  Voeg Aspose.Words toe Referentie: Klik met de rechtermuisknop op uw project in de Solution Explorer, kies`Manage NuGet Packages` en zoek naar`Aspose.Words`. Installeer het.
 
 ## Stap 2: Bereid uw omgeving voor
@@ -43,7 +43,7 @@ Allereerst moet u uw project in Visual Studio instellen. Als u al een project ge
 Nu uw project is opgezet, gaan we de omgeving voorbereiden:
 
 1.  Maak een map voor uw documenten: u hebt een map nodig waarin uw documenten worden opgeslagen. Laten we het noemen`Documents`.
-2.  Voeg uw voorbeelddocument toe: Plaats uw`Document.docx` binnen in de`Documents` map. Dit is het bestand dat we gaan klonen.
+2.  Voeg uw voorbeelddocument toe: Plaats uw`Document.docx` binnen de`Documents` map. Dit is het bestand dat we gaan klonen.
 
 ## Stap 3: Plaats het originele document
 

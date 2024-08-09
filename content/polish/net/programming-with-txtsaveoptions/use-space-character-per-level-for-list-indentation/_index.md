@@ -47,7 +47,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Krok 2: Utwórz listę z wieloma poziomami wcięć
 
- Z`DocumentBuilder` na przykład możesz teraz utworzyć listę z różnymi poziomami wcięć. Użyj`ListFormat` właściwość, aby zastosować numerację i wciąć elementy listy zgodnie z wymaganiami.
+ Z`DocumentBuilder` na przykład możesz teraz utworzyć listę z różnymi poziomami wcięć. Skorzystaj z`ListFormat` właściwość, aby zastosować numerację i wciąć elementy listy zgodnie z wymaganiami.
 
 ```csharp
 // Utwórz listę z trzema poziomami wcięć

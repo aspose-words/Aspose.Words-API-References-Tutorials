@@ -17,7 +17,7 @@ Antes de sumergirse en este tutorial, asegúrese de cumplir con los siguientes r
 - Conocimientos básicos del lenguaje de programación C#.
 - Visual Studio instalado en su sistema.
 -  Biblioteca Aspose.Words para .NET integrada en su proyecto. Puedes descargarlo desde[aquí](https://releases.aspose.com/words/net/).
-- Acceso a Aspose.Words para .NET[documentación](https://reference.aspose.com/words/net/) para referencia.
+- Acceso a Aspose.Words para .NET[documentación](https://reference.aspose.com/words/net/) como referencia.
 
 ## Importar espacios de nombres
 

@@ -70,7 +70,7 @@ public void cleanupDuplicateStyle() throws Exception
 }
 ```
 
-Dubbele stijlen kunnen tot verwarring en inconsistentie in uw documenten leiden. Met Aspose.Words voor Java kunt u eenvoudig dubbele stijlen verwijderen, waardoor de duidelijkheid en samenhang van het document behouden blijven.
+Dubbele stijlen kunnen tot verwarring en inconsistentie in uw documenten leiden. Met Aspose.Words voor Java kunt u eenvoudig dubbele stijlen verwijderen, waardoor de duidelijkheid en samenhang van het document behouden blijft.
 
 ## Opties voor documentweergave aanpassen
 

@@ -15,7 +15,7 @@ Bent u ooit een situatie tegengekomen waarin u specifieke secties in een Word-do
 
 Voordat we in de code duiken, zorgen we ervoor dat u over de benodigde hulpmiddelen beschikt:
 
--  Aspose.Words voor .NET: Dit is de krachtige bibliotheek waarmee u programmatisch met Word-documenten kunt werken. Ga naar de downloadsectie op de Aspose-website[Download koppeling](https://releases.aspose.com/words/net/) om uw exemplaar te bemachtigen. - U kunt kiezen voor een gratis proefperiode of de verschillende licentieopties verkennen[link](https://purchase.aspose.com/buy).
+-  Aspose.Words voor .NET: Dit is de krachtige bibliotheek waarmee u programmatisch met Word-documenten kunt werken. Ga naar de downloadsectie op de Aspose-website[Downloadlink](https://releases.aspose.com/words/net/) om uw exemplaar te bemachtigen. - U kunt kiezen voor een gratis proefperiode of de verschillende licentieopties verkennen[link](https://purchase.aspose.com/buy).
 - Een .NET-ontwikkelomgeving: Visual Studio, Visual Studio Code of een andere .NET IDE naar keuze zal dienen als uw ontwikkelingsspeeltuin.
 - Een voorbeeld van een Word-document: Maak een eenvoudig Word-document (zoals "Bookmarks.docx") met wat tekst en voeg een bladwijzer in (we zullen later bespreken hoe u dit kunt doen) om mee te oefenen.
 

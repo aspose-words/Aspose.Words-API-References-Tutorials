@@ -80,7 +80,7 @@ cell.cell_format.horizontal_merge = CellMerge.NONE
 
 ## Stílus és testreszabás:
 
-Az Aspose.Words különféle stíluslehetőségeket kínál a táblázatok megjelenésének javítására. Beállíthatja a cella hátterének színét, a szöveg igazítását, a betűtípus formázását stb.
+Az Aspose.Words különféle stíluslehetőségeket kínál a táblázatok megjelenésének javítására. Beállíthatja a cella háttérszíneit, a szövegigazítást, a betűtípus formázását stb.
 
 ```python
 # Apply bold formatting to a cell's text

@@ -2,96 +2,129 @@
 title: Trường biểu mẫu Nhận theo tên
 linktitle: Trường biểu mẫu Nhận theo tên
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách truy xuất và sửa đổi các trường biểu mẫu theo tên trong tài liệu Word bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách nhận và sửa đổi các trường biểu mẫu theo tên trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết này.
 type: docs
 weight: 10
 url: /vi/net/working-with-formfields/form-fields-get-by-name/
 ---
+## Giới thiệu
 
-Trong hướng dẫn từng bước này, chúng tôi sẽ hướng dẫn bạn cách sử dụng Aspose.Words cho .NET để truy xuất các trường biểu mẫu theo tên từ tài liệu Word. Chúng tôi sẽ giải thích mã nguồn C# được cung cấp và chỉ cho bạn cách triển khai nó trong các dự án của riêng bạn.
+Bạn có mệt mỏi với việc chỉnh sửa thủ công các trường biểu mẫu trong tài liệu Word của mình không? Thôi, đừng lo lắng nữa! Aspose.Words dành cho .NET có mặt để giải quyết vấn đề này. Thư viện mạnh mẽ này cho phép bạn tự động hóa quá trình thao tác các trường biểu mẫu, giúp cuộc sống của bạn dễ dàng hơn rất nhiều. Hôm nay, chúng ta sẽ đi sâu vào cách lấy các trường biểu mẫu theo tên bằng Aspose.Words cho .NET. Vì vậy, hãy lấy đồ uống yêu thích của bạn và bắt đầu hành trình này để hợp lý hóa các tác vụ xử lý tài liệu của bạn!
 
- Để bắt đầu, hãy đảm bảo bạn đã cài đặt và thiết lập Aspose.Words for .NET trong môi trường phát triển của mình. Nếu bạn chưa làm như vậy, hãy tải xuống và cài đặt thư viện từ[Aspose.Releases]https://releases.aspose.com/words/net/.
+## Điều kiện tiên quyết
 
-## Bước 1: Khởi tạo đối tượng tài liệu
+Trước khi đi sâu vào mã, hãy đảm bảo bạn có mọi thứ mình cần:
 
- Đầu tiên, khởi tạo`Document` đối tượng bằng cách cung cấp đường dẫn đến tài liệu nguồn chứa các trường biểu mẫu:
+1.  Aspose.Words for .NET Library: Nếu bạn chưa có, hãy tải xuống từ[đây](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển: Bất kỳ môi trường phát triển .NET nào như Visual Studio.
+3. Kiến thức cơ bản về C#: Một số kiến thức quen thuộc về C# sẽ hữu ích nhưng không bắt buộc.
+
+## Nhập không gian tên
+
+Trước tiên, bạn cần nhập các không gian tên cần thiết. Đây là cách bạn làm điều đó:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";        
+using System;
+using System.Drawing;
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+## Bước 1: Thiết lập dự án của bạn
+
+Trước khi bắt đầu viết mã, bạn cần thiết lập dự án của mình. Đây là cách thực hiện:
+
+### 1.1 Tạo một dự án mới
+
+Mở môi trường phát triển của bạn và tạo một dự án C# mới. Đặt tên gì đó có liên quan, chẳng hạn như "AsposeFormFieldsExample".
+
+### 1.2 Thêm Aspose.Words cho thư viện .NET
+
+Thêm thư viện Aspose.Words for .NET vào dự án của bạn. Bạn có thể thực hiện việc này thông qua Trình quản lý gói NuGet bằng cách chạy lệnh sau:
+
+```bash
+Install-Package Aspose.Words
+```
+
+## Bước 2: Tải tài liệu
+
+Bây giờ, hãy tải tài liệu Word có chứa các trường biểu mẫu. Chúng tôi sẽ bắt đầu bằng cách xác định đường dẫn đến thư mục tài liệu của bạn và sau đó tải tài liệu.
+
+### 2.1 Xác định thư mục tài liệu
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+### 2.2 Tải tài liệu
+
+```csharp
 Document doc = new Document(dataDir + "Form fields.docx");
 ```
 
-## Bước 2: Truy xuất các trường biểu mẫu
+## Bước 3: Truy cập các trường biểu mẫu
 
- Tiếp theo, truy cập vào`FormFields` tài sản của`Range` đối tượng trong tài liệu để truy xuất tất cả các trường biểu mẫu:
+Tiếp theo, chúng ta sẽ truy cập vào các trường biểu mẫu trong tài liệu. Đây là cách thực hiện:
+
+### 3.1 Lấy bộ sưu tập các trường biểu mẫu
 
 ```csharp
 FormFieldCollection documentFormFields = doc.Range.FormFields;
 ```
 
-Bạn có thể truy xuất các trường biểu mẫu theo chỉ mục hoặc theo tên. Trong ví dụ này, chúng tôi truy xuất trường biểu mẫu bằng cả hai phương pháp:
+### 3.2 Truy xuất các trường biểu mẫu cụ thể theo chỉ mục và tên
 
 ```csharp
-FormField formField1 = documentFormFields[3]; // Truy xuất theo chỉ mục
-FormField formField2 = documentFormFields["Text2"]; // Truy xuất theo tên
-```
-
-## Bước 3: Sửa đổi thuộc tính trường biểu mẫu
-
-Khi bạn đã truy xuất các trường của biểu mẫu, bạn có thể sửa đổi các thuộc tính của chúng nếu cần. Trong ví dụ này, chúng tôi thay đổi kích thước phông chữ của`formField1` đến 20 và màu phông chữ của`formField2` sang màu đỏ:
-
-```csharp
-formField1.Font.Size = 20;
-formField2.Font.Color = Color.Red;
-```
-
-## Bước 4: Lưu tài liệu
-
-Cuối cùng, lưu tài liệu đã sửa đổi:
-
-```csharp
-doc.Save(dataDir + "ModifiedFormFields.docx");
-```
-
-Đó là nó! Bạn đã truy xuất thành công các trường biểu mẫu theo tên và sửa đổi thuộc tính của chúng trong tài liệu Word bằng Aspose.Words for .NET.
-
-### Mã nguồn ví dụ cho Trường biểu mẫu Nhận theo tên bằng Aspose.Words cho .NET
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";        
-Document doc = new Document(dataDir + "Form fields.docx");
-
-FormFieldCollection documentFormFields = doc.Range.FormFields;
-
 FormField formField1 = documentFormFields[3];
 FormField formField2 = documentFormFields["Text2"];
+```
 
+## Bước 4: Sửa đổi trường biểu mẫu
+
+Bây giờ chúng ta có quyền truy cập vào các trường của biểu mẫu, hãy sửa đổi chúng. Đây là nơi phép thuật xảy ra!
+
+### 4.1 Thay đổi cỡ chữ của FormField1
+
+```csharp
 formField1.Font.Size = 20;
-formField2.Font.Color = Color.Red;
+```
 
+### 4.2 Thay đổi màu phông chữ của FormField2
+
+```csharp
+formField2.Font.Color = Color.Red;
+```
+
+## Bước 5: Lưu tài liệu đã sửa đổi
+
+Cuối cùng, hãy lưu tài liệu đã sửa đổi bằng tên mới để giữ nguyên tệp gốc.
+
+```csharp
 doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
-Vui lòng sử dụng mã này trong các dự án của riêng bạn và sửa đổi nó theo yêu cầu cụ thể của bạn.
+## Phần kết luận
 
-### Câu hỏi thường gặp
+Và bạn có nó! Bạn vừa học cách lấy và sửa đổi các trường biểu mẫu theo tên bằng Aspose.Words cho .NET. Thư viện mạnh mẽ này giúp bạn dễ dàng tự động hóa các tác vụ xử lý tài liệu, giúp bạn tiết kiệm thời gian và công sức. Vì vậy, hãy tiếp tục, thử nghiệm các sửa đổi khác nhau và làm cho quy trình xử lý tài liệu của bạn hiệu quả nhất có thể!
 
-#### Câu hỏi: Làm cách nào tôi có thể lấy trường biểu mẫu theo tên trong Aspose.Words?
+## Câu hỏi thường gặp
 
- Trả lời: Để lấy trường biểu mẫu theo tên trong Aspose.Words, bạn có thể sử dụng`Document.Range.FormFields[name]` phương pháp. Phương thức này trả về trường biểu mẫu tương ứng với tên đã chỉ định.
+### Tôi có thể sử dụng Aspose.Words cho .NET với các ngôn ngữ lập trình khác không?
 
-#### Hỏi: Điều gì sẽ xảy ra nếu trường biểu mẫu có tên được chỉ định không tồn tại trong tài liệu?
+Có, Aspose.Words for .NET hỗ trợ nhiều ngôn ngữ như VB.NET và thậm chí cả Khả năng tương tác COM.
 
- Trả lời: Nếu trường biểu mẫu có tên được chỉ định không tồn tại trong tài liệu, thì`Document.Range.FormFields[name]` phương thức sẽ trở lại`null`. Bạn có thể kiểm tra kết quả này để xử lý các trường hợp không tìm thấy trường biểu mẫu.
+### Có bản dùng thử miễn phí dành cho Aspose.Words cho .NET không?
 
-#### Câu hỏi: Làm cách nào tôi có thể sửa đổi các thuộc tính của trường biểu mẫu được tìm thấy?
+ Có, bạn có thể tải xuống bản dùng thử miễn phí từ[đây](https://releases.aspose.com/).
 
-Đáp: Sau khi nhận được trường biểu mẫu theo tên, bạn có thể truy cập các thuộc tính riêng lẻ của trường đó để chỉnh sửa chúng. Ví dụ: bạn có thể thay đổi giá trị của trường, bật hoặc tắt khả năng hiển thị của trường hoặc sửa đổi các thuộc tính khác nếu cần.
+### Tôi có thể thao tác các thành phần khác của tài liệu Word ngoài các trường biểu mẫu không?
 
-#### Câu hỏi: Tôi có thể lấy nhiều trường biểu mẫu có cùng tên trong tài liệu không?
+Tuyệt đối! Aspose.Words for .NET cho phép bạn thao tác nhiều thành phần tài liệu, bao gồm văn bản, hình ảnh, bảng, v.v.
 
- Đáp: Có, có thể có nhiều trường biểu mẫu có cùng tên trong một tài liệu. Trong trường hợp này,`Document.Range.FormFields[name]` phương thức sẽ trả về trường biểu mẫu đầu tiên được tìm thấy với tên đã chỉ định. Nếu bạn có nhiều trường biểu mẫu có cùng tên, bạn sẽ cần tính đến điều này khi thao tác với các trường.
+### Làm cách nào để nhận được hỗ trợ nếu tôi gặp bất kỳ vấn đề nào?
 
-#### Câu hỏi: Làm cách nào tôi có thể lặp lại tất cả các trường biểu mẫu trong tài liệu?
+ Bạn có thể ghé thăm[Diễn đàn hỗ trợ Aspose](https://forum.aspose.com/c/words/8) để được trợ giúp về bất kỳ vấn đề nào bạn gặp phải.
 
- Trả lời: Để lặp lại tất cả các trường biểu mẫu trong tài liệu, bạn có thể sử dụng`foreach` vòng lặp trên`Document.Range.FormFields` bộ sưu tập. Điều này sẽ cho phép bạn truy cập từng trường biểu mẫu riêng lẻ và thực hiện các thao tác trên từng trường đó.
+### Tôi có thể tìm thêm tài liệu về Aspose.Words cho .NET ở đâu?
+
+ Tài liệu chi tiết có sẵn[đây](https://reference.aspose.com/words/net/).

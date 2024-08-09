@@ -165,7 +165,7 @@ for (Paragraph paragraph : (Iterable<Paragraph>) doc.getChildNodes(NodeType.PARA
 
 ### Come posso scaricare Aspose.Words per Java?
 
- È possibile scaricare Aspose.Words per Java da[questo link](https://releases.aspose.com/words/java/).
+ È possibile scaricare Aspose.Words per Java da[questo collegamento](https://releases.aspose.com/words/java/).
 
 ### Aspose.Words per Java è adatto alla creazione di documenti complessi?
 

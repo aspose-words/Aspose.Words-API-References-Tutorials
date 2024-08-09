@@ -80,7 +80,7 @@ else
 
 ## Conclusion
 
-Et voila! Vous avez appliqué avec succès une licence à partir d’un fichier dans Aspose.Words pour .NET. Il s'agit d'une étape essentielle pour débloquer toutes les fonctionnalités qu'Aspose.Words a à offrir. Avec votre jeu de licences, vous pouvez désormais créer et manipuler des documents Word sans aucune limitation.
+Et voilà ! Vous avez appliqué avec succès une licence à partir d’un fichier dans Aspose.Words pour .NET. Il s'agit d'une étape essentielle pour débloquer toutes les fonctionnalités qu'Aspose.Words a à offrir. Avec votre jeu de licences, vous pouvez désormais créer et manipuler des documents Word sans aucune limitation.
 
 ## FAQ
 

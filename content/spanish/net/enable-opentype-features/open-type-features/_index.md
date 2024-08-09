@@ -18,11 +18,11 @@ Antes de comenzar, asegúrese de tener lo siguiente:
 1.  Aspose.Words para .NET: puedes descargarlo[aquí](https://releases.aspose.com/words/net/).
 2. .NET Framework: asegúrese de tener instalada una versión compatible de .NET Framework.
 3. Visual Studio: un entorno de desarrollo integrado (IDE) para codificación.
-4. Conocimientos básicos de C#: este tutorial asume que tiene conocimientos básicos de programación en C#.
+4. Conocimientos básicos de C#: este tutorial asume que tienes conocimientos básicos de programación en C#.
 
 ## Importar espacios de nombres
 
-Lo primero es lo primero, deberá importar los espacios de nombres necesarios para acceder a las funcionalidades proporcionadas por Aspose.Words para .NET. Así es como puedes hacerlo:
+Lo primero es lo primero, necesitará importar los espacios de nombres necesarios para acceder a las funcionalidades proporcionadas por Aspose.Words para .NET. Así es como puedes hacerlo:
 
 ```csharp
 using System;
@@ -106,7 +106,7 @@ HarfBuzz es un motor de modelado de texto de código abierto que brinda soporte 
 Sí, Aspose.Words admite diferentes motores de modelado de texto. Sin embargo, se recomienda encarecidamente HarfBuzz debido a su compatibilidad integral con la función OpenType.
 
 ### ¿Aspose.Words es compatible con todas las versiones de .NET?
- Aspose.Words admite varias versiones de .NET, incluidas .NET Framework, .NET Core y .NET Standard. Comprobar el[documentación](https://reference.aspose.com/words/net/) para obtener información detallada sobre compatibilidad.
+ Aspose.Words admite varias versiones de .NET, incluidas .NET Framework, .NET Core y .NET Standard. Compruebe el[documentación](https://reference.aspose.com/words/net/) para obtener información detallada sobre compatibilidad.
 
 ### ¿Cómo puedo probar Aspose.Words antes de comprarlo?
  Puede descargar una prueba gratuita desde[Aspose sitio web](https://releases.aspose.com/) y solicitar una licencia temporal[aquí](https://purchase.aspose.com/temporary-license/).

@@ -80,7 +80,7 @@ Po wstawieniu pola musimy zapisać nasz dokument. Oto jak:
 doc.Save(dataDir + "InsertionField.docx");
 ```
 
-I to wszystko! Pomyślnie wstawiłeś pole do dokumentu programu Word.
+I tyle! Pomyślnie wstawiłeś pole do dokumentu programu Word.
 
 ## Wniosek
 

@@ -172,7 +172,7 @@ Untuk menghapus proteksi kata sandi dari dokumen yang dilindungi kata sandi, And
 
 ### Bisakah saya mengatur properti khusus saat menyimpan dokumen dalam format OOXML?
 
- Ya, Anda dapat mengatur properti khusus untuk dokumen sebelum menyimpannya dalam format OOXML. Menggunakan`BuiltInDocumentProperties`Dan`CustomDocumentProperties` kelas untuk mengatur berbagai properti seperti penulis, judul, kata kunci, dan properti khusus.
+ Ya, Anda dapat mengatur properti khusus untuk dokumen sebelum menyimpannya dalam format OOXML. Gunakan`BuiltInDocumentProperties`Dan`CustomDocumentProperties` kelas untuk mengatur berbagai properti seperti penulis, judul, kata kunci, dan properti khusus.
 
 ### Berapa tingkat kompresi default saat menyimpan dokumen dalam format OOXML?
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/downsampling-images/
 ---
-## Úvod
+## Zavedení
 
 Soubory PDF jsou v digitálním světě základem a používají se ke všemu, od sdílení dokumentů po vytváření elektronických knih. Jejich velikost však může být někdy překážkou, zejména pokud jde o obsah bohatý na obrázky. Zde přichází na řadu převzorkování obrázků. Snížením rozlišení obrázků v PDF můžete výrazně zmenšit velikost souboru, aniž byste příliš ohrozili kvalitu. V tomto tutoriálu si projdeme kroky, jak toho dosáhnout pomocí Aspose.Words for .NET.
 
@@ -15,7 +15,7 @@ Soubory PDF jsou v digitálním světě základem a používají se ke všemu, o
 
 Než se pustíme do kódu, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words. Pokud ne, můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words. Pokud ne, můžete si jej stáhnout[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Jakékoli vývojové prostředí .NET, jako je Visual Studio.
 3. Základní znalost C#: Bude užitečné porozumět základům programování v C#.
 4.  Ukázkový dokument: Dokument aplikace Word (např.`Rendering.docx`) s obrázky pro převod do PDF.
@@ -87,4 +87,4 @@ Ano, převzorkování sníží kvalitu obrazu. Dopad však závisí na stupni sn
 Ideální rozlišení závisí na vašich konkrétních potřebách. Běžně se pro webové obrázky používá 72 DPI, zatímco vyšší rozlišení se používá pro kvalitu tisku.
 
 ### Je Aspose.Words for .NET zdarma?
- Aspose.Words for .NET je komerční produkt, ale můžete si stáhnout bezplatnou zkušební verzi[tady](https://releases.aspose.com/) nebo požádat o a[dočasná licence](https://purchase.aspose.com/temporary-license/).
+ Aspose.Words for .NET je komerční produkt, ale můžete si stáhnout bezplatnou zkušební verzi[zde](https://releases.aspose.com/) nebo požádat o a[dočasná licence](https://purchase.aspose.com/temporary-license/).

@@ -9,7 +9,7 @@ url: /hu/net/add-content-using-documentbuilder/insert-combo-box-form-field/
 ---
 ## Bevezetés
 
-Halihó! Készen állsz, hogy elmerülj a dokumentumautomatizálás világában? Akár tapasztalt fejlesztő, akár csak most kezdi, jó helyen jár. Ma megvizsgáljuk, hogyan illeszthetünk be egy kombinált mezőt egy Word-dokumentumba az Aspose.Words for .NET használatával. Bízzon bennem, ennek az oktatóanyagnak a végére profi lesz az interaktív dokumentumok egyszerű létrehozásában. Szóval, igyál egy csésze kávét, dőlj hátra, és kezdjük!
+Szia! Készen állsz, hogy elmerülj a dokumentumautomatizálás világában? Akár tapasztalt fejlesztő, akár csak most kezdi, jó helyen jár. Ma megvizsgáljuk, hogyan illeszthetünk be egy kombinált mezőt egy Word-dokumentumba az Aspose.Words for .NET használatával. Bízzon bennem, ennek az oktatóanyagnak a végére profi lesz az interaktív dokumentumok egyszerű létrehozásában. Szóval, igyál egy csésze kávét, dőlj hátra, és kezdjük!
 
 ## Előfeltételek
 

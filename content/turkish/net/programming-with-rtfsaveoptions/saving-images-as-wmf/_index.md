@@ -9,7 +9,7 @@ url: /tr/net/programming-with-rtfsaveoptions/saving-images-as-wmf/
 ---
 ## giriiş
 
-Merhaba geliştirici arkadaşlar! Aspose.Words for .NET'i kullanarak görüntüleri WMF (Windows Meta Dosyası) olarak Word belgelerinize nasıl kaydedebileceğinizi hiç merak ettiniz mi? Peki, doğru yerdesiniz! Bu derste Aspose.Words for .NET dünyasına dalacağız ve görüntülerin WMF olarak nasıl kaydedileceğini keşfedeceğiz. Görüntü kalitesini korumak ve çeşitli platformlar arasında uyumluluk sağlamak için son derece kullanışlıdır. Hazır? Başlayalım!
+Merhaba geliştirici arkadaşlar! Aspose.Words for .NET'i kullanarak görüntüleri WMF (Windows Meta Dosyası) olarak Word belgelerinize nasıl kaydedebileceğinizi hiç merak ettiniz mi? Peki, doğru yerdesiniz! Bu derste Aspose.Words for .NET dünyasına dalacağız ve görüntülerin WMF olarak nasıl kaydedileceğini keşfedeceğiz. Görüntü kalitesini korumak ve çeşitli platformlar arasında uyumluluk sağlamak için son derece kullanışlıdır. Hazır? Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -64,7 +64,7 @@ doc.Save(dataDir + "WorkingWithRtfSaveOptions.SavingImagesAsWmf.rtf", saveOption
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak görüntüleri yalnızca birkaç satır kodla Word belgelerinize WMF olarak kaydedebilirsiniz. Bu, yüksek kaliteli görüntüleri korumak ve farklı platformlar arasında uyumluluk sağlamak için inanılmaz derecede yararlı olabilir. Deneyin ve yarattığı farkı görün!
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak görüntüleri yalnızca birkaç satır kodla Word belgelerinize WMF olarak kaydedebilirsiniz. Bu, yüksek kaliteli görüntüleri korumak ve farklı platformlar arasında uyumluluk sağlamak için inanılmaz derecede yararlı olabilir. Deneyin ve yarattığı farkı görün!
 
 ## SSS'ler
 

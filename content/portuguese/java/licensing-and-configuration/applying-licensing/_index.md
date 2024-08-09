@@ -82,7 +82,7 @@ Aplicar licença do stream
         }
     }
 ```	
-Aplicar licença limitada
+Aplicar licença medida
 	
 ```java	
     public void applyMeteredLicense() {
@@ -107,7 +107,7 @@ Neste tutorial, cobrimos as etapas essenciais para aplicar o licenciamento ao As
 ## Perguntas frequentes
 
 ### Como obtenho uma licença temporária do Aspose.Words for Java?
- Visite a[Página de licença temporária do Aspose](https://purchase.aspose.com/temporary-license/) para solicitar uma licença temporária.
+ Visite o[Página de licença temporária do Aspose](https://purchase.aspose.com/temporary-license/) para solicitar uma licença temporária.
 
 ### Posso usar Aspose.Words for Java sem licença?
 Sim, mas funcionará em modo de teste com limitações. Recomenda-se obter uma licença válida para todas as funcionalidades.

@@ -64,7 +64,7 @@ public class DocumentRenderer {
 }
 ```
 
-此程式碼將以 HTML 格式儲存您的文件。您可以透過調整進一步自訂 HTML 輸出`HtmlSaveOptions`如所須。
+此程式碼將以 HTML 格式儲存您的文件。您可以透過調整進一步自訂 HTML 輸出`HtmlSaveOptions`根據需要。
 
 ## 第 4 步：運行程式碼
 

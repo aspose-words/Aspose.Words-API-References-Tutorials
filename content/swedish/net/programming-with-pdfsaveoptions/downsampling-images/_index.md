@@ -77,7 +77,7 @@ Och där har du det! Du har framgångsrikt minskat storleken på din PDF-fil gen
 ### Vad är nedsampling?
 Nedsampling är processen att minska upplösningen på bilder, vilket hjälper till att minska filstorleken på dokument som innehåller dessa bilder.
 
-### Kommer nedsampling att påverka bildkvaliteten?
+### Kommer nedsampling att påverka kvaliteten på bilderna?
 Ja, nedsampling kommer att minska bildkvaliteten. Effekten beror dock på graden av upplösningsminskning. Det är en kompromiss mellan filstorlek och bildkvalitet.
 
 ### Kan jag välja vilka bilder som ska nedsamplas?

@@ -9,7 +9,7 @@ url: /pl/net/document-protection/allow-only-form-fields-protect/
 ---
 ## Wstęp
 
-No hej! Czy kiedykolwiek potrzebowałeś chronić określone części dokumentu programu Word, pozostawiając inne części do edycji? Aspose.Words dla .NET sprawia, że jest to niezwykle łatwe. W tym samouczku omówimy, jak zezwolić na ochronę tylko pól formularzy w dokumencie programu Word. Pod koniec tego przewodnika będziesz mieć solidną wiedzę na temat ochrony dokumentów przy użyciu Aspose.Words dla .NET. Gotowy? Wskoczmy!
+Hej tam! Czy kiedykolwiek potrzebowałeś chronić określone części dokumentu programu Word, pozostawiając inne części do edycji? Aspose.Words dla .NET sprawia, że jest to niezwykle łatwe. W tym samouczku omówimy, jak zezwolić na ochronę tylko pól formularzy w dokumencie programu Word. Pod koniec tego przewodnika będziesz mieć solidną wiedzę na temat ochrony dokumentów przy użyciu Aspose.Words dla .NET. Gotowy? Wskoczmy!
 
 ## Warunki wstępne
 
@@ -53,7 +53,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Text added to a document.");
 ```
 
- Tutaj tworzymy nowy`Document`I`DocumentBuilder` instancja. The`DocumentBuilder` pozwala nam dodać tekst do naszego dokumentu.
+ Tutaj tworzymy nowy`Document`I`DocumentBuilder` przykład. The`DocumentBuilder` pozwala nam dodać tekst do naszego dokumentu.
 
 ## Krok 4: Chroń dokument
 

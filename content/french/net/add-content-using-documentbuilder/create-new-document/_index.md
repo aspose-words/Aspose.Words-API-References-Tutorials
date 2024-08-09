@@ -77,11 +77,11 @@ Enfin, nous devons sauvegarder notre chef-d'œuvre. Cette étape revient à enca
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.CreateNewDocument.docx");
 ```
 
-Et voila! Vous venez de créer un nouveau document Word à l'aide d'Aspose.Words pour .NET.
+Et voilà ! Vous venez de créer un nouveau document Word à l'aide d'Aspose.Words pour .NET.
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez fait vos premiers pas dans le monde de l'automatisation des documents avec Aspose.Words for .NET. Nous sommes partis de zéro, avons configuré notre environnement, créé un nouveau document, ajouté du contenu et l'avons enregistré. Ce n'est que la pointe de l'iceberg. Avec Aspose.Words, vous pouvez manipuler des documents d'une manière que vous n'auriez jamais cru possible : fusionner des documents, ajouter des images, créer des tableaux et bien plus encore.
+Félicitations! Vous avez fait vos premiers pas dans le monde de l'automatisation des documents avec Aspose.Words for .NET. Nous sommes partis de zéro, avons configuré notre environnement, créé un nouveau document, ajouté du contenu et l'avons enregistré. Ce n'est que la pointe de l'iceberg. Avec Aspose.Words, vous pouvez manipuler des documents d'une manière que vous n'auriez jamais cru possible : fusionner des documents, ajouter des images, créer des tableaux et bien plus encore.
 
 ## FAQ
 
@@ -103,4 +103,4 @@ Vous pouvez créer et manipuler des formats DOC, DOCX, PDF, HTML et bien d'autre
 
 ### Où puis-je trouver plus de documentation et d'exemples ?
 
- Vérifiez[Documentation Aspose.Words pour .NET](https://reference.aspose.com/words/net/) pour plus d’exemples et de guides détaillés.
+ Découvrez le[Documentation Aspose.Words pour .NET](https://reference.aspose.com/words/net/) pour plus d’exemples et de guides détaillés.

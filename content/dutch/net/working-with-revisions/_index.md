@@ -16,12 +16,12 @@ Of u nu een beginner of een ervaren ontwikkelaar bent, deze tutorials helpen u o
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Accepteer revisies](./accept-revisions/) | Leer hoe u revisies van een Word-document accepteert met Aspose.Words voor .NET. |
-| [Ontvang revisietypes van woorden](./get-revision-types/) | Ontvang revisietypen van woorden in een Word-document met Aspose.Words voor .NET. |
-| [Revisiegroepen ophalen](./get-revision-groups/) | Ontvang revisiegroepdetails in een Word-document met Aspose.Words voor .NET. |
-| [Verwijder opmerkingen in pdf-bestand](./remove-comments-in-pdf/) | Verwijder opmerkingen in een PDF-bestand met Aspose.Words voor .NET. |
-| [Toon revisies in ballonnen](./show-revisions-in-balloons/) | Geef revisies weer in ballonnen met Aspose.Words voor .NET. |
-| [Details van de revisiegroep ophalen](./get-revision-group-details/) | Ontvang revisiegroepdetails in een Word-document met Aspose.Words voor .NET. |
-| [Toegang tot herziene versie](./access-revised-version/) | Krijg toegang tot een herziene versie van een Word-document met Aspose.Words voor .NET. |
-| [Verplaats knooppunt in bijgehouden document](./move-node-in-tracked-document/) | Verplaats knooppunten in een bijgehouden document met Aspose.Words voor .NET. |
-| [Vormrevisie](./shape-revision/) | Herzie vormen in een Word-document met Aspose.Words voor .NET. |
+| [Accepteer revisies](./accept-revisions/) | Beheer documentrevisies met Aspose.Words voor .NET. Leer veranderingen moeiteloos volgen, accepteren en afwijzen. Verbeter uw vaardigheden op het gebied van documentbeheer. |
+| [Ontvang revisietypes van woorden](./get-revision-types/) |Leer hoe u revisietypen van woorden in een Word-document kunt ophalen met Aspose.Words voor .NET. Met deze stapsgewijze handleiding kunt u documentrevisies efficiënt afhandelen. |
+| [Revisiegroepen ophalen](./get-revision-groups/) | Leer hoe u revisiegroepen uit Word-documenten kunt ophalen met Aspose.Words voor .NET met deze uitgebreide stapsgewijze handleiding. Perfect voor documentbeheer. |
+| [Verwijder opmerkingen in pdf-bestand](./remove-comments-in-pdf/) | Leer hoe u opmerkingen uit een PDF-bestand verwijdert met Aspose.Words voor .NET met onze stapsgewijze handleiding. |
+| [Toon revisies in ballonnen](./show-revisions-in-balloons/) | Leer hoe u revisies in ballonnen kunt weergeven met Aspose.Words voor .NET. Deze gedetailleerde handleiding begeleidt u bij elke stap en zorgt ervoor dat uw documentwijzigingen duidelijk en overzichtelijk zijn. |
+| [Details van de revisiegroep ophalen](./get-revision-group-details/) | Krijg eenvoudig revisiegroepdetails in Word-documenten met Aspose.Words voor .NET met deze stapsgewijze handleiding. Perfect voor .NET-ontwikkelaars. |
+| [Toegang tot herziene versie](./access-revised-version/) | Leer hoe u de herziene versie van een document kunt openen en weergeven met Aspose.Words voor .NET. Volg onze stapsgewijze handleiding voor naadloos documentbeheer. |
+| [Verplaats knooppunt in bijgehouden document](./move-node-in-tracked-document/) | Leer hoe u knooppunten in een bijgehouden Word-document verplaatst met Aspose.Words voor .NET met onze gedetailleerde, stapsgewijze handleiding. Ideaal voor ontwikkelaars. |
+| [Vormrevisie](./shape-revision/) | Leer hoe u vormrevisies in Word-documenten kunt verwerken met Aspose.Words voor .NET met deze uitgebreide handleiding. Beheer het bijhouden van wijzigingen, het invoegen van vormen en meer. |

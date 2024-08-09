@@ -9,7 +9,7 @@ url: /pl/net/clone-and-combine-documents/cloning-document/
 ---
 ## Wstęp
 
-No hej! Czy kiedykolwiek zdarzyło Ci się sklonować dokument Word przy użyciu Aspose.Words dla .NET? To nie jest tak trudne, jak się wydaje, i jestem tutaj, aby poprowadzić Cię przez to krok po kroku. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, ten samouczek przeprowadzi Cię przez ten proces w prosty, konwersacyjny sposób. Na koniec będziesz mieć sklonowany dokument programu Word gotowy do użycia. Zatem zanurzmy się od razu!
+Hej tam! Czy kiedykolwiek zdarzyło Ci się sklonować dokument Word przy użyciu Aspose.Words dla .NET? To nie jest tak trudne, jak się wydaje, i jestem tutaj, aby poprowadzić Cię przez to krok po kroku. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, ten samouczek przeprowadzi Cię przez ten proces w prosty, konwersacyjny sposób. Na koniec będziesz mieć sklonowany dokument programu Word gotowy do użycia. Zatem zanurzmy się od razu!
 
 ## Warunki wstępne
 
@@ -43,7 +43,7 @@ Po pierwsze, musisz skonfigurować swój projekt w Visual Studio. Jeśli masz ju
 Teraz, gdy projekt jest już skonfigurowany, przygotujmy środowisko:
 
 1.  Utwórz katalog dla swoich dokumentów: Będziesz potrzebować folderu, w którym będą przechowywane Twoje dokumenty. nazwijmy to`Documents`.
-2.  Dodaj swój przykładowy dokument: Umieść swój`Document.docx` w środku`Documents` teczka. To jest plik, który będziemy klonować.
+2.  Dodaj swój przykładowy dokument: Umieść swój`Document.docx` wewnątrz`Documents` falcówka. To jest plik, który będziemy klonować.
 
 ## Krok 3: Załaduj oryginalny dokument
 

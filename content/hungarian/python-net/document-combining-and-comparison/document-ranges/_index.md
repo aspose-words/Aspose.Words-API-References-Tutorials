@@ -146,7 +146,7 @@ pip install aspose-words
 
 ### Kivonhatok konkrét tartalmat egy dokumentumból?
 
-Igen tudsz. Határozzon meg egy tartalomtartományt a dokumentumnavigációs technikák segítségével, majd bontsa ki a kívánt tartalmat a meghatározott tartomány segítségével.
+Igen, megteheti. Határozzon meg egy tartalomtartományt a dokumentumnavigációs technikák segítségével, majd bontsa ki a kívánt tartalmat a meghatározott tartomány segítségével.
 
 ### Lehetséges több dokumentum egyesítése az Aspose.Words for Python használatával?
 

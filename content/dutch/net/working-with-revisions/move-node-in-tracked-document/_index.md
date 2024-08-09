@@ -2,144 +2,130 @@
 title: Verplaats knooppunt in bijgehouden document
 linktitle: Verplaats knooppunt in bijgehouden document
 second_title: Aspose.Words-API voor documentverwerking
-description: Verplaats knooppunten in een bijgehouden document met Aspose.Words voor .NET.
+description: Leer hoe u knooppunten in een bijgehouden Word-document verplaatst met Aspose.Words voor .NET met onze gedetailleerde, stapsgewijze handleiding. Ideaal voor ontwikkelaars.
 type: docs
 weight: 10
 url: /nl/net/working-with-revisions/move-node-in-tracked-document/
 ---
+## Invoering
 
-In deze stapsgewijze handleiding laten we u zien hoe u een knooppunt in een bijgehouden Word-document verplaatst met Aspose.Words voor .NET. We voorzien u van de volledige broncode en laten u zien hoe u de markdown-uitvoer kunt formatteren.
+Hallo daar, Aspose.Words-enthousiastelingen! Als u ooit een knooppunt in een Word-document heeft moeten verplaatsen terwijl u revisies bijhoudt, bent u hier op de juiste plek. Vandaag duiken we in hoe we dit kunnen bereiken met Aspose.Words voor .NET. U leert niet alleen het stapsgewijze proces, maar u krijgt ook enkele tips en trucs om uw documentmanipulatie soepel en efficiënt te laten verlopen.
 
-## Stap 1: Het document aanmaken
+## Vereisten
 
-De eerste stap is het maken van een nieuw document en het toevoegen van alinea's.
+Voordat we onze handen vuil maken met wat code, moeten we ervoor zorgen dat je alles hebt wat je nodig hebt:
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Writeln("Paragraph 1");
-builder.Writeln("Paragraph 2");
-builder.Writeln("Paragraph 3");
-builder.Writeln("Paragraph 4");
-builder.Writeln("Paragraph 5");
-builder.Writeln("Paragraph 6");
-Body body = doc.FirstSection.Body;
-Console.WriteLine("Number of paragraphs: {0}", body.Paragraphs.Count);
-```
+-  Aspose.Words voor .NET: Download het[hier](https://releases.aspose.com/words/net/).
+- .NET-omgeving: Zorg ervoor dat u een compatibele .NET-ontwikkelomgeving hebt ingesteld.
+- Basiskennis C#: Deze tutorial gaat ervan uit dat je een basiskennis hebt van C#.
 
-## Stap 2: Houd revisies bij
+Heb je alles? Geweldig! Laten we verder gaan met de naamruimten die we moeten importeren.
 
-We gaan het bijhouden van revisies in het document inschakelen.
+## Naamruimten importeren
+
+Allereerst moeten we de benodigde naamruimten importeren. Deze zijn essentieel voor het werken met Aspose.Words en het omgaan met documentknooppunten.
 
 ```csharp
-doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
+using Aspose.Words;
+using System;
 ```
 
-## Stap 3: Verplaats een knooppunt
+Oké, laten we het proces opsplitsen in beheersbare stappen. Elke stap wordt gedetailleerd uitgelegd, zodat u begrijpt wat er op elk punt gebeurt.
 
-We verplaatsen een knooppunt (paragraaf) van de ene positie naar de andere terwijl we revisies genereren.
+## Stap 1: Initialiseer het document
 
-```csharp
-Node node = body.Paragraphs[3];
-Node endNode = body.Paragraphs[5].NextSibling;
-Node referenceNode = body.Paragraphs[0];
-while (node != endNode)
-{
-     Node nextNode = node. NextSibling;
-     body. InsertBefore(node, referenceNode);
-     node = nextNode;
-}
-```
-
-## Stap 4: Stop met het bijhouden van beoordelingen
-
-We stoppen met het bijhouden van revisies in het document.
-
-```csharp
-doc.StopTrackRevisions();
-```
-
-## Stap 5: Het document opslaan
-
- Nadat u het tekstinvoerformulierveld hebt ingevoegd, slaat u het document op de gewenste locatie op met behulp van de`Save`methode. Zorg ervoor dat u het juiste bestandspad opgeeft:
-
-```csharp
-Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
-doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
-```
-
-
-### Voorbeeldbroncode voor het verplaatsen van een knooppunt naar een bijgehouden document met behulp van Aspose.Words voor .NET
-
-Hier is de volledige broncode voor het verplaatsen van een knooppunt in een bijgehouden document met Aspose.Words voor .NET:
-
+ Om te beginnen moeten we een nieuw document initialiseren en a gebruiken`DocumentBuilder` om enkele paragrafen toe te voegen.
 
 ```csharp
 // Het pad naar de documentenmap.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+
+// Enkele paragrafen toevoegen
 builder.Writeln("Paragraph 1");
 builder.Writeln("Paragraph 2");
 builder.Writeln("Paragraph 3");
 builder.Writeln("Paragraph 4");
 builder.Writeln("Paragraph 5");
 builder.Writeln("Paragraph 6");
+
+// Controleer het initiële aantal alinea's
 Body body = doc.FirstSection.Body;
 Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
+```
 
-// Begin met het bijhouden van revisies.
+## Stap 2: Begin met het bijhouden van revisies
+
+Vervolgens moeten we beginnen met het bijhouden van revisies. Dit is van cruciaal belang omdat we hierdoor de wijzigingen in het document kunnen zien.
+
+```csharp
+// Begin met het bijhouden van revisies
 doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
+```
 
-// Genereer revisies wanneer u een knooppunt van de ene locatie naar de andere verplaatst.
+## Stap 3: Verplaats knooppunten
+
+Nu komt het kerngedeelte van onze taak: een knooppunt van de ene locatie naar de andere verplaatsen. We verplaatsen de derde alinea en plaatsen deze vóór de eerste alinea.
+
+```csharp
+// Definieer het knooppunt dat moet worden verplaatst en het eindbereik ervan
 Node node = body.Paragraphs[3];
 Node endNode = body.Paragraphs[5].NextSibling;
 Node referenceNode = body.Paragraphs[0];
+
+// Verplaats de knooppunten binnen het gedefinieerde bereik
 while (node != endNode)
 {
-	Node nextNode = node.NextSibling;
-	body.InsertBefore(node, referenceNode);
-	node = nextNode;
+    Node nextNode = node.NextSibling;
+    body.InsertBefore(node, referenceNode);
+    node = nextNode;
 }
+```
 
-// Stop het proces van het bijhouden van revisies.
+## Stap 4: Stop met het bijhouden van revisies
+
+Zodra we de knooppunten hebben verplaatst, moeten we stoppen met het bijhouden van revisies.
+
+```csharp
+// Houd op met het bijhouden van revisies
 doc.StopTrackRevisions();
+```
 
-// Er zijn 3 extra alinea's in het bereik 'Verplaatsen van'.
-Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
+## Stap 5: Bewaar het document
+
+Laten we ten slotte ons gewijzigde document opslaan in de opgegeven map.
+
+```csharp
+// Sla het gewijzigde document op
 doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
+
+// Voer het laatste aantal alinea's uit
+Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
 ```
 
 ## Conclusie
 
-In deze zelfstudie hebben we geleerd hoe u een knooppunt in een bijgehouden Word-document kunt verplaatsen met Aspose.Words voor .NET. Door de stappen te volgen voor het maken van het document, het inschakelen van het bijhouden van revisies, het verplaatsen van het knooppunt en het stoppen van het bijhouden van revisies, konden we deze manipulatie met succes uitvoeren. Aspose.Words voor .NET is een krachtig hulpmiddel voor het verwerken van woorden met Word-documenten en biedt geavanceerde functies voor het beheren van revisies. Nu kunt u deze kennis gebruiken om knooppunten in uw eigen Word-documenten te verplaatsen terwijl u revisies bijhoudt met Aspose.Words voor .NET.
+En daar heb je het! U hebt met succes een knooppunt in een bijgehouden document verplaatst met Aspose.Words voor .NET. Deze krachtige bibliotheek maakt het eenvoudig om Word-documenten programmatisch te manipuleren. Of u nu wijzigingen maakt, bewerkt of bijhoudt, Aspose.Words heeft de oplossing voor u. Dus ga je gang en probeer het eens. Veel codeerplezier!
 
-### Veelgestelde vragen
+## Veelgestelde vragen
 
-#### Vraag: Hoe kan ik het bijhouden van revisies inschakelen in een Aspose.Words voor .NET-document?
+### Wat is Aspose.Words voor .NET?
 
- A: Om het bijhouden van revisies in een Aspose.Words voor .NET-document in te schakelen, kunt u de`StartTrackRevisions` werkwijze van de`Document` voorwerp. Deze methode neemt als parameters de naam van de auteur van de revisies en de startdatum van de opvolging van de revisies.
+Aspose.Words voor .NET is een klassenbibliotheek voor het programmatisch werken met Word-documenten. Hiermee kunnen ontwikkelaars Word-documenten maken, bewerken, converteren en afdrukken binnen .NET-toepassingen.
 
-```csharp
-doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
-```
+### Hoe houd ik revisies in een Word-document bij met Aspose.Words?
 
-#### Vraag: Hoe kan ik een knooppunt in een bijgehouden document verplaatsen zonder revisies te genereren?
+ Om revisies bij te houden, gebruikt u de`StartTrackRevisions` methode op de`Document` voorwerp. Hierdoor wordt het bijhouden van revisies mogelijk, waarbij eventuele wijzigingen in het document worden weergegeven.
 
- A: Als u een knooppunt in een bijgehouden document wilt verplaatsen zonder revisies te genereren, kunt u de`Remove`En`InsertAfter` of`InsertBefore` methoden van de`Node` voorwerp. Als u bijvoorbeeld een alinea na een andere alinea wilt verplaatsen, kunt u de volgende code gebruiken:
+### Kan ik meerdere knooppunten verplaatsen in Aspose.Words?
 
-```csharp
-Node nodeToMove = document.FirstSection.Body.Paragraphs[0];
-Node referenceNode = document.FirstSection.Body.Paragraphs[1];
-nodeToMove.Remove();
-document.FirstSection.Body.InsertAfter(nodeToMove, referenceNode);
-```
+Ja, je kunt meerdere knooppunten verplaatsen door ze te herhalen en methoden als`InsertBefore` of`InsertAfter` om ze op de gewenste locatie te plaatsen.
 
-#### Vraag: Hoe kan ik het bijhouden van revisies in een Aspose.Words voor .NET-document stoppen?
+### Hoe stop ik met het bijhouden van revisies in Aspose.Words?
 
- A: Om het bijhouden van revisies in een Aspose.Words voor .NET-document te stoppen, kunt u de`StopTrackRevisions` werkwijze van de`Document` voorwerp.
+ Gebruik de`StopTrackRevisions` methode op de`Document` bezwaar maken tegen het bijhouden van revisies.
 
-```csharp
-doc.StopTrackRevisions();
-```
+### Waar kan ik meer documentatie vinden over Aspose.Words voor .NET?
+
+ U kunt gedetailleerde documentatie vinden[hier](https://reference.aspose.com/words/net/).

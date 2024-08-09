@@ -130,7 +130,7 @@ doc.Save(dataDir + "UpdatedBookmarks.docx");
 
 ### 1. 我可以移动到书签的开头而不是结尾吗？
 
-当然！只需设置`isBookmarkStart`参数`true`和`isBookmarkEnd`到`false`在里面`MoveToBookmark`方法。
+当然！只需设置`isBookmarkStart`参数`true`和`isBookmarkEnd`到`false`在`MoveToBookmark`方法。
 
 ### 2. 我的书签名称不正确怎么办？
 
@@ -138,7 +138,7 @@ doc.Save(dataDir + "UpdatedBookmarks.docx");
 
 ### 3. 我可以在书签末尾插入其他类型的内容吗？
 
-是的，DocumentBuilder 允许您插入各种内容类型，如表格、图像等。检查[文档](https://reference.aspose.com/words/net/)更多细节。
+是的，DocumentBuilder 允许您插入各种内容类型，如表格、图像等。检查[文档](https://reference.aspose.com/words/net/)了解更多详情。
 
 ### 4. 如何获取 Aspose.Words 的临时许可证？
 

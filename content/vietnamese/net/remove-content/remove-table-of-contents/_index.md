@@ -79,7 +79,7 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Việc xóa TOC khỏi tài liệu Word bằng Aspose.Words cho .NET thật đơn giản khi bạn chia nó thành các bước đơn giản sau. Thư viện mạnh mẽ này không chỉ giúp loại bỏ TOC mà còn có thể xử lý vô số thao tác tài liệu khác. Vì vậy, hãy tiếp tục và thử xem!
+Và bạn có nó! Việc xóa TOC khỏi tài liệu Word bằng Aspose.Words cho .NET thật đơn giản khi bạn chia nó thành các bước đơn giản sau. Thư viện mạnh mẽ này không chỉ giúp loại bỏ TOC mà còn có thể xử lý vô số thao tác tài liệu khác. Vì vậy, hãy tiếp tục và thử xem!
 
 ## Câu hỏi thường gặp
 

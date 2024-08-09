@@ -13,22 +13,22 @@ Processamento de palavras com Markdown fornece um recurso abrangente para aprend
  ## Tutoriais
 | Título | Descrição |
 | --- | --- |
-| [Texto em negrito](./bold-text/) | Aprenda como colocar texto em negrito com o guia passo a passo do Aspose.Words for .NET. |
-| [Texto em itálico](./italic-text/) | Aprenda como colocar texto em itálico com o guia passo a passo do Aspose.Words for .NET. |
-| [Tachado](./strikethrough/) | Aprenda como aplicar o estilo de texto tachado com o guia passo a passo Aspose.Words for .NET. |
-| [Código embutido](./inline-code/) | Aprenda como codificar em linha com o guia passo a passo do Aspose.Words for .NET. |
-| [Vinculação automática](./autolink/) | Aprenda como inserir link automático com Aspose.Words for .NET Guia passo a passo. |
-| [Link](./link/) | Aprenda como inserir links com Aspose.Words for .NET. Guia passo a passo. |
+| [Texto em negrito](./bold-text/) | Aprenda como colocar texto em negrito em documentos do Word usando Aspose.Words for .NET com nosso guia passo a passo. Perfeito para automatizar a formatação de seus documentos. |
+| [Texto em itálico](./italic-text/) | Aprenda como aplicar formatação em itálico ao texto em documentos do Word usando Aspose.Words for .NET. Guia passo a passo com exemplos de código incluídos. |
+| [Tachado](./strikethrough/) | Aprenda como aplicar formatação tachado ao texto usando Aspose.Words for .NET com nosso guia passo a passo. Aprimore suas habilidades de processamento de documentos. |
+| [Código embutido](./inline-code/) | Aprenda como aplicar estilos de código embutido em documentos do Word usando Aspose.Words for .NET. Este tutorial cobre crases únicos e múltiplos para formatação de código. |
+| [Vinculação automática](./autolink/) | Aprenda como inserir e personalizar hiperlinks em documentos do Word usando Aspose.Words for .NET com este guia detalhado. Aprimore seus documentos sem esforço. |
+| [Link](./link/) | Aprenda como inserir hiperlinks em documentos do Word usando Aspose.Words for .NET com este guia passo a passo. Aprimore seus documentos facilmente com links interativos. |
 | [Imagemm](./image/) | Aprenda como adicionar imagens aos seus documentos usando Aspose.Words for .NET com este guia passo a passo. Aprimore seus documentos com recursos visuais rapidamente. |
-| [Regra Horizontal](./horizontal-rule/) | Aprenda como inserir uma regra horizontal com o guia passo a passo Aspose.Words for .NET. |
-| [Cabeçalho](./heading/) | Aprenda como usar o título com o guia passo a passo do Aspose.Words for .NET. |
-| [Título do texto](./setext-heading/) | Aprenda como usar títulos Setext para formatar seus documentos com o guia passo a passo Aspose.Words for .NET. |
-| [Código recuado](./indented-code/) | Aprenda como usar código recuado com o guia passo a passo Aspose.Words for .NET. |
-| [Código Cercado](./fenced-code/) | Aprenda como usar o recurso de código protegido com o guia passo a passo do Aspose.Words for .NET. |
-| [Citar](./quote/) | Aprenda como usar citações com o guia passo a passo do Aspose.Words for .NET. |
-| [Lista com marcadores](./bulleted-list/) | Aprenda como criar uma lista com marcadores com o guia passo a passo do Aspose.Words for .NET. |
+| [Regra horizontal](./horizontal-rule/) | Aprenda como adicionar regras horizontais em documentos do Word usando Aspose.Words for .NET. Siga este guia passo a passo detalhado para aprimorar o layout do seu documento. |
+| [Cabeçalho](./heading/) | Aprenda como dominar a formatação de documentos usando Aspose.Words for .NET. Este guia fornece um tutorial sobre como adicionar títulos e personalizar seus documentos do Word. |
+| [Título do texto](./setext-heading/) | Aprenda como usar Aspose.Words for .NET para automatizar a criação e formatação de documentos do Word com este tutorial passo a passo abrangente. |
+| [Código recuado](./indented-code/) | Aprenda como adicionar e estilizar blocos de código recuados em documentos do Word usando Aspose.Words for .NET com este tutorial passo a passo detalhado. |
+| [Código Cercado](./fenced-code/) | Aprenda como adicionar código protegido e strings de informações a documentos do Word usando Aspose.Words for .NET. Guia passo a passo incluído. Aprimore suas habilidades de formatação de documentos. |
+| [Citar](./quote/) | Aprenda como adicionar aspas e citações aninhadas aos seus documentos do Word usando Aspose.Words for .NET. Siga este guia passo a passo para dominar a criação de documentos. |
+| [Lista com marcadores](./bulleted-list/) | Aprenda como criar e personalizar listas com marcadores em documentos do Word usando Aspose.Words for .NET com este guia passo a passo. |
 | [Lista ordenada](./ordered-list/) | Aprenda como criar listas ordenadas em documentos do Word usando Aspose.Words for .NET com nosso guia passo a passo. Perfeito para automatizar a criação de documentos. |
 | [Mesa](./table/) | Aprenda como criar e personalizar tabelas no Aspose.Words for .NET com este guia passo a passo. Perfeito para gerar documentos estruturados e visualmente atraentes. |
-| [Leia o documento Markdown](./read-markdown-document/) | Aprenda como ler o documento markdown com o guia passo a passo Aspose.Words for .NET. |
-| [Ênfases](./emphases/) | Aprenda como usar ênfases (negrito e itálico) com o guia passo a passo Aspose.Words for .NET. |
+| [Leia o documento Markdown](./read-markdown-document/) | Aprenda como ler e manipular documentos Markdown usando Aspose.Words for .NET com este tutorial passo a passo detalhado. Perfeito para desenvolvedores de todos os níveis. |
+| [Ênfases](./emphases/) | Aprenda como criar texto enfatizado no Markdown usando Aspose.Words for .NET. Este guia cobre estilos em negrito, itálico e combinados com instruções passo a passo. |
 | [Usar fonte de aviso](./use-warning-source/) | Domine Aspose.Words for .NET com este guia passo a passo sobre como usar a classe WarningSource para lidar com avisos de Markdown. Perfeito para desenvolvedores C#. |

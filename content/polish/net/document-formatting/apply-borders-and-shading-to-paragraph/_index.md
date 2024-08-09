@@ -9,7 +9,7 @@ url: /pl/net/document-formatting/apply-borders-and-shading-to-paragraph/
 ---
 ## Wstęp
 
-Hej, zastanawiałeś się kiedyś, jak sprawić, by dokumenty programu Word wyróżniały się fantazyjnymi obramowaniami i cieniowaniem? Cóż, jesteś we właściwym miejscu! Dzisiaj zagłębiamy się w świat Aspose.Words dla .NET, aby urozmaicić nasze akapity. Wyobraź sobie, że Twój dokument wygląda tak elegancko, jak praca profesjonalnego projektanta przy zaledwie kilku linijkach kodu. Gotowy żeby zacząć? Chodźmy!
+Hej, zastanawiałeś się kiedyś, jak sprawić, by dokumenty programu Word wyróżniały się fantazyjnymi obramowaniami i cieniowaniem? Cóż, jesteś we właściwym miejscu! Dzisiaj zagłębiamy się w świat Aspose.Words dla .NET, aby urozmaicić nasze akapity. Wyobraź sobie, że Twój dokument wygląda tak elegancko, jak praca profesjonalnego projektanta przy zaledwie kilku linijkach kodu. Gotowy, aby zacząć? chodźmy!
 
 ## Warunki wstępne
 
@@ -31,7 +31,7 @@ using Aspose.Words.Drawing;
 using System.Drawing;
 ```
 
-Podzielmy teraz proces na małe kroki. Każdy krok będzie miał nagłówek i szczegółowe wyjaśnienie. Gotowy? Chodźmy!
+Podzielmy teraz proces na małe kroki. Każdy krok będzie miał nagłówek i szczegółowe wyjaśnienie. Gotowy? chodźmy!
 
 ## Krok 1: Skonfiguruj katalog dokumentów
 

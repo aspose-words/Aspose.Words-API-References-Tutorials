@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/working-with-fields/insert-toafield-without-document-builder/
 ---
-## introduzione
+## Introduzione
 
 Creare un campo TOA (Tabella delle autorità) in un documento di Word può sembrare come mettere insieme un puzzle complesso. Tuttavia, con l'aiuto di Aspose.Words per .NET, il processo diventa semplice e fluido. In questo articolo ti guideremo attraverso i passaggi per inserire un campo TOA senza utilizzare un generatore di documenti, semplificando la gestione delle citazioni e dei riferimenti legali all'interno dei tuoi documenti Word.
 
@@ -106,7 +106,7 @@ doc.Save(dataDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.docx"
 
 ## Conclusione
 
-E il gioco è fatto! Hai aggiunto correttamente un campo TOA a un documento Word senza utilizzare un generatore di documenti. Seguendo questi passaggi, puoi gestire in modo efficiente le citazioni e creare tabelle complete delle autorità nei tuoi documenti legali. Aspose.Words per .NET rende questo processo fluido ed efficiente, offrendoti gli strumenti per gestire facilmente attività complesse relative ai documenti.
+Ed ecco qua! Hai aggiunto correttamente un campo TOA a un documento Word senza utilizzare un generatore di documenti. Seguendo questi passaggi, puoi gestire in modo efficiente le citazioni e creare tabelle complete delle autorità nei tuoi documenti legali. Aspose.Words per .NET rende questo processo fluido ed efficiente, offrendoti gli strumenti per gestire facilmente attività complesse relative ai documenti.
 
 ## Domande frequenti
 

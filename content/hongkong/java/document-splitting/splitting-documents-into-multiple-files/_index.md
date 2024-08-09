@@ -56,7 +56,7 @@ for (int i = 0; i < splitDocuments.length; i++) {
 若要按關鍵字拆分文檔，您可以迭代文檔的內容並查找關鍵字。找到它後，建立一個新文件並將內容新增到該位置。
 
 ### 我可以將文檔拆分為 PDF 文件嗎？
-是的你可以。使用Aspose.Words for Java分割文件後，您可以使用Aspose.PDF for Java將每個部分儲存為PDF檔案。
+是的，你可以。使用Aspose.Words for Java分割文件後，您可以使用Aspose.PDF for Java將每個部分儲存為PDF檔案。
 
 ### Aspose.Words for Java 可以免費使用嗎？
 Aspose.Words for Java 是一個商業函式庫，但它提供免費試用。您可以在他們的網站上查看他們的定價和許可。

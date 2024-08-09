@@ -16,7 +16,7 @@ Yorumlar, belgelerin işbirliğinde ve incelenmesinde çok önemli bir rol oynar
 
 ## Python için Aspose.Words'ü Kurma
 
- Başlamak için Python için Aspose.Words'u yüklemeniz gerekir. Kütüphaneyi adresinden indirebilirsiniz.[Aspose.Words for Python](https://releases.aspose.com/words/python/) İndirme: {link. İndirdikten sonra pip kullanarak kurabilirsiniz:
+ Başlamak için Python için Aspose.Words'u yüklemeniz gerekir. Kütüphaneyi adresinden indirebilirsiniz.[Aspose.Words for Python](https://releases.aspose.com/words/python/) indirme bağlantısı. İndirdikten sonra pip kullanarak kurabilirsiniz:
 
 ```python
 pip install aspose-words

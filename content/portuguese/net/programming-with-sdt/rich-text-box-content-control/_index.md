@@ -68,7 +68,7 @@ StructuredDocumentTag sdtRichText = new StructuredDocumentTag(doc, SdtType.RichT
 
 ## Etapa 4: adicionar conteúdo à caixa Rich Text
 
- Criar uma`Paragraph` e um`Run` objeto para armazenar o conteúdo que você deseja exibir na caixa Rich Text. Personalize o texto e a formatação conforme necessário.
+ Crie um`Paragraph` e um`Run` objeto para armazenar o conteúdo que você deseja exibir na caixa Rich Text. Personalize o texto e a formatação conforme necessário.
 
 ```csharp
 Paragraph para = new Paragraph(doc);

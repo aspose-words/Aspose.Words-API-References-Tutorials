@@ -7,9 +7,9 @@ type: docs
 weight: 10
 url: /it/net/programming-with-document-properties/get-variables/
 ---
-## introduzione
+## Introduzione
 
-Ehi, collega programmatore! Pronto a tuffarti nel mondo di Aspose.Words per .NET? Allacciate le cinture, perché stiamo per intraprendere un viaggio che renderà la gestione dei documenti Word nelle vostre applicazioni .NET un gioco da ragazzi. In questa guida analizzeremo tutto ciò che devi sapere, passo dopo passo, con spiegazioni chiare e un tono colloquiale. Quindi, prendi una tazza di caffè, mettiti comodo e iniziamo!
+Ehi, collega programmatore! Pronto a tuffarti nel mondo di Aspose.Words per .NET? Allacciate le cinture, perché stiamo per intraprendere un viaggio che renderà la gestione dei documenti Word nelle vostre applicazioni .NET un gioco da ragazzi. In questa guida analizzeremo tutto ciò che devi sapere, passo dopo passo, con spiegazioni chiare e un tono colloquiale. Quindi, prendi una tazza di caffè, mettiti comodo e cominciamo!
 
 ## Prerequisiti
 
@@ -55,7 +55,7 @@ Ora inseriamo la libreria Aspose.Words nel nostro progetto.
     string dataDir = "YOUR DOCUMENT DIRECTORY";
     ```
 
-2.  Creare un`Document` oggetto e caricare il documento:
+2.  Crea un`Document` oggetto e caricare il documento:
     ```csharp
     Document doc = new Document(dataDir + "Document.docx");
     ```
@@ -98,7 +98,7 @@ Pensa a questo passaggio come a sfogliare il libro e annotare tutte le note impo
 
 ## Conclusione
 
-E il gioco è fatto! Hai utilizzato con successo Aspose.Words per .NET per caricare un documento Word ed estrarne le variabili. Seguendo questi passaggi, puoi facilmente manipolare i documenti Word nelle tue applicazioni .NET. Continua a sperimentare ed esplorare le funzionalità della libreria per vedere cos'altro puoi ottenere.
+Ed ecco qua! Hai utilizzato con successo Aspose.Words per .NET per caricare un documento Word ed estrarne le variabili. Seguendo questi passaggi, puoi facilmente manipolare i documenti Word nelle tue applicazioni .NET. Continua a sperimentare ed esplorare le funzionalità della libreria per vedere cos'altro puoi ottenere.
 
 ## Domande frequenti
 

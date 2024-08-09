@@ -9,7 +9,7 @@ url: /nl/net/find-and-replace-text/replace-text-in-footer/
 ---
 ## Invoering
 
-Hallo daar! Ben je klaar om in de wereld van documentmanipulatie te duiken met Aspose.Words voor .NET? Vandaag gaan we een interessante taak aanpakken: het vervangen van tekst in de voettekst van een Word-document. Deze tutorial begeleidt u stap voor stap door het hele proces. Of u nu een doorgewinterde ontwikkelaar bent of net begint, u zult deze handleiding nuttig en gemakkelijk te volgen vinden. Laten we dus beginnen aan onze reis om tekstvervanging in voetteksten onder de knie te krijgen met Aspose.Words voor .NET!
+Hé daar! Ben je klaar om in de wereld van documentmanipulatie te duiken met Aspose.Words voor .NET? Vandaag gaan we een interessante taak aanpakken: het vervangen van tekst in de voettekst van een Word-document. Deze tutorial begeleidt u stap voor stap door het hele proces. Of u nu een doorgewinterde ontwikkelaar bent of net begint, u zult deze handleiding nuttig en gemakkelijk te volgen vinden. Laten we dus aan de slag gaan met het beheersen van tekstvervanging in voetteksten met Aspose.Words voor .NET!
 
 ## Vereisten
 
@@ -64,7 +64,7 @@ FindReplaceOptions options = new FindReplaceOptions
 };
 ```
 
- In dit voorbeeld`MatchCase` ingesteld op`false` om hoofdletterverschillen te negeren, en`FindWholeWordsOnly` ingesteld op`false` om gedeeltelijke overeenkomsten binnen woorden mogelijk te maken.
+ In dit voorbeeld`MatchCase` is ingesteld op`false` om hoofdletterverschillen te negeren, en`FindWholeWordsOnly` is ingesteld op`false` om gedeeltelijke overeenkomsten binnen woorden mogelijk te maken.
 
 ## Stap 4: Vervang de tekst in de voettekst
 

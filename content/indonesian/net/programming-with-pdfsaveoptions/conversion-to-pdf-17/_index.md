@@ -15,7 +15,7 @@ Mengonversi dokumen Word ke PDF merupakan kebutuhan umum di berbagai bidang, mul
 
 Sebelum kita mulai, pastikan Anda memiliki semua yang Anda butuhkan:
 
-1.  Aspose.Words untuk .NET: Pastikan Anda memiliki versi terbaru. Kamu bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+1.  Aspose.Words untuk .NET: Pastikan Anda memiliki versi terbaru. Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Visual Studio atau IDE lain yang mendukung pengembangan .NET.
 3. Pengetahuan Dasar C#: Memahami dasar-dasarnya akan membantu Anda mengikuti cuplikan kode.
 

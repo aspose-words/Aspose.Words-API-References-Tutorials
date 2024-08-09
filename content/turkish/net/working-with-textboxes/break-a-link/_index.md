@@ -16,7 +16,7 @@ Merhaba geliştirici arkadaşlar ve belge meraklıları! 🌟 Daha önce Word be
 
 Başlamadan önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
-1.  Aspose.Words for .NET Library: En son sürüme sahip olduğunuzdan emin olun.[Buradan indir](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: En son sürüme sahip olduğunuzdan emin olun.[Buradan indirin](https://releases.aspose.com/words/net/).
 2. Geliştirme Ortamı: Visual Studio gibi .NET uyumlu bir geliştirme ortamı.
 3. Temel C# Bilgisi: Temel C# sözdizimini anlamak faydalı olacaktır.
 4. Örnek Word Belgesi: Her ne kadar sıfırdan bir Word Belgesi oluşturacak olsak da, bir örnek olması test açısından faydalı olabilir.
@@ -68,7 +68,7 @@ TextBox textBox = shape.TextBox;
 
 ### İleri Bağlantının Kesilmesi
 
- İleri bağlantıyı kırmak için şunu kullanabilirsiniz:`BreakForwardLink` yöntem. İşte kod:
+ İleri bağlantıyı kırmak için şunu kullanabilirsiniz:`BreakForwardLink` Yöntem. İşte kod:
 
 ```csharp
 textBox.BreakForwardLink();
@@ -94,7 +94,7 @@ Bazen bir metin kutusu, diğer kutuların ona bağlı olduğu bir zincirin parç
 
 ### Gelen Bağlantıları Kesmek
 
- Gelen bir bağlantıyı kesmek için,`Previous` metin kutusu mevcut ve arayın`BreakForwardLink` üstünde:
+ Gelen bir bağlantıyı kesmek için,`Previous` metin kutusu mevcut ve arayın`BreakForwardLink` üzerinde:
 
 ```csharp
 textBox.Previous?.BreakForwardLink();
@@ -104,7 +104,7 @@ textBox.Previous?.BreakForwardLink();
 
 ## Çözüm
 
-İşte buyur! 🎉 Aspose.Words for .NET'i kullanarak metin kutularındaki ileri bağlantıları nasıl koparacağınızı başarıyla öğrendiniz. İster bir belgeyi temizliyor, ister yeni bir biçime hazırlıyor, ister yalnızca deneme yapıyor olun, bu adımlar metin kutularınızı hassas bir şekilde yönetmenize yardımcı olacaktır. Bağlantıları kırmak, bir düğümü çözmek gibidir; bazen işleri derli toplu ve derli toplu tutmak için gereklidir. 
+Ve işte karşınızda! 🎉 Aspose.Words for .NET'i kullanarak metin kutularındaki ileri bağlantıları nasıl koparacağınızı başarıyla öğrendiniz. İster bir belgeyi temizliyor, ister yeni bir biçime hazırlıyor, ister yalnızca deneme yapıyor olun, bu adımlar metin kutularınızı hassas bir şekilde yönetmenize yardımcı olacaktır. Bağlantıları kırmak, bir düğümü çözmek gibidir; bazen işleri derli toplu ve derli toplu tutmak için gereklidir. 
 
  Aspose.Words'ün neler yapabileceği hakkında daha fazlasını keşfetmek istiyorsanız,[dokümantasyon](https://reference.aspose.com/words/net/) bir bilgi hazinesidir. Mutlu kodlamalar ve belgeleriniz her zaman iyi organize edilmiş olsun!
 
@@ -128,4 +128,4 @@ Bağlantıların kopması, özellikle metin kutuları belirli bir sırayı veya 
 
 ### Aspose.Words ile çalışmaya ilişkin daha fazla kaynağı nerede bulabilirim?
 
- Daha fazla bilgi ve kaynak için şu adresi ziyaret edebilirsiniz:[Aspose.Words belgeleri](https://reference.aspose.com/words/net/)Ve[destek Forumu](https://forum.aspose.com/c/words/8).
+ Daha fazla bilgi ve kaynak için şu adresi ziyaret edebilirsiniz:[Aspose.Words belgeleri](https://reference.aspose.com/words/net/)Ve[destek forumu](https://forum.aspose.com/c/words/8).

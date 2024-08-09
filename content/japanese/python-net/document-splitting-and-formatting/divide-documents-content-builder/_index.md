@@ -101,4 +101,4 @@ Aspose.Words for Python は、新しいページ、連続、さらにはペー�
 もちろんです! Aspose.Words for Python は、正確な書式でさまざまな種類のレポートやドキュメントを生成するために広く使用されています。
 
 ### ドキュメントやダウンロードにはどこからアクセスできますか?
-訪問[Aspose.Words for Python ドキュメント](https://reference.aspose.com/words/python-net/)ライブラリをダウンロードするには[Aspose.Words Python リリース](https://releases.aspose.com/words/python/).
+訪問する[Aspose.Words for Python ドキュメント](https://reference.aspose.com/words/python-net/)ライブラリをダウンロードするには[Aspose.Words Python リリース](https://releases.aspose.com/words/python/).

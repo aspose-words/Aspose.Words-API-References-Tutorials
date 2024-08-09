@@ -1,6 +1,6 @@
 ---
-title: Bekijk Opties
-linktitle: Bekijk Opties
+title: Bekijk opties
+linktitle: Bekijk opties
 second_title: Aspose.Words-API voor documentverwerking
 description: Leer hoe u opties in Word-documenten kunt bekijken met Aspose.Words voor .NET. Deze handleiding behandelt het instellen van weergavetypen, het aanpassen van zoomniveaus en het opslaan van uw document.
 type: docs
@@ -15,7 +15,7 @@ Hallo daar, mede-codeur! Heeft u zich ooit afgevraagd hoe u de manier kunt veran
 
 Voordat we meteen in de code duiken, moeten we ervoor zorgen dat we alles hebben wat we nodig hebben om samen met deze tutorial te volgen. Hier is een korte checklist:
 
-1.  Aspose.Words voor .NET-bibliotheek: Zorg ervoor dat u over de Aspose.Words voor .NET-bibliotheek beschikt. Jij kan[download het hier](https://releases.aspose.com/words/net/).
+1.  Aspose.Words voor .NET-bibliotheek: Zorg ervoor dat u over de Aspose.Words voor .NET-bibliotheek beschikt. Dat kan[download het hier](https://releases.aspose.com/words/net/).
 2. Ontwikkelomgeving: Er moet een IDE zoals Visual Studio op uw computer zijn geïnstalleerd.
 3. Basiskennis van C#: Hoewel we de zaken simpel houden, zal een basiskennis van C# nuttig zijn.
 4. Voorbeeld van een Word-document: Zorg ervoor dat u een voorbeeld van een Word-document bij de hand heeft. Voor deze zelfstudie noemen we dit 'Document.docx'.

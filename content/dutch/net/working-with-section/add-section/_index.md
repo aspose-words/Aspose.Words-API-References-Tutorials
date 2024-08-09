@@ -16,7 +16,7 @@ Hallo, mede-ontwikkelaars! 👋 Heeft u ooit de taak gehad om een Word-document 
 
 Voordat we ingaan op de code, laten we eens kijken wat je nodig hebt:
 
-1.  Aspose.Words voor .NET Library: Zorg ervoor dat je de nieuwste versie hebt. Jij kan[download het hier](https://releases.aspose.com/words/net/).
+1.  Aspose.Words voor .NET Library: Zorg ervoor dat je de nieuwste versie hebt. Dat kan[download het hier](https://releases.aspose.com/words/net/).
 2. Ontwikkelomgeving: Een .NET-compatibele IDE zoals Visual Studio is voldoende.
 3. Basiskennis van C#: Als u de syntaxis van C# begrijpt, kunt u dit probleemloos volgen.
 4. Een voorbeeld van een Word-document: Hoewel we er een helemaal zelf zullen maken, kan het nuttig zijn om een voorbeeld te hebben voor testdoeleinden.
@@ -83,7 +83,7 @@ Zodra we een nieuwe sectie hebben toegevoegd, kunnen we deze vullen met inhoud, 
 
 ### DocumentBuilder gebruiken voor de nieuwe sectie
 
-Als u inhoud aan de nieuwe sectie wilt toevoegen, moet u de`DocumentBuilder` cursor naar de nieuwe sectie:
+ Als u inhoud aan de nieuwe sectie wilt toevoegen, moet u de`DocumentBuilder` cursor naar de nieuwe sectie:
 
 ```csharp
 builder.MoveToSection(doc.Sections.IndexOf(sectionToAdd));
@@ -129,4 +129,4 @@ Nee, secties kunnen niet in elkaar worden genest. U kunt echter meerdere secties
 
 ### Waar kan ik meer bronnen vinden over Aspose.Words?
 
- Voor meer informatie kunt u terecht op de[Aspose.Words-documentatie](https://reference.aspose.com/words/net/) of de[Helpforum](https://forum.aspose.com/c/words/8) voor hulp en discussies.
+ Voor meer informatie kunt u terecht op de[Aspose.Words-documentatie](https://reference.aspose.com/words/net/) of de[ondersteuningsforum](https://forum.aspose.com/c/words/8) voor hulp en discussies.

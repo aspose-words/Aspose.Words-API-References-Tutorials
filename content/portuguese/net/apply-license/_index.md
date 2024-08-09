@@ -1,6 +1,6 @@
 ---
-title: Aplicar Licença
-linktitle: Aplicar Licença
+title: Aplicar licença
+linktitle: Aplicar licença
 second_title: API de processamento de documentos Aspose.Words
 description: Obtenha instruções passo a passo para aplicar uma licença Aspose.Words em seus projetos .NET. Siga as etapas para ativar a funcionalidade completa da biblioteca Aspose.Words.
 type: docs

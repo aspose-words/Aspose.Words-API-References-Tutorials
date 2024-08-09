@@ -38,7 +38,7 @@ Esses namespaces fornecem acesso às classes e métodos necessários para manipu
 
 Título: Crie um novo documento e construtor
 
- Explicação: Comece criando um novo`Document` objeto e um`DocumentBuilder` instância. O`DocumentBuilder` class permite inserir e formatar texto e elementos no documento.
+ Explicação: Comece criando um novo`Document` objeto e um`DocumentBuilder` exemplo. O`DocumentBuilder` class permite inserir e formatar texto e elementos no documento.
 
 ```csharp
 // Caminho para o diretório do seu documento

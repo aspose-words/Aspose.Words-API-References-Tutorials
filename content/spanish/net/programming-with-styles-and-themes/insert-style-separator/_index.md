@@ -138,4 +138,4 @@ No, los estilos se aplican a nivel de párrafo. Utilice separadores de estilo pa
 Asegúrese de que la ruta del archivo sea correcta y de que tenga permisos de escritura en el directorio especificado. Compruebe si hay excepciones o errores en el código.
 
 ### ¿Dónde puedo obtener soporte para Aspose.Words?
- Puede encontrar soporte y hacer preguntas en el[asponer foro](https://forum.aspose.com/c/words/8).
+ Puede encontrar soporte y hacer preguntas en el[aspose foro](https://forum.aspose.com/c/words/8).

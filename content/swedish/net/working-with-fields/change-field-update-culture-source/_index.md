@@ -46,7 +46,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Därefter måste vi infoga fält i dokumentet. För det här exemplet kommer vi att infoga två datumfält. Vi ställer in teckensnittets språkläge till tyska (LocaleId = 1031) för att visa hur kulturen påverkar datumformatet.
 
 ```csharp
-builder.Font.LocaleId = 1031; // tysk
+builder.Font.LocaleId = 1031; // tyska
 builder.InsertField("MERGEFIELD Date1 \\@ \"dddd, d MMMM yyyy\"");
 builder.Write(" - ");
 builder.InsertField("MERGEFIELD Date2 \\@ \"dddd, d MMMM yyyy\"");
@@ -92,7 +92,7 @@ Och där har du det! Du har framgångsrikt ändrat fältuppdateringskulturkälla
 Om den här egenskapen inte är inställd kommer dokumentets standardkulturinställningar att användas vid uppdatering av fält.
 
 ### Är det möjligt att uppdatera fält baserat på dokumentets kultur istället för fältkoden?
- Ja, du kan ställa in`FieldUpdateCultureSource` till`FieldUpdateCultureSource.Document` att använda dokumentets kulturinställningar.
+ Ja, du kan ställa in`FieldUpdateCultureSource` till`FieldUpdateCultureSource.Document` för att använda dokumentets kulturinställningar.
 
 ### Hur formaterar jag datum i ett annat mönster?
  Du kan ändra datumformatmönstret i`InsertField` metod genom att modifiera`\\@` växla värde.

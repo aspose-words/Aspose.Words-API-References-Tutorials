@@ -2,76 +2,95 @@
 title: Dipnot ve Son Not Konumunu Ayarlama
 linktitle: Dipnot ve Son Not Konumunu Ayarlama
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak Word belgelerinde dipnotların ve sonnotların konumunu nasıl ayarlayacağınızı öğrenin.
+description: Bu ayrıntılı adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerinde dipnot ve sonnot konumlarını nasıl ayarlayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-footnote-and-endnote/set-footnote-and-end-note-position/
 ---
+## giriiş
 
-Bu adım adım eğitimde, bir Word belgesindeki dipnotların ve son notların konumunu ayarlamak için Aspose.Words for .NET'i nasıl kullanacağınız konusunda size rehberlik edeceğiz. Sağlanan C# kaynak kodunu açıklayacağız ve bunu kendi projelerinizde nasıl uygulayacağınızı göstereceğiz.
+Word belgeleriyle çalışıyorsanız ve dipnotları ve sonnotları etkili bir şekilde yönetmeniz gerekiyorsa Aspose.Words for .NET, başvuracağınız kitaplıktır. Bu eğitim, Aspose.Words for .NET'i kullanarak bir Word belgesinde dipnot ve sonnot konumlarını ayarlama konusunda size yol gösterecektir. Takip edilmesini ve uygulanmasını kolaylaştırmak için her adımı parçalara ayıracağız.
 
- Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve kurulu olduğundan emin olun. Henüz yapmadıysanız, kitaplığı şuradan indirip yükleyin.[Aspose.Releases]https://releases.aspose.com/words/net/.
+## Önkoşullar
 
-## Adım 1: Belge Nesnesini Başlatma
+Eğiticiye dalmadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
- İlk olarak, başlat`Document` kaynak belgenizin yolunu sağlayarak nesneyi:
+-  Aspose.Words for .NET Kütüphanesi: Buradan indirebilirsiniz.[Burada](https://releases.aspose.com/words/net/).
+- Visual Studio: Herhangi bir güncel sürüm düzgün çalışacaktır.
+- Temel C# Bilgisi: Temelleri anlamak, kolayca takip etmenize yardımcı olacaktır.
+
+## Ad Alanlarını İçe Aktar
+
+Öncelikle C# projenize gerekli ad alanlarını içe aktarın:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";     
+using System;
+using Aspose.Words;
+```
+
+## Adım 1: Word Belgesini Yükleyin
+
+Başlamak için Word belgenizi Aspose.Words Belgesi nesnesine yüklemeniz gerekir. Bu, belgenin içeriğini değiştirmenize olanak tanır.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-## Adım 2: Dipnot ve Sonnot Konumunu Ayarlama
+ Bu kodda değiştirin`"YOUR DOCUMENT DIRECTORY"`belgenizin bulunduğu gerçek yolla.
 
- Daha sonra şuraya erişin:`FootnoteOptions`Ve`EndnoteOptions`Dipnotların ve son notların konumunu ayarlamak için belgenin özellikleri. Bu örnekte dipnotların konumunu metnin altında, son notların konumunu ise bölümün sonunda olacak şekilde ayarladık:
+## Adım 2: Dipnot Konumunu Ayarlayın
+
+Daha sonra dipnotların konumunu ayarlayacaksınız. Aspose.Words for .NET, dipnotları sayfanın altına veya metnin altına yerleştirmenize olanak tanır.
 
 ```csharp
 doc.FootnoteOptions.Position = FootnotePosition.BeneathText;
+```
+
+ Burada dipnotları metnin altında görünecek şekilde ayarladık. Bunları sayfanın alt kısmında tercih ederseniz, şunu kullanın:`FootnotePosition.BottomOfPage`.
+
+## 3. Adım: Son Not Konumunu Ayarlayın
+
+Benzer şekilde son notların konumunu da ayarlayabilirsiniz. Son notlar bölümün sonuna veya belgenin sonuna yerleştirilebilir.
+
+```csharp
 doc.EndnoteOptions.Position = EndnotePosition.EndOfSection;
 ```
 
-## Adım 3: Belgeyi Kaydetme
+ Bu örnekte, her bölümün sonuna son notlar yerleştirilmiştir. Bunları belgenin sonuna yerleştirmek için şunu kullanın:`EndnotePosition.EndOfDocument`.
 
-Son olarak değiştirilen belgeyi kaydedin:
+## Adım 4: Belgeyi Kaydedin
+
+Son olarak değişiklikleri uygulamak için belgeyi kaydedin. Çıktı belgesi için doğru dosya yolunu ve adını belirttiğinizden emin olun.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFootnotes.SetFootnoteAndEndNotePosition.docx");
 ```
 
-Bu kadar! Aspose.Words for .NET'i kullanarak bir Word belgesindeki dipnotların ve sonnotların konumunu başarıyla ayarladınız.
+Bu satır, değiştirilen belgeyi belirttiğiniz dizine kaydeder.
 
-### Aspose.Words for .NET kullanarak Dipnot ve Sonnot Konumunu Ayarlama için örnek kaynak kodu
+## Çözüm
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";     
-Document doc = new Document(dataDir + "Document.docx");
+Adımları öğrendikten sonra Aspose.Words for .NET'i kullanarak Word belgelerinde dipnot ve sonnot konumlarını ayarlamak çok kolaydır. Bu kılavuzu izleyerek belgelerinizi ihtiyaçlarınıza uyacak şekilde özelleştirebilir, dipnotların ve son notların tam olarak istediğiniz yere konumlandırılmasını sağlayabilirsiniz.
 
-doc.FootnoteOptions.Position = FootnotePosition.BeneathText;
-doc.EndnoteOptions.Position = EndnotePosition.EndOfSection;
+## SSS'ler
 
-doc.Save(dataDir + "WorkingWithFootnotes.SetFootnoteAndEndNotePosition.docx");
-```
+### Ayrı ayrı dipnotlar veya son notlar için farklı konumlar ayarlayabilir miyim?
 
-Bu kodu kendi projelerinizde kullanmaktan ve özel gereksinimlerinize göre değiştirmekten çekinmeyin.
+Hayır, Aspose.Words for .NET bir belgedeki tüm dipnotların ve sonnotların konumunu eşit şekilde ayarlar.
 
-### SSS'ler
+### Aspose.Words for .NET, Word belgelerinin tüm sürümleriyle uyumlu mu?
 
-#### S: Aspose.Words'te dipnotları ve son notları nasıl konumlandırabilirim?
+Evet, Aspose.Words for .NET, DOC, DOCX, RTF ve daha fazlasını içeren çok çeşitli Word belge formatlarını destekler.
 
- C: Aspose.Words'te dipnotları ve sonnotları konumlandırmak için`FootnoteOptions` sınıf ve`Position` mülk. Bu özelliği istediğiniz herhangi bir değere ayarlayabilirsiniz.`BottomOfPage` (sayfanın altında) veya`EndOfSection` (bölümün sonunda).
+### Aspose.Words for .NET'i diğer programlama dilleriyle birlikte kullanabilir miyim?
 
-#### S: Belgenin her sayfası veya bölümü için dipnotların ve son notların konumunu özelleştirmek mümkün müdür?
+Aspose.Words for .NET, .NET uygulamaları için tasarlanmıştır, ancak onu C#, VB.NET vb. gibi .NET destekli herhangi bir dille kullanabilirsiniz.
 
-C: Evet, belgenin her sayfası veya bölümü için dipnotların ve son notların konumunu özelleştirmek mümkündür. Dipnotlar ve sonnotlar için belirli konumları tanımlamak amacıyla Aspose.Words bölüm ve sayfa işleme yöntemlerini kullanabilirsiniz.
+### Aspose.Words for .NET'in ücretsiz deneme sürümü mevcut mu?
 
-#### S: Bir belgeden dipnotları veya son notları nasıl kaldırabilirim?
+ Evet, ücretsiz deneme sürümünden yararlanabilirsiniz[Burada](https://releases.aspose.com/).
 
- C: Aspose.Words'te bir belgeden dipnotları veya son notları kaldırmak için aşağıdakiler gibi uygun yöntemleri kullanabilirsiniz:`RemoveAllFootnotes` tüm dipnotları kaldırmak için veya`RemoveAllEndnotes` tüm son notları kaldırmak için. Bu işlemleri yaptıktan sonra belgeyi kaydettiğinizden emin olun.
+### Aspose.Words for .NET için daha ayrıntılı belgeleri nerede bulabilirim?
 
-#### S: Dipnotlar ve son notlar sayfa kenar boşluklarının dışına yerleştirilebilir mi?
-
-Hayır, varsayılan olarak dipnotlar ve son notlar Aspose.Words'de sayfa kenar boşluklarının dışına yerleştirilemez. Ancak gerekirse dipnotlara ve son notlara daha fazla alan sağlamak için belgenin kenar boşluklarını ayarlayabilirsiniz.
-
-#### S: Dipnotlar ve son notlar belirli yazı tipi veya biçimlendirme stilleriyle özelleştirilebilir mi?
-
-C: Evet, Aspose.Words'te dipnotları ve son notları belirli yazı tipi veya formatlama stilleriyle özelleştirebilirsiniz. Yazı tipi stilleri, renkleri, yazı tipi boyutları vb. dipnotları ve son notları uygulamak için mevcut yöntemleri ve özellikleri kullanabilirsiniz.
+ Detaylı dokümantasyon mevcut[Burada](https://reference.aspose.com/words/net/).

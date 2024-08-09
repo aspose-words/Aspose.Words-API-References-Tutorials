@@ -9,7 +9,7 @@ url: /tr/net/programming-with-bookmarks/delete-row-by-bookmark/
 ---
 ## giriiş
 
-Bir Word belgesinde bir satırı yer imine göre silmek karmaşık görünebilir, ancak Aspose.Words for .NET ile bu çok kolaydır. Bu kılavuz, bu görevi verimli bir şekilde gerçekleştirmek için bilmeniz gereken her şeyi size anlatacaktır. Dalmaya hazır mısınız? Başlayalım!
+Bir Word belgesinde bir satırı yer imine göre silmek karmaşık görünebilir, ancak Aspose.Words for .NET ile bu çok kolaydır. Bu kılavuz, bu görevi verimli bir şekilde gerçekleştirmek için bilmeniz gereken her şeyi size anlatacaktır. Dalmaya hazır mısınız? Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -72,7 +72,7 @@ doc.Save("output-document.docx");
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET kullanarak bir Word belgesindeki bir satırı yer imine göre silmek, bunu basit adımlara böldüğünüzde çok kolaydır. Bu yöntem, yer imlerine dayalı olarak satırları hassas bir şekilde hedefleyip kaldırabilmenizi sağlayarak belge yönetimi görevlerinizi daha verimli hale getirmenizi sağlar.
+Ve işte karşınızda! Aspose.Words for .NET kullanarak bir Word belgesindeki bir satırı yer imine göre silmek, bunu basit adımlara böldüğünüzde çok kolaydır. Bu yöntem, yer imlerine dayalı olarak satırları hassas bir şekilde hedefleyip kaldırabilmenizi sağlayarak belge yönetimi görevlerinizi daha verimli hale getirmenizi sağlar.
 
 ## SSS'ler
 

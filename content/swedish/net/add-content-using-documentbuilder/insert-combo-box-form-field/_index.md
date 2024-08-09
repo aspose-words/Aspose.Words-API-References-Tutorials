@@ -9,7 +9,7 @@ url: /sv/net/add-content-using-documentbuilder/insert-combo-box-form-field/
 ---
 ## Introduktion
 
-Hallå där! Är du redo att dyka in i dokumentautomatiseringens värld? Oavsett om du är en erfaren utvecklare eller precis har börjat, har du kommit till rätt plats. Idag ska vi utforska hur man infogar ett formulärfält med kombinationsruta i ett Word-dokument med Aspose.Words för .NET. Tro mig, i slutet av den här handledningen kommer du att vara ett proffs på att skapa interaktiva dokument med lätthet. Så ta en kopp kaffe, luta dig tillbaka och låt oss börja!
+Hej där! Är du redo att dyka in i dokumentautomatiseringens värld? Oavsett om du är en erfaren utvecklare eller precis har börjat, har du kommit till rätt plats. Idag ska vi utforska hur man infogar ett formulärfält med kombinationsruta i ett Word-dokument med Aspose.Words för .NET. Tro mig, i slutet av den här handledningen kommer du att vara ett proffs på att skapa interaktiva dokument med lätthet. Så ta en kopp kaffe, luta dig tillbaka och låt oss börja!
 
 ## Förutsättningar
 
@@ -44,7 +44,7 @@ Först och främst, låt oss ställa in sökvägen till katalogen där dina doku
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där du vill spara ditt dokument. Detta steg säkerställer att ditt dokument sparas på rätt plats.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där du vill spara ditt dokument. Detta steg säkerställer att ditt dokument sparas på rätt plats.
 
 ## Steg 2: Definiera Combo Box-objekt
 
@@ -76,9 +76,9 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
  Genom att skapa en instans av`DocumentBuilder` och skickar vårt dokument till det är vi redo att börja lägga till innehåll.
 
-## Steg 5: Infoga formulärfältet Combo Box
+## Steg 5: Infoga kombinationsrutans formulärfält
 
- Det är här magin händer. Vi kommer att använda`InsertComboBox` metod för att lägga till ett formulärfält med kombinationsruta i vårt dokument.
+ Här händer magin. Vi kommer att använda`InsertComboBox` metod för att lägga till ett formulärfält med kombinationsruta i vårt dokument.
 
 ```csharp
 builder.InsertComboBox("DropDown", items, 0);
@@ -97,7 +97,7 @@ Slutligen, låt oss spara vårt dokument. Detta steg kommer att skriva alla änd
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertComboBoxFormField.docx");
 ```
 
- Byta ut`dataDir` med den sökväg du satte upp tidigare. Detta kommer att spara dokumentet med det angivna namnet i din valda katalog.
+ Ersätta`dataDir` med den sökväg du satte upp tidigare. Detta kommer att spara dokumentet med det angivna namnet i din valda katalog.
 
 ## Slutsats
 

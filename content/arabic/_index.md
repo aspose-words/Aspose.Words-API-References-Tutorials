@@ -42,7 +42,7 @@ is_root: true
 {{% /alert %}}
 
 وهذه روابط لبعض الموارد المفيدة:
-- [معالجة الكلمة](./java/word-processing/)  
+- [معالجة نصوص](./java/word-processing/)  
 - [معالجة الجدول](./java/table-processing/)
 - [تنسيق المستندات](./java/document-styling/)
 - [دمج المستندات](./java/document-merging/)

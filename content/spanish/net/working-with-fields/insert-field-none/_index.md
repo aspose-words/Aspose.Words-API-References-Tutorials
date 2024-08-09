@@ -70,11 +70,11 @@ Finalmente, guardemos nuestro documento. Aquí es donde todo su arduo trabajo se
 doc.Save(dataDir + "InsertionFieldNone.docx");
 ```
 
-¡Y eso es! Acaba de crear un documento de Word e insertar un campo usando Aspose.Words para .NET. Bastante bonito, ¿verdad?
+¡Y eso es todo! Acaba de crear un documento de Word e insertar un campo usando Aspose.Words para .NET. Bastante bonito, ¿verdad?
 
 ## Conclusión
 
-¡Ahí lo tienen chicos! Hemos recorrido los conceptos básicos del uso de Aspose.Words para .NET para automatizar la creación y manipulación de documentos. Desde configurar su entorno hasta insertar campos y guardar su documento, cada paso ayuda a dominar esta poderosa herramienta. Ya sea que esté buscando optimizar su flujo de trabajo o crear documentos dinámicos, Aspose.Words para .NET lo tiene cubierto. Entonces, adelante, pruébalo. ¿Quién sabe? Es posible que tengas tiempo extra para explorar nuevas aventuras. ¡Feliz codificación!
+¡Ahí lo tienen, amigos! Hemos recorrido los conceptos básicos del uso de Aspose.Words para .NET para automatizar la creación y manipulación de documentos. Desde configurar su entorno hasta insertar campos y guardar su documento, cada paso ayuda a dominar esta poderosa herramienta. Ya sea que esté buscando optimizar su flujo de trabajo o crear documentos dinámicos, Aspose.Words para .NET lo tiene cubierto. Entonces, adelante, pruébalo. ¿Quién sabe? Es posible que tengas tiempo extra para explorar nuevas aventuras. ¡Feliz codificación!
 
 ## Preguntas frecuentes
 
@@ -82,7 +82,7 @@ doc.Save(dataDir + "InsertionFieldNone.docx");
 Aspose.Words para .NET es una biblioteca que permite a los desarrolladores crear, editar y manipular documentos de Word mediante programación utilizando el marco .NET.
 
 ### ¿Puedo usar Aspose.Words para .NET con .NET Core?
-Sí, Aspose.Words para .NET es compatible con .NET Core, .NET 5.0 y versiones posteriores, lo que lo hace versátil para diversas aplicaciones .NET.
+Sí, Aspose.Words para .NET es compatible con .NET Core, .NET 5.0 y versiones posteriores, lo que lo hace versátil para varias aplicaciones .NET.
 
 ### ¿Cómo inserto diferentes tipos de campos en un documento de Word?
  Puede insertar varios tipos de campos utilizando el`DocumentBuilder.InsertField`método. Cada tipo de campo tiene su propio método y parámetros específicos.

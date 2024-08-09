@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/document-protection/unrestricted-section/
 ---
-## introduzione
+## Introduzione
 
 Ehilà! Pronto a tuffarti nel mondo di Aspose.Words per .NET? Oggi affronteremo qualcosa di estremamente pratico: come sbloccare sezioni specifiche in un documento Word mantenendo protette le altre parti. Se ti è mai capitato di aver bisogno di salvaguardare alcune sezioni del tuo documento ma di lasciarne altre aperte per la modifica, questo tutorial fa per te. Iniziamo!
 
@@ -124,7 +124,7 @@ Questo passaggio garantisce che il documento venga salvato correttamente e possa
 
 ## Conclusione
 
-E il gioco è fatto! Seguendo questi passaggi, hai creato con successo un documento Word con un mix di sezioni protette e non protette utilizzando Aspose.Words per .NET. Questo metodo è incredibilmente utile quando è necessario bloccare alcune parti di un documento lasciando altre parti modificabili.
+Ed ecco qua! Seguendo questi passaggi, hai creato con successo un documento Word con un mix di sezioni protette e non protette utilizzando Aspose.Words per .NET. Questo metodo è incredibilmente utile quando è necessario bloccare alcune parti di un documento lasciando altre parti modificabili.
 
 ## Domande frequenti
 

@@ -86,7 +86,7 @@ Enfin, enregistrez le document modifié.
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez réussi à effacer le contrôle du contenu dans un document Word à l’aide d’Aspose.Words pour .NET. Cette puissante bibliothèque facilite la manipulation des documents Word. En suivant ces étapes, vous pouvez facilement gérer les balises de documents structurés dans vos projets.
+Félicitations! Vous avez réussi à effacer le contrôle du contenu dans un document Word à l’aide d’Aspose.Words pour .NET. Cette puissante bibliothèque facilite la manipulation des documents Word. En suivant ces étapes, vous pouvez facilement gérer les balises de documents structurés dans vos projets.
 
 ## FAQ
 

@@ -15,7 +15,7 @@ Salut! Êtes-vous prêt à plonger dans le monde d’Aspose.Words pour .NET ? C
 
 Avant de passer au code, assurons-nous que nous avons tout ce dont nous avons besoin :
 
-1.  Aspose.Words pour la bibliothèque .NET : vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/) . Si vous êtes nouveau sur Aspose, vous souhaiterez peut-être commencer par un[essai gratuit](https://releases.aspose.com/).
+1.  Aspose.Words pour la bibliothèque .NET : vous pouvez[téléchargez-le ici](https://releases.aspose.com/words/net/) . Si vous êtes nouveau sur Aspose, vous souhaiterez peut-être commencer par un[essai gratuit](https://releases.aspose.com/).
 2. Environnement de développement : Visual Studio ou tout autre IDE compatible .NET.
 3. .NET Framework : assurez-vous que .NET Framework est installé.
 4. Connaissance de base de C# : ce didacticiel suppose que vous êtes familier avec la programmation C#.
@@ -106,11 +106,11 @@ Enfin et surtout, nous devons sauvegarder notre document. C’est là que tout v
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
 ```
 
-Et voila! Vous avez créé avec succès un document Word et inséré des sauts de page à l'aide d'Aspose.Words pour .NET.
+Et voilà ! Vous avez créé avec succès un document Word et inséré des sauts de page à l'aide d'Aspose.Words pour .NET.
 
 ## Conclusion
 
-N'était-ce pas amusant ? Avec Aspose.Words pour .NET, la manipulation de documents Word est un jeu d'enfant. Que vous ajoutiez de simples sauts de page ou que vous effectuiez une automatisation de documents complexes, cette bibliothèque vous facilite grandement la vie. Alors, allez-y et explorez davantage ce qu’Aspose.Words peut faire. Les possibilités sont infinies!
+N'était-ce pas amusant ? Avec Aspose.Words pour .NET, la manipulation de documents Word est un jeu d'enfant. Que vous ajoutiez de simples sauts de page ou que vous effectuiez une automatisation de documents complexes, cette bibliothèque vous facilite grandement la vie. Alors, allez-y et explorez davantage ce qu’Aspose.Words peut faire. Les possibilités sont infinies !
 
 ## FAQ
 

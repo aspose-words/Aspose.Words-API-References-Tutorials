@@ -117,7 +117,7 @@ Bước này lưu tài liệu có nhận xét được neo vào thư mục đư�
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã học thành công cách thêm nhận xét neo vào các phần văn bản cụ thể trong tài liệu Word bằng Aspose.Words cho .NET. Kỹ thuật này cực kỳ hữu ích cho việc cộng tác tài liệu, cho phép bạn đánh dấu và nhận xét về các phần cụ thể của văn bản một cách dễ dàng. Cho dù bạn đang làm việc trên một dự án với nhóm của mình hay đang xem xét tài liệu, phương pháp này sẽ nâng cao năng suất và hợp lý hóa quy trình làm việc của bạn.
+Và bạn có nó! Bạn đã học thành công cách thêm nhận xét neo vào các phần văn bản cụ thể trong tài liệu Word bằng Aspose.Words cho .NET. Kỹ thuật này cực kỳ hữu ích cho việc cộng tác tài liệu, cho phép bạn đánh dấu và nhận xét về các phần cụ thể của văn bản một cách dễ dàng. Cho dù bạn đang làm việc trên một dự án với nhóm của mình hay đang xem xét tài liệu, phương pháp này sẽ nâng cao năng suất và hợp lý hóa quy trình làm việc của bạn.
 
 ## Câu hỏi thường gặp
 

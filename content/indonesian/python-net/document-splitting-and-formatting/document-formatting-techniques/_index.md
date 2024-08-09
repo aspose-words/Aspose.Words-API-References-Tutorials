@@ -2,7 +2,7 @@
 title: Menguasai Teknik Pemformatan Dokumen untuk Dampak Visual
 linktitle: Menguasai Teknik Pemformatan Dokumen untuk Dampak Visual
 second_title: API Manajemen Dokumen Aspose.Words Python
-description: Pelajari cara menguasai pemformatan dokumen menggunakan Aspose.Words untuk Python. Buat dokumen yang menarik secara visual dengan gaya font, tabel, gambar, dan lainnya. Panduan langkah demi langkah dengan contoh kode.
+description: Pelajari cara menguasai pemformatan dokumen menggunakan Aspose.Words untuk Python. Buat dokumen yang menarik secara visual dengan gaya font, tabel, gambar, dan banyak lagi. Panduan langkah demi langkah dengan contoh kode.
 type: docs
 weight: 14
 url: /id/python-net/document-splitting-and-formatting/document-formatting-techniques/
@@ -160,7 +160,7 @@ pip install aspose-words
 ```
 
 ### Bisakah saya menerapkan gaya berbeda pada paragraf dan judul?
- Ya, Anda dapat menerapkan gaya berbeda pada paragraf dan judul menggunakan`paragraph_format.style` Properti.
+ Ya, Anda dapat menerapkan gaya berbeda pada paragraf dan judul menggunakan`paragraph_format.style` milik.
 
 ### Apakah mungkin untuk menambahkan gambar ke dokumen saya?
  Sangat! Anda dapat menyisipkan gambar ke dalam dokumen Anda menggunakan`insert_image` metode.

@@ -140,4 +140,4 @@ Ayarlamak`importFormatOptions.setIgnoreTextBoxes(false)` ekleme sırasında meti
 
 ### Belgeler arasında üstbilgileri ve altbilgileri bağlamak/bağlantısını kaldırmak istersem ne olur?
 
- Üstbilgileri ve altbilgileri şu şekilde bağlayabilirsiniz:`linkToPrevious(true)` veya bunların bağlantısını kaldırın`linkToPrevious(false)` ihyaç olduğu gibi.
+ Üstbilgileri ve altbilgileri şu şekilde bağlayabilirsiniz:`linkToPrevious(true)` veya bunların bağlantısını kaldırın`linkToPrevious(false)` gerektiği gibi.

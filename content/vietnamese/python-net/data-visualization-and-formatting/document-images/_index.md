@@ -145,7 +145,7 @@ Việc kết hợp hình ảnh đa phương tiện vào tài liệu của bạn 
 
 ### Làm cách nào để chèn hình ảnh từ URL bằng Aspose.Words cho Python?
 
- Bạn có thể dùng`add_remote_image` phương pháp chèn hình ảnh từ URL. Chỉ cần cung cấp URL và vị trí mong muốn.
+ Bạn có thể sử dụng`add_remote_image` phương pháp chèn hình ảnh từ URL. Chỉ cần cung cấp URL và vị trí mong muốn.
 
 ### Tôi có thể thêm chú thích vào hình ảnh tôi chèn không?
 

@@ -20,12 +20,12 @@ tych samouczkach programiści poznają podstawy scalania dokumentów i zrozumiej
 
 Samouczki dotyczące łączenia dokumentów przy użyciu Aspose.Words zagłębiają się w zawiłości dostosowywania wyglądu i układu scalonych dokumentów. Programiści mogą eksplorować zaawansowane opcje radzenia sobie z konfliktami formatowania, takimi jak style czcionek, odstępy między akapitami i podziały stron. Dodatkowo Aspose.Words umożliwia użytkownikom łączenie dokumentów o dużej skali za pomocą zoptymalizowanych algorytmów, minimalizując zużycie zasobów przy jednoczesnym zachowaniu najwyższej wydajności. Dzięki tym samouczkom programiści zyskują praktyczny wgląd w efektywne zarządzanie złożonymi zadaniami scalania, zwiększając produktywność w przedsięwzięciach związanych z przetwarzaniem dokumentów.
 
-Ogólnie rzecz biorąc, samouczki dotyczące łączenia dokumentów przy użyciu Aspose.Words dla Java oferują cenne źródło informacji dla programistów pragnących zoptymalizować swoje przetwarzanie tekstu i przepływy pracy związane z przetwarzaniem dokumentów. Opanowując sztukę łączenia dokumentów, programiści mogą podnieść swoje możliwości zarządzania dokumentami i odblokować pełny potencjał Aspose.Words w aplikacjach Java. Nacisk w samouczkach na łączenie dokumentów, przetwarzanie tekstu i przetwarzanie dokumentów gwarantuje, że programiści mogą z łatwością tworzyć, modyfikować i łączyć dokumenty, przekształcając swoje operacje związane z dokumentami w płynne i wydajne procesy.
+Ogólnie rzecz biorąc, samouczki dotyczące łączenia dokumentów przy użyciu Aspose.Words dla Java oferują cenne źródło informacji dla programistów pragnących zoptymalizować swoje przetwarzanie tekstu i przepływy pracy związane z przetwarzaniem dokumentów. Opanowując sztukę łączenia dokumentów, programiści mogą podnieść swoje możliwości zarządzania dokumentami i odblokować pełny potencjał Aspose.Words w aplikacjach Java. Nacisk położony w samouczkach na łączenie dokumentów, przetwarzanie tekstu i przetwarzanie dokumentów sprawia, że programiści mogą z łatwością tworzyć, modyfikować i łączyć dokumenty, przekształcając swoje operacje związane z dokumentami w płynne i wydajne procesy.
 
 ## Samouczki dotyczące łączenia dokumentów
 
 ### [Korzystanie z łączenia dokumentów](./using-document-merging/)
-Dowiedz się, jak płynnie łączyć dokumenty programu Word za pomocą Aspose.Words dla Java. Efektywnie łącz, formatuj i rozwiązuj konflikty w zaledwie kilku krokach. Zacznij teraz!
+Dowiedz się, jak płynnie łączyć dokumenty programu Word za pomocą Aspose.Words dla Java. Efektywnie łącz, formatuj i rozwiązuj konflikty w zaledwie kilku krokach. Zacznij już teraz!
 ### [Łączenie i klonowanie dokumentów](./combining-cloning-documents/)
 Dowiedz się, jak bez wysiłku łączyć i klonować dokumenty w Javie za pomocą Aspose.Words. W tym przewodniku krok po kroku znajdziesz wszystko, co musisz wiedzieć.
 ### [Łączenie i dołączanie dokumentów](./joining-appending-documents/)

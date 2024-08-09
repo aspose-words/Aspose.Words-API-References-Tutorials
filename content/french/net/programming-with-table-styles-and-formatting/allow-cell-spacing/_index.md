@@ -81,7 +81,7 @@ Maintenant, activons l'espacement des cellules pour le tableau.
 
 ### Étape 4.1 : Autoriser l'espacement des cellules
 
- Met le`AllowCellSpacing` propriété de la table à`true`.
+ Réglez le`AllowCellSpacing` propriété de la table à`true`.
 
 ```csharp
 table.AllowCellSpacing = true;
@@ -107,7 +107,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.AllowCellSpacing.docx");
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez appris avec succès comment autoriser l’espacement des cellules dans un tableau à l’aide d’Aspose.Words pour .NET. Ce petit changement peut améliorer considérablement l’apparence de vos tableaux, rendant vos documents plus professionnels et plus lisibles. N'oubliez pas que la pratique rend parfait, alors n'hésitez pas à expérimenter différents réglages et à voir ce qui vous convient le mieux.
+Félicitations! Vous avez appris avec succès comment autoriser l’espacement des cellules dans un tableau à l’aide d’Aspose.Words pour .NET. Ce petit changement peut améliorer considérablement l’apparence de vos tableaux, rendant vos documents plus professionnels et plus lisibles. N'oubliez pas que la pratique rend parfait, alors n'hésitez pas à expérimenter différents réglages et à voir ce qui vous convient le mieux.
 
 ## FAQ
 

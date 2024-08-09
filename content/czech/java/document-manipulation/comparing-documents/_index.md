@@ -16,7 +16,7 @@ Porovnání dokumentů zahrnuje analýzu dvou dokumentů a identifikaci rozdíl�
 
  Než se vrhneme na porovnání dokumentů, ujistěte se, že máte nainstalovaný Aspose.Words for Java. Knihovnu si můžete stáhnout z[Aspose.Words pro vydání Java](https://releases.aspose.com/words/java/) strana. Po stažení jej zahrňte do svého projektu Java.
 
-## Porovnání základních dokumentů
+## Základní srovnání dokumentů
 
  Začněme základy porovnávání dokumentů. Použijeme dva dokumenty,`docA`a`docB`a porovnejte je.
 

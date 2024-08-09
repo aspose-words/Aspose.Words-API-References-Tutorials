@@ -15,7 +15,7 @@ Das Konvertieren von Word-Dokumenten in Bilder kann unglaublich nützlich sein, 
 
 Bevor wir beginnen, müssen Sie einige Dinge vorbereitet haben:
 
--  Aspose.Words für .NET: Stellen Sie sicher, dass Sie Aspose.Words für .NET installiert haben. Sie können[hier herunterladen](https://releases.aspose.com/words/net/).
+-  Aspose.Words für .NET: Stellen Sie sicher, dass Sie Aspose.Words für .NET installiert haben. Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 - Entwicklungsumgebung: AC#-Entwicklungsumgebung wie Visual Studio.
 - Beispieldokument: Ein Word-Dokument zum Arbeiten. Sie können für dieses Tutorial jede beliebige DOCX-Datei verwenden.
 - Grundlegende C#-Kenntnisse: Vertrautheit mit der C#-Programmierung.

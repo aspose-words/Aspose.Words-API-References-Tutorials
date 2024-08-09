@@ -80,10 +80,10 @@ doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile
 使用单个 CSS 文件可简化样式的管理和维护。它可让您的 HTML 更简洁、更高效。
 
 ### 如果需要，我可以分离字体 CSS 规则吗？
-是的，通过设置`SaveFontFaceCssSeparately`到`true`，您可以将字体 CSS 规则分成不同的文件。
+是的，通过设置`SaveFontFaceCssSeparately`到`true`，您可以将字体样式 CSS 规则分离到不同的文件中。
 
 ### Aspose.Words for .NET 可以免费使用吗？
- Aspose.Words 提供免费试用，您可以[在这里下载](https://releases.aspose.com/)。如需继续使用，请考虑购买许可证[这里](https://purchase.aspose.com/buy).
+ Aspose.Words 提供免费试用，您可以[点击此处下载](https://releases.aspose.com/)。如需继续使用，请考虑购买许可证[这里](https://purchase.aspose.com/buy).
 
 ### Aspose.Words for .NET 还可以转换为哪些其他格式？
 Aspose.Words for .NET 支持各种格式，包括 PDF、TXT 和 JPEG 和 PNG 等图像格式。

@@ -52,7 +52,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Schritt 3: Schreiben Sie den Anfangstext
 
- Verwendung der`DocumentBuilder`schreiben wir einen ersten Text in das Dokument. Dadurch wird der Kontext festgelegt, in dem unser Hyperlink eingefügt wird.
+ Mit dem`DocumentBuilder`schreiben wir einen ersten Text in das Dokument. Dadurch wird der Kontext festgelegt, in dem unser Hyperlink eingefügt wird.
 
 ```csharp
 builder.Write("Please make sure to visit ");
@@ -122,4 +122,4 @@ Das Einfügen von Hyperlinks in ein Word-Dokument mit Aspose.Words für .NET ist
 
 ### Ist es möglich, einen Hyperlink nach dem Einfügen zu entfernen?
 
- Ja, Sie können einen Hyperlink entfernen, indem Sie auf die`FieldHyperlink` und ruft die`Remove` Methode.
+ Ja, Sie können einen Hyperlink entfernen, indem Sie auf die`FieldHyperlink` und ruft die`Remove` Verfahren.

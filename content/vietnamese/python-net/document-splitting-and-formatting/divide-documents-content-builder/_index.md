@@ -101,4 +101,4 @@ Có, bạn có thể áp dụng các định dạng, kiểu và phông chữ kh�
 Tuyệt đối! Aspose.Words for Python được sử dụng rộng rãi để tạo nhiều loại báo cáo và tài liệu khác nhau với định dạng chính xác.
 
 ### Tôi có thể truy cập tài liệu và tải xuống ở đâu?
- Tham quan[Aspose.Words cho tài liệu Python](https://reference.aspose.com/words/python-net/) và tải xuống thư viện từ[Aspose.Words Python phát hành](https://releases.aspose.com/words/python/).
+ Ghé thăm[Aspose.Words cho tài liệu Python](https://reference.aspose.com/words/python-net/) và tải xuống thư viện từ[Aspose.Words Python phát hành](https://releases.aspose.com/words/python/).

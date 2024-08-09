@@ -9,7 +9,7 @@ url: /pl/net/programming-with-pdfsaveoptions/escape-uri/
 ---
 ## Wstęp
 
-No hej! Czy zastanawiałeś się kiedyś, jak obsługiwać identyfikatory URI podczas zapisywania dokumentu programu Word jako pliku PDF przy użyciu Aspose.Words dla .NET? Jesteś we właściwym miejscu! Dzisiaj zajmiemy się szczegółowo kwestią ucieczki identyfikatorów URI w dokumentach PDF, aby upewnić się, że działają one poprawnie po konwersji dokumentu. Wyruszmy razem w tę podróż, krok po kroku, upewniając się, że po drodze zrozumiesz każdą koncepcję.
+Hej tam! Czy zastanawiałeś się kiedyś, jak obsługiwać identyfikatory URI podczas zapisywania dokumentu programu Word jako pliku PDF przy użyciu Aspose.Words dla .NET? Jesteś we właściwym miejscu! Dzisiaj zajmiemy się szczegółowo kwestią ucieczki identyfikatorów URI w dokumentach PDF, aby upewnić się, że działają one poprawnie po konwersji dokumentu. Wyruszmy razem w tę podróż, krok po kroku, upewniając się, że po drodze zrozumiesz każdą koncepcję.
 
 ## Warunki wstępne
 

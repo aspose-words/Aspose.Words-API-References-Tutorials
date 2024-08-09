@@ -68,14 +68,14 @@ doc.Save(dataDir + "WorkingWithStylesAndThemes.CopyStyles.docx");
 
 ## 結論
 
-現在你就擁有了！一旦掌握了竅門，使用 Aspose.Words for .NET 在 Word 文件之間複製樣式就是一個簡單的過程。透過執行這些步驟，您可以確保文件保持一致的外觀和風格，使您的工作更加有效率和專業。無論您是更新報告還是建立新模板，此方法都可以節省您的時間和精力，讓您專注於內容而不是格式。
+現在你就得到它了！一旦掌握了竅門，使用 Aspose.Words for .NET 在 Word 文件之間複製樣式就是一個簡單的過程。透過執行這些步驟，您可以確保文件保持一致的外觀和風格，使您的工作更加有效率和專業。無論您是更新報告還是建立新模板，此方法都可以節省您的時間和精力，讓您專注於內容而不是格式。
 
 ## 常見問題解答
 
 ### 目的是什麼`CopyStylesFromTemplate` method?  
 這`CopyStylesFromTemplate`方法將樣式從一個文檔複製到另一個文檔，確保目標文檔繼承來源文檔的格式。
 
-### 我可以用嗎`CopyStylesFromTemplate` with documents in different formats?  
+### 我可以使用嗎`CopyStylesFromTemplate` with documents in different formats?  
 不，該`CopyStylesFromTemplate`方法僅適用於相同格式的文檔，通常是 DOCX。
 
 ### 如何檢查樣式是否複製成功？  

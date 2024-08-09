@@ -165,7 +165,7 @@ for (Paragraph paragraph : (Iterable<Paragraph>) doc.getChildNodes(NodeType.PARA
 
 ### Hur kan jag ladda ner Aspose.Words för Java?
 
- Du kan ladda ner Aspose.Words för Java från[den här länken](https://releases.aspose.com/words/java/).
+ Du kan ladda ner Aspose.Words för Java från[denna länk](https://releases.aspose.com/words/java/).
 
 ### Är Aspose.Words för Java lämpligt för att skapa komplexa dokument?
 
@@ -173,7 +173,7 @@ Absolut! Aspose.Words för Java erbjuder omfattande möjligheter för att skapa 
 
 ### Kan jag använda anpassade formatmallar på stycken med Aspose.Words för Java?
 
-Ja, du kan använda anpassade stilar på stycken, vilket ger dina dokument ett unikt utseende och känsla.
+Ja, du kan använda anpassade formatmallar på stycken, vilket ger dina dokument ett unikt utseende och känsla.
 
 ### Stöder Aspose.Words for Java listor på flera nivåer?
 

@@ -14,7 +14,7 @@ Hallo! Sie haben also ein Word-Dokument und müssen eine Signaturzeile hinzufüg
 ## Voraussetzungen
 
 Bevor wir uns in den Code stürzen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
-1.  Aspose.Words für .NET - Sie können[hier herunterladen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET - Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Eine .NET-Entwicklungsumgebung – Visual Studio – wird dringend empfohlen.
 3. Ein zu unterzeichnendes Dokument – Erstellen Sie ein einfaches Word-Dokument oder verwenden Sie ein vorhandenes.
 4.  Eine Zertifikatsdatei - Diese wird für digitale Signaturen benötigt. Sie können eine`.pfx` Datei.
@@ -105,7 +105,7 @@ Und da haben Sie es! Mit diesen Schritten haben Sie erfolgreich ein neues Word-D
 Ja, Sie können verschiedene Bildformate wie PNG, JPG, BMP usw. verwenden.
 
 ###  Ist es notwendig, eine`.pfx` file for the certificate?
- Ja ein`.pfx` Datei ist ein gängiges Format zum Speichern kryptografischer Informationen, einschließlich Zertifikaten und privaten Schlüsseln.
+ Ja, ein`.pfx` Datei ist ein gängiges Format zum Speichern kryptografischer Informationen, einschließlich Zertifikaten und privaten Schlüsseln.
 
 ### Kann ich in einem einzelnen Dokument mehrere Signaturzeilen hinzufügen?
 Auf jeden Fall! Sie können mehrere Signaturzeilen einfügen, indem Sie den Einfügeschritt für jede Signatur wiederholen.

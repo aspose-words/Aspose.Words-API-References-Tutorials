@@ -75,7 +75,7 @@ I den här självstudien visade vi hur man inaktiverar radbrytningar över sidor
  Ja, du kan inaktivera radbrytningar för specifika rader genom att komma åt önskad rad och ställa in dess`AllowBreakAcrossPages`egendom till`false`.
 
 ### Fungerar den här metoden för tabeller med sammanslagna celler?  
- Ja, den här metoden fungerar för tabeller med sammanslagna celler. Egendomen`AllowBreakAcrossPages` gäller för hela raden, oavsett cellsammanslagning.
+ Ja, den här metoden fungerar för tabeller med sammanslagna celler. Fastigheten`AllowBreakAcrossPages` gäller för hela raden, oavsett cellsammanslagning.
 
 ### Kommer den här metoden att fungera om tabellen är kapslad i en annan tabell?  
 Ja, du kan komma åt och ändra kapslade tabeller på samma sätt. Se till att du refererar den kapslade tabellen på rätt sätt genom dess index eller andra egenskaper.

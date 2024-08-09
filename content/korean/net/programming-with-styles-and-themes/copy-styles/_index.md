@@ -9,7 +9,7 @@ url: /ko/net/programming-with-styles-and-themes/copy-styles/
 ---
 ## 소개
 
-문서를 다른 문서와 일관되게 보이게 만들어야 한다면 아마도 스타일을 복사해야 하는 문제에 직면했을 것입니다. 당신이 모든 새 보고서가 기존 템플릿의 스타일과 일치하는지 확인하는 임무를 맡은 디자이너라고 상상해 보십시오. .NET용 Aspose.Words를 사용하면 이 작업을 단순화하고 문서를 선명하고 균일하게 유지할 수 있습니다. 이 튜토리얼에서는 한 Word 문서에서 다른 Word 문서로 스타일을 쉽게 복사하는 방법에 대해 알아봅니다. 시작하자!
+문서를 다른 문서와 일관되게 보이게 만들어야 한다면 아마도 스타일을 복사해야 하는 문제에 직면했을 것입니다. 당신이 모든 새 보고서가 기존 템플릿의 스타일과 일치하는지 확인하는 임무를 맡은 디자이너라고 상상해 보십시오. .NET용 Aspose.Words를 사용하면 이 작업을 단순화하고 문서를 선명하고 균일하게 유지할 수 있습니다. 이 튜토리얼에서는 한 Word 문서에서 다른 Word 문서로 스타일을 쉽게 복사하는 방법에 대해 알아봅니다. 시작해 봅시다!
 
 ## 전제 조건
 
@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithStylesAndThemes.CopyStyles.docx");
 ###  의 목적은 무엇입니까?`CopyStylesFromTemplate` method?  
  그만큼`CopyStylesFromTemplate` 메서드는 한 문서에서 다른 문서로 스타일을 복사하여 대상 문서가 소스 문서의 서식을 상속하도록 합니다.
 
-###  사용해도 되나요`CopyStylesFromTemplate` with documents in different formats?  
+###  사용할 수 있나요?`CopyStylesFromTemplate` with documents in different formats?  
  아니,`CopyStylesFromTemplate` 방법은 동일한 형식(일반적으로 DOCX)의 문서에서만 작동합니다.
 
 ### 스타일이 성공적으로 복사되었는지 어떻게 확인할 수 있나요?  

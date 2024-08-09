@@ -114,7 +114,7 @@ doc.getMailMerge().execute(new String[] { "FullName", "Company", "Address", "Add
 doc.save("WorkingWithCleanupOptions.RemoveContainingFields.docx");
 ```
 
-Bu örnekte, birleştirme alanlarına sahip bir belge açıyoruz, temizleme seçeneklerini içeren alanları kaldıracak şekilde ayarlıyoruz ve adres-mektup birleştirmeyi verilerle yürütüyoruz. Birleştirmeden sonra alanların kendisi belgeden kaldırılacaktır.
+Bu örnekte, birleştirme alanlarına sahip bir belge açıyoruz, temizleme seçeneklerini içeren alanları kaldıracak şekilde ayarlıyoruz ve adres-mektup birleştirmeyi verilerle yürütüyoruz. Birleştirmeden sonra alanların kendileri belgeden kaldırılacaktır.
 
 ## Adım 6: Boş Tablo Satırlarını Kaldırma
 
@@ -158,13 +158,13 @@ Aspose.Words for Java'daki temizleme seçenekleri, adres-mektup birleştirme iş
 
 ###  Ayarladığımda ne olur?`REMOVE_CONTAINING_FIELDS` option?
 
- ayarlamak`MailMergeCleanupOptions.REMOVE_CONTAINING_FIELDS` seçeneği, adres-mektup birleştirme işlemi sırasında, içerdiği paragraf da dahil olmak üzere birleştirme alanının tamamını belgeden kaldıracaktır. Bu, birleştirme alanlarını ve bunlarla ilişkili metinleri ortadan kaldırmak istediğinizde kullanışlıdır.
+ Ayarlama`MailMergeCleanupOptions.REMOVE_CONTAINING_FIELDS` seçeneği, adres-mektup birleştirme işlemi sırasında, içerdiği paragraf da dahil olmak üzere birleştirme alanının tamamını belgeden kaldıracaktır. Bu, birleştirme alanlarını ve bunlarla ilişkili metinleri ortadan kaldırmak istediğinizde kullanışlıdır.
 
 ### Kullanılmayan birleştirme alanlarını belgemden nasıl kaldırabilirim?
 
  Kullanılmayan birleştirme alanlarını bir belgeden kaldırmak için`MailMergeCleanupOptions.REMOVE_UNUSED_FIELDS` doğru seçeneği. Bu, adres-mektup birleştirme sırasında doldurulmayan birleştirme alanlarını otomatik olarak ortadan kaldıracak ve daha temiz bir belge elde edilmesini sağlayacaktır.
 
-###  Arasındaki fark nedir`REMOVE_EMPTY_FIELDS` and `REMOVE_UNUSED_FIELDS` cleanup options?
+###  arasındaki fark nedir?`REMOVE_EMPTY_FIELDS` and `REMOVE_UNUSED_FIELDS` cleanup options?
 
 `REMOVE_EMPTY_FIELDS` seçeneği, veri içermeyen veya adres-mektup birleştirme işlemi sırasında boş olan birleştirme alanlarını kaldırır. Öte yandan,`REMOVE_UNUSED_FIELDS`seçeneği, birleştirme sırasında verilerle doldurulmayan birleştirme alanlarını kaldırır. Aralarındaki seçim, içeriği olmayan alanları mı, yoksa belirli birleştirme işleminde kullanılmayan alanları mı kaldırmak istediğinize bağlıdır.
 

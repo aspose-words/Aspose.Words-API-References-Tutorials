@@ -115,7 +115,7 @@ End Sub
 
 ## 結論
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 成功從 Word 文件讀取 VBA 巨集。本教學涵蓋了從設定環境和載入文件到存取 VBA 專案和讀取巨集的所有內容。透過 Aspose.Words，您可以使用一個強大的工具來自動執行任務、自訂文件並深入研究 VBA 的世界。
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功從 Word 文件讀取 VBA 巨集。本教學涵蓋了從設定環境和載入文件到存取 VBA 專案和讀取巨集的所有內容。透過 Aspose.Words，您可以使用一個強大的工具來自動執行任務、自訂文件並深入研究 VBA 的世界。
 
 如果您渴望了解更多信息，[API文件](https://reference.aspose.com/words/net/)是一個很好的起點。如果您遇到問題或需要協助，[支援論壇](https://forum.aspose.com/c/words/8)就在你身邊。
 

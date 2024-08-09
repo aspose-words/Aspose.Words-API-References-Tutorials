@@ -87,7 +87,7 @@ Configurar la dirección del texto en documentos de Word es un proceso sencillo 
 
 ## Preguntas frecuentes
 
-###  Cuál es el`DocumentDirection` property used for?
+###  cual es el`DocumentDirection` property used for?
 
  El`DocumentDirection` propiedad en`TxtLoadOptions` Determina la dirección del texto del documento. Se puede configurar en`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , o`DocumentDirection.RightToLeft`.
 
@@ -101,8 +101,8 @@ Configurar la dirección del texto en documentos de Word es un proceso sencillo 
 
 ### ¿Cómo puedo manejar documentos con direcciones de texto mixtas?
 
- Para documentos con direcciones de texto mixtas, es posible que deba manejar el formato por párrafo. Utilizar el`ParagraphFormat.Bidi` propiedad para ajustar la dirección de cada párrafo según sea necesario.
+ Para documentos con direcciones de texto mixtas, es posible que deba manejar el formato por párrafo. Utilice el`ParagraphFormat.Bidi` propiedad para ajustar la dirección de cada párrafo según sea necesario.
 
 ### ¿Dónde puedo encontrar más información sobre Aspose.Words para .NET?
 
- Para más detalles, consulte el[Aspose.Words para la documentación de .NET](https://reference.aspose.com/words/net/) . También puede explorar recursos adicionales como[Enlace de descarga](https://releases.aspose.com/words/net/), [Comprar](https://purchase.aspose.com/buy), [Prueba gratis](https://releases.aspose.com/), [licencia temporal](https://purchase.aspose.com/temporary-license/) , y[Apoyo](https://forum.aspose.com/c/words/8).
+ Para más detalles, consulte el[Aspose.Words para la documentación de .NET](https://reference.aspose.com/words/net/) . También puede explorar recursos adicionales como[Enlace de descarga](https://releases.aspose.com/words/net/), [Comprar](https://purchase.aspose.com/buy), [Prueba gratuita](https://releases.aspose.com/), [licencia temporal](https://purchase.aspose.com/temporary-license/) , y[Apoyo](https://forum.aspose.com/c/words/8).

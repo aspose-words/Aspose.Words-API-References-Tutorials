@@ -9,7 +9,7 @@ url: /sv/net/document-protection/password-protection/
 ---
 ## Introduktion
 
-Hallå där! Har du någonsin undrat hur du kan skydda dina Word-dokument från oönskade redigeringar och snokande ögon? Nåväl, du har tur eftersom vi idag dyker in i världen av lösenordsskydd med Aspose.Words för .NET. Det är som att sätta ett lås på din dagbok – bara coolare och mer tekniskt kunnig. Låt oss ge oss ut på den här resan tillsammans och lära oss hur vi håller våra dokument säkra och sunda!
+Hej där! Har du någonsin undrat hur du kan skydda dina Word-dokument från oönskade redigeringar och snokande ögon? Nåväl, du har tur eftersom vi idag dyker in i världen av lösenordsskydd med Aspose.Words för .NET. Det är som att sätta ett lås på din dagbok – bara coolare och mer tekniskt kunnig. Låt oss ge oss ut på den här resan tillsammans och lära oss hur vi håller våra dokument säkra och sunda!
 
 ## Förutsättningar
 

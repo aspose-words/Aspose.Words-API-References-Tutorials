@@ -124,7 +124,7 @@ doc.Save(dataDir + "ExportedDocument.html", saveOptions);
 
 ### क्या मैं निर्यातित HTML को अनुकूलित कर सकता हूँ?
 
- बिलकुल! Aspose.Words HTML आउटपुट को कस्टमाइज़ करने के लिए विभिन्न विकल्प प्रदान करता है।[प्रलेखन](https://reference.aspose.com/words/net/) अधिक जानकारी के लिए।
+ बिलकुल! Aspose.Words HTML आउटपुट को कस्टमाइज़ करने के लिए विभिन्न विकल्प प्रदान करता है।[प्रलेखन](https://reference.aspose.com/words/net/) अधिक जानकारी के लिए.
 
 ### क्या Aspose.Words .NET कोर के साथ संगत है?
 

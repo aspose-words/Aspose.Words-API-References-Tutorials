@@ -29,7 +29,7 @@ En esta serie de tutoriales, profundizará en las complejidades de la división 
 - Encabezados y pies de página: explore la personalización de encabezados y pies de página para la marca y la navegación.
 - Tabla de contenido: comprenda cómo crear y formatear una tabla de contenido para la navegación de documentos.
 
-A lo largo de estos tutoriales, obtendrá información práctica, acceso a ejemplos de código fuente y orientación paso a paso. Al final de esta serie, estará equipado con las habilidades para dividir y formatear documentos de manera eficiente, optimizando sus procesos de gestión de documentos.
+A lo largo de estos tutoriales, obtendrá información práctica, acceso a ejemplos de código fuente y orientación paso a paso. Al final de esta serie, estará equipado con las habilidades para dividir y formatear documentos de manera eficiente, agilizando sus procesos de gestión de documentos.
 
 ## Tutoriales sobre división y formato de documentos
 ### [Estrategias eficientes de división y formato de documentos](./split-format-documents/)

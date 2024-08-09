@@ -20,7 +20,7 @@ Bu biçimlendirme macerasına başlamadan önce araç setimizi hazırlayalım. �
 3. .NET Framework: Kurulu olduğundan emin olun.
 4. Temel C# Bilgisi: Endişelenmeyin, sihirbaz olmanıza gerek yok, sadece biraz temel bilgi yeterli olacaktır.
 
-Herşeye sahip? Harika! Hadi devam edelim.
+Herşeyi aldın mı? Harika! Devam edelim.
 
 ## Ad Alanlarını İçe Aktar
 
@@ -86,7 +86,7 @@ Son fakat bir o kadar da önemlisi, güzel biçimlendirilmiş belgemizi kaydedel
 doc.Save(dataDir + "DocumentFormatting.ParagraphFormatting.docx");
 ```
 
-Ve işte! Belgeniz belirtilen biçimlendirmeyle kaydedilir. Kolay değil mi?
+Ve işte! Belgeniz belirtilen biçimlendirmeyle kaydedilir. Kolay, değil mi?
 
 ## Çözüm
 
@@ -103,7 +103,7 @@ Aspose.Words for .NET, geliştiricilerin .NET kullanarak Word belgelerini progra
 ### Aspose.Words for .NET'i ücretsiz deneyebilir miyim?
  Evet, ücretsiz deneme sürümünden yararlanabilirsiniz[Burada](https://releases.aspose.com/).
 
-### Aspose.Words for .NET kullanarak daha karmaşık formatlama uygulamak mümkün mü?
+### Aspose.Words for .NET kullanarak daha karmaşık formatlama uygulamak mümkün müdür?
 Kesinlikle! Aspose.Words for .NET çok çeşitli biçimlendirme seçeneklerini destekleyerek çok karmaşık ve ayrıntılı belge düzenlerine olanak tanır.
 
 ### Daha ayrıntılı belge ve desteği nerede bulabilirim?

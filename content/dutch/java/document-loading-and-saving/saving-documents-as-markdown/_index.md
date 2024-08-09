@@ -144,7 +144,7 @@ Ja, Aspose.Words voor Java ondersteunt de conversie van complexe Word-documenten
 
 ### Hoe kan ik omgaan met afbeeldingen in Markdown-bestanden?
 
- Om afbeeldingen in Markdown-bestanden op te nemen, stelt u het mappad voor afbeeldingen in met behulp van de`setImagesFolder`methode in`MarkdownSaveOptions`. Zorg ervoor dat de afbeeldingsbestanden in de opgegeven map zijn opgeslagen, en Aspose.Words voor Java zal de afbeeldingsreferenties dienovereenkomstig verwerken.
+ Om afbeeldingen in Markdown-bestanden op te nemen, stelt u het pad naar de afbeeldingenmap in met behulp van de`setImagesFolder`methode in`MarkdownSaveOptions`. Zorg ervoor dat de afbeeldingsbestanden in de opgegeven map zijn opgeslagen, en Aspose.Words voor Java zal de afbeeldingsreferenties dienovereenkomstig verwerken.
 
 ### Is er een proefversie van Aspose.Words voor Java beschikbaar?
 

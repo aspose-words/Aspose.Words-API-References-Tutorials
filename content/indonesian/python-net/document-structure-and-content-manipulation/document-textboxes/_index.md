@@ -56,7 +56,7 @@ textbox.paragraphs[0].runs[0].font.color.rgb = aw.Color.blue
 
 ## Memposisikan Kotak Teks
 
- Mengontrol posisi kotak teks sangat penting untuk mencapai tata letak yang diinginkan. Anda dapat mengatur posisinya menggunakan`left`Dan`top` properti. Contohnya:
+ Mengontrol posisi kotak teks sangat penting untuk mencapai tata letak yang diinginkan. Anda dapat mengatur posisinya menggunakan`left`Dan`top` properti. Misalnya:
 
 ```python
 textbox.left = aw.ConvertUtil.inch_to_points(1.5)

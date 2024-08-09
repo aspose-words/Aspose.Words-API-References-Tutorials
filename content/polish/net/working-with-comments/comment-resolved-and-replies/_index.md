@@ -32,7 +32,7 @@ Podzielmy proces na proste, łatwe do wykonania kroki. Każdy krok pomoże Ci zr
 
 ## Krok 1: Załaduj dokument
 
- Aby rozpocząć, załaduj dokument programu Word zawierający komentarze. Użyj`Document` klasa do tego.
+ Aby rozpocząć, załaduj dokument programu Word zawierający komentarze. Skorzystaj z`Document` klasa do tego.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -89,7 +89,7 @@ Ten kod zapisuje zmiany w nowym dokumencie, zapewniając, że oryginalny plik po
 
 ## Wniosek
 
-Obsługa komentarzy w dokumentach programu Word nie musi być czynnością wykonywaną ręcznie. Dzięki Aspose.Words dla .NET możesz zautomatyzować proces, oszczędzając czas i redukując błędy. Postępuj zgodnie z tym przewodnikiem, aby skutecznie rozwiązywać komentarze w dokumentach i odpowiadać na nie.
+Obsługa komentarzy w dokumentach programu Word nie musi być czynnością ręczną. Dzięki Aspose.Words dla .NET możesz zautomatyzować proces, oszczędzając czas i redukując błędy. Postępuj zgodnie z tym przewodnikiem, aby skutecznie rozwiązywać komentarze w dokumentach i odpowiadać na nie.
 
 ## Często zadawane pytania
 

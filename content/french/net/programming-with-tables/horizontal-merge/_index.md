@@ -98,7 +98,7 @@ Cet extrait de code complète le tableau et enregistre le document dans le répe
 
 ## Conclusion
 
-Et voila! Vous venez de maîtriser l'art de la fusion horizontale de cellules dans un document Word à l'aide d'Aspose.Words pour .NET. En suivant ces étapes, vous pouvez facilement créer des structures de tables complexes. Continuez à expérimenter et à explorer les capacités d'Aspose.Words pour rendre vos documents aussi dynamiques et flexibles que vous le souhaitez. Bon codage !
+Et voilà ! Vous venez de maîtriser l'art de la fusion horizontale de cellules dans un document Word à l'aide d'Aspose.Words pour .NET. En suivant ces étapes, vous pouvez facilement créer des structures de tables complexes. Continuez à expérimenter et à explorer les capacités d'Aspose.Words pour rendre vos documents aussi dynamiques et flexibles que vous le souhaitez. Bon codage !
 
 ## FAQ
 

@@ -168,7 +168,7 @@ Ja, Aspose.Words kan detecteren of een document gecodeerd is en u kunt dergelijk
 Aspose.Words kan een breed scala aan formaten detecteren, waaronder DOC, DOCX, RTF, HTML, MHTML, ODT en nog veel meer.
 
 ### Hoe kan ik een tijdelijke licentie krijgen voor Aspose.Words?
- U kunt een tijdelijke licentie verkrijgen bij de[Stel aankoop voor](https://purchase.aspose.com/temporary-license/) bladzijde.
+ U kunt een tijdelijke licentie verkrijgen bij de[Stel aankoop voor](https://purchase.aspose.com/temporary-license/) pagina.
 
 ### Waar kan ik de documentatie voor Aspose.Words vinden?
  De documentatie voor Aspose.Words kunt u vinden[hier](https://reference.aspose.com/words/net/).

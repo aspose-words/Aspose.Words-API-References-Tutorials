@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-pdfsaveoptions/set-outline-options/
 ---
-## introduzione
+## Introduzione
 
 Quando si lavora con documenti, soprattutto per scopi professionali o accademici, organizzare i contenuti in modo efficace è fondamentale. Un modo per migliorare l'usabilità dei tuoi documenti PDF è impostare le opzioni di struttura. Le strutture, o segnalibri, consentono agli utenti di navigare nel documento in modo efficiente, proprio come i capitoli di un libro. In questa guida, approfondiremo come impostare queste opzioni utilizzando Aspose.Words per .NET, assicurando che i tuoi file PDF siano ben organizzati e facili da usare.
 
@@ -15,7 +15,7 @@ Quando si lavora con documenti, soprattutto per scopi professionali o accademici
 
 Prima di iniziare, ci sono alcune cose di cui dovrai assicurarti di avere:
 
-1.  Aspose.Words per .NET: assicurati di avere Aspose.Words per .NET installato. In caso contrario, puoi[Scarica l'ultima versione qui](https://releases.aspose.com/words/net/).
+1.  Aspose.Words per .NET: assicurati di avere Aspose.Words per .NET installato. In caso contrario, puoi[scarica l'ultima versione qui](https://releases.aspose.com/words/net/).
 2. Un ambiente di sviluppo .NET: avrai bisogno di un ambiente di sviluppo .NET funzionante, come Visual Studio.
 3. Comprensione di base di C#: la familiarità con il linguaggio di programmazione C# ti aiuterà a seguire facilmente.
 4. Un documento Word: tieni pronto un documento Word da convertire in PDF.

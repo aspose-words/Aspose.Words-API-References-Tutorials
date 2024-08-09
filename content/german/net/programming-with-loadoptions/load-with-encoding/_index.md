@@ -15,7 +15,7 @@ Hallo! Sie arbeiten also mit Word-Dokumenten und müssen eines mit einer bestimm
 
 Bevor wir ins Detail gehen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
 
-1.  Aspose.Words für .NET: Sie können[herunterladen](https://releases.aspose.com/words/net/) Die neueste version.
+1.  Aspose.Words für .NET: Sie können[herunterladen](https://releases.aspose.com/words/net/) die neueste Version.
 2. .NET-Entwicklungsumgebung: Visual Studio funktioniert perfekt.
 3. Ein Word-Dokument: Stellen Sie sicher, dass es im von Ihnen verwendeten Format, beispielsweise UTF-7, codiert ist.
 
@@ -84,7 +84,7 @@ UTF-7 (7-Bit Unicode Transformation Format) ist eine Kodierung, die zur Darstell
  Aspose.Words bietet eine kostenlose Testversion an, die Sie herunterladen können[Hier](https://releases.aspose.com/) Für den vollen Funktionsumfang müssen Sie eine Lizenz erwerben von[Aspose](https://purchase.aspose.com/buy).
 
 ### Kann ich Dokumente aus einem Stream statt aus einem Dateipfad laden?
- Absolut! Aspose.Words unterstützt das Laden von Dokumenten aus Streams. Sie müssen nur den Stream und die Ladeoptionen an den`Document` Konstrukteur.
+ Absolut! Aspose.Words unterstützt das Laden von Dokumenten aus Streams. Sie müssen nur den Stream und die Ladeoptionen an den`Document` Konstruktor.
 
 ### Wo erhalte ich Unterstützung, wenn Probleme auftreten?
  Besuchen Sie die[Aspose.Words Support Forum](https://forum.aspose.com/c/words/8) um Hilfe von der Community und dem Aspose-Supportteam.

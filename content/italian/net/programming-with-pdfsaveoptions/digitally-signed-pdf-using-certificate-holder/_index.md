@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-pdfsaveoptions/digitally-signed-pdf-using-certificate-holder/
 ---
-## introduzione
+## Introduzione
 
 Ti sei mai chiesto come proteggere i tuoi documenti PDF con una firma digitale? Bene, sei nel posto giusto! Le firme digitali sono l'equivalente moderno delle firme autografe e offrono un modo per verificare l'autenticità e l'integrità dei documenti digitali. In questo tutorial ti mostreremo come aggiungere una firma digitale a un PDF utilizzando Aspose.Words per .NET. Copriremo tutto, dalla configurazione del tuo ambiente all'esecuzione del codice passo dopo passo. Al termine di questa guida, avrai un PDF firmato digitalmente sicuro e affidabile.
 

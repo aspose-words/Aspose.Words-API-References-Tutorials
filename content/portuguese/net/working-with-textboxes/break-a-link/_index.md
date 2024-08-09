@@ -128,4 +128,4 @@ A quebra de links pode afetar potencialmente o layout, especialmente se as caixa
 
 ### Onde posso encontrar mais recursos sobre como trabalhar com Aspose.Words?
 
- Para mais informações e recursos, você pode visitar o[Documentação Aspose.Words](https://reference.aspose.com/words/net/)e[Fórum de suporte](https://forum.aspose.com/c/words/8).
+ Para mais informações e recursos, você pode visitar o[Documentação Aspose.Words](https://reference.aspose.com/words/net/)e[fórum de suporte](https://forum.aspose.com/c/words/8).

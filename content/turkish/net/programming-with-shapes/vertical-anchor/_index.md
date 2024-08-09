@@ -9,7 +9,7 @@ url: /tr/net/programming-with-shapes/vertical-anchor/
 ---
 ## giriiş
 
-Hiç bir Word belgesindeki metin kutusunun içinde metnin tam olarak nerede görüneceğini kontrol etmeye ihtiyaç duyduğunuzu fark ettiniz mi? Belki metninizin metin kutusunun üstüne, ortasına veya altına sabitlenmesini istiyorsunuz? Eğer öyleyse, doğru yerdesiniz! Bu eğitimde, Word belgelerindeki metin kutularının dikey bağlantısını ayarlamak için Aspose.Words for .NET'in nasıl kullanılacağını keşfedeceğiz. Dikey sabitlemeyi, metninizi kabının içinde tam olarak istediğiniz yere konumlandıran sihirli bir değnek olarak düşünün. Dalmaya hazır mısınız? Başlayalım!
+Hiç bir Word belgesindeki metin kutusunun içinde metnin tam olarak nerede görüneceğini kontrol etmeye ihtiyaç duyduğunuzu fark ettiniz mi? Belki metninizin metin kutusunun üstüne, ortasına veya altına sabitlenmesini istiyorsunuz? Eğer öyleyse, doğru yerdesiniz! Bu eğitimde, Word belgelerindeki metin kutularının dikey bağlantısını ayarlamak için Aspose.Words for .NET'in nasıl kullanılacağını keşfedeceğiz. Dikey sabitlemeyi, metninizi kabının içinde tam olarak istediğiniz yere konumlandıran sihirli bir değnek olarak düşünün. Dalmaya hazır mısınız? Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -85,7 +85,7 @@ doc.Save(dataDir + "WorkingWithShapes.VerticalAnchor.docx");
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesindeki metin kutusu içindeki metnin dikey hizalamasını nasıl kontrol edeceğinizi öğrendiniz. Metni ister üste, ortaya ister aşağıya tutturuyor olun, bu özellik size belgenizin düzeni üzerinde hassas kontrol sağlar. Yani bir dahaki sefere belgenizin metin yerleşiminde değişiklik yapmanız gerektiğinde ne yapmanız gerektiğini bileceksiniz!
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesindeki metin kutusu içindeki metnin dikey hizalamasını nasıl kontrol edeceğinizi öğrendiniz. Metni ister üste, ortaya ister aşağıya tutturuyor olun, bu özellik size belgenizin düzeni üzerinde hassas kontrol sağlar. Yani bir dahaki sefere belgenizin metin yerleşiminde değişiklik yapmanız gerektiğinde ne yapmanız gerektiğini bileceksiniz!
 
 ## SSS'ler
 
@@ -102,4 +102,4 @@ Evet, dikey sabitlemeyi diğer şekillerle kullanabilirsiniz ancak metin kutular
  Kesinlikle! Sadece kullan`TextBoxAnchor.Center` Metni metin kutusu içinde dikey olarak ortalamak için.
 
 ### Aspose.Words for .NET hakkında daha fazla bilgiyi nerede bulabilirim?
- Kontrol et[Aspose.Words Belgeleri](https://reference.aspose.com/words/net/) daha fazla ayrıntı ve kılavuz için.
+ Şuna göz atın:[Aspose.Words Belgeleri](https://reference.aspose.com/words/net/) daha fazla ayrıntı ve kılavuz için.

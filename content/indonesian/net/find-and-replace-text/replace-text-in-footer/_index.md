@@ -99,7 +99,7 @@ Selamat! Anda telah berhasil mengganti teks di footer dokumen Word menggunakan A
 Anda dapat mengganti teks tertentu di dalam footer. Jika Anda perlu mengganti beberapa baris, pastikan string pencarian Anda cocok dengan teks yang ingin Anda ganti.
 
 ### Apakah mungkin untuk membuat penggantian peka huruf besar-kecil?
- Sangat! Mengatur`MatchCase` ke`true` dalam`FindReplaceOptions` untuk membuat penggantian peka huruf besar-kecil.
+ Sangat! Mengatur`MatchCase` ke`true` di`FindReplaceOptions` untuk membuat penggantian peka huruf besar-kecil.
 
 ### Bisakah saya menggunakan ekspresi reguler untuk penggantian teks?
 Ya, Aspose.Words mendukung penggunaan ekspresi reguler untuk operasi pencarian dan penggantian. Anda dapat menentukan pola regex di`Range.Replace` metode.

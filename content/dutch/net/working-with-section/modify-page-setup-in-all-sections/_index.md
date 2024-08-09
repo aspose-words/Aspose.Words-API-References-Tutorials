@@ -9,7 +9,7 @@ url: /nl/net/working-with-section/modify-page-setup-in-all-sections/
 ---
 ## Invoering
 
-Hallo daar! Als u ooit pagina-instellingen in meerdere secties in een Word-document hebt moeten wijzigen, bent u hier op de juiste plek. In deze zelfstudie begeleid ik u door het proces met Aspose.Words voor .NET. Met deze krachtige bibliotheek kunt u vrijwel elk aspect van Word-documenten programmatisch beheren, waardoor het een favoriete tool voor ontwikkelaars is. Dus pak een kop koffie en laten we aan de slag gaan met deze stapsgewijze reis naar het beheersen van de wijzigingen in de pagina-instellingen!
+Hé daar! Als u ooit pagina-instellingen in meerdere secties in een Word-document hebt moeten wijzigen, bent u hier op de juiste plek. In deze zelfstudie begeleid ik u door het proces met Aspose.Words voor .NET. Met deze krachtige bibliotheek kunt u vrijwel elk aspect van Word-documenten programmatisch beheren, waardoor het een favoriete tool voor ontwikkelaars is. Dus pak een kop koffie en laten we aan de slag gaan met deze stapsgewijze reis naar het beheersen van de wijzigingen in de pagina-instellingen!
 
 ## Vereisten
 
@@ -62,7 +62,7 @@ builder.Writeln("Section 4");
 
 In deze stap voegen we vier secties toe aan ons document. Elke sectie wordt aan het document toegevoegd en bevat een regel tekst.
 
-## Stap 3: Pagina-instellingen begrijpen
+## Stap 3: Pagina-instelling begrijpen
 
 Voordat we de pagina-instelling wijzigen, is het essentieel om te begrijpen dat elke sectie in een Word-document zijn eigen unieke pagina-instelling kan hebben. Deze flexibiliteit maakt diverse opmaak binnen één document mogelijk.
 
@@ -103,7 +103,7 @@ Aspose.Words voor .NET is een uitgebreide bibliotheek voor het programmatisch we
 
 ### 3. Hoe wijzig ik andere eigenschappen van de pagina-instelling?
 
- Met Aspose.Words kunt u verschillende eigenschappen voor de pagina-instelling wijzigen, zoals richting, marges en papierformaat. Verwijs naar de[API-documentatie](https://reference.aspose.com/words/net/) voor gedetailleerde instructies.
+ Met Aspose.Words kunt u verschillende eigenschappen voor de pagina-instelling wijzigen, zoals richting, marges en papierformaat. Raadpleeg de[API-documentatie](https://reference.aspose.com/words/net/) voor gedetailleerde instructies.
 
 ### 4. Hoe krijg ik ondersteuning voor Aspose.Words voor .NET?
 

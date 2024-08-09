@@ -10,7 +10,7 @@ url: /it/python-net/document-splitting-and-formatting/divide-documents-content-b
 
 Aspose.Words per Python fornisce una solida API per lavorare con documenti Word, consentendoti di eseguire varie attività in modo efficiente. Una caratteristica essenziale è la divisione dei documenti con Content Builder, che aiuta a ottenere precisione e organizzazione nei tuoi documenti. In questo tutorial esploreremo come utilizzare Aspose.Words per Python per dividere i documenti utilizzando il modulo Content Builder.
 
-## introduzione
+## Introduzione
 
 Quando si ha a che fare con documenti di grandi dimensioni, è fondamentale mantenere una struttura e un'organizzazione chiare. Dividere un documento in sezioni può migliorarne la leggibilità e facilitare modifiche mirate. Aspose.Words for Python ti consente di raggiungere questo obiettivo con il suo potente modulo Content Builder.
 
@@ -101,4 +101,4 @@ Sì, puoi applicare formattazione, stili e caratteri diversi a ciascuna sezione 
 Assolutamente! Aspose.Words for Python è ampiamente utilizzato per generare vari tipi di report e documenti con una formattazione precisa.
 
 ### Dove posso accedere alla documentazione e ai download?
- Visitare il[Aspose.Words per la documentazione di Python](https://reference.aspose.com/words/python-net/) e scarica la libreria da[Aspose.Words Rilasci Python](https://releases.aspose.com/words/python/).
+ Visita il[Aspose.Words per la documentazione di Python](https://reference.aspose.com/words/python-net/) e scarica la libreria da[Aspose.Words Rilasci Python](https://releases.aspose.com/words/python/).

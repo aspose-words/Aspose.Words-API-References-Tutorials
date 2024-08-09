@@ -94,7 +94,7 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.doc
 
 ## よくある質問
 
-### とは`DetectNumberingWithWhitespaces` in Aspose.Words for .NET?
+### 何ですか`DetectNumberingWithWhitespaces` in Aspose.Words for .NET?
 `DetectNumberingWithWhitespaces`オプションです`TxtLoadOptions`これにより、番号とリスト項目のテキストの間に空白がある場合でも、Aspose.Words はリストを認識できるようになります。
 
 ### この機能を箇条書きや括弧などの他の区切り文字にも使用できますか?

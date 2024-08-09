@@ -87,12 +87,12 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportResources.html", saveOption
 
 ## 結論
 
-現在你就擁有了！您已成功匯出資源，同時使用 Aspose.Words for .NET 將 Word 文件儲存為 HTML。有了這個強大的庫，以程式設計方式處理 Word 文件變得輕而易舉。無論您是在開發網頁應用程式還是只需要轉換文件以供離線使用，Aspose.Words 都能滿足您的需求。
+現在你就得到它了！您已成功匯出資源，同時使用 Aspose.Words for .NET 將 Word 文件儲存為 HTML。有了這個強大的庫，以程式設計方式處理 Word 文件變得輕而易舉。無論您是在開發網頁應用程式還是只需要轉換文件以供離線使用，Aspose.Words 都能滿足您的需求。
 
 ## 常見問題解答
 
 ### 我可以導出圖像以及字體和 CSS 嗎？
-是的你可以！ Aspose.Words for .NET 也支援匯出影像。只需確保配置`HtmlSaveOptions`因此。
+是的，你可以！ Aspose.Words for .NET 也支援匯出影像。只需確保配置`HtmlSaveOptions`因此。
 
 ### 有沒有辦法嵌入 CSS 而不是使用外部樣式表？
 絕對地。您可以設定`CssStyleSheetType`到`CssStyleSheetType.Embedded`如果您喜歡嵌入式樣式。

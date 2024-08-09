@@ -116,7 +116,7 @@ doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesinde başarıyla iç içe geçmiş bir tablo oluşturdunuz. Bu güçlü kitaplık, Word belgelerini programlı olarak yönetmeyi inanılmaz derecede kolaylaştırır. İster karmaşık raporlar ister basit tablolar oluşturuyor olun, Aspose.Words for .NET ihtiyacınızı karşılar.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesinde başarıyla iç içe geçmiş bir tablo oluşturdunuz. Bu güçlü kitaplık, Word belgelerini programlı olarak yönetmeyi inanılmaz derecede kolaylaştırır. İster karmaşık raporlar ister basit tablolar oluşturuyor olun, Aspose.Words for .NET ihtiyacınızı karşılar.
 
 ## SSS'ler
 
@@ -126,7 +126,7 @@ Yuvalanmış tablo, tablo içindeki tablodur. Belgelerde formlar veya ayrıntıl
 
 ### Aspose.Words for .NET'i neden kullanmalısınız?
 
-Aspose.Words for .NET, Word belgelerini programlı olarak oluşturmak, değiştirmek ve dönüştürmek için güçlü bir dizi özellik sunar; bu da onu geliştiriciler için ideal bir seçim haline getirir.
+Aspose.Words for .NET, Word belgelerini programlı olarak oluşturmak, değiştirmek ve dönüştürmek için güçlü bir dizi özellik sunar ve bu da onu geliştiriciler için ideal bir seçim haline getirir.
 
 ### Daha fazla iç içe geçmiş tablo düzeyi ekleyebilir miyim?
 

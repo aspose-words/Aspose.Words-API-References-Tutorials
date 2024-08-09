@@ -9,7 +9,7 @@ url: /tr/net/programming-with-shapes/get-actual-shape-bounds-points/
 ---
 ## giriiş
 
-Hiç Word belgelerinizdeki şekilleri değiştirmeyi denediniz mi ve bunların kesin boyutlarını merak ettiniz mi? Şekillerin tam sınırlarını bilmek, çeşitli belge düzenleme ve biçimlendirme görevleri için çok önemli olabilir. İster ayrıntılı bir rapor, ister gösterişli bir haber bülteni veya karmaşık bir el ilanı oluşturuyor olun, şekil boyutlarını anlamak, tasarımınızın tam olarak doğru görünmesini sağlar. Bu kılavuzda, Aspose.Words for .NET kullanarak noktalardaki şekillerin gerçek sınırlarının nasıl elde edileceğini ele alacağız. Şekillerinizi mükemmel bir resim haline getirmeye hazır mısınız? Başlayalım!
+Hiç Word belgelerinizdeki şekilleri değiştirmeyi denediniz mi ve bunların kesin boyutlarını merak ettiniz mi? Şekillerin tam sınırlarını bilmek, çeşitli belge düzenleme ve biçimlendirme görevleri için çok önemli olabilir. İster ayrıntılı bir rapor, ister gösterişli bir haber bülteni veya karmaşık bir el ilanı oluşturuyor olun, şekil boyutlarını anlamak, tasarımınızın tam olarak doğru görünmesini sağlar. Bu kılavuzda, Aspose.Words for .NET kullanarak noktalardaki şekillerin gerçek sınırlarının nasıl elde edileceğini ele alacağız. Şekillerinizi mükemmel bir resim haline getirmeye hazır mısınız? Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -73,7 +73,7 @@ Console.WriteLine(shape.GetShapeRenderer().BoundsInPoints);
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir şeklin nokta cinsinden gerçek sınırlarını başarıyla aldınız. Bu bilgi, şekilleri hassas bir şekilde değiştirmenize ve konumlandırmanıza olanak tanıyarak belgelerinizin tam olarak hayal ettiğiniz gibi görünmesini sağlar. İster karmaşık düzenler tasarlıyor olun ister yalnızca bir öğede ince ayar yapmanız gerekiyor olsun, şekil sınırlarını anlamak oyunun kurallarını değiştirir.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir şeklin nokta cinsinden gerçek sınırlarını başarıyla aldınız. Bu bilgi, şekilleri hassas bir şekilde değiştirmenize ve konumlandırmanıza olanak tanıyarak belgelerinizin tam olarak hayal ettiğiniz gibi görünmesini sağlar. İster karmaşık düzenler tasarlıyor olun ister yalnızca bir öğede ince ayar yapmanız gerekiyor olsun, şekil sınırlarını anlamak oyunun kurallarını değiştirir.
 
 ## SSS'ler
 

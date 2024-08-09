@@ -15,7 +15,7 @@ Hai! Jadi, Anda telah bekerja dengan dokumen Word dan memerlukan cara untuk melo
 
 Sebelum kita mendalami kodenya terlebih dahulu, pastikan Anda memiliki semua yang Anda perlukan:
 
-1.  Aspose.Words for .NET: Ini adalah alat ajaib yang akan kita gunakan. Kamu bisa[Unduh di sini](https://releases.aspose.com/words/net/) atau ambil a[uji coba gratis](https://releases.aspose.com/).
+1.  Aspose.Words for .NET: Ini adalah alat ajaib yang akan kita gunakan. Anda bisa[unduh di sini](https://releases.aspose.com/words/net/) atau ambil a[uji coba gratis](https://releases.aspose.com/).
 2. Lingkungan Pengembangan .NET: Visual Studio adalah pilihan yang tepat.
 3. Pengetahuan Dasar C#: Jangan khawatir, Anda tidak perlu menjadi seorang penyihir, tetapi sedikit keakraban akan sangat bermanfaat.
 

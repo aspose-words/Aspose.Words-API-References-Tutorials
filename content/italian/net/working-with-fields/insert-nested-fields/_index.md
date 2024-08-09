@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/working-with-fields/insert-nested-fields/
 ---
-## introduzione
+## Introduzione
 
 Ti sei mai trovato a dover inserire campi nidificati nei tuoi documenti Word a livello di codice? Forse vuoi visualizzare condizionatamente testi diversi in base al numero di pagina? Bene, sei fortunato! Questo tutorial ti guiderà attraverso il processo di inserimento di campi nidificati utilizzando Aspose.Words per .NET. Immergiamoci!
 
@@ -98,7 +98,7 @@ doc.Save(dataDir + "InsertNestedFields.docx");
 
 ## Conclusione
 
-il gioco è fatto! Hai inserito con successo campi nidificati in un documento di Word utilizzando Aspose.Words per .NET. Questa potente libreria semplifica incredibilmente la manipolazione dei documenti Word a livello di codice. Che tu stia generando report, creando modelli o automatizzando i flussi di lavoro dei documenti, Aspose.Words ti copre.
+Ed ecco qua! Hai inserito con successo campi nidificati in un documento di Word utilizzando Aspose.Words per .NET. Questa potente libreria semplifica incredibilmente la manipolazione dei documenti Word a livello di codice. Che tu stia generando report, creando modelli o automatizzando i flussi di lavoro dei documenti, Aspose.Words ti copre.
 
 ## Domande frequenti
 

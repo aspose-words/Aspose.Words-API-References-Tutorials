@@ -127,7 +127,7 @@ Ja, Aspose.Words ondersteunt PDF/A-compatibiliteit, waardoor u documenten kunt o
 Hogere JPEG-kwaliteitsinstellingen resulteren in een betere beeldkwaliteit maar grotere bestandsgroottes, terwijl lagere kwaliteitsinstellingen de bestandsgrootte verkleinen maar de beeldhelderheid kunnen beïnvloeden.
 
 ### Waar kan ik meer informatie vinden over Aspose.Words voor .NET?
- U kunt meer over Aspose.Words voor .NET ontdekken op hun[Documentatie](https://reference.aspose.com/words/net/), [Steun](https://forum.aspose.com/c/words/8) , En[Downloaden](https://releases.aspose.com/words/net/) Pagina's.
+ U kunt meer over Aspose.Words voor .NET ontdekken op hun[Documentatie](https://reference.aspose.com/words/net/), [Steun](https://forum.aspose.com/c/words/8) , En[Downloaden](https://releases.aspose.com/words/net/) pagina's.
 
 ### Voorbeeldbroncode voor het comprimeren van afbeeldingen met Aspose.Words voor .NET
 

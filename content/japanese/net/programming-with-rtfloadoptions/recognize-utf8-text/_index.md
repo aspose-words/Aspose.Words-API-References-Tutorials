@@ -49,7 +49,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 RtfLoadOptions loadOptions = new RtfLoadOptions { RecognizeUtf8Text = true };
 ```
 
-設定することにより`RecognizeUtf8Text`に`true`では、Aspose.Words に UTF-8 テキストを監視するように指示しています。これは、さまざまな文字を含むドキュメントを処理するときに非常に便利です。
+設定により`RecognizeUtf8Text`に`true`では、Aspose.Words に UTF-8 テキストを監視するように指示しています。これは、さまざまな文字を含むドキュメントを処理するときに非常に便利です。
 
 ## ステップ3: ドキュメントを読み込む
 

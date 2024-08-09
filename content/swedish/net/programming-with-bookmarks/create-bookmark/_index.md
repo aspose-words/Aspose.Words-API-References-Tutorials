@@ -2,7 +2,7 @@
 title: Skapa bokmärke i Word-dokument
 linktitle: Skapa bokmärke i Word-dokument
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du skapar bokmärken i Word-dokument med Aspose.Words för .NET med denna detaljerade steg-för-steg-guide. Perfekt för dokumentnavigering och organisation.
+description: Lär dig hur du skapar bokmärken i Word-dokument med Aspose.Words för .NET med denna detaljerade, steg-för-steg-guide. Perfekt för dokumentnavigering och organisation.
 type: docs
 weight: 10
 url: /sv/net/programming-with-bookmarks/create-bookmark/

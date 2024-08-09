@@ -97,7 +97,7 @@ doc.Save(dataDir + "AutoTableContentAlignment.md", saveOptions);
 
 ## Conclusión
 
-¡Y ahí lo tienes! Exportar documentos de Word a Markdown con tablas alineadas usando Aspose.Words para .NET es muy sencillo una vez que sabes cómo hacerlo. Esta potente biblioteca facilita el control del formato y la alineación de sus tablas, garantizando que sus documentos Markdown tengan el aspecto que usted desea. ¡Feliz codificación!
+¡Y ahí lo tienes! Exportar documentos de Word a Markdown con tablas alineadas usando Aspose.Words para .NET es muy sencillo una vez que sabes cómo hacerlo. Esta poderosa biblioteca facilita el control del formato y la alineación de sus tablas, asegurando que sus documentos Markdown tengan el aspecto que usted desea. ¡Feliz codificación!
 
 ## Preguntas frecuentes
 
@@ -108,7 +108,7 @@ Aspose.Words para .NET es una poderosa biblioteca que permite a los desarrollado
  Sí, usando el`Auto` opción de alineación, puede tener diferentes alineaciones según el primer párrafo de cada columna.
 
 ### ¿Necesito una licencia para usar Aspose.Words para .NET?
- Sí, Aspose.Words para .NET requiere una licencia para su funcionalidad completa. Puedes conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/) Para evaluar.
+ Sí, Aspose.Words para .NET requiere una licencia para su funcionalidad completa. Puedes conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/) para evaluación.
 
 ### ¿Es posible exportar otros elementos del documento a Markdown usando Aspose.Words?
 Sí, Aspose.Words admite la exportación de varios elementos como encabezados, listas e imágenes al formato Markdown.

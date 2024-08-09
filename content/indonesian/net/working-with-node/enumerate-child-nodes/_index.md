@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /id/net/working-with-node/enumerate-child-nodes/
 ---
+## Perkenalan
 
 Bekerja dengan dokumen secara terprogram dapat menjadi mudah dengan alat yang tepat. Aspose.Words for .NET adalah salah satu perpustakaan canggih yang memungkinkan pengembang memanipulasi dokumen Word dengan mudah. Hari ini, kita akan memandu proses penghitungan simpul anak dalam dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah ini akan mencakup semuanya mulai dari prasyarat hingga contoh praktis, memastikan Anda memiliki pemahaman yang kuat tentang prosesnya.
 
@@ -88,17 +89,17 @@ Menghitung node anak dalam dokumen Word menggunakan Aspose.Words untuk .NET sang
 
 ## FAQ
 
-### 1. Jenis node apa yang terdapat dalam sebuah paragraf?
+### Jenis simpul apa yang terdapat dalam sebuah paragraf?
 Paragraf dapat berisi node seperti run, bentuk, komentar, dan elemen sebaris lainnya.
 
-### 2. Bagaimana cara memuat dokumen Word yang sudah ada?
+### Bagaimana cara memuat dokumen Word yang sudah ada?
  Anda dapat memuat dokumen yang ada menggunakan`Document doc = new Document("path/to/your/document.docx");`.
 
-### 3. Bisakah saya memanipulasi tipe node lain selain Run?
+### Bisakah saya memanipulasi tipe node lain selain Run?
  Ya, Anda dapat memanipulasi berbagai tipe node seperti bentuk, komentar, dan lainnya dengan mencentangnya`NodeType`.
 
-### 4. Apakah saya memerlukan lisensi untuk menggunakan Aspose.Words untuk .NET?
-Anda dapat memulai dengan uji coba gratis atau mendapatkan lisensi sementara dari[Di Sini](https://purchase.aspose.com/temporary-license/).
+### Apakah saya memerlukan lisensi untuk menggunakan Aspose.Words untuk .NET?
+ Anda dapat memulai dengan uji coba gratis atau mendapatkan lisensi sementara dari[Di Sini](https://purchase.aspose.com/temporary-license/).
 
-### 5. Di mana saya dapat menemukan contoh dan dokumentasi lainnya?
- Mengunjungi[Aspose.Words untuk dokumentasi .NET API](https://reference.aspose.com/words/net/) untuk lebih banyak contoh dan dokumentasi terperinci.
+### Di mana saya dapat menemukan lebih banyak contoh dan dokumentasi?
+ Kunjungi[Aspose.Words untuk dokumentasi .NET API](https://reference.aspose.com/words/net/)untuk lebih banyak contoh dan dokumentasi terperinci.

@@ -1,58 +1,73 @@
 ---
-title: Linia pozioma
-linktitle: Linia pozioma
+title: Reguła pozioma
+linktitle: Reguła pozioma
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak wstawić linię poziomą za pomocą Aspose.Words dla .NET Przewodnik krok po kroku.
+description: Dowiedz się, jak dodawać linie poziome w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z tym szczegółowym przewodnikiem krok po kroku, aby ulepszyć układ dokumentu.
 type: docs
 weight: 10
 url: /pl/net/working-with-markdown/horizontal-rule/
 ---
+## Wstęp
 
-W tym przykładzie pokażemy, jak używać funkcji linii poziomej w Aspose.Words dla .NET. Linia pozioma służy do wizualnego oddzielania sekcji dokumentu.
+Czy kiedykolwiek chciałeś dodać odrobinę profesjonalizmu do swoich dokumentów Word? Linie poziome, zwane także liniami poziomymi, to świetny sposób na podzielenie sekcji i sprawienie, by zawartość wyglądała na przejrzystą i uporządkowaną. W tym samouczku przyjrzymy się, jak łatwo wstawiać poziome linie do dokumentów programu Word za pomocą Aspose.Words dla .NET. Chcesz, aby Twoje dokumenty wyróżniały się? Zacznijmy!
 
-## Krok 1: Korzystanie z generatora dokumentów
+## Warunki wstępne
 
-Najpierw użyjemy generatora dokumentów, aby dodać treść do naszego dokumentu.
+Zanim przejdziemy do przewodnika krok po kroku, upewnijmy się, że masz wszystko, czego potrzebujesz.
+
+-  Aspose.Words dla .NET: Upewnij się, że masz zainstalowany Aspose.Words dla .NET. Jeśli jeszcze tego nie zrobiłeś, możesz pobrać go ze strony[Strona Aspose](https://releases.aspose.com/words/net/).
+- Środowisko programistyczne: Będziesz potrzebować środowiska programistycznego .NET skonfigurowanego na swoim komputerze. Visual Studio to świetny wybór.
+- Podstawowa znajomość języka C#: W tym samouczku założono, że masz podstawową wiedzę na temat języków C# i .NET.
+
+## Importuj przestrzenie nazw
+
+Aby rozpocząć, upewnij się, że do projektu C# zaimportowano niezbędne przestrzenie nazw:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+Podzielmy teraz proces dodawania reguły poziomej na proste, łatwe do wykonania kroki.
+
+## Krok 1: Zainicjuj dokument
+
+Po pierwsze, musisz zainicjować nowy dokument i narzędzie do tworzenia dokumentów. Kreator dokumentów jest tutaj kluczowym graczem, ponieważ umożliwia dodawanie treści do dokumentu.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Krok 2: Wstawianie linii poziomej
+Spowoduje to utworzenie nowego dokumentu, w którym będziemy dodawać naszą regułę poziomą.
 
- Linię poziomą możemy wstawić za pomocą`InsertHorizontalRule` metoda generatora dokumentów.
+## Krok 2: Wstaw linię poziomą
 
-```csharp
-builder. InsertHorizontalRule();
-```
-
-## Przykładowy kod źródłowy reguły poziomej z Aspose.Words dla .NET
+Teraz czas na najprzyjemniejszą część – wstawienie linijki poziomej. Dzięki narzędziu do tworzenia dokumentów jest to dziecinnie proste.
 
 ```csharp
-// Użyj narzędzia do tworzenia dokumentów, aby dodać treść do dokumentu.
-DocumentBuilder builder = new DocumentBuilder();
-
-// Wstaw linijkę poziomą.
+// Wstaw linię poziomą
 builder.InsertHorizontalRule();
 ```
 
-Gratulacje! Nauczyłeś się teraz, jak korzystać z funkcji linii poziomej w Aspose.Words dla .NET.
+I tyle! Właśnie dodałeś poziomą linię do swojego dokumentu.
 
+## Wniosek
 
-### Często zadawane pytania
+Dodawanie poziomej linii do dokumentów programu Word za pomocą Aspose.Words dla .NET jest niezwykle proste. Za pomocą zaledwie kilku linii kodu możesz poprawić wygląd swoich dokumentów, czyniąc je bardziej profesjonalnymi i łatwiejszymi do odczytania. Więc następnym razem, gdy będziesz chciał dodać trochę elegancji swoim dokumentom, pamiętaj o tej prostej, ale skutecznej sztuczce.
 
-#### P: Jak utworzyć poziomą linijkę w Markdown?
+## Często zadawane pytania
 
-Odp.: Aby utworzyć poziomą linijkę w Markdown, możesz użyć jednego z następujących symboli w pustej linii: trzy gwiazdki (\***), trzy kreski (\---) lub trzy podkreślenia (\___).
+### Co to jest reguła horyzontalna?
+Linia pozioma to linia rozciągająca się na szerokość strony lub sekcji, służąca do oddzielania treści w celu zapewnienia lepszej czytelności i organizacji.
 
-#### P: Czy mogę dostosować wygląd poziomej linijki w Markdown?
+### Czy mogę dostosować wygląd linii poziomej?
+Tak, Aspose.Words pozwala dostosować styl, szerokość, wysokość i wyrównanie linii poziomej.
 
-Odp.: W standardowym Markdown nie ma możliwości dostosowania wyglądu poziomych linijek. Jednak niektóre zaawansowane edytory i rozszerzenia Markdown oferują dodatkowe funkcje dostosowywania.
+### Czy potrzebuję specjalnych narzędzi, aby używać Aspose.Words dla .NET?
+Potrzebujesz środowiska programistycznego .NET, takiego jak Visual Studio i kopię Aspose.Words dla .NET.
 
-#### P: Czy wszystkie edytory Markdown obsługują linijki poziome?
+### Czy Aspose.Words dla .NET jest darmowy?
+ Aspose.Words dla .NET jest produktem płatnym, ale możesz uzyskać[bezpłatna wersja próbna](https://releases.aspose.com/) lub[licencja tymczasowa](https://purchase.aspose.com/temporary-license/).
 
-Odp.: Tak, najpopularniejsze edytory Markdown obsługują linijki poziome. Jednak zawsze najlepiej jest sprawdzić dokumentację konkretnego dostawcy, aby upewnić się, że jest ona obsługiwana.
-
-#### P: Jakie inne elementy mogę utworzyć w Markdown?
-
-O: Oprócz linijek poziomych w Markdown możesz tworzyć tytuły, akapity, listy, łącza, obrazy, tabele i nie tylko.
+### Gdzie mogę uzyskać pomoc dotyczącą Aspose.Words dla .NET?
+ Możesz uzyskać wsparcie od[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8).

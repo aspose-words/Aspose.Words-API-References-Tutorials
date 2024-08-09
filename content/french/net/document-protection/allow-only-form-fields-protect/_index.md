@@ -81,7 +81,7 @@ Cela enregistre le document avec la protection appliquée.
 
 ## Conclusion
 
-Et voila! Vous venez d'apprendre comment protéger un document Word afin que seuls les champs de formulaire puissent être modifiés à l'aide d'Aspose.Words pour .NET. Il s'agit d'une fonctionnalité pratique lorsque vous devez vous assurer que certaines parties de votre document restent inchangées tout en permettant de remplir des champs spécifiques.
+Et voilà ! Vous venez d'apprendre comment protéger un document Word afin que seuls les champs de formulaire puissent être modifiés à l'aide d'Aspose.Words pour .NET. Il s'agit d'une fonctionnalité pratique lorsque vous devez vous assurer que certaines parties de votre document restent inchangées tout en permettant de remplir des champs spécifiques.
 
 ## FAQ
 

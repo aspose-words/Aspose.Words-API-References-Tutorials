@@ -86,7 +86,7 @@ doc.Save(dataDir + "WorkingWithCharts.CreateChartUsingShape.docx");
 
 ### 我可以使用 Aspose.Words for .NET 创建其他类型的图表吗？
 
-是的，Aspose.Words for .NET 支持各种图表类型，包括条形图、饼图等。您可以浏览文档[这里](https://reference.aspose.com/words/net/)更多细节。
+是的，Aspose.Words for .NET 支持各种图表类型，包括条形图、饼图等。您可以浏览文档[这里](https://reference.aspose.com/words/net/)了解更多详情。
 
 ### 购买之前如何试用 Aspose.Words for .NET？
 

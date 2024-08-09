@@ -16,7 +16,7 @@ url: /ko/net/working-with-section/add-section/
 
 코드를 시작하기 전에 필요한 사항을 살펴보겠습니다.
 
-1.  .NET 라이브러리용 Aspose.Words: 최신 버전인지 확인하세요. 당신은 할 수 있습니다[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+1.  .NET 라이브러리용 Aspose.Words: 최신 버전인지 확인하세요. 당신은 할 수 있습니다[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 2. 개발 환경: Visual Studio와 같은 .NET 호환 IDE가 이를 수행합니다.
 3. C#의 기본 지식: C# 구문을 이해하면 원활하게 따라가는 데 도움이 됩니다.
 4. 샘플 Word 문서: 처음부터 작성하겠지만 샘플이 있으면 테스트 목적으로 유용할 수 있습니다.
@@ -83,7 +83,7 @@ doc.Sections.Add(sectionToAdd);
 
 ### 새 섹션에 DocumentBuilder 사용
 
-새 섹션에 콘텐츠를 추가하려면`DocumentBuilder` 새 섹션으로 커서를 이동합니다.
+ 새 섹션에 콘텐츠를 추가하려면`DocumentBuilder` 새 섹션으로 커서를 이동합니다.
 
 ```csharp
 builder.MoveToSection(doc.Sections.IndexOf(sectionToAdd));
@@ -129,4 +129,4 @@ Word 문서의 섹션은 머리글, 바닥글, 열과 같은 고유한 레이아
 
 ### Aspose.Words에 대한 추가 리소스는 어디에서 찾을 수 있나요?
 
- 자세한 내용은 다음을 방문하세요.[Aspose.Words 문서](https://reference.aspose.com/words/net/) 아니면 그[지원 포럼](https://forum.aspose.com/c/words/8) 도움과 토론을 위해.
+ 자세한 내용은 다음을 방문하세요.[Aspose.Words 문서](https://reference.aspose.com/words/net/) 또는[지원 포럼](https://forum.aspose.com/c/words/8) 도움과 토론을 위해.

@@ -20,7 +20,7 @@ Voordat we op de details ingaan, zijn er een paar dingen die je moet regelen. Di
 - Basiskennis van C#: Hoewel we alles zullen uitleggen, zal een basiskennis van C# nuttig zijn.
 - Word-document met Aziatische typografie: Zorg voor een Word-document met Aziatische typografie. Dit wordt ons werkbestand.
 
-Heb alles? Geweldig! Laten we verder gaan met het opzetten van uw project.
+Heb je alles? Geweldig! Laten we verder gaan met het opzetten van uw project.
 
 ## Naamruimten importeren
 

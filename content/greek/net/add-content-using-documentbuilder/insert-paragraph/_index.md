@@ -56,7 +56,7 @@ paragraphFormat.KeepTogether = true;
 
 ## Βήμα 3: Εισαγάγετε την παράγραφο
 
- Τώρα, προσθέστε το περιεχόμενο που επιθυμείτε χρησιμοποιώντας το`WriteLn` μέθοδος για`DocumentBuilder`.
+ Τώρα, προσθέστε το περιεχόμενο που επιθυμείτε χρησιμοποιώντας το`WriteLn` μέθοδος του`DocumentBuilder`.
 ```csharp
 builder.Writeln("A whole paragraph.");
 ```
@@ -68,7 +68,7 @@ builder.Writeln("A whole paragraph.");
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertParagraph.docx");
 ```
 
-## συμπέρασμα
+## Σύναψη
 
 Συγχαρητήρια! Εισαγάγατε με επιτυχία μια μορφοποιημένη παράγραφο σε ένα έγγραφο του Word χρησιμοποιώντας το Aspose.Words για .NET. Αυτή η διαδικασία σάς επιτρέπει να δημιουργείτε δυναμικά πλούσιο περιεχόμενο προσαρμοσμένο στις ανάγκες της εφαρμογής σας.
 
@@ -87,4 +87,4 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertParagraph.docx");
 Ναι, μπορείτε να κρυπτογραφήσετε και να ασφαλίσετε τα έγγραφά σας μέσω προγραμματισμού χρησιμοποιώντας το Aspose.Words για .NET.
 
 ### Πού μπορώ να βρω περισσότερη βοήθεια και υποστήριξη για το Aspose.Words για .NET;
- Επισκέψου το[Aspose.Words φόρουμ](https://forum.aspose.com/c/words/8) για κοινοτική υποστήριξη και συζητήσεις.
+ Επισκεφθείτε το[Aspose.Words φόρουμ](https://forum.aspose.com/c/words/8) για κοινοτική υποστήριξη και συζητήσεις.

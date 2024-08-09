@@ -21,7 +21,7 @@ Avant de plonger dans le didacticiel, assurez-vous d'avoir les éléments suivan
 
 3. Connaissance de base de C# : Familiarité avec le langage de programmation C# et le framework .NET.
 
-4.  Licence Aspose : si vous utilisez une version sous licence d'Aspose.Words, assurez-vous que votre licence est correctement configurée. Vous pouvez obtenir un[permis temporaire](https://purchase.aspose.com/temporary-license/) si besoin.
+4.  Licence Aspose : si vous utilisez une version sous licence d'Aspose.Words, assurez-vous que votre licence est correctement configurée. Vous pouvez obtenir un[permis temporaire](https://purchase.aspose.com/temporary-license/) si nécessaire.
 
 5. Compréhension des champs Word : La connaissance des champs Word, en particulier du champ IF, sera utile mais pas obligatoire.
 

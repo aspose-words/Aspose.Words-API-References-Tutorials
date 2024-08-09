@@ -87,4 +87,4 @@ Có, Aspose.Words for .NET đảm bảo khả năng tương thích với nhiều
 Có, bạn có thể mã hóa và bảo mật tài liệu của mình theo chương trình bằng Aspose.Words cho .NET.
 
 ### Tôi có thể tìm thêm trợ giúp và hỗ trợ cho Aspose.Words cho .NET ở đâu?
- Tham quan[Diễn đàn Aspose.Words](https://forum.aspose.com/c/words/8) để được cộng đồng hỗ trợ và thảo luận.
+ Ghé thăm[Diễn đàn Aspose.Words](https://forum.aspose.com/c/words/8) để được cộng đồng hỗ trợ và thảo luận.

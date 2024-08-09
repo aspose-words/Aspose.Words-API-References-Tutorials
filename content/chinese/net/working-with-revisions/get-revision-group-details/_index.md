@@ -2,104 +2,108 @@
 title: 获取修订组详细信息
 linktitle: 获取修订组详细信息
 second_title: Aspose.Words 文档处理 API
-description: 使用 Aspose.Words for .NET 在 Word 文档中获取修订组详细信息。
+description: 按照本分步指南使用 Aspose.Words for .NET 轻松获取 Word 文档中的修订组详细信息。非常适合 .NET 开发人员。
 type: docs
 weight: 10
 url: /zh/net/working-with-revisions/get-revision-group-details/
 ---
+## 介绍
 
-在本分步指南中，我们将向您展示如何使用 Aspose.Words for .NET 获取 Word 文档中一组修订的详细信息。我们将为您提供完整的源代码并向您展示如何格式化 markdown 输出。
+您是否曾经发现自己需要深入研究 Word 文档中修订的细节？也许您正在合作一个项目，并且需要一丝不苟地跟踪更改。好吧，系好安全带，因为我们即将深入研究一个很棒的教程，介绍如何使用 Aspose.Words for .NET 获取修订组详细信息。在本指南结束时，您将成为提取和显示修订详细信息的专家，让您的文档管理变得轻而易举。
 
-## 步骤 1：加载文档
+## 先决条件
 
-第一步是上传包含修订内容的文档。
+在我们开始这段编码之旅之前，让我们确保您已准备好所需的一切：
+-  Aspose.Words for .NET：请确保您已安装最新版本。如果没有，您可以下载[这里](https://releases.aspose.com/words/net/).
+- .NET 环境：确保已设置好可用的 .NET 开发环境。Visual Studio 是不错的选择。
+- 带有修订版本的 Word 文档：在本教程中，我们将使用带有修订版本的 Word 示例文档 (`Revisions.docx`）。
+
+## 导入命名空间
+
+首先，让我们在项目中导入必要的命名空间。这对于访问 Aspose.Words 功能至关重要。
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
+using Aspose.Words;
+using System;
 ```
 
-## 第 2 步：浏览修订版本
+好吧，让我们一步一步地分解。每个步骤都将指导您完成使用 Aspose.Words for .NET 获取修订组详细信息的过程。
 
-接下来，我们将循环遍历文档中现有的修订并显示其详细信息，例如类型、作者、日期和修订文本。
+## 步骤 1：加载 Word 文档
+
+第一步是加载您的 Word 文档。这是存储修订内容的地方。
+
+```csharp
+//文档目录的路径。
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Revisions.docx");
+```
+
+在此代码片段中，替换`"YOUR DOCUMENT DIRECTORY"`替换为文档的实际路径。此代码将加载`Revisions.docx`文件放入`doc`目的。
+
+## 第 2 步：访问修订集合
+
+现在，让我们访问文档中的修订。Aspose.Words 提供了`Revisions`我们可以迭代的集合。
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
 {
-     string groupText = revision.Group != null
-         ? "Revision group text: " + revision.Group.Text
-         : "The revision does not belong to any group";
-
-     Console.WriteLine("Type: " + revision.RevisionType);
-     Console.WriteLine("Author: " + revision.Author);
-     Console.WriteLine("Date: " + revision.DateTime);
-     Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
-     Console.WriteLine(groupText);
+    //处理每次修订
 }
 ```
 
+这个循环将遍历文档中的每个修订，使我们能够提取详细信息。
 
-### 使用 Aspose.Words for .NET 获取修订组详细信息的示例源代码
+## 步骤 3：提取修订详细信息
 
-以下是使用 Aspose.Words for .NET 获取文档中一组修订的详细信息的完整源代码：
+在循环中，我们可以提取有关每个修订的各种详细信息，例如类型、作者、日期和文本。
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
-
 foreach (Revision revision in doc.Revisions)
 {
-	 string groupText = revision.Group != null
-		 ? "Revision group text: " + revision.Group.Text
-		 : "The revision does not belong to any group";
-
-	 Console.WriteLine("Type: " + revision.RevisionType);
-	 Console.WriteLine("Author: " + revision.Author);
-	 Console.WriteLine("Date: " + revision.DateTime);
-	 Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
-	 Console.WriteLine(groupText);
+    Console.WriteLine("Type: " + revision.RevisionType);
+    Console.WriteLine("Author: " + revision.Author);
+    Console.WriteLine("Date: " + revision.DateTime);
+    Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
 }
 ```
+
+此代码将把修订类型、作者、日期和文本打印到控制台。
+
+## 步骤 4：检查修订组
+
+有时，修订版本是分组的。我们需要检查修订版本是否属于某个组，如果是，则显示该组的文本。
+
+```csharp
+foreach (Revision revision in doc.Revisions)
+{
+    string groupText = revision.Group != null
+        ? "Revision group text: " + revision.Group.Text
+        : "The revision does not belong to any group";
+
+    Console.WriteLine(groupText);
+}
+```
+
+如果修订版是某个组的一部分，则此代码片段将打印组文本，否则表明它不属于任何组。
 
 ## 结论
 
-在本教程中，我们学习了如何使用 Aspose.Words for .NET 获取 Word 文档中一组修订的详细信息。通过使用循环和适当的属性，我们能够显示修订类型、作者、日期和修订文本等详细信息。Aspose.Words for .NET 提供了许多用于操作 Word 文档的强大功能，包括修订管理。现在，您可以使用这些知识使用 Aspose.Words for .NET 将修订组详细信息放入您自己的 Word 文档中。
+就这样！按照这些步骤，您可以使用 Aspose.Words for .NET 轻松获取有关 Word 文档修订的详细信息。这个强大的工具使管理和跟踪更改变得轻而易举，确保您的协作项目顺利进行。
 
-### 常见问题解答
+## 常见问题解答
 
-#### 问：如何将修订后的文档加载到 Aspose.Words for .NET 中？
+### 什么是 Aspose.Words for .NET？
+它是一个强大的 .NET 库，用于以编程方式创建、编辑、转换和打印 Word 文档。
 
-答：使用`Document` Aspose.Words for .NET 类用于从包含修订的文件中加载文档。您可以指定完整的文档路径。
+### 我可以将 Aspose.Words for .NET 与其他 .NET 语言一起使用吗？
+当然可以！您可以将其与任何 .NET 语言一起使用，包括 C#、VB.NET 和 ASP.NET。
 
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
+### 如何免费试用 Aspose.Words for .NET？
+您可以免费试用[这里](https://releases.aspose.com/).
 
-#### 问：如何获取 Aspose.Words for .NET 中修订组的详细信息？
+### 我需要许可证才能使用 Aspose.Words for .NET 吗？
+是的，Aspose.Words for .NET 需要许可证才能使用全部功能。您可以购买一个[这里](https://purchase.aspose.com/buy)或获得临时执照[这里](https://purchase.aspose.com/temporary-license/).
 
-答：使用循环遍历文档的修订版本，并访问每个修订版本的属性以获取所需的详细信息。您可以使用`RevisionType`, `Author`, `DateTime`和`ParentNode`属性分别获取修订类型、作者、日期和修订文本。
-
-```csharp
-foreach (Revision revision in doc.Revisions)
-{
-      Console.WriteLine("Type: " + revision.RevisionType
-
-);
-      Console.WriteLine("Author: " + revision.Author);
-      Console.WriteLine("Date: " + revision.DateTime);
-      Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
-}
-```
-
-#### 问：如何检查修订是否属于 Aspose.Words for .NET 中的某个组？
-
-答：使用`Group`的财产`Revision`对象来检查修订是否属于某个组。如果`Group`财产是`null`，则表示该修订不属于任何组。
-
-```csharp
-if (revision.Group != null)
-{
-      //修订版本属于某个组
-}
-else
-{
-      //该修订不属于任何组
-}
-```
+### 在哪里可以找到有关 Aspose.Words for .NET 的更多文档？
+有详细文档可供查阅[这里](https://reference.aspose.com/words/net/).

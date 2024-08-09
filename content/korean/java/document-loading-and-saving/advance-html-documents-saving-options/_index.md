@@ -26,7 +26,7 @@ public void exportRoundtripInformation() throws Exception {
 ```
 
 ## 3. 글꼴을 Base64로 내보내기
- 와 더불어`exportFontsAsBase64` 방법을 사용하면 문서에 사용된 글꼴을 HTML의 Base64 인코딩 데이터로 내보낼 수 있습니다. 이렇게 하면 HTML 표현이 원본 Word 문서와 동일한 글꼴 스타일을 유지하게 됩니다.
+ 와 함께`exportFontsAsBase64` 방법을 사용하면 문서에 사용된 글꼴을 HTML의 Base64 인코딩 데이터로 내보낼 수 있습니다. 이렇게 하면 HTML 표현이 원본 Word 문서와 동일한 글꼴 스타일을 유지하게 됩니다.
 
 ```java
 @Test
@@ -75,7 +75,7 @@ public void convertMetafilesToSvg() throws Exception {
 ```
 
 ## 7. CSS 클래스 이름 접두사 추가
- 와 더불어`addCssClassNamePrefix` 방법을 사용하면 내보낸 HTML의 CSS 클래스 이름에 접두사를 추가할 수 있습니다. 이렇게 하면 기존 스타일과의 충돌을 방지하는 데 도움이 됩니다.
+ 와 함께`addCssClassNamePrefix` 방법을 사용하면 내보낸 HTML의 CSS 클래스 이름에 접두사를 추가할 수 있습니다. 이렇게 하면 기존 스타일과의 충돌을 방지하는 데 도움이 됩니다.
 
 ```java
 @Test

@@ -262,7 +262,7 @@ builder.writeln("I'm a wonderfully formatted row.");
 
 ## Wniosek
 
-Aspose.Words dla Java umożliwia precyzyjne formatowanie tabel i stosowanie stylów tabel. Od modyfikowania formatowania poszczególnych komórek po tworzenie niestandardowych stylów tabel — masz narzędzia, dzięki którym Twoje dokumenty będą atrakcyjne wizualnie i uporządkowane.
+Aspose.Words dla Java umożliwia precyzyjne formatowanie tabel i stosowanie stylów tabel. Od modyfikowania formatowania poszczególnych komórek po tworzenie niestandardowych stylów tabel — masz narzędzia, dzięki którym Twoje dokumenty będą atrakcyjne wizualnie i zorganizowane.
 
 ## Często zadawane pytania
 

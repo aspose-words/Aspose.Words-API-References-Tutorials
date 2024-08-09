@@ -66,7 +66,7 @@ const string textDoc = "Full stop delimiters:\n" +
 
 ## 3. lépés: A LoadOptions konfigurálása
 
- A szóközökkel történő számozás észleléséhez be kell állítanunk a`DetectNumberingWithWhitespaces` opciót`true` a`TxtLoadOptions` tárgy.
+ A szóközökkel történő számozás észleléséhez be kell állítanunk a`DetectNumberingWithWhitespaces` opciót`true` a`TxtLoadOptions` objektum.
 
 ```csharp
 TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
@@ -94,7 +94,7 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.doc
 
 ## GYIK
 
-###  Mi a`DetectNumberingWithWhitespaces` in Aspose.Words for .NET?
+###  Mi az`DetectNumberingWithWhitespaces` in Aspose.Words for .NET?
 `DetectNumberingWithWhitespaces` lehetőség van benne`TxtLoadOptions` amely lehetővé teszi az Aspose.Words számára a listák felismerését még akkor is, ha szóköz van a számozás és a listaelem szövege között.
 
 ### Használhatom ezt a funkciót más határolójelekhez, például golyókhoz és zárójelekhez?

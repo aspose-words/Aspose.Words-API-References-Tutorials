@@ -43,7 +43,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- Trong bước này, chúng tôi chỉ định đường dẫn đến thư mục chứa tài liệu của bạn. Các`Document` lớp sau đó được sử dụng để tải tệp DOCX từ thư mục này. Đảm bảo thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục tài liệu của bạn.
+ Trong bước này, chúng tôi chỉ định đường dẫn đến thư mục chứa tài liệu của bạn. các`Document` lớp sau đó được sử dụng để tải tệp DOCX từ thư mục này. Đảm bảo thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế đến thư mục tài liệu của bạn.
 
 ## Bước 2: Định cấu hình tùy chọn lưu
 
@@ -54,7 +54,7 @@ Tiếp theo, chúng ta cần thiết lập các tùy chọn để lưu tài li�
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "password" };
 ```
 
- Các`OoxmlSaveOptions`lớp cho phép chúng tôi chỉ định các tùy chọn khác nhau để lưu tệp DOCX. Ở đây, chúng tôi thiết lập`Password`tài sản để`"password"` . Bạn có thể thay thế`"password"` với bất kỳ mật khẩu nào bạn chọn. Mật khẩu này sẽ được yêu cầu để mở tệp DOCX được mã hóa.
+ các`OoxmlSaveOptions`lớp cho phép chúng tôi chỉ định các tùy chọn khác nhau để lưu tệp DOCX. Ở đây, chúng tôi thiết lập`Password`tài sản để`"password"` . Bạn có thể thay thế`"password"` với bất kỳ mật khẩu nào bạn chọn. Mật khẩu này sẽ được yêu cầu để mở tệp DOCX được mã hóa.
 
 ## Bước 3: Lưu tài liệu được mã hóa
 
@@ -65,7 +65,7 @@ Cuối cùng, chúng ta sẽ lưu tài liệu bằng các tùy chọn lưu đã 
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.EncryptDocxWithPassword.docx", saveOptions);
 ```
 
- Các`Save` phương pháp của`Document` lớp được sử dụng để lưu tài liệu. Chúng tôi cung cấp đường dẫn và tên tệp cho tài liệu được mã hóa, cùng với`saveOptions` chúng tôi đã cấu hình trước đó. Tài liệu hiện được lưu dưới dạng tệp DOCX được mã hóa.
+ các`Save` phương pháp của`Document` lớp được sử dụng để lưu tài liệu. Chúng tôi cung cấp đường dẫn và tên tệp cho tài liệu được mã hóa, cùng với`saveOptions` chúng tôi đã cấu hình trước đó. Tài liệu hiện được lưu dưới dạng tệp DOCX được mã hóa.
 
 ## Phần kết luận
 

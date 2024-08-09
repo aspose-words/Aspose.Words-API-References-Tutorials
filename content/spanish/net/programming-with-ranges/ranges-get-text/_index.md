@@ -71,7 +71,7 @@ string text = doc.Range.Text;
 
 ## Paso 4: muestre el texto extraído
 
-Finalmente, para verificar que la extracción de texto funcionó, puede mostrar el texto extraído en la consola. Así es cómo:
+Finalmente, para verificar que la extracción de texto funcionó, puede mostrar el texto extraído en la consola. He aquí cómo:
 
 Mostrar el texto
 

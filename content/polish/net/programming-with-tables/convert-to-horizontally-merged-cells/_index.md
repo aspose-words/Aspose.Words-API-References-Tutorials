@@ -63,7 +63,7 @@ table.ConvertToHorizontallyMergedCells();
 
 ## Wniosek
 
-I to wszystko! Pomyślnie przekonwertowałeś komórki scalone pionowo na komórki scalone poziomo w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Dzięki tej metodzie tabele będą dobrze zorganizowane i łatwiejsze do odczytania. Wykonując poniższe kroki, możesz dostosowywać dokumenty programu Word i manipulować nimi, aby spełniały swoje specyficzne potrzeby.
+I tyle! Pomyślnie przekonwertowałeś komórki scalone pionowo na komórki scalone poziomo w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Dzięki tej metodzie tabele będą dobrze zorganizowane i łatwiejsze do odczytania. Wykonując poniższe kroki, możesz dostosowywać dokumenty programu Word i manipulować nimi, aby spełniały swoje specyficzne potrzeby.
 
 ## Często zadawane pytania
 
@@ -74,10 +74,10 @@ Aspose.Words dla .NET jest przeznaczony przede wszystkim dla języków .NET, tak
  Tak, możesz pobrać plik[bezpłatna wersja próbna](https://releases.aspose.com/) ze strony Aspose.
 
 ### Jak mogę uzyskać pomoc, jeśli napotkam problemy?  
- Możesz odwiedzić[Forum wsparcia Aspose](https://forum.aspose.com/c/words/8) do pomocy.
+ Możesz odwiedzić[Forum wsparcia Aspose](https://forum.aspose.com/c/words/8) o pomoc.
 
 ### Czy mogę zastosować licencję z pliku lub strumienia?  
 Tak, Aspose.Words dla .NET umożliwia zastosowanie licencji zarówno z pliku, jak i strumienia. Więcej informacji znajdziesz w[dokumentacja](https://reference.aspose.com/words/net/).
 
 ### Jakie inne funkcje oferuje Aspose.Words dla .NET?  
- Aspose.Words dla .NET oferuje szeroką gamę funkcji, w tym generowanie dokumentów, manipulację, konwersję i renderowanie. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) po więcej szczegółów.
+ Aspose.Words dla .NET oferuje szeroką gamę funkcji, w tym generowanie dokumentów, manipulację, konwersję i renderowanie. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) aby uzyskać więcej szczegółów.

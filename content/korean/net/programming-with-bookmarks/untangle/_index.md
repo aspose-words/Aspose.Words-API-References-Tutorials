@@ -15,7 +15,7 @@ url: /ko/net/programming-with-bookmarks/untangle/
 
 코드를 살펴보기 전에 필요한 모든 것이 갖추어져 있는지 확인하겠습니다.
 
-1.  .NET용 Aspose.Words: .NET용 Aspose.Words 라이브러리가 필요합니다. 없으시면 하셔도 됩니다[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+1.  .NET용 Aspose.Words: .NET용 Aspose.Words 라이브러리가 필요합니다. 없으시면 하셔도 됩니다[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 2. 개발 환경: Visual Studio와 같은 .NET 개발 환경입니다.
 3. C#의 기본 지식: C#의 기본 사항을 이해하면 코드 조각과 설명을 따라가는 데 도움이 됩니다.
 
@@ -111,7 +111,7 @@ Aspose.Words for .NET을 사용하여 Word 문서에서 책갈피를 푸는 것�
 
 ### .NET용 Aspose.Words 평가판이 있습니까?
 
- 그래 넌 할수있어[무료 평가판을 다운로드하세요](https://releases.aspose.com/) Aspose 웹사이트에서 라이브러리의 기능을 살펴보세요.
+ 예, 가능합니다[무료 평가판을 다운로드하세요](https://releases.aspose.com/) Aspose 웹사이트에서 라이브러리의 기능을 살펴보세요.
 
 ### 문제가 발생하면 어떻게 지원을 받을 수 있나요?
 

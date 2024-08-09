@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-bookmarks/delete-row-by-bookmark/
 ---
-## introduzione
+## Introduzione
 
 Eliminare una riga tramite segnalibro in un documento Word potrebbe sembrare complicato, ma con Aspose.Words per .NET è un gioco da ragazzi. Questa guida ti guiderà attraverso tutto ciò che devi sapere per svolgere questo compito in modo efficiente. Pronti a tuffarvi? Iniziamo!
 
@@ -72,7 +72,7 @@ doc.Save("output-document.docx");
 
 ## Conclusione
 
-E il gioco è fatto! Eliminare una riga tramite segnalibro in un documento di Word utilizzando Aspose.Words per .NET è semplice quando lo si suddivide in semplici passaggi. Questo metodo ti consente di individuare e rimuovere con precisione le righe in base ai segnalibri, rendendo più efficienti le attività di gestione dei documenti.
+Ed ecco qua! Eliminare una riga tramite segnalibro in un documento di Word utilizzando Aspose.Words per .NET è semplice quando lo si suddivide in semplici passaggi. Questo metodo ti consente di individuare e rimuovere con precisione le righe in base ai segnalibri, rendendo più efficienti le attività di gestione dei documenti.
 
 ## Domande frequenti
 

@@ -2,63 +2,78 @@
 title: 删除线
 linktitle: 删除线
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 分步指南应用删除线文本样式。
+description: 通过我们的分步指南学习如何使用 Aspose.Words for .NET 将删除线格式应用于文本。提高您的文档处理技能。
 type: docs
 weight: 10
 url: /zh/net/working-with-markdown/strikethrough/
 ---
+## 介绍
 
+欢迎阅读本详细指南，了解如何使用 Aspose.Words for .NET 将删除线格式应用于文本。如果您希望增强文档处理技能并为您的文本添加独特的风格，那么您来对地方了。让我们开始吧！
 
-在此示例中，我们将引导您了解如何使用 Aspose.Words for .NET 应用删除线文本样式。删除线文本用于指示文本已被删除或不再有效。
+## 先决条件
 
-## 步骤 1：使用文档生成器
+在开始之前，请确保您已准备好以下内容：
 
-首先，我们将使用文档生成器向文档添加内容。
+-  Aspose.Words for .NET：下载[这里](https://releases.aspose.com/words/net/).
+- .NET Framework：确保您的系统上安装了 .NET Framework。
+- 开发环境：像 Visual Studio 这样的 IDE。
+- C# 基础知识：必须熟悉 C# 编程。
+
+## 导入命名空间
+
+首先，您需要导入必要的命名空间。这些对于访问 Aspose.Words 库及其功能至关重要。
 
 ```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## 步骤 1：初始化 DocumentBuilder
+
+这`DocumentBuilder`类是 Aspose.Words 中的一个强大工具，可以让您轻松地向文档中添加内容。
+
+```csharp
+//初始化一个 DocumentBuilder。
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## 步骤 2：应用删除线文本样式
+## 步骤 2：设置删除线属性
 
-我们将通过设置`StrikeThrough`的财产`Font`反对`true`.
-
-```csharp
-builder.Font.StrikeThrough = true;
-```
-
-## 步骤 3：添加删除线文本
-
-我们现在可以使用文档生成器的`Writeln`方法。
+现在，让我们将删除线属性应用于文本。这涉及设置`StrikeThrough`的财产`Font`反对`true`.
 
 ```csharp
-builder.Writeln("This text will be StrikeThrough");
-```
-
-
-### 使用 Aspose.Words for .NET 的删除线文本示例源代码
-
-```csharp
-//使用文档生成器向文档添加内容。
-DocumentBuilder builder = new DocumentBuilder();
-
 //给文本添加删除线。
 builder.Font.StrikeThrough = true;
+```
+
+## 步骤 3：使用删除线书写文字
+
+设置删除线属性后，我们现在可以添加文本。`Writeln`方法会将文本添加到文档中。
+
+```csharp
+//写带有删除线的文字。
 builder.Writeln("This text will be StrikeThrough");
 ```
 
-恭喜！您现在已经了解了如何使用 Aspose.Words for .NET 应用删除线文本样式。
+## 结论
 
-### 常见问题解答
+就这样！您已成功使用 Aspose.Words for .NET 为文本添加了删除线格式。这个强大的库为文档处理和自定义开辟了无限可能。无论您是创建报告、信函还是任何其他类型的文档，掌握这些功能无疑会提高您的工作效率和输出质量。
 
-#### 问：如何在 Aspose.Words 中添加删除线文本？
+## 常见问题解答
 
-答：要在 Aspose.Words 中添加删除线文本，您可以使用`Font.StrikeThrough`的财产`Run`对象。您可以将此属性设置为`true`为特定文本添加删除线文本。例如，您可以使用`run.Font.StrikeThrough=true`将删除线文本添加到`Run`目的。
+### 什么是 Aspose.Words for .NET？
+Aspose.Words for .NET 是一个强大的文档处理库，允许开发人员以编程方式创建、操作和转换 Word 文档。
 
-#### 问： 是否可以为同一段中的几段文字添加删除线文字？
+### 我可以在商业项目中使用 Aspose.Words for .NET 吗？
+是的，您可以在商业项目中使用 Aspose.Words for .NET。有关购买选项，请访问[购买页面](https://purchase.aspose.com/buy).
 
-答：是的，您可以使用多个`Run`对象。您可以创建多个`Run`对象并设置`Font.StrikeThrough`财产`true`为每个对象添加删除线文本到所需的文本部分。然后，您可以使用`Paragraph.AppendChild(run)`方法。
+### Aspose.Words for .NET 有免费试用版吗？
+是的，您可以下载免费试用版[这里](https://releases.aspose.com/).
 
-#### 问：我可以为 Aspose.Words 中表格或单元格中的文本添加删除线文本吗？
+### 如何获得 Aspose.Words for .NET 的支持？
+您可以从 Aspose 社区和专家处获得支持[支持论坛](https://forum.aspose.com/c/words/8).
 
-答：是的，您可以在 Aspose.Words 中的表格或单元格中添加删除线文本。您可以使用适当的方法跳转到所需的单元格或段落，然后使用`Font.StrikeThrough`的财产`Run`或者`Paragraph`目的。
+### 我可以使用 Aspose.Words for .NET 应用其他文本格式选项吗？
+当然！Aspose.Words for .NET 支持多种文本格式选项，包括粗体、斜体、下划线等。

@@ -2,100 +2,102 @@
 title: 単語の修正タイプを取得する
 linktitle: 単語の修正タイプを取得する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、Word 文書内の単語の修正タイプを取得します。
+description: Aspose.Words for .NET を使用して、Word 文書内の単語の修正タイプを取得する方法を学びます。このステップ バイ ステップ ガイドは、文書の修正を効率的に処理するのに役立ちます。
 type: docs
 weight: 10
 url: /ja/net/working-with-revisions/get-revision-types/
 ---
+## 導入
 
-このステップ バイ ステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書内の単語のリビジョンの種類を取得する方法について説明します。完全なソース コードを提供し、マークダウン出力をフォーマットする方法を説明します。
+ドキュメントの改訂の海にどっぷりつかって、誰が何をいつ移動したのかと悩んだことはありませんか? あなただけではありません。ドキュメントの改訂を処理するのは、特に大規模なドキュメントを扱う場合は面倒な作業になることがあります。しかし、心配はいりません。Aspose.Words for .NET を使用すると、これらの改訂を簡単に識別して管理できます。このガイドでは、Aspose.Words for .NET を使用して Word ドキュメント内の単語の改訂タイプを取得する方法について、ステップ バイ ステップで説明します。さあ、シートベルトを締めて、始めましょう!
 
-## ステップ1: ドキュメントの読み込み
+## 前提条件
 
-最初のステップは、修正を含むドキュメントをアップロードすることです。
+実際にコードに取り掛かる前に、いくつか必要なものがあります。
+
+1.  Aspose.Words for .NETライブラリ:まだダウンロードしていない場合は、こちらからダウンロードしてください。[ここ](https://releases.aspose.com/words/net/).
+2. 開発環境: Visual Studio またはその他の .NET 互換 IDE。
+3. C# の基礎知識: C# プログラミング言語を理解していると役立ちます。
+4. 修正を加えたWord文書:`.docx`コードをテストするための変更追跡ファイル。
+
+## 名前空間のインポート
+
+開始するには、C# プロジェクトに必要な名前空間をインポートする必要があります。これにより、Aspose.Words for .NET によって提供される機能にアクセスできるようになります。
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
+using Aspose.Words;
+using Aspose.Words.Revision;
+using System;
 ```
 
-## ステップ2: 段落を順に確認する
+理解と実装を容易にするために、例を複数のステップに分解してみましょう。
 
-次に、ドキュメントの段落を確認して、各段落に関連付けられている単語の修正の種類を確認します。
+## ステップ1: ドキュメントディレクトリを設定する
+
+まず最初に、ドキュメント ディレクトリへのパスを定義する必要があります。これは、変更された Word ドキュメントが保存される場所です。
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+交換する`"YOUR DOCUMENT DIRECTORY"`ドキュメント フォルダーへの実際のパスを入力します。
+
+## ステップ2: Word文書を読み込む
+
+次に、Word 文書をプロジェクトに読み込む必要があります。この文書には、分析するリビジョンが含まれている必要があります。
+
+```csharp
+Document doc = new Document(dataDir + "Revisions.docx");
+```
+
+ファイルが`Revisions.docx`指定されたディレクトリに存在します。
+
+## ステップ3: 段落コレクションにアクセスする
+
+ドキュメントが読み込まれたら、ドキュメント本体の最初のセクション内の段落にアクセスする必要があります。これにより、各段落を反復処理して変更を確認することができます。
 
 ```csharp
 ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
-for (int i = 0; i < paragraphs.Count; i++)
-{
-     if (paragraphs[i].IsMoveFromRevision)
-         Console.WriteLine("Paragraph {0} has been moved (deleted).", i);
-     if (paragraphs[i].IsMoveToRevision)
-         Console.WriteLine("Paragraph {0} has been moved (inserted).", i);
-}
 ```
 
-### Aspose.Words for .NET を使用してリビジョン タイプを取得するためのサンプル ソース コード
+## ステップ4: 段落を繰り返して修正箇所を確認する
 
-Aspose.Words for .NET を使用してドキュメント内のリビジョン タイプを取得するための完全なソース コードは次のとおりです。
+ここで魔法が起こります。各段落を反復処理して、移動 (削除または挿入) されたかどうかを確認します。
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
-
-ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
 for (int i = 0; i < paragraphs.Count; i++)
 {
-	 if (paragraphs[i].IsMoveFromRevision)
-		 Console.WriteLine("Paragraph {0} has been moved (deleted).", i);
-	 if (paragraphs[i].IsMoveToRevision)
-		 Console.WriteLine("Paragraph {0} has been moved (inserted).", i);
+    if (paragraphs[i].IsMoveFromRevision)
+        Console.WriteLine("Paragraph {0} has been moved (deleted).", i);
+    if (paragraphs[i].IsMoveToRevision)
+        Console.WriteLine("Paragraph {0} has been moved (inserted).", i);
 }
 ```
+
+このループは各段落を巡回し、`IsMoveFromRevision`そして`IsMoveToRevision`段落が移動 (削除) されたか、移動 (挿入) されたかを判断するプロパティ。
 
 ## 結論
 
-このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書内の単語の修正の種類を取得する方法を学習しました。ドキュメントを読み込み、段落を調べ、各段落に関連付けられた単語の修正の種類を確認する手順を実行しました。これで、この知識を適用して、Aspose.Words for .NET を使用して独自の Word 文書内の単語の修正を分析できます。
+これで完了です。わずか数行のコードで、Aspose.Words for .NET を使用して Word 文書内の変更の種類を簡単に識別できます。この強力なライブラリにより、文書の変更を簡単に処理できるため、より重要なタスクに集中できます。 
 
-### 単語の修正タイプを取得するためのFAQ
+## よくある質問
 
-#### Q: Aspose.Words for .NET でドキュメントをアップロードするにはどうすればよいですか?
+### Aspose.Words for .NET を使用して、特定のユーザーによる変更を追跡できますか?
 
- A:`Document`ファイルからドキュメントを読み込むための Aspose.Words for .NET のクラス。ドキュメントの完全なパスを指定できます。
+はい、Aspose.Words for .NET には、変更の作成者を含むリビジョンの詳細にアクセスする機能が用意されています。
 
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
+### Aspose.Words for .NET の無料試用版はありますか?
 
-#### Q: Aspose.Words for .NET でドキュメント内の段落をループするにはどうすればよいですか?
+もちろんです！無料トライアルをご利用いただけます[ここ](https://releases.aspose.com/).
 
- A:`Paragraphs`ドキュメント セクションのプロパティを使用して段落のコレクションを取得します。その後、ループを使用して各段落をループできます。
+### Aspose.Words for .NET の一時ライセンスを適用するにはどうすればよいですか?
 
-```csharp
-ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
-for (int i = 0; i < paragraphs.Count; i++)
-{
-     //ここで各段落を処理します
-}
-```
+一時ライセンスの申請と申請は、[ここ](https://purchase.aspose.com/temporary-license/).
 
-#### Q: Aspose.Words for .NET で段落が移動 (削除) されたかどうかを確認するにはどうすればよいですか?
+### Aspose.Words for .NET の詳細なドキュメントはどこで入手できますか?
 
- A: 段落の`IsMoveFromRevision`プロパティが移動 (削除) されたかどうかを確認します。
+詳細なドキュメントは、[Aspose ウェブサイト](https://reference.aspose.com/words/net/).
 
-```csharp
-if (paragraph. IsMove
+### Aspose.Words for .NET を非商用プロジェクトで使用できますか?
 
-FromRevision)
-{
-     //段落は移動されました（削除されました）
-}
-```
-
-#### Q: Aspose.Words for .NET で段落が移動 (挿入) されたかどうかを確認するにはどうすればよいですか?
-
- A: 段落の`IsMoveToRevision`移動 (挿入) されたかどうかを確認するプロパティ。
-
-```csharp
-if (paragraph.IsMoveToRevision)
-{
-     //段落が移動（挿入）されました
-}
-```
+はい、Aspose.Words for .NET は商用プロジェクトと非商用プロジェクトの両方で使用できますが、ライセンス条件を必ず確認してください。

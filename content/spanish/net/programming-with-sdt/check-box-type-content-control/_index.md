@@ -99,4 +99,4 @@ Sí, Aspose.Words admite varios tipos de controles de contenido, incluidos contr
  Sí, puedes descargar una prueba gratuita desde[Aspose sitio web](https://releases.aspose.com/).
 
 ### ¿Dónde puedo obtener asistencia si tengo problemas?
- Puedes visitar el[Foro de soporte de Aspose](https://forum.aspose.com/c/words/8) para asistencia.
+ Puedes visitar el[Foro de soporte de Aspose](https://forum.aspose.com/c/words/8) para obtener ayuda.

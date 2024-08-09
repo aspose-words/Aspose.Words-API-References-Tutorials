@@ -16,7 +16,7 @@ Ei! Já se perguntou como manipular documentos do Word programaticamente usando 
 Antes de começarmos, existem algumas coisas que você precisará:
 
 1. Conhecimento básico de C#: você não precisa ser um especialista, mas um conhecimento básico de C# será útil.
-2.  Aspose.Words para .NET: você pode[baixe aqui](https://releases.aspose.com/words/net/) . Se não quiser adquiri-lo imediatamente, você pode optar por um[teste grátis](https://releases.aspose.com/).
+2.  Aspose.Words para .NET: você pode[baixe aqui](https://releases.aspose.com/words/net/) . Se não quiser adquiri-lo imediatamente, você pode optar por um[teste gratuito](https://releases.aspose.com/).
 3. Visual Studio: Qualquer versão deve funcionar, mas a versão mais recente é recomendada.
 4. .NET Framework: Certifique-se de tê-lo instalado em sua máquina.
 
@@ -112,7 +112,7 @@ Aspose.Words for .NET é uma biblioteca poderosa que permite aos desenvolvedores
 
 ### 2. Posso usar o Aspose.Words for .NET gratuitamente?
 
- Você pode tentar Aspose.Words for .NET usando um[teste grátis](https://releases.aspose.com/). Para uso de longo prazo, você precisará adquirir uma licença.
+ Você pode tentar Aspose.Words for .NET usando um[teste gratuito](https://releases.aspose.com/). Para uso de longo prazo, você precisará adquirir uma licença.
 
 ## 3. Quais são os principais recursos do Aspose.Words for .NET?
 

@@ -41,7 +41,7 @@ Innan vi kan manipulera ditt dokument måste vi definiera var det finns. Detta �
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med sökvägen till din dokumentmapp. Det är här din Word-fil finns.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med sökvägen till din dokumentmapp. Det är här din Word-fil finns.
 
 ## Steg 2: Ladda dokumentet
 
@@ -51,7 +51,7 @@ Därefter måste vi ladda Word-dokumentet i vår applikation. Aspose.Words gör 
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 
- Byta ut`"your-document.docx"` med namnet på din fil. Den här kodraden laddar ditt dokument så att vi kan börja arbeta med det.
+ Ersätta`"your-document.docx"` med namnet på din fil. Den här kodraden laddar ditt dokument så att vi kan börja arbeta med det.
 
 ## Steg 3: Identifiera och ta bort innehållsförteckningsfältet
 
@@ -75,7 +75,7 @@ Slutligen måste vi spara våra ändringar. Du kan spara dokumentet under ett ny
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
- Den här raden sparar ditt dokument med de ändringar som gjorts. Byta ut`"modified-document.docx"` med önskat filnamn.
+ Den här raden sparar ditt dokument med de ändringar som gjorts. Ersätta`"modified-document.docx"` med önskat filnamn.
 
 ## Slutsats
 

@@ -14,7 +14,7 @@ Você já ficou preso em um labirinto de substituições de texto em documentos 
 ## Pré-requisitos
 
 Antes de entrarmos no âmago da questão, vamos garantir que você tenha tudo o que precisa:
--  Aspose.Words para .NET:[Link para Download](https://releases.aspose.com/words/net/)
+-  Aspose.Words para .NET:[Baixar link](https://releases.aspose.com/words/net/)
 - .NET Framework: certifique-se de que esteja instalado.
 - Compreensão básica de C#: um pouco de conhecimento de codificação ajuda muito.
 - Editor de texto ou IDE: Visual Studio é altamente recomendado.

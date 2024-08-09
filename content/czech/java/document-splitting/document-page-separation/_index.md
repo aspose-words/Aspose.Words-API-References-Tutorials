@@ -15,7 +15,7 @@ V dnešní digitální éře je správa a manipulace s dokumenty zásadním úko
 Než se ponoříme do kódu, ujistěte se, že máte splněny následující předpoklady:
 
 - Java Development Kit (JDK) nainstalován
--  Knihovna Aspose.Words for Java (Můžete si ji stáhnout z[tady](https://releases.aspose.com/words/java/))
+-  Knihovna Aspose.Words for Java (Můžete si ji stáhnout z[zde](https://releases.aspose.com/words/java/))
 - Integrované vývojové prostředí (IDE) dle vašeho výběru (Eclipse, IntelliJ IDEA atd.)
 
 ## Nastavení vašeho projektu Java
@@ -62,7 +62,7 @@ for (int i = 0; i < pages.size(); i++) {
 }
 ```
 
- Tento fragment kódu uloží každou stránku s názvem souboru jako`page_1.docx`, `page_2.docx`, a tak dále.
+ Tento fragment kódu uloží každou stránku s názvem souboru jako`page_1.docx`, `page_2.docx`a tak dále.
 
 ## Závěr
 
@@ -90,4 +90,4 @@ Ano, oddělené stránky můžete sloučit zpět do jednoho dokumentu pomocí As
 
 ### Kde najdu další zdroje a příklady pro Aspose.Words?
 
- Můžete prozkoumat dokumentaci Aspose.Words for Java[tady](https://reference.aspose.com/words/java/) pro podrobné příklady, reference API a výukové programy.
+ Můžete prozkoumat dokumentaci Aspose.Words for Java[zde](https://reference.aspose.com/words/java/) pro podrobné příklady, reference API a výukové programy.

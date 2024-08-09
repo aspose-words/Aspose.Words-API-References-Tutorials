@@ -2,88 +2,40 @@
 title: Accepteer revisies
 linktitle: Accepteer revisies
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u revisies van een Word-document accepteert met Aspose.Words voor .NET
+description: Beheer documentrevisies met Aspose.Words voor .NET. Leer veranderingen moeiteloos volgen, accepteren en afwijzen. Verbeter uw vaardigheden op het gebied van documentbeheer.
 type: docs
 weight: 10
 url: /nl/net/working-with-revisions/accept-revisions/
 ---
+## Invoering
 
-In deze zelfstudie begeleiden we u bij het accepteren van revisies van een Word-document met behulp van de functie Revisies accepteren van Aspose.Words voor .NET. Volg de onderstaande stappen om de broncode te begrijpen en wijzigingen in het document te accepteren.
+Bent u ooit in een doolhof van documentrevisies beland, waarbij u moeite heeft om elke wijziging bij te houden die door meerdere bijdragers is aangebracht? Met Aspose.Words voor .NET wordt het beheren van revisies in Word-documenten een fluitje van een cent. Met deze krachtige bibliotheek kunnen ontwikkelaars wijzigingen moeiteloos volgen, accepteren en afwijzen, zodat uw documenten georganiseerd en up-to-date blijven. In deze zelfstudie duiken we in het stapsgewijze proces van het afhandelen van documentrevisies met Aspose.Words voor .NET, vanaf het initialiseren van het document tot het accepteren van alle wijzigingen.
 
-## Stap 1: Documentinhoud toevoegen en bewerken
+## Vereisten
 
-In dit voorbeeld maken we een document en voegen we inhoud toe. We gebruiken verschillende paragrafen om wijzigingen en herzieningen te illustreren. Hier is hoe:
+Voordat we aan de slag gaan, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
 
-```csharp
-// Pad naar de documentenmap.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-Body body = doc.FirstSection.Body;
-Paragraph para = body.FirstParagraph;
+- Visual Studio is op uw computer geïnstalleerd.
+- .NET-framework (bij voorkeur de nieuwste versie).
+-  Aspose.Words voor .NET-bibliotheek. Je kunt het downloaden[hier](https://releases.aspose.com/words/net/).
+- Basiskennis van programmeren in C#.
 
-// Voeg tekst toe aan de eerste alinea en voeg vervolgens nog twee alinea's toe.
-para.AppendChild(new Run(doc, "Paragraph 1. "));
-body.AppendParagraph("Paragraph 2.");
-body.AppendParagraph("Paragraph 3.");
-```
+Laten we nu eens naar de details kijken en kijken hoe we documentrevisies onder de knie kunnen krijgen met Aspose.Words voor .NET.
 
-## Stap 2: Houd beoordelingen bij en voeg beoordelingen toe
+## Naamruimten importeren
 
-We schakelen het bijhouden van revisies in en voegen een revisie toe aan het document. Hier is hoe:
+Allereerst moet u de benodigde naamruimten importeren om met Aspose.Words te kunnen werken. Voeg het volgende toe met behulp van richtlijnen bovenaan uw codebestand:
 
 ```csharp
-doc.StartTrackRevisions("John Doe", DateTime.Now);
-
-// Deze paragraaf is een revisie en de bijbehorende vlag "IsInsertRevision" is ingesteld.
-para = body.AppendParagraph("Paragraph 4.");
-Assert.True(para.IsInsertRevision);
+using Aspose.Words;
+using Aspose.Words.Revision;
 ```
 
-## Stap 3: Verwijder een paragraaf en beheer revisies
+Laten we het proces opsplitsen in beheersbare stappen. Elke stap wordt gedetailleerd uitgelegd om ervoor te zorgen dat u elk deel van de code begrijpt.
 
-We verwijderen een paragraaf en controleren op opgeslagen revisies. Hier is hoe:
+## Stap 1: Initialiseer het document
 
-```csharp
-ParagraphCollection paragraphs = body.Paragraphs;
-Assert.AreEqual(4, paragraphs.Count);
-para = paragraphs[2];
-para.Remove();
-
-// Terwijl we revisies bijhouden, bestaat de alinea nog steeds in het document en is de vlag 'IsDeleteRevision' ingesteld
-// en wordt als recensie in Microsoft Word weergegeven, totdat we alle recensies accepteren of afwijzen.
-Assert.AreEqual(4, paragraphs.Count);
-Assert.True(para.IsDeleteRevision);
-```
-
-## Stap 4: Accepteer wijzigingen
-
-Wij accepteren alle wijzigingen in het document. Hier is hoe:
-
-```csharp
-doc.AcceptAllRevisions();
-Assert.AreEqual(3, paragraphs.Count);
-Assert.That(para, Is.Empty);
-```
-
-## Stap 5: Stop met het bijhouden van beoordelingen
-
-We stoppen met het bijhouden van revisies, zodat wijzigingen in het document niet langer als revisies worden weergegeven. Hier is hoe:
-
-```csharp
-doc.StopTrackRevisions();
-```
-## Stap 6: Het document opslaan
-
- Nadat u het tekstinvoerformulierveld hebt ingevoegd, slaat u het document op de gewenste locatie op met behulp van de`Save`methode. Zorg ervoor dat u het juiste bestandspad opgeeft:
-
-```csharp
-doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
-```
-
-### Voorbeeldbroncode voor het accepteren van revisies met Aspose.Words voor .NET
-
-Hier is de volledige broncode voor het accepteren van wijzigingen in een document met Aspose.Words voor .NET:
-
+Om te beginnen moeten we een nieuw document maken en enkele paragrafen toevoegen. Dit zal de weg vrijmaken voor het volgen van herzieningen.
 
 ```csharp
 // Het pad naar de documentenmap.
@@ -96,93 +48,102 @@ Paragraph para = body.FirstParagraph;
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2. ");
 body.AppendParagraph("Paragraph 3. ");
+```
 
-//We hebben drie paragrafen, waarvan geen enkele als enige vorm van herziening is geregistreerd
-// Als we inhoud aan het document toevoegen of verwijderen terwijl we revisies bijhouden,
-// ze worden als zodanig in het document weergegeven en kunnen worden geaccepteerd/afgewezen.
+In deze stap hebben we een nieuw document gemaakt en er drie alinea's aan toegevoegd. Deze paragrafen zullen dienen als basis voor het bijhouden van revisies.
+
+## Stap 2: Begin met het bijhouden van revisies
+
+Vervolgens moeten we het bijhouden van revisies inschakelen. Hierdoor kunnen we eventuele wijzigingen in het document vastleggen.
+
+```csharp
+// Begin met het bijhouden van revisies.
 doc.StartTrackRevisions("John Doe", DateTime.Now);
+```
 
+ Door te bellen`StartTrackRevisions`, zorgen we ervoor dat het document alle daaropvolgende wijzigingen bijhoudt. De naam van de auteur en de huidige datum worden als parameters doorgegeven.
+
+## Stap 3: Voeg een revisie toe
+
+Nu het bijhouden van revisies is ingeschakeld, gaan we een nieuwe alinea toevoegen. Deze toevoeging wordt gemarkeerd als een herziening.
+
+```csharp
 // Deze paragraaf is een revisie en de bijbehorende vlag "IsInsertRevision" is ingesteld.
 para = body.AppendParagraph("Paragraph 4. ");
-Assert.True(para.IsInsertRevision);
+```
 
+Hier wordt een nieuwe paragraaf ("Paragraaf 4.") toegevoegd. Omdat het bijhouden van revisies is ingeschakeld, wordt deze paragraaf gemarkeerd als een revisie.
+
+## Stap 4: verwijder een alinea
+
+Vervolgens zullen we een bestaande paragraaf verwijderen en observeren hoe de herziening wordt bijgehouden.
+
+```csharp
 // Haal de alineaverzameling van het document op en verwijder een alinea.
 ParagraphCollection paragraphs = body.Paragraphs;
-Assert.AreEqual(4, paragraphs.Count);
 para = paragraphs[2];
 para.Remove();
+```
 
-// Omdat we revisies bijhouden, bestaat de alinea nog steeds in het document en is de waarde "IsDeleteRevision" ingesteld
-// en wordt als revisie in Microsoft Word weergegeven, totdat we alle revisies accepteren of afwijzen.
-Assert.AreEqual(4, paragraphs.Count);
-Assert.True(para.IsDeleteRevision);
+In deze stap wordt de derde alinea verwijderd. Omdat revisies worden bijgehouden, wordt deze verwijdering geregistreerd en wordt de alinea gemarkeerd voor verwijdering in plaats van onmiddellijk uit het document te worden verwijderd.
 
-// De paragraaf 'Revisie verwijderen' wordt verwijderd zodra we de wijzigingen accepteren.
+## Stap 5: Accepteer alle revisies
+
+Laten we ten slotte alle bijgehouden revisies accepteren, waardoor de wijzigingen in het document worden bevestigd.
+
+```csharp
+// Accepteer alle revisies.
 doc.AcceptAllRevisions();
-Assert.AreEqual(3, paragraphs.Count);
-Assert.That(para, Is.Empty);
+```
 
-// Als u het bijhouden van revisies stopt, verschijnt deze tekst als normale tekst.
-// Revisies worden niet meegeteld als het document wordt gewijzigd.
+ Door te bellen`AcceptAllRevisions`zorgen wij ervoor dat alle wijzigingen (toevoegingen en verwijderingen) worden geaccepteerd en toegepast op het document. De revisies zijn niet langer gemarkeerd en zijn geïntegreerd in het document.
+
+## Stap 6: Stop met het bijhouden van revisies
+
+### Schakel het bijhouden van revisies uit
+
+Ter afsluiting kunnen we het bijhouden van revisies uitschakelen om te voorkomen dat verdere wijzigingen worden vastgelegd.
+
+```csharp
+// Houd op met het bijhouden van revisies.
 doc.StopTrackRevisions();
+```
 
+Deze stap voorkomt dat het document nieuwe wijzigingen bijhoudt en behandelt alle daaropvolgende bewerkingen als reguliere inhoud.
+
+## Stap 7: Bewaar het document
+
+Sla ten slotte het gewijzigde document op in de opgegeven map.
+
+```csharp
 // Bewaar het document.
 doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
 ```
+
+Door het document op te slaan, zorgen we ervoor dat al onze wijzigingen en geaccepteerde revisies behouden blijven.
+
 ## Conclusie
 
-In deze zelfstudie hebben we geleerd hoe u revisies in een Word-document kunt accepteren met behulp van de functie Revisies accepteren van Aspose.Words voor .NET. We hebben de stappen gevolgd om documentinhoud toe te voegen en te bewerken, revisies bij te houden, een herziene paragraaf te verwijderen, alle wijzigingen te accepteren en te stoppen met het bijhouden van revisies. Nu kunt u deze kennis toepassen om revisies in uw eigen Word-documenten effectief te beheren met Aspose.Words voor .NET.
+Het beheren van documentrevisies kan een hele klus zijn, maar met Aspose.Words voor .NET wordt het eenvoudig en efficiënt. Door de stappen in deze handleiding te volgen, kunt u eenvoudig wijzigingen in uw Word-documenten volgen, accepteren en afwijzen, zodat uw documenten altijd up-to-date en accuraat zijn. Dus waarom wachten? Duik in de wereld van Aspose.Words en stroomlijn vandaag nog uw documentbeheer!
 
-### Veelgestelde vragen
+## Veelgestelde vragen
 
-#### Vraag: Hoe schakel ik het bijhouden van revisies in Aspose.Words voor .NET in?
+### Hoe begin ik met het bijhouden van revisies in Aspose.Words voor .NET?
 
-#### Oplossing 1:
+ U kunt beginnen met het bijhouden van revisies door het telefoonnummer te bellen`StartTrackRevisions` methode op uw documentobject en geef de naam van de auteur en de huidige datum door.
 
- A: Om het bijhouden van revisies in Aspose.Words voor .NET in te schakelen, gebruikt u de`StartTrackRevisions` werkwijze van de`Document` object en specificeer de naam van de auteur en de startdatum voor het bijhouden van revisies.
+### Kan ik op elk moment stoppen met het bijhouden van revisies?
 
-```csharp
-doc.StartTrackRevisions("John Doe", DateTime.Now);
-```
+Ja, u kunt stoppen met het bijhouden van revisies door het telefoonnummer te bellen`StopTrackRevisions` methode op uw documentobject.
 
-#### Oplossing 2:
+### Hoe accepteer ik alle revisies in een document?
 
- A: U kunt het bijhouden van revisies ook inschakelen met behulp van de`Document` constructeur die accepteert`trackRevisions`En`author` parameters.
+ Om alle revisies te accepteren, gebruikt u de`AcceptAllRevisions` methode op uw documentobject.
 
-```csharp
-Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });
-```
+### Kan ik specifieke herzieningen afwijzen?
 
-#### Vraag: Hoe accepteer ik alle wijzigingen in een document met Aspose.Words voor .NET?
+ Ja, u kunt specifieke revisies afwijzen door ernaar te navigeren en de`Reject` methode.
 
- EEN: Gebruik de`AcceptAllRevisions` werkwijze van de`Document` bezwaar maken tegen het accepteren van alle wijzigingen die in het document zijn aangebracht.
+### Waar kan ik Aspose.Words voor .NET downloaden?
 
-```csharp
-doc.AcceptAllRevisions();
-```
-
-#### Vraag: Hoe bewaar ik een gewijzigd document met geaccepteerde revisies?
-
- Gebruik de`Save` werkwijze van de`Document` object om het gewijzigde document met geaccepteerde revisies op te slaan. Zorg ervoor dat u het juiste bestandspad opgeeft.
-
-```csharp
-doc.Save("path/to/the/document.docx");
-```
-
-#### Vraag: Hoe stop ik met het bijhouden van revisies in Aspose.Words voor .NET?
-
- EEN: Gebruik de`StopTrackRevisions` werkwijze van de`Document` bezwaar maken om het bijhouden van revisies te stoppen.
-
-```csharp
-doc.StopTrackRevisions();
-```
-
-#### Vraag: Hoe verwijder ik een herziene alinea in een document met Aspose.Words voor .NET?
-
- A: Om een herziene alinea uit een document te verwijderen, kunt u de`Remove` methode van het verzamelen van alinea's.
-
-```csharp
-ParagraphCollection paragraphs = body.Paragraphs;
-Paragraph para = paragraphs[2];
-para.Remove();
-```
+ U kunt Aspose.Words voor .NET downloaden van de[downloadlink](https://releases.aspose.com/words/net/).

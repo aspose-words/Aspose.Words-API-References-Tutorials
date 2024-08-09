@@ -90,7 +90,7 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.doc
 
 ## Kesimpulan
 
-Dan itu dia! Hanya dengan beberapa baris kode, Anda telah menguasai seni mendeteksi penomoran dengan spasi di dokumen teks biasa menggunakan Aspose.Words untuk .NET. Fitur ini bisa sangat berguna ketika menangani berbagai format teks dan memastikan daftar Anda terwakili secara akurat dalam dokumen Word Anda. Jadi, lain kali Anda menemukan daftar rumit tersebut, Anda akan tahu persis apa yang harus dilakukan.
+Dan itu dia! Hanya dengan beberapa baris kode, Anda telah menguasai seni mendeteksi penomoran dengan spasi di dokumen teks biasa menggunakan Aspose.Words untuk .NET. Fitur ini bisa sangat berguna saat menangani berbagai format teks dan memastikan daftar Anda terwakili secara akurat dalam dokumen Word Anda. Jadi, lain kali Anda menemukan daftar rumit tersebut, Anda akan tahu persis apa yang harus dilakukan.
 
 ## FAQ
 

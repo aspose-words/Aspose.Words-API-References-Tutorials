@@ -98,7 +98,7 @@ doc.Save(dataDir + "InsertNestedFields.docx");
 
 ## 結論
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 成功將巢狀欄位插入 Word 文件中。這個功能強大的庫使得以程式設計方式操作 Word 文件變得異常容易。無論您是產生報表、建立範本或自動化文件工作流程，Aspose.Words 都能滿足您的需求。
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功將巢狀欄位插入 Word 文件中。這個功能強大的庫使得以程式設計方式操作 Word 文件變得異常容易。無論您是產生報表、建立範本或自動化文件工作流程，Aspose.Words 都能滿足您的需求。
 
 ## 常見問題解答
 

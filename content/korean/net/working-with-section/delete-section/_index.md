@@ -9,7 +9,7 @@ url: /ko/net/working-with-section/delete-section/
 ---
 ## 소개
 
-그래서 당신은 .NET용 Aspose.Words를 사용하여 문서 조작의 세계에 뛰어들기로 결정했습니다. 환상적인 선택! Aspose.Words는 Word 문서와 관련된 모든 것을 처리하는 강력한 라이브러리입니다. 생성, 수정, 변환 중 무엇을 다루든 Aspose.Words가 도와드립니다. 이 가이드에서는 Word 문서에서 섹션을 삭제하는 방법을 안내합니다. Aspose 전문가가 될 준비가 되셨나요? 시작하자!
+그래서 당신은 .NET용 Aspose.Words를 사용하여 문서 조작의 세계에 뛰어들기로 결정했습니다. 환상적인 선택! Aspose.Words는 Word 문서와 관련된 모든 것을 처리하는 강력한 라이브러리입니다. 생성, 수정, 변환 중 무엇을 다루든 Aspose.Words가 도와드립니다. 이 가이드에서는 Word 문서에서 섹션을 삭제하는 방법을 안내합니다. Aspose 전문가가 될 준비가 되셨나요? 시작해 봅시다!
 
 ## 전제 조건
 
@@ -55,7 +55,7 @@ doc.FirstSection.Remove();
 ## FAQ
 
 ### 여러 섹션을 한 번에 삭제할 수 있나요?
-그래 넌 할수있어. 삭제하고 싶은 섹션을 반복해서 하나씩 제거하세요.
+예, 가능합니다. 삭제하고 싶은 섹션을 반복해서 하나씩 제거하세요.
 
 ### .NET용 Aspose.Words는 무료인가요?
  Aspose.Words는 무료 평가판을 제공합니다.[여기](https://releases.aspose.com/) 전체 기능을 사용하려면 라이센스를 구매해야 합니다[여기](https://purchase.aspose.com/buy).

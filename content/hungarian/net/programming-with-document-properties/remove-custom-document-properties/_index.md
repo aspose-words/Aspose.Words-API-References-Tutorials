@@ -9,7 +9,7 @@ url: /hu/net/programming-with-document-properties/remove-custom-document-propert
 ---
 ## Bevezetés
 
-Volt már olyan, hogy belegabalyodott a Word-fájljaiban található egyéni dokumentumtulajdonságok hálójába? Nem vagy egyedül! Ezeknek a tulajdonságoknak a kezelése gondot okozhat, de az Aspose.Words for .NET segítségével könnyedén leegyszerűsítheti ezt a folyamatot. Ebben az oktatóanyagban végigvezetjük az egyéni dokumentumtulajdonságok eltávolításán az Aspose.Words for .NET használatával. Akár tapasztalt fejlesztő, akár csak most kezdi, ezt az útmutatót egyszerűnek és egyértelműnek találja. Készen állsz a merülésre? Kezdjük el!
+Volt már olyan, hogy belegabalyodott a Word-fájljaiban található egyéni dokumentumtulajdonságok hálójába? Nem vagy egyedül! Ezeknek a tulajdonságoknak a kezelése gondot okozhat, de az Aspose.Words for .NET segítségével könnyedén leegyszerűsítheti ezt a folyamatot. Ebben az oktatóanyagban végigvezetjük az egyéni dokumentumtulajdonságok eltávolításán az Aspose.Words for .NET használatával. Akár tapasztalt fejlesztő, akár csak most kezdi, ezt az útmutatót egyszerűnek és egyértelműnek találja. Készen állsz a merülésre? Kezdjük is!
 
 ## Előfeltételek
 
@@ -101,10 +101,10 @@ Az Aspose.Words for .NET egy hatékony könyvtár Word-dokumentumokkal való pro
 Az Aspose.Words for .NET kifejezetten .NET-alkalmazásokhoz készült. Az Aspose azonban hasonló könyvtárakat kínál a Java és más platformokon.
 
 ### 3. Hogyan szerezhetem be az Aspose.Words .NET ingyenes próbaverzióját?
- tudsz[tölts le egy ingyenes próbaverziót](https://releases.aspose.com/) az Aspose webhelyéről.
+ Tudod[tölts le egy ingyenes próbaverziót](https://releases.aspose.com/) az Aspose webhelyéről.
 
 ### 4. Hol találok további oktatóanyagokat az Aspose.Words for .NET-ről?
  Nézze meg a[dokumentáció](https://reference.aspose.com/words/net/) további oktatóanyagokért és példákért.
 
 ### 5. Hogyan vásárolhatok licencet az Aspose.Words for .NET-hez?
- tudsz[vásároljon licencet](https://purchase.aspose.com/buy) közvetlenül az Aspose webhelyéről.
+ Tudod[vásároljon licencet](https://purchase.aspose.com/buy) közvetlenül az Aspose webhelyéről.

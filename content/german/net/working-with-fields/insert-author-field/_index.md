@@ -15,7 +15,7 @@ In diesem Tutorial tauchen wir in die Details ein, wie man mit Aspose.Words für
 
 Bevor wir mit dem Tutorial beginnen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
 
--  Aspose.Words für .NET-Bibliothek: Sie können[hier herunterladen](https://releases.aspose.com/words/net/).
+-  Aspose.Words für .NET-Bibliothek: Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 - Visual Studio: Hier schreiben und führen wir unseren Code aus.
 - .NET Framework: Stellen Sie sicher, dass es auf Ihrem Computer installiert ist.
 - Grundkenntnisse in C#: Kenntnisse in der C#-Programmierung erleichtern Ihnen das Folgen.

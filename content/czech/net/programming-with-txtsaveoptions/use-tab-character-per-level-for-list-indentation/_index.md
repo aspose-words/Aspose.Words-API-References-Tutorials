@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-txtsaveoptions/use-tab-character-per-level-for-list-indentation/
 ---
-## Úvod
+## Zavedení
 
 Seznamy jsou zásadní při organizování obsahu, ať už připravujete zprávu, píšete výzkumnou práci nebo připravujete prezentaci. Pokud však jde o prezentaci seznamů s více úrovněmi odsazení, může být dosažení požadovaného formátu trochu složité. Pomocí Aspose.Words for .NET můžete snadno spravovat odsazení seznamu a přizpůsobit, jak je každá úroveň zastoupena. V tomto tutoriálu se zaměříme na vytvoření seznamu s více úrovněmi odsazení s použitím znaků tabulátoru pro přesné formátování. Na konci této příručky budete mít jasno v tom, jak nastavit a uložit dokument se správným stylem odsazení.
 
@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-V této části vytvoříme víceúrovňový seznam s odsazením s kartami pomocí Aspose.Words for .NET. Následuj tyto kroky:
+V této části vytvoříme víceúrovňový seznam s odsazením s kartami pomocí Aspose.Words for .NET. Postupujte takto:
 
 ## Krok 1: Nastavte svůj dokument
 
@@ -118,10 +118,10 @@ tomto tutoriálu jsme prošli vytvořením víceúrovňového seznamu s odsazen�
 Ano, Aspose.Words umožňuje přizpůsobení stylů seznamů na různých úrovních. Chcete-li dosáhnout různých stylů, můžete upravit možnosti formátování seznamu.
 
 ### Co když potřebuji použít odrážky místo čísel?
- Použijte`ListFormat.ApplyBulletDefault()` metoda místo toho`ApplyNumberDefault()` vytvořit seznam s odrážkami.
+ Použijte`ListFormat.ApplyBulletDefault()` metoda místo toho`ApplyNumberDefault()` k vytvoření seznamu s odrážkami.
 
 ### Jak mohu upravit velikost znaku tabulátoru použitého pro odsazení?
- Bohužel velikost záložky v`TxtSaveOptions`je opraveno. Chcete-li upravit velikost odsazení, možná budete muset použít mezery nebo přímo přizpůsobit formátování seznamu.
+ Bohužel velikost záložky v`TxtSaveOptions`je pevná. Chcete-li upravit velikost odsazení, možná budete muset použít mezery nebo přímo přizpůsobit formátování seznamu.
 
 ### Mohu tato nastavení použít při exportu do jiných formátů, jako je PDF nebo DOCX?
 Konkrétní nastavení znaků tabulátoru platí pro textové soubory. U formátů jako PDF nebo DOCX budete muset upravit možnosti formátování v rámci těchto formátů.

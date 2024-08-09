@@ -64,7 +64,7 @@ ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = tr
 
 ## Langkah 4: Tambahkan Dokumen Sumber ke Dokumen Tujuan
 
-Sekarang, mari kita lakukan penggabungan. Ini adalah dimana keajaiban terjadi. Kami menambahkan dokumen sumber ke dokumen tujuan saat menggunakan opsi impor yang ditentukan.
+Sekarang, mari kita lakukan penggabungan. Di sinilah keajaiban terjadi. Kami menambahkan dokumen sumber ke dokumen tujuan saat menggunakan opsi impor yang ditentukan.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);

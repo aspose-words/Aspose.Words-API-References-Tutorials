@@ -93,7 +93,7 @@ date_picker.name = "birth_date"
 
 ### Dodawanie tekstu zastępczego
 
- Tekst zastępczy w polach wprowadzania tekstu wskazuje użytkownikom oczekiwany format wprowadzania. Użyj`PlaceholderText` właściwość, aby dodać symbole zastępcze:
+ Tekst zastępczy w polach wprowadzania tekstu wskazuje użytkownikom oczekiwany format wprowadzania. Skorzystaj z`PlaceholderText` właściwość, aby dodać symbole zastępcze:
 
 ```python
 text_input_field.placeholder_text = "Enter your full name"

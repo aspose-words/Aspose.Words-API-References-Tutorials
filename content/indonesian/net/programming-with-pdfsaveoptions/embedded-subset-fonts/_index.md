@@ -2,7 +2,7 @@
 title: Sematkan Subset Font dalam Dokumen PDF
 linktitle: Sematkan Subset Font dalam Dokumen PDF
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Kurangi ukuran file PDF dengan hanya menyematkan subset font yang diperlukan menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk mengoptimalkan PDF Anda secara efisien.
+description: Kurangi ukuran file PDF dengan menyematkan hanya subset font yang diperlukan menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk mengoptimalkan PDF Anda secara efisien.
 type: docs
 weight: 10
 url: /id/net/programming-with-pdfsaveoptions/embedded-subset-fonts/
@@ -73,7 +73,7 @@ Dan itu dia! Dengan mengikuti langkah-langkah sederhana ini, Anda dapat menguran
 Menyematkan hanya subset font yang diperlukan dapat mengurangi ukuran file PDF secara signifikan tanpa mengurangi tampilan dan keterbacaan dokumen.
 
 ### Bisakah saya kembali menyematkan font lengkap jika diperlukan?
- Ya kamu bisa. Cukup atur`EmbedFullFonts`properti ke`true` dalam`PdfSaveOptions`.
+ Ya, kamu bisa. Cukup atur`EmbedFullFonts`properti ke`true` di`PdfSaveOptions`.
 
 ### Apakah Aspose.Words untuk .NET mendukung fitur pengoptimalan PDF lainnya?
 Sangat! Aspose.Words untuk .NET menawarkan berbagai opsi untuk mengoptimalkan PDF, termasuk kompresi gambar dan menghapus objek yang tidak digunakan.

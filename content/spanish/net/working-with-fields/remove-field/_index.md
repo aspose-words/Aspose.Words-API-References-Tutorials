@@ -66,11 +66,11 @@ Finalmente, necesitamos guardar nuestro documento. Este paso garantiza que todo 
 doc.Save(dataDir + "WorkingWithFields.RemoveField.docx");
 ```
 
-¡Y ahí lo tienes! Ha eliminado con éxito un campo de su documento de Word usando Aspose.Words para .NET. ¡Pero espera hay mas! Analicemos esto aún más para asegurarnos de que comprenda cada detalle.
+¡Y ahí lo tienes! Ha eliminado con éxito un campo de su documento de Word usando Aspose.Words para .NET. ¡Pero espera, hay más! Analicemos esto aún más para asegurarnos de que comprenda cada detalle.
 
 ## Conclusión
 
-¡Y eso es una envoltura! Ha aprendido cómo eliminar campos de un documento de Word usando Aspose.Words para .NET. Es una herramienta simple pero poderosa que puede ahorrarle mucho tiempo y esfuerzo. Ahora, ¡adelante y limpia esos documentos como un profesional!
+¡Y eso es todo! Ha aprendido cómo eliminar campos de un documento de Word usando Aspose.Words para .NET. Es una herramienta simple pero poderosa que puede ahorrarle mucho tiempo y esfuerzo. Ahora, ¡adelante y limpia esos documentos como un profesional!
 
 ## Preguntas frecuentes
 

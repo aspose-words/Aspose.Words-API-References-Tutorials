@@ -81,11 +81,11 @@ Finalmente guardamos el documento modificado. Este es el momento en que enmarcam
 doc.Save(dataDir + "FindAndReplace.ReplaceWithString.docx");
 ```
 
- El documento se guarda en el directorio especificado con el nombre`FindAndReplace.ReplaceWithString.docx`. ¡Y voilá! Hemos realizado con éxito una operación de búsqueda y reemplazo.
+ El documento se guarda en el directorio especificado con el nombre`FindAndReplace.ReplaceWithString.docx`. ¡Y listo! Hemos realizado con éxito una operación de búsqueda y reemplazo.
 
 ## Conclusión
 
-¡Ahí tienes! Con Aspose.Words para .NET, reemplazar cadenas en un documento de Word es muy sencillo. Esta herramienta es increíblemente poderosa y le permite manipular documentos mediante programación con facilidad. Ya sea que esté actualizando una sola palabra o revisando secciones enteras, Aspose.Words lo respalda.
+¡Ahí lo tienes! Con Aspose.Words para .NET, reemplazar cadenas en un documento de Word es muy sencillo. Esta herramienta es increíblemente poderosa y le permite manipular documentos mediante programación con facilidad. Ya sea que esté actualizando una sola palabra o revisando secciones enteras, Aspose.Words lo respalda.
 
 ## Preguntas frecuentes
 
@@ -93,7 +93,7 @@ doc.Save(dataDir + "FindAndReplace.ReplaceWithString.docx");
 Sí, puede encadenar múltiples operaciones de reemplazo o usar expresiones regulares para hacer coincidir y reemplazar múltiples patrones.
 
 ### ¿Aspose.Words para .NET es gratuito?
- Aspose.Words para .NET es una biblioteca paga, pero puede obtener una[prueba gratis](https://releases.aspose.com/) para probar sus características.
+ Aspose.Words para .NET es una biblioteca paga, pero puede obtener una[prueba gratuita](https://releases.aspose.com/) para probar sus características.
 
 ### ¿Puedo reemplazar texto con contenido formateado?
 ¡Absolutamente! Aspose.Words le permite reemplazar texto con contenido formateado, incluidas diferentes fuentes, colores y estilos.

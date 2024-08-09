@@ -77,7 +77,7 @@ Cuối cùng, lưu tài liệu với các tùy chọn lưu đã cấu hình.
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bằng cách làm theo các bước này, bạn có thể đảm bảo rằng các ký tự điều khiển cũ của mình được giữ nguyên khi làm việc với tài liệu Word trong Aspose.Words for .NET. Tính năng này có thể là cứu cánh, đặc biệt khi xử lý các tài liệu phức tạp trong đó các ký tự điều khiển đóng vai trò quan trọng. 
+Và bạn có nó! Bằng cách làm theo các bước này, bạn có thể đảm bảo rằng các ký tự điều khiển cũ của mình được giữ nguyên khi làm việc với tài liệu Word trong Aspose.Words for .NET. Tính năng này có thể là cứu cánh, đặc biệt khi xử lý các tài liệu phức tạp trong đó các ký tự điều khiển đóng vai trò quan trọng. 
 
 ## Câu hỏi thường gặp
 

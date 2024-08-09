@@ -2,101 +2,111 @@
 title: 각 섹션에서 목록 다시 시작
 linktitle: 각 섹션에서 목록 다시 시작
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 Word 문서의 각 섹션에 번호 매기기 목록을 재설정하는 방법을 알아보세요.
+description: .NET용 Aspose.Words를 사용하여 Word 문서의 각 섹션에서 목록을 다시 시작하는 방법을 알아보세요. 목록을 효과적으로 관리하려면 자세한 단계별 가이드를 따르세요.
 type: docs
 weight: 10
 url: /ko/net/working-with-list/restart-list-at-each-section/
 ---
+## 소개
 
-이 단계별 튜토리얼에서는 .NET용 Aspose.Words를 사용하여 Word 문서의 각 섹션에 번호 매기기 목록을 재설정하는 방법을 보여줍니다. 제공된 C# 소스 코드를 설명하고 이를 자신의 프로젝트에 구현하는 방법을 보여 드리겠습니다.
+구조화되고 잘 구성된 문서를 작성하는 것은 때때로 복잡한 퍼즐을 푸는 것처럼 느껴질 수 있습니다. 그 퍼즐 중 하나는 특히 각 섹션에서 목록을 다시 시작하려는 경우 목록을 효과적으로 관리하는 것입니다. .NET용 Aspose.Words를 사용하면 이 작업을 원활하게 수행할 수 있습니다. .NET용 Aspose.Words를 사용하여 Word 문서의 각 섹션에서 목록을 다시 시작하는 방법을 살펴보겠습니다.
 
- 시작하려면 개발 환경에 Aspose.Words for .NET이 설치 및 구성되어 있는지 확인하세요. 아직 설치하지 않았다면 다음에서 라이브러리를 다운로드하여 설치하세요.[Aspose.Releases]https://releases.aspose.com/words/net/.
+## 전제 조건
 
-## 1단계: 문서 및 목록 만들기
+시작하기 전에 다음 사항이 있는지 확인하세요.
 
-먼저 새 문서를 만들고 기본 번호 매기기 목록을 추가합니다.
+1.  .NET용 Aspose.Words: 다음 사이트에서 최신 버전을 다운로드하여 설치하세요.[Aspose 릴리스](https://releases.aspose.com/words/net/) 페이지.
+2. .NET 환경: .NET이 설치된 개발 환경을 설정합니다.
+3. C#에 대한 기본 이해: C# 프로그래밍 언어에 익숙한 것이 좋습니다.
+4.  Aspose 라이센스: 다음을 선택할 수 있습니다.[임시 면허증](https://purchase.aspose.com/temporary-license/) 당신이 하나도 없다면.
+
+## 네임스페이스 가져오기
+
+코드를 작성하기 전에 필요한 네임스페이스를 가져와야 합니다.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+이제 쉽게 따라할 수 있도록 프로세스를 여러 단계로 나누어 보겠습니다.
+
+## 1단계: 문서 초기화
+
+먼저 새 문서 인스턴스를 만들어야 합니다.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
-
-doc.Lists.Add(ListTemplate.NumberDefault);
-
-List list = doc.Lists[0];
-list. IsRestartAtEachSection = true;
 ```
 
-## 2단계: 목록에 항목 추가하기
+## 2단계: 번호 매기기 목록 추가
 
- 그런 다음`DocumentBuilder` 목록에 항목을 추가하려면 루프를 사용하여 목록에 여러 항목을 추가할 수 있습니다.
+다음으로 문서에 번호가 매겨진 목록을 추가합니다. 이 목록은 기본 번호 매기기 형식을 따릅니다.
+
+```csharp
+doc.Lists.Add(ListTemplate.NumberDefault);
+```
+
+## 3단계: 목록에 액세스하고 다시 시작 속성 설정
+
+방금 생성한 목록을 검색하고 설정하세요.`IsRestartAtEachSection`재산`true`. 이렇게 하면 목록의 새 섹션마다 번호 매기기가 다시 시작됩니다.
+
+```csharp
+List list = doc.Lists[0];
+list.IsRestartAtEachSection = true;
+```
+
+## 4단계: 문서 작성기 만들기 및 목록 연결
+
+ 만들기`DocumentBuilder` 문서에 콘텐츠를 삽입하고 목록과 연결합니다.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.ListFormat.List = list;
+```
 
+## 5단계: 목록 항목 추가 및 섹션 나누기 삽입
+
+이제 목록에 항목을 추가합니다. 다시 시작 기능을 설명하기 위해 특정 항목 수 뒤에 섹션 나누기를 삽입하겠습니다.
+
+```csharp
 for (int i = 1; i < 45; i++)
 {
-     builder.Writeln($"List item {i}");
+    builder.Writeln($"List item {i}");
 
-     if (i == 15)
-         builder.InsertBreak(BreakType.SectionBreakNewPage);
+    if (i == 15)
+        builder.InsertBreak(BreakType.SectionBreakNewPage);
 }
 ```
 
-이 예에서는 번호 다시 매기기를 설명하기 위해 15번째 목록 항목 뒤에 구역 나누기를 삽입합니다.
+## 6단계: 문서 저장
 
-## 3단계: 수정된 문서 저장
-
-마지막으로 수정된 문서를 저장합니다.
+마지막으로 규정 준수를 보장하기 위해 적절한 옵션을 사용하여 문서를 저장합니다.
 
 ```csharp
 OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Transitional };
-
 doc.Save(dataDir + "ResetListAtEachSection.docx", options);
 ```
 
-그래서 ! .NET용 Aspose.Words를 사용하여 Word 문서의 각 섹션에 대한 번호 매기기 목록을 성공적으로 재설정했습니다.
+## 결론
 
-### 각 섹션의 목록을 재설정하는 예제 소스 코드
+그리고 거기에 있습니다! 다음 단계를 수행하면 Aspose.Words for .NET을 사용하여 Word 문서의 각 섹션에서 목록을 쉽게 다시 시작할 수 있습니다. 이 기능은 자체 목록 번호가 있는 별도의 섹션이 필요한 구조화된 문서를 만드는 데 매우 유용합니다. Aspose.Words를 사용하면 이러한 작업을 쉽게 처리할 수 있어 고품질 콘텐츠 제작에 집중할 수 있습니다.
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
+## FAQ
 
-doc.Lists.Add(ListTemplate.NumberDefault);
+### 다양한 목록 유형에 대해 각 섹션에서 목록을 다시 시작할 수 있나요?
+예, .NET용 Aspose.Words를 사용하면 글머리 기호 및 번호 매기기 목록을 포함한 다양한 목록 유형을 다시 시작할 수 있습니다.
 
-List list = doc.Lists[0];
-list. IsRestartAtEachSection = true;
+### 번호 매기기 형식을 사용자 정의하려면 어떻게 해야 합니까?
+ 번호 매기기 형식을 수정하여 사용자 정의할 수 있습니다.`ListTemplate` 목록을 생성할 때 속성입니다.
 
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.ListFormat.List = list;
+### 목록의 항목 수에 제한이 있나요?
+아니요, Aspose.Words for .NET을 사용하여 목록에 포함할 수 있는 항목 수에는 특별한 제한이 없습니다.
 
-for (int i = 1; i < 45; i++)
-{
-	 builder.Writeln($"List item {i}");
+### PDF와 같은 다른 문서 형식에서도 이 기능을 사용할 수 있나요?
+예, Aspose.Words를 사용하면 목록 구조를 유지하면서 Word 문서를 PDF와 같은 다른 형식으로 변환할 수 있습니다.
 
-	 if (i == 15)
-		 builder.InsertBreak(BreakType.SectionBreakNewPage);
-}
-
-OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Transitional };
-
-doc.Save(dataDir + "ResetListAtEachSection.docx", options);
-
-```
-
-자신의 프로젝트에서 이 코드를 자유롭게 사용하고 특정 요구 사항에 맞게 수정하십시오.
-
-### FAQ
-
-#### Q: Aspose.Words의 모든 섹션에서 목록을 어떻게 다시 시작할 수 있나요?
-
- A: Aspose.Words의 모든 섹션에서 목록을 다시 시작하려면`List`수업을 하고 번호가 매겨진 목록을 할당하세요. 그런 다음`List.IsRestartAtEachSection` 속성을 사용하여 각 섹션에서 번호 매기기를 다시 시작하도록 지정합니다. 각 섹션에서 번호 매기기가 올바르게 다시 시작되도록 이 목록을 문서의 하나 이상의 섹션과 연결할 수 있습니다.
-
-#### Q: Aspose.Words에서 목록의 번호 매기기 형식을 사용자 정의할 수 있나요?
-
- A: 예, Aspose.Words에서 목록의 번호 매기기 형식을 사용자 정의할 수 있습니다. 그만큼`List` 클래스는 이에 대한 여러 속성을 제공합니다.`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`등. 이러한 속성을 사용하여 목록 유형(번호 매기기, 글머리 기호 등), 번호 매기기 형식(아라비아 숫자, 로마 숫자, 문자 등) 및 기타 번호 매기기 형식 옵션을 설정할 수 있습니다.
-
-#### Q: Aspose.Words의 번호 매기기 목록에 추가 레벨을 추가할 수 있습니까?
-
- A: 예, Aspose.Words의 번호 목록에 추가 수준을 추가하는 것이 가능합니다. 그만큼`ListLevel`클래스를 사용하면 목록의 각 수준에 대한 서식 속성을 설정할 수 있습니다. 접두사, 접미사, 정렬, 들여쓰기 등과 같은 옵션을 설정할 수 있습니다. 이를 통해 여러 수준의 계층 구조로 목록을 만들 수 있습니다.
+### .NET용 Aspose.Words의 무료 평가판을 어떻게 받을 수 있나요?
+ 다음에서 무료 평가판을 받을 수 있습니다.[Aspose 릴리스](https://releases.aspose.com/) 페이지.

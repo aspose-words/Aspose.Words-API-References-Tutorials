@@ -17,8 +17,8 @@ Koda dalmadan önce, bu eğitimle birlikte takip etmeniz gereken her şeye sahip
 
 1. Temel C# Bilgisi: C# programlama konusunda rahat olmalısınız.
 2. Visual Studio Yüklü: Makinenizde Visual Studio'nun veya başka bir C# IDE'nin yüklü olduğundan emin olun.
-3.  Aspose.Words for .NET: Aspose.Words for .NET'in en son sürümünü aşağıdaki adresten indirip yükleyin:[Salıverme](https://releases.aspose.com/words/net/).
-4.  Geçerli Lisans: Lisansınız yoksa, bir lisans alabilirsiniz.[geçici lisans](https://purchase.aspose.com/temporary-license/) Evrim için.
+3.  Aspose.Words for .NET: Aspose.Words for .NET'in en son sürümünü aşağıdaki adresten indirip yükleyin:[Bültenler](https://releases.aspose.com/words/net/).
+4.  Geçerli Lisans: Lisansınız yoksa, bir lisans alabilirsiniz.[geçici lisans](https://purchase.aspose.com/temporary-license/) değerlendirme için.
 
 ## 1. Adım: Projenizi Kurun
 

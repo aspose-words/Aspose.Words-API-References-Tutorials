@@ -2,125 +2,98 @@
 title: إدراج كائن Ole كرمز باستخدام الدفق
 linktitle: إدراج كائن Ole كرمز باستخدام الدفق
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية إدراج كائن OLE كرمز باستخدام دفق مع Aspose.Words لـ .NET.
+description: تعرف على كيفية إدراج كائن OLE كرمز باستخدام دفق مع Aspose.Words لـ .NET في هذا البرنامج التعليمي التفصيلي خطوة بخطوة.
 type: docs
 weight: 10
 url: /ar/net/working-with-oleobjects-and-activex/insert-ole-object-as-icon-using-stream/
 ---
+## مقدمة
 
-فيما يلي دليل خطوة بخطوة لشرح التعليمات البرمجية المصدر لـ C# أدناه والتي توضح كيفية إدراج كائن OLE كرمز باستخدام دفق مع Aspose.Words لـ .NET.
+في هذا البرنامج التعليمي، سنتعمق في ميزة رائعة جدًا في Aspose.Words for .NET: إدراج كائن OLE (ربط الكائنات وتضمينها) كرمز باستخدام الدفق. سواء كنت تقوم بتضمين عرض تقديمي لـ PowerPoint، أو جدول بيانات Excel، أو أي نوع آخر من الملفات، سيوضح لك هذا الدليل كيفية القيام بذلك بالضبط. هل أنت مستعد للبدء؟ دعنا نذهب!
 
-## الخطوة 1: استيراد المراجع اللازمة
-قبل أن تبدأ، تأكد من استيراد المراجع اللازمة لاستخدام Aspose.Words for .NET في مشروعك. يتضمن ذلك استيراد مكتبة Aspose.Words وإضافة مساحات الأسماء المطلوبة إلى ملفك المصدر.
+## المتطلبات الأساسية
+
+قبل أن ننتقل إلى الكود، هناك بعض الأشياء التي ستحتاج إليها:
+
+-  Aspose.Words for .NET: إذا لم تكن قد قمت بذلك بالفعل،[تحميل](https://releases.aspose.com/words/net/) وقم بتثبيت Aspose.Words لـ .NET.
+- بيئة التطوير: Visual Studio أو أي بيئة تطوير أخرى لـ C#.
+- ملفات الإدخال: الملف الذي تريد تضمينه (على سبيل المثال، عرض تقديمي لـ PowerPoint) وصورة الرمز.
+
+## استيراد مساحات الأسماء
+
+للبدء، تأكد من استيراد مساحات الأسماء الضرورية في مشروعك:
 
 ```csharp
+using System;
+using System.IO;
 using Aspose.Words;
 using Aspose.Words.Drawing;
-using System.IO;
 ```
 
-## الخطوة 2: إنشاء مستند جديد ومولد المستندات
- في هذه الخطوة، سنقوم بإنشاء مستند جديد باستخدام الملف`Document` فئة ومنشئ المستندات باستخدام`DocumentBuilder` فصل.
+دعونا نقسم العملية خطوة بخطوة لتسهيل متابعتها.
+
+## الخطوة 1: إنشاء مستند جديد
+
+أولاً، سنقوم بإنشاء مستند جديد ومنشئ المستندات للعمل معه.
 
 ```csharp
+// المسار إلى دليل المستندات الخاص بك
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: قم بإدراج كائن OLE كرمز من الدفق
- استخدم منشئ المستندات`InsertOleObjectAsIcon` طريقة لإدراج كائن OLE كرمز من دفق في المستند. حدد دفق البيانات ونوع الكائن ومسار الرمز واسم الكائن المضمن.
+ فكر في`Document` كما قماشك الفارغ و`DocumentBuilder` مثل فرشاة الرسم الخاصة بك. نحن نقوم بإعداد أدواتنا للبدء في إنشاء تحفتنا الفنية.
+
+## الخطوة 2: تحضير الدفق
+
+بعد ذلك، نحتاج إلى إعداد دفق ذاكرة يحتوي على الملف الذي نريد تضمينه. في هذا المثال، سنقوم بتضمين عرض تقديمي لـ PowerPoint.
 
 ```csharp
-using (MemoryStream stream = new MemoryStream(File.ReadAllBytes(MyDir + "Presentation.pptx")))
+using (MemoryStream stream = new MemoryStream(File.ReadAllBytes("Path_to_your_directory/Presentation.pptx")))
 {
-     builder.InsertOleObjectAsIcon(stream, "Package", ImagesDir + "Logo icon.ico", "My embedded file");
+```
+
+تشبه هذه الخطوة تحميل الطلاء على الفرشاة. نحن نجهز ملفنا ليتم تضمينه.
+
+## الخطوة 3: أدخل كائن OLE كرمز
+
+الآن، سوف نستخدم أداة إنشاء المستندات لإدراج كائن OLE في المستند. سنحدد تدفق الملف، وProgID لنوع الملف (في هذه الحالة، "الحزمة")، والمسار إلى صورة الرمز، وتسمية الملف المضمن.
+
+```csharp
+builder.InsertOleObjectAsIcon(stream, "Package", "Path_to_your_directory/Logo icon.ico", "My embedded file");
 }
 ```
+
+هذا هو المكان الذي يحدث فيه السحر! نقوم بتضمين ملفنا ونعرضه كرمز داخل المستند.
 
 ## الخطوة 4: احفظ المستند
- استخدم الوثيقة`Save` طريقة حفظ المستند في ملف .
+
+وأخيرًا، نقوم بحفظ المستند في المسار المحدد.
 
 ```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
+doc.Save(dataDir + "WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
 ```
 
-### مثال للتعليمة البرمجية المصدر لإدراج كائن OLE كأيقونة باستخدام دفق مع Aspose.Words لـ .NET
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-using (MemoryStream stream = new MemoryStream(File.ReadAllBytes(MyDir + "Presentation.pptx")))
-{
-     builder.InsertOleObjectAsIcon(stream, "Package", ImagesDir + "Logo icon.ico", "My embedded file");
-}
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
-```
-
-هذا نموذج تعليمات برمجية كامل لإدراج كائن OLE كرمز باستخدام دفق مع Aspose.Words لـ .NET. تأكد من استيراد المراجع الضرورية واتبع الخطوات الموضحة مسبقًا لدمج هذا الرمز في مشروعك.
+تشبه هذه الخطوة وضع اللوحة النهائية في إطار وتعليقها على الحائط. المستند الخاص بك جاهز الآن للاستخدام!
 
 ## خاتمة
 
-يشرح الدليل التفصيلي أعلاه كيفية إدراج كائن OLE كرمز في مستند Word باستخدام التدفق مع Aspose.Words لـ .NET. باتباع الخطوات الموضحة، ستتمكن من دمج هذه الوظيفة في مشروعك. تأكد من استيراد المراجع الضرورية، وإنشاء مستند جديد ومولد المستندات، وإدراج كائن OLE كرمز من الدفق، ثم احفظ المستند. استخدم نموذج التعليمات البرمجية المقدم كنقطة بداية وقم بتخصيصه حسب احتياجاتك.
+وهنا لديك! لقد قمت بنجاح بتضمين كائن OLE كرمز في مستند Word باستخدام Aspose.Words لـ .NET. يمكن أن تساعدك هذه الميزة القوية في إنشاء مستندات ديناميكية وتفاعلية بسهولة. سواء كنت تقوم بتضمين عروض تقديمية أو جداول بيانات أو ملفات أخرى، فإن Aspose.Words يجعل الأمر سهلاً. فهيا، جربه، وشاهد الفرق الذي يمكن أن يحدثه في مستنداتك!
 
-### الأسئلة الشائعة
+## الأسئلة الشائعة
 
-#### س. كيفية استيراد المراجع الضرورية لاستخدام Aspose.Words لـ .NET؟
+### هل يمكنني تضمين أنواع مختلفة من الملفات باستخدام هذه الطريقة؟
+نعم، يمكنك تضمين أي نوع ملف يدعمه OLE، بما في ذلك Word وExcel وPowerPoint والمزيد.
 
-A. لاستيراد المراجع اللازمة، عليك اتباع الخطوات التالية:
+### هل أحتاج إلى ترخيص خاص لاستخدام Aspose.Words لـ .NET؟
+ نعم، يتطلب Aspose.Words for .NET ترخيصًا. يمكنك الحصول على[تجربة مجانية](https://releases.aspose.com/) أو شراء أ[ترخيص مؤقت](https://purchase.aspose.com/temporary-license/) للاختبار.
 
- أضف ما يلي`using` البيانات الموجودة أعلى الملف المصدر الخاص بك:
+### هل يمكنني تخصيص الرمز المستخدم لكائن OLE؟
+ قطعاً! يمكنك استخدام أي ملف صورة للأيقونة عن طريق تحديد مسارها في الملف`InsertOleObjectAsIcon` طريقة.
 
-```csharp
-using Aspose.Words;
-using Aspose.Words.Drawing;
-using System.IO;
-```
-تأكد من إضافة مكتبة Aspose.Words إلى مشروعك.
+### ماذا يحدث إذا كانت مسارات الملف أو الرمز غير صحيحة؟
+ستطرح الطريقة استثناءً. تأكد من صحة المسارات إلى ملفاتك لتجنب الأخطاء.
 
-#### س. كيفية إنشاء مستند جديد ومنشئ المستندات باستخدام Aspose.Words لـ .NET؟
-
-A. لإنشاء مستند جديد ومولد المستندات، يمكنك اتباع الخطوات التالية:
-
- استخدم ال`Document` فئة لإنشاء مستند جديد:
-
-```csharp
-Document doc = new Document();
-```
- استخدم ال`DocumentBuilder` فئة لإنشاء منشئ المستندات المرتبط بالمستند الذي تم إنشاؤه مسبقًا:
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-#### س. كيفية إدراج كائن OLE كرمز من دفق باستخدام Aspose.Words لـ .NET؟
-
-A. لإدراج كائن OLE كرمز من دفق، يمكنك اتباع الخطوات التالية:
-
- استخدم ال`InsertOleObjectAsIcon` طريقة منشئ المستندات لإدراج كائن OLE:
-
-```csharp
-using (MemoryStream stream = new MemoryStream(File.ReadAllBytes(MyDir + "Presentation.pptx")))
-{
-  builder.InsertOleObjectAsIcon(stream, "Package", ImagesDir + "Logo icon.ico", "My embedded file");
-}
-```
-
-#### س: كيفية حفظ المستند في ملف؟
-
-A.  لحفظ المستند في ملف، يمكنك استخدام`Save` طريقة الوثيقة التي تحدد مسار الوجهة:
-
-```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
-```
-
-#### Q. كيف يمكنني تضمين التعليمات البرمجية لإدراج كائن OLE كرمز من دفق في المشروع الخاص بي؟
-
-A. لتضمين التعليمات البرمجية الخاصة بإدراج كائن OLE كرمز من دفق في مشروعك، اتبع الخطوات التالية:
-- قم باستيراد المراجع اللازمة عن طريق إضافة المراجع المناسبة`using` صياغات.
--  قم بإنشاء مستند جديد ومنشئ المستندات باستخدام`Document`و`DocumentBuilder` الطبقات.
-- استخدم التعليمات البرمجية لإدراج كائن OLE كرمز من الدفق.
--  احفظ المستند باستخدام`Save` الطريقة مع مسار الوجهة المناسب.
-
-باتباع هذه الخطوات، ستتمكن من إدراج كائن OLE بنجاح كرمز من دفق باستخدام Aspose.Words for .NET. تأكد من اتباع التعليمات واستيراد المراجع اللازمة للحصول على النتائج المرجوة.
+### هل من الممكن ربط الكائن المضمن بدلاً من تضمينه؟
+نعم، يسمح لك Aspose.Words بإدراج كائنات OLE المرتبطة، والتي تشير إلى الملف دون تضمين محتواه.

@@ -2,75 +2,99 @@
 title: フォントフォルダの設定
 linktitle: フォントフォルダの設定
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET でフォント ディレクトリを設定し、ドキュメントで使用されるフォントが使用可能であることを確認する方法を学習します。
+description: Aspose.Words for .NET でカスタム フォント フォルダーを設定し、Word 文書がフォント不足なく正しくレンダリングされるようにする方法を学習します。
 type: docs
 weight: 10
 url: /ja/net/working-with-fonts/set-fonts-folder/
 ---
-このチュートリアルでは、Aspose.Words for .NET でフォント ディレクトリを設定する方法を説明します。Word 文書で使用されるフォントを含むディレクトリを指定する方法を学習します。
+## 導入
+
+.NET アプリケーションで Word 文書を操作しているときに、フォントが見つからないという問題に直面したことはありませんか? あなただけではありません。正しいフォント フォルダーを設定すると、この問題はシームレスに解決できます。このガイドでは、Aspose.Words for .NET を使用してフォント フォルダーを設定する方法について説明します。さっそく始めましょう!
 
 ## 前提条件
-始める前に、次のものが揃っていることを確認してください。
-- C#プログラミング言語の実用的な知識
-- プロジェクトにインストールされた .NET 用の Aspose.Words ライブラリ
+
+始める前に、以下のものを用意してください。
+
+- お使いのマシンに Visual Studio がインストールされている
+- .NET Framework のセットアップ
+- Aspose.Words for .NETライブラリ。まだダウンロードしていない場合は、こちらからダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
+
+## 名前空間のインポート
+
+まず、Aspose.Words を操作するために必要な名前空間をインポートする必要があります。コード ファイルの先頭に次の行を追加します。
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fonts;
+```
+
+以下の手順を慎重に実行すれば、フォント フォルダーの設定は簡単です。
 
 ## ステップ1: ドキュメントディレクトリを定義する
-まず、Word文書の場所にディレクトリパスを設定します。`"YOUR DOCUMENT DIRECTORY"`コード内に適切なパスを追加します。
+
+まず最初に、ドキュメント ディレクトリへのパスを定義します。このディレクトリには、Word ドキュメントと使用するフォントが含まれます。
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## ステップ2: フォントディレクトリを設定する
-インスタンスを作成する`FontSettings`クラスと使用`SetFontsFolder`フォントを含むディレクトリを指定する方法。`"Fonts"`実際のフォント ディレクトリの名前を使用します。
-
-```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.SetFontsFolder(dataDir + "Fonts", false);
-```
-
-## ステップ3: フォント設定でドキュメントを読み込む
-使用`LoadOptions`フォント設定を指定するクラス`FontSettings`オプションを選択します。`Document`これらのオプションを使用してドキュメントをロードするクラス。
-
-```csharp
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.FontSettings = fontSettings;
-Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
-
-```
-
-### Aspose.Words for .NET を使用してフォント フォルダーを設定するサンプル ソース コード 
-
-```csharp
-
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-FontSettings fontSettings = new FontSettings();
-fontSettings.SetFontsFolder(dataDir + "Fonts", false);
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.FontSettings = fontSettings;
-Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
-
 ```
 
+必ず交換してください`"YOUR DOCUMENT DIRECTORY"`ディレクトリへの実際のパスを入力します。
+
+## ステップ2: FontSettingsを初期化する
+
+さて、初期化する必要があります`FontSettings`オブジェクト。このオブジェクトを使用すると、カスタム フォント フォルダーを指定できます。
+
+```csharp
+FontSettings fontSettings = new FontSettings();
+```
+
+## ステップ3: フォントフォルダを設定する
+
+使用方法`SetFontsFolder`方法の`FontSettings`オブジェクトでは、カスタム フォントが保存されているフォルダーを指定します。
+
+```csharp
+fontSettings.SetFontsFolder(dataDir + "Fonts", false);
+```
+
+ここ、`dataDir + "Fonts"`ドキュメントディレクトリ内の「Fonts」という名前のフォルダを指します。2番目のパラメータは、`false`は、フォルダーが再帰的ではないことを示します。
+
+## ステップ4: LoadOptionsを作成する
+
+次に、`LoadOptions`クラス。このクラスは、指定されたフォント設定でドキュメントを読み込むのに役立ちます。
+
+```csharp
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.FontSettings = fontSettings;
+```
+
+## ステップ5: ドキュメントを読み込む
+
+最後に、Word文書を読み込み、`Document`クラスと`LoadOptions`物体。
+
+```csharp
+Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
+```
+
+必ず`"Rendering.docx"`は Word 文書の名前です。ファイル名に置き換えることができます。
+
 ## 結論
-おめでとうございます。これで、Aspose.Words for .NET でフォント ディレクトリを設定する方法がわかりました。この機能を使用すると、ドキュメントで使用されるフォントの可用性を確保し、フォントの表示の一貫性を確保できます。
 
-### よくある質問
+これで完了です。これらの手順に従うことで、Aspose.Words for .NET でカスタム フォント フォルダーを簡単に設定し、すべてのフォントが正しくレンダリングされるようにすることができます。この簡単な設定により、多くの手間が省け、ドキュメントが希望どおりの外観になります。
 
-#### Q: Aspose.Words でカスタム フォント フォルダーを設定するにはどうすればよいですか?
+## よくある質問
 
- A: Aspose.Wordsでカスタムフォントフォルダーを設定するには、`FontsFolder`クラスと`SetFontsFolders`フォントを含むフォルダーへのパスを指定する方法。
+### カスタムフォントフォルダーを設定する必要があるのはなぜですか?
+カスタム フォント フォルダーを設定すると、Word 文書で使用されるすべてのフォントが正しくレンダリングされ、フォントが見つからないという問題を回避できます。
 
-#### Q: Aspose.Words で複数のフォント フォルダーを設定できますか?
+### 複数のフォントフォルダを設定できますか?
+はい、`SetFontsFolders`複数のフォルダを指定する方法。
 
- A: はい、Aspose.Wordsで複数のフォントフォルダを設定するには、`SetFontsFolders`使用したいさまざまなフォント フォルダーのパスを指定して、このメソッドを複数回実行します。
+### フォントが見つからない場合はどうなりますか?
+Aspose.Words は、不足しているフォントをシステム フォントの類似のフォントで置き換えようとします。
 
-#### Q: ドキュメントで使用されているフォントが定義されたフォント フォルダーに存在しない場合はどうなりますか?
+### Aspose.Words は .NET Core と互換性がありますか?
+はい、Aspose.Words は .NET Framework とともに .NET Core をサポートしています。
 
-A: ドキュメントで使用されているフォントが Aspose.Words で定義されているフォント フォルダーに存在しない場合は、代わりに代替フォントが使用されます。これにより、元のフォントが使用できない場合でも、ドキュメント内のテキストが常に正しく表示されるようになります。
-
-#### Q: Aspose.Words で定義されたフォント フォルダーは、システムにインストールされているフォントよりも優先されますか?
-
-A: はい、Aspose.Words で定義されたフォント フォルダーは、システムにインストールされているフォントよりも優先されます。つまり、定義されたフォント フォルダーとシステム フォントの両方に同じ名前のフォントが存在する場合、Word ドキュメントの処理時にはフォント フォルダーのバージョンが使用されます。
+### 問題が発生した場合、どこでサポートを受けることができますか?
+サポートを受けるには[Aspose.Words サポート フォーラム](https://forum.aspose.com/c/words/8).

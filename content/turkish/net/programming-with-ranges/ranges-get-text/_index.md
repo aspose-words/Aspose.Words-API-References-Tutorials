@@ -58,7 +58,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## Adım 3: Belgeden Metni Çıkarın
 
-Belgeniz yüklendiğinde metni çıkarmanın zamanı geldi. Sihir yapılan yer burasıdır:
+Belgeniz yüklendiğinde metni çıkarmanın zamanı geldi. İşte sihir burada gerçekleşiyor:
 
 Metni Çıkart
 
@@ -84,7 +84,7 @@ Bu adım, çıkarılan metni konsola yazdırarak metin çıkarma işleminizin so
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET kullanarak bir Word belgesinden metin çıkarmak, işlemi bu basit adımlara ayırdığınızda çok kolaydır. Bu kılavuzu takip ederek .NET uygulamalarınızda metin çıkarma işlemini otomatikleştirerek zamandan ve emekten tasarruf edebilirsiniz.
+Ve işte karşınızda! Aspose.Words for .NET kullanarak bir Word belgesinden metin çıkarmak, işlemi bu basit adımlara ayırdığınızda çok kolaydır. Bu kılavuzu takip ederek .NET uygulamalarınızda metin çıkarma işlemini otomatikleştirerek zamandan ve emekten tasarruf edebilirsiniz.
 
 ## SSS'ler
 

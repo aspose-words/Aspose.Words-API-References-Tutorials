@@ -29,7 +29,7 @@ using Aspose.Words;
 using Aspose.Words.WebExtensions;
 ```
 
-## Hướng dẫn từng bước một
+## Hướng dẫn từng bước
 
 Bây giờ, hãy chia quy trình thành các bước dễ thực hiện.
 

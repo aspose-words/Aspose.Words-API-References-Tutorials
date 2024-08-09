@@ -23,7 +23,7 @@ Aan het einde van deze tutorials beschikt u over de kennis en vaardigheden om vo
 
 Duik dus in de hierboven genoemde tutorials en ontgrendel het volledige potentieel van Aspose.Words voor Java in uw documentgerelateerde projecten. Veel codeerplezier!
 
- Voor meer informatie, bekijk de[Aspose.Words voor Java API-documentatie](https://reference.aspose.com/words/java/) en download het van om aan de slag te gaan[hier](https://releases.aspose.com/words/java/) . Als u vragen heeft of hulp nodig heeft, neem dan gerust contact met ons op[Helpforum](https://forum.aspose.com/).
+ Voor meer informatie, bekijk de[Aspose.Words voor Java API-documentatie](https://reference.aspose.com/words/java/) en download het van om aan de slag te gaan[hier](https://releases.aspose.com/words/java/) . Als u vragen heeft of hulp nodig heeft, neem dan gerust contact met ons op[ondersteuningsforum](https://forum.aspose.com/).
 
 ## Handleidingen voor documentconversie en exporteren
 ### [Aangepaste streepjescodelabels genereren in Aspose.Words voor Java](./generating-custom-barcode-labels/)

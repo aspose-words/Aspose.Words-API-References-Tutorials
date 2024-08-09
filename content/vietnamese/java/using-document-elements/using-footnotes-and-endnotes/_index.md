@@ -111,13 +111,13 @@ Trong hướng dẫn này, chúng ta đã khám phá cách làm việc với ch�
 
 Bây giờ bạn đã học cách sử dụng chú thích cuối trang và chú thích cuối, bạn có thể cải thiện định dạng tài liệu và làm cho nội dung của mình chuyên nghiệp hơn.
 
-### Các câu hỏi thường gặp
+### Câu hỏi thường gặp
 
 ### 1. Sự khác biệt giữa chú thích cuối trang và chú thích cuối trang là gì?
 Chú thích cuối trang xuất hiện ở cuối trang, trong khi chú thích cuối trang được thu thập ở cuối phần hoặc tài liệu.
 
 ### 2. Làm cách nào để thay đổi vị trí của cước chú hoặc chú thích cuối?
- Bạn có thể dùng`setPosition` phương pháp thay đổi vị trí của cước chú hoặc chú thích cuối.
+ Bạn có thể sử dụng`setPosition` phương pháp thay đổi vị trí của cước chú hoặc chú thích cuối.
 
 ### 3. Tôi có thể tùy chỉnh định dạng của chú thích cuối trang và chú thích cuối sách không?
 Có, bạn có thể tùy chỉnh định dạng chú thích cuối trang và chú thích cuối bằng Aspose.Words for Java.

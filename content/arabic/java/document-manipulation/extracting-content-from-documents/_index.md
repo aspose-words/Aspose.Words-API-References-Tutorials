@@ -161,7 +161,7 @@ System.out.println("GetText() Result: " + doc.getText());
 System.out.println("ToString() Result: " + doc.toString(SaveFormat.TEXT));
 ```
 
-## استخراج المحتوى على أساس الأنماط
+## استخراج المحتوى بناءً على الأنماط
 
 ```java
 // نموذج كود Java لاستخراج المحتوى بناءً على الأنماط

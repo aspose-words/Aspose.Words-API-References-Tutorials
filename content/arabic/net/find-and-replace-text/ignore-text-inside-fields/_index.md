@@ -39,14 +39,14 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## الخطوة 2: أدخل حقلاً يحتوي على نص
 
- استخدم ال`InsertField` طريقة`DocumentBuilder` لإضافة حقل يحتوي على نص:
+ استخدم`InsertField` طريقة`DocumentBuilder` لإضافة حقل يحتوي على نص:
 ```csharp
 builder.InsertField("INCLUDETEXT", "Text in field");
 ```
 
 ## الخطوة 3: تجاهل النص الموجود داخل الحقول
 
- للتعامل مع النص مع تجاهل المحتوى داخل الحقول، استخدم`FindReplaceOptions` مع ال`IgnoreFields` خاصية تعيين ل`true`:
+ للتعامل مع النص مع تجاهل المحتوى داخل الحقول، استخدم`FindReplaceOptions` مع`IgnoreFields` خاصية تعيين ل`true`:
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions { IgnoreFields = true };
 ```

@@ -16,13 +16,13 @@ Chcete-li se pustit do této cesty zpracováním formátu dokumentů, nastavme n
 
 ### Nastavení vývojového prostředí
 
- Než se ponoříte do kódu, ujistěte se, že máte v systému nainstalovanou sadu Java Development Kit (JDK). Můžete si jej stáhnout z[tady](https://www.oracle.com/java/technologies/javase-downloads.html).
+ Než se ponoříte do kódu, ujistěte se, že máte v systému nainstalovanou sadu Java Development Kit (JDK). Můžete si jej stáhnout z[zde](https://www.oracle.com/java/technologies/javase-downloads.html).
 
 ### Instalace Aspose.Words pro Java
 
-Chcete-li používat Aspose.Words pro Java, musíte do svého projektu přidat soubor Aspose.Words JAR. Následuj tyto kroky:
+Chcete-li používat Aspose.Words pro Java, musíte do svého projektu přidat soubor Aspose.Words JAR. Postupujte takto:
 
-1.  Stáhnout Aspose.Words pro Java: Navštivte web Aspose[tady](https://releases.aspose.com/words/java/) k získání nejnovější verze Aspose.Words for Java.
+1.  Stáhnout Aspose.Words pro Java: Navštivte web Aspose[zde](https://releases.aspose.com/words/java/) k získání nejnovější verze Aspose.Words for Java.
 
 2. Přidat JAR do svého projektu: Zahrňte stažený soubor JAR do cesty třídy svého projektu.
 
@@ -120,7 +120,7 @@ Aspose.Words for Java je robustní nástroj pro práci s různými formáty doku
 
 ### Jak získám Aspose.Words pro Java?
 
- Aspose.Words for Java si můžete stáhnout z webu Aspose[tady](https://releases.aspose.com/words/java/).
+ Aspose.Words for Java si můžete stáhnout z webu Aspose[zde](https://releases.aspose.com/words/java/).
 
 ### Mohu převést dokument aplikace Word do formátu PDF pomocí Aspose.Words for Java?
 

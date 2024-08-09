@@ -58,7 +58,7 @@ public void doNotCompressSmallMetafiles() throws Exception {
 
 ## Evitar guardar viñetas de imágenes
 
-Las viñetas de las imágenes pueden ser llamativas, pero es posible que desees excluirlas. Así es cómo:
+Las viñetas de las imágenes pueden ser llamativas, pero es posible que desees excluirlas. He aquí cómo:
 
 ```java
 @Test

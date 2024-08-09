@@ -38,11 +38,11 @@ Ange först sökvägen till var ditt dokument finns. Detta är avgörande för a
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där ditt dokument är lagrat.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där ditt dokument är lagrat.
 
 ## Steg 2: Skapa TxtLoadOptions med dokumentriktningsinställning
 
- Därefter måste du skapa en instans av`TxtLoadOptions` och ställ in dess`DocumentDirection` fast egendom. Detta berättar för Aspose.Words hur man hanterar textens riktning i dokumentet.
+ Därefter måste du skapa en instans av`TxtLoadOptions` och ställ in dess`DocumentDirection` egendom. Detta berättar för Aspose.Words hur man hanterar textens riktning i dokumentet.
 
 ```csharp
 TxtLoadOptions loadOptions = new TxtLoadOptions { DocumentDirection = DocumentDirection.Auto };
@@ -105,4 +105,4 @@ Att ställa in textriktningen i Word-dokument är en enkel process med Aspose.Wo
 
 ### Var kan jag hitta mer information om Aspose.Words för .NET?
 
- För mer information, kolla in[Aspose.Words för .NET-dokumentation](https://reference.aspose.com/words/net/) . Du kan också utforska ytterligare resurser som[Nedladdningslänk](https://releases.aspose.com/words/net/), [köpa](https://purchase.aspose.com/buy), [Gratis provperiod](https://releases.aspose.com/), [Tillfällig licens](https://purchase.aspose.com/temporary-license/) , och[Stöd](https://forum.aspose.com/c/words/8).
+ För mer information, kolla in[Aspose.Words för .NET-dokumentation](https://reference.aspose.com/words/net/) . Du kan också utforska ytterligare resurser som[Ladda ner länk](https://releases.aspose.com/words/net/), [Köpa](https://purchase.aspose.com/buy), [Gratis provperiod](https://releases.aspose.com/), [Tillfällig licens](https://purchase.aspose.com/temporary-license/) , och[Stöd](https://forum.aspose.com/c/words/8).

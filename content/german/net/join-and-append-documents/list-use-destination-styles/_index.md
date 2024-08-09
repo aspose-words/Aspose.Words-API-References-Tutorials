@@ -85,7 +85,7 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek für die programmgest
  Sie können es herunterladen von der[Webseite](https://releases.aspose.com/words/net/) und folgen Sie den Installationsanweisungen in der[Dokumentation](https://reference.aspose.com/words/net/).
 
 ### Kann ich Aspose.Words kostenlos nutzen?
- Aspose.Words bietet eine[Kostenlose Testphase](https://releases.aspose.com/) mit eingeschränkten Funktionen. Für den vollen Zugriff müssen Sie eine Lizenz erwerben[Hier](https://purchase.aspose.com/buy).
+ Aspose.Words bietet eine[Kostenlose Testversion](https://releases.aspose.com/) mit eingeschränkten Funktionen. Für den vollen Zugriff müssen Sie eine Lizenz erwerben[Hier](https://purchase.aspose.com/buy).
 
 ### Was sind ImportFormatOptions?
  Mit ImportFormatOptions können Sie angeben, wie die Formatierung beim Importieren von Inhalten aus einem Dokument in ein anderes gehandhabt wird. Beispiel:`KeepSourceNumbering` stellt sicher, dass die Listennummerierung aus dem Quelldokument erhalten bleibt.

@@ -9,14 +9,14 @@ url: /pl/net/working-with-section/modify-page-setup-in-all-sections/
 ---
 ## Wstęp
 
-No hej! Jeśli kiedykolwiek musiałeś modyfikować ustawienia strony w wielu sekcjach dokumentu programu Word, jesteś we właściwym miejscu. W tym samouczku poprowadzę Cię przez proces korzystania z Aspose.Words dla .NET. Ta potężna biblioteka pozwala programowo kontrolować niemal każdy aspekt dokumentów programu Word, dzięki czemu jest popularnym narzędziem dla programistów. Zatem napij się filiżanki kawy i rozpocznijmy krok po kroku podróż do opanowania modyfikacji ustawień strony!
+Hej tam! Jeśli kiedykolwiek musiałeś modyfikować ustawienia strony w wielu sekcjach dokumentu programu Word, jesteś we właściwym miejscu. W tym samouczku poprowadzę Cię przez proces korzystania z Aspose.Words dla .NET. Ta potężna biblioteka pozwala programowo kontrolować niemal każdy aspekt dokumentów programu Word, dzięki czemu jest popularnym narzędziem dla programistów. Zatem napij się filiżanki kawy i rozpocznijmy krok po kroku podróż do opanowania modyfikacji ustawień strony!
 
 ## Warunki wstępne
 
 Zanim zanurkujemy, upewnijmy się, że mamy wszystko, czego potrzebujemy:
 
 1. Podstawowa znajomość języka C#: Konieczna jest znajomość składni i pojęć języka C#.
-2.  Aspose.Words dla .NET: Można[Pobierz to tutaj](https://releases.aspose.com/words/net/) Jeśli dopiero próbujesz, a[bezpłatna wersja próbna](https://releases.aspose.com/) jest dostępny.
+2.  Aspose.Words dla .NET: Można[pobierz go tutaj](https://releases.aspose.com/words/net/) Jeśli dopiero próbujesz, a[bezpłatna wersja próbna](https://releases.aspose.com/) jest dostępny.
 3. Visual Studio: każda najnowsza wersja powinna działać, ale w celu zapewnienia najlepszego działania zalecana jest najnowsza wersja.
 4. .NET Framework: Upewnij się, że masz go zainstalowany w swoim systemie.
 

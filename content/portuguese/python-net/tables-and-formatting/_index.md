@@ -15,7 +15,7 @@ Bem-vindo ao mundo dos tutoriais Aspose.Words, onde nos aprofundamos na arte das
 
 ## importância das tabelas e formatação
 
-As tabelas servem como ferramentas poderosas para organizar e apresentar informações de maneira estruturada. A formatação adequada melhora a clareza visual das tabelas, tornando mais fácil para os leitores digerirem dados e insights. Esteja você criando relatórios financeiros complexos, gerando faturas ou apresentando resultados de pesquisas, as tabelas são componentes versáteis que podem transformar dados brutos em apresentações significativas.
+As tabelas servem como ferramentas poderosas para organizar e apresentar informações de maneira estruturada. A formatação adequada melhora a clareza visual das tabelas, facilitando a digestão dos dados e insights pelos leitores. Esteja você criando relatórios financeiros complexos, gerando faturas ou apresentando resultados de pesquisas, as tabelas são componentes versáteis que podem transformar dados brutos em apresentações significativas.
 
 ## O que você aprenderá
 
@@ -35,7 +35,7 @@ Ao final desses tutoriais, você terá as habilidades necessárias para criar ta
 
 ## Tabelas e tutoriais de formatação
 ### [Criação e formatação de marcas d'água para estética de documentos](./manage-document-watermarks/)
-Aprenda como criar e formatar marcas d’água em documentos usando Aspose.Words para Python. Guia passo a passo com código-fonte para adicionar marcas d'água de texto e imagem. Melhore a estética do seu documento com este tutorial.
+Aprenda como criar e formatar marcas d'água em documentos usando Aspose.Words para Python. Guia passo a passo com código-fonte para adicionar marcas d'água de texto e imagem. Melhore a estética do seu documento com este tutorial.
 ### [Otimizando Tabelas para Apresentação de Dados em Documentos Word](./document-tables/)
 Aprenda como otimizar tabelas para apresentação de dados em documentos do Word usando Aspose.Words para Python. Melhore a legibilidade e o apelo visual com orientação passo a passo e exemplos de código-fonte.
 ### [Estilos e formatação de tabelas de documentos](./document-table-styles-formatting/)

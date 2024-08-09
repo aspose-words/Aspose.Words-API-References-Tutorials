@@ -14,7 +14,7 @@ Ve světě zpracování dokumentů Java představuje Aspose.Words for Java robus
 
 ## Nastavení vašeho prostředí
 
- Než se ponoříme do složitosti formátování dokumentů, je důležité nastavit vaše prostředí. Ujistěte se, že máte Aspose.Words for Java správně nainstalovaný a nakonfigurovaný ve svém projektu. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/java/).
+ Než se ponoříme do složitosti formátování dokumentů, je důležité nastavit vaše prostředí. Ujistěte se, že máte Aspose.Words for Java správně nainstalovaný a nakonfigurovaný ve svém projektu. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/java/).
 
 ## Vytvoření jednoduchého dokumentu
 

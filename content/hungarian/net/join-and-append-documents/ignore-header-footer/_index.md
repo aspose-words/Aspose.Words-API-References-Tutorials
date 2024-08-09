@@ -73,7 +73,7 @@ A dokumentumok összevonása előtt be kell állítani az importálási lehetős
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = true };
 ```
 
- A beállítással`IgnoreHeaderFooter` nak nek`true`, azt mondjuk az Aspose.Words-nek, hogy figyelmen kívül hagyja a fejléceket és a lábléceket az egyesítési folyamat során.
+ Beállítás által`IgnoreHeaderFooter` hogy`true`, azt mondjuk az Aspose.Words-nek, hogy figyelmen kívül hagyja a fejléceket és a lábléceket az egyesítési folyamat során.
 
 ## 4. lépés: Egyesítse a dokumentumokat
 
@@ -113,7 +113,7 @@ Igen, az Aspose.Words számos lehetőséget kínál az importálási folyamat te
 
 ### Megtartható a fejléc és a lábléc ahelyett, hogy figyelmen kívül hagynánk őket?
 
- Teljesen. Egyszerűen beállítva`IgnoreHeaderFooter` nak nek`false` ban,-ben`ImportFormatOptions`.
+ Teljesen. Egyszerűen beállítva`IgnoreHeaderFooter` hogy`false` a`ImportFormatOptions`.
 
 ### Szükségem van licencre az Aspose.Words for .NET használatához?
 

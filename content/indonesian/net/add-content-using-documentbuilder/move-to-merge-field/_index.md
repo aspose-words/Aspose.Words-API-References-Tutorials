@@ -16,7 +16,7 @@ Hai! Pernahkah Anda terkubur dalam dokumen Word, mencoba mencari cara untuk mena
 Sebelum kita masuk ke seluk beluknya, mari kita susun bebek kita secara berurutan. Inilah yang Anda perlukan untuk memulai:
 
 -  Visual Studio: Pastikan Anda telah menginstal Visual Studio di mesin Anda. Jika belum, Anda dapat mendownloadnya[Di Sini](https://visualstudio.microsoft.com/).
--  Aspose.Words untuk .NET: Anda memerlukan perpustakaan Aspose.Words. Anda dapat mengunduhnya dari[Link ini](https://releases.aspose.com/words/net/).
+-  Aspose.Words untuk .NET: Anda memerlukan perpustakaan Aspose.Words. Anda dapat mengunduhnya dari[tautan ini](https://releases.aspose.com/words/net/).
 - .NET Framework: Pastikan Anda telah menginstal .NET Framework.
 
 ## Impor Namespace
@@ -115,7 +115,7 @@ Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang
  Ya, Aspose.Words untuk .NET kompatibel dengan .NET Core. Anda dapat menemukan rincian lebih lanjut di[dokumentasi](https://reference.aspose.com/words/net/).
 
 ### Bagaimana cara mendapatkan lisensi sementara untuk Aspose.Words?
- Anda dapat memperoleh lisensi sementara dari[Link ini](https://purchase.aspose.com/temporary-license/).
+ Anda dapat memperoleh lisensi sementara dari[tautan ini](https://purchase.aspose.com/temporary-license/).
 
 ### Di mana saya dapat menemukan lebih banyak contoh dan dukungan untuk Aspose.Words untuk .NET?
  Untuk contoh dan dukungan lainnya, kunjungi[Aspose.Words untuk forum .NET](https://forum.aspose.com/c/words/8).

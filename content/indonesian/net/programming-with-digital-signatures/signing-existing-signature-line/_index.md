@@ -71,7 +71,7 @@ CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", 
 
 ## Langkah 5: Tandatangani Dokumen
 
-Sekarang, kami menggabungkan semua komponen untuk menandatangani dokumen. Ini adalah dimana keajaiban terjadi!
+Sekarang, kami menggabungkan semua komponen untuk menandatangani dokumen. Di sinilah keajaiban terjadi!
 
 ```csharp
 DigitalSignatureUtil.Sign(
@@ -90,7 +90,7 @@ Dan itu dia! Anda telah berhasil menandatangani baris tanda tangan yang ada di d
 
 ### Apa itu Aspose.Words untuk .NET?
 
-Aspose.Words for .NET adalah perpustakaan yang kuat untuk bekerja dengan dokumen Word di aplikasi .NET. Ini memungkinkan Anda membuat, memodifikasi, dan mengonversi dokumen Word secara terprogram.
+Aspose.Words for .NET adalah perpustakaan yang kuat untuk bekerja dengan dokumen Word dalam aplikasi .NET. Ini memungkinkan Anda membuat, memodifikasi, dan mengonversi dokumen Word secara terprogram.
 
 ### Di mana saya bisa mendapatkan uji coba gratis Aspose.Words untuk .NET?
 

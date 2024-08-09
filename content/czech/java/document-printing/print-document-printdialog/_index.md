@@ -9,7 +9,7 @@ url: /cs/java/document-printing/print-document-printdialog/
 ---
 
 
-## Úvod
+## Zavedení
 
 Tisk dokumentů je běžným požadavkem mnoha aplikací Java. Aspose.Words for Java zjednodušuje tento úkol tím, že poskytuje pohodlné API pro manipulaci s dokumenty a tisk.
 
@@ -18,7 +18,7 @@ Tisk dokumentů je běžným požadavkem mnoha aplikací Java. Aspose.Words for 
 Než se ponoříme do kódu, ujistěte se, že máte splněny následující předpoklady:
 
 - Java Development Kit (JDK): Ujistěte se, že máte v systému nainstalovanou Java.
--  Aspose.Words for Java: Knihovnu si můžete stáhnout z[tady](https://releases.aspose.com/words/java/).
+-  Aspose.Words for Java: Knihovnu si můžete stáhnout z[zde](https://releases.aspose.com/words/java/).
 
 ## Nastavení vašeho projektu Java
 

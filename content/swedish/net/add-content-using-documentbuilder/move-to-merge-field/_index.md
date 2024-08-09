@@ -9,14 +9,14 @@ url: /sv/net/add-content-using-documentbuilder/move-to-merge-field/
 ---
 ## Introduktion
 
-Hallå där! Har du någonsin funnit dig själv begravd i ett Word-dokument och försökt ta reda på hur man navigerar till ett specifikt sammanfogningsfält? Det är som att vara i en labyrint utan karta, eller hur? Nåväl, oroa dig inte längre! Med Aspose.Words för .NET kan du sömlöst flytta till ett sammanslagningsfält i ditt dokument. Oavsett om du genererar rapporter, skapar personliga brev eller bara automatiserar dina Word-dokument, kommer den här guiden att leda dig genom hela processen, steg-för-steg. Låt oss dyka in!
+Hej där! Har du någonsin funnit dig själv begravd i ett Word-dokument och försökt ta reda på hur man navigerar till ett specifikt sammanfogningsfält? Det är som att vara i en labyrint utan karta, eller hur? Nåväl, oroa dig inte längre! Med Aspose.Words för .NET kan du sömlöst flytta till ett sammanslagningsfält i ditt dokument. Oavsett om du genererar rapporter, skapar personliga brev eller bara automatiserar dina Word-dokument, kommer den här guiden att leda dig genom hela processen, steg-för-steg. Låt oss dyka in!
 
 ## Förutsättningar
 
 Innan vi hoppar in i det nitty-gritty, låt oss få våra ankor på rad. Här är vad du behöver för att komma igång:
 
 -  Visual Studio: Se till att du har Visual Studio installerat på din dator. Om inte kan du ladda ner den[här](https://visualstudio.microsoft.com/).
--  Aspose.Words för .NET: Du behöver Aspose.Words-biblioteket. Du kan ladda ner den från[den här länken](https://releases.aspose.com/words/net/).
+-  Aspose.Words för .NET: Du behöver Aspose.Words-biblioteket. Du kan ladda ner den från[denna länk](https://releases.aspose.com/words/net/).
 - .NET Framework: Se till att du har .NET Framework installerat.
 
 ## Importera namnområden
@@ -115,7 +115,7 @@ Aspose.Words för .NET är ett kraftfullt bibliotek som låter utvecklare skapa,
  Ja, Aspose.Words för .NET är kompatibelt med .NET Core. Du kan hitta mer information i[dokumentation](https://reference.aspose.com/words/net/).
 
 ### Hur får jag en tillfällig licens för Aspose.Words?
- Du kan få en tillfällig licens från[den här länken](https://purchase.aspose.com/temporary-license/).
+ Du kan få en tillfällig licens från[denna länk](https://purchase.aspose.com/temporary-license/).
 
 ### Var kan jag hitta fler exempel och stöd för Aspose.Words för .NET?
  För fler exempel och stöd, besök[Aspose.Words för .NET-forum](https://forum.aspose.com/c/words/8).

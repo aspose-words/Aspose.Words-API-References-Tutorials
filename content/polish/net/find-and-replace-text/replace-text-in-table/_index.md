@@ -9,7 +9,7 @@ url: /pl/net/find-and-replace-text/replace-text-in-table/
 ---
 ## Wstęp
 
-No hej! Czy jesteś gotowy, aby zanurzyć się w świat automatyzacji dokumentów dzięki Aspose.Words dla .NET? Dzisiaj zajmiemy się bardzo przydatnym samouczkiem na temat zastępowania tekstu w tabeli w dokumencie programu Word. Wyobraź sobie, że masz dokument programu Word wypełniony tabelami i musisz zaktualizować określony tekst w tych tabelach. Robienie tego ręcznie może być naprawdę trudne, prawda? Ale nie martw się, dzięki Aspose.Words dla .NET możesz z łatwością zautomatyzować ten proces. Przeanalizujmy to krok po kroku i przyśpieszmy!
+Hej tam! Czy jesteś gotowy, aby zanurzyć się w świat automatyzacji dokumentów dzięki Aspose.Words dla .NET? Dzisiaj zajmiemy się bardzo przydatnym samouczkiem na temat zastępowania tekstu w tabeli w dokumencie programu Word. Wyobraź sobie, że masz dokument programu Word wypełniony tabelami i musisz zaktualizować określony tekst w tych tabelach. Robienie tego ręcznie może być naprawdę trudne, prawda? Ale nie martw się, dzięki Aspose.Words dla .NET możesz z łatwością zautomatyzować ten proces. Przeanalizujmy to krok po kroku i przyśpieszmy!
 
 ## Warunki wstępne
 
@@ -96,7 +96,7 @@ Tak, możesz przeglądać wszystkie tabele w dokumencie i zastosować metodę za
  Możesz skorzystać z`FindReplaceOptions` , aby określić opcje formatowania tekstu zastępczego.
 
 ### Czy można zastąpić tekst tylko w określonych wierszach lub kolumnach?
- Tak, możesz kierować reklamy na określone wiersze lub kolumny, uzyskując do nich bezpośredni dostęp za pośrednictwem`Rows` Lub`Cells` nieruchomości.
+ Tak, możesz kierować reklamy na określone wiersze lub kolumny, uzyskując do nich bezpośredni dostęp za pośrednictwem`Rows` Lub`Cells` właściwości.
 
 ### Czy mogę zastąpić tekst obrazami lub innymi obiektami?
 Aspose.Words dla .NET umożliwia zastępowanie tekstu różnymi obiektami, w tym obrazami, przy użyciu zaawansowanych metod.

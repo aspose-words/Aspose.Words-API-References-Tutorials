@@ -14,7 +14,7 @@ In tài liệu với thiết lập trang chính xác là rất quan trọng khi 
 
 ## Thiết lập môi trường phát triển
 
-Trước khi bắt đầu, hãy đảm bảo rằng bạn có sẵn môi trường phát triển phù hợp. Có thể bạn sẽ cần:
+Trước khi bắt đầu, hãy đảm bảo rằng bạn có sẵn môi trường phát triển phù hợp. Bạn sẽ cần:
 
 - Bộ công cụ phát triển Java (JDK)
 - Môi trường phát triển tích hợp (IDE) như Eclipse hoặc IntelliJ IDEA
@@ -57,7 +57,7 @@ pageSetup.setRightMargin(72.0);
 
 ## In tài liệu
 
-In tài liệu là một quá trình đơn giản với Aspose.Words for Java. Bạn có thể in bằng máy in vật lý hoặc tạo tệp PDF để phân phối kỹ thuật số.
+In tài liệu là một quá trình đơn giản với Aspose.Words cho Java. Bạn có thể in bằng máy in vật lý hoặc tạo tệp PDF để phân phối kỹ thuật số.
 
 ```java
 // In tài liệu

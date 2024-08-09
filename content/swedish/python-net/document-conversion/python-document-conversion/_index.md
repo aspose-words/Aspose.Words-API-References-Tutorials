@@ -44,7 +44,7 @@ Biblioteket erbjuder omfattande formateringsalternativ för text, tabeller, bild
 #### Stöd för sidhuvuden, sidfötter och sidinställningar
 Aspose.Words gör att du kan bevara sidhuvuden, sidfötter och sidinställningar under konverteringsprocessen, vilket säkerställer dokumentkonsistens.
 
-## Installerar Aspose.Words för Python
+## Installera Aspose.Words för Python
 
 ### Förutsättningar
 
@@ -205,7 +205,7 @@ for filename in input_files:
 
 ### Batchkonvertering av dokument
 
-Förbi
+Av
 
  Genom att kombinera kraften i Python och Aspose.Words kan du automatisera masskonverteringen av dokument, vilket ökar produktiviteten och effektiviteten.
 

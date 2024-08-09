@@ -9,7 +9,7 @@ url: /vi/net/programming-with-fileformat/detect-document-signatures/
 ---
 ## Giới thiệu
 
-Đảm bảo tính toàn vẹn và xác thực của tài liệu Word của bạn là rất quan trọng, đặc biệt là trong thời đại kỹ thuật số ngày nay. Một cách để đạt được điều này là sử dụng chữ ký số. Trong hướng dẫn này, chúng ta sẽ đi sâu vào cách bạn có thể phát hiện chữ ký điện tử trên tài liệu Word bằng Aspose.Words cho .NET. Chúng tôi sẽ đề cập đến mọi thứ, từ những điều cơ bản đến hướng dẫn từng bước, đảm bảo bạn sẽ hiểu biết toàn diện đến cuối.
+Đảm bảo tính toàn vẹn và xác thực của tài liệu Word của bạn là rất quan trọng, đặc biệt là trong thời đại kỹ thuật số ngày nay. Một cách để đạt được điều này là sử dụng chữ ký số. Trong hướng dẫn này, chúng tôi sẽ đi sâu vào cách bạn có thể phát hiện chữ ký điện tử trên tài liệu Word bằng Aspose.Words cho .NET. Chúng tôi sẽ đề cập đến mọi thứ, từ những điều cơ bản đến hướng dẫn từng bước, đảm bảo bạn sẽ hiểu biết toàn diện đến cuối.
 
 ## Điều kiện tiên quyết
 
@@ -35,7 +35,7 @@ Trước khi có thể bắt đầu phát hiện chữ ký số, chúng ta cần
 
 ### 1.1 Tạo một dự án mới
 
- Mở Visual Studio và tạo dự án Console App (.NET Core) mới. Gọi tên nó`DigitalSignatureDetector`.
+ Mở Visual Studio và tạo dự án Console App (.NET Core) mới. Đặt tên cho nó`DigitalSignatureDetector`.
 
 ### 1.2 Cài đặt Aspose.Words cho .NET
 
@@ -91,7 +91,7 @@ Không, Aspose.Words for .NET không lưu giữ chữ ký số khi mở hoặc l
 
 ### Có cách nào để phát hiện nhiều chữ ký số trên một tài liệu không?
 
- Vâng`HasDigitalSignature` thuộc tính có thể chỉ ra sự hiện diện của một hoặc nhiều chữ ký số trên tài liệu.
+ Vâng, cái`HasDigitalSignature` thuộc tính có thể chỉ ra sự hiện diện của một hoặc nhiều chữ ký số trên tài liệu.
 
 ### Làm cách nào để tôi có được bản dùng thử miễn phí Aspose.Words cho .NET?
 

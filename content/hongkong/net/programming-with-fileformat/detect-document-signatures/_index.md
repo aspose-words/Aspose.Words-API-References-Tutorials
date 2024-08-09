@@ -91,7 +91,7 @@ if (info.HasDigitalSignature)
 
 ### 有沒有辦法偵測文件上的多個數位簽章？
 
-是的`HasDigitalSignature`屬性可以表明文件上存在一個或多個數位簽章。
+是的，`HasDigitalSignature`屬性可以表明文件上存在一個或多個數位簽章。
 
 ### 如何獲得 Aspose.Words for .NET 的免費試用版？
 

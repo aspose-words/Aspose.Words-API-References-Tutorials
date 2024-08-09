@@ -22,7 +22,7 @@ Aspose.Words for Python 是一個功能強大的函式庫，可讓開發人員�
 pip install aspose-words
 ```
 
-## 載入並建立Word文檔
+## 載入和建立Word文檔
 
 讓我們先載入現有的 Word 文件或從頭開始建立一個新文件：
 

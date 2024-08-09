@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-node/enumerate-child-nodes/
 ---
+## Zavedení
 
 Práce s dokumenty programově může být se správnými nástroji hračka. Aspose.Words for .NET je jednou z takových výkonných knihoven, která umožňuje vývojářům snadno manipulovat s dokumenty aplikace Word. Dnes si projdeme procesem výčtu podřízených uzlů v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento podrobný průvodce pokryje vše od nezbytných předpokladů až po praktické příklady a zajistí, že procesu dobře porozumíte.
 
@@ -16,7 +17,7 @@ Než se ponoříme do kódu, pojďme si pokrýt základní předpoklady pro zaji
 
 1. Vývojové prostředí: Ujistěte se, že máte nainstalované Visual Studio nebo jiné IDE kompatibilní s .NET.
 2.  Aspose.Words for .NET: Stáhněte si knihovnu Aspose.Words for .NET z[stránka vydání](https://releases.aspose.com/words/net/).
-3.  Licence: Získejte bezplatnou zkušební verzi nebo dočasnou licenci od[tady](https://purchase.aspose.com/temporary-license/).
+3.  Licence: Získejte bezplatnou zkušební verzi nebo dočasnou licenci od[zde](https://purchase.aspose.com/temporary-license/).
 
 ## Importovat jmenné prostory
 
@@ -86,19 +87,19 @@ Výčet podřízených uzlů v dokumentu aplikace Word pomocí Aspose.Words for 
 
  Pro podrobnější dokumentaci a pokročilé použití navštivte[Dokumentace Aspose.Words for .NET API](https://reference.aspose.com/words/net/) . Pokud potřebujete další podporu, podívejte se na[podpůrná fóra](https://forum.aspose.com/c/words/8).
 
-## Nejčastější dotazy
+## FAQ
 
-### 1. Jaké typy uzlů může obsahovat odstavec?
+### Jaké typy uzlů může obsahovat odstavec?
 Odstavec může obsahovat uzly, jako jsou úseky, tvary, komentáře a další vložené prvky.
 
-### 2. Jak mohu načíst existující dokument aplikace Word?
- Existující dokument můžete načíst pomocí`Document doc = new Document("path/to/your/document.docx");`.
+### Jak mohu načíst existující dokument aplikace Word?
+ Stávající dokument můžete načíst pomocí`Document doc = new Document("path/to/your/document.docx");`.
 
-### 3. Mohu manipulovat s jinými typy uzlů kromě Run?
+### Mohu manipulovat s jinými typy uzlů kromě Run?
  Ano, můžete manipulovat s různými typy uzlů, jako jsou tvary, komentáře a další, jejich kontrolou`NodeType`.
 
-### 4. Potřebuji licenci k používání Aspose.Words pro .NET?
-Můžete začít s bezplatnou zkušební verzí nebo získat dočasnou licenci od[tady](https://purchase.aspose.com/temporary-license/).
+### Potřebuji licenci k používání Aspose.Words pro .NET?
+ Můžete začít s bezplatnou zkušební verzí nebo získat dočasnou licenci od[zde](https://purchase.aspose.com/temporary-license/).
 
-### 5. Kde najdu další příklady a dokumentaci?
- Navštivte[Dokumentace Aspose.Words for .NET API](https://reference.aspose.com/words/net/) pro další příklady a podrobnou dokumentaci.
+### Kde najdu další příklady a dokumentaci?
+ Navštivte[Dokumentace Aspose.Words for .NET API](https://reference.aspose.com/words/net/)pro další příklady a podrobnou dokumentaci.

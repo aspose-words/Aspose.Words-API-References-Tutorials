@@ -88,7 +88,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.Format1BppIndexed.Png", saveOpti
 はい、Aspose.Words for .NETの全機能を使用するにはライセンスが必要です。[一時ライセンスはこちら](https://purchase.aspose.com/temporary-license/).
 
 ### Word 文書を他のどのような画像形式に変換できますか?
- Aspose.WordsはJPEG、BMP、TIFFなどさまざまな画像形式をサポートしています。`SaveFormat`の中に`ImageSaveOptions`.
+ Aspose.WordsはJPEG、BMP、TIFFなどさまざまな画像形式をサポートしています。`SaveFormat`の`ImageSaveOptions`.
 
 ### Aspose.Words for .NET に関する詳細なドキュメントはどこで入手できますか?
 詳細なドキュメントは[Aspose.Words for .NET ドキュメント ページ](https://reference.aspose.com/words/net/).

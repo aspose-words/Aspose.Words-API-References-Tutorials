@@ -97,7 +97,7 @@ doc.Save(dataDir + "AutoTableContentAlignment.md", saveOptions);
 
 ## 結論
 
-現在你就擁有了！一旦您知道如何操作，使用 Aspose.Words for .NET 將 Word 文件匯出為帶有對齊表格的 Markdown 就變得輕而易舉。這個強大的庫可以輕鬆控製表格的格式和對齊方式，確保您的 Markdown 文件看起來像您想要的那樣。快樂編碼！
+現在你就得到它了！一旦您知道如何操作，使用 Aspose.Words for .NET 將 Word 文件匯出為帶有對齊表格的 Markdown 就變得輕而易舉。這個強大的庫可以輕鬆控製表格的格式和對齊方式，確保您的 Markdown 文件看起來像您想要的那樣。快樂編碼！
 
 ## 常見問題解答
 

@@ -40,7 +40,7 @@ Innan du kan börja manipulera ditt Word-dokument måste du ange katalogen där 
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
 
 ## Steg 2: Initiera Document and DocumentBuilder
 

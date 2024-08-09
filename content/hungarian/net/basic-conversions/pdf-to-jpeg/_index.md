@@ -33,7 +33,7 @@ Rendben, térjünk a mókás részre! A folyamatot könnyen követhető lépése
 
 ## 1. lépés: Állítsa be projektjét
 
-Mielőtt belemerülne a kódba, be kell állítania a projektet. Itt van, hogyan:
+Mielőtt belemerülne a kódba, be kell állítania a projektet. Íme, hogyan:
 
 1. A Visual Studio megnyitása: Kezdje a Visual Studio elindításával és egy új C# projekt létrehozásával.
 2.  Az Aspose.Words telepítése: Használja a NuGet Package Managert az Aspose.Words for .NET telepítéséhez. Megtalálhatod[itt](https://releases.aspose.com/words/net/).
@@ -74,7 +74,7 @@ Miután a PDF-ünk betöltődött, ideje végrehajtani az átalakítást. Ez a l
 
 ## Következtetés
 
-És megvan! A PDF konvertálása JPEG formátumba az Aspose.Words for .NET használatával olyan egyszerű, mint a torta. Csak néhány sornyi kóddal átalakíthatja dokumentumait, és a lehetőségek világát nyithatja meg. Legyen szó fejlesztőről, aki egyszerűsíteni szeretné a munkafolyamatait, vagy csak olyan valaki, aki szereti a kódolást, az Aspose.Words mindent megtalál.
+És megvan! A PDF konvertálása JPEG formátumba az Aspose.Words for .NET használatával olyan egyszerű, mint a torta. Csak néhány sornyi kóddal átalakíthatja dokumentumait, és a lehetőségek világát nyithatja meg. Legyen szó fejlesztőről, aki egyszerűsíteni szeretné a munkafolyamatait, vagy csak olyan valaki, aki szereti a kódot trükközni, az Aspose.Words mindenre kiterjed.
 
 ## GYIK
 
@@ -82,10 +82,10 @@ Miután a PDF-ünk betöltődött, ideje végrehajtani az átalakítást. Ez a l
 Teljesen! Végigpörgethet egy PDF-könyvtárat, és mindegyiket JPEG formátumba konvertálhatja.
 
 ### Az Aspose.Words támogat más képformátumokat?
-Dehogynem! PDF-fájljait PNG, BMP és egyéb formátumban mentheti.
+Igen, igen! PDF-fájljait PNG, BMP és egyéb formátumban mentheti.
 
 ### Az Aspose.Words kompatibilis a .NET Core-al?
-Valóban az. Az Aspose.Words támogatja a .NET-keretrendszert és a .NET Core-t is.
+Valóban, az. Az Aspose.Words támogatja a .NET-keretrendszert és a .NET Core-t is.
 
 ### Szükségem van engedélyre az Aspose.Words használatához?
  Ingyenes próbaverziót kaphat[itt](https://releases.aspose.com/) vagy vásároljon licencet[itt](https://purchase.aspose.com/buy).

@@ -40,7 +40,7 @@ Die Dokumentverschlüsselung bietet eine zusätzliche Sicherheitsebene und macht
 Bevor wir mit der Dokumentensicherheit fortfahren, machen wir uns zunächst mit Aspose.Words für Java vertraut. Es handelt sich um eine funktionsreiche Bibliothek, mit der Java-Entwickler Word-Dokumente programmgesteuert erstellen, ändern und konvertieren können. So beginnen Sie:
 
 1. ### Laden Sie Aspose.Words für Java herunter:
-  Besuche den[Aspose.Veröffentlichungen](https://releases.aspose.com/words/java/) und laden Sie die neueste Version von Aspose.Words für Java herunter.
+  Besuchen Sie die[Aspose.Veröffentlichungen](https://releases.aspose.com/words/java/) und laden Sie die neueste Version von Aspose.Words für Java herunter.
 
 2. ### Installieren Sie die Bibliothek:
  Sobald der Download abgeschlossen ist, folgen Sie den Installationsanweisungen, um Aspose.Words in Ihrem Java-Projekt einzurichten.

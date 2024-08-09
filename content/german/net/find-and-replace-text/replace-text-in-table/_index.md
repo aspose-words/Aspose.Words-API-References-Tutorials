@@ -93,7 +93,7 @@ Und da haben Sie es! Sie haben gerade gelernt, wie Sie mit Aspose.Words für .NE
 Ja, Sie können alle Tabellen im Dokument durchlaufen und die Ersetzungsmethode auf jede Tabelle einzeln anwenden.
 
 ### Wie ersetze ich Text durch Formatierung?
- Du kannst den ... benutzen`FindReplaceOptions` um Formatierungsoptionen für den Ersetzungstext festzulegen.
+ Sie können die`FindReplaceOptions` um Formatierungsoptionen für den Ersetzungstext festzulegen.
 
 ### Ist es möglich, Text nur in bestimmten Zeilen oder Spalten zu ersetzen?
  Ja, Sie können bestimmte Zeilen oder Spalten gezielt ansprechen, indem Sie direkt über das`Rows` oder`Cells` Eigenschaften.

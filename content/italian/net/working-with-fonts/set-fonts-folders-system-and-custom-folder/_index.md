@@ -2,99 +2,112 @@
 title: Imposta il sistema di cartelle dei caratteri e la cartella personalizzata
 linktitle: Imposta il sistema di cartelle dei caratteri e la cartella personalizzata
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Guida passo passo per impostare cartelle di caratteri di sistema e personalizzate durante il rendering di un documento utilizzando Aspose.Words per .NET.
+description: Scopri come impostare cartelle di caratteri di sistema e personalizzate nei documenti di Word utilizzando Aspose.Words per .NET, assicurando che i tuoi documenti vengano visualizzati correttamente in ambienti diversi.
 type: docs
 weight: 10
 url: /it/net/working-with-fonts/set-fonts-folders-system-and-custom-folder/
 ---
+## Introduzione
 
-In questo tutorial, ti guideremo attraverso il processo passo passo per impostare le cartelle dei caratteri di sistema e una cartella personalizzata durante il rendering di un documento utilizzando Aspose.Words per .NET. Spiegheremo il codice sorgente C# in bundle e ti forniremo una guida completa per aiutarti a comprendere e implementare questa funzionalità nei tuoi progetti. Alla fine di questo tutorial, saprai come specificare più cartelle di caratteri, inclusa la cartella di sistema e una cartella personalizzata, da utilizzare durante il rendering dei tuoi documenti utilizzando Aspose.Words per .NET.
+Immagina di creare un documento con uno stile di carattere unico, solo per scoprire che i caratteri non vengono visualizzati correttamente su un altro computer. Frustrante, vero? È qui che entra in gioco la configurazione delle cartelle dei caratteri. Con Aspose.Words per .NET, puoi definire cartelle di caratteri di sistema e personalizzate per garantire che i tuoi documenti abbiano sempre l'aspetto previsto. Vediamo come puoi raggiungere questo obiettivo.
 
-## Passaggio 1: definire la directory dei documenti
-Innanzitutto, devi impostare il percorso della directory dei documenti. Questa è la posizione in cui desideri salvare il documento renderizzato modificato. Sostituisci "DIRECTORY DOCUMENTI" con il percorso appropriato.
+## Prerequisiti
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Prima di iniziare, assicurati di avere quanto segue:
 
-## Passaggio 2: caricare il documento da renderizzare
- Quindi puoi caricare il documento da renderizzare utilizzando il file`Document` classe. Assicurati di specificare il percorso corretto del documento.
+-  Aspose.Words per .NET Library: se non l'hai già fatto, scaricalo[Qui](https://releases.aspose.com/words/net/).
+- Ambiente di sviluppo: un IDE come Visual Studio.
+- Conoscenza di base di C#: la familiarità con C# ti aiuterà a seguire gli esempi di codice.
 
-```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
-```
+## Importa spazi dei nomi
 
-## Passaggio 3: imposta le cartelle dei caratteri di sistema e personalizzati
- Ora puoi impostare le cartelle dei caratteri di sistema e una cartella personalizzata utilizzando il file`FontSettings` classe e il`SetFontsSources()` metodo. Innanzitutto, è necessario recuperare l'elenco delle origini dei caratteri dipendenti dall'ambiente utilizzando`GetFontsSources()` e memorizzarlo in un elenco. Quindi puoi creare una nuova istanza di`FolderFontSource` specificando il percorso della cartella personalizzata contenente i tuoi caratteri. Aggiungi questa istanza all'elenco delle origini dei caratteri esistenti. Infine, usa`SetFontsSources()` per aggiornare le origini dei caratteri con il nuovo elenco.
+Innanzitutto, importa gli spazi dei nomi necessari nel tuo progetto:
 
 ```csharp
-FontSettings fontSettings = new FontSettings();
-List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-fontSources.Add(folderFontSource);
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
-fontSettings.SetFontsSources(updatedFontSources);
+using System;
+using System.Collections.Generic;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Passaggio 4: applica le impostazioni dei caratteri
- Successivamente, devi applicare le impostazioni del carattere al tuo documento utilizzando il file`FontSettings` proprietà del`Document` classe.
+Ora suddividiamo il processo in semplici passaggi.
 
-```csharp
-doc.FontSettings = fontSettings;
-```
+## Passaggio 1: caricare il documento
 
-## Passaggio 5: salva il documento renderizzato
-Infine, puoi salvare il documento renderizzato in un file con
-
-   usando il`Save()` metodo del`Document` classe. Assicurati di specificare il percorso e il nome file corretti.
-
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
-```
-
-### Codice sorgente di esempio per il sistema di cartelle Set Fonts e la cartella personalizzata utilizzando Aspose.Words per .NET 
+ Per iniziare, carica il tuo documento Word in un Aspose.Words`Document` oggetto. Questo documento sarà quello in cui desideri impostare le cartelle dei caratteri.
 
 ```csharp
 // Percorso della directory dei documenti
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Passaggio 2: inizializza le impostazioni dei caratteri
+
+ Crea una nuova istanza di`FontSettings`. Questo oggetto ti permetterà di gestire le fonti dei caratteri.
+
+```csharp
 FontSettings fontSettings = new FontSettings();
-// Recupera la serie di origini di caratteri dipendenti dall'ambiente ricercate per impostazione predefinita.
-// Ad esempio, questo conterrà un'origine "Windows\Fonts\" su macchine Windows.
-// Aggiungiamo questo array a un nuovo elenco per rendere molto più semplice l'aggiunta o la rimozione di voci di caratteri.
+```
+
+## Passaggio 3: recuperare le origini dei caratteri di sistema
+
+Recupera le origini dei caratteri di sistema predefinite. Su un computer Windows, questo in genere include il file "Windows\Fonts\"rubrica.
+
+```csharp
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-// Aggiungi una nuova sorgente di cartella che indicherà ad Aspose.Words di cercare i caratteri nella seguente cartella.
+```
+
+## Passaggio 4: aggiungi una cartella di caratteri personalizzata
+
+Aggiungi una cartella personalizzata che contenga i tuoi caratteri aggiuntivi. Ciò è utile se hai font specifici non installati nella directory dei font di sistema.
+
+```csharp
 FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-// Aggiungi la cartella personalizzata che contiene i nostri caratteri all'elenco delle fonti di caratteri esistenti.
 fontSources.Add(folderFontSource);
+```
+
+## Passaggio 5: aggiorna le origini dei caratteri
+
+ Converti nuovamente l'elenco delle origini dei caratteri in un array e impostalo su`FontSettings` oggetto.
+
+```csharp
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 fontSettings.SetFontsSources(updatedFontSources);
+```
+
+## Passaggio 6: applica le impostazioni dei caratteri al documento
+
+ Infine, applica il configurato`FontSettings` al documento e salvarlo nel formato desiderato, ad esempio PDF.
+
+```csharp
 doc.FontSettings = fontSettings;
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ```
 
 ## Conclusione
-In questo tutorial, abbiamo imparato come impostare le cartelle dei caratteri di sistema e una cartella personalizzata durante il rendering di un documento utilizzando Aspose.Words per .NET. Seguendo questa guida passo passo, puoi facilmente specificare più cartelle di caratteri, inclusa la cartella di sistema e una cartella personalizzata, da utilizzare durante il rendering dei tuoi documenti. Aspose.Words offre un'API potente e flessibile per l'elaborazione delle parole con i caratteri nei tuoi documenti. Con questa conoscenza, puoi controllare e personalizzare le origini dei caratteri utilizzate durante il rendering dei tuoi documenti in base alle tue esigenze specifiche.
 
-### Domande frequenti
+Ed ecco qua! Seguendo questi passaggi puoi assicurarti che i tuoi documenti Word utilizzino i caratteri corretti, siano essi caratteri di sistema o personalizzati archiviati in una directory specifica. Questa configurazione aiuta a mantenere l'integrità dell'aspetto del documento in ambienti diversi.
 
-#### D: Come posso impostare le cartelle dei caratteri di sistema in Aspose.Words?
+## Domande frequenti
 
-R: Per impostare le cartelle dei caratteri di sistema in Aspose.Words, non devi fare nulla. Aspose.Words utilizza automaticamente i caratteri di sistema installati sul sistema operativo.
+### Cosa succede se manca un carattere sia nella cartella di sistema che in quella personalizzata?
 
-#### D: Come posso impostare cartelle di caratteri personalizzate in Aspose.Words?
+Aspose.Words utilizzerà un carattere predefinito per sostituire il carattere mancante, garantendo che il documento rimanga leggibile.
 
- R: Per impostare le cartelle di caratteri personalizzati in Aspose.Words, puoi utilizzare il file`SetFontsFolders` metodo del`Fonts` classe che specifica le posizioni delle cartelle dei caratteri personalizzati.
+### Posso aggiungere più cartelle di caratteri personalizzati?
 
-#### D: Posso specificare più cartelle di caratteri personalizzati in Aspose.Words?
+ Sì, puoi aggiungere più cartelle di caratteri personalizzati ripetendo il processo di creazione`FolderFontSource` oggetti e aggiungendoli all'elenco delle origini dei caratteri.
 
- R: Sì, puoi specificare più cartelle di caratteri personalizzati in Aspose.Words utilizzando il file`SetFontsFolders` metodo del`Fonts` classe con un elenco di posizioni delle cartelle.
+### È possibile utilizzare percorsi di rete per cartelle di caratteri personalizzati?
 
-#### D: Come posso controllare le cartelle dei caratteri definite in Aspose.Words?
+ Sì, puoi specificare un percorso di rete nel file`FolderFontSource` costruttore.
 
- Per controllare le cartelle dei caratteri definite in Aspose.Words, puoi utilizzare il file`GetFolders` metodo del`Fonts` class per ottenere l'elenco delle cartelle di caratteri configurate.
+### Quali formati di file supporta Aspose.Words per il salvataggio dei documenti?
 
-#### D: I caratteri delle cartelle personalizzate hanno la priorità sui caratteri di sistema in Aspose.Words?
+Aspose.Words supporta vari formati, inclusi DOCX, PDF, HTML e altri.
 
-R: Sì, i caratteri delle cartelle personalizzate hanno la priorità sui caratteri di sistema in Aspose.Words. Se un carattere è presente sia nelle cartelle personalizzate che nei caratteri di sistema, Aspose.Words utilizzerà la versione dalla cartella personalizzata.
+### Come gestisco le notifiche di sostituzione dei caratteri?
+
+ È possibile gestire le notifiche di sostituzione dei caratteri utilizzando il file`FontSettings` classe`FontSubstitutionWarning`evento.

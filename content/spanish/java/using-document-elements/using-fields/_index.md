@@ -239,7 +239,7 @@ Código fuente de la clase HandleMergeField
     {
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs args)
         {
-            // Hacer nada.
+            // No hagas nada.
         }
         /// <resumen>
         /// Esto se llama cuando el motor de combinación de correspondencia encuentra el campo de combinación Imagen:XXX en el documento.
@@ -320,7 +320,7 @@ Código fuente de la clase HandleMergeField
         }
         public void /*IFieldMergingCallback.*/imageFieldMerging(ImageFieldMergingArgs args)
         {
-            // Hacer nada.
+            // No hagas nada.
         }
         private DocumentBuilder mBuilder;
         private int mRowIdx;

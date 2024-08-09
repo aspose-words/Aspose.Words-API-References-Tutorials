@@ -8,7 +8,7 @@ weight: 1380
 url: /es/net/programming-with-bookmarks/
 ---
 
-Los tutoriales de Aspose.Words para .NET lo guiarán a través de varias funciones y técnicas de programación para el procesamiento de textos con marcadores en sus documentos de Word. En estos tutoriales aprenderá cómo crear, cambiar el nombre, eliminar y navegar entre marcadores. También aprenderá a extraer y reemplazar el contenido de los marcadores, así como a agregar marcadores dinámicos y utilizarlos para generar informes personalizados.
+Los tutoriales de Aspose.Words para .NET lo guiarán a través de varias funciones y técnicas de programación para el procesamiento de textos con marcadores en sus documentos de Word. En estos tutoriales aprenderá cómo crear, cambiar el nombre, eliminar y navegar entre marcadores. También aprenderá cómo extraer y reemplazar el contenido de los marcadores, así como también cómo agregar marcadores dinámicos y usarlos para generar informes personalizados.
 
 Los tutoriales le proporcionan ejemplos de código detallados y explicaciones paso a paso para ayudarle a comprender e implementar los conceptos. Ya sea que sea nuevo o tenga experiencia en la programación .NET, estos tutoriales lo ayudarán a aprovechar al máximo las funciones de marcadores en Aspose.Words.
 

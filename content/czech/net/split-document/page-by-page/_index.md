@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/split-document/page-by-page/
 ---
-## Úvod
+## Zavedení
 
 Rozdělení dokumentu aplikace Word podle stránek může být neuvěřitelně užitečné, zejména při práci s velkými dokumenty, kde je třeba extrahovat nebo sdílet konkrétní stránky samostatně. V tomto tutoriálu projdeme procesem rozdělení dokumentu aplikace Word na jednotlivé stránky pomocí Aspose.Words for .NET. Tato příručka pokryje vše od nezbytných předpokladů až po podrobný rozpis krok za krokem, takže budete moci snadno sledovat a implementovat řešení.
 

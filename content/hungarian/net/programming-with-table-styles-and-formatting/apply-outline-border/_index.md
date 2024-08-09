@@ -86,7 +86,7 @@ table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
 table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
 ```
 
- Minden szegélytípus (bal, jobb, felső, alsó) egyedileg beállítható. Használjuk`LineStyle.Single` folytonos vonalhoz,`1.5` a vonalszélességhez, és`Color.Green` a szegély színéhez.
+ Minden szegélytípus (bal, jobb, felső, alsó) egyedileg beállítható. használjuk`LineStyle.Single` folytonos vonalhoz,`1.5` a vonalszélességhez, és`Color.Green` a szegély színéhez.
 
 ## 6. lépés: Alkalmazza a cellaárnyékolást
 

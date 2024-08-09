@@ -2,88 +2,115 @@
 title: Engedélyezze a Betűtípus-csere letiltását
 linktitle: Engedélyezze a Betűtípus-csere letiltását
 second_title: Aspose.Words Document Processing API
-description: Ebből az oktatóanyagból megtudhatja, hogyan engedélyezheti vagy tilthatja le a betűkészlet-helyettesítést egy Word-dokumentumban az Aspose.Words for .NET segítségével.
+description: Ismerje meg, hogyan engedélyezheti vagy tilthatja le a betűtípusok helyettesítését Word-dokumentumokban az Aspose.Words for .NET használatával. Gondoskodjon arról, hogy dokumentumai minden platformon egységesek legyenek.
 type: docs
 weight: 10
 url: /hu/net/working-with-fonts/enable-disable-font-substitution/
 ---
-Ebben az oktatóanyagban végigvezetjük, hogyan engedélyezheti vagy tilthatja le a betűkészlet-helyettesítést egy Word-dokumentumban, amikor a .NET Aspose.Words könyvtárával rendereli azt. A betűtípusok helyettesítésének engedélyezése vagy letiltása lehetővé teszi annak szabályozását, hogy a hiányzó betűtípusokat automatikusan alapértelmezett betűtípusra cseréljék-e. Lépésről lépésre segítünk megérteni és megvalósítani a kódot a .NET-projektben.
+## Bevezetés
+
+Előfordult már, hogy olyan helyzetbe került, amikor egy Word-dokumentumban az aprólékosan kiválasztott betűtípusokat egy másik számítógépen való megtekintéskor lecserélik? Idegesítő, igaz? Ez a betűkészlet-csere miatt következik be, amely folyamat során a rendszer a hiányzó betűtípust egy elérhetőre cseréli. De ne aggódj! Az Aspose.Words for .NET segítségével egyszerűen kezelheti és szabályozhatja a betűtípusok helyettesítését. Ebben az oktatóanyagban végigvezetjük a betűtípus-helyettesítés engedélyezésének vagy letiltásának lépésein a Word-dokumentumokban, így biztosítva, hogy a dokumentumok mindig úgy nézzenek ki, ahogyan szeretné.
 
 ## Előfeltételek
-Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következőkkel:
-- C# programozási nyelv gyakorlati ismerete
-- A projektben telepített .NET Aspose.Words könyvtár
-- Egy Word-dokumentum, amelyet betűkészlet-helyettesítéssel vagy anélkül szeretne megjeleníteni
 
-## 1. lépés: Határozza meg a dokumentumkönyvtárat
- Először is be kell állítania a könyvtár elérési útját a Word-dokumentum helyére. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a kódban a megfelelő elérési úttal.
+Mielőtt belevágna a lépésekbe, győződjön meg arról, hogy mindennel rendelkezik, amire szüksége van:
+
+-  Aspose.Words for .NET: Töltse le a legújabb verziót[itt](https://releases.aspose.com/words/net/).
+- Visual Studio: Bármely .NET-et támogató verzió.
+- C# alapismeretek: Ez segít a kódolási példák követésében.
+
+## Névterek importálása
+
+A kezdéshez győződjön meg arról, hogy a szükséges névtereket importálta a projektbe. Adja hozzá ezeket a C# fájl tetejéhez:
 
 ```csharp
-// A dokumentumkönyvtár elérési útja
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## 2. lépés: Töltse fel a dokumentumot, és konfigurálja a betűtípus beállításait
- Ezután betöltjük a megjeleníteni kívánt Word-dokumentumot, és létrehozzuk a példányt`FontSettings` osztályt a betűtípus-beállítások kezeléséhez. Az alapértelmezett betűtípus-felülírást a betűtípus nevének megadásával állítjuk be`DefaultFontName` és tiltsa le a betűtípus-információk felülbírálását`Enabled` állítva`false`.
+Most bontsuk le a folyamatot egyszerű, kezelhető lépésekre.
+
+## 1. lépés: Állítsa be projektjét
+
+Először állítson be egy új projektet a Visual Studióban, és adjon hozzá hivatkozást az Aspose.Words for .NET könyvtárra. Ha még nem tette meg, töltse le a[Aspose honlapja](https://releases.aspose.com/words/net/).
+
+## 2. lépés: Töltse be a dokumentumot
+
+Ezután töltse be azt a dokumentumot, amellyel dolgozni szeretne. Íme, hogyan kell csinálni:
 
 ```csharp
-// Töltse be a dokumentumot
-Document doc = new Document(dataDir + "Rendering.docx");
-
-// Konfigurálja a betűtípus beállításait
-FontSettings fontSettings = new FontSettings();
-fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
-fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
-
-// Alkalmazza a betűtípus-beállításokat a dokumentumra
-doc.FontSettings = fontSettings;
-```
-
-## 3. lépés: Mentse el a renderelt dokumentumot
-Végül elmentjük a renderelt dokumentumot, amely tiszteletben tartja a megadott betűtípus-felülírási beállításokat.
-
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
-```
-
-
-### Minta forráskód a Betűtípus-helyettesítés letiltásának engedélyezése az Aspose.Words for .NET használatával funkcióhoz 
-
-```csharp
-
 // A dokumentumkönyvtár elérési útja
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
-FontSettings fontSettings = new FontSettings();
-fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
-fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
-doc.FontSettings = fontSettings;
-doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
+```
 
+ Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentumkönyvtár tényleges elérési útjával. Ez a kód betölti a dokumentumot a memóriába, így Ön módosíthatja azt.
+
+## 3. lépés: Konfigurálja a betűtípus-beállításokat
+
+ Most hozzunk létre egy`FontSettings` objektum a betűtípus helyettesítési beállításainak kezelésére:
+
+```csharp
+FontSettings fontSettings = new FontSettings();
+```
+
+## 4. lépés: Állítsa be az alapértelmezett betűtípus-helyettesítést
+
+Állítsa be az alapértelmezett betűtípus-helyettesítést az Ön által választott betűtípusra. Ezt a betűtípust használja a rendszer, ha az eredeti betűtípus nem érhető el:
+
+```csharp
+fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
+```
+
+Ebben a példában az Arial-t használjuk alapértelmezett betűtípusként.
+
+## 5. lépés: Kapcsolja ki a betűtípus-információ helyettesítését
+
+A betűtípus-információk helyettesítésének letiltásához, amely megakadályozza, hogy a rendszer a hiányzó betűtípusokat elérhetőre cserélje, használja a következő kódot:
+
+```csharp
+fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
+```
+
+## 6. lépés: Alkalmazza a Betűtípus-beállításokat a dokumentumra
+
+Most alkalmazza ezeket a beállításokat a dokumentumra:
+
+```csharp
+doc.FontSettings = fontSettings;
+```
+
+## 7. lépés: Mentse el a dokumentumot
+
+Végül mentse el a módosított dokumentumot. Bármilyen formátumban elmentheti. Ehhez az oktatóanyaghoz PDF formátumban mentjük:
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 ```
 
 ## Következtetés
-Ebben az oktatóanyagban azt láthattuk, hogyan lehet engedélyezni vagy letiltani a betűkészlet-helyettesítést egy Word-dokumentumban, amikor az Aspose.Words for .NET segítségével történik. A betűtípusok helyettesítésének szabályozásával befolyásolhatja, hogy a hiányzó betűtípusok hogyan legyenek kezelve a megjelenített dokumentumokban. Ne habozzon használni ezt a funkciót a Word-dokumentumok betűtípus-kezelésének testreszabásához.
 
-### GYIK
+És megvan! Ha követi ezeket a lépéseket, az Aspose.Words for .NET segítségével egyszerűen szabályozhatja a betűtípusok helyettesítését a Word-dokumentumokban. Ez biztosítja, hogy a dokumentumok megőrizzék eredeti megjelenésüket, függetlenül attól, hogy hol tekintik meg őket.
 
-#### K: Hogyan engedélyezhetem a betűtípusok helyettesítését egy Word-dokumentumban az Aspose.Words segítségével?
+## GYIK
 
-V: A Word-dokumentumban az Aspose.Words segítségével történő betűkészlet-helyettesítés engedélyezéséhez az API segítségével megadhatja a helyettesítő betűtípusokat, amelyeket akkor használ, ha a szükséges betűtípusok nem állnak rendelkezésre. Ez biztosítja a következetes szövegvizualizációt, még az eredeti betűtípusok nélkül is.
+### Használhatok az Arialtól eltérő betűtípusokat helyettesítésre?
 
-#### K: Lehetséges-e letiltani a betűkészlet-helyettesítést egy Word-dokumentumban az Aspose.Words használatával?
+ Teljesen! A rendszeren elérhető bármely betűtípust megadhatja a betűtípus nevének megváltoztatásával a`DefaultFontName` ingatlan.
 
-V: Igen, az Aspose.Words segítségével letilthatja a betűkészlet helyettesítését egy Word-dokumentumban. Az API használatával megakadályozhatja, hogy a Word a szükséges betűtípusokat más betűtípusokkal helyettesítse, ami megőrzi a szöveg eredeti megjelenését.
+### Mi történik, ha a megadott alapértelmezett betűtípus nem érhető el?
 
-#### K: Mi történik, ha a szükséges betűtípusok hiányoznak a Word-dokumentum pótlása során?
+Ha az alapértelmezett betűtípus nem érhető el, az Aspose.Words a rendszer tartalék mechanizmusát használja a megfelelő csere megtalálásához.
 
-V: Ha egy Word-dokumentumban hiányoznak a szükséges betűtípusok a helyettesítés során, az Aspose.Words képes észlelni ezt a problémát, és lehetőségeket kínál a javításra. Dönthet úgy, hogy a hiányzó betűtípusokat helyettesíti más betűtípusokkal, vagy beillesztheti a hiányzó betűtípusokat a dokumentumba, így biztosítva a megfelelő megjelenítést.
+### A letiltást követően újra engedélyezhetem a betűtípus helyettesítését?
 
-#### K: Hogyan kezelhetem a hiányzó betűtípusokat, amikor a Word-dokumentumban az Aspose.Words-szel helyettesítem?
+ Igen, átkapcsolhatod a`Enabled` tulajdona`FontInfoSubstitution` vissza`true` ha ismét engedélyezni szeretné a betűtípus helyettesítését.
 
-V: A hiányzó betűtípusok kezeléséhez, amikor egy Word-dokumentumban Aspose.Words-szel helyettesíti, használhatja az API-t a hiányzó betűtípusok észlelésére és a felbontási beállítások megadására. Dönthet úgy, hogy a hiányzó betűtípusokat alternatív betűtípusokkal helyettesíti, vagy beillesztheti a hiányzó betűtípusokat a dokumentumba, igényeitől függően.
+### Van mód annak ellenőrzésére, hogy mely betűtípusok vannak helyettesítve?
 
-#### K: Fontos a betűkészlet-helyettesítés szabályozása egy Word-dokumentumban?
+Igen, az Aspose.Words módszereket biztosít a betűtípusok helyettesítésének naplózására és nyomon követésére, lehetővé téve, hogy megnézze, mely betűtípusok kerülnek lecserélésre.
 
-V: Igen, a szöveg vizuális integritásának megőrzése érdekében fontos a betűkészlet-helyettesítés szabályozása a Word-dokumentumban. Az Aspose.Words használatával engedélyezheti vagy letilthatja a betűtípusok helyettesítését, biztosíthatja a szükséges betűtípusok használatát, és elkerülheti a hiányzó vagy helyettesített betűtípusokkal kapcsolatos problémákat.
+### Használhatom ezt a módszert a DOCX-en kívül más dokumentumformátumokhoz is?
+
+Határozottan! Az Aspose.Words különféle formátumokat támogat, és ezeket a betűtípus-beállításokat bármilyen támogatott formátumra alkalmazhatja.

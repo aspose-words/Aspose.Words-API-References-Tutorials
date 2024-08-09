@@ -88,7 +88,7 @@ Aktualizowanie i wyświetlanie wyników pól w dokumentach Word za pomocą Aspos
 Można aktualizować różne typy pól, w tym pola daty, właściwości dokumentu i pola formuł.
 
 ### Czy muszę zapisać dokument po aktualizacji pól?  
- Nie, dzwonię`UpdateFields` nie zapisuje automatycznie dokumentu. Użyj`Save` metoda zapisania wszelkich zmian.
+ Nie, dzwonię`UpdateFields` nie zapisuje automatycznie dokumentu. Skorzystaj z`Save` metoda zapisania wszelkich zmian.
 
 ### Czy mogę zaktualizować pola w określonej sekcji dokumentu?  
  Tak, możesz skorzystać z`Document.Sections` aby uzyskać dostęp do określonych sekcji i aktualizować znajdujące się w nich pola.

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-charts/insert-scatter-chart/
 ---
-## Úvod
+## Zavedení
 
 V tomto tutoriálu se naučíte, jak využít Aspose.Words pro .NET k vložení bodového grafu do dokumentu aplikace Word. Bodové grafy jsou výkonné vizuální nástroje, které mohou efektivně zobrazovat datové body na základě dvou proměnných, díky čemuž jsou vaše dokumenty poutavější a informativnější.
 
@@ -15,7 +15,7 @@ V tomto tutoriálu se naučíte, jak využít Aspose.Words pro .NET k vložení 
 
 Než se pustíme do vytváření bodových grafů pomocí Aspose.Words pro .NET, ujistěte se, že máte následující předpoklady:
 
-1.  Instalace Aspose.Words pro .NET: Stáhněte a nainstalujte Aspose.Words pro .NET z[tady](https://releases.aspose.com/words/net/).
+1.  Instalace Aspose.Words pro .NET: Stáhněte a nainstalujte Aspose.Words pro .NET z[zde](https://releases.aspose.com/words/net/).
    
 2. Základní znalost C#: Výhodou bude znalost programovacího jazyka C# a frameworku .NET.
 
@@ -68,7 +68,7 @@ doc.Save(dataDir + "WorkingWithCharts.InsertScatterChart.docx");
 
 ## Závěr
 
-Gratulujeme! Úspěšně jste se naučili, jak vložit bodový graf do dokumentu aplikace Word pomocí Aspose.Words for .NET. Bodové grafy jsou vynikajícími nástroji pro vizualizaci datových vztahů a pomocí Aspose.Words je můžete bez námahy integrovat do svých dokumentů a zlepšit tak přehlednost a porozumění.
+Gratuluji! Úspěšně jste se naučili, jak vložit bodový graf do dokumentu aplikace Word pomocí Aspose.Words for .NET. Bodové grafy jsou vynikajícími nástroji pro vizualizaci datových vztahů a pomocí Aspose.Words je můžete bez námahy integrovat do svých dokumentů a zlepšit tak přehlednost a porozumění.
 
 ## FAQ
 

@@ -9,7 +9,7 @@ url: /sv/net/join-and-append-documents/update-page-layout/
 ---
 ## Introduktion
 
-Hallå där! Om du någonsin har arbetat med Word-dokument programmatiskt vet du hur viktigt det är att hantera sidlayouter effektivt. Oavsett om du genererar rapporter, skapar mallar eller helt enkelt justerar dokumentdesign, är det viktigt att hålla dina sidlayouter fräscha och korrekta. Idag fördjupar vi oss i hur man uppdaterar sidlayouter i Word-dokument med Aspose.Words för .NET. Vi går igenom processen steg-för-steg, så att du med säkerhet kan hantera dina dokuments layouter och se till att allt ser rätt ut.
+Hej där! Om du någonsin har arbetat med Word-dokument programmatiskt vet du hur viktigt det är att hantera sidlayouter effektivt. Oavsett om du genererar rapporter, skapar mallar eller helt enkelt justerar dokumentdesign, är det viktigt att hålla dina sidlayouter fräscha och korrekta. Idag fördjupar vi oss i hur man uppdaterar sidlayouter i Word-dokument med Aspose.Words för .NET. Vi går igenom processen steg-för-steg, så att du med säkerhet kan hantera dina dokuments layouter och se till att allt ser rätt ut.
 
 ## Förutsättningar
 
@@ -25,7 +25,7 @@ Innan vi börjar, se till att du har följande på plats:
 
 5. Dokumentkatalog: Se till att du har en katalog inrättad där dina dokument kommer att sparas och laddas från.
 
-Har du allt klart? Bra! Låt oss dyka in i det roliga.
+Har du allt klart? Stor! Låt oss dyka in i det roliga.
 
 ## Importera namnområden
 

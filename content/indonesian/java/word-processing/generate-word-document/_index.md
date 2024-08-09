@@ -134,7 +134,7 @@ Aspose.Words menawarkan fitur-fitur canggih untuk menyempurnakan dan menyesuaika
 
 ### 8.1 Menambahkan Tanda Air
 
-Tambahkan tanda air, seperti "Rahasia" atau "Draf", ke dokumen Anda untuk menunjukkan statusnya.
+Tambahkan tanda air, seperti "Rahasia" atau "Draf" ke dokumen Anda untuk menunjukkan statusnya.
 
 ### 8.2 Menambahkan Header dan Footer
 
@@ -198,4 +198,4 @@ Ya, selain dokumen Word, Aspose.Words for Java dapat mengonversi file ke PDF, HT
 
 ### 5. Seberapa sering Aspose.Words untuk Java diperbarui?
 
-Aspose secara rutin merilis pembaruan dan peningkatan pada perpustakaannya, memastikan kinerja optimal dan mengatasi masalah apa pun yang muncul.
+Aspose secara berkala merilis pembaruan dan peningkatan pada perpustakaannya, memastikan kinerja optimal dan mengatasi masalah apa pun yang muncul.

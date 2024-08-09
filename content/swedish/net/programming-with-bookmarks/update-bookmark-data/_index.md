@@ -15,7 +15,7 @@ Har du någonsin stött på en situation där du behövde dynamiskt uppdatera sp
 
 Innan vi dyker in i koden, låt oss se till att du har de nödvändiga verktygen till ditt förfogande:
 
--  Aspose.Words för .NET: Detta är kraftpaketet bibliotek som ger dig möjlighet att arbeta med Word-dokument programmatiskt. Gå över till nedladdningssektionen på Asposes webbplats[Nedladdningslänk](https://releases.aspose.com/words/net/) att ta ditt exemplar. - Du kan välja en gratis provperiod eller utforska deras olika licensalternativ[länk](https://purchase.aspose.com/buy).
+-  Aspose.Words för .NET: Detta är kraftpaketet bibliotek som ger dig möjlighet att arbeta med Word-dokument programmatiskt. Gå över till nedladdningssektionen på Asposes webbplats[Ladda ner länk](https://releases.aspose.com/words/net/) att ta ditt exemplar. - Du kan välja en gratis provperiod eller utforska deras olika licensalternativ[länk](https://purchase.aspose.com/buy).
 - En .NET-utvecklingsmiljö: Visual Studio, Visual Studio Code eller någon annan .NET-ID du väljer kommer att fungera som din utvecklingslekplats.
 - Ett exempel på Word-dokument: Skapa ett enkelt Word-dokument (som "Bookmarks.docx") som innehåller lite text och infoga ett bokmärke (vi kommer att ta upp hur man gör detta senare) att öva med.
 
@@ -41,7 +41,7 @@ string dataDir = "YOUR_DOCUMENT_DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-Detta kodavsnitt definierar först katalogsökvägen där ditt Word-dokument finns. Byta ut`"YOUR_DOCUMENT_DIRECTORY"` med den faktiska sökvägen på ditt system. Sedan skapar den en ny`Document` objekt, i huvudsak öppnar det angivna Word-dokumentet (`Bookmarks.docx` i det här exemplet).
+Detta kodavsnitt definierar först katalogsökvägen där ditt Word-dokument finns. Ersätta`"YOUR_DOCUMENT_DIRECTORY"` med den faktiska sökvägen på ditt system. Sedan skapar den en ny`Document` objekt, i huvudsak öppnar det angivna Word-dokumentet (`Bookmarks.docx` i det här exemplet).
 
 ## Steg 2: Öppna bokmärket
 
@@ -119,7 +119,7 @@ Absolut! Aspose.Words tillhandahåller metoder för att infoga bokmärken på sp
 
 ### Kan jag ta bort bokmärken efter att ha uppdaterat dem?
 
- Ja, Aspose.Words tillhandahåller`Remove` metod på`Bookmarks` samling för att ta bort bokmärken.
+ Ja, Aspose.Words tillhandahåller`Remove` metod på`Bookmarks` samling för att radera bokmärken.
 
 ### Finns det några begränsningar för bokmärkesinnehåll?
 

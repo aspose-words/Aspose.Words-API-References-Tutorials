@@ -16,7 +16,7 @@ Hej, miłośnicy technologii! Czy jesteś gotowy na poznanie fascynującego świ
 
 Zanim zaczniemy kodować, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
-1.  Biblioteka Aspose.Words dla .NET: Będziesz potrzebować najnowszej wersji Aspose.Words dla .NET. Jeśli jeszcze tego nie zrobiłeś, możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1.  Biblioteka Aspose.Words dla .NET: Będziesz potrzebować najnowszej wersji Aspose.Words dla .NET. Jeśli jeszcze tego nie zrobiłeś, możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: Środowisko programistyczne .NET, takie jak Visual Studio, będzie niezbędne do pisania i testowania kodu.
 3. Podstawowa znajomość języka C#: Podstawowa znajomość języka C# będzie pomocna podczas poruszania się po kodzie.
 4. Przykładowy katalog dokumentów: Przygotuj katalog, w którym będziesz zapisywać dokumenty programu Word. To tutaj dzieje się magia!
@@ -128,7 +128,7 @@ Udanego kodowania i pamiętaj, że jedynym ograniczeniem jest Twoja wyobraźnia!
 Aspose.Words dla .NET to obszerna biblioteka, która pozwala programistom tworzyć, edytować i konwertować dokumenty Word w aplikacjach .NET. Jest idealny do automatyzacji obiegu dokumentów i zwiększania funkcjonalności dzięki VBA.
 
 ### Czy mogę wypróbować Aspose.Words za darmo?  
- Tak, możesz wypróbować Aspose.Words z[bezpłatna wersja próbna](https://releases.aspose.com/) lub zdobądź[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) dla ewolucji.
+ Tak, możesz wypróbować Aspose.Words z[bezpłatna wersja próbna](https://releases.aspose.com/) lub zdobądź[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) do oceny.
 
 ### Jak dodać kod VBA do dokumentu programu Word?  
  Możesz dodać kod VBA, tworząc plik`VbaModule` i ustawienie jego`SourceCode` właściwość za pomocą kodu makra. Następnie dodaj moduł do swojego`VbaProject`.

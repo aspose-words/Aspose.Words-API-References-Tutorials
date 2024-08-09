@@ -9,7 +9,7 @@ url: /ko/net/programming-with-markdownsaveoptions/export-into-markdown-with-tabl
 ---
 ## 소개
 
-안녕하세요! 완벽하게 정렬된 표를 사용하여 Word 문서를 Markdown 형식으로 내보내는 방법이 궁금하신가요? 문서 작업을 하는 개발자이든 Markdown을 좋아하는 사람이든 이 가이드는 여러분을 위한 것입니다. 이를 달성하기 위해 .NET용 Aspose.Words 사용의 핵심을 살펴보겠습니다. Word 테이블을 깔끔하게 정렬된 Markdown 테이블로 바꿀 준비가 되셨나요? 시작하자!
+안녕하세요! 완벽하게 정렬된 표를 사용하여 Word 문서를 Markdown 형식으로 내보내는 방법이 궁금하신가요? 문서 작업을 하는 개발자이든 Markdown을 좋아하는 사람이든 이 가이드는 여러분을 위한 것입니다. 이를 달성하기 위해 .NET용 Aspose.Words 사용의 핵심을 살펴보겠습니다. Word 테이블을 깔끔하게 정렬된 Markdown 테이블로 바꿀 준비가 되셨나요? 시작해 봅시다!
 
 ## 전제 조건
 
@@ -88,7 +88,7 @@ doc.Save(dataDir + "CenterTableContentAlignment.md", saveOptions);
  그만큼`Auto`정렬 옵션은 해당 테이블 열의 첫 번째 단락에서 정렬을 가져옵니다. 이는 단일 테이블에 혼합 정렬이 있는 경우 유용할 수 있습니다.
 
 ```csharp
-// 정렬을 자동으로 설정합니다.
+// 정렬을 자동으로 설정하세요.
 saveOptions.TableContentAlignment = TableContentAlignment.Auto;
 
 // 자동 정렬로 문서를 저장합니다.

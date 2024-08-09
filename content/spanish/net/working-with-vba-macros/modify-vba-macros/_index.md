@@ -9,16 +9,16 @@ url: /es/net/working-with-vba-macros/modify-vba-macros/
 ---
 ## Introducción
 
-¡Hola, compañeros programadores y entusiastas de la automatización de documentos! ¿Estás listo para llevar tu juego de documentos de Word al siguiente nivel? Hoy nos sumergimos en el fascinante mundo de las macros VBA (Visual Basic para Aplicaciones) en documentos de Word. Específicamente, exploraremos cómo modificar macros VBA existentes usando Aspose.Words para .NET. Esta poderosa biblioteca facilita la automatización de tareas, la personalización de documentos e incluso la modificación de esas molestas macros. Ya sea que esté buscando actualizar sus macros o simplemente tenga curiosidad sobre el proceso, este tutorial lo tiene cubierto. ¡Entonces empecemos!
+¡Hola, compañeros programadores y entusiastas de la automatización de documentos! ¿Estás listo para llevar tu juego de documentos de Word al siguiente nivel? Hoy nos sumergimos en el fascinante mundo de las macros VBA (Visual Basic para Aplicaciones) en documentos de Word. Específicamente, exploraremos cómo modificar macros VBA existentes usando Aspose.Words para .NET. Esta poderosa biblioteca facilita la automatización de tareas, la personalización de documentos e incluso la modificación de esas molestas macros. Ya sea que esté buscando actualizar sus macros o simplemente tenga curiosidad sobre el proceso, este tutorial lo tiene cubierto. Entonces, ¡comencemos!
 
 ## Requisitos previos
 
 Antes de pasar al código, asegurémonos de que tiene todo lo que necesita:
 
-1.  Biblioteca Aspose.Words para .NET: asegúrese de tener la última versión de Aspose.Words para .NET. Puede[descarguelo aqui](https://releases.aspose.com/words/net/).
+1.  Biblioteca Aspose.Words para .NET: asegúrese de tener la última versión de Aspose.Words para .NET. Puede[descárgalo aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: un entorno de desarrollo .NET como Visual Studio es esencial para escribir y probar su código.
 3. Conocimientos básicos de C#: una comprensión básica de C# le ayudará a seguir los fragmentos de código.
-4.  Documento de Word de muestra: tenga un[Documento de Word](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) con las macros VBA existentes listas. Este será nuestro sujeto de prueba para modificar las macros.
+4.  Documento de Word de muestra: tenga un[documento de palabra](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) con las macros VBA existentes listas. Este será nuestro sujeto de prueba para modificar las macros.
 
 ## Importar espacios de nombres
 
@@ -110,7 +110,7 @@ Esta línea guarda el documento con la macro VBA modificada como "WorkingWithVba
 
 ¡Y ahí lo tienes! Ha modificado con éxito macros de VBA en un documento de Word utilizando Aspose.Words para .NET. Este tutorial cubrió todo, desde cargar su documento y acceder al proyecto VBA hasta cambiar el código de macro y guardar el documento modificado. Con Aspose.Words, puede automatizar tareas fácilmente, personalizar sus documentos e incluso jugar con macros de VBA para satisfacer sus necesidades.
 
- Si estás ansioso por explorar más, el[Documentación API](https://reference.aspose.com/words/net/) es un recurso fantástico. Y si alguna vez tienes un problema, el[Foro de soporte](https://forum.aspose.com/c/words/8) siempre está ahí para ayudarte.
+ Si estás ansioso por explorar más, el[Documentación API](https://reference.aspose.com/words/net/) es un recurso fantástico. Y si alguna vez tienes un problema, el[foro de soporte](https://forum.aspose.com/c/words/8) siempre está ahí para ayudarte.
 
 Feliz codificación y recuerda, ¡el cielo es el límite cuando se trata de automatizar tus documentos de Word!
 

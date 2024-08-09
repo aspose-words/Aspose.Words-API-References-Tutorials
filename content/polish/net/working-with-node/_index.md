@@ -14,9 +14,9 @@ Aby pracować z węzłami w Aspose.Words dla .NET, programiści mogą wykorzysta
  ## Poradniki
 | Tytuł | Opis |
 | --- | --- |
-| [Użyj typu węzła](./use-node-type/) | Dowiedz się, jak używać typu węzła, aby uzyskać dostęp do informacji specyficznych dla dokumentu za pomocą Aspose.Words dla .NET. |
-| [Pobierz węzeł nadrzędny](./get-parent-node/) | Dowiedz się, jak uzyskać węzeł nadrzędny określonego elementu za pomocą Aspose.Words dla .NET. |
-| [Dokument właściciela](./owner-document/) | Dowiedz się, jak korzystać z dokumentu właściciela w Aspose.Words dla .NET. |
-| [Wylicz węzły podrzędne](./enumerate-child-nodes/) | Dowiedz się, jak wyliczyć węzły podrzędne w akapicie za pomocą Aspose.Words dla .NET. |
-| [Wpisany dostęp](./typed-access/) | Dowiedz się, jak korzystać z dostępu wpisywanego do manipulowania tabelami w Aspose.Words dla .NET. |
-| [Utwórz i dodaj węzeł akapitu](./create-and-add-paragraph-node/) | Utwórz i dodaj węzeł akapitu do dokumentów programu Word za pomocą Aspose.Words dla .NET. |
+| [Użyj typu węzła](./use-node-type/) | Dowiedz się, jak opanować właściwość NodeType w Aspose.Words dla .NET, korzystając z naszego szczegółowego przewodnika. Idealny dla programistów, którzy chcą ulepszyć swoje umiejętności przetwarzania dokumentów. |
+| [Pobierz węzeł nadrzędny](./get-parent-node/) | Dowiedz się, jak uzyskać węzeł nadrzędny sekcji dokumentu za pomocą Aspose.Words dla .NET, korzystając z tego szczegółowego samouczka krok po kroku. |
+| [Dokument właściciela](./owner-document/) | Dowiedz się, jak pracować z dokumentem właściciela w Aspose.Words dla .NET. Ten przewodnik krok po kroku opisuje tworzenie węzłów w dokumencie i manipulowanie nimi. |
+| [Wylicz węzły podrzędne](./enumerate-child-nodes/) | Dowiedz się, jak wyliczyć węzły podrzędne w dokumencie programu Word przy użyciu Aspose.Words dla .NET, korzystając z tego samouczka krok po kroku. |
+| [Wpisany dostęp](./typed-access/) | Dowiedz się, jak korzystać z dostępu wpisanego w Aspose.Words dla .NET, aby łatwo manipulować elementami dokumentu, takimi jak tabele i wiersze. Ten przewodnik krok po kroku upraszcza przepływ pracy. |
+| [Utwórz i dodaj węzeł akapitu](./create-and-add-paragraph-node/) | Dowiedz się, jak utworzyć i dodać węzeł akapitu w dokumencie przy użyciu Aspose.Words dla .NET, dzięki temu szczegółowemu samouczkowi krok po kroku. |

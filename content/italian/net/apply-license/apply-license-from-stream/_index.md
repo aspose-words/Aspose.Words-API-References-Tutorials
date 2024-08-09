@@ -7,9 +7,9 @@ type: docs
 weight: 10
 url: /it/net/apply-license/apply-license-from-stream/
 ---
-## introduzione
+## Introduzione
 
-Ehi, colleghi programmatori! Se ti stai immergendo nel mondo di Aspose.Words per .NET, una delle prime cose che devi fare è applicare una licenza per sbloccare tutto il potenziale della libreria. In questa guida ti spiegheremo come applicare una licenza da uno stream. Credimi, è più semplice di quanto sembri e alla fine di questo tutorial la tua applicazione sarà operativa senza problemi. Pronto per iniziare? Saltiamo subito dentro!
+Ehi, colleghi programmatori! Se ti stai immergendo nel mondo di Aspose.Words per .NET, una delle prime cose che devi fare è applicare una licenza per sbloccare tutto il potenziale della libreria. In questa guida ti spiegheremo come applicare una licenza da uno stream. Credimi, è più semplice di quanto sembri e alla fine di questo tutorial la tua applicazione sarà operativa senza problemi. Pronti per iniziare? Saltiamo subito dentro!
 
 ## Prerequisiti
 
@@ -80,7 +80,7 @@ catch (Exception e)
 
 ## Conclusione
 
- il gioco è fatto! Applicare una licenza da uno stream in Aspose.Words per .NET è un processo semplice una volta che si conoscono i passaggi. Seguendo questa guida, ti assicuri che la tua applicazione possa sfruttare tutte le funzionalità di Aspose.Words senza alcuna limitazione. Se riscontri problemi, non esitare a controllare il[documentazione](https://reference.aspose.com/words/net/) o cercare aiuto su[Forum di assistenza](https://forum.aspose.com/c/words/8). Buona programmazione!
+Ed ecco qua! Applicare una licenza da uno stream in Aspose.Words per .NET è un processo semplice una volta che si conoscono i passaggi. Seguendo questa guida, ti assicuri che la tua applicazione possa sfruttare tutte le funzionalità di Aspose.Words senza alcuna limitazione. Se riscontri problemi, non esitare a controllare il[documentazione](https://reference.aspose.com/words/net/) o cercare aiuto su[forum di supporto](https://forum.aspose.com/c/words/8). Buona programmazione!
 
 ## Domande frequenti
 

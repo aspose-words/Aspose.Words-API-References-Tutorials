@@ -15,7 +15,7 @@ url: /vi/net/programming-with-bookmarks/untangle/
 
 Trước khi đi sâu vào mã, hãy đảm bảo bạn có mọi thứ mình cần:
 
-1.  Aspose.Words for .NET: Bạn sẽ cần thư viện Aspose.Words for .NET. Nếu bạn không có nó, bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Bạn sẽ cần thư viện Aspose.Words for .NET. Nếu bạn không có nó, bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Môi trường phát triển .NET như Visual Studio.
 3. Kiến thức cơ bản về C#: Hiểu những kiến thức cơ bản về C# sẽ giúp bạn theo dõi các đoạn mã và giải thích.
 
@@ -81,7 +81,7 @@ if (row1 != null && row2 != null && row1.NextSibling == row2)
 }
 ```
 
- Ở đây, chúng tôi đang thêm một điều kiện để kiểm tra xem cả hai hàng có được tìm thấy hay không và chúng có liền kề nhau không. Các`NextSibling` thuộc tính giúp chúng tôi xác minh sự liền kề.
+ Ở đây, chúng tôi đang thêm một điều kiện để kiểm tra xem cả hai hàng có được tìm thấy hay không và chúng có liền kề nhau không. các`NextSibling` thuộc tính giúp chúng tôi xác minh sự liền kề.
 
 ## Bước 5: Di chuyển phần cuối dấu trang
 

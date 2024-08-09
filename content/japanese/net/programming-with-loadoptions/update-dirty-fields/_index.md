@@ -92,4 +92,4 @@ doc.Save(dataDir + "WorkingWithLoadOptions.UpdateDirtyFields.docx");
 はい、Aspose.Words は、Word 文書をプログラムで操作するプロセスを簡素化する強力なライブラリです。
 
 ### Aspose.Words の詳細情報はどこで入手できますか?
-チェックしてください[ドキュメンテーション](https://reference.aspose.com/words/net/)詳細なガイドと例については、こちらをご覧ください。
+チェックしてください[ドキュメント](https://reference.aspose.com/words/net/)詳細なガイドと例については、こちらをご覧ください。

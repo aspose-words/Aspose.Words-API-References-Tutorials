@@ -9,7 +9,7 @@ url: /nl/net/document-protection/get-protection-type/
 ---
 ## Invoering
 
-Hallo daar! Heeft u zich ooit afgevraagd hoe u het beveiligingstype van uw Word-documenten programmatisch kunt controleren? Of u nu gevoelige gegevens beveiligt of gewoon nieuwsgierig bent naar de status van het document, het kan superhandig zijn om te weten hoe u het beveiligingstype kunt verkrijgen. Vandaag doorlopen we het proces met behulp van Aspose.Words voor .NET, een krachtige bibliotheek die het werken met Word-documenten een fluitje van een cent maakt. Doe je gordel om en laten we erin duiken!
+Hé daar! Heeft u zich ooit afgevraagd hoe u het beveiligingstype van uw Word-documenten programmatisch kunt controleren? Of u nu gevoelige gegevens beveiligt of gewoon nieuwsgierig bent naar de status van het document, het kan superhandig zijn om te weten hoe u het beveiligingstype kunt verkrijgen. Vandaag doorlopen we het proces met behulp van Aspose.Words voor .NET, een krachtige bibliotheek die het werken met Word-documenten een fluitje van een cent maakt. Doe je gordel om en laten we erin duiken!
 
 ## Vereisten
 
@@ -34,7 +34,7 @@ Laten we het proces opsplitsen in eenvoudige, gemakkelijk te volgen stappen. Elk
 
 ## Stap 1: Stel uw project in
 
-Stel eerst uw C#-project in Visual Studio in. Hier is hoe:
+Stel eerst uw C#-project in Visual Studio in. Hier ziet u hoe:
 
 1. Een nieuw project maken: Open Visual Studio, ga naar Bestand > Nieuw > Project en selecteer een console-app (.NET Core of .NET Framework).
 2. Aspose.Words installeren: Klik met de rechtermuisknop op uw project in de Solution Explorer, selecteer "NuGet-pakketten beheren", zoek naar "Aspose.Words" en installeer het.

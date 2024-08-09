@@ -54,7 +54,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 제목: 새 단락 스타일 만들기 및 사용자 정의
 
-설명: 단락의 새 스타일을 정의하십시오. 이 스타일은 Word에서 제공하는 표준 스타일과 다르게 텍스트 서식을 지정하는 데 사용됩니다.
+설명: 단락의 새 스타일을 정의합니다. 이 스타일은 Word에서 제공하는 표준 스타일과 다르게 텍스트 서식을 지정하는 데 사용됩니다.
 
 ```csharp
 Style paraStyle = builder.Document.Styles.Add(StyleType.Paragraph, "MyParaStyle");

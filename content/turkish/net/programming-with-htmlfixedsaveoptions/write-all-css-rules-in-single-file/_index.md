@@ -72,7 +72,7 @@ doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile
 
 ## Çözüm
 
-İşte buyur! Yalnızca birkaç satır kodla, Word belgenizi, tüm CSS kurallarının tek bir dosyada düzgün bir şekilde organize edildiği şekilde başarıyla HTML'ye dönüştürdünüz. Bu yöntem yalnızca CSS yönetiminizi basitleştirmekle kalmaz, aynı zamanda HTML belgelerinizin sürdürülebilirliğini de artırır. Yani bir dahaki sefere bir Word belgesini dönüştürmekle görevlendirildiğinizde, işleri nasıl düzenli tutacağınızı tam olarak biliyorsunuz!
+Ve işte karşınızda! Yalnızca birkaç satır kodla, Word belgenizi, tüm CSS kurallarının tek bir dosyada düzgün bir şekilde organize edildiği şekilde başarıyla HTML'ye dönüştürdünüz. Bu yöntem yalnızca CSS yönetiminizi basitleştirmekle kalmaz, aynı zamanda HTML belgelerinizin sürdürülebilirliğini de artırır. Yani bir dahaki sefere bir Word belgesini dönüştürmekle görevlendirildiğinizde, işleri nasıl düzenli tutacağınızı tam olarak biliyorsunuz!
 
 ## SSS'ler
 
@@ -89,4 +89,4 @@ Tek bir CSS dosyası kullanmak stillerinizin yönetimini ve bakımını kolayla�
 Aspose.Words for .NET, PDF, TXT dahil olmak üzere çeşitli formatları ve JPEG ve PNG gibi görüntü formatlarını destekler.
 
 ### Aspose.Words for .NET'te daha fazla kaynağı nerede bulabilirim?
- Kontrol et[dokümantasyon](https://reference.aspose.com/words/net/) kapsamlı kılavuzlar ve API referansları için.
+ Şuna göz atın:[dokümantasyon](https://reference.aspose.com/words/net/) kapsamlı kılavuzlar ve API referansları için.

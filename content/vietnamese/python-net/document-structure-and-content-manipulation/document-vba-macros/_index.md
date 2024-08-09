@@ -103,7 +103,7 @@ Sub HandleErrors()
 End Sub
 ```
 
-## Cân nhắc về Bảo mật
+## Cân nhắc về bảo mật
 
 Tự động hóa tài liệu Word đòi hỏi phải chú ý đến vấn đề bảo mật. Aspose.Words for Python cung cấp các tính năng để bảo mật tài liệu và macro của bạn, đảm bảo rằng quy trình tự động hóa của bạn vừa hiệu quả vừa an toàn.
 

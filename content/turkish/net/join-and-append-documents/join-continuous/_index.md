@@ -85,7 +85,7 @@ Yolun ve dosya adının ihtiyaçlarınıza uygun olduğundan emin olun.
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak yalnızca birkaç satır kodla iki Word belgesini tek bir sürekli belgede başarıyla birleştirdiniz. Bu işlem hem basit hem de son derece verimli olup belgelerinizin orijinal biçimlendirmesini korumasını sağlar.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak yalnızca birkaç satır kodla iki Word belgesini tek bir sürekli belgede başarıyla birleştirdiniz. Bu işlem hem basit hem de son derece verimli olup belgelerinizin orijinal biçimlendirmesini korumasını sağlar.
 
 ## SSS'ler
 
@@ -96,10 +96,10 @@ Evet, birden fazla belgeyi birleştirmek için ek belgeler yükleyip bunları s�
  Evet kullanıyorum`ImportFormatMode.KeepSourceFormatting` kaynak belgedeki biçimlendirmenin korunmasını sağlar.
 
 ### Aspose.Words for .NET, .NET Core ile uyumlu mu?
-Evet, Aspose.Words for .NET hem .NET Framework hem de .NET Core ile uyumludur.
+Evet, Aspose.Words for .NET, hem .NET Framework hem de .NET Core ile uyumludur.
 
 ### Farklı sayfa düzenlerine sahip belgeleri birleştirebilir miyim?
 Evet, ancak sorunsuz bir birleştirme sağlamak için sayfa yapısı özelliklerini ayarlamanız gerekebilir.
 
-### Sorunlarla karşılaşırsam nereden destek alabilirim?
+### Sorunla karşılaşırsam nereden destek alabilirim?
  Aspose topluluk forumundan destek alabilirsiniz[Burada](https://forum.aspose.com/c/words/8).

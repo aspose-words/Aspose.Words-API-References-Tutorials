@@ -18,7 +18,7 @@ Schriftarten spielen eine entscheidende Rolle bei der Gestaltung und Lesbarkeit 
 
 Bevor Sie sich in den Code vertiefen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
-1.  Aspose.Words für Java-Bibliothek: Stellen Sie sicher, dass Sie die Aspose.Words für Java-Bibliothek heruntergeladen und installiert haben. Sie können[hier herunterladen](https://releases.aspose.com/words/java/).
+1.  Aspose.Words für Java-Bibliothek: Stellen Sie sicher, dass Sie die Aspose.Words für Java-Bibliothek heruntergeladen und installiert haben. Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/java/).
 
 2. Java-Entwicklungsumgebung: Stellen Sie sicher, dass Sie eine Java-Entwicklungsumgebung eingerichtet haben.
 

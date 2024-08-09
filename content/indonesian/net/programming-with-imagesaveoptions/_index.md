@@ -14,7 +14,7 @@ Tutorial ini juga mencakup konsep dasar manipulasi gambar, termasuk menyisipkan,
  ## Tutorial
 | Judul | Keterangan |
 | --- | --- |
-| [Ekspos Kontrol Ambang Batas Untuk Binarisasi Tiff](./expose-threshold-control-for-tiff-binarization/) | Pelajari cara mengekspos kontrol ambang batas untuk binerisasi TIFF di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang komprehensif ini. |
+| [Ekspos Kontrol Ambang Batas Untuk Binarisasi Tiff](./expose-threshold-control-for-tiff-binarization/) | Pelajari cara mengekspos kontrol ambang batas untuk binarisasi TIFF di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang komprehensif ini. |
 | [Dapatkan Rentang Halaman Tiff](./get-tiff-page-range/) | Pelajari cara mengonversi rentang halaman tertentu dari dokumen Word ke file TIFF menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. |
 | [Format 1Bpp Terindeks](./format-1bpp-indexed/) | Pelajari cara mengonversi dokumen Word menjadi gambar terindeks 1Bpp menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk konversi yang mudah. |
 | [Dapatkan Rentang Halaman JPEG](./get-jpeg-page-range/) | Konversikan halaman tertentu dokumen Word ke JPEG dengan pengaturan khusus menggunakan Aspose.Words untuk .NET. Pelajari cara menyesuaikan kecerahan, kontras, dan resolusi langkah demi langkah. |

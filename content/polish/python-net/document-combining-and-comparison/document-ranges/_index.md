@@ -14,7 +14,7 @@ Edytowanie dokumentów często wymaga ogromnej dokładności, szczególnie w prz
 
 ## Warunki wstępne
 
-Zanim przejdziemy do praktycznego wdrożenia, upewnij się, że spełnione są następujące wymagania wstępne:
+Zanim przejdziemy do praktycznego wdrożenia, upewnij się, że spełnione są następujące warunki wstępne:
 
 - Podstawowa znajomość programowania w języku Python.
 - Zainstalowano Pythona w swoim systemie.
@@ -75,7 +75,7 @@ doc.range.replace("old_text", "new_text", False, False)
 
 ## Modyfikowanie formatowania
 
-Precyzyjna edycja polega na dostosowaniu formatowania. Nawigowanie po elementach formatowania pozwala nam zachować spójny wygląd:
+Precyzyjna edycja polega na dostosowaniu formatowania. Nawigacja po elementach formatowania pozwala zachować spójny wygląd:
 
 ```python
 for run in doc.get_child_nodes(NodeType.RUN, True):
@@ -133,7 +133,7 @@ for hyperlink in doc.range.get_child_nodes(NodeType.FIELD_HYPERLINK, True):
 
 ## Wniosek
 
-Poruszanie się po zakresach dokumentów jest umiejętnością niezbędną do precyzyjnej edycji. Biblioteka Aspose.Words dla Pythona udostępnia programistom narzędzia do poruszania się po akapitach, sekcjach, tabelach i nie tylko. Opanowując te techniki, usprawnisz proces edycji i z łatwością stworzysz profesjonalne dokumenty.
+Poruszanie się po zakresach dokumentów jest umiejętnością niezbędną do precyzyjnej edycji. Biblioteka Aspose.Words dla Pythona zapewnia programistom narzędzia do poruszania się po akapitach, sekcjach, tabelach i nie tylko. Opanowując te techniki, usprawnisz proces edycji i z łatwością stworzysz profesjonalne dokumenty.
 
 ## Często zadawane pytania
 

@@ -36,7 +36,7 @@ Word 文書を HTML として保存するときにリソースをエクスポー
 
 ## ステップ1: ドキュメントディレクトリを設定する
 
-まず最初に、ドキュメント ディレクトリへのパスを指定する必要があります。これは、Word ドキュメントが保存される場所であり、HTML ファイルが保存される場所です。
+まず最初に、ドキュメント ディレクトリへのパスを指定する必要があります。これは、Word ドキュメントが保存され、HTML ファイルが保存される場所です。
 
 ```csharp
 //ドキュメント ディレクトリへのパス。
@@ -47,7 +47,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## ステップ2: Word文書を読み込む
 
-次に、HTMLに変換したいWord文書を読み込みます。このチュートリアルでは、次の文書を使用します。`Rendering.docx`.
+次に、HTMLに変換したいWord文書を読み込みます。このチュートリアルでは、次の名前の文書を使用します。`Rendering.docx`.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -101,7 +101,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportResources.html", saveOption
 任意のファイル名を指定できます。`doc.Save`方法。例えば、`doc.Save(dataDir + "CustomFileName.html", saveOptions);`.
 
 ### Aspose.Words は HTML 以外の形式もサポートしていますか?
-はい、PDF、DOCX、TXTなど、さまざまな形式をサポートしています。[ドキュメンテーション](https://reference.aspose.com/words/net/)完全なリストについてはこちらをご覧ください。
+はい、PDF、DOCX、TXTなど、さまざまな形式をサポートしています。[ドキュメント](https://reference.aspose.com/words/net/)完全なリストについてはこちらをご覧ください。
 
 ### さらにサポートやリソースはどこで入手できますか?
 さらに詳しい情報については、[Aspose.Words サポート フォーラム](https://forum.aspose.com/c/words/8)詳細なドキュメントと例は、[Aspose ウェブサイト](https://reference.aspose.com/words/net/).

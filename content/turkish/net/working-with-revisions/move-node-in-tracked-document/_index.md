@@ -2,144 +2,130 @@
 title: İzlenen Belgedeki Düğümü Taşı
 linktitle: İzlenen Belgedeki Düğümü Taşı
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile izlenen bir belgedeki düğümleri taşıyın.
+description: Ayrıntılı, adım adım kılavuzumuzla Aspose.Words for .NET kullanarak izlenen bir Word belgesindeki düğümleri nasıl taşıyacağınızı öğrenin. Geliştiriciler için mükemmel.
 type: docs
 weight: 10
 url: /tr/net/working-with-revisions/move-node-in-tracked-document/
 ---
+## giriiş
 
-Bu adım adım kılavuzda, Aspose.Words for .NET kullanarak izlenen bir Word belgesinde bir düğümün nasıl taşınacağı konusunda size yol göstereceğiz. Size kaynak kodunun tamamını sağlayacağız ve işaretleme çıktısını nasıl biçimlendireceğinizi göstereceğiz.
+Merhaba Aspose.Words tutkunları! Düzeltmeleri izlerken bir Word belgesindeki bir düğümü taşımanız gerekiyorsa doğru yerdesiniz. Bugün bunu Aspose.Words for .NET kullanarak nasıl başaracağımızı inceliyoruz. Yalnızca adım adım süreci öğrenmekle kalmayacak, aynı zamanda belge işlemlerinizi sorunsuz ve verimli hale getirmek için bazı ipuçları ve püf noktaları da öğreneceksiniz.
 
-## 1. Adım: Belgeyi oluşturma
+## Önkoşullar
 
-İlk adım yeni bir belge oluşturmak ve paragraflar eklemektir.
+Bazı kodlarla elimizi kirletmeden önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Writeln("Paragraph 1");
-builder.Writeln("Paragraph 2");
-builder.Writeln("Paragraph 3");
-builder.Writeln("Paragraph 4");
-builder.Writeln("Paragraph 5");
-builder.Writeln("Paragraph 6");
-Body body = doc.FirstSection.Body;
-Console.WriteLine("Number of paragraphs: {0}", body.Paragraphs.Count);
-```
+-  Aspose.Words for .NET: İndirin[Burada](https://releases.aspose.com/words/net/).
+- .NET Ortamı: Uyumlu bir .NET geliştirme ortamı kurduğunuzdan emin olun.
+- Temel C# Bilgisi: Bu eğitimde, C# hakkında temel bilgiye sahip olduğunuz varsayılmaktadır.
 
-## 2. Adım: Düzeltmeleri izleyin
+Herşeyi aldın mı? Harika! Şimdi içe aktarmamız gereken ad alanlarına geçelim.
 
-Dokümanda revizyon takibini aktif hale getireceğiz.
+## Ad Alanlarını İçe Aktar
+
+Öncelikle gerekli ad alanlarını içe aktarmamız gerekiyor. Bunlar Aspose.Words ile çalışmak ve belge düğümlerini yönetmek için gereklidir.
 
 ```csharp
-doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
+using Aspose.Words;
+using System;
 ```
 
-## 3. Adım: Bir düğümü taşıyın
+Peki, süreci yönetilebilir adımlara ayıralım. Her noktada neler olduğunu anlamanızı sağlamak için her adım ayrıntılı olarak açıklanacaktır.
 
-Revizyonları oluştururken bir düğümü (paragrafı) bir konumdan diğerine taşıyacağız.
+## 1. Adım: Belgeyi Başlatın
 
-```csharp
-Node node = body.Paragraphs[3];
-Node endNode = body.Paragraphs[5].NextSibling;
-Node referenceNode = body.Paragraphs[0];
-while (node != endNode)
-{
-     Node nextNode = node. NextSibling;
-     body. InsertBefore(node, referenceNode);
-     node = nextNode;
-}
-```
-
-## 4. Adım: İncelemeleri İzlemeyi Durdurun
-
-Belgedeki revizyonları izlemeyi bırakacağız.
-
-```csharp
-doc.StopTrackRevisions();
-```
-
-## Adım 5: Belgeyi kaydetme
-
- Metin giriş formu alanını ekledikten sonra, belgeyi kullanarak belgeyi istediğiniz konuma kaydedin.`Save`yöntem. Uygun dosya yolunu sağladığınızdan emin olun:
-
-```csharp
-Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
-doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
-```
-
-
-### Aspose.Words for .NET kullanarak İzlenen Belgede Düğümü Taşıma için örnek kaynak kodu
-
-Aspose.Words for .NET kullanarak izlenen bir belgedeki bir düğümü taşımak için tam kaynak kodu:
-
+ Başlamak için yeni bir belge başlatmamız ve bir`DocumentBuilder` bazı paragraflar eklemek için.
 
 ```csharp
 // Belgeler dizininin yolu.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+
+// Bazı paragraflar ekleme
 builder.Writeln("Paragraph 1");
 builder.Writeln("Paragraph 2");
 builder.Writeln("Paragraph 3");
 builder.Writeln("Paragraph 4");
 builder.Writeln("Paragraph 5");
 builder.Writeln("Paragraph 6");
+
+// İlk paragraf sayısını kontrol edin
 Body body = doc.FirstSection.Body;
 Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
+```
 
-// Revizyonları izlemeye başlayın.
+## 2. Adım: Düzeltmeleri İzlemeye Başlayın
+
+Daha sonra revizyonları izlemeye başlamamız gerekiyor. Bu, belgede yapılan değişiklikleri görmemize olanak tanıdığı için çok önemlidir.
+
+```csharp
+// Revizyonları izlemeye başlayın
 doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
+```
 
-// Bir düğümü bir konumdan diğerine taşırken revizyonlar oluşturun.
+## 3. Adım: Düğümleri Taşı
+
+Şimdi görevimizin temel kısmı geliyor: bir düğümü bir konumdan diğerine taşımak. Üçüncü paragrafı taşıyıp ilk paragrafın önüne yerleştireceğiz.
+
+```csharp
+// Taşınacak düğümü ve bitiş aralığını tanımlayın
 Node node = body.Paragraphs[3];
 Node endNode = body.Paragraphs[5].NextSibling;
 Node referenceNode = body.Paragraphs[0];
+
+// Düğümleri tanımlanan aralıkta taşıyın
 while (node != endNode)
 {
-	Node nextNode = node.NextSibling;
-	body.InsertBefore(node, referenceNode);
-	node = nextNode;
+    Node nextNode = node.NextSibling;
+    body.InsertBefore(node, referenceNode);
+    node = nextNode;
 }
+```
 
-// Revizyonları takip etme sürecini durdurun.
+## 4. Adım: Düzeltmeleri İzlemeyi Durdurun
+
+Düğümleri taşıdıktan sonra revizyonları izlemeyi durdurmamız gerekir.
+
+```csharp
+// Revizyonları izlemeyi durdur
 doc.StopTrackRevisions();
+```
 
-// Geçiş aralığında 3 ek paragraf daha vardır.
-Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
+## Adım 5: Belgeyi Kaydedin
+
+Son olarak değiştirdiğimiz belgemizi belirtilen dizine kaydedelim.
+
+```csharp
+// Değiştirilen belgeyi kaydet
 doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
+
+// Son paragraf sayısının çıktısını alın
+Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
 ```
 
 ## Çözüm
 
-Bu eğitimde Aspose.Words for .NET kullanarak izlenen bir Word belgesindeki bir düğümün nasıl taşınacağını öğrendik. Belge oluşturma, revizyon takibini etkinleştirme, düğümü taşıma ve revizyon takibini durdurma adımlarını takip ederek bu manipülasyonu başarıyla gerçekleştirebildik. Aspose.Words for .NET, Word belgeleriyle Kelime İşleme için güçlü bir araçtır ve revizyonları yönetmek için gelişmiş özellikler sunar. Artık bu bilgiyi Aspose.Words for .NET kullanarak revizyonları takip ederken kendi Word belgelerinizdeki düğümleri taşımak için kullanabilirsiniz.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak takip edilen bir belgedeki bir düğümü başarıyla taşıdınız. Bu güçlü kitaplık, Word belgelerini programlı olarak yönetmeyi kolaylaştırır. İster oluşturuyor, ister düzenliyor, ister değişiklikleri izliyor olun, Aspose.Words yanınızdadır. Öyleyse devam edin ve deneyin. Mutlu kodlama!
 
-### SSS'ler
+## SSS'ler
 
-#### S: Bir Aspose.Words for .NET belgesinde revizyon takibini nasıl etkinleştirebilirim?
+### Aspose.Words for .NET nedir?
 
- C: Bir Aspose.Words for .NET belgesinde revizyon takibini etkinleştirmek için`StartTrackRevisions` yöntemi`Document` nesne. Bu yöntemde revizyon yazarının adı ve revizyon takibinin başlangıç tarihi parametre olarak alınır.
+Aspose.Words for .NET, Word belgeleriyle programlı olarak çalışmak için kullanılan bir sınıf kütüphanesidir. Geliştiricilerin .NET uygulamaları içinde Word belgeleri oluşturmasına, düzenlemesine, dönüştürmesine ve yazdırmasına olanak tanır.
 
-```csharp
-doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
-```
+### Aspose.Words'ü kullanarak bir Word belgesindeki revizyonları nasıl izlerim?
 
-#### S: İzlenen bir belgedeki bir düğümü revizyon oluşturmadan nasıl taşıyabilirim?
+ Revizyonları izlemek için şunu kullanın:`StartTrackRevisions` konusundaki yöntem`Document` nesne. Bu, belgede yapılan değişiklikleri gösteren revizyon takibini etkinleştirecektir.
 
- C: İzlenen bir belgedeki bir düğümü revizyon oluşturmadan taşımak istiyorsanız,`Remove`Ve`InsertAfter` veya`InsertBefore` yöntemleri`Node` nesne. Örneğin, bir paragrafı başka bir paragraftan sonra taşımak için aşağıdaki kodu kullanabilirsiniz:
+### Aspose.Words'te birden fazla düğümü taşıyabilir miyim?
 
-```csharp
-Node nodeToMove = document.FirstSection.Body.Paragraphs[0];
-Node referenceNode = document.FirstSection.Body.Paragraphs[1];
-nodeToMove.Remove();
-document.FirstSection.Body.InsertAfter(nodeToMove, referenceNode);
-```
+Evet, birden fazla düğümü üzerlerinde yineleyerek ve aşağıdaki gibi yöntemleri kullanarak taşıyabilirsiniz:`InsertBefore` veya`InsertAfter` bunları istediğiniz yere yerleştirmek için.
 
-#### S: Aspose.Words for .NET belgesinde revizyon izlemeyi nasıl durdurabilirim?
+### Aspose.Words'te revizyonları izlemeyi nasıl durdurabilirim?
 
- C: Aspose.Words for .NET belgesindeki revizyonları izlemeyi durdurmak için`StopTrackRevisions` yöntemi`Document` nesne.
+ Kullanın`StopTrackRevisions` konusundaki yöntem`Document` revizyonları izlemeyi durdurmaya itiraz edin.
 
-```csharp
-doc.StopTrackRevisions();
-```
+### Aspose.Words for .NET hakkında daha fazla belgeyi nerede bulabilirim?
+
+ Ayrıntılı belgeleri bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).

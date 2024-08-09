@@ -9,11 +9,11 @@ url: /hu/net/programming-with-styles-and-themes/copy-styles/
 ---
 ## Bevezetés
 
-Ha valaha is szüksége volt arra, hogy egy dokumentumot egy másikkal konzisztenssé tegyen, akkor valószínűleg szembe kell néznie a stílusok másolásának kihívásával. Képzelje el, hogy Ön egy tervező, akinek feladata annak biztosítása, hogy minden új jelentés megfeleljen egy meglévő sablon stílusának. Az Aspose.Words for .NET használatával leegyszerűsítheti ezt a feladatot, és megőrizheti dokumentumai éles és egységes megjelenését. Ebben az oktatóanyagban belemerülünk abba, hogyan másolhat könnyedén stílusokat egyik Word-dokumentumból a másikba. Kezdjük el!
+Ha valaha is szüksége volt arra, hogy egy dokumentumot egy másikkal konzisztenssé tegyen, akkor valószínűleg szembe kell néznie a stílusok másolásának kihívásával. Képzelje el, hogy Ön egy tervező, akinek feladata annak biztosítása, hogy minden új jelentés megfeleljen egy meglévő sablon stílusának. Az Aspose.Words for .NET használatával leegyszerűsítheti ezt a feladatot, és megőrizheti dokumentumai éles és egységes megjelenését. Ebben az oktatóanyagban belemerülünk abba, hogyan másolhat könnyedén stílusokat egyik Word-dokumentumból a másikba. Kezdjük is!
 
 ## Előfeltételek
 
-Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik a következőkkel:
+Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik az alábbiakkal:
 
 1.  Aspose.Words for .NET Library: Szüksége lesz rá, ha Word-dokumentumokkal szeretne dolgozni .NET-ben. Letöltheti innen[Aspose.Words .NET letöltésekhez](https://releases.aspose.com/words/net/).
 2. .NET fejlesztői környezet: be kell állítania egy működő .NET fejlesztői környezetet, például a Visual Studio-t.
@@ -81,7 +81,7 @@ Ez a kód új néven menti a módosított dokumentumot, megőrzi az eredeti fáj
 ### Hogyan ellenőrizhetem, hogy a stílusok másolása sikeres volt-e?  
 Nyissa meg a céldokumentumot, és ellenőrizze a stílusbeállításokat. Látnia kell az alkalmazott forrásdokumentum stílusait.
 
-### Mi van, ha a céldokumentumnak már vannak stílusai?  
+### Mi van akkor, ha a céldokumentumnak már vannak stílusai?  
  A`CopyStylesFromTemplate` metódus felülírja a céldokumentum meglévő stílusait a forrásdokumentum stílusaival.
 
 ### Ingyenesen használható az Aspose.Words for .NET?  

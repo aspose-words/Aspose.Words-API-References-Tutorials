@@ -2,7 +2,7 @@
 title: Visualización y formato de datos
 linktitle: Visualización y formato de datos
 second_title: API de gestión de documentos Aspose.Words Python
-description: Descubra los tutoriales de Aspose.Words sobre visualización y formato de datos en Python y .NET. Aprenda a presentar datos de forma eficaz, cree informes sorprendentes y dé formato a documentos mediante programación.
+description: Descubra los tutoriales de Aspose.Words sobre visualización y formato de datos en Python y .NET. Aprenda a presentar datos de forma eficaz, crear informes sorprendentes y dar formato a documentos mediante programación.
 type: docs
 weight: 15
 url: /es/python-net/data-visualization-and-formatting/

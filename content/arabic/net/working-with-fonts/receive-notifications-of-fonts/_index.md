@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /ar/net/working-with-fonts/receive-notifications-of-fonts/
 ---
-
+## مقدمة
 
 إذا واجهت مشكلات تتعلق بعدم عرض الخطوط بشكل صحيح في مستنداتك، فأنت لست وحدك. يمكن أن تؤدي إدارة إعدادات الخطوط وتلقي الإشعارات حول بدائل الخطوط إلى توفير الكثير من المتاعب. في هذا الدليل الشامل، سنستكشف كيفية التعامل مع إشعارات الخطوط باستخدام Aspose.Words for .NET، مما يضمن ظهور مستنداتك بأفضل حالاتها دائمًا.
 
@@ -61,7 +61,7 @@ fontSettings.SetFontsFolder(string.Empty, false);
 
 ## الخطوة 4: إعداد رد الاتصال التحذيري
 
- لالتقاط تحذيرات استبدال الخط والتعامل معها، قم بإنشاء فئة تنفذ`IWarningCallback` واجهه المستخدم. ستقوم هذه الفئة بتسجيل أي تحذيرات تحدث أثناء معالجة المستندات.
+ لالتقاط تحذيرات استبدال الخط والتعامل معها، قم بإنشاء فئة تنفذ`IWarningCallback` واجهة. ستقوم هذه الفئة بتسجيل أي تحذيرات تحدث أثناء معالجة المستندات.
 
 ```csharp
 public class HandleDocumentWarnings : IWarningCallback
@@ -117,7 +117,7 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
 
 ### س4: أين يمكنني العثور على الدعم لـ Aspose.Words؟
 
- قم بزيارة[منتدى دعم Aspose.Words](https://forum.aspose.com/c/words/8) للمساعدة.
+ قم بزيارة[منتدى دعم Aspose.Words](https://forum.aspose.com/c/words/8) للحصول على المساعدة.
 
 ### س5: هل من الممكن الحصول على ترخيص مؤقت لـ Aspose.Words؟
 

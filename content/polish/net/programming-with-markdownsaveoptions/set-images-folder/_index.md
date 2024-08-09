@@ -79,7 +79,7 @@ MarkdownSaveOptions saveOptions = new MarkdownSaveOptions
 
 ### 2.4 Zapisz dokument jako Markdown
 
- Użyć`MemoryStream` aby zapisać dokument w formacie Markdown.
+ Użyj`MemoryStream` aby zapisać dokument w formacie Markdown.
 
 ```csharp
 using (MemoryStream stream = new MemoryStream())

@@ -10,7 +10,7 @@ url: /pl/java/document-merging/joining-appending-documents/
 
 ## Wstęp
 
-Aspose.Words dla Java to bogata w funkcje biblioteka, która umożliwia pracę z różnymi formatami dokumentów, w tym DOC, DOCX, RTF i innymi. Łączenie i dołączanie dokumentów to częste zadanie podczas manipulacji dokumentami. W tym przewodniku znajdziesz instrukcje krok po kroku oraz przykłady kodu Java, które pozwolą Ci to bezproblemowo osiągnąć.
+Aspose.Words dla Java to bogata w funkcje biblioteka, która umożliwia pracę z różnymi formatami dokumentów, w tym DOC, DOCX, RTF i innymi. Łączenie i dołączanie dokumentów to częste zadanie podczas manipulacji dokumentami. W tym przewodniku znajdziesz instrukcje krok po kroku i przykłady kodu Java, które pozwolą Ci to bezproblemowo osiągnąć.
 
 ## Warunki wstępne
 

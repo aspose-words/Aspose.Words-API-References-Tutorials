@@ -9,7 +9,7 @@ url: /hu/net/programming-with-tables/horizontal-merge/
 ---
 ## Bevezetés
 
-Halihó! Készen áll, hogy belemerüljön az Aspose.Words for .NET világába? Ma egy rendkívül hasznos funkcióval fogunk foglalkozni: a táblázatok vízszintes egyesítésével. Ez kissé technikailag hangzik, de ne aggódj, támogatom. Az oktatóanyag végére profi lesz a Word-dokumentumok celláinak programozott egyesítésében. Szóval, feltűrjük az ingujjunkat, és kezdjük!
+Szia! Készen áll, hogy belemerüljön az Aspose.Words for .NET világába? Ma egy rendkívül hasznos funkcióval fogunk foglalkozni: a táblázatok vízszintes egyesítésével. Ez kissé technikailag hangzik, de ne aggódj, támogatom. Az oktatóanyag végére profi lesz a Word-dokumentumok celláinak programozott egyesítésében. Szóval, feltűrjük az ingujjunkat, és kezdjük!
 
 ## Előfeltételek
 

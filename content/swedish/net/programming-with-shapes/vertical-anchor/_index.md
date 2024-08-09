@@ -9,7 +9,7 @@ url: /sv/net/programming-with-shapes/vertical-anchor/
 ---
 ## Introduktion
 
-Har du någonsin behövt kontrollera exakt var text visas i en textruta i ett Word-dokument? Kanske vill du att din text ska förankras högst upp, i mitten eller längst ner i textrutan? I så fall är du på rätt plats! I den här handledningen kommer vi att undersöka hur man använder Aspose.Words för .NET för att ställa in den vertikala ankaret för textrutor i Word-dokument. Tänk på vertikal förankring som trollstaven som placerar din text exakt där du vill ha den i dess behållare. Redo att dyka i? Låt oss börja!
+Har du någonsin behövt kontrollera exakt var text visas i en textruta i ett Word-dokument? Kanske vill du att din text ska förankras högst upp, i mitten eller längst ner i textrutan? I så fall är du på rätt plats! I den här handledningen kommer vi att undersöka hur man använder Aspose.Words för .NET för att ställa in den vertikala ankaret för textrutor i Word-dokument. Tänk på vertikal förankring som trollstaven som placerar din text exakt där du vill ha den i dess behållare. Redo att dyka i? Låt oss komma igång!
 
 ## Förutsättningar
 
@@ -62,7 +62,7 @@ Här händer magin! Du kan ställa in den vertikala justeringen av texten i text
 textBox.TextBox.VerticalAnchor = TextBoxAnchor.Bottom;
 ```
 
- I detta fall,`TextBoxAnchor.Bottom`säkerställer att texten förankras längst ner i textrutan. Om du ville ha den centrerad eller i linje med toppen skulle du använda`TextBoxAnchor.Center` eller`TextBoxAnchor.Top`, respektive.
+ I det här fallet,`TextBoxAnchor.Bottom`säkerställer att texten förankras längst ner i textrutan. Om du ville ha den centrerad eller i linje med toppen skulle du använda`TextBoxAnchor.Center` eller`TextBoxAnchor.Top`, respektive.
 
 ## Steg 4: Lägg till text i textrutan
 

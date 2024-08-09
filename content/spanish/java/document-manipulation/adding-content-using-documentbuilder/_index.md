@@ -215,7 +215,7 @@ doc.save("path/to/your/document.docx");
 
 ## Paso 10: mover el cursor
 
- Puede controlar la posición del cursor dentro del documento utilizando varios métodos como`moveToParagraph`, `moveToCell`y más. He aquí un ejemplo:
+ Puede controlar la posición del cursor dentro del documento utilizando varios métodos como`moveToParagraph`, `moveToCell`más. He aquí un ejemplo:
 
 ```java
 Document doc = new Document();
@@ -310,7 +310,7 @@ builder.writeln("This is a formatted paragraph.");
 
 ### P: ¿Cómo puedo mover el cursor a una ubicación específica dentro del documento?
 
- R: Puedes controlar la posición del cursor usando métodos como`moveToParagraph`, `moveToCell`y más. He aquí un ejemplo:
+ R: Puedes controlar la posición del cursor usando métodos como`moveToParagraph`, `moveToCell`más. He aquí un ejemplo:
 
 ```java
 Document doc = new Document();

@@ -15,7 +15,7 @@ Salut! Donc, vous avez cet incroyable document Word qui nécessite une signature
 
 Avant de commencer, assurez-vous d'avoir les éléments suivants :
 
-1. Aspose.Words for .NET Library : si vous ne l'avez pas déjà fait,[Télécharger les ici](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET Library : si vous ne l'avez pas déjà fait,[téléchargez-le ici](https://releases.aspose.com/words/net/).
 2. Environnement de développement : Visual Studio ou tout IDE compatible C#.
 3. Document Word : un document avec une ligne de signature (`Signature line.docx`).
 4.  Certificat numérique : A`.pfx` fichier de certificat (par exemple,`morzal.pfx`).
@@ -93,7 +93,7 @@ DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
 
 ## Conclusion
 
-Et voila! Vous avez réussi à définir un ID de fournisseur de signature dans un document Word à l'aide d'Aspose.Words pour .NET. Ce processus sécurise non seulement vos documents, mais garantit également qu'ils sont conformes aux normes de signature numérique. Maintenant, allez-y et essayez-le avec vos documents. Vous avez des questions ? Consultez la FAQ ci-dessous ou consultez le[Forum d'assistance Aspose](https://forum.aspose.com/c/words/8).
+Et voilà ! Vous avez réussi à définir un ID de fournisseur de signature dans un document Word à l'aide d'Aspose.Words pour .NET. Ce processus sécurise non seulement vos documents, mais garantit également qu'ils sont conformes aux normes de signature numérique. Maintenant, allez-y et essayez-le avec vos documents. Vous avez des questions ? Consultez la FAQ ci-dessous ou consultez le[Forum d'assistance Aspose](https://forum.aspose.com/c/words/8).
 
 ## FAQ
 

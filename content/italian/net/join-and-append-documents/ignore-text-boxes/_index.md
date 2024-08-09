@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/join-and-append-documents/ignore-text-boxes/
 ---
-## introduzione
+## Introduzione
 
 Benvenuti in questo tutorial dettagliato sull'utilizzo di Aspose.Words per .NET per unire documenti Word ignorando le caselle di testo. Se stai cercando di semplificare l'elaborazione dei documenti e assicurarti che la formattazione delle caselle di testo venga mantenuta, sei nel posto giusto. Immergiamoci in questa guida passo passo.
 

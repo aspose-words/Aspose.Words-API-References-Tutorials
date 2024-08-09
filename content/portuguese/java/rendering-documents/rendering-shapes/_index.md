@@ -93,7 +93,7 @@ Sim, Aspose.Words for Java oferece suporte a uma ampla variedade de formatos de 
 
 ### Q4: Posso experimentar o Aspose.Words for Java antes de comprar?
 
- Certamente! Você pode acessar uma avaliação gratuita do Aspose.Words for Java no site[Aspose.Lançamentos](https://releases.aspose.com/).
+ Certamente! Você pode acessar uma avaliação gratuita do Aspose.Words for Java no[Aspose.Lançamentos](https://releases.aspose.com/).
 
 ### P5: Onde posso procurar suporte ou fazer perguntas sobre o Aspose.Words for Java?
 

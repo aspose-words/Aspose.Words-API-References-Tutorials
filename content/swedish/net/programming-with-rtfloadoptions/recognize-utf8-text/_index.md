@@ -39,7 +39,7 @@ Först och främst måste du ange katalogen där ditt dokument är lagrat. Det �
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till ditt dokument. Detta är avgörande för att Aspose.Words ska kunna hitta din fil.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till ditt dokument. Detta är avgörande för att Aspose.Words ska kunna hitta din fil.
 
 ## Steg 2: Konfigurera laddningsalternativ för UTF-8-text
 
@@ -49,7 +49,7 @@ Därefter måste vi konfigurera laddningsalternativen för att känna igen UTF-8
 RtfLoadOptions loadOptions = new RtfLoadOptions { RecognizeUtf8Text = true };
 ```
 
- Genom att sätta`RecognizeUtf8Text` till`true`, säger vi till Aspose.Words att vara på jakt efter UTF-8-text. Detta är väldigt praktiskt när du hanterar dokument som innehåller en mängd olika tecken.
+ Genom att ställa in`RecognizeUtf8Text` till`true`, säger vi till Aspose.Words att vara på jakt efter UTF-8-text. Detta är väldigt praktiskt när du hanterar dokument som innehåller en mängd olika tecken.
 
 ## Steg 3: Ladda dokumentet
 

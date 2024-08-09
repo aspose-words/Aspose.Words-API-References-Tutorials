@@ -19,7 +19,7 @@ Avant de nous lancer dans notre aventure de construction de tables, assurons-nou
 - .NET Framework (4.0 ou supérieur)
 - Bibliothèque Aspose.Words pour .NET
 
- Si vous n'avez pas encore Aspose.Words, vous pouvez facilement[Télécharger les ici](https://releases.aspose.com/words/net/) . Vous pouvez également commencer par un[essai gratuit](https://releases.aspose.com/) si vous voulez tester le terrain. Pour ceux qui sont prêts à franchir le pas, vous pouvez[acheter une licence](https://purchase.aspose.com/buy) , ou si vous avez besoin de plus de temps pour évaluer, prenez un[permis temporaire](https://purchase.aspose.com/temporary-license/).
+ Si vous n'avez pas encore Aspose.Words, vous pouvez facilement[téléchargez-le ici](https://releases.aspose.com/words/net/) . Vous pouvez également commencer par un[essai gratuit](https://releases.aspose.com/) si vous voulez tester le terrain. Pour ceux qui sont prêts à franchir le pas, vous pouvez[acheter une licence](https://purchase.aspose.com/buy) , ou si vous avez besoin de plus de temps pour évaluer, prenez un[permis temporaire](https://purchase.aspose.com/temporary-license/).
 
 ## Importer des espaces de noms
 
@@ -115,7 +115,7 @@ Pensez à cela comme à encadrer notre chef-d’œuvre et à l’exposer. Votre 
 
 ## Conclusion
 
-Et voila! Vous avez réussi à créer un tableau dans un document Word à l'aide d'Aspose.Words pour .NET. Ce didacticiel vous a guidé à travers chaque étape, de l'initialisation du document à l'enregistrement du produit final. Avec Aspose.Words, les possibilités sont infinies. Que vous créiez des rapports, des factures ou tout autre document, vous avez désormais le pouvoir de formater et de personnaliser les tableaux à votre guise.
+Et voilà ! Vous avez réussi à créer un tableau dans un document Word à l'aide d'Aspose.Words pour .NET. Ce didacticiel vous a guidé à travers chaque étape, de l'initialisation du document à l'enregistrement du produit final. Avec Aspose.Words, les possibilités sont infinies. Que vous créiez des rapports, des factures ou tout autre document, vous avez désormais le pouvoir de formater et de personnaliser les tableaux à votre guise.
 
 N'oubliez pas que la pratique rend parfait. N’hésitez donc pas à expérimenter différents formats et styles de tables. Bon codage !
 

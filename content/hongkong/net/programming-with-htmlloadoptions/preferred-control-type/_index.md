@@ -93,7 +93,7 @@ doc.Save(dataDir + "WorkingWithHtmlLoadOptions.PreferredControlType.docx", SaveF
 
 ## 結論
 
-現在你就擁有了！我們已經透過利用 HTML 載入選項，使用 Aspose.Words for .NET 成功將組合方塊表單欄位插入 Word 文件中。本逐步指南應幫助您了解流程並將其應用到您的專案中。無論您是要自動建立文件還是操作 HTML 內容，Aspose.Words for .NET 都可以提供強大的工具來實現您的目標。
+現在你就得到它了！我們已經透過利用 HTML 載入選項，使用 Aspose.Words for .NET 成功將組合方塊表單欄位插入 Word 文件中。本逐步指南應幫助您了解流程並將其應用到您的專案中。無論您是要自動建立文件還是操作 HTML 內容，Aspose.Words for .NET 都可以提供強大的工具來實現您的目標。
 
 ## 常見問題解答
 

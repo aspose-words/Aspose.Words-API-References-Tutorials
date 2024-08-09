@@ -17,7 +17,7 @@ In diesem Tutorial erfahren Sie, wie Sie Dokumente mit Aspose.Words für Java ve
 
 Bevor wir beginnen, stellen Sie sicher, dass Sie Folgendes haben:
 
-- [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/javase-downloads.html) Eingerichtet.
+- [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/javase-downloads.html) installiert.
 - [Aspose.Words für Java](https://products.aspose.com/words/java) Bibliothek. Sie können es herunterladen von[Hier](https://downloads.aspose.com/words/java).
 
 ## Schritt 1: Erstellen Sie ein Java-Projekt

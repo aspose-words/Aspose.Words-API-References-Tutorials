@@ -15,7 +15,7 @@ Powitanie! Jeśli nurkujesz w świecie Aspose.Words dla .NET, czeka Cię prawdzi
 
 Zanim zaczniemy, upewnij się, że masz następujące elementy:
 
--  Aspose.Words dla .NET: Jeśli jeszcze go nie zainstalowałeś,[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+-  Aspose.Words dla .NET: Jeśli jeszcze go nie zainstalowałeś,[pobierz go tutaj](https://releases.aspose.com/words/net/).
 - Środowisko programistyczne: Visual Studio lub dowolne inne IDE C#.
 -  Dokument programu Word: Będziemy używać dokumentu o nazwie`Rendering.docx`. Umieść go w katalogu swojego projektu.
 
@@ -105,7 +105,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", save
 
 ## Krok 5: Sprawdź dane wyjściowe
 
- Po uruchomieniu projektu przejdź do pliku`Documents` teczka. Powinieneś znaleźć plik HTML o nazwie`WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html` . Otwórz ten plik w edytorze tekstu lub przeglądarce, aby sprawdzić, czy klasy CSS mają przedrostek`pfx_`.
+ Po uruchomieniu projektu przejdź do pliku`Documents` falcówka. Powinieneś znaleźć plik HTML o nazwie`WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html` . Otwórz ten plik w edytorze tekstu lub przeglądarce, aby sprawdzić, czy klasy CSS mają przedrostek`pfx_`.
 
 ## Wniosek
 
@@ -120,7 +120,7 @@ I masz to! Wykonując te kroki, pomyślnie dodałeś przedrostek nazwy klasy CSS
  The`CssClassNamePrefix`Właściwość działa z zewnętrznym CSS. W przypadku wbudowanego CSS będziesz potrzebować innego podejścia.
 
 ### Jak mogę uwzględnić inne opcje zapisywania HTML?
- Można skonfigurować różne właściwości`HtmlSaveOptions` aby dostosować wyjście HTML. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) po więcej szczegółów.
+ Można skonfigurować różne właściwości`HtmlSaveOptions` aby dostosować wyjście HTML. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) aby uzyskać więcej szczegółów.
 
 ### Czy można zapisać kod HTML w strumieniu?
  Absolutnie! Możesz zapisać dokument w strumieniu, przekazując obiekt strumienia do`Save` metoda.

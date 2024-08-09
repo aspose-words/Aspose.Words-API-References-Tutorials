@@ -96,7 +96,7 @@ Sie können SDTs mit Microsoft Word erstellen, indem Sie Inhaltssteuerelemente a
 Ja, Sie können den Inhalt von SDTs ändern, indem Sie über die Aspose.Words-API auf ihre Eigenschaften zugreifen und diese aktualisieren.
 
 ### Was ist, wenn mein Dokument mehrere SDT-Typen enthält?
- Sie können verschiedene SDT-Typen filtern und abrufen, indem Sie die`NodeType` Parameter im`GetChildNodes` Methode.
+ Sie können verschiedene SDT-Typen filtern und abrufen, indem Sie die`NodeType` Parameter im`GetChildNodes` Verfahren.
 
 ### Wo erhalte ich weitere Hilfe zu Aspose.Words für .NET?
  Für weitere Unterstützung besuchen Sie bitte die[Aspose.Words Support Forum](https://forum.aspose.com/c/words/8).

@@ -9,7 +9,7 @@ url: /sv/net/programming-with-charts/default-options-for-data-labels/
 ---
 ## Introduktion
 
-Hallå där! Är du sugen på att dyka in i dokumentautomatiseringens värld? Idag ska vi utforska hur man använder Aspose.Words för .NET för att skapa fantastiska dokument programmatiskt. Aspose.Words är ett kraftfullt bibliotek som låter dig manipulera Word-dokument med lätthet, och i den här handledningen kommer vi att fokusera på att ställa in standardalternativ för dataetiketter i ett diagram. Oavsett om du är en erfaren utvecklare eller nybörjare, kommer den här guiden att gå igenom varje steg för att komma igång på nolltid.
+Hej där! Är du sugen på att dyka in i dokumentautomatiseringens värld? Idag ska vi utforska hur man använder Aspose.Words för .NET för att skapa fantastiska dokument programmatiskt. Aspose.Words är ett kraftfullt bibliotek som låter dig manipulera Word-dokument med lätthet, och i den här handledningen kommer vi att fokusera på att ställa in standardalternativ för dataetiketter i ett diagram. Oavsett om du är en erfaren utvecklare eller nybörjare, kommer den här guiden att gå igenom varje steg för att komma igång på nolltid.
 
 ## Förutsättningar
 
@@ -135,7 +135,7 @@ Du kan använda Aspose.Words gratis med en[tillfällig licens](https://purchase.
  Du kan få stöd genom[Aspose.Words supportforum](https://forum.aspose.com/c/words/8).
 
 ### Kan jag lägga till andra typer av diagram?
- Ja, Aspose.Words stöder olika diagramtyper som stapel-, linje- och kolumndiagram. Kolla[dokumentation](https://reference.aspose.com/words/net/) för mer detaljer.
+ Ja, Aspose.Words stöder olika diagramtyper som stapel-, linje- och kolumndiagram. Kontrollera[dokumentation](https://reference.aspose.com/words/net/) för mer information.
 
 ### Är Aspose.Words kompatibelt med .NET Core?
  Ja, Aspose.Words är kompatibelt med .NET Core. Du kan hitta mer information i[dokumentation](https://reference.aspose.com/words/net/).

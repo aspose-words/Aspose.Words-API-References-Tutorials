@@ -39,7 +39,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Шаг 2. Вставьте поле с текстом
 
- Использовать`InsertField` метод`DocumentBuilder` чтобы добавить поле, содержащее текст:
+ Используйте`InsertField` метод`DocumentBuilder` чтобы добавить поле, содержащее текст:
 ```csharp
 builder.InsertField("INCLUDETEXT", "Text in field");
 ```

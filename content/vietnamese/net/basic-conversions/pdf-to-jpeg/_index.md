@@ -36,7 +36,7 @@ using Aspose.Words;
 Trước khi đi sâu vào mã, bạn cần thiết lập dự án của mình. Đây là cách thực hiện:
 
 1. Mở Visual Studio: Bắt đầu bằng cách khởi chạy Visual Studio và tạo dự án C# mới.
-2.  Cài đặt Aspose.Words: Sử dụng Trình quản lý gói NuGet để cài đặt Aspose.Words cho .NET. Bạn có thể tìm nó[đây](https://releases.aspose.com/words/net/).
+2.  Cài đặt Aspose.Words: Sử dụng Trình quản lý gói NuGet để cài đặt Aspose.Words cho .NET. Bạn có thể tìm thấy nó[đây](https://releases.aspose.com/words/net/).
 
 ```shell
 Install-Package Aspose.Words
@@ -74,7 +74,7 @@ Khi tệp PDF của chúng tôi đã được tải, đã đến lúc thực hi�
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Chuyển đổi PDF thành JPEG bằng Aspose.Words cho .NET dễ dàng như ăn bánh. Chỉ với một vài dòng mã, bạn có thể chuyển đổi tài liệu của mình và mở ra vô số khả năng. Cho dù bạn là nhà phát triển đang tìm cách hợp lý hóa quy trình làm việc của mình hay chỉ là người yêu thích mày mò mã, Aspose.Words đều có thể giúp bạn.
+Và bạn có nó! Chuyển đổi PDF thành JPEG bằng Aspose.Words cho .NET dễ dàng như ăn bánh. Chỉ với một vài dòng mã, bạn có thể chuyển đổi tài liệu của mình và mở ra vô số khả năng. Cho dù bạn là nhà phát triển đang tìm cách hợp lý hóa quy trình làm việc của mình hay chỉ là người yêu thích mày mò mã, Aspose.Words đều có thể giúp bạn.
 
 ## Câu hỏi thường gặp
 

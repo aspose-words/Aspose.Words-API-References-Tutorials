@@ -2,7 +2,7 @@
 title: Word reemplaza texto que contiene metacaracteres
 linktitle: Word reemplaza texto que contiene metacaracteres
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a reemplazar texto que contenga metacaracteres en documentos de Word usando Aspose.Words para .NET. Siga nuestro detallado y atractivo tutorial para una manipulación de texto perfecta.
+description: Aprenda a reemplazar texto que contenga metacaracteres en documentos de Word usando Aspose.Words para .NET. Siga nuestro tutorial detallado y atractivo para una manipulación de texto perfecta.
 type: docs
 weight: 10
 url: /es/net/find-and-replace-text/replace-text-containing-meta-characters/

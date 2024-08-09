@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile
  हाँ, सेटिंग करके`SaveFontFaceCssSeparately` को`true`, आप फ़ॉन्ट फेस सीएसएस नियमों को एक अलग फ़ाइल में अलग कर सकते हैं।
 
 ### क्या .NET के लिए Aspose.Words का उपयोग निःशुल्क है?
- Aspose.Words एक निःशुल्क परीक्षण प्रदान करता है जिसका आप उपयोग कर सकते हैं[यहाँ डाउनलोड करें](https://releases.aspose.com/) निरंतर उपयोग के लिए, लाइसेंस खरीदने पर विचार करें[यहाँ](https://purchase.aspose.com/buy).
+ Aspose.Words एक निःशुल्क परीक्षण प्रदान करता है जिसका आप उपयोग कर सकते हैं[यहाँ से डाउनलोड करें](https://releases.aspose.com/) निरंतर उपयोग के लिए, लाइसेंस खरीदने पर विचार करें[यहाँ](https://purchase.aspose.com/buy).
 
 ### Aspose.Words for .NET को अन्य किन प्रारूपों में रूपांतरित किया जा सकता है?
 .NET के लिए Aspose.Words PDF, TXT, और JPEG और PNG जैसे छवि प्रारूपों सहित विभिन्न प्रारूपों का समर्थन करता है।

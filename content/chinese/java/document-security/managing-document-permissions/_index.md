@@ -10,7 +10,7 @@ url: /zh/java/document-security/managing-document-permissions/
 
 ## 介绍
 
-在当今的数字世界中，文档管理是每个组织工作流程的关键方面。确保合适的人员可以访问合适的文档对于维护安全性和效率至关重要。Aspose.Words for Java 是一个功能强大的 Java API，可让您轻松操作和管理 Word 文档。在本分步指南中，我们将探讨如何使用 Aspose.Words for Java 有效地管理文档权限。无论您是希望提高技能的开发人员，还是希望简化文档管理流程的商业专业人士，本指南都能满足您的需求。
+在当今的数字世界中，文档管理是每个组织工作流程的关键方面。确保合适的人员能够访问合适的文档对于维护安全性和效率至关重要。Aspose.Words for Java 是一个功能强大的 Java API，可让您轻松操作和管理 Word 文档。在本分步指南中，我们将探讨如何使用 Aspose.Words for Java 有效地管理文档权限。无论您是希望提高技能的开发人员，还是希望简化文档管理流程的商业专业人士，本指南都能满足您的需求。
 
 ## Aspose.Words for Java 入门
 

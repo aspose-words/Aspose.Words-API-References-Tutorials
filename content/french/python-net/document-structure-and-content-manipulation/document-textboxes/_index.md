@@ -98,7 +98,7 @@ Dans ce guide, nous avons exploré le processus d'amélioration du contenu visue
 
 ### Comment redimensionner une zone de texte ?
 
- Pour redimensionner une zone de texte, vous pouvez ajuster ses propriétés de largeur et de hauteur à l'aide de l'outil`width`et`height` les attributs.
+ Pour redimensionner une zone de texte, vous pouvez ajuster ses propriétés de largeur et de hauteur à l'aide de l'outil`width`et`height` attributs.
 
 ### Puis-je faire pivoter une zone de texte ?
 

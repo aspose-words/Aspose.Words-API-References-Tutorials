@@ -73,7 +73,7 @@ Als de laadopties zijn ingesteld, bent u klaar om het PDF-document te laden. Dez
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
- Verzekeren dat`"Pdf Document.pdf"` is de naam van uw PDF-bestand in de opgegeven map.
+ Zorg ervoor dat`"Pdf Document.pdf"` is de naam van uw PDF-bestand in de opgegeven map.
 
 ## Conclusie
 

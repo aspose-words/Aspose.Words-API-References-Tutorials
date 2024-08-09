@@ -24,4 +24,4 @@ Al dominar Document Intelligence con Aspose.Words para Python, los desarrollador
 
 ## Tutoriales de inteligencia de documentos de Python
 ### [Inteligencia de documentos maestros](./master-document-intelligence/)
-Domine la inteligencia de documentos con Aspose.Words para Python. Automatice flujos de trabajo, analice datos y procese documentos de manera eficiente. ¡Empieza ahora!
+Domine la inteligencia de documentos con Aspose.Words para Python. Automatice flujos de trabajo, analice datos y procese documentos de manera eficiente. ¡Empiece ahora!

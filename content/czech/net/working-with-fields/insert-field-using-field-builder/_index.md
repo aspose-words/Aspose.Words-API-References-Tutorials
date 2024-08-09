@@ -7,15 +7,15 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fields/insert-field-using-field-builder/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Přistihli jste se někdy, že se škrábete na hlavě a přemýšlíte, jak programově vložit dynamická pole do dokumentů aplikace Word? No, už se nebojte! V tomto tutoriálu se ponoříme do zázraků Aspose.Words for .NET, výkonné knihovny, která vám umožní bezproblémově vytvářet, manipulovat a transformovat dokumenty Wordu. Konkrétně si projdeme, jak vkládat pole pomocí Tvůrce polí. Začněme!
+Ahoj! Přistihli jste se někdy, že se škrábete na hlavě a přemýšlíte, jak programově vložit dynamická pole do dokumentů aplikace Word? No, už se nebojte! V tomto tutoriálu se ponoříme do zázraků Aspose.Words for .NET, výkonné knihovny, která vám umožní bezproblémově vytvářet, manipulovat a transformovat dokumenty Wordu. Konkrétně si projdeme, jak vkládat pole pomocí Tvůrce polí. Začněme!
 
 ## Předpoklady
 
 Než se ponoříme do toho nejzákladnějšího, ujistěte se, že máte vše, co potřebujete:
 
-1. Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Pokud jste to ještě neudělali, můžete si to vzít[tady](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Pokud jste to ještě neudělali, můžete si to vzít[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Vhodné vývojové prostředí, jako je Visual Studio.
 3. Základní znalost C#: Bude užitečné, pokud jste obeznámeni se základy C# a .NET.
 
@@ -99,7 +99,7 @@ A tady to máte! Úspěšně jste vložili pole do dokumentu aplikace Word pomoc
 
 ## Závěr
 
-Gratulujeme! Právě jste se naučili, jak dynamicky vkládat pole do dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato výkonná funkce může být neuvěřitelně užitečná pro vytváření dynamických dokumentů, které vyžadují slučování dat v reálném čase. Pokračujte v experimentování s různými typy polí a prozkoumejte rozsáhlé možnosti Aspose.Words.
+Gratuluji! Právě jste se naučili, jak dynamicky vkládat pole do dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato výkonná funkce může být neuvěřitelně užitečná pro vytváření dynamických dokumentů, které vyžadují slučování dat v reálném čase. Pokračujte v experimentování s různými typy polí a prozkoumejte rozsáhlé možnosti Aspose.Words.
 
 ## FAQ
 
@@ -107,13 +107,13 @@ Gratulujeme! Právě jste se naučili, jak dynamicky vkládat pole do dokumentu 
 Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vytvářet, manipulovat a převádět dokumenty Wordu programově pomocí C#.
 
 ### Mohu používat Aspose.Words zdarma?
- Aspose.Words nabízí bezplatnou zkušební verzi, kterou si můžete stáhnout[tady](https://releases.aspose.com/) . Pro dlouhodobé používání si budete muset zakoupit licenci[tady](https://purchase.aspose.com/buy).
+ Aspose.Words nabízí bezplatnou zkušební verzi, kterou si můžete stáhnout[zde](https://releases.aspose.com/) . Pro dlouhodobé používání si budete muset zakoupit licenci[zde](https://purchase.aspose.com/buy).
 
 ### Jaké typy polí mohu vložit pomocí FieldBuilderu?
- FieldBuilder podporuje širokou škálu polí, včetně IF, MERGEFIELD a dalších. Můžete najít podrobnou dokumentaci[tady](https://reference.aspose.com/words/net/).
+ FieldBuilder podporuje širokou škálu polí, včetně IF, MERGEFIELD a dalších. Můžete najít podrobnou dokumentaci[zde](https://reference.aspose.com/words/net/).
 
 ### Jak aktualizuji pole po jeho vložení?
  Pole můžete aktualizovat pomocí`Update` metodou, jak je ukázáno v tutoriálu.
 
 ### Kde mohu získat podporu pro Aspose.Words?
- Máte-li jakékoli dotazy nebo podporu, navštivte fórum podpory Aspose.Words[tady](https://forum.aspose.com/c/words/8).
+ Máte-li jakékoli dotazy nebo podporu, navštivte fórum podpory Aspose.Words[zde](https://forum.aspose.com/c/words/8).

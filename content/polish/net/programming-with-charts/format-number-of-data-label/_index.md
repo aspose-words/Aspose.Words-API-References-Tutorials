@@ -15,7 +15,7 @@ Tworzenie angażujących i informacyjnych dokumentów często wiąże się z do�
 
 Zanim zagłębisz się w kod, musisz spełnić kilka warunków wstępnych:
 
--  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words dla .NET. Jeśli jeszcze go nie zainstalowałeś, możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+-  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words dla .NET. Jeśli jeszcze go nie zainstalowałeś, możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 - Środowisko programistyczne: Należy mieć skonfigurowane środowisko programistyczne .NET. Zdecydowanie zaleca się korzystanie z programu Visual Studio.
 - Podstawowa znajomość języka C#: Znajomość programowania w języku C# jest niezbędna, ponieważ ten samouczek obejmuje pisanie i zrozumienie kodu C#.
 -  Licencja tymczasowa: Aby korzystać z Aspose.Words bez żadnych ograniczeń, możesz uzyskać[licencja tymczasowa](https://purchase.aspose.com/temporary-license/).

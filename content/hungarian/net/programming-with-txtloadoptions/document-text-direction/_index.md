@@ -87,7 +87,7 @@ A szöveg irányának beállítása a Word dokumentumokban egyszerű folyamat az
 
 ## GYIK
 
-###  Mi a`DocumentDirection` property used for?
+###  Mi az a`DocumentDirection` property used for?
 
  A`DocumentDirection` ingatlan be`TxtLoadOptions` meghatározza a dokumentum szövegének irányát. Be lehet állítani`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , vagy`DocumentDirection.RightToLeft`.
 
@@ -105,4 +105,4 @@ A szöveg irányának beállítása a Word dokumentumokban egyszerű folyamat az
 
 ### Hol találhatok további információt az Aspose.Words for .NET-ről?
 
- További részletekért tekintse meg a[Aspose.Words a .NET-dokumentációhoz](https://reference.aspose.com/words/net/) . További forrásokat is felfedezhet, mint pl[Letöltési link](https://releases.aspose.com/words/net/), [megvesz](https://purchase.aspose.com/buy), [Ingyenes próbaverzió](https://releases.aspose.com/), [Ideiglenes jogosítvány](https://purchase.aspose.com/temporary-license/) , és[Támogatás](https://forum.aspose.com/c/words/8).
+ További részletekért tekintse meg a[Aspose.Words a .NET-dokumentációhoz](https://reference.aspose.com/words/net/) . További forrásokat is felfedezhet, mint pl[Letöltési link](https://releases.aspose.com/words/net/), [Vétel](https://purchase.aspose.com/buy), [Ingyenes próbaverzió](https://releases.aspose.com/), [Ideiglenes jogosítvány](https://purchase.aspose.com/temporary-license/) , és[Támogatás](https://forum.aspose.com/c/words/8).

@@ -1,6 +1,6 @@
 ---
-title: Tisk dokumentů na zakázku
-linktitle: Tisk dokumentů na zakázku
+title: Tisk dokumentů na míru
+linktitle: Tisk dokumentů na míru
 second_title: Aspose.Words Java Document Processing API
 description: Naučte se, jak snadno dosáhnout přizpůsobeného tisku dokumentů pomocí Aspose.Words for Java. Tento podrobný průvodce pokrývá vše od nastavení až po pokročilé přizpůsobení.
 type: docs
@@ -8,7 +8,7 @@ weight: 12
 url: /cs/java/document-printing/customized-document-printing/
 ---
 
-## Úvod
+## Zavedení
 
 Vlastní tisk dokumentů je nezbytný pro podniky, které chtějí vytvořit jedinečnou identitu značky. Aspose.Words for Java je knihovna Java, která poskytuje rozsáhlé funkce pro práci s dokumenty aplikace Word. Umožňuje vám snadno vytvářet, upravovat a tisknout dokumenty.
 
@@ -22,7 +22,7 @@ Než začneme, ujistěte se, že máte splněny následující předpoklady:
 
 ## Nastavení Aspose.Words pro Java
 
- Chcete-li začít, stáhněte si knihovnu Aspose.Words for Java z[tady](https://releases.aspose.com/words/java/). Postupujte podle pokynů k instalaci a integrujte jej do svého projektu Java.
+ Chcete-li začít, stáhněte si knihovnu Aspose.Words for Java z[zde](https://releases.aspose.com/words/java/). Postupujte podle pokynů k instalaci a integrujte jej do svého projektu Java.
 
 ## Vytvoření prázdného dokumentu
 
@@ -65,7 +65,7 @@ doc.print("printerName");
 
 ## Pokročilé přizpůsobení
 
-Aspose.Words for Java nabízí pokročilé možnosti přizpůsobení, včetně záhlaví, zápatí a nastavení stránky. Další podrobnosti najdete v dokumentaci API.
+Aspose.Words for Java nabízí pokročilé možnosti přizpůsobení, včetně záhlaví, zápatí a nastavení stránky. Další podrobnosti najdete v dokumentaci k rozhraní API.
 
 ## Odstraňování problémů
 
@@ -79,7 +79,7 @@ Přizpůsobený tisk dokumentů pomocí Aspose.Words for Java umožňuje podnik�
 
 ### Jak mohu nainstalovat Aspose.Words pro Java?
 
- Chcete-li nainstalovat Aspose.Words for Java, stáhněte si knihovnu z[tady](https://releases.aspose.com/words/java/) a postupujte podle dodaných pokynů k instalaci.
+ Chcete-li nainstalovat Aspose.Words for Java, stáhněte si knihovnu z[zde](https://releases.aspose.com/words/java/) a postupujte podle dodaných pokynů k instalaci.
 
 ### Mohu upravit rozvržení dokumentu?
 

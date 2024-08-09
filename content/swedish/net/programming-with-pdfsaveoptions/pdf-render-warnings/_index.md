@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "WMF with image.docx");
 
 ## Steg 3: Konfigurera metafilåtergivningsalternativ
 
-Ställ in alternativen för rendering av metafiler för att bestämma hur metafiler (t.ex. WMF-filer) bearbetas under renderingen.
+Ställ in alternativen för metafilrendering för att bestämma hur metafiler (t.ex. WMF-filer) bearbetas under renderingen.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -62,7 +62,7 @@ MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 
 ## Steg 4: Konfigurera PDF-sparalternativ
 
-Ställ in alternativen för att spara PDF, inkludera alternativen för rendering av metafiler. Detta säkerställer att det angivna renderingsbeteendet tillämpas när dokumentet sparas som en PDF.
+Ställ in PDF-sparalternativen, inkludera alternativen för metafilrendering. Detta säkerställer att det angivna renderingsbeteendet tillämpas när dokumentet sparas som en PDF.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
@@ -126,7 +126,7 @@ Genom att följa dessa steg kan du effektivt hantera PDF-renderingsvarningar i A
 
 ### F1: Kan jag hantera andra typer av varningar med den här metoden?
 
- Ja den`IWarningCallback` gränssnitt kan hantera olika typer av varningar, inte bara de som är relaterade till PDF-rendering.
+ Ja, den`IWarningCallback` gränssnitt kan hantera olika typer av varningar, inte bara de som är relaterade till PDF-rendering.
 
 ### F2: Var kan jag ladda ner en gratis testversion av Aspose.Words för .NET?
 
@@ -138,7 +138,7 @@ MetafilRenderingOptions är inställningar som bestämmer hur metafiler (som WMF
 
 ### F4: Var kan jag hitta support för Aspose.Words?
 
- Besök[Aspose.Words supportforum](https://forum.aspose.com/c/words/8) för assistens.
+ Besök[Aspose.Words supportforum](https://forum.aspose.com/c/words/8) för hjälp.
 
 ### F5: Är det möjligt att få en tillfällig licens för Aspose.Words?
 

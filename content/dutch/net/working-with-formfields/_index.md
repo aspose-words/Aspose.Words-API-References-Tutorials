@@ -12,7 +12,7 @@ Woordenverwerking met formuliervelden is een uitgebreide bron voor het leren wer
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Formuliervelden invoegen](./insert-form-fields/) | Leer hoe u vervolgkeuzeformuliervelden in Word-documenten kunt invoegen met Aspose.Words voor .NET. |
-| [Formuliervelden werken met eigenschappen](./form-fields-work-with-properties/) | Leer hoe u met formulierveldeigenschappen in Word-documenten kunt werken met Aspose.Words voor .NET. |
-| [Formuliervelden Verzameling van formuliervelden](./form-fields-get-form-fields-collection/) | Leer hoe u de verzameling formuliervelden in Word-documenten kunt ophalen en manipuleren met behulp van Aspose.Words voor .NET. |
-| [Formuliervelden krijgen op naam](./form-fields-get-by-name/) | Leer hoe u formuliervelden op naam kunt ophalen en wijzigen in Word-documenten met Aspose.Words voor .NET. |
+| [Formuliervelden invoegen](./insert-form-fields/) | Leer hoe u een keuzelijstformulierveld invoegt in een Word-document met behulp van Aspose.Words voor .NET met onze gedetailleerde, stapsgewijze handleiding. |
+| [Formuliervelden werken met eigenschappen](./form-fields-work-with-properties/) | Leer hoe u formuliervelden in Word-documenten kunt manipuleren met Aspose.Words voor .NET met onze gedetailleerde stapsgewijze handleiding. |
+| [Formuliervelden Verzameling van formuliervelden](./form-fields-get-form-fields-collection/) | Leer hoe u formuliervelden in Word-documenten kunt verkrijgen en manipuleren met Aspose.Words voor .NET met onze uitgebreide stapsgewijze handleiding. |
+| [Formuliervelden krijgen op naam](./form-fields-get-by-name/) | Leer hoe u formuliervelden op naam kunt ophalen en wijzigen in Word-documenten met behulp van Aspose.Words voor .NET met deze gedetailleerde, stapsgewijze handleiding. |

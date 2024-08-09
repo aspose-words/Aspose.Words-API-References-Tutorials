@@ -107,7 +107,7 @@ Ez a sor az új dokumentumot "WorkingWithVba.CloneVbaModule.docm" néven menti a
 
 És megvan! Sikeresen klónozott egy VBA-modult egyik Word-dokumentumból a másikba az Aspose.Words for .NET használatával. Ez a nagy teljesítményű könyvtár hihetetlenül egyszerűvé teszi a Word-dokumentumok kezelését, és az általunk ismertetett lépések csak a jéghegy csúcsát jelentik. Függetlenül attól, hogy automatizálja a dokumentumok létrehozását, módosítja a tartalmat vagy kezeli a VBA-projekteket, az Aspose.Words mindent megtalál.
 
- Ha további funkciókat szeretne felfedezni, nézze meg a[API dokumentáció](https://reference.aspose.com/words/net/) . Kell segítség? Meglátogatni a[támogatói fórum](https://forum.aspose.com/c/words/8) segítségért.
+ Ha további funkciókat szeretne felfedezni, nézze meg a[API dokumentáció](https://reference.aspose.com/words/net/) . Segítségre van szüksége? Látogassa meg a[támogatási fórum](https://forum.aspose.com/c/words/8) segítségért.
 
 Boldog kódolást, és ne feledd – gyakorlat teszi a mestert!
 

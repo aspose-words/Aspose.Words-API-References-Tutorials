@@ -15,7 +15,7 @@ url: /ko/net/clone-and-combine-documents/insert-document-at-mail-merge/
 
 시작하기 전에 다음 사항이 있는지 확인하세요.
 
-1.  .NET용 Aspose.Words: 다음을 수행할 수 있습니다.[여기서 최신 버전을 다운로드하세요](https://releases.aspose.com/words/net/) . 라이센스를 구매해야 하는 경우 그렇게 할 수 있습니다.[여기](https://purchase.aspose.com/buy) . 또는[임시 면허증](https://purchase.aspose.com/temporary-license/) 아니면[무료 시험판](https://releases.aspose.com/).
+1.  .NET용 Aspose.Words: 다음을 수행할 수 있습니다.[여기서 최신 버전을 다운로드하세요](https://releases.aspose.com/words/net/) . 라이센스를 구매해야 하는 경우 그렇게 할 수 있습니다.[여기](https://purchase.aspose.com/buy) . 또는[임시 면허증](https://purchase.aspose.com/temporary-license/) 아니면[무료 평가판](https://releases.aspose.com/).
 2. 개발 환경: Visual Studio 또는 기타 C# IDE.
 3. C#에 대한 기본 지식: C# 프로그래밍에 익숙하면 이 튜토리얼을 쉽게 만들 수 있습니다.
 
@@ -139,7 +139,7 @@ private static void InsertDocument(Node insertionDestination, Document docToInse
 ## FAQ
 
 ### 서로 다른 병합 필드에 여러 문서를 삽입할 수 있나요?
-그래 넌 할수있어. 적절한 병합 필드와 해당 문서 경로를 지정하기만 하면 됩니다.`MailMerge.Execute` 방법.
+예, 가능합니다. 적절한 병합 필드와 해당 문서 경로를 지정하기만 하면 됩니다.`MailMerge.Execute` 방법.
 
 ### 삽입된 문서를 기본 문서와 다르게 포맷할 수 있나요?
  전적으로! 당신은 사용할 수 있습니다`ImportFormatMode` 매개변수`NodeImporter` 서식을 제어합니다.

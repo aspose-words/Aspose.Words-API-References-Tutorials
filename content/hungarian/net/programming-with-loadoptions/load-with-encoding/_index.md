@@ -9,13 +9,13 @@ url: /hu/net/programming-with-loadoptions/load-with-encoding/
 ---
 ## Bevezetés
 
-Halihó! Tehát Word-dokumentumokkal dolgozik, és egy adott kódolású dokumentumot kell betöltenie? Lehet, hogy találkozott már olyan dokumentumokkal, amelyeknek szövege UTF-7 kódolású, és azon töri a fejét, hogyan kezelje őket. Nos, jó helyen jársz! Ebben az oktatóanyagban részletesen megvizsgáljuk, hogyan tölthet be egy Word-dokumentumot meghatározott kódolással az Aspose.Words for .NET használatával. Ezzel a nagy teljesítményű könyvtárral olyan módon kezelheti a Word-dokumentumokat, ahogyan azt valószínűleg soha nem is gondolta volna. Kezdjük el!
+Szia! Tehát Word-dokumentumokkal dolgozik, és egy adott kódolású dokumentumot kell betöltenie? Lehet, hogy találkozott már olyan dokumentumokkal, amelyeknek szövege UTF-7 kódolású, és azon töri a fejét, hogyan kezelje őket. Nos, jó helyen jársz! Ebben az oktatóanyagban részletesen megvizsgáljuk, hogyan tölthet be egy Word-dokumentumot meghatározott kódolással az Aspose.Words for .NET használatával. Ezzel a nagy teljesítményű könyvtárral olyan módon kezelheti a Word-dokumentumokat, ahogyan azt valószínűleg soha nem is gondolta volna. Kezdjük is!
 
 ## Előfeltételek
 
 Mielőtt belevágnánk a finomságokba, győződjünk meg arról, hogy mindennel rendelkezünk, amire szükségünk van:
 
-1.  Aspose.Words for .NET: Megteheti[Letöltés](https://releases.aspose.com/words/net/) a legújabb verzió.
+1.  Aspose.Words for .NET: Megteheti[letöltés](https://releases.aspose.com/words/net/) a legújabb verzió.
 2. .NET fejlesztői környezet: A Visual Studio tökéletesen működik.
 3. Word-dokumentum: Győződjön meg arról, hogy az Ön által kezelt formátumban van kódolva, például UTF-7.
 
@@ -78,7 +78,7 @@ Ez a kódsor a megadott útvonalról tölti be a dokumentumot a korábban beáll
 Az UTF-7 (7 bites Unicode Transformation Format) egy olyan kódolás, amelyet úgy terveztek, hogy ASCII-karakterek sorozatával Unicode szöveget jelenítsen meg.
 
 ### Használhatok más kódolást az Aspose.Words-ben?
- Igen, az Aspose.Words különféle kódolásokat támogat, például UTF-8, UTF-16 stb. Csak állítsd be a`Encoding` ingatlan be`LoadOptions` Eszerint.
+ Igen, az Aspose.Words különféle kódolásokat támogat, például UTF-8, UTF-16 stb. Csak állítsd be a`Encoding` ingatlan be`LoadOptions` ennek megfelelően.
 
 ### Az Aspose.Words ingyenesen használható?
  Az Aspose.Words ingyenes próbaverziót kínál, amelyet letölthet[itt](https://releases.aspose.com/) A teljes funkciókhoz licencet kell vásárolnia a következőtől[Aspose](https://purchase.aspose.com/buy).

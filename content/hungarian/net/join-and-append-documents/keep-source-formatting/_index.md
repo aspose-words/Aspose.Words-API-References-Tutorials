@@ -94,4 +94,4 @@ Igen, az Aspose.Words támogatja a .NET Core-t, lehetővé téve annak használa
 Az Aspose.Words hatékony API-kat biztosít a nagyméretű dokumentumok kezeléséhez, beleértve a lapozáshoz és a memóriakezeléshez szükséges szolgáltatásokat.
 
 ### Hol találok további forrásokat és támogatást az Aspose.Words számára?
- Meglátogatni a[Aspose.Words .NET dokumentációhoz](https://reference.aspose.com/words/net/) részletes API-referenciákért, példákért és útmutatókért.
+ Látogassa meg a[Aspose.Words .NET dokumentációhoz](https://reference.aspose.com/words/net/) részletes API-referenciákért, példákért és útmutatókért.

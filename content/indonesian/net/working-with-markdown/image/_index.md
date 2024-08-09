@@ -46,7 +46,7 @@ Selanjutnya, Anda akan memasukkan gambar ke dalam dokumen Anda. Inilah cara Anda
 Shape shape = builder.InsertImage("path_to_your_image.jpg");
 ```
 
- Mengganti`"path_to_your_image.jpg"` dengan jalur sebenarnya dari file gambar Anda. Itu`InsertImage` metode akan menambahkan gambar ke dokumen Anda.
+ Mengganti`"path_to_your_image.jpg"` dengan jalur sebenarnya dari file gambar Anda. Itu`InsertImage`metode akan menambahkan gambar ke dokumen Anda.
 
 ## Langkah 3: Atur Properti Gambar
 
@@ -72,7 +72,7 @@ Aspose.Words mendukung berbagai format gambar termasuk JPEG, PNG, BMP, GIF, dan 
  Sangat! Anda dapat mengatur properti tinggi dan lebar`Shape` objek untuk mengubah ukuran gambar.
 
 ### Apakah mungkin menambahkan gambar dari URL?  
- Ya, Anda dapat menambahkan gambar dari URL dengan memberikan URL di dalamnya`InsertImage` metode.
+Ya, Anda dapat menambahkan gambar dari URL dengan memberikan URL di dalamnya`InsertImage` metode.
 
 ### Bagaimana cara mendapatkan uji coba gratis Aspose.Words untuk .NET?  
  Anda bisa mendapatkan uji coba gratis dari[Asumsikan situs web](https://releases.aspose.com/).

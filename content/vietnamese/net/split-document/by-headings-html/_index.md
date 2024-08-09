@@ -78,7 +78,7 @@ doc.Save(dataDir + "SplitDocument.ByHeadingsHtml.html", options);
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã tách thành công tài liệu Word theo tiêu đề và lưu nó dưới dạng HTML bằng Aspose.Words cho .NET. Phương pháp này có hiệu quả cao trong việc tổ chức các tài liệu lớn và tạo đầu ra HTML được phân đoạn, giúp nội dung của bạn dễ quản lý và dễ truy cập hơn.
+Và bạn có nó! Bạn đã tách thành công tài liệu Word theo tiêu đề và lưu nó dưới dạng HTML bằng Aspose.Words cho .NET. Phương pháp này có hiệu quả cao trong việc tổ chức các tài liệu lớn và tạo đầu ra HTML được phân đoạn, giúp nội dung của bạn dễ quản lý và dễ truy cập hơn.
 
 ## Câu hỏi thường gặp
 

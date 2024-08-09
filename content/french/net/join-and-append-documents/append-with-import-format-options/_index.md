@@ -86,7 +86,7 @@ Boom! Vous avez réussi à fusionner deux documents Word tout en conservant votr
 
 ## Conclusion
 
-Et voila! En suivant ces étapes, vous pouvez facilement ajouter des documents à l'aide d'Aspose.Words for .NET sans perdre votre mise en forme. Que vous soyez un développeur cherchant à rationaliser la gestion des documents ou simplement quelqu'un qui aime les documents organisés, ce guide est là pour vous. Bon codage !
+Et voilà ! En suivant ces étapes, vous pouvez facilement ajouter des documents à l'aide d'Aspose.Words for .NET sans perdre votre mise en forme. Que vous soyez un développeur cherchant à rationaliser la gestion des documents ou simplement quelqu'un qui aime les documents organisés, ce guide est là pour vous. Bon codage !
 
 ## FAQ
 

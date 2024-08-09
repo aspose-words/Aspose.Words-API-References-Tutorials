@@ -71,7 +71,7 @@ Nu voegen we het brondocument toe aan het doeldocument. Deze stap zorgt ervoor d
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
- Gebruik makend van`ImportFormatMode.KeepSourceFormatting` zorgt ervoor dat de opmaak van het brondocument behouden blijft in het uiteindelijk samengevoegde document.
+ Gebruiken`ImportFormatMode.KeepSourceFormatting` zorgt ervoor dat de opmaak van het brondocument behouden blijft in het uiteindelijk samengevoegde document.
 
 ## Stap 5: Sla het samengevoegde document op
 

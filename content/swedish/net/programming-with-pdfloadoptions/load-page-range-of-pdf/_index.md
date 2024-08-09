@@ -52,7 +52,7 @@ Ställ in sökvägen till din dokumentkatalog. Det är här dina PDF-filer lagra
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din katalog.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din katalog.
 
 ## Steg 3: Konfigurera PDF-laddningsalternativ
 
@@ -72,9 +72,9 @@ Med laddningsalternativen inställda är nästa steg att ladda PDF-dokumentet.
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
- Byta ut`"Pdf Document.pdf"` med namnet på din PDF-fil.
+ Ersätta`"Pdf Document.pdf"` med namnet på din PDF-fil.
 
-## Steg 5: Spara de inlästa sidorna
+## Steg 5: Spara de laddade sidorna
 
 Slutligen, spara de laddade sidorna till en ny PDF-fil.
 
@@ -82,7 +82,7 @@ Slutligen, spara de laddade sidorna till en ny PDF-fil.
 doc.Save(dataDir + "WorkingWithPdfLoadOptions.LoadPageRangeOfPdf.pdf");
 ```
 
- Byta ut`"WorkingWithPdfLoadOptions.LoadPageRangeOfPdf.pdf"` med önskat utdatafilnamn.
+ Ersätta`"WorkingWithPdfLoadOptions.LoadPageRangeOfPdf.pdf"` med önskat utdatafilnamn.
 
 ## Slutsats
 

@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
- Các`Aspose.Words` không gian tên chứa các lớp cốt lõi để thao tác với tài liệu Word, trong khi`Aspose.Words.Tables` đặc biệt để xử lý các bảng.
+ các`Aspose.Words` không gian tên chứa các lớp cốt lõi để thao tác với tài liệu Word, trong khi`Aspose.Words.Tables` đặc biệt để xử lý các bảng.
 
 ## Bước 1: Thiết lập tài liệu của bạn
 
@@ -68,7 +68,7 @@ Bây giờ bạn đã có bảng, bạn có thể áp dụng chức năng tự �
 table.AutoFit(AutoFitBehavior.AutoFitToWindow);
 ```
 
- Các`AutoFit` phương pháp với`AutoFitBehavior.AutoFitToWindow` đảm bảo rằng chiều rộng của bảng được điều chỉnh để vừa với toàn bộ chiều rộng của trang.
+ các`AutoFit` phương pháp với`AutoFitBehavior.AutoFitToWindow` đảm bảo rằng chiều rộng của bảng được điều chỉnh để vừa với toàn bộ chiều rộng của trang.
 
 ## Bước 4: Lưu tài liệu đã sửa đổi
 

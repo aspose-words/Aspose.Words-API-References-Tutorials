@@ -47,7 +47,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## 2단계: IF 필드 삽입
 
- 와 더불어`DocumentBuilder`인스턴스가 준비되면 다음 단계는 IF 필드를 문서에 삽입하는 것입니다. IF 필드를 사용하면 조건을 지정하고 조건이 참인지 거짓인지에 따라 다양한 출력을 정의할 수 있습니다.
+ 와 함께`DocumentBuilder`인스턴스가 준비되면 다음 단계는 IF 필드를 문서에 삽입하는 것입니다. IF 필드를 사용하면 조건을 지정하고 조건이 참인지 거짓인지에 따라 다양한 출력을 정의할 수 있습니다.
 
 ```csharp
 // IF 필드를 문서에 삽입합니다.

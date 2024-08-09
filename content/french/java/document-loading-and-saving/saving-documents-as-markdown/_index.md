@@ -152,4 +152,4 @@ Oui, vous pouvez obtenir une version d'essai d'Aspose.Words pour Java sur le sit
 
 ### Où puis-je trouver plus d’exemples et de documentation ?
 
- Pour plus d'exemples, de Documentation et d'informations détaillées sur Aspose.Words pour Java, veuillez visiter le[documentation](https://reference.aspose.com/words/java/).
+ Pour plus d'exemples, de documentation et d'informations détaillées sur Aspose.Words pour Java, veuillez visiter le[documentation](https://reference.aspose.com/words/java/).

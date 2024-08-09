@@ -45,7 +45,7 @@ public class TableFormattingExample {
 
 ## Crear y completar tablas
 
-Ahora que hemos configurado nuestro entorno, profundicemos en la creación y el llenado de tablas en documentos.
+Ahora que hemos configurado nuestro entorno, profundicemos en la creación y llenado de tablas en documentos.
 
 ### Creando una tabla
 

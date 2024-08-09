@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-markdownsaveoptions/set-images-folder/
 ---
-## introduzione
+## Introduzione
 
 Hai mai desiderato esportare il tuo documento Word nel formato Markdown assicurandoti che le tabelle e il contenuto siano perfettamente allineati? Aspose.Words per .NET è la soluzione ideale per questa attività. In questo articolo ti guideremo attraverso il processo di configurazione di Aspose.Words, preparazione del tuo documento ed esportazione in Markdown con il corretto allineamento del contenuto della tabella. Analizzeremo ogni passaggio per renderlo facile da seguire e comprendere. Quindi tuffiamoci e trasformiamo i tuoi documenti Word in file Markdown splendidamente allineati!
 
@@ -79,7 +79,7 @@ MarkdownSaveOptions saveOptions = new MarkdownSaveOptions
 
 ### 2.4 Salva il documento come Markdown
 
- Usare un`MemoryStream` per salvare il documento in formato Markdown.
+ Utilizzare un`MemoryStream` per salvare il documento in formato Markdown.
 
 ```csharp
 using (MemoryStream stream = new MemoryStream())

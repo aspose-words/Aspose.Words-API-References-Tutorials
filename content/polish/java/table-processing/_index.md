@@ -10,7 +10,7 @@ url: /pl/java/table-processing/
 
 Aspose.Words dla Java zapewnia kompleksowy zestaw interfejsów API do przetwarzania tabel, umożliwiając programistom wydajne tworzenie, manipulowanie i formatowanie tabel w dokumentach programu Word. Dzięki Aspose.Words programiści mogą łatwo dodawać lub usuwać wiersze i kolumny, łączyć i dzielić komórki, ustawiać właściwości komórek i dynamicznie wypełniać tabele danymi za pomocą korespondencji seryjnej.
 
-Samouczki Aspose.Words dotyczące przetwarzania tabel Java zapewniają szczegółowe wskazówki na temat wszystkich aspektów przetwarzania tabel, od tematów podstawowych po zaawansowane. W tych samouczkach opisano wszystko, od tworzenia prostych tabel po dynamiczne wypełnianie tabel danymi za pomocą korespondencji seryjnej.
+Samouczki Aspose.Words dotyczące przetwarzania tabel w języku Java zapewniają szczegółowe wskazówki na temat wszystkich aspektów przetwarzania tabel, od tematów podstawowych po zaawansowane. W tych samouczkach opisano wszystko, od tworzenia prostych tabel po dynamiczne wypełnianie tabel danymi za pomocą korespondencji seryjnej.
 
 Postępując zgodnie z instrukcjami krok po kroku i przykładami kodu zawartymi w samouczkach dotyczących przetwarzania tabel, programiści mogą szybko nauczyć się używać Aspose.Words do tworzenia tabel i zarządzania nimi w dokumentach programu Word. Niezależnie od tego, czy jesteś początkującym, czy doświadczonym programistą, samouczki Aspose.Words dotyczące przetwarzania tabel Java mogą pomóc Ci przenieść umiejętności przetwarzania tabel na wyższy poziom.
 
@@ -36,6 +36,6 @@ Dowiedz się, jak pracować z listami dokumentów w Javie przy użyciu Aspose.Wo
 ### [Tworzenie tabel i wierszy w dokumentach](./creating-tables-rows/)
 Dowiedz się, jak tworzyć tabele i wiersze w dokumentach za pomocą Aspose.Words dla Java. Postępuj zgodnie z tym obszernym przewodnikiem z kodem źródłowym i często zadawanymi pytaniami.
 ### [Formatowanie tabel w dokumentach](./formatting-tables/)
-Opanuj sztukę formatowania tabel w dokumentach za pomocą Aspose.Words dla Java. Zapoznaj się ze wskazówkami krok po kroku i przykładami kodu źródłowego umożliwiającymi precyzyjne formatowanie tabeli.
+Opanuj sztukę formatowania tabel w dokumentach przy użyciu Aspose.Words dla Java. Zapoznaj się ze wskazówkami krok po kroku i przykładami kodu źródłowego umożliwiającymi precyzyjne formatowanie tabeli.
 ### [Generowanie spisu treści](./table-contents-generation/)
 Dowiedz się, jak utworzyć dynamiczny spis treści przy użyciu Aspose.Words dla Java. Opanuj generowanie spisu treści ze wskazówkami krok po kroku i przykładami kodu źródłowego.

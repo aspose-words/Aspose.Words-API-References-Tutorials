@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-table-styles-and-formatting/build-table-with-style/
 ---
-## Úvod
+## Zavedení
 
 Vytváření stylových, profesionálních dokumentů často vyžaduje více než jen prostý text. Tabulky jsou fantastickým způsobem, jak organizovat data, ale udělat z nich přitažlivý je úplně jiný problém. Zadejte Aspose.Words pro .NET! V tomto tutoriálu se ponoříme do toho, jak vytvořit stylový stůl, aby vaše dokumenty Word vypadaly uhlazeně a profesionálně.
 
@@ -139,10 +139,10 @@ Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vyt
 Ano, Aspose.Words for .NET lze použít ke stylování nových i stávajících tabulek v dokumentech aplikace Word.
 
 ### Potřebuji licenci k používání Aspose.Words pro .NET?
- Ano, Aspose.Words for .NET vyžaduje licenci pro plnou funkčnost. Můžete získat a[dočasná licence](https://purchase.aspose.com/temporary-license/) nebo koupit plnou[tady](https://purchase.aspose.com/buy).
+ Ano, Aspose.Words for .NET vyžaduje licenci pro plnou funkčnost. Můžete získat a[dočasná licence](https://purchase.aspose.com/temporary-license/) nebo koupit plnou[zde](https://purchase.aspose.com/buy).
 
 ### Mohu automatizovat jiné typy dokumentů pomocí Aspose.Words pro .NET?
 Absolutně! Aspose.Words for .NET podporuje různé typy dokumentů, včetně DOCX, PDF, HTML a dalších.
 
 ### Kde najdu další příklady a dokumentaci?
- Kompletní dokumentaci a příklady naleznete na[Stránka dokumentace Aspose.Words for .NET](https://reference.aspose.com/words/net/).
+ Komplexní dokumentaci a příklady naleznete na[Stránka dokumentace Aspose.Words for .NET](https://reference.aspose.com/words/net/).

@@ -16,7 +16,7 @@ Aspose.Words for Python, geliştiricilerin Word belgelerini programlı olarak y�
 
 ## Ortamınızı Kurma
 
-Koda dalmadan önce ortamımızın doğru şekilde kurulduğundan emin olalım. Bu adımları takip et:
+Koda dalmadan önce ortamımızın doğru şekilde kurulduğundan emin olalım. Şu adımları izleyin:
 
 1. Python'u sisteminize yükleyin.
 2. Aspose.Words for Python kütüphanesini pip kullanarak kurun:

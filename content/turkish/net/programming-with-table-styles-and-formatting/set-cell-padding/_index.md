@@ -55,7 +55,7 @@ builder.InsertCell();
 
 ## Adım 3: Hücre Dolgusunu Ayarlayın
 
-Sihir yapılan yer burasıdır! Hücre içeriğinin soluna, üstüne, sağına ve altına eklenecek alan miktarını (nokta cinsinden) ayarlayacağız.
+Sihrin gerçekleştiği yer burası! Hücre içeriğinin soluna, üstüne, sağına ve altına eklenecek alan miktarını (nokta cinsinden) ayarlayacağız.
 
 ```csharp
 // Hücre için dolguyu ayarlama
@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetCellPadding.docx");
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesinde hücre dolgusunu başarıyla ayarladınız. Bu basit ama güçlü özellik, tablolarınızın okunabilirliğini ve estetiğini önemli ölçüde artırabilir. İster deneyimli bir geliştirici olun ister yeni başlıyor olun, bu kılavuzun yararlı ve takip edilmesi kolay olduğunu umuyoruz. Mutlu kodlama!
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesinde hücre dolgusunu başarıyla ayarladınız. Bu basit ama güçlü özellik, tablolarınızın okunabilirliğini ve estetiğini önemli ölçüde artırabilir. İster deneyimli bir geliştirici olun ister yeni başlıyor olun, bu kılavuzun yararlı ve takip edilmesi kolay olduğunu umuyoruz. Mutlu kodlama!
 
 ## SSS'ler
 

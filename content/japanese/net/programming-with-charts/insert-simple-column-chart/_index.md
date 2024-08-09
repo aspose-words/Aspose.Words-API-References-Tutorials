@@ -94,4 +94,4 @@ doc.Save(dataDir + "InsertSimpleColumnChart.docx");
 はい、Aspose.Words for .NET を使用すると、データベースや API などの外部ソースからのデータをグラフに動的に取り込むことができます。
 
 ### Aspose.Words for .NET のその他のリソースやサポートはどこで見つかりますか?
-訪問[Aspose.Words for .NET ドキュメント](https://reference.aspose.com/words/net/)詳細なAPIリファレンスと例については、こちらを参照してください。サポートについては、[Aspose.Words フォーラム](https://forum.aspose.com/c/words/8).
+訪問する[Aspose.Words for .NET ドキュメント](https://reference.aspose.com/words/net/)詳細なAPIリファレンスと例については、こちらを参照してください。サポートについては、[Aspose.Words フォーラム](https://forum.aspose.com/c/words/8).

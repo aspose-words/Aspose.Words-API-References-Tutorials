@@ -2,7 +2,7 @@
 title: Używanie obiektów OLE i kontrolek ActiveX w Aspose.Words dla Java
 linktitle: Korzystanie z obiektów OLE i kontrolek ActiveX
 second_title: Aspose.Words API przetwarzania dokumentów Java
-description: Naucz się korzystać z obiektów OLE i kontrolek ActiveX w Aspose.Words dla Java. Z łatwością twórz interaktywne dokumenty. Zacznij teraz!
+description: Naucz się korzystać z obiektów OLE i kontrolek ActiveX w Aspose.Words dla Java. Z łatwością twórz interaktywne dokumenty. Zacznij już teraz!
 type: docs
 weight: 21
 url: /pl/java/using-document-elements/using-ole-objects-and-activex/

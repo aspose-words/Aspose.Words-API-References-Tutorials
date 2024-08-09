@@ -12,7 +12,7 @@ Xử lý từ với Trường biểu mẫu là tài nguyên toàn diện để t
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Chèn trường biểu mẫu](./insert-form-fields/) | Tìm hiểu cách chèn các trường biểu mẫu thả xuống vào tài liệu Word bằng Aspose.Words cho .NET. |
-| [Trường biểu mẫu hoạt động với thuộc tính](./form-fields-work-with-properties/) | Tìm hiểu cách làm việc với các thuộc tính trường biểu mẫu trong tài liệu Word bằng Aspose.Words cho .NET. |
-| [Trường biểu mẫu Nhận bộ sưu tập trường biểu mẫu](./form-fields-get-form-fields-collection/) | Tìm hiểu cách truy xuất và thao tác với bộ sưu tập trường biểu mẫu trong tài liệu Word bằng Aspose.Words cho .NET. |
-| [Trường biểu mẫu Nhận theo tên](./form-fields-get-by-name/) | Tìm hiểu cách truy xuất và sửa đổi các trường biểu mẫu theo tên trong tài liệu Word bằng Aspose.Words cho .NET. |
+| [Chèn trường biểu mẫu](./insert-form-fields/) | Tìm hiểu cách chèn trường biểu mẫu hộp tổ hợp vào tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết của chúng tôi. |
+| [Trường biểu mẫu hoạt động với thuộc tính](./form-fields-work-with-properties/) | Tìm hiểu cách thao tác các trường biểu mẫu trong tài liệu Word bằng Aspose.Words dành cho .NET với hướng dẫn từng bước chi tiết của chúng tôi. |
+| [Trường biểu mẫu Nhận bộ sưu tập trường biểu mẫu](./form-fields-get-form-fields-collection/) | Tìm hiểu cách lấy và thao tác các trường biểu mẫu trong tài liệu Word bằng Aspose.Words dành cho .NET với hướng dẫn từng bước toàn diện của chúng tôi. |
+| [Trường biểu mẫu Nhận theo tên](./form-fields-get-by-name/) | Tìm hiểu cách nhận và sửa đổi các trường biểu mẫu theo tên trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết này. |

@@ -138,7 +138,7 @@ doc.Save(dataDir + "UpdatedBookmarks.docx");
 
 ### 3. 북마크 끝에 다른 유형의 콘텐츠를 삽입할 수 있나요?
 
- 예, DocumentBuilder를 사용하면 테이블, 이미지 등과 같은 다양한 콘텐츠 유형을 삽입할 수 있습니다. 을 체크 해봐[선적 서류 비치](https://reference.aspose.com/words/net/) 상세 사항은.
+ 예, DocumentBuilder를 사용하면 테이블, 이미지 등과 같은 다양한 콘텐츠 유형을 삽입할 수 있습니다. 확인해보세요[선적 서류 비치](https://reference.aspose.com/words/net/) 자세한 내용은
 
 ### 4. Aspose.Words에 대한 임시 라이선스는 어떻게 얻나요?
 

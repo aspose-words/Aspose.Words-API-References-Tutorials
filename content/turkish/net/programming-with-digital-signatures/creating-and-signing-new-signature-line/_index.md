@@ -52,7 +52,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Adım 3: İmza Satırını Ekleme
 
- Sihir yapılan yer burasıdır. Kullanarak belgemize bir imza satırı ekliyoruz.`DocumentBuilder` sınıf.
+ Sihrin gerçekleştiği yer burasıdır. Kullanarak belgemize bir imza satırı ekliyoruz.`DocumentBuilder` sınıf.
 
 ```csharp
 SignatureLine signatureLine = builder.InsertSignatureLine(new SignatureLineOptions()).SignatureLine;
@@ -97,7 +97,7 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
 
 ## Çözüm
 
-İşte buyur! Bu adımlarla başarılı bir şekilde yeni bir Word belgesi oluşturdunuz, bir imza satırı eklediniz ve onu Aspose.Words for .NET kullanarak dijital olarak imzaladınız. Belge otomasyonunu çocuk oyuncağı haline getiren güçlü bir araçtır. İster sözleşmelerle, anlaşmalarla ister herhangi bir resmi belgeyle ilgileniyor olun, bu yöntem bunların güvenli bir şekilde imzalanmasını ve doğrulanmasını sağlar.
+Ve işte karşınızda! Bu adımlarla başarılı bir şekilde yeni bir Word belgesi oluşturdunuz, bir imza satırı eklediniz ve onu Aspose.Words for .NET kullanarak dijital olarak imzaladınız. Belge otomasyonunu çocuk oyuncağı haline getiren güçlü bir araçtır. İster sözleşmelerle, anlaşmalarla ister herhangi bir resmi belgeyle ilgileniyor olun, bu yöntem bunların güvenli bir şekilde imzalanmasını ve doğrulanmasını sağlar.
 
 ## SSS'ler
 
@@ -105,7 +105,7 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
 Evet, PNG, JPG, BMP vb. gibi çeşitli resim formatlarını kullanabilirsiniz.
 
 ###  Kullanmak gerekli mi?`.pfx` file for the certificate?
- Evet A`.pfx` dosyası, sertifikalar ve özel anahtarlar dahil olmak üzere kriptografik bilgileri depolamak için yaygın bir formattır.
+ Evet, bir`.pfx` dosyası, sertifikalar ve özel anahtarlar dahil olmak üzere kriptografik bilgileri depolamak için yaygın bir formattır.
 
 ### Tek bir belgeye birden fazla imza satırı ekleyebilir miyim?
 Kesinlikle! Her imza için ekleme adımını tekrarlayarak birden fazla imza satırı ekleyebilirsiniz.

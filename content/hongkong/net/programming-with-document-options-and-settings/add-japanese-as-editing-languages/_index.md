@@ -88,7 +88,7 @@ Console.WriteLine(
 
 ## 結論
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 成功將日文以編輯語言新增至文件。這就像在地圖中添加一種新語言，使其更易於導航和理解。無論您是處理多語言文件還是只需要確保文字格式正確，Aspose.Words 都能滿足您的需求。現在，繼續充滿信心地探索文件自動化的世界！
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功將日文以編輯語言新增至文件。這就像在地圖中添加一種新語言，使其更易於導航和理解。無論您是處理多語言文件還是只需要確保文字格式正確，Aspose.Words 都能滿足您的需求。現在，繼續充滿信心地探索文件自動化的世界！
 
 ## 常見問題解答
 
@@ -99,7 +99,7 @@ Console.WriteLine(
 是的，您需要商業用途許可證。你可以買一個[這裡](https://purchase.aspose.com/buy)或獲得臨時許可證[這裡](https://purchase.aspose.com/temporary-license/).
 
 ### Aspose.Words for .NET 還提供哪些其他功能？
- Aspose.Words for .NET 提供了廣泛的功能，包括文件產生、轉換、操作等。查看[文件](https://reference.aspose.com/words/net/)更多細節。
+ Aspose.Words for .NET 提供了廣泛的功能，包括文件產生、轉換、操作等。查看[文件](https://reference.aspose.com/words/net/)了解更多詳情。
 
 ### 可以在購買前試用 Aspose.Words for .NET 嗎？
 絕對地！您可以下載免費試用版[這裡](https://releases.aspose.com/).

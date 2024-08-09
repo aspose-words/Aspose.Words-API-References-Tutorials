@@ -88,7 +88,7 @@ doc.Save(dataDir + "FindAndReplace.ReplaceTextInFooter.docx");
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez remplacé avec succès le texte dans le pied de page d'un document Word à l'aide d'Aspose.Words pour .NET. Ce didacticiel vous a guidé dans le chargement d'un document, l'accès au pied de page, la configuration des options de recherche et de remplacement, le remplacement du texte et l'enregistrement du document modifié. Avec ces étapes, vous pouvez facilement manipuler et mettre à jour le contenu de vos documents Word par programmation.
+Félicitations! Vous avez remplacé avec succès le texte dans le pied de page d'un document Word à l'aide d'Aspose.Words pour .NET. Ce didacticiel vous a guidé dans le chargement d'un document, l'accès au pied de page, la configuration des options de recherche et de remplacement, le remplacement du texte et l'enregistrement du document modifié. Avec ces étapes, vous pouvez facilement manipuler et mettre à jour le contenu de vos documents Word par programmation.
 
 ## FAQ
 

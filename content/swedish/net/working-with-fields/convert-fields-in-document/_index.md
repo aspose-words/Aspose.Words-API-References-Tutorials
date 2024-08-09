@@ -40,7 +40,7 @@ Först måste du definiera sökvägen till din dokumentkatalog. Det är här dit
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog.
 
 ## Steg 2: Ladda dokumentet
 
@@ -77,7 +77,7 @@ Grattis! Du har framgångsrikt konverterat fält i ett Word-dokument med Aspose.
 ## FAQ's
 
 ### Kan jag konvertera andra typer av fält med Aspose.Words för .NET?
- Ja, Aspose.Words för .NET låter dig manipulera olika typer av fält, inte bara IF-fält. Du kan utforska[dokumentation](https://reference.aspose.com/words/net/) för mer detaljer.
+ Ja, Aspose.Words för .NET låter dig manipulera olika typer av fält, inte bara IF-fält. Du kan utforska[dokumentation](https://reference.aspose.com/words/net/) för mer information.
 
 ### Vad är IF-fält i Word-dokument?
 OM-fält är villkorade fält som visar text baserat på vissa villkor. De används ofta för att skapa dynamiskt innehåll i Word-dokument.

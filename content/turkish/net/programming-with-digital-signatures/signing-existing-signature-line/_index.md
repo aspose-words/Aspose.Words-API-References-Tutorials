@@ -71,7 +71,7 @@ CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", 
 
 ## Adım 5: Belgeyi İmzalayın
 
-Şimdi belgeyi imzalamak için tüm bileşenleri birleştiriyoruz. Sihir yapılan yer burasıdır!
+Şimdi belgeyi imzalamak için tüm bileşenleri birleştiriyoruz. Sihrin gerçekleştiği yer burası!
 
 ```csharp
 DigitalSignatureUtil.Sign(
@@ -84,7 +84,7 @@ DigitalSignatureUtil.Sign(
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesinde mevcut bir imza satırını başarıyla imzaladınız. Çok sert değil, değil mi? Bu adımlarla artık belgeleri dijital olarak imzalayarak ekstra özgünlük ve profesyonellik katmanı sağlayabilirsiniz. Böylece bir dahaki sefere biri size imzalamanız için bir belge gönderdiğinde tam olarak ne yapmanız gerektiğini bileceksiniz!
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesinde mevcut bir imza satırını başarıyla imzaladınız. Çok sert değil, değil mi? Bu adımlarla artık belgeleri dijital olarak imzalayarak ekstra özgünlük ve profesyonellik katmanı sağlayabilirsiniz. Böylece bir dahaki sefere biri size imzalamanız için bir belge gönderdiğinde tam olarak ne yapmanız gerektiğini bileceksiniz!
 
 ## SSS'ler
 

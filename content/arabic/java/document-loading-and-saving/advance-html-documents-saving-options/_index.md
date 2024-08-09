@@ -10,7 +10,7 @@ url: /ar/java/document-loading-and-saving/advance-html-documents-saving-options/
 
 في هذا البرنامج التعليمي، سنستكشف خيارات حفظ مستندات HTML المتقدمة التي يوفرها Aspose.Words لـ Java. Aspose.Words عبارة عن واجهة برمجة تطبيقات Java قوية للعمل مع مستندات Word، وهي توفر نطاقًا واسعًا من الميزات لمعالجة المستندات وتحويلها.
 
-## 1 المقدمة
+## 1. مقدمة
 يتيح لك Aspose.Words for Java العمل مع مستندات Word برمجيًا. في هذا البرنامج التعليمي، سنركز على خيارات حفظ مستندات HTML المتقدمة، والتي تمكنك من التحكم في كيفية تحويل مستندات Word إلى HTML.
 
 ## 2. تصدير معلومات رحلة الذهاب والإياب
@@ -26,7 +26,7 @@ public void exportRoundtripInformation() throws Exception {
 ```
 
 ## 3. تصدير الخطوط كـ Base64
- مع ال`exportFontsAsBase64` بهذه الطريقة، يمكنك تصدير الخطوط المستخدمة في المستند كبيانات مشفرة بـ Base64 في HTML. يضمن هذا أن يحتفظ تمثيل HTML بنفس أنماط الخطوط الموجودة في مستند Word الأصلي.
+ مع`exportFontsAsBase64` بهذه الطريقة، يمكنك تصدير الخطوط المستخدمة في المستند كبيانات مشفرة بـ Base64 في HTML. يضمن هذا أن يحتفظ تمثيل HTML بنفس أنماط الخطوط الموجودة في مستند Word الأصلي.
 
 ```java
 @Test
@@ -65,7 +65,7 @@ public void convertMetafilesToEmfOrWmf() throws Exception {
 ```
 
 ## 6. تحويل ملفات التعريف إلى SVG
- استخدم ال`convertMetafilesToSvg` طريقة تحويل ملفات التعريف إلى تنسيق SVG. يعد هذا التنسيق مثاليًا لعرض الرسومات المتجهة في مستندات HTML.
+ استخدم`convertMetafilesToSvg` طريقة تحويل ملفات التعريف إلى تنسيق SVG. يعد هذا التنسيق مثاليًا لعرض الرسومات المتجهة في مستندات HTML.
 
 ```java
 @Test
@@ -75,7 +75,7 @@ public void convertMetafilesToSvg() throws Exception {
 ```
 
 ## 7. أضف بادئة اسم فئة CSS
- مع ال`addCssClassNamePrefix` الطريقة، يمكنك إضافة بادئة إلى أسماء فئات CSS في HTML المصدر. يساعد هذا في منع التعارضات مع الأنماط الموجودة.
+ مع`addCssClassNamePrefix` الطريقة، يمكنك إضافة بادئة إلى أسماء فئات CSS في HTML المصدر. يساعد هذا في منع التعارضات مع الأنماط الموجودة.
 
 ```java
 @Test

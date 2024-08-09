@@ -45,7 +45,7 @@ Ezután hozzá kell adnia egy hivatkozást az Aspose.Words for .NET-hez. Ezt a N
 2. Válassza a "NuGet-csomagok kezelése" lehetőséget.
 3. Keresse meg az "Aspose.Words" kifejezést, és telepítse.
 
-## 2. lépés: Konfigurálja a Betöltési beállításokat
+## 2. lépés: Konfigurálja a betöltési beállításokat
 
 ### Határozza meg az adatkönyvtárat
 
@@ -73,7 +73,7 @@ A beállított betöltési beállításokkal készen áll a PDF dokumentum betö
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
- Biztosítják, hogy a`"Pdf Document.pdf"` a PDF-fájl neve a megadott könyvtárban.
+ Biztosítsd ezt`"Pdf Document.pdf"` a PDF-fájl neve a megadott könyvtárban.
 
 ## Következtetés
 

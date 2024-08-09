@@ -32,7 +32,7 @@ Maintenant, décomposons le processus en plusieurs étapes pour nous assurer que
 
 ## Étape 1 : Configurez votre projet
 
-Tout d’abord, vous devez créer un nouveau projet ou en utiliser un existant. Ouvrez votre environnement de développement et configurez un projet.
+Tout d’abord, vous devez créer un nouveau projet ou utiliser un projet existant. Ouvrez votre environnement de développement et configurez un projet.
 
 1. Créer un nouveau projet : ouvrez Visual Studio et créez une nouvelle application console C#.
 2.  Installez Aspose.Words : utilisez NuGet Package Manager pour installer Aspose.Words. Faites un clic droit sur votre projet, sélectionnez « Gérer les packages NuGet » et recherchez`Aspose.Words`. Installez la dernière version.
@@ -87,13 +87,13 @@ La conversion de documents Word avec des éléments transformés au format PCL p
 Oui, Aspose.Words for .NET peut être utilisé dans différents types d'applications, y compris les applications Web. Assurez-vous que les licences et la configuration sont appropriées.
 
 ### Vers quels autres formats Aspose.Words for .NET peut-il être converti ?  
-Aspose.Words prend en charge un large éventail de formats, notamment PDF, HTML, EPUB, etc. Vérifier la[Documentation](https://reference.aspose.com/words/net/) pour une liste complète.
+Aspose.Words prend en charge un large éventail de formats, notamment PDF, HTML, EPUB, etc. Vérifiez le[documentation](https://reference.aspose.com/words/net/) pour une liste complète.
 
 ### Est-il possible de pixelliser uniquement des éléments spécifiques du document ?  
  Actuellement, le`RasterizeTransformedElements` L’option s’applique à tous les éléments transformés du document. Pour un contrôle plus granulaire, envisagez de traiter les éléments séparément avant la conversion.
 
 ### Comment puis-je résoudre les problèmes liés à la conversion de documents ?  
- Assurez-vous de disposer de la dernière version d'Aspose.Words et consultez la documentation pour tout problème de conversion spécifique. De plus, le[forum d'entraide](https://forum.aspose.com/c/words/8) est un excellent endroit pour demander de l'aide.
+ Assurez-vous de disposer de la dernière version d'Aspose.Words et consultez la documentation pour tout problème de conversion spécifique. De plus, le[forum d'assistance](https://forum.aspose.com/c/words/8) est un excellent endroit pour demander de l'aide.
 
 ### Existe-t-il des limitations à la version d’essai d’Aspose.Words for .NET ?  
  La version d'essai présente certaines limitations, telles que le filigrane d'évaluation. Pour une expérience entièrement fonctionnelle, pensez à vous procurer un[permis temporaire](https://purchase.aspose.com/temporary-license/).

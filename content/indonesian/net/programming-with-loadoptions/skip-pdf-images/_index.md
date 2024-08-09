@@ -59,7 +59,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 ### Atur Opsi Muat untuk Melewati Gambar PDF
 
-Sekarang, konfigurasikan opsi pemuatan PDF untuk melewati gambar. Ini adalah dimana keajaiban terjadi. 
+Sekarang, konfigurasikan opsi pemuatan PDF untuk melewati gambar. Di sinilah keajaiban terjadi. 
 
 ```csharp
 PdfLoadOptions loadOptions = new PdfLoadOptions { SkipPdfImages = true };
@@ -73,7 +73,7 @@ Dengan mengatur opsi pemuatan, Anda siap memuat dokumen PDF. Langkah ini penting
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
- Memastikan bahwa`"Pdf Document.pdf"` adalah nama file PDF Anda di direktori yang ditentukan.
+ Pastikan itu`"Pdf Document.pdf"` adalah nama file PDF Anda di direktori yang ditentukan.
 
 ## Kesimpulan
 
@@ -83,9 +83,9 @@ Dan itu dia! Anda baru saja mempelajari cara melewati gambar dalam dokumen PDF m
 
 ### Bisakah saya melewatkan gambar tertentu dalam PDF secara selektif?
 
- Tidak, itu`SkipPdfImages` opsi melewatkan semua gambar dalam PDF. Jika Anda memerlukan kontrol selektif, pertimbangkan untuk melakukan pra-pemrosesan PDF.
+ Tidak, itu`SkipPdfImages` opsi melewatkan semua gambar dalam PDF. Jika Anda memerlukan kontrol selektif, pertimbangkan pra-pemrosesan PDF.
 
-### Apakah fitur ini memengaruhi teks di PDF?
+### Apakah fitur ini memengaruhi teks dalam PDF?
 
 Tidak, melewatkan gambar hanya memengaruhi gambar. Teksnya tetap utuh dan dapat diakses sepenuhnya.
 

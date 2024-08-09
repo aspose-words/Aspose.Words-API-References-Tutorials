@@ -15,10 +15,10 @@ Chào mừng bạn đến với thế giới tuyệt vời của Aspose.Words d�
 
 Trước khi đi vào chi tiết, hãy đảm bảo rằng chúng ta có mọi thứ mình cần:
 
-1.  Aspose.Words for .NET: Đảm bảo bạn có phiên bản mới nhất.[Tải về tại đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Đảm bảo bạn có phiên bản mới nhất.[Tải nó ở đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Visual Studio hoặc bất kỳ IDE tương thích C# nào khác.
 3. Kiến thức cơ bản về C#: Làm quen một chút với C# và .NET framework sẽ giúp ích.
-4. Giấy phép: Bạn có thể sử dụng giấy phép tạm thời nếu không có giấy phép đầy đủ. Hiểu rồi[đây](https://purchase.aspose.com/temporary-license/).
+4. Giấy phép: Bạn có thể sử dụng giấy phép tạm thời nếu không có giấy phép đầy đủ. Nhận nó[đây](https://purchase.aspose.com/temporary-license/).
 
 ## Nhập không gian tên
 
@@ -65,7 +65,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportRoundtripInformation.html",
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Chỉ với một vài dòng mã, bạn đã xuất thành công thông tin khứ hồi từ tài liệu Word sang HTML bằng Aspose.Words cho .NET. Tính năng mạnh mẽ này đảm bảo rằng tài liệu của bạn giữ được tính toàn vẹn và định dạng trong quá trình chuyển đổi, giúp cuộc sống của bạn dễ dàng hơn nhiều.
+Và bạn có nó! Chỉ với một vài dòng mã, bạn đã xuất thành công thông tin khứ hồi từ tài liệu Word sang HTML bằng Aspose.Words cho .NET. Tính năng mạnh mẽ này đảm bảo rằng tài liệu của bạn giữ được tính toàn vẹn và định dạng trong quá trình chuyển đổi, giúp cuộc sống của bạn dễ dàng hơn nhiều.
 
 ## Câu hỏi thường gặp
 

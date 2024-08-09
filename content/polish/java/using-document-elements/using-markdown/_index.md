@@ -70,7 +70,7 @@ Markdown obsługuje listy uporządkowane i nieuporządkowane. Tutaj określimy u
 builder.getListFormat().applyNumberDefault();
 ```
 
-### cytaty
+### Cytaty
 
 Cytaty to doskonały sposób na wyróżnienie tekstu w Markdown.
 

@@ -101,8 +101,8 @@ Ustawianie kierunku tekstu w dokumentach programu Word jest prostym procesem dzi
 
 ### Jak obsługiwać dokumenty zawierające mieszane wskazówki tekstowe?
 
- W przypadku dokumentów zawierających mieszane kierunki tekstu może zaistnieć potrzeba obsługi formatowania według akapitu. Użyj`ParagraphFormat.Bidi` właściwość, aby dostosować kierunek każdego akapitu według potrzeb.
+ W przypadku dokumentów zawierających mieszane kierunki tekstu może zaistnieć potrzeba obsługi formatowania według akapitu. Skorzystaj z`ParagraphFormat.Bidi` właściwość, aby dostosować kierunek każdego akapitu według potrzeb.
 
 ### Gdzie mogę znaleźć więcej informacji na temat Aspose.Words dla .NET?
 
- Więcej szczegółów znajdziesz w[Aspose.Words dla dokumentacji .NET](https://reference.aspose.com/words/net/) . Możesz także eksplorować dodatkowe zasoby, takie jak[Link do pobrania](https://releases.aspose.com/words/net/), [Kupić](https://purchase.aspose.com/buy), [Bezpłatny okres próbny](https://releases.aspose.com/), [Licencja tymczasowa](https://purchase.aspose.com/temporary-license/) , I[Wsparcie](https://forum.aspose.com/c/words/8).
+ Więcej szczegółów znajdziesz w[Aspose.Words dla dokumentacji .NET](https://reference.aspose.com/words/net/) . Możesz także eksplorować dodatkowe zasoby, takie jak[Pobierz link](https://releases.aspose.com/words/net/), [Kupić](https://purchase.aspose.com/buy), [Bezpłatny okres próbny](https://releases.aspose.com/), [Licencja tymczasowa](https://purchase.aspose.com/temporary-license/) , I[Wsparcie](https://forum.aspose.com/c/words/8).

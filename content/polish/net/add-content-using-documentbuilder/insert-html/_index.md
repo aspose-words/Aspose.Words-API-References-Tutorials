@@ -15,7 +15,7 @@ Cześć, entuzjasta kodowania! Czy zastanawiałeś się kiedyś, jak wstawić ko
 
 Zanim zagłębimy się w przewodnik krok po kroku, upewnijmy się, że mamy wszystko, czego potrzebujemy. Oto krótka lista kontrolna:
 
-1. Biblioteka Aspose.Words dla .NET: Jeśli jeszcze tego nie zrobiłeś, musisz pobrać bibliotekę Aspose.Words dla .NET. Możesz to dostać[Tutaj](https://releases.aspose.com/words/net/).
+1. Biblioteka Aspose.Words dla .NET: Jeśli jeszcze tego nie zrobiłeś, musisz pobrać bibliotekę Aspose.Words dla .NET. Możesz to zdobyć[Tutaj](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: upewnij się, że masz skonfigurowane środowisko programistyczne, takie jak Visual Studio.
 3. .NET Framework: Upewnij się, że masz zainstalowaną platformę .NET na swoim komputerze.
 4. Podstawowa znajomość języka C#: odrobina znajomości języka C# bardzo się przyda.
@@ -62,7 +62,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Krok 4: Wstawianie treści HTML
 
- Teraz przychodzi zabawna część — dodanie zawartości HTML. Używając`InsertHtml` metoda`DocumentBuilder` class, możemy osadzić HTML bezpośrednio w naszym dokumencie Word.
+ Teraz przychodzi zabawna część — dodanie zawartości HTML. Korzystanie z`InsertHtml` metoda`DocumentBuilder` class, możemy osadzić HTML bezpośrednio w naszym dokumencie Word.
 
 ```csharp
 builder.InsertHtml(
@@ -72,7 +72,7 @@ builder.InsertHtml(
     "<h1 align='left'>Heading 1 left.</h1>");
 ```
 
-Ten fragment wstawia do dokumentu akapit wyrównany do prawej strony, pogrubiony akapit wyrównany do lewej, element div wyrównany do środka i nagłówek wyrównany do lewej.
+Ten fragment wstawia do dokumentu akapit wyrównany do prawej, pogrubiony akapit wyrównany do lewej, element div wyrównany do środka i nagłówek wyrównany do lewej.
 
 ## Krok 5: Zapisywanie dokumentu
 

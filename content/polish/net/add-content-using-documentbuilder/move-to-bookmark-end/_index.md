@@ -109,7 +109,7 @@ Gdy znajdziesz się na końcu zakładki, możesz wstawić tekst lub inną treś�
 builder.Writeln("This is a bookmark.");
 ```
 
-I to wszystko! Udało Ci się przejść na koniec zakładki i wstawić tam tekst.
+I tyle! Udało Ci się przejść na koniec zakładki i wstawić tam tekst.
 
 ## Krok 6: Zapisz dokument
 
@@ -138,7 +138,7 @@ Masz to! Właśnie nauczyłeś się, jak przejść na koniec zakładki w dokumen
 
 ### 3. Czy na końcu zakładki mogę wstawić inny rodzaj treści?
 
- Tak, DocumentBuilder umożliwia wstawianie różnych typów treści, takich jak tabele, obrazy i inne. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) po więcej szczegółów.
+ Tak, DocumentBuilder umożliwia wstawianie różnych typów treści, takich jak tabele, obrazy i inne. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) aby uzyskać więcej szczegółów.
 
 ### 4. Jak uzyskać tymczasową licencję na Aspose.Words?
 

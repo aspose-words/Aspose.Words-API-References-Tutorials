@@ -2,7 +2,7 @@
 title: Chuyển đổi tệp Docx sang Markdown
 linktitle: Chuyển đổi tệp Docx sang Markdown
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách chuyển đổi tệp DOCX sang Markdown bằng Aspose.Words for .NET. Hãy làm theo hướng dẫn chi tiết của chúng tôi để tích hợp liền mạch trong các ứng dụng .NET của bạn.
+description: Tìm hiểu cách chuyển đổi tệp DOCX sang Markdown bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn chi tiết của chúng tôi để tích hợp liền mạch trong các ứng dụng .NET của bạn.
 type: docs
 weight: 10
 url: /vi/net/basic-conversions/docx-to-markdown/

@@ -92,7 +92,7 @@ Console.WriteLine("Cell shading after style expansion: " + cellShadingAfter);
 
 ## 結論
 
-現在你就擁有了！透過執行這些步驟，您可以使用 Aspose.Words for .NET 輕鬆地從 Word 文件中的樣式擴充單元格和行的格式設定。這不僅可以節省時間，還可以確保文件之間的一致性。快樂編碼！
+現在你就得到它了！透過執行這些步驟，您可以使用 Aspose.Words for .NET 輕鬆地從 Word 文件中的樣式擴充單元格和行的格式設定。這不僅可以節省時間，還可以確保文件之間的一致性。快樂編碼！
 
 ## 常見問題解答
 
@@ -109,4 +109,4 @@ Aspose.Words for .NET 是一個功能強大的 API，使開發人員能夠以程
 樣式展開後，它們將直接套用至儲存格。要恢復，您需要重新載入文件或手動重新套用樣式。
 
 ### 此方法適用於所有版本的 Aspose.Words for .NET 嗎？
-是的`ExpandTableStylesToDirectFormatting`方法在最新版本的 Aspose.Words for .NET 中可用。始終檢查[文件](https://reference.aspose.com/words/net/)了解最新動態。
+是的，`ExpandTableStylesToDirectFormatting`方法在最新版本的 Aspose.Words for .NET 中可用。始終檢查[文件](https://reference.aspose.com/words/net/)了解最新動態。

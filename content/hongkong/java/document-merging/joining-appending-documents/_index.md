@@ -2,7 +2,7 @@
 title: 加入和附加文檔
 linktitle: 加入和附加文檔
 second_title: Aspose.Words Java 文件處理 API
-description: 了解如何使用 Aspose.Words for Java 加入和附加文件。包含程式碼範例的逐步指南，可實現高效率的文件操作。
+description: 了解如何使用 Aspose.Words for Java 加入和追加文件。包含程式碼範例的逐步指南，可實現高效率的文件操作。
 type: docs
 weight: 11
 url: /zh-hant/java/document-merging/joining-appending-documents/
@@ -91,7 +91,7 @@ doc1.save("joined_document.docx");
 
 ### 使用 Aspose.Words 連接文件時有任何限制嗎？
 
-雖然 Aspose.Words 提供強大的文件操作功能，但必須考慮文件的複雜性和大小，以確保最佳效能。
+雖然 Aspose.Words 提供了強大的文件操作功能，但必須考慮文件的複雜性和大小，以確保最佳效能。
 
 ### 我需要支付授權費用才能使用 Aspose.Words for Java 嗎？
 

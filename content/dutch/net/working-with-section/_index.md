@@ -9,7 +9,7 @@ url: /nl/net/working-with-section/
 ---
 Woordenverwerking met secties biedt een waardevolle hulpbron voor ontwikkelaars die de woordenverwerking met secties in Word-documenten onder de knie willen krijgen. Deze zelfstudies bieden stapsgewijze instructies, voorbeeldcode en stapsgewijze uitleg om u te helpen de sectiegerelateerde functies in Aspose.Words te begrijpen en effectief te gebruiken.
 
-De tutorials behandelen de basisbeginselen van Woordverwerking met secties, inclusief het maken van nieuwe secties, het toevoegen van inhoud, het wijzigen van de lay-outinstellingen en meer. U leert hoe u secties kunt manipuleren om uw documentstructuur aan te passen en professionele lay-outs te maken.
+De tutorials behandelen de basisprincipes van Woordverwerking met secties, inclusief het maken van nieuwe secties, het toevoegen van inhoud, het wijzigen van de lay-outinstellingen en meer. U leert hoe u secties kunt manipuleren om uw documentstructuur aan te passen en professionele lay-outs te maken.
 
 De tutorials richten zich ook op het verwijderen en wijzigen van bestaande secties. U leert hoe u specifieke secties kunt verwijderen, secties opnieuw kunt rangschikken, de lay-outinstellingen kunt wijzigen en andere geavanceerde bewerkingen kunt uitvoeren om uw Word-documenten aan uw specifieke behoeften aan te passen.
 

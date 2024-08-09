@@ -9,7 +9,7 @@ url: /it/java/document-printing/print-document-printdialog/
 ---
 
 
-## introduzione
+## Introduzione
 
 La stampa di documenti è un requisito comune in molte applicazioni Java. Aspose.Words per Java semplifica questo compito fornendo una comoda API per la manipolazione e la stampa dei documenti.
 
@@ -57,7 +57,7 @@ public class PrintDocumentWithDialog {
 }
 ```
 
- In questo codice, innanzitutto carichiamo il documento utilizzando Aspose.Words e quindi inizializziamo PrinterSettings. Noi usiamo il`showPrintDialog()` metodo per visualizzare PrintDialog all'utente. Una volta che l'utente ha selezionato le proprie impostazioni di stampa, stampiamo il documento utilizzando`doc.print(settings)`.
+ In questo codice, innanzitutto carichiamo il documento utilizzando Aspose.Words e quindi inizializziamo PrinterSettings. Usiamo il`showPrintDialog()` metodo per visualizzare PrintDialog all'utente. Una volta che l'utente ha selezionato le proprie impostazioni di stampa, stampiamo il documento utilizzando`doc.print(settings)`.
 
 ## Personalizzazione delle impostazioni di stampa
 

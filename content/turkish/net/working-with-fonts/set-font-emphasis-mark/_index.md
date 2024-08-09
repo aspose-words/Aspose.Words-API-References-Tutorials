@@ -2,83 +2,105 @@
 title: Yazı Tipi Vurgu İşaretini Ayarla
 linktitle: Yazı Tipi Vurgu İşaretini Ayarla
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak bir Word belgesinde yazı tipi vurgu stilini nasıl ayarlayacağınızı öğrenin.
+description: Bu ayrıntılı, adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerinde yazı tipi vurgu işaretlerini nasıl ayarlayacağınızı öğrenin. .NET geliştiricileri için mükemmel.
 type: docs
 weight: 10
 url: /tr/net/working-with-fonts/set-font-emphasis-mark/
 ---
+## giriiş
 
-Bu eğitimde size Aspose.Words for .NET kullanarak bir Word belgesinde yazı tipi vurgu stilini nasıl ayarlayacağınızı göstereceğiz. Yazı tipi vurgusu, metindeki belirli kelimeleri veya cümleleri vurgulamak için kullanılır.
+Bugünkü dersimizde Aspose.Words for .NET kullanarak bir Word belgesinde yazı tipi vurgu işaretlerinin nasıl ayarlanacağını detaylı olarak inceleyeceğiz. Belirli bir metnin altını benzersiz bir işaretle çizmek veya sadece belirli kelimeleri öne çıkarmak istiyorsanız, bu kılavuz size yardımcı olacaktır. O halde kemerinizi bağlayın ve başlayalım!
 
 ## Önkoşullar
-Başlamadan önce aşağıdaki öğelere sahip olduğunuzdan emin olun:
-- C# programlama dili hakkında çalışma bilgisi
-- .NET için Aspose.Words kütüphanesi projenizde yüklü
 
-## 1. Adım: Belge dizinini tanımlayın
-Dizin yolunu Word belgenizin konumuna ayarlayarak başlayın. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` uygun yol ile kodda.
+Nitel ayrıntılara dalmadan önce aşağıdaki önkoşulların işaretlendiğinden emin olun:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+-  Aspose.Words for .NET Library: Aspose.Words for .NET kütüphanesinin kurulu olduğundan emin olun. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+- Geliştirme Ortamı: Visual Studio gibi çalışan bir geliştirme ortamı.
+- .NET Framework: .NET Framework'ün kurulu olduğundan emin olun.
 
-## 2. Adım: Belgeyi oluşturun ve özelleştirin
- Bir örneğini oluşturun`Document` sınıf ve ilişkili`DocumentBuilder` belge içeriğini oluşturmak için. Kullan`Font.EmphasisMark` yazı tipi vurgu stilini ayarlama özelliği`EmphasisMark.UnderSolidCircle` . Daha sonra şunu kullanın:`Write`Ve`Writeln` yöntemleri`DocumentBuilder` Belirtilen yazı tipi vurgusuna sahip metin eklemek için.
+## Ad Alanlarını İçe Aktar
+
+Aspose.Words for .NET ile çalışmak için gerekli ad alanlarını içe aktarmanız gerekir. Bunları kod dosyanızın en üstüne ekleyin:
 
 ```csharp
-Document document = new Document();
-DocumentBuilder builder = new DocumentBuilder(document);
-builder.Font.EmphasisMark = EmphasisMark.UnderSolidCircle;
-builder.Write("Emphasized text");
-builder. Writen();
-builder.Font.ClearFormatting();
-builder.Write("Simple text");
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## 3. Adım: Belgeyi kaydedin
- kullanarak belgeyi kaydedin.`Save` yöntemi`Document` uygun yol ve dosya adı ile.
+Şimdi süreci basit adımlara ayıralım. Word belgenizde yazı tipi vurgu işaretlerini ayarlamak için her adımı dikkatlice izleyin.
 
-```csharp
-document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
-```
+## 1. Adım: Document ve DocumentBuilder'ı başlatın
 
-### Aspose.Words for .NET kullanarak Yazı Tipi Vurgu İşaretini Ayarlama için örnek kaynak kodu 
+Öncelikle yeni bir belge ve DocumentBuilder'ı başlatmanız gerekir. DocumentBuilder sınıfı, belgeye metin ve diğer öğeleri eklemek için yöntemler sağlar.
 
 ```csharp
 // Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
+// Yeni bir Belge başlat
 Document document = new Document();
+
+// DocumentBuilder'ı belgeyle başlat
 DocumentBuilder builder = new DocumentBuilder(document);
+```
+
+## Adım 2: Yazı Tipi Vurgu İşaretini Ayarlayın
+
+DocumentBuilder hazır olduğundan artık yazı tipi vurgu işaretini ayarlayabilirsiniz. Bu örnekte "UnderSolidCircle" vurgu işaretini kullanacağız.
+
+```csharp
+// Yazı tipi vurgu işaretini ayarlama
 builder.Font.EmphasisMark = EmphasisMark.UnderSolidCircle;
+
+// Vurgu işaretini içeren metni yazın
 builder.Write("Emphasis text");
 builder.Writeln();
+```
+
+## 3. Adım: Biçimlendirmeyi Temizleyin ve Normal Metin Ekleyin
+
+Vurgu işaretini ayarladıktan sonra, herhangi bir vurgu olmadan normal bir metin eklemek isteyebilirsiniz. Bunun için biçimlendirmeyi temizlemeniz gerekir.
+
+```csharp
+// Yazı tipi formatını temizle
 builder.Font.ClearFormatting();
+
+// Normal metin yaz
 builder.Write("Simple text");
+```
+
+## Adım 4: Belgeyi Kaydedin
+
+İhtiyacınız olan tüm metni ve biçimlendirmeyi ekledikten sonra son adım belgeyi kaydetmektir. Belgenizi kaydetmek istediğiniz yolu ve dosya adını belirtin.
+
+```csharp
+// Belgeyi kaydet
 document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ```
 
 ## Çözüm
-Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesinde yazı tipi vurgu stilini nasıl ayarlayacağınızı öğrendiniz. Farklı vurgu stillerini deneyin ve belgelerinizdeki kelimeleri veya cümleleri vurgulamak için bu özelliği kullanın.
 
-### SSS'ler
+Ve işte karşınızda! Aspose.Words for .NET kullanarak bir Word belgesinde yazı tipi vurgu işaretlerini ayarlamak bu kadar basittir. Yalnızca birkaç satır kodla metninizin öne çıkmasını sağlayabilir ve belgelerinize profesyonel bir dokunuş katabilirsiniz. İhtiyaçlarınıza uyacak farklı vurgu işaretlerini ve stillerini denemekten çekinmeyin.
 
-#### S: Aspose.Words'ü kullanarak bir Word belgesindeki belirli bir yazı tipine nasıl vurgu işaretleri ekleyebilirim?
+## SSS'ler
 
-C: Aspose.Words'ü kullanarak bir Word belgesindeki belirli bir yazı tipine vurgu işaretleri eklemek için, istediğiniz yazı tipine gitmek ve uygun vurgu işaretlerini uygulamak için API'yi kullanabilirsiniz. Bu, seçilen yazı tipiyle metne vurgu işaretleri ekleyecektir.
+### Yazı tipi vurgu işaretleri nelerdir?
 
-#### S: Bir Word belgesindeki vurgu işaretlerinin stilini Aspose.Words ile değiştirmek mümkün müdür?
+Yazı tipi vurgu işaretleri, metnin öne çıkmasını sağlamak için metne eklenen özel simgelerdir. Noktalar, daireler ve diğer dekoratif işaretleri içerebilirler.
 
-C: Evet, Aspose.Words ile Word belgesindeki aksan işaretlerinin stilini değiştirebilirsiniz. API, vurgu işaretlerinin görünümünü özelleştirmek için renk, boyut, çizgi türü vb. stil özelliklerini ayarlamanıza olanak tanır.
+### Aspose.Words for .NET'te diğer vurgu işaretlerini kullanabilir miyim?
 
-#### S: Aspose.Words'ü kullanarak bir Word belgesindeki tüm aksan işaretlerini nasıl kaldırabilirim?
+ Evet, Aspose.Words for .NET çeşitli vurgu işaretlerini destekler. adresine başvurarak farklı seçenekleri keşfedebilirsiniz.[dokümantasyon](https://reference.aspose.com/words/net/).
 
-C: Aspose.Words kullanarak bir Word belgesindeki tüm aksan işaretlerini kaldırmak için, API'yi kullanarak belgeye göz atabilir, mevcut aksan işaretlerini tespit edebilir ve uygun yöntemleri kullanarak bunları kaldırabilirsiniz. Bu, belgedeki tüm vurgu işaretlerini kaldıracaktır.
+### Aspose.Words for .NET'in kullanımı ücretsiz mi?
 
-#### S: Word belgesindeki metnin belirli bir bölümüne vurgu işaretleri ekleyebilir miyim?
+ Aspose.Words for .NET tam işlevsellik için lisans gerektirir. Ücretsiz deneme alabilirsiniz[Burada](https://releases.aspose.com/) veya bir lisans satın alın[Burada](https://purchase.aspose.com/buy).
 
-C: Evet, Aspose.Words'ü kullanarak Word belgesindeki metnin belirli bir bölümüne vurgu işaretleri ekleyebilirsiniz. API'yi kullanarak istediğiniz metin aralığını seçebilir ve metnin o kısmına uygun vurgu işaretlerini ekleyebilirsiniz.
+### Aspose.Words for .NET için nasıl destek alabilirim?
 
-#### S: Vurgu işaretleri ihtiyaçlarıma göre özelleştirilebilir mi?
+ Aspose topluluğundan ve destek ekibinden destek alabilirsiniz.[destek forumu](https://forum.aspose.com/c/words/8).
 
-C: Evet, Aspose.Words kullanılarak aksan işaretleri ihtiyaçlarınıza göre özelleştirilebilir. Vurgu işaretlerinin renk, boyut, çizgi türü ve daha fazlası gibi stil özelliklerini biçimlendirme tercihlerinize uyacak şekilde ayarlayabilirsiniz.
+### Aspose.Words for .NET'i diğer .NET çerçeveleriyle kullanabilir miyim?
+
+Evet, Aspose.Words for .NET, .NET Core ve .NET 5/6 dahil olmak üzere çeşitli .NET çerçeveleriyle uyumludur.

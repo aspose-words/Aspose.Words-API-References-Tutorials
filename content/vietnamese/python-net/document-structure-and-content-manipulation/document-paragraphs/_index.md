@@ -12,7 +12,7 @@ Trong thời đại kỹ thuật số ngày nay, định dạng tài liệu đó
 
 ## Giới thiệu về Aspose.Words cho Python
 
-Aspose.Words for Python là một thư viện mạnh mẽ cho phép các nhà phát triển làm việc với các tài liệu Word bằng lập trình Python. Nó cung cấp nhiều tính năng để tạo, chỉnh sửa và định dạng tài liệu Word theo chương trình, mang đến sự tích hợp liền mạch thao tác tài liệu vào các ứng dụng Python của bạn.
+Aspose.Words for Python là một thư viện mạnh mẽ cho phép các nhà phát triển làm việc với các tài liệu Word bằng lập trình Python. Nó cung cấp nhiều tính năng để tạo, chỉnh sửa và định dạng tài liệu Word theo chương trình, cung cấp sự tích hợp liền mạch thao tác tài liệu vào các ứng dụng Python của bạn.
 
 ## Bắt đầu: Cài đặt Aspose.Words
 

@@ -12,7 +12,7 @@ Word belgelerindeki üstbilgiler ve altbilgiler, içeriğinize bağlam, markalam
 
 ## Aspose.Words for Python'a Başlarken
 
-Üstbilgi ve altbilgi manipülasyonuna dalmadan önce Aspose.Words for Python'u kurmanız gerekir. Bu adımları takip et:
+Üstbilgi ve altbilgi manipülasyonuna dalmadan önce Aspose.Words for Python'u kurmanız gerekir. Şu adımları izleyin:
 
 1. Kurulum: Aspose.Words for Python'u pip kullanarak yükleyin.
 
@@ -138,7 +138,7 @@ section.page_setup.odd_and_even_pages_header_footer = False
 
 ### Üstbilgilere ve altbilgilere resim ekleyebilir miyim?
 
- Evet, üstbilgilere ve altbilgilere aşağıdakileri kullanarak resim ekleyebilirsiniz:`add_picture` yöntem.
+ Evet, üstbilgilere ve altbilgilere aşağıdakileri kullanarak resim ekleyebilirsiniz:`add_picture` Yöntem.
 
 ### Tek ve çift sayfalar için farklı başlıklara sahip olmak mümkün müdür?
 

@@ -43,7 +43,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 ## Steg 2: Konfigurera laddningsalternativ med varning för återuppringning
 
- Konfigurera sedan laddningsalternativen för dokumentet. Detta innebär att skapa en`LoadOptions` objekt och ställa in dess`WarningCallback` fast egendom.
+ Konfigurera sedan laddningsalternativen för dokumentet. Detta innebär att skapa en`LoadOptions` objekt och ställa in dess`WarningCallback` egendom.
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions

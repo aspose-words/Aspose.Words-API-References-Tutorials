@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /pl/net/working-with-fonts/set-font-fallback-settings/
 ---
+## Wstęp
 
 Podczas pracy z dokumentami zawierającymi różnorodne elementy tekstowe, takie jak różne języki czy znaki specjalne, niezwykle istotne jest zapewnienie prawidłowego wyświetlania tych elementów. Aspose.Words dla .NET oferuje zaawansowaną funkcję zwaną Ustawieniami zastępczych czcionek, która pomaga w definiowaniu reguł zastępowania czcionek, gdy oryginalna czcionka nie obsługuje niektórych znaków. W tym przewodniku omówimy krok po kroku, jak skonfigurować ustawienia zastępczej czcionki przy użyciu Aspose.Words dla .NET.
 
@@ -49,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Krok 3: Skonfiguruj ustawienia czcionek
 
- Stwórz nowy`FontSettings` obiekt i załaduj ustawienia zastępczej czcionki z pliku XML. Ten plik XML zawiera reguły dotyczące zastępczych czcionek.
+ Utwórz nowy`FontSettings` obiekt i załaduj ustawienia zastępczej czcionki z pliku XML. Ten plik XML zawiera reguły dotyczące zastępczych czcionek.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -58,7 +59,7 @@ fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
 
 ## Krok 4: Zastosuj ustawienia czcionki do dokumentu
 
- Przypisz skonfigurowane`FontSettings` do dokumentu. Dzięki temu podczas renderowania dokumentu zostaną zastosowane reguły dotyczące czcionek zastępczych.
+ Przypisz skonfigurowane`FontSettings`do dokumentu. Dzięki temu podczas renderowania dokumentu zostaną zastosowane reguły dotyczące czcionek zastępczych.
 
 ```csharp
 doc.FontSettings = fontSettings;

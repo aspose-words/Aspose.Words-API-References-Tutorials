@@ -9,7 +9,7 @@ url: /hu/net/programming-with-document-properties/remove-personal-information/
 ---
 ## Bevezetés
 
-Halihó! Volt már olyan, hogy belefulladt a dokumentumkezelési feladatokba? Mindannyian ott voltunk. Legyen szó szerződésekről, jelentésekről vagy csak a mindennapi papírmunkáról, a folyamatot leegyszerűsítő eszköz életmentő. Írja be az Aspose.Words for .NET parancsot. A könyvtár ezen gyöngyszeme lehetővé teszi, hogy profi módon automatizálja a dokumentumok létrehozását, kezelését és konvertálását. Ma végigvezetjük egy rendkívül praktikus funkción: a személyes adatok eltávolításán egy dokumentumból. Merüljünk el!
+Szia! Volt már olyan, hogy belefulladt a dokumentumkezelési feladatokba? Mindannyian ott voltunk. Legyen szó szerződésekről, jelentésekről vagy csak a mindennapi papírmunkáról, a folyamatot leegyszerűsítő eszköz életmentő. Írja be az Aspose.Words for .NET parancsot. A könyvtár ezen gyöngyszeme lehetővé teszi, hogy profi módon automatizálja a dokumentumok létrehozását, kezelését és konvertálását. Ma végigvezetjük egy rendkívül praktikus funkción: a személyes adatok eltávolításán egy dokumentumból. Merüljünk el!
 
 ## Előfeltételek
 
@@ -76,7 +76,7 @@ A személyes adatok közé tartoznak a szerzők nevei, a dokumentum tulajdonság
 
 ### Az Aspose.Words for .NET ingyenes?
 
- Az Aspose.Words ajánlatok a[ingyenes próbaverzió](https://releases.aspose.com/) így kipróbálhatja, de a teljes funkcionalitáshoz licencet kell vásárolnia. Nézze meg a[árazás](https://purchase.aspose.com/buy) további részletekért.
+ Az Aspose.Words ajánlatok a[ingyenes próbaverzió](https://releases.aspose.com/) így kipróbálhatja, de a teljes funkcionalitáshoz licencet kell vásárolnia. Nézze meg a[árképzés](https://purchase.aspose.com/buy) további részletekért.
 
 ### Használhatom az Aspose.Words-t más dokumentumformátumokhoz?
 
@@ -84,7 +84,7 @@ Teljesen! Az Aspose.Words számos formátumot támogat, beleértve a DOCX, PDF, 
 
 ### Hogyan kaphatok támogatást, ha problémákba ütközöm?
 
- Látogassa meg az Aspose.Words-t[támogatói fórum](https://forum.aspose.com/c/words/8) segítségért bármilyen problémája vagy kérdése esetén.
+ Látogassa meg az Aspose.Words-t[támogatási fórum](https://forum.aspose.com/c/words/8) segítségért bármilyen problémája vagy kérdése esetén.
 
 ### Milyen egyéb funkciókat kínál az Aspose.Words?
 

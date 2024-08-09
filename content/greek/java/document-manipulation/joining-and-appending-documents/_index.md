@@ -116,7 +116,7 @@ srcDoc.getFirstSection().getHeadersFooters().linkToPrevious(false);
 dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-## συμπέρασμα
+## Σύναψη
 
 Το Aspose.Words για Java παρέχει ευέλικτα και ισχυρά εργαλεία για τη σύνδεση και την προσάρτηση εγγράφων, είτε χρειάζεται να διατηρήσετε τη μορφοποίηση, να χειριστείτε διαφορετικές ρυθμίσεις σελίδας ή να διαχειριστείτε κεφαλίδες και υποσέλιδα. Πειραματιστείτε με αυτές τις τεχνικές για να καλύψετε τις συγκεκριμένες ανάγκες επεξεργασίας εγγράφων σας.
 
@@ -140,4 +140,4 @@ dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 
 ### Τι γίνεται αν θέλω να συνδέσω/αποσυνδέσω κεφαλίδες και υποσέλιδα μεταξύ εγγράφων;
 
- Μπορείτε να συνδέσετε κεφαλίδες και υποσέλιδα με`linkToPrevious(true)` ή αποσυνδέστε τα με`linkToPrevious(false)` όπως απαιτείται.
+ Μπορείτε να συνδέσετε κεφαλίδες και υποσέλιδα με`linkToPrevious(true)` ή αποσυνδέστε τα με`linkToPrevious(false)` όπως χρειάζεται.

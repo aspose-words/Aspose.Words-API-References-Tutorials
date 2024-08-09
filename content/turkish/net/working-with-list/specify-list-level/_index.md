@@ -2,19 +2,41 @@
 title: Liste Düzeyini Belirtin
 linktitle: Liste Düzeyini Belirtin
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile bir Word belgesinde liste düzeyini nasıl belirleyeceğinizi öğrenin.
+description: Aspose.Words for .NET kullanarak Word belgelerinde çok düzeyli numaralandırılmış ve madde işaretli listeler oluşturmayı öğrenin. Adım adım kılavuz dahildir. .NET geliştiricileri için mükemmel.
 type: docs
 weight: 10
 url: /tr/net/working-with-list/specify-list-level/
 ---
+## giriiş
 
-Bu adım adım eğitimde, Aspose.Words for .NET'i kullanarak bir Word belgesinde liste düzeyini nasıl belirleyeceğinizi göstereceğiz. Sağlanan C# kaynak kodunu açıklayacağız ve bunu kendi projelerinizde nasıl uygulayacağınızı göstereceğiz.
+Merhaba kodlayıcı arkadaşım! .NET'i kullanarak Word belgelerinde dinamik ve karmaşık listeler oluşturmakla uğraştıysanız, sizi bir fırsat bekliyor. Bugün Aspose.Words for .NET dünyasına dalıyoruz. Özellikle liste düzeylerini belirtmeye odaklanacağız. Bunu, zahmetsizce profesyonel, gösterişli listeler oluşturmanıza olanak tanıyan belge oyununuzun seviyesini yükseltmek olarak düşünün. Bu kılavuzun sonunda, birden fazla düzeyde hem numaralı hem de madde işaretli listeler oluşturmanın net bir yoluna sahip olacaksınız. Hazır? Hadi hemen içeri girelim!
 
- Başlamak için geliştirme ortamınızda Aspose.Words for .NET'in kurulu ve yapılandırılmış olduğundan emin olun. Henüz yapmadıysanız, kitaplığı şuradan indirip yükleyin:[Aspose.Releases]https://releases.aspose.com/words/net/.
+## Önkoşullar
 
-## Adım 1: Belge ve Belge Oluşturucuyu Oluşturma
+İşin detayına dalmadan önce, ihtiyacımız olan her şeye sahip olduğumuzdan emin olalım. İşte hızlı bir kontrol listesi:
 
-Öncelikle yeni bir belge ve ilişkili bir belge oluşturucu oluşturun:
+1.  Aspose.Words for .NET: Aspose.Words for .NET kütüphanesinin kurulu olduğundan emin olun. İndirebilirsin[Burada](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: Visual Studio gibi bir IDE hayatınızı kolaylaştıracaktır.
+3. .NET Framework: Makinenizde .NET Framework'ün kurulu olduğundan emin olun.
+4. Temel C# Anlayışı: Bu eğitimde, temel C# programlama konusunda bilgili olduğunuz varsayılmaktadır.
+
+Herşeyi aldın mı? Harika! Ellerimizi kirletelim.
+
+## Ad Alanlarını İçe Aktar
+
+Öncelikle gerekli ad alanlarını içe aktarmamız gerekiyor. C# projenizi açın ve aşağıdaki kullanarak yönergeleri ekleyin:
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Bu, projenizde Aspose.Words ile çalışmaya zemin hazırlar.
+
+## Adım 1: Document ve DocumentBuilder'ı Kurma
+
+ Yeni bir belge oluşturarak başlayalım ve`DocumentBuilder` onunla çalışmaya itiraz edin.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -22,113 +44,83 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Adım 2: Numaralı Liste Oluşturma ve Uygulama
+## Adım 2: Numaralı Liste Oluşturma
 
-Daha sonra, Microsoft Word'ün liste şablonlarından birini temel alan numaralı bir liste oluşturun ve bunu belge oluşturucudaki geçerli paragrafa uygulayın:
+ Şimdi Microsoft Word liste şablonlarından birine dayalı olarak numaralandırılmış bir liste oluşturacağız ve bunu`DocumentBuilder`'şu anki paragraf.
 
 ```csharp
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 ```
 
-## Adım 3: Düzey Spesifikasyonlarını Listeleyin
+## 3. Adım: Birden Çok Liste Düzeyini Uygulama
 
- Belge oluşturucuyu kullanın`ListLevelNumber` liste düzeyini belirtme ve paragrafa metin ekleme özelliği:
+Aspose.Words bir liste için dokuz seviyeye kadar belirlemenize olanak tanır. Nasıl çalıştığını görmek için hepsini uygulayalım.
 
 ```csharp
 for (int i = 0; i < 9; i++)
 {
-     builder.ListFormat.ListLevelNumber = i;
-     builder.Writeln("Level " + i);
+    builder.ListFormat.ListLevelNumber = i;
+    builder.Writeln("Level " + i);
 }
 ```
 
-Liste düzeylerini belirtmek ve her düzeye metin eklemek için bu adımları tekrarlayın.
+Bu döngüde her paragraf için liste düzeyini belirliyoruz ve düzeyi belirten bir satır metin yazıyoruz.
 
-## Adım 4: Madde İşaretli Liste Oluşturma ve Uygulama
+## Adım 4: Madde İşaretli Liste Oluşturma
 
-Ayrıca Microsoft Word'ün liste şablonlarından birini kullanarak madde işaretli liste oluşturabilir ve uygulayabilirsiniz:
+Şimdi vites değiştirelim ve madde işaretli bir liste oluşturalım. Bu sefer farklı bir liste şablonu kullanacağız.
 
 ```csharp
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 ```
 
-## Adım 5: Madde İşaretli Liste Düzeylerine Metin Ekleme
+## Adım 5: Madde İşaretli Listeye Birden Çok Düzey Uygulama
 
- Kullan`ListLevelNumber` Madde işaretli liste düzeyini belirlemek ve metin eklemek için özelliği tekrar kullanın:
+Tıpkı numaralandırılmış listede olduğu gibi, madde işaretli listemize birden çok düzey uygulayacağız.
 
 ```csharp
 for (int i = 0; i < 9; i++)
 {
-     builder.ListFormat.ListLevelNumber = i;
-     builder.Writeln("Level " + i);
+    builder.ListFormat.ListLevelNumber = i;
+    builder.Writeln("Level " + i);
 }
 ```
 
-## Adım 6: Listeyi Biçimlendirmeyi Durdurun
+## Adım 6: Liste Biçimlendirmesini Durdurma
 
- Liste biçimlendirmesini durdurmak için`null` -e`List`belge oluşturucunun özelliği:
-
-```csharp
-builder. ListFormat. List = null;
-```
-
-## Adım 7: Değiştirilen belgeyi kaydetme
-
-Değiştirilen belgeyi kaydedin:
+Son olarak liste formatının normal metne dönmesini nasıl durdurabileceğimizi görelim.
 
 ```csharp
-builder.Document.Save(dataDir + "SpecifyListLevel.docx");
-```
-
-Bu yüzden ! Aspose.Words for .NET'i kullanarak bir Word belgesinde liste düzeyini başarıyla belirlediniz.
-
-### Liste düzeyini belirtmek için örnek kaynak kodu
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-// Microsoft Word liste şablonlarından birine dayalı numaralandırılmış bir liste oluşturun
-//ve bunu belge oluşturucunun geçerli paragrafına uygulayın.
-builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
-
-// Bu listede dokuz seviye var, hepsini deneyelim.
-for (int i = 0; i < 9; i++)
-{
-	builder.ListFormat.ListLevelNumber = i;
-	builder.Writeln("Level " + i);
-}
-
-// Microsoft Word liste şablonlarından birini temel alan madde işaretli bir liste oluşturun
-//ve bunu belge oluşturucunun geçerli paragrafına uygulayın.
-builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
-
-for (int i = 0; i < 9; i++)
-{
-	builder.ListFormat.ListLevelNumber = i;
-	builder.Writeln("Level " + i);
-}
-
-// Bu, liste biçimlendirmesini durdurmanın bir yoludur.
 builder.ListFormat.List = null;
-
-builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
-            
 ```
 
-### SSS'ler
+## Adım 7: Belgeyi Kaydetme
 
-#### S: Aspose.Words'te liste düzeyini nasıl belirleyebilirim?
+Bu kadar çalışmanın ardından sıra belgemizi kaydetmeye geldi. Anlamlı bir isimle kaydedelim.
 
- C: Aspose.Words'te liste düzeyini belirlemek için listenin bir örneğini oluşturmanız gerekir.`List` sınıfa gidin ve ona numaralandırılmış bir liste verin. Daha sonra şunu kullanabilirsiniz:`Paragraph.ListFormat.ListLevelNumber` Her liste öğesinin düzeyini belirtme özelliği. Liste öğelerinin istenen düzeye sahip olması için bu listeyi belgenizin bir bölümüyle ilişkilendirebilirsiniz.
+```csharp
+builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
+```
 
-#### S: Aspose.Words'te liste öğelerinin numaralandırma formatını değiştirmek mümkün mü?
+İşte bu kadar! Aspose.Words for .NET'i kullanarak karmaşık liste yapılarına sahip bir belge oluşturdunuz.
 
- C: Evet, Aspose.Words'te liste öğelerinin numaralandırma formatını değiştirebilirsiniz.`ListLevel` class bunun için çeşitli özellikler sunar, örneğin`ListLevel.NumberFormat`, `ListLevel.NumberStyle`, `ListLevel.NumberPosition`, vb. Liste öğelerinin numaralandırma biçimini (Arap rakamları, Romen rakamları, harfler vb.) ayarlamak için bu özellikleri kullanabilirsiniz.
+## Çözüm
 
-#### S: Aspose.Words'te numaralandırılmış bir listeye ek seviyeler ekleyebilir miyim?
+Word belgelerinde yapılandırılmış ve çok düzeyli listeler oluşturmak, okunabilirliği ve profesyonelliği önemli ölçüde artırabilir. Aspose.Words for .NET ile bu süreci otomatikleştirerek zamandan tasarruf edebilir ve tutarlılık sağlayabilirsiniz. Bu kılavuzun liste düzeylerini etkili bir şekilde nasıl belirleyeceğinizi anlamanıza yardımcı olduğunu umuyoruz. Denemeye devam edin ve bu aracın belge işleme ihtiyaçlarınız için ne kadar güçlü olabileceğini görün.
 
- C: Evet, Aspose.Words'te numaralandırılmış bir listeye ek seviyeler eklemek mümkündür.`ListLevel`class, listenin her düzeyi için biçimlendirme özelliklerini ayarlamanıza olanak tanır. Önek, sonek, hizalama, girinti vb. seçenekleri ayarlayabilirsiniz. Bu, birden fazla hiyerarşi düzeyine sahip listeler oluşturmanıza olanak tanır.
+## SSS'ler
 
+### Aspose.Words for .NET nedir?
+Aspose.Words for .NET, Word belgelerini C# dilinde programlı olarak oluşturmanıza, düzenlemenize, dönüştürmenize ve yazdırmanıza olanak tanıyan güçlü bir kitaplıktır.
 
+### Aspose.Words'ü ücretsiz kullanabilir miyim?
+Aspose.Words indirebileceğiniz ücretsiz bir deneme sürümü sunuyor[Burada](https://releases.aspose.com/) . Tam sürüm için satın alma seçeneklerine göz atabilirsiniz[Burada](https://purchase.aspose.com/buy).
+
+### Aspose.Words'ü kullanarak bir listede kaç seviye belirtebilirim?
+Aspose.Words'ü kullanarak bir listede en fazla dokuz seviye belirleyebilirsiniz.
+
+### Numaralandırılmış ve madde işaretli listeleri tek bir belgede karıştırmak mümkün mü?
+Evet, liste şablonunu gerektiği gibi değiştirerek farklı türdeki listeleri tek bir belgede karıştırabilirsiniz.
+
+### Aspose.Words for .NET hakkında daha fazla belgeyi nerede bulabilirim?
+ Ayrıntılı belgeleri bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).

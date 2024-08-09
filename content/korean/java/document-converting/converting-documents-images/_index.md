@@ -63,7 +63,7 @@ Aspose.Words for Java를 사용하면 문서를 Java의 이미지로 쉽게 변�
 ## FAQ
 
 ### 변환 중에 이미지 해상도를 어떻게 설정합니까?
- 이미지 해상도를 설정하려면`setResolution` 의 방법`ImageSaveOptions` 원하는 해상도를 DPI(인치당 도트 수) 단위로 지정합니다.
+ 이미지 해상도를 설정하려면`setResolution` 방법`ImageSaveOptions` 원하는 해상도를 DPI(인치당 도트 수) 단위로 지정합니다.
 
 ### 문서의 특정 페이지를 이미지로 변환할 수 있나요?
  예, 다음을 사용하여 페이지 범위를 지정할 수 있습니다.`setPageCount`그리고`setPageIndex` 방법`ImageSaveOptions` 특정 페이지를 이미지로 변환합니다.

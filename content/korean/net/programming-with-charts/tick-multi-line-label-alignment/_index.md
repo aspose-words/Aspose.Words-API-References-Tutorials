@@ -15,7 +15,7 @@ url: /ko/net/programming-with-charts/tick-multi-line-label-alignment/
 
 여러 줄의 라벨 정렬 세계로 뛰어들기 전에 먼저 모든 내용이 일렬로 정렬되어 있는지 확인하세요. 필요한 것은 다음과 같습니다.
 
-1.  .NET용 Aspose.Words: .NET용 Aspose.Words의 최신 버전이 있는지 확인하세요. 그렇지 않다면 할 수 있습니다[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+1.  .NET용 Aspose.Words: .NET용 Aspose.Words의 최신 버전이 있는지 확인하세요. 그렇지 않다면 할 수 있습니다[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 2. .NET 환경: 개발 환경이 .NET으로 설정되어 있는지 확인하세요.
 3. C#에 대한 기본 지식: C#에 대한 기본적인 이해가 있으면 이 여정이 더욱 원활해집니다.
 
@@ -116,7 +116,7 @@ doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
 
 ### .NET용 Aspose.Words를 무료로 사용할 수 있나요?
 
- Aspose는 다음을 제공합니다.[무료 시험판](https://releases.aspose.com/) 제품을 평가하는 데 사용할 수 있는 정보입니다. 전체 액세스를 위해서는 라이센스를 구매해야 합니다.
+ Aspose는 다음을 제공합니다.[무료 평가판](https://releases.aspose.com/) 제품을 평가하는 데 사용할 수 있는 정보입니다. 전체 액세스를 위해서는 라이센스를 구입해야 합니다.
 
 ### .NET용 Aspose.Words에 대한 지원은 어디서 받을 수 있나요?
 

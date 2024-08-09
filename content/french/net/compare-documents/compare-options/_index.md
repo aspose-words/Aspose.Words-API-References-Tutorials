@@ -9,7 +9,7 @@ url: /fr/net/compare-documents/compare-options/
 ---
 ## Introduction
 
-Bonjour, amis passionnés de technologie ! Avez-vous déjà eu besoin de comparer deux documents Word pour vérifier les différences ? Peut-être travaillez-vous sur un projet collaboratif et devez-vous assurer la cohérence entre plusieurs versions. Eh bien, aujourd'hui, nous plongeons dans le monde d'Aspose.Words pour .NET pour vous montrer exactement comment comparer les options dans un document Word. Ce didacticiel ne consiste pas seulement à écrire du code, mais également à comprendre le processus de manière amusante, engageante et détaillée. Alors, prenez votre boisson préférée et commençons !
+Bonjour, amis passionnés de technologie ! Avez-vous déjà eu besoin de comparer deux documents Word pour vérifier les différences ? Peut-être travaillez-vous sur un projet collaboratif et devez-vous garantir la cohérence entre plusieurs versions. Eh bien, aujourd'hui, nous plongeons dans le monde d'Aspose.Words pour .NET pour vous montrer exactement comment comparer les options dans un document Word. Ce didacticiel ne consiste pas seulement à écrire du code, mais également à comprendre le processus de manière amusante, engageante et détaillée. Alors, prenez votre boisson préférée et commençons !
 
 ## Conditions préalables
 
@@ -112,7 +112,7 @@ Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal" : "Documents
 
 ## Conclusion
 
-Et voila! Vous avez comparé avec succès deux documents Word à l'aide d'Aspose.Words pour .NET. Ce processus peut être une véritable bouée de sauvetage lorsque vous travaillez sur de grands projets et que vous devez garantir la cohérence et la précision. N'oubliez pas que l'essentiel est de configurer soigneusement vos options de comparaison afin d'adapter la comparaison à vos besoins spécifiques. Bon codage !
+Et voilà ! Vous avez comparé avec succès deux documents Word à l'aide d'Aspose.Words pour .NET. Ce processus peut être une véritable bouée de sauvetage lorsque vous travaillez sur de grands projets et que vous devez garantir la cohérence et la précision. N'oubliez pas que l'essentiel est de configurer soigneusement vos options de comparaison afin d'adapter la comparaison à vos besoins spécifiques. Bon codage !
 
 ## FAQ
 

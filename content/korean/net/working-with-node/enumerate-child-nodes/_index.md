@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /ko/net/working-with-node/enumerate-child-nodes/
 ---
+## 소개
 
 올바른 도구를 사용하면 프로그래밍 방식으로 문서 작업을 쉽게 수행할 수 있습니다. Aspose.Words for .NET은 개발자가 Word 문서를 쉽게 조작할 수 있게 해주는 강력한 라이브러리 중 하나입니다. 오늘은 Aspose.Words for .NET을 사용하여 Word 문서 내의 하위 노드를 열거하는 과정을 살펴보겠습니다. 이 단계별 가이드는 전제 조건부터 실제 사례까지 모든 것을 다루므로 프로세스에 대한 확실한 이해를 보장합니다.
 
@@ -86,19 +87,19 @@ foreach (Node child in children)
 
  더 자세한 문서와 고급 사용법을 보려면 다음을 방문하세요.[.NET API 문서용 Aspose.Words](https://reference.aspose.com/words/net/) . 추가 지원이 필요한 경우 다음을 확인하세요.[지원 포럼](https://forum.aspose.com/c/words/8).
 
-## 자주 묻는 질문
+## FAQ
 
-### 1. 단락에는 어떤 유형의 노드가 포함될 수 있습니까?
+### 단락에는 어떤 유형의 노드가 포함될 수 있나요?
 단락에는 런, 모양, 주석 및 기타 인라인 요소와 같은 노드가 포함될 수 있습니다.
 
-### 2. 기존 Word 문서를 어떻게 로드할 수 있나요?
+### 기존 Word 문서를 어떻게 로드할 수 있나요?
  다음을 사용하여 기존 문서를 로드할 수 있습니다.`Document doc = new Document("path/to/your/document.docx");`.
 
-### 3. Run 외에 다른 노드 유형도 조작할 수 있나요?
+### Run 외에 다른 노드 유형을 조작할 수 있나요?
  예, 모양, 주석 등과 같은 다양한 노드 유형을 확인하여 조작할 수 있습니다.`NodeType`.
 
-### 4. Aspose.Words for .NET을 사용하려면 라이선스가 필요합니까?
-무료 평가판으로 시작하거나 다음에서 임시 라이센스를 얻을 수 있습니다.[여기](https://purchase.aspose.com/temporary-license/).
+### .NET용 Aspose.Words를 사용하려면 라이선스가 필요합니까?
+ 무료 평가판으로 시작하거나 다음에서 임시 라이센스를 얻을 수 있습니다.[여기](https://purchase.aspose.com/temporary-license/).
 
-### 5. 더 많은 예제와 문서는 어디서 찾을 수 있나요?
- 방문하다[.NET API 문서용 Aspose.Words](https://reference.aspose.com/words/net/) 더 많은 예제와 자세한 문서를 보려면
+### 더 많은 예제와 문서는 어디에서 찾을 수 있나요?
+ 방문[.NET API 문서용 Aspose.Words](https://reference.aspose.com/words/net/)더 많은 예제와 자세한 문서를 보려면

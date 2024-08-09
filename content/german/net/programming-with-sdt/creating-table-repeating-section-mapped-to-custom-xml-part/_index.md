@@ -65,7 +65,7 @@ builder.EndTable();
 
 ## Schritt 4: Wiederholenden Abschnitt erstellen
 
- Ein ... kreieren`StructuredDocumentTag` (SDT) für den sich wiederholenden Abschnitt und ordnen Sie ihn den XML-Daten zu:
+ Erstellen Sie ein`StructuredDocumentTag` (SDT) für den sich wiederholenden Abschnitt und ordnen Sie ihn den XML-Daten zu:
 
 ```csharp
 StructuredDocumentTag repeatingSectionSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);

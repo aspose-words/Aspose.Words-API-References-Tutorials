@@ -56,7 +56,7 @@ paragraphFormat.KeepTogether = true;
 
 ## 步骤 3：插入段落
 
-现在，使用`WriteLn`的方法`DocumentBuilder`.
+现在，使用`WriteLn`方法`DocumentBuilder`.
 ```csharp
 builder.Writeln("A whole paragraph.");
 ```

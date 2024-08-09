@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/pdf-render-warnings/
 ---
-## Úvod
+## Zavedení
 
 Pokud pracujete s Aspose.Words for .NET, je správa upozornění na vykreslování PDF základním aspektem pro zajištění správného zpracování a uložení vašich dokumentů. V tomto komplexním průvodci si projdeme, jak zacházet s upozorněními na vykreslování PDF pomocí Aspose.Words. Na konci tohoto kurzu budete mít jasno v tom, jak implementovat tuto funkci do vašich projektů .NET.
 
@@ -138,7 +138,7 @@ MetafileRenderingOptions jsou nastavení, která určují, jak se metasoubory (j
 
 ### Q4: Kde najdu podporu pro Aspose.Words?
 
- Navštivte[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8) pro pomoc.
+ Navštivte[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8) o pomoc.
 
 ### Q5: Je možné získat dočasnou licenci pro Aspose.Words?
 

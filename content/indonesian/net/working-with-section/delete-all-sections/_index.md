@@ -9,7 +9,7 @@ url: /id/net/working-with-section/delete-all-sections/
 ---
 ## Perkenalan
 
-Pernah mencoba menghapus semua bagian dalam dokumen Word dan mendapati diri Anda terjebak dalam labirin langkah-langkah yang membingungkan? Kamu tidak sendiri. Banyak dari kita perlu memanipulasi dokumen Word karena berbagai alasan, dan terkadang, membersihkan semua bagian terasa seperti menavigasi labirin. Tapi jangan khawatir! Dengan Aspose.Words untuk .NET, tugas ini menjadi sangat mudah. Artikel ini akan memandu Anda melalui prosesnya, membaginya menjadi langkah-langkah sederhana dan mudah dikelola. Di akhir tutorial ini, Anda akan menjadi ahli dalam menangani bagian dalam dokumen Word menggunakan Aspose.Words untuk .NET.
+Pernah mencoba menghapus semua bagian dalam dokumen Word dan mendapati diri Anda terjebak dalam labirin langkah-langkah yang membingungkan? Anda tidak sendirian. Banyak dari kita perlu memanipulasi dokumen Word karena berbagai alasan, dan terkadang, membersihkan semua bagian terasa seperti menavigasi labirin. Tapi jangan khawatir! Dengan Aspose.Words untuk .NET, tugas ini menjadi sangat mudah. Artikel ini akan memandu Anda melalui prosesnya, membaginya menjadi langkah-langkah sederhana dan mudah dikelola. Di akhir tutorial ini, Anda akan menjadi ahli dalam menangani bagian dalam dokumen Word menggunakan Aspose.Words untuk .NET.
 
 ## Prasyarat
 
@@ -69,7 +69,7 @@ Dan itu dia! Menghapus semua bagian dalam dokumen Word menggunakan Aspose.Words 
  Anda dapat membelinya dari[Di Sini](https://purchase.aspose.com/buy).
 
 ### Apakah ada dukungan yang tersedia untuk Aspose.Words untuk .NET?
- Ya, Anda bisa mendapatkan dukungan dari komunitas Aspose[Di Sini](https://forum.aspose.com/c/words/8).
+Ya, Anda bisa mendapatkan dukungan dari komunitas Aspose[Di Sini](https://forum.aspose.com/c/words/8).
 
 ### Bagaimana jika saya memerlukan lisensi sementara?
  Anda bisa mendapatkan lisensi sementara dari[Di Sini](https://purchase.aspose.com/temporary-license/).

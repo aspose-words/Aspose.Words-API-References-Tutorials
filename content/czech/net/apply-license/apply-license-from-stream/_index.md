@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/apply-license/apply-license-from-stream/
 ---
-## Úvod
+## Zavedení
 
 Ahoj, kolegové kodéři! Pokud se ponoříte do světa Aspose.Words pro .NET, jedna z prvních věcí, kterou musíte udělat, je použít licenci, abyste odemkli plný potenciál knihovny. V této příručce vás provedeme tím, jak použít licenci ze streamu. Věřte mi, je to snazší, než to zní, a na konci tohoto tutoriálu budete mít svou aplikaci v provozu bez problémů. Jste připraveni začít? Pojďme rovnou do toho!
 
@@ -80,7 +80,7 @@ catch (Exception e)
 
 ## Závěr
 
- tady to máte! Použití licence ze streamu v Aspose.Words for .NET je jednoduchý proces, jakmile znáte kroky. Budete-li se řídit tímto průvodcem, zajistíte, že vaše aplikace bude moci využívat všechny možnosti Aspose.Words bez jakýchkoli omezení. Pokud narazíte na nějaké problémy, neváhejte se podívat na[dokumentace](https://reference.aspose.com/words/net/) nebo vyhledejte pomoc na[Fórum podpory](https://forum.aspose.com/c/words/8). Šťastné kódování!
+ tady to máte! Použití licence ze streamu v Aspose.Words for .NET je jednoduchý proces, jakmile znáte kroky. Budete-li se řídit tímto průvodcem, zajistíte, že vaše aplikace bude moci využívat všechny možnosti Aspose.Words bez jakýchkoli omezení. Pokud narazíte na nějaké problémy, neváhejte se podívat na[dokumentace](https://reference.aspose.com/words/net/) nebo vyhledejte pomoc na[fórum podpory](https://forum.aspose.com/c/words/8). Šťastné kódování!
 
 ## FAQ
 
@@ -91,7 +91,7 @@ Použití licence odemkne všechny funkce Aspose.Words a odstraní veškerá ome
  Ano, můžete získat a[dočasná licence](https://purchase.aspose.com/temporary-license/) pro účely hodnocení.
 
 ### Co když je můj licenční soubor poškozen?
- Ujistěte se, že váš licenční soubor je neporušený a nezměněný. Pokud problémy přetrvávají, kontaktujte[Podpěra, podpora](https://forum.aspose.com/c/words/8).
+ Ujistěte se, že váš licenční soubor je neporušený a nezměněný. Pokud problémy přetrvávají, kontaktujte[podpora](https://forum.aspose.com/c/words/8).
 
 ### Kam mám uložit svůj licenční soubor?
 Uložte jej na bezpečném místě v adresáři projektu a zajistěte, aby byl přístupný pro vaši aplikaci.

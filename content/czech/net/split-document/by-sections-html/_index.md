@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/split-document/by-sections-html/
 ---
-## Úvod
+## Zavedení
 
 Ponoříte se do světa automatizace dokumentů a chcete se naučit, jak rozdělit dokument Word podle sekcí do HTML pomocí Aspose.Words for .NET? Jste na správném místě! Tato příručka je vytvořena právě pro vás, obsahuje podrobné kroky, poutavá vysvětlení a přátelský tón. Vyhrňme si rukávy a vydejme se na tuto vzrušující cestu!
 

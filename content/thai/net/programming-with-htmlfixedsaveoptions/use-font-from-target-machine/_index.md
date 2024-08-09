@@ -107,7 +107,7 @@ System.Diagnostics.Process.Start(dataDir + "WorkingWithHtmlFixedSaveOptions.UseF
  การฝังแบบอักษรสามารถทำได้โดยใช้`FontSettings` คลาสใน Aspose.Words สำหรับ .NET อ้างถึง[เอกสารประกอบ](https://reference.aspose.com/words/net/) สำหรับรายละเอียดเพิ่มเติม
 
 ### มีวิธีดูตัวอย่างเอกสารก่อนบันทึกหรือไม่?
- ใช่ คุณสามารถใช้`DocumentRenderer` คลาสเพื่อดูตัวอย่างเอกสารก่อนที่จะบันทึก ตรวจสอบ Aspose.Words สำหรับ .NET[เอกสารประกอบ](https://reference.aspose.com/words/net/) สำหรับข้อมูลเพิ่มเติม.
+ ใช่ คุณสามารถใช้`DocumentRenderer` คลาสเพื่อดูตัวอย่างเอกสารก่อนที่จะบันทึก ตรวจสอบ Aspose.Words สำหรับ .NET[เอกสารประกอบ](https://reference.aspose.com/words/net/) สำหรับข้อมูลเพิ่มเติม
 
 ### ฉันสามารถปรับแต่งเอาต์พุต HTML เพิ่มเติมได้หรือไม่
  อย่างแน่นอน! ที่`HtmlFixedSaveOptions` คลาสมีคุณสมบัติต่าง ๆ เพื่อปรับแต่งเอาต์พุต HTML สำรวจ[เอกสารประกอบ](https://reference.aspose.com/words/net/) สำหรับตัวเลือกที่มีทั้งหมด

@@ -83,7 +83,7 @@ Depois de adicionar uma nova seção, podemos preenchê-la com conteúdo igual �
 
 ### Usando DocumentBuilder para a nova seção
 
-Para adicionar conteúdo à nova seção, você precisará definir o`DocumentBuilder` cursor para a nova seção:
+ Para adicionar conteúdo à nova seção, você precisará definir o`DocumentBuilder` cursor para a nova seção:
 
 ```csharp
 builder.MoveToSection(doc.Sections.IndexOf(sectionToAdd));
@@ -111,7 +111,7 @@ doc.Save("YourPath/YourDocument.docx");
 
 ## Perguntas frequentes
 
-### que é uma seção em um documento do Word?
+### O que é uma seção em um documento do Word?
 
 Uma seção em um documento do Word é um segmento que pode ter layout e formatação próprios, como cabeçalhos, rodapés e colunas. Ajuda a organizar o conteúdo em partes distintas.
 
@@ -129,4 +129,4 @@ Não, as seções não podem ser aninhadas umas nas outras. No entanto, você po
 
 ### Onde posso encontrar mais recursos no Aspose.Words?
 
- Para mais informações, você pode visitar o[Documentação Aspose.Words](https://reference.aspose.com/words/net/) ou o[Fórum de suporte](https://forum.aspose.com/c/words/8) para ajuda e discussões.
+ Para mais informações, você pode visitar o[Documentação Aspose.Words](https://reference.aspose.com/words/net/) ou o[fórum de suporte](https://forum.aspose.com/c/words/8) para ajuda e discussões.

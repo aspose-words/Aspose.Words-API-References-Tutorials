@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/join-new-page/
 ---
-## Úvod
+## Zavedení
 
 Při práci s velkými dokumenty nebo slučování více dokumentů do jednoho je zásadní zachování formátování a zajištění přehlednosti. Aspose.Words for .NET poskytuje výkonné nástroje pro programovou manipulaci s dokumenty Wordu a umožňuje vývojářům efektivně provádět složité úkoly.
 
@@ -15,7 +15,7 @@ Při práci s velkými dokumenty nebo slučování více dokumentů do jednoho j
 
 Před zahájením tohoto kurzu se ujistěte, že máte následující:
 - Visual Studio nainstalované na vašem počítači.
--  Aspose.Words pro knihovnu .NET. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words pro knihovnu .NET. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 - Základní znalost programování v C# a prostředí .NET.
 
 ## Importovat jmenné prostory

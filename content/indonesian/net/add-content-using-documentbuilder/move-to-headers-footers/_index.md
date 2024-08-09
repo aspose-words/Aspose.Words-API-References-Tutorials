@@ -9,7 +9,7 @@ url: /id/net/add-content-using-documentbuilder/move-to-headers-footers/
 ---
 ## Perkenalan
 
-Ketika membuat dan mengelola dokumen Word secara terprogram, Aspose.Words for .NET adalah alat canggih yang dapat menghemat banyak waktu dan tenaga. Dalam artikel ini, kita akan mempelajari cara berpindah ke header dan footer dalam dokumen Word menggunakan Aspose.Words untuk .NET. Fitur ini penting ketika Anda perlu menambahkan konten tertentu ke bagian header atau footer dokumen Anda. Baik Anda membuat laporan, faktur, atau dokumen apa pun yang memerlukan sentuhan profesional, memahami cara memanipulasi header dan footer sangatlah penting.
+Ketika membuat dan mengelola dokumen Word secara terprogram, Aspose.Words for .NET adalah alat canggih yang dapat menghemat banyak waktu dan tenaga. Pada artikel ini, kita akan mempelajari cara berpindah ke header dan footer dalam dokumen Word menggunakan Aspose.Words untuk .NET. Fitur ini penting ketika Anda perlu menambahkan konten tertentu ke bagian header atau footer dokumen Anda. Baik Anda membuat laporan, faktur, atau dokumen apa pun yang memerlukan sentuhan profesional, memahami cara memanipulasi header dan footer sangatlah penting.
 
 ## Prasyarat
 

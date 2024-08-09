@@ -15,7 +15,7 @@ Das programmgesteuerte Navigieren durch ein Word-Dokument kann ein bisschen wie 
 
 Bevor wir uns in den Code vertiefen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
 
-1.  Aspose.Words für .NET: Sie benötigen die Bibliothek Aspose.Words für .NET. Wenn Sie diese nicht haben, können Sie[hier herunterladen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET: Sie benötigen die Bibliothek Aspose.Words für .NET. Wenn Sie diese nicht haben, können Sie[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Eine .NET-Entwicklungsumgebung wie Visual Studio.
 3. Grundkenntnisse in C#: Das Verständnis der Grundlagen von C# hilft Ihnen, den Codeausschnitten und Erklärungen zu folgen.
 
@@ -111,7 +111,7 @@ In diesem Tutorial geht es um Lesezeichen, die sich über zwei nebeneinanderlieg
 
 ### Gibt es eine Testversion von Aspose.Words für .NET?
 
- Ja, du kannst[Kostenlose Testversion herunterladen](https://releases.aspose.com/) von der Aspose-Website, um die Funktionen der Bibliothek zu erkunden.
+ Ja, das können Sie[Kostenlose Testversion herunterladen](https://releases.aspose.com/) von der Aspose-Website, um die Funktionen der Bibliothek zu erkunden.
 
 ### Wie kann ich Unterstützung erhalten, wenn ich auf Probleme stoße?
 

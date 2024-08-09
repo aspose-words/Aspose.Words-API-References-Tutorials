@@ -75,7 +75,7 @@ W tym samouczku pokazaliśmy, jak wyłączyć podziały wierszy na stronach w do
  Tak, możesz wyłączyć podział wierszy dla określonych wierszy, uzyskując dostęp do żądanego wiersza i ustawiając go`AllowBreakAcrossPages`własność do`false`.
 
 ### Czy ta metoda działa w przypadku tabel ze scalonymi komórkami?  
- Tak, ta metoda działa w przypadku tabel ze scalonymi komórkami. Własność`AllowBreakAcrossPages` dotyczy całego wiersza, niezależnie od scalania komórek.
+ Tak, ta metoda działa w przypadku tabel ze scalonymi komórkami. Nieruchomość`AllowBreakAcrossPages` dotyczy całego wiersza, niezależnie od scalania komórek.
 
 ### Czy ta metoda zadziała, jeśli tabela jest zagnieżdżona w innej tabeli?  
 Tak, możesz uzyskać dostęp do zagnieżdżonych tabel i je modyfikować w ten sam sposób. Upewnij się, że poprawnie odwołujesz się do zagnieżdżonej tabeli poprzez jej indeks lub inne właściwości.

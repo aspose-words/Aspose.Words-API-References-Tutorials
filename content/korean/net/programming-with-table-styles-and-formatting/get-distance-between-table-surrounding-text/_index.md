@@ -95,4 +95,4 @@ Console.WriteLine("Distance from Left: " + table.DistanceLeft);
 Visual Studio의 NuGet 패키지 관리자를 통해 .NET용 Aspose.Words를 설치할 수 있습니다. 간단히 "Aspose.Words"를 검색하고 패키지를 설치하세요.
 
 ### Aspose.Words가 지원하는 문서 유형에 제한이 있나요?
- Aspose.Words는 DOCX, DOC, PDF, HTML 등을 포함한 광범위한 문서 형식을 지원합니다. 을 체크 해봐[선적 서류 비치](https://reference.aspose.com/words/net/) 지원되는 형식의 전체 목록을 보려면
+ Aspose.Words는 DOCX, DOC, PDF, HTML 등을 포함한 광범위한 문서 형식을 지원합니다. 확인해보세요[선적 서류 비치](https://reference.aspose.com/words/net/) 지원되는 형식의 전체 목록을 보려면

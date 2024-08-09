@@ -36,7 +36,7 @@ public void getFootnoteOptions(){
 
 ## 4. A lábjegyzet beállításainak módosítása
 
-Módosíthatja a lábjegyzet beállításait a megjelenésük és viselkedésük testreszabásához. Itt van, hogyan:
+Módosíthatja a lábjegyzet beállításait a megjelenésük és viselkedésük testreszabásához. Íme, hogyan:
 ```java
 @Test
 public void setFootnoteAndEndNotePosition() throws Exception {

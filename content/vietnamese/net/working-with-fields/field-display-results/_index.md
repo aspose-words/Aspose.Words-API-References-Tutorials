@@ -47,7 +47,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document document = new Document(dataDir + "Miscellaneous fields.docx");
 ```
 
- Ở bước này, thay thế`"YOUR DOCUMENTS DIRECTORY"` với đường dẫn nơi tài liệu của bạn được lưu trữ. Các`Document` lớp dùng để tải file Word vào bộ nhớ.
+ Ở bước này, thay thế`"YOUR DOCUMENTS DIRECTORY"` với đường dẫn nơi tài liệu của bạn được lưu trữ. các`Document` lớp dùng để tải file Word vào bộ nhớ.
 
 ## Bước 2: Cập nhật trường
 
@@ -60,7 +60,7 @@ Các trường trong tài liệu Word có thể động, nghĩa là chúng khôn
 document.UpdateFields();
 ```
 
- Các`UpdateFields` phương thức lặp qua tất cả các trường trong tài liệu và cập nhật chúng với dữ liệu mới nhất. Bước này rất quan trọng nếu các trường của bạn phụ thuộc vào nội dung động như ngày tháng hoặc phép tính.
+ các`UpdateFields` phương thức lặp qua tất cả các trường trong tài liệu và cập nhật chúng với dữ liệu mới nhất. Bước này rất quan trọng nếu các trường của bạn phụ thuộc vào nội dung động như ngày tháng hoặc phép tính.
 
 ## Bước 3: Hiển thị kết quả trường
 
@@ -76,7 +76,7 @@ foreach (Field field in document.Range.Fields)
 }
 ```
 
- Các`DisplayResult` tài sản của`Field` lớp trả về giá trị được định dạng của trường. Các`foreach` vòng lặp đi qua tất cả các trường trong tài liệu và in ra kết quả của chúng.
+ các`DisplayResult` tài sản của`Field` lớp trả về giá trị được định dạng của trường. các`foreach` vòng lặp đi qua tất cả các trường trong tài liệu và in ra kết quả của chúng.
 
 ## Phần kết luận
 
@@ -97,4 +97,4 @@ Bạn có thể cập nhật nhiều loại trường khác nhau, bao gồm trư
 Các trường yêu cầu người dùng nhập vào (như trường biểu mẫu) sẽ cần phải được điền thủ công hoặc thông qua mã bổ sung.
 
 ### Có thể hiển thị kết quả trường ở định dạng khác không?  
- Các`DisplayResult` thuộc tính cung cấp đầu ra được định dạng. Nếu bạn cần một định dạng khác, hãy xem xét xử lý bổ sung dựa trên yêu cầu của bạn.
+ các`DisplayResult` thuộc tính cung cấp đầu ra được định dạng. Nếu bạn cần một định dạng khác, hãy xem xét xử lý bổ sung dựa trên yêu cầu của bạn.

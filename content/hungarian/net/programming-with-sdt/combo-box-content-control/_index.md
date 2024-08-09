@@ -33,7 +33,7 @@ Rendben, térjünk rá a szórakoztató részre – a kódolásra! A folyamatot 
 
 ## 1. lépés: Állítsa be projektjét
 
-Először is állítson be egy új projektet az IDE-ben. Itt van, hogyan:
+Először is állítson be egy új projektet az IDE-ben. Íme, hogyan:
 
 - Nyissa meg a Visual Studio-t.
 - Hozzon létre egy új C# konzolalkalmazás-projektet.
@@ -68,7 +68,7 @@ StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, Mar
 A kombinált doboz nem sok hasznot hoz, ha nem választhat elemeket. Adjunk hozzá néhány elemet.
 
 ```csharp
-// Tételek hozzáadása a ComboBoxhoz
+// Adjon hozzá elemeket a ComboBoxhoz
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));
 sdt.ListItems.Add(new SdtListItem("Item 1", "1"));
 sdt.ListItems.Add(new SdtListItem("Item 2", "2"));

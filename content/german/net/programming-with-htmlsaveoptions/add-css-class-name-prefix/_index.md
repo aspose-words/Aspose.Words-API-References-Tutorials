@@ -15,7 +15,7 @@ Willkommen! Wenn Sie in die Welt von Aspose.Words für .NET eintauchen, erwartet
 
 Bevor wir beginnen, stellen Sie sicher, dass Sie Folgendes haben:
 
--  Aspose.Words für .NET: Wenn Sie es noch nicht installiert haben,[hier herunterladen](https://releases.aspose.com/words/net/).
+-  Aspose.Words für .NET: Wenn Sie es noch nicht installiert haben,[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 - Entwicklungsumgebung: Visual Studio oder eine andere C#-IDE.
 -  Ein Word-Dokument: Wir verwenden ein Dokument namens`Rendering.docx`. Platzieren Sie es in Ihrem Projektverzeichnis.
 
@@ -120,10 +120,10 @@ Und da haben Sie es! Indem Sie diese Schritte befolgen, haben Sie Ihrer HTML-Aus
  Der`CssClassNamePrefix`-Eigenschaft funktioniert mit externem CSS. Für Inline-CSS benötigen Sie einen anderen Ansatz.
 
 ### Wie kann ich andere HTML-Speicheroptionen einbinden?
- Sie können verschiedene Eigenschaften von`HtmlSaveOptions` um Ihre HTML-Ausgabe anzupassen. Überprüfen Sie die[Dokumentation](https://reference.aspose.com/words/net/) für mehr Details.
+ Sie können verschiedene Eigenschaften von`HtmlSaveOptions` um Ihre HTML-Ausgabe anzupassen. Überprüfen Sie die[Dokumentation](https://reference.aspose.com/words/net/) für weitere Details.
 
 ### Ist es möglich, das HTML in einem Stream zu speichern?
- Absolut! Sie können das Dokument in einem Stream speichern, indem Sie das Stream-Objekt an den`Save` Methode.
+ Absolut! Sie können das Dokument in einem Stream speichern, indem Sie das Stream-Objekt an den`Save` Verfahren.
 
 ### Wie erhalte ich Unterstützung, wenn Probleme auftreten?
  Unterstützung erhalten Sie vom[Aspose-Forum](https://forum.aspose.com/c/words/8).

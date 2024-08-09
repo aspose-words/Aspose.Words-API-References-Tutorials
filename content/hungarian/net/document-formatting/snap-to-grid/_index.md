@@ -137,4 +137,4 @@ Igen, bár ideiglenes licencet is használhat az értékeléshez, a teljes hozz�
 Nem, a Snap to Grid engedélyezése nincs jelentős hatással a dokumentum teljesítményére.
 
 ### Hol találhatok további információt az Aspose.Words for .NET-ről?
- Meglátogatni a[dokumentáció](https://reference.aspose.com/words/net/)részletes információkért és példákért.
+ Látogassa meg a[dokumentáció](https://reference.aspose.com/words/net/)részletes információkért és példákért.

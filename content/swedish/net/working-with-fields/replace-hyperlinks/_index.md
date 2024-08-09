@@ -39,7 +39,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Hyperlinks.docx");
 ```
 
- Byta ut`"Hyperlinks.docx"` med sökvägen till ditt faktiska dokument.
+ Ersätta`"Hyperlinks.docx"` med sökvägen till ditt faktiska dokument.
 
 ## Steg 2: Iterera genom fält
 
@@ -71,7 +71,7 @@ Slutligen, spara det ändrade dokumentet med ersatta hyperlänkar:
 doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
 ```
 
- Byta ut`"WorkingWithFields.ReplaceHyperlinks.docx"` med önskad sökväg för utdatafilen.
+ Ersätta`"WorkingWithFields.ReplaceHyperlinks.docx"` med önskad sökväg för utdatafilen.
 
 ## Slutsats
 

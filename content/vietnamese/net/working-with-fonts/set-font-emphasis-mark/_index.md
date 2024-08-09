@@ -2,83 +2,105 @@
 title: Đặt dấu nhấn mạnh phông chữ
 linktitle: Đặt dấu nhấn mạnh phông chữ
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách đặt kiểu nhấn mạnh phông chữ trong tài liệu Word bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách đặt dấu nhấn mạnh phông chữ trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết này. Hoàn hảo cho các nhà phát triển .NET.
 type: docs
 weight: 10
 url: /vi/net/working-with-fonts/set-font-emphasis-mark/
 ---
+## Giới thiệu
 
-Trong hướng dẫn này, chúng tôi sẽ chỉ cho bạn cách đặt kiểu nhấn mạnh phông chữ trong tài liệu Word bằng Aspose.Words cho .NET. Nhấn mạnh phông chữ được sử dụng để làm nổi bật các từ hoặc cụm từ nhất định trong văn bản.
+Trong hướng dẫn hôm nay, chúng ta sẽ đi sâu vào cách đặt dấu nhấn mạnh phông chữ trong tài liệu Word bằng Aspose.Words cho .NET. Cho dù bạn đang tìm cách gạch chân văn bản cụ thể bằng một dấu duy nhất hay chỉ đơn giản là làm nổi bật một số từ nhất định, hướng dẫn này sẽ giúp bạn. Vì vậy, hãy thắt dây an toàn và bắt đầu!
 
 ## Điều kiện tiên quyết
-Trước khi bắt đầu, hãy đảm bảo bạn có các mục sau:
-- Kiến thức làm việc về ngôn ngữ lập trình C#
-- Thư viện Aspose.Words cho .NET được cài đặt trong dự án của bạn
 
-## Bước 1: Xác định thư mục tài liệu
-Bắt đầu bằng cách đặt đường dẫn thư mục đến vị trí tài liệu Word của bạn. Thay thế`"YOUR DOCUMENT DIRECTORY"` trong mã với đường dẫn thích hợp.
+Trước khi chúng ta đi sâu vào chi tiết quan trọng, hãy đảm bảo bạn đã đánh dấu các điều kiện tiên quyết sau:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+-  Aspose.Words for .NET Library: Đảm bảo bạn đã cài đặt thư viện Aspose.Words for .NET. Bạn có thể tải nó xuống từ[đây](https://releases.aspose.com/words/net/).
+- Môi trường phát triển: Môi trường phát triển làm việc như Visual Studio.
+- .NET Framework: Đảm bảo bạn đã cài đặt .NET Framework.
 
-## Bước 2: Tạo và tùy chỉnh tài liệu
- Tạo một thể hiện của`Document` lớp và một liên kết`DocumentBuilder` để xây dựng nội dung tài liệu. Sử dụng`Font.EmphasisMark` thuộc tính để đặt kiểu nhấn mạnh phông chữ thành`EmphasisMark.UnderSolidCircle` . Sau đó sử dụng`Write`Và`Writeln` các phương pháp của`DocumentBuilder` để thêm văn bản với điểm nhấn phông chữ được chỉ định.
+## Nhập không gian tên
+
+Để làm việc với Aspose.Words cho .NET, bạn cần nhập các vùng tên cần thiết. Thêm những thứ này vào đầu tệp mã của bạn:
 
 ```csharp
-Document document = new Document();
-DocumentBuilder builder = new DocumentBuilder(document);
-builder.Font.EmphasisMark = EmphasisMark.UnderSolidCircle;
-builder.Write("Emphasized text");
-builder. Writen();
-builder.Font.ClearFormatting();
-builder.Write("Simple text");
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Bước 3: Lưu tài liệu
- Lưu tài liệu bằng cách sử dụng`Save` phương pháp của`Document` với đường dẫn và tên file thích hợp.
+Bây giờ, hãy chia quy trình thành các bước đơn giản. Thực hiện cẩn thận từng bước để đặt dấu nhấn phông chữ trong tài liệu Word của bạn.
 
-```csharp
-document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
-```
+## Bước 1: Khởi tạo Document và DocumentBuilder
 
-### Mã nguồn mẫu cho Đặt dấu nhấn mạnh phông chữ bằng Aspose.Words cho .NET 
+Trước tiên, bạn cần khởi tạo một tài liệu mới và DocumentBuilder. Lớp DocumentBuilder cung cấp các phương thức để chèn văn bản và các thành phần khác vào tài liệu.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu của bạn
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
+// Khởi tạo một tài liệu mới
 Document document = new Document();
+
+// Khởi tạo DocumentBuilder với tài liệu
 DocumentBuilder builder = new DocumentBuilder(document);
+```
+
+## Bước 2: Đặt dấu nhấn mạnh phông chữ
+
+Với DocumentBuilder đã sẵn sàng, giờ đây bạn có thể đặt dấu nhấn mạnh phông chữ. Trong ví dụ này, chúng tôi sẽ sử dụng dấu nhấn mạnh "UnderSolidCircle".
+
+```csharp
+// Đặt dấu nhấn mạnh phông chữ
 builder.Font.EmphasisMark = EmphasisMark.UnderSolidCircle;
+
+// Viết văn bản có dấu nhấn
 builder.Write("Emphasis text");
 builder.Writeln();
+```
+
+## Bước 3: Xóa định dạng và thêm văn bản thông thường
+
+Sau khi đặt dấu nhấn mạnh, bạn có thể muốn thêm một số văn bản thông thường mà không cần nhấn mạnh. Để làm được điều đó, bạn cần phải xóa định dạng.
+
+```csharp
+// Xóa định dạng phông chữ
 builder.Font.ClearFormatting();
+
+// Viết văn bản thông thường
 builder.Write("Simple text");
+```
+
+## Bước 4: Lưu tài liệu
+
+Khi bạn đã thêm tất cả văn bản và định dạng mình cần, bước cuối cùng là lưu tài liệu. Chỉ định đường dẫn và tên tệp nơi bạn muốn lưu tài liệu của mình.
+
+```csharp
+// Lưu tài liệu
 document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ```
 
 ## Phần kết luận
-Trong hướng dẫn này, bạn đã học cách đặt kiểu nhấn mạnh phông chữ trong tài liệu Word bằng Aspose.Words cho .NET. Thử nghiệm các kiểu nhấn mạnh khác nhau và sử dụng tính năng này để đánh dấu các từ hoặc cụm từ trong tài liệu của bạn.
 
-### Câu hỏi thường gặp
+Và bạn có nó! Đặt dấu nhấn phông chữ trong tài liệu Word bằng Aspose.Words cho .NET chỉ đơn giản như vậy. Chỉ với một vài dòng mã, bạn có thể làm cho văn bản của mình nổi bật và thêm nét chuyên nghiệp vào tài liệu của mình. Đừng ngần ngại thử nghiệm các dấu nhấn và phong cách khác nhau để phù hợp với nhu cầu của bạn.
 
-#### Hỏi: Làm cách nào tôi có thể thêm dấu trọng âm vào một phông chữ cụ thể trong tài liệu Word bằng Aspose.Words?
+## Câu hỏi thường gặp
 
-Trả lời: Để thêm dấu trọng âm vào một phông chữ cụ thể trong tài liệu Word bằng Aspose.Words, bạn có thể sử dụng API để điều hướng đến phông chữ mong muốn và áp dụng các dấu trọng âm thích hợp. Điều này sẽ thêm dấu nhấn vào văn bản với phông chữ đã chọn.
+### Dấu nhấn mạnh phông chữ là gì?
 
-#### Hỏi: Có thể thay đổi kiểu dấu trọng âm trong tài liệu Word bằng Aspose.Words không?
+Dấu nhấn phông chữ là các ký hiệu đặc biệt được thêm vào văn bản để làm nổi bật văn bản. Chúng có thể bao gồm các dấu chấm, hình tròn và các dấu trang trí khác.
 
-Đáp: Có, với Aspose.Words, bạn có thể thay đổi kiểu dấu trọng âm trong tài liệu Word. API cho phép bạn điều chỉnh các thuộc tính kiểu như màu sắc, kích thước, kiểu đường, v.v., để tùy chỉnh giao diện của dấu nhấn.
+### Tôi có thể sử dụng các dấu nhấn mạnh khác với Aspose.Words cho .NET không?
 
-#### Câu hỏi: Làm cách nào tôi có thể xóa tất cả dấu trọng âm khỏi tài liệu Word bằng Aspose.Words?
+ Có, Aspose.Words for .NET hỗ trợ nhiều dấu nhấn mạnh khác nhau. Bạn có thể khám phá các lựa chọn khác nhau bằng cách tham khảo[tài liệu](https://reference.aspose.com/words/net/).
 
-Trả lời: Để xóa tất cả các dấu trọng âm khỏi tài liệu Word bằng Aspose.Words, bạn có thể sử dụng API để duyệt tài liệu, phát hiện các dấu trọng âm hiện có và xóa chúng bằng các phương pháp thích hợp. Điều này sẽ loại bỏ tất cả các dấu nhấn mạnh khỏi tài liệu.
+### Aspose.Words cho .NET có được sử dụng miễn phí không?
 
-#### Hỏi: Tôi có thể thêm dấu trọng âm vào một phần văn bản cụ thể trong tài liệu Word không?
+ Aspose.Words for .NET yêu cầu giấy phép để có đầy đủ chức năng. Bạn có thể dùng thử miễn phí[đây](https://releases.aspose.com/) hoặc mua giấy phép[đây](https://purchase.aspose.com/buy).
 
-Trả lời: Có, bạn có thể thêm dấu trọng âm vào một phần văn bản cụ thể trong tài liệu Word bằng Aspose.Words. Bạn có thể chọn phạm vi văn bản mong muốn bằng API và thêm các dấu nhấn thích hợp vào phần văn bản đó.
+### Làm cách nào tôi có thể nhận được hỗ trợ cho Aspose.Words cho .NET?
 
-#### Hỏi: Dấu trọng âm có thể được tùy chỉnh theo nhu cầu của tôi không?
+ Bạn có thể nhận được hỗ trợ từ cộng đồng Aspose và nhóm hỗ trợ bằng cách truy cập[diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8).
 
-Đáp: Có, dấu trọng âm có thể được tùy chỉnh theo nhu cầu của bạn bằng Aspose.Words. Bạn có thể điều chỉnh các thuộc tính kiểu của dấu trọng âm, chẳng hạn như màu sắc, kích thước, kiểu đường, v.v. để phù hợp với tùy chọn định dạng của bạn.
+### Tôi có thể sử dụng Aspose.Words cho .NET với các khung .NET khác không?
+
+Có, Aspose.Words for .NET tương thích với nhiều khung .NET khác nhau, bao gồm .NET Core và .NET 5/6.

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/avoid-embedding-core-fonts/
 ---
-## Úvod
+## Zavedení
 
 Stává se vám někdy, že se škrábete na hlavě a říkáte si, proč jsou vaše soubory PDF tak velké? No, nejsi sám. Jedním společným viníkem je vkládání základních písem, jako jsou Arial a Times New Roman. Naštěstí má Aspose.Words pro .NET šikovný způsob, jak tento problém vyřešit. V tomto tutoriálu vám ukážu, jak zmenšit velikost souboru PDF tím, že se vyhnete vkládání těchto základních písem. Pojďme se rovnou ponořit!
 
@@ -15,7 +15,7 @@ Stává se vám někdy, že se škrábete na hlavě a říkáte si, proč jsou v
 
 Než se vydáme na tuto vzrušující cestu, ujistěte se, že máte vše, co potřebujete. Zde je rychlý kontrolní seznam:
 
--  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Pokud ji ještě nemáte, můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Pokud ji ještě nemáte, můžete si ji stáhnout[zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Budete potřebovat vývojové prostředí, jako je Visual Studio.
 - Dokument aplikace Word: Pro tento výukový program budeme používat dokument aplikace Word (např. „Rendering.docx“).
 - Základní znalost C#: Základní znalost C# vám pomůže pokračovat.
@@ -92,7 +92,7 @@ Ano, základní písma jako Arial a Times New Roman jsou obecně dostupná na v�
  Můžete si přizpůsobit`PdfSaveOptions`podle potřeby vložit konkrétní písma.
 
 ### Je Aspose.Words for .NET zdarma k použití?
- Aspose.Words for .NET vyžaduje licenci. Můžete získat bezplatnou zkušební verzi[tady](https://releases.aspose.com/).
+ Aspose.Words for .NET vyžaduje licenci. Můžete získat bezplatnou zkušební verzi[zde](https://releases.aspose.com/).
 
 ### Kde najdu další dokumentaci k Aspose.Words pro .NET?
- Můžete najít podrobnou dokumentaci[tady](https://reference.aspose.com/words/net/).
+ Můžete najít podrobnou dokumentaci[zde](https://reference.aspose.com/words/net/).

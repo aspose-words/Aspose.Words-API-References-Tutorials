@@ -104,7 +104,7 @@ System.Diagnostics.Process.Start(dataDir + "WorkingWithHtmlFixedSaveOptions.UseF
 如果目标机器没有所需的字体，文档可能无法按预期呈现。必要时嵌入字体总是一个好主意。
 
 ### 如何在文档中嵌入字体？
-嵌入字体可以使用`FontSettings`Aspose.Words for .NET 中的类。请参阅[文档](https://reference.aspose.com/words/net/)更多细节。
+嵌入字体可以使用`FontSettings`Aspose.Words for .NET 中的类。请参阅[文档](https://reference.aspose.com/words/net/)了解更多详情。
 
 ### 有没有办法在保存之前预览文档？
 是的，您可以使用`DocumentRenderer`类用于在保存之前预览文档。查看 Aspose.Words for .NET[文档](https://reference.aspose.com/words/net/)了解更多信息。

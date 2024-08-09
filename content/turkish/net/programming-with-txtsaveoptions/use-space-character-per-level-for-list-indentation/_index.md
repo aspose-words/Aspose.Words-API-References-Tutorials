@@ -47,7 +47,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Adım 2: Birden Çok Girinti Düzeyinde Bir Liste Oluşturun
 
- İle`DocumentBuilder` Örneğin, artık farklı girinti düzeylerine sahip bir liste oluşturabilirsiniz. Kullan`ListFormat` Numaralandırmayı uygulamak ve liste öğelerini gerektiği gibi girintilemek için kullanılan özellik.
+ ile`DocumentBuilder` Örneğin, artık farklı girinti düzeylerine sahip bir liste oluşturabilirsiniz. Kullanın`ListFormat` Numaralandırmayı uygulamak ve liste öğelerini gerektiği gibi girintilemek için kullanılan özellik.
 
 ```csharp
 // Üç düzeyde girintiye sahip bir liste oluşturun

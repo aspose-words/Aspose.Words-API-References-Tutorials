@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/link-headers-footers/
 ---
-## Úvod
+## Zavedení
 
 tomto tutoriálu prozkoumáme, jak propojit záhlaví a zápatí mezi dokumenty pomocí Aspose.Words for .NET. Tato funkce vám umožňuje zachovat konzistenci a kontinuitu mezi více dokumenty efektivní synchronizací záhlaví a zápatí.
 

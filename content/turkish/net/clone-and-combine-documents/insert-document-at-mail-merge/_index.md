@@ -58,7 +58,7 @@ mainDoc.MailMerge.FieldMergingCallback = new InsertDocumentAtMailMergeHandler();
 
 ## Adım 4: Adres Mektup Birleştirmeyi Yürütme
 
-Şimdi adres-mektup birleştirmeyi yürütmenin zamanı geldi. Sihir yapılan yer burasıdır. Birleştirme alanını ve bu alana eklenmesi gereken belgeyi belirteceksiniz.
+Şimdi adres-mektup birleştirmeyi yürütmenin zamanı geldi. Sihrin gerçekleştiği yer burasıdır. Birleştirme alanını ve bu alana eklenmesi gereken belgeyi belirteceksiniz.
 
 ```csharp
 mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { dataDir + "Document insertion 2.docx" });
@@ -134,12 +134,12 @@ private static void InsertDocument(Node insertionDestination, Document docToInse
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak adres-mektup birleştirme işlemi sırasında belgeleri belirli alanlara başarıyla eklediniz. Bu güçlü özellik, özellikle büyük hacimli belgelerle uğraşırken, zamandan ve emekten büyük miktarda tasarruf etmenizi sağlayabilir. Bunu, tüm ağır yükleri sizin için halledecek kişisel bir asistana sahip olmak gibi düşünün. Öyleyse devam edin ve deneyin. Mutlu kodlama!
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak adres-mektup birleştirme işlemi sırasında belgeleri belirli alanlara başarıyla eklediniz. Bu güçlü özellik, özellikle büyük hacimli belgelerle uğraşırken, zamandan ve emekten büyük miktarda tasarruf etmenizi sağlayabilir. Bunu, tüm ağır yükleri sizin için halledecek kişisel bir asistana sahip olmak gibi düşünün. Öyleyse devam edin ve deneyin. Mutlu kodlama!
 
 ## SSS'ler
 
 ### Farklı birleştirme alanlarına birden fazla belge ekleyebilir miyim?
-Evet yapabilirsin. Uygun birleştirme alanlarını ve karşılık gelen belge yollarını belirtmeniz yeterlidir.`MailMerge.Execute` yöntem.
+Evet yapabilirsin. Uygun birleştirme alanlarını ve karşılık gelen belge yollarını belirtmeniz yeterlidir.`MailMerge.Execute` Yöntem.
 
 ### Eklenen belgeyi ana belgeden farklı biçimlendirmek mümkün müdür?
  Kesinlikle! Şunu kullanabilirsiniz:`ImportFormatMode` parametresi`NodeImporter` biçimlendirmeyi kontrol etmek için.

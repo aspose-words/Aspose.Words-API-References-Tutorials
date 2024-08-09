@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Bontsuk le a folyamatot egyszerű, kezelhető lépésekre. Kész? Gyerünk!
+Bontsuk le a folyamatot egyszerű, kezelhető lépésekre. Kész? Menjünk!
 
 ## 1. lépés: Hozzon létre egy új dokumentumot
 

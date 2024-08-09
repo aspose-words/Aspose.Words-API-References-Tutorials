@@ -9,7 +9,7 @@ url: /vi/net/basic-conversions/pdf-to-docx/
 ---
 ## Giới thiệu
 
-Này, người đam mê công nghệ! Bạn đã bao giờ thấy mình bị vướng vào trang web chuyển đổi định dạng tệp, đặc biệt là khi xử lý các tài liệu PDF và Word chưa? Nếu có, bạn không đơn độc. Tất cả chúng tôi đều đã ở đó, vò đầu bứt tai, cố gắng tìm ra cách tốt nhất để chuyển đổi PDF thành tài liệu Word (Docx). May mắn thay, Aspose.Words for .NET xuất hiện như một siêu anh hùng, khiến nhiệm vụ này trở nên dễ dàng như ăn bánh. Hôm nay, chúng ta sẽ đi sâu vào hướng dẫn chi tiết từng bước về cách lưu định dạng PDF sang Word bằng Aspose.Words cho .NET. Sẵn sàng để đơn giản hóa cuộc sống của bạn? Bắt đầu nào!
+Này, người đam mê công nghệ! Bạn đã bao giờ thấy mình bị vướng vào trang web chuyển đổi định dạng tệp, đặc biệt là khi xử lý các tài liệu PDF và Word chưa? Nếu có, bạn không đơn độc. Tất cả chúng tôi đều đã ở đó, vò đầu bứt tai, cố gắng tìm ra cách tốt nhất để chuyển đổi PDF thành tài liệu Word (Docx). May mắn thay, Aspose.Words for .NET xuất hiện như một siêu anh hùng, khiến nhiệm vụ này trở nên dễ dàng như ăn bánh. Hôm nay, chúng ta sẽ đi sâu vào hướng dẫn chi tiết từng bước về cách lưu định dạng PDF sang Word bằng Aspose.Words cho .NET. Sẵn sàng để đơn giản hóa cuộc sống của bạn? Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 

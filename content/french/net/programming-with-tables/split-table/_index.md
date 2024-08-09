@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithTables.SplitTable.docx");
 
 ## Conclusion
 
-Et voila! En suivant ces étapes, vous pouvez facilement diviser un tableau dans un document Word à l'aide d'Aspose.Words pour .NET. Cette approche vous aide à gérer plus efficacement les grands tableaux, améliorant ainsi la lisibilité et l’organisation de vos documents. Essayez-le et voyez comment il simplifie votre travail avec les tableaux dans les documents Word.
+Et voilà ! En suivant ces étapes, vous pouvez facilement diviser un tableau dans un document Word à l'aide d'Aspose.Words pour .NET. Cette approche vous aide à gérer plus efficacement les grands tableaux, améliorant ainsi la lisibilité et l’organisation de vos documents. Essayez-le et voyez comment il simplifie votre travail avec les tableaux dans les documents Word.
 
 ## FAQ
 

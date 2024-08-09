@@ -176,4 +176,4 @@ public void setCompressionLevel() throws Exception
 
 ### 以 OOXML 格式保存文档时的默认压缩级别是多少？
 
-使用 Aspose.Words for Java 以 OOXML 格式保存文档时的默认压缩级别是`NORMAL`。您可以将压缩级别更改为`SUPER_FAST`或者`MAXIMUM`如所须。
+使用 Aspose.Words for Java 以 OOXML 格式保存文档时的默认压缩级别是`NORMAL`。您可以将压缩级别更改为`SUPER_FAST`或者`MAXIMUM`根据需要。

@@ -104,7 +104,7 @@ builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilde
 
 ## 結論
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 成功將一個文件插入到另一個文件中。這種方法不僅高效，而且保留了兩個文件的格式，確保無縫合併。無論您正在處理一次性專案還是需要自動化文件處理，Aspose.Words for .NET 都能滿足您的需求。
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功將一個文件插入到另一個文件中。這種方法不僅高效，而且保留了兩個文件的格式，確保無縫合併。無論您正在處理一次性專案還是需要自動化文件處理，Aspose.Words for .NET 都能滿足您的需求。
 
 ## 常見問題解答
 

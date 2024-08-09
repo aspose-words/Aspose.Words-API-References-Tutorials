@@ -69,7 +69,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 
 ## Langkah 4: Simpan Dokumen sebagai PDF
 
- Dengan opsi yang dikonfigurasi, saatnya menyimpan dokumen Anda sebagai PDF. Menggunakan`Save` metode`Document` kelas, menentukan jalur dan opsi penyimpanan.
+ Dengan opsi yang dikonfigurasi, saatnya menyimpan dokumen Anda sebagai PDF. Gunakan`Save` metode`Document` kelas, menentukan jalur dan opsi penyimpanan.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.InterpolateImages.pdf", saveOptions);
@@ -99,7 +99,7 @@ Aspose.Words terutama mendukung interpolasi gambar untuk PDF. Untuk format lain,
 
 ### Bagaimana cara menguji interpolasi gambar sebelum membeli lisensi?
 
- Kamu bisa[unduh uji coba gratis](https://releases.aspose.com/) dari Aspose.Words untuk menguji interpolasi gambar dan fitur lainnya.
+ Anda bisa[unduh uji coba gratis](https://releases.aspose.com/) dari Aspose.Words untuk menguji interpolasi gambar dan fitur lainnya.
 
 ### Di mana saya bisa mendapatkan bantuan jika saya mengalami masalah?
 

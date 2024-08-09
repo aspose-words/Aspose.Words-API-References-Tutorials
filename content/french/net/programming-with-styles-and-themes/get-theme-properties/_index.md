@@ -108,7 +108,7 @@ Oui, vous pouvez récupérer les propriétés de thème à partir de documents W
 
 ### Comment appliquer un nouveau thème à un document Word ?
 
- Pour appliquer un nouveau thème, vous devrez définir les propriétés du thème sur votre`Document` objet. Vérifier la[Documentation Aspose.Words](https://reference.aspose.com/words/net/) pour plus de détails sur l’application des thèmes.
+ Pour appliquer un nouveau thème, vous devrez définir les propriétés du thème sur votre`Document` objet. Vérifiez le[Documentation Aspose.Words](https://reference.aspose.com/words/net/) pour plus de détails sur l’application des thèmes.
 
 ### Où puis-je obtenir de l’assistance pour Aspose.Words pour .NET ?
 

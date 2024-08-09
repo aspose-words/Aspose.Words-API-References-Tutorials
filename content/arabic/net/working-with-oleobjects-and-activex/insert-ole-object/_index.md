@@ -2,108 +2,76 @@
 title: إدراج كائن Ole في مستند Word
 linktitle: إدراج كائن Ole في مستند Word
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية إدراج كائن OLE في مستند Word باستخدام Aspose.Words لـ .NET.
+description: تعرف على كيفية إدراج كائنات OLE في مستندات Word باستخدام Aspose.Words لـ .NET باستخدام هذا الدليل التفصيلي خطوة بخطوة. تعزيز المستندات الخاصة بك مع المحتوى المضمن.
 type: docs
 weight: 10
 url: /ar/net/working-with-oleobjects-and-activex/insert-ole-object/
 ---
+## مقدمة
 
-فيما يلي دليل خطوة بخطوة لشرح التعليمات البرمجية المصدر لـ C# أدناه والتي توضح كيفية إدراج كائن OLE في مستند Word باستخدام Aspose.Words لـ .NET.
+عند العمل مع مستندات Word في .NET، قد يكون دمج أنواع مختلفة من البيانات أمرًا ضروريًا. إحدى الميزات القوية هي القدرة على إدراج كائنات OLE (ربط الكائنات وتضمينها) في مستندات Word. يمكن أن تكون كائنات OLE أي نوع من المحتوى، مثل جداول بيانات Excel أو عروض PowerPoint التقديمية أو محتوى HTML. في هذا الدليل، سنتعرف على كيفية إدراج كائن OLE في مستند Word باستخدام Aspose.Words for .NET. دعونا الغوص في!
 
-## الخطوة 1: استيراد المراجع اللازمة
-قبل أن تبدأ، تأكد من استيراد المراجع اللازمة لاستخدام Aspose.Words for .NET في مشروعك. يتضمن ذلك استيراد مكتبة Aspose.Words وإضافة مساحات الأسماء المطلوبة إلى ملفك المصدر.
+## المتطلبات الأساسية
+
+قبل أن نبدأ، تأكد من أن لديك ما يلي:
+
+1. Aspose.Words لمكتبة .NET: قم بتنزيله من[هنا](https://releases.aspose.com/words/net/).
+2. بيئة التطوير: Visual Studio أو أي بيئة تطوير .NET أخرى.
+3. المعرفة الأساسية بـ C#: يُفترض الإلمام ببرمجة C#.
+
+## استيراد مساحات الأسماء
+
+للبدء، تأكد من استيراد مساحات الأسماء الضرورية في مشروع C# الخاص بك:
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Drawing;
 ```
 
-## الخطوة 2: إنشاء مستند جديد ومولد المستندات
- في هذه الخطوة، سنقوم بإنشاء مستند جديد باستخدام الملف`Document` فئة ومنشئ المستندات باستخدام`DocumentBuilder` فصل.
+دعونا نقسم العملية إلى خطوات يمكن التحكم فيها.
+
+## الخطوة 1: إنشاء مستند جديد
+
+أولاً، ستحتاج إلى إنشاء مستند Word جديد. سيكون هذا بمثابة حاوية لكائن OLE الخاص بنا.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## الخطوة 3: قم بإدراج كائن OLE
- استخدم منشئ المستندات`InsertOleObject`طريقة لإدراج كائن OLE في المستند. حدد عنوان URL لكائن OLE ونوع الكائن وخيارات العرض والإعدادات الضرورية الأخرى.
+## الخطوة 2: أدخل كائن OLE
+
+ بعد ذلك، سوف تستخدم`DocumentBuilder`فئة لإدراج كائن OLE. نحن هنا نستخدم ملف HTML الموجود على "http://www.aspose.com" كمثال لدينا.
 
 ```csharp
-builder. InsertOleObject("http://www.aspose.com"، "htmlfile"، true، true، null)؛
+builder.InsertOleObject("http://www.aspose.com"، "htmlfile"، true، true، null)؛
 ```
 
-## الخطوة 4: احفظ المستند
- استخدم الوثيقة`Save` طريقة حفظ المستند في ملف .
+## الخطوة 3: احفظ المستند
+
+وأخيرًا، احفظ مستندك في المسار المحدد. تأكد من أن المسار صحيح ويمكن الوصول إليه.
 
 ```csharp
 doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");
 ```
-
-### مثال للتعليمة البرمجية المصدر لإدراج كائن OLE باستخدام Aspose.Words لـ .NET
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder. InsertOleObject("http://www.aspose.com"، "htmlfile"، true، true، null)؛
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");
-```
-
-هذا نموذج تعليمة برمجية كاملة لإدراج كائن OLE باستخدام Aspose.Words لـ .NET. تأكد من استيراد المراجع الضرورية واتبع الخطوات الموضحة مسبقًا لدمج هذا الرمز في مشروعك.
 
 ## خاتمة
 
-في الختام، يعد إدراج كائنات OLE في مستند Word ميزة قوية يقدمها Aspose.Words لـ .NET. باستخدام هذه المكتبة، يمكنك بسهولة تضمين كائنات OLE مثل ملفات HTML وجداول بيانات Excel وعروض PowerPoint التقديمية وما إلى ذلك في مستندات Word الخاصة بك.
+يعد إدراج كائنات OLE في مستندات Word باستخدام Aspose.Words for .NET ميزة قوية تسمح بتضمين أنواع محتوى متنوعة. سواء كان ملف HTML أو جدول بيانات Excel أو أي محتوى آخر متوافق مع OLE، يمكن لهذه الإمكانية تحسين وظائف مستندات Word وتفاعلها بشكل كبير. باتباع الخطوات الموضحة في هذا الدليل، يمكنك دمج كائنات OLE في مستنداتك بسلاسة، مما يجعلها أكثر ديناميكية وجاذبية.
 
-في هذه المقالة، مررنا بدليل خطوة بخطوة لشرح الكود المصدري في لغة C# والذي يوضح كيفية إدراج كائن OLE في مستند Word. لقد قمنا بتغطية المراجع الضرورية، وإنشاء مستند جديد ومولد المستندات، والخطوات اللازمة لإدراج كائن OLE وحفظ المستند.
+## الأسئلة الشائعة
 
-### الأسئلة المتداولة حول إدراج كائن OLE في مستند Word
+### ما أنواع كائنات OLE التي يمكنني إدراجها باستخدام Aspose.Words لـ .NET؟
+يمكنك إدراج أنواع مختلفة من كائنات OLE، بما في ذلك ملفات HTML وجداول بيانات Excel وعروض PowerPoint التقديمية والمحتويات الأخرى المتوافقة مع OLE.
 
-#### س: ما هي بيانات الاعتماد التي أحتاج إلى استيرادها لاستخدام Aspose.Words لـ .NET؟
+### هل يمكنني عرض كائن OLE كرمز بدلاً من محتواه الفعلي؟
+ نعم، يمكنك اختيار عرض كائن OLE كرمز عن طريق تعيين`asIcon` المعلمة ل`true`.
 
-ج: لاستخدام Aspose.Words لـ .NET، تحتاج إلى استيراد المراجع التالية:
+### هل من الممكن ربط كائن OLE بملفه المصدر؟
+ نعم، من خلال تحديد`isLinked` المعلمة ل`true`، يمكنك ربط كائن OLE بملفه المصدر.
 
-```csharp
-using Aspose.Words;
-using Aspose.Words.Drawing;
-```
+### كيف يمكنني تخصيص الرمز المستخدم لكائن OLE؟
+ يمكنك توفير رمز مخصص عن طريق توفير`Image` كائن مثل`image` المعلمة في`InsertOleObject` طريقة.
 
-#### س: كيفية إنشاء مستند جديد ومولد المستندات؟
-
- ج: يمكنك إنشاء مستند جديد باستخدام`Document` فئة ومنشئ المستندات باستخدام`DocumentBuilder` الصف، كما هو موضح أدناه:
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-#### س: كيفية إدراج كائن OLE في المستند؟
-
- ج: استخدم`InsertOleObject` طريقة منشئ المستندات (`DocumentBuilder`) لإدراج كائن OLE في المستند. حدد عنوان URL لكائن OLE ونوع الكائن وخيارات العرض والإعدادات الضرورية الأخرى. هنا مثال :
-
-```csharp
-builder. InsertOleObject("http://www.aspose.com"، "htmlfile"، true، true، null)؛
-```
-
-#### س: كيفية حفظ الوثيقة؟
-
- ج: استخدم الوثيقة`Save`طريقة حفظ المستند في ملف . هنا مثال :
-
-```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");
-```
-
-#### س: هل يمكنك تقديم مثال كامل لإدراج كائن OLE باستخدام Aspose.Words لـ .NET؟
-
-ج: هنا نموذج تعليمة برمجية كاملة لإدراج كائن OLE باستخدام Aspose.Words لـ .NET. تأكد من استيراد المراجع اللازمة واتبع الخطوات الموضحة مسبقًا لدمج هذا الرمز في مشروعك:
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-builder. InsertOleObject("http://www.aspose.com"، "htmlfile"، true، true، null)؛
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");
-```
+### أين يمكنني العثور على مزيد من الوثائق حول Aspose.Words لـ .NET؟
+ يمكنك العثور على وثائق مفصلة عن[Aspose.Words لصفحة وثائق .NET](https://reference.aspose.com/words/net/).

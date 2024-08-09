@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/find-and-replace-text/ignore-text-inside-fields/
 ---
-## Úvod
+## Zavedení
 
 V tomto tutoriálu se ponoříme do manipulace s textem uvnitř polí v dokumentech aplikace Word pomocí Aspose.Words for .NET. Aspose.Words poskytuje robustní funkce pro zpracování dokumentů, což umožňuje vývojářům efektivně automatizovat úkoly. Zde se zaměříme na ignorování textu uvnitř polí, což je běžný požadavek ve scénářích automatizace dokumentů.
 
@@ -39,7 +39,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Krok 2: Vložte pole s textem
 
- Použijte`InsertField` metoda`DocumentBuilder` pro přidání pole obsahujícího text:
+ Použijte`InsertField` způsob`DocumentBuilder` pro přidání pole obsahujícího text:
 ```csharp
 builder.InsertField("INCLUDETEXT", "Text in field");
 ```

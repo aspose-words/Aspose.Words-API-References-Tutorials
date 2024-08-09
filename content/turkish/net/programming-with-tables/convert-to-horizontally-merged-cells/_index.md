@@ -54,7 +54,7 @@ Table table = doc.FirstSection.Body.Tables[0];
 
 ## Adım 3: Yatay Olarak Birleştirilmiş Hücrelere Dönüştürme
 
- Şimdi tablodaki dikey olarak birleştirilmiş hücreleri yatay olarak birleştirilmiş hücrelere dönüştüreceğiz. Bu, kullanılarak yapılır.`ConvertToHorizontallyMergedCells` yöntem.
+ Şimdi tablodaki dikey olarak birleştirilmiş hücreleri yatay olarak birleştirilmiş hücrelere dönüştüreceğiz. Bu, kullanılarak yapılır.`ConvertToHorizontallyMergedCells` Yöntem.
 
 ```csharp
 // Dikey olarak birleştirilmiş hücreleri yatay olarak birleştirilmiş hücrelere dönüştürme
@@ -63,7 +63,7 @@ table.ConvertToHorizontallyMergedCells();
 
 ## Çözüm
 
-Ve bu kadar! Aspose.Words for .NET'i kullanarak bir Word belgesinde dikey olarak birleştirilmiş hücreleri yatay olarak birleştirilmiş hücrelere başarıyla dönüştürdünüz. Bu yöntem, tablolarınızın iyi organize edilmesini ve okunmasının daha kolay olmasını sağlar. Bu adımları izleyerek Word belgelerinizi özel ihtiyaçlarınızı karşılayacak şekilde özelleştirebilir ve değiştirebilirsiniz.
+İşte bu kadar! Aspose.Words for .NET'i kullanarak bir Word belgesinde dikey olarak birleştirilmiş hücreleri yatay olarak birleştirilmiş hücrelere başarıyla dönüştürdünüz. Bu yöntem, tablolarınızın iyi organize edilmesini ve okunmasının daha kolay olmasını sağlar. Bu adımları izleyerek Word belgelerinizi özel ihtiyaçlarınızı karşılayacak şekilde özelleştirebilir ve değiştirebilirsiniz.
 
 ## SSS'ler
 
@@ -80,4 +80,4 @@ Aspose.Words for .NET öncelikle C# gibi .NET dilleri için tasarlanmıştır. A
 Evet, Aspose.Words for .NET hem dosyadan hem de akıştan lisans uygulamanıza olanak tanır. Daha fazla bilgiyi şurada bulabilirsiniz:[dokümantasyon](https://reference.aspose.com/words/net/).
 
 ### Aspose.Words for .NET başka hangi özellikleri sunuyor?  
- Aspose.Words for .NET, belge oluşturma, işleme, dönüştürme ve işleme dahil olmak üzere çok çeşitli özellikler sunar. Kontrol et[dokümantasyon](https://reference.aspose.com/words/net/) daha fazla ayrıntı için.
+ Aspose.Words for .NET, belge oluşturma, işleme, dönüştürme ve işleme dahil olmak üzere çok çeşitli özellikler sunar. Şuna göz atın:[dokümantasyon](https://reference.aspose.com/words/net/) daha fazla ayrıntı için.

@@ -15,7 +15,7 @@ url: /es/net/programming-with-document-properties/enumerate-properties/
 
 Antes de sumergirnos en el tutorial, hay algunas cosas que necesitará para comenzar:
 
--  Aspose.Words para .NET: puedes[descarguelo aqui](https://releases.aspose.com/words/net/).
+-  Aspose.Words para .NET: puedes[descárgalo aquí](https://releases.aspose.com/words/net/).
 - Entorno de desarrollo: se recomienda Visual Studio, pero puede utilizar cualquier IDE de C#.
 - Conocimientos básicos de C#: una comprensión fundamental de C# le ayudará a seguir adelante.
 
@@ -103,7 +103,7 @@ foreach (DocumentProperty prop in doc.CustomDocumentProperties)
  Sí, puede agregar nuevas propiedades personalizadas usando el`CustomDocumentProperties` recopilación.
 
 ### ¿Aspose.Words es de uso gratuito?
- Aspose.Words ofrece una[prueba gratis](https://releases.aspose.com/) y diferente[opciones de compra](https://purchase.aspose.com/buy).
+ Aspose.Words ofrece una[prueba gratuita](https://releases.aspose.com/) y diferente[opciones de compra](https://purchase.aspose.com/buy).
 
 ### ¿Cómo obtengo soporte para Aspose.Words?
  Puede obtener apoyo de la comunidad Aspose[aquí](https://forum.aspose.com/c/words/8).
@@ -112,4 +112,4 @@ foreach (DocumentProperty prop in doc.CustomDocumentProperties)
 Sí, Aspose.Words admite múltiples lenguajes .NET, incluido VB.NET.
 
 ### ¿Dónde puedo encontrar más ejemplos?
- Revisar la[Aspose.Words para la documentación de .NET](https://reference.aspose.com/words/net/) para más ejemplos e información detallada.
+ Mira el[Aspose.Words para la documentación de .NET](https://reference.aspose.com/words/net/) para más ejemplos e información detallada.

@@ -2,7 +2,7 @@
 title: Klona och kombinera dokument i Aspose.Words för Java
 linktitle: Klona och kombinera dokument
 second_title: Aspose.Words Java Document Processing API
-description: Lär dig att klona och kombinera dokument i Aspose.Words för Java. Steg-för-steg-guide med exempel på källkod.
+description: Lär dig att klona och kombinera dokument i Aspose.Words för Java. Steg-för-steg guide med exempel på källkod.
 type: docs
 weight: 27
 url: /sv/java/document-manipulation/cloning-and-combining-documents/
@@ -55,7 +55,7 @@ mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtB
 
 ## Steg 4: Infoga dokument under sammanfogning
 
-Du kan infoga dokument under en kopplingsoperation i Aspose.Words för Java. Här är hur:
+Du kan infoga dokument under en kopplingsoperation i Aspose.Words för Java. Så här gör du:
 
 ```java
 Document mainDoc = new Document("Your Directory Path" + "Document insertion 1.docx");

@@ -109,7 +109,7 @@ Un campo anidado es un campo que contiene otros campos dentro de él. Permite co
 Sí, puede anidar varios campos como FECHA, HORA y AUTOR dentro del campo SI para crear contenido dinámico.
 
 ### ¿Aspose.Words para .NET es gratuito?
- Aspose.Words para .NET es una biblioteca comercial, pero puede obtener una[prueba gratis](https://releases.aspose.com/) para probarlo.
+ Aspose.Words para .NET es una biblioteca comercial, pero puede obtener una[prueba gratuita](https://releases.aspose.com/) para probarlo.
 
 ### ¿Puedo utilizar Aspose.Words con otros lenguajes .NET?
 Sí, Aspose.Words es compatible con todos los lenguajes .NET, incluidos VB.NET y F#.

@@ -118,7 +118,7 @@ tym samouczku omówiliśmy tworzenie wielopoziomowej listy z wcięciami tabulacj
 Tak, Aspose.Words umożliwia dostosowywanie stylów list na różnych poziomach. Możesz modyfikować opcje formatowania listy, aby uzyskać różne style.
 
 ### Co się stanie, jeśli zamiast liczb będę musiał zastosować wypunktowania?
- Użyj`ListFormat.ApplyBulletDefault()` metoda zamiast`ApplyNumberDefault()` aby utworzyć listę punktowaną.
+ Skorzystaj z`ListFormat.ApplyBulletDefault()` metoda zamiast`ApplyNumberDefault()` aby utworzyć listę punktowaną.
 
 ### Jak mogę dostosować rozmiar znaku tabulacji używanego do wcięcia?
  Niestety rozmiar zakładki w`TxtSaveOptions`jest naprawiony. Aby dostosować rozmiar wcięcia, może być konieczne użycie spacji lub bezpośrednie dostosowanie formatowania listy.

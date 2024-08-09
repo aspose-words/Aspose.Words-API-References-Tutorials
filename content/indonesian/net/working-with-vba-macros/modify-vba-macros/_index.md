@@ -15,7 +15,7 @@ Halo, rekan pembuat kode dan penggemar otomatisasi dokumen! Apakah Anda siap unt
 
 Sebelum kita beralih ke kode, pastikan Anda memiliki semua yang Anda butuhkan:
 
-1.  Perpustakaan Aspose.Words for .NET: Pastikan Anda memiliki Aspose.Words for .NET versi terbaru. Kamu bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+1.  Perpustakaan Aspose.Words for .NET: Pastikan Anda memiliki Aspose.Words for .NET versi terbaru. Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Lingkungan pengembangan .NET seperti Visual Studio sangat penting untuk menulis dan menguji kode Anda.
 3. Pengetahuan C# Dasar: Pemahaman dasar tentang C# akan membantu Anda mengikuti cuplikan kode.
 4.  Contoh Dokumen Word: Miliki a[Dokumen kata](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) dengan makro VBA yang sudah siap. Ini akan menjadi subjek pengujian kami untuk memodifikasi makro.

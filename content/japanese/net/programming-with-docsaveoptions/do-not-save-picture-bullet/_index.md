@@ -62,7 +62,7 @@ Document doc = new Document(dataDir + "Image bullet points.docx");
 DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
 ```
 
-設定することにより`SavePictureBullet`に`false`出力ドキュメントに画像の箇条書きを保存しないように Aspose.Words に指示します。
+設定により`SavePictureBullet`に`false`出力ドキュメントに画像の箇条書きを保存しないように Aspose.Words に指示します。
 
 ## ステップ4: ドキュメントを保存する
 

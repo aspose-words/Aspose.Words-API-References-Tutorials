@@ -23,7 +23,7 @@ Mielőtt belevetnénk magunkat a helyszíni frissítési kultúra aprólékos el
 
 4.  Aspose Licenc: A teljes funkcionalitáshoz licencre lehet szüksége. Vásárolhat egyet[itt](https://purchase.aspose.com/buy) vagy ideiglenes engedélyt szerezni[itt](https://purchase.aspose.com/temporary-license/).
 
-5.  Hozzáférés a dokumentációhoz és támogatáshoz: További segítségért a[Aspose Dokumentáció](https://reference.aspose.com/words/net/)és[Támogatói fórum](https://forum.aspose.com/c/words/8) nagyszerű források.
+5.  Hozzáférés a dokumentációhoz és támogatáshoz: További segítségért a[Aspose Dokumentáció](https://reference.aspose.com/words/net/)és[Támogatási fórum](https://forum.aspose.com/c/words/8) nagyszerű források.
 
 ## Névterek importálása
 
@@ -38,7 +38,7 @@ Most, hogy elkészült, bontsuk fel a helyszíni frissítési kultúra konfigur�
 
 ## 1. lépés: Állítsa be a dokumentumot és a DocumentBuildert
 
- Először is létre kell hoznia egy új dokumentumot, és a`DocumentBuilder` tárgy. A`DocumentBuilder` egy praktikus osztály, amely lehetővé teszi a Word dokumentumok egyszerű felépítését és módosítását.
+ Először is létre kell hoznia egy új dokumentumot, és a`DocumentBuilder` objektum. A`DocumentBuilder` egy praktikus osztály, amely lehetővé teszi a Word dokumentumok egyszerű felépítését és módosítását.
 
 ```csharp
 // A dokumentumok könyvtárának elérési útja.

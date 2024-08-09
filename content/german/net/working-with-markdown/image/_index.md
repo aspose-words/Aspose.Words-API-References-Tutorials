@@ -46,7 +46,7 @@ Als Nächstes fügen Sie ein Bild in Ihr Dokument ein. So geht's:
 Shape shape = builder.InsertImage("path_to_your_image.jpg");
 ```
 
- Ersetzen`"path_to_your_image.jpg"` mit dem tatsächlichen Pfad Ihrer Bilddatei. Die`InsertImage` Methode fügt das Bild zu Ihrem Dokument hinzu.
+ Ersetzen`"path_to_your_image.jpg"` mit dem tatsächlichen Pfad Ihrer Bilddatei. Die`InsertImage`Methode fügt das Bild zu Ihrem Dokument hinzu.
 
 ## Schritt 3: Bildeigenschaften festlegen
 
@@ -72,7 +72,7 @@ Aspose.Words unterstützt verschiedene Bildformate, darunter JPEG, PNG, BMP, GIF
  Absolut! Sie können die Höhe und Breite der`Shape` Objekt, um die Größe der Bilder zu ändern.
 
 ### Ist es möglich, Bilder von einer URL hinzuzufügen?  
- Ja, Sie können Bilder von einer URL hinzufügen, indem Sie die URL im`InsertImage` Methode.
+Ja, Sie können Bilder von einer URL hinzufügen, indem Sie die URL im`InsertImage` Verfahren.
 
 ### Wie erhalte ich eine kostenlose Testversion von Aspose.Words für .NET?  
  Sie erhalten eine kostenlose Testversion von[Aspose-Website](https://releases.aspose.com/).

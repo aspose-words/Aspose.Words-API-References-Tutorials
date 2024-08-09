@@ -2,86 +2,100 @@
 title: Sprawdź efekt tekstowy DrawingML
 linktitle: Sprawdź efekt tekstowy DrawingML
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: W tym samouczku dowiesz się, jak sprawdzić efekty tekstowe DrawingML w dokumencie programu Word za pomocą Aspose.Words dla .NET.
+description: Dowiedz się, jak sprawdzić efekty tekstowe DrawingML w dokumentach programu Word przy użyciu Aspose.Words dla .NET, korzystając z naszego szczegółowego przewodnika krok po kroku. Z łatwością ulepszaj swoje dokumenty.
 type: docs
 weight: 10
 url: /pl/net/working-with-fonts/check-drawingml-text-effect/
 ---
+## Wstęp
 
-W tym samouczku przeprowadzimy Cię przez proces sprawdzania efektów tekstowych DrawingML w dokumencie programu Word przy użyciu biblioteki Aspose.Words dla .NET. Sprawdzanie efektów tekstowych DrawingML pozwala określić, czy do części tekstu zastosowano określony efekt. Poprowadzimy Cię krok po kroku, aby pomóc Ci zrozumieć i wdrożyć kod w Twoim projekcie .NET.
+Witamy w kolejnym szczegółowym samouczku na temat pracy z Aspose.Words dla .NET! Dzisiaj zagłębiamy się w fascynujący świat efektów tekstowych DrawingML. Niezależnie od tego, czy chcesz ulepszyć swoje dokumenty Word za pomocą cieni, odbić czy efektów 3D, ten przewodnik pokaże Ci, jak sprawdzić te efekty tekstowe w dokumentach za pomocą Aspose.Words dla .NET. Zacznijmy!
 
 ## Warunki wstępne
-Zanim zaczniesz, upewnij się, że masz następujące elementy:
-- Praktyczna znajomość języka programowania C#
-- Biblioteka Aspose.Words dla .NET zainstalowana w Twoim projekcie
-- Dokument programu Word zawierający efekty tekstowe DrawingML
 
-## Krok 1: Zdefiniuj katalog dokumentów
- Najpierw musisz ustawić ścieżkę katalogu do lokalizacji dokumentu programu Word. Zastępować`"YOUR DOCUMENT DIRECTORY"` w kodzie odpowiednią ścieżką.
+Zanim przejdziemy do samouczka, musisz spełnić kilka wymagań wstępnych:
+
+-  Biblioteka Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words dla .NET. Można go pobrać z[Strona z wydaniami Aspose](https://releases.aspose.com/words/net/).
+- Środowisko programistyczne: Należy mieć skonfigurowane środowisko programistyczne, takie jak Visual Studio.
+- Podstawowa znajomość języka C#: Pomocna będzie pewna znajomość programowania w języku C#.
+
+## Importuj przestrzenie nazw
+
+Najpierw musisz zaimportować niezbędne przestrzenie nazw. Te przestrzenie nazw zapewniają dostęp do klas i metod wymaganych do manipulowania dokumentami programu Word i sprawdzania efektów tekstowych DrawingML.
 
 ```csharp
-// Ścieżka do katalogu dokumentów
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Drawing;
 ```
 
-## Krok 2: Załaduj dokument i sprawdź efekty tekstowe
-Następnie załadujemy dokument Word i uzyskamy dostęp do kolekcji przebiegów (sekwencji znaków) w pierwszym akapicie treści dokumentu. Następnie sprawdzimy, czy do czcionki pierwszego uruchomienia zastosowano jakieś konkretne efekty tekstowe DrawingML.
+## Przewodnik krok po kroku dotyczący sprawdzania efektów tekstowych DrawingML
+
+Teraz podzielmy proces na wiele kroków, aby ułatwić jego śledzenie.
+
+## Krok 1: Załaduj dokument
+
+Pierwszym krokiem jest załadowanie dokumentu Word, który chcesz sprawdzić pod kątem efektów tekstowych DrawingML. 
 
 ```csharp
-// Załaduj dokument
-Document doc = new Document(dataDir + "DrawingML text effects.docx");
-RunCollection runs = doc.FirstSection.Body.FirstParagraph.Runs;
-Font runFont = runs[0].Font;
-
-// Sprawdź efekty tekstowe DrawingML
-Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Shadow));
-Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Effect3D));
-Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Reflection));
-Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Outline));
-Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Fill));
-```
-
-### Przykładowy kod źródłowy dla efektu Sprawdź DMLText przy użyciu Aspose.Words dla .NET 
-
-```csharp
-
 // Ścieżka do katalogu dokumentów
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "DrawingML text effects.docx");
-RunCollection runs = doc.FirstSection.Body.FirstParagraph.Runs;
-Font runFont = runs[0].Font;
+```
 
-// Do jednego uruchomienia może zostać zastosowanych kilka efektów tekstowych DML.
+Ten fragment kodu ładuje dokument o nazwie „Efekty tekstowe DrawingML.docx” z określonego katalogu.
+
+## Krok 2: Uzyskaj dostęp do kolekcji biegów
+
+Następnie musimy uzyskać dostęp do kolekcji przebiegów w pierwszym akapicie dokumentu. Przebiegi to fragmenty tekstu o tym samym formatowaniu.
+
+```csharp
+RunCollection runs = doc.FirstSection.Body.FirstParagraph.Runs;
+```
+
+Ta linia kodu pobiera przebiegi z pierwszego akapitu pierwszej sekcji dokumentu.
+
+## Krok 3: Zdobądź czcionkę pierwszego uruchomienia
+
+Teraz otrzymamy właściwości czcionki pierwszego uruchomienia w kolekcji run. Dzięki temu możemy sprawdzić, czy do tekstu zastosowano różne efekty tekstowe DrawingML.
+
+```csharp
+Font runFont = runs[0].Font;
+```
+
+## Krok 4: Sprawdź efekty tekstowe DrawingML
+
+Na koniec możemy sprawdzić różne efekty tekstowe DrawingML, takie jak cień, efekt 3D, odbicie, kontur i wypełnienie.
+
+```csharp
 Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Shadow));
 Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Effect3D));
 Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Reflection));
 Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Outline));
 Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Fill));
-
 ```
 
+ Te linie kodu zostaną wydrukowane`true` Lub`false` w zależności od tego, czy każdy konkretny efekt tekstowy DrawingML jest zastosowany do czcionki przebiegu.
+
 ## Wniosek
-tym samouczku widzieliśmy, jak sprawdzić efekty tekstowe DrawingML w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Sprawdzanie efektów tekstowych DrawingML pozwala zidentyfikować części tekstu, do których zastosowano określone efekty. Możesz swobodnie używać tej funkcji do manipulowania i analizowania efektów tekstowych w dokumentach programu Word.
 
-### Często zadawane pytania
+Gratulacje! Właśnie nauczyłeś się, jak sprawdzać efekty tekstowe DrawingML w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Ta zaawansowana funkcja umożliwia programowe wykrywanie i manipulowanie wyrafinowanym formatowaniem tekstu, zapewniając większą kontrolę nad zadaniami przetwarzania dokumentów.
 
-#### P: Jak mogę uzyskać dostęp do efektów tekstowych DrawingML w dokumencie programu Word za pomocą Aspose.Words?
 
-Odp.: Dzięki Aspose.Words możesz uzyskać dostęp do efektów tekstowych DrawingML w dokumencie Word za pomocą dostarczonego interfejsu API. Możesz przeglądać elementy tekstowe i sprawdzać określone właściwości efektów tekstowych, takie jak kolor, rozmiar itp.
+## Często zadawane pytania
 
-#### P: Jakie typy efektów tekstowych DrawingML są powszechnie używane w dokumentach programu Word?
+### Co to jest efekt tekstowy DrawingML?
+Efekty tekstowe DrawingML to zaawansowane opcje formatowania tekstu w dokumentach programu Word, obejmujące cienie, efekty 3D, odbicia, kontury i wypełnienia.
 
-Odp.: Powszechnie używane typy efektów tekstowych DrawingML w dokumentach programu Word obejmują cienie, odbicia, poświaty, gradienty itp. Efekty te można zastosować w celu poprawy wyglądu i formatowania tekstu.
+### Czy mogę zastosować efekty tekstowe DrawingML przy użyciu Aspose.Words dla .NET?
+Tak, Aspose.Words dla .NET pozwala zarówno programowo sprawdzać, jak i stosować efekty tekstowe DrawingML.
 
-#### P: Jak mogę sprawdzić kolor efektu tekstowego DrawingML w dokumencie programu Word?
+### Czy potrzebuję licencji, aby używać Aspose.Words dla .NET?
+ Tak, Aspose.Words dla .NET wymaga licencji dla pełnej funkcjonalności. Można uzyskać[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) do oceny.
 
-Odp.: Aby sprawdzić kolor efektu tekstowego DrawingML w dokumencie programu Word, możesz skorzystać z metod dostarczonych przez Aspose.Words, aby uzyskać dostęp do właściwości koloru efektu tekstowego. W ten sposób możesz uzyskać kolor używany dla konkretnego efektu tekstowego.
+### Czy dostępna jest bezpłatna wersja próbna Aspose.Words dla .NET?
+ Tak, możesz pobrać plik[bezpłatna wersja próbna](https://releases.aspose.com/) aby wypróbować Aspose.Words dla .NET przed zakupem.
 
-#### P: Czy można sprawdzić efekty tekstowe w dokumentach programu Word zawierających wiele sekcji?
-
-Odp.: Tak, Aspose.Words umożliwia sprawdzanie efektów tekstowych w dokumentach Word zawierających wiele sekcji. Możesz poruszać się po każdej sekcji dokumentu i uzyskiwać dostęp do efektów tekstowych dla każdej sekcji indywidualnie.
-
-#### P: Jak mogę sprawdzić przezroczystość efektu tekstowego DrawingML w dokumencie programu Word?
-
-Odp.: Aby sprawdzić krycie efektu tekstowego DrawingML w dokumencie programu Word, możesz skorzystać z metod dostarczonych przez Aspose.Words, aby uzyskać dostęp do właściwości krycia efektu tekstowego. Umożliwi to zastosowanie wartości krycia do określonego efektu tekstowego.
+### Gdzie mogę znaleźć więcej dokumentacji na temat Aspose.Words dla .NET?
+ Szczegółową dokumentację można znaleźć na stronie[Aspose.Words dla strony dokumentacji .NET](https://reference.aspose.com/words/net/).

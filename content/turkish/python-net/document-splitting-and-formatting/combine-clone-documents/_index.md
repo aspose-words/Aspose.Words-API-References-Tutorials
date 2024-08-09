@@ -121,10 +121,10 @@ Aspose.Words for Python, belge iş akışlarını zahmetsizce değiştirmenize v
  Aspose.Words for Python'u şuradan indirerek kurabilirsiniz:[Burada](https://releases.aspose.com/words/python/).
 
 ### Bir belgenin yalnızca yapısını kopyalayabilir miyim?
-Evet, bir belgenin yalnızca yapısını içerik olmadan kopyalamak için sığ bir klonlama gerçekleştirebilirsiniz.
+Evet, bir belgenin yalnızca yapısını içerik olmadan kopyalamak için yüzeysel bir klonlama gerçekleştirebilirsiniz.
 
 ### Bir belgedeki belirli bir metni nasıl değiştirebilirim?
- Kullanın`range.replace()` metni verimli bir şekilde bulmak ve değiştirmek için uygun seçeneklerle birlikte yöntem.
+ Kullanın`range.replace()` Metni verimli bir şekilde bulmak ve değiştirmek için uygun seçeneklerle birlikte yöntem.
 
 ### Aspose.Words formatlamayı değiştirmeyi destekliyor mu?
 Kesinlikle, aşağıdaki gibi yöntemleri kullanarak biçimlendirmeyi değiştirebilirsiniz:`run.font.size`Ve`run.font.bold`.

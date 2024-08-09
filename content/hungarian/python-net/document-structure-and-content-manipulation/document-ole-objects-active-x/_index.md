@@ -71,7 +71,7 @@ doc = aw.Document()
 
 ### 3. lépés: ActiveX-vezérlő beillesztése
 
-Tegyük fel, hogy egy multimédia lejátszót szeretne beágyazni. A következőképpen teheti meg:
+Tegyük fel, hogy egy multimédiás lejátszót szeretne beágyazni. A következőképpen teheti meg:
 
 ```python
 activex_shape = doc.shapes.add_activex_control('clsid:6BF52A52-394A-11d3-B153-00C04F79FAA6', 100, 100, 300, 200)

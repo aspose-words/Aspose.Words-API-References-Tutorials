@@ -64,7 +64,7 @@ private static Color convertColor(String inputColor) throws Exception {
 
 ```java
 /// <الملخص>
-/// تحويل عامل تحجيم الرمز الشريطي من النسبة المئوية إلى التعويم.
+/// تحويل عامل قياس الرمز الشريطي من النسبة المئوية إلى التعويم.
 /// </ملخص>
 /// <param name="scalingFactor"></param>
 /// <إرجاع></إرجاع>
@@ -94,7 +94,7 @@ public BufferedImage getBarcodeImage(BarcodeParameters parameters) throws Except
 	if (parameters.getBarcodeType() == null || parameters.getBarcodeValue() == null)
 		return null;
 	
-	// قم بإنشاء BarcodeGenerator بناءً على نوع الباركود
+	// قم بإنشاء BarcodeGenerator بناءً على نوع الرمز الشريطي
 	BarcodeGenerator generator = new BarcodeGenerator(EncodeTypes.QR);
 	String type = parameters.getBarcodeType().toUpperCase();
 	switch (type)
@@ -183,7 +183,7 @@ public BufferedImage getOldBarcodeImage(BarcodeParameters parameters)
 
 ## خاتمة
 
-في هذه المقالة، اكتشفنا عملية إنشاء ملصقات باركود مخصصة باستخدام Aspose.Words لـ Java. لقد قمنا بتغطية الخطوات الأساسية، بدءًا من ضبط ارتفاع الباركود وحتى تنفيذ طرق إنشاء الباركود. يمكّن Aspose.Words for Java المطورين من إنشاء ملصقات باركود ديناميكية ومخصصة، مما يجعلها أداة قيمة لمختلف الصناعات.
+في هذه المقالة، اكتشفنا عملية إنشاء تسميات باركود مخصصة باستخدام Aspose.Words لـ Java. لقد قمنا بتغطية الخطوات الأساسية، بدءًا من ضبط ارتفاع الباركود وحتى تنفيذ طرق إنشاء الباركود. يمكّن Aspose.Words for Java المطورين من إنشاء ملصقات باركود ديناميكية ومخصصة، مما يجعلها أداة قيمة لمختلف الصناعات.
 
 ## الأسئلة الشائعة
 

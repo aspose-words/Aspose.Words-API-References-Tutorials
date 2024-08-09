@@ -12,7 +12,7 @@ Word 文件中的頁首和頁尾在為內容提供上下文、品牌和附加資
 
 ## Python 版 Aspose.Words 入門
 
-在深入研究頁首和頁尾操作之前，您需要設定 Aspose.Words for Python。按著這些次序：
+在深入研究頁首和頁尾操作之前，您需要設定 Aspose.Words for Python。請依照下列步驟操作：
 
 1. 安裝：使用 pip 安裝 Aspose.Words for Python。
 
@@ -89,7 +89,7 @@ footer_run.text = "Page number: {PAGE} of {NUMPAGES} - Document created on {DATE
 
 ## 奇數頁和偶數頁的不同頁首和頁尾
 
-為奇數頁和偶數頁建立不同的頁首和頁尾可以為您的文件增添專業氣息。就是這樣：
+為奇數頁和偶數頁建立不同的頁首和頁尾可以為您的文件增添專業氣息。方法如下：
 
 1. 設定奇數頁和偶數頁佈局：定義佈局以允許奇數頁和偶數頁使用不同的頁首和頁尾。
 

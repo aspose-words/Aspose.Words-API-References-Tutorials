@@ -86,7 +86,7 @@ doc.Save(dataDir + "WorkingWithPdfLoadOptions.LoadPageRangeOfPdf.pdf");
 
 ## 結論
 
-你有它！您已使用 Aspose.Words for .NET 成功從 PDF 文件載入特定範圍的頁面。這個強大的程式庫使處理 PDF 變得輕而易舉，讓您能夠專注於真正重要的事情 - 建立強大而高效的應用程式。無論您正在開發小型專案還是大型企業解決方案，Aspose.Words 都是您的 .NET 工具庫中不可或缺的工具。
+給你了！您已使用 Aspose.Words for .NET 成功從 PDF 文件載入特定範圍的頁面。這個強大的程式庫使處理 PDF 變得輕而易舉，讓您能夠專注於真正重要的事情 - 建立強大而高效的應用程式。無論您正在開發小型專案還是大型企業解決方案，Aspose.Words 都是您的 .NET 工具庫中不可或缺的工具。
 
 ## 常見問題解答
 

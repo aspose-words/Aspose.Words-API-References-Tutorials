@@ -9,7 +9,7 @@ url: /id/net/programming-with-htmlloadoptions/preferred-control-type/
 ---
 ## Perkenalan
 
-kita menyelami tutorial menarik tentang cara bekerja dengan opsi pemuatan HTML di Aspose.Words untuk .NET, khususnya berfokus pada pengaturan jenis kontrol pilihan saat menyisipkan bidang formulir kotak kombo ke dalam dokumen Word. Panduan langkah demi langkah ini akan membantu Anda memahami cara memanipulasi dan merender konten HTML secara efektif dalam dokumen Word Anda menggunakan Aspose.Words untuk .NET.
+kita menyelami tutorial menarik tentang cara bekerja dengan opsi pemuatan HTML di Aspose.Words untuk .NET, yang secara khusus berfokus pada pengaturan jenis kontrol pilihan saat menyisipkan bidang formulir kotak kombo ke dalam dokumen Word. Panduan langkah demi langkah ini akan membantu Anda memahami cara memanipulasi dan merender konten HTML secara efektif dalam dokumen Word Anda menggunakan Aspose.Words untuk .NET.
 
 ## Prasyarat
 
@@ -63,7 +63,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Langkah 3: Konfigurasikan Opsi Pemuatan HTML
 
- Di sini, kami mengonfigurasi opsi pemuatan HTML, khususnya berfokus pada`PreferredControlType`Properti. Ini menentukan bagaimana kotak kombo harus dirender dalam dokumen Word.
+ Di sini, kami mengonfigurasi opsi pemuatan HTML, khususnya berfokus pada`PreferredControlType`milik. Ini menentukan bagaimana kotak kombo harus dirender dalam dokumen Word.
 
 ```csharp
 HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };

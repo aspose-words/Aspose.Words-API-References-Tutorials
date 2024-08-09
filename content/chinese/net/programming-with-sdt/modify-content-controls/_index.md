@@ -59,7 +59,7 @@ foreach (StructuredDocumentTag sdt in doc.GetChildNodes(NodeType.StructuredDocum
 
 ## 步骤 3：修改纯文本 SDT
 
-如果SDT是纯文本类型，则可以替换其内容。首先清除现有内容，然后添加新文本。
+如果SDT是纯文本类型，则可以替换其内容。首先，清除现有内容，然后添加新文本。
 
 ```csharp
 if (sdt.SdtType == SdtType.PlainText)

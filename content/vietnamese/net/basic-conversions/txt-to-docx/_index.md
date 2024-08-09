@@ -65,4 +65,4 @@ Có, Aspose.Words hỗ trợ nhiều khung .NET khác nhau, đảm bảo khả n
 Có, bạn có thể xử lý hàng loạt nhiều tệp văn bản bằng API Aspose.Words để hợp lý hóa các tác vụ chuyển đổi tài liệu của mình.
 
 ### Tôi có thể tìm thêm tài nguyên và hỗ trợ cho Aspose.Words ở đâu?
- Tham quan[Tài liệu Aspose.Words](https://reference.aspose.com/words/net/)Và[diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8) để biết thêm thông tin và hỗ trợ.
+ Ghé thăm[Tài liệu Aspose.Words](https://reference.aspose.com/words/net/)Và[diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8) để biết thêm thông tin và hỗ trợ.

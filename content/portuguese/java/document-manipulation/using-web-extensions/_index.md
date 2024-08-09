@@ -26,7 +26,7 @@ Para adicionar um painel de tarefas de extensão da web a um documento, siga est
 Document doc = new Document();
 ```
 
-##  Criar uma`TaskPane` instance and add it to the document's web extension task panes:
+##  Crie um`TaskPane` instance and add it to the document's web extension task panes:
 
 ```java
 TaskPane taskPane = new TaskPane();

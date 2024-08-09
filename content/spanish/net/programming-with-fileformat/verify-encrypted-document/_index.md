@@ -52,7 +52,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 Console.WriteLine(info.IsEncrypted);
 ```
 
-Eso es todo ! Ha comprobado con éxito si un documento está cifrado usando Aspose.Words para .NET.
+¡Eso es todo! Ha comprobado con éxito si un documento está cifrado usando Aspose.Words para .NET.
 
 ## Conclusión
 

@@ -2,106 +2,122 @@
 title: Číst vlastnosti Active XControl ze souboru aplikace Word
 linktitle: Číst vlastnosti Active XControl ze souboru aplikace Word
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Číst vlastnosti ovládacích prvků ActiveX v souboru aplikace Word pomocí Aspose.Words for .NET.
+description: Naučte se číst vlastnosti ovládacího prvku ActiveX ze souborů aplikace Word pomocí Aspose.Words for .NET v podrobném průvodci. Vylepšete své dovednosti v oblasti automatizace dokumentů.
 type: docs
 weight: 10
 url: /cs/net/working-with-oleobjects-and-activex/read-active-xcontrol-properties/
 ---
+## Zavedení
 
-V tomto podrobném průvodci vám ukážeme, jak číst vlastnosti ovládacích prvků ActiveX v souboru aplikace Word pomocí Aspose.Words for .NET. Poskytneme vám kompletní zdrojový kód a ukážeme vám, jak formátovat výstup markdown.
+V dnešní digitální době je automatizace klíčem ke zvýšení produktivity. Pokud pracujete s dokumenty aplikace Word, které obsahují ovládací prvky ActiveX, možná budete muset pro různé účely přečíst jejich vlastnosti. Ovládací prvky ActiveX, jako jsou zaškrtávací políčka a tlačítka, mohou obsahovat důležitá data. Pomocí Aspose.Words for .NET můžete tato data efektivně extrahovat a programově s nimi manipulovat.
 
-## Krok 1: Inicializace dokumentu
+## Předpoklady
 
- Prvním krokem je inicializace`Document` objekt načtením dokumentu aplikace Word obsahující ovládací prvky ActiveX. Nezapomeňte vyměnit`MyDir` se skutečnou cestou k adresáři obsahujícímu dokument.
+Než začneme, ujistěte se, že máte následující:
+
+1.  Aspose.Words for .NET Library: Můžete si ji stáhnout z[zde](https://releases.aspose.com/words/net/).
+2. Visual Studio nebo jakékoli C# IDE: Chcete-li napsat a spustit váš kód.
+3. Dokument aplikace Word s ovládacími prvky ActiveX: Například „ovládací prvky ActiveX.docx“.
+4. Základní znalost C#: Nutná je znalost programování v C#.
+
+## Importovat jmenné prostory
+
+Nejprve importujme potřebné jmenné prostory pro práci s Aspose.Words pro .NET.
 
 ```csharp
-Document doc = new Document(MyDir + "ActiveX controls.docx");
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Ole;
+using System;
 ```
 
-## Krok 2: Obnovte ovládací prvky ActiveX
+## Krok 1: Načtěte dokument aplikace Word
 
- V tomto kroku projdeme každou z nich`Shape` dokumentu k načtení ovládacích prvků ActiveX a čtení jejich vlastností.
+Chcete-li začít, budete muset načíst dokument aplikace Word, který obsahuje ovládací prvky ActiveX.
+
+```csharp
+// Cesta k vašemu adresáři dokumentů
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "ActiveX controls.docx");
+```
+
+## Krok 2: Inicializujte vlastnosti řetězce pro podržení
+
+Dále inicializujte prázdný řetězec pro uložení vlastností ovládacích prvků ActiveX.
 
 ```csharp
 string properties = "";
-foreach(Shape shape in doc.GetChildNodes(NodeType.Shape, true))
-{
-     if (shape.OleFormat is null) break;
-
-     OleControl oleControl = shape.OleFormat.OleControl;
-     if (oleControl.IsForms2OleControl)
-     {
-         Forms2OleControl checkBox = (Forms2OleControl)oleControl;
-         properties = properties + "\nCaption: " + checkBox.Caption;
-         properties = properties + "\nValue: " + checkBox.Value;
-         properties = properties + "\nEnabled: " + checkBox.Enabled;
-         properties = properties + "\nType: " + checkBox.Type;
-         if (checkBox. ChildNodes != null)
-         {
-             properties = properties + "\nChildNodes: " + checkBox.ChildNodes;
-         }
-
-         properties += "\n";
-     }
-}
-
-properties = properties + "\nTotal ActiveX Controls found: " + doc.GetChildNodes(NodeType.Shape, true).Count;
-Console.WriteLine("\n" + properties);
 ```
 
-### Příklad zdrojového kódu pro čtení Active XControl Properties pomocí Aspose.Words pro .NET
+## Krok 3: Opakujte tvary v dokumentu
 
-Zde je kompletní zdrojový kód pro čtení vlastností ovládacích prvků ActiveX pomocí Aspose.Words pro .NET:
+Abychom našli ovládací prvky ActiveX, musíme iterovat všechny obrazce v dokumentu.
 
 ```csharp
-	Document doc = new Document(MyDir + "ActiveX controls.docx");
+foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))
+{
+    if (shape.OleFormat is null) continue;
+    
+    OleControl oleControl = shape.OleFormat.OleControl;
+    if (oleControl.IsForms2OleControl)
+    {
+        // Zpracujte ovládací prvek ActiveX
+    }
+}
+```
 
-	string properties = "";
-	foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))
-	{
-		if (shape.OleFormat is null) break;
+## Krok 4: Extrahujte vlastnosti z ovládacích prvků ActiveX
 
-		OleControl oleControl = shape.OleFormat.OleControl;
-		if (oleControl.IsForms2OleControl)
-		{
-			Forms2OleControl checkBox = (Forms2OleControl) oleControl;
-			properties = properties + "\nCaption: " + checkBox.Caption;
-			properties = properties + "\nValue: " + checkBox.Value;
-			properties = properties + "\nEnabled: " + checkBox.Enabled;
-			properties = properties + "\nType: " + checkBox.Type;
-			if (checkBox.ChildNodes != null)
-			{
-				properties = properties + "\nChildNodes: " + checkBox.ChildNodes;
-			}
+V rámci smyčky zkontrolujte, zda je ovládací prvek Forms2OleControl. Pokud ano, odlijte jej a extrahujte vlastnosti.
 
-			properties += "\n";
-		}
-	}
+```csharp
+Forms2OleControl checkBox = (Forms2OleControl) oleControl;
+properties += "\nCaption: " + checkBox.Caption;
+properties += "\nValue: " + checkBox.Value;
+properties += "\nEnabled: " + checkBox.Enabled;
+properties += "\nType: " + checkBox.Type;
 
-	properties = properties + "\nTotal ActiveX Controls found: " + doc.GetChildNodes(NodeType.Shape, true).Count;
-	Console.WriteLine("\n" + properties);
+if (checkBox.ChildNodes != null)
+{
+    properties += "\nChildNodes: " + checkBox.ChildNodes;
+}
+
+properties += "\n";
+```
+
+## Krok 5: Spočítat celkový počet ovládacích prvků ActiveX
+
+Po procházení všemi tvary spočítejte celkový počet nalezených ovládacích prvků ActiveX.
+
+```csharp
+properties += "\nTotal ActiveX Controls found: " + doc.GetChildNodes(NodeType.Shape, true).Count;
+```
+
+## Krok 6: Zobrazte vlastnosti
+
+Nakonec vytiskněte extrahované vlastnosti do konzoly.
+
+```csharp
+Console.WriteLine("\n" + properties);
 ```
 
 ## Závěr
 
-Tato příručka vám ukázala, jak číst vlastnosti ovládacích prvků ActiveX v souboru aplikace Word pomocí Aspose.Words for .NET. Podle popsaných kroků můžete inicializovat dokument, načíst ovládací prvky ActiveX a číst jejich vlastnosti. Jako výchozí bod použijte poskytnutý ukázkový kód a přizpůsobte jej svým konkrétním potřebám.
+tady to máte! Úspěšně jste se naučili číst vlastnosti ovládacího prvku ActiveX z dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento kurz se zabýval načítáním dokumentu, iterací tvarů a extrahováním vlastností z ovládacích prvků ActiveX. Pomocí těchto kroků můžete zautomatizovat extrakci důležitých dat z dokumentů aplikace Word a zvýšit efektivitu pracovního postupu.
 
-Čtení vlastností ovládacích prvků ActiveX umožňuje extrahovat důležité informace ze souborů aplikace Word obsahující tyto ovládací prvky. Aspose.Words for .NET nabízí výkonné funkce pro zpracování textu s ovládacími prvky ActiveX a automatizaci zpracování vašich dokumentů.
+## FAQ
 
-### Nejčastější dotazy
+### Co jsou ovládací prvky ActiveX v dokumentech aplikace Word?
+Ovládací prvky ActiveX jsou interaktivní objekty vložené do dokumentů aplikace Word, jako jsou zaškrtávací políčka, tlačítka a textová pole, používané k vytváření formulářů a automatizaci úloh.
 
-#### Otázka: Jaký je první krok ke čtení vlastností ovládacích prvků ActiveX v souboru aplikace Word?
+### Mohu upravit vlastnosti ovládacích prvků ActiveX pomocí Aspose.Words for .NET?
+Ano, Aspose.Words for .NET umožňuje programově upravovat vlastnosti ovládacích prvků ActiveX.
 
- Odpověď: Prvním krokem je inicializace`Document` objekt načtením dokumentu aplikace Word obsahující ovládací prvky ActiveX. Nezapomeňte vyměnit`MyDir` se skutečnou cestou k adresáři obsahujícímu dokument.
+### Je Aspose.Words for .NET zdarma k použití?
+ Aspose.Words for .NET nabízí bezplatnou zkušební verzi, ale pro další používání si budete muset zakoupit licenci. Můžete získat bezplatnou zkušební verzi[zde](https://releases.aspose.com/).
 
-#### Otázka: Jak dostanu ovládací prvky ActiveX do dokumentu?
+### Mohu používat Aspose.Words pro .NET s jinými jazyky .NET kromě C#?
+Ano, Aspose.Words for .NET lze použít s jakýmkoli jazykem .NET, včetně VB.NET a F#.
 
- A: Chcete-li načíst ovládací prvky ActiveX, musíte každý z nich iterovat`Shape` dokumentu a zkontrolujte, zda se jedná o ovládací prvek ActiveX. Použijte`OleFormat` majetek`Shape` pro přístup k`OleControl` objekt a získat potřebné vlastnosti.
-
-#### Otázka: Jaké vlastnosti ovládacích prvků ActiveX mohu číst?
-
-Odpověď: Můžete číst různé vlastnosti ovládacích prvků ActiveX, jako je titulek, hodnota, stav povoleno nebo zakázáno, typ a podřízené uzly přidružené k ovládacímu prvku.
-
-#### Otázka: Jak mohu získat celkový počet ovládacích prvků ActiveX v dokumentu?
-
- A: Chcete-li získat celkový počet ovládacích prvků ActiveX v dokumentu, můžete použít`GetChildNodes` metoda`Document` objekt určující`NodeType.Shape` typu a včetně podřízených uzlů.
+### Kde najdu další dokumentaci k Aspose.Words pro .NET?
+ Můžete najít podrobnou dokumentaci[zde](https://reference.aspose.com/words/net/).

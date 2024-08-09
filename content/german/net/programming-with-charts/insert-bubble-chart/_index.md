@@ -89,7 +89,7 @@ Herzlichen Glückwunsch! Sie haben mit Aspose.Words für .NET erfolgreich ein Bl
 
 ### Kann ich das Erscheinungsbild des Blasendiagramms anpassen?
 
- Absolut! Aspose.Words für .NET bietet eine breite Palette an Anpassungsoptionen, von Farben und Beschriftungen bis hin zur Formatierung von Datenreihen. Schauen Sie sich die[Dokumentation](https://reference.aspose.com/words/net/) für mehr Details.
+ Absolut! Aspose.Words für .NET bietet eine breite Palette an Anpassungsoptionen, von Farben und Beschriftungen bis hin zur Formatierung von Datenreihen. Schauen Sie sich die[Dokumentation](https://reference.aspose.com/words/net/) für weitere Details.
 
 ### Ist es möglich, einem einzelnen Dokument mehrere Diagramme hinzuzufügen?
 

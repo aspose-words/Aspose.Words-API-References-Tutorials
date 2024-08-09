@@ -61,7 +61,7 @@ doc.save("output.pdf", SaveFormat.PDF);
 
 ## Etapa 4: conversão para outros formatos
 
-Além do PDF, o Aspose.Words for Java permite converter documentos para vários outros formatos. aqui estão alguns exemplos:
+Além do PDF, o Aspose.Words for Java permite converter documentos para vários outros formatos. Aqui estão alguns exemplos:
 
 ### Convertendo para RTF
 
@@ -116,7 +116,7 @@ Para garantir um processo de conversão de documentos tranquilo e eficiente, con
 ## Tratamento de exceções: 
 Ao lidar com um grande número de documentos, podem ocorrer erros durante o processo de conversão. Implemente o tratamento adequado de exceções para identificar e resolver esses problemas normalmente.
 
-## Garantia da Qualidade: 
+## Garantia de qualidade: 
 Antes de implantar o recurso de conversão de documentos em um ambiente de produção, teste exaustivamente o processo de conversão com vários tipos e tamanhos de documentos para verificar a precisão e a fidelidade da saída.
 
 ## Conclusão

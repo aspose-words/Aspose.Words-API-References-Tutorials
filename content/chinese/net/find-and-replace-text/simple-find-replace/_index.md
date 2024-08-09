@@ -105,7 +105,7 @@ doc.Save(dataDir + "FindAndReplace.SimpleFindReplace.docx");
 是的，你可以。只需致电`Replace`方法适用于您想要替换的每个文本。
 
 ### Aspose.Words for .NET 免费吗？
-Aspose.Words for .NET 提供免费试用，但要获得完整功能，您需要购买许可证。查看他们的[价钱](https://purchase.aspose.com/buy)更多细节。
+Aspose.Words for .NET 提供免费试用，但要获得完整功能，您需要购买许可证。查看他们的[定价](https://purchase.aspose.com/buy)了解更多详情。
 
 ### 我可以用格式替换文本吗？
 当然！您可以使用`FindReplaceOptions`班级。

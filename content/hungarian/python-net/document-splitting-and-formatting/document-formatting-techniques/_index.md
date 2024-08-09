@@ -37,7 +37,7 @@ doc.save("basic_document.docx")
 
 ## Betűstílusok és -méretek alkalmazása
 
-Fokozza dokumentuma olvashatóságát és vizuális vonzerejét betűstílusok és -méretek alkalmazásával. A következő kóddal módosíthatja a bekezdés betűstílusát és méretét:
+Fokozza dokumentuma olvashatóságát és vizuális vonzerejét betűstílusok és -méretek alkalmazásával. A következő kóddal módosíthatja egy bekezdés betűstílusát és méretét:
 
 ```python
 # Assuming you have a paragraph object

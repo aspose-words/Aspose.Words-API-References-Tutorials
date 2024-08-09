@@ -9,7 +9,7 @@ url: /tr/net/join-and-append-documents/list-use-destination-styles/
 ---
 ## giriiş
 
-Hiç Word belgelerini birleştirmeyi denediniz mi ve biçimlendirmeyle uğraştınız mı? Bazen yağla suyu karıştırmaya benziyor, değil mi? Bugün Aspose.Words for .NET'i kullanarak sizi bu baş ağrısından kurtaracak harika bir numaraya dalıyoruz. Numaralandırmayı ve stilleri bozmadan listeleri bir belgeden diğerine nasıl aktaracağımızı öğreneceğiz. Hayatınızı biraz daha kolaylaştırmaya hazır mısınız? Başlayalım!
+Hiç Word belgelerini birleştirmeyi denediniz mi ve biçimlendirmeyle uğraştınız mı? Bazen yağla suyu karıştırmaya benziyor, değil mi? Bugün Aspose.Words for .NET'i kullanarak sizi bu baş ağrısından kurtaracak harika bir numaraya dalıyoruz. Numaralandırmayı ve stilleri bozmadan listeleri bir belgeden diğerine nasıl aktaracağımızı öğreneceğiz. Hayatınızı biraz daha kolaylaştırmaya hazır mısınız? Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -41,7 +41,7 @@ Her proje dosyalarınızı düzenlemekle başlar. Kodumuzu belgelerinizin saklan
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgelerinizin saklandığı gerçek yolla. Kolay değil mi?
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgelerinizin saklandığı gerçek yolla. Kolay, değil mi?
 
 ## 2. Adım: Kaynak ve Hedef Belgelerinizi Yükleyin
 
@@ -64,7 +64,7 @@ ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = tr
 
 ## Adım 4: Kaynak Belgeyi Hedef Belgeye Ekleme
 
-Şimdi birleştirme işlemini yapalım. Sihir yapılan yer burasıdır. Belirtilen içe aktarma seçeneklerini kullanırken kaynak belgeyi hedef belgeye ekleriz.
+Şimdi birleştirme işlemini yapalım. Sihrin gerçekleştiği yer burasıdır. Belirtilen içe aktarma seçeneklerini kullanırken kaynak belgeyi hedef belgeye ekleriz.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
@@ -74,7 +74,7 @@ Listeleri olduğu gibi tutarak iki belgeyi başarıyla birleştirdiniz.
 
 ## Çözüm
 
-İşte aldın! Aspose.Words for .NET ile, formatlama sorunları konusunda aklınızı kaybetmeden belgeleri birleştirmek çocuk oyuncağıdır. İster büyük bir proje üzerinde çalışıyor olun, ister sadece bazı dosyaları toparlamanız gerekiyor olsun, bu yöntem listelerinizin net görünmesini sağlayacaktır. Dolayısıyla bir dahaki sefere belge birleştirme ikilemiyle karşılaştığınızda, bu kılavuzu hatırlayın ve bu sorunu bir profesyonel gibi ele alın!
+İşte burada! Aspose.Words for .NET ile, formatlama sorunları konusunda aklınızı kaybetmeden belgeleri birleştirmek çocuk oyuncağıdır. İster büyük bir proje üzerinde çalışıyor olun, ister sadece bazı dosyaları toparlamanız gerekiyor olsun, bu yöntem listelerinizin net görünmesini sağlayacaktır. Dolayısıyla bir dahaki sefere belge birleştirme ikilemiyle karşılaştığınızda, bu kılavuzu hatırlayın ve bu sorunu bir profesyonel gibi ele alın!
 
 ## SSS'ler
 
@@ -82,7 +82,7 @@ Listeleri olduğu gibi tutarak iki belgeyi başarıyla birleştirdiniz.
 Aspose.Words for .NET, Word belgeleriyle programlı olarak çalışmak için güçlü bir kütüphanedir. Çeşitli formatlarda belgeler oluşturmanıza, değiştirmenize ve dönüştürmenize olanak tanır.
 
 ### Aspose.Words for .NET'i nasıl yüklerim?
- adresinden indirebilirsiniz.[İnternet sitesi](https://releases.aspose.com/words/net/) ve kurulum talimatlarını takip edin.[dokümantasyon](https://reference.aspose.com/words/net/).
+ adresinden indirebilirsiniz.[web sitesi](https://releases.aspose.com/words/net/) ve kurulum talimatlarını takip edin.[dokümantasyon](https://reference.aspose.com/words/net/).
 
 ### Aspose.Words'ü ücretsiz kullanabilir miyim?
  Aspose.Words şunları sunar:[ücretsiz deneme](https://releases.aspose.com/) sınırlı özelliklere sahip. Tam erişim için bir lisans satın almanız gerekir[Burada](https://purchase.aspose.com/buy).

@@ -15,7 +15,7 @@ Você deseja criar documentos profissionais com gráficos em .NET? Você está n
 
 Antes de começarmos, certifique-se de ter o seguinte:
 
--  Aspose.Words para .NET: você pode[download](https://releases.aspose.com/words/net/) a versão mais recente ou use um[teste grátis](https://releases.aspose.com/).
+-  Aspose.Words para .NET: você pode[download](https://releases.aspose.com/words/net/) a versão mais recente ou use um[teste gratuito](https://releases.aspose.com/).
 - .NET Framework: certifique-se de ter o .NET instalado em seu sistema.
 - IDE: Um ambiente de desenvolvimento como o Visual Studio.
 
@@ -115,10 +115,10 @@ Aspose.Words for .NET é uma biblioteca que permite criar, modificar e converter
  Você pode baixá-lo em[aqui](https://releases.aspose.com/words/net/) e siga as instruções de instalação fornecidas.
 
 ### Posso usar o Aspose.Words gratuitamente?
- Sim, você pode usar um[teste grátis](https://releases.aspose.com/) ou obter um[licença temporária](https://purchase.aspose.com/temporary-license/).
+ Sim, você pode usar um[teste gratuito](https://releases.aspose.com/) ou obter um[licença temporária](https://purchase.aspose.com/temporary-license/).
 
 ### Onde posso encontrar documentação para Aspose.Words for .NET?
  Documentação detalhada está disponível[aqui](https://reference.aspose.com/words/net/).
 
 ### Como posso obter suporte para Aspose.Words?
- Você pode visitar o[Fórum de suporte](https://forum.aspose.com/c/words/8) para assistência.
+ Você pode visitar o[fórum de suporte](https://forum.aspose.com/c/words/8) para obter assistência.

@@ -118,7 +118,7 @@ Aspose.Words pro Python je všestranná knihovna, která vám umožňuje snadno 
 ## Nejčastější dotazy
 
 ### Jak nainstaluji Aspose.Words pro Python?
- Aspose.Words pro Python můžete nainstalovat stažením z[tady](https://releases.aspose.com/words/python/).
+ Aspose.Words pro Python můžete nainstalovat stažením z[zde](https://releases.aspose.com/words/python/).
 
 ### Mohu klonovat pouze strukturu dokumentu?
 Ano, můžete provést mělký klon, abyste zkopírovali pouze strukturu dokumentu bez obsahu.

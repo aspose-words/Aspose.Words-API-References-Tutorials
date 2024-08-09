@@ -30,7 +30,7 @@ builder.endBookmark("My Bookmark");
 
 ## 第 2 步：訪問書籤
 
-您可以使用書籤的索引或名稱來存取文件中的書籤。就是這樣：
+您可以使用書籤的索引或名稱來存取文件中的書籤。方法如下：
 
 ```java
 Document doc = new Document("Your Directory Path" + "Bookmarks.docx");
@@ -38,7 +38,7 @@ Document doc = new Document("Your Directory Path" + "Bookmarks.docx");
 //按索引：
 Bookmark bookmark1 = doc.getRange().getBookmarks().get(0);
 
-//按名字：
+//按名稱：
 Bookmark bookmark2 = doc.getRange().getBookmarks().get("MyBookmark3");
 ```
 
@@ -57,7 +57,7 @@ bookmark.setText("This is new bookmarked text.");
 
 ## 第 4 步：使用書籤文本
 
-您可以複製新增書籤的文字並將其新增至另一個文件。就是這樣：
+您可以複製新增書籤的文字並將其新增至另一個文件。方法如下：
 
 ```java
 Document srcDoc = new Document("Your Directory Path" + "Bookmarks.docx");

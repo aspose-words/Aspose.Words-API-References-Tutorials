@@ -67,7 +67,7 @@ Bu kod parçacığı, belgedeki ilk tabloyu kopyalamak istediğinizi varsayar. B
 
 ## Adım 4: Tabloyu Klonlayın
 
- kullanarak tabloyu klonlayın.`Clone`yöntem. Bu yöntem, içeriğini ve biçimlendirmesini koruyarak tablonun derin bir kopyasını oluşturur.
+ kullanarak tabloyu klonlayın.`Clone`Yöntem. Bu yöntem, içeriğini ve biçimlendirmesini koruyarak tablonun derin bir kopyasını oluşturur.
 
 ```csharp
 Table tableClone = (Table) table.Clone(true);
@@ -77,7 +77,7 @@ Table tableClone = (Table) table.Clone(true);
 
 ## Adım 5: Klonlanmış Tabloyu Belgeye Ekleme
 
- Klonlanan tabloyu orijinal tablonun hemen sonrasına belgeye ekleyin. Kullan`InsertAfter` bunun için yöntem.
+ Klonlanan tabloyu orijinal tablonun hemen sonrasına belgeye ekleyin. Kullanın`InsertAfter` bunun için yöntem.
 
 ```csharp
 table.ParentNode.InsertAfter(tableClone, table);

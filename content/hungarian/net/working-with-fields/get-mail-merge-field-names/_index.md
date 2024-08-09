@@ -90,7 +90,7 @@ Ez a kódsor kinyomtatja a dokumentumban lévő körlevél-mezők teljes számá
 
 ## Következtetés
 
-Gratulálunk! Most megtanulta, hogyan lehet kivonatolni a körlevél-mezők neveit Word-dokumentumból az Aspose.Words for .NET segítségével. Ez a technika értékes eszköz a dokumentumok munkafolyamatainak kezelésére és automatizálására, megkönnyítve a személyre szabott tartalmak kezelését. Ha követi ezeket a lépéseket, hatékonyan azonosíthatja és kezelheti a dokumentumok körlevél-mezőit.
+Gratulálok! Most megtanulta, hogyan lehet kivonatolni a körlevél-mezők neveit Word-dokumentumból az Aspose.Words for .NET segítségével. Ez a technika értékes eszköz a dokumentumok munkafolyamatainak kezelésére és automatizálására, megkönnyítve a személyre szabott tartalmak kezelését. Ha követi ezeket a lépéseket, hatékonyan azonosíthatja és kezelheti a dokumentumok körlevél-mezőit.
 
  Ha bármilyen kérdése van, vagy további segítségre van szüksége, keresse fel a[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/) vagy csatlakozzon a[Aspose közösség](https://forum.aspose.com/c/words/8) támogatásért. Boldog kódolást!
 

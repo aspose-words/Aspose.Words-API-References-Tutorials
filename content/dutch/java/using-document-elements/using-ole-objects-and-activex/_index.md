@@ -2,7 +2,7 @@
 title: OLE-objecten en ActiveX-besturingselementen gebruiken in Aspose.Words voor Java
 linktitle: OLE-objecten en ActiveX-besturingselementen gebruiken
 second_title: Aspose.Words Java-documentverwerkings-API
-description: Leer OLE-objecten en ActiveX-besturingselementen gebruiken in Aspose.Words voor Java. Creëer eenvoudig interactieve documenten. Begin nu!
+description: Leer OLE-objecten en ActiveX-besturingselementen gebruiken in Aspose.Words voor Java. Creëer eenvoudig interactieve documenten. Ga nu aan de slag!
 type: docs
 weight: 21
 url: /nl/java/using-document-elements/using-ole-objects-and-activex/

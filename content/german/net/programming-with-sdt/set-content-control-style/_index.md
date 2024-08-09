@@ -103,4 +103,4 @@ Ja, Sie können den ursprünglichen Stil vor dem Vornehmen von Änderungen speic
 Auf jeden Fall! Diese Methode funktioniert für verschiedene Dokumentelemente. Passen Sie einfach den Code an, um das gewünschte Element anzusprechen.
 
 ### Unterstützt Aspose.Words andere Plattformen außer .NET?  
-Ja, Aspose.Words ist verfügbar für Java, C++ und andere Plattformen. Überprüfen Sie deren[Dokumentation](https://reference.aspose.com/words/net/) für mehr Details.
+Ja, Aspose.Words ist verfügbar für Java, C++ und andere Plattformen. Überprüfen Sie deren[Dokumentation](https://reference.aspose.com/words/net/) für weitere Details.

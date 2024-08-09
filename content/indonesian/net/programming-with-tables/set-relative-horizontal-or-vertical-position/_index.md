@@ -21,7 +21,7 @@ Sebelum kita mulai, pastikan Anda memiliki hal berikut:
 
 ## Impor Namespace
 
-Hal pertama yang pertama, Anda perlu mengimpor namespace yang diperlukan. Ini penting untuk mengakses fungsi Aspose.Words.
+Hal pertama yang pertama, Anda perlu mengimpor namespace yang diperlukan. Ini penting untuk mengakses fungsionalitas Aspose.Words.
 
 ```csharp
 using Aspose.Words;
@@ -79,7 +79,7 @@ Terakhir, simpan perubahan Anda ke dokumen baru. Ini adalah langkah penting untu
 doc.Save(dataDir + "WorkingWithTables.SetFloatingTablePosition.docx");
 ```
 
-Perintah ini menyimpan dokumen yang diubah dengan nama baru, memastikan Anda tidak menimpa file asli Anda.
+Perintah ini menyimpan dokumen yang dimodifikasi dengan nama baru, memastikan Anda tidak menimpa file asli Anda.
 
 ## Kesimpulan
 

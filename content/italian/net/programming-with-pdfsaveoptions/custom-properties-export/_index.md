@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-pdfsaveoptions/custom-properties-export/
 ---
-## introduzione
+## Introduzione
 
 L'esportazione di proprietà personalizzate in un documento PDF può essere incredibilmente utile per varie esigenze aziendali. Sia che tu stia gestendo metadati per una migliore ricercabilità o incorporando informazioni critiche direttamente nei tuoi documenti, Aspose.Words per .NET rende il processo senza soluzione di continuità. Questo tutorial ti guiderà attraverso la creazione di un documento Word, l'aggiunta di proprietà personalizzate e l'esportazione in un PDF con queste proprietà intatte.
 

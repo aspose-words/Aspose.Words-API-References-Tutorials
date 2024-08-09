@@ -35,7 +35,7 @@ url: /ru/java/table-processing/table-contents-generation/
 В своем Java-коде инициализируйте Aspose.Words, чтобы начать с ним работать.
 
 ```java
-// Инициализируйте Aspose.Words
+// Инициализировать Aspose.Words
 com.aspose.words.Document doc = new com.aspose.words.Document();
 ```
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-table-styles-and-formatting/define-conditional-formatting/
 ---
-## introduzione
+## Introduzione
 
 La formattazione condizionale consente di applicare una formattazione specifica alle celle di una tabella in base a determinati criteri. Questa funzione è incredibilmente utile per enfatizzare le informazioni chiave, rendendo i tuoi documenti più leggibili e visivamente accattivanti. Ti guideremo attraverso il processo passo dopo passo, assicurandoti di poter implementare questa funzionalità senza sforzo.
 
@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DefineConditionalFormatt
 
 ## Conclusione
 
-E il gioco è fatto! Hai definito con successo la formattazione condizionale in un documento di Word utilizzando Aspose.Words per .NET. Seguendo questi passaggi, puoi facilmente evidenziare i dati importanti nelle tue tabelle, rendendo i tuoi documenti più informativi e visivamente accattivanti. La formattazione condizionale è uno strumento potente e padroneggiarla può migliorare significativamente le capacità di elaborazione dei documenti.
+Ed ecco qua! Hai definito con successo la formattazione condizionale in un documento di Word utilizzando Aspose.Words per .NET. Seguendo questi passaggi, puoi facilmente evidenziare i dati importanti nelle tue tabelle, rendendo i tuoi documenti più informativi e visivamente accattivanti. La formattazione condizionale è uno strumento potente e padroneggiarla può migliorare significativamente le capacità di elaborazione dei documenti.
 
 ## Domande frequenti
 

@@ -8,7 +8,7 @@ weight: 10
 url: /cs/python-net/document-conversion/python-document-conversion/
 ---
 
-## Úvod
+## Zavedení
 
 Ve světě výměny informací hrají dokumenty zásadní roli. Ať už se jedná o obchodní zprávu, právní smlouvu nebo vzdělávací úkol, dokumenty jsou nedílnou součástí našeho každodenního života. S velkým množstvím dostupných formátů dokumentů však může být jejich správa, sdílení a zpracování náročným úkolem. Zde se konverze dokumentů stává zásadní.
 

@@ -163,7 +163,7 @@ Evet, belirli koşullara bağlı olarak hücrelere koşullu biçimlendirme uygul
 
 ### Tablomu PDF veya DOCX gibi farklı formatlara nasıl aktarabilirim?
 
- Aspose.Words for Java, çeşitli formatlara aktarma seçenekleri sunar. Belgenizi PDF veya DOCX dosyası olarak kaydedebilirsiniz.`Save` yöntem. İşte bir örnek:
+ Aspose.Words for Java, çeşitli formatlara aktarma seçenekleri sunar. Belgenizi PDF veya DOCX dosyası olarak kaydedebilirsiniz.`Save` Yöntem. İşte bir örnek:
 
 ```java
 doc.save("output.pdf", SaveFormat.PDF);

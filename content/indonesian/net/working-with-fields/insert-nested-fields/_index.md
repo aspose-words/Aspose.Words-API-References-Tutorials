@@ -2,7 +2,7 @@
 title: Sisipkan Bidang Bersarang
 linktitle: Sisipkan Bidang Bersarang
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menyisipkan bidang bertingkat di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. Sempurna untuk pengembang yang ingin mengotomatiskan pembuatan dokumen.
+description: Pelajari cara menyisipkan bidang bertumpuk di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. Sempurna untuk pengembang yang ingin mengotomatiskan pembuatan dokumen.
 type: docs
 weight: 10
 url: /id/net/working-with-fields/insert-nested-fields/

@@ -9,7 +9,7 @@ url: /zh-hant/net/add-content-using-documentbuilder/insert-tcfield/
 ---
 ## 介紹
 
-嘿！如果您正在進入文檔自動化的世界，那麼您來對地方了。今天，我們將探討如何使用 Aspose.Words for .NET 將 TC（目錄）欄位插入 Word 文件中。相信我，在本教程結束時，您會感覺自己就像一個在 Word 文件中施展咒語的巫師。準備好開始了嗎？我們開工吧！
+嘿！如果您正在進入文檔自動化的世界，那麼您來對地方了。今天，我們將探討如何使用 Aspose.Words for .NET 將 TC（目錄）欄位插入 Word 文件中。相信我，在本教程結束時，您會感覺自己就像一個在 Word 文件中施展咒語的巫師。準備好開始了嗎？讓我們這樣做吧！
 
 ## 先決條件
 
@@ -79,7 +79,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTCField.docx");
 
 ## 結論
 
-現在你就擁有了！我們已經介紹如何使用 Aspose.Words for .NET 將 TC 欄位插入 Word 文件中。這很簡單，對吧？有了這些技能，您現在可以像專業人士一樣自動化和自訂您的 Word 文件。如果您有任何疑問或遇到任何問題，請隨時查看[Aspose.Words 文檔](https://reference.aspose.com/words/net/)或聯絡他們[支援論壇](https://forum.aspose.com/c/words/8)。快樂編碼！
+現在你就得到它了！我們已經介紹如何使用 Aspose.Words for .NET 將 TC 欄位插入 Word 文件中。這很簡單，對吧？有了這些技能，您現在可以像專業人士一樣自動化和自訂您的 Word 文件。如果您有任何疑問或遇到任何問題，請隨時查看[Aspose.Words 文檔](https://reference.aspose.com/words/net/)或聯絡他們[支援論壇](https://forum.aspose.com/c/words/8)。快樂編碼！
 
 ## 常見問題解答
 

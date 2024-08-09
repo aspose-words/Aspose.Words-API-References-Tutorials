@@ -15,7 +15,7 @@ Apakah Anda lelah berurusan dengan dokumen Word raksasa yang sulit dinavigasi? B
 
 Sebelum kita menyelami seluk beluknya, mari pastikan kita memiliki semua yang kita perlukan untuk bekerja dengan Aspose.Words untuk .NET:
 
-1.  Aspose.Words untuk .NET Library: Anda harus memiliki perpustakaan ini. Kamu bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+1.  Aspose.Words untuk .NET Library: Anda harus memiliki perpustakaan ini. Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Visual Studio atau IDE lain yang kompatibel dengan .NET.
 3. Pemahaman Dasar C#: Jika Anda di sini, saya rasa Anda sudah nyaman dengan C#.
 
@@ -98,7 +98,7 @@ Dan itu dia! Memisahkan dokumen Word berdasarkan bagian-bagiannya menggunakan As
 Aspose.Words for .NET adalah perpustakaan yang kuat untuk bekerja dengan dokumen Word secara terprogram. Hal ini memungkinkan pengembang untuk membuat, memodifikasi, dan mengelola dokumen Word dalam aplikasi .NET mereka.
 
 ### Bagaimana saya bisa mendapatkan uji coba gratis Aspose.Words untuk .NET?
- Kamu bisa[unduh uji coba gratis](https://releases.aspose.com/) dari Aspose.Words untuk .NET dari situs web Aspose.
+ Anda bisa[unduh uji coba gratis](https://releases.aspose.com/) dari Aspose.Words untuk .NET dari situs web Aspose.
 
 ### Bisakah saya membagi dokumen berdasarkan kriteria lain menggunakan Aspose.Words untuk .NET?
 Ya, Anda dapat membagi dokumen berdasarkan berbagai kriteria seperti paragraf, halaman, atau penanda khusus dengan memodifikasi logika kode yang sesuai.

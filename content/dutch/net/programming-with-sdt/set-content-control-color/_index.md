@@ -61,7 +61,7 @@ Wijzig de kleureigenschap van de SDT. Hier stellen we de kleur in op rood:
 sdt.Color = Color.Red;
 ```
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Sla het bijgewerkte document op in een nieuw bestand:
 
@@ -77,7 +77,7 @@ Het wijzigen van de kleur van een gestructureerde documenttag in een Word-docume
 
 ### Kan ik verschillende kleuren gebruiken voor SDT's?
 
- Ja, u kunt elke kleur gebruiken die beschikbaar is in de`System.Drawing.Color` klas. U kunt bijvoorbeeld gebruiken`Color.Blue`, `Color.Green`, enz.
+ Ja, u kunt elke kleur gebruiken die beschikbaar is in de`System.Drawing.Color` klas. U kunt bijvoorbeeld gebruiken`Color.Blue`, `Color.Green`enz.
 
 ### Hoe wijzig ik de kleur van meerdere SDT's in een document?
 
@@ -85,7 +85,7 @@ U moet alle SDT's in het document doorlopen en de kleurwijziging op elke SDT toe
 
 ### Is het mogelijk om naast kleur ook andere eigenschappen van SDT's in te stellen?
 
- Ja de`StructuredDocumentTag` class heeft verschillende eigenschappen die u kunt instellen, waaronder lettergrootte, letterstijl en meer. Raadpleeg de Aspose.Words-documentatie voor meer details.
+ Ja, de`StructuredDocumentTag` class heeft verschillende eigenschappen die u kunt instellen, waaronder lettergrootte, letterstijl en meer. Raadpleeg de Aspose.Words-documentatie voor meer details.
 
 ### Kan ik gebeurtenissen toevoegen aan SDT's, zoals klikgebeurtenissen?
 

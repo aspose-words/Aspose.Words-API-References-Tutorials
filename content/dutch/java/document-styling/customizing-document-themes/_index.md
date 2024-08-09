@@ -51,7 +51,7 @@ doc.save("customized.docx");
 
 ### Themakleuren aanpassen
 
-U kunt themakleuren eenvoudig wijzigen met Aspose.Words voor Java. Hier is hoe:
+U kunt themakleuren eenvoudig wijzigen met Aspose.Words voor Java. Hier ziet u hoe:
 
 ```java
 // Laad het document

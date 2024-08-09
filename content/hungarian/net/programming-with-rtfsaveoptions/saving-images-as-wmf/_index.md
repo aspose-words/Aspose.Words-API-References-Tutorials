@@ -9,7 +9,7 @@ url: /hu/net/programming-with-rtfsaveoptions/saving-images-as-wmf/
 ---
 ## Bevezetés
 
-Sziasztok, fejlesztő kollégák! Gondolkozott már azon, hogyan menthet képeket WMF-ként (Windows Metafile) Word-dokumentumaiba az Aspose.Words for .NET használatával? Nos, jó helyen jársz! Ebben az oktatóanyagban belemerülünk az Aspose.Words for .NET világába, és megvizsgáljuk, hogyan menthetünk képeket WMF-ként. Rendkívül praktikus a képminőség megőrzéséhez és a különböző platformok közötti kompatibilitás biztosításához. Kész? Kezdjük el!
+Sziasztok, fejlesztő kollégák! Gondolkozott már azon, hogyan menthet képeket WMF-ként (Windows Metafile) Word-dokumentumaiba az Aspose.Words for .NET használatával? Nos, jó helyen jársz! Ebben az oktatóanyagban belemerülünk az Aspose.Words for .NET világába, és megvizsgáljuk, hogyan menthetünk képeket WMF-ként. Rendkívül praktikus a képminőség megőrzéséhez és a különböző platformok közötti kompatibilitás biztosításához. Kész? Kezdjük is!
 
 ## Előfeltételek
 
@@ -78,7 +78,7 @@ Igen, az Aspose.Words for .NET különféle képformátumokat támogat, mint pé
  Igen, az Aspose.Words for .NET használatához licenc szükséges. Vásárolhat egyet[itt](https://purchase.aspose.com/buy) vagy ideiglenes engedélyt szerezni[itt](https://purchase.aspose.com/temporary-license/).
 
 ### Kaphatok támogatást, ha problémákba ütközöm?
- Egyértelműen! Az Aspose átfogó támogatást kínál fórumaikon keresztül. Hozzáférhet a támogatáshoz[itt](https://forum.aspose.com/c/words/8).
+ Határozottan! Az Aspose átfogó támogatást kínál fórumaikon keresztül. Hozzáférhet a támogatáshoz[itt](https://forum.aspose.com/c/words/8).
 
 ### Vannak speciális rendszerkövetelmények az Aspose.Words for .NET számára?
 Az Aspose.Words for .NET kompatibilis a .NET Framework, a .NET Core és a .NET Standard szabványokkal. Győződjön meg arról, hogy fejlesztői környezete megfelel ezeknek a követelményeknek.

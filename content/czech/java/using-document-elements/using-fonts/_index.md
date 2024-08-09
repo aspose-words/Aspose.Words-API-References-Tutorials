@@ -10,7 +10,7 @@ url: /cs/java/using-document-elements/using-fonts/
 
 Ve světě zpracování dokumentů vyniká Aspose.Words for Java jako výkonný nástroj, který umožňuje vývojářům snadno vytvářet a manipulovat s dokumenty Word. Jedním ze základních aspektů formátování dokumentů je práce s písmy a v tomto podrobném tutoriálu prozkoumáme, jak efektivně používat písma v Aspose.Words for Java.
 
-## Úvod
+## Zavedení
 
 Písma hrají zásadní roli v designu a čitelnosti dokumentu. Aspose.Words for Java poskytuje komplexní sadu funkcí pro formátování písem, které vám umožňují ovládat různé aspekty vzhledu textu, jako je velikost, styl, barva a další.
 
@@ -18,7 +18,7 @@ Písma hrají zásadní roli v designu a čitelnosti dokumentu. Aspose.Words for
 
 Než se ponoříte do kódu, ujistěte se, že máte splněny následující předpoklady:
 
-1.  Knihovna Aspose.Words for Java: Ujistěte se, že jste si stáhli a nainstalovali knihovnu Aspose.Words for Java. Můžeš[stáhněte si jej zde](https://releases.aspose.com/words/java/).
+1.  Knihovna Aspose.Words for Java: Ujistěte se, že jste si stáhli a nainstalovali knihovnu Aspose.Words for Java. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/java/).
 
 2. Vývojové prostředí Java: Ujistěte se, že máte nastavené vývojové prostředí Java.
 
@@ -69,7 +69,7 @@ public class FontFormattingDemo {
 
 ## Závěr
 
-Gratulujeme! Naučili jste se pracovat s fonty v Aspose.Words pro Javu. Tyto znalosti vám umožní vytvářet krásně formátované dokumenty přizpůsobené vašim specifickým požadavkům.
+Gratuluji! Naučili jste se pracovat s fonty v Aspose.Words pro Javu. Tyto znalosti vám umožní vytvářet krásně formátované dokumenty přizpůsobené vašim specifickým požadavkům.
 
  Pokud jste to ještě neudělali,[stáhněte si Aspose.Words pro Javu](https://releases.aspose.com/words/java/) nyní a začněte vylepšovat své možnosti zpracování dokumentů.
 

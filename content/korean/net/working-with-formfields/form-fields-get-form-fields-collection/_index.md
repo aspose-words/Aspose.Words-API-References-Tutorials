@@ -2,91 +2,98 @@
 title: 양식 필드 양식 필드 컬렉션 가져오기
 linktitle: 양식 필드 양식 필드 컬렉션 가져오기
 second_title: Aspose.Words 문서 처리 API
-description: .NET용 Aspose.Words를 사용하여 Word 문서에서 양식 필드 컬렉션을 검색하고 조작하는 방법을 알아보세요.
+description: 포괄적인 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 양식 필드를 가져오고 조작하는 방법을 알아보세요.
 type: docs
 weight: 10
 url: /ko/net/working-with-formfields/form-fields-get-form-fields-collection/
 ---
+## 소개
 
-이 단계별 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에서 양식 필드 컬렉션을 검색하는 방법을 안내합니다. 제공된 C# 소스 코드를 설명하고 이를 자신의 프로젝트에 구현하는 방법을 보여 드리겠습니다.
+Word 문서에서 양식 필드를 조작하는 세계로 뛰어들 준비가 되셨습니까? 문서 생성을 자동화하거나 단순히 양식을 보다 효율적으로 처리해야 하는 경우 Aspose.Words for .NET이 가장 적합한 도구입니다. Word 문서에서 양식 필드 컬렉션을 가져와서 단계별로 작업하는 방법을 살펴보겠습니다.
 
- 시작하려면 개발 환경에 Aspose.Words for .NET이 설치 및 설정되어 있는지 확인하세요. 아직 수행하지 않은 경우 다음에서 라이브러리를 다운로드하여 설치하십시오.[Aspose.Releases]https://releases.aspose.com/words/net/.
+## 전제 조건
 
-## 1단계: 문서 개체 초기화
+코드를 시작하기 전에 시작하는 데 필요한 모든 것이 갖추어져 있는지 확인하겠습니다.
 
- 먼저, 초기화`Document` 양식 필드가 포함된 소스 문서에 대한 경로를 제공하여 개체를 만듭니다.
+1.  .NET용 Aspose.Words: 최신 버전의 .NET용 Aspose.Words가 설치되어 있는지 확인하세요. 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/net/).
+2. 개발 환경: .NET 코드를 작성하고 실행하기 위한 Visual Studio와 같은 IDE입니다.
+3. .NET Framework: 프로젝트가 호환 가능한 .NET Framework 버전을 대상으로 하는지 확인하세요.
+
+## 네임스페이스 가져오기
+
+코딩을 시작하기 전에 필요한 네임스페이스를 가져와야 합니다. 이렇게 하면 전체 클래스 이름을 반복적으로 작성하는 것을 방지하여 코드를 더욱 깔끔하고 읽기 쉽게 만들 수 있습니다.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+Aspose.Words for .NET을 사용하여 Word 문서에서 양식 필드를 가져오고 조작하는 프로세스를 분석해 보겠습니다.
+
+## 1단계: 문서 로드
+
+먼저 양식 필드가 포함된 Word 문서를 로드해야 합니다. 이 문서가 출발점이 될 것입니다.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Form fields.docx");
 ```
 
-## 2단계: 양식 필드 컬렉션 검색
+ 설명: 여기,`dataDir` Word 문서가 포함된 디렉터리의 경로입니다. 우리는 새로운 것을 만듭니다`Document` 개체를 지정하고 파일을 로드합니다.`Form fields.docx`.
 
- 다음으로`FormFields` 의 재산`Range` 문서의 개체를 사용하여 양식 필드 컬렉션을 검색합니다.
+## 2단계: 양식 필드 컬렉션 가져오기
+
+문서가 로드되면 다음 단계는 양식 필드 컬렉션에 액세스하는 것입니다. 이 컬렉션을 사용하면 필요에 따라 개별 양식 필드를 조작할 수 있습니다.
 
 ```csharp
 FormFieldCollection formFields = doc.Range.FormFields;
 ```
 
- 이제 Word 문서의 양식 필드 컬렉션이`formFields` 변하기 쉬운.
+ 설명:`FormFields` 의 재산`Range` 개체를 사용하면 문서의 양식 필드에 액세스할 수 있습니다. 우리는 이 컬렉션을`formFields` 추가 조작을 위한 변수입니다.
 
-## 3단계: 양식 필드 액세스 및 조작
+## 3단계: 양식 필드 조작
 
-양식 필드 컬렉션을 반복하고 각 양식 필드에 대해 값 가져오기 또는 설정, 서식 수정, 정보 추출 등 다양한 작업을 수행할 수 있습니다.
+이제 양식 필드 컬렉션이 있으므로 요구 사항에 따라 각 양식 필드에 액세스하고 조작할 수 있습니다. 특정 양식 필드의 값을 변경한다고 가정해 보겠습니다.
 
 ```csharp
 foreach (FormField formField in formFields)
 {
-    // 각 양식 필드에 액세스하고 조작합니다.
-    // ...
+    if (formField.Type == FieldType.FieldFormTextInput)
+    {
+        formField.Result = "New Value";
+    }
 }
 ```
 
-## 4단계: 문서 저장
+설명: 이 예에서는 컬렉션의 각 양식 필드를 반복합니다. 양식 필드가 텍스트 입력인 경우(`FieldType.FieldFormTextInput`), 해당 값을 "새 값"으로 변경합니다.
 
-마지막으로 필요한 경우 수정된 문서를 저장합니다.
+## 4단계: 수정된 문서 저장
+
+양식 필드에 필요한 사항을 변경한 후 마지막 단계는 수정된 문서를 저장하는 것입니다.
 
 ```csharp
 doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
-그게 다야! Aspose.Words for .NET을 사용하여 Word 문서에서 양식 필드 컬렉션을 성공적으로 검색했습니다.
+ 설명: 수정된 문서를 다음 이름으로 저장합니다.`ModifiedFormFields.docx` 같은 디렉토리에 있습니다.
 
-### 양식 필드의 예제 소스 코드 .NET용 Aspose.Words를 사용하여 양식 필드 컬렉션 가져오기
+## 결론
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(dataDir + "Form fields.docx");
+축하해요! .NET용 Aspose.Words를 사용하여 Word 문서에서 양식 필드를 가져오고 조작하는 방법을 배웠습니다. 이 강력한 라이브러리를 사용하면 문서 처리 작업을 쉽게 자동화하여 시간과 노력을 절약할 수 있습니다.
 
-FormFieldCollection formFields = doc.Range.FormFields;
+## FAQ
 
-// 필요에 따라 양식 필드에 액세스하고 조작합니다.
-// ...
+### .NET용 Aspose.Words란 무엇입니까?
+Aspose.Words for .NET은 .NET 애플리케이션에서 Word 문서 작업을 위한 포괄적인 라이브러리입니다. 이를 통해 프로그래밍 방식으로 Word 문서를 생성, 편집, 변환 및 조작할 수 있습니다.
 
-doc.Save(dataDir + "ModifiedFormFields.docx");
-```
+### 웹 애플리케이션에서 .NET용 Aspose.Words를 사용할 수 있나요?
+예, Aspose.Words for .NET은 웹 애플리케이션, 데스크톱 애플리케이션 및 서비스를 포함한 다양한 유형의 애플리케이션에서 사용할 수 있습니다.
 
-자신의 프로젝트에서 이 코드를 자유롭게 사용하고 특정 요구 사항에 따라 수정하십시오.
+### .NET용 Aspose.Words는 무료인가요?
+Aspose.Words for .NET은 무료 평가판을 제공하지만 전체 기능을 사용하려면 라이선스가 필요합니다. 임시면허를 취득할 수 있습니다.[여기](https://purchase.aspose.com/temporary-license/).
 
-### FAQ
+### .NET용 Aspose.Words에 대한 설명서는 어디서 찾을 수 있나요?
+ .NET용 Aspose.Words에 대한 문서를 찾을 수 있습니다.[여기](https://reference.aspose.com/words/net/).
 
-#### Q: Aspose.Words의 양식 필드 컬렉션에 어떻게 액세스할 수 있나요?
-
- A: Aspose.Words의 양식 필드 컬렉션에 액세스하려면 다음을 사용할 수 있습니다.`Document.FormFields` 재산. 이 속성은 문서에 있는 양식 필드의 전체 컬렉션을 반환합니다.
-
-#### Q: 양식 필드를 반복하고 각 필드에 대해 작업을 수행하려면 어떻게 해야 합니까?
-
- A: 다음을 사용하여 양식 필드를 반복할 수 있습니다.`foreach` 루프에`Document.FormFields` 수집. 각 반복에서 속성에 액세스하고 양식 필드에서 특정 작업을 수행할 수 있습니다.
-
-#### Q: 특정 유형의 필드만 가져오도록 양식 필드 컬렉션을 필터링할 수 있습니까?
-
-A: 예, 반복 루프에서 적절한 조건을 사용하여 양식 필드 컬렉션을 필터링할 수 있습니다. 예를 들어 각 항목의 필드 종류를 확인하고, 기준에 맞는 필드에 대해서만 작업을 수행할 수 있습니다.
-
-#### Q: 컬렉션에서 특정 양식 필드를 제거하려면 어떻게 해야 합니까?
-
- A: 컬렉션에서 특정 양식 필드를 제거하려면`FormField.Remove` 제거하려는 필드를 지정하는 메서드입니다. 이 메소드는 컬렉션에서 양식 필드를 제거합니다.
-
-#### Q: Aspose.Words에서 양식 필드의 속성을 수정하는 것이 가능합니까?
-
-A: 예, Aspose.Words의 개별 속성에 액세스하여 양식 필드의 속성을 변경할 수 있습니다. 예를 들어, 적절한 속성을 사용하여 양식 필드의 이름, 값 또는 옵션을 변경할 수 있습니다.
+### .NET용 Aspose.Words에 대한 지원을 받으려면 어떻게 해야 합니까?
+ 지원 포럼을 통해 Aspose.Words for .NET에 대한 지원을 받을 수 있습니다.[여기](https://forum.aspose.com/c/words/8).

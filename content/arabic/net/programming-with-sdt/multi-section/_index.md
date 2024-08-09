@@ -48,7 +48,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## الخطوة 2: قم بتحميل المستند
 
- استخدم ال`Document` فئة لتحميل مستند Word الخاص بك. تتيح لك هذه الفئة فتح المستند ومعالجته برمجيًا.
+ استخدم`Document` فئة لتحميل مستند Word الخاص بك. تتيح لك هذه الفئة فتح المستند ومعالجته برمجيًا.
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");

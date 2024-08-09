@@ -18,7 +18,7 @@ Sebelum kita membahas lebih dalam, pastikan kita memiliki semua yang kita butuhk
 1.  Aspose.Words untuk .NET: Pastikan Anda memiliki versi terbaru.[Unduh di sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Visual Studio atau IDE lain yang kompatibel dengan C#.
 3. Pengetahuan Dasar tentang C#: Ada baiknya jika Anda memiliki sedikit pemahaman tentang C# dan kerangka .NET.
-4. Lisensi: Anda dapat menggunakan lisensi sementara jika Anda tidak memiliki lisensi penuh. Mendapatkan[Di Sini](https://purchase.aspose.com/temporary-license/).
+4. Lisensi: Anda dapat menggunakan lisensi sementara jika Anda tidak memiliki lisensi penuh. Dapatkan itu[Di Sini](https://purchase.aspose.com/temporary-license/).
 
 ## Impor Namespace
 

@@ -75,7 +75,7 @@ Wis de inhoud van de gestructureerde documenttag.
    sdt.Clear();
    ```
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Sla ten slotte het gewijzigde document op.
 

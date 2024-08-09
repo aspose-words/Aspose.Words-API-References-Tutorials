@@ -16,8 +16,8 @@ Als u een ontwikkelaar bent die het maken en opmaken van Word-documenten wil aut
 Voordat we op de details ingaan, zorgen we ervoor dat je alles hebt wat je nodig hebt om deze tutorial te volgen.
 
 1. Ontwikkelomgeving: Zorg ervoor dat u een ontwikkelomgeving hebt ingesteld. Visual Studio is een goede keuze.
-2.  Aspose.Words voor .NET: Download en installeer de Aspose.Words voor .NET-bibliotheek. Je kan het krijgen[hier](https://releases.aspose.com/words/net/).
-3.  Licentie: Zorg voor een tijdelijke licentie als u niet over een volledige licentie beschikt. Snap je[hier](https://purchase.aspose.com/temporary-license/).
+2.  Aspose.Words voor .NET: Download en installeer de Aspose.Words voor .NET-bibliotheek. Je kunt het krijgen[hier](https://releases.aspose.com/words/net/).
+3.  Licentie: Zorg voor een tijdelijke licentie als u niet over een volledige licentie beschikt. Krijg het[hier](https://purchase.aspose.com/temporary-license/).
 4. Basiskennis van C#: Bekendheid met C# en .NET-framework is een voordeel.
 
 ## Naamruimten importeren

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-digital-signatures/sign-document/
 ---
-## Úvod
+## Zavedení
 
 V dnešním digitálním světě je zabezpečení dokumentů důležitější než kdy jindy. Digitální podpisy poskytují způsob, jak zajistit pravost a integritu vašich dokumentů. Pokud chcete podepsat dokument aplikace Word programově pomocí Aspose.Words for .NET, jste na správném místě. Tento průvodce vás provede celým procesem, krok za krokem, jednoduchým a poutavým způsobem.
 
@@ -15,7 +15,7 @@ V dnešním digitálním světě je zabezpečení dokumentů důležitější ne
 
 Než se ponoříte do kódu, musíte mít připraveno několik věcí:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou nejnovější verzi Aspose.Words pro .NET. Můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou nejnovější verzi Aspose.Words pro .NET. Můžete si jej stáhnout[zde](https://releases.aspose.com/words/net/).
 2. Prostředí .NET: Ujistěte se, že máte nastavené vývojové prostředí .NET (např. Visual Studio).
 3. Digitální certifikát: Získejte digitální certifikát (např. soubor .pfx) pro podepisování dokumentů.
 4. Dokument k podpisu: Připravte si dokument aplikace Word, který chcete podepsat.
@@ -104,7 +104,7 @@ K vytvoření digitálního podpisu je potřeba digitální certifikát. Obsahuj
 Ano, pokud soubor .pfx obsahuje platný digitální certifikát a máte heslo pro přístup k němu.
 
 ### Je Aspose.Words for .NET zdarma k použití?
- Aspose.Words for .NET je komerční knihovna. Můžete si stáhnout bezplatnou zkušební verzi[tady](https://releases.aspose.com/) , ale pro plnou funkčnost si budete muset zakoupit licenci. Můžete si to koupit[tady](https://purchase.aspose.com/buy).
+ Aspose.Words for .NET je komerční knihovna. Můžete si stáhnout bezplatnou zkušební verzi[zde](https://releases.aspose.com/) , ale pro plnou funkčnost si budete muset zakoupit licenci. Můžete si to koupit[zde](https://purchase.aspose.com/buy).
 
 ### Kde najdu další informace o Aspose.Words pro .NET?
- Můžete najít komplexní dokumentaci[tady](https://reference.aspose.com/words/net/) a podporu[tady](https://forum.aspose.com/c/words/8).
+ Můžete najít komplexní dokumentaci[zde](https://reference.aspose.com/words/net/) a podporu[zde](https://forum.aspose.com/c/words/8).

@@ -7,15 +7,15 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-digital-signatures/signing-existing-signature-line/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Stalo se vám někdy, že jste potřebovali podepsat digitální dokument, ale bylo vám to trochu nepříjemné? Máte štěstí, protože dnes se ponoříme do toho, jak můžete bez námahy podepsat existující řádek podpisu v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento tutoriál vás provede procesem krok za krokem a zajistí, že tento úkol zvládnete během okamžiku.
+Ahoj! Stalo se vám někdy, že jste potřebovali podepsat digitální dokument, ale bylo vám to trochu nepříjemné? Máte štěstí, protože dnes se ponoříme do toho, jak můžete bez námahy podepsat existující řádek podpisu v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento tutoriál vás provede procesem krok za krokem a zajistí, že tento úkol zvládnete během okamžiku.
 
 ## Předpoklady
 
 Než se ponoříme do naprostých detailů, ujistěte se, že máme vše, co potřebujeme:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words for .NET. Pokud jste tak ještě neučinili, můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words for .NET. Pokud jste tak ještě neučinili, můžete si ji stáhnout[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Visual Studio nebo jakékoli jiné IDE kompatibilní s C#.
 3. Dokument a certifikát: Dokument aplikace Word s řádkem podpisu a digitálním certifikátem (soubor PFX).
 4. Základní znalost C#: Výhodou bude znalost programování v C#.
@@ -94,7 +94,7 @@ Aspose.Words for .NET je výkonná knihovna pro práci s dokumenty Wordu v aplik
 
 ### Kde mohu získat bezplatnou zkušební verzi Aspose.Words pro .NET?
 
- Můžete si stáhnout bezplatnou zkušební verzi[tady](https://releases.aspose.com/).
+ Můžete si stáhnout bezplatnou zkušební verzi[zde](https://releases.aspose.com/).
 
 ### Mohu pro podpis použít jakýkoli formát obrázku?
 
@@ -106,4 +106,4 @@ Digitální certifikáty můžete zakoupit online od různých poskytovatelů. U
 
 ### Kde najdu další dokumentaci k Aspose.Words pro .NET?
 
- Můžete najít rozsáhlou dokumentaci[tady](https://reference.aspose.com/words/net/).
+ Můžete najít rozsáhlou dokumentaci[zde](https://reference.aspose.com/words/net/).

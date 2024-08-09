@@ -59,7 +59,7 @@ Có, bạn có thể chuyển đổi hàng loạt tệp DOCX sang EPUB hoặc c�
 Có, Aspose.Words hỗ trợ đầy đủ .NET Core và .NET Framework.
 
 ### Tôi có thể tìm thêm ví dụ và tài liệu về Aspose.Words ở đâu?
- Tham quan[Aspose.Words cho tài liệu .NET](https://reference.aspose.com/words/net/) để biết ví dụ chi tiết và tham khảo API.
+ Ghé thăm[Aspose.Words cho tài liệu .NET](https://reference.aspose.com/words/net/) để biết ví dụ chi tiết và tham khảo API.
 
 ### Làm cách nào tôi có thể nhận được hỗ trợ cho các vấn đề liên quan đến Aspose.Words?
  Để được hỗ trợ, hãy truy cập[Diễn đàn Aspose.Words](https://forum.aspose.com/c/words/8) nơi bạn có thể đặt câu hỏi và tương tác với cộng đồng.

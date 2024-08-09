@@ -15,7 +15,7 @@ Nestes tutoriais, os desenvolvedores explorarão como utilizar Aspose.Words for 
 
 ## Fortaleça a segurança dos documentos
 
-Os tutoriais se concentram no fortalecimento da segurança de documentos com recursos de proteção de documentos Python. Os desenvolvedores obterão insights sobre marcas d’água, assinaturas digitais e redação de conteúdo. Ao dominar as técnicas de proteção de documentos, os desenvolvedores podem aprimorar o processamento de documentos de texto e os fluxos de trabalho de gerenciamento de documentos, promovendo a confiança em suas operações relacionadas a documentos.
+Os tutoriais se concentram no fortalecimento da segurança de documentos com recursos de proteção de documentos Python. Os desenvolvedores obterão insights sobre marcas d'água, assinaturas digitais e redação de conteúdo. Ao dominar as técnicas de proteção de documentos, os desenvolvedores podem aprimorar o processamento de documentos de texto e os fluxos de trabalho de gerenciamento de documentos, promovendo a confiança em suas operações relacionadas a documentos.
 
 ## Capacite seu gerenciamento de documentos
 

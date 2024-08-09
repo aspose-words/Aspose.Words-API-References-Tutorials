@@ -77,7 +77,7 @@ Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn vừa học cách bỏ qua hình ảnh trong tài liệu PDF bằng Aspose.Words cho .NET. Tính năng này cực kỳ hữu ích khi bạn cần xử lý các tệp PDF nặng văn bản mà không có hình ảnh lộn xộn. Hãy nhớ rằng, luyện tập sẽ tạo nên sự hoàn hảo, vì vậy hãy thử trải nghiệm với các tệp PDF khác nhau để xem tính năng này hoạt động như thế nào trong các tình huống khác nhau.
+Và bạn có nó! Bạn vừa học cách bỏ qua hình ảnh trong tài liệu PDF bằng Aspose.Words cho .NET. Tính năng này cực kỳ hữu ích khi bạn cần xử lý các tệp PDF nặng văn bản mà không có hình ảnh lộn xộn. Hãy nhớ rằng, luyện tập sẽ tạo nên sự hoàn hảo, vì vậy hãy thử trải nghiệm với các tệp PDF khác nhau để xem tính năng này hoạt động như thế nào trong các tình huống khác nhau.
 
 ## Câu hỏi thường gặp
 
@@ -91,7 +91,7 @@ Không, bỏ qua hình ảnh chỉ ảnh hưởng đến hình ảnh. Văn bản
 
 ### Tôi có thể sử dụng tính năng này với các định dạng tài liệu khác không?
 
- Các`SkipPdfImages` tùy chọn dành riêng cho tài liệu PDF. Đối với các định dạng khác, có sẵn các tùy chọn và phương pháp khác nhau.
+ các`SkipPdfImages` tùy chọn dành riêng cho tài liệu PDF. Đối với các định dạng khác, có sẵn các tùy chọn và phương pháp khác nhau.
 
 ### Làm cách nào để xác minh rằng hình ảnh đã bị bỏ qua?
 
@@ -99,4 +99,4 @@ Bạn có thể mở tài liệu đầu ra trong bộ xử lý Word để xác n
 
 ### Điều gì xảy ra nếu PDF không có hình ảnh?
 
- Tài liệu tải như bình thường, không ảnh hưởng đến quá trình. Các`SkipPdfImages` tùy chọn đơn giản là không có hiệu lực trong trường hợp này.
+ Tài liệu tải như bình thường, không ảnh hưởng đến quá trình. các`SkipPdfImages` tùy chọn đơn giản là không có hiệu lực trong trường hợp này.

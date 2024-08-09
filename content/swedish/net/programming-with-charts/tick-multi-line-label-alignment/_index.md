@@ -34,7 +34,7 @@ using Aspose.Words.Drawing;
 Först och främst måste vi ange sökvägen till din dokumentkatalog. Det är här ditt Word-dokument kommer att sparas.
 
 
- Låt oss definiera sökvägen till din dokumentkatalog. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där du vill spara ditt dokument.
+ Låt oss definiera sökvägen till din dokumentkatalog. Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där du vill spara ditt dokument.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -64,7 +64,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 Låt oss infoga ett diagram i vårt dokument. Vi använder ett punktdiagram för detta exempel.
 
- Använda`InsertChart` metod för`DocumentBuilder` klass kan vi infoga ett punktdiagram i vårt dokument.
+ Med hjälp av`InsertChart` metod för`DocumentBuilder` klass kan vi infoga ett punktdiagram i vårt dokument.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Scatter, 450, 250);
@@ -112,7 +112,7 @@ Och där har du det! Du har framgångsrikt markerat etikettjustering med flera r
 
 ### Hur installerar jag Aspose.Words för .NET?
 
- Du kan ladda ner Aspose.Words för .NET från[hemsida](https://releases.aspose.com/words/net/)Följ installationsanvisningarna som finns där.
+ Du kan ladda ner Aspose.Words för .NET från[webbplats](https://releases.aspose.com/words/net/)Följ installationsanvisningarna som finns där.
 
 ### Kan jag använda Aspose.Words för .NET gratis?
 

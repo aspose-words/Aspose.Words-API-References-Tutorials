@@ -147,7 +147,7 @@ Ce code charge le document et imprime le fournisseur, la version et l'identifian
 
 ## Conclusion
 
-Et c'est tout! Vous avez ajouté et configuré avec succès un volet de tâches d'extension Web dans un document Word à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité puissante peut améliorer considérablement vos documents Word en fournissant des fonctionnalités supplémentaires directement dans le document. 
+Et c'est tout ! Vous avez ajouté et configuré avec succès un volet de tâches d'extension Web dans un document Word à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité puissante peut améliorer considérablement vos documents Word en fournissant des fonctionnalités supplémentaires directement dans le document. 
 
 ## FAQ
 

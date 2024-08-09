@@ -35,7 +35,7 @@ Antes de começarmos a detectar assinaturas digitais, precisamos configurar noss
 
 ### 1.1 Crie um novo projeto
 
- Abra o Visual Studio e crie um novo projeto de aplicativo de console (.NET Core). Diga`DigitalSignatureDetector`.
+ Abra o Visual Studio e crie um novo projeto de aplicativo de console (.NET Core). Dê um nome`DigitalSignatureDetector`.
 
 ### 1.2 Instale Aspose.Words para .NET
 
@@ -91,7 +91,7 @@ Não, o Aspose.Words for .NET não preserva assinaturas digitais ao abrir ou sal
 
 ### Existe uma maneira de detectar múltiplas assinaturas digitais em um documento?
 
- Sim o`HasDigitalSignature` propriedade pode indicar a presença de uma ou mais assinaturas digitais no documento.
+ Sim, o`HasDigitalSignature` propriedade pode indicar a presença de uma ou mais assinaturas digitais no documento.
 
 ### Como faço para obter uma avaliação gratuita do Aspose.Words for .NET?
 

@@ -35,7 +35,7 @@ Um zu beginnen, müssen Sie Ihre Projektumgebung einrichten. Dazu müssen Sie ei
 
 ### Erstellen eines neuen Projekts
 
-1. Öffnen Sie Visual Studio, und wählen Sie Datei > Neu > Projekt.
+1. Öffnen Sie Visual Studio, und wählen Sie Datei > Neu > Projekt aus.
 2. Wählen Sie eine Konsolen-App (.NET Core) oder eine Konsolen-App (.NET Framework).
 3. Geben Sie Ihrem Projekt einen Namen und klicken Sie auf „Erstellen“.
 
@@ -126,7 +126,7 @@ Ja, Sie können mehrere Dokumente anhängen, indem Sie den`AppendDocument` Metho
 
 ### Benötige ich eine Lizenz, um Aspose.Words zu verwenden?
 
- Sie können beginnen mit einem[Kostenlose Testphase](https://releases.aspose.com/) oder erhalten Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) für erweiterte Funktionen.
+ Sie können beginnen mit einem[Kostenlose Testversion](https://releases.aspose.com/) oder erhalten Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) für erweiterte Funktionen.
 
 ### Kann ich Dokumente unterschiedlichen Typs anhängen, etwa DOCX und DOC?
 

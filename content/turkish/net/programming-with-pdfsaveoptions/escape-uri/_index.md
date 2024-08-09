@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET kullanarak bir Word belgesini PDF olarak kaydederken URI'lerden nasıl kaçacağınızı öğrendiniz. Bu işlem, köprülerinizin sonuçtaki PDF'de işlevsel kalmasını ve düzgün biçimlendirilmiş olmasını sağlar. 
+Ve işte karşınızda! Aspose.Words for .NET kullanarak bir Word belgesini PDF olarak kaydederken URI'lerden nasıl kaçacağınızı öğrendiniz. Bu işlem, köprülerinizin sonuçtaki PDF'de işlevsel kalmasını ve düzgün biçimlendirilmiş olmasını sağlar. 
 
 Bu küçük ama önemli tekniklerde uzmanlaşmanın belgelerinizin kalitesini ve işlevselliğini büyük ölçüde artırabileceğini unutmayın. Mutlu kodlama!
 

@@ -20,7 +20,7 @@ Mielőtt belevágna a dokumentum-egyesítési folyamatba, győződjön meg arró
 - Aspose.Words for Java Library
 - Java programozási alapismeretek
 
-## Elkezdeni
+## Kezdő lépések
 
  Kezdjük egy új Java projekt létrehozásával, és adjuk hozzá az Aspose.Words könyvtárat. A könyvtárat innen töltheti le[itt](https://releases.aspose.com/words/java/).
 
@@ -71,7 +71,7 @@ doc.save("merged_document.docx");
 
 ## Következtetés
 
-Gratulálunk! Megtanulta, hogyan lehet dokumentumokat egyesíteni az Aspose.Words for Java használatával. Ez a hatékony funkció megváltoztathatja dokumentumkezelési feladatait. Kísérletezzen különböző dokumentumkombinációkkal, és fedezze fel az igényeinek megfelelő további testreszabási lehetőségeket.
+Gratulálok! Megtanulta, hogyan lehet dokumentumokat egyesíteni az Aspose.Words for Java használatával. Ez a hatékony funkció megváltoztathatja dokumentumkezelési feladatait. Kísérletezzen különböző dokumentumkombinációkkal, és fedezze fel az igényeinek megfelelő további testreszabási lehetőségeket.
 
 ## GYIK
 

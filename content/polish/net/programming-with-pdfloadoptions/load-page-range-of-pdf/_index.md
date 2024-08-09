@@ -15,7 +15,7 @@ Jeśli chodzi o obsługę plików PDF w aplikacjach .NET, Aspose.Words dla .NET 
 
 Zanim zaczniemy, potrzebujesz kilku rzeczy:
 
-1. Aspose.Words dla .NET: Upewnij się, że masz bibliotekę Aspose.Words. Jeśli jeszcze tego nie masz, możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1. Aspose.Words dla .NET: Upewnij się, że masz bibliotekę Aspose.Words. Jeśli jeszcze tego nie masz, możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: Skonfiguruj środowisko programistyczne za pomocą programu Visual Studio lub innego preferowanego środowiska IDE.
 3.  Licencja: Chociaż Aspose.Words oferuje bezpłatną wersję próbną, rozważ zakup[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) dla pełnej funkcjonalności bez ograniczeń.
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-htmlsaveoptions/convert-metafiles-to-emf-or-wmf/
 ---
-## Úvod
+## Zavedení
 
 Vítejte u dalšího hlubokého ponoru do světa Aspose.Words pro .NET. Dnes řešíme úhledný trik: převod obrázků SVG do formátů EMF nebo WMF v dokumentech aplikace Word. Může to znít trochu technicky, ale nebojte se. Na konci tohoto tutoriálu v tom budete profík. Ať už jste zkušený vývojář nebo s Aspose.Words pro .NET teprve začínáte, tento průvodce vás krok za krokem provede vším, co potřebujete vědět.
 
@@ -15,12 +15,12 @@ Vítejte u dalšího hlubokého ponoru do světa Aspose.Words pro .NET. Dnes ře
 
 Než se ponoříme do kódu, ujistíme se, že máme vše nastaveno. Zde je to, co potřebujete:
 
-1.  Aspose.Words for .NET Library: Ujistěte se, že máte nejnovější verzi. Pokud jej nemáte, můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Ujistěte se, že máte nejnovější verzi. Pokud jej nemáte, můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 2. .NET Framework: Ujistěte se, že máte na svém počítači nainstalované rozhraní .NET Framework.
 3. Vývojové prostředí: IDE jako Visual Studio vám usnadní život.
 4. Základní znalost C#: Nemusíte být expert, ale základní znalost vám pomůže.
 
-Máš všechno? Skvělý! Začněme.
+Máš všechno? Velký! Začněme.
 
 ## Importovat jmenné prostory
 
@@ -106,4 +106,4 @@ Převod SVG do EMF nebo WMF zajišťuje zachování a správné vykreslení vekt
 Absolutně! Můžete procházet více soubory HTML a použít stejný proces k automatizaci převodu pro dávkové zpracování.
 
 ### Kde najdu další zdroje a podporu pro Aspose.Words pro .NET?
- Můžete najít komplexní dokumentaci[tady](https://reference.aspose.com/words/net/) a získat podporu od komunity Aspose[tady](https://forum.aspose.com/c/words/8).
+ Můžete najít komplexní dokumentaci[zde](https://reference.aspose.com/words/net/) a získat podporu od komunity Aspose[zde](https://forum.aspose.com/c/words/8).

@@ -2,18 +2,38 @@
 title: Numero elenco riavvio
 linktitle: Numero elenco riavvio
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come reimpostare il numero di un elenco in un documento di Word con Aspose.Words per .NET.
+description: Scopri come riavviare i numeri dell'elenco nei documenti di Word utilizzando Aspose.Words per .NET. Questa guida dettagliata di 2000 parole copre tutto ciò che devi sapere, dalla configurazione alla personalizzazione avanzata.
 type: docs
 weight: 10
 url: /it/net/working-with-list/restart-list-number/
 ---
-In questo tutorial passo passo, ti mostreremo come reimpostare il numero di un elenco in un documento Word utilizzando Aspose.Words per .NET. Spiegheremo il codice sorgente C# fornito e ti mostreremo come implementarlo nei tuoi progetti.
+## Introduzione
 
- Per iniziare, assicurati di avere Aspose.Words per .NET installato e configurato nel tuo ambiente di sviluppo. Se non l'hai già fatto, scarica e installa la libreria da[Aspose.Releases]https://releases.aspose.com/words/net/.
+Stai cercando di padroneggiare l'arte della manipolazione degli elenchi nei tuoi documenti Word utilizzando Aspose.Words per .NET? Bene, sei nel posto giusto! In questo tutorial, approfondiremo il riavvio dei numeri dell'elenco, una funzionalità elegante che porterà le tue capacità di automazione dei documenti a un livello superiore. Allacciate le cinture e iniziamo!
 
-## Passaggio 1: creazione del documento e del generatore di documenti
+## Prerequisiti
 
-Innanzitutto, crea un nuovo documento e un generatore di documenti associato:
+Prima di addentrarci nel codice, assicuriamoci di avere tutto ciò di cui hai bisogno:
+
+1.  Aspose.Words per .NET: è necessario che sia installato Aspose.Words per .NET. Se non l'hai ancora installato, puoi farlo[scaricalo qui](https://releases.aspose.com/words/net/).
+2. Ambiente di sviluppo: assicurati di disporre di un ambiente di sviluppo adatto come Visual Studio.
+3. Conoscenza di base di C#: una conoscenza di base di C# ti aiuterà a seguire il tutorial.
+
+## Importa spazi dei nomi
+
+Per prima cosa, importiamo gli spazi dei nomi necessari. Questi sono fondamentali per accedere alle funzionalità di Aspose.Words.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Lists;
+using System.Drawing;
+```
+
+Ora suddividiamo il processo in passaggi facili da seguire. Tratteremo tutto, dalla creazione di un elenco al riavvio della sua numerazione.
+
+## Passaggio 1: imposta il documento e il generatore
+
+Prima di poter iniziare a manipolare gli elenchi, sono necessari un documento e un DocumentBuilder. DocumentBuilder è il tuo strumento di riferimento per aggiungere contenuto al tuo documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -21,9 +41,9 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Passaggio 2: creazione e personalizzazione del primo elenco
+## Passaggio 2: crea e personalizza la tua prima lista
 
-Successivamente, crea un elenco basato su un modello esistente, quindi personalizza i suoi livelli:
+Successivamente, creeremo un elenco basato su un modello e ne personalizzeremo l'aspetto. In questo esempio utilizziamo il formato numerico arabo con parentesi.
 
 ```csharp
 List list1 = doc.Lists.Add(ListTemplate.NumberArabicParenthesis);
@@ -31,102 +51,75 @@ list1.ListLevels[0].Font.Color = Color.Red;
 list1.ListLevels[0].Alignment = ListLevelAlignment.Right;
 ```
 
-## Passaggio 3: aggiunta di elementi al primo elenco
+Qui abbiamo impostato il colore del carattere su rosso e allineato il testo a destra.
 
-Utilizza il generatore di documenti per aggiungere elementi al primo elenco e rimuovere i numeri dell'elenco:
+## Passaggio 3: aggiungi elementi al tuo primo elenco
+
+ Con l'elenco pronto, è il momento di aggiungere alcuni elementi. Quello di DocumentBuilder`ListFormat.List` La proprietà aiuta ad applicare il formato elenco al testo.
 
 ```csharp
 builder.Writeln("List 1 starts below:");
 builder.ListFormat.List = list1;
-builder. Writen("Element 1");
-builder. Writen("Element 2");
+builder.Writeln("Item 1");
+builder.Writeln("Item 2");
 builder.ListFormat.RemoveNumbers();
 ```
 
-## Passaggio 4: creazione e personalizzazione del secondo elenco
+## Passaggio 4: riavviare la numerazione dell'elenco
 
-Per riutilizzare il primo elenco reimpostando il numero, crea una copia del layout dell'elenco originale:
+Per riutilizzare l'elenco e ricominciare la sua numerazione è necessario creare una copia dell'elenco originale. Ciò consente di modificare il nuovo elenco in modo indipendente.
 
 ```csharp
 List list2 = doc.Lists.AddCopy(list1);
 list2.ListLevels[0].StartAt = 10;
 ```
 
-Se necessario, puoi anche apportare ulteriori modifiche al secondo elenco.
+In questo esempio, il nuovo elenco inizia dal numero 10.
 
-## Passaggio 5: aggiunta di elementi al secondo elenco
+## Passaggio 5: aggiungi elementi al nuovo elenco
 
-Utilizza nuovamente il generatore di documenti per aggiungere elementi al secondo elenco e rimuovere i numeri dell'elenco:
-
-```csharp
-builder.Writeln("List 2 starts below:");
-builder.ListFormat.List = list2;
-builder. Writen("Element 1");
-builder. Writen("Element 2");
-builder.ListFormat.RemoveNumbers();
-```
-
-## Passaggio 6: salva il documento modificato
-
-Infine, salva il documento modificato:
+Proprio come prima, aggiungi elementi al tuo nuovo elenco. Ciò dimostra che l'elenco riparte dal numero specificato.
 
 ```csharp
-builder.Document.Save(dataDir + "ResetListNumber.docx");
-```
-
-COSÌ ! Hai reimpostato con successo il numero di un elenco in un documento di Word utilizzando Aspose.Words per .NET.
-
-### Codice sorgente di esempio per la reimpostazione del numero di elenco
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-// Crea un elenco basato su un modello.
-List list1 = doc.Lists.Add(ListTemplate.NumberArabicParenthesis);
-list1.ListLevels[0].Font.Color = Color.Red;
-list1.ListLevels[0].Alignment = ListLevelAlignment.Right;
-
-builder.Writeln("List 1 starts below:");
-builder.ListFormat.List = list1;
-builder.Writeln("Item 1");
-builder.Writeln("Item 2");
-builder.ListFormat.RemoveNumbers();
-
-// Per riutilizzare il primo elenco è necessario riavviare la numerazione creando una copia della formattazione dell'elenco originale.
-List list2 = doc.Lists.AddCopy(list1);
-
-// Possiamo modificare il nuovo elenco in qualsiasi modo, anche impostando un nuovo numero di partenza.
-list2.ListLevels[0].StartAt = 10;
-
 builder.Writeln("List 2 starts below:");
 builder.ListFormat.List = list2;
 builder.Writeln("Item 1");
 builder.Writeln("Item 2");
 builder.ListFormat.RemoveNumbers();
+```
 
+## Passaggio 6: salva il documento
+
+Infine, salva il documento nella directory specificata.
+
+```csharp
 builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
-            
 ```
 
-### Domande frequenti
+## Conclusione
 
-#### D: Come posso riavviare la numerazione di un elenco in Aspose.Words?
+Riavviare i numeri dell'elenco nei documenti di Word utilizzando Aspose.Words per .NET è semplice e incredibilmente utile. Che tu stia generando report, creando documenti strutturati o semplicemente abbia bisogno di un migliore controllo sui tuoi elenchi, questa tecnica è coperta.
 
- R: Per riavviare la numerazione di un elenco in Aspose.Words, è possibile utilizzare il file`ListRestartAtNumber` metodo del`List` classe. Questo metodo consente di impostare un nuovo valore di composizione da cui riavviare l'elenco. Ad esempio, puoi usare`list.ListRestartAtNumber(1)` per ricominciare la numerazione da 1.
+## Domande frequenti
 
-#### D: È possibile personalizzare il prefisso e il suffisso della numerazione dell'elenco riavviato in Aspose.Words?
+### Posso utilizzare altri modelli di elenco oltre a NumberArabicParenthesis?
 
- R: Sì, puoi personalizzare il prefisso e il suffisso della numerazione dell'elenco riavviato in Aspose.Words. IL`ListLevel`class offre proprietà come`ListLevel.NumberPrefix`E`ListLevel.NumberSuffix` che consentono di specificare il prefisso e il suffisso per ciascun livello nell'elenco. È possibile utilizzare queste proprietà per personalizzare il prefisso e il suffisso secondo necessità.
+Assolutamente! Aspose.Words offre vari modelli di elenchi come elenchi puntati, lettere, numeri romani e altro. Puoi scegliere quello che meglio si adatta alle tue esigenze.
 
-#### D: Come posso specificare un valore di numerazione specifico da cui riavviare l'elenco?
+### Come posso modificare il livello dell'elenco?
 
- R: Per specificare un valore numerico specifico da cui riavviare l'elenco, è possibile utilizzare il comando`ListRestartAtNumber` metodo che passa il valore desiderato come argomento. Ad esempio, per riavviare la numerazione da 5, è possibile utilizzare`list.ListRestartAtNumber(5)`.
+ È possibile modificare il livello dell'elenco modificando il file`ListLevels` proprietà. Per esempio,`list1.ListLevels[1]` si riferirebbe al secondo livello dell'elenco.
 
-#### D: È possibile riavviare la numerazione degli elenchi a più livelli in Aspose.Words?
+### Posso ricominciare la numerazione da qualsiasi numero?
 
- R: Sì, Aspose.Words supporta il riavvio della numerazione di più livelli di elenco. Puoi applicare il`ListRestartAtNumber` metodo a ogni livello di elenco per riavviare la numerazione individualmente. Ad esempio, puoi usare`list.Levels[0].ListRestartAtNumber(1)` per riavviare il primo livello dell'elenco da 1 e`list.Levels[1].ListRestartAtNumber(1)` per riavviare la lista di secondo livello partendo da 1, e così via.
+ Sì, puoi impostare il numero iniziale su qualsiasi valore intero utilizzando il comando`StartAt` proprietà del livello elenco.
 
+### È possibile avere una formattazione diversa per diversi livelli di elenco?
+
+Infatti! Ogni livello dell'elenco può avere le proprie impostazioni di formattazione, come carattere, allineamento e stile di numerazione.
+
+### Cosa succede se voglio continuare la numerazione da un elenco precedente invece di ricominciare?
+
+Se vuoi continuare la numerazione, non è necessario creare una copia dell'elenco. Continua semplicemente ad aggiungere elementi all'elenco originale.
 
 

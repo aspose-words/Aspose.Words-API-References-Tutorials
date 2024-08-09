@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-ooxmlsaveoptions/keep-legacy-control-chars/
 ---
-## Úvod
+## Zavedení
 
 Byli jste někdy zmateni těmi podivnými, neviditelnými řídicími znaky ve vašich dokumentech aplikace Word? Jsou jako malí, skrytí gremlinové, kteří mohou zkazit formátování a funkčnost. Naštěstí Aspose.Words for .NET poskytuje šikovnou funkci, která tyto starší řídicí znaky při ukládání dokumentů uchová nedotčené. V tomto tutoriálu se ponoříme hluboko do toho, jak spravovat tyto řídicí znaky pomocí Aspose.Words for .NET. Rozebereme to krok za krokem a zajistíme, že po cestě pochopíte každý detail. Jste připraveni začít? Pojďme se ponořit!
 
@@ -15,8 +15,8 @@ Byli jste někdy zmateni těmi podivnými, neviditelnými řídicími znaky ve v
 
 Než začneme, ujistěte se, že máte následující:
 
-1.  Aspose.Words for .NET: Stáhněte a nainstalujte z[tady](https://releases.aspose.com/words/net/).
-2.  Platná licence Aspose: Můžete získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
+1.  Aspose.Words for .NET: Stáhněte a nainstalujte z[zde](https://releases.aspose.com/words/net/).
+2.  Platná licence Aspose: Můžete získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
 3. Vývojové prostředí: Visual Studio nebo jakékoli jiné IDE, které podporuje .NET.
 4. Základní znalost C#: Užitečná bude znalost programovacího jazyka C#.
 
@@ -95,9 +95,9 @@ Tato funkce je dostupná v posledních verzích. Ujistěte se, že používáte 
 
 ### Potřebuji licenci k používání Aspose.Words pro .NET?
 
- Ano, potřebujete platnou licenci. Pro účely hodnocení můžete získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
+ Ano, potřebujete platnou licenci. Pro účely hodnocení můžete získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
 
 ### Kde najdu další dokumentaci k Aspose.Words pro .NET?
 
- Můžete najít podrobnou dokumentaci[tady](https://reference.aspose.com/words/net/).
+ Můžete najít podrobnou dokumentaci[zde](https://reference.aspose.com/words/net/).
  

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-shapes/update-smart-art-drawing/
 ---
-## introduzione
+## Introduzione
 
 La grafica Smart Art è un modo fantastico per rappresentare visivamente le informazioni nei documenti Word. Che tu stia redigendo un rapporto aziendale, un articolo didattico o una presentazione, Smart Art può rendere più digeribili i dati complessi. Tuttavia, man mano che i documenti si evolvono, la grafica Smart Art al loro interno potrebbe richiedere un aggiornamento per riflettere le modifiche più recenti. Se stai utilizzando Aspose.Words per .NET, puoi semplificare questo processo a livello di codice. Questo tutorial ti spiegherà come aggiornare i disegni Smart Art nei documenti Word utilizzando Aspose.Words per .NET, rendendo più semplice mantenere le tue immagini fresche e accurate.
 

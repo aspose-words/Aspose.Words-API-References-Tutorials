@@ -2,77 +2,104 @@
 title: Muat Pengaturan Penggantian Noto
 linktitle: Muat Pengaturan Penggantian Noto
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Dalam tutorial ini, pelajari cara memuat parameter override Noto ke dalam dokumen Word dengan Aspose.Words untuk .NET.
+description: Pelajari cara memuat pengaturan fallback Noto di dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk memastikan semua karakter ditampilkan dengan benar.
 type: docs
 weight: 10
 url: /id/net/working-with-fonts/load-noto-fallback-settings/
 ---
-Dalam tutorial ini, kami akan memandu Anda tentang cara memuat pengaturan substitusi font Noto ke dalam dokumen Word menggunakan Aspose.Words Library untuk .NET. Pengaturan Substitusi Font Noto memungkinkan Anda mengatur penggantian font saat menampilkan atau mencetak dokumen. Kami akan memandu Anda langkah demi langkah untuk membantu Anda memahami dan menerapkan kode dalam proyek .NET Anda.
+## Perkenalan
+
+Dalam tutorial ini, kita akan mempelajari cara memuat pengaturan fallback Noto di dokumen Word menggunakan Aspose.Words untuk .NET. Proses ini memastikan bahwa font dokumen Anda ditampilkan dengan benar, meskipun beberapa karakter hilang dari font aslinya. Baik Anda berurusan dengan dokumen multi-bahasa atau karakter khusus, pengaturan cadangan Noto dapat menjadi penyelamat.
 
 ## Prasyarat
-Sebelum memulai, pastikan Anda memiliki item berikut:
-- Pengetahuan tentang bahasa pemrograman C#
-- Pustaka Aspose.Words untuk .NET diinstal di proyek Anda
 
-## Langkah 1: Tentukan direktori dokumen
- Pertama, Anda perlu mengatur jalur direktori ke lokasi dokumen Word Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"` dalam kode dengan jalur yang sesuai.
+Sebelum kita mendalami panduan langkah demi langkah, mari kita bahas prasyarat yang Anda perlukan:
+
+1.  Perpustakaan Aspose.Words for .NET: Pastikan Anda memiliki Aspose.Words for .NET versi terbaru. Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Visual Studio atau lingkungan pengembangan .NET lain yang kompatibel.
+3. Pengetahuan Dasar C#: Keakraban dengan pemrograman C# sangat penting.
+4. Dokumen Word: Contoh dokumen Word untuk menerapkan pengaturan fallback Noto.
+
+## Impor Namespace
+
+Untuk memulai, Anda perlu mengimpor namespace yang diperlukan ke dalam proyek Anda. Namespace ini menyediakan akses ke kelas dan metode yang diperlukan untuk memanipulasi dokumen Word menggunakan Aspose.Words untuk .NET.
 
 ```csharp
-// Jalur ke direktori dokumen Anda
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Langkah 2: Muat dokumen dan konfigurasikan pengaturan substitusi font
- Selanjutnya, kita akan memuat dokumen menggunakan`Document` kelas dan konfigurasikan pengaturan penggantian font menggunakan`FontSettings` kelas. Kami akan memuat pengaturan fallback font Noto menggunakan`LoadNotoFallbackSettings()` metode.
+Sekarang, mari kita bagi prosesnya menjadi langkah-langkah sederhana dan mudah dilakukan. Ikuti terus untuk memuat pengaturan fallback Noto di dokumen Word Anda.
+
+## Langkah 1: Siapkan Proyek Anda
+
+Pertama, Anda perlu menyiapkan proyek Anda. Buka lingkungan pengembangan Anda dan buat proyek baru atau buka proyek yang sudah ada.
+
+1. Buat Proyek Baru: Jika Anda belum memiliki proyek, buat proyek baru di Visual Studio dengan memilih 'Buat proyek baru'.
+2. Tambahkan Aspose.Words untuk .NET: Tambahkan perpustakaan Aspose.Words untuk .NET ke proyek Anda melalui NuGet Package Manager. Cari 'Aspose.Words' dan instal versi terbaru.
+
+## Langkah 2: Tentukan Direktori Dokumen Anda
+
+Selanjutnya, tentukan jalur ke direktori dokumen Anda. Di sinilah dokumen Word Anda disimpan.
 
 ```csharp
-// Muat dokumen dan konfigurasikan pengaturan substitusi font
-Document doc = new Document(dataDir + "Rendering.docx");
-FontSettings fontSettings = new FontSettings();
-fontSettings.FallbackSettings.LoadNotoFallbackSettings();
-doc.FontSettings = fontSettings;
-```
-
-## Langkah 3: Simpan dokumen
-Terakhir, kami akan menyimpan dokumen dengan menerapkan pengaturan substitusi font Noto.
-
-```csharp
-// Simpan dokumennya
-doc.Save(dataDir + "WorkingWithFonts.NotoFallbackSettings.pdf");
-```
-
-
-### Contoh kode sumber untuk Pengaturan Noto Fallback menggunakan Aspose.Words untuk .NET 
-```csharp
-
-// Jalur ke direktori dokumen Anda
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+ Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke folder dokumen Anda.
+
+## Langkah 3: Muat Dokumen Anda
+
+Muat dokumen Word yang ingin Anda terapkan pengaturan cadangan Noto. Gunakan`Document` kelas dari namespace Aspose.Words.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+Pastikan dokumen Anda diberi nama "Rendering.docx" atau ubah nama file sesuai dengan itu.
+
+## Langkah 4: Konfigurasikan Pengaturan Font
+
+ Buat sebuah instance dari`FontSettings` kelas dan muat pengaturan fallback Noto. Langkah ini mengonfigurasi pengaturan font untuk menggunakan font Noto sebagai cadangan.
+
+```csharp
 FontSettings fontSettings = new FontSettings();
 fontSettings.FallbackSettings.LoadNotoFallbackSettings();
-doc.FontSettings = fontSettings;
-doc.Save(dataDir + "WorkingWithFonts.NotoFallbackSettings.pdf");
+```
 
+## Langkah 5: Terapkan Pengaturan Font ke Dokumen
+
+Tetapkan pengaturan font yang dikonfigurasi ke dokumen Anda. Hal ini memastikan bahwa dokumen akan menggunakan pengaturan fallback Noto.
+
+```csharp
+doc.FontSettings = fontSettings;
+```
+
+## Langkah 6: Simpan Dokumen
+
+Terakhir, simpan dokumen yang dimodifikasi. Anda dapat menyimpannya dalam format apa pun yang didukung oleh Aspose.Words. Dalam hal ini, kami akan menyimpannya sebagai PDF.
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.NotoFallbackSettings.pdf");
 ```
 
 ## Kesimpulan
-Dalam tutorial ini, kita melihat cara memuat pengaturan substitusi font Noto di dokumen Word dengan Aspose.Words untuk .NET. Pengaturan substitusi font Noto memungkinkan Anda mengelola substitusi font untuk meningkatkan tampilan dan pencetakan dokumen Anda. Jangan ragu untuk menggunakan fitur ini untuk menyesuaikan penggantian font sesuai kebutuhan Anda.
 
-### FAQ
+Selamat! Anda telah berhasil memuat pengaturan fallback Noto di dokumen Word Anda menggunakan Aspose.Words untuk .NET. Tutorial ini mencakup segalanya mulai dari menyiapkan proyek Anda hingga menyimpan dokumen akhir. Dengan mengikuti langkah-langkah ini, Anda dapat memastikan bahwa dokumen Anda menampilkan semua karakter dengan benar, meskipun font asli tidak memiliki beberapa mesin terbang.
 
-#### T: Bagaimana cara memuat pengaturan substitusi font Noto di dokumen Word dengan Aspose.Words?
+## FAQ
 
-A: Untuk memuat pengaturan substitusi font Noto di dokumen Word dengan Aspose.Words, Anda harus mendownload font Noto terlebih dahulu dari sumber resminya. Kemudian Anda dapat menggunakan Aspose.Words API untuk memuat font tersebut ke dalam dokumen dan mengonfigurasinya untuk substitusi bila diperlukan.
+### Apa itu pengaturan cadangan Noto?
+Pengaturan fallback Noto menyediakan serangkaian font fallback yang komprehensif untuk memastikan bahwa semua karakter dalam dokumen ditampilkan dengan benar.
 
-#### T: Apakah penggunaan font Noto sebagai substitusi di dokumen Word memastikan visualisasi teks konsisten?
+### Mengapa saya harus menggunakan pengaturan cadangan Noto?
+Menggunakan pengaturan fallback Noto memastikan bahwa dokumen Anda dapat menampilkan berbagai karakter, terutama dalam dokumen multi-bahasa.
 
-J: Ya, menggunakan font Noto untuk substitusi di dokumen Word memastikan visualisasi teks konsisten. Font Noto dirancang untuk mendukung banyak bahasa dan karakter, membantu mempertahankan tampilan yang konsisten bahkan ketika font yang diperlukan tidak tersedia.
+### Bisakah saya menggunakan pengaturan fallback lain selain Noto?
+Ya, Aspose.Words memungkinkan Anda mengonfigurasi pengaturan cadangan lainnya berdasarkan kebutuhan Anda.
 
-#### T: Apakah font Noto gratis?
+### Bagaimana cara menginstal Aspose.Words untuk .NET?
+Anda dapat menginstal Aspose.Words untuk .NET melalui NuGet Package Manager di Visual Studio.
 
-A: Ya, font Noto gratis dan open source. Mereka dapat diunduh dan digunakan dalam proyek Anda tanpa biaya. Ini menjadikannya pilihan bagus untuk meningkatkan tampilan font di dokumen Word Anda tanpa harus berinvestasi pada font komersial.
-
-#### T: Apakah penggunaan font Noto membuat dokumen Word saya lebih mudah diakses?
-
-J: Ya, menggunakan font Noto sebagai pengganti dokumen Word membantu membuat dokumen Anda lebih mudah diakses. Font Noto mendukung banyak bahasa dan karakter, memastikan keterbacaan dan pemahaman yang lebih baik bagi pengguna yang melihat dokumen Anda dalam berbagai bahasa.
+### Apakah ada uji coba gratis untuk Aspose.Words untuk .NET?
+ Ya, Anda dapat mengunduh uji coba gratis[Di Sini](https://releases.aspose.com/).

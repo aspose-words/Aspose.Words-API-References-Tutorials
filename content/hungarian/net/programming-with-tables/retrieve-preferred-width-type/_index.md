@@ -69,7 +69,7 @@ Ahhoz, hogy a táblázat automatikusan beállítsa oszlopait, engedélyeznünk k
 table.AllowAutoFit = true;
 ```
 
- Beállítás`AllowAutoFit` nak nek`true` biztosítja, hogy a táblázat oszlopai tartalmuk alapján átméreteződjenek, dinamikus hangulatot adva a táblázatunknak.
+ Beállítás`AllowAutoFit` hogy`true` biztosítja, hogy a táblázat oszlopai tartalmuk alapján átméreteződjenek, dinamikus hangulatot adva a táblázatunknak.
 
 ## 5. lépés: Az első cella preferált szélességtípusának lekérése
 

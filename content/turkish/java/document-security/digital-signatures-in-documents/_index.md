@@ -8,7 +8,7 @@ weight: 13
 url: /tr/java/document-security/digital-signatures-in-documents/
 ---
 
-Dijital imzalar, dijital belgelerin orijinalliğini ve bütünlüğünü sağlamada çok önemli bir rol oynamaktadır. Bir belgenin tahrif edilmediğini ve gerçekten de belirtilen imza sahibi tarafından oluşturulduğunu veya onaylandığını doğrulamanın bir yolunu sağlarlar. Bu adım adım kılavuzda Aspose.Words for Java kullanarak belgelere dijital imzaların nasıl uygulanacağını inceleyeceğiz. Ortamın kurulumundan belgelerinize dijital imzaların eklenmesine kadar her şeyi ele alacağız. Başlayalım!
+Dijital imzalar, dijital belgelerin orijinalliğini ve bütünlüğünü sağlamada çok önemli bir rol oynamaktadır. Bir belgenin tahrif edilmediğini ve gerçekten de belirtilen imza sahibi tarafından oluşturulduğunu veya onaylandığını doğrulamanın bir yolunu sağlarlar. Bu adım adım kılavuzda Aspose.Words for Java kullanarak belgelere dijital imzaların nasıl uygulanacağını inceleyeceğiz. Ortamın kurulumundan belgelerinize dijital imzaların eklenmesine kadar her şeyi ele alacağız. Hadi başlayalım!
 
 ## Önkoşullar
 

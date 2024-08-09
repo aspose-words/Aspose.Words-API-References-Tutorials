@@ -2,18 +2,38 @@
 title: 重启列表号码
 linktitle: 重启列表号码
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 重置 Word 文档中列表的编号。
+description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中重新开始列表编号。这份详细的 2000 字指南涵盖了您需要了解的所有内容，从设置到高级自定义。
 type: docs
 weight: 10
 url: /zh/net/working-with-list/restart-list-number/
 ---
-在本分步教程中，我们将向您展示如何使用 Aspose.Words for .NET 重置 Word 文档中列表的编号。我们将解释提供的 C# 源代码并向您展示如何在您自己的项目中实现它。
+## 介绍
 
-首先，请确保已在开发环境中安装并配置了 Aspose.Words for .NET。如果尚未安装，请从以下位置下载并安装该库[Aspose.发布]https://releases.aspose.com/words/net/。
+您是否希望使用 Aspose.Words for .NET 掌握 Word 文档中的列表操作技巧？好吧，您来对地方了！在本教程中，我们将深入探讨重新启动列表编号，这是一项巧妙的功能，可将您的文档自动化技能提升到一个新的水平。系好安全带，让我们开始吧！
 
-## 步骤 1：创建文档和文档生成器
+## 先决条件
 
-首先，创建一个新文档和一个相关的文档生成器：
+在我们进入代码之前，让我们确保您拥有所需的一切：
+
+1.  Aspose.Words for .NET：您需要安装 Aspose.Words for .NET。如果您尚未安装，您可以[点击下载](https://releases.aspose.com/words/net/).
+2. 开发环境：确保您有一个合适的开发环境，如 Visual Studio。
+3. C# 基础知识：对 C# 的基本了解将帮助您跟随本教程。
+
+## 导入命名空间
+
+首先，让我们导入必要的命名空间。这些对于访问 Aspose.Words 功能至关重要。
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Lists;
+using System.Drawing;
+```
+
+现在，让我们将这个过程分解成易于遵循的步骤。我们将介绍从创建列表到重新开始编号的所有内容。
+
+## 步骤 1：设置文档和生成器
+
+在开始操作列表之前，您需要一个文档和一个 DocumentBuilder。DocumentBuilder 是您向文档添加内容的首选工具。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -21,9 +41,9 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 步骤 2：创建和自定义第一个列表
+## 第 2 步：创建并自定义您的第一个列表
 
-接下来，根据现有模板创建一个列表，然后自定义其级别：
+接下来，我们将根据模板创建一个列表并自定义其外观。在此示例中，我们使用带括号的阿拉伯数字格式。
 
 ```csharp
 List list1 = doc.Lists.Add(ListTemplate.NumberArabicParenthesis);
@@ -31,102 +51,75 @@ list1.ListLevels[0].Font.Color = Color.Red;
 list1.ListLevels[0].Alignment = ListLevelAlignment.Right;
 ```
 
-## 步骤 3：将项目添加到第一个列表
+在这里，我们将字体颜色设置为红色，并将文本右对齐。
 
-使用文档生成器将项目添加到第一个列表并删除列表编号：
+## 步骤 3：将项目添加到您的第一个列表
+
+准备好列表后，就可以添加一些项目了。DocumentBuilder 的`ListFormat.List`属性有助于将列表格式应用于文本。
 
 ```csharp
 builder.Writeln("List 1 starts below:");
 builder.ListFormat.List = list1;
-builder. Writen("Element 1");
-builder. Writen("Element 2");
+builder.Writeln("Item 1");
+builder.Writeln("Item 2");
 builder.ListFormat.RemoveNumbers();
 ```
 
-## 步骤4：创建和自定义第二个列表
+## 步骤 4：重新开始列表编号
 
-要通过重置数字重新使用第一个列表，请创建原始列表布局的副本：
+要重新使用列表并重新开始编号，您需要创建原始列表的副本。这样您就可以单独修改新列表。
 
 ```csharp
 List list2 = doc.Lists.AddCopy(list1);
 list2.ListLevels[0].StartAt = 10;
 ```
 
-如果需要，您还可以对第二个列表进行其他更改。
+在此示例中，新列表从数字 10 开始。
 
-## 步骤 5：将项目添加到第二个列表
+## 步骤 5：将项目添加到新列表
 
-再次使用文档生成器将项目添加到第二个列表并删除列表编号：
-
-```csharp
-builder.Writeln("List 2 starts below:");
-builder.ListFormat.List = list2;
-builder. Writen("Element 1");
-builder. Writen("Element 2");
-builder.ListFormat.RemoveNumbers();
-```
-
-## 步骤6：保存修改后的文档
-
-最后保存修改后的文档：
+和之前一样，将项目添加到新列表中。这将演示列表从指定数字重新开始。
 
 ```csharp
-builder.Document.Save(dataDir + "ResetListNumber.docx");
-```
-
-所以！您已成功使用 Aspose.Words for .NET 重置了 Word 文档中列表的编号。
-
-### 列表编号重置示例源代码
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-//根据模板创建列表。
-List list1 = doc.Lists.Add(ListTemplate.NumberArabicParenthesis);
-list1.ListLevels[0].Font.Color = Color.Red;
-list1.ListLevels[0].Alignment = ListLevelAlignment.Right;
-
-builder.Writeln("List 1 starts below:");
-builder.ListFormat.List = list1;
-builder.Writeln("Item 1");
-builder.Writeln("Item 2");
-builder.ListFormat.RemoveNumbers();
-
-//要重复使用第一个列表，我们需要通过创建原始列表格式的副本来重新开始编号。
-List list2 = doc.Lists.AddCopy(list1);
-
-//我们可以以任意方式修改新列表，包括设置新的起始号码。
-list2.ListLevels[0].StartAt = 10;
-
 builder.Writeln("List 2 starts below:");
 builder.ListFormat.List = list2;
 builder.Writeln("Item 1");
 builder.Writeln("Item 2");
 builder.ListFormat.RemoveNumbers();
+```
 
+## 步骤 6：保存文档
+
+最后，将您的文档保存到指定的目录。
+
+```csharp
 builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
-            
 ```
 
-### 常见问题解答
+## 结论
 
-#### 问：如何在 Aspose.Words 中重新开始列表编号？
+使用 Aspose.Words for .NET 重新开始 Word 文档中的列表编号非常简单且非常有用。无论您是生成报告、创建结构化文档，还是只需要更好地控制列表，此技术都可以满足您的需求。
 
-答：要在 Aspose.Words 中重新开始列表的编号，您可以使用`ListRestartAtNumber`方法`List`类。此方法允许您设置一个新的拨号值，列表应从该值重新启动。例如，您可以使用`list.ListRestartAtNumber(1)`从 1 重新开始编号。
+## 常见问题解答
 
-#### 问：是否可以在 Aspose.Words 中自定义重新启动列表编号的前缀和后缀？
+### 除了 NumberArabicParenthesis 之外，我可以使用其他列表模板吗？
 
-答：是的，您可以在 Aspose.Words 中自定义重新启动列表编号的前缀和后缀。`ListLevel`该类提供以下属性`ListLevel.NumberPrefix`和`ListLevel.NumberSuffix`允许您为列表中的每个级别指定前缀和后缀。您可以使用这些属性根据需要自定义前缀和后缀。
+当然！Aspose.Words 提供各种列表模板，如项目符号、字母、罗马数字等。您可以选择最适合您需求的模板。
 
-#### 问：如何指定应重新开始列表的特定编号值？
+### 如何更改列表级别？
 
-答：要指定列表应从其重新开始的特定数值，您可以使用`ListRestartAtNumber`方法将所需值作为参数传递。例如，要从 5 重新开始编号，您可以使用`list.ListRestartAtNumber(5)`.
+您可以通过修改`ListLevels`属性。例如，`list1.ListLevels[1]`将引用列表的第二级。
 
-#### 问：是否可以在 Aspose.Words 中重新启动多级列表编号？
+### 我可以从任意数字重新开始编号吗？
 
-答：是的，Aspose.Words 支持多个列表级别的重新编号。您可以应用`ListRestartAtNumber`方法可以单独重新开始编号。例如，您可以使用`list.Levels[0].ListRestartAtNumber(1)`从 1 重新开始第一级列表，然后`list.Levels[1].ListRestartAtNumber(1)`从 1 开始重新开始第二级列表，依此类推。
+是的，你可以使用`StartAt`列表级别的属性。
 
+### 不同列表级别可以采用不同的格式吗？
+
+确实如此！每个列表级别都可以有自己的格式设置，例如字体、对齐方式和编号样式。
+
+### 如果我想从先前的列表继续编号而不是重新开始，该怎么办？
+
+如果要继续编号，则无需创建列表的副本。只需继续将项目添加到原始列表中即可。
 
 

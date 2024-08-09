@@ -2,95 +2,98 @@
 title: Lista com marcadores
 linktitle: Lista com marcadores
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como criar uma lista com marcadores com o guia passo a passo do Aspose.Words for .NET.
+description: Aprenda como criar e personalizar listas com marcadores em documentos do Word usando Aspose.Words for .NET com este guia passo a passo.
 type: docs
 weight: 10
 url: /pt/net/working-with-markdown/bulleted-list/
 ---
+## Introdução
 
-Neste tutorial, mostraremos como criar uma lista com marcadores com Aspose.Words for .NET. Uma lista com marcadores é usada para listar itens sem usar numeração.
+Pronto para mergulhar no mundo do Aspose.Words for .NET? Hoje, veremos como criar uma lista com marcadores em seus documentos do Word. Esteja você organizando ideias, listando itens ou apenas adicionando um pouco de estrutura ao seu documento, as listas com marcadores são muito úteis. Então, vamos começar!
 
-## Etapa 1: usando um gerador de documentos
+## Pré-requisitos
 
-Primeiro, usaremos um gerador de documentos para adicionar conteúdo ao nosso documento.
+Antes de entrarmos na diversão da codificação, vamos ter certeza de que você tem tudo o que precisa:
+
+1.  Aspose.Words for .NET: Certifique-se de ter a biblioteca Aspose.Words instalada. Se você ainda não tem, você pode[baixe aqui](https://releases.aspose.com/words/net/).
+2. Ambiente de desenvolvimento: ambiente de desenvolvimento AC# como Visual Studio.
+3. Conhecimento básico de C#: Um conhecimento básico de programação C# o ajudará a acompanhar.
+
+## Importar namespaces
+
+Primeiramente, vamos importar os namespaces necessários. Isso é como preparar o terreno para que nosso código funcione sem problemas.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Agora, vamos dividir o processo em etapas fáceis e gerenciáveis.
+
+## Etapa 1: crie um novo documento
+
+Tudo bem, vamos começar criando um novo documento. É aqui que toda a magia acontecerá.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Etapa 2: aplicar uma lista com marcadores padrão
+## Etapa 2: aplicar formato de lista com marcadores
 
- Podemos aplicar uma lista com marcadores padrão usando o construtor de documentos`ApplyBulletDefault` método.
+A seguir, aplicaremos um formato de lista com marcadores. Isso informa ao documento que estamos prestes a iniciar uma lista com marcadores.
 
 ```csharp
 builder.ListFormat.ApplyBulletDefault();
 ```
 
-## Etapa 3: Personalizando o formato do marcador
+## Etapa 3: personalizar a lista com marcadores
 
- Podemos personalizar o formato do marcador acessando as propriedades de`ListFormat.List.ListLevels[0]`. Neste exemplo, usamos o travessão "-" como marcador.
+Aqui, personalizaremos a lista com marcadores ao nosso gosto. Neste exemplo, usaremos um travessão (-) como marcador.
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
 ```
 
-## Passo 4: Adicionando itens à lista
+## Etapa 4: adicionar itens à lista
 
- Agora podemos adicionar itens à lista com marcadores usando o construtor de documentos`Writeln` método.
-
-```csharp
-builder. Writen("Element 1");
-builder. Writen("Element 2");
-```
-
-## Etapa 5: remover o recuo da lista
-
- Se quisermos criar uma sublista, podemos aumentar o recuo usando o`ListFormat.ListIndent()` método. Neste exemplo, estamos adicionando uma sublista aos itens 2a e 2b.
+Agora, vamos adicionar alguns itens à nossa lista com marcadores. É aqui que você pode ser criativo e adicionar qualquer conteúdo que precisar.
 
 ```csharp
-builder.ListFormat.ListIndent();
-builder. Writeln("Element 2a");
-builder.Writeln("Element 2b");
-```
-### Exemplo de código-fonte para lista com marcadores usando Aspose.Words for .NET
-
-
-```csharp
-// Use um construtor de documentos para adicionar conteúdo ao documento.
-DocumentBuilder builder = new DocumentBuilder();
-
-builder.ListFormat.ApplyBulletDefault();
-builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
-
 builder.Writeln("Item 1");
 builder.Writeln("Item 2");
-
-builder.ListFormat.ListIndent();
-
-builder.Writeln("Item 2a");
-builder.Writeln("Item 2b");
 ```
 
-Parabéns! Agora você aprendeu como criar uma lista com marcadores com Aspose.Words for .NET.
+## Etapa 5: adicionar subitens
 
-### Perguntas frequentes
+Para tornar as coisas mais interessantes, vamos adicionar alguns subitens no “Item 2”. Isso ajuda na organização dos subpontos.
 
-#### P: Como criar uma lista com marcadores no Markdown?
+```csharp
+builder.ListFormat.ListIndent();
+builder.Writeln("Item 2a");
+builder.Writeln("Item 2b");
+builder.ListFormat.ListOutdent(); // Retornar ao nível da lista principal
+```
 
-R: Para criar uma lista com marcadores no Markdown, inicie cada item da lista com um símbolo de marcador (`-`, `*` , ou`+`), seguido por um espaço.
+## Conclusão
 
-#### P: Você pode aninhar listas com marcadores no Markdown?
+E aí está! Você acabou de criar uma lista com marcadores em um documento do Word usando Aspose.Words for .NET. É um processo simples, mas incrivelmente poderoso para organizar seus documentos. Esteja você criando listas simples ou listas aninhadas complexas, o Aspose.Words tem o que você precisa.
 
-R: Sim, é possível aninhar listas com marcadores no Markdown adicionando quatro espaços de deslocamento na frente de cada item da lista aninhada.
+Sinta-se à vontade para experimentar diferentes estilos e formatos de lista para atender às suas necessidades. Boa codificação!
 
-#### P: Como personalizar símbolos de marcadores?
+## Perguntas frequentes
 
-R: No Markdown padrão, os símbolos de marcadores são predefinidos. No entanto, alguns editores Markdown permitem personalizá-los usando extensões específicas.
+### Posso usar símbolos de marcadores diferentes na lista?
+    Sim, você pode personalizar os símbolos dos marcadores alterando o`NumberFormat` propriedade.
 
-#### P: As listas com marcadores no Markdown suportam recuo?
+### Como adiciono mais níveis de recuo?
+    Use o`ListIndent` método para adicionar mais níveis e`ListOutdent` para voltar a um nível superior.
 
-R: Sim, listas com marcadores no Markdown suportam recuo. Você pode adicionar um deslocamento para a esquerda usando espaços ou tabulações.
+### É possível misturar listas com marcadores e números?
+   Absolutamente! Você pode alternar entre formatos de marcadores e números usando o`ApplyNumberDefault`e`ApplyBulletDefault` métodos.
 
-#### P: Podem ser adicionados links ou texto embutido aos itens da lista?
+### Posso estilizar o texto nos itens da lista?
+    Sim, você pode aplicar diferentes estilos, fontes e formatação ao texto nos itens da lista usando o botão`Font` propriedade do`DocumentBuilder`.
 
-R: Sim, você pode adicionar links ou texto embutido aos itens da lista usando a sintaxe Markdown apropriada.
+### Como posso criar uma lista com marcadores de várias colunas?
+   Você pode usar a formatação de tabela para criar listas com várias colunas, onde cada célula contém uma lista com marcadores separada.

@@ -2,19 +2,41 @@
 title: Geef lijstniveau op
 linktitle: Geef lijstniveau op
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u het lijstniveau in een Word-document kunt opgeven met Aspose.Words voor .NET.
+description: Leer hoe u genummerde lijsten en lijsten met opsommingstekens op meerdere niveaus kunt maken in Word-documenten met behulp van Aspose.Words voor .NET. Stap-voor-stap handleiding inbegrepen. Perfect voor .NET-ontwikkelaars.
 type: docs
 weight: 10
 url: /nl/net/working-with-list/specify-list-level/
 ---
+## Invoering
 
-In deze stapsgewijze zelfstudie laten we u zien hoe u het lijstniveau in een Word-document kunt opgeven met behulp van Aspose.Words voor .NET. We leggen de meegeleverde C#-broncode uit en laten u zien hoe u deze in uw eigen projecten kunt implementeren.
+Hallo daar, mede-codeur! Als u ooit heeft geworsteld met het maken van dynamische en geavanceerde lijsten in Word-documenten met behulp van .NET, staat u iets moois te wachten. Vandaag duiken we in de wereld van Aspose.Words voor .NET. We zullen ons specifiek concentreren op het specificeren van lijstniveaus. Zie het als een verbetering van uw documentenspel, waardoor u moeiteloos professionele, verzorgde lijsten kunt maken. Aan het einde van deze handleiding heeft u een duidelijk pad voor het maken van zowel genummerde lijsten als lijsten met opsommingstekens met meerdere niveaus. Klaar? Laten we er meteen in springen!
 
- Zorg er om te beginnen voor dat Aspose.Words voor .NET is geïnstalleerd en geconfigureerd in uw ontwikkelomgeving. Als u dat nog niet heeft gedaan, downloadt en installeert u de bibliotheek van[Aspose.Releases]https://releases.aspose.com/words/net/.
+## Vereisten
 
-## Stap 1: Het creëren van de Document- en Documentgenerator
+Voordat we in de kern duiken, laten we ervoor zorgen dat we alles hebben wat we nodig hebben. Hier is een korte checklist:
 
-Maak eerst een nieuw document en een bijbehorende documentgenerator:
+1.  Aspose.Words voor .NET: Zorg ervoor dat de Aspose.Words voor .NET-bibliotheek is geïnstalleerd. Je kunt het downloaden[hier](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: Een IDE zoals Visual Studio zal uw leven gemakkelijker maken.
+3. .NET Framework: Zorg ervoor dat .NET Framework op uw computer is geïnstalleerd.
+4. Basiskennis van C#: In deze tutorial wordt ervan uitgegaan dat u vertrouwd bent met de basisprogrammering in C#.
+
+Heb je alles? Geweldig! Laten we onze handen vuil maken.
+
+## Naamruimten importeren
+
+Allereerst moeten we de benodigde naamruimten importeren. Open uw C#-project en voeg het volgende toe met behulp van richtlijnen:
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Dit vormt de basis voor het werken met Aspose.Words in uw project.
+
+## Stap 1: Het document en DocumentBuilder instellen
+
+ Laten we beginnen met het maken van een nieuw document en een`DocumentBuilder` bezwaar om ermee te werken.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -22,113 +44,83 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Stap 2: Een genummerde lijst maken en toepassen
+## Stap 2: Een genummerde lijst maken
 
-Maak vervolgens een genummerde lijst op basis van een van de lijstsjablonen van Microsoft Word en pas deze toe op de huidige alinea in de documentbouwer:
+ Nu gaan we een genummerde lijst maken op basis van een van de Microsoft Word-lijstsjablonen en deze toepassen op de`DocumentBuilder`'s huidige paragraaf.
 
 ```csharp
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
 ```
 
-## Stap 3: Lijstniveauspecificatie
+## Stap 3: Meerdere lijstniveaus toepassen
 
- Gebruik die van de documentbuilder`ListLevelNumber` eigenschap om het lijstniveau op te geven en tekst aan de alinea toe te voegen:
+Met Aspose.Words kunt u maximaal negen niveaus voor een lijst opgeven. Laten we ze allemaal toepassen om te zien hoe het werkt.
 
 ```csharp
 for (int i = 0; i < 9; i++)
 {
-     builder.ListFormat.ListLevelNumber = i;
-     builder.Writeln("Level " + i);
+    builder.ListFormat.ListLevelNumber = i;
+    builder.Writeln("Level " + i);
 }
 ```
 
-Herhaal deze stappen om lijstniveaus op te geven en op elk niveau tekst toe te voegen.
+In deze lus stellen we het lijstniveau voor elke alinea in en schrijven we een regel tekst die het niveau aangeeft.
 
-## Stap 4: Een lijst met opsommingstekens maken en toepassen
+## Stap 4: Een lijst met opsommingstekens maken
 
-U kunt ook een lijst met opsommingstekens maken en toepassen met behulp van een van de lijstsjablonen van Microsoft Word:
+Laten we vervolgens overschakelen en een lijst met opsommingen maken. Deze keer gebruiken we een ander lijstsjabloon.
 
 ```csharp
 builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
 ```
 
-## Stap 5: Tekst toevoegen aan lijstniveaus met opsommingstekens
+## Stap 5: Meerdere niveaus toepassen op de lijst met opsommingstekens
 
- Gebruik de`ListLevelNumber` eigenschap opnieuw om het niveau van de lijst met opsommingstekens op te geven en tekst toe te voegen:
+Net als bij de genummerde lijst passen we meerdere niveaus toe op onze lijst met opsommingen.
 
 ```csharp
 for (int i = 0; i < 9; i++)
 {
-     builder.ListFormat.ListLevelNumber = i;
-     builder.Writeln("Level " + i);
+    builder.ListFormat.ListLevelNumber = i;
+    builder.Writeln("Level " + i);
 }
 ```
 
-## Stap 6: Stop met het opmaken van de lijst
+## Stap 6: Lijstopmaak stoppen
 
- Om het opmaken van de lijst te stoppen, stelt u in`null` naar de`List`eigenschap van de documentgenerator:
-
-```csharp
-builder. ListFormat. List = null;
-```
-
-## Stap 7: Het gewijzigde document opslaan
-
-Sla het gewijzigde document op:
+Laten we tot slot kijken hoe we de lijstopmaak kunnen stoppen om terug te keren naar normale tekst.
 
 ```csharp
-builder.Document.Save(dataDir + "SpecifyListLevel.docx");
-```
-
-Dus ! U hebt met succes het lijstniveau in een Word-document opgegeven met Aspose.Words voor .NET.
-
-### Voorbeeldbroncode om lijstniveau op te geven
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-// Maak een genummerde lijst op basis van een van de Microsoft Word-lijstsjablonen
-//en pas het toe op de huidige paragraaf van de documentbouwer.
-builder.ListFormat.List = doc.Lists.Add(ListTemplate.NumberArabicDot);
-
-// Er zijn negen niveaus in deze lijst, laten we ze allemaal proberen.
-for (int i = 0; i < 9; i++)
-{
-	builder.ListFormat.ListLevelNumber = i;
-	builder.Writeln("Level " + i);
-}
-
-// Maak een lijst met opsommingstekens op basis van een van de Microsoft Word-lijstsjablonen
-//en pas het toe op de huidige paragraaf van de documentbouwer.
-builder.ListFormat.List = doc.Lists.Add(ListTemplate.BulletDiamonds);
-
-for (int i = 0; i < 9; i++)
-{
-	builder.ListFormat.ListLevelNumber = i;
-	builder.Writeln("Level " + i);
-}
-
-// Dit is een manier om de lijstopmaak te stoppen.
 builder.ListFormat.List = null;
-
-builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
-            
 ```
 
-### Veelgestelde vragen
+## Stap 7: Het document opslaan
 
-#### Vraag: Hoe kan ik het lijstniveau opgeven in Aspose.Words?
+Na al dat harde werk is het tijd om ons document op te slaan. Laten we het opslaan met een betekenisvolle naam.
 
- A: Om het lijstniveau in Aspose.Words te specificeren, moet u een exemplaar van de`List` klasse en geef deze een genummerde lijst. Dan kunt u gebruik maken van de`Paragraph.ListFormat.ListLevelNumber` eigenschap om het niveau van elk lijstitem op te geven. U kunt deze lijst aan een sectie van uw document koppelen, zodat de lijstitems het gewenste niveau hebben.
+```csharp
+builder.Document.Save(dataDir + "WorkingWithList.SpecifyListLevel.docx");
+```
 
-#### Vraag: Is het mogelijk om het nummeringsformaat van lijstitems in Aspose.Words te wijzigen?
+En dat is het! U hebt zojuist een document met complexe lijststructuren gemaakt met Aspose.Words voor .NET.
 
- A: Ja, u kunt het nummeringsformaat van lijstitems in Aspose.Words wijzigen. De`ListLevel` class biedt hiervoor verschillende eigenschappen, zoals`ListLevel.NumberFormat`, `ListLevel.NumberStyle`, `ListLevel.NumberPosition`, enz. U kunt deze eigenschappen gebruiken om het nummeringsformaat in te stellen voor lijstitems, zoals Arabische cijfers, Romeinse cijfers, letters, enz.
+## Conclusie
 
-#### Vraag: Kan ik extra niveaus toevoegen aan een genummerde lijst in Aspose.Words?
+Het maken van gestructureerde lijsten met meerdere niveaus in Word-documenten kan de leesbaarheid en professionaliteit aanzienlijk verbeteren. Met Aspose.Words voor .NET kunt u dit proces automatiseren, waardoor u tijd bespaart en consistentie garandeert. We hopen dat deze handleiding u heeft geholpen te begrijpen hoe u lijstniveaus effectief kunt specificeren. Blijf experimenteren en ontdek hoe krachtig deze tool kan zijn voor uw documentverwerkingsbehoeften.
 
- A: Ja, het is mogelijk om extra niveaus toe te voegen aan een genummerde lijst in Aspose.Words. De`ListLevel`Met class kunt u opmaakeigenschappen instellen voor elk niveau van de lijst. U kunt opties instellen zoals voorvoegsel, achtervoegsel, uitlijning, inspringing, enz. Hiermee kunt u lijsten maken met meerdere hiërarchieniveaus.
+## Veelgestelde vragen
 
+### Wat is Aspose.Words voor .NET?
+Aspose.Words voor .NET is een krachtige bibliotheek waarmee u Word-documenten programmatisch kunt maken, bewerken, converteren en afdrukken in C#.
 
+### Kan ik Aspose.Words gratis gebruiken?
+Aspose.Words biedt een gratis proefversie die u kunt downloaden[hier](https://releases.aspose.com/) . Voor een volledige versie kunt u de aankoopopties bekijken[hier](https://purchase.aspose.com/buy).
+
+### Hoeveel niveaus kan ik opgeven in een lijst met Aspose.Words?
+Met Aspose.Words kunt u maximaal negen niveaus in een lijst opgeven.
+
+### Is het mogelijk om genummerde lijsten en lijsten met opsommingstekens in één document te combineren?
+Ja, u kunt verschillende soorten lijsten in één document combineren door indien nodig van lijstsjabloon te wisselen.
+
+### Waar kan ik meer documentatie vinden over Aspose.Words voor .NET?
+ U kunt gedetailleerde documentatie vinden[hier](https://reference.aspose.com/words/net/).

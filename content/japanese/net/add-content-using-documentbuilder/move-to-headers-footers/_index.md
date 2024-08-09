@@ -99,7 +99,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.MoveToHeadersFooters.docx");
 
 ## 結論
 
-これらの手順に従うことで、Aspose.Words for .NET を使用して Word 文書のヘッダーとフッターを簡単に操作できます。このチュートリアルでは基本的な操作について説明しましたが、Aspose.Words にはより複雑な文書操作のための幅広い機能が用意されています。[ドキュメンテーション](https://reference.aspose.com/words/net/)より高度な機能についてはこちらをご覧ください。
+これらの手順に従うことで、Aspose.Words for .NET を使用して Word 文書のヘッダーとフッターを簡単に操作できます。このチュートリアルでは基本的な操作について説明しましたが、Aspose.Words にはより複雑な文書操作のための幅広い機能が用意されています。[ドキュメント](https://reference.aspose.com/words/net/)より高度な機能についてはこちらをご覧ください。
 
 ## よくある質問
 
@@ -116,4 +116,4 @@ Aspose.Words for .NET は、開発者が C# を使用してプログラム的に
 Aspose.Words が提供する表、画像、さまざまな書式設定オプションを使用して、複雑なレイアウトを作成できます。
 
 ### その他の例やチュートリアルはどこで見つかりますか?
-チェックしてください[ドキュメンテーション](https://reference.aspose.com/words/net/)そしてその[サポートフォーラム](https://forum.aspose.com/c/words/8)さらなる例とコミュニティのサポートについては、こちらをご覧ください。
+チェックしてください[ドキュメント](https://reference.aspose.com/words/net/)そして[サポートフォーラム](https://forum.aspose.com/c/words/8)さらなる例とコミュニティのサポートについては、こちらをご覧ください。

@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.DocumentPageSetup.docx
 
 ## Çözüm
 
-İşte buyur! Bu basit adımlarla Aspose.Words for .NET'i kullanarak belgenizin sayfa düzenini ayarladınız. Bu işlem sizi birçok biçimlendirme derdinden kurtarabilir ve belgelerinizin profesyonel ve şık görünmesini sağlayabilir. Dolayısıyla bir dahaki sefere bir proje üzerinde çalıştığınızda bu kılavuzu hatırlayın ve sayfa düzeninizde bir profesyonel gibi ustaca çalışın.
+Ve işte karşınızda! Bu basit adımlarla Aspose.Words for .NET'i kullanarak belgenizin sayfa düzenini ayarladınız. Bu işlem sizi birçok biçimlendirme derdinden kurtarabilir ve belgelerinizin profesyonel ve şık görünmesini sağlayabilir. Dolayısıyla bir dahaki sefere bir proje üzerinde çalıştığınızda bu kılavuzu hatırlayın ve sayfa düzeninizde bir profesyonel gibi ustaca çalışın.
 
 ## SSS'ler
 

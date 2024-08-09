@@ -9,13 +9,13 @@ url: /pl/net/programming-with-charts/number-format-for-axis/
 ---
 ## Wstęp
 
-No hej! Czy kiedykolwiek pracowałeś z wykresami w dokumentach i żałowałeś, że nie możesz sformatować liczb na osi, aby wyglądały bardziej profesjonalnie? Cóż, masz szczęście! W tym samouczku zagłębimy się w to, jak możesz to osiągnąć za pomocą Aspose.Words dla .NET. Ta potężna biblioteka umożliwia niezwykle łatwą obsługę dokumentów programu Word. Dzisiaj skupiamy się na odnowieniu osi wykresu za pomocą niestandardowych formatów liczb.
+Hej tam! Czy kiedykolwiek pracowałeś z wykresami w dokumentach i żałowałeś, że nie możesz sformatować liczb na osi, aby wyglądały bardziej profesjonalnie? Cóż, masz szczęście! W tym samouczku zagłębimy się w to, jak możesz to osiągnąć za pomocą Aspose.Words dla .NET. Ta potężna biblioteka umożliwia niezwykle łatwą obsługę dokumentów programu Word. Dzisiaj skupiamy się na odnowieniu osi wykresu za pomocą niestandardowych formatów liczb.
 
 ## Warunki wstępne
 
 Zanim zaczniemy, upewnijmy się, że masz wszystko, czego potrzebujesz. Oto krótka lista kontrolna:
 
--  Aspose.Words dla .NET: Upewnij się, że masz go zainstalowanego. Jeśli nie, możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+-  Aspose.Words dla .NET: Upewnij się, że masz go zainstalowanego. Jeśli nie, możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 - .NET Framework: Upewnij się, że masz zainstalowaną kompatybilną platformę .NET.
 - Środowisko programistyczne: IDE takie jak Visual Studio będzie działać idealnie.
 - Podstawowa znajomość języka C#: pomoże Ci to w podążaniu za przykładami kodowania.
@@ -98,7 +98,7 @@ Teraz, gdy wszystko jest skonfigurowane, czas zapisać dokument. Ten krok jest w
 doc.Save(dataDir + "WorkingWithCharts.NumberFormatForAxis.docx");
 ```
 
- Tutaj`Save` Metoda zapisuje dokument w określonej ścieżce z nazwą pliku`WorkingWithCharts.NumberFormatForAxis.docx`.
+ Tutaj,`Save` Metoda zapisuje dokument w określonej ścieżce z nazwą pliku`WorkingWithCharts.NumberFormatForAxis.docx`.
 
 ## Wniosek
 

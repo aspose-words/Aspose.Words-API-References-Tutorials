@@ -100,7 +100,7 @@ Son olarak belgenizi belirtilen dizine kaydedin.
 doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 ```
 
-Ve bu kadar! Aspose.Words for .NET'i kullanarak grafik içeren bir belgeyi başarıyla oluşturdunuz. 
+İşte bu kadar! Aspose.Words for .NET'i kullanarak grafik içeren bir belgeyi başarıyla oluşturdunuz. 
 
 ## Çözüm
 
@@ -121,4 +121,4 @@ Aspose.Words for .NET, .NET çerçevesini kullanarak Word belgelerini programlı
  Detaylı dokümantasyon mevcut[Burada](https://reference.aspose.com/words/net/).
 
 ### Aspose.Words için nasıl destek alabilirim?
- Ziyaret edebilirsiniz[destek Forumu](https://forum.aspose.com/c/words/8) yardım için.
+ Ziyaret edebilirsiniz[destek forumu](https://forum.aspose.com/c/words/8) yardım için.

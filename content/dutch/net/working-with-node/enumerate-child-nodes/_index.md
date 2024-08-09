@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /nl/net/working-with-node/enumerate-child-nodes/
 ---
+## Invoering
 
 Programmatisch met documenten werken kan een fluitje van een cent zijn met de juiste tools. Aspose.Words voor .NET is zo'n krachtige bibliotheek waarmee ontwikkelaars gemakkelijk Word-documenten kunnen manipuleren. Vandaag doorlopen we het proces van het opsommen van onderliggende knooppunten binnen een Word-document met behulp van Aspose.Words voor .NET. Deze stapsgewijze handleiding behandelt alles, van de vereisten tot praktische voorbeelden, zodat u een goed begrip van het proces krijgt.
 
@@ -88,17 +89,17 @@ Het opsommen van onderliggende knooppunten in een Word-document met Aspose.Words
 
 ## Veelgestelde vragen
 
-### 1. Welke soorten knooppunten kan een alinea bevatten?
+### Welke soorten knooppunten kan een alinea bevatten?
 Een alinea kan knooppunten bevatten zoals reeksen, vormen, opmerkingen en andere inline-elementen.
 
-### 2. Hoe kan ik een bestaand Word-document laden?
+### Hoe kan ik een bestaand Word-document laden?
  U kunt een bestaand document laden met`Document doc = new Document("path/to/your/document.docx");`.
 
-### 3. Kan ik naast Run ook andere knooppunttypen manipuleren?
+### Kan ik naast Run ook andere knooppunttypen manipuleren?
  Ja, u kunt verschillende knooppunttypen, zoals vormen, opmerkingen en meer, manipuleren door hun aan te vinken`NodeType`.
 
-### 4. Heb ik een licentie nodig om Aspose.Words voor .NET te gebruiken?
- kunt beginnen met een gratis proefperiode of een tijdelijke licentie verkrijgen via[hier](https://purchase.aspose.com/temporary-license/).
+### Heb ik een licentie nodig om Aspose.Words voor .NET te gebruiken?
+ U kunt beginnen met een gratis proefperiode of een tijdelijke licentie verkrijgen via[hier](https://purchase.aspose.com/temporary-license/).
 
-### 5. Waar kan ik meer voorbeelden en documentatie vinden?
- Bezoek de[Aspose.Words voor .NET API-documentatie](https://reference.aspose.com/words/net/) voor meer voorbeelden en gedetailleerde documentatie.
+### Waar kan ik meer voorbeelden en documentatie vinden?
+ Bezoek de[Aspose.Words voor .NET API-documentatie](https://reference.aspose.com/words/net/)voor meer voorbeelden en gedetailleerde documentatie.

@@ -33,7 +33,7 @@ Muy bien, dividamos esto en pasos manejables. Cada paso lo guiará a través de 
 
 ## Paso 1: configura tu proyecto
 
-Antes de poder verificar una firma digital, debe configurar su proyecto en Visual Studio. Así es cómo:
+Antes de poder verificar una firma digital, debe configurar su proyecto en Visual Studio. He aquí cómo:
 
 ### Crear un nuevo proyecto
 

@@ -94,7 +94,7 @@ Esta linha salva o novo documento com o projeto VBA clonado como "WorkingWithVba
 
 E aí está! Você acabou de dominar a arte de clonar um projeto VBA em documentos do Word usando Aspose.Words for .NET. Esta poderosa biblioteca facilita o trabalho com documentos complexos do Word, desde simples manipulações de texto até projetos VBA complexos. Seguindo este guia, você não apenas aprendeu como clonar projetos VBA, mas também estabeleceu as bases para explorar ainda mais os vastos recursos do Aspose.Words.
 
- Se você está curioso para se aprofundar, não se esqueça de conferir o[Documentação da API](https://reference.aspose.com/words/net/) . Para qualquer dúvida ou suporte, o[Fórum de suporte](https://forum.aspose.com/c/words/8) é sempre um ótimo lugar para se conectar com outros desenvolvedores.
+ Se você está curioso para se aprofundar, não se esqueça de conferir o[Documentação da API](https://reference.aspose.com/words/net/) . Para qualquer dúvida ou suporte, o[fórum de suporte](https://forum.aspose.com/c/words/8) é sempre um ótimo lugar para se conectar com outros desenvolvedores.
 
 Boa codificação e lembre-se: toda aventura de manipulação de documentos começa com uma única linha de código!
 
@@ -104,7 +104,7 @@ Boa codificação e lembre-se: toda aventura de manipulação de documentos come
 Aspose.Words for .NET é uma biblioteca versátil para criar, editar e converter documentos Word em aplicativos .NET. É ideal para automatizar tarefas documentais.
 
 ### Posso usar o Aspose.Words gratuitamente?  
- Sim, você pode tentar Aspose.Words com um[teste grátis](https://releases.aspose.com/) ou obter um[licença temporária](https://purchase.aspose.com/temporary-license/) para fins de avaliação.
+ Sim, você pode tentar Aspose.Words com um[teste gratuito](https://releases.aspose.com/) ou obter um[licença temporária](https://purchase.aspose.com/temporary-license/) para fins de avaliação.
 
 ### Como faço para clonar um projeto VBA no Aspose.Words?  
 Para clonar um projeto VBA, carregue o documento original, clone o projeto VBA e salve o novo documento com o projeto clonado.

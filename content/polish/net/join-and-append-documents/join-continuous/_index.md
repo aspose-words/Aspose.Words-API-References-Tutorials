@@ -71,7 +71,7 @@ Teraz dołączamy dokument źródłowy do dokumentu docelowego. Ten krok gwarant
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
- Za pomocą`ImportFormatMode.KeepSourceFormatting` gwarantuje, że formatowanie z dokumentu źródłowego zostanie zachowane w ostatecznie scalonym dokumencie.
+ Używanie`ImportFormatMode.KeepSourceFormatting` gwarantuje, że formatowanie z dokumentu źródłowego zostanie zachowane w ostatecznie scalonym dokumencie.
 
 ## Krok 5: Zapisz scalony dokument
 

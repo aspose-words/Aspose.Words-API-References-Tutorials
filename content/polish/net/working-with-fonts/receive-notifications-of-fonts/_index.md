@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /pl/net/working-with-fonts/receive-notifications-of-fonts/
 ---
-
+## Wstęp
 
 Jeśli kiedykolwiek miałeś problemy z nieprawidłowym renderowaniem czcionek w dokumentach, nie jesteś sam. Zarządzanie ustawieniami czcionek i otrzymywanie powiadomień o zamianach czcionek może zaoszczędzić wielu kłopotów. W tym obszernym przewodniku przyjrzymy się, jak obsługiwać powiadomienia o czcionkach za pomocą Aspose.Words dla .NET, zapewniając, że Twoje dokumenty zawsze będą wyglądać najlepiej.
 
@@ -113,11 +113,11 @@ Nie, możesz określić tylko jedną domyślną czcionkę do zamiany. Można jed
 
 ###  P3: Czy mogę obsługiwać inne typy ostrzeżeń za pomocą`IWarningCallback`?
 
- Tak`IWarningCallback`interfejs może obsługiwać różne typy ostrzeżeń, a nie tylko podstawianie czcionek.
+ Tak,`IWarningCallback`interfejs może obsługiwać różne typy ostrzeżeń, a nie tylko podstawianie czcionek.
 
 ### P4: Gdzie mogę znaleźć wsparcie dla Aspose.Words?
 
- Odwiedzić[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8) do pomocy.
+ Odwiedź[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8) o pomoc.
 
 ### P5: Czy można uzyskać tymczasową licencję na Aspose.Words?
 

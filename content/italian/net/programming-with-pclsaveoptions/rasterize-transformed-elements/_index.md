@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-pclsaveoptions/rasterize-transformed-elements/
 ---
-## introduzione
+## Introduzione
 
 Immagina di lavorare con un documento Word che contiene vari elementi trasformati, come testo o immagini ruotati. Quando converti questo documento nel formato PCL (Printer Command Language), potresti voler assicurarti che questi elementi trasformati siano rasterizzati correttamente. In questo tutorial, approfondiremo come ottenere questo risultato utilizzando Aspose.Words per .NET.
 
@@ -64,7 +64,7 @@ PclSaveOptions saveOptions = new PclSaveOptions
 };
 ```
 
- Qui,`RasterizeTransformedElements` è impostato per`false` , il che significa che gli elementi trasformati non verranno rasterizzati. Puoi impostarlo su`true` se vuoi che siano rasterizzati.
+ Qui,`RasterizeTransformedElements` è impostato su`false` , il che significa che gli elementi trasformati non verranno rasterizzati. Puoi impostarlo su`true` se vuoi che siano rasterizzati.
 
 ## Passaggio 4: converti il documento
 
@@ -93,7 +93,7 @@ Aspose.Words supporta un'ampia gamma di formati, inclusi PDF, HTML, EPUB e altri
  Attualmente, il`RasterizeTransformedElements` l'opzione si applica a tutti gli elementi trasformati nel documento. Per un controllo più granulare, considera l'elaborazione degli elementi separatamente prima della conversione.
 
 ### Come posso risolvere i problemi con la conversione dei documenti?  
- Assicurati di avere l'ultima versione di Aspose.Words e controlla la documentazione per eventuali problemi di conversione specifici. Inoltre, il[Forum di assistenza](https://forum.aspose.com/c/words/8) è un ottimo posto per chiedere aiuto.
+ Assicurati di avere l'ultima versione di Aspose.Words e controlla la documentazione per eventuali problemi di conversione specifici. Inoltre, il[forum di supporto](https://forum.aspose.com/c/words/8) è un ottimo posto per chiedere aiuto.
 
 ### Ci sono limitazioni alla versione di prova di Aspose.Words per .NET?  
  La versione di prova presenta alcune limitazioni, come la filigrana di valutazione. Per un'esperienza completamente funzionale, prendi in considerazione l'acquisto di un file[licenza temporanea](https://purchase.aspose.com/temporary-license/).

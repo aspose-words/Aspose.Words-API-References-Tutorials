@@ -51,7 +51,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Ở đây, chúng tôi tạo ra một`Document` đối tượng và một`DocumentBuilder` sự vật. Các`DocumentBuilder` giúp chúng ta viết văn bản vào tài liệu của mình.
+ Ở đây, chúng tôi tạo ra một`Document` đối tượng và một`DocumentBuilder` sự vật. các`DocumentBuilder` giúp chúng ta viết văn bản vào tài liệu của mình.
 
 ## Bước 3: Viết văn bản ban đầu
 
@@ -75,7 +75,7 @@ Console.WriteLine("Original document text: " + doc.Range.Text);
 doc.Range.Replace("_CustomerName_", "James Bond", new FindReplaceOptions(FindReplaceDirection.Forward));
 ```
 
- Đây,`FindReplaceOptions`cho phép chúng ta chỉ định hướng của hoạt động tìm và thay thế. Đang sử dụng`FindReplaceDirection.Forward` để thay thế văn bản từ đầu đến cuối tài liệu.
+ Đây,`FindReplaceOptions`cho phép chúng ta chỉ định hướng của hoạt động tìm và thay thế. Chúng tôi đang sử dụng`FindReplaceDirection.Forward` để thay thế văn bản từ đầu đến cuối tài liệu.
 
 ## Bước 5: Xác minh thay thế
 
@@ -97,7 +97,7 @@ doc.Save(dataDir + "FindAndReplace.SimpleFindReplace.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn vừa tự động hóa quá trình tìm và thay thế văn bản trong tài liệu Word bằng Aspose.Words for .NET. Không còn cập nhật thủ công và không còn lỗi. Cho dù bạn đang chuẩn bị báo cáo, tạo thư được cá nhân hóa hay chỉ đơn giản là quản lý nội dung tài liệu, kỹ thuật đơn giản nhưng mạnh mẽ này có thể giúp bạn tiết kiệm rất nhiều thời gian.
+Và bạn có nó! Bạn vừa tự động hóa quá trình tìm và thay thế văn bản trong tài liệu Word bằng Aspose.Words for .NET. Không còn cập nhật thủ công và không còn lỗi. Cho dù bạn đang chuẩn bị báo cáo, tạo thư được cá nhân hóa hay chỉ đơn giản là quản lý nội dung tài liệu, kỹ thuật đơn giản nhưng mạnh mẽ này có thể giúp bạn tiết kiệm rất nhiều thời gian.
 
 ## Câu hỏi thường gặp
 

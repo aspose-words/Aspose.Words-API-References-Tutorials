@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-charts/date-time-values-to-axis/
 ---
-## introduzione
+## Introduzione
 
 La creazione di grafici nei documenti può essere un modo efficace per visualizzare i dati. Quando si gestiscono dati di serie temporali, l'aggiunta di valori di data e ora all'asse di un grafico è fondamentale per maggiore chiarezza. In questo tutorial ti guideremo attraverso il processo di aggiunta di valori di data e ora all'asse di un grafico utilizzando Aspose.Words per .NET. Questa guida passo passo ti aiuterà a configurare il tuo ambiente, scrivere il codice e comprendere ogni parte del processo. Immergiamoci!
 

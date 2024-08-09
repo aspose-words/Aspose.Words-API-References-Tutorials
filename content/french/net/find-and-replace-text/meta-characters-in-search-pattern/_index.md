@@ -96,7 +96,7 @@ doc.Save(dataDir + "FindAndReplace.MetaCharactersInSearchPattern.docx");
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez réussi à manipuler un document Word à l'aide de métacaractères dans des modèles de recherche avec Aspose.Words pour .NET. Cette technique est incroyablement utile pour automatiser les tâches d’édition et de formatage de documents. Continuez à expérimenter différents méta-caractères pour découvrir des moyens plus puissants de gérer vos documents.
+Félicitations! Vous avez réussi à manipuler un document Word à l'aide de métacaractères dans des modèles de recherche avec Aspose.Words pour .NET. Cette technique est incroyablement utile pour automatiser les tâches d’édition et de formatage de documents. Continuez à expérimenter différents méta-caractères pour découvrir des moyens plus puissants de gérer vos documents.
 
 ## FAQ
 

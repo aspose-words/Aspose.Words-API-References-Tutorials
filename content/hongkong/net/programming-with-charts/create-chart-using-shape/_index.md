@@ -86,7 +86,7 @@ doc.Save(dataDir + "WorkingWithCharts.CreateChartUsingShape.docx");
 
 ### 我可以使用 Aspose.Words for .NET 建立其他類型的圖表嗎？
 
-是的，Aspose.Words for .NET 支援各種圖表類型，包括長條圖、圓餅圖等。您可以瀏覽文檔[這裡](https://reference.aspose.com/words/net/)更多細節。
+是的，Aspose.Words for .NET 支援各種圖表類型，包括長條圖、圓餅圖等。您可以瀏覽文檔[這裡](https://reference.aspose.com/words/net/)了解更多詳情。
 
 ### 購買前如何試用 Aspose.Words for .NET？
 

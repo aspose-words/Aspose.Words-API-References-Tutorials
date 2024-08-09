@@ -91,7 +91,7 @@ doc.Save(dataDir + "WorkingWithDocSaveOptions.EncryptDocumentWithPassword.docx",
 ## 常见问题解答
 
 ### 我可以使用不同类型的加密吗？
-是的，Aspose.Words for .NET 支持多种加密方法。检查[文档](https://reference.aspose.com/words/net/)更多细节。
+是的，Aspose.Words for .NET 支持多种加密方法。检查[文档](https://reference.aspose.com/words/net/)了解更多详情。
 
 ### 如果我忘记了文档密码该怎么办？
 不幸的是，如果您忘记了密码，您将无法访问该文档。请务必妥善保管您的密码！

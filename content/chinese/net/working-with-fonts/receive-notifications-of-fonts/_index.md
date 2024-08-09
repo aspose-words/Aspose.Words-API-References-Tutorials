@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /zh/net/working-with-fonts/receive-notifications-of-fonts/
 ---
-
+## 介绍
 
 如果您曾经遇到过字体无法在文档中正确呈现的问题，那么您并不孤单。管理字体设置和接收有关字体替换的通知可以为您省去很多麻烦。在本综合指南中，我们将探讨如何使用 Aspose.Words for .NET 处理字体通知，确保您的文档始终呈现最佳效果。
 
@@ -113,7 +113,7 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
 
 ### 问题 3：我可以使用`IWarningCallback`?
 
-是的`IWarningCallback`界面可以处理各种类型的警告，而不仅仅是字体替换。
+是的，`IWarningCallback`界面可以处理各种类型的警告，而不仅仅是字体替换。
 
 ### Q4：在哪里可以找到对 Aspose.Words 的支持？
 

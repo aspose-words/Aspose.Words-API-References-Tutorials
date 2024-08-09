@@ -9,13 +9,13 @@ url: /ko/net/join-and-append-documents/different-page-setup/
 ---
 ## 소개
 
-안녕하세요! .NET용 Aspose.Words를 사용하여 문서 조작의 매혹적인 세계로 뛰어들 준비가 되셨습니까? 오늘 우리는 매우 깔끔한 문제를 다루고 있습니다. 즉, Word 문서를 결합할 때 다른 페이지 설정을 설정하는 것입니다. 보고서를 병합하든, 소설을 작성하든, 아니면 재미로 문서를 조작하든 이 가이드가 단계별로 안내해 드립니다. 시작하자!
+안녕하세요! .NET용 Aspose.Words를 사용하여 문서 조작의 매혹적인 세계로 뛰어들 준비가 되셨습니까? 오늘 우리는 매우 깔끔한 문제를 다루고 있습니다. 즉, Word 문서를 결합할 때 다른 페이지 설정을 설정하는 것입니다. 보고서를 병합하든, 소설을 작성하든, 아니면 재미로 문서를 조작하든 이 가이드가 단계별로 안내해 드립니다. 시작해 봅시다!
 
 ## 전제 조건
 
 손을 더럽히기 전에 필요한 모든 것이 있는지 확인합시다.
 
-1.  .NET용 Aspose.Words: .NET용 Aspose.Words가 설치되어 있는지 확인하세요. 당신은 할 수 있습니다[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+1.  .NET용 Aspose.Words: .NET용 Aspose.Words가 설치되어 있는지 확인하세요. 당신은 할 수 있습니다[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 2. .NET Framework: .NET용 Aspose.Words를 지원하는 모든 버전.
 3. 개발 환경: Visual Studio 또는 기타 .NET 호환 IDE.
 4. 기본 C# 지식: 구문과 구조를 이해하기 위한 기본 사항입니다.

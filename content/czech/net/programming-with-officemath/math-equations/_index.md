@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-officemath/math-equations/
 ---
-## Úvod
+## Zavedení
 
 Jste připraveni ponořit se do světa matematických rovnic v dokumentech aplikace Word? Dnes se podíváme na to, jak můžete použít Aspose.Words pro .NET k vytváření a konfiguraci matematických rovnic v souborech aplikace Word. Ať už jste student, učitel nebo prostě někdo, kdo miluje práci s rovnicemi, tento průvodce vás provede každým krokem. Rozdělíme jej do snadno pochopitelných částí, abychom zajistili, že porozumíte každé části, než budete pokračovat. Začněme!
 

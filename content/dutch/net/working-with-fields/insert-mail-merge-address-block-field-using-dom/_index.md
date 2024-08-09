@@ -116,10 +116,10 @@ Aspose.Words voor .NET is een krachtige bibliotheek waarmee ontwikkelaars Word-d
  Aspose.Words biedt een gratis proefversie die u kunt downloaden[hier](https://releases.aspose.com/) . Voor langdurig gebruik kunt u overwegen een licentie aan te schaffen[hier](https://purchase.aspose.com/buy).
 
 ### Wat is een Mail Merge-adresblok?
-Een Mail Merge-adresblok is een veld in Word waarmee u adresgegevens uit een gegevensbron kunt invoegen, op een specifieke manier opgemaakt, waardoor het ideaal is voor het genereren van gepersonaliseerde brieven of labels.
+Een Mail Merge-adresblok is een veld in Word waarmee u adresgegevens uit een gegevensbron kunt invoegen, op een specifieke manier opgemaakt, waardoor het ideaal is voor het genereren van gepersonaliseerde brieven of etiketten.
 
 ### Hoe krijg ik ondersteuning voor Aspose.Words?
  U kunt ondersteuning krijgen van de Aspose-gemeenschap en het technische team[hier](https://forum.aspose.com/c/words/8).
 
 ### Kan ik andere aspecten van Word-documenten automatiseren met Aspose.Words?
-Absoluut! Aspose.Words voor .NET biedt een breed scala aan functies om het genereren, bewerken, converteren en meer van documenten te automatiseren. Bekijk de[documentatie](https://reference.aspose.com/words/net/) voor meer details.
+Absoluut! Aspose.Words voor .NET biedt een breed scala aan functies om het genereren, bewerken, converteren en meer van documenten te automatiseren. Bekijk de[documentatie](https://reference.aspose.com/words/net/) voor meer informatie.

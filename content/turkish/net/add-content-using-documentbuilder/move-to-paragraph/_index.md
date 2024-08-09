@@ -20,7 +20,7 @@ Merhaba teknoloji tutkunu! Hiç program aracılığıyla bir Word belgesinde bel
 3. .NET Framework: .NET Framework'ün kurulu olduğundan emin olun.
 4. Bir Word Belgesi: Çalışmak için örnek bir Word belgesine ihtiyacınız olacak.
 
-Herşeye sahip? Harika! Hadi devam edelim.
+Herşeyi aldın mı? Harika! Devam edelim.
 
 ## Ad Alanlarını İçe Aktar
 
@@ -54,7 +54,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Adım 3: İstediğiniz Paragrafa Geçin
 
- İşte sihrin gerçekleştiği yer burası. kullanarak istenen paragrafa geçeceğiz.`MoveToParagraph` yöntem. Bu yöntem iki parametre alır: paragrafın dizini ve o paragraf içindeki karakter konumu.
+ İşte sihrin gerçekleştiği yer burası. kullanarak istenen paragrafa geçeceğiz.`MoveToParagraph` Yöntem. Bu yöntem iki parametre alır: paragrafın dizini ve o paragraf içindeki karakter konumu.
 
 ```csharp
 builder.MoveToParagraph(2, 0);
@@ -74,7 +74,7 @@ Ve işte! Az önce belirli bir paragrafa taşındınız ve ona metin eklediniz.
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET kullanarak bir Word belgesinde belirli bir paragrafa gitmek çok kolaydır. Yalnızca birkaç satır kodla belge düzenleme sürecinizi otomatikleştirebilir ve tonlarca zaman kazanabilirsiniz. Böylece, bir dahaki sefere bir belgede programlı olarak gezinmeniz gerektiğinde, tam olarak ne yapmanız gerektiğini bileceksiniz.
+Ve işte karşınızda! Aspose.Words for .NET kullanarak bir Word belgesinde belirli bir paragrafa gitmek çok kolaydır. Yalnızca birkaç satır kodla belge düzenleme sürecinizi otomatikleştirebilir ve tonlarca zaman kazanabilirsiniz. Böylece, bir dahaki sefere bir belgede programlı olarak gezinmeniz gerektiğinde, tam olarak ne yapmanız gerektiğini bileceksiniz.
 
 ## SSS'ler
 
@@ -88,7 +88,7 @@ Dizin aralık dışındaysa yöntem bir istisna atar. Dizinin her zaman belgenin
  Kesinlikle! kullanarak metin, resim, tablo ve daha fazlasını ekleyebilirsiniz.`DocumentBuilder` sınıf.
 
 ### Aspose.Words for .NET'i kullanmak için lisansa ihtiyacım var mı?
- Evet, Aspose.Words for .NET tam işlevsellik için lisans gerektirir. Alabilirsin[geçici lisans](https://purchase.aspose.com/temporary-license/) Evrim için.
+ Evet, Aspose.Words for .NET tam işlevsellik için lisans gerektirir. Alabilirsin[geçici lisans](https://purchase.aspose.com/temporary-license/) değerlendirme için.
 
 ### Daha ayrıntılı belgeleri nerede bulabilirim?
  Ayrıntılı belgeleri bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).

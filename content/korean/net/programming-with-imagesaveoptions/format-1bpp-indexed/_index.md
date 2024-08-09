@@ -15,7 +15,7 @@ url: /ko/net/programming-with-imagesaveoptions/format-1bpp-indexed/
 
 손을 더럽히기 전에 준비해야 할 몇 가지 사항이 있습니다.
 
--  .NET용 Aspose.Words: 라이브러리가 설치되어 있는지 확인하세요. 당신은 할 수 있습니다[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+-  .NET용 Aspose.Words: 라이브러리가 설치되어 있는지 확인하세요. 당신은 할 수 있습니다[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 - .NET 개발 환경: Visual Studio는 좋은 옵션이지만 자신에게 편한 환경을 모두 사용할 수 있습니다.
 - C#에 대한 기본 지식: 걱정하지 마세요. 간단하게 설명하겠지만 C#에 조금 익숙해지면 도움이 될 것입니다.
 - Word 문서: 변환할 샘플 Word 문서를 준비합니다.
@@ -82,7 +82,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.Format1BppIndexed.Png", saveOpti
 1Bpp(픽셀당 1비트) 인덱스 이미지는 각 픽셀이 0 또는 1의 단일 비트로 표시되는 흑백 이미지 형식입니다. 이 형식은 공간 효율성이 매우 높습니다.
 
 ### Word 문서의 여러 페이지를 한 번에 변환할 수 있나요?
- 그래 넌 할수있어. 수정하다`PageSet` 에 있는 재산`ImageSaveOptions` 여러 페이지 또는 전체 문서를 포함합니다.
+ 예, 가능합니다. 수정하다`PageSet` 에 있는 재산`ImageSaveOptions` 여러 페이지 또는 전체 문서를 포함합니다.
 
 ### .NET용 Aspose.Words를 사용하려면 라이선스가 필요합니까?
  예, .NET용 Aspose.Words는 전체 기능을 사용하려면 라이선스가 필요합니다. 당신은 얻을 수 있습니다[임시 면허증은 여기](https://purchase.aspose.com/temporary-license/).

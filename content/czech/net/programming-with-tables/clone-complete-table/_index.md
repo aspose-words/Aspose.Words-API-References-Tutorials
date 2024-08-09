@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-tables/clone-complete-table/
 ---
-## Úvod
+## Zavedení
 
 Jste připraveni posunout své dovednosti v manipulaci s dokumenty Word na další úroveň? Klonování tabulek v dokumentech aplikace Word může změnit hru při vytváření konzistentních rozvržení a správě opakujícího se obsahu. V tomto tutoriálu prozkoumáme, jak naklonovat úplnou tabulku v dokumentu aplikace Word pomocí Aspose.Words for .NET. Na konci této příručky budete schopni bez námahy duplikovat tabulky a udržovat integritu formátování vašeho dokumentu.
 

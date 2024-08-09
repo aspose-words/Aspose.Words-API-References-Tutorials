@@ -100,4 +100,4 @@ A try-catch blokkok segítségével kezelheti a dokumentumfeldolgozási művelet
 Igen, az itt bemutatott módszer csak a mezőket célozza meg, és a többi tartalmat változatlanul hagyja.
 
 ### Hol találok további forrásokat és támogatást az Aspose.Words számára?
- Meglátogatni a[Aspose.Words .NET API dokumentációhoz](https://reference.aspose.com/words/net/) és a[Aspose.Words fórum](https://forum.aspose.com/c/words/8) további segítségért.
+ Látogassa meg a[Aspose.Words .NET API dokumentációhoz](https://reference.aspose.com/words/net/) és a[Aspose.Words fórum](https://forum.aspose.com/c/words/8) további segítségért.

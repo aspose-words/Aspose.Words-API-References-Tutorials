@@ -82,7 +82,7 @@ for section in sections:
     builder.insert_break(aw.BreakType.SECTION_BREAK_NEW_PAGE)
 ```
 
-## συμπέρασμα
+## Σύναψη
 
 Σε αυτό το σεμινάριο, εξερευνήσαμε πώς να χρησιμοποιήσουμε το Aspose.Words για τη λειτουργική μονάδα Content Builder της Python για τη διαίρεση των εγγράφων και τη βελτίωση της ακρίβειας. Αυτή η δυνατότητα είναι ιδιαίτερα χρήσιμη όταν ασχολείστε με μακροσκελές περιεχόμενο που απαιτεί δομημένη οργάνωση.
 
@@ -101,4 +101,4 @@ for section in sections:
 Απολύτως! Το Aspose.Words for Python χρησιμοποιείται ευρέως για τη δημιουργία διαφόρων τύπων αναφορών και εγγράφων με ακριβή μορφοποίηση.
 
 ### Πού μπορώ να έχω πρόσβαση στην τεκμηρίωση και τις λήψεις;
- Επισκέψου το[Aspose.Words for Python τεκμηρίωση](https://reference.aspose.com/words/python-net/) και κατεβάστε τη βιβλιοθήκη από[Aspose.Words Python Releases](https://releases.aspose.com/words/python/).
+ Επισκεφθείτε το[Aspose.Words for Python τεκμηρίωση](https://reference.aspose.com/words/python-net/) και κατεβάστε τη βιβλιοθήκη από[Aspose.Words Python Releases](https://releases.aspose.com/words/python/).

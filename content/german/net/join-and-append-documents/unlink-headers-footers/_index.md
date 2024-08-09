@@ -91,7 +91,7 @@ Und da haben Sie es! Indem Sie diese Schritte befolgen, haben Sie die Verknüpfu
 Aspose.Words für .NET ist eine leistungsstarke Bibliothek für die Arbeit mit Word-Dokumenten in .NET-Anwendungen. Entwickler können damit Dokumente programmgesteuert erstellen, ändern, konvertieren und drucken.
 
 ### Kann ich die Verknüpfung von Kopf- und Fußzeilen nur für bestimmte Abschnitte aufheben?  
- Ja, Sie können die Verknüpfung von Kopf- und Fußzeilen für bestimmte Abschnitte aufheben, indem Sie auf das`HeadersFooters` Eigenschaft des gewünschten Abschnitts und mit dem`LinkToPrevious` Methode.
+ Ja, Sie können die Verknüpfung von Kopf- und Fußzeilen für bestimmte Abschnitte aufheben, indem Sie auf das`HeadersFooters` Eigenschaft des gewünschten Abschnitts und mit dem`LinkToPrevious` Verfahren.
 
 ### Ist es möglich, die ursprüngliche Formatierung des Quelldokuments beizubehalten?  
  Ja, beim Anhängen des Quelldokuments verwenden Sie die`ImportFormatMode.KeepSourceFormatting` Option zum Beibehalten der ursprünglichen Formatierung.

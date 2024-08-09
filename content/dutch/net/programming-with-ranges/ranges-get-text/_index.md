@@ -41,7 +41,7 @@ Maak een map voor uw documenten
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
- Deze map bevat uw Word-document. Zorg ervoor dat u vervangt`"YOUR DOCUMENTS DIRECTORY"` met het daadwerkelijke pad naar uw map.
+ Deze map bevat uw Word-document. Zorg ervoor dat u vervangt`"YOUR DOCUMENTS DIRECTORY"` met het daadwerkelijke pad naar uw directory.
 
 ## Stap 2: Laad het Word-document
 
@@ -71,7 +71,7 @@ string text = doc.Range.Text;
 
 ## Stap 4: Geef de geëxtraheerde tekst weer
 
-Ten slotte kunt u, om te controleren of uw tekstextractie heeft gewerkt, de geëxtraheerde tekst in de console weergeven. Hier is hoe:
+Ten slotte kunt u, om te controleren of uw tekstextractie heeft gewerkt, de geëxtraheerde tekst in de console weergeven. Hier ziet u hoe:
 
 Geef de tekst weer
 

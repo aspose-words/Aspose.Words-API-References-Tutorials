@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-webextension/using-web-extension-task-panes/
 ---
-## Úvod
+## Zavedení
 
 Vítejte v tomto podrobném kurzu o používání podoken úloh rozšíření webu v dokumentu aplikace Word pomocí Aspose.Words for .NET. Pokud jste někdy chtěli vylepšit své dokumenty aplikace Word pomocí interaktivních podoken úloh, jste na správném místě. Tento průvodce vás provede každým krokem, jak toho dosáhnout.
 
@@ -15,10 +15,10 @@ Vítejte v tomto podrobném kurzu o používání podoken úloh rozšíření we
 
 Než se ponoříme, ujistěte se, že máte vše, co potřebujete:
 
--  Aspose.Words for .NET: Můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Můžete si ji stáhnout[zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí .NET: Visual Studio nebo jakékoli jiné IDE, které preferujete.
 - Základní znalost C#: To vám pomůže sledovat příklady kódu.
--  Licence pro Aspose.Words: Můžete si jednu koupit[tady](https://purchase.aspose.com/buy) nebo získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
+-  Licence pro Aspose.Words: Můžete si jednu koupit[zde](https://purchase.aspose.com/buy) nebo získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
 
 ## Importovat jmenné prostory
 
@@ -147,7 +147,7 @@ Tento kód načte dokument a vytiskne identifikátor poskytovatele, verze a kata
 
 ## Závěr
 
-A to je vše! Úspěšně jste přidali a nakonfigurovali podokno úloh rozšíření webu v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato výkonná funkce může výrazně vylepšit vaše dokumenty aplikace Word tím, že poskytuje další funkce přímo v dokumentu. 
+A je to! Úspěšně jste přidali a nakonfigurovali podokno úloh rozšíření webu v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato výkonná funkce může výrazně vylepšit vaše dokumenty aplikace Word tím, že poskytuje další funkce přímo v dokumentu. 
 
 ## FAQ
 
@@ -155,7 +155,7 @@ A to je vše! Úspěšně jste přidali a nakonfigurovali podokno úloh rozší�
 Podokno úloh je prvek rozhraní, který poskytuje další nástroje a funkce v dokumentu aplikace Word, čímž zlepšuje interakci a produktivitu uživatele.
 
 ### Mohu přizpůsobit vzhled podokna úloh?
- Ano, vzhled podokna úloh můžete přizpůsobit nastavením vlastností jako`DockState`, `IsVisible` , a`Width`.
+ Ano, vzhled podokna úloh můžete přizpůsobit nastavením vlastností jako`DockState`, `IsVisible` a`Width`.
 
 ### Co jsou vlastnosti webových rozšíření?
 Vlastnosti webového rozšíření jsou vlastní vlastnosti, které můžete přidat k webovému rozšíření a definovat jeho chování nebo obsah.
@@ -164,4 +164,4 @@ Vlastnosti webového rozšíření jsou vlastní vlastnosti, které můžete př
  Webové rozšíření můžete svázat s částí dokumentu pomocí`WebExtensionBinding` třída s uvedením typu vazby a cílového ID.
 
 ### Kde najdu další informace o Aspose.Words pro .NET?
- Můžete najít podrobnou dokumentaci[tady](https://reference.aspose.com/words/net/).
+ Můžete najít podrobnou dokumentaci[zde](https://reference.aspose.com/words/net/).

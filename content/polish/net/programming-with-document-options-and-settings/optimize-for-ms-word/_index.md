@@ -9,13 +9,13 @@ url: /pl/net/programming-with-document-options-and-settings/optimize-for-ms-word
 ---
 ## Wstęp
 
-No hej! Czy zastanawiałeś się kiedyś, jak sprawić, by Twoje dokumenty Word były super kompatybilne z różnymi wersjami MS Word? Wyobraź sobie, że spędziłeś wiele godzin na tworzeniu idealnego dokumentu, ale wygląda on na bałagan, gdy ktoś otwiera go w innej wersji programu Word. Szkoda, prawda? Cóż, tu właśnie pojawia się Aspose.Words dla .NET! To sprytne narzędzie pozwala zoptymalizować dokumenty pod kątem różnych wersji MS Word za pomocą zaledwie kilku linijek kodu. Przyjrzyjmy się, jak możesz to zrobić bez wysiłku.
+Hej tam! Czy zastanawiałeś się kiedyś, jak sprawić, by Twoje dokumenty Word były super kompatybilne z różnymi wersjami MS Word? Wyobraź sobie, że spędziłeś wiele godzin na tworzeniu idealnego dokumentu, ale wygląda on na bałagan, gdy ktoś otwiera go w innej wersji programu Word. Szkoda, prawda? Cóż, tu właśnie pojawia się Aspose.Words dla .NET! To sprytne narzędzie pozwala zoptymalizować dokumenty pod kątem różnych wersji MS Word za pomocą zaledwie kilku linijek kodu. Przyjrzyjmy się, jak możesz to zrobić bez wysiłku.
 
 ## Warunki wstępne
 
 Zanim ubrudzimy sobie ręce, upewnijmy się, że mamy wszystko, czego potrzebujemy:
 
-1.  Aspose.Words dla .NET: Można[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla .NET: Można[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: Visual Studio lub dowolne inne IDE obsługujące platformę .NET.
 3. Podstawowa znajomość języka C#: Nie musisz być czarodziejem, ale znajomość języka C# będzie pomocna.
 

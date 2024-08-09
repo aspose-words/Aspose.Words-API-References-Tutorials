@@ -15,7 +15,7 @@ Czy kiedykolwiek zaplątałeś się w sieć niestandardowych właściwości doku
 
 Zanim przejdziemy do kodu, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
-1.  Aspose.Words dla biblioteki .NET: Można[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla biblioteki .NET: Można[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. .NET Framework: Upewnij się, że na komputerze jest zainstalowana platforma .NET Framework.
 3. Podstawowa znajomość języka C#: Znajomość programowania w języku C# jest pomocna.
 

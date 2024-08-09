@@ -73,7 +73,7 @@ Com as opções de carregamento definidas, você está pronto para carregar o do
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
- Garanta que`"Pdf Document.pdf"` é o nome do seu arquivo PDF no diretório especificado.
+ Certifique-se de que`"Pdf Document.pdf"` é o nome do seu arquivo PDF no diretório especificado.
 
 ## Conclusão
 

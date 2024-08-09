@@ -44,7 +44,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 步骤 2：开始表格并插入单元格
 
-现在，让我们开始构建表格。首先，我们将插入单元格并向其中添加一些文本。
+现在，让我们开始构建表格。我们将首先插入单元格并向其中添加一些文本。
 
 ```csharp
 Table table = builder.StartTable();

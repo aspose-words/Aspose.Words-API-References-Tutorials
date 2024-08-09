@@ -48,7 +48,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Langkah 2: Muat Dokumen
 
- Menggunakan`Document` kelas untuk memuat dokumen Word Anda. Kelas ini memungkinkan Anda untuk membuka dan memanipulasi dokumen secara terprogram.
+ Gunakan`Document` kelas untuk memuat dokumen Word Anda. Kelas ini memungkinkan Anda untuk membuka dan memanipulasi dokumen secara terprogram.
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
@@ -115,4 +115,4 @@ foreach (StructuredDocumentTagRangeStart tag in tags)
 	Console.WriteLine(tag.Title);
 ```
 
-Itu dia! Anda telah berhasil mengambil dan memproses tag dokumen terstruktur multi-bagian di dokumen Word Anda menggunakan Aspose.Words untuk .NET.
+Itu saja! Anda telah berhasil mengambil dan memproses tag dokumen terstruktur multi-bagian di dokumen Word Anda menggunakan Aspose.Words untuk .NET.

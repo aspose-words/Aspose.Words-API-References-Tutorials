@@ -2,7 +2,7 @@
 title: Tata Letak Dalam Sel
 linktitle: Tata Letak Dalam Sel
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mengatur tata letak sel menggunakan Aspose.Words untuk .NET dengan panduan komprehensif ini. Sempurna untuk pengembang yang ingin menyesuaikan dokumen Word.
+description: Pelajari cara mengatur tata letak di sel menggunakan Aspose.Words untuk .NET dengan panduan komprehensif ini. Sempurna untuk pengembang yang ingin menyesuaikan dokumen Word.
 type: docs
 weight: 10
 url: /id/net/programming-with-shapes/layout-in-cell/
@@ -15,7 +15,7 @@ Jika Anda ingin menyempurnakan tata letak sel tabel di dokumen Word secara terpr
 
 Sebelum kita beralih ke kode, pastikan Anda memiliki semua yang Anda butuhkan:
 
-1.  Aspose.Words for .NET: Pastikan Anda telah menginstal perpustakaan Aspose.Words for .NET. Jika belum, Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Pastikan Anda telah menginstal perpustakaan Aspose.Words for .NET. Jika belum, Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Anda memerlukan lingkungan pengembangan yang diatur dengan .NET. Visual Studio adalah pilihan tepat jika Anda mencari rekomendasi.
 3. Pengetahuan Dasar C#: Meskipun saya akan menjelaskan setiap langkah, pemahaman dasar C# akan membantu Anda mengikutinya dengan lebih mudah.
 4.  Direktori Dokumen: Siapkan jalur direktori tempat Anda akan menyimpan dokumen Anda. Kami akan menyebut ini sebagai`YOUR DOCUMENT DIRECTORY`.

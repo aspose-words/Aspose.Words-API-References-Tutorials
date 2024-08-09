@@ -43,7 +43,7 @@ Primeiramente, você precisa configurar seu projeto no Visual Studio. Se você j
 Agora que seu projeto está configurado, vamos preparar o ambiente:
 
 1.  Crie um diretório para seus documentos: você precisará de uma pasta onde seus documentos serão armazenados. Vamos chamá-lo`Documents`.
-2.  Adicione seu documento de amostra: coloque seu`Document.docx` dentro de`Documents` pasta. Este é o arquivo que iremos clonar.
+2.  Adicione seu documento de amostra: coloque seu`Document.docx` dentro do`Documents` pasta. Este é o arquivo que iremos clonar.
 
 ## Etapa 3: carregue o documento original
 
@@ -115,4 +115,4 @@ Claro! Depois de clonar um documento, você poderá manipulá-lo como qualquer o
 
 ### Onde posso encontrar mais tutoriais sobre Aspose.Words for .NET?
 
- Confira a[documentação](https://reference.aspose.com/words/net/) e a[Aspose fóruns da comunidade](https://forum.aspose.com/c/words/8) para obter mais recursos e suporte.
+ Confira o[documentação](https://reference.aspose.com/words/net/) e o[Aspose fóruns da comunidade](https://forum.aspose.com/c/words/8) para obter mais recursos e suporte.

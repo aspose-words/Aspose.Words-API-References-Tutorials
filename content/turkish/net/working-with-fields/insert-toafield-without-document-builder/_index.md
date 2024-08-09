@@ -106,7 +106,7 @@ doc.Save(dataDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.docx"
 
 ## Çözüm
 
-İşte buyur! Bir belge oluşturucuyu kullanmadan bir Word belgesine başarıyla bir TOA alanı eklediniz. Bu adımları izleyerek alıntıları verimli bir şekilde yönetebilir ve yasal belgelerinizde kapsamlı yetki tabloları oluşturabilirsiniz. Aspose.Words for .NET bu süreci sorunsuz ve verimli hale getirerek karmaşık belge görevlerini kolaylıkla halletmeniz için gerekli araçları sağlar.
+Ve işte karşınızda! Bir belge oluşturucuyu kullanmadan bir Word belgesine başarıyla bir TOA alanı eklediniz. Bu adımları izleyerek alıntıları verimli bir şekilde yönetebilir ve yasal belgelerinizde kapsamlı yetki tabloları oluşturabilirsiniz. Aspose.Words for .NET bu süreci sorunsuz ve verimli hale getirerek karmaşık belge görevlerini kolaylıkla halletmeniz için gerekli araçları sağlar.
 
 ## SSS'ler
 

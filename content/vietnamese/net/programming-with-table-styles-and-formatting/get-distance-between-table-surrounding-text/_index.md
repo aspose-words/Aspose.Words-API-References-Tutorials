@@ -44,7 +44,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 
 ## Bước 2: Truy cập bảng
 
- Tiếp theo, bạn cần truy cập vào bảng trong tài liệu của mình. Các`GetChild` phương thức cho phép bạn truy xuất bảng đầu tiên được tìm thấy trong tài liệu.
+ Tiếp theo, bạn cần truy cập vào bảng trong tài liệu của mình. các`GetChild` phương thức cho phép bạn truy xuất bảng đầu tiên được tìm thấy trong tài liệu.
 
 ```csharp
 // Lấy bảng đầu tiên trong tài liệu
@@ -78,7 +78,7 @@ Console.WriteLine("Distance from Left: " + table.DistanceLeft);
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bằng cách làm theo các bước này, bạn có thể dễ dàng truy xuất khoảng cách giữa bảng và văn bản xung quanh trong tài liệu Word bằng Aspose.Words for .NET. Kỹ thuật đơn giản nhưng mạnh mẽ này cho phép bạn tinh chỉnh bố cục tài liệu của mình, làm cho nó dễ đọc và hấp dẫn hơn về mặt hình ảnh. Chúc mừng mã hóa!
+Và bạn có nó! Bằng cách làm theo các bước này, bạn có thể dễ dàng truy xuất khoảng cách giữa bảng và văn bản xung quanh trong tài liệu Word bằng Aspose.Words for .NET. Kỹ thuật đơn giản nhưng mạnh mẽ này cho phép bạn tinh chỉnh bố cục tài liệu của mình, làm cho nó dễ đọc và hấp dẫn hơn về mặt hình ảnh. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 

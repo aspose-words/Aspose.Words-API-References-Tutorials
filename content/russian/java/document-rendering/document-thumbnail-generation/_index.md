@@ -18,7 +18,7 @@ url: /ru/java/document-rendering/document-thumbnail-generation/
 
 - Среда разработки Java: убедитесь, что в вашей системе установлена Java.
 -  Aspose.Words для Java: загрузите и установите Aspose.Words для Java с веб-сайта.[здесь](https://releases.aspose.com/words/java/).
-- Интегрированная среда разработки (IDE). Вы можете использовать любую Java IDE по вашему выбору, например Eclipse или IntelliJ IDEA.
+- Интегрированная среда разработки (IDE): вы можете использовать любую Java IDE по вашему выбору, например Eclipse или IntelliJ IDEA.
 
 ## Шаг 1. Настройка среды разработки
 

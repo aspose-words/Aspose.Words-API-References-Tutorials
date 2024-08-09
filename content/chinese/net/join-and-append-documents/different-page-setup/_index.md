@@ -133,7 +133,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
 是的，Aspose.Words for .NET 与 .NET Core 完全兼容。
 
 ### 我可以保留这两个文档的样式吗？
-是的`ImportFormatMode.KeepSourceFormatting`选项确保源文档的样式得以保留。
+是的，`ImportFormatMode.KeepSourceFormatting`选项确保源文档的样式得以保留。
 
 ### 在哪里可以获得有关 Aspose.Words 的更多帮助？
 查看[Aspose.Words 文档](https://reference.aspose.com/words/net/)或访问他们的[支持论坛](https://forum.aspose.com/c/words/8)以获得更多帮助。

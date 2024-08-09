@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /es/net/working-with-fonts/set-font-fallback-settings/
 ---
+## Introducción
 
 Cuando se trabaja con documentos que contienen diversos elementos de texto, como diferentes idiomas o caracteres especiales, es fundamental asegurarse de que estos elementos se muestren correctamente. Aspose.Words para .NET ofrece una característica poderosa llamada Configuración de reserva de fuentes, que ayuda a definir reglas para sustituir fuentes cuando la fuente original no admite ciertos caracteres. En esta guía, exploraremos cómo configurar la configuración de reserva de fuentes usando Aspose.Words para .NET en un tutorial paso a paso.
 
@@ -58,7 +59,7 @@ fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
 
 ## Paso 4: aplicar la configuración de fuente al documento
 
- Asigne el configurado`FontSettings` al documento. Esto garantiza que se apliquen las reglas de reserva de fuentes al renderizar el documento.
+ Asigne el configurado`FontSettings`al documento. Esto garantiza que se apliquen las reglas de reserva de fuentes al renderizar el documento.
 
 ```csharp
 doc.FontSettings = fontSettings;

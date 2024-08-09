@@ -9,7 +9,7 @@ url: /pl/net/document-formatting/apply-paragraph-style/
 ---
 ## Wstęp
 
-No hej! Czy zastanawiałeś się kiedyś, jak ożywić dokumenty programu Word za pomocą niesamowitych stylów akapitów za pomocą Aspose.Words dla .NET? Niezależnie od tego, czy przygotowujesz raport, tworzysz propozycję, czy po prostu chcesz, aby Twoje dokumenty wyglądały na najwyższym poziomie, zastosowanie stylów akapitów może mieć ogromne znaczenie. W tym samouczku zagłębimy się w szczegóły stosowania stylów akapitowych w dokumencie programu Word za pomocą Aspose.Words dla .NET. Zatem zapnijcie pasy, weźcie filiżankę kawy i zabieramy się za stylizację!
+Hej tam! Czy zastanawiałeś się kiedyś, jak ożywić dokumenty programu Word za pomocą niesamowitych stylów akapitów za pomocą Aspose.Words dla .NET? Niezależnie od tego, czy przygotowujesz raport, tworzysz propozycję, czy po prostu chcesz, aby Twoje dokumenty wyglądały na najwyższym poziomie, zastosowanie stylów akapitów może mieć ogromne znaczenie. W tym samouczku zagłębimy się w szczegóły stosowania stylów akapitowych w dokumencie programu Word za pomocą Aspose.Words dla .NET. Zatem zapnijcie pasy, weźcie filiżankę kawy i zabieramy się za stylizację!
 
 ## Warunki wstępne
 

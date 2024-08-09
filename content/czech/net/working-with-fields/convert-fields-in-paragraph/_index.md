@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fields/convert-fields-in-paragraph/
 ---
-## Úvod
+## Zavedení
 
 Zapletli jste se někdy do sítě polí ve svých dokumentech aplikace Word, zvláště když se právě snažíte převést tato záludná pole IF na prostý text? No, nejsi sám. Dnes se ponoříme do toho, jak to můžete zvládnout pomocí Aspose.Words pro .NET. Představte si, že jste kouzelník s kouzelnou hůlkou, který přeměňuje pole jediným pohybem kódu. Zní to zajímavě? Pojďme na tuto magickou cestu!
 
@@ -15,7 +15,7 @@ Zapletli jste se někdy do sítě polí ve svých dokumentech aplikace Word, zvl
 
 Než se pustíme do sesílání kouzel, ehm, kódování, je třeba mít na paměti několik věcí. Považujte je za sadu nástrojů vašeho průvodce:
 
--  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu. Můžete to získat od[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu. Můžete to získat od[zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí .NET: Ať už je to Visual Studio nebo jiné IDE, mějte připravené prostředí.
 - Základní znalost C#: Malá znalost C# bude dlouhá cesta.
 

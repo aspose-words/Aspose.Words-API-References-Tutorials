@@ -60,7 +60,7 @@ Hier fügen wir zunächst eine standardmäßige englische Phrase hinzu. Dann akt
 
 ## Schritt 3: Speicheroptionen für Bidi-Marken konfigurieren
 
- Um sicherzustellen, dass die Bidi-Marken korrekt im Dokument gespeichert werden, müssen Sie die`TxtSaveOptions` und aktivieren Sie die`AddBidiMarks` Möglichkeit.
+ Um sicherzustellen, dass die Bidi-Marken korrekt im Dokument gespeichert werden, müssen Sie die`TxtSaveOptions` und aktivieren Sie die`AddBidiMarks` Option.
 
 ```csharp
 // Bidi-Markierungen hinzufügen
@@ -89,4 +89,4 @@ Ja, Sie können die Bidi-Formatierung nach Bedarf auf bestimmte Absätze oder Ab
 Im angegebenen Beispiel wird das Dokument als Textdatei gespeichert. Aspose.Words unterstützt jedoch auch das Speichern von Dokumenten in verschiedenen Formaten unter Beibehaltung von Bidi-Markierungen.
 
 ### Wo finde ich weitere Informationen zu Aspose.Words für .NET?
- Weitere Informationen zu Aspose.Words für .NET finden Sie im[Aspose-Dokumentation](https://reference.aspose.com/words/net/) und greifen Sie auf die[Hilfeforum](https://forum.aspose.com/c/words/8) für weitere Hilfe.
+ Weitere Informationen zu Aspose.Words für .NET finden Sie im[Aspose-Dokumentation](https://reference.aspose.com/words/net/) und greifen Sie auf die[Support Forum](https://forum.aspose.com/c/words/8) für weitere Hilfe.

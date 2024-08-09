@@ -8,7 +8,7 @@ weight: 13
 url: /vi/java/document-security/digital-signatures-in-documents/
 ---
 
-Chữ ký số đóng vai trò quan trọng trong việc đảm bảo tính xác thực và toàn vẹn của tài liệu kỹ thuật số. Chúng cung cấp một cách để xác minh rằng tài liệu không bị giả mạo và thực sự đã được tạo ra hoặc phê duyệt bởi người ký được chỉ định. Trong hướng dẫn từng bước này, chúng ta sẽ khám phá cách triển khai chữ ký điện tử trong tài liệu bằng Aspose.Words cho Java. Chúng tôi sẽ đề cập đến mọi thứ từ thiết lập môi trường đến thêm chữ ký điện tử vào tài liệu của bạn. Bắt đầu nào!
+Chữ ký số đóng vai trò quan trọng trong việc đảm bảo tính xác thực và toàn vẹn của tài liệu kỹ thuật số. Chúng cung cấp một cách để xác minh rằng tài liệu không bị giả mạo và thực sự đã được tạo ra hoặc phê duyệt bởi người ký được chỉ định. Trong hướng dẫn từng bước này, chúng ta sẽ khám phá cách triển khai chữ ký điện tử trong tài liệu bằng Aspose.Words cho Java. Chúng tôi sẽ đề cập đến mọi thứ từ thiết lập môi trường đến thêm chữ ký điện tử vào tài liệu của bạn. Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 

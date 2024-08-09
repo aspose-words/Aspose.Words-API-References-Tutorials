@@ -81,7 +81,7 @@ PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
 double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
- Эти строки кода обращаются к первой ячейке в первой строке таблицы и извлекают предпочтительный тип и значение ширины.`PreferredWidthType` возможно`Auto`, `Percent` , или`Point`, указывающий, как определяется ширина.
+ Эти строки кода обращаются к первой ячейке в первой строке таблицы и извлекают предпочтительный тип и значение ширины.`PreferredWidthType` может быть`Auto`, `Percent` , или`Point`, указывающий, как определяется ширина.
 
 ## Шаг 6: Отобразите результаты
 
@@ -106,7 +106,7 @@ Console.WriteLine("Preferred Width Value: " + value);
 
 ###  Каковы возможные значения`PreferredWidthType`?
 
-`PreferredWidthType` возможно`Auto`, `Percent` , или`Point`.
+`PreferredWidthType` может быть`Auto`, `Percent` , или`Point`.
 
 ### Можно ли программно установить предпочтительный тип ширины?
 

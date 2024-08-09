@@ -74,7 +74,7 @@ Aspose.Words für .NET ist eine Klassenbibliothek zum Erstellen, Ändern und Kon
 Ja, Sie können verschiedene Stile im Inhaltsverzeichnis ändern, indem Sie auf unterschiedliche Ebenen und Stileigenschaften zugreifen.
 
 ### Ist Aspose.Words für .NET kostenlos?
- Aspose.Words für .NET ist eine kostenpflichtige Bibliothek, aber Sie können eine[Kostenlose Testphase](https://releases.aspose.com/) oder ein[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/).
+ Aspose.Words für .NET ist eine kostenpflichtige Bibliothek, aber Sie können eine[Kostenlose Testversion](https://releases.aspose.com/) oder ein[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/).
 
 ### Muss ich Microsoft Word installieren, um Aspose.Words für .NET zu verwenden?
 Nein, Aspose.Words für .NET erfordert nicht, dass Microsoft Word auf Ihrem Computer installiert ist.

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-charts/insert-column-chart/
 ---
-## introduzione
+## Introduzione
 
 In questo tutorial imparerai come migliorare i tuoi documenti Word inserendo istogrammi visivamente accattivanti utilizzando Aspose.Words per .NET. Gli istogrammi sono efficaci per visualizzare tendenze e confronti dei dati, rendendo i tuoi documenti più informativi e coinvolgenti.
 

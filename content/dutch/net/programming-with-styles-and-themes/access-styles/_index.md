@@ -1,6 +1,6 @@
 ---
-title: Documentstijlen ophalen in Word
-linktitle: Documentstijlen ophalen in Word
+title: Krijg documentstijlen in Word
+linktitle: Krijg documentstijlen in Word
 second_title: Aspose.Words-API voor documentverwerking
 description: Leer hoe u documentstijlen in Word kunt verkrijgen met Aspose.Words voor .NET met deze gedetailleerde stapsgewijze zelfstudie. Krijg toegang tot en beheer stijlen programmatisch in uw .NET-applicaties.
 type: docs
@@ -15,7 +15,7 @@ Ben je klaar om een duik te nemen in de wereld van documentstyling in Word? Of u
 
 Voordat we beginnen, zorg ervoor dat je het volgende hebt:
 
-1.  Aspose.Words voor .NET: deze bibliotheek moet in uw .NET-omgeving zijn geïnstalleerd. Jij kan[download het hier](https://releases.aspose.com/words/net/).
+1.  Aspose.Words voor .NET: deze bibliotheek moet in uw .NET-omgeving zijn geïnstalleerd. Dat kan[download het hier](https://releases.aspose.com/words/net/).
 2. Basiskennis van .NET: Bekendheid met C# of een andere .NET-taal zal u helpen de verstrekte codefragmenten te begrijpen.
 3. Een ontwikkelomgeving: Zorg ervoor dat u een IDE zoals Visual Studio hebt ingesteld om .NET-code te schrijven en uit te voeren.
 
@@ -115,4 +115,4 @@ Ja, u kunt stijlen in zowel bestaande als nieuw gemaakte documenten openen en be
  U kunt stijlen filteren door eigenschappen zoals`IsBuiltin` of gebruik aangepaste logica op basis van stijlkenmerken.
 
 ### Waar kan ik meer bronnen vinden over Aspose.Words voor .NET?
- Je kunt meer verkennen[hier](https://reference.aspose.com/words/net/).
+ Je kunt meer ontdekken[hier](https://reference.aspose.com/words/net/).

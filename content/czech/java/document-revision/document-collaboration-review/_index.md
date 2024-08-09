@@ -16,7 +16,7 @@ Aspose.Words for Java je výkonná a všestranná knihovna Java, která umožňu
 
 Než se ponoříme do spolupráce a kontroly dokumentů, pojďme nejprve nastavit Aspose.Words pro Java ve vašem projektu. Postupujte podle těchto jednoduchých kroků:
 
-1.  Stáhnout Aspose.Words pro Java: Knihovnu si můžete stáhnout z[tady](https://releases.aspose.com/words/java/).
+1.  Stáhnout Aspose.Words pro Java: Knihovnu si můžete stáhnout z[zde](https://releases.aspose.com/words/java/).
 
 2. Přidat Aspose.Words do vašeho projektu: Přidejte stažený soubor Aspose.Words JAR do vašeho projektu Java.
 
@@ -66,7 +66,7 @@ Spolupráce a kontrola dokumentů jsou kritickými aspekty moderní správy doku
 
 ### Jak nainstaluji Aspose.Words for Java?
 
- Aspose.Words for Java můžete nainstalovat stažením knihovny z[tady](https://releases.aspose.com/words/java/) a přidání souboru JAR do vašeho projektu Java.
+ Aspose.Words for Java můžete nainstalovat stažením knihovny z[zde](https://releases.aspose.com/words/java/) a přidání souboru JAR do vašeho projektu Java.
 
 ### Mohu sledovat změny v dokumentech aplikace Word pomocí Aspose.Words for Java?
 
@@ -82,4 +82,4 @@ Ano, Aspose.Words for Java je vynikající volbou pro společnou správu dokumen
 
 ### Kde najdu další informace a dokumentaci k Aspose.Words for Java?
 
-Komplexní dokumentaci k Aspose.Words for Java naleznete na adrese[tady](https://reference.aspose.com/words/java/).
+Komplexní dokumentaci k Aspose.Words for Java naleznete na adrese[zde](https://reference.aspose.com/words/java/).

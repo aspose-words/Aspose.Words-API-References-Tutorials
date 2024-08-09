@@ -65,7 +65,7 @@ Console.WriteLine("1. Document name: {0}", doc.OriginalFileName);
 
 Yerleşik özellikler, Microsoft Word tarafından önceden tanımlanmış meta veri özellikleridir. Bunlar başlığı, yazarı ve daha fazlasını içerir.
 
-1.  Yerleşik Özelliklere Erişim:`BuiltInDocumentProperties` Toplamak.
+1.  Yerleşik Özelliklere Erişim:`BuiltInDocumentProperties` koleksiyon.
 2. Özellikler arasında Döngü: Özellikler arasında yineleme yapın ve adlarını ve değerlerini görüntüleyin.
 
 İşte kod:
@@ -81,7 +81,7 @@ foreach (DocumentProperty prop in doc.BuiltInDocumentProperties)
 
 Özel özellikler, kullanıcı tanımlı meta veri özellikleridir. Bunlar belgenize eklemek istediğiniz herhangi bir şey olabilir.
 
-1.  Özel Özelliklere Erişim:`CustomDocumentProperties` Toplamak.
+1.  Özel Özelliklere Erişim:`CustomDocumentProperties` koleksiyon.
 2. Özellikler arasında Döngü: Özellikler arasında yineleme yapın ve adlarını ve değerlerini görüntüleyin.
 
 İşte kod:
@@ -95,12 +95,12 @@ foreach (DocumentProperty prop in doc.CustomDocumentProperties)
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesinin hem yerleşik hem de özel özelliklerini başarıyla sıraladınız. Aspose.Words ile yapabilecekleriniz söz konusu olduğunda bu sadece buzdağının görünen kısmı. İster belge oluşturmayı otomatikleştiriyor olun ister karmaşık belgeleri yönetiyor olun, Aspose.Words hayatınızı kolaylaştıracak zengin özellikler sunar.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesinin hem yerleşik hem de özel özelliklerini başarıyla sıraladınız. Aspose.Words ile yapabilecekleriniz söz konusu olduğunda bu sadece buzdağının görünen kısmı. İster belge oluşturmayı otomatikleştiriyor olun ister karmaşık belgeleri yönetiyor olun, Aspose.Words hayatınızı kolaylaştıracak zengin özellikler sunar.
 
 ## SSS'ler
 
 ### Bir belgeye yeni özellikler ekleyebilir miyim?
- Evet, kullanarak yeni özel özellikler ekleyebilirsiniz.`CustomDocumentProperties` Toplamak.
+ Evet, kullanarak yeni özel özellikler ekleyebilirsiniz.`CustomDocumentProperties` koleksiyon.
 
 ### Aspose.Words'ün kullanımı ücretsiz mi?
  Aspose.Words şunları sunar:[ücretsiz deneme](https://releases.aspose.com/) ve farklı[satın alma seçenekleri](https://purchase.aspose.com/buy).
@@ -112,4 +112,4 @@ foreach (DocumentProperty prop in doc.CustomDocumentProperties)
 Evet, Aspose.Words, VB.NET dahil birden fazla .NET dilini destekler.
 
 ### Daha fazla örneği nerede bulabilirim?
- Kontrol et[Aspose.Words for .NET belgeleri](https://reference.aspose.com/words/net/) Daha fazla örnek ve detaylı bilgi için.
+ Şuna göz atın:[Aspose.Words for .NET belgeleri](https://reference.aspose.com/words/net/) Daha fazla örnek ve detaylı bilgi için.

@@ -15,7 +15,7 @@ El formato condicional le permite aplicar un formato específico a las celdas de
 
 Antes de comenzar, asegúrese de tener lo siguiente:
 
-1. Aspose.Words para .NET: necesita la biblioteca Aspose.Words para .NET. Puede[descarguelo aqui](https://releases.aspose.com/words/net/).
+1. Aspose.Words para .NET: necesita la biblioteca Aspose.Words para .NET. Puede[descárgalo aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: un entorno de desarrollo adecuado como Visual Studio.
 3. Conocimientos básicos de C#: será útil estar familiarizado con la programación en C#.
 4. Documento de Word: un documento de Word al que desea aplicar formato condicional.

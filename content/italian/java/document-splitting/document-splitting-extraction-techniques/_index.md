@@ -10,7 +10,7 @@ url: /it/java/document-splitting/document-splitting-extraction-techniques/
 
 Nel mondo della manipolazione e dell'estrazione dei documenti, Aspose.Words per Java si distingue come uno strumento potente. Questa guida completa ti guiderà attraverso i passaggi essenziali per dividere ed estrarre documenti con Aspose.Words per Java. Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato con questa libreria, questa guida passo passo con esempi di codice sorgente ti aiuterà a padroneggiare l'arte della manipolazione dei documenti.
 
-## introduzione
+## Introduzione
 
 Aspose.Words per Java è un'API basata su Java che ti consente di lavorare in modo efficiente con i documenti di Microsoft Word. In questa guida ci concentreremo su due operazioni fondamentali: dividere i documenti in parti più piccole ed estrarne contenuti specifici.
 
@@ -24,7 +24,7 @@ Prima di immergerci nel codice, assicurati di avere i seguenti prerequisiti:
 
 ## Impostazione dell'ambiente
 
-Per iniziare a utilizzare Aspose.Words per Java, è necessario configurare il proprio ambiente di sviluppo. Segui questi passi:
+Per iniziare a utilizzare Aspose.Words per Java, è necessario configurare il proprio ambiente di sviluppo. Segui questi passaggi:
 
 1. Crea un nuovo progetto Java nel tuo ambiente di sviluppo integrato (IDE) preferito.
 

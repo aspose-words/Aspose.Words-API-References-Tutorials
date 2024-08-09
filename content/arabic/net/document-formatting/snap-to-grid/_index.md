@@ -137,4 +137,4 @@ doc.Save(dataDir + "Paragraph.SnapToGrid.docx");
 لا، لا يؤثر تمكين Snap to Grid بشكل كبير على أداء المستند.
 
 ### أين يمكنني العثور على مزيد من المعلومات حول Aspose.Words لـ .NET؟
- قم بزيارة[توثيق](https://reference.aspose.com/words/net/)للحصول على معلومات وأمثلة مفصلة.
+ قم بزيارة[الوثائق](https://reference.aspose.com/words/net/)للحصول على معلومات وأمثلة مفصلة.

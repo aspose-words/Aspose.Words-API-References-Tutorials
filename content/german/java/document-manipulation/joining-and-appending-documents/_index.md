@@ -140,4 +140,4 @@ Satz`importFormatOptions.setIgnoreTextBoxes(false)` um Textfelder beim Anhängen
 
 ### Was passiert, wenn ich Kopf- und Fußzeilen zwischen Dokumenten verknüpfen/die Verknüpfung aufheben möchte?
 
- Sie können Kopf- und Fußzeilen verknüpfen mit`linkToPrevious(true)` oder trennen Sie sie mit`linkToPrevious(false)` wie benötigt.
+ Sie können Kopf- und Fußzeilen verknüpfen mit`linkToPrevious(true)` oder trennen Sie sie mit`linkToPrevious(false)` nach Bedarf.

@@ -59,7 +59,7 @@ Ja, Sie können DOCX-Dateien mit Aspose.Words für .NET stapelweise in EPUB oder
 Ja, Aspose.Words unterstützt .NET Core und .NET Framework vollständig.
 
 ### Wo finde ich weitere Beispiele und Dokumentation für Aspose.Words?
- Besuche den[Aspose.Words für .NET-Dokumentation](https://reference.aspose.com/words/net/) für ausführliche Beispiele und API-Referenz.
+ Besuchen Sie die[Aspose.Words für .NET-Dokumentation](https://reference.aspose.com/words/net/) für ausführliche Beispiele und API-Referenz.
 
 ### Wie kann ich Support für Probleme mit Aspose.Words erhalten?
  Für Unterstützung besuchen Sie die[Aspose.Words-Forum](https://forum.aspose.com/c/words/8) wo Sie Fragen stellen und mit der Community interagieren können.

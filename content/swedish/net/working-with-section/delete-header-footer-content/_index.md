@@ -9,7 +9,7 @@ url: /sv/net/working-with-section/delete-header-footer-content/
 ---
 ## Introduktion
 
-Hej där, Word-dokumentstråkare! 📝 Har du någonsin behövt rensa ut sidhuvuden och sidfötter i ett Word-dokument men blivit fastlåst av den tråkiga manuella ansträngningen? Nåväl, oroa dig inte längre! Med Aspose.Words för .NET kan du automatisera denna uppgift med bara några få steg. Den här guiden leder dig genom processen att ta bort innehåll i sidhuvud och sidfot från ett Word-dokument med Aspose.Words för .NET. Är du redo att rensa i dessa dokument? Låt oss börja!
+Hej där, Word-dokumentstråkare! 📝 Har du någonsin behövt rensa ut sidhuvuden och sidfötter i ett Word-dokument men blivit fastlåst av den tråkiga manuella ansträngningen? Nåväl, oroa dig inte längre! Med Aspose.Words för .NET kan du automatisera denna uppgift med bara några få steg. Den här guiden leder dig genom processen att ta bort innehåll i sidhuvud och sidfot från ett Word-dokument med Aspose.Words för .NET. Är du redo att rensa i dessa dokument? Låt oss komma igång!
 
 ## Förutsättningar
 
@@ -80,7 +80,7 @@ Slutligen, spara ditt modifierade dokument för att säkerställa att ändringar
 doc.Save(dataDir + "Document_Without_Headers_Footers.docx");
 ```
 
- Byta ut`dataDir + "Document_Without_Headers_Footers.docx"` med den faktiska sökvägen där du vill spara ditt ändrade dokument. Denna kodrad sparar den uppdaterade Word-filen utan sidhuvuden och sidfötter.
+ Ersätta`dataDir + "Document_Without_Headers_Footers.docx"` med den faktiska sökvägen där du vill spara ditt ändrade dokument. Denna kodrad sparar den uppdaterade Word-filen utan sidhuvuden och sidfötter.
 
 ## Slutsats
 

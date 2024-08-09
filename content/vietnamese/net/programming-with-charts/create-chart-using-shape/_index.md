@@ -43,7 +43,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Bước 2: Chèn biểu đồ
 
- Tiếp theo, bạn sẽ chèn biểu đồ dạng đường vào tài liệu. Các`DocumentBuilder.InsertChart` phương pháp được sử dụng cho mục đích này.
+ Tiếp theo, bạn sẽ chèn biểu đồ dạng đường vào tài liệu. các`DocumentBuilder.InsertChart` phương pháp được sử dụng cho mục đích này.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);

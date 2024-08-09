@@ -15,7 +15,7 @@ Saat bekerja dengan dokumen Word, memastikan bahwa dua dokumen identik bisa menj
 
 Sebelum kita menyelami panduan langkah demi langkah, pastikan kita memiliki semua yang kita butuhkan:
 
-1.  Aspose.Words untuk .NET: Anda harus menginstal Aspose.Words untuk .NET. Jika Anda belum memilikinya, Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+1.  Aspose.Words untuk .NET: Anda harus menginstal Aspose.Words untuk .NET. Jika Anda belum memilikinya, Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Pastikan Anda telah menyiapkan lingkungan pengembangan .NET. Visual Studio sangat direkomendasikan.
 3. Contoh Dokumen: Siapkan dua dokumen Word yang ingin Anda bandingkan.
 

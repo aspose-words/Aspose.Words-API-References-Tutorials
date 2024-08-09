@@ -26,7 +26,7 @@ url: /zh-hant/java/word-processing/optimizing-document-loading-options/
 
 ### 載入 HTML 文件
 
-HTML 是在 Web 上顯示文件的常見格式。使用 Aspose.Words for Java，您可以有效率地將 HTML 文件載入到您的應用程式中。這是逐步指南：
+HTML 是在 Web 上顯示文件的常用格式。使用 Aspose.Words for Java，您可以有效率地將 HTML 文件載入到您的應用程式中。這是逐步指南：
 
 ```java
 //新增必要的導入

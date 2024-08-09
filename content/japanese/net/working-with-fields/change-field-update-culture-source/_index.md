@@ -46,7 +46,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 次に、ドキュメントにフィールドを挿入する必要があります。この例では、2 つの日付フィールドを挿入します。フォントのロケールをドイツ語 (LocaleId = 1031) に設定して、カルチャが日付形式にどのように影響するかを示します。
 
 ```csharp
-builder.Font.LocaleId = 1031; //ドイツ人
+builder.Font.LocaleId = 1031; //ドイツ語
 builder.InsertField("MERGEFIELD Date1 \\@ \"dddd, d MMMM yyyy\"");
 builder.Write(" - ");
 builder.InsertField("MERGEFIELD Date2 \\@ \"dddd, d MMMM yyyy\"");

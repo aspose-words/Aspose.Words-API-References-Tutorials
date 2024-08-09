@@ -9,7 +9,7 @@ url: /pl/net/join-and-append-documents/unlink-headers-footers/
 ---
 ## Wstęp
 
-świecie przetwarzania dokumentów utrzymanie spójności nagłówków i stopek może czasami stanowić wyzwanie. Niezależnie od tego, czy scalasz dokumenty, czy po prostu chcesz mieć różne nagłówki i stopki dla różnych sekcji, niezbędna jest wiedza, jak je rozłączyć. Dzisiaj przyjrzymy się, jak możesz to osiągnąć za pomocą Aspose.Words dla .NET. Omówimy to krok po kroku, abyś mógł łatwo śledzić proces. Gotowy do opanowania manipulacji dokumentami? Zacznijmy!
+świecie przetwarzania dokumentów utrzymanie spójności nagłówków i stopek może czasami stanowić wyzwanie. Niezależnie od tego, czy łączysz dokumenty, czy po prostu chcesz mieć różne nagłówki i stopki dla różnych sekcji, niezbędna jest wiedza, jak je rozłączyć. Dzisiaj przyjrzymy się, jak możesz to osiągnąć za pomocą Aspose.Words dla .NET. Omówimy to krok po kroku, abyś mógł łatwo śledzić proces. Gotowy do opanowania manipulacji dokumentami? Zacznijmy!
 
 ## Warunki wstępne
 
@@ -67,7 +67,7 @@ srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 
 ## Krok 5: Dołącz dokument źródłowy
 
- Po odłączeniu nagłówków i stopek możesz dołączyć dokument źródłowy do dokumentu docelowego. Użyj`AppendDocument` metodę i ustaw tryb formatu importu na`KeepSourceFormatting` aby zachować oryginalne formatowanie dokumentu źródłowego.
+ Po odłączeniu nagłówków i stopek możesz dołączyć dokument źródłowy do dokumentu docelowego. Skorzystaj z`AppendDocument` metodę i ustaw tryb formatu importu na`KeepSourceFormatting` aby zachować oryginalne formatowanie dokumentu źródłowego.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);

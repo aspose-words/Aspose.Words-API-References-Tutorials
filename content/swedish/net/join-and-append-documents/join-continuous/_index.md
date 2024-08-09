@@ -38,7 +38,7 @@ Först måste vi ställa in katalogen där dina dokument lagras. Detta gör att 
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där dina dokument lagras.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där dina dokument lagras.
 
 ## Steg 2: Ladda käll- och måldokumenten
 
@@ -71,7 +71,7 @@ Nu lägger vi till källdokumentet till måldokumentet. Detta steg säkerställe
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
- Använder sig av`ImportFormatMode.KeepSourceFormatting` säkerställer att formateringen från källdokumentet bevaras i det slutliga sammanslagna dokumentet.
+ Använder`ImportFormatMode.KeepSourceFormatting` säkerställer att formateringen från källdokumentet bevaras i det slutliga sammanslagna dokumentet.
 
 ## Steg 5: Spara det sammanslagna dokumentet
 

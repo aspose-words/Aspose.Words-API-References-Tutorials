@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-charts/define-xyaxis-properties/
 ---
-## Úvod
+## Zavedení
 
 Grafy jsou mocným nástrojem pro vizualizaci dat. Když potřebujete vytvořit profesionální dokumenty s dynamickými grafy, Aspose.Words for .NET je neocenitelná knihovna. Tento článek vás provede procesem definování vlastností osy XY v grafu pomocí Aspose.Words for .NET, přičemž každý krok rozebere, aby byla zajištěna srozumitelnost a snadná srozumitelnost.
 
@@ -15,7 +15,7 @@ Grafy jsou mocným nástrojem pro vizualizaci dat. Když potřebujete vytvořit 
 
 Než se ponoříte do kódování, musíte mít splněno několik předpokladů:
 
-1. Aspose.Words for .NET: Ujistěte se, že máte knihovnu Aspose.Words for .NET. Můžeš[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Ujistěte se, že máte knihovnu Aspose.Words for .NET. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Potřebujete integrované vývojové prostředí (IDE), jako je Visual Studio.
 3. .NET Framework: Ujistěte se, že je vaše vývojové prostředí nastaveno pro vývoj .NET.
 4. Základní znalost C#: Tato příručka předpokládá, že máte základní znalosti o programování v C#.
@@ -117,13 +117,13 @@ Vytváření a přizpůsobení grafů v dokumentech aplikace Word pomocí Aspose
 Můžete vytvářet různé typy grafů, včetně plošných, sloupcových, spojnicových, výsečových a dalších.
 
 ### Jak nainstaluji Aspose.Words for .NET?
- Aspose.Words for .NET si můžete stáhnout z[tady](https://releases.aspose.com/words/net/) a postupujte podle dodaných pokynů k instalaci.
+ Aspose.Words for .NET si můžete stáhnout z[zde](https://releases.aspose.com/words/net/) a postupujte podle dodaných pokynů k instalaci.
 
-### Mohu přizpůsobit vzhled svých grafů?
+### Mohu si přizpůsobit vzhled svých grafů?
 Ano, Aspose.Words for .NET umožňuje rozsáhlé přizpůsobení grafů, včetně barev, písem a vlastností os.
 
 ### Je k dispozici bezplatná zkušební verze pro Aspose.Words pro .NET?
- Ano, můžete získat bezplatnou zkušební verzi[tady](https://releases.aspose.com/).
+ Ano, můžete získat bezplatnou zkušební verzi[zde](https://releases.aspose.com/).
 
 ### Kde najdu další návody a dokumentaci?
  Další návody a podrobnou dokumentaci naleznete na[Stránka dokumentace Aspose.Words for .NET](https://reference.aspose.com/words/net/).

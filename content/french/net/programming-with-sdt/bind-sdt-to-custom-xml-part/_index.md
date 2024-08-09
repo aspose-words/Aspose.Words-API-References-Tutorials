@@ -93,7 +93,7 @@ Cette commande enregistre le document avec le SDT lié dans votre répertoire d�
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez réussi à lier un SDT à une partie XML personnalisée à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité puissante vous permet de créer des documents dynamiques qui peuvent être facilement mis à jour avec de nouvelles données en modifiant simplement le contenu XML. Que vous génériez des rapports, créiez des modèles ou automatisiez des flux de travail documentaires, Aspose.Words for .NET offre les outils dont vous avez besoin pour rendre vos tâches plus faciles et plus efficaces.
+Félicitations! Vous avez réussi à lier un SDT à une partie XML personnalisée à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité puissante vous permet de créer des documents dynamiques qui peuvent être facilement mis à jour avec de nouvelles données en modifiant simplement le contenu XML. Que vous génériez des rapports, créiez des modèles ou automatisiez des flux de travail documentaires, Aspose.Words for .NET offre les outils dont vous avez besoin pour rendre vos tâches plus faciles et plus efficaces.
 
 ## FAQ
 

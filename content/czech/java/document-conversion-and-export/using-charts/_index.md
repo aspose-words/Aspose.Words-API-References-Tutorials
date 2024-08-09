@@ -135,7 +135,7 @@ Datové štítky můžete formátovat přístupem k`DataLabels` vlastnosti řady
 
 ### Jak přizpůsobím vlastnosti os v grafu?
 
- Vlastnosti os, jako je typ, značky, štítky a další, můžete přizpůsobit pomocí přístupu k`ChartAxis` vlastnosti jako`setCategoryType()`, `setCrosses()` , a`setMajorTickMark()`.
+ Vlastnosti os, jako je typ, značky, štítky a další, můžete přizpůsobit pomocí přístupu k`ChartAxis` vlastnosti jako`setCategoryType()`, `setCrosses()` a`setMajorTickMark()`.
 
 ### Jak mohu vytvořit jiné typy grafů, jako jsou bodové nebo plošné grafy?
 

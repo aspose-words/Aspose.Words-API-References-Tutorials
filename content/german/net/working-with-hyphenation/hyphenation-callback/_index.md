@@ -16,7 +16,7 @@ Hallo! Haben Sie sich schon einmal mit den Komplexitäten der Textformatierung h
 
 Bevor wir uns mit dem Code beschäftigen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
 
-1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Bibliothek haben. Sie können[hier herunterladen](https://releases.aspose.com/words/net/).
+1. Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Bibliothek haben. Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. IDE: Eine Entwicklungsumgebung wie Visual Studio.
 3. Grundlegende Kenntnisse in C#: Verständnis von C# und .NET Framework.
 4. Silbentrennungswörterbücher: Silbentrennungswörterbücher für die Sprachen, die Sie verwenden möchten.
@@ -68,7 +68,7 @@ Laden wir nun das Dokument, das eine Silbentrennung erfordert.
 Document document = new Document(dataDir + "German text.docx");
 ```
 
- Hier laden wir ein deutsches Textdokument. Sie können ersetzen`"German text.docx"` durch den Dateinamen Ihres Dokuments.
+Hier laden wir ein deutsches Textdokument. Sie können ersetzen`"German text.docx"` durch den Dateinamen Ihres Dokuments.
 
 ## Schritt 4: Speichern Sie das Dokument
 
@@ -131,7 +131,7 @@ public class CustomHyphenationCallback : IHyphenationCallback
 
 Und da haben Sie es! Sie haben gerade gelernt, wie Sie einen Silbentrennungs-Callback in Aspose.Words für .NET implementieren. Indem Sie diese Schritte befolgen, können Sie sicherstellen, dass Ihre Dokumente unabhängig von der Sprache schön formatiert sind. Egal, ob Sie mit Englisch, Deutsch oder einer anderen Sprache arbeiten, mit dieser Methode können Sie die Silbentrennung mühelos handhaben.
 
-## FAQs
+## Häufig gestellte Fragen
 
 ### Was ist Aspose.Words für .NET?
 Aspose.Words für .NET ist eine leistungsstarke Bibliothek zur Dokumentbearbeitung, mit der Entwickler Dokumente programmgesteuert erstellen, ändern und konvertieren können.
@@ -146,4 +146,4 @@ Durch die Silbentrennung wird das Textlayout verbessert, indem Wörter an den en
 Sie können Silbentrennungswörterbücher aus verschiedenen Online-Ressourcen herunterladen oder bei Bedarf Ihr eigenes erstellen.
 
 ### Was passiert, wenn ein Silbentrennungswörterbuch fehlt?
- Wenn ein Wörterbuch fehlt,`RequestDictionary` Methode löst eine Ausnahme aus, die Sie behandeln können, um den Benutzer zu informieren oder einen Fallback bereitzustellen.
+ Wenn ein Wörterbuch fehlt,`RequestDictionary`Methode löst eine Ausnahme aus, die Sie behandeln können, um den Benutzer zu informieren oder einen Fallback bereitzustellen.

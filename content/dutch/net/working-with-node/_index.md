@@ -14,9 +14,9 @@ Om met knooppunten in Aspose.Words voor .NET te werken, kunnen ontwikkelaars het
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Gebruik knooppunttype](./use-node-type/) | Leer hoe u het knooppunttype gebruikt om toegang te krijgen tot documentspecifieke informatie met Aspose.Words voor .NET. |
-| [Bovenliggend knooppunt ophalen](./get-parent-node/) | Leer hoe u het bovenliggende knooppunt van een specifiek element kunt ophalen met Aspose.Words voor .NET. |
-| [Eigenaarsdocument](./owner-document/) | Leer hoe u het eigenaarsdocument gebruikt in Aspose.Words voor .NET. |
-| [Onderliggende knooppunten opsommen](./enumerate-child-nodes/) | Leer hoe u onderliggende knooppunten in een alinea kunt opsommen met Aspose.Words voor .NET. |
-| [Getypte toegang](./typed-access/) | Leer hoe u getypte toegang kunt gebruiken om tabellen te manipuleren in Aspose.Words voor .NET. |
-| [Paragraafknooppunt maken en toevoegen](./create-and-add-paragraph-node/) | Creëer en voeg een alineaknooppunt toe aan uw Word-documenten met Aspose.Words voor .NET. |
+| [Gebruik knooppunttype](./use-node-type/) | Ontdek hoe u de eigenschap NodeType in Aspose.Words voor .NET onder de knie krijgt met onze gedetailleerde handleiding. Perfect voor ontwikkelaars die hun vaardigheden op het gebied van documentverwerking willen verbeteren. |
+| [Bovenliggend knooppunt ophalen](./get-parent-node/) | Leer hoe u het bovenliggende knooppunt van een documentsectie kunt verkrijgen met Aspose.Words voor .NET met deze gedetailleerde, stapsgewijze zelfstudie. |
+| [Eigenaarsdocument](./owner-document/) | Leer hoe u kunt werken met het eigenaarsdocument in Aspose.Words voor .NET. Deze stapsgewijze handleiding behandelt het maken en manipuleren van knooppunten binnen een document. |
+| [Onderliggende knooppunten opsommen](./enumerate-child-nodes/) | Leer hoe u onderliggende knooppunten in een Word-document kunt opsommen met behulp van Aspose.Words voor .NET met deze stapsgewijze zelfstudie. |
+| [Getypte toegang](./typed-access/) | Leer hoe u Getypte toegang in Aspose.Words voor .NET kunt gebruiken om eenvoudig documentelementen zoals tabellen en rijen te manipuleren. Deze stapsgewijze handleiding vereenvoudigt uw workflow. |
+| [Paragraafknooppunt maken en toevoegen](./create-and-add-paragraph-node/) | Leer hoe u een alineaknooppunt in een document kunt maken en toevoegen met Aspose.Words voor .NET met deze gedetailleerde, stapsgewijze zelfstudie. |

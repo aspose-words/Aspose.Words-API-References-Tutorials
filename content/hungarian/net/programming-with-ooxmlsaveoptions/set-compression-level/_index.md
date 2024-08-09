@@ -101,7 +101,7 @@ Az alkalmazás futtatása után navigáljon a megadott könyvtárba, és ellenő
 
 És megvan! Sikeresen beállította egy Word-dokumentum tömörítési szintjét az Aspose.Words for .NET használatával. Ez jelentősen csökkentheti a fájl méretét és javíthatja a teljesítményt nagy dokumentumokkal való munka során. Ne felejtsen el felfedezni más tömörítési szinteket is, hogy megtalálja az igényeinek megfelelő legjobb egyensúlyt a fájlméret és a teljesítmény között.
 
-Ha bármilyen kérdése van, vagy bármilyen problémába ütközik, nézze meg a[Aspose.Words Dokumentáció](https://reference.aspose.com/words/net/) vagy nyúljon hozzájuk[Támogatói fórum](https://forum.aspose.com/c/words/8).
+Ha bármilyen kérdése van, vagy bármilyen problémába ütközik, nézze meg a[Aspose.Words Dokumentáció](https://reference.aspose.com/words/net/) vagy nyúljon hozzájuk[Támogatási fórum](https://forum.aspose.com/c/words/8).
 
 ## GYIK
 
@@ -123,4 +123,4 @@ Igen, az Aspose.Words for .NET támogatja a különféle dokumentumformátumok t
 
 ### Hol kaphatok támogatást, ha problémákba ütközöm?
 
- Támogatást kaphat az Aspose közösségtől, ha felkeresi őket[Támogatói fórum](https://forum.aspose.com/c/words/8).
+ Támogatást kaphat az Aspose közösségtől, ha felkeresi őket[Támogatási fórum](https://forum.aspose.com/c/words/8).

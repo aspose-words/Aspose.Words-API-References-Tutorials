@@ -122,7 +122,7 @@ Puede implementar su lógica personalizada para dividir documentos según criter
 
 ## 9. Combinando documentos divididos
 
-Aspose.Words para Java también proporciona funcionalidad para combinar los documentos divididos en un solo documento. Esta función es útil cuando necesita fusionar secciones individuales en un documento unificado.
+Aspose.Words para Java también proporciona la funcionalidad para combinar los documentos divididos en un solo documento. Esta función es útil cuando necesita fusionar secciones individuales en un documento unificado.
 
 ## 10. Consideraciones de desempeño
 

@@ -1,6 +1,6 @@
 ---
-title: Выравнивание меток нескольких строк на диаграмме
-linktitle: Выравнивание меток нескольких строк на диаграмме
+title: Выравнивание меток нескольких линий на диаграмме
+linktitle: Выравнивание меток нескольких линий на диаграмме
 second_title: API обработки документов Aspose.Words
 description: Узнайте, как отметить выравнивание многострочных меток на диаграмме с помощью Aspose.Words для .NET, с помощью нашего подробного пошагового руководства. Идеально подходит для разработчиков всех уровней.
 type: docs
@@ -84,7 +84,7 @@ ChartAxis axis = shape.Chart.AxisX;
 
 Теперь наступает волшебство! Мы установим выравнивание галочек для многострочных меток.
 
- Установить`TickLabelAlignment` свойство оси`ParagraphAlignment.Right`.
+ Установите`TickLabelAlignment` свойство оси`ParagraphAlignment.Right`.
 
 ```csharp
 axis.TickLabelAlignment = ParagraphAlignment.Right;
@@ -94,7 +94,7 @@ axis.TickLabelAlignment = ParagraphAlignment.Right;
 
 И последнее, но не менее важное: давайте сохраним наш документ с желаемыми изменениями.
 
- Использовать`Save` метод`Document` class для сохранения документа в указанном каталоге.
+ Используйте`Save` метод`Document` class для сохранения документа в указанном каталоге.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
@@ -112,7 +112,7 @@ doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
 
 ### Как установить Aspose.Words для .NET?
 
- Вы можете загрузить Aspose.Words для .NET с сайта[Веб-сайт](https://releases.aspose.com/words/net/)Следуйте инструкциям по установке, представленным там.
+ Вы можете загрузить Aspose.Words для .NET с сайта[веб-сайт](https://releases.aspose.com/words/net/)Следуйте инструкциям по установке, представленным там.
 
 ### Могу ли я использовать Aspose.Words для .NET бесплатно?
 

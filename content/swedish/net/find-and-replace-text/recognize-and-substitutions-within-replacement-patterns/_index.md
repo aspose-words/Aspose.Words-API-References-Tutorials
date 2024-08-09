@@ -108,7 +108,7 @@ Aspose.Words för .NET är ett kraftfullt bibliotek för att arbeta med Word-dok
 Ja, Aspose.Words stöder reguljära uttryck för sök- och ersätt-operationer, vilket möjliggör komplexa textmanipulationer.
 
 ### Vad är substitutionsmönster i regex?
- Substitutionsmönster, som`$1`och`$2`, hänvisar till fångade grupper i regex-matchningen. De används för att ordna om eller återanvända delar av den matchade texten i ersättningssträngen.
+ Substitutionsmönster, som`$1`och`$2`, hänvisar till fångade grupper i regexmatchningen. De används för att ordna om eller återanvända delar av den matchade texten i ersättningssträngen.
 
 ### Hur får jag support för Aspose.Words för .NET?
  Du kan få stöd från Asposes communityforum[här](https://forum.aspose.com/c/words/8).

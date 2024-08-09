@@ -107,7 +107,7 @@ Sim, você pode percorrer uma lista de documentos e aplicar a mesma lógica de d
 
 ### O Aspose.Words para .NET é gratuito?
 
- Aspose.Words for .NET é uma biblioteca paga, mas você pode experimentá-la gratuitamente. Confira a[teste grátis](https://releases.aspose.com/)!
+ Aspose.Words for .NET é uma biblioteca paga, mas você pode experimentá-la gratuitamente. Confira o[teste gratuito](https://releases.aspose.com/)!
 
 ### Que outros tipos de proteção posso aplicar a um documento do Word?
 

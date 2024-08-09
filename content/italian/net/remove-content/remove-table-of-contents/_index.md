@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/remove-content/remove-table-of-contents/
 ---
-## introduzione
+## Introduzione
 
 Sei stanco di avere a che fare con un sommario indesiderato (TOC) nei tuoi documenti Word? Ci siamo passati tutti: a volte il sommario semplicemente non è necessario. Fortunatamente per te, Aspose.Words per .NET semplifica la rimozione di un sommario a livello di codice. In questo tutorial ti guiderò attraverso il processo passo dopo passo, così potrai padroneggiarlo in pochissimo tempo. Immergiamoci subito!
 
@@ -55,7 +55,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 
 ## Passaggio 3: identificare e rimuovere il campo TOC
 
-Qui è dove avviene la magia. Individueremo il campo TOC e lo rimuoveremo.
+È qui che avviene la magia. Individueremo il campo TOC e lo rimuoveremo.
 
 ```csharp
 doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
@@ -79,7 +79,7 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ## Conclusione
 
-E il gioco è fatto! Rimuovere un sommario da un documento Word utilizzando Aspose.Words per .NET è semplice una volta suddiviso in questi semplici passaggi. Questa potente libreria non solo aiuta a rimuovere i sommari, ma può anche gestire una miriade di altre manipolazioni di documenti. Quindi, vai avanti e provalo!
+Ed ecco qua! Rimuovere un sommario da un documento Word utilizzando Aspose.Words per .NET è semplice una volta suddiviso in questi semplici passaggi. Questa potente libreria non solo aiuta a rimuovere i sommari, ma può anche gestire una miriade di altre manipolazioni di documenti. Quindi, vai avanti e provalo!
 
 ## Domande frequenti
 

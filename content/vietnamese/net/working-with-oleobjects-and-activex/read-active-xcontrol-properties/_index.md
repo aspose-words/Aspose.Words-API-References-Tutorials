@@ -2,106 +2,122 @@
 title: Đọc thuộc tính XControl hoạt động từ tệp Word
 linktitle: Đọc thuộc tính XControl hoạt động từ tệp Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Đọc thuộc tính của điều khiển ActiveX trong tệp Word bằng Aspose.Words for .NET.
+description: Tìm hiểu cách đọc thuộc tính điều khiển ActiveX từ tệp Word bằng Aspose.Words cho .NET trong hướng dẫn từng bước. Nâng cao kỹ năng tự động hóa tài liệu của bạn.
 type: docs
 weight: 10
 url: /vi/net/working-with-oleobjects-and-activex/read-active-xcontrol-properties/
 ---
+## Giới thiệu
 
-Trong hướng dẫn từng bước này, chúng tôi sẽ chỉ cho bạn cách đọc các thuộc tính của điều khiển ActiveX trong tệp Word bằng Aspose.Words cho .NET. Chúng tôi sẽ cung cấp cho bạn mã nguồn hoàn chỉnh và chỉ cho bạn cách định dạng đầu ra đánh dấu.
+Trong thời đại kỹ thuật số ngày nay, tự động hóa là chìa khóa để nâng cao năng suất. Nếu bạn đang làm việc với tài liệu Word có chứa các điều khiển ActiveX, bạn có thể cần đọc các thuộc tính của chúng cho nhiều mục đích khác nhau. Các điều khiển ActiveX, chẳng hạn như hộp kiểm và nút, có thể chứa dữ liệu quan trọng. Sử dụng Aspose.Words cho .NET, bạn có thể trích xuất và thao tác dữ liệu này theo chương trình một cách hiệu quả.
 
-## Bước 1: Khởi tạo tài liệu
+## Điều kiện tiên quyết
 
- Bước đầu tiên là khởi tạo`Document` đối tượng bằng cách tải tài liệu Word có chứa các điều khiển ActiveX. Hãy chắc chắn để thay thế`MyDir` với đường dẫn thực tế đến thư mục chứa tài liệu.
+Trước khi chúng tôi bắt đầu, hãy đảm bảo bạn có những điều sau:
+
+1.  Thư viện Aspose.Words for .NET: Bạn có thể tải xuống từ[đây](https://releases.aspose.com/words/net/).
+2. Visual Studio hoặc bất kỳ IDE C# nào: Để viết và thực thi mã của bạn.
+3. Tài liệu Word có điều khiển ActiveX: Ví dụ: "ActiveX control.docx".
+4. Kiến thức cơ bản về C#: Cần phải làm quen với lập trình C#.
+
+## Nhập không gian tên
+
+Trước tiên, hãy nhập các không gian tên cần thiết để làm việc với Aspose.Words cho .NET.
 
 ```csharp
-Document doc = new Document(MyDir + "ActiveX controls.docx");
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Drawing.Ole;
+using System;
 ```
 
-## Bước 2: Khôi phục điều khiển ActiveX
+## Bước 1: Tải tài liệu Word
 
- Trong bước này, chúng ta sẽ lặp lại từng`Shape` của tài liệu để truy xuất các điều khiển ActiveX và đọc các thuộc tính của chúng.
+Để bắt đầu, bạn cần tải tài liệu Word có chứa các điều khiển ActiveX.
+
+```csharp
+// Đường dẫn đến thư mục tài liệu của bạn
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "ActiveX controls.docx");
+```
+
+## Bước 2: Khởi tạo chuỗi để giữ thuộc tính
+
+Tiếp theo, khởi tạo một chuỗi trống để lưu trữ các thuộc tính của điều khiển ActiveX.
 
 ```csharp
 string properties = "";
-foreach(Shape shape in doc.GetChildNodes(NodeType.Shape, true))
-{
-     if (shape.OleFormat is null) break;
-
-     OleControl oleControl = shape.OleFormat.OleControl;
-     if (oleControl.IsForms2OleControl)
-     {
-         Forms2OleControl checkBox = (Forms2OleControl)oleControl;
-         properties = properties + "\nCaption: " + checkBox.Caption;
-         properties = properties + "\nValue: " + checkBox.Value;
-         properties = properties + "\nEnabled: " + checkBox.Enabled;
-         properties = properties + "\nType: " + checkBox.Type;
-         if (checkBox. ChildNodes != null)
-         {
-             properties = properties + "\nChildNodes: " + checkBox.ChildNodes;
-         }
-
-         properties += "\n";
-     }
-}
-
-properties = properties + "\nTotal ActiveX Controls found: " + doc.GetChildNodes(NodeType.Shape, true).Count;
-Console.WriteLine("\n" + properties);
 ```
 
-### Mã nguồn ví dụ để đọc Thuộc tính XControl hoạt động bằng Aspose.Words cho .NET
+## Bước 3: Lặp lại các hình dạng trong tài liệu
 
-Đây là mã nguồn hoàn chỉnh để đọc các thuộc tính của điều khiển ActiveX bằng Aspose.Words cho .NET:
+Chúng ta cần duyệt qua tất cả các hình dạng trong tài liệu để tìm các điều khiển ActiveX.
 
 ```csharp
-	Document doc = new Document(MyDir + "ActiveX controls.docx");
+foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))
+{
+    if (shape.OleFormat is null) continue;
+    
+    OleControl oleControl = shape.OleFormat.OleControl;
+    if (oleControl.IsForms2OleControl)
+    {
+        // Xử lý điều khiển ActiveX
+    }
+}
+```
 
-	string properties = "";
-	foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))
-	{
-		if (shape.OleFormat is null) break;
+## Bước 4: Trích xuất thuộc tính từ điều khiển ActiveX
 
-		OleControl oleControl = shape.OleFormat.OleControl;
-		if (oleControl.IsForms2OleControl)
-		{
-			Forms2OleControl checkBox = (Forms2OleControl) oleControl;
-			properties = properties + "\nCaption: " + checkBox.Caption;
-			properties = properties + "\nValue: " + checkBox.Value;
-			properties = properties + "\nEnabled: " + checkBox.Enabled;
-			properties = properties + "\nType: " + checkBox.Type;
-			if (checkBox.ChildNodes != null)
-			{
-				properties = properties + "\nChildNodes: " + checkBox.ChildNodes;
-			}
+Trong vòng lặp, hãy kiểm tra xem điều khiển có phải là Forms2OleControl hay không. Nếu có, hãy sử dụng nó và trích xuất các thuộc tính.
 
-			properties += "\n";
-		}
-	}
+```csharp
+Forms2OleControl checkBox = (Forms2OleControl) oleControl;
+properties += "\nCaption: " + checkBox.Caption;
+properties += "\nValue: " + checkBox.Value;
+properties += "\nEnabled: " + checkBox.Enabled;
+properties += "\nType: " + checkBox.Type;
 
-	properties = properties + "\nTotal ActiveX Controls found: " + doc.GetChildNodes(NodeType.Shape, true).Count;
-	Console.WriteLine("\n" + properties);
+if (checkBox.ChildNodes != null)
+{
+    properties += "\nChildNodes: " + checkBox.ChildNodes;
+}
+
+properties += "\n";
+```
+
+## Bước 5: Đếm tổng số điều khiển ActiveX
+
+Sau khi lặp qua tất cả các hình dạng, hãy đếm tổng số điều khiển ActiveX được tìm thấy.
+
+```csharp
+properties += "\nTotal ActiveX Controls found: " + doc.GetChildNodes(NodeType.Shape, true).Count;
+```
+
+## Bước 6: Hiển thị thuộc tính
+
+Cuối cùng, in các thuộc tính được trích xuất ra bàn điều khiển.
+
+```csharp
+Console.WriteLine("\n" + properties);
 ```
 
 ## Phần kết luận
 
-Hướng dẫn này đã chỉ cho bạn cách đọc các thuộc tính của điều khiển ActiveX trong tệp Word bằng Aspose.Words cho .NET. Bằng cách làm theo các bước được mô tả, bạn có thể khởi tạo tài liệu, truy xuất các điều khiển ActiveX và đọc các thuộc tính của chúng. Sử dụng mã mẫu được cung cấp làm điểm bắt đầu và tùy chỉnh mã đó theo nhu cầu cụ thể của bạn.
+Và bạn có nó! Bạn đã học thành công cách đọc các thuộc tính điều khiển ActiveX từ tài liệu Word bằng Aspose.Words for .NET. Hướng dẫn này đề cập đến việc tải tài liệu, lặp qua các hình dạng và trích xuất các thuộc tính từ các điều khiển ActiveX. Bằng cách làm theo các bước này, bạn có thể tự động trích xuất dữ liệu quan trọng từ tài liệu Word, nâng cao hiệu quả quy trình làm việc của mình.
 
-Việc đọc các thuộc tính của điều khiển ActiveX cho phép bạn trích xuất thông tin quan trọng từ tệp Word có chứa các điều khiển này. Aspose.Words for .NET cung cấp các tính năng mạnh mẽ để Xử lý Từ với các điều khiển ActiveX và tự động hóa quá trình xử lý tài liệu của bạn.
+## Câu hỏi thường gặp
 
-### Câu hỏi thường gặp
+### Điều khiển ActiveX trong tài liệu Word là gì?
+Điều khiển ActiveX là các đối tượng tương tác được nhúng trong tài liệu Word, chẳng hạn như hộp kiểm, nút và trường văn bản, được sử dụng để tạo biểu mẫu và tự động hóa tác vụ.
 
-#### Hỏi: Bước đầu tiên để đọc thuộc tính của điều khiển ActiveX trong tệp Word là gì?
+### Tôi có thể sửa đổi các thuộc tính của điều khiển ActiveX bằng Aspose.Words cho .NET không?
+Có, Aspose.Words for .NET cho phép bạn sửa đổi các thuộc tính của điều khiển ActiveX theo chương trình.
 
- A: Bước đầu tiên là khởi tạo`Document` đối tượng bằng cách tải tài liệu Word có chứa các điều khiển ActiveX. Hãy chắc chắn để thay thế`MyDir` với đường dẫn thực tế đến thư mục chứa tài liệu.
+### Aspose.Words cho .NET có được sử dụng miễn phí không?
+ Aspose.Words for .NET cung cấp bản dùng thử miễn phí nhưng bạn sẽ cần mua giấy phép để tiếp tục sử dụng. Bạn có thể dùng thử miễn phí[đây](https://releases.aspose.com/).
 
-#### Câu hỏi: Làm cách nào để đưa các điều khiển ActiveX vào tài liệu?
+### Tôi có thể sử dụng Aspose.Words cho .NET với các ngôn ngữ .NET khác ngoài C# không?
+Có, Aspose.Words for .NET có thể được sử dụng với bất kỳ ngôn ngữ .NET nào, bao gồm VB.NET và F#.
 
- Đáp: Để truy xuất các điều khiển ActiveX, bạn cần lặp qua từng`Shape` của tài liệu và kiểm tra xem đó có phải là điều khiển ActiveX hay không. Sử dụng`OleFormat` tài sản của`Shape` để truy cập`OleControl` đối tượng và lấy các thuộc tính cần thiết.
-
-#### Câu hỏi: Tôi có thể đọc được những thuộc tính nào của điều khiển ActiveX?
-
-Trả lời: Bạn có thể đọc các thuộc tính khác nhau của điều khiển ActiveX, chẳng hạn như chú thích, giá trị, trạng thái được bật hoặc tắt, loại và các Mã con được liên kết với điều khiển.
-
-#### Câu hỏi: Làm cách nào để có được tổng số điều khiển ActiveX trong tài liệu?
-
- Đáp: Để có được tổng số điều khiển ActiveX trong tài liệu, bạn có thể sử dụng`GetChildNodes` phương pháp của`Document` đối tượng chỉ định`NodeType.Shape` loại và bao gồm các nút con.
+### Tôi có thể tìm thêm tài liệu về Aspose.Words cho .NET ở đâu?
+ Bạn có thể tìm tài liệu chi tiết[đây](https://reference.aspose.com/words/net/).

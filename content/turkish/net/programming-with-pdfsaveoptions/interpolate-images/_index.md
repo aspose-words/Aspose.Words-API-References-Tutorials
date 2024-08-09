@@ -20,7 +20,7 @@ Ayrıntılara geçmeden önce her şeyin ayarlandığından emin olalım:
 3. Temel C# Bilgisi: C# ve .NET programlamaya aşinalık, süreci sorunsuz bir şekilde takip etmenize yardımcı olacaktır.
 4. Örnek Belge: Test edilecek görüntüleri içeren bir Word belgesini hazır bulundurun.
 
-Herşeye sahip? Harika! Hadi dalalım.
+Herşeyi aldın mı? Harika! Hadi dalalım.
 
 ## Ad Alanlarını İçe Aktar
 
@@ -69,7 +69,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 
 ## 4. Adım: Belgeyi PDF olarak kaydedin
 
- Seçenekler yapılandırıldığında belgenizi PDF olarak kaydetme zamanı geldi. Kullan`Save` yöntemi`Document` yolu ve kaydetme seçeneklerini belirterek sınıf.
+ Seçenekler yapılandırıldığında belgenizi PDF olarak kaydetme zamanı geldi. Kullanın`Save` yöntemi`Document` yolu ve kaydetme seçeneklerini belirterek sınıf.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.InterpolateImages.pdf", saveOptions);
@@ -101,6 +101,6 @@ Aspose.Words öncelikle PDF'ler için görüntü enterpolasyonunu destekler. Di�
 
  Yapabilirsiniz[ücretsiz deneme sürümünü indirin](https://releases.aspose.com/) Görüntü enterpolasyonunu ve diğer özellikleri test etmek için Aspose.Words'ü kullanın.
 
-### Sorunla karşılaşırsam nereden yardım alabilirim?
+### Sorunlarla karşılaşırsam nereden yardım alabilirim?
 
  Yardım için şu adresi ziyaret edin:[Aspose Destek Forumu](https://forum.aspose.com/c/words/8)topluluktan ve Aspose uzmanlarından yardım alabileceğiniz yer.

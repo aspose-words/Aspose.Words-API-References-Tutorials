@@ -9,7 +9,7 @@ url: /vi/net/programming-with-tables/nested-table/
 ---
 ## Giới thiệu
 
-Bạn đã bao giờ thấy mình cần tạo một bảng lồng nhau trong tài liệu Word theo chương trình chưa? Cho dù bạn đang tạo báo cáo, hóa đơn hay bất kỳ loại tài liệu nào yêu cầu cấu trúc dạng bảng chi tiết, Aspose.Words for .NET có thể là người bạn tốt nhất của bạn. Trong hướng dẫn này, chúng ta sẽ đi sâu vào quy trình tạo các bảng lồng nhau trong tài liệu Word bằng Aspose.Words cho .NET. Chúng tôi sẽ đề cập đến mọi thứ từ điều kiện tiên quyết đến việc triển khai mã cuối cùng. Vậy hãy bắt đầu!
+Bạn đã bao giờ thấy mình cần tạo một bảng lồng nhau trong tài liệu Word theo chương trình chưa? Cho dù bạn đang tạo báo cáo, hóa đơn hay bất kỳ loại tài liệu nào yêu cầu cấu trúc dạng bảng chi tiết, Aspose.Words for .NET có thể là người bạn tốt nhất của bạn. Trong hướng dẫn này, chúng ta sẽ đi sâu vào quy trình tạo các bảng lồng nhau trong tài liệu Word bằng Aspose.Words cho .NET. Chúng tôi sẽ đề cập đến mọi thứ từ điều kiện tiên quyết đến việc triển khai mã cuối cùng. Vì vậy, hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
@@ -116,7 +116,7 @@ doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã tạo thành công bảng lồng nhau trong tài liệu Word bằng Aspose.Words cho .NET. Thư viện mạnh mẽ này giúp việc thao tác các tài liệu Word theo chương trình trở nên vô cùng dễ dàng. Cho dù bạn đang tạo các báo cáo phức tạp hay các bảng đơn giản, Aspose.Words for .NET đều có thể giúp bạn.
+Và bạn có nó! Bạn đã tạo thành công bảng lồng nhau trong tài liệu Word bằng Aspose.Words cho .NET. Thư viện mạnh mẽ này giúp việc thao tác các tài liệu Word theo chương trình trở nên vô cùng dễ dàng. Cho dù bạn đang tạo các báo cáo phức tạp hay các bảng đơn giản, Aspose.Words for .NET đều có thể giúp bạn.
 
 ## Câu hỏi thường gặp
 

@@ -11,7 +11,7 @@ url: /it/java/using-document-elements/using-sections/
 Se stai cercando di manipolare e gestire sezioni nelle tue applicazioni Java utilizzando Aspose.Words, sei nel posto giusto. In questa guida completa, ti guideremo attraverso il processo passo dopo passo, utilizzando il codice sorgente fornito.
 
 
-## introduzione
+## Introduzione
 
 Prima di immergerci nel codice, capiamo quali sezioni sono in Aspose.Words. In un documento di Word, le sezioni sono aree con impostazioni di layout di pagina specifiche. Possono includere intestazioni, piè di pagina, margini e impostazioni di orientamento della pagina. Con Aspose.Words per Java, puoi lavorare facilmente con le sezioni per creare documenti professionali.
 

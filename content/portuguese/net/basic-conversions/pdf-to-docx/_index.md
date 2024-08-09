@@ -18,7 +18,7 @@ Antes de entrarmos no mundo mágico da conversão de arquivos, vamos ter certeza
 -  Aspose.Words for .NET: Certifique-se de ter a versão mais recente. Se não, baixe-o[aqui](https://releases.aspose.com/words/net/).
 - .NET Framework: certifique-se de ter o .NET Framework instalado em sua máquina.
 - Documento PDF: um arquivo PDF que você deseja converter.
-- Ambiente de desenvolvimento: Visual Studio ou qualquer outro IDE preferido.
+- Ambiente de Desenvolvimento: Visual Studio ou qualquer outro IDE preferido.
 
 ### Configurando seu ambiente
 
@@ -41,7 +41,7 @@ Vamos dividir o processo de conversão em etapas gerenciáveis, garantindo que v
 
 ## Passo 1: Configurando o Diretório do Projeto
 
-Em primeiro lugar, precisamos especificar o caminho para o nosso diretório de documentos. É aqui que reside o seu PDF e onde o documento Word convertido será salvo.
+Primeiramente, precisamos especificar o caminho para nosso diretório de documentos. É aqui que reside o seu PDF e onde o documento Word convertido será salvo.
 
 ```csharp
 // O caminho para o diretório de documentos.
@@ -85,7 +85,7 @@ Sim, você pode percorrer vários PDFs e converter cada um deles usando o mesmo 
 Sim, Aspose.Words faz um excelente trabalho preservando a formatação original.
 
 ### Preciso de uma licença para usar o Aspose.Words for .NET?
- Embora você possa usar uma licença temporária para avaliação, você precisará adquirir uma licença completa para uso comercial. Confira a[página de compra](https://purchase.aspose.com/buy) para mais detalhes.
+ Embora você possa usar uma licença temporária para avaliação, você precisará adquirir uma licença completa para uso comercial. Confira o[página de compra](https://purchase.aspose.com/buy) para mais detalhes.
 
 ### Posso usar o Aspose.Words for .NET em diferentes sistemas operacionais?
 Sim, Aspose.Words for .NET é multiplataforma e pode ser usado em Windows, Linux e macOS.

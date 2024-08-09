@@ -9,7 +9,7 @@ url: /vi/net/programming-with-tables/insert-table-from-html/
 ---
 ## Giới thiệu
 
-Bạn có bao giờ cần chèn bảng từ HTML vào tài liệu Word không? Cho dù bạn đang làm việc trong một dự án yêu cầu chuyển đổi nội dung web thành tài liệu Word hay bạn chỉ đang cố gắng hợp lý hóa quy trình làm việc của mình, Aspose.Words for .NET đều có thể giúp bạn. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn toàn bộ quá trình chèn bảng từ HTML vào tài liệu Word bằng Aspose.Words cho .NET. Chúng tôi sẽ đề cập đến mọi thứ bạn cần, từ những điều kiện tiên quyết đến hướng dẫn chi tiết từng bước. Sẵn sàng để đi sâu vào? Bắt đầu nào!
+Bạn có bao giờ cần chèn bảng từ HTML vào tài liệu Word không? Cho dù bạn đang làm việc trong một dự án yêu cầu chuyển đổi nội dung web thành tài liệu Word hay bạn chỉ đang cố gắng hợp lý hóa quy trình làm việc của mình, Aspose.Words for .NET đều có thể giúp bạn. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn toàn bộ quá trình chèn bảng từ HTML vào tài liệu Word bằng Aspose.Words cho .NET. Chúng tôi sẽ đề cập đến mọi thứ bạn cần, từ những điều kiện tiên quyết đến hướng dẫn chi tiết từng bước. Sẵn sàng để đi sâu vào? Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 

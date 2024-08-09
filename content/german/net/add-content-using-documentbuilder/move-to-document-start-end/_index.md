@@ -15,7 +15,7 @@ Hallo! Sie haben also mit Word-Dokumenten gearbeitet und brauchen eine Möglichk
 
 Bevor wir uns kopfüber in den Code stürzen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
 
-1.  Aspose.Words für .NET: Dies ist das magische Werkzeug, das wir verwenden werden. Sie können[hier herunterladen](https://releases.aspose.com/words/net/) oder schnappen Sie sich ein[Kostenlose Testphase](https://releases.aspose.com/).
+1.  Aspose.Words für .NET: Dies ist das magische Werkzeug, das wir verwenden werden. Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/) oder schnappen Sie sich ein[Kostenlose Testversion](https://releases.aspose.com/).
 2. .NET-Entwicklungsumgebung: Visual Studio ist eine solide Wahl.
 3. Grundkenntnisse in C#: Keine Sorge, Sie müssen kein Zauberer sein, aber mit ein wenig Vertrautheit kommen Sie schon weit.
 
@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Hier erstellen wir eine Instanz von`Document`Und`DocumentBuilder` . Denk an`Document` als Ihr leeres Word-Dokument und`DocumentBuilder` als Ihr Stift.
+ Hier erstellen wir eine Instanz von`Document`Und`DocumentBuilder` Denken Sie an`Document` als Ihr leeres Word-Dokument und`DocumentBuilder` als Ihr Stift.
 
 ## Schritt 2: Zum Dokumentanfang wechseln
 
@@ -78,10 +78,10 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek zum programmgesteuert
 Absolut! Obwohl in diesem Handbuch C# verwendet wird, können Sie Aspose.Words für .NET mit jeder .NET-Sprache wie VB.NET verwenden.
 
 ### Benötige ich eine Lizenz, um Aspose.Words für .NET zu verwenden?  
- Ja, aber Sie können beginnen mit einem[Kostenlose Testphase](https://releases.aspose.com/) oder erhalten Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/).
+ Ja, aber Sie können beginnen mit einem[Kostenlose Testversion](https://releases.aspose.com/) oder erhalten Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/).
 
 ### Ist Aspose.Words für .NET mit .NET Core kompatibel?  
 Ja, Aspose.Words für .NET unterstützt sowohl .NET Framework als auch .NET Core.
 
 ### Wo finde ich weitere Tutorials zu Aspose.Words für .NET?  
-Sie können sich die[Dokumentation](https://reference.aspose.com/words/net/) oder besuchen Sie ihre[Hilfeforum](https://forum.aspose.com/c/words/8) für weitere Hilfe.
+Sie können sich die[Dokumentation](https://reference.aspose.com/words/net/) oder besuchen Sie ihre[Support-Forum](https://forum.aspose.com/c/words/8) für weitere Hilfe.

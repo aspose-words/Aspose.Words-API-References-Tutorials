@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-document-options-and-settings/show-grammatical-and-spelling-errors/
 ---
-## introduzione
+## Introduzione
 
 Ti capita mai di sfogliare instancabilmente i documenti per cogliere ogni piccolo errore grammaticale e di ortografia? È come giocare all'infinito gioco "Dov'è Waldo", vero? Bene, non preoccuparti più! Con Aspose.Words per .NET, puoi automatizzare il processo e risparmiare un sacco di tempo e fatica. Vediamo come abilitare la visualizzazione degli errori grammaticali e di ortografia nei documenti di Word utilizzando questo ingegnoso strumento.
 
@@ -77,9 +77,9 @@ Ciò salverà il documento modificato con un nuovo nome, assicurandoti di non so
 
 ## Conclusione
 
-E il gioco è fatto! In pochi semplici passaggi, hai imparato come automatizzare il processo di visualizzazione degli errori grammaticali e di ortografia in un documento Word utilizzando Aspose.Words per .NET. Ciò non solo ti fa risparmiare tempo, ma garantisce anche che i tuoi documenti siano privi di errori e professionali.
+Ed ecco qua! In pochi semplici passaggi, hai imparato come automatizzare il processo di visualizzazione degli errori grammaticali e di ortografia in un documento Word utilizzando Aspose.Words per .NET. Ciò non solo ti fa risparmiare tempo, ma garantisce anche che i tuoi documenti siano privi di errori e professionali.
 
- A proposito, se non hai ancora provato Aspose.Words per .NET, puoi scaricare una versione di prova gratuita[Qui](https://releases.aspose.com/) . Se devi acquistare una licenza, puoi farlo[Qui](https://purchase.aspose.com/buy) E se mai avessi bisogno di supporto, non esitare a visitare il loro[Forum](https://forum.aspose.com/c/words/8).
+ A proposito, se non hai ancora provato Aspose.Words per .NET, puoi scaricare una versione di prova gratuita[Qui](https://releases.aspose.com/) . Se devi acquistare una licenza, puoi farlo[Qui](https://purchase.aspose.com/buy) E se mai avessi bisogno di supporto, non esitare a visitare il loro[foro](https://forum.aspose.com/c/words/8).
 
 ## Domande frequenti
 

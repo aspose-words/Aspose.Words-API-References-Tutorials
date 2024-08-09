@@ -15,7 +15,7 @@ url: /ko/net/join-and-append-documents/keep-source-numbering/
 
 시작하기 전에 다음 사항이 있는지 확인하세요.
 - 컴퓨터에 Visual Studio가 설치되어 있습니다.
--  .NET용 Aspose.Words가 설치되었습니다. 그렇지 않은 경우 다음에서 다운로드하십시오.[여기](https://releases.aspose.com/words/net/).
+-  .NET용 Aspose.Words가 설치되었습니다. 그렇지 않은 경우 다음에서 다운로드하세요.[여기](https://releases.aspose.com/words/net/).
 - C# 및 .NET 프로그래밍에 대한 기본 지식.
 
 ## 네임스페이스 가져오기
@@ -90,4 +90,4 @@ Aspose.Words는 원활한 통합을 위해 .NET Framework 및 .NET Core 버전�
 가져오기 프로세스 중에 발생할 수 있는 예외를 처리하려면 try-catch 블록을 사용하십시오.
 
 ### .NET용 Aspose.Words에 대한 자세한 문서는 어디서 찾을 수 있나요?
- 방문하다[선적 서류 비치](https://reference.aspose.com/words/net/) 포괄적인 가이드 및 API 참조를 확인하세요.
+ 방문[선적 서류 비치](https://reference.aspose.com/words/net/) 포괄적인 가이드 및 API 참조를 확인하세요.

@@ -92,10 +92,10 @@ Ez a kódsor HTML formátumban menti a dokumentumot az exportált erőforrásokk
 ## GYIK
 
 ### Exportálhatok képeket betűtípusokkal és CSS-sel együtt?
- Igen tudsz! Az Aspose.Words for .NET támogatja a képek exportálását is. Csak ügyeljen arra, hogy konfigurálja a`HtmlSaveOptions` Eszerint.
+ Igen, lehet! Az Aspose.Words for .NET támogatja a képek exportálását is. Csak ügyeljen arra, hogy konfigurálja a`HtmlSaveOptions` ennek megfelelően.
 
 ### Van mód CSS beágyazására külső stíluslap használata helyett?
- Teljesen. Beállíthatod`CssStyleSheetType` nak nek`CssStyleSheetType.Embedded` ha jobban szereti a beágyazott stílusokat.
+ Teljesen. Beállíthatod`CssStyleSheetType` hogy`CssStyleSheetType.Embedded` ha jobban szereti a beágyazott stílusokat.
 
 ### Hogyan szabhatom testre a kimeneti HTML-fájl nevét?
  Tetszőleges fájlnevet megadhat a`doc.Save` módszer. Például,`doc.Save(dataDir + "CustomFileName.html", saveOptions);`.

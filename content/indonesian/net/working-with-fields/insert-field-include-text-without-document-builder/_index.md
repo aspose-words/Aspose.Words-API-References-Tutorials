@@ -98,7 +98,7 @@ Dan itu dia! Dengan mengikuti langkah-langkah ini, Anda dapat dengan mudah menyi
 ## FAQ
 
 ### Apa itu Aspose.Words untuk .NET?  
-Aspose.Words for .NET adalah perpustakaan yang kuat untuk bekerja dengan dokumen Word di aplikasi .NET. Ini memungkinkan untuk membuat, mengedit, dan mengonversi dokumen secara terprogram.
+Aspose.Words for .NET adalah perpustakaan yang kuat untuk bekerja dengan dokumen Word dalam aplikasi .NET. Ini memungkinkan untuk membuat, mengedit, dan mengonversi dokumen secara terprogram.
 
 ### Mengapa menggunakan FieldIncludeText?  
 FieldIncludeText berguna untuk memasukkan konten secara dinamis dari satu dokumen ke dokumen lainnya, memungkinkan dokumen yang lebih modular dan mudah dipelihara.

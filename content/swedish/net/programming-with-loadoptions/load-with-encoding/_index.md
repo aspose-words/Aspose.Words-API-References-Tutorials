@@ -9,7 +9,7 @@ url: /sv/net/programming-with-loadoptions/load-with-encoding/
 ---
 ## Introduktion
 
-Hallå där! Så du arbetar med Word-dokument och behöver ladda ett med en specifik kodning? Kanske har du stött på dokument med text kodad i något som UTF-7 och du kliar dig i huvudet på hur du ska hantera dem. Tja, du är på rätt plats! I den här handledningen går vi djupare in i hur du kan ladda ett Word-dokument med en specifik kodning med Aspose.Words för .NET. Detta kraftfulla bibliotek låter dig manipulera Word-dokument på sätt som du förmodligen aldrig trodde var möjligt. Låt oss börja!
+Hej där! Så du arbetar med Word-dokument och behöver ladda ett med en specifik kodning? Kanske har du stött på dokument med text kodad i något som UTF-7 och du kliar dig i huvudet på hur du ska hantera dem. Nåväl, du är på rätt plats! I den här handledningen går vi djupare in i hur du kan ladda ett Word-dokument med en specifik kodning med Aspose.Words för .NET. Detta kraftfulla bibliotek låter dig manipulera Word-dokument på sätt som du förmodligen aldrig trodde var möjligt. Låt oss komma igång!
 
 ## Förutsättningar
 

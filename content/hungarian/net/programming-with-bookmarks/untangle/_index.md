@@ -111,7 +111,7 @@ Ez az oktatóanyag a két szomszédos sorban átívelő könyvjelzőkkel foglalk
 
 ### Elérhető az Aspose.Words .NET-hez próbaverziója?
 
- Igen tudsz[tölts le egy ingyenes próbaverziót](https://releases.aspose.com/) az Aspose webhelyről a könyvtár funkcióinak felfedezéséhez.
+ Igen, megteheti[tölts le egy ingyenes próbaverziót](https://releases.aspose.com/) az Aspose webhelyről a könyvtár funkcióinak felfedezéséhez.
 
 ### Hogyan kaphatok támogatást, ha problémákba ütközöm?
 

@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Hyperlinks.docx");
 ```
 
- 설명: 이 코드 줄은`Hyperlinks.docx` 지정된 디렉토리의 파일을`Document` 명명된 개체`doc`. 이제 이 개체에는 Word 문서의 내용이 포함됩니다.
+ 설명: 이 코드 줄은`Hyperlinks.docx` 지정된 디렉토리의 파일을`Document` 명명된 객체`doc`. 이제 이 개체에는 Word 문서의 내용이 포함됩니다.
 
 ## 3단계: 문서 필드에 액세스
 

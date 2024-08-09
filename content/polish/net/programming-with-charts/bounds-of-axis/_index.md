@@ -100,7 +100,7 @@ Na koniec zapisz dokument we wskazanym katalogu.
 doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 ```
 
-to wszystko! Pomyślnie utworzyłeś dokument z wykresem przy użyciu Aspose.Words dla .NET. 
+tyle! Pomyślnie utworzyłeś dokument z wykresem przy użyciu Aspose.Words dla .NET. 
 
 ## Wniosek
 
@@ -121,4 +121,4 @@ Aspose.Words dla .NET to biblioteka, która umożliwia programowe tworzenie, mod
  Dostępna jest szczegółowa dokumentacja[Tutaj](https://reference.aspose.com/words/net/).
 
 ### Jak mogę uzyskać wsparcie dla Aspose.Words?
- Możesz odwiedzić[forum wsparcia](https://forum.aspose.com/c/words/8) do pomocy.
+ Możesz odwiedzić[forum wsparcia](https://forum.aspose.com/c/words/8) o pomoc.

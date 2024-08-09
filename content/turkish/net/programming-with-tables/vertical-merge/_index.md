@@ -98,7 +98,7 @@ Bu satır, belgeyi belirtilen dosya adıyla belirlenen dizine kaydeder.
 
 ## Çözüm
 
-İşte buyur! Bu adımları izleyerek Aspose.Words for .NET kullanarak bir Word belgesinde dikey birleştirmeyi başarıyla uyguladınız. Bu özellik, belgelerinizin okunabilirliğini ve düzenini önemli ölçüde geliştirerek onları daha profesyonel ve gezinmeyi daha kolay hale getirebilir. İster basit tablolarla ister karmaşık veri yapılarıyla çalışıyor olun, dikey birleştirme konusunda uzmanlaşmak size belge biçimlendirmede avantaj sağlayacaktır.
+Ve işte karşınızda! Bu adımları izleyerek Aspose.Words for .NET kullanarak bir Word belgesinde dikey birleştirmeyi başarıyla uyguladınız. Bu özellik, belgelerinizin okunabilirliğini ve düzenini önemli ölçüde geliştirerek onları daha profesyonel ve gezinmeyi daha kolay hale getirebilir. İster basit tablolarla ister karmaşık veri yapılarıyla çalışıyor olun, dikey birleştirme konusunda uzmanlaşmak size belge biçimlendirmede avantaj sağlayacaktır.
 
 ## SSS'ler
 

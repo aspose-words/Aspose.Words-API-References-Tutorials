@@ -17,7 +17,7 @@ Voordat u in de zelfstudie duikt, moet u ervoor zorgen dat u over het volgende b
 
 1. Aspose.Words voor .NET: Als je dat nog niet hebt gedaan, download het dan van[hier](https://releases.aspose.com/words/net/).
 2. Ontwikkelomgeving: een IDE zoals Visual Studio.
-3. Basiskennis van C#: als u de basisbeginselen begrijpt, kunt u deze gemakkelijk volgen.
+3. Basiskennis van C#: als u de basisbeginselen begrijpt, kunt u deze eenvoudig volgen.
 4. Een voorbeelddocument: Zorg ervoor dat u een Word-document bij de hand heeft dat u op kop wilt splitsen.
 
 ## Naamruimten importeren
@@ -89,7 +89,7 @@ Aspose.Words voor .NET is een krachtige bibliotheek voor het werken met Word-doc
 Ja, met Aspose.Words kunt u documenten opsplitsen op basis van verschillende criteria, zoals secties, pagina's en meer.
 
 ### Is Aspose.Words gratis?
- Aspose.Words biedt een gratis proefperiode, maar voor alle functies moet u een licentie aanschaffen. Controleer hun[pagina kopen](https://purchase.aspose.com/buy) voor meer details.
+ Aspose.Words biedt een gratis proefperiode, maar voor alle functies moet u een licentie aanschaffen. Controleer hun[pagina kopen](https://purchase.aspose.com/buy) voor meer informatie.
 
 ### Waar kan ik de documentatie vinden?
  Er is uitgebreide documentatie beschikbaar[hier](https://reference.aspose.com/words/net/).

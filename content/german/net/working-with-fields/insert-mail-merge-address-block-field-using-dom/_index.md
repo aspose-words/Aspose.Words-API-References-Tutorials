@@ -122,4 +122,4 @@ Ein Serienbrief-Adressblock ist ein Feld in Word, in das Sie Adressinformationen
  Sie können Unterstützung von der Aspose-Community und dem technischen Team erhalten[Hier](https://forum.aspose.com/c/words/8).
 
 ### Kann ich mit Aspose.Words andere Aspekte von Word-Dokumenten automatisieren?
-Absolut! Aspose.Words für .NET bietet eine breite Palette an Funktionen zur Automatisierung der Dokumenterstellung, -bearbeitung, -konvertierung und mehr. Schauen Sie sich die[Dokumentation](https://reference.aspose.com/words/net/) für mehr Details.
+Absolut! Aspose.Words für .NET bietet eine breite Palette an Funktionen zur Automatisierung der Dokumenterstellung, -bearbeitung, -konvertierung und mehr. Schauen Sie sich die[Dokumentation](https://reference.aspose.com/words/net/) für weitere Details.

@@ -8,7 +8,7 @@ weight: 10
 url: /cs/net/working-with-textboxes/break-a-link/
 ---
 
-## Úvod
+## Zavedení
 
 Dobrý den, kolegové vývojáři a dokumentoví nadšenci! 🌟 Pokud jste někdy pracovali s dokumenty Wordu, víte, že správa textových polí vám někdy může připadat jako pasení koček. Musí být organizovány, propojeny a někdy i odpojeny, aby bylo zajištěno, že váš obsah bude plynout stejně hladce jako dobře vyladěná symfonie. Dnes se ponoříme do toho, jak přerušit dopředné odkazy v textových polích pomocí Aspose.Words for .NET. Může to znít technicky, ale nebojte se – každým krokem vás provedu přátelským konverzačním stylem. Ať už připravujete formulář, informační bulletin nebo jakýkoli složitý dokument, předávání odkazů vám může pomoci znovu získat kontrolu nad rozložením dokumentu.
 
@@ -128,4 +128,4 @@ Přerušení odkazů může potenciálně ovlivnit rozvržení, zejména pokud b
 
 ### Kde najdu další zdroje o práci s Aspose.Words?
 
- Další informace a zdroje naleznete na adrese[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/)a[Fórum podpory](https://forum.aspose.com/c/words/8).
+ Další informace a zdroje naleznete na adrese[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/)a[fórum podpory](https://forum.aspose.com/c/words/8).

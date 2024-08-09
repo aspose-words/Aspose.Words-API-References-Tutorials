@@ -2,186 +2,128 @@
 title: Редакция формы
 linktitle: Редакция формы
 second_title: API обработки документов Aspose.Words
-description: Редактируйте фигуры в документе Word с помощью Aspose.Words для .NET.
+description: Из этого подробного руководства вы узнаете, как обрабатывать изменения фигур в документах Word с помощью Aspose.Words for .NET. Освойте отслеживание изменений, вставку фигур и многое другое.
 type: docs
 weight: 10
 url: /ru/net/working-with-revisions/shape-revision/
 ---
+## Введение
 
-В этом пошаговом руководстве мы расскажем, как вносить изменения в фигуры в документе Word с помощью Aspose.Words для .NET. Мы предоставим вам полный исходный код и покажем, как форматировать выходные данные уценки.
+Программное редактирование документов Word может оказаться сложной задачей, особенно когда дело касается обработки фигур. Независимо от того, создаете ли вы отчеты, разрабатываете шаблоны или просто автоматизируете создание документов, возможность отслеживать изменения формы и управлять ими имеет решающее значение. Aspose.Words for .NET предлагает мощный API, делающий этот процесс простым и эффективным. В этом уроке мы углубимся в особенности редактирования фигур в документах Word, гарантируя, что у вас есть инструменты и знания для легкого управления вашими документами.
 
-## Шаг 1. Создание документа и добавление фигур
+## Предварительные условия
 
-Первый шаг — создать новый документ и добавить фигуры.
+Прежде чем мы углубимся в код, давайте убедимся, что у вас есть все необходимое:
+
+-  Aspose.Words для .NET: убедитесь, что у вас установлена библиотека Aspose.Words. Ты можешь[скачай это здесь](https://releases.aspose.com/words/net/).
+- Среда разработки: у вас должна быть настроена среда разработки, например Visual Studio.
+- Базовое понимание C#: Знакомство с языком программирования C# и базовыми концепциями объектно-ориентированного программирования.
+- Документ Word: документ Word, с которым вы можете работать, или вы можете создать его во время обучения.
+
+## Импортировать пространства имен
+
+Сначала давайте импортируем необходимые пространства имен. Они предоставят нам доступ к классам и методам, необходимым для работы с документами и фигурами Word.
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+```
+
+## Шаг 1. Настройка каталога документов
+
+Прежде чем мы начнем работать с фигурами, нам нужно определить путь к каталогу наших документов. Здесь мы сохраним наши измененные документы.
+
+```csharp
+// Путь к каталогу документов.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## Шаг 2. Создание нового документа
+
+Давайте создадим новый документ Word, в который будем вставлять и редактировать фигуры.
 
 ```csharp
 Document doc = new Document();
-Assert.False(doc.TrackRevisions);
-
-Shape shape = new Shape(doc, ShapeType.Cube);
-shape. WrapType = WrapType. Inline;
-shape. Width = 100.0;
-shape. Height = 100.0;
-doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 ```
 
-## Шаг 2. Отслеживайте изменения и добавьте еще одну фигуру.
+## Шаг 3. Вставка встроенной фигуры
 
-Мы включим отслеживание изменений и добавим еще одну фигуру.
-
-```csharp
-doc.StartTrackRevisions("John Doe");
-
-shape = new Shape(doc, ShapeType.Sun);
-shape. WrapType = WrapType. Inline;
-shape. Width = 100.0;
-shape. Height = 100.0;
-doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
-```
-
-## Шаг 3. Получите коллекцию фигур и проверьте наличие изменений.
-
-Мы получим коллекцию фигур из документа и проверим версии, связанные с каждой фигурой.
+Мы начнем со вставки встроенной фигуры в наш документ без отслеживания изменений. Встроенная фигура — это фигура, которая течет вместе с текстом.
 
 ```csharp
-List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-Assert.True(shapes[0].IsDeleteRevision);
-
-Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-Assert.True(shapes[1].IsInsertRevision);
-```
-
-## Шаг 4. Проверка изменений перемещения фигуры
-
-Мы собираемся загрузить существующий документ, содержащий версии смещения формы, и проверить связанные версии.
-
-```csharp
-doc = new Document(MyDir + "Revision shape.docx");
-
-shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert. False(shapes[0].IsMoveFromRevision);
-Assert.True(shapes[0].IsMoveToRevision);
-
-Assert.True(shapes[1].IsMoveFromRevision);
-Assert. False(shapes[1].IsMoveToRevision);
-```
-
-### Пример исходного кода для Shape Revision с использованием Aspose.Words для .NET
-
-Вот полный исходный код для внесения изменений в фигуры в документе с помощью Aspose.Words для .NET:
-
-```csharp
-Document doc = new Document();
-
-//Вставьте встроенную фигуру без отслеживания изменений.
-Assert.False(doc.TrackRevisions);
 Shape shape = new Shape(doc, ShapeType.Cube);
 shape.WrapType = WrapType.Inline;
 shape.Width = 100.0;
 shape.Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
+```
 
-// Начните отслеживать изменения, а затем вставьте другую фигуру.
+## Шаг 4. Начинаем отслеживать изменения
+
+Чтобы отслеживать изменения в нашем документе, нам нужно включить отслеживание версий. Это важно для выявления изменений, внесенных в формы.
+
+```csharp
 doc.StartTrackRevisions("John Doe");
+```
+
+## Шаг 5. Вставка другой фигуры с изменениями
+
+Теперь, когда отслеживание изменений включено, давайте вставим еще одну фигуру. На этот раз любые изменения будут отслеживаться.
+
+```csharp
 shape = new Shape(doc, ShapeType.Sun);
 shape.WrapType = WrapType.Inline;
 shape.Width = 100.0;
 shape.Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
+```
 
-// Получите коллекцию фигур документа, включающую только две добавленные нами фигуры.
+## Шаг 6: Получение и изменение фигур
+
+Мы можем получить все фигуры в документе и изменить их по мере необходимости. Здесь мы получим фигуры и удалим первую.
+
+```csharp
 List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-// Удалите первую фигуру.
 shapes[0].Remove();
+```
 
-// Поскольку мы удалили эту фигуру во время отслеживания изменений, она считается удаленной версией.
-Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-Assert.True(shapes[0].IsDeleteRevision);
+## Шаг 7: Сохранение документа
 
-// И мы вставили еще одну фигуру, отслеживая изменения, поэтому эта фигура будет считаться вставленной версией.
-Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-Assert.True(shapes[1].IsInsertRevision);
+После внесения изменений нам необходимо сохранить документ. Это гарантирует сохранение всех версий и модификаций.
 
-// В документе есть одна фигура, которая была перемещена, но версии перемещения фигуры будут содержать два экземпляра этой фигуры.
-// Одна из них будет фигурой в пункте назначения, а другая — фигурой в исходном месте.
-doc = new Document(MyDir + "Revision shape.docx");
+```csharp
+doc.Save(dataDir + "Revision shape.docx");
+```
 
+## Шаг 8. Обработка изменений перемещения формы
+
+Когда фигура перемещается, Aspose.Words отслеживает это как изменение. Это означает, что будет два экземпляра фигуры: один в исходном месте, другой в новом.
+
+```csharp
+doc = new Document(dataDir + "Revision shape.docx");
 shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-// Это переход к пересмотру, а также форма в пункте назначения.
-Assert.False(shapes[0].IsMoveFromRevision);
-Assert.True(shapes[0].IsMoveToRevision);
-
-// Это переход от редакции, которая представляет собой форму на исходном месте.
-Assert.True(shapes[1].IsMoveFromRevision);
-Assert.False(shapes[1].IsMoveToRevision);
 ```
 
 ## Заключение
 
-В этом уроке мы узнали, как вносить изменения в фигуры в документе Word с помощью Aspose.Words для .NET. Выполнив этапы создания документа, включив отслеживание изменений, проверив изменения, связанные с каждой фигурой, и проверив изменения для перемещения фигур, мы смогли успешно управлять изменениями. Aspose.Words for .NET предлагает мощный API для обработки текстов с обзорами и формами в документах Word.
+И вот оно! Вы успешно научились обрабатывать изменения формы в документах Word с помощью Aspose.Words для .NET. Независимо от того, управляете ли вы шаблонами документов, автоматизируете отчеты или просто отслеживаете изменения, эти навыки неоценимы. Следуя этому пошаговому руководству, вы не только освоили основы, но и получили представление о более продвинутых методах работы с документами.
 
-### Часто задаваемые вопросы
+## Часто задаваемые вопросы
 
-#### Вопрос: Как создать новый документ и добавить фигуры в Aspose.Words для .NET?
+### Что такое Aspose.Words для .NET?
+Aspose.Words for .NET — это мощная библиотека, которая позволяет разработчикам создавать, изменять и конвертировать документы Word программным способом с использованием C#.
 
-О: Чтобы создать новый документ и добавить фигуры в Aspose.Words for .NET, вы можете использовать следующий код. Здесь мы добавляем две фигуры, куб и солнце, в первый раздел документа:
+### Могу ли я отслеживать изменения, внесенные в другие элементы документа Word?
+Да, Aspose.Words for .NET поддерживает отслеживание изменений различных элементов, включая текст, таблицы и многое другое.
 
-```csharp
-Document doc = new Document();
-Assert.False(doc.TrackRevisions);
+### Как я могу получить бесплатную пробную версию Aspose.Words для .NET?
+ Вы можете получить бесплатную пробную версию Aspose.Words для .NET.[здесь](https://releases.aspose.com/).
 
-Shape shape = new Shape(doc, ShapeType.Cube);
-shape. WrapType = WrapType. Inline;
-shape. Width = 100.0;
-shape. Height = 100.0;
-doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
-```
+### Можно ли принять или отклонить изменения программно?
+Да, Aspose.Words для .NET предоставляет методы для программного принятия или отклонения изменений.
 
-#### Вопрос: Как включить отслеживание версий в Aspose.Words для .NET?
-
- О: Чтобы включить отслеживание версий в Aspose.Words для .NET, вы можете использовать`StartTrackRevisions` метод`Document` объект. Этот метод принимает имя автора ревизий в качестве параметра:
-
-```csharp
-doc.StartTrackRevisions("John Doe");
-```
-
-#### Вопрос: Как я могу проверить версии, связанные с каждой фигурой в документе Aspose.Words for .NET?
-
-О: Чтобы проверить версии, связанные с каждой фигурой в документе Aspose.Words for .NET, вы можете получить коллекцию фигур документа, используя команду`GetChildNodes` метод с`NodeType.Shape` тип узла. Затем вы можете получить доступ к каждой фигуре`IsDeleteRevision`, `IsInsertRevision`, `IsMoveFromRevision` , и`IsMoveToRevision` свойства, чтобы определить, какой тип редакции связан с формой:
-
-```csharp
-List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-Assert.True(shapes[0].IsDeleteRevision);
-
-Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-Assert.True(shapes[1].IsInsertRevision);
-```
-
-#### Вопрос: Как я могу проверить наличие изменений смещения фигур в документе Aspose.Words for .NET?
-
- О: Чтобы проверить наличие изменений смещения формы в документе Aspose.Words for .NET, вы можете загрузить существующий документ, содержащий изменения смещения формы. Затем вы можете получить доступ к каждой фигуре`IsMoveFromRevision`и`IsMoveToRevision` свойства, чтобы определить, перемещается ли он, и если да, то откуда и куда:
-
-```csharp
-doc = new Document(MyDir + "Revision shape.docx");
-
-shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert. False(shapes[0].IsMoveFromRevision);
-Assert.True(shapes[0].IsMoveToRevision);
-
-Assert.True(shapes[1].IsMoveFromRevision);
-Assert. False(shapes[1].IsMoveToRevision);
-```
+### Могу ли я использовать Aspose.Words для .NET с другими языками .NET, кроме C#?
+Абсолютно! Aspose.Words for .NET можно использовать с любым языком .NET, включая VB.NET и F#.

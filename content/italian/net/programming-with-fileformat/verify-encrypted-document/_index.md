@@ -46,17 +46,17 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 
 ## Passaggio 3: controlla se il documento è crittografato
 
- Noi usiamo il`IsEncrypted` proprietà del`FileFormatInfo` oggetto per verificare se il documento è crittografato. Questa proprietà ritorna`true` se il documento è crittografato, altrimenti ritorna`false`. Visualizziamo il risultato nella console.
+ Usiamo il`IsEncrypted` proprietà del`FileFormatInfo` oggetto per verificare se il documento è crittografato. Questa proprietà ritorna`true` se il documento è crittografato, altrimenti ritorna`false`. Visualizziamo il risultato nella console.
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);
 ```
 
-È tutto ! Hai verificato con successo se un documento è crittografato utilizzando Aspose.Words per .NET.
+Questo è tutto! Hai verificato con successo se un documento è crittografato utilizzando Aspose.Words per .NET.
 
 ## Conclusione
 
- E il gioco è fatto! Hai verificato con successo lo stato di crittografia di un documento Word utilizzando Aspose.Words per .NET. Non è sorprendente come poche righe di codice possano semplificarci la vita? Se hai domande o riscontri problemi, non esitare a contattarci[Forum di supporto di Aspose](https://forum.aspose.com/c/words/8).
+ Ed ecco qua! Hai verificato con successo lo stato di crittografia di un documento Word utilizzando Aspose.Words per .NET. Non è sorprendente come poche righe di codice possano semplificarci la vita? Se hai domande o riscontri problemi, non esitare a contattarci[Forum di supporto di Aspose](https://forum.aspose.com/c/words/8).
 
 ## Domande frequenti
 

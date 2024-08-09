@@ -16,7 +16,7 @@ Salut! Si vous avez déjà eu besoin de modifier les mises en page de plusieurs 
 Avant de plonger, assurons-nous d’avoir tout ce dont nous avons besoin :
 
 1. Connaissance de base de C# : Une connaissance de la syntaxe et des concepts C# est nécessaire.
-2.  Aspose.Words pour .NET : vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/) Si vous êtes juste en train de l'essayer, un[essai gratuit](https://releases.aspose.com/) est disponible.
+2.  Aspose.Words pour .NET : vous pouvez[téléchargez-le ici](https://releases.aspose.com/words/net/) Si vous êtes juste en train de l'essayer, un[essai gratuit](https://releases.aspose.com/) est disponible.
 3. Visual Studio : toute version récente devrait fonctionner, mais la dernière est recommandée pour une meilleure expérience.
 4. .NET Framework : assurez-vous qu'il est installé sur votre système.
 
@@ -89,7 +89,7 @@ Cette ligne de code enregistre le document dans le répertoire spécifié avec u
 
 ## Conclusion
 
- Et voila! Vous avez modifié avec succès la mise en page de toutes les sections d'un document Word à l'aide d'Aspose.Words pour .NET. Ce didacticiel vous a guidé tout au long de la création d'un document, de l'ajout de sections et de l'ajustement uniforme de leurs mises en page. Aspose.Words offre un riche ensemble de fonctionnalités, alors n'hésitez pas à explorer le[Documentation API](https://reference.aspose.com/words/net/) pour des capacités plus avancées.
+ Et voilà ! Vous avez modifié avec succès la mise en page de toutes les sections d'un document Word à l'aide d'Aspose.Words pour .NET. Ce didacticiel vous a guidé tout au long de la création d'un document, de l'ajout de sections et de l'ajustement uniforme de leurs mises en page. Aspose.Words offre un riche ensemble de fonctionnalités, alors n'hésitez pas à explorer le[Documentation API](https://reference.aspose.com/words/net/) pour des capacités plus avancées.
 
 ## FAQ
 
@@ -103,7 +103,7 @@ Aspose.Words for .NET est une bibliothèque complète permettant de travailler a
 
 ### 3. Comment puis-je modifier d'autres propriétés de mise en page ?
 
- Aspose.Words vous permet de modifier diverses propriétés de mise en page telles que l'orientation, les marges et le format du papier. Se référer au[Documentation API](https://reference.aspose.com/words/net/) pour des instructions détaillées.
+ Aspose.Words vous permet de modifier diverses propriétés de mise en page telles que l'orientation, les marges et le format du papier. Référez-vous au[Documentation API](https://reference.aspose.com/words/net/) pour des instructions détaillées.
 
 ### 4. Comment puis-je obtenir de l'aide pour Aspose.Words pour .NET ?
 

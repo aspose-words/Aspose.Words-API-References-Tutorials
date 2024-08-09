@@ -81,7 +81,7 @@ doc.Range.Fields.ToList().ForEach(f => f.Remove());
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
-## συμπέρασμα
+## Σύναψη
 
 Συμπερασματικά, αυτό το σεμινάριο παρέχει έναν περιεκτικό οδηγό σχετικά με τον τρόπο αποτελεσματικής κατάργησης πεδίων από έγγραφα του Word χρησιμοποιώντας το Aspose.Words για .NET. Ακολουθώντας αυτά τα βήματα, μπορείτε να αυτοματοποιήσετε τη διαδικασία αφαίρεσης πεδίου εντός των εφαρμογών σας, βελτιώνοντας την παραγωγικότητα και την αποτελεσματικότητα στις εργασίες διαχείρισης εγγράφων.
 
@@ -100,4 +100,4 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 Ναι, η μέθοδος που εμφανίζεται εδώ στοχεύει συγκεκριμένα μόνο πεδία και αφήνει αμετάβλητο το άλλο περιεχόμενο.
 
 ### Πού μπορώ να βρω περισσότερους πόρους και υποστήριξη για το Aspose.Words;
- Επισκέψου το[Aspose.Words για τεκμηρίωση API .NET](https://reference.aspose.com/words/net/) και το[Aspose.Words φόρουμ](https://forum.aspose.com/c/words/8) για περαιτέρω βοήθεια.
+ Επισκεφθείτε το[Aspose.Words για τεκμηρίωση API .NET](https://reference.aspose.com/words/net/) και το[Aspose.Words φόρουμ](https://forum.aspose.com/c/words/8) για περαιτέρω βοήθεια.

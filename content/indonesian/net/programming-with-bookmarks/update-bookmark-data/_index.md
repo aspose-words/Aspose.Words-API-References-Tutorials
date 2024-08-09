@@ -15,7 +15,7 @@ Pernahkah Anda menghadapi situasi di mana Anda perlu memperbarui bagian tertentu
 
 Sebelum kita mendalami kodenya, pastikan Anda memiliki alat yang diperlukan:
 
--  Aspose.Words untuk .NET: Ini adalah perpustakaan pembangkit tenaga listrik yang memberdayakan Anda untuk bekerja dengan dokumen Word secara terprogram. Buka bagian unduhan di situs web Aspose[Tautan unduhan](https://releases.aspose.com/words/net/) untuk mengambil salinan Anda. - Anda dapat memilih uji coba gratis atau menjelajahi berbagai opsi lisensinya[tautan](https://purchase.aspose.com/buy).
+-  Aspose.Words untuk .NET: Ini adalah perpustakaan pembangkit tenaga listrik yang memberdayakan Anda untuk bekerja dengan dokumen Word secara terprogram. Buka bagian unduhan di situs web Aspose[Tautan unduhan](https://releases.aspose.com/words/net/) untuk mengambil salinan Anda. - Anda dapat memilih uji coba gratis atau menjelajahi berbagai opsi lisensinya[link](https://purchase.aspose.com/buy).
 - Lingkungan Pengembangan .NET: Visual Studio, Visual Studio Code, atau IDE .NET lainnya pilihan Anda akan berfungsi sebagai taman bermain pengembangan Anda.
 - Contoh Dokumen Word: Buat dokumen Word sederhana (seperti "Bookmarks.docx") yang berisi beberapa teks dan masukkan bookmark (kami akan membahas cara melakukannya nanti) untuk berlatih.
 
@@ -87,7 +87,7 @@ bookmark.Text = "This is a new bookmarked text.";
 
 Baris ini menggantikan teks yang ada di dalam bookmark dengan string baru`"This is a new bookmarked text."`. Ingatlah untuk menggantinya dengan konten yang Anda inginkan.
 
- Tip Pro: Anda bahkan dapat menyisipkan teks berformat ke dalam bookmark menggunakan tag HTML. Misalnya,`bookmark.Text = "<b>This is bold text</b> within the bookmark."` akan membuat teks menjadi tebal di dalam dokumen.
+ Kiat Pro: Anda bahkan dapat menyisipkan teks berformat ke dalam bookmark menggunakan tag HTML. Misalnya,`bookmark.Text = "<b>This is bold text</b> within the bookmark."` akan membuat teks menjadi tebal di dalam dokumen.
 
 ## Langkah 6: Simpan Dokumen yang Diperbarui
 

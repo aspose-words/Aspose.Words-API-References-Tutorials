@@ -9,7 +9,7 @@ url: /pl/net/join-and-append-documents/append-document-to-blank/
 ---
 ## Wstęp
 
-No hej! Czy kiedykolwiek zastanawiałeś się, jak bezproblemowo dołączyć dokument do pustego dokumentu za pomocą Aspose.Words dla .NET? Nie jesteś sam! Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zagłębiasz się w świat automatyzacji dokumentów, ten przewodnik pomoże Ci przejść przez ten proces. Podzielimy kroki w sposób łatwy do wykonania, nawet jeśli nie jesteś czarodziejem kodowania. Zatem napij się filiżanki kawy, usiądź wygodnie i zanurz się w świat manipulacji dokumentami za pomocą Aspose.Words dla .NET!
+Hej tam! Czy kiedykolwiek zastanawiałeś się, jak bezproblemowo dołączyć dokument do pustego dokumentu za pomocą Aspose.Words dla .NET? Nie jesteś sam! Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zagłębiasz się w świat automatyzacji dokumentów, ten przewodnik pomoże Ci przejść przez ten proces. Podzielimy kroki w sposób łatwy do wykonania, nawet jeśli nie jesteś czarodziejem kodowania. Zatem napij się filiżanki kawy, usiądź wygodnie i zanurz się w świat manipulacji dokumentami za pomocą Aspose.Words dla .NET!
 
 ## Warunki wstępne
 

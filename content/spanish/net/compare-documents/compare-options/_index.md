@@ -112,7 +112,7 @@ Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal" : "Documents
 
 ## Conclusión
 
-¡Y ahí lo tienes! Ha comparado con éxito dos documentos de Word utilizando Aspose.Words para .NET. Este proceso puede ser un verdadero salvavidas cuando trabajas en proyectos grandes y necesitas garantizar coherencia y precisión. Recuerde, la clave es configurar cuidadosamente sus opciones de comparación para adaptar la comparación a sus necesidades específicas. ¡Feliz codificación!
+¡Y ahí lo tienes! Ha comparado con éxito dos documentos de Word utilizando Aspose.Words para .NET. Este proceso puede ser un verdadero salvavidas cuando trabajas en proyectos grandes y necesitas garantizar la coherencia y la precisión. Recuerde, la clave es configurar cuidadosamente sus opciones de comparación para adaptar la comparación a sus necesidades específicas. ¡Feliz codificación!
 
 ## Preguntas frecuentes
 

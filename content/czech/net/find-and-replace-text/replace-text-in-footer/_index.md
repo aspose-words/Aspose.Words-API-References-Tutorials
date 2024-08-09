@@ -7,9 +7,9 @@ type: docs
 weight: 10
 url: /cs/net/find-and-replace-text/replace-text-in-footer/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Jste připraveni ponořit se do světa manipulace s dokumenty pomocí Aspose.Words pro .NET? Dnes se vypořádáme se zajímavým úkolem: nahrazením textu v zápatí dokumentu aplikace Word. Tento tutoriál vás provede celým procesem krok za krokem. Ať už jste zkušený vývojář nebo teprve začínáte, tato příručka vám bude užitečná a snadno se budete řídit. Začněme tedy na naší cestě ke zvládnutí nahrazování textu v zápatí pomocí Aspose.Words pro .NET!
+Ahoj! Jste připraveni ponořit se do světa manipulace s dokumenty pomocí Aspose.Words pro .NET? Dnes se vypořádáme se zajímavým úkolem: nahrazením textu v zápatí dokumentu aplikace Word. Tento tutoriál vás provede celým procesem krok za krokem. Ať už jste zkušený vývojář nebo teprve začínáte, tato příručka vám bude užitečná a snadno se budete řídit. Začněme tedy na naší cestě ke zvládnutí nahrazování textu v zápatí pomocí Aspose.Words pro .NET!
 
 ## Předpoklady
 
@@ -50,7 +50,7 @@ HeaderFooterCollection headersFooters = doc.FirstSection.HeadersFooters;
 HeaderFooter footer = headersFooters[HeaderFooterType.FooterPrimary];
 ```
 
- Tady,`headersFooters` je kolekce všech záhlaví a zápatí v první části dokumentu. Poté získáme primární zápatí pomocí`HeaderFooterType.FooterPrimary`.
+ Zde,`headersFooters` je kolekce všech záhlaví a zápatí v první části dokumentu. Poté získáme primární zápatí pomocí`HeaderFooterType.FooterPrimary`.
 
 ## Krok 3: Nastavte možnosti Najít a nahradit
 
@@ -88,7 +88,7 @@ doc.Save(dataDir + "FindAndReplace.ReplaceTextInFooter.docx");
 
 ## Závěr
 
-Gratulujeme! Úspěšně jste nahradili text v zápatí dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento kurz vás provede načtením dokumentu, přístupem k zápatí, nastavením možností hledání a nahrazení, provedením nahrazení textu a uložením upraveného dokumentu. Pomocí těchto kroků můžete snadno manipulovat a programově aktualizovat obsah dokumentů aplikace Word.
+Gratuluji! Úspěšně jste nahradili text v zápatí dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento kurz vás provede načtením dokumentu, přístupem k zápatí, nastavením možností hledání a nahrazení, provedením nahrazení textu a uložením upraveného dokumentu. Pomocí těchto kroků můžete snadno manipulovat a programově aktualizovat obsah dokumentů aplikace Word.
 
 ## FAQ
 
@@ -102,7 +102,7 @@ Jakýkoli konkrétní text v zápatí můžete nahradit. Pokud potřebujete nahr
  Absolutně! Soubor`MatchCase` na`true` v`FindReplaceOptions` aby se při výměně rozlišovala velká a malá písmena.
 
 ### Mohu k nahrazení textu použít regulární výrazy?
-Ano, Aspose.Words podporuje použití regulárních výrazů pro operace hledání a nahrazování. Můžete zadat vzor regulárního výrazu v`Range.Replace` metoda.
+Ano, Aspose.Words podporuje použití regulárních výrazů pro operace hledání a nahrazování. Vzor regulárního výrazu můžete zadat v`Range.Replace` metoda.
 
 ### Jak zpracuji více zápatí v dokumentu?
 Pokud má váš dokument více oddílů s různými zápatími, procházejte každý oddíl a použijte náhradu textu pro každé zápatí jednotlivě.

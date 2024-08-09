@@ -104,7 +104,7 @@ dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 
 ## Conclusion
 
-Et c'est tout! Vous avez copié avec succès le texte marqué d'un signet d'un document Word à un autre à l'aide d'Aspose.Words pour .NET. Cette méthode est puissante pour automatiser les tâches de manipulation de documents, rendant votre flux de travail plus efficace et rationalisé.
+Et c'est tout ! Vous avez copié avec succès le texte marqué d'un signet d'un document Word à un autre à l'aide d'Aspose.Words pour .NET. Cette méthode est puissante pour automatiser les tâches de manipulation de documents, rendant votre flux de travail plus efficace et rationalisé.
 
 ## FAQ
 

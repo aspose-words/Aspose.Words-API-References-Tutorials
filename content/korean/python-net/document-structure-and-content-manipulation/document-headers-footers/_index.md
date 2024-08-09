@@ -12,7 +12,7 @@ Word 문서의 머리글과 바닥글은 콘텐츠에 대한 컨텍스트, 브�
 
 ## Python용 Aspose.Words 시작하기
 
-머리글과 바닥글 조작을 시작하기 전에 Python용 Aspose.Words를 설정해야 합니다. 다음과 같이하세요:
+머리글과 바닥글 조작을 시작하기 전에 Python용 Aspose.Words를 설정해야 합니다. 다음 단계를 따르세요.
 
 1. 설치: pip를 사용하여 Python용 Aspose.Words를 설치합니다.
 

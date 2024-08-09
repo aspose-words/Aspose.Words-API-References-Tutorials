@@ -2,76 +2,100 @@
 title: Sisipkan Bidang Formulir
 linktitle: Sisipkan Bidang Formulir
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menyisipkan bidang formulir tarik-turun ke dalam dokumen Word menggunakan Aspose.Words untuk .NET.
+description: Pelajari cara menyisipkan bidang formulir kotak kombo di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami yang terperinci.
 type: docs
 weight: 10
 url: /id/net/working-with-formfields/insert-form-fields/
 ---
+## Perkenalan
 
-Dalam tutorial langkah demi langkah ini, kami akan memandu Anda tentang cara menyisipkan kolom formulir, khususnya kolom formulir dropdown, ke dalam dokumen Word menggunakan Aspose.Words untuk .NET. Kami akan menjelaskan kode sumber C# yang disediakan dan menunjukkan cara mengimplementasikannya di proyek Anda sendiri.
+Bidang formulir di dokumen Word bisa sangat berguna untuk membuat formulir atau templat interaktif. Baik Anda membuat survei, formulir aplikasi, atau dokumen lain apa pun yang memerlukan masukan pengguna, bidang formulir sangatlah penting. Dalam tutorial ini, kami akan memandu Anda melalui proses menyisipkan bidang formulir kotak kombo ke dalam dokumen Word menggunakan Aspose.Words untuk .NET. Kami akan membahas semuanya mulai dari prasyarat hingga langkah mendetail, memastikan Anda memiliki pemahaman komprehensif tentang prosesnya.
 
- Untuk memulai, pastikan Anda telah menginstal dan menyiapkan Aspose.Words untuk .NET di lingkungan pengembangan Anda. Jika Anda belum melakukannya, unduh dan instal perpustakaan dari[Aspose.Rilis]https://releases.aspose.com/words/net/.
+## Prasyarat
 
-## Langkah 1: Menginisialisasi Objek Dokumen dan DocumentBuilder
+Sebelum mendalami kodenya, pastikan Anda memiliki semua yang Anda perlukan untuk memulai:
 
- Pertama, inisialisasi`Document`Dan`DocumentBuilder` objek:
+1.  Aspose.Words for .NET: Pastikan Anda telah menginstal Aspose.Words for .NET. Jika tidak, Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Anda memerlukan IDE seperti Visual Studio.
+3. .NET Framework: Pastikan Anda telah menginstal .NET Framework di mesin Anda.
+
+## Impor Namespace
+
+Untuk memulainya, Anda perlu mengimpor namespace yang diperlukan. Namespace ini berisi kelas dan metode yang akan Anda gunakan untuk bekerja dengan dokumen Word di Aspose.Words untuk .NET.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+Sekarang, mari selami panduan langkah demi langkah untuk menyisipkan bidang formulir kotak kombo.
+
+## Langkah 1: Buat Dokumen Baru
+
+Pertama, Anda perlu membuat dokumen Word baru. Dokumen ini akan berfungsi sebagai kanvas untuk menambahkan kolom formulir Anda.
+
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Langkah 2: Memasukkan Bidang Formulir Dropdown
+ Pada langkah ini, kita membuat sebuah instance dari`Document` kelas. Contoh ini mewakili dokumen Word. Kami kemudian membuat sebuah instance dari`DocumentBuilder` kelas, yang menyediakan metode untuk memasukkan konten ke dalam dokumen.
 
- Selanjutnya, tentukan opsi untuk bidang formulir dropdown dan masukkan ke dalam dokumen menggunakan`InsertComboBox` metode`DocumentBuilder` obyek. Dalam contoh ini, kita menyisipkan kolom formulir tarik-turun bernama "DropDown" dengan tiga opsi: "Satu", "Dua", dan "Tiga":
+## Langkah 2: Tentukan Item Kotak Kombo
+
+Selanjutnya, tentukan item yang ingin Anda sertakan dalam kotak kombo. Item-item ini akan menjadi opsi yang tersedia untuk dipilih.
 
 ```csharp
 string[] items = { "One", "Two", "Three" };
+```
+
+ Di sini, kita membuat array string bernama`items` yang berisi opsi "Satu", "Dua", dan "Tiga".
+
+## Langkah 3: Masukkan Kotak Kombo
+
+ Sekarang, masukkan kotak kombo ke dalam dokumen menggunakan`DocumentBuilder` contoh.
+
+```csharp
 builder.InsertComboBox("DropDown", items, 0);
 ```
 
-## Langkah 3: Menyimpan Dokumen
+ Pada langkah ini, kami menggunakan`InsertComboBox` metode`DocumentBuilder` kelas. Parameter pertama adalah nama kotak kombo ("DropDown"), parameter kedua adalah array item, dan parameter ketiga adalah indeks item yang dipilih secara default (dalam hal ini, item pertama).
 
-Terakhir, simpan dokumen:
+## Langkah 4: Simpan Dokumen
+
+Terakhir, simpan dokumen ke lokasi yang Anda inginkan.
 
 ```csharp
 doc.Save("OutputDocument.docx");
 ```
 
-Itu dia! Anda telah berhasil menyisipkan bidang formulir tarik-turun ke dalam dokumen Word menggunakan Aspose.Words untuk .NET.
+Baris kode ini menyimpan dokumen sebagai "OutputDocument.docx" di direktori proyek Anda. Anda dapat menentukan jalur lain jika ingin menyimpannya di tempat lain.
 
-### Contoh kode sumber untuk Sisipkan Bidang Formulir menggunakan Aspose.Words untuk .NET
+## Kesimpulan
 
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
+Dengan mengikuti langkah-langkah ini, Anda telah berhasil menyisipkan bidang formulir kotak kombo ke dalam dokumen Word menggunakan Aspose.Words untuk .NET. Proses ini dapat diadaptasi untuk menyertakan jenis bidang formulir lainnya, menjadikan dokumen Anda interaktif dan mudah digunakan.
 
-string[] items = { "One", "Two", "Three" };
-builder.InsertComboBox("DropDown", items, 0);
+Memasukkan bidang formulir dapat meningkatkan fungsionalitas dokumen Word Anda secara signifikan, memungkinkan konten dinamis dan interaksi pengguna. Aspose.Words untuk .NET menjadikan proses ini mudah dan efisien, memungkinkan Anda membuat dokumen profesional dengan mudah.
 
-doc.Save("OutputDocument.docx");
-```
+## FAQ
 
-Jangan ragu untuk menggunakan kode ini di proyek Anda sendiri dan memodifikasinya sesuai dengan kebutuhan spesifik Anda.
+### Bisakah saya menambahkan lebih dari satu kotak kombo ke dokumen?
 
-### FAQ
+Ya, Anda bisa menambahkan beberapa kotak kombo atau bidang formulir lainnya ke dokumen Anda dengan mengulangi langkah-langkah menyisipkan dengan nama dan item yang berbeda.
 
-#### T: Bagaimana cara menyisipkan bidang formulir tipe teks di Aspose.Words?
+### Bagaimana cara mengatur item pilihan default yang berbeda di kotak kombo?
 
- A: Untuk menyisipkan kolom formulir jenis teks di Aspose.Words, Anda dapat menggunakan`FormField` kelas dan mengaturnya`Type`properti ke`FormFieldType.Text`. Anda juga dapat menyesuaikan properti lain seperti nama, label, dan opsi.
+Anda dapat mengubah item default yang dipilih dengan memodifikasi parameter ketiga di`InsertComboBox` metode. Misalnya, menyetelnya ke`1` akan memilih item kedua secara default.
 
-#### T: Apakah mungkin membuat kolom formulir tipe kotak centang di dokumen?
+### Bisakah saya menyesuaikan tampilan kotak kombo?
 
- J: Ya, dimungkinkan untuk membuat bidang formulir tipe kotak centang di dokumen Aspose.Words. Anda dapat menggunakan`FormField` kelas dan mengaturnya`Type`properti ke`FormFieldType.CheckBox` untuk membuat kotak centang. Anda kemudian dapat menyesuaikan properti kotak centang sesuai kebutuhan.
+ Tampilan bidang formulir dapat dikustomisasi menggunakan berbagai properti dan metode di Aspose.Words. Mengacu kepada[dokumentasi](https://reference.aspose.com/words/net/) untuk lebih jelasnya.
 
-#### T: Bagaimana cara menambahkan bidang formulir tipe drop-down ke dokumen?
+### Apakah mungkin untuk menyisipkan jenis bidang formulir lain seperti input teks atau kotak centang?
 
- J: Untuk menambahkan bidang formulir tipe drop-down di dokumen Aspose.Words, gunakan`FormField` kelas dan mengaturnya`Type`properti ke`FormFieldType.DropDown` . Anda kemudian dapat mengatur opsi dropdown menggunakan`DropDownItems` Properti.
+ Ya, Aspose.Words untuk .NET mendukung berbagai tipe bidang formulir, termasuk bidang input teks, kotak centang, dan banyak lagi. Anda dapat menemukan contoh dan panduan terperinci di[dokumentasi](https://reference.aspose.com/words/net/).
 
-#### T: Dapatkah saya menetapkan nilai default untuk bidang formulir di Aspose.Words?
+### Bagaimana saya bisa mencoba Aspose.Words untuk .NET sebelum membeli?
 
-A: Ya, Anda dapat menetapkan nilai default untuk bidang formulir di Aspose.Words. Menggunakan`FormField.Result` properti untuk menentukan nilai awal bidang formulir.
-
-#### T: Bagaimana cara mengambil data yang dimasukkan dalam kolom formulir di Aspose.Words?
-
- A: Untuk mengambil data yang dimasukkan dalam kolom formulir di Aspose.Words, Anda dapat menggunakan`FormField.Result` properti yang berisi nilai yang dimasukkan oleh pengguna. Anda dapat mengakses properti ini untuk setiap bidang formulir di dokumen Anda.
+ Anda dapat mengunduh uji coba gratis dari[Di Sini](https://releases.aspose.com/) dan meminta izin sementara dari[Di Sini](https://purchase.aspose.com/temporary-license/).

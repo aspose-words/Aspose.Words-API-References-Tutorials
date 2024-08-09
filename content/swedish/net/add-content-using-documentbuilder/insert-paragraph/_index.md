@@ -56,7 +56,7 @@ paragraphFormat.KeepTogether = true;
 
 ## Steg 3: Infoga stycket
 
- Lägg nu till önskat innehåll med hjälp av`WriteLn` metod av`DocumentBuilder`.
+ Lägg nu till önskat innehåll med hjälp av`WriteLn` metod för`DocumentBuilder`.
 ```csharp
 builder.Writeln("A whole paragraph.");
 ```

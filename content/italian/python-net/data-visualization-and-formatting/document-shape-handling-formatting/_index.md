@@ -8,13 +8,13 @@ weight: 13
 url: /it/python-net/data-visualization-and-formatting/document-shape-handling-formatting/
 ---
 
-## introduzione
+## Introduzione
 
 documenti moderni non riguardano solo il contenuto che contengono; il loro fascino visivo gioca un ruolo significativo nel coinvolgere i lettori. Aspose.Words per Python offre un potente toolkit per manipolare i documenti a livello di codice, permettendoti di creare layout di grande impatto visivo che risuonano con il tuo pubblico.
 
 ## Impostazione dell'ambiente
 
- Prima di immergerci nella creazione di forme di documenti impressionanti, assicurati di aver installato Aspose.Words per Python. Puoi scaricarlo da[Link per scaricare](https://releases.aspose.com/words/python/) . Inoltre, fare riferimento a[documentazione](https://reference.aspose.com/words/python-net/) per una guida completa sull'utilizzo della libreria.
+ Prima di immergerci nella creazione di forme di documenti impressionanti, assicurati di aver installato Aspose.Words per Python. Puoi scaricarlo da[collegamento per il download](https://releases.aspose.com/words/python/) . Inoltre, fare riferimento a[documentazione](https://reference.aspose.com/words/python-net/) per una guida completa sull'utilizzo della libreria.
 
 ## Creazione di un documento di base
 
@@ -86,7 +86,7 @@ Creare forme e layout di documenti visivamente impressionanti non è più un com
 ## Domande frequenti
 
 ### Come posso scaricare Aspose.Words per Python?
- Puoi scaricare Aspose.Words per Python da[Link per scaricare](https://releases.aspose.com/words/python/).
+ Puoi scaricare Aspose.Words per Python da[collegamento per il download](https://releases.aspose.com/words/python/).
 
 ### Dove posso trovare la documentazione completa per Aspose.Words per Python?
  Fare riferimento al[documentazione](https://reference.aspose.com/words/python-net/) per una guida dettagliata sull'utilizzo di Aspose.Words per Python.

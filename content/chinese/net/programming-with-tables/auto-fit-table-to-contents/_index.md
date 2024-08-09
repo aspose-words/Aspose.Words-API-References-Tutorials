@@ -69,7 +69,7 @@ Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 table.AutoFit(AutoFitBehavior.AutoFitToContents);
 ```
 
-这行代码告诉 Aspose.Words 调整表格的列和行，使其完全适合内容。这就像使用自动调整大小工具一样，确保所有内容都恰到好处，无需手动调整。
+这行代码告诉 Aspose.Words 调整表格的列和行，使其完美适合内容。这就像使用自动调整大小工具一样，确保所有内容都恰到好处，无需手动调整。
 
 ## 步骤 5：保存文档
 

@@ -15,7 +15,7 @@ Lorsque vous travaillez avec des documents Word, s'assurer que deux documents so
 
 Avant de plonger dans le guide étape par étape, assurons-nous que nous avons tout ce dont nous avons besoin :
 
-1.  Aspose.Words pour .NET : vous devez avoir installé Aspose.Words pour .NET. Si vous ne l'avez pas encore, vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/).
+1.  Aspose.Words pour .NET : vous devez avoir installé Aspose.Words pour .NET. Si vous ne l'avez pas encore, vous pouvez[téléchargez-le ici](https://releases.aspose.com/words/net/).
 2. Environnement de développement : assurez-vous d'avoir configuré un environnement de développement .NET. Visual Studio est fortement recommandé.
 3. Exemples de documents : préparez deux documents Word que vous souhaitez comparer.
 

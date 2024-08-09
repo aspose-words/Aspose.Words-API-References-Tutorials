@@ -9,7 +9,7 @@ url: /pl/net/find-and-replace-text/replace-with-regex/
 ---
 ## Wstęp
 
-No hej! Czy zdarzyło Ci się kiedyś zamienić tekst w dokumencie programu Word, ale potrzebujesz nieco więcej mocy niż proste wyszukiwanie i zamiana? Może potrzebujesz czegoś, co poradzi sobie ze wzorami i symbolami wieloznacznymi? Cóż, masz szczęście! Aspose.Words dla .NET zapewnia Ci funkcjonalność wyszukiwania i zamiany opartą na wyrażeniach regularnych. W tym samouczku omówimy, w jaki sposób można używać wyrażeń regularnych do zastępowania tekstu w dokumentach programu Word za pomocą Aspose.Words dla .NET. Omówimy wszystko krok po kroku, więc nawet jeśli dopiero zaczynasz korzystać z wyrażeń regularnych lub Aspose.Words, będziesz w stanie śledzić postępy i błyskawicznie nabrać tempa.
+Hej tam! Czy zdarzyło Ci się kiedyś zamienić tekst w dokumencie programu Word, ale potrzebujesz nieco więcej mocy niż proste wyszukiwanie i zamiana? Może potrzebujesz czegoś, co poradzi sobie ze wzorami i symbolami wieloznacznymi? Cóż, masz szczęście! Aspose.Words dla .NET zapewnia Ci funkcjonalność wyszukiwania i zamiany opartą na wyrażeniach regularnych. W tym samouczku omówimy, w jaki sposób można używać wyrażeń regularnych do zastępowania tekstu w dokumentach programu Word za pomocą Aspose.Words dla .NET. Omówimy wszystko krok po kroku, więc nawet jeśli dopiero zaczynasz korzystać z wyrażeń regularnych lub Aspose.Words, będziesz w stanie śledzić postępy i błyskawicznie nabrać tempa.
 
 ## Warunki wstępne
 
@@ -65,7 +65,7 @@ W tej chwili używamy opcji domyślnych, ale w razie potrzeby możesz je dostoso
 
 ## Krok 4: Wykonaj zamianę wyrażenia regularnego
 
- Teraz zaczyna się zabawa! Skorzystamy z`Range.Replace` metoda zamiany wszystkich wystąpień słów „smutny” lub „wściekły” na „zły” przy użyciu wyrażenia regularnego.
+ Teraz nadchodzi przyjemna część! Skorzystamy z`Range.Replace` metoda zamiany wszystkich wystąpień słów „smutny” lub „wściekły” na „zły” przy użyciu wyrażenia regularnego.
 
 ```csharp
 doc.Range.Replace(new Regex("[s|m]ad"), "bad", options);
@@ -93,7 +93,7 @@ masz to! Pomyślnie użyłeś wyrażenia regularnego do znalezienia i zamiany te
 Absolutnie! Aspose.Words obsługuje szeroką gamę wzorców wyrażeń regularnych. Możesz dostosować swoje wzory tak, aby dokładnie odpowiadały Twoim potrzebom.
 
 ### Czy Aspose.Words dla .NET obsługuje inne operacje tekstowe?  
-Tak. Aspose.Words dla .NET oferuje bogaty zestaw funkcji do manipulowania dokumentami Word, w tym wyodrębnianie tekstu, formatowanie i wiele innych.
+Tak, tak. Aspose.Words dla .NET oferuje bogaty zestaw funkcji do manipulowania dokumentami Word, w tym wyodrębnianie tekstu, formatowanie i wiele innych.
 
 ### Czy mogę zastąpić tekst w określonych sekcjach dokumentu?  
 Tak, możesz. Możesz używać różnych metod, aby kierować reklamy na określone sekcje, akapity, a nawet nagłówki i stopki w dokumencie.

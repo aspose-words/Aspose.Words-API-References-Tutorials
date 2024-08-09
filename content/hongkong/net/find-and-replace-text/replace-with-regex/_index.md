@@ -65,7 +65,7 @@ FindReplaceOptions options = new FindReplaceOptions();
 
 ## 步驟 4：執行正規表示式替換
 
-有趣的來了！我們將使用`Range.Replace`方法使用正規表示式將所有出現的“sad”或“mad”替換為“bad”。
+現在來了有趣的部分！我們將使用`Range.Replace`方法使用正規表示式將所有出現的“sad”或“mad”替換為“bad”。
 
 ```csharp
 doc.Range.Replace(new Regex("[s|m]ad"), "bad", options);
@@ -85,7 +85,7 @@ doc.Save(dataDir + "FindAndReplace.ReplaceWithRegex.docx");
 
 ## 結論
 
-現在你就擁有了！您已成功使用正規表示式透過 Aspose.Words for .NET 尋找並取代 Word 文件中的文字。這個強大的功能可以為您節省大量的時間和精力，特別是在處理複雜的文字模式時。無論您是要清理文件、格式化文字還是進行批次更改，Aspose.Words for .NET 的正規表示式都是您的工具庫中需要的工具。
+現在你就得到它了！您已成功使用正規表示式透過 Aspose.Words for .NET 尋找並取代 Word 文件中的文字。這個強大的功能可以為您節省大量的時間和精力，特別是在處理複雜的文字模式時。無論您是要清理文件、格式化文字還是進行批次更改，Aspose.Words for .NET 的正規表示式都是您的工具庫中需要的工具。
 
 ## 常見問題解答
 
@@ -93,10 +93,10 @@ doc.Save(dataDir + "FindAndReplace.ReplaceWithRegex.docx");
 絕對地！ Aspose.Words 支援多種正規表示式模式。您可以客製化您的圖案以完全符合您的需求。
 
 ### Aspose.Words for .NET 支援其他文字操作嗎？  
-是的，它確實。 Aspose.Words for .NET 提供了一組豐富的功能來操作 Word 文檔，包括文字擷取、格式設定等。
+是的，確實如此。 Aspose.Words for .NET 提供了一組豐富的功能來操作 Word 文檔，包括文字擷取、格式設定等。
 
 ### 我可以替換文件特定部分中的文字嗎？  
-是的你可以。您可以使用不同的方法來定位文件中的特定部分、段落，甚至頁首和頁尾。
+是的，你可以。您可以使用不同的方法來定位文件中的特定部分、段落，甚至頁首和頁尾。
 
 ### 有沒有辦法在儲存文件之前預覽變更？  
 雖然Aspose.Words不提供直接預覽功能，但您始終可以在進行更改之前儲存文件的副本並比較版本。

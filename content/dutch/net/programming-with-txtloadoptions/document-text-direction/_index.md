@@ -105,4 +105,4 @@ Het instellen van de tekstrichting in Word-documenten is een eenvoudig proces me
 
 ### Waar kan ik meer informatie vinden over Aspose.Words voor .NET?
 
- Voor meer details, bekijk de[Aspose.Words voor .NET-documentatie](https://reference.aspose.com/words/net/) . U kunt ook aanvullende bronnen verkennen, zoals[Download link](https://releases.aspose.com/words/net/), [Kopen](https://purchase.aspose.com/buy), [Gratis proefperiode](https://releases.aspose.com/), [Tijdelijke licentie](https://purchase.aspose.com/temporary-license/) , En[Steun](https://forum.aspose.com/c/words/8).
+ Voor meer details, bekijk de[Aspose.Words voor .NET-documentatie](https://reference.aspose.com/words/net/) . U kunt ook aanvullende bronnen verkennen, zoals[Downloadlink](https://releases.aspose.com/words/net/), [Kopen](https://purchase.aspose.com/buy), [Gratis proefperiode](https://releases.aspose.com/), [Tijdelijke licentie](https://purchase.aspose.com/temporary-license/) , En[Steun](https://forum.aspose.com/c/words/8).

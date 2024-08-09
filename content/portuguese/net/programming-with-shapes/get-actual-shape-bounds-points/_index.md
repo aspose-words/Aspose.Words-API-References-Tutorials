@@ -21,7 +21,7 @@ Antes de entrarmos no âmago da questão, vamos ter certeza de que você tem tud
 
 ## Importar namespaces
 
-Primeiro, vamos importar os namespaces necessários. Isso é crucial porque nos permite acessar as classes e métodos fornecidos pelo Aspose.Words for .NET.
+Primeiro, vamos importar os namespaces necessários. Isto é crucial porque nos permite acessar as classes e métodos fornecidos pelo Aspose.Words for .NET.
 
 ```csharp
 using System;

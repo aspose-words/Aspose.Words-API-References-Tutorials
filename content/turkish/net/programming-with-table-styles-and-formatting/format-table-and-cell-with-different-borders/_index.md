@@ -127,7 +127,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDi
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET kullanarak tabloları ve hücreleri farklı kenarlıklarla nasıl formatlayacağınızı öğrendiniz. Tablo kenarlıklarını ve hücre gölgelendirmesini özelleştirerek belgelerinizin görsel çekiciliğini önemli ölçüde artırabilirsiniz. Öyleyse devam edin, farklı stilleri deneyin ve belgelerinizin öne çıkmasını sağlayın!
+Ve işte karşınızda! Aspose.Words for .NET kullanarak tabloları ve hücreleri farklı kenarlıklarla nasıl formatlayacağınızı öğrendiniz. Tablo kenarlıklarını ve hücre gölgelendirmesini özelleştirerek belgelerinizin görsel çekiciliğini önemli ölçüde artırabilirsiniz. Öyleyse devam edin, farklı stilleri deneyin ve belgelerinizin öne çıkmasını sağlayın!
 
 ## SSS'ler
 

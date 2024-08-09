@@ -92,7 +92,7 @@ Console.WriteLine("Cell shading after style expansion: " + cellShadingAfter);
 
 ## Conclusion
 
-Et voila! En suivant ces étapes, vous pouvez facilement étendre la mise en forme des cellules et des lignes à partir des styles de vos documents Word à l'aide d'Aspose.Words pour .NET. Cela permet non seulement de gagner du temps, mais garantit également la cohérence de vos documents. Bon codage !
+Et voilà ! En suivant ces étapes, vous pouvez facilement étendre la mise en forme des cellules et des lignes à partir des styles de vos documents Word à l'aide d'Aspose.Words pour .NET. Cela permet non seulement de gagner du temps, mais garantit également la cohérence de vos documents. Bon codage !
 
 ## FAQ
 
@@ -109,4 +109,4 @@ Absolument! Vous pouvez parcourir tous les tableaux de votre document et appliqu
 Une fois les styles développés, ils sont directement appliqués aux cellules. Pour revenir en arrière, vous devrez recharger le document ou réappliquer les styles manuellement.
 
 ### Cette méthode fonctionne-t-elle avec toutes les versions d’Aspose.Words pour .NET ?
- Oui le`ExpandTableStylesToDirectFormatting` La méthode est disponible dans les versions récentes d’Aspose.Words pour .NET. Vérifiez toujours le[Documentation](https://reference.aspose.com/words/net/) pour les dernières mises à jour.
+ Oui, le`ExpandTableStylesToDirectFormatting` La méthode est disponible dans les versions récentes d’Aspose.Words pour .NET. Vérifiez toujours le[documentation](https://reference.aspose.com/words/net/) pour les dernières mises à jour.

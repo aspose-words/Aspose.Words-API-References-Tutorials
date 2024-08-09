@@ -87,7 +87,7 @@ doc.Save(dataDir + "WorkingWithPclSaveOptions.RasterizeTransformedElements.pcl",
 نعم، يمكن استخدام Aspose.Words for .NET في أنواع مختلفة من التطبيقات، بما في ذلك تطبيقات الويب. ضمان الترخيص والتكوين المناسبين.
 
 ### ما هي التنسيقات الأخرى التي يمكن لـ Aspose.Words لـ .NET التحويل إليها؟  
-يدعم Aspose.Words مجموعة واسعة من التنسيقات، بما في ذلك PDF وHTML وEPUB والمزيد. افحص ال[توثيق](https://reference.aspose.com/words/net/) للحصول على قائمة كاملة.
+يدعم Aspose.Words مجموعة واسعة من التنسيقات، بما في ذلك PDF وHTML وEPUB والمزيد. تحقق من[الوثائق](https://reference.aspose.com/words/net/) للحصول على قائمة كاملة.
 
 ### هل من الممكن تنقيط عناصر محددة فقط في المستند؟  
  حاليا،`RasterizeTransformedElements` ينطبق الخيار على جميع العناصر المحولة في المستند. لمزيد من التحكم الدقيق، فكر في معالجة العناصر بشكل منفصل قبل التحويل.

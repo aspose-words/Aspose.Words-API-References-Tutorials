@@ -138,7 +138,7 @@ foreach (WarningInfo warningInfo in callback.mWarnings)
 
 ### प्रश्न 4: मैं Aspose.Words के लिए समर्थन कहां पा सकता हूं?
 
- दौरा करना[Aspose.Words समर्थन मंच](https://forum.aspose.com/c/words/8) सहायता के लिए।
+ दौरा करना[Aspose.Words समर्थन मंच](https://forum.aspose.com/c/words/8) सहायता के लिए.
 
 ### प्रश्न 5: क्या Aspose.Words के लिए अस्थायी लाइसेंस प्राप्त करना संभव है?
 

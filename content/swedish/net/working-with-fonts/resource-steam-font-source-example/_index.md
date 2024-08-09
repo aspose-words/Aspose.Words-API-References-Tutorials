@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /sv/net/working-with-fonts/resource-steam-font-source-example/
 ---
+## Introduktion
 
 Om du arbetar med dokument i .NET och använder Aspose.Words kan hantering av teckensnittskällor vara en avgörande aspekt för att säkerställa att dina dokument ser ut som förväntat. Aspose.Words erbjuder ett kraftfullt sätt att hantera typsnitt, inklusive att använda resursströmmar. I den här guiden går vi igenom att använda en resursström som en teckensnittskälla med Aspose.Words för .NET. Låt oss dyka in!
 
@@ -75,7 +76,7 @@ internal class ResourceSteamFontSource : StreamFontSource
 
 ## Steg 5: Spara dokumentet
 
-Slutligen, spara dokumentet efter att ha tillämpat teckensnittsinställningarna. Spara den i ett valfritt format; här sparar vi den som PDF.
+Slutligen, spara dokumentet efter att ha tillämpat teckensnittsinställningarna. Spara den i ett valfritt format; här sparar vi den som en PDF.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
@@ -99,11 +100,11 @@ Du har nu bemästrat processen att använda en resursström som en teckensnittsk
 
 ###  F3: Kan jag hantera andra typer av varningar med`IWarningCallback`?
 
- Ja den`IWarningCallback`gränssnitt kan hantera olika typer av varningar, inte bara teckensnittsersättning.
+ Ja, den`IWarningCallback`gränssnitt kan hantera olika typer av varningar, inte bara teckensnittsersättning.
 
 ### F4: Var kan jag hitta support för Aspose.Words?
 
- Besök[Aspose.Words supportforum](https://forum.aspose.com/c/words/8) för assistens.
+ Besök[Aspose.Words supportforum](https://forum.aspose.com/c/words/8) för hjälp.
 
 ### F5: Är det möjligt att få en tillfällig licens för Aspose.Words?
 

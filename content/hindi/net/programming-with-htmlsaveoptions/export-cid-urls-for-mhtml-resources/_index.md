@@ -96,7 +96,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportCidUrlsForMhtmlResources.mh
 MHTML संसाधनों के लिए Cid URL निर्यात करने से यह सुनिश्चित होता है कि आपकी MHTML फ़ाइल में एम्बेडेड संसाधनों को उचित रूप से संदर्भित किया गया है, जिससे दस्तावेज़ की पोर्टेबिलिटी और अखंडता में सुधार होता है।
 
 ### क्या मैं आउटपुट प्रारूप को और अधिक अनुकूलित कर सकता हूँ?
- हां, Aspose.Words for .NET दस्तावेजों को सहेजने के लिए व्यापक अनुकूलन विकल्प प्रदान करता है।[प्रलेखन](https://reference.aspose.com/words/net/) अधिक जानकारी के लिए।
+ हां, Aspose.Words for .NET दस्तावेजों को सहेजने के लिए व्यापक अनुकूलन विकल्प प्रदान करता है।[प्रलेखन](https://reference.aspose.com/words/net/) अधिक जानकारी के लिए.
 
 ### क्या मुझे .NET के लिए Aspose.Words का उपयोग करने के लिए लाइसेंस की आवश्यकता है?
  हां, आपको .NET के लिए Aspose.Words का उपयोग करने के लिए लाइसेंस की आवश्यकता है। आप एक निःशुल्क परीक्षण प्राप्त कर सकते हैं[यहाँ](https://releases.aspose.com/) या लाइसेंस खरीदें[यहाँ](https://purchase.aspose.com/buy).

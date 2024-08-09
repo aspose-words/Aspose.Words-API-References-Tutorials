@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-shapes/vertical-anchor/
 ---
-## introduzione
+## Introduzione
 
 Ti sei mai trovato a dover controllare esattamente dove appare il testo all'interno di una casella di testo in un documento Word? Forse vuoi che il tuo testo sia ancorato nella parte superiore, centrale o inferiore della casella di testo? Se è così, sei nel posto giusto! In questo tutorial esploreremo come utilizzare Aspose.Words per .NET per impostare l'ancoraggio verticale delle caselle di testo nei documenti Word. Pensa all'ancoraggio verticale come alla bacchetta magica che posiziona il tuo testo esattamente dove desideri all'interno del suo contenitore. Pronti a tuffarvi? Iniziamo!
 
@@ -85,7 +85,7 @@ doc.Save(dataDir + "WorkingWithShapes.VerticalAnchor.docx");
 
 ## Conclusione
 
-E il gioco è fatto! Hai appena imparato come controllare l'allineamento verticale del testo all'interno di una casella di testo in un documento Word utilizzando Aspose.Words per .NET. Che tu stia ancorando il testo in alto, al centro o in basso, questa funzionalità ti offre un controllo preciso sul layout del tuo documento. Quindi la prossima volta che avrai bisogno di modificare la posizione del testo del tuo documento, saprai esattamente cosa fare!
+Ed ecco qua! Hai appena imparato come controllare l'allineamento verticale del testo all'interno di una casella di testo in un documento Word utilizzando Aspose.Words per .NET. Che tu stia ancorando il testo in alto, al centro o in basso, questa funzionalità ti offre un controllo preciso sul layout del tuo documento. Quindi la prossima volta che avrai bisogno di modificare la posizione del testo del tuo documento, saprai esattamente cosa fare!
 
 ## Domande frequenti
 

@@ -91,7 +91,7 @@ if (info.HasDigitalSignature)
 
 ### 有没有办法检测文档上的多个数字签名？
 
-是的`HasDigitalSignature`属性可以指示文档上存在一个或多个数字签名。
+是的，`HasDigitalSignature`属性可以指示文档上存在一个或多个数字签名。
 
 ### 如何获得 Aspose.Words for .NET 的免费试用版？
 

@@ -72,7 +72,7 @@ HtmlSaveOptions options = new HtmlSaveOptions
 doc.Save(dataDir + "SplitDocument.BySectionsHtml.html", options);
 ```
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 成功將 Word 文件以部分分割為 HTML。
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功將 Word 文件以部分分割為 HTML。
 
 ## 結論
 

@@ -9,13 +9,13 @@ url: /hu/net/working-with-markdown/ordered-list/
 ---
 ## Bevezetés
 
-Tehát úgy döntött, hogy belevág az Aspose.Words for .NET-be, hogy elképesztő Word-dokumentumokat készítsen programozottan. Fantasztikus választás! Ma azt fogjuk lebontani, hogyan lehet rendezett listát létrehozni egy Word-dokumentumban. Lépésről lépésre haladunk, így akár kezdő kódoló, akár tapasztalt profi vagy, ezt az útmutatót rendkívül hasznosnak találod. Kezdjük el!
+Tehát úgy döntött, hogy belevág az Aspose.Words for .NET-be, hogy elképesztő Word-dokumentumokat készítsen programozottan. Fantasztikus választás! Ma azt fogjuk lebontani, hogyan lehet rendezett listát létrehozni egy Word-dokumentumban. Lépésről lépésre haladunk, így akár kezdő kódoló, akár tapasztalt profi vagy, ezt az útmutatót rendkívül hasznosnak találod. Kezdjük is!
 
 ## Előfeltételek
 
 Mielőtt belemerülnénk a kódba, néhány dologra lesz szüksége:
 
-1.  Aspose.Words for .NET: Győződjön meg arról, hogy az Aspose.Words for .NET telepítve van. Ha nem, akkor letöltheti[itt](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Győződjön meg arról, hogy az Aspose.Words for .NET telepítve van. Ha nem, akkor letöltheti[itt](https://releases.aspose.com/words/net/).
 2. Fejlesztői környezet: Visual Studio vagy bármely más .NET-kompatibilis IDE.
 3. Alapvető C# ismerete: Kényelmesnek kell lennie a C# alapjaival, hogy könnyen követhesse.
 
@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.Lists;
 ```
 
-Bontsuk fel a kódot falatnyi lépésekre, és magyarázzuk el az egyes részeket. Kész? Essünk neki!
+Bontsuk fel a kódot falatnyi lépésekre, és magyarázzuk el az egyes részeket. Kész? tessék!
 
 ## 1. lépés: Inicializálja a dokumentumot
 
@@ -82,7 +82,7 @@ A Word-dokumentumban rendezett lista programozott létrehozása elsőre ijesztő
 ## GYIK
 
 ### Testreszabhatom a lista számozási stílusát?  
- Igen, testreszabhatja a számozási stílust a`ListFormat` tulajdonságait. Különféle számozási stílusokat állíthat be, például római számokat, betűket stb.
+ Igen, testreszabhatja a számozási stílust a`ListFormat`tulajdonságait. Különféle számozási stílusokat állíthat be, például római számokat, betűket stb.
 
 ### Hogyan adhatok hozzá több behúzási szintet?  
  Használhatja a`ListIndent` módszerrel többször is mélyebb szintű allisták létrehozásához. Minden hívás`ListIndent` hozzáad egy szint behúzást.

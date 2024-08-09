@@ -32,7 +32,7 @@ Dividamos el proceso en pasos simples y f√°ciles de seguir. Cada paso le ayudar√
 
 ## Paso 1: cargue el documento
 
- Para comenzar, cargue el documento de Word que contiene los comentarios. Utilizar el`Document` clase para esto.
+ Para comenzar, cargue el documento de Word que contiene los comentarios. Utilice el`Document` clase para esto.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

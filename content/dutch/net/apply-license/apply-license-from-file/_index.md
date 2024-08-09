@@ -9,14 +9,14 @@ url: /nl/net/apply-license/apply-license-from-file/
 ---
 ## Invoering
 
-Hallo daar! Als je in de wereld van Aspose.Words voor .NET duikt, staat je iets lekkers te wachten. Met deze krachtige bibliotheek kunt u programmatisch Word-documenten maken, bewerken en converteren. Maar voordat u aan de slag gaat, is het essentieel om te weten hoe u een licentie van een bestand kunt toepassen om het volledige potentieel ervan te benutten. In deze handleiding leiden we u stap voor stap door het proces, zodat u uw licentie snel en efficiënt kunt instellen.
+Hé daar! Als je in de wereld van Aspose.Words voor .NET duikt, staat je iets lekkers te wachten. Met deze krachtige bibliotheek kunt u programmatisch Word-documenten maken, bewerken en converteren. Maar voordat u aan de slag gaat, is het essentieel om te weten hoe u een licentie van een bestand kunt toepassen om het volledige potentieel ervan te benutten. In deze handleiding leiden we u stap voor stap door het proces, zodat u uw licentie snel en efficiënt kunt instellen.
 
 ## Vereisten
 
 Voordat we ingaan op de details, moeten we ervoor zorgen dat je alles hebt wat je nodig hebt:
 
 1.  Aspose.Words voor .NET-bibliotheek: u kunt het downloaden van de[Aspose-releasespagina](https://releases.aspose.com/words/net/).
-2.  Geldig Aspose-licentiebestand: Als u er nog geen heeft, kunt u een gratis proefversie krijgen van[hier](https://releases.aspose.com/) of koop er een bij[hier](https://purchase.aspose.com/buy).
+2.  Geldig Aspose-licentiebestand: als u er nog geen heeft, kunt u een gratis proefversie krijgen van[hier](https://releases.aspose.com/) of koop er een bij[hier](https://purchase.aspose.com/buy).
 3. Ontwikkelomgeving: een IDE zoals Visual Studio.
 4. Basiskennis van C#: dit zal u helpen de codevoorbeelden te volgen.
 

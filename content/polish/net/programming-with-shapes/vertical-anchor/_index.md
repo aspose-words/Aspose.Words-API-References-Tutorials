@@ -15,7 +15,7 @@ Czy zdarzyło Ci się kiedyś kontrolować, gdzie dokładnie pojawia się tekst 
 
 Zanim zagłębimy się w podstawy kotwienia pionowego, musisz przygotować kilka rzeczy:
 
-1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words dla .NET. Jeśli jeszcze tego nie masz, możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words dla .NET. Jeśli jeszcze tego nie masz, możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. Visual Studio: w tym samouczku założono, że do kodowania używasz programu Visual Studio lub innego środowiska .NET IDE.
 3. Podstawowa znajomość języka C#: Znajomość języków C# i .NET ułatwi Ci płynne wykonywanie zadań.
 
@@ -62,7 +62,7 @@ Tutaj dzieje się magia! Można ustawić pionowe wyrównanie tekstu w polu tekst
 textBox.TextBox.VerticalAnchor = TextBoxAnchor.Bottom;
 ```
 
- W tym przypadku,`TextBoxAnchor.Bottom`gwarantuje, że tekst zostanie zakotwiczony u dołu pola tekstowego. Jeśli chcesz, aby był wyśrodkowany lub wyrównany do góry, użyłbyś`TextBoxAnchor.Center` Lub`TextBoxAnchor.Top`odpowiednio.
+ W tym przypadku`TextBoxAnchor.Bottom`gwarantuje, że tekst zostanie zakotwiczony u dołu pola tekstowego. Jeśli chcesz, aby był wyśrodkowany lub wyrównany do góry, użyłbyś`TextBoxAnchor.Center` Lub`TextBoxAnchor.Top`odpowiednio.
 
 ## Krok 4: Dodaj tekst do pola tekstowego
 

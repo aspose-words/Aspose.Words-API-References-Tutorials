@@ -84,7 +84,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.OoxmlComplianceIso29500_2008_Str
 
 ## Çözüm
 
-İşte aldın! Aspose.Words for .NET'i kullanarak bir Word belgesini OOXML ISO 29500_2008_Strict ile uyumlu olacak şekilde başarıyla yapılandırdınız. Bu kılavuz, belge dizininizi ayarlama, belgeyi yükleme, Word 2016 için optimize etme, uyumluluk düzeyini ayarlama ve belgeyi kaydetme konusunda size yol gösterdi. Artık belgelerinizin en yüksek uyumluluk standartlarını kolaylıkla karşıladığından emin olmaya hazırsınız.
+İşte burada! Aspose.Words for .NET'i kullanarak bir Word belgesini OOXML ISO 29500_2008_Strict ile uyumlu olacak şekilde başarıyla yapılandırdınız. Bu kılavuz, belge dizininizi ayarlama, belgeyi yükleme, Word 2016 için optimize etme, uyumluluk düzeyini ayarlama ve belgeyi kaydetme konusunda size yol gösterdi. Artık belgelerinizin en yüksek uyumluluk standartlarını kolaylıkla karşıladığından emin olmaya hazırsınız.
 
 ## SSS'ler
 

@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /ja/net/working-with-node/enumerate-child-nodes/
 ---
+## 導入
 
 適切なツールを使用すれば、プログラムによるドキュメントの操作は簡単です。Aspose.Words for .NET は、開発者が Word ドキュメントを簡単に操作できるようにする強力なライブラリの 1 つです。今日は、Aspose.Words for .NET を使用して Word ドキュメント内の子ノードを列挙するプロセスについて説明します。このステップ バイ ステップ ガイドでは、前提条件から実際の例まですべてをカバーし、プロセスをしっかりと理解できるようにします。
 
@@ -88,17 +89,17 @@ Aspose.Words for .NET を使用して Word 文書内の子ノードを列挙す�
 
 ## よくある質問
 
-### 1. 段落にはどのような種類のノードを含めることができますか?
+### 段落にはどのような種類のノードを含めることができますか?
 段落には、実行、図形、コメント、その他のインライン要素などのノードを含めることができます。
 
-### 2. 既存の Word 文書を読み込むにはどうすればいいですか?
+### 既存の Word 文書を読み込むにはどうすればよいですか?
 既存の文書を読み込むには、`Document doc = new Document("path/to/your/document.docx");`.
 
-### 3. 実行以外のノード タイプを操作できますか?
+### 実行以外のノードタイプを操作できますか?
 はい、シェイプやコメントなどのさまざまなノードタイプを、チェックすることで操作できます。`NodeType`.
 
-### 4. Aspose.Words for .NET を使用するにはライセンスが必要ですか?
+### Aspose.Words for .NET を使用するにはライセンスが必要ですか?
 無料トライアルから始めるか、一時ライセンスを取得してください。[ここ](https://purchase.aspose.com/temporary-license/).
 
-### 5. その他の例やドキュメントはどこで見つかりますか?
-訪問[Aspose.Words for .NET API ドキュメント](https://reference.aspose.com/words/net/)さらなる例と詳細なドキュメントについては、こちらをご覧ください。
+### その他の例やドキュメントはどこで見つかりますか?
+訪問する[Aspose.Words for .NET API ドキュメント](https://reference.aspose.com/words/net/)さらなる例と詳細なドキュメントについては、こちらをご覧ください。

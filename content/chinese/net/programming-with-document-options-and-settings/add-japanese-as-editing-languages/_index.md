@@ -40,7 +40,7 @@ using Aspose.Words.Loading;
 LoadOptions loadOptions = new LoadOptions();
 ```
 
-这`LoadOptions`类允许您自定义文档的加载方式。这里，我们才刚刚开始使用它。
+这`LoadOptions`类允许您自定义文档的加载方式。这里我们才刚刚开始使用它。
 
 ## 第 2 步：添加日语作为编辑语言
 
@@ -99,7 +99,7 @@ Console.WriteLine(
 是的，您需要获得商业使用许可。您可以购买一个[这里](https://purchase.aspose.com/buy)或获得临时执照[这里](https://purchase.aspose.com/temporary-license/).
 
 ### Aspose.Words for .NET 还提供哪些其他功能？
- Aspose.Words for .NET 提供广泛的功能，包括文档生成、转换、操作等。查看[文档](https://reference.aspose.com/words/net/)更多细节。
+ Aspose.Words for .NET 提供广泛的功能，包括文档生成、转换、操作等。查看[文档](https://reference.aspose.com/words/net/)了解更多详情。
 
 ### 我可以在购买之前试用 Aspose.Words for .NET 吗？
 当然可以！您可以下载免费试用版[这里](https://releases.aspose.com/).

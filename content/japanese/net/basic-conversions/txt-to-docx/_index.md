@@ -65,4 +65,4 @@ Aspose.Words はパフォーマンスが最適化されており、大きなテ�
 はい、Aspose.Words API を使用して複数のテキスト ファイルをバッチ処理し、ドキュメント変換タスクを効率化できます。
 
 ### Aspose.Words に関するその他のリソースやサポートはどこで見つかりますか?
-訪問[Aspose.Words ドキュメント](https://reference.aspose.com/words/net/)そして[サポートフォーラム](https://forum.aspose.com/c/words/8)詳しい情報とサポートについては、こちらをご覧ください。
+訪問する[Aspose.Words ドキュメント](https://reference.aspose.com/words/net/)そして[サポートフォーラム](https://forum.aspose.com/c/words/8)詳しい情報とサポートについては、こちらをご覧ください。

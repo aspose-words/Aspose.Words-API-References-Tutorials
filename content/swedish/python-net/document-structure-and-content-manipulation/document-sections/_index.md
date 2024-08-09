@@ -2,7 +2,7 @@
 title: Hantera dokumentsektioner och layout
 linktitle: Hantera dokumentsektioner och layout
 second_title: Aspose.Words Python Document Management API
-description: Lär dig hur du hanterar dokumentsektioner och layouter med Aspose.Words för Python. Skapa, ändra avsnitt, anpassa layouter och mer. Börja nu!
+description: Lär dig hur du hanterar dokumentsektioner och layouter med Aspose.Words för Python. Skapa, ändra avsnitt, anpassa layouter och mer. Kom igång nu!
 type: docs
 weight: 24
 url: /sv/python-net/document-structure-and-content-manipulation/document-sections/

@@ -15,8 +15,8 @@ Estos tutoriales le brindan un enfoque práctico paso a paso para el procesamien
  ## Tutoriales
 | Título | Descripción |
 | --- | --- |
-| [Insertar objeto Ole en un documento de Word](./insert-ole-object/) | Aprenda a insertar un objeto OLE en un documento de Word usando Aspose.Words para .NET. |
-| [Insertar objeto Ole en Word con el paquete Ole](./insert-ole-object-with-ole-package/) | Aprenda a insertar un objeto OLE en Word con un paquete OLE en un documento usando Aspose.Words para .NET. |
-| [Insertar objeto Ole en un documento de Word como icono](./insert-ole-object-as-icon/) | Aprenda a insertar un objeto OLE en un documento de Word como icono con Aspose.Words para .NET. |
-| [Insertar objeto Ole como icono usando Stream](./insert-ole-object-as-icon-using-stream/) | Aprenda a insertar un objeto OLE como icono usando una secuencia con Aspose.Words para .NET. |
-| [Leer las propiedades de Active XControl desde un archivo de Word](./read-active-xcontrol-properties/) | Lea las propiedades de los controles ActiveX en un archivo de Word con Aspose.Words para .NET. |
+| [Insertar objeto Ole en un documento de Word](./insert-ole-object/) | Aprenda cómo insertar objetos OLE en documentos de Word usando Aspose.Words para .NET con esta guía paso a paso. Mejore sus documentos con contenido incrustado. |
+| [Insertar objeto Ole en Word con el paquete Ole](./insert-ole-object-with-ole-package/) | Aprenda a insertar objetos OLE en documentos de Word usando Aspose.Words para .NET. Siga nuestra guía detallada paso a paso para incrustar archivos sin problemas. |
+| [Insertar objeto Ole en un documento de Word como icono](./insert-ole-object-as-icon/) | Aprenda a insertar un objeto OLE como icono en documentos de Word usando Aspose.Words para .NET. Siga nuestra guía paso a paso para mejorar sus documentos. |
+| [Insertar objeto Ole como icono usando Stream](./insert-ole-object-as-icon-using-stream/) | Aprenda cómo insertar un objeto OLE como icono usando una secuencia con Aspose.Words para .NET en este tutorial detallado paso a paso. |
+| [Leer las propiedades de Active XControl desde un archivo de Word](./read-active-xcontrol-properties/) | Aprenda a leer las propiedades de control ActiveX de archivos de Word usando Aspose.Words para .NET en una guía paso a paso. Mejore sus habilidades de automatización de documentos. |

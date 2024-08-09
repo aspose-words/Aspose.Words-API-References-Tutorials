@@ -9,7 +9,7 @@ url: /sv/net/join-and-append-documents/append-with-import-format-options/
 ---
 ## Introduktion
 
-Hallå där! Har du någonsin funnit dig själv i behov av att slå samman flera Word-dokument till ett men har fastnat med de där irriterande formateringsproblemen? Frukta inte! Idag går vi djupt in på hur du kan lägga till ett Word-dokument till ett annat med Aspose.Words för .NET samtidigt som du håller formateringen snygg och snygg. Spänn fast dig, för i slutet av den här guiden kommer du att bli en maestro för dokumentsammanslagningar!
+Hej där! Har du någonsin funnit dig själv i behov av att slå samman flera Word-dokument till ett men har fastnat med de där irriterande formateringsproblemen? Var inte rädd! Idag går vi djupt in på hur du kan lägga till ett Word-dokument till ett annat med Aspose.Words för .NET samtidigt som du håller formateringen snygg och snygg. Spänn fast dig, för i slutet av den här guiden kommer du att bli en maestro för dokumentsammanslagningar!
 
 ## Förutsättningar
 
@@ -39,7 +39,7 @@ Varje resa börjar med ett första steg, och här anger den din dokumentkatalog.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där dina dokument lagras. Det är här vi kommer att hämta våra käll- och destinationsdokument ifrån.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där dina dokument lagras. Det är här vi kommer att hämta våra käll- och destinationsdokument ifrån.
 
 ## Steg 2: Ladda käll- och måldokumenten
 
@@ -72,7 +72,7 @@ Dags att få ihop allt! Vi lägger till källdokumentet till måldokumentet med 
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
- Här lägger vi till`srcDoc` till`dstDoc` använder destinationsstilar. De`options` parametern säkerställer att våra formateringsregler tillämpas.
+ Här, vi lägger till`srcDoc` till`dstDoc` använder destinationsstilar. De`options` parametern säkerställer att våra formateringsregler tillämpas.
 
 ## Steg 5: Spara det sammanslagna dokumentet
 

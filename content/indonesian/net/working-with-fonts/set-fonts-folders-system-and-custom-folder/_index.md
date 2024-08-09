@@ -2,99 +2,112 @@
 title: Atur Sistem Folder Font Dan Folder Kustom
 linktitle: Atur Sistem Folder Font Dan Folder Kustom
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Panduan langkah demi langkah untuk mengatur sistem dan folder font khusus saat merender dokumen menggunakan Aspose.Words untuk .NET.
+description: Pelajari cara mengatur folder sistem dan font kustom di dokumen Word menggunakan Aspose.Words untuk .NET, memastikan dokumen Anda ditampilkan dengan benar di berbagai lingkungan.
 type: docs
 weight: 10
 url: /id/net/working-with-fonts/set-fonts-folders-system-and-custom-folder/
 ---
+## Perkenalan
 
-Dalam tutorial ini, kami akan memandu Anda melalui proses langkah demi langkah untuk mengatur folder font sistem dan folder kustom saat merender dokumen menggunakan Aspose.Words untuk .NET. Kami akan menjelaskan paket kode sumber C# dan memberi Anda panduan komprehensif untuk membantu Anda memahami dan menerapkan fitur ini dalam proyek Anda sendiri. Di akhir tutorial ini, Anda akan mengetahui cara menentukan beberapa folder font, termasuk folder sistem dan folder kustom, untuk digunakan saat merender dokumen Anda menggunakan Aspose.Words untuk .NET.
+Bayangkan Anda membuat dokumen dengan gaya font yang unik, hanya untuk mengetahui bahwa font tersebut tidak ditampilkan dengan benar di komputer lain. Membuat frustrasi, bukan? Di sinilah konfigurasi folder font berperan. Dengan Aspose.Words untuk .NET, Anda dapat menentukan sistem dan folder font khusus untuk memastikan dokumen Anda selalu terlihat sebagaimana mestinya. Mari selami bagaimana Anda dapat mencapai hal ini.
 
-## Langkah 1: Tentukan direktori dokumen
-Pertama, Anda perlu menyetel jalur ke direktori dokumen Anda. Ini adalah lokasi di mana Anda ingin menyimpan dokumen hasil editan Anda. Ganti "DIREKTORI DOKUMEN ANDA" dengan jalur yang sesuai.
+## Prasyarat
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Sebelum kita mulai, pastikan Anda memiliki yang berikut ini:
 
-## Langkah 2: Muat dokumen yang akan dirender
- Kemudian Anda dapat memuat dokumen untuk dirender menggunakan`Document` kelas. Pastikan untuk menentukan jalur dokumen yang benar.
+-  Aspose.Words untuk .NET Library: Jika Anda belum melakukannya, unduhlah[Di Sini](https://releases.aspose.com/words/net/).
+- Lingkungan Pengembangan: IDE seperti Visual Studio.
+- Pengetahuan Dasar C#: Keakraban dengan C# akan membantu Anda mengikuti contoh kode.
 
-```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
-```
+## Impor Namespace
 
-## Langkah 3: Atur sistem dan folder font khusus
- Sekarang Anda dapat mengatur folder font sistem dan folder khusus menggunakan`FontSettings` kelas dan`SetFontsSources()` metode. Pertama, Anda perlu mengambil daftar sumber font yang bergantung pada lingkungan menggunakan`GetFontsSources()` dan menyimpannya dalam daftar. Kemudian Anda dapat membuat instance baru`FolderFontSource` menentukan jalur ke folder khusus yang berisi font Anda. Tambahkan contoh ini ke daftar sumber font yang ada. Terakhir, gunakan`SetFontsSources()` untuk memperbarui sumber font dengan daftar baru.
+Pertama, impor namespace yang diperlukan dalam proyek Anda:
 
 ```csharp
-FontSettings fontSettings = new FontSettings();
-List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-fontSources.Add(folderFontSource);
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
-fontSettings.SetFontsSources(updatedFontSources);
+using System;
+using System.Collections.Generic;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Langkah 4: Terapkan Pengaturan Font
- Selanjutnya, Anda perlu menerapkan pengaturan font ke dokumen Anda menggunakan`FontSettings` properti dari`Document` kelas.
+Sekarang, mari kita bagi prosesnya menjadi langkah-langkah sederhana.
 
-```csharp
-doc.FontSettings = fontSettings;
-```
+## Langkah 1: Muat Dokumen
 
-## Langkah 5: Simpan dokumen yang dirender
-Terakhir, Anda dapat menyimpan dokumen yang dirender ke file dengan
-
-   menggunakan`Save()` metode`Document` kelas. Pastikan untuk menentukan jalur dan nama file yang benar.
-
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
-```
-
-### Contoh kode sumber untuk Mengatur Sistem Folder Font dan Folder Kustom menggunakan Aspose.Words untuk .NET 
+ Untuk memulai, muat dokumen Word Anda ke dalam Aspose.Words`Document` obyek. Dokumen ini akan menjadi dokumen tempat Anda ingin mengatur folder font.
 
 ```csharp
 // Jalur ke direktori dokumen Anda
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Langkah 2: Inisialisasi Pengaturan Font
+
+ Buat instance baru dari`FontSettings`. Objek ini memungkinkan Anda mengelola sumber font.
+
+```csharp
 FontSettings fontSettings = new FontSettings();
-// Ambil rangkaian sumber font yang bergantung pada lingkungan yang dicari secara default.
-// Misalnya ini akan berisi sumber "Windows\Fonts\" pada mesin Windows.
-// Kami menambahkan array ini ke Daftar baru untuk membuat penambahan atau penghapusan entri font menjadi lebih mudah.
+```
+
+## Langkah 3: Ambil Sumber Font Sistem
+
+Ambil sumber font sistem default. Pada mesin Windows, ini biasanya mencakup file "Windows\Fonts\" direktori.
+
+```csharp
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-// Tambahkan folder baru sumber yang akan menginstruksikan Aspose.Words untuk mencari font di folder berikut.
+```
+
+## Langkah 4: Tambahkan Folder Font Kustom
+
+Tambahkan folder khusus yang berisi font tambahan Anda. Ini berguna jika Anda memiliki font tertentu yang tidak diinstal di direktori font sistem.
+
+```csharp
 FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
-// Tambahkan folder khusus yang berisi font kami ke daftar sumber font yang ada.
 fontSources.Add(folderFontSource);
+```
+
+## Langkah 5: Perbarui Sumber Font
+
+ Konversikan daftar sumber font kembali ke array dan atur ke`FontSettings` obyek.
+
+```csharp
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 fontSettings.SetFontsSources(updatedFontSources);
+```
+
+## Langkah 6: Terapkan Pengaturan Font ke Dokumen
+
+ Terakhir, terapkan yang dikonfigurasi`FontSettings` ke dokumen Anda dan simpan dalam format yang Anda inginkan, seperti PDF.
+
+```csharp
 doc.FontSettings = fontSettings;
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 ```
 
 ## Kesimpulan
-Dalam tutorial ini, kita mempelajari cara mengatur folder font sistem dan folder kustom saat merender dokumen menggunakan Aspose.Words untuk .NET. Dengan mengikuti panduan langkah demi langkah ini, Anda dapat dengan mudah menentukan beberapa folder font, termasuk folder sistem dan folder khusus, untuk digunakan saat merender dokumen Anda. Aspose.Words menawarkan API yang kuat dan fleksibel untuk Pemrosesan Kata dengan font di dokumen Anda. Dengan pengetahuan ini, Anda dapat mengontrol dan menyesuaikan sumber font yang digunakan saat merender dokumen sesuai kebutuhan spesifik Anda.
 
-### FAQ
+Dan itu dia! Dengan mengikuti langkah-langkah ini, Anda dapat memastikan bahwa dokumen Word Anda menggunakan font yang benar, baik font sistem atau font kustom yang disimpan di direktori tertentu. Penyiapan ini membantu menjaga integritas tampilan dokumen Anda di berbagai lingkungan.
 
-#### T: Bagaimana cara mengatur folder font sistem di Aspose.Words?
+## FAQ
 
-J: Untuk mengatur folder font sistem di Aspose.Words, Anda tidak perlu melakukan apa pun. Aspose.Words secara otomatis menggunakan font sistem yang diinstal pada sistem operasi Anda.
+### Apa yang terjadi jika font hilang di folder sistem dan folder khusus?
 
-#### T: Bagaimana cara mengatur folder font khusus di Aspose.Words?
+Aspose.Words akan menggunakan font default untuk menggantikan font yang hilang, memastikan dokumen tetap dapat dibaca.
 
- A: Untuk mengatur folder font khusus di Aspose.Words, Anda dapat menggunakan`SetFontsFolders` metode`Fonts` kelas yang menentukan lokasi folder font khusus.
+### Bisakah saya menambahkan beberapa folder font khusus?
 
-#### T: Dapatkah saya menentukan beberapa folder font khusus di Aspose.Words?
+ Ya, Anda dapat menambahkan beberapa folder font khusus dengan mengulangi proses pembuatan`FolderFontSource` objek dan menambahkannya ke daftar sumber font.
 
- J: Ya, Anda dapat menentukan beberapa folder font khusus di Aspose.Words menggunakan`SetFontsFolders` metode`Fonts` kelas dengan daftar lokasi folder.
+### Apakah mungkin menggunakan jalur jaringan untuk folder font khusus?
 
-#### T: Bagaimana cara memeriksa folder font yang ditentukan di Aspose.Words?
+ Ya, Anda dapat menentukan jalur jaringan di`FolderFontSource` konstruktor.
 
- Untuk memeriksa folder font yang ditentukan di Aspose.Words, Anda dapat menggunakan`GetFolders` metode`Fonts` kelas untuk mendapatkan daftar folder font yang dikonfigurasi.
+### Format file apa yang didukung Aspose.Words untuk menyimpan dokumen?
 
-#### T: Apakah font folder khusus lebih diprioritaskan daripada font sistem di Aspose.Words?
+Aspose.Words mendukung berbagai format, termasuk DOCX, PDF, HTML, dan lainnya.
 
-J: Ya, font folder khusus memiliki prioritas dibandingkan font sistem di Aspose.Words. Jika font ada di folder khusus dan font sistem, Aspose.Words akan menggunakan versi dari folder khusus.
+### Bagaimana cara menangani pemberitahuan penggantian font?
+
+ Anda dapat menangani pemberitahuan penggantian font dengan menggunakan`FontSettings` kelas`FontSubstitutionWarning`peristiwa.

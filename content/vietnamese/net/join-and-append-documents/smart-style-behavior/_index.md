@@ -44,7 +44,7 @@ Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-Giải trình:
+Giải thích:
  Ở đây, chúng tôi đang tải “Document source.docx” và “Northwind Traders.docx” từ thư mục được chỉ định. Đảm bảo thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế nơi tài liệu của bạn được lưu trữ.
 
 ## Bước 2: Khởi tạo DocumentBuilder
@@ -56,8 +56,8 @@ Giải trình:
 DocumentBuilder builder = new DocumentBuilder(dstDoc);
 ```
 
-Giải trình:
- Các`DocumentBuilder` là một công cụ tiện dụng cung cấp các phương pháp để điều hướng và sửa đổi tài liệu. Ở đây, chúng tôi đang gắn nó vào tài liệu đích của chúng tôi.
+Giải thích:
+ các`DocumentBuilder` là một công cụ tiện dụng cung cấp các phương pháp để điều hướng và sửa đổi tài liệu. Ở đây, chúng tôi đang gắn nó vào tài liệu đích của chúng tôi.
 
 ## Bước 3: Di chuyển đến cuối tài liệu và chèn ngắt trang
 
@@ -71,7 +71,7 @@ builder.MoveToDocumentEnd();
 builder.InsertBreak(BreakType.PageBreak);
 ```
 
-Giải trình:
+Giải thích:
 Bằng cách di chuyển đến cuối tài liệu và chèn dấu ngắt trang, chúng tôi đảm bảo rằng nội dung mới bắt đầu trên một trang mới, duy trì cấu trúc rõ ràng và có tổ chức.
 
 ## Bước 4: Đặt hành vi phong cách thông minh
@@ -83,7 +83,7 @@ Bằng cách di chuyển đến cuối tài liệu và chèn dấu ngắt trang,
 ImportFormatOptions options = new ImportFormatOptions { SmartStyleBehavior = true };
 ```
 
-Giải trình:
+Giải thích:
 `SmartStyleBehavior` đảm bảo rằng các kiểu từ tài liệu nguồn được tích hợp trơn tru vào tài liệu đích, tránh mọi xung đột về kiểu.
 
 ## Bước 5: Chèn tài liệu nguồn vào tài liệu đích
@@ -95,7 +95,7 @@ Cuối cùng, hãy chèn tài liệu nguồn vào tài liệu đích bằng các
 builder.InsertDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
-Giải trình:
+Giải thích:
 Lệnh này hợp nhất tài liệu nguồn vào tài liệu đích ở vị trí hiện tại (là cuối, sau khi ngắt trang) và nó sử dụng kiểu của tài liệu đích trong khi áp dụng các kiểu nguồn một cách thông minh khi cần thiết.
 
 ## Bước 6: Lưu tài liệu kết hợp
@@ -107,7 +107,7 @@ Cuối cùng nhưng không kém phần quan trọng, chúng tôi lưu tài liệ
 builder.Document.Save(dataDir + "JoinAndAppendDocuments.SmartStyleBehavior.docx");
 ```
 
-Giải trình:
+Giải thích:
 Chúng tôi đang lưu sản phẩm cuối cùng dưới dạng “JoinAndAppendDocuments.SmartStyleBehavior.docx” trong thư mục được chỉ định. Bây giờ bạn đã có một tài liệu được hợp nhất hoàn hảo với các kiểu được giữ nguyên!
 
 ## Phần kết luận

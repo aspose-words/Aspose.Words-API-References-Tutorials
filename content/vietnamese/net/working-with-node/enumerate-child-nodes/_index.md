@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /vi/net/working-with-node/enumerate-child-nodes/
 ---
+## Giới thiệu
 
 Làm việc với các tài liệu theo chương trình có thể trở nên dễ dàng với các công cụ phù hợp. Aspose.Words for .NET là một trong những thư viện mạnh mẽ cho phép các nhà phát triển thao tác với tài liệu Word một cách dễ dàng. Hôm nay, chúng ta sẽ hướng dẫn quy trình liệt kê các nút con trong tài liệu Word bằng Aspose.Words cho .NET. Hướng dẫn từng bước này sẽ bao gồm mọi thứ từ điều kiện tiên quyết đến ví dụ thực tế, đảm bảo bạn có hiểu biết vững chắc về quy trình.
 
@@ -88,17 +89,17 @@ Việc liệt kê các nút con trong tài liệu Word bằng Aspose.Words cho .
 
 ## Câu hỏi thường gặp
 
-### 1. Một đoạn văn có thể chứa những loại nút nào?
+### Đoạn văn có thể chứa những loại nút nào?
 Một đoạn văn có thể chứa các nút như lượt chạy, hình dạng, nhận xét và các thành phần nội tuyến khác.
 
-### 2. Làm cách nào để tải tài liệu Word hiện có?
+### Làm cách nào tôi có thể tải tài liệu Word hiện có?
  Bạn có thể tải một tài liệu hiện có bằng cách sử dụng`Document doc = new Document("path/to/your/document.docx");`.
 
-### 3. Tôi có thể thao tác với các loại nút khác ngoài Run không?
+### Tôi có thể thao tác với các loại nút khác ngoài Run không?
  Có, bạn có thể thao tác với nhiều loại nút khác nhau như hình dạng, nhận xét, v.v. bằng cách kiểm tra chúng`NodeType`.
 
-### 4. Tôi có cần giấy phép để sử dụng Aspose.Words cho .NET không?
-Bạn có thể bắt đầu với bản dùng thử miễn phí hoặc nhận giấy phép tạm thời từ[đây](https://purchase.aspose.com/temporary-license/).
+### Tôi có cần giấy phép để sử dụng Aspose.Words cho .NET không?
+ Bạn có thể bắt đầu với bản dùng thử miễn phí hoặc nhận giấy phép tạm thời từ[đây](https://purchase.aspose.com/temporary-license/).
 
-### 5. Tôi có thể tìm thêm ví dụ và tài liệu ở đâu?
- Tham quan[Tài liệu Aspose.Words cho .NET API](https://reference.aspose.com/words/net/) để biết thêm ví dụ và tài liệu chi tiết.
+### Tôi có thể tìm thêm ví dụ và tài liệu ở đâu?
+ Ghé thăm[Tài liệu Aspose.Words cho .NET API](https://reference.aspose.com/words/net/)để biết thêm ví dụ và tài liệu chi tiết.

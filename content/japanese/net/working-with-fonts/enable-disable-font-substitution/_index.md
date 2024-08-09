@@ -2,88 +2,115 @@
 title: フォント置換を有効/無効にする
 linktitle: フォント置換を有効/無効にする
 second_title: Aspose.Words ドキュメント処理 API
-description: このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書でフォントの置換を有効または無効にする方法を学習します。
+description: Aspose.Words for .NET を使用して、Word 文書でフォントの置換を有効または無効にする方法を学びます。すべてのプラットフォームで文書の外観が一貫していることを確認します。
 type: docs
 weight: 10
 url: /ja/net/working-with-fonts/enable-disable-font-substitution/
 ---
-このチュートリアルでは、.NET 用の Aspose.Words ライブラリを使用して Word 文書をレンダリングするときに、フォントの置換を有効または無効にする方法を説明します。フォントの置換を有効または無効にすることで、不足しているフォントを既定のフォントに自動的に置き換えるかどうかを制御できます。.NET プロジェクトでコードを理解して実装できるように、手順を追って説明します。
+## 導入
+
+Word 文書で慎重に選択したフォントが、別のコンピューターで表示したときに置き換えられてしまう状況に遭遇したことはありませんか? イライラしますよね? これは、不足しているフォントを使用可能なフォントに置き換えるプロセスであるフォント置換によって発生します。しかし、心配はいりません! Aspose.Words for .NET を使用すると、フォント置換を簡単に管理および制御できます。このチュートリアルでは、Word 文書でフォント置換を有効または無効にする手順を順を追って説明し、文書が常に希望どおりに表示されるようにします。
 
 ## 前提条件
-始める前に、次のものが揃っていることを確認してください。
-- C#プログラミング言語の実用的な知識
-- プロジェクトにインストールされた .NET 用の Aspose.Words ライブラリ
-- フォント置換の有無にかかわらずレンダリングする Word 文書
 
-## ステップ1: ドキュメントディレクトリを定義する
-まず、Word文書の場所にディレクトリパスを設定する必要があります。`"YOUR DOCUMENT DIRECTORY"`コード内に適切なパスを追加します。
+手順に進む前に、必要なものがすべて揃っていることを確認しましょう。
+
+-  Aspose.Words for .NET: 最新バージョンをダウンロード[ここ](https://releases.aspose.com/words/net/).
+- Visual Studio: .NET をサポートする任意のバージョン。
+- C# の基礎知識: コーディング例を理解するのに役立ちます。
+
+## 名前空間のインポート
+
+まず、プロジェクトに必要な名前空間がインポートされていることを確認します。これらを C# ファイルの先頭に追加します。
 
 ```csharp
-//ドキュメントディレクトリへのパス
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## ステップ2: ドキュメントをアップロードし、フォント設定を構成する
-次に、レンダリングしたいWord文書を読み込み、`FontSettings`フォント設定を扱うクラスです。フォント名を指定してデフォルトのフォントオーバーライドを設定します。`DefaultFontName`フォント情報の上書きを無効にする`Enabled`に設定`false`.
+それでは、プロセスをシンプルで管理しやすいステップに分解してみましょう。
+
+## ステップ1: プロジェクトを設定する
+
+まず、Visual Studioで新しいプロジェクトを設定し、Aspose.Words for .NETライブラリへの参照を追加します。まだダウンロードしていない場合は、[Aspose ウェブサイト](https://releases.aspose.com/words/net/).
+
+## ステップ2: ドキュメントを読み込む
+
+次に、作業するドキュメントを読み込みます。手順は次のとおりです。
 
 ```csharp
-//ドキュメントを読み込む
-Document doc = new Document(dataDir + "Rendering.docx");
-
-//フォント設定を構成する
-FontSettings fontSettings = new FontSettings();
-fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
-fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
-
-//フォント設定をドキュメントに適用する
-doc.FontSettings = fontSettings;
-```
-
-## ステップ3: レンダリングされたドキュメントを保存する
-最後に、定義されたフォントオーバーライド設定を尊重したレンダリングされたドキュメントを保存します。
-
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
-```
-
-
-### Aspose.Words for .NET を使用してフォント置換を有効/無効にするサンプル ソース コード 
-
-```csharp
-
 //ドキュメントディレクトリへのパス
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
-FontSettings fontSettings = new FontSettings();
-fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
-fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
-doc.FontSettings = fontSettings;
-doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
+```
 
+交換する`"YOUR DOCUMENT DIRECTORY"`ドキュメント ディレクトリへの実際のパスを入力します。このコードはドキュメントをメモリにロードし、操作できるようにします。
+
+## ステップ3: フォント設定を構成する
+
+さて、`FontSettings`フォント置換設定を管理するオブジェクト:
+
+```csharp
+FontSettings fontSettings = new FontSettings();
+```
+
+## ステップ4: デフォルトのフォントの置換を設定する
+
+デフォルトのフォント置換を任意のフォントに設定します。元のフォントが利用できない場合は、このフォントが使用されます。
+
+```csharp
+fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
+```
+
+この例では、デフォルトのフォントとして Arial を使用しています。
+
+## ステップ5: フォント情報の置換を無効にする
+
+フォント情報の置換を無効にして、システムが不足しているフォントを使用可能なフォントに置き換えるのを停止するには、次のコードを使用します。
+
+```csharp
+fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
+```
+
+## ステップ6: ドキュメントにフォント設定を適用する
+
+次に、これらの設定をドキュメントに適用します。
+
+```csharp
+doc.FontSettings = fontSettings;
+```
+
+## ステップ7: ドキュメントを保存する
+
+最後に、変更したドキュメントを保存します。任意の形式で保存できます。このチュートリアルでは、PDF として保存します。
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 ```
 
 ## 結論
-このチュートリアルでは、Aspose.Words for .NET で Word 文書をレンダリングするときに、フォントの置換を有効または無効にする方法を説明しました。フォントの置換を制御することで、レンダリングされた文書で見つからないフォントの処理方法に影響を与えることができます。この機能を使用して、Word 文書のフォントの管理をカスタマイズしてください。
 
-### よくある質問
+これで完了です。これらの手順に従うと、Aspose.Words for .NET を使用して Word 文書のフォント置換を簡単に制御できます。これにより、どこで表示しても、文書の意図した外観と操作性が維持されます。
 
-#### Q: Aspose.Words を使用して Word 文書でフォントの置換を有効にするにはどうすればよいでしょうか?
+## よくある質問
 
-A: Aspose.Words を使用して Word 文書でフォントの置換を有効にするには、必要なフォントが利用できない場合に使用する代替フォントを指定する API を使用します。これにより、元のフォントがなくても一貫したテキストの視覚化が保証されます。
+### 代替として Arial 以外のフォントを使用できますか?
 
-#### Q: Aspose.Words を使用して Word 文書内のフォント置換を無効にすることは可能ですか?
+もちろんです！フォント名を変更することで、システムで利用可能なフォントを指定できます。`DefaultFontName`財産。
 
-A: はい、Aspose.Words を使用すると、Word 文書内のフォントの置換を無効にすることができます。API を使用すると、Word が必要なフォントを他のフォントに置き換えるのを防ぐことができ、テキストの元の外観が維持されます。
+### 指定されたデフォルトのフォントが利用できない場合はどうなりますか?
 
-#### Q: Word 文書で置換時に必要なフォントが見つからない場合はどうなりますか?
+既定のフォントが使用できない場合、Aspose.Words はシステム フォールバック メカニズムを使用して適切な代替フォントを検索します。
 
-A: Word 文書で必要なフォントを置換するときに見つからない場合、Aspose.Words はこの問題を検出し、修正オプションを提供します。見つからないフォントを代替フォントで置き換えるか、見つからないフォントを文書に含めるかを選択して、正しく表示されるようにすることができます。
+### フォントの置換を無効にした後、再度有効にすることはできますか?
 
-#### Q: Aspose.Words を使用して Word 文書でフォントを置換するときに、不足しているフォントをどのように処理すればよいですか?
+はい、切り替えることができます`Enabled`の所有物`FontInfoSubstitution`戻る`true`フォントの置換を再度有効にしたい場合。
 
-A: Aspose.Words を使用して Word 文書でフォントを置換するときに不足しているフォントを処理するには、不足しているフォントを検出し、解決オプションを提供する API を使用します。必要に応じて、不足しているフォントを代替フォントで置き換えるか、不足しているフォントを文書に含めるかを選択できます。
+### どのフォントが置き換えられているかを確認する方法はありますか?
 
-#### Q: Word 文書でフォントの置換を制御することは重要ですか?
+はい、Aspose.Words にはフォントの置換をログに記録して追跡するメソッドが用意されており、どのフォントが置換されるかを確認できます。
 
-A: はい、テキストの視覚的な整合性を維持するために、Word 文書のフォントの置換を制御することが重要です。Aspose.Words を使用してフォントの置換を有効または無効にすることで、必要なフォントが確実に使用され、フォントの欠落や置換による問題を回避できます。
+### この方法は DOCX 以外のドキュメント形式にも使用できますか?
+
+もちろんです! Aspose.Words はさまざまな形式をサポートしており、サポートされている形式にこれらのフォント設定を適用できます。

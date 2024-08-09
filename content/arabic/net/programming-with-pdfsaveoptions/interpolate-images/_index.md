@@ -24,7 +24,7 @@ url: /ar/net/programming-with-pdfsaveoptions/interpolate-images/
 
 ## استيراد مساحات الأسماء
 
-للبدء، تحتاج إلى استيراد مساحات الأسماء الضرورية إلى مشروع C# الخاص بك. إليك الطريقة:
+للبدء، تحتاج إلى استيراد مساحات الأسماء الضرورية إلى مشروع C# الخاص بك. وإليك الطريقة:
 
 ```csharp
 using Aspose.Words;
@@ -69,7 +69,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 
 ## الخطوة 4: احفظ المستند كملف PDF
 
- بعد تكوين الخيارات، حان الوقت لحفظ المستند الخاص بك كملف PDF. استخدم ال`Save` طريقة`Document` فئة، وتحديد المسار وخيارات الحفظ.
+ بعد تكوين الخيارات، حان الوقت لحفظ المستند الخاص بك كملف PDF. استخدم`Save` طريقة`Document` فئة، وتحديد المسار وخيارات الحفظ.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.InterpolateImages.pdf", saveOptions);

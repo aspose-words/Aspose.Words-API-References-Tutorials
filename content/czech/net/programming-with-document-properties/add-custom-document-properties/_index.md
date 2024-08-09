@@ -7,15 +7,15 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-document-properties/add-custom-document-properties/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Ponoříte se do světa Aspose.Words pro .NET a přemýšlíte, jak do souborů aplikace Word přidat vlastní vlastnosti dokumentu? Tak to jste na správném místě! Vlastní vlastnosti mohou být neuvěřitelně užitečné pro ukládání dalších metadat, která nejsou pokryta vestavěnými vlastnostmi. Ať už se jedná o autorizaci dokumentu, přidání čísla revize nebo dokonce vložení konkrétních dat, vlastní vlastnosti vám pomohou. V tomto tutoriálu vás provedeme kroky k bezproblémovému přidání těchto vlastností pomocí Aspose.Words for .NET. Jste připraveni začít? Pojďme se ponořit!
+Ahoj! Ponoříte se do světa Aspose.Words pro .NET a přemýšlíte, jak do souborů aplikace Word přidat vlastní vlastnosti dokumentu? Tak to jste na správném místě! Vlastní vlastnosti mohou být neuvěřitelně užitečné pro ukládání dalších metadat, která nejsou pokryta vestavěnými vlastnostmi. Ať už se jedná o autorizaci dokumentu, přidání čísla revize nebo dokonce vložení konkrétních dat, vlastní vlastnosti vám pomohou. V tomto tutoriálu vás provedeme kroky k bezproblémovému přidání těchto vlastností pomocí Aspose.Words for .NET. Jste připraveni začít? Pojďme se ponořit!
 
 ## Předpoklady
 
 Než se pustíme do kódu, ujistěte se, že máte vše, co potřebujete:
 
-1.  Knihovna Aspose.Words for .NET: Ujistěte se, že máte knihovnu Aspose.Words for .NET. Můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+1.  Knihovna Aspose.Words for .NET: Ujistěte se, že máte knihovnu Aspose.Words for .NET. Můžete si jej stáhnout[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: IDE jako Visual Studio.
 3. Základní znalost C#: Tento tutoriál předpokládá, že máte základní znalosti C# a .NET.
 4.  Ukázkový dokument: Připravte si ukázkový dokument aplikace Word s názvem`Properties.docx`, kterou budete upravovat.
@@ -119,7 +119,7 @@ Pamatujte, že klíčem ke zvládnutí Aspose.Words pro .NET je praxe. Takže po
 
 ## FAQ
 
-### Jaké jsou vlastnosti vlastních dokumentů?
+### Jaké jsou vlastnosti vlastního dokumentu?
 Vlastní vlastnosti dokumentu jsou metadata, která můžete přidat do dokumentu aplikace Word a uložit tak další informace, které nepokrývají integrované vlastnosti.
 
 ### Mohu přidat jiné vlastnosti než řetězce a čísla?

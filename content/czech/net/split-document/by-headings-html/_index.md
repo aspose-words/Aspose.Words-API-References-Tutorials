@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/split-document/by-headings-html/
 ---
-## Úvod
+## Zavedení
 
 Rozdělení dokumentu aplikace Word podle nadpisů může změnit hru pro správu velkých dokumentů nebo vytváření segmentovaných výstupů HTML. Aspose.Words for .NET poskytuje přímý způsob, jak toho dosáhnout. V tomto tutoriálu vás provedeme celým procesem a zajistíme, že na cestě pochopíte každý detail.
 
@@ -15,7 +15,7 @@ Rozdělení dokumentu aplikace Word podle nadpisů může změnit hru pro správ
 
 Než se pustíte do výukového programu, ujistěte se, že máte následující:
 
-1. Aspose.Words for .NET: Pokud jste to ještě neudělali, stáhněte si ji z[tady](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Pokud jste to ještě neudělali, stáhněte si ji z[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: IDE jako Visual Studio.
 3. Základní znalost C#: Pochopení základů vám pomůže snadno pokračovat.
 4. Ukázkový dokument: Připravte si dokument aplikace Word, který chcete rozdělit podle nadpisů.
@@ -89,10 +89,10 @@ Aspose.Words for .NET je výkonná knihovna pro práci s dokumenty Wordu v aplik
 Ano, Aspose.Words vám umožňuje rozdělit dokumenty podle různých kritérií, jako jsou sekce, stránky a další.
 
 ### Je Aspose.Words zdarma?
- Aspose.Words nabízí bezplatnou zkušební verzi, ale pro plné funkce si budete muset zakoupit licenci. Zkontrolujte jejich[koupit stránku](https://purchase.aspose.com/buy) Více podrobností.
+ Aspose.Words nabízí bezplatnou zkušební verzi, ale pro plné funkce si budete muset zakoupit licenci. Zkontrolujte jejich[koupit stránku](https://purchase.aspose.com/buy) pro více podrobností.
 
 ### Kde najdu dokumentaci?
- K dispozici je obsáhlá dokumentace[tady](https://reference.aspose.com/words/net/).
+ K dispozici je obsáhlá dokumentace[zde](https://reference.aspose.com/words/net/).
 
 ### Jak získám podporu?
- Pro podporu navštivte Aspose.Words[Fórum](https://forum.aspose.com/c/words/8).
+ Pro podporu navštivte Aspose.Words[forum](https://forum.aspose.com/c/words/8).

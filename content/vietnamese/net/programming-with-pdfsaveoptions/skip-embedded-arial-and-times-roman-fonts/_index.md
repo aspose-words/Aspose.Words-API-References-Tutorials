@@ -9,7 +9,7 @@ url: /vi/net/programming-with-pdfsaveoptions/skip-embedded-arial-and-times-roman
 ---
 ## Giới thiệu
 
-Bạn đã bao giờ gặp phải tình huống kích thước tệp PDF của bạn quá lớn chưa? Nó giống như việc chuẩn bị đồ đạc cho một kỳ nghỉ và nhận ra chiếc vali của mình đang bị bung ra ở các đường nối. Bạn biết mình cần phải giảm cân, nhưng bạn sẽ buông bỏ điều gì? Khi làm việc với các tệp PDF, đặc biệt là các tệp được chuyển đổi từ tài liệu Word, phông chữ được nhúng có thể làm tăng kích thước tệp của bạn. Rất may, Aspose.Words for .NET cung cấp một giải pháp mượt mà để giữ cho các tệp PDF của bạn gọn gàng và có ý nghĩa. Trong hướng dẫn này, chúng ta sẽ đi sâu vào cách tối ưu hóa kích thước tệp PDF của bạn bằng cách bỏ qua các phông chữ Arial và Times Roman được nhúng. Bắt đầu nào!
+Bạn đã bao giờ gặp phải tình huống kích thước tệp PDF của bạn quá lớn chưa? Nó giống như việc chuẩn bị đồ đạc cho một kỳ nghỉ và nhận ra chiếc vali của mình đang bị bung ra ở các đường nối. Bạn biết mình cần phải giảm cân, nhưng bạn sẽ buông bỏ điều gì? Khi làm việc với các tệp PDF, đặc biệt là các tệp được chuyển đổi từ tài liệu Word, phông chữ được nhúng có thể làm tăng kích thước tệp của bạn. Rất may, Aspose.Words for .NET cung cấp một giải pháp mượt mà để giữ cho các tệp PDF của bạn gọn gàng và có ý nghĩa. Trong hướng dẫn này, chúng ta sẽ đi sâu vào cách tối ưu hóa kích thước tệp PDF của bạn bằng cách bỏ qua các phông chữ Arial và Times Roman được nhúng. Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
@@ -67,7 +67,7 @@ Lệnh này lưu tài liệu của bạn dưới dạng PDF có tên "OptimizedP
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn vừa học cách tối ưu hóa kích thước tệp PDF của mình bằng cách bỏ qua việc nhúng phông chữ Arial và Times Roman bằng Aspose.Words cho .NET. Tinh chỉnh đơn giản này có thể giảm đáng kể kích thước tệp của bạn, giúp chia sẻ và lưu trữ chúng dễ dàng hơn. Nó giống như việc tập thể dục để lấy các tệp PDF của bạn, giảm bớt trọng lượng không cần thiết trong khi vẫn giữ nguyên tất cả các yếu tố cần thiết.
+Và bạn có nó! Bạn vừa học cách tối ưu hóa kích thước tệp PDF của mình bằng cách bỏ qua việc nhúng phông chữ Arial và Times Roman bằng Aspose.Words cho .NET. Tinh chỉnh đơn giản này có thể giảm đáng kể kích thước tệp của bạn, giúp chia sẻ và lưu trữ chúng dễ dàng hơn. Nó giống như việc tập thể dục để lấy các tệp PDF của bạn, giảm bớt trọng lượng không cần thiết trong khi vẫn giữ nguyên tất cả các yếu tố cần thiết.
 
 ## Câu hỏi thường gặp
 

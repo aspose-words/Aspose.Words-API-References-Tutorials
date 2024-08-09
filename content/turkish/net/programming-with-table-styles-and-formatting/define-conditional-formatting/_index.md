@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DefineConditionalFormatt
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesinde koşullu formatlamayı başarıyla tanımladınız. Bu adımları izleyerek tablolarınızdaki önemli verileri kolayca vurgulayabilir, belgelerinizi daha bilgilendirici ve görsel olarak çekici hale getirebilirsiniz. Koşullu biçimlendirme güçlü bir araçtır ve bu konuda uzmanlaşmak, belge işleme yeteneklerinizi önemli ölçüde geliştirebilir.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesinde koşullu formatlamayı başarıyla tanımladınız. Bu adımları izleyerek tablolarınızdaki önemli verileri kolayca vurgulayabilir, belgelerinizi daha bilgilendirici ve görsel olarak çekici hale getirebilirsiniz. Koşullu biçimlendirme güçlü bir araçtır ve bu konuda uzmanlaşmak, belge işleme yeteneklerinizi önemli ölçüde geliştirebilir.
 
 ## SSS'ler
 

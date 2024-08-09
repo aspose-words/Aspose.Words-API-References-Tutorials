@@ -10,13 +10,13 @@ url: /sv/net/working-with-hyphenation/hyphenation-callback/
 
 ## Introduktion
 
-Hallå där! Har du någonsin funnit dig trasslig in i textformateringens komplexitet, särskilt när du har att göra med språk som kräver avstavning? Du är inte ensam. Avstavning, även om det är avgörande för korrekt textlayout, kan vara lite av en huvudvärk. Men gissa vad? Aspose.Words för .NET har fått din rygg. Detta kraftfulla bibliotek låter dig hantera textformatering sömlöst, inklusive hantering av avstavning genom en återuppringningsmekanism. Fascinerad? Låt oss fördjupa oss i hur du kan implementera en avstavningsåteruppringning med Aspose.Words för .NET.
+Hej där! Har du någonsin funnit dig trasslig in i textformateringens komplexitet, särskilt när du har att göra med språk som kräver avstavning? Du är inte ensam. Avstavning, även om det är avgörande för korrekt textlayout, kan vara lite av en huvudvärk. Men gissa vad? Aspose.Words för .NET har fått din rygg. Detta kraftfulla bibliotek låter dig hantera textformatering sömlöst, inklusive hantering av avstavning genom en återuppringningsmekanism. Nyfiken? Låt oss fördjupa oss i hur du kan implementera en avstavningsåteruppringning med Aspose.Words för .NET.
 
 ## Förutsättningar
 
 Innan vi smutsar ner händerna med kod, låt oss se till att du har allt du behöver:
 
-1.  Aspose.Words för .NET: Se till att du har biblioteket. Du kan[ladda ner den här](https://releases.aspose.com/words/net/).
+1. Aspose.Words för .NET: Se till att du har biblioteket. Du kan[ladda ner den här](https://releases.aspose.com/words/net/).
 2. IDE: En utvecklingsmiljö som Visual Studio.
 3. Grundläggande kunskaper i C#: Förståelse av C# och .NET framework.
 4. Avstavningsordböcker: Avstavningsordböcker för de språk du planerar att använda.
@@ -58,7 +58,7 @@ Därefter måste vi definiera katalogen där våra dokument lagras. Detta är av
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till dina dokument.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till dina dokument.
 
 ## Steg 3: Ladda dokumentet
 
@@ -68,7 +68,7 @@ Låt oss nu ladda dokumentet som kräver avstavning.
 Document document = new Document(dataDir + "German text.docx");
 ```
 
- Här laddar vi ett tyskt textdokument. Du kan byta ut`"German text.docx"` med ditt dokuments filnamn.
+Här laddar vi ett tyskt textdokument. Du kan byta ut`"German text.docx"` med ditt dokuments filnamn.
 
 ## Steg 4: Spara dokumentet
 
@@ -131,7 +131,7 @@ public class CustomHyphenationCallback : IHyphenationCallback
 
 Och där har du det! Du har precis lärt dig hur man implementerar en avstavningsåteruppringning i Aspose.Words för .NET. Genom att följa dessa steg kan du säkerställa att dina dokument är vackert formaterade, oavsett språk. Oavsett om du har att göra med engelska, tyska eller något annat språk, låter den här metoden dig hantera avstavning utan ansträngning.
 
-## Vanliga frågor
+## FAQ's
 
 ### Vad är Aspose.Words för .NET?
 Aspose.Words för .NET är ett kraftfullt dokumentmanipuleringsbibliotek som låter utvecklare skapa, modifiera och konvertera dokument programmatiskt.
@@ -146,4 +146,4 @@ Avstavning förbättrar textlayouten genom att bryta ord på lämpliga platser, 
 Du kan ladda ner avstavningsordböcker från olika onlineresurser eller skapa dina egna om det behövs.
 
 ### Vad händer om en avstavningsordbok saknas?
- Om en ordbok saknas,`RequestDictionary` metod ger ett undantag, som du kan hantera för att informera användaren eller ge en reserv.
+ Om en ordbok saknas,`RequestDictionary`metod ger ett undantag, som du kan hantera för att informera användaren eller ge en reserv.

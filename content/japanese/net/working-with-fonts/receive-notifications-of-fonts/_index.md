@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /ja/net/working-with-fonts/receive-notifications-of-fonts/
 ---
-
+## 導入
 
 ドキュメントでフォントが正しく表示されないという問題に直面したことがある人は、あなただけではありません。フォント設定を管理し、フォントの置換に関する通知を受け取ることで、多くの悩みを解消できます。この包括的なガイドでは、Aspose.Words for .NET を使用してフォント通知を処理し、ドキュメントが常に最適な状態になるようにする方法について説明します。
 
@@ -113,11 +113,11 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
 
 ###  Q3: 他の種類の警告も処理できますか？`IWarningCallback`?
 
-はい`IWarningCallback`インターフェースは、フォントの置換だけでなく、さまざまな種類の警告を処理できます。
+はい、`IWarningCallback`インターフェースは、フォントの置換だけでなく、さまざまな種類の警告を処理できます。
 
 ### Q4: Aspose.Words のサポートはどこで受けられますか?
 
-訪問[Aspose.Words サポート フォーラム](https://forum.aspose.com/c/words/8)援助をお願いします。
+訪問する[Aspose.Words サポート フォーラム](https://forum.aspose.com/c/words/8)援助をお願いします。
 
 ### Q5: Aspose.Words の一時ライセンスを取得することは可能ですか?
 

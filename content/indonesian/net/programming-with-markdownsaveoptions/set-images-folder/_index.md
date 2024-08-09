@@ -79,7 +79,7 @@ MarkdownSaveOptions saveOptions = new MarkdownSaveOptions
 
 ### 2.4 Simpan Dokumen sebagai Penurunan Harga
 
- Gunakan`MemoryStream` untuk menyimpan dokumen dalam format penurunan harga.
+ Gunakan a`MemoryStream` untuk menyimpan dokumen dalam format penurunan harga.
 
 ```csharp
 using (MemoryStream stream = new MemoryStream())

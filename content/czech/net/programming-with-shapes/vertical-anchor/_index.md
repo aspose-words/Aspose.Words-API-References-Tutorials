@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-shapes/vertical-anchor/
 ---
-## Úvod
+## Zavedení
 
 Stalo se vám někdy, že jste potřebovali přesně řídit, kde se text objeví v textovém poli v dokumentu aplikace Word? Možná chcete, aby byl váš text ukotven v horní, střední nebo spodní části textového pole? Pokud ano, jste na správném místě! V tomto tutoriálu prozkoumáme, jak používat Aspose.Words pro .NET k nastavení vertikálního ukotvení textových polí v dokumentech aplikace Word. Vertikální ukotvení si představte jako kouzelnou hůlku, která umístí váš text v kontejneru přesně tam, kde ho chcete. Jste připraveni se ponořit? Začněme!
 
@@ -42,7 +42,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Tady,`Document` je vaše prázdné plátno a`DocumentBuilder` je váš štětec, který vám umožňuje přidávat tvary a text.
+ Zde,`Document` je vaše prázdné plátno a`DocumentBuilder` je váš štětec, který vám umožňuje přidávat tvary a text.
 
 ## Krok 2: Vložte tvar textového pole
 
@@ -62,7 +62,7 @@ Tady se děje kouzlo! V textovém poli můžete nastavit svislé zarovnání tex
 textBox.TextBox.VerticalAnchor = TextBoxAnchor.Bottom;
 ```
 
- V tomto případě,`TextBoxAnchor.Bottom`zajistí, že text bude ukotven ke spodní části textového pole. Pokud byste ji chtěli vycentrovat nebo zarovnat nahoru, použili byste`TextBoxAnchor.Center` nebo`TextBoxAnchor.Top`, resp.
+ v tomto případě`TextBoxAnchor.Bottom`zajistí, že text bude ukotven ke spodní části textového pole. Pokud byste ji chtěli vycentrovat nebo zarovnat nahoru, použili byste`TextBoxAnchor.Center` nebo`TextBoxAnchor.Top`, resp.
 
 ## Krok 4: Přidejte text do textového pole
 
@@ -73,7 +73,7 @@ builder.MoveTo(textBox.FirstParagraph);
 builder.Write("Textbox contents");
 ```
 
- Tady,`MoveTo` zajistí vložení textu do textového pole a`Write` přidá aktuální text.
+ Zde,`MoveTo` zajistí vložení textu do textového pole a`Write` přidá aktuální text.
 
 ## Krok 5: Uložte dokument
 

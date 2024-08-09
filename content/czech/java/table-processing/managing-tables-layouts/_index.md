@@ -8,7 +8,7 @@ weight: 10
 url: /cs/java/table-processing/managing-tables-layouts/
 ---
 
-## Úvod
+## Zavedení
 
 Pokud jde o práci s dokumenty v Javě, Aspose.Words je výkonný a všestranný nástroj. V tomto komplexním průvodci vás provedeme procesem správy tabulek a rozvržení ve vašich dokumentech pomocí Aspose.Words for Java. Ať už jste začátečník nebo zkušený vývojář, najdete zde cenné poznatky a praktické příklady zdrojového kódu, které zjednoduší vaše úkoly správy dokumentů.
 
@@ -18,7 +18,7 @@ Než se ponoříme do technických detailů, pojďme stručně prozkoumat, proč
 
 ## Začínáme s Aspose.Words pro Javu
 
- Chcete-li začít naši cestu, musíte mít nainstalovanou a nastavenou aplikaci Aspose.Words for Java. Pokud jste to ještě neudělali, můžete si jej stáhnout z webu Aspose[tady](https://releases.aspose.com/words/java/). Jakmile knihovnu nainstalujete, jste připraveni využít její schopnosti pro efektivní správu tabulek a rozvržení.
+ Chcete-li začít naši cestu, musíte mít nainstalovanou a nastavenou aplikaci Aspose.Words for Java. Pokud jste to ještě neudělali, můžete si jej stáhnout z webu Aspose[zde](https://releases.aspose.com/words/java/). Jakmile knihovnu nainstalujete, jste připraveni využít její schopnosti pro efektivní správu tabulek a rozvržení.
 
 ## Základní správa tabulek
 
@@ -107,7 +107,7 @@ table.getRows().get(0).getCells().get(0).getParagraphs().get(0).getRuns().get(0)
 Ano, buňky v tabulce můžete sloučit pomocí Aspose.Words, jak je ukázáno v průvodci.
 
 ### Co když potřebuji rozdělit dříve sloučené buňky?
- Bez obav! Dříve sloučené buňky můžete snadno rozdělit nastavením jejich vlastnosti horizontálního sloučení na`NONE`.
+ Žádný strach! Dříve sloučené buňky můžete snadno rozdělit nastavením jejich vlastnosti horizontálního sloučení na`NONE`.
 
 ### Jak mohu přidat konec stránky před tabulku?
  Chcete-li vložit konec stránky před tabulku, upravte písmo`PageBreakBefore` majetek, jak bylo prokázáno.
@@ -116,7 +116,7 @@ Ano, buňky v tabulce můžete sloučit pomocí Aspose.Words, jak je ukázáno v
 Absolutně! Aspose.Words for Java podporuje různé formáty dokumentů, což z něj činí všestrannou volbu pro správu dokumentů.
 
 ### Kde najdu další dokumentaci a zdroje?
- Podrobnou dokumentaci a další zdroje naleznete v dokumentaci Aspose.Words for Java[tady](https://reference.aspose.com/words/java/).
+ Podrobnou dokumentaci a další zdroje naleznete v dokumentaci Aspose.Words for Java[zde](https://reference.aspose.com/words/java/).
 
 ## Závěr
 

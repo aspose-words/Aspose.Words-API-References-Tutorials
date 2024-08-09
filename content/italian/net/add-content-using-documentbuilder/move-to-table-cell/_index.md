@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/add-content-using-documentbuilder/move-to-table-cell/
 ---
-## introduzione
+## Introduzione
 
 Passare a una cella di tabella specifica in un documento Word potrebbe sembrare un compito arduo, ma con Aspose.Words per .NET è un gioco da ragazzi! Che tu stia automatizzando report, creando documenti dinamici o semplicemente manipolando i dati delle tabelle a livello di codice, questa potente libreria ti copre. Immergiamoci nel modo in cui è possibile spostarsi in una cella di tabella e aggiungervi contenuto utilizzando Aspose.Words per .NET.
 
@@ -15,7 +15,7 @@ Passare a una cella di tabella specifica in un documento Word potrebbe sembrare 
 
 Prima di iniziare, è necessario mettere in ordine alcuni prerequisiti. Ecco cosa ti serve:
 
-1.  Aspose.Words per .NET Library: scarica e installa da[luogo](https://releases.aspose.com/words/net/).
+1.  Aspose.Words per .NET Library: scarica e installa da[sito](https://releases.aspose.com/words/net/).
 2. Ambiente di sviluppo: Visual Studio o qualsiasi altro IDE C#.
 3. Comprensione di base di C#: la familiarità con la programmazione C# ti aiuterà a proseguire.
 
@@ -54,7 +54,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Ecco dove avviene la magia. Sposteremo il builder in una cella specifica nella tabella. In questo esempio ci spostiamo alla riga 3, cella 4 della prima tabella del documento.
 
 ```csharp
-// Sposta il builder nella riga 3, cella 4 della prima tabella.
+// Sposta il costruttore nella riga 3, cella 4 della prima tabella.
 builder.MoveToCell(0, 2, 3, 0);
 ```
 

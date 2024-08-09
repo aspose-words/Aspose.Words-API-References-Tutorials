@@ -44,7 +44,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Шаг 2. Вставьте горизонтальное правило
 
- Использовать`InsertHorizontalRule()` метод`DocumentBuilder` class, чтобы добавить горизонтальное правило.
+ Используйте`InsertHorizontalRule()` метод`DocumentBuilder` class, чтобы добавить горизонтальное правило.
 
 ```csharp
 Shape shape = builder.InsertHorizontalRule();

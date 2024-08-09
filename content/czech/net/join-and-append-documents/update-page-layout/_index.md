@@ -7,9 +7,9 @@ type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/update-page-layout/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Pokud jste někdy pracovali s dokumenty Wordu programově, víte, jak důležité je efektivně spravovat rozvržení stránek. Ať už generujete sestavy, vytváříte šablony nebo jednoduše upravujete návrhy dokumentů, klíčové je udržovat rozvržení stránek čerstvé a přesné. Dnes se ponoříme do toho, jak aktualizovat rozvržení stránek v dokumentech aplikace Word pomocí Aspose.Words for .NET. Projdeme si procesem krok za krokem, takže budete schopni s jistotou zacházet s rozvržením vašich dokumentů a zajistit, aby vše vypadalo tak, jak má.
+Ahoj! Pokud jste někdy pracovali s dokumenty Wordu programově, víte, jak důležité je efektivně spravovat rozvržení stránek. Ať už generujete sestavy, vytváříte šablony nebo jednoduše upravujete návrhy dokumentů, klíčové je udržovat rozvržení stránek čerstvé a přesné. Dnes se ponoříme do toho, jak aktualizovat rozvržení stránek v dokumentech aplikace Word pomocí Aspose.Words for .NET. Projdeme si procesem krok za krokem, takže budete schopni s jistotou zacházet s rozvržením vašich dokumentů a zajistit, aby vše vypadalo tak, jak má.
 
 ## Předpoklady
 
@@ -21,11 +21,11 @@ Než začneme, ujistěte se, že máte připraveno následující:
 
 3. Základní znalost C#: Základní znalost C# vám pomůže plynuleji pokračovat.
 
-4.  Aspose License: I když je k dispozici bezplatná zkušební verze[tady](https://releases.aspose.com/) , možná budete potřebovat plnou licenci pro komerční použití. Můžete získat jeden[tady](https://purchase.aspose.com/buy) nebo požádat o a[dočasná licence](https://purchase.aspose.com/temporary-license/).
+4.  Aspose License: I když je k dispozici bezplatná zkušební verze[zde](https://releases.aspose.com/) , možná budete potřebovat plnou licenci pro komerční použití. Můžete získat jeden[zde](https://purchase.aspose.com/buy) nebo požádat o a[dočasná licence](https://purchase.aspose.com/temporary-license/).
 
 5. Adresář dokumentů: Ujistěte se, že máte nastavený adresář, kam se budou ukládat a načítat vaše dokumenty.
 
-Máte vše připraveno? Skvělý! Pojďme se ponořit do zábavných věcí.
+Máte vše připraveno? Velký! Pojďme se ponořit do zábavných věcí.
 
 ## Importovat jmenné prostory
 
@@ -114,13 +114,13 @@ Aktualizace rozvržení stránek v dokumentech aplikace Word pomocí Aspose.Word
 Aspose.Words for .NET je knihovna používaná k vytváření, úpravě a převodu dokumentů aplikace Word programově.
 
 ### Potřebuji licenci k používání Aspose.Words pro .NET?  
- Ano, pro komerční použití potřebujete licenci. Můžete získat licenci[tady](https://purchase.aspose.com/buy) nebo požádat o a[dočasná licence](https://purchase.aspose.com/temporary-license/).
+ Ano, pro komerční použití potřebujete licenci. Můžete získat licenci[zde](https://purchase.aspose.com/buy) nebo požádat o a[dočasná licence](https://purchase.aspose.com/temporary-license/).
 
 ### Jak mohu začít s Aspose.Words pro .NET?  
  Můžete začít stažením knihovny z[Aspose webové stránky](https://releases.aspose.com/words/net/)a poté importujte potřebné jmenné prostory do svého projektu C#.
 
 ### Mohu používat Aspose.Words pro .NET zdarma?  
- Aspose nabízí bezplatnou zkušební verzi knihovny, kterou můžete získat[tady](https://releases.aspose.com/).
+ Aspose nabízí bezplatnou zkušební verzi knihovny, kterou můžete získat[zde](https://releases.aspose.com/).
 
 ### Kde mohu získat podporu pro Aspose.Words pro .NET?  
  Podporu můžete získat prostřednictvím[Aspose fórum podpory](https://forum.aspose.com/c/words/8).

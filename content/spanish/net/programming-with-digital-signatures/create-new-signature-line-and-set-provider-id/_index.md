@@ -2,7 +2,7 @@
 title: Cree una nueva línea de firma y establezca la identificación del proveedor
 linktitle: Cree una nueva línea de firma y establezca la identificación del proveedor
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a crear una nueva línea de firma y configurar el ID del proveedor en documentos de Word usando Aspose.Words para .NET. Guía paso por paso.
+description: Aprenda a crear una nueva línea de firma y configurar el ID del proveedor en documentos de Word usando Aspose.Words para .NET. Guía paso a paso.
 type: docs
 weight: 10
 url: /es/net/programming-with-digital-signatures/create-new-signature-line-and-set-provider-id/
@@ -74,7 +74,7 @@ SignatureLine signatureLine = builder.InsertSignatureLine(signatureLineOptions).
 signatureLine.ProviderId = Guid.Parse("CF5A7BB4-8F3C-4756-9DF6-BEF7F13259A2");
 ```
 
- Aquí el`InsertSignatureLine` El método agrega la línea de firma y le asignamos una identificación de proveedor única.
+ Aquí, el`InsertSignatureLine` El método agrega la línea de firma y le asignamos una identificación de proveedor única.
 
 ## Paso 4: guarde el documento
 
@@ -104,7 +104,7 @@ Estas opciones garantizan que el documento esté firmado con los detalles correc
 
 ## Paso 6: crear titular del certificado
 
-Para firmar el documento, utilizaremos un certificado PFX. Creemos un titular de certificado para ello.
+Para firmar el documento utilizaremos un certificado PFX. Creemos un titular de certificado para ello.
 
 ```csharp
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");

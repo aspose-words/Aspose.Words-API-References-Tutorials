@@ -109,7 +109,7 @@ Ha a könyvjelző végére ért, beszúrhat szöveget vagy bármilyen más tarta
 builder.Writeln("This is a bookmark.");
 ```
 
-És ez az! Sikeresen átkerült a könyvjelző végére, és szöveget szúrt be oda.
+És ennyi! Sikeresen átkerült a könyvjelző végére, és szöveget szúrt be oda.
 
 ## 6. lépés: Mentse el a dokumentumot
 
@@ -120,17 +120,17 @@ Végül ne felejtse el menteni a módosításokat:
 doc.Save(dataDir + "UpdatedBookmarks.docx");
 ```
 
- Most megnyithatja a frissített dokumentumot, és láthatja a „Ez egy könyvjelző” szöveget. közvetlenül utána`MyBookmark1`.
+ Most megnyithatja a frissített dokumentumot, és láthatja a „Ez egy könyvjelző” szöveget. rögtön utána`MyBookmark1`.
 
 ## Következtetés
 
-Tessék, itt van! Most tanulta meg, hogyan lehet egy Word-dokumentumban a könyvjelző végére lépni az Aspose.Words for .NET segítségével. Ezzel a hatékony funkcióval rengeteg időt és erőfeszítést takaríthat meg, így sokkal hatékonyabbá teheti dokumentumfeldolgozási feladatait. Ne feledje, gyakorlat teszi a mestert. Tehát továbbra is kísérletezzen a különböző könyvjelzőkkel és dokumentumstruktúrákkal, hogy elsajátítsa ezt a készséget.
+Megvan! Most tanulta meg, hogyan lehet egy Word-dokumentumban a könyvjelző végére lépni az Aspose.Words for .NET segítségével. Ezzel a hatékony funkcióval rengeteg időt és erőfeszítést takaríthat meg, így sokkal hatékonyabbá teheti dokumentumfeldolgozási feladatait. Ne feledje, gyakorlat teszi a mestert. Tehát továbbra is kísérletezzen a különböző könyvjelzőkkel és dokumentumstruktúrákkal, hogy elsajátítsa ezt a készséget.
 
 ## GYIK
 
 ### 1. Mozoghatok a könyvjelző elejére a vége helyett?
 
- Teljesen! Csak állítsd be a`isBookmarkStart` paraméterhez`true`és`isBookmarkEnd` nak nek`false` ban,-ben`MoveToBookmark` módszer.
+ Teljesen! Csak állítsd be a`isBookmarkStart` paraméterhez`true`és`isBookmarkEnd` hogy`false` a`MoveToBookmark` módszer.
 
 ### 2. Mi a teendő, ha a könyvjelző neve helytelen?
 
@@ -138,7 +138,7 @@ Tessék, itt van! Most tanulta meg, hogyan lehet egy Word-dokumentumban a könyv
 
 ### 3. Szúrhatok más típusú tartalmat a könyvjelző végére?
 
- Igen, a DocumentBuilder lehetővé teszi különféle tartalomtípusok, például táblázatok, képek és egyebek beszúrását. Ellenőrizd a[dokumentáció](https://reference.aspose.com/words/net/) további részletekért.
+ Igen, a DocumentBuilder lehetővé teszi különféle tartalomtípusok, például táblázatok, képek és egyebek beszúrását. Ellenőrizze a[dokumentáció](https://reference.aspose.com/words/net/) további részletekért.
 
 ### 4. Hogyan szerezhetek ideiglenes licencet az Aspose.Words számára?
 

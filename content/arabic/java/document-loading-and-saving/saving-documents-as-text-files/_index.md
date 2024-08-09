@@ -128,7 +128,7 @@ doc.save("output.txt", saveOptions);
 
 ### كيف أقوم بإضافة علامات بيدي إلى إخراج النص؟
 
- لإضافة علامات ثنائية الاتجاه إلى مخرجات النص، قم بتعيين`AddBidiMarks` ممتلكات`TxtSaveOptions` ل`true`. على سبيل المثال:
+ لإضافة علامات ثنائية الاتجاه إلى مخرجات النص، قم بتعيين`AddBidiMarks` ملكية`TxtSaveOptions` ل`true`. على سبيل المثال:
 
 ```java
 TxtSaveOptions saveOptions = new TxtSaveOptions();
@@ -137,7 +137,7 @@ saveOptions.setAddBidiMarks(true);
 
 ### هل يمكنني تخصيص حرف المسافة البادئة للقائمة؟
 
- نعم، يمكنك تخصيص حرف المسافة البادئة للقائمة عن طريق تكوين`ListIndentation` ممتلكات`TxtSaveOptions`. على سبيل المثال، لاستخدام حرف جدولة للمسافة البادئة للقائمة، يمكنك القيام بما يلي:
+ نعم، يمكنك تخصيص حرف المسافة البادئة للقائمة عن طريق تكوين`ListIndentation` ملكية`TxtSaveOptions`. على سبيل المثال، لاستخدام حرف جدولة للمسافة البادئة للقائمة، يمكنك القيام بما يلي:
 
 ```java
 TxtSaveOptions saveOptions = new TxtSaveOptions();

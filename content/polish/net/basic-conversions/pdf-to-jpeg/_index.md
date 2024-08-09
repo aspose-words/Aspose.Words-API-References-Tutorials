@@ -82,10 +82,10 @@ masz to! Konwersja pliku PDF do formatu JPEG za pomocą Aspose.Words dla .NET je
 Absolutnie! Możesz przeglądać katalog plików PDF i konwertować każdy z nich do formatu JPEG.
 
 ### Czy Aspose.Words obsługuje inne formaty obrazów?
-Tak! Możesz zapisywać pliki PDF w formatach PNG, BMP i innych.
+Tak, tak! Możesz zapisywać pliki PDF w formatach PNG, BMP i innych.
 
 ### Czy Aspose.Words jest kompatybilny z .NET Core?
-Rzeczywiście jest. Aspose.Words obsługuje zarówno .NET Framework, jak i .NET Core.
+Rzeczywiście, tak jest. Aspose.Words obsługuje zarówno .NET Framework, jak i .NET Core.
 
 ### Czy potrzebuję licencji, aby korzystać z Aspose.Words?
  Możesz skorzystać z bezpłatnego okresu próbnego[Tutaj](https://releases.aspose.com/) lub kup licencję[Tutaj](https://purchase.aspose.com/buy).

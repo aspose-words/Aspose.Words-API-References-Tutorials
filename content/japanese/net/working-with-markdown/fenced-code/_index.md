@@ -2,79 +2,110 @@
 title: フェンスコード
 linktitle: フェンスコード
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET でフェンス コード機能を使用する方法をステップ バイ ステップ ガイドで学習します。
+description: Aspose.Words for .NET を使用して、囲まれたコードと情報文字列を Word 文書に追加する方法を学びます。ステップ バイ ステップ ガイドが含まれています。文書の書式設定スキルを強化します。
 type: docs
 weight: 10
 url: /ja/net/working-with-markdown/fenced-code/
 ---
+## 導入
 
-この例では、Aspose.Words for .NET でフェンス コード機能を使用する方法について説明します。フェンス コードは、特定の書式でコード ブロックを表すために使用されます。
+こんにちは、プログラマーの皆さん! 今日は、Word 文書にフェンス コードや情報文字列を含むフェンス コードを追加する技術を習得するために、Aspose.Words for .NET の世界に飛び込みます。Word 文書をキャンバスに見立てて、アーティストであるあなたが熟練した開発者のような精密さで絵を描こうとしているところを想像してください。Aspose.Words を使用すると、構造化されフォーマットされたコード ブロックを使用してプログラムで文書を拡張し、専門性と明瞭さで技術文書を輝かせることができます。
 
-## ステップ1: ドキュメントジェネレーターの使用
+## 前提条件
 
-まず、ドキュメント ジェネレーターを使用してドキュメントにコンテンツを追加します。
+チュートリアルに進む前に、必要なものがすべて揃っていることを確認しましょう。
+
+- C# の基礎知識: C# の一般的な理解は、概念を素早く理解するのに役立ちます。
+-  Aspose.Words for .NET: Aspose.Words for .NET がインストールされている必要があります。まだインストールしていない場合は、入手してください。[ここ](https://releases.aspose.com/words/net/).
+- 開発環境: Visual Studio または使い慣れたその他の C# IDE。
+
+## 名前空間のインポート
+
+まず最初に、必要な名前空間をインポートする必要があります。これは、プロジェクトを開始する前にすべてのツールを集めるようなものです。
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Style;
+```
+
+それでは、プロセスを段階的に説明してみましょう。
+
+## ステップ1: プロジェクトの設定
+
+Word 文書に美しくフォーマットされたコード ブロックを作成するには、まず Visual Studio で新しいプロジェクトを設定する必要があります。
+
+1. 新しいプロジェクトを作成する: Visual Studio を開き、新しい C# コンソール アプリケーションを作成します。
+2. Aspose.Words 参照の追加: NuGet パッケージ マネージャーを使用して Aspose.Words をインストールします。これを行うには、ソリューション エクスプローラーでプロジェクトを右クリックし、[NuGet パッケージの管理] を選択して、Aspose.Words を検索します。
+
+## ステップ2: DocumentBuilderを初期化する
+
+プロジェクトがセットアップされたので、Word 文書にコンテンツを追加するための主なツールとなる DocumentBuilder を初期化しましょう。
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## ステップ2: フェンスコードにスタイルを追加する
+## ステップ3: フェンスコードのスタイルを作成する
 
-フェンスコードにカスタムスタイルを追加するには、`Styles.Add`方法の`Document`オブジェクト。この例では、フェンス コード用に「FencedCode」というスタイルを作成しています。
+フェンスコードを追加するには、まずスタイルを作成する必要があります。これは、コードブロックのテーマを設定するものと考えてください。
 
 ```csharp
 Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");
-builder.ParagraphFormat.Style = fencedCode;
+fencedCode.Font.Name = "Courier New";
+fencedCode.Font.Size = 10;
+fencedCode.ParagraphFormat.LeftIndent = 20;
+fencedCode.ParagraphFormat.RightIndent = 20;
+fencedCode.ParagraphFormat.Shading.BackgroundPatternColor = Color.LightGray;
 ```
 
-## ステップ3: 情報なしでフェンスコードを追加する
+## ステップ4: ドキュメントにフェンスコードを追加する
 
-これで、「FencedCode」カスタム スタイルを使用して、情報文字列のないフェンス コード ブロックを追加できるようになりました。
+スタイルの準備ができたので、フェンスで囲まれたコード ブロックをドキュメントに追加できます。
 
 ```csharp
-builder.Writeln("This is an fenced code");
+builder.ParagraphFormat.Style = fencedCode;
+builder.Writeln("This is a fenced code block");
 ```
 
-## ステップ4: 情報文字列を含むフェンスコードを追加する
+## ステップ5: 情報文字列を含むフェンスコードのスタイルを作成する
 
-別のカスタム スタイルを使用して、情報の文字列を含むフェンス コード ブロックを追加することもできます。この例では、C# コードのブロックを表す「FencedCode.C#」というスタイルを作成しています。
+場合によっては、プログラミング言語を指定したり、コード ブロックに追加情報を追加したりする必要があるかもしれません。そのためのスタイルを作成しましょう。
 
 ```csharp
 Style fencedCodeWithInfo = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode.C#");
-builder.ParagraphFormat.Style = fencedCodeWithInfo;
-builder.Writeln("This is a fenced code with info string");
+fencedCodeWithInfo.Font.Name = "Courier New";
+fencedCodeWithInfo.Font.Size = 10;
+fencedCodeWithInfo.ParagraphFormat.LeftIndent = 20;
+fencedCodeWithInfo.ParagraphFormat.RightIndent = 20;
+fencedCodeWithInfo.ParagraphFormat.Shading.BackgroundPatternColor = Color.LightGray;
 ```
 
-### Aspose.Words for .NET を使用したフェンス コードのサンプル ソース コード
+## ステップ6: 情報文字列を含むフェンスコードをドキュメントに追加する
+
+ここで、C# コードであることを示す情報文字列を含むフェンス付きコード ブロックを追加しましょう。
 
 ```csharp
-//ドキュメント ビルダーを使用してドキュメントにコンテンツを追加します。
-DocumentBuilder builder = new DocumentBuilder();
-
-Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");
-builder.ParagraphFormat.Style = fencedCode;
-builder.Writeln("This is an fenced code");
-
-Style fencedCodeWithInfo = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode.C#");
 builder.ParagraphFormat.Style = fencedCodeWithInfo;
-builder.Writeln("This is a fenced code with info string");
+builder.Writeln("This is a fenced code block with info string - C#");
 ```
 
-### よくある質問
+## 結論
 
-#### Q: Markdown の区切りコードとは何ですか?
+おめでとうございます! Aspose.Words for .NET を使用して、フェンス コード ブロックと情報文字列を含むフェンス コードを Word ドキュメントに追加しました。これは氷山の一角にすぎません。Aspose.Words を使用すると、ドキュメント処理を自動化し、新たなレベルにまで強化できます。引き続き探索して、コーディングを楽しんでください!
 
-A: Markdown の区切りコードは、Markdown ドキュメントでコードを表示するために使用される書式設定方法です。特定の区切り文字を使用してコードを囲みます。
+## よくある質問
 
-#### Q: Markdown での区切りコードの利点は何ですか?
+### Aspose.Words for .NET とは何ですか?
+Aspose.Words for .NET は、開発者がプログラムによって Word 文書を作成、操作、変換できるようにする強力なライブラリです。
 
-A: Markdown で区切られたコードを使用すると、コードの可読性が向上し、読者が理解しやすくなります。また、一部の Markdown エディターで構文の強調表示を維持することもできます。
+### Aspose.Words を他のプログラミング言語で使用できますか?
+Aspose.Words は主に .NET 言語をサポートしていますが、Java、Python、その他の言語用のバージョンも用意されています。
 
-#### Q: Markdown における区切りコードとインデントコードの違いは何ですか?
+### Aspose.Words は無料で使用できますか?
+ Aspose.Wordsは商用製品ですが、無料試用版をダウンロードできます。[ここ](https://releases.aspose.com/)その特徴を探ります。
 
-A: 区切りコードでは特定の区切り文字を使用してコードを囲みますが、インデントコードでは各コード行をスペースまたはタブでインデントします。
+### Aspose.Words のサポートを受けるにはどうすればよいですか?
+ Asposeコミュニティと開発者からサポートを受けることができます[ここ](https://forum.aspose.com/c/words/8).
 
-#### Q: Markdown の区切りコードはすべての Markdown エディターでサポートされていますか?
-
-A: Markdown での区切りコードのサポートは、Markdown エディターによって異なる場合があります。発行元の特定のドキュメントを確認してください。
-
+### Aspose.Words には他にどのような機能がありますか?
+Aspose.Words は、ドキュメント変換、テンプレートベースのドキュメント生成、レポート作成など、幅広い機能を提供します。

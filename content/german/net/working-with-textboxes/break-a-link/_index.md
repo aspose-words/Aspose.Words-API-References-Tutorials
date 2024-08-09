@@ -16,7 +16,7 @@ Hallo liebe Entwickler und Dokument-Enthusiasten! 🌟 Wenn Sie schon einmal mit
 
 Bevor wir beginnen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
 
-1.  Aspose.Words für .NET-Bibliothek: Stellen Sie sicher, dass Sie die neueste Version haben.[Hier herunterladen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET-Bibliothek: Stellen Sie sicher, dass Sie die neueste Version haben.[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Eine .NET-kompatible Entwicklungsumgebung wie Visual Studio.
 3. Grundlegende C#-Kenntnisse: Das Verständnis der grundlegenden C#-Syntax ist hilfreich.
 4. Beispiel-Word-Dokument: Obwohl wir ein völlig neues Dokument erstellen, kann es für Tests nützlich sein, ein Beispiel zu haben.
@@ -128,4 +128,4 @@ Das Unterbrechen von Links kann möglicherweise das Layout beeinträchtigen, ins
 
 ### Wo finde ich weitere Ressourcen zur Arbeit mit Aspose.Words?
 
- Weitere Informationen und Ressourcen finden Sie unter[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/)Und[Hilfeforum](https://forum.aspose.com/c/words/8).
+ Weitere Informationen und Ressourcen finden Sie unter[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/)Und[Support-Forum](https://forum.aspose.com/c/words/8).

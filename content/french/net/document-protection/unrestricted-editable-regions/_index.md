@@ -112,9 +112,9 @@ Enfin, enregistrons le document avec la protection appliquée et les régions mo
 
 ## Conclusion
 
-Et voila! Vous avez réussi à créer des régions modifiables sans restriction dans un document Word à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité est incroyablement utile pour les environnements collaboratifs où certaines parties d'un document doivent rester inchangées tandis que d'autres peuvent être modifiées. 
+Et voilà ! Vous avez réussi à créer des régions modifiables sans restriction dans un document Word à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité est incroyablement utile pour les environnements collaboratifs où certaines parties d'un document doivent rester inchangées tandis que d'autres peuvent être modifiées. 
 
- Expérimentez avec des scénarios plus complexes et différents niveaux de protection pour tirer le meilleur parti d'Aspose.Words. Si vous avez des questions ou rencontrez des problèmes, n'hésitez pas à consulter le[Documentation](https://reference.aspose.com/words/net/) ou contactez[soutien](https://forum.aspose.com/c/words/8).
+ Expérimentez avec des scénarios plus complexes et différents niveaux de protection pour tirer le meilleur parti d'Aspose.Words. Si vous avez des questions ou rencontrez des problèmes, n'hésitez pas à consulter le[documentation](https://reference.aspose.com/words/net/) ou contactez[soutien](https://forum.aspose.com/c/words/8).
 
 ## FAQ
 

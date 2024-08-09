@@ -106,7 +106,7 @@ HarfBuzz adalah mesin pembentuk teks sumber terbuka yang memberikan dukungan kua
 Ya, Aspose.Words mendukung mesin pembentuk teks yang berbeda. Namun, HarfBuzz sangat direkomendasikan karena dukungan fitur OpenType yang komprehensif.
 
 ### Apakah Aspose.Words kompatibel dengan semua versi .NET?
- Aspose.Words mendukung berbagai versi .NET, termasuk .NET Framework, .NET Core, dan .NET Standard. Periksalah[dokumentasi](https://reference.aspose.com/words/net/) untuk informasi kompatibilitas terperinci.
+ Aspose.Words mendukung berbagai versi .NET, termasuk .NET Framework, .NET Core, dan .NET Standard. Periksa[dokumentasi](https://reference.aspose.com/words/net/) untuk informasi kompatibilitas terperinci.
 
 ### Bagaimana saya bisa mencoba Aspose.Words sebelum membeli?
  Anda dapat mengunduh uji coba gratis dari[Asumsikan situs web](https://releases.aspose.com/) dan meminta izin sementara[Di Sini](https://purchase.aspose.com/temporary-license/).

@@ -59,7 +59,7 @@ Aspose.Words 支援多種文件格式，包括 DOCX、EPUB、PDF、HTML 等。
 是的，Aspose.Words 完全支援 .NET Core 和 .NET Framework。
 
 ### 在哪裡可以找到有關 Aspose.Words 的更多範例和文件？
-參觀[Aspose.Words for .NET 文檔](https://reference.aspose.com/words/net/)取得詳細範例和 API 參考。
+參觀[Aspose.Words for .NET 文檔](https://reference.aspose.com/words/net/)詳細範例和 API 參考。
 
 ### 我如何獲得 Aspose.Words 相關問題的支援？
 如需支持，請訪問[Aspose.Words 論壇](https://forum.aspose.com/c/words/8)您可以在這裡提出問題並與社區互動。

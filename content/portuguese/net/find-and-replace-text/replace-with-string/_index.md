@@ -93,7 +93,7 @@ Aí está! Com Aspose.Words for .NET, substituir strings em um documento do Word
 Sim, você pode encadear diversas operações de substituição ou usar expressões regulares para combinar e substituir diversos padrões.
 
 ### O Aspose.Words para .NET é gratuito?
- Aspose.Words for .NET é uma biblioteca paga, mas você pode obter um[teste grátis](https://releases.aspose.com/) para testar seus recursos.
+ Aspose.Words for .NET é uma biblioteca paga, mas você pode obter um[teste gratuito](https://releases.aspose.com/) para testar seus recursos.
 
 ### Posso substituir texto por conteúdo formatado?
 Absolutamente! Aspose.Words permite substituir texto por conteúdo formatado, incluindo diferentes fontes, cores e estilos.

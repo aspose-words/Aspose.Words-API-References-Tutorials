@@ -68,7 +68,7 @@ StructuredDocumentTag sdtRichText = new StructuredDocumentTag(doc, SdtType.RichT
 
 ## Langkah 4: Tambahkan Konten ke Kotak Teks Kaya
 
- Membuat`Paragraph` dan sebuah`Run` objek untuk menampung konten yang ingin Anda tampilkan di Kotak Teks Kaya. Sesuaikan teks dan format sesuai kebutuhan.
+ Buat sebuah`Paragraph` dan sebuah`Run` objek untuk menampung konten yang ingin Anda tampilkan di Kotak Teks Kaya. Sesuaikan teks dan format sesuai kebutuhan.
 
 ```csharp
 Paragraph para = new Paragraph(doc);

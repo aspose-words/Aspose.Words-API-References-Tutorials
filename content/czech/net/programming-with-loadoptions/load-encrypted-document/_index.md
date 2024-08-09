@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-loadoptions/load-encrypted-document/
 ---
-## Úvod
+## Zavedení
 
 V tomto tutoriálu se naučíte, jak načíst zašifrovaný dokument aplikace Word a uložit jej s novým heslem pomocí Aspose.Words for .NET. Manipulace se zašifrovanými dokumenty je nezbytná pro zachování bezpečnosti dokumentů, zejména při práci s citlivými informacemi.
 
@@ -15,8 +15,8 @@ V tomto tutoriálu se naučíte, jak načíst zašifrovaný dokument aplikace Wo
 
 Než začnete, ujistěte se, že máte následující:
 
-1.  Nainstalovaná knihovna Aspose.Words for .NET. Můžete si jej stáhnout z[tady](https://downloads.aspose.com/words/net).
-2.  Platná licence Aspose. Můžete získat zkušební verzi zdarma nebo si ji zakoupit[tady](https://purchase.aspose.com/buy).
+1.  Nainstalovaná knihovna Aspose.Words for .NET. Můžete si jej stáhnout z[zde](https://downloads.aspose.com/words/net).
+2.  Platná licence Aspose. Můžete získat bezplatnou zkušební verzi nebo si ji zakoupit[zde](https://purchase.aspose.com/buy).
 3. Visual Studio nebo jiné vývojové prostředí .NET.
 
 ## Importovat jmenné prostory

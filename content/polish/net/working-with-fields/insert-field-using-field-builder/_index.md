@@ -9,7 +9,7 @@ url: /pl/net/working-with-fields/insert-field-using-field-builder/
 ---
 ## Wstęp
 
-No hej! Czy kiedykolwiek drapałeś się po głowie i zastanawiałeś się, jak programowo wstawić pola dynamiczne do dokumentów programu Word? Cóż, nie martw się więcej! W tym samouczku zagłębimy się w cuda Aspose.Words dla .NET, potężnej biblioteki, która umożliwia płynne tworzenie, manipulowanie i przekształcanie dokumentów programu Word. W szczególności omówimy sposób wstawiania pól za pomocą narzędzia Field Builder. Zacznijmy!
+Hej tam! Czy kiedykolwiek drapałeś się po głowie i zastanawiałeś się, jak programowo wstawić pola dynamiczne do dokumentów programu Word? Cóż, nie martw się więcej! W tym samouczku zagłębimy się w cuda Aspose.Words dla .NET, potężnej biblioteki, która umożliwia płynne tworzenie, manipulowanie i przekształcanie dokumentów programu Word. W szczególności omówimy sposób wstawiania pól za pomocą narzędzia Field Builder. Zacznijmy!
 
 ## Warunki wstępne
 

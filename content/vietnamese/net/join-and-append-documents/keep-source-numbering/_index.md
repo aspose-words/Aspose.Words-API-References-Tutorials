@@ -33,7 +33,7 @@ using Aspose.Words.Tables;
 Bắt đầu bằng cách tạo một dự án C# mới trong Visual Studio và cài đặt Aspose.Words thông qua Trình quản lý gói NuGet.
 
 ## Bước 2: Khởi tạo tài liệu
-Tạo các phiên bản của nguồn (`srcDoc`) và đích đến (`dstDoc`) các tài liệu.
+Tạo các phiên bản của nguồn (`srcDoc`) và đích đến (`dstDoc`) tài liệu.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu của bạn
@@ -78,7 +78,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
 ## Câu hỏi thường gặp
 
 ### Tôi có thể nhập tài liệu với các kiểu định dạng khác nhau không?
- Vâng`NodeImporter` lớp hỗ trợ nhập tài liệu với nhiều kiểu định dạng khác nhau.
+ Vâng, cái`NodeImporter` lớp hỗ trợ nhập tài liệu với nhiều kiểu định dạng khác nhau.
 
 ### Điều gì sẽ xảy ra nếu tài liệu của tôi chứa các bảng và hình ảnh phức tạp?
 Aspose.Words for .NET xử lý các cấu trúc phức tạp như bảng và hình ảnh trong quá trình nhập.
@@ -90,4 +90,4 @@ Aspose.Words hỗ trợ các phiên bản .NET Framework và .NET Core để tí
 Sử dụng các khối thử bắt để xử lý các trường hợp ngoại lệ có thể xảy ra trong quá trình nhập.
 
 ### Tôi có thể tìm tài liệu chi tiết hơn về Aspose.Words cho .NET ở đâu?
- Tham quan[tài liệu](https://reference.aspose.com/words/net/) để có hướng dẫn toàn diện và tài liệu tham khảo API.
+ Ghé thăm[tài liệu](https://reference.aspose.com/words/net/) để có hướng dẫn toàn diện và tài liệu tham khảo API.

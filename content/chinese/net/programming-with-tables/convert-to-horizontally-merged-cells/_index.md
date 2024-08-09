@@ -80,4 +80,4 @@ Aspose.Words for .NET 主要针对 .NET 语言（例如 C#）而设计。不过�
 是的，Aspose.Words for .NET 允许您从文件和流中应用许可证。您可以在[文档](https://reference.aspose.com/words/net/).
 
 ### Aspose.Words for .NET 还提供哪些其他功能？  
-Aspose.Words for .NET 提供广泛的功能，包括文档生成、操作、转换和渲染。查看[文档](https://reference.aspose.com/words/net/)更多细节。
+Aspose.Words for .NET 提供广泛的功能，包括文档生成、操作、转换和渲染。查看[文档](https://reference.aspose.com/words/net/)了解更多详情。

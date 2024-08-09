@@ -93,7 +93,7 @@ doc.Save(dataDir + "InsertionFieldFieldIncludeTextWithoutDocumentBuilder.docx");
 
 ## Çözüm
 
-İşte buyur! Bu adımları izleyerek Aspose.Words for .NET'te DocumentBuilder'ı kullanmadan FieldIncludeText'i kolayca ekleyebilirsiniz. Bu yaklaşım, içeriği bir belgeden diğerine eklemek için kolaylaştırılmış bir yol sağlayarak belge otomasyonu görevlerinizi çok daha basit hale getirir.
+Ve işte karşınızda! Bu adımları izleyerek Aspose.Words for .NET'te DocumentBuilder'ı kullanmadan FieldIncludeText'i kolayca ekleyebilirsiniz. Bu yaklaşım, içeriği bir belgeden diğerine eklemek için kolaylaştırılmış bir yol sağlayarak belge otomasyonu görevlerinizi çok daha basit hale getirir.
 
 ## SSS'ler
 

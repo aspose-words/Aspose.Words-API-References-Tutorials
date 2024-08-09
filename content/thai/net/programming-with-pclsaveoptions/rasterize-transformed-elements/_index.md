@@ -21,7 +21,7 @@ url: /th/net/programming-with-pclsaveoptions/rasterize-transformed-elements/
 
 ## นำเข้าเนมสเปซ
 
-หากต้องการใช้ Aspose.Words สำหรับ .NET คุณจะต้องนำเข้าเนมสเปซที่จำเป็น เพิ่มสิ่งต่อไปนี้ที่ด้านบนของไฟล์ C# ของคุณ:
+หากต้องการใช้ Aspose.Words สำหรับ .NET คุณต้องนำเข้าเนมสเปซที่จำเป็น เพิ่มสิ่งต่อไปนี้ที่ด้านบนของไฟล์ C# ของคุณ:
 
 ```csharp
 using Aspose.Words;

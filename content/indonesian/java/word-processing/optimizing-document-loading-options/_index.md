@@ -8,7 +8,7 @@ weight: 11
 url: /id/java/word-processing/optimizing-document-loading-options/
 ---
 
-Dalam dunia dokumentasi digital, kecepatan dan efisiensi adalah hal yang terpenting. Pengguna mengharapkan dokumen dimuat dengan cepat, baik saat mereka melihat halaman web, mendownload laporan, atau mengakses konten tekstual. Sebagai pengembang, Anda dapat meningkatkan kinerja pemuatan dokumen secara signifikan menggunakan Aspose.Words for Java, API canggih untuk manipulasi dokumen. Pada artikel ini, kita akan mempelajari cara mengoptimalkan pemuatan dokumen dengan opsi HTML, RTF, dan TXT menggunakan Aspose.Words untuk Java.
+Dalam dunia dokumentasi digital, kecepatan dan efisiensi adalah hal yang terpenting. Pengguna mengharapkan dokumen dimuat dengan cepat, baik saat mereka melihat halaman web, mengunduh laporan, atau mengakses konten tekstual. Sebagai pengembang, Anda dapat meningkatkan kinerja pemuatan dokumen secara signifikan menggunakan Aspose.Words for Java, API canggih untuk manipulasi dokumen. Pada artikel ini, kita akan mempelajari cara mengoptimalkan pemuatan dokumen dengan opsi HTML, RTF, dan TXT menggunakan Aspose.Words untuk Java.
 
 ## Perkenalan
 
@@ -128,4 +128,4 @@ Ya, Anda dapat menemukan forum komunitas di situs Aspose tempat Anda dapat menga
 
 #### Bagaimana cara mengoptimalkan pemuatan dokumen untuk dokumen berukuran sangat besar?
 
-Mengoptimalkan pemuatan untuk dokumen yang sangat besar mungkin memerlukan teknik tingkat lanjut seperti pemuatan asinkron dan rendering bertahap. Lihat dokumentasi Aspose.Words untuk Java dan pertimbangkan untuk menghubungi dukungan mereka untuk mendapatkan panduan.
+Mengoptimalkan pemuatan untuk dokumen yang sangat besar mungkin memerlukan teknik tingkat lanjut seperti pemuatan asinkron dan rendering tambahan. Lihat dokumentasi Aspose.Words untuk Java dan pertimbangkan untuk menghubungi dukungan mereka untuk mendapatkan panduan.

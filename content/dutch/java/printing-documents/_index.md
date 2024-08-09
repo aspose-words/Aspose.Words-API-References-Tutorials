@@ -26,7 +26,7 @@ Klaar om te beginnen aan uw reis om Aspose.Words voor Java onder de knie te krij
 
 In dit artikel hebben we u kennis laten maken met de wereld van het afdrukken van documenten met Aspose.Words voor Java. Met onze lijst met tutorials en de kracht van Aspose.Words binnen handbereik bent u goed uitgerust om elke uitdaging op het gebied van documentprinten aan te gaan. Begin vol vertrouwen met verkennen, experimenteren en het maken van verbluffende gedrukte documenten.
 
- Vergeet niet dat als u vragen heeft of verdere hulp nodig heeft, u gerust onze website kunt bezoeken[Helpforum](https://forum.aspose.com/) of verkennen[tijdelijke licentiemogelijkheden](https://purchase.aspose.com/temporary-license/) om uw Aspose.Words voor Java-reis een boost te geven.
+ Vergeet niet dat als u vragen heeft of verdere hulp nodig heeft, u gerust onze website kunt bezoeken[ondersteuningsforum](https://forum.aspose.com/) of verkennen[tijdelijke licentiemogelijkheden](https://purchase.aspose.com/temporary-license/) om uw Aspose.Words voor Java-reis een boost te geven.
 
 ## Handleidingen voor het afdrukken van documenten
 ### [Documenten afdrukken in Aspose.Words voor Java](./printing-documents/)

@@ -91,7 +91,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx"
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã áp dụng thành công định dạng hàng cho bảng trong tài liệu Word bằng Aspose.Words for .NET. Kỹ thuật đơn giản nhưng mạnh mẽ này có thể nâng cao đáng kể khả năng đọc và tính thẩm mỹ cho tài liệu của bạn.
+Và bạn có nó! Bạn đã áp dụng thành công định dạng hàng cho bảng trong tài liệu Word bằng Aspose.Words for .NET. Kỹ thuật đơn giản nhưng mạnh mẽ này có thể nâng cao đáng kể khả năng đọc và tính thẩm mỹ cho tài liệu của bạn.
 
 ## Câu hỏi thường gặp
 

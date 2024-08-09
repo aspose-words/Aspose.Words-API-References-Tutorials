@@ -21,7 +21,7 @@ Ayrıntılara dalmadan önce her şeyin ayarlandığından emin olalım:
 3. Visual Studio: Güncel sürümlerden herhangi biri çalışmalıdır ancak en son sürüm önerilir.
 4. .NET Framework: Sisteminizde kurulu olduğundan emin olun.
 
-başlamaya hazır mısın? Mükemmel! Hemen içeri girelim.
+Başlamaya hazır mısınız? Mükemmel! Hemen içeri girelim.
 
 ## Ad Alanlarını İçe Aktar
 
@@ -80,7 +80,7 @@ The document has X shapes with SmartArt.
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET kullanarak Word belgelerindeki SmartArt şekillerini nasıl tespit edeceğinizi başarıyla öğrendiniz. Bu eğitim ortamınızı ayarlamayı, belgeleri yüklemeyi, SmartArt şekillerini algılamayı ve kodu çalıştırmayı kapsıyordu. Aspose.Words çok çeşitli özellikler sunar; bu nedenle,[API belgeleri](https://reference.aspose.com/words/net/) tüm potansiyelini ortaya çıkarmak için.
+Ve işte karşınızda! Aspose.Words for .NET kullanarak Word belgelerindeki SmartArt şekillerini nasıl tespit edeceğinizi başarıyla öğrendiniz. Bu eğitim ortamınızı ayarlamayı, belgeleri yüklemeyi, SmartArt şekillerini algılamayı ve kodu çalıştırmayı kapsıyordu. Aspose.Words çok çeşitli özellikler sunar; bu nedenle,[API belgeleri](https://reference.aspose.com/words/net/) tüm potansiyelini ortaya çıkarmak için.
 
 ## SSS
 
@@ -94,7 +94,7 @@ Aspose.Words for .NET, geliştiricilerin Word belgelerini programlı olarak olu�
 
 ### 3. Bir belgedeki diğer şekil türlerini nasıl tespit ederim?
 
- Diğer özellikleri veya şekil türlerini denetlemek için LINQ sorgusunu değiştirebilirsiniz. Bakın[dokümantasyon](https://reference.aspose.com/words/net/) daha fazla ayrıntı için.
+ Diğer özellikleri veya şekil türlerini denetlemek için LINQ sorgusunu değiştirebilirsiniz. Şuraya bakın:[dokümantasyon](https://reference.aspose.com/words/net/) daha fazla ayrıntı için.
 
 ### 4. Aspose.Words for .NET desteğini nasıl alabilirim?
 

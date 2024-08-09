@@ -2,88 +2,40 @@
 title: Přijmout revize
 linktitle: Přijmout revize
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se přijímat revize dokumentu aplikace Word pomocí Aspose.Words for .NET
+description: Revize hlavního dokumentu s Aspose.Words pro .NET. Naučte se bez námahy sledovat, přijímat a odmítat změny. Zvyšte své dovednosti v oblasti správy dokumentů.
 type: docs
 weight: 10
 url: /cs/net/working-with-revisions/accept-revisions/
 ---
+## Zavedení
 
-V tomto tutoriálu vás provedeme přijímáním revizí dokumentu aplikace Word pomocí funkce Přijmout revize Aspose.Words for .NET. Chcete-li porozumět zdrojovému kódu a přijmout změny v dokumentu, postupujte podle následujících kroků.
+Ocitli jste se někdy v bludišti revizí dokumentů a snažili jste se sledovat každou změnu provedenou více přispěvateli? S Aspose.Words pro .NET se správa revizí v dokumentech aplikace Word stává hračkou. Tato výkonná knihovna umožňuje vývojářům bez námahy sledovat, přijímat a odmítat změny a zajišťuje, že vaše dokumenty zůstanou organizované a aktuální. V tomto tutoriálu se ponoříme do procesu zpracování revizí dokumentu pomocí Aspose.Words for .NET krok za krokem, od inicializace dokumentu po přijetí všech změn.
 
-## Krok 1: Přidání a úprava obsahu dokumentu
+## Předpoklady
 
-V tomto příkladu vytváříme dokument a přidáváme obsah. Pro ilustraci změn a revizí používáme několik odstavců. Zde je postup:
+Než začneme, ujistěte se, že máte splněny následující předpoklady:
 
-```csharp
-// Cesta k adresáři dokumentů.
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-Body body = doc.FirstSection.Body;
-Paragraph para = body.FirstParagraph;
+- Visual Studio nainstalované na vašem počítači.
+- .NET framework (nejlépe nejnovější verze).
+-  Aspose.Words pro knihovnu .NET. Můžete si jej stáhnout[zde](https://releases.aspose.com/words/net/).
+- Základní znalost programování v C#.
 
-// Přidejte text do prvního odstavce a poté přidejte další dva odstavce.
-para.AppendChild(new Run(doc, "Paragraph 1. "));
-body.AppendParagraph("Paragraph 2.");
-body.AppendParagraph("Paragraph 3.");
-```
+Nyní pojďme skočit do specifik a podívat se, jak můžeme zvládnout revize dokumentů pomocí Aspose.Words pro .NET.
 
-## Krok 2: Sledujte recenze a přidejte recenze
+## Importovat jmenné prostory
 
-Umožňujeme sledování revizí a přidáváme revizi do dokumentu. Zde je postup:
+Nejprve musíte importovat potřebné jmenné prostory pro práci s Aspose.Words. Přidejte následující pomocí direktiv v horní části souboru kódu:
 
 ```csharp
-doc.StartTrackRevisions("John Doe", DateTime.Now);
-
-// Tento odstavec je revizí a bude mít nastaven odpovídající příznak "IsInsertRevision".
-para = body.AppendParagraph("Paragraph 4.");
-Assert.True(para.IsInsertRevision);
+using Aspose.Words;
+using Aspose.Words.Revision;
 ```
 
-## Krok 3: Odstraňte odstavec a spravujte revize
+Pojďme si tento proces rozdělit na zvládnutelné kroky. Každý krok bude podrobně vysvětlen, aby bylo zajištěno, že rozumíte každé části kódu.
 
-Odstraníme odstavec a zkontrolujeme uložené revize. Zde je postup:
+## Krok 1: Inicializujte dokument
 
-```csharp
-ParagraphCollection paragraphs = body.Paragraphs;
-Assert.AreEqual(4, paragraphs.Count);
-para = paragraphs[2];
-para.Remove();
-
-// Jak sledujeme revize, odstavec v dokumentu stále existuje, bude mít nastaven příznak "IsDeleteRevision"
-// a bude se zobrazovat jako recenze v aplikaci Microsoft Word, dokud nepřijmeme nebo neodmítneme všechny recenze.
-Assert.AreEqual(4, paragraphs.Count);
-Assert.True(para.IsDeleteRevision);
-```
-
-## Krok 4: Přijměte změny
-
-Přijímáme všechny změny dokumentu. Zde je postup:
-
-```csharp
-doc.AcceptAllRevisions();
-Assert.AreEqual(3, paragraphs.Count);
-Assert.That(para, Is.Empty);
-```
-
-## Krok 5: Zastavte sledování recenzí
-
-Přestaneme sledovat revize, aby se změny v dokumentu již nezobrazovaly jako revize. Zde je postup:
-
-```csharp
-doc.StopTrackRevisions();
-```
-## Krok 6: Uložení dokumentu
-
- Po vložení textového pole formuláře uložte dokument na požadované místo pomocí`Save`metoda. Ujistěte se, že jste zadali správnou cestu k souboru:
-
-```csharp
-doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
-```
-
-### Příklad zdrojového kódu pro Accept Revisions using Aspose.Words for .NET
-
-Zde je úplný zdrojový kód pro přijímání změn v dokumentu pomocí Aspose.Words pro .NET:
-
+Chcete-li začít, musíme vytvořit nový dokument a přidat několik odstavců. Tím se připraví půda pro sledování revizí.
 
 ```csharp
 // Cesta k adresáři dokumentů.
@@ -96,93 +48,102 @@ Paragraph para = body.FirstParagraph;
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2. ");
 body.AppendParagraph("Paragraph 3. ");
+```
 
-//Máme tři odstavce, z nichž žádný není registrován jako jakýkoli typ revize
-// Pokud při sledování revizí přidáme/odebereme jakýkoli obsah v dokumentu,
-// budou jako takové zobrazeny v dokumentu a lze je přijmout/odmítnout.
+V tomto kroku jsme vytvořili nový dokument a přidali do něj tři odstavce. Tyto odstavce budou sloužit jako základ pro naše sledování revizí.
+
+## Krok 2: Spusťte sledování revizí
+
+Dále musíme povolit sledování revizí. To nám umožňuje zachytit veškeré změny provedené v dokumentu.
+
+```csharp
+// Začněte sledovat revize.
 doc.StartTrackRevisions("John Doe", DateTime.Now);
+```
 
+ Zavoláním`StartTrackRevisions`, umožníme dokumentu sledovat všechny následné změny. Jako parametry jsou předány jméno autora a aktuální datum.
+
+## Krok 3: Přidejte revizi
+
+Nyní, když je povoleno sledování revizí, přidáme nový odstavec. Tento dodatek bude označen jako revize.
+
+```csharp
 // Tento odstavec je revizí a bude mít nastavený příznak "IsInsertRevision".
 para = body.AppendParagraph("Paragraph 4. ");
-Assert.True(para.IsInsertRevision);
+```
 
+Zde se doplňuje nový odstavec („Odstavec 4.“). Protože je povoleno sledování revizí, je tento odstavec označen jako revize.
+
+## Krok 4: Odstraňte odstavec
+
+Dále odstraníme existující odstavec a budeme sledovat, jak je revize sledována.
+
+```csharp
 // Získejte kolekci odstavců dokumentu a odstraňte odstavec.
 ParagraphCollection paragraphs = body.Paragraphs;
-Assert.AreEqual(4, paragraphs.Count);
 para = paragraphs[2];
 para.Remove();
+```
 
-// Protože sledujeme revize, odstavec v dokumentu stále existuje, bude mít nastaveno "IsDeleteRevision"
-// a budou zobrazeny jako revize v aplikaci Microsoft Word, dokud nepřijmeme nebo neodmítneme všechny revize.
-Assert.AreEqual(4, paragraphs.Count);
-Assert.True(para.IsDeleteRevision);
+V tomto kroku se odstraní třetí odstavec. Kvůli sledování revizí se toto vymazání zaznamená a odstavec se označí k vymazání, místo aby byl okamžitě odstraněn z dokumentu.
 
-// Jakmile přijmeme změny, odstavec pro odstranění revize je odstraněn.
+## Krok 5: Přijměte všechny revize
+
+Nakonec přijměme všechny sledované revize a upevníme změny v dokumentu.
+
+```csharp
+// Přijměte všechny revize.
 doc.AcceptAllRevisions();
-Assert.AreEqual(3, paragraphs.Count);
-Assert.That(para, Is.Empty);
+```
 
-// Zastavení sledování revizí způsobí, že se tento text zobrazí jako normální text.
-// Při změně dokumentu se revize nepočítají.
+ Zavoláním`AcceptAllRevisions`, zajistíme, aby všechny změny (přidání a odstranění) byly přijaty a aplikovány na dokument. Revize již nejsou označeny a jsou integrovány do dokumentu.
+
+## Krok 6: Zastavte sledování revizí
+
+### Zakázat sledování revizí
+
+Abychom to zakončili, můžeme deaktivovat sledování revizí a zastavit nahrávání dalších změn.
+
+```csharp
+// Zastavit sledování revizí.
 doc.StopTrackRevisions();
+```
 
+Tento krok zastaví dokument ve sledování jakýchkoli nových změn a všechny následné úpravy budou považovat za běžný obsah.
+
+## Krok 7: Uložte dokument
+
+Nakonec upravený dokument uložte do určeného adresáře.
+
+```csharp
 // Uložte dokument.
 doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
 ```
+
+Uložením dokumentu zajistíme zachování všech našich změn a přijatých revizí.
+
 ## Závěr
 
-V tomto tutoriálu jsme se naučili, jak přijímat revize v dokumentu aplikace Word pomocí funkce Přijmout revize Aspose.Words for .NET. Postupovali jsme podle kroků pro přidání a úpravu obsahu dokumentu, sledování revizí, odstranění revidovaného odstavce, přijetí všech změn a zastavení sledování revizí. Nyní můžete tyto znalosti použít k efektivní správě revizí ve vašich vlastních dokumentech aplikace Word pomocí Aspose.Words for .NET.
+Správa revizí dokumentů může být skličující úkol, ale s Aspose.Words pro .NET se stává přímočarým a efektivním. Podle kroků uvedených v této příručce můžete snadno sledovat, přijímat a odmítat změny v dokumentech aplikace Word a zajistit, aby byly vaše dokumenty vždy aktuální a přesné. Tak proč čekat? Ponořte se do světa Aspose.Words a zefektivněte svou správu dokumentů ještě dnes!
 
-### Nejčastější dotazy
+## FAQ
 
-#### Otázka: Jak povolím sledování revizí v Aspose.Words pro .NET?
+### Jak začnu sledovat revize v Aspose.Words pro .NET?
 
-#### Řešení 1:
+ Sledování revizí můžete začít zavoláním na`StartTrackRevisions` metoda na vašem objektu dokumentu a předání jména autora a aktuálního data.
 
- A: Chcete-li povolit sledování revizí v Aspose.Words pro .NET, použijte`StartTrackRevisions` metoda`Document` objekt a zadejte jméno autora a počáteční datum pro sledování revize.
+### Mohu kdykoli zastavit sledování revizí?
 
-```csharp
-doc.StartTrackRevisions("John Doe", DateTime.Now);
-```
+Ano, můžete zastavit sledování revizí zavoláním na`StopTrackRevisions` metoda na vašem objektu dokumentu.
 
-#### Řešení 2:
+### Jak přijmu všechny revize v dokumentu?
 
- Odpověď: Můžete také povolit sledování revizí pomocí`Document` konstruktor, který přijímá`trackRevisions`a`author` parametry.
+ Chcete-li přijmout všechny revize, použijte`AcceptAllRevisions` metoda na vašem objektu dokumentu.
 
-```csharp
-Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });
-```
+### Mohu odmítnout konkrétní revize?
 
-#### Otázka: Jak přijmout všechny změny v dokumentu pomocí Aspose.Words for .NET?
+ Ano, konkrétní revize můžete odmítnout tak, že na ně přejdete a použijete`Reject` metoda.
 
- A: Použijte`AcceptAllRevisions` metoda`Document` zamítnout přijmout všechny změny provedené v dokumentu.
+### Kde si mohu stáhnout Aspose.Words pro .NET?
 
-```csharp
-doc.AcceptAllRevisions();
-```
-
-#### Otázka: Jak uložím upravený dokument s přijatými revizemi?
-
- Použijte`Save` metoda`Document` objekt pro uložení upraveného dokumentu s přijatými revizemi. Ujistěte se, že jste zadali správnou cestu k souboru.
-
-```csharp
-doc.Save("path/to/the/document.docx");
-```
-
-#### Otázka: Jak zastavím sledování revizí v Aspose.Words pro .NET?
-
- A: Použijte`StopTrackRevisions` metoda`Document` objekt k zastavení revizí sledování.
-
-```csharp
-doc.StopTrackRevisions();
-```
-
-#### Otázka: Jak odstraním revidovaný odstavec v dokumentu pomocí Aspose.Words for .NET?
-
- A: Chcete-li odstranit revidovaný odstavec v dokumentu, můžete použít`Remove` metoda sběru odstavců.
-
-```csharp
-ParagraphCollection paragraphs = body.Paragraphs;
-Paragraph para = paragraphs[2];
-para.Remove();
-```
+ Aspose.Words for .NET si můžete stáhnout z webu[odkaz ke stažení](https://releases.aspose.com/words/net/).

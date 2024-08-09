@@ -96,7 +96,7 @@ groupShape.CoordSize = new Size(200, 200);
 
 ## 步骤 5：将 GroupShape 插入文档
 
-现在，让我们插入`GroupShape`进入文档使用`DocumentBuilder`.
+现在，让我们插入我们的`GroupShape`进入文档使用`DocumentBuilder`.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

@@ -72,7 +72,7 @@ doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile
 
 ## 結論
 
-これで完了です。わずか数行のコードで、すべての CSS ルールが 1 つのファイルに整理された状態で、Word 文書を HTML に変換できました。この方法により、CSS 管理が簡素化されるだけでなく、HTML 文書の保守性も向上します。次に Word 文書の変換を行うときには、整理された状態を保つ方法を正確に把握できます。
+これで完了です。わずか数行のコードで、すべての CSS ルールが 1 つのファイルに整理された状態で、Word 文書を HTML に変換できました。この方法により、CSS 管理が簡素化されるだけでなく、HTML 文書の保守性も向上します。次に Word 文書の変換を任されたときには、整理された状態を保つ方法を正確に把握できます。
 
 ## よくある質問
 
@@ -89,4 +89,4 @@ doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile
 Aspose.Words for .NET は、PDF、TXT、JPEG や PNG などの画像形式を含むさまざまな形式をサポートしています。
 
 ### Aspose.Words for .NET に関するその他のリソースはどこで見つかりますか?
-チェックしてください[ドキュメンテーション](https://reference.aspose.com/words/net/)包括的なガイドと API リファレンスについては、こちらをご覧ください。
+チェックしてください[ドキュメント](https://reference.aspose.com/words/net/)包括的なガイドと API リファレンスについては、こちらをご覧ください。

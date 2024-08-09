@@ -69,7 +69,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
 ```
 
- A beállítással`PreferredControlType` nak nek`HtmlControlType.StructuredDocumentTag`, biztosítjuk, hogy a kombinált mező strukturált dokumentumcímkeként (SDT) jelenjen meg a Word dokumentumban.
+ Beállítás által`PreferredControlType` hogy`HtmlControlType.StructuredDocumentTag`, biztosítjuk, hogy a kombinált mező strukturált dokumentumcímkeként (SDT) jelenjen meg a Word dokumentumban.
 
 ## 4. lépés: Töltse be a HTML-tartalmat a dokumentumba
 

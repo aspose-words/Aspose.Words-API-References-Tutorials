@@ -16,7 +16,7 @@ Listor finns i två primära typer: punktlista och numrerade. De låter dig pres
 
 ## Ställa in miljön
 
-Innan vi dyker in i att skapa och hantera listor, se till att du har Aspose.Words för Python-biblioteket installerat. Du kan ladda ner den från[här](https://releases.aspose.com/words/python/) . Se även API-dokumentationen på[den här länken](https://reference.aspose.com/words/python-net/) för detaljerad information.
+Innan vi dyker in i att skapa och hantera listor, se till att du har Aspose.Words för Python-biblioteket installerat. Du kan ladda ner den från[här](https://releases.aspose.com/words/python/) . Se även API-dokumentationen på[denna länk](https://reference.aspose.com/words/python-net/) för detaljerad information.
 
 ## Skapa punktlistor
 
@@ -115,7 +115,7 @@ I den här handledningen undersökte vi hur man skapar och hanterar listor i Wor
 ## Vanliga frågor
 
 ### Hur installerar jag Aspose.Words för Python?
- Du kan ladda ner biblioteket från[den här länken](https://releases.aspose.com/words/python/) och följ installationsinstruktionerna i dokumentationen.
+ Du kan ladda ner biblioteket från[denna länk](https://releases.aspose.com/words/python/) och följ installationsinstruktionerna i dokumentationen.
 
 ### Kan jag anpassa numreringsstilen för mina listor?
 Absolut! Aspose.Words Python låter dig anpassa numreringsformat, punktstilar och justering för att skräddarsy dina listor efter dina specifika behov.

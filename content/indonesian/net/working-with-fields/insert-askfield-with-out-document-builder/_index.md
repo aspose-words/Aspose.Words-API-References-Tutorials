@@ -9,7 +9,7 @@ url: /id/net/working-with-fields/insert-askfield-with-out-document-builder/
 ---
 ## Perkenalan
 
-Apakah Anda ingin menguasai otomatisasi dokumen dengan Aspose.Words untuk .NET? Anda datang ke tempat yang tepat! Hari ini, kami akan memandu Anda tentang cara menyisipkan bidang ASK tanpa menggunakan Pembuat Dokumen. Ini adalah fitur bagus ketika Anda ingin dokumen Anda meminta masukan spesifik kepada pengguna, menjadikan dokumen Word Anda lebih interaktif dan dinamis. Jadi, mari selami dan jadikan dokumen Anda lebih cerdas!
+Apakah Anda ingin menguasai otomatisasi dokumen dengan Aspose.Words untuk .NET? Anda datang ke tempat yang tepat! Hari ini, kami akan memandu Anda tentang cara menyisipkan kolom ASK tanpa menggunakan Pembuat Dokumen. Ini adalah fitur bagus ketika Anda ingin dokumen Anda meminta masukan tertentu kepada pengguna, menjadikan dokumen Word Anda lebih interaktif dan dinamis. Jadi, mari selami dan jadikan dokumen Anda lebih cerdas!
 
 ## Prasyarat
 
@@ -83,7 +83,7 @@ field.PromptOnceOnMailMerge = true;
 
 ## Langkah 5: Perbarui Bidang
 
-Setelah mengonfigurasi kolom ASK, kita perlu memperbaruinya untuk memastikan semua pengaturan diterapkan dengan benar:
+Setelah mengonfigurasi bidang ASK, kita perlu memperbaruinya untuk memastikan semua pengaturan diterapkan dengan benar:
 
 ```csharp
 field.Update();

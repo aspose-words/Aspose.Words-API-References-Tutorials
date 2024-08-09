@@ -95,7 +95,7 @@ Terakhir, mari simpan dokumen kita yang telah dimodifikasi. Anda dapat menyimpan
 doc.Save("path/to/your/modified/document.docx");
 ```
 
-Dan voila! Anda baru saja mengotomatiskan sebagian alur kerja dokumen Anda. Betapa kerennya itu?
+Dan voila! Anda baru saja mengotomatiskan sebagian alur kerja dokumen Anda. Keren kan?
 
 ## Kesimpulan
 

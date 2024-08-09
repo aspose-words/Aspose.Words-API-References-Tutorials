@@ -104,7 +104,7 @@ table.description = "Figures are in USD."
 
 ## Responsief ontwerp voor tafels:
 
-In documenten met verschillende lay-outs wordt een responsief tabelontwerp cruciaal. Het aanpassen van kolombreedtes en celhoogtes op basis van de beschikbare ruimte zorgt ervoor dat de tabel leesbaar en visueel aantrekkelijk blijft.
+In documenten met verschillende lay-outs wordt responsief tabelontwerp cruciaal. Het aanpassen van kolombreedtes en celhoogtes op basis van de beschikbare ruimte zorgt ervoor dat de tabel leesbaar en visueel aantrekkelijk blijft.
 
 ```python
 # Check available space and adjust column widths accordingly

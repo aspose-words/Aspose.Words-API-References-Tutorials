@@ -16,7 +16,7 @@ Você já precisou mesclar vários documentos do Word em um arquivo coeso? Estej
 Antes de começarmos, vamos ter certeza de que você tem tudo o que precisa:
 
 1. Conhecimento básico de C#: você deve estar confortável com a sintaxe e os conceitos do C#.
-2.  Aspose.Words para .NET: Faça o download[aqui](https://releases.aspose.com/words/net/) . Se você está apenas explorando, você pode começar com um[teste grátis](https://releases.aspose.com/).
+2.  Aspose.Words para .NET: Faça o download[aqui](https://releases.aspose.com/words/net/) . Se você está apenas explorando, você pode começar com um[teste gratuito](https://releases.aspose.com/).
 3. Visual Studio: Qualquer versão recente deve funcionar, mas a versão mais recente é recomendada.
 4. .NET Framework: certifique-se de que esteja instalado em seu sistema.
 
@@ -99,7 +99,7 @@ Aspose.Words for .NET é uma biblioteca poderosa que permite aos desenvolvedores
 
 ### Posso usar o Aspose.Words for .NET gratuitamente?
 
- Você pode tentar Aspose.Words for .NET usando um[teste grátis](https://releases.aspose.com/). Para uso de longo prazo, você precisará adquirir uma licença.
+ Você pode tentar Aspose.Words for .NET usando um[teste gratuito](https://releases.aspose.com/). Para uso de longo prazo, você precisará adquirir uma licença.
 
 ### Como lidar com diferentes formatações durante a mesclagem?
 

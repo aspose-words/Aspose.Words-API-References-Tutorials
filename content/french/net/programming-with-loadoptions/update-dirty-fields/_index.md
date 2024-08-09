@@ -16,7 +16,7 @@ Avez-vous déjà été dans une situation où vous avez un document Word rempli 
 
 Avant de plonger dans le vif du sujet, assurons-nous que vous disposez de tout ce dont vous avez besoin :
 
-1.  Aspose.Words pour .NET : assurez-vous que vous disposez de la dernière version. Sinon, vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/).
+1.  Aspose.Words pour .NET : assurez-vous que vous disposez de la dernière version. Sinon, vous pouvez[téléchargez-le ici](https://releases.aspose.com/words/net/).
 2. .NET Framework : toute version compatible avec Aspose.Words.
 3. Connaissance de base de C# : Une connaissance de la programmation C# sera bénéfique.
 4. Un exemple de document Word : un document avec des champs modifiés qui doivent être mis à jour.
@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithLoadOptions.UpdateDirtyFields.docx");
 
 ## Conclusion
 
-Et voila! Vous venez d'automatiser le processus de mise à jour des champs modifiés dans un document Word à l'aide d'Aspose.Words pour .NET. Fini les mises à jour manuelles, fini les maux de tête. Avec ces étapes simples, vous pouvez gagner du temps et garantir l’exactitude de vos documents. Prêt à essayer ?
+Et voilà ! Vous venez d'automatiser le processus de mise à jour des champs modifiés dans un document Word à l'aide d'Aspose.Words pour .NET. Fini les mises à jour manuelles, fini les maux de tête. Avec ces étapes simples, vous pouvez gagner du temps et garantir l’exactitude de vos documents. Prêt à essayer ?
 
 ## FAQ
 
@@ -92,4 +92,4 @@ Oui, Aspose.Words offre la flexibilité de mettre à jour des champs spécifique
 Oui, Aspose.Words est une bibliothèque puissante qui simplifie le processus de manipulation des documents Word par programmation.
 
 ### Où puis-je trouver plus d’informations sur Aspose.Words ?
- Vérifiez[Documentation](https://reference.aspose.com/words/net/) pour des guides détaillés et des exemples.
+ Découvrez le[documentation](https://reference.aspose.com/words/net/) pour des guides détaillés et des exemples.

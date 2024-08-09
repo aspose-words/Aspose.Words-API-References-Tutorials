@@ -9,7 +9,7 @@ url: /sv/net/programming-with-bookmarks/append-bookmarked-text/
 ---
 ## Introduktion
 
-Hallå där! Har du någonsin försökt lägga till text från ett bokmärkt avsnitt i ett Word-dokument och tyckt att det var svårt? Du har tur! Denna handledning kommer att leda dig genom processen med Aspose.Words för .NET. Vi delar upp det i enkla steg så att du enkelt kan följa med. Låt oss dyka in och lägga till den bokmärkta texten som ett proffs!
+Hej där! Har du någonsin försökt lägga till text från ett bokmärkt avsnitt i ett Word-dokument och tyckt att det var svårt? Du har tur! Denna handledning kommer att leda dig genom processen med Aspose.Words för .NET. Vi delar upp det i enkla steg så att du enkelt kan följa med. Låt oss dyka in och lägga till den bokmärkta texten som ett proffs!
 
 ## Förutsättningar
 

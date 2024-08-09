@@ -78,7 +78,7 @@ string customPropertyValue = customProperty.Value.ToString();
 
 ## Következtetés
 
- Gratulálunk! Sikeresen konfigurált egy hivatkozást egy Word-dokumentum tartalmára az Aspose.Words for .NET használatával. Az alábbi lépések követésével egyéni tulajdonságokat adhat hozzá és kezelhet, amelyek a Word-dokumentumok meghatározott tartalmához kapcsolódnak, így a dokumentumkezelés dinamikusabbá és hatékonyabbá válik. Ha bármilyen kérdése van, vagy bármilyen problémába ütközik, bátran nézze meg a[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/) vagy kérjen segítséget a[Aspose támogatási fórum](https://forum.aspose.com/c/words/8).
+ Gratulálok! Sikeresen konfigurált egy hivatkozást egy Word-dokumentum tartalmára az Aspose.Words for .NET használatával. Az alábbi lépések követésével egyéni tulajdonságokat adhat hozzá és kezelhet, amelyek a Word-dokumentumok meghatározott tartalmához kapcsolódnak, így a dokumentumkezelés dinamikusabbá és hatékonyabbá válik. Ha bármilyen kérdése van, vagy bármilyen problémába ütközik, bátran nézze meg a[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/) vagy kérjen segítséget a[Aspose támogatási fórum](https://forum.aspose.com/c/words/8).
 
 ## GYIK
 

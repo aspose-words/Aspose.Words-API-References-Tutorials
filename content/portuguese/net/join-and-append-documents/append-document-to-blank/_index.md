@@ -33,7 +33,7 @@ using Aspose.Words;
 
 Para começar, você precisará configurar o ambiente do seu projeto. Isso envolve a criação de um novo projeto no Visual Studio e a instalação da biblioteca Aspose.Words for .NET.
 
-### Criando um novo projeto
+### Criando um Novo Projeto
 
 1. Abra o Visual Studio e selecione Arquivo > Novo > Projeto.
 2. Escolha um aplicativo de console (.NET Core) ou um aplicativo de console (.NET Framework).
@@ -126,7 +126,7 @@ Sim, você pode anexar vários documentos chamando repetidamente o`AppendDocumen
 
 ### Preciso de uma licença para usar o Aspose.Words?
 
- Você pode começar com um[teste grátis](https://releases.aspose.com/) ou obter um[licença temporária](https://purchase.aspose.com/temporary-license/) para recursos estendidos.
+ Você pode começar com um[teste gratuito](https://releases.aspose.com/) ou obter um[licença temporária](https://purchase.aspose.com/temporary-license/) para recursos estendidos.
 
 ### Posso anexar documentos de diferentes tipos, como DOCX e DOC?
 

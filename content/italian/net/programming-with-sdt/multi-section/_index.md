@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-sdt/multi-section/
 ---
-## introduzione
+## Introduzione
 
 Benvenuti in questa guida completa su come lavorare con tag di documenti strutturati in più sezioni in Aspose.Words per .NET! Se ti stai immergendo nel mondo della manipolazione dei documenti e hai bisogno di gestire i tag di documenti strutturati (SDT) in modo efficace, sei nel posto giusto. Che tu stia automatizzando l'elaborazione dei documenti, generando report o semplicemente gestendo documenti complessi, capire come interagire con gli SDT può essere incredibilmente prezioso. In questo tutorial, illustreremo il processo passo dopo passo, assicurandoci di comprendere ogni dettaglio relativo all'utilizzo di questi tag nelle applicazioni .NET.
 

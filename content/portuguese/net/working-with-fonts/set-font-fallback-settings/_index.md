@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /pt/net/working-with-fonts/set-font-fallback-settings/
 ---
+## Introdução
 
 Ao trabalhar com documentos que contêm diversos elementos de texto, como idiomas diferentes ou caracteres especiais, é crucial garantir que esses elementos sejam exibidos corretamente. Aspose.Words for .NET oferece um recurso poderoso chamado Font Fallback Settings, que ajuda a definir regras para substituição de fontes quando a fonte original não suporta determinados caracteres. Neste guia, exploraremos como definir as configurações de fallback de fonte usando Aspose.Words for .NET em um tutorial passo a passo.
 
@@ -15,7 +16,7 @@ Ao trabalhar com documentos que contêm diversos elementos de texto, como idioma
 Antes de mergulhar no tutorial, certifique-se de ter os seguintes pré-requisitos em vigor:
 
 - Conhecimento básico de C#: Familiaridade com a linguagem de programação C# e o framework .NET.
--  Aspose.Words for .NET: Baixe e instale a partir do[Link para Download](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Baixe e instale a partir do[link para baixar](https://releases.aspose.com/words/net/).
 - Ambiente de desenvolvimento: uma configuração como o Visual Studio para escrever e executar seu código.
 -  Documento de amostra: tenha um documento de amostra (por exemplo,`Rendering.docx`) pronto para teste.
 - XML de regras de fallback de fonte: prepare um arquivo XML definindo as regras de fallback de fonte.
@@ -58,7 +59,7 @@ fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
 
 ## Etapa 4: aplicar configurações de fonte ao documento
 
- Atribuir o configurado`FontSettings` ao documento. Isso garante que as regras de substituição de fonte sejam aplicadas ao renderizar o documento.
+ Atribuir o configurado`FontSettings`ao documento. Isso garante que as regras de substituição de fonte sejam aplicadas ao renderizar o documento.
 
 ```csharp
 doc.FontSettings = fontSettings;

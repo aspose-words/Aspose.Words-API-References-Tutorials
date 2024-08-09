@@ -20,7 +20,7 @@ Antes de profundizar en el código, asegúrese de tener los siguientes requisito
 -  Aspose.Words para la biblioteca Java. Puedes descargarlo desde[aquí](https://releases.aspose.com/words/java/).
 - Un conocimiento básico de la programación Java.
 
-## Guía paso por paso
+## Guía paso a paso
 
 ## Paso 1: configurar su proyecto
 

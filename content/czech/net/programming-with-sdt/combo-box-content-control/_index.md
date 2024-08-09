@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-sdt/combo-box-content-control/
 ---
-## Úvod
+## Zavedení
 
 Chcete do dokumentů aplikace Word přidat interaktivní prvky? Tak to jste na správném místě! V této příručce vás provedeme vytvořením ovládacího prvku obsahu pole se seznamem v dokumentu aplikace Word pomocí Aspose.Words for .NET. Na konci tohoto kurzu budete mít jasno v tom, jak vkládat a manipulovat s ovládacími prvky obsahu pole se seznamem, aby byly vaše dokumenty dynamičtější a uživatelsky přívětivější.
 
@@ -15,7 +15,7 @@ Chcete do dokumentů aplikace Word přidat interaktivní prvky? Tak to jste na s
 
 Než se ponoříme do groteskního kódování, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou nejnovější verzi. Můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou nejnovější verzi. Můžete si jej stáhnout[zde](https://releases.aspose.com/words/net/).
 2. .NET Framework: Ujistěte se, že máte na svém počítači nainstalované rozhraní .NET Framework.
 3. Integrované vývojové prostředí (IDE): Visual Studio se doporučuje pro vývoj .NET.
 4. Základní porozumění C#: Tento tutoriál předpokládá, že máte základní znalosti o programování C#.
@@ -107,7 +107,7 @@ Aspose.Words for .NET je výkonná knihovna pro programovou práci s dokumenty W
 Ano, Aspose.Words for .NET podporuje různé frameworky .NET včetně .NET Core a .NET Standard.
 
 ### Jak mohu získat bezplatnou zkušební verzi Aspose.Words pro .NET?
- Můžete si stáhnout bezplatnou zkušební verzi Aspose.Words pro .NET[tady](https://releases.aspose.com/).
+ Můžete si stáhnout bezplatnou zkušební verzi Aspose.Words pro .NET[zde](https://releases.aspose.com/).
 
 ### Jaké další typy ovládacích prvků obsahu mohu vytvořit pomocí Aspose.Words?
 Kromě polí se seznamem můžete vytvářet ovládací prvky zadávání textu, zaškrtávací políčka, nástroje pro výběr data a další.

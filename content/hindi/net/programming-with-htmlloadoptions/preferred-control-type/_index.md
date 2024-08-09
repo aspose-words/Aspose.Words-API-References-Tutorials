@@ -69,7 +69,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
 ```
 
- व्यवस्थित करके`PreferredControlType` को`HtmlControlType.StructuredDocumentTag`, हम यह सुनिश्चित करते हैं कि कॉम्बो बॉक्स को वर्ड दस्तावेज़ में संरचित दस्तावेज़ टैग (एसडीटी) के रूप में प्रस्तुत किया जाए।
+ सेटिंग करके`PreferredControlType` को`HtmlControlType.StructuredDocumentTag`, हम यह सुनिश्चित करते हैं कि कॉम्बो बॉक्स को वर्ड दस्तावेज़ में संरचित दस्तावेज़ टैग (एसडीटी) के रूप में प्रस्तुत किया जाए।
 
 ## चरण 4: दस्तावेज़ में HTML सामग्री लोड करें
 

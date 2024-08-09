@@ -67,7 +67,7 @@ doc.print("printerName");
 
 Aspose.Words voor Java biedt geavanceerde aanpassingsopties, waaronder kop-, voetteksten en pagina-instellingen. Bekijk de API-documentatie voor meer details.
 
-## Probleemoplossen
+## Problemen oplossen
 
 Problemen tegenkomen? Raadpleeg de Aspose.Words voor Java-documentatie voor tips voor het oplossen van problemen.
 

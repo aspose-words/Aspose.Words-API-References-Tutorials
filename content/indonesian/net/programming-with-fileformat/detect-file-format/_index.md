@@ -162,7 +162,7 @@ Mendeteksi format file dokumen menggunakan Aspose.Words untuk .NET adalah proses
 Aspose.Words for .NET adalah perpustakaan yang kuat untuk bekerja dengan dokumen Word secara terprogram. Hal ini memungkinkan pengembang untuk membuat, memodifikasi, dan mengkonversi dokumen dalam berbagai format.
 
 ### Bisakah Aspose.Words mendeteksi dokumen terenkripsi?
-Ya, Aspose.Words dapat mendeteksi apakah suatu dokumen dienkripsi dan Anda dapat menangani dokumen tersebut sesuai dengan itu.
+Ya, Aspose.Words dapat mendeteksi apakah suatu dokumen dienkripsi dan Anda dapat menangani dokumen tersebut dengan tepat.
 
 ### Format apa yang dapat dideteksi Aspose.Words?
 Aspose.Words dapat mendeteksi berbagai format termasuk DOC, DOCX, RTF, HTML, MHTML, ODT, dan masih banyak lagi.

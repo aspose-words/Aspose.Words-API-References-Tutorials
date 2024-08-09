@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-ooxmlsaveoptions/update-last-saved-time-property/
 ---
-## Úvod
+## Zavedení
 
 Přemýšleli jste někdy, jak programově sledovat vlastnost posledního uloženého času v dokumentech aplikace Word? Pokud máte co do činění s více dokumenty a potřebujete zachovat jejich metadata, aktualizace vlastnosti posledního uloženého času může být docela užitečná. Dnes vás provedu tímto procesem pomocí Aspose.Words pro .NET. Tak se připoutejte a jdeme do toho!
 
@@ -89,7 +89,7 @@ Aktualizace vlastnosti posledního uloženého času pomáhá udržovat přesná
 Ano, Aspose.Words for .NET umožňuje aktualizovat různé vlastnosti dokumentu, jako je název, autor a předmět.
 
 ### Je Aspose.Words for .NET zdarma?
- Aspose.Words for .NET nabízí bezplatnou zkušební verzi, ale pro plnou funkčnost je vyžadována licence. Můžete získat licenci[tady](https://purchase.aspose.com/buy).
+ Aspose.Words for .NET nabízí bezplatnou zkušební verzi, ale pro plnou funkčnost je vyžadována licence. Můžete získat licenci[zde](https://purchase.aspose.com/buy).
 
 ### Kde najdu další návody na Aspose.Words pro .NET?
-Můžete najít další návody a dokumentaci[tady](https://reference.aspose.com/words/net/).
+Můžete najít další návody a dokumentaci[zde](https://reference.aspose.com/words/net/).

@@ -90,7 +90,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportFontsAsBase64 = true }
 Na koniec zapiszmy dokument ze skonfigurowanymi opcjami.
 
 
- Użyj`Save` metoda`Document` klasa, aby zapisać dokument:
+ Skorzystaj z`Save` metoda`Document` klasa, aby zapisać dokument:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportFontsAsBase64.html", saveOptions);
@@ -116,5 +116,5 @@ Absolutnie! Aspose.Words dla .NET umożliwia osadzanie różnych zasobów, w tym
 ### Co się stanie, jeśli mój dokument zawiera wiele czcionek?
 Bez problemu! Aspose.Words dla .NET osadzi wszystkie czcionki użyte w dokumencie jako Base64 w wynikowym pliku HTML.
 
-### Czy korzystanie z Aspose.Words dla .NET jest darmowe?
+### Czy korzystanie z Aspose.Words dla .NET jest bezpłatne?
  Aspose.Words dla .NET jest biblioteką komercyjną. Możesz jednak pobrać bezpłatną wersję próbną ze strony[Wydania Aspose](https://releases.aspose.com/) strona.

@@ -20,11 +20,11 @@ Avant d'aborder les aspects techniques, comprenons les concepts fondamentaux de 
 
 ### Types de protection des documents
 
-- #### Mot de passe de protection:
+- #### Protection par mot de passe :
  Limitez l'accès à vos documents avec un mot de passe, en garantissant que seuls les utilisateurs autorisés peuvent les ouvrir et les visualiser.
-- #### Chiffrement:
+- #### Cryptage :
  Convertissez le contenu du document dans un format brouillé à l'aide d'algorithmes de cryptage, le rendant indéchiffrable sans la clé de décryptage correcte.
-- #### Signatures numériques:
+- #### Signatures numériques :
  Joignez des signatures numériques pour vérifier l’authenticité et l’intégrité du document.
 - #### Filigrane :
  Superposez des filigranes visibles ou invisibles pour indiquer la propriété ou la confidentialité.
@@ -37,10 +37,10 @@ Le cryptage des documents fournit une couche de sécurité supplémentaire, rend
 
 ## 3. Premiers pas avec Aspose.Words pour Java
 
-Avant de passer à la sécurité des documents, familiarisons-nous d'abord avec Aspose.Words pour Java. Il s'agit d'une bibliothèque riche en fonctionnalités qui permet aux développeurs Java de créer, modifier et convertir des documents Word par programme. Pour commencer:
+Avant de passer à la sécurité des documents, familiarisons-nous d'abord avec Aspose.Words pour Java. Il s'agit d'une bibliothèque riche en fonctionnalités qui permet aux développeurs Java de créer, modifier et convertir des documents Word par programme. Pour commencer :
 
 1. ### Téléchargez Aspose.Words pour Java :
-  Visiter le[Aspose.Releases](https://releases.aspose.com/words/java/) et téléchargez la dernière version d’Aspose.Words pour Java.
+  Visitez le[Aspose.Releases](https://releases.aspose.com/words/java/) et téléchargez la dernière version d’Aspose.Words pour Java.
 
 2. ### Installez la bibliothèque :
  Une fois le téléchargement terminé, suivez les instructions d'installation pour configurer Aspose.Words dans votre projet Java.

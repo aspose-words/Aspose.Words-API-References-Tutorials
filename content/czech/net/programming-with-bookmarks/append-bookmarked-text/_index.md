@@ -7,9 +7,9 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-bookmarks/append-bookmarked-text/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Zkoušeli jste někdy přidat text z části označené záložkou v dokumentu aplikace Word a přišlo vám to složité? Máte štěstí! Tento tutoriál vás provede procesem pomocí Aspose.Words pro .NET. Rozdělíme to do jednoduchých kroků, abyste je mohli snadno sledovat. Ponořme se do toho a připojme tento text se záložkou jako profesionál!
+Ahoj! Zkoušeli jste někdy přidat text z části označené záložkou v dokumentu aplikace Word a přišlo vám to složité? Máte štěstí! Tento tutoriál vás provede procesem pomocí Aspose.Words pro .NET. Rozdělíme to do jednoduchých kroků, abyste je mohli snadno sledovat. Ponořme se do toho a připojme tento text se záložkou jako profesionál!
 
 ## Předpoklady
 

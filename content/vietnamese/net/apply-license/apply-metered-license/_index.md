@@ -90,7 +90,7 @@ catch (Exception e)
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Việc áp dụng giấy phép đo lường trong Aspose.Words cho .NET rất đơn giản khi bạn chia nó thành các bước có thể quản lý được. Mô hình cấp phép này mang lại sự linh hoạt và tiết kiệm chi phí, khiến nó trở thành lựa chọn tuyệt vời cho nhiều nhà phát triển. Hãy nhớ rằng, điều quan trọng là thiết lập chính xác các khóa được đo lường của bạn và xử lý mọi trường hợp ngoại lệ có thể xảy ra. Chúc mừng mã hóa!
+Và bạn có nó! Việc áp dụng giấy phép đo lường trong Aspose.Words cho .NET rất đơn giản khi bạn chia nó thành các bước có thể quản lý được. Mô hình cấp phép này mang lại sự linh hoạt và tiết kiệm chi phí, khiến nó trở thành lựa chọn tuyệt vời cho nhiều nhà phát triển. Hãy nhớ rằng, điều quan trọng là thiết lập chính xác các khóa được đo lường của bạn và xử lý mọi trường hợp ngoại lệ có thể xảy ra. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 

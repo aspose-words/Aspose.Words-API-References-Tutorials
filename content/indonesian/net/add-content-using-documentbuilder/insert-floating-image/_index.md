@@ -77,7 +77,7 @@ string imagePath = dataDir + "Transparent background logo.png";
 
 Setelah semuanya siap, mari masukkan gambar mengambang ke dalam dokumen.
 
- Menggunakan`InsertImage` metode`DocumentBuilder` kelas untuk menyisipkan gambar:
+ Gunakan`InsertImage` metode`DocumentBuilder` kelas untuk menyisipkan gambar:
 
 ```csharp
 builder.InsertImage(imagePath,

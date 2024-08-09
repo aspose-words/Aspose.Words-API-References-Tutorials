@@ -38,7 +38,7 @@ Ne feledje, a gyakorlat teszi a mestert, és az Aspose.Words for Java segítség
 ### [Megjegyzések használata az Aspose.Words for Java-ban](./using-comments/)
 Ismerje meg a megjegyzések használatát az Aspose.Words for Java programban. Lépésről lépésre bemutató útmutató megjegyzések hozzáadásához és személyre szabásához a dokumentumokhoz.
 ### [Mezők használata az Aspose.Words for Java-ban](./using-fields/)
-Tanulja meg az Aspose.Words for Java mezők hatékony használatát ebben a lépésről lépésre mutató oktatóanyagban. Dinamikus Word dokumentumokat hozhat létre könnyedén.
+Ebben a lépésenkénti oktatóanyagban tanulja meg az Aspose.Words for Java mezők hatékony használatát. Dinamikus Word dokumentumokat hozhat létre könnyedén.
 ### [Betűtípusok használata az Aspose.Words for Java-ban](./using-fonts/)
 Fedezze fel a betűtípus formázását az Aspose.Words for Java programban: méret, stílus, szín és egyebek. Hozzon létre könnyedén gyönyörűen formázott dokumentumokat.
 ### [Lábjegyzetek és végjegyzetek használata az Aspose.Words for Java programban](./using-footnotes-and-endnotes/)
@@ -58,7 +58,7 @@ Tanulja meg a Markdown használatát az Aspose.Words for Java programban ezzel a
 ### [Csomópontok használata az Aspose.Words for Java-ban](./using-nodes/)
 Tanulja meg a csomópontok kezelését az Aspose.Words for Java programban ezzel a lépésről lépésre mutató oktatóanyaggal. Oldja fel a dokumentumfeldolgozási teljesítményt.
 ### [OLE-objektumok és ActiveX-vezérlők használata az Aspose.Words for Java-ban](./using-ole-objects-and-activex/)
-Ismerje meg az OLE objektumok és ActiveX-vezérlők használatát az Aspose.Words for Java programban. Könnyedén hozhat létre interaktív dokumentumokat. Kezd el most!
+Ismerje meg az OLE objektumok és ActiveX-vezérlők használatát az Aspose.Words for Java programban. Könnyedén hozhat létre interaktív dokumentumokat. Kezdje el most!
 ### [Az Aspose.Words for Java verzióinak használata](./using-revisions/)
 Tanulja meg hatékonyan használni az Aspose.Words for Java revízióvezérlőit. Lépésről lépésre útmutató fejlesztőknek. Optimalizálja dokumentumkezelését.
 ### [Szakaszok használata az Aspose.Words for Java programban](./using-sections/)

@@ -15,10 +15,10 @@ url: /es/net/document-protection/password-protection/
 
 Antes de profundizar en el meollo de la cuestión de proteger con contraseña sus documentos de Word, hay algunas cosas que necesitará:
 
-1.  Aspose.Words para .NET: asegúrese de tener la biblioteca Aspose.Words para .NET. Puede[descarguelo aqui](https://releases.aspose.com/words/net/).
+1.  Aspose.Words para .NET: asegúrese de tener la biblioteca Aspose.Words para .NET. Puede[descárgalo aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: Visual Studio o cualquier otro entorno de desarrollo C#.
 3. Conocimientos básicos de C#: una comprensión fundamental de la programación en C#.
-4.  Licencia Aspose: Obtenga una licencia de[aquí](https://purchase.aspose.com/buy) usar un[licencia temporal](https://purchase.aspose.com/temporary-license/) Para evaluar.
+4.  Licencia Aspose: Obtenga una licencia de[aquí](https://purchase.aspose.com/buy) usar un[licencia temporal](https://purchase.aspose.com/temporary-license/) para evaluación.
 
 ## Importar espacios de nombres
 
@@ -50,7 +50,7 @@ Install-Package Aspose.Words
 
 Ahora que nuestro proyecto está configurado, creemos un documento de Word que podamos proteger.
 
- En tus`Program.cs` archivo, inicialice una nueva instancia del`Document` clase. Esta clase representa el documento de Word con el que trabajará.
+ en tu`Program.cs` archivo, inicialice una nueva instancia del`Document` clase. Esta clase representa el documento de Word con el que trabajará.
 
 ```csharp
 // La ruta al directorio de documentos.
@@ -68,7 +68,7 @@ Aquí es donde ocurre la magia. Aplicaremos protección con contraseña a nuestr
 
 ### Aplicar protección
 
- Utilizar el`Protect` método de la`Document` clase para aplicar protección con contraseña. 
+ Utilice el`Protect` método de la`Document` clase para aplicar protección con contraseña. 
 
 ```csharp
 // Aplicar protección de documentos.
@@ -80,7 +80,7 @@ doc.Protect(ProtectionType.NoProtection, "password");
 Finalmente, guardemos nuestro documento protegido en un directorio específico.
 
 
- Utilizar el`Save` método para guardar su documento. Proporcione la ruta donde desea guardar el documento junto con el nombre del archivo.
+ Utilice el`Save` método para guardar su documento. Proporcione la ruta donde desea guardar el documento junto con el nombre del archivo.
 
 ```csharp
 doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");

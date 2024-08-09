@@ -95,7 +95,7 @@ Na koniec zapiszmy nasz zmodyfikowany dokument. Możesz zapisać go w formacie .
 doc.Save("path/to/your/modified/document.docx");
 ```
 
-I voila! Właśnie zautomatyzowałeś część obiegu dokumentów. Jakie to jest świetne?
+I voila! Właśnie zautomatyzowałeś część obiegu dokumentów. Jakie to fajne?
 
 ## Wniosek
 

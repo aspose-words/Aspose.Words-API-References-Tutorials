@@ -17,7 +17,7 @@ Bu kılavuz, Aspose.Words for .NET kullanarak Word belgelerinizdeki satır yer i
 
 Dalışa başlamadan önce birkaç şeye ihtiyacınız olacak:
 
-1.  Aspose.Words for .NET: Bu ticari kütüphane, Word belgeleriyle programlı olarak çalışmak için işlevler sağlar. 2. Ücretsiz deneme sürümünü şu adresten indirebilirsiniz:[İndirme: {link](https://releases.aspose.com/words/net/) veya adresinden bir lisans satın alın[satın almak](https://purchase.aspose.com/buy).
+1.  Aspose.Words for .NET: Bu ticari kütüphane, Word belgeleriyle programlı olarak çalışmak için işlevler sağlar. 2. Ücretsiz deneme sürümünü şu adresten indirebilirsiniz:[indirme bağlantısı](https://releases.aspose.com/words/net/) veya adresinden bir lisans satın alın[satın almak](https://purchase.aspose.com/buy).
 3. AC# geliştirme ortamı: Visual Studio veya başka herhangi bir C# IDE mükemmel çalışacaktır.
 4. Satır yer imleri içeren bir Word belgesi: Gösterim amacıyla "Tablo sütunu yer imleri.docx" adlı örnek bir belge kullanacağız.
 
@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "Table column bookmarks.docx");
 
 ## Adım 2: Satır Yer İmlerini Çözün
 
- Sihir yapılan yer burasıdır!`Untangle` işlevi satır yer imlerinin çözülmesiyle ilgilenir. İşlevselliğini inceleyelim:
+ Sihrin gerçekleştiği yer burası!`Untangle` işlevi satır yer imlerinin çözülmesiyle ilgilenir. İşlevselliğini inceleyelim:
 
 ```csharp
 private void Untangle(Document doc)
@@ -65,7 +65,7 @@ private void Untangle(Document doc)
 Kodun ne yaptığına ilişkin adım adım açıklama aşağıda verilmiştir:
 
  Bir belge kullanarak belgedeki tüm yer imlerini yineliyoruz.`foreach` döngü.
-Her yer imi için, hem yer imi başlangıcının (`bookmark.BookmarkStart`) ve yer imi sonu (`bookmark.BookmarkEnd` ) kullanmak`GetAncestor` yöntem.
+Her yer imi için, hem yer imi başlangıcının (`bookmark.BookmarkStart`) ve yer imi sonu (`bookmark.BookmarkEnd` ) kullanarak`GetAncestor` Yöntem.
 Daha sonra her iki satırın da bulunup bulunmadığını kontrol ederiz (`row1 != null`Ve`row2 != null`) ve eğer bitişik satırlarsa (`row1.NextSibling == row2`). Bu, yalnızca bitişik satırlara yayılan yer işaretlerini değiştirmemizi sağlar.
 Koşullar karşılanırsa, yer imi bitiş düğümünü üst satırın son hücresindeki son paragrafın sonuna taşırız (`row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd)`) onları etkili bir şekilde çözer.
 
@@ -87,7 +87,7 @@ private void DeleteRowByBookmark(Document doc, string bookmarkName)
 
 Yer imi adını alıyoruz (`bookmarkName`) giriş olarak.
  İlgili yer imi nesnesini kullanarak alıyoruz`doc.Range.Bookmarks[bookmarkName]`.
-Daha sonra yer iminin üst satırını kullanmaya başlarız`GetAncestor` (benzer`Untangle` işlev).
+Daha sonra yer iminin üst satırını kullanmaya başlarız`GetAncestor` (şuna benzer`Untangle` işlev).
 Son olarak yer işaretinin ve satırın mevcut olup olmadığını kontrol ederiz (`bookmark != null` Ve
 
 ## 4. Adım: Dolaşmayı Doğrulayın
@@ -119,7 +119,7 @@ Bu, belgeyi çözülmüş yer imleriyle ve silinmiş satırlarla birlikte "Worki
 
 ### Aspose.Words for .NET ücretsiz mi?
 
- Aspose.Words for .NET, ücretsiz deneme sürümü bulunan ticari bir kütüphanedir. Şuradan indirebilirsiniz[İndirme: {link](https://releases.aspose.com/words/net/).
+ Aspose.Words for .NET, ücretsiz deneme sürümü bulunan ticari bir kütüphanedir. Şuradan indirebilirsiniz[indirme bağlantısı](https://releases.aspose.com/words/net/).
 
 ### Satır yer işaretlerini Word'de manuel olarak çözebilir miyim?
 

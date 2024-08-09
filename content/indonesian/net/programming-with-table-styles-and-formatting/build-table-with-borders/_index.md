@@ -72,7 +72,7 @@ Metode ini menghapus semua batas yang ada dari tabel, memberi Anda landasan yang
 Sekarang, Anda dapat mengatur batas baru di sekitar dan di dalam tabel. Anda dapat menyesuaikan gaya, lebar, dan warna batas sesuai kebutuhan:
 
 ```csharp
-// Tetapkan batas hijau di sekitar dan di dalam tabel
+// Tetapkan batas hijau di sekeliling dan di dalam tabel
 table.SetBorders(LineStyle.Single, 1.5, Color.Green);
 ```
 
@@ -99,13 +99,13 @@ Dengan mengikuti langkah-langkah ini, Anda dapat dengan mudah membuat dan mengku
 Ya, Aspose.Words untuk .NET memungkinkan Anda menerapkan gaya batas yang berbeda ke berbagai bagian tabel, seperti sel, baris, atau kolom individual.
 
 ### Apakah mungkin menetapkan batas hanya untuk sel tertentu?
- Sangat. Anda dapat menargetkan sel tertentu dan menetapkan batasnya satu per satu menggunakan`CellFormat` Properti.
+ Sangat. Anda dapat menargetkan sel tertentu dan menetapkan batasnya satu per satu menggunakan`CellFormat` milik.
 
 ### Bagaimana cara menghapus batas tabel?
  Anda dapat menghapus batas dengan menggunakan`ClearBorders` metode, yang menghapus semua batas yang ada dari tabel.
 
 ### Bisakah saya menggunakan warna khusus untuk pembatas?
- Ya, Anda dapat menggunakan warna apa pun untuk batasnya dengan menentukan`Color` Properti. Warna khusus dapat diatur menggunakan`Color.FromArgb` metode jika Anda membutuhkan warna tertentu.
+ Ya, Anda dapat menggunakan warna apa pun untuk batasnya dengan menentukan`Color` milik. Warna khusus dapat diatur menggunakan`Color.FromArgb` metode jika Anda membutuhkan warna tertentu.
 
 ### Apakah perbatasan yang ada perlu dibersihkan sebelum menetapkan perbatasan baru?
 Meskipun tidak wajib, menghapus batas yang ada sebelum menetapkan yang baru akan memastikan bahwa pengaturan batas baru Anda diterapkan tanpa gangguan apa pun dari gaya sebelumnya.

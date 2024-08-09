@@ -138,7 +138,7 @@ MetafileRenderingOptions는 문서를 PDF로 변환할 때 메타파일(예: WMF
 
 ### Q4: Aspose.Words에 대한 지원은 어디서 찾을 수 있나요?
 
- 방문하다[Aspose.Words 지원 포럼](https://forum.aspose.com/c/words/8) 도움을 위해.
+ 방문[Aspose.Words 지원 포럼](https://forum.aspose.com/c/words/8) 도움을 위해.
 
 ### Q5: Aspose.Words에 대한 임시 라이선스를 얻을 수 있나요?
 

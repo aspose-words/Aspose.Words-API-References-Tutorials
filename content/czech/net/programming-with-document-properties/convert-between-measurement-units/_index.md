@@ -7,18 +7,18 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-document-properties/convert-between-measurement-units/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Jste vývojář pracující s dokumenty Word pomocí Aspose.Words for .NET? Pokud ano, může se stát, že budete často potřebovat nastavit okraje, záhlaví nebo zápatí v různých měrných jednotkách. Převod mezi jednotkami, jako jsou palce a body, může být složitý, pokud nejste obeznámeni s funkcemi knihovny. V tomto komplexním tutoriálu vás provedeme procesem převodu mezi měrnými jednotkami pomocí Aspose.Words for .NET. Pojďme se ponořit a zjednodušit tyto převody!
+Ahoj! Jste vývojář pracující s dokumenty Word pomocí Aspose.Words for .NET? Pokud ano, může se stát, že budete často potřebovat nastavit okraje, záhlaví nebo zápatí v různých měrných jednotkách. Převod mezi jednotkami, jako jsou palce a body, může být složitý, pokud nejste obeznámeni s funkcemi knihovny. V tomto komplexním tutoriálu vás provedeme procesem převodu mezi měrnými jednotkami pomocí Aspose.Words for .NET. Pojďme se ponořit a zjednodušit tyto převody!
 
 ## Předpoklady
 
 Než začneme, ujistěte se, že máte následující:
 
-1.  Aspose.Words for .NET Library: Pokud jste tak ještě neučinili, stáhněte si ji[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Pokud jste tak ještě neučinili, stáhněte si ji[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Visual Studio nebo jakékoli jiné IDE kompatibilní s .NET.
 3. Základní znalost C#: Pochopení základů C# vám pomůže snadno pokračovat.
-4.  Aspose License: Volitelné, ale doporučené pro plnou funkčnost. Můžete získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
+4.  Aspose License: Volitelné, ale doporučené pro plnou funkčnost. Můžete získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
 
 ## Importovat jmenné prostory
 
@@ -93,10 +93,10 @@ A tady to máte! Úspěšně jste převedli a nastavili okraje a vzdálenosti v 
 I když můžete Aspose.Words používat bez licence, některé pokročilé funkce mohou být omezeny. Získání licence zajišťuje plnou funkčnost.
 
 ### Jak nainstaluji Aspose.Words for .NET?
- Můžete si jej stáhnout z[webová stránka](https://releases.aspose.com/words/net/) a postupujte podle pokynů k instalaci.
+ Můžete si jej stáhnout z[webové stránky](https://releases.aspose.com/words/net/) a postupujte podle pokynů k instalaci.
 
 ### Mohu nastavit různé jednotky pro různé části dokumentu?
  Ano, můžete upravit okraje a další nastavení pro různé sekce pomocí`Section` třída.
 
 ### Jaké další funkce Aspose.Words nabízí?
- Aspose.Words podporuje širokou škálu funkcí včetně převodu dokumentů, hromadné korespondence a rozsáhlých možností formátování. Zkontrolovat[dokumentace](https://reference.aspose.com/words/net/) Více podrobností.
+ Aspose.Words podporuje širokou škálu funkcí včetně převodu dokumentů, hromadné korespondence a rozsáhlých možností formátování. Zkontrolujte[dokumentace](https://reference.aspose.com/words/net/) pro více podrobností.

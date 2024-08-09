@@ -23,7 +23,7 @@ Al termine di questi tutorial, avrai acquisito le conoscenze e le competenze nec
 
 Quindi, tuffati nei tutorial sopra elencati e sblocca tutto il potenziale di Aspose.Words per Java nei tuoi progetti relativi ai documenti. Buona programmazione!
 
- Per ulteriori informazioni, consulta il[Aspose.Words per la documentazione dell'API Java](https://reference.aspose.com/words/java/) e, per iniziare, scaricalo da[Qui](https://releases.aspose.com/words/java/) . Se hai domande o hai bisogno di assistenza, non esitare a contattare il ns[Forum di assistenza](https://forum.aspose.com/).
+ Per ulteriori informazioni, consulta il[Aspose.Words per la documentazione dell'API Java](https://reference.aspose.com/words/java/) e, per iniziare, scaricalo da[Qui](https://releases.aspose.com/words/java/) . Se hai domande o hai bisogno di assistenza, non esitare a contattare il ns[forum di supporto](https://forum.aspose.com/).
 
 ## Tutorial sulla conversione e sull'esportazione dei documenti
 ### [Generazione di etichette di codici a barre personalizzate in Aspose.Words per Java](./generating-custom-barcode-labels/)

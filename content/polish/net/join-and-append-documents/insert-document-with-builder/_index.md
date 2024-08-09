@@ -90,7 +90,7 @@ Teraz następuje ekscytująca część — wstawianie dokumentu źródłowego do
 builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
- Używając`InsertDocument` metodą możemy wstawić cały dokument źródłowy do dokumentu docelowego. The`ImportFormatMode.KeepSourceFormatting` zapewnia zachowanie formatowania dokumentu źródłowego.
+ Korzystanie z`InsertDocument` metodą możemy wstawić cały dokument źródłowy do dokumentu docelowego. The`ImportFormatMode.KeepSourceFormatting` zapewnia zachowanie formatowania dokumentu źródłowego.
 
 ## Krok 7: Zapisywanie scalonego dokumentu
 
@@ -115,10 +115,10 @@ Aspose.Words dla .NET to potężna biblioteka, która pozwala programistom progr
  Tak, za pomocą`ImportFormatMode.KeepSourceFormatting`, formatowanie dokumentu źródłowego zostaje zachowane po wstawieniu go do dokumentu docelowego.
 
 ### Czy potrzebuję licencji, aby używać Aspose.Words dla .NET?  
- Tak, Aspose.Words dla .NET wymaga licencji dla pełnej funkcjonalności. Możesz dostać[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) dla ewolucji.
+ Tak, Aspose.Words dla .NET wymaga licencji dla pełnej funkcjonalności. Możesz zdobyć[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) do oceny.
 
 ### Czy mogę zautomatyzować ten proces?  
 Absolutnie! Opisaną metodę można włączyć do większych aplikacji w celu automatyzacji zadań związanych z przetwarzaniem dokumentów.
 
 ### Gdzie mogę znaleźć więcej zasobów i wsparcia?  
-Aby uzyskać więcej informacji, możesz sprawdzić[dokumentacja](https://reference.aspose.com/words/net/) lub odwiedź stronę[forum wsparcia](https://forum.aspose.com/c/words/8) do pomocy.
+Aby uzyskać więcej informacji, możesz sprawdzić[dokumentacja](https://reference.aspose.com/words/net/) lub odwiedź stronę[forum wsparcia](https://forum.aspose.com/c/words/8) o pomoc.

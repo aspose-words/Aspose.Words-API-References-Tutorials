@@ -10,7 +10,7 @@ url: /id/java/document-manipulation/splitting-documents-into-pages/
 
 Jika Anda bekerja dengan pemrosesan dokumen di Java, Aspose.Words for Java adalah API canggih yang dapat membantu Anda membagi dokumen menjadi beberapa halaman terpisah secara efisien. Dalam tutorial langkah demi langkah ini, kami akan memandu Anda melalui proses pemisahan dokumen menggunakan kode sumber yang disediakan. Di akhir tutorial ini, Anda akan dapat membagi dokumen dengan mudah, sehingga meningkatkan kemampuan manajemen dokumen Anda.
 
-## 1. Perkenalan
+## 1. Pendahuluan
 
 Aspose.Words for Java adalah perpustakaan Java yang memungkinkan Anda memanipulasi dokumen Word secara terprogram. Salah satu tugas umum adalah membagi dokumen menjadi beberapa halaman terpisah, yang dapat berguna untuk berbagai tujuan, seperti pengarsipan, pencetakan, atau pemrosesan dokumen.
 
@@ -115,7 +115,7 @@ public Document getDocumentOfPage(int pageIndex) throws Exception {
 //<param nama="startIndex">
 /// 1 berdasarkan indeks halaman awal.
 ///</param>
-/// <param nama="endIndex">
+/// <nama param = "endIndex">
 /// 1 berdasarkan indeks halaman akhir.
 ///</param>
 /// <kembali>
@@ -446,7 +446,7 @@ public int visitTableEnd(Table table) throws Exception {
 	return VisitorAction.CONTINUE;
 }
 public int visitParagraphEnd(Paragraph paragraph) throws Exception {
-	// Jika paragraf hanya berisi pemisah bagian, tambahkan run into yang palsu.
+	// Jika paragraf hanya berisi pemisah bagian, tambahkan penjelasan palsu.
 	if (paragraph.isEndOfSection() && paragraph.getChildNodes().getCount() == 1 &&
 		"\f".equals(paragraph.getChildNodes().get(0).getText()))
 	{
@@ -685,7 +685,7 @@ Tidak, panduan ini secara khusus mencakup pemisahan dokumen dalam format DOC men
 
 ### Bisakah saya membagi dokumen menjadi ukuran dan format halaman khusus?
 
-Ya, Anda dapat mengkustomisasi ukuran halaman dan format dokumen terpisah dengan memodifikasi properti pengaturan halaman di Aspose.Words untuk Java. Lihat dokumentasi Aspose.Words untuk detail tentang cara menyesuaikan pengaturan halaman sesuai kebutuhan Anda.
+Ya, Anda dapat mengkustomisasi ukuran halaman dan format dokumen terpisah dengan memodifikasi properti pengaturan halaman di Aspose.Words untuk Java. Lihat dokumentasi Aspose.Words untuk detail tentang cara menyesuaikan pengaturan halaman sesuai dengan kebutuhan Anda.
 
 ### Apakah ada batasan jumlah halaman yang dapat dipisah?
 

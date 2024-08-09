@@ -87,12 +87,12 @@ Voici une description de cette fonction :
 
 Nous prenons le nom du signet (`bookmarkName`) comme entrée.
  Nous récupérons l'objet bookmark correspondant en utilisant`doc.Range.Bookmarks[bookmarkName]`.
-Nous obtenons ensuite la ligne parent du signet en utilisant`GetAncestor` (semblable à la`Untangle` fonction).
+Nous obtenons ensuite la ligne parent du signet en utilisant`GetAncestor` (semblable au`Untangle` fonction).
 Enfin, nous vérifions si le signet et la ligne existent (`bookmark != null` et
 
 ## Étape 4 : Vérifiez le démêlage
 
- Tandis que le`Untangle` La fonction doit garantir la sécurité des autres signets, c'est toujours une bonne pratique de vérifier. Voici comment vérifier si le processus de démêlage n'a pas accidentellement supprimé la fin d'un autre signet :
+ Alors que le`Untangle` La fonction doit garantir la sécurité des autres signets, c'est toujours une bonne pratique de vérifier. Voici comment vérifier si le processus de démêlage n'a pas accidentellement supprimé la fin d'un autre signet :
 
 ```csharp
 if (doc.Range.Bookmarks["ROW1"].BookmarkEnd == null)

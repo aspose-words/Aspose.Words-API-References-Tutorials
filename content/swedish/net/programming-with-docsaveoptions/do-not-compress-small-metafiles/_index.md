@@ -40,7 +40,7 @@ Först måste du ange katalogen där ditt dokument ska sparas. Detta är avgöra
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENTS DIRECTORY"` med den faktiska sökvägen där du vill spara ditt dokument.
+ Ersätta`"YOUR DOCUMENTS DIRECTORY"` med den faktiska sökvägen där du vill spara ditt dokument.
 
 ## Steg 2: Skapa ett nytt dokument
 

@@ -16,7 +16,7 @@ url: /es/net/working-with-vba-macros/create-vba-project/
 
 Antes de comenzar a codificar, asegurémonos de que tiene todo lo que necesita para seguir adelante:
 
-1.  Biblioteca Aspose.Words para .NET: necesitará la última versión de Aspose.Words para .NET. Si aún no lo has hecho, puedes[descarguelo aqui](https://releases.aspose.com/words/net/).
+1.  Biblioteca Aspose.Words para .NET: necesitará la última versión de Aspose.Words para .NET. Si aún no lo has hecho, puedes[descárgalo aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: un entorno de desarrollo .NET como Visual Studio será esencial para escribir y probar su código.
 3. Conocimientos básicos de C#: Una comprensión básica de C# será útil a medida que navegamos por el código.
 4. Directorio de documentos de muestra: tenga listo un directorio donde guardará sus documentos de Word. ¡Aquí es donde ocurre la magia!
@@ -112,13 +112,13 @@ Aquí está el código para guardar su documento:
 doc.Save(dataDir + "WorkingWithVba.CreateVbaProject.docm");
 ```
 
-Esta línea guarda el documento como "WorkingWithVba.CreateVbaProject.docm" en su directorio especificado. ¡Y voilá! Ha creado un documento de Word con un proyecto VBA.
+Esta línea guarda el documento como "WorkingWithVba.CreateVbaProject.docm" en su directorio especificado. ¡Y listo! Ha creado un documento de Word con un proyecto VBA.
 
 ## Conclusión
 
 ¡Felicidades! Ha creado con éxito un proyecto VBA en un documento de Word utilizando Aspose.Words para .NET. Este tutorial cubrió todo, desde configurar su entorno hasta escribir y guardar código VBA. Con Aspose.Words, puede automatizar tareas, crear macros y personalizar sus documentos de Word de formas que nunca creyó posibles.
 
- Si estás ansioso por explorar más, el[Documentación API](https://reference.aspose.com/words/net/) es un tesoro de información. Y si alguna vez necesitas ayuda, el[Foro de soporte](https://forum.aspose.com/c/words/8) está a sólo un clic de distancia.
+ Si estás ansioso por explorar más, el[Documentación API](https://reference.aspose.com/words/net/) es un tesoro de información. Y si alguna vez necesitas ayuda, el[foro de soporte](https://forum.aspose.com/c/words/8) está a sólo un clic de distancia.
 
 Feliz codificación y recuerda, ¡el único límite es tu imaginación!
 
@@ -128,7 +128,7 @@ Feliz codificación y recuerda, ¡el único límite es tu imaginación!
 Aspose.Words para .NET es una biblioteca completa que permite a los desarrolladores crear, editar y convertir documentos de Word en aplicaciones .NET. Es perfecto para automatizar los flujos de trabajo de documentos y mejorar la funcionalidad con VBA.
 
 ### ¿Puedo probar Aspose.Words gratis?  
- Sí, puedes probar Aspose.Words con un[prueba gratis](https://releases.aspose.com/) o conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/) Para evaluar.
+ Sí, puedes probar Aspose.Words con un[prueba gratuita](https://releases.aspose.com/) o conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/) para evaluación.
 
 ### ¿Cómo agrego código VBA a un documento de Word?  
  Puede agregar código VBA creando un`VbaModule` y estableciendo su`SourceCode` propiedad con su código de macro. Luego, agregue el módulo a su`VbaProject`.

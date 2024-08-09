@@ -16,7 +16,7 @@ Halo, rekan pengembang! 👋 Pernahkah Anda ditugaskan membuat dokumen Word yang
 
 Sebelum kita beralih ke kodenya, mari kita bahas apa yang Anda perlukan:
 
-1.  Aspose.Words untuk .NET Library: Pastikan Anda memiliki versi terbaru. Kamu bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+1.  Aspose.Words untuk .NET Library: Pastikan Anda memiliki versi terbaru. Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: IDE yang kompatibel dengan .NET seperti Visual Studio akan membantu.
 3. Pengetahuan Dasar C#: Memahami sintaksis C# akan membantu Anda mengikutinya dengan lancar.
 4. Contoh Dokumen Word: Meskipun kami akan membuatnya dari awal, memiliki sampel dapat berguna untuk tujuan pengujian.
@@ -50,7 +50,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Langkah 2: Menambahkan Konten Awal
 
-Sebelum menambahkan bagian baru, ada baiknya untuk memiliki beberapa konten di dokumen. Ini akan membantu kita melihat pemisahan dengan lebih jelas.
+Sebelum menambahkan bagian baru, ada baiknya memiliki beberapa konten di dokumen. Ini akan membantu kita melihat pemisahan dengan lebih jelas.
 
 ### Menambahkan Konten dengan DocumentBuilder
 
@@ -83,7 +83,7 @@ Setelah kita menambahkan bagian baru, kita dapat mengisinya dengan konten sepert
 
 ### Menggunakan DocumentBuilder untuk Bagian Baru
 
-Untuk menambahkan konten ke bagian baru, Anda perlu mengatur`DocumentBuilder` kursor ke bagian baru:
+ Untuk menambahkan konten ke bagian baru, Anda perlu mengatur`DocumentBuilder` kursor ke bagian baru:
 
 ```csharp
 builder.MoveToSection(doc.Sections.IndexOf(sectionToAdd));

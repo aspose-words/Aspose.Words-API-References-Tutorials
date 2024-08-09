@@ -55,7 +55,7 @@ MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 };
 ```
 
-`MetafileRenderingOptions` class, meta dosyalarının (WMF gibi) nasıl oluşturulduğuna ilişkin seçenekler sağlar. Ayarlayarak`ScaleWmfFontsToMetafileSize` ile`false`Aspose.Words'e yazı tiplerini meta dosya boyutuna göre ölçeklendirmemesi talimatını veriyorsunuz, bu da genel PDF boyutunun azaltılmasına yardımcı olabilir.
+`MetafileRenderingOptions` class, meta dosyalarının (WMF gibi) nasıl oluşturulduğuna ilişkin seçenekler sunar. Ayarlayarak`ScaleWmfFontsToMetafileSize` ile`false`Aspose.Words'e yazı tiplerini meta dosya boyutuna göre ölçeklendirmemesi talimatını veriyorsunuz, bu da genel PDF boyutunun azaltılmasına yardımcı olabilir.
 
 ## 3. Adım: PDF Kaydetme Seçeneklerini Ayarlayın
 
@@ -69,7 +69,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
-`PdfSaveOptions` class, belgeyi PDF olarak kaydetmek için çeşitli ayarları belirtmenize olanak tanır. Daha önce yapılandırılmış olanı atayarak`MetafileRenderingOptions` -e`MetafileRenderingOptions` mülkiyet`PdfSaveOptions`ile belgenin istediğiniz meta dosya oluşturma ayarlarına göre kaydedilmesini sağlarsınız.
+`PdfSaveOptions` class, belgeyi PDF olarak kaydetmek için çeşitli ayarları belirtmenize olanak tanır. Daha önce yapılandırılmış olanı atayarak`MetafileRenderingOptions` -e`MetafileRenderingOptions` mülkiyeti`PdfSaveOptions`ile belgenin istediğiniz meta dosya oluşturma ayarlarına göre kaydedilmesini sağlarsınız.
 
 ## Adım 4: Belgeyi PDF olarak kaydedin
 
@@ -107,4 +107,4 @@ Evet, bu teknik, WMF grafikleri içeren herhangi bir Word belgesine uygulanabili
 
 ### Aspose.Words hakkında daha fazla bilgiyi nerede bulabilirim?
 
- Aspose.Words hakkında daha fazlasını şuradan keşfedebilirsiniz:[Aspose.Words Belgeleri](https://reference.aspose.com/words/net/) . İndirmeler, denemeler ve destek için şu adresi ziyaret edin:[Aspose.Words İndirme Sayfası](https://releases.aspose.com/words/net/), [Aspose.Words'ü satın alın](https://purchase.aspose.com/buy), [Ücretsiz deneme](https://releases.aspose.com/), [Geçici Lisans](https://purchase.aspose.com/temporary-license/) , Ve[Destek](https://forum.aspose.com/c/words/8).
+ Aspose.Words hakkında daha fazlasını şuradan keşfedebilirsiniz:[Aspose.Words Belgeleri](https://reference.aspose.com/words/net/) . İndirmeler, denemeler ve destek için şu adresi ziyaret edin:[Aspose.Words İndirme Sayfası](https://releases.aspose.com/words/net/), [Aspose.Words'ü satın alın](https://purchase.aspose.com/buy), [Ücretsiz Deneme](https://releases.aspose.com/), [Geçici Lisans](https://purchase.aspose.com/temporary-license/) , Ve[Destek](https://forum.aspose.com/c/words/8).

@@ -49,7 +49,7 @@ DocumentPageSplitter splitter = new DocumentPageSplitter(doc);
 List<Document> pages = splitter.splitIntoPages();
 ```
 
- Các`pages` danh sách bây giờ sẽ chứa các tài liệu riêng biệt, mỗi tài liệu đại diện cho một trang của tài liệu gốc.
+ các`pages` danh sách bây giờ sẽ chứa các tài liệu riêng biệt, mỗi tài liệu đại diện cho một trang của tài liệu gốc.
 
 ## Bước 3: Lưu trang
 
@@ -62,7 +62,7 @@ for (int i = 0; i < pages.size(); i++) {
 }
 ```
 
- Đoạn mã này lưu mỗi trang với tên tệp như`page_1.docx`, `page_2.docx`, và như thế.
+ Đoạn mã này lưu mỗi trang với tên tệp như`page_1.docx`, `page_2.docx`, vân vân.
 
 ## Phần kết luận
 

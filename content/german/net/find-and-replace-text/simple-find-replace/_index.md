@@ -69,7 +69,7 @@ Console.WriteLine("Original document text: " + doc.Range.Text);
 
 ## Schritt 4: Text ersetzen
 
-Hier geschieht die Magie! Wir ersetzen "_CustomerName_ " mit "James Bond" unter Verwendung der`Replace` Methode. 
+Hier geschieht die Magie! Wir ersetzen "_CustomerName_ " mit "James Bond" unter Verwendung der`Replace` Verfahren. 
 
 ```csharp
 doc.Range.Replace("_CustomerName_", "James Bond", new FindReplaceOptions(FindReplaceDirection.Forward));
@@ -105,7 +105,7 @@ Und da haben Sie es! Sie haben gerade den Prozess des Suchens und Ersetzens von 
  Ja, das können Sie. Rufen Sie einfach die`Replace` Methode für jeden Text, den Sie ersetzen möchten.
 
 ### Ist Aspose.Words für .NET kostenlos?
-Aspose.Words für .NET bietet eine kostenlose Testversion, aber für die volle Funktionalität müssen Sie eine Lizenz erwerben. Schauen Sie sich deren[Preisgestaltung](https://purchase.aspose.com/buy) für mehr Details.
+Aspose.Words für .NET bietet eine kostenlose Testversion, aber für die volle Funktionalität müssen Sie eine Lizenz erwerben. Schauen Sie sich deren[Preisgestaltung](https://purchase.aspose.com/buy) für weitere Details.
 
 ### Kann ich Text durch Formatierung ersetzen?
  Auf jeden Fall! Sie können Text ersetzen und Formatierungen anwenden mit dem`FindReplaceOptions` Klasse.

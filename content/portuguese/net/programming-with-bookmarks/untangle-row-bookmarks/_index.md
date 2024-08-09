@@ -17,7 +17,7 @@ Este guia irá orientá-lo no processo de desemaranhar marcadores de linha em se
 
 Antes de mergulhar, você precisará de algumas coisas:
 
-1.  Aspose.Words for .NET: Esta biblioteca comercial oferece funcionalidades para trabalhar com documentos do Word de forma programática. 2. Você pode baixar uma avaliação gratuita em[Link para Download](https://releases.aspose.com/words/net/) ou compre uma licença de[comprar](https://purchase.aspose.com/buy).
+1.  Aspose.Words for .NET: Esta biblioteca comercial oferece funcionalidades para trabalhar com documentos do Word de forma programática. 2. Você pode baixar uma avaliação gratuita em[link para baixar](https://releases.aspose.com/words/net/) ou compre uma licença de[comprar](https://purchase.aspose.com/buy).
 3. Ambiente de desenvolvimento AC#: Visual Studio ou qualquer outro IDE C# funcionará perfeitamente.
 4. Um documento do Word com marcadores de linha: usaremos um documento de exemplo denominado "Marcadores de coluna da tabela.docx" para fins de demonstração.
 
@@ -119,7 +119,7 @@ Isso salva o documento com os marcadores desembaraçados e quaisquer linhas excl
 
 ### O Aspose.Words para .NET é gratuito?
 
- Aspose.Words for .NET é uma biblioteca comercial com versão de avaliação gratuita disponível. Você pode baixá-lo em[Link para Download](https://releases.aspose.com/words/net/).
+ Aspose.Words for .NET é uma biblioteca comercial com versão de avaliação gratuita disponível. Você pode baixá-lo em[link para baixar](https://releases.aspose.com/words/net/).
 
 ### Posso desembaraçar os marcadores de linha manualmente no Word?
 

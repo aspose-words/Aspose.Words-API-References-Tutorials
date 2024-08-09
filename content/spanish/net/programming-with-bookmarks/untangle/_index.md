@@ -15,7 +15,7 @@ Navegar por un documento de Word mediante programación puede ser como encontrar
 
 Antes de profundizar en el código, asegurémonos de que tiene todo lo que necesita:
 
-1.  Aspose.Words para .NET: necesitará la biblioteca Aspose.Words para .NET. Si no lo tienes, puedes[descarguelo aqui](https://releases.aspose.com/words/net/).
+1.  Aspose.Words para .NET: necesitará la biblioteca Aspose.Words para .NET. Si no lo tienes, puedes[descárgalo aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: un entorno de desarrollo .NET como Visual Studio.
 3. Conocimientos básicos de C#: comprender los conceptos básicos de C# le ayudará a seguir los fragmentos de código y las explicaciones.
 
@@ -111,7 +111,7 @@ Este tutorial aborda los marcadores que abarcan dos filas adyacentes. Para casos
 
 ### ¿Existe una versión de prueba de Aspose.Words para .NET disponible?
 
- Sí tu puedes[descargar una prueba gratuita](https://releases.aspose.com/) desde el sitio web de Aspose para explorar las características de la biblioteca.
+ si, puedes[descargar una prueba gratuita](https://releases.aspose.com/) desde el sitio web de Aspose para explorar las características de la biblioteca.
 
 ### ¿Cómo puedo obtener soporte si tengo problemas?
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-tables/combine-rows/
 ---
-## introduzione
+## Introduzione
 
 Combinare righe di più tabelle in un'unica tabella coesa può essere un compito arduo. Ma con Aspose.Words per .NET, è un gioco da ragazzi! Questa guida ti guiderà attraverso l'intero processo, semplificando l'unione delle tabelle senza problemi. Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato, troverai questo tutorial prezioso. Quindi tuffiamoci e trasformiamo quelle righe sparse in una tabella unificata.
 
@@ -19,7 +19,7 @@ Prima di passare alla parte di codifica, assicuriamoci di avere tutto ciò di cu
 2. Un ambiente di sviluppo: Visual Studio o qualsiasi altro IDE compatibile con .NET.
 3. Conoscenza di base di C#: la comprensione di C# sarà utile.
 
- Se non hai ancora Aspose.Words per .NET, puoi ottenere un file[prova gratuita](https://releases.aspose.com/) oppure compralo[Qui](https://purchase.aspose.com/buy) . Per qualsiasi domanda, il[Forum di assistenza](https://forum.aspose.com/c/words/8) è un ottimo punto di partenza.
+ Se non hai ancora Aspose.Words per .NET, puoi ottenere un file[prova gratuita](https://releases.aspose.com/) oppure compralo[Qui](https://purchase.aspose.com/buy) . Per qualsiasi domanda, il[forum di supporto](https://forum.aspose.com/c/words/8) è un ottimo punto di partenza.
 
 ## Importa spazi dei nomi
 

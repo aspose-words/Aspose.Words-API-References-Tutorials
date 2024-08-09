@@ -9,13 +9,13 @@ url: /pl/net/document-formatting/change-asian-paragraph-spacing-and-indents/
 ---
 ## Wstęp
 
-No hej! Czy zastanawiałeś się kiedyś, jak dostosować odstępy i wcięcia w dokumencie programu Word, szczególnie w przypadku typografii azjatyckiej? Jeśli pracujesz z dokumentami obejmującymi języki takie jak chiński, japoński czy koreański, być może zauważyłeś, że ustawienia domyślne nie zawsze to wystarczają. Nie bój się! W tym samouczku przyjrzymy się, jak zmienić azjatyckie odstępy i wcięcia akapitów za pomocą Aspose.Words dla .NET. To prostsze niż myślisz, a Twoje dokumenty mogą wyglądać o wiele bardziej profesjonalnie. Chcesz ulepszyć formatowanie swojego dokumentu? Zacznijmy!
+Hej tam! Czy zastanawiałeś się kiedyś, jak dostosować odstępy i wcięcia w dokumencie programu Word, szczególnie w przypadku typografii azjatyckiej? Jeśli pracujesz z dokumentami obejmującymi języki takie jak chiński, japoński czy koreański, być może zauważyłeś, że ustawienia domyślne nie zawsze to wystarczają. Nie bój się! W tym samouczku przyjrzymy się, jak zmienić azjatyckie odstępy i wcięcia akapitów za pomocą Aspose.Words dla .NET. To prostsze niż myślisz, a Twoje dokumenty mogą wyglądać o wiele bardziej profesjonalnie. Chcesz ulepszyć formatowanie swojego dokumentu? Zacznijmy!
 
 ## Warunki wstępne
 
 Zanim zagłębimy się w kod, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
-1.  Biblioteka Aspose.Words dla .NET: Upewnij się, że masz bibliotekę Aspose.Words dla .NET. Jeśli jeszcze tego nie zrobiłeś, możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1.  Biblioteka Aspose.Words dla .NET: Upewnij się, że masz bibliotekę Aspose.Words dla .NET. Jeśli jeszcze tego nie zrobiłeś, możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: Potrzebujesz skonfigurowanego środowiska programistycznego. Visual Studio jest popularnym wyborem do programowania .NET.
 3. Dokument programu Word: Przygotuj dokument programu Word, z którym możesz się bawić. Będziemy używać przykładowego dokumentu o nazwie „Asian typography.docx”.
 4. Podstawowa znajomość języka C#: Aby móc korzystać z przykładów kodu, należy znać programowanie w języku C#.

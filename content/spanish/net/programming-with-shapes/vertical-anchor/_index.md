@@ -15,7 +15,7 @@ url: /es/net/programming-with-shapes/vertical-anchor/
 
 Antes de profundizar en los aspectos prácticos del anclaje vertical, necesitará tener algunas cosas en su lugar:
 
-1.  Aspose.Words para .NET: asegúrese de tener instalada la biblioteca Aspose.Words para .NET. Si aún no lo tienes, puedes[descarguelo aqui](https://releases.aspose.com/words/net/).
+1.  Aspose.Words para .NET: asegúrese de tener instalada la biblioteca Aspose.Words para .NET. Si aún no lo tienes, puedes[descárgalo aquí](https://releases.aspose.com/words/net/).
 2. Visual Studio: este tutorial asume que está utilizando Visual Studio u otro IDE .NET para codificar.
 3. Conocimientos básicos de C#: la familiaridad con C# y .NET le ayudará a seguir adelante sin problemas.
 
@@ -99,7 +99,7 @@ Sí, puedes utilizar el anclaje vertical con otras formas, aunque los cuadros de
  Puede cambiar el punto de anclaje configurando el`VerticalAnchor` propiedad en el objeto de forma del cuadro de texto.
 
 ### ¿Es posible anclar texto en el medio del cuadro de texto?
- ¡Absolutamente! Solo usa`TextBoxAnchor.Center` para centrar el texto verticalmente dentro del cuadro de texto.
+ ¡Absolutamente! solo usa`TextBoxAnchor.Center` para centrar el texto verticalmente dentro del cuadro de texto.
 
 ### ¿Dónde puedo encontrar más información sobre Aspose.Words para .NET?
- Revisar la[Documentación de Aspose.Words](https://reference.aspose.com/words/net/) para más detalles y guías.
+ Mira el[Documentación de Aspose.Words](https://reference.aspose.com/words/net/) para más detalles y guías.

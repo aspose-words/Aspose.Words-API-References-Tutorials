@@ -14,7 +14,7 @@ Cuando se trata de integrar archivos CHM en un documento de Word, Aspose.Words p
 ## Requisitos previos
 
 Antes de profundizar en los pasos, asegurémonos de tener todo lo que necesita para comenzar:
--  Aspose.Words para .NET: puedes[descargar la biblioteca](https://releases.aspose.com/words/net/) desde el sitio.
+-  Aspose.Words para .NET: puedes[descargar la biblioteca](https://releases.aspose.com/words/net/) del sitio.
 - Entorno de desarrollo .NET: Visual Studio o cualquier otro IDE de su elección.
 - Archivo CHM: el archivo CHM que desea cargar en el documento de Word.
 - Conocimientos básicos de C#: familiaridad con el lenguaje de programación C# y el marco .NET.

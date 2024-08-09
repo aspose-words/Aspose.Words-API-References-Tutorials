@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## Krok 6: Vytvořte tabulku a přidejte řádky
 
- Vytvoř nový`Table`objekt a zadejte počet řádků a sloupců.
+ Vytvořte nový`Table`objekt a zadejte počet řádků a sloupců.
 
 ```java
 Table table = new Table(doc);
@@ -115,7 +115,7 @@ public class AddTableInWord {
 
 ## Závěr
 
-Gratulujeme! Úspěšně jste přidali tabulku do dokumentu aplikace Word pomocí Aspose.Words for Java. Aspose.Words poskytuje robustní a efektivní API pro práci s dokumenty aplikace Word, což usnadňuje vytváření, manipulaci a přizpůsobení tabulek a dalších prvků v dokumentech.
+Gratuluji! Úspěšně jste přidali tabulku do dokumentu aplikace Word pomocí Aspose.Words for Java. Aspose.Words poskytuje robustní a efektivní API pro práci s dokumenty aplikace Word, což usnadňuje vytváření, manipulaci a přizpůsobení tabulek a dalších prvků v dokumentech.
 
 Podle tohoto podrobného průvodce jste se naučili, jak nastavit vývojové prostředí, vytvořit nový dokument aplikace Word, přidat tabulku s řádky a sloupci a uložit dokument. Neváhejte a prozkoumejte další funkce Aspose.Words, abyste dále zlepšili své úlohy zpracování dokumentů.
 

@@ -68,9 +68,9 @@ for (int i = 0; i < 31; i++)
 builder.EndTable();
 ```
 
-## Etapa 4: adicionar um formato de marca d’água
+## Etapa 4: adicionar um formato de marca d'água
 
- Agora, vamos adicionar uma marca d’água ao nosso documento. Criaremos um`Shape` objeto e definir suas propriedades.
+ Agora, vamos adicionar uma marca d'água ao nosso documento. Criaremos um`Shape` objeto e definir suas propriedades.
 
 ```csharp
 Shape watermark = new Shape(doc, ShapeType.TextPlainText)
@@ -86,9 +86,9 @@ Shape watermark = new Shape(doc, ShapeType.TextPlainText)
 };
 ```
 
-## Etapa 5: personalizar a aparência da marca d'água
+## Etapa 5: personalizar a aparência da marca d’água
 
-Personalizaremos ainda mais a aparência da marca d’água definindo sua cor e propriedades de texto.
+Personalizaremos ainda mais a aparência da marca d'água definindo sua cor e propriedades de texto.
 
 ```csharp
 watermark.FillColor = Color.Gray;
@@ -134,10 +134,10 @@ E aí está! Você criou com sucesso um documento do Word com um layout de tabel
 ### Posso usar uma fonte diferente para o texto da marca d'água?
  Sim, você pode alterar a fonte definindo o`watermark.TextPath.FontFamily` propriedade para a fonte desejada.
 
-### Como ajusto a posição da marca d'água?
+### Como ajusto a posição da marca d’água?
  Você pode modificar o`RelativeHorizontalPosition`, `RelativeVerticalPosition`, `HorizontalAlignment` , e`VerticalAlignment` propriedades para ajustar a posição da marca d'água.
 
-### É possível usar uma imagem em vez de texto como marca d’água?
+### É possível usar uma imagem em vez de texto como marca d'água?
  Absolutamente! Você pode criar um`Shape` com o tipo`ShapeType.Image` e defina sua imagem usando o`ImageData.SetImage` método.
 
 ### Posso criar tabelas com alturas de linha variadas?

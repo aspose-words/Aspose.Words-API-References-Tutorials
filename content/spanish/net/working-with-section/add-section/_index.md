@@ -16,7 +16,7 @@ url: /es/net/working-with-section/add-section/
 
 Antes de pasar al código, repasemos lo que necesitará:
 
-1.  Aspose.Words para la biblioteca .NET: asegúrese de tener la última versión. Puede[descarguelo aqui](https://releases.aspose.com/words/net/).
+1.  Aspose.Words para la biblioteca .NET: asegúrese de tener la última versión. Puede[descárgalo aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: un IDE compatible con .NET como Visual Studio será suficiente.
 3. Conocimientos básicos de C#: comprender la sintaxis de C# le ayudará a seguir el proceso sin problemas.
 4. Un documento de Word de muestra: aunque crearemos uno desde cero, tener una muestra puede resultar útil para realizar pruebas.
@@ -83,7 +83,7 @@ Una vez que hayamos agregado una nueva sección, podemos llenarla con contenido 
 
 ### Usando DocumentBuilder para la nueva sección
 
-Para agregar contenido a la nueva sección, deberá configurar el`DocumentBuilder` cursor a la nueva sección:
+ Para agregar contenido a la nueva sección, deberá configurar el`DocumentBuilder` cursor a la nueva sección:
 
 ```csharp
 builder.MoveToSection(doc.Sections.IndexOf(sectionToAdd));
@@ -129,4 +129,4 @@ No, las secciones no se pueden anidar unas dentro de otras. Sin embargo, puedes 
 
 ### ¿Dónde puedo encontrar más recursos sobre Aspose.Words?
 
- Para obtener más información, puede visitar el[Documentación de Aspose.Words](https://reference.aspose.com/words/net/) o el[Foro de soporte](https://forum.aspose.com/c/words/8) para ayuda y discusiones.
+ Para obtener más información, puede visitar el[Documentación de Aspose.Words](https://reference.aspose.com/words/net/) o el[foro de soporte](https://forum.aspose.com/c/words/8) para ayuda y discusiones.

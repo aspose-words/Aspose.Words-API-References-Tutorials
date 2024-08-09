@@ -68,7 +68,7 @@ for i, section in enumerate(sections):
 ```
 
 ### Bisakah saya menerapkan pemformatan berbeda pada paragraf berbeda dalam satu bagian?
-Ya, Anda dapat menerapkan pemformatan berbeda pada paragraf dalam suatu bagian. Ulangi paragraf di bagian tersebut dan terapkan pemformatan yang diinginkan menggunakan`paragraph.runs` Properti.
+Ya, Anda dapat menerapkan pemformatan berbeda pada paragraf dalam suatu bagian. Ulangi paragraf di bagian tersebut dan terapkan pemformatan yang diinginkan menggunakan`paragraph.runs` milik.
 
 ```python
 for paragraph in section.paragraphs:
@@ -78,7 +78,7 @@ for paragraph in section.paragraphs:
 ```
 
 ### Bagaimana cara mengubah gaya font untuk bagian tertentu?
- Anda dapat mengubah gaya font untuk bagian tertentu dengan mengulangi paragraf di bagian tersebut dan mengaturnya`paragraph.runs.font` Properti.
+ Anda dapat mengubah gaya font untuk bagian tertentu dengan mengulangi paragraf di bagian tersebut dan mengaturnya`paragraph.runs.font` milik.
 
 ```python
 for paragraph in section.paragraphs:

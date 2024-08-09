@@ -52,11 +52,11 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 Console.WriteLine(info.IsEncrypted);
 ```
 
-Bu kadar ! Aspose.Words for .NET kullanarak bir belgenin şifrelenip şifrelenmediğini başarıyla kontrol ettiniz.
+Hepsi bu! Aspose.Words for .NET kullanarak bir belgenin şifrelenip şifrelenmediğini başarıyla kontrol ettiniz.
 
 ## Çözüm
 
- İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesinin şifreleme durumunu başarıyla doğruladınız. Birkaç satırlık kodun hayatımızı bu kadar kolaylaştırabilmesi şaşırtıcı değil mi? Herhangi bir sorunuz varsa veya herhangi bir sorunla karşılaşırsanız, bize ulaşmaktan çekinmeyin.[Aspose Destek Forumu](https://forum.aspose.com/c/words/8).
+ Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesinin şifreleme durumunu başarıyla doğruladınız. Birkaç satırlık kodun hayatımızı bu kadar kolaylaştırabilmesi şaşırtıcı değil mi? Herhangi bir sorunuz varsa veya herhangi bir sorunla karşılaşırsanız, bize ulaşmaktan çekinmeyin.[Aspose Destek Forumu](https://forum.aspose.com/c/words/8).
 
 ## SSS'ler
 
@@ -64,7 +64,7 @@ Bu kadar ! Aspose.Words for .NET kullanarak bir belgenin şifrelenip şifrelenme
 Aspose.Words for .NET, .NET uygulamalarınızda Word belgeleri oluşturmanıza, düzenlemenize, dönüştürmenize ve değiştirmenize olanak tanıyan güçlü bir kitaplıktır.
 
 ### Aspose.Words for .NET'i .NET Core ile kullanabilir miyim?
-Evet, Aspose.Words for .NET hem .NET Framework hem de .NET Core ile uyumludur.
+Evet, Aspose.Words for .NET, hem .NET Framework hem de .NET Core ile uyumludur.
 
 ### Aspose.Words için nasıl geçici lisans alabilirim?
  adresinden geçici lisans alabilirsiniz.[Burada](https://purchase.aspose.com/temporary-license/).

@@ -151,7 +151,7 @@ try {
 }
 ```
 
-### 常见问题故障排除
+### 解决常见问题
 
 如果在打印过程中遇到任何问题，请参阅[Aspose.Words for Java API 参考](https://reference.aspose.com/words/java/)了解故障排除步骤和社区支持。
 
@@ -191,13 +191,13 @@ try {
 
 是的，Aspose.Words for Java 支持多种文档格式，包括 DOC、DOCX、RTF 等。
 
-### Aspose.Words for Java 与所有打印机兼容吗？
+### Aspose.Words for Java 是否与所有打印机兼容？
 
 Aspose.Words for Java 可以与大多数支持通过 Java 应用程序打印文档的打印机兼容。
 
 ### 我可以从网络应用程序打印文档吗？
 
-是的，您可以使用 Aspose.Words for Java 以编程方式从 Web 应用程序打印文档。
+是的，您可以使用 Aspose.Words for Java 从 Web 应用程序以编程方式打印文档。
 
 ### 如何打印大型文档的特定页面？
 

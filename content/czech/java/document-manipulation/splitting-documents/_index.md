@@ -96,7 +96,7 @@ V této příručce jsme prozkoumali různé techniky pro rozdělení dokumentů
 
 ### Jak mohu začít s Aspose.Words pro Java?
 
- Začít s Aspose.Words pro Java je snadné. Knihovnu si můžete stáhnout z webu Aspose a postupujte podle dokumentace pro instalaci a použití. Návštěva[Aspose.Words pro dokumentaci Java](https://reference.aspose.com/words/java/) Více podrobností.
+ Začít s Aspose.Words pro Java je snadné. Knihovnu si můžete stáhnout z webu Aspose a postupujte podle dokumentace pro instalaci a použití. Návštěva[Aspose.Words pro dokumentaci Java](https://reference.aspose.com/words/java/) pro více podrobností.
 
 ### Jaké jsou klíčové vlastnosti Aspose.Words for Java?
 

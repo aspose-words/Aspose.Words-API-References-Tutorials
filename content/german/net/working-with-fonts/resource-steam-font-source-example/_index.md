@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /de/net/working-with-fonts/resource-steam-font-source-example/
 ---
+## Einführung
 
 Wenn Sie mit Dokumenten in .NET arbeiten und Aspose.Words verwenden, kann die Verwaltung von Schriftartquellen ein entscheidender Aspekt sein, um sicherzustellen, dass Ihre Dokumente wie erwartet aussehen. Aspose.Words bietet eine leistungsstarke Möglichkeit, Schriftarten zu verwalten, einschließlich der Verwendung von Ressourcenströmen. In dieser Anleitung gehen wir die Verwendung eines Ressourcenstroms als Schriftartquelle mit Aspose.Words für .NET durch. Lassen Sie uns eintauchen!
 
@@ -15,7 +16,7 @@ Wenn Sie mit Dokumenten in .NET arbeiten und Aspose.Words verwenden, kann die Ve
 Bevor wir beginnen, stellen Sie sicher, dass Sie Folgendes haben:
 
 - Grundkenntnisse in C#: Kenntnisse in der C#-Programmierung erleichtern Ihnen das Folgen.
--  Aspose.Words für .NET-Bibliothek: Laden Sie es herunter und installieren Sie es von der[Download-Link](https://releases.aspose.com/words/net/).
+-  Aspose.Words für .NET-Bibliothek: Laden Sie es herunter und installieren Sie es von der[Downloadlink](https://releases.aspose.com/words/net/).
 - Entwicklungsumgebung: Ein Setup wie Visual Studio zum Schreiben und Ausführen Ihres Codes.
 -  Beispieldokument: Halten Sie ein Beispieldokument bereit (z. B.`Rendering.docx`) bereit, die Schrifteinstellungen zu testen.
 
@@ -99,11 +100,11 @@ Sie beherrschen jetzt den Prozess der Verwendung eines Ressourcenstreams als Sch
 
 ###  F3: Kann ich andere Arten von Warnungen mit`IWarningCallback`?
 
- Ja das`IWarningCallback`Die Schnittstelle kann verschiedene Arten von Warnungen verarbeiten, nicht nur die Schriftartersetzung.
+ Ja, die`IWarningCallback`Die Schnittstelle kann verschiedene Arten von Warnungen verarbeiten, nicht nur die Schriftartersetzung.
 
 ### F4: Wo finde ich Unterstützung für Aspose.Words?
 
- Besuche den[Aspose.Words Support-Forum](https://forum.aspose.com/c/words/8) zur Hilfe.
+ Besuchen Sie die[Aspose.Words Support-Forum](https://forum.aspose.com/c/words/8) um Hilfe.
 
 ### F5: Ist es möglich, eine temporäre Lizenz für Aspose.Words zu erhalten?
 

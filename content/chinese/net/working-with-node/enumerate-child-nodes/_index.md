@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /zh/net/working-with-node/enumerate-child-nodes/
 ---
+## 介绍
 
 使用正确的工具，以编程方式处理文档会变得轻而易举。Aspose.Words for .NET 就是这样一个功能强大的库，它允许开发人员轻松操作 Word 文档。今天，我们将介绍使用 Aspose.Words for .NET 枚举 Word 文档中的子节点的过程。本分步指南将涵盖从先决条件到实际示例的所有内容，确保您对该过程有扎实的理解。
 
@@ -88,17 +89,17 @@ foreach (Node child in children)
 
 ## 常见问题解答
 
-### 1. 一个段落可以包含哪些类型的节点？
+### 段落可以包含哪些类型的节点？
 段落可以包含诸如运行、形状、注释和其他内联元素之类的节点。
 
-### 2. 如何加载现有的Word文档？
+### 如何加载现有的 Word 文档？
 您可以使用以下方式加载现有文档`Document doc = new Document("path/to/your/document.docx");`.
 
-### 3. 除了 Run 之外，我还可以操作其他节点类型吗？
+### 除了运行之外，我还可以操作其他节点类型吗？
 是的，您可以通过检查其来操作各种节点类型，如形状、注释等。`NodeType`.
 
-### 4. 我需要许可证才能使用 Aspose.Words for .NET 吗？
+### 我需要许可证才能使用 Aspose.Words for .NET 吗？
 您可以从免费试用开始，或从以下位置获取临时许可证[这里](https://purchase.aspose.com/temporary-license/).
 
-### 5. 在哪里可以找到更多示例和文档？
+### 在哪里可以找到更多示例和文档？
 访问[Aspose.Words for .NET API 文档](https://reference.aspose.com/words/net/)了解更多示例和详细文档。

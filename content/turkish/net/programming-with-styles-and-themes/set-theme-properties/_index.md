@@ -72,7 +72,7 @@ doc.Save("StyledDocument.docx");
 
 ## Çözüm
 
-İşte buyur! Bu adımları izleyerek Aspose.Words for .NET'i kullanarak bir Word belgesindeki tema özelliklerini kolayca ayarlayabilirsiniz. Bu güçlü araç, belgelerinizi programlı olarak özelleştirmek için bir dünya olasılıklar dünyasının kapılarını açar. İster küçük bir proje üzerinde ister büyük ölçekli bir uygulama üzerinde çalışıyor olun, bu tekniklerde uzmanlaşmak Word belgelerinizin görünümünü ve profesyonelliğini artıracaktır.
+Ve işte karşınızda! Bu adımları izleyerek Aspose.Words for .NET'i kullanarak bir Word belgesindeki tema özelliklerini kolayca ayarlayabilirsiniz. Bu güçlü araç, belgelerinizi programlı olarak özelleştirmek için bir dünya olasılıklar dünyasının kapılarını açar. İster küçük bir proje üzerinde ister büyük ölçekli bir uygulama üzerinde çalışıyor olun, bu tekniklerde uzmanlaşmak Word belgelerinizin görünümünü ve profesyonelliğini artıracaktır.
 
 ## SSS'ler
 
@@ -89,4 +89,4 @@ Kesinlikle! Aspose.Words for .NET, yazı tipleri ve renklerin ötesinde tema öz
  Şuraya başvurabilirsiniz:[Aspose.Words belgeleri](https://reference.aspose.com/words/net/) daha detaylı bilgi için.
 
 ### Sorunla karşılaşırsam hangi destek seçenekleri mevcut?  
- Aspose şunları sağlar:[destek Forumu](https://forum.aspose.com/c/words/8) topluluktan ve Aspose ekibinden yardım alabileceğiniz yer.
+ Aspose şunları sağlar:[destek forumu](https://forum.aspose.com/c/words/8) topluluktan ve Aspose ekibinden yardım alabileceğiniz yer.

@@ -9,7 +9,7 @@ url: /tr/net/programming-with-table-styles-and-formatting/modify-row-formatting/
 ---
 ## giriiş
 
-Hiç Word belgelerinizdeki satırların biçimlendirmesinde değişiklik yapmanız gerekti mi? Belki bir tablodaki ilk satırı öne çıkarmaya veya tablolarınızın farklı sayfalarda tam olarak görünmesini sağlamaya çalışıyorsunuzdur. Şanslısın! Bu eğitimde, Aspose.Words for .NET kullanarak Word belgelerinde satır formatının nasıl değiştirileceğini derinlemesine inceliyoruz. İster deneyimli bir geliştirici olun ister yeni başlıyor olun, bu kılavuz her adımda açık ve ayrıntılı talimatlarla size yol gösterecektir. Belgelerinize gösterişli, profesyonel bir dokunuş katmaya hazır mısınız? Başlayalım!
+Hiç Word belgelerinizdeki satırların biçimlendirmesinde değişiklik yapmanız gerekti mi? Belki bir tablodaki ilk satırı öne çıkarmaya veya tablolarınızın farklı sayfalarda tam olarak görünmesini sağlamaya çalışıyorsunuzdur. Şanslısın! Bu eğitimde, Aspose.Words for .NET kullanarak Word belgelerinde satır formatının nasıl değiştirileceğini derinlemesine inceliyoruz. İster deneyimli bir geliştirici olun ister yeni başlıyor olun, bu kılavuz net ve ayrıntılı talimatlarla her adımda size yol gösterecektir. Belgelerinize gösterişli, profesyonel bir dokunuş kazandırmaya hazır mısınız? Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -95,7 +95,7 @@ firstRow.RowFormat.AllowBreakAcrossPages = true;
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak yalnızca birkaç satır kodla bir Word belgesindeki satır formatını değiştirdik. İster kenarlıkları ayarlıyor, ister satır yüksekliğini değiştiriyor, ister satırların sayfalar arasında bölünmesini sağlıyor olun, bu adımlar tablolarınızı özelleştirmek için sağlam bir temel sağlar. Farklı ayarlarla denemeler yapmaya devam edin ve bunların belgelerinizin görünümünü ve işlevselliğini nasıl geliştirebileceklerini görün.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak yalnızca birkaç satır kodla bir Word belgesindeki satır formatını değiştirdik. İster kenarlıkları ayarlıyor, ister satır yüksekliğini değiştiriyor, ister satırların sayfalar arasında bölünmesini sağlıyor olun, bu adımlar tablolarınızı özelleştirmek için sağlam bir temel sağlar. Farklı ayarlarla denemeler yapmaya devam edin ve bunların belgelerinizin görünümünü ve işlevselliğini nasıl geliştirebileceklerini görün.
 
 ## SSS'ler
 
@@ -106,7 +106,7 @@ Aspose.Words for .NET, geliştiricilerin C# kullanarak Word belgelerini programl
 Evet, bir tablodaki satırlar arasında geçiş yapabilir ve biçimlendirme değişikliklerini her satıra ayrı ayrı uygulayabilirsiniz.
 
 ### Bir satıra nasıl kenarlık eklerim?
- ayarlayarak kenarlıklar ekleyebilirsiniz.`LineStyle` mülkiyeti`Borders` gibi istenen bir stile itiraz edin`LineStyle.Single`.
+ Ayarlayarak kenarlıklar ekleyebilirsiniz.`LineStyle` mülkiyeti`Borders` gibi istenen bir stile itiraz edin`LineStyle.Single`.
 
 ### Bir satır için sabit bir yükseklik ayarlayabilir miyim?
  Evet, kullanarak sabit bir yükseklik ayarlayabilirsiniz.`HeightRule` özelliği ve yükseklik değerinin belirtilmesi.

@@ -18,7 +18,7 @@ Metin kutularını bağlamanın büyüsüne dalmadan önce, tüm temel bilgileri
 1. Aspose.Words for .NET Kütüphanesi: Aspose.Words for .NET'in en son sürümüne ihtiyacınız olacak. Yapabilirsiniz[buradan indir](https://releases.aspose.com/words/net/).
 2. Geliştirme Ortamı: Kodunuzu yazmak ve test etmek için Visual Studio gibi bir .NET geliştirme ortamı gereklidir.
 3. Temel C# Bilgisi: Temel C# anlayışı, kod örneklerini takip etmenize yardımcı olacaktır.
-4. Örnek Word Belgesi: Bu eğitim için kesinlikle gerekli olmasa da, bağlantılı metin kutularınızı test etmek için örnek bir Word belgesine sahip olmak yararlı olabilir.
+4. Örnek Word Belgesi: Bu eğitim için kesinlikle gerekli olmasa da, bağlantılı metin kutularınızı test etmek için örnek bir Word belgesine sahip olmak faydalı olabilir.
 
 ## Ad Alanlarını İçe Aktar
 
@@ -114,9 +114,9 @@ Bu, belgeyi "LinkedTextBoxes.docx" dosya adıyla kaydeder. Artık bağlantılı 
 
 ## Çözüm
 
-İşte buyur! 🎉 Aspose.Words for .NET'i kullanarak bir Word belgesinde metin kutularını başarıyla oluşturdunuz ve bağladınız. Bu eğitim, ortamınızı ayarlama, metin kutuları oluşturup bağlama ve belgenizi kaydetme aşamalarında size yol gösterdi. Bu becerilerle Word belgelerinizi dinamik içerik akışlarıyla geliştirebilir, belgelerinizi daha etkileşimli ve kullanıcı dostu hale getirebilirsiniz.
+Ve işte karşınızda! 🎉 Aspose.Words for .NET'i kullanarak bir Word belgesinde metin kutularını başarıyla oluşturdunuz ve bağladınız. Bu eğitim, ortamınızı ayarlama, metin kutuları oluşturup bağlama ve belgenizi kaydetme aşamalarında size yol gösterdi. Bu becerilerle Word belgelerinizi dinamik içerik akışlarıyla geliştirebilir, belgelerinizi daha etkileşimli ve kullanıcı dostu hale getirebilirsiniz.
 
- Daha ayrıntılı bilgi ve gelişmiş özellikler için mutlaka göz atın.[Aspose.Words API belgeleri](https://reference.aspose.com/words/net/) Herhangi bir sorunuz varsa veya sorunla karşılaşırsanız,[destek Forumu](https://forum.aspose.com/c/words/8) harika bir kaynaktır.
+ Daha ayrıntılı bilgi ve gelişmiş özellikler için mutlaka göz atın.[Aspose.Words API belgeleri](https://reference.aspose.com/words/net/) Herhangi bir sorunuz varsa veya sorunla karşılaşırsanız,[destek forumu](https://forum.aspose.com/c/words/8) harika bir kaynaktır.
 
 Mutlu kodlamalar ve metin kutularınız her zaman mükemmel şekilde bağlantı kursun! 🚀
 

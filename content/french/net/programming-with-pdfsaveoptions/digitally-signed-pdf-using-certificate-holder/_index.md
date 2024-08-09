@@ -73,7 +73,7 @@ Enfin, enregistrez le document au format PDF avec la signature numérique.
 doc.Save(dataDir + "DigitallySignedPdfUsingCertificateHolder.pdf", saveOptions);
 ```
 
-Et c'est tout! Votre document est maintenant signé et enregistré au format PDF.
+Et c'est tout ! Votre document est maintenant signé et enregistré au format PDF.
 
 ## Conclusion
 

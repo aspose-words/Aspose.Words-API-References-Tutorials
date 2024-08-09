@@ -126,7 +126,7 @@ doc.Save(dataDir + "InsertionFieldAdvanceWithoutDocumentBuilder.docx");
 
 ## 結論
 
-現在你就擁有了！您已成功將進階欄位插入到 Word 文件中，而無需使用 DocumentBuilder 類別。透過執行這些步驟，您已經利用 Aspose.Words for .NET 的強大功能以程式方式操作 Word 文件。無論您是自動產生報告還是建立複雜的文件模板，這些知識無疑都會派上用場。不斷嘗試和探索 Aspose.Words 的功能，將您的文件處理提升到新的水平！
+現在你就得到它了！您已成功將進階欄位插入到 Word 文件中，而無需使用 DocumentBuilder 類別。透過執行這些步驟，您已經利用 Aspose.Words for .NET 的強大功能以程式方式操作 Word 文件。無論您是自動產生報告還是建立複雜的文件模板，這些知識無疑都會派上用場。不斷嘗試和探索 Aspose.Words 的功能，將您的文件處理提升到新的水平！
 
 ## 常見問題解答
 

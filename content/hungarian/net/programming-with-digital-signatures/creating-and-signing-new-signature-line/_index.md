@@ -9,7 +9,7 @@ url: /hu/net/programming-with-digital-signatures/creating-and-signing-new-signat
 ---
 ## Bevezetés
 
-Halihó! Tehát van egy Word-dokumentuma, és hozzá kell adnia egy aláírási sort, majd digitálisan alá kell írnia. Trükkösnek hangzik? Egyáltalán nem! Az Aspose.Words for .NET-nek köszönhetően ezt zökkenőmentesen elérheti néhány sornyi kóddal. Ebben az oktatóanyagban végigvezetjük a teljes folyamaton, a környezet beállításától a dokumentum csillogó új aláírással történő mentéséig. Kész? Merüljünk el!
+Szia! Tehát van egy Word-dokumentuma, és hozzá kell adnia egy aláírási sort, majd digitálisan alá kell írnia. Trükkösnek hangzik? Egyáltalán nem! Az Aspose.Words for .NET-nek köszönhetően ezt zökkenőmentesen elérheti néhány sornyi kóddal. Ebben az oktatóanyagban végigvezetjük a teljes folyamaton, a környezet beállításától a dokumentum csillogó új aláírással történő mentéséig. Kész? Merüljünk el!
 
 ## Előfeltételek
 
@@ -105,7 +105,7 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
 Igen, különféle képformátumokat használhat, például PNG, JPG, BMP stb.
 
 ###  Szükséges-e használni a`.pfx` file for the certificate?
- Igen, egy`.pfx` fájl egy elterjedt formátum a kriptográfiai információk, köztük a tanúsítványok és privát kulcsok tárolására.
+ Igen, a`.pfx` fájl egy elterjedt formátum a kriptográfiai információk, köztük a tanúsítványok és privát kulcsok tárolására.
 
 ### Hozzáadhatok több aláírási sort egyetlen dokumentumhoz?
 Teljesen! Több aláírási sort is beszúrhat úgy, hogy minden aláírásnál megismétli a beszúrási lépést.

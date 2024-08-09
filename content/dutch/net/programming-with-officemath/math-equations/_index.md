@@ -89,7 +89,7 @@ En daar heb je het! U hebt met succes wiskundige vergelijkingen in een Word-docu
 Ja, Aspose.Words voor .NET ondersteunt voornamelijk .NET-talen zoals C#, maar u kunt het gebruiken met andere door .NET ondersteunde talen zoals VB.NET.
 
 ### Hoe krijg ik een tijdelijke licentie voor Aspose.Words voor .NET?
- U kunt een tijdelijke licentie verkrijgen door naar de website te gaan[Tijdelijke licentie](https://purchase.aspose.com/temporary-license/) bladzijde.
+ U kunt een tijdelijke licentie verkrijgen door naar de website te gaan[Tijdelijke licentie](https://purchase.aspose.com/temporary-license/) pagina.
 
 ### Is er een manier om de vergelijkingen rechts of in het midden te rechtvaardigen?
  Ja, u kunt de`Justification`eigendom aan`Right` of`Center` afhankelijk van uw behoefte.
@@ -98,4 +98,4 @@ Ja, Aspose.Words voor .NET ondersteunt voornamelijk .NET-talen zoals C#, maar u 
 Absoluut! Aspose.Words voor .NET ondersteunt het converteren van Word-documenten naar verschillende formaten, waaronder PDF. U kunt gebruik maken van de`Save` methode met verschillende formaten.
 
 ### Waar kan ik meer gedetailleerde documentatie vinden voor Aspose.Words voor .NET?
- Uitgebreide documentatie vindt u op de website[Aspose.Words-documentatie](https://reference.aspose.com/words/net/) bladzijde.
+ Uitgebreide documentatie vindt u op de website[Aspose.Words-documentatie](https://reference.aspose.com/words/net/) pagina.

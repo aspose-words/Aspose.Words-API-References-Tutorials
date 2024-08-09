@@ -15,7 +15,7 @@ Siap menyelami beberapa hal teknologi yang mengagumkan? Hari ini, kita akan memb
 
 Sebelum kita beralih ke bagian yang menyenangkan, pastikan Anda memiliki semua yang Anda butuhkan:
 
-1.  Aspose.Words untuk .NET Library: Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/) . Jika Anda belum membelinya, ambil a[uji coba gratis](https://releases.aspose.com/) atau[membelinya di sini](https://purchase.aspose.com/buy).
+1.  Aspose.Words untuk .NET Library: Anda bisa[unduh di sini](https://releases.aspose.com/words/net/) . Jika Anda belum membelinya, ambil a[uji coba gratis](https://releases.aspose.com/) atau[membelinya di sini](https://purchase.aspose.com/buy).
 2. Lingkungan Pengembangan: Visual Studio atau IDE lain yang mendukung .NET.
 3. Pengetahuan Dasar tentang C#: Anda harus terbiasa dengan C# untuk mengikutinya.
 
@@ -53,7 +53,7 @@ RtfLoadOptions loadOptions = new RtfLoadOptions { RecognizeUtf8Text = true };
 
 ## Langkah 3: Muat Dokumen
 
-Sekarang, saatnya memuat dokumen menggunakan opsi pemuatan yang telah kita konfigurasikan. Ini adalah dimana keajaiban terjadi!
+Sekarang, saatnya memuat dokumen menggunakan opsi pemuatan yang telah kita konfigurasikan. Di sinilah keajaiban terjadi!
 
 ```csharp
 Document doc = new Document(dataDir + "UTF-8 characters.rtf", loadOptions);

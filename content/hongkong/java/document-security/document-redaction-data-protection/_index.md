@@ -16,7 +16,7 @@ url: /zh-hant/java/document-security/document-redaction-data-protection/
 
 ## 設定您的開發環境
 
-在開始使用 Aspose.Words for Java 之前，我們需要設定開發環境。按著這些次序：
+在開始使用 Aspose.Words for Java 之前，我們需要設定開發環境。請依照下列步驟操作：
 
 1. 下載並安裝 Aspose.Words for Java：訪問[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/)下載最新版本的 Aspose.Words for Java。
 

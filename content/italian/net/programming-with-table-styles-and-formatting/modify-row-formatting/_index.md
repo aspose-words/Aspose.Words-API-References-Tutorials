@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-table-styles-and-formatting/modify-row-formatting/
 ---
-## introduzione
+## Introduzione
 
 Hai mai avuto bisogno di modificare la formattazione delle righe nei tuoi documenti Word? Forse stai cercando di far risaltare la prima riga di una tabella o di assicurarti che le tue tabelle appaiano esattamente su pagine diverse. Bene, sei fortunato! In questo tutorial, approfondiremo come modificare la formattazione delle righe nei documenti di Word utilizzando Aspose.Words per .NET. Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato, questa guida ti guiderà attraverso ogni passaggio con istruzioni chiare e dettagliate. Pronto a dare ai tuoi documenti un tocco raffinato e professionale? Iniziamo!
 
@@ -95,7 +95,7 @@ firstRow.RowFormat.AllowBreakAcrossPages = true;
 
 ## Conclusione
 
-il gioco è fatto! Con poche righe di codice, abbiamo modificato la formattazione delle righe in un documento Word utilizzando Aspose.Words per .NET. Che tu stia regolando i bordi, modificando l'altezza delle righe o assicurando che le righe siano suddivise tra le pagine, questi passaggi forniscono una solida base per personalizzare le tue tabelle. Continua a sperimentare diverse impostazioni e scopri come possono migliorare l'aspetto e la funzionalità dei tuoi documenti.
+Ed ecco qua! Con poche righe di codice, abbiamo modificato la formattazione delle righe in un documento Word utilizzando Aspose.Words per .NET. Che tu stia regolando i bordi, modificando l'altezza delle righe o assicurando che le righe siano suddivise tra le pagine, questi passaggi forniscono una solida base per personalizzare le tue tabelle. Continua a sperimentare diverse impostazioni e scopri come possono migliorare l'aspetto e la funzionalità dei tuoi documenti.
 
 ## Domande frequenti
 

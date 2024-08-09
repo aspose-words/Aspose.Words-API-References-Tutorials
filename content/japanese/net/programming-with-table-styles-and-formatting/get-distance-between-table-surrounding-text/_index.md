@@ -9,7 +9,7 @@ url: /ja/net/programming-with-table-styles-and-formatting/get-distance-between-t
 ---
 ## 導入
 
-洗練されたレポートや重要なドキュメントを準備していて、表の見栄えを良くしたいとします。表とその周囲のテキストの間に十分なスペースを確保して、ドキュメントを読みやすく、見た目に美しくする必要があります。Aspose.Words for .NET を使用すると、これらの距離をプログラムで簡単に取得および調整できます。このチュートリアルでは、これを実現するための手順を説明し、プロフェッショナルなタッチでドキュメントを際立たせます。
+洗練されたレポートや重要なドキュメントを準備していて、表の見栄えを良くしたいとします。表とその周囲のテキストの間に十分なスペースを確保して、ドキュメントを読みやすく、見た目に美しくする必要があります。Aspose.Words for .NET を使用すると、これらの距離をプログラムで簡単に取得して調整できます。このチュートリアルでは、これを実現するための手順を説明し、プロフェッショナルなタッチでドキュメントを際立たせます。
 
 ## 前提条件
 
@@ -95,4 +95,4 @@ Console.WriteLine("Distance from Left: " + table.DistanceLeft);
 Aspose.Words for .NET は、Visual Studio の NuGet パッケージ マネージャーからインストールできます。「Aspose.Words」を検索してパッケージをインストールするだけです。
 
 ### Aspose.Words でサポートされるドキュメントの種類に制限はありますか?
- Aspose.Wordsは、DOCX、DOC、PDF、HTMLなど、幅広いドキュメント形式をサポートしています。[ドキュメンテーション](https://reference.aspose.com/words/net/)サポートされている形式の完全なリストについては、こちらをご覧ください。
+ Aspose.Wordsは、DOCX、DOC、PDF、HTMLなど、幅広いドキュメント形式をサポートしています。[ドキュメント](https://reference.aspose.com/words/net/)サポートされている形式の完全なリストについては、こちらをご覧ください。

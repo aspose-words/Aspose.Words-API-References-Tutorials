@@ -42,7 +42,7 @@ Questa raccolta completa di esercitazioni fornisce indicazioni dettagliate su co
 {{% /alert %}}
 
 Questi sono i link ad alcune risorse utili:
-- [Elaborazione di testi](./java/word-processing/)  
+- [Elaborazione testi](./java/word-processing/)  
 - [Elaborazione della tabella](./java/table-processing/)
 - [Stile del documento](./java/document-styling/)
 - [Unione di documenti](./java/document-merging/)

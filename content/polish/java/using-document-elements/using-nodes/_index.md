@@ -9,7 +9,7 @@ url: /pl/java/using-document-elements/using-nodes/
 ---
 W tym obszernym samouczku zagłębimy się w świat pracy z węzłami w Aspose.Words dla Java. Węzły są podstawowymi elementami struktury dokumentu i zrozumienie sposobu manipulowania nimi ma kluczowe znaczenie w zadaniach związanych z przetwarzaniem dokumentów. Zbadamy różne aspekty, w tym uzyskiwanie węzłów nadrzędnych, wyliczanie węzłów podrzędnych oraz tworzenie i dodawanie węzłów akapitowych.
 
-## 1. Wstęp
+## 1. Wprowadzenie
 Aspose.Words dla Java to potężna biblioteka do programowej pracy z dokumentami programu Word. Węzły reprezentują różne elementy dokumentu programu Word, takie jak akapity, przebiegi, sekcje i inne. W tym samouczku dowiemy się, jak efektywnie manipulować tymi węzłami.
 
 ## 2. Pierwsze kroki

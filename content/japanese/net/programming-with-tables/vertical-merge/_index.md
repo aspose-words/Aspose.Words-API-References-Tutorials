@@ -42,7 +42,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-ここでは、新しいドキュメントを作成し、そのドキュメントを操作するために DocumentBuilder オブジェクトを初期化します。
+ここでは、新しいドキュメントを作成し、そのドキュメントを操作するための DocumentBuilder オブジェクトを初期化します。
 
 ## ステップ2: 最初のセルを挿入する
 
@@ -54,7 +54,7 @@ builder.CellFormat.VerticalMerge = CellMerge.First;
 builder.Write("Text in merged cells.");
 ```
 
-このステップでは、最初のセルを挿入し、その垂直結合プロパティを`CellMerge.First`は、これが結合の開始セルであることを示します。次に、このセルにテキストを追加します。
+このステップでは、最初のセルを挿入し、その垂直結合プロパティを`CellMerge.First`、これは結合の開始セルであることを示します。次に、このセルにテキストを追加します。
 
 ## ステップ3: 同じ行に2番目のセルを挿入する
 

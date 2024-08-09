@@ -77,7 +77,7 @@ Burada, eklenen belgeyi, ek içerik içerdiğini belirten açıklayıcı bir dos
 
 ## Çözüm
 
- İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesini diğerine nasıl ekleyeceğinizi başarıyla öğrendiniz. Bu eğitim ortamınızı ayarlamayı, belgeleri yüklemeyi, kaynak biçimlendirmesini korurken bir belgeyi diğerine eklemeyi ve birleştirilmiş belgeyi kaydetmeyi kapsıyordu. Aspose.Words çok çeşitli özellikler sunar; bu nedenle,[API belgeleri](https://reference.aspose.com/words/net/) tüm potansiyelini ortaya çıkarmak için.
+ Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesini diğerine nasıl ekleyeceğinizi başarıyla öğrendiniz. Bu eğitim ortamınızı ayarlamayı, belgeleri yüklemeyi, kaynak biçimlendirmesini korurken bir belgeyi diğerine eklemeyi ve birleştirilmiş belgeyi kaydetmeyi kapsıyordu. Aspose.Words çok çeşitli özellikler sunar; bu nedenle,[API belgeleri](https://reference.aspose.com/words/net/) tüm potansiyelini ortaya çıkarmak için.
 
 ## SSS
 
@@ -91,7 +91,7 @@ Aspose.Words for .NET, geliştiricilerin Word belgelerini programlı olarak olu�
 
 ### 3. Belgeleri eklerken formatın korunduğundan nasıl emin olabilirim?
 
- Kullan`ImportFormatMode.KeepSourceFormatting` parametresi`AppendDocument` Kaynak belgenin biçimlendirmesini koruma yöntemi.
+ Kullanın`ImportFormatMode.KeepSourceFormatting` parametresi`AppendDocument` Kaynak belgenin biçimlendirmesini koruma yöntemi.
 
 ### 4. Aspose.Words for .NET desteğini nasıl alabilirim?
 

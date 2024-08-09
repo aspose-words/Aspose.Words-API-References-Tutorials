@@ -105,11 +105,11 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", save
 
 ## الخطوة 5: التحقق من الإخراج
 
- بعد تشغيل مشروعك، انتقل إلى ملف`Documents` مجلد. يجب أن تجد ملف HTML اسمه`WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html` . افتح هذا الملف في محرر نصوص أو متصفح للتحقق من أن فئات CSS لها البادئة`pfx_`.
+ بعد تشغيل مشروعك، انتقل إلى ملف`Documents` المجلد. يجب أن تجد ملف HTML اسمه`WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html` . افتح هذا الملف في محرر نصوص أو متصفح للتحقق من أن فئات CSS لها البادئة`pfx_`.
 
 ## خاتمة
 
-وهناك لديك! باتباع هذه الخطوات، تكون قد قمت بنجاح بإضافة بادئة اسم فئة CSS إلى مخرجات HTML الخاصة بك باستخدام Aspose.Words for .NET. يمكن أن تساعدك هذه الميزة البسيطة والقوية في الحفاظ على أنماط نظيفة وخالية من التعارضات في مستندات HTML الخاصة بك.
+وهنا لديك! باتباع هذه الخطوات، تكون قد قمت بنجاح بإضافة بادئة اسم فئة CSS إلى مخرجات HTML الخاصة بك باستخدام Aspose.Words for .NET. يمكن أن تساعدك هذه الميزة البسيطة والقوية في الحفاظ على أنماط نظيفة وخالية من التعارضات في مستندات HTML الخاصة بك.
 
 ## الأسئلة الشائعة
 
@@ -120,7 +120,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", save
  ال`CssClassNamePrefix`الخاصية تعمل مع CSS خارجي. بالنسبة إلى CSS المضمنة، ستحتاج إلى أسلوب مختلف.
 
 ### كيف يمكنني تضمين خيارات حفظ HTML أخرى؟
- يمكنك تكوين خصائص مختلفة`HtmlSaveOptions` لتخصيص مخرجات HTML الخاصة بك. افحص ال[توثيق](https://reference.aspose.com/words/net/) لمزيد من التفاصيل.
+ يمكنك تكوين خصائص مختلفة`HtmlSaveOptions` لتخصيص مخرجات HTML الخاصة بك. تحقق من[الوثائق](https://reference.aspose.com/words/net/) لمزيد من التفاصيل.
 
 ### هل من الممكن حفظ HTML في الدفق؟
  قطعاً! يمكنك حفظ المستند في دفق عن طريق تمرير كائن الدفق إلى ملف`Save` طريقة.

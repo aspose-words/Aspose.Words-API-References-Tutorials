@@ -26,7 +26,7 @@ public void exportRoundtripInformation() throws Exception {
 ```
 
 ## 3. Yazı Tiplerini Base64 Olarak Dışa Aktarın
- İle`exportFontsAsBase64` yöntemiyle, belgede kullanılan yazı tiplerini HTML'de Base64 kodlu veriler olarak dışa aktarabilirsiniz. Bu, HTML gösteriminin orijinal Word belgesiyle aynı yazı tipi stillerini korumasını sağlar.
+ ile`exportFontsAsBase64` yöntemiyle, belgede kullanılan yazı tiplerini HTML'de Base64 kodlu veriler olarak dışa aktarabilirsiniz. Bu, HTML gösteriminin orijinal Word belgesiyle aynı yazı tipi stillerini korumasını sağlar.
 
 ```java
 @Test
@@ -65,7 +65,7 @@ public void convertMetafilesToEmfOrWmf() throws Exception {
 ```
 
 ## 6. Meta Dosyalarını SVG'ye Dönüştürün
- Kullan`convertMetafilesToSvg` Meta dosyalarını SVG formatına dönüştürme yöntemi. Bu format, HTML belgelerinde vektör grafiklerini görüntülemek için idealdir.
+ Kullanın`convertMetafilesToSvg` Meta dosyalarını SVG formatına dönüştürme yöntemi. Bu format, HTML belgelerinde vektör grafiklerini görüntülemek için idealdir.
 
 ```java
 @Test
@@ -75,7 +75,7 @@ public void convertMetafilesToSvg() throws Exception {
 ```
 
 ## 7. CSS Sınıfı Adı Öneki Ekle
- İle`addCssClassNamePrefix` yöntemini kullanarak, dışa aktarılan HTML'deki CSS sınıfı adlarına bir önek ekleyebilirsiniz. Bu, mevcut stillerle çakışmaları önlemeye yardımcı olur.
+ ile`addCssClassNamePrefix` yöntemini kullanarak, dışa aktarılan HTML'deki CSS sınıfı adlarına bir önek ekleyebilirsiniz. Bu, mevcut stillerle çakışmaları önlemeye yardımcı olur.
 
 ```java
 @Test

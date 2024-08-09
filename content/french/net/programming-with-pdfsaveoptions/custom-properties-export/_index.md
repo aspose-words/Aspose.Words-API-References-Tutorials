@@ -40,7 +40,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-## Étape 2 : Ajouter des propriétés personnalisées
+## Étape 2 : ajouter des propriétés personnalisées
 
 Ensuite, vous ajouterez des propriétés personnalisées à votre document. Ces propriétés peuvent inclure des métadonnées telles que le nom de l'entreprise, l'auteur ou toute autre information pertinente.
 
@@ -86,4 +86,4 @@ Aspose.Words for .NET fournit une API robuste et facile à utiliser pour manipul
 Aspose.Words for .NET prend en charge l'exportation vers divers formats, notamment DOCX, HTML, EPUB et bien d'autres.
 
 ### Où puis-je obtenir de l'aide si je rencontre des problèmes ?
- Pour obtenir de l'aide, vous pouvez visiter le[Forum d'assistance Aspose.Words](https://forum.aspose.com/c/words/8) à l'aide.
+ Pour obtenir de l'aide, vous pouvez visiter le[Forum d'assistance Aspose.Words](https://forum.aspose.com/c/words/8) pour obtenir de l'aide.

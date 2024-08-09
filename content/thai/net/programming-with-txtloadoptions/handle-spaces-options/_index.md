@@ -80,7 +80,7 @@ TxtLoadOptions loadOptions = new TxtLoadOptions
 Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), loadOptions);
 ```
 
- ที่นี่เรากำลังสร้าง`MemoryStream` จากข้อความตัวอย่างที่เข้ารหัสแล้วส่งต่อไปยัง`Document` ตัวสร้างพร้อมกับตัวเลือกโหลดของเรา ขั้นตอนนี้จะอ่านข้อความและใช้กฎการจัดการพื้นที่
+ ที่นี่เรากำลังสร้าง`MemoryStream` จากข้อความตัวอย่างที่เข้ารหัสแล้วส่งต่อไปยัง`Document` ตัวสร้างพร้อมกับตัวเลือกการโหลดของเรา ขั้นตอนนี้จะอ่านข้อความและใช้กฎการจัดการพื้นที่
 
 ## ขั้นตอนที่ 5: บันทึกเอกสาร
 

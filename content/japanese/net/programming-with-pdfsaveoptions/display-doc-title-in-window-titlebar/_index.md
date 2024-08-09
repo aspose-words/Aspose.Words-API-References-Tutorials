@@ -54,7 +54,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
-設定することにより`DisplayDocTitle`に`true`では、Aspose.Words に PDF ウィンドウのタイトル バーにあるドキュメント タイトルを使用するように指示します。
+設定により`DisplayDocTitle`に`true`では、Aspose.Words に PDF ウィンドウのタイトル バーにあるドキュメント タイトルを使用するように指示します。
 
 ## ステップ3: ドキュメントをPDFとして保存する
 

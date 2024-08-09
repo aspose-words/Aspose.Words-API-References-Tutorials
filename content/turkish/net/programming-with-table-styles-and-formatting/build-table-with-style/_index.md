@@ -128,7 +128,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.BuildTableWithStyle.docx
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesinde başarıyla şık bir tablo oluşturdunuz. Bu güçlü kitaplık, Word belgelerini tam ihtiyaçlarınızı karşılayacak şekilde otomatikleştirmeyi ve özelleştirmeyi kolaylaştırır. İster rapor, ister fatura, ister başka türde bir belge oluşturuyor olun, Aspose.Words yanınızdadır.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesinde başarıyla şık bir tablo oluşturdunuz. Bu güçlü kitaplık, Word belgelerini tam ihtiyaçlarınızı karşılayacak şekilde otomatikleştirmeyi ve özelleştirmeyi kolaylaştırır. İster rapor, ister fatura, ister başka türde bir belge oluşturuyor olun, Aspose.Words yanınızdadır.
 
 ## SSS'ler
 

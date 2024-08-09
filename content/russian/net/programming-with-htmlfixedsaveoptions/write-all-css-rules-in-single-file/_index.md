@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile
  Да, установив`SaveFontFaceCssSeparately` к`true`, вы можете разделить правила CSS для шрифта в другой файл.
 
 ### Можно ли использовать Aspose.Words для .NET бесплатно?
- Aspose.Words предлагает бесплатную пробную версию, которую вы можете[Скачать здесь](https://releases.aspose.com/) . Для дальнейшего использования рассмотрите возможность приобретения лицензии.[здесь](https://purchase.aspose.com/buy).
+ Aspose.Words предлагает бесплатную пробную версию, которую вы можете[скачать здесь](https://releases.aspose.com/) . Для дальнейшего использования рассмотрите возможность приобретения лицензии.[здесь](https://purchase.aspose.com/buy).
 
 ### В какие еще форматы можно конвертировать Aspose.Words for .NET?
 Aspose.Words for .NET поддерживает различные форматы, включая PDF, TXT и форматы изображений, такие как JPEG и PNG.

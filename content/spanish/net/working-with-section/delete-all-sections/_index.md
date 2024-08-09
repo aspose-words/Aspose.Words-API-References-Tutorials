@@ -48,7 +48,7 @@ Ahora que tenemos nuestro documento cargado, el siguiente paso es borrar todas l
 doc.Sections.Clear();
 ```
 
-Esta simple línea de código borra todas las secciones del documento cargado. pero como funciona? Vamos a desglosarlo:
+Esta simple línea de código borra todas las secciones del documento cargado. ¿Pero cómo funciona? Vamos a desglosarlo:
 
 - `doc.Sections` accede a las secciones del documento.
 - `.Clear()` elimina todas las secciones del documento.
@@ -69,7 +69,7 @@ Esta simple línea de código borra todas las secciones del documento cargado. p
  Puedes adquirirlo desde[aquí](https://purchase.aspose.com/buy).
 
 ### ¿Hay algún soporte disponible para Aspose.Words para .NET?
- Sí, puedes obtener soporte de la comunidad Aspose.[aquí](https://forum.aspose.com/c/words/8).
+Sí, puedes obtener soporte de la comunidad Aspose.[aquí](https://forum.aspose.com/c/words/8).
 
 ### ¿Qué pasa si necesito una licencia temporal?
  Puede obtener una licencia temporal de[aquí](https://purchase.aspose.com/temporary-license/).

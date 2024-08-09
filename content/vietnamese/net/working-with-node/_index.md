@@ -14,9 +14,9 @@ Các nút trong Aspose.Words for .NET đại diện cho các thành phần khác
  ## Hướng dẫn
 | Tiêu đề | Sự miêu tả |
 | --- | --- |
-| [Sử dụng loại nút](./use-node-type/) | Tìm hiểu cách sử dụng loại nút để truy cập thông tin cụ thể của tài liệu bằng Aspose.Words cho .NET. |
-| [Nhận nút gốc](./get-parent-node/) | Tìm hiểu cách lấy nút cha của một phần tử cụ thể bằng Aspose.Words cho .NET. |
-| [Tài liệu chủ sở hữu](./owner-document/) | Tìm hiểu cách sử dụng tài liệu chủ sở hữu trong Aspose.Words cho .NET. |
-| [Liệt kê các nút con](./enumerate-child-nodes/) | Tìm hiểu cách liệt kê các nút con trong một đoạn văn bằng Aspose.Words cho .NET. |
-| [Truy cập đã nhập](./typed-access/) | Tìm hiểu cách sử dụng quyền truy cập đã nhập để thao tác các bảng trong Aspose.Words cho .NET. |
-| [Tạo và thêm nút đoạn văn](./create-and-add-paragraph-node/) | Tạo và thêm nút đoạn văn vào tài liệu Word của bạn bằng Aspose.Words for .NET. |
+| [Sử dụng loại nút](./use-node-type/) | Khám phá cách làm chủ thuộc tính NodeType trong Aspose.Words cho .NET với hướng dẫn chi tiết của chúng tôi. Hoàn hảo cho các nhà phát triển muốn nâng cao kỹ năng xử lý tài liệu của họ. |
+| [Nhận nút gốc](./get-parent-node/) | Tìm hiểu cách lấy nút gốc của phần tài liệu bằng Aspose.Words cho .NET với hướng dẫn chi tiết từng bước này. |
+| [Tài liệu chủ sở hữu](./owner-document/) | Tìm hiểu cách làm việc với Tài liệu chủ sở hữu trong Aspose.Words cho .NET. Hướng dẫn từng bước này bao gồm việc tạo và thao tác các nút trong tài liệu. |
+| [Liệt kê các nút con](./enumerate-child-nodes/) | Tìm hiểu cách liệt kê các nút con trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước này. |
+| [Truy cập đã nhập](./typed-access/) | Tìm hiểu cách sử dụng Truy cập đã nhập trong Aspose.Words dành cho .NET để dễ dàng thao tác các thành phần tài liệu như bảng và hàng. Hướng dẫn từng bước này giúp đơn giản hóa quy trình làm việc của bạn. |
+| [Tạo và thêm nút đoạn văn](./create-and-add-paragraph-node/) | Tìm hiểu cách tạo và thêm nút đoạn văn trong tài liệu bằng Aspose.Words cho .NET với hướng dẫn chi tiết từng bước này. |

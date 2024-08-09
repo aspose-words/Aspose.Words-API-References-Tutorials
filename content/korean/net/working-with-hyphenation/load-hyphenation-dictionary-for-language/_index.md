@@ -2,74 +2,110 @@
 title: 언어에 대한 하이픈 넣기 사전 로드
 linktitle: 언어에 대한 하이픈 넣기 사전 로드
 second_title: Aspose.Words 문서 처리 API
-description: Aspose.Words for .NET에서 특정 언어에 대한 하이픈 사전을 로드하는 방법을 알아보세요.
+description: 이 포괄적인 단계별 튜토리얼에서 .NET용 Aspose.Words를 사용하여 모든 언어에 대한 하이픈 넣기 사전을 로드하는 방법을 알아보세요.
 type: docs
 weight: 10
 url: /ko/net/working-with-hyphenation/load-hyphenation-dictionary-for-language/
 ---
+## 소개
 
-이 단계별 튜토리얼에서는 특정 언어에 대한 하이픈 넣기 사전을 Aspose.Words for .NET에 로드하는 방법을 보여줍니다. 제공된 C# 소스 코드를 설명하고 이를 자신의 프로젝트에 구현하는 방법을 보여 드리겠습니다.
+Word 문서에서 성가신 하이픈 문제로 어려움을 겪은 적이 있습니까? 글쎄, 당신은 혼자가 아닙니다. 하이픈 넣기는 특히 복잡한 하이픈 넣기 규칙이 있는 언어에서 텍스트의 가독성을 높이거나 깨뜨릴 수 있습니다. 두려워하지 마세요! .NET용 Aspose.Words가 여러분을 도와드립니다. 이 튜토리얼에서는 특정 언어에 대한 하이픈 넣기 사전을 로드하는 과정을 안내하여 문서가 세련되고 전문적으로 보이도록 합니다. 뛰어들어보자!
 
- 시작하려면 개발 환경에 Aspose.Words for .NET이 설치 및 구성되어 있는지 확인하세요. 아직 설치하지 않았다면 다음에서 라이브러리를 다운로드하여 설치하세요.[Aspose.Releases]https://releases.aspose.com/words/net/.
+## 전제 조건
 
-## 1단계: 문서 로드
+시작하기 전에 다음 사항이 있는지 확인하세요.
 
-먼저 지정된 디렉터리에서 문서를 로드합니다.
+- 컴퓨터에 Visual Studio가 설치되어 있습니다.
+- .NET 프레임워크가 설치되었습니다.
+-  .NET 라이브러리용 Aspose.Words. 아직 설치하지 않으셨다면 아래에서 다운로드 받으실 수 있습니다.[여기](https://releases.aspose.com/words/net/).
+- 대상 언어에 대한 하이픈 넣기 사전 파일입니다. 이 튜토리얼에서는 독일어 하이픈 넣기 사전(`hyph_de_CH.dic`).
+- 대상 언어로 된 샘플 Word 문서. 우리는`German text.docx`.
+
+## 네임스페이스 가져오기
+
+먼저, 프로젝트에 필요한 네임스페이스를 가져와야 합니다. 방법은 다음과 같습니다.
+
+```csharp
+using System;
+using System.IO;
+using Aspose.Words;
+using Aspose.Words.Hyphenation;
+```
+
+이제 프로세스를 따라하기 쉬운 단계로 나누어 보겠습니다.
+
+## 1단계: 문서 디렉토리 설정
+
+시작하기 전에 문서와 하이픈 사전이 있는 디렉터리를 지정해야 합니다. 이렇게 하면 프로젝트를 체계적으로 정리하고 코드를 깔끔하게 유지하는 데 도움이 됩니다.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ 바꾸다`"YOUR DOCUMENT DIRECTORY"` 파일이 포함된 디렉터리의 경로를 사용하세요.
+
+## 2단계: 문서 로드
+
+ 다음으로 처리하려는 Word 문서를 로드합니다. 이 작업은 다음을 사용하여 수행됩니다.`Document` Aspose.Words의 클래스입니다.
+
+```csharp
 Document doc = new Document(dataDir + "German text.docx");
 ```
 
-## 2단계: 하이픈 넣기 사전 로드
+ 이 코드 줄은 새로운 것을 초기화합니다.`Document` 객체를 생성하고 파일을 로드합니다.`German text.docx` 지정된 디렉토리에서.
 
-그런 다음 하이픈 넣기 사전 파일에 대한 스트림을 열고 원하는 언어로 저장합니다. 이 예에서는 스위스 독일어(de-CH) 사전을 로드합니다.
+## 3단계: 하이픈 넣기 사전 열기
+
+ 이제 하이픈 사전 파일을 열어야 합니다. 우리는`File.OpenRead` 사전 파일을 스트림으로 읽는 방법입니다.
 
 ```csharp
 Stream stream = File.OpenRead(dataDir + "hyph_de_CH.dic");
+```
+
+ 이 줄은 하이픈 넣기 사전 파일을 엽니다`hyph_de_CH.dic` 그리고 그것을 스트림으로 읽어 들입니다.
+
+## 4단계: 하이픈 사전 등록
+
+ 사전 파일이 열린 상태에서 다음 단계는 Aspose.Words에서 사용하도록 등록하는 것입니다. 이 작업은 다음을 사용하여 수행됩니다.`Hyphenation.RegisterDictionary` 방법.
+
+```csharp
 Hyphenation.RegisterDictionary("de-CH", stream);
 ```
 
-데이터 디렉터리에 적절한 사전 파일이 있는지 확인하세요.
+여기서는 하이픈 넣기 사전을 등록합니다.`de-CH` (스위스 독일어) 언어.
 
-## 3단계: 수정된 문서 저장
+## 5단계: 문서 저장
 
-마지막으로 수정된 문서를 저장합니다.
+마지막으로 처리된 문서를 저장합니다. 원하는 형식을 선택할 수 있지만 이 튜토리얼에서는 PDF로 저장하겠습니다.
 
 ```csharp
 doc.Save(dataDir + "ProcessingByBreakingWithDictionary.pdf");
 ```
 
-그래서 ! Aspose.Words for .NET에서 특정 언어에 대한 하이픈 사전을 성공적으로 로드했습니다.
+ 이 줄은 파일 이름을 사용하여 지정된 디렉터리에 문서를 저장합니다.`ProcessingByBreakingWithDictionary.pdf`.
 
-### .NET용 Aspose.Words를 사용하는 언어의 하이픈 넣기 사전 로딩에 대한 예제 소스 코드
+## 결론
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(dataDir + "German text.docx");
+거기 있어요! Aspose.Words for .NET을 사용하여 특정 언어에 대한 하이픈 사전을 성공적으로 로드했습니다. 작지만 강력한 이 기능은 문서의 가독성과 전문성을 크게 향상시킬 수 있습니다. 이제 다양한 언어로 시도해 보고 그 마법을 직접 확인해 보세요!
 
-Stream stream = File.OpenRead(dataDir + "hyph_de_CH.dic");
-Hyphenation.RegisterDictionary("de-CH", stream);
+## FAQ
 
-doc.Save(dataDir + "ProcessingByBreakingWithDictionary.pdf");
-```
+### 하이픈 사전이란 무엇입니까?
 
-자신의 프로젝트에서 이 코드를 자유롭게 사용하고 특정 요구 사항에 맞게 수정하십시오.
+하이픈 넣기 사전은 적절한 지점에서 단어를 분리하고 텍스트 레이아웃을 향상시키며 가독성을 높이는 규칙이 포함된 파일입니다.
 
-### FAQ
+### 하이픈 넣기 사전은 어디서 찾을 수 있나요?
 
-#### Q: Aspose.Words에서 특정 언어에 대한 음절 사전을 로드하는 방법은 무엇입니까?
+주로 언어 또는 오픈 소스 조직에서 제공하는 하이픈 넣기 사전을 온라인에서 찾을 수 있습니다. Aspose.Words와 호환되는 형식인지 확인하세요.
 
- A: Aspose.Words에서 특정 언어에 대한 음절 사전을 로드하려면 다음을 사용할 수 있습니다.`Hyphenation` 수업과`LoadDictionary()` 방법. 인스턴스를 생성합니다.`Hyphenation` 수업을 듣고 전화를 걸어`LoadDictionary()` 원하는 언어에 대한 음절 사전 파일의 경로를 지정하는 방법입니다. 그러면 Aspose.Words에 음절 사전이 로드됩니다.
+### 다른 언어에도 이 방법을 사용할 수 있나요?
 
-#### Q: 다양한 언어에 대한 음절 사전 파일은 어디서 찾을 수 있나요?
+네, 올바른 언어 코드와 사전 파일을 지정하면 다양한 언어에 대한 하이픈 사전을 등록할 수 있습니다.
 
-A: 다양한 온라인 리소스에서 다양한 언어에 대한 음절 사전 파일을 찾을 수 있습니다. 이러한 파일은 일반적으로 XML 또는 TEX 형식입니다. 언어학 프로젝트 전용 웹사이트나 소스 코드 저장소에서 다양한 언어에 대한 오픈 소스 음절 사전을 찾을 수 있습니다.
+### Aspose.Words는 어떤 파일 형식으로 저장할 수 있나요?
 
-#### Q: 로드된 음절 사전을 Aspose.Words의 문서에 어떻게 적용할 수 있나요?
+Aspose.Words는 PDF, DOCX, DOC, HTML 등을 포함한 다양한 형식으로 문서 저장을 지원합니다.
 
-A: 로드된 음절화 사전을 Aspose.Words의 문서에 적용하려면 문서의 단어를 반복하고`Hyphenate()` 의 방법`Hyphenation` 단어의 음절을 알아내는 수업입니다. 그런 다음 필요에 따라 음절 사이에 하이픈을 추가하여 음절 단어의 형식을 지정할 수 있습니다.
+### Aspose.Words를 사용하려면 라이센스가 필요합니까?
 
-#### Q: Aspose.Words에서는 어떤 언어를 음절화에 지원합니까?
-
-A: Aspose.Words는 영어, 프랑스어, 스페인어, 독일어, 이탈리아어, 네덜란드어, 러시아어, 포르투갈어, 스웨덴어, 노르웨이어, 덴마크어, 핀란드어, 폴란드어, 체코어 등을 포함한 여러 언어에 대한 음절화를 지원합니다. 음절 표기에 지원되는 언어의 전체 목록은 Aspose.Words 설명서를 확인하세요.
+ 예, Aspose.Words의 전체 기능을 이용하려면 라이선스가 필요합니다. 라이센스를 구매하실 수 있습니다[여기](https://purchase.aspose.com/buy) 아니면 임시면허를 취득하세요.[여기](https://purchase.aspose.com/temporary-license/).

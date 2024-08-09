@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithDocSaveOptions.DoNotSavePictureBullet.docx", save
 
 ## Conclusion
 
-Et voila! Avec seulement quelques lignes de code, vous avez configuré avec succès Aspose.Words pour .NET pour omettre les puces d’image lors de l’enregistrement d’un document. Cela peut être incroyablement utile lorsque vous avez besoin d’un aspect net et cohérent sans être distrait par les puces d’image.
+Et voilà ! Avec seulement quelques lignes de code, vous avez configuré avec succès Aspose.Words pour .NET pour omettre les puces d’image lors de l’enregistrement d’un document. Cela peut être incroyablement utile lorsque vous avez besoin d’un aspect net et cohérent sans être distrait par les puces d’image.
 
 ## FAQ
 

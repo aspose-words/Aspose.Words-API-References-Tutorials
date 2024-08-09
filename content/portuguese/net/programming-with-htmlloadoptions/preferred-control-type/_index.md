@@ -15,7 +15,7 @@ estamos mergulhando em um tutorial interessante sobre como trabalhar com opçõe
 
 Antes de entrarmos no código, há algumas coisas que você precisa ter em mente:
 
-1.  Aspose.Words for .NET: Certifique-se de ter a biblioteca Aspose.Words for .NET instalada. Você pode baixá-lo no[local na rede Internet](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Certifique-se de ter a biblioteca Aspose.Words for .NET instalada. Você pode baixá-lo no[site](https://releases.aspose.com/words/net/).
 2. Ambiente de desenvolvimento: você deve ter um ambiente de desenvolvimento configurado, como o Visual Studio.
 3. Conhecimento básico de C#: É necessário um entendimento fundamental da programação C# para acompanhar o tutorial.
 4. Conteúdo HTML: O conhecimento básico de HTML é útil, pois trabalharemos com conteúdo HTML neste exemplo.
@@ -69,7 +69,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
 ```
 
- Definindo`PreferredControlType` para`HtmlControlType.StructuredDocumentTag`, garantimos que a caixa de combinação seja renderizada como uma tag de documento estruturado (SDT) no documento do Word.
+ Ao definir`PreferredControlType` para`HtmlControlType.StructuredDocumentTag`, garantimos que a caixa de combinação seja renderizada como uma tag de documento estruturado (SDT) no documento do Word.
 
 ## Etapa 4: carregue o conteúdo HTML no documento
 

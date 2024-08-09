@@ -19,7 +19,7 @@ Antes de passarmos para a parte de codificação, vamos ter certeza de que você
 2. Um ambiente de desenvolvimento: Visual Studio ou qualquer outro IDE compatível com .NET.
 3. Conhecimento básico de C#: A compreensão de C# será benéfica.
 
- Se você ainda não tem o Aspose.Words for .NET, você pode obter um[teste grátis](https://releases.aspose.com/) ou compre[aqui](https://purchase.aspose.com/buy) . Para qualquer dúvida, o[Fórum de suporte](https://forum.aspose.com/c/words/8) é um ótimo lugar para começar.
+ Se você ainda não tem o Aspose.Words for .NET, você pode obter um[teste gratuito](https://releases.aspose.com/) ou compre[aqui](https://purchase.aspose.com/buy) . Para qualquer dúvida, o[fórum de suporte](https://forum.aspose.com/c/words/8) é um ótimo lugar para começar.
 
 ## Importar namespaces
 

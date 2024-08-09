@@ -49,7 +49,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 2. lépés: Töltse be a Word-dokumentumot
 
- Ezután töltse be a Word dokumentumot egy`Aspose.Words.Document` tárgy. Ez lehetővé teszi, hogy programozottan dolgozzon a dokumentummal.
+ Ezután töltse be a Word dokumentumot egy`Aspose.Words.Document` objektum. Ez lehetővé teszi, hogy programozottan dolgozzon a dokumentummal.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -59,7 +59,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## 3. lépés: Az alapvető képtömörítés konfigurálása
 
- Hozzon létre egy`PdfSaveOptions`objektumot a PDF-mentési beállítások konfigurálásához, beleértve a képtömörítést is. Állítsa be a`ImageCompression`tulajdonát`PdfImageCompression.Jpeg` hogy a képekhez JPEG-tömörítést használjon.
+ Hozzon létre a`PdfSaveOptions`objektumot a PDF-mentési beállítások konfigurálásához, beleértve a képtömörítést is. Állítsa be a`ImageCompression`tulajdonát`PdfImageCompression.Jpeg` hogy a képekhez JPEG-tömörítést használjon.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions

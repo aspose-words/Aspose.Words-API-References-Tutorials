@@ -103,4 +103,4 @@ Tak, możesz zachować oryginalny styl przed wprowadzeniem zmian i zastosować g
 Absolutnie! Ta metoda działa w przypadku różnych elementów dokumentu. Wystarczy dostosować kod, aby kierować żądany element.
 
 ### Czy Aspose.Words obsługuje inne platformy oprócz .NET?  
-Tak, Aspose.Words jest dostępny dla Java, C++ i inne platformy. Sprawdź ich[dokumentacja](https://reference.aspose.com/words/net/) po więcej szczegółów.
+Tak, Aspose.Words jest dostępny dla Java, C++ i inne platformy. Sprawdź ich[dokumentacja](https://reference.aspose.com/words/net/) aby uzyskać więcej szczegółów.

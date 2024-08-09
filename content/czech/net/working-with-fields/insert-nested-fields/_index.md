@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fields/insert-nested-fields/
 ---
-## Úvod
+## Zavedení
 
 Už jste někdy zjistili, že potřebujete vložit vnořená pole do dokumentů aplikace Word programově? Možná chcete podmíněně zobrazovat různé texty na základě čísla stránky? Tak to máš štěstí! Tento tutoriál vás provede procesem vkládání vnořených polí pomocí Aspose.Words for .NET. Pojďme se ponořit!
 
@@ -15,7 +15,7 @@ Už jste někdy zjistili, že potřebujete vložit vnořená pole do dokumentů 
 
 Než začneme, budete potřebovat několik věcí:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte knihovnu Aspose.Words for .NET. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte knihovnu Aspose.Words for .NET. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: IDE jako Visual Studio.
 3. Základní znalost C#: Pochopení programovacího jazyka C#.
 
@@ -115,4 +115,4 @@ Ano, do pole KDYŽ můžete vnořit různá pole, jako je DATUM, ČAS a AUTOR, a
 Ano, Aspose.Words podporuje všechny jazyky .NET, včetně VB.NET a F#.
 
 ### Kde najdu další dokumentaci k Aspose.Words pro .NET?
- Můžete najít podrobnou dokumentaci[tady](https://reference.aspose.com/words/net/).
+ Můžete najít podrobnou dokumentaci[zde](https://reference.aspose.com/words/net/).

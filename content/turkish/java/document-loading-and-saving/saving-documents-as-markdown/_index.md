@@ -152,4 +152,4 @@ Evet, Aspose.Words for Java'nın deneme sürümünü Aspose web sitesinden edine
 
 ### Daha fazla örnek ve belgeyi nerede bulabilirim?
 
- Aspose.Words for Java ile ilgili daha fazla örnek, belge ve ayrıntılı bilgi için lütfen şu adresi ziyaret edin:[dokümantasyon](https://reference.aspose.com/words/java/).
+ Aspose.Words for Java hakkında daha fazla örnek, belge ve ayrıntılı bilgi için lütfen şu adresi ziyaret edin:[dokümantasyon](https://reference.aspose.com/words/java/).

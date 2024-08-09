@@ -2,18 +2,38 @@
 title: Numéro de liste de redémarrage
 linktitle: Numéro de liste de redémarrage
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment réinitialiser le numéro d'une liste dans un document Word avec Aspose.Words pour .NET.
+description: Découvrez comment redémarrer les numéros de liste dans les documents Word à l'aide d'Aspose.Words pour .NET. Ce guide détaillé de 2 000 mots couvre tout ce que vous devez savoir, de la configuration à la personnalisation avancée.
 type: docs
 weight: 10
 url: /fr/net/working-with-list/restart-list-number/
 ---
-Dans ce didacticiel étape par étape, nous allons vous montrer comment réinitialiser le numéro d'une liste dans un document Word à l'aide d'Aspose.Words pour .NET. Nous expliquerons le code source C# fourni et vous montrerons comment l'implémenter dans vos propres projets.
+## Introduction
 
- Pour commencer, assurez-vous que Aspose.Words for .NET est installé et configuré dans votre environnement de développement. Si vous ne l'avez pas déjà fait, téléchargez et installez la bibliothèque depuis[Aspose.Releases]https://releases.aspose.com/words/net/.
+Cherchez-vous à maîtriser l’art de la manipulation de listes dans vos documents Word à l’aide d’Aspose.Words pour .NET ? Eh bien, vous êtes au bon endroit ! Dans ce didacticiel, nous allons approfondir le redémarrage des numéros de liste, une fonctionnalité intéressante qui fera passer vos compétences en automatisation de documents au niveau supérieur. Attachez votre ceinture et commençons !
 
-## Étape 1 : Création du document et du générateur de documents
+## Conditions préalables
 
-Tout d'abord, créez un nouveau document et un générateur de document associé :
+Avant de passer au code, assurons-nous que vous disposez de tout ce dont vous avez besoin :
+
+1.  Aspose.Words pour .NET : vous devez avoir installé Aspose.Words pour .NET. Si vous ne l'avez pas encore installé, vous pouvez[téléchargez-le ici](https://releases.aspose.com/words/net/).
+2. Environnement de développement : assurez-vous de disposer d'un environnement de développement approprié tel que Visual Studio.
+3. Connaissance de base de C# : Une compréhension de base de C# vous aidera à suivre le didacticiel.
+
+## Importer des espaces de noms
+
+Tout d’abord, importons les espaces de noms nécessaires. Ceux-ci sont cruciaux pour accéder aux fonctionnalités Aspose.Words.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Lists;
+using System.Drawing;
+```
+
+Maintenant, décomposons le processus en étapes faciles à suivre. Nous couvrirons tout, de la création d'une liste à la reprise de sa numérotation.
+
+## Étape 1 : Configurez votre document et votre générateur
+
+Avant de pouvoir commencer à manipuler des listes, vous avez besoin d'un document et d'un DocumentBuilder. DocumentBuilder est votre outil incontournable pour ajouter du contenu à votre document.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -21,9 +41,9 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Étape 2 : Création et personnalisation de la première liste
+## Étape 2 : Créez et personnalisez votre première liste
 
-Créez ensuite une liste basée sur un modèle existant, puis personnalisez ses niveaux :
+Ensuite, nous allons créer une liste basée sur un modèle et personnaliser son apparence. Dans cet exemple, nous utilisons le format de nombre arabe avec parenthèses.
 
 ```csharp
 List list1 = doc.Lists.Add(ListTemplate.NumberArabicParenthesis);
@@ -31,102 +51,75 @@ list1.ListLevels[0].Font.Color = Color.Red;
 list1.ListLevels[0].Alignment = ListLevelAlignment.Right;
 ```
 
-## Étape 3 : Ajout d'éléments à la première liste
+Ici, nous avons défini la couleur de la police sur rouge et aligné le texte à droite.
 
-Utilisez le générateur de documents pour ajouter des éléments à la première liste et supprimer des numéros de liste :
+## Étape 3 : ajoutez des éléments à votre première liste
+
+ Une fois votre liste prête, il est temps d'ajouter quelques éléments. Le DocumentBuilder`ListFormat.List` La propriété aide à appliquer le format de liste au texte.
 
 ```csharp
 builder.Writeln("List 1 starts below:");
 builder.ListFormat.List = list1;
-builder. Writen("Element 1");
-builder. Writen("Element 2");
+builder.Writeln("Item 1");
+builder.Writeln("Item 2");
 builder.ListFormat.RemoveNumbers();
 ```
 
-## Étape 4 : Création et personnalisation de la deuxième liste
+## Étape 4 : Redémarrer la numérotation des listes
 
-Pour réutiliser la première liste en réinitialisant le numéro, créez une copie de la disposition de liste d'origine :
+Pour réutiliser la liste et relancer sa numérotation, vous devez créer une copie de la liste originale. Cela vous permet de modifier la nouvelle liste indépendamment.
 
 ```csharp
 List list2 = doc.Lists.AddCopy(list1);
 list2.ListLevels[0].StartAt = 10;
 ```
 
-Vous pouvez également apporter des modifications supplémentaires à la deuxième liste si nécessaire.
+Dans cet exemple, la nouvelle liste commence au numéro 10.
 
-## Étape 5 : Ajout d'éléments à la deuxième liste
+## Étape 5 : ajouter des éléments à la nouvelle liste
 
-Utilisez à nouveau le générateur de documents pour ajouter des éléments à la deuxième liste et supprimer les numéros de liste :
-
-```csharp
-builder.Writeln("List 2 starts below:");
-builder.ListFormat.List = list2;
-builder. Writen("Element 1");
-builder. Writen("Element 2");
-builder.ListFormat.RemoveNumbers();
-```
-
-## Étape 6 : Enregistrez le document modifié
-
-Enfin, enregistrez le document modifié :
+Comme avant, ajoutez des éléments à votre nouvelle liste. Cela montre que la liste redémarre au numéro spécifié.
 
 ```csharp
-builder.Document.Save(dataDir + "ResetListNumber.docx");
-```
-
-Donc ! Vous avez réussi à réinitialiser le numéro d'une liste dans un document Word à l'aide d'Aspose.Words pour .NET.
-
-### Exemple de code source pour la réinitialisation du numéro de liste
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-// Créez une liste basée sur un modèle.
-List list1 = doc.Lists.Add(ListTemplate.NumberArabicParenthesis);
-list1.ListLevels[0].Font.Color = Color.Red;
-list1.ListLevels[0].Alignment = ListLevelAlignment.Right;
-
-builder.Writeln("List 1 starts below:");
-builder.ListFormat.List = list1;
-builder.Writeln("Item 1");
-builder.Writeln("Item 2");
-builder.ListFormat.RemoveNumbers();
-
-// Pour réutiliser la première liste, nous devons redémarrer la numérotation en créant une copie du formatage de la liste d'origine.
-List list2 = doc.Lists.AddCopy(list1);
-
-// Nous pouvons modifier la nouvelle liste de n'importe quelle manière, y compris en définissant un nouveau numéro de départ.
-list2.ListLevels[0].StartAt = 10;
-
 builder.Writeln("List 2 starts below:");
 builder.ListFormat.List = list2;
 builder.Writeln("Item 1");
 builder.Writeln("Item 2");
 builder.ListFormat.RemoveNumbers();
+```
 
+## Étape 6 : Enregistrez votre document
+
+Enfin, enregistrez votre document dans le répertoire spécifié.
+
+```csharp
 builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
-            
 ```
 
-### FAQ
+## Conclusion
 
-#### Q : Comment puis-je redémarrer la numérotation d'une liste dans Aspose.Words ?
+Le redémarrage des numéros de liste dans les documents Word à l'aide d'Aspose.Words pour .NET est simple et incroyablement utile. Que vous génériez des rapports, créiez des documents structurés ou que vous ayez simplement besoin d'un meilleur contrôle sur vos listes, cette technique est là pour vous.
 
- R : Pour relancer la numérotation d'une liste dans Aspose.Words, vous pouvez utiliser le`ListRestartAtNumber` méthode du`List` classe. Cette méthode vous permet de définir une nouvelle valeur de numérotation à partir de laquelle la liste doit être redémarrée. Par exemple, vous pouvez utiliser`list.ListRestartAtNumber(1)` pour recommencer la numérotation à partir de 1.
+## FAQ
 
-#### Q : Est-il possible de personnaliser le préfixe et le suffixe de la numérotation des listes redémarrées dans Aspose.Words ?
+### Puis-je utiliser d’autres modèles de liste que NumberArabicParenthesis ?
 
- R : Oui, vous pouvez personnaliser le préfixe et le suffixe de la numérotation des listes redémarrées dans Aspose.Words. Le`ListLevel`la classe offre des propriétés telles que`ListLevel.NumberPrefix`et`ListLevel.NumberSuffix` qui vous permettent de spécifier le préfixe et le suffixe pour chaque niveau de la liste. Vous pouvez utiliser ces propriétés pour personnaliser le préfixe et le suffixe selon vos besoins.
+Absolument! Aspose.Words propose divers modèles de listes tels que des puces, des lettres, des chiffres romains, etc. Vous pouvez choisir celui qui correspond le mieux à vos besoins.
 
-#### Q : Comment puis-je spécifier une valeur de numérotation spécifique à partir de laquelle la liste doit être redémarrée ?
+### Comment changer le niveau de la liste ?
 
- R : Pour spécifier une valeur numérique spécifique à partir de laquelle la liste doit être redémarrée, vous pouvez utiliser le`ListRestartAtNumber` méthode passant la valeur souhaitée comme argument. Par exemple, pour recommencer la numérotation à partir de 5, vous pouvez utiliser`list.ListRestartAtNumber(5)`.
+ Vous pouvez changer le niveau de liste en modifiant le`ListLevels` propriété. Par exemple,`list1.ListLevels[1]` ferait référence au deuxième niveau de la liste.
 
-#### Q : Est-il possible de redémarrer la numérotation des listes à plusieurs niveaux dans Aspose.Words ?
+### Puis-je recommencer la numérotation à n’importe quel numéro ?
 
- R : Oui, Aspose.Words prend en charge le redémarrage de la numérotation de plusieurs niveaux de liste. Vous pouvez appliquer le`ListRestartAtNumber` méthode à chaque niveau de liste pour redémarrer la numérotation individuellement. Par exemple, vous pouvez utiliser`list.Levels[0].ListRestartAtNumber(1)` pour redémarrer le premier niveau de liste à partir de 1, et`list.Levels[1].ListRestartAtNumber(1)` pour relancer la liste de deuxième niveau à partir de 1, et ainsi de suite.
+ Oui, vous pouvez définir le numéro de départ sur n'importe quelle valeur entière à l'aide de la touche`StartAt` propriété du niveau liste.
 
+### Est-il possible d'avoir un formatage différent pour différents niveaux de liste ?
+
+En effet! Chaque niveau de liste peut avoir ses propres paramètres de formatage, tels que la police, l'alignement et le style de numérotation.
+
+### Que faire si je souhaite continuer la numérotation d'une liste précédente au lieu de recommencer ?
+
+Si vous souhaitez continuer la numérotation, vous n'avez pas besoin de créer une copie de la liste. Continuez simplement à ajouter des éléments à la liste d'origine.
 
 

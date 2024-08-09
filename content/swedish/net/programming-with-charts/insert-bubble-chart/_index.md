@@ -89,7 +89,7 @@ Grattis! Du har framgångsrikt infogat ett bubbeldiagram i ett Word-dokument med
 
 ### Kan jag anpassa utseendet på bubbeldiagrammet?
 
- Absolut! Aspose.Words för .NET erbjuder ett brett utbud av anpassningsalternativ, från färger och etiketter till dataserieformatering. Kolla in[dokumentation](https://reference.aspose.com/words/net/) för mer detaljer.
+ Absolut! Aspose.Words för .NET erbjuder ett brett utbud av anpassningsalternativ, från färger och etiketter till dataserieformatering. Kolla in[dokumentation](https://reference.aspose.com/words/net/) för mer information.
 
 ### Är det möjligt att lägga till flera diagram till ett enda dokument?
 
@@ -101,7 +101,7 @@ Definitivt. Även om den här guiden använder C#, är Aspose.Words för .NET ko
 
 ### Hur får jag en gratis provversion av Aspose.Words för .NET?
 
- Du kan få en gratis provperiod från[hemsida](https://releases.aspose.com/). Detta gör att du kan testa funktionerna innan du gör ett köp.
+ Du kan få en gratis provperiod från[webbplats](https://releases.aspose.com/). Detta gör att du kan testa funktionerna innan du gör ett köp.
 
 ### Var kan jag hitta fler handledningar och stöd för Aspose.Words för .NET?
 

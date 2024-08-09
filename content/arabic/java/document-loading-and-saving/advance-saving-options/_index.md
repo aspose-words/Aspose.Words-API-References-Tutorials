@@ -2,7 +2,7 @@
 title: خيارات الحفظ المتقدمة باستخدام Aspose.Words لـ Java
 linktitle: حفظ المستندات بتنسيقات مختلفة باستخدام
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة مستندات جافا
-description: تعلم المعالجة المتقدمة للمستندات باستخدام Aspose.Words لـ Java. تشفير ملفات التعريف والتعامل معها والمزيد. مستندات Word الخاصة بك، طريقك.
+description: تعلم المعالجة المتقدمة للمستندات باستخدام Aspose.Words لـ Java. تشفير ومعالجة ملفات التعريف والمزيد. مستندات Word الخاصة بك، طريقك.
 type: docs
 weight: 14
 url: /ar/java/document-loading-and-saving/advance-saving-options/
@@ -58,7 +58,7 @@ public void doNotCompressSmallMetafiles() throws Exception {
 
 ## تجنب حفظ الصور النقطية
 
-يمكن أن تكون الصور النقطية ملفتة للنظر، ولكن قد ترغب في استبعادها. إليك الطريقة:
+يمكن أن تكون الصور النقطية ملفتة للنظر، ولكن قد ترغب في استبعادها. وإليك الطريقة:
 
 ```java
 @Test

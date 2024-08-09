@@ -66,13 +66,13 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", 
 
 ## 結論
 
-現在你就擁有了！透過執行以下步驟，您可以使用 Aspose.Words for .NET 輕鬆將書籤從 Word 文件的頁首和頁尾匯出到 PDF。此方法可確保文件中的重要導覽協助以 PDF 格式保留，從而使讀者更輕鬆地瀏覽文件。
+現在你就得到它了！透過執行以下步驟，您可以使用 Aspose.Words for .NET 輕鬆將書籤從 Word 文件的頁首和頁尾匯出到 PDF。此方法可確保文件中的重要導覽協助以 PDF 格式保留，從而使讀者更輕鬆地瀏覽文件。
 
 ## 常見問題解答
 
 ### 我可以將 Word 文件中的所有書籤匯出為 PDF 嗎？
 
-是的你可以。在裡面`PdfSaveOptions`，您可以根據需要調整設定以包含所有書籤。
+是的，你可以。在`PdfSaveOptions`，您可以根據需要調整設定以包含所有書籤。
 
 ### 如果我還想從文件正文匯出書籤怎麼辦？
 

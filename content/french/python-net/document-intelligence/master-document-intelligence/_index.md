@@ -2,7 +2,7 @@
 title: Maîtrisez l’intelligence documentaire
 linktitle: Maîtrisez l’intelligence documentaire
 second_title: API de gestion de documents Python Aspose.Words
-description: Maîtrisez l’intelligence documentaire avec Aspose.Words pour Python. Automatisez les flux de travail, analysez les données et traitez les documents efficacement. Commencez maintenant!
+description: Maîtrisez l’intelligence documentaire avec Aspose.Words pour Python. Automatisez les flux de travail, analysez les données et traitez les documents efficacement. Commencez maintenant !
 type: docs
 weight: 10
 url: /fr/python-net/document-intelligence/master-document-intelligence/
@@ -292,7 +292,7 @@ Oui, Aspose.Words est entièrement compatible avec les versions Python 3.x, gara
 Aspose met régulièrement à jour ses bibliothèques pour ajouter de nouvelles fonctionnalités, améliorer les performances et résoudre les problèmes signalés. Les utilisateurs peuvent rester informés des dernières améliorations en recherchant les mises à jour sur le site Web Aspose.
 
 ### Aspose.Words peut-il être utilisé pour la traduction de documents ?
-Bien qu'Aspose.Words se concentre principalement sur les tâches de traitement de documents, il peut être intégré à d'autres API ou bibliothèques de traduction pour obtenir des fonctionnalités de traduction de documents.
+Bien qu'Aspose.Words se concentre principalement sur les tâches de traitement de documents, il peut être intégré à d'autres API ou bibliothèques de traduction pour obtenir une fonctionnalité de traduction de documents.
 
 ### Quelles sont les fonctionnalités avancées d'intelligence documentaire fournies par Aspose.Words pour Python ?
 Aspose.Words permet aux utilisateurs de travailler avec des tableaux, des graphiques, des images et des formes dans des documents Word. Il prend également en charge l'automatisation des documents, facilitant ainsi la génération de documents dynamiques et personnalisés.

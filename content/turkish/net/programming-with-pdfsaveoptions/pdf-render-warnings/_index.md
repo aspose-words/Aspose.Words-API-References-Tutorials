@@ -16,7 +16,7 @@ Aspose.Words for .NET ile çalışıyorsanız, PDF oluşturma uyarılarını yö
 Eğiticiye dalmadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
 - Temel C# Bilgisi: C# programlama diline aşinalık.
--  Aspose.Words for .NET: Buradan indirip yükleyin.[İndirme: {link](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Buradan indirip yükleyin.[indirme bağlantısı](https://releases.aspose.com/words/net/).
 - Geliştirme Ortamı: Kodunuzu yazmak ve çalıştırmak için Visual Studio gibi bir kurulum.
 -  Örnek Belge: Örnek bir belgeye sahip olun (örn.`WMF with image.docx`) teste hazır.
 
@@ -126,7 +126,7 @@ Bu adımları izleyerek Aspose.Words for .NET'te PDF oluşturma uyarılarını e
 
 ### S1: Bu yöntemle diğer uyarı türlerini işleyebilir miyim?
 
- Evet`IWarningCallback` arayüz yalnızca PDF oluşturmayla ilgili uyarıları değil, çeşitli türdeki uyarıları da işleyebilir.
+ Evet,`IWarningCallback` arayüz yalnızca PDF oluşturmayla ilgili uyarıları değil, çeşitli türdeki uyarıları da işleyebilir.
 
 ### S2: Aspose.Words for .NET'in ücretsiz deneme sürümünü nereden indirebilirim?
 

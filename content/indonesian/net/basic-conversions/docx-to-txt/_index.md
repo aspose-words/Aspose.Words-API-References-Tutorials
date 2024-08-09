@@ -21,7 +21,7 @@ Sebelum kita mulai, pastikan Anda memiliki prasyarat berikut:
 
 ## Impor Namespace
 
-Pertama, pastikan Anda mengimpor namespace yang diperlukan ke proyek Anda. Ini membantu dalam mengakses kelas dan metode yang diperlukan untuk tugas konversi kita.
+Pertama, pastikan Anda telah mengimpor namespace yang diperlukan ke dalam proyek Anda. Ini membantu dalam mengakses kelas dan metode yang diperlukan untuk tugas konversi kita.
 
 ```csharp
 using Aspose.Words;

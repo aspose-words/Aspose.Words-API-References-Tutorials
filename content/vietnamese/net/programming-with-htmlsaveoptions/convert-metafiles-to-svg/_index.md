@@ -42,7 +42,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Ở đây, chúng tôi khởi tạo một tài liệu mới và trình tạo tài liệu. Các`dataDir` biến giữ đường dẫn đến thư mục tài liệu của bạn nơi bạn sẽ lưu các tệp của mình.
+ Ở đây, chúng tôi khởi tạo một tài liệu mới và trình tạo tài liệu. các`dataDir` biến giữ đường dẫn đến thư mục tài liệu của bạn nơi bạn sẽ lưu các tệp của mình.
 
 ## Bước 2: Thêm văn bản vào tài liệu
 
@@ -89,11 +89,11 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToSvg.html", saveOptions);
 ```
 
- Dòng này lưu tài liệu vào thư mục được chỉ định với tên tệp`WorkingWithHtmlSaveOptions.ConvertMetafilesToSvg.html` . Các`saveOptions` đảm bảo rằng các siêu tệp được chuyển đổi thành SVG.
+ Dòng này lưu tài liệu vào thư mục được chỉ định với tên tệp`WorkingWithHtmlSaveOptions.ConvertMetafilesToSvg.html` . các`saveOptions` đảm bảo rằng các siêu tệp được chuyển đổi thành SVG.
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã chuyển đổi thành công siêu tệp thành SVG trong tài liệu Word của mình bằng Aspose.Words for .NET. Khá tuyệt phải không? Chỉ với một vài dòng mã, bạn có thể nâng cao tài liệu Word của mình bằng cách thêm đồ họa vector có thể mở rộng, làm cho chúng trở nên năng động và hấp dẫn hơn về mặt hình ảnh. Vì vậy, hãy tiếp tục và thử nó trong các dự án của bạn. Chúc mừng mã hóa!
+Và bạn có nó! Bạn đã chuyển đổi thành công siêu tệp thành SVG trong tài liệu Word của mình bằng Aspose.Words for .NET. Khá tuyệt phải không? Chỉ với một vài dòng mã, bạn có thể nâng cao tài liệu Word của mình bằng cách thêm đồ họa vector có thể mở rộng, làm cho chúng trở nên năng động và hấp dẫn hơn về mặt hình ảnh. Vì vậy, hãy tiếp tục và thử nó trong các dự án của bạn. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 

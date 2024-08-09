@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/find-and-replace-text/simple-find-replace/
 ---
-## Úvod
+## Zavedení
 
 Ahoj, ctižádostivý kodér! Potřebovali jste někdy aktualizovat více instancí slova nebo fráze v dokumentu aplikace Word, aniž byste museli každou z nich ručně najít a nahradit? Představte si, že máte šablonu, která říká „_CustomerName_" a potřebujete, aby místo toho řeklo "James Bond". Snadné, že? Dobře, může to být s Aspose.Words pro .NET! V tomto tutoriálu vás provedeme procesem hledání a nahrazování textu ve Wordu dokument pomocí Aspose.Words pro .NET Připoutejte se a připravte se na zefektivnění vašich úkolů při manipulaci s textem!
 
@@ -15,7 +15,7 @@ Ahoj, ctižádostivý kodér! Potřebovali jste někdy aktualizovat více instan
 
 Než se ponoříme do kouzla nahrazování textu, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET Library: Můžete si ji stáhnout z[tady](https://releases.aspose.com/words/net/) . Pokud jste to ještě neudělali, vyzkoušejte si bezplatnou zkušební verzi[tady](https://releases.aspose.com/).
+1.  Aspose.Words for .NET Library: Můžete si ji stáhnout z[zde](https://releases.aspose.com/words/net/) . Pokud jste to ještě neudělali, vyzkoušejte si bezplatnou zkušební verzi[zde](https://releases.aspose.com/).
 
 2. .NET Framework: Ujistěte se, že máte na svém počítači nainstalovaný .NET Framework. V případě potřeby si jej můžete stáhnout z webu společnosti Microsoft.
 
@@ -75,7 +75,7 @@ Tady se děje kouzlo! Nahradíme"_CustomerName_ " s "James Bond" pomocí`Replace
 doc.Range.Replace("_CustomerName_", "James Bond", new FindReplaceOptions(FindReplaceDirection.Forward));
 ```
 
- Tady,`FindReplaceOptions`nám umožňuje určit směr operace hledání a nahrazení. Používáme`FindReplaceDirection.Forward` pro nahrazení textu od začátku do konce dokumentu.
+ Zde,`FindReplaceOptions`nám umožňuje určit směr operace hledání a nahrazení. Používáme`FindReplaceDirection.Forward` pro nahrazení textu od začátku do konce dokumentu.
 
 ## Krok 5: Ověření výměny
 
@@ -102,10 +102,10 @@ A tady to máte! Právě jste zautomatizovali proces hledání a nahrazování t
 ## FAQ
 
 ### Mohu nahradit více různých textů najednou?
- Ano můžeš. Stačí zavolat`Replace` metoda pro každý text, který chcete nahradit.
+ Ano, můžete. Stačí zavolat`Replace` metoda pro každý text, který chcete nahradit.
 
 ### Je Aspose.Words for .NET zdarma?
-Aspose.Words for .NET nabízí bezplatnou zkušební verzi, ale pro plnou funkčnost si budete muset zakoupit licenci. Podívejte se na jejich[stanovení cen](https://purchase.aspose.com/buy) Více podrobností.
+Aspose.Words for .NET nabízí bezplatnou zkušební verzi, ale pro plnou funkčnost si budete muset zakoupit licenci. Podívejte se na jejich[stanovení cen](https://purchase.aspose.com/buy) pro více podrobností.
 
 ### Mohu nahradit text formátováním?
  Absolutně! Můžete nahradit text a použít formátování pomocí`FindReplaceOptions` třída.

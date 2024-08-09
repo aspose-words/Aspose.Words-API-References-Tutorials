@@ -15,7 +15,7 @@ Haben Sie sich schon einmal gefragt, wie Sie das Inhaltsverzeichnis (TOC) in Ihr
 
 Bevor wir beginnen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
 
-1.  Aspose.Words für .NET: Sie können[hier herunterladen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET: Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Visual Studio oder jede C#-kompatible IDE.
 3. Ein Word-Dokument: Insbesondere eines, das ein Inhaltsverzeichnis enthält.
 
@@ -99,7 +99,7 @@ Wie? Speichern Sie das Dokument unter einem neuen Namen, damit das Original erha
 doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 ```
 
-Und voilà! Ihr Inhaltsverzeichnis hat jetzt die Tabstopps genau dort, wo Sie sie haben möchten.
+Und voilà! Ihr Inhaltsverzeichnis hat jetzt die Tabulatoren genau dort, wo Sie sie haben möchten.
 
 ## Abschluss
 
@@ -120,4 +120,4 @@ Der Code sucht nach allen Absätzen im Inhaltsverzeichnisstil und ändert daher 
 Ja, Sie können beim Hinzufügen eines neuen Tabulatorstopps unterschiedliche Ausrichtungen und Füllzeichenstile angeben.
 
 ### Benötige ich eine Lizenz, um Aspose.Words für .NET zu verwenden?
- Ja, Sie benötigen eine gültige Lizenz, um Aspose.Words für .NET über den Testzeitraum hinaus zu verwenden. Sie erhalten eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) oder[Kauf eins](https://purchase.aspose.com/buy).
+ Ja, Sie benötigen eine gültige Lizenz, um Aspose.Words für .NET über den Testzeitraum hinaus zu verwenden. Sie erhalten eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) oder[kauf eins](https://purchase.aspose.com/buy).

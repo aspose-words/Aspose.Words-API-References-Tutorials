@@ -47,7 +47,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Langkah 2: Buat Daftar dengan Berbagai Tingkat Indentasi
 
- Dengan`DocumentBuilder` Misalnya, Anda kini dapat membuat daftar dengan tingkat lekukan berbeda. Menggunakan`ListFormat` properti untuk menerapkan penomoran dan membuat indentasi item daftar sesuai kebutuhan.
+ Dengan`DocumentBuilder` Misalnya, Anda kini dapat membuat daftar dengan tingkat lekukan berbeda. Gunakan`ListFormat` properti untuk menerapkan penomoran dan membuat indentasi item daftar sesuai kebutuhan.
 
 ```csharp
 // Buat daftar dengan tiga tingkat lekukan
@@ -101,7 +101,7 @@ Dengan mengikuti langkah-langkah ini, Anda telah berhasil membuat dokumen dengan
  Ya, Anda dapat menyesuaikannya`ListIndentation.Count` properti untuk mengatur jumlah ruang berdasarkan kebutuhan Anda.
 
 ### Apakah mungkin mengubah indentasi daftar setelah dokumen dibuat?
-Ya, Anda dapat mengubah format daftar dan pengaturan indentasi kapan saja sebelum menyimpan dokumen.
+Ya, Anda dapat mengubah pengaturan pemformatan dan indentasi daftar kapan saja sebelum menyimpan dokumen.
 
 ### Format dokumen lain apa yang mendukung pengaturan indentasi daftar?
 Selain file teks, pengaturan indentasi daftar dapat diterapkan ke format lain seperti DOCX, PDF, dan HTML saat menggunakan Aspose.Words.

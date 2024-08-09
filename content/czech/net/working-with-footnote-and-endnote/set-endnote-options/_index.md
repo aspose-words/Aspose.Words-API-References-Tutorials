@@ -2,45 +2,61 @@
 title: Nastavte možnosti Endnote
 linktitle: Nastavte možnosti Endnote
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se, jak nastavit možnosti koncových poznámek v dokumentech aplikace Word pomocí Aspose.Words for .NET. Výukový program krok za krokem s ukázkovým zdrojovým kódem.
+description: Naučte se, jak nastavit možnosti koncových poznámek v dokumentech aplikace Word pomocí Aspose.Words for .NET s tímto komplexním průvodcem krok za krokem.
 type: docs
 weight: 10
 url: /cs/net/working-with-footnote-and-endnote/set-endnote-options/
 ---
+## Zavedení
 
-tomto podrobném tutoriálu vás provedeme tím, jak používat Aspose.Words pro .NET k nastavení možností koncových poznámek v dokumentu aplikace Word. Vysvětlíme vám poskytnutý zdrojový kód C# a ukážeme vám, jak jej implementovat do vašich vlastních projektů.
+Chcete vylepšit své dokumenty Word efektivní správou vysvětlivek? Už nehledejte! V tomto tutoriálu vás provedeme procesem nastavení možností koncových poznámek v dokumentech aplikace Word pomocí Aspose.Words for .NET. Na konci této příručky budete profesionálem v přizpůsobování koncových poznámek tak, aby vyhovovaly potřebám vašeho dokumentu.
 
- Chcete-li začít, ujistěte se, že máte Aspose.Words for .NET nainstalovaný a nastavený ve svém vývojovém prostředí. Pokud jste tak neučinili, stáhněte si a nainstalujte knihovnu z[Aspose.Releases]https://releases.aspose.com/words/net/.
+## Předpoklady
 
-## Krok 1: Inicializace objektu dokumentu
+Než se pustíte do výukového programu, ujistěte se, že máte splněny následující předpoklady:
 
- Nejprve inicializujte`Document` objekt poskytnutím cesty ke zdrojovému dokumentu:
+-  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words for .NET. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
+- Vývojové prostředí: Mějte nastavené vývojové prostředí, jako je Visual Studio.
+- Základní znalost C#: Základní znalost programování v C# bude prospěšná.
+
+## Importovat jmenné prostory
+
+Chcete-li začít, budete muset importovat potřebné jmenné prostory. Tyto obory názvů poskytují přístup ke třídám a metodám potřebným pro manipulaci s dokumenty aplikace Word.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Notes;
+```
+
+## Krok 1: Vložte dokument
+
+ Nejprve načteme dokument, kde chceme nastavit možnosti koncové poznámky. Použijeme`Document` třídy z knihovny Aspose.Words, abyste toho dosáhli.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-## Krok 2: Inicializace objektu DocumentBuilder
+## Krok 2: Inicializujte DocumentBuilder
 
- Dále inicializujte`DocumentBuilder` objekt pro provádění operací s dokumentem:
+ Dále inicializujeme`DocumentBuilder`třída. Tato třída poskytuje jednoduchý způsob, jak přidat obsah do dokumentu.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 3: Přidání textu a závěrečné poznámky
+## Krok 3: Přidejte text a vložte vysvětlivku
 
- Použijte`Write` metoda`DocumentBuilder` objekt pro přidání textu do dokumentu a`InsertFootnote` metoda pro vložení koncové poznámky:
+ Nyní do dokumentu přidáme nějaký text a vložíme vysvětlivku. The`InsertFootnote` metoda`DocumentBuilder` třída nám umožňuje přidávat do dokumentu vysvětlivky.
 
 ```csharp
 builder.Write("Some text");
 builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
 ```
 
-## Krok 4: Nastavení možností Endnote
+## Krok 4: Otevřete a nastavte možnosti Endnote
 
- Přístup k`EndnoteOptions`vlastnost dokumentu upravit možnosti vysvětlivky. V tomto příkladu jsme nastavili pravidlo restartu tak, aby se restartovalo na každé stránce a na pozici na konec sekce:
+ Chcete-li přizpůsobit možnosti koncových poznámek, musíme získat přístup k`EndnoteOptions` vlastnictvím`Document` třída. Poté můžeme nastavit různé možnosti, jako je pravidlo restartu a pozice.
 
 ```csharp
 EndnoteOptions option = doc.EndnoteOptions;
@@ -48,53 +64,31 @@ option.RestartRule = FootnoteNumberingRule.RestartPage;
 option.Position = EndnotePosition.EndOfSection;
 ```
 
-## Krok 5: Uložení dokumentu
+## Krok 5: Uložte dokument
 
-Nakonec upravený dokument uložte:
+ Nakonec uložme dokument s aktualizovanými možnostmi koncových poznámek. The`Save` metoda`Document` class nám umožňuje uložit dokument do zadaného adresáře.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 ```
 
-A je to! Úspěšně jste nastavili možnosti koncových poznámek v dokumentu aplikace Word pomocí Aspose.Words for .NET.
+## Závěr
 
-### Příklad zdrojového kódu pro Set Endnote Options pomocí Aspose.Words for .NET
+Nastavení možností koncových poznámek v dokumentech aplikace Word pomocí Aspose.Words pro .NET je hračka s těmito jednoduchými kroky. Přizpůsobením pravidla restartování a pozice koncových poznámek můžete upravit své dokumenty tak, aby splňovaly specifické požadavky. S Aspose.Words máte možnost manipulovat s dokumenty Wordu na dosah ruky.
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";	
-Document doc = new Document(dataDir + "Document.docx");
-DocumentBuilder builder = new DocumentBuilder(doc);
+## FAQ
 
-builder.Write("Some text");
-builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
+### Co je Aspose.Words for .NET?
+Aspose.Words for .NET je výkonná knihovna pro programovou manipulaci s dokumenty Wordu. Umožňuje vývojářům vytvářet, upravovat a převádět dokumenty aplikace Word v různých formátech.
 
-EndnoteOptions option = doc.EndnoteOptions;
-option.RestartRule = FootnoteNumberingRule.RestartPage;
-option.Position = EndnotePosition.EndOfSection;
+### Mohu používat Aspose.Words zdarma?
+ Aspose.Words můžete používat s bezplatnou zkušební verzí. Pro rozšířené použití si můžete zakoupit licenci od[zde](https://purchase.aspose.com/buy).
 
-doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
-```
+### Co jsou koncové poznámky?
+Vysvětlivky jsou odkazy nebo poznámky umístěné na konci oddílu nebo dokumentu. Poskytují další informace nebo citace.
 
-Neváhejte použít tento kód ve svých vlastních projektech a upravit jej podle svých konkrétních požadavků.
+### Jak přizpůsobím vzhled vysvětlivek?
+ Volby koncových poznámek, jako je číslování, umístění a pravidla restartování, můžete přizpůsobit pomocí`EndnoteOptions` třídy v Aspose.Words pro .NET.
 
-### FAQ
-
-#### Otázka: Jak mohu stylovat vysvětlivky v Aspose.Words?
-
- A: Chcete-li stylovat vysvětlivky v Aspose.Words, můžete použít`EndnoteOptions` třída a`SeparatorNoteTextStyle` vlastnictví. Pomocí této vlastnosti můžete určit styl písma, velikost, barvu atd. pro vysvětlivky.
-
-#### Otázka: Je možné přizpůsobit číslování vysvětlivek v dokumentu?
-
- Odpověď: Ano, je možné upravit číslování vysvětlivek v dokumentu. Můžete použít`RestartRule`a`NumberStyle` vlastnosti`EndnoteOptions` třídy k definování specifických pravidel restartu a stylů číslování.
-
-#### Otázka: Jak mohu umístit vysvětlivky v dokumentu?
-
-Odpověď: Chcete-li umístit vysvětlivky do dokumentu, můžete použít`Position` majetek z`EndnoteOptions` třída. Můžete určit, zda mají být vysvětlivky umístěny na konec každé stránky, na konec každé sekce nebo na konec dokumentu.
-
-#### Otázka: Mohu přizpůsobit formát číslování vysvětlivky?
-
- Odpověď: Ano, formát číslování koncových poznámek si můžete přizpůsobit v Aspose.Words. Použijte`NumberFormat` majetek z`EndnoteOptions` třídy pro nastavení požadovaného formátu, jako jsou arabské číslice, římské číslice, písmena atd.
-
-#### Otázka: Je možné pokračovat v číslování vysvětlivek mezi sekcemi dokumentu?
-
- Odpověď: Ano, je možné pokračovat v číslování vysvětlivek mezi sekcemi dokumentu. Použijte`RestartRule` majetek z`EndnoteOptions` třídu a nastavte ji na`RestartContinuous` aby číslování pokračovalo mezi sekcemi.
+### Kde najdu další dokumentaci k Aspose.Words pro .NET?
+ Podrobná dokumentace je k dispozici na[Aspose.Words pro dokumentaci .NET](https://reference.aspose.com/words/net/) strana.

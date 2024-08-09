@@ -15,7 +15,7 @@ Pernah perlu memasukkan tabel dari HTML ke dalam dokumen Word? Baik Anda sedang 
 
 Sebelum kita masuk ke seluk beluk menyisipkan tabel dari HTML, pastikan Anda memiliki prasyarat berikut:
 
-1. Aspose.Words for .NET: Unduh dan instal perpustakaan Aspose.Words for .NET dari[Unduh Halaman](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Unduh dan instal perpustakaan Aspose.Words for .NET dari[halaman unduhan](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Lingkungan pengembangan apa pun yang kompatibel dengan .NET seperti Visual Studio.
 3. Pengetahuan Dasar C#: Pemahaman konsep dasar pemrograman C#.
 4. Kode Tabel HTML: Kode HTML untuk tabel yang ingin Anda sisipkan.
@@ -52,7 +52,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Langkah 3: Masukkan Tabel HTML
 
- Sekarang tiba bagian menyenangkan! Anda akan menggunakan`DocumentBuilder` untuk memasukkan tabel HTML Anda ke dalam dokumen Word. Perhatikan bahwa pengaturan Paskan Otomatis tidak berlaku untuk tabel yang disisipkan dari HTML, sehingga tabel Anda akan terlihat persis seperti yang ditentukan dalam kode HTML Anda.
+ Sekarang sampai pada bagian yang menyenangkan! Anda akan menggunakan`DocumentBuilder` untuk memasukkan tabel HTML Anda ke dalam dokumen Word. Perhatikan bahwa pengaturan Paskan Otomatis tidak berlaku untuk tabel yang disisipkan dari HTML, sehingga tabel Anda akan terlihat persis seperti yang ditentukan dalam kode HTML Anda.
 
 ```csharp
 //Sisipkan Tabel HTML

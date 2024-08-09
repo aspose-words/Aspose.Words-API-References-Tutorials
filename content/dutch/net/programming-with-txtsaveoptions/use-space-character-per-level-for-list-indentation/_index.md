@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Laten we het proces van het maken van een document met een lijst met meerdere niveaus en het specificeren van spaties voor inspringen nader bekijken. 
+Laten we het proces van het maken van een document met een lijst met meerdere niveaus en het opgeven van spatietekens voor inspringing nader bekijken. 
 
 ## Stap 1: Stel uw document in
 

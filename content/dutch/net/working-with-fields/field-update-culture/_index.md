@@ -23,7 +23,7 @@ Voordat we ingaan op de kern van de veldupdatecultuur, zijn er een paar dingen d
 
 4.  Aspose-licentie: Voor de volledige functionaliteit heeft u mogelijk een licentie nodig. Je kunt er een kopen[hier](https://purchase.aspose.com/buy) of vraag een tijdelijke licentie aan[hier](https://purchase.aspose.com/temporary-license/).
 
-5.  Toegang tot documentatie en ondersteuning: Voor aanvullende hulp kunt u terecht bij de[Aspose-documentatie](https://reference.aspose.com/words/net/)En[Helpforum](https://forum.aspose.com/c/words/8) zijn geweldige hulpbronnen.
+5.  Toegang tot documentatie en ondersteuning: Voor aanvullende hulp kunt u terecht bij de[Aspose-documentatie](https://reference.aspose.com/words/net/)En[Ondersteuningsforum](https://forum.aspose.com/c/words/8) zijn geweldige hulpbronnen.
 
 ## Naamruimten importeren
 

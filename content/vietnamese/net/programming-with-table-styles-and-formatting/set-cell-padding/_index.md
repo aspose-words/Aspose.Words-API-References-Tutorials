@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Hãy chia nhỏ quy trình thành các bước đơn giản, dễ quản lý. Sẵn sàng? Đi nào!
+Hãy chia nhỏ quy trình thành các bước đơn giản, dễ quản lý. Sẵn sàng? Đi thôi!
 
 ## Bước 1: Tạo một tài liệu mới
 
@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetCellPadding.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã đặt thành công phần đệm ô trong tài liệu Word bằng Aspose.Words cho .NET. Tính năng đơn giản nhưng mạnh mẽ này có thể cải thiện đáng kể khả năng đọc và tính thẩm mỹ của bảng của bạn. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu, chúng tôi hy vọng hướng dẫn này hữu ích và dễ làm theo. Chúc mừng mã hóa!
+Và bạn có nó! Bạn đã đặt thành công phần đệm ô trong tài liệu Word bằng Aspose.Words cho .NET. Tính năng đơn giản nhưng mạnh mẽ này có thể cải thiện đáng kể khả năng đọc và tính thẩm mỹ của bảng của bạn. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu, chúng tôi hy vọng hướng dẫn này hữu ích và dễ làm theo. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 

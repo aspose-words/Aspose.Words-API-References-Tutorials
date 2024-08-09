@@ -65,7 +65,7 @@ Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Steg 5: Rensa befintliga serier
+## Steg 5: Rensa befintlig serie
 
 För att säkerställa att du börjar med ett rent blad, rensa alla befintliga serier från diagrammet.
 
@@ -100,7 +100,7 @@ Slutligen, spara ditt dokument i den angivna katalogen.
 doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 ```
 
-Och det är allt! Du har framgångsrikt skapat ett dokument med ett diagram med Aspose.Words för .NET. 
+Och det är det! Du har framgångsrikt skapat ett dokument med ett diagram med Aspose.Words för .NET. 
 
 ## Slutsats
 
@@ -121,4 +121,4 @@ Aspose.Words för .NET är ett bibliotek som låter dig skapa, ändra och konver
  Detaljerad dokumentation finns tillgänglig[här](https://reference.aspose.com/words/net/).
 
 ### Hur kan jag få support för Aspose.Words?
- Du kan besöka[supportforum](https://forum.aspose.com/c/words/8) för assistens.
+ Du kan besöka[supportforum](https://forum.aspose.com/c/words/8) för hjälp.

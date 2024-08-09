@@ -65,7 +65,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 
  Reemplazar`"your_password"` con la contraseña de su archivo .pfx.
 
-## Paso 4: guarde el documento como un PDF firmado digitalmente
+## Paso 4: guarde el documento como PDF firmado digitalmente
 
 Finalmente, guarde el documento como PDF con la firma digital.
 
@@ -73,7 +73,7 @@ Finalmente, guarde el documento como PDF con la firma digital.
 doc.Save(dataDir + "DigitallySignedPdfUsingCertificateHolder.pdf", saveOptions);
 ```
 
-¡Y eso es! Su documento ahora está firmado y guardado como PDF.
+¡Y eso es todo! Su documento ahora está firmado y guardado como PDF.
 
 ## Conclusión
 
@@ -81,7 +81,7 @@ Las firmas digitales son una herramienta poderosa para garantizar la integridad 
 
 ## Preguntas frecuentes
 
-### ¿Que es una asignatura digital?
+### ¿Qué es una firma digital?
 Una firma digital es una forma electrónica de firma que verifica la autenticidad e integridad de un documento digital.
 
 ### ¿Necesito un certificado para agregar una firma digital?
@@ -94,4 +94,4 @@ Sí, puede crear un certificado autofirmado con fines de prueba. Sin embargo, pa
  Aspose.Words para .NET es un producto comercial, pero puede descargar una prueba gratuita desde[Aspose sitio web](https://releases.aspose.com/).
 
 ### ¿Puedo usar Aspose.Words para .NET para firmar otros tipos de documentos?
-Sí, Aspose.Words para .NET se puede utilizar para firmar varios tipos de documentos, no solo archivos PDF.
+Sí, Aspose.Words para .NET se puede utilizar para firmar varios tipos de documentos, no sólo archivos PDF.

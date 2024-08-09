@@ -2,79 +2,110 @@
 title: Inhägnad kod
 linktitle: Inhägnad kod
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du använder den inhägnade kodfunktionen med Aspose.Words för .NET Steg-för-steg-guide.
+description: Lär dig hur du lägger till inhägnad kod och infosträngar till Word-dokument med Aspose.Words för .NET. Steg-för-steg-guide ingår. Förbättra dina färdigheter i dokumentformatering.
 type: docs
 weight: 10
 url: /sv/net/working-with-markdown/fenced-code/
 ---
+## Introduktion
 
-I det här exemplet kommer vi att gå igenom hur du använder den inhägnade kodfunktionen med Aspose.Words för .NET. inhägnad kod används för att representera kodblock med specifik formatering.
+Hej där, medkodare! Idag dyker vi in i Aspose.Words för .NET-världen för att bemästra konsten att lägga till inhägnad kod och inhägnad kod med informationssträngar till dina Word-dokument. Föreställ dig ditt Word-dokument som en duk, och du, konstnären, är på väg att måla med precisionen av en erfaren utvecklare. Med Aspose.Words får du kraften att programmässigt förbättra dina dokument med strukturerade, formaterade kodblock, vilket får dina tekniska dokument att lysa med professionalism och tydlighet.
 
-## Steg 1: Använda en dokumentgenerator
+## Förutsättningar
 
-Först använder vi en dokumentgenerator för att lägga till innehåll i vårt dokument.
+Innan vi går in i handledningen, låt oss se till att du har allt du behöver:
+
+- Grundläggande kunskaper om C#: En allmän förståelse av C# hjälper dig att snabbt förstå begreppen.
+-  Aspose.Words för .NET: Du måste ha Aspose.Words för .NET installerat. Om du inte har det än, ta det[här](https://releases.aspose.com/words/net/).
+- Utvecklingsmiljö: Visual Studio eller någon annan C# IDE du är bekväm med.
+
+## Importera namnområden
+
+Först och främst måste du importera de nödvändiga namnrymden. Det här är som att samla alla dina verktyg innan du startar ett projekt.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Style;
+```
+
+Låt oss nu bryta ner processen steg för steg.
+
+## Steg 1: Konfigurera ditt projekt
+
+Innan vi kan skapa vackra, formaterade kodblock i vårt Word-dokument måste vi sätta upp ett nytt projekt i Visual Studio.
+
+1. Skapa ett nytt projekt: Öppna Visual Studio och skapa en ny C# Console Application.
+2. Lägg till Aspose.Words-referens: Installera Aspose.Words via NuGet Package Manager. Du kan göra detta genom att högerklicka på ditt projekt i Solution Explorer, välja "Hantera NuGet-paket" och söka efter Aspose.Words.
+
+## Steg 2: Initiera DocumentBuilder
+
+Nu när ditt projekt är konfigurerat, låt oss initiera DocumentBuilder, som kommer att vara vårt huvudverktyg för att lägga till innehåll i Word-dokumentet.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Steg 2: Lägga till en stil för inhägnad kod
+## Steg 3: Skapa en stil för inhägnad kod
 
- Vi kommer att lägga till en anpassad stil för den inhägnade koden med hjälp av`Styles.Add` metod för`Document` objekt. I det här exemplet skapar vi en stil som heter "FencedCode" för den inhägnade koden.
+För att lägga till inhägnad kod måste vi först skapa en stil. Se detta som att sätta temat för vårt kodblock.
 
 ```csharp
 Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");
-builder.ParagraphFormat.Style = fencedCode;
+fencedCode.Font.Name = "Courier New";
+fencedCode.Font.Size = 10;
+fencedCode.ParagraphFormat.LeftIndent = 20;
+fencedCode.ParagraphFormat.RightIndent = 20;
+fencedCode.ParagraphFormat.Shading.BackgroundPatternColor = Color.LightGray;
 ```
 
-## Steg 3: Lägga till inhägnad kod utan information
+## Steg 4: Lägg till inhägnad kod till dokumentet
 
-Nu kan vi lägga till ett inhägnat kodblock utan informationssträng med den anpassade stilen "FencedCode".
+Med vår stil redo kan vi nu lägga till ett inhägnat kodblock till dokumentet.
 
 ```csharp
-builder.Writeln("This is an fenced code");
+builder.ParagraphFormat.Style = fencedCode;
+builder.Writeln("This is a fenced code block");
 ```
 
-## Steg 4: Lägg till inhägnad kod med infosträng
+## Steg 5: Skapa en stil för inhägnad kod med infosträng
 
-Vi kan också lägga till ett inhägnat kodblock med en informationssträng med en annan anpassad stil. I det här exemplet skapar vi en stil som heter "FencedCode.C#" för att representera ett block med C#-kod.
+Ibland kanske du vill ange programmeringsspråket eller lägga till extra information till ditt kodblock. Låt oss skapa en stil för det.
 
 ```csharp
 Style fencedCodeWithInfo = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode.C#");
-builder.ParagraphFormat.Style = fencedCodeWithInfo;
-builder.Writeln("This is a fenced code with info string");
+fencedCodeWithInfo.Font.Name = "Courier New";
+fencedCodeWithInfo.Font.Size = 10;
+fencedCodeWithInfo.ParagraphFormat.LeftIndent = 20;
+fencedCodeWithInfo.ParagraphFormat.RightIndent = 20;
+fencedCodeWithInfo.ParagraphFormat.Shading.BackgroundPatternColor = Color.LightGray;
 ```
 
-### Exempel på källkod för Fenced Code med Aspose.Words för .NET
+## Steg 6: Lägg till inhägnad kod med infosträng till dokumentet
+
+Låt oss nu lägga till ett inhägnat kodblock med en infosträng för att indikera att det är C#-kod.
 
 ```csharp
-// Använd en dokumentbyggare för att lägga till innehåll i dokumentet.
-DocumentBuilder builder = new DocumentBuilder();
-
-Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");
-builder.ParagraphFormat.Style = fencedCode;
-builder.Writeln("This is an fenced code");
-
-Style fencedCodeWithInfo = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode.C#");
 builder.ParagraphFormat.Style = fencedCodeWithInfo;
-builder.Writeln("This is a fenced code with info string");
+builder.Writeln("This is a fenced code block with info string - C#");
 ```
 
-### FAQ's
+## Slutsats
 
-#### F: Vad är avgränsad kod i Markdown?
+Grattis! Du har precis lagt till inhägnade kodblock och inhägnad kod med infosträngar till dina Word-dokument med Aspose.Words för .NET. Det här är bara toppen av isberget. Med Aspose.Words kan du automatisera och förbättra din dokumentbehandling till nya höjder. Fortsätt utforska och glad kodning!
 
-S: Avgränsad kod i Markdown är en formateringsmetod som används för att visa kod i ett Markdown-dokument. Den består av att rama in koden med specifika avgränsare.
+## FAQ's
 
-#### F: Vilka är fördelarna med avgränsad kod i Markdown?
+### Vad är Aspose.Words för .NET?
+Aspose.Words för .NET är ett kraftfullt bibliotek som låter utvecklare skapa, manipulera och konvertera Word-dokument programmatiskt.
 
-S: Avgränsad kod i Markdown förbättrar kodläsbarheten och gör det lättare för läsarna att förstå. Det gör det också möjligt att bevara syntaxmarkering i vissa Markdown-redigerare.
+### Kan jag använda Aspose.Words med andra programmeringsspråk?
+Aspose.Words stöder främst .NET-språk, men det finns versioner tillgängliga för Java, Python och andra språk.
 
-#### F: Vad är skillnaden mellan avgränsad och indragen kod i Markdown?
+### Är Aspose.Words gratis att använda?
+ Aspose.Words är en kommersiell produkt, men du kan ladda ner en gratis testversion[här](https://releases.aspose.com/)att utforska dess funktioner.
 
-S: Avgränsad kod använder specifika avgränsare för att omsluta koden, medan indragen kod innebär indragning av varje kodrad med mellanslag eller tabb.
+### Hur kan jag få support för Aspose.Words?
+ Du kan få stöd från Aspose-communityt och utvecklare[här](https://forum.aspose.com/c/words/8).
 
-#### F: Stöds avgränsad kod i Markdown av alla Markdown-redigerare?
-
-S: Stödet för avgränsad kod i Markdown kan variera mellan Markdown-redigerare. Kontrollera din utgivares specifika dokumentation för att vara säker.
-
+### Vilka andra funktioner erbjuder Aspose.Words?
+Aspose.Words erbjuder ett brett utbud av funktioner inklusive dokumentkonvertering, mallbaserad dokumentgenerering, rapportering och mycket mer.

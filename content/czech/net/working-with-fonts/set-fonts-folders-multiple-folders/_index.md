@@ -2,87 +2,102 @@
 title: Nastavit složky písem více složek
 linktitle: Nastavit složky písem více složek
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Krok za krokem průvodce nastavením více složek písem při vykreslování dokumentu pomocí Aspose.Words for .NET.
+description: Naučte se, jak nastavit více složek písem v dokumentech aplikace Word pomocí Aspose.Words for .NET. Tento podrobný průvodce zajistí, že vaše dokumenty budou používat přesně ta písma, která potřebujete.
 type: docs
 weight: 10
 url: /cs/net/working-with-fonts/set-fonts-folders-multiple-folders/
 ---
+## Zavedení
 
-V tomto tutoriálu vás provedeme krok za krokem procesem nastavení více složek písem při vykreslování dokumentu pomocí Aspose.Words for .NET. Vysvětlíme vám přibalený zdrojový kód C# a poskytneme vám komplexního průvodce, který vám pomůže pochopit a implementovat tuto funkci ve vašich vlastních projektech. Na konci tohoto tutoriálu budete vědět, jak určit více složek písem, které se mají použít při vykreslování dokumentů pomocí Aspose.Words for .NET.
+Přemýšleli jste někdy, jak spravovat více zdrojů písem v dokumentech aplikace Word? Možná máte sbírku písem roztroušených v různých složkách a potřebujete způsob, jak zajistit, aby je vaše dokumenty používaly bez problémů. Tak to máš štěstí! Dnes se ponoříme do toho, jak nastavit složky písem pomocí Aspose.Words pro .NET. Tato příručka vás provede procesem krok za krokem a zajistí, aby vaše dokumenty vypadaly přesně tak, jak chcete.
 
-## Krok 1: Definujte adresář dokumentů
-Nejprve musíte nastavit cestu k adresáři dokumentů. Toto je umístění, kam chcete uložit upravený vykreslený dokument. Nahraďte "VAŠE ADRESÁŘ DOKUMENTŮ" příslušnou cestou.
+## Předpoklady
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Než začneme, ujistěte se, že máte vše, co potřebujete. Zde je to, co budete muset dodržet:
 
-## Krok 2: Načtěte dokument k vykreslení
- Poté můžete načíst dokument k vykreslení pomocí`Document` třída. Ujistěte se, že jste zadali správnou cestu dokumentu.
+-  Aspose.Words for .NET: Pokud jste to ještě neudělali, stáhněte si a nainstalujte Aspose.Words for .NET. Můžete to získat[zde](https://releases.aspose.com/words/net/).
+- Vývojové prostředí: Visual Studio nebo jakékoli jiné vývojové prostředí kompatibilní s .NET.
+- Základní znalost C#: Malá znalost C# vám pomůže postupovat podle příkladů.
+- Soubory písem: Ujistěte se, že máte soubory písem uloženy v adresářích, ke kterým máte snadný přístup.
 
-```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
-```
+## Importovat jmenné prostory
 
-## Krok 3: Nastavte složky písem
- Nyní můžete nastavit více složek písem pomocí`FontSettings` třída a`SetFontsFolders()` metoda. Můžete zadat cesty ke složkám písem, které chcete použít v poli. V tomto příkladu jsme zadali dvě složky písem: "C:\MyFonts\" a "D:\Misc\Fonts\".
+Nejprve importujme potřebné jmenné prostory do vašeho projektu C#. To zajišťuje, že budete mít přístup ke všem funkcím Aspose.Words, které budete potřebovat.
 
 ```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.SetFontsFolders(new[] { @"C:\MyFonts\", @"D:\Misc\Fonts\" }, true);
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Krok 4: Použijte nastavení písma
- Dále musíte použít nastavení písma na váš dokument pomocí`FontSettings` majetek z`Document` třída.
+S touto sadou se pojďme ponořit do podrobného průvodce nastavením složek písem v Aspose.Words pro .NET.
 
-```csharp
-doc.FontSettings = fontSettings;
-```
+## Krok 1: Vložte svůj dokument
 
-## Krok 5: Uložte vykreslený dokument
- Nakonec můžete vykreslený dokument uložit do souboru pomocí`Save()` metoda`Document` třída. Ujistěte se, že jste zadali správnou cestu a název souboru.
-
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersMultipleFolders.pdf");
-```
-
-### Ukázkový zdrojový kód pro Set Fonts Folders Multiple Folders pomocí Aspose.Words for .NET 
+Dobře, začněme načtením dokumentu aplikace Word, se kterým chcete pracovat. Ujistěte se, že máte připravenou cestu k dokumentu. V tomto příkladu použijeme dokument s názvem „Rendering.docx“.
 
 ```csharp
 // Cesta k vašemu adresáři dokumentů
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+Zde načteme dokument ze zadaného adresáře. Dost jednoduché, že?
+
+## Krok 2: Vytvořte objekt FontSettings
+
+ Dále musíme vytvořit a`FontSettings` objekt. Tento objekt nám umožní spravovat zdroje písem pro náš dokument.
+
+```csharp
 FontSettings fontSettings = new FontSettings();
-// Upozorňujeme, že toto nastavení přepíše všechny výchozí zdroje písem, které jsou ve výchozím nastavení prohledávány. Nyní se budou hledat pouze tyto složky
-// písma při vykreslování nebo vkládání písem. Chcete-li přidat další zdroj písem při zachování systémových zdrojů písem, použijte FontSettings.GetFontSources a
-// Místo toho FontSettings.SetFontSources.
+```
+
+ Tento`FontSettings`objekt nám pomůže definovat, které složky písem použít.
+
+## Krok 3: Nastavte složky písem
+
+Nyní přichází klíčová část – nastavení složek písem. Zde zadáváte adresáře, kde jsou umístěny vaše fonty. V tomto příkladu máme písma v "C:\MyFonts\" a "D:\Misc\Fonts\".
+
+```csharp
 fontSettings.SetFontsFolders(new[] { @"C:\MyFonts\", @"D:\Misc\Fonts\" }, true);
+```
+
+Druhý parametr (`true` ) znamená, že tyto složky přepíší všechny výchozí zdroje písem. Pokud chcete zachovat i systémové zdroje písem, můžete použít kombinaci`GetFontSources`a`SetFontSources`.
+
+## Krok 4: Použijte nastavení písma na dokument
+
+S nastavenými složkami písem musíme tato nastavení použít na náš dokument. Tím zajistíte, že dokument během vykreslování používá zadaná písma.
+
+```csharp
 doc.FontSettings = fontSettings;
+```
+
+## Krok 5: Uložte dokument
+
+Nakonec dokument uložíme. Uložíme jej jako PDF, abychom viděli písma v akci.
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersMultipleFolders.pdf");
 ```
 
+A tady to máte! Úspěšně jste pro svůj dokument nastavili několik složek písem.
+
 ## Závěr
-tomto tutoriálu jsme se naučili, jak nastavit více složek písem při vykreslování dokumentu pomocí Aspose.Words for .NET. Podle tohoto podrobného průvodce můžete snadno určit více složek písem, které se mají použít při vykreslování dokumentů. Aspose.Words nabízí výkonné a flexibilní API pro zpracování textu s písmy ve vašich dokumentech. S těmito znalostmi můžete ovládat a přizpůsobovat zdroje písem používané při vykreslování dokumentů podle vašich specifických potřeb.
 
-### FAQ
+Správa písem ve vašich dokumentech se může zdát jako skličující úkol, ale s Aspose.Words pro .NET je to hračka! Pomocí těchto jednoduchých kroků zajistíte, že vaše dokumenty budou vypadat profesionálně a budou používat přesně ta písma, která potřebujete. Ať už pracujete na projektu, který vyžaduje specifický branding, nebo jen chcete mít větší kontrolu nad vzhledem vašeho dokumentu, nastavení složek písem je dovednost, kterou stojí za to zvládnout.
 
-#### Otázka: Jak mohu v Aspose.Words nastavit více složek písem?
+## FAQ
 
- A: Chcete-li nastavit více složek písem v Aspose.Words, můžete použít`SetFontsFolders` metoda`Fonts` class poskytující seznam umístění vlastních složek písem.
+### Mohu pro složky písem použít síťové cesty?
+Ano, pro složky písem můžete použít síťové cesty. Jen se ujistěte, že cesty jsou přístupné z vaší aplikace.
 
-#### Otázka: Má nastavení více složek písem vliv na všechny dokumenty zpracovávané pomocí Aspose.Words?
+### Co se stane, když v zadaných složkách chybí písmo?
+Pokud písmo chybí, Aspose.Words přejde zpět na zadané výchozí písmo nebo použije náhradní písmo.
 
-Odpověď: Ano, nastavení více složek písem ovlivní všechny dokumenty zpracované pomocí Aspose.Words. Jakmile definujete složky písem, Aspose.Words použije tato umístění k vyhledání písem ve všech dokumentech.
+### Mohu přidat složky písem bez přepsání systémových písem?
+ Absolutně! Použití`FontSettings.GetFontSources` k načtení existujících zdrojů a jejich zkombinování s vašimi vlastními složkami pomocí`FontSettings.SetFontSources`.
 
-#### Otázka: Kolik složek písem mohu definovat v Aspose.Words?
+### Existuje nějaký limit na počet složek písem, které mohu přidat?
+Neexistuje žádný přísný limit na počet složek písem. Pamatujte však na výkon, protože více složek může prodloužit dobu načítání písem.
 
-Odpověď: V Aspose.Words můžete definovat tolik složek písem, kolik potřebujete. Neexistuje žádný konkrétní limit na počet složek písem, které můžete definovat.
-
-#### Otázka: Jak mohu zkontrolovat složky písem definované v Aspose.Words?
-
- A: Chcete-li zkontrolovat složky písem definované v Aspose.Words, můžete použít`GetFolders` metoda`Fonts` třídy, abyste získali umístění nakonfigurovaných složek písem.
-
-#### Otázka: Musí složky písem obsahovat konkrétní písma?
-
-Odpověď: Ano, složky písem by měly obsahovat písma, která chcete použít ve svých dokumentech aplikace Word. Aspose.Words bude při zpracování dokumentů hledat písma v zadaných složkách.
+### Jak mohu zkontrolovat, která písma jsou použita v mém dokumentu?
+ Můžete použít`FontSettings.GetFontsSources` metoda pro načtení a kontrolu zdrojů písem aktuálně nastavených pro váš dokument.

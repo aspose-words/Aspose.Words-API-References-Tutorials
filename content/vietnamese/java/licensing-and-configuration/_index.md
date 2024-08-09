@@ -17,9 +17,9 @@ Khi bắt đầu hành trình sử dụng Aspose.Words cho Java, bước đầu 
 
 2. Lấy tệp giấy phép: Sau khi mua, bạn sẽ nhận được tệp giấy phép. Tệp này rất quan trọng để định cấu hình Aspose.Words trong dự án Java của bạn.
 
-3.  Tích hợp giấy phép: Để kích hoạt Aspose.Words, hãy tích hợp giấy phép vào ứng dụng Java của bạn. Điều này thường liên quan đến việc tải tệp giấy phép và áp dụng nó vào Aspose.Words. Tham khảo đến[Tài liệu API](https://reference.aspose.com/words/java/) để biết các mẫu mã chi tiết.
+3.  Tích hợp giấy phép: Để kích hoạt Aspose.Words, hãy tích hợp giấy phép vào ứng dụng Java của bạn. Điều này thường liên quan đến việc tải tệp giấy phép và áp dụng nó vào Aspose.Words. Tham khảo[Tài liệu API](https://reference.aspose.com/words/java/) để biết các mẫu mã chi tiết.
 
-## Thiết lập cấu hình
+## Cài đặt cấu hình
 
 Khi bạn đã cấp phép cho Aspose.Words, đã đến lúc định cấu hình nó để đáp ứng nhu cầu cụ thể của bạn. Cài đặt cấu hình cho phép bạn điều chỉnh hoạt động của bộ công cụ. Dưới đây là một số khía cạnh chính cần xem xét:
 

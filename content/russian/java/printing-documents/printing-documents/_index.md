@@ -109,7 +109,7 @@ class MultipagePrintDocument implements Printable
         // Выберите номер последней страницы, которая будет напечатана на этом листе бумаги.
         int pageTo = Math.max(startPage + mPagesPerSheet - 1, toPage);
         //Перебирать выбранные страницы от сохраненной текущей страницы до расчетной.
-        // Последняя страница.
+        // последняя страница.
         for (int pageIndex = startPage; pageIndex <= pageTo; pageIndex++) {
             // Вычислите индексы столбца и строки.
             int rowIdx = (int) Math.floor((pageIndex - startPage) / thumbCount.getWidth());

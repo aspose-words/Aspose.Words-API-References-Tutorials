@@ -14,7 +14,7 @@ Ve světě zpracování dokumentů může být přidávání komentářů k doku
 Komentáře jsou cenné pro dokumentaci vašeho kódu nebo poskytování vysvětlení v dokumentu. Aspose.Words for Java vám umožňuje programově přidávat komentáře k vašim dokumentům, což z něj činí vynikající volbu pro generování dynamických a interaktivních dokumentů.
 
 ## 2. Nastavení prostředí
- Než se vrhneme na kód, musíte nastavit vývojové prostředí. Ujistěte se, že máte nainstalovaný a nakonfigurovaný Aspose.Words for Java. Pokud ne, můžete si jej stáhnout z[tady](https://releases.aspose.com/words/java/).
+ Než se vrhneme na kód, musíte nastavit vývojové prostředí. Ujistěte se, že máte nainstalovaný a nakonfigurovaný Aspose.Words for Java. Pokud ne, můžete si jej stáhnout z[zde](https://releases.aspose.com/words/java/).
 
 ## 3. Vytvoření nového dokumentu
 Začněme vytvořením nového dokumentu. Ve svém projektu Java se ujistěte, že máte přidané potřebné knihovny a závislosti.

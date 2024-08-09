@@ -19,11 +19,11 @@ Um dos principais recursos do Aspose.Words for Java é a capacidade de converter
 ## Exportando documentos com Aspose.Words
 exportação de documentos é um aspecto crucial do trabalho com documentos em diferentes contextos. Neste tutorial, exploraremos como Aspose.Words for Java facilita a exportação de documentos. Se você deseja exportar páginas específicas, seções ou até mesmo elementos individuais de um documento, você encontrará aqui a orientação necessária.
 
-Ao final desses tutoriais, você estará equipado com o conhecimento e as habilidades para realizar tarefas de conversão e exportação de documentos com confiança usando Aspose.Words for Java. Prepare-se para agilizar o processamento de documentos e aumentar sua produtividade com esta API poderosa.
+Ao final desses tutoriais, você estará equipado com o conhecimento e as habilidades para realizar tarefas de conversão e exportação de documentos com segurança usando Aspose.Words for Java. Prepare-se para agilizar o processamento de documentos e aumentar sua produtividade com esta API poderosa.
 
 Portanto, mergulhe nos tutoriais listados acima e libere todo o potencial do Aspose.Words for Java em seus projetos relacionados a documentos. Boa codificação!
 
- Para mais informações, confira o[Documentação da API Aspose.Words para Java](https://reference.aspose.com/words/java/) e, para começar, baixe-o em[aqui](https://releases.aspose.com/words/java/) . Se você tiver alguma dúvida ou precisar de ajuda, sinta-se à vontade para entrar em contato com nosso[Fórum de suporte](https://forum.aspose.com/).
+ Para mais informações, confira o[Documentação da API Aspose.Words para Java](https://reference.aspose.com/words/java/) e, para começar, baixe-o em[aqui](https://releases.aspose.com/words/java/) . Se você tiver alguma dúvida ou precisar de ajuda, sinta-se à vontade para entrar em contato com nosso[fórum de suporte](https://forum.aspose.com/).
 
 ## Tutoriais de conversão e exportação de documentos
 ### [Gerando etiquetas de código de barras personalizadas em Aspose.Words para Java](./generating-custom-barcode-labels/)

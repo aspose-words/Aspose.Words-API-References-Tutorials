@@ -16,7 +16,7 @@ Mussten Sie schon einmal mehrere Word-Dokumente zu einer zusammenhängenden Date
 Bevor wir loslegen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
 
 1. Grundkenntnisse in C#: Sie sollten mit der Syntax und den Konzepten von C# vertraut sein.
-2.  Aspose.Words für .NET: Laden Sie es herunter[Hier](https://releases.aspose.com/words/net/) Wenn Sie nur erkunden, können Sie mit einem[Kostenlose Testphase](https://releases.aspose.com/).
+2.  Aspose.Words für .NET: Laden Sie es herunter[Hier](https://releases.aspose.com/words/net/) Wenn Sie nur erkunden, können Sie mit einem[Kostenlose Testversion](https://releases.aspose.com/).
 3. Visual Studio: Jede aktuelle Version sollte funktionieren, aber die neueste Version wird empfohlen.
 4. .NET Framework: Stellen Sie sicher, dass es auf Ihrem System installiert ist.
 
@@ -47,7 +47,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Schritt 2: Einfaches Zusammenführen
 
- Beginnen wir mit einer einfachen Zusammenführung. Wir führen zwei Dokumente zu einem zusammen, indem wir`Merger.Merge` Methode.
+ Beginnen wir mit einer einfachen Zusammenführung. Wir führen zwei Dokumente zu einem zusammen, indem wir`Merger.Merge` Verfahren.
 
 ```csharp
 Merger.Merge(dataDir + "MergedDocument.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" });
@@ -99,7 +99,7 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Entwickler W
 
 ### Kann ich Aspose.Words für .NET kostenlos verwenden?
 
- Sie können Aspose.Words für .NET mit einem[Kostenlose Testphase](https://releases.aspose.com/)Für die langfristige Nutzung müssen Sie eine Lizenz erwerben.
+ Sie können Aspose.Words für .NET mit einem[Kostenlose Testversion](https://releases.aspose.com/)Für die langfristige Nutzung müssen Sie eine Lizenz erwerben.
 
 ### Wie gehe ich beim Zusammenführen mit unterschiedlichen Formatierungen um?
 

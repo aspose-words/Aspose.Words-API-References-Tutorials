@@ -168,7 +168,7 @@ Aspose.Words para .NET es una poderosa biblioteca para crear, editar y convertir
 Sí, puedes aplicar diferentes formatos, incluidos colores, a diferentes filas o celdas.
 
 ### ¿Aspose.Words para .NET es gratuito?
- Aspose.Words para .NET es una biblioteca paga, pero puede obtener una[prueba gratis](https://releases.aspose.com/).
+ Aspose.Words para .NET es una biblioteca paga, pero puede obtener una[prueba gratuita](https://releases.aspose.com/).
 
 ### ¿Cómo obtengo soporte para Aspose.Words para .NET?
  Puede obtener apoyo del[Aspose foros de la comunidad](https://forum.aspose.com/c/words/8).

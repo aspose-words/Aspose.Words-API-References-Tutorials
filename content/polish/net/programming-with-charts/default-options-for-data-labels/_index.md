@@ -9,7 +9,7 @@ url: /pl/net/programming-with-charts/default-options-for-data-labels/
 ---
 ## Wstęp
 
-No hej! Czy jesteś podekscytowany zanurzeniem się w świat automatyzacji dokumentów? Dzisiaj przyjrzymy się, jak używać Aspose.Words dla .NET do programowego tworzenia wspaniałych dokumentów. Aspose.Words to potężna biblioteka, która pozwala z łatwością manipulować dokumentami programu Word. W tym samouczku skupimy się na ustawianiu domyślnych opcji etykiet danych na wykresie. Niezależnie od tego, czy jesteś doświadczonym programistą, czy nowicjuszem, ten przewodnik przeprowadzi Cię przez każdy krok, dzięki czemu możesz błyskawicznie rozpocząć pracę.
+Hej tam! Czy jesteś podekscytowany zanurzeniem się w świat automatyzacji dokumentów? Dzisiaj przyjrzymy się, jak używać Aspose.Words dla .NET do programowego tworzenia wspaniałych dokumentów. Aspose.Words to potężna biblioteka, która pozwala z łatwością manipulować dokumentami programu Word. W tym samouczku skupimy się na ustawianiu domyślnych opcji etykiet danych na wykresie. Niezależnie od tego, czy jesteś doświadczonym programistą, czy nowicjuszem, ten przewodnik przeprowadzi Cię przez każdy krok, dzięki czemu możesz błyskawicznie rozpocząć pracę.
 
 ## Warunki wstępne
 
@@ -135,7 +135,7 @@ Możesz używać Aspose.Words za darmo z[licencja tymczasowa](https://purchase.a
  Wsparcie możesz uzyskać poprzez[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### Czy mogę dodać inne typy wykresów?
- Tak, Aspose.Words obsługuje różne typy wykresów, takie jak wykresy słupkowe, liniowe i kolumnowe. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) po więcej szczegółów.
+ Tak, Aspose.Words obsługuje różne typy wykresów, takie jak wykresy słupkowe, liniowe i kolumnowe. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) aby uzyskać więcej szczegółów.
 
 ### Czy Aspose.Words jest kompatybilny z .NET Core?
  Tak, Aspose.Words jest kompatybilny z .NET Core. Więcej informacji znajdziesz w[dokumentacja](https://reference.aspose.com/words/net/).

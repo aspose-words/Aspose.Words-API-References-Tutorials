@@ -9,7 +9,7 @@ url: /id/net/working-with-fields/field-display-results/
 ---
 ## Perkenalan
 
-Jika Anda pernah bekerja dengan dokumen Microsoft Word, Anda pasti tahu betapa hebatnya bidang. Mereka seperti placeholder dinamis kecil yang dapat menampilkan hal-hal seperti tanggal, properti dokumen, atau bahkan penghitungan. Namun apa yang terjadi jika Anda perlu memperbarui kolom ini dan menampilkan hasilnya secara terprogram? Di situlah Aspose.Words for .NET berperan. Panduan ini akan memandu Anda melalui proses memperbarui dan menampilkan hasil lapangan di dokumen Word menggunakan Aspose.Words for .NET. Pada akhirnya, Anda akan mengetahui cara mengotomatiskan tugas-tugas ini dengan mudah, baik Anda menangani dokumen yang rumit atau laporan sederhana.
+Jika Anda pernah bekerja dengan dokumen Microsoft Word, Anda pasti tahu betapa hebatnya bidang. Mereka seperti placeholder dinamis kecil yang dapat menampilkan hal-hal seperti tanggal, properti dokumen, atau bahkan perhitungan. Namun apa yang terjadi jika Anda perlu memperbarui kolom ini dan menampilkan hasilnya secara terprogram? Di situlah Aspose.Words for .NET berperan. Panduan ini akan memandu Anda melalui proses memperbarui dan menampilkan hasil lapangan di dokumen Word menggunakan Aspose.Words for .NET. Pada akhirnya, Anda akan mengetahui cara mengotomatiskan tugas-tugas ini dengan mudah, baik Anda menangani dokumen yang rumit atau laporan sederhana.
 
 ## Prasyarat
 
@@ -88,7 +88,7 @@ Memperbarui dan menampilkan hasil lapangan di dokumen Word dengan Aspose.Words u
 Anda dapat memperbarui berbagai tipe bidang, termasuk bidang tanggal, properti dokumen, dan bidang rumus.
 
 ### Apakah saya perlu menyimpan dokumen setelah memperbarui kolom?  
- Tidak, menelepon`UpdateFields` tidak secara otomatis menyimpan dokumen. Menggunakan`Save` metode untuk menyimpan perubahan apa pun.
+ Tidak, menelepon`UpdateFields` tidak secara otomatis menyimpan dokumen. Gunakan`Save` metode untuk menyimpan perubahan apa pun.
 
 ### Bisakah saya memperbarui kolom di bagian tertentu dokumen?  
  Ya, Anda dapat menggunakan`Document.Sections` properti untuk mengakses bagian tertentu dan memperbarui bidang di dalamnya.

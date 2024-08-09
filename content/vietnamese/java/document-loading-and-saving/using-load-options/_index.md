@@ -22,7 +22,7 @@ Document doc = new Document("Your Directory Path" + "Dirty field.docx", loadOpti
 doc.save("Your Directory Path" + "WorkingWithLoadOptions.UpdateDirtyFields.docx");
 ```
 
- Đoạn mã này trình bày cách cập nhật các trường không chính xác trong tài liệu. Các`setUpdateDirtyFields(true)` phương pháp được sử dụng để đảm bảo rằng các trường bẩn được cập nhật trong quá trình tải tài liệu.
+ Đoạn mã này trình bày cách cập nhật các trường không chính xác trong tài liệu. các`setUpdateDirtyFields(true)` phương pháp được sử dụng để đảm bảo rằng các trường bẩn được cập nhật trong quá trình tải tài liệu.
 
 ## Tải tài liệu được mã hóa
 
@@ -34,7 +34,7 @@ public void loadEncryptedDocument() throws Exception {
 }
 ```
 
- Ở đây, chúng tôi tải một tài liệu được mã hóa bằng mật khẩu. Các`LoadOptions` hàm tạo chấp nhận mật khẩu tài liệu và bạn cũng có thể chỉ định mật khẩu mới khi lưu tài liệu bằng cách sử dụng`OdtSaveOptions`.
+ Ở đây, chúng tôi tải một tài liệu được mã hóa bằng mật khẩu. các`LoadOptions` hàm tạo chấp nhận mật khẩu tài liệu và bạn cũng có thể chỉ định mật khẩu mới khi lưu tài liệu bằng cách sử dụng`OdtSaveOptions`.
 
 ## Chuyển đổi hình dạng sang Office Math
 
@@ -46,7 +46,7 @@ Document doc = new Document("Your Directory Path" + "Office math.docx", loadOpti
 doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveFormat.DOCX);
 ```
 
- Mã này trình bày cách chuyển đổi hình dạng thành đối tượng Office Math trong quá trình tải tài liệu. Các`setConvertShapeToOfficeMath(true)`phương pháp cho phép chuyển đổi này.
+ Mã này trình bày cách chuyển đổi hình dạng thành đối tượng Office Math trong quá trình tải tài liệu. các`setConvertShapeToOfficeMath(true)`phương pháp cho phép chuyển đổi này.
 
 ## Đặt phiên bản MS Word
 
@@ -210,4 +210,4 @@ Trong hướng dẫn này, chúng tôi đã đi sâu vào các khía cạnh khá
 
 ###  Mục đích của việc này là gì`setTempFolder` method in Load Options?
 
- Các`setTempFolder`phương pháp cho phép bạn chỉ định thư mục lưu trữ các tệp tạm thời trong quá trình xử lý tài liệu.
+ các`setTempFolder`phương pháp cho phép bạn chỉ định thư mục lưu trữ các tệp tạm thời trong quá trình xử lý tài liệu.

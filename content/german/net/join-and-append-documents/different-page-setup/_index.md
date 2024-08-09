@@ -15,7 +15,7 @@ Hallo! Sind Sie bereit, in die faszinierende Welt der Dokumentbearbeitung mit As
 
 Bevor wir uns die Hände schmutzig machen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
 
-1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie Aspose.Words für .NET installiert haben. Sie können[hier herunterladen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie Aspose.Words für .NET installiert haben. Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. .NET Framework: Jede Version, die Aspose.Words für .NET unterstützt.
 3. Entwicklungsumgebung: Visual Studio oder eine andere .NET-kompatible IDE.
 4. Grundlegende C#-Kenntnisse: Nur die Grundlagen, um die Syntax und Struktur zu verstehen.
@@ -133,7 +133,7 @@ Sie können auch die Randeinstellungen ähnlich anpassen, wie wir die Seitenbrei
 Ja, Aspose.Words für .NET ist vollständig mit .NET Core kompatibel.
 
 ### Kann ich die Stile aus beiden Dokumenten beibehalten?
- Ja das`ImportFormatMode.KeepSourceFormatting` stellt sicher, dass die Stile aus dem Quelldokument erhalten bleiben.
+ Ja, die`ImportFormatMode.KeepSourceFormatting` stellt sicher, dass die Stile aus dem Quelldokument erhalten bleiben.
 
 ### Wo kann ich weitere Hilfe zu Aspose.Words erhalten?
- Besuche die[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/) oder besuchen Sie ihre[Hilfeforum](https://forum.aspose.com/c/words/8) für weitere Unterstützung.
+ Schauen Sie sich die[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/) oder besuchen Sie ihre[Support-Forum](https://forum.aspose.com/c/words/8) für weitere Unterstützung.

@@ -2,140 +2,103 @@
 title: Вставить объект Ole в Word с помощью пакета Ole
 linktitle: Вставить объект Ole в Word с помощью пакета Ole
 second_title: API обработки документов Aspose.Words
-description: Узнайте, как вставить объект OLE с пакетом OLE в документ с помощью Aspose.Words для .NET.
+description: Узнайте, как вставлять объекты OLE в документы Word с помощью Aspose.Words для .NET. Следуйте нашему подробному пошаговому руководству, чтобы легко вставлять файлы.
 type: docs
 weight: 10
 url: /ru/net/working-with-oleobjects-and-activex/insert-ole-object-with-ole-package/
 ---
+## Введение
 
-Ниже приведено пошаговое руководство, объясняющее приведенный ниже исходный код C#, в котором показано, как вставить объект OLE в Word с помощью пакета OLE с помощью Aspose.Words для .NET.
+Если вы когда-нибудь хотели встроить файл в документ Word, вы попали по адресу. Будь то ZIP-файл, лист Excel или файл любого другого типа, встраивание его непосредственно в документ Word может быть невероятно полезным. Думайте об этом как о секретном отделении в вашем документе, где вы можете хранить всевозможные сокровища. И сегодня мы рассмотрим, как это сделать с помощью Aspose.Words для .NET. Готовы стать мастером Word? Давайте погрузимся!
 
-## Шаг 1. Импортируйте необходимые ссылки.
-Прежде чем начать, убедитесь, что вы импортировали необходимые ссылки для использования Aspose.Words for .NET в свой проект. Это включает в себя импорт библиотеки Aspose.Words и добавление необходимых пространств имен в исходный файл.
+## Предварительные условия
+
+Прежде чем мы начнем, убедитесь, что у вас есть следующее:
+
+1. Aspose.Words для .NET: если вы еще этого не сделали, загрузите его с[здесь](https://releases.aspose.com/words/net/).
+2. Среда разработки: Visual Studio или любая другая среда разработки .NET.
+3. Базовое понимание C#. Вам не обязательно быть экспертом, но знание C# поможет.
+4. Каталог документов: папка, в которой вы можете хранить и извлекать документы.
+
+## Импортировать пространства имен
+
+Прежде всего, давайте приведем в порядок наши пространства имен. В ваш проект необходимо включить следующие пространства имен:
 
 ```csharp
+using System;
+using System.IO;
 using Aspose.Words;
 using Aspose.Words.Drawing;
-using System.IO;
 ```
 
-## Шаг 2. Создайте новый документ и генератор документов.
- На этом этапе мы создадим новый документ, используя`Document` класс и построитель документов с использованием`DocumentBuilder` сорт.
+Давайте разобьем это на небольшие шаги, чтобы было легко следовать.
+
+## Шаг 1. Настройте свой документ
+
+Представьте, что вы художник с чистым холстом. Во-первых, нам нужен чистый холст, который является нашим документом Word. Вот как вы это настроили:
 
 ```csharp
+// Путь к каталогу ваших документов
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Шаг 3. Вставьте объект OLE с пакетом OLE.
- Воспользуйтесь генератором документов`InsertOleObject`метод для вставки объекта OLE с пакетом OLE в документ. Укажите поток данных, тип объекта, параметры отображения и другие необходимые настройки.
+Этот код инициализирует новый документ Word и устанавливает DocumentBuilder, который мы будем использовать для вставки содержимого в наш документ.
+
+## Шаг 2. Прочтите свой объект Ole
+
+Далее давайте прочитаем файл, который вы хотите встроить. Думайте об этом как о поиске сокровища, которое вы хотите спрятать в своем секретном отделении:
 
 ```csharp
-byte[] bs = File.ReadAllBytes(MyDir + "Zip file.zip");
+byte[] bs = File.ReadAllBytes(dataDir + "Zip file.zip");
+```
+
+Эта строка считывает все байты из вашего ZIP-файла и сохраняет их в массиве байтов.
+
+## Шаг 3. Вставьте объект Ole
+
+Теперь наступает волшебная часть. Мы собираемся встроить файл в наш документ Word:
+
+```csharp
 using (Stream stream = new MemoryStream(bs))
 {
-     Shape shape = builder.InsertOleObject(stream, "Package", true, null);
-     OlePackage olePackage = shape.OleFormat.OlePackage;
-     olePackage.FileName = "filename.zip";
-     olePackage.DisplayName = "displayname.zip";
+    Shape shape = builder.InsertOleObject(stream, "Package", true, null);
+    OlePackage olePackage = shape.OleFormat.OlePackage;
+    olePackage.FileName = "filename.zip";
+    olePackage.DisplayName = "displayname.zip";
 }
 ```
 
-## Шаг 4. Сохраните документ.
- Используйте документ`Save` метод сохранения документа в файл.
+ Здесь мы создаем поток памяти из массива байтов и используем метод`InsertOleObject` метод для встраивания его в документ. Мы также задаем имя файла и отображаемое имя для внедренного объекта.
+
+## Шаг 4. Сохраните документ
+
+Наконец, сохраним наш шедевр:
 
 ```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
+doc.Save(dataDir + "WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
 ```
 
-### Пример исходного кода для вставки объекта OLE в пакет OLE с помощью Aspose.Words для .NET
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-byte[] bs = File.ReadAllBytes(MyDir + "Zip file.zip");
-using (Stream stream = new MemoryStream(bs))
-{
-     Shape shape = builder.InsertOleObject(stream, "Package", true, null);
-     OlePackage olePackage = shape.OleFormat.OlePackage;
-     olePackage.FileName = "filename.zip";
-     olePackage.DisplayName = "displayname.zip";
-}
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
-```
-
-Это полный пример кода для вставки объекта OLE в пакет OLE с помощью Aspose.Words для .NET. Обязательно импортируйте необходимые ссылки и выполните ранее описанные шаги, чтобы интегрировать этот код в свой проект.
+Это сохранит документ со встроенным файлом в указанном каталоге.
 
 ## Заключение
 
-В заключение мы рассмотрели пошаговое руководство по вставке объекта OLE в документ Word с помощью пакета OLE с использованием Aspose.Words для .NET.
+И вот оно! Вы успешно встроили объект OLE в документ Word с помощью Aspose.Words для .NET. Это похоже на добавление в документ скрытой жемчужины, которую можно открыть в любой момент. Этот метод может быть невероятно полезен для самых разных приложений: от технической документации до динамических отчетов. 
 
-Выполнив эти шаги, вы сможете успешно вставлять объекты OLE с пакетами OLE в свои документы Word с помощью Aspose.Words для .NET. Обязательно импортируйте необходимые ссылки и внимательно следуйте инструкциям, чтобы получить желаемые результаты.
+## Часто задаваемые вопросы
 
-### Часто задаваемые вопросы по вставке объекта ole в Word с помощью пакета ole
+### Могу ли я вставлять другие типы файлов, используя этот метод?
+Да, вы можете встраивать файлы различных типов, например листы Excel, PDF-файлы и изображения.
 
-#### Вопрос: Какие учетные данные мне нужно импортировать, чтобы использовать Aspose.Words for .NET?
+### Нужна ли мне лицензия для Aspose.Words?
+ Да, вам нужна действующая лицензия. Вы можете получить[временная лицензия](https://purchase.aspose.com/temporary-license/) для оценки.
 
-О: Чтобы использовать Aspose.Words для .NET, вам необходимо импортировать следующие ссылки:
+### Как настроить отображаемое имя объекта OLE?
+ Вы можете установить`DisplayName` собственность`OlePackage` чтобы настроить его.
 
-```csharp
-using Aspose.Words;
-using Aspose.Words.Drawing;
-using System.IO;
-```
+### Совместим ли Aspose.Words с .NET Core?
+Да, Aspose.Words поддерживает как .NET Framework, так и .NET Core.
 
-#### Вопрос: Как создать новый документ и генератор документов?
-
- О: Вы можете создать новый документ, используя`Document` класс и построитель документов с использованием`DocumentBuilder` класс, как показано ниже:
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-#### Вопрос: Как вставить в документ OLE-объект с OLE-пакетом?
-
- А: Используйте`InsertOleObject` метод конструктора документов (`DocumentBuilder`), чтобы вставить в документ объект OLE с пакетом OLE. Укажите поток данных, тип объекта, параметры отображения и другие необходимые настройки. Вот пример:
-
-```csharp
-byte[] bs = File.ReadAllBytes(MyDir + "File_zip.zip");
-using (Stream stream = new MemoryStream(bs))
-{
-      Shape shape = builder.InsertOleObject(stream, "Package", true, null);
-      OlePackage olePackage = shape.OleFormat.OlePackage;
-      olePackage.FileName = "file_name.zip";
-      olePackage.DisplayName = "display_name.zip";
-}
-```
-
-#### Вопрос: Как сохранить документ?
-
- A: Используйте документ`Save`метод сохранения документа в файл. Вот пример:
-
-```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
-```
-
-#### Вопрос: Можете ли вы предоставить полный пример вставки объекта OLE в пакет OLE с помощью Aspose.Words для .NET?
-
-О: Вот полный пример кода для вставки объекта OLE в пакет OLE с использованием Aspose.Words для .NET. Обязательно импортируйте необходимые ссылки и выполните ранее описанные шаги, чтобы интегрировать этот код в свой проект:
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-byte[] bs = File.ReadAllBytes(MyDir + "File_zip.zip");
-using (Stream stream = new MemoryStream(bs))
-{
-      Shape shape = builder.InsertOleObject(stream, "Package", true, null);
-      OlePackage olePackage = shape.OleFormat.OlePackage;
-      olePackage.FileName = "file_name.zip";
-      olePackage.DisplayName = "display_name.zip";
-}
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
-```
-
-На этом завершается наше руководство по вставке объекта OLE с пакетом OLE в документ Word с использованием Aspose.Words для .NET. Не стесняйтесь импортировать необходимые ссылки и следуйте описанным шагам, чтобы интегрировать этот код в ваш проект. Если у вас есть дополнительные вопросы, пожалуйста, не стесняйтесь обращаться к нам.
+### Могу ли я редактировать встроенный объект OLE в документе Word?
+Нет, вы не можете редактировать объект OLE непосредственно в Word. Вам нужно открыть его в родном приложении.

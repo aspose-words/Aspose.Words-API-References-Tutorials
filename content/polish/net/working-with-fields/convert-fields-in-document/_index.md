@@ -77,7 +77,7 @@ Gratulacje! Pomyślnie przekonwertowałeś pola w dokumencie Word przy użyciu A
 ## Często zadawane pytania
 
 ### Czy mogę konwertować inne typy pól za pomocą Aspose.Words dla .NET?
- Tak, Aspose.Words dla .NET umożliwia manipulowanie różnymi typami pól, nie tylko polami JEŻELI. Możesz zwiedzać[dokumentacja](https://reference.aspose.com/words/net/) po więcej szczegółów.
+ Tak, Aspose.Words dla .NET umożliwia manipulowanie różnymi typami pól, nie tylko polami JEŻELI. Możesz zwiedzać[dokumentacja](https://reference.aspose.com/words/net/) aby uzyskać więcej szczegółów.
 
 ### Co to są pola JEŻELI w dokumentach programu Word?
 Pola JEŻELI to pola warunkowe, w których wyświetlany jest tekst na podstawie określonych warunków. Często są używane do tworzenia dynamicznej zawartości w dokumentach Word.

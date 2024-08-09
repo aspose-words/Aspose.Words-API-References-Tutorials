@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Giải thích: Các`Document` đối tượng là canvas của bạn. Các`DocumentBuilder` giống như chiếc bút của bạn, nó cho phép bạn viết nội dung và tạo dấu trang trong tài liệu.
+ Giải thích: Các`Document` đối tượng là canvas của bạn. các`DocumentBuilder` giống như chiếc bút của bạn, nó cho phép bạn viết nội dung và tạo dấu trang trong tài liệu.
 
 ## Bước 2: Tạo dấu trang chính
 
@@ -68,7 +68,7 @@ builder.Writeln("Text inside a NestedBookmark.");
 builder.EndBookmark("Nested Bookmark");
 ```
 
- Giải thích: Dấu trang lồng nhau cho phép tổ chức nội dung có cấu trúc và phân cấp hơn. Các`EndBookmark` phương pháp đóng dấu trang hiện tại.
+ Giải thích: Dấu trang lồng nhau cho phép tổ chức nội dung có cấu trúc và phân cấp hơn. các`EndBookmark` phương pháp đóng dấu trang hiện tại.
 
 ## Bước 4: Thêm văn bản bên ngoài dấu trang lồng nhau
 
@@ -95,7 +95,7 @@ options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
 options.OutlineOptions.BookmarksOutlineLevels.Add("Nested Bookmark", 2);
 ```
 
- Giải thích: Các`PdfSaveOptions` lớp cho phép bạn chỉ định cách lưu tài liệu dưới dạng PDF. Các`BookmarksOutlineLevels` thuộc tính xác định thứ bậc của dấu trang trong PDF.
+ Giải thích: Các`PdfSaveOptions` lớp cho phép bạn chỉ định cách lưu tài liệu dưới dạng PDF. các`BookmarksOutlineLevels` thuộc tính xác định thứ bậc của dấu trang trong PDF.
 
 ## Bước 6: Lưu tài liệu
 

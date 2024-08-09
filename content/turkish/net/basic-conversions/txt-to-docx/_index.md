@@ -65,4 +65,4 @@ Evet, Aspose.Words çeşitli .NET çerçevelerini destekleyerek farklı ortamlar
 Evet, belge dönüştürme görevlerinizi kolaylaştırmak için Aspose.Words API'lerini kullanarak birden fazla metin dosyasını toplu olarak işleyebilirsiniz.
 
 ### Aspose.Words için daha fazla kaynağı ve desteği nerede bulabilirim?
- Ziyaret edin[Aspose.Words belgeleri](https://reference.aspose.com/words/net/)Ve[destek Forumu](https://forum.aspose.com/c/words/8) Daha fazla bilgi ve yardım için.
+ Ziyaret edin[Aspose.Words belgeleri](https://reference.aspose.com/words/net/)Ve[destek forumu](https://forum.aspose.com/c/words/8) Daha fazla bilgi ve yardım için.

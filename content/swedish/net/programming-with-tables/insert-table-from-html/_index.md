@@ -9,7 +9,7 @@ url: /sv/net/programming-with-tables/insert-table-from-html/
 ---
 ## Introduktion
 
-Någonsin behövt infoga en tabell från HTML i ett Word-dokument? Oavsett om du arbetar med ett projekt som kräver att webbinnehåll konverteras till ett Word-dokument eller om du helt enkelt försöker effektivisera ditt arbetsflöde, har Aspose.Words för .NET dig täckt. I den här handledningen går vi igenom hela processen för att infoga en tabell från HTML i ett Word-dokument med Aspose.Words för .NET. Vi täcker allt du behöver, från förutsättningarna till en detaljerad steg-för-steg-guide. Redo att dyka i? Låt oss börja!
+Någonsin behövt infoga en tabell från HTML i ett Word-dokument? Oavsett om du arbetar med ett projekt som kräver att webbinnehåll konverteras till ett Word-dokument eller om du helt enkelt försöker effektivisera ditt arbetsflöde, har Aspose.Words för .NET dig täckt. I den här handledningen går vi igenom hela processen för att infoga en tabell från HTML i ett Word-dokument med Aspose.Words för .NET. Vi täcker allt du behöver, från förutsättningarna till en detaljerad steg-för-steg-guide. Redo att dyka i? Låt oss komma igång!
 
 ## Förutsättningar
 
@@ -77,7 +77,7 @@ Slutligen, efter att du har infogat tabellen, måste du spara ditt dokument. Det
 doc.Save(dataDir + "WorkingWithTables.InsertTableFromHtml.docx");
 ```
 
-Och det är allt! Du har framgångsrikt infogat en tabell från HTML i ett Word-dokument med Aspose.Words för .NET.
+Och det är det! Du har framgångsrikt infogat en tabell från HTML i ett Word-dokument med Aspose.Words för .NET.
 
 ## Slutsats
 

@@ -10,7 +10,7 @@ url: /sv/net/join-and-append-documents/append-document/
 
 ## Introduktion
 
-Hallå där! Har du någonsin behövt kombinera två Word-dokument till ett och behålla den ursprungliga formateringen intakt? Oavsett om du sammanställer rapporter, skapar omfattande projektdokumentation eller bara försöker effektivisera din dokumenthantering, kan Aspose.Words för .NET göra ditt liv mycket enklare. I den här handledningen kommer vi att undersöka hur du lägger till ett Word-dokument till ett annat med Aspose.Words för .NET, och bryta ner varje steg i detalj. I slutet av den här guiden kommer du att slå samman dokument som ett proffs!
+Hej där! Har du någonsin behövt kombinera två Word-dokument till ett och behålla den ursprungliga formateringen intakt? Oavsett om du sammanställer rapporter, skapar omfattande projektdokumentation eller bara försöker effektivisera din dokumenthantering, kan Aspose.Words för .NET göra ditt liv mycket enklare. I den här handledningen kommer vi att undersöka hur du lägger till ett Word-dokument till ett annat med Aspose.Words för .NET, och bryta ner varje steg i detalj. I slutet av den här guiden kommer du att slå samman dokument som ett proffs!
 
 ## Förutsättningar
 
@@ -21,7 +21,7 @@ Innan vi dyker in i det nitty-gritty, låt oss se till att du har allt du behöv
 3. Visual Studio: Alla senaste versioner bör fungera, men den senaste versionen rekommenderas.
 4. .NET Framework: Se till att det är installerat på ditt system.
 
-Har du allt klart? Bra! Låt oss hoppa in.
+Har du allt klart? Stor! Låt oss hoppa in.
 
 ## Importera namnområden
 
@@ -42,7 +42,7 @@ Först måste vi ange katalogen där våra dokument lagras. Detta hjälper Aspos
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till dina dokument.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till dina dokument.
 
 ## Steg 2: Ladda käll- och måldokument
 
@@ -53,7 +53,7 @@ Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
- Här initierar vi två`Document` föremål.`srcDoc` representerar källdokumentet och`dstDoc` representerar måldokumentet.
+ Här initierar vi två`Document` föremål.`srcDoc` representerar källdokumentet, och`dstDoc` representerar måldokumentet.
 
 ## Steg 3: Bifoga källdokumentet till destinationsdokumentet
 

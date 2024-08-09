@@ -15,7 +15,7 @@ Haben Sie sich beim Konvertieren von Word-Dokumenten in HTML schon einmal im Net
 
 Bevor wir uns ins Detail stürzen, wollen wir erst einmal alles vorbereiten. Folgendes brauchen Sie für den Anfang:
 
-1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Bibliothek Aspose.Words für .NET haben. Wenn Sie sie noch nicht haben, können Sie[hier herunterladen](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Bibliothek Aspose.Words für .NET haben. Wenn Sie sie noch nicht haben, können Sie[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. .NET-Entwicklungsumgebung: Sie benötigen eine .NET-Entwicklungsumgebung auf Ihrem Computer. Visual Studio ist eine beliebte Wahl.
 3. Grundkenntnisse in C#: Grundkenntnisse der C#-Programmierung sind hilfreich.
 4. Ein Word-Dokument: Halten Sie ein Word-Dokument (.docx) bereit, das Sie konvertieren möchten.
@@ -83,10 +83,10 @@ Die Verwendung einer einzigen CSS-Datei vereinfacht die Verwaltung und Wartung I
  Ja, durch die Einstellung`SaveFontFaceCssSeparately` Zu`true`können Sie die CSS-Regeln für Schriftarten in eine andere Datei auslagern.
 
 ### Ist die Nutzung von Aspose.Words für .NET kostenlos?
- Aspose.Words bietet eine kostenlose Testversion an, die Sie[Hier herunterladen](https://releases.aspose.com/) . Für die weitere Nutzung sollten Sie den Kauf einer Lizenz in Erwägung ziehen[Hier](https://purchase.aspose.com/buy).
+ Aspose.Words bietet eine kostenlose Testversion an, die Sie[hier herunterladen](https://releases.aspose.com/) . Für die weitere Nutzung sollten Sie den Kauf einer Lizenz in Erwägung ziehen[Hier](https://purchase.aspose.com/buy).
 
 ### In welche anderen Formate kann Aspose.Words für .NET konvertieren?
 Aspose.Words für .NET unterstützt verschiedene Formate, darunter PDF, TXT und Bildformate wie JPEG und PNG.
 
 ### Wo finde ich weitere Ressourcen zu Aspose.Words für .NET?
- Besuche die[Dokumentation](https://reference.aspose.com/words/net/) für umfassende Anleitungen und API-Referenzen.
+ Schauen Sie sich die[Dokumentation](https://reference.aspose.com/words/net/) für umfassende Anleitungen und API-Referenzen.

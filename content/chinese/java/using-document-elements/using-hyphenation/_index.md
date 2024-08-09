@@ -50,7 +50,7 @@ Hyphenation.registerDictionary("de-CH", stream);
 doc.save(outPath + "WorkingWithHyphenation.LoadHyphenationDictionaryForLanguage.pdf");
 ```
 
-## 六，结论
+## 6. 结论
 
 连字对于保持文档的质量和美观起着至关重要的作用，尤其是在处理多语言内容时。Aspose.Words for Java 简化了应用连字规则的过程，以确保您的文档呈现最佳效果。
 
@@ -76,4 +76,4 @@ doc.save(outPath + "WorkingWithHyphenation.LoadHyphenationDictionaryForLanguage.
 
 ### 5. 如何访问 Aspose.Words for Java？
 
-要访问 Aspose.Words for Java，[点击这里](https://purchase.aspose.com/buy)在您的 Java 应用程序中体验文档处理的强大功能！
+要访问 Aspose.Words for Java，[点击这里](https://purchase.aspose.com/buy)体验 Java 应用程序中文档处理的强大功能！

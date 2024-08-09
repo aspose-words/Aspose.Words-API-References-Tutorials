@@ -40,7 +40,7 @@ Hãy chia nhỏ quy trình tạo bảng với các cài đặt chiều rộng ư
 
 Tiêu đề: Tạo một tài liệu mới và DocumentBuilder
 
- Giải thích: Bắt đầu bằng cách tạo một tài liệu Word mới và một`DocumentBuilder` ví dụ. Các`DocumentBuilder` class cung cấp một cách đơn giản để thêm nội dung vào tài liệu của bạn.
+ Giải thích: Bắt đầu bằng cách tạo một tài liệu Word mới và một`DocumentBuilder` ví dụ. các`DocumentBuilder` class cung cấp một cách đơn giản để thêm nội dung vào tài liệu của bạn.
 
 ```csharp
 // Xác định đường dẫn để lưu tài liệu.
@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Tại đây, bạn chỉ định thư mục nơi tài liệu sẽ được lưu và khởi tạo`Document`Và`DocumentBuilder` các đối tượng.
+ Tại đây, bạn chỉ định thư mục nơi tài liệu sẽ được lưu và khởi tạo`Document`Và`DocumentBuilder` đồ vật.
 
 ## Bước 2: Chèn ô bảng đầu tiên có chiều rộng tuyệt đối
 
@@ -68,7 +68,7 @@ builder.CellFormat.Shading.BackgroundPatternColor = Color.LightYellow;
 builder.Writeln("Cell at 40 points width");
 ```
 
-Ở bước này, bạn bắt đầu tạo bảng và chèn một ô có chiều rộng tuyệt đối. Các`PreferredWidth.FromPoints(40)` phương thức đặt chiều rộng của ô thành 40 điểm và`Shading.BackgroundPatternColor` áp dụng màu nền màu vàng nhạt.
+Ở bước này, bạn bắt đầu tạo bảng và chèn một ô có chiều rộng tuyệt đối. các`PreferredWidth.FromPoints(40)` phương thức đặt chiều rộng của ô thành 40 điểm và`Shading.BackgroundPatternColor` áp dụng màu nền màu vàng nhạt.
 
 ## Bước 3: Chèn một ô có kích thước tương đối
 
@@ -97,7 +97,7 @@ builder.Writeln("Cell automatically sized. The size of this cell is calculated f
 builder.Writeln("In this case the cell will fill up the rest of the available space.");
 ```
 
- Các`PreferredWidth.Auto` cài đặt cho phép ô này mở rộng hoặc co lại dựa trên khoảng trống còn lại sau khi các ô khác được chiếm. Điều này đảm bảo bố cục bàn trông cân bằng và chuyên nghiệp.
+ các`PreferredWidth.Auto` cài đặt cho phép ô này mở rộng hoặc co lại dựa trên khoảng trống còn lại sau khi các ô khác được chiếm. Điều này đảm bảo bố cục bàn trông cân bằng và chuyên nghiệp.
 
 ## Bước 5: Hoàn thiện và lưu tài liệu
 

@@ -94,7 +94,7 @@ private class DocumentLoadingWarningCallback : IWarningCallback
 警告コールバックを使用すると、ドキュメント処理中に発生する警告をキャッチして処理できるため、潜在的な問題に積極的に対処できます。
 
 ### 警告コールバック機能を設定するにはどうすればよいですか?
-設定する必要があります`LoadOptions`とともに`WarningCallback`プロパティを設定し、警告を処理するクラスを実装します。`IWarningCallback`インターフェース。
+設定する必要があります`LoadOptions`と`WarningCallback`プロパティを設定し、警告を処理するクラスを実装します。`IWarningCallback`インタフェース。
 
 ### 有効なライセンスがなくても警告コールバック機能を使用できますか?
 無料試用版でも使用できますが、完全な機能を使用するには、有効なライセンスを取得することをお勧めします。[一時ライセンスはこちら](https://purchase.aspose.com/temporary-license/).
@@ -103,4 +103,4 @@ private class DocumentLoadingWarningCallback : IWarningCallback
 警告には、サポートされていない機能、書式の不一致、その他のドキュメント固有の問題に関連する問題が含まれる場合があります。
 
 ### Aspose.Words for .NET の詳細情報はどこで入手できますか?
-参照するには[ドキュメンテーション](https://reference.aspose.com/words/net/)詳細な情報と例については、こちらをご覧ください。
+参照するには[ドキュメント](https://reference.aspose.com/words/net/)詳細な情報と例については、こちらをご覧ください。

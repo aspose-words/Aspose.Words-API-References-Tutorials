@@ -43,7 +43,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Adım 2: Yeni Bir Tablo Başlatın
 
- Daha sonra aşağıdaki komutu kullanarak yeni bir tablo başlatacağız:`DocumentBuilder`nesne. Sihir yapılan yer burasıdır.
+ Daha sonra aşağıdaki komutu kullanarak yeni bir tablo başlatacağız:`DocumentBuilder`nesne. Sihrin gerçekleştiği yer burasıdır.
 
 ```csharp
 Table table = builder.StartTable();
@@ -91,7 +91,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx"
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesindeki bir tabloya satır formatlamayı başarıyla uyguladınız. Bu basit ama güçlü teknik, belgelerinizin okunabilirliğini ve estetiğini büyük ölçüde artırabilir.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesindeki bir tabloya satır formatlamayı başarıyla uyguladınız. Bu basit ama güçlü teknik, belgelerinizin okunabilirliğini ve estetiğini büyük ölçüde artırabilir.
 
 ## SSS'ler
 

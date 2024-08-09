@@ -27,7 +27,7 @@ Nejprve musíme načíst dokument, který chceme uložit ve formátu HTML. Můž
 Document doc = new Document("Your Directory Path" + "YourDocument.docx");
 ```
 
- Nahradit`"YourDocument.docx"` s cestou k vašemu dokumentu aplikace Word.
+ Nahradit`"YourDocument.docx"` s cestou k dokumentu aplikace Word.
 
 ## Krok 2: Nakonfigurujte pevné možnosti uložení HTML
 
@@ -68,7 +68,7 @@ tomto tutoriálu jsme se naučili, jak uložit HTML dokumenty s pevným rozlože
 
 ### Jak mohu nastavit Aspose.Words pro Java ve svém projektu?
 
- Nastavení Aspose.Words pro Java je jednoduché. Knihovnu si můžete stáhnout z[tady](https://releases.aspose.com/words/java/) a postupujte podle pokynů k instalaci uvedených v dokumentaci[tady](https://reference.aspose.com/words/java/).
+ Nastavení Aspose.Words pro Java je jednoduché. Knihovnu si můžete stáhnout z[zde](https://releases.aspose.com/words/java/) a postupujte podle pokynů k instalaci uvedených v dokumentaci[zde](https://reference.aspose.com/words/java/).
 
 ### Existují nějaké licenční požadavky pro používání Aspose.Words for Java?
 
@@ -76,7 +76,7 @@ Ano, Aspose.Words for Java vyžaduje platnou licenci k použití v produkčním 
 
 ### Mohu dále upravit výstup HTML?
 
-Rozhodně! Aspose.Words for Java poskytuje širokou škálu možností pro přizpůsobení výstupu HTML tak, aby vyhovoval vašim specifickým požadavkům. Podrobné informace o možnostech přizpůsobení najdete v dokumentaci.
+Jistě! Aspose.Words for Java poskytuje širokou škálu možností pro přizpůsobení výstupu HTML tak, aby vyhovoval vašim specifickým požadavkům. Podrobné informace o možnostech přizpůsobení najdete v dokumentaci.
 
 ### Je Aspose.Words for Java kompatibilní s různými verzemi Java?
 

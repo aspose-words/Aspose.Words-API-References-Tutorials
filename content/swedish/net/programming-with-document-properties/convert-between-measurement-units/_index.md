@@ -9,7 +9,7 @@ url: /sv/net/programming-with-document-properties/convert-between-measurement-un
 ---
 ## Introduktion
 
-Hallå där! Är du en utvecklare som arbetar med Word-dokument med Aspose.Words för .NET? Om så är fallet kanske du ofta behöver ställa in marginaler, sidhuvuden eller sidfötter i olika måttenheter. Att konvertera mellan enheter som tum och poäng kan vara knepigt om du inte är bekant med bibliotekets funktioner. I den här omfattande handledningen guidar vi dig genom processen att konvertera mellan måttenheter med Aspose.Words för .NET. Låt oss dyka in och förenkla dessa omvandlingar!
+Hej där! Är du en utvecklare som arbetar med Word-dokument med Aspose.Words för .NET? Om så är fallet kanske du ofta behöver ställa in marginaler, sidhuvuden eller sidfötter i olika måttenheter. Att konvertera mellan enheter som tum och poäng kan vara knepigt om du inte är bekant med bibliotekets funktioner. I den här omfattande handledningen guidar vi dig genom processen att konvertera mellan måttenheter med Aspose.Words för .NET. Låt oss dyka in och förenkla dessa omvandlingar!
 
 ## Förutsättningar
 
@@ -93,10 +93,10 @@ Och där har du det! Du har framgångsrikt konverterat och ställt in marginaler
 Även om du kan använda Aspose.Words utan licens, kan vissa avancerade funktioner vara begränsade. Att erhålla en licens säkerställer full funktionalitet.
 
 ### Hur installerar jag Aspose.Words för .NET?
- Du kan ladda ner den från[hemsida](https://releases.aspose.com/words/net/) och följ installationsanvisningarna.
+ Du kan ladda ner den från[webbplats](https://releases.aspose.com/words/net/) och följ installationsanvisningarna.
 
 ### Kan jag ställa in olika enheter för olika delar av ett dokument?
  Ja, du kan anpassa marginaler och andra inställningar för olika sektioner med hjälp av`Section` klass.
 
 ### Vilka andra funktioner erbjuder Aspose.Words?
- Aspose.Words stöder ett brett utbud av funktioner, inklusive dokumentkonvertering, sammanslagning och omfattande formateringsalternativ. Kolla[dokumentation](https://reference.aspose.com/words/net/) för mer detaljer.
+ Aspose.Words stöder ett brett utbud av funktioner, inklusive dokumentkonvertering, sammanslagning och omfattande formateringsalternativ. Kontrollera[dokumentation](https://reference.aspose.com/words/net/) för mer information.

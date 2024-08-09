@@ -87,21 +87,21 @@ Bu kod satırı, belgeyi dışa aktarılan kaynaklarla birlikte HTML biçiminde 
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET kullanarak bir Word belgesini HTML olarak kaydederken kaynakları başarıyla dışa aktardınız. Bu güçlü kitaplık sayesinde Word belgelerinin programlı olarak işlenmesi çocuk oyuncağı haline gelir. İster bir web uygulaması üzerinde çalışıyor olun, ister yalnızca çevrimdışı kullanım için belgeleri dönüştürmeniz gerekiyor olsun, Aspose.Words size yardımcı olacaktır.
+Ve işte karşınızda! Aspose.Words for .NET kullanarak bir Word belgesini HTML olarak kaydederken kaynakları başarıyla dışa aktardınız. Bu güçlü kitaplık sayesinde Word belgelerinin programlı olarak işlenmesi çocuk oyuncağı haline gelir. İster bir web uygulaması üzerinde çalışıyor olun, ister yalnızca çevrimdışı kullanım için belgeleri dönüştürmeniz gerekiyor olsun, Aspose.Words size yardımcı olacaktır.
 
 ## SSS'ler
 
 ### Görselleri yazı tipleri ve CSS ile birlikte dışa aktarabilir miyim?
- Evet yapabilirsin! Aspose.Words for .NET görüntülerin dışa aktarılmasını da destekler. Sadece yapılandırdığınızdan emin olun.`HtmlSaveOptions` buna göre.
+ Evet, yapabilirsin! Aspose.Words for .NET görüntülerin dışa aktarılmasını da destekler. Sadece yapılandırdığınızdan emin olun.`HtmlSaveOptions` buna göre.
 
 ### Harici bir stil sayfası kullanmak yerine CSS'yi yerleştirmenin bir yolu var mı?
  Kesinlikle. Ayarlayabilirsiniz`CssStyleSheetType` ile`CssStyleSheetType.Embedded` gömülü stilleri tercih ediyorsanız.
 
 ### Çıktı HTML dosyasının adını nasıl özelleştirebilirim?
- İstediğiniz herhangi bir dosya adını belirtebilirsiniz.`doc.Save` yöntem. Örneğin,`doc.Save(dataDir + "CustomFileName.html", saveOptions);`.
+ İstediğiniz herhangi bir dosya adını belirtebilirsiniz.`doc.Save` Yöntem. Örneğin,`doc.Save(dataDir + "CustomFileName.html", saveOptions);`.
 
 ### Aspose.Words HTML dışında diğer formatları da destekliyor mu?
- Evet, PDF, DOCX, TXT ve daha fazlasını içeren çeşitli formatları destekler. Kontrol et[dokümantasyon](https://reference.aspose.com/words/net/) tam liste için.
+ Evet, PDF, DOCX, TXT ve daha fazlasını içeren çeşitli formatları destekler. Şuna göz atın:[dokümantasyon](https://reference.aspose.com/words/net/) tam liste için.
 
 ### Daha fazla desteği ve kaynağı nereden alabilirim?
 Daha fazla yardım için şu adresi ziyaret edin:[Aspose.Words Destek Forumu](https://forum.aspose.com/c/words/8) . Ayrıca ayrıntılı belgeleri ve örnekleri de şu adreste bulabilirsiniz:[Web sitesi](https://reference.aspose.com/words/net/).

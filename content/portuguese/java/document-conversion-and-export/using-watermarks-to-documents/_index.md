@@ -41,7 +41,7 @@ options.setSemitransparent(false);
 // Defina o texto e as opções da marca d'água
 doc.getWatermark().setText("Test", options);
 
-// Salve o documento com a marca d’água
+// Salve o documento com a marca d'água
 doc.save("DocumentWithWatermark.docx");
 ```
 
@@ -53,7 +53,7 @@ Além de marcas d'água de texto, você também pode adicionar marcas d'água de
 //Crie uma instância de documento
 Document doc = new Document("Document.docx");
 
-// Carregue a imagem para a marca d’água
+// Carregue a imagem para a marca d'água
 byte[] imageBytes = Files.readAllBytes(Paths.get("watermark.png"));
 Shape watermark = new Shape(doc, ShapeType.IMAGE);
 watermark.getImageData().setImage(imageBytes);
@@ -64,10 +64,10 @@ watermark.setHeight(100.0);
 watermark.setRelativeHorizontalPosition(RelativeHorizontalPosition.CENTER);
 watermark.setRelativeVerticalPosition(RelativeVerticalPosition.CENTER);
 
-// Adicione a marca d’água ao documento
+// Adicione a marca d'água ao documento
 doc.getFirstSection().getBody().getFirstParagraph().appendChild(watermark);
 
-// Salve o documento com a marca d’água
+// Salve o documento com a marca d'água
 doc.save("DocumentWithImageWatermark.docx");
 ```
 
@@ -83,7 +83,7 @@ Para remover marcas d'água de um documento, você pode usar o seguinte código:
 //Crie uma instância de documento
 Document doc = new Document("DocumentWithWatermark.docx");
 
-// Remova a marca d'água
+// Remova a marca d’água
 for (Shape shape : doc.getShapes())
 {
     if (shape.getName().contains("Watermark"))
@@ -115,14 +115,14 @@ options.setFontFamily("Times New Roman");
 
  Sim, você pode adicionar várias marcas d'água a um documento criando vários`Shape` objetos com configurações diferentes e adicioná-los ao documento.
 
-### É possível girar uma marca d’água?
+### É possível girar uma marca d'água?
 
  Sim, você pode girar uma marca d'água definindo o`setRotation` propriedade no`Shape` objeto. Os valores positivos giram a marca d'água no sentido horário e os valores negativos giram no sentido anti-horário.
 
-### Como posso tornar uma marca d’água semitransparente?
+### Como posso tornar uma marca d'água semitransparente?
 
  Para tornar uma marca d'água semitransparente, defina o`setSemitransparent`propriedade para`true` no`TextWatermarkOptions`.
 
-### Posso adicionar marcas d'água a seções específicas de um documento?
+### Posso adicionar marcas d’água a seções específicas de um documento?
 
 Sim, você pode adicionar marcas d'água a seções específicas de um documento iterando pelas seções e adicionando a marca d'água às seções desejadas.

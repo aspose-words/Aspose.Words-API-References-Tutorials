@@ -87,7 +87,7 @@ Sim, você pode repetir o processo para cada tabela que deseja atualizar.
 Eles ajudam a fornecer contexto, especialmente em documentos grandes com diversas tabelas.
 
 ### O Aspose.Words para .NET é gratuito?
- Não, mas você pode começar com um[teste grátis](https://releases.aspose.com/).
+ Não, mas você pode começar com um[teste gratuito](https://releases.aspose.com/).
 
 ### Posso personalizar outros aspectos da tabela usando Aspose.Words for .NET?
 Absolutamente! Você pode personalizar quase todos os aspectos de suas tabelas e documentos.

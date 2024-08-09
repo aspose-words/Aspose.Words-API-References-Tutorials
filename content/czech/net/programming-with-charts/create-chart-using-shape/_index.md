@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-charts/create-chart-using-shape/
 ---
-## Úvod
+## Zavedení
 
 Vytváření a přizpůsobení grafů ve vašich dokumentech je v dnešním světě založeném na datech klíčovou dovedností. Grafy mohou pomoci vizualizovat data, díky čemuž jsou složité informace lépe stravitelné. Aspose.Words for .NET je výkonná knihovna, která vám umožňuje programově vytvářet a manipulovat s dokumenty Wordu. V tomto tutoriálu vás provedeme procesem vytváření a přizpůsobení spojnicového grafu pomocí Aspose.Words for .NET. Na konci této příručky budete schopni snadno vytvářet profesionálně vypadající grafy.
 
@@ -15,7 +15,7 @@ Vytváření a přizpůsobení grafů ve vašich dokumentech je v dnešním svě
 
 Než se ponoříte do kódu, ujistěte se, že máte následující:
 
--  Aspose.Words for .NET Library: Můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET Library: Můžete si ji stáhnout[zde](https://releases.aspose.com/words/net/).
 - Visual Studio: Jakákoli verze, která podporuje .NET.
 - Základní znalost C#: Pochopení základů C# vám pomůže postupovat společně s výukovým programem.
 
@@ -86,20 +86,20 @@ V tomto tutoriálu jsme probrali, jak vytvořit a upravit spojnicový graf v dok
 
 ### Mohu použít Aspose.Words pro .NET k vytvoření jiných typů grafů?
 
- Ano, Aspose.Words for .NET podporuje různé typy grafů, včetně sloupcových grafů, koláčových grafů a dalších. Můžete prozkoumat dokumentaci[tady](https://reference.aspose.com/words/net/) Více podrobností.
+ Ano, Aspose.Words for .NET podporuje různé typy grafů, včetně sloupcových grafů, koláčových grafů a dalších. Můžete prozkoumat dokumentaci[zde](https://reference.aspose.com/words/net/) pro více podrobností.
 
 ### Jak mohu vyzkoušet Aspose.Words for .NET před nákupem?
 
- Můžete si stáhnout bezplatnou zkušební verzi z[tady](https://releases.aspose.com/). To vám umožní otestovat knihovnu a její funkce před nákupem.
+ Můžete si stáhnout bezplatnou zkušební verzi z[zde](https://releases.aspose.com/). To vám umožní otestovat knihovnu a její funkce před nákupem.
 
 ### Existuje způsob, jak získat podporu, pokud narazím na problémy?
 
- Absolutně. K podpoře můžete přistupovat prostřednictvím komunitních fór Aspose[tady](https://forum.aspose.com/c/words/8)Komunita a zaměstnanci Aspose jsou velmi pohotoví.
+ Absolutně. K podpoře můžete přistupovat prostřednictvím komunitních fór Aspose[zde](https://forum.aspose.com/c/words/8)Komunita a zaměstnanci Aspose jsou velmi pohotoví.
 
 ### Jak si koupím licenci pro Aspose.Words pro .NET?
 
- Licenci si můžete zakoupit přímo z webu Aspose[tady](https://purchase.aspose.com/buy). Existují různé možnosti licencování, které vyhovují různým potřebám.
+ Licenci si můžete zakoupit přímo z webu Aspose[zde](https://purchase.aspose.com/buy). Existují různé možnosti licencování, které vyhovují různým potřebám.
 
 ### Co když potřebuji dočasnou licenci pro krátkodobý projekt?
 
- Aspose nabízí dočasné licence, o které můžete požádat[tady](https://purchase.aspose.com/temporary-license/).
+ Aspose nabízí dočasné licence, o které můžete požádat[zde](https://purchase.aspose.com/temporary-license/).

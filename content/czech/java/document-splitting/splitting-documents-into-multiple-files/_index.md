@@ -16,7 +16,7 @@ Než se pustíme do technických detailů, je nezbytné pochopit, co je Aspose.W
 
 ## Nastavení vašeho prostředí
 
- Chcete-li začít, ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for Java. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/java/). Jakmile si jej stáhnete a nainstalujete, jste připraveni začít kódovat.
+ Chcete-li začít, ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for Java. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/java/). Jakmile si jej stáhnete a nainstalujete, jste připraveni začít kódovat.
 
 ## Krok 1: Vložte dokument
 
@@ -56,7 +56,7 @@ Tento kód uloží každou rozdělenou část s názvem souboru jako „split-pa
 Chcete-li rozdělit dokument podle klíčového slova, můžete procházet obsah dokumentu a hledat klíčové slovo. Když jej najdete, vytvořte nový dokument a přidejte obsah až do tohoto bodu.
 
 ### Mohu rozdělit dokument do souborů PDF?
-Ano můžeš. Po rozdělení dokumentu pomocí Aspose.Words for Java můžete použít Aspose.PDF for Java k uložení každé části jako souboru PDF.
+Ano, můžete. Po rozdělení dokumentu pomocí Aspose.Words for Java můžete použít Aspose.PDF for Java k uložení každé části jako souboru PDF.
 
 ### Je Aspose.Words for Java k použití zdarma?
 Aspose.Words for Java je komerční knihovna, ale nabízí bezplatnou zkušební verzi. Jejich ceny a licencování si můžete ověřit na jejich webových stránkách.

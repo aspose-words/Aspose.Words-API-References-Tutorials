@@ -17,7 +17,7 @@ Antes de sujarmos as mãos com algum código, há algumas coisas que você preci
 1.  Aspose.Words para .NET: você pode[baixe aqui](https://releases.aspose.com/words/net/).
 2. Ambiente de desenvolvimento: Visual Studio ou qualquer IDE C# de sua preferência.
 3. .NET Framework: certifique-se de tê-lo instalado.
-4.  Licença: Você pode começar com uma[teste grátis](https://releases.aspose.com/) ou obter um[licença temporária](https://purchase.aspose.com/temporary-license/) para recursos completos.
+4.  Licença: Você pode começar com uma[teste gratuito](https://releases.aspose.com/) ou obter um[licença temporária](https://purchase.aspose.com/temporary-license/) para recursos completos.
 
 Tem tudo? Ótimo! Vamos prosseguir com a configuração do nosso projeto.
 
@@ -91,7 +91,7 @@ aí está! Você acabou de aprender como criptografar um documento com uma senha
 ## Perguntas frequentes
 
 ### Posso usar um tipo diferente de criptografia?
- Sim, Aspose.Words for .NET oferece suporte a vários métodos de criptografia. Verifica a[documentação](https://reference.aspose.com/words/net/) para mais detalhes.
+ Sim, Aspose.Words for .NET oferece suporte a vários métodos de criptografia. Verifique o[documentação](https://reference.aspose.com/words/net/) para mais detalhes.
 
 ### E se eu esquecer a senha do meu documento?
 Infelizmente, se você esquecer a senha, não conseguirá acessar o documento. Certifique-se de manter suas senhas seguras!

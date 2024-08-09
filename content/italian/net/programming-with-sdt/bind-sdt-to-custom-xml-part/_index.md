@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-sdt/bind-sdt-to-custom-xml-part/
 ---
-## introduzione
+## Introduzione
 
 La creazione di documenti Word dinamici che interagiscono con dati XML personalizzati può migliorare significativamente la flessibilità e la funzionalità delle tue applicazioni. Aspose.Words per .NET fornisce funzionalità robuste per associare tag di documenti strutturati (SDT) a parti XML personalizzate, consentendo di creare documenti che visualizzano dinamicamente i dati. In questo tutorial ti guideremo passo dopo passo attraverso il processo di associazione di un SDT a una parte XML personalizzata. Immergiamoci!
 
@@ -100,7 +100,7 @@ Congratulazioni! Hai associato con successo un SDT a una parte XML personalizzat
 ### Cos'è un tag di documento strutturato (SDT)?
 Un tag di documento strutturato (SDT) è un elemento di controllo del contenuto nei documenti di Word che può essere utilizzato per associare dati dinamici, rendendo i documenti interattivi e basati sui dati.
 
-### Posso associare più SDT a diverse parti XML in un singolo documento?
+### Posso associare più SDT a diverse parti XML in un unico documento?
 Sì, puoi associare più SDT a diverse parti XML nello stesso documento, consentendo modelli complessi basati su dati.
 
 ### Come posso aggiornare i dati XML nella parte XML personalizzata?

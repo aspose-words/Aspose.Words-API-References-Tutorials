@@ -7,7 +7,7 @@ type: docs
 weight: 14
 url: /zh-hant/java/document-styling/document-header-footer-styling/
 ---
-您是否希望透過 Java 提升您的文件格式化技能？在這份綜合指南中，我們將引導您完成使用 Aspose.Words for Java 設定文件頁首和頁尾樣式的過程。無論您是經驗豐富的開發人員還是剛開始您的旅程，我們的逐步說明和原始程式碼範例都將幫助您掌握文件處理的這一重要方面。
+您是否希望透過 Java 提升您的文件格式化技能？在這份綜合指南中，我們將引導您完成使用 Aspose.Words for Java 設定文件頁首和頁尾樣式的過程。無論您是經驗豐富的開發人員還是剛開始您的旅程，我們的逐步說明和原始程式碼範例都將幫助您掌握文件處理的這一關鍵方面。
 
 
 ## 介紹

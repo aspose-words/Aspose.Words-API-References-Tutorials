@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/join-and-append-documents/unlink-headers-footers/
 ---
-## introduzione
+## Introduzione
 
 Nel mondo dell'elaborazione dei documenti, mantenere coerenti intestazioni e piè di pagina può talvolta rappresentare una sfida. Che tu stia unendo documenti o semplicemente cercando di avere intestazioni e piè di pagina diversi per sezioni diverse, sapere come scollegarli è essenziale. Oggi approfondiremo come ottenere questo risultato utilizzando Aspose.Words per .NET. Lo analizzeremo passo dopo passo in modo che tu possa seguirlo facilmente. Pronto a padroneggiare la manipolazione dei documenti? Iniziamo!
 
@@ -83,7 +83,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 
 ## Conclusione
 
-E il gioco è fatto! Seguendo questi passaggi, hai scollegato con successo le intestazioni e i piè di pagina nel documento di origine e li hai aggiunti al documento di destinazione utilizzando Aspose.Words per .NET. Questa tecnica può essere particolarmente utile quando lavori con documenti complessi che richiedono intestazioni e piè di pagina diversi per sezioni diverse. Buona programmazione!
+Ed ecco qua! Seguendo questi passaggi, hai scollegato con successo le intestazioni e i piè di pagina nel documento di origine e li hai aggiunti al documento di destinazione utilizzando Aspose.Words per .NET. Questa tecnica può essere particolarmente utile quando lavori con documenti complessi che richiedono intestazioni e piè di pagina diversi per sezioni diverse. Buona programmazione!
 
 ## Domande frequenti
 

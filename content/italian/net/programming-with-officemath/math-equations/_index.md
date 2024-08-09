@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-officemath/math-equations/
 ---
-## introduzione
+## Introduzione
 
 Pronto a tuffarti nel mondo delle equazioni matematiche nei documenti Word? Oggi esploreremo come utilizzare Aspose.Words per .NET per creare e configurare equazioni matematiche nei file Word. Che tu sia uno studente, un insegnante o semplicemente qualcuno che ama lavorare con le equazioni, questa guida ti guiderà attraverso ogni passaggio. Lo suddivideremo in sezioni facili da seguire, assicurandoti di comprendere ogni parte prima di proseguire. Iniziamo!
 
@@ -81,7 +81,7 @@ doc.Save(dataDir + "WorkingWithOfficeMath.MathEquations.docx");
 
 ## Conclusione
 
-E il gioco è fatto! Hai configurato con successo equazioni matematiche in un documento Word utilizzando Aspose.Words per .NET. Seguendo questi semplici passaggi è possibile personalizzare la visualizzazione e l'allineamento delle equazioni in base alle proprie esigenze. Che tu stia preparando un compito di matematica, scrivendo un documento di ricerca o creando materiale didattico, Aspose.Words per .NET semplifica il lavoro con le equazioni nei documenti Word.
+Ed ecco qua! Hai configurato con successo equazioni matematiche in un documento Word utilizzando Aspose.Words per .NET. Seguendo questi semplici passaggi è possibile personalizzare la visualizzazione e l'allineamento delle equazioni in base alle proprie esigenze. Che tu stia preparando un compito di matematica, scrivendo un documento di ricerca o creando materiale didattico, Aspose.Words per .NET semplifica il lavoro con le equazioni nei documenti Word.
 
 ## Domande frequenti
 

@@ -106,7 +106,7 @@ I masz to! Pomyślnie utworzyłeś sformatowaną tabelę w dokumencie programu W
  Wyrównanie tekstu można zmienić, ustawiając opcję`ParagraphFormat.Alignment` własność`DocumentBuilder` obiekt.
 
 ### Czy mogę scalić komórki w tabeli za pomocą Aspose.Words dla .NET?
- Tak, możesz łączyć komórki za pomocą`CellFormat.HorizontalMerge`I`CellFormat.VerticalMerge` nieruchomości.
+ Tak, możesz łączyć komórki za pomocą`CellFormat.HorizontalMerge`I`CellFormat.VerticalMerge` właściwości.
 
 ### Czy istnieje sposób na stylizację tabeli przy użyciu predefiniowanych stylów?
  Tak, Aspose.Words dla .NET umożliwia zastosowanie predefiniowanych stylów tabel za pomocą`Table.Style` nieruchomość.

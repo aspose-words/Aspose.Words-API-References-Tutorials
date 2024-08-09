@@ -80,7 +80,7 @@ Cette ligne enregistre le document avec la case à cocher nouvellement ajoutée 
 
 ## Conclusion
 
-Et voila! Vous avez ajouté avec succès un contrôle de contenu de type case à cocher à votre document Word à l’aide d’Aspose.Words pour .NET. Cette fonctionnalité peut être incroyablement utile pour créer des documents interactifs et conviviaux. Que vous créiez des formulaires, des enquêtes ou tout autre document nécessitant la saisie de l'utilisateur, les cases à cocher sont un excellent moyen d'améliorer la convivialité.
+Et voilà ! Vous avez ajouté avec succès un contrôle de contenu de type case à cocher à votre document Word à l’aide d’Aspose.Words pour .NET. Cette fonctionnalité peut être incroyablement utile pour créer des documents interactifs et conviviaux. Que vous créiez des formulaires, des enquêtes ou tout autre document nécessitant la saisie de l'utilisateur, les cases à cocher sont un excellent moyen d'améliorer la convivialité.
 
  Si vous avez des questions ou avez besoin d'aide supplémentaire, n'hésitez pas à consulter le[Documentation Aspose.Words](https://reference.aspose.com/words/net/) ou visitez le[Forum d'assistance Aspose](https://forum.aspose.com/c/words/8).
 
@@ -99,4 +99,4 @@ Oui, Aspose.Words prend en charge différents types de contrôles de contenu, no
  Oui, vous pouvez télécharger un essai gratuit à partir du[Site Aspose](https://releases.aspose.com/).
 
 ### Où puis-je obtenir de l'aide si je rencontre des problèmes ?
- Vous pouvez visiter le[Forum d'assistance Aspose](https://forum.aspose.com/c/words/8) à l'aide.
+ Vous pouvez visiter le[Forum d'assistance Aspose](https://forum.aspose.com/c/words/8) pour obtenir de l'aide.

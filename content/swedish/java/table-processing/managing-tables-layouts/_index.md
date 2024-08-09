@@ -107,7 +107,7 @@ table.getRows().get(0).getCells().get(0).getParagraphs().get(0).getRuns().get(0)
 Ja, du kan slå samman celler i en tabell med Aspose.Words, som visas i guiden.
 
 ### Vad händer om jag behöver dela tidigare sammanslagna celler?
- Inga problem! Du kan enkelt dela tidigare sammanslagna celler genom att ställa in deras horisontella sammanfogningsegenskap till`NONE`.
+ Inga bekymmer! Du kan enkelt dela tidigare sammanslagna celler genom att ställa in deras horisontella sammanfogningsegenskap till`NONE`.
 
 ### Hur kan jag lägga till en sidbrytning före en tabell?
  För att infoga en sidbrytning före en tabell, ändra teckensnittets`PageBreakBefore` egendom som visats.

@@ -42,7 +42,7 @@ using Aspose.Words.Saving;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하세요. 이곳은 모든 마법이 일어날 곳입니다!
+ 바꾸다`"YOUR DOCUMENT DIRECTORY"` 문서 디렉토리의 실제 경로를 사용하십시오. 이곳은 모든 마법이 일어날 곳입니다!
 
 ## 2단계: Word 문서 로드
 

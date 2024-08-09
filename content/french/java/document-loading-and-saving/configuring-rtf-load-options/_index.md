@@ -27,7 +27,7 @@ loadOptions.setRecognizeUtf8Text(true);
 
  Ici,`loadOptions` est un exemple de`RtfLoadOptions` , et nous avons utilisé le`setRecognizeUtf8Text` méthode pour activer la reconnaissance de texte UTF-8.
 
-## Étape 2 : chargement d'un document RTF
+## Étape 2 : Chargement d'un document RTF
 
 Maintenant que nous avons configuré nos options de chargement, nous pouvons charger un document RTF en utilisant les options spécifiées. Dans cet exemple, nous chargeons un document nommé « Caractères UTF-8.rtf » depuis un répertoire spécifique :
 
@@ -70,7 +70,7 @@ doc.save("Your Directory Path" + "WorkingWithRtfLoadOptions.RecognizeUtf8Text.rt
 
 ### Quelles autres options sont disponibles dans RtfLoadOptions ?
 
- RtfLoadOptions fournit diverses options pour configurer la manière dont les documents RTF sont chargés. Certaines des options couramment utilisées incluent`setPassword` pour les documents protégés par mot de passe et`setLoadFormat` pour spécifier le format lors du chargement des fichiers RTF.
+ RtfLoadOptions fournit diverses options pour configurer la façon dont les documents RTF sont chargés. Certaines des options couramment utilisées incluent`setPassword` pour les documents protégés par mot de passe et`setLoadFormat` pour spécifier le format lors du chargement des fichiers RTF.
 
 ### Puis-je modifier le document après l'avoir chargé avec ces options ?
 

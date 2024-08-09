@@ -15,7 +15,7 @@ Im Bereich der Dokumentenverarbeitung und -automatisierung ist Aspose.Words für
 
 Bevor Sie mit diesem Tutorial beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
-### Software Anforderungen
+### Softwareanforderungen
 
 1. Visual Studio: Auf Ihrem System installiert und konfiguriert.
 2.  Aspose.Words für .NET: Heruntergeladen und in Ihr Visual Studio-Projekt integriert. Sie können es herunterladen von[Hier](https://releases.aspose.com/words/net/).
@@ -100,4 +100,4 @@ Sie können Try-Catch-Blöcke verwenden, um Ausnahmen zu behandeln, die während
 Ja, die hier gezeigte Methode zielt gezielt nur auf Felder ab und lässt andere Inhalte unverändert.
 
 ### Wo finde ich weitere Ressourcen und Support für Aspose.Words?
- Besuche den[Aspose.Words für .NET API-Dokumentation](https://reference.aspose.com/words/net/) und das[Aspose.Words-Forum](https://forum.aspose.com/c/words/8) für weitere Hilfe.
+ Besuchen Sie die[Aspose.Words für .NET API-Dokumentation](https://reference.aspose.com/words/net/) und die[Aspose.Words-Forum](https://forum.aspose.com/c/words/8) für weitere Unterstützung.

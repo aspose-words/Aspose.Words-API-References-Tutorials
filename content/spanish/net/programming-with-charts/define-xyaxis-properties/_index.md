@@ -15,7 +15,7 @@ Los gráficos son una herramienta poderosa para visualizar datos. Cuando necesit
 
 Antes de sumergirse en la codificación, existen algunos requisitos previos que debe cumplir:
 
-1. Aspose.Words para .NET: asegúrese de tener la biblioteca Aspose.Words para .NET. Puede[descarguelo aqui](https://releases.aspose.com/words/net/).
+1. Aspose.Words para .NET: asegúrese de tener la biblioteca Aspose.Words para .NET. Puede[descárgalo aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: necesita un entorno de desarrollo integrado (IDE) como Visual Studio.
 3. .NET Framework: asegúrese de que su entorno de desarrollo esté configurado para el desarrollo .NET.
 4. Conocimientos básicos de C#: esta guía asume que tiene conocimientos básicos de programación en C#.

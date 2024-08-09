@@ -105,7 +105,7 @@ pageSetup.setHeaderFooter(HeaderFooterType.HEADER_PRIMARY, new Paragraph(doc, "H
 pageSetup.setHeaderFooter(HeaderFooterType.FOOTER_PRIMARY, new Paragraph(doc, "Footer Text"));
 ```
 
-### Encabezados y pies de pagina
+### Encabezados y pies de página
 
 Los encabezados y pies de página proporcionan información coherente en todas las páginas del documento. Puede agregar contenido diferente a los encabezados y pies de página principales, de la primera página y pares o impares.
 
@@ -198,7 +198,7 @@ doc.save("output.png", saveOptions);
 
 ### Representar elementos de documentos individuales
 
-Para un control más granular, puede representar elementos individuales del documento, como tablas o imágenes.
+Para un control más granular, puede representar elementos de documentos individuales, como tablas o imágenes.
 
 ```java
 // Representar una tabla específica

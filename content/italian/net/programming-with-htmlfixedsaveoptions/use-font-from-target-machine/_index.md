@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-htmlfixedsaveoptions/use-font-from-target-machine/
 ---
-## introduzione
+## Introduzione
 
 Sei pronto a tuffarti nell'affascinante mondo di Aspose.Words per .NET? Allacciate le cinture, perché stiamo per portarvi in un viaggio attraverso il magico regno dei caratteri. Oggi ci concentreremo su come utilizzare i caratteri dal computer di destinazione quando si lavora con documenti Word. Questa elegante funzionalità garantisce che il tuo documento abbia esattamente l'aspetto desiderato, indipendentemente da dove viene visualizzato. Iniziamo!
 
@@ -69,7 +69,7 @@ HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions
 
 ## Passaggio 3: salva il documento
 
-Infine, salviamo il documento come file HTML fisso. Qui è dove avviene la magia!
+Infine, salviamo il documento come file HTML fisso. È qui che avviene la magia!
 
  Utilizzeremo il`Save` metodo per salvare il documento con le opzioni di salvataggio configurate.
 
@@ -89,7 +89,7 @@ Passa alla directory in cui hai salvato il file HTML e aprilo in un browser web.
 System.Diagnostics.Process.Start(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html");
 ```
 
-E il gioco è fatto! Hai utilizzato con successo i caratteri dal computer di destinazione nel tuo documento Word utilizzando Aspose.Words per .NET.
+Ed ecco qua! Hai utilizzato con successo i caratteri dal computer di destinazione nel tuo documento Word utilizzando Aspose.Words per .NET.
 
 ## Conclusione
 
@@ -104,10 +104,10 @@ Sì, Aspose.Words per .NET supporta vari formati di documenti ed è possibile co
 Se il computer di destinazione non dispone dei caratteri richiesti, il documento potrebbe non essere visualizzato come previsto. È sempre una buona idea incorporare i caratteri quando necessario.
 
 ### Come incorporo i caratteri in un documento?
- L'incorporamento dei caratteri può essere effettuato utilizzando il file`FontSettings` classe in Aspose.Words per .NET. Fare riferimento al[documentazione](https://reference.aspose.com/words/net/) per ulteriori dettagli.
+ L'incorporamento dei caratteri può essere effettuato utilizzando il file`FontSettings` classe in Aspose.Words per .NET. Fare riferimento al[documentazione](https://reference.aspose.com/words/net/) per maggiori dettagli
 
 ### C'è un modo per visualizzare l'anteprima del documento prima di salvarlo?
- Sì, puoi usare il`DocumentRenderer` classe per visualizzare l'anteprima del documento prima di salvarlo. Dai un'occhiata ad Aspose.Words per .NET[documentazione](https://reference.aspose.com/words/net/) per maggiori informazioni.
+ Sì, puoi usare il`DocumentRenderer` classe per visualizzare l'anteprima del documento prima di salvarlo. Dai un'occhiata ad Aspose.Words per .NET[documentazione](https://reference.aspose.com/words/net/) per ulteriori informazioni
 
 ### Posso personalizzare ulteriormente l'output HTML?
- Assolutamente! IL`HtmlFixedSaveOptions` La classe fornisce varie proprietà per personalizzare l'output HTML. Esplorare la[documentazione](https://reference.aspose.com/words/net/) per tutte le opzioni disponibili.
+ Assolutamente! IL`HtmlFixedSaveOptions` La classe fornisce varie proprietà per personalizzare l'output HTML. Esplora il[documentazione](https://reference.aspose.com/words/net/) per tutte le opzioni disponibili.

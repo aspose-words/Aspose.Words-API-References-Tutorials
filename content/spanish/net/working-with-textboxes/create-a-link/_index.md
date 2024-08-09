@@ -15,7 +15,7 @@ url: /es/net/working-with-textboxes/create-a-link/
 
 Antes de sumergirnos en la magia de vincular cuadros de texto, asegurémonos de tener todos los elementos esenciales listos:
 
-1. Biblioteca Aspose.Words para .NET: necesitará la última versión de Aspose.Words para .NET. Puede[descarguelo aqui](https://releases.aspose.com/words/net/).
+1. Biblioteca Aspose.Words para .NET: necesitará la última versión de Aspose.Words para .NET. Puede[descárgalo aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: es necesario un entorno de desarrollo .NET, como Visual Studio, para escribir y probar su código.
 3. Conocimientos básicos de C#: una comprensión básica de C# le ayudará a seguir los ejemplos de código.
 4. Documento de Word de muestra: si bien no es estrictamente necesario para este tutorial, puede resultar útil tener un documento de Word de muestra para probar los cuadros de texto vinculados.
@@ -116,7 +116,7 @@ Esto guarda el documento con el nombre de archivo "LinkedTextBoxes.docx". ¡Ahor
 
 ¡Y ahí lo tienes! 🎉 Ha creado y vinculado con éxito cuadros de texto en un documento de Word utilizando Aspose.Words para .NET. Este tutorial lo guió a través de la configuración de su entorno, la creación y vinculación de cuadros de texto y el guardado de su documento. Con estas habilidades, puede mejorar sus documentos de Word con flujos de contenido dinámicos y hacer que sus documentos sean más interactivos y fáciles de usar.
 
- Para obtener información más detallada y funciones avanzadas, asegúrese de consultar el[Documentación de la API de Aspose.Words](https://reference.aspose.com/words/net/) Si tiene alguna pregunta o tiene algún problema, el[Foro de soporte](https://forum.aspose.com/c/words/8) es un gran recurso.
+ Para obtener información más detallada y funciones avanzadas, asegúrese de consultar el[Documentación de la API de Aspose.Words](https://reference.aspose.com/words/net/) Si tiene alguna pregunta o tiene algún problema, el[foro de soporte](https://forum.aspose.com/c/words/8) es un gran recurso.
 
 ¡Feliz codificación y que tus cuadros de texto siempre se vinculen perfectamente! 🚀
 

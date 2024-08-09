@@ -77,7 +77,7 @@ doc.Save(dataDir + "InsertSimpleColumnChart.docx");
 
 ## Következtetés
 
-Gratulálunk! Sikeresen megtanulta, hogyan illeszthet be egy egyszerű oszlopdiagramot egy Word-dokumentumba az Aspose.Words for .NET segítségével. Ha követi ezeket a lépéseket, immár dinamikus vizuális elemeket is integrálhat dokumentumaiba, ezáltal vonzóbbá és informatívabbá téve azokat.
+Gratulálok! Sikeresen megtanulta, hogyan illeszthet be egy egyszerű oszlopdiagramot egy Word-dokumentumba az Aspose.Words for .NET segítségével. Ha követi ezeket a lépéseket, immár dinamikus vizuális elemeket is integrálhat dokumentumaiba, ezáltal vonzóbbá és informatívabbá téve azokat.
 
 ## GYIK
 
@@ -94,4 +94,4 @@ Igen, zökkenőmentesen exportálhat diagramokat tartalmazó dokumentumokat kül
 Igen, az Aspose.Words for .NET lehetővé teszi a diagramok dinamikus feltöltését külső forrásokból, például adatbázisokból vagy API-kból származó adatokkal.
 
 ### Hol találok további forrásokat és támogatást az Aspose.Words for .NET-hez?
- Meglátogatni a[Aspose.Words a .NET-dokumentációhoz](https://reference.aspose.com/words/net/) részletes API-referenciákért és példákért. Támogatásért látogassa meg a[Aspose.Words Forum](https://forum.aspose.com/c/words/8).
+ Látogassa meg a[Aspose.Words a .NET-dokumentációhoz](https://reference.aspose.com/words/net/) részletes API-referenciákért és példákért. Támogatásért látogassa meg a[Aspose.Words Forum](https://forum.aspose.com/c/words/8).

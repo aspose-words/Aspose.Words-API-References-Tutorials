@@ -2,100 +2,102 @@
 title: Szerezzen be revíziós típusú szavakat
 linktitle: Szerezzen be revíziós típusú szavakat
 second_title: Aspose.Words Document Processing API
-description: Az Aspose.Words for .NET segítségével változatos szavakat kaphat Word-dokumentumban.
+description: Ismerje meg, hogyan szerezhet be revíziós típusú szavakat egy Word-dokumentumban az Aspose.Words for .NET használatával. Ez a lépésenkénti útmutató segít a dokumentum-revíziók hatékony kezelésében.
 type: docs
 weight: 10
 url: /hu/net/working-with-revisions/get-revision-types/
 ---
+## Bevezetés
 
-Ebben a lépésről lépésre bemutatjuk, hogyan szerezheti be a szavak típusait egy Word-dokumentumban az Aspose.Words for .NET használatával. Megadjuk Önnek a teljes forráskódot, és megmutatjuk, hogyan kell formázni a markdown kimenetet.
+Volt már valaha olyan, hogy térdig ér a dokumentum-revíziók tengerében, és azon töprengett, ki mit és mikor költözött? Nem vagy egyedül. A dokumentumok revízióinak kezelése fárasztó feladat lehet, különösen akkor, ha kiterjedt dokumentumokat kezel. De ne aggódj! Az Aspose.Words for .NET segítségével könnyen azonosíthatja és kezelheti ezeket a változatokat. Ebben az útmutatóban lépésről lépésre végigvezetjük Önt egy olyan folyamaton, amely során az Aspose.Words for .NET segítségével revíziós típusú szavakat kaphat egy Word-dokumentumban. Szóval, csatt, és merüljünk bele!
 
-## 1. lépés: A dokumentum betöltése
+## Előfeltételek
 
-Az első lépés a revíziókat tartalmazó dokumentum feltöltése.
+Mielőtt bepiszkítanánk a kezünket egy kóddal, néhány dologra szüksége lesz:
+
+1.  Aspose.Words for .NET Library: Ha még nem tette meg, töltse le innen[itt](https://releases.aspose.com/words/net/).
+2. Fejlesztői környezet: Visual Studio vagy bármely más .NET-kompatibilis IDE.
+3. Alapszintű C# ismerete: A C# programozási nyelv ismerete előnyt jelent.
+4.  Változatos Word-dokumentum: Győződjön meg arról, hogy rendelkezik a`.docx`nyomon követett módosításokat tartalmazó fájl a kód teszteléséhez.
+
+## Névterek importálása
+
+A kezdéshez importálnia kell a szükséges névtereket a C# projektbe. Ez lehetővé teszi az Aspose.Words for .NET által biztosított funkciók elérését.
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
+using Aspose.Words;
+using Aspose.Words.Revision;
+using System;
 ```
 
-## 2. lépés: Lépjen végig a bekezdéseken
+Bontsuk le a példát több lépésre a jobb megértés és megvalósítás érdekében.
 
-Ezután végigmegyünk a dokumentum bekezdésein, és ellenőrizzük az egyes bekezdésekhez kapcsolódó szóváltozatok típusait.
+## 1. lépés: Állítsa be a dokumentumkönyvtárat
+
+Először is meg kell határoznia a dokumentumkönyvtár elérési útját. Ez az a hely, ahol a Word-dokumentum a revíziókkal együtt található.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a dokumentummappa tényleges elérési útjával.
+
+## 2. lépés: Töltse be a Word-dokumentumot
+
+Ezután be kell töltenie a Word dokumentumot a projektbe. Ennek a dokumentumnak tartalmaznia kell az elemezni kívánt változatokat.
+
+```csharp
+Document doc = new Document(dataDir + "Revisions.docx");
+```
+
+ Győződjön meg arról, hogy a fájl`Revisions.docx` létezik a megadott könyvtárban.
+
+## 3. lépés: Nyissa meg a bekezdésgyűjteményt
+
+Most, hogy a dokumentum betöltődött, el kell érnie a dokumentumtörzs első szakaszában található bekezdéseket. Ez segít az egyes bekezdések iterációjában, hogy ellenőrizze a módosításokat.
 
 ```csharp
 ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
-for (int i = 0; i < paragraphs.Count; i++)
-{
-     if (paragraphs[i].IsMoveFromRevision)
-         Console.WriteLine("Paragraph {0} has been moved (deleted).", i);
-     if (paragraphs[i].IsMoveToRevision)
-         Console.WriteLine("Paragraph {0} has been moved (inserted).", i);
-}
 ```
 
-### Példa forráskód a Revision Types lekéréséhez az Aspose.Words for .NET használatával
+## 4. lépés: Ismételje meg a bekezdéseket, és ellenőrizze a módosításokat
 
-Íme a teljes forráskód, amellyel az Aspose.Words for .NET használatával lekérheti a revíziótípusokat egy dokumentumban:
+Itt történik a varázslat. Végig kell ismételni az egyes bekezdéseket, és ellenőrizni kell, hogy át lett-e helyezve (törölve vagy beszúrva).
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
-
-ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
 for (int i = 0; i < paragraphs.Count; i++)
 {
-	 if (paragraphs[i].IsMoveFromRevision)
-		 Console.WriteLine("Paragraph {0} has been moved (deleted).", i);
-	 if (paragraphs[i].IsMoveToRevision)
-		 Console.WriteLine("Paragraph {0} has been moved (inserted).", i);
+    if (paragraphs[i].IsMoveFromRevision)
+        Console.WriteLine("Paragraph {0} has been moved (deleted).", i);
+    if (paragraphs[i].IsMoveToRevision)
+        Console.WriteLine("Paragraph {0} has been moved (inserted).", i);
 }
 ```
+
+ Ez a ciklus végigmegy az egyes bekezdéseken, és a`IsMoveFromRevision`és`IsMoveToRevision` tulajdonságok annak meghatározására, hogy a bekezdést áthelyezték (törölték) vagy áthelyezték (beszúrták).
 
 ## Következtetés
 
-Ebben az oktatóanyagban megtudtuk, hogyan szerezheti be a szavak típusait egy Word-dokumentumban az Aspose.Words for .NET használatával. Követtük a lépéseket a dokumentum betöltéséhez, végigmegyünk a bekezdéseken, és ellenőriztük az egyes bekezdésekhez kapcsolódó szöveges ismertetők típusait. Mostantól ezt a tudást felhasználhatja saját Word-dokumentumaiban a szóelemzések elemzéséhez az Aspose.Words for .NET használatával.
+És megvan! Néhány sornyi kóddal könnyen azonosíthatja a Word-dokumentumban lévő változatok típusait az Aspose.Words for .NET segítségével. Ez a hatékony könyvtár megkönnyíti a dokumentumok revízióinak kezelését, és lehetővé teszi, hogy a fontosabb feladatokra összpontosítson. 
 
-### GYIK a szavak átdolgozásáról
+## GYIK
 
-#### K: Hogyan lehet dokumentumot feltölteni az Aspose.Words for .NET-be?
+### Használhatom az Aspose.Words for .NET-et bizonyos felhasználók módosításainak nyomon követésére?
 
- V: Használja a`Document` osztályú Aspose.Words .NET-hez a dokumentum fájlból való betöltéséhez. Megadhatja a teljes dokumentum elérési utat.
+Igen, az Aspose.Words for .NET olyan funkciókat biztosít, amelyek segítségével hozzáférhet a változat részleteihez, beleértve a módosítások szerzőjét is.
 
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
+### Létezik ingyenes próbaverzió az Aspose.Words for .NET számára?
 
-#### K: Hogyan léphetek végig a bekezdéseken egy dokumentumban az Aspose.Words for .NET programban?
+ Teljesen! Ingyenes próbaverziót kaphat[itt](https://releases.aspose.com/).
 
- V: Használja a`Paragraphs` a dokumentumrész tulajdonsága a bekezdések gyűjteményének lekéréséhez. Ezután egy ciklus segítségével végighaladhat az egyes bekezdéseken.
+### Hogyan kérhetek ideiglenes licencet az Aspose.Words for .NET számára?
 
-```csharp
-ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
-for (int i = 0; i < paragraphs.Count; i++)
-{
-     // Itt dolgozza fel az egyes bekezdéseket
-}
-```
+ Ideiglenes engedélyt kérhet és igényelhet[itt](https://purchase.aspose.com/temporary-license/).
 
-#### K: Hogyan ellenőrizhető, hogy egy bekezdés át lett-e helyezve (törölve) az Aspose.Words for .NET-ben?
+### Hol találhatok részletesebb dokumentációt az Aspose.Words for .NET-hez?
 
- V: Használjon bekezdést`IsMoveFromRevision`tulajdonság ellenőrzésére, hogy át lett-e helyezve (törölve).
+ A részletes dokumentáció elérhető a[Aspose honlapja](https://reference.aspose.com/words/net/).
 
-```csharp
-if (paragraph. IsMove
+### Használhatom az Aspose.Words for .NET-et nem kereskedelmi projektekben?
 
-FromRevision)
-{
-     // A bekezdés át lett helyezve (törölve)
-}
-```
-
-#### K: Hogyan ellenőrizhető, hogy egy bekezdés át lett-e helyezve (beszúrva) az Aspose.Words for .NET-ben?
-
- V: Használjon bekezdést`IsMoveToRevision` tulajdonság ellenőrzésére, hogy áthelyezték-e (beszúrták).
-
-```csharp
-if (paragraph.IsMoveToRevision)
-{
-     // A bekezdés át lett helyezve (beszúrva)
-}
-```
+Igen, az Aspose.Words for .NET használható kereskedelmi és nem kereskedelmi projektekben is, de feltétlenül ellenőrizze a licencfeltételeket.

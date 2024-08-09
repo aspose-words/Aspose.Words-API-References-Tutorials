@@ -9,7 +9,7 @@ url: /sv/net/join-and-append-documents/different-page-setup/
 ---
 ## Introduktion
 
-Hallå där! Redo att dyka in i den fascinerande världen av dokumentmanipulation med Aspose.Words för .NET? Idag tar vi oss an något ganska snyggt: att ställa in olika sidinställningar när vi kombinerar Word-dokument. Oavsett om du slår samman rapporter, skapar en roman eller bara pillar med dokument för skojs skull, kommer den här guiden att gå igenom det steg för steg. Låt oss börja!
+Hej där! Redo att dyka in i den fascinerande världen av dokumentmanipulation med Aspose.Words för .NET? Idag tar vi oss an något ganska snyggt: att ställa in olika sidinställningar när vi kombinerar Word-dokument. Oavsett om du slår samman rapporter, skapar en roman eller bara pillar med dokument för skojs skull, kommer den här guiden att gå igenom det steg för steg. Låt oss komma igång!
 
 ## Förutsättningar
 
@@ -92,7 +92,7 @@ srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orienta
 
 För att säkerställa smidigt flöde måste vi justera styckeformateringen i källdokumentet.
 
- Iterera igenom alla stycken i källdokumentet och ställ in`KeepWithNext` fast egendom.
+ Iterera igenom alla stycken i källdokumentet och ställ in`KeepWithNext` egendom.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -133,7 +133,7 @@ Du kan också matcha marginalinställningarna på samma sätt som vi matchade si
 Ja, Aspose.Words för .NET är helt kompatibelt med .NET Core.
 
 ### Kan jag bevara stilar från båda dokumenten?
- Ja den`ImportFormatMode.KeepSourceFormatting` alternativet säkerställer att stilar från källdokumentet bevaras.
+ Ja, den`ImportFormatMode.KeepSourceFormatting` alternativet säkerställer att stilar från källdokumentet bevaras.
 
 ### Var kan jag få mer hjälp med Aspose.Words?
  Kolla in[Aspose.Words dokumentation](https://reference.aspose.com/words/net/) eller besöka deras[supportforum](https://forum.aspose.com/c/words/8) för mer hjälp.

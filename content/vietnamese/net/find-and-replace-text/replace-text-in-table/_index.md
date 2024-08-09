@@ -45,7 +45,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 
 ## Bước 2: Truy cập bảng
 
- Tiếp theo, bạn cần truy cập vào bảng trong tài liệu. Các`GetChild` phương thức được sử dụng để lấy bảng đầu tiên từ tài liệu.
+ Tiếp theo, bạn cần truy cập vào bảng trong tài liệu. các`GetChild` phương thức được sử dụng để lấy bảng đầu tiên từ tài liệu.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
@@ -61,7 +61,7 @@ Mã này lấy bảng đầu tiên (chỉ số 0) từ tài liệu. Nếu tài l
 table.Range.Replace("Carrots", "Eggs", new FindReplaceOptions(FindReplaceDirection.Forward));
 ```
 
- Dòng mã này thay thế văn bản "Cà rốt" bằng "Trứng" trong toàn bộ phạm vi của bảng. Các`FindReplaceOptions` tham số xác định hướng tìm kiếm.
+ Dòng mã này thay thế văn bản "Cà rốt" bằng "Trứng" trong toàn bộ phạm vi của bảng. các`FindReplaceOptions` tham số xác định hướng tìm kiếm.
 
 ## Bước 4: Thay thế văn bản trong một ô cụ thể
 
@@ -85,7 +85,7 @@ Thao tác này sẽ lưu tài liệu đã cập nhật với các thay thế vă
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn vừa học cách thay thế văn bản trong bảng trong tài liệu Word bằng Aspose.Words cho .NET. Đây là một công cụ mạnh mẽ có thể giúp bạn tiết kiệm rất nhiều thời gian và công sức, đặc biệt khi xử lý các tài liệu lớn hoặc nhiều tệp. Hãy dùng thử và xem nó có thể hợp lý hóa các tác vụ xử lý tài liệu của bạn như thế nào. Chúc mừng mã hóa!
+Và bạn có nó! Bạn vừa học cách thay thế văn bản trong bảng trong tài liệu Word bằng Aspose.Words cho .NET. Đây là một công cụ mạnh mẽ có thể giúp bạn tiết kiệm rất nhiều thời gian và công sức, đặc biệt khi xử lý các tài liệu lớn hoặc nhiều tệp. Hãy dùng thử và xem nó có thể hợp lý hóa các tác vụ xử lý tài liệu của bạn như thế nào. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 
@@ -93,7 +93,7 @@ Và bạn có nó rồi đấy! Bạn vừa học cách thay thế văn bản tr
 Có, bạn có thể lặp qua tất cả các bảng trong tài liệu và áp dụng phương pháp thay thế cho từng bảng riêng lẻ.
 
 ### Làm cách nào để thay thế văn bản bằng định dạng?
- Bạn có thể dùng`FindReplaceOptions` để chỉ định các tùy chọn định dạng cho văn bản thay thế.
+ Bạn có thể sử dụng`FindReplaceOptions` để chỉ định các tùy chọn định dạng cho văn bản thay thế.
 
 ### Có thể thay thế văn bản chỉ trong các hàng hoặc cột cụ thể không?
  Có, bạn có thể nhắm mục tiêu các hàng hoặc cột cụ thể bằng cách truy cập chúng trực tiếp thông qua`Rows` hoặc`Cells` của cải.

@@ -9,7 +9,7 @@ url: /hu/net/document-protection/get-protection-type/
 ---
 ## Bevezetés
 
-Halihó! Gondolkozott már azon, hogyan ellenőrizheti programozottan a Word-dokumentumok védelmi típusát? Akár érzékeny adatokat szeretne megvédeni, akár csak a dokumentum állapotára kíváncsi, a védelem típusának megállapítása rendkívül hasznos lehet. Ma az Aspose.Words for .NET használatával járjuk végig a folyamatot, amely egy olyan hatékony könyvtár, amely gyerekjáték a Word-dokumentumokkal való munkavégzés során. Kapcsold be és merüljünk bele!
+Szia! Gondolkozott már azon, hogyan ellenőrizheti programozottan a Word-dokumentumok védelmi típusát? Akár érzékeny adatokat szeretne megvédeni, akár csak a dokumentum állapotára kíváncsi, a védelem típusának megállapítása rendkívül hasznos lehet. Ma az Aspose.Words for .NET használatával járjuk végig a folyamatot, amely egy olyan hatékony könyvtár, amely gyerekjáték a Word-dokumentumokkal való munkavégzés során. Kapcsold be és merüljünk bele!
 
 ## Előfeltételek
 
@@ -34,7 +34,7 @@ Bontsuk le a folyamatot egyszerű, könnyen követhető lépésekre. Minden lép
 
 ## 1. lépés: Állítsa be projektjét
 
-Először is állítsa be C#-projektjét a Visual Studióban. Itt van, hogyan:
+Először is állítsa be C#-projektjét a Visual Studióban. Íme, hogyan:
 
 1. Új projekt létrehozása: Nyissa meg a Visual Studio-t, lépjen a Fájl > Új > Projekt menüpontra, és válasszon ki egy konzolalkalmazást (.NET Core vagy .NET-keretrendszer).
 2. Az Aspose.Words telepítése: Kattintson jobb gombbal a projektjére a Solution Explorerben, válassza a „NuGet-csomagok kezelése” lehetőséget, keresse meg az „Aspose.Words” kifejezést, és telepítse.

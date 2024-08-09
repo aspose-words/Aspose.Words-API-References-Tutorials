@@ -18,7 +18,7 @@ Phông chữ đóng một vai trò quan trọng trong thiết kế tài liệu v
 
 Trước khi đi sâu vào mã, hãy đảm bảo bạn có sẵn các điều kiện tiên quyết sau:
 
-1.  Thư viện Aspose.Words for Java: Đảm bảo rằng bạn đã tải xuống và cài đặt thư viện Aspose.Words for Java. Bạn có thể[tải về tại đây](https://releases.aspose.com/words/java/).
+1.  Thư viện Aspose.Words for Java: Đảm bảo rằng bạn đã tải xuống và cài đặt thư viện Aspose.Words for Java. bạn có thể[tải nó ở đây](https://releases.aspose.com/words/java/).
 
 2. Môi trường phát triển Java: Đảm bảo bạn đã thiết lập môi trường phát triển Java.
 

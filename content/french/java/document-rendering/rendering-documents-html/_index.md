@@ -64,7 +64,7 @@ public class DocumentRenderer {
 }
 ```
 
-Ce code enregistrera votre document au format HTML. Vous pouvez personnaliser davantage la sortie HTML en ajustant le`HtmlSaveOptions` comme requis.
+Ce code enregistrera votre document au format HTML. Vous pouvez personnaliser davantage la sortie HTML en ajustant le`HtmlSaveOptions` au besoin.
 
 ## Étape 4 : Exécuter le code
 

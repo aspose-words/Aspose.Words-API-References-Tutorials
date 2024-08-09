@@ -20,7 +20,7 @@ Zanim zagłębimy się w kod, upewnijmy się, że mamy wszystko skonfigurowane. 
 3. Środowisko programistyczne: IDE takie jak Visual Studio ułatwi Ci życie.
 4. Podstawowa znajomość języka C#: Nie musisz być ekspertem, ale podstawowa znajomość będzie pomocna.
 
-Mam wszystko? Świetnie! Zacznijmy.
+Masz wszystko? Świetnie! Zacznijmy.
 
 ## Importuj przestrzenie nazw
 

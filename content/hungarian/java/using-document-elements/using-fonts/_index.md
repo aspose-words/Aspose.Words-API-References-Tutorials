@@ -18,7 +18,7 @@ betűtípusok döntő szerepet játszanak a dokumentumok tervezésében és olva
 
 Mielőtt belemerülne a kódba, győződjön meg arról, hogy a következő előfeltételek teljesülnek:
 
-1.  Aspose.Words for Java Library: Győződjön meg arról, hogy letöltötte és telepítette az Aspose.Words for Java könyvtárat. tudsz[töltse le itt](https://releases.aspose.com/words/java/).
+1.  Aspose.Words for Java Library: Győződjön meg arról, hogy letöltötte és telepítette az Aspose.Words for Java könyvtárat. Tudod[töltse le itt](https://releases.aspose.com/words/java/).
 
 2. Java fejlesztői környezet: Győződjön meg arról, hogy be van állítva Java fejlesztői környezet.
 
@@ -69,7 +69,7 @@ public class FontFormattingDemo {
 
 ## Következtetés
 
-Gratulálunk! Megtanulta, hogyan kell fontokkal dolgozni az Aspose.Words for Java programban. Ez a tudás lehetővé teszi, hogy gyönyörűen formázott dokumentumokat hozzon létre az Ön egyedi igényei szerint.
+Gratulálok! Megtanulta, hogyan kell fontokkal dolgozni az Aspose.Words for Java programban. Ez a tudás lehetővé teszi, hogy gyönyörűen formázott dokumentumokat hozzon létre az Ön egyedi igényei szerint.
 
  Ha még nem tetted meg,[töltse le az Aspose.Words for Java programot](https://releases.aspose.com/words/java/) most, és kezdje el javítani dokumentumfeldolgozási képességeit.
 

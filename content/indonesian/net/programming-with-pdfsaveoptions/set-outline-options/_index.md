@@ -38,7 +38,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Pada cuplikan kode di atas, ganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori dokumen Anda. Ini memberi tahu program di mana menemukan dokumen Word.
+ Pada cuplikan kode di atas, ganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke direktori dokumen Anda. Ini memberitahu program di mana menemukan dokumen Word.
 
 ## Langkah 2: Konfigurasikan Opsi Penyimpanan PDF
 
@@ -60,7 +60,7 @@ saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
 
 ### Tetapkan Tingkat Garis Besar yang Diperluas
 
- Itu`ExpandedOutlineLevels`properti mengontrol berapa banyak tingkat garis besar yang harus diperluas secara default saat PDF dibuka. Menyetelnya ke 1 akan memperluas judul tingkat atas, memberikan gambaran yang jelas tentang bagian utama.
+ Itu`ExpandedOutlineLevels`properti mengontrol berapa banyak tingkat garis besar yang harus diperluas secara default ketika PDF dibuka. Menyetelnya ke 1 akan memperluas judul tingkat atas, memberikan gambaran yang jelas tentang bagian utama.
 
 ```csharp
 saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;
@@ -68,7 +68,7 @@ saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;
 
 ## Langkah 3: Simpan Dokumen sebagai PDF
 
- Dengan opsi yang dikonfigurasi, Anda siap menyimpan dokumen sebagai PDF. Menggunakan`Save` metode`Document` kelas dan meneruskan jalur file dan menyimpan opsi.
+ Dengan opsi yang dikonfigurasi, Anda siap menyimpan dokumen sebagai PDF. Gunakan`Save` metode`Document` kelas dan meneruskan jalur file dan menyimpan opsi.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.SetOutlineOptions.pdf", saveOptions);

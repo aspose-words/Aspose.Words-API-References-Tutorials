@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-ranges/ranges-delete-text/
 ---
-## Úvod
+## Zavedení
 
 Pokud jste někdy zjistili, že potřebujete odstranit konkrétní části textu v dokumentu aplikace Word, jste na správném místě! Aspose.Words for .NET je výkonná knihovna, která vám umožňuje snadno manipulovat s dokumenty aplikace Word. V tomto kurzu vás provedeme kroky k odstranění textu z rozsahu v dokumentu aplikace Word. Tento proces rozdělíme do jednoduchých, stravitelných kroků, aby to bylo snadné jako facka. Takže, pojďme se ponořit!
 
@@ -15,7 +15,7 @@ Pokud jste někdy zjistili, že potřebujete odstranit konkrétní části textu
 
 Než se pustíme do části kódování, ujistěte se, že máte vše, co potřebujete, abyste mohli začít:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte knihovnu Aspose.Words for .NET. Pokud ne, můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte knihovnu Aspose.Words for .NET. Pokud ne, můžete si jej stáhnout[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: IDE jako Visual Studio.
 3. Základní znalost C#: Určité porozumění programování v C#.
 
@@ -79,7 +79,7 @@ doc.Save(dataDir + "WorkingWithRangesDeleteText.ModifiedDocument.docx");
 
 ## Závěr
 
-Gratulujeme! Právě jste se naučili, jak odstranit text z rozsahu v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento kurz se zabýval nastavením adresáře projektu, načtením dokumentu, odstraněním textu z konkrétní sekce a uložením upraveného dokumentu. Aspose.Words for .NET poskytuje robustní sadu nástrojů pro manipulaci s dokumenty Word, a to je jen špička ledovce.
+Gratuluji! Právě jste se naučili, jak odstranit text z rozsahu v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tento kurz se zabýval nastavením adresáře projektu, načtením dokumentu, odstraněním textu z konkrétní sekce a uložením upraveného dokumentu. Aspose.Words for .NET poskytuje robustní sadu nástrojů pro manipulaci s dokumenty Word, a to je jen špička ledovce.
 
 ## FAQ
 

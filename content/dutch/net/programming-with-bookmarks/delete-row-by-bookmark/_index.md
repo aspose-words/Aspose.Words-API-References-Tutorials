@@ -62,7 +62,7 @@ Nu u de rij heeft geïdentificeerd, kunt u doorgaan met het verwijderen ervan ui
 row?.Remove();
 ```
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Nadat u de rij hebt verwijderd, slaat u het document op om de wijzigingen weer te geven. Hiermee wordt het proces van het verwijderen van een rij per bladwijzer voltooid.
 

@@ -17,9 +17,9 @@ Voordat we beginnen, zorg ervoor dat u over het volgende beschikt:
 
 1. Visual Studio: Installeer Visual Studio 2019 of hoger.
 2. .NET Framework: Zorg ervoor dat u .NET Framework 4.0 of hoger hebt.
-3.  Aspose.Words voor .NET: Download en installeer Aspose.Words voor .NET vanaf de[download link](https://releases.aspose.com/words/net/).
+3.  Aspose.Words voor .NET: Download en installeer Aspose.Words voor .NET vanaf de[downloadlink](https://releases.aspose.com/words/net/).
 4. Basiskennis van C#: Bekendheid met programmeren in C# is essentieel.
-5.  Een geldige licentie: verkrijg een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/) of koop er een bij de[koop link](https://purchase.aspose.com/buy).
+5.  Een geldige licentie: verkrijg een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/) of koop er een bij de[koop linkje](https://purchase.aspose.com/buy).
 
 ## Naamruimten importeren
 
@@ -101,7 +101,7 @@ labels.Separator = "/";
 - labels.ShowValue: Geeft de waarde van de gegevenspunten weer.
 - labels.Separator: Stelt het scheidingsteken voor de gegevenslabels in.
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Sla het document ten slotte op in de opgegeven map.
 
@@ -123,7 +123,7 @@ doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 Aspose.Words voor .NET is een krachtige bibliotheek voor documentverwerking waarmee ontwikkelaars Word-documenten programmatisch kunnen maken, wijzigen en converteren.
 
 ### Hoe installeer ik Aspose.Words voor .NET?
- Je kunt het downloaden en installeren vanaf de[download link](https://releases.aspose.com/words/net/). Volg de meegeleverde installatie-instructies.
+ Je kunt het downloaden en installeren vanaf de[downloadlink](https://releases.aspose.com/words/net/). Volg de meegeleverde installatie-instructies.
 
 ### Kan ik Aspose.Words voor .NET gratis uitproberen?
  Ja, je kunt een[gratis proefperiode](https://releases.aspose.com/) of een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/)om het product te beoordelen.
@@ -132,4 +132,4 @@ Aspose.Words voor .NET is een krachtige bibliotheek voor documentverwerking waar
 Ja, Aspose.Words voor .NET is compatibel met .NET Core, .NET Standard en .NET Framework.
 
 ### Waar kan ik ondersteuning krijgen voor Aspose.Words voor .NET?
- U kunt een bezoek brengen aan de[Helpforum](https://forum.aspose.com/c/words/8) voor hulp en assistentie van de Aspose-gemeenschap en experts.
+ U kunt een bezoek brengen aan de[ondersteuningsforum](https://forum.aspose.com/c/words/8) voor hulp en assistentie van de Aspose-gemeenschap en experts.

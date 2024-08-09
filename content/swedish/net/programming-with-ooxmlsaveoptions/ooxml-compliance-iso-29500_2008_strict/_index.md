@@ -40,7 +40,7 @@ Innan vi kan börja arbeta med dokumentet måste vi ange sökvägen till din dok
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Förklaring: Denna kodrad ställer in en strängvariabel`dataDir` som innehåller sökvägen till katalogen där dina dokument lagras. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen på ditt system.
+ Förklaring: Denna kodrad ställer in en strängvariabel`dataDir` som innehåller sökvägen till katalogen där dina dokument lagras. Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen på ditt system.
 
 ## Steg 2: Ladda ditt Word-dokument
 

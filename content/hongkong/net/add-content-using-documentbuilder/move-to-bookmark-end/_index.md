@@ -124,13 +124,13 @@ doc.Save(dataDir + "UpdatedBookmarks.docx");
 
 ## 結論
 
-你有它！您剛剛學習如何使用 Aspose.Words for .NET 移至 Word 文件中書籤的末尾。這項強大的功能可以節省您大量的時間和精力，讓您的文件處理任務更有效率。請記住，熟能生巧。因此，不斷嘗試不同的書籤和文件結構來掌握這項技能。
+給你了！您剛剛學習如何使用 Aspose.Words for .NET 移至 Word 文件中書籤的末尾。這項強大的功能可以節省您大量的時間和精力，讓您的文件處理任務更有效率。請記住，熟能生巧。因此，不斷嘗試不同的書籤和文件結構來掌握這項技能。
 
 ## 常見問題解答
 
 ### 1. 我可以移至書籤的開頭而不是結尾嗎？
 
-絕對地！只需設定`isBookmarkStart`參數為`true`和`isBookmarkEnd`到`false`在裡面`MoveToBookmark`方法。
+絕對地！只需設定`isBookmarkStart`參數為`true`和`isBookmarkEnd`到`false`在`MoveToBookmark`方法。
 
 ### 2. 如果我的書籤名不正確怎麼辦？
 
@@ -138,7 +138,7 @@ doc.Save(dataDir + "UpdatedBookmarks.docx");
 
 ### 3. 我可以在書籤末尾插入其他類型的內容嗎？
 
-是的，DocumentBuilder 允許您插入各種內容類型，例如表格、圖像等。檢查[文件](https://reference.aspose.com/words/net/)更多細節。
+是的，DocumentBuilder 允許您插入各種內容類型，例如表格、圖像等。檢查[文件](https://reference.aspose.com/words/net/)了解更多詳情。
 
 ### 4. 如何取得 Aspose.Words 的臨時授權？
 

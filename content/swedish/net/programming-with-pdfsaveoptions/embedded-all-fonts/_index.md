@@ -9,7 +9,7 @@ url: /sv/net/programming-with-pdfsaveoptions/embedded-all-fonts/
 ---
 ## Introduktion
 
-Hej där, teknikentusiaster! Har du någonsin hamnat i en knipa när du försöker bädda in teckensnitt i ett PDF-dokument med Aspose.Words för .NET? Tja, du är på rätt plats! I den här självstudien dyker vi djupt in i det finurliga med att bädda in typsnitt i dina PDF-filer. Oavsett om du är en nybörjare eller ett erfaret proffs, kommer den här guiden att leda dig genom varje steg på ett enkelt, engagerande sätt. I slutet kommer du att vara en succé på att se till att dina PDF-filer behåller sitt avsedda utseende och känsla, oavsett var de visas. Så låt oss börja, ska vi?
+Hej där, teknikentusiaster! Har du någonsin hamnat i en knipa när du försöker bädda in teckensnitt i ett PDF-dokument med Aspose.Words för .NET? Nåväl, du är på rätt plats! I den här självstudien dyker vi djupt in i det finurliga med att bädda in typsnitt i dina PDF-filer. Oavsett om du är en nybörjare eller ett erfaret proffs, kommer den här guiden att leda dig genom varje steg på ett enkelt, engagerande sätt. I slutet kommer du att vara en succé på att se till att dina PDF-filer behåller sitt avsedda utseende och känsla, oavsett var de visas. Så låt oss börja, ska vi?
 
 ## Förutsättningar
 
@@ -42,7 +42,7 @@ Innan du dyker in i koden måste du konfigurera din dokumentkatalog. Det är hä
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog. Det är här all magi kommer att hända!
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till din dokumentkatalog. Det är här all magi kommer att hända!
 
 ## Steg 2: Ladda ditt Word-dokument
 
@@ -84,7 +84,7 @@ Och där har du det! Du har framgångsrikt bäddat in teckensnitt i ett PDF-doku
 Inbäddning av typsnitt ser till att ditt dokument visas likadant på alla enheter, oavsett vilka typsnitt som är installerade på tittarens system.
 
 ### Kan jag välja specifika typsnitt att bädda in?
- Ja, du kan anpassa vilka typsnitt som ska bäddas in med olika`PdfSaveOptions` egenskaper.
+ Ja, du kan anpassa vilka typsnitt som ska bäddas in med olika`PdfSaveOptions` fastigheter.
 
 ### Ökar inbäddade teckensnitt filstorleken?
 Ja, inbäddade teckensnitt kan öka PDF-filens storlek, men det säkerställer ett konsekvent utseende på olika enheter.

@@ -17,7 +17,7 @@ Al embarcarse en su viaje para utilizar Aspose.Words para Java, el primer paso e
 
 2. Obtenga el archivo de licencia: después de la compra, recibirá un archivo de licencia. Este archivo es crucial para configurar Aspose.Words en su proyecto Java.
 
-3.  Integre la licencia: para habilitar Aspose.Words, integre la licencia en su aplicación Java. Normalmente, esto implica cargar el archivo de licencia y aplicarlo a Aspose.Words. Referirse a[Documentación API](https://reference.aspose.com/words/java/) para obtener ejemplos de código detallados.
+3.  Integre la licencia: para habilitar Aspose.Words, integre la licencia en su aplicación Java. Normalmente, esto implica cargar el archivo de licencia y aplicarlo a Aspose.Words. Consulte el[Documentación API](https://reference.aspose.com/words/java/) para obtener ejemplos de código detallados.
 
 ## Ajustes de configuración
 

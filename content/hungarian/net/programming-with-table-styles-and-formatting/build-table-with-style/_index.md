@@ -30,7 +30,7 @@ using Aspose.Words.Tables;
 
 ## 1. lépés: Hozzon létre egy új dokumentumot és DocumentBuildert
 
- Először is létre kell hoznia egy új dokumentumot, és a`DocumentBuilder` tárgy. Ez`DocumentBuilder` segít a táblázat összeállításában a dokumentumban.
+ Először is létre kell hoznia egy új dokumentumot, és a`DocumentBuilder` objektum. Ez`DocumentBuilder` segít a táblázat összeállításában a dokumentumban.
 
 ```csharp
 // A dokumentumkönyvtár elérési útja

@@ -39,7 +39,7 @@ using Aspose.Words.Loading;
 まず最初に、プロジェクトが正しく設定されていることを確認してください。
 
 1. 新しいプロジェクトを作成する - Visual Studio を開き、新しいコンソール アプリケーション プロジェクトを作成します。
-2. Aspose.Words for .NET の追加 - パッケージ マネージャー コンソールで次のコマンドを実行して、NuGet パッケージ マネージャー経由で Aspose.Words をインストールします。
+2. Aspose.Words for .NET を追加します - パッケージ マネージャー コンソールで次のコマンドを実行して、NuGet パッケージ マネージャー経由で Aspose.Words をインストールします。
 
 ```shell
 Install-Package Aspose.Words
@@ -82,7 +82,7 @@ Document doc = new Document(dataDir + "WMF with image.docx", loadOptions);
 ## よくある質問
 
 ### メタファイル以外のファイルタイプを PNG に変換できますか?
- Aspose.Words for .NETは、さまざまなファイル形式を幅広くサポートしています。[ドキュメンテーション](https://reference.aspose.com/words/net/)詳細については。
+ Aspose.Words for .NETは、さまざまなファイル形式を幅広くサポートしています。[ドキュメント](https://reference.aspose.com/words/net/)詳細についてはこちらをご覧ください。
 
 ### 複数のドキュメントを一括処理する方法はありますか?
 はい、ドキュメントのディレクトリをループし、各ファイルに同じ読み込みオプションを適用できます。
@@ -94,4 +94,4 @@ Document doc = new Document(dataDir + "WMF with image.docx", loadOptions);
 はい、フル機能を使用するにはライセンスが必要です。[一時ライセンス](https://purchase.aspose.com/temporary-license/)試験目的のため。
 
 ### この方法は JPEG や GIF などの他のグラフィック形式にも使用できますか?
-この特定の方法はメタファイル用ですが、Aspose.Words for .NETはさまざまな画像形式をサポートしています。[ドキュメンテーション](https://reference.aspose.com/words/net/)詳細については。
+この特定の方法はメタファイル用ですが、Aspose.Words for .NETはさまざまな画像形式をサポートしています。[ドキュメント](https://reference.aspose.com/words/net/)詳細についてはこちらをご覧ください。

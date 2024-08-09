@@ -2,7 +2,7 @@
 title: Gestión de secciones y diseño de documentos
 linktitle: Gestión de secciones y diseño de documentos
 second_title: API de gestión de documentos Aspose.Words Python
-description: Aprenda a administrar secciones y diseños de documentos con Aspose.Words para Python. Cree, modifique secciones, personalice diseños y más. ¡Empieza ahora!
+description: Aprenda a administrar secciones y diseños de documentos con Aspose.Words para Python. Cree, modifique secciones, personalice diseños y más. ¡Empiece ahora!
 type: docs
 weight: 24
 url: /es/python-net/document-structure-and-content-manipulation/document-sections/

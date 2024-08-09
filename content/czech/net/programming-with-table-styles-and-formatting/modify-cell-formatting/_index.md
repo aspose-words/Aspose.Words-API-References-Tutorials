@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-table-styles-and-formatting/modify-cell-formatting/
 ---
-## Úvod
+## Zavedení
 
 Pokud jste se někdy přistihli, že se potýkáte s dokumenty Wordu a snažíte se nastavit správné formátování buněk, máte se na co těšit. V tomto tutoriálu si projdeme kroky k úpravě formátování buněk v dokumentech aplikace Word pomocí Aspose.Words for .NET. Od úpravy šířky buňky až po změnu orientace textu a stínování, máme vše pokryto. Pojďme se tedy ponořit a udělejte ze své úpravy dokumentů hračku!
 
@@ -15,7 +15,7 @@ Pokud jste se někdy přistihli, že se potýkáte s dokumenty Wordu a snažíte
 
 Než začneme, ujistěte se, že máte následující:
 
-1. Aspose.Words for .NET - Můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET - Můžete si ji stáhnout[zde](https://releases.aspose.com/words/net/).
 2. Visual Studio – nebo jakékoli jiné IDE dle vašeho výběru.
 3. Základní znalost C# - To vám pomůže sledovat spolu s příklady kódu.
 4.  Dokument aplikace Word – konkrétně takový, který obsahuje tabulku. Budeme používat soubor s názvem`Tables.docx`.
@@ -114,4 +114,4 @@ Absolutně! Stačí přistupovat ke každé buňce samostatně a nastavit její 
 Aspose.Words for .NET je navržen pro jazyky .NET, jako je C#, ale existují i verze pro jiné platformy.
 
 ### Kde najdu podrobnější dokumentaci?
- Kompletní dokumentaci naleznete[tady](https://reference.aspose.com/words/net/).
+ Kompletní dokumentaci naleznete[zde](https://reference.aspose.com/words/net/).

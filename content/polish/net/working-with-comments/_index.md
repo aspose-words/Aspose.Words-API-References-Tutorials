@@ -13,7 +13,7 @@ W tych samouczkach poznasz różne aspekty przetwarzania tekstu z komentarzami w
  ## Poradniki
 | Tytuł | Opis |
 | --- | --- |
-| [Dodaj Komentarze](./add-comments/) | Dowiedz się, jak dodawać komentarze do dokumentów programu Word za pomocą Aspose.Words dla .NET, korzystając z naszego przewodnika. Ulepsz proces współpracy nad dokumentami bez wysiłku. |
+| [Dodaj komentarze](./add-comments/) | Dowiedz się, jak dodawać komentarze do dokumentów programu Word za pomocą Aspose.Words dla .NET, korzystając z naszego przewodnika. Ulepsz proces współpracy nad dokumentami bez wysiłku. |
 | [Komentarz kotwicy](./anchor-comment/) | Dowiedz się, jak dodawać komentarze zakotwiczone w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby efektywnie współpracować nad dokumentami. |
 | [Dodaj Usuń komentarz Odpowiedź](./add-remove-comment-reply/) | Dowiedz się, jak dodawać i usuwać odpowiedzi na komentarze w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Usprawnij współpracę nad dokumentami dzięki temu przewodnikowi krok po kroku. |
 | [Komentarz rozwiązany i odpowiedzi](./comment-resolved-and-replies/) | Automatyzuj rozwiązywanie i odpowiadanie na komentarze w dokumentach Word za pomocą Aspose.Words dla .NET. W zestawie instrukcja krok po kroku. |

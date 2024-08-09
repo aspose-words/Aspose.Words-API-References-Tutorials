@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/add-content-using-documentbuilder/insert-floating-image/
 ---
-## Úvod
+## Zavedení
 
 Představte si, že vytvoříte ohromující zprávu nebo návrh, kde jsou obrázky dokonale umístěny tak, aby doplňovaly váš text. S Aspose.Words pro .NET toho můžete dosáhnout bez námahy. Tato knihovna poskytuje výkonné funkce pro manipulaci s dokumenty, což z ní činí řešení pro vývojáře. V tomto tutoriálu se zaměříme na vložení plovoucího obrázku pomocí třídy DocumentBuilder. Ať už jste zkušený vývojář nebo teprve začínáte, tento průvodce vás provede každým krokem.
 
@@ -134,7 +134,7 @@ Vložení plovoucího obrázku do dokumentu aplikace Word pomocí Aspose.Words f
 
 ### Jaké další typy obtékání jsou k dispozici pro obrázky?
 
- Aspose.Words podporuje různé typy zalamování jako např`Inline`, `TopBottom`, `Tight`, `Through`, a více. Můžete si vybrat ten, který nejlépe odpovídá rozvržení vašeho dokumentu.
+ Aspose.Words podporuje různé typy zalamování jako např`Inline`, `TopBottom`, `Tight`, `Through`a další. Můžete si vybrat ten, který nejlépe odpovídá rozvržení vašeho dokumentu.
 
 ### Mohu použít různé formáty obrázků?
 

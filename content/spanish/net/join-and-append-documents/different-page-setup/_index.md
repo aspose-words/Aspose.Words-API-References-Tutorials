@@ -15,7 +15,7 @@ url: /es/net/join-and-append-documents/different-page-setup/
 
 Antes de ensuciarnos las manos, asegurémonos de que tiene todo lo que necesita:
 
-1.  Aspose.Words para .NET: asegúrese de tener instalado Aspose.Words para .NET. Puede[descarguelo aqui](https://releases.aspose.com/words/net/).
+1.  Aspose.Words para .NET: asegúrese de tener instalado Aspose.Words para .NET. Puede[descárgalo aquí](https://releases.aspose.com/words/net/).
 2. .NET Framework: cualquier versión que admita Aspose.Words para .NET.
 3. Entorno de desarrollo: Visual Studio o cualquier otro IDE compatible con .NET.
 4. Conocimientos básicos de C#: solo lo básico para comprender la sintaxis y la estructura.
@@ -133,7 +133,7 @@ También puede hacer coincidir la configuración de los márgenes de manera simi
 Sí, Aspose.Words para .NET es totalmente compatible con .NET Core.
 
 ### ¿Puedo conservar estilos de ambos documentos?
- Sí el`ImportFormatMode.KeepSourceFormatting` La opción garantiza que se conserven los estilos del documento fuente.
+ Sí, el`ImportFormatMode.KeepSourceFormatting` La opción garantiza que se conserven los estilos del documento fuente.
 
 ### ¿Dónde puedo obtener más ayuda con Aspose.Words?
- Revisar la[Documentación de Aspose.Words](https://reference.aspose.com/words/net/) o visitar su[Foro de soporte](https://forum.aspose.com/c/words/8) para obtener más ayuda.
+ Mira el[Documentación de Aspose.Words](https://reference.aspose.com/words/net/) o visitar su[foro de soporte](https://forum.aspose.com/c/words/8) para obtener más ayuda.

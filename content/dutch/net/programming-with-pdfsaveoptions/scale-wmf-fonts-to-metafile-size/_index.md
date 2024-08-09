@@ -55,7 +55,7 @@ MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 };
 ```
 
- De`MetafileRenderingOptions` class biedt opties voor hoe metabestanden (zoals WMF) worden weergegeven. Door in te stellen`ScaleWmfFontsToMetafileSize` naar`false`, geeft u Aspose.Words de opdracht om lettertypen niet te schalen op basis van de metabestandsgrootte, wat kan helpen bij het verkleinen van de totale PDF-grootte.
+ De`MetafileRenderingOptions` class biedt opties voor hoe metabestanden (zoals WMF) worden weergegeven. Door in te stellen`ScaleWmfFontsToMetafileSize` naar`false`, instrueert u Aspose.Words om lettertypen niet te schalen op basis van de metabestandsgrootte, wat kan helpen bij het verkleinen van de totale PDF-grootte.
 
 ## Stap 3: Stel de PDF-opslagopties in
 

@@ -10,7 +10,7 @@ url: /es/net/working-with-section/clone-section/
 
 ## Introducción
 
-¡Hola, compañeros programadores! 🚀 ¿Alguna vez te has encontrado inmerso hasta las rodillas en un proyecto de documento de Word, deseando poder simplemente clonar una sección en lugar de rehacer todo ese arduo trabajo? ¿Bien adivina que? Con Aspose.Words para .NET, puede clonar fácilmente secciones en sus documentos de Word. Este tutorial lo guiará a través del proceso paso a paso, lo que facilitará la replicación de secciones en sus documentos. Entonces, ¡profundicemos y hagamos que sus tareas de manipulación de documentos sean mucho más fáciles!
+¡Hola, compañeros programadores! 🚀 ¿Alguna vez te has encontrado inmerso hasta las rodillas en un proyecto de documento de Word, deseando poder simplemente clonar una sección en lugar de rehacer todo ese arduo trabajo? Bueno, ¿adivinen qué? Con Aspose.Words para .NET, puede clonar fácilmente secciones en sus documentos de Word. Este tutorial lo guiará a través del proceso paso a paso, lo que facilitará la replicación de secciones en sus documentos. Entonces, ¡profundicemos y hagamos que sus tareas de manipulación de documentos sean mucho más fáciles!
 
 ## Requisitos previos
 
@@ -89,7 +89,7 @@ doc.Save(dataDir + "ClonedDocument.docx");
 
  Reemplazar`"dataDir + "ClonedDocument.docx"` con la ruta real donde desea guardar su documento. Esta línea de código guardará su archivo de Word, completo con la sección clonada.
 
-## Guía paso por paso
+## Guía paso a paso
 
 Dividamos el ejemplo en una guía detallada paso a paso para garantizar la claridad y la comprensión.
 
@@ -152,7 +152,7 @@ Sí, puede clonar varias secciones iterando a través de la colección de seccio
 
 ### ¿Cómo personalizo la sección clonada?
 
- Puede personalizar la sección clonada modificando sus propiedades y contenido después de la clonación. Utilizar el`Section` métodos y propiedades de clase para realizar cambios.
+ Puede personalizar la sección clonada modificando sus propiedades y contenido después de la clonación. Utilice el`Section` métodos y propiedades de clase para realizar cambios.
 
 ### ¿Aspose.Words es compatible con diferentes versiones de Word?
 
@@ -160,4 +160,4 @@ Sí, Aspose.Words admite varios formatos de Word, incluidos DOC, DOCX, RTF y má
 
 ### ¿Dónde puedo encontrar más recursos sobre Aspose.Words?
 
- Para obtener más información, puede visitar el[Documentación de Aspose.Words](https://reference.aspose.com/words/net/) o el[Foro de soporte](https://forum.aspose.com/c/words/8) para ayuda y discusiones.
+ Para obtener más información, puede visitar el[Documentación de Aspose.Words](https://reference.aspose.com/words/net/) o el[foro de soporte](https://forum.aspose.com/c/words/8) para ayuda y discusiones.

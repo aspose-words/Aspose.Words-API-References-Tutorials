@@ -15,7 +15,7 @@ Você já se deparou com uma situação em que precisava atualizar dinamicamente
 
 Antes de mergulharmos no código, vamos garantir que você tenha as ferramentas necessárias à sua disposição:
 
--  Aspose.Words for .NET: Esta é a biblioteca poderosa que permite que você trabalhe com documentos do Word programaticamente. Vá para a seção de download no site Aspose[Link para Download](https://releases.aspose.com/words/net/) para pegar sua cópia. - Você pode optar por uma avaliação gratuita ou explorar suas diversas opções de licenciamento[link](https://purchase.aspose.com/buy).
+-  Aspose.Words for .NET: Esta é a biblioteca poderosa que permite que você trabalhe com documentos do Word programaticamente. Vá para a seção de download no site Aspose[Baixar link](https://releases.aspose.com/words/net/) para pegar sua cópia. - Você pode optar por uma avaliação gratuita ou explorar suas diversas opções de licenciamento[link](https://purchase.aspose.com/buy).
 - Um ambiente de desenvolvimento .NET: Visual Studio, Visual Studio Code ou qualquer outro IDE .NET de sua escolha servirá como seu playground de desenvolvimento.
 - Um exemplo de documento do Word: crie um documento simples do Word (como "Bookmarks.docx") contendo algum texto e insira um marcador (abordaremos como fazer isso mais tarde) para praticar.
 

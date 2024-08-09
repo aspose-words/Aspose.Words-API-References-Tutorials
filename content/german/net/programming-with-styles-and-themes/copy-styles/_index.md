@@ -17,7 +17,7 @@ Bevor wir beginnen, stellen Sie sicher, dass Sie über Folgendes verfügen:
 
 1.  Aspose.Words für .NET-Bibliothek: Sie benötigen diese, um mit Word-Dokumenten in .NET zu arbeiten. Sie können sie herunterladen von[Aspose.Words für .NET-Downloads](https://releases.aspose.com/words/net/).
 2. .NET-Entwicklungsumgebung: Sie sollten eine funktionierende .NET-Entwicklungsumgebung wie Visual Studio eingerichtet haben.
-3. Grundkenntnisse in C#: Die Vertrautheit mit C# hilft Ihnen, die Codeausschnitte effektiv zu verstehen und zu implementieren.
+3. Grundkenntnisse in C#: Die Vertrautheit mit C# hilft Ihnen, die Codeausschnitte effektiv zu verstehen und umzusetzen.
 
 ## Namespaces importieren
 
@@ -75,7 +75,7 @@ Und da haben Sie es! Das Kopieren von Stilen zwischen Word-Dokumenten mit Aspose
 ###  Was ist der Zweck der`CopyStylesFromTemplate` method?  
  Der`CopyStylesFromTemplate` Methode kopiert Stile von einem Dokument in ein anderes und stellt sicher, dass das Zieldokument die Formatierung des Quelldokuments übernimmt.
 
-###  Kann ich benutzen`CopyStylesFromTemplate` with documents in different formats?  
+###  Kann ich`CopyStylesFromTemplate` with documents in different formats?  
  Nein, die`CopyStylesFromTemplate` Die Methode funktioniert nur mit Dokumenten im gleichen Format, normalerweise DOCX.
 
 ### Wie kann ich überprüfen, ob die Stile erfolgreich kopiert wurden?  

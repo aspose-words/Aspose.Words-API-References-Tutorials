@@ -178,7 +178,7 @@ for data in dataset:
 
 - Jaga agar kode Anda tetap teratur dengan menggunakan fungsi untuk berbagai tugas manipulasi dokumen.
 - Manfaatkan penanganan pengecualian untuk menangani kesalahan dengan baik selama pemrosesan dokumen.
--  Periksalah[Dokumentasi Aspose.Words](https://reference.aspose.com/words/python-net/) untuk referensi dan contoh API terperinci.
+-  Periksa[Dokumentasi Aspose.Words](https://reference.aspose.com/words/python-net/) untuk referensi dan contoh API terperinci.
 
 ## Kesimpulan
 

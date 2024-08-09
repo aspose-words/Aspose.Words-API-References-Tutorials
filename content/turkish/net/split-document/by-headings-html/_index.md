@@ -78,7 +78,7 @@ doc.Save(dataDir + "SplitDocument.ByHeadingsHtml.html", options);
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesini başarıyla başlıklara göre böldünüz ve HTML olarak kaydettiniz. Bu yöntem, büyük belgeleri düzenlemek ve bölümlere ayrılmış HTML çıktıları oluşturmak için oldukça etkilidir ve içeriğinizi daha yönetilebilir ve erişilebilir hale getirir.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesini başarıyla başlıklara göre böldünüz ve HTML olarak kaydettiniz. Bu yöntem, büyük belgeleri düzenlemek ve bölümlere ayrılmış HTML çıktıları oluşturmak için oldukça etkilidir ve içeriğinizi daha yönetilebilir ve erişilebilir hale getirir.
 
 ## SSS'ler
 

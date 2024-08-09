@@ -83,7 +83,7 @@ Dan itu dia! Anda telah berhasil membagi dokumen Word berdasarkan judul dan meny
 ## FAQ
 
 ### Apa itu Aspose.Words untuk .NET?
-Aspose.Words for .NET adalah perpustakaan yang kuat untuk bekerja dengan dokumen Word di aplikasi .NET.
+Aspose.Words for .NET adalah perpustakaan yang kuat untuk bekerja dengan dokumen Word dalam aplikasi .NET.
 
 ### Bisakah saya membagi dokumen berdasarkan kriteria lain?
 Ya, Aspose.Words memungkinkan Anda membagi dokumen berdasarkan berbagai kriteria seperti bagian, halaman, dan lainnya.

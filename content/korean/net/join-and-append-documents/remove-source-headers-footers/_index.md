@@ -98,4 +98,4 @@ Aspose.Words for .NET을 사용하여 Word 문서에서 머리글과 바닥글�
 예, .NET용 Aspose.Words를 사용하면 문서의 나머지 서식을 유지하면서 머리글과 바닥글을 제거할 수 있습니다.
 
 ### .NET용 Aspose.Words에 대한 추가 리소스와 지원은 어디서 찾을 수 있나요?
- 방문하다[.NET 문서용 Aspose.Words](https://reference.aspose.com/words/net/) 자세한 API 참조 및 예시를 확인하세요.
+ 방문[.NET 문서용 Aspose.Words](https://reference.aspose.com/words/net/) 자세한 API 참조 및 예시를 확인하세요.

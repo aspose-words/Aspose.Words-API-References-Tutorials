@@ -8,20 +8,20 @@ weight: 10
 url: /cs/net/programming-with-shapes/detect-smart-art-shape/
 ---
 
-## Úvod
+## Zavedení
 
-Nazdárek! Potřebovali jste někdy pracovat s obrázky SmartArt v dokumentech Wordu programově? Ať už automatizujete sestavy, vytváříte dynamické dokumenty nebo se jen ponoříte do zpracování dokumentů, Aspose.Words pro .NET vám pomůže. V tomto tutoriálu prozkoumáme, jak detekovat tvary SmartArt v dokumentech aplikace Word pomocí Aspose.Words for .NET. Každý krok rozebereme v podrobném a snadno srozumitelném průvodci. Na konci tohoto článku budete schopni bez námahy identifikovat tvary SmartArt v jakémkoli dokumentu aplikace Word!
+Ahoj! Potřebovali jste někdy pracovat s obrázky SmartArt v dokumentech Wordu programově? Ať už automatizujete sestavy, vytváříte dynamické dokumenty nebo se jen ponoříte do zpracování dokumentů, Aspose.Words pro .NET vám pomůže. V tomto tutoriálu prozkoumáme, jak detekovat tvary SmartArt v dokumentech aplikace Word pomocí Aspose.Words for .NET. Každý krok rozebereme v podrobném a snadno srozumitelném průvodci. Na konci tohoto článku budete schopni bez námahy identifikovat tvary SmartArt v jakémkoli dokumentu aplikace Word!
 
 ## Předpoklady
 
 Než se ponoříme do podrobností, ujistěte se, že máte vše nastaveno:
 
 1. Základní znalost C#: Měli byste být spokojeni se syntaxí a koncepty C#.
-2.  Aspose.Words pro .NET: Stáhněte si ji[tady](https://releases.aspose.com/words/net/) . Pokud teprve zkoumáte, můžete začít s a[zkušební verze zdarma](https://releases.aspose.com/).
+2.  Aspose.Words pro .NET: Stáhněte si ji[zde](https://releases.aspose.com/words/net/) . Pokud teprve zkoumáte, můžete začít s a[zkušební verze zdarma](https://releases.aspose.com/).
 3. Visual Studio: Jakákoli nejnovější verze by měla fungovat, ale doporučujeme nejnovější verzi.
 4. .NET Framework: Ujistěte se, že je ve vašem systému nainstalováno.
 
-Jste připraveni začít? Skvělý! Pojďme rovnou do toho.
+Jste připraveni začít? Děsivý! Pojďme rovnou do toho.
 
 ## Importovat jmenné prostory
 
@@ -94,7 +94,7 @@ Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vyt
 
 ### 3. Jak zjistím jiné typy tvarů v dokumentu?
 
- Dotaz LINQ můžete upravit a zkontrolovat další vlastnosti nebo typy tvarů. Odkazovat na[dokumentace](https://reference.aspose.com/words/net/) Více podrobností.
+ Dotaz LINQ můžete upravit a zkontrolovat další vlastnosti nebo typy tvarů. Viz[dokumentace](https://reference.aspose.com/words/net/) pro více podrobností.
 
 ### 4. Jak získám podporu pro Aspose.Words for .NET?
 
@@ -102,4 +102,4 @@ Podporu můžete získat návštěvou stránky[Aspose fórum podpory](https://fo
 
 ### 5. Mohu programově manipulovat s tvary SmartArt?
 
- Ano, Aspose.Words vám umožňuje programově manipulovat s tvary SmartArt. Zkontrolovat[dokumentace](https://reference.aspose.com/words/net/) pro podrobné pokyny.
+ Ano, Aspose.Words vám umožňuje programově manipulovat s tvary SmartArt. Zkontrolujte[dokumentace](https://reference.aspose.com/words/net/) pro podrobné pokyny.

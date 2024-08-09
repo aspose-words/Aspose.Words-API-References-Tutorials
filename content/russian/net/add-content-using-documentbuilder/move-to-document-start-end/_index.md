@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Здесь мы создаем экземпляр`Document`и`DocumentBuilder` . Думать о`Document` как пустой документ Word и`DocumentBuilder` как твоя ручка.
+ Здесь мы создаем экземпляр`Document`и`DocumentBuilder` . Подумайте о`Document` как пустой документ Word и`DocumentBuilder` как твоя ручка.
 
 ## Шаг 2. Перейдите в начало документа.
 
@@ -63,7 +63,7 @@ builder.MoveToDocumentEnd();
 Console.WriteLine("\nThis is the end of the document.");
 ```
 
-`MoveToDocumentEnd()` помещает курсор в самый конец, готовый к добавлению дополнительного контента. Очень просто!
+`MoveToDocumentEnd()` помещает курсор в самый конец, готовый к добавлению дополнительного контента. Легко, пожалуйста!
 
 ## Заключение
 

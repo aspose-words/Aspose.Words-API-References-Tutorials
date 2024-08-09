@@ -8,7 +8,7 @@ weight: 15
 url: /pt/java/document-loading-and-saving/saving-html-documents-with-fixed-layout/
 ---
 
-## Introdução ao salvamento de documentos HTML com layout fixo em Aspose.Words para Java
+## Introdução ao salvamento de documentos HTML com layout fixo em Aspose.Words for Java
 
 Neste guia completo, orientaremos você no processo de salvar documentos HTML com layout fixo usando Aspose.Words for Java. Com instruções passo a passo e exemplos de código, você aprenderá como fazer isso perfeitamente. Então, vamos mergulhar de cabeça!
 

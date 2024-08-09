@@ -55,7 +55,7 @@ Criptografar o conteúdo do documento aumenta a segurança:
 doc.encrypt("encryption_password", aw.EncryptionType.AES_256)
 ```
 
-## Assinaturas digitais
+## Assinaturas Digitais
 
 Adicione uma assinatura digital para garantir a autenticidade do documento:
 

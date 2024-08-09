@@ -72,7 +72,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", 
 
 ### Word 문서의 모든 책갈피를 PDF로 내보낼 수 있나요?
 
- 그래 넌 할수있어. 에서`PdfSaveOptions`, 필요한 경우 모든 북마크를 포함하도록 설정을 조정할 수 있습니다.
+ 예, 가능합니다. 에서`PdfSaveOptions`, 필요한 경우 모든 북마크를 포함하도록 설정을 조정할 수 있습니다.
 
 ### 문서 본문에서도 북마크를 내보내려면 어떻게 해야 합니까?
 

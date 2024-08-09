@@ -2,71 +2,97 @@
 title: 縮排程式碼
 linktitle: 縮排程式碼
 second_title: Aspose.Words 文件處理 API
-description: 了解如何透過 Aspose.Words for .NET 逐步指南使用縮排程式碼。
+description: 透過這個詳細的逐步教學，了解如何使用 Aspose.Words for .NET 在 Word 文件中新增縮排程式碼區塊並設定縮排程式碼區塊樣式。
 type: docs
 weight: 10
 url: /zh-hant/net/working-with-markdown/indented-code/
 ---
+## 介紹
 
-在此範例中，我們將解釋如何在 Aspose.Words for .NET 中使用縮排程式碼功能。縮排程式碼用於直觀地表示具有特定格式的程式碼區塊。
+您是否想過如何使用 Aspose.Words for .NET 為您的 Word 文件添加一些自訂功能？想像一下，您能夠使用特定格式設定文字樣式或精確管理內容，同時使用專為無縫文件操作而設計的強大函式庫。在本教學中，我們將深入探討如何設定文字樣式以在 Word 文件中建立縮排程式碼區塊。無論您是想為程式碼片段添加專業風格，還是只是需要一種簡潔的方式來呈現訊息，Aspose.Words 都能提供強大的解決方案。
 
-## 第 1 步：使用文件產生器
+## 先決條件
 
-首先，我們將使用文件產生器將內容新增至文件。
+在我們深入討論實際問題之前，您需要先做好以下幾件事：
+
+1.  Aspose.Words for .NET Library：請確保您已安裝 Aspose.Words 函式庫。您可以從[地點](https://releases.aspose.com/words/net/).
+   
+2. Visual Studio 或任何 .NET IDE：您需要一個 IDE 來編寫和執行程式碼。 Visual Studio 是一個受歡迎的選擇，但任何 .NET 相容的 IDE 都可以使用。
+   
+3. C# 基礎知識：了解 C# 基礎知識將幫助您更輕鬆地理解範例。
+
+4. .NET Framework：確保您的專案設定為使用與 Aspose.Words 相容的 .NET Framework。
+
+5.  Aspose.Words 文件：熟悉[Aspose.Words 文檔](https://reference.aspose.com/words/net/)了解更多詳細資訊和參考。
+
+一切都準備好了嗎？偉大的！讓我們繼續有趣的部分。
+
+## 導入命名空間
+
+要開始在 .NET 專案中使用 Aspose.Words，您需要匯入必要的命名空間。此步驟可確保您的專案可以存取 Aspose.Words 庫提供的所有類別和方法。您可以這樣做：
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+這些命名空間可讓您使用文件物件並操作 Word 文件中的內容。
+
+現在，讓我們逐步了解使用 Aspose.Words 在 Word 文件中新增縮排程式碼區塊並設定其樣式的過程。我們將其分解為幾個明確的步驟：
+
+## 第 1 步：設定您的文檔
+
+首先，您需要建立一個新文件或載入現有文件。此步驟涉及初始化`Document`對象，它將作為您工作的基礎。
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## 步驟 2：為縮排程式碼新增樣式
+在這裡，我們建立一個新文件並使用`DocumentBuilder`開始添加內容。
 
-我們將使用以下命令為縮排程式碼新增自訂樣式`Styles.Add`的方法`Document`目的。在此範例中，我們為縮排程式碼建立一個名為「IndentedCode」的樣式。
+## 第 2 步：定義自訂樣式
+
+接下來，我們將為縮排程式碼定義自訂樣式。這種風格將確保您的程式碼區塊具有獨特的外觀。 
 
 ```csharp
 Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");
-builder.ParagraphFormat.Style = indentedCode;
+indentedCode.ParagraphFormat.LeftIndent = 20; //設定樣式的左縮排
+indentedCode.Font.Name = "Courier New"; //對程式碼使用等寬字體
+indentedCode.Font.Size = 10; //為程式碼設定較小的字體大小
 ```
 
-## 步驟 3：新增縮排程式碼
+在此步驟中，我們將建立一個名為「IndentedCode」的新段落樣式，將左側縮排設定為 20 磅，並套用等寬字體（常用於程式碼）。
 
-現在我們可以使用「IndentedCode」自訂樣式來新增縮排程式碼區塊。
+## 第 3 步：套用樣式並新增內容
+
+定義樣式後，我們現在可以套用它並將縮排程式碼新增到我們的文件中。
 
 ```csharp
-builder.Writeln("This is an indented code block");
-```
-
-### 使用 Aspose.Words for .NET 縮排程式碼的範例原始碼
-
-```csharp
-//使用文件產生器將內容新增至文件。
-DocumentBuilder builder = new DocumentBuilder();
-
-Style indentedCode = builder.Document.Styles.Add(StyleType.Paragraph, "IndentedCode");
 builder.ParagraphFormat.Style = indentedCode;
-builder.Writeln("This is an indented code");
+builder.Writeln("This is an indented code block.");
 ```
 
-恭喜！現在您已經了解如何透過 Aspose.Words for .NET 使用縮排程式碼功能。
+在這裡，我們將段落格式設定為自訂樣式，並編寫一行文本，該文本將顯示為縮排的程式碼區塊。
 
+## 結論
 
-### 常見問題解答
+現在您已經擁有了一種使用 Aspose.Words for .NET 在 Word 文件中新增縮排程式碼區塊並設定縮排程式碼區塊樣式的簡單且有效的方法。透過執行這些步驟，您可以增強程式碼片段的可讀性並為文件添加專業風格。無論您是在準備技術報告、程式碼文檔，或是需要格式化程式碼的任何其他類型的內容，Aspose.Words 都能提供您高效完成工作所需的工具。
 
-#### Q：Markdown 中的縮排程式碼是什麼？
+請隨意嘗試不同的樣式和設置，以定製程式碼區塊的外觀和風格以滿足您的需求。快樂編碼！
 
-答：Markdown 中的縮排程式碼是一種用於在 Markdown 文件中顯示程式碼的格式化方法。它包括用空格或製表符縮進每行程式碼。
+## 常見問題解答
 
-#### Q：如何在 Markdown 中使用縮排程式碼？
+### 我可以調整程式碼區塊的縮排嗎？  
+是的，您可以修改`LeftIndent`樣式的屬性可增加或減少縮排。
 
-答：要在 Markdown 中使用縮排程式碼，請使用空格或製表符縮排每行程式碼。
+### 如何更改程式碼區塊使用的字體？  
+您可以設定`Font.Name`屬性為您選擇的任何等寬字體，例如“Courier New”或“Consolas”。
 
-#### Q：Markdown 中縮排程式碼的優點是什麼？
+### 是否可以新增多個不同樣式的程式碼區塊？  
+絕對地！您可以定義具有不同名稱的多種樣式，並根據需要將它們套用到各種程式碼區塊。
 
-A：Markdown 中的縮排程式碼提高了程式碼的可讀性，讓讀者更容易理解。
+### 我可以將其他格式選項套用到程式碼區塊嗎？  
+是的，您可以使用各種格式選項自訂樣式，包括字體顏色、背景顏色和對齊方式。
 
-#### Q：Markdown 中縮排程式碼和程式碼區塊有什麼差別？
-
-答：縮排程式碼用於插入文字中的小程式碼片段，而程式碼區塊用於以單獨的格式顯示較大的程式碼片段。
-
-#### Q：所有 Markdown 編輯器都支援 Markdown 中的縮排程式碼嗎？
-
-答：Markdown 編輯器對縮排程式碼的支援可能會因 Markdown 編輯器而異。請檢查您的發布商的具體文件以確保確定。
+### 創建保存的文檔後如何打開它？  
+您可以使用任何文字處理器（例如 Microsoft Word）或相容軟體開啟文件來查看樣式內容。

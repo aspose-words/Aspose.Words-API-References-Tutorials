@@ -108,7 +108,7 @@ hebt met succes twee Word-documenten samengevoegd met Aspose.Words voor .NET, wa
 ## Veelgestelde vragen
 
 ### Wat is Aspose.Words voor .NET?
- Aspose.Words voor .NET is een krachtige bibliotheek voor het maken, manipuleren en converteren van Word-documenten binnen .NET-toepassingen.[Kom meer te weten](https://reference.aspose.com/words/net/).
+ Aspose.Words voor .NET is een krachtige bibliotheek voor het maken, manipuleren en converteren van Word-documenten binnen .NET-toepassingen.[Meer informatie](https://reference.aspose.com/words/net/).
 
 ### Kan ik Aspose.Words voor .NET uitproberen voordat ik het aanschaf?
  Ja, u kunt een gratis proefversie downloaden[hier](https://releases.aspose.com/).

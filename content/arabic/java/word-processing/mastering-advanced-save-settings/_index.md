@@ -181,7 +181,7 @@ doc1.compare(doc2, "comparison_result.docx");
 
 ### كيف أضبط حجم الصفحة على A4؟
 
- لتعيين حجم الصفحة على A4، يمكنك استخدام`PageSetup` الفئة وحدد حجم الورق كما يلي:
+ لتعيين حجم الصفحة على A4، يمكنك استخدام`PageSetup` فئة وحدد حجم الورق على النحو التالي:
 
 ```java
 Document doc = new Document();
@@ -222,7 +222,7 @@ doc.save("document.pdf", SaveFormat.PDF);
 
 ### هل Aspose.Words for Java مناسب لإنشاء المستندات المجمعة؟
 
-نعم، يعد Aspose.Words for Java مناسبًا تمامًا لإنشاء المستندات المجمعة، مما يجعله فعالاً لإنتاج المستندات على نطاق واسع.
+نعم، يعتبر Aspose.Words for Java مناسبًا تمامًا لإنشاء المستندات المجمعة، مما يجعله فعالاً لإنتاج المستندات على نطاق واسع.
 
 ```java
 Document doc = new Document();

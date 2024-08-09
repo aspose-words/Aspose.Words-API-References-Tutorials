@@ -135,10 +135,10 @@ Aspose.Wordsは無料でご利用いただけます。[一時ライセンス](ht
 サポートを受けるには[Aspose.Words サポート フォーラム](https://forum.aspose.com/c/words/8).
 
 ### 他の種類のグラフを追加できますか?
-はい、Aspose.Wordsは棒グラフ、折れ線グラフ、縦棒グラフなど、さまざまなグラフタイプをサポートしています。[ドキュメンテーション](https://reference.aspose.com/words/net/)詳細については。
+はい、Aspose.Wordsは棒グラフ、折れ線グラフ、縦棒グラフなど、さまざまなグラフタイプをサポートしています。[ドキュメント](https://reference.aspose.com/words/net/)詳細についてはこちらをご覧ください。
 
 ### Aspose.Words は .NET Core と互換性がありますか?
-はい、Aspose.Wordsは.NET Coreと互換性があります。詳細については、[ドキュメンテーション](https://reference.aspose.com/words/net/).
+はい、Aspose.Wordsは.NET Coreと互換性があります。詳細については、[ドキュメント](https://reference.aspose.com/words/net/).
 
 ### Aspose.Words のライセンスを購入するにはどうすればよいですか?
 ライセンスは以下から購入できます。[Aspose ストア](https://purchase.aspose.com/buy).

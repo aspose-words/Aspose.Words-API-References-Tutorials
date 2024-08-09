@@ -70,7 +70,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.DownsamplingImages.pdf", saveOptio
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã giảm thành công kích thước tệp PDF của mình bằng cách lấy mẫu hình ảnh xuống bằng cách sử dụng Aspose.Words for .NET. Điều này không chỉ giúp các tệp PDF của bạn dễ quản lý hơn mà còn giúp tải lên, tải xuống nhanh hơn và trải nghiệm xem mượt mà hơn.
+Và bạn có nó! Bạn đã giảm thành công kích thước tệp PDF của mình bằng cách lấy mẫu hình ảnh xuống bằng cách sử dụng Aspose.Words for .NET. Điều này không chỉ giúp các tệp PDF của bạn dễ quản lý hơn mà còn giúp tải lên, tải xuống nhanh hơn và trải nghiệm xem mượt mà hơn.
 
 ## Câu hỏi thường gặp
 

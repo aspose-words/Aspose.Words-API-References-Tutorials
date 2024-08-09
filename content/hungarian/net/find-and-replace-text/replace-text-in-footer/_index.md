@@ -9,7 +9,7 @@ url: /hu/net/find-and-replace-text/replace-text-in-footer/
 ---
 ## Bevezetés
 
-Halihó! Készen áll arra, hogy belemerüljön a dokumentumkezelés világába az Aspose.Words for .NET használatával? Ma egy érdekes feladattal fogunk foglalkozni: szöveg cseréjével egy Word-dokumentum láblécében. Ez az oktatóanyag lépésről lépésre végigvezeti Önt a teljes folyamaton. Akár tapasztalt fejlesztő, akár csak kezdő, ezt az útmutatót hasznosnak és könnyen követhetőnek fogja találni. Kezdjük tehát a láblécek szövegcseréjének elsajátítását az Aspose.Words for .NET segítségével!
+Szia! Készen áll arra, hogy belemerüljön a dokumentumkezelés világába az Aspose.Words for .NET használatával? Ma egy érdekes feladattal fogunk foglalkozni: szöveg cseréjével egy Word-dokumentum láblécében. Ez az oktatóanyag lépésről lépésre végigvezeti Önt a teljes folyamaton. Akár tapasztalt fejlesztő, akár csak kezdő, ezt az útmutatót hasznosnak és könnyen követhetőnek fogja találni. Kezdjük tehát a láblécek szövegcseréjének elsajátítását az Aspose.Words for .NET segítségével!
 
 ## Előfeltételek
 
@@ -39,7 +39,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Footer.docx");
 ```
 
- Ebben a lépésben cserélje ki`"YOUR DOCUMENT DIRECTORY"` a tényleges elérési úttal, ahol a dokumentumot tárolják. A`Document` tárgy`doc` most a betöltött dokumentumunkat tartalmazza.
+ Ebben a lépésben cserélje ki`"YOUR DOCUMENT DIRECTORY"` a tényleges elérési úttal, ahol a dokumentumot tárolják. A`Document` objektum`doc` most a betöltött dokumentumunkat tartalmazza.
 
 ## 2. lépés: Nyissa meg a láblécet
 
@@ -64,7 +64,7 @@ FindReplaceOptions options = new FindReplaceOptions
 };
 ```
 
- Ebben a példában`MatchCase` be van állítva`false` hogy figyelmen kívül hagyja a kisbetűs különbségeket, és`FindWholeWordsOnly` be van állítva`false` hogy lehetővé tegye a szavakon belüli részleges egyezéseket.
+ Ebben a példában`MatchCase` be van állítva`false` hogy figyelmen kívül hagyja a kisbetűs különbségeket, és`FindWholeWordsOnly` be van állítva`false` hogy lehetővé tegye a szavakon belüli részleges egyezést.
 
 ## 4. lépés: Cserélje ki a szöveget a láblécben
 
@@ -88,7 +88,7 @@ doc.Save(dataDir + "FindAndReplace.ReplaceTextInFooter.docx");
 
 ## Következtetés
 
-Gratulálunk! Sikeresen lecserélte a szöveget egy Word-dokumentum láblécében az Aspose.Words for .NET használatával. Ez az oktatóanyag végigvezeti a dokumentum betöltésén, a lábléc elérésén, a keresési és csere opciók beállításán, a szövegcsere végrehajtásán és a módosított dokumentum mentésén. Ezekkel a lépésekkel könnyedén kezelheti és programozottan frissítheti Word-dokumentumai tartalmát.
+Gratulálok! Sikeresen lecserélte a szöveget egy Word-dokumentum láblécében az Aspose.Words for .NET használatával. Ez az oktatóanyag végigvezeti a dokumentum betöltésén, a lábléc elérésén, a keresési és csere opciók beállításán, a szövegcsere végrehajtásán és a módosított dokumentum mentésén. Ezekkel a lépésekkel könnyedén kezelheti és programozottan frissítheti Word-dokumentumai tartalmát.
 
 ## GYIK
 
@@ -99,7 +99,7 @@ Gratulálunk! Sikeresen lecserélte a szöveget egy Word-dokumentum láblécébe
 A láblécen belül bármilyen konkrét szöveget lecserélhet. Ha több sort is ki kell cserélnie, győződjön meg arról, hogy a keresési karakterlánc pontosan megegyezik a cserélni kívánt szöveggel.
 
 ### Lehetséges a csere kis- és nagybetűk megkülönböztetésére?
- Teljesen! Készlet`MatchCase` nak nek`true` ban,-ben`FindReplaceOptions` hogy a csere kis- és nagybetűérzékeny legyen.
+ Teljesen! Készlet`MatchCase` hogy`true` a`FindReplaceOptions` hogy a csere kis- és nagybetűérzékeny legyen.
 
 ### Használhatok reguláris kifejezéseket a szöveg helyettesítésére?
 Igen, az Aspose.Words támogatja a reguláris kifejezések használatát a keresési és csereműveletekhez. Megadhat egy regex mintát a`Range.Replace` módszer.

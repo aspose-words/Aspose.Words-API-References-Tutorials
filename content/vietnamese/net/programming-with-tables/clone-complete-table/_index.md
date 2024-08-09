@@ -57,7 +57,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 
 ## Bước 3: Truy cập bảng cần nhân bản
 
- Bây giờ, truy cập vào bảng bạn muốn sao chép. Các`GetChild` phương thức được sử dụng để lấy bảng đầu tiên trong tài liệu.
+ Bây giờ, truy cập vào bảng bạn muốn sao chép. các`GetChild` phương thức được sử dụng để lấy bảng đầu tiên trong tài liệu.
 
 ```csharp
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
@@ -73,7 +73,7 @@ Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 Table tableClone = (Table) table.Clone(true);
 ```
 
- Các`true` tham số đảm bảo rằng bản sao bao gồm tất cả định dạng và nội dung từ bảng gốc.
+ các`true` tham số đảm bảo rằng bản sao bao gồm tất cả định dạng và nội dung từ bảng gốc.
 
 ## Bước 5: Chèn bảng nhân bản vào tài liệu
 
@@ -115,7 +115,7 @@ Sao chép bảng trong tài liệu Word bằng Aspose.Words cho .NET là một q
 Có, bạn có thể sao chép nhiều bảng bằng cách lặp qua từng bảng trong tài liệu và áp dụng logic sao chép tương tự.
 
 ### Điều gì sẽ xảy ra nếu bảng có các ô được hợp nhất?
- Các`Clone` phương thức giữ nguyên tất cả định dạng, bao gồm cả các ô đã hợp nhất, đảm bảo bản sao chính xác của bảng.
+ các`Clone` phương thức giữ nguyên tất cả định dạng, bao gồm cả các ô đã hợp nhất, đảm bảo bản sao chính xác của bảng.
 
 ### Làm cách nào để sao chép một bảng cụ thể theo tên?
 Bạn có thể xác định các bảng theo thuộc tính tùy chỉnh hoặc nội dung duy nhất, sau đó sao chép bảng mong muốn bằng các bước tương tự.

@@ -97,7 +97,7 @@ doc.UpdatePageLayout();
 最後に、ドキュメントを新しい PDF に再度保存して、更新されたレイアウトを確認します。
 
 ```csharp
-//レイアウトを更新してドキュメントを保存する
+//レイアウトを更新したドキュメントを保存する
 doc.Save(dataDir + "Document.UpdatePageLayout.2.pdf");
 ```
 

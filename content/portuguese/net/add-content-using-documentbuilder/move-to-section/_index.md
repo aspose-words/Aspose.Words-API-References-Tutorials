@@ -16,7 +16,7 @@ No mundo digital de hoje, a automação é fundamental para aumentar a produtivi
 Antes de mergulharmos no código, vamos garantir que você tenha tudo o que precisa:
 
 1. Visual Studio: você precisa ter o Visual Studio instalado em seu computador.
-2.  Aspose.Words for .NET: Baixe e instale Aspose.Words for .NET do[Link para Download](https://releases.aspose.com/words/net/).
+2.  Aspose.Words for .NET: Baixe e instale Aspose.Words for .NET do[link para baixar](https://releases.aspose.com/words/net/).
 3. Conhecimento básico de C#: Familiaridade com a linguagem de programação C# será benéfica.
 
 ## Importar namespaces
@@ -82,7 +82,7 @@ Aspose.Words for .NET torna incrivelmente fácil manipular documentos do Word pr
 ## Perguntas frequentes
 
 ### Como instalo o Aspose.Words para .NET?
- Você pode baixar e instalar o Aspose.Words for .NET no[Link para Download](https://releases.aspose.com/words/net/).
+ Você pode baixar e instalar o Aspose.Words for .NET no[link para baixar](https://releases.aspose.com/words/net/).
 
 ### Posso usar o Aspose.Words for .NET com outras linguagens .NET?
 Sim, Aspose.Words for .NET oferece suporte a qualquer linguagem .NET, incluindo VB.NET e F#.

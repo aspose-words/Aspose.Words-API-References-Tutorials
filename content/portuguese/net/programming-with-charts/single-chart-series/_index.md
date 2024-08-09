@@ -9,7 +9,7 @@ url: /pt/net/programming-with-charts/single-chart-series/
 ---
 ## Introdução
 
-Ei! Você já quis aprimorar seus documentos do Word com alguns gráficos elegantes? Bem, você está no lugar certo! Hoje, estamos mergulhando no mundo do Aspose.Words for .NET para personalizar séries de gráficos únicos em um gráfico. Quer você seja um profissional experiente ou esteja apenas começando, este guia o guiará por todo o processo, passo a passo. Então, aperte o cinto e vamos traçar!
+Ei! Você já quis aprimorar seus documentos do Word com alguns gráficos elegantes? Bem, você está no lugar certo! Hoje, estamos mergulhando no mundo do Aspose.Words for .NET para personalizar séries de gráficos únicos em um gráfico. Quer você seja um profissional experiente ou esteja apenas começando, este guia irá guiá-lo passo a passo por todo o processo. Então, aperte o cinto e vamos traçar!
 
 ## Pré-requisitos
 
@@ -112,7 +112,7 @@ E aí está! Você personalizou com sucesso uma única série de gráficos em um
 Aspose.Words for .NET é uma biblioteca poderosa que permite criar, editar, converter e manipular documentos do Word programaticamente.
 
 ### Posso usar o Aspose.Words gratuitamente?
- Sim, você pode começar com um[teste grátis](https://releases.aspose.com/).
+ Sim, você pode começar com um[teste gratuito](https://releases.aspose.com/).
 
 ### Como obtenho suporte para Aspose.Words?
  Você pode obter suporte da comunidade Aspose em seu[fórum](https://forum.aspose.com/c/words/8).
@@ -121,4 +121,4 @@ Aspose.Words for .NET é uma biblioteca poderosa que permite criar, editar, conv
 Absolutamente! Aspose.Words oferece suporte a vários tipos de gráficos, como gráficos de barras, pizza e dispersão.
 
 ### Onde posso encontrar mais documentação?
- Confira a[documentação](https://reference.aspose.com/words/net/) para guias e exemplos mais detalhados.
+ Confira o[documentação](https://reference.aspose.com/words/net/) para guias e exemplos mais detalhados.

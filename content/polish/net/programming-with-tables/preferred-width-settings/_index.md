@@ -40,7 +40,7 @@ Podzielmy proces tworzenia tabeli z różnymi preferowanymi ustawieniami szeroko
 
 Nagłówek: Tworzenie nowego dokumentu i narzędzie DocumentBuilder
 
- Objaśnienie: Zacznij od utworzenia nowego dokumentu programu Word i a`DocumentBuilder` instancja. The`DocumentBuilder` class zapewnia prosty sposób dodawania treści do dokumentu.
+ Objaśnienie: Zacznij od utworzenia nowego dokumentu programu Word i a`DocumentBuilder` przykład. The`DocumentBuilder` class zapewnia prosty sposób dodawania treści do dokumentu.
 
 ```csharp
 // Zdefiniuj ścieżkę do zapisania dokumentu.
@@ -112,7 +112,7 @@ Ten krok kończy tabelę i zapisuje dokument pod nazwą „WorkingWithTables.Pre
 
 ## Wniosek
 
-Tworzenie tabel z preferowanymi ustawieniami szerokości w Aspose.Words dla .NET jest proste, jeśli zrozumiesz różne dostępne opcje rozmiaru. Niezależnie od tego, czy potrzebujesz stałych, względnych czy automatycznych szerokości komórek, Aspose.Words zapewnia elastyczność efektywnej obsługi różnych scenariuszy układu tabeli. Wykonując czynności opisane w tym przewodniku, możesz mieć pewność, że tabele w dokumentach programu Word będą miały dobrą strukturę i będą atrakcyjne wizualnie.
+Tworzenie tabel z preferowanymi ustawieniami szerokości w Aspose.Words dla .NET jest proste, jeśli zrozumiesz różne dostępne opcje rozmiaru. Niezależnie od tego, czy potrzebujesz stałych, względnych czy automatycznych szerokości komórek, Aspose.Words zapewnia elastyczność pozwalającą efektywnie obsługiwać różne scenariusze układu tabeli. Wykonując czynności opisane w tym przewodniku, możesz mieć pewność, że tabele w dokumentach programu Word będą miały dobrą strukturę i będą atrakcyjne wizualnie.
 
 ## Często zadawane pytania
 

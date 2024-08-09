@@ -107,7 +107,7 @@ try {
 ## Συχνές ερωτήσεις
 
 ### Πώς μπορώ να αποκτήσω μια προσωρινή άδεια χρήσης για το Aspose.Words για Java;
- Επισκέψου το[Aspose Temporary License Page](https://purchase.aspose.com/temporary-license/) να ζητήσει προσωρινή άδεια.
+ Επισκεφθείτε το[Aspose Temporary License Page](https://purchase.aspose.com/temporary-license/) να ζητήσει προσωρινή άδεια.
 
 ### Μπορώ να χρησιμοποιήσω το Aspose.Words για Java χωρίς άδεια χρήσης;
 Ναι, αλλά θα λειτουργεί σε δοκιμαστική λειτουργία με περιορισμούς. Συνιστάται να αποκτήσετε έγκυρη άδεια χρήσης για πλήρη λειτουργικότητα.

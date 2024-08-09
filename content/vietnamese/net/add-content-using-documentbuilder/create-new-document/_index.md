@@ -77,11 +77,11 @@ Cuối cùng, chúng ta cần phải cứu kiệt tác của mình. Bước này
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.CreateNewDocument.docx");
 ```
 
-Và bạn có nó rồi đấy! Bạn vừa tạo một tài liệu Word mới bằng Aspose.Words cho .NET.
+Và bạn có nó! Bạn vừa tạo một tài liệu Word mới bằng Aspose.Words cho .NET.
 
 ## Phần kết luận
 
-Chúc mừng! Bạn đã thực hiện những bước đầu tiên trong thế giới tự động hóa tài liệu với Aspose.Words cho .NET. Chúng tôi bắt đầu lại từ đầu, thiết lập môi trường của mình, tạo một tài liệu mới, thêm một số nội dung và lưu nó. Đây chỉ là đỉnh của tảng băng trôi. Với Aspose.Words, bạn có thể thao tác với tài liệu theo những cách mà bạn chưa bao giờ nghĩ là có thể—hợp nhất tài liệu, thêm hình ảnh, tạo bảng, v.v.
+Chúc mừng! Bạn đã thực hiện những bước đầu tiên trong thế giới tự động hóa tài liệu với Aspose.Words cho .NET. Chúng tôi bắt đầu lại từ đầu, thiết lập môi trường của mình, tạo một tài liệu mới, thêm một số nội dung và lưu nó. Đây chỉ là phần nổi của tảng băng chìm. Với Aspose.Words, bạn có thể thao tác với tài liệu theo những cách mà bạn chưa bao giờ nghĩ là có thể—hợp nhất tài liệu, thêm hình ảnh, tạo bảng, v.v.
 
 ## Câu hỏi thường gặp
 

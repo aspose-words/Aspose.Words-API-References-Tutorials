@@ -339,7 +339,7 @@ Aspose.Words for Java fornece recursos abrangentes para localizar e substituir t
 
 ### Como faço o download do Aspose.Words para Java?
 
- Você pode baixar Aspose.Words for Java do site visitando[esse link](https://releases.aspose.com/words/java/).
+ Você pode baixar Aspose.Words for Java do site visitando[este link](https://releases.aspose.com/words/java/).
 
 ### Posso usar expressões regulares para substituição de texto?
 

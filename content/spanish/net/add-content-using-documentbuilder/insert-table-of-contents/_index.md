@@ -33,7 +33,7 @@ Dividamos el proceso en pasos claros:
 
 ## Paso 1: Inicialice el documento Aspose.Words y DocumentBuilder
 
- Primero, inicialice un nuevo Aspose.Words`Document` objeto y un`DocumentBuilder` trabajar con:
+ Primero, inicialice un nuevo Aspose.Words`Document` objeto y un`DocumentBuilder` para trabajar con:
 
 ```csharp
 // Inicializar documento y DocumentBuilder

@@ -37,7 +37,7 @@ mainDoc.getRange().replace(Pattern.compile("\\[MY_DOCUMENT\\]"), "", options);
 mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
 ```
 
- Σε αυτό το παράδειγμα, χρησιμοποιούμε α`FindReplaceOptions` αντικείμενο να καθορίσετε έναν χειριστή επανάκλησης για την αντικατάσταση. ο`InsertDocumentAtReplaceHandler` Η κλάση χειρίζεται τη λογική εισαγωγής.
+ Σε αυτό το παράδειγμα, χρησιμοποιούμε α`FindReplaceOptions` αντικείμενο να καθορίσετε έναν χειριστή επανάκλησης για την αντικατάσταση. Ο`InsertDocumentAtReplaceHandler` Η κλάση χειρίζεται τη λογική εισαγωγής.
 
 ## Βήμα 3: Εισαγωγή εγγράφων στους σελιδοδείκτες
 
@@ -66,7 +66,7 @@ mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtM
 
  Σε αυτό το παράδειγμα, ορίσαμε ένα πεδίο συγχώνευσης επανάκλησης χρησιμοποιώντας το`InsertDocumentAtMailMergeHandler` κλάση για να χειριστεί την εισαγωγή του εγγράφου που καθορίζεται από το πεδίο "Document_1".
 
-## συμπέρασμα
+## Σύναψη
 
 Η κλωνοποίηση και ο συνδυασμός εγγράφων στο Aspose.Words για Java μπορεί να επιτευχθεί χρησιμοποιώντας διάφορες τεχνικές. Είτε θέλετε να κλωνοποιήσετε ένα έγγραφο, να εισαγάγετε περιεχόμενο σε σημεία αντικατάστασης, σελιδοδείκτες ή κατά τη συγχώνευση αλληλογραφίας, το Aspose.Words παρέχει ισχυρές δυνατότητες για απρόσκοπτη διαχείριση εγγράφων.
 

@@ -2,7 +2,7 @@
 title: การจัดการส่วนเอกสารและเค้าโครง
 linktitle: การจัดการส่วนเอกสารและเค้าโครง
 second_title: Aspose.Words API การจัดการเอกสาร Python
-description: เรียนรู้วิธีจัดการส่วนเอกสารและเค้าโครงด้วย Aspose.Words สำหรับ Python สร้าง แก้ไขส่วน ปรับแต่งเค้าโครง และอื่นๆ เริ่มตอนนี้เลย!
+description: เรียนรู้วิธีจัดการส่วนเอกสารและเค้าโครงด้วย Aspose.Words สำหรับ Python สร้าง แก้ไขส่วน ปรับแต่งเค้าโครง และอื่นๆ เริ่มต้นทันที!
 type: docs
 weight: 24
 url: /th/python-net/document-structure-and-content-manipulation/document-sections/

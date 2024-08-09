@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Okej, låt oss dela upp det här steg för steg. Redo? Låt oss börja!
+Okej, låt oss dela upp det här steg för steg. Redo? Låt oss komma igång!
 
 ## Steg 1: Konfigurera din dokumentkatalog
 
@@ -42,7 +42,7 @@ Innan vi kan göra något måste vi ange sökvägen till vår dokumentkatalog. D
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där du vill spara ditt dokument.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där du vill spara ditt dokument.
 
 ## Steg 2: Skapa ett nytt dokument
 
@@ -62,7 +62,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Steg 4: Infoga HTML-innehåll
 
- Nu kommer det roliga – att lägga till HTML-innehållet. Använda`InsertHtml` metod för`DocumentBuilder` klass, kan vi bädda in HTML direkt i vårt Word-dokument.
+ Nu kommer det roliga – att lägga till HTML-innehållet. Med hjälp av`InsertHtml` metod för`DocumentBuilder` klass, kan vi bädda in HTML direkt i vårt Word-dokument.
 
 ```csharp
 builder.InsertHtml(
@@ -82,7 +82,7 @@ Sist men inte minst kommer vi att spara vårt dokument i den angivna katalogen.
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
 ```
 
-Och där har du det! Du har precis infogat HTML i ett Word-dokument med Aspose.Words för .NET. Hög femma!
+Och där har du det! Du har precis infogat HTML i ett Word-dokument med Aspose.Words för .NET. High five!
 
 ## Slutsats
 

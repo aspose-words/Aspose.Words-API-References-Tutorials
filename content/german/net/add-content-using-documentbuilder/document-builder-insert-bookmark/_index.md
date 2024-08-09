@@ -71,7 +71,7 @@ Sobald das Lesezeichen erstellt ist, können wir beliebige Inhalte hinzufügen. 
 builder.Writeln("This is just a fine bookmark.");
 ```
 
- Der`Writeln` Die Methode fügt dem Dokument einen neuen Absatz mit dem angegebenen Text hinzu.
+ Der`Writeln` Methode fügt dem Dokument einen neuen Absatz mit dem angegebenen Text hinzu.
 
 ## Schritt 5: Lesezeichen beenden
 
@@ -106,7 +106,7 @@ Ein Lesezeichen in einem Word-Dokument ist eine Markierung oder ein Platzhalter,
 Ja, Sie können mehrere Lesezeichen hinzufügen. Stellen Sie einfach sicher, dass jedes Lesezeichen einen eindeutigen Namen hat.
 
 ### Wie kann ich programmgesteuert zu einem Lesezeichen navigieren?
- Du kannst den ... benutzen`Document.Range.Bookmarks` Sammlung, um programmgesteuert zu Lesezeichen zu navigieren oder diese zu bearbeiten.
+ Sie können die`Document.Range.Bookmarks` Sammlung, um programmgesteuert zu Lesezeichen zu navigieren oder diese zu bearbeiten.
 
 ### Kann ich einem Lesezeichen komplexe Inhalte hinzufügen?
 Auf jeden Fall! Sie können einem Lesezeichen Text, Tabellen, Bilder oder beliebige andere Elemente hinzufügen.

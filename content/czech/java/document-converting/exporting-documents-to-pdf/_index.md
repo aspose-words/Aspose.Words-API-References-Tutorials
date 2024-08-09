@@ -18,7 +18,7 @@ Než začneme, ujistěte se, že máte splněny následující předpoklady:
 
 - Vývojové prostředí Java: Ujistěte se, že máte v systému nainstalovanou Javu.
 
--  Aspose.Words for Java: Stáhněte si a nainstalujte Aspose.Words for Java z[tady](https://releases.aspose.com/words/java/).
+-  Aspose.Words for Java: Stáhněte si a nainstalujte Aspose.Words for Java z[zde](https://releases.aspose.com/words/java/).
 
 ## Nastavení projektu
 
@@ -73,4 +73,4 @@ Ano, Aspose.Words umí pracovat s heslem chráněnými dokumenty Wordu. V příp
 
 ### Kde najdu další dokumentaci a příklady?
 
- Úplnou dokumentaci a příklady kódu naleznete v dokumentaci Aspose.Words for Java[tady](https://reference.aspose.com/words/java/).
+ Úplnou dokumentaci a příklady kódu naleznete v dokumentaci Aspose.Words for Java[zde](https://reference.aspose.com/words/java/).

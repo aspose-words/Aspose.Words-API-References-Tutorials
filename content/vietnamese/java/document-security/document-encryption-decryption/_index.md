@@ -17,7 +17,7 @@ Trong hướng dẫn này, chúng ta sẽ khám phá cách mã hóa và giải m
 
 Trước khi chúng ta bắt đầu, hãy đảm bảo bạn có những điều sau:
 
-- [Bộ công cụ phát triển Java (JDK)](https://www.oracle.com/java/technologies/javase-downloads.html) Cài đặt.
+- [Bộ công cụ phát triển Java (JDK)](https://www.oracle.com/java/technologies/javase-downloads.html) đã cài đặt.
 - [Aspose.Words cho Java](https://products.aspose.com/words/java) thư viện. Bạn có thể tải nó xuống từ[đây](https://downloads.aspose.com/words/java).
 
 ## Bước 1: Tạo một dự án Java

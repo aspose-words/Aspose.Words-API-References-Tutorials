@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "Comments.docx");
 
 ## Steg 2: Hämta kommentarer
 
- Därefter måste vi få alla kommentarer i dokumentet. Vi kommer att använda`GetChildNodes` metod för att hämta en samling av`Comment` knutpunkter.
+ Därefter måste vi få alla kommentarer i dokumentet. Vi kommer att använda`GetChildNodes` metod för att hämta en samling av`Comment` noder.
 
 ```csharp
 NodeCollection comments = doc.GetChildNodes(NodeType.Comment, true);
@@ -51,9 +51,9 @@ NodeCollection comments = doc.GetChildNodes(NodeType.Comment, true);
 
 Denna kod hämtar alla kommentarer i dokumentet och lagrar dem i en`NodeCollection`.
 
-## Steg 3: Öppna föräldrakommentaren
+## Steg 3: Gå till föräldrakommentaren
 
-För vårt exempel kommer vi att fokusera på den första kommentaren i samlingen. Detta kommer att vara vår föräldrakommentar.
+För vårt exempel kommer vi att fokusera på den första kommentaren i samlingen. Detta kommer att vara vår förälders kommentar.
 
 ```csharp
 Comment parentComment = (Comment)comments[0];
@@ -61,7 +61,7 @@ Comment parentComment = (Comment)comments[0];
 
  Här castar vi den första noden i samlingen till en`Comment` objekt.
 
-## Steg 4: Gå igenom svaren
+## Steg 4: Gå igenom svar
 
  Låt oss nu gå igenom svaren på föräldrakommentaren. Vi använder en`foreach` loop för att iterera över varje svar.
 

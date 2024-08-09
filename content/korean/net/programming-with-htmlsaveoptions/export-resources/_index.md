@@ -92,7 +92,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportResources.html", saveOption
 ## FAQ
 
 ### 글꼴 및 CSS와 함께 이미지를 내보낼 수 있나요?
- 그래 넌 할수있어! Aspose.Words for .NET은 이미지 내보내기도 지원합니다. 구성을 확인하세요.`HtmlSaveOptions` 따라서.
+ 예, 가능합니다! Aspose.Words for .NET은 이미지 내보내기도 지원합니다. 구성을 확인하세요.`HtmlSaveOptions` 따라서.
 
 ### 외부 스타일시트를 사용하는 대신 CSS를 삽입하는 방법이 있나요?
  전적으로. 설정할 수 있습니다`CssStyleSheetType` 에게`CssStyleSheetType.Embedded` 임베디드 스타일을 선호한다면.

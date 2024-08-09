@@ -1,6 +1,6 @@
 ---
-title: Elaborazione di testi
-linktitle: Elaborazione di testi
+title: Elaborazione testi
+linktitle: Elaborazione testi
 second_title: API di elaborazione dei documenti Java Aspose.Words
 description: Impara l'elaborazione testi con Aspose.Words per Java. Crea, modifica e manipola i documenti a livello di codice. Migliora oggi stesso le tue capacità di elaborazione dei documenti.
 type: docs

@@ -9,7 +9,7 @@ url: /fr/net/programming-with-tables/insert-table-from-html/
 ---
 ## Introduction
 
-Avez-vous déjà eu besoin d'insérer un tableau HTML dans un document Word ? Que vous travailliez sur un projet nécessitant la conversion de contenu Web en document Word ou que vous essayiez simplement de rationaliser votre flux de travail, Aspose.Words pour .NET est là pour vous. Dans ce didacticiel, nous vous guiderons tout au long du processus d'insertion d'un tableau HTML dans un document Word à l'aide d'Aspose.Words pour .NET. Nous couvrirons tout ce dont vous avez besoin, des conditions préalables à un guide détaillé étape par étape. Prêt à plonger ? Commençons!
+Avez-vous déjà eu besoin d'insérer un tableau HTML dans un document Word ? Que vous travailliez sur un projet nécessitant la conversion de contenu Web en document Word ou que vous essayiez simplement de rationaliser votre flux de travail, Aspose.Words pour .NET est là pour vous. Dans ce didacticiel, nous vous guiderons tout au long du processus d'insertion d'un tableau HTML dans un document Word à l'aide d'Aspose.Words pour .NET. Nous couvrirons tout ce dont vous avez besoin, des conditions préalables à un guide détaillé étape par étape. Prêt à plonger ? Commençons !
 
 ## Conditions préalables
 
@@ -18,7 +18,7 @@ Avant d'entrer dans le vif du sujet de l'insertion d'un tableau à partir de HTM
 1. Aspose.Words for .NET : téléchargez et installez la bibliothèque Aspose.Words for .NET à partir du[page de téléchargement](https://releases.aspose.com/words/net/).
 2. Environnement de développement : tout environnement de développement compatible .NET comme Visual Studio.
 3. Connaissance de base de C# : Compréhension des concepts de base de la programmation C#.
-4. Code du tableau HTML : Le code HTML du tableau que vous souhaitez insérer.
+4. Code du tableau HTML : le code HTML du tableau que vous souhaitez insérer.
 
 ## Importer des espaces de noms
 
@@ -77,7 +77,7 @@ Enfin, après avoir inséré le tableau, vous devez enregistrer votre document. 
 doc.Save(dataDir + "WorkingWithTables.InsertTableFromHtml.docx");
 ```
 
-Et c'est tout! Vous avez réussi à insérer un tableau HTML dans un document Word à l'aide d'Aspose.Words pour .NET.
+Et c'est tout ! Vous avez réussi à insérer un tableau HTML dans un document Word à l'aide d'Aspose.Words pour .NET.
 
 ## Conclusion
 

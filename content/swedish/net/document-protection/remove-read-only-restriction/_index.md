@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "YourDocument.docx");
 ```
 
- I det här steget, byt ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där ditt dokument är lagrat.`"YourDocument.docx"` är namnet på dokumentet du vill ändra.
+ I detta steg, byt ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där ditt dokument är lagrat.`"YourDocument.docx"` är namnet på dokumentet du vill ändra.
 
 ## Steg 3: Ange ett lösenord (valfritt)
 
@@ -60,7 +60,7 @@ Du kan ställa in ett valfritt lösenord som är upp till 15 tecken långt.
 Låt oss nu ta bort den skrivskyddade rekommendationen från dokumentet.
 
 ```csharp
-// Ta bort alternativet skrivskyddat.
+// Ta bort det skrivskyddade alternativet.
 doc.WriteProtection.ReadOnlyRecommended = false;
 ```
 
@@ -89,7 +89,7 @@ doc.Save(dataDir + "DocumentProtection.RemoveReadOnlyRestriction.docx");
 
 ## Slutsats
 
-Och det är allt! Du har framgångsrikt tagit bort skrivskyddet från ett Word-dokument med Aspose.Words för .NET. Denna process är enkel och säkerställer att dina dokument kan redigeras fritt utan onödiga begränsningar. 
+Och det är det! Du har framgångsrikt tagit bort skrivskyddet från ett Word-dokument med Aspose.Words för .NET. Denna process är enkel och säkerställer att dina dokument kan redigeras fritt utan onödiga begränsningar. 
 
 Oavsett om du arbetar med ett litet projekt eller hanterar flera dokument, kan du spara mycket tid och krångel genom att veta hur man hanterar dokumentskydd. Så fortsätt och prova det i dina projekt. Glad kodning!
 

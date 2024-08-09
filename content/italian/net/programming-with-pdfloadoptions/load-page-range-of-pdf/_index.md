@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-pdfloadoptions/load-page-range-of-pdf/
 ---
-## introduzione
+## Introduzione
 
 Quando si tratta di gestire PDF nelle applicazioni .NET, Aspose.Words per .NET rappresenta un punto di svolta assoluto. Se hai bisogno di convertire, manipolare o estrarre pagine specifiche da un PDF, questa potente libreria ti copre. Oggi ci addentreremo in un compito comune ma cruciale: caricare un intervallo specifico di pagine da un documento PDF. Allacciate le cinture mentre ci imbarchiamo in questo tutorial dettagliato!
 

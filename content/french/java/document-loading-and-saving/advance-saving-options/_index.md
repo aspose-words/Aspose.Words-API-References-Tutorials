@@ -58,7 +58,7 @@ public void doNotCompressSmallMetafiles() throws Exception {
 
 ## Éviter d'enregistrer des puces d'image
 
-Les puces illustrées peuvent être accrocheuses, mais vous souhaiterez peut-être les exclure. Voici comment:
+Les puces illustrées peuvent être accrocheuses, mais vous souhaiterez peut-être les exclure. Voici comment procéder :
 
 ```java
 @Test
@@ -107,7 +107,7 @@ public void doNotSavePictureBullet() throws Exception {
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez appris à utiliser Aspose.Words pour Java pour exécuter des options d'enregistrement avancées. Qu'il s'agisse de chiffrer des documents, de gérer des métafichiers ou de gérer des puces d'images, Aspose.Words for Java vous permet de prendre le contrôle de vos documents Word.
+Félicitations! Vous avez appris à utiliser Aspose.Words pour Java pour exécuter des options d'enregistrement avancées. Qu'il s'agisse de chiffrer des documents, de gérer des métafichiers ou de gérer des puces d'images, Aspose.Words for Java vous permet de prendre le contrôle de vos documents Word.
 
 ## FAQ
 

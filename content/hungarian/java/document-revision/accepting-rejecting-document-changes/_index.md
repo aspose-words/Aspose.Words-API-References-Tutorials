@@ -83,7 +83,7 @@ folyamat további egyszerűsítéséhez automatizálhatja a változtatások elfo
 
 ### Hogyan állapíthatom meg, hogy ki hajtott végre konkrét változtatást a dokumentumban?
 
- Az egyes verziók szerzői adatait a következő használatával érheti el`getAuthor` módszer a`Revision` tárgy.
+ Az egyes verziók szerzői adatait a következő használatával érheti el`getAuthor` módszer a`Revision` objektum.
 
 ### Testreszabhatom a nyomon követett változtatások megjelenését a dokumentumban?
 

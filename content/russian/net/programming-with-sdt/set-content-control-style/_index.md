@@ -103,4 +103,4 @@ doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");
 Абсолютно! Этот метод работает для различных элементов документа. Просто настройте код так, чтобы он нацелился на нужный элемент.
 
 ### Поддерживает ли Aspose.Words другие платформы, кроме .NET?  
-Да, Aspose.Words доступен для Java, C.++ и другие платформы. Проверьте их[документация](https://reference.aspose.com/words/net/) Больше подробностей.
+Да, Aspose.Words доступен для Java, C.++ и другие платформы. Проверьте их[документация](https://reference.aspose.com/words/net/) для более подробной информации.

@@ -96,7 +96,7 @@ Ja, Sie können in einem Dokument mehrere Abschnitte mit jeweils eigenen Layoute
 Ja, Aspose.Words unterstützt verschiedene Word-Formate, darunter DOC, DOCX, RTF und mehr.
 
 ### Wie füge ich Kopf- oder Fußzeilen Bilder hinzu?
- Du kannst den ... benutzen`Shape` Klasse zum Hinzufügen von Bildern zu Kopf- oder Fußzeilen. Detaillierte Anleitungen finden Sie in der API-Dokumentation.
+ Sie können die`Shape` Klasse zum Hinzufügen von Bildern zu Kopf- oder Fußzeilen. Detaillierte Anleitungen finden Sie in der API-Dokumentation.
 
 ### Wo kann ich die neueste Version von Aspose.Words für Python herunterladen?
  Sie können die neueste Version von Aspose.Words für Python herunterladen von der[Aspose.Words veröffentlicht Seite](https://releases.aspose.com/words/python/).

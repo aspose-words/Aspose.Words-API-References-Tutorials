@@ -73,7 +73,7 @@ Hier ist der Code zum Konfigurieren der Importoptionen:
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = true };
 ```
 
- Indem man es einstellt`IgnoreHeaderFooter` Zu`true`, wir weisen Aspose.Words an, Kopf- und Fußzeilen während des Zusammenführungsprozesses zu ignorieren.
+ Durch die Einstellung`IgnoreHeaderFooter` Zu`true`, wir weisen Aspose.Words an, Kopf- und Fußzeilen während des Zusammenführungsprozesses zu ignorieren.
 
 ## Schritt 4: Dokumente zusammenführen
 
@@ -117,7 +117,7 @@ Ja, Aspose.Words bietet verschiedene Optionen zum Anpassen des Importvorgangs, e
 
 ### Benötige ich eine Lizenz, um Aspose.Words für .NET zu verwenden?
 
- Ja, Aspose.Words für .NET ist ein kommerzielles Produkt. Sie können eine[Kostenlose Testphase](https://releases.aspose.com/) oder eine Lizenz erwerben[Hier](https://purchase.aspose.com/buy).
+ Ja, Aspose.Words für .NET ist ein kommerzielles Produkt. Sie können eine[Kostenlose Testversion](https://releases.aspose.com/) oder eine Lizenz erwerben[Hier](https://purchase.aspose.com/buy).
 
 ### Kann ich mit dieser Methode mehr als zwei Dokumente zusammenführen?
 

@@ -26,7 +26,7 @@ Chcete-li začít, musíte načíst dokument aplikace Word, který chcete uloži
 Document doc = new Document("Your Directory Path" + "YourDocument.docx");
 ```
 
- Nahradit`"YourDocument.docx"` s cestou k vašemu dokumentu aplikace Word.
+ Nahradit`"YourDocument.docx"` s cestou k dokumentu aplikace Word.
 
 ## Krok 2: Nakonfigurujte možnosti uložení PCL
 
@@ -85,4 +85,4 @@ Ano, před nákupem máte přístup ke zkušební verzi Aspose.Words for Java a 
 
 ### Kde najdu další zdroje a dokumentaci k Aspose.Words for Java?
 
- Kompletní dokumentaci a zdroje naleznete v dokumentaci Aspose.Words for Java na adrese[tady](https://reference.aspose.com/words/java/).
+ Kompletní dokumentaci a zdroje naleznete v dokumentaci Aspose.Words for Java na adrese[zde](https://reference.aspose.com/words/java/).

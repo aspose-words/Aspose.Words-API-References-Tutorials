@@ -135,7 +135,7 @@ Có, bạn có thể sử dụng Aspose.Words for Java để theo dõi các bả
 
 ### 4. Có bất kỳ yêu cầu cấp phép nào để sử dụng Aspose.Words cho Java không?
 
- Có, bạn sẽ cần phải có giấy phép để sử dụng Aspose.Words for Java trong các dự án của mình. Bạn có thể[có được quyền truy cập vào giấy phép ở đây](https://purchase.aspose.com/buy).
+ Có, bạn sẽ cần phải có giấy phép để sử dụng Aspose.Words for Java trong các dự án của mình. bạn có thể[có được quyền truy cập vào giấy phép ở đây](https://purchase.aspose.com/buy).
 
 ### 5. Tôi có thể tìm hỗ trợ cho Aspose.Words cho Java ở đâu?
 

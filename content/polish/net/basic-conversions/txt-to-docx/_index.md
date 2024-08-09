@@ -65,4 +65,4 @@ Tak, Aspose.Words obsługuje różne platformy .NET, zapewniając kompatybilnoś
 Tak, możesz przetwarzać wsadowo wiele plików tekstowych za pomocą interfejsów API Aspose.Words, aby usprawnić zadania konwersji dokumentów.
 
 ### Gdzie mogę znaleźć więcej zasobów i wsparcia dla Aspose.Words?
- Odwiedzić[Dokumentacja Aspose.Words](https://reference.aspose.com/words/net/)I[forum wsparcia](https://forum.aspose.com/c/words/8) aby uzyskać więcej informacji i pomocy.
+ Odwiedź[Dokumentacja Aspose.Words](https://reference.aspose.com/words/net/)I[forum wsparcia](https://forum.aspose.com/c/words/8) aby uzyskać więcej informacji i pomocy.

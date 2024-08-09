@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-shapes/aspect-ratio-locked/
 ---
-## introduzione
+## Introduzione
 
 Ti sei mai chiesto come mantenere le proporzioni perfette di immagini e forme nei tuoi documenti Word? A volte è necessario assicurarsi che le immagini e le forme non vengano distorte quando vengono ridimensionate. È qui che il blocco delle proporzioni risulta utile. In questo tutorial esploreremo come impostare le proporzioni per le forme nei documenti di Word utilizzando Aspose.Words per .NET. Lo suddivideremo in passaggi facili da seguire, assicurandoci che tu possa applicare queste competenze ai tuoi progetti con sicurezza.
 

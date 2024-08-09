@@ -92,7 +92,7 @@ Console.WriteLine("Cell shading after style expansion: " + cellShadingAfter);
 
 ## 結論
 
-これで完了です。これらの手順に従うと、Aspose.Words for .NET を使用して、Word 文書のスタイルからセルと行の書式設定を簡単に拡張できます。これにより、時間が節約されるだけでなく、文書全体の一貫性も確保されます。コーディングを楽しんでください。
+これで完了です。これらの手順に従うと、Aspose.Words for .NET を使用して、Word ドキュメントのスタイルからセルと行の書式設定を簡単に拡張できます。これにより、時間が節約されるだけでなく、ドキュメント全体の一貫性も確保されます。コーディングを楽しんでください。
 
 ## よくある質問
 
@@ -109,4 +109,4 @@ Aspose.Words for .NET は、開発者がプログラムによって Word 文書�
 スタイルが展開されると、それらはセルに直接適用されます。元に戻すには、ドキュメントを再読み込みするか、スタイルを手動で再適用する必要があります。
 
 ### この方法は Aspose.Words for .NET のすべてのバージョンで機能しますか?
-はい`ExpandTableStylesToDirectFormatting`この方法はAspose.Words for .NETの最新バージョンで利用可能です。[ドキュメンテーション](https://reference.aspose.com/words/net/)最新情報については。
+はい、`ExpandTableStylesToDirectFormatting`この方法はAspose.Words for .NETの最新バージョンで利用可能です。[ドキュメント](https://reference.aspose.com/words/net/)最新情報については。

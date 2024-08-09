@@ -14,7 +14,7 @@ tomto komplexním průvodci prozkoumáme, jak využít sílu rozsahů dokumentů
 
 ## Začínáme
 
- Než se ponoříte do kódu, ujistěte se, že máte v projektu nastavenou knihovnu Aspose.Words for Java. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/java/).
+ Než se ponoříte do kódu, ujistěte se, že máte v projektu nastavenou knihovnu Aspose.Words for Java. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/java/).
 
 ## Vytvoření dokumentu
 
@@ -73,4 +73,4 @@ Absolutně! Rozsahy dokumentů jsou užitečné pro extrahování textu z konkr�
 
 ### Kde najdu knihovnu Aspose.Words for Java?
 
- Knihovnu Aspose.Words for Java si můžete stáhnout z webu Aspose[tady](https://releases.aspose.com/words/java/).
+ Knihovnu Aspose.Words for Java si můžete stáhnout z webu Aspose[zde](https://releases.aspose.com/words/java/).

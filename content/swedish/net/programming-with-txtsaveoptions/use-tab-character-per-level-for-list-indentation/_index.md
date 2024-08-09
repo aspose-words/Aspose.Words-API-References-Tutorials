@@ -121,7 +121,7 @@ Ja, Aspose.Words tillåter anpassning av liststilar på olika nivåer. Du kan ä
  Använd`ListFormat.ApplyBulletDefault()` metod istället för`ApplyNumberDefault()` för att skapa en punktlista.
 
 ### Hur kan jag justera storleken på tabbtecknet som används för indrag?
- Tyvärr har flikstorleken in`TxtSaveOptions`är fixad. För att justera indragsstorleken kan du behöva använda blanksteg eller anpassa listformateringen direkt.
+ Tyvärr har flikstorleken in`TxtSaveOptions`är fast. För att justera indragsstorleken kan du behöva använda blanksteg eller anpassa listformateringen direkt.
 
 ### Kan jag använda dessa inställningar när jag exporterar till andra format som PDF eller DOCX?
 De specifika tabteckeninställningarna gäller för textfiler. För format som PDF eller DOCX skulle du behöva justera formateringsalternativ inom dessa format.

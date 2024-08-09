@@ -9,7 +9,7 @@ url: /sv/net/programming-with-digital-signatures/creating-and-signing-new-signat
 ---
 ## Introduktion
 
-Hallå där! Så du har ett Word-dokument och du måste lägga till en signaturrad och sedan signera den digitalt. Låter det knepigt? Inte alls! Tack vare Aspose.Words för .NET kan du uppnå detta sömlöst med bara några rader kod. I den här självstudien går vi igenom hela processen från att ställa in din miljö till att spara ditt dokument med en skinande ny signatur. Redo? Låt oss dyka in!
+Hej där! Så du har ett Word-dokument och du måste lägga till en signaturrad och sedan signera den digitalt. Låter det knepigt? Inte alls! Tack vare Aspose.Words för .NET kan du uppnå detta sömlöst med bara några rader kod. I den här självstudien går vi igenom hela processen från att ställa in din miljö till att spara ditt dokument med en skinande ny signatur. Redo? Låt oss dyka in!
 
 ## Förutsättningar
 

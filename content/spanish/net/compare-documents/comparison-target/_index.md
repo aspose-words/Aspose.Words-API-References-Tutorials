@@ -42,7 +42,7 @@ Preparemos nuestro proyecto. Inicie su entorno de desarrollo y cree un nuevo pro
 
 ## Paso 2: Instale Aspose.Words para .NET
 
-A continuación, debe agregar Aspose.Words a su proyecto. Puede hacer esto a través del Administrador de paquetes NuGet. Simplemente busque Aspose.Words e instálelo. ¡Pan comido!
+A continuación, debe agregar Aspose.Words a su proyecto. Puede hacer esto a través del Administrador de paquetes NuGet. Simplemente busque Aspose.Words e instálelo. ¡Fácil!
 
 ```bash
 Install-Package Aspose.Words

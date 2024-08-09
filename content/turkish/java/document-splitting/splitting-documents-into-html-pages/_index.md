@@ -20,7 +20,7 @@ Kodun ayrıntılarına girmeden önce aşağıdaki önkoşulların mevcut olduğ
 
 ## giriiş
 
-Günümüzün dijital dünyasında, Word belgelerini HTML sayfalarına dönüştürmek yaygın bir gereksinimdir. Aspose.Words, Word belgelerini zahmetsizce HTML sayfalarına bölmemize olanak tanıyan bir Java API sağlayarak bu görevi basitleştirir. Başlayalım.
+Günümüzün dijital dünyasında, Word belgelerini HTML sayfalarına dönüştürmek yaygın bir gereksinimdir. Aspose.Words, Word belgelerini zahmetsizce HTML sayfalarına bölmemize olanak tanıyan bir Java API sağlayarak bu görevi basitleştirir. Hadi başlayalım.
 
 ## Projenin Kurulumu
 

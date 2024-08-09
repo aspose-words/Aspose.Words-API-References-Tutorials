@@ -40,7 +40,7 @@ using Aspose.Words.Saving;
 ## プロジェクトの作成
 
 1. Visual Studio を開く: まず、Visual Studio またはお好みの C# 開発環境を開きます。
-2. 新しいプロジェクトを作成する:`File > New > Project` 。 選択する`Console App (.NET Core)`またはその他の関連するプロジェクト タイプ。
+2. 新しいプロジェクトを作成する:`File > New > Project`選択`Console App (.NET Core)`またはその他の関連するプロジェクト タイプ。
 3. プロジェクトに名前を付ける: プロジェクトに意味のある名前を付けます。`AsposeWordsExportExample`.
 
 ## Aspose.Words の追加
@@ -124,7 +124,7 @@ doc.Save(dataDir + "ExportedDocument.html", saveOptions);
 
 ### エクスポートされた HTML をカスタマイズできますか?
 
-もちろんです！Aspose.WordsにはHTML出力をカスタマイズするためのさまざまなオプションが用意されています。[ドキュメンテーション](https://reference.aspose.com/words/net/)詳細については。
+もちろんです！Aspose.WordsにはHTML出力をカスタマイズするためのさまざまなオプションが用意されています。[ドキュメント](https://reference.aspose.com/words/net/)詳細についてはこちらをご覧ください。
 
 ### Aspose.Words は .NET Core と互換性がありますか?
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-loadoptions/skip-pdf-images/
 ---
-## introduzione
+## Introduzione
 
 Ehi, appassionati di Aspose.Words! Oggi ci immergiamo in una fantastica funzionalità di Aspose.Words per .NET: come saltare le immagini PDF durante il caricamento di un documento. Questo tutorial ti guiderà attraverso il processo, assicurandoti di cogliere ogni passaggio con facilità. Quindi, allacciati le cinture e preparati a padroneggiare questo ingegnoso trucco.
 
@@ -59,7 +59,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 ### Imposta le opzioni di caricamento per saltare le immagini PDF
 
-Ora configura le opzioni di caricamento del PDF per saltare le immagini. Qui è dove avviene la magia. 
+Ora configura le opzioni di caricamento del PDF per saltare le immagini. È qui che avviene la magia. 
 
 ```csharp
 PdfLoadOptions loadOptions = new PdfLoadOptions { SkipPdfImages = true };
@@ -73,11 +73,11 @@ Una volta impostate le opzioni di caricamento, sei pronto per caricare il docume
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
- Assicurarsi che`"Pdf Document.pdf"` è il nome del file PDF nella directory specificata.
+ Assicuratelo`"Pdf Document.pdf"` è il nome del file PDF nella directory specificata.
 
 ## Conclusione
 
-E il gioco è fatto! Hai appena imparato come saltare le immagini in un documento PDF utilizzando Aspose.Words per .NET. Questa funzionalità è incredibilmente utile quando è necessario elaborare PDF ricchi di testo senza l'ingombro delle immagini. Ricorda, la pratica rende perfetti, quindi prova a sperimentare diversi PDF per vedere come funziona questa funzionalità in vari scenari.
+Ed ecco qua! Hai appena imparato come saltare le immagini in un documento PDF utilizzando Aspose.Words per .NET. Questa funzionalità è incredibilmente utile quando è necessario elaborare PDF ricchi di testo senza l'ingombro delle immagini. Ricorda, la pratica rende perfetti, quindi prova a sperimentare diversi PDF per vedere come funziona questa funzionalità in vari scenari.
 
 ## Domande frequenti
 

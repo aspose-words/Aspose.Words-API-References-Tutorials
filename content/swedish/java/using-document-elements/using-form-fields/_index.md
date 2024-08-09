@@ -2,7 +2,7 @@
 title: Använda formulärfält i Aspose.Words för Java
 linktitle: Använda formulärfält
 second_title: Aspose.Words Java Document Processing API
-description: Lär dig att använda Aspose.Words för Java för att skapa interaktiva Word-dokument med formulärfält. Börja nu!
+description: Lär dig att använda Aspose.Words för Java för att skapa interaktiva Word-dokument med formulärfält. Kom igång nu!
 type: docs
 weight: 14
 url: /sv/java/using-document-elements/using-form-fields/
@@ -48,7 +48,7 @@ public void formFieldsWorkWithProperties() throws Exception {
 }
 ```
 
-## 6. Öppna formulärfältsamlingen
+## 6. Öppna formulärfältsamling
 För att arbeta med formulärfält effektivt kan du komma åt samlingen av formulärfält i ett dokument:
 
 ```java

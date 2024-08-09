@@ -15,7 +15,7 @@ Czy zastanawiałeś się kiedyś, jak sprawić, by Twoje dokumenty Word były ba
 
 Zanim zaczniemy, upewnij się, że masz następujące elementy:
 
-1.  Aspose.Words dla .NET: Możesz pobrać go z[Link do pobrania](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla .NET: Możesz pobrać go z[Pobierz link](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: Visual Studio lub dowolne inne IDE obsługujące programowanie .NET.
 3. Podstawowa znajomość języka C#: Zrozumienie podstawowych koncepcji programowania i składni w języku C#.
 4.  Twój katalog dokumentów: Upewnij się, że masz wyznaczony katalog do zapisywania dokumentów. Będziemy to nazywać`YOUR DOCUMENT DIRECTORY`.
@@ -117,7 +117,7 @@ Formatowanie komórek tabeli może znacznie poprawić czytelność i atrakcyjno�
 Tak, możesz przeglądać komórki w pętli i programowo stosować te same ustawienia formatowania do każdej z nich.
 
 ### Jak sformatować całą tabelę zamiast pojedynczych komórek?
- Możesz ustawić ogólny format tabeli za pomocą`Table` właściwości i metody klasy dostępne w Aspose.Words.
+ Możesz ustawić ogólny format tabeli za pomocą`Table` właściwości i metody klas dostępne w Aspose.Words.
 
 ### Czy mogę zmienić wyrównanie tekstu w komórce?
  Tak, możesz zmienić wyrównanie tekstu za pomocą`ParagraphFormat` własność`DocumentBuilder`.

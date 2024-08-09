@@ -45,7 +45,7 @@ pageSetup.setHeaderDistance(20.0);
 
 ## 5. Annan sidhuvud/sidfot på första sidan
 
-Aspose.Words låter dig ha olika sidhuvuden och sidfötter för första sidan i ditt dokument. Använda sig av`pageSetup.setDifferentFirstPageHeaderFooter(true);` för att aktivera den här funktionen.
+Aspose.Words låter dig ha olika sidhuvuden och sidfötter för första sidan i ditt dokument. Använda`pageSetup.setDifferentFirstPageHeaderFooter(true);` för att aktivera den här funktionen.
 
 ## 6. Arbeta med rubriker
 

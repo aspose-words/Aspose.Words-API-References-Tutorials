@@ -95,7 +95,7 @@ doc.Save(dataDir + "RemoveContent.RemoveFooters.docx");
  예, 유사한 접근 방식을 사용하여 헤더를 제거할 수 있습니다.`HeaderFooterType.HeaderFirst`, `HeaderFooterType.HeaderPrimary` , 그리고`HeaderFooterType.HeaderEven`.
 
 ### .NET용 Aspose.Words는 무료로 사용할 수 있나요?
- Aspose.Words for .NET은 상용 제품이지만[무료 시험판](https://releases.aspose.com/) 기능을 테스트합니다.
+ Aspose.Words for .NET은 상용 제품이지만[무료 평가판](https://releases.aspose.com/) 기능을 테스트합니다.
 
 ### Aspose.Words를 사용하여 Word 문서의 다른 요소를 조작할 수 있나요?
 전적으로! Aspose.Words는 Word 문서 내에서 텍스트, 이미지, 표 등을 조작할 수 있는 광범위한 기능을 제공합니다.

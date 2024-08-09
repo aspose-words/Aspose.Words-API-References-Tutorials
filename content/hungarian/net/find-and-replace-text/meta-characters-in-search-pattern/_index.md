@@ -96,7 +96,7 @@ doc.Save(dataDir + "FindAndReplace.MetaCharactersInSearchPattern.docx");
 
 ## Következtetés
 
-Gratulálunk! Sikeresen manipulált egy Word-dokumentumot metakarakterek használatával a keresési mintákban az Aspose.Words for .NET segítségével. Ez a technika hihetetlenül hasznos a dokumentumszerkesztési és -formázási feladatok automatizálásában. Folytassa a kísérletezést a különböző metakarakterekkel, hogy hatékonyabban kezelje dokumentumait.
+Gratulálok! Sikeresen manipulált egy Word-dokumentumot metakarakterek használatával a keresési mintákban az Aspose.Words for .NET segítségével. Ez a technika hihetetlenül hasznos a dokumentumszerkesztési és -formázási feladatok automatizálásában. Folytassa a kísérletezést a különböző metakarakterekkel, hogy hatékonyabban kezelje dokumentumait.
 
 ## GYIK
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/document-formatting/snap-to-grid/
 ---
-## introduzione
+## Introduzione
 
 Quando si lavora con documenti Word, mantenere un layout coerente e strutturato è fondamentale, soprattutto quando si ha a che fare con formattazioni complesse o contenuti multilingue. Una caratteristica utile che può aiutare a raggiungere questo obiettivo è la funzionalità "Snap to Grid". In questo tutorial, approfondiremo come abilitare e utilizzare Snap to Grid nei tuoi documenti Word utilizzando Aspose.Words per .NET.
 
@@ -137,4 +137,4 @@ Sì, anche se è possibile utilizzare una licenza temporanea a scopo di valutazi
 No, l'abilitazione di Snap to Grid non influisce in modo significativo sulle prestazioni del documento.
 
 ### Dove posso trovare ulteriori informazioni su Aspose.Words per .NET?
- Visitare il[documentazione](https://reference.aspose.com/words/net/)per informazioni dettagliate ed esempi.
+ Visita il[documentazione](https://reference.aspose.com/words/net/)per informazioni dettagliate ed esempi.

@@ -103,4 +103,4 @@ Le rappel d'avertissement vous permet de détecter et de gérer les avertissemen
 Les avertissements peuvent inclure des problèmes liés à des fonctionnalités non prises en charge, des incohérences de formatage ou d'autres problèmes spécifiques au document.
 
 ### Où puis-je trouver plus d’informations sur Aspose.Words pour .NET ?
- Vous pouvez vous référer au[Documentation](https://reference.aspose.com/words/net/)pour des informations détaillées et des exemples.
+ Vous pouvez vous référer au[documentation](https://reference.aspose.com/words/net/)pour des informations détaillées et des exemples.

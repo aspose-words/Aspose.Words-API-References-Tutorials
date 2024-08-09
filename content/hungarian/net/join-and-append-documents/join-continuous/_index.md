@@ -85,7 +85,7 @@ Győződjön meg arról, hogy az elérési út és a fájlnév megfelel az Ön i
 
 ## Következtetés
 
-És megvan! Néhány sornyi kóddal sikeresen egyesített két Word-dokumentumot egy folyamatos dokumentummá az Aspose.Words for .NET segítségével. Ez a folyamat nem csak egyszerű, hanem rendkívül hatékony is, biztosítva, hogy a dokumentumok megőrizzék eredeti formázásukat.
+És megvan! Néhány sornyi kóddal sikeresen egyesített két Word-dokumentumot egyetlen folyamatos dokumentummá az Aspose.Words for .NET segítségével. Ez a folyamat nem csak egyszerű, hanem rendkívül hatékony is, biztosítva, hogy a dokumentumok megőrizzék eredeti formázásukat.
 
 ## GYIK
 

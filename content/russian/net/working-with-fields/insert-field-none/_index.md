@@ -70,7 +70,7 @@ FieldUnknown field = (FieldUnknown)builder.InsertField(FieldType.FieldNone, fals
 doc.Save(dataDir + "InsertionFieldNone.docx");
 ```
 
-Вот и все! Вы только что создали документ Word и вставили поле с помощью Aspose.Words для .NET. Довольно аккуратно, правда?
+И все! Вы только что создали документ Word и вставили поле с помощью Aspose.Words для .NET. Довольно аккуратно, правда?
 
 ## Заключение
 

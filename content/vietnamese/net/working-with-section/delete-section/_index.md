@@ -9,7 +9,7 @@ url: /vi/net/working-with-section/delete-section/
 ---
 ## Giới thiệu
 
-Vì vậy, bạn đã quyết định đi sâu vào thế giới thao tác tài liệu bằng Aspose.Words cho .NET. Sự lựa chọn tuyệt vời! Aspose.Words là một thư viện mạnh mẽ để xử lý tất cả những thứ liên quan đến tài liệu Word. Cho dù bạn đang xử lý việc tạo, sửa đổi hay chuyển đổi, Aspose.Words đều có thể giúp bạn. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn cách xóa một phần khỏi tài liệu Word. Sẵn sàng để trở thành một chuyên gia Aspose? Bắt đầu nào!
+Vì vậy, bạn đã quyết định đi sâu vào thế giới thao tác tài liệu bằng Aspose.Words cho .NET. Sự lựa chọn tuyệt vời! Aspose.Words là một thư viện mạnh mẽ để xử lý tất cả những thứ liên quan đến tài liệu Word. Cho dù bạn đang xử lý việc tạo, sửa đổi hay chuyển đổi, Aspose.Words đều có thể giúp bạn. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn cách xóa một phần khỏi tài liệu Word. Sẵn sàng để trở thành một chuyên gia Aspose? Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 

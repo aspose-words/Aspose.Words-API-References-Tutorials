@@ -9,7 +9,7 @@ url: /vi/net/programming-with-txtsaveoptions/use-space-character-per-level-for-l
 ---
 ## Giới thiệu
 
-Khi nói đến định dạng tài liệu, đặc biệt là khi làm việc với danh sách, độ chính xác là điều quan trọng nhất. Trong trường hợp bạn cần tạo tài liệu với nhiều mức độ thụt lề khác nhau, Aspose.Words for .NET cung cấp các công cụ mạnh mẽ để xử lý tác vụ này. Một tính năng cụ thể có thể hữu ích là định cấu hình thụt lề danh sách trong tệp văn bản. Hướng dẫn này sẽ hướng dẫn bạn cách sử dụng các ký tự khoảng trắng để thụt lề danh sách, đảm bảo tài liệu của bạn duy trì cấu trúc và khả năng đọc mong muốn.
+Khi nói đến định dạng tài liệu, đặc biệt là khi làm việc với danh sách, độ chính xác là điều quan trọng nhất. Trong trường hợp bạn cần tạo tài liệu với nhiều mức độ thụt lề khác nhau, Aspose.Words for .NET cung cấp các công cụ mạnh mẽ để xử lý tác vụ này. Một tính năng cụ thể có thể hữu ích là định cấu hình thụt lề danh sách trong tệp văn bản. Hướng dẫn này sẽ hướng dẫn bạn cách sử dụng ký tự khoảng trắng để thụt lề danh sách, đảm bảo tài liệu của bạn duy trì cấu trúc và khả năng đọc mong muốn.
 
 ## Điều kiện tiên quyết
 

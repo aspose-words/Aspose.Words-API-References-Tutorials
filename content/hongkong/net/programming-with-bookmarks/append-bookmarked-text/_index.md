@@ -15,7 +15,7 @@ url: /zh-hant/net/programming-with-bookmarks/append-bookmarked-text/
 
 在開始之前，讓我們確保您擁有所需的一切：
 
--  Aspose.Words for .NET：確保您已安裝它。如果沒有，您可以[在這裡下載](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET：確保您已安裝它。如果沒有，你可以[在這裡下載](https://releases.aspose.com/words/net/).
 - 開發環境：任何 .NET 開發環境，例如 Visual Studio。
 - C# 基礎知識：了解基本 C# 程式設計概念將會有所幫助。
 - 帶有書籤的 Word 文件：設定了書籤的 Word 文檔，我們將用它來附加文字。
@@ -104,7 +104,7 @@ dstDoc.Save("appended_document.docx");
 
 ## 結論
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 成功從 Word 文件中的書籤部分附加文字。這個強大的工具使文件操作變得輕而易舉，現在您還有一個錦囊妙計。快樂編碼！
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功從 Word 文件中的書籤部分附加文字。這個強大的工具使文件操作變得輕而易舉，現在您還有一個錦囊妙計。快樂編碼！
 
 ## 常見問題解答
 

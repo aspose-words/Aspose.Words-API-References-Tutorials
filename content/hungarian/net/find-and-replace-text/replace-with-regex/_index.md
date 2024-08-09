@@ -9,7 +9,7 @@ url: /hu/net/find-and-replace-text/replace-with-regex/
 ---
 ## Bevezetés
 
-Halihó! Volt már olyan, hogy szöveget kell kicserélnie egy Word-dokumentumban, de valamivel több energiára van szüksége, mint egy egyszerű keresésre és cserére? Talán szüksége van valamire, ami képes kezelni a mintákat és a helyettesítő karaktereket? Nos, szerencséd van! Az Aspose.Words for .NET reguláris kifejezés alapú keresési és cserefunkciójával rendelkezik. Ebben az oktatóanyagban azt mutatjuk be, hogyan használhatja a regex-et a Word-dokumentumok szövegének helyettesítésére az Aspose.Words for .NET használatával. Mindent lépésről lépésre bontunk le, így még akkor is, ha még nem ismeri a regexet vagy az Aspose.Words-t, akkor is gyorsan követheti a lépést, és gyorsan felgyorsulhat.
+Szia! Volt már olyan, hogy szöveget kell kicserélnie egy Word-dokumentumban, de valamivel több energiára van szüksége, mint egy egyszerű keresésre és cserére? Talán szüksége van valamire, ami képes kezelni a mintákat és a helyettesítő karaktereket? Nos, szerencséd van! Az Aspose.Words for .NET reguláris kifejezés alapú keresési és cserefunkciójával rendelkezik. Ebben az oktatóanyagban azt mutatjuk be, hogyan használhatja a regex-et a Word-dokumentumok szövegének helyettesítésére az Aspose.Words for .NET használatával. Mindent lépésről lépésre bontunk le, így még akkor is, ha még nem ismeri a regexet vagy az Aspose.Words-t, akkor is gyorsan követheti a lépést, és gyorsan felgyorsulhat.
 
 ## Előfeltételek
 
@@ -93,10 +93,10 @@ doc.Save(dataDir + "FindAndReplace.ReplaceWithRegex.docx");
 Teljesen! Az Aspose.Words a regex minták széles skáláját támogatja. A mintáit úgy alakíthatja, hogy azok pontosan megfeleljenek az Ön igényeinek.
 
 ### Az Aspose.Words for .NET támogat más szöveges műveleteket?  
-Dehogynem. Az Aspose.Words for .NET funkciók gazdag készletét kínálja a Word-dokumentumok kezeléséhez, beleértve a szövegkivonatot, a formázást és egyebeket.
+Igen, igen. Az Aspose.Words for .NET funkciók gazdag készletét kínálja a Word-dokumentumok kezeléséhez, beleértve a szövegkivonatot, a formázást és egyebeket.
 
 ### Cserélhetem a szöveget a dokumentum egyes szakaszaiban?  
-Igen tudsz. Különböző módszereket használhat bizonyos szakaszok, bekezdések vagy akár fejlécek és láblécek célzására a dokumentumban.
+Igen, megteheti. Különböző módszereket használhat bizonyos szakaszok, bekezdések vagy akár fejlécek és láblécek célzására a dokumentumban.
 
 ### Van mód a módosítások előnézetére a dokumentum mentése előtt?  
 Míg az Aspose.Words nem biztosít közvetlen előnézeti funkciót, a módosítások elvégzése és a verziók összehasonlítása előtt bármikor elmentheti a dokumentum másolatát.

@@ -2,7 +2,7 @@
 title: Deteksi Bentuk Seni Cerdas
 linktitle: Deteksi Bentuk Seni Cerdas
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mendeteksi bentuk SmartArt di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan komprehensif ini. Sempurna untuk mengotomatiskan alur kerja dokumen Anda.
+description: Pelajari cara mendeteksi bentuk SmartArt di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan komprehensif ini. Sempurna untuk mengotomatisasi alur kerja dokumen Anda.
 type: docs
 weight: 10
 url: /id/net/programming-with-shapes/detect-smart-art-shape/
@@ -86,7 +86,7 @@ Dan itu dia! Anda telah berhasil mempelajari cara mendeteksi bentuk SmartArt di 
 
 ### 1. Apa itu Aspose.Words untuk .NET?
 
-Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang membuat, memanipulasi, dan mengonversi dokumen Word secara terprogram. Ini ideal untuk mengotomatisasi tugas-tugas yang berhubungan dengan dokumen.
+Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang membuat, memanipulasi, dan mengonversi dokumen Word secara terprogram. Ini ideal untuk mengotomatiskan tugas-tugas terkait dokumen.
 
 ### 2. Bisakah saya menggunakan Aspose.Words untuk .NET secara gratis?
 
@@ -102,4 +102,4 @@ Anda bisa mendapatkan dukungan dengan mengunjungi[Asumsikan forum dukungan](http
 
 ### 5. Bisakah saya memanipulasi bentuk SmartArt secara terprogram?
 
- Ya, Aspose.Words memungkinkan Anda memanipulasi bentuk SmartArt secara terprogram. Periksalah[dokumentasi](https://reference.aspose.com/words/net/) untuk petunjuk rinci.
+ Ya, Aspose.Words memungkinkan Anda memanipulasi bentuk SmartArt secara terprogram. Periksa[dokumentasi](https://reference.aspose.com/words/net/) untuk petunjuk rinci.

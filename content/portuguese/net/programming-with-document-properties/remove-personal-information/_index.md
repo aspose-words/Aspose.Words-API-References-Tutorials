@@ -15,7 +15,7 @@ Ei! Você já se viu afogado em tarefas de gerenciamento de documentos? Todos n�
 
 Antes de sujarmos as mãos, vamos ter certeza de que você tem tudo o que precisa:
 
-1.  Aspose.Words for .NET: Se ainda não o fez, faça o download[aqui](https://releases.aspose.com/words/net/) . Você também pode pegar um[teste grátis](https://releases.aspose.com/) se você está apenas começando.
+1.  Aspose.Words for .NET: Se ainda não o fez, faça o download[aqui](https://releases.aspose.com/words/net/) . Você também pode pegar um[teste gratuito](https://releases.aspose.com/) se você está apenas começando.
 2. Ambiente de desenvolvimento: Visual Studio ou qualquer outro ambiente de desenvolvimento .NET de sua preferência.
 3. Conhecimento básico de C#: você não precisa ser um mago, mas um pouco de familiaridade ajudará muito.
 
@@ -76,7 +76,7 @@ As informações pessoais incluem nomes de autores, propriedades do documento e 
 
 ### O Aspose.Words para .NET é gratuito?
 
- Aspose.Words oferece um[teste grátis](https://releases.aspose.com/) para que você possa testá-lo, mas precisará adquirir uma licença para obter todas as funcionalidades. Confira a[preços](https://purchase.aspose.com/buy) para mais detalhes.
+ Aspose.Words oferece um[teste gratuito](https://releases.aspose.com/) para que você possa testá-lo, mas precisará adquirir uma licença para obter todas as funcionalidades. Confira o[preços](https://purchase.aspose.com/buy) para mais detalhes.
 
 ### Posso usar Aspose.Words para outros formatos de documentos?
 
@@ -84,7 +84,7 @@ Absolutamente! Aspose.Words suporta uma variedade de formatos, incluindo DOCX, P
 
 ### Como posso obter suporte se tiver problemas?
 
- Você pode visitar o Aspose.Words[Fórum de suporte](https://forum.aspose.com/c/words/8) para obter ajuda com quaisquer problemas ou dúvidas que você possa ter.
+ Você pode visitar o Aspose.Words[fórum de suporte](https://forum.aspose.com/c/words/8) para obter ajuda com quaisquer problemas ou dúvidas que você possa ter.
 
 ### Que outros recursos o Aspose.Words oferece?
 

@@ -26,7 +26,7 @@ Um einem Dokument einen Web-Erweiterungsaufgabenbereich hinzuzufügen, führen S
 Document doc = new Document();
 ```
 
-##  Ein ... kreieren`TaskPane` instance and add it to the document's web extension task panes:
+##  Erstellen Sie ein`TaskPane` instance and add it to the document's web extension task panes:
 
 ```java
 TaskPane taskPane = new TaskPane();

@@ -15,7 +15,7 @@ Salut! Si vous avez déjà travaillé avec des documents Word par programmation,
 
 Avant de commencer, assurez-vous d'avoir mis en place les éléments suivants :
 
-1.  Aspose.Words for .NET : Cette bibliothèque est essentielle pour manipuler les documents Word par programme. Si ce n'est pas déjà fait, vous pouvez[Télécharger les ici](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET : Cette bibliothèque est essentielle pour manipuler les documents Word par programme. Si ce n'est pas déjà fait, vous pouvez[téléchargez-le ici](https://releases.aspose.com/words/net/).
    
 2. Visual Studio : vous aurez besoin d'un IDE pour écrire et exécuter votre code .NET. Visual Studio est un choix populaire.
 
@@ -29,7 +29,7 @@ Tout est prêt ? Super! Passons aux choses amusantes.
 
 ## Importer des espaces de noms
 
-Pour démarrer avec Aspose.Words pour .NET, vous devrez importer les espaces de noms nécessaires dans votre projet C#. Voici comment procéder :
+Pour démarrer avec Aspose.Words for .NET, vous devrez importer les espaces de noms nécessaires dans votre projet C#. Voici comment procéder :
 
 ```csharp
 using Aspose.Words;

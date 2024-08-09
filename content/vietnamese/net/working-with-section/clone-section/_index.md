@@ -10,7 +10,7 @@ url: /vi/net/working-with-section/clone-section/
 
 ## Giới thiệu
 
-Này các bạn lập trình viên! 🚀 Bạn đã bao giờ chìm đắm trong một dự án tài liệu Word và ước gì mình có thể sao chép một phần thay vì làm lại tất cả công việc khó khăn đó chưa? Cũng đoán những gì? Với Aspose.Words cho .NET, bạn có thể dễ dàng sao chép các phần trong tài liệu Word của mình. Hướng dẫn này sẽ hướng dẫn bạn thực hiện quy trình theo từng bước, giúp bạn dễ dàng sao chép các phần trong tài liệu của mình. Vì vậy, hãy đi sâu vào và thực hiện các tác vụ thao tác tài liệu của bạn dễ dàng hơn rất nhiều!
+Này các bạn lập trình viên! 🚀 Bạn đã bao giờ chìm đắm trong một dự án tài liệu Word và ước gì mình có thể sao chép một phần thay vì làm lại tất cả công việc khó khăn đó chưa? Vâng, đoán xem? Với Aspose.Words cho .NET, bạn có thể dễ dàng sao chép các phần trong tài liệu Word của mình. Hướng dẫn này sẽ hướng dẫn bạn thực hiện quy trình theo từng bước, giúp bạn dễ dàng sao chép các phần trong tài liệu của mình. Vì vậy, hãy đi sâu vào và thực hiện các tác vụ thao tác tài liệu của bạn dễ dàng hơn rất nhiều!
 
 ## Điều kiện tiên quyết
 
@@ -89,7 +89,7 @@ doc.Save(dataDir + "ClonedDocument.docx");
 
  Thay thế`"dataDir + "ClonedDocument.docx"` với đường dẫn thực tế nơi bạn muốn lưu tài liệu của mình. Dòng mã này sẽ lưu tệp Word của bạn, hoàn chỉnh với phần được sao chép.
 
-## Hướng dẫn từng bước một
+## Hướng dẫn từng bước
 
 Hãy chia nhỏ ví dụ thành hướng dẫn chi tiết từng bước để đảm bảo sự rõ ràng và dễ hiểu.
 
@@ -138,7 +138,7 @@ doc.Save(dataDir + "ClonedDocument.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! 🎉 Bạn đã sao chép thành công một phần trong tài liệu Word bằng Aspose.Words for .NET. Tính năng mạnh mẽ này có thể giúp bạn tiết kiệm rất nhiều thời gian và công sức, đặc biệt khi xử lý các cấu trúc tài liệu lặp đi lặp lại. Hãy nhớ rằng, các phần là một cách tuyệt vời để sắp xếp nội dung của bạn và việc có thể sao chép chúng theo chương trình sẽ mang lại mức độ hiệu quả hoàn toàn mới. Chúc mừng mã hóa!
+Và bạn có nó! 🎉 Bạn đã sao chép thành công một phần trong tài liệu Word bằng Aspose.Words for .NET. Tính năng mạnh mẽ này có thể giúp bạn tiết kiệm rất nhiều thời gian và công sức, đặc biệt khi xử lý các cấu trúc tài liệu lặp đi lặp lại. Hãy nhớ rằng, các phần là một cách tuyệt vời để sắp xếp nội dung của bạn và việc có thể sao chép chúng theo chương trình sẽ mang lại mức độ hiệu quả hoàn toàn mới. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 
@@ -160,4 +160,4 @@ Có, Aspose.Words hỗ trợ nhiều định dạng Word khác nhau, bao gồm D
 
 ### Tôi có thể tìm thêm tài nguyên trên Aspose.Words ở đâu?
 
- Để biết thêm thông tin, bạn có thể truy cập[Tài liệu Aspose.Words](https://reference.aspose.com/words/net/) hoặc là[diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8) để được giúp đỡ và thảo luận.
+ Để biết thêm thông tin, bạn có thể truy cập[Tài liệu Aspose.Words](https://reference.aspose.com/words/net/) hoặc[diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8) để được giúp đỡ và thảo luận.

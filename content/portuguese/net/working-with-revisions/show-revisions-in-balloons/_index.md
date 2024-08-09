@@ -2,94 +2,90 @@
 title: Mostrar revisões em balões
 linktitle: Mostrar revisões em balões
 second_title: API de processamento de documentos Aspose.Words
-description: Mostre revisões em balões com Aspose.Words for .NET.
+description: Aprenda como mostrar revisões em balões usando Aspose.Words for .NET. Este guia detalhado orienta você em cada etapa, garantindo que as alterações no documento sejam claras e organizadas.
 type: docs
 weight: 10
 url: /pt/net/working-with-revisions/show-revisions-in-balloons/
 ---
+## Introdução
 
-Neste guia passo a passo, mostraremos como mostrar revisões em balões em um documento do Word usando Aspose.Words for .NET. Forneceremos o código-fonte completo e mostraremos como formatar a saída do markdown.
+Rastrear alterações em um documento do Word é crucial para colaboração e edição. Aspose.Words for .NET oferece ferramentas robustas para gerenciar essas revisões, garantindo clareza e facilidade de revisão. Este guia irá ajudá-lo a exibir as revisões em balões, facilitando a visualização de quais alterações foram feitas e por quem.
 
-## Passo 1: Carregando o documento
+## Pré-requisitos
 
-primeiro passo é fazer o upload do documento contendo as revisões.
+Antes de começarmos, certifique-se de ter o seguinte:
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(MyDir + "Revisions.docx");
-```
+-  Biblioteca Aspose.Words para .NET. Você pode baixá-lo[aqui](https://releases.aspose.com/words/net/).
+-  Uma licença Aspose válida. Se você não tiver um, você pode obter um[licença temporária](https://purchase.aspose.com/temporary-license/).
+- Visual Studio ou qualquer outro IDE que ofereça suporte ao desenvolvimento .NET.
+- Compreensão básica do framework C# e .NET.
 
-## Etapa 2: configurar opções de exibição de avaliações
+## Importar namespaces
 
-Configuraremos as opções de exibição para tornar as revisões visíveis em balões.
-
-```csharp
-doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
-doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
-doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
-```
-
-## Passo 3: Salve o documento em formato PDF
-
-Por fim, salvaremos o documento como PDF com as revisões mostradas em balões.
+Primeiramente, vamos importar os namespaces necessários em seu projeto C#. Esses namespaces são essenciais para acessar as funcionalidades do Aspose.Words.
 
 ```csharp
-doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
+using Aspose.Words;
+using Aspose.Words.Layout;
+using Aspose.Words.RevisionOptions;
 ```
 
-## Formatos de saída Markdown
+Vamos dividir o processo em etapas simples e fáceis de seguir.
 
-A saída pode ser formatada em markdown para melhorar a legibilidade. Por exemplo :
+## Etapa 1: carregue seu documento
 
-```markdown
-- Revisions are Showed in bubbles with revision bars on the right side.
-```
-
-### Exemplo de código-fonte para Mostrar revisões em balões usando Aspose.Words for .NET
-
-Aqui está o código-fonte completo para mostrar revisões em balões em um documento usando Aspose.Words for .NET:
+Primeiro, precisamos carregar o documento que contém as revisões. Certifique-se de que o caminho do documento esteja correto.
 
 ```csharp
 // O caminho para o diretório de documentos.
-string dataDir = "YOUR DOCUMENT DIRECTORY";	
-Document doc = new Document(MyDir + "Revisions.docx");
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Revisions.docx");
+```
 
+## Etapa 2: configurar opções de revisão
+
+seguir, configuraremos as opções de revisão para exibir revisões de inserção inline e excluir e formatar revisões em balões. Isso torna mais fácil diferenciar entre diferentes tipos de revisões.
+
+```csharp
 // Renderiza inserções de revisões inline, exclusão e formatação de revisões em balões.
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
 doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
+```
+
+## Etapa 3: definir a posição das barras de revisão
+
+Para tornar o documento ainda mais legível, podemos definir a posição das barras de revisão. Neste exemplo, vamos colocá-los no lado direito da página.
+
+```csharp
 // Renderiza barras de revisão no lado direito de uma página.
 doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
+```
 
+## Etapa 4: salve o documento
+
+Por fim, salvaremos o documento como PDF. Isso nos permitirá ver as revisões no formato desejado.
+
+```csharp
 doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
 ```
 
 ## Conclusão
 
-Neste tutorial, aprendemos como exibir revisões em balões em um documento do Word usando Aspose.Words for .NET. Usando as opções de exibição apropriadas, conseguimos tornar as revisões visíveis em bolhas com barras de revisão no lado direito. Aspose.Words for .NET oferece muitos recursos poderosos para manipular documentos do Word, incluindo gerenciamento de revisões. Agora você pode usar esse conhecimento para mostrar revisões em balões em seus próprios documentos do Word usando Aspose.Words for .NET.
+E aí está! Seguindo estas etapas simples, você pode mostrar facilmente as revisões em balões usando Aspose.Words for .NET. Isso facilita a revisão e a colaboração em documentos, garantindo que todas as alterações sejam claramente visíveis e organizadas. Boa codificação!
 
+## Perguntas frequentes
 
-### Perguntas frequentes
+### Posso personalizar a cor das barras de revisão?
+Sim, Aspose.Words permite que você personalize a cor das barras de revisão de acordo com suas preferências.
 
-#### P: Como fazer upload de um documento no Aspose.Words for .NET?
+### É possível mostrar apenas tipos específicos de revisões em balões?
+Absolutamente. Você pode configurar o Aspose.Words para exibir apenas certos tipos de revisões, como exclusões ou alterações de formatação, em balões.
 
- R: Use o`Document` classe de Aspose.Words for .NET para carregar um documento de um arquivo. Você pode especificar o caminho completo do documento.
+### Como obtenho uma licença temporária do Aspose.Words?
+ Você pode obter uma licença temporária[aqui](https://purchase.aspose.com/temporary-license/).
 
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
+### Posso usar Aspose.Words for .NET com outras linguagens de programação?
+Aspose.Words foi projetado principalmente para .NET, mas você pode usá-lo com qualquer linguagem compatível com .NET, incluindo VB.NET e C++/CLI.
 
-#### P: Como exibir revisões em balões com Aspose.Words for .NET?
-
- R: Use o`ShowInBalloons` propriedade do`RevisionOptions` objeto para configurar a exibição de revisões em balões. Você pode definir esta propriedade em`ShowInBalloons.FormatAndDelete` para mostrar revisões em balões com revisões de exclusão e formatação.
-
-```csharp
-doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
-```
-
-#### P: Como salvar um documento em formato PDF com Aspose.Words for .NET?
-
- R: Use o`Save` método do`Document` objeto para salvar o documento em formato PDF. Você deve especificar o caminho de destino completo com a extensão ".pdf".
-
-```csharp
-doc.Save("path/to/destination/document.pdf");
-```
+### O Aspose.Words oferece suporte a outros formatos de documento além do Word?
+Sim, Aspose.Words suporta vários formatos de documentos, incluindo PDF, HTML, EPUB e muito mais.

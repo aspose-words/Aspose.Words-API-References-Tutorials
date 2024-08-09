@@ -126,4 +126,4 @@ Hoewel VBA-macro's de automatisering kunnen verbeteren, kunnen ze ook veiligheid
 Absoluut! Met Aspose.Words Python- en VBA-macro's kunt u het maken en vullen van documenten automatiseren met behulp van gegevens uit externe bronnen, databases of API's.
 
 ### Waar kan ik meer bronnen en voorbeelden vinden voor Aspose.Words Python?
- U kunt een uitgebreide verzameling bronnen, zelfstudies en voorbeelden bekijken op de website[Aspose.Words Python API-referenties](https://reference.aspose.com/words/python-net/) bladzijde.
+ U kunt een uitgebreide verzameling bronnen, zelfstudies en voorbeelden bekijken op de website[Aspose.Words Python API-referenties](https://reference.aspose.com/words/python-net/) pagina.

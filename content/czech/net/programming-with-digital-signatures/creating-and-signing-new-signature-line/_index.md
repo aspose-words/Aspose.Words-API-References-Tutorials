@@ -7,9 +7,9 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-digital-signatures/creating-and-signing-new-signature-line/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Takže máte dokument aplikace Word a musíte přidat řádek podpisu a poté jej digitálně podepsat. Zní to složitě? Vůbec ne! Díky Aspose.Words pro .NET toho můžete dosáhnout bez problémů s několika řádky kódu. V tomto tutoriálu vás provedeme celým procesem od nastavení prostředí až po uložení dokumentu s novým zářivým podpisem. Připraveni? Pojďme se ponořit!
+Ahoj! Takže máte dokument aplikace Word a musíte přidat řádek podpisu a poté jej digitálně podepsat. Zní to složitě? Vůbec ne! Díky Aspose.Words pro .NET toho můžete dosáhnout bez problémů s několika řádky kódu. V tomto tutoriálu vás provedeme celým procesem od nastavení prostředí až po uložení dokumentu s novým zářivým podpisem. Připraveni? Pojďme se ponořit!
 
 ## Předpoklady
 
@@ -105,7 +105,7 @@ A tady to máte! Pomocí těchto kroků jste úspěšně vytvořili nový dokume
 Ano, můžete použít různé formáty obrázků jako PNG, JPG, BMP atd.
 
 ###  Je nutné použít a`.pfx` file for the certificate?
- Ano`.pfx` soubor je běžný formát pro ukládání kryptografických informací včetně certifikátů a soukromých klíčů.
+ Ano, a`.pfx` soubor je běžný formát pro ukládání kryptografických informací včetně certifikátů a soukromých klíčů.
 
 ### Mohu přidat více řádků podpisu do jednoho dokumentu?
 Absolutně! Můžete vložit více řádků podpisu opakováním kroku vložení pro každý podpis.

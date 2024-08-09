@@ -9,7 +9,7 @@ url: /hu/net/programming-with-pdfsaveoptions/skip-embedded-arial-and-times-roman
 ---
 ## Bevezetés
 
-Előfordult már, hogy olyan helyzetbe került, amikor a PDF-fájl mérete túl nagy? Olyan ez, mintha nyaralásra pakolnál, és észrevennéd, hogy a bőrönd szétreped. Tudod, hogy le kell fogynod, de mit engedsz el? Amikor PDF-fájlokkal dolgozik, különösen a Word-dokumentumokból konvertált fájlokkal, a beágyazott betűtípusok megnövelhetik a fájlméretet. Szerencsére az Aspose.Words for .NET egy karcsú megoldást kínál arra, hogy PDF-fájljait karcsú és aljas maradjon. Ebben az oktatóanyagban azt mutatjuk be, hogyan optimalizálhatja PDF méretét a beágyazott Arial és Times Roman betűtípusok kihagyásával. Kezdjük el!
+Előfordult már, hogy olyan helyzetbe került, amikor a PDF-fájl mérete túl nagy? Olyan ez, mintha nyaralásra pakolnál, és észrevennéd, hogy a bőrönd szétreped. Tudod, hogy le kell fogynod, de mit engedsz el? Amikor PDF-fájlokkal dolgozik, különösen a Word-dokumentumokból konvertált fájlokkal, a beágyazott betűtípusok megnövelhetik a fájlméretet. Szerencsére az Aspose.Words for .NET egy karcsú megoldást kínál arra, hogy PDF-fájljait karcsú és aljas maradjon. Ebben az oktatóanyagban azt mutatjuk be, hogyan optimalizálhatja PDF méretét a beágyazott Arial és Times Roman betűtípusok kihagyásával. Kezdjük is!
 
 ## Előfeltételek
 

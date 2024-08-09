@@ -24,4 +24,4 @@ Aspose.Words for Python ile Belge İstihbaratında uzmanlaşarak geliştiriciler
 
 ## Python Belge İstihbaratı Eğitimleri
 ### [Ana Belge İstihbaratı](./master-document-intelligence/)
-Aspose.Words for Python ile belge zekasında ustalaşın. İş akışlarını otomatikleştirin, verileri analiz edin ve belgeleri verimli bir şekilde işleyin. Şimdi başla!
+Aspose.Words for Python ile belge zekasında ustalaşın. İş akışlarını otomatikleştirin, verileri analiz edin ve belgeleri verimli bir şekilde işleyin. Şimdi başlayın!

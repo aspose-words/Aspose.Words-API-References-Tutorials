@@ -64,7 +64,7 @@ Dělení slov je proces přidávání pomlček na konec řádků, aby se zlepši
 
 ### 2. Mohu používat dělení slov ve více jazycích?
 
-Ano můžeš. Aspose.Words for Java umožňuje zaregistrovat a načíst slovníky dělení slov pro různé jazyky.
+Ano, můžete. Aspose.Words for Java umožňuje zaregistrovat a načíst slovníky dělení slov pro různé jazyky.
 
 ### 3. Lze Aspose.Words for Java snadno integrovat do mého projektu Java?
 

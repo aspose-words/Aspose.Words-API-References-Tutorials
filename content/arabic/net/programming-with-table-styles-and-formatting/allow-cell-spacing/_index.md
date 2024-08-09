@@ -87,7 +87,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 table.AllowCellSpacing = true;
 ```
 
-### الخطوة 4.2: قم بتعيين مقدار تباعد الخلايا
+### الخطوة 4.2: ضبط مقدار تباعد الخلايا
 
 تحديد مقدار تباعد الخلايا. هنا، نقوم بتعيينه إلى نقطتين.
 
@@ -99,7 +99,7 @@ table.CellSpacing = 2;
 
 وأخيرًا، احفظ المستند المعدل في الدليل المحدد.
 
- استخدم ال`Save` طريقة حفظ المستند الخاص بك.
+ استخدم`Save` طريقة حفظ المستند الخاص بك.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.AllowCellSpacing.docx");

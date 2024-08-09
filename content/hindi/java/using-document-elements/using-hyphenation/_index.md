@@ -50,7 +50,7 @@ Hyphenation.registerDictionary("de-CH", stream);
 doc.save(outPath + "WorkingWithHyphenation.LoadHyphenationDictionaryForLanguage.pdf");
 ```
 
-## 6। निष्कर्ष
+## 6. निष्कर्ष
 
 हाइफ़नेशन आपके दस्तावेज़ों की गुणवत्ता और सौंदर्य को बनाए रखने में महत्वपूर्ण भूमिका निभाता है, खासकर जब बहुभाषी सामग्री से निपटते हैं। Aspose.Words for Java हाइफ़नेशन नियमों को लागू करने की प्रक्रिया को सरल बनाता है ताकि यह सुनिश्चित हो सके कि आपके दस्तावेज़ सबसे अच्छे दिखें।
 

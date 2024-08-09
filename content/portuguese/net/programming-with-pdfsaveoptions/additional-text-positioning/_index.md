@@ -54,7 +54,7 @@ Depois que seu projeto estiver configurado, a próxima etapa é carregar o docum
 
 ## Passo 3: Configurar opções para salvar PDF
 
- A mágica acontece aqui! Vamos configurar o`PdfSaveOptions` para ativar o posicionamento de texto adicional.
+ A magia acontece aqui! Vamos configurar o`PdfSaveOptions` para ativar o posicionamento de texto adicional.
 
 1.  Crie o objeto PdfSaveOptions: instancie o`PdfSaveOptions` aula.
     ```csharp
@@ -89,7 +89,7 @@ Não, o recurso Posicionamento Adicional de Texto é específico para conversõe
  Sim, você pode obter um[licença temporária](https://purchase.aspose.com/temporary-license/) ou compre uma licença completa[aqui](https://purchase.aspose.com/buy).
 
 ### Existe um teste gratuito disponível?
- Sim, você pode baixar um[teste grátis](https://releases.aspose.com/) do Aspose.Words para .NET.
+ Sim, você pode baixar um[teste gratuito](https://releases.aspose.com/) do Aspose.Words para .NET.
 
 ### Onde posso encontrar mais documentação sobre Aspose.Words for .NET?
  A documentação detalhada está disponível no site[Aspor site](https://reference.aspose.com/words/net/).

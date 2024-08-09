@@ -15,7 +15,7 @@ Này! Bạn đã bao giờ làm việc với các biểu đồ trong tài liệu
 
 Trước khi chúng ta bắt đầu, hãy đảm bảo rằng bạn có mọi thứ mình cần. Dưới đây là danh sách kiểm tra nhanh:
 
--  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt nó. Nếu không, bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt nó. Nếu không, bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 - .NET Framework: Đảm bảo bạn đã cài đặt .NET framework tương thích.
 - Môi trường phát triển: Một IDE như Visual Studio sẽ hoạt động hoàn hảo.
 - Kiến thức cơ bản về C#: Điều này sẽ giúp bạn theo dõi các ví dụ mã hóa.
@@ -59,7 +59,7 @@ Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
- Các`InsertChart` phương pháp chèn biểu đồ thuộc loại được chỉ định (Cột trong trường hợp này) và kích thước vào tài liệu.
+ các`InsertChart` phương pháp chèn biểu đồ thuộc loại được chỉ định (Cột trong trường hợp này) và kích thước vào tài liệu.
 
 ## Bước 3: Tùy chỉnh chuỗi biểu đồ
 
@@ -74,7 +74,7 @@ chart.Series.Add("Aspose Series 1",
     new double[] { 1900000, 850000, 2100000, 600000, 1500000 });
 ```
 
- Ở đây, chúng tôi đang thêm một chuỗi mới có tên "Aspose Series 1" với năm điểm dữ liệu. Các`Series.Clear` phương pháp đảm bảo mọi dữ liệu có sẵn sẽ bị xóa trước khi thêm chuỗi mới của chúng tôi.
+ Ở đây, chúng tôi đang thêm một chuỗi mới có tên "Aspose Series 1" với năm điểm dữ liệu. các`Series.Clear` phương pháp đảm bảo mọi dữ liệu có sẵn sẽ bị xóa trước khi thêm chuỗi mới của chúng tôi.
 
 ## Bước 4: Định dạng số trục
 
@@ -86,7 +86,7 @@ Cuối cùng, hãy định dạng các số trên trục Y để chúng dễ đ�
 chart.AxisY.NumberFormat.FormatCode = "#,##0";
 ```
 
- Các`FormatCode` thuộc tính cho phép bạn đặt định dạng tùy chỉnh cho các số trên trục. Trong ví dụ này,`#,##0`đảm bảo rằng số lượng lớn được hiển thị bằng dấu phẩy cho hàng nghìn.
+ các`FormatCode` thuộc tính cho phép bạn đặt định dạng tùy chỉnh cho các số trên trục. Trong ví dụ này,`#,##0`đảm bảo rằng số lượng lớn được hiển thị bằng dấu phẩy cho hàng nghìn.
 
 ## Bước 5: Lưu tài liệu
 
@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithCharts.NumberFormatForAxis.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã định dạng thành công các số trên trục Y của biểu đồ bằng Aspose.Words for .NET. Điều này không chỉ làm cho biểu đồ của bạn trông chuyên nghiệp hơn mà còn nâng cao khả năng đọc. Aspose.Words cung cấp rất nhiều tính năng có thể giúp bạn tạo các tài liệu Word tuyệt đẹp theo chương trình. Vì vậy, tại sao không khám phá thêm và xem bạn có thể làm gì khác?
+Và bạn có nó! Bạn đã định dạng thành công các số trên trục Y của biểu đồ bằng Aspose.Words for .NET. Điều này không chỉ làm cho biểu đồ của bạn trông chuyên nghiệp hơn mà còn nâng cao khả năng đọc. Aspose.Words cung cấp rất nhiều tính năng có thể giúp bạn tạo các tài liệu Word tuyệt đẹp theo chương trình. Vì vậy, tại sao không khám phá thêm và xem bạn có thể làm gì khác?
 
 ## Câu hỏi thường gặp
 

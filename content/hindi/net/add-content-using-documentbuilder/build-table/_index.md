@@ -46,7 +46,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## चरण 2: टेबल शुरू करें
 
- अब, चलिए अपनी टेबल शुरू करते हैं।`StartTable` की विधि`DocumentBuilder` शुरू करने के लिए।
+ अब, चलिए अपनी टेबल शुरू करते हैं।`StartTable` की विधि`DocumentBuilder` शुरू करने के लिए.
 
 ```csharp
 Table table = builder.StartTable();

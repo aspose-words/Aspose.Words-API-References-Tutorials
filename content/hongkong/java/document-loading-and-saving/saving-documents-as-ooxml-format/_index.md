@@ -37,7 +37,7 @@ doc.save("EncryptedDoc.docx", saveOptions);
 
 ## 設定 OOXML 合規性
 
-您可以在儲存文件時指定 OOXML 合規等級。例如，您可以將其設定為 ISO 29500:2008（嚴格）。就是這樣：
+您可以在儲存文件時指定 OOXML 合規等級。例如，您可以將其設定為 ISO 29500:2008（嚴格）。方法如下：
 
 ```java
 import com.aspose.words.Document;
@@ -61,7 +61,7 @@ doc.save("ComplianceDoc.docx", saveOptions);
 
 ## 更新上次儲存時間屬性
 
-您可以選擇在儲存文件時更新文件的「上次儲存時間」屬性。就是這樣：
+您可以選擇在儲存文件時更新文件的「上次儲存時間」屬性。方法如下：
 
 ```java
 import com.aspose.words.Document;
@@ -80,7 +80,7 @@ doc.save("UpdatedLastSavedTime.docx", saveOptions);
 
 ## 保留舊控製字符
 
-如果您的文件包含舊控製字符，您可以選擇在儲存時保留它們。就是這樣：
+如果您的文件包含舊控製字符，您可以選擇在儲存時保留它們。方法如下：
 
 ```java
 import com.aspose.words.Document;
@@ -100,7 +100,7 @@ doc.save("LegacyControlCharsPreserved.docx", saveOptions);
 
 ## 設定壓縮等級
 
-您可以在儲存文件時調整壓縮等級。例如，您可以將其設為 SUPER_FAST 以獲得最小壓縮。就是這樣：
+您可以在儲存文件時調整壓縮等級。例如，您可以將其設為 SUPER_FAST 以獲得最小壓縮。方法如下：
 
 ```java
 import com.aspose.words.Document;
@@ -176,4 +176,4 @@ public void setCompressionLevel() throws Exception
 
 ### 以 OOXML 格式儲存文件時的預設壓縮等級是多少？
 
-使用 Aspose.Words for Java 以 OOXML 格式儲存文件時的預設壓縮等級是`NORMAL`。您可以將壓縮等級變更為`SUPER_FAST`或者`MAXIMUM`如所須。
+使用 Aspose.Words for Java 以 OOXML 格式儲存文件時的預設壓縮等級是`NORMAL`。您可以將壓縮等級變更為`SUPER_FAST`或者`MAXIMUM`根據需要。

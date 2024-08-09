@@ -7,16 +7,16 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-document-options-and-settings/cleanup-unused-styles-and-lists/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Měli jste někdy pocit, že jsou vaše dokumenty ve Wordu trochu přeplněné? Znáte ty nepoužívané styly a seznamy, které tam jen sedí, zabírají místo a váš dokument vypadá složitější, než by měl být? Tak to máš štěstí! Dnes se ponoříme do úhledného malého triku pomocí Aspose.Words pro .NET k vyčištění těch nepoužívaných stylů a seznamů. Je to jako dát svému dokumentu příjemnou osvěžující koupel. Takže si dejte kávu, posaďte se a můžeme začít!
+Ahoj! Měli jste někdy pocit, že jsou vaše dokumenty ve Wordu trochu přeplněné? Znáte ty nepoužívané styly a seznamy, které tam jen sedí, zabírají místo a váš dokument vypadá složitější, než by měl být? Tak to máš štěstí! Dnes se ponoříme do úhledného malého triku pomocí Aspose.Words pro .NET k vyčištění těch nepoužívaných stylů a seznamů. Je to jako dát svému dokumentu příjemnou osvěžující koupel. Takže si dejte kávu, posaďte se a můžeme začít!
 
 ## Předpoklady
 
 Než se ponoříme do podrobných detailů, ujistěte se, že máte vše, co potřebujete. Zde je rychlý kontrolní seznam:
 
 - Základní znalost C#: Měli byste být spokojeni s programováním v C#.
--  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou tuto knihovnu. Pokud ne, můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou tuto knihovnu. Pokud ne, můžete si jej stáhnout[zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Jakékoli IDE kompatibilní s C#, jako je Visual Studio.
 - Ukázkový dokument: Dokument aplikace Word s některými nepoužívanými styly a seznamy k vyčištění.
 
@@ -99,4 +99,4 @@ Ne, jakmile je čištění dokončeno a dokument je uložen, nelze změny vráti
  Ano, Aspose.Words for .NET vyžaduje licenci pro plnou funkčnost. Můžete získat a[dočasná licence](https://purchase.aspose.com/temporary-license) nebo[koupit jeden](https://purchase.aspose.com/buy).
 
 ### Kde najdu další informace a podporu?
- Můžete najít podrobnou dokumentaci[tady](https://reference.aspose.com/words/net/) a získat podporu od[Aspose fórum](https://forum.aspose.com/c/words/8).
+ Můžete najít podrobnou dokumentaci[zde](https://reference.aspose.com/words/net/) a získat podporu od[Aspose fórum](https://forum.aspose.com/c/words/8).

@@ -2,14 +2,14 @@
 title: Appliquer des bordures et un ombrage au paragraphe dans un document Word
 linktitle: Appliquer des bordures et un ombrage au paragraphe dans un document Word
 second_title: API de traitement de documents Aspose.Words
-description: Appliquez des bordures et un ombrage aux paragraphes des documents Word à l'aide d'Aspose.Words pour .NET. Suivez notre guide étape par étape pour améliorer la mise en forme de votre document.
+description: Appliquez des bordures et un ombrage aux paragraphes des documents Word à l'aide d'Aspose.Words pour .NET. Suivez notre guide étape par étape pour améliorer la mise en forme de vos documents.
 type: docs
 weight: 10
 url: /fr/net/document-formatting/apply-borders-and-shading-to-paragraph/
 ---
 ## Introduction
 
-Salut, vous êtes-vous déjà demandé comment faire ressortir vos documents Word avec des bordures et des ombrages fantaisistes ? Eh bien, vous êtes au bon endroit ! Aujourd'hui, nous plongeons dans le monde d'Aspose.Words for .NET pour égayer nos paragraphes. Imaginez votre document aussi élégant que le travail d'un concepteur professionnel avec seulement quelques lignes de code. Prêt à commencer? Allons-y!
+Salut, vous êtes-vous déjà demandé comment faire ressortir vos documents Word avec des bordures et des ombrages fantaisistes ? Eh bien, vous êtes au bon endroit ! Aujourd'hui, nous plongeons dans le monde d'Aspose.Words for .NET pour égayer nos paragraphes. Imaginez votre document aussi élégant que le travail d'un concepteur professionnel avec seulement quelques lignes de code. Prêt à commencer ? Allons-y!
 
 ## Conditions préalables
 
@@ -105,7 +105,7 @@ doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 
 ## Conclusion
 
-Et voila! Avec seulement quelques lignes de code, nous avons transformé un simple paragraphe en un contenu visuellement attrayant. Aspose.Words for .NET facilite incroyablement l'ajout d'une mise en forme d'aspect professionnel à vos documents. Que vous prépariez un rapport, une lettre ou tout autre document, ces astuces vous aideront à faire bonne impression. Alors n'hésitez plus, essayez-le et regardez vos documents prendre vie !
+Et voilà ! Avec seulement quelques lignes de code, nous avons transformé un simple paragraphe en un contenu visuellement attrayant. Aspose.Words for .NET facilite incroyablement l'ajout d'une mise en forme d'aspect professionnel à vos documents. Que vous prépariez un rapport, une lettre ou tout autre document, ces astuces vous aideront à faire bonne impression. Alors n'hésitez plus, essayez-le et regardez vos documents prendre vie !
 
 ## FAQ
 
@@ -113,7 +113,7 @@ Et voila! Avec seulement quelques lignes de code, nous avons transformé un simp
  Absolument! Aspose.Words for .NET vous permet de personnaliser chaque bordure individuellement. Il suffit de définir le`LineStyle` pour chaque type de bordure, comme indiqué dans le guide.
 
 ### Quelles autres textures d'ombrage sont disponibles ?  
- Vous pouvez utiliser plusieurs textures, telles qu'une bande unie, une bande horizontale, une bande verticale, etc. Vérifier la[Asposer la documentation](https://reference.aspose.com/words/net/) pour une liste complète.
+ Vous pouvez utiliser plusieurs textures, telles qu'une bande unie, une bande horizontale, une bande verticale, etc. Vérifiez le[Asposer la documentation](https://reference.aspose.com/words/net/) pour une liste complète.
 
 ### Comment puis-je changer la couleur de la bordure ?  
  Vous pouvez définir la couleur de la bordure à l'aide du`Color` propriété pour chaque frontière. Par exemple,`borders[BorderType.Left].Color = Color.Red;`.

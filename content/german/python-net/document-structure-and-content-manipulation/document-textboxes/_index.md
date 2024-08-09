@@ -114,6 +114,6 @@ Auf jeden Fall! Sie können Hyperlinks in den Textfeldinhalt einfügen, um zusä
 
 ### Ist es möglich, Textfelder zwischen Dokumenten zu kopieren und einzufügen?
 
- Ja, Sie können ein Textfeld aus einem Dokument kopieren und in ein anderes einfügen, indem Sie`builder.insert_node` Methode.
+ Ja, Sie können ein Textfeld aus einem Dokument kopieren und in ein anderes einfügen, indem Sie`builder.insert_node` Verfahren.
 
 Mit Aspose.Words für Python verfügen Sie über die Tools zum Erstellen optisch ansprechender und gut strukturierter Dokumente, die Textfelder nahtlos integrieren. Experimentieren Sie mit verschiedenen Stilen, Layouts und Inhalten, um die Wirkung Ihrer Word-Dokumente zu verbessern. Viel Spaß beim Dokumentdesign!

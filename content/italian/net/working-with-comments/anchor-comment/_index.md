@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/working-with-comments/anchor-comment/
 ---
-## introduzione
+## Introduzione
 
 Ti sei mai trovato in una situazione in cui dovevi aggiungere commenti a sezioni di testo specifiche in un documento di Word a livello di codice? Immagina di collaborare a un documento con il tuo team e di dover evidenziare alcune parti con commenti affinché gli altri possano esaminarle. In questo tutorial, approfondiremo come inserire commenti di ancoraggio nei documenti di Word utilizzando Aspose.Words per .NET. Suddivideremo il processo in semplici passaggi, facilitandoti il seguito e l'implementazione nei tuoi progetti.
 
@@ -117,7 +117,7 @@ Questo passaggio salva il documento con il commento ancorato nella directory spe
 
 ## Conclusione
 
-E il gioco è fatto! Hai imparato con successo come aggiungere commenti di ancoraggio a sezioni di testo specifiche in un documento di Word utilizzando Aspose.Words per .NET. Questa tecnica è incredibilmente utile per la collaborazione tra documenti, poiché consente di evidenziare e commentare facilmente parti specifiche del testo. Che tu stia lavorando a un progetto con il tuo team o rivedendo documenti, questo metodo migliorerà la tua produttività e semplificherà il tuo flusso di lavoro.
+Ed ecco qua! Hai imparato con successo come aggiungere commenti di ancoraggio a sezioni di testo specifiche in un documento di Word utilizzando Aspose.Words per .NET. Questa tecnica è incredibilmente utile per la collaborazione tra documenti, poiché consente di evidenziare e commentare facilmente parti specifiche del testo. Che tu stia lavorando a un progetto con il tuo team o rivedendo documenti, questo metodo migliorerà la tua produttività e semplificherà il tuo flusso di lavoro.
 
 ## Domande frequenti
 

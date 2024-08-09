@@ -157,7 +157,7 @@ Um Painel de Tarefas é um elemento de interface que fornece ferramentas e funci
 ### Posso personalizar a aparência do Painel de Tarefas?
  Sim, você pode personalizar a aparência do Painel de Tarefas definindo propriedades como`DockState`, `IsVisible` , e`Width`.
 
-### O que são propriedades de extensão da Web?
+### O que são propriedades de extensão da web?
 Propriedades de extensão da Web são propriedades personalizadas que você pode adicionar a uma extensão da Web para definir seu comportamento ou conteúdo.
 
 ### Como vinculo uma extensão da Web a uma parte do documento?

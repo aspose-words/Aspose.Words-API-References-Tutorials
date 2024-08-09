@@ -15,7 +15,7 @@ Met voorwaardelijke opmaak kunt u specifieke opmaak toepassen op cellen in een t
 
 Voordat we beginnen, zorg ervoor dat u over het volgende beschikt:
 
-1. Aspose.Words voor .NET: U hebt de Aspose.Words voor .NET-bibliotheek nodig. Jij kan[download het hier](https://releases.aspose.com/words/net/).
+1. Aspose.Words voor .NET: U hebt de Aspose.Words voor .NET-bibliotheek nodig. Dat kan[download het hier](https://releases.aspose.com/words/net/).
 2. Ontwikkelomgeving: Een geschikte ontwikkelomgeving zoals Visual Studio.
 3. Basiskennis van C#: Bekendheid met programmeren in C# kan nuttig zijn.
 4. Word-document: een Word-document waarop u voorwaardelijke opmaak wilt toepassen.

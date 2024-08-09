@@ -15,7 +15,7 @@ chúng tôi đang đi sâu vào một hướng dẫn thú vị về cách làm v
 
 Trước khi chúng ta bắt đầu viết mã, có một số điều bạn cần phải chuẩn bị sẵn:
 
-1.  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt thư viện Aspose.Words for .NET. Bạn có thể tải nó xuống từ[trang mạng](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt thư viện Aspose.Words for .NET. Bạn có thể tải nó xuống từ[trang web](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Bạn nên thiết lập môi trường phát triển, như Visual Studio.
 3. Kiến thức cơ bản về C#: Cần phải có hiểu biết cơ bản về lập trình C# để tuân theo hướng dẫn.
 4. Nội dung HTML: Kiến thức cơ bản về HTML rất hữu ích vì chúng ta sẽ làm việc với nội dung HTML trong ví dụ này.
@@ -93,7 +93,7 @@ Thao tác này sẽ lưu tài liệu Word bằng điều khiển hộp tổ hợ
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Chúng tôi đã chèn thành công trường biểu mẫu hộp tổ hợp vào tài liệu Word bằng Aspose.Words cho .NET bằng cách tận dụng các tùy chọn tải HTML. Hướng dẫn từng bước này sẽ giúp bạn hiểu quy trình và áp dụng nó vào các dự án của bạn. Cho dù bạn đang tự động hóa việc tạo tài liệu hay thao tác nội dung HTML, Aspose.Words for .NET đều cung cấp các công cụ mạnh mẽ để đạt được mục tiêu của bạn.
+Và bạn có nó! Chúng tôi đã chèn thành công trường biểu mẫu hộp tổ hợp vào tài liệu Word bằng Aspose.Words cho .NET bằng cách tận dụng các tùy chọn tải HTML. Hướng dẫn từng bước này sẽ giúp bạn hiểu quy trình và áp dụng nó vào các dự án của bạn. Cho dù bạn đang tự động hóa việc tạo tài liệu hay thao tác nội dung HTML, Aspose.Words for .NET đều cung cấp các công cụ mạnh mẽ để đạt được mục tiêu của bạn.
 
 ## Câu hỏi thường gặp
 

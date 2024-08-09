@@ -46,7 +46,7 @@ Därefter infogar du en bild i ditt dokument. Så här gör du:
 Shape shape = builder.InsertImage("path_to_your_image.jpg");
 ```
 
- Byta ut`"path_to_your_image.jpg"` med den faktiska sökvägen till din bildfil. De`InsertImage` metoden lägger till bilden i ditt dokument.
+ Ersätta`"path_to_your_image.jpg"` med den faktiska sökvägen till din bildfil. De`InsertImage`metoden lägger till bilden i ditt dokument.
 
 ## Steg 3: Ställ in bildegenskaper
 
@@ -72,7 +72,7 @@ Aspose.Words stöder olika bildformat inklusive JPEG, PNG, BMP, GIF och mer.
  Absolut! Du kan ställa in egenskaperna för höjd och bredd`Shape` objekt för att ändra storlek på bilderna.
 
 ### Är det möjligt att lägga till bilder från en URL?  
- Ja, du kan lägga till bilder från en URL genom att ange URL:en i`InsertImage` metod.
+Ja, du kan lägga till bilder från en URL genom att ange URL:en i`InsertImage` metod.
 
 ### Hur får jag en gratis provversion av Aspose.Words för .NET?  
  Du kan få en gratis provperiod från[Aspose hemsida](https://releases.aspose.com/).

@@ -17,7 +17,7 @@ url: /th/net/programming-with-charts/chart-data-label/
 
 1. Visual Studio: ติดตั้ง Visual Studio 2019 หรือใหม่กว่า
 2. .NET Framework: ตรวจสอบให้แน่ใจว่าคุณมี .NET Framework 4.0 หรือใหม่กว่า
-3.  Aspose.Words สำหรับ .NET: ดาวน์โหลดและติดตั้ง Aspose.Words สำหรับ .NET จาก[ลิ้งค์ดาวน์โหลด](https://releases.aspose.com/words/net/).
+3.  Aspose.Words สำหรับ .NET: ดาวน์โหลดและติดตั้ง Aspose.Words สำหรับ .NET จาก[ลิงค์ดาวน์โหลด](https://releases.aspose.com/words/net/).
 4. ความรู้พื้นฐานของ C#: ความคุ้นเคยกับการเขียนโปรแกรม C# เป็นสิ่งจำเป็น
 5.  ใบอนุญาตที่ถูกต้อง: รับ[ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/) หรือซื้อได้ที่[ซื้อลิงค์](https://purchase.aspose.com/buy).
 
@@ -123,10 +123,10 @@ doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 Aspose.Words สำหรับ .NET เป็นไลบรารีการประมวลผลเอกสารที่มีประสิทธิภาพซึ่งช่วยให้นักพัฒนาสามารถสร้าง แก้ไข และแปลงเอกสาร Word โดยทางโปรแกรมได้
 
 ### ฉันจะติดตั้ง Aspose.Words สำหรับ .NET ได้อย่างไร
- คุณสามารถดาวน์โหลดและติดตั้งได้จาก[ลิ้งค์ดาวน์โหลด](https://releases.aspose.com/words/net/)- ทำตามคำแนะนำการติดตั้งที่ให้ไว้
+ คุณสามารถดาวน์โหลดและติดตั้งได้จาก[ลิงค์ดาวน์โหลด](https://releases.aspose.com/words/net/)- ทำตามคำแนะนำการติดตั้งที่ให้ไว้
 
 ### ฉันสามารถทดลองใช้ Aspose.Words สำหรับ .NET ได้ฟรีหรือไม่
- ใช่ คุณจะได้รับ[ทดลองฟรี](https://releases.aspose.com/) หรือก[ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/)เพื่อประเมินผลิตภัณฑ์
+ ใช่ คุณจะได้รับ[ทดลองใช้ฟรี](https://releases.aspose.com/) หรือก[ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/)เพื่อประเมินผลิตภัณฑ์
 
 ### Aspose.Words สำหรับ .NET เข้ากันได้กับ .NET Core หรือไม่
 ใช่ Aspose.Words สำหรับ .NET เข้ากันได้กับ .NET Core, .NET Standard และ .NET Framework

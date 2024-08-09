@@ -59,7 +59,7 @@ Most állítsuk be a táblázat vízszintes helyzetét egy adott elemhez képest
 table.HorizontalAnchor = RelativeHorizontalPosition.Column;
 ```
 
- Beállításával a`HorizontalAnchor` nak nek`RelativeHorizontalPosition.Column`, akkor azt mondja a táblázatnak, hogy vízszintesen igazodjon ahhoz az oszlophoz, amelyben található.
+ Beállításával a`HorizontalAnchor` hogy`RelativeHorizontalPosition.Column`, akkor azt mondja a táblázatnak, hogy vízszintesen igazodjon ahhoz az oszlophoz, amelyben található.
 
 ## 4. lépés: Állítsa be a függőleges pozíciót
 
@@ -69,7 +69,7 @@ A vízszintes pozicionáláshoz hasonlóan a függőleges helyzetet is beállít
 table.VerticalAnchor = RelativeVerticalPosition.Page;
 ```
 
- Beállítása a`VerticalAnchor` nak nek`RelativeVerticalPosition.Page` biztosítja, hogy a táblázat az oldalnak megfelelően függőlegesen legyen igazítva.
+ Beállítása a`VerticalAnchor` hogy`RelativeVerticalPosition.Page` biztosítja, hogy a táblázat az oldalnak megfelelően függőlegesen legyen igazítva.
 
 ## 5. lépés: Mentse el a dokumentumot
 

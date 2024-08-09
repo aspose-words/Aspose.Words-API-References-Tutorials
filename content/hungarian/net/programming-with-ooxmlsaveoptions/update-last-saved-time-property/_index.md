@@ -52,7 +52,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## 3. lépés: Konfigurálja a mentési beállításokat
 
- Most hozzon létre egy példányt a`OoxmlSaveOptions` osztály. Ez az osztály lehetővé teszi a dokumentumok Office Open XML (OOXML) formátumban történő mentésére vonatkozó beállítások megadását. Itt beállítod a`UpdateLastSavedTimeProperty` nak nek`true`.
+ Most hozzon létre egy példányt a`OoxmlSaveOptions` osztály. Ez az osztály lehetővé teszi a dokumentumok Office Open XML (OOXML) formátumban történő mentésére vonatkozó beállítások megadását. Itt beállítod a`UpdateLastSavedTimeProperty` hogy`true`.
 
 ```csharp
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions

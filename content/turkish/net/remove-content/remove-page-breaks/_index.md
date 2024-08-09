@@ -13,7 +13,7 @@ Bir Word belgesinden sayfa sonlarını kaldırmak, metninizde tutarlı bir akı�
 
 ## Önkoşullar
 
-Adım adım kılavuza geçmeden önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
+Adım adım kılavuza dalmadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
 
 -  Aspose.Words for .NET: Kütüphaneyi şuradan indirip yükleyin:[Sürümleri Aspose](https://releases.aspose.com/words/net/).
 - Geliştirme Ortamı: Visual Studio benzeri bir IDE.
@@ -99,7 +99,7 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak yalnızca birkaç satır kodla bir Word belgesindeki sayfa sonlarını başarıyla kaldırdık. Bu kitaplık, belge işlemeyi basit ve verimli hale getirir. İster büyük ister küçük belgeler üzerinde çalışıyor olun, Aspose.Words işinizi halletmeniz için ihtiyacınız olan araçları sağlar.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak yalnızca birkaç satır kodla bir Word belgesindeki sayfa sonlarını başarıyla kaldırdık. Bu kitaplık, belge işlemeyi basit ve verimli hale getirir. İster büyük ister küçük belgeler üzerinde çalışıyor olun, Aspose.Words işinizi halletmeniz için ihtiyacınız olan araçları sağlar.
 
 ## SSS'ler
 

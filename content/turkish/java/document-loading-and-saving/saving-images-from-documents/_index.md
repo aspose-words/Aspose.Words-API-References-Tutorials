@@ -204,13 +204,13 @@ options.setImageContrast(0.7f);
 
 ### Görüntü kaydetmeyi özelleştirmek için geri aramayı nasıl kullanabilirim?
 
- Görüntü kaydetmeyi özelleştirmek amacıyla geri aramayı kullanmak için`PageSavingCallback` içinde`ImageSaveOptions` . uygulayan bir sınıf oluşturun.`IPageSavingCallback` arayüzü geçersiz kılın ve`pageSaving` yöntem.
+ Görüntü kaydetmeyi özelleştirmek amacıyla geri aramayı kullanmak için`PageSavingCallback` içinde`ImageSaveOptions` . uygulayan bir sınıf oluşturun.`IPageSavingCallback` arayüzü geçersiz kılın ve`pageSaving` Yöntem.
 
 ```java
 imageSaveOptions.setPageSavingCallback(new HandlePageSavingCallback());
 ```
 
- Daha sonra bunu uygulayan bir sınıf oluşturun.`IPageSavingCallback` arayüzde dosya adını ve konumunu özelleştirin`pageSaving` yöntem.
+ Daha sonra bunu uygulayan bir sınıf oluşturun.`IPageSavingCallback` arayüzde dosya adını ve konumunu özelleştirin`pageSaving` Yöntem.
 
 ```java
 private static class HandlePageSavingCallback implements IPageSavingCallback {

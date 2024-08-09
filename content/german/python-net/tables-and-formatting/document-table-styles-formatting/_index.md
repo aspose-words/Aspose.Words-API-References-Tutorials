@@ -51,7 +51,7 @@ Um mit Aspose.Words für Python Tabellen zu erstellen und in Dokumente einzufüg
 
 3. Zeilen wiederholen: Fügen Sie nach Bedarf Zeilen und Zellen hinzu und folgen Sie dabei einem ähnlichen Muster.
 
-4.  Tabelle in Dokument einfügen: Zum Schluss fügen Sie die Tabelle mit dem`end_table` Methode.
+4.  Tabelle in Dokument einfügen: Zum Schluss fügen Sie die Tabelle mit dem`end_table` Verfahren.
 
     ```python
     builder.end_table()

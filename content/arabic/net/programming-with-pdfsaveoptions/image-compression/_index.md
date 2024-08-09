@@ -59,7 +59,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## الخطوة 3: تكوين ضغط الصور الأساسي
 
- إنشاء`PdfSaveOptions`الكائن لتكوين خيارات حفظ PDF، بما في ذلك ضغط الصور. تعيين`ImageCompression`الملكية ل`PdfImageCompression.Jpeg` لاستخدام ضغط JPEG للصور.
+ إنشاء أ`PdfSaveOptions`الكائن لتكوين خيارات حفظ PDF، بما في ذلك ضغط الصور. تعيين`ImageCompression`الملكية ل`PdfImageCompression.Jpeg` لاستخدام ضغط JPEG للصور.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
@@ -127,7 +127,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression_A2u.pdf", save
 تؤدي إعدادات جودة JPEG الأعلى إلى جودة صورة أفضل ولكن أحجام ملفات أكبر، بينما تؤدي إعدادات الجودة المنخفضة إلى تقليل حجم الملف ولكنها قد تؤثر على وضوح الصورة.
 
 ### أين يمكنني العثور على مزيد من المعلومات حول Aspose.Words لـ .NET؟
- يمكنك استكشاف المزيد حول Aspose.Words for .NET على موقعهم[توثيق](https://reference.aspose.com/words/net/), [يدعم](https://forum.aspose.com/c/words/8) ، و[تحميل](https://releases.aspose.com/words/net/) الصفحات.
+ يمكنك استكشاف المزيد حول Aspose.Words for .NET على موقعهم[التوثيق](https://reference.aspose.com/words/net/), [يدعم](https://forum.aspose.com/c/words/8) ، و[تحميل](https://releases.aspose.com/words/net/) الصفحات.
 
 ### نموذج التعليمات البرمجية المصدر لضغط الصور باستخدام Aspose.Words لـ .NET
 

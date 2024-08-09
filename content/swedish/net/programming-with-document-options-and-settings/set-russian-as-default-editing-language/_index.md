@@ -32,7 +32,7 @@ using Aspose.Words.Loading;
 
 ## Steg 1: Ställa in LoadOptions
 
- Först måste vi konfigurera`LoadOptions` för att ställa in standardredigeringsspråket till ryska. Detta steg innebär att skapa en instans av`LoadOptions` och ställa in dess`LanguagePreferences.DefaultEditingLanguage` fast egendom.
+ Först måste vi konfigurera`LoadOptions` för att ställa in standardredigeringsspråket till ryska. Detta steg innebär att skapa en instans av`LoadOptions` och ställa in dess`LanguagePreferences.DefaultEditingLanguage` egendom.
 
 ### Skapa LoadOptions-instans
 
@@ -40,7 +40,7 @@ using Aspose.Words.Loading;
 LoadOptions loadOptions = new LoadOptions();
 ```
 
-### Ställ in som standardredigeringsspråk till ryska
+### Ställ in standardredigeringsspråk till ryska
 
 ```csharp
 loadOptions.LanguagePreferences.DefaultEditingLanguage = EditingLanguage.Russian;

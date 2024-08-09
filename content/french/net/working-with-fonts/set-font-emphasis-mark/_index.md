@@ -2,83 +2,105 @@
 title: Définir la marque d'accentuation de la police
 linktitle: Définir la marque d'accentuation de la police
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment définir le style d’accentuation de la police dans un document Word à l’aide d’Aspose.Words pour .NET.
+description: Découvrez comment définir des marques d'accentuation de police dans les documents Word à l'aide d'Aspose.Words for .NET avec ce guide détaillé étape par étape. Parfait pour les développeurs .NET.
 type: docs
 weight: 10
 url: /fr/net/working-with-fonts/set-font-emphasis-mark/
 ---
+## Introduction
 
-Dans ce didacticiel, nous allons vous montrer comment définir le style d'accentuation de la police dans un document Word à l'aide d'Aspose.Words pour .NET. L'accentuation de la police est utilisée pour mettre en évidence certains mots ou expressions dans le texte.
+Dans le didacticiel d'aujourd'hui, nous expliquons comment définir les marques d'accentuation des polices dans un document Word à l'aide d'Aspose.Words pour .NET. Que vous cherchiez à souligner un texte spécifique avec une marque unique ou simplement à faire ressortir certains mots, ce guide est là pour vous. Alors, attachez votre ceinture et commençons !
 
 ## Conditions préalables
-Avant de commencer, assurez-vous de disposer des éléments suivants :
-- Une connaissance pratique du langage de programmation C#
-- La bibliothèque Aspose.Words pour .NET installée dans votre projet
 
-## Étape 1 : Définir le répertoire des documents
-Commencez par définir le chemin du répertoire vers l’emplacement de votre document Word. Remplacer`"YOUR DOCUMENT DIRECTORY"` dans le code avec le chemin approprié.
+Avant de plonger dans les détails, assurez-vous d’avoir coché les conditions préalables suivantes :
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+-  Bibliothèque Aspose.Words pour .NET : assurez-vous que la bibliothèque Aspose.Words pour .NET est installée. Vous pouvez le télécharger depuis[ici](https://releases.aspose.com/words/net/).
+- Environnement de développement : un environnement de développement fonctionnel tel que Visual Studio.
+- .NET Framework : assurez-vous que .NET Framework est installé.
 
-## Étape 2 : Créer et personnaliser le document
- Créez une instance du`Document` classe et un associé`DocumentBuilder` pour construire le contenu du document. Utilisez le`Font.EmphasisMark` propriété pour définir le style d'accentuation de la police sur`EmphasisMark.UnderSolidCircle` . Utilisez ensuite le`Write`et`Writeln` méthodes du`DocumentBuilder` pour ajouter du texte avec l'accentuation de la police spécifiée.
+## Importer des espaces de noms
+
+Pour travailler avec Aspose.Words for .NET, vous devrez importer les espaces de noms nécessaires. Ajoutez-les en haut de votre fichier de code :
 
 ```csharp
-Document document = new Document();
-DocumentBuilder builder = new DocumentBuilder(document);
-builder.Font.EmphasisMark = EmphasisMark.UnderSolidCircle;
-builder.Write("Emphasized text");
-builder. Writen();
-builder.Font.ClearFormatting();
-builder.Write("Simple text");
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Étape 3 : Enregistrez le document
- Enregistrez le document à l'aide du`Save` méthode du`Document` avec le chemin et le nom de fichier appropriés.
+Maintenant, décomposons le processus en étapes simples. Suivez attentivement chaque étape pour définir les marques d'accentuation de la police dans votre document Word.
 
-```csharp
-document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
-```
+## Étape 1 : initialiser le document et DocumentBuilder
 
-### Exemple de code source pour définir la marque d'accentuation de la police à l'aide d'Aspose.Words pour .NET 
+Tout d’abord, vous devez initialiser un nouveau document et un DocumentBuilder. La classe DocumentBuilder fournit des méthodes pour insérer du texte et d'autres éléments dans le document.
 
 ```csharp
 // Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
+// Initialiser un nouveau document
 Document document = new Document();
+
+// Initialiser DocumentBuilder avec le document
 DocumentBuilder builder = new DocumentBuilder(document);
+```
+
+## Étape 2 : définir la marque d'accentuation de la police
+
+Une fois DocumentBuilder prêt, vous pouvez maintenant définir la marque d'accentuation de la police. Dans cet exemple, nous utiliserons la marque d'accentuation "UnderSolidCircle".
+
+```csharp
+// Définir la marque d'accentuation de la police
 builder.Font.EmphasisMark = EmphasisMark.UnderSolidCircle;
+
+// Écrire un texte avec la marque d'accentuation
 builder.Write("Emphasis text");
 builder.Writeln();
+```
+
+## Étape 3 : Effacer le formatage et ajouter du texte normal
+
+Après avoir défini la marque d'accentuation, vous souhaiterez peut-être ajouter du texte normal sans aucune emphase. Pour cela, vous devez effacer le formatage.
+
+```csharp
+// Effacer le formatage de la police
 builder.Font.ClearFormatting();
+
+// Écrire un texte régulier
 builder.Write("Simple text");
+```
+
+## Étape 4 : Enregistrez le document
+
+Une fois que vous avez ajouté tout le texte et la mise en forme dont vous avez besoin, la dernière étape consiste à enregistrer le document. Spécifiez le chemin et le nom du fichier où vous souhaitez enregistrer votre document.
+
+```csharp
+// Enregistrez le document
 document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ```
 
 ## Conclusion
-Dans ce didacticiel, vous avez appris à définir le style d'accentuation de la police dans un document Word à l'aide d'Aspose.Words pour .NET. Expérimentez avec différents styles d'accentuation et utilisez cette fonctionnalité pour mettre en évidence des mots ou des expressions dans vos documents.
 
-### FAQ
+Et voilà ! Définir des marques d'accentuation de police dans un document Word à l'aide d'Aspose.Words pour .NET est aussi simple que cela. Avec seulement quelques lignes de code, vous pouvez faire ressortir votre texte et ajouter une touche professionnelle à vos documents. N'hésitez pas à expérimenter différentes marques d'accentuation et styles en fonction de vos besoins.
 
-#### Q : Comment puis-je ajouter des marques d'accent à une police spécifique dans un document Word à l'aide d'Aspose.Words ?
+## FAQ
 
-: Pour ajouter des marques d'accent à une police spécifique dans un document Word à l'aide d'Aspose.Words, vous pouvez utiliser l'API pour accéder à la police souhaitée et appliquer les marques d'accent appropriées. Cela ajoutera des marques d'accent au texte avec la police sélectionnée.
+### Que sont les marques d’emphase de police ?
 
-#### Q : Est-il possible de modifier le style des marques d'accent dans un document Word avec Aspose.Words ?
+Les marques d'accentuation de la police sont des symboles spéciaux ajoutés au texte pour le faire ressortir. Ils peuvent inclure des points, des cercles et d’autres marques décoratives.
 
-R : Oui, avec Aspose.Words, vous pouvez modifier le style des accents dans un document Word. L'API vous permet d'ajuster les propriétés de style telles que la couleur, la taille, le type de ligne, etc., pour personnaliser l'apparence des marques d'accent.
+### Puis-je utiliser d’autres marques d’accentuation avec Aspose.Words pour .NET ?
 
-#### Q : Comment puis-je supprimer toutes les marques d'accent d'un document Word à l'aide d'Aspose.Words ?
+ Oui, Aspose.Words for .NET prend en charge diverses marques d'accentuation. Vous pouvez explorer différentes options en vous référant au[documentation](https://reference.aspose.com/words/net/).
 
-R : Pour supprimer toutes les marques d'accent d'un document Word à l'aide d'Aspose.Words, vous pouvez utiliser l'API pour parcourir le document, détecter les marques d'accent existantes et les supprimer à l'aide des méthodes appropriées. Cela supprimera toutes les marques d'accentuation du document.
+### L’utilisation d’Aspose.Words pour .NET est-elle gratuite ?
 
-#### Q : Puis-je ajouter des accents à une partie spécifique du texte dans un document Word ?
+ Aspose.Words for .NET nécessite une licence pour bénéficier de toutes les fonctionnalités. Vous pouvez obtenir un essai gratuit[ici](https://releases.aspose.com/) ou acheter une licence[ici](https://purchase.aspose.com/buy).
 
-: Oui, vous pouvez ajouter des marques d'accent à une partie spécifique du texte dans un document Word à l'aide d'Aspose.Words. Vous pouvez sélectionner la plage de texte souhaitée à l'aide de l'API et ajouter des marques d'accentuation appropriées à cette partie du texte.
+### Comment puis-je obtenir de l’assistance pour Aspose.Words pour .NET ?
 
-#### Q : Les accents peuvent-ils être personnalisés selon mes besoins ?
+ Vous pouvez obtenir l'assistance de la communauté Aspose et de l'équipe d'assistance en visitant leur[forum d'assistance](https://forum.aspose.com/c/words/8).
 
-R : Oui, les marques d'accent peuvent être personnalisées selon vos besoins à l'aide d'Aspose.Words. Vous pouvez ajuster les propriétés de style des marques d'accent, telles que la couleur, la taille, le type de ligne, etc., en fonction de vos préférences de mise en forme.
+### Puis-je utiliser Aspose.Words pour .NET avec d’autres frameworks .NET ?
+
+Oui, Aspose.Words for .NET est compatible avec divers frameworks .NET, notamment .NET Core et .NET 5/6.

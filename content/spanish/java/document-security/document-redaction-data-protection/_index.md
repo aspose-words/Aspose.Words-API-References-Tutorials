@@ -16,7 +16,7 @@ En esta guía, exploraremos cómo redactar información confidencial de document
 
 ## Configurar su entorno de desarrollo
 
-Antes de comenzar a trabajar con Aspose.Words para Java, necesitamos configurar nuestro entorno de desarrollo. Sigue estos pasos:
+Antes de comenzar a trabajar con Aspose.Words para Java, necesitamos configurar nuestro entorno de desarrollo. Siga estos pasos:
 
 1.  Descargue e instale Aspose.Words para Java: visite[https://releases.aspose.com/words/java/](https://releases.aspose.com/words/java/) para descargar la última versión de Aspose.Words para Java.
 

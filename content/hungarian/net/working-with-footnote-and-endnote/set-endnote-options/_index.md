@@ -2,45 +2,61 @@
 title: Állítsa be a végjegyzet beállításait
 linktitle: Állítsa be a végjegyzet beállításait
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan állíthat be végjegyzetbeállításokat Word dokumentumokban az Aspose.Words for .NET használatával. Lépésről lépésre bemutató példa forráskóddal.
+description: Ebből az átfogó, lépésenkénti útmutatóból megtudhatja, hogyan állíthat be végjegyzetbeállításokat Word-dokumentumokban az Aspose.Words for .NET használatával.
 type: docs
 weight: 10
 url: /hu/net/working-with-footnote-and-endnote/set-endnote-options/
 ---
+## Bevezetés
 
-Ebben a lépésenkénti oktatóanyagban bemutatjuk, hogyan használhatja az Aspose.Words for .NET-et a végjegyzetbeállítások megadásához egy Word-dokumentumban. Elmagyarázzuk a mellékelt C# forráskódot, és megmutatjuk, hogyan implementálhatja azt saját projektjeibe.
+Szeretné javítani Word-dokumentumait a végjegyzetek hatékony kezelésével? Ne keressen tovább! Ebben az oktatóanyagban végigvezetjük az Aspose.Words for .NET használatával végjegyzetbeállítások beállításának folyamatán a Word dokumentumokban. Az útmutató végére profi lesz a végjegyzetek személyre szabásában a dokumentum igényeinek megfelelően.
 
- A kezdéshez győződjön meg arról, hogy az Aspose.Words for .NET telepítve van és be van állítva a fejlesztői környezetben. Ha még nem tette meg, töltse le és telepítse a könyvtárat innen[Aspose.Releases]https://releases.aspose.com/words/net/.
+## Előfeltételek
 
-## 1. lépés: A dokumentumobjektum inicializálása
+Mielőtt belevágna az oktatóanyagba, győződjön meg arról, hogy a következő előfeltételeket teljesítette:
 
- Először inicializálja a`Document` objektumot a forrásdokumentum elérési útjának megadásával:
+-  Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van az Aspose.Words for .NET könyvtár. Letöltheti innen[itt](https://releases.aspose.com/words/net/).
+- Fejlesztői környezet: állítson be egy fejlesztői környezetet, például a Visual Studio-t.
+- Alapvető C# ismerete: Hasznos lesz a C# programozás alapvető ismerete.
+
+## Névterek importálása
+
+A kezdéshez importálnia kell a szükséges névtereket. Ezek a névterek hozzáférést biztosítanak a Word dokumentumok kezeléséhez szükséges osztályokhoz és metódusokhoz.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Notes;
+```
+
+## 1. lépés: Töltse be a dokumentumot
+
+ Először töltsük be azt a dokumentumot, ahol be szeretnénk állítani a végjegyzet beállításait. Használjuk a`Document` osztályt az Aspose.Words könyvtárból ennek megvalósításához.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-## 2. lépés: A DocumentBuilder objektum inicializálása
+## 2. lépés: Inicializálja a DocumentBuilder programot
 
- Ezután inicializálja a`DocumentBuilder` objektum műveletek végrehajtásához a dokumentumon:
+ Ezután inicializáljuk a`DocumentBuilder`osztály. Ez az osztály egyszerű módot kínál a dokumentum tartalom hozzáadására.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 3. lépés: Szöveg és végjegyzet hozzáadása
+## 3. lépés: Szöveg hozzáadása és végjegyzet beszúrása
 
- Használja a`Write` módszere a`DocumentBuilder` objektumot szöveg hozzáadásához a dokumentumhoz, és a`InsertFootnote` módszer a végjegyzet beszúrására:
+ Most adjunk hozzá szöveget a dokumentumhoz, és szúrjunk be egy végjegyzetet. A`InsertFootnote` módszere a`DocumentBuilder` osztály lehetővé teszi, hogy végjegyzeteket adjunk a dokumentumhoz.
 
 ```csharp
 builder.Write("Some text");
 builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
 ```
 
-## 4. lépés: A végjegyzet beállításainak megadása
+## 4. lépés: Nyissa meg és állítsa be a végjegyzet opciókat
 
- Hozzáférés a`EndnoteOptions` dokumentum tulajdonsága a végjegyzet beállításainak módosításához. Ebben a példában az újraindítási szabályt úgy állítjuk be, hogy minden oldalon újrainduljon, a pozíciót pedig a szakasz végén:
+ A végjegyzet beállításainak testreszabásához el kell érnünk a`EndnoteOptions` tulajdona a`Document` osztály. Ezután különféle beállításokat állíthatunk be, például az újraindítási szabályt és a pozíciót.
 
 ```csharp
 EndnoteOptions option = doc.EndnoteOptions;
@@ -48,53 +64,31 @@ option.RestartRule = FootnoteNumberingRule.RestartPage;
 option.Position = EndnotePosition.EndOfSection;
 ```
 
-## 5. lépés: A dokumentum mentése
+## 5. lépés: Mentse el a dokumentumot
 
-Végül mentse el a módosított dokumentumot:
+ Végül mentsük el a dokumentumot a frissített végjegyzet-beállításokkal. A`Save` módszere a`Document` osztály lehetővé teszi, hogy a dokumentumot a megadott könyvtárba mentsük.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 ```
 
-Ez az! Sikeresen beállította a végjegyzetbeállításokat egy Word-dokumentumban az Aspose.Words for .NET használatával.
+## Következtetés
 
-### Példa a Set Endnote Options for Aspose.Words for .NET forráskódjához
+Ezekkel az egyszerű lépésekkel gyerekjáték a végjegyzetbeállítások megadása a Word-dokumentumokban az Aspose.Words for .NET használatával. Az újraindítási szabály és a végjegyzetek pozíciójának testreszabásával személyre szabhatja a dokumentumokat az adott követelményeknek megfelelően. Az Aspose.Words segítségével a Word-dokumentumok manipulálása kéznél van.
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";	
-Document doc = new Document(dataDir + "Document.docx");
-DocumentBuilder builder = new DocumentBuilder(doc);
+## GYIK
 
-builder.Write("Some text");
-builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
+### Mi az Aspose.Words for .NET?
+Az Aspose.Words for .NET egy hatékony könyvtár a Word dokumentumok programozott kezeléséhez. Lehetővé teszi a fejlesztők számára Word dokumentumok létrehozását, módosítását és konvertálását különféle formátumokban.
 
-EndnoteOptions option = doc.EndnoteOptions;
-option.RestartRule = FootnoteNumberingRule.RestartPage;
-option.Position = EndnotePosition.EndOfSection;
+### Használhatom ingyenesen az Aspose.Words-t?
+ Az Aspose.Words ingyenes próbaverzióval használható. Hosszabb használathoz licencet vásárolhat a következőtől[itt](https://purchase.aspose.com/buy).
 
-doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
-```
+### Mik azok a végjegyzetek?
+A végjegyzetek egy szakasz vagy dokumentum végén elhelyezett hivatkozások vagy megjegyzések. További információkat vagy idézeteket adnak.
 
-Nyugodtan használja ezt a kódot saját projektjeiben, és módosítsa saját igényei szerint.
+### Hogyan szabhatom testre a végjegyzetek megjelenését?
+ Testreszabhatja a végjegyzetbeállításokat, például a számozási, pozíció- és újraindítási szabályokat a segítségével`EndnoteOptions` osztály az Aspose.Words for .NET-ben.
 
-### GYIK
-
-#### K: Hogyan formázhatom a végjegyzeteket az Aspose.Words-ben?
-
- V: Az Aspose.Words végjegyzeteinek stílusozásához használhatja a`EndnoteOptions` osztály és a`SeparatorNoteTextStyle` ingatlan. Ezzel a tulajdonsággal megadhatja a betűtípust, -méretet, -színt stb. a végjegyzetekhez.
-
-#### K: Testreszabható a végjegyzetek számozása egy dokumentumban?
-
- V: Igen, személyre szabható a végjegyzetek számozása egy dokumentumban. Használhatja a`RestartRule`és`NumberStyle` tulajdonságai a`EndnoteOptions` osztályban meghatározott újraindítási szabályok és számozási stílusok meghatározásához.
-
-#### K: Hogyan helyezhetem el a végjegyzeteket egy dokumentumban?
-
-V: A végjegyzetek dokumentumban való elhelyezéséhez használhatja a`Position` tulajdona a`EndnoteOptions` osztály. Megadhatja, hogy a végjegyzetek az egyes oldalak aljára, az egyes szakaszok végére vagy a dokumentum végére kerüljenek-e.
-
-#### K: Testreszabhatom a végjegyzet számozási formátumát?
-
- V: Igen, testreszabhatja a végjegyzetek számozásának formátumát az Aspose.Words-ben. Használja a`NumberFormat` tulajdona a`EndnoteOptions` osztályba a kívánt formátum beállításához, például arab számok, római számok, betűk stb.
-
-#### K: Folytatni lehet a végjegyzetek számozását a dokumentum szakaszai között?
-
- V: Igen, folytatható a végjegyzetek számozása a dokumentum szakaszai között. Használja a`RestartRule` tulajdona a`EndnoteOptions` osztályba, és állítsa be`RestartContinuous` hogy a számozás folytatódjon a szakaszok között.
+### Hol találok további dokumentációt az Aspose.Words for .NET-ről?
+ A részletes dokumentáció elérhető a[Aspose.Words a .NET-dokumentációhoz](https://reference.aspose.com/words/net/) oldalon.

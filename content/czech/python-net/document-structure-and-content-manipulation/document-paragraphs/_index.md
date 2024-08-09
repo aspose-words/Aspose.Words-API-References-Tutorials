@@ -193,4 +193,4 @@ Ano, pomocí rozhraní Aspose.Words API můžete vytvořit a použít vlastní s
 Absolutně! Aspose.Words nabízí širokou škálu funkcí, díky kterým je vynikající volbou pro generování dynamických a formátovaných zpráv.
 
 ### Kde se dostanu do knihovny a dokumentace?
- Přístup ke knihovně a dokumentaci Aspose.Words pro Python na adrese[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).
+ Přístup ke knihovně Aspose.Words pro Python a dokumentaci na[https://reference.aspose.com/words/python-net/](https://reference.aspose.com/words/python-net/).

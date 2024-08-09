@@ -15,14 +15,14 @@ Hallo! Haben Sie schon einmal versucht, Text aus einem mit Lesezeichen versehene
 
 Bevor wir beginnen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
 
--  Aspose.Words für .NET: Stellen Sie sicher, dass Sie es installiert haben. Wenn nicht, können Sie[hier herunterladen](https://releases.aspose.com/words/net/).
+-  Aspose.Words für .NET: Stellen Sie sicher, dass Sie es installiert haben. Wenn nicht, können Sie[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 - Entwicklungsumgebung: Jede .NET-Entwicklungsumgebung wie Visual Studio.
 - Grundkenntnisse in C#: Das Verständnis der grundlegenden C#-Programmierkonzepte ist hilfreich.
 - Word-Dokument mit Lesezeichen: Ein Word-Dokument mit eingerichteten Lesezeichen, aus denen wir Text anhängen.
 
 ## Namespaces importieren
 
-Als Erstes importieren wir die erforderlichen Namespaces. So stellen wir sicher, dass wir alle benötigten Tools zur Hand haben.
+Als Erstes importieren wir die erforderlichen Namespaces. So stellen wir sicher, dass wir alle erforderlichen Tools zur Hand haben.
 
 ```csharp
 using System;
@@ -30,7 +30,7 @@ using Aspose.Words;
 using Aspose.Words.Importing;
 ```
 
-Lassen Sie uns das Beispiel in detaillierte Schritte aufteilen.
+Lassen Sie uns das Beispiel in einzelne Schritte aufschlüsseln.
 
 ## Schritt 1: Laden Sie das Dokument und initialisieren Sie die Variablen
 

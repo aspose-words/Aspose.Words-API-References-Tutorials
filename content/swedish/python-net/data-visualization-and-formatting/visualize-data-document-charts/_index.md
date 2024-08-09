@@ -73,7 +73,7 @@ chart.axis_x.title.text = "Months"
 chart.axis_y.title.text = "Sales Amount"
 ```
 
-## Lägger till interaktivitet
+## Lägga till interaktivitet
 
 För att göra diagrammet dynamiskt kan du lägga till interaktivitet. Låt oss lägga till en dataetikett till varje kolumn:
 

@@ -9,7 +9,7 @@ url: /sv/net/programming-with-pdfsaveoptions/display-doc-title-in-window-titleba
 ---
 ## Introduktion
 
-Är du redo att få dina PDF-filer att se ännu mer professionella ut? En liten men effektfull förändring är att visa dokumenttiteln i fönstrets namnlist. Det är som att sätta en namnbricka på din PDF, vilket gör den omedelbart igenkännbar. Idag ska vi dyka in i hur man uppnår detta med Aspose.Words för .NET. I slutet av den här guiden har du en kristallklar förståelse för processen. Låt oss börja!
+Är du redo att få dina PDF-filer att se ännu mer professionella ut? En liten men effektfull förändring är att visa dokumenttiteln i fönstrets namnlist. Det är som att sätta en namnbricka på din PDF, vilket gör den omedelbart igenkännbar. Idag ska vi dyka in i hur man uppnår detta med Aspose.Words för .NET. I slutet av den här guiden har du en kristallklar förståelse för processen. Låt oss komma igång!
 
 ## Förutsättningar
 
@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- I det här steget anger du sökvägen till ditt dokument. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där ditt dokument är lagrat.
+ I det här steget anger du sökvägen till ditt dokument. Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där ditt dokument är lagrat.
 
 ## Steg 2: Konfigurera PDF-sparalternativ
 
@@ -54,7 +54,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- Genom att sätta`DisplayDocTitle` till`true`, instruerar vi Aspose.Words att använda dokumenttiteln i PDF-filens namnlist i fönstret.
+ Genom att ställa in`DisplayDocTitle` till`true`, instruerar vi Aspose.Words att använda dokumenttiteln i PDF-filens namnlist i fönstret.
 
 ## Steg 3: Spara dokumentet som en PDF
 

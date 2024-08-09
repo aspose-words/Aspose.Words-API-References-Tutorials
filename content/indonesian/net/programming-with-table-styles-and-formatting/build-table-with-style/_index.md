@@ -17,7 +17,7 @@ Sebelum kita masuk ke panduan langkah demi langkah, pastikan Anda memiliki semua
 
 1.  Aspose.Words untuk .NET: Jika Anda belum melakukannya, unduh dan instal[Aspose.Kata-kata untuk .NET](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Anda harus menyiapkan lingkungan pengembangan. Visual Studio adalah pilihan bagus untuk tutorial ini.
-3. Pengetahuan Dasar tentang C#: Keakraban dengan pemrograman C# akan membantu Anda mengikutinya dengan lebih mudah.
+3. Pengetahuan Dasar C#: Keakraban dengan pemrograman C# akan membantu Anda mengikutinya dengan lebih mudah.
 
 ## Impor Namespace
 

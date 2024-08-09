@@ -96,7 +96,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportCidUrlsForMhtmlResources.mh
 导出 MHTML 资源的 Cid URL 可确保正确引用 MHTML 文件中嵌入的资源，从而提高文档的可移植性和完整性。
 
 ### 我可以进一步自定义输出格式吗？
-是的，Aspose.Words for .NET 提供了广泛的自定义选项来保存文档。请参阅[文档](https://reference.aspose.com/words/net/)更多细节。
+是的，Aspose.Words for .NET 提供了广泛的自定义选项来保存文档。请参阅[文档](https://reference.aspose.com/words/net/)了解更多详情。
 
 ### 我需要许可证才能使用 Aspose.Words for .NET 吗？
 是的，您需要许可证才能使用 Aspose.Words for .NET。您可以获得免费试用[这里](https://releases.aspose.com/)或购买许可证[这里](https://purchase.aspose.com/buy).

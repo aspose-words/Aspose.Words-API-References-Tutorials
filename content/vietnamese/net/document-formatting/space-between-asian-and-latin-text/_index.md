@@ -76,11 +76,11 @@ Cuối cùng, chúng ta cần lưu tài liệu của mình. Điều này giống
 doc.Save(dataDir + "DocumentFormatting.SpaceBetweenAsianAndLatinText.docx");
 ```
 
-Với dòng mã này, chúng tôi lưu tài liệu của mình vào thư mục được chỉ định với tên mô tả. Và Voila! Tài liệu của bạn đã sẵn sàng với các điều chỉnh khoảng cách hoàn hảo giữa văn bản Châu Á và Latinh.
+Với dòng mã này, chúng tôi lưu tài liệu của mình vào thư mục được chỉ định với tên mô tả. Và thì đấy! Tài liệu của bạn đã sẵn sàng với các điều chỉnh khoảng cách hoàn hảo giữa văn bản Châu Á và Latinh.
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn vừa học cách tự động điều chỉnh khoảng cách giữa văn bản Châu Á và Latinh trong tài liệu Word bằng Aspose.Words for .NET. Nó giống như có một cây đũa thần để định dạng hoàn hảo. Bây giờ, hãy tiếp tục và gây ấn tượng với bạn bè và đồng nghiệp bằng những kỹ năng mới học được của bạn. Hãy nhớ rằng, các công cụ phù hợp sẽ tạo nên sự khác biệt và Aspose.Words dành cho .NET chắc chắn là một công cụ đáng có trong kho vũ khí của bạn.
+Và bạn có nó! Bạn vừa học cách tự động điều chỉnh khoảng cách giữa văn bản Châu Á và Latinh trong tài liệu Word bằng Aspose.Words for .NET. Nó giống như có một cây đũa thần để định dạng hoàn hảo. Bây giờ, hãy tiếp tục và gây ấn tượng với bạn bè và đồng nghiệp bằng những kỹ năng mới học được của bạn. Hãy nhớ rằng, các công cụ phù hợp sẽ tạo nên sự khác biệt và Aspose.Words dành cho .NET chắc chắn là một công cụ đáng có trong kho vũ khí của bạn.
 
 ## Câu hỏi thường gặp
 

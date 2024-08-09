@@ -36,7 +36,7 @@ Abra Visual Studio y cree un nuevo proyecto de aplicación de consola (.NET Core
 ## Paso 2: Instale Aspose.Words para .NET
 
 Instalar a través del Administrador de paquetes NuGet  
-Haga clic derecho en su proyecto en el Explorador de soluciones, seleccione "Administrar paquetes NuGet" y busque`Aspose.Words`. Instalarlo.
+Haga clic derecho en su proyecto en el Explorador de soluciones, seleccione "Administrar paquetes NuGet" y busque`Aspose.Words`. Instálalo.
 
 ## Paso 3: Inicializar el documento
 

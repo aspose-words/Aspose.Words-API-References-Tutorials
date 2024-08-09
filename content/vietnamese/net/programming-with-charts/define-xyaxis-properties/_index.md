@@ -15,7 +15,7 @@ Biểu đồ là một công cụ mạnh mẽ để trực quan hóa dữ liệu
 
 Trước khi đi sâu vào mã hóa, bạn cần phải có một số điều kiện tiên quyết:
 
-1. Aspose.Words for .NET: Đảm bảo bạn có thư viện Aspose.Words for .NET. Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Đảm bảo bạn có thư viện Aspose.Words for .NET. bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Bạn cần một môi trường phát triển tích hợp (IDE) như Visual Studio.
 3. .NET Framework: Đảm bảo môi trường phát triển của bạn được thiết lập để phát triển .NET.
 4. Kiến thức cơ bản về C#: Hướng dẫn này giả sử bạn có hiểu biết cơ bản về lập trình C#.
@@ -35,7 +35,7 @@ Chúng tôi sẽ chia quy trình thành các bước đơn giản, mỗi bước
 
 ## Bước 1: Khởi tạo Document và DocumentBuilder
 
- Đầu tiên, bạn cần khởi tạo một tài liệu mới và một`DocumentBuilder` sự vật. Các`DocumentBuilder` giúp chèn nội dung vào tài liệu.
+ Đầu tiên, bạn cần khởi tạo một tài liệu mới và một`DocumentBuilder` sự vật. các`DocumentBuilder` giúp chèn nội dung vào tài liệu.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu của bạn

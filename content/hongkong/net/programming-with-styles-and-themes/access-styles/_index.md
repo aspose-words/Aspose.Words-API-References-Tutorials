@@ -72,8 +72,8 @@ foreach (Style style in styles)
 
 以下是這段程式碼的作用的細分：
 
-- 初始化`styleName`：我們從一個空字串開始建立樣式名稱列表。
-- 循環瀏覽樣式：`foreach`循環遍歷每個`Style`在裡面`styles`收藏。
+- 初始化`styleName`：我們從一個空字串開始來建立樣式名稱列表。
+- 循環瀏覽樣式：`foreach`循環遍歷每個`Style`在`styles`收藏。
 - 更新與顯示`styleName`：對於每種樣式，我們將其名稱附加到`styleName`並列印出來。
 
 ## 第 4 步：自訂輸出

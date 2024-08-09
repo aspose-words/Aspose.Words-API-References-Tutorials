@@ -66,7 +66,7 @@ Dans cette étape, vous enregistrez le document dans le chemin spécifié avec l
 
 ## Conclusion
 
-Et voila! En suivant ces étapes, vous pouvez facilement exporter des signets des en-têtes et pieds de page d'un document Word vers un PDF à l'aide d'Aspose.Words pour .NET. Cette méthode garantit que les aides à la navigation importantes dans votre document sont conservées au format PDF, permettant ainsi aux lecteurs de naviguer plus facilement dans votre document.
+Et voilà ! En suivant ces étapes, vous pouvez facilement exporter des signets des en-têtes et pieds de page d'un document Word vers un PDF à l'aide d'Aspose.Words pour .NET. Cette méthode garantit que les aides à la navigation importantes dans votre document sont conservées au format PDF, permettant ainsi aux lecteurs de naviguer plus facilement dans votre document.
 
 ## FAQ
 

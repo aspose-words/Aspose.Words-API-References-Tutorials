@@ -106,7 +106,7 @@ doc.Save(dataDir + "ExportedDocument.html", saveOptions);
 
 ## 結論
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 成功將文字輸入表單欄位匯出為純文字。本指南應該為您提供了一個清晰、逐步的方法來完成此任務。請記住，熟能生巧，因此請不斷嘗試不同的選項和設置，看看您還可以使用 Aspose.Words 做什麼。
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功將文字輸入表單欄位匯出為純文字。本指南應該為您提供了一個清晰、逐步的方法來完成此任務。請記住，熟能生巧，因此請不斷嘗試不同的選項和設置，看看您還可以使用 Aspose.Words 做什麼。
 
 ## 常見問題解答
 
@@ -124,7 +124,7 @@ doc.Save(dataDir + "ExportedDocument.html", saveOptions);
 
 ### 我可以自訂匯出的 HTML 嗎？
 
-絕對地！ Aspose.Words 提供了各種選項來自訂 HTML 輸出。請參閱[文件](https://reference.aspose.com/words/net/)更多細節。
+絕對地！ Aspose.Words 提供了各種選項來自訂 HTML 輸出。請參閱[文件](https://reference.aspose.com/words/net/)了解更多詳情。
 
 ### Aspose.Words 與 .NET Core 相容嗎？
 

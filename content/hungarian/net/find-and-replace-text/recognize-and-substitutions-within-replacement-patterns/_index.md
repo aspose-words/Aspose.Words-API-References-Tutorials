@@ -94,7 +94,7 @@ A dokumentumot különféle formátumokban mentheti, például DOCX, PDF, HTML s
 
 ## Következtetés
 
-Gratulálunk! Sikeresen megtanulta, hogyan lehet szöveget felismerni és helyettesíteni a helyettesítési mintákon belül az Aspose.Words for .NET használatával. Ezzel a hatékony funkcióval sok időt és erőfeszítést takaríthat meg a dokumentumfeldolgozási feladatok során. Legyen szó jelentések automatizálásáról, dokumentumok létrehozásáról vagy egyszerűen csak szövegkezelésről, az Aspose.Words mindent megtesz.
+Gratulálok! Sikeresen megtanulta, hogyan lehet szöveget felismerni és helyettesíteni a helyettesítési mintákon belül az Aspose.Words for .NET használatával. Ezzel a hatékony funkcióval sok időt és erőfeszítést takaríthat meg a dokumentumfeldolgozási feladatok során. Legyen szó jelentések automatizálásáról, dokumentumok létrehozásáról vagy egyszerűen csak szövegkezelésről, az Aspose.Words mindent megtesz.
 
 ## GYIK
 

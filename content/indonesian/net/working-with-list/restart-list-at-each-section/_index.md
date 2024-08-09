@@ -2,101 +2,111 @@
 title: Mulai Ulang Daftar Di Setiap Bagian
 linktitle: Mulai Ulang Daftar Di Setiap Bagian
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mengatur ulang daftar bernomor ke setiap bagian dalam dokumen Word dengan Aspose.Words untuk .NET.
+description: Pelajari cara memulai ulang daftar di setiap bagian dalam dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami yang terperinci untuk mengelola daftar secara efektif.
 type: docs
 weight: 10
 url: /id/net/working-with-list/restart-list-at-each-section/
 ---
+## Perkenalan
 
-Dalam tutorial langkah demi langkah ini, kami akan menunjukkan kepada Anda cara mengatur ulang daftar bernomor ke setiap bagian dalam dokumen Word menggunakan Aspose.Words untuk .NET. Kami akan menjelaskan kode sumber C# yang disediakan dan menunjukkan cara mengimplementasikannya di proyek Anda sendiri.
+Membuat dokumen yang terstruktur dan terorganisir dengan baik terkadang terasa seperti memecahkan teka-teki yang rumit. Salah satu bagian dari teka-teki itu adalah mengelola daftar secara efektif, terutama ketika Anda ingin daftar tersebut dimulai ulang di setiap bagian. Dengan Aspose.Words untuk .NET, Anda dapat melakukannya dengan lancar. Mari selami bagaimana Anda bisa memulai ulang daftar di setiap bagian dalam dokumen Word Anda menggunakan Aspose.Words untuk .NET.
 
- Untuk memulai, pastikan Anda telah menginstal dan mengkonfigurasi Aspose.Words for .NET di lingkungan pengembangan Anda. Jika Anda belum melakukannya, unduh dan instal perpustakaan dari[Aspose.Rilis]https://releases.aspose.com/words/net/.
+## Prasyarat
 
-## Langkah 1: Membuat Dokumen dan Daftar
+Sebelum kita mulai, pastikan Anda memiliki hal berikut:
 
-Pertama, buat dokumen baru dan tambahkan daftar bernomor default:
+1.  Aspose.Words untuk .NET: Unduh dan instal versi terbaru dari[Asumsikan Rilis](https://releases.aspose.com/words/net/) halaman.
+2. Lingkungan .NET: Siapkan lingkungan pengembangan Anda dengan .NET terinstal.
+3. Pemahaman Dasar C#: Disarankan untuk menguasai bahasa pemrograman C#.
+4.  Lisensi Aspose: Anda dapat memilih a[izin sementara](https://purchase.aspose.com/temporary-license/) jika Anda tidak memilikinya.
+
+## Impor Namespace
+
+Sebelum menulis kode, pastikan Anda mengimpor namespace yang diperlukan:
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Sekarang, mari kita bagi prosesnya menjadi beberapa langkah agar mudah diikuti.
+
+## Langkah 1: Inisialisasi Dokumen
+
+Pertama, Anda harus membuat instance dokumen baru.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
-
-doc.Lists.Add(ListTemplate.NumberDefault);
-
-List list = doc.Lists[0];
-list. IsRestartAtEachSection = true;
 ```
 
-## Langkah 2: Menambahkan item ke daftar
+## Langkah 2: Tambahkan Daftar Bernomor
 
- Kemudian gunakan a`DocumentBuilder` untuk menambahkan item ke daftar. Anda dapat menggunakan loop untuk menambahkan beberapa item ke daftar:
+Selanjutnya, tambahkan daftar bernomor ke dokumen. Daftar ini akan mengikuti format penomoran default.
+
+```csharp
+doc.Lists.Add(ListTemplate.NumberDefault);
+```
+
+## Langkah 3: Akses Daftar dan Atur Properti Restart
+
+Ambil daftar yang baru saja Anda buat dan atur`IsRestartAtEachSection`properti ke`true`. Hal ini memastikan daftar dimulai ulang penomorannya pada setiap bagian baru.
+
+```csharp
+List list = doc.Lists[0];
+list.IsRestartAtEachSection = true;
+```
+
+## Langkah 4: Buat Pembuat Dokumen dan Kaitkan Daftarnya
+
+ Buat sebuah`DocumentBuilder` untuk menyisipkan konten ke dalam dokumen dan mengaitkannya dengan daftar.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.ListFormat.List = list;
+```
 
+## Langkah 5: Tambahkan Item Daftar dan Sisipkan Hentian Bagian
+
+Sekarang, tambahkan item ke daftar. Untuk mengilustrasikan fungsionalitas mulai ulang, kami akan menyisipkan hentian bagian setelah sejumlah item tertentu.
+
+```csharp
 for (int i = 1; i < 45; i++)
 {
-     builder.Writeln($"List item {i}");
+    builder.Writeln($"List item {i}");
 
-     if (i == 15)
-         builder.InsertBreak(BreakType.SectionBreakNewPage);
+    if (i == 15)
+        builder.InsertBreak(BreakType.SectionBreakNewPage);
 }
 ```
 
-Dalam contoh ini, kita menyisipkan pemisah bagian setelah item daftar ke-15 untuk mengilustrasikan penomoran ulang.
+## Langkah 6: Simpan Dokumen
 
-## Langkah 3: Simpan dokumen yang dimodifikasi
-
-Terakhir, simpan dokumen yang diubah:
+Terakhir, simpan dokumen dengan opsi yang sesuai untuk memastikan kepatuhan.
 
 ```csharp
 OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Transitional };
-
 doc.Save(dataDir + "ResetListAtEachSection.docx", options);
 ```
 
-Jadi ! Anda telah berhasil mengatur ulang daftar bernomor untuk setiap bagian dalam dokumen Word menggunakan Aspose.Words untuk .NET.
+## Kesimpulan
 
-### Contoh kode sumber untuk mengatur ulang daftar di setiap bagian
+Dan itu dia! Dengan mengikuti langkah-langkah ini, Anda dapat dengan mudah memulai ulang daftar di setiap bagian dalam dokumen Word Anda menggunakan Aspose.Words untuk .NET. Fitur ini sangat berguna untuk membuat dokumen terstruktur dengan baik yang memerlukan bagian terpisah dengan penomoran daftarnya sendiri. Dengan Aspose.Words, menangani tugas-tugas seperti itu menjadi mudah, memungkinkan Anda fokus pada pembuatan konten berkualitas tinggi.
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
+## FAQ
 
-doc.Lists.Add(ListTemplate.NumberDefault);
+### Bisakah saya memulai ulang daftar di setiap bagian untuk tipe daftar yang berbeda?
+Ya, Aspose.Words untuk .NET memungkinkan Anda memulai ulang berbagai tipe daftar, termasuk daftar poin dan nomor.
 
-List list = doc.Lists[0];
-list. IsRestartAtEachSection = true;
+### Bagaimana jika saya ingin menyesuaikan format penomoran?
+ Anda dapat menyesuaikan format penomoran dengan memodifikasi`ListTemplate` properti saat membuat daftar.
 
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.ListFormat.List = list;
+### Apakah ada batasan jumlah item dalam daftar?
+Tidak, tidak ada batasan khusus mengenai jumlah item yang dapat Anda miliki dalam daftar menggunakan Aspose.Words untuk .NET.
 
-for (int i = 1; i < 45; i++)
-{
-	 builder.Writeln($"List item {i}");
+### Bisakah saya menggunakan fitur ini dalam format dokumen lain seperti PDF?
+Ya, Anda dapat menggunakan Aspose.Words untuk mengonversi dokumen Word ke format lain seperti PDF dengan tetap mempertahankan struktur daftar.
 
-	 if (i == 15)
-		 builder.InsertBreak(BreakType.SectionBreakNewPage);
-}
-
-OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Transitional };
-
-doc.Save(dataDir + "ResetListAtEachSection.docx", options);
-
-```
-
-Jangan ragu untuk menggunakan kode ini di proyek Anda sendiri dan memodifikasinya agar sesuai dengan kebutuhan spesifik Anda.
-
-### FAQ
-
-#### T: Bagaimana cara memulai ulang daftar di setiap bagian di Aspose.Words?
-
- J: Untuk memulai ulang daftar di setiap bagian di Aspose.Words, Anda perlu membuat instance dari`List`kelas dan berikan daftar bernomor padanya. Kemudian Anda dapat menggunakan`List.IsRestartAtEachSection` properti untuk menentukan bahwa penomoran harus dimulai ulang di setiap bagian. Anda dapat mengaitkan daftar ini dengan satu atau beberapa bagian dokumen Anda sehingga penomoran dimulai ulang dengan benar di setiap bagian.
-
-#### T: Dapatkah saya menyesuaikan format penomoran daftar di Aspose.Words?
-
- A: Ya, Anda dapat menyesuaikan format penomoran daftar di Aspose.Words. Itu`List` class menawarkan beberapa properti untuk ini, seperti`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`, dll. Anda dapat menggunakan properti ini untuk mengatur jenis daftar (bernomor, berpoin, dll.), format penomoran (angka Arab, angka Romawi, huruf, dll.), dan opsi pemformatan penomoran lainnya.
-
-#### T: Apakah mungkin untuk menambahkan level tambahan ke daftar bernomor di Aspose.Words?
-
- J: Ya, dimungkinkan untuk menambahkan level tambahan ke daftar bernomor di Aspose.Words. Itu`ListLevel`kelas memungkinkan Anda mengatur properti pemformatan untuk setiap level daftar. Anda dapat mengatur opsi seperti awalan, akhiran, perataan, indentasi, dll. Ini memungkinkan Anda membuat daftar dengan berbagai tingkat hierarki.
+### Bagaimana saya bisa mendapatkan uji coba gratis Aspose.Words untuk .NET?
+ Anda bisa mendapatkan uji coba gratis dari[Asumsikan Rilis](https://releases.aspose.com/) halaman.

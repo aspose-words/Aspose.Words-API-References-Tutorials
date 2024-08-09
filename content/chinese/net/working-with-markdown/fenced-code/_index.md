@@ -2,79 +2,110 @@
 title: 围栏代码
 linktitle: 围栏代码
 second_title: Aspose.Words 文档处理 API
-description: 了解如何通过 Aspose.Words for .NET 分步指南使用隔离代码功能。
+description: 了解如何使用 Aspose.Words for .NET 将隔离代码和信息字符串添加到 Word 文档。包含分步指南。增强您的文档格式化技能。
 type: docs
 weight: 10
 url: /zh/net/working-with-markdown/fenced-code/
 ---
+## 介绍
 
-在此示例中，我们将引导您了解如何使用 Aspose.Words for .NET 的隔离代码功能。隔离代码用于表示具有特定格式的代码块。
+嗨，程序员们！今天，我们将深入研究 Aspose.Words for .NET 的世界，掌握向 Word 文档添加隔离代码和带信息字符串的隔离代码的技巧。想象一下您的 Word 文档是一块画布，而您，这位艺术家，将以经验丰富的开发人员的精准度进行绘画。使用 Aspose.Words，您可以用结构化、格式化的代码块以编程方式增强您的文档，使您的技术文档以专业性和清晰度脱颖而出。
 
-## 步骤 1：使用文档生成器
+## 先决条件
 
-首先，我们将使用文档生成器向文档添加内容。
+在开始本教程之前，请确保您已准备好所需的一切：
+
+- C# 基础知识：对 C# 的一般了解将帮助您快速掌握概念。
+-  Aspose.Words for .NET：您需要安装 Aspose.Words for .NET。如果您还没有安装，请立即获取[这里](https://releases.aspose.com/words/net/).
+- 开发环境：Visual Studio 或任何您熟悉的其他 C# IDE。
+
+## 导入命名空间
+
+首先，您需要导入必要的命名空间。这就像在开始项目之前收集所有工具一样。
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Style;
+```
+
+现在，让我们逐步分解这个过程。
+
+## 步骤 1：设置项目
+
+在我们可以在 Word 文档中创建漂亮的格式化代码块之前，我们需要在 Visual Studio 中建立一个新项目。
+
+1. 创建新项目：打开 Visual Studio 并创建一个新的 C# 控制台应用程序。
+2. 添加 Aspose.Words 参考：通过 NuGet 包管理器安装 Aspose.Words。您可以在解决方案资源管理器中右键单击您的项目，选择“管理 NuGet 包”，然后搜索 Aspose.Words。
+
+## 步骤 2：初始化 DocumentBuilder
+
+现在您的项目已经设置好了，让我们初始化 DocumentBuilder，它将是我们向 Word 文档添加内容的主要工具。
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## 步骤 2：添加隔离代码的样式
+## 步骤 3：创建隔离代码的样式
 
-我们将使用以下代码为围栏代码添加自定义样式：`Styles.Add`方法`Document`对象。在此示例中，我们为隔离代码创建一个名为“FencedCode”的样式。
+要添加隔离代码，我们首先需要创建样式。可以将其视为设置代码块的主题。
 
 ```csharp
 Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");
-builder.ParagraphFormat.Style = fencedCode;
+fencedCode.Font.Name = "Courier New";
+fencedCode.Font.Size = 10;
+fencedCode.ParagraphFormat.LeftIndent = 20;
+fencedCode.ParagraphFormat.RightIndent = 20;
+fencedCode.ParagraphFormat.Shading.BackgroundPatternColor = Color.LightGray;
 ```
 
-## 步骤 3：添加不含信息的隔离代码
+## 步骤 4：向文档添加隔离代码
 
-现在我们可以使用“FencedCode”自定义样式添加没有信息字符串的围栏代码块。
+样式准备好后，我们现在可以向文档添加隔离的代码块。
 
 ```csharp
-builder.Writeln("This is an fenced code");
+builder.ParagraphFormat.Style = fencedCode;
+builder.Writeln("This is a fenced code block");
 ```
 
-## 步骤 4：添加带有信息字符串的隔离代码
+## 步骤 5：使用信息字符串创建围栏代码样式
 
-我们还可以使用另一种自定义样式添加带有信息字符串的隔离代码块。在此示例中，我们创建了一个名为“FencedCode.C#”的样式来表示一段 C# 代码。
+有时，您可能想要指定编程语言或向代码块添加额外信息。让我们为此创建一个样式。
 
 ```csharp
 Style fencedCodeWithInfo = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode.C#");
-builder.ParagraphFormat.Style = fencedCodeWithInfo;
-builder.Writeln("This is a fenced code with info string");
+fencedCodeWithInfo.Font.Name = "Courier New";
+fencedCodeWithInfo.Font.Size = 10;
+fencedCodeWithInfo.ParagraphFormat.LeftIndent = 20;
+fencedCodeWithInfo.ParagraphFormat.RightIndent = 20;
+fencedCodeWithInfo.ParagraphFormat.Shading.BackgroundPatternColor = Color.LightGray;
 ```
 
-### 使用 Aspose.Words for .NET 的 Fenced Code 示例源代码
+## 步骤 6：将带有信息字符串的隔离代码添加到文档
+
+现在，让我们添加一个带有信息字符串的隔离代码块来表明它是 C# 代码。
 
 ```csharp
-//使用文档生成器向文档添加内容。
-DocumentBuilder builder = new DocumentBuilder();
-
-Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");
-builder.ParagraphFormat.Style = fencedCode;
-builder.Writeln("This is an fenced code");
-
-Style fencedCodeWithInfo = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode.C#");
 builder.ParagraphFormat.Style = fencedCodeWithInfo;
-builder.Writeln("This is a fenced code with info string");
+builder.Writeln("This is a fenced code block with info string - C#");
 ```
 
-### 常见问题解答
+## 结论
 
-#### 问：Markdown 中的分隔代码是什么？
+恭喜！您刚刚使用 Aspose.Words for .NET 将隔离代码块和带信息字符串的隔离代码添加到您的 Word 文档中。这只是冰山一角。使用 Aspose.Words，您可以自动化和增强文档处理，使其达到新的高度。继续探索并快乐地编码！
 
-A：Markdown 中的分隔代码是一种用于在 Markdown 文档中显示代码的格式化方法。它包括使用特定分隔符来框住代码。
+## 常见问题解答
 
-#### 问：Markdown 中分隔代码有什么好处？
+### 什么是 Aspose.Words for .NET？
+Aspose.Words for .NET 是一个功能强大的库，允许开发人员以编程方式创建、操作和转换 Word 文档。
 
-答：Markdown 中的分隔代码可提高代码的可读性，使读者更容易理解。它还允许在某些 Markdown 编辑器中保留语法突出显示。
+### 我可以将 Aspose.Words 与其他编程语言一起使用吗？
+Aspose.Words 主要支持 .NET 语言，但也有适用于 Java、Python 和其他语言的版本。
 
-#### 问：Markdown 中的分隔代码和缩进代码有什么区别？
+### Aspose.Words 可以免费使用吗？
+ Aspose.Words 是一款商业产品，但您可以下载免费试用版[这里](https://releases.aspose.com/)探索其特征。
 
-答：分隔代码使用特定的分隔符来括住代码，而缩进代码则使用空格或制表符来缩进每行代码。
+### 如何获得 Aspose.Words 的支持？
+您可以获得 Aspose 社区和开发人员的支持[这里](https://forum.aspose.com/c/words/8).
 
-#### 问：所有 Markdown 编辑器都支持 Markdown 中的分隔代码吗？
-
-答：不同 Markdown 编辑器对 Markdown 中分隔代码的支持可能有所不同。请查看发布商的具体文档以确保无误。
-
+### Aspose.Words 还提供哪些其他功能？
+Aspose.Words 提供广泛的功能，包括文档转换、基于模板的文档生成、报告等。

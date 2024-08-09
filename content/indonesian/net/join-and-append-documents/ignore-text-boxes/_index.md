@@ -108,7 +108,7 @@ Anda telah berhasil menggabungkan dua dokumen Word menggunakan Aspose.Words untu
 ## FAQ
 
 ### Apa itu Aspose.Words untuk .NET?
- Aspose.Words for .NET adalah perpustakaan yang kuat untuk membuat, memanipulasi, dan mengonversi dokumen Word dalam aplikasi .NET.[Belajarlah lagi](https://reference.aspose.com/words/net/).
+ Aspose.Words for .NET adalah perpustakaan yang kuat untuk membuat, memanipulasi, dan mengonversi dokumen Word dalam aplikasi .NET.[Pelajari lebih lanjut](https://reference.aspose.com/words/net/).
 
 ### Bisakah saya mencoba Aspose.Words untuk .NET sebelum membeli?
  Ya, Anda dapat mengunduh uji coba gratis[Di Sini](https://releases.aspose.com/).

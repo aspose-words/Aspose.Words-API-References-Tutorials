@@ -74,7 +74,7 @@ Enfin, nous enregistrons le document Word au format PDF en utilisant les options
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", saveOptions);
 ```
 
-Et voila! Votre fichier PDF est maintenant enregistré dans le répertoire spécifié sans ces polices principales volumineuses.
+Et voilà ! Votre fichier PDF est maintenant enregistré dans le répertoire spécifié sans ces polices principales volumineuses.
 
 ## Conclusion
 

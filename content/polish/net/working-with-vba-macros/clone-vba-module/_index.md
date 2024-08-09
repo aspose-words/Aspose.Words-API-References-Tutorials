@@ -107,7 +107,7 @@ Ta linia zapisuje nowy dokument pod nazwą „WorkingWithVba.CloneVbaModule.docm
 
 masz to! Pomyślnie sklonowałeś moduł VBA z jednego dokumentu programu Word do drugiego za pomocą Aspose.Words dla .NET. Ta potężna biblioteka niezwykle ułatwia manipulowanie dokumentami programu Word, a opisane przez nas kroki to tylko wierzchołek góry lodowej. Niezależnie od tego, czy automatyzujesz tworzenie dokumentów, modyfikujesz zawartość, czy zarządzasz projektami VBA, Aspose.Words pomoże Ci.
 
- Jeśli chcesz poznać więcej funkcji, sprawdź[Dokumentacja API](https://reference.aspose.com/words/net/) . Potrzebuję pomocy? Odwiedzić[forum wsparcia](https://forum.aspose.com/c/words/8) do pomocy.
+ Jeśli chcesz poznać więcej funkcji, sprawdź[Dokumentacja API](https://reference.aspose.com/words/net/) . Potrzebujesz pomocy? Odwiedź[forum wsparcia](https://forum.aspose.com/c/words/8) o pomoc.
 
 Udanego kodowania i pamiętaj — praktyka czyni mistrza!
 

@@ -81,7 +81,7 @@ Directory.CreateDirectory(imagesDir);
 
 Itt történik a varázslat. Be kell állítanunk mentési beállításainkat, hogy a szövegbeviteli űrlapmezőt egyszerű szövegként exportálhassuk.
 
-1.  Mentés opciók létrehozása: Új inicializálása`HtmlSaveOptions` tárgy.
+1.  Mentés opciók létrehozása: Új inicializálása`HtmlSaveOptions` objektum.
 2.  Szöveg exportálási opció beállítása: Konfigurálja a`ExportTextInputFormFieldAsText`tulajdonát`true`.
 3. Képek mappa beállítása: Adja meg a mappát, ahová a képeket menteni szeretné.
 
@@ -112,7 +112,7 @@ doc.Save(dataDir + "ExportedDocument.html", saveOptions);
 
 ### Exportálhatok más típusú űrlapmezőket ugyanezzel a módszerrel?
 
- Igen, más típusú űrlapmezőket is exportálhat a különböző tulajdonságainak konfigurálásával`HtmlSaveOptions` osztály.
+ Igen, exportálhat más típusú űrlapmezőket is, ha beállítja a különböző tulajdonságait`HtmlSaveOptions` osztály.
 
 ### Mi van, ha a dokumentumom képeket tartalmaz?
 
@@ -124,7 +124,7 @@ doc.Save(dataDir + "ExportedDocument.html", saveOptions);
 
 ### Testreszabhatom az exportált HTML-t?
 
- Teljesen! Az Aspose.Words különféle lehetőségeket kínál a HTML-kimenet testreszabásához. Utal[dokumentáció](https://reference.aspose.com/words/net/) további részletekért.
+ Teljesen! Az Aspose.Words különféle lehetőségeket kínál a HTML-kimenet testreszabásához. Lásd a[dokumentáció](https://reference.aspose.com/words/net/) további részletekért.
 
 ### Az Aspose.Words kompatibilis a .NET Core-al?
 

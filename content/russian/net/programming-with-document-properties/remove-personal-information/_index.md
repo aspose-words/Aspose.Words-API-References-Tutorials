@@ -76,7 +76,7 @@ doc.Save(dataDir + "DocumentPropertiesAndVariables.RemovePersonalInformation.doc
 
 ### Является ли Aspose.Words для .NET бесплатным?
 
- Aspose.Words предлагает[бесплатная пробная версия](https://releases.aspose.com/) так что вы можете протестировать его, но для полной функциональности вам потребуется приобрести лицензию. Проверьте[ценообразование](https://purchase.aspose.com/buy) Больше подробностей.
+ Aspose.Words предлагает[бесплатная пробная версия](https://releases.aspose.com/) так что вы можете протестировать его, но для полной функциональности вам потребуется приобрести лицензию. Проверьте[ценообразование](https://purchase.aspose.com/buy) для более подробной информации.
 
 ### Могу ли я использовать Aspose.Words для других форматов документов?
 

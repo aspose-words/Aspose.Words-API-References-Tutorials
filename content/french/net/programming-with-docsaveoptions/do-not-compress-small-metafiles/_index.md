@@ -18,7 +18,7 @@ Avant de commencer, assurez-vous d'avoir les éléments suivants :
 -  Aspose.Words pour .NET : téléchargez et installez la dernière version à partir de[ici](https://releases.aspose.com/words/net/).
 - Environnement de développement : Visual Studio ou tout autre IDE compatible.
 - Compréhension de base de C# : Familiarité avec le langage de programmation C# et le framework .NET.
--  Licence Aspose : pour libérer tout le potentiel d'Aspose.Words, envisagez d'obtenir un[Licence](https://purchase.aspose.com/buy) . Vous pouvez également utiliser un[permis temporaire](https://purchase.aspose.com/temporary-license/) pour évaluation.
+-  Licence Aspose : pour libérer tout le potentiel d'Aspose.Words, envisagez d'obtenir un[licence](https://purchase.aspose.com/buy) . Vous pouvez également utiliser un[permis temporaire](https://purchase.aspose.com/temporary-license/) pour évaluation.
 
 ## Importer des espaces de noms
 
@@ -94,7 +94,7 @@ Oui, Aspose.Words for .NET vous permet de configurer les options de sauvegarde p
 
 ### Ai-je besoin d’une licence pour utiliser Aspose.Words pour .NET ?
 
- Bien que vous puissiez utiliser Aspose.Words for .NET sans licence d'évaluation, une licence est requise pour déverrouiller toutes les fonctionnalités. Vous pouvez obtenir une licence[ici](https://purchase.aspose.com/buy)ou utilisez un[permis temporaire](https://purchase.aspose.com/temporary-license/) pour évaluation.
+ Bien que vous puissiez utiliser Aspose.Words pour .NET sans licence d'évaluation, une licence est requise pour déverrouiller toutes les fonctionnalités. Vous pouvez obtenir une licence[ici](https://purchase.aspose.com/buy)ou utilisez un[permis temporaire](https://purchase.aspose.com/temporary-license/) pour évaluation.
 
 ### Comment puis-je m'assurer que mes documents sont conformes aux normes PDF/A ?
 

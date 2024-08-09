@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-tables/auto-fit-table-to-contents/
 ---
-## Úvod
+## Zavedení
 
 Potýkali jste se někdy s tabulkami, které vypadají, jako by byly vmáčknuté do dokumentu aplikace Word, takže text zůstal stísněný a sloupce nebyly zarovnány? Pokud ano, nejste sami! Správa formátování tabulek může být skutečným problémem, zejména při práci s dynamickým obsahem. Ale nebojte se; Aspose.Words for .NET vám drží záda. V této příručce se ponoříme do šikovné funkce automatického přizpůsobení tabulek obsahu. Tato funkce zajišťuje, že se vaše tabulky dokonale přizpůsobí jejich obsahu, takže vaše dokumenty budou vypadat uhlazeně a profesionálně s minimálním úsilím. Jste připraveni začít? Nechte vaše stoly pracovat tvrději za vás!
 
@@ -15,7 +15,7 @@ Potýkali jste se někdy s tabulkami, které vypadají, jako by byly vmáčknut�
 
 Než se pustíme do kódu, zde je to, co musíte mít:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words. Můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words. Můžete si jej stáhnout[zde](https://releases.aspose.com/words/net/).
 2. Visual Studio: Vývojové prostředí jako Visual Studio pro psaní a testování kódu.
 3. Základní znalost C#: Znalost programování v C# bude užitečná, protože ji budeme používat k manipulaci s dokumenty Wordu.
 

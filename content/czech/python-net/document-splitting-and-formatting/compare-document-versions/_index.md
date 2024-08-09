@@ -9,7 +9,7 @@ url: /cs/python-net/document-splitting-and-formatting/compare-document-versions/
 ---
 V dnešním rychle se rozvíjejícím světě společné tvorby dokumentů je pro zajištění přesnosti a předcházení chybám nezbytné udržovat správnou správu verzí. Jedním mocným nástrojem, který může pomoci v tomto procesu, je Aspose.Words pro Python, API určené k manipulaci a programové správě dokumentů Wordu. Tento článek vás provede procesem porovnávání verzí dokumentů pomocí Aspose.Words pro Python, což vám umožní implementovat efektivní kontrolu revizí ve vašich projektech.
 
-## Úvod
+## Zavedení
 
 Při společné práci na dokumentech je důležité sledovat změny provedené různými autory. Aspose.Words pro Python nabízí spolehlivý způsob, jak automatizovat porovnávání verzí dokumentů, což usnadňuje identifikaci úprav a udržování přehledných záznamů o revizích.
 

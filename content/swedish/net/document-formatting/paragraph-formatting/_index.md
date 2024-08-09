@@ -20,7 +20,7 @@ Innan vi ger oss ut på detta formateringsäventyr, låt oss förbereda vår ver
 3. .NET Framework: Se till att det är installerat.
 4. Grundläggande C#-kunskap: Oroa dig inte, du behöver inte vara en trollkarl, bara en grundläggande förståelse duger.
 
-Har du allt? Bra! Låt oss gå vidare.
+Har du allt? Stor! Låt oss gå vidare.
 
 ## Importera namnområden
 
@@ -59,7 +59,7 @@ paragraphFormat.RightIndent = 50;
 paragraphFormat.SpaceAfter = 25;
 ```
 
-Vi konfigurerar`ParagraphFormat` egenskaper. Låt oss dela upp vad varje egenskap gör:
+Vi konfigurerar`ParagraphFormat` fastigheter. Låt oss dela upp vad varje egenskap gör:
 - Justering: Centrerar stycket.
 - LeftIndent: Ställer in vänster indrag till 50 punkter.
 - RightIndent: Ställer in höger indrag till 50 poäng.

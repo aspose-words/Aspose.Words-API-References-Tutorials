@@ -9,7 +9,7 @@ url: /nl/net/programming-with-digital-signatures/creating-and-signing-new-signat
 ---
 ## Invoering
 
-Hallo daar! U hebt dus een Word-document en u moet een handtekeningregel toevoegen en het vervolgens digitaal ondertekenen. Klinkt lastig? Helemaal niet! Dankzij Aspose.Words voor .NET kunt u dit naadloos bereiken met slechts een paar regels code. In deze zelfstudie begeleiden we u door het hele proces, van het instellen van uw omgeving tot het opslaan van uw document met een glanzende nieuwe handtekening. Klaar? Laten we erin duiken!
+Hé daar! U hebt dus een Word-document en u moet een handtekeningregel toevoegen en het vervolgens digitaal ondertekenen. Klinkt lastig? Helemaal niet! Dankzij Aspose.Words voor .NET kunt u dit naadloos bereiken met slechts een paar regels code. In deze zelfstudie begeleiden we u door het hele proces, van het instellen van uw omgeving tot het opslaan van uw document met een glanzende nieuwe handtekening. Klaar? Laten we erin duiken!
 
 ## Vereisten
 
@@ -105,7 +105,7 @@ En daar heb je het! Met deze stappen hebt u met succes een nieuw Word-document g
 Ja, u kunt verschillende afbeeldingsformaten gebruiken, zoals PNG, JPG, BMP, enz.
 
 ###  Is het nodig om een`.pfx` file for the certificate?
- Ja een`.pfx` bestand is een veelgebruikt formaat voor het opslaan van cryptografische informatie, waaronder certificaten en privésleutels.
+ Ja, een`.pfx` bestand is een veelgebruikt formaat voor het opslaan van cryptografische informatie, waaronder certificaten en privésleutels.
 
 ### Kan ik meerdere handtekeningregels in één document toevoegen?
 Absoluut! U kunt meerdere handtekeningregels invoegen door de invoegstap voor elke handtekening te herhalen.

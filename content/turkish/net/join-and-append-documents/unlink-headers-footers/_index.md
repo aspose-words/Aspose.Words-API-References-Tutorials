@@ -9,7 +9,7 @@ url: /tr/net/join-and-append-documents/unlink-headers-footers/
 ---
 ## giriiş
 
-Belge işleme dünyasında üstbilgileri ve altbilgileri tutarlı tutmak bazen zor olabilir. İster belgeleri birleştiriyor olun ister yalnızca farklı bölümler için farklı üstbilgiler ve altbilgiler arıyor olun, bunların bağlantısını nasıl kaldıracağınızı bilmek çok önemlidir. Bugün bunu Aspose.Words for .NET kullanarak nasıl başarabileceğinizi ele alacağız. Kolayca takip edebilmeniz için adım adım anlatacağız. Belge manipülasyonunda ustalaşmaya hazır mısınız? Başlayalım!
+Belge işleme dünyasında üstbilgileri ve altbilgileri tutarlı tutmak bazen zor olabilir. İster belgeleri birleştiriyor olun ister yalnızca farklı bölümler için farklı üstbilgiler ve altbilgiler arıyor olun, bunların bağlantısını nasıl kaldıracağınızı bilmek çok önemlidir. Bugün bunu Aspose.Words for .NET kullanarak nasıl başarabileceğinizi ele alacağız. Kolayca takip edebilmeniz için adım adım anlatacağız. Belge manipülasyonunda ustalaşmaya hazır mısınız? Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -57,7 +57,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## 4. Adım: Üstbilgilerin ve Altbilgilerin Bağlantısını Kaldırma
 
- Bu adım çok önemlidir. Kaynak belgenin üstbilgileri ve altbilgileri ile hedef belgenin bağlantısını kaldırmak için,`LinkToPrevious` yöntem. Bu yöntem, üstbilgilerin ve altbilgilerin eklenen belgeye taşınmamasını sağlar.
+ Bu adım çok önemlidir. Kaynak belgenin üstbilgileri ve altbilgileri ile hedef belgenin bağlantısını kaldırmak için,`LinkToPrevious` Yöntem. Bu yöntem, üstbilgilerin ve altbilgilerin eklenen belgeye taşınmamasını sağlar.
 
 ```csharp
 // Bunu durdurmak için kaynak belgedeki üstbilgi ve altbilgilerin bağlantısını kaldırın
@@ -67,7 +67,7 @@ srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 
 ## Adım 5: Kaynak Belgeyi Ekleyin
 
- Üstbilgi ve altbilgilerin bağlantısını kaldırdıktan sonra kaynak belgeyi hedef belgeye ekleyebilirsiniz. Kullan`AppendDocument` yöntemini seçin ve içe aktarma formatı modunu şu şekilde ayarlayın:`KeepSourceFormatting` kaynak belgenin orijinal biçimlendirmesini korumak için.
+ Üstbilgi ve altbilgilerin bağlantısını kaldırdıktan sonra kaynak belgeyi hedef belgeye ekleyebilirsiniz. Kullanın`AppendDocument` yöntemini seçin ve içe aktarma formatı modunu şu şekilde ayarlayın:`KeepSourceFormatting` kaynak belgenin orijinal biçimlendirmesini korumak için.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -83,7 +83,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 
 ## Çözüm
 
-İşte buyur! Bu adımları izleyerek, kaynak belgenizdeki üstbilgi ve altbilgilerin bağlantısını başarıyla kaldırdınız ve bunu Aspose.Words for .NET kullanarak hedef belgenize eklediniz. Bu teknik, farklı bölümler için farklı üstbilgiler ve altbilgiler gerektiren karmaşık belgelerle çalışırken özellikle yararlı olabilir. Mutlu kodlama!
+Ve işte karşınızda! Bu adımları izleyerek, kaynak belgenizdeki üstbilgi ve altbilgilerin bağlantısını başarıyla kaldırdınız ve bunu Aspose.Words for .NET kullanarak hedef belgenize eklediniz. Bu teknik, farklı bölümler için farklı üstbilgiler ve altbilgiler gerektiren karmaşık belgelerle çalışırken özellikle yararlı olabilir. Mutlu kodlama!
 
 ## SSS'ler
 
@@ -91,7 +91,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 Aspose.Words for .NET, .NET uygulamalarında Word belgeleriyle çalışmak için güçlü bir kütüphanedir. Geliştiricilerin belgeleri programlı olarak oluşturmasına, değiştirmesine, dönüştürmesine ve yazdırmasına olanak tanır.
 
 ### Yalnızca belirli bölümlere ait üstbilgi ve altbilgilerin bağlantısını kaldırabilir miyim?  
- Evet, belirli bölümlere ilişkin üstbilgi ve altbilgilerin bağlantısını şuraya erişerek kaldırabilirsiniz:`HeadersFooters` İstenilen bölümün özelliği ve kullanımı`LinkToPrevious` yöntem.
+ Evet, belirli bölümlere ilişkin üstbilgi ve altbilgilerin bağlantısını şuraya erişerek kaldırabilirsiniz:`HeadersFooters` İstenilen bölümün özelliği ve kullanımı`LinkToPrevious` Yöntem.
 
 ### Kaynak belgenin orijinal formatını korumak mümkün mü?  
  Evet, kaynak belgeyi eklerken şunu kullanın:`ImportFormatMode.KeepSourceFormatting` Orijinal biçimlendirmeyi koruma seçeneği.

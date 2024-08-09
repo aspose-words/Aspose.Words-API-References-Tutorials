@@ -75,7 +75,7 @@ Bu, belgeyi güncellenmiş son kaydedilen zaman özelliğiyle kaydedecektir.
 
 ## Çözüm
 
-İşte buyur! Bu adımları takip ederek Aspose.Words for .NET'i kullanarak Word belgelerinizin son kaydedilen zaman özelliğini kolayca güncelleyebilirsiniz. Bu, özellikle belgelerinizde, belge yönetim sistemleri ve diğer çeşitli uygulamalar için hayati önem taşıyan doğru meta verileri korumak açısından kullanışlıdır.
+Ve işte karşınızda! Bu adımları takip ederek Aspose.Words for .NET'i kullanarak Word belgelerinizin son kaydedilen zaman özelliğini kolayca güncelleyebilirsiniz. Bu, özellikle belgelerinizde, belge yönetim sistemleri ve diğer çeşitli uygulamalar için hayati önem taşıyan doğru meta verileri korumak açısından kullanışlıdır.
 
 ## SSS'ler
 

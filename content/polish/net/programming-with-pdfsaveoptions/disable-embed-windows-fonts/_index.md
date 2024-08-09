@@ -15,7 +15,7 @@ Zmniejszenie rozmiaru plików PDF może mieć kluczowe znaczenie dla wydajnego p
 
 Zanim zagłębisz się w kod, upewnij się, że masz następujące elementy:
 
--  Aspose.Words dla .NET: Jeśli jeszcze tego nie zrobiłeś, pobierz i zainstaluj go z[Link do pobrania](https://releases.aspose.com/words/net/).
+-  Aspose.Words dla .NET: Jeśli jeszcze tego nie zrobiłeś, pobierz i zainstaluj go z[Pobierz link](https://releases.aspose.com/words/net/).
 - Środowisko programistyczne .NET: popularnym wyborem jest Visual Studio.
 - Przykładowy dokument programu Word: Przygotuj plik DOCX, który chcesz przekonwertować do formatu PDF.
 
@@ -54,7 +54,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- Przez ustawienie`FontEmbeddingMode` Do`EmbedNone`, instruujemy Aspose.Words, aby nie umieszczał tych czcionek w pliku PDF, co zmniejszy rozmiar pliku.
+ Ustawiając`FontEmbeddingMode` Do`EmbedNone`, instruujemy Aspose.Words, aby nie umieszczał tych czcionek w pliku PDF, co zmniejszy rozmiar pliku.
 
 ## Krok 3: Zapisz dokument w formacie PDF
 

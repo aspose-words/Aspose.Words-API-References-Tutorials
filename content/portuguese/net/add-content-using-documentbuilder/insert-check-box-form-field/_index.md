@@ -14,7 +14,7 @@ No mundo da automação de documentos, Aspose.Words for .NET se destaca como uma
 
 Antes de mergulhar no âmago da questão, vamos garantir que você tenha tudo o que precisa:
 
--  Biblioteca Aspose.Words for .NET: se ainda não o fez, baixe-o em[aqui](https://releases.aspose.com/words/net/) . Você também pode optar por um[teste grátis](https://releases.aspose.com/) se você estiver explorando a biblioteca.
+-  Biblioteca Aspose.Words for .NET: se ainda não o fez, baixe-o em[aqui](https://releases.aspose.com/words/net/) . Você também pode optar por um[teste gratuito](https://releases.aspose.com/) se você estiver explorando a biblioteca.
 - Ambiente de desenvolvimento: um IDE como o Visual Studio será o seu playground.
 - Compreensão básica de C#: embora abordemos tudo em detalhes, uma compreensão básica de C# será benéfica.
 
@@ -64,7 +64,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Etapa 4: Inserindo um campo de formulário de caixa de seleção
 
-Aqui vem a parte divertida! Agora vamos inserir um campo de formulário de caixa de seleção em nosso documento.
+Aí vem a parte divertida! Agora vamos inserir um campo de formulário de caixa de seleção em nosso documento.
 
 ```csharp
 builder.InsertCheckBox("CheckBox", true, true, 0);
@@ -88,7 +88,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertCheckBoxFormField.docx"
 
 ## Conclusão
 
-Parabéns! Você inseriu com êxito um campo de formulário de caixa de seleção em um documento do Word usando Aspose.Words for .NET. Com essas etapas, agora você pode criar documentos interativos que melhoram o envolvimento do usuário e a coleta de dados. O poder do Aspose.Words for .NET abre possibilidades infinitas para automação e personalização de documentos.
+Parabéns! Você inseriu com sucesso um campo de formulário de caixa de seleção em um documento do Word usando Aspose.Words for .NET. Com essas etapas, agora você pode criar documentos interativos que melhoram o envolvimento do usuário e a coleta de dados. O poder do Aspose.Words for .NET abre possibilidades infinitas para automação e personalização de documentos.
 
 ## Perguntas frequentes
 
@@ -98,7 +98,7 @@ Aspose.Words for .NET é uma biblioteca poderosa que permite aos desenvolvedores
 
 ### Como posso obter o Aspose.Words para .NET?
 
- Você pode baixar Aspose.Words para .NET em[local na rede Internet](https://releases.aspose.com/words/net/) . Há também uma opção para um[teste grátis](https://releases.aspose.com/) se você quiser explorar seus recursos.
+ Você pode baixar Aspose.Words para .NET em[site](https://releases.aspose.com/words/net/) . Há também uma opção para um[teste gratuito](https://releases.aspose.com/) se você quiser explorar seus recursos.
 
 ### Posso usar o Aspose.Words for .NET com qualquer aplicativo .NET?
 

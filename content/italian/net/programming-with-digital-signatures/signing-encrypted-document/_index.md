@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-digital-signatures/signing-encrypted-document/
 ---
-## introduzione
+## Introduzione
 
 Ti sei mai chiesto come firmare un documento Word crittografato? Oggi esamineremo questo processo utilizzando Aspose.Words per .NET. Allacciate le cinture e preparatevi per un tutorial dettagliato, coinvolgente e divertente!
 
@@ -39,7 +39,7 @@ Per prima cosa, configura il tuo progetto Visual Studio. Apri Visual Studio e cr
 
 ## Passaggio 2: aggiunta di Aspose.Words al tuo progetto
 
-Successivamente, dobbiamo aggiungere Aspose.Words al tuo progetto. Esistono alcuni modi per eseguire questa operazione, ma l'utilizzo di NuGet è il più semplice. 
+Successivamente, dobbiamo aggiungere Aspose.Words al tuo progetto. Esistono alcuni modi per eseguire questa operazione, ma l'uso di NuGet è il più semplice. 
 
 1. Aprire la console di gestione pacchetti NuGet da Strumenti > Gestione pacchetti NuGet > Console di gestione pacchetti.
 2. Esegui il seguente comando:
@@ -57,7 +57,7 @@ Avrai bisogno di una directory in cui archiviare i tuoi documenti e certificati 
 
 ## Passaggio 4: scrivere il codice
 
- Ora tuffiamoci nel codice. Apri i tuoi`Program.cs` file e inizia impostando il percorso della directory dei documenti e inizializzando il file`SignOptions` con la password di decrittazione.
+ Ora tuffiamoci nel codice. Apri il tuo`Program.cs` file e inizia impostando il percorso della directory dei documenti e inizializzando il file`SignOptions` con la password di decrittazione.
 
 ```csharp
 // Il percorso della directory dei documenti.
@@ -91,7 +91,7 @@ Salva il file ed esegui il progetto. Se tutto è impostato correttamente, dovres
 
 ## Conclusione
 
-E il gioco è fatto! Hai firmato con successo un documento Word crittografato utilizzando Aspose.Words per .NET. Con questa potente libreria, la firma digitale diventa un gioco da ragazzi, anche per i file crittografati. Buona programmazione!
+Ed ecco qua! Hai firmato con successo un documento Word crittografato utilizzando Aspose.Words per .NET. Con questa potente libreria, la firma digitale diventa un gioco da ragazzi, anche per i file crittografati. Buona programmazione!
 
 ## Domande frequenti
 

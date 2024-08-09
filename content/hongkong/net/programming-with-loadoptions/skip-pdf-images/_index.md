@@ -73,11 +73,11 @@ PdfLoadOptions loadOptions = new PdfLoadOptions { SkipPdfImages = true };
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 ```
 
-確保這件事`"Pdf Document.pdf"`是指定目錄中 PDF 檔案的名稱。
+確保`"Pdf Document.pdf"`是指定目錄中 PDF 檔案的名稱。
 
 ## 結論
 
-現在你就擁有了！您剛剛學習如何使用 Aspose.Words for .NET 跳過 PDF 文件中的圖像。當您需要處理文字較多且不包含雜亂影像的 PDF 時，此功能非常有用。請記住，熟能生巧，因此請嘗試使用不同的 PDF 進行試驗，以了解此功能在各種情況下的工作原理。
+現在你就得到它了！您剛剛學習如何使用 Aspose.Words for .NET 跳過 PDF 文件中的圖像。當您需要處理文字較多且不包含雜亂影像的 PDF 時，此功能非常有用。請記住，熟能生巧，因此請嘗試使用不同的 PDF 進行試驗，以了解此功能在各種情況下的工作原理。
 
 ## 常見問題解答
 

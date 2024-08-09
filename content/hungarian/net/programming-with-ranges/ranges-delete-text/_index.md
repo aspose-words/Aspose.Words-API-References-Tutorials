@@ -79,7 +79,7 @@ doc.Save(dataDir + "WorkingWithRangesDeleteText.ModifiedDocument.docx");
 
 ## Következtetés
 
-Gratulálunk! Most tanulta meg, hogyan törölhet szöveget egy Word-dokumentum tartományából az Aspose.Words for .NET segítségével. Ez az oktatóanyag a projektkönyvtár beállítását, egy dokumentum betöltését, egy adott szakasz szövegének törlését és a módosított dokumentum mentését tárgyalta. Az Aspose.Words for .NET robusztus eszközkészletet biztosít a Word-dokumentumkezeléshez, és ez csak a jéghegy csúcsa.
+Gratulálok! Most tanulta meg, hogyan törölhet szöveget egy Word-dokumentum tartományából az Aspose.Words for .NET segítségével. Ez az oktatóanyag a projektkönyvtár beállítását, egy dokumentum betöltését, egy adott szakasz szövegének törlését és a módosított dokumentum mentését tárgyalta. Az Aspose.Words for .NET robusztus eszközkészletet biztosít a Word-dokumentumkezeléshez, és ez csak a jéghegy csúcsa.
 
 ## GYIK
 

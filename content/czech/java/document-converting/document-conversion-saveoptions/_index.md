@@ -87,7 +87,7 @@ SaveOptions se používají k určení formátu a voleb pro převod dokumentu. U
 
 Ano, Aspose.Words for Java poskytuje robustní podporu pro převod dokumentů aplikace Word do formátu PDF. Nastavení převodu můžete upravit tak, aby vyhovovalo vašim konkrétním požadavkům.
 
-### Jak se vypořádám s chybami při převodu dokumentů?
+### Jak se vypořádám s chybami převodu dokumentů?
 
 Při práci s převodem dokumentů je nezbytné ladně řešit chyby. Pokyny týkající se zpracování chyb a odstraňování problémů naleznete v dokumentaci Aspose.Words.
 

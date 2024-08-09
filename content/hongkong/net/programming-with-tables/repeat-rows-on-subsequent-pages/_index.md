@@ -9,7 +9,7 @@ url: /zh-hant/net/programming-with-tables/repeat-rows-on-subsequent-pages/
 ---
 ## 介紹
 
-以程式設計方式建立 Word 文件可能是一項艱鉅的任務，尤其是當您需要跨多個頁面維護格式時。您是否曾經嘗試在 Word 中製作表格，卻發現標題行在後續頁面上不重複？不要害怕！使用 Aspose.Words for .NET，您可以輕鬆確保表格標題在每個頁面上重複，從而為您的文件提供專業且精美的外觀。在本教程中，我們將使用簡單的程式碼範例和詳細的解釋來引導您完成實現此目標的步驟。讓我們深入了解吧！
+以程式設計方式建立 Word 文件可能是一項艱鉅的任務，尤其是當您需要跨多個頁面維護格式時。您是否曾經嘗試在 Word 中製作表格，卻發現標題行在後續頁面上不重複？不要害怕！使用 Aspose.Words for .NET，您可以輕鬆確保表格標題在每個頁面上重複，從而為您的文件提供專業且精美的外觀。在本教程中，我們將使用簡單的程式碼範例和詳細的解釋來引導您完成實現此目的的步驟。讓我們深入了解吧！
 
 ## 先決條件
 
@@ -87,7 +87,7 @@ for (int i = 0; i < 50; i++)
 }
 ```
 
-此循環向表中插入 50 行數據，每行兩列。這`HeadingFormat`被設定為`false`對於這些行，因為它們不是標題行。
+此循環向表中插入 50 行數據，每行兩列。這`HeadingFormat`設定為`false`對於這些行，因為它們不是標題行。
 
 ## 步驟 4：儲存文檔
 
@@ -101,7 +101,7 @@ doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 
 ## 結論
 
-現在你就擁有了！只需幾行程式碼，您就可以使用 Aspose.Words for .NET 建立一個包含表格的 Word 文檔，這些表格在後續頁面上具有重複的標題行。這不僅增強了文件的可讀性，還確保了一致且專業的外觀。現在，繼續在您的專案中嘗試！
+現在你就得到它了！只需幾行程式碼，您就可以使用 Aspose.Words for .NET 建立一個包含表格的 Word 文檔，這些表格在後續頁面上具有重複的標題行。這不僅增強了文件的可讀性，還確保了一致且專業的外觀。現在，繼續在您的專案中嘗試！
 
 ## 常見問題解答
 
@@ -118,4 +118,4 @@ doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 是的，您可以透過造訪現有表來修改它們`Document`物件並套用類似的格式。
 
 ### Aspose.Words for .NET 中還有哪些表格格式選項可用？
- Aspose.Words for .NET 提供了廣泛的表格格式化選項，包括儲存格合併、邊框設定和表格對齊。查看[文件](https://reference.aspose.com/words/net/)更多細節。
+ Aspose.Words for .NET 提供了廣泛的表格格式化選項，包括儲存格合併、邊框設定和表格對齊。查看[文件](https://reference.aspose.com/words/net/)了解更多詳情。

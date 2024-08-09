@@ -15,7 +15,7 @@ Készen állsz, hogy belemerülj a Word dokumentumstílusának világába? Akár
 
 Mielőtt belevágnánk, győződjön meg arról, hogy rendelkezik a következőkkel:
 
-1.  Aspose.Words for .NET: Ezt a könyvtárat telepítenie kell a .NET-környezetbe. tudsz[töltse le itt](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ezt a könyvtárat telepítenie kell a .NET-környezetbe. Tudod[töltse le itt](https://releases.aspose.com/words/net/).
 2. A .NET alapszintű ismerete: A C# vagy más .NET nyelv ismerete segít megérteni a megadott kódrészleteket.
 3. Fejlesztői környezet: Győződjön meg arról, hogy rendelkezik egy olyan IDE-vel, mint a Visual Studio, amely be van állítva a .NET kód írására és végrehajtására.
 
@@ -46,7 +46,7 @@ Miután megvan a dokumentumobjektum, hozzáférhet a stílusgyűjteményéhez. E
 StyleCollection styles = doc.Styles;
 ```
 
-`StyleCollection` gyűjteménye`Style` tárgyakat. Minden egyes`Style` Az objektum egyetlen stílust képvisel a dokumentumon belül.
+`StyleCollection` gyűjteménye`Style` tárgyakat. Minden`Style` Az objektum egyetlen stílust képvisel a dokumentumon belül.
 
 ## 3. lépés: Ismétlés a stílusokon keresztül
 
@@ -73,7 +73,7 @@ foreach (Style style in styles)
 Íme a kód funkcióinak lebontása:
 
 -  Inicializálás`styleName`: A stílusnévlistánkat egy üres karakterlánccal kezdjük.
--  Lapozás a stílusok között: A`foreach` ciklus ismétlődik mindegyiken`Style` ban,-ben`styles` Gyűjtemény.
+-  Lapozzon át a stílusokon: The`foreach` ciklus ismétlődik mindegyiken`Style` a`styles` gyűjtemény.
 - Frissítés és megjelenítés`styleName` : Minden stílushoz hozzáfűzzük a nevét`styleName` és nyomtassa ki.
 
 ## 4. lépés: A kimenet testreszabása

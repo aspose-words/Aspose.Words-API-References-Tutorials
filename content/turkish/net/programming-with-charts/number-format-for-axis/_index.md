@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithCharts.NumberFormatForAxis.docx");
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak grafiğinizin Y eksenindeki sayıları başarıyla biçimlendirdiniz. Bu yalnızca grafiklerinizin daha profesyonel görünmesini sağlamakla kalmaz, aynı zamanda okunabilirliği de artırır. Aspose.Words, programlı olarak çarpıcı Word belgeleri oluşturmanıza yardımcı olabilecek çok sayıda özellik sunar. Öyleyse neden daha fazlasını keşfedip başka neler yapabileceğinizi görmüyorsunuz?
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak grafiğinizin Y eksenindeki sayıları başarıyla biçimlendirdiniz. Bu yalnızca grafiklerinizin daha profesyonel görünmesini sağlamakla kalmaz, aynı zamanda okunabilirliği de artırır. Aspose.Words, programlı olarak çarpıcı Word belgeleri oluşturmanıza yardımcı olabilecek çok sayıda özellik sunar. Öyleyse neden daha fazlasını keşfedip başka neler yapabileceğinizi görmüyorsunuz?
 
 ## SSS'ler
 

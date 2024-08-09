@@ -26,7 +26,7 @@ Untuk menambahkan panel tugas ekstensi web ke dokumen, ikuti langkah-langkah ber
 Document doc = new Document();
 ```
 
-##  Membuat`TaskPane` instance and add it to the document's web extension task panes:
+##  Buat sebuah`TaskPane` instance and add it to the document's web extension task panes:
 
 ```java
 TaskPane taskPane = new TaskPane();
@@ -99,7 +99,7 @@ Menguji dan mempratinjau ekstensi web di dokumen Anda dapat dilakukan dengan mem
 
 ### Apakah ada batasan atau pertimbangan kompatibilitas saat menggunakan ekstensi web di Aspose.Words untuk Java?
 
-Meskipun Aspose.Words untuk Java memberikan dukungan yang kuat untuk ekstensi web, penting untuk memastikan bahwa lingkungan target tempat dokumen akan digunakan mendukung jenis ekstensi web spesifik yang telah Anda tambahkan. Selain itu, pertimbangkan masalah atau persyaratan kompatibilitas apa pun yang terkait dengan ekstensi web itu sendiri, karena ekstensi tersebut mungkin bergantung pada layanan atau API eksternal.
+Meskipun Aspose.Words untuk Java memberikan dukungan kuat untuk ekstensi web, penting untuk memastikan bahwa lingkungan target tempat dokumen akan digunakan mendukung jenis ekstensi web spesifik yang Anda tambahkan. Selain itu, pertimbangkan masalah atau persyaratan kompatibilitas apa pun yang terkait dengan ekstensi web itu sendiri, karena ekstensi tersebut mungkin bergantung pada layanan atau API eksternal.
 
 ### Bagaimana saya dapat menemukan informasi dan sumber daya lebih lanjut tentang penggunaan ekstensi web di Aspose.Words untuk Java?
 

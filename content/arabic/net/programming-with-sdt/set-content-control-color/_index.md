@@ -39,7 +39,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## الخطوة 2: قم بتحميل المستند
 
- إنشاء`Document` كائن عن طريق تحميل ملف Word الخاص بك:
+ إنشاء أ`Document` كائن عن طريق تحميل ملف Word الخاص بك:
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");

@@ -116,7 +116,7 @@ Evet, bir belgeye her biri benzersiz bilgi istemleri ve yanıtları olan birden 
 ###  Amacı nedir?`PromptOnceOnMailMerge` property?
 `PromptOnceOnMailMerge` özelliği, ASK isteminin adres-mektup birleştirme işlemi sırasında yalnızca bir kez mi, yoksa her seferinde mi görüntüleneceğini belirler.
 
-### Özelliklerini ayarladıktan sonra ASK alanını güncellemem gerekiyor mu?
+### Özelliklerini ayarladıktan sonra ASK alanını güncellemem gerekir mi?
 Evet, ASK alanının güncellenmesi tüm özelliklerin doğru şekilde uygulanmasını ve alanın beklendiği gibi çalışmasını sağlar.
 
 ### Bilgi istemi metnini ve varsayılan yanıtı özelleştirebilir miyim?

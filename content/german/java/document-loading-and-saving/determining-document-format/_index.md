@@ -197,7 +197,7 @@ Aspose.Words für Java unterstützt verschiedene Dokumentformate, darunter DOC, 
 
 ### Wie kann ich mit Aspose.Words für Java verschlüsselte Dokumente erkennen?
 
- Du kannst den ... benutzen`FileFormatUtil.detectFileFormat()` Methode zum Erkennen verschlüsselter Dokumente, wie in diesem Handbuch gezeigt.
+ Sie können die`FileFormatUtil.detectFileFormat()` Methode zum Erkennen verschlüsselter Dokumente, wie in diesem Handbuch gezeigt.
 
 ### Gibt es Einschränkungen bei der Arbeit mit älteren Dokumentformaten?
 

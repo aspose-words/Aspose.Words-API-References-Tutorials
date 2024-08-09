@@ -10,7 +10,7 @@ url: /pl/net/find-and-replace-text/replace-with-string/
 
 ## Wstęp
 
-No hej! Czy kiedykolwiek zdarzyło Ci się, że siedziałeś po kolana w dokumencie programu Word i musiałeś zastąpić pewne słowa lub frazy? Nie jesteś sam. Niezależnie od tego, czy chodzi o aktualizację warunków, poprawianie błędów, czy po prostu ulepszanie treści, wiedza o tym, jak skutecznie znajdować i zamieniać tekst w dokumencie, ma kluczowe znaczenie. Dzisiaj zagłębiamy się w cudowny świat Aspose.Words dla .NET, aby pokazać Ci, jak zamieniać ciągi znaków w dokumentach programu Word jak profesjonalista.
+Hej tam! Czy kiedykolwiek zdarzyło Ci się, że siedziałeś po kolana w dokumencie programu Word i musiałeś zastąpić pewne słowa lub frazy? Nie jesteś sam. Niezależnie od tego, czy chodzi o aktualizację warunków, poprawianie błędów, czy po prostu ulepszanie treści, wiedza o tym, jak skutecznie znajdować i zamieniać tekst w dokumencie, ma kluczowe znaczenie. Dzisiaj zagłębiamy się w cudowny świat Aspose.Words dla .NET, aby pokazać Ci, jak zamieniać ciągi znaków w dokumentach programu Word jak profesjonalista.
 
 ## Warunki wstępne
 
@@ -53,7 +53,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
  Tutaj,`Document` reprezentuje dokument programu Word, z którym będziemy pracować, oraz`DocumentBuilder` jest naszym narzędziem do jego modyfikacji.
 
-## Krok 3: Dodaj treść początkową
+## Krok 3: Dodaj zawartość początkową
 
 Dodajmy teraz trochę początkowej treści do naszego dokumentu. Ten krok przypomina przygotowanie płótna przed malowaniem.
 

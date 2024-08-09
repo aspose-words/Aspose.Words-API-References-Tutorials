@@ -66,7 +66,7 @@ Enfin, nous devons sauvegarder notre document. Cette étape garantit que tout vo
 doc.Save(dataDir + "WorkingWithFields.RemoveField.docx");
 ```
 
-Et voila! Vous avez supprimé avec succès un champ de votre document Word à l'aide d'Aspose.Words pour .NET. Mais attendez, il y a plus ! Décomposons cela encore plus pour nous assurer que vous comprenez chaque détail.
+Et voilà ! Vous avez supprimé avec succès un champ de votre document Word à l'aide d'Aspose.Words pour .NET. Mais attendez, il y a plus ! Décomposons cela encore plus pour nous assurer que vous comprenez chaque détail.
 
 ## Conclusion
 

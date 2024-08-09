@@ -94,7 +94,7 @@ Cuplikan kode ini mengkloning bagian dari dokumen yang sudah ada.
 
 ## Kesimpulan
 
-Dalam tutorial ini, kami telah membahas dasar-dasar bekerja dengan bagian di Aspose.Words untuk Java. Anda telah mempelajari cara menambah, menghapus, menambahkan, dan mengkloning bagian dalam dokumen Anda. Bagian adalah fitur canggih yang memungkinkan Anda menyesuaikan tata letak dan struktur dokumen Anda secara efisien.
+Dalam tutorial ini, kami telah membahas dasar-dasar bekerja dengan bagian di Aspose.Words untuk Java. Anda telah mempelajari cara menambah, menghapus, menambahkan, dan mengkloning bagian di dokumen Anda. Bagian adalah fitur canggih yang memungkinkan Anda menyesuaikan tata letak dan struktur dokumen Anda secara efisien.
 
 ## Pertanyaan yang Sering Diajukan (FAQ)
 

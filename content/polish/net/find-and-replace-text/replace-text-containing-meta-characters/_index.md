@@ -14,7 +14,7 @@ Czy kiedykolwiek utknąłeś w labiryncie zamiany tekstu w dokumentach programu 
 ## Warunki wstępne
 
 Zanim przejdziemy do sedna, upewnijmy się, że masz wszystko, czego potrzebujesz:
--  Aspose.Words dla .NET:[Link do pobrania](https://releases.aspose.com/words/net/)
+-  Aspose.Words dla .NET:[Pobierz link](https://releases.aspose.com/words/net/)
 - .NET Framework: Upewnij się, że jest zainstalowany.
 - Podstawowa znajomość języka C#: odrobina wiedzy o kodowaniu może bardzo pomóc.
 - Edytor tekstu lub IDE: Zdecydowanie zaleca się program Visual Studio.
@@ -29,7 +29,7 @@ using Aspose.Words;
 using Aspose.Words.Replacing;
 ```
 
-Podzielmy teraz proces na zrozumiałe etapy. Gotowy? Chodźmy!
+Podzielmy teraz proces na zrozumiałe etapy. Gotowy? chodźmy!
 
 ## Krok 1: Skonfiguruj swoje środowisko
 
@@ -42,7 +42,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Ten fragment kodu inicjuje dokument i konfiguruje kreator. The`dataDir` to baza główna Twojego dokumentu.
+ Ten fragment kodu inicjuje dokument i konfiguruje kreatora. The`dataDir` to baza główna Twojego dokumentu.
 
 ## Krok 2: Dostosuj czcionkę i dodaj treść
 

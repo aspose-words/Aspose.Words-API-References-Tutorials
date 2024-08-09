@@ -69,7 +69,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
 ```
 
- Configurando`PreferredControlType` a`HtmlControlType.StructuredDocumentTag`, nos aseguramos de que el cuadro combinado se represente como una etiqueta de documento estructurado (SDT) en el documento de Word.
+ Al configurar`PreferredControlType` a`HtmlControlType.StructuredDocumentTag`, nos aseguramos de que el cuadro combinado se represente como una etiqueta de documento estructurado (SDT) en el documento de Word.
 
 ## Paso 4: cargue el contenido HTML en el documento
 

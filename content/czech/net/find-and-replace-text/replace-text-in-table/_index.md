@@ -7,15 +7,15 @@ type: docs
 weight: 10
 url: /cs/net/find-and-replace-text/replace-text-in-table/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Jste připraveni ponořit se do světa automatizace dokumentů s Aspose.Words pro .NET? Dnes se zabýváme super praktickým návodem, jak nahradit text v tabulce v dokumentu aplikace Word. Představte si, že máte dokument aplikace Word plný tabulek a potřebujete aktualizovat konkrétní text v těchto tabulkách. Dělat to ručně může být skutečná bolest, že? Ale nebojte se, s Aspose.Words pro .NET můžete tento proces snadno automatizovat. Pojďme si to projít krok za krokem a dostat vás do tempa!
+Ahoj! Jste připraveni ponořit se do světa automatizace dokumentů s Aspose.Words pro .NET? Dnes se zabýváme super praktickým návodem, jak nahradit text v tabulce v dokumentu aplikace Word. Představte si, že máte dokument aplikace Word plný tabulek a potřebujete aktualizovat konkrétní text v těchto tabulkách. Dělat to ručně může být skutečná bolest, že? Ale nebojte se, s Aspose.Words pro .NET můžete tento proces snadno automatizovat. Pojďme si to projít krok za krokem a dostat vás do tempa!
 
 ## Předpoklady
 
 Než se pustíme do té zábavné části, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET: Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Visual Studio nebo jakékoli jiné C# IDE, které vám vyhovuje.
 3. Ukázkový dokument aplikace Word: dokument aplikace Word (`Tables.docx`) obsahující tabulky, kde chcete nahradit text.
 
@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
- Tady,`dataDir` je cesta, kde jsi`Tables.docx` soubor se nachází. Nezapomeňte vyměnit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k vašemu dokumentu.
+ Zde,`dataDir` je cesta, kde jsi`Tables.docx` soubor se nachází. Nezapomeňte vyměnit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k vašemu dokumentu.
 
 ## Krok 2: Přístup k tabulce
 

@@ -97,7 +97,7 @@ Speichern Sie abschließend das Dokument, um sicherzustellen, dass unsere Änder
 doc.Save(dataDir + "ModifiedDocument.docx");
 ```
 
-- `doc.Save(dataDir + "ModifiedDocument.docx");` speichert das geänderte Dokument unter einem neuen Namen.
+- `doc.Save(dataDir + "ModifiedDocument.docx");` Speichert das geänderte Dokument unter einem neuen Namen.
 
 ## Abschluss
 
@@ -118,7 +118,7 @@ foreach (Section section in doc.Sections)
 
 ### Kann ich die Kopf- und Fußzeilen eines Abschnitts separat löschen?
 
- Ja, Sie können Kopf- und Fußzeilen löschen mit dem`ClearHeadersFooters()` Methode.
+ Ja, Sie können Kopf- und Fußzeilen löschen mit dem`ClearHeadersFooters()` Verfahren.
 
 ```csharp
 section.ClearHeadersFooters();

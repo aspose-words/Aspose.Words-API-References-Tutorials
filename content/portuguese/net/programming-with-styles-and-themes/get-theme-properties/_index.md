@@ -15,7 +15,7 @@ Quando se trata de trabalhar com documentos do Word, a capacidade de manipular e
 
 Antes de começarmos, você precisará de algumas coisas para garantir que tudo corra bem:
 
-1.  Aspose.Words for .NET: Certifique-se de ter a biblioteca Aspose.Words instalada. Você pode obtê-lo no[Link para Download](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Certifique-se de ter a biblioteca Aspose.Words instalada. Você pode obtê-lo no[Baixar link](https://releases.aspose.com/words/net/).
 
 2. Ambiente de desenvolvimento: um ambiente de desenvolvimento .NET, como Visual Studio, para escrever e executar seu código.
 
@@ -100,7 +100,7 @@ Aspose.Words for .NET é uma biblioteca poderosa para gerenciar e manipular docu
 
 ### Como instalo o Aspose.Words para .NET?
 
- Você pode instalar o Aspose.Words for .NET a partir do[Link para Download](https://releases.aspose.com/words/net/). Você também pode usar o NuGet Package Manager para facilitar a instalação.
+ Você pode instalar o Aspose.Words for .NET a partir do[Baixar link](https://releases.aspose.com/words/net/). Você também pode usar o NuGet Package Manager para facilitar a instalação.
 
 ### Posso obter propriedades de tema de um documento do Word existente?
 
@@ -108,7 +108,7 @@ Sim, você pode recuperar propriedades de tema de documentos Word novos e existe
 
 ### Como aplico um novo tema a um documento do Word?
 
- Para aplicar um novo tema, você precisará definir as propriedades do tema no seu`Document` objeto. Verifica a[Documentação Aspose.Words](https://reference.aspose.com/words/net/) para obter detalhes sobre a aplicação de temas.
+ Para aplicar um novo tema, você precisará definir as propriedades do tema no seu`Document` objeto. Verifique o[Documentação Aspose.Words](https://reference.aspose.com/words/net/) para obter detalhes sobre a aplicação de temas.
 
 ### Onde posso obter suporte para Aspose.Words for .NET?
 

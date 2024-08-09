@@ -78,7 +78,7 @@ doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 
 ## 結論
 
-現在你就擁有了！您已成功變更 Aspose.Words for .NET 中的欄位更新區域性來源。透過執行下列步驟，您可以確保 Word 文件根據指定的區域性設定顯示日期和其他欄位值。這在為國際受眾產生文件時特別有用。
+現在你就得到它了！您已成功變更 Aspose.Words for .NET 中的欄位更新區域性來源。透過執行下列步驟，您可以確保 Word 文件根據指定的區域性設定顯示日期和其他欄位值。這在為國際受眾產生文件時特別有用。
 
 ## 常見問題解答
 

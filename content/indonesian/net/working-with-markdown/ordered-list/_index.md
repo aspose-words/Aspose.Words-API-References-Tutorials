@@ -1,6 +1,6 @@
 ---
-title: Daftar pesanan
-linktitle: Daftar pesanan
+title: Daftar Pesanan
+linktitle: Daftar Pesanan
 second_title: API Pemrosesan Dokumen Aspose.Words
 description: Pelajari cara membuat daftar berurutan di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami. Sempurna untuk mengotomatiskan pembuatan dokumen.
 type: docs
@@ -15,7 +15,7 @@ Jadi, Anda memutuskan untuk mendalami Aspose.Words untuk .NET guna membuat dokum
 
 Sebelum kita mendalami kodenya, ada beberapa hal yang Anda perlukan:
 
-1.  Aspose.Words for .NET: Pastikan Anda telah menginstal Aspose.Words for .NET. Jika tidak, Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Pastikan Anda telah menginstal Aspose.Words for .NET. Jika tidak, Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Visual Studio atau IDE lain yang kompatibel dengan .NET.
 3. Pengetahuan Dasar C#: Anda harus terbiasa dengan dasar-dasar C# agar mudah diikuti.
 
@@ -77,18 +77,18 @@ builder.Writeln("Item 2b");
 
 ## Kesimpulan
 
-Membuat daftar terurut dalam dokumen Word secara terprogram mungkin tampak menakutkan pada awalnya, tetapi dengan Aspose.Words untuk .NET, semuanya menjadi sangat mudah. Dengan mengikuti langkah-langkah sederhana ini, Anda dapat dengan mudah menambahkan dan mengelola daftar di dokumen Anda. Baik Anda membuat laporan, membuat dokumen terstruktur, atau sekadar mengotomatiskan alur kerja Anda, Aspose.Words untuk .NET siap membantu Anda. Jadi, mengapa menunggu? Mulailah membuat kode dan lihat keajaibannya terungkap!
+Membuat daftar berurutan dalam dokumen Word secara terprogram mungkin tampak menakutkan pada awalnya, namun dengan Aspose.Words untuk .NET, semuanya menjadi sangat mudah. Dengan mengikuti langkah-langkah sederhana ini, Anda dapat dengan mudah menambahkan dan mengelola daftar di dokumen Anda. Baik Anda membuat laporan, membuat dokumen terstruktur, atau sekadar mengotomatiskan alur kerja Anda, Aspose.Words untuk .NET siap membantu Anda. Jadi, mengapa menunggu? Mulailah membuat kode dan lihat keajaibannya terungkap!
 
 ## FAQ
 
 ### Bisakah saya menyesuaikan gaya penomoran daftar?  
- Ya, Anda dapat menyesuaikan gaya penomoran menggunakan`ListFormat` properti. Anda dapat mengatur gaya penomoran yang berbeda seperti angka Romawi, huruf, dll.
+ Ya, Anda dapat menyesuaikan gaya penomoran menggunakan`ListFormat`properti. Anda dapat mengatur gaya penomoran yang berbeda seperti angka Romawi, huruf, dll.
 
 ### Bagaimana cara menambahkan lebih banyak tingkat lekukan?  
  Anda dapat menggunakan`ListIndent` metode beberapa kali untuk membuat tingkat sub-daftar yang lebih dalam. Setiap panggilan ke`ListIndent` menambahkan satu tingkat lekukan.
 
 ### Bisakah saya menggabungkan poin-poin dan daftar bernomor?  
- Sangat! Anda dapat menerapkan format daftar berbeda dalam dokumen yang sama menggunakan`ListFormat` Properti.
+ Sangat! Anda dapat menerapkan format daftar berbeda dalam dokumen yang sama menggunakan`ListFormat` milik.
 
 ### Apakah mungkin untuk melanjutkan penomoran dari daftar sebelumnya?  
 Ya, Anda dapat melanjutkan penomoran dengan menggunakan format daftar yang sama. Aspose.Words memungkinkan Anda mengontrol penomoran daftar di berbagai paragraf.

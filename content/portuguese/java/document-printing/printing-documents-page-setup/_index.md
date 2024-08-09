@@ -14,7 +14,7 @@ Imprimir documentos com configuração precisa de página é crucial quando se t
 
 ## Configurando o Ambiente de Desenvolvimento
 
-Antes de começarmos, vamos garantir que você tenha um ambiente de desenvolvimento adequado. Você precisará:
+Antes de começarmos, vamos garantir que você tenha um ambiente de desenvolvimento adequado. Você precisará de:
 
 - Kit de Desenvolvimento Java (JDK)
 - Ambiente de Desenvolvimento Integrado (IDE) como Eclipse ou IntelliJ IDEA
@@ -26,7 +26,7 @@ Comece criando um novo projeto Java no IDE escolhido. Dê a ele um nome signific
 
 ## Adicionando Aspose.Words para Java ao seu projeto
 
-Para usar Aspose.Words for Java, você precisa adicionar a biblioteca ao seu projeto. Siga esses passos:
+Para usar Aspose.Words for Java, você precisa adicionar a biblioteca ao seu projeto. Siga estas etapas:
 
 1.  Baixe a biblioteca Aspose.Words para Java em[aqui](https://releases.aspose.com/words/java/).
 

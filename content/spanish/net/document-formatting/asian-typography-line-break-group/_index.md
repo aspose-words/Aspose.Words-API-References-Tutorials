@@ -9,7 +9,7 @@ url: /es/net/document-formatting/asian-typography-line-break-group/
 ---
 ## Introducción
 
-¿Alguna vez te has preguntado cómo perfeccionar la tipografía de tus documentos de Word? Especialmente cuando se trata de idiomas asiáticos, los matices de los saltos de línea y el formato pueden ser bastante complicados. Pero no te preocupes, ¡te tenemos cubierto! En esta guía completa, profundizamos en cómo controlar los saltos de línea de tipografía asiática en documentos de Word utilizando Aspose.Words para .NET. Ya sea que sea un desarrollador experimentado o recién esté comenzando, este tutorial paso a paso lo guiará a través de todo lo que necesita saber. ¿Listo para que tus documentos luzcan impecables? ¡Empecemos!
+¿Alguna vez te has preguntado cómo perfeccionar la tipografía de tus documentos de Word? Especialmente cuando se trata de idiomas asiáticos, los matices de los saltos de línea y el formato pueden ser bastante complicados. Pero no te preocupes, ¡te tenemos cubierto! En esta guía completa, profundizamos en cómo puede controlar los saltos de línea de tipografía asiática en documentos de Word usando Aspose.Words para .NET. Ya sea que sea un desarrollador experimentado o recién esté comenzando, este tutorial paso a paso lo guiará a través de todo lo que necesita saber. ¿Listo para que tus documentos luzcan impecables? ¡Empecemos!
 
 ## Requisitos previos
 
@@ -20,7 +20,7 @@ Antes de entrar en los detalles esenciales, hay algunas cosas que necesitarás i
 - Conocimientos básicos de C#: si bien explicaremos todo, una comprensión básica de C# será beneficiosa.
 - Documento de Word con tipografía asiática: tenga un documento de Word que incluya tipografía asiática. Este será nuestro archivo de trabajo.
 
-¿Tengo todo? ¡Excelente! Pasemos a configurar su proyecto.
+¿Tienes todo? ¡Excelente! Pasemos a configurar su proyecto.
 
 ## Importar espacios de nombres
 

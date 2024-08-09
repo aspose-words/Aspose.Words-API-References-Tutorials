@@ -15,7 +15,7 @@ url: /zh-hant/net/programming-with-pdfsaveoptions/set-outline-options/
 
 在開始之前，您需要確保滿足以下條件：
 
-1.  Aspose.Words for .NET：請確定您已安裝 Aspose.Words for .NET。如果沒有，您可以[點這裡下載最新版本](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET：請確定您已安裝 Aspose.Words for .NET。如果沒有，你可以[在這裡下載最新版本](https://releases.aspose.com/words/net/).
 2. .NET 開發環境：您需要一個有效的 .NET 開發環境，例如 Visual Studio。
 3. 對 C# 的基本了解：熟悉 C# 程式語言將幫助您輕鬆掌握。
 4. Word 文件：準備好要轉換為 PDF 的 Word 文件。

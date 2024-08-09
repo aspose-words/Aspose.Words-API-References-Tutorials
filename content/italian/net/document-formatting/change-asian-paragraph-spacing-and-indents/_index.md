@@ -7,9 +7,9 @@ type: docs
 weight: 10
 url: /it/net/document-formatting/change-asian-paragraph-spacing-and-indents/
 ---
-## introduzione
+## Introduzione
 
-Ehilà! Ti sei mai chiesto come modificare la spaziatura e i rientri in un documento Word, soprattutto quando si ha a che fare con la tipografia asiatica? Se lavori con documenti che includono lingue come cinese, giapponese o coreano, potresti aver notato che le impostazioni predefinite non sempre sono adatte. Non aver paura! In questo tutorial, approfondiremo come modificare la spaziatura e i rientri dei paragrafi asiatici utilizzando Aspose.Words per .NET. È più semplice di quanto pensi e può conferire ai tuoi documenti un aspetto molto più professionale. Pronto a ravvivare la formattazione del tuo documento? Iniziamo!
+Ehilà! Ti sei mai chiesto come modificare la spaziatura e i rientri in un documento Word, soprattutto quando si ha a che fare con la tipografia asiatica? Se lavori con documenti che includono lingue come cinese, giapponese o coreano, potresti aver notato che le impostazioni predefinite non sempre sono adatte. Non temere! In questo tutorial, approfondiremo come modificare la spaziatura e i rientri dei paragrafi asiatici utilizzando Aspose.Words per .NET. È più semplice di quanto pensi e può conferire ai tuoi documenti un aspetto molto più professionale. Pronto a ravvivare la formattazione del tuo documento? Iniziamo!
 
 ## Prerequisiti
 
@@ -89,7 +89,7 @@ Questa riga salva il documento con la nuova formattazione. Puoi controllare l'ou
 
 ## Conclusione
 
-il gioco è fatto! Hai appena imparato come modificare la spaziatura e i rientri dei paragrafi asiatici in un documento Word utilizzando Aspose.Words per .NET. Non è stato così difficile, vero? Seguendo questi passaggi, puoi garantire che i tuoi documenti abbiano un aspetto professionale e ben formattato, anche quando si tratta di tipografia asiatica complessa. Continua a sperimentare valori diversi e scopri cosa funziona meglio per i tuoi documenti. Buona programmazione!
+Ed ecco qua! Hai appena imparato come modificare la spaziatura e i rientri dei paragrafi asiatici in un documento Word utilizzando Aspose.Words per .NET. Non è stato così difficile, vero? Seguendo questi passaggi, puoi garantire che i tuoi documenti abbiano un aspetto professionale e ben formattato, anche quando si tratta di tipografia asiatica complessa. Continua a sperimentare valori diversi e scopri cosa funziona meglio per i tuoi documenti. Buona programmazione!
 
 ## Domande frequenti
 

@@ -151,7 +151,7 @@ L'applicazione di stili e temi utilizzando Aspose.Words per Python ti consente d
 
 ### Come posso scaricare Aspose.Words per Python?
 
- È possibile scaricare Aspose.Words per Python dal sito Web:[Link per scaricare](https://releases.aspose.com/words/python/).
+ È possibile scaricare Aspose.Words per Python dal sito Web:[Scarica collegamento](https://releases.aspose.com/words/python/).
 
 ### Posso creare i miei stili personalizzati?
 

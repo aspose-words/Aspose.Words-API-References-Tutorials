@@ -2,83 +2,105 @@
 title: 设置字体强调标记
 linktitle: 设置字体强调标记
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 在 Word 文档中设置字体强调样式。
+description: 通过这份详细的分步指南，了解如何使用 Aspose.Words for .NET 在 Word 文档中设置字体强调标记。非常适合 .NET 开发人员。
 type: docs
 weight: 10
 url: /zh/net/working-with-fonts/set-font-emphasis-mark/
 ---
+## 介绍
 
-在本教程中，我们将向您展示如何使用 Aspose.Words for .NET 在 Word 文档中设置字体强调样式。字体强调用于突出显示文本中的某些单词或短语。
+在今天的教程中，我们将深入探讨如何使用 Aspose.Words for .NET 在 Word 文档中设置字体强调标记。无论您是想用独特的标记给特定文本加下划线，还是只是想让某些单词脱颖而出，本指南都能满足您的需求。所以，系好安全带，让我们开始吧！
 
 ## 先决条件
-开始之前，请确保您拥有以下物品：
-- 具备 C# 编程语言的工作知识
-- 项目中安装的 .NET Aspose.Words 库
 
-## 步骤1：定义文档目录
-首先将目录路径设置为 Word 文档的位置。替换`"YOUR DOCUMENT DIRECTORY"`在代码中使用适当的路径。
+在我们深入讨论细节之前，请确保您已满足以下先决条件：
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+-  Aspose.Words for .NET 库：确保已安装 Aspose.Words for .NET 库。您可以从以下位置下载[这里](https://releases.aspose.com/words/net/).
+- 开发环境：一个有效的开发环境，例如 Visual Studio。
+- .NET Framework：确保您已安装.NET Framework。
 
-## 步骤 2：创建并自定义文档
-创建一个实例`Document`类和相关`DocumentBuilder`构建文档内容。使用`Font.EmphasisMark`属性来设置字体强调样式`EmphasisMark.UnderSolidCircle`。然后使用`Write`和`Writeln`方法`DocumentBuilder`添加具有指定字体强调的文本。
+## 导入命名空间
+
+要使用 Aspose.Words for .NET，您需要导入必要的命名空间。将这些添加到代码文件的顶部：
 
 ```csharp
-Document document = new Document();
-DocumentBuilder builder = new DocumentBuilder(document);
-builder.Font.EmphasisMark = EmphasisMark.UnderSolidCircle;
-builder.Write("Emphasized text");
-builder. Writen();
-builder.Font.ClearFormatting();
-builder.Write("Simple text");
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## 步骤 3：保存文档
-使用`Save`方法`Document`使用适当的路径和文件名。
+现在，让我们将这个过程分解成几个简单的步骤。仔细按照每个步骤在 Word 文档中设置字体强调标记。
 
-```csharp
-document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
-```
+## 步骤 1：初始化 Document 和 DocumentBuilder
 
-### 使用 Aspose.Words for .NET 设置字体强调标记的示例源代码 
+首先，您需要初始化一个新文档和一个 DocumentBuilder。DocumentBuilder 类提供了将文本和其他元素插入文档的方法。
 
 ```csharp
 //文档目录的路径
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
+//初始化新文档
 Document document = new Document();
+
+//使用文档初始化 DocumentBuilder
 DocumentBuilder builder = new DocumentBuilder(document);
+```
+
+## 步骤 2：设置字体强调标记
+
+DocumentBuilder 准备就绪后，您现在可以设置字体强调标记。在此示例中，我们将使用“UnderSolidCircle”强调标记。
+
+```csharp
+//设置字体强调标记
 builder.Font.EmphasisMark = EmphasisMark.UnderSolidCircle;
+
+//用强调符号书写文字
 builder.Write("Emphasis text");
 builder.Writeln();
+```
+
+## 步骤 3：清除格式并添加常规文本
+
+设置强调标记后，您可能想添加一些不带任何强调的常规文本。为此，您需要清除格式。
+
+```csharp
+//清除字体格式
 builder.Font.ClearFormatting();
+
+//编写常规文本
 builder.Write("Simple text");
+```
+
+## 步骤 4：保存文档
+
+添加完所需的所有文本和格式后，最后一步是保存文档。指定要保存文档的路径和文件名。
+
+```csharp
+//保存文档
 document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ```
 
 ## 结论
-在本教程中，您学习了如何使用 Aspose.Words for .NET 在 Word 文档中设置字体强调样式。尝试不同的强调样式，并使用此功能突出显示文档中的单词或短语。
 
-### 常见问题解答
+就这样！使用 Aspose.Words for .NET 在 Word 文档中设置字体强调标记就这么简单。只需几行代码，您就可以让您的文本脱颖而出，并为您的文档增添专业感。请随时尝试不同的强调标记和样式以满足您的需求。
 
-#### 问：如何使用 Aspose.Words 为 Word 文档中的特定字体添加重音符号？
+## 常见问题解答
 
-答：要使用 Aspose.Words 为 Word 文档中的特定字体添加重音符号，您可以使用 API 导航到所需字体并应用适当的重音符号。这将使用所选字体为文本添加重音符号。
+### 什么是字体强调符号？
 
-#### 问：是否可以使用 Aspose.Words 更改 Word 文档中重音符号的样式？
+字体强调符号是添加到文本中以突出文本的特殊符号。它们可以包括点、圆圈和其他装饰性标记。
 
-答：是的，使用 Aspose.Words，您可以更改 Word 文档中重音符号的样式。API 允许您调整样式属性（例如颜色、大小、线型等），以自定义重音符号的外观。
+### 我可以将其他强调符号与 Aspose.Words for .NET 一起使用吗？
 
-#### 问：如何使用 Aspose.Words 从 Word 文档中删除所有重音符号？
+是的，Aspose.Words for .NET 支持各种强调符号。您可以参考以下链接探索不同的选项[文档](https://reference.aspose.com/words/net/).
 
-答：要使用 Aspose.Words 从 Word 文档中删除所有重音符号，您可以使用 API 浏览文档，检测现有重音符号并使用适当的方法将其删除。这将从文档中删除所有强调符号。
+### Aspose.Words for .NET 可以免费使用吗？
 
-#### 问：我可以在 Word 文档中为文本的特定部分添加重音符号吗？
+Aspose.Words for .NET 需要许可证才能使用全部功能。您可以免费试用[这里](https://releases.aspose.com/)或购买许可证[这里](https://purchase.aspose.com/buy).
 
-答：是的，您可以使用 Aspose.Words 为 Word 文档中的特定文本部分添加重音符号。您可以使用 API 选择所需的文本范围，并为该部分文本添加适当的强调符号。
+### 如何获得 Aspose.Words for .NET 的支持？
 
-#### 问：重音符号可以根据我的需要定制吗？
+您可以通过访问 Aspose 社区和支持团队获得支持[支持论坛](https://forum.aspose.com/c/words/8).
 
-答：是的，可以使用 Aspose.Words 根据您的需要自定义重音符号。您可以调整重音符号的样式属性，例如颜色、大小、线型等，以匹配您的格式偏好。
+### 我可以将 Aspose.Words for .NET 与其他 .NET 框架一起使用吗？
+
+是的，Aspose.Words for .NET 与各种 .NET 框架兼容，包括 .NET Core 和 .NET 5/6。

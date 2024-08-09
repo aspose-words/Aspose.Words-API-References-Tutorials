@@ -10,7 +10,7 @@ url: /tr/java/document-manipulation/using-styles-and-themes/
 
 ## Aspose.Words for Java'da Stil ve Tema Kullanımına Giriş
 
-Bu kılavuzda, belgelerinizin formatını ve görünümünü geliştirmek için Aspose.Words for Java'da stil ve temalarla nasıl çalışılacağını keşfedeceğiz. Stilleri alma, stilleri kopyalama, temaları yönetme ve stil ayırıcıları ekleme gibi konuları ele alacağız. Başlayalım!
+Bu kılavuzda, belgelerinizin formatını ve görünümünü geliştirmek için Aspose.Words for Java'da stil ve temalarla nasıl çalışılacağını keşfedeceğiz. Stilleri alma, stilleri kopyalama, temaları yönetme ve stil ayırıcıları ekleme gibi konuları ele alacağız. Hadi başlayalım!
 
 ## Stilleri Alma
 

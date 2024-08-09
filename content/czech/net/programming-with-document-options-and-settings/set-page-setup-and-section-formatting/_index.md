@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-document-options-and-settings/set-page-setup-and-section-formatting/
 ---
-## Úvod
+## Zavedení
 
 Pokud jde o manipulaci s dokumenty, je zásadní správné nastavení rozvržení stránky a formátování sekcí. Ať už připravujete zprávu, vytváříte brožuru nebo formátujete román, rozvržení připraví půdu pro čitelnost a profesionalitu. S Aspose.Words pro .NET máte k dispozici výkonný nástroj, který tato nastavení programově doladí. V tomto tutoriálu si projdeme, jak nastavit nastavení stránky a formátování oddílů v dokumentu aplikace Word pomocí Aspose.Words for .NET.
 
@@ -15,7 +15,7 @@ Pokud jde o manipulaci s dokumenty, je zásadní správné nastavení rozvržen�
 
 Než se ponoříme do kódu, pojďme si pokrýt, co potřebujete, abyste mohli začít.
 
--  Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Můžeš[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Jakékoli .NET kompatibilní IDE (např. Visual Studio).
 - Základní znalost C#: Znalost programování v C# je nezbytná.
 

@@ -20,7 +20,7 @@ Avant de plonger dans le vif du sujet, assurons-nous que nous avons tout ce dont
 3. IDE : Un environnement de développement intégré comme Visual Studio.
 4.  Permis temporaire : vous pouvez en obtenir un[ici](https://purchase.aspose.com/temporary-license/).
 
-Assurez-vous d'avoir installé Aspose.Words pour .NET et configuré votre environnement de développement. Prêt? Commençons!
+Assurez-vous d'avoir installé Aspose.Words pour .NET et configuré votre environnement de développement. Prêt? Commençons !
 
 ## Importer des espaces de noms
 
@@ -74,17 +74,17 @@ Dans cet exemple, nous insérons un MERGEFIELD, qui est généralement utilisé 
 
 ### Enregistrez le document
 
-Après avoir inséré le champ, nous devons sauvegarder notre document. Voici comment:
+Après avoir inséré le champ, nous devons sauvegarder notre document. Voici comment procéder :
 
 ```csharp
 doc.Save(dataDir + "InsertionField.docx");
 ```
 
-Et c'est tout! Vous avez inséré avec succès un champ dans votre document Word.
+Et c'est tout ! Vous avez inséré avec succès un champ dans votre document Word.
 
 ## Conclusion
 
-Toutes nos félicitations! Vous venez d'apprendre à insérer un champ dans un document Word à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque offre une multitude de fonctionnalités pour faire de l’automatisation des documents une promenade dans le parc. Continuez à expérimenter et à explorer les différentes fonctionnalités qu’Aspose.Words a à offrir. Bon codage !
+Félicitations! Vous venez d'apprendre à insérer un champ dans un document Word à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque offre une multitude de fonctionnalités pour faire de l’automatisation des documents une promenade dans le parc. Continuez à expérimenter et à explorer les différentes fonctionnalités qu’Aspose.Words a à offrir. Bon codage !
 
 ## FAQ
 

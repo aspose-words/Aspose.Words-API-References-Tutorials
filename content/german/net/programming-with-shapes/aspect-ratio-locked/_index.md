@@ -15,7 +15,7 @@ Haben Sie sich schon einmal gefragt, wie Sie die perfekten Proportionen von Bild
 
 Bevor wir uns in den Code vertiefen, gehen wir noch einmal durch, was Sie für den Einstieg benötigen:
 
-- Aspose.Words für .NET-Bibliothek: Sie müssen Aspose.Words für .NET installiert haben. Wenn Sie dies noch nicht getan haben, können Sie[hier herunterladen](https://releases.aspose.com/words/net/).
+- Aspose.Words für .NET-Bibliothek: Sie müssen Aspose.Words für .NET installiert haben. Wenn Sie dies noch nicht getan haben, können Sie[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 - Entwicklungsumgebung: Stellen Sie sicher, dass Sie eine .NET-Entwicklungsumgebung eingerichtet haben. Visual Studio ist eine beliebte Wahl.
 - Grundkenntnisse in C#: Einige Kenntnisse der C#-Programmierung sind hilfreich.
 

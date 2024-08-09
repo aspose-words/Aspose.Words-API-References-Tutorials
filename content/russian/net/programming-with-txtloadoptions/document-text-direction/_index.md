@@ -87,7 +87,7 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 
 ## Часто задаваемые вопросы
 
-###  Что`DocumentDirection` property used for?
+###  Что такое`DocumentDirection` property used for?
 
 `DocumentDirection` собственность в`TxtLoadOptions` определяет направление текста в документе. Его можно установить на`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , или`DocumentDirection.RightToLeft`.
 
@@ -101,7 +101,7 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 
 ### Как обрабатывать документы со смешанными направлениями текста?
 
- Для документов со смешанными направлениями текста вам может потребоваться обрабатывать форматирование для каждого абзаца. Использовать`ParagraphFormat.Bidi` свойство для корректировки направления каждого абзаца по мере необходимости.
+ Для документов со смешанными направлениями текста вам может потребоваться обрабатывать форматирование для каждого абзаца. Используйте`ParagraphFormat.Bidi` свойство для корректировки направления каждого абзаца по мере необходимости.
 
 ### Где я могу найти дополнительную информацию об Aspose.Words для .NET?
 

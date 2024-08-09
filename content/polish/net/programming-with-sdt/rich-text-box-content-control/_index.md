@@ -13,7 +13,7 @@ url: /pl/net/programming-with-sdt/rich-text-box-content-control/
 
 ## Warunki wstępne
 
-Zanim zagłębisz się w samouczek, upewnij się, że posiadasz następujące informacje:
+Zanim zagłębisz się w samouczek, upewnij się, że posiadasz następujące elementy:
 
 1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowany Aspose.Words dla .NET. Jeśli jeszcze tego nie zrobiłeś, możesz pobrać go ze strony[Tutaj](https://releases.aspose.com/words/net/).
 
@@ -48,7 +48,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Krok 2: Utwórz nowy dokument
 
- Stwórz nowy`Document` obiekt, który będzie podstawą dokumentu programu Word.
+ Utwórz nowy`Document` obiekt, który będzie podstawą dokumentu programu Word.
 
 ```csharp
 Document doc = new Document();
@@ -68,7 +68,7 @@ StructuredDocumentTag sdtRichText = new StructuredDocumentTag(doc, SdtType.RichT
 
 ## Krok 4: Dodaj zawartość do pola tekstu sformatowanego
 
- Stwórz`Paragraph` i a`Run` obiekt do przechowywania treści, którą chcesz wyświetlić w polu tekstu sformatowanego. Dostosuj tekst i formatowanie według potrzeb.
+ Utwórz`Paragraph` i a`Run` obiekt do przechowywania treści, którą chcesz wyświetlić w polu tekstu sformatowanego. Dostosuj tekst i formatowanie według potrzeb.
 
 ```csharp
 Paragraph para = new Paragraph(doc);

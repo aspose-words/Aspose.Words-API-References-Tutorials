@@ -1,6 +1,6 @@
 ---
-title: Yorum ekle
-linktitle: Yorum ekle
+title: Yorum Ekle
+linktitle: Yorum Ekle
 second_title: Aspose.Words Belge İşleme API'si
 description: Rehberimizi kullanarak Aspose.Words for .NET'i kullanarak Word belgelerinize nasıl yorum ekleyeceğinizi öğrenin. Belge işbirliği sürecinizi zahmetsizce geliştirin.
 type: docs
@@ -91,7 +91,7 @@ doc.Save(dataDir + "WorkingWithComments.AddComments.docx");
 
 ## Çözüm
 
-İşte aldın! Aspose.Words for .NET'i kullanarak bir Word belgesine başarıyla yorum eklediniz. Bu güçlü özellik, belge inceleme sürecinizi büyük ölçüde geliştirebilir, işbirliği yapmayı ve geri bildirimde bulunmayı kolaylaştırabilir. Belge yönetimi görevlerinizi daha da kolaylaştırmak için Aspose.Words'ün diğer özelliklerini keşfetmeyi unutmayın.
+İşte burada! Aspose.Words for .NET'i kullanarak bir Word belgesine başarıyla yorum eklediniz. Bu güçlü özellik, belge inceleme sürecinizi büyük ölçüde geliştirebilir, işbirliği yapmayı ve geri bildirimde bulunmayı kolaylaştırabilir. Belge yönetimi görevlerinizi daha da kolaylaştırmak için Aspose.Words'ün diğer özelliklerini keşfetmeyi unutmayın.
 
 ## SSS'ler
 

@@ -80,7 +80,7 @@ sdt.XmlMapping.SetMapping(xmlPart, "/root[1]/text[1]", "");
 
  Deze stap wijst de SDT toe aan de`<text>` onderdeel binnen de`<root>` knooppunt van ons aangepaste XML-onderdeel.
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Ten slotte slaan we het document op in de opgegeven map.
 

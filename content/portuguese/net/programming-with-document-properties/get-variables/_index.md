@@ -31,7 +31,7 @@ using Aspose.Words;
 
 ## Etapa 1: configurando seu projeto
 
-### Criando um novo projeto
+### Criando um Novo Projeto
 
 Vamos começar criando um novo projeto no Visual Studio.
 
@@ -55,7 +55,7 @@ Agora, vamos colocar a biblioteca Aspose.Words em nosso projeto.
     string dataDir = "YOUR DOCUMENT DIRECTORY";
     ```
 
-2.  Criar uma`Document` objeto e carregue o documento:
+2.  Crie um`Document` objeto e carregue o documento:
     ```csharp
     Document doc = new Document(dataDir + "Document.docx");
     ```
@@ -115,4 +115,4 @@ Absolutamente! Aspose.Words suporta vários formatos como DOC, DOCX, ODT, RTF e 
 Sim, você pode integrar Aspose.Words em aplicativos da web, aplicativos de desktop e muito mais.
 
 ### Onde posso encontrar mais exemplos e documentação?
- Confira a[Documentação Aspose.Words](https://reference.aspose.com/words/net/) para mais exemplos e guias detalhados.
+ Confira o[Documentação Aspose.Words](https://reference.aspose.com/words/net/) para mais exemplos e guias detalhados.

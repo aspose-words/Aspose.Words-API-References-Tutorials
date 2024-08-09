@@ -92,7 +92,7 @@ Console.WriteLine("Cell shading after style expansion: " + cellShadingAfter);
 
 ## Çözüm
 
-İşte buyur! Bu adımları izleyerek Aspose.Words for .NET'i kullanarak Word belgelerinizdeki stillerden hücrelerin ve satırların formatını kolayca genişletebilirsiniz. Bu yalnızca zamandan tasarruf etmekle kalmaz, aynı zamanda belgeleriniz arasında tutarlılık sağlar. Mutlu kodlama!
+Ve işte karşınızda! Bu adımları izleyerek Aspose.Words for .NET'i kullanarak Word belgelerinizdeki stillerden hücrelerin ve satırların formatını kolayca genişletebilirsiniz. Bu yalnızca zamandan tasarruf etmekle kalmaz, aynı zamanda belgeleriniz arasında tutarlılık sağlar. Mutlu kodlama!
 
 ## SSS'ler
 
@@ -109,4 +109,4 @@ Kesinlikle! Belgenizdeki tüm tablolar arasında geçiş yapabilir ve her birine
 Stiller genişletildikten sonra doğrudan hücrelere uygulanır. Geri dönmek için belgeyi yeniden yüklemeniz veya stilleri manuel olarak yeniden uygulamanız gerekir.
 
 ### Bu yöntem Aspose.Words for .NET'in tüm sürümleriyle çalışır mı?
- Evet`ExpandTableStylesToDirectFormatting` yöntem Aspose.Words for .NET'in son sürümlerinde mevcuttur. Her zaman kontrol edin[dokümantasyon](https://reference.aspose.com/words/net/) En son güncellemeler için.
+ Evet,`ExpandTableStylesToDirectFormatting` yöntem Aspose.Words for .NET'in son sürümlerinde mevcuttur. Her zaman kontrol edin[dokümantasyon](https://reference.aspose.com/words/net/) En son güncellemeler için.

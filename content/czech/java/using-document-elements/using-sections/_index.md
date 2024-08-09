@@ -11,7 +11,7 @@ url: /cs/java/using-document-elements/using-sections/
 Pokud chcete manipulovat a spravovat sekce v aplikacích Java pomocí Aspose.Words, jste na správném místě. V tomto komplexním průvodci vás provedeme procesem krok za krokem pomocí poskytnutého zdrojového kódu.
 
 
-## Úvod
+## Zavedení
 
 Než se ponoříme do kódu, pojďme pochopit, jaké sekce jsou v Aspose.Words. V dokumentu aplikace Word jsou oddíly oblasti se specifickými nastaveními rozvržení stránky. Mohou zahrnovat záhlaví, zápatí, okraje a nastavení orientace stránky. S Aspose.Words for Java můžete snadno pracovat s oddíly a vytvářet profesionální dokumenty.
 
@@ -104,18 +104,18 @@ Ano, Aspose.Words for Java je kompatibilní s jinými knihovnami Java, takže je
 
 ### Q2: Je k dispozici zkušební verze Aspose.Words for Java?
 
- Ano, máte přístup k bezplatné zkušební verzi Aspose.Words for Java[tady](https://releases.aspose.com/).
+ Ano, máte přístup k bezplatné zkušební verzi Aspose.Words for Java[zde](https://releases.aspose.com/).
 
 ### Q3: Jak mohu získat dočasnou licenci pro Aspose.Words for Java?
 
- Můžete získat dočasnou licenci pro Aspose.Words for Java[tady](https://purchase.aspose.com/temporary-license/).
+ Můžete získat dočasnou licenci pro Aspose.Words for Java[zde](https://purchase.aspose.com/temporary-license/).
 
 ### Q4: Kde najdu podporu pro Aspose.Words pro Java?
 
- Pro podporu a pomoc můžete navštívit fórum Aspose.Words for Java[tady](https://forum.aspose.com/).
+ Pro podporu a pomoc můžete navštívit fórum Aspose.Words for Java[zde](https://forum.aspose.com/).
 
 ### Q5: Jak mohu zakoupit licenci pro Aspose.Words for Java?
 
- Můžete si zakoupit licenci pro Aspose.Words for Java[tady](https://purchase.aspose.com/buy).
+ Můžete si zakoupit licenci pro Aspose.Words for Java[zde](https://purchase.aspose.com/buy).
 
 Začněte s Aspose.Words for Java ještě dnes a vylepšete své možnosti zpracování dokumentů!

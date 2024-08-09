@@ -52,7 +52,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## 步驟 3：配置儲存選項
 
-現在，建立一個實例`OoxmlSaveOptions`班級。此類別可讓您指定以 Office Open XML (OOXML) 格式儲存文件的選項。在這裡，您將設定`UpdateLastSavedTimeProperty`到`true`.
+現在，建立一個實例`OoxmlSaveOptions`班級。此類別可讓您指定以 Office Open XML (OOXML) 格式儲存文件的選項。在這裡，您將設置`UpdateLastSavedTimeProperty`到`true`.
 
 ```csharp
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions
@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.UpdateLastSavedTimeProperty.docx
 
 ## 結論
 
-現在你就擁有了！透過執行下列步驟，您可以使用 Aspose.Words for .NET 輕鬆更新 Word 文件的上次儲存時間屬性。這對於維護文件中準確的元資料特別有用，這對於文件管理系統和各種其他應用至關重要。
+現在你就得到它了！透過執行下列步驟，您可以使用 Aspose.Words for .NET 輕鬆更新 Word 文件的上次儲存時間屬性。這對於維護文件中準確的元資料特別有用，這對於文件管理系統和各種其他應用至關重要。
 
 ## 常見問題解答
 

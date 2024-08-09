@@ -9,7 +9,7 @@ url: /sv/net/add-content-using-documentbuilder/insert-break/
 ---
 ## Introduktion
 
-Hallå där! Är du redo att dyka in i Aspose.Words för .NET-världen? Detta kraftfulla bibliotek är som en schweizisk armékniv för Word-dokumentmanipulation. Oavsett om du har att göra med komplexa dokumentautomatiseringsuppgifter eller bara behöver lägga till en enkel sidbrytning, har Aspose.Words dig täckt. I den här handledningen kommer vi att gå igenom hur man infogar pauser i ett Word-dokument steg för steg. Så ta en kopp kaffe, så sätter vi igång!
+Hej där! Är du redo att dyka in i Aspose.Words för .NET-världen? Detta kraftfulla bibliotek är som en schweizisk armékniv för Word-dokumentmanipulation. Oavsett om du har att göra med komplexa dokumentautomatiseringsuppgifter eller bara behöver lägga till en enkel sidbrytning, har Aspose.Words dig täckt. I den här handledningen kommer vi att gå igenom hur man infogar pauser i ett Word-dokument steg för steg. Så ta en kopp kaffe, så sätter vi igång!
 
 ## Förutsättningar
 
@@ -40,7 +40,7 @@ Okej, låt oss börja med att ställa in sökvägen till vår dokumentkatalog. D
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där du vill spara ditt dokument.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där du vill spara ditt dokument.
 
 ## Steg 2: Skapa ett nytt dokument
 

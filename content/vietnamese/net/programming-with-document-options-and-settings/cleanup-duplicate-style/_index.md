@@ -100,7 +100,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.CleanupDuplicateStyle.
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã xóa thành công các kiểu trùng lặp khỏi tài liệu Word của mình bằng Aspose.Words for .NET. Bằng cách làm theo các bước này, bạn có thể giữ tài liệu của mình sạch sẽ và ngăn nắp, giúp quản lý chúng dễ dàng hơn và ít gặp phải các vấn đề về kiểu dáng hơn. Hãy nhớ rằng, chìa khóa để thành thạo bất kỳ công cụ nào là thực hành, vì vậy hãy tiếp tục thử nghiệm Aspose.Words và khám phá tất cả các tính năng mạnh mẽ mà nó cung cấp.
+Và bạn có nó! Bạn đã xóa thành công các kiểu trùng lặp khỏi tài liệu Word của mình bằng Aspose.Words for .NET. Bằng cách làm theo các bước này, bạn có thể giữ tài liệu của mình sạch sẽ và ngăn nắp, giúp quản lý chúng dễ dàng hơn và ít gặp phải các vấn đề về kiểu dáng hơn. Hãy nhớ rằng, chìa khóa để thành thạo bất kỳ công cụ nào là thực hành, vì vậy hãy tiếp tục thử nghiệm Aspose.Words và khám phá tất cả các tính năng mạnh mẽ mà nó cung cấp.
 
 ## Câu hỏi thường gặp
 

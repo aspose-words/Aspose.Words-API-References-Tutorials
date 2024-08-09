@@ -9,7 +9,7 @@ url: /hu/net/programming-with-officemath/math-equations/
 ---
 ## Bevezetés
 
-Készen áll, hogy belemerüljön a Word-dokumentumok matematikai egyenletek világába? Ma azt vizsgáljuk meg, hogyan használhatja az Aspose.Words for .NET-et matematikai egyenletek létrehozására és konfigurálására a Word-fájlokban. Legyen szó diák, tanár vagy csak valaki, aki szeret egyenletekkel dolgozni, ez az útmutató minden lépésen végigvezeti Önt. Könnyen követhető részekre bontjuk, így biztosítva, hogy az egyes részeket megértse, mielőtt továbblép. Kezdjük el!
+Készen áll, hogy belemerüljön a Word-dokumentumok matematikai egyenletek világába? Ma azt vizsgáljuk meg, hogyan használhatja az Aspose.Words for .NET-et matematikai egyenletek létrehozására és konfigurálására a Word-fájlokban. Legyen szó diák, tanár vagy csak valaki, aki szeret egyenletekkel dolgozni, ez az útmutató minden lépésen végigvezeti Önt. Könnyen követhető részekre bontjuk, így biztosítva, hogy az egyes részeket megértse, mielőtt továbblép. Kezdjük is!
 
 ## Előfeltételek
 

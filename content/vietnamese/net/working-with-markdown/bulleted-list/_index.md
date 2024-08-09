@@ -2,95 +2,98 @@
 title: Danh sách có dấu đầu dòng
 linktitle: Danh sách có dấu đầu dòng
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách tạo danh sách có dấu đầu dòng với Hướng dẫn từng bước của Aspose.Words for .NET.
+description: Tìm hiểu cách tạo và tùy chỉnh danh sách dấu đầu dòng trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước này.
 type: docs
 weight: 10
 url: /vi/net/working-with-markdown/bulleted-list/
 ---
+## Giới thiệu
 
-Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn cách tạo danh sách có dấu đầu dòng bằng Aspose.Words cho .NET. Danh sách có dấu đầu dòng được sử dụng để liệt kê các mục mà không sử dụng cách đánh số.
+Bạn đã sẵn sàng đi sâu vào thế giới Aspose.Words dành cho .NET chưa? Hôm nay, chúng ta sẽ hướng dẫn cách tạo danh sách có dấu đầu dòng trong tài liệu Word của bạn. Cho dù bạn đang sắp xếp ý tưởng, liệt kê các mục hay chỉ thêm một chút cấu trúc vào tài liệu của mình, danh sách có dấu đầu dòng đều cực kỳ tiện dụng. Vì vậy, hãy bắt đầu!
 
-## Bước 1: Sử dụng trình tạo tài liệu
+## Điều kiện tiên quyết
 
-Đầu tiên, chúng tôi sẽ sử dụng trình tạo tài liệu để thêm nội dung vào tài liệu của mình.
+Trước khi bắt đầu cuộc vui viết mã, hãy đảm bảo bạn có mọi thứ mình cần:
+
+1.  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt thư viện Aspose.Words. Nếu bạn chưa có nó, bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển: Môi trường phát triển AC# như Visual Studio.
+3. Kiến thức C# cơ bản: Hiểu biết cơ bản về lập trình C# sẽ giúp bạn theo dõi.
+
+## Nhập không gian tên
+
+Trước tiên, hãy nhập các không gian tên cần thiết. Điều này giống như thiết lập giai đoạn để mã của chúng tôi chạy trơn tru.
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+Bây giờ, hãy chia quy trình thành các bước dễ dàng và dễ quản lý.
+
+## Bước 1: Tạo một tài liệu mới
+
+Được rồi, hãy bắt đầu bằng cách tạo một tài liệu mới. Đây là nơi tất cả các phép thuật sẽ xảy ra.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Bước 2: Áp dụng danh sách có dấu đầu dòng mặc định
+## Bước 2: Áp dụng định dạng danh sách dấu đầu dòng
 
- Chúng ta có thể áp dụng danh sách có dấu đầu dòng mặc định bằng cách sử dụng trình tạo tài liệu`ApplyBulletDefault` phương pháp.
+Tiếp theo, chúng ta sẽ áp dụng định dạng danh sách dấu đầu dòng. Điều này cho tài liệu biết rằng chúng ta sắp bắt đầu một danh sách có dấu đầu dòng.
 
 ```csharp
 builder.ListFormat.ApplyBulletDefault();
 ```
 
-## Bước 3: Tùy chỉnh định dạng Bullet
+## Bước 3: Tùy chỉnh danh sách dấu đầu dòng
 
- Chúng ta có thể tùy chỉnh định dạng dấu đầu dòng bằng cách truy cập các thuộc tính của`ListFormat.List.ListLevels[0]`. Trong ví dụ này, chúng tôi sử dụng dấu gạch ngang "-" làm dấu đầu dòng.
+Tại đây, chúng ta sẽ tùy chỉnh danh sách dấu đầu dòng theo ý thích. Trong ví dụ này, chúng tôi sẽ sử dụng dấu gạch ngang (-) làm dấu đầu dòng.
 
 ```csharp
 builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
 ```
 
-## Bước 4: Thêm mục vào danh sách
+## Bước 4: Thêm mục danh sách
 
- Bây giờ chúng ta có thể thêm các mục vào danh sách có dấu đầu dòng bằng cách sử dụng trình tạo tài liệu`Writeln` phương pháp.
-
-```csharp
-builder. Writen("Element 1");
-builder. Writen("Element 2");
-```
-
-## Bước 5: Loại bỏ thụt lề khỏi danh sách
-
- Nếu muốn tạo một danh sách con, chúng ta có thể tăng mức thụt lề bằng cách sử dụng`ListFormat.ListIndent()` phương pháp. Trong ví dụ này, chúng tôi đang thêm danh sách phụ vào mục 2a và 2b.
+Bây giờ, hãy thêm một số mục vào danh sách có dấu đầu dòng của chúng ta. Đây là nơi bạn có thể sáng tạo và thêm bất kỳ nội dung nào bạn cần.
 
 ```csharp
-builder.ListFormat.ListIndent();
-builder. Writeln("Element 2a");
-builder.Writeln("Element 2b");
-```
-### Mã nguồn mẫu cho Danh sách dấu đầu dòng sử dụng Aspose.Words cho .NET
-
-
-```csharp
-// Sử dụng trình tạo tài liệu để thêm nội dung vào tài liệu.
-DocumentBuilder builder = new DocumentBuilder();
-
-builder.ListFormat.ApplyBulletDefault();
-builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
-
 builder.Writeln("Item 1");
 builder.Writeln("Item 2");
-
-builder.ListFormat.ListIndent();
-
-builder.Writeln("Item 2a");
-builder.Writeln("Item 2b");
 ```
 
-Xin chúc mừng! Bây giờ bạn đã học cách tạo danh sách có dấu đầu dòng bằng Aspose.Words cho .NET.
+## Bước 5: Thêm mục phụ
 
-### Câu hỏi thường gặp
+Để làm cho mọi thứ thú vị hơn, hãy thêm một số mục phụ trong "Mục 2". Điều này giúp tổ chức các điểm phụ.
 
-#### Câu hỏi: Làm cách nào để tạo danh sách có dấu đầu dòng trong Markdown?
+```csharp
+builder.ListFormat.ListIndent();
+builder.Writeln("Item 2a");
+builder.Writeln("Item 2b");
+builder.ListFormat.ListOutdent(); // Quay lại cấp độ danh sách chính
+```
 
-Đáp: Để tạo danh sách có dấu đầu dòng trong Markdown, hãy bắt đầu mỗi mục danh sách bằng ký hiệu dấu đầu dòng (`-`, `*` , hoặc`+`), theo sau là khoảng trắng.
+## Phần kết luận
 
-#### Câu hỏi: Bạn có thể lồng các danh sách có dấu đầu dòng trong Markdown không?
+Và bạn có nó! Bạn vừa tạo danh sách có dấu đầu dòng trong tài liệu Word bằng Aspose.Words cho .NET. Đó là một quy trình đơn giản nhưng cực kỳ hiệu quả để sắp xếp tài liệu của bạn. Cho dù bạn đang tạo danh sách đơn giản hay danh sách lồng nhau phức tạp, Aspose.Words đều có thể hỗ trợ bạn.
 
-Trả lời: Có, có thể lồng các danh sách có dấu đầu dòng trong Markdown bằng cách thêm bốn khoảng trắng bù trừ trước mỗi mục danh sách lồng nhau.
+Hãy thoải mái thử nghiệm các kiểu và định dạng danh sách khác nhau để phù hợp với nhu cầu của bạn. Chúc mừng mã hóa!
 
-#### Q: Làm cách nào để tùy chỉnh biểu tượng dấu đầu dòng?
+## Câu hỏi thường gặp
 
-Trả lời: Trong Markdown tiêu chuẩn, ký hiệu dấu đầu dòng được xác định trước. Tuy nhiên, một số trình chỉnh sửa Markdown cho phép bạn tùy chỉnh chúng bằng các tiện ích mở rộng cụ thể.
+### Tôi có thể sử dụng các ký hiệu dấu đầu dòng khác nhau trong danh sách không?
+    Có, bạn có thể tùy chỉnh các ký hiệu dấu đầu dòng bằng cách thay đổi`NumberFormat` tài sản.
 
-#### Câu hỏi: Danh sách có dấu đầu dòng trong Markdown có hỗ trợ thụt lề không?
+### Làm cách nào để thêm nhiều mức thụt lề hơn?
+    Sử dụng`ListIndent` phương pháp để thêm nhiều cấp độ hơn và`ListOutdent` để quay trở lại cấp độ cao hơn.
 
-Đáp: Có, danh sách có dấu đầu dòng trong Markdown hỗ trợ thụt lề. Bạn có thể thêm dịch chuyển trái bằng cách sử dụng dấu cách hoặc tab.
+### Có thể trộn lẫn danh sách dấu đầu dòng và số?
+   Tuyệt đối! Bạn có thể chuyển đổi giữa định dạng dấu đầu dòng và số bằng cách sử dụng`ApplyNumberDefault`Và`ApplyBulletDefault` phương pháp.
 
-#### Câu hỏi: Có thể thêm liên kết hoặc văn bản nội tuyến vào danh sách các mục không?
+### Tôi có thể tạo kiểu cho văn bản trong các mục danh sách không?
+    Có, bạn có thể áp dụng các kiểu, phông chữ và định dạng khác nhau cho văn bản trong các mục danh sách bằng cách sử dụng`Font` tài sản của`DocumentBuilder`.
 
-Đáp: Có, bạn có thể thêm liên kết hoặc văn bản nội tuyến vào danh sách các mục bằng cú pháp Markdown thích hợp.
+### Làm cách nào để tạo danh sách có dấu đầu dòng nhiều cột?
+   Bạn có thể sử dụng định dạng bảng để tạo danh sách nhiều cột, trong đó mỗi ô chứa một danh sách có dấu đầu dòng riêng biệt.

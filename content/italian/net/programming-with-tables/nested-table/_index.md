@@ -7,9 +7,9 @@ type: docs
 weight: 10
 url: /it/net/programming-with-tables/nested-table/
 ---
-## introduzione
+## Introduzione
 
-Ti sei mai trovato a dover creare una tabella nidificata all'interno di un documento Word a livello di codice? Che tu stia generando report, fatture o qualsiasi tipo di documento che richieda una struttura tabellare dettagliata, Aspose.Words per .NET può essere il tuo migliore amico. In questo tutorial, approfondiremo il processo di creazione di tabelle nidificate in documenti Word utilizzando Aspose.Words per .NET. Tratteremo tutto, dai prerequisiti all'implementazione del codice finale. Quindi iniziamo!
+Ti sei mai trovato a dover creare una tabella nidificata all'interno di un documento Word a livello di codice? Che tu stia generando report, fatture o qualsiasi tipo di documento che richieda una struttura tabellare dettagliata, Aspose.Words per .NET può essere il tuo migliore amico. In questo tutorial, approfondiremo il processo di creazione di tabelle nidificate in documenti Word utilizzando Aspose.Words per .NET. Tratteremo tutto, dai prerequisiti all'implementazione del codice finale. Quindi, cominciamo!
 
 ## Prerequisiti
 
@@ -116,7 +116,7 @@ doc.Save(dataDir + "WorkingWithTables.NestedTable.docx");
 
 ## Conclusione
 
-E il gioco è fatto! Hai creato con successo una tabella nidificata in un documento Word utilizzando Aspose.Words per .NET. Questa potente libreria semplifica incredibilmente la manipolazione dei documenti Word a livello di codice. Che tu stia generando report complessi o tabelle semplici, Aspose.Words per .NET ti copre.
+Ed ecco qua! Hai creato con successo una tabella nidificata in un documento Word utilizzando Aspose.Words per .NET. Questa potente libreria semplifica incredibilmente la manipolazione dei documenti Word a livello di codice. Che tu stia generando report complessi o tabelle semplici, Aspose.Words per .NET ti copre.
 
 ## Domande frequenti
 
@@ -126,7 +126,7 @@ Una tabella nidificata è una tabella all'interno di una tabella. Viene utilizza
 
 ### Perché utilizzare Aspose.Words per .NET?
 
-Aspose.Words per .NET fornisce un robusto set di funzionalità per la creazione, la modifica e la conversione di documenti Word a livello di programmazione, rendendolo la scelta ideale per gli sviluppatori.
+Aspose.Words per .NET fornisce un robusto set di funzionalità per la creazione, la modifica e la conversione di documenti Word a livello di codice, rendendolo la scelta ideale per gli sviluppatori.
 
 ### Posso aggiungere più livelli di tabelle nidificate?
 

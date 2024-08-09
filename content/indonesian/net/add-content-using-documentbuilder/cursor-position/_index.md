@@ -9,7 +9,7 @@ url: /id/net/add-content-using-documentbuilder/cursor-position/
 ---
 ## Perkenalan
 
-Hai, rekan pembuat kode! Pernahkah Anda tenggelam dalam sebuah proyek dan bergulat dengan dokumen Word di aplikasi .NET Anda? Kamu tidak sendiri. Kita semua pernah ke sana, menggaruk-garuk kepala, mencoba mencari cara memanipulasi file Word tanpa kehilangan kewarasan. Hari ini, kita menyelami dunia Aspose.Words untuk .NET—perpustakaan fantastis yang menghilangkan kesulitan dalam menangani dokumen Word secara terprogram. Kami akan menguraikan cara mengatur posisi kursor di dokumen Word menggunakan alat yang bagus ini. Jadi, ambil kopimu, dan mari mulai coding!
+Hai, rekan pembuat kode! Pernahkah Anda tenggelam dalam sebuah proyek dan bergulat dengan dokumen Word di aplikasi .NET Anda? Anda tidak sendirian. Kita semua pernah ke sana, menggaruk-garuk kepala, mencoba mencari cara memanipulasi file Word tanpa kehilangan kewarasan. Hari ini, kita menyelami dunia Aspose.Words untuk .NET—perpustakaan fantastis yang menghilangkan kesulitan dalam menangani dokumen Word secara terprogram. Kami akan menguraikan cara mengatur posisi kursor di dokumen Word menggunakan alat yang bagus ini. Jadi, ambil kopimu, dan mari mulai coding!
 
 ## Prasyarat
 

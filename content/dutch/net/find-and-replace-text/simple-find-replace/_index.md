@@ -105,7 +105,7 @@ En daar heb je het! U hebt zojuist het proces van het zoeken en vervangen van te
  Ja, dat kan. Bel gewoon de`Replace` methode voor elke tekst die u wilt vervangen.
 
 ### Is Aspose.Words voor .NET gratis?
-Aspose.Words voor .NET biedt een gratis proefperiode, maar voor volledige functionaliteit moet u een licentie aanschaffen. Bekijk hun[prijzen](https://purchase.aspose.com/buy) voor meer details.
+Aspose.Words voor .NET biedt een gratis proefperiode, maar voor volledige functionaliteit moet u een licentie aanschaffen. Bekijk hun[prijzen](https://purchase.aspose.com/buy) voor meer informatie.
 
 ### Kan ik tekst vervangen door opmaak?
  Absoluut! U kunt tekst vervangen en opmaak toepassen met behulp van de`FindReplaceOptions` klas.

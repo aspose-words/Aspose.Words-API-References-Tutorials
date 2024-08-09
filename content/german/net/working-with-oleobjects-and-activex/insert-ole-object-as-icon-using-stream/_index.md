@@ -2,125 +2,98 @@
 title: OLE-Objekt als Symbol mit Stream einfügen
 linktitle: OLE-Objekt als Symbol mit Stream einfügen
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET mithilfe eines Streams ein OLE-Objekt als Symbol einfügen.
+description: Erfahren Sie in diesem ausführlichen Schritt-für-Schritt-Tutorial, wie Sie mit Aspose.Words für .NET mithilfe eines Streams ein OLE-Objekt als Symbol einfügen.
 type: docs
 weight: 10
 url: /de/net/working-with-oleobjects-and-activex/insert-ole-object-as-icon-using-stream/
 ---
+## Einführung
 
-Hier ist eine Schritt-für-Schritt-Anleitung zur Erklärung des folgenden C#-Quellcodes, der zeigt, wie mithilfe eines Streams mit Aspose.Words für .NET ein OLE-Objekt als Symbol eingefügt wird.
+In diesem Tutorial tauchen wir in eine supercoole Funktion von Aspose.Words für .NET ein: das Einfügen eines OLE-Objekts (Object Linking and Embedding) als Symbol mithilfe eines Streams. Egal, ob Sie eine PowerPoint-Präsentation, eine Excel-Tabelle oder einen anderen Dateityp einbetten, diese Anleitung zeigt Ihnen genau, wie es geht. Bereit, loszulegen? Los geht‘s!
 
-## Schritt 1: Importieren Sie die erforderlichen Referenzen
-Stellen Sie vor dem Beginn sicher, dass Sie die erforderlichen Referenzen importiert haben, um Aspose.Words für .NET in Ihrem Projekt zu verwenden. Dazu gehört das Importieren der Aspose.Words-Bibliothek und das Hinzufügen der erforderlichen Namespaces zu Ihrer Quelldatei.
+## Voraussetzungen
+
+Bevor wir uns in den Code stürzen, benötigen Sie ein paar Dinge:
+
+-  Aspose.Words für .NET: Falls noch nicht geschehen,[herunterladen](https://releases.aspose.com/words/net/) und installieren Sie Aspose.Words für .NET.
+- Entwicklungsumgebung: Visual Studio oder eine andere C#-Entwicklungsumgebung.
+- Eingabedateien: Die Datei, die Sie einbetten möchten (z. B. eine PowerPoint-Präsentation) und ein Symbolbild.
+
+## Namespaces importieren
+
+Stellen Sie zunächst sicher, dass Sie die erforderlichen Namespaces in Ihr Projekt importiert haben:
 
 ```csharp
+using System;
+using System.IO;
 using Aspose.Words;
 using Aspose.Words.Drawing;
-using System.IO;
 ```
 
-## Schritt 2: Neues Dokument und Dokumentgenerator erstellen
- In diesem Schritt erstellen wir ein neues Dokument mit dem`Document` Klasse und einen Dokumentgenerator mit der`DocumentBuilder` Klasse.
+Lassen Sie uns den Vorgang Schritt für Schritt aufschlüsseln, damit er leicht nachvollziehbar ist.
+
+## Schritt 1: Neues Dokument erstellen
+
+Zuerst erstellen wir ein neues Dokument und einen Dokument-Generator, um damit zu arbeiten.
 
 ```csharp
+// Pfad zu Ihrem Dokumentverzeichnis
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Schritt 3: Einfügen eines OLE-Objekts als Symbol aus einem Stream
- Verwenden Sie den Document Builder`InsertOleObjectAsIcon` Methode, um ein OLE-Objekt als Symbol aus einem Stream in das Dokument einzufügen. Geben Sie den Datenstream, den Objekttyp, den Symbolpfad und den Namen des eingebetteten Objekts an.
+ Denken Sie an`Document` als Ihre leere Leinwand und`DocumentBuilder` als Pinsel. Wir bereiten unsere Werkzeuge vor, um mit der Schaffung unseres Meisterwerks zu beginnen.
+
+## Schritt 2: Bereiten Sie den Stream vor
+
+Als nächstes müssen wir einen Speicherstream vorbereiten, der die Datei enthält, die wir einbetten möchten. In diesem Beispiel betten wir eine PowerPoint-Präsentation ein.
 
 ```csharp
-using (MemoryStream stream = new MemoryStream(File.ReadAllBytes(MyDir + "Presentation.pptx")))
+using (MemoryStream stream = new MemoryStream(File.ReadAllBytes("Path_to_your_directory/Presentation.pptx")))
 {
-     builder.InsertOleObjectAsIcon(stream, "Package", ImagesDir + "Logo icon.ico", "My embedded file");
+```
+
+Dieser Schritt ist so, als würden Sie Ihre Farbe auf den Pinsel laden. Wir bereiten unsere Datei zum Einbetten vor.
+
+## Schritt 3: Einfügen des OLE-Objekts als Symbol
+
+Nun verwenden wir den Dokumentgenerator, um das OLE-Objekt in das Dokument einzufügen. Wir geben den Dateistream, die ProgID für den Dateityp (in diesem Fall „Paket“), den Pfad zum Symbolbild und eine Bezeichnung für die eingebettete Datei an.
+
+```csharp
+builder.InsertOleObjectAsIcon(stream, "Package", "Path_to_your_directory/Logo icon.ico", "My embedded file");
 }
 ```
+
+Hier geschieht die Magie! Wir betten unsere Datei ein und zeigen sie als Symbol im Dokument an.
 
 ## Schritt 4: Speichern Sie das Dokument
- Verwenden Sie die`Save` Methode, um das Dokument in einer Datei zu speichern.
+
+Abschließend speichern wir das Dokument in einem angegebenen Pfad.
 
 ```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
+doc.Save(dataDir + "WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
 ```
 
-### Beispielquellcode zum Einfügen eines OLE-Objekts als Symbol mithilfe eines Streams mit Aspose.Words für .NET
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-using (MemoryStream stream = new MemoryStream(File.ReadAllBytes(MyDir + "Presentation.pptx")))
-{
-     builder.InsertOleObjectAsIcon(stream, "Package", ImagesDir + "Logo icon.ico", "My embedded file");
-}
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
-```
-
-Dies ist ein vollständiges Codebeispiel zum Einfügen eines OLE-Objekts als Symbol mithilfe eines Streams mit Aspose.Words für .NET. Achten Sie darauf, die erforderlichen Referenzen zu importieren, und befolgen Sie die zuvor beschriebenen Schritte, um diesen Code in Ihr Projekt zu integrieren.
+Dieser Schritt ist so, als würden Sie Ihr fertiges Gemälde in einen Rahmen stecken und an die Wand hängen. Ihr Dokument ist nun einsatzbereit!
 
 ## Abschluss
 
-Die obige Schritt-für-Schritt-Anleitung erklärt, wie Sie mithilfe eines Flows mit Aspose.Words für .NET ein OLE-Objekt als Symbol in ein Word-Dokument einfügen. Wenn Sie die beschriebenen Schritte befolgen, können Sie diese Funktionalität in Ihr Projekt integrieren. Achten Sie darauf, die erforderlichen Referenzen zu importieren, ein neues Dokument und einen Dokumentgenerator zu erstellen, das OLE-Objekt als Symbol aus dem Stream einzufügen und dann das Dokument zu speichern. Verwenden Sie den bereitgestellten Beispielcode als Ausgangspunkt und passen Sie ihn an Ihre Bedürfnisse an.
+Und da haben Sie es! Sie haben erfolgreich ein OLE-Objekt als Symbol in ein Word-Dokument eingebettet, indem Sie Aspose.Words für .NET verwenden. Mit dieser leistungsstarken Funktion können Sie ganz einfach dynamische und interaktive Dokumente erstellen. Egal, ob Sie Präsentationen, Tabellenkalkulationen oder andere Dateien einbetten, Aspose.Words macht es zum Kinderspiel. Probieren Sie es also aus und sehen Sie, welchen Unterschied es in Ihren Dokumenten machen kann!
 
-### Häufig gestellte Fragen
+## Häufig gestellte Fragen
 
-#### F. Wie importiere ich die erforderlichen Referenzen, um Aspose.Words für .NET zu verwenden?
+### Kann ich mit dieser Methode verschiedene Dateitypen einbetten?
+Ja, Sie können jeden von OLE unterstützten Dateityp einbetten, einschließlich Word, Excel, PowerPoint und mehr.
 
-A. Um die notwendigen Referenzen zu importieren, müssen Sie die folgenden Schritte ausführen:
+### Benötige ich eine spezielle Lizenz, um Aspose.Words für .NET zu verwenden?
+ Ja, Aspose.Words für .NET erfordert eine Lizenz. Sie können eine[Kostenlose Testversion](https://releases.aspose.com/) oder kaufen Sie ein[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) zum Testen.
 
- Fügen Sie Folgendes hinzu`using` -Anweisungen oben in Ihrer Quelldatei:
+### Kann ich das für das OLE-Objekt verwendete Symbol anpassen?
+ Natürlich! Sie können jede beliebige Bilddatei für das Symbol verwenden, indem Sie deren Pfad im`InsertOleObjectAsIcon` Verfahren.
 
-```csharp
-using Aspose.Words;
-using Aspose.Words.Drawing;
-using System.IO;
-```
-Stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek zu Ihrem Projekt hinzugefügt haben.
+### Was passiert, wenn die Datei- oder Symbolpfade falsch sind?
+Die Methode löst eine Ausnahme aus. Stellen Sie sicher, dass die Pfade zu Ihren Dateien korrekt sind, um Fehler zu vermeiden.
 
-#### F. Wie erstelle ich mit Aspose.Words für .NET ein neues Dokument und einen neuen Dokument-Generator?
-
-A. Um ein neues Dokument und einen Dokumentgenerator zu erstellen, können Sie die folgenden Schritte ausführen:
-
- Verwenden Sie die`Document` Klasse zum Erstellen eines neuen Dokuments:
-
-```csharp
-Document doc = new Document();
-```
- Verwenden Sie die`DocumentBuilder` Klasse zum Erstellen eines Dokument-Generators, der mit dem zuvor erstellten Dokument verknüpft ist:
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-#### F: Wie fügt man mit Aspose.Words für .NET ein OLE-Objekt als Symbol aus einem Stream ein?
-
-A. Um ein OLE-Objekt als Symbol aus einem Stream einzufügen, können Sie die folgenden Schritte ausführen:
-
- Verwenden Sie die`InsertOleObjectAsIcon` Methode des Dokumentgenerators zum Einfügen des OLE-Objekts:
-
-```csharp
-using (MemoryStream stream = new MemoryStream(File.ReadAllBytes(MyDir + "Presentation.pptx")))
-{
-  builder.InsertOleObjectAsIcon(stream, "Package", ImagesDir + "Logo icon.ico", "My embedded file");
-}
-```
-
-#### F. Wie speichere ich das Dokument in einer Datei?
-
-A.  Um das Dokument in einer Datei zu speichern, können Sie den`Save` Methode des Dokuments, die den Zielpfad angibt:
-
-```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
-```
-
-#### F: Wie bettet ich den Code zum Einfügen eines OLE-Objekts als Symbol aus einem Stream in mein Projekt ein?
-
-A. Um den Code zum Einfügen eines OLE-Objekts als Symbol aus einem Stream in Ihr Projekt einzubetten, führen Sie die folgenden Schritte aus:
-- Importieren Sie die notwendigen Referenzen durch Hinzufügen der entsprechenden`using` Aussagen.
--  Erstellen Sie ein neues Dokument und einen Dokumentgenerator mit dem`Document`Und`DocumentBuilder` Klassen.
-- Verwenden Sie den Code zum Einfügen des OLE-Objekts als Symbol aus einem Stream.
--  Speichern Sie das Dokument mit dem`Save` Methode mit dem entsprechenden Zielpfad.
-
-Wenn Sie diese Schritte befolgen, können Sie mithilfe von Aspose.Words für .NET erfolgreich ein OLE-Objekt als Symbol aus einem Stream einfügen. Befolgen Sie unbedingt die Anweisungen und importieren Sie die erforderlichen Referenzen, um die gewünschten Ergebnisse zu erzielen.
+### Ist es möglich, das eingebettete Objekt zu verknüpfen, anstatt es einzubetten?
+Ja, Aspose.Words ermöglicht Ihnen das Einfügen verknüpfter OLE-Objekte, die auf die Datei verweisen, ohne deren Inhalt einzubetten.

@@ -10,7 +10,7 @@ url: /nl/net/working-with-textboxes/break-a-link/
 
 ## Invoering
 
-Hallo, mede-ontwikkelaars en documentliefhebbers! 🌟 Als je ooit met Word-documenten hebt gewerkt, weet je dat het beheren van tekstvakken soms kan aanvoelen als het hoeden van katten. Ze moeten worden georganiseerd, gekoppeld en soms ontkoppeld om ervoor te zorgen dat uw inhoud net zo soepel verloopt als een goed afgestemde symfonie. Vandaag duiken we in hoe je links in tekstvakken kunt opsplitsen met Aspose.Words voor .NET. Dit klinkt misschien technisch, maar maak je geen zorgen: ik begeleid je bij elke stap op een vriendelijke, gemoedelijke manier. Of u nu een formulier, een nieuwsbrief of een complex document voorbereidt, het doorbreken van koppelingen kan u helpen de controle over de lay-out van uw document terug te krijgen.
+Hallo, mede-ontwikkelaars en documentliefhebbers! 🌟 Als je ooit met Word-documenten hebt gewerkt, weet je dat het beheren van tekstvakken soms kan aanvoelen als het hoeden van katten. Ze moeten worden georganiseerd, gekoppeld en soms ontkoppeld om ervoor te zorgen dat uw inhoud net zo soepel verloopt als een goed afgestemde symfonie. Vandaag duiken we in hoe je links in tekstvakken kunt opsplitsen met Aspose.Words voor .NET. Dit klinkt misschien technisch, maar maak je geen zorgen: ik begeleid je bij elke stap op een vriendelijke, gemoedelijke manier. Of u nu een formulier, een nieuwsbrief of een ander complex document voorbereidt, het doorbreken van koppelingen kan u helpen de controle over de lay-out van uw document terug te krijgen.
 
 ## Vereisten
 
@@ -94,7 +94,7 @@ Soms kan een tekstvak deel uitmaken van een keten, terwijl andere vakken eraan g
 
 ### Inkomende links verbreken
 
- Om een inkomende link te verbreken, controleert u of de`Previous` tekstvak bestaat en bel`BreakForwardLink` ben ermee bezig:
+ Om een inkomende link te verbreken, controleert u of de`Previous` tekstvak bestaat en bel`BreakForwardLink` erop:
 
 ```csharp
 textBox.Previous?.BreakForwardLink();
@@ -120,7 +120,7 @@ Door voorwaartse koppelingen te verbreken, kunt u de inhoud van uw document reor
 
 ### Is het mogelijk om te controleren of een tekstvak een voorwaartse link heeft voordat deze wordt verbroken?
 
- Ja, u kunt controleren of een tekstvak een voorwaartse link heeft door het bestand te inspecteren`Next` eigendom. Als het niet null is, bevat het tekstvak een voorwaartse link.
+ Ja, u kunt controleren of een tekstvak een voorwaartse link heeft door het bestand`Next` eigendom. Als het niet null is, bevat het tekstvak een voorwaartse link.
 
 ### Kunnen verbroken koppelingen de lay-out van het document beïnvloeden?
 
@@ -128,4 +128,4 @@ Het verbreken van koppelingen kan mogelijk de lay-out beïnvloeden, vooral als d
 
 ### Waar kan ik meer bronnen vinden over het werken met Aspose.Words?
 
- Voor meer informatie en bronnen kunt u terecht op de[Aspose.Words-documentatie](https://reference.aspose.com/words/net/)En[Helpforum](https://forum.aspose.com/c/words/8).
+ Voor meer informatie en bronnen kunt u terecht op de[Aspose.Words-documentatie](https://reference.aspose.com/words/net/)En[ondersteuningsforum](https://forum.aspose.com/c/words/8).

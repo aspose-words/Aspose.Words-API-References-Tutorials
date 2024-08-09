@@ -79,7 +79,7 @@ MarkdownSaveOptions saveOptions = new MarkdownSaveOptions
 
 ### 2.4 Guardar el documento como Markdown
 
- Usar una`MemoryStream` para guardar el documento en formato Markdown.
+ Utilice un`MemoryStream` para guardar el documento en formato Markdown.
 
 ```csharp
 using (MemoryStream stream = new MemoryStream())

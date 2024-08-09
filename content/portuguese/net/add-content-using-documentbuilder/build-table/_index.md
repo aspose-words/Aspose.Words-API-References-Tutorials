@@ -19,7 +19,7 @@ Antes de embarcarmos em nossa aventura de construção de mesas, vamos ter certe
 - .NET Framework (4.0 ou superior)
 - Biblioteca Aspose.Words para .NET
 
- Se você ainda não tem o Aspose.Words, você pode facilmente[baixe aqui](https://releases.aspose.com/words/net/) . Você também pode começar com um[teste grátis](https://releases.aspose.com/) se você quiser testar as águas. Para aqueles que estão prontos para mergulhar, você pode[comprar uma licença](https://purchase.aspose.com/buy) , ou se precisar de mais tempo para avaliar, pegue um[licença temporária](https://purchase.aspose.com/temporary-license/).
+ Se você ainda não tem o Aspose.Words, você pode facilmente[baixe aqui](https://releases.aspose.com/words/net/) . Você também pode começar com um[teste gratuito](https://releases.aspose.com/) se você quiser testar as águas. Para aqueles que estão prontos para mergulhar, você pode[comprar uma licença](https://purchase.aspose.com/buy) , ou se precisar de mais tempo para avaliar, pegue um[licença temporária](https://purchase.aspose.com/temporary-license/).
 
 ## Importar namespaces
 
@@ -46,7 +46,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Etapa 2: inicie a mesa
 
- Agora, vamos começar nossa mesa. Chamamos o`StartTable` método do`DocumentBuilder` começar.
+ Agora, vamos começar nossa mesa. Chamamos o`StartTable` método do`DocumentBuilder` para começar.
 
 ```csharp
 Table table = builder.StartTable();
@@ -128,7 +128,7 @@ Aspose.Words for .NET é uma biblioteca poderosa para trabalhar programaticament
  Você pode[baixe Aspose.Words para .NET aqui](https://releases.aspose.com/words/net/). Siga as instruções de instalação fornecidas para configurá-lo em seu ambiente de desenvolvimento.
 
 ### Posso usar o Aspose.Words gratuitamente?
- Aspose.Words oferece um[teste grátis](https://releases.aspose.com/) para que você possa testar seus recursos. Para uso prolongado, você pode comprar uma licença ou obter um[licença temporária](https://purchase.aspose.com/temporary-license/).
+ Aspose.Words oferece um[teste gratuito](https://releases.aspose.com/) para que você possa testar seus recursos. Para uso prolongado, você pode comprar uma licença ou obter um[licença temporária](https://purchase.aspose.com/temporary-license/).
 
 ### Quais são alguns outros recursos do Aspose.Words for .NET?
 Além de criar tabelas, Aspose.Words permite trabalhar com texto, imagens, estilos e muitos outros elementos de documentos. Ele suporta uma ampla variedade de formatos de documentos, incluindo DOCX, PDF e HTML.

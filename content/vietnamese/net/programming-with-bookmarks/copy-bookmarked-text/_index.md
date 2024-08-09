@@ -104,7 +104,7 @@ dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 
 ## Phần kết luận
 
-Và thế là xong! Bạn đã sao chép thành công văn bản được đánh dấu từ tài liệu Word này sang tài liệu Word khác bằng Aspose.Words for .NET. Phương pháp này rất mạnh mẽ để tự động hóa các tác vụ thao tác tài liệu, giúp quy trình làm việc của bạn hiệu quả và hợp lý hơn.
+Và thế là xong! Bạn đã sao chép thành công văn bản được đánh dấu từ tài liệu Word này sang tài liệu Word khác bằng Aspose.Words for .NET. Phương pháp này rất hiệu quả để tự động hóa các tác vụ thao tác tài liệu, giúp quy trình làm việc của bạn hiệu quả và hợp lý hơn.
 
 ## Câu hỏi thường gặp
 
@@ -112,7 +112,7 @@ Và thế là xong! Bạn đã sao chép thành công văn bản được đánh
 Có, bạn có thể lặp qua nhiều dấu trang và sử dụng cùng một phương pháp để sao chép từng dấu trang.
 
 ### Điều gì xảy ra nếu không tìm thấy dấu trang?
- Các`Range.Bookmarks` tài sản sẽ trở lại`null`, vì vậy hãy đảm bảo bạn xử lý trường hợp này để tránh trường hợp ngoại lệ.
+ các`Range.Bookmarks` tài sản sẽ trở lại`null`, vì vậy hãy đảm bảo bạn xử lý trường hợp này để tránh trường hợp ngoại lệ.
 
 ### Tôi có thể giữ nguyên định dạng của dấu trang gốc không?
  Tuyệt đối! sử dụng`ImportFormatMode.KeepSourceFormatting` đảm bảo rằng định dạng ban đầu được giữ nguyên.

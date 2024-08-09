@@ -99,7 +99,7 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ## Conclusion
 
-Et voila! Avec seulement quelques lignes de code, nous avons réussi à supprimer les sauts de page d'un document Word à l'aide d'Aspose.Words pour .NET. Cette bibliothèque rend la manipulation de documents simple et efficace. Que vous travailliez sur des documents volumineux ou petits, Aspose.Words fournit les outils dont vous avez besoin pour accomplir votre travail.
+Et voilà ! Avec seulement quelques lignes de code, nous avons réussi à supprimer les sauts de page d'un document Word à l'aide d'Aspose.Words pour .NET. Cette bibliothèque rend la manipulation de documents simple et efficace. Que vous travailliez sur des documents volumineux ou petits, Aspose.Words fournit les outils dont vous avez besoin pour accomplir votre travail.
 
 ## FAQ
 

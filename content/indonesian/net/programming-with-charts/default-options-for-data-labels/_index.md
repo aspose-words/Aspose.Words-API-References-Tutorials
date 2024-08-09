@@ -86,7 +86,7 @@ ChartSeries series = chart.Series.Add("Aspose Series 1",
 
 ### Penjelasan
 
-Pada langkah ini, kami memastikan bagan kami kosong dengan menghapus rangkaian yang sudah ada sebelumnya. Kemudian, kami menambahkan rangkaian baru dengan kategori dan nilai khusus, yang akan ditampilkan di diagram lingkaran kami.
+Pada langkah ini, kami memastikan grafik kami kosong dengan menghapus semua rangkaian yang sudah ada sebelumnya. Kemudian, kami menambahkan rangkaian baru dengan kategori dan nilai khusus, yang akan ditampilkan di diagram lingkaran kami.
 
 ## Langkah 4: Tetapkan Opsi Default untuk Label Data
 
@@ -135,7 +135,7 @@ Anda dapat menggunakan Aspose.Words secara gratis dengan a[izin sementara](https
  Anda bisa mendapatkan dukungan melalui[Forum dukungan Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### Bisakah saya menambahkan jenis grafik lainnya?
- Ya, Aspose.Words mendukung berbagai jenis bagan seperti bagan batang, garis, dan kolom. Periksalah[dokumentasi](https://reference.aspose.com/words/net/) untuk lebih jelasnya.
+ Ya, Aspose.Words mendukung berbagai jenis bagan seperti bagan batang, garis, dan kolom. Periksa[dokumentasi](https://reference.aspose.com/words/net/) untuk lebih jelasnya.
 
 ### Apakah Aspose.Words kompatibel dengan .NET Core?
  Ya, Aspose.Words kompatibel dengan .NET Core. Anda dapat menemukan informasi lebih lanjut di[dokumentasi](https://reference.aspose.com/words/net/).

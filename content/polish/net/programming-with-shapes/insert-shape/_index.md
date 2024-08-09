@@ -2,7 +2,7 @@
 title: Wstaw kształt
 linktitle: Wstaw kształt
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak wstawiać kształty w dokumentach programu Word i manipulować nimi za pomocą Aspose.Words dla .NET, korzystając z naszego przewodnika krok po kroku.
+description: Dowiedz się, jak wstawiać i manipulować kształtami w dokumentach programu Word za pomocą Aspose.Words dla .NET, korzystając z naszego przewodnika krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/programming-with-shapes/insert-shape/
@@ -115,7 +115,7 @@ Możesz zmienić`ShapeType` w`InsertShape` metoda wstawiania różnych typów ks
  Tak, możesz stylizować kształty, ustawiając właściwości takie jak`FillColor`, `StrokeColor` , I`StrokeWeight`.
 
 ### Jak ustawić kształty względem innych elementów?
- Użyj`RelativeHorizontalPosition`I`RelativeVerticalPosition` właściwości umożliwiające położenie kształtów względem innych elementów w dokumencie.
+ Skorzystaj z`RelativeHorizontalPosition`I`RelativeVerticalPosition` właściwości umożliwiające położenie kształtów względem innych elementów w dokumencie.
 
 ### Czy mogę zgrupować wiele kształtów?
  Tak, Aspose.Words dla .NET umożliwia grupowanie kształtów za pomocą`GroupShape` klasa.

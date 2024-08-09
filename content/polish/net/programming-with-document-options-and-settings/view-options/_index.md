@@ -15,7 +15,7 @@ Hej, kolego koderze! Czy zastanawiałeś się kiedyś, jak zmienić sposób prze
 
 Zanim zagłębimy się w kod, upewnijmy się, że mamy wszystko, czego potrzebujemy, wraz z tym samouczkiem. Oto krótka lista kontrolna:
 
-1.  Biblioteka Aspose.Words dla .NET: Upewnij się, że masz bibliotekę Aspose.Words dla .NET. Możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1.  Biblioteka Aspose.Words dla .NET: Upewnij się, że masz bibliotekę Aspose.Words dla .NET. Możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: Powinieneś mieć zainstalowane na swoim komputerze środowisko IDE, takie jak Visual Studio.
 3. Podstawowa znajomość języka C#: Choć nie będzie to proste, podstawowa znajomość języka C# będzie korzystna.
 4. Przykładowy dokument programu Word: Przygotuj przykładowy dokument programu Word. W tym samouczku będziemy go nazywać „Dokument.docx”.

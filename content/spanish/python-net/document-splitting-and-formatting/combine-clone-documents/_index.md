@@ -75,7 +75,7 @@ for section in src_doc.sections:
 dst_doc.save("cloned_document.docx")
 ```
 
-## Técnicas avanzadas
+## Técnicas Avanzadas
 
 ### Reemplazo de texto
 

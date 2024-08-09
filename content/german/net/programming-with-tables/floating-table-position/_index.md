@@ -15,7 +15,7 @@ Sind Sie bereit, in die Welt der Manipulation von Tabellenpositionen in Word-Dok
 
 Bevor wir uns auf diese aufregende Reise begeben, stellen wir sicher, dass wir alles haben, was wir brauchen:
 
-1. Aspose.Words für .NET-Bibliothek: Stellen Sie sicher, dass Sie die neueste Version haben. Wenn nicht,[hier herunterladen](https://releases.aspose.com/words/net/).
+1. Aspose.Words für .NET-Bibliothek: Stellen Sie sicher, dass Sie die neueste Version haben. Wenn nicht,[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. .NET Framework: Stellen Sie sicher, dass Ihre Entwicklungsumgebung mit .NET eingerichtet ist.
 3. Entwicklungsumgebung: Visual Studio oder eine bevorzugte IDE.
 4. Ein Word-Dokument: Halten Sie ein Word-Dokument bereit, das eine Tabelle enthält.
@@ -30,7 +30,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-## Schritt für Schritt Anleitung
+## Schritt-für-Schritt-Anleitung
 
 Lassen Sie uns den Prozess nun in einfache, leicht verständliche Schritte unterteilen.
 

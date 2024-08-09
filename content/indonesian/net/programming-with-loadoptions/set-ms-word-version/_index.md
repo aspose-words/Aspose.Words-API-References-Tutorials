@@ -10,7 +10,7 @@ url: /id/net/programming-with-loadoptions/set-ms-word-version/
 ---
 ## Perkenalan
 
-Pernahkah Anda merasa perlu bekerja dengan dokumen MS Word versi tertentu tetapi tidak tahu cara mengaturnya secara terprogram? Kamu tidak sendiri! Dalam tutorial ini, kita akan memandu proses pengaturan versi MS Word menggunakan Aspose.Words untuk .NET. Ini adalah alat luar biasa yang memudahkan manipulasi dokumen Word. Kami akan mendalami seluk beluknya, merinci setiap langkah untuk memastikan Anda siap dan berjalan dengan lancar. Siap untuk memulai? Ayo selami!
+Pernahkah Anda merasa perlu bekerja dengan dokumen MS Word versi tertentu tetapi tidak tahu cara mengaturnya secara terprogram? Anda tidak sendirian! Dalam tutorial ini, kita akan memandu proses pengaturan versi MS Word menggunakan Aspose.Words untuk .NET. Ini adalah alat luar biasa yang memudahkan manipulasi dokumen Word. Kami akan mendalami seluk beluknya, merinci setiap langkah untuk memastikan Anda siap dan berjalan dengan lancar. Siap untuk memulai? Ayo selami!
 
 ## Prasyarat
 
@@ -40,7 +40,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 ## Langkah 2: Konfigurasikan Opsi Pemuatan
 
-Selanjutnya, Anda perlu mengonfigurasi opsi pemuatan. Ini adalah dimana keajaiban terjadi! Dengan mengatur versi MS Word di opsi pemuatan, Anda memberi tahu Aspose.Words versi Word mana yang akan ditiru saat memuat dokumen.
+Selanjutnya, Anda perlu mengonfigurasi opsi pemuatan. Di sinilah keajaiban terjadi! Dengan mengatur versi MS Word di opsi pemuatan, Anda memberi tahu Aspose.Words versi Word mana yang akan ditiru saat memuat dokumen.
 
 ```csharp
 // Konfigurasikan opsi pemuatan dengan fitur "Atur Versi MS Word".
@@ -74,7 +74,7 @@ Mengatur versi MS Word di Aspose.Words untuk .NET sangatlah mudah setelah Anda m
 ## FAQ
 
 ### Bisakah saya mengatur versi selain Word 2010?
- Ya, Anda dapat mengatur versi yang berbeda seperti Word 2007, Word 2013, dll., dengan mengubah`MsWordVersion` Properti.
+ Ya, Anda dapat mengatur versi yang berbeda seperti Word 2007, Word 2013, dll., dengan mengubah`MsWordVersion` milik.
 
 ### Apakah Aspose.Words kompatibel dengan .NET Core?
 Sangat! Aspose.Words mendukung .NET Framework, .NET Core, dan .NET 5+.

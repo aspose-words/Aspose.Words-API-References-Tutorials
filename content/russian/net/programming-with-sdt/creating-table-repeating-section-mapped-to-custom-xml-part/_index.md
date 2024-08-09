@@ -65,7 +65,7 @@ builder.EndTable();
 
 ## Шаг 4: Создайте повторяющийся раздел
 
- Создать`StructuredDocumentTag` (SDT) для повторяющегося раздела и сопоставьте его с данными XML:
+ Создайте`StructuredDocumentTag` (SDT) для повторяющегося раздела и сопоставьте его с данными XML:
 
 ```csharp
 StructuredDocumentTag repeatingSectionSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);

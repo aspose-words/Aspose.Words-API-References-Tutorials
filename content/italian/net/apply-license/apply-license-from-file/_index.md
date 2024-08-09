@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/apply-license/apply-license-from-file/
 ---
-## introduzione
+## Introduzione
 
 Ehilà! Se ti stai immergendo nel mondo di Aspose.Words per .NET, ti aspetta una sorpresa. Questa potente libreria ti consente di creare, modificare e convertire documenti Word a livello di codice. Ma prima di iniziare, è essenziale sapere come applicare una licenza a un file per sbloccarne tutto il potenziale. In questa guida ti guideremo attraverso il processo passo dopo passo, assicurandoti che tu possa configurare la tua licenza in modo rapido ed efficiente.
 
@@ -80,7 +80,7 @@ else
 
 ## Conclusione
 
-E il gioco è fatto! Hai applicato con successo una licenza da un file in Aspose.Words per .NET. Questo è un passaggio essenziale per sbloccare tutte le caratteristiche e le funzionalità che Aspose.Words ha da offrire. Con il tuo set di licenze, ora puoi creare e manipolare documenti Word senza alcuna limitazione.
+Ed ecco qua! Hai applicato con successo una licenza da un file in Aspose.Words per .NET. Questo è un passaggio essenziale per sbloccare tutte le caratteristiche e le funzionalità che Aspose.Words ha da offrire. Con il tuo set di licenze, ora puoi creare e manipolare documenti Word senza alcuna limitazione.
 
 ## Domande frequenti
 

@@ -20,7 +20,7 @@ Trước khi đi sâu vào, hãy đảm bảo rằng chúng ta có mọi thứ m
 3. IDE: Môi trường phát triển tích hợp như Visual Studio.
 4.  Giấy phép tạm thời: Bạn có thể lấy một cái[đây](https://purchase.aspose.com/temporary-license/).
 
-Đảm bảo bạn đã cài đặt Aspose.Words cho .NET và thiết lập môi trường phát triển của mình. Sẵn sàng? Bắt đầu nào!
+Đảm bảo bạn đã cài đặt Aspose.Words cho .NET và thiết lập môi trường phát triển của mình. Sẵn sàng? Hãy bắt đầu!
 
 ## Nhập không gian tên
 

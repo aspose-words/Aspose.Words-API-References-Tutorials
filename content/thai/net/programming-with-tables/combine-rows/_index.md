@@ -19,7 +19,7 @@ url: /th/net/programming-with-tables/combine-rows/
 2. สภาพแวดล้อมการพัฒนา: Visual Studio หรือ IDE ที่รองรับ .NET อื่นๆ
 3. ความรู้พื้นฐานของ C#: ความเข้าใจเกี่ยวกับ C# จะเป็นประโยชน์
 
- หากคุณยังไม่มี Aspose.Words สำหรับ .NET คุณสามารถรับ[ทดลองฟรี](https://releases.aspose.com/) หรือซื้อมัน[ที่นี่](https://purchase.aspose.com/buy) - หากมีคำถามใดๆ[ฟอรั่มการสนับสนุน](https://forum.aspose.com/c/words/8) เป็นสถานที่ที่ดีในการเริ่มต้น
+ หากคุณยังไม่มี Aspose.Words สำหรับ .NET คุณสามารถรับ[ทดลองใช้ฟรี](https://releases.aspose.com/) หรือซื้อมัน[ที่นี่](https://purchase.aspose.com/buy) - หากมีคำถามใดๆ[ฟอรั่มการสนับสนุน](https://forum.aspose.com/c/words/8) เป็นสถานที่ที่ดีในการเริ่มต้น
 
 ## นำเข้าเนมสเปซ
 
@@ -90,7 +90,7 @@ doc.Save(dataDir + "WorkingWithTables.CombineRows.docx");
 
 การรวมแถวจากหลายตารางเป็นหนึ่งเดียวสามารถช่วยลดความยุ่งยากในการประมวลผลเอกสารของคุณได้อย่างมาก ด้วย Aspose.Words สำหรับ .NET งานนี้จะไม่ซับซ้อนและมีประสิทธิภาพ ด้วยการทำตามคำแนะนำทีละขั้นตอนนี้ คุณสามารถผสานตารางและปรับปรุงเวิร์กโฟลว์ของคุณได้อย่างง่ายดาย
 
-หากท่านต้องการข้อมูลเพิ่มเติมหรือมีคำถามใดๆ[เอกสาร Aspose.Words](https://reference.aspose.com/words/net/) เป็นทรัพยากรที่ดีเยี่ยม คุณยังสามารถสำรวจตัวเลือกการซื้อได้อีกด้วย[ที่นี่](https://purchase.aspose.com/buy) หรือได้รับ[ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/) สำหรับการทดสอบ
+หากท่านต้องการข้อมูลเพิ่มเติมหรือมีคำถามใดๆ[เอกสาร Aspose.Words](https://reference.aspose.com/words/net/) เป็นทรัพยากรที่ดีเยี่ยม คุณยังสามารถสำรวจตัวเลือกการซื้อได้[ที่นี่](https://purchase.aspose.com/buy) หรือได้รับ[ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/) สำหรับการทดสอบ
 
 ## คำถามที่พบบ่อย
 

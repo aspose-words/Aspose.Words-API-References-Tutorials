@@ -17,7 +17,7 @@ Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
 1. Visual Studio: Visual Studio 2019 veya üstünü yükleyin.
 2. .NET Framework: .NET Framework 4.0 veya sonraki bir sürüme sahip olduğunuzdan emin olun.
-3.  Aspose.Words for .NET: Aspose.Words for .NET'i şu adresten indirip yükleyin:[İndirme: {link](https://releases.aspose.com/words/net/).
+3.  Aspose.Words for .NET: Aspose.Words for .NET'i şu adresten indirip yükleyin:[indirme bağlantısı](https://releases.aspose.com/words/net/).
 4. Temel C# Bilgisi: C# programlamaya aşinalık esastır.
 5.  Geçerli Bir Lisans: Alın[geçici lisans](https://purchase.aspose.com/temporary-license/) veya şuradan bir tane satın alın:[bağlantı satın al](https://purchase.aspose.com/buy).
 
@@ -115,7 +115,7 @@ doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 
 ## Çözüm
 
- Tebrikler! Aspose.Words for .NET'i kullanarak grafik veri etiketlerini başarıyla özelleştirdiniz. Bu kitaplık, Word belgelerinin programlı olarak işlenmesi için sağlam bir çözüm sunarak geliştiricilerin gelişmiş ve dinamik belge işleme uygulamaları oluşturmasını kolaylaştırır. Dalış[dokümantasyon](https://reference.aspose.com/words/net/) Daha fazla özellik ve yeteneği keşfetmek için.
+ Tebrikler! Aspose.Words for .NET'i kullanarak grafik veri etiketlerini başarıyla özelleştirdiniz. Bu kitaplık, Word belgelerinin programlı olarak işlenmesi için sağlam bir çözüm sunarak geliştiricilerin karmaşık ve dinamik belge işleme uygulamaları oluşturmasını kolaylaştırır. Dalış[dokümantasyon](https://reference.aspose.com/words/net/) Daha fazla özellik ve yeteneği keşfetmek için.
 
 ## SSS'ler
 
@@ -123,7 +123,7 @@ doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 Aspose.Words for .NET, geliştiricilerin Word belgelerini programlı olarak oluşturmasına, değiştirmesine ve dönüştürmesine olanak tanıyan güçlü bir belge işleme kitaplığıdır.
 
 ### Aspose.Words for .NET'i nasıl yüklerim?
- adresinden indirip kurabilirsiniz.[İndirme: {link](https://releases.aspose.com/words/net/). Sağlanan kurulum talimatlarını izleyin.
+ adresinden indirip kurabilirsiniz.[indirme bağlantısı](https://releases.aspose.com/words/net/). Sağlanan kurulum talimatlarını izleyin.
 
 ### Aspose.Words for .NET'i ücretsiz deneyebilir miyim?
  Evet, alabilirsiniz[ücretsiz deneme](https://releases.aspose.com/) veya bir[geçici lisans](https://purchase.aspose.com/temporary-license/)Ürünü değerlendirmek için.
@@ -132,4 +132,4 @@ Aspose.Words for .NET, geliştiricilerin Word belgelerini programlı olarak olu�
 Evet, Aspose.Words for .NET; .NET Core, .NET Standard ve .NET Framework ile uyumludur.
 
 ### Aspose.Words for .NET için nereden destek alabilirim?
- Ziyaret edebilirsiniz[destek Forumu](https://forum.aspose.com/c/words/8) Aspose topluluğu ve uzmanlarından yardım ve destek için.
+ Ziyaret edebilirsiniz[destek forumu](https://forum.aspose.com/c/words/8) Aspose topluluğu ve uzmanlarından yardım ve destek için.

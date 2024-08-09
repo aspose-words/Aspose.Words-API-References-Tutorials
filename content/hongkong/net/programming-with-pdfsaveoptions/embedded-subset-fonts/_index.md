@@ -65,7 +65,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf", saveOptions
 
 ## 結論
 
-現在你就擁有了！透過遵循這些簡單的步驟，您可以使用 Aspose.Words for .NET 僅嵌入必要的字體子集，從而有效地減少 PDF 檔案的大小。這不僅可以節省儲存空間，還可以確保更快的載入時間和更好的效能，特別是對於具有大量字體的文件。
+現在你就得到它了！透過遵循這些簡單的步驟，您可以使用 Aspose.Words for .NET 僅嵌入必要的字體子集，從而有效地減少 PDF 檔案的大小。這不僅可以節省儲存空間，還可以確保更快的載入時間和更好的效能，特別是對於具有大量字體的文件。
 
 ## 常見問題解答
 
@@ -73,7 +73,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf", saveOptions
 僅嵌入必要的字體子集可以顯著減小 PDF 文件大小，而不會影響文件的外觀和可讀性。
 
 ### 如果需要，我可以恢復嵌入完整字體嗎？
-是的你可以。只需設定`EmbedFullFonts`財產給`true`在裡面`PdfSaveOptions`.
+是的，你可以。只需設定`EmbedFullFonts`財產給`true`在`PdfSaveOptions`.
 
 ### Aspose.Words for .NET 支援其他 PDF 最佳化功能嗎？
 絕對地！ Aspose.Words for .NET 提供了一系列用於最佳化 PDF 的選項，包括圖片壓縮和刪除未使用的物件。

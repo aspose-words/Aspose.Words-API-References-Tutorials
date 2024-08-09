@@ -40,7 +40,7 @@ Với những không gian tên này được nhập, bạn đã sẵn sàng bắ
 LoadOptions loadOptions = new LoadOptions();
 ```
 
- Các`LoadOptions` class cho phép bạn tùy chỉnh cách tải tài liệu. Ở đây, chúng ta chỉ mới bắt đầu với nó.
+ các`LoadOptions` class cho phép bạn tùy chỉnh cách tải tài liệu. Ở đây, chúng ta chỉ mới bắt đầu với nó.
 
 ## Bước 2: Thêm tiếng Nhật làm ngôn ngữ soạn thảo
 
@@ -88,7 +88,7 @@ Mã này kiểm tra xem ngôn ngữ FarEast mặc định có được đặt th
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã thêm thành công tiếng Nhật làm ngôn ngữ chỉnh sửa vào tài liệu của mình bằng Aspose.Words for .NET. Nó giống như thêm một ngôn ngữ mới vào bản đồ của bạn, giúp bạn điều hướng và hiểu dễ dàng hơn. Cho dù bạn đang xử lý các tài liệu đa ngôn ngữ hay chỉ cần đảm bảo văn bản của bạn được định dạng chính xác, Aspose.Words đều có thể giúp bạn. Bây giờ, hãy tự tin khám phá thế giới tự động hóa tài liệu!
+Và bạn có nó! Bạn đã thêm thành công tiếng Nhật làm ngôn ngữ chỉnh sửa vào tài liệu của mình bằng Aspose.Words for .NET. Nó giống như thêm một ngôn ngữ mới vào bản đồ của bạn, giúp bạn điều hướng và hiểu dễ dàng hơn. Cho dù bạn đang xử lý các tài liệu đa ngôn ngữ hay chỉ cần đảm bảo văn bản của bạn được định dạng chính xác, Aspose.Words đều có thể giúp bạn. Bây giờ, hãy tự tin khám phá thế giới tự động hóa tài liệu!
 
 ## Câu hỏi thường gặp
 

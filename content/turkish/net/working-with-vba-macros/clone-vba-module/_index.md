@@ -105,9 +105,9 @@ Bu satır, yeni belgeyi belirttiğiniz dizine "WorkingWithVba.CloneVbaModule.doc
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir VBA modülünü bir Word belgesinden diğerine başarıyla kopyaladınız. Bu güçlü kitaplık, Word belgelerinde değişiklik yapmayı inanılmaz derecede kolaylaştırır ve ele aldığımız adımlar buzdağının sadece görünen kısmıdır. İster belge oluşturmayı otomatikleştiriyor, ister içeriği değiştiriyor, ister VBA projelerini yönetiyor olun, Aspose.Words yanınızdadır.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir VBA modülünü bir Word belgesinden diğerine başarıyla kopyaladınız. Bu güçlü kitaplık, Word belgelerinde değişiklik yapmayı inanılmaz derecede kolaylaştırır ve ele aldığımız adımlar buzdağının sadece görünen kısmıdır. İster belge oluşturmayı otomatikleştiriyor, ister içeriği değiştiriyor, ister VBA projelerini yönetiyor olun, Aspose.Words yanınızdadır.
 
- Daha fazla özelliği keşfetmeyle ilgileniyorsanız, şuraya göz atın:[API belgeleri](https://reference.aspose.com/words/net/) . Yardıma mı ihtiyacınız var? Ziyaret edin[destek Forumu](https://forum.aspose.com/c/words/8) yardım için.
+ Daha fazla özelliği keşfetmeyle ilgileniyorsanız, şuraya göz atın:[API belgeleri](https://reference.aspose.com/words/net/) . Yardıma mı ihtiyacınız var? Ziyaret edin[destek forumu](https://forum.aspose.com/c/words/8) yardım için.
 
 Keyifli kodlamalar ve unutmayın; pratik yapmak mükemmelleştirir!
 

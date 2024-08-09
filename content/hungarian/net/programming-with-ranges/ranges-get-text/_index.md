@@ -54,7 +54,7 @@ Töltse be a dokumentumot
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- Ebben a lépésben létrehoz egy új példányt a`Document` osztályt, és töltse be a Word dokumentumot. Győződjön meg arról, hogy a fájlnév és elérési út helyes.
+ Ebben a lépésben létrehoz egy új példányt a`Document` osztályt, és töltse be a Word dokumentumát. Győződjön meg arról, hogy a fájlnév és elérési út helyes.
 
 ## 3. lépés: Szöveg kibontása a dokumentumból
 
@@ -71,7 +71,7 @@ string text = doc.Range.Text;
 
 ## 4. lépés: Jelenítse meg a kivont szöveget
 
-Végül, annak ellenőrzésére, hogy a szöveg kibontása működött, megjelenítheti a kicsomagolt szöveget a konzolon. Itt van, hogyan:
+Végül, annak ellenőrzésére, hogy a szöveg kibontása működött, megjelenítheti a kicsomagolt szöveget a konzolon. Íme, hogyan:
 
 Jelenítse meg a szöveget
 

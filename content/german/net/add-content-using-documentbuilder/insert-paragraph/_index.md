@@ -56,7 +56,7 @@ paragraphFormat.KeepTogether = true;
 
 ## Schritt 3: Den Absatz einfügen
 
- Fügen Sie nun den gewünschten Inhalt hinzu mit dem`WriteLn` Methode von`DocumentBuilder`.
+ Fügen Sie nun den gewünschten Inhalt hinzu mit dem`WriteLn` Methode der`DocumentBuilder`.
 ```csharp
 builder.Writeln("A whole paragraph.");
 ```
@@ -87,4 +87,4 @@ Ja, Aspose.Words für .NET gewährleistet Kompatibilität mit verschiedenen Micr
 Ja, Sie können Ihre Dokumente mit Aspose.Words für .NET programmgesteuert verschlüsseln und sichern.
 
 ### Wo finde ich weitere Hilfe und Unterstützung für Aspose.Words für .NET?
- Besuche den[Aspose.Words-Forum](https://forum.aspose.com/c/words/8) für Community-Unterstützung und Diskussionen.
+ Besuchen Sie die[Aspose.Words-Forum](https://forum.aspose.com/c/words/8) für Community-Unterstützung und Diskussionen.

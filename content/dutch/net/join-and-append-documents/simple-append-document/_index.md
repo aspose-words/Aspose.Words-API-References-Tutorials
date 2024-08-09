@@ -9,7 +9,7 @@ url: /nl/net/join-and-append-documents/simple-append-document/
 ---
 ## Invoering
 
-Hallo daar! Heeft u ooit twee Word-documenten naadloos moeten samenvoegen? Nou, je hebt geluk! Vandaag duiken we in de wereld van Aspose.Words voor .NET, een krachtige bibliotheek waarmee je Word-documenten programmatisch kunt manipuleren. We zullen ons specifiek concentreren op hoe u het ene document in een paar eenvoudige stappen aan het andere kunt toevoegen. Of u nu rapporten maakt, delen van een project combineert of gewoon het documentbeheer stroomlijnt, deze handleiding heeft de oplossing voor u. Dus laten we beginnen!
+Hé daar! Heeft u ooit twee Word-documenten naadloos moeten samenvoegen? Nou, je hebt geluk! Vandaag duiken we in de wereld van Aspose.Words voor .NET, een krachtige bibliotheek waarmee je Word-documenten programmatisch kunt manipuleren. We zullen ons specifiek concentreren op hoe u het ene document in een paar eenvoudige stappen aan het andere kunt toevoegen. Of u nu rapporten maakt, delen van een project combineert of gewoon het documentbeheer stroomlijnt, deze handleiding heeft de oplossing voor u. Dus laten we aan de slag gaan!
 
 ## Vereisten
 

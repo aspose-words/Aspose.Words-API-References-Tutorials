@@ -26,9 +26,9 @@ Avec Aspose.Words pour Java, vous pouvez créer des documents dynamiques à la v
 
 En suivant ces didacticiels, vous apprendrez non seulement les bases de la manipulation des éléments de document, mais vous approfondirez également des sujets avancés tels que le style, la protection des documents, le publipostage, etc. Les connaissances acquises ici vous permettront d’aborder facilement les tâches de traitement de documents les plus complexes.
 
-## Commencer aujourd'hui
+## Commencez dès aujourd'hui
 
- Prêt à commencer? Rendez-vous sur[Aspose.Words pour la documentation de l'API Java](https://reference.aspose.com/words/java/) pour accéder à la documentation complète. Vous trouverez des explications détaillées, des exemples de code et des références API qui vous guideront dans tous les aspects de la manipulation des éléments du document.
+ Prêt à commencer ? Rendez-vous sur[Aspose.Words pour la documentation de l'API Java](https://reference.aspose.com/words/java/) pour accéder à la documentation complète. Vous trouverez des explications détaillées, des exemples de code et des références API qui vous guideront dans tous les aspects de la manipulation des éléments du document.
 
 En conclusion, maîtriser la manipulation des éléments d'un document à l'aide d'Aspose.Words for Java est une compétence précieuse pour tout développeur Java travaillant avec des documents. Ces tutoriels proposent un parcours clair et structuré pour vous aider à devenir compétent dans ce domaine. Alors, retroussez vos manches, plongez dans les didacticiels et libérez tout le potentiel d'Aspose.Words for Java dans vos projets de traitement de documents.
 
@@ -58,7 +58,7 @@ Apprenez à utiliser Markdown dans Aspose.Words pour Java avec ce didacticiel é
 ### [Utilisation de nœuds dans Aspose.Words pour Java](./using-nodes/)
 Apprenez à manipuler les nœuds dans Aspose.Words pour Java avec ce didacticiel étape par étape. Libérez la puissance de traitement des documents.
 ### [Utilisation d'objets OLE et de contrôles ActiveX dans Aspose.Words pour Java](./using-ole-objects-and-activex/)
-Apprenez à utiliser les objets OLE et les contrôles ActiveX dans Aspose.Words pour Java. Créez facilement des documents interactifs. Commencez maintenant!
+Apprenez à utiliser les objets OLE et les contrôles ActiveX dans Aspose.Words pour Java. Créez facilement des documents interactifs. Commencez maintenant !
 ### [Utilisation des révisions dans Aspose.Words pour Java](./using-revisions/)
 Apprenez à utiliser efficacement les contrôles de révision d'Aspose.Words pour Java. Guide étape par étape pour les développeurs. Optimisez votre gestion documentaire.
 ### [Utilisation de sections dans Aspose.Words pour Java](./using-sections/)

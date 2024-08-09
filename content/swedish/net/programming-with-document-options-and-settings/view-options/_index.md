@@ -9,7 +9,7 @@ url: /sv/net/programming-with-document-options-and-settings/view-options/
 ---
 ## Introduktion
 
-Hej där, medkodare! Har du någonsin undrat hur du ändrar hur du visar dina Word-dokument med Aspose.Words för .NET? Oavsett om du vill byta till en annan vytyp eller zooma in och ut för att få den perfekta looken på ditt dokument, har du kommit till rätt plats. Idag dyker vi in i världen av Aspose.Words för .NET, och fokuserar specifikt på hur man manipulerar visningsalternativ. Vi delar upp allt i enkla, lättsmälta steg, så att du blir en expert på nolltid. Redo? Låt oss börja!
+Hej där, medkodare! Har du någonsin undrat hur du ändrar hur du visar dina Word-dokument med Aspose.Words för .NET? Oavsett om du vill byta till en annan vytyp eller zooma in och ut för att få den perfekta looken på ditt dokument, har du kommit till rätt plats. Idag dyker vi in i världen av Aspose.Words för .NET, och fokuserar specifikt på hur man manipulerar visningsalternativ. Vi delar upp allt i enkla, lättsmälta steg, så att du blir en expert på nolltid. Redo? Låt oss komma igång!
 
 ## Förutsättningar
 

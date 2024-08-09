@@ -43,7 +43,7 @@ pageSetup.setDifferentFirstPageHeaderFooter(true);
 pageSetup.setHeaderDistance(20.0);
 ```
 
-## 5. 首页页眉/页脚不同
+## 5.首页页眉/页脚不同
 
 Aspose.Words 允许您为文档的第一页设置不同的页眉和页脚。使用`pageSetup.setDifferentFirstPageHeaderFooter(true);`启用此功能。
 

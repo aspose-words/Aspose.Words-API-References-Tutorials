@@ -82,7 +82,7 @@ Bây giờ, hãy chạy mã của bạn và xem nó hoạt động như thế n�
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn vừa thành thạo nghệ thuật tìm dấu phân cách kiểu đoạn trong tài liệu Word bằng Aspose.Words cho .NET. Đó không phải là khoa học tên lửa, nhưng nó chắc chắn giống như phép thuật, phải không? Bằng cách chia nhỏ nhiệm vụ thành các bước đơn giản, bạn đã mở khóa một công cụ mạnh mẽ để quản lý tài liệu Word theo chương trình.
+Và bạn có nó! Bạn vừa thành thạo nghệ thuật tìm dấu phân cách kiểu đoạn trong tài liệu Word bằng Aspose.Words cho .NET. Đó không phải là khoa học tên lửa, nhưng nó chắc chắn giống như phép thuật, phải không? Bằng cách chia nhỏ nhiệm vụ thành các bước đơn giản, bạn đã mở khóa một công cụ mạnh mẽ để quản lý tài liệu Word theo chương trình.
 
 ## Câu hỏi thường gặp
 

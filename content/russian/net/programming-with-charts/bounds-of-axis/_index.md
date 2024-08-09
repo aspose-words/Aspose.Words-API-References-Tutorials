@@ -100,7 +100,7 @@ chart.AxisY.Scaling.Maximum = new AxisBound(6);
 doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 ```
 
-Вот и все! Вы успешно создали документ с диаграммой, используя Aspose.Words для .NET. 
+И все! Вы успешно создали документ с диаграммой, используя Aspose.Words для .NET. 
 
 ## Заключение
 
@@ -121,4 +121,4 @@ Aspose.Words for .NET — это библиотека, которая позво
  Подробная документация доступна[здесь](https://reference.aspose.com/words/net/).
 
 ### Как я могу получить поддержку Aspose.Words?
- Вы можете посетить[форум поддержки](https://forum.aspose.com/c/words/8) для оказания помощи.
+ Вы можете посетить[форум поддержки](https://forum.aspose.com/c/words/8) за помощь.

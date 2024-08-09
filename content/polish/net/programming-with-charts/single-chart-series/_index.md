@@ -9,7 +9,7 @@ url: /pl/net/programming-with-charts/single-chart-series/
 ---
 ## Wstęp
 
-No hej! Czy kiedykolwiek chciałeś urozmaicić swoje dokumenty Word za pomocą niesamowitych wykresów? Cóż, jesteś we właściwym miejscu! Dzisiaj zagłębiamy się w świat Aspose.Words dla .NET, aby dostosować pojedyncze serie wykresów na wykresie. Niezależnie od tego, czy jesteś doświadczonym profesjonalistą, czy dopiero zaczynasz, ten przewodnik przeprowadzi Cię krok po kroku przez cały proces. Zatem zapnij pasy i przejdźmy do tworzenia wykresów!
+Hej tam! Czy kiedykolwiek chciałeś urozmaicić swoje dokumenty Word za pomocą niesamowitych wykresów? Cóż, jesteś we właściwym miejscu! Dzisiaj zagłębiamy się w świat Aspose.Words dla .NET, aby dostosować pojedyncze serie wykresów na wykresie. Niezależnie od tego, czy jesteś doświadczonym profesjonalistą, czy dopiero zaczynasz, ten przewodnik przeprowadzi Cię krok po kroku przez cały proces. Zatem zapnij pasy i przejdźmy do tworzenia wykresów!
 
 ## Warunki wstępne
 

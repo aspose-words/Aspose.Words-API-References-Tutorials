@@ -64,7 +64,7 @@ Hifenização é o processo de adicionar hífens no final das linhas para melhor
 
 ### 2. Posso usar a hifenização em vários idiomas?
 
-Sim você pode. Aspose.Words for Java permite registrar e carregar dicionários de hifenização para diferentes idiomas.
+Sim, você pode. Aspose.Words for Java permite registrar e carregar dicionários de hifenização para diferentes idiomas.
 
 ### 3. O Aspose.Words for Java é fácil de integrar ao meu projeto Java?
 

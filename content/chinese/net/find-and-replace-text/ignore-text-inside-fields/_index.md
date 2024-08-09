@@ -39,7 +39,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 步骤 2：插入带文本的字段
 
-使用`InsertField`的方法`DocumentBuilder`添加包含文本的字段：
+使用`InsertField`方法`DocumentBuilder`添加包含文本的字段：
 ```csharp
 builder.InsertField("INCLUDETEXT", "Text in field");
 ```

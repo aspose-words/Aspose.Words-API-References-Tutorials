@@ -10,7 +10,7 @@ url: /tr/net/working-with-section/copy-section/
 
 ## giriiş
 
-Merhaba Kelime tutkunları! 📄 Hiç bir bölümü bir Word belgesinden diğerine kopyalamak zorunda kaldınız mı, ancak kendinizi tekrarlayan manuel çaba nedeniyle çıkmaza girmiş halde buldunuz mu? Artık endişelenmeyin! Aspose.Words for .NET ile bu görevi kolaylıkla otomatikleştirebilirsiniz. Bu kılavuz, belgeler arasındaki bölümlerin kopyalanması sürecinde size adım adım yol gösterecek ve belge yönetimi iş akışınızı kolaylaştırabilmenizi sağlayacaktır. Dalmaya hazır mısınız? Başlayalım!
+Merhaba Kelime tutkunları! 📄 Hiç bir bölümü bir Word belgesinden diğerine kopyalamak zorunda kaldınız mı, ancak kendinizi tekrarlayan manuel çaba nedeniyle çıkmaza girmiş halde buldunuz mu? Artık endişelenmeyin! Aspose.Words for .NET ile bu görevi kolaylıkla otomatikleştirebilirsiniz. Bu kılavuz, belgeler arasındaki bölümlerin kopyalanması sürecinde size adım adım yol gösterecek ve belge yönetimi iş akışınızı kolaylaştırabilmenizi sağlayacaktır. Dalmaya hazır mısınız? Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -91,7 +91,7 @@ dstDoc.Save(dataDir + "WorkingWithSection.CopySection.docx");
 
 ## Çözüm
 
-İşte buyur! 🎉 Aspose.Words for .NET kullanarak bir bölümü bir Word belgesinden diğerine başarıyla kopyaladınız. Bu güçlü özellik, özellikle karmaşık belgelerle veya tekrarlanan görevlerle uğraşırken, zamandan ve emekten büyük miktarda tasarruf etmenizi sağlayabilir. Unutmayın, Aspose.Words'te uzmanlaşmanın anahtarı pratik yapmak ve farklı özellikleri denemekten geçer. Mutlu kodlama!
+Ve işte karşınızda! 🎉 Aspose.Words for .NET kullanarak bir bölümü bir Word belgesinden diğerine başarıyla kopyaladınız. Bu güçlü özellik, özellikle karmaşık belgelerle veya tekrarlanan görevlerle uğraşırken, zamandan ve emekten büyük miktarda tasarruf etmenizi sağlayabilir. Unutmayın, Aspose.Words'te uzmanlaşmanın anahtarı pratik yapmak ve farklı özellikleri denemekten geçer. Mutlu kodlama!
 
 ## SSS
 
@@ -109,7 +109,7 @@ Evet, Aspose.Words, DOC, DOCX, RTF ve daha fazlası dahil olmak üzere çeşitli
 
 ### Aspose.Words'te daha fazla kaynağı nerede bulabilirim?
 
- Daha fazla bilgi için şu adresi ziyaret edebilirsiniz:[Aspose.Words API belgeleri](https://reference.aspose.com/words/net/) ya da[destek Forumu](https://forum.aspose.com/c/words/8) Yardım ve tartışmalar için.
+ Daha fazla bilgi için şu adresi ziyaret edebilirsiniz:[Aspose.Words API belgeleri](https://reference.aspose.com/words/net/) veya[destek forumu](https://forum.aspose.com/c/words/8) Yardım ve tartışmalar için.
 
 ### Aspose.Words for .NET'i ücretsiz deneyebilir miyim?
 

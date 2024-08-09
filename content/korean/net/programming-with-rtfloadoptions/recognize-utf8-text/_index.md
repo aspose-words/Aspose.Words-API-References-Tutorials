@@ -15,7 +15,7 @@ url: /ko/net/programming-with-rtfloadoptions/recognize-utf8-text/
 
 재미있는 부분으로 넘어가기 전에 필요한 모든 것이 갖추어져 있는지 확인하세요.
 
-1.  .NET 라이브러리용 Aspose.Words: 다음을 수행할 수 있습니다.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/) . 아직 구매하지 않으셨다면 얼른 구매해보세요[무료 시험판](https://releases.aspose.com/) 또는[여기서 구매하세요](https://purchase.aspose.com/buy).
+1.  .NET 라이브러리용 Aspose.Words: 다음을 수행할 수 있습니다.[여기에서 다운로드하세요](https://releases.aspose.com/words/net/) . 아직 구매하지 않으셨다면 얼른 구매해보세요[무료 평가판](https://releases.aspose.com/) 또는[여기서 구매하세요](https://purchase.aspose.com/buy).
 2. 개발 환경: Visual Studio 또는 .NET을 지원하는 기타 IDE.
 3. C#에 대한 기본 지식: 계속 진행하려면 C#에 익숙해야 합니다.
 

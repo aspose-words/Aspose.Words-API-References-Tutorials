@@ -8,7 +8,7 @@ weight: 11
 url: /zh-hant/java/table-processing/
 ---
 
-Aspose.Words for Java 提供了一套全面的表格處理 API，使開發人員能夠有效率地建立、操作 Word 文件中的表格並設定其格式。透過 Aspose.Words，開發人員可以輕鬆新增或刪除行和列、合併和分割儲存格、設定儲存格屬性以及使用郵件合併動態填入資料表。
+Aspose.Words for Java 提供了一套全面的表格處理 API，使開發人員能夠有效地建立、操作 Word 文件中的表格並設定其格式。透過 Aspose.Words，開發人員可以輕鬆新增或刪除行和列、合併和分割儲存格、設定儲存格屬性以及使用郵件合併動態填入資料表。
 
 Aspose.Words for Java 表處理教程提供了有關表處理各個方面（從基礎主題到高級主題）的深入指導。這些教學涵蓋了從建立簡單表格到使用郵件合併動態填充資料表的所有內容。
 

@@ -25,6 +25,6 @@ url: /zh-hant/net/working-with-section/
 | [克隆部分](./clone-section/) | 了解如何使用 Aspose.Words for .NET 複製 Word 文件中的部分。本指南涵蓋了高效能文件操作的逐步說明。 |
 | [複製部分](./copy-section/) | 了解如何使用 Aspose.Words for .NET 在 Word 文件之間複製部分。本指南涵蓋了高效能文件管理的逐步說明。 |
 | [刪除頁首頁尾內容](./delete-header-footer-content/) | 了解如何使用 Aspose.Words for .NET 刪除 Word 文件中的頁首和頁尾。本逐步指南可確保高效率的文件管理。  |
-| [刪除部分內容](./delete-section-content/) | 了解如何使用 Aspose.Words for .NET 刪除 Word 文件中的節內容。本逐步指南可確保高效率的文件管理。 |
+| [刪除部分內容](./delete-section-content/) | 了解如何使用 Aspose.Words for .NET 刪除 Word 文件中的章節內容。本逐步指南可確保高效率的文件管理。 |
 | [修改所有部分中的Word頁面設置](./modify-page-setup-in-all-sections/) | 在本教學中，了解如何使用 Aspose.Words for .NET 修改 Word 文件所有部分中的 Word 頁面設定。 |
 | [按索引存取部分](./sections-access-by-index/) | 了解如何使用 Aspose.Words for .NET 存取和操作 Word 文件中的部分。本逐步指南可確保高效率的文件管理。 |

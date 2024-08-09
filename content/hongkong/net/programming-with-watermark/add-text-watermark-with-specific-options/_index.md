@@ -97,7 +97,7 @@ doc.Save(dataDir + "WorkWithWatermark.AddTextWatermarkWithSpecificOptions.docx")
 
 ### 如何更改浮水印的顏色？
 
-您可以透過設定來變更浮水印的顏色`Color`財產在`TextWatermarkOptions`去任何`System.Drawing.Color`價值。
+您可以透過設定來變更浮水印的顏色`Color`財產在`TextWatermarkOptions`對任何`System.Drawing.Color`價值。
 
 ### 是否可以在文件中新增多個浮水印？
 

@@ -33,10 +33,10 @@ Très bien, passons à la partie amusante ! Nous allons décomposer le processu
 
 ## Étape 1 : Configurez votre projet
 
-Avant de plonger dans le code, vous devez configurer votre projet. Voici comment:
+Avant de plonger dans le code, vous devez configurer votre projet. Voici comment procéder :
 
 1. Ouvrez Visual Studio : commencez par lancer Visual Studio et créez un nouveau projet C#.
-2.  Installez Aspose.Words : utilisez NuGet Package Manager pour installer Aspose.Words pour .NET. Tu peux le trouver[ici](https://releases.aspose.com/words/net/).
+2.  Installez Aspose.Words : utilisez NuGet Package Manager pour installer Aspose.Words pour .NET. Vous pouvez le trouver[ici](https://releases.aspose.com/words/net/).
 
 ```shell
 Install-Package Aspose.Words
@@ -74,7 +74,7 @@ Une fois notre PDF chargé, il est temps d'effectuer la conversion. Cette étape
 
 ## Conclusion
 
-Et voila! Convertir un PDF en JPEG à l’aide d’Aspose.Words pour .NET est simple comme bonjour. Avec seulement quelques lignes de code, vous pouvez transformer vos documents et ouvrir un monde de possibilités. Que vous soyez un développeur cherchant à rationaliser votre flux de travail ou simplement quelqu'un qui aime bricoler du code, Aspose.Words est là pour vous.
+Et voilà ! Convertir un PDF en JPEG à l’aide d’Aspose.Words pour .NET est simple comme bonjour. Avec seulement quelques lignes de code, vous pouvez transformer vos documents et ouvrir un monde de possibilités. Que vous soyez un développeur cherchant à rationaliser votre flux de travail ou simplement quelqu'un qui aime bricoler du code, Aspose.Words est là pour vous.
 
 ## FAQ
 
@@ -82,13 +82,13 @@ Et voila! Convertir un PDF en JPEG à l’aide d’Aspose.Words pour .NET est si
 Absolument! Vous pouvez parcourir un répertoire de fichiers PDF et convertir chacun d'eux en JPEG.
 
 ### Aspose.Words prend-il en charge d’autres formats d’image ?
-Oui! Vous pouvez enregistrer vos PDF au format PNG, BMP, etc.
+Oui, c'est le cas ! Vous pouvez enregistrer vos PDF au format PNG, BMP, etc.
 
 ### Aspose.Words est-il compatible avec .NET Core ?
-En effet, ça l'est. Aspose.Words prend en charge à la fois .NET Framework et .NET Core.
+En effet, c’est le cas. Aspose.Words prend en charge à la fois .NET Framework et .NET Core.
 
 ### Ai-je besoin d’une licence pour utiliser Aspose.Words ?
  Vous pouvez obtenir un essai gratuit[ici](https://releases.aspose.com/) ou acheter une licence[ici](https://purchase.aspose.com/buy).
 
 ### Où puis-je trouver plus de didacticiels sur Aspose.Words ?
- Vérifiez[Documentation](https://reference.aspose.com/words/net/) pour une multitude de tutoriels et de guides.
+ Découvrez le[documentation](https://reference.aspose.com/words/net/) pour une multitude de tutoriels et de guides.

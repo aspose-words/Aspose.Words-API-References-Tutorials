@@ -49,7 +49,7 @@ Kezdjük egy meglévő Word dokumentum betöltésével. Ez lehet bármely kézn�
 Document doc = new Document("path/to/your/document.docx");
 ```
 
- Ez a kódsor betölti a dokumentumot a`doc`tárgy. Képzelje el úgy, mintha egy Word-fájlt egy programmal nyitna meg, nem pedig kézzel.
+ Ez a kódsor betölti a dokumentumot a`doc`objektum. Képzelje el úgy, mintha egy Word-fájlt egy programmal nyitna meg, nem pedig kézzel.
 
 ## 3. lépés: Szöveg cseréje a dokumentumban
 
@@ -78,7 +78,7 @@ doc.Range.Replace(oldText, newText, new FindReplaceOptions());
 
 ### Cserélje ki a vezérlőkaraktereket
 
- Itt van a cserélendő kód`\r` val vel`\r\n`:
+ Itt van a cserélendő kód`\r` -vel`\r\n`:
 
 ```csharp
 const string text = "test\r";
@@ -99,7 +99,7 @@ doc.Save("path/to/your/modified/document.docx");
 
 ## Következtetés
 
-Gratula! Megtette az első lépéseit a dokumentumautomatizálás világába az Aspose.Words for .NET segítségével. A projekt beállításától a szöveg cseréjéig és a vezérlőkarakterek kezeléséig most már rendelkezik az alapokkal, amelyekkel hatékonyabbá teheti dokumentumkezelését. A lehetőségek végtelenek az Aspose.Words segítségével, ezért folytassa a kísérletezést, és nézze meg, mit automatizálhat még!
+Gratulálunk! Megtette az első lépéseit a dokumentumautomatizálás világába az Aspose.Words for .NET segítségével. A projekt beállításától a szöveg cseréjéig és a vezérlőkarakterek kezeléséig most már rendelkezik az alapokkal, amelyekkel hatékonyabbá teheti dokumentumkezelését. A lehetőségek végtelenek az Aspose.Words segítségével, ezért folytassa a kísérletezést, és nézze meg, mit automatizálhat még!
 
 ## GYIK
 
@@ -116,4 +116,4 @@ Számos formátumot támogat, beleértve a .doc, .docx, .pdf, .html és egyebeke
 A C# alapismerete hasznos, de a könyvtárat úgy tervezték, hogy minden szinten felhasználóbarát legyen a fejlesztők számára.
 
 ### Hol találhatok további információt vagy kaphatok támogatást?
- Nézze meg a[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/) vagy látogassa meg a[támogatói fórum](https://forum.aspose.com/c/words/8).
+ Nézze meg a[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/) vagy látogassa meg a[támogatási fórum](https://forum.aspose.com/c/words/8).

@@ -109,7 +109,7 @@ Una vez que esté al final del marcador, puede insertar texto o cualquier otro c
 builder.Writeln("This is a bookmark.");
 ```
 
-¡Y eso es! Se movió con éxito al final de un marcador e insertó texto allí.
+¡Y eso es todo! Se movió con éxito al final de un marcador e insertó texto allí.
 
 ## Paso 6: guarde el documento
 
@@ -120,11 +120,11 @@ Finalmente, no olvides guardar los cambios:
 doc.Save(dataDir + "UpdatedBookmarks.docx");
 ```
 
- Ahora puede abrir el documento actualizado y ver el texto "Esto es un marcador". justo después de`MyBookmark1`.
+ Ahora puede abrir el documento actualizado y ver el texto "Esto es un marcador". justo después`MyBookmark1`.
 
 ## Conclusión
 
-¡Ahí tienes! Acaba de aprender cómo pasar al final de un marcador en un documento de Word usando Aspose.Words para .NET. Esta poderosa característica puede ahorrarle mucho tiempo y esfuerzo, haciendo que sus tareas de procesamiento de documentos sean mucho más eficientes. Recuerde, la práctica hace la perfección. Así que sigue experimentando con diferentes marcadores y estructuras de documentos para dominar esta habilidad.
+¡Ahí lo tienes! Acaba de aprender cómo pasar al final de un marcador en un documento de Word usando Aspose.Words para .NET. Esta poderosa característica puede ahorrarle mucho tiempo y esfuerzo, haciendo que sus tareas de procesamiento de documentos sean mucho más eficientes. Recuerde, la práctica hace la perfección. Así que sigue experimentando con diferentes marcadores y estructuras de documentos para dominar esta habilidad.
 
 ## Preguntas frecuentes
 
@@ -138,7 +138,7 @@ doc.Save(dataDir + "UpdatedBookmarks.docx");
 
 ### 3. ¿Puedo insertar otro tipo de contenido al final del marcador?
 
- Sí, DocumentBuilder le permite insertar varios tipos de contenido como tablas, imágenes y más. Comprobar el[documentación](https://reference.aspose.com/words/net/) para más detalles.
+ Sí, DocumentBuilder le permite insertar varios tipos de contenido como tablas, imágenes y más. Compruebe el[documentación](https://reference.aspose.com/words/net/) para más detalles.
 
 ### 4. ¿Cómo obtengo una licencia temporal para Aspose.Words?
 

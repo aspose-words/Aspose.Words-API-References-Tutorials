@@ -74,7 +74,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Adım 5: Kaynak Belgeyi Ekleyin
 
- Sihir yapılan yer burasıdır! Kaynak belgeyi hedef belgeye aşağıdaki komutu kullanarak ekleyeceğiz:`AppendDocument` yöntem.
+ Sihrin gerçekleştiği yer burası! Kaynak belgeyi hedef belgeye aşağıdaki komutu kullanarak ekleyeceğiz:`AppendDocument` Yöntem.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -96,7 +96,7 @@ Bu kod satırı, birleştirilmiş belgeyi yeni bir adla kaydederek orijinal dosy
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesini diğerine başarıyla eklediniz. Bu basit yöntem, özellikle büyük belgelerle veya karmaşık biçimlendirmelerle uğraşırken, zamandan ve emekten tasarruf etmenizi sağlayabilir. Öyleyse devam edin ve projelerinizde bunu deneyin. Mutlu kodlama!
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesini diğerine başarıyla eklediniz. Bu basit yöntem, özellikle büyük belgelerle veya karmaşık biçimlendirmelerle uğraşırken, zamandan ve emekten tasarruf etmenizi sağlayabilir. Öyleyse devam edin ve projelerinizde bunu deneyin. Mutlu kodlama!
 
 ## SSS'ler
 
@@ -106,7 +106,7 @@ Bu kod satırı, birleştirilmiş belgeyi yeni bir adla kaydederek orijinal dosy
 
 ### Belgelerimin formatı farklıysa ne olur?
 
- kullanarak biçimlendirmenin nasıl işleneceğini kontrol edebilirsiniz.`ImportFormatMode` parametre. Seçenekler şunları içerir:`KeepSourceFormatting`, `UseDestinationStyles`, ve dahası.
+ kullanarak biçimlendirmenin nasıl işleneceğini kontrol edebilirsiniz.`ImportFormatMode` parametre. Seçenekler şunları içerir:`KeepSourceFormatting`, `UseDestinationStyles`ve daha fazlası.
 
 ### Aspose.Words'ün kullanımı ücretsiz mi?
 

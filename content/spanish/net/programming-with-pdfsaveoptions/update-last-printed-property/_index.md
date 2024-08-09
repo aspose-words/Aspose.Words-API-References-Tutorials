@@ -69,7 +69,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.UpdateIfLastPrinted.pdf", saveOpti
 
 ## Conclusión
 
-¡Y ahí lo tienes! Siguiendo estos pasos, puede actualizar fácilmente la última propiedad impresa en un documento PDF usando Aspose.Words para .NET. Este método garantiza que su proceso de gestión de documentos siga siendo eficiente y actualizado. Pruébelo y vea cómo simplifica su flujo de trabajo.
+¡Y ahí lo tienes! Si sigue estos pasos, puede actualizar fácilmente la última propiedad impresa en un documento PDF utilizando Aspose.Words para .NET. Este método garantiza que su proceso de gestión de documentos siga siendo eficiente y actualizado. Pruébelo y vea cómo simplifica su flujo de trabajo.
 
 ## Preguntas frecuentes
 

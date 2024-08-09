@@ -14,7 +14,7 @@ Java ile belge biçimlendirme becerilerinizi geliştirmek mi istiyorsunuz? Bu ka
 
 Belge biçimlendirme, profesyonel görünümlü belgeler oluşturmada çok önemli bir rol oynar. Üstbilgiler ve altbilgiler içeriğinize bağlam ve yapı sağlayan temel bileşenlerdir. Belge işleme için güçlü bir API olan Aspose.Words for Java ile üstbilgileri ve altbilgileri özel gereksinimlerinizi karşılayacak şekilde kolayca özelleştirebilirsiniz.
 
-Bu kılavuzda Aspose.Words for Java'yı kullanarak belge üstbilgilerini ve altbilgilerini şekillendirmenin çeşitli yönlerini inceleyeceğiz. Temel biçimlendirmeden gelişmiş tekniklere kadar her şeyi ele alacağız ve her adımı açıklamak için size pratik kod örnekleri sunacağız. Bu makalenin sonunda gösterişli ve görsel olarak çekici belgeler oluşturma bilgi ve becerilerine sahip olacaksınız.
+Bu kılavuzda Aspose.Words for Java'yı kullanarak belge üstbilgilerini ve altbilgilerini şekillendirmenin çeşitli yönlerini inceleyeceğiz. Temel biçimlendirmeden gelişmiş tekniklere kadar her şeyi ele alacağız ve her adımı açıklamak için size pratik kod örnekleri sunacağız. Bu makalenin sonunda gösterişli ve görsel olarak çekici belgeler oluşturacak bilgi ve becerilere sahip olacaksınız.
 
 ## Üstbilgileri ve Altbilgileri Şekillendirme
 
@@ -66,7 +66,7 @@ image.getImageData().setImage("path/to/your/image.png");
 header.appendChild(image);
 ```
 
-#### Sayfa numaraları:
+#### Sayfa Numaraları:
 
 Sayfa numaraları eklemek yaygın bir gerekliliktir. Aspose.Words for Java, sayfa numaralarını dinamik olarak eklemenin kolay bir yolunu sunar:
 
@@ -99,11 +99,11 @@ Evet, tek ve çift sayfalar için farklı üstbilgi ve altbilgilere sahip olabil
 
 ### Üstbilgilere veya altbilgilere köprüler eklemek mümkün müdür?
 
- Kesinlikle! Aspose.Words for Java'yı kullanarak üstbilgi veya altbilgilerin içine köprüler ekleyebilirsiniz. Kullan`Hyperlink` Köprüler oluşturmak ve bunları üst bilgi veya alt bilgi içeriğinize eklemek için sınıfı kullanın.
+ Kesinlikle! Aspose.Words for Java'yı kullanarak üstbilgi veya altbilgilerin içine köprüler ekleyebilirsiniz. Kullanın`Hyperlink` Köprüler oluşturmak ve bunları üst bilgi veya alt bilgi içeriğinize eklemek için sınıfı kullanın.
 
 ### Üstbilgi veya altbilgi içeriğini sola veya sağa nasıl hizalayabilirim?
 
- Üst bilgi veya alt bilgi içeriğini sola veya sağa hizalamak için paragraf hizalamasını aşağıdaki düğmeyi kullanarak ayarlayabilirsiniz:`ParagraphAlignment` Sıralama. Örneğin içeriği sağa hizalamak için:
+ Üst bilgi veya alt bilgi içeriğini sola veya sağa hizalamak için paragraf hizalamasını aşağıdaki düğmeyi kullanarak ayarlayabilirsiniz:`ParagraphAlignment` numaralandırma. Örneğin içeriği sağa hizalamak için:
 
 ```java
 header.getFirstParagraph().getParagraphFormat().setAlignment(ParagraphAlignment.RIGHT);
@@ -111,7 +111,7 @@ header.getFirstParagraph().getParagraphFormat().setAlignment(ParagraphAlignment.
 
 ### Üstbilgilere veya altbilgilere belge başlıkları gibi özel alanlar ekleyebilir miyim?
 
-Evet, üstbilgilere veya altbilgilere özel alanlar ekleyebilirsiniz. Oluşturmak`Run` öğesini seçin ve istediğiniz metni sağlayarak üstbilgi veya altbilgi içeriğine ekleyin. Biçimlendirmeyi gerektiği gibi özelleştirin.
+Evet, üstbilgilere veya altbilgilere özel alanlar ekleyebilirsiniz. Bir oluştur`Run` öğesini seçin ve istediğiniz metni sağlayarak üstbilgi veya altbilgi içeriğine ekleyin. Biçimlendirmeyi gerektiği gibi özelleştirin.
 
 ### Aspose.Words for Java farklı belge formatlarıyla uyumlu mu?
 

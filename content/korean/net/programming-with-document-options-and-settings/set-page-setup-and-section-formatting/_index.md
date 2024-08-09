@@ -15,7 +15,7 @@ url: /ko/net/programming-with-document-options-and-settings/set-page-setup-and-s
 
 코드를 살펴보기 전에 시작하는 데 필요한 사항을 살펴보겠습니다.
 
--  .NET용 Aspose.Words: .NET용 Aspose.Words가 설치되어 있어야 합니다. 당신은 할 수 있습니다[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+-  .NET용 Aspose.Words: .NET용 Aspose.Words가 설치되어 있어야 합니다. 당신은 할 수 있습니다[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 - 개발 환경: 모든 .NET 호환 IDE(예: Visual Studio).
 - C#에 대한 기본 지식: C# 프로그래밍에 대한 지식이 필수적입니다.
 

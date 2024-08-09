@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/find-and-replace-text/replace-text-in-footer/
 ---
-## introduzione
+## Introduzione
 
 Ehilà! Sei pronto per tuffarti nel mondo della manipolazione dei documenti utilizzando Aspose.Words per .NET? Oggi affronteremo un compito interessante: sostituire il testo nel piè di pagina di un documento Word. Questo tutorial ti guiderà attraverso l'intero processo passo dopo passo. Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato, troverai questa guida utile e facile da seguire. Quindi, iniziamo il nostro viaggio per padroneggiare la sostituzione del testo nei piè di pagina con Aspose.Words per .NET!
 
@@ -64,7 +64,7 @@ FindReplaceOptions options = new FindReplaceOptions
 };
 ```
 
- In questo esempio,`MatchCase` è impostato per`false` ignorare le differenze tra maiuscole e minuscole e`FindWholeWordsOnly` è impostato per`false` per consentire corrispondenze parziali all'interno delle parole.
+ In questo esempio,`MatchCase` è impostato su`false` ignorare le differenze tra maiuscole e minuscole e`FindWholeWordsOnly` è impostato su`false` per consentire corrispondenze parziali all'interno delle parole.
 
 ## Passaggio 4: sostituisci il testo nel piè di pagina
 

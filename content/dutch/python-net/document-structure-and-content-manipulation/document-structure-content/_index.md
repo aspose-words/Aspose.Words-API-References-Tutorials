@@ -24,7 +24,7 @@ pip install aspose-words
 
 ## Word-documenten laden en maken
 
-kunt een bestaand Word-document laden of een geheel nieuw document maken. Hier is hoe:
+kunt een bestaand Word-document laden of een geheel nieuw document maken. Hier ziet u hoe:
 
 ```python
 from aspose.words import Document

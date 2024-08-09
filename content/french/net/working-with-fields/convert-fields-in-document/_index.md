@@ -72,12 +72,12 @@ doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInDocument.docx");
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez converti avec succès les champs d'un document Word à l'aide d'Aspose.Words pour .NET. En suivant ce guide, vous disposez désormais des connaissances nécessaires pour manipuler et transformer les champs de vos documents, améliorant ainsi vos capacités de traitement de documents.
+Félicitations! Vous avez converti avec succès les champs d'un document Word à l'aide d'Aspose.Words pour .NET. En suivant ce guide, vous disposez désormais des connaissances nécessaires pour manipuler et transformer les champs de vos documents, améliorant ainsi vos capacités de traitement de documents.
 
 ## FAQ
 
 ### Puis-je convertir d’autres types de champs à l’aide d’Aspose.Words pour .NET ?
- Oui, Aspose.Words for .NET vous permet de manipuler différents types de champs, pas seulement les champs IF. Vous pouvez explorer le[Documentation](https://reference.aspose.com/words/net/) pour plus de détails.
+ Oui, Aspose.Words for .NET vous permet de manipuler différents types de champs, pas seulement les champs IF. Vous pouvez explorer le[documentation](https://reference.aspose.com/words/net/) pour plus de détails.
 
 ### Que sont les champs IF dans les documents Word ?
 Les champs IF sont des champs conditionnels qui affichent du texte en fonction de certaines conditions. Ils sont souvent utilisés pour créer du contenu dynamique dans des documents Word.

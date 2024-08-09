@@ -77,7 +77,7 @@ builder.Document.Save(dataDir + "WorkingWithFields.SpecifyLocaleAtFieldLevel.doc
 
 ## 結論
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 成功指定了 Word 文件中欄位的區域設定。這項強大的功能可讓您自訂文件以滿足特定的文化和區域要求，使您的應用程式更加通用且使用者友好。快樂編碼！
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功指定了 Word 文件中欄位的區域設定。這項強大的功能可讓您自訂文件以滿足特定的文化和區域要求，使您的應用程式更加通用且使用者友好。快樂編碼！
 
 ## 常見問題解答
 

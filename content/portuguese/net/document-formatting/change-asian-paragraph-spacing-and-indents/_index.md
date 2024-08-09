@@ -97,7 +97,7 @@ aí está! Você acabou de aprender como alterar o espaçamento e os recuos dos 
 Sim, essas configurações podem ser aplicadas a qualquer texto, mas são particularmente úteis para tipografia asiática devido aos requisitos exclusivos de espaçamento e recuo.
 
 ### Preciso de uma licença para usar o Aspose.Words for .NET?
- Sim, Aspose.Words for .NET é uma biblioteca paga, mas você pode obter um[teste grátis](https://releases.aspose.com/) ou um[licença temporária](https://purchase.aspose.com/temporary-license/) para experimentar.
+ Sim, Aspose.Words for .NET é uma biblioteca paga, mas você pode obter um[teste gratuito](https://releases.aspose.com/) ou um[licença temporária](https://purchase.aspose.com/temporary-license/) para experimentar.
 
 ### Onde posso encontrar mais documentação?
  Você pode encontrar documentação abrangente sobre o[Página de documentação do Aspose.Words para .NET](https://reference.aspose.com/words/net/).

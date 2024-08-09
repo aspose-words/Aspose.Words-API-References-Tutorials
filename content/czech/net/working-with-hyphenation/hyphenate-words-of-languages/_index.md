@@ -2,81 +2,76 @@
 title: Dělit slova jazyků
 linktitle: Dělit slova jazyků
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se dělit slova v různých jazycích v dokumentech aplikace Word pomocí Aspose.Words for .NET.
+description: Naučte se dělit slova v různých jazycích pomocí Aspose.Words pro .NET. Chcete-li zlepšit čitelnost dokumentu, postupujte podle tohoto podrobného průvodce krok za krokem.
 type: docs
 weight: 10
 url: /cs/net/working-with-hyphenation/hyphenate-words-of-languages/
 ---
+## Zavedení
 
-V tomto podrobném tutoriálu vás provedeme dělením slov v různých jazycích v dokumentech aplikace Word pomocí Aspose.Words for .NET. Vysvětlíme vám poskytnutý zdrojový kód C# a ukážeme vám, jak jej implementovat do vašich vlastních projektů.
+Ahoj! Zkoušeli jste někdy číst dokument s dlouhými, nepřerušovanými slovy a cítil jste, že se vám svírá mozek? Všichni jsme tam byli. Ale hádejte co? Dělení slov je váš zachránce! S Aspose.Words for .NET můžete vytvořit profesionální vzhled vašich dokumentů správným dělením slov podle jazykových pravidel. Pojďme se ponořit do toho, jak toho můžete bez problémů dosáhnout.
 
-Chcete-li začít, ujistěte se, že máte Aspose.Words for .NET nainstalovaný a nakonfigurovaný ve svém vývojovém prostředí. Pokud jste tak ještě neučinili, stáhněte si a nainstalujte knihovnu z oficiálních stránek.
+## Předpoklady
 
-## Krok 1: Inicializace objektu dokumentu
+Než začneme, ujistěte se, že máte následující:
 
- Nejprve inicializujte`Document` objekt zadáním cesty ke zdrojovému dokumentu obsahujícímu text v různých jazycích:
+-  Aspose.Words for .NET nainstalován. Pokud ne, vezměte si to[zde](https://releases.aspose.com/words/net/).
+-  Platná licence pro Aspose.Words. Můžete si jeden koupit[zde](https://purchase.aspose.com/buy) nebo získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
+- Základní znalost C# a .NET frameworku.
+- Textový editor nebo IDE jako Visual Studio.
+
+## Importovat jmenné prostory
+
+Nejprve importujme potřebné jmenné prostory. To pomáhá při přístupu ke třídám a metodám potřebným pro dělení slov.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Hyphenation;
+```
+
+## Krok 1: Vložte svůj dokument
+
+ Budete muset zadat adresář, kde je umístěn váš dokument. Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k vašemu dokumentu.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "German text.docx");
 ```
 
-## Krok 2: Uložení slovníků dělení slov
+## Krok 3: Zaregistrujte slovníky dělení slov
 
-Dále uložte slovníky dělení slov pro různé jazyky, které chcete zpracovat. V tomto příkladu registrujeme slovníky pro americkou angličtinu a švýcarskou němčinu:
+ Aspose.Words vyžaduje slovníky dělení slov pro různé jazyky. Ujistěte se, že máte`.dic`soubory pro jazyky, které chcete dělit. Zaregistrujte tyto slovníky pomocí`Hyphenation.RegisterDictionary` metoda.
 
 ```csharp
 Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
 Hyphenation.RegisterDictionary("de-CH", dataDir + "hyph_de_CH.dic");
-```
-
-Ujistěte se, že máte v datovém adresáři příslušné soubory slovníku.
-
-## Krok 3: Zpracování slov dělením slov
-
-Nyní můžete používat funkce dělení slov ke zpracování slov v různých jazycích. Můžete použít různé metody`Document` nebo`DocumentBuilder` v závislosti na vašich konkrétních potřebách.
-
-```csharp
-// Příklad: Použití metody dělení slov v DocumentBuilderu
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Write("Example of text to hyphenate");
-builder.InsertHyphenation();
 ```
 
 ## Krok 4: Uložte dokument
 
-Nakonec upravený dokument uložte:
+Nakonec uložte dokument s pomlčkou v požadovaném formátu. Zde jej ukládáme jako PDF.
 
 ```csharp
 doc.Save(dataDir + "TreatmentByCesure.pdf");
 ```
 
-Tak ! Úspěšně jste zpracovali slova jejich dělením v různých jazycích v dokumentu aplikace Word pomocí Aspose.Words for .NET.
+## Závěr
 
-### Ukázka zdrojového kódu pro dělení slov pomocí Aspose.Words pro .NET
+A tady to máte! Pomocí několika řádků kódu můžete výrazně zlepšit čitelnost svých dokumentů dělením slov podle pravidel specifických pro daný jazyk. Aspose.Words for .NET činí tento proces přímočarým a efektivním. Takže pokračujte a dopřejte svým čtenářům hladší zážitek ze čtení!
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(dataDir + "German text.docx");
+## FAQ
 
-Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
-Hyphenation.RegisterDictionary("de-CH", dataDir + "hyph_de_CH.dic");
+### Co je dělení slov v dokumentech?
+Dělení slov je proces dělení slov na konci řádků, aby se zlepšilo zarovnání textu a jeho čitelnost.
 
-doc.Save(dataDir + "TreatmentByCesure.pdf");
-```
+### Kde mohu získat slovníky dělení slov pro různé jazyky?
+Slovníky dělení slov najdete online, často poskytované jazykovými instituty nebo open-source projekty.
 
-Neváhejte použít tento kód ve svých vlastních projektech a upravit jej tak, aby vyhovoval vašim konkrétním potřebám.
+### Mohu používat Aspose.Words pro .NET bez licence?
+ Ano, ale nelicencovaná verze bude mít omezení. Doporučuje se získat a[dočasná licence](https://purchase.aspose.com/temporary-license) pro plné funkce.
 
-### FAQ
+### Je Aspose.Words for .NET kompatibilní s .NET Core?
+Ano, Aspose.Words for .NET podporuje .NET Framework i .NET Core.
 
-#### Otázka: Jak mohu pomocí Aspose.Words slabikovat slovo v určitém jazyce?
-
- A: Chcete-li slabikovat slovo v určitém jazyce pomocí Aspose.Words, můžete použít`Hyphenation` třída a`Hyphenate()` metoda. Vytvořte instanci souboru`Hyphenation` třídu specifikující požadovaný jazyk a poté zavolejte`Hyphenate()` metoda předávání slova do slabikovat jako argument. Tím získáte slabiky slova v určeném jazyce.
-
-#### Otázka: Jaké jazykové kódy bych měl použít k určení slabikového jazyka v Aspose.Words?
-
-A: Chcete-li určit jazyk slabikáře v Aspose.Words, musíte použít příslušné kódy jazyků. Můžete například použít „en“ pro angličtinu, „fr“ pro francouzštinu, „es“ pro španělštinu, „de“ pro němčinu atd. Úplný seznam podporovaných jazykových kódů naleznete v dokumentaci Aspose.Words.
-
-#### Otázka: Funguje slabikování pro všechny jazyky v Aspose.Words?
-
-A: Slabikování v Aspose.Words závisí na pravidlech slabikování specifických pro jazyk. Přestože Aspose.Words podporuje širokou škálu jazyků, některé jazyky nemusí být podporovány nebo pro ně nemusí být slabikování dostupné. Podívejte se do dokumentace Aspose.Words a zjistěte, které jazyky jsou podporovány pro slabikování.
+### Jak mohu pracovat s více jazyky v jednom dokumentu?
+Můžete zaregistrovat více slovníků dělení slov, jak je znázorněno v příkladu, a Aspose.Words s nimi naloží odpovídajícím způsobem.

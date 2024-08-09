@@ -10,7 +10,7 @@ url: /pl/net/join-and-append-documents/append-document/
 
 ## Wstęp
 
-No hej! Czy kiedykolwiek musiałeś połączyć dwa dokumenty programu Word w jeden, zachowując nienaruszone oryginalne formatowanie? Niezależnie od tego, czy kompilujesz raporty, tworzysz obszerną dokumentację projektową, czy po prostu próbujesz usprawnić zarządzanie dokumentami, Aspose.Words dla .NET może znacznie ułatwić Ci życie. W tym samouczku przyjrzymy się, jak dołączyć jeden dokument programu Word do drugiego za pomocą Aspose.Words dla .NET, szczegółowo opisując każdy krok. Pod koniec tego przewodnika będziesz łączyć dokumenty jak profesjonalista!
+Hej tam! Czy kiedykolwiek musiałeś połączyć dwa dokumenty programu Word w jeden, zachowując nienaruszone oryginalne formatowanie? Niezależnie od tego, czy kompilujesz raporty, tworzysz obszerną dokumentację projektową, czy po prostu próbujesz usprawnić zarządzanie dokumentami, Aspose.Words dla .NET może znacznie ułatwić Ci życie. W tym samouczku przyjrzymy się, jak dołączyć jeden dokument programu Word do drugiego za pomocą Aspose.Words dla .NET, szczegółowo opisując każdy krok. Pod koniec tego przewodnika będziesz łączyć dokumenty jak profesjonalista!
 
 ## Warunki wstępne
 
@@ -91,7 +91,7 @@ Aspose.Words dla .NET to potężna biblioteka, która umożliwia programistom pr
 
 ### 3. Jak zapewnić zachowanie formatowania podczas dołączania dokumentów?
 
- Użyj`ImportFormatMode.KeepSourceFormatting` parametr w`AppendDocument` metoda zachowania formatowania dokumentu źródłowego.
+ Skorzystaj z`ImportFormatMode.KeepSourceFormatting` parametr w`AppendDocument` metoda zachowania formatowania dokumentu źródłowego.
 
 ### 4. Jak uzyskać wsparcie dla Aspose.Words dla .NET?
 

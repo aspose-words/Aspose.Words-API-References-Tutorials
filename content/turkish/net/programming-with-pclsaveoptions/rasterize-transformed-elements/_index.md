@@ -64,7 +64,7 @@ PclSaveOptions saveOptions = new PclSaveOptions
 };
 ```
 
- Burada,`RasterizeTransformedElements` ayarlandı`false` Bu, dönüştürülen öğelerin rasterleştirilmeyeceği anlamına gelir. Bunu şu şekilde ayarlayabilirsiniz:`true` bunların rasterleştirilmesini istiyorsanız.
+ Burada,`RasterizeTransformedElements` şu şekilde ayarlandı:`false` Bu, dönüştürülen öğelerin rasterleştirilmeyeceği anlamına gelir. Bunu şu şekilde ayarlayabilirsiniz:`true` bunların rasterleştirilmesini istiyorsanız.
 
 ## Adım 4: Belgeyi Dönüştürün
 
@@ -93,7 +93,7 @@ Aspose.Words, PDF, HTML, EPUB ve daha fazlasını içeren çok çeşitli formatl
  Şu anda,`RasterizeTransformedElements` seçeneği belgedeki dönüştürülen tüm öğelere uygulanır. Daha ayrıntılı kontrol için, dönüştürmeden önce öğeleri ayrı ayrı işlemeyi düşünün.
 
 ### Belge dönüştürmeyle ilgili sorunları nasıl giderebilirim?  
- Aspose.Words'ün en son sürümüne sahip olduğunuzdan emin olun ve belirli dönüştürme sorunları için belgeleri kontrol edin. Ek olarak,[destek Forumu](https://forum.aspose.com/c/words/8) yardım istemek için harika bir yerdir.
+ Aspose.Words'ün en son sürümüne sahip olduğunuzdan emin olun ve belirli dönüştürme sorunları için belgeleri kontrol edin. Ek olarak,[destek forumu](https://forum.aspose.com/c/words/8) yardım istemek için harika bir yerdir.
 
 ### Aspose.Words for .NET'in deneme sürümünde herhangi bir sınırlama var mı?  
  Deneme sürümünün değerlendirme filigranı gibi bazı sınırlamaları vardır. Tamamen işlevsel bir deneyim için, bir[geçici lisans](https://purchase.aspose.com/temporary-license/).

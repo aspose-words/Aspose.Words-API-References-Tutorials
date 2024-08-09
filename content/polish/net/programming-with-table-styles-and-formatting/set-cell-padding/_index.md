@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Podzielmy proces na proste, łatwe do wykonania etapy. Gotowy? Chodźmy!
+Podzielmy proces na proste, łatwe do wykonania etapy. Gotowy? chodźmy!
 
 ## Krok 1: Utwórz nowy dokument
 

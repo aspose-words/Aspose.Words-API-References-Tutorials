@@ -100,4 +100,4 @@ try-catch ブロックを使用して、ドキュメント処理操作中に発�
 はい、ここで示す方法は、フィールドのみを対象とし、他のコンテンツは変更しません。
 
 ### Aspose.Words に関するその他のリソースやサポートはどこで見つかりますか?
-訪問[Aspose.Words for .NET API ドキュメント](https://reference.aspose.com/words/net/)そしてその[Aspose.Words フォーラム](https://forum.aspose.com/c/words/8)さらにサポートが必要な場合はお問い合わせください。
+訪問する[Aspose.Words for .NET API ドキュメント](https://reference.aspose.com/words/net/)そして[Aspose.Words フォーラム](https://forum.aspose.com/c/words/8)さらにサポートが必要な場合はお問い合わせください。

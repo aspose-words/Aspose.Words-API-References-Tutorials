@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-charts/hide-chart-axis/
 ---
-## introduzione
+## Introduzione
 
 La creazione di documenti Word dinamici e visivamente accattivanti spesso implica l'incorporazione di diagrammi e grafici. Uno di questi scenari potrebbe richiedere di nascondere l'asse del grafico per una presentazione più pulita. Aspose.Words per .NET fornisce un'API completa e facile da usare per tali attività. Questo tutorial ti guiderà attraverso i passaggi per nascondere un asse del grafico in un documento Word utilizzando Aspose.Words per .NET.
 
@@ -106,7 +106,7 @@ Congratulazioni! Hai imparato con successo come nascondere un asse del grafico i
 ## Domande frequenti
 
 ### Cos'è Aspose.Words per .NET?
-Aspose.Words per .NET è una potente API per creare, modificare, convertire e manipolare documenti Word all'interno di applicazioni .NET.
+Aspose.Words per .NET è una potente API per creare, modificare, convertire e manipolare documenti Word all'interno delle applicazioni .NET.
 
 ### Posso nascondere entrambi gli assi X e Y in un grafico?
  Sì, puoi nascondere entrambi gli assi impostando il file`Hidden` proprietà di entrambi`AxisX`E`AxisY` A`true`.

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-sdt/structured-document-tag-range-start-xml-mapping/
 ---
-## Úvod
+## Zavedení
 
 Chtěli jste někdy dynamicky vkládat data XML do dokumentu aplikace Word? Tak to máš štěstí! Aspose.Words pro .NET dělá tento úkol hračkou. V tomto tutoriálu se ponoříme hluboko do strukturovaného mapování rozsahu značek dokumentu XML. Tato funkce vám umožňuje svázat vlastní části XML s ovládacími prvky obsahu, což zajišťuje bezproblémovou aktualizaci obsahu dokumentu s vašimi daty XML. Jste připraveni přeměnit vaše dokumenty na dynamická mistrovská díla.
 
@@ -15,7 +15,7 @@ Chtěli jste někdy dynamicky vkládat data XML do dokumentu aplikace Word? Tak 
 
 Než se pustíme do kódovací části, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET Library: Ujistěte se, že máte nejnovější verzi. Můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Ujistěte se, že máte nejnovější verzi. Můžete si jej stáhnout[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Visual Studio nebo jakékoli jiné IDE, které podporuje C#.
 3. Základní znalost C#: Znalost programování v C# je nutností.
 4. Dokument aplikace Word: Ukázkový dokument aplikace Word pro práci.
@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Krok 2: Načtěte dokument aplikace Word
 
-Dále načteme dokument Word. Toto je dokument, kam budeme vkládat naše XML data.
+Dále načteme dokument aplikace Word. Toto je dokument, kam budeme vkládat naše XML data.
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");

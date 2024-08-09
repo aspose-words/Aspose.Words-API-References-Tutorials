@@ -115,4 +115,4 @@ Les codes de champ sont des espaces réservés dans un document Word qui génèr
 
 ### Où puis-je obtenir plus d’informations sur Aspose.Words ?
 
-Pour une documentation détaillée, des didacticiels et une assistance, visitez le[Documentation Aspose.Words](https://reference.aspose.com/words/net/), [Page de téléchargement](https://releases.aspose.com/words/net/) , ou[Forum d'entraide](https://forum.aspose.com/c/words/8).
+Pour une documentation détaillée, des didacticiels et une assistance, visitez le[Documentation Aspose.Words](https://reference.aspose.com/words/net/), [Page de téléchargement](https://releases.aspose.com/words/net/) , ou[Forum d'assistance](https://forum.aspose.com/c/words/8).

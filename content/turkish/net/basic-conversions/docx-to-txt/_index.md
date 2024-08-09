@@ -90,7 +90,7 @@ Aspose.Words for .NET, bir belgeyi kaydederken kodlama seçeneklerini belirtmeni
 
 TXT dosyaları zengin metin biçimlendirmesini desteklemediğinden çıktı, biçimlendirme olmadan düz metin olacaktır.
 
-### Aspose.Words for .NET'i kullanarak DOCX dosyalarını diğer formatlara dönüştürebilir miyim?
+### Aspose.Words for .NET kullanarak DOCX dosyalarını diğer formatlara dönüştürebilir miyim?
 
 Evet, Aspose.Words for .NET, DOCX dosyalarının PDF, HTML ve daha fazlası gibi çeşitli formatlara dönüştürülmesini destekler.
 

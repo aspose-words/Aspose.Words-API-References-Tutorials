@@ -48,7 +48,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Paso 3: manipular el contenido del documento
 
- Utilizar el`DocumentBuilder` objeto para manipular el contenido según sea necesario. Por ejemplo, agregue texto o formato.
+ Utilice el`DocumentBuilder` objeto para manipular el contenido según sea necesario. Por ejemplo, agregue texto o formato.
 
 ```csharp
 builder.Writeln("Insert your text or content manipulation code here!");

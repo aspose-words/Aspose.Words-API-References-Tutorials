@@ -36,7 +36,7 @@ Her bir parçayı net bir şekilde anladığınızdan emin olmak için süreci b
 
 ## Adım 1: DOCX Belgesini Yükleyin
 
- Öncelikle dönüştürmek istediğiniz DOCX belgesini yüklemeniz gerekir. Kullan`Document` DOCX dosyanızı yüklemek için Aspose.Words'ten class.
+ Öncelikle dönüştürmek istediğiniz DOCX belgesini yüklemeniz gerekir. Kullanın`Document` DOCX dosyanızı yüklemek için Aspose.Words'ten class.
 
 ```csharp
 // Belgeler dizininin yolu.

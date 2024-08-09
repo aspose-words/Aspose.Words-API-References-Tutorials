@@ -2,7 +2,7 @@
 title: Aspose.Words for Java의 개정판 사용
 linktitle: 개정 사용
 second_title: Aspose.Words Java 문서 처리 API
-description: Java 개정판용 Aspose.Words를 효율적으로 사용하는 방법을 알아보세요. 개발자를 위한 단계별 가이드입니다. 문서 관리를 최적화하세요.
+description: Java 개정판용 Aspose.Words를 효율적으로 사용하는 방법을 알아보세요. 개발자를 위한 단계별 가이드. 문서 관리를 최적화하세요.
 type: docs
 weight: 22
 url: /ko/java/using-document-elements/using-revisions/

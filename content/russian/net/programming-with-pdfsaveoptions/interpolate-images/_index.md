@@ -69,7 +69,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 
 ## Шаг 4. Сохраните документ в формате PDF.
 
- Когда параметры настроены, пришло время сохранить документ в формате PDF. Использовать`Save` метод`Document` class, указав путь и параметры сохранения.
+ Когда параметры настроены, пришло время сохранить документ в формате PDF. Используйте`Save` метод`Document` class, указав путь и параметры сохранения.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.InterpolateImages.pdf", saveOptions);

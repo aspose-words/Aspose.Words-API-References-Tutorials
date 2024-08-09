@@ -9,7 +9,7 @@ url: /vi/net/document-formatting/asian-typography-line-break-group/
 ---
 ## Giới thiệu
 
-Bạn đã bao giờ tự hỏi làm cách nào để tinh chỉnh kiểu chữ trong tài liệu Word của mình một cách hoàn hảo chưa? Đặc biệt khi làm việc với các ngôn ngữ châu Á, các sắc thái ngắt dòng và định dạng có thể khá phức tạp. Nhưng đừng lo lắng, chúng tôi đã bảo vệ bạn! Trong hướng dẫn toàn diện này, chúng tôi sẽ đi sâu vào cách bạn có thể kiểm soát ngắt dòng kiểu chữ Châu Á trong tài liệu Word bằng Aspose.Words cho .NET. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu, hướng dẫn từng bước này sẽ hướng dẫn bạn mọi thứ bạn cần biết. Sẵn sàng để làm cho tài liệu của bạn trông hoàn hảo? Bắt đầu nào!
+Bạn đã bao giờ tự hỏi làm cách nào để tinh chỉnh kiểu chữ trong tài liệu Word của mình một cách hoàn hảo chưa? Đặc biệt khi làm việc với các ngôn ngữ châu Á, các sắc thái ngắt dòng và định dạng có thể khá phức tạp. Nhưng đừng lo lắng, chúng tôi đã bảo vệ bạn! Trong hướng dẫn toàn diện này, chúng tôi sẽ đi sâu vào cách bạn có thể kiểm soát ngắt dòng kiểu chữ Châu Á trong tài liệu Word bằng Aspose.Words cho .NET. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu, hướng dẫn từng bước này sẽ hướng dẫn bạn mọi thứ bạn cần biết. Sẵn sàng để làm cho tài liệu của bạn trông hoàn hảo? Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
@@ -83,7 +83,7 @@ doc.Save(dataDir + "DocumentFormatting.AsianTypographyLineBreakGroup.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Chỉ với một vài dòng mã, bạn đã thành thạo nghệ thuật kiểm soát ngắt dòng kiểu chữ Châu Á trong tài liệu Word bằng Aspose.Words cho .NET. Công cụ mạnh mẽ này cho phép bạn thực hiện các điều chỉnh chính xác, đảm bảo tài liệu của bạn trông chuyên nghiệp và bóng bẩy. Cho dù bạn đang chuẩn bị một báo cáo, bản trình bày hay bất kỳ tài liệu nào có văn bản châu Á, các bước này sẽ giúp bạn duy trì định dạng hoàn hảo. 
+Và bạn có nó! Chỉ với một vài dòng mã, bạn đã thành thạo nghệ thuật kiểm soát ngắt dòng kiểu chữ Châu Á trong tài liệu Word bằng Aspose.Words cho .NET. Công cụ mạnh mẽ này cho phép bạn thực hiện các điều chỉnh chính xác, đảm bảo tài liệu của bạn trông chuyên nghiệp và bóng bẩy. Cho dù bạn đang chuẩn bị một báo cáo, bản trình bày hay bất kỳ tài liệu nào có văn bản châu Á, các bước này sẽ giúp bạn duy trì định dạng hoàn hảo. 
 
 ## Câu hỏi thường gặp
 

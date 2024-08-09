@@ -9,7 +9,7 @@ url: /ko/net/join-and-append-documents/list-use-destination-styles/
 ---
 ## 소개
 
-Word 문서를 병합하려고 시도했는데 서식이 얽힌 적이 있습니까? 가끔은 물과 기름을 섞으려고 하는 것과 같죠? 자, 오늘 우리는 이 골치 아픈 일로부터 여러분을 구해 줄 Aspose.Words for .NET을 사용하는 깔끔한 트릭에 대해 알아볼 것입니다. 번호 매기기 및 스타일을 엉망으로 만들지 않고 한 문서에서 다른 문서로 목록을 가져오는 방법을 알아봅니다. 인생을 좀 더 쉽게 만들 준비가 되셨나요? 시작하자!
+Word 문서를 병합하려고 시도했는데 서식이 얽힌 적이 있습니까? 가끔은 물과 기름을 섞으려고 하는 것과 같죠? 자, 오늘 우리는 이 골치 아픈 일로부터 여러분을 구해 줄 Aspose.Words for .NET을 사용하는 깔끔한 트릭에 대해 알아볼 것입니다. 번호 매기기 및 스타일을 엉망으로 만들지 않고 한 문서에서 다른 문서로 목록을 가져오는 방법을 알아봅니다. 인생을 좀 더 쉽게 만들 준비가 되셨나요? 시작해 봅시다!
 
 ## 전제 조건
 
@@ -85,7 +85,7 @@ Aspose.Words for .NET은 Word 문서를 프로그래밍 방식으로 작업하�
  다음에서 다운로드할 수 있습니다.[웹사이트](https://releases.aspose.com/words/net/) 설치 지침을 따르세요.[선적 서류 비치](https://reference.aspose.com/words/net/).
 
 ### Aspose.Words를 무료로 사용할 수 있나요?
- Aspose.Words는 다음을 제공합니다.[무료 시험판](https://releases.aspose.com/) 제한된 기능을 가지고 있습니다. 전체 액세스를 위해서는 라이센스를 구매해야 합니다.[여기](https://purchase.aspose.com/buy).
+ Aspose.Words는 다음을 제공합니다.[무료 평가판](https://releases.aspose.com/) 제한된 기능을 가지고 있습니다. 전체 액세스를 위해서는 라이센스를 구매해야 합니다.[여기](https://purchase.aspose.com/buy).
 
 ### ImportFormatOptions란 무엇입니까?
  ImportFormatOptions를 사용하면 한 문서에서 다른 문서로 콘텐츠를 가져올 때 서식이 처리되는 방식을 지정할 수 있습니다. 예를 들어,`KeepSourceNumbering` 원본 문서의 목록 번호가 유지되는지 확인합니다.

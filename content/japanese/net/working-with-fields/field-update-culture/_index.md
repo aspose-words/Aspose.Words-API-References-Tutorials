@@ -110,4 +110,4 @@ Word ドキュメントのフィールド更新カルチャの構成は複雑に
 
 ### 問題が発生した場合、詳細情報やサポートはどこで入手できますか?
 
-詳細なドキュメントとサポートについては、[Aspose ドキュメント](https://reference.aspose.com/words/net/)そしてその[Aspose サポート フォーラム](https://forum.aspose.com/c/words/8).
+詳細なドキュメントとサポートについては、[Aspose ドキュメント](https://reference.aspose.com/words/net/)そして[Aspose サポート フォーラム](https://forum.aspose.com/c/words/8).

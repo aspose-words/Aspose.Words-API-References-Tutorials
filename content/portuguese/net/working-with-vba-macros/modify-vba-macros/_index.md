@@ -9,7 +9,7 @@ url: /pt/net/working-with-vba-macros/modify-vba-macros/
 ---
 ## Introdução
 
-Olá, colegas programadores e entusiastas da automação de documentos! Você está pronto para levar seu jogo de documentos do Word para o próximo nível? Hoje, estamos mergulhando no fascinante mundo das macros VBA (Visual Basic for Applications) em documentos do Word. Especificamente, exploraremos como modificar macros VBA existentes usando Aspose.Words for .NET. Esta poderosa biblioteca facilita a automatização de tarefas, a personalização de documentos e até mesmo o ajuste dessas macros incômodas. Esteja você procurando atualizar suas macros ou apenas curioso sobre o processo, este tutorial tem o que você precisa. Então vamos começar!
+Olá, colegas programadores e entusiastas da automação de documentos! Você está pronto para levar seu jogo de documentos do Word para o próximo nível? Hoje, estamos mergulhando no fascinante mundo das macros VBA (Visual Basic for Applications) em documentos do Word. Especificamente, exploraremos como modificar macros VBA existentes usando Aspose.Words for .NET. Esta poderosa biblioteca facilita a automatização de tarefas, a personalização de documentos e até mesmo o ajuste dessas macros incômodas. Esteja você procurando atualizar suas macros ou apenas curioso sobre o processo, este tutorial tem o que você precisa. Então, vamos começar!
 
 ## Pré-requisitos
 
@@ -110,7 +110,7 @@ Esta linha salva o documento com a macro VBA modificada como "WorkingWithVba.Mod
 
 E aí está! Você modificou com êxito macros VBA em um documento do Word usando Aspose.Words for .NET. Este tutorial cobriu tudo, desde carregar seu documento e acessar o projeto VBA até alterar o código da macro e salvar o documento modificado. Com Aspose.Words, você pode automatizar tarefas facilmente, personalizar seus documentos e até mesmo brincar com macros VBA para atender às suas necessidades.
 
- Se você estiver ansioso para explorar mais, o[Documentação da API](https://reference.aspose.com/words/net/) é um recurso fantástico. E se você alguma vez se deparar com um obstáculo, o[Fórum de suporte](https://forum.aspose.com/c/words/8) está sempre lá para ajudá-lo.
+ Se você estiver ansioso para explorar mais, o[Documentação da API](https://reference.aspose.com/words/net/) é um recurso fantástico. E se você alguma vez se deparar com um obstáculo, o[fórum de suporte](https://forum.aspose.com/c/words/8) está sempre lá para ajudá-lo.
 
 Boa codificação e lembre-se, o céu é o limite quando se trata de automatizar seus documentos do Word!
 

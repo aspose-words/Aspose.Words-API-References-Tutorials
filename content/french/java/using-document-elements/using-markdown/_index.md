@@ -89,7 +89,7 @@ builder.insertHyperlink("Aspose", "https://www.aspose.com", faux);
 builder.getFont().setBold(false);
 ```
 
-## les tables
+## Tableaux
 
 L'ajout de tableaux à votre document Markdown est simple avec Aspose.Words for Java.
 

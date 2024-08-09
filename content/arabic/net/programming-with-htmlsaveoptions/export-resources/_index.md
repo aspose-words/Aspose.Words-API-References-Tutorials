@@ -87,7 +87,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportResources.html", saveOption
 
 ## خاتمة
 
-وهناك لديك! لقد نجحت في تصدير الموارد أثناء حفظ مستند Word بتنسيق HTML باستخدام Aspose.Words لـ .NET. باستخدام هذه المكتبة القوية، يصبح التعامل مع مستندات Word برمجيًا أمرًا في غاية السهولة. سواء كنت تعمل على تطبيق ويب أو تحتاج فقط إلى تحويل المستندات للاستخدام دون الاتصال بالإنترنت، فإن Aspose.Words هو الحل الأمثل لك.
+وهنا لديك! لقد نجحت في تصدير الموارد أثناء حفظ مستند Word بتنسيق HTML باستخدام Aspose.Words لـ .NET. باستخدام هذه المكتبة القوية، يصبح التعامل مع مستندات Word برمجيًا أمرًا في غاية السهولة. سواء كنت تعمل على تطبيق ويب أو تحتاج فقط إلى تحويل المستندات للاستخدام دون الاتصال بالإنترنت، فإن Aspose.Words هو الحل الأمثل لك.
 
 ## الأسئلة الشائعة
 
@@ -101,7 +101,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportResources.html", saveOption
  يمكنك تحديد أي اسم ملف تريده في ملف`doc.Save` طريقة. على سبيل المثال،`doc.Save(dataDir + "CustomFileName.html", saveOptions);`.
 
 ### هل يدعم Aspose.Words التنسيقات الأخرى إلى جانب HTML؟
- نعم، فهو يدعم العديد من التنسيقات بما في ذلك PDF وDOCX وTXT والمزيد. تفحص ال[توثيق](https://reference.aspose.com/words/net/) للحصول على قائمة كاملة.
+ نعم، فهو يدعم العديد من التنسيقات بما في ذلك PDF وDOCX وTXT والمزيد. تحقق من[الوثائق](https://reference.aspose.com/words/net/) للحصول على قائمة كاملة.
 
 ### أين يمكنني الحصول على المزيد من الدعم والموارد؟
 لمزيد من المساعدة، قم بزيارة[منتدى دعم Aspose.Words](https://forum.aspose.com/c/words/8) . يمكنك أيضًا العثور على وثائق وأمثلة مفصلة على الموقع[موقع أسبوز](https://reference.aspose.com/words/net/).

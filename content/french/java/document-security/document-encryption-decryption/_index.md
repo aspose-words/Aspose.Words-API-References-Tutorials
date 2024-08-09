@@ -17,7 +17,7 @@ Dans ce didacticiel, nous explorerons comment crypter et déchiffrer des documen
 
 Avant de commencer, assurez-vous d'avoir les éléments suivants :
 
-- [Kit de développement Java (JDK)](https://www.oracle.com/java/technologies/javase-downloads.html) installée.
+- [Kit de développement Java (JDK)](https://www.oracle.com/java/technologies/javase-downloads.html) installé.
 - [Aspose.Words pour Java](https://products.aspose.com/words/java) bibliothèque. Vous pouvez le télécharger depuis[ici](https://downloads.aspose.com/words/java).
 
 ## Étape 1 : Créer un projet Java

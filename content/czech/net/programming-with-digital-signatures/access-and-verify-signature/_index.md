@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-digital-signatures/access-and-verify-signature/
 ---
-## Úvod
+## Zavedení
 
 Ahoj, kolegové tech nadšenci! Ocitli jste se někdy v situaci, kdy jste potřebovali získat přístup a ověřit digitální podpisy v dokumentu aplikace Word, ale nevěděli jste, kde začít? Tak to máš štěstí! Dnes se ponoříme do nádherného světa Aspose.Words for .NET, výkonné knihovny, se kterou je manipulace s dokumenty Word hračkou. Provedeme vás procesem krok za krokem, takže na konci této příručky budete profesionálem v ověřování digitálních podpisů v dokumentech aplikace Word. Začněme!
 
@@ -16,7 +16,7 @@ Ahoj, kolegové tech nadšenci! Ocitli jste se někdy v situaci, kdy jste potře
 Než se ponoříme do podrobných detailů, je třeba mít na paměti několik věcí:
 
 1. Visual Studio: Ujistěte se, že máte na svém počítači nainstalované Visual Studio. Zde napíšete a spustíte svůj kód.
-2.  Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/) . Nezapomeňte získat bezplatnou zkušební verzi[tady](https://releases.aspose.com/) pokud jste to ještě neudělali!
+2.  Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Můžete si jej stáhnout[zde](https://releases.aspose.com/words/net/) . Nezapomeňte získat bezplatnou zkušební verzi[zde](https://releases.aspose.com/) pokud jste to ještě neudělali!
 3. Digitálně podepsaný dokument Word: Mějte dokument Word, který je již digitálně podepsán. Toto je soubor, se kterým budete pracovat při ověřování podpisů.
 
 ## Importovat jmenné prostory
@@ -29,7 +29,7 @@ using Aspose.Words;
 using Aspose.Words.DigitalSignatures;
 ```
 
-Dobře, pojďme si to rozdělit na zvládnutelné kroky. Každý krok vás provede určitou částí procesu. Připraveni? Pojďme!
+Dobře, pojďme si to rozdělit na zvládnutelné kroky. Každý krok vás provede určitou částí procesu. Připraveni? Jdeme na to!
 
 ## Krok 1: Nastavte svůj projekt
 
@@ -144,8 +144,8 @@ Aspose.Words for .NET podporuje všechny verze dokumentů Microsoft Word, včetn
 
 ### Jak získám dočasnou licenci pro Aspose.Words for .NET?
 
- Můžete získat dočasnou licenci pro Aspose.Words pro .NET od[tady](https://purchase.aspose.com/temporary-license/). To vám umožní vyzkoušet všechny funkce knihovny bez jakýchkoli omezení.
+ Můžete získat dočasnou licenci pro Aspose.Words pro .NET od[zde](https://purchase.aspose.com/temporary-license/). To vám umožní vyzkoušet všechny funkce knihovny bez jakýchkoli omezení.
 
 ### Kde najdu další dokumentaci k Aspose.Words pro .NET?
 
- Můžete najít podrobnou dokumentaci k Aspose.Words pro .NET[tady](https://reference.aspose.com/words/net/).
+ Můžete najít podrobnou dokumentaci k Aspose.Words pro .NET[zde](https://reference.aspose.com/words/net/).

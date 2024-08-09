@@ -98,4 +98,4 @@ Hoàn toàn có thể, bạn có thể thao tác đầu trang và chân trang tr
 Có, Aspose.Words for .NET cho phép bạn xóa đầu trang và chân trang trong khi vẫn giữ nguyên phần định dạng còn lại của tài liệu.
 
 ### Tôi có thể tìm thêm tài nguyên và hỗ trợ cho Aspose.Words cho .NET ở đâu?
- Tham quan[Aspose.Words cho tài liệu .NET](https://reference.aspose.com/words/net/) để biết các ví dụ và tài liệu tham khảo API chi tiết.
+ Ghé thăm[Aspose.Words cho tài liệu .NET](https://reference.aspose.com/words/net/) để biết các ví dụ và tài liệu tham khảo API chi tiết.

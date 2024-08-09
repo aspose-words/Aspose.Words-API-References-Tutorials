@@ -9,7 +9,7 @@ url: /vi/net/working-with-fields/insert-field-using-field-builder/
 ---
 ## Giới thiệu
 
-Này! Bạn đã bao giờ thấy mình gãi đầu tự hỏi làm cách nào để chèn các trường động vào tài liệu Word theo chương trình chưa? Thôi, đừng lo lắng nữa! Trong hướng dẫn này, chúng ta sẽ đi sâu vào những điều kỳ diệu của Aspose.Words dành cho .NET, một thư viện mạnh mẽ cho phép bạn tạo, thao tác và chuyển đổi tài liệu Word một cách liền mạch. Cụ thể, chúng tôi sẽ hướng dẫn cách chèn trường bằng Trình tạo trường. Bắt đầu nào!
+Này! Bạn đã bao giờ thấy mình gãi đầu tự hỏi làm cách nào để chèn các trường động vào tài liệu Word theo chương trình chưa? Thôi, đừng lo lắng nữa! Trong hướng dẫn này, chúng ta sẽ đi sâu vào những điều kỳ diệu của Aspose.Words dành cho .NET, một thư viện mạnh mẽ cho phép bạn tạo, thao tác và chuyển đổi tài liệu Word một cách liền mạch. Cụ thể, chúng tôi sẽ hướng dẫn cách chèn trường bằng Trình tạo trường. Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
@@ -95,7 +95,7 @@ Cuối cùng, hãy lưu tài liệu của chúng tôi và kiểm tra kết quả
 doc.Save(dataDir + "InsertFieldWithFieldBuilder.docx");
 ```
 
-Và bạn có nó rồi đấy! Bạn đã chèn thành công một trường vào tài liệu Word bằng Aspose.Words cho .NET.
+Và bạn có nó! Bạn đã chèn thành công một trường vào tài liệu Word bằng Aspose.Words cho .NET.
 
 ## Phần kết luận
 

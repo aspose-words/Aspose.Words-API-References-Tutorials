@@ -9,7 +9,7 @@ url: /zh/net/programming-with-pdfloadoptions/load-encrypted-pdf/
 ---
 ## 介绍
 
-嗨，科技爱好者们！您是否曾陷入处理加密 PDF 的麻烦中？如果是这样，您就有福了。今天，我们将深入研究 Aspose.Words for .NET 的世界，这是一款出色的工具，可让您轻松处理加密 PDF。无论您是经验丰富的开发人员还是刚刚起步，本指南都将引导您完成该过程的每一步。准备好解锁一些 PDF 魔法了吗？让我们开始吧！
+嗨，技术爱好者们！您是否曾发现自己在处理加密 PDF 时遇到麻烦？如果是这样，那您就有福了。今天，我们将深入研究 Aspose.Words for .NET 的世界，这是一款出色的工具，可让您轻而易举地处理加密 PDF。无论您是经验丰富的开发人员还是刚刚起步，本指南都将引导您完成该过程的每一步。准备好解锁一些 PDF 魔法了吗？让我们开始吧！
 
 ## 先决条件
 
@@ -64,7 +64,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
-在这里，我们创建一个新的`PdfSaveOptions`对象并设置其`EncryptionDetails`。 密码`"Aspose"`用于加密PDF。
+在这里，我们创建一个新的`PdfSaveOptions`对象并设置其`EncryptionDetails` 密码`"Aspose"`用于加密PDF。
 
 ## 步骤 4：保存加密的 PDF
 

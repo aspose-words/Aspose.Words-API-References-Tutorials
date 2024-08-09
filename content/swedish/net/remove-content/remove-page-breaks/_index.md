@@ -52,7 +52,7 @@ Ladda dokumentet
 string dataDir = "YOUR DOCUMENT DIRECTORY"; 
 Document doc = new Document(dataDir + "your-document.docx");
 ```
- I det här steget, byt ut`"YOUR DOCUMENT DIRECTORY"` med sökvägen till ditt dokument.
+ I detta steg, byt ut`"YOUR DOCUMENT DIRECTORY"` med sökvägen till ditt dokument.
 
 ## Steg 3: Få åtkomst till paragrafnoder
 
@@ -95,7 +95,7 @@ Spara dokumentet
 ```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med sökvägen där du vill spara det ändrade dokumentet.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med sökvägen där du vill spara det ändrade dokumentet.
 
 ## Slutsats
 

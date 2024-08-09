@@ -2,7 +2,7 @@
 title: Formuliervelden gebruiken in Aspose.Words voor Java
 linktitle: Formuliervelden gebruiken
 second_title: Aspose.Words Java-documentverwerkings-API
-description: Leer Aspose.Words voor Java gebruiken om interactieve Word-documenten met formuliervelden te maken. Begin nu!
+description: Leer Aspose.Words voor Java gebruiken om interactieve Word-documenten met formuliervelden te maken. Ga nu aan de slag!
 type: docs
 weight: 14
 url: /nl/java/using-document-elements/using-form-fields/
@@ -78,7 +78,7 @@ public void formFieldsGetByName() throws Exception {
 kunt het uiterlijk van formuliervelden aanpassen, zoals de lettergrootte en kleur, om uw documenten visueel aantrekkelijker en gebruiksvriendelijker te maken.
 
 ## 9. Conclusie
- Aspose.Words voor Java vereenvoudigt het werken met formuliervelden in Word-documenten, waardoor het eenvoudiger wordt om interactieve en dynamische documenten voor uw toepassingen te maken. Ontdek de uitgebreide documentatie op[Aspose.Words API-documentatie](https://reference.aspose.com/words/java/) om meer functies en mogelijkheden te ontdekken.
+ Aspose.Words voor Java vereenvoudigt het werken met formuliervelden in Word-documenten, waardoor het gemakkelijker wordt om interactieve en dynamische documenten voor uw toepassingen te maken. Ontdek de uitgebreide documentatie op[Aspose.Words API-documentatie](https://reference.aspose.com/words/java/) om meer functies en mogelijkheden te ontdekken.
 
 ## Veelgestelde vragen (FAQ's)
 

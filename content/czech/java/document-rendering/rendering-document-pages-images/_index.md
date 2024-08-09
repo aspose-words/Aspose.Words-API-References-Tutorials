@@ -16,7 +16,7 @@ Než se ponoříme do technických detailů, pojďme si krátce představit Aspo
 
 Než začneme kódovat, ujistěte se, že máte splněny následující předpoklady:
 
-1.  Aspose.Words for Java: Stáhněte si a nainstalujte Aspose.Words for Java z[tady](https://releases.aspose.com/words/java/).
+1.  Aspose.Words for Java: Stáhněte si a nainstalujte Aspose.Words for Java z[zde](https://releases.aspose.com/words/java/).
 
 2. Vývojové prostředí Java: Ujistěte se, že máte na svém počítači nastavené vývojové prostředí Java.
 
@@ -47,7 +47,7 @@ Document doc = new Document("sample.docx");
 Aspose.Words poskytuje různé možnosti ukládání obrázků pro ovládání výstupního formátu a kvality. Tyto možnosti můžeme inicializovat podle našich požadavků. V tomto příkladu uložíme stránky dokumentu jako obrázky PNG.
 
 ```java
-// Inicializujte možnosti uložení obrázku
+// Inicializovat možnosti uložení obrázku
 ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
 ```
 
@@ -92,4 +92,4 @@ Ano, Aspose.Words se dobře hodí pro dávkové zpracování dokumentů. Pomocí
 
 ### Kde najdu další dokumentaci a příklady?
 
- Pro komplexní dokumentaci a příklady navštivte Aspose.Words for Java API Reference na adrese[tady](https://reference.aspose.com/words/java/).
+ Pro komplexní dokumentaci a příklady navštivte Aspose.Words for Java API Reference na adrese[zde](https://reference.aspose.com/words/java/).

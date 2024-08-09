@@ -17,7 +17,7 @@ Generování miniatur dokumentu zahrnuje vytvoření miniaturní vizuální repr
 Než se ponoříme do kódu, ujistěte se, že máte splněny následující předpoklady:
 
 - Vývojové prostředí Java: Ujistěte se, že máte v systému nainstalovanou Javu.
--  Aspose.Words for Java: Stáhněte si a nainstalujte Aspose.Words for Java z webu[tady](https://releases.aspose.com/words/java/).
+-  Aspose.Words for Java: Stáhněte si a nainstalujte Aspose.Words for Java z webu[zde](https://releases.aspose.com/words/java/).
 - Integrované vývojové prostředí (IDE): Můžete použít libovolné Java IDE dle vašeho výběru, jako je Eclipse nebo IntelliJ IDEA.
 
 ## Krok 1: Nastavení vývojového prostředí
@@ -66,7 +66,7 @@ Generování miniatur dokumentů pomocí Aspose.Words for Java nabízí bezprobl
 
 ### Jak nainstaluji Aspose.Words for Java?
 
- Chcete-li nainstalovat Aspose.Words for Java, navštivte stránku pro stahování[tady](https://releases.aspose.com/words/java/) a postupujte podle dodaných pokynů k instalaci.
+ Chcete-li nainstalovat Aspose.Words for Java, navštivte stránku pro stahování[zde](https://releases.aspose.com/words/java/) a postupujte podle dodaných pokynů k instalaci.
 
 ### Mohu přizpůsobit velikost vygenerované miniatury?
 
@@ -82,4 +82,4 @@ Ano, Aspose.Words for Java vyžaduje platnou licenci pro komerční použití. L
 
 ### Kde najdu další dokumentaci k Aspose.Words for Java?
 
- Na stránce dokumentace Aspose.Words for Java můžete najít komplexní dokumentaci a odkazy na API[tady](https://reference.aspose.com/words/java/).
+ Na stránce dokumentace Aspose.Words for Java můžete najít komplexní dokumentaci a odkazy na API[zde](https://reference.aspose.com/words/java/).

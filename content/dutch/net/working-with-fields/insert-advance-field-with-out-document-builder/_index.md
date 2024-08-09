@@ -52,7 +52,7 @@ Nu ons project is opgezet, moeten we een nieuw document en een paragraaf initial
 
 ### Initialiseer document
 
-1.  In uw`Program.cs` bestand, begin met het maken van een nieuw document:
+1.  In jouw`Program.cs` bestand, begin met het maken van een nieuw document:
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -140,7 +140,7 @@ Ja, u kunt DocumentBuilder gebruiken om geavanceerde velden in te voegen, maar d
 
 ### Waar kan ik meer voorbeelden vinden van het gebruik van Aspose.Words?
 
- Uitgebreide documentatie en voorbeelden vindt u op de website[Aspose.Words voor .NET-documentatie](https://reference.aspose.com/words/net/) bladzijde.
+ Uitgebreide documentatie en voorbeelden vindt u op de website[Aspose.Words voor .NET-documentatie](https://reference.aspose.com/words/net/) pagina.
 
 ### Is Aspose.Words voor .NET gratis te gebruiken?
 

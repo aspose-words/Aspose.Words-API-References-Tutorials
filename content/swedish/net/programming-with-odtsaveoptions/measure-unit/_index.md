@@ -38,7 +38,7 @@ Först måste du definiera sökvägen till din dokumentkatalog. Det är här dit
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENTS DIRECTORY"` med den faktiska sökvägen till din katalog. Detta säkerställer att din kod vet var du kan hitta ditt Word-dokument.
+ Ersätta`"YOUR DOCUMENTS DIRECTORY"` med den faktiska sökvägen till din katalog. Detta säkerställer att din kod vet var du kan hitta ditt Word-dokument.
 
 ## Steg 2: Ladda Word-dokumentet
 
@@ -89,7 +89,7 @@ Aspose.Words för .NET är ett kraftfullt bibliotek för att arbeta med Word-dok
  Ja, du kan ladda ner en gratis testversion av Aspose.Words för .NET från[här](https://releases.aspose.com/).
 
 ### Var kan jag hitta dokumentation för Aspose.Words för .NET?
- Du kan få tillgång till omfattande dokumentation för Aspose.Words för .NET på[den här länken](https://reference.aspose.com/words/net/).
+ Du kan få tillgång till omfattande dokumentation för Aspose.Words för .NET på[denna länk](https://reference.aspose.com/words/net/).
 
 ### Hur kan jag få support för Aspose.Words för .NET?
- För support kan du besöka Aspose.Words-forumet på[den här länken](https://forum.aspose.com/c/words/8).
+ För support kan du besöka Aspose.Words-forumet på[denna länk](https://forum.aspose.com/c/words/8).

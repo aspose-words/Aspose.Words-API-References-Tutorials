@@ -98,7 +98,7 @@ Hãy coi bước này giống như việc lật qua cuốn sách và ghi lại t
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã sử dụng thành công Aspose.Words cho .NET để tải tài liệu Word và trích xuất các biến của nó. Bằng cách làm theo các bước này, bạn có thể dễ dàng thao tác với tài liệu Word trong ứng dụng .NET của mình. Hãy tiếp tục thử nghiệm và khám phá các tính năng của thư viện để xem bạn có thể đạt được những gì khác.
+Và bạn có nó! Bạn đã sử dụng thành công Aspose.Words cho .NET để tải tài liệu Word và trích xuất các biến của nó. Bằng cách làm theo các bước này, bạn có thể dễ dàng thao tác với tài liệu Word trong ứng dụng .NET của mình. Hãy tiếp tục thử nghiệm và khám phá các tính năng của thư viện để xem bạn có thể đạt được những gì khác.
 
 ## Câu hỏi thường gặp
 

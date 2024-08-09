@@ -112,7 +112,7 @@ Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal" : "Documents
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã so sánh thành công hai tài liệu Word bằng Aspose.Words cho .NET. Quá trình này có thể là cứu cánh thực sự khi bạn đang làm việc trong các dự án lớn và cần đảm bảo tính nhất quán và chính xác. Hãy nhớ rằng điều quan trọng là phải thiết lập các tùy chọn so sánh một cách cẩn thận để điều chỉnh việc so sánh phù hợp với nhu cầu cụ thể của bạn. Chúc mừng mã hóa!
+Và bạn có nó! Bạn đã so sánh thành công hai tài liệu Word bằng Aspose.Words cho .NET. Quá trình này có thể là cứu cánh thực sự khi bạn đang làm việc trong các dự án lớn và cần đảm bảo tính nhất quán và chính xác. Hãy nhớ rằng điều quan trọng là phải thiết lập các tùy chọn so sánh một cách cẩn thận để điều chỉnh việc so sánh phù hợp với nhu cầu cụ thể của bạn. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 

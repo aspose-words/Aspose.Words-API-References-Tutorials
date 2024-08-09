@@ -26,7 +26,7 @@ public void exportRoundtripInformation() throws Exception {
 ```
 
 ## 3. フォントをBase64としてエクスポートする
-とともに`exportFontsAsBase64`この方法を使用すると、文書で使用されているフォントを HTML 内の Base64 エンコード データとしてエクスポートできます。これにより、HTML 表現で元の Word 文書と同じフォント スタイルが保持されます。
+と`exportFontsAsBase64`この方法を使用すると、文書で使用されているフォントを HTML 内の Base64 エンコード データとしてエクスポートできます。これにより、HTML 表現で元の Word 文書と同じフォント スタイルが保持されます。
 
 ```java
 @Test
@@ -75,7 +75,7 @@ public void convertMetafilesToSvg() throws Exception {
 ```
 
 ## 7. CSSクラス名プレフィックスを追加する
-とともに`addCssClassNamePrefix`メソッドを使用すると、エクスポートされた HTML 内の CSS クラス名にプレフィックスを追加できます。これにより、既存のスタイルとの競合を防ぐことができます。
+と`addCssClassNamePrefix`メソッドを使用すると、エクスポートされた HTML 内の CSS クラス名にプレフィックスを追加できます。これにより、既存のスタイルとの競合を防ぐことができます。
 
 ```java
 @Test

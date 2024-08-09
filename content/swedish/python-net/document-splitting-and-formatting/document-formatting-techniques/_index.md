@@ -160,7 +160,7 @@ pip install aspose-words
 ```
 
 ### Kan jag använda olika stilar på stycken och rubriker?
- Ja, du kan använda olika stilar på stycken och rubriker med hjälp av`paragraph_format.style` fast egendom.
+ Ja, du kan använda olika stilar på stycken och rubriker med hjälp av`paragraph_format.style` egendom.
 
 ### Är det möjligt att lägga till bilder i mina dokument?
  Absolut! Du kan infoga bilder i dina dokument med hjälp av`insert_image` metod.

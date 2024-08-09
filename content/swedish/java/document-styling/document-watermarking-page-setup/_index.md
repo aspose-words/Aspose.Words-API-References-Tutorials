@@ -15,7 +15,7 @@ När det gäller dokumentmanipulation står Aspose.Words för Java som ett kraft
 
 ### Lägga till vattenstämplar
 
-Att lägga till vattenstämplar i dokument kan vara avgörande för att skapa varumärke eller säkra ditt innehåll. Aspose.Words för Java gör denna uppgift enkel. Här är hur:
+Att lägga till vattenstämplar i dokument kan vara avgörande för att skapa varumärke eller säkra ditt innehåll. Aspose.Words för Java gör denna uppgift enkel. Så här gör du:
 
 ```java
 // Ladda dokumentet
@@ -45,7 +45,7 @@ doc.save("document_with_watermark.docx");
 
 Du kan anpassa vattenstämplar ytterligare genom att justera teckensnitt, storlek, färg och rotation. Denna flexibilitet säkerställer att din vattenstämpel matchar ditt dokuments stil sömlöst.
 
-## Utskriftsformat
+## Sidinställningar
 
 ### Sidstorlek och orientering
 

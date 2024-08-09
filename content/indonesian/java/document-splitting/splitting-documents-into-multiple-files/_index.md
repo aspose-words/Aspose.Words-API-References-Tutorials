@@ -56,7 +56,7 @@ Kode ini menyimpan setiap bagian yang terpisah dengan nama file seperti "split-p
 Untuk membagi dokumen berdasarkan kata kunci, Anda dapat menelusuri konten dokumen dan mencari kata kuncinya. Jika Anda menemukannya, buat dokumen baru dan tambahkan konten hingga titik tersebut.
 
 ### Bisakah saya membagi dokumen menjadi file PDF?
-Ya kamu bisa. Setelah memisahkan dokumen menggunakan Aspose.Words for Java, Anda dapat menggunakan Aspose.PDF for Java untuk menyimpan setiap bagian sebagai file PDF.
+Ya, kamu bisa. Setelah memisahkan dokumen menggunakan Aspose.Words for Java, Anda dapat menggunakan Aspose.PDF for Java untuk menyimpan setiap bagian sebagai file PDF.
 
 ### Apakah Aspose.Words untuk Java gratis untuk digunakan?
 Aspose.Words untuk Java adalah perpustakaan komersial, tetapi menawarkan uji coba gratis. Anda dapat memeriksa harga dan lisensinya di situs web mereka.

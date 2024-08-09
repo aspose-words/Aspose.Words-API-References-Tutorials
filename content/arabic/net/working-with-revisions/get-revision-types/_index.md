@@ -2,100 +2,102 @@
 title: الحصول على أنواع المراجعة من الكلمات
 linktitle: الحصول على أنواع المراجعة من الكلمات
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: احصل على أنواع مراجعة الكلمات في مستند Word باستخدام Aspose.Words لـ .NET.
+description: تعرف على كيفية الحصول على أنواع مراجعة الكلمات في مستند Word باستخدام Aspose.Words لـ .NET. يساعدك هذا الدليل التفصيلي خطوة بخطوة على التعامل مع مراجعات المستندات بكفاءة.
 type: docs
 weight: 10
 url: /ar/net/working-with-revisions/get-revision-types/
 ---
+## مقدمة
 
-في هذا الدليل خطوة بخطوة، سنخبرك بكيفية الحصول على أنواع مراجعات الكلمات في مستند Word باستخدام Aspose.Words for .NET. سنزودك بكود المصدر الكامل ونوضح لك كيفية تنسيق مخرجات تخفيض السعر.
+هل وجدت نفسك يومًا غارقًا في بحر من مراجعات المستندات، وتتساءل من الذي قام بنقل ماذا ومتى؟ أنت لست وحدك. يمكن أن تكون معالجة مراجعات المستندات مهمة شاقة، خاصة عند التعامل مع مستندات واسعة النطاق. ولكن لا تقلق! باستخدام Aspose.Words for .NET، يمكنك بسهولة التعرف على هذه المراجعات وإدارتها. في هذا الدليل، سنرشدك خلال عملية خطوة بخطوة حول كيفية الحصول على أنواع مراجعة الكلمات في مستند Word باستخدام Aspose.Words for .NET. لذا، اربطوا حزام الأمان، ودعنا نتعمق!
 
-## الخطوة 1: تحميل الوثيقة
+## المتطلبات الأساسية
 
-الخطوة الأولى هي تحميل المستند الذي يحتوي على المراجعات.
+قبل أن نبدأ في استخدام بعض التعليمات البرمجية، هناك بعض الأشياء التي ستحتاج إليها:
+
+1.  Aspose.Words for .NET Library: إذا لم تكن قد قمت بذلك بالفعل، فقم بتنزيله من[هنا](https://releases.aspose.com/words/net/).
+2. بيئة التطوير: Visual Studio أو أي بيئة تطوير متكاملة أخرى متوافقة مع .NET.
+3. المعرفة الأساسية بـ C#: سيكون فهم لغة البرمجة C# مفيدًا.
+4.  مستند Word مع المراجعات: تأكد من أن لديك`.docx`ملف بالتغييرات المتعقبة لاختبار الكود.
+
+## استيراد مساحات الأسماء
+
+للبدء، ستحتاج إلى استيراد مساحات الأسماء الضرورية في مشروع C# الخاص بك. سيسمح لك هذا بالوصول إلى الوظائف التي يوفرها Aspose.Words لـ .NET.
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
+using Aspose.Words;
+using Aspose.Words.Revision;
+using System;
 ```
 
-## الخطوة 2: انتقل من خلال الفقرات
+دعنا نقسم المثال إلى خطوات متعددة لفهم وتنفيذ أفضل.
 
-بعد ذلك، سنستعرض فقرات المستند ونتحقق من أنواع مراجعات الكلمات المرتبطة بكل فقرة.
+## الخطوة 1: قم بإعداد دليل المستندات الخاص بك
+
+أول الأشياء أولاً، تحتاج إلى تحديد المسار إلى دليل المستندات الخاص بك. هذا هو المكان الذي سيتم فيه وضع مستند Word الخاص بك مع المراجعات.
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+ يستبدل`"YOUR DOCUMENT DIRECTORY"` بالمسار الفعلي إلى مجلد المستندات الخاص بك.
+
+## الخطوة 2: قم بتحميل مستند Word الخاص بك
+
+بعد ذلك، تحتاج إلى تحميل مستند Word في مشروعك. يجب أن تحتوي هذه الوثيقة على المراجعات التي تريد تحليلها.
+
+```csharp
+Document doc = new Document(dataDir + "Revisions.docx");
+```
+
+ تأكد من أن الملف`Revisions.docx` موجود في الدليل المحدد.
+
+## الخطوة 3: الوصول إلى مجموعة الفقرة
+
+الآن بعد أن تم تحميل المستند الخاص بك، تحتاج إلى الوصول إلى الفقرات الموجودة في القسم الأول من نص المستند. سيساعدك هذا على مراجعة كل فقرة للتحقق من المراجعات.
 
 ```csharp
 ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
-for (int i = 0; i < paragraphs.Count; i++)
-{
-     if (paragraphs[i].IsMoveFromRevision)
-         Console.WriteLine("Paragraph {0} has been moved (deleted).", i);
-     if (paragraphs[i].IsMoveToRevision)
-         Console.WriteLine("Paragraph {0} has been moved (inserted).", i);
-}
 ```
 
-### مثال على التعليمات البرمجية المصدر للحصول على أنواع المراجعة باستخدام Aspose.Words لـ .NET
+## الخطوة 4: التكرار خلال الفقرات والتحقق من المراجعات
 
-فيما يلي كود المصدر الكامل للحصول على أنواع المراجعة في مستند باستخدام Aspose.Words for .NET:
+هنا يحدث السحر. ستقوم بالتكرار خلال كل فقرة والتحقق مما إذا تم نقلها (حذفها أو إدراجها).
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
-
-ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
 for (int i = 0; i < paragraphs.Count; i++)
 {
-	 if (paragraphs[i].IsMoveFromRevision)
-		 Console.WriteLine("Paragraph {0} has been moved (deleted).", i);
-	 if (paragraphs[i].IsMoveToRevision)
-		 Console.WriteLine("Paragraph {0} has been moved (inserted).", i);
+    if (paragraphs[i].IsMoveFromRevision)
+        Console.WriteLine("Paragraph {0} has been moved (deleted).", i);
+    if (paragraphs[i].IsMoveToRevision)
+        Console.WriteLine("Paragraph {0} has been moved (inserted).", i);
 }
 ```
+
+ تمر هذه الحلقة خلال كل فقرة وتستخدم`IsMoveFromRevision`و`IsMoveToRevision` الخصائص لتحديد ما إذا كانت الفقرة قد تم نقلها (حذفها) أو نقلها (إدراجها).
 
 ## خاتمة
 
-في هذا البرنامج التعليمي، تعلمنا كيفية الحصول على أنواع مراجعات الكلمات في مستند Word باستخدام Aspose.Words for .NET. لقد اتبعنا خطوات تحميل المستند وتصفح الفقرات والتحقق من أنواع مراجعات الكلمات المرتبطة بكل فقرة. يمكنك الآن تطبيق هذه المعرفة لتحليل مراجعات الكلمات في مستندات Word الخاصة بك باستخدام Aspose.Words for .NET.
+وهنا لديك! باستخدام بضعة أسطر من التعليمات البرمجية، يمكنك بسهولة التعرف على أنواع المراجعات في مستند Word الخاص بك باستخدام Aspose.Words for .NET. تجعل هذه المكتبة القوية التعامل مع مراجعات المستندات أمرًا سهلاً، مما يسمح لك بالتركيز على المهام الأكثر أهمية. 
 
-### الأسئلة الشائعة للحصول على أنواع المراجعة للكلمات
+## الأسئلة الشائعة
 
-#### س: كيفية تحميل مستند في Aspose.Words لـ .NET؟
+### هل يمكنني استخدام Aspose.Words for .NET لتتبع التغييرات التي أجراها مستخدمون محددون؟
 
- ج: استخدم`Document` فئة Aspose.Words لـ .NET لتحميل مستند من ملف. يمكنك تحديد مسار المستند بالكامل.
+نعم، يوفر Aspose.Words for .NET وظيفة للوصول إلى تفاصيل المراجعة، بما في ذلك مؤلف التغييرات.
 
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
+### هل تتوفر نسخة تجريبية مجانية من Aspose.Words لـ .NET؟
 
-#### س: كيف يمكنني تكرار الفقرات في مستند في Aspose.Words لـ .NET؟
+ قطعاً! يمكنك الحصول على نسخة تجريبية مجانية[هنا](https://releases.aspose.com/).
 
- ج: استخدم`Paragraphs` خاصية قسم الوثيقة للحصول على مجموعة الفقرات. يمكنك بعد ذلك استخدام حلقة للتكرار خلال كل فقرة.
+### كيف يمكنني تطبيق ترخيص مؤقت لـ Aspose.Words لـ .NET؟
 
-```csharp
-ParagraphCollection paragraphs = doc.FirstSection.Body.Paragraphs;
-for (int i = 0; i < paragraphs.Count; i++)
-{
-     // معالجة كل فقرة هنا
-}
-```
+ يمكنك طلب وتطبيق ترخيص مؤقت من[هنا](https://purchase.aspose.com/temporary-license/).
 
-#### س: كيف يمكن التحقق من نقل فقرة (حذفها) في Aspose.Words لـ .NET؟
+### أين يمكنني العثور على وثائق أكثر تفصيلاً حول Aspose.Words for .NET؟
 
- ج: استخدم فقرة`IsMoveFromRevision`الخاصية للتحقق مما إذا تم نقلها (حذفها).
+ الوثائق التفصيلية متاحة على[موقع أسبوز](https://reference.aspose.com/words/net/).
 
-```csharp
-if (paragraph. IsMove
+### هل يمكنني استخدام Aspose.Words لـ .NET في مشروع غير تجاري؟
 
-FromRevision)
-{
-     // تم نقل الفقرة (محذوفة)
-}
-```
-
-#### س: كيف يمكن التحقق من نقل فقرة (إدراجها) في Aspose.Words لـ .NET؟
-
- ج: استخدم فقرة`IsMoveToRevision` الخاصية للتحقق مما إذا تم نقلها (إدراجها).
-
-```csharp
-if (paragraph.IsMoveToRevision)
-{
-     // تم نقل الفقرة (إدراجها)
-}
-```
+نعم، يمكن استخدام Aspose.Words for .NET في المشروعات التجارية وغير التجارية، ولكن تأكد من التحقق من شروط الترخيص.

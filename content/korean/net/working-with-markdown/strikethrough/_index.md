@@ -2,63 +2,78 @@
 title: 취소선
 linktitle: 취소선
 second_title: Aspose.Words 문서 처리 API
-description: Aspose.Words for .NET 단계별 가이드를 통해 취소선 텍스트 스타일을 적용하는 방법을 알아보세요.
+description: 단계별 가이드를 통해 Aspose.Words for .NET을 사용하여 텍스트에 취소선 서식을 적용하는 방법을 알아보세요. 문서 처리 기술을 향상시키세요.
 type: docs
 weight: 10
 url: /ko/net/working-with-markdown/strikethrough/
 ---
+## 소개
 
+.NET용 Aspose.Words를 사용하여 텍스트에 취소선 서식을 적용하는 방법에 대한 자세한 가이드에 오신 것을 환영합니다. 문서 처리 기술을 향상시키고 텍스트에 독특한 느낌을 더하고 싶다면 잘 찾아오셨습니다. 뛰어들어보자!
 
-이 예에서는 Aspose.Words for .NET을 사용하여 취소선 텍스트 스타일을 적용하는 방법을 안내합니다. 취소선 텍스트는 텍스트가 삭제되었거나 더 이상 유효하지 않음을 나타내는 데 사용됩니다.
+## 전제 조건
 
-## 1단계: 문서 생성기 사용
+시작하기 전에 다음 사항이 있는지 확인하세요.
 
-먼저 문서 생성기를 사용하여 문서에 콘텐츠를 추가하겠습니다.
+-  .NET용 Aspose.Words: 다운로드[여기](https://releases.aspose.com/words/net/).
+- .NET Framework: 시스템에 .NET Framework가 설치되어 있는지 확인하십시오.
+- 개발 환경: Visual Studio와 같은 IDE.
+- C# 기본 지식: C# 프로그래밍에 대한 지식이 필요합니다.
+
+## 네임스페이스 가져오기
+
+시작하려면 필요한 네임스페이스를 가져와야 합니다. 이는 Aspose.Words 라이브러리와 해당 기능에 액세스하는 데 필수적입니다.
 
 ```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## 1단계: DocumentBuilder 초기화
+
+ 그만큼`DocumentBuilder` 클래스는 문서에 콘텐츠를 쉽게 추가할 수 있게 해주는 Aspose.Words의 강력한 도구입니다.
+
+```csharp
+// DocumentBuilder를 초기화합니다.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## 2단계: 취소선 텍스트 스타일 적용
+## 2단계: 취소선 속성 설정
 
- 취소선 텍스트 스타일을 활성화하려면`StrikeThrough` 의 재산`Font` 반대하다`true`.
-
-```csharp
-builder.Font.StrikeThrough = true;
-```
-
-## 3단계: 취소선 텍스트 추가
-
- 이제 문서 생성기의`Writeln` 방법.
+이제 텍스트에 취소선 속성을 적용해 보겠습니다. 여기에는`StrikeThrough` 의 재산`Font` 반대하다`true`.
 
 ```csharp
-builder.Writeln("This text will be StrikeThrough");
-```
-
-
-### .NET용 Aspose.Words를 사용한 취소선 텍스트의 예제 소스 코드
-
-```csharp
-// 문서 빌더를 사용하여 문서에 콘텐츠를 추가합니다.
-DocumentBuilder builder = new DocumentBuilder();
-
 // 텍스트를 취소선으로 만듭니다.
 builder.Font.StrikeThrough = true;
+```
+
+## 3단계: 취소선이 있는 텍스트 작성
+
+ 취소선 속성을 설정하면 이제 텍스트를 추가할 수 있습니다. 그만큼`Writeln` 메소드는 문서에 텍스트를 추가합니다.
+
+```csharp
+// 취소선을 사용하여 텍스트를 작성합니다.
 builder.Writeln("This text will be StrikeThrough");
 ```
 
-축하합니다! 이제 Aspose.Words for .NET을 사용하여 취소선 텍스트 스타일을 적용하는 방법을 배웠습니다.
+## 결론
 
-### FAQ
+그리고 거기에 있습니다! Aspose.Words for .NET을 사용하여 텍스트에 취소선 서식을 성공적으로 추가했습니다. 이 강력한 라이브러리는 문서 처리 및 사용자 정의에 대한 가능성의 세계를 열어줍니다. 보고서, 편지 또는 기타 유형의 문서를 작성하든 이러한 기능을 익히면 생산성과 출력 품질이 확실히 향상됩니다.
 
-#### Q: Aspose.Words에 취소선 텍스트를 어떻게 추가할 수 있나요?
+## FAQ
 
- A: Aspose.Words에 취소선 텍스트를 추가하려면`Font.StrikeThrough` 의 재산`Run` 물체. 이 속성을 다음과 같이 설정할 수 있습니다.`true` 특정 텍스트에 취소선 텍스트를 추가하려면 예를 들어 다음을 사용할 수 있습니다.`run.Font.StrikeThrough=true` 취소선 텍스트를`Run` 물체.
+### .NET용 Aspose.Words란 무엇입니까?
+Aspose.Words for .NET은 개발자가 프로그래밍 방식으로 Word 문서를 생성, 조작 및 변환할 수 있는 강력한 문서 처리 라이브러리입니다.
 
-#### Q: 같은 단락의 여러 텍스트에 취소선 텍스트를 추가할 수 있습니까?
+### 상용 프로젝트에서 Aspose.Words for .NET을 사용할 수 있나요?
+ 예, 상업용 프로젝트에서 .NET용 Aspose.Words를 사용할 수 있습니다. 구매 옵션을 확인하려면 다음을 방문하세요.[구매 페이지](https://purchase.aspose.com/buy).
 
- A: 예, 여러 가지 옵션을 사용하여 단일 단락에 있는 텍스트의 여러 부분에 취소선 텍스트를 추가할 수 있습니다.`Run` 사물. 여러 개를 생성할 수 있습니다.`Run` 객체를 설정하고`Font.StrikeThrough`재산`true` 각 개체에 대해 취소선 텍스트를 원하는 텍스트 부분에 추가합니다. 그런 다음 다음을 사용하여 단락에 추가할 수 있습니다.`Paragraph.AppendChild(run)` 방법.
+### .NET용 Aspose.Words에 대한 무료 평가판이 있습니까?
+ 예, 무료 평가판을 다운로드할 수 있습니다[여기](https://releases.aspose.com/).
 
-#### Q: Aspose.Words의 테이블이나 셀에 있는 텍스트에 취소선 텍스트를 추가할 수 있나요?
+### .NET용 Aspose.Words에 대한 지원을 받으려면 어떻게 해야 합니까?
+Aspose 커뮤니티와 전문가로부터 지원을 받을 수 있습니다.[지원 포럼](https://forum.aspose.com/c/words/8).
 
- A: 예, Aspose.Words의 테이블이나 셀에 있는 텍스트에 취소선 텍스트를 추가할 수 있습니다. 적절한 방법을 사용하여 원하는 셀이나 단락으로 이동한 다음`Font.StrikeThrough` 의 재산`Run` 또는`Paragraph` 물체.
+### .NET용 Aspose.Words를 사용하여 다른 텍스트 서식 옵션을 적용할 수 있나요?
+전적으로! Aspose.Words for .NET은 굵게, 기울임꼴, 밑줄 등을 포함한 광범위한 텍스트 서식 옵션을 지원합니다.

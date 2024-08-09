@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/unlink-headers-footers/
 ---
-## Úvod
+## Zavedení
 
 Ve světě zpracování dokumentů může být někdy problém udržet konzistentní záhlaví a zápatí. Ať už slučujete dokumenty nebo jen chcete mít různá záhlaví a zápatí pro různé sekce, vědět, jak je odpojit, je zásadní. Dnes se ponoříme do toho, jak toho můžete dosáhnout pomocí Aspose.Words pro .NET. Rozebereme to krok za krokem, abyste to mohli snadno sledovat. Jste připraveni zvládnout manipulaci s dokumenty? Začněme!
 

@@ -16,4 +16,4 @@ Belgeleri dönüştürmeniz, içeriği değiştirmeniz, biçimlendirmeyi yönetm
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Ölçü birimi](./measure-unit/) | ODT dönüşümü sırasında belge formatını korumak için Aspose.Words for .NET'te ölçü birimi özelliğini nasıl yapılandıracağınızı öğrenin. |
+| [Ölçü Birimi](./measure-unit/) | ODT dönüşümü sırasında belge formatını korumak için Aspose.Words for .NET'te ölçü birimi özelliğini nasıl yapılandıracağınızı öğrenin. |

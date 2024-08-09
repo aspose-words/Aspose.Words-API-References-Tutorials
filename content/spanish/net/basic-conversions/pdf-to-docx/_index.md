@@ -85,7 +85,7 @@ Sí, puede recorrer varios archivos PDF y convertir cada uno de ellos utilizando
 Sí, Aspose.Words hace un excelente trabajo al preservar el formato original.
 
 ### ¿Necesito una licencia para usar Aspose.Words para .NET?
- Si bien puede utilizar una licencia temporal para la evaluación, deberá adquirir una licencia completa para uso comercial. Revisar la[pagina de compra](https://purchase.aspose.com/buy) para más detalles.
+ Si bien puede utilizar una licencia temporal para la evaluación, deberá adquirir una licencia completa para uso comercial. Mira el[pagina de compra](https://purchase.aspose.com/buy) para más detalles.
 
 ### ¿Puedo usar Aspose.Words para .NET en diferentes sistemas operativos?
 Sí, Aspose.Words para .NET es multiplataforma y se puede utilizar en Windows, Linux y macOS.

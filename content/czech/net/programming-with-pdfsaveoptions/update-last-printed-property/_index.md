@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/update-last-printed-property/
 ---
-## Úvod
+## Zavedení
 
 Chcete aktualizovat poslední vytištěnou vlastnost v dokumentu PDF? Možná spravujete velké množství dokumentů a potřebujete mít přehled o tom, kdy byly naposledy vytištěny. Ať už je váš důvod jakýkoli, aktualizace této vlastnosti může být neuvěřitelně užitečná as Aspose.Words pro .NET je to hračka! Pojďme se ponořit do toho, jak toho můžete dosáhnout.
 
@@ -15,7 +15,7 @@ Chcete aktualizovat poslední vytištěnou vlastnost v dokumentu PDF? Možná sp
 
 Než začneme, ujistěte se, že máte splněny následující předpoklady:
 
--  Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Pokud jste tak ještě neučinili, můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Pokud jste tak ještě neučinili, můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Vývojové prostředí jako Visual Studio.
 - Základní porozumění C#: Určitá znalost C# bude užitečná.
 - Dokument: Dokument aplikace Word, který chcete převést do formátu PDF a aktualizovat poslední vytištěnou vlastnost.
@@ -83,7 +83,7 @@ Aktualizace poslední vlastnosti tisku pomáhá při sledování využití dokum
 Ano, Aspose.Words for .NET umožňuje aktualizovat různé vlastnosti dokumentu, jako je autor, název, předmět a další.
 
 ### Je Aspose.Words for .NET zdarma?
-Aspose.Words for .NET nabízí bezplatnou zkušební verzi, kterou si můžete stáhnout[tady](https://releases.aspose.com/). Pro rozšířené použití byste si museli zakoupit licenci.
+Aspose.Words for .NET nabízí bezplatnou zkušební verzi, kterou si můžete stáhnout[zde](https://releases.aspose.com/). Pro rozšířené použití byste si museli zakoupit licenci.
 
 ### Kde najdu další dokumentaci k Aspose.Words pro .NET?
-Podrobnou dokumentaci najdete na Aspose.Words pro .NET[tady](https://reference.aspose.com/words/net/).
+Podrobnou dokumentaci najdete na Aspose.Words pro .NET[zde](https://reference.aspose.com/words/net/).

@@ -9,7 +9,7 @@ url: /tr/net/programming-with-markdownsaveoptions/export-into-markdown-with-tabl
 ---
 ## giriiş
 
-Selam! Mükemmel hizalanmış tablolarla Word belgenizi Markdown formatına nasıl aktaracağınızı hiç merak ettiniz mi? İster dokümantasyon üzerinde çalışan bir geliştirici olun, ister yalnızca Markdown'u seven biri olun, bu kılavuz tam size göre. Bunu başarmak için Aspose.Words for .NET'i kullanmanın en ince ayrıntısına kadar inceleyeceğiz. Word tablolarınızı düzgünce hizalanmış Markdown tablolarına dönüştürmeye hazır mısınız? Başlayalım!
+Selam! Mükemmel hizalanmış tablolarla Word belgenizi Markdown formatına nasıl aktaracağınızı hiç merak ettiniz mi? İster dokümantasyon üzerinde çalışan bir geliştirici olun, ister yalnızca Markdown'u seven biri olun, bu kılavuz tam size göre. Bunu başarmak için Aspose.Words for .NET'i kullanmanın en ince ayrıntısına kadar inceleyeceğiz. Word tablolarınızı düzgünce hizalanmış Markdown tablolarına dönüştürmeye hazır mısınız? Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -97,7 +97,7 @@ doc.Save(dataDir + "AutoTableContentAlignment.md", saveOptions);
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET kullanarak Word belgelerini hizalanmış tablolarla Markdown'a aktarmak, nasıl yapılacağını öğrendikten sonra çok kolaydır. Bu güçlü kitaplık, tablolarınızın biçimlendirmesini ve hizalamasını kontrol etmenizi kolaylaştırarak Markdown belgelerinizin tam istediğiniz gibi görünmesini sağlar. Mutlu kodlama!
+Ve işte karşınızda! Aspose.Words for .NET kullanarak Word belgelerini hizalanmış tablolarla Markdown'a aktarmak, nasıl yapılacağını öğrendikten sonra çok kolaydır. Bu güçlü kitaplık, tablolarınızın biçimlendirmesini ve hizalamasını kontrol etmenizi kolaylaştırarak Markdown belgelerinizin tam istediğiniz gibi görünmesini sağlar. Mutlu kodlama!
 
 ## SSS'ler
 
@@ -108,7 +108,7 @@ Aspose.Words for .NET, geliştiricilerin Word belgelerini programlı olarak olu�
  Evet, kullanarak`Auto` hizalama seçeneğini kullanarak, her sütundaki ilk paragrafa göre farklı hizalamalara sahip olabilirsiniz.
 
 ### Aspose.Words for .NET'i kullanmak için lisansa ihtiyacım var mı?
- Evet, Aspose.Words for .NET tam işlevsellik için lisans gerektirir. Alabilirsin[geçici lisans](https://purchase.aspose.com/temporary-license/) Evrim için.
+ Evet, Aspose.Words for .NET tam işlevsellik için lisans gerektirir. Alabilirsin[geçici lisans](https://purchase.aspose.com/temporary-license/) değerlendirme için.
 
 ### Aspose.Words kullanarak diğer belge öğelerini Markdown'a aktarmak mümkün müdür?
 Evet, Aspose.Words başlıklar, listeler ve resimler gibi çeşitli öğelerin Markdown formatına aktarılmasını destekler.

@@ -30,7 +30,7 @@ builder.endBookmark("My Bookmark");
 
 ## الخطوة 2: الوصول إلى الإشارات المرجعية
 
-يمكنك الوصول إلى الإشارات المرجعية في المستند باستخدام فهرسها أو اسمها. إليك الطريقة:
+يمكنك الوصول إلى الإشارات المرجعية في المستند باستخدام فهرسها أو اسمها. وإليك الطريقة:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Bookmarks.docx");
@@ -57,7 +57,7 @@ bookmark.setText("This is new bookmarked text.");
 
 ## الخطوة 4: العمل مع النص الذي تم وضع إشارة مرجعية عليه
 
-يمكنك نسخ النص الذي تم وضع إشارة مرجعية عليه وإضافته إلى مستند آخر. إليك الطريقة:
+يمكنك نسخ النص الذي تم وضع إشارة مرجعية عليه وإضافته إلى مستند آخر. وإليك الطريقة:
 
 ```java
 Document srcDoc = new Document("Your Directory Path" + "Bookmarks.docx");
@@ -111,6 +111,6 @@ doc.save("Your Directory Path" + "WorkingWithBookmarks.UntangleRowBookmarks.docx
 
 تُستخدم الإشارات المرجعية بشكل شائع لإنشاء جدول المحتويات واستخراج محتوى محدد وأتمتة عمليات إنشاء المستندات.
 
-### أين يمكنني العثور على مزيد من المعلومات حول Aspose.Words لـ Java؟
+### أين يمكنني العثور على مزيد من المعلومات حول Aspose.Words for Java؟
 
  للحصول على الوثائق التفصيلية والتنزيلات، تفضل بزيارة[Aspose.Words لتوثيق جافا](https://reference.aspose.com/words/java/).

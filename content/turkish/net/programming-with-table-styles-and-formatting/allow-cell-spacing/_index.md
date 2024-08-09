@@ -29,7 +29,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-## Adım adım rehber
+## Adım Adım Kılavuz
 
 Şimdi bir tabloda hücre aralığına izin verme sürecini takip edilmesi kolay adımlara ayıralım.
 
@@ -81,7 +81,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 
 ### Adım 4.1: Hücre Aralığına İzin Ver
 
- Yı kur`AllowCellSpacing` tablonun özelliği`true`.
+ Ayarla`AllowCellSpacing` tablonun özelliği`true`.
 
 ```csharp
 table.AllowCellSpacing = true;
@@ -99,7 +99,7 @@ table.CellSpacing = 2;
 
 Son olarak değiştirilen belgeyi belirttiğiniz dizine kaydedin.
 
- Kullan`Save` Belgenizi kaydetme yöntemi.
+ Kullanın`Save` Belgenizi kaydetme yöntemi.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.AllowCellSpacing.docx");

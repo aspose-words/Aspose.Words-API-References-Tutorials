@@ -73,9 +73,9 @@ Memisahkan dokumen Word berdasarkan rentang halaman menggunakan Aspose.Words unt
 
 ### Bisakah saya membagi beberapa rentang halaman sekaligus?
 
-Ya kamu bisa. Anda harus mengulangi proses ekstraksi untuk setiap rentang yang Anda perlukan dan menyimpannya sebagai dokumen terpisah.
+Ya, kamu bisa. Anda harus mengulangi proses ekstraksi untuk setiap rentang yang Anda perlukan dan menyimpannya sebagai dokumen terpisah.
 
-### Bagaimana jika saya perlu membagi berdasarkan bagian tertentu, bukan rentang halaman?
+### Bagaimana jika saya perlu membagi berdasarkan bagian tertentu, bukan berdasarkan rentang halaman?
 
 Aspose.Words menyediakan berbagai metode untuk memanipulasi bagian dokumen. Anda dapat mengekstrak bagian dengan cara yang sama dengan mengidentifikasi awal dan akhir bagian.
 

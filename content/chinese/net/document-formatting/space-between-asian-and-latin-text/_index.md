@@ -20,7 +20,7 @@ url: /zh/net/document-formatting/space-between-asian-and-latin-text/
 3. C# 基础知识：您不需要成为一名巫师，但稍微熟悉一下就会有很大帮助。
 4. 有效许可证：获取免费试用[这里](https://releases.aspose.com/)或购买许可证[这里](https://purchase.aspose.com/buy).
 
-好了，一切都搞定了？太棒了！让我们开始动手吧。
+好了，一切都搞定了？太棒了！让我们开始吧。
 
 ## 导入命名空间
 

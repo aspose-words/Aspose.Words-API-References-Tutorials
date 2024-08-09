@@ -15,7 +15,7 @@ url: /ja/net/programming-with-tables/formatted-table/
 
 コードに進む前に、必要なものがすべて揃っていることを確認しましょう。
 
-1. Aspose.Words for .NETライブラリ: ダウンロードはこちらから[ここ](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NETライブラリ: ダウンロードはこちら[ここ](https://releases.aspose.com/words/net/).
 2. 開発環境: Visual Studio のような IDE。
 3. .NET Framework: マシンに .NET Framework がインストールされていることを確認します。
 

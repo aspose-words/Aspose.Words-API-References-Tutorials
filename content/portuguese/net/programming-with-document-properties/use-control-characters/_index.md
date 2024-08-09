@@ -72,7 +72,7 @@ doc.Range.Replace(oldText, newText, new FindReplaceOptions());
 
 ## Etapa 4: Manipulação de caracteres de controle
 
-### Compreendendo os personagens de controle
+### Compreendendo os caracteres de controle
 
  Caracteres de controle são caracteres especiais que você pode querer substituir. Por exemplo, vamos substituir o`\r` controlar personagem com`\r\n`.
 
@@ -107,7 +107,7 @@ Parabéns! Você acabou de dar os primeiros passos no mundo da automação de do
 Aspose.Words for .NET é uma biblioteca que permite aos desenvolvedores criar, modificar e converter documentos do Word programaticamente.
 
 ### Posso usar o Aspose.Words gratuitamente?
- Você pode experimentá-lo gratuitamente baixando um[teste grátis](https://releases.aspose.com/). Para obter todos os recursos, você precisará adquirir uma licença.
+ Você pode experimentá-lo gratuitamente baixando um[teste gratuito](https://releases.aspose.com/). Para obter todos os recursos, você precisará adquirir uma licença.
 
 ### Quais formatos o Aspose.Words pode manipular?
 Suporta uma variedade de formatos, incluindo .doc, .docx, .pdf, .html e muito mais.
@@ -116,4 +116,4 @@ Suporta uma variedade de formatos, incluindo .doc, .docx, .pdf, .html e muito ma
 O conhecimento básico de C# é útil, mas a biblioteca foi projetada para ser fácil de usar para desenvolvedores de todos os níveis.
 
 ### Onde posso encontrar mais informações ou obter suporte?
- Confira a[Documentação Aspose.Words](https://reference.aspose.com/words/net/) ou visite o[Fórum de suporte](https://forum.aspose.com/c/words/8).
+ Confira o[Documentação Aspose.Words](https://reference.aspose.com/words/net/) ou visite o[fórum de suporte](https://forum.aspose.com/c/words/8).

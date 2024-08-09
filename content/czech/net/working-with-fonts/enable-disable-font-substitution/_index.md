@@ -2,88 +2,115 @@
 title: Povolit Zakázat nahrazování písem
 linktitle: Povolit Zakázat nahrazování písem
 second_title: Aspose.Words API pro zpracování dokumentů
-description: tomto kurzu se dozvíte, jak povolit nebo zakázat nahrazování písem v dokumentu aplikace Word pomocí Aspose.Words for .NET.
+description: Přečtěte si, jak povolit nebo zakázat nahrazování písem v dokumentech aplikace Word pomocí Aspose.Words for .NET. Zajistěte, aby vaše dokumenty vypadaly konzistentně na všech platformách.
 type: docs
 weight: 10
 url: /cs/net/working-with-fonts/enable-disable-font-substitution/
 ---
-V tomto tutoriálu vás provedeme tím, jak povolit nebo zakázat nahrazování písem v dokumentu aplikace Word při vykreslování pomocí knihovny Aspose.Words pro .NET. Povolení nebo zakázání nahrazování písem vám umožňuje řídit, zda budou chybějící písma automaticky nahrazena výchozím písmem. Provedeme vás krok za krokem, abychom vám pomohli pochopit a implementovat kód ve vašem projektu .NET.
+## Zavedení
+
+Ocitli jste se někdy v situaci, kdy jsou vaše pečlivě vybraná písma v dokumentu aplikace Word nahrazena při zobrazení na jiném počítači? Nepříjemné, že? To se děje kvůli substituci písem, což je proces, kdy systém nahradí chybějící písmo dostupným písmem. Ale nebojte se! S Aspose.Words for .NET můžete snadno spravovat a ovládat nahrazování písem. V tomto tutoriálu vás provedeme kroky, jak povolit nebo zakázat nahrazování písem v dokumentech aplikace Word, aby vaše dokumenty vždy vypadaly tak, jak chcete.
 
 ## Předpoklady
-Než začnete, ujistěte se, že máte následující položky:
-- Pracovní znalost programovacího jazyka C#
-- Knihovna Aspose.Words pro .NET nainstalovaná ve vašem projektu
-- Dokument aplikace Word, který chcete vykreslit s nebo bez nahrazení písem
 
-## Krok 1: Definujte adresář dokumentů
- Nejprve musíte nastavit cestu k adresáři na umístění vašeho dokumentu aplikace Word. Nahradit`"YOUR DOCUMENT DIRECTORY"` v kódu s příslušnou cestou.
+Než se ponoříte do kroků, ujistěte se, že máte vše, co potřebujete:
+
+-  Aspose.Words for .NET: Stáhněte si nejnovější verzi[zde](https://releases.aspose.com/words/net/).
+- Visual Studio: Jakákoli verze podporující .NET.
+- Základní znalost C#: To vám pomůže sledovat spolu s příklady kódování.
+
+## Importovat jmenné prostory
+
+Chcete-li začít, ujistěte se, že máte do projektu importovány potřebné jmenné prostory. Přidejte je do horní části souboru C#:
 
 ```csharp
-// Cesta k adresáři vašich dokumentů
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Krok 2: Nahrajte dokument a nakonfigurujte nastavení písma
- Dále načteme dokument aplikace Word, který chcete vykreslit, a vytvoříme instanci souboru`FontSettings` třída pro zpracování nastavení písma. Výchozí přepsání písma nastavíme zadáním názvu písma v`DefaultFontName` a zakázat přepsání informací o písmech pomocí`Enabled` nastaven na`false`.
+Nyní si tento proces rozdělíme do jednoduchých, zvládnutelných kroků.
+
+## Krok 1: Nastavte svůj projekt
+
+Nejprve nastavte nový projekt v sadě Visual Studio a přidejte odkaz na knihovnu Aspose.Words for .NET. Pokud jste tak ještě neučinili, stáhněte si jej z[Aspose webové stránky](https://releases.aspose.com/words/net/).
+
+## Krok 2: Vložte svůj dokument
+
+Dále načtěte dokument, se kterým chcete pracovat. Postup je následující:
 
 ```csharp
-// Vložte dokument
-Document doc = new Document(dataDir + "Rendering.docx");
-
-// Konfigurace nastavení písma
-FontSettings fontSettings = new FontSettings();
-fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
-fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
-
-// Použijte nastavení písma na dokument
-doc.FontSettings = fontSettings;
-```
-
-## Krok 3: Uložte vykreslený dokument
-Nakonec uložíme vykreslený dokument, který bude respektovat definovaná nastavení přepisu písma.
-
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
-```
-
-
-### Ukázkový zdrojový kód pro Enable Disable Font Substitution pomocí Aspose.Words for .NET 
-
-```csharp
-
 // Cesta k vašemu adresáři dokumentů
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
-FontSettings fontSettings = new FontSettings();
-fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
-fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
-doc.FontSettings = fontSettings;
-doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
+```
 
+ Nahradit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k vašemu adresáři dokumentů. Tento kód načte dokument do paměti, abyste s ním mohli manipulovat.
+
+## Krok 3: Nakonfigurujte nastavení písma
+
+ Nyní vytvoříme a`FontSettings` objekt pro správu nastavení nahrazování písem:
+
+```csharp
+FontSettings fontSettings = new FontSettings();
+```
+
+## Krok 4: Nastavte výchozí náhradu písma
+
+Nastavte výchozí nahrazování písma na písmo podle vašeho výběru. Toto písmo se použije, pokud původní písmo není k dispozici:
+
+```csharp
+fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
+```
+
+V tomto příkladu používáme jako výchozí písmo Arial.
+
+## Krok 5: Zakažte nahrazování informací o písmu
+
+Chcete-li zakázat nahrazování informací o písmech, které brání systému nahrazovat chybějící písma dostupnými, použijte následující kód:
+
+```csharp
+fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
+```
+
+## Krok 6: Použijte nastavení písma na dokument
+
+Nyní použijte tato nastavení na váš dokument:
+
+```csharp
+doc.FontSettings = fontSettings;
+```
+
+## Krok 7: Uložte dokument
+
+Nakonec upravený dokument uložte. Můžete jej uložit v libovolném formátu. Pro tento tutoriál jej uložíme jako PDF:
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 ```
 
 ## Závěr
-V tomto tutoriálu jsme viděli, jak povolit nebo zakázat nahrazování písem v dokumentu aplikace Word při vykreslování pomocí Aspose.Words for .NET. Řízením nahrazování písem můžete ovlivnit, jak bude ve vašich vykreslených dokumentech naloženo s chybějícími písmy. Neváhejte použít tuto funkci k přizpůsobení správy písem v dokumentech aplikace Word.
 
-### FAQ
+A tady to máte! Pomocí následujících kroků můžete snadno ovládat nahrazování písem v dokumentech aplikace Word pomocí Aspose.Words for .NET. To zajistí, že si vaše dokumenty zachovají svůj zamýšlený vzhled a dojem, bez ohledu na to, kde jsou zobrazeny.
 
-#### Otázka: Jak mohu povolit nahrazování písem v dokumentu aplikace Word pomocí Aspose.Words?
+## FAQ
 
-A: Chcete-li povolit nahrazování písem v dokumentu aplikace Word pomocí Aspose.Words, můžete použít rozhraní API k určení náhradních písem, která se mají použít, když požadovaná písma nejsou k dispozici. To zajistí konzistentní vizualizaci textu i bez původních písem.
+### Mohu pro nahrazování použít jiná písma než Arial?
 
-#### Otázka: Je možné zakázat nahrazování písem v dokumentu aplikace Word pomocí Aspose.Words?
+ Absolutně! Jakékoli písmo dostupné ve vašem systému můžete určit změnou názvu písma v souboru`DefaultFontName` vlastnictví.
 
-Odpověď: Ano, pomocí Aspose.Words můžete zakázat nahrazování písem v dokumentu aplikace Word. Pomocí rozhraní API můžete zabránit Wordu v nahrazení požadovaných písem jinými písmy, čímž se zachová původní vzhled textu.
+### Co se stane, když zadané výchozí písmo není k dispozici?
 
-#### Otázka: Co se stane, když během nahrazování v dokumentu aplikace Word chybí požadovaná písma?
+Pokud výchozí písmo není k dispozici, Aspose.Words použije systémový záložní mechanismus k nalezení vhodné náhrady.
 
-Odpověď: Pokud během nahrazování v dokumentu aplikace Word chybí požadovaná písma, Aspose.Words dokáže tento problém detekovat a poskytnout vám možnosti, jak jej opravit. Můžete se rozhodnout nahradit chybějící písma alternativními písmy nebo zahrnout chybějící písma do dokumentu a zajistit tak správné zobrazení.
+### Mohu po vypnutí znovu povolit nahrazování písem?
 
-#### Otázka: Jak mohu vyřešit chybějící písma při nahrazování v dokumentu aplikace Word pomocí Aspose.Words?
+ Ano, můžete přepínat`Enabled` vlastnictví`FontInfoSubstitution` zpět k`true` pokud chcete znovu povolit nahrazování písem.
 
-Odpověď: Chcete-li vyřešit chybějící písma při nahrazování v dokumentu aplikace Word pomocí Aspose.Words, můžete použít rozhraní API ke zjištění chybějících písem a poskytnutí možností rozlišení. Můžete se rozhodnout nahradit chybějící písma alternativními písmy nebo zahrnout chybějící písma do dokumentu v závislosti na vašich potřebách.
+### Existuje způsob, jak zkontrolovat, která písma jsou nahrazována?
 
-#### Otázka: Je důležité řídit nahrazování písem v dokumentu aplikace Word?
+Ano, Aspose.Words poskytuje metody pro protokolování a sledování nahrazování písem, což vám umožňuje vidět, která písma jsou nahrazována.
 
-Odpověď: Ano, je důležité řídit nahrazování písem v dokumentu aplikace Word, aby byla zachována vizuální integrita textu. Použitím Aspose.Words k povolení nebo zakázání nahrazování písem můžete zajistit použití požadovaných písem a vyhnout se problémům s chybějícími nebo nahrazenými písmy.
+### Mohu tuto metodu použít pro jiné formáty dokumentů kromě DOCX?
+
+Rozhodně! Aspose.Words podporuje různé formáty a tato nastavení písma můžete použít na jakýkoli podporovaný formát.

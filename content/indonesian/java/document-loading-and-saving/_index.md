@@ -15,7 +15,7 @@ Dalam bidang manipulasi dokumen, Aspose.Words untuk Java berdiri sebagai sekutu 
 
 Untuk benar-benar menguasai manipulasi dokumen, pertama-tama seseorang harus memahami seni memuat dokumen secara efisien. Aspose.Words untuk Java membuat tugas ini sangat mudah, dan tutorial kami ada di sini untuk memandu Anda di setiap langkah.
 
-### Mulai
+### Memulai
 
 Langkah pertama dalam perjalanan Anda adalah mengenal dasar-dasarnya. Kami akan memandu Anda melalui proses penyiapan, memastikan bahwa Anda memiliki alat yang diperlukan. Dari mengunduh perpustakaan hingga menginstalnya, kami tidak meninggalkan kebutuhan bisnis yang terlewat.
 
@@ -29,7 +29,7 @@ Bagi mereka yang ingin mendobrak batasan, teknik pemuatan canggih kami memberika
 
 ## Seni Menyimpan Dokumen
 
-Efisiensi tidak berhenti pada pemuatan; itu meluas ke menyimpan dokumen juga. Aspose.Words untuk Java membekali Anda dengan berbagai opsi untuk menyimpan dokumen yang dimanipulasi dengan presisi.
+Efisiensi tidak berhenti pada pemuatan; itu meluas ke penyimpanan dokumen juga. Aspose.Words untuk Java membekali Anda dengan berbagai opsi untuk menyimpan dokumen yang dimanipulasi dengan presisi.
 
 ### Menyimpan dalam Berbagai Format
 

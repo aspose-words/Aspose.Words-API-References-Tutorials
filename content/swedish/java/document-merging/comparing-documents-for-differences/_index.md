@@ -36,7 +36,7 @@ Document docOriginal = new Document("original_document.docx");
 Document docModified = new Document("modified_document.docx");
 ```
 
- Byta ut`"original_document.docx"`och`"modified_document.docx"` med vägarna till dina egna dokument.
+ Ersätta`"original_document.docx"`och`"modified_document.docx"` med vägarna till dina egna dokument.
 
 ## Steg 2: Jämför dokument
 
@@ -50,7 +50,7 @@ comparer.compare();
 
 ## Steg 3: Spara jämförelseresultatet
 
-Efter att ha jämfört dokumenten vill du spara resultatet. Aspose.Words låter dig spara jämförelseresultatet som ett nytt dokument. Här är hur:
+Efter att ha jämfört dokumenten vill du spara resultatet. Aspose.Words låter dig spara jämförelseresultatet som ett nytt dokument. Så här gör du:
 
 ```java
 // Spara jämförelseresultatet

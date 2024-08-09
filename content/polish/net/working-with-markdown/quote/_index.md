@@ -2,53 +2,67 @@
 title: Cytat
 linktitle: Cytat
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak korzystać z cytatów w Aspose.Words dla .NET Przewodnik krok po kroku.
+description: Dowiedz się, jak dodawać cytaty i zagnieżdżone cytaty blokowe do dokumentów programu Word przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z tym przewodnikiem krok po kroku, jak opanować tworzenie dokumentów.
 type: docs
 weight: 10
 url: /pl/net/working-with-markdown/quote/
 ---
+## Wstęp
 
-W tym przykładzie wyjaśnimy, jak korzystać z funkcji cytowania w Aspose.Words for .NET Quote służy do wyróżniania fragmentów tekstu poprzez otaczanie ich specjalną ramką.
+Czy zdarzyło Ci się kiedyś utknąć podczas dodawania cudzysłowów w dokumencie programu Word przy użyciu platformy .NET? To może być naprawdę kłopotliwe, prawda? Ale nie martw się, ponieważ dzisiaj pokażę Ci, jak opanować sztukę wstawiania cudzysłowów w dokumentach za pomocą Aspose.Words dla .NET. Pod koniec tego samouczka będziesz mógł tworzyć dokumenty jak profesjonalista!
 
-## Krok 1: Korzystanie z generatora dokumentów
+Aspose.Words dla .NET to niesamowita biblioteka, dzięki której praca z dokumentami programu Word staje się dziecinnie prosta. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, ten przewodnik przeprowadzi Cię przez wszystko, co musisz wiedzieć o dodawaniu cytatów, w tym zagnieżdżonych cytatów blokowych, w sposób zarówno wciągający, jak i łatwy do zrozumienia. Zatem zanurzmy się!
 
-Najpierw użyjemy generatora dokumentów, aby dodać treść do naszego dokumentu.
+## Warunki wstępne
 
-```csharp
-DocumentBuilder builder = new DocumentBuilder();
-```
+Zanim zaczniemy, musisz przygotować kilka rzeczy:
 
-## Krok 2: Korzystanie z domyślnego stylu cytatu
+-  Aspose.Words dla .NET: Możesz go pobrać[Tutaj](https://releases.aspose.com/words/net/).
+- Środowisko programistyczne .NET: Upewnij się, że masz zainstalowany program Visual Studio lub inne środowisko .NET IDE.
+- Podstawowa znajomość języka C#: W tym samouczku założono, że masz podstawową wiedzę na temat programowania w języku C#.
 
-Aby zastosować do tekstu formatowanie cudzysłowu, użyjemy domyślnego stylu akapitu o nazwie „Cytat”.
+Masz wszystko gotowe? Świetnie! Przejdźmy do sedna importowania przestrzeni nazw i konfigurowania naszego projektu.
 
-```csharp
-builder.ParagraphFormat.StyleName = "Quote";
-builder.Writeln("Blockquote");
-```
+## Importuj przestrzenie nazw
 
-## Krok 3: Tworzenie stylów dla zagnieżdżonych poziomów
-
- Możemy tworzyć style dla zagnieżdżonych poziomów za pomocą`Styles.Add` metoda`Document`obiekt. W tym przykładzie tworzymy styl o nazwie „Cytat1”, który będzie reprezentował zagnieżdżony poziom cytatu.
+Po pierwsze, musimy zaimportować niezbędne przestrzenie nazw, aby móc pracować z Aspose.Words. To jest całkiem proste. Po prostu dodaj następujące dyrektywy using na górze pliku C#:
 
 ```csharp
-Style quoteLevel2 = builder.Document.Styles.Add(StyleType.Paragraph, "Quote1");
-builder.ParagraphFormat.Style = quoteLevel2;
-builder.Document.Styles["Quote1"].BaseStyleName = "Quote";
-builder.Writeln("1. Nested blockquote");
+using Aspose.Words;
+using Aspose.Words.Drawing;
+using Aspose.Words.Tables;
 ```
 
-### Przykładowy kod źródłowy cytatów z Aspose.Words dla .NET
+Te przestrzenie nazw zapewniają dostęp do klas i metod potrzebnych do manipulowania dokumentami programu Word. Podzielmy teraz przykład na łatwe do wykonania kroki.
 
+## Krok 1: Utwórz instancję DocumentBuilder
+
+ Na początek musimy utworzyć instancję pliku`DocumentBuilder` klasa. Klasa ta pozwala nam dodawać treść do naszego dokumentu.
 
 ```csharp
 // Użyj narzędzia do tworzenia dokumentów, aby dodać treść do dokumentu.
 DocumentBuilder builder = new DocumentBuilder();
+```
 
+ The`DocumentBuilder` class to brama do tworzenia i dostosowywania dokumentu. Pomyśl o tym jak o magicznej różdżce do tworzenia dokumentów Word!
+
+## Krok 2: Dodaj cytat blokowy
+
+Następnie dodamy do naszego dokumentu podstawowy cytat blokowy. Domyślnie dokument przechowuje styl cytatu blokowego dla pierwszego poziomu. Oto fragment kodu umożliwiający osiągnięcie tego celu:
+
+```csharp
 // Domyślnie dokument przechowuje styl cytatu blokowego dla pierwszego poziomu.
 builder.ParagraphFormat.StyleName = "Quote";
 builder.Writeln("Blockquote");
+```
 
+Ten kod ustawia styl akapitu na „Cytat” i zapisuje cytat blokowy w dokumencie. Proste, prawda?
+
+## Krok 3: Utwórz style dla poziomów zagnieżdżonych
+
+Teraz trochę urozmaicimy, tworząc style dla zagnieżdżonych poziomów cytatów blokowych. Tutaj sprawy stają się interesujące. Stworzymy nowy styl i ustawimy jego styl podstawowy na „Cytuj”:
+
+```csharp
 // Twórz style dla zagnieżdżonych poziomów poprzez dziedziczenie stylów.
 Style quoteLevel2 = builder.Document.Styles.Add(StyleType.Paragraph, "Quote1");
 builder.ParagraphFormat.Style = quoteLevel2;
@@ -56,23 +70,30 @@ builder.Document.Styles["Quote1"].BaseStyleName = "Quote";
 builder.Writeln("1. Nested blockquote");
 ```
 
-Gratulacje! Nauczyłeś się teraz, jak korzystać z funkcji cytatów w Aspose.Words dla .NET.
+Ten fragment kodu tworzy nowy styl o nazwie „Cytat1”, ustawia swój styl podstawowy na „Cytat” i zapisuje zagnieżdżony cytat blokowy. Teraz masz zagnieżdżony cytat w swoim dokumencie!
 
+## Wniosek
 
-### Często zadawane pytania
+I masz to! Właśnie utworzyłeś dokument programu Word z cytatami i zagnieżdżonymi cytatami blokowymi przy użyciu Aspose.Words dla .NET. Czy to nie wspaniałe? Dzięki tym prostym krokom możesz teraz dodać swoim dokumentom odrobinę elegancji dzięki pięknie sformatowanym cytatom. Pamiętaj, praktyka czyni mistrza, więc eksperymentuj i rozwijaj swoje umiejętności.
 
-#### P: Co to jest cytat w Markdown?
+## Często zadawane pytania
 
-O: Cytat w Markdown to sposób na podkreślenie fragmentów tekstu z innych źródeł lub nawiązanie do znanych cytatów.
+### Co to jest Aspose.Words dla .NET?
 
-#### P: Jak używać cudzysłowów w Markdown?
+Aspose.Words dla .NET to potężna biblioteka do pracy z dokumentami Word w aplikacjach .NET. Umożliwia programowe tworzenie, modyfikowanie i konwertowanie dokumentów programu Word.
 
-Odp.: Aby użyć cytatu w Markdown, umieść tekst cytatu w nawiasach ostrych (`>`). Każdy wiersz cytatu musi zaczynać się od jodełki.
+### Czy mogę używać Aspose.Words dla .NET za darmo?
 
-#### P: Czy cytaty Markdown obsługują atrybuty?
+Możesz wypróbować Aspose.Words dla .NET za darmo z licencją tymczasową. Możesz to zdobyć[Tutaj](https://purchase.aspose.com/temporary-license/).
 
-Odp.: Cytaty Markdown nie obsługują określonych atrybutów. Podkreśla je po prostu formatowanie cytowanego tekstu.
+### Czy istnieje szczegółowa dokumentacja Aspose.Words dla .NET?
 
-#### P: Czy możesz osadzać cytaty w Markdown?
+ Tak, można znaleźć szczegółową dokumentację[Tutaj](https://reference.aspose.com/words/net/).
 
-O: Tak, możliwe jest zagnieżdżanie cudzysłowów w Markdown poprzez dodanie dodatkowego poziomu nawiasów ostrych (`>`).
+### Jak uzyskać wsparcie dla Aspose.Words dla .NET?
+
+ Aby uzyskać pomoc, możesz odwiedzić forum Aspose.Words[Tutaj](https://forum.aspose.com/c/words/8).
+
+### Gdzie mogę pobrać Aspose.Words dla .NET?
+
+ Możesz pobrać Aspose.Words dla .NET z[Tutaj](https://releases.aspose.com/words/net/).

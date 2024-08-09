@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-loadoptions/use-temp-folder/
 ---
-## Úvod
+## Zavedení
 
 Stalo se vám někdy, že řešíte velké dokumenty Wordu, které se prostě nenačítají efektivně? Nebo jste možná narazili na problémy s výkonem při práci s rozsáhlými soubory? Dovolte mi, abych vám představil šikovnou funkci v Aspose.Words pro .NET, která vám může pomoci vyřešit tento problém přímo: použití dočasné složky při načítání dokumentů. Tento výukový program vás provede procesem konfigurace a využití dočasné složky v dokumentech aplikace Word ke zvýšení výkonu a efektivní správě zdrojů.
 
@@ -15,7 +15,7 @@ Stalo se vám někdy, že řešíte velké dokumenty Wordu, které se prostě ne
 
 Než se ponoříte do toho nejzákladnějšího, ujistěte se, že máte vše, co potřebujete:
 
--  Aspose.Words for .NET: Pokud jej ještě nemáte, stáhněte si jej z[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Pokud jej ještě nemáte, stáhněte si jej z[zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Visual Studio nebo jakékoli jiné kompatibilní IDE.
 - Základní znalost C#: Tento tutoriál předpokládá, že jste obeznámeni s programováním v C#.
 
@@ -45,7 +45,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 LoadOptions loadOptions = new LoadOptions { TempFolder = dataDir };
 ```
 
- Tady,`LoadOptions` se používá k určení dočasné složky. Nahradit`"YOUR DOCUMENTS DIRECTORY"` cestou k vašemu adresáři.
+ Zde,`LoadOptions` se používá k určení dočasné složky. Nahradit`"YOUR DOCUMENTS DIRECTORY"` cestou k vašemu adresáři.
 
 ## Krok 3: Vložení dokumentu
 

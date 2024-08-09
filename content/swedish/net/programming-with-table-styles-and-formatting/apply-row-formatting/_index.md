@@ -99,7 +99,7 @@ Och där har du det! Du har framgångsrikt tillämpat radformatering på en tabe
  Ja, du kan anpassa varje rad individuellt genom att ställa in olika egenskaper för`RowFormat`.
 
 ### Hur justerar jag bredden på kolumnerna?  
- Du kan ställa in bredden på kolumner med hjälp av`CellFormat.Width` fast egendom.
+ Du kan ställa in bredden på kolumner med hjälp av`CellFormat.Width` egendom.
 
 ### Är det möjligt att slå samman celler i Aspose.Words för .NET?  
  Ja, du kan slå samman celler med hjälp av`CellMerge` egendom av`CellFormat`.

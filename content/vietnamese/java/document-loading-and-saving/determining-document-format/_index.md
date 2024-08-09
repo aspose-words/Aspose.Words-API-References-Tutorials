@@ -197,7 +197,7 @@ Aspose.Words for Java hỗ trợ nhiều định dạng tài liệu khác nhau, 
 
 ### Làm cách nào tôi có thể phát hiện các tài liệu được mã hóa bằng Aspose.Words cho Java?
 
- Bạn có thể dùng`FileFormatUtil.detectFileFormat()` phương pháp phát hiện tài liệu được mã hóa, như được trình bày trong hướng dẫn này.
+ Bạn có thể sử dụng`FileFormatUtil.detectFileFormat()` phương pháp phát hiện tài liệu được mã hóa, như được trình bày trong hướng dẫn này.
 
 ### Có bất kỳ hạn chế nào khi làm việc với các định dạng tài liệu cũ hơn không?
 

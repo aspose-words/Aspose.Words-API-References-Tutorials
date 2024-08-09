@@ -31,7 +31,7 @@ Låt oss dela upp processen i tydliga steg:
 
 ## Steg 1: Ladda dokument
 
- Först laddar du in käll- och måldokumenten`Document` föremål:
+ Först laddar du in käll- och måldokumenten`Document` objekt:
 
 ```csharp
 // Sökväg till din dokumentkatalog

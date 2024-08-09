@@ -24,7 +24,7 @@ Aspose.Words for Java는 Microsoft Word 문서를 효율적으로 사용할 수 
 
 ## 환경 설정
 
-Aspose.Words for Java를 사용하려면 개발 환경을 설정해야 합니다. 다음과 같이하세요:
+Aspose.Words for Java를 사용하려면 개발 환경을 설정해야 합니다. 다음 단계를 따르세요.
 
 1. 선호하는 IDE(통합 개발 환경)에서 새 Java 프로젝트를 만듭니다.
 

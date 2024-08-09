@@ -121,7 +121,7 @@ options.setFontFamily("Times New Roman");
 
 ### Làm cách nào để tạo hình mờ bán trong suốt?
 
- Để tạo hình mờ nửa trong suốt, hãy đặt`setSemitransparent`tài sản để`true` bên trong`TextWatermarkOptions`.
+ Để tạo hình mờ nửa trong suốt, hãy đặt`setSemitransparent`tài sản để`true` trong`TextWatermarkOptions`.
 
 ### Tôi có thể thêm hình mờ vào các phần cụ thể của tài liệu không?
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-tables/retrieve-preferred-width-type/
 ---
-## Úvod
+## Zavedení
 
 Přemýšleli jste někdy o tom, jak získat preferovaný typ šířky buněk tabulky ve vašich dokumentech Word pomocí Aspose.Words for .NET? Tak to jste na správném místě! V tomto tutoriálu si tento proces rozebereme krok za krokem, takže bude snadný jako facka. Ať už jste zkušený vývojář nebo teprve začínáte, tento průvodce vám bude užitečný a poutavý. Pojďme se tedy ponořit a odhalit tajemství správy šířek buněk tabulky v dokumentech aplikace Word.
 
@@ -15,7 +15,7 @@ Přemýšleli jste někdy o tom, jak získat preferovaný typ šířky buněk ta
 
 Než začneme, budete potřebovat několik věcí:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou nejnovější verzi. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou nejnovější verzi. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Budete potřebovat IDE jako Visual Studio.
 3. Základní znalost C#: Pochopení základů C# vám pomůže pokračovat.
 4.  Ukázkový dokument: Připravte si dokument aplikace Word s tabulkami, se kterými můžete pracovat. Můžete použít jakýkoli dokument, ale budeme ho označovat jako`Tables.docx` v tomto tutoriálu.
@@ -110,7 +110,7 @@ Ano, můžete procházet každou buňku v tabulce a jednotlivě načíst jejich 
 
 ### Je možné nastavit preferovaný typ šířky programově?
 
- Absolutně! Upřednostňovaný typ šířky a hodnotu můžete nastavit pomocí`PreferredWidth` majetek z`CellFormat` třída.
+ Absolutně! Upřednostňovaný typ šířky a hodnotu můžete nastavit pomocí`PreferredWidth` vlastnictvím`CellFormat` třída.
 
 ### Mohu tuto metodu použít pro tabulky v jiných dokumentech než Word?
 
@@ -118,4 +118,4 @@ Tento tutoriál konkrétně pokrývá dokumenty aplikace Word. Pro jiné typy do
 
 ### Potřebuji licenci k používání Aspose.Words pro .NET?
 
- Ano, Aspose.Words for .NET je licencovaný produkt. Můžete získat bezplatnou zkušební verzi[tady](https://releases.aspose.com/) nebo dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
+ Ano, Aspose.Words for .NET je licencovaný produkt. Můžete získat bezplatnou zkušební verzi[zde](https://releases.aspose.com/) nebo dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).

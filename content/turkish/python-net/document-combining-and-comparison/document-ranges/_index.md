@@ -133,7 +133,7 @@ for hyperlink in doc.range.get_child_nodes(NodeType.FIELD_HYPERLINK, True):
 
 ## Çözüm
 
-Belge aralıklarında gezinmek hassas düzenleme için önemli bir beceridir. Aspose.Words for Python kütüphanesi, geliştiricilere paragraflar, bölümler, tablolar ve daha fazlasında gezinmek için gerekli araçları sağlar. Bu tekniklere hakim olarak düzenleme sürecinizi kolaylaştıracak ve kolaylıkla profesyonel belgeler oluşturacaksınız.
+Belge aralıklarında gezinmek hassas düzenleme için önemli bir beceridir. Aspose.Words for Python kütüphanesi, geliştiricilere paragraflar, bölümler, tablolar ve daha fazlasında gezinmek için gerekli araçları sağlar. Bu tekniklerde uzmanlaşarak düzenleme sürecinizi kolaylaştıracak ve kolaylıkla profesyonel belgeler oluşturacaksınız.
 
 ## SSS'ler
 

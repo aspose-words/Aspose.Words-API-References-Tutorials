@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithTables.SplitTable.docx");
 
 ## Çözüm
 
-İşte buyur! Bu adımları izleyerek Aspose.Words for .NET'i kullanarak bir Word belgesindeki tabloyu kolayca bölebilirsiniz. Bu yaklaşım, büyük tabloları daha etkili bir şekilde yönetmenize yardımcı olarak belgelerinizin okunabilirliğini ve organizasyonunu geliştirir. Bir deneyin ve Word belgelerindeki tablolarla çalışmanızı nasıl kolaylaştırdığını görün.
+Ve işte karşınızda! Bu adımları izleyerek Aspose.Words for .NET'i kullanarak bir Word belgesindeki tabloyu kolayca bölebilirsiniz. Bu yaklaşım, büyük tabloları daha etkili bir şekilde yönetmenize yardımcı olarak belgelerinizin okunabilirliğini ve organizasyonunu geliştirir. Bir deneyin ve Word belgelerindeki tablolarla çalışmanızı nasıl kolaylaştırdığını görün.
 
 ## SSS'ler
 

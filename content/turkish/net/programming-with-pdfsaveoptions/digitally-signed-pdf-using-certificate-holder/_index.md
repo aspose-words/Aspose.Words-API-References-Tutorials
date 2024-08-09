@@ -73,7 +73,7 @@ Son olarak belgeyi dijital imzayla PDF olarak kaydedin.
 doc.Save(dataDir + "DigitallySignedPdfUsingCertificateHolder.pdf", saveOptions);
 ```
 
-Ve bu kadar! Belgeniz artık imzalandı ve PDF olarak kaydedildi.
+İşte bu kadar! Belgeniz artık imzalandı ve PDF olarak kaydedildi.
 
 ## Çözüm
 

@@ -9,7 +9,7 @@ url: /vi/net/join-and-append-documents/append-document-to-blank/
 ---
 ## Giới thiệu
 
-Này! Bạn đã bao giờ thấy mình gãi đầu, tự hỏi làm thế nào để nối liền mạch một tài liệu vào một tài liệu trống bằng Aspose.Words cho .NET chưa? Bạn không cô đơn! Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu bước chân vào thế giới tự động hóa tài liệu, hướng dẫn này luôn sẵn sàng giúp bạn điều hướng trong suốt quá trình. Chúng tôi sẽ chia nhỏ các bước theo cách dễ thực hiện, ngay cả khi bạn không phải là chuyên gia viết mã. Vì vậy, hãy lấy một tách cà phê, ngồi lại và cùng đi sâu vào thế giới thao tác tài liệu với Aspose.Words cho .NET!
+Này! Bạn đã bao giờ thấy mình gãi đầu, tự hỏi làm thế nào để nối liền mạch một tài liệu vào một tài liệu trống bằng Aspose.Words cho .NET chưa? Bạn không đơn độc! Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu bước chân vào thế giới tự động hóa tài liệu, hướng dẫn này luôn sẵn sàng giúp bạn điều hướng trong suốt quá trình. Chúng tôi sẽ chia nhỏ các bước theo cách dễ thực hiện, ngay cả khi bạn không phải là chuyên gia viết mã. Vì vậy, hãy lấy một tách cà phê, ngồi lại và cùng đi sâu vào thế giới thao tác tài liệu với Aspose.Words cho .NET!
 
 ## Điều kiện tiên quyết
 
@@ -108,7 +108,7 @@ Sau khi nối thêm tài liệu, bước cuối cùng là lưu tài liệu kết
    dstDoc.Save(dataDir + "JoinAndAppendDocuments.AppendDocumentToBlank.docx");
    ```
 
-Và bạn có nó rồi đấy! Bạn đã thêm thành công tài liệu vào tài liệu trống bằng Aspose.Words for .NET. Điều đó không dễ dàng hơn bạn nghĩ sao?
+Và bạn có nó! Bạn đã thêm thành công tài liệu vào tài liệu trống bằng Aspose.Words for .NET. Điều đó không dễ dàng hơn bạn nghĩ sao?
 
 ## Phần kết luận
 
@@ -122,7 +122,7 @@ Có, bạn có thể nối thêm nhiều tài liệu bằng cách gọi liên t�
 
 ### Điều gì xảy ra nếu tài liệu nguồn có định dạng khác?
 
- Các`ImportFormatMode.KeepSourceFormatting` đảm bảo rằng định dạng của tài liệu nguồn được giữ nguyên khi được thêm vào.
+ các`ImportFormatMode.KeepSourceFormatting` đảm bảo rằng định dạng của tài liệu nguồn được giữ nguyên khi được thêm vào.
 
 ### Tôi có cần giấy phép để sử dụng Aspose.Words không?
 

@@ -56,11 +56,11 @@ Với các tùy chọn tải được định cấu hình, bước tiếp theo l
 Document doc = new Document(dataDir + "Document.docx", loadOptions);
 ```
 
- Trong dòng mã này, chúng tôi đang tải một tài liệu có tên`Document.docx` từ thư mục được chỉ định. Các`loadOptions` tham số đảm bảo rằng tính năng thư mục tạm thời được sử dụng.
+ Trong dòng mã này, chúng tôi đang tải một tài liệu có tên`Document.docx` từ thư mục được chỉ định. các`loadOptions` tham số đảm bảo rằng tính năng thư mục tạm thời được sử dụng.
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bằng cách sử dụng thư mục tạm thời trong khi tải tài liệu Word, bạn có thể cải thiện đáng kể hiệu suất và hiệu quả của ứng dụng, đặc biệt là khi xử lý các tệp lớn. Tính năng đơn giản nhưng mạnh mẽ này của Aspose.Words cho .NET giúp quản lý tài nguyên tốt hơn và đảm bảo xử lý tài liệu mượt mà hơn.
+Và bạn có nó! Bằng cách sử dụng thư mục tạm thời trong khi tải tài liệu Word, bạn có thể cải thiện đáng kể hiệu suất và hiệu quả của ứng dụng, đặc biệt là khi xử lý các tệp lớn. Tính năng đơn giản nhưng mạnh mẽ này của Aspose.Words cho .NET giúp quản lý tài nguyên tốt hơn và đảm bảo xử lý tài liệu mượt mà hơn.
 
 ## Câu hỏi thường gặp
 

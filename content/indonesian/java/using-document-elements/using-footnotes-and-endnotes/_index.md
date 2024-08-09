@@ -71,7 +71,7 @@ public void setEndnoteOptions() throws Exception {
 
 ## 6. Menyesuaikan Pengaturan Catatan Akhir
 
-Anda dapat menyesuaikan lebih lanjut pengaturan catatan akhir untuk memenuhi persyaratan dokumen Anda.
+Anda dapat menyesuaikan lebih lanjut pengaturan catatan akhir untuk memenuhi kebutuhan dokumen Anda.
 
 ## Kode Sumber Lengkap
 ```java

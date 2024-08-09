@@ -90,7 +90,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportFontsAsBase64 = true }
 Наконец, давайте сохраним документ с настроенными параметрами.
 
 
- Использовать`Save` метод`Document` класс для сохранения документа:
+ Используйте`Save` метод`Document` класс для сохранения документа:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportFontsAsBase64.html", saveOptions);

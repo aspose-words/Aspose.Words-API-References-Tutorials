@@ -44,7 +44,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Adım 2: Satır İçi Resmi Ekle
 
- Kullan`InsertImage` yöntemi`DocumentBuilder` Belgeye geçerli konuma bir resim eklemek için sınıf.
+ Kullanın`InsertImage` yöntemi`DocumentBuilder` Belgeye geçerli konuma bir resim eklemek için sınıf.
 
 ```csharp
 string imagePath = "PATH_TO_YOUR_IMAGE_FILE";

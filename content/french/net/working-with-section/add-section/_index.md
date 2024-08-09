@@ -16,7 +16,7 @@ Bonjour, amis développeurs ! 👋 Avez-vous déjà été chargé de créer un 
 
 Avant de passer au code, passons en revue ce dont vous aurez besoin :
 
-1.  Aspose.Words pour la bibliothèque .NET : assurez-vous de disposer de la dernière version. Tu peux[Télécharger les ici](https://releases.aspose.com/words/net/).
+1.  Aspose.Words pour la bibliothèque .NET : assurez-vous de disposer de la dernière version. Tu peux[téléchargez-le ici](https://releases.aspose.com/words/net/).
 2. Environnement de développement : un IDE compatible .NET comme Visual Studio fera l'affaire.
 3. Connaissance de base de C# : Comprendre la syntaxe C# vous aidera à suivre en douceur.
 4. Un exemple de document Word : même si nous allons en créer un à partir de zéro, disposer d'un exemple peut être utile à des fins de test.
@@ -83,7 +83,7 @@ Une fois que nous avons ajouté une nouvelle section, nous pouvons la remplir av
 
 ### Utilisation de DocumentBuilder pour la nouvelle section
 
-Pour ajouter du contenu à la nouvelle section, vous devrez définir le`DocumentBuilder` curseur sur la nouvelle section :
+ Pour ajouter du contenu à la nouvelle section, vous devrez définir le`DocumentBuilder` curseur sur la nouvelle section :
 
 ```csharp
 builder.MoveToSection(doc.Sections.IndexOf(sectionToAdd));
@@ -107,7 +107,7 @@ doc.Save("YourPath/YourDocument.docx");
 
 ## Conclusion
 
- Toutes nos félicitations! 🎉 Vous avez appris avec succès comment ajouter des sections à un document Word à l'aide d'Aspose.Words pour .NET. Les sections sont un outil puissant pour organiser le contenu, facilitant ainsi la lecture et la navigation dans vos documents. Que vous travailliez sur un document simple ou sur un rapport complexe, la maîtrise des sections améliorera vos compétences en matière de formatage de documents. N'oubliez pas de consulter le[Documentation Aspose.Words](https://reference.aspose.com/words/net/) pour des fonctionnalités et des possibilités plus avancées. Bon codage !
+ Félicitations! 🎉 Vous avez appris avec succès comment ajouter des sections à un document Word à l'aide d'Aspose.Words pour .NET. Les sections sont un outil puissant pour organiser le contenu, facilitant ainsi la lecture et la navigation dans vos documents. Que vous travailliez sur un document simple ou sur un rapport complexe, la maîtrise des sections améliorera vos compétences en matière de formatage de documents. N'oubliez pas de consulter le[Documentation Aspose.Words](https://reference.aspose.com/words/net/) pour des fonctionnalités et des possibilités plus avancées. Bon codage !
 
 ## FAQ
 
@@ -129,4 +129,4 @@ Non, les sections ne peuvent pas être imbriquées les unes dans les autres. Cep
 
 ### Où puis-je trouver plus de ressources sur Aspose.Words ?
 
- Pour plus d'informations, vous pouvez visiter le[Documentation Aspose.Words](https://reference.aspose.com/words/net/) ou la[forum d'entraide](https://forum.aspose.com/c/words/8) pour de l'aide et des discussions.
+ Pour plus d'informations, vous pouvez visiter le[Documentation Aspose.Words](https://reference.aspose.com/words/net/) ou le[forum d'assistance](https://forum.aspose.com/c/words/8) pour de l'aide et des discussions.

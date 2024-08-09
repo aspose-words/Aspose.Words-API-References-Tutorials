@@ -15,7 +15,7 @@ url: /ko/net/programming-with-ooxmlsaveoptions/update-last-saved-time-property/
 
 단계별 가이드를 시작하기 전에 필요한 몇 가지 사항이 있습니다.
 
-1.  .NET용 Aspose.Words: .NET용 Aspose.Words가 설치되어 있는지 확인하세요. 아직 안 해보셨다면 할 수 있습니다[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+1.  .NET용 Aspose.Words: .NET용 Aspose.Words가 설치되어 있는지 확인하세요. 아직 안 해보셨다면 할 수 있습니다[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 2. 개발 환경: Visual Studio와 같은 개발 환경입니다.
 3. C# 기본 지식: C# 프로그래밍의 기본을 이해하면 도움이 됩니다.
 

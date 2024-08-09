@@ -60,6 +60,6 @@ Aspose.Words for Java에서 머리글과 바닥글을 사용하는 방법을 단
 ### [Aspose.Words for Java에서 OLE 개체 및 ActiveX 컨트롤 사용](./using-ole-objects-and-activex/)
 Aspose.Words for Java에서 OLE 개체와 ActiveX 컨트롤을 사용하는 방법을 알아보세요. 대화형 문서를 쉽게 만드세요. 지금 시작하세요!
 ### [Aspose.Words for Java의 개정판 사용](./using-revisions/)
-Java 개정 제어를 위해 Aspose.Words를 효율적으로 사용하는 방법을 알아보세요. 개발자를 위한 단계별 가이드입니다. 문서 관리를 최적화하세요.
+Java 개정 제어를 위해 Aspose.Words를 효율적으로 사용하는 방법을 알아보세요. 개발자를 위한 단계별 가이드. 문서 관리를 최적화하세요.
 ### [Aspose.Words for Java에서 섹션 사용하기](./using-sections/)
 Aspose.Words for Java 살펴보기: 섹션 사용에 대한 포괄적인 가이드입니다. 코드 예제가 포함된 섹션을 추가, 삭제, 추가, 복제합니다.

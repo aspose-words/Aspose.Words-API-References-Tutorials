@@ -68,7 +68,7 @@ shape.AspectRatioLocked = true;
 
  Instelling`AspectRatioLocked` naar`true` zorgt ervoor dat de afbeelding de oorspronkelijke beeldverhouding behoudt.
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Ten slotte slaan we het document op in de opgegeven map. Met deze stap worden alle wijzigingen geschreven die we in het documentbestand hebben aangebracht.
 

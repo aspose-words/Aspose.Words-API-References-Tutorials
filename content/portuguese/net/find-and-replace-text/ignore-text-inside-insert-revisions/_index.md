@@ -89,7 +89,7 @@ Ignorar o texto inserido ajuda a manter o foco no conteúdo principal enquanto g
 Sim, você pode reverter o texto inserido ignorado usando as configurações FindReplaceOptions apropriadas.
 
 ### Onde posso encontrar mais documentação sobre Aspose.Words for .NET?
- Visite a[Documentação do Aspose.Words para .NET](https://reference.aspose.com/words/net/) para guias detalhados e referências de API.
+ Visite o[Documentação do Aspose.Words para .NET](https://reference.aspose.com/words/net/) para guias detalhados e referências de API.
 
 ### Existe um fórum da comunidade para discutir dúvidas relacionadas ao Aspose.Words for .NET?
  Sim, você pode visitar o[Fórum Aspose.Words](https://forum.aspose.com/c/words/8) para apoio e discussões da comunidade.

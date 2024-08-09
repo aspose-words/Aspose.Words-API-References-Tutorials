@@ -81,7 +81,7 @@ doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Đổi tên các trường hợp nhất trong tài liệu Word bằng Aspose.Words cho .NET rất đơn giản khi bạn biết các bước. Bằng cách làm theo hướng dẫn này, bạn có thể dễ dàng thao tác và tùy chỉnh tài liệu Word để phù hợp với nhu cầu của mình. Cho dù bạn đang tạo báo cáo, tạo thư được cá nhân hóa hay quản lý dữ liệu, kỹ thuật này sẽ rất hữu ích.
+Và bạn có nó! Đổi tên các trường hợp nhất trong tài liệu Word bằng Aspose.Words cho .NET rất đơn giản khi bạn biết các bước. Bằng cách làm theo hướng dẫn này, bạn có thể dễ dàng thao tác và tùy chỉnh tài liệu Word để phù hợp với nhu cầu của mình. Cho dù bạn đang tạo báo cáo, tạo thư được cá nhân hóa hay quản lý dữ liệu, kỹ thuật này sẽ rất hữu ích.
 
 ## Câu hỏi thường gặp
 

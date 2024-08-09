@@ -100,4 +100,4 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 Да, показанный здесь метод нацелен только на поля и оставляет остальное содержимое без изменений.
 
 ### Где я могу найти дополнительные ресурсы и поддержку для Aspose.Words?
- Посетить[Документация Aspose.Words для .NET API](https://reference.aspose.com/words/net/) и[Форум Aspose.Words](https://forum.aspose.com/c/words/8) для дальнейшей помощи.
+ Посетите[Документация Aspose.Words для .NET API](https://reference.aspose.com/words/net/) и[Форум Aspose.Words](https://forum.aspose.com/c/words/8) для дальнейшей помощи.

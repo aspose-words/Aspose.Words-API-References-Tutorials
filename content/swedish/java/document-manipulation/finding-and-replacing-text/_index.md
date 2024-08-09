@@ -82,7 +82,7 @@ doc.save("modified-document.docx");
 
 Detta är användbart när du vill utesluta att text i fält, till exempel sammanslagningsfält, ersätts.
 
-## Ignorera text inuti Ta bort versioner
+## Ignorera text inuti Ta bort revisioner
 
 Du kan konfigurera Aspose.Words att ignorera text i raderingsversioner under sök- och ersättningsoperationer.
 
@@ -339,7 +339,7 @@ Aspose.Words för Java tillhandahåller omfattande möjligheter för att hitta o
 
 ### Hur laddar jag ner Aspose.Words för Java?
 
- Du kan ladda ner Aspose.Words för Java från webbplatsen genom att besöka[den här länken](https://releases.aspose.com/words/java/).
+ Du kan ladda ner Aspose.Words för Java från webbplatsen genom att besöka[denna länk](https://releases.aspose.com/words/java/).
 
 ### Kan jag använda reguljära uttryck för textersättning?
 

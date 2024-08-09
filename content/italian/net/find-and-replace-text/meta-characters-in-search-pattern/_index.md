@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/find-and-replace-text/meta-characters-in-search-pattern/
 ---
-## introduzione
+## Introduzione
 
 Aspose.Words per .NET è una potente libreria per la gestione dei documenti Word a livello di codice. Oggi approfondiremo come sfruttare i metacaratteri nei modelli di ricerca utilizzando questa libreria. Se stai cercando di padroneggiare la manipolazione dei documenti, questa guida è la tua risorsa di riferimento. Esamineremo ogni passaggio per assicurarci di poter sostituire il testo in modo efficiente utilizzando i metacaratteri.
 

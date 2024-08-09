@@ -2,81 +2,76 @@
 title: Dziel wyrazy w językach
 linktitle: Dziel wyrazy w językach
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak dzielić słowa w różnych językach w dokumentach programu Word przy użyciu Aspose.Words dla .NET.
+description: Dowiedz się, jak dzielić słowa w różnych językach za pomocą Aspose.Words dla .NET. Postępuj zgodnie z tym szczegółowym przewodnikiem krok po kroku, aby zwiększyć czytelność dokumentu.
 type: docs
 weight: 10
 url: /pl/net/working-with-hyphenation/hyphenate-words-of-languages/
 ---
+## Wstęp
 
-W tym samouczku krok po kroku poprowadzimy Cię, jak dzielić słowa w różnych językach w dokumentach programu Word za pomocą Aspose.Words dla .NET. Wyjaśnimy dostarczony kod źródłowy C# i pokażemy, jak zaimplementować go we własnych projektach.
+Hej tam! Czy kiedykolwiek próbowałeś przeczytać dokument zawierający długie, nieprzerwane słowa i poczułeś skurcze mózgu? Wszyscy tam byliśmy. Ale zgadnij co? Dzielenie wyrazów jest Twoim wybawieniem! Dzięki Aspose.Words dla .NET możesz nadać swoim dokumentom profesjonalny wygląd, dzieląc wyrazy poprawnie, zgodnie z zasadami językowymi. Przyjrzyjmy się, jak można to osiągnąć bezproblemowo.
 
-Aby rozpocząć, upewnij się, że masz zainstalowane i skonfigurowane Aspose.Words for .NET w swoim środowisku programistycznym. Jeśli jeszcze tego nie zrobiłeś, pobierz i zainstaluj bibliotekę z oficjalnej strony.
+## Warunki wstępne
 
-## Krok 1: Inicjowanie obiektu dokumentu
+Zanim zaczniemy, upewnij się, że masz następujące elementy:
 
- Najpierw zainicjuj`Document` obiekt, podając ścieżkę do dokumentu źródłowego zawierającego tekst w różnych językach:
+-  Zainstalowano Aspose.Words dla .NET. Jeśli nie, chwyć go[Tutaj](https://releases.aspose.com/words/net/).
+-  Ważna licencja na Aspose.Words. Możesz kupić jeden[Tutaj](https://purchase.aspose.com/buy) lub zdobądź licencję tymczasową[Tutaj](https://purchase.aspose.com/temporary-license/).
+- Podstawowa znajomość C# i frameworku .NET.
+- Edytor tekstu lub IDE, taki jak Visual Studio.
+
+## Importuj przestrzenie nazw
+
+Na początek zaimportujmy niezbędne przestrzenie nazw. Pomaga to w dostępie do klas i metod wymaganych do dzielenia wyrazów.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Hyphenation;
+```
+
+## Krok 1: Załaduj swój dokument
+
+ Musisz określić katalog, w którym znajduje się dokument. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do dokumentu.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "German text.docx");
 ```
 
-## Krok 2: Zapisywanie słowników dzielenia wyrazów
+## Krok 3: Zarejestruj słowniki dzielenia wyrazów
 
-Następnie zapisz słowniki dzielenia wyrazów dla różnych języków, które chcesz przetwarzać. W tym przykładzie rejestrujemy słowniki dla amerykańskiego angielskiego i szwajcarskiego niemieckiego:
+ Aspose.Words wymaga słowników z dzieleniem wyrazów dla różnych języków. Upewnij się, że masz`.dic`pliki dla języków, które chcesz podzielić. Zarejestruj te słowniki za pomocą`Hyphenation.RegisterDictionary` metoda.
 
 ```csharp
 Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
 Hyphenation.RegisterDictionary("de-CH", dataDir + "hyph_de_CH.dic");
-```
-
-Upewnij się, że masz odpowiednie pliki słownika w swoim katalogu danych.
-
-## Krok 3: Przetwarzanie słów przez dzielenie wyrazów
-
-Teraz możesz używać funkcji dzielenia wyrazów do przetwarzania słów w różnych językach. Możesz użyć różnych metod`Document` Lub`DocumentBuilder` w zależności od Twoich konkretnych potrzeb.
-
-```csharp
-// Przykład: użycie metody Hyphenate narzędzia DocumentBuilder
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Write("Example of text to hyphenate");
-builder.InsertHyphenation();
 ```
 
 ## Krok 4: Zapisz dokument
 
-Na koniec zapisz zmodyfikowany dokument:
+Na koniec zapisz dokument z łącznikami w żądanym formacie. Tutaj zapisujemy go w formacie PDF.
 
 ```csharp
 doc.Save(dataDir + "TreatmentByCesure.pdf");
 ```
 
-Więc ! Pomyślnie przetworzyłeś słowa, dzieląc je w różnych językach w dokumencie programu Word przy użyciu Aspose.Words dla .NET.
+## Wniosek
 
-### Przykładowy kod źródłowy do dzielenia wyrazów przy użyciu Aspose.Words dla .NET
+I masz to! Za pomocą zaledwie kilku linijek kodu możesz znacznie poprawić czytelność swoich dokumentów, dzieląc wyrazy zgodnie z zasadami obowiązującymi w danym języku. Aspose.Words dla .NET sprawia, że proces ten jest prosty i wydajny. Więc śmiało, zapewnij swoim czytelnikom płynniejsze czytanie!
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(dataDir + "German text.docx");
+## Często zadawane pytania
 
-Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
-Hyphenation.RegisterDictionary("de-CH", dataDir + "hyph_de_CH.dic");
+### Co to jest dzielenie wyrazów w dokumentach?
+Dzielenie wyrazów to proces dzielenia wyrazów na końcach wierszy w celu poprawy wyrównania i czytelności tekstu.
 
-doc.Save(dataDir + "TreatmentByCesure.pdf");
-```
+### Gdzie mogę znaleźć słowniki dzielenia wyrazów dla różnych języków?
+W Internecie można znaleźć słowniki dotyczące dzielenia wyrazów, często udostępniane przez instytuty językowe lub projekty typu open source.
 
-Możesz swobodnie używać tego kodu we własnych projektach i modyfikować go tak, aby odpowiadał Twoim konkretnym potrzebom.
+### Czy mogę używać Aspose.Words dla .NET bez licencji?
+ Tak, ale wersja nielicencjonowana będzie miała ograniczenia. Zaleca się zdobycie ok[licencja tymczasowa](https://purchase.aspose.com/temporary-license) dla pełnych funkcji.
 
-### Często zadawane pytania
+### Czy Aspose.Words dla .NET jest kompatybilny z .NET Core?
+Tak, Aspose.Words dla .NET obsługuje zarówno .NET Framework, jak i .NET Core.
 
-#### P: Jak mogę sylabizować słowo w określonym języku za pomocą Aspose.Words?
-
- Odp.: Aby sylabizować słowo w określonym języku za pomocą Aspose.Words, możesz użyć`Hyphenation` klasa i`Hyphenate()` metoda. Utwórz instancję`Hyphenation` class określając żądany język, a następnie wywołaj metodę`Hyphenate()` metoda przekazująca słowo do sylabizacji jako argument. W ten sposób otrzymasz sylaby słowa w określonym języku.
-
-#### P: Jakich kodów językowych powinienem użyć, aby określić język sylabizacji w Aspose.Words?
-
-O: Aby określić język sylabizacji w Aspose.Words, musisz użyć odpowiednich kodów językowych. Na przykład możesz użyć „en” dla języka angielskiego, „fr” dla języka francuskiego, „es” dla języka hiszpańskiego, „de” dla języka niemieckiego itp. Pełną listę obsługiwanych kodów języków znajdziesz w dokumentacji Aspose.Words.
-
-#### P: Czy sylabizacja działa we wszystkich językach w Aspose.Words?
-
-O: Sylabizacja w Aspose.Words zależy od reguł sylabizacji specyficznych dla języka. Chociaż Aspose.Words obsługuje szeroką gamę języków, niektóre języki mogą nie być obsługiwane lub sylabizacja może być dla nich niedostępna. Sprawdź dokumentację Aspose.Words, aby dowiedzieć się, które języki są obsługiwane w przypadku sylabizacji.
+### Jak obsługiwać wiele języków w jednym dokumencie?
+Możesz zarejestrować wiele słowników dzielenia wyrazów, jak pokazano w przykładzie, a Aspose.Words odpowiednio je obsłuży.

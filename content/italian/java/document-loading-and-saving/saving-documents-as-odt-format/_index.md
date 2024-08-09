@@ -55,7 +55,7 @@ doc.save("Your Directory Path" + "WorkingWithOdtSaveOptions.MeasureUnit.odt", sa
 
 ```java
 Document doc = new Document("Your Directory Path" + "Document.docx");
-// Open Office utilizza i centimetri per specificare lunghezze, larghezze e altra formattazione misurabile
+// Open Office utilizza i centimetri per specificare lunghezze, larghezze e altre formattazioni misurabili
 // e proprietà del contenuto nei documenti mentre MS Office utilizza i pollici.
 OdtSaveOptions saveOptions = new OdtSaveOptions(); { saveOptions.setMeasureUnit(OdtSaveMeasureUnit.INCHES); }
 doc.save("Your Directory Path" + "WorkingWithOdtSaveOptions.MeasureUnit.odt", saveOptions);
@@ -69,7 +69,7 @@ In questo articolo, abbiamo imparato come salvare i documenti in formato ODT uti
 
 ### Come posso scaricare Aspose.Words per Java?
 
- È possibile scaricare Aspose.Words per Java dal sito Web Aspose. Visita[questo link](https://releases.aspose.com/words/java/)per accedere alla pagina di download.
+ È possibile scaricare Aspose.Words per Java dal sito Web Aspose. Visita[questo collegamento](https://releases.aspose.com/words/java/)per accedere alla pagina di download.
 
 ### Qual è il vantaggio di salvare i documenti in formato ODT?
 

@@ -105,4 +105,4 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 
 ### ฉันจะหาข้อมูลเพิ่มเติมเกี่ยวกับ Aspose.Words สำหรับ .NET ได้ที่ไหน
 
- สำหรับรายละเอียดเพิ่มเติม โปรดดูที่[Aspose.Words สำหรับเอกสาร .NET](https://reference.aspose.com/words/net/) - คุณยังสามารถสำรวจแหล่งข้อมูลเพิ่มเติมเช่น[ลิ้งค์ดาวน์โหลด](https://releases.aspose.com/words/net/), [ซื้อ](https://purchase.aspose.com/buy), [ทดลองฟรี](https://releases.aspose.com/), [ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/) , และ[สนับสนุน](https://forum.aspose.com/c/words/8).
+ สำหรับรายละเอียดเพิ่มเติม โปรดดูที่[Aspose.Words สำหรับเอกสาร .NET](https://reference.aspose.com/words/net/) - คุณยังสามารถสำรวจแหล่งข้อมูลเพิ่มเติมเช่น[ลิงค์ดาวน์โหลด](https://releases.aspose.com/words/net/), [ซื้อ](https://purchase.aspose.com/buy), [ทดลองใช้ฟรี](https://releases.aspose.com/), [ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/) , และ[สนับสนุน](https://forum.aspose.com/c/words/8).

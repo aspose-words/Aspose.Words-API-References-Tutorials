@@ -65,7 +65,7 @@ builder.EndTable();
 
 ## الخطوة 4: إنشاء قسم مكرر
 
- إنشاء`StructuredDocumentTag` (SDT) للقسم المكرر وقم بتعيينه على بيانات XML:
+ إنشاء أ`StructuredDocumentTag` (SDT) للقسم المكرر وقم بتعيينه على بيانات XML:
 
 ```csharp
 StructuredDocumentTag repeatingSectionSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);

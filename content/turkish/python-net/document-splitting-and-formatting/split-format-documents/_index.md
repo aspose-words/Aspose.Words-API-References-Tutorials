@@ -88,7 +88,7 @@ for paragraph in section.paragraphs:
 ```
 
 ### Belgeden belirli bir bölümü kaldırmak mümkün mü?
- Evet, belgeden belirli bir bölümü aşağıdaki komutu kullanarak kaldırabilirsiniz:`sections.remove(section)` yöntem.
+ Evet, belgeden belirli bir bölümü aşağıdaki komutu kullanarak kaldırabilirsiniz:`sections.remove(section)` Yöntem.
 
 ```python
 document.sections.remove(section_to_remove)

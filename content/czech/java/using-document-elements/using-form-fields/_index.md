@@ -14,7 +14,7 @@ V dnešní digitální době jsou automatizace a manipulace s dokumenty klíčov
 Aspose.Words for Java je výkonná knihovna, která umožňuje vývojářům vytvářet, manipulovat a převádět dokumenty aplikace Word v aplikacích Java. Nabízí širokou škálu funkcí pro práci s různými prvky dokumentu, včetně formulářových polí.
 
 ## 2. Nastavení vašeho prostředí
- Než začnete používat Aspose.Words for Java, musíte nastavit vývojové prostředí. Ujistěte se, že máte nainstalovanou Javu a knihovnu Aspose.Words. Knihovnu si můžete stáhnout z[tady](https://releases.aspose.com/words/java/).
+ Než začnete používat Aspose.Words for Java, musíte nastavit vývojové prostředí. Ujistěte se, že máte nainstalovanou Javu a knihovnu Aspose.Words. Knihovnu si můžete stáhnout z[zde](https://releases.aspose.com/words/java/).
 
 ## 3. Vytvoření nového dokumentu
 Chcete-li začít, vytvořte nový dokument aplikace Word pomocí Aspose.Words for Java. Jako referenci můžete použít následující kód:
@@ -86,13 +86,13 @@ Vzhled polí formuláře můžete upravit, například upravit velikost a barvu 
    Aspose.Words for Java je knihovna Java pro vytváření, manipulaci a převod dokumentů aplikace Word programově.
 
 2. ### Kde si mohu stáhnout Aspose.Words for Java?
-    Aspose.Words for Java si můžete stáhnout z[tady](https://releases.aspose.com/words/java/).
+    Aspose.Words for Java si můžete stáhnout z[zde](https://releases.aspose.com/words/java/).
 
 3. ### Jak mohu přizpůsobit vzhled polí formuláře v dokumentech aplikace Word?
    Vzhled pole formuláře můžete upravit úpravou velikosti písma, barvy a dalších možností formátování.
 
 4. ### Je k dispozici bezplatná zkušební verze pro Aspose.Words pro Java?
-    Ano, máte přístup k bezplatné zkušební verzi Aspose.Words for Java[tady](https://releases.aspose.com/).
+    Ano, máte přístup k bezplatné zkušební verzi Aspose.Words for Java[zde](https://releases.aspose.com/).
 
 5. ### Kde mohu získat podporu pro Aspose.Words pro Java?
     Pro podporu a pomoc navštivte[Fórum Aspose.Words](https://forum.aspose.com/).

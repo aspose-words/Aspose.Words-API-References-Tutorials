@@ -2,93 +2,113 @@
 title: احصل على قائمة الخطوط المتاحة
 linktitle: احصل على قائمة الخطوط المتاحة
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: في هذا البرنامج التعليمي، تعرف على كيفية الحصول على قائمة الخطوط المتوفرة في Aspose.Words لـ .NET.
+description: اكتشف كيفية الحصول على قائمة بالخطوط المتوفرة باستخدام Aspose.Words for .NET في هذا البرنامج التعليمي المفصل خطوة بخطوة. تعزيز مهارات إدارة الخطوط الخاصة بك.
 type: docs
 weight: 10
 url: /ar/net/working-with-fonts/get-list-of-available-fonts/
 ---
-سنشرح في هذا البرنامج التعليمي كيفية الحصول على قائمة الخطوط المتوفرة في Aspose.Words لـ .NET. تتيح لك قائمة الخطوط المتوفرة معرفة الخطوط التي يمكنك استخدامها في مستنداتك. سنأخذك خطوة بخطوة لمساعدتك على فهم التعليمات البرمجية وتنفيذها في مشروع .NET الخاص بك.
+## مقدمة
+
+هل وجدت نفسك تكافح من أجل إدارة الخطوط في مستندات Word الخاصة بك؟ إذا كنت أحد مطوري .NET، فإن Aspose.Words for .NET موجود هنا لإنقاذك! لا تساعدك هذه المكتبة القوية على إنشاء مستندات Word ومعالجتها برمجيًا فحسب، بل توفر أيضًا إمكانات واسعة لإدارة الخطوط. في هذا الدليل، سنوجهك عبر برنامج تعليمي خطوة بخطوة حول كيفية الحصول على قائمة بالخطوط المتاحة باستخدام Aspose.Words for .NET. سنقوم بتقسيمها إلى خطوات سهلة الهضم للتأكد من أنه يمكنك المتابعة بسهولة. لذلك، دعونا نتعمق ونجعل إدارة الخطوط أمرًا سهلاً!
 
 ## المتطلبات الأساسية
-قبل البدء، تأكد من أن لديك العناصر التالية:
-- معرفة عملية بلغة البرمجة C#
-- تم تثبيت مكتبة Aspose.Words الخاصة بـ .NET في مشروعك
 
-## الخطوة 1: تحديد دليل المستند
- أولاً، تحتاج إلى تعيين مسار الدليل إلى موقع مستند Word الخاص بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` في الكود بالمسار المناسب
+قبل أن نبدأ، هناك بعض الأشياء التي ستحتاج إليها:
+
+-  Aspose.Words for .NET: تأكد من تثبيت مكتبة Aspose.Words for .NET. يمكنك تنزيله من[هنا](https://releases.aspose.com/words/net/).
+- Visual Studio: يستخدم هذا المثال Visual Studio كبيئة التطوير.
+- .NET Framework: تأكد من تثبيت .NET Framework على جهازك.
+- دليل المستندات: مسار الدليل حيث يتم تخزين المستندات الخاصة بك.
+
+## استيراد مساحات الأسماء
+
+أولاً، قم باستيراد مساحات الأسماء الضرورية إلى مشروعك:
 
 ```csharp
-// المسار إلى دليل المستندات الخاص بك
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Collections.Generic;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## الخطوة 2: تكوين مصادر الخطوط
- بعد ذلك، سنقوم بإنشاء مثيل لـ`FontSettings` والحصول على مصادر الخطوط الموجودة باستخدام`GetFontsSources()` طريقة. سنقوم أيضًا بإضافة مصدر خط جديد عن طريق تحديد مجلد يحتوي على الخطوط.
+## الخطوة 1: تهيئة إعدادات الخط
+
+الخطوة الأولى هي تهيئة إعدادات الخط. سيسمح لك هذا بإدارة مصادر الخطوط لمستنداتك.
 
 ```csharp
-// تكوين مصادر الخطوط
 FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-
-// إضافة مصدر خط جديد
-FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-fontSources.Add(folderFontSource);
-
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
 ```
 
-## الخطوة 3: احصل على قائمة الخطوط المتاحة
- الآن سوف نقوم بتصفح الخطوط المتاحة باستخدام`GetAvailableFonts()` الطريقة على مصدر الخط المحدث الأول.
+- إعدادات الخط: يتم استخدام هذه الفئة لتحديد إعدادات استبدال الخط ومصادر الخطوط.
+- FontSources: نقوم بإنشاء قائمة بمصادر الخطوط الموجودة من إعدادات الخط الحالية.
+
+## الخطوة 2: تحديد دليل المستندات
+
+بعد ذلك، حدد المسار إلى دليل المستند الخاص بك. هذا هو المكان الذي سيبحث فيه Aspose.Words عن الخطوط.
 
 ```csharp
-// الحصول على قائمة الخطوط المتاحة
-foreach(PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
-{
-Console.WriteLine("Font Family Name: " + fontInfo.FontFamilyName);
-Console.WriteLine("Full font name: " + fontInfo.FullFontName);
-Console.WriteLine("Version: " + fontInfo.Version);
-Console.WriteLine("Path: " + fontInfo.FilePath);
-}
-```
-
-
-### نموذج التعليمات البرمجية المصدر للحصول على قائمة الخطوط المتاحة باستخدام Aspose.Words لـ .NET 
-
-```csharp
-
-// المسار إلى دليل المستندات الخاص بك
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
-FontSettings fontSettings = new FontSettings();
-List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-// قم بإضافة مصدر مجلد جديد والذي سيوجه Aspose.Words للبحث في المجلد التالي عن الخطوط.
+-  dataDir: يحمل متغير السلسلة هذا المسار إلى الدليل الذي توجد به الخطوط الخاصة بك. يستبدل`"YOUR DOCUMENT DIRECTORY"` مع المسار الفعلي
+
+## الخطوة 3: إضافة مجلد الخط المخصص
+
+الآن، قم بإضافة مصدر مجلد جديد لتوجيه Aspose.Words للبحث في هذا المجلد عن الخطوط.
+
+```csharp
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-// أضف المجلد المخصص الذي يحتوي على خطوطنا إلى قائمة مصادر الخطوط الموجودة.
+```
+
+- FolderFontSource: تمثل هذه الفئة مصدر خط المجلد. المعلمة الثانية (`true`) يشير إلى ما إذا كان سيتم البحث عن الخطوط بشكل متكرر في المجلدات الفرعية.
+
+## الخطوة 4: تحديث مصادر الخطوط
+
+أضف مجلد الخط المخصص إلى قائمة مصادر الخطوط الموجودة وقم بتحديث إعدادات الخط.
+
+```csharp
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
+```
+
+- FontSources.Add(folderFontSource): يضيف مجلد الخط المخصص إلى مصادر الخطوط الموجودة.
+- updateFontSources: تحويل قائمة مصادر الخطوط إلى مصفوفة.
+
+## الخطوة 5: استرداد الخطوط وعرضها
+
+وأخيرًا، قم باسترجاع الخطوط المتوفرة وعرض تفاصيلها.
+
+```csharp
 foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
 {
-	Console.WriteLine("FontFamilyName : " + fontInfo.FontFamilyName);
-	Console.WriteLine("FullFontName  : " + fontInfo.FullFontName);
-	Console.WriteLine("Version  : " + fontInfo.Version);
-	Console.WriteLine("FilePath : " + fontInfo.FilePath);
+    Console.WriteLine("FontFamilyName : " + fontInfo.FontFamilyName);
+    Console.WriteLine("FullFontName  : " + fontInfo.FullFontName);
+    Console.WriteLine("Version  : " + fontInfo.Version);
+    Console.WriteLine("FilePath : " + fontInfo.FilePath);
 }
-
 ```
 
+- GetAvailableFonts(): استرداد قائمة الخطوط المتوفرة من مصدر الخط الأول في القائمة المحدثة.
+-  معلومات الخط: مثال على`PhysicalFontInfo` تحتوي على تفاصيل حول كل خط.
+
 ## خاتمة
-في هذا البرنامج التعليمي، رأينا كيفية الحصول على قائمة الخطوط المتوفرة في Aspose.Words لـ .NET. يتيح لك ذلك معرفة الخطوط التي يمكنك استخدامها في مستنداتك. لا تتردد في استخدام هذه الميزة لاختيار الخطوط المناسبة لاحتياجاتك.
 
-### الأسئلة الشائعة
+تهانينا! لقد نجحت في استرداد قائمة الخطوط المتوفرة باستخدام Aspose.Words لـ .NET. يرشدك هذا البرنامج التعليمي خلال كل خطوة، بدءًا من تهيئة إعدادات الخط وحتى عرض تفاصيل الخط. بفضل هذه المعرفة، يمكنك الآن إدارة الخطوط في مستندات Word الخاصة بك بسهولة. تذكر أن Aspose.Words for .NET هي أداة قوية يمكنها تحسين قدرات معالجة المستندات لديك بشكل كبير. لذا، تابع واستكشف المزيد من الميزات لجعل عملية التطوير الخاصة بك أكثر كفاءة.
 
-#### س: كيف يمكنني استرداد قائمة الخطوط المتوفرة في Aspose.Words؟
+## الأسئلة الشائعة
 
- ج: لاسترداد قائمة الخطوط المتوفرة في Aspose.Words، يمكنك استخدام الملف`FontsProvider` الطبقة و`GetAvailableFonts` طريقة. ستعيد هذه الطريقة قائمة بجميع الخطوط المثبتة على نظامك.
+### هل يمكنني استخدام Aspose.Words لـ .NET مع أطر عمل .NET الأخرى؟
+نعم، Aspose.Words for .NET متوافق مع أطر عمل .NET المختلفة بما في ذلك .NET Core و.NET 5+.
 
-#### س: هل يمكنني تصفية قائمة الخطوط المتاحة حسب معايير معينة في Aspose.Words؟
+### كيف أقوم بتثبيت Aspose.Words لـ .NET؟
+يمكنك تثبيته عبر NuGet Package Manager في Visual Studio من خلال البحث عن "Aspose.Words".
 
-ج: نعم، يمكنك تصفية قائمة الخطوط المتوفرة في Aspose.Words باستخدام معايير محددة. على سبيل المثال، يمكنك تصفية الخطوط حسب العائلة أو النمط أو اللغة.
+### هل من الممكن إضافة مجلدات خطوط مخصصة متعددة؟
+ نعم، يمكنك إضافة عدة مجلدات خطوط مخصصة عن طريق إنشاء عدة مجلدات`FolderFontSource` المثيلات وإضافتها إلى قائمة مصادر الخطوط.
 
-#### س: كيف يمكنني استخدام قائمة الخطوط المتوفرة في مستندات Word الخاصة بي؟
+### هل يمكنني استرداد تفاصيل الخط من مصدر خط محدد؟
+ نعم، يمكنك استرجاع تفاصيل الخط من أي مصدر خط عن طريق تحديد فهرس مصدر الخط في ملف`updatedFontSources` صفيف.
 
- ج: لاستخدام قائمة الخطوط المتوفرة في مستندات Word الخاصة بك، يمكنك تصفح القائمة وتحديد الخطوط المناسبة باستخدام طرق وخصائص`FontSettings` فئة في Aspose.Words.
+### هل يدعم Aspose.Words for .NET استبدال الخطوط؟
+نعم، فهو يدعم استبدال الخط لضمان عرض النص بشكل صحيح حتى في حالة عدم توفر الخط الأصلي.

@@ -2,63 +2,78 @@
 title: Barré
 linktitle: Barré
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment appliquer le style de texte barré avec le guide étape par étape d'Aspose.Words for .NET.
+description: Découvrez comment appliquer une mise en forme barrée au texte à l'aide d'Aspose.Words for .NET grâce à notre guide étape par étape. Améliorez vos compétences en traitement de documents.
 type: docs
 weight: 10
 url: /fr/net/working-with-markdown/strikethrough/
 ---
+## Introduction
 
+Bienvenue dans ce guide détaillé sur la façon d'appliquer une mise en forme barrée au texte à l'aide d'Aspose.Words pour .NET. Si vous souhaitez améliorer vos compétences en traitement de documents et ajouter une touche unique à votre texte, vous êtes au bon endroit. Allons-y !
 
-Dans cet exemple, nous allons vous expliquer comment appliquer le style de texte barré à l'aide d'Aspose.Words pour .NET. Le texte barré est utilisé pour indiquer que le texte est supprimé ou n'est plus valide.
+## Conditions préalables
 
-## Étape 1 : Utiliser un générateur de documents
+Avant de commencer, assurez-vous d'avoir les éléments suivants :
 
-Tout d’abord, nous utiliserons un générateur de documents pour ajouter du contenu à notre document.
+-  Aspose.Words pour .NET : téléchargez-le[ici](https://releases.aspose.com/words/net/).
+- .NET Framework : assurez-vous que .NET Framework est installé sur votre système.
+- Environnement de développement : un IDE comme Visual Studio.
+- Connaissance de base de C# : Une connaissance de la programmation C# est nécessaire.
+
+## Importer des espaces de noms
+
+Pour commencer, vous devrez importer les espaces de noms nécessaires. Ceux-ci sont indispensables pour accéder à la bibliothèque Aspose.Words et à ses fonctionnalités.
 
 ```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Étape 1 : initialiser DocumentBuilder
+
+ Le`DocumentBuilder` class est un outil puissant dans Aspose.Words qui vous permet d'ajouter facilement du contenu à votre document.
+
+```csharp
+// Initialisez un DocumentBuilder.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Étape 2 : Appliquer le style de texte barré
+## Étape 2 : définir la propriété barrée
 
- Nous allons activer le style de texte barré en définissant le`StrikeThrough` propriété du`Font` s'opposer à`true`.
-
-```csharp
-builder.Font.StrikeThrough = true;
-```
-
-## Étape 3 : Ajouter du texte barré
-
- Nous pouvons désormais ajouter du texte barré à l'aide du générateur de documents`Writeln` méthode.
+Maintenant, appliquons la propriété barré à notre texte. Cela implique de définir le`StrikeThrough` propriété du`Font` s'opposer à`true`.
 
 ```csharp
-builder.Writeln("This text will be StrikeThrough");
-```
-
-
-### Exemple de code source pour le texte barré avec Aspose.Words for .NET
-
-```csharp
-// Utilisez un générateur de documents pour ajouter du contenu au document.
-DocumentBuilder builder = new DocumentBuilder();
-
 // Faites le texte barré.
 builder.Font.StrikeThrough = true;
+```
+
+## Étape 3 : Écrivez du texte barré
+
+ Avec la propriété barré définie, nous pouvons maintenant ajouter notre texte. Le`Writeln` La méthode ajoutera le texte au document.
+
+```csharp
+// Écrivez du texte barré.
 builder.Writeln("This text will be StrikeThrough");
 ```
 
-Félicitation ! Vous avez maintenant appris à appliquer le style de texte barré avec Aspose.Words for .NET.
+## Conclusion
 
-### FAQ
+Et voilà ! Vous avez réussi à ajouter une mise en forme barrée à votre texte à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque ouvre un monde de possibilités pour le traitement et la personnalisation des documents. Que vous créiez des rapports, des lettres ou tout autre type de document, la maîtrise de ces fonctionnalités améliorera sans aucun doute votre productivité et la qualité de vos sorties.
 
-#### Q : Comment puis-je ajouter le texte barré dans Aspose.Words ?
+## FAQ
 
- R : Pour ajouter le texte barré dans Aspose.Words, vous pouvez utiliser le`Font.StrikeThrough` propriété du`Run` objet. Vous pouvez définir cette propriété sur`true` pour ajouter du texte barré à un texte spécifique. Par exemple, vous pouvez utiliser`run.Font.StrikeThrough=true` pour ajouter le texte barré dans le`Run` objet.
+### Qu’est-ce qu’Aspose.Words pour .NET ?
+Aspose.Words for .NET est une puissante bibliothèque de traitement de documents qui permet aux développeurs de créer, manipuler et convertir des documents Word par programme.
 
-#### Q : Est-il possible d’ajouter le texte barré à plusieurs morceaux de texte dans un même paragraphe ?
+### Puis-je utiliser Aspose.Words pour .NET dans un projet commercial ?
+ Oui, vous pouvez utiliser Aspose.Words pour .NET dans des projets commerciaux. Pour les options d'achat, visitez le[page d'achat](https://purchase.aspose.com/buy).
 
- R : Oui, vous pouvez ajouter du texte barré à plusieurs parties de texte dans un seul paragraphe en utilisant plusieurs`Run` objets. Vous pouvez créer plusieurs`Run` objets et définir le`Font.StrikeThrough`propriété à`true` pour chaque objet pour ajouter le texte barré aux parties de texte souhaitées. Ensuite, vous pouvez les ajouter au paragraphe en utilisant le`Paragraph.AppendChild(run)` méthode.
+### Existe-t-il un essai gratuit disponible pour Aspose.Words pour .NET ?
+ Oui, vous pouvez télécharger un essai gratuit[ici](https://releases.aspose.com/).
 
-#### Q : Puis-je ajouter du texte barré au texte qui se trouve dans un tableau ou une cellule dans Aspose.Words ?
+### Comment puis-je obtenir une assistance pour Aspose.Words pour .NET ?
+Vous pouvez bénéficier du soutien de la communauté Aspose et d'experts sur le sujet.[forum d'assistance](https://forum.aspose.com/c/words/8).
 
- R : Oui, vous pouvez ajouter du texte barré au texte qui se trouve dans un tableau ou une cellule dans Aspose.Words. Vous pouvez accéder à la cellule ou au paragraphe souhaité en utilisant les méthodes appropriées, puis appliquer la mise en forme du texte barré à l'aide de l'option`Font.StrikeThrough` propriété du`Run` ou`Paragraph` objet.
+### Puis-je appliquer d’autres options de formatage de texte à l’aide d’Aspose.Words pour .NET ?
+Absolument! Aspose.Words for .NET prend en charge un large éventail d'options de formatage de texte, notamment le gras, l'italique, le souligné, etc.

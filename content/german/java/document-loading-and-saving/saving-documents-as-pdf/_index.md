@@ -71,7 +71,7 @@ saveOptions.setExportDocumentStructure(true);
 doc.save("output.pdf", saveOptions);
 ```
 
-## Bildkompression
+## Bildkomprimierung
 
 Sie können die Bildkomprimierung mit dem folgenden Code steuern:
 

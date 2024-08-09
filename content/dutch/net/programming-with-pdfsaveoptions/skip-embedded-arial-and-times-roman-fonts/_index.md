@@ -44,7 +44,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
  In dit fragment vervangt u`"YOUR DOCUMENT DIRECTORY"` met het pad naar uw documentmap.
 
-## Stap 3: Configureer PDF-opslagopties
+## Stap 3: Configureer de PDF-opslagopties
 
 Nu moeten we de PDF-opslagopties configureren om te bepalen hoe lettertypen worden ingesloten. Standaard zijn alle lettertypen ingesloten, waardoor de bestandsgrootte kan toenemen. We zullen deze instelling wijzigen.
 

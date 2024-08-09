@@ -2,81 +2,76 @@
 title: Kata-kata Bahasa Dengan Tanda Hubung
 linktitle: Kata-kata Bahasa Dengan Tanda Hubung
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara memberi tanda hubung pada kata dalam berbagai bahasa di dokumen Word menggunakan Aspose.Words untuk .NET.
+description: Pelajari cara memberi tanda hubung pada kata-kata dalam berbagai bahasa menggunakan Aspose.Words untuk .NET. Ikuti panduan terperinci langkah demi langkah ini untuk meningkatkan keterbacaan dokumen Anda.
 type: docs
 weight: 10
 url: /id/net/working-with-hyphenation/hyphenate-words-of-languages/
 ---
+## Perkenalan
 
-Dalam tutorial langkah demi langkah ini, kami akan memandu Anda tentang cara memberi tanda hubung pada kata-kata dalam berbagai bahasa di dokumen Word menggunakan Aspose.Words untuk .NET. Kami akan menjelaskan kode sumber C# yang disediakan dan menunjukkan cara mengimplementasikannya di proyek Anda sendiri.
+Hai! Pernah mencoba membaca dokumen dengan kata-kata yang panjang dan tidak terputus-putus dan merasa otak Anda kram? Kita semua pernah ke sana. Tapi coba tebak? Tanda hubung adalah penyelamat Anda! Dengan Aspose.Words untuk .NET, Anda dapat membuat dokumen Anda terlihat profesional dengan memberi tanda hubung pada kata-kata dengan benar sesuai aturan bahasa. Mari selami bagaimana Anda dapat mencapai hal ini dengan lancar.
 
-Untuk memulai, pastikan Anda telah menginstal dan mengkonfigurasi Aspose.Words for .NET di lingkungan pengembangan Anda. Jika Anda belum melakukannya, unduh dan instal perpustakaan dari situs resminya.
+## Prasyarat
 
-## Langkah 1: Menginisialisasi Objek Dokumen
+Sebelum kita mulai, pastikan Anda memiliki hal berikut:
 
- Pertama, inisialisasi`Document` objek dengan menentukan jalur ke dokumen sumber Anda yang berisi teks dalam berbagai bahasa:
+-  Aspose.Words untuk .NET diinstal. Jika belum, ambillah[Di Sini](https://releases.aspose.com/words/net/).
+-  Lisensi yang valid untuk Aspose.Words. Anda dapat membelinya[Di Sini](https://purchase.aspose.com/buy) atau dapatkan lisensi sementara[Di Sini](https://purchase.aspose.com/temporary-license/).
+- Pengetahuan dasar tentang kerangka C# dan .NET.
+- Editor teks atau IDE seperti Visual Studio.
+
+## Impor Namespace
+
+Hal pertama yang pertama, mari impor namespace yang diperlukan. Ini membantu dalam mengakses kelas dan metode yang diperlukan untuk tanda hubung.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Hyphenation;
+```
+
+## Langkah 1: Muat Dokumen Anda
+
+ Anda harus menentukan direktori tempat dokumen Anda berada. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya ke dokumen Anda.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "German text.docx");
 ```
 
-## Langkah 2: Menyimpan Kamus Tanda Hubung
+## Langkah 3: Daftarkan Kamus Tanda Hubung
 
-Selanjutnya, simpan kamus tanda hubung untuk berbagai bahasa yang ingin Anda proses. Dalam contoh ini, kami mendaftarkan kamus untuk Bahasa Inggris Amerika dan Bahasa Jerman Swiss:
+ Aspose.Words memerlukan kamus tanda hubung untuk berbagai bahasa. Pastikan Anda memilikinya`.dic`file untuk bahasa yang ingin Anda beri tanda hubung. Daftarkan kamus ini menggunakan`Hyphenation.RegisterDictionary` metode.
 
 ```csharp
 Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
 Hyphenation.RegisterDictionary("de-CH", dataDir + "hyph_de_CH.dic");
 ```
 
-Pastikan Anda memiliki file kamus yang sesuai di direktori data Anda.
+## Langkah 4: Simpan Dokumen
 
-## Langkah 3: Memproses kata dengan tanda hubung
-
-Sekarang Anda dapat menggunakan fitur tanda hubung untuk memproses kata dalam berbagai bahasa. Anda dapat menggunakan metode yang berbeda`Document` atau`DocumentBuilder` tergantung pada kebutuhan spesifik Anda.
-
-```csharp
-// Contoh: Menggunakan metode Hyphenate dari DocumentBuilder
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Write("Example of text to hyphenate");
-builder.InsertHyphenation();
-```
-
-## Langkah 4: Simpan dokumen
-
-Terakhir, simpan dokumen yang diubah:
+Terakhir, simpan dokumen yang diberi tanda penghubung dalam format yang diinginkan. Di sini, kami menyimpannya sebagai PDF.
 
 ```csharp
 doc.Save(dataDir + "TreatmentByCesure.pdf");
 ```
 
-Jadi ! Anda telah berhasil memproses kata dengan memberi tanda hubung dalam bahasa berbeda di dokumen Word menggunakan Aspose.Words untuk .NET.
+## Kesimpulan
 
-### Contoh kode sumber untuk tanda hubung kata menggunakan Aspose.Words untuk .NET
+Dan itu dia! Hanya dengan beberapa baris kode, Anda dapat meningkatkan keterbacaan dokumen secara signifikan dengan memberi tanda hubung pada kata-kata sesuai dengan aturan khusus bahasa. Aspose.Words untuk .NET menjadikan proses ini mudah dan efisien. Jadi, lanjutkan dan berikan pengalaman membaca yang lebih lancar kepada pembaca Anda!
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(dataDir + "German text.docx");
+## FAQ
 
-Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
-Hyphenation.RegisterDictionary("de-CH", dataDir + "hyph_de_CH.dic");
+### Apa itu tanda hubung dalam dokumen?
+Tanda hubung adalah proses memecah kata di akhir baris untuk meningkatkan keselarasan dan keterbacaan teks.
 
-doc.Save(dataDir + "TreatmentByCesure.pdf");
-```
+### Di mana saya bisa mendapatkan kamus tanda hubung untuk berbagai bahasa?
+Anda dapat menemukan kamus tanda hubung online, sering kali disediakan oleh lembaga bahasa atau proyek sumber terbuka.
 
-Jangan ragu untuk menggunakan kode ini di proyek Anda sendiri dan memodifikasinya agar sesuai dengan kebutuhan spesifik Anda.
+### Bisakah saya menggunakan Aspose.Words untuk .NET tanpa lisensi?
+ Ya, tapi versi yang tidak berlisensi akan memiliki keterbatasan. Disarankan untuk mendapatkan a[izin sementara](https://purchase.aspose.com/temporary-license) untuk fitur lengkap.
 
-### FAQ
+### Apakah Aspose.Words untuk .NET kompatibel dengan .NET Core?
+Ya, Aspose.Words untuk .NET mendukung .NET Framework dan .NET Core.
 
-#### T: Bagaimana cara menyusun suku kata sebuah kata dalam bahasa tertentu dengan Aspose.Words?
-
- A: Untuk menyusun suku kata sebuah kata dalam bahasa tertentu dengan Aspose.Words, Anda dapat menggunakan`Hyphenation` kelas dan`Hyphenate()` metode. Buat sebuah instance dari`Hyphenation` kelas menentukan bahasa yang diinginkan, lalu memanggil`Hyphenate()` metode meneruskan kata ke suku kata sebagai argumen. Ini akan memberi Anda suku kata dari kata tersebut dalam bahasa yang ditentukan.
-
-#### T: Kode bahasa apa yang harus saya gunakan untuk menentukan bahasa silabisasi di Aspose.Words?
-
-A: Untuk menentukan suku kata bahasa di Aspose.Words, Anda harus menggunakan kode bahasa yang sesuai. Misalnya, Anda dapat menggunakan "en" untuk bahasa Inggris, "fr" untuk bahasa Prancis, "es" untuk bahasa Spanyol, "de" untuk bahasa Jerman, dll. Lihat dokumentasi Aspose.Words untuk daftar lengkap kode bahasa yang didukung.
-
-#### T: Apakah silabisasi berfungsi untuk semua bahasa di Aspose.Words?
-
-J: Pembuatan suku kata di Aspose.Words bergantung pada aturan suku kata khusus bahasa. Meskipun Aspose.Words mendukung berbagai bahasa, beberapa bahasa mungkin tidak didukung atau silabisasi mungkin tidak tersedia untuk bahasa tersebut. Periksa dokumentasi Aspose.Words untuk mengetahui bahasa mana yang didukung untuk penyusunan suku kata.
+### Bagaimana cara menangani banyak bahasa dalam satu dokumen?
+Anda dapat mendaftarkan beberapa kamus tanda hubung seperti yang ditunjukkan dalam contoh, dan Aspose.Words akan menanganinya sesuai dengan itu.

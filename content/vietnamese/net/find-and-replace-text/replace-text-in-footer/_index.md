@@ -39,7 +39,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Footer.docx");
 ```
 
- Ở bước này, thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế nơi tài liệu của bạn được lưu trữ. Các`Document` sự vật`doc` hiện đang giữ tài liệu đã tải của chúng tôi.
+ Ở bước này, thay thế`"YOUR DOCUMENT DIRECTORY"` với đường dẫn thực tế nơi tài liệu của bạn được lưu trữ. các`Document` sự vật`doc` hiện đang giữ tài liệu đã tải của chúng tôi.
 
 ## Bước 2: Truy cập Footer
 
@@ -99,10 +99,10 @@ Chúc mừng! Bạn đã thay thế thành công văn bản ở chân trang củ
 Bạn có thể thay thế bất kỳ văn bản cụ thể nào trong phần chân trang. Nếu bạn cần thay thế nhiều dòng, hãy đảm bảo chuỗi tìm kiếm của bạn khớp chính xác với văn bản bạn muốn thay thế.
 
 ### Có thể làm cho việc thay thế phân biệt chữ hoa chữ thường?
- Tuyệt đối! Bộ`MatchCase` ĐẾN`true` bên trong`FindReplaceOptions` để làm cho việc thay thế phân biệt chữ hoa chữ thường.
+ Tuyệt đối! Bộ`MatchCase` ĐẾN`true` trong`FindReplaceOptions` để làm cho việc thay thế phân biệt chữ hoa chữ thường.
 
 ### Tôi có thể sử dụng biểu thức chính quy để thay thế văn bản không?
 Có, Aspose.Words hỗ trợ sử dụng biểu thức chính quy cho các thao tác tìm và thay thế. Bạn có thể chỉ định mẫu biểu thức chính quy trong`Range.Replace` phương pháp.
 
 ### Làm cách nào để xử lý nhiều chân trang trong một tài liệu?
-Nếu tài liệu của bạn có nhiều phần với các chân trang khác nhau, hãy lặp qua từng phần và áp dụng thay thế văn bản cho từng chân trang riêng lẻ.
+Nếu tài liệu của bạn có nhiều phần với các chân trang khác nhau, hãy lặp lại từng phần và áp dụng thay thế văn bản cho từng chân trang riêng lẻ.

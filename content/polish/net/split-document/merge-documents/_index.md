@@ -9,7 +9,7 @@ url: /pl/net/split-document/merge-documents/
 ---
 ## Wstęp
 
-Czy zdarzyło Ci się kiedyś połączyć wiele dokumentów programu Word w jeden spójny plik? Niezależnie od tego, czy kompilujesz raporty, montujesz projekt, czy po prostu próbujesz uporządkować, scalanie dokumentów może zaoszczędzić mnóstwo czasu i wysiłku. Dzięki Aspose.Words dla .NET proces ten staje się dziecinnie prosty. W tym samouczku omówimy, jak scalić dokumenty programu Word za pomocą Aspose.Words dla .NET, dzieląc każdy krok, abyś mógł łatwo wykonać wszystkie kroki. Na koniec będziesz łączyć dokumenty jak profesjonalista!
+Czy zdarzyło Ci się kiedyś połączyć wiele dokumentów programu Word w jeden spójny plik? Niezależnie od tego, czy kompilujesz raporty, montujesz projekt, czy po prostu próbujesz uporządkować, scalanie dokumentów może zaoszczędzić mnóstwo czasu i wysiłku. Dzięki Aspose.Words dla .NET proces ten staje się dziecinnie prosty. W tym samouczku omówimy, jak scalić dokumenty programu Word przy użyciu Aspose.Words dla .NET, dzieląc każdy krok, abyś mógł łatwo wykonać wszystkie kroki. Na koniec będziesz łączyć dokumenty jak profesjonalista!
 
 ## Warunki wstępne
 

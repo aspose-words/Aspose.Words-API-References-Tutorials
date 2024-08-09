@@ -9,7 +9,7 @@ url: /tr/net/working-with-fields/specify-locale-at-field-level/
 ---
 ## giriiş
 
-Aspose.Words for .NET dünyasına dalmaya hazır mısınız? Bugün, yerel ayarın alan düzeyinde nasıl belirleneceğini keşfedeceğiz. Bu kullanışlı özellik, özellikle belgelerinizin belirli kültürel veya bölgesel formatlara uymasına ihtiyaç duyduğunuzda kullanışlıdır. Bunu, belgenize "ziyaret ettiği" yere göre nasıl davranması gerektiğini söyleyen bir pasaport vermek gibi düşünün. Bu eğitimin sonunda, Word belgelerinizdeki alanların yerel ayarlarını kolaylıkla özelleştirebileceksiniz. Başlayalım!
+Aspose.Words for .NET dünyasına dalmaya hazır mısınız? Bugün, yerel ayarın alan düzeyinde nasıl belirleneceğini keşfedeceğiz. Bu kullanışlı özellik, özellikle belgelerinizin belirli kültürel veya bölgesel formatlara uymasına ihtiyaç duyduğunuzda kullanışlıdır. Bunu, belgenize "ziyaret ettiği" yere göre nasıl davranması gerektiğini söyleyen bir pasaport vermek gibi düşünün. Bu eğitimin sonunda, Word belgelerinizdeki alanların yerel ayarlarını kolaylıkla özelleştirebileceksiniz. Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -77,7 +77,7 @@ builder.Document.Save(dataDir + "WorkingWithFields.SpecifyLocaleAtFieldLevel.doc
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak Word belgenizdeki bir alanın yerel ayarını başarıyla belirlediniz. Bu güçlü özellik, belgelerinizi belirli kültürel ve bölgesel gereksinimleri karşılayacak şekilde uyarlamanıza olanak tanıyarak uygulamalarınızı daha çok yönlü ve kullanıcı dostu hale getirir. Mutlu kodlama!
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak Word belgenizdeki bir alanın yerel ayarını başarıyla belirlediniz. Bu güçlü özellik, belgelerinizi belirli kültürel ve bölgesel gereksinimleri karşılayacak şekilde uyarlamanıza olanak tanıyarak uygulamalarınızı daha çok yönlü ve kullanıcı dostu hale getirir. Mutlu kodlama!
 
 ## SSS'ler
 
@@ -95,7 +95,7 @@ Yerel ayar kimliklerinin listesini Microsoft belgelerinde veya Aspose.Words API 
 
 ### Aspose.Words for .NET'i kullanmak için lisansa ihtiyacım var mı?
 
- Aspose.Words for .NET'i değerlendirme modunda lisans olmadan kullanabilirsiniz ancak bir lisans almanız önerilir.[lisans](https://purchase.aspose.com/buy) Tam işlevselliğin kilidini açmak için.
+ Aspose.Words for .NET'i değerlendirme modunda lisans olmadan kullanabilirsiniz ancak bir lisans almanız önerilir.[lisans](https://purchase.aspose.com/buy) Tüm işlevselliğin kilidini açmak için.
 
 ### Aspose.Words kütüphanesini en son sürüme nasıl güncellerim?
 

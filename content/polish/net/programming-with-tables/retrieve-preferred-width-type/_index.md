@@ -96,7 +96,7 @@ Linie te wypiszą na konsoli preferowany typ szerokości i wartość, umożliwia
 
 ## Wniosek
 
-I masz to! Pobieranie preferowanego typu szerokości komórek tabeli w dokumentach programu Word przy użyciu Aspose.Words dla .NET jest proste, jeśli zostanie podzielone na łatwe do wykonania kroki. Postępując zgodnie z tym przewodnikiem, możesz łatwo manipulować właściwościami tabel w dokumentach programu Word, dzięki czemu zadania związane z zarządzaniem dokumentami będą znacznie wydajniejsze.
+I masz to! Pobieranie preferowanego typu szerokości komórek tabeli w dokumentach programu Word za pomocą Aspose.Words dla .NET jest proste, jeśli zostanie podzielone na łatwe do wykonania kroki. Postępując zgodnie z tym przewodnikiem, możesz łatwo manipulować właściwościami tabel w dokumentach programu Word, dzięki czemu zadania związane z zarządzaniem dokumentami będą znacznie wydajniejsze.
 
 ## Często zadawane pytania
 

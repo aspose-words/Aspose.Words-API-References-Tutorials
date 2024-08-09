@@ -106,7 +106,7 @@ doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
 ## よくある質問
 
 ### さまざまな種類の図形を挿入するにはどうすればよいですか?
-変更することができます`ShapeType`の中に`InsertShape`円、四角形、矢印など、さまざまな種類の図形を挿入する方法。
+変更することができます`ShapeType`の`InsertShape`円、四角形、矢印など、さまざまな種類の図形を挿入する方法。
 
 ### 図形内にテキストを追加できますか?
 はい、`builder.Write`図形を挿入した後、図形内にテキストを追加する方法。
@@ -115,7 +115,7 @@ doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
 はい、次のようなプロパティを設定することで図形のスタイルを設定できます。`FillColor`, `StrokeColor` 、 そして`StrokeWeight`.
 
 ### 他の要素を基準にして図形を配置するにはどうすればよいですか?
-使用`RelativeHorizontalPosition`そして`RelativeVerticalPosition`ドキュメント内の他の要素を基準にして図形を配置するプロパティ。
+使用`RelativeHorizontalPosition`そして`RelativeVerticalPosition`ドキュメント内の他の要素を基準に図形を配置するためのプロパティ。
 
 ### 複数の図形をグループ化できますか?
 はい、Aspose.Words for .NETでは、`GroupShape`クラス。

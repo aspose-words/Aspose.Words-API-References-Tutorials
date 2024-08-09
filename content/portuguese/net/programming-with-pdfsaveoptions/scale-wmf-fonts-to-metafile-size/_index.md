@@ -17,7 +17,7 @@ Antes de mergulhar nas etapas, certifique-se de ter o seguinte:
 
 1. Aspose.Words for .NET: Certifique-se de ter a biblioteca Aspose.Words instalada. Se não, você pode[baixe aqui](https://releases.aspose.com/words/net/).
 2. Ambiente de desenvolvimento: este tutorial pressupõe que você tenha um ambiente de desenvolvimento .NET configurado (como o Visual Studio) onde você pode escrever e executar código C#.
-3. Compreensão básica da programação .NET: A familiaridade com os conceitos básicos de programação .NET e a sintaxe C# será útil.
+3. Compreensão básica de programação .NET: Familiaridade com conceitos básicos de programação .NET e sintaxe C# será útil.
 4. Documento Word com gráficos WMF: Você precisará de um documento Word contendo gráficos WMF. Você pode usar seu próprio documento ou criar um para teste.
 
 ## Importar namespaces
@@ -55,7 +55,7 @@ MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 };
 ```
 
- O`MetafileRenderingOptions` classe fornece opções de como os metarquivos (como WMF) são renderizados. Definindo`ScaleWmfFontsToMetafileSize` para`false`, você está instruindo o Aspose.Words a não dimensionar as fontes de acordo com o tamanho do metarquivo, o que pode ajudar a reduzir o tamanho geral do PDF.
+ O`MetafileRenderingOptions` classe fornece opções de como os metarquivos (como WMF) são renderizados. Ao definir`ScaleWmfFontsToMetafileSize` para`false`, você está instruindo o Aspose.Words a não dimensionar as fontes de acordo com o tamanho do metarquivo, o que pode ajudar a reduzir o tamanho geral do PDF.
 
 ## Etapa 3: definir opções para salvar PDF
 
@@ -107,4 +107,4 @@ Sim, esta técnica pode ser aplicada a qualquer documento Word que contenha grá
 
 ### Onde posso encontrar mais informações sobre Aspose.Words?
 
- Você pode explorar mais sobre Aspose.Words no[Documentação Aspose.Words](https://reference.aspose.com/words/net/) . Para downloads, testes e suporte, visite o[Página de download do Aspose.Words](https://releases.aspose.com/words/net/), [Comprar Aspose.Words](https://purchase.aspose.com/buy), [Teste grátis](https://releases.aspose.com/), [Licença Temporária](https://purchase.aspose.com/temporary-license/) , e[Apoiar](https://forum.aspose.com/c/words/8).
+ Você pode explorar mais sobre Aspose.Words no[Documentação Aspose.Words](https://reference.aspose.com/words/net/) . Para downloads, testes e suporte, visite o[Página de download do Aspose.Words](https://releases.aspose.com/words/net/), [Comprar Aspose.Words](https://purchase.aspose.com/buy), [Avaliação Gratuita](https://releases.aspose.com/), [Licença Temporária](https://purchase.aspose.com/temporary-license/) , e[Apoiar](https://forum.aspose.com/c/words/8).

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-txtsaveoptions/add-bidi-marks/
 ---
-## Úvod
+## Zavedení
 
 Ve světě zpracování dokumentů může být správa obousměrného (Bidi) textu často trochu složitější. To platí zejména při práci s jazyky, které mají různé směry textu, jako je arabština nebo hebrejština. Naštěstí Aspose.Words for .NET usnadňuje zvládnutí takových scénářů. V tomto tutoriálu si projdeme, jak přidat značky Bidi do dokumentu aplikace Word pomocí Aspose.Words for .NET.
 

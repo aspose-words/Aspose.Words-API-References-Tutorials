@@ -29,7 +29,7 @@ Antes de profundizar en la creación y el dominio de campos de formulario, confi
    import aspose.words
    ```
 
-Una vez realizada la configuración, pasemos a los conceptos básicos de creación y gestión de campos de formulario.
+Una vez realizada la configuración, pasemos a los conceptos básicos de creación y administración de campos de formulario.
 
 ## Crear campos de formulario
 
@@ -93,7 +93,7 @@ date_picker.name = "birth_date"
 
 ### Agregar texto de marcador de posición
 
- El texto de marcador de posición en los campos de entrada de texto guía a los usuarios sobre el formato de entrada esperado. Utilizar el`PlaceholderText` propiedad para agregar marcadores de posición:
+ El texto de marcador de posición en los campos de entrada de texto guía a los usuarios sobre el formato de entrada esperado. Utilice el`PlaceholderText` propiedad para agregar marcadores de posición:
 
 ```python
 text_input_field.placeholder_text = "Enter your full name"

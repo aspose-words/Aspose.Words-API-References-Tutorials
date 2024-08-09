@@ -9,7 +9,7 @@ url: /sv/net/programming-with-digital-signatures/signing-existing-signature-line
 ---
 ## Introduktion
 
-Hallå där! Har du någonsin behövt signera ett digitalt dokument men tyckt att det var lite krångligt? Du har tur eftersom vi idag dyker in i hur du enkelt kan signera en befintlig signaturrad i ett Word-dokument med Aspose.Words för .NET. Denna handledning kommer att leda dig genom processen steg-för-steg, vilket säkerställer att du bemästrar den här uppgiften på nolltid.
+Hej där! Har du någonsin behövt signera ett digitalt dokument men tyckt att det var lite krångligt? Du har tur eftersom vi idag dyker in i hur du enkelt kan signera en befintlig signaturrad i ett Word-dokument med Aspose.Words för .NET. Denna handledning kommer att leda dig genom processen steg-för-steg, vilket säkerställer att du bemästrar den här uppgiften på nolltid.
 
 ## Förutsättningar
 

@@ -10,7 +10,7 @@ url: /vi/net/working-with-section/copy-section/
 
 ## Giới thiệu
 
-Xin chào những người đam mê Word! 📄 Bạn đã bao giờ cần sao chép một phần từ tài liệu Word này sang tài liệu Word khác nhưng thấy mình bị sa lầy bởi nỗ lực thủ công lặp đi lặp lại? Thôi, đừng lo lắng nữa! Với Aspose.Words for .NET, bạn có thể tự động hóa tác vụ này một cách dễ dàng. Hướng dẫn này sẽ hướng dẫn bạn từng bước quy trình sao chép các phần giữa các tài liệu, đảm bảo bạn có thể hợp lý hóa quy trình quản lý tài liệu của mình. Sẵn sàng để đi sâu vào? Bắt đầu nào!
+Xin chào những người đam mê Word! 📄 Bạn đã bao giờ cần sao chép một phần từ tài liệu Word này sang tài liệu Word khác nhưng thấy mình bị sa lầy bởi nỗ lực thủ công lặp đi lặp lại? Thôi, đừng lo lắng nữa! Với Aspose.Words for .NET, bạn có thể tự động hóa tác vụ này một cách dễ dàng. Hướng dẫn này sẽ hướng dẫn bạn từng bước quy trình sao chép các phần giữa các tài liệu, đảm bảo bạn có thể hợp lý hóa quy trình quản lý tài liệu của mình. Sẵn sàng để đi sâu vào? Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
@@ -91,7 +91,7 @@ dstDoc.Save(dataDir + "WorkingWithSection.CopySection.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! 🎉 Bạn đã sao chép thành công một phần từ tài liệu Word này sang tài liệu Word khác bằng Aspose.Words for .NET. Tính năng mạnh mẽ này có thể giúp bạn tiết kiệm rất nhiều thời gian và công sức, đặc biệt khi xử lý các tài liệu phức tạp hoặc các tác vụ lặp đi lặp lại. Hãy nhớ rằng, chìa khóa để thành thạo Aspose.Words nằm ở việc thực hành và thử nghiệm các tính năng khác nhau. Chúc mừng mã hóa!
+Và bạn có nó! 🎉 Bạn đã sao chép thành công một phần từ tài liệu Word này sang tài liệu Word khác bằng Aspose.Words for .NET. Tính năng mạnh mẽ này có thể giúp bạn tiết kiệm rất nhiều thời gian và công sức, đặc biệt khi xử lý các tài liệu phức tạp hoặc các tác vụ lặp đi lặp lại. Hãy nhớ rằng, chìa khóa để thành thạo Aspose.Words nằm ở việc thực hành và thử nghiệm các tính năng khác nhau. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 
@@ -109,7 +109,7 @@ Có, Aspose.Words hỗ trợ nhiều định dạng Word khác nhau, bao gồm D
 
 ### Tôi có thể tìm thêm tài nguyên trên Aspose.Words ở đâu?
 
- Để biết thêm thông tin, bạn có thể truy cập[Tài liệu API Aspose.Words](https://reference.aspose.com/words/net/) hoặc là[diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8) để được giúp đỡ và thảo luận.
+ Để biết thêm thông tin, bạn có thể truy cập[Tài liệu API Aspose.Words](https://reference.aspose.com/words/net/) hoặc[diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8) để được giúp đỡ và thảo luận.
 
 ### Tôi có thể dùng thử Aspose.Words cho .NET miễn phí không?
 

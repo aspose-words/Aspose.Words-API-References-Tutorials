@@ -109,4 +109,4 @@ Absolutamente! Você pode percorrer todas as tabelas do seu documento e aplicar 
 Depois que os estilos são expandidos, eles são aplicados diretamente às células. Para reverter, você precisaria recarregar o documento ou reaplicar os estilos manualmente.
 
 ### Este método funciona com todas as versões do Aspose.Words for .NET?
- Sim o`ExpandTableStylesToDirectFormatting` O método está disponível em versões recentes do Aspose.Words for .NET. Verifique sempre o[documentação](https://reference.aspose.com/words/net/) para obter as atualizações mais recentes.
+ Sim, o`ExpandTableStylesToDirectFormatting` O método está disponível em versões recentes do Aspose.Words for .NET. Verifique sempre o[documentação](https://reference.aspose.com/words/net/) para obter as atualizações mais recentes.

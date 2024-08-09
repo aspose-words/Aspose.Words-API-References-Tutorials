@@ -9,13 +9,13 @@ url: /ko/net/programming-with-htmlfixedsaveoptions/write-all-css-rules-in-single
 ---
 ## 소개
 
-Word 문서를 HTML로 변환할 때 여기저기 흩어져 있는 CSS 규칙의 웹에 얽혀 있는 것을 발견한 적이 있습니까? 걱정하지 마세요! 오늘 우리는 단일 파일에 모든 CSS 규칙을 작성할 수 있는 .NET용 Aspose.Words의 뛰어난 기능을 살펴보겠습니다. 이는 코드를 정리할 뿐만 아니라 삶을 훨씬 더 쉽게 만들어 줍니다. 버클을 채우고 더욱 깨끗하고 효율적인 HTML 출력을 향한 여정을 시작해 보세요!
+Word 문서를 HTML로 변환할 때 여기저기 흩어져 있는 CSS 규칙의 웹에 얽혀 있는 것을 발견한 적이 있습니까? 걱정하지 마세요! 오늘 우리는 단일 파일에 모든 CSS 규칙을 작성할 수 있는 .NET용 Aspose.Words의 뛰어난 기능을 살펴보겠습니다. 이는 코드를 정리할 뿐만 아니라 삶을 훨씬 더 쉽게 만들어줍니다. 버클을 채우고 더욱 깨끗하고 효율적인 HTML 출력을 향한 여정을 시작해 보세요!
 
 ## 전제 조건
 
 핵심적인 내용을 살펴보기 전에 먼저 오리를 한 줄로 나열해 보겠습니다. 시작하는 데 필요한 사항은 다음과 같습니다.
 
-1.  .NET용 Aspose.Words: .NET용 Aspose.Words 라이브러리가 있는지 확인하세요. 아직 갖고 있지 않다면 다음을 수행할 수 있습니다.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+1.  .NET용 Aspose.Words: .NET용 Aspose.Words 라이브러리가 있는지 확인하세요. 아직 갖고 있지 않다면 다음을 수행할 수 있습니다.[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 2. .NET 개발 환경: 컴퓨터에 .NET 개발 환경이 설정되어 있어야 합니다. Visual Studio는 널리 사용되는 선택입니다.
 3. C#에 대한 기본 지식: C# 프로그래밍에 대한 기본적인 이해가 도움이 됩니다.
 4. Word 문서: 변환할 Word 문서(.docx)를 준비하세요.

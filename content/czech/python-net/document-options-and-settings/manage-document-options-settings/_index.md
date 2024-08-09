@@ -141,4 +141,4 @@ doc.save("output.pdf", aw.SaveFormat.PDF)
 
 ### Kde najdu další informace o Aspose.Words pro Python?
 
- Můžete se podívat na dokumentaci na adrese[tady](https://reference.aspose.com/words/python-net/).
+ Můžete se podívat na dokumentaci na adrese[zde](https://reference.aspose.com/words/python-net/).

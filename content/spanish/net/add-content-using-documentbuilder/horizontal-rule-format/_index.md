@@ -44,7 +44,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Paso 2: Insertar regla horizontal
 
- Utilizar el`InsertHorizontalRule()` método de la`DocumentBuilder` clase para agregar una regla horizontal.
+ Utilice el`InsertHorizontalRule()` método de la`DocumentBuilder` clase para agregar una regla horizontal.
 
 ```csharp
 Shape shape = builder.InsertHorizontalRule();
@@ -52,7 +52,7 @@ Shape shape = builder.InsertHorizontalRule();
 
 ## Paso 3: Personaliza el formato de regla horizontal
 
- Acceder al`HorizontalRuleFormat` propiedad de la forma insertada para personalizar la apariencia de la regla horizontal.
+ Accede al`HorizontalRuleFormat` propiedad de la forma insertada para personalizar la apariencia de la regla horizontal.
 
 ```csharp
 HorizontalRuleFormat horizontalRuleFormat = shape.HorizontalRuleFormat;

@@ -84,7 +84,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions
 };
 ```
 
-### Etapa 3.2: definir o prefixo do nome da classe CSS
+### Etapa 3.2: Definir o prefixo do nome da classe CSS
 
  Agora, vamos definir o`CssClassNamePrefix` propriedade para o prefixo desejado. Para este exemplo, usaremos`"pfx_"`.
 
@@ -120,7 +120,7 @@ E aí está! Seguindo essas etapas, você adicionou com êxito um prefixo de nom
  O`CssClassNamePrefix`propriedade funciona com CSS externo. Para CSS in-line, você precisará de uma abordagem diferente.
 
 ### Como posso incluir outras opções de salvamento de HTML?
- Você pode configurar diversas propriedades de`HtmlSaveOptions` para personalizar sua saída HTML. Verifica a[documentação](https://reference.aspose.com/words/net/) para mais detalhes.
+ Você pode configurar diversas propriedades de`HtmlSaveOptions` para personalizar sua saída HTML. Verifique o[documentação](https://reference.aspose.com/words/net/) para mais detalhes.
 
 ### É possível salvar o HTML em um stream?
  Absolutamente! Você pode salvar o documento em um stream passando o objeto stream para o`Save` método.

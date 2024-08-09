@@ -9,7 +9,7 @@ url: /fr/net/programming-with-markdownsaveoptions/export-into-markdown-with-tabl
 ---
 ## Introduction
 
-Salut! Vous êtes-vous déjà demandé comment exporter votre document Word au format Markdown avec des tableaux parfaitement alignés ? Que vous soyez un développeur travaillant sur de la documentation ou simplement quelqu'un qui aime Markdown, ce guide est fait pour vous. Nous allons plonger dans le vif du sujet de l'utilisation d'Aspose.Words for .NET pour y parvenir. Prêt à transformer vos tableaux Word en tableaux Markdown parfaitement alignés ? Commençons!
+Salut! Vous êtes-vous déjà demandé comment exporter votre document Word au format Markdown avec des tableaux parfaitement alignés ? Que vous soyez un développeur travaillant sur de la documentation ou simplement quelqu'un qui aime Markdown, ce guide est fait pour vous. Nous allons plonger dans le vif du sujet de l'utilisation d'Aspose.Words for .NET pour y parvenir. Prêt à transformer vos tableaux Word en tableaux Markdown parfaitement alignés ? Commençons !
 
 ## Conditions préalables
 
@@ -97,7 +97,7 @@ doc.Save(dataDir + "AutoTableContentAlignment.md", saveOptions);
 
 ## Conclusion
 
-Et voila! Exporter des documents Word dans Markdown avec des tableaux alignés à l'aide d'Aspose.Words pour .NET est un jeu d'enfant une fois que vous savez comment le faire. Cette puissante bibliothèque facilite le contrôle du formatage et de l'alignement de vos tableaux, garantissant ainsi que vos documents Markdown ressemblent exactement à ce que vous souhaitez. Bon codage !
+Et voilà ! Exporter des documents Word dans Markdown avec des tableaux alignés à l'aide d'Aspose.Words pour .NET est un jeu d'enfant une fois que vous savez comment le faire. Cette puissante bibliothèque facilite le contrôle du formatage et de l'alignement de vos tableaux, garantissant ainsi que vos documents Markdown ressemblent exactement à ce que vous souhaitez. Bon codage !
 
 ## FAQ
 

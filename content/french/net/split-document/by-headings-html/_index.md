@@ -78,7 +78,7 @@ doc.Save(dataDir + "SplitDocument.ByHeadingsHtml.html", options);
 
 ## Conclusion
 
-Et voila! Vous avez réussi à diviser un document Word par titres et à l'enregistrer au format HTML à l'aide d'Aspose.Words pour .NET. Cette méthode est très efficace pour organiser des documents volumineux et créer des sorties HTML segmentées, rendant votre contenu plus gérable et accessible.
+Et voilà ! Vous avez réussi à diviser un document Word par titres et à l'enregistrer au format HTML à l'aide d'Aspose.Words pour .NET. Cette méthode est très efficace pour organiser des documents volumineux et créer des sorties HTML segmentées, rendant votre contenu plus gérable et accessible.
 
 ## FAQ
 

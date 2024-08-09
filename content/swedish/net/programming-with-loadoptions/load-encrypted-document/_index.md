@@ -2,7 +2,7 @@
 title: Ladda krypterat i Word-dokument
 linktitle: Ladda krypterade dokument i Word-dokument
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du laddar och sparar krypterade Word-dokument med Aspose.Words för .NET. Säkra dina dokument enkelt med nya lösenord. Steg-för-steg-guide ingår.
+description: Lär dig hur du laddar och sparar krypterade Word-dokument med Aspose.Words för .NET. Skydda dina dokument enkelt med nya lösenord. Steg-för-steg-guide ingår.
 type: docs
 weight: 10
 url: /sv/net/programming-with-loadoptions/load-encrypted-document/

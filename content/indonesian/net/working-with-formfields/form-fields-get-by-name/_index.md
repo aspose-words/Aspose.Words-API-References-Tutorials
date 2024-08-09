@@ -2,96 +2,129 @@
 title: Bidang Formulir Dapatkan Berdasarkan Nama
 linktitle: Bidang Formulir Dapatkan Berdasarkan Nama
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mengambil dan mengubah bidang formulir menurut nama di dokumen Word menggunakan Aspose.Words untuk .NET.
+description: Pelajari cara mendapatkan dan mengubah bidang formulir menurut nama di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang mendetail ini.
 type: docs
 weight: 10
 url: /id/net/working-with-formfields/form-fields-get-by-name/
 ---
+## Perkenalan
 
-Dalam tutorial langkah demi langkah ini, kami akan memandu Anda tentang cara menggunakan Aspose.Words untuk .NET untuk mengambil bidang formulir berdasarkan nama dari dokumen Word. Kami akan menjelaskan kode sumber C# yang disediakan dan menunjukkan cara mengimplementasikannya di proyek Anda sendiri.
+Apakah Anda bosan mengedit kolom formulir secara manual di dokumen Word Anda? Nah, jangan khawatir lagi! Aspose.Words untuk .NET hadir untuk menyelamatkan hari ini. Pustaka canggih ini memungkinkan Anda mengotomatiskan proses manipulasi bidang formulir, membuat hidup Anda jauh lebih mudah. Hari ini, kita akan mendalami cara mendapatkan kolom formulir berdasarkan nama menggunakan Aspose.Words untuk .NET. Jadi, ambil minuman favorit Anda, dan mari mulai perjalanan ini untuk menyederhanakan tugas pemrosesan dokumen Anda!
 
- Untuk memulai, pastikan Anda telah menginstal dan menyiapkan Aspose.Words untuk .NET di lingkungan pengembangan Anda. Jika Anda belum melakukannya, unduh dan instal perpustakaan dari[Aspose.Rilis]https://releases.aspose.com/words/net/.
+## Prasyarat
 
-## Langkah 1: Menginisialisasi Objek Dokumen
+Sebelum kita mendalami kodenya, pastikan Anda memiliki semua yang Anda perlukan:
 
- Pertama, inisialisasi`Document` objek dengan memberikan jalur ke dokumen sumber Anda yang berisi bidang formulir:
+1.  Aspose.Words untuk .NET Library: Jika Anda belum melakukannya, unduh dari[Di Sini](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Lingkungan pengembangan .NET apa pun seperti Visual Studio.
+3. Pengetahuan Dasar C#: Keakraban dengan C# akan membantu tetapi tidak wajib.
+
+## Impor Namespace
+
+Hal pertama yang pertama, Anda perlu mengimpor namespace yang diperlukan. Inilah cara Anda melakukannya:
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";        
+using System;
+using System.Drawing;
+using Aspose.Words;
+using Aspose.Words.Fields;
+```
+
+## Langkah 1: Siapkan Proyek Anda
+
+Sebelum beralih ke kode, Anda perlu menyiapkan proyek Anda. Begini caranya:
+
+### 1.1 Buat Proyek Baru
+
+Buka lingkungan pengembangan Anda dan buat proyek C# baru. Beri nama sesuatu yang relevan, seperti "AsposeFormFieldsExample."
+
+### 1.2 Tambahkan Aspose.Words untuk Perpustakaan .NET
+
+Tambahkan perpustakaan Aspose.Words untuk .NET ke proyek Anda. Anda dapat melakukan ini melalui NuGet Package Manager dengan menjalankan perintah berikut:
+
+```bash
+Install-Package Aspose.Words
+```
+
+## Langkah 2: Muat Dokumen
+
+Sekarang, mari muat dokumen Word yang berisi kolom formulir. Kami akan mulai dengan menentukan jalur ke direktori dokumen Anda dan kemudian memuat dokumen.
+
+### 2.1 Tentukan Direktori Dokumen
+
+```csharp
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+### 2.2 Memuat Dokumen
+
+```csharp
 Document doc = new Document(dataDir + "Form fields.docx");
 ```
 
-## Langkah 2: Mengambil Bidang Formulir
+## Langkah 3: Akses Bidang Formulir
 
- Selanjutnya, akses`FormFields` properti dari`Range` objek dalam dokumen untuk mengambil semua bidang formulir:
+Selanjutnya, kita akan mengakses kolom formulir di dokumen. Begini caranya:
+
+### 3.1 Dapatkan Koleksi Bidang Formulir
 
 ```csharp
 FormFieldCollection documentFormFields = doc.Range.FormFields;
 ```
 
-Anda dapat mengambil bidang formulir berdasarkan indeks atau nama. Dalam contoh ini, kita mengambil kolom formulir menggunakan kedua metode:
+### 3.2 Mengambil Bidang Formulir Tertentu berdasarkan Indeks dan Nama
 
 ```csharp
-FormField formField1 = documentFormFields[3]; // Mengambil berdasarkan indeks
-FormField formField2 = documentFormFields["Text2"]; // Mengambil berdasarkan nama
-```
-
-## Langkah 3: Memodifikasi Properti Bidang Formulir
-
-Setelah Anda mengambil bidang formulir, Anda dapat mengubah propertinya sesuai kebutuhan. Dalam contoh ini, kami mengubah ukuran font`formField1` hingga 20 dan warna font`formField2` menjadi merah:
-
-```csharp
-formField1.Font.Size = 20;
-formField2.Font.Color = Color.Red;
-```
-
-## Langkah 4: Menyimpan Dokumen
-
-Terakhir, simpan dokumen yang diubah:
-
-```csharp
-doc.Save(dataDir + "ModifiedFormFields.docx");
-```
-
-Itu dia! Anda telah berhasil mengambil bidang formulir berdasarkan nama dan mengubah propertinya di dokumen Word menggunakan Aspose.Words untuk .NET.
-
-### Contoh kode sumber untuk Bidang Formulir Dapatkan Berdasarkan Nama menggunakan Aspose.Words untuk .NET
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";        
-Document doc = new Document(dataDir + "Form fields.docx");
-
-FormFieldCollection documentFormFields = doc.Range.FormFields;
-
 FormField formField1 = documentFormFields[3];
 FormField formField2 = documentFormFields["Text2"];
+```
 
+## Langkah 4: Ubah Bidang Formulir
+
+Sekarang kita memiliki akses ke kolom formulir, mari kita memodifikasinya. Di sinilah keajaiban terjadi!
+
+### 4.1 Ubah Ukuran Font FormField1
+
+```csharp
 formField1.Font.Size = 20;
-formField2.Font.Color = Color.Red;
+```
 
+### 4.2 Mengubah Warna Font FormField2
+
+```csharp
+formField2.Font.Color = Color.Red;
+```
+
+## Langkah 5: Simpan Dokumen yang Dimodifikasi
+
+Terakhir, simpan dokumen yang dimodifikasi dengan nama baru untuk mempertahankan file aslinya.
+
+```csharp
 doc.Save(dataDir + "ModifiedFormFields.docx");
 ```
 
-Jangan ragu untuk menggunakan kode ini di proyek Anda sendiri dan memodifikasinya sesuai dengan kebutuhan spesifik Anda.
+## Kesimpulan
 
-### FAQ
+Dan itu dia! Anda baru saja mempelajari cara mendapatkan dan mengubah bidang formulir berdasarkan nama menggunakan Aspose.Words untuk .NET. Pustaka canggih ini memudahkan Anda mengotomatiskan tugas pemrosesan dokumen, sehingga menghemat waktu dan tenaga Anda. Jadi silakan bereksperimen dengan berbagai modifikasi, dan buat alur kerja pemrosesan dokumen Anda seefisien mungkin!
 
-#### T: Bagaimana cara mendapatkan bidang formulir berdasarkan nama di Aspose.Words?
+## FAQ
 
- A: Untuk mendapatkan kolom formulir berdasarkan nama di Aspose.Words, Anda dapat menggunakan`Document.Range.FormFields[name]` metode. Metode ini mengembalikan kolom formulir yang sesuai dengan nama yang ditentukan.
+### Bisakah saya menggunakan Aspose.Words untuk .NET dengan bahasa pemrograman lain?
 
-#### Q: Bagaimana jika kolom formulir dengan nama yang ditentukan tidak ada di dokumen?
+Ya, Aspose.Words untuk .NET mendukung berbagai bahasa seperti VB.NET dan bahkan Interoperabilitas COM.
 
- A: Jika kolom formulir dengan nama yang ditentukan tidak ada dalam dokumen, maka`Document.Range.FormFields[name]` metode akan kembali`null`. Anda dapat memeriksa hasil ini untuk menangani kasus di mana bidang formulir tidak ditemukan.
+### Apakah ada uji coba gratis yang tersedia untuk Aspose.Words untuk .NET?
 
-#### T: Bagaimana cara mengubah properti bidang formulir yang ditemukan?
+ Ya, Anda dapat mengunduh uji coba gratis dari[Di Sini](https://releases.aspose.com/).
 
-J: Setelah Anda mendapatkan bidang formulir berdasarkan nama, Anda dapat mengakses properti individualnya untuk mengeditnya. Misalnya, Anda dapat mengubah nilai bidang, mengaktifkan atau menonaktifkan visibilitasnya, atau mengubah properti lain sesuai kebutuhan.
+### Bisakah saya memanipulasi elemen lain dari dokumen Word selain bidang formulir?
 
-#### T: Bisakah saya mendapatkan beberapa bidang formulir dengan nama yang sama dalam satu dokumen?
+Sangat! Aspose.Words untuk .NET memungkinkan Anda memanipulasi berbagai elemen dokumen, termasuk teks, gambar, tabel, dan lainnya.
 
- J: Ya, dimungkinkan untuk memiliki beberapa bidang formulir dengan nama yang sama dalam sebuah dokumen. Dalam hal ini,`Document.Range.FormFields[name]` metode akan mengembalikan bidang formulir pertama yang ditemukan dengan nama yang ditentukan. Jika Anda memiliki beberapa bidang formulir dengan nama yang sama, Anda harus mempertimbangkan hal ini saat memanipulasi bidang tersebut.
+### Bagaimana cara mendapatkan dukungan jika saya mengalami masalah?
 
-#### T: Bagaimana cara mengulangi semua bidang formulir dalam dokumen?
+ Anda dapat mengunjungi[Asumsikan forum dukungan](https://forum.aspose.com/c/words/8) untuk bantuan dengan masalah apa pun yang Anda temui.
 
- J: Untuk mengulangi semua bidang formulir dalam dokumen, Anda bisa menggunakan a`foreach` lingkaran di`Document.Range.FormFields` koleksi. Ini akan memungkinkan Anda untuk mengakses setiap bidang formulir satu per satu dan melakukan operasi pada masing-masing bidang tersebut.
+### Di mana saya dapat menemukan dokumentasi lebih lanjut tentang Aspose.Words untuk .NET?
+
+ Dokumentasi terperinci tersedia[Di Sini](https://reference.aspose.com/words/net/).

@@ -20,7 +20,7 @@ url: /ko/java/word-processing/handling-different-document-formats/
 
 ### Java용 Aspose.Words 설치
 
-Aspose.Words for Java를 활용하려면 Aspose.Words JAR 파일을 프로젝트에 추가해야 합니다. 다음과 같이하세요:
+Aspose.Words for Java를 활용하려면 Aspose.Words JAR 파일을 프로젝트에 추가해야 합니다. 다음 단계를 따르세요.
 
 1.  Java용 Aspose.Words 다운로드: Aspose 웹사이트를 방문하세요.[여기](https://releases.aspose.com/words/java/) Java용 Aspose.Words의 최신 버전을 얻으려면
 

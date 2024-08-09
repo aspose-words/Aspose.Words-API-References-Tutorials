@@ -1,6 +1,6 @@
 ---
 title: Speciális mentési beállítások az Aspose.Words for Java segítségével
-linktitle: Dokumentumok mentése különféle formátumokban a következővel
+linktitle: Dokumentumok mentése különböző formátumokban a következővel
 second_title: Aspose.Words Java Document Processing API
 description: Tanuljon meg haladó szintű dokumentumkezelést az Aspose.Words for Java segítségével. Titkosítás, metafájlok kezelése stb. A te Word-dokumentumoid, a te módod.
 type: docs
@@ -58,7 +58,7 @@ public void doNotCompressSmallMetafiles() throws Exception {
 
 ## A képjelek mentésének elkerülése
 
-A képi golyók szemet gyönyörködtetőek lehetnek, de érdemes kizárni őket. Itt van, hogyan:
+A képi golyók szemet gyönyörködtetőek lehetnek, de érdemes kizárni őket. Íme, hogyan:
 
 ```java
 @Test
@@ -107,7 +107,7 @@ public void doNotSavePictureBullet() throws Exception {
 
 ## Következtetés
 
-Gratulálunk! Megtanulta az Aspose.Words for Java használatát speciális mentési beállítások végrehajtására. Legyen szó dokumentumok titkosításáról, metafájlok kezeléséről vagy képsorok kezeléséről, az Aspose.Words for Java lehetővé teszi, hogy átvegye az irányítást Word-dokumentumai felett.
+Gratulálok! Megtanulta az Aspose.Words for Java használatát speciális mentési beállítások végrehajtására. Legyen szó dokumentumok titkosításáról, metafájlok kezeléséről vagy képsorok kezeléséről, az Aspose.Words for Java lehetővé teszi, hogy átvegye az irányítást Word-dokumentumai felett.
 
 ## GYIK
 

@@ -81,7 +81,7 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 
  Εδώ,`"WorkingWithTxtLoadOptions.DocumentTextDirection.docx"` είναι το όνομα του αρχείου εξόδου. Βεβαιωθείτε ότι έχετε επιλέξει ένα όνομα που αντικατοπτρίζει τις αλλαγές που έχετε κάνει.
 
-## συμπέρασμα
+## Σύναψη
 
 Η ρύθμιση της κατεύθυνσης κειμένου στα έγγραφα του Word είναι μια απλή διαδικασία με το Aspose.Words για .NET. Ακολουθώντας αυτά τα βήματα, μπορείτε εύκολα να διαμορφώσετε τον τρόπο με τον οποίο το έγγραφό σας χειρίζεται κείμενο από δεξιά προς τα αριστερά ή από αριστερά προς τα δεξιά. Είτε εργάζεστε με πολύγλωσσα έγγραφα είτε χρειάζεται να μορφοποιήσετε την κατεύθυνση κειμένου για συγκεκριμένες γλώσσες, το Aspose.Words παρέχει μια ισχυρή λύση για να καλύψει τις ανάγκες σας.
 
@@ -89,7 +89,7 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 
 ###  Τι είναι το`DocumentDirection` property used for?
 
- ο`DocumentDirection` ιδιοκτησία σε`TxtLoadOptions` καθορίζει την κατεύθυνση κειμένου για το έγγραφο. Μπορεί να ρυθμιστεί σε`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , ή`DocumentDirection.RightToLeft`.
+ Ο`DocumentDirection` ιδιοκτησία σε`TxtLoadOptions` καθορίζει την κατεύθυνση του κειμένου για το έγγραφο. Μπορεί να ρυθμιστεί σε`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , ή`DocumentDirection.RightToLeft`.
 
 ### Μπορώ να ορίσω την κατεύθυνση κειμένου για συγκεκριμένες παραγράφους αντί για ολόκληρο το έγγραφο;
 

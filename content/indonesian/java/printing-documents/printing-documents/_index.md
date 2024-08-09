@@ -33,7 +33,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Membuat Pekerjaan Cetak
 
-Selanjutnya, kita akan membuat pekerjaan pencetakan untuk mencetak dokumen yang kita muat. Cuplikan kode di bawah ini menginisialisasi pekerjaan pencetakan dan menetapkan pengaturan printer yang diinginkan.
+Selanjutnya, kita akan membuat tugas pencetakan untuk mencetak dokumen yang dimuat. Cuplikan kode di bawah ini menginisialisasi pekerjaan pencetakan dan menetapkan pengaturan printer yang diinginkan.
 
 ```java
 // Buat pekerjaan cetak untuk mencetak dokumen kita.

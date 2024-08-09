@@ -54,7 +54,7 @@ Bookmark bookmark1 = doc.Range.Bookmarks[0];
 
 Förklaring:
 - `doc.Range.Bookmarks[0]`: Detta öppnar det första bokmärket i dokumentet.
-- `Bookmark bookmark1 = doc.Range.Bookmarks[0];` : Detta lagrar det öppnade bokmärket i`bookmark1` variabel.
+- `Bookmark bookmark1 = doc.Range.Bookmarks[0];` : Detta lagrar det åtkomliga bokmärket i`bookmark1` variabel.
 
 ## Steg 3: Få åtkomst till bokmärke efter namn
 
@@ -67,7 +67,7 @@ Bookmark bookmark2 = doc.Range.Bookmarks["MyBookmark3"];
 
 Förklaring:
 - `doc.Range.Bookmarks["MyBookmark3"]`: Detta kommer åt bokmärket som heter "MyBookmark3".
-- `Bookmark bookmark2 = doc.Range.Bookmarks["MyBookmark3"];` : Detta lagrar det öppnade bokmärket i`bookmark2` variabel.
+- `Bookmark bookmark2 = doc.Range.Bookmarks["MyBookmark3"];` : Detta lagrar det åtkomliga bokmärket i`bookmark2` variabel.
 
 ## Steg 4: Manipulera bokmärkesinnehåll
 

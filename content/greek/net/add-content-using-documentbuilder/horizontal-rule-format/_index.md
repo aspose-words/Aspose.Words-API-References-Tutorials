@@ -77,7 +77,7 @@ horizontalRuleFormat.NoShade = true;
 builder.Document.Save(dataDir + "AddContentUsingDocumentBuilder.HorizontalRuleFormat.docx");
 ```
 
-## συμπέρασμα
+## Σύναψη
 
 Η εξοικείωση με την εισαγωγή οριζόντιων κανόνων σε έγγραφα του Word χρησιμοποιώντας το Aspose.Words για .NET βελτιώνει τις δυνατότητες αυτοματοποίησης των εγγράφων σας. Αξιοποιώντας την ευελιξία και τη δύναμη του Aspose.Words, οι προγραμματιστές μπορούν να εξορθολογίσουν αποτελεσματικά τις διαδικασίες δημιουργίας και μορφοποίησης εγγράφων.
 

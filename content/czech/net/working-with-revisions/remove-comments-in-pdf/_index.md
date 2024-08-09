@@ -2,88 +2,91 @@
 title: Odebrat komentáře v souboru PDF
 linktitle: Odebrat komentáře v souboru PDF
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Odstraňte komentáře ze souboru PDF pomocí Aspose.Words for .NET.
+description: Naučte se, jak odstranit komentáře ze souboru PDF pomocí Aspose.Words for .NET s naším podrobným průvodcem.
 type: docs
 weight: 10
 url: /cs/net/working-with-revisions/remove-comments-in-pdf/
 ---
+## Zavedení
 
-tomto podrobném průvodci vám řekneme, jak odstranit komentáře v souboru PDF pomocí Aspose.Words for .NET. Poskytneme vám kompletní zdrojový kód a ukážeme vám, jak formátovat výstup markdown.
+Ahoj, kolegové vývojáři! Zamotali jste se někdy při práci se soubory PDF ve změti komentářů? Nejsi sám. Komentáře mohou někdy zaplnit vaše dokumenty, ať už se jedná o recenze kolegů nebo společné projekty. Naštěstí pro nás Aspose.Words pro .NET poskytuje bezproblémový způsob, jak tyto otravné anotace odstranit. Dnes si procesem projdeme krok za krokem. Tak se připoutejte a pojďme se ponořit do světa Aspose.Words!
 
-## Krok 1: Načtení dokumentu
+## Předpoklady
 
-Prvním krokem je načtení dokumentu obsahujícího komentáře.
+Než začneme, ujistěte se, že máte vše, co potřebujete:
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(MyDir + "Revisions.docx");
-```
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí: Jakékoli IDE kompatibilní s .NET, jako je Visual Studio.
+3. Základní znalost C#: Pomůže, pokud jste obeznámeni se základy programování v C#.
+4. Dokument s komentáři: K testování budeme potřebovat dokument Word (.docx) s komentáři.
 
-## Krok 2: Skrytí komentářů v PDF
+Pokud jste na to všichni připraveni, pojďme k té vzrušující části!
 
-Nakonfigurujeme možnost rozvržení tak, aby byly komentáře při generování PDF skryty.
+## Importovat jmenné prostory
 
-```csharp
-doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
-```
-
-## Krok 3: Uložte dokument jako PDF
-
-Nakonec dokument uložíme ve formátu PDF smazáním komentářů.
+Nejprve musíme importovat potřebné jmenné prostory. To nám umožňuje používat třídy a metody poskytované Aspose.Words.
 
 ```csharp
-doc.Save(dataDir + "WorkingWithRevisions.RemoveCommentsInPdf.pdf");
+using Aspose.Words;
+using Aspose.Words.Layout;
 ```
 
-## Výstupní formáty Markdown
+Tyto jmenné prostory nám poskytují přístup k možnostem manipulace s dokumenty a rozvržení, které budeme potřebovat.
 
-Výstup lze formátovat v markdown pro zlepšení čitelnosti. Například :
+## Krok 1: Vložte dokument
 
-```markdown
-- Comments are hidden in the generated PDF.
-```
+Začněme načtením dokumentu, který obsahuje komentáře. Tento dokument by měl být uložen v adresáři, ke kterému máte přístup.
 
-### Příklad zdrojového kódu pro Remove Comments In Pdf pomocí Aspose.Words for .NET
-
-Zde je úplný zdrojový kód pro odstranění komentářů v souboru PDF pomocí Aspose.Words pro .NET:
 
 ```csharp
 // Cesta k adresáři dokumentů.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(MyDir + "Revisions.docx");
+Document doc = new Document(dataDir + "Revisions.docx");
+```
 
+ V tomto úryvku nahraďte`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k vašemu adresáři dokumentů. Načítáme dokument s názvem`Revisions.docx`.
+
+## Krok 2: Skryjte komentáře v PDF
+
+Dále musíme skrýt komentáře, aby se nezobrazovaly ve verzi PDF našeho dokumentu. Aspose.Words to neuvěřitelně zjednodušuje.
+
+```csharp
 // Skrýt komentáře v PDF.
 doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
+```
 
+Tento řádek kódu říká Aspose.Words, aby skryl komentáře při vykreslování dokumentu.
+
+## Krok 3: Uložte dokument jako PDF
+
+Nakonec upravený dokument uložíme jako PDF. Tento krok zajistí odstranění našich komentářů ve výstupním souboru.
+
+
+```csharp
 doc.Save(dataDir + "WorkingWithRevisions.RemoveCommentsInPdf.pdf");
 ```
 
+Zde dokument uložíme do stejného adresáře s novým názvem, což znamená, že komentáře byly ve verzi PDF odstraněny.
+
 ## Závěr
 
-tomto tutoriálu jsme se naučili, jak odstranit komentáře ze souboru PDF pomocí Aspose.Words for .NET. Pomocí vhodných možností rozvržení jsme byli schopni skrýt komentáře při generování PDF. Aspose.Words for .NET nabízí velkou flexibilitu pro manipulaci se soubory aplikace Word a jejich převod do různých formátů, včetně PDF. Nyní můžete tyto znalosti použít k odstranění komentářů ve vašich vlastních souborech PDF pomocí Aspose.Words for .NET.
+A tady to máte! V několika jednoduchých krocích jsme úspěšně odstranili komentáře ze souboru PDF pomocí Aspose.Words for .NET. Tato výkonná knihovna zjednodušuje manipulaci s dokumenty, takže je snadné zvládnout úkoly, které by jinak byly těžkopádné.
 
-### Časté dotazy pro odstranění komentářů v souboru pdf
+Pamatujte, cvičení dělá mistra. Takže pokračujte a vyzkoušejte to se svými dokumenty. Budete překvapeni, jak čistěji a profesionálněji vypadají vaše PDF, aniž by všechny ty komentáře zaplňovaly okraje.
 
-#### Otázka: Jak nahrát dokument do Aspose.Words pro .NET?
+## FAQ
 
- A: Použijte`Document` třídy Aspose.Words pro .NET k načtení dokumentu ze souboru. Můžete zadat úplnou cestu dokumentu.
+### Co když si chci některé komentáře ponechat, ale jiné odstranit?
+ Komentáře můžete selektivně skrýt manipulací s uzly komentářů přímo v dokumentu před nastavením`CommentDisplayMode`.
 
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
+### Mohu použít Aspose.Words pro jiné formáty souborů než PDF?
+Absolutně! Aspose.Words podporuje širokou škálu formátů souborů včetně DOCX, TXT, HTML a dalších.
 
-#### Otázka: Jak skrýt komentáře v PDF generovaném pomocí Aspose.Words pro .NET?
+### Je k dispozici bezplatná zkušební verze pro Aspose.Words?
+ Ano, můžete získat bezplatnou zkušební verzi[zde](https://releases.aspose.com/).
 
- A: Použijte`CommentDisplayMode` majetek z`LayoutOptions` objekt pro konfiguraci způsobu zobrazení poznámek při generování PDF. Chcete-li skrýt komentáře, nastavte tuto vlastnost na`CommentDisplayMode.Hide`.
+### Co když při používání Aspose.Words narazím na problémy?
+ Můžete navštívit[fórum podpory](https://forum.aspose.com/c/words/8) o pomoc s jakýmikoli problémy, se kterými se můžete setkat.
 
-```csharp
-doc.LayoutOptions.CommentDisplayMode = CommentDisplayMode.Hide;
-```
-
-#### Otázka: Jak uložit dokument jako PDF pomocí Aspose.Words pro .NET?
-
- A: Použijte`Save` metoda`Document` objekt pro uložení dokumentu ve formátu PDF. Zadejte úplnou cestu k souboru PDF.
-
-```csharp
-doc.Save("path/to/the/file.pdf");
-```
+### Jak si mohu zakoupit licenci pro Aspose.Words?
+ Licenci si můžete zakoupit od[zde](https://purchase.aspose.com/buy).

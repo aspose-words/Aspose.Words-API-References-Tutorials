@@ -109,7 +109,7 @@ doc.Save(dataDir + "InsertNestedFields.docx");
 ได้ คุณสามารถซ้อนฟิลด์ต่างๆ เช่น DATE, TIME และ AUTHOR ภายในฟิลด์ IF เพื่อสร้างเนื้อหาแบบไดนามิกได้
 
 ### Aspose.Words สำหรับ .NET ฟรีหรือไม่
- Aspose.Words สำหรับ .NET เป็นไลบรารีเชิงพาณิชย์ แต่คุณสามารถรับ[ทดลองฟรี](https://releases.aspose.com/) เพื่อลองดู
+ Aspose.Words สำหรับ .NET เป็นไลบรารีเชิงพาณิชย์ แต่คุณสามารถรับ[ทดลองใช้ฟรี](https://releases.aspose.com/) เพื่อลองดู
 
 ### ฉันสามารถใช้ Aspose.Words กับภาษา .NET อื่นได้หรือไม่
 ใช่ Aspose.Words รองรับภาษา .NET ทั้งหมด รวมถึง VB.NET และ F#

@@ -10,7 +10,7 @@ url: /ko/java/document-manipulation/using-styles-and-themes/
 
 ## Aspose.Words for Java에서 스타일과 테마 사용 소개
 
-이 가이드에서는 Aspose.Words for Java에서 스타일과 테마를 사용하여 문서의 형식과 모양을 향상시키는 방법을 살펴보겠습니다. 스타일 검색, 스타일 복사, 테마 관리, 스타일 구분 기호 삽입과 같은 주제를 다룹니다. 시작하자!
+이 가이드에서는 Aspose.Words for Java에서 스타일과 테마를 사용하여 문서의 형식과 모양을 향상시키는 방법을 살펴보겠습니다. 스타일 검색, 스타일 복사, 테마 관리, 스타일 구분 기호 삽입과 같은 주제를 다룹니다. 시작해 봅시다!
 
 ## 스타일 검색
 

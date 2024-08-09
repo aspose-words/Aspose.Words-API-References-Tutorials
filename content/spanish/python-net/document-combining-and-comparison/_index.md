@@ -31,7 +31,7 @@ Al final de estos tutoriales, estará equipado con las habilidades para combinar
 ### [Fusionar y comparar documentos en Word](./merge-compare-documents/)
 Fusione y compare documentos de Word sin esfuerzo utilizando Aspose.Words para Python. Aprenda a manipular documentos, resaltar diferencias y automatizar tareas.
 ### [Aprovechando el poder de los marcadores de documentos](./document-bookmarks/)
-Aprenda a aprovechar el poder de los marcadores de documentos utilizando Aspose.Words para Python. Cree, administre y navegue por marcadores con guías paso a paso y ejemplos de código.
+Aprenda cómo aprovechar el poder de los marcadores de documentos usando Aspose.Words para Python. Cree, administre y navegue por marcadores con guías paso a paso y ejemplos de código.
 ### [Navegar por rangos de documentos para una edición de precisión](./document-ranges/)
 Aprenda a navegar y editar rangos de documentos con precisión usando Aspose.Words para Python. Guía paso a paso con código fuente para una manipulación eficiente de contenidos.
 ### [Utilización de etiquetas de documentos estructurados (SDT) para datos estructurados](./document-sdts/)
@@ -43,4 +43,4 @@ Cree una tabla de contenidos fácil de leer con Aspose.Words para Python. Aprend
 ### [Proteger documentos con técnicas de protección avanzadas](./secure-documents-protection/)
 Asegure sus documentos con protección avanzada usando Aspose.Words para Python. Aprenda a agregar contraseñas, cifrar contenido, aplicar firmas digitales y más.
 ### [Gestión de firmas digitales y autenticidad](./manage-digital-signatures/)
-Aprenda a gestionar firmas digitales y garantizar la autenticidad de los documentos utilizando Aspose.Words para Python. Guía paso a paso con código fuente.
+Aprenda a administrar firmas digitales y garantizar la autenticidad de los documentos utilizando Aspose.Words para Python. Guía paso a paso con código fuente.

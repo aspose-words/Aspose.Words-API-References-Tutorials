@@ -2,186 +2,128 @@
 title: การแก้ไขรูปร่าง
 linktitle: การแก้ไขรูปร่าง
 second_title: Aspose.Words API การประมวลผลเอกสาร
-description: แก้ไขรูปร่างในเอกสาร Word ด้วย Aspose.Words for .NET
+description: เรียนรู้วิธีจัดการกับการแก้ไขรูปร่างในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET พร้อมคำแนะนำที่ครอบคลุมนี้ การเปลี่ยนแปลงการติดตามหลัก การแทรกรูปร่าง และอื่นๆ
 type: docs
 weight: 10
 url: /th/net/working-with-revisions/shape-revision/
 ---
+## การแนะนำ
 
-ในคำแนะนำทีละขั้นตอนนี้ เราจะอธิบายวิธีการแก้ไขรูปร่างในเอกสาร Word โดยใช้ Aspose.Words for .NET เราจะจัดเตรียมซอร์สโค้ดที่สมบูรณ์ให้กับคุณ และแสดงวิธีจัดรูปแบบเอาต์พุตมาร์กดาวน์
+การแก้ไขเอกสาร Word โดยทางโปรแกรมอาจเป็นงานที่ยุ่งยาก โดยเฉพาะอย่างยิ่งเมื่อต้องจัดการกับรูปร่าง ไม่ว่าคุณจะสร้างรายงาน ออกแบบเทมเพลต หรือเพียงสร้างเอกสารอัตโนมัติ ความสามารถในการติดตามและจัดการการแก้ไขรูปร่างถือเป็นสิ่งสำคัญ Aspose.Words สำหรับ .NET นำเสนอ API อันทรงพลังเพื่อทำให้กระบวนการนี้ราบรื่นและมีประสิทธิภาพ ในบทช่วยสอนนี้ เราจะเจาะลึกรายละเอียดเฉพาะของการแก้ไขรูปร่างในเอกสาร Word เพื่อให้มั่นใจว่าคุณมีเครื่องมือและความรู้ในการจัดการเอกสารของคุณได้อย่างง่ายดาย
 
-## ขั้นตอนที่ 1: การสร้างเอกสารและเพิ่มรูปร่าง
+## ข้อกำหนดเบื้องต้น
 
-ขั้นตอนแรกคือการสร้างเอกสารใหม่และเพิ่มรูปร่าง
+ก่อนที่เราจะเจาะลึกโค้ด เรามาตรวจสอบให้แน่ใจว่าคุณมีทุกสิ่งที่คุณต้องการ:
+
+-  Aspose.Words สำหรับ .NET: ตรวจสอบให้แน่ใจว่าคุณได้ติดตั้งไลบรารี Aspose.Words แล้ว คุณสามารถ[ดาวน์โหลดได้ที่นี่](https://releases.aspose.com/words/net/).
+- สภาพแวดล้อมการพัฒนา: คุณควรมีการตั้งค่าสภาพแวดล้อมการพัฒนา เช่น Visual Studio
+- ความเข้าใจพื้นฐานของ C#: ความคุ้นเคยกับภาษาการเขียนโปรแกรม C# และแนวคิดพื้นฐานของการเขียนโปรแกรมเชิงวัตถุ
+- เอกสาร Word: เอกสาร Word ที่จะใช้งาน หรือคุณสามารถสร้างขึ้นระหว่างบทช่วยสอนก็ได้
+
+## นำเข้าเนมสเปซ
+
+ขั้นแรก เรามานำเข้าเนมสเปซที่จำเป็นกันก่อน สิ่งเหล่านี้จะช่วยให้เราสามารถเข้าถึงคลาสและวิธีการที่จำเป็นสำหรับการจัดการเอกสารและรูปร่าง Word
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+```
+
+## ขั้นตอนที่ 1: การตั้งค่าไดเร็กทอรีเอกสารของคุณ
+
+ก่อนที่เราจะเริ่มทำงานกับรูปร่าง เราจำเป็นต้องกำหนดเส้นทางไปยังไดเร็กทอรีเอกสารของเรา นี่คือที่ที่เราจะบันทึกเอกสารที่แก้ไขของเรา
+
+```csharp
+// เส้นทางไปยังไดเร็กทอรีเอกสาร
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## ขั้นตอนที่ 2: การสร้างเอกสารใหม่
+
+มาสร้างเอกสาร Word ใหม่ที่เราจะแทรกและแก้ไขรูปร่าง
 
 ```csharp
 Document doc = new Document();
-Assert.False(doc.TrackRevisions);
-
-Shape shape = new Shape(doc, ShapeType.Cube);
-shape. WrapType = WrapType. Inline;
-shape. Width = 100.0;
-shape. Height = 100.0;
-doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 ```
 
-## ขั้นตอนที่ 2: ติดตามการแก้ไขและเพิ่มรูปร่างอื่น
+## ขั้นตอนที่ 3: การแทรกรูปร่างอินไลน์
 
-เราจะเปิดการติดตามการแก้ไขและเพิ่มรูปร่างอื่น
-
-```csharp
-doc.StartTrackRevisions("John Doe");
-
-shape = new Shape(doc, ShapeType.Sun);
-shape. WrapType = WrapType. Inline;
-shape. Width = 100.0;
-shape. Height = 100.0;
-doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
-```
-
-## ขั้นตอนที่ 3: รับคอลเลกชันรูปร่างและตรวจสอบการแก้ไข
-
-เราจะรวบรวมรูปร่างจากเอกสารและตรวจสอบการแก้ไขที่เกี่ยวข้องกับรูปร่างแต่ละรูป
+เราจะเริ่มต้นด้วยการแทรกรูปร่างอินไลน์ลงในเอกสารของเราโดยไม่ต้องติดตามการแก้ไข รูปร่างอินไลน์คือรูปร่างที่ต่อเนื่องกับข้อความ
 
 ```csharp
-List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-Assert.True(shapes[0].IsDeleteRevision);
-
-Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-Assert.True(shapes[1].IsInsertRevision);
-```
-
-## ขั้นตอนที่ 4: ตรวจสอบการแก้ไขการย้ายรูปร่าง
-
-เราจะโหลดเอกสารที่มีอยู่ซึ่งมีการแก้ไขการแทนที่รูปร่าง และตรวจสอบการแก้ไขที่เกี่ยวข้อง
-
-```csharp
-doc = new Document(MyDir + "Revision shape.docx");
-
-shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert. False(shapes[0].IsMoveFromRevision);
-Assert.True(shapes[0].IsMoveToRevision);
-
-Assert.True(shapes[1].IsMoveFromRevision);
-Assert. False(shapes[1].IsMoveToRevision);
-```
-
-### ตัวอย่างซอร์สโค้ดสำหรับการแก้ไขรูปร่างโดยใช้ Aspose.Words สำหรับ .NET
-
-นี่คือซอร์สโค้ดที่สมบูรณ์สำหรับการแก้ไขรูปร่างในเอกสารโดยใช้ Aspose.Words สำหรับ .NET:
-
-```csharp
-Document doc = new Document();
-
-//แทรกรูปร่างอินไลน์โดยไม่ต้องติดตามการแก้ไข
-Assert.False(doc.TrackRevisions);
 Shape shape = new Shape(doc, ShapeType.Cube);
 shape.WrapType = WrapType.Inline;
 shape.Width = 100.0;
 shape.Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
+```
 
-// เริ่มติดตามการแก้ไขแล้วแทรกรูปร่างอื่น
+## ขั้นตอนที่ 4: เริ่มติดตามการแก้ไข
+
+เพื่อติดตามการเปลี่ยนแปลงในเอกสารของเรา เราจำเป็นต้องเปิดใช้งานการติดตามการแก้ไข นี่เป็นสิ่งสำคัญสำหรับการระบุการดัดแปลงรูปร่าง
+
+```csharp
 doc.StartTrackRevisions("John Doe");
+```
+
+## ขั้นตอนที่ 5: การแทรกรูปร่างอื่นด้วยการแก้ไข
+
+เมื่อเปิดใช้งานการติดตามการแก้ไขแล้ว ให้แทรกรูปร่างอื่นกัน คราวนี้ การเปลี่ยนแปลงใดๆ จะถูกติดตาม
+
+```csharp
 shape = new Shape(doc, ShapeType.Sun);
 shape.WrapType = WrapType.Inline;
 shape.Width = 100.0;
 shape.Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
+```
 
-// รับคอลเลกชันรูปร่างของเอกสารซึ่งมีเพียงสองรูปร่างที่เราเพิ่มเข้าไป
+## ขั้นตอนที่ 6: การดึงและการปรับเปลี่ยนรูปร่าง
+
+เราสามารถดึงรูปร่างทั้งหมดในเอกสารและแก้ไขได้ตามต้องการ ที่นี่ เราจะได้รูปร่างและลบอันแรกออก
+
+```csharp
 List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-// ลบรูปร่างแรก
 shapes[0].Remove();
+```
 
-// เนื่องจากเราได้ลบรูปร่างนั้นออกในขณะที่กำลังติดตามการเปลี่ยนแปลง รูปร่างจึงนับเป็นการแก้ไขแบบลบ
-Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-Assert.True(shapes[0].IsDeleteRevision);
+## ขั้นตอนที่ 7: บันทึกเอกสาร
 
-// และเราได้แทรกรูปร่างอื่นในขณะที่ติดตามการเปลี่ยนแปลง ดังนั้นรูปร่างนั้นจะนับเป็นการแก้ไขการแทรก
-Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-Assert.True(shapes[1].IsInsertRevision);
+หลังจากทำการเปลี่ยนแปลงแล้ว เราจำเป็นต้องบันทึกเอกสาร เพื่อให้แน่ใจว่าการแก้ไขและการแก้ไขทั้งหมดจะถูกเก็บไว้
 
-// เอกสารมีรูปร่างเดียวที่ถูกย้าย แต่การแก้ไขการย้ายรูปร่างจะมีรูปร่างนั้นสองอินสแตนซ์
-// อันหนึ่งจะเป็นรูปร่าง ณ จุดหมายปลายทางที่มาถึง และอีกอันจะเป็นรูปร่าง ณ ตำแหน่งเดิม
-doc = new Document(MyDir + "Revision shape.docx");
+```csharp
+doc.Save(dataDir + "Revision shape.docx");
+```
 
+## ขั้นตอนที่ 8: การจัดการการแก้ไขการย้ายรูปร่าง
+
+เมื่อมีการย้ายรูปร่าง Aspose.Words จะติดตามสิ่งนี้เป็นการแก้ไข ซึ่งหมายความว่าจะมีรูปร่างอยู่สองกรณี: ชิ้นหนึ่งอยู่ที่ตำแหน่งเดิมและอีกชิ้นหนึ่งอยู่ที่ตำแหน่งใหม่
+
+```csharp
+doc = new Document(dataDir + "Revision shape.docx");
 shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-// นี่คือการย้ายไปสู่การแก้ไข รวมถึงรูปร่างของจุดหมายปลายทางที่มาถึงด้วย
-Assert.False(shapes[0].IsMoveFromRevision);
-Assert.True(shapes[0].IsMoveToRevision);
-
-// นี่คือการย้ายจากการแก้ไขซึ่งเป็นรูปร่างที่ตำแหน่งเดิม
-Assert.True(shapes[1].IsMoveFromRevision);
-Assert.False(shapes[1].IsMoveToRevision);
 ```
 
 ## บทสรุป
 
-ในบทช่วยสอนนี้ เราได้เรียนรู้วิธีแก้ไขรูปร่างในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET ด้วยการทำตามขั้นตอนในการสร้างเอกสาร เปิดใช้งานการติดตามการแก้ไข ตรวจสอบการแก้ไขที่เกี่ยวข้องกับรูปร่างแต่ละรูปร่าง และตรวจสอบการแก้ไขเพื่อย้ายรูปร่าง เราก็สามารถจัดการการแก้ไขได้สำเร็จ Aspose.Words สำหรับ .NET นำเสนอ API ที่มีประสิทธิภาพสำหรับการประมวลผลคำพร้อมบทวิจารณ์และแบบฟอร์มในเอกสาร Word
+และคุณก็ได้แล้ว! คุณได้เรียนรู้วิธีจัดการกับการแก้ไขรูปร่างในเอกสาร Word เรียบร้อยแล้วโดยใช้ Aspose.Words for .NET ไม่ว่าคุณจะจัดการเทมเพลตเอกสาร ทำรายงานอัตโนมัติ หรือเพียงแค่ติดตามการเปลี่ยนแปลง ทักษะเหล่านี้ก็มีคุณค่าอย่างยิ่ง ด้วยการทำตามคำแนะนำทีละขั้นตอนนี้ คุณไม่เพียงแต่จะเชี่ยวชาญพื้นฐานเท่านั้น แต่ยังได้รับข้อมูลเชิงลึกเกี่ยวกับเทคนิคการจัดการเอกสารขั้นสูงอีกด้วย
 
-### คำถามที่พบบ่อย
+## คำถามที่พบบ่อย
 
-#### ถาม: ฉันจะสร้างเอกสารใหม่และเพิ่มรูปร่างใน Aspose.Words สำหรับ .NET ได้อย่างไร
+### Aspose.Words สำหรับ .NET คืออะไร
+Aspose.Words สำหรับ .NET เป็นไลบรารีอันทรงพลังที่ช่วยให้นักพัฒนาสามารถสร้าง แก้ไข และแปลงเอกสาร Word โดยทางโปรแกรมโดยใช้ C#
 
-ตอบ: หากต้องการสร้างเอกสารใหม่และเพิ่มรูปร่างใน Aspose.Words สำหรับ .NET คุณสามารถใช้โค้ดต่อไปนี้ ที่นี่เราเพิ่มสองรูปร่าง ลูกบาศก์และดวงอาทิตย์ ในส่วนแรกของเอกสาร:
+### ฉันสามารถติดตามการเปลี่ยนแปลงที่ทำกับองค์ประกอบอื่นๆ ในเอกสาร Word ได้หรือไม่
+ใช่ Aspose.Words สำหรับ .NET รองรับการติดตามการเปลี่ยนแปลงองค์ประกอบต่างๆ รวมถึงข้อความ ตาราง และอื่นๆ
 
-```csharp
-Document doc = new Document();
-Assert.False(doc.TrackRevisions);
+### ฉันจะทดลองใช้ Aspose.Words สำหรับ .NET ฟรีได้อย่างไร
+ คุณสามารถทดลองใช้ Aspose.Words สำหรับ .NET ได้ฟรี[ที่นี่](https://releases.aspose.com/).
 
-Shape shape = new Shape(doc, ShapeType.Cube);
-shape. WrapType = WrapType. Inline;
-shape. Width = 100.0;
-shape. Height = 100.0;
-doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
-```
+### เป็นไปได้ไหมที่จะยอมรับหรือปฏิเสธการแก้ไขโดยทางโปรแกรม?
+ใช่ Aspose.Words สำหรับ .NET มีวิธีการยอมรับหรือปฏิเสธการแก้ไขโดยทางโปรแกรม
 
-#### ถาม: ฉันจะเปิดใช้งานการติดตามการแก้ไขใน Aspose.Words สำหรับ .NET ได้อย่างไร
-
- ตอบ: หากต้องการเปิดใช้งานการติดตามการแก้ไขใน Aspose.Words สำหรับ .NET คุณสามารถใช้`StartTrackRevisions` วิธีการของ`Document` วัตถุ. วิธีการนี้ใช้ชื่อผู้เขียนการแก้ไขเป็นพารามิเตอร์:
-
-```csharp
-doc.StartTrackRevisions("John Doe");
-```
-
-#### ถาม: ฉันจะตรวจสอบการแก้ไขที่เกี่ยวข้องกับแต่ละรูปร่างในเอกสาร Aspose.Words สำหรับ .NET ได้อย่างไร
-
-ตอบ: หากต้องการตรวจสอบการแก้ไขที่เกี่ยวข้องกับแต่ละรูปร่างในเอกสาร Aspose.Words สำหรับ .NET คุณสามารถรับคอลเลกชันรูปร่างของเอกสารได้โดยใช้`GetChildNodes` วิธีการด้วย`NodeType.Shape` ประเภทโหนด จากนั้นคุณก็จะสามารถเข้าถึงรูปร่างแต่ละแบบได้`IsDeleteRevision`, `IsInsertRevision`, `IsMoveFromRevision` , และ`IsMoveToRevision` คุณสมบัติเพื่อกำหนดประเภทของการแก้ไขที่เกี่ยวข้องกับรูปร่าง:
-
-```csharp
-List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-Assert.True(shapes[0].IsDeleteRevision);
-
-Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-Assert.True(shapes[1].IsInsertRevision);
-```
-
-#### ถาม: ฉันจะตรวจสอบการแก้ไขการกระจัดของรูปร่างในเอกสาร Aspose.Words สำหรับ .NET ได้อย่างไร
-
- ตอบ: หากต้องการตรวจสอบการแก้ไขการแทนที่รูปร่างในเอกสาร Aspose.Words สำหรับ .NET คุณสามารถโหลดเอกสารที่มีอยู่ซึ่งมีการแก้ไขการแทนที่รูปร่างได้ จากนั้นคุณก็จะสามารถเข้าถึงรูปร่างแต่ละแบบได้`IsMoveFromRevision`และ`IsMoveToRevision` คุณสมบัติเพื่อตรวจสอบว่ามีการเคลื่อนย้ายหรือไม่ และหากเป็นเช่นนั้น จากที่ไหน และไปที่ใด:
-
-```csharp
-doc = new Document(MyDir + "Revision shape.docx");
-
-shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert. False(shapes[0].IsMoveFromRevision);
-Assert.True(shapes[0].IsMoveToRevision);
-
-Assert.True(shapes[1].IsMoveFromRevision);
-Assert. False(shapes[1].IsMoveToRevision);
-```
+### ฉันสามารถใช้ Aspose.Words สำหรับ .NET กับภาษา .NET อื่นนอกเหนือจาก C# ได้หรือไม่
+อย่างแน่นอน! Aspose.Words สำหรับ .NET สามารถใช้กับภาษา .NET ใดก็ได้ รวมถึง VB.NET และ F#

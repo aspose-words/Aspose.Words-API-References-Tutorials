@@ -55,7 +55,7 @@ paragraphFormat.AddSpaceBetweenFarEastAndAlpha = true;
 paragraphFormat.AddSpaceBetweenFarEastAndDigit = true;
 ```
 
- Configurando`AddSpaceBetweenFarEastAndAlpha`y`AddSpaceBetweenFarEastAndDigit` a`true`, le decimos a Aspose.Words que ajuste automáticamente el espacio entre los caracteres asiáticos y las letras o dígitos latinos.
+ Al configurar`AddSpaceBetweenFarEastAndAlpha`y`AddSpaceBetweenFarEastAndDigit` a`true`, le decimos a Aspose.Words que ajuste automáticamente el espacio entre los caracteres asiáticos y las letras o dígitos latinos.
 
 ## Paso 3: agregar texto al documento
 
@@ -76,7 +76,7 @@ Finalmente, necesitamos guardar nuestro documento. Esto es como darle los toques
 doc.Save(dataDir + "DocumentFormatting.SpaceBetweenAsianAndLatinText.docx");
 ```
 
-Con esta línea de código guardamos nuestro documento en el directorio especificado con un nombre descriptivo. ¡Y voilá! Su documento está listo con ajustes de espaciado perfectos entre el texto asiático y latino.
+Con esta línea de código guardamos nuestro documento en el directorio especificado con un nombre descriptivo. ¡Y listo! Su documento está listo con ajustes de espaciado perfectos entre el texto asiático y latino.
 
 ## Conclusión
 

@@ -9,14 +9,14 @@ url: /id/net/working-with-fields/insert-field-none/
 ---
 ## Perkenalan
 
-Pernahkah Anda merasa kewalahan dengan tugas berulang dalam membuat dan mengelola dokumen? Bayangkan memiliki tongkat ajaib yang dapat mengotomatiskan tugas-tugas sehari-hari, sehingga meluangkan waktu Anda untuk melakukan upaya yang lebih kreatif. Nah, Anda beruntung! Aspose.Words untuk .NET adalah tongkat ajaib itu. Ini adalah perpustakaan canggih yang memungkinkan Anda memanipulasi dokumen Word dengan mudah. Baik Anda seorang pengembang berpengalaman atau baru memulai, panduan ini akan memandu Anda mempelajari seluk beluk penggunaan Aspose.Words untuk .NET, dengan fokus pada menyisipkan kolom ke dalam dokumen Anda. Siap untuk terjun? Mari kita mulai!
+Pernahkah Anda merasa kewalahan dengan tugas berulang dalam membuat dan mengelola dokumen? Bayangkan memiliki tongkat ajaib yang dapat mengotomatiskan tugas-tugas sehari-hari, sehingga meluangkan waktu Anda untuk melakukan upaya yang lebih kreatif. Nah, Anda beruntung! Aspose.Words untuk .NET adalah tongkat ajaib itu. Ini adalah perpustakaan canggih yang memungkinkan Anda memanipulasi dokumen Word dengan mudah. Baik Anda seorang pengembang berpengalaman atau baru memulai, panduan ini akan memandu Anda mempelajari seluk beluk penggunaan Aspose.Words untuk .NET, dengan fokus pada menyisipkan bidang ke dalam dokumen Anda. Siap untuk terjun? Mari kita mulai!
 
 ## Prasyarat
 
 Sebelum kita terjun ke dunia Aspose.Words untuk .NET yang menarik, ada beberapa hal yang perlu Anda siapkan:
 
 1.  Visual Studio: Pastikan Anda telah menginstal Visual Studio di mesin Anda. Jika Anda belum memilikinya, Anda dapat mengunduhnya dari[Di Sini](https://visualstudio.microsoft.com/downloads/).
-2.  Aspose.Words untuk .NET: Anda memerlukan perpustakaan Aspose.Words. Anda dapat mengunduhnya dari[Unduh Halaman](https://releases.aspose.com/words/net/).
+2.  Aspose.Words untuk .NET: Anda memerlukan perpustakaan Aspose.Words. Anda dapat mengunduhnya dari[halaman unduhan](https://releases.aspose.com/words/net/).
 3. .NET Framework: Pastikan proyek Anda menargetkan versi .NET Framework yang kompatibel. Aspose.Words mendukung .NET Framework 2.0 atau lebih tinggi, .NET Core, dan .NET 5.0 atau lebih baru.
 4. Pengetahuan Dasar C#: Pemahaman dasar tentang pemrograman C# akan membantu Anda mengikuti contoh-contohnya.
 
@@ -74,7 +74,7 @@ Dan itu saja! Anda baru saja membuat dokumen Word dan menyisipkan bidang menggun
 
 ## Kesimpulan
 
-Itu dia, teman-teman! Kami telah melakukan perjalanan melalui dasar-dasar penggunaan Aspose.Words untuk .NET untuk mengotomatisasi pembuatan dan manipulasi dokumen. Dari menyiapkan lingkungan Anda hingga menyisipkan bidang dan menyimpan dokumen Anda, setiap langkah dibangun untuk menguasai alat canggih ini. Baik Anda ingin menyederhanakan alur kerja atau membuat dokumen dinamis, Aspose.Words untuk .NET siap membantu Anda. Jadi, silakan dan cobalah. Siapa tahu? Anda mungkin memiliki waktu ekstra untuk menjelajahi petualangan baru. Selamat membuat kode!
+Itu dia, teman-teman! Kami telah melakukan perjalanan melalui dasar-dasar penggunaan Aspose.Words untuk .NET untuk mengotomatiskan pembuatan dan manipulasi dokumen. Dari menyiapkan lingkungan Anda hingga menyisipkan bidang dan menyimpan dokumen Anda, setiap langkah dibangun untuk menguasai alat canggih ini. Baik Anda ingin menyederhanakan alur kerja atau membuat dokumen dinamis, Aspose.Words untuk .NET siap membantu Anda. Jadi, silakan dan cobalah. Siapa yang tahu? Anda mungkin memiliki waktu ekstra untuk menjelajahi petualangan baru. Selamat membuat kode!
 
 ## FAQ
 

@@ -36,7 +36,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Schritt 2: Text einfügen und Überarbeitungen verfolgen
+## Schritt 2: Text einfügen und Revisionen verfolgen
 
 Sie können Text in das Dokument einfügen und Revisionen verfolgen, indem Sie die Revisionsverfolgung starten und stoppen:
 ```csharp

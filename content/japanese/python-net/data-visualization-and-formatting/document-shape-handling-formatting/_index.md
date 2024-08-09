@@ -14,7 +14,7 @@ url: /ja/python-net/data-visualization-and-formatting/document-shape-handling-fo
 
 ## 環境の設定
 
-印象的なドキュメントシェイプの作成に取り掛かる前に、Aspose.Words for Pythonがインストールされていることを確認してください。ダウンロードは以下から行えます。[ダウンロードリンク](https://releases.aspose.com/words/python/)さらに、[ドキュメンテーション](https://reference.aspose.com/words/python-net/)図書館の利用に関する包括的なガイダンス。
+印象的なドキュメントシェイプの作成に取り掛かる前に、Aspose.Words for Pythonがインストールされていることを確認してください。ダウンロードは以下から行えます。[ダウンロードリンク](https://releases.aspose.com/words/python/)さらに、[ドキュメント](https://reference.aspose.com/words/python-net/)図書館の利用に関する包括的なガイダンス。
 
 ## 基本文書の作成
 
@@ -89,7 +89,7 @@ Aspose.Words for Python の機能により、視覚的に印象的なドキュ�
  Aspose.Words for Pythonは以下からダウンロードできます。[ダウンロードリンク](https://releases.aspose.com/words/python/).
 
 ### Aspose.Words for Python の包括的なドキュメントはどこで入手できますか?
-参照[ドキュメンテーション](https://reference.aspose.com/words/python-net/)Aspose.Words for Python の使用に関する詳細なガイダンス。
+参照[ドキュメント](https://reference.aspose.com/words/python-net/)Aspose.Words for Python の使用に関する詳細なガイダンス。
 
 ### 図形の色やスタイルをカスタマイズできますか?
 もちろんです! Aspose.Words for Python には、デザインの好みに合わせて図形の色、サイズ、スタイルをカスタマイズするオプションが用意されています。

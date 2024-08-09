@@ -19,7 +19,7 @@ Trước khi đi sâu vào mã, hãy đảm bảo bạn có mọi thứ mình c�
 2. .NET Framework: Bạn nên cài đặt .NET Framework trên máy của mình.
 3. Môi trường phát triển: Một môi trường phát triển như Visual Studio.
 4. Word Document: Là tài liệu Word có hiệu ứng 3D mà bạn muốn chuyển đổi sang PDF.
-5.  Giấy phép tạm thời: Để có đầy đủ khả năng, bạn có thể cần giấy phép tạm thời từ Aspose mà bạn có thể nhận được[đây](https://purchase.aspose.com/temporary-license/).
+5.  Giấy phép tạm thời: Để có đầy đủ khả năng, bạn có thể cần giấy phép tạm thời từ Aspose, giấy phép này bạn có thể nhận được[đây](https://purchase.aspose.com/temporary-license/).
 
 Với những điều kiện tiên quyết này, bạn đã sẵn sàng hiển thị hiệu ứng 3D trong tài liệu PDF của mình.
 
@@ -70,7 +70,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.Dml3DEffectsRendering.pdf", saveOp
 
 ## Phần kết luận
 
-Chúc mừng! Bạn đã hiển thị thành công các hiệu ứng DML 3D trong tài liệu PDF bằng Aspose.Words cho .NET. Bằng cách làm theo các bước đơn giản này, bạn có thể chuyển đổi tài liệu Word với các hiệu ứng 3D nâng cao thành các tệp PDF tuyệt đẹp, làm cho tài liệu của bạn hấp dẫn và hấp dẫn hơn về mặt hình ảnh. Tính năng mạnh mẽ này của Aspose.Words có thể nâng cao đáng kể chất lượng trình bày tài liệu của bạn.
+Chúc mừng! Bạn đã hiển thị thành công các hiệu ứng DML 3D trong tài liệu PDF bằng Aspose.Words cho .NET. Bằng cách làm theo các bước đơn giản này, bạn có thể chuyển đổi tài liệu Word có hiệu ứng 3D nâng cao thành các tệp PDF tuyệt đẹp, làm cho tài liệu của bạn hấp dẫn và hấp dẫn hơn về mặt hình ảnh. Tính năng mạnh mẽ này của Aspose.Words có thể nâng cao đáng kể chất lượng trình bày tài liệu của bạn.
 
 ## Câu hỏi thường gặp
 

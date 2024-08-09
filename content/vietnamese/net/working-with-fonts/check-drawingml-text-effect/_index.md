@@ -2,86 +2,100 @@
 title: Kiểm tra hiệu ứng văn bản DrawML
 linktitle: Kiểm tra hiệu ứng văn bản DrawML
 second_title: API xử lý tài liệu Aspose.Words
-description: Trong hướng dẫn này, hãy tìm hiểu cách kiểm tra hiệu ứng văn bản DrawML trong tài liệu Word bằng Aspose.Words cho .NET.
+description: Tìm hiểu cách kiểm tra hiệu ứng văn bản DrawML trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết của chúng tôi. Cải thiện tài liệu của bạn một cách dễ dàng.
 type: docs
 weight: 10
 url: /vi/net/working-with-fonts/check-drawingml-text-effect/
 ---
+## Giới thiệu
 
-Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn cách kiểm tra hiệu ứng văn bản DrawML trong tài liệu Word bằng Thư viện Aspose.Words cho .NET. Kiểm tra hiệu ứng văn bản DrawML cho phép bạn xác định xem một hiệu ứng cụ thể có được áp dụng cho một phần văn bản hay không. Chúng tôi sẽ hướng dẫn bạn từng bước để giúp bạn hiểu và triển khai mã trong dự án .NET của mình.
+Chào mừng bạn đến với hướng dẫn chi tiết khác về cách làm việc với Aspose.Words cho .NET! Hôm nay, chúng ta sẽ đi sâu vào thế giới hấp dẫn của các hiệu ứng văn bản DrawML. Cho dù bạn đang tìm cách cải thiện tài liệu Word của mình bằng bóng, phản chiếu hoặc hiệu ứng 3D, hướng dẫn này sẽ chỉ cho bạn cách kiểm tra các hiệu ứng văn bản này trong tài liệu của mình bằng Aspose.Words for .NET. Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
-Trước khi bắt đầu, hãy đảm bảo bạn có các mục sau:
-- Kiến thức làm việc về ngôn ngữ lập trình C#
-- Thư viện Aspose.Words cho .NET được cài đặt trong dự án của bạn
-- Một tài liệu Word chứa các hiệu ứng văn bản DrawML
 
-## Bước 1: Xác định thư mục tài liệu
- Trước tiên, bạn cần đặt đường dẫn thư mục đến vị trí tài liệu Word của mình. Thay thế`"YOUR DOCUMENT DIRECTORY"` trong mã với đường dẫn thích hợp.
+Trước khi chúng ta bắt đầu phần hướng dẫn, bạn cần phải có một số điều kiện tiên quyết:
+
+-  Aspose.Words for .NET Library: Đảm bảo bạn đã cài đặt thư viện Aspose.Words for .NET. Bạn có thể tải nó xuống từ[Trang phát hành Aspose](https://releases.aspose.com/words/net/).
+- Môi trường phát triển: Bạn nên thiết lập môi trường phát triển, chẳng hạn như Visual Studio.
+- Kiến thức cơ bản về C#: Một số kiến thức quen thuộc về lập trình C# sẽ rất hữu ích.
+
+## Nhập không gian tên
+
+Trước tiên, bạn cần nhập các không gian tên cần thiết. Các không gian tên này sẽ cung cấp cho bạn quyền truy cập vào các lớp và phương thức cần thiết để thao tác với tài liệu Word và kiểm tra các hiệu ứng văn bản DrawML.
 
 ```csharp
-// Đường dẫn đến thư mục tài liệu của bạn
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using Aspose.Words;
+using Aspose.Words.Drawing;
 ```
 
-## Bước 2: Tải tài liệu và kiểm tra hiệu ứng văn bản
-Tiếp theo, chúng ta sẽ tải tài liệu Word và truy cập vào tập hợp các dòng (chuỗi ký tự) trong đoạn đầu tiên của nội dung tài liệu. Tiếp theo, chúng tôi sẽ kiểm tra xem có bất kỳ hiệu ứng văn bản DrawML cụ thể nào được áp dụng cho phông chữ của lần chạy đầu tiên hay không.
+## Hướng dẫn từng bước để kiểm tra hiệu ứng văn bản DrawML
+
+Bây giờ, hãy chia quy trình thành nhiều bước để dễ thực hiện hơn.
+
+## Bước 1: Tải tài liệu
+
+Bước đầu tiên là tải tài liệu Word mà bạn muốn kiểm tra hiệu ứng văn bản DrawML. 
 
 ```csharp
-// Tải tài liệu
-Document doc = new Document(dataDir + "DrawingML text effects.docx");
-RunCollection runs = doc.FirstSection.Body.FirstParagraph.Runs;
-Font runFont = runs[0].Font;
-
-// Kiểm tra hiệu ứng văn bản DrawML
-Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Shadow));
-Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Effect3D));
-Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Reflection));
-Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Outline));
-Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Fill));
-```
-
-### Mã nguồn mẫu để kiểm tra hiệu ứng DMLText bằng Aspose.Words cho .NET 
-
-```csharp
-
 // Đường dẫn đến thư mục tài liệu của bạn
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "DrawingML text effects.docx");
-RunCollection runs = doc.FirstSection.Body.FirstParagraph.Runs;
-Font runFont = runs[0].Font;
+```
 
-// Một lần chạy có thể áp dụng một số hiệu ứng văn bản Dml.
+Đoạn mã này tải tài liệu có tên " drawingML text effect.docx" từ thư mục được chỉ định của bạn.
+
+## Bước 2: Truy cập Bộ sưu tập Runs
+
+Tiếp theo, chúng ta cần truy cập vào bộ sưu tập các lần chạy trong đoạn đầu tiên của tài liệu. Chạy là các phần văn bản có cùng định dạng.
+
+```csharp
+RunCollection runs = doc.FirstSection.Body.FirstParagraph.Runs;
+```
+
+Dòng mã này truy xuất các đoạn chạy từ đoạn đầu tiên trong phần đầu tiên của tài liệu.
+
+## Bước 3: Lấy Font của lần chạy đầu tiên
+
+Bây giờ, chúng ta sẽ lấy các thuộc tính phông chữ của lần chạy đầu tiên trong bộ sưu tập các lần chạy. Điều này cho phép chúng tôi kiểm tra các hiệu ứng văn bản DrawML khác nhau được áp dụng cho văn bản.
+
+```csharp
+Font runFont = runs[0].Font;
+```
+
+## Bước 4: Kiểm tra hiệu ứng văn bản DrawML
+
+Cuối cùng, chúng ta có thể kiểm tra các hiệu ứng văn bản DrawML khác nhau như Bóng, Hiệu ứng 3D, Phản chiếu, Đường viền và Điền.
+
+```csharp
 Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Shadow));
 Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Effect3D));
 Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Reflection));
 Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Outline));
 Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Fill));
-
 ```
 
+ Những dòng mã này sẽ in ra`true` hoặc`false` tùy thuộc vào việc từng hiệu ứng văn bản DrawML cụ thể có được áp dụng cho phông chữ của lần chạy hay không.
+
 ## Phần kết luận
-Trong hướng dẫn này, chúng ta đã biết cách kiểm tra hiệu ứng văn bản DrawML trong tài liệu Word bằng Aspose.Words cho .NET. Kiểm tra hiệu ứng văn bản DrawML cho phép bạn xác định các phần văn bản được áp dụng các hiệu ứng cụ thể. Hãy thoải mái sử dụng tính năng này để thao tác và phân tích hiệu ứng văn bản trong tài liệu Word của bạn.
 
-### Câu hỏi thường gặp
+Chúc mừng! Bạn vừa học cách kiểm tra hiệu ứng văn bản DrawML trong tài liệu Word bằng Aspose.Words for .NET. Tính năng mạnh mẽ này cho phép bạn phát hiện và xử lý các định dạng văn bản phức tạp theo chương trình, giúp bạn kiểm soát tốt hơn các tác vụ xử lý tài liệu của mình.
 
-#### Câu hỏi: Làm cách nào tôi có thể truy cập các hiệu ứng văn bản DrawML trong tài liệu Word bằng Aspose.Words?
 
-Trả lời: Với Aspose.Words, bạn có thể truy cập các hiệu ứng văn bản DrawML trong tài liệu Word bằng API được cung cấp. Bạn có thể duyệt các thành phần văn bản và kiểm tra các thuộc tính cụ thể của hiệu ứng văn bản, chẳng hạn như màu sắc, kích thước, v.v.
+## Câu hỏi thường gặp
 
-#### Hỏi: Những loại hiệu ứng văn bản DrawML nào thường được sử dụng trong tài liệu Word?
+### Hiệu ứng văn bản DrawML là gì?
+Hiệu ứng văn bản DrawML là các tùy chọn định dạng văn bản nâng cao trong tài liệu Word, bao gồm bóng, hiệu ứng 3D, phản chiếu, đường viền và tô màu.
 
-Trả lời: Các loại hiệu ứng văn bản DrawML thường được sử dụng trong tài liệu Word bao gồm bóng, phản chiếu, ánh sáng, chuyển màu, v.v. Những hiệu ứng này có thể được áp dụng để cải thiện hình thức và định dạng của văn bản.
+### Tôi có thể áp dụng hiệu ứng văn bản DrawML bằng Aspose.Words cho .NET không?
+Có, Aspose.Words for .NET cho phép bạn kiểm tra và áp dụng các hiệu ứng văn bản DrawML theo chương trình.
 
-#### Câu hỏi: Làm cách nào để kiểm tra màu của hiệu ứng văn bản DrawML trong tài liệu Word?
+### Tôi có cần giấy phép để sử dụng Aspose.Words cho .NET không?
+ Có, Aspose.Words for .NET yêu cầu giấy phép để có đầy đủ chức năng. Bạn có thể có được một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) để đánh giá.
 
-Trả lời: Để kiểm tra màu của hiệu ứng văn bản DrawML trong tài liệu Word, bạn có thể sử dụng các phương thức do Aspose.Words cung cấp để truy cập các thuộc tính màu của hiệu ứng văn bản. Bằng cách này, bạn có thể lấy màu được sử dụng cho hiệu ứng văn bản cụ thể.
+### Có bản dùng thử miễn phí dành cho Aspose.Words cho .NET không?
+ Có, bạn có thể tải xuống một[dùng thử miễn phí](https://releases.aspose.com/) để dùng thử Aspose.Words cho .NET trước khi mua.
 
-#### Hỏi: Có thể kiểm tra hiệu ứng văn bản trong tài liệu Word có nhiều phần không?
-
-Trả lời: Có, Aspose.Words cho phép kiểm tra hiệu ứng văn bản trong tài liệu Word có chứa nhiều phần. Bạn có thể điều hướng qua từng phần của tài liệu và truy cập các hiệu ứng văn bản cho từng phần riêng lẻ.
-
-#### Hỏi: Làm cách nào tôi có thể kiểm tra độ mờ của hiệu ứng văn bản DrawML trong tài liệu Word?
-
-Trả lời: Để kiểm tra độ mờ của hiệu ứng văn bản DrawML trong tài liệu Word, bạn có thể sử dụng các phương thức do Aspose.Words cung cấp để truy cập các thuộc tính độ mờ của hiệu ứng văn bản. Điều này sẽ cho phép bạn áp dụng giá trị độ mờ cho hiệu ứng văn bản cụ thể.
+### Tôi có thể tìm thêm tài liệu về Aspose.Words cho .NET ở đâu?
+ Bạn có thể tìm thấy tài liệu chi tiết về[Trang Aspose.Words for .NET Tài liệu](https://reference.aspose.com/words/net/).

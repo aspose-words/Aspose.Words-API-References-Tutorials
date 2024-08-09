@@ -68,7 +68,7 @@ StructuredDocumentTag sdtRichText = new StructuredDocumentTag(doc, SdtType.RichT
 
 ## 4. Adım: Zengin Metin Kutusuna İçerik Ekleme
 
- Oluşturmak`Paragraph` ve bir`Run` Zengin Metin Kutusunda görüntülemek istediğiniz içeriği tutacak nesneyi seçin. Metni ve biçimlendirmeyi gerektiği gibi özelleştirin.
+ Bir oluştur`Paragraph` ve bir`Run` Zengin Metin Kutusunda görüntülemek istediğiniz içeriği tutacak nesneyi seçin. Metni ve biçimlendirmeyi gerektiği gibi özelleştirin.
 
 ```csharp
 Paragraph para = new Paragraph(doc);

@@ -9,7 +9,7 @@ url: /pl/net/programming-with-docsaveoptions/do-not-save-picture-bullet/
 ---
 ## Wstęp
 
-Hej, drodzy programiści! Czy kiedykolwiek pracowałeś z dokumentami programu Word i wpadłeś w zawiłości związane z zapisywaniem punktorów obrazkowych? To jeden z tych drobnych szczegółów, które mogą mieć duży wpływ na ostateczny wygląd dokumentu. Cóż, dzisiaj jestem tutaj, aby poprowadzić Cię przez proces obsługi punktorów obrazkowych w Aspose.Words dla .NET, szczególnie skupiając się na funkcji „Nie zapisuj punktorów obrazkowych”. Gotowy do nurkowania? Chodźmy!
+Hej, drodzy programiści! Czy kiedykolwiek pracowałeś z dokumentami programu Word i wpadłeś w zawiłości związane z zapisywaniem punktorów obrazkowych? To jeden z tych drobnych szczegółów, które mogą mieć duży wpływ na ostateczny wygląd dokumentu. Cóż, dzisiaj jestem tutaj, aby poprowadzić Cię przez proces obsługi punktorów obrazkowych w Aspose.Words dla .NET, szczególnie skupiając się na funkcji „Nie zapisuj punktorów obrazkowych”. Gotowy do nurkowania? chodźmy!
 
 ## Warunki wstępne
 
@@ -62,7 +62,7 @@ Teraz skonfigurujmy opcje zapisywania, aby określić, że punktory obrazkowe ni
 DocSaveOptions saveOptions = new DocSaveOptions { SavePictureBullet = false };
 ```
 
- Przez ustawienie`SavePictureBullet` Do`false`, instruujesz Aspose.Words, aby nie zapisywał punktorów obrazkowych w dokumencie wyjściowym.
+ Ustawiając`SavePictureBullet` Do`false`, instruujesz Aspose.Words, aby nie zapisywał punktorów obrazkowych w dokumencie wyjściowym.
 
 ## Krok 4: Zapisz dokument
 

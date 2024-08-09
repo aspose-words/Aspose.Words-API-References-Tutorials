@@ -9,14 +9,14 @@ url: /es/net/working-with-markdown/use-warning-source/
 ---
 ## Introducción
 
- ¿Alguna vez ha tenido que administrar y formatear documentos mediante programación? Si es así, probablemente se haya enfrentado a las complejidades de manejar diferentes tipos de documentos y asegurarse de que todo se vea bien. Ingrese Aspose.Words para .NET, una poderosa biblioteca que simplifica el procesamiento de documentos. Hoy, profundizaremos en una característica específica: usar el`WarningSource`clase para detectar y manejar advertencias cuando se trabaja con Markdown. ¡Embárquemonos en este viaje para dominar Aspose.Words para .NET!
+¿Alguna vez ha tenido que administrar y formatear documentos mediante programación? Si es así, probablemente se haya enfrentado a las complejidades de manejar diferentes tipos de documentos y asegurarse de que todo se vea bien. Ingrese Aspose.Words para .NET, una poderosa biblioteca que simplifica el procesamiento de documentos. Hoy, profundizaremos en una característica específica: usar el`WarningSource` clase para detectar y manejar advertencias cuando se trabaja con Markdown. ¡Embárquemonos en este viaje para dominar Aspose.Words para .NET!
 
 ## Requisitos previos
 
 Antes de pasar al meollo de la cuestión, asegúrese de tener listo lo siguiente:
 
 1. Visual Studio: cualquier versión reciente servirá.
-2.  Aspose.Words para .NET: puedes[descarguelo aqui](https://releases.aspose.com/words/net/).
+2.  Aspose.Words para .NET: puedes[descárgalo aquí](https://releases.aspose.com/words/net/).
 3. Conocimientos básicos de C#: conocer C# le ayudará a seguir adelante sin problemas.
 4.  Un archivo DOCX de muestra: para este tutorial, usaremos un archivo llamado`Emphases markdown warning.docx`.
 
@@ -39,7 +39,7 @@ Todo proyecto necesita una base sólida, ¿verdad? Comencemos configurando la ru
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real donde se encuentra su archivo DOCX.
+ Reemplazar`"YOUR DOCUMENT DIRECTORY"`con la ruta real donde se encuentra su archivo DOCX.
 
 ## Paso 2: cargar el documento
 
@@ -53,7 +53,7 @@ Document doc = new Document(dataDir + "Emphases markdown warning.docx");
 
 ## Paso 3: configurar la recopilación de advertencias
 
- Imagínese leyendo un libro con notas adhesivas que resaltan puntos importantes. El`WarningInfoCollection`hace precisamente eso para nuestro procesamiento de documentos.
+ Imagínese leyendo un libro con notas adhesivas que resaltan puntos importantes. El`WarningInfoCollection` hace precisamente eso para nuestro procesamiento de documentos.
 
 ```csharp
 WarningInfoCollection warnings = new WarningInfoCollection();
@@ -88,7 +88,7 @@ Esta línea guarda el documento como un archivo Markdown en el directorio especi
 
 ## Conclusión
 
- ¡Y ahí lo tienes! Acabas de aprender a utilizar el`WarningSource`clase en Aspose.Words para .NET para manejar las advertencias de Markdown. Este tutorial cubrió la configuración de su proyecto, la carga de un documento, la recopilación y procesamiento de advertencias y el guardado del documento final. Con este conocimiento, estará mejor equipado para gestionar el procesamiento de documentos en sus aplicaciones. ¡Siga experimentando y explorando las amplias capacidades de Aspose.Words para .NET!
+¡Y ahí lo tienes! Acabas de aprender a utilizar el`WarningSource` clase en Aspose.Words para .NET para manejar las advertencias de Markdown. Este tutorial cubrió la configuración de su proyecto, cargar un documento, recopilar y procesar advertencias y guardar el documento final. Con este conocimiento, estará mejor equipado para gestionar el procesamiento de documentos en sus aplicaciones. ¡Siga experimentando y explorando las amplias capacidades de Aspose.Words para .NET!
 
 ## Preguntas frecuentes
 
@@ -102,7 +102,7 @@ Aspose.Words para .NET es una biblioteca para trabajar con documentos de Word me
  Las fuentes de advertencia indican el origen de las advertencias generadas durante el procesamiento de documentos. Por ejemplo,`WarningSource.Markdown` indica una advertencia relacionada con el procesamiento de Markdown.
 
 ### ¿Puedo personalizar el manejo de advertencias en Aspose.Words?
- Sí, puede personalizar el manejo de advertencias implementando la`IWarningCallback` interfaz y configurándola en el documento`WarningCallback` propiedad.
+ Sí, puede personalizar el manejo de advertencias implementando la`IWarningCallback`interfaz y configurándola en el documento`WarningCallback` propiedad.
 
 ### ¿Cómo guardo un documento en diferentes formatos usando Aspose.Words?
  Puede guardar un documento en varios formatos (como DOCX, PDF, Markdown) usando el`Save` método de la`Document` clase, especificando el formato deseado como parámetro.

@@ -26,7 +26,7 @@ För att börja måste du ladda Word-dokumentet som du vill spara som en PCL-fil
 Document doc = new Document("Your Directory Path" + "YourDocument.docx");
 ```
 
- Byta ut`"YourDocument.docx"` med sökvägen till ditt Word-dokument.
+ Ersätta`"YourDocument.docx"` med sökvägen till ditt Word-dokument.
 
 ## Steg 2: Konfigurera PCL-sparalternativ
 
@@ -48,7 +48,7 @@ Nu när du har laddat ditt dokument och konfigurerat PCL-sparalternativen är de
 doc.save("Your Directory Path" + "YourPCLDocument.pcl", saveOptions);
 ```
 
- Byta ut`"YourPCLDocument.pcl"` med önskat namn för din PCL-fil.
+ Ersätta`"YourPCLDocument.pcl"` med önskat namn för din PCL-fil.
 
 ## Komplett källkod för att spara dokument som PCL-format i Aspose.Words för Java
 

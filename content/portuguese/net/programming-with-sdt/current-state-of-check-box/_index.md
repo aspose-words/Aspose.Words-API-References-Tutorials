@@ -21,7 +21,7 @@ Antes de mergulharmos no tutorial, certifique-se de ter os seguintes pré-requis
 
 3. Conhecimento básico de C#: A familiaridade com a programação C# o ajudará a compreender e acompanhar os exemplos fornecidos.
 
-4. Documento do Word com caixas de seleção: para este tutorial, você precisará de um documento do Word contendo campos de formulário de caixa de seleção. Usaremos este documento para demonstrar como manipular caixas de seleção programaticamente.
+4. Documento do Word com caixas de seleção: para este tutorial, você precisará de um documento do Word contendo campos de formulário com caixas de seleção. Usaremos este documento para demonstrar como manipular caixas de seleção programaticamente.
 
 ## Importar namespaces
 

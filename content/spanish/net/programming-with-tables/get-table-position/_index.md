@@ -14,7 +14,7 @@ url: /es/net/programming-with-tables/get-table-position/
 ## Requisitos previos
 
 Antes de entrar en el meollo de la cuestión, asegurémonos de que tiene todo lo que necesita:
--  Aspose.Words para .NET: asegúrese de tener la última versión. Si no, puedes[descarguelo aqui](https://releases.aspose.com/words/net/).
+-  Aspose.Words para .NET: asegúrese de tener la última versión. Si no, puedes[descárgalo aquí](https://releases.aspose.com/words/net/).
 - Visual Studio: cualquier versión servirá, pero siempre se recomienda la última.
 - .NET Framework: asegúrese de tener .NET Framework 4.0 o posterior.
 - Un documento de Word: para este tutorial, usaremos un documento llamado`Tables.docx`.
@@ -101,4 +101,4 @@ Deberá navegar por el árbol de nodos del documento para acceder a las tablas a
 
 ### ¿Hay una versión de prueba disponible?
 
- Sí, puedes conseguir un[prueba gratis](https://releases.aspose.com/) o un[licencia temporal](https://purchase.aspose.com/temporary-license/) para probar Aspose.Words para .NET.
+ Sí, puedes conseguir un[prueba gratuita](https://releases.aspose.com/) o un[licencia temporal](https://purchase.aspose.com/temporary-license/) para probar Aspose.Words para .NET.

@@ -9,13 +9,13 @@ url: /vi/net/programming-with-document-options-and-settings/view-options/
 ---
 ## Giới thiệu
 
-Này, anh bạn lập trình viên! Bạn đã bao giờ tự hỏi làm cách nào để thay đổi cách bạn xem tài liệu Word của mình bằng Aspose.Words cho .NET chưa? Cho dù bạn muốn chuyển sang kiểu xem khác hay phóng to và thu nhỏ để có được cái nhìn hoàn hảo cho tài liệu của mình, bạn đã đến đúng nơi. Hôm nay, chúng ta sẽ đi sâu vào thế giới Aspose.Words dành cho .NET, đặc biệt tập trung vào cách thao tác các tùy chọn chế độ xem. Chúng tôi sẽ chia mọi thứ thành các bước đơn giản, dễ hiểu để bạn sẽ trở thành chuyên gia ngay lập tức. Sẵn sàng? Bắt đầu nào!
+Này, anh bạn lập trình viên! Bạn đã bao giờ tự hỏi làm cách nào để thay đổi cách bạn xem tài liệu Word của mình bằng Aspose.Words cho .NET chưa? Cho dù bạn muốn chuyển sang kiểu xem khác hay phóng to và thu nhỏ để có được cái nhìn hoàn hảo cho tài liệu của mình, bạn đã đến đúng nơi. Hôm nay, chúng ta sẽ đi sâu vào thế giới Aspose.Words dành cho .NET, đặc biệt tập trung vào cách thao tác các tùy chọn chế độ xem. Chúng tôi sẽ chia mọi thứ thành các bước đơn giản, dễ hiểu để bạn sẽ trở thành chuyên gia ngay lập tức. Sẵn sàng? Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
 Trước khi đi sâu vào mã, hãy đảm bảo rằng chúng ta có mọi thứ cần thiết để làm theo hướng dẫn này. Dưới đây là danh sách kiểm tra nhanh:
 
-1.  Aspose.Words for .NET Library: Đảm bảo bạn có thư viện Aspose.Words for .NET. Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Đảm bảo bạn có thư viện Aspose.Words for .NET. bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Bạn nên cài đặt IDE như Visual Studio trên máy của mình.
 3. Kiến thức cơ bản về C#: Mặc dù chúng ta sẽ giữ mọi thứ đơn giản nhưng hiểu biết cơ bản về C# sẽ có ích.
 4. Tài liệu Word mẫu: Chuẩn bị sẵn tài liệu Word mẫu. Đối với hướng dẫn này, chúng tôi sẽ gọi nó là "Document.docx".
@@ -76,7 +76,7 @@ Dòng mã này lưu tài liệu đã sửa đổi bằng một tên mới, do đ
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Việc thay đổi tùy chọn xem tài liệu Word của bạn bằng Aspose.Words cho .NET thật đơn giản khi bạn biết các bước. Bằng cách làm theo hướng dẫn này, bạn đã học cách tải tài liệu, thay đổi kiểu xem, điều chỉnh mức thu phóng và lưu tài liệu bằng các cài đặt mới. Hãy nhớ rằng, chìa khóa để thành thạo Aspose.Words cho .NET là thực hành. Vì vậy, hãy tiếp tục và thử nghiệm các cài đặt khác nhau để xem cài đặt nào phù hợp nhất với bạn. Chúc mừng mã hóa!
+Và bạn có nó! Việc thay đổi tùy chọn xem tài liệu Word của bạn bằng Aspose.Words cho .NET thật đơn giản khi bạn biết các bước. Bằng cách làm theo hướng dẫn này, bạn đã học cách tải tài liệu, thay đổi kiểu xem, điều chỉnh mức thu phóng và lưu tài liệu bằng các cài đặt mới. Hãy nhớ rằng, chìa khóa để thành thạo Aspose.Words cho .NET là thực hành. Vì vậy, hãy tiếp tục và thử nghiệm các cài đặt khác nhau để xem cài đặt nào phù hợp nhất với bạn. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 

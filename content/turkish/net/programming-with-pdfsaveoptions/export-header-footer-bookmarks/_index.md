@@ -2,7 +2,7 @@
 title: Word Belgesi Üst Bilgisi Alt Bilgisi Yer İmlerini PDF Belgesine Dışa Aktarma
 linktitle: Word Belgesi Üst Bilgisi Alt Bilgisi Yer İmlerini PDF Belgesine Dışa Aktarma
 second_title: Aspose.Words Belge İşleme API'si
-description: Adım adım kılavuzumuzla Aspose.Words for .NET kullanarak üst bilgi ve alt bilgi yer işaretlerini bir Word belgesinden PDF'ye nasıl aktaracağınızı öğrenin.
+description: Adım adım kılavuzumuzla Aspose.Words for .NET'i kullanarak üstbilgi ve altbilgi yer imlerini bir Word belgesinden PDF'ye nasıl aktaracağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/export-header-footer-bookmarks/
@@ -66,13 +66,13 @@ Bu adımda, yapılandırdığınız seçeneklerle belgeyi belirtilen yola kayded
 
 ## Çözüm
 
-İşte buyur! Bu adımları izleyerek, Aspose.Words for .NET'i kullanarak bir Word belgesinin üstbilgi ve altbilgilerindeki yer işaretlerini kolayca PDF'ye aktarabilirsiniz. Bu yöntem, belgenizdeki önemli gezinme yardımcılarının PDF formatında korunmasını sağlayarak okuyucuların belgenizde gezinmesini kolaylaştırır.
+Ve işte karşınızda! Bu adımları izleyerek, Aspose.Words for .NET'i kullanarak bir Word belgesinin üstbilgi ve altbilgilerindeki yer işaretlerini kolayca PDF'ye aktarabilirsiniz. Bu yöntem, belgenizdeki önemli gezinme yardımcılarının PDF formatında korunmasını sağlayarak okuyucuların belgenizde gezinmesini kolaylaştırır.
 
 ## SSS'ler
 
 ### Word belgesindeki tüm yer imlerini PDF'ye aktarabilir miyim?
 
- Evet yapabilirsin. İçinde`PdfSaveOptions`gerekiyorsa ayarları tüm yer işaretlerini içerecek şekilde ayarlayabilirsiniz.
+ Evet yapabilirsin. içinde`PdfSaveOptions`gerekiyorsa ayarları tüm yer işaretlerini içerecek şekilde ayarlayabilirsiniz.
 
 ### Yer işaretlerini belgenin gövdesinden de dışa aktarmak istersem ne olur?
 

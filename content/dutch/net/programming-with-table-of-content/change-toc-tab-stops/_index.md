@@ -19,7 +19,7 @@ Voordat we aan de slag gaan, zorgen we ervoor dat u over alles beschikt wat u no
 2. Ontwikkelomgeving: Visual Studio of een C#-compatibele IDE.
 3. Een Word-document: specifiek een document dat een inhoudsopgave bevat.
 
-Heb je dat allemaal? Geweldig! Laten we gaan.
+Heb je dat allemaal? Geweldig! Laten we rollen.
 
 ## Naamruimten importeren
 

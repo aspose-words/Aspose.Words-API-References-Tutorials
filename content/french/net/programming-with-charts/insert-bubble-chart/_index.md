@@ -83,13 +83,13 @@ doc.Save(dataDir + "WorkingWithCharts.InsertBubbleChart.docx");
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez inséré avec succès un graphique à bulles dans un document Word à l'aide d'Aspose.Words pour .NET. Cet outil puissant vous permet de créer facilement des documents dynamiques et visuellement attrayants. Que vous prépariez des rapports, des présentations ou tout autre type de document, maîtriser cette technique améliorera sans aucun doute votre productivité.
+Félicitations! Vous avez inséré avec succès un graphique à bulles dans un document Word à l'aide d'Aspose.Words pour .NET. Cet outil puissant vous permet de créer facilement des documents dynamiques et visuellement attrayants. Que vous prépariez des rapports, des présentations ou tout autre type de document, maîtriser cette technique améliorera sans aucun doute votre productivité.
 
 ## FAQ
 
 ### Puis-je personnaliser l’apparence du graphique à bulles ?
 
- Absolument! Aspose.Words for .NET offre une large gamme d'options de personnalisation, des couleurs et étiquettes au formatage des séries de données. Vérifiez[Documentation](https://reference.aspose.com/words/net/) pour plus de détails.
+ Absolument! Aspose.Words for .NET offre une large gamme d'options de personnalisation, des couleurs et étiquettes au formatage des séries de données. Découvrez le[documentation](https://reference.aspose.com/words/net/) pour plus de détails.
 
 ### Est-il possible d'ajouter plusieurs graphiques à un seul document ?
 

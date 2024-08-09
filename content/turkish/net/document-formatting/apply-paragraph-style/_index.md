@@ -55,7 +55,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 3. Adım: Paragraf Stilini Uygulama
 
-Sihir yapılan yer burasıdır! Belgemize paragraf stili uygulayacağız.
+Sihrin gerçekleştiği yer burası! Belgemize paragraf stili uygulayacağız.
 
 ```csharp
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Title;
@@ -78,7 +78,7 @@ Bu kod satırı, uygulanan stillerle birlikte belgeyi belirtilen dizine kaydeder
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak Word belgenizin stilini oluşturdunuz. Oldukça hoş, değil mi? Yalnızca birkaç satır kodla sade belgelerinizi görsel açıdan çekici şaheserlere dönüştürebilirsiniz. Öyleyse devam edin, farklı stilleri deneyin ve belgelerinizin öne çıkmasını sağlayın!
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak Word belgenizin stilini oluşturdunuz. Oldukça hoş, değil mi? Yalnızca birkaç satır kodla sade belgelerinizi görsel açıdan çekici şaheserlere dönüştürebilirsiniz. Öyleyse devam edin, farklı stilleri deneyin ve belgelerinizin öne çıkmasını sağlayın!
 
 ## SSS'ler
 

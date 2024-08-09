@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/smart-style-behavior/
 ---
-## Úvod
+## Zavedení
 
 Čau, kouzelníci Word! Přistihli jste se někdy, že jste se zamotali do potíží s kombinováním dokumentů a přitom zachovali svůj styl? Představte si, že máte dva dokumenty aplikace Word, z nichž každý má svůj vlastní vkus, a potřebujete je sloučit, aniž byste ztratili jedinečný nádech. Zní to složitě, že? No, dnes se ponoříme do kouzelného světa Aspose.Words for .NET, abychom vám ukázali, jak toho bez námahy dosáhnout pomocí Smart Style Behavior. Na konci tohoto tutoriálu budete profesionálem ve slučování dokumentů jako kouzelník, který má znalosti o stylu!
 

@@ -18,7 +18,7 @@ Avant de plonger dans le vif du sujet, assurons-nous que vous disposez de tout c
 - Environnement de développement : un IDE comme Visual Studio sera votre terrain de jeu.
 - Compréhension de base de C# : même si nous aborderons tout en détail, une compréhension de base de C# sera bénéfique.
 
-Prêt à partir? Commençons!
+Prêt à rouler ? Commençons !
 
 ## Importation des espaces de noms nécessaires
 
@@ -88,7 +88,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertCheckBoxFormField.docx"
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez inséré avec succès un champ de formulaire de case à cocher dans un document Word à l'aide d'Aspose.Words pour .NET. Grâce à ces étapes, vous pouvez désormais créer des documents interactifs qui améliorent l'engagement des utilisateurs et la collecte de données. La puissance d'Aspose.Words pour .NET ouvre des possibilités infinies d'automatisation et de personnalisation des documents.
+Félicitations! Vous avez inséré avec succès un champ de formulaire de case à cocher dans un document Word à l'aide d'Aspose.Words pour .NET. Grâce à ces étapes, vous pouvez désormais créer des documents interactifs qui améliorent l'engagement des utilisateurs et la collecte de données. La puissance d'Aspose.Words pour .NET ouvre des possibilités infinies d'automatisation et de personnalisation des documents.
 
 ## FAQ
 

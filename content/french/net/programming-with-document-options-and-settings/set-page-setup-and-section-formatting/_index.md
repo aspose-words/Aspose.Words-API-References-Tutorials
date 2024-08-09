@@ -15,7 +15,7 @@ Lorsqu’il s’agit de manipulation de documents, il est crucial de configurer 
 
 Avant de plonger dans le code, voyons ce dont vous avez besoin pour commencer.
 
--  Aspose.Words pour .NET : vous devez avoir installé Aspose.Words pour .NET. Tu peux[Télécharger les ici](https://releases.aspose.com/words/net/).
+-  Aspose.Words pour .NET : vous devez avoir installé Aspose.Words pour .NET. Tu peux[téléchargez-le ici](https://releases.aspose.com/words/net/).
 - Environnement de développement : tout IDE compatible .NET (par exemple, Visual Studio).
 - Connaissance de base de C# : Une connaissance de la programmation C# est essentielle.
 
@@ -74,9 +74,9 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.SetPageSetupAndSection
 
 ## Conclusion
 
-Et voila! En suivant ces étapes simples, vous avez appris à configurer l'orientation de la page, à ajuster les marges et à sélectionner les formats de papier à l'aide d'Aspose.Words for .NET. Ces fonctionnalités vous permettent de créer par programmation des documents bien structurés et formatés de manière professionnelle.
+Et voilà ! En suivant ces étapes simples, vous avez appris à configurer l'orientation de la page, à ajuster les marges et à sélectionner les formats de papier à l'aide d'Aspose.Words for .NET. Ces fonctionnalités vous permettent de créer par programmation des documents bien structurés et formatés de manière professionnelle.
 
-Que vous travailliez sur un petit projet ou que vous traitiez un document à grande échelle, la maîtrise de ces configurations de base peut améliorer considérablement la présentation et la convivialité de vos documents. Plongez plus profondément dans le[Documentation Aspose.Words](https://reference.aspose.com/words/net/) pour des fonctionnalités plus avancées et des options de personnalisation.
+Que vous travailliez sur un petit projet ou que vous traitiez des documents à grande échelle, la maîtrise de ces configurations de base peut améliorer considérablement la présentation et la convivialité de vos documents. Plongez plus profondément dans le[Documentation Aspose.Words](https://reference.aspose.com/words/net/) pour des fonctionnalités plus avancées et des options de personnalisation.
 
 ## FAQ
 

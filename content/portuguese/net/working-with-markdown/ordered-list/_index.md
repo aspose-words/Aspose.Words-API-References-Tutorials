@@ -15,7 +15,7 @@ Então, você decidiu mergulhar no Aspose.Words for .NET para criar documentos W
 
 Antes de mergulharmos no código, há algumas coisas que você precisará:
 
-1.  Aspose.Words for .NET: Certifique-se de ter o Aspose.Words for .NET instalado. Se não, você pode baixá-lo[aqui](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Certifique-se de ter o Aspose.Words for .NET instalado. Se não, você pode baixá-lo[aqui](https://releases.aspose.com/words/net/).
 2. Ambiente de desenvolvimento: Visual Studio ou qualquer outro IDE compatível com .NET.
 3. Conhecimento básico de C#: você deve estar confortável com os conceitos básicos de C# para acompanhar facilmente.
 
@@ -53,7 +53,7 @@ Esta linha de código configura a numeração da sua lista. Fácil, certo?
 
 ## Etapa 3: adicionar itens à lista
 
-A seguir, vamos adicionar alguns itens à nossa lista. Imagine que você está anotando uma lista de compras.
+seguir, vamos adicionar alguns itens à nossa lista. Imagine que você está anotando uma lista de compras.
 
 ```csharp
 builder.Writeln("Item 1");
@@ -64,7 +64,7 @@ Com essas linhas, você adiciona os dois primeiros itens à sua lista.
 
 ## Etapa 4: recuar a lista
 
-se você quiser adicionar subitens em um item? Vamos fazer isso!
+E se você quiser adicionar subitens em um item? Vamos fazer isso!
 
 ```csharp
 builder.ListFormat.ListIndent();
@@ -82,7 +82,7 @@ Criar uma lista ordenada em um documento do Word programaticamente pode parecer 
 ## Perguntas frequentes
 
 ### Posso personalizar o estilo de numeração da lista?  
- Sim, você pode personalizar o estilo de numeração usando o`ListFormat` propriedades. Você pode definir diferentes estilos de numeração, como algarismos romanos, letras, etc.
+ Sim, você pode personalizar o estilo de numeração usando o`ListFormat`propriedades. Você pode definir diferentes estilos de numeração, como algarismos romanos, letras, etc.
 
 ### Como adiciono mais níveis de recuo?  
  Você pode usar o`ListIndent` método várias vezes para criar níveis mais profundos de sublistas. Cada chamada para`ListIndent` adiciona um nível de recuo.

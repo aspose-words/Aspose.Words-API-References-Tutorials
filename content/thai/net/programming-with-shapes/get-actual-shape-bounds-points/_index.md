@@ -48,7 +48,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Shape shape = builder.InsertImage("YOUR DOCUMENT DIRECTORY/Transparent background logo.png");
 ```
 
- แทนที่`"YOUR DOCUMENT DIRECTORY/Transparent background logo.png"` พร้อมเส้นทางไปยังไฟล์ภาพของคุณ บรรทัดนี้จะแทรกรูปภาพลงในเอกสารเป็นรูปร่าง
+ แทนที่`"YOUR DOCUMENT DIRECTORY/Transparent background logo.png"` พร้อมเส้นทางไปยังไฟล์รูปภาพของคุณ บรรทัดนี้จะแทรกรูปภาพลงในเอกสารเป็นรูปร่าง
 
 ## ขั้นตอนที่ 3: ปลดล็อกอัตราส่วนภาพ
 

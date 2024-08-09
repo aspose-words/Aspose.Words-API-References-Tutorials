@@ -43,7 +43,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 2. lépés: Indítson el egy új táblázatot
 
- Ezután egy új táblát indítunk a`DocumentBuilder`tárgy. Itt történik a varázslat.
+ Ezután egy új táblát indítunk a`DocumentBuilder`objektum. Itt történik a varázslat.
 
 ```csharp
 Table table = builder.StartTable();

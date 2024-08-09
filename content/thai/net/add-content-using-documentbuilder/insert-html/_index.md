@@ -62,7 +62,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## ขั้นตอนที่ 4: การแทรกเนื้อหา HTML
 
- มาถึงส่วนที่สนุกแล้ว—การเพิ่มเนื้อหา HTML ใช้`InsertHtml` วิธีการของ`DocumentBuilder` คลาส เราสามารถฝัง HTML ลงในเอกสาร Word ของเราได้โดยตรง
+ มาถึงส่วนที่สนุกแล้ว—การเพิ่มเนื้อหา HTML การใช้`InsertHtml` วิธีการของ`DocumentBuilder` คลาส เราสามารถฝัง HTML ลงในเอกสาร Word ของเราได้โดยตรง
 
 ```csharp
 builder.InsertHtml(
@@ -82,7 +82,7 @@ builder.InsertHtml(
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
 ```
 
-และคุณก็ได้แล้ว! คุณเพิ่งแทรก HTML ลงในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET แตะมือ!
+และคุณก็ได้แล้ว! คุณเพิ่งแทรก HTML ลงในเอกสาร Word โดยใช้ Aspose.Words สำหรับ .NET ไฮห้า!
 
 ## บทสรุป
 
@@ -104,7 +104,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
 ได้ เมื่อแทรก HTML แล้ว คุณสามารถจัดการเอกสารเพิ่มเติมได้โดยใช้วิธีการต่างๆ ที่ Aspose.Words สำหรับ .NET ให้มา
 
 ### ฉันต้องมีใบอนุญาตเพื่อใช้ Aspose.Words สำหรับ .NET หรือไม่  
- คุณสามารถเริ่มต้นด้วย[ทดลองฟรี](https://releases.aspose.com/) หรือได้รับ[ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/) เพื่อคุณสมบัติที่ครบครัน
+ คุณสามารถเริ่มต้นด้วย[ทดลองใช้ฟรี](https://releases.aspose.com/) หรือได้รับ[ใบอนุญาตชั่วคราว](https://purchase.aspose.com/temporary-license/) เพื่อคุณสมบัติที่ครบครัน
 
 ### ฉันจะหาบทช่วยสอนและตัวอย่างเพิ่มเติมได้ที่ไหน  
  ที่[เอกสารประกอบ](https://reference.aspose.com/words/net/)และ[ฟอรัมสนับสนุน](https://forum.aspose.com/c/words/8)เป็นสถานที่ที่ดีในการเริ่มต้นเพื่อรับคำแนะนำโดยละเอียดและการสนับสนุนจากชุมชน

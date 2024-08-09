@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /nl/net/working-with-headers-and-footers/create-header-footer/
 ---
+## Invoering
 
 Het toevoegen van kop- en voetteksten aan uw documenten kan de professionaliteit en leesbaarheid ervan vergroten. Met Aspose.Words voor .NET kunt u eenvoudig kop- en voetteksten voor uw Word-documenten maken en aanpassen. In deze zelfstudie leiden we u stap voor stap door het proces, zodat u deze functies naadloos kunt implementeren.
 
@@ -14,7 +15,7 @@ Het toevoegen van kop- en voetteksten aan uw documenten kan de professionaliteit
 
 Zorg ervoor dat u over het volgende beschikt voordat u begint:
 
--  Aspose.Words voor .NET: downloaden en installeren vanaf de[download link](https://releases.aspose.com/words/net/).
+-  Aspose.Words voor .NET: downloaden en installeren vanaf de[downloadlink](https://releases.aspose.com/words/net/).
 - Ontwikkelomgeving: zoals Visual Studio, om uw code te schrijven en uit te voeren.
 - Basiskennis van C#: begrip van C# en .NET-framework.
 - Voorbeelddocument: Een voorbeelddocument om de kop- en voetteksten toe te passen, of om een nieuw document te maken, zoals getoond in de tutorial.
@@ -40,7 +41,7 @@ string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 ## Stap 2: Maak een nieuw document
 
- Maak een nieuw document en a`DocumentBuilder` om het toevoegen van inhoud te vergemakkelijken.
+ Maak een nieuw document en a`DocumentBuilder`om het toevoegen van inhoud te vergemakkelijken.
 
 ```csharp
 Document doc = new Document();
@@ -168,22 +169,22 @@ Door deze stappen te volgen, kunt u kop- en voetteksten in uw Word-documenten ef
 
 ## Veelgestelde vragen
 
-### V1: Wat is Aspose.Words voor .NET?
+### Wat is Aspose.Words voor .NET?
 
 Aspose.Words voor .NET is een bibliotheek waarmee ontwikkelaars Word-documenten programmatisch kunnen maken, bewerken en converteren binnen .NET-toepassingen.
 
-### Vraag 2: Kan ik afbeeldingen toevoegen aan de kop- of voettekst?
+### Kan ik afbeeldingen toevoegen aan de kop- of voettekst?
 
  Ja, u kunt eenvoudig afbeeldingen toevoegen aan de kop- of voettekst met behulp van de`DocumentBuilder.InsertImage` methode.
 
-### Vraag 3: Hoe stel ik verschillende kop- en voetteksten in voor de eerste pagina?
+### Hoe stel ik verschillende kop- en voetteksten in voor de eerste pagina?
 
  U kunt voor de eerste pagina verschillende kop- en voetteksten instellen met behulp van de`DifferentFirstPageHeaderFooter` eigendom van de`PageSetup` klas.
 
-### V4: Waar kan ik meer documentatie over Aspose.Words vinden?
+### Waar kan ik meer documentatie over Aspose.Words vinden?
 
  Uitgebreide documentatie vindt u op de website[Aspose.Words API-documentatiepagina](https://reference.aspose.com/words/net/).
 
-### V5: Is er ondersteuning beschikbaar voor Aspose.Words?
+### Is er ondersteuning beschikbaar voor Aspose.Words?
 
- Ja, Aspose biedt ondersteuning via hun[Helpforum](https://forum.aspose.com/c/words/8).
+ Ja, Aspose biedt ondersteuning via hun[ondersteuningsforum](https://forum.aspose.com/c/words/8).

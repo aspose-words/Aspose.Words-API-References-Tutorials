@@ -2,93 +2,113 @@
 title: Få lista över tillgängliga teckensnitt
 linktitle: Få lista över tillgängliga teckensnitt
 second_title: Aspose.Words Document Processing API
-description: I den här handledningen kan du lära dig hur du får en lista över teckensnitt som är tillgängliga i Aspose.Words för .NET.
+description: Upptäck hur du får en lista över tillgängliga typsnitt med Aspose.Words för .NET i denna detaljerade steg-för-steg-handledning. Öka dina färdigheter i teckensnittshantering.
 type: docs
 weight: 10
 url: /sv/net/working-with-fonts/get-list-of-available-fonts/
 ---
-den här handledningen kommer vi att förklara hur du får en lista över teckensnitt som är tillgängliga i Aspose.Words för .NET. Listan över tillgängliga teckensnitt låter dig veta vilka teckensnitt du kan använda i dina dokument. Vi tar dig steg-för-steg för att hjälpa dig förstå och implementera koden i ditt .NET-projekt.
+## Introduktion
+
+Har du någonsin kämpat med att hantera teckensnitt i dina Word-dokument? Om du är en .NET-utvecklare är Aspose.Words för .NET här för att rädda dig! Det här kraftfulla biblioteket hjälper dig inte bara att skapa och manipulera Word-dokument programmatiskt utan erbjuder också omfattande fonthanteringsfunktioner. I den här guiden går vi igenom en steg-för-steg handledning om hur du får en lista över tillgängliga typsnitt med Aspose.Words för .NET. Vi delar upp det i lättsmälta steg för att säkerställa att du enkelt kan följa med. Så låt oss dyka in och göra teckensnittshantering till en lek!
 
 ## Förutsättningar
-Innan du börjar, se till att du har följande saker:
-- Har praktiska kunskaper i programmeringsspråket C#
-- Aspose.Words-biblioteket för .NET installerat i ditt projekt
 
-## Steg 1: Definiera dokumentkatalogen
- Först måste du ställa in katalogsökvägen till platsen för ditt Word-dokument. Byta ut`"YOUR DOCUMENT DIRECTORY"` i koden med rätt sökväg.
+Innan vi sätter igång finns det några saker du behöver:
+
+-  Aspose.Words for .NET: Se till att du har Aspose.Words for .NET-biblioteket installerat. Du kan ladda ner den från[här](https://releases.aspose.com/words/net/).
+- Visual Studio: Det här exemplet använder Visual Studio som utvecklingsmiljö.
+- .NET Framework: Se till att du har .NET Framework installerat på din dator.
+- Dokumentkatalog: En katalogsökväg där dina dokument lagras.
+
+## Importera namnområden
+
+Importera först de nödvändiga namnrymden till ditt projekt:
 
 ```csharp
-// Sökväg till din dokumentkatalog
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using System;
+using System.Collections.Generic;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Steg 2: Konfigurera teckensnittskällor
- Därefter skapar vi en instans av`FontSettings` och hämta de befintliga teckensnittskällorna med hjälp av`GetFontsSources()` metod. Vi kommer också att lägga till en ny typsnittskälla genom att ange en mapp som innehåller typsnitt.
+## Steg 1: Initiera teckensnittsinställningar
+
+Det första steget är att initiera teckensnittsinställningarna. Detta gör att du kan hantera teckensnittskällorna för dina dokument.
 
 ```csharp
-// Konfigurera teckensnittskällor
 FontSettings fontSettings = new FontSettings();
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-
-// Lägg till en ny teckensnittskälla
-FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-fontSources.Add(folderFontSource);
-
-FontSourceBase[] updatedFontSources = fontSources.ToArray();
 ```
 
-## Steg 3: Få listan över tillgängliga typsnitt
- Nu kommer vi att bläddra bland de tillgängliga typsnitten med hjälp av`GetAvailableFonts()` metod på den första uppdaterade teckensnittskällan.
+- FontSettings: Denna klass används för att specificera inställningarna för teckensnittsersättning och teckensnittskällor.
+- fontSources: Vi skapar en lista över befintliga teckensnittskällor från de nuvarande teckensnittsinställningarna.
+
+## Steg 2: Definiera dokumentkatalog
+
+Ange sedan sökvägen till din dokumentkatalog. Det är här Aspose.Words kommer att söka efter typsnitt.
 
 ```csharp
-// Få en lista över tillgängliga typsnitt
-foreach(PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
-{
-Console.WriteLine("Font Family Name: " + fontInfo.FontFamilyName);
-Console.WriteLine("Full font name: " + fontInfo.FullFontName);
-Console.WriteLine("Version: " + fontInfo.Version);
-Console.WriteLine("Path: " + fontInfo.FilePath);
-}
-```
-
-
-### Exempel på källkod för Hämta lista över tillgängliga teckensnitt med Aspose.Words för .NET 
-
-```csharp
-
-// Sökväg till din dokumentkatalog
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
-FontSettings fontSettings = new FontSettings();
-List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
-// Lägg till en ny mappkälla som instruerar Aspose.Words att söka efter typsnitt i följande mapp.
+-  dataDir: Denna strängvariabel innehåller sökvägen till katalogen där dina typsnitt finns. Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska vägen.
+
+## Steg 3: Lägg till anpassad typsnittsmapp
+
+Lägg nu till en ny mappkälla för att instruera Aspose.Words att söka efter teckensnitt i den här mappen.
+
+```csharp
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
-// Lägg till den anpassade mappen som innehåller våra typsnitt till listan över befintliga teckensnittskällor.
+```
+
+- FolderFontSource: Denna klass representerar en mappfontkälla. Den andra parametern (`true`) anger om teckensnitt ska sökas rekursivt i undermappar.
+
+## Steg 4: Uppdatera teckensnittskällor
+
+Lägg till mappen för anpassade teckensnitt i listan över befintliga teckensnittskällor och uppdatera teckensnittsinställningarna.
+
+```csharp
 fontSources.Add(folderFontSource);
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
+```
+
+- fontSources.Add(folderFontSource): Lägger till den anpassade teckensnittsmappen till de befintliga teckensnittskällorna.
+- updatedFontSources: Konverterar listan över teckensnittskällor till en array.
+
+## Steg 5: Hämta och visa teckensnitt
+
+Slutligen, hämta de tillgängliga typsnitten och visa deras detaljer.
+
+```csharp
 foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
 {
-	Console.WriteLine("FontFamilyName : " + fontInfo.FontFamilyName);
-	Console.WriteLine("FullFontName  : " + fontInfo.FullFontName);
-	Console.WriteLine("Version  : " + fontInfo.Version);
-	Console.WriteLine("FilePath : " + fontInfo.FilePath);
+    Console.WriteLine("FontFamilyName : " + fontInfo.FontFamilyName);
+    Console.WriteLine("FullFontName  : " + fontInfo.FullFontName);
+    Console.WriteLine("Version  : " + fontInfo.Version);
+    Console.WriteLine("FilePath : " + fontInfo.FilePath);
 }
-
 ```
 
+- GetAvailableFonts(): Hämtar listan över tillgängliga teckensnitt från den första teckensnittskällan i den uppdaterade listan.
+-  fontInfo: En instans av`PhysicalFontInfo` innehåller information om varje typsnitt.
+
 ## Slutsats
-den här handledningen såg vi hur man får listan över teckensnitt som är tillgängliga i Aspose.Words för .NET. Detta låter dig veta vilka typsnitt du kan använda i dina dokument. Använd gärna den här funktionen för att välja lämpliga typsnitt för dina behov.
 
-### FAQ's
+Grattis! Du har framgångsrikt hämtat en lista över tillgängliga typsnitt med Aspose.Words för .NET. Den här handledningen har gått igenom varje steg, från att initiera teckensnittsinställningar till att visa teckensnittsdetaljer. Med denna kunskap kan du nu enkelt hantera teckensnitt i dina Word-dokument. Kom ihåg att Aspose.Words för .NET är ett kraftfullt verktyg som avsevärt kan förbättra dina dokumentbehandlingsmöjligheter. Så fortsätt och utforska fler funktioner för att göra din utvecklingsprocess ännu mer effektiv.
 
-#### F: Hur kan jag hämta listan över teckensnitt som finns tillgängliga i Aspose.Words?
+## FAQ's
 
- S: För att hämta listan över teckensnitt som är tillgängliga i Aspose.Words, kan du använda`FontsProvider` klass och`GetAvailableFonts` metod. Denna metod returnerar en lista över alla teckensnitt som är installerade på ditt system.
+### Kan jag använda Aspose.Words för .NET med andra .NET-ramverk?
+Ja, Aspose.Words för .NET är kompatibelt med olika .NET-ramverk inklusive .NET Core och .NET 5+.
 
-#### F: Kan jag filtrera listan över tillgängliga typsnitt efter vissa kriterier i Aspose.Words?
+### Hur installerar jag Aspose.Words för .NET?
+Du kan installera det via NuGet Package Manager i Visual Studio genom att söka efter "Aspose.Words".
 
-S: Ja, du kan filtrera listan över teckensnitt som är tillgängliga i Aspose.Words med hjälp av specifika kriterier. Du kan till exempel filtrera teckensnitt efter familj, stil eller språk.
+### Är det möjligt att lägga till flera anpassade teckensnittsmappar?
+ Ja, du kan lägga till flera anpassade teckensnittsmappar genom att skapa flera`FolderFontSource` instanser och lägga till dem i listan över teckensnittskällor.
 
-#### F: Hur kan jag använda listan över tillgängliga teckensnitt i mina Word-dokument?
+### Kan jag hämta teckensnittsdetaljer från en specifik teckensnittskälla?
+ Ja, du kan hämta teckensnittsinformation från vilken typsnittskälla som helst genom att ange indexet för teckensnittskällan i`updatedFontSources` array.
 
- S: För att använda listan över teckensnitt som är tillgängliga i dina Word-dokument kan du bläddra i listan och välja lämpliga teckensnitt med metoderna och egenskaperna i`FontSettings` klass i Aspose.Words.
+### Stöder Aspose.Words for .NET teckensnittsersättning?
+Ja, det stöder teckensnittsersättning för att säkerställa att texten återges korrekt även om det ursprungliga teckensnittet inte är tillgängligt.

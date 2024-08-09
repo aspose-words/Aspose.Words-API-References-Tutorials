@@ -39,7 +39,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Шаг 2. Загрузите документ
 
- Создать`Document` объект, загрузив файл Word:
+ Создайте`Document` объект, загрузив файл Word:
 
 ```csharp
 Document doc = new Document(dataDir + "Structured document tags.docx");

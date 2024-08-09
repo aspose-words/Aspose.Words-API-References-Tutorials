@@ -9,7 +9,7 @@ url: /id/net/programming-with-pdfsaveoptions/embedded-all-fonts/
 ---
 ## Perkenalan
 
-Hai, penggemar teknologi! Pernahkah Anda kesulitan mencoba menyematkan font dalam dokumen PDF menggunakan Aspose.Words untuk .NET? Nah, Anda berada di tempat yang tepat! Dalam tutorial ini, kita mendalami seluk beluk penyematan font di PDF Anda. Baik Anda seorang pemula atau profesional berpengalaman, panduan ini akan memandu Anda melalui setiap langkah dengan cara yang sederhana dan menarik. Pada akhirnya, Anda akan ahli dalam memastikan PDF Anda tetap mempertahankan tampilan dan nuansa yang diinginkan, di mana pun mereka melihatnya. Jadi, mari kita mulai, oke?
+Hai, penggemar teknologi! Pernahkah Anda kesulitan mencoba menyematkan font dalam dokumen PDF menggunakan Aspose.Words untuk .NET? Nah, Anda berada di tempat yang tepat! Dalam tutorial ini, kita mendalami seluk beluk penyematan font di PDF Anda. Baik Anda seorang pemula atau profesional berpengalaman, panduan ini akan memandu Anda melalui setiap langkah dengan cara yang sederhana dan menarik. Pada akhirnya, Anda akan ahli dalam memastikan PDF Anda tetap mempertahankan tampilan dan nuansa yang diinginkan, di mana pun mereka melihatnya. Jadi, mari kita mulai, ya?
 
 ## Prasyarat
 

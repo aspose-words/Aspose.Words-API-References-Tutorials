@@ -88,7 +88,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
 
 HTML を Word 文書に挿入するのは、これまでになく簡単になりました。Aspose.Words for .NET を使用すると、HTML のパワーと Word 文書の汎用性をシームレスに組み合わせることができます。レポート生成を自動化する場合でも、美しくフォーマットされた文書を作成する場合でも、このツールは頼りになるソリューションです。
 
-ご質問やさらなるサポートが必要な場合は、お気軽に[ドキュメンテーション](https://reference.aspose.com/words/net/), [サポートフォーラム](https://forum.aspose.com/c/words/8)、または自分で[一時ライセンス](https://purchase.aspose.com/temporary-license/)Aspose.Words for .NET の可能性を最大限に引き出します。
+ご質問やさらなるサポートが必要な場合は、お気軽に[ドキュメント](https://reference.aspose.com/words/net/), [サポートフォーラム](https://forum.aspose.com/c/words/8)、または自分で[一時ライセンス](https://purchase.aspose.com/temporary-license/)Aspose.Words for .NET の可能性を最大限に引き出します。
 
 楽しいコーディングを！
 
@@ -107,4 +107,4 @@ HTML を Word 文書に挿入するのは、これまでになく簡単になり
 まずは[無料トライアル](https://releases.aspose.com/)または取得する[一時ライセンス](https://purchase.aspose.com/temporary-license/)完全な機能についてはこちらをご覧ください。
 
 ### その他のチュートリアルや例はどこで見つかりますか?  
-の[ドキュメンテーション](https://reference.aspose.com/words/net/)そして[サポートフォーラム](https://forum.aspose.com/c/words/8)より詳細なガイドやコミュニティ サポートを探すには、ここから始めるのが最適です。
+の[ドキュメント](https://reference.aspose.com/words/net/)そして[サポートフォーラム](https://forum.aspose.com/c/words/8)より詳細なガイドやコミュニティ サポートを探すには、ここから始めるのが最適です。

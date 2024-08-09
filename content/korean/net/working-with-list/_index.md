@@ -13,6 +13,6 @@ url: /ko/net/working-with-list/
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [각 섹션에서 목록 다시 시작](./restart-list-at-each-section/)  | .NET용 Aspose.Words를 사용하여 Word 문서의 각 섹션에 번호 매기기 목록을 재설정하는 방법을 알아보세요. |
-| [목록 수준 지정](./specify-list-level/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 목록 수준을 지정하는 방법을 알아보세요. |
-| [목록 번호 다시 시작](./restart-list-number/) | .NET용 Aspose.Words를 사용하여 Word 문서의 목록 수를 재설정하는 방법을 알아보세요. |
+| [각 섹션에서 목록 다시 시작](./restart-list-at-each-section/)  | .NET용 Aspose.Words를 사용하여 Word 문서의 각 섹션에서 목록을 다시 시작하는 방법을 알아보세요. 목록을 효과적으로 관리하려면 자세한 단계별 가이드를 따르세요. |
+| [목록 수준 지정](./specify-list-level/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 다단계 번호 및 글머리 기호 목록을 만드는 방법을 알아보세요. 단계별 가이드가 포함되어 있습니다. .NET 개발자에게 적합합니다. |
+| [목록 번호 다시 시작](./restart-list-number/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 목록 번호를 다시 시작하는 방법을 알아보세요. 2000 단어로 구성된 이 상세한 가이드는 설정부터 고급 사용자 정의까지 알아야 할 모든 것을 다룹니다. |

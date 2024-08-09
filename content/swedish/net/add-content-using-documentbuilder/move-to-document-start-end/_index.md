@@ -9,7 +9,7 @@ url: /sv/net/add-content-using-documentbuilder/move-to-document-start-end/
 ---
 ## Introduktion
 
-Hallå där! Så du har arbetat med Word-dokument och behöver ett sätt att snabbt hoppa till början eller slutet av ditt dokument programmatiskt, va? Tja, du är på rätt plats! I den här guiden fördjupar vi oss i hur du flyttar markören till början eller slutet av ett Word-dokument med Aspose.Words för .NET. Tro mig, i slutet av detta kommer du att navigera i dina dokument som ett proffs. Låt oss börja!
+Hej där! Så du har arbetat med Word-dokument och behöver ett sätt att snabbt hoppa till början eller slutet av ditt dokument programmatiskt, va? Nåväl, du är på rätt plats! I den här guiden fördjupar vi oss i hur du flyttar markören till början eller slutet av ett Word-dokument med Aspose.Words för .NET. Tro mig, i slutet av detta kommer du att navigera i dina dokument som ett proffs. Låt oss komma igång!
 
 ## Förutsättningar
 
@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Här skapar vi en instans av`Document`och`DocumentBuilder` . Tänk på`Document` som ditt tomma Word-dokument och`DocumentBuilder` som din penna.
+ Här skapar vi en instans av`Document`och`DocumentBuilder` . Tänka på`Document` som ditt tomma Word-dokument och`DocumentBuilder` som din penna.
 
 ## Steg 2: Flytta till dokumentstarten
 
@@ -63,7 +63,7 @@ builder.MoveToDocumentEnd();
 Console.WriteLine("\nThis is the end of the document.");
 ```
 
-`MoveToDocumentEnd()` placerar markören i slutet, redo för dig att lägga till mer innehåll. Lätt som en plätt!
+`MoveToDocumentEnd()` placerar markören i slutet, redo för dig att lägga till mer innehåll. Lätt peasy!
 
 ## Slutsats
 

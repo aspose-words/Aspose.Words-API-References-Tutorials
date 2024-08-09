@@ -15,7 +15,7 @@ Jelajahi kekuatan API Dokumen Python dengan tutorial Aspose.Words. Pengembang ak
 
 ## Otomatiskan Pemrosesan Dokumen dengan Python
 
-Tutorial Aspose.Words untuk Python memandu pengembang dalam mengotomatisasi alur kerja pemrosesan dokumen. Pelajari cara membuat dokumen dinamis dari templat, melakukan operasi penggabungan surat, dan menangani manipulasi dokumen tingkat lanjut. Meningkatkan produktivitas dan efisiensi dalam tugas pemrosesan dokumen.
+Tutorial Aspose.Words untuk Python memandu pengembang dalam mengotomatiskan alur kerja pemrosesan dokumen. Pelajari cara membuat dokumen dinamis dari templat, melakukan operasi penggabungan surat, dan menangani manipulasi dokumen tingkat lanjut. Meningkatkan produktivitas dan efisiensi dalam tugas pemrosesan dokumen.
 
 ## Tingkatkan Pemrosesan Dokumen Word dengan Python
 

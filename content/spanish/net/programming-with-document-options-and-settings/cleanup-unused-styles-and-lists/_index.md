@@ -99,4 +99,4 @@ No, una vez realizada la limpieza y guardado el documento, no podrá deshacer lo
  Sí, Aspose.Words para .NET requiere una licencia para su funcionalidad completa. Puedes conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license) o[comprar uno](https://purchase.aspose.com/buy).
 
 ### ¿Dónde puedo encontrar más información y soporte?
- Puedes encontrar documentación detallada.[aquí](https://reference.aspose.com/words/net/) y obtener apoyo de la[asponer foro](https://forum.aspose.com/c/words/8).
+ Puedes encontrar documentación detallada.[aquí](https://reference.aspose.com/words/net/) y obtener apoyo de la[aspose foro](https://forum.aspose.com/c/words/8).

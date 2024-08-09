@@ -34,7 +34,7 @@ using Aspose.Words.Charts;
 
 ## 1. lépés: Inicializálja a Dokumentumot és a DocumentBuildert
 
- Word-dokumentumok létrehozásához és kezeléséhez először inicializálnunk kell a`Document` osztály és a`DocumentBuilder` tárgy.
+ Word-dokumentumok létrehozásához és kezeléséhez először inicializálnunk kell a`Document` osztály és a`DocumentBuilder` objektum.
 
 ```csharp
 // A dokumentumkönyvtár elérési útja
@@ -51,7 +51,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 2. lépés: Helyezzen be egy diagramot
 
- Ezután beszúrunk egy oszlopdiagramot a dokumentumba a`DocumentBuilder` tárgy.
+ Ezután beszúrunk egy oszlopdiagramot a dokumentumba a`DocumentBuilder` objektum.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Bar, 432, 252);
@@ -115,7 +115,7 @@ doc.Save(dataDir + "WorkingWithCharts.ChartDataLabel.docx");
 
 ## Következtetés
 
- Gratulálunk! Sikeresen testreszabta a diagram adatcímkéit az Aspose.Words for .NET használatával. Ez a könyvtár robusztus megoldást kínál a Word-dokumentumok programozott kezelésére, megkönnyítve a fejlesztők számára a kifinomult és dinamikus dokumentumfeldolgozó alkalmazások létrehozását. Merüljön el a[dokumentáció](https://reference.aspose.com/words/net/) további funkciók és képességek felfedezéséhez.
+ Gratulálok! Sikeresen testreszabta a diagram adatcímkéit az Aspose.Words for .NET használatával. Ez a könyvtár robusztus megoldást kínál a Word-dokumentumok programozott kezelésére, megkönnyítve a fejlesztők számára a kifinomult és dinamikus dokumentumfeldolgozó alkalmazások létrehozását. Merüljön el a[dokumentáció](https://reference.aspose.com/words/net/) további funkciók és képességek felfedezéséhez.
 
 ## GYIK
 
@@ -132,4 +132,4 @@ Az Aspose.Words for .NET egy hatékony dokumentumfeldolgozó könyvtár, amely l
 Igen, az Aspose.Words for .NET kompatibilis a .NET Core, a .NET Standard és a .NET Framework programmal.
 
 ### Hol kaphatok támogatást az Aspose.Words for .NET-hez?
- Meglátogathatja a[támogatói fórum](https://forum.aspose.com/c/words/8) segítségért és segítségért az Aspose közösségtől és szakértőktől.
+ Meglátogathatja a[támogatási fórum](https://forum.aspose.com/c/words/8) segítségért és segítségért az Aspose közösségtől és szakértőktől.

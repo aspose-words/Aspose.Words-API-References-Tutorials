@@ -46,7 +46,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Adım 2: Tabloyu Başlatın
 
- Şimdi masamıza başlayalım. biz diyoruz`StartTable` yöntemi`DocumentBuilder` başlamak.
+ Şimdi masamıza başlayalım. biz diyoruz`StartTable` yöntemi`DocumentBuilder` başlamak için.
 
 ```csharp
 Table table = builder.StartTable();
@@ -115,7 +115,7 @@ Bunu başyapıtımızı çerçeveleyip sergilemek olarak düşünün. Tablonuz a
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesinde başarılı bir şekilde tablo oluşturdunuz. Bu eğitim, belgenin başlatılmasından son ürünün kaydedilmesine kadar her adımda size yol gösterdi. Aspose.Words ile olasılıklar sonsuzdur. İster rapor, ister fatura, ister başka bir belge oluşturuyor olun, artık tabloları istediğiniz gibi biçimlendirme ve özelleştirme gücüne sahipsiniz.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesinde başarılı bir şekilde tablo oluşturdunuz. Bu eğitim, belgenin başlatılmasından son ürünün kaydedilmesine kadar her adımda size yol gösterdi. Aspose.Words ile olasılıklar sonsuzdur. İster rapor, ister fatura, ister başka bir belge oluşturuyor olun, artık tabloları istediğiniz gibi biçimlendirme ve özelleştirme gücüne sahipsiniz.
 
 Unutmayın, pratik mükemmelleştirir. Bu nedenle farklı tablo formatları ve stillerini denemekten çekinmeyin. Mutlu kodlama!
 

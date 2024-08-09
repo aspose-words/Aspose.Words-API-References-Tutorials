@@ -81,7 +81,7 @@ client.Send(message);
 
 ## Következtetés
 
-Gratulálunk! Sikeresen konvertált egy DOCX-dokumentumot MHTML-re, és elküldte e-mailben az Aspose.Words for .NET használatával. Ez a folyamat magában foglalja a dokumentum betöltését, MHTML formátumba konvertálását, e-mail üzenet létrehozását és SMTP kliens segítségével történő elküldését. Ezekkel a lépésekkel egyszerűen automatizálhatja az alkalmazásokban található dokumentumok konvertálását és e-mailben történő elküldését.
+Gratulálok! Sikeresen konvertált egy DOCX-dokumentumot MHTML-re, és elküldte e-mailben az Aspose.Words for .NET használatával. Ez a folyamat magában foglalja a dokumentum betöltését, MHTML formátumba konvertálását, e-mail üzenet létrehozását és SMTP kliens segítségével történő elküldését. Ezekkel a lépésekkel egyszerűen automatizálhatja az alkalmazásokban található dokumentumok konvertálását és e-mailben történő elküldését.
 
 ## GYIK
 

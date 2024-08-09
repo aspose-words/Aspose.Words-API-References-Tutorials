@@ -2,186 +2,128 @@
 title: Revisi Bentuk
 linktitle: Revisi Bentuk
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Merevisi bentuk dalam dokumen Word dengan Aspose.Words untuk .NET.
+description: Pelajari cara menangani revisi bentuk di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan komprehensif ini. Kuasai pelacakan perubahan, penyisipan bentuk, dan banyak lagi.
 type: docs
 weight: 10
 url: /id/net/working-with-revisions/shape-revision/
 ---
+## Perkenalan
 
-Dalam panduan langkah demi langkah ini, kami akan memandu Anda tentang cara membuat revisi pada bentuk di dokumen Word menggunakan Aspose.Words untuk .NET. Kami akan memberi Anda kode sumber lengkap dan menunjukkan cara memformat keluaran penurunan harga.
+Mengedit dokumen Word secara terprogram bisa menjadi tugas yang menakutkan, terutama saat menangani bentuk. Baik Anda membuat laporan, mendesain templat, atau sekadar mengotomatiskan pembuatan dokumen, kemampuan untuk melacak dan mengelola revisi bentuk sangatlah penting. Aspose.Words for .NET menawarkan API yang kuat untuk membuat proses ini lancar dan efisien. Dalam tutorial ini, kita akan mendalami secara spesifik merevisi bentuk di dokumen Word, memastikan Anda memiliki alat dan pengetahuan untuk mengelola dokumen Anda dengan mudah.
 
-## Langkah 1: Membuat dokumen dan menambahkan bentuk
+## Prasyarat
 
-Langkah pertama adalah membuat dokumen baru dan menambahkan bentuk.
+Sebelum kita mendalami kodenya, pastikan Anda memiliki semua yang Anda perlukan:
+
+-  Aspose.Words untuk .NET: Pastikan Anda telah menginstal perpustakaan Aspose.Words. Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
+- Lingkungan Pengembangan: Anda harus menyiapkan lingkungan pengembangan, seperti Visual Studio.
+- Pemahaman Dasar C#: Keakraban dengan bahasa pemrograman C# dan konsep dasar pemrograman berorientasi objek.
+- Dokumen Word: Dokumen Word untuk dikerjakan, atau Anda dapat membuatnya selama tutorial.
+
+## Impor Namespace
+
+Pertama, mari impor namespace yang diperlukan. Ini akan memberi kita akses ke kelas dan metode yang diperlukan untuk menangani dokumen dan bentuk Word.
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using Aspose.Words;
+using Aspose.Words.Drawing;
+```
+
+## Langkah 1: Menyiapkan Direktori Dokumen Anda
+
+Sebelum kita mulai bekerja dengan bentuk, kita perlu menentukan jalur ke direktori dokumen kita. Di sinilah kami akan menyimpan dokumen kami yang telah dimodifikasi.
+
+```csharp
+// Jalur ke direktori dokumen.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
+
+## Langkah 2: Membuat Dokumen Baru
+
+Mari buat dokumen Word baru dimana kita akan menyisipkan dan merevisi bentuk.
 
 ```csharp
 Document doc = new Document();
-Assert.False(doc.TrackRevisions);
-
-Shape shape = new Shape(doc, ShapeType.Cube);
-shape. WrapType = WrapType. Inline;
-shape. Width = 100.0;
-shape. Height = 100.0;
-doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 ```
 
-## Langkah 2: Lacak revisi dan tambahkan bentuk lain
+## Langkah 3: Memasukkan Bentuk Sebaris
 
-Kami akan mengaktifkan pelacakan revisi dan menambahkan bentuk lain.
-
-```csharp
-doc.StartTrackRevisions("John Doe");
-
-shape = new Shape(doc, ShapeType.Sun);
-shape. WrapType = WrapType. Inline;
-shape. Width = 100.0;
-shape. Height = 100.0;
-doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
-```
-
-## Langkah 3: Dapatkan koleksi bentuk dan periksa revisinya
-
-Kita akan mendapatkan koleksi bentuk dari dokumen dan memeriksa revisi yang terkait dengan setiap bentuk.
+Kita akan mulai dengan menyisipkan bentuk sebaris ke dalam dokumen kita tanpa melacak revisi. Bentuk sebaris adalah bentuk yang mengalir bersama teks.
 
 ```csharp
-List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-Assert.True(shapes[0].IsDeleteRevision);
-
-Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-Assert.True(shapes[1].IsInsertRevision);
-```
-
-## Langkah 4: Memeriksa Revisi Pemindahan Bentuk
-
-Kami akan memuat dokumen yang ada yang berisi revisi perpindahan bentuk dan memeriksa revisi terkait.
-
-```csharp
-doc = new Document(MyDir + "Revision shape.docx");
-
-shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert. False(shapes[0].IsMoveFromRevision);
-Assert.True(shapes[0].IsMoveToRevision);
-
-Assert.True(shapes[1].IsMoveFromRevision);
-Assert. False(shapes[1].IsMoveToRevision);
-```
-
-### Contoh kode sumber untuk Shape Revision menggunakan Aspose.Words untuk .NET
-
-Berikut source code lengkap untuk melakukan revisi bentuk pada dokumen menggunakan Aspose.Words for .NET:
-
-```csharp
-Document doc = new Document();
-
-//Sisipkan bentuk sebaris tanpa melacak revisi.
-Assert.False(doc.TrackRevisions);
 Shape shape = new Shape(doc, ShapeType.Cube);
 shape.WrapType = WrapType.Inline;
 shape.Width = 100.0;
 shape.Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
+```
 
-// Mulai lacak revisi dan kemudian masukkan bentuk lain.
+## Langkah 4: Mulai Melacak Revisi
+
+Untuk melacak perubahan dalam dokumen kita, kita perlu mengaktifkan pelacakan revisi. Ini penting untuk mengidentifikasi modifikasi yang dilakukan pada bentuk.
+
+```csharp
 doc.StartTrackRevisions("John Doe");
+```
+
+## Langkah 5: Memasukkan Bentuk Lain dengan Revisi
+
+Sekarang pelacakan revisi diaktifkan, mari masukkan bentuk lain. Kali ini, setiap perubahan akan dilacak.
+
+```csharp
 shape = new Shape(doc, ShapeType.Sun);
 shape.WrapType = WrapType.Inline;
 shape.Width = 100.0;
 shape.Height = 100.0;
 doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
+```
 
-// Dapatkan koleksi bentuk dokumen yang hanya mencakup dua bentuk yang kami tambahkan.
+## Langkah 6: Mengambil dan Memodifikasi Bentuk
+
+Kita dapat mengambil semua bentuk dalam dokumen dan memodifikasinya sesuai kebutuhan. Di sini, kita akan mengambil bentuk dan menghapus yang pertama.
+
+```csharp
 List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-// Hapus bentuk pertama.
 shapes[0].Remove();
+```
 
-// Karena kita menghapus bentuk tersebut saat perubahan sedang dilacak, bentuk tersebut dihitung sebagai revisi penghapusan.
-Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-Assert.True(shapes[0].IsDeleteRevision);
+## Langkah 7: Menyimpan Dokumen
 
-// Dan kami menyisipkan bentuk lain sambil melacak perubahan, sehingga bentuk tersebut akan dihitung sebagai revisi sisipan.
-Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-Assert.True(shapes[1].IsInsertRevision);
+Setelah melakukan perubahan, kita perlu menyimpan dokumen. Ini memastikan semua revisi dan modifikasi disimpan.
 
-// Dokumen memiliki satu bentuk yang dipindahkan, namun revisi pemindahan bentuk akan memiliki dua contoh bentuk tersebut.
-// Yang satu akan menjadi bentuk di tempat tujuan kedatangannya dan yang lainnya akan menjadi bentuk di lokasi aslinya.
-doc = new Document(MyDir + "Revision shape.docx");
+```csharp
+doc.Save(dataDir + "Revision shape.docx");
+```
 
+## Langkah 8: Menangani Revisi Pemindahan Bentuk
+
+Saat bentuk dipindahkan, Aspose.Words melacaknya sebagai revisi. Ini berarti akan ada dua contoh bentuk: satu di lokasi aslinya dan satu lagi di lokasi baru.
+
+```csharp
+doc = new Document(dataDir + "Revision shape.docx");
 shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-// Ini perpindahannya ke revisi, juga bentuk di tujuan kedatangannya.
-Assert.False(shapes[0].IsMoveFromRevision);
-Assert.True(shapes[0].IsMoveToRevision);
-
-// Ini merupakan perpindahan dari revisi yaitu bentuk pada lokasi aslinya.
-Assert.True(shapes[1].IsMoveFromRevision);
-Assert.False(shapes[1].IsMoveToRevision);
 ```
 
 ## Kesimpulan
 
-Dalam tutorial ini, kita mempelajari cara merevisi bentuk di dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah pembuatan dokumen, mengaktifkan pelacakan revisi, memeriksa revisi yang terkait dengan setiap bentuk, dan memeriksa revisi untuk memindahkan bentuk, kami berhasil mengelola revisi. Aspose.Words for .NET menawarkan API yang kuat untuk Pemrosesan Kata dengan ulasan dan formulir di dokumen Word.
+Dan itu dia! Anda telah berhasil mempelajari cara menangani revisi bentuk di dokumen Word menggunakan Aspose.Words untuk .NET. Baik Anda mengelola templat dokumen, mengotomatiskan laporan, atau sekadar melacak perubahan, keterampilan ini sangat berharga. Dengan mengikuti panduan langkah demi langkah ini, Anda tidak hanya menguasai dasar-dasarnya tetapi juga memperoleh wawasan tentang teknik penanganan dokumen tingkat lanjut.
 
-### FAQ
+## FAQ
 
-#### T: Bagaimana cara membuat dokumen baru dan menambahkan bentuk di Aspose.Words untuk .NET?
+### Apa itu Aspose.Words untuk .NET?
+Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang membuat, memodifikasi, dan mengonversi dokumen Word secara terprogram menggunakan C#.
 
-A: Untuk membuat dokumen baru dan menambahkan bentuk di Aspose.Words untuk .NET, Anda dapat menggunakan kode berikut. Di sini kita menambahkan dua bentuk, kubus dan matahari, ke bagian pertama dokumen:
+### Bisakah saya melacak perubahan yang dilakukan pada elemen lain di dokumen Word?
+Ya, Aspose.Words untuk .NET mendukung pelacakan perubahan pada berbagai elemen, termasuk teks, tabel, dan lainnya.
 
-```csharp
-Document doc = new Document();
-Assert.False(doc.TrackRevisions);
+### Bagaimana saya bisa mendapatkan uji coba gratis Aspose.Words untuk .NET?
+ Anda bisa mendapatkan uji coba gratis Aspose.Words untuk .NET[Di Sini](https://releases.aspose.com/).
 
-Shape shape = new Shape(doc, ShapeType.Cube);
-shape. WrapType = WrapType. Inline;
-shape. Width = 100.0;
-shape. Height = 100.0;
-doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
-```
+### Apakah mungkin menerima atau menolak revisi secara terprogram?
+Ya, Aspose.Words untuk .NET menyediakan metode untuk menerima atau menolak revisi secara terprogram.
 
-#### T: Bagaimana cara mengaktifkan pelacakan revisi di Aspose.Words untuk .NET?
-
- J: Untuk mengaktifkan pelacakan revisi di Aspose.Words untuk .NET, Anda dapat menggunakan`StartTrackRevisions` metode`Document` obyek. Metode ini mengambil nama pembuat revisi sebagai parameter:
-
-```csharp
-doc.StartTrackRevisions("John Doe");
-```
-
-#### T: Bagaimana cara memeriksa revisi yang terkait dengan setiap bentuk dalam dokumen Aspose.Words untuk .NET?
-
-J: Untuk memeriksa revisi yang terkait dengan setiap bentuk dalam dokumen Aspose.Words untuk .NET, Anda bisa mendapatkan kumpulan bentuk dokumen menggunakan`GetChildNodes` metode dengan`NodeType.Shape` tipe simpul. Kemudian Anda dapat mengakses setiap bentuk`IsDeleteRevision`, `IsInsertRevision`, `IsMoveFromRevision` , Dan`IsMoveToRevision` properti untuk menentukan jenis revisi apa yang dikaitkan dengan bentuk:
-
-```csharp
-List<Shape> shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert.AreEqual(ShapeType.Cube, shapes[0].ShapeType);
-Assert.True(shapes[0].IsDeleteRevision);
-
-Assert.AreEqual(ShapeType.Sun, shapes[1].ShapeType);
-Assert.True(shapes[1].IsInsertRevision);
-```
-
-#### T: Bagaimana cara memeriksa revisi perpindahan bentuk dalam dokumen Aspose.Words untuk .NET?
-
- J: Untuk memeriksa revisi perpindahan bentuk dalam dokumen Aspose.Words untuk .NET, Anda dapat memuat dokumen yang sudah ada yang berisi revisi perpindahan bentuk. Kemudian Anda dapat mengakses setiap bentuk`IsMoveFromRevision`Dan`IsMoveToRevision` properti untuk menentukan apakah sedang dipindahkan dan jika demikian, dari mana dan ke mana:
-
-```csharp
-doc = new Document(MyDir + "Revision shape.docx");
-
-shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
-Assert.AreEqual(2, shapes.Count);
-
-Assert. False(shapes[0].IsMoveFromRevision);
-Assert.True(shapes[0].IsMoveToRevision);
-
-Assert.True(shapes[1].IsMoveFromRevision);
-Assert. False(shapes[1].IsMoveToRevision);
-```
+### Bisakah saya menggunakan Aspose.Words untuk .NET dengan bahasa .NET lain selain C#?
+Sangat! Aspose.Words untuk .NET dapat digunakan dengan bahasa .NET apa pun, termasuk VB.NET dan F#.

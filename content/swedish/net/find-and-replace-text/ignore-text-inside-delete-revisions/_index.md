@@ -17,7 +17,7 @@ Innan du dyker in i denna handledning, se till att du har följande förutsättn
 - Grundläggande kunskaper i programmeringsspråket C#.
 - Visual Studio installerat på ditt system.
 -  Aspose.Words för .NET-bibliotek integrerat i ditt projekt. Du kan ladda ner den från[här](https://releases.aspose.com/words/net/).
-- Tillgång till Aspose.Words för .NET[dokumentation](https://reference.aspose.com/words/net/) som referens.
+- Tillgång till Aspose.Words för .NET[dokumentation](https://reference.aspose.com/words/net/) för referens.
 
 ## Importera namnområden
 

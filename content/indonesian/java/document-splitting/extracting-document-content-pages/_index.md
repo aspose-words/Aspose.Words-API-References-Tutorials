@@ -14,11 +14,11 @@ Apakah Anda siap untuk memulai perjalanan menguasai seni mengekstrak konten doku
 
 Aspose.Words untuk Java adalah terobosan dalam bekerja dengan dokumen Word secara terprogram. Baik Anda seorang pengembang Java berpengalaman atau baru memulai perjalanan coding, panduan ini akan memandu Anda melalui proses mengekstraksi konten dokumen per halaman, memberi Anda keahlian berharga untuk berbagai aplikasi.
 
-## Mulai
+## Memulai
 
 ### Menyiapkan Lingkungan Pengembangan Anda
 
-Sebelum kita dapat mulai bekerja dengan Aspose.Words untuk Java, kita perlu menyiapkan lingkungan pengembangan kita. Ikuti langkah ini:
+Sebelum kita dapat mulai bekerja dengan Aspose.Words untuk Java, kita perlu menyiapkan lingkungan pengembangan kita. Ikuti langkah-langkah berikut:
 
 1. Instal Java: Jika Anda belum menginstal Java, unduh dan instal versi terbaru dari situs web.
 

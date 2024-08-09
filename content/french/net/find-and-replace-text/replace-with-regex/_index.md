@@ -85,7 +85,7 @@ doc.Save(dataDir + "FindAndReplace.ReplaceWithRegex.docx");
 
 ## Conclusion
 
-Et voila! Vous avez utilisé avec succès l'expression régulière pour rechercher et remplacer du texte dans un document Word à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité puissante peut vous faire gagner beaucoup de temps et d’efforts, en particulier lorsqu’il s’agit de modèles de texte complexes. Que vous nettoyiez des documents, formatiez du texte ou apportiez des modifications groupées, l'expression régulière avec Aspose.Words pour .NET est un outil dont vous aurez besoin dans votre arsenal.
+Et voilà ! Vous avez utilisé avec succès l'expression régulière pour rechercher et remplacer du texte dans un document Word à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité puissante peut vous faire gagner beaucoup de temps et d’efforts, en particulier lorsqu’il s’agit de modèles de texte complexes. Que vous nettoyiez des documents, formatiez du texte ou apportiez des modifications groupées, l'expression régulière avec Aspose.Words pour .NET est un outil dont vous aurez besoin dans votre arsenal.
 
 ## FAQ
 
@@ -93,7 +93,7 @@ Et voila! Vous avez utilisé avec succès l'expression régulière pour recherch
 Absolument! Aspose.Words prend en charge un large éventail de modèles d'expressions régulières. Vous pouvez adapter vos modèles pour qu'ils correspondent exactement à ce dont vous avez besoin.
 
 ### Aspose.Words for .NET prend-il en charge d’autres opérations de texte ?  
-Oui. Aspose.Words for .NET offre un riche ensemble de fonctionnalités pour manipuler les documents Word, notamment l'extraction de texte, le formatage, etc.
+Oui, c'est le cas. Aspose.Words for .NET offre un riche ensemble de fonctionnalités pour manipuler les documents Word, notamment l'extraction de texte, le formatage, etc.
 
 ### Puis-je remplacer du texte dans des sections spécifiques d’un document ?  
 Oui, vous pouvez. Vous pouvez utiliser différentes méthodes pour cibler des sections, des paragraphes ou même des en-têtes et des pieds de page spécifiques dans votre document.

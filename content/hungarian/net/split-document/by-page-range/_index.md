@@ -73,7 +73,7 @@ Word-dokumentum oldaltartomány szerinti felosztása az Aspose.Words for .NET ha
 
 ### Feloszthatok több oldaltartományt egyszerre?
 
-Igen tudsz. Minden szükséges tartományhoz meg kell ismételnie a kinyerési folyamatot, és el kell mentenie azokat külön dokumentumként.
+Igen, megteheti. Minden szükséges tartományhoz meg kell ismételnie a kinyerési folyamatot, és el kell mentenie azokat külön dokumentumként.
 
 ### Mi a teendő, ha oldaltartományok helyett konkrét szakaszokra kell felosztanom?
 

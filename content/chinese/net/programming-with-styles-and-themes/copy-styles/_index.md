@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithStylesAndThemes.CopyStyles.docx");
 ### 的目的是什么`CopyStylesFromTemplate` method?  
 这`CopyStylesFromTemplate`方法将样式从一个文档复制到另一个文档，确保目标文档继承源文档的格式。
 
-### 我可以用吗`CopyStylesFromTemplate` with documents in different formats?  
+### 我可以使用`CopyStylesFromTemplate` with documents in different formats?  
 不，`CopyStylesFromTemplate`该方法仅适用于相同格式的文档，通常是 DOCX。
 
 ### 如何检查样式是否已复制成功？  

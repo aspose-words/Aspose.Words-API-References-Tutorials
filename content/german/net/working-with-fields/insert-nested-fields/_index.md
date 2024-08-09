@@ -109,7 +109,7 @@ Ein verschachteltes Feld ist ein Feld, das andere Felder enthält. Es ermöglich
 Ja, Sie können verschiedene Felder wie DATUM, ZEIT und AUTOR im WENN-Feld verschachteln, um dynamische Inhalte zu erstellen.
 
 ### Ist Aspose.Words für .NET kostenlos?
- Aspose.Words für .NET ist eine kommerzielle Bibliothek, aber Sie können eine[Kostenlose Testphase](https://releases.aspose.com/) um es auszuprobieren.
+ Aspose.Words für .NET ist eine kommerzielle Bibliothek, aber Sie können eine[Kostenlose Testversion](https://releases.aspose.com/) um es auszuprobieren.
 
 ### Kann ich Aspose.Words mit anderen .NET-Sprachen verwenden?
 Ja, Aspose.Words unterstützt alle .NET-Sprachen, einschließlich VB.NET und F#.

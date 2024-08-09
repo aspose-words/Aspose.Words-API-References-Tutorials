@@ -90,7 +90,7 @@ doc.Save(dataDir + "Document.Signed.docx");
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesini başarıyla imzaladınız. Bu basit adımları izleyerek belgelerinizin güvenli bir şekilde imzalandığından ve doğrulandığından emin olabilirsiniz. Dijital imzaların belgelerinizin bütünlüğünü korumada güçlü bir araç olduğunu unutmayın; bu nedenle gerektiğinde bunlardan yararlanın.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesini başarıyla imzaladınız. Bu basit adımları izleyerek belgelerinizin güvenli bir şekilde imzalandığından ve doğrulandığından emin olabilirsiniz. Dijital imzaların belgelerinizin bütünlüğünü korumada güçlü bir araç olduğunu unutmayın; bu nedenle gerektiğinde bunlardan yararlanın.
 
 ## SSS'ler
 
@@ -104,7 +104,7 @@ Dijital imza oluşturmak için dijital sertifikaya ihtiyaç vardır. İmzayı do
 Evet, .pfx dosyası geçerli bir dijital sertifika içerdiği ve bu dosyaya erişim için parolanız olduğu sürece.
 
 ### Aspose.Words for .NET'in kullanımı ücretsiz mi?
- Aspose.Words for .NET ticari bir kütüphanedir. Ücretsiz deneme sürümünü indirebilirsiniz[Burada](https://releases.aspose.com/) ancak tam işlevsellik için bir lisans satın almanız gerekecektir. Alabilirsin[Burada](https://purchase.aspose.com/buy).
+ Aspose.Words for .NET ticari bir kütüphanedir. Ücretsiz deneme sürümünü indirebilirsiniz[Burada](https://releases.aspose.com/) ancak tam işlevsellik için bir lisans satın almanız gerekecektir. Satın alabilirsin[Burada](https://purchase.aspose.com/buy).
 
 ### Aspose.Words for .NET hakkında daha fazla bilgiyi nerede bulabilirim?
  Kapsamlı belgeler bulabilirsiniz[Burada](https://reference.aspose.com/words/net/) ve destek[Burada](https://forum.aspose.com/c/words/8).

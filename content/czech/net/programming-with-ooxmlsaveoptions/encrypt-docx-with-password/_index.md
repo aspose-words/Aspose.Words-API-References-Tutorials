@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-ooxmlsaveoptions/encrypt-docx-with-password/
 ---
-## Úvod
+## Zavedení
 
 dnešní digitální době je zabezpečení citlivých informací důležitější než kdy jindy. Ať už se jedná o osobní dokumenty, obchodní soubory nebo akademické dokumenty, uchování dokumentů aplikace Word před neoprávněným přístupem je zásadní. Zde přichází na řadu šifrování. Zašifrováním souborů DOCX heslem zajistíte, že vaše dokumenty budou moci otevřít a číst pouze uživatelé se správným heslem. V tomto tutoriálu vás provedeme procesem šifrování souboru DOCX pomocí Aspose.Words for .NET. Nebojte se, pokud jste v této oblasti nováčkem – náš podrobný průvodce vám usnadní sledování a zabezpečení souborů během okamžiku.
 
@@ -15,7 +15,7 @@ dnešní digitální době je zabezpečení citlivých informací důležitějš
 
 Než se ponoříme do podrobností, ujistěte se, že máte následující:
 
--  Aspose.Words for .NET: Pokud jste to ještě neudělali, stáhněte si a nainstalujte Aspose.Words for .NET z[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Pokud jste to ještě neudělali, stáhněte si a nainstalujte Aspose.Words for .NET z[zde](https://releases.aspose.com/words/net/).
 - .NET Framework: Ujistěte se, že máte na svém počítači nainstalovaný .NET Framework.
 - Vývojové prostředí: IDE jako Visual Studio usnadní kódování.
 - Základní znalost C#: Znalost programování v C# vám pomůže porozumět a implementovat kód.
@@ -69,7 +69,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.EncryptDocxWithPassword.docx", s
 
 ## Závěr
 
-Gratulujeme! Úspěšně jste zašifrovali soubor DOCX pomocí Aspose.Words for .NET. Dodržováním těchto jednoduchých kroků můžete zajistit, že vaše dokumenty jsou v bezpečí a přístupné pouze osobám se správným heslem. Pamatujte, že šifrování je mocný nástroj pro ochranu citlivých informací, a proto z něj udělejte běžnou součást svých postupů při správě dokumentů.
+Gratuluji! Úspěšně jste zašifrovali soubor DOCX pomocí Aspose.Words for .NET. Dodržováním těchto jednoduchých kroků můžete zajistit, že vaše dokumenty jsou v bezpečí a přístupné pouze osobám se správným heslem. Pamatujte, že šifrování je mocný nástroj pro ochranu citlivých informací, a proto z něj udělejte běžnou součást svých postupů při správě dokumentů.
 
 ## FAQ
 

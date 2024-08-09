@@ -120,7 +120,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", save
 の`CssClassNamePrefix`プロパティは外部 CSS で機能します。インライン CSS の場合は、別のアプローチが必要になります。
 
 ### 他の HTML 保存オプションを含めるにはどうすればいいですか?
-さまざまなプロパティを設定できます`HtmlSaveOptions`HTML出力をカスタマイズするには、[ドキュメンテーション](https://reference.aspose.com/words/net/)詳細については。
+さまざまなプロパティを設定できます`HtmlSaveOptions`HTML出力をカスタマイズするには、[ドキュメント](https://reference.aspose.com/words/net/)詳細についてはこちらをご覧ください。
 
 ### HTML をストリームに保存することは可能ですか?
 もちろんです！ストリームオブジェクトを渡すことで、ドキュメントをストリームに保存できます。`Save`方法。

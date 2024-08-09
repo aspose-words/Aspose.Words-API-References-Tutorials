@@ -16,7 +16,7 @@ Selam! Özellikle tireleme gerektiren dillerle uğraşırken kendinizi hiç meti
 
 Kodlarla elimizi kirletmeden önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
-1.  Aspose.Words for .NET: Kitaplığa sahip olduğunuzdan emin olun. Yapabilirsiniz[buradan indir](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Kitaplığa sahip olduğunuzdan emin olun. Yapabilirsiniz[buradan indir](https://releases.aspose.com/words/net/).
 2. IDE: Visual Studio gibi bir geliştirme ortamı.
 3. Temel C# Bilgisi: C# ve .NET çerçevesinin anlaşılması.
 4. Tireleme Sözlükleri: Kullanmayı planladığınız diller için tireleme sözlükleri.
@@ -68,7 +68,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document document = new Document(dataDir + "German text.docx");
 ```
 
- Burada Almanca bir metin belgesi yüklüyoruz. Değiştirebilirsin`"German text.docx"` belgenizin dosya adıyla birlikte.
+Burada Almanca bir metin belgesi yüklüyoruz. Değiştirebilirsin`"German text.docx"` belgenizin dosya adıyla birlikte.
 
 ## Adım 4: Belgeyi Kaydedin
 
@@ -129,9 +129,9 @@ public class CustomHyphenationCallback : IHyphenationCallback
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'te tireleme geri çağrısının nasıl uygulanacağını öğrendiniz. Bu adımları izleyerek, dilden bağımsız olarak belgelerinizin güzel bir şekilde biçimlendirilmesini sağlayabilirsiniz. İster İngilizce, Almanca veya başka bir dille çalışıyor olun, bu yöntem tirelemeyi zahmetsizce halletmenize olanak tanır.
+Ve işte karşınızda! Aspose.Words for .NET'te tireleme geri çağrısının nasıl uygulanacağını öğrendiniz. Bu adımları izleyerek, dilden bağımsız olarak belgelerinizin güzel bir şekilde biçimlendirilmesini sağlayabilirsiniz. İster İngilizce, Almanca veya başka bir dille çalışıyor olun, bu yöntem tirelemeyi zahmetsizce halletmenize olanak tanır.
 
-## SSS
+## SSS'ler
 
 ### Aspose.Words for .NET nedir?
 Aspose.Words for .NET, geliştiricilerin belgeleri programlı olarak oluşturmasına, değiştirmesine ve dönüştürmesine olanak tanıyan güçlü bir belge işleme kitaplığıdır.
@@ -146,4 +146,4 @@ Tireleme, kelimeleri uygun yerlerde bölerek metin düzenini iyileştirir, daha 
 Çeşitli çevrimiçi kaynaklardan tireleme sözlükleri indirebilir veya gerekirse kendinizinkini oluşturabilirsiniz.
 
 ### Bir tireleme sözlüğü eksikse ne olur?
- Bir sözlük eksikse,`RequestDictionary` yöntem, kullanıcıyı bilgilendirmek veya bir geri dönüş sağlamak için kullanabileceğiniz bir istisna atar.
+ Bir sözlük eksikse,`RequestDictionary`yöntem, kullanıcıyı bilgilendirmek veya bir geri dönüş sağlamak için kullanabileceğiniz bir istisna atar.

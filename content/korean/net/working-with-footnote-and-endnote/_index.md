@@ -12,6 +12,6 @@ url: /ko/net/working-with-footnote-and-endnote/
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [각주 열 설정](./set-foot-note-columns/) | .NET용 Aspose.Words를 사용하여 Word 문서의 각주 열 수를 설정하는 방법을 알아보세요. |
-| [각주 및 끝 메모 위치 설정](./set-footnote-and-end-note-position/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 각주 및 미주의 위치를 설정하는 방법을 알아보세요. |
-| [미주 옵션 설정](./set-endnote-options/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 미주 옵션을 설정하는 방법을 알아보세요. |
+| [각주 열 설정](./set-foot-note-columns/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 각주 열을 설정하는 방법을 알아보세요. 단계별 가이드를 통해 각주 레이아웃을 쉽게 사용자 정의하세요. |
+| [각주 및 끝 메모 위치 설정](./set-footnote-and-end-note-position/) | 이 상세한 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 각주 및 미주 위치를 설정하는 방법을 알아보세요. |
+| [미주 옵션 설정](./set-endnote-options/) | 이 포괄적인 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 미주 옵션을 설정하는 방법을 알아보세요. |

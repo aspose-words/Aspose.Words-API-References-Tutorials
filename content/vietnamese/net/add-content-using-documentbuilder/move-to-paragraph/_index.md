@@ -20,7 +20,7 @@ Trước khi chúng ta đi sâu vào vấn đề chi tiết, hãy đảm bảo b
 3. .NET Framework: Đảm bảo bạn đã cài đặt .NET Framework.
 4. Tài liệu Word: Bạn sẽ cần một tài liệu Word mẫu để làm việc.
 
-Có mọi thứ? Tuyệt vời! Tiếp tục nào.
+Có mọi thứ? Tuyệt vời! Hãy tiếp tục.
 
 ## Nhập không gian tên
 
@@ -70,11 +70,11 @@ Bây giờ chúng ta đã đến đoạn văn mong muốn, hãy thêm một số
 builder.Writeln("This is the 3rd paragraph.");
 ```
 
-Và Voila! Bạn vừa di chuyển đến một đoạn văn cụ thể và thêm văn bản vào đó.
+Và thì đấy! Bạn vừa di chuyển đến một đoạn văn cụ thể và thêm văn bản vào đó.
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Di chuyển đến một đoạn cụ thể trong tài liệu Word bằng Aspose.Words cho .NET dễ dàng như ăn bánh. Chỉ với một vài dòng mã, bạn có thể tự động hóa quy trình chỉnh sửa tài liệu của mình và tiết kiệm rất nhiều thời gian. Vì vậy, lần tới khi bạn cần điều hướng qua tài liệu theo chương trình, bạn sẽ biết chính xác phải làm gì.
+Và bạn có nó! Di chuyển đến một đoạn cụ thể trong tài liệu Word bằng Aspose.Words cho .NET dễ dàng như ăn bánh. Chỉ với một vài dòng mã, bạn có thể tự động hóa quy trình chỉnh sửa tài liệu của mình và tiết kiệm rất nhiều thời gian. Vì vậy, lần tới khi bạn cần điều hướng qua tài liệu theo chương trình, bạn sẽ biết chính xác phải làm gì.
 
 ## Câu hỏi thường gặp
 

@@ -7,14 +7,14 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/skip-embedded-arial-and-times-roman-fonts/
 ---
-## Úvod
+## Zavedení
 
 Ocitli jste se někdy v situaci, kdy je váš soubor PDF příliš velký? Je to jako když se sbalíte na dovolenou a zjistíte, že váš kufr praská ve švech. Víte, že potřebujete shodit nějaké to kilo, ale co necháte jít? Při práci se soubory PDF, zejména se soubory převedenými z dokumentů aplikace Word, mohou vložená písma zvětšit velikost souboru. Naštěstí Aspose.Words for .NET poskytuje elegantní řešení, jak udržet vaše PDF štíhlé a průměrné. V tomto tutoriálu se ponoříme do toho, jak optimalizovat velikost PDF přeskočením vložených písem Arial a Times Roman. Začněme!
 
 ## Předpoklady
 
 Než se vrhneme na to, co je v pořádku, je několik věcí, které budete potřebovat:
--  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou tuto výkonnou knihovnu. Pokud ne, můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou tuto výkonnou knihovnu. Pokud ne, můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 - Základní porozumění C#: To vám pomůže sledovat úryvky kódu.
 - Dokument aplikace Word: K demonstraci procesu použijeme vzorový dokument. 
 
@@ -81,7 +81,7 @@ Ne, nebude. Vzhledem k tomu, že Arial a Times Roman jsou standardní písma, z�
 Ano, můžete nakonfigurovat možnosti uložení tak, aby se v případě potřeby vynechalo vkládání jiných písem.
 
 ### Je Aspose.Words for .NET zdarma?
-Aspose.Words for .NET nabízí bezplatnou zkušební verzi, kterou si můžete stáhnout[tady](https://releases.aspose.com/) , ale pro plný přístup je potřeba zakoupit licenci[tady](https://purchase.aspose.com/buy).
+Aspose.Words for .NET nabízí bezplatnou zkušební verzi, kterou si můžete stáhnout[zde](https://releases.aspose.com/) , ale pro plný přístup je potřeba zakoupit licenci[zde](https://purchase.aspose.com/buy).
 
 ### Kde najdu další návody na Aspose.Words pro .NET?
- Můžete najít komplexní dokumentaci a návody[tady](https://reference.aspose.com/words/net/).
+ Můžete najít komplexní dokumentaci a návody[zde](https://reference.aspose.com/words/net/).

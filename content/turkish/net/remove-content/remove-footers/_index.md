@@ -87,7 +87,7 @@ doc.Save(dataDir + "RemoveContent.RemoveFooters.docx");
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak altbilgileri Word belgenizden başarıyla kaldırdınız. Bu güçlü kitaplık, Word belgelerini programlı olarak yönetmeyi kolaylaştırarak zamandan ve emekten tasarruf etmenizi sağlar. İster tek sayfalı belgelerle ister çok bölümlü raporlarla çalışıyor olun, Aspose.Words for .NET ihtiyacınızı karşılar.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak altbilgileri Word belgenizden başarıyla kaldırdınız. Bu güçlü kitaplık, Word belgelerini programlı olarak yönetmeyi kolaylaştırarak zamandan ve emekten tasarruf etmenizi sağlar. İster tek sayfalı belgelerle ister çok bölümlü raporlarla çalışıyor olun, Aspose.Words for .NET ihtiyacınızı karşılar.
 
 ## SSS'ler
 

@@ -15,7 +15,7 @@ PDF 파일, 특히 WMF(Windows Metafile) 그래픽이 포함된 Word 문서에�
 
 단계를 시작하기 전에 다음 사항을 확인하세요.
 
-1. .NET용 Aspose.Words: Aspose.Words 라이브러리가 설치되어 있는지 확인하세요. 그렇지 않다면 할 수 있습니다[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+1. .NET용 Aspose.Words: Aspose.Words 라이브러리가 설치되어 있는지 확인하세요. 그렇지 않다면 할 수 있습니다[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 2. 개발 환경: 이 튜토리얼에서는 C# 코드를 작성하고 실행할 수 있는 .NET 개발 환경(예: Visual Studio)이 설정되어 있다고 가정합니다.
 3. .NET 프로그래밍의 기본 이해: 기본 .NET 프로그래밍 개념과 C# 구문에 익숙하면 도움이 됩니다.
 4. WMF 그래픽이 포함된 Word 문서: WMF 그래픽이 포함된 Word 문서가 필요합니다. 자신의 문서를 사용하거나 테스트용으로 만들 수 있습니다.
@@ -69,7 +69,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- 그만큼`PdfSaveOptions` 클래스를 사용하면 문서를 PDF로 저장하기 위한 다양한 설정을 지정할 수 있습니다. 이전에 구성한 것을 할당하여`MetafileRenderingOptions` ~로`MetafileRenderingOptions` 의 자산`PdfSaveOptions`를 사용하면 원하는 메타파일 렌더링 설정에 따라 문서가 저장되었는지 확인할 수 있습니다.
+ 그만큼`PdfSaveOptions` 클래스를 사용하면 문서를 PDF로 저장하기 위한 다양한 설정을 지정할 수 있습니다. 이전에 구성한 것을 할당하여`MetafileRenderingOptions` 에`MetafileRenderingOptions` 재산`PdfSaveOptions`를 사용하면 원하는 메타파일 렌더링 설정에 따라 문서가 저장되었는지 확인할 수 있습니다.
 
 ## 4단계: 문서를 PDF로 저장
 
@@ -107,4 +107,4 @@ WMF 글꼴을 메타파일 크기로 조정하면 파일 크기를 늘릴 수 �
 
 ### Aspose.Words에 대한 자세한 정보는 어디서 찾을 수 있나요?
 
- Aspose.Words에 대해 더 자세히 알아볼 수 있습니다.[Aspose.Words 문서](https://reference.aspose.com/words/net/) . 다운로드, 평가판, 지원을 받으려면 다음을 방문하세요.[Aspose.Words 다운로드 페이지](https://releases.aspose.com/words/net/), [Aspose.Words 구매](https://purchase.aspose.com/buy), [무료 시험판](https://releases.aspose.com/), [임시면허](https://purchase.aspose.com/temporary-license/) , 그리고[지원하다](https://forum.aspose.com/c/words/8).
+ Aspose.Words에 대해 더 자세히 알아볼 수 있습니다.[Aspose.Words 문서](https://reference.aspose.com/words/net/) . 다운로드, 평가판, 지원을 받으려면 다음을 방문하세요.[Aspose.Words 다운로드 페이지](https://releases.aspose.com/words/net/), [Aspose.Words 구매](https://purchase.aspose.com/buy), [무료 평가판](https://releases.aspose.com/), [임시면허](https://purchase.aspose.com/temporary-license/) , 그리고[지원하다](https://forum.aspose.com/c/words/8).

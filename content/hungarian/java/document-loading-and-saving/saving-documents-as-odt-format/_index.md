@@ -69,7 +69,7 @@ Ebből a cikkből megtudtuk, hogyan lehet dokumentumokat menteni ODT formátumba
 
 ### Hogyan tölthetem le az Aspose.Words for Java programot?
 
- Az Aspose.Words for Java letölthető az Aspose webhelyéről. Látogatás[ez a link](https://releases.aspose.com/words/java/) letöltési oldal eléréséhez.
+ Az Aspose.Words for Java letölthető az Aspose webhelyéről. Látogatás[ezt a linket](https://releases.aspose.com/words/java/) letöltési oldal eléréséhez.
 
 ### Milyen előnyökkel jár a dokumentumok ODT formátumban történő mentése?
 

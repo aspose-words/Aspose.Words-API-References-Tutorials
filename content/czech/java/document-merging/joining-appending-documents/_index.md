@@ -8,7 +8,7 @@ weight: 11
 url: /cs/java/document-merging/joining-appending-documents/
 ---
 
-## Úvod
+## Zavedení
 
 Aspose.Words for Java je knihovna bohatá na funkce, která vám umožňuje pracovat s různými formáty dokumentů, včetně DOC, DOCX, RTF a dalších. Spojování a připojování dokumentů je běžný úkol při manipulaci s dokumenty a tato příručka vám poskytne podrobné pokyny a příklady kódu Java, jak toho dosáhnout.
 
@@ -17,7 +17,7 @@ Aspose.Words for Java je knihovna bohatá na funkce, která vám umožňuje prac
 Než se ponoříme do kódu, ujistěte se, že máte splněny následující předpoklady:
 
 - Java Development Kit (JDK) nainstalovaný ve vašem systému.
--  Aspose.Words pro knihovnu Java. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/java/).
+-  Aspose.Words pro knihovnu Java. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/java/).
 
 ## Krok 1: Nastavení vašeho projektu Java
 
@@ -73,13 +73,13 @@ doc1.save("joined_document.docx");
 
 ## Závěr
 
-Gratulujeme! Úspěšně jste se naučili spojovat a připojovat dokumenty pomocí Aspose.Words for Java. Tato všestranná knihovna vám umožňuje bez námahy manipulovat s dokumenty, což z ní činí neocenitelný nástroj pro vývojáře v jazyce Java.
+Gratuluji! Úspěšně jste se naučili spojovat a připojovat dokumenty pomocí Aspose.Words for Java. Tato všestranná knihovna vám umožňuje bez námahy manipulovat s dokumenty, což z ní činí neocenitelný nástroj pro vývojáře v jazyce Java.
 
 ## FAQ
 
 ### Jak nainstaluji Aspose.Words for Java?
 
- Instalace Aspose.Words pro Java je přímočará. Můžete si jej stáhnout z webu Aspose[tady](https://releases.aspose.com/words/java/). Ujistěte se, že máte potřebnou licenci pro komerční použití.
+ Instalace Aspose.Words pro Java je přímočará. Můžete si jej stáhnout z webu Aspose[zde](https://releases.aspose.com/words/java/). Ujistěte se, že máte potřebnou licenci pro komerční použití.
 
 ### Mohu sloučit více než dva dokumenty pomocí Aspose.Words for Java?
 

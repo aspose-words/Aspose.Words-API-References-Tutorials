@@ -18,7 +18,7 @@ Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 -  Aspose.Words for .NET: En son sürümü şuradan indirip yükleyin:[Burada](https://releases.aspose.com/words/net/).
 - Geliştirme Ortamı: Visual Studio veya başka bir uyumlu IDE.
 - Temel C# Anlayışı: C# programlama dili ve .NET çerçevesine aşinalık.
--  Aspose Lisansı: Aspose.Words'ün tüm potansiyelini ortaya çıkarmak için bir lisans almayı düşünün.[lisans](https://purchase.aspose.com/buy) . Ayrıca şunları da kullanabilirsiniz:[geçici lisans](https://purchase.aspose.com/temporary-license/) Evrim için.
+-  Aspose Lisansı: Aspose.Words'ün tüm potansiyelini ortaya çıkarmak için bir lisans almayı düşünün.[lisans](https://purchase.aspose.com/buy) . Ayrıca şunları da kullanabilirsiniz:[geçici lisans](https://purchase.aspose.com/temporary-license/) değerlendirme için.
 
 ## Ad Alanlarını İçe Aktar
 
@@ -94,7 +94,7 @@ Evet, Aspose.Words for .NET, çeşitli dosya formatları için kaydetme seçenek
 
 ### Aspose.Words for .NET'i kullanmak için lisansa ihtiyacım var mı?
 
- Aspose.Words for .NET'i değerlendirme lisansı olmadan kullanabilirsiniz ancak tam işlevsellikten yararlanmak için bir lisans gereklidir. Lisans alabilirsiniz[Burada](https://purchase.aspose.com/buy)veya bir kullanın[geçici lisans](https://purchase.aspose.com/temporary-license/) Evrim için.
+ Aspose.Words for .NET'i değerlendirme lisansı olmadan kullanabilirsiniz ancak tam işlevsellikten yararlanmak için bir lisans gereklidir. Lisans alabilirsiniz[Burada](https://purchase.aspose.com/buy)veya bir kullanın[geçici lisans](https://purchase.aspose.com/temporary-license/) değerlendirme için.
 
 ### Belgelerimin PDF/A standartlarıyla uyumlu olmasını nasıl sağlayabilirim?
 

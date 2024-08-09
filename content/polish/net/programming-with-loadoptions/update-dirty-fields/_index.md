@@ -16,7 +16,7 @@ Czy kiedykolwiek byłeś w sytuacji, w której masz dokument programu Word wype�
 
 Zanim zagłębimy się w szczegóły, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
-1.  Aspose.Words dla .NET: Upewnij się, że masz najnowszą wersję. Jeśli nie, możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla .NET: Upewnij się, że masz najnowszą wersję. Jeśli nie, możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. .NET Framework: dowolna wersja kompatybilna z Aspose.Words.
 3. Podstawowa znajomość języka C#: Znajomość programowania w języku C# będzie korzystna.
 4. Przykładowy dokument programu Word: dokument z brudnymi polami, które wymagają aktualizacji.

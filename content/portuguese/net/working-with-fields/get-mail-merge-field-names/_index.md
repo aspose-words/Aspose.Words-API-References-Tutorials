@@ -19,7 +19,7 @@ Antes de mergulhar no tutorial, certifique-se de ter o seguinte:
 
 2. Ambiente de desenvolvimento: você deve ter um ambiente de desenvolvimento configurado para .NET, como o Visual Studio.
 
-3. Um documento do Word com campos de mala direta: tenha um documento do Word pronto que contenha campos de mala direta. Este será o documento com o qual você trabalhará para extrair nomes de campos.
+3. Um documento do Word com campos de mala direta: Tenha um documento do Word pronto que contenha campos de mala direta. Este será o documento com o qual você trabalhará para extrair nomes de campos.
 
 4. Conhecimento básico de C#: Familiaridade com programação C# e .NET será útil para acompanhar os exemplos.
 

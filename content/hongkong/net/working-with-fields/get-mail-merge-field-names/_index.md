@@ -86,13 +86,13 @@ string[] fieldNames = doc.MailMerge.GetFieldNames();
 Console.WriteLine("\nDocument contains " + fieldNames.Length + " merge fields.");
 ```
 
-這行程式碼列印出文件中郵件合併欄位的總數，幫助您驗證提取過程是否正常運作。
+此行程式碼列印出文件中郵件合併欄位的總數，幫助您驗證提取過程是否正常運作。
 
 ## 結論
 
 恭喜！現在您已經了解如何使用 Aspose.Words for .NET 從 Word 文件中提取郵件合併欄位名稱。該技術是管理和自動化文件工作流程的寶貴工具，可以更輕鬆地處理個人化內容。透過執行這些步驟，您可以有效地識別和使用文件中的郵件合併欄位。
 
-如果您有任何疑問或需要進一步協助，請隨時探索[Aspose.Words 文檔](https://reference.aspose.com/words/net/)或加入[Aspose社區](https://forum.aspose.com/c/words/8)為了支持。快樂編碼！
+如果您有任何疑問或需要進一步協助，請隨時探索[Aspose.Words 文檔](https://reference.aspose.com/words/net/)或加入[Aspose社區](https://forum.aspose.com/c/words/8)尋求支持。快樂編碼！
 
 ## 常見問題解答
 

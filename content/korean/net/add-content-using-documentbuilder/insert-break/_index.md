@@ -15,7 +15,7 @@ url: /ko/net/add-content-using-documentbuilder/insert-break/
 
 코드를 시작하기 전에 필요한 모든 것이 있는지 확인하겠습니다.
 
-1.  .NET 라이브러리용 Aspose.Words: 다음을 수행할 수 있습니다.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/) . Aspose를 처음 사용하는 경우 다음으로 시작하는 것이 좋습니다.[무료 시험판](https://releases.aspose.com/).
+1.  .NET 라이브러리용 Aspose.Words: 다음을 수행할 수 있습니다.[여기에서 다운로드하세요](https://releases.aspose.com/words/net/) . Aspose를 처음 사용하는 경우 다음으로 시작하는 것이 좋습니다.[무료 평가판](https://releases.aspose.com/).
 2. 개발 환경: Visual Studio 또는 기타 .NET 호환 IDE.
 3. .NET Framework: .NET Framework가 설치되어 있는지 확인하세요.
 4. C#에 대한 기본 지식: 이 자습서에서는 사용자가 C# 프로그래밍에 익숙하다고 가정합니다.
@@ -118,7 +118,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
 Aspose.Words for .NET은 Word 문서를 프로그래밍 방식으로 작업하기 위한 강력한 라이브러리입니다. 문서 작성 및 편집부터 다양한 형식 간 변환에 이르기까지 광범위한 기능을 지원합니다.
 
 ### Aspose.Words를 무료로 사용할 수 있나요?
- 예, 다음과 같이 시작할 수 있습니다.[무료 시험판](https://releases.aspose.com/) 그 특징을 탐구합니다. 장기간 사용하려면 다음을 수행하십시오.[라이센스를 구매하다](https://purchase.aspose.com/buy).
+ 예, 다음과 같이 시작할 수 있습니다.[무료 평가판](https://releases.aspose.com/) 그 특징을 탐구합니다. 장기간 사용하려면 다음을 수행하십시오.[라이센스를 구매하다](https://purchase.aspose.com/buy).
 
 ### Aspose.Words에 대한 지원을 받으려면 어떻게 해야 하나요?
  에서 지원을 받으실 수 있습니다.[Aspose 커뮤니티 포럼](https://forum.aspose.com/c/words/8). 질문을 하고 경험을 공유할 수 있는 좋은 장소입니다.

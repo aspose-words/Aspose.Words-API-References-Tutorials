@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-table-styles-and-formatting/modify-cell-formatting/
 ---
-## introduzione
+## Introduzione
 
 Se ti sei mai trovato a lottare con documenti Word, cercando di ottenere la formattazione giusta della cella, sei pronto per una sorpresa. In questo tutorial, esamineremo i passaggi per modificare la formattazione delle celle nei documenti di Word utilizzando Aspose.Words per .NET. Dalla regolazione della larghezza della cella alla modifica dell'orientamento e dell'ombreggiatura del testo, abbiamo tutto coperto. Quindi, tuffiamoci e rendiamo la modifica dei tuoi documenti un gioco da ragazzi!
 
@@ -97,7 +97,7 @@ firstCell.CellFormat.Shading.ForegroundPatternColor = Color.LightGreen;
 
 ## Conclusione
 
-E il gioco è fatto! Abbiamo modificato con successo la formattazione della cella in un documento Word utilizzando Aspose.Words per .NET. Dal caricamento del documento all'applicazione dell'ombreggiatura, ogni passaggio è fondamentale per far sì che il tuo documento abbia l'aspetto che desideri. Ricorda, questi sono solo alcuni esempi di cosa puoi fare con la formattazione delle celle. Aspose.Words per .NET offre una miriade di altre funzionalità da esplorare.
+Ed ecco qua! Abbiamo modificato con successo la formattazione della cella in un documento Word utilizzando Aspose.Words per .NET. Dal caricamento del documento all'applicazione dell'ombreggiatura, ogni passaggio è fondamentale per far sì che il tuo documento abbia l'aspetto che desideri. Ricorda, questi sono solo alcuni esempi di cosa puoi fare con la formattazione delle celle. Aspose.Words per .NET offre una miriade di altre funzionalità da esplorare.
 
 ## Domande frequenti
 

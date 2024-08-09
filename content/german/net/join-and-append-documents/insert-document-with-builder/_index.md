@@ -90,7 +90,7 @@ Jetzt kommt der spannende Teil – das eigentliche Einfügen des Quelldokuments 
 builder.InsertDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
- Verwendung der`InsertDocument` Methode können wir das gesamte Quelldokument in das Zieldokument einfügen. Die`ImportFormatMode.KeepSourceFormatting` stellt sicher, dass die Formatierung des Quelldokuments erhalten bleibt.
+ Mit dem`InsertDocument` Methode können wir das gesamte Quelldokument in das Zieldokument einfügen. Die`ImportFormatMode.KeepSourceFormatting` stellt sicher, dass die Formatierung des Quelldokuments erhalten bleibt.
 
 ## Schritt 7: Zusammengeführtes Dokument speichern
 
@@ -121,4 +121,4 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Entwickler W
 Auf jeden Fall! Die beschriebene Methode kann in größere Anwendungen integriert werden, um Dokumentverarbeitungsaufgaben zu automatisieren.
 
 ### Wo finde ich weitere Ressourcen und Unterstützung?  
-Weitere Informationen finden Sie im[Dokumentation](https://reference.aspose.com/words/net/) , oder besuchen Sie die[Hilfeforum](https://forum.aspose.com/c/words/8) zur Hilfe.
+Weitere Informationen finden Sie im[Dokumentation](https://reference.aspose.com/words/net/) , oder besuchen Sie die[Support-Forum](https://forum.aspose.com/c/words/8) um Hilfe.

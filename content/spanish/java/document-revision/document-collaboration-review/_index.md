@@ -45,7 +45,7 @@ doc.startTrackRevisions("Author Name");
 
 Los miembros del equipo pueden revisar los cambios realizados en el documento y proporcionar comentarios o sugerencias. Aspose.Words para Java le permite acceder y procesar mediante programación estos comentarios.
 
-## Revisión de documento
+## Revisión de documentos
 
 Revisar un documento implica revisar los cambios realizados y tomar decisiones sobre si aceptarlos o rechazarlos.
 
@@ -78,7 +78,7 @@ Para revisar los cambios realizados en un documento, puede utilizar las funcione
 
 ### ¿Aspose.Words para Java es adecuado para la gestión colaborativa de documentos?
 
-Sí, Aspose.Words para Java es una excelente opción para la gestión colaborativa de documentos. Proporciona las herramientas y funcionalidades necesarias para optimizar los procesos de revisión y colaboración de documentos.
+Sí, Aspose.Words para Java es una excelente opción para la gestión colaborativa de documentos. Proporciona las herramientas y funcionalidades necesarias para agilizar los procesos de revisión y colaboración de documentos.
 
 ### ¿Dónde puedo encontrar más información y documentación sobre Aspose.Words para Java?
 

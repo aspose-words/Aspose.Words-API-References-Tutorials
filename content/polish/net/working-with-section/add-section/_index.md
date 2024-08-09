@@ -16,7 +16,7 @@ Witam kolegów programistów! 👋 Czy kiedykolwiek otrzymałeś zadanie stworze
 
 Zanim przejdziemy do kodu, przyjrzyjmy się, czego będziesz potrzebować:
 
-1.  Aspose.Words dla biblioteki .NET: Upewnij się, że masz najnowszą wersję. Możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla biblioteki .NET: Upewnij się, że masz najnowszą wersję. Możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: IDE kompatybilne z .NET, takie jak Visual Studio, załatwi sprawę.
 3. Podstawowa znajomość języka C#: Zrozumienie składni języka C# pomoże Ci płynnie podążać za nim.
 4. Przykładowy dokument programu Word: Chociaż utworzymy taki dokument od podstaw, posiadanie próbki może być przydatne do celów testowych.
@@ -83,7 +83,7 @@ Po dodaniu nowej sekcji możemy wypełnić ją treścią tak samo jak pierwszą 
 
 ### Korzystanie z narzędzia DocumentBuilder dla nowej sekcji
 
-Aby dodać zawartość do nowej sekcji, musisz ustawić`DocumentBuilder` kursor do nowej sekcji:
+ Aby dodać zawartość do nowej sekcji, musisz ustawić`DocumentBuilder` kursor do nowej sekcji:
 
 ```csharp
 builder.MoveToSection(doc.Sections.IndexOf(sectionToAdd));
@@ -129,4 +129,4 @@ Nie, sekcje nie mogą być zagnieżdżane jedna w drugiej. Można jednak utworzy
 
 ### Gdzie mogę znaleźć więcej zasobów na temat Aspose.Words?
 
- Więcej informacji można znaleźć na stronie[Dokumentacja Aspose.Words](https://reference.aspose.com/words/net/) albo[forum wsparcia](https://forum.aspose.com/c/words/8) za pomoc i dyskusję.
+ Aby uzyskać więcej informacji, odwiedź stronę[Dokumentacja Aspose.Words](https://reference.aspose.com/words/net/) lub[forum wsparcia](https://forum.aspose.com/c/words/8) za pomoc i dyskusję.

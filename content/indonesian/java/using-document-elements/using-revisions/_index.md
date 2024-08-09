@@ -135,7 +135,7 @@ Ya, Anda dapat menggunakan Aspose.Words for Java untuk melacak revisi dalam doku
 
 ### 4. Apakah ada persyaratan lisensi untuk menggunakan Aspose.Words untuk Java?
 
- Ya, Anda harus mendapatkan lisensi untuk menggunakan Aspose.Words untuk Java dalam proyek Anda. Kamu bisa[dapatkan akses ke lisensi di sini](https://purchase.aspose.com/buy).
+ Ya, Anda harus mendapatkan lisensi untuk menggunakan Aspose.Words untuk Java dalam proyek Anda. Anda bisa[dapatkan akses ke lisensi di sini](https://purchase.aspose.com/buy).
 
 ### 5. Di mana saya dapat menemukan dukungan untuk Aspose.Words untuk Java?
 

@@ -64,7 +64,7 @@ doc.save(outPath + "WorkingWithHyphenation.LoadHyphenationDictionaryForLanguage.
 
 ### 2. 여러 언어에서 하이픈을 사용할 수 있나요?
 
-그래 넌 할수있어. Aspose.Words for Java를 사용하면 다양한 언어에 대한 하이픈 넣기 사전을 등록하고 로드할 수 있습니다.
+예, 가능합니다. Aspose.Words for Java를 사용하면 다양한 언어에 대한 하이픈 넣기 사전을 등록하고 로드할 수 있습니다.
 
 ### 3. Aspose.Words for Java는 내 Java 프로젝트에 쉽게 통합됩니까?
 

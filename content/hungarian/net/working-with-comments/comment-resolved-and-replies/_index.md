@@ -59,7 +59,7 @@ Példánkban a gyűjtemény első megjegyzésére fogunk összpontosítani. Ez l
 Comment parentComment = (Comment)comments[0];
 ```
 
- Itt átküldjük a gyűjtemény első csomópontját a`Comment` tárgy.
+ Itt átküldjük a gyűjtemény első csomópontját a`Comment` objektum.
 
 ## 4. lépés: Ismételje meg a válaszokat
 

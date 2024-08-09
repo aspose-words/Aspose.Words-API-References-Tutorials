@@ -355,4 +355,4 @@ Có, bạn có thể sử dụng biểu thức chính quy để thay thế văn 
 
 ### Tùy chọn UseLegacyOrder để làm gì?
 
- Các`UseLegacyOrder` tùy chọn trong`FindReplaceOptions` cho phép bạn sử dụng thứ tự kế thừa khi thực hiện các thao tác tìm và thay thế. Điều này có thể hữu ích trong một số trường hợp nhất định khi mong muốn có hành vi đặt hàng kế thừa.
+ các`UseLegacyOrder` tùy chọn trong`FindReplaceOptions` cho phép bạn sử dụng thứ tự kế thừa khi thực hiện các thao tác tìm và thay thế. Điều này có thể hữu ích trong một số trường hợp nhất định khi mong muốn có hành vi đặt hàng kế thừa.

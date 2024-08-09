@@ -15,7 +15,7 @@ Khi làm việc với các tệp PDF, đặc biệt là các tệp được tạ
 
 Trước khi đi sâu vào các bước, hãy đảm bảo bạn có những điều sau:
 
-1. Aspose.Words for .NET: Đảm bảo bạn đã cài đặt thư viện Aspose.Words. Nếu không, bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Đảm bảo bạn đã cài đặt thư viện Aspose.Words. Nếu không, bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Hướng dẫn này giả sử bạn đã thiết lập môi trường phát triển .NET (như Visual Studio), nơi bạn có thể viết và thực thi mã C#.
 3. Hiểu biết cơ bản về lập trình .NET: Làm quen với các khái niệm lập trình .NET cơ bản và cú pháp C# sẽ hữu ích.
 4. Tài liệu Word có đồ họa WMF: Bạn sẽ cần một tài liệu Word có chứa đồ họa WMF. Bạn có thể sử dụng tài liệu của riêng mình hoặc tạo một tài liệu để thử nghiệm.
@@ -55,7 +55,7 @@ MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 };
 ```
 
- Các`MetafileRenderingOptions` lớp cung cấp các tùy chọn về cách hiển thị siêu tệp (như WMF). Bằng cách thiết lập`ScaleWmfFontsToMetafileSize` ĐẾN`false`, bạn đang hướng dẫn Aspose.Words không chia tỷ lệ phông chữ theo kích thước siêu tệp, điều này có thể giúp giảm kích thước PDF tổng thể.
+ các`MetafileRenderingOptions` lớp cung cấp các tùy chọn về cách hiển thị siêu tệp (như WMF). Bằng cách thiết lập`ScaleWmfFontsToMetafileSize` ĐẾN`false`, bạn đang hướng dẫn Aspose.Words không chia tỷ lệ phông chữ theo kích thước siêu tệp, điều này có thể giúp giảm kích thước PDF tổng thể.
 
 ## Bước 3: Đặt tùy chọn lưu PDF
 
@@ -69,7 +69,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- Các`PdfSaveOptions` lớp cho phép bạn chỉ định các cài đặt khác nhau để lưu tài liệu dưới dạng PDF. Bằng cách chỉ định cấu hình trước đó`MetafileRenderingOptions` đến`MetafileRenderingOptions` tài sản của`PdfSaveOptions`, bạn đảm bảo rằng tài liệu được lưu theo cài đặt kết xuất siêu tệp mong muốn của bạn.
+ các`PdfSaveOptions` lớp cho phép bạn chỉ định các cài đặt khác nhau để lưu tài liệu dưới dạng PDF. Bằng cách chỉ định cấu hình trước đó`MetafileRenderingOptions` đến`MetafileRenderingOptions` tài sản của`PdfSaveOptions`, bạn đảm bảo rằng tài liệu được lưu theo cài đặt kết xuất siêu tệp mong muốn của bạn.
 
 ## Bước 4: Lưu tài liệu dưới dạng PDF
 

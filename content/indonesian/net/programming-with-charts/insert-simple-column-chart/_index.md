@@ -94,4 +94,4 @@ Ya, Anda dapat mengekspor dokumen yang berisi bagan ke berbagai format termasuk 
 Ya, Aspose.Words untuk .NET memungkinkan Anda mengisi bagan secara dinamis dengan data dari sumber eksternal seperti database atau API.
 
 ### Di mana saya dapat menemukan lebih banyak sumber daya dan dukungan untuk Aspose.Words untuk .NET?
- Mengunjungi[Aspose.Words untuk Dokumentasi .NET](https://reference.aspose.com/words/net/) untuk referensi dan contoh API terperinci. Untuk dukungan, Anda juga dapat mengunjungi[Aspose.Forum Kata-kata](https://forum.aspose.com/c/words/8).
+ Kunjungi[Aspose.Words untuk Dokumentasi .NET](https://reference.aspose.com/words/net/) untuk referensi dan contoh API terperinci. Untuk dukungan, Anda juga dapat mengunjungi[Aspose.Forum Kata-kata](https://forum.aspose.com/c/words/8).

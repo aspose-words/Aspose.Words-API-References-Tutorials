@@ -16,7 +16,7 @@ Halo, rekan-rekan pengembang! Pernahkah Anda terjebak dalam kerumitan manipulasi
 
 Sebelum kita mulai, pastikan Anda sudah menyiapkan semuanya:
 
-1.  Perpustakaan Aspose.Words untuk .NET: Anda memerlukan versi terbaru Aspose.Words untuk .NET. Jika Anda belum melakukannya, Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+1.  Perpustakaan Aspose.Words untuk .NET: Anda memerlukan versi terbaru Aspose.Words untuk .NET. Jika Anda belum melakukannya, Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Lingkungan pengembangan .NET seperti Visual Studio akan sangat penting untuk menulis dan menguji kode Anda.
 3. Pengetahuan C# Dasar: Pemahaman dasar tentang C# akan membantu Anda mengikuti cuplikan kode.
 4.  Contoh Dokumen Word: Miliki a[Dokumen kata](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm)(.docm) berisi proyek VBA yang siap digunakan. Anda dapat membuatnya sendiri atau menggunakan yang sudah ada.

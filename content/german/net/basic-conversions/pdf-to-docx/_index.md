@@ -85,7 +85,7 @@ Ja, Sie können mehrere PDFs durchlaufen und jedes mit derselben Methode konvert
 Ja, Aspose.Words leistet hervorragende Arbeit beim Beibehalten der ursprünglichen Formatierung.
 
 ### Benötige ich eine Lizenz, um Aspose.Words für .NET zu verwenden?
- Während Sie eine temporäre Lizenz zur Evaluierung verwenden können, müssen Sie für die kommerzielle Nutzung eine Volllizenz erwerben. Schauen Sie sich die[Kaufseite](https://purchase.aspose.com/buy) für mehr Details.
+ Während Sie eine temporäre Lizenz zur Evaluierung verwenden können, müssen Sie für die kommerzielle Nutzung eine Volllizenz erwerben. Schauen Sie sich die[Kaufseite](https://purchase.aspose.com/buy) für weitere Details.
 
 ### Kann ich Aspose.Words für .NET auf verschiedenen Betriebssystemen verwenden?
 Ja, Aspose.Words für .NET ist plattformübergreifend und kann unter Windows, Linux und macOS verwendet werden.

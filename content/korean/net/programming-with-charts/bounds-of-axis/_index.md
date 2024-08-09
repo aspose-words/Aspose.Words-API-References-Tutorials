@@ -15,7 +15,7 @@ url: /ko/net/programming-with-charts/bounds-of-axis/
 
 시작하기 전에 다음 사항이 있는지 확인하세요.
 
--  .NET용 Aspose.Words: 다음을 수행할 수 있습니다.[다운로드](https://releases.aspose.com/words/net/) 최신 버전을 사용하거나[무료 시험판](https://releases.aspose.com/).
+-  .NET용 Aspose.Words: 다음을 수행할 수 있습니다.[다운로드](https://releases.aspose.com/words/net/) 최신 버전을 사용하거나[무료 평가판](https://releases.aspose.com/).
 - .NET Framework: 시스템에 .NET이 설치되어 있는지 확인하십시오.
 - IDE: Visual Studio와 같은 개발 환경입니다.
 
@@ -115,7 +115,7 @@ Aspose.Words for .NET은 .NET 프레임워크를 사용하여 프로그래밍 �
  다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/net/) 제공된 설치 지침을 따르십시오.
 
 ### Aspose.Words를 무료로 사용할 수 있나요?
- 예, 다음을 사용할 수 있습니다.[무료 시험판](https://releases.aspose.com/) 아니면[임시 면허증](https://purchase.aspose.com/temporary-license/).
+ 예, 다음을 사용할 수 있습니다.[무료 평가판](https://releases.aspose.com/) 아니면[임시 면허증](https://purchase.aspose.com/temporary-license/).
 
 ### .NET용 Aspose.Words에 대한 문서는 어디서 찾을 수 있나요?
  자세한 문서가 제공됩니다.[여기](https://reference.aspose.com/words/net/).

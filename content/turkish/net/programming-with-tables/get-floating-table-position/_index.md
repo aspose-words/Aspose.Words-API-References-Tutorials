@@ -90,7 +90,7 @@ Bu özellikler, tablonun belge içinde nasıl sabitlendiğine ve konumlandırıl
 
 ## Çözüm
 
-İşte buyur! Bu adımları izleyerek Aspose.Words for .NET'i kullanarak Word belgelerinizdeki kayan tabloların konumlandırma özelliklerini kolayca alabilir ve yazdırabilirsiniz. İster belge işlemeyi otomatikleştiriyor olun, ister yalnızca tablo düzenlerini merak ediyor olun, bu bilgi kesinlikle işinize yarayacaktır.
+Ve işte karşınızda! Bu adımları izleyerek Aspose.Words for .NET'i kullanarak Word belgelerinizdeki kayan tabloların konumlandırma özelliklerini kolayca alabilir ve yazdırabilirsiniz. İster belge işlemeyi otomatikleştiriyor olun, ister yalnızca tablo düzenlerini merak ediyor olun, bu bilgi kesinlikle işinize yarayacaktır.
 
 Unutmayın, Aspose.Words for .NET ile çalışmak, belge işleme ve otomasyon için bir olasılıklar dünyasının kapılarını açar. Mutlu kodlama!
 

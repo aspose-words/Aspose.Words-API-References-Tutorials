@@ -87,7 +87,7 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 
 ## 常見問題解答
 
-### 是什麼`DocumentDirection` property used for?
+### 什麼是`DocumentDirection` property used for?
 
 這`DocumentDirection`財產在`TxtLoadOptions`確定文檔的文字方向。可以設定為`DocumentDirection.Auto`, `DocumentDirection.LeftToRight`， 或者`DocumentDirection.RightToLeft`.
 

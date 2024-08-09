@@ -2,7 +2,7 @@
 title: Beheers de documentintelligentie
 linktitle: Beheers de documentintelligentie
 second_title: Aspose.Words Python Documentbeheer-API
-description: Beheers documentintelligentie met Aspose.Words voor Python. Automatiseer workflows, analyseer gegevens en verwerk documenten efficiënt. Begin nu!
+description: Beheers documentintelligentie met Aspose.Words voor Python. Automatiseer workflows, analyseer gegevens en verwerk documenten efficiënt. Ga nu aan de slag!
 type: docs
 weight: 10
 url: /nl/python-net/document-intelligence/master-document-intelligence/
@@ -14,7 +14,7 @@ Documentintelligentie verwijst naar het proces waarbij waardevolle informatie au
 
 ## De betekenis van documentintelligentie in Python
 
-Python is uitgegroeid tot een krachtige en veelzijdige programmeertaal, waardoor het een populaire keuze is voor documentintelligentietaken. De rijke reeks bibliotheken en pakketten, gecombineerd met zijn eenvoud en leesbaarheid, maken Python een ideale taal voor het afhandelen van complexe documentverwerkingstaken.
+Python is uitgegroeid tot een krachtige en veelzijdige programmeertaal, waardoor het een populaire keuze is voor documentintelligentietaken. De rijke reeks bibliotheken en pakketten, gecombineerd met de eenvoud en leesbaarheid, maken Python tot een ideale taal voor het afhandelen van complexe documentverwerkingstaken.
 
 ## Aan de slag met Aspose.Words voor Python
 

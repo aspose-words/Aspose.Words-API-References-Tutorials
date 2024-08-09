@@ -70,7 +70,7 @@ En daar heb je het! U hebt met succes een veld uit uw Word-document verwijderd m
 
 ## Conclusie
 
-Klaar is kees! U hebt geleerd hoe u velden uit een Word-document kunt verwijderen met Aspose.Words voor .NET. Het is een eenvoudige maar krachtige tool die u veel tijd en moeite kan besparen. Ga nu door en ruim die documenten op als een professional!
+En dat is een omslag! U hebt geleerd hoe u velden uit een Word-document kunt verwijderen met Aspose.Words voor .NET. Het is een eenvoudige maar krachtige tool die u veel tijd en moeite kan besparen. Ga nu door en ruim die documenten op als een professional!
 
 ## Veelgestelde vragen
 

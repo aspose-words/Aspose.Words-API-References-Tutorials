@@ -2,94 +2,90 @@
 title: 在气球中显示修订
 linktitle: 在气球中显示修订
 second_title: Aspose.Words 文档处理 API
-description: 使用 Aspose.Words for .NET 在气球中显示修订。
+description: 了解如何使用 Aspose.Words for .NET 在气泡框中显示修订。本详细指南将引导您完成每个步骤，确保您的文档更改清晰且井然有序。
 type: docs
 weight: 10
 url: /zh/net/working-with-revisions/show-revisions-in-balloons/
 ---
+## 介绍
 
-在本分步指南中，我们将向您展示如何使用 Aspose.Words for .NET 在 Word 文档的气泡框中显示修订。我们将为您提供完整的源代码并向您展示如何格式化 markdown 输出。
+跟踪 Word 文档中的更改对于协作和编辑至关重要。Aspose.Words for .NET 提供强大的工具来管理这些修订，确保清晰度和易于审查。本指南将帮助您在气泡框中显示修订，让您更轻松地查看所做的更改以及更改者。
+
+## 先决条件
+
+在开始之前，请确保您已准备好以下内容：
+
+-  Aspose.Words for .NET 库。您可以下载它[这里](https://releases.aspose.com/words/net/).
+- 有效的 Aspose 许可证。如果没有，您可以获取[临时执照](https://purchase.aspose.com/temporary-license/).
+- Visual Studio 或任何其他支持 .NET 开发的 IDE。
+- 对 C# 和 .NET 框架有基本的了解。
+
+## 导入命名空间
+
+首先，让我们在 C# 项目中导入必要的命名空间。这些命名空间对于访问 Aspose.Words 功能至关重要。
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Layout;
+using Aspose.Words.RevisionOptions;
+```
+
+让我们将这个过程分解为简单且易于遵循的步骤。
 
 ## 步骤 1：加载文档
 
-第一步是上传包含修订内容的文档。
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(MyDir + "Revisions.docx");
-```
-
-## 第 2 步：配置评论展示选项
-
-我们将配置显示选项以使修订在气球中可见。
-
-```csharp
-doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
-doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
-doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
-```
-
-## 步骤 3：将文档保存为 PDF 格式
-
-最后，我们将文档保存为 PDF，并在气泡框中显示修订内容。
-
-```csharp
-doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
-```
-
-## Markdown 输出格式
-
-输出可以采用 markdown 格式来提高可读性。例如：
-
-```markdown
-- Revisions are Showed in bubbles with revision bars on the right side.
-```
-
-### 使用 Aspose.Words for .NET 在气球中显示修订的示例源代码
-
-以下是使用 Aspose.Words for .NET 在文档中的气球中显示修订的完整源代码：
+首先，我们需要加载包含修订内容的文档。请确保文档路径正确。
 
 ```csharp
 //文档目录的路径。
-string dataDir = "YOUR DOCUMENT DIRECTORY";	
-Document doc = new Document(MyDir + "Revisions.docx");
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Revisions.docx");
+```
 
+## 步骤 2：配置修订选项
+
+接下来，我们将配置修订选项，以内联显示插入修订，并在气球中删除和格式化修订。这样可以更轻松地区分不同类型的修订。
+
+```csharp
 //渲染以内联方式插入修订，在气球中删除和格式化修订。
 doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
 doc.LayoutOptions.RevisionOptions.MeasurementUnit = MeasurementUnits.Inches;
+```
+
+## 步骤 3：设置修订栏位置
+
+为了使文档更具可读性，我们可以设置修订栏的位置。在此示例中，我们将其放置在页面的右侧。
+
+```csharp
 //在页面右侧呈现修订栏。
 doc.LayoutOptions.RevisionOptions.RevisionBarsPosition = HorizontalAlignment.Right;
+```
 
+## 步骤 4：保存文档
+
+最后，我们将文档保存为 PDF。这样我们就能以所需的格式查看修订内容。
+
+```csharp
 doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
 ```
 
 ## 结论
 
-在本教程中，我们学习了如何使用 Aspose.Words for .NET 在 Word 文档的气泡框中显示修订。通过使用适当的显示选项，我们能够使修订在气泡中可见，并在右侧显示修订栏。Aspose.Words for .NET 提供了许多用于操作 Word 文档的强大功能，包括修订管理。现在，您可以使用这些知识，使用 Aspose.Words for .NET 在您自己的 Word 文档的气泡框中显示修订。
+就这样！按照这些简单的步骤，您可以使用 Aspose.Words for .NET 轻松地在气泡框中显示修订。这使得审阅和协作文档变得轻而易举，确保所有更改都清晰可见且井然有序。祝您编码愉快！
 
+## 常见问题解答
 
-### 常见问题解答
+### 我可以自定义修订栏的颜色吗？
+是的，Aspose.Words 允许您自定义修订栏的颜色以满足您的喜好。
 
-#### 问：如何在 Aspose.Words for .NET 中上传文档？
+### 是否可以在气球中仅显示特定类型的修订？
+当然可以。您可以配置 Aspose.Words 以在提示框中仅显示某些类型的修订，例如删除或格式更改。
 
-答：使用`Document` Aspose.Words for .NET 类用于从文件加载文档。您可以指定完整的文档路径。
+### 如何获得 Aspose.Words 的临时许可证？
+您可以获得临时驾照[这里](https://purchase.aspose.com/temporary-license/).
 
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
+### 我可以将 Aspose.Words for .NET 与其他编程语言一起使用吗？
+Aspose.Words 主要为 .NET 设计，但您可以将其与任何 .NET 支持的语言一起使用，包括 VB.NET 和 C++/CLI。
 
-#### 问：如何使用 Aspose.Words for .NET 在气球中显示修订？
-
-答：使用`ShowInBalloons`的财产`RevisionOptions`对象来配置修订在气球中的显示。您可以在`ShowInBalloons.FormatAndDelete`在气球中显示删除和格式修改的修改。
-
-```csharp
-doc.LayoutOptions.RevisionOptions.ShowInBalloons = ShowInBalloons.FormatAndDelete;
-```
-
-#### 问：如何使用 Aspose.Words for .NET 将文档保存为 PDF 格式？
-
-答：使用`Save`方法`Document`对象以 PDF 格式保存文档。您必须指定带有“.pdf”扩展名的完整目标路径。
-
-```csharp
-doc.Save("path/to/destination/document.pdf");
-```
+### Aspose.Words 除了 Word 之外还支持其他文档格式吗？
+是的，Aspose.Words 支持各种文档格式，包括 PDF、HTML、EPUB 等。

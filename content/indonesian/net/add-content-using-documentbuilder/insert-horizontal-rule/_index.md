@@ -15,7 +15,7 @@ Hai, rekan-rekan pengembang! Pernahkah Anda mendapati diri Anda tenggelam dalam 
 
 Sebelum kita mendalami seluk beluknya, pastikan Anda memiliki semua yang Anda perlukan untuk memulai. Berikut daftar periksa singkatnya:
 
-1.  Aspose.Words untuk .NET: Pastikan Anda memiliki versi terbaru. Kamu bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+1.  Aspose.Words untuk .NET: Pastikan Anda memiliki versi terbaru. Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Semua IDE yang mendukung .NET, seperti Visual Studio.
 3. Pengetahuan Dasar C#: Keakraban dengan pemrograman C# akan membuat tutorial ini lebih lancar.
 4. Direktori Dokumen: Anda memerlukan direktori tempat Anda dapat menyimpan dokumen Word Anda.

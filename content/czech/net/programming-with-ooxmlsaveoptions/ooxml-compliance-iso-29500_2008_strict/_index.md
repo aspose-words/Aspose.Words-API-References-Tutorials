@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-ooxmlsaveoptions/ooxml-compliance-iso-29500_2008_strict/
 ---
-## Úvod
+## Zavedení
 
 Jste připraveni ponořit se do světa shody dokumentů s OOXML ISO 29500_2008_Strict? Pojďme si projít tento komplexní návod pomocí Aspose.Words pro .NET. Každý krok rozebereme, aby bylo velmi snadné jej sledovat a implementovat. Tak se připoutejte a můžeme začít!
 
@@ -15,7 +15,7 @@ Jste připraveni ponořit se do světa shody dokumentů s OOXML ISO 29500_2008_S
 
 Než se vrhneme na to, co potřebujete, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Pokud ne, stáhněte si ji[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Pokud ne, stáhněte si ji[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Nastavte své vývojové prostředí (např. Visual Studio).
 3. Adresář dokumentů: Připravte si adresář, kde jsou uloženy vaše dokumenty aplikace Word.
 
@@ -60,7 +60,7 @@ Aby byla zajištěna kompatibilita a optimální výkon, musíme optimalizovat d
 doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2016);
 ```
 
- Vysvětlení: Tento řádek volá`OptimizeFor` metoda na`CompatibilityOptions` majetek z`doc` objekt, upřesňující`MsWordVersion.Word2016` k optimalizaci dokumentu pro Microsoft Word 2016.
+ Vysvětlení: Tento řádek volá`OptimizeFor` metoda na`CompatibilityOptions` vlastnictvím`doc` objekt, upřesňující`MsWordVersion.Word2016` k optimalizaci dokumentu pro Microsoft Word 2016.
 
 ## Krok 4: Nastavte soulad OOXML na ISO 29500_2008_Strict
 
@@ -97,8 +97,8 @@ Ano, můžete nastavit různé úrovně souladu změnou`OoxmlCompliance` majetek
 ### Co se stane, když je cesta dokumentu nesprávná?
  Pokud je cesta dokumentu nesprávná,`Document` konstruktor vyvolá a`FileNotFoundException`. Ujistěte se, že cesta je správná.
 
-### Musím optimalizovat pro Word 2016?
+### Potřebuji optimalizovat pro Word 2016?
 I když to není povinné, optimalizace pro konkrétní verzi aplikace Word může zlepšit kompatibilitu a výkon.
 
 ### Kde najdu další zdroje na Aspose.Words pro .NET?
- Můžete najít další zdroje a dokumentaci[tady](https://reference.aspose.com/words/net/).
+ Můžete najít další zdroje a dokumentaci[zde](https://reference.aspose.com/words/net/).

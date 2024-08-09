@@ -129,13 +129,13 @@ doc.Save(dataDir + "WorkingWithCharts.DefaultOptionsForDataLabels.docx");
 ## Preguntas frecuentes
 
 ### ¿Puedo utilizar Aspose.Words gratis?
-Puedes usar Aspose.Words gratis con un[licencia temporal](https://purchase.aspose.com/temporary-license/) o explorar sus características utilizando el[prueba gratis](https://releases.aspose.com/).
+Puedes usar Aspose.Words gratis con un[licencia temporal](https://purchase.aspose.com/temporary-license/) o explorar sus características utilizando el[prueba gratuita](https://releases.aspose.com/).
 
 ### ¿Cómo obtengo soporte para Aspose.Words?
  Puedes obtener soporte a través del[Foro de soporte de Aspose.Words](https://forum.aspose.com/c/words/8).
 
 ### ¿Puedo agregar otros tipos de gráficos?
- Sí, Aspose.Words admite varios tipos de gráficos, como gráficos de barras, líneas y columnas. Comprobar el[documentación](https://reference.aspose.com/words/net/) para más detalles.
+ Sí, Aspose.Words admite varios tipos de gráficos, como gráficos de barras, líneas y columnas. Compruebe el[documentación](https://reference.aspose.com/words/net/) para más detalles.
 
 ### ¿Aspose.Words es compatible con .NET Core?
  Sí, Aspose.Words es compatible con .NET Core. Puedes encontrar más información en el[documentación](https://reference.aspose.com/words/net/).

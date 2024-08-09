@@ -1,6 +1,6 @@
 ---
-title: Uruchom ponownie numerację stron
-linktitle: Uruchom ponownie numerację stron
+title: Uruchom ponownie numerowanie stron
+linktitle: Uruchom ponownie numerowanie stron
 second_title: Aspose.Words API do przetwarzania dokumentów
 description: Dowiedz się, jak ponownie uruchomić numerowanie stron podczas łączenia i dołączania dokumentów programu Word za pomocą Aspose.Words dla .NET.
 type: docs
@@ -15,7 +15,7 @@ Czy kiedykolwiek miałeś trudności ze stworzeniem dopracowanego dokumentu z od
 
 Przed wyruszeniem w tę podróż upewnij się, że posiadasz:
 
-1.  Aspose.Words dla .NET: Pobierz bibliotekę z oficjalnej strony internetowej[Link do pobrania](https://releases.aspose.com/words/net/) . Możesz skorzystać z bezpłatnego okresu próbnego[Bezpłatny link próbny](https://releases.aspose.com/) lub kup licencję[Kup Link](https://purchase.aspose.com/buy) w oparciu o Twoje potrzeby.
+1.  Aspose.Words dla .NET: Pobierz bibliotekę z oficjalnej strony internetowej[Pobierz link](https://releases.aspose.com/words/net/) . Możesz skorzystać z bezpłatnego okresu próbnego[Bezpłatny link próbny](https://releases.aspose.com/) lub kup licencję[Kup link](https://purchase.aspose.com/buy) w oparciu o Twoje potrzeby.
 2. Środowisko programistyczne AC#: Visual Studio lub dowolne środowisko obsługujące rozwój .NET będzie działać idealnie.
 3. Przykładowy dokument: Znajdź dokument programu Word, z którym chcesz poeksperymentować.
 
@@ -47,7 +47,7 @@ Document dstDoc = new Document(dataDir + "destination.docx");
 
 ## Krok 2: Konfigurowanie podziału sekcji:
 
- Uzyskać dostęp do`FirstSection` właściwość dokumentu źródłowego (`srcDoc`), aby manipulować sekcją początkową. W tej sekcji zostanie wznowiona numeracja stron.
+ Uzyskaj dostęp do`FirstSection` właściwość dokumentu źródłowego (`srcDoc`), aby manipulować sekcją początkową. W tej sekcji zostanie wznowiona numeracja stron.
 
  Skorzystaj z`PageSetup` właściwość sekcji, aby skonfigurować jej zachowanie w układzie.
 
@@ -107,6 +107,6 @@ Istniejące numery stron w dokumencie źródłowym pozostają niezmienione. Nume
 
  Absolutnie! Aspose.Words oferuje szeroką kontrolę nad formatami numeracji stron. Poznaj`NumberStyle` własność`HeaderFooter` obiekt do wyboru spośród różnych stylów numerowania, takich jak cyfry rzymskie, litery lub formaty niestandardowe.
 
-### Gdzie mogę znaleźć dalsze zasoby lub pomoc?
+### Gdzie mogę znaleźć dalsze zasoby i pomoc?
 
  Aspose zapewnia kompleksowy portal dokumentacji[Link do dokumentacji](https://reference.aspose.com/words/net/) który zagłębia się w funkcje numerowania stron i inne funkcje Aspose.Words. Dodatkowo ich aktywne forum[Link do wsparcia](https://forum.aspose.com/c/words/8) to świetna platforma do łączenia się ze społecznością programistów i szukania pomocy w przypadku konkretnych wyzwań.

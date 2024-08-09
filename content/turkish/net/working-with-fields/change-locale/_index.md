@@ -92,7 +92,7 @@ Son olarak belgeyi belirttiğiniz dizine kaydedin.
 doc.Save(dataDir + "WorkingWithFields.ChangeLocale.docx");
 ```
 
-İşte buyur! Aspose.Words for .NET'i kullanarak Word belgenizdeki yerel ayarı başarıyla değiştirdiniz.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak Word belgenizdeki yerel ayarı başarıyla değiştirdiniz.
 
 ## Çözüm
 
@@ -112,5 +112,5 @@ Yerel ayarın değiştirilmesi öncelikle tarih ve sayı biçimlerini etkileyece
 ### Bir şeyler ters giderse orijinal yerel ayara geri dönebilir miyim?
 Evet, orijinal kültürü kaydedip daha sonra geri yükleyerek orijinal yerel ayara geri dönebilirsiniz.
 
-### Sorunlarla karşılaşırsam nereden destek alabilirim?
+### Sorunla karşılaşırsam nereden destek alabilirim?
  Aspose topluluğundan destek alabilirsiniz[Burada](https://forum.aspose.com/c/words/8).

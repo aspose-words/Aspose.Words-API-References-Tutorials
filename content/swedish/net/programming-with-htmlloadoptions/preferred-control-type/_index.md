@@ -15,7 +15,7 @@ vi dyker in i en spännande handledning om hur man arbetar med HTML-laddningsalt
 
 Innan vi går in i koden finns det några saker du måste ha på plats:
 
-1.  Aspose.Words for .NET: Se till att du har Aspose.Words for .NET-biblioteket installerat. Du kan ladda ner den från[hemsida](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Se till att du har Aspose.Words for .NET-biblioteket installerat. Du kan ladda ner den från[webbplats](https://releases.aspose.com/words/net/).
 2. Utvecklingsmiljö: Du bör ha en utvecklingsmiljö inrättad, som Visual Studio.
 3. Grundläggande kunskaper om C#: En grundläggande förståelse för C#-programmering är nödvändig för att följa med handledningen.
 4. HTML-innehåll: Grundläggande kunskaper om HTML är till hjälp eftersom vi kommer att arbeta med HTML-innehåll i det här exemplet.
@@ -59,17 +59,17 @@ Ange sedan katalogen där ditt Word-dokument ska sparas. Detta hjälper till att
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där du vill spara ditt Word-dokument.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där du vill spara ditt Word-dokument.
 
 ## Steg 3: Konfigurera HTML-laddningsalternativ
 
- Här konfigurerar vi HTML-laddningsalternativen, särskilt med fokus på`PreferredControlType`fast egendom. Detta bestämmer hur kombinationsrutan ska renderas i Word-dokumentet.
+ Här konfigurerar vi HTML-laddningsalternativen, särskilt med fokus på`PreferredControlType`egendom. Detta bestämmer hur kombinationsrutan ska renderas i Word-dokumentet.
 
 ```csharp
 HtmlLoadOptions loadOptions = new HtmlLoadOptions { PreferredControlType = HtmlControlType.StructuredDocumentTag };
 ```
 
- Genom att sätta`PreferredControlType` till`HtmlControlType.StructuredDocumentTag`, ser vi till att kombinationsrutan renderas som en strukturerad dokumenttagg (SDT) i Word-dokumentet.
+ Genom att ställa in`PreferredControlType` till`HtmlControlType.StructuredDocumentTag`, ser vi till att kombinationsrutan renderas som en strukturerad dokumenttagg (SDT) i Word-dokumentet.
 
 ## Steg 4: Ladda HTML-innehållet i dokumentet
 

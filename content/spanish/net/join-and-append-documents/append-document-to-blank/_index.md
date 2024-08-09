@@ -13,7 +13,7 @@ url: /es/net/join-and-append-documents/append-document-to-blank/
 
 ## Requisitos previos
 
-Antes de entrar en el meollo de la cuestión, hay algunas cosas que necesitará tener implementadas:
+Antes de pasar al meollo de la cuestión, hay algunas cosas que necesitará tener implementadas:
 
 1.  Aspose.Words para la biblioteca .NET: puede descargarlo desde[Lanzamientos de Aspose](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: Visual Studio o cualquier otro IDE compatible con .NET.
@@ -126,7 +126,7 @@ Sí, puede adjuntar varios documentos llamando repetidamente al`AppendDocument` 
 
 ### ¿Necesito una licencia para usar Aspose.Words?
 
- Puedes empezar con un[prueba gratis](https://releases.aspose.com/) o conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/) para funciones ampliadas.
+ Puedes empezar con un[prueba gratuita](https://releases.aspose.com/) o conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/) para funciones ampliadas.
 
 ### ¿Puedo adjuntar documentos de diferentes tipos, como DOCX y DOC?
 

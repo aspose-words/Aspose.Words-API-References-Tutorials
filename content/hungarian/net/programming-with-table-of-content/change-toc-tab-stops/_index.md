@@ -19,7 +19,7 @@ Mielőtt elkezdenénk, győződjünk meg arról, hogy mindennel rendelkezik, ami
 2. Fejlesztői környezet: Visual Studio vagy bármely C#-kompatibilis IDE.
 3. Word-dokumentum: Pontosabban olyan, amely tartalmaz egy TOC-t.
 
-Megvan az egész? Fantasztikus! Csapassuk.
+Megvan az egész? Döbbenetes! Tekerjünk.
 
 ## Névterek importálása
 
@@ -108,13 +108,13 @@ A tartalomjegyzék tabulátorpontjainak megváltoztatása Word-dokumentumokban a
 ## GYIK
 
 ### Módosíthatom külön a tabulátorokat a különböző tartalomjegyzék-szintekhez?
-Igen tudsz! Csak ellenőrizze az egyes TOC-szinteket (Toc1, Toc2 stb.), és ennek megfelelően állítsa be.
+Igen, lehet! Csak ellenőrizze az egyes TOC-szinteket (Toc1, Toc2 stb.), és ennek megfelelően állítsa be.
 
 ### Mi a teendő, ha a dokumentumomnak több tartalomjegyzéke van?
 A kód az összes tartalomjegyzék-stílusú bekezdést megvizsgálja, így módosítja a dokumentumban található összes tartalomjegyzéket.
 
 ### Lehetséges több tabulátort hozzáadni egy TOC bejegyzéshez?
- Teljesen! Tetszőleges számú tabulátort hozzáadhat a gomb beállításával`para.ParagraphFormat.TabStops` Gyűjtemény.
+ Teljesen! Tetszőleges számú tabulátort hozzáadhat a gomb beállításával`para.ParagraphFormat.TabStops` gyűjtemény.
 
 ### Módosíthatom a tabulátorok igazítását és a vezető stílusát?
 Igen, új tabulátor hozzáadásakor különböző igazításokat és vezetőstílusokat adhat meg.

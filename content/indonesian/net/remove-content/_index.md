@@ -11,7 +11,7 @@ Menghapus konten dari dokumen memandu Anda langkah demi langkah untuk memahami c
 
 Tutorial ini memberikan contoh kode yang jelas dan ringkas dengan penjelasan langkah demi langkah, sehingga memudahkan untuk mempelajari dan menerapkan konsep dalam praktik. Dengan mengikuti langkah-langkah yang diberikan, Anda akan dapat memahami dasar-dasar penggunaan Aspose.Words untuk .NET dan menerapkan pengetahuan ini pada proyek Anda sendiri. Baik Anda seorang pemula atau pengembang berpengalaman, tutorial ini akan membantu Anda mempelajari keterampilan yang Anda perlukan untuk bekerja secara efektif dengan dokumen Word di aplikasi Anda.
 
-Baik Anda perlu memanipulasi, membuat, mengonversi, atau menghasilkan dokumen Word, tutorial Aspose.Words untuk .NET memberi Anda pengetahuan dan keterampilan untuk memanfaatkan sepenuhnya fungsionalitas perpustakaan Aspose.Words. Dengan memahami konsep-konsep utama ini, Anda akan dapat mengembangkan aplikasi khusus yang kuat untuk memenuhi kebutuhan spesifik pemrosesan dokumen Word Anda.
+Baik Anda perlu memanipulasi, membuat, mengonversi, atau membuat dokumen Word, tutorial Aspose.Words untuk .NET memberi Anda pengetahuan dan keterampilan untuk memanfaatkan sepenuhnya fungsionalitas perpustakaan Aspose.Words. Dengan memahami konsep-konsep utama ini, Anda akan dapat mengembangkan aplikasi khusus yang kuat untuk memenuhi kebutuhan spesifik pemrosesan dokumen Word Anda.
 
  ## Tutorial
 | Judul | Keterangan |

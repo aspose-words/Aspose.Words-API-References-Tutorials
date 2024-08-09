@@ -71,7 +71,7 @@ doc = aw.Document()
 
 ### 步驟 3：插入 ActiveX 控件
 
-假設您想嵌入多媒體播放器。您可以這樣做：
+假設您想要嵌入多媒體播放器。您可以這樣做：
 
 ```python
 activex_shape = doc.shapes.add_activex_control('clsid:6BF52A52-394A-11d3-B153-00C04F79FAA6', 100, 100, 300, 200)

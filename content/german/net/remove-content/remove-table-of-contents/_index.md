@@ -63,7 +63,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
 ```
 
 Folgendes ist passiert:
-- `doc.Range.Fields`: Dadurch wird auf alle Felder im Dokument zugegriffen.
+- `doc.Range.Fields`: Dadurch werden alle Felder im Dokument aufgerufen.
 - `.Where(f => f.Type == FieldType.FieldTOC)`Dadurch werden die Felder gefiltert, um nur die Felder zu finden, bei denen es sich um Inhaltsverzeichnisse handelt.
 - `.ToList().ForEach(f => f.Remove())`: Dadurch werden die gefilterten Felder in eine Liste umgewandelt und jedes einzelne entfernt.
 
@@ -89,7 +89,7 @@ Aspose.Words für .NET ist eine robuste .NET-Bibliothek zur Dokumentbearbeitung,
 
 ### Kann ich Aspose.Words kostenlos nutzen?
 
- Ja, Sie können Aspose.Words mit einem[Kostenlose Testphase](https://releases.aspose.com/) oder erhalten Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/).
+ Ja, Sie können Aspose.Words mit einem[Kostenlose Testversion](https://releases.aspose.com/) oder erhalten Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/).
 
 ### Ist es möglich, mit Aspose.Words andere Felder zu entfernen?
 

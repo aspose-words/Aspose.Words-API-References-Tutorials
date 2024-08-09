@@ -9,7 +9,7 @@ url: /pt/net/join-and-append-documents/append-with-import-format-options/
 ---
 ## Introdução
 
-Ei! Você já precisou mesclar vários documentos do Word em um, mas ficou preso com aqueles incômodos problemas de formatação? Não tenha medo! Hoje, estamos nos aprofundando em como você pode anexar um documento do Word a outro usando Aspose.Words for .NET enquanto mantém sua formatação organizada. Apertem os cintos, pois ao final deste guia, você será um mestre na fusão de documentos!
+Ei! Você já precisou mesclar vários documentos do Word em um, mas ficou preso com aqueles incômodos problemas de formatação? Não tenha medo! Hoje, estamos nos aprofundando em como você pode anexar um documento do Word a outro usando Aspose.Words for .NET, mantendo sua formatação organizada e organizada. Apertem os cintos, pois ao final deste guia, você será um mestre na fusão de documentos!
 
 ## Pré-requisitos
 
@@ -82,7 +82,7 @@ Por último, mas não menos importante, vamos salvar nosso documento recém-mesc
 dstDoc.Save(dataDir + "MergedDocument.docx");
 ```
 
-Estrondo! Você mesclou com sucesso dois documentos do Word, mantendo a formatação intacta. 
+Bum! Você mesclou com sucesso dois documentos do Word, mantendo a formatação intacta. 
 
 ## Conclusão
 
@@ -91,7 +91,7 @@ aí está! Seguindo essas etapas, você pode anexar documentos sem esforço usan
 ## Perguntas frequentes
 
 ### Posso manter a numeração do documento de destino em vez da numeração do documento de origem?
- Sim, você pode modificar o`ImportFormatOptions` Para alcançar isto.
+ Sim, você pode modificar o`ImportFormatOptions` para conseguir isso.
 
 ### E se eu não tiver o Aspose.Words para .NET?
  Você pode baixar uma avaliação gratuita em[aqui](https://releases.aspose.com/).

@@ -105,7 +105,7 @@ doc.Save(dataDir + "FindAndReplace.ReplaceTextContainingMetaCharacters.docx");
 
 ## 結論
 
-現在你就擁有了！現在您已經掌握了使用 Aspose.Words for .NET 取代 Word 文件中包含元字元的文字的技巧。從設定環境到保存最終文檔，每個步驟都旨在讓您控製文字操作。因此，繼續深入研究您的文檔，並充滿信心地進行這些替換！
+現在你就得到它了！現在您已經掌握了使用 Aspose.Words for .NET 取代 Word 文件中包含元字元的文字的技巧。從設定環境到保存最終文檔，每個步驟都旨在讓您控製文字操作。因此，繼續深入研究您的文檔，並充滿信心地進行這些替換！
 
 ## 常見問題解答
 

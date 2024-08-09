@@ -7,7 +7,7 @@ type: docs
 weight: 1520
 url: /pl/net/programming-with-document-properties/
 ---
-Samouczki Aspose.Words dla .NET dotyczące przetwarzania tekstu z właściwościami dokumentu zapewniają dogłębne spojrzenie na zarządzanie właściwościami dokumentów w projektach. W tych samouczkach dowiesz się, jak uzyskać dostęp, modyfikować i usuwać właściwości, takie jak tytuł, autor, słowa kluczowe itp., Aby spersonalizować dokumenty Word. Dowiesz się także, jak dodawać niestandardowe właściwości, aby spełnić Twoje specyficzne potrzeby.
+Samouczki Aspose.Words dla .NET dotyczące przetwarzania tekstu z właściwościami dokumentu zapewniają dogłębne spojrzenie na zarządzanie właściwościami dokumentów w projektach. W tych samouczkach dowiesz się, jak uzyskać dostęp do właściwości, takich jak tytuł, autor, słowa kluczowe itp., modyfikować je i usuwać, aby spersonalizować dokumenty programu Word. Dowiesz się także, jak dodawać niestandardowe właściwości, aby spełnić Twoje specyficzne potrzeby.
 
 Te samouczki poprowadzą Cię krok po kroku przez korzystanie z biblioteki Aspose.Words for .NET do interakcji z właściwościami dokumentu. Dowiesz się, jak wyodrębnić istniejące właściwości, ustawić nowe wartości i usunąć niechciane właściwości. Rozumiejąc, jak manipulować właściwościami dokumentu, będziesz mógł tworzyć profesjonalne dokumenty Word i dostosowywać je do swoich wymagań.
 

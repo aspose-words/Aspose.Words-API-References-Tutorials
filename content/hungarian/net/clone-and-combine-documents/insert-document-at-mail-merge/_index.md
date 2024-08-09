@@ -139,7 +139,7 @@ private static void InsertDocument(Node insertionDestination, Document docToInse
 ## GYIK
 
 ### Beszúrhatok több dokumentumot különböző egyesítési mezőkbe?
-Igen tudsz. Egyszerűen adja meg a megfelelő egyesítési mezőket és a megfelelő dokumentumútvonalakat a`MailMerge.Execute` módszer.
+Igen, megteheti. Egyszerűen adja meg a megfelelő egyesítési mezőket és a megfelelő dokumentumútvonalakat a`MailMerge.Execute` módszer.
 
 ### Lehetséges a beillesztett dokumentumot a fő dokumentumtól eltérően formázni?
  Teljesen! Használhatja a`ImportFormatMode` paraméter a`NodeImporter` a formázás szabályozásához.

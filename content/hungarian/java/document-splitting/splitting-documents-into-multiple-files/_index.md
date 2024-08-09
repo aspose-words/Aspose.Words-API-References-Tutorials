@@ -56,7 +56,7 @@ Ez a kód minden felosztott részt fájlnévvel ment el, például „split-part
 Ha egy dokumentumot kulcsszóval szeretne felosztani, ismételheti a dokumentum tartalmát, és megkeresheti a kulcsszót. Ha megtalálta, hozzon létre egy új dokumentumot, és adja hozzá a tartalmat addig a pontig.
 
 ### Feloszthatok egy dokumentumot PDF-fájlokra?
-Igen tudsz. Miután felosztotta a dokumentumot az Aspose.Words for Java használatával, az Aspose.PDF for Java segítségével minden egyes részt PDF-fájlként menthet.
+Igen, megteheti. Miután felosztotta a dokumentumot az Aspose.Words for Java használatával, az Aspose.PDF for Java segítségével minden egyes részt PDF-fájlként menthet.
 
 ### Ingyenesen használható az Aspose.Words for Java?
 Az Aspose.Words for Java egy kereskedelmi könyvtár, de ingyenes próbaverziót kínál. Az áraikat és a licenceiket a webhelyükön tekintheti meg.

@@ -2,18 +2,38 @@
 title: Restartovat číslo seznamu
 linktitle: Restartovat číslo seznamu
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se resetovat číslo seznamu v dokumentu aplikace Word pomocí Aspose.Words for .NET.
+description: Přečtěte si, jak restartovat čísla seznamů v dokumentech aplikace Word pomocí Aspose.Words for .NET. Tento podrobný průvodce o 2000 slovech pokrývá vše, co potřebujete vědět, od nastavení až po pokročilé přizpůsobení.
 type: docs
 weight: 10
 url: /cs/net/working-with-list/restart-list-number/
 ---
-V tomto podrobném tutoriálu vám ukážeme, jak resetovat číslo seznamu v dokumentu aplikace Word pomocí Aspose.Words for .NET. Vysvětlíme vám poskytnutý zdrojový kód C# a ukážeme vám, jak jej implementovat do vašich vlastních projektů.
+## Zavedení
 
- Chcete-li začít, ujistěte se, že máte Aspose.Words for .NET nainstalovaný a nakonfigurovaný ve svém vývojovém prostředí. Pokud jste tak ještě neučinili, stáhněte si a nainstalujte knihovnu z[Aspose.Releases]https://releases.aspose.com/words/net/.
+Chcete zvládnout umění manipulace se seznamy v dokumentech aplikace Word pomocí Aspose.Words pro .NET? Tak to jste na správném místě! V tomto tutoriálu se ponoříme hluboko do čísel restartování seznamů, což je šikovná funkce, která posune vaše dovednosti v automatizaci dokumentů na další úroveň. Připoutejte se a můžeme začít!
 
-## Krok 1: Vytvoření dokumentu a generátoru dokumentů
+## Předpoklady
 
-Nejprve vytvořte nový dokument a přidružený generátor dokumentů:
+Než se pustíme do kódu, ujistěte se, že máte vše, co potřebujete:
+
+1.  Aspose.Words for .NET: Musíte mít nainstalovanou aplikaci Aspose.Words for .NET. Pokud jste jej ještě nenainstalovali, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+2. Vývojové prostředí: Ujistěte se, že máte vhodné vývojové prostředí, jako je Visual Studio.
+3. Základní znalost C#: Základní znalost C# vám pomůže postupovat společně s výukovým programem.
+
+## Importovat jmenné prostory
+
+Nejprve importujme potřebné jmenné prostory. Ty jsou klíčové pro přístup k funkcím Aspose.Words.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Lists;
+using System.Drawing;
+```
+
+Nyní si tento proces rozdělíme do snadno pochopitelných kroků. Probereme vše od vytvoření seznamu až po restart jeho číslování.
+
+## Krok 1: Nastavte svůj dokument a tvůrce
+
+Než budete moci začít manipulovat se seznamy, potřebujete dokument a DocumentBuilder. DocumentBuilder je váš oblíbený nástroj pro přidávání obsahu do vašeho dokumentu.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -21,9 +41,9 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 2: Vytvoření a přizpůsobení prvního seznamu
+## Krok 2: Vytvořte a přizpůsobte svůj první seznam
 
-Dále vytvořte seznam založený na existující šabloně a poté přizpůsobte jeho úrovně:
+Dále vytvoříme seznam na základě šablony a přizpůsobíme jeho vzhled. V tomto příkladu používáme arabský formát čísel se závorkami.
 
 ```csharp
 List list1 = doc.Lists.Add(ListTemplate.NumberArabicParenthesis);
@@ -31,102 +51,75 @@ list1.ListLevels[0].Font.Color = Color.Red;
 list1.ListLevels[0].Alignment = ListLevelAlignment.Right;
 ```
 
-## Krok 3: Přidání položek do prvního seznamu
+Zde jsme nastavili barvu písma na červenou a text zarovnali doprava.
 
-Pomocí nástroje pro tvorbu dokumentů přidejte položky do prvního seznamu a odeberte čísla seznamu:
+## Krok 3: Přidejte položky do svého prvního seznamu
+
+ Když je váš seznam připraven, je čas přidat nějaké položky. The DocumentBuilder's`ListFormat.List` vlastnost pomáhá při aplikaci formátu seznamu na text.
 
 ```csharp
 builder.Writeln("List 1 starts below:");
 builder.ListFormat.List = list1;
-builder. Writen("Element 1");
-builder. Writen("Element 2");
+builder.Writeln("Item 1");
+builder.Writeln("Item 2");
 builder.ListFormat.RemoveNumbers();
 ```
 
-## Krok 4: Vytvoření a přizpůsobení druhého seznamu
+## Krok 4: Restartujte číslování seznamu
 
-Chcete-li znovu použít první seznam resetováním čísla, vytvořte kopii původního rozvržení seznamu:
+Chcete-li znovu použít seznam a restartovat jeho číslování, musíte vytvořit kopii původního seznamu. To vám umožní upravit nový seznam nezávisle.
 
 ```csharp
 List list2 = doc.Lists.AddCopy(list1);
 list2.ListLevels[0].StartAt = 10;
 ```
 
-V případě potřeby můžete také provést další změny ve druhém seznamu.
+V tomto příkladu začíná nový seznam číslem 10.
 
-## Krok 5: Přidání položek do druhého seznamu
+## Krok 5: Přidejte položky do nového seznamu
 
-Pomocí nástroje pro tvorbu dokumentů znovu přidejte položky do druhého seznamu a odstraňte čísla seznamu:
-
-```csharp
-builder.Writeln("List 2 starts below:");
-builder.ListFormat.List = list2;
-builder. Writen("Element 1");
-builder. Writen("Element 2");
-builder.ListFormat.RemoveNumbers();
-```
-
-## Krok 6: Uložte upravený dokument
-
-Nakonec upravený dokument uložte:
+Stejně jako předtím přidejte položky do nového seznamu. To ukazuje, že se seznam restartuje na zadaném čísle.
 
 ```csharp
-builder.Document.Save(dataDir + "ResetListNumber.docx");
-```
-
-Tak ! Úspěšně jste resetovali číslo seznamu v dokumentu aplikace Word pomocí Aspose.Words for .NET.
-
-### Ukázkový zdrojový kód pro resetování čísla seznamu
-
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-// Vytvořte seznam na základě šablony.
-List list1 = doc.Lists.Add(ListTemplate.NumberArabicParenthesis);
-list1.ListLevels[0].Font.Color = Color.Red;
-list1.ListLevels[0].Alignment = ListLevelAlignment.Right;
-
-builder.Writeln("List 1 starts below:");
-builder.ListFormat.List = list1;
-builder.Writeln("Item 1");
-builder.Writeln("Item 2");
-builder.ListFormat.RemoveNumbers();
-
-// Chcete-li znovu použít první seznam, musíme restartovat číslování vytvořením kopie původního formátování seznamu.
-List list2 = doc.Lists.AddCopy(list1);
-
-// Novou soupisku můžeme jakkoli upravit, včetně nastavení nového startovního čísla.
-list2.ListLevels[0].StartAt = 10;
-
 builder.Writeln("List 2 starts below:");
 builder.ListFormat.List = list2;
 builder.Writeln("Item 1");
 builder.Writeln("Item 2");
 builder.ListFormat.RemoveNumbers();
+```
 
+## Krok 6: Uložte dokument
+
+Nakonec uložte dokument do určeného adresáře.
+
+```csharp
 builder.Document.Save(dataDir + "WorkingWithList.RestartListNumber.docx");
-            
 ```
 
-### FAQ
+## Závěr
 
-#### Otázka: Jak mohu restartovat číslování seznamu v Aspose.Words?
+Restartování čísel seznamů v dokumentech aplikace Word pomocí Aspose.Words for .NET je přímočaré a neuvěřitelně užitečné. Ať už generujete sestavy, vytváříte strukturované dokumenty nebo jen potřebujete lepší kontrolu nad svými seznamy, tato technika vás pokryje.
 
- A: Chcete-li restartovat číslování seznamu v Aspose.Words, můžete použít`ListRestartAtNumber` metoda`List` třída. Tato metoda umožňuje nastavit novou hodnotu číselníku, od které se má seznam restartovat. Můžete například použít`list.ListRestartAtNumber(1)` pro obnovení číslování od 1.
+## FAQ
 
-#### Otázka: Je možné upravit předponu a příponu číslování restartovaných seznamů v Aspose.Words?
+### Mohu použít jiné šablony seznamů než NumberArabicParenthesis?
 
- Odpověď: Ano, můžete upravit předponu a příponu číslování restartovaných seznamů v Aspose.Words. The`ListLevel`třída nabízí vlastnosti jako např`ListLevel.NumberPrefix`a`ListLevel.NumberSuffix` které umožňují zadat předponu a příponu pro každou úroveň v seznamu. Tyto vlastnosti můžete použít k přizpůsobení předpony a přípony podle potřeby.
+Absolutně! Aspose.Words nabízí různé šablony seznamů, jako jsou odrážky, písmena, římské číslice a další. Můžete si vybrat ten, který nejlépe vyhovuje vašim potřebám.
 
-#### Otázka: Jak mohu zadat konkrétní hodnotu číslování, od které má být seznam restartován?
+### Jak změním úroveň seznamu?
 
- A: Chcete-li zadat konkrétní číselnou hodnotu, od které se má seznam restartovat, můžete použít`ListRestartAtNumber` metoda předávající požadovanou hodnotu jako argument. Chcete-li například restartovat číslování od 5, můžete použít`list.ListRestartAtNumber(5)`.
+ Úroveň seznamu můžete změnit úpravou`ListLevels` vlastnictví. Například,`list1.ListLevels[1]` odkazuje na druhou úroveň seznamu.
 
-#### Otázka: Je možné restartovat víceúrovňové číslování seznamů v Aspose.Words?
+### Mohu restartovat číslování na libovolném čísle?
 
- Odpověď: Ano, Aspose.Words podporuje restartování číslování více úrovní seznamu. Můžete použít`ListRestartAtNumber` metoda na každé úrovni seznamu pro opětovné zahájení číslování jednotlivě. Můžete například použít`list.Levels[0].ListRestartAtNumber(1)` restartujte první úroveň seznamu od 1 a`list.Levels[1].ListRestartAtNumber(1)` restartovat seznam druhé úrovně počínaje 1 a tak dále.
+ Ano, počáteční číslo můžete nastavit na libovolnou celočíselnou hodnotu pomocí`StartAt` vlastnost úrovně seznamu.
 
+### Je možné mít různé formátování pro různé úrovně seznamu?
+
+Opravdu! Každá úroveň seznamu může mít vlastní nastavení formátování, jako je písmo, zarovnání a styl číslování.
+
+### Co když chci pokračovat v číslování z předchozího seznamu místo restartování?
+
+Pokud chcete pokračovat v číslování, nemusíte vytvářet kopii seznamu. Jednoduše pokračujte v přidávání položek do původního seznamu.
 
 

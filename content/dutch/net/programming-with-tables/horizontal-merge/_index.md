@@ -9,7 +9,7 @@ url: /nl/net/programming-with-tables/horizontal-merge/
 ---
 ## Invoering
 
-Hallo daar! Klaar om in de wereld van Aspose.Words voor .NET te duiken? Vandaag gaan we een superhandige functie aanpakken: horizontaal samenvoegen van tabellen. Dit klinkt misschien een beetje technisch, maar maak je geen zorgen, ik sta achter je. Aan het einde van deze zelfstudie bent u een professional in het programmatisch samenvoegen van cellen in uw Word-documenten. Laten we dus onze mouwen opstropen en aan de slag gaan!
+Hé daar! Klaar om in de wereld van Aspose.Words voor .NET te duiken? Vandaag gaan we een superhandige functie aanpakken: horizontaal samenvoegen van tabellen. Dit klinkt misschien een beetje technisch, maar maak je geen zorgen, ik sta achter je. Aan het einde van deze zelfstudie bent u een professional in het programmatisch samenvoegen van cellen in uw Word-documenten. Laten we dus onze mouwen opstropen en aan de slag gaan!
 
 ## Vereisten
 

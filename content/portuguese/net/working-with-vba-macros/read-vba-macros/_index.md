@@ -45,7 +45,7 @@ Defina o caminho para o seu diretório assim:
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real onde seus documentos do Word estão localizados. Isto é onde a diversão começa!
+ Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real onde seus documentos do Word estão localizados. É aqui que a diversão começa!
 
 ## Etapa 2: Carregar o documento do Word
 
@@ -117,7 +117,7 @@ Este é um exemplo simples de macro VBA que exibe uma caixa de mensagem com o te
 
 E aí está! Você leu com êxito macros VBA de um documento do Word usando Aspose.Words for .NET. Este tutorial abordou tudo, desde a configuração do seu ambiente e carregamento do seu documento até o acesso ao projeto VBA e a leitura das macros. Com Aspose.Words, você tem uma ferramenta poderosa à sua disposição para automatizar tarefas, personalizar documentos e mergulhar profundamente no mundo do VBA.
 
- Se você está ansioso para aprender mais, o[Documentação da API](https://reference.aspose.com/words/net/) é um ótimo lugar para começar. E se você tiver dúvidas ou precisar de ajuda, o[Fórum de suporte](https://forum.aspose.com/c/words/8) está lá para você.
+ Se você está ansioso para aprender mais, o[Documentação da API](https://reference.aspose.com/words/net/) é um ótimo lugar para começar. E se você tiver dúvidas ou precisar de ajuda, o[fórum de suporte](https://forum.aspose.com/c/words/8) está lá para você.
 
 Boa codificação e que suas macros sempre funcionem perfeitamente!
 

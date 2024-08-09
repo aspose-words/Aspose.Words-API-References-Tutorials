@@ -98,4 +98,4 @@ Header dan footer dari dokumen sumber dapat berlanjut ke dokumen tujuan.
 Ya, Aspose.Words untuk .NET memungkinkan Anda menghapus header dan footer sambil mempertahankan format dokumen lainnya.
 
 ### Di mana saya dapat menemukan lebih banyak sumber daya dan dukungan untuk Aspose.Words untuk .NET?
- Mengunjungi[Aspose.Words untuk dokumentasi .NET](https://reference.aspose.com/words/net/) untuk referensi dan contoh API terperinci.
+ Kunjungi[Aspose.Words untuk dokumentasi .NET](https://reference.aspose.com/words/net/) untuk referensi dan contoh API terperinci.

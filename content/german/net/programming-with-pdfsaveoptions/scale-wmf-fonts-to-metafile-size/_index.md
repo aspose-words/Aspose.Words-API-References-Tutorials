@@ -15,7 +15,7 @@ Beim Arbeiten mit PDF-Dateien, insbesondere solchen, die aus Word-Dokumenten mit
 
 Bevor Sie mit den Schritten beginnen, stellen Sie sicher, dass Sie über Folgendes verfügen:
 
-1. Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek installiert haben. Wenn nicht, können Sie[hier herunterladen](https://releases.aspose.com/words/net/).
+1. Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek installiert haben. Wenn nicht, können Sie[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Dieses Tutorial setzt voraus, dass Sie eine .NET-Entwicklungsumgebung (wie Visual Studio) eingerichtet haben, in der Sie C#-Code schreiben und ausführen können.
 3. Grundlegende Kenntnisse der .NET-Programmierung: Vertrautheit mit grundlegenden Konzepten der .NET-Programmierung und der C#-Syntax ist hilfreich.
 4. Word-Dokument mit WMF-Grafiken: Sie benötigen ein Word-Dokument mit WMF-Grafiken. Sie können Ihr eigenes Dokument verwenden oder zu Testzwecken ein neues erstellen.
@@ -69,7 +69,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- Der`PdfSaveOptions` Klasse können Sie verschiedene Einstellungen für das Speichern des Dokuments als PDF festlegen. Durch die Zuweisung der zuvor konfigurierten`MetafileRenderingOptions` zum`MetafileRenderingOptions` Eigentum von`PdfSaveOptions`stellen Sie sicher, dass das Dokument entsprechend den gewünschten Einstellungen für die Metadateidarstellung gespeichert wird.
+ Der`PdfSaveOptions` Klasse können Sie verschiedene Einstellungen für das Speichern des Dokuments als PDF festlegen. Durch die Zuweisung der zuvor konfigurierten`MetafileRenderingOptions` zur`MetafileRenderingOptions` Eigentum von`PdfSaveOptions`stellen Sie sicher, dass das Dokument entsprechend den gewünschten Einstellungen für die Metadateidarstellung gespeichert wird.
 
 ## Schritt 4: Speichern Sie das Dokument als PDF
 
@@ -107,4 +107,4 @@ Ja, diese Technik kann auf jedes Word-Dokument angewendet werden, das WMF-Grafik
 
 ### Wo finde ich weitere Informationen zu Aspose.Words?
 
- Weitere Informationen zu Aspose.Words finden Sie im[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/) . Downloads, Testversionen und Unterstützung finden Sie auf der[Aspose.Words Download-Seite](https://releases.aspose.com/words/net/), [Aspose.Words kaufen](https://purchase.aspose.com/buy), [Kostenlose Testphase](https://releases.aspose.com/), [Temporäre Lizenz](https://purchase.aspose.com/temporary-license/) , Und[Support](https://forum.aspose.com/c/words/8).
+ Weitere Informationen zu Aspose.Words finden Sie im[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/) . Downloads, Testversionen und Unterstützung finden Sie auf der[Aspose.Words Download-Seite](https://releases.aspose.com/words/net/), [Aspose.Words kaufen](https://purchase.aspose.com/buy), [Kostenlose Testversion](https://releases.aspose.com/), [Temporäre Lizenz](https://purchase.aspose.com/temporary-license/) , Und[Support](https://forum.aspose.com/c/words/8).

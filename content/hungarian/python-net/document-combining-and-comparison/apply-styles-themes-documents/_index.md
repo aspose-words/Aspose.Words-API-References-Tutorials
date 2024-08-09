@@ -151,7 +151,7 @@ A stílusok és témák alkalmazása az Aspose.Words for Python használatával 
 
 ### Hogyan tölthetem le az Aspose.Words for Python programot?
 
- Az Aspose.Words for Python letölthető a következő webhelyről:[Letöltési link](https://releases.aspose.com/words/python/).
+ Az Aspose.Words for Python letölthető a következő webhelyről:[Letöltési hivatkozás](https://releases.aspose.com/words/python/).
 
 ### Létrehozhatok saját egyéni stílusokat?
 

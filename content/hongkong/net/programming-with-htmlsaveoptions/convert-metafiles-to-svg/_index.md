@@ -56,7 +56,7 @@ builder.Write("Here is an SVG image: ");
 
 ## 第 3 步：插入 SVG 影像
 
-現在是有趣的部分！我們將使用以下命令將 SVG 映像插入到我們的文件中`InsertHtml`方法。
+現在，有趣的部分！我們將使用以下命令將 SVG 映像插入到我們的文件中`InsertHtml`方法。
 
 ```csharp
 builder.InsertHtml(
@@ -93,7 +93,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ConvertMetafilesToSvg.html", save
 
 ## 結論
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 成功將 Word 文件中的圖元檔案轉換為 SVG。很酷，對吧？只需幾行程式碼，您就可以透過添加可縮放向量圖形來增強您的 Word 文檔，使它們更具動態性和視覺吸引力。因此，請繼續在您的專案中嘗試。快樂編碼！
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功將 Word 文件中的圖元檔案轉換為 SVG。很酷，對吧？只需幾行程式碼，您就可以透過添加可縮放向量圖形來增強您的 Word 文檔，使它們更具動態性和視覺吸引力。因此，請繼續在您的專案中嘗試。快樂編碼！
 
 ## 常見問題解答
 

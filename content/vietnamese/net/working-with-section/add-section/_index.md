@@ -16,7 +16,7 @@ Xin chào các nhà phát triển đồng nghiệp! 👋 Bạn đã bao giờ đ
 
 Trước khi chuyển sang mã, hãy xem qua những gì bạn cần:
 
-1.  Aspose.Words for .NET Library: Đảm bảo bạn có phiên bản mới nhất. Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Đảm bảo bạn có phiên bản mới nhất. bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Một IDE tương thích với .NET như Visual Studio sẽ thực hiện thủ thuật này.
 3. Kiến thức cơ bản về C#: Hiểu cú pháp C# sẽ giúp bạn theo dõi trôi chảy.
 4. Tài liệu Word mẫu: Mặc dù chúng tôi sẽ tạo một tài liệu từ đầu nhưng việc có một mẫu có thể hữu ích cho mục đích thử nghiệm.
@@ -83,7 +83,7 @@ Sau khi thêm phần mới, chúng tôi có thể điền nội dung vào đó g
 
 ### Sử dụng DocumentBuilder cho Phần mới
 
-Để thêm nội dung vào phần mới, bạn cần đặt`DocumentBuilder` con trỏ đến phần mới:
+ Để thêm nội dung vào phần mới, bạn cần đặt`DocumentBuilder` con trỏ đến phần mới:
 
 ```csharp
 builder.MoveToSection(doc.Sections.IndexOf(sectionToAdd));
@@ -129,4 +129,4 @@ Không, các phần không thể lồng vào nhau. Tuy nhiên, bạn có thể c
 
 ### Tôi có thể tìm thêm tài nguyên trên Aspose.Words ở đâu?
 
- Để biết thêm thông tin, bạn có thể truy cập[Tài liệu Aspose.Words](https://reference.aspose.com/words/net/) hoặc là[diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8) để được giúp đỡ và thảo luận.
+ Để biết thêm thông tin, bạn có thể truy cập[Tài liệu Aspose.Words](https://reference.aspose.com/words/net/) hoặc[diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8) để được giúp đỡ và thảo luận.

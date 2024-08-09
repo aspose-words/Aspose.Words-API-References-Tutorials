@@ -14,9 +14,9 @@ Um mit Knoten in Aspose.Words für .NET zu arbeiten, können Entwickler das von 
  ## Anleitungen
 | Titel | Beschreibung |
 | --- | --- |
-| [Knotentyp verwenden](./use-node-type/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Knotentypen verwenden, um auf dokumentspezifische Informationen zuzugreifen. |
-| [Übergeordneten Knoten abrufen](./get-parent-node/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET den übergeordneten Knoten eines bestimmten Elements erhalten. |
-| [Eigentümerdokument](./owner-document/) | Erfahren Sie, wie Sie das Eigentümerdokument in Aspose.Words für .NET verwenden. |
-| [Untergeordnete Knoten aufzählen](./enumerate-child-nodes/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET untergeordnete Knoten in einem Absatz aufzählen. |
-| [Typisierter Zugriff](./typed-access/) | Erfahren Sie, wie Sie typisierten Zugriff zum Bearbeiten von Tabellen in Aspose.Words für .NET verwenden. |
-| [Absatzknoten erstellen und hinzufügen](./create-and-add-paragraph-node/) | Erstellen und fügen Sie mit Aspose.Words für .NET einen Absatzknoten zu Ihren Word-Dokumenten hinzu. |
+| [Knotentyp verwenden](./use-node-type/) | Entdecken Sie mit unserem ausführlichen Leitfaden, wie Sie die NodeType-Eigenschaft in Aspose.Words für .NET beherrschen. Perfekt für Entwickler, die ihre Fähigkeiten in der Dokumentverarbeitung verbessern möchten. |
+| [Übergeordneten Knoten abrufen](./get-parent-node/) | Erfahren Sie in diesem ausführlichen Schritt-für-Schritt-Tutorial, wie Sie mit Aspose.Words für .NET den übergeordneten Knoten eines Dokumentabschnitts abrufen. |
+| [Eigentümerdokument](./owner-document/) | Erfahren Sie, wie Sie mit dem Eigentümerdokument in Aspose.Words für .NET arbeiten. Diese Schritt-für-Schritt-Anleitung behandelt das Erstellen und Bearbeiten von Knoten in einem Dokument. |
+| [Untergeordnete Knoten aufzählen](./enumerate-child-nodes/) | Erfahren Sie in diesem Schritt-für-Schritt-Tutorial, wie Sie mit Aspose.Words für .NET untergeordnete Knoten in einem Word-Dokument aufzählen. |
+| [Typisierter Zugriff](./typed-access/) | Erfahren Sie, wie Sie Typisierter Zugriff in Aspose.Words für .NET verwenden, um Dokumentelemente wie Tabellen und Zeilen einfach zu bearbeiten. Diese Schritt-für-Schritt-Anleitung vereinfacht Ihren Arbeitsablauf. |
+| [Absatzknoten erstellen und hinzufügen](./create-and-add-paragraph-node/) | Erfahren Sie in diesem ausführlichen Schritt-für-Schritt-Tutorial, wie Sie mit Aspose.Words für .NET einen Absatzknoten in einem Dokument erstellen und hinzufügen. |

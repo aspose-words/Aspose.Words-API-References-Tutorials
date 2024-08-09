@@ -47,7 +47,7 @@ Förklaring: Du måste ange var din DOCX-fil finns och var du vill spara den kon
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där dina filer lagras. Denna sökväg kommer att användas för att läsa DOCX-filen och skriva den konverterade RTF-filen.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där dina filer lagras. Denna sökväg kommer att användas för att läsa DOCX-filen och skriva den konverterade RTF-filen.
 
 ## Steg 2: Ladda DOCX-dokumentet
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-table-styles-and-formatting/modify-row-formatting/
 ---
-## Úvod
+## Zavedení
 
 Potřebovali jste někdy upravit formátování řádků v dokumentech aplikace Word? Možná se snažíte vyniknout prvnímu řádku v tabulce nebo zajistit, aby vaše tabulky vypadaly na různých stránkách přesně. Tak to máš štěstí! V tomto tutoriálu se ponoříme hluboko do toho, jak upravit formátování řádků v dokumentech aplikace Word pomocí Aspose.Words for .NET. Ať už jste zkušený vývojář nebo teprve začínáte, tento průvodce vás provede každým krokem s jasnými a podrobnými pokyny. Jste připraveni dodat svým dokumentům uhlazený profesionální vzhled? Začněme!
 
@@ -106,7 +106,7 @@ Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vyt
 Ano, můžete procházet řádky v tabulce a aplikovat změny formátování na každý řádek jednotlivě.
 
 ### Jak přidám ohraničení do řádku?
- Ohraničení můžete přidat nastavením`LineStyle` majetek z`Borders` objekt k požadovanému stylu, jako je např`LineStyle.Single`.
+ Ohraničení můžete přidat nastavením`LineStyle` vlastnictvím`Borders` objekt k požadovanému stylu, jako je např`LineStyle.Single`.
 
 ### Mohu nastavit pevnou výšku řádku?
  Ano, můžete nastavit pevnou výšku pomocí`HeightRule` vlastnost a určení hodnoty výšky.

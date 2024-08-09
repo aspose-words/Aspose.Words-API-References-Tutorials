@@ -73,7 +73,7 @@ SignOptions signOptions = new SignOptions { DecryptionPassword = "decryptionPass
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-## Adım 6: Belgeyi İmzalama
+## Adım 6: Belgeyi İmzalamak
 
  Son olarak şunu kullanın:`DigitalSignatureUtil.Sign` şifrelenmiş Word belgenizi imzalama yöntemi. Bu yöntem, giriş dosyası, çıkış dosyası, sertifika sahibi ve imza seçeneklerini gerektirir.
 
@@ -91,7 +91,7 @@ Dosyanızı kaydedin ve projeyi çalıştırın. Her şey doğru ayarlanmışsa 
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak şifrelenmiş bir Word belgesini başarıyla imzaladınız. Bu güçlü kitaplık sayesinde dijital imzalama, şifrelenmiş dosyalar için bile çocuk oyuncağı haline gelir. Mutlu kodlama!
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak şifrelenmiş bir Word belgesini başarıyla imzaladınız. Bu güçlü kitaplık sayesinde dijital imzalama, şifrelenmiş dosyalar için bile çocuk oyuncağı haline gelir. Mutlu kodlama!
 
 ## SSS'ler
 

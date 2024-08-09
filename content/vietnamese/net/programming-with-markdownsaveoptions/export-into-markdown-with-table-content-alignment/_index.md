@@ -9,7 +9,7 @@ url: /vi/net/programming-with-markdownsaveoptions/export-into-markdown-with-tabl
 ---
 ## Giới thiệu
 
-Này! Bạn đã bao giờ tự hỏi làm cách nào để xuất tài liệu Word của mình sang định dạng Markdown với các bảng được căn chỉnh hoàn hảo chưa? Cho dù bạn là nhà phát triển làm việc về tài liệu hay chỉ là người yêu thích Markdown thì hướng dẫn này là dành cho bạn. Chúng ta sẽ đi sâu vào chi tiết cách sử dụng Aspose.Words cho .NET để đạt được điều này. Bạn đã sẵn sàng biến các bảng Word của mình thành các bảng Markdown được căn chỉnh gọn gàng chưa? Bắt đầu nào!
+Này! Bạn đã bao giờ tự hỏi làm cách nào để xuất tài liệu Word của mình sang định dạng Markdown với các bảng được căn chỉnh hoàn hảo chưa? Cho dù bạn là nhà phát triển làm việc về tài liệu hay chỉ là người yêu thích Markdown thì hướng dẫn này là dành cho bạn. Chúng ta sẽ đi sâu vào chi tiết cách sử dụng Aspose.Words cho .NET để đạt được điều này. Bạn đã sẵn sàng biến các bảng Word của mình thành các bảng Markdown được căn chỉnh gọn gàng chưa? Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
@@ -85,7 +85,7 @@ doc.Save(dataDir + "CenterTableContentAlignment.md", saveOptions);
 
 ## Bước 4: Sử dụng Căn chỉnh nội dung bảng tự động
 
- Các`Auto`tùy chọn căn chỉnh lấy căn chỉnh từ đoạn đầu tiên trong cột bảng tương ứng. Điều này có thể hữu ích khi bạn có các cách sắp xếp hỗn hợp trong một bảng.
+ các`Auto`tùy chọn căn chỉnh lấy căn chỉnh từ đoạn đầu tiên trong cột bảng tương ứng. Điều này có thể hữu ích khi bạn có các cách sắp xếp hỗn hợp trong một bảng.
 
 ```csharp
 // Đặt căn chỉnh thành Tự động.
@@ -97,7 +97,7 @@ doc.Save(dataDir + "AutoTableContentAlignment.md", saveOptions);
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Xuất tài liệu Word sang Markdown với các bảng được căn chỉnh bằng Aspose.Words cho .NET thật dễ dàng khi bạn biết cách thực hiện. Thư viện mạnh mẽ này giúp bạn dễ dàng kiểm soát định dạng và căn chỉnh các bảng, đảm bảo rằng tài liệu Markdown của bạn trông giống như cách bạn muốn. Chúc mừng mã hóa!
+Và bạn có nó! Xuất tài liệu Word sang Markdown với các bảng được căn chỉnh bằng Aspose.Words cho .NET thật dễ dàng khi bạn biết cách thực hiện. Thư viện mạnh mẽ này giúp bạn dễ dàng kiểm soát định dạng và căn chỉnh các bảng, đảm bảo rằng tài liệu Markdown của bạn trông giống như cách bạn muốn. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 

@@ -10,7 +10,7 @@ url: /tr/java/document-manipulation/adding-content-using-documentbuilder/
 
 ## Aspose.Words for Java'da DocumentBuilder Kullanarak İçerik Eklemeye Giriş
 
-Bu adım adım kılavuzda, bir Word belgesine çeşitli içerik türlerini eklemek için Aspose.Words for Java'nın DocumentBuilder'ının nasıl kullanılacağını keşfedeceğiz. Metin, tablolar, yatay kurallar, form alanları, HTML, köprüler, içindekiler tablosu, satır içi ve kayan resimler, paragraflar ve daha fazlasını eklemeyi ele alacağız. Başlayalım!
+Bu adım adım kılavuzda, bir Word belgesine çeşitli içerik türlerini eklemek için Aspose.Words for Java'nın DocumentBuilder'ının nasıl kullanılacağını keşfedeceğiz. Metin, tablolar, yatay kurallar, form alanları, HTML, köprüler, içindekiler tablosu, satır içi ve kayan resimler, paragraflar ve daha fazlasını eklemeyi ele alacağız. Hadi başlayalım!
 
 ## Önkoşullar
 
@@ -215,7 +215,7 @@ doc.save("path/to/your/document.docx");
 
 ## Adım 10: İmleci Hareket Ettirme
 
- Aşağıdaki gibi çeşitli yöntemleri kullanarak belge içindeki imleç konumunu kontrol edebilirsiniz:`moveToParagraph`, `moveToCell`ve dahası. İşte bir örnek:
+ Aşağıdaki gibi çeşitli yöntemleri kullanarak belge içindeki imleç konumunu kontrol edebilirsiniz:`moveToParagraph`, `moveToCell`ve daha fazlası. İşte bir örnek:
 
 ```java
 Document doc = new Document();
@@ -241,7 +241,7 @@ Bu kapsamlı kılavuzda Aspose.Words for Java DocumentBuilder'ın Word belgeleri
 
 C: Aspose.Words for Java, geliştiricilerin Microsoft Word belgelerini programlı olarak oluşturmasına, değiştirmesine ve işlemesine olanak tanıyan bir Java kitaplığıdır. Belge oluşturma, biçimlendirme ve içerik ekleme için geniş bir özellik yelpazesi sunar.
 
-### S: Belgeme nasıl içindekiler tablosu ekleyebilirim?
+### S: Belgeme içindekiler tablosunu nasıl ekleyebilirim?
 
 C: İçindekiler tablosu eklemek için`DocumentBuilder` Belgenize bir içindekiler tablosu alanı eklemek için. İçindekiler tablosunu doldurmak için içerik ekledikten sonra belgedeki alanları güncellediğinizden emin olun. İşte bir örnek:
 
@@ -310,7 +310,7 @@ builder.writeln("This is a formatted paragraph.");
 
 ### S: İmleci belge içinde belirli bir konuma nasıl taşıyabilirim?
 
- C: İmleç konumunu aşağıdaki gibi yöntemleri kullanarak kontrol edebilirsiniz:`moveToParagraph`, `moveToCell`ve dahası. İşte bir örnek:
+ C: İmleç konumunu aşağıdaki gibi yöntemleri kullanarak kontrol edebilirsiniz:`moveToParagraph`, `moveToCell`ve daha fazlası. İşte bir örnek:
 
 ```java
 Document doc = new Document();

@@ -75,7 +75,7 @@ Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesindeki sayfalar ara
  Evet, istediğiniz satıra erişip satır sonlarını ayarlayarak belirli satırlar için satır sonlarını devre dışı bırakabilirsiniz.`AllowBreakAcrossPages`mülkiyet`false`.
 
 ### Bu yöntem birleştirilmiş hücreli tablolar için işe yarar mı?  
- Evet, bu yöntem birleştirilmiş hücreli tablolar için işe yarar. Özellikler`AllowBreakAcrossPages` hücre birleşmesinden bağımsız olarak tüm satıra uygulanır.
+ Evet, bu yöntem birleştirilmiş hücreli tablolar için işe yarar. Mülkiyet`AllowBreakAcrossPages` hücre birleşmesinden bağımsız olarak tüm satıra uygulanır.
 
 ### Tablo başka bir tablonun içine yerleştirilmişse bu yöntem işe yarar mı?  
 Evet, iç içe geçmiş tablolara aynı şekilde erişebilir ve bunları değiştirebilirsiniz. Yuvalanmış tabloya dizinine veya diğer özelliklerine göre doğru bir şekilde başvuruda bulunduğunuzdan emin olun.

@@ -135,7 +135,7 @@ Igen, az Aspose.Words for Java segítségével nyomon követheti a meglévő Wor
 
 ### 4. Vannak-e licenckövetelmények az Aspose.Words for Java használatához?
 
- Igen, licencet kell szereznie az Aspose.Words for Java használatához projektjeiben. tudsz[itt szerezheti be a licencet](https://purchase.aspose.com/buy).
+ Igen, licencet kell szereznie az Aspose.Words for Java használatához projektjeiben. Tudod[itt szerezheti be a licencet](https://purchase.aspose.com/buy).
 
 ### 5. Hol találok támogatást az Aspose.Words for Java számára?
 

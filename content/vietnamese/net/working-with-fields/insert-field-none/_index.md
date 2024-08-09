@@ -9,7 +9,7 @@ url: /vi/net/working-with-fields/insert-field-none/
 ---
 ## Giới thiệu
 
-Bạn đã bao giờ cảm thấy choáng ngợp trước những công việc lặp đi lặp lại liên quan đến việc tạo và quản lý tài liệu chưa? Hãy tưởng tượng bạn có một cây đũa thần có thể tự động hóa những công việc nhàm chán đó, giúp bạn giải phóng thời gian cho những nỗ lực sáng tạo hơn. Vâng, bạn thật may mắn! Aspose.Words for .NET chính là cây đũa thần đó. Đó là một thư viện mạnh mẽ cho phép bạn thao tác các tài liệu Word một cách dễ dàng. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu, hướng dẫn này sẽ hướng dẫn bạn chi tiết về cách sử dụng Aspose.Words cho .NET, tập trung vào việc chèn các trường vào tài liệu của bạn. Sẵn sàng để đi sâu vào? Bắt đầu nào!
+Bạn đã bao giờ cảm thấy choáng ngợp trước những công việc lặp đi lặp lại liên quan đến việc tạo và quản lý tài liệu chưa? Hãy tưởng tượng bạn có một cây đũa thần có thể tự động hóa những công việc nhàm chán đó, giúp bạn giải phóng thời gian cho những nỗ lực sáng tạo hơn. Vâng, bạn thật may mắn! Aspose.Words for .NET chính là cây đũa thần đó. Đó là một thư viện mạnh mẽ cho phép bạn thao tác các tài liệu Word một cách dễ dàng. Cho dù bạn là nhà phát triển dày dạn kinh nghiệm hay mới bắt đầu, hướng dẫn này sẽ hướng dẫn bạn chi tiết về cách sử dụng Aspose.Words cho .NET, tập trung vào việc chèn các trường vào tài liệu của bạn. Sẵn sàng để đi sâu vào? Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 

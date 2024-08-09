@@ -82,7 +82,7 @@ No dude en explorar más características y funcionalidades que ofrece Aspose.Wo
 
 ### 1. ¿Puedo generar tablas con celdas fusionadas o tablas anidadas?
 
-Sí, con Aspose.Words para Java, puedes crear tablas con celdas fusionadas o incluso anidar tablas unas dentro de otras. Esto le permite diseñar diseños de tablas complejos y representar datos en varios formatos.
+Sí, con Aspose.Words para Java, puedes crear tablas con celdas fusionadas o incluso anidar tablas entre sí. Esto le permite diseñar diseños de tablas complejos y representar datos en varios formatos.
 
 ### 2. ¿Cómo puedo personalizar la apariencia de la tabla generada?
 

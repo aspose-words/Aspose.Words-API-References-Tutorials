@@ -1,6 +1,6 @@
 ---
-title: Kết hợp và sao chép tài liệu cho quy trình làm việc phức tạp
-linktitle: Kết hợp và sao chép tài liệu cho quy trình làm việc phức tạp
+title: Kết hợp và sao chép tài liệu cho quy trình công việc phức tạp
+linktitle: Kết hợp và sao chép tài liệu cho quy trình công việc phức tạp
 second_title: API quản lý tài liệu Python Aspose.Words
 description: Tìm hiểu cách kết hợp và sao chép tài liệu một cách hiệu quả bằng Aspose.Words cho Python. Hướng dẫn từng bước với mã nguồn để thao tác tài liệu. Nâng cao quy trình làm việc tài liệu của bạn ngay hôm nay!
 type: docs
@@ -75,7 +75,7 @@ for section in src_doc.sections:
 dst_doc.save("cloned_document.docx")
 ```
 
-## Kỹ thuật tiên tiến
+## Kỹ thuật nâng cao
 
 ### Thay thế văn bản
 

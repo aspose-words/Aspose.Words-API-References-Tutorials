@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 
 ## Conclusión
 
-¡Y ahí lo tienes! Con sólo unas pocas líneas de código, puede evitar que las tablas se divida en páginas de sus documentos de Word. Esta solución sencilla pero eficaz garantiza que sus tablas se mantengan limpias y profesionales, mejorando la legibilidad de sus documentos. Aspose.Words para .NET facilita el manejo de estos problemas de formato, permitiéndole concentrarse en crear contenido excelente.
+¡Y ahí lo tienes! Con solo unas pocas líneas de código, puede evitar que sus tablas se divida en páginas en sus documentos de Word. Esta solución sencilla pero eficaz garantiza que sus tablas se mantengan limpias y profesionales, mejorando la legibilidad de sus documentos. Aspose.Words para .NET facilita el manejo de estos problemas de formato, permitiéndole concentrarse en crear contenido excelente.
 
 ## Preguntas frecuentes
 

@@ -9,7 +9,7 @@ url: /cs/net/programming-with-charts/
 ---
 Výukové programy programování grafiky Aspose.Words for .NET nabízejí komplexní zdroj pro výuku, jak vytvářet a manipulovat s grafikou v dokumentech aplikace Word. Výukové programy vás provedou kroky pro přidávání grafů, přizpůsobení jejich vzhledu, úpravy dat a další. Ať už jste začátečník nebo zkušený vývojář, tyto výukové programy vám pomohou zvládnout grafické funkce v Aspose.Words.
 
-těchto výukových programech se naučíte vytvářet různé typy grafů, jako jsou sloupcové grafy, koláčové grafy, plošné grafy, spojnicové grafy atd. Dozvíte se také, jak přizpůsobit prvky grafu, jako jsou nadpisy, legendy, popisky dat a sekery. Výukové programy vám ukážou, jak manipulovat s daty grafu přidáním, úpravou nebo odstraněním datových řad.
+těchto výukových programech se naučíte vytvářet různé typy grafů, jako jsou sloupcové grafy, koláčové grafy, plošné grafy, spojnicové grafy atd. Dozvíte se také, jak přizpůsobit prvky grafu, jako jsou nadpisy, legendy, popisky dat a osy. Výukové programy vám ukážou, jak manipulovat s daty grafu přidáním, úpravou nebo odstraněním datových řad.
 
 Pomocí těchto výukových programů budete moci vylepšit své dokumenty Word přidáním vizuálně přitažlivé a informativní grafiky. Naučíte se, jak využít pokročilé grafické funkce v Aspose.Words pro .NET a efektivně je integrovat do vašich aplikací. Prozkoumejte tyto výukové programy a rozšiřte své grafické dovednosti v Aspose.Words.
 

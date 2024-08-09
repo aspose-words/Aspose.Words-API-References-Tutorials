@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-ooxmlsaveoptions/set-compression-level/
 ---
-## Úvod
+## Zavedení
 
 Jste připraveni ponořit se do světa komprese dokumentů s Aspose.Words pro .NET? Ať už chcete optimalizovat úložiště dokumentů nebo zrychlit dobu zpracování, nastavení úrovně komprese může znamenat obrovský rozdíl. V tomto tutoriálu projdeme procesem nastavení úrovně komprese pro dokument aplikace Word pomocí Aspose.Words for .NET. Na konci této příručky budete profesionálem ve vytváření štíhlejších a špinavějších dokumentů.
 
@@ -74,7 +74,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 Tady se děje kouzlo. Nastavíme úroveň komprese dokumentu.
 
- Vytvořte instanci`OoxmlSaveOptions` a nastavte úroveň komprese. The`CompressionLevel` vlastnost lze nastavit na různé úrovně jako např`Normal`, `Maximum`, `Fast` , a`SuperFast` . Pro tento příklad použijeme`SuperFast`.
+ Vytvořte instanci`OoxmlSaveOptions` a nastavte úroveň komprese. The`CompressionLevel` vlastnost lze nastavit na různé úrovně jako např`Normal`, `Maximum`, `Fast` a`SuperFast` . Pro tento příklad použijeme`SuperFast`.
 
 ```csharp
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions

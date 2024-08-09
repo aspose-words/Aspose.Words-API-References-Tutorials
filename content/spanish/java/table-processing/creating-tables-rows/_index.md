@@ -115,7 +115,7 @@ Sí, puede importar datos desde una base de datos y completar una tabla en su do
  Puede dar formato al texto dentro de las celdas de la tabla accediendo al`Run` objetos y aplicar formato según sea necesario. Por ejemplo, cambiar el tamaño o el estilo de fuente.
 
 ### ¿Puedo exportar el documento a diferentes formatos?
- Aspose.Words para Java le permite guardar su documento en varios formatos, incluidos DOCX, PDF, HTML y más. Utilizar el`Document.save` método para especificar el formato deseado.
+ Aspose.Words para Java le permite guardar su documento en varios formatos, incluidos DOCX, PDF, HTML y más. Utilice el`Document.save` método para especificar el formato deseado.
 
 ## Conclusión
 Crear tablas y filas en documentos usando Aspose.Words para Java es una capacidad poderosa para la automatización de documentos. Con el código fuente proporcionado y la orientación en esta guía completa, estará bien equipado para aprovechar el potencial de Aspose.Words para Java en sus aplicaciones Java. Ya sea que esté creando informes, documentos o presentaciones, la presentación de datos estructurados está a solo un fragmento de código de distancia.

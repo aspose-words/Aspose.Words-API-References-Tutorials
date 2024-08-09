@@ -17,7 +17,7 @@ V tomto podrobném průvodci prozkoumáme, jak ukládat dokumenty jako PDF pomoc
 Než začneme, ujistěte se, že máte splněny následující předpoklady:
 
 - Java Development Kit (JDK) nainstalovaný ve vašem systému.
--  Aspose.Words pro knihovnu Java. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/java/).
+-  Aspose.Words pro knihovnu Java. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/java/).
 
 ## Převod dokumentu do PDF
 

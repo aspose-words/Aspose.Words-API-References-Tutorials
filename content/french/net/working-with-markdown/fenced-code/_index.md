@@ -2,79 +2,110 @@
 title: Code clôturé
 linktitle: Code clôturé
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment utiliser la fonctionnalité de code isolé avec le guide étape par étape d'Aspose.Words for .NET.
+description: Découvrez comment ajouter du code isolé et des chaînes d'informations aux documents Word à l'aide d'Aspose.Words pour .NET. Guide étape par étape inclus. Améliorez vos compétences en matière de formatage de documents.
 type: docs
 weight: 10
 url: /fr/net/working-with-markdown/fenced-code/
 ---
+## Introduction
 
-Dans cet exemple, nous vous expliquerons comment utiliser la fonctionnalité de code isolé avec Aspose.Words pour .NET. le code clôturé est utilisé pour représenter des blocs de code avec un formatage spécifique.
+Salut, camarade codeur ! Aujourd'hui, nous plongeons dans le monde d'Aspose.Words pour .NET pour maîtriser l'art de l'ajout de code clôturé et de code clôturé avec des chaînes d'informations à vos documents Word. Imaginez votre document Word comme une toile et vous, l'artiste, êtes sur le point de peindre avec la précision d'un développeur chevronné. Avec Aspose.Words, vous avez le pouvoir d'améliorer par programmation vos documents avec des blocs de code structurés et formatés, faisant ainsi briller vos documents techniques avec professionnalisme et clarté.
 
-## Étape 1 : Utiliser un générateur de documents
+## Conditions préalables
 
-Tout d’abord, nous utiliserons un générateur de documents pour ajouter du contenu à notre document.
+Avant de passer au didacticiel, assurons-nous que vous disposez de tout ce dont vous avez besoin :
+
+- Connaissance de base de C# : Une compréhension générale de C# vous aidera à appréhender rapidement les concepts.
+-  Aspose.Words pour .NET : vous devez avoir installé Aspose.Words pour .NET. Si vous ne l'avez pas encore, prenez-le[ici](https://releases.aspose.com/words/net/).
+- Environnement de développement : Visual Studio ou tout autre IDE C# avec lequel vous êtes à l'aise.
+
+## Importer des espaces de noms
+
+Tout d’abord, vous devez importer les espaces de noms nécessaires. C'est comme rassembler tous vos outils avant de démarrer un projet.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Style;
+```
+
+Maintenant, décomposons le processus étape par étape.
+
+## Étape 1 : Configuration de votre projet
+
+Avant de pouvoir créer de superbes blocs de code formatés dans notre document Word, nous devons configurer un nouveau projet dans Visual Studio.
+
+1. Créer un nouveau projet : ouvrez Visual Studio et créez une nouvelle application console C#.
+2. Ajouter une référence Aspose.Words : installez Aspose.Words via NuGet Package Manager. Vous pouvez le faire en cliquant avec le bouton droit sur votre projet dans l'Explorateur de solutions, en sélectionnant « Gérer les packages NuGet » et en recherchant Aspose.Words.
+
+## Étape 2 : initialiser DocumentBuilder
+
+Maintenant que votre projet est configuré, initialisons DocumentBuilder, qui sera notre principal outil pour ajouter du contenu au document Word.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Étape 2 : Ajout d'un style pour le code clôturé
+## Étape 3 : Créer un style pour le code clôturé
 
- Nous ajouterons un style personnalisé pour le code clôturé en utilisant le`Styles.Add` méthode du`Document` objet. Dans cet exemple, nous créons un style appelé « FencedCode » pour le code clôturé.
+Pour ajouter du code clôturé, nous devons d’abord créer un style. Considérez cela comme définissant le thème de notre bloc de code.
 
 ```csharp
 Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");
-builder.ParagraphFormat.Style = fencedCode;
+fencedCode.Font.Name = "Courier New";
+fencedCode.Font.Size = 10;
+fencedCode.ParagraphFormat.LeftIndent = 20;
+fencedCode.ParagraphFormat.RightIndent = 20;
+fencedCode.ParagraphFormat.Shading.BackgroundPatternColor = Color.LightGray;
 ```
 
-## Étape 3 : Ajout de code clôturé sans informations
+## Étape 4 : ajouter du code clôturé au document
 
-Nous pouvons maintenant ajouter un bloc de code clôturé sans chaîne d'informations en utilisant le style personnalisé "FencedCode".
+Notre style étant prêt, nous pouvons maintenant ajouter un bloc de code clôturé au document.
 
 ```csharp
-builder.Writeln("This is an fenced code");
+builder.ParagraphFormat.Style = fencedCode;
+builder.Writeln("This is a fenced code block");
 ```
 
-## Étape 4 : Ajouter du code clôturé avec une chaîne d'informations
+## Étape 5 : Créer un style pour le code clôturé avec la chaîne d'informations
 
-Nous pouvons également ajouter un bloc de code clôturé avec une chaîne d'informations en utilisant un autre style personnalisé. Dans cet exemple, nous créons un style appelé "FencedCode.C#" pour représenter un bloc de code C#.
+Parfois, vous souhaiterez peut-être spécifier le langage de programmation ou ajouter des informations supplémentaires à votre bloc de code. Créons un style pour cela.
 
 ```csharp
 Style fencedCodeWithInfo = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode.C#");
-builder.ParagraphFormat.Style = fencedCodeWithInfo;
-builder.Writeln("This is a fenced code with info string");
+fencedCodeWithInfo.Font.Name = "Courier New";
+fencedCodeWithInfo.Font.Size = 10;
+fencedCodeWithInfo.ParagraphFormat.LeftIndent = 20;
+fencedCodeWithInfo.ParagraphFormat.RightIndent = 20;
+fencedCodeWithInfo.ParagraphFormat.Shading.BackgroundPatternColor = Color.LightGray;
 ```
 
-### Exemple de code source pour Fenced Code utilisant Aspose.Words pour .NET
+## Étape 6 : Ajouter un code clôturé avec une chaîne d'informations au document
+
+Maintenant, ajoutons un bloc de code clôturé avec une chaîne d'informations pour indiquer qu'il s'agit de code C#.
 
 ```csharp
-// Utilisez un générateur de documents pour ajouter du contenu au document.
-DocumentBuilder builder = new DocumentBuilder();
-
-Style fencedCode = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode");
-builder.ParagraphFormat.Style = fencedCode;
-builder.Writeln("This is an fenced code");
-
-Style fencedCodeWithInfo = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode.C#");
 builder.ParagraphFormat.Style = fencedCodeWithInfo;
-builder.Writeln("This is a fenced code with info string");
+builder.Writeln("This is a fenced code block with info string - C#");
 ```
 
-### FAQ
+## Conclusion
 
-#### Q : Qu'est-ce que le code délimité dans Markdown ?
+Félicitations! Vous venez d'ajouter des blocs de code clôturés et du code clôturé avec des chaînes d'informations à vos documents Word à l'aide d'Aspose.Words pour .NET. Ce n'est que la pointe de l'iceberg. Avec Aspose.Words, vous pouvez automatiser et améliorer le traitement de vos documents vers de nouveaux sommets. Continuez à explorer et bon codage !
 
-R : Le code délimité dans Markdown est une méthode de formatage utilisée pour afficher le code dans un document Markdown. Elle consiste à encadrer le code avec des délimiteurs spécifiques.
+## FAQ
 
-#### Q : Quels sont les avantages du code délimité dans Markdown ?
+### Qu’est-ce qu’Aspose.Words pour .NET ?
+Aspose.Words for .NET est une bibliothèque puissante qui permet aux développeurs de créer, manipuler et convertir des documents Word par programme.
 
-R : Le code délimité dans Markdown améliore la lisibilité du code et le rend plus facile à comprendre pour les lecteurs. Il permet également de conserver la coloration syntaxique dans certains éditeurs Markdown.
+### Puis-je utiliser Aspose.Words avec d’autres langages de programmation ?
+Aspose.Words prend principalement en charge les langages .NET, mais des versions sont disponibles pour Java, Python et d'autres langages.
 
-#### Q : Quelle est la différence entre le code délimité et le code indenté dans Markdown ?
+### L’utilisation d’Aspose.Words est-elle gratuite ?
+ Aspose.Words est un produit commercial, mais vous pouvez télécharger un essai gratuit[ici](https://releases.aspose.com/)pour découvrir ses fonctionnalités.
 
-R : Le code délimité utilise des délimiteurs spécifiques pour entourer le code, tandis que le code indenté implique l'indentation de chaque ligne de code avec des espaces ou des tabulations.
+### Comment puis-je obtenir de l'aide pour Aspose.Words ?
+ Vous pouvez obtenir le soutien de la communauté Aspose et des développeurs[ici](https://forum.aspose.com/c/words/8).
 
-#### Q : Le code délimité dans Markdown est-il pris en charge par tous les éditeurs Markdown ?
-
-R : La prise en charge du code délimité dans Markdown peut varier selon les éditeurs Markdown. Vérifiez la documentation spécifique de votre éditeur pour en être sûr.
-
+### Quelles autres fonctionnalités Aspose.Words offre-t-il ?
+Aspose.Words offre un large éventail de fonctionnalités, notamment la conversion de documents, la génération de documents basés sur des modèles, la création de rapports et bien plus encore.

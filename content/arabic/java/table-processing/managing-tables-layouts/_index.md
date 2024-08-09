@@ -18,7 +18,7 @@ url: /ar/java/table-processing/managing-tables-layouts/
 
 ## الشروع في العمل مع Aspose.Words لجافا
 
- لبدء رحلتنا، تحتاج إلى تثبيت Aspose.Words for Java وإعداده. إذا لم تقم بذلك بعد، يمكنك تنزيله من موقع Aspose[هنا](https://releases.aspose.com/words/java/). بمجرد تثبيت المكتبة، تصبح جاهزًا لتسخير إمكاناتها لإدارة الجداول والتخطيطات بفعالية.
+ لبدء رحلتنا، تحتاج إلى تثبيت Aspose.Words for Java وإعداده. إذا لم تقم بذلك بعد، يمكنك تنزيله من موقع Aspose[هنا](https://releases.aspose.com/words/java/). بمجرد تثبيت المكتبة، تصبح جاهزًا لتسخير إمكاناتها لإدارة الجداول والتخطيطات بشكل فعال.
 
 ## إدارة الجدول الأساسية
 

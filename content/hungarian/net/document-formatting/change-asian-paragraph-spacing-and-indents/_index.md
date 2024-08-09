@@ -9,7 +9,7 @@ url: /hu/net/document-formatting/change-asian-paragraph-spacing-and-indents/
 ---
 ## Bevezetés
 
-Halihó! Gondolkozott már azon, hogyan módosíthatja a szóközöket és a behúzásokat egy Word-dokumentumban, különösen, ha ázsiai tipográfiával foglalkozik? Ha olyan dokumentumokkal dolgozik, amelyek olyan nyelveket tartalmaznak, mint a kínai, a japán vagy a koreai, akkor észrevehette, hogy az alapértelmezett beállítások nem mindig vágják ki. Ne félj! Ebben az oktatóanyagban bemutatjuk, hogyan módosíthatja az ázsiai bekezdésközöket és a behúzásokat az Aspose.Words for .NET használatával. Könnyebb, mint gondolná, és sokkal professzionálisabbá teheti dokumentumait. Készen áll a dokumentum formázására? Kezdjük el!
+Szia! Gondolkozott már azon, hogyan módosíthatja a szóközöket és a behúzásokat egy Word-dokumentumban, különösen, ha ázsiai tipográfiával foglalkozik? Ha olyan dokumentumokkal dolgozik, amelyek olyan nyelveket tartalmaznak, mint a kínai, a japán vagy a koreai, akkor észrevehette, hogy az alapértelmezett beállítások nem mindig vágják ki. Ne félj! Ebben az oktatóanyagban bemutatjuk, hogyan módosíthatja az ázsiai bekezdésközöket és a behúzásokat az Aspose.Words for .NET használatával. Könnyebb, mint gondolná, és sokkal professzionálisabbá teheti dokumentumait. Készen áll a dokumentum formázására? Kezdjük is!
 
 ## Előfeltételek
 
@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Asian typography.docx");
 ```
 
- Ebben a lépésben megadjuk a dokumentumkönyvtárunk elérési útját, és betöltjük a dokumentumot a`Document` tárgy. Egyszerű, igaz?
+ Ebben a lépésben megadjuk a dokumentumkönyvtárunk elérési útját, és betöltjük a dokumentumot a`Document` objektum. Egyszerű, igaz?
 
 ## 2. lépés: Nyissa meg a bekezdésformátumot
 

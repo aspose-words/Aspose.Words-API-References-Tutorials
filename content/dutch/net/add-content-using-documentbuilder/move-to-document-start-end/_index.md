@@ -9,13 +9,13 @@ url: /nl/net/add-content-using-documentbuilder/move-to-document-start-end/
 ---
 ## Invoering
 
-Hallo daar! Dus je hebt met Word-documenten gewerkt en hebt een manier nodig om snel programmatisch naar het begin of einde van je document te springen, hè? Nou, je bent op de juiste plek! In deze handleiding duiken we in hoe u de cursor naar het begin of einde van een Word-document kunt verplaatsen met Aspose.Words voor .NET. Geloof me, tegen het einde navigeer je als een professional door je documenten. Laten we beginnen!
+Hé daar! Dus je hebt met Word-documenten gewerkt en hebt een manier nodig om snel programmatisch naar het begin of einde van je document te springen, hè? Nou, je bent op de juiste plek! In deze handleiding duiken we in hoe u de cursor naar het begin of einde van een Word-document kunt verplaatsen met Aspose.Words voor .NET. Geloof me, tegen het einde navigeer je als een professional door je documenten. Laten we beginnen!
 
 ## Vereisten
 
 Voordat we in de code duiken, zorgen we ervoor dat je alles hebt wat je nodig hebt:
 
-1.  Aspose.Words voor .NET: Dit is de magische tool die we gaan gebruiken. Jij kan[download het hier](https://releases.aspose.com/words/net/) of pak een[gratis proefperiode](https://releases.aspose.com/).
+1.  Aspose.Words voor .NET: Dit is de magische tool die we gaan gebruiken. Dat kan[download het hier](https://releases.aspose.com/words/net/) of pak een[gratis proefperiode](https://releases.aspose.com/).
 2. .NET-ontwikkelomgeving: Visual Studio is een solide keuze.
 3. Basiskennis van C#: Maak je geen zorgen, je hoeft geen tovenaar te zijn, maar een beetje bekendheid komt al een heel eind.
 
@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Hier maken we een exemplaar van`Document`En`DocumentBuilder` . Denken aan`Document` als uw lege Word-document en`DocumentBuilder` als uw pen.
+ Hier maken we een exemplaar van`Document`En`DocumentBuilder` . Denk aan`Document` als uw lege Word-document en`DocumentBuilder` als uw pen.
 
 ## Stap 2: Ga naar Document Start
 
@@ -63,7 +63,7 @@ builder.MoveToDocumentEnd();
 Console.WriteLine("\nThis is the end of the document.");
 ```
 
-`MoveToDocumentEnd()` plaatst de cursor helemaal aan het einde, zodat u meer inhoud kunt toevoegen. Makkelijk!
+`MoveToDocumentEnd()` plaatst de cursor helemaal aan het einde, zodat u meer inhoud kunt toevoegen. Gemakkelijk peasy!
 
 ## Conclusie
 
@@ -84,4 +84,4 @@ Absoluut! Hoewel deze handleiding C# gebruikt, kunt u Aspose.Words voor .NET geb
 Ja, Aspose.Words voor .NET ondersteunt zowel .NET Framework als .NET Core.
 
 ### Waar kan ik meer tutorials vinden over Aspose.Words voor .NET?  
-Je kunt de[documentatie](https://reference.aspose.com/words/net/) of bezoek hun[Helpforum](https://forum.aspose.com/c/words/8) voor meer hulp.
+Je kunt de[documentatie](https://reference.aspose.com/words/net/) of bezoek hun[ondersteuningsforum](https://forum.aspose.com/c/words/8) voor meer hulp.

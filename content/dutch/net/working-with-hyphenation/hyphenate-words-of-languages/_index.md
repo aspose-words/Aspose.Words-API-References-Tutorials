@@ -2,81 +2,76 @@
 title: Woorden van talen afbreken
 linktitle: Woorden van talen afbreken
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u woorden in verschillende talen in Word-documenten kunt afbreken met Aspose.Words voor .NET.
+description: Leer hoe u woorden in verschillende talen kunt afbreken met Aspose.Words voor .NET. Volg deze gedetailleerde, stapsgewijze handleiding om de leesbaarheid van uw document te verbeteren.
 type: docs
 weight: 10
 url: /nl/net/working-with-hyphenation/hyphenate-words-of-languages/
 ---
+## Invoering
 
-In deze stapsgewijze zelfstudie laten we u zien hoe u woorden in verschillende talen in Word-documenten kunt afbreken met behulp van Aspose.Words voor .NET. We leggen de meegeleverde C#-broncode uit en laten u zien hoe u deze in uw eigen projecten kunt implementeren.
+Hé daar! Heeft u ooit geprobeerd een document met lange, ononderbroken woorden te lezen en voelde u dat uw hersenen verkrampten? We zijn er allemaal geweest. Maar raad eens? Afbreking is uw redder! Met Aspose.Words voor .NET kunt u uw documenten er professioneel uit laten zien door woorden correct af te breken volgens de taalregels. Laten we eens kijken hoe u dit naadloos kunt bereiken.
 
-Zorg er om te beginnen voor dat Aspose.Words voor .NET is geïnstalleerd en geconfigureerd in uw ontwikkelomgeving. Download en installeer de bibliotheek vanaf de officiële site als u dat nog niet heeft gedaan.
+## Vereisten
 
-## Stap 1: Het documentobject initialiseren
+Voordat we beginnen, zorg ervoor dat u over het volgende beschikt:
 
- Initialiseer eerst de`Document` object door het pad op te geven naar uw brondocument dat tekst in verschillende talen bevat:
+-  Aspose.Words voor .NET geïnstalleerd. Als je dat niet hebt gedaan, pak het dan[hier](https://releases.aspose.com/words/net/).
+-  Een geldige licentie voor Aspose.Words. Je kunt er een kopen[hier](https://purchase.aspose.com/buy) of vraag een tijdelijke licentie aan[hier](https://purchase.aspose.com/temporary-license/).
+- Basiskennis van C# en .NET framework.
+- Een teksteditor of een IDE zoals Visual Studio.
+
+## Naamruimten importeren
+
+Laten we eerst de benodigde naamruimten importeren. Dit helpt bij het verkrijgen van toegang tot de klassen en methoden die nodig zijn voor woordafbreking.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Hyphenation;
+```
+
+## Stap 1: Laad uw document
+
+ U moet de map opgeven waarin uw document zich bevindt. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw document.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "German text.docx");
 ```
 
-## Stap 2: Afbrekingswoordenboeken opslaan
+## Stap 3: Registreer woordafbrekingswoordenboeken
 
-Sla vervolgens de woordafbrekingswoordenboeken op voor de verschillende talen die u wilt verwerken. In dit voorbeeld registreren we woordenboeken voor Amerikaans Engels en Zwitserduits:
+ Aspose.Words vereist woordafbrekingswoordenboeken voor verschillende talen. Zorg ervoor dat u de`.dic`bestanden voor de talen die u wilt afbreken. Registreer deze woordenboeken met behulp van de`Hyphenation.RegisterDictionary` methode.
 
 ```csharp
 Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
 Hyphenation.RegisterDictionary("de-CH", dataDir + "hyph_de_CH.dic");
-```
-
-Zorg ervoor dat u de juiste woordenboekbestanden in uw gegevensmap heeft.
-
-## Stap 3: Woorden verwerken door woordafbreking
-
-Nu kunt u afbreekfuncties gebruiken om woorden in verschillende talen te verwerken. Je kunt verschillende methoden gebruiken`Document` of`DocumentBuilder` afhankelijk van uw specifieke behoeften.
-
-```csharp
-// Voorbeeld: gebruik van de methode Afbreken van DocumentBuilder
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.Write("Example of text to hyphenate");
-builder.InsertHyphenation();
 ```
 
 ## Stap 4: Sla het document op
 
-Sla ten slotte het gewijzigde document op:
+Sla ten slotte het afgebroken document op in het gewenste formaat. Hier slaan we het op als PDF.
 
 ```csharp
 doc.Save(dataDir + "TreatmentByCesure.pdf");
 ```
 
-Dus ! U hebt met succes woorden verwerkt door ze in verschillende talen in een Word-document af te breken met Aspose.Words voor .NET.
+## Conclusie
 
-### Voorbeeldbroncode voor woordafbreking met Aspose.Words voor .NET
+En daar heb je het! Met slechts een paar regels code kunt u de leesbaarheid van uw documenten aanzienlijk verbeteren door woorden af te breken volgens taalspecifieke regels. Aspose.Words voor .NET maakt dit proces eenvoudig en efficiënt. Dus ga je gang en geef je lezers een vlottere leeservaring!
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document(dataDir + "German text.docx");
+## Veelgestelde vragen
 
-Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
-Hyphenation.RegisterDictionary("de-CH", dataDir + "hyph_de_CH.dic");
+### Wat is woordafbreking in documenten?
+Woordafbreking is het proces waarbij woorden aan het einde van regels worden afgebroken om de uitlijning en leesbaarheid van de tekst te verbeteren.
 
-doc.Save(dataDir + "TreatmentByCesure.pdf");
-```
+### Waar kan ik woordafbrekingswoordenboeken voor verschillende talen verkrijgen?
+U kunt afbreekwoordenboeken online vinden, vaak geleverd door taalinstituten of open-sourceprojecten.
 
-U kunt deze code gerust in uw eigen projecten gebruiken en aanpassen aan uw specifieke behoeften.
+### Kan ik Aspose.Words voor .NET gebruiken zonder licentie?
+ Ja, maar de versie zonder licentie heeft beperkingen. Het wordt aanbevolen om een[tijdelijke licentie](https://purchase.aspose.com/temporary-license) voor volledige functies.
 
-### Veelgestelde vragen
+### Is Aspose.Words voor .NET compatibel met .NET Core?
+Ja, Aspose.Words voor .NET ondersteunt zowel .NET Framework als .NET Core.
 
-#### Vraag: Hoe kan ik een woord in een specifieke taal syllabiseren met Aspose.Words?
-
- A: Om een woord in een specifieke taal te syllabiseren met Aspose.Words, kunt u de`Hyphenation` klasse en de`Hyphenate()` methode. Maak een exemplaar van de`Hyphenation` klasse die de gewenste taal specificeert en roep vervolgens de`Hyphenate()` methode waarbij het woord als argument wordt doorgegeven om te syllabiseren. Dit geeft je de lettergrepen van het woord in de opgegeven taal.
-
-#### Vraag: Welke taalcodes moet ik gebruiken om de syllabisatietaal in Aspose.Words te specificeren?
-
-A: Om de syllabisatietaal in Aspose.Words te specificeren, moet u de juiste taalcodes gebruiken. U kunt bijvoorbeeld "en" gebruiken voor Engels, "fr" voor Frans, "es" voor Spaans, "de" voor Duits, enz. Zie de Aspose.Words-documentatie voor een volledige lijst met ondersteunde taalcodes.
-
-#### Vraag: Werkt syllabisatie voor alle talen in Aspose.Words?
-
-A: Syllabisatie in Aspose.Words is afhankelijk van taalspecifieke syllabisatieregels. Hoewel Aspose.Words een breed scala aan talen ondersteunt, worden sommige talen mogelijk niet ondersteund of is syllabisering mogelijk niet beschikbaar voor deze talen. Bekijk de Aspose.Words-documentatie om erachter te komen welke talen worden ondersteund voor syllabisering.
+### Hoe ga ik om met meerdere talen in één document?
+kunt meerdere woordafbrekingswoordenboeken registreren, zoals weergegeven in het voorbeeld, en Aspose.Words zal deze dienovereenkomstig afhandelen.

@@ -15,7 +15,7 @@ Trabajar con documentos mediante programación puede resultar un poco desalentad
 
 Antes de profundizar en el código, asegurémonos de tener todo lo que necesita para comenzar:
 
-1.  Aspose.Words para .NET: deberá descargar e instalar Aspose.Words para .NET. Puedes encontrarlo[aquí](https://releases.aspose.com/words/net/).
+1.  Aspose.Words para .NET: deberá descargar e instalar Aspose.Words para .NET. puedes encontrarlo[aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: una instalación funcional de Visual Studio o cualquier otro IDE que admita el desarrollo .NET.
 3. Comprensión básica de C#: la familiaridad con la programación en C# será beneficiosa ya que la usaremos para nuestro ejemplo.
 
@@ -127,7 +127,7 @@ Sí, Aspose.Words para .NET admite varios lenguajes de programación que se ejec
  Sí, puedes descargar una prueba gratuita desde[aquí](https://releases.aspose.com/).
 
 ### ¿Cómo puedo obtener soporte para Aspose.Words para .NET?
- Puede obtener soporte visitando Aspose.Words[Foro de soporte](https://forum.aspose.com/c/words/8).
+ Puede obtener soporte visitando Aspose.Words[foro de soporte](https://forum.aspose.com/c/words/8).
 
 ### ¿Dónde puedo encontrar documentación más detallada sobre Aspose.Words para .NET?
  Se puede encontrar documentación detallada.[aquí](https://reference.aspose.com/words/net/).

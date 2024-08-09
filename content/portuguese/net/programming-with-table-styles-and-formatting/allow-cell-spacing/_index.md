@@ -81,7 +81,7 @@ Agora, vamos habilitar o espaçamento entre células para a tabela.
 
 ### Etapa 4.1: permitir espaçamento entre células
 
- Colocou o`AllowCellSpacing` propriedade da tabela para`true`.
+ Defina o`AllowCellSpacing` propriedade da tabela para`true`.
 
 ```csharp
 table.AllowCellSpacing = true;

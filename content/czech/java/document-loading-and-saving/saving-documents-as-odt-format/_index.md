@@ -18,7 +18,7 @@ Než začneme, ujistěte se, že máte splněny následující předpoklady:
 
 1. Java Development Environment: Ujistěte se, že máte v systému nainstalovanou sadu Java Development Kit (JDK).
 
-2.  Aspose.Words for Java: Stáhněte si a nainstalujte knihovnu Aspose.Words for Java. Odkaz ke stažení najdete[tady](https://releases.aspose.com/words/java/).
+2.  Aspose.Words for Java: Stáhněte si a nainstalujte knihovnu Aspose.Words for Java. Odkaz ke stažení najdete[zde](https://releases.aspose.com/words/java/).
 
 3. Ukázkový dokument: Mějte ukázkový dokument aplikace Word (např. "Document.docx"), který chcete převést do formátu ODT.
 
@@ -30,7 +30,7 @@ Nejprve načtěte dokument aplikace Word pomocí Aspose.Words for Java:
 Document doc = new Document("Your Directory Path" + "Document.docx");
 ```
 
- Tady,`"Your Directory Path"` by měl ukazovat na adresář, kde je umístěn váš dokument.
+ Zde,`"Your Directory Path"` by měl ukazovat na adresář, kde je umístěn váš dokument.
 
 ## Krok 2: Zadejte možnosti uložení ODT
 
@@ -49,7 +49,7 @@ Nyní je čas uložit dokument ve formátu ODT:
 doc.save("Your Directory Path" + "WorkingWithOdtSaveOptions.MeasureUnit.odt", saveOptions);
 ```
 
- Tady,`"Your Directory Path"` by měl ukazovat na adresář, kam chcete uložit převedený soubor ODT.
+ Zde,`"Your Directory Path"` by měl ukazovat na adresář, kam chcete uložit převedený soubor ODT.
 
 ## Kompletní zdrojový kód pro ukládání dokumentů ve formátu ODT v Aspose.Words pro Java
 

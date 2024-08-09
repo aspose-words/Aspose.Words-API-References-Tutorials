@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/set-outline-options/
 ---
-## Úvod
+## Zavedení
 
 Při práci s dokumenty, zejména pro profesionální nebo akademické účely, je efektivní organizace obsahu zásadní. Jedním ze způsobů, jak zlepšit použitelnost vašich dokumentů PDF, je nastavení možností obrysu. Obrysy neboli záložky umožňují uživatelům procházet dokumentem efektivně, stejně jako kapitoly v knize. V této příručce se ponoříme do toho, jak můžete nastavit tyto možnosti pomocí Aspose.Words pro .NET, aby byly vaše soubory PDF dobře organizované a uživatelsky přívětivé.
 
@@ -78,7 +78,7 @@ Tento řádek kódu uloží váš dokument aplikace Word jako PDF s použitím v
 
 ## Závěr
 
-Nastavení možností obrysu v dokumentu PDF může výrazně zlepšit jeho navigaci a uživatelům usnadnit nalezení a přístup k požadovaným sekcím. Pomocí Aspose.Words for .NET můžete tato nastavení snadno nakonfigurovat tak, aby vyhovovala vašim potřebám, a zajistit tak, aby vaše dokumenty PDF byly co nejpříjemnější.
+Nastavení možností obrysu v dokumentu PDF může výrazně zlepšit jeho navigaci a uživatelům usnadnit nalezení a přístup k požadovaným sekcím. Pomocí Aspose.Words for .NET můžete tato nastavení snadno nakonfigurovat tak, aby vyhovovala vašim potřebám, a zajistit tak, aby vaše dokumenty PDF byly uživatelsky co nejpříjemnější.
 
 ## FAQ
 

@@ -65,7 +65,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf", saveOptions
 
 ## Conclusion
 
-Et voila! En suivant ces étapes simples, vous pouvez réduire efficacement la taille de vos fichiers PDF en intégrant uniquement les sous-ensembles de polices nécessaires à l'aide d'Aspose.Words for .NET. Cela permet non seulement d'économiser de l'espace de stockage, mais garantit également des temps de chargement plus rapides et de meilleures performances, en particulier pour les documents comportant de nombreuses polices.
+Et voilà ! En suivant ces étapes simples, vous pouvez réduire efficacement la taille de vos fichiers PDF en intégrant uniquement les sous-ensembles de polices nécessaires à l'aide d'Aspose.Words for .NET. Cela permet non seulement d'économiser de l'espace de stockage, mais garantit également des temps de chargement plus rapides et de meilleures performances, en particulier pour les documents comportant de nombreuses polices.
 
 ## FAQ
 

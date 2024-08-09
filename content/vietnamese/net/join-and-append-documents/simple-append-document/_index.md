@@ -9,7 +9,7 @@ url: /vi/net/join-and-append-documents/simple-append-document/
 ---
 ## Giới thiệu
 
-Này! Bạn đã bao giờ thấy mình cần hợp nhất hai tài liệu Word một cách liền mạch chưa? Vâng, bạn thật may mắn! Hôm nay, chúng ta sẽ đi sâu vào thế giới của Aspose.Words dành cho .NET, một thư viện mạnh mẽ cho phép bạn thao tác các tài liệu Word theo chương trình. Cụ thể, chúng tôi sẽ tập trung vào cách nối tài liệu này vào tài liệu khác bằng một vài bước đơn giản. Cho dù bạn đang tạo báo cáo, kết hợp các phần của dự án hay chỉ đơn giản là hợp lý hóa việc quản lý tài liệu, hướng dẫn này sẽ giúp bạn. Vậy hãy bắt đầu!
+Này! Bạn đã bao giờ thấy mình cần hợp nhất hai tài liệu Word một cách liền mạch chưa? Vâng, bạn thật may mắn! Hôm nay, chúng ta sẽ đi sâu vào thế giới của Aspose.Words dành cho .NET, một thư viện mạnh mẽ cho phép bạn thao tác các tài liệu Word theo chương trình. Cụ thể, chúng tôi sẽ tập trung vào cách nối tài liệu này vào tài liệu khác bằng một vài bước đơn giản. Cho dù bạn đang tạo báo cáo, kết hợp các phần của dự án hay chỉ đơn giản là hợp lý hóa việc quản lý tài liệu, hướng dẫn này sẽ giúp bạn. Vì vậy, hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
@@ -80,7 +80,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
- Các`AppendDocument` phương thức có hai tham số:
+ các`AppendDocument` phương thức có hai tham số:
 1. Tài liệu nguồn: Tài liệu bạn muốn nối thêm.
 2.  Chế độ định dạng nhập: Tham số này cho biết cách xử lý định dạng. Ở đây, chúng tôi đang sử dụng`KeepSourceFormatting` để duy trì định dạng của tài liệu nguồn.
 
@@ -96,7 +96,7 @@ Dòng mã này lưu tài liệu đã hợp nhất bằng một tên mới, đả
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã nối thành công một tài liệu Word vào một tài liệu Word khác bằng Aspose.Words for .NET. Phương pháp đơn giản này có thể giúp bạn tiết kiệm rất nhiều thời gian và công sức, đặc biệt khi xử lý các tài liệu lớn hoặc định dạng phức tạp. Vì vậy, hãy tiếp tục và thử nó trong các dự án của bạn. Chúc mừng mã hóa!
+Và bạn có nó! Bạn đã nối thành công một tài liệu Word vào một tài liệu Word khác bằng Aspose.Words for .NET. Phương pháp đơn giản này có thể giúp bạn tiết kiệm rất nhiều thời gian và công sức, đặc biệt khi xử lý các tài liệu lớn hoặc định dạng phức tạp. Vì vậy, hãy tiếp tục và thử nó trong các dự án của bạn. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 
@@ -106,7 +106,7 @@ Và bạn có nó rồi đấy! Bạn đã nối thành công một tài liệu 
 
 ### Nếu tài liệu của tôi có định dạng khác thì sao?
 
- Bạn có thể kiểm soát cách xử lý định dạng bằng cách sử dụng`ImportFormatMode` tham số. Tùy chọn bao gồm`KeepSourceFormatting`, `UseDestinationStyles`, và hơn thế nữa.
+ Bạn có thể kiểm soát cách xử lý định dạng bằng cách sử dụng`ImportFormatMode` tham số. Tùy chọn bao gồm`KeepSourceFormatting`, `UseDestinationStyles`, và hơn thế nữa
 
 ### Aspose.Words có được sử dụng miễn phí không?
 

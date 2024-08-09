@@ -16,12 +16,12 @@ Bu eğitimleri takip ederek Aspose.Words for .NET kullanarak Word belgelerinizde
  ## Öğreticiler
 | Başlık | Tanım |
 | --- | --- |
-| [Düzeltmeleri Kabul Et](./accept-revisions/) | Aspose.Words for .NET kullanarak bir Word belgesindeki revizyonları nasıl kabul edeceğinizi öğrenin. |
-| [Kelime Türlerinin Revizyonunu Alın](./get-revision-types/) | Aspose.Words for .NET ile Word belgesindeki kelimelerin revizyon türlerini alın. |
-| [Revizyon Gruplarını Alma](./get-revision-groups/) | Aspose.Words for .NET ile revizyon grubu ayrıntılarını bir Word belgesinden alın. |
-| [Pdf Dosyasındaki Yorumları Kaldır](./remove-comments-in-pdf/) | Aspose.Words for .NET ile PDF dosyasındaki yorumları kaldırın. |
-| [Düzeltmeleri Balonlarda Göster](./show-revisions-in-balloons/) | Aspose.Words for .NET ile revizyonları balonlarda görüntüleyin. |
-| [Revizyon Grubu Detaylarını Al](./get-revision-group-details/) | Aspose.Words for .NET ile revizyon grubu ayrıntılarını bir Word belgesinden alın. |
-| [Revize Edilmiş Sürüme Erişim](./access-revised-version/) | Aspose.Words for .NET ile bir Word belgesinin gözden geçirilmiş versiyonuna erişin. |
-| [İzlenen Belgedeki Düğümü Taşı](./move-node-in-tracked-document/) | Aspose.Words for .NET ile izlenen bir belgedeki düğümleri taşıyın. |
-| [Şekil Revizyonu](./shape-revision/) | Aspose.Words for .NET ile bir Word belgesindeki şekilleri gözden geçirin. |
+| [Düzeltmeleri Kabul Et](./accept-revisions/) | Aspose.Words for .NET ile belge revizyonlarında ustalaşın. Değişiklikleri zahmetsizce izlemeyi, kabul etmeyi ve reddetmeyi öğrenin. Belge yönetimi becerilerinizi geliştirin. |
+| [Kelime Türlerinin Revizyonunu Alın](./get-revision-types/) |Aspose.Words for .NET kullanarak bir Word belgesindeki kelimelerin revizyon türlerini nasıl alacağınızı öğrenin. Bu adım adım kılavuz, belge revizyonlarını verimli bir şekilde gerçekleştirmenize yardımcı olur. |
+| [Revizyon Gruplarını Alma](./get-revision-groups/) | Bu kapsamlı adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerinden revizyon gruplarını nasıl alacağınızı öğrenin. Belge yönetimi için mükemmeldir. |
+| [Pdf Dosyasındaki Yorumları Kaldır](./remove-comments-in-pdf/) | Adım adım kılavuzumuzla Aspose.Words for .NET kullanarak PDF dosyasındaki yorumları nasıl kaldıracağınızı öğrenin. |
+| [Düzeltmeleri Balonlarda Göster](./show-revisions-in-balloons/) | Aspose.Words for .NET kullanarak balonlardaki revizyonları nasıl göstereceğinizi öğrenin. Bu ayrıntılı kılavuz, belge değişikliklerinizin açık ve düzenli olmasını sağlayarak her adımda size yol gösterir. |
+| [Revizyon Grubu Detaylarını Al](./get-revision-group-details/) | Bu adım adım kılavuzla Aspose.Words for .NET'i kullanarak Word belgelerindeki revizyon grubu ayrıntılarını kolayca alın. .NET geliştiricileri için mükemmel. |
+| [Revize Edilmiş Sürüme Erişim](./access-revised-version/) | Aspose.Words for .NET kullanarak bir belgenin revize edilmiş sürümüne nasıl erişeceğinizi ve onu nasıl görüntüleyeceğinizi öğrenin. Sorunsuz belge yönetimi için adım adım kılavuzumuzu izleyin. |
+| [İzlenen Belgedeki Düğümü Taşı](./move-node-in-tracked-document/) | Ayrıntılı, adım adım kılavuzumuzla Aspose.Words for .NET kullanarak izlenen bir Word belgesindeki düğümleri nasıl taşıyacağınızı öğrenin. Geliştiriciler için mükemmel. |
+| [Şekil Revizyonu](./shape-revision/) | Bu kapsamlı kılavuzla Aspose.Words for .NET kullanarak Word belgelerindeki şekil revizyonlarını nasıl gerçekleştireceğinizi öğrenin. Değişiklikleri izleme, şekil ekleme ve daha birçok konuda uzmanlaşın. |

@@ -15,7 +15,7 @@ La conversion de documents Word en images peut être incroyablement utile, que v
 
 Avant de commencer, vous aurez besoin de quelques éléments en place :
 
--  Aspose.Words pour .NET : assurez-vous que Aspose.Words pour .NET est installé. Tu peux[Télécharger les ici](https://releases.aspose.com/words/net/).
+-  Aspose.Words pour .NET : assurez-vous que Aspose.Words pour .NET est installé. Tu peux[téléchargez-le ici](https://releases.aspose.com/words/net/).
 - Environnement de développement : environnement de développement AC# comme Visual Studio.
 - Exemple de document : un document Word avec lequel travailler. Vous pouvez utiliser n'importe quel fichier .docx pour ce didacticiel.
 - Connaissances de base en C# : Familiarité avec la programmation C#.
@@ -66,7 +66,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options)
 
 ## Conclusion
 
-Et voila! Vous avez converti avec succès une page spécifique d'un document Word en image JPEG avec des paramètres personnalisés à l'aide d'Aspose.Words pour .NET. Ce processus peut être adapté à différents besoins, que vous prépariez des images pour un site Web, créiez des aperçus de documents, ou plus encore.
+Et voilà ! Vous avez converti avec succès une page spécifique d'un document Word en image JPEG avec des paramètres personnalisés à l'aide d'Aspose.Words pour .NET. Ce processus peut être adapté à différents besoins, que vous prépariez des images pour un site Web, créiez des aperçus de documents, ou plus encore.
 
 ## FAQ
 
@@ -77,7 +77,7 @@ Et voila! Vous avez converti avec succès une page spécifique d'un document Wor
  Vous pouvez ajuster la qualité du JPEG en utilisant le`JpegQuality` propriété dans`ImageSaveOptions`.
 
 ### Puis-je enregistrer dans d’autres formats d’image ?
- Oui, Aspose.Words prend en charge divers formats d'image tels que PNG, BMP et TIFF. Changer la`SaveFormat` dans`ImageSaveOptions` par conséquent.
+ Oui, Aspose.Words prend en charge divers formats d'image tels que PNG, BMP et TIFF. Changer le`SaveFormat` dans`ImageSaveOptions` par conséquent.
 
 ### Existe-t-il un moyen de prévisualiser l'image avant de l'enregistrer ?
 Vous devrez implémenter un mécanisme de prévisualisation séparément, car Aspose.Words ne fournit pas de fonctionnalité de prévisualisation intégrée.

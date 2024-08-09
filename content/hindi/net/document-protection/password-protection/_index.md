@@ -18,7 +18,7 @@ url: /hi/net/document-protection/password-protection/
 1.  Aspose.Words for .NET: सुनिश्चित करें कि आपके पास Aspose.Words for .NET लाइब्रेरी है। आप ऐसा कर सकते हैं[यहाँ पर डाउनलोड करो](https://releases.aspose.com/words/net/).
 2. विकास वातावरण: विजुअल स्टूडियो या कोई अन्य C# विकास वातावरण।
 3. बुनियादी C# ज्ञान: C# प्रोग्रामिंग की मूलभूत समझ।
-4.  Aspose लाइसेंस: यहाँ से लाइसेंस प्राप्त करें[यहाँ](https://purchase.aspose.com/buy)या का उपयोग करें[अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/) मूल्यांकन के लिए।
+4.  Aspose लाइसेंस: यहाँ से लाइसेंस प्राप्त करें[यहाँ](https://purchase.aspose.com/buy)या का उपयोग करें[अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/) मूल्यांकन हेतु.
 
 ## नामस्थान आयात करें
 

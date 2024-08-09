@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-htmlsaveoptions/export-resources/
 ---
-## Úvod
+## Zavedení
 
 Ahoj, kolegové tech nadšenci! Pokud jste někdy zjistili, že potřebujete převést dokumenty Wordu do HTML, jste na správném místě. Dnes se ponoříme do nádherného světa Aspose.Words pro .NET. Díky této výkonné knihovně je práce s dokumenty Wordu hračkou. V tomto tutoriálu si projdeme kroky k exportu zdrojů, jako jsou fonty a CSS, při ukládání dokumentu aplikace Word jako HTML pomocí Aspose.Words for .NET. Připoutejte se na zábavnou a poučnou jízdu!
 
@@ -19,7 +19,7 @@ Než se ponoříme do kódu, ujistěte se, že máte vše, co potřebujete, abys
 2.  Aspose.Words for .NET: Budete potřebovat knihovnu Aspose.Words for .NET. Pokud jej ještě nemáte, vyzkoušejte si bezplatnou zkušební verzi[Aspose Releases](https://releases.aspose.com/words/net/) nebo si jej kupte od[Obchod Aspose](https://purchase.aspose.com/buy).
 3. Základní znalost C#: Základní znalost C# vám pomůže sledovat příklady kódu.
 
-Máš to všechno? Skvělý! Přejděme k importu potřebných jmenných prostorů.
+Máš to všechno? Velký! Přejděme k importu potřebných jmenných prostorů.
 
 ## Importovat jmenné prostory
 
@@ -92,7 +92,7 @@ tady to máte! Úspěšně jste exportovali zdroje při ukládání dokumentu ap
 ## FAQ
 
 ### Mohu exportovat obrázky spolu s fonty a CSS?
- Ano můžeš! Aspose.Words for .NET podporuje také export obrázků. Jen se ujistěte, že jste nakonfigurovali`HtmlSaveOptions` podle toho.
+ Ano, můžete! Aspose.Words for .NET podporuje také export obrázků. Jen se ujistěte, že jste nakonfigurovali`HtmlSaveOptions` podle toho.
 
 ### Existuje způsob, jak vložit CSS namísto použití externí šablony stylů?
  Absolutně. Můžete nastavit`CssStyleSheetType` na`CssStyleSheetType.Embedded` pokud dáváte přednost vloženým stylům.

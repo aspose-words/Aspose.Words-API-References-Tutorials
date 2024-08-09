@@ -16,7 +16,7 @@ url: /ko/net/working-with-textboxes/break-a-link/
 
 시작하기 전에 필요한 모든 것이 갖추어져 있는지 확인하십시오.
 
-1.  .NET 라이브러리용 Aspose.Words: 최신 버전이 있는지 확인하세요.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+1.  .NET 라이브러리용 Aspose.Words: 최신 버전이 있는지 확인하세요.[여기서 다운로드하세요](https://releases.aspose.com/words/net/).
 2. 개발 환경: Visual Studio와 같은 .NET 호환 개발 환경입니다.
 3. 기본 C# 지식: 기본 C# 구문을 이해하면 도움이 됩니다.
 4. 샘플 Word 문서: 처음부터 작성하겠지만 샘플이 있으면 테스트하는 데 도움이 될 수 있습니다.
@@ -94,7 +94,7 @@ textBox.Next = null;
 
 ### 들어오는 링크 끊기
 
- 수신 링크를 끊으려면`Previous` 텍스트 상자가 존재하고 호출`BreakForwardLink` 그 위에:
+ 수신 링크를 끊으려면`Previous` 텍스트 상자가 존재하고 호출`BreakForwardLink` 그것에:
 
 ```csharp
 textBox.Previous?.BreakForwardLink();

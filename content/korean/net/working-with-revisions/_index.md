@@ -16,12 +16,12 @@ url: /ko/net/working-with-revisions/
  ## 튜토리얼
 | 제목 | 설명 |
 | --- | --- |
-| [개정판 수락](./accept-revisions/) | .NET용 Aspose.Words를 사용하여 Word 문서의 수정본을 수락하는 방법을 알아보세요. |
-| [단어의 개정 유형 가져오기](./get-revision-types/) | .NET용 Aspose.Words를 사용하여 Word 문서의 단어 개정 유형을 가져옵니다. |
-| [개정 그룹 가져오기](./get-revision-groups/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 개정 그룹 세부 정보를 가져옵니다. |
-| [PDF 파일에서 주석 제거](./remove-comments-in-pdf/) | .NET용 Aspose.Words를 사용하여 PDF 파일에서 주석을 제거합니다. |
-| [풍선에 개정 내용 표시](./show-revisions-in-balloons/) | .NET용 Aspose.Words를 사용하여 풍선에 수정본을 표시합니다. |
-| [개정 그룹 세부 정보 가져오기](./get-revision-group-details/) | .NET용 Aspose.Words를 사용하여 Word 문서에서 개정 그룹 세부 정보를 가져옵니다. |
-| [개정판 이용](./access-revised-version/) | .NET용 Aspose.Words를 사용하여 수정된 버전의 Word 문서에 액세스하세요. |
-| [추적된 문서에서 노드 이동](./move-node-in-tracked-document/) | .NET용 Aspose.Words를 사용하여 추적된 문서에서 노드를 이동하세요. |
-| [모양 개정](./shape-revision/) | .NET용 Aspose.Words를 사용하여 Word 문서의 모양을 수정하세요. |
+| [개정판 수락](./accept-revisions/) | .NET용 Aspose.Words를 사용한 마스터 문서 개정. 변경 사항을 쉽게 추적하고, 수락하고, 거부하는 방법을 알아보세요. 문서 관리 기술을 향상시키세요. |
+| [단어의 개정 유형 가져오기](./get-revision-types/) |.NET용 Aspose.Words를 사용하여 Word 문서에서 단어 수정 유형을 얻는 방법을 알아보세요. 이 단계별 가이드는 문서 개정을 효율적으로 처리하는 데 도움이 됩니다. |
+| [개정 그룹 가져오기](./get-revision-groups/) | 이 포괄적인 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서에서 개정 그룹을 검색하는 방법을 알아보세요. 문서 관리에 적합합니다. |
+| [PDF 파일에서 주석 제거](./remove-comments-in-pdf/) | 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 PDF 파일에서 주석을 제거하는 방법을 알아보세요. |
+| [풍선에 개정 내용 표시](./show-revisions-in-balloons/) | .NET용 Aspose.Words를 사용하여 풍선에 수정본을 표시하는 방법을 알아보세요. 이 세부 가이드는 각 단계를 안내하여 문서 변경 사항을 명확하고 체계적으로 정리합니다. |
+| [개정 그룹 세부 정보 가져오기](./get-revision-group-details/) | 이 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서의 개정 그룹 세부 정보를 쉽게 얻을 수 있습니다. .NET 개발자에게 적합합니다. |
+| [개정판 이용](./access-revised-version/) | .NET용 Aspose.Words를 사용하여 수정된 버전의 문서에 액세스하고 표시하는 방법을 알아보세요. 원활한 문서 관리를 위한 단계별 가이드를 따르세요. |
+| [추적된 문서에서 노드 이동](./move-node-in-tracked-document/) | 자세한 단계별 가이드를 통해 .NET용 Aspose.Words를 사용하여 추적된 Word 문서에서 노드를 이동하는 방법을 알아보세요. 개발자에게 적합합니다. |
+| [모양 개정](./shape-revision/) | 이 포괄적인 가이드를 통해 .NET용 Aspose.Words를 사용하여 Word 문서의 모양 개정을 처리하는 방법을 알아보세요. 변경 사항 추적, 도형 삽입 등을 마스터하세요. |

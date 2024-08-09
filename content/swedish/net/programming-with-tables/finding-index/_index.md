@@ -60,7 +60,7 @@ Console.WriteLine("\nTable index is " + tableIndex);
 
 ## Steg 4: Hitta indexet för den sista raden
 
- För att hitta den sista raden i tabellen använder vi`LastRow` fast egendom. Detta kan vara praktiskt när du behöver manipulera eller hämta data från den sista raden.
+ För att hitta den sista raden i tabellen använder vi`LastRow` egendom. Detta kan vara praktiskt när du behöver manipulera eller hämta data från den sista raden.
 
 ```csharp
 int rowIndex = table.IndexOf(table.LastRow);

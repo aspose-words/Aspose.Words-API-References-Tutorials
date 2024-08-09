@@ -10,7 +10,7 @@ url: /nl/net/programming-with-shapes/detect-smart-art-shape/
 
 ## Invoering
 
-Hallo daar! Heeft u ooit programmatisch met SmartArt in Word-documenten moeten werken? Of u nu rapporten automatiseert, dynamische documenten maakt of gewoon bezig bent met documentverwerking, Aspose.Words voor .NET heeft de oplossing voor u. In deze zelfstudie onderzoeken we hoe u SmartArt-vormen in Word-documenten kunt detecteren met Aspose.Words voor .NET. We zullen elke stap opsplitsen in een gedetailleerde, eenvoudig te volgen handleiding. Aan het einde van dit artikel kunt u moeiteloos SmartArt-vormen in elk Word-document identificeren!
+Hé daar! Heeft u ooit programmatisch met SmartArt in Word-documenten moeten werken? Of u nu rapporten automatiseert, dynamische documenten maakt of gewoon bezig bent met documentverwerking, Aspose.Words voor .NET heeft de oplossing voor u. In deze zelfstudie onderzoeken we hoe u SmartArt-vormen in Word-documenten kunt detecteren met Aspose.Words voor .NET. We zullen elke stap opsplitsen in een gedetailleerde, eenvoudig te volgen handleiding. Aan het einde van dit artikel kunt u moeiteloos SmartArt-vormen in elk Word-document identificeren!
 
 ## Vereisten
 
@@ -21,7 +21,7 @@ Voordat we ingaan op de details, zorgen we ervoor dat je alles hebt ingesteld:
 3. Visual Studio: Elke recente versie zou moeten werken, maar de nieuwste versie wordt aanbevolen.
 4. .NET Framework: zorg ervoor dat het op uw systeem is geïnstalleerd.
 
-klaar om te beginnen? Geweldig! Laten we er meteen in springen.
+Klaar om aan de slag te gaan? Geweldig! Laten we er meteen in springen.
 
 ## Naamruimten importeren
 
@@ -94,7 +94,7 @@ Aspose.Words voor .NET is een krachtige bibliotheek waarmee ontwikkelaars Word-d
 
 ### 3. Hoe detecteer ik andere soorten vormen in een document?
 
- U kunt de LINQ-query aanpassen om te controleren op andere eigenschappen of typen vormen. Verwijs naar de[documentatie](https://reference.aspose.com/words/net/) voor meer details.
+ U kunt de LINQ-query aanpassen om te controleren op andere eigenschappen of typen vormen. Raadpleeg de[documentatie](https://reference.aspose.com/words/net/) voor meer informatie.
 
 ### 4. Hoe krijg ik ondersteuning voor Aspose.Words voor .NET?
 

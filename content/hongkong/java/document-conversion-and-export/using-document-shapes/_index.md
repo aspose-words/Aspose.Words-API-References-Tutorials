@@ -20,7 +20,7 @@ url: /zh-hant/java/document-conversion-and-export/using-document-shapes/
 
 ### 插入組形狀
 
-A`GroupShape`允許您將多個形狀組合在一起。以下是建立和插入的方法`GroupShape`:
+一個`GroupShape`允許您將多個形狀組合在一起。以下是建立和插入的方法`GroupShape`:
 
 ```java
 Document doc = new Document();

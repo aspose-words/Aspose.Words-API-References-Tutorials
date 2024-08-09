@@ -151,4 +151,4 @@ Sim, as caixas de texto podem ser vinculadas em qualquer sequência, incluindo a
 Sim, você pode estilizar o texto em cada caixa de texto de forma independente, proporcionando flexibilidade no design e na formatação.
 
 ### Onde posso encontrar mais recursos sobre como trabalhar com caixas de texto no Aspose.Words?
- Para mais informações, confira o[Documentação Aspose.Words](https://reference.aspose.com/words/net/)e[Fórum de suporte](https://forum.aspose.com/c/words/8).
+ Para mais informações, confira o[Documentação Aspose.Words](https://reference.aspose.com/words/net/)e[fórum de suporte](https://forum.aspose.com/c/words/8).

@@ -54,7 +54,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- Przez ustawienie`DisplayDocTitle` Do`true`, instruujemy Aspose.Words, aby użył tytułu dokumentu na pasku tytułu okna pliku PDF.
+ Ustawiając`DisplayDocTitle` Do`true`, instruujemy Aspose.Words, aby użył tytułu dokumentu na pasku tytułu okna pliku PDF.
 
 ## Krok 3: Zapisz dokument jako plik PDF
 

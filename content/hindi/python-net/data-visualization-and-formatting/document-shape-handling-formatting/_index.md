@@ -89,7 +89,7 @@ Aspose.Words for Python की क्षमताओं की बदौलत, 
  आप Python के लिए Aspose.Words को यहाँ से डाउनलोड कर सकते हैं[लिंक को डाउनलोड करें](https://releases.aspose.com/words/python/).
 
 ### मैं Python के लिए Aspose.Words हेतु व्यापक दस्तावेज़ कहां पा सकता हूं?
- को देखें[प्रलेखन](https://reference.aspose.com/words/python-net/) पायथन के लिए Aspose.Words का उपयोग करने पर विस्तृत मार्गदर्शन के लिए।
+ देखें[प्रलेखन](https://reference.aspose.com/words/python-net/) पायथन के लिए Aspose.Words का उपयोग करने पर विस्तृत मार्गदर्शन के लिए।
 
 ### क्या मैं आकृतियों के रंग और शैली को अनुकूलित कर सकता हूँ?
 बिल्कुल! पायथन के लिए Aspose.Words आपके डिजाइन वरीयताओं से मेल खाने के लिए आकृतियों के रंग, आकार और शैलियों को अनुकूलित करने के विकल्प प्रदान करता है।

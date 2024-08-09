@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fields/delete-fields/
 ---
-## Úvod
+## Zavedení
 
 V oblasti zpracování a automatizace dokumentů vyniká Aspose.Words for .NET jako výkonná sada nástrojů pro vývojáře, kteří chtějí programově manipulovat, vytvářet a spravovat dokumenty Word. Tento výukový program vás provede procesem využití Aspose.Words for .NET k odstranění polí v dokumentech aplikace Word. Ať už jste zkušený vývojář nebo s vývojem .NET teprve začínáte, tato příručka rozebere kroky potřebné k efektivnímu odstranění polí z vašich dokumentů pomocí jasných, stručných příkladů a vysvětlení.
 
@@ -18,7 +18,7 @@ Než se ponoříte do tohoto tutoriálu, ujistěte se, že máte splněny násle
 ### Softwarové požadavky
 
 1. Visual Studio: Nainstalované a nakonfigurované ve vašem systému.
-2.  Aspose.Words for .NET: Staženo a integrováno do vašeho projektu Visual Studio. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+2.  Aspose.Words for .NET: Staženo a integrováno do vašeho projektu Visual Studio. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 3. Dokument aplikace Word: Připravte si ukázkový dokument aplikace Word (.docx) s poli, která chcete odebrat.
 
 ### Požadavky na znalosti

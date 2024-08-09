@@ -120,7 +120,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", save
 这`CssClassNamePrefix`属性适用于外部 CSS。对于内联 CSS，您需要采用不同的方法。
 
 ### 我如何包含其他 HTML 保存选项？
-您可以配置各种属性`HtmlSaveOptions`自定义 HTML 输出。检查[文档](https://reference.aspose.com/words/net/)更多细节。
+您可以配置各种属性`HtmlSaveOptions`自定义 HTML 输出。检查[文档](https://reference.aspose.com/words/net/)了解更多详情。
 
 ### 是否可以将 HTML 保存到流中？
 当然可以！你可以将流对象传递给`Save`方法。

@@ -93,7 +93,7 @@ Végül adjunk színt a cellánknak. Világoszöld színnel árnyékoljuk.
 firstCell.CellFormat.Shading.ForegroundPatternColor = Color.LightGreen;
 ```
 
- Ebben a lépésben a`Shading` tulajdonság beállításához a`ForegroundPatternColor` nak nek`Color.LightGreen`. Ez világoszöld háttérszínt ad a cellának, és kiemeli.
+ Ebben a lépésben a`Shading` tulajdonság beállításához a`ForegroundPatternColor` hogy`Color.LightGreen`. Ez világoszöld háttérszínt ad a cellának, és kiemeli.
 
 ## Következtetés
 

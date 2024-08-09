@@ -80,7 +80,7 @@ else
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã áp dụng thành công giấy phép từ một tệp trong Aspose.Words cho .NET. Đây là bước cần thiết để mở khóa tất cả các tính năng và chức năng mà Aspose.Words cung cấp. Với giấy phép đã được đặt, giờ đây bạn có thể tạo và thao tác với tài liệu Word mà không gặp bất kỳ hạn chế nào.
+Và bạn có nó! Bạn đã áp dụng thành công giấy phép từ một tệp trong Aspose.Words cho .NET. Đây là bước cần thiết để mở khóa tất cả các tính năng và chức năng mà Aspose.Words cung cấp. Với giấy phép đã được đặt, giờ đây bạn có thể tạo và thao tác với tài liệu Word mà không gặp bất kỳ hạn chế nào.
 
 ## Câu hỏi thường gặp
 

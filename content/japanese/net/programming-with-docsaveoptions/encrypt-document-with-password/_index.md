@@ -91,7 +91,7 @@ doc.Save(dataDir + "WorkingWithDocSaveOptions.EncryptDocumentWithPassword.docx",
 ## よくある質問
 
 ### 別のタイプの暗号化を使用できますか?
-はい、Aspose.Words for .NETはさまざまな暗号化方式をサポートしています。[ドキュメンテーション](https://reference.aspose.com/words/net/)詳細については。
+はい、Aspose.Words for .NETはさまざまな暗号化方式をサポートしています。[ドキュメント](https://reference.aspose.com/words/net/)詳細についてはこちらをご覧ください。
 
 ### ドキュメントのパスワードを忘れた場合はどうすればよいですか?
 残念ながら、パスワードを忘れると、ドキュメントにアクセスできなくなります。パスワードは必ず安全に保管してください。

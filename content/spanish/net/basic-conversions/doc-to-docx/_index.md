@@ -52,7 +52,7 @@ Compile y ejecute su aplicación para ejecutar el proceso de conversión. Asegú
 
 ## Paso 4: verificar la salida
 
-Verifique el directorio de salida del archivo DOCX convertido llamado "ConvertedDocument.docx". ¡Ha convertido con éxito un archivo DOC a DOCX usando Aspose.Words para .NET!
+Verifique el directorio de salida del archivo DOCX convertido llamado "ConvertedDocument.docx". ¡Ha convertido exitosamente un archivo DOC a DOCX usando Aspose.Words para .NET!
 
 ## Conclusión
 

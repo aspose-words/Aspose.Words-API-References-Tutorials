@@ -15,7 +15,7 @@ Này! Vậy là bạn đã có tài liệu Word tuyệt vời cần chữ ký đ
 
 Trước khi chúng ta bắt đầu, hãy đảm bảo bạn có những điều sau:
 
-1. Aspose.Words for .NET Library: Nếu bạn chưa có,[tải về tại đây](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET Library: Nếu bạn chưa có,[tải nó ở đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Visual Studio hoặc bất kỳ IDE tương thích C# nào.
 3. Tài liệu Word: Một tài liệu có dòng chữ ký (`Signature line.docx`).
 4.  Chứng chỉ số: A`.pfx` tập tin chứng chỉ (ví dụ,`morzal.pfx`).
@@ -93,7 +93,7 @@ DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã đặt thành công ID nhà cung cấp chữ ký trong tài liệu Word bằng Aspose.Words cho .NET. Quá trình này không chỉ bảo mật tài liệu của bạn mà còn đảm bảo chúng tuân thủ các tiêu chuẩn chữ ký số. Bây giờ, hãy tiếp tục và thử nó với tài liệu của bạn. Bạn có câu hỏi nào không? Hãy xem phần Câu hỏi thường gặp bên dưới hoặc nhấn vào[Diễn đàn hỗ trợ Aspose](https://forum.aspose.com/c/words/8).
+Và bạn có nó! Bạn đã đặt thành công ID nhà cung cấp chữ ký trong tài liệu Word bằng Aspose.Words cho .NET. Quá trình này không chỉ bảo mật tài liệu của bạn mà còn đảm bảo chúng tuân thủ các tiêu chuẩn chữ ký số. Bây giờ, hãy tiếp tục và thử nó với tài liệu của bạn. Bạn có câu hỏi nào không? Hãy xem phần Câu hỏi thường gặp bên dưới hoặc nhấn vào[Diễn đàn hỗ trợ Aspose](https://forum.aspose.com/c/words/8).
 
 ## Câu hỏi thường gặp
 

@@ -15,8 +15,8 @@ Deze tutorials bieden u een praktische, stapsgewijze benadering van woordenverwe
  ## Handleidingen
 | Titel | Beschrijving |
 | --- | --- |
-| [Ole-object invoegen in Word-document](./insert-ole-object/) | Leer hoe u een OLE-object invoegt in een Word-document met Aspose.Words voor .NET. |
-| [Voeg Ole-object in Word in met Ole-pakket](./insert-ole-object-with-ole-package/) | Leer hoe u een OLE-object in Word met een OLE-pakket invoegt in een document met behulp van Aspose.Words voor .NET. |
-| [Voeg Ole-object in Word-document in als pictogram](./insert-ole-object-as-icon/) | Leer hoe u een OLE-object in een Word-document invoegt als pictogram met Aspose.Words voor .NET. |
-| [Voeg Ole-object in als pictogram met behulp van Stream](./insert-ole-object-as-icon-using-stream/) | Leer hoe u een OLE-object als pictogram invoegt met behulp van een stream met Aspose.Words voor .NET. |
-| [Lees Active XControl-eigenschappen uit een Word-bestand](./read-active-xcontrol-properties/) | Lees eigenschappen van ActiveX-besturingselementen in een Word-bestand met Aspose.Words voor .NET. |
+| [Ole-object invoegen in Word-document](./insert-ole-object/) | Leer met deze stapsgewijze handleiding hoe u OLE-objecten in Word-documenten kunt invoegen met Aspose.Words voor .NET. Verbeter uw documenten met ingesloten inhoud. |
+| [Voeg Ole-object in Word in met Ole-pakket](./insert-ole-object-with-ole-package/) | Leer hoe u OLE-objecten in Word-documenten invoegt met Aspose.Words voor .NET. Volg onze gedetailleerde stapsgewijze handleiding om bestanden naadloos in te sluiten. |
+| [Voeg Ole-object in Word-document in als pictogram](./insert-ole-object-as-icon/) | Leer hoe u een OLE-object als pictogram invoegt in Word-documenten met Aspose.Words voor .NET. Volg onze stapsgewijze handleiding om uw documenten te verbeteren. |
+| [Voeg Ole-object in als pictogram met behulp van Stream](./insert-ole-object-as-icon-using-stream/) | Leer hoe u een OLE-object als pictogram invoegt met behulp van een stream met Aspose.Words voor .NET in deze gedetailleerde, stapsgewijze zelfstudie. |
+| [Lees Active XControl-eigenschappen uit een Word-bestand](./read-active-xcontrol-properties/) | Leer hoe u de eigenschappen van ActiveX-besturingselementen uit Word-bestanden kunt lezen met behulp van Aspose.Words voor .NET in een stapsgewijze handleiding. Verbeter uw vaardigheden op het gebied van documentautomatisering. |

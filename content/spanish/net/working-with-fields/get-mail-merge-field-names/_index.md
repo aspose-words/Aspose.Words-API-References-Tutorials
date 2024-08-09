@@ -92,7 +92,7 @@ Esta línea de código imprime el número total de campos de combinación de cor
 
 ¡Felicidades! Ahora ha aprendido cómo extraer nombres de campos de combinación de correspondencia de un documento de Word usando Aspose.Words para .NET. Esta técnica es una herramienta valiosa para gestionar y automatizar los flujos de trabajo de documentos, facilitando el manejo de contenido personalizado. Si sigue estos pasos, podrá identificar y trabajar eficazmente con campos de combinación de correspondencia en sus documentos.
 
- Si tiene alguna pregunta o necesita más ayuda, no dude en explorar la[Documentación de Aspose.Words](https://reference.aspose.com/words/net/) o únete a la[comunidad aspose](https://forum.aspose.com/c/words/8) para soporte. ¡Feliz codificación!
+ Si tiene alguna pregunta o necesita más ayuda, no dude en explorar la[Documentación de Aspose.Words](https://reference.aspose.com/words/net/) o únete a la[comunidad aspose](https://forum.aspose.com/c/words/8) para apoyo. ¡Feliz codificación!
 
 ## Preguntas frecuentes
 
@@ -106,7 +106,7 @@ Aspose.Words para .NET es una poderosa biblioteca que permite a los desarrollado
  Sí, puedes usarlo durante el período de prueba, pero para usarlo continuamente, necesitarás comprar una licencia en[Página de compra de Aspose](https://purchase.aspose.com/buy).
 
 ### ¿Qué debo hacer si tengo problemas con Aspose.Words?
- Para obtener soporte, puede visitar el[asponer foro](https://forum.aspose.com/c/words/8) donde puede hacer preguntas y obtener ayuda de la comunidad.
+ Para obtener soporte, puede visitar el[aspose foro](https://forum.aspose.com/c/words/8) donde puede hacer preguntas y obtener ayuda de la comunidad.
 
 ### ¿Cómo puedo obtener una licencia temporal para Aspose.Words?
  Puede solicitar una licencia temporal a través de[Página de licencia temporal de Aspose](https://purchase.aspose.com/temporary-license/).

@@ -10,13 +10,13 @@ url: /pl/net/programming-with-loadoptions/set-ms-word-version/
 ---
 ## Wstęp
 
-Czy kiedykolwiek musiałeś pracować z określonymi wersjami dokumentów MS Word, ale nie wiedziałeś, jak skonfigurować to programowo? Nie jesteś sam! W tym samouczku omówimy proces ustawiania wersji MS Word przy użyciu Aspose.Words dla .NET. To fantastyczne narzędzie, dzięki któremu manipulowanie dokumentami Worda jest dziecinnie proste. Zagłębimy się w najdrobniejsze szczegóły, opisując każdy krok, aby zapewnić płynne działanie. Gotowy żeby zacząć? Zanurzmy się!
+Czy kiedykolwiek musiałeś pracować z określonymi wersjami dokumentów MS Word, ale nie wiedziałeś, jak skonfigurować to programowo? Nie jesteś sam! W tym samouczku omówimy proces ustawiania wersji MS Word przy użyciu Aspose.Words dla .NET. To fantastyczne narzędzie, dzięki któremu manipulowanie dokumentami Worda jest dziecinnie proste. Zagłębimy się w najdrobniejsze szczegóły, opisując każdy krok, aby zapewnić płynne działanie. Gotowy, aby zacząć? Zanurzmy się!
 
 ## Warunki wstępne
 
 Zanim przejdziemy do kodu, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
--  Aspose.Words dla .NET: Upewnij się, że masz najnowszą wersję.[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+-  Aspose.Words dla .NET: Upewnij się, że masz najnowszą wersję.[Pobierz go tutaj](https://releases.aspose.com/words/net/).
 - Środowisko programistyczne: Możesz użyć Visual Studio lub dowolnego innego IDE kompatybilnego z .NET.
 - Podstawowa znajomość języka C#: Chociaż nie będzie to proste, konieczna jest podstawowa znajomość języka C#.
 - Przykładowy dokument: Przygotuj dokument programu Word w swoim katalogu dokumentów do celów testowych.

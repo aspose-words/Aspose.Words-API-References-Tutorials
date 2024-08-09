@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-rtfsaveoptions/saving-images-as-wmf/
 ---
-## Úvod
+## Zavedení
 
 Ahoj, kolegové vývojáři! Přemýšleli jste někdy nad tím, jak můžete uložit obrázky jako WMF (Windows Metafile) do dokumentů aplikace Word pomocí Aspose.Words for .NET? Tak to jste na správném místě! V tomto tutoriálu se ponoříme do světa Aspose.Words pro .NET a prozkoumáme, jak ukládat obrázky jako WMF. Je to velmi užitečné pro zachování kvality obrazu a zajištění kompatibility napříč různými platformami. Připraveni? Začněme!
 
@@ -15,7 +15,7 @@ Ahoj, kolegové vývojáři! Přemýšleli jste někdy nad tím, jak můžete ul
 
 Než se pustíme do kódu, ujistěte se, že máte vše, co potřebujete, abyste mohli hladce postupovat:
 
--  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Pokud ne, můžete si jej stáhnout z[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou aplikaci Aspose.Words for .NET. Pokud ne, můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/).
 - Vývojové prostředí: Měli byste mít nastavené vývojové prostředí C#, jako je Visual Studio.
 - Základní znalost C#: Základní znalost programování v C# bude přínosem.
 
@@ -64,7 +64,7 @@ doc.Save(dataDir + "WorkingWithRtfSaveOptions.SavingImagesAsWmf.rtf", saveOption
 
 ## Závěr
 
-tady to máte! Pomocí několika řádků kódu můžete uložit obrázky jako WMF do dokumentů aplikace Word pomocí Aspose.Words for .NET. To může být neuvěřitelně užitečné pro udržení vysoce kvalitních obrázků a zajištění kompatibility napříč různými platformami. Vyzkoušejte to a uvidíte rozdíl, který to dělá!
+tady to máte! Pomocí několika řádků kódu můžete uložit obrázky jako WMF do dokumentů aplikace Word pomocí Aspose.Words for .NET. To může být neuvěřitelně užitečné pro udržení vysoce kvalitních obrázků a zajištění kompatibility napříč různými platformami. Vyzkoušejte to a uvidíte rozdíl!
 
 ## FAQ
 
@@ -72,13 +72,13 @@ tady to máte! Pomocí několika řádků kódu můžete uložit obrázky jako W
 Ano, Aspose.Words for .NET podporuje různé formáty obrázků jako PNG, JPEG, BMP a další. Podle toho můžete nakonfigurovat možnosti uložení.
 
 ### Je k dispozici zkušební verze pro Aspose.Words pro .NET?
- Absolutně! Bezplatnou zkušební verzi si můžete stáhnout z[tady](https://releases.aspose.com/).
+ Absolutně! Bezplatnou zkušební verzi si můžete stáhnout z[zde](https://releases.aspose.com/).
 
 ### Potřebuji licenci k používání Aspose.Words pro .NET?
- Ano, Aspose.Words for .NET vyžaduje licenci. Můžete si jeden zakoupit[tady](https://purchase.aspose.com/buy) nebo získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
+ Ano, Aspose.Words for .NET vyžaduje licenci. Můžete si jeden zakoupit[zde](https://purchase.aspose.com/buy) nebo získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
 
 ### Mohu získat podporu, pokud narazím na problémy?
- Rozhodně! Aspose nabízí komplexní podporu prostřednictvím svých fór. Máte přístup k podpoře[tady](https://forum.aspose.com/c/words/8).
+ Rozhodně! Aspose nabízí komplexní podporu prostřednictvím svých fór. Máte přístup k podpoře[zde](https://forum.aspose.com/c/words/8).
 
 ### Existují nějaké specifické systémové požadavky pro Aspose.Words pro .NET?
 Aspose.Words for .NET je kompatibilní s .NET Framework, .NET Core a .NET Standard. Ujistěte se, že vaše vývojové prostředí splňuje tyto požadavky.

@@ -15,7 +15,7 @@ url: /es/net/programming-with-table-of-content/change-toc-tab-stops/
 
 Antes de comenzar, asegurémonos de que tiene todo lo que necesita:
 
-1.  Aspose.Words para .NET: puedes[descarguelo aqui](https://releases.aspose.com/words/net/).
+1.  Aspose.Words para .NET: puedes[descárgalo aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: Visual Studio o cualquier IDE compatible con C#.
 3. Un documento de Word: específicamente, uno que contiene una TOC.
 
@@ -99,7 +99,7 @@ Es como ajustar los muebles de su sala de estar hasta que se sientan bien. Estam
 doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 ```
 
-¡Y voilá! Su TOC ahora tiene las tabulaciones exactamente donde las desea.
+¡Y listo! Su TOC ahora tiene las tabulaciones exactamente donde las desea.
 
 ## Conclusión
 
@@ -108,7 +108,7 @@ Cambiar las tabulaciones de TOC en un documento de Word usando Aspose.Words para
 ## Preguntas frecuentes
 
 ### ¿Puedo modificar las tabulaciones para diferentes niveles de TOC por separado?
-¡Sí tu puedes! Simplemente verifique cada nivel de TOC específico (Toc1, Toc2, etc.) y ajústelo en consecuencia.
+¡Sí, puedes! Simplemente verifique cada nivel de TOC específico (Toc1, Toc2, etc.) y ajústelo en consecuencia.
 
 ### ¿Qué pasa si mi documento tiene múltiples TOC?
 El código busca todos los párrafos con estilo TOC, por lo que modificará todos los TOC presentes en el documento.
@@ -120,4 +120,4 @@ El código busca todos los párrafos con estilo TOC, por lo que modificará todo
 Sí, puede especificar diferentes alineaciones y estilos de guía al agregar una nueva tabulación.
 
 ### ¿Necesito una licencia para usar Aspose.Words para .NET?
- Sí, necesita una licencia válida para utilizar Aspose.Words para .NET más allá del período de prueba. Puedes conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/) o[compra uno](https://purchase.aspose.com/buy).
+ Sí, necesita una licencia válida para utilizar Aspose.Words para .NET más allá del período de prueba. Puedes conseguir un[licencia temporal](https://purchase.aspose.com/temporary-license/) o[comprar uno](https://purchase.aspose.com/buy).

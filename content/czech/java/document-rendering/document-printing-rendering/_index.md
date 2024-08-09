@@ -14,7 +14,7 @@ Aspose.Words for Java je knihovna bohatá na funkce, která umožňuje vývojá�
 
 ## Nastavení vývojového prostředí
 
- Než začneme, nastavíme naše vývojové prostředí. Ujistěte se, že máte v systému nainstalovanou Javu. Aspose.Words for Java si můžete stáhnout z webových stránek[tady](https://releases.aspose.com/words/java/).
+ Než začneme, nastavíme naše vývojové prostředí. Ujistěte se, že máte v systému nainstalovanou Javu. Aspose.Words for Java si můžete stáhnout z webových stránek[zde](https://releases.aspose.com/words/java/).
 
 ## Vytváření a načítání dokumentů
 
@@ -70,7 +70,7 @@ Aspose.Words for Java je výkonný nástroj pro tisk a vykreslování dokumentů
 
 ### Jak nastavím okraje stránky v Aspose.Words pro Java?
 
- Chcete-li nastavit okraje stránky, použijte`PageSetup` třída a její vlastnosti jako`setLeftMargin`, `setRightMargin`, `setTopMargin` , a`setBottomMargin`.
+ Chcete-li nastavit okraje stránky, použijte`PageSetup` třída a její vlastnosti jako`setLeftMargin`, `setRightMargin`, `setTopMargin` a`setBottomMargin`.
 
 ### Mohu vytisknout více kopií dokumentu?
 

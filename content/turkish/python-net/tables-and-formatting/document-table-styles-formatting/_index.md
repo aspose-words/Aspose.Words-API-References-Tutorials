@@ -51,7 +51,7 @@ Aspose.Words for Python'u kullanarak tablolar oluşturmak ve belgelere eklemek i
 
 3. Satırları Tekrarla: Benzer bir modeli izleyerek gerektiği gibi satır ve hücreler ekleyin.
 
-4.  Tabloyu Belgeye Ekle: Son olarak, tabloyu kullanarak belgeye ekleyin.`end_table` yöntem.
+4.  Tabloyu Belgeye Ekle: Son olarak, tabloyu kullanarak belgeye ekleyin.`end_table` Yöntem.
 
     ```python
     builder.end_table()

@@ -18,7 +18,7 @@ Než se ponoříme do světa automatizace dokumentů, ujistěte se, že máte sp
 
 - Vývojové prostředí Java: Ujistěte se, že máte ve svém systému nastavené vývojové prostředí Java.
 
--  Aspose.Words for Java: Měli byste mít nainstalovanou knihovnu Aspose.Words for Java. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/java/).
+-  Aspose.Words for Java: Měli byste mít nainstalovanou knihovnu Aspose.Words for Java. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/java/).
 
 - Vzorový dokument: Připravte vzorový dokument, jehož tisk chcete automatizovat.
 
@@ -91,4 +91,4 @@ Programový tisk dokumentů pomocí Aspose.Words for Java nevyžaduje zvláštn�
 
 ### Kde najdu další zdroje a dokumentaci k Aspose.Words for Java?
 
- Máte přístup ke komplexní dokumentaci a zdrojům pro Aspose.Words pro Java na[tady](https://reference.aspose.com/words/java/).
+ Máte přístup ke komplexní dokumentaci a zdrojům pro Aspose.Words pro Java na[zde](https://reference.aspose.com/words/java/).

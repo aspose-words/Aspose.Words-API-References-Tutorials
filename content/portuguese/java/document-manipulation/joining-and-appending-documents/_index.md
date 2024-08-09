@@ -140,4 +140,4 @@ Definir`importFormatOptions.setIgnoreTextBoxes(false)` para incluir caixas de te
 
 ### E se eu quiser vincular/desvincular cabeçalhos e rodapés entre documentos?
 
- Você pode vincular cabeçalhos e rodapés com`linkToPrevious(true)` ou desvinculá-los de`linkToPrevious(false)` como necessário.
+ Você pode vincular cabeçalhos e rodapés com`linkToPrevious(true)` ou desvinculá-los de`linkToPrevious(false)` conforme necessário.

@@ -14,7 +14,7 @@ Modern belgeler yalnızca içerdikleri içerikten ibaret değildir; görsel çek
 
 ## Ortamın Ayarlanması
 
- Etkileyici belge şekilleri oluşturmaya başlamadan önce Aspose.Words for Python'un kurulu olduğundan emin olun. adresinden indirebilirsiniz.[İndirme: {link](https://releases.aspose.com/words/python/) . Ek olarak, bkz.[dokümantasyon](https://reference.aspose.com/words/python-net/) Kütüphanenin kullanımına ilişkin kapsamlı rehberlik için.
+ Etkileyici belge şekilleri oluşturmaya başlamadan önce Aspose.Words for Python'un kurulu olduğundan emin olun. adresinden indirebilirsiniz.[indirme bağlantısı](https://releases.aspose.com/words/python/) . Ek olarak, bkz.[dokümantasyon](https://reference.aspose.com/words/python-net/) Kütüphanenin kullanımına ilişkin kapsamlı rehberlik için.
 
 ## Temel Belge Oluşturma
 
@@ -86,10 +86,10 @@ Aspose.Words for Python'un yetenekleri sayesinde, görsel olarak etkileyici belg
 ## SSS'ler
 
 ### Aspose.Words for Python'u nasıl indirebilirim?
- Aspose.Words for Python'u şu adresten indirebilirsiniz:[İndirme: {link](https://releases.aspose.com/words/python/).
+ Aspose.Words for Python'u şu adresten indirebilirsiniz:[indirme bağlantısı](https://releases.aspose.com/words/python/).
 
 ### Aspose.Words for Python'un kapsamlı belgelerini nerede bulabilirim?
- Bakın[dokümantasyon](https://reference.aspose.com/words/python-net/) Aspose.Words for Python'un kullanımına ilişkin ayrıntılı rehberlik için.
+ Şuraya bakın:[dokümantasyon](https://reference.aspose.com/words/python-net/) Aspose.Words for Python'un kullanımına ilişkin ayrıntılı rehberlik için.
 
 ### Şekillerin renklerini ve stillerini özelleştirebilir miyim?
 Kesinlikle! Aspose.Words for Python, şekillerin renklerini, boyutlarını ve stillerini tasarım tercihlerinize uyacak şekilde özelleştirme seçenekleri sunar.

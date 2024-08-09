@@ -2,7 +2,7 @@
 title: Använda OLE-objekt och ActiveX-kontroller i Aspose.Words för Java
 linktitle: Använda OLE-objekt och ActiveX-kontroller
 second_title: Aspose.Words Java Document Processing API
-description: Lär dig att använda OLE-objekt och ActiveX-kontroller i Aspose.Words för Java. Skapa interaktiva dokument med lätthet. Börja nu!
+description: Lär dig att använda OLE-objekt och ActiveX-kontroller i Aspose.Words för Java. Skapa interaktiva dokument med lätthet. Kom igång nu!
 type: docs
 weight: 21
 url: /sv/java/using-document-elements/using-ole-objects-and-activex/

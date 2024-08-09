@@ -138,7 +138,7 @@ Aspose.Words oferece uma avaliação gratuita, mas para todos os recursos e uso 
 
 ### Posso adicionar outros tipos de campos usando Aspose.Words?
 
- Sim, Aspose.Words oferece suporte a vários tipos de campo, incluindo data, hora, número da página e muito mais. Verifica a[documentação](https://reference.aspose.com/words/net/) para detalhes.
+ Sim, Aspose.Words oferece suporte a vários tipos de campo, incluindo data, hora, número da página e muito mais. Verifique o[documentação](https://reference.aspose.com/words/net/) para obter detalhes.
 
 ### Onde posso encontrar suporte se encontrar problemas?
 

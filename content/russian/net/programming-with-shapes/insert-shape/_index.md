@@ -115,7 +115,7 @@ doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
  Да, вы можете стилизовать фигуры, установив такие свойства, как`FillColor`, `StrokeColor` , и`StrokeWeight`.
 
 ### Как расположить фигуры относительно других элементов?
- Использовать`RelativeHorizontalPosition`и`RelativeVerticalPosition` свойства для расположения фигур относительно других элементов в документе.
+ Используйте`RelativeHorizontalPosition`и`RelativeVerticalPosition` свойства для расположения фигур относительно других элементов в документе.
 
 ### Могу ли я сгруппировать несколько фигур вместе?
  Да, Aspose.Words для .NET позволяет группировать фигуры с помощью`GroupShape` сорт.

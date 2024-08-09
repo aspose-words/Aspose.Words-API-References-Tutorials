@@ -33,7 +33,7 @@ Lassen Sie uns den Prozess in klare Schritte unterteilen:
 
 ## Schritt 1: Initialisieren Sie Aspose.Words Document und DocumentBuilder
 
- Initialisieren Sie zunächst ein neues Aspose.Words`Document` Objekt und ein`DocumentBuilder` arbeiten mit:
+ Initialisieren Sie zunächst ein neues Aspose.Words`Document` Objekt und ein`DocumentBuilder` zur Arbeit mit:
 
 ```csharp
 // Initialisieren Sie Document und DocumentBuilder
@@ -43,7 +43,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Schritt 2: Inhaltsverzeichnis einfügen
 
- Fügen Sie nun das Inhaltsverzeichnis ein mit dem`InsertTableOfContents` Methode:
+ Fügen Sie nun das Inhaltsverzeichnis ein mit dem`InsertTableOfContents` Verfahren:
 
 ```csharp
 // Inhaltsverzeichnis einfügen

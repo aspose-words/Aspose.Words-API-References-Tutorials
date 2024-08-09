@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-imagesaveoptions/get-tiff-page-range/
 ---
-## Úvod
+## Zavedení
 
 Ahoj, kolegové vývojáři! Už vás nebaví převádět konkrétní stránky vašich dokumentů Word na obrázky TIFF? Už nehledejte! S Aspose.Words for .NET můžete bez námahy převést určené rozsahy stránek vašich dokumentů Word do souborů TIFF. Tato výkonná knihovna zjednodušuje úkol a nabízí nespočet možností přizpůsobení přesně podle vašich potřeb. V tomto tutoriálu rozebereme proces krok za krokem a zajistíme, že tuto funkci zvládnete a bezproblémově ji integrujete do svých projektů.
 
@@ -15,7 +15,7 @@ Ahoj, kolegové vývojáři! Už vás nebaví převádět konkrétní stránky v
 
 Než se ponoříme do podrobných detailů, ujistěte se, že máte vše, co potřebujete k dodržení:
 
-1.  Aspose.Words for .NET Library: Pokud jste tak ještě neučinili, stáhněte si a nainstalujte nejnovější verzi z[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Pokud jste tak ještě neučinili, stáhněte si a nainstalujte nejnovější verzi z[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: IDE jako Visual Studio bude stačit.
 3. Základní znalost C#: Tento tutoriál předpokládá, že se vyznáte v programování v C#.
 4. Ukázkový dokument Word: Připravte si dokument Word, se kterým můžete experimentovat.

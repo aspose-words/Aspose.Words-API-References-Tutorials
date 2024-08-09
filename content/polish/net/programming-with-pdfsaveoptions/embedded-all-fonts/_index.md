@@ -84,7 +84,7 @@ I masz to! Udało Ci się osadzić czcionki w dokumencie PDF przy użyciu Aspose
 Osadzanie czcionek gwarantuje, że dokument będzie wyglądał tak samo na wszystkich urządzeniach, niezależnie od czcionek zainstalowanych w systemie przeglądarki.
 
 ### Czy mogę wybrać określone czcionki do osadzenia?
- Tak, możesz dostosować czcionki do osadzenia, używając różnych`PdfSaveOptions` nieruchomości.
+ Tak, możesz dostosować czcionki do osadzenia, używając różnych`PdfSaveOptions` właściwości.
 
 ### Czy osadzanie czcionek zwiększa rozmiar pliku?
 Tak, osadzanie czcionek może zwiększyć rozmiar pliku PDF, ale zapewnia spójny wygląd na różnych urządzeniach.

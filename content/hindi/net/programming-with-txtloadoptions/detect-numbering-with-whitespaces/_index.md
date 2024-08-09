@@ -15,7 +15,7 @@ url: /hi/net/programming-with-txtloadoptions/detect-numbering-with-whitespaces/
 
 आरंभ करने से पहले, सुनिश्चित करें कि आपके पास निम्नलिखित हैं:
 
--  .NET के लिए Aspose.Words: आप इसे यहाँ से डाउनलोड कर सकते हैं[एस्पोज रिलीज](https://releases.aspose.com/words/net/) पृष्ठ।
+-  .NET के लिए Aspose.Words: आप इसे यहाँ से डाउनलोड कर सकते हैं[एस्पोज रिलीज](https://releases.aspose.com/words/net/) पृष्ठ.
 - विकास वातावरण: विजुअल स्टूडियो या कोई अन्य C# IDE.
 - आपके मशीन पर .NET फ्रेमवर्क स्थापित है।
 - C# का बुनियादी ज्ञान: मूल बातें समझने से आपको उदाहरणों के साथ आगे बढ़ने में मदद मिलेगी।
@@ -107,5 +107,5 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.doc
 यह विशिष्ट सुविधा .NET के लिए Aspose.Words के अनुरूप बनाई गई है, जिसे Word दस्तावेज़ प्रसंस्करण को संभालने के लिए डिज़ाइन किया गया है।
 
 ### मैं .NET के लिए Aspose.Words हेतु अस्थायी लाइसेंस कैसे प्राप्त कर सकता हूँ?
- आप अस्थायी लाइसेंस प्राप्त कर सकते हैं[Aspose अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/) पृष्ठ।
+ आप अस्थायी लाइसेंस प्राप्त कर सकते हैं[Aspose अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/) पृष्ठ.
 

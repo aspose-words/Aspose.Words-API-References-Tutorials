@@ -17,7 +17,7 @@ Antes de profundizar en los pasos, asegúrese de tener lo siguiente listo:
 
 1.  Aspose.Words para .NET instalado: necesita la biblioteca Aspose.Words. Si aún no lo has instalado, puedes descargarlo desde[Descargas Aspose](https://releases.aspose.com/words/net/).
 
-2. Comprensión básica de C# y .NET: la familiaridad con la programación de C# y el marco .NET es esencial para seguir este tutorial.
+2. Comprensión básica de C# y .NET: la familiaridad con la programación en C# y el marco .NET es esencial para seguir este tutorial.
 
 3. Entorno de desarrollo: asegúrese de tener un IDE o un editor de texto para escribir y ejecutar su código C# (por ejemplo, Visual Studio).
 
@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-En esta sección, crearemos una lista de varios niveles con sangría con pestañas usando Aspose.Words para .NET. Sigue estos pasos:
+En esta sección, crearemos una lista de varios niveles con sangría con pestañas usando Aspose.Words para .NET. Siga estos pasos:
 
 ## Paso 1: configure su documento
 
@@ -118,7 +118,7 @@ En este tutorial, hemos explicado la creación de una lista de varios niveles co
 Sí, Aspose.Words permite la personalización de estilos de lista en varios niveles. Puede modificar las opciones de formato de la lista para lograr diferentes estilos.
 
 ### ¿Qué pasa si necesito aplicar viñetas en lugar de números?
- Utilizar el`ListFormat.ApplyBulletDefault()` método en lugar de`ApplyNumberDefault()` para crear una lista con viñetas.
+ Utilice el`ListFormat.ApplyBulletDefault()` método en lugar de`ApplyNumberDefault()` para crear una lista con viñetas.
 
 ### ¿Cómo puedo ajustar el tamaño del carácter de tabulación utilizado para la sangría?
  Desafortunadamente, el tamaño de la pestaña en`TxtSaveOptions`está arreglado. Para ajustar el tamaño de la sangría, es posible que necesite utilizar espacios o personalizar el formato de la lista directamente.

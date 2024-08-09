@@ -41,7 +41,7 @@ HtmlLoadOptions loadOptions = new HtmlLoadOptions();
 Document doc = new Document(new ByteArrayInputStream(HTML.getBytes(StandardCharsets.UTF_8)), loadOptions);
 ```
 
- Ebben a kódban létrehozunk egy HTML karakterláncot és használjuk`HtmlLoadOptions` annak megadásához, hogy a HTML-t strukturált dokumentumként kívánjuk kezelni. Ezután betöltjük a HTML tartalmat a`Document` tárgy.
+ Ebben a kódban létrehozunk egy HTML karakterláncot és használjuk`HtmlLoadOptions` annak megadásához, hogy a HTML-t strukturált dokumentumként kívánjuk kezelni. Ezután betöltjük a HTML tartalmat a`Document` objektum.
 
 ## Mentés Word dokumentumként
 

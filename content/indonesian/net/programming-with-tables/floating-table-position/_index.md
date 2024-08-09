@@ -15,7 +15,7 @@ Apakah Anda siap terjun ke dunia manipulasi posisi tabel di dokumen Word menggun
 
 Sebelum kita memulai perjalanan yang mengasyikkan ini, pastikan kita memiliki semua yang kita butuhkan:
 
-1. Aspose.Words untuk .NET Library: Pastikan Anda memiliki versi terbaru. Jika tidak,[Unduh di sini](https://releases.aspose.com/words/net/).
+1. Aspose.Words untuk .NET Library: Pastikan Anda memiliki versi terbaru. Jika tidak,[unduh di sini](https://releases.aspose.com/words/net/).
 2. .NET Framework: Pastikan lingkungan pengembangan Anda diatur dengan .NET.
 3. Lingkungan Pengembangan: Visual Studio atau IDE pilihan lainnya.
 4. Dokumen Word: Siapkan dokumen Word yang berisi tabel.

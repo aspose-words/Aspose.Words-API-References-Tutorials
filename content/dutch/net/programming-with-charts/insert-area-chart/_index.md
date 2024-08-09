@@ -86,7 +86,7 @@ new double[] { 32, 32, 28, 12, 15 });
 
 In deze stap voegen we een reeks toe met de naam "Aspose Series 1" met een reeks datums en bijbehorende waarden.
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Ten slotte slaan we ons document op met het ingevoegde vlakdiagram.
 

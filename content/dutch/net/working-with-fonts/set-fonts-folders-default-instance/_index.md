@@ -2,74 +2,93 @@
 title: Stel de standaardinstantie voor lettertypenmappen in
 linktitle: Stel de standaardinstantie voor lettertypenmappen in
 second_title: Aspose.Words-API voor documentverwerking
-description: Stapsgewijze handleiding voor het instellen van de standaardlettertypemap bij het renderen van een document met Aspose.Words voor .NET.
+description: Leer hoe u lettertypemappen instelt voor de standaardinstantie in Aspose.Words voor .NET met deze stapsgewijze zelfstudie. Pas uw Word-documenten moeiteloos aan.
 type: docs
 weight: 10
 url: /nl/net/working-with-fonts/set-fonts-folders-default-instance/
 ---
+## Invoering
 
-In deze zelfstudie leiden we u stapsgewijs door het proces om de standaardlettertypemap in te stellen bij het renderen van een document met Aspose.Words voor .NET. We leggen de gebundelde C#-broncode uit en bieden u een uitgebreide handleiding om u te helpen deze functie te begrijpen en in uw eigen projecten te implementeren. Aan het einde van deze zelfstudie weet u hoe u de standaardlettertypemap kunt instellen die u wilt gebruiken bij het renderen van uw documenten met Aspose.Words voor .NET.
+Hallo daar, mede-codeur! Als u met Word-documenten in .NET werkt, weet u waarschijnlijk hoe belangrijk het is dat uw lettertypen precies goed zijn. Vandaag gaan we dieper in op het instellen van lettertypemappen voor de standaardinstantie met behulp van Aspose.Words voor .NET. Stelt u zich eens voor dat u al uw aangepaste lettertypen binnen handbereik heeft, zodat uw documenten er precies zo uitzien zoals u ze voor ogen heeft. Klinkt geweldig, toch? Laten we beginnen!
 
-## Stap 1: Definieer de documentmap
-Eerst moet u het pad naar uw documentenmap instellen. Dit is de locatie waar u uw bewerkte, gerenderde document wilt opslaan. Vervang "UW DOCUMENTENDIRECTORY" door het juiste pad.
+## Vereisten
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Voordat we ingaan op de details, moeten we ervoor zorgen dat je alles hebt wat je nodig hebt:
+-  Aspose.Words voor .NET: Zorg ervoor dat de bibliotheek is geïnstalleerd. Zo niet, dan kan dat[download het hier](https://releases.aspose.com/words/net/).
+- Ontwikkelomgeving: Visual Studio of een andere .NET-compatibele IDE.
+- Basiskennis van C#: U moet vertrouwd zijn met programmeren in C#.
+- Lettertypenmap: een map met uw aangepaste lettertypen.
 
-## Stap 2: Stel de standaardlettertypemap in
- Vervolgens kunt u de standaardlettertypemap instellen met behulp van de`FontSettings.DefaultInstance` klasse en de`SetFontsFolder()`methode. Geef het pad op naar de map met lettertypen die u als standaardmap wilt gebruiken.
+## Naamruimten importeren
 
-```csharp
-FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);
-```
-
-## Stap 3: Laad het document dat u wilt renderen
- Nu kunt u het document laden om te renderen met behulp van de`Document` klas. Zorg ervoor dat u het juiste documentpad opgeeft.
+Laten we eerst de benodigde naamruimten importeren. Dit helpt bij het verkrijgen van toegang tot de klassen en methoden die nodig zijn voor het instellen van de map met lettertypen.
 
 ```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Stap 4: Sla het gerenderde document op
- Ten slotte kunt u het gerenderde document opslaan in een bestand met behulp van de`Save()` werkwijze van de`Document` klas. Zorg ervoor dat u het juiste pad en de juiste bestandsnaam opgeeft.
+Laten we het proces opsplitsen in eenvoudige, verteerbare stappen.
 
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersDefaultInstance.pdf");
-```
+## Stap 1: Definieer de gegevensdirectory
 
-### Voorbeeldbroncode voor Set Fonts Folders Default Instance met Aspose.Words voor .NET 
+Elke geweldige reis begint met een enkele stap, en die van ons begint met het definiëren van de directory waarin uw document is opgeslagen. Dit is waar Aspose.Words naar uw Word-document zoekt.
 
 ```csharp
 // Pad naar uw documentmap
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+ Hier, vervang`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw documentmap. Dit is waar uw brondocument zich bevindt en waar de uitvoer wordt opgeslagen.
+
+## Stap 2: Stel de map Lettertypen in
+
+ Laten we Aspose.Words nu vertellen waar u uw aangepaste lettertypen kunt vinden. Dit wordt gedaan door de map Fonts in te stellen met behulp van de`FontSettings.DefaultInstance.SetFontsFolder` methode.
+
+```csharp
 FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);
+```
+
+ In deze lijn,`"C:\\MyFonts\\"` is het pad naar uw map met aangepaste lettertypen. De tweede parameter,`true`, geeft aan dat de lettertypen in deze map recursief moeten worden gescand.
+
+## Stap 3: Laad uw document
+
+ Nu de map met lettertypen is ingesteld, is de volgende stap het laden van uw Word-document in Aspose.Words. Dit gebeurt met behulp van de`Document` klas.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+ Hier,`dataDir + "Rendering.docx"` verwijst naar het volledige pad van uw Word-document. Zorg ervoor dat uw document zich in de opgegeven map bevindt.
+
+## Stap 4: Sla het document op
+
+De laatste stap is het opslaan van uw document nadat u de map met lettertypen hebt ingesteld. Dit zorgt ervoor dat uw aangepaste lettertypen correct worden toegepast in de uitvoer.
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersDefaultInstance.pdf");
 ```
 
+Deze regel slaat uw document op als een PDF met de aangepaste lettertypen toegepast. Het uitvoerbestand bevindt zich in dezelfde map als uw brondocument.
+
 ## Conclusie
-In deze zelfstudie hebben we geleerd hoe u de standaardlettertypemap kunt instellen bij het renderen van een document met Aspose.Words voor .NET. Door deze stapsgewijze handleiding te volgen, kunt u eenvoudig opgeven welke map met lettertypen u als standaardmap wilt gebruiken bij het renderen van uw documenten. Aspose.Words biedt een krachtige en flexibele API voor woordenverwerking met lettertypen in uw documenten. Met deze kennis kunt u de lettertypebronnen die worden gebruikt bij het renderen van uw documenten beheren en aanpassen aan uw specifieke behoeften.
 
-### Veelgestelde vragen
+En daar heb je het! Het instellen van lettertypemappen voor de standaardinstantie in Aspose.Words voor .NET is een fluitje van een cent als u het in eenvoudige stappen opsplitst. Door deze handleiding te volgen, kunt u ervoor zorgen dat uw Word-documenten er precies zo uitzien als u wilt, met al uw aangepaste lettertypen. Dus ga uw gang, probeer het eens en laat uw documenten schitteren!
 
-#### Vraag: Hoe kan ik standaard lettertypemappen instellen in Aspose.Words?
+## Veelgestelde vragen
 
- A: Om standaardlettertypemappen in Aspose.Words in te stellen, moet u de`Fonts` klasse en de`SetFontsFolders` methode om aangepaste lettertypemaplocaties op te geven.
+### Kan ik meerdere lettertypemappen instellen?
+ Ja, u kunt meerdere lettertypemappen instellen met behulp van de`SetFontsFolders` methode die een array van mappaden accepteert.
 
-#### Vraag: Heeft het instellen van standaardlettertypemappen invloed op alle Word-documenten die worden verwerkt met Aspose.Words?
+### Welke bestandsformaten ondersteunt Aspose.Words voor het opslaan van documenten?
+Aspose.Words ondersteunt verschillende formaten, waaronder DOCX, PDF, HTML, EPUB en meer.
 
-A: Ja, het instellen van standaardlettertypemappen is van invloed op alle Word-documenten die worden verwerkt met Aspose.Words. Nadat u de standaardlettertypenmappen hebt ingesteld, gebruikt Aspose.Words deze locaties om naar lettertypen in alle documenten te zoeken.
+### Is het mogelijk om online lettertypen te gebruiken in Aspose.Words?
+Nee, Aspose.Words ondersteunt momenteel alleen lokale lettertypebestanden.
 
-#### Vraag: Kan ik meerdere standaardlettertypemappen instellen in Aspose.Words?
+### Hoe kan ik ervoor zorgen dat mijn aangepaste lettertypen in de opgeslagen PDF worden ingesloten?
+ Door het instellen van de`FontSettings` correct en zorgt ervoor dat de lettertypen beschikbaar zijn, Aspose.Words zal ze insluiten in de PDF-uitvoer.
 
- A: Ja, u kunt meerdere standaardlettertypemappen instellen in Aspose.Words. U hoeft alleen maar de locaties van aangepaste lettertypemappen op te geven met behulp van de`SetFontsFolders` werkwijze van de`Fonts` klas.
-
-#### Vraag: Hoe kan ik de standaardlettertypemappen controleren die momenteel zijn ingesteld in Aspose.Words?
-
- A: Om de standaardlettertypemappen te controleren die momenteel zijn gedefinieerd in Aspose.Words, kunt u de`GetFolders` werkwijze van de`Fonts` class om de locaties van de geconfigureerde lettertypemappen op te halen.
-
-#### Vraag: Kan ik door het instellen van standaardlettertypemappen aangepaste lettertypen gebruiken in mijn Word-documenten?
-
-A: Ja, door standaard lettertypemappen in te stellen, kunt u aangepaste lettertypen gebruiken in uw Word-documenten. U hoeft alleen maar de lettertypen in de opgegeven mappen te plaatsen en Aspose.Words zal ze gebruiken bij het genereren of manipuleren van de documenten.
+### Wat gebeurt er als een lettertype niet in de opgegeven map wordt gevonden?
+Aspose.Words gebruikt een fallback-lettertype als het opgegeven lettertype niet wordt gevonden.

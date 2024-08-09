@@ -99,4 +99,4 @@ Meskipun Anda dapat menggunakan Aspose.Words tanpa lisensi, beberapa fitur lanju
  Ya, Anda dapat menyesuaikan margin dan pengaturan lainnya untuk bagian yang berbeda menggunakan`Section` kelas.
 
 ### Fitur lain apa yang ditawarkan Aspose.Words?
- Aspose.Words mendukung berbagai fitur termasuk konversi dokumen, penggabungan surat, dan opsi pemformatan ekstensif. Periksalah[dokumentasi](https://reference.aspose.com/words/net/) untuk lebih jelasnya.
+ Aspose.Words mendukung berbagai fitur termasuk konversi dokumen, penggabungan surat, dan opsi pemformatan ekstensif. Periksa[dokumentasi](https://reference.aspose.com/words/net/) untuk lebih jelasnya.

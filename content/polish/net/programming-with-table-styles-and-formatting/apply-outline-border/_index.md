@@ -116,7 +116,7 @@ Dzięki tym umiejętnościom możesz ulepszyć wizualną prezentację swoich tab
 
 ## Często zadawane pytania
 
-### Czy mogę zastosować różne style do każdej krawędzi stołu?  
+### Czy mogę zastosować różne style do każdej krawędzi tabeli?  
  Tak, możesz zastosować różne style i kolory do każdej ramki, dostosowując parametry w pliku`SetBorder` metoda.
 
 ### Jak mogę zmienić szerokość obramowania?  

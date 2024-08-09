@@ -73,7 +73,7 @@ Därefter ställer vi in dokumentet på skrivskyddat. Detta säkerställer att i
 
 ## Steg 4: Skapa redigerbara intervall
 
-Det är här magin händer. Vi kommer att skapa avsnitt i dokumentet som kan redigeras trots det övergripande skrivskyddet.
+Här händer magin. Vi kommer att skapa avsnitt i dokumentet som kan redigeras trots det övergripande skrivskyddet.
 
 1. Starta redigerbart intervall: Definiera början på det redigerbara intervallet.
    ```csharp
@@ -114,7 +114,7 @@ Slutligen, låt oss spara dokumentet med tillämpat skydd och redigerbara region
 
 Och där har du det! Du har framgångsrikt skapat obegränsade redigerbara regioner i ett Word-dokument med Aspose.Words för .NET. Den här funktionen är otroligt användbar för samarbetsmiljöer där vissa delar av ett dokument behöver förbli oförändrade medan andra kan redigeras. 
 
- Experimentera med mer komplexa scenarier och olika skyddsnivåer för att få ut det mesta av Aspose.Words. Om du har några frågor eller stöter på problem, tveka inte att kolla in[dokumentation](https://reference.aspose.com/words/net/) eller nå ut till[Stöd](https://forum.aspose.com/c/words/8).
+ Experimentera med mer komplexa scenarier och olika skyddsnivåer för att få ut det mesta av Aspose.Words. Om du har några frågor eller stöter på problem, tveka inte att kolla in[dokumentation](https://reference.aspose.com/words/net/) eller nå ut till[stöd](https://forum.aspose.com/c/words/8).
 
 ## FAQ's
 

@@ -59,7 +59,7 @@ Nachdem Ihr Projekt nun eingerichtet ist, laden wir das Word-Dokument, mit dem w
 
 Nachdem Ihr Dokument geladen ist, ist es an der Zeit, die Absätze zu durchlaufen und die Stiltrennzeichen zu identifizieren.
 
-1.  Alle Absätze abrufen: Alle Absätze im Dokument abrufen mit dem`GetChildNodes` Methode.
+1.  Alle Absätze abrufen: Alle Absätze im Dokument abrufen mit dem`GetChildNodes` Verfahren.
 
     ```csharp
     foreach (Paragraph paragraph in doc.GetChildNodes(NodeType.Paragraph, true))
@@ -99,4 +99,4 @@ Ja, Aspose.Words für .NET ist sowohl mit .NET Framework als auch mit .NET Core 
  Unterstützung erhalten Sie vom[Aspose.Words-Forum](https://forum.aspose.com/c/words/8).
 
 ### Kann ich Aspose.Words kostenlos nutzen?
- Aspose.Words bietet eine[Kostenlose Testphase](https://releases.aspose.com/) und bietet auch[temporäre Lizenzen](https://purchase.aspose.com/temporary-license/) zur Auswertung.
+ Aspose.Words bietet eine[Kostenlose Testversion](https://releases.aspose.com/) und bietet auch[temporäre Lizenzen](https://purchase.aspose.com/temporary-license/) zur Auswertung.

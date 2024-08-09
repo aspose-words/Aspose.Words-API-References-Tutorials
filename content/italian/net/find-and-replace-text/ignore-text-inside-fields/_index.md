@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/find-and-replace-text/ignore-text-inside-fields/
 ---
-## introduzione
+## Introduzione
 
 In questo tutorial, approfondiremo la manipolazione del testo all'interno dei campi all'interno dei documenti Word utilizzando Aspose.Words per .NET. Aspose.Words fornisce funzionalità robuste per l'elaborazione dei documenti, consentendo agli sviluppatori di automatizzare le attività in modo efficiente. In questo caso ci concentreremo sull'ignorare il testo all'interno dei campi, un requisito comune negli scenari di automazione dei documenti.
 

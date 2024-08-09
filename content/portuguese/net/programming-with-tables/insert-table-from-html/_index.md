@@ -52,7 +52,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Etapa 3: inserir tabela HTML
 
- Agora vem a parte divertida! Você usará o`DocumentBuilder` para inserir sua tabela HTML no documento do Word. Observe que as configurações de AutoAjuste não se aplicam a tabelas inseridas a partir de HTML, portanto sua tabela terá a mesma aparência definida em seu código HTML.
+ Agora vem a parte divertida! Você usará o`DocumentBuilder` para inserir sua tabela HTML no documento do Word. Observe que as configurações de AutoAjuste não se aplicam a tabelas inseridas a partir de HTML, portanto sua tabela terá exatamente a aparência definida em seu código HTML.
 
 ```csharp
 //Inserir tabela HTML

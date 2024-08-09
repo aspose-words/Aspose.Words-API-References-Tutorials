@@ -15,7 +15,7 @@ Hai! Pernahkah Anda bekerja dengan bagan di dokumen Anda dan berharap dapat memf
 
 Sebelum kita mulai, pastikan Anda memiliki semua yang Anda butuhkan. Berikut daftar periksa singkatnya:
 
--  Aspose.Words untuk .NET: Pastikan Anda telah menginstalnya. Jika tidak, Anda bisa[Unduh di sini](https://releases.aspose.com/words/net/).
+-  Aspose.Words untuk .NET: Pastikan Anda telah menginstalnya. Jika tidak, Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
 - .NET Framework: Pastikan Anda telah menginstal kerangka .NET yang kompatibel.
 - Lingkungan Pengembangan: IDE seperti Visual Studio akan bekerja dengan sempurna.
 - Pengetahuan Dasar C#: Ini akan membantu Anda mengikuti contoh pengkodean.

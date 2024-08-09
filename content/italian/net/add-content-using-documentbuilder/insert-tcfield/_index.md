@@ -7,9 +7,9 @@ type: docs
 weight: 10
 url: /it/net/add-content-using-documentbuilder/insert-tcfield/
 ---
-## introduzione
+## Introduzione
 
-Ehilà! Se ti stai immergendo nel mondo dell'automazione dei documenti, sei nel posto giusto. Oggi esploreremo come inserire un campo TC (Table of Contents) in un documento Word utilizzando Aspose.Words per .NET. Credimi, alla fine di questo tutorial ti sentirai come un mago che lancia incantesimi nei tuoi documenti Word. Pronto per iniziare? Facciamolo!
+Ehilà! Se ti stai immergendo nel mondo dell'automazione dei documenti, sei nel posto giusto. Oggi esploreremo come inserire un campo TC (Table of Contents) in un documento Word utilizzando Aspose.Words per .NET. Credimi, alla fine di questo tutorial ti sentirai come un mago che lancia incantesimi nei tuoi documenti Word. Pronti per iniziare? Facciamolo!
 
 ## Prerequisiti
 
@@ -57,7 +57,7 @@ Questo imposta il nostro documento e ci prepara a iniziare a costruirlo.
 
 ## Passaggio 3: inserisci un campo TC
 
-Adesso arriva la parte divertente. Inseriremo un campo TC nel nostro documento. Il campo TC viene utilizzato per contrassegnare le voci per un sommario.
+Ora, ecco che arriva la parte divertente. Inseriremo un campo TC nel nostro documento. Il campo TC viene utilizzato per contrassegnare le voci per un sommario.
 
 ```csharp
 // Inserisci un campo TC
@@ -79,7 +79,7 @@ Boom! Hai appena creato un documento Word con un campo TC. Quanto è fantastico?
 
 ## Conclusione
 
- E il gioco è fatto! Abbiamo illustrato come inserire un campo TC in un documento Word utilizzando Aspose.Words per .NET. È piuttosto semplice, vero? Con queste competenze, ora puoi automatizzare e personalizzare i tuoi documenti Word come un professionista. Se hai domande o riscontri problemi, non esitare a consultare il[Documentazione Aspose.Words](https://reference.aspose.com/words/net/) o contattare il loro[Forum di assistenza](https://forum.aspose.com/c/words/8). Buona programmazione!
+ Ed ecco qua! Abbiamo illustrato come inserire un campo TC in un documento Word utilizzando Aspose.Words per .NET. È piuttosto semplice, vero? Con queste competenze, ora puoi automatizzare e personalizzare i tuoi documenti Word come un professionista. Se hai domande o riscontri problemi, non esitare a consultare il[Documentazione Aspose.Words](https://reference.aspose.com/words/net/) o contattare il loro[forum di supporto](https://forum.aspose.com/c/words/8). Buona programmazione!
 
 ## Domande frequenti
 

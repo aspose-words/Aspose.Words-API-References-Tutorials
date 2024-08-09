@@ -62,7 +62,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 // Einfügen eines Kreisdiagramms
 Shape shape = builder.InsertChart(ChartType.Pie, 432, 252);
 
-// Greifen Sie auf das Diagrammobjekt zu
+// Zugriff auf das Diagrammobjekt
 Chart chart = shape.Chart;
 ```
 
@@ -129,13 +129,13 @@ Und da haben Sie es! Sie haben erfolgreich ein Word-Dokument mit einem angepasst
 ## Häufig gestellte Fragen
 
 ### Kann ich Aspose.Words kostenlos nutzen?
-Sie können Aspose.Words kostenlos nutzen mit einem[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) oder erkunden Sie die Funktionen mit dem[Kostenlose Testphase](https://releases.aspose.com/).
+Sie können Aspose.Words kostenlos nutzen mit einem[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) oder erkunden Sie die Funktionen mit dem[Kostenlose Testversion](https://releases.aspose.com/).
 
 ### Wie erhalte ich Support für Aspose.Words?
  Unterstützung erhalten Sie durch die[Aspose.Words Support-Forum](https://forum.aspose.com/c/words/8).
 
 ### Kann ich andere Diagrammtypen hinzufügen?
- Ja, Aspose.Words unterstützt verschiedene Diagrammtypen wie Balken-, Linien- und Säulendiagramme. Überprüfen Sie die[Dokumentation](https://reference.aspose.com/words/net/) für mehr Details.
+ Ja, Aspose.Words unterstützt verschiedene Diagrammtypen wie Balken-, Linien- und Säulendiagramme. Überprüfen Sie die[Dokumentation](https://reference.aspose.com/words/net/) für weitere Details.
 
 ### Ist Aspose.Words mit .NET Core kompatibel?
  Ja, Aspose.Words ist mit .NET Core kompatibel. Weitere Informationen finden Sie im[Dokumentation](https://reference.aspose.com/words/net/).

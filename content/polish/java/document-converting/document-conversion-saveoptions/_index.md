@@ -77,7 +77,7 @@ W tym obszernym przewodniku zgłębiliśmy świat konwersji dokumentów za pomoc
 
 ### Jak zainstalować Aspose.Words dla Java?
 
- Instalacja Aspose.Words dla Java jest prosta. Odwiedzić[strona pobierania](https://releases.aspose.com/words/java/) postępuj zgodnie z instrukcjami instalacji dla swojego środowiska programistycznego.
+ Instalacja Aspose.Words dla Java jest prosta. Odwiedź[strona pobierania](https://releases.aspose.com/words/java/) postępuj zgodnie z instrukcjami instalacji dla swojego środowiska programistycznego.
 
 ### Jakie są opcje SaveOptions w Aspose.Words?
 

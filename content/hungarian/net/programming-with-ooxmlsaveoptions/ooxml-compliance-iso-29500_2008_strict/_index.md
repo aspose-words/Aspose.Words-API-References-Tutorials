@@ -9,7 +9,7 @@ url: /hu/net/programming-with-ooxmlsaveoptions/ooxml-compliance-iso-29500_2008_s
 ---
 ## Bevezetés
 
-Készen áll arra, hogy belemerüljön az OOXML ISO 29500_2008_Strict szabványnak való megfelelés világába? Vegyünk egy utazást ezen az átfogó oktatóanyagon az Aspose.Words for .NET használatával. Az egyes lépéseket lebontjuk, így rendkívül könnyen követhető és végrehajtható. Szóval, csatt, és kezdjük!
+Készen áll arra, hogy belemerüljön az OOXML ISO 29500_2008_Strict szabványnak való megfelelés világába? Vegyünk egy utazást ezen az átfogó oktatóanyagon az Aspose.Words for .NET használatával. Az egyes lépéseket lebontjuk, így rendkívül könnyen követhető és végrehajtható. Szóval, kösd be, és kezdjük!
 
 ## Előfeltételek
 
@@ -84,7 +84,7 @@ doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.OoxmlComplianceIso29500_2008_Str
 
 ## Következtetés
 
-Tessék, itt van! Sikeresen beállított egy Word-dokumentumot, hogy megfeleljen az OOXML ISO 29500_2008_Strict szabványnak az Aspose.Words for .NET használatával. Ez az útmutató végigvezeti Önt a dokumentumkönyvtár beállításán, a dokumentum betöltésén, a Word 2016-ra való optimalizáláson, a megfelelőségi szint beállításán és a dokumentum mentésén. Most már készen áll arra, hogy dokumentumai könnyedén megfeleljenek a legmagasabb megfelelési szabványoknak.
+Megvan! Sikeresen beállított egy Word-dokumentumot, hogy megfeleljen az OOXML ISO 29500_2008_Strict szabványnak az Aspose.Words for .NET használatával. Ez az útmutató végigvezeti Önt a dokumentumkönyvtár beállításán, a dokumentum betöltésén, a Word 2016-ra való optimalizáláson, a megfelelőségi szint beállításán és a dokumentum mentésén. Most már készen áll arra, hogy dokumentumai könnyedén megfeleljenek a legmagasabb megfelelési szabványoknak.
 
 ## GYIK
 

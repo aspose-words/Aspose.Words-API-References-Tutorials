@@ -34,7 +34,7 @@ Hãy chia quá trình thành các bước đơn giản. Mỗi bước sẽ đư�
 
 ## Bước 1: Khởi tạo tài liệu
 
-Bước đầu tiên là khởi tạo một tài liệu mới và đối tượng DocumentBuilder. Lớp DocumentBuilder cho phép bạn xây dựng và thao tác với tài liệu.
+Bước đầu tiên là khởi tạo một tài liệu mới và một đối tượng DocumentBuilder. Lớp DocumentBuilder cho phép bạn xây dựng và thao tác với tài liệu.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu.
@@ -43,7 +43,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Trong bước này, bạn tạo một phiên bản mới của`Document` lớp học và`DocumentBuilder` lớp học. Các`dataDir` biến được sử dụng để chỉ định thư mục nơi bạn muốn lưu tài liệu.
+ Trong bước này, bạn tạo một phiên bản mới của`Document` lớp học và`DocumentBuilder` lớp học. các`dataDir` biến được sử dụng để chỉ định thư mục nơi bạn muốn lưu tài liệu.
 
 ## Bước 2: Định cấu hình thiết lập trang
 
@@ -71,7 +71,7 @@ builder.MoveToHeaderFooter(HeaderFooterType.HeaderPrimary);
 builder.Write("Header for all other pages");
 ```
 
- Ở bước này, chúng ta sử dụng`MoveToHeaderFooter` phương pháp để điều hướng đến phần đầu trang hoặc chân trang mong muốn. Các`Write` phương pháp sau đó được sử dụng để thêm văn bản vào các phần này.
+ Ở bước này, chúng ta sử dụng`MoveToHeaderFooter` phương pháp để điều hướng đến phần đầu trang hoặc chân trang mong muốn. các`Write` phương pháp sau đó được sử dụng để thêm văn bản vào các phần này.
 
 ## Bước 4: Thêm nội dung vào nội dung tài liệu
 

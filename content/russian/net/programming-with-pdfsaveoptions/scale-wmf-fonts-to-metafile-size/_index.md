@@ -69,7 +69,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
-`PdfSaveOptions` Класс позволяет указать различные настройки для сохранения документа в формате PDF. Назначив ранее настроенный`MetafileRenderingOptions` к`MetafileRenderingOptions` свойство`PdfSaveOptions`, вы гарантируете, что документ сохранен в соответствии с желаемыми настройками рендеринга метафайла.
+`PdfSaveOptions` Класс позволяет указать различные настройки для сохранения документа в формате PDF. Назначив ранее настроенный`MetafileRenderingOptions` к`MetafileRenderingOptions` собственность`PdfSaveOptions`, вы гарантируете, что документ сохранен в соответствии с желаемыми настройками рендеринга метафайла.
 
 ## Шаг 4. Сохраните документ в формате PDF.
 

@@ -15,7 +15,7 @@ Diagramme sind ein leistungsstarkes Tool zur Visualisierung von Daten. Wenn Sie 
 
 Bevor Sie mit der Codierung beginnen, müssen einige Voraussetzungen erfüllt sein:
 
-1. Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Bibliothek Aspose.Words für .NET haben. Sie können[hier herunterladen](https://releases.aspose.com/words/net/).
+1. Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Bibliothek Aspose.Words für .NET haben. Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Sie benötigen eine integrierte Entwicklungsumgebung (IDE) wie Visual Studio.
 3. .NET Framework: Stellen Sie sicher, dass Ihre Entwicklungsumgebung für die .NET-Entwicklung eingerichtet ist.
 4. Grundkenntnisse in C#: Diese Anleitung setzt voraus, dass Sie über grundlegende Kenntnisse der C#-Programmierung verfügen.

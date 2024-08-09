@@ -18,7 +18,7 @@ Font memainkan peran penting dalam desain dan keterbacaan dokumen. Aspose.Words 
 
 Sebelum mendalami kode, pastikan Anda memiliki prasyarat berikut:
 
-1.  Perpustakaan Aspose.Words untuk Java: Pastikan Anda telah mengunduh dan menginstal perpustakaan Aspose.Words untuk Java. Kamu bisa[Unduh di sini](https://releases.aspose.com/words/java/).
+1.  Perpustakaan Aspose.Words untuk Java: Pastikan Anda telah mengunduh dan menginstal perpustakaan Aspose.Words untuk Java. Anda bisa[unduh di sini](https://releases.aspose.com/words/java/).
 
 2. Lingkungan Pengembangan Java: Pastikan Anda telah menyiapkan lingkungan pengembangan Java.
 

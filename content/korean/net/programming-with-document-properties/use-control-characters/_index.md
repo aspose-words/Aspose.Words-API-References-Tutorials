@@ -107,7 +107,7 @@ doc.Save("path/to/your/modified/document.docx");
 Aspose.Words for .NET은 개발자가 프로그래밍 방식으로 Word 문서를 생성, 수정 및 변환할 수 있는 라이브러리입니다.
 
 ### Aspose.Words를 무료로 사용할 수 있나요?
- 무료로 사용해 볼 수 있습니다.[무료 시험판](https://releases.aspose.com/). 전체 기능을 사용하려면 라이센스를 구입해야 합니다.
+ 무료로 사용해 볼 수 있습니다.[무료 평가판](https://releases.aspose.com/). 전체 기능을 사용하려면 라이센스를 구입해야 합니다.
 
 ### Aspose.Words는 어떤 형식을 처리할 수 있나요?
 .doc, .docx, .pdf, .html 등을 포함한 다양한 형식을 지원합니다.

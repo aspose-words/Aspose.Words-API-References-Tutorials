@@ -104,7 +104,7 @@ doc.Save(dataDir + "WorkingWithCharts.SingleChartSeries.docx");
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesindeki tek bir grafik serisini başarıyla özelleştirdiniz. Oldukça hoş, değil mi? Bu buzdağının sadece görünen kısmı; Aspose.Words ile yapabileceğiniz çok daha fazlası var. Bu yüzden denemelere ve harika belgeler oluşturmaya devam edin!
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesindeki tek bir grafik serisini başarıyla özelleştirdiniz. Oldukça hoş, değil mi? Bu buzdağının sadece görünen kısmı; Aspose.Words ile yapabileceğiniz çok daha fazlası var. Bu yüzden denemelere ve harika belgeler oluşturmaya devam edin!
 
 ## SSS'ler
 
@@ -121,4 +121,4 @@ Aspose.Words for .NET, Word belgelerini programlı olarak oluşturmanıza, düze
 Kesinlikle! Aspose.Words çubuk, pasta ve dağılım grafikleri gibi çeşitli grafik türlerini destekler.
 
 ### Daha fazla belgeyi nerede bulabilirim?
- Kontrol et[dokümantasyon](https://reference.aspose.com/words/net/) daha ayrıntılı kılavuzlar ve örnekler için.
+ Şuna göz atın:[dokümantasyon](https://reference.aspose.com/words/net/) daha ayrıntılı kılavuzlar ve örnekler için.

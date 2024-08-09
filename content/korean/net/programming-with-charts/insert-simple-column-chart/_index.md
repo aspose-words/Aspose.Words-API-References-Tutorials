@@ -94,4 +94,4 @@ doc.Save(dataDir + "InsertSimpleColumnChart.docx");
 예, Aspose.Words for .NET을 사용하면 데이터베이스나 API와 같은 외부 소스의 데이터로 차트를 동적으로 채울 수 있습니다.
 
 ### .NET용 Aspose.Words에 대한 추가 리소스와 지원은 어디서 찾을 수 있나요?
- 방문하다[.NET 문서용 Aspose.Words](https://reference.aspose.com/words/net/) 자세한 API 참조 및 예시를 확인하세요. 지원을 받으려면 다음 사이트를 방문하세요.[Aspose.Words 포럼](https://forum.aspose.com/c/words/8).
+ 방문[.NET 문서용 Aspose.Words](https://reference.aspose.com/words/net/) 자세한 API 참조 및 예시를 확인하세요. 지원을 받으려면 다음 사이트를 방문하세요.[Aspose.Words 포럼](https://forum.aspose.com/c/words/8).

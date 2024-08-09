@@ -93,7 +93,7 @@ builderA.getDocument().compare(builderB.getDocument(), "author", new Date(), com
 
 ## 결론
 
-Aspose.Words for Java의 문서 비교는 다양한 문서 처리 시나리오에 사용할 수 있는 강력한 기능입니다. 광범위한 사용자 정의 옵션을 통해 특정 요구 사항에 맞게 비교 프로세스를 맞춤화하여 Java 개발 툴킷의 귀중한 도구로 활용할 수 있습니다.
+Aspose.Words for Java의 문서 비교는 다양한 문서 처리 시나리오에 사용할 수 있는 강력한 기능입니다. 광범위한 사용자 정의 옵션을 통해 특정 요구 사항에 맞게 비교 프로세스를 맞춤화하여 Java 개발 툴킷의 귀중한 도구로 만들 수 있습니다.
 
 ## FAQ
 

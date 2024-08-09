@@ -99,4 +99,4 @@ Aby uwzględnić więcej poziomów w spisie treści, możesz zmodyfikować pole 
 
 ### Czy mogę zmienić pozycje tabulatorów dla określonych wpisów spisu treści?
 
-Tak, jak pokazano w powyższym przykładzie kodu, możesz zmieniać pozycje tabulatorów dla określonych wpisów spisu treści, iterując po akapitach i odpowiednio modyfikując tabulatory.
+Tak, jak pokazano w powyższym przykładzie kodu, możesz zmienić pozycje tabulatorów dla określonych wpisów spisu treści, iterując po akapitach i odpowiednio modyfikując tabulatory.

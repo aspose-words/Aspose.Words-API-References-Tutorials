@@ -43,7 +43,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Langkah 2: Mulai Tabel Baru
 
- Selanjutnya, kita akan memulai tabel baru menggunakan`DocumentBuilder`obyek. Ini adalah dimana keajaiban terjadi.
+ Selanjutnya, kita akan memulai tabel baru menggunakan`DocumentBuilder`obyek. Di sinilah keajaiban terjadi.
 
 ```csharp
 Table table = builder.StartTable();
@@ -99,7 +99,7 @@ Dan itu dia! Anda telah berhasil menerapkan pemformatan baris ke tabel di dokume
  Ya, Anda dapat menyesuaikan setiap baris satu per satu dengan mengatur properti yang berbeda`RowFormat`.
 
 ### Bagaimana cara mengatur lebar kolom?  
- Anda dapat mengatur lebar kolom menggunakan`CellFormat.Width` Properti.
+ Anda dapat mengatur lebar kolom menggunakan`CellFormat.Width` milik.
 
 ### Apakah mungkin untuk menggabungkan sel di Aspose.Words untuk .NET?  
  Ya, Anda dapat menggabungkan sel menggunakan`CellMerge` properti dari`CellFormat`.

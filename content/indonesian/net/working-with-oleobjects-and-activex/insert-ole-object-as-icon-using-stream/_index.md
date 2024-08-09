@@ -2,125 +2,98 @@
 title: Masukkan Objek Ole Sebagai Ikon Menggunakan Stream
 linktitle: Masukkan Objek Ole Sebagai Ikon Menggunakan Stream
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menyisipkan objek OLE sebagai ikon menggunakan aliran dengan Aspose.Words untuk .NET.
+description: Pelajari cara menyisipkan objek OLE sebagai ikon menggunakan aliran dengan Aspose.Words untuk .NET dalam tutorial langkah demi langkah yang mendetail ini.
 type: docs
 weight: 10
 url: /id/net/working-with-oleobjects-and-activex/insert-ole-object-as-icon-using-stream/
 ---
+## Perkenalan
 
-Berikut adalah panduan langkah demi langkah untuk menjelaskan kode sumber C# di bawah ini yang mengilustrasikan cara menyisipkan objek OLE sebagai ikon menggunakan aliran dengan Aspose.Words untuk .NET.
+Dalam tutorial ini, kita mendalami fitur Aspose.Words yang sangat keren untuk .NET: menyisipkan objek OLE (Object Linking and Embedding) sebagai ikon menggunakan aliran. Baik Anda menyematkan presentasi PowerPoint, spreadsheet Excel, atau jenis file lainnya, panduan ini akan menunjukkan dengan tepat cara melakukannya. Siap untuk memulai? Ayo pergi!
 
-## Langkah 1: Impor referensi yang diperlukan
-Sebelum memulai, pastikan Anda telah mengimpor referensi yang diperlukan untuk menggunakan Aspose.Words untuk .NET ke dalam proyek Anda. Ini termasuk mengimpor perpustakaan Aspose.Words dan menambahkan namespace yang diperlukan ke file sumber Anda.
+## Prasyarat
+
+Sebelum kita beralih ke kode, ada beberapa hal yang Anda perlukan:
+
+-  Aspose.Words untuk .NET: Jika Anda belum melakukannya,[unduh](https://releases.aspose.com/words/net/) dan instal Aspose.Words untuk .NET.
+- Lingkungan Pengembangan: Visual Studio atau lingkungan pengembangan C# lainnya.
+- File Masukan: File yang ingin Anda sematkan (misalnya, presentasi PowerPoint) dan gambar ikon.
+
+## Impor Namespace
+
+Untuk memulai, pastikan Anda telah mengimpor namespace yang diperlukan dalam proyek Anda:
 
 ```csharp
+using System;
+using System.IO;
 using Aspose.Words;
 using Aspose.Words.Drawing;
-using System.IO;
 ```
 
-## Langkah 2: Buat dokumen baru dan pembuat dokumen
- Pada langkah ini, kita akan membuat dokumen baru menggunakan`Document` kelas dan pembuat dokumen menggunakan`DocumentBuilder` kelas.
+Mari kita uraikan prosesnya langkah demi langkah agar mudah diikuti.
+
+## Langkah 1: Buat Dokumen Baru
+
+Pertama, kita akan membuat dokumen baru dan pembuat dokumen untuk bekerja dengannya.
 
 ```csharp
+// Jalur ke direktori dokumen Anda
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Langkah 3: Sisipkan objek OLE sebagai ikon dari aliran
- Gunakan Pembuat Dokumen`InsertOleObjectAsIcon` metode untuk menyisipkan objek OLE sebagai ikon dari aliran ke dalam dokumen. Tentukan aliran data, tipe objek, jalur ikon, dan nama objek yang disematkan.
+ Pikirkan tentang`Document` sebagai kanvas kosongmu dan`DocumentBuilder` sebagai kuasmu. Kami sedang menyiapkan alat untuk mulai membuat karya agung kami.
+
+## Langkah 2: Siapkan Aliran
+
+Selanjutnya kita perlu menyiapkan memory stream yang berisi file yang ingin kita sematkan. Dalam contoh ini, kami akan menyematkan presentasi PowerPoint.
 
 ```csharp
-using (MemoryStream stream = new MemoryStream(File.ReadAllBytes(MyDir + "Presentation.pptx")))
+using (MemoryStream stream = new MemoryStream(File.ReadAllBytes("Path_to_your_directory/Presentation.pptx")))
 {
-     builder.InsertOleObjectAsIcon(stream, "Package", ImagesDir + "Logo icon.ico", "My embedded file");
+```
+
+Langkah ini seperti memasukkan cat ke kuas. Kami sedang menyiapkan file kami untuk disematkan.
+
+## Langkah 3: Masukkan Objek OLE sebagai Ikon
+
+Sekarang, kita akan menggunakan pembuat dokumen untuk memasukkan objek OLE ke dalam dokumen. Kami akan menentukan aliran file, ProgID untuk jenis file (dalam hal ini, "Paket"), jalur ke gambar ikon, dan label untuk file yang disematkan.
+
+```csharp
+builder.InsertOleObjectAsIcon(stream, "Package", "Path_to_your_directory/Logo icon.ico", "My embedded file");
 }
 ```
 
-## Langkah 4: Simpan dokumen
- Gunakan dokumen itu`Save` metode untuk menyimpan dokumen ke file.
+Di sinilah keajaiban terjadi! Kami menyematkan file kami dan menampilkannya sebagai ikon di dalam dokumen.
+
+## Langkah 4: Simpan Dokumen
+
+Terakhir, kami menyimpan dokumen ke jalur tertentu.
 
 ```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
+doc.Save(dataDir + "WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
 ```
 
-### Contoh kode sumber untuk menyisipkan objek OLE sebagai ikon menggunakan aliran dengan Aspose.Words untuk .NET
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-using (MemoryStream stream = new MemoryStream(File.ReadAllBytes(MyDir + "Presentation.pptx")))
-{
-     builder.InsertOleObjectAsIcon(stream, "Package", ImagesDir + "Logo icon.ico", "My embedded file");
-}
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
-```
-
-Ini adalah contoh kode lengkap untuk menyisipkan objek OLE sebagai ikon menggunakan aliran dengan Aspose.Words untuk .NET. Pastikan untuk mengimpor referensi yang diperlukan dan ikuti langkah-langkah yang dijelaskan sebelumnya untuk mengintegrasikan kode ini ke dalam proyek Anda.
+Langkah ini seperti meletakkan lukisan Anda yang sudah jadi ke dalam bingkai dan menggantungnya di dinding. Dokumen Anda sekarang siap digunakan!
 
 ## Kesimpulan
 
-Panduan langkah demi langkah di atas menjelaskan cara menyisipkan objek OLE sebagai ikon dalam dokumen Word menggunakan alur dengan Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah yang dijelaskan, Anda akan dapat mengintegrasikan fungsi ini ke dalam proyek Anda. Pastikan untuk mengimpor referensi yang diperlukan, buat dokumen baru dan pembuat dokumen, masukkan objek OLE sebagai ikon dari aliran, lalu simpan dokumen. Gunakan kode contoh yang disediakan sebagai titik awal dan sesuaikan dengan kebutuhan Anda.
+Dan itu dia! Anda telah berhasil menyematkan objek OLE sebagai ikon di dokumen Word menggunakan Aspose.Words untuk .NET. Fitur canggih ini dapat membantu Anda membuat dokumen dinamis dan interaktif dengan mudah. Baik Anda menyematkan presentasi, spreadsheet, atau file lainnya, Aspose.Words membuatnya mudah. Jadi silakan mencobanya, dan lihat perbedaannya pada dokumen Anda!
 
-### FAQ
+## FAQ
 
-#### T. Bagaimana cara mengimpor referensi yang diperlukan untuk menggunakan Aspose.Words untuk .NET?
+### Bisakah saya menyematkan berbagai jenis file menggunakan metode ini?
+Ya, Anda bisa menyematkan semua jenis file yang didukung oleh OLE, termasuk Word, Excel, PowerPoint, dan lainnya.
 
-A. Untuk mengimpor referensi yang diperlukan, Anda harus mengikuti langkah-langkah berikut:
+### Apakah saya memerlukan lisensi khusus untuk menggunakan Aspose.Words untuk .NET?
+ Ya, Aspose.Words untuk .NET memerlukan lisensi. Anda bisa mendapatkan[uji coba gratis](https://releases.aspose.com/) atau membeli a[izin sementara](https://purchase.aspose.com/temporary-license/) untuk pengujian.
 
- Tambahkan yang berikut ini`using` pernyataan di bagian atas file sumber Anda:
+### Bisakah saya menyesuaikan ikon yang digunakan untuk objek OLE?
+ Sangat! Anda dapat menggunakan file gambar apa pun untuk ikon dengan menentukan jalurnya di`InsertOleObjectAsIcon` metode.
 
-```csharp
-using Aspose.Words;
-using Aspose.Words.Drawing;
-using System.IO;
-```
-Pastikan Anda telah menambahkan perpustakaan Aspose.Words ke proyek Anda.
+### Apa yang terjadi jika jalur file atau ikon salah?
+Metode ini akan memunculkan pengecualian. Pastikan jalur ke file Anda sudah benar untuk menghindari kesalahan.
 
-#### T. Bagaimana cara membuat dokumen baru dan pembuat dokumen menggunakan Aspose.Words untuk .NET?
-
-A. Untuk membuat dokumen baru dan pembuat dokumen, Anda dapat mengikuti langkah-langkah berikut:
-
- Menggunakan`Document` kelas untuk membuat dokumen baru:
-
-```csharp
-Document doc = new Document();
-```
- Menggunakan`DocumentBuilder` kelas untuk membuat pembuat dokumen yang terkait dengan dokumen yang dibuat sebelumnya:
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-#### T. Bagaimana cara menyisipkan objek OLE sebagai ikon dari aliran menggunakan Aspose.Words untuk .NET?
-
-A. Untuk menyisipkan objek OLE sebagai ikon dari aliran, Anda dapat mengikuti langkah-langkah berikut:
-
- Menggunakan`InsertOleObjectAsIcon` metode pembuat dokumen untuk memasukkan objek OLE:
-
-```csharp
-using (MemoryStream stream = new MemoryStream(File.ReadAllBytes(MyDir + "Presentation.pptx")))
-{
-  builder.InsertOleObjectAsIcon(stream, "Package", ImagesDir + "Logo icon.ico", "My embedded file");
-}
-```
-
-#### Q. Bagaimana cara menyimpan dokumen dalam sebuah file?
-
-A.  Untuk menyimpan dokumen ke file, Anda dapat menggunakan`Save` metode dokumen yang menentukan jalur tujuan:
-
-```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
-```
-
-#### T. Bagaimana cara menyematkan kode untuk menyisipkan objek OLE sebagai ikon dari aliran ke dalam proyek saya?
-
-A. Untuk menyematkan kode untuk menyisipkan objek OLE sebagai ikon dari aliran ke dalam proyek Anda, ikuti langkah-langkah berikut:
-- Impor referensi yang diperlukan dengan menambahkan yang sesuai`using` pernyataan.
--  Buat dokumen baru dan pembuat dokumen menggunakan`Document`Dan`DocumentBuilder` kelas.
-- Gunakan kode untuk menyisipkan objek OLE sebagai ikon dari aliran.
--  Simpan dokumen menggunakan`Save` metode dengan jalur tujuan yang sesuai.
-
-Dengan mengikuti langkah-langkah ini, Anda akan berhasil menyisipkan objek OLE sebagai ikon dari aliran menggunakan Aspose.Words untuk .NET. Pastikan untuk mengikuti instruksi dan mengimpor referensi yang diperlukan untuk mendapatkan hasil yang diinginkan.
+### Apakah mungkin untuk menautkan objek yang disematkan alih-alih menyematkannya?
+Ya, Aspose.Words memungkinkan Anda menyisipkan objek OLE tertaut, yang mereferensikan file tanpa menyematkan kontennya.

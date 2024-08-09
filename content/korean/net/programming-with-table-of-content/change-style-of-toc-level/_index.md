@@ -9,7 +9,7 @@ url: /ko/net/programming-with-table-of-content/change-style-of-toc-level/
 ---
 ## 소개
 
-전문적인 Word 문서를 작성해야 한다면 목차(TOC)가 얼마나 중요한지 아실 것입니다. 콘텐츠를 정리할 뿐만 아니라 전문성을 더해줍니다. 그러나 자신의 스타일에 맞게 TOC를 사용자 정의하는 것은 약간 까다로울 수 있습니다. 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에서 TOC 스타일을 변경하는 방법을 살펴보겠습니다. 다이빙할 준비가 되셨나요? 시작하자!
+전문적인 Word 문서를 작성해야 한다면 목차(TOC)가 얼마나 중요한지 아실 것입니다. 콘텐츠를 정리할 뿐만 아니라 전문성을 더해줍니다. 그러나 자신의 스타일에 맞게 TOC를 사용자 정의하는 것은 약간 까다로울 수 있습니다. 이 튜토리얼에서는 Aspose.Words for .NET을 사용하여 Word 문서에서 TOC 스타일을 변경하는 방법을 살펴보겠습니다. 다이빙할 준비가 되셨나요? 시작해 봅시다!
 
 ## 전제 조건
 
@@ -74,7 +74,7 @@ Aspose.Words for .NET은 .NET 애플리케이션 내에서 Word 문서를 생성
 예, 다양한 수준과 스타일 속성에 액세스하여 목차 내에서 다양한 스타일을 수정할 수 있습니다.
 
 ### .NET용 Aspose.Words는 무료인가요?
- Aspose.Words for .NET은 유료 라이브러리이지만[무료 시험판](https://releases.aspose.com/) 또는[임시 면허증](https://purchase.aspose.com/temporary-license/).
+ Aspose.Words for .NET은 유료 라이브러리이지만[무료 평가판](https://releases.aspose.com/) 또는[임시 면허증](https://purchase.aspose.com/temporary-license/).
 
 ### .NET용 Aspose.Words를 사용하려면 Microsoft Word를 설치해야 합니까?
 아니요, Aspose.Words for .NET을 사용하려면 컴퓨터에 Microsoft Word를 설치할 필요가 없습니다.

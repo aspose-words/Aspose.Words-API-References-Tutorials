@@ -63,7 +63,7 @@ Mengonversi dokumen menjadi gambar di Java menjadi mudah dengan Aspose.Words for
 ## FAQ
 
 ### Bagaimana cara mengatur resolusi gambar selama konversi?
- Untuk mengatur resolusi gambar, gunakan`setResolution` metode dari`ImageSaveOptions` dan tentukan resolusi yang diinginkan dalam titik per inci (DPI).
+ Untuk mengatur resolusi gambar, gunakan`setResolution` metode`ImageSaveOptions` dan tentukan resolusi yang diinginkan dalam titik per inci (DPI).
 
 ### Bisakah saya mengonversi halaman tertentu dalam dokumen menjadi gambar?
  Ya, Anda dapat menentukan rentang halaman menggunakan`setPageCount`Dan`setPageIndex` metode`ImageSaveOptions` untuk mengonversi halaman tertentu menjadi gambar.

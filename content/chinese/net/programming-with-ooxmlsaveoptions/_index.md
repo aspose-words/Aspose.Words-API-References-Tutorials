@@ -7,7 +7,7 @@ type: docs
 weight: 1660
 url: /zh/net/programming-with-ooxmlsaveoptions/
 ---
-Aspose.Words for .NET 教程“使用 OOXMLSaveOptions 进行文字处理”提供了操作文档中 OOXML 保存选项的分步说明。这些教程将引导您完成自定义备份设置的步骤，例如向后兼容性、图像压缩和嵌入式字体处理。您将学习如何使用这些选项来实现针对您的特定需求优化的精确备份结果。
+Aspose.Words for .NET 教程“使用 OOXMLSaveOptions 进行文字处理”提供了在文档中操作 OOXML 保存选项的分步说明。这些教程将引导您完成自定义备份设置的步骤，例如向后兼容性、图像压缩和嵌入式字体处理。您将学习如何使用这些选项来实现针对您的特定需求优化的精确备份结果。
 
 本教程还为您提供了实际的代码示例，以说明如何使用 OOXMLSaveOptions 的各种功能。您将学习如何在创建或编辑 Word 文档时指定保存选项，使用的方法包括`CompatibilityOptions`, `ImageCompression`， 和`ExportFontResources`。本教程将帮助您了解这些选项如何影响输出格式并为您的项目选择适当的设置。
 

@@ -73,7 +73,7 @@ foreach (Style style in styles)
 İşte bu kodun ne yaptığının bir dökümü:
 
 -  Başlat`styleName`: Stil adları listemizi oluşturmak için boş bir dizeyle başlıyoruz.
--  Stiller arasında dolaşın:`foreach` döngü her biri üzerinde yinelenir`Style` içinde`styles` Toplamak.
+-  Stiller arasında dolaşın:`foreach` döngü her biri üzerinde yinelenir`Style` içinde`styles` koleksiyon.
 - Güncelle ve Görüntüle`styleName` : Her stil için adını sonuna ekleriz`styleName` ve yazdırın.
 
 ## Adım 4: Çıktıyı Özelleştirme

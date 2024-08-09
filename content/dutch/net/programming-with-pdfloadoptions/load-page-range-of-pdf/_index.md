@@ -52,7 +52,7 @@ Stel het pad naar uw documentmap in. Dit is waar uw PDF-bestanden worden opgesla
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw map.
+ Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw directory.
 
 ## Stap 3: Configureer de PDF-laadopties
 

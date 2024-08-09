@@ -33,7 +33,7 @@ Süreci net adımlara ayıralım:
 
 ## Adım 1: Aspose.Words Document ve DocumentBuilder'ı başlatın
 
- Öncelikle yeni bir Aspose.Words başlatın`Document` nesne ve bir`DocumentBuilder` birlikte çalışmak:
+ Öncelikle yeni bir Aspose.Words başlatın`Document` nesne ve bir`DocumentBuilder` çalışmak için:
 
 ```csharp
 // Document ve DocumentBuilder'ı Başlat
@@ -115,7 +115,7 @@ Aspose.Words for .NET'i kullanarak İçindekiler Tablosu eklemek basittir ve bel
 ## SSS'ler
 
 ### İçindekiler Tablosunun görünümünü özelleştirebilir miyim?
-Evet, Aspose.Words for .NET API'lerini kullanarak İçindekiler Tablosunun görünümünü ve davranışını özelleştirebilirsiniz.
+Evet, Aspose.Words for .NET API'lerini kullanarak İçindekiler'in görünümünü ve davranışını özelleştirebilirsiniz.
 
 ### Aspose.Words alanların otomatik olarak güncellenmesini destekliyor mu?
 Evet, Aspose.Words, İçindekiler gibi alanları belge değişikliklerine göre dinamik olarak güncellemenize olanak tanır.

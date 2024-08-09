@@ -9,7 +9,7 @@ url: /hu/net/clone-and-combine-documents/cloning-document/
 ---
 ## Bevezetés
 
-Halihó! Volt már olyan, hogy Word-dokumentumot kell klónoznia az Aspose.Words for .NET használatával? Nem olyan ijesztő, mint amilyennek hangzik, és azért vagyok itt, hogy lépésről lépésre végigvezessem. Akár tapasztalt fejlesztő, akár csak most kezdi, ez az oktatóanyag egyszerű, beszélgetős módon végigvezeti a folyamaton. A végére készen áll egy klónozott Word-dokumentum. Szóval, ugorjunk bele!
+Szia! Volt már olyan, hogy Word-dokumentumot kell klónoznia az Aspose.Words for .NET használatával? Nem olyan ijesztő, mint amilyennek hangzik, és azért vagyok itt, hogy lépésről lépésre végigvezessem. Akár tapasztalt fejlesztő, akár csak most kezdi, ez az oktatóanyag egyszerű, beszélgetős módon végigvezeti a folyamaton. A végére készen áll egy klónozott Word-dokumentum. Szóval, ugorjunk bele!
 
 ## Előfeltételek
 
@@ -35,7 +35,7 @@ Egyszerű, igaz? Most pedig térjünk át az izgalmas részre: egy dokumentum kl
 Először is be kell állítania a projektet a Visual Studióban. Ha már készen van egy projektje, kihagyhatja ezt a lépést. Ha nem, kövesse a következőt:
 
 1. Nyissa meg a Visual Studiot: Indítsa el a Visual Studio alkalmazást, és hozzon létre egy új C# Console App projektet.
-2.  Nevezze el projektjét: Adjon értelmes nevet a projektjének. Valami hasonló`CloneWordDocumentDemo` megteszi.
+2.  Nevezze el projektjét: Adjon értelmes nevet a projektjének. Valami olyasmi`CloneWordDocumentDemo` megteszi.
 3.  Aspose.Words Reference hozzáadása: Kattintson a jobb gombbal a projektre a Solution Explorerben, és válassza ki`Manage NuGet Packages` , és keressen rá`Aspose.Words`. Telepítse.
 
 ## 2. lépés: Készítse elő környezetét
@@ -43,7 +43,7 @@ Először is be kell állítania a projektet a Visual Studióban. Ha már késze
 Most, hogy a projekt be van állítva, készítsük elő a környezetet:
 
 1.  Hozzon létre egy könyvtárat a dokumentumok számára: Szüksége lesz egy mappára, ahol a dokumentumokat tárolni fogja. Nevezzük el`Documents`.
-2.  Adja hozzá mintadokumentumát: Helyezze el`Document.docx` benne`Documents` mappát. Ez az a fájl, amelyet klónozni fogunk.
+2.  Adja hozzá mintadokumentumát: Helyezze el`Document.docx` belül a`Documents` mappát. Ez az a fájl, amelyet klónozni fogunk.
 
 ## 3. lépés: Töltse be az eredeti dokumentumot
 
@@ -61,7 +61,7 @@ Itt kezdődik a varázslat. Az eredeti dokumentumot az Aspose.Words használatá
     Document doc = new Document(dataDir + "Document.docx");
     ```
 
-## 4. lépés: Klónozza a dokumentumot
+## 4. lépés: A dokumentum klónozása
 
 A dokumentum klónozása gyerekjáték az Aspose.Words segítségével:
 

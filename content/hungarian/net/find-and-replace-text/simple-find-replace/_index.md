@@ -51,7 +51,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Itt létrehozunk a`Document` tárgy és a`DocumentBuilder` tárgy. A`DocumentBuilder` segít szöveget írni a dokumentumunkba.
+ Itt létrehozunk a`Document` tárgy és a`DocumentBuilder` objektum. A`DocumentBuilder` segít szöveget írni a dokumentumunkba.
 
 ## 3. lépés: Kezdő szöveg írása
 
@@ -102,10 +102,10 @@ doc.Save(dataDir + "FindAndReplace.SimpleFindReplace.docx");
 ## GYIK
 
 ### Cserélhetek több különböző szöveget egyszerre?
- Igen tudsz. Csak hívja a`Replace` módszert minden egyes cserélni kívánt szöveghez.
+ Igen, megteheti. Csak hívja a`Replace` módszert minden egyes cserélni kívánt szöveghez.
 
 ### Az Aspose.Words for .NET ingyenes?
-Az Aspose.Words for .NET ingyenes próbaverziót kínál, de a teljes funkcionalitás érdekében licencet kell vásárolnia. Nézze meg őket[árazás](https://purchase.aspose.com/buy) további részletekért.
+Az Aspose.Words for .NET ingyenes próbaverziót kínál, de a teljes funkcionalitás érdekében licencet kell vásárolnia. Nézze meg őket[árképzés](https://purchase.aspose.com/buy) további részletekért.
 
 ### Cserélhetem a szöveget formázással?
  Teljesen! A szöveget lecserélheti és formázást alkalmazhat a`FindReplaceOptions` osztály.

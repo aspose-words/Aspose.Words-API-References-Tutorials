@@ -69,7 +69,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.CustomPropertiesExport.pdf", saveO
 
 ## 결론
 
-.NET용 Aspose.Words를 사용하여 PDF 문서의 사용자 정의 속성을 내보내는 것은 문서 관리 기능을 크게 향상시킬 수 있는 간단한 프로세스입니다. 이러한 단계를 따르면 중요한 메타데이터를 보존하고 액세스할 수 있으므로 디지털 문서의 효율성과 구성이 향상됩니다.
+Aspose.Words for .NET을 사용하여 PDF 문서의 사용자 정의 속성을 내보내는 것은 문서 관리 기능을 크게 향상시킬 수 있는 간단한 프로세스입니다. 이러한 단계를 따르면 중요한 메타데이터를 보존하고 액세스할 수 있으므로 디지털 문서의 효율성과 구성이 향상됩니다.
 
 ## FAQ
 

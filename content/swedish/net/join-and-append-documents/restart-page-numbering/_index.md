@@ -15,7 +15,7 @@ Har du någonsin kämpat för att skapa ett polerat dokument med distinkta sekti
 
 Innan du ger dig ut på denna resa, se till att du har följande:
 
-1.  Aspose.Words för .NET: Ladda ner biblioteket från den officiella webbplatsen[Nedladdningslänk](https://releases.aspose.com/words/net/) . Du kan utforska en gratis provperiod[Gratis testlänk](https://releases.aspose.com/) eller köp en licens[köplänk](https://purchase.aspose.com/buy) utifrån dina behov.
+1.  Aspose.Words för .NET: Ladda ner biblioteket från den officiella webbplatsen[Ladda ner länk](https://releases.aspose.com/words/net/) . Du kan utforska en gratis provperiod[Gratis testlänk](https://releases.aspose.com/) eller köp en licens[Köp länk](https://purchase.aspose.com/buy) utifrån dina behov.
 2. AC#-utvecklingsmiljö: Visual Studio eller någon miljö som stöder .NET-utveckling kommer att fungera perfekt.
 3. Ett exempeldokument: Leta reda på ett Word-dokument som du vill experimentera med.
 
@@ -37,7 +37,7 @@ Låt oss nu dyka in i de praktiska stegen för att starta om sidnumreringen i di
 
  Definiera en strängvariabel`dataDir` för att lagra sökvägen till din dokumentkatalog. Ersätt "DIN DOKUMENTKATOLOG" med den faktiska platsen.
 
- Skapa två`Document` objekt som använder`Aspose.Words.Document`konstruktör. Den första (`srcDoc`) kommer att hålla källdokumentet som innehåller innehållet som ska läggas till. Den andra (`dstDoc`) representerar måldokumentet där vi kommer att integrera källinnehållet med omstartad sidnumrering.
+ Skapa två`Document` objekt med hjälp av`Aspose.Words.Document`konstruktör. Den första (`srcDoc`) kommer att hålla källdokumentet som innehåller innehållet som ska läggas till. Den andra (`dstDoc`) representerar måldokumentet där vi kommer att integrera källinnehållet med omstartad sidnumrering.
 
 ```csharp
 string dataDir = @"C:\MyDocuments\"; // Ersätt med din faktiska katalog

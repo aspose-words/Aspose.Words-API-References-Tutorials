@@ -99,7 +99,7 @@ doc.Save(outputPath);
 
 ## Következtetés
 
-Gratulálunk! Sikeresen betöltött egy CHM-fájlt egy Word-dokumentumba az Aspose.Words for .NET használatával. Ez a nagy teljesítményű könyvtár megkönnyíti a különféle fájlformátumok Word dokumentumokba való integrálását, és robusztus megoldást kínál a dokumentációs igényeire.
+Gratulálok! Sikeresen betöltött egy CHM-fájlt egy Word-dokumentumba az Aspose.Words for .NET használatával. Ez a nagy teljesítményű könyvtár megkönnyíti a különféle fájlformátumok Word dokumentumokba való integrálását, és robusztus megoldást kínál a dokumentációs igényeire.
 
 ## GYIK
 

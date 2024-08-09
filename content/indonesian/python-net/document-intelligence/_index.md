@@ -12,7 +12,7 @@ Kecerdasan Dokumen adalah bidang mutakhir yang memanfaatkan AI dan pembelajaran 
 
 ## Merangkul Kecerdasan Dokumen Python
 
-Dalam tutorial ini, pengembang akan mengeksplorasi kekuatan Python Document Intelligence dengan Aspose.Words. Pelajari cara mengekstrak teks, mengenali entitas, dan menganalisis struktur dokumen. Fitur-fitur canggih Aspose.Words memungkinkan pengembang untuk mengotomatisasi tugas-tugas manajemen dokumen dan mendapatkan wawasan berharga dari sejumlah besar data tekstual.
+Dalam tutorial ini, pengembang akan mengeksplorasi kekuatan Python Document Intelligence dengan Aspose.Words. Pelajari cara mengekstrak teks, mengenali entitas, dan menganalisis struktur dokumen. Fitur-fitur canggih Aspose.Words memungkinkan pengembang untuk mengotomatiskan tugas-tugas manajemen dokumen dan mendapatkan wawasan berharga dari sejumlah besar data tekstual.
 
 ## Meningkatkan Alur Kerja Pemrosesan Dokumen
 
@@ -24,4 +24,4 @@ Dengan menguasai Kecerdasan Dokumen dengan Aspose.Words untuk Python, pengembang
 
 ## Tutorial Kecerdasan Dokumen Python
 ### [Kecerdasan Dokumen Utama](./master-document-intelligence/)
-Kuasai kecerdasan dokumen dengan Aspose.Words untuk Python. Otomatiskan alur kerja, analisis data, dan proses dokumen secara efisien. Mulai sekarang!
+Kuasai kecerdasan dokumen dengan Aspose.Words untuk Python. Otomatiskan alur kerja, analisis data, dan proses dokumen secara efisien. Mulailah sekarang!

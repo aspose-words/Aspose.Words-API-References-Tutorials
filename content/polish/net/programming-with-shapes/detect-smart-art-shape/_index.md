@@ -10,7 +10,7 @@ url: /pl/net/programming-with-shapes/detect-smart-art-shape/
 
 ## Wstęp
 
-No hej! Czy kiedykolwiek musiałeś programowo pracować z grafiką SmartArt w dokumentach programu Word? Niezależnie od tego, czy automatyzujesz raporty, tworzysz dynamiczne dokumenty, czy po prostu zajmujesz się przetwarzaniem dokumentów, Aspose.Words dla .NET pomoże Ci. W tym samouczku omówimy, jak wykrywać kształty SmartArt w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Każdy krok omówimy w szczegółowym, łatwym do zrozumienia przewodniku. Pod koniec tego artykułu będziesz w stanie bez wysiłku identyfikować kształty SmartArt w dowolnym dokumencie programu Word!
+Hej tam! Czy kiedykolwiek musiałeś programowo pracować z grafiką SmartArt w dokumentach programu Word? Niezależnie od tego, czy automatyzujesz raporty, tworzysz dynamiczne dokumenty, czy po prostu zajmujesz się przetwarzaniem dokumentów, Aspose.Words dla .NET pomoże Ci. W tym samouczku omówimy, jak wykrywać kształty SmartArt w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Każdy krok omówimy w szczegółowym, łatwym do zrozumienia przewodniku. Pod koniec tego artykułu będziesz w stanie bez wysiłku identyfikować kształty SmartArt w dowolnym dokumencie programu Word!
 
 ## Warunki wstępne
 
@@ -21,7 +21,7 @@ Zanim zagłębimy się w szczegóły, upewnijmy się, że wszystko mamy skonfigu
 3. Visual Studio: każda najnowsza wersja powinna działać, ale zalecana jest najnowsza wersja.
 4. .NET Framework: Upewnij się, że jest zainstalowany w twoim systemie.
 
-Gotowy żeby zacząć? Wspaniały! Wskoczmy od razu.
+Gotowy, aby zacząć? Wspaniały! Wskoczmy od razu.
 
 ## Importuj przestrzenie nazw
 
@@ -94,7 +94,7 @@ Aspose.Words dla .NET to potężna biblioteka, która umożliwia programistom pr
 
 ### 3. Jak wykryć inne typy kształtów w dokumencie?
 
- Możesz zmodyfikować zapytanie LINQ, aby sprawdzić inne właściwości lub typy kształtów. Patrz[dokumentacja](https://reference.aspose.com/words/net/) po więcej szczegółów.
+ Możesz zmodyfikować zapytanie LINQ, aby sprawdzić inne właściwości lub typy kształtów. Patrz[dokumentacja](https://reference.aspose.com/words/net/) aby uzyskać więcej szczegółów.
 
 ### 4. Jak uzyskać wsparcie dla Aspose.Words dla .NET?
 

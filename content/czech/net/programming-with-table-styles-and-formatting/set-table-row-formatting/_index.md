@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-table-styles-and-formatting/set-table-row-formatting/
 ---
-## Úvod
+## Zavedení
 
 Pokud si chcete osvojit umění formátování tabulek v dokumentech Word pomocí Aspose.Words for .NET, jste na správném místě. Tento tutoriál vás provede procesem nastavení formátování řádků tabulky a zajistí, že vaše dokumenty budou nejen funkční, ale také estetické. Pojďme se tedy ponořit a přeměnit tyto obyčejné tabulky na dobře formátované!
 
@@ -15,7 +15,7 @@ Pokud si chcete osvojit umění formátování tabulek v dokumentech Word pomoc�
 
 Než se pustíme do výukového programu, ujistěte se, že máte následující předpoklady:
 
-1.  Aspose.Words for .NET – Pokud jste tak ještě neučinili, stáhněte si a nainstalujte jej z[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET – Pokud jste tak ještě neučinili, stáhněte si a nainstalujte jej z[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí – Jakékoli IDE jako Visual Studio, které podporuje .NET.
 3. Základní znalost C# – Pochopení základních pojmů C# vám pomůže hladce pokračovat.
 
@@ -103,7 +103,7 @@ A tady to máte! Úspěšně jste vytvořili formátovanou tabulku v dokumentu a
  Absolutně! Do buněk tabulky můžete vkládat obrázky, tvary a další prvky pomocí`DocumentBuilder` třída.
 
 ### Jak změním zarovnání textu v buňkách tabulky?
- Zarovnání textu můžete změnit nastavením`ParagraphFormat.Alignment` majetek z`DocumentBuilder` objekt.
+ Zarovnání textu můžete změnit nastavením`ParagraphFormat.Alignment` vlastnictvím`DocumentBuilder` objekt.
 
 ### Mohu sloučit buňky v tabulce pomocí Aspose.Words for .NET?
  Ano, buňky můžete sloučit pomocí`CellFormat.HorizontalMerge`a`CellFormat.VerticalMerge` vlastnosti.

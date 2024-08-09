@@ -44,7 +44,7 @@ Först måste du ange sökvägen till katalogen där ditt Word-dokument är lagr
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till ditt dokument.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen till ditt dokument.
 
 ## Steg 2: Ladda dokumentet
 
@@ -115,4 +115,4 @@ foreach (StructuredDocumentTagRangeStart tag in tags)
 	Console.WriteLine(tag.Title);
 ```
 
-Det är allt! Du har framgångsrikt hämtat och bearbetat strukturerade dokumenttaggar i flera sektioner i ditt Word-dokument med Aspose.Words för .NET.
+Det är det! Du har framgångsrikt hämtat och bearbetat strukturerade dokumenttaggar i flera sektioner i ditt Word-dokument med Aspose.Words för .NET.

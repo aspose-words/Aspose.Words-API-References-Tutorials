@@ -204,13 +204,13 @@ options.setImageContrast(0.7f);
 
 ### Wie kann ich einen Rückruf zum Anpassen der Bildspeicherung verwenden?
 
- Um einen Callback für die Anpassung der Bildspeicherung zu verwenden, setzen Sie die`PageSavingCallback` In`ImageSaveOptions` . Erstellen Sie eine Klasse, die das implementiert`IPageSavingCallback` Schnittstelle und überschreiben Sie die`pageSaving` Methode.
+ Um einen Callback für die Anpassung der Bildspeicherung zu verwenden, setzen Sie die`PageSavingCallback` In`ImageSaveOptions` . Erstellen Sie eine Klasse, die das implementiert`IPageSavingCallback` Schnittstelle und überschreiben Sie die`pageSaving` Verfahren.
 
 ```java
 imageSaveOptions.setPageSavingCallback(new HandlePageSavingCallback());
 ```
 
- Erstellen Sie dann eine Klasse, die das implementiert`IPageSavingCallback` Schnittstelle und passen Sie den Dateinamen und den Speicherort im`pageSaving` Methode.
+ Erstellen Sie dann eine Klasse, die das implementiert`IPageSavingCallback` Schnittstelle und passen Sie den Dateinamen und den Speicherort im`pageSaving` Verfahren.
 
 ```java
 private static class HandlePageSavingCallback implements IPageSavingCallback {

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/working-with-comments/comment-resolved-and-replies/
 ---
-## introduzione
+## Introduzione
 
 Se lavori con documenti Word, probabilmente hai avuto a che fare con i commenti. Sono ottimi per la collaborazione, ma gestirli può essere una seccatura. Con Aspose.Words per .NET, puoi automatizzare il processo di risoluzione e risposta ai commenti. Questa guida ti guiderà attraverso i passaggi per fare proprio questo.
 

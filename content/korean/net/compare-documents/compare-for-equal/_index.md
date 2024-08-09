@@ -15,7 +15,7 @@ Word 문서로 작업할 때 두 문서가 동일한지 확인하는 것은 중�
 
 단계별 가이드를 살펴보기 전에 필요한 모든 것이 갖추어져 있는지 확인하겠습니다.
 
-1.  .NET용 Aspose.Words: .NET용 Aspose.Words가 설치되어 있어야 합니다. 아직 갖고 있지 않다면 다음을 수행할 수 있습니다.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+1.  .NET용 Aspose.Words: .NET용 Aspose.Words가 설치되어 있어야 합니다. 아직 갖고 있지 않다면 다음을 수행할 수 있습니다.[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
 2. 개발 환경: .NET 개발 환경이 설정되어 있는지 확인하세요. Visual Studio를 적극 권장합니다.
 3. 샘플 문서: 비교할 두 개의 Word 문서를 준비하십시오.
 

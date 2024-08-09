@@ -16,7 +16,7 @@ url: /ko/net/working-with-section/modify-page-setup-in-all-sections/
 시작하기 전에 필요한 모든 것이 있는지 확인하겠습니다.
 
 1. C#에 대한 기본 지식: C# 구문 및 개념에 대한 지식이 필요합니다.
-2.  .NET용 Aspose.Words: 다음을 수행할 수 있습니다.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/) 그냥 시험해 보는 것이라면,[무료 시험판](https://releases.aspose.com/) 사용할 수 있습니다.
+2.  .NET용 Aspose.Words: 다음을 수행할 수 있습니다.[여기에서 다운로드하세요](https://releases.aspose.com/words/net/) 그냥 시험해 보는 것이라면,[무료 평가판](https://releases.aspose.com/) 사용할 수 있습니다.
 3. Visual Studio: 모든 최신 버전이 작동하지만 최상의 환경을 위해서는 최신 버전을 사용하는 것이 좋습니다.
 4. .NET Framework: 시스템에 설치되어 있는지 확인하세요.
 
@@ -99,7 +99,7 @@ Aspose.Words for .NET은 Word 문서를 프로그래밍 방식으로 작업하�
 
 ### 2. Aspose.Words for .NET을 무료로 사용할 수 있나요?
 
- .NET용 Aspose.Words를 사용해 볼 수 있습니다.[무료 시험판](https://releases.aspose.com/). 장기간 사용하려면 라이센스 구입이 필요합니다.
+ .NET용 Aspose.Words를 사용해 볼 수 있습니다.[무료 평가판](https://releases.aspose.com/). 장기간 사용하려면 라이센스 구입이 필요합니다.
 
 ### 3. 다른 페이지 설정 속성을 어떻게 수정합니까?
 

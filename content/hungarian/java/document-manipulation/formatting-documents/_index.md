@@ -165,7 +165,7 @@ for (Paragraph paragraph : (Iterable<Paragraph>) doc.getChildNodes(NodeType.PARA
 
 ### Hogyan tölthetem le az Aspose.Words for Java programot?
 
- Az Aspose.Words for Java letölthető innen:[ez a link](https://releases.aspose.com/words/java/).
+ Az Aspose.Words for Java letölthető innen:[ezt a linket](https://releases.aspose.com/words/java/).
 
 ### Az Aspose.Words for Java alkalmas összetett dokumentumok létrehozására?
 

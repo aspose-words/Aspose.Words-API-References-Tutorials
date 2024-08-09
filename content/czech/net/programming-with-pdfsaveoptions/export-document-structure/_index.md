@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/export-document-structure/
 ---
-## Úvod
+## Zavedení
 
 Procházet se světem manipulace s dokumenty vám může někdy připadat jako bloudění hustým lesem bez mapy. Ale nebojte se, máme dokonalého průvodce, který vám pomůže najít cestu! Dnes se ponoříme do kouzelného světa exportu struktur dokumentů Wordu do PDF pomocí Aspose.Words for .NET. Ať už jste zkušený vývojář nebo teprve začínáte, tento průvodce vás provede každým krokem s jasností a přesností.
 
@@ -67,7 +67,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportDocumentStructure.pdf", save
 
 ## Závěr
 
-Gratulujeme! Úspěšně jste exportovali strukturu dokumentu aplikace Word do PDF pomocí Aspose.Words for .NET. Tato funkce je neuvěřitelně užitečná pro zachování rozvržení dokumentu a usnadňuje procházení složitých souborů PDF. Pomocí této příručky nyní můžete s jistotou převádět dokumenty a využívat výkonné možnosti Aspose.Words.
+Gratuluji! Úspěšně jste exportovali strukturu dokumentu aplikace Word do PDF pomocí Aspose.Words for .NET. Tato funkce je neuvěřitelně užitečná pro zachování rozvržení dokumentu a usnadňuje procházení složitých souborů PDF. Pomocí této příručky nyní můžete s jistotou převádět dokumenty a využívat výkonné možnosti Aspose.Words.
 
 ## FAQ
 

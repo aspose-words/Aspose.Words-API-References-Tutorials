@@ -8,7 +8,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-loadoptions/set-ms-word-version/
 ---
-## Úvod
+## Zavedení
 
 Přistihli jste se někdy, že potřebujete pracovat s konkrétními verzemi dokumentů MS Word, ale nevíte, jak je programově nastavit? Nejsi sám! V tomto tutoriálu projdeme procesem nastavení verze MS Word pomocí Aspose.Words for .NET. Jedná se o fantastický nástroj, díky kterému je manipulace s dokumenty aplikace Word hračkou. Ponoříme se do toho nejnutnějšího a rozebereme každý krok, abychom se ujistili, že vše funguje hladce. Jste připraveni začít? Pojďme se ponořit!
 
@@ -60,7 +60,7 @@ Document doc = new Document(dataDir + "Document.docx", loadOptions);
 
 ## Krok 4: Uložte dokument
 
-Nakonec, jakmile je váš dokument načten a jsou provedeny požadované manipulace, uložíte jej. Je to jako stisknout tlačítko Uložit po provedení změn ve Wordu.
+Nakonec, jakmile je váš dokument načten a jsou provedeny všechny požadované manipulace, uložíte jej. Je to jako stisknout tlačítko Uložit po provedení změn ve Wordu.
 
 ```csharp
 // Uložte dokument

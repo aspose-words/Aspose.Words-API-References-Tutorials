@@ -15,7 +15,7 @@ Trong hướng dẫn này, chúng ta sẽ khám phá cách làm việc với d�
 ## Điều kiện tiên quyết
 
 Trước khi chúng ta bắt đầu, hãy đảm bảo bạn có sẵn các điều kiện tiên quyết sau:
-- [Aspose.Words cho Java](https://products.aspose.com/words/java/) Cài đặt.
+- [Aspose.Words cho Java](https://products.aspose.com/words/java/) đã cài đặt.
 - Các tệp dữ liệu XML mẫu cho khách hàng, đơn đặt hàng và nhà cung cấp.
 - Tài liệu Word mẫu cho đích phối thư.
 

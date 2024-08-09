@@ -82,7 +82,7 @@ Setiap bidang formulir memiliki berbagai properti yang dapat disesuaikan untuk m
 
 ### Menetapkan Nama Bidang
 
-Nama bidang memberikan pengidentifikasi unik untuk setiap bidang formulir, sehingga memudahkan pengelolaan data yang diambil. Tetapkan nama bidang menggunakan`Name` Properti:
+Nama bidang memberikan pengidentifikasi unik untuk setiap bidang formulir, sehingga memudahkan pengelolaan data yang diambil. Tetapkan nama bidang menggunakan`Name` milik:
 
 ```python
 text_input_field.name = "full_name"
@@ -93,7 +93,7 @@ date_picker.name = "birth_date"
 
 ### Menambahkan Teks Placeholder
 
- Teks placeholder di bidang masukan teks memandu pengguna pada format masukan yang diharapkan. Menggunakan`PlaceholderText` properti untuk menambahkan placeholder:
+ Teks placeholder di bidang masukan teks memandu pengguna pada format masukan yang diharapkan. Gunakan`PlaceholderText` properti untuk menambahkan placeholder:
 
 ```python
 text_input_field.placeholder_text = "Enter your full name"
@@ -142,7 +142,7 @@ Bidang masukan teks memberikan cara mudah untuk menangkap data tekstual, menjadi
 
 ### Kotak centang dan Tombol Radio
 
-Kotak centang dan tombol radio ideal untuk skenario yang memerlukan pilihan pilihan ganda. Kotak centang memungkinkan pengguna untuk memilih beberapa opsi, sementara tombol radio membatasi pengguna pada satu pilihan.
+Kotak centang dan tombol radio ideal untuk skenario yang memerlukan pilihan pilihan ganda. Kotak centang memungkinkan pengguna untuk memilih beberapa opsi, sedangkan tombol radio membatasi pengguna pada satu pilihan.
 
 Untuk membuat bidang formulir kotak centang, gunakan
 
@@ -232,7 +232,7 @@ Menguasai bidang formulir dan pengambilan data di dokumen Word adalah keterampil
 
 Dalam panduan ini, kita telah menjelajahi dasar-dasar bidang formulir, jenis bidang formulir, mengatur properti, dan menyesuaikan perilakunya. Kami juga telah membahas praktik terbaik untuk desain formulir dan menawarkan wawasan dalam mengoptimalkan formulir dokumen untuk mesin pencari.
 
-Dengan memanfaatkan kekuatan Aspose.Words untuk Python, Anda dapat membuat dokumen yang tidak hanya menangkap data secara efektif namun juga meningkatkan keterlibatan pengguna dan menyederhanakan alur kerja pemrosesan data. Sekarang, Anda siap memulai perjalanan Anda untuk menjadi ahli bidang formulir dan pengambilan data dalam dokumen Word.
+Dengan memanfaatkan kekuatan Aspose.Words untuk Python, Anda dapat membuat dokumen yang tidak hanya menangkap data secara efektif namun juga meningkatkan keterlibatan pengguna dan menyederhanakan alur kerja pemrosesan data. Sekarang, Anda siap memulai perjalanan Anda untuk menjadi ahli bidang formulir dan pengambilan data di dokumen Word.
 
 ## FAQ
 
@@ -246,7 +246,7 @@ pip install aspose-words
 
 ### Bisakah saya menetapkan nilai default untuk bidang formulir?
 
- Ya, Anda bisa mengatur nilai default untuk bidang formulir menggunakan properti yang sesuai. Misalnya, untuk menyetel teks default pada kolom input teks, gunakan`text` Properti.
+ Ya, Anda bisa mengatur nilai default untuk bidang formulir menggunakan properti yang sesuai. Misalnya, untuk menyetel teks default pada kolom input teks, gunakan`text` milik.
 
 ### Apakah kolom formulir dapat diakses oleh pengguna penyandang disabilitas?
 

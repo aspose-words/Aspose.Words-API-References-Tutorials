@@ -81,7 +81,7 @@ Cette ligne de code enregistre le document dans le chemin spécifié avec les op
 
 ## Conclusion
 
-Et voila! Vous venez d'apprendre à exposer le contrôle de seuil pour la binarisation TIFF dans un document Word à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite la manipulation des documents Word de différentes manières, notamment en les convertissant en différents formats avec des paramètres personnalisés. Essayez-le et voyez comment il peut simplifier vos tâches de traitement de documents !
+Et voilà ! Vous venez d'apprendre à exposer le contrôle de seuil pour la binarisation TIFF dans un document Word à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite la manipulation des documents Word de différentes manières, notamment en les convertissant en différents formats avec des paramètres personnalisés. Essayez-le et voyez comment il peut simplifier vos tâches de traitement de documents !
 
 ## FAQ
 

@@ -2,80 +2,94 @@
 title: İşleme Sırasında Varsayılan Yazı Tipini Belirtin
 linktitle: İşleme Sırasında Varsayılan Yazı Tipini Belirtin
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak bir belgeyi oluştururken varsayılan yazı tipini belirlemeye yönelik adım adım kılavuz.
+description: Aspose.Words for .NET kullanarak Word belgelerini işlerken varsayılan yazı tipini nasıl belirleyeceğinizi öğrenin. Platformlar arasında tutarlı belge görünümü sağlayın.
 type: docs
 weight: 10
 url: /tr/net/working-with-fonts/specify-default-font-when-rendering/
 ---
+## giriiş
 
-Bu eğitimde, Aspose.Words for .NET kullanarak bir belgeyi oluştururken varsayılan yazı tipini belirlemek için size adım adım yol göstereceğiz. Birlikte verilen C# kaynak kodunu açıklayacağız ve bu özelliği anlamanıza ve kendi projelerinizde uygulamanıza yardımcı olacak kapsamlı bir kılavuz sunacağız. Bu eğitimin sonunda, Aspose.Words for .NET kullanarak belgelerinizi işlerken kullanılacak varsayılan yazı tipini nasıl belirleyeceğinizi öğreneceksiniz.
+Word belgelerinizin farklı platformlarda doğru şekilde işlenmesini sağlamak, özellikle yazı tipi uyumluluğu söz konusu olduğunda zor olabilir. Tutarlı görünümü korumanın bir yolu, belgelerinizi PDF veya diğer formatlara dönüştürürken varsayılan bir yazı tipi belirlemektir. Bu eğitimde, Aspose.Words for .NET'i kullanarak varsayılan yazı tipini nasıl ayarlayacağınızı keşfedeceğiz, böylece belgeleriniz nerede görüntülenirse görüntülensin harika görünür.
 
-## 1. Adım: Belge dizinini tanımlayın
-Öncelikle belgeler dizininizin yolunu ayarlamanız gerekir. Bu, düzenlenmiş işlenmiş belgenizi kaydetmek istediğiniz konumdur. "BELGELERİNİZ DİZİNİ"ni uygun yolla değiştirin.
+## Önkoşullar
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Koda dalmadan önce, bu eğitimde takip etmeniz gerekenleri ele alalım:
 
-## 2. Adım: Oluşturulacak belgeyi yükleyin
- Daha sonra, belgeyi kullanarak oluşturulacak belgeyi yüklemeniz gerekir.`Document` sınıf. Doğru belge yolunu belirttiğinizden emin olun.
+- Aspose.Words for .NET: En son sürümün kurulu olduğundan emin olun. İndirebilirsin[Burada](https://releases.aspose.com/words/net/).
+- Geliştirme Ortamı: Visual Studio veya başka herhangi bir .NET geliştirme ortamı.
+- Temel C# Bilgisi: Bu eğitimde C# programlama konusunda bilgili olduğunuz varsayılmaktadır.
 
-```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
-```
+## Ad Alanlarını İçe Aktar
 
-## 3. Adım: Varsayılan yazı tipini ayarlayın
- Artık, oluşturma sırasında kullanılacak varsayılan yazı tipini, örneğini oluşturarak belirleyebilirsiniz.`FontSettings` sınıf ve ayarlama`DefaultFontName` mülkiyeti`DefaultFontSubstitution` itiraz`DefaultFontSubstitution` nesne`SubstitutionSettings` ile ilgili`FontSettings`.
+Başlamak için gerekli ad alanlarını içe aktarmanız gerekir. Bunlar Aspose.Words ile çalışmak için gereken sınıflara ve yöntemlere erişmenizi sağlayacaktır.
 
 ```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial Unicode MS";
-doc.FontSettings = fontSettings;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## 4. Adım: İşlenen belgeyi kaydedin
- Son olarak, oluşturulan belgeyi kullanarak bir dosyaya kaydedebilirsiniz.`Save()` yöntemi`Document` sınıf. Doğru yolu ve dosya adını belirttiğinizden emin olun.
+Şimdi varsayılan yazı tipini belirleme sürecini takip edilmesi kolay adımlara ayıralım.
 
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
-```
+## 1. Adım: Belge Dizininizi Kurun
 
-### Aspose.Words for .NET Kullanarak Oluştururken Varsayılan Yazı Tipini Belirleme için örnek kaynak kodu 
+İlk önce belge dizininizin yolunu tanımlayın. Giriş ve çıkış dosyalarınızın saklanacağı yer burasıdır.
 
 ```csharp
 // Belge dizininizin yolu
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+## 2. Adım: Belgenizi Yükleyin
+
+Ardından, oluşturmak istediğiniz belgeyi yükleyin. Bu örnekte "Rendering.docx" adlı bir dosya kullanacağız.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## 3. Adım: Yazı Tipi Ayarlarını Yapılandırın
+
+ Bir örneğini oluşturun`FontSettings` ve varsayılan yazı tipini belirtin. Tanımlanan yazı tipi oluşturma sırasında bulunamazsa Aspose.Words makinedeki en yakın yazı tipini kullanacaktır.
+
+```csharp
 FontSettings fontSettings = new FontSettings();
-// Burada tanımlanan varsayılan yazı tipi oluşturma sırasında bulunamazsa
-// bunun yerine makinedeki en yakın yazı tipi kullanılır.
 fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial Unicode MS";
+```
+
+## Adım 4: Yazı Tipi Ayarlarını Belgeye Uygulayın
+
+Yapılandırılmış yazı tipi ayarlarını belgenize atayın.
+
+```csharp
 doc.FontSettings = fontSettings;
+```
+
+## Adım 5: Belgeyi Kaydedin
+
+Son olarak belgeyi istediğiniz formatta kaydedin. Bu durumda, onu PDF olarak kaydedeceğiz.
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ```
 
 ## Çözüm
-Bu eğitimde Aspose.Words for .NET kullanarak bir belgeyi oluştururken varsayılan yazı tipini nasıl belirleyeceğimizi öğrendik. Bu adım adım kılavuzu izleyerek belgelerinizi oluştururken kullanılacak varsayılan yazı tipini kolayca ayarlayabilirsiniz. Aspose.Words, belgelerinizdeki yazı tipleriyle Kelime İşleme için güçlü ve esnek bir API sunar. Bu bilgiyle belgelerinizin işlenmesini özel ihtiyaçlarınıza göre kontrol edebilir ve özelleştirebilirsiniz.
 
-### SSS'ler
+Bu adımları izleyerek, Word belgelerinizin belirli bir varsayılan yazı tipiyle işlenmesini ve farklı platformlar arasında tutarlılığın korunmasını sağlayabilirsiniz. Bu, özellikle geniş çapta paylaşılan veya farklı yazı tipi kullanılabilirliğine sahip sistemlerde görüntülenen belgeler için yararlı olabilir.
 
-#### S: Aspose.Words'te PDF'ye dönüştürürken varsayılan yazı tipini nasıl belirleyebilirim?
 
- C: Aspose.Words'te PDF'ye dönüştürürken varsayılan yazı tipini belirlemek için`PdfOptions` sınıfı seçin ve ayarlayın`DefaultFontName` İstenilen yazı tipinin adının özelliğini kullanın.
+## SSS'ler
 
-#### S: PDF'ye dönüştürürken varsayılan yazı tipi kullanılamıyorsa ne olur?
+### Aspose.Words'te neden varsayılan bir yazı tipi belirlemelisiniz?
+Varsayılan bir yazı tipi belirlemek, orijinal yazı tipleri kullanılamasa bile belgenizin farklı platformlarda tutarlı görünmesini sağlar.
 
-C: PDF'ye dönüştürürken belirtilen varsayılan yazı tipi mevcut değilse Aspose.Words, dönüştürülen belgedeki metni görüntülemek için yedek bir yazı tipi kullanır. Bu, orijinal yazı tipinden görünümde küçük bir farklılığa neden olabilir.
+### Oluşturma sırasında varsayılan yazı tipi bulunamazsa ne olur?
+Aspose.Words, belgenin görünümünü mümkün olduğu kadar yakın tutmak için makinedeki en yakın yazı tipini kullanacaktır.
 
-#### S: DOCX veya HTML gibi diğer çıktı biçimleri için varsayılan bir yazı tipi belirtebilir miyim?
+### Birden çok varsayılan yazı tipi belirtebilir miyim?
+ Hayır, yalnızca bir varsayılan yazı tipi belirleyebilirsiniz. Ancak belirli durumlar için yazı tipi değiştirmeyi aşağıdaki komutu kullanarak gerçekleştirebilirsiniz:`FontSettings` sınıf.
 
-C: Evet, uygun dönüştürme seçeneklerini kullanarak ve her format için ilgili özelliği ayarlayarak DOCX veya HTML gibi diğer çıktı formatları için varsayılan bir yazı tipi belirleyebilirsiniz.
+### Aspose.Words for .NET, Word belgelerinin tüm sürümleriyle uyumlu mu?
+Evet, Aspose.Words for .NET, DOC, DOCX, RTF ve daha fazlasını içeren çok çeşitli Word belge formatlarını destekler.
 
-#### S: Aspose.Words'te belirtilen varsayılan yazı tipini nasıl kontrol edebilirim?
-
- C: Aspose.Words'te belirtilen varsayılan yazı tipini kontrol etmek için`DefaultFontName` mülkiyeti`PdfOptions` sınıfına gidin ve yapılandırılan yazı tipinin adını alın.
-
-#### S: Belgenin her bölümü için farklı bir varsayılan yazı tipi belirlemek mümkün mü?
-
-C: Evet, her bölüme özel biçimlendirme seçeneklerini kullanarak belgenin her bölümü için farklı bir varsayılan yazı tipi belirlemek mümkündür. Ancak bu, Aspose.Words özellikleri kullanılarak belgenin daha gelişmiş şekilde işlenmesini gerektirir.
+### Sorunla karşılaşırsam nereden destek alabilirim?
+ Aspose topluluğundan ve geliştiricilerden destek alabilirsiniz.[Aspose.Words Destek Forumu](https://forum.aspose.com/c/words/8).

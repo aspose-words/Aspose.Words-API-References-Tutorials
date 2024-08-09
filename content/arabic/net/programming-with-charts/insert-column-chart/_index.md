@@ -43,7 +43,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## الخطوة 2: أدخل مخطط العمود
 
- استخدم ال`InsertChart` طريقة`DocumentBuilder`فئة لإدراج مخطط عمودي.
+ استخدم`InsertChart` طريقة`DocumentBuilder`فئة لإدراج مخطط عمودي.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);

@@ -78,12 +78,12 @@ doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn đã thay đổi thành công nguồn văn hóa cập nhật trường trong Aspose.Words cho .NET. Bằng cách làm theo các bước này, bạn có thể đảm bảo rằng tài liệu Word của mình hiển thị ngày tháng và các giá trị trường khác theo cài đặt văn hóa đã chỉ định. Điều này có thể đặc biệt hữu ích khi tạo tài liệu cho khán giả quốc tế.
+Và bạn có nó! Bạn đã thay đổi thành công nguồn văn hóa cập nhật trường trong Aspose.Words cho .NET. Bằng cách làm theo các bước này, bạn có thể đảm bảo rằng tài liệu Word của mình hiển thị ngày tháng và các giá trị trường khác theo cài đặt văn hóa đã chỉ định. Điều này có thể đặc biệt hữu ích khi tạo tài liệu cho khán giả quốc tế.
 
 ## Câu hỏi thường gặp
 
 ###  Mục đích của việc thiết lập là gì`LocaleId`?
- Các`LocaleId` chỉ định cài đặt văn hóa cho văn bản, điều này ảnh hưởng đến cách định dạng ngày tháng và dữ liệu nhạy cảm với ngôn ngữ khác.
+ các`LocaleId` chỉ định cài đặt văn hóa cho văn bản, điều này ảnh hưởng đến cách định dạng ngày tháng và dữ liệu nhạy cảm với ngôn ngữ khác.
 
 ### Tôi có thể sử dụng ngôn ngữ khác ngoài tiếng Đức không?
  Có, bạn có thể đặt`LocaleId`tới bất kỳ định danh địa phương hợp lệ nào. Ví dụ: 1033 cho tiếng Anh (Hoa Kỳ).

@@ -9,7 +9,7 @@ url: /nl/net/programming-with-markdownsaveoptions/export-into-markdown-with-tabl
 ---
 ## Invoering
 
-Hallo daar! Heeft u zich ooit afgevraagd hoe u uw Word-document kunt exporteren naar Markdown-indeling met perfect uitgelijnde tabellen? Of u nu een ontwikkelaar bent die aan documentatie werkt of gewoon iemand bent die van Markdown houdt, deze handleiding is voor u. We duiken in de kern van het gebruik van Aspose.Words voor .NET om dit te bereiken. Klaar om uw Word-tabellen om te zetten in netjes uitgelijnde Markdown-tabellen? Laten we beginnen!
+Hé daar! Heeft u zich ooit afgevraagd hoe u uw Word-document kunt exporteren naar Markdown-indeling met perfect uitgelijnde tabellen? Of u nu een ontwikkelaar bent die aan documentatie werkt of gewoon iemand bent die van Markdown houdt, deze handleiding is voor u. We duiken in de kern van het gebruik van Aspose.Words voor .NET om dit te bereiken. Klaar om uw Word-tabellen om te zetten in netjes uitgelijnde Markdown-tabellen? Laten we beginnen!
 
 ## Vereisten
 

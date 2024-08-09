@@ -86,12 +86,12 @@ dstDoc.Save(dataDir + "MergedDocument.docx");
 
 ## 結論
 
-現在你就擁有了！透過執行這些步驟，您可以使用 Aspose.Words for .NET 輕鬆附加文檔，而不會遺失格式。無論您是希望簡化文件管理的開發人員還是只是喜歡組織文件的人，本指南都能滿足您的需求。快樂編碼！
+現在你就得到它了！透過執行這些步驟，您可以使用 Aspose.Words for .NET 輕鬆附加文檔，而不會遺失格式。無論您是希望簡化文件管理的開發人員還是只是喜歡組織文件的人，本指南都能滿足您的需求。快樂編碼！
 
 ## 常見問題解答
 
 ### 我可以保留目標文件的編號而不是來源文件的編號嗎？
-是的，您可以修改`ImportFormatOptions`為了達成這個。
+是的，您可以修改`ImportFormatOptions`為了實現這一點。
 
 ### 如果我沒有 Aspose.Words for .NET 怎麼辦？
 您可以從以下位置下載免費試用版[這裡](https://releases.aspose.com/).

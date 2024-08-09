@@ -85,7 +85,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinContinuous.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Chỉ với một vài dòng mã, bạn đã hợp nhất thành công hai tài liệu Word thành một tài liệu liên tục bằng Aspose.Words cho .NET. Quá trình này không chỉ đơn giản mà còn mang lại hiệu quả cao, đảm bảo tài liệu của bạn giữ nguyên định dạng ban đầu.
+Và bạn có nó! Chỉ với một vài dòng mã, bạn đã hợp nhất thành công hai tài liệu Word thành một tài liệu liên tục bằng Aspose.Words cho .NET. Quá trình này không chỉ đơn giản mà còn mang lại hiệu quả cao, đảm bảo tài liệu của bạn giữ nguyên định dạng ban đầu.
 
 ## Câu hỏi thường gặp
 

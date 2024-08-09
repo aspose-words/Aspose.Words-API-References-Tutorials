@@ -14,7 +14,7 @@ url: /sv/java/document-loading-and-saving/configuring-rtf-load-options/
 
 ## Förutsättningar
 
- Innan du börjar, se till att du har Aspose.Words for Java-biblioteket integrerat i ditt projekt. Du kan ladda ner den från[hemsida](https://releases.aspose.com/words/java/).
+ Innan du börjar, se till att du har Aspose.Words for Java-biblioteket integrerat i ditt projekt. Du kan ladda ner den från[webbplats](https://releases.aspose.com/words/java/).
 
 ## Steg 1: Ställa in RTF-laddningsalternativ
 
@@ -45,7 +45,7 @@ Efter att ha laddat RTF-dokumentet kan du utföra olika operationer på det med 
 doc.save("Your Directory Path" + "WorkingWithRtfLoadOptions.RecognizeUtf8Text.rtf");
 ```
 
- Byta ut`"Your Directory Path"` med sökvägen där du vill spara det ändrade dokumentet.
+ Ersätta`"Your Directory Path"` med sökvägen där du vill spara det ändrade dokumentet.
 
 ## Komplett källkod för att konfigurera RTF-laddningsalternativ i Aspose.Words för Java
 

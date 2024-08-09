@@ -8,7 +8,7 @@ weight: 11
 url: /pt/python-net/document-structure-and-content-manipulation/document-comments/
 ---
 
-Os comentários desempenham um papel crucial na colaboração e revisão de documentos, permitindo que vários indivíduos compartilhem suas idéias e sugestões em um documento do Word. Aspose.Words for Python fornece uma API poderosa que permite aos desenvolvedores trabalhar sem esforço com comentários em documentos do Word. Neste artigo, exploraremos como utilizar os recursos de comentários em documentos do Word usando Aspose.Words para Python.
+Os comentários desempenham um papel crucial na colaboração e revisão de documentos, permitindo que vários indivíduos compartilhem suas idéias e sugestões em um documento do Word. Aspose.Words for Python fornece uma API poderosa que permite aos desenvolvedores trabalhar facilmente com comentários em documentos do Word. Neste artigo, exploraremos como utilizar os recursos de comentários em documentos do Word usando Aspose.Words para Python.
 
 ## Introdução
 
@@ -16,7 +16,7 @@ colaboração é um aspecto fundamental da criação de documentos, e os coment�
 
 ## Configurando Aspose.Words para Python
 
- Para começar, você precisa instalar o Aspose.Words para Python. Você pode baixar a biblioteca do[Aspose.Words para Python](https://releases.aspose.com/words/python/) Link para Download. Depois de baixado, você pode instalá-lo usando pip:
+ Para começar, você precisa instalar o Aspose.Words para Python. Você pode baixar a biblioteca do[Aspose.Words para Python](https://releases.aspose.com/words/python/) link para baixar. Depois de baixado, você pode instalá-lo usando pip:
 
 ```python
 pip install aspose-words

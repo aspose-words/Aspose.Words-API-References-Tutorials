@@ -27,7 +27,7 @@ url: /ru/java/document-security/digital-signatures-in-documents/
 Теперь приступим к добавлению цифровой подписи в документ:
 
 ```java
-// Инициализируйте Aspose.Words
+// Инициализировать Aspose.Words
 com.aspose.words.Document doc = new com.aspose.words.Document("your_document.docx");
 
 // Создайте объект DigitalSignature.

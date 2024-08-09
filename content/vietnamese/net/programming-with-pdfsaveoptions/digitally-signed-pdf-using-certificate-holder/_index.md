@@ -2,7 +2,7 @@
 title: Thêm chữ ký số vào PDF bằng Người giữ chứng chỉ
 linktitle: Thêm chữ ký số vào PDF bằng Người giữ chứng chỉ
 second_title: API xử lý tài liệu Aspose.Words
-description: Bảo mật các tệp PDF của bạn bằng chữ ký điện tử bằng Aspose.Words for .NET. Hãy làm theo hướng dẫn từng bước này để thêm chữ ký điện tử vào tệp PDF của bạn một cách dễ dàng.
+description: Bảo mật các tệp PDF của bạn bằng chữ ký điện tử bằng Aspose.Words cho .NET. Hãy làm theo hướng dẫn từng bước này để thêm chữ ký điện tử vào tệp PDF của bạn một cách dễ dàng.
 type: docs
 weight: 10
 url: /vi/net/programming-with-pdfsaveoptions/digitally-signed-pdf-using-certificate-holder/

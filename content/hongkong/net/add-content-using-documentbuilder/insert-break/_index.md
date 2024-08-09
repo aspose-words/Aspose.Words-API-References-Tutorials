@@ -68,7 +68,7 @@ builder.Writeln("This is page 1.");
 
 ## 第 5 步：插入分頁符
 
-有趣的來了。我們需要插入分頁符號以移動到下一頁。就像調用一樣簡單`InsertBreak`方法。
+現在來了有趣的部分。我們需要插入分頁符號以移動到下一頁。就像調用一樣簡單`InsertBreak`方法。
 
 ```csharp
 builder.InsertBreak(BreakType.PageBreak);
@@ -106,11 +106,11 @@ builder.Writeln("This is page 3.");
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
 ```
 
-現在你就擁有了！您已使用 Aspose.Words for .NET 成功建立了 Word 文件並插入了分頁符號。
+現在你就得到它了！您已使用 Aspose.Words for .NET 成功建立了 Word 文件並插入了分頁符號。
 
 ## 結論
 
-那不是很有趣嗎？透過 Aspose.Words for .NET，操作 Word 文件變得輕而易舉。無論您是添加簡單的分頁符號還是執行複雜的文件自動化，這個庫都會讓您的生活變得更加輕鬆。因此，請繼續探索 Aspose.Words 的更多功能。可能性是無止境！
+那不是很有趣嗎？透過 Aspose.Words for .NET，操作 Word 文件變得輕而易舉。無論您是添加簡單的分頁符號還是執行複雜的文件自動化，這個庫都會讓您的生活變得更加輕鬆。因此，請繼續探索 Aspose.Words 的更多功能。可能性是無限的！
 
 ## 常見問題解答
 

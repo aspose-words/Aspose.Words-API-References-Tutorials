@@ -18,7 +18,7 @@ Zanim zagłębisz się w kod, upewnij się, że masz wszystko, czego potrzebujes
 1. Podstawowa znajomość języka C#: Powinieneś czuć się komfortowo w programowaniu w języku C#.
 2. Zainstalowany program Visual Studio: Upewnij się, że na komputerze jest zainstalowany program Visual Studio lub inne środowisko C# IDE.
 3.  Aspose.Words dla .NET: Pobierz i zainstaluj najnowszą wersję Aspose.Words dla .NET ze strony[Wydania](https://releases.aspose.com/words/net/).
-4.  Ważna licencja: Jeśli nie masz licencji, możesz uzyskać[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) dla ewolucji.
+4.  Ważna licencja: Jeśli nie masz licencji, możesz uzyskać[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) do oceny.
 
 ## Krok 1: Skonfiguruj swój projekt
 

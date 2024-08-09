@@ -2,57 +2,72 @@
 title: Aturan Horisontal
 linktitle: Aturan Horisontal
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menyisipkan aturan horizontal dengan Aspose.Words untuk .NET Panduan langkah demi langkah.
+description: Pelajari cara menambahkan aturan horizontal di dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan terperinci langkah demi langkah ini untuk menyempurnakan tata letak dokumen Anda.
 type: docs
 weight: 10
 url: /id/net/working-with-markdown/horizontal-rule/
 ---
+## Perkenalan
 
-Dalam contoh ini, kami akan menunjukkan cara menggunakan fitur aturan horizontal dengan Aspose.Words untuk .NET. Aturan Horizontal digunakan untuk memisahkan bagian dokumen secara visual.
+Pernah ingin menambahkan sentuhan profesionalisme pada dokumen Word Anda? Aturan horizontal, juga dikenal sebagai garis horizontal, adalah cara yang bagus untuk membagi bagian dan membuat konten Anda terlihat bersih dan teratur. Dalam tutorial ini, kita akan mendalami bagaimana Anda dapat dengan mudah menyisipkan aturan horizontal ke dalam dokumen Word Anda menggunakan Aspose.Words untuk .NET. Siap membuat dokumen Anda menonjol? Mari kita mulai!
 
-## Langkah 1: Menggunakan pembuat dokumen
+## Prasyarat
 
-Pertama, kita akan menggunakan pembuat dokumen untuk menambahkan konten ke dokumen kita.
+Sebelum kita masuk ke panduan langkah demi langkah, pastikan Anda memiliki semua yang Anda butuhkan.
+
+-  Aspose.Words for .NET: Pastikan Anda telah menginstal Aspose.Words for .NET. Jika belum, Anda dapat mendownloadnya dari[Asumsikan situs web](https://releases.aspose.com/words/net/).
+- Lingkungan Pengembangan: Anda memerlukan pengaturan lingkungan pengembangan .NET di mesin Anda. Visual Studio adalah pilihan yang bagus.
+- Pengetahuan Dasar C#: Tutorial ini mengasumsikan Anda memiliki pemahaman dasar tentang C# dan .NET.
+
+## Impor Namespace
+
+Untuk memulai, pastikan Anda telah mengimpor namespace yang diperlukan ke proyek C# Anda:
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Tables;
+```
+
+Sekarang, mari kita uraikan proses penambahan aturan horizontal menjadi langkah-langkah sederhana dan mudah diikuti.
+
+## Langkah 1: Inisialisasi Dokumen
+
+Hal pertama yang pertama, Anda perlu menginisialisasi dokumen baru dan pembuat dokumen. Pembuat dokumen adalah pemain kunci di sini karena memungkinkan Anda menambahkan konten ke dokumen.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Langkah 2: Memasukkan aturan horizontal
+Ini menyiapkan dokumen baru di mana kita akan menambahkan aturan horizontal kita.
 
- Kita dapat menyisipkan aturan horizontal menggunakan`InsertHorizontalRule` metode pembuat dokumen.
+## Langkah 2: Masukkan Aturan Horizontal
 
-```csharp
-builder. InsertHorizontalRule();
-```
-
-## Contoh kode sumber untuk aturan horizontal dengan Aspose.Words untuk .NET
+Sekarang sampai pada bagian yang menyenangkan – memasukkan aturan horizontal. Dengan pembuat dokumen, ini sangat mudah.
 
 ```csharp
-// Gunakan pembuat dokumen untuk menambahkan konten ke dokumen.
-DocumentBuilder builder = new DocumentBuilder();
-
-// Sisipkan aturan horizontal.
+// Sisipkan aturan horizontal
 builder.InsertHorizontalRule();
 ```
 
-Selamat! Anda sekarang telah mempelajari cara menggunakan fitur aturan horizontal dengan Aspose.Words untuk .NET.
+Dan itu saja! Anda baru saja menambahkan aturan horizontal ke dokumen Anda.
 
+## Kesimpulan
 
-### FAQ
+Menambahkan aturan horizontal ke dokumen Word Anda menggunakan Aspose.Words untuk .NET sangatlah mudah. Hanya dengan beberapa baris kode, Anda dapat menyempurnakan tampilan dokumen Anda, menjadikannya lebih profesional dan lebih mudah dibaca. Jadi, lain kali Anda ingin menambahkan sedikit kesan pada dokumen Anda, ingatlah trik sederhana namun ampuh ini.
 
-#### T: Bagaimana cara membuat penggaris horizontal di Markdown?
+## FAQ
 
-A: Untuk membuat penggaris horizontal di Markdown, Anda dapat menggunakan salah satu simbol berikut pada baris kosong: tiga tanda bintang (\***), tiga garis (\---), atau tiga garis bawah (\___).
+### Apa yang dimaksud dengan aturan horizontal?
+Aturan horizontal adalah garis yang membentang sepanjang lebar halaman atau bagian, digunakan untuk memisahkan konten agar lebih mudah dibaca dan diatur.
 
-#### T: Dapatkah saya menyesuaikan tampilan penggaris horizontal di Markdown?
+### Bisakah saya menyesuaikan tampilan aturan horizontal?
+Ya, Aspose.Words memungkinkan Anda menyesuaikan gaya, lebar, tinggi, dan perataan aturan horizontal.
 
-J: Dalam Markdown standar, tidak ada cara untuk menyesuaikan tampilan penggaris horizontal. Namun, beberapa editor dan ekstensi Markdown tingkat lanjut menawarkan fitur penyesuaian tambahan.
+### Apakah saya memerlukan alat khusus untuk menggunakan Aspose.Words untuk .NET?
+Anda memerlukan lingkungan pengembangan .NET seperti Visual Studio dan salinan Aspose.Words untuk .NET.
 
-#### T: Apakah penggaris horizontal didukung oleh semua editor Markdown?
+### Apakah Aspose.Words untuk .NET gratis?
+ Aspose.Words untuk .NET adalah produk berbayar, tetapi Anda bisa mendapatkan a[uji coba gratis](https://releases.aspose.com/) atau a[izin sementara](https://purchase.aspose.com/temporary-license/).
 
-J: Ya, sebagian besar editor penurunan harga mendukung penggaris horizontal. Namun, sebaiknya periksa dokumentasi vendor spesifik Anda untuk memastikannya didukung.
-
-#### T: Elemen apa lagi yang bisa saya buat di Markdown?
-
-J: Selain penggaris horizontal, Anda dapat membuat judul, paragraf, daftar, link, gambar, tabel, dan lainnya di Markdown.
+### Di mana saya bisa mendapatkan dukungan untuk Aspose.Words untuk .NET?
+ Anda bisa mendapatkan dukungan dari[Forum dukungan Aspose.Words](https://forum.aspose.com/c/words/8).

@@ -101,4 +101,4 @@ Oui, vous pouvez appliquer différents formats, styles et polices à chaque sect
 Absolument! Aspose.Words for Python est largement utilisé pour générer différents types de rapports et de documents avec un formatage précis.
 
 ### Où puis-je accéder à la documentation et aux téléchargements ?
- Visiter le[Documentation Aspose.Words pour Python](https://reference.aspose.com/words/python-net/) et téléchargez la bibliothèque depuis[Aspose.WordsPython versions](https://releases.aspose.com/words/python/).
+ Visitez le[Documentation Aspose.Words pour Python](https://reference.aspose.com/words/python-net/) et téléchargez la bibliothèque depuis[Aspose.WordsPython versions](https://releases.aspose.com/words/python/).

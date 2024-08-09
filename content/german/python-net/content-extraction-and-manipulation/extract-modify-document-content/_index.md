@@ -62,7 +62,7 @@ run.get_font().set_color(255, 0, 0)
 
 ## Text ersetzen
 
- Das Ersetzen von Text erfolgt über die`replace` Methode:
+ Das Ersetzen von Text erfolgt über die`replace` Verfahren:
 
 ```python
 doc.get_range().replace("old_text", "new_text", False, False)
@@ -70,7 +70,7 @@ doc.get_range().replace("old_text", "new_text", False, False)
 
 ## Bilder hinzufügen und ändern
 
- Bilder können hinzugefügt oder ersetzt werden mit dem`insert_image` Methode:
+ Bilder können hinzugefügt oder ersetzt werden mit dem`insert_image` Verfahren:
 
 ```python
 shape = doc.get_first_section().get_body().append_child(asposewords.Drawing.Shape(doc, asposewords.Drawing.ShapeType.IMAGE))
@@ -107,7 +107,7 @@ header.get_paragraphs().add("Header content")
 
 ## Hinzufügen von Hyperlinks
 
- Hyperlinks können hinzugefügt werden mit dem`insert_hyperlink` Methode:
+ Hyperlinks können hinzugefügt werden mit dem`insert_hyperlink` Verfahren:
 
 ```python
 run = doc.get_first_section().get_body().get_first_paragraph().get_runs().get(0)

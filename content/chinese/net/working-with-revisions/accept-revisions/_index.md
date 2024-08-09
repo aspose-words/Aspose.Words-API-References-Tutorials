@@ -2,88 +2,40 @@
 title: 接受修订
 linktitle: 接受修订
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 接受对 Word 文档的修订
+description: 使用 Aspose.Words for .NET 掌握文档修订。学习如何轻松跟踪、接受和拒绝更改。提升您的文档管理技能。
 type: docs
 weight: 10
 url: /zh/net/working-with-revisions/accept-revisions/
 ---
+## 介绍
 
-在本教程中，我们将引导您使用 Aspose.Words for .NET 的“接受修订”功能接受对 Word 文档的修订。按照以下步骤了解源代码并接受对文档的更改。
+您是否曾发现自己陷入了文档修订的迷宫中，难以跟踪多个贡献者所做的每项更改？使用 Aspose.Words for .NET，管理 Word 文档中的修订变得轻而易举。这个强大的库允许开发人员轻松跟踪、接受和拒绝更改，确保您的文档保持井然有序和最新。在本教程中，我们将逐步介绍使用 Aspose.Words for .NET 处理文档修订的过程，从初始化文档到接受所有更改。
 
-## 步骤 1：添加和编辑文档内容
+## 先决条件
 
-在此示例中，我们正在创建文档并添加内容。我们使用几个段落来说明更改和修订。操作方法如下：
+在开始之前，请确保您已满足以下先决条件：
 
-```csharp
-//文档目录的路径。
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-Document doc = new Document();
-Body body = doc.FirstSection.Body;
-Paragraph para = body.FirstParagraph;
+- 您的机器上安装了 Visual Studio。
+- .NET框架（最好是最新版本）。
+-  Aspose.Words for .NET 库。您可以下载它[这里](https://releases.aspose.com/words/net/).
+- 对 C# 编程有基本的了解。
 
-//在第一段添加文本，然后再添加两段。
-para.AppendChild(new Run(doc, "Paragraph 1. "));
-body.AppendParagraph("Paragraph 2.");
-body.AppendParagraph("Paragraph 3.");
-```
+现在，让我们了解具体细节，看看如何使用 Aspose.Words for .NET 掌握文档修订。
 
-## 第 2 步：跟踪评论并添加评论
+## 导入命名空间
 
-我们启用修订跟踪并向文档添加修订。操作如下：
+首先，您需要导入使用 Aspose.Words 所需的命名空间。在代码文件顶部添加以下使用指令：
 
 ```csharp
-doc.StartTrackRevisions("John Doe", DateTime.Now);
-
-//此段落是修订版，将设置相应的“IsInsertRevision”标志。
-para = body.AppendParagraph("Paragraph 4.");
-Assert.True(para.IsInsertRevision);
+using Aspose.Words;
+using Aspose.Words.Revision;
 ```
 
-## 步骤 3：删除段落并管理修订
+让我们将这个过程分解成几个易于管理的步骤。每个步骤都会详细解释，以确保您理解代码的每个部分。
 
-我们删除一个段落并检查已保存的修订。操作如下：
+## 步骤 1：初始化文档
 
-```csharp
-ParagraphCollection paragraphs = body.Paragraphs;
-Assert.AreEqual(4, paragraphs.Count);
-para = paragraphs[2];
-para.Remove();
-
-//由于我们正在跟踪修订，该段落仍存在于文档中，因此将设置“IsDeleteRevision”标志
-//并将作为评论显示在 Microsoft Word 中，直到我们接受或拒绝所有评论。
-Assert.AreEqual(4, paragraphs.Count);
-Assert.True(para.IsDeleteRevision);
-```
-
-## 步骤 4：接受更改
-
-我们接受对文档的所有更改。方法如下：
-
-```csharp
-doc.AcceptAllRevisions();
-Assert.AreEqual(3, paragraphs.Count);
-Assert.That(para, Is.Empty);
-```
-
-## 第 5 步：停止跟踪评论
-
-我们将停止跟踪修订，这样对文档的更改将不再显示为修订。具体方法如下：
-
-```csharp
-doc.StopTrackRevisions();
-```
-## 步骤 6：保存文档
-
-插入文本输入表单字段后，使用`Save`方法。请确保提供适当的文件路径：
-
-```csharp
-doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
-```
-
-### 使用 Aspose.Words for .NET 接受修订的示例源代码
-
-以下是使用 Aspose.Words for .NET 接受文档更改的完整源代码：
-
+首先，我们需要创建一个新文档并添加一些段落。这将为跟踪修订奠定基础。
 
 ```csharp
 //文档目录的路径。
@@ -96,93 +48,102 @@ Paragraph para = body.FirstParagraph;
 para.AppendChild(new Run(doc, "Paragraph 1. "));
 body.AppendParagraph("Paragraph 2. ");
 body.AppendParagraph("Paragraph 3. ");
+```
 
-//我们有三个段落，其中没有一个被登记为任何类型的修订
-//如果我们在跟踪修订时添加或删除文档中的任何内容，
-//它们将会在文档中显示，并且可以被接受/拒绝。
+在此步骤中，我们创建了一个新文档并在其中添加了三个段落。这些段落将作为我们修订跟踪的基准。
+
+## 第 2 步：开始跟踪修订
+
+接下来，我们需要启用修订跟踪。这使我们能够捕获对文档所做的任何更改。
+
+```csharp
+//开始跟踪修订。
 doc.StartTrackRevisions("John Doe", DateTime.Now);
+```
 
+通过致电`StartTrackRevisions`，我们使文档能够跟踪所有后续更改。作者姓名和当前日期作为参数传递。
+
+## 步骤 3：添加修订
+
+现在已启用修订跟踪，让我们添加一个新段落。此添加将被标记为修订。
+
+```csharp
 //此段落是一次修订，并将设置相应的“IsInsertRevision”标志。
 para = body.AppendParagraph("Paragraph 4. ");
-Assert.True(para.IsInsertRevision);
+```
 
+这里添加了一个新段落（“第 4 段”）。由于启用了修订跟踪，因此此段落被标记为修订。
+
+## 步骤 4：删除段落
+
+接下来，我们将删除一个现有段落并观察如何跟踪修订。
+
+```csharp
 //获取文档的段落集合并删除一个段落。
 ParagraphCollection paragraphs = body.Paragraphs;
-Assert.AreEqual(4, paragraphs.Count);
 para = paragraphs[2];
 para.Remove();
+```
 
-//由于我们正在跟踪修订，该段落仍存在于文档中，将设置“IsDeleteRevision”
-//并将在 Microsoft Word 中显示为修订，直到我们接受或拒绝所有修订。
-Assert.AreEqual(4, paragraphs.Count);
-Assert.True(para.IsDeleteRevision);
+在此步骤中，删除了第三段。由于修订跟踪，此删除被记录下来，并且该段落被标记为删除，而不是立即从文档中删除。
 
-//一旦我们接受更改，删除修订段落就会被删除。
+## 步骤 5：接受所有修订
+
+最后，让我们接受所有跟踪的修订，巩固文档中的更改。
+
+```csharp
+//接受所有修改。
 doc.AcceptAllRevisions();
-Assert.AreEqual(3, paragraphs.Count);
-Assert.That(para, Is.Empty);
+```
 
-//停止修订跟踪会使该文本显示为普通文本。
-//当文档发生更改时，修订不被计算在内。
+通过致电`AcceptAllRevisions`，我们确保所有更改（添加和删除）均被接受并应用于文档。修订不再被标记并集成到文档中。
+
+## 步骤 6：停止跟踪修订
+
+### 禁用修订跟踪
+
+总而言之，我们可以禁用修订跟踪以停止记录进一步的更改。
+
+```csharp
+//停止跟踪修订。
 doc.StopTrackRevisions();
+```
 
+此步骤将停止文档跟踪任何新的更改，并将所有后续编辑视为常规内容。
+
+## 步骤 7：保存文档
+
+最后将修改后的文档保存到指定目录。
+
+```csharp
 //保存文档。
 doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
 ```
+
+通过保存文档，我们确保所有更改和接受的修订都得到保留。
+
 ## 结论
 
-在本教程中，我们学习了如何使用 Aspose.Words for .NET 的“接受修订”功能接受 Word 文档中的修订。我们按照以下步骤添加和编辑文档内容、跟踪修订、删除修订段落、接受所有更改以及停止跟踪修订。现在，您可以应用这些知识，使用 Aspose.Words for .NET 有效地管理您自己的 Word 文档中的修订。
+管理文档修订可能是一项艰巨的任务，但使用 Aspose.Words for .NET，它变得简单而高效。通过遵循本指南中概述的步骤，您可以轻松跟踪、接受和拒绝 Word 文档中的更改，确保您的文档始终是最新且准确的。那么，为什么要等呢？立即进入 Aspose.Words 的世界并简化您的文档管理！
 
-### 常见问题解答
+## 常见问题解答
 
-#### 问：如何在 Aspose.Words for .NET 中启用修订跟踪？
+### 如何开始跟踪 Aspose.Words for .NET 中的修订？
 
-#### 解决方案 1：
+您可以通过致电开始跟踪修订`StartTrackRevisions`方法在您的文档对象上并传递作者的姓名和当前日期。
 
-答：要在 Aspose.Words for .NET 中启用修订跟踪，请使用`StartTrackRevisions`方法`Document`对象并指定修订跟踪的作者姓名和开始日期。
+### 我可以随时停止跟踪修订吗？
 
-```csharp
-doc.StartTrackRevisions("John Doe", DateTime.Now);
-```
+是的，您可以通过致电`StopTrackRevisions`文档对象上的方法。
 
-#### 解决方案 2：
+### 如何接受文档中的所有修订？
 
-答：您还可以使用`Document`接受的构造函数`trackRevisions`和`author`参数。
+要接受所有修订，请使用`AcceptAllRevisions`文档对象上的方法。
 
-```csharp
-Document doc = new Document("document.docx", new LoadOptions { TrackRevisions = true, Author = "John Doe" });
-```
+### 我可以拒绝特定的修订吗？
 
-#### 问：如何使用 Aspose.Words for .NET 接受文档中的所有更改？
+是的，您可以通过导航到特定修订版本并使用`Reject`方法。
 
-答：使用`AcceptAllRevisions`方法`Document`对象接受对文档所做的所有更改。
+### 我可以在哪里下载 Aspose.Words for .NET？
 
-```csharp
-doc.AcceptAllRevisions();
-```
-
-#### 问：如何保存已接受修订的修改文档？
-
-使用`Save`方法`Document`对象保存修改后的文档并接受修订。请确保提供正确的文件路径。
-
-```csharp
-doc.Save("path/to/the/document.docx");
-```
-
-#### 问：如何停止跟踪 Aspose.Words for .NET 中的修订？
-
-答：使用`StopTrackRevisions`方法`Document`反对停止跟踪修订。
-
-```csharp
-doc.StopTrackRevisions();
-```
-
-#### 问：如何使用 Aspose.Words for .NET 删除文档中修订的段落？
-
-答：要删除文档中修订的段落，您可以使用`Remove`段落收集的方法。
-
-```csharp
-ParagraphCollection paragraphs = body.Paragraphs;
-Paragraph para = paragraphs[2];
-para.Remove();
-```
+您可以从[下载链接](https://releases.aspose.com/words/net/).

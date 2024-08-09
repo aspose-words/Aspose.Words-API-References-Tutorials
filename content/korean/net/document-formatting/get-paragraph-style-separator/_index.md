@@ -10,7 +10,7 @@ url: /ko/net/document-formatting/get-paragraph-style-separator/
 
 ## 소개
 
-Word 문서의 미로를 헤쳐나가다가 교활한 단락 스타일 구분 기호에 걸려 넘어진 적이 있습니까? 그곳에 가보신 분이라면 투쟁이 현실이라는 것을 아실 것입니다. 하지만 그거 알아? .NET용 Aspose.Words를 사용하면 이러한 구분 기호를 쉽게 식별하고 처리할 수 있습니다. 이 튜토리얼을 자세히 살펴보고 여러분을 단락 스타일 구분 전문가로 만들어 보세요!
+Word 문서의 미로를 헤쳐나가다가 교활한 단락 스타일 구분 기호에 걸려 넘어진 적이 있습니까? 그곳에 가보신 분이라면 투쟁이 현실이라는 것을 아실 것입니다. 하지만 그거 알아요? .NET용 Aspose.Words를 사용하면 이러한 구분 기호를 쉽게 식별하고 처리할 수 있습니다. 이 튜토리얼을 자세히 살펴보고 여러분을 단락 스타일 구분 전문가로 만들어 보세요!
 
 ## 전제 조건
 
@@ -99,4 +99,4 @@ using System;
  에서 지원을 받으실 수 있습니다.[Aspose.Words 포럼](https://forum.aspose.com/c/words/8).
 
 ### Aspose.Words를 무료로 사용할 수 있나요?
- Aspose.Words는 다음을 제공합니다.[무료 시험판](https://releases.aspose.com/) 또한 제공합니다[임시 라이센스](https://purchase.aspose.com/temporary-license/) 평가를 위해.
+ Aspose.Words는 다음을 제공합니다.[무료 평가판](https://releases.aspose.com/) 또한 제공합니다[임시 라이센스](https://purchase.aspose.com/temporary-license/) 평가를 위해.

@@ -33,7 +33,7 @@ import com.aspose.words.Document;
 
 public class DocumentCombination {
     public static void main(String[] args) {
-        // Инициализируйте Aspose.Words
+        // Инициализировать Aspose.Words
         Document doc = new Document();
     }
 }
@@ -78,7 +78,7 @@ import com.aspose.words.Document;
 
 public class DocumentCloning {
     public static void main(String[] args) {
-        // Инициализируйте Aspose.Words
+        // Инициализировать Aspose.Words
         Document doc = new Document("source_document.docx");
     }
 }

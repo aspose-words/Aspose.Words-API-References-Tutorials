@@ -15,7 +15,7 @@ Khi nói đến thao tác tài liệu, việc thiết lập các phần định 
 
 Trước khi đi sâu vào mã, hãy đề cập đến những gì bạn cần để bắt đầu.
 
--  Aspose.Words for .NET: Bạn cần cài đặt Aspose.Words for .NET. Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Bạn cần cài đặt Aspose.Words for .NET. bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 - Môi trường phát triển: Bất kỳ IDE tương thích .NET nào (ví dụ: Visual Studio).
 - Kiến thức cơ bản về C#: Cần phải làm quen với lập trình C#.
 
@@ -31,7 +31,7 @@ using Aspose.Words.Saving;
 
 ## Bước 1: Khởi tạo Document và DocumentBuilder
 
- Hãy bắt đầu bằng cách khởi tạo`Document`Và`DocumentBuilder` các đối tượng. Các`DocumentBuilder` là một lớp trợ giúp giúp đơn giản hóa việc tạo và thao tác tài liệu.
+ Hãy bắt đầu bằng việc khởi tạo`Document`Và`DocumentBuilder` đồ vật. các`DocumentBuilder` là một lớp trợ giúp giúp đơn giản hóa việc tạo và thao tác tài liệu.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu.
@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.SetPageSetupAndSection
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bằng cách làm theo các bước đơn giản này, bạn đã học được cách thiết lập hướng trang, điều chỉnh lề và chọn khổ giấy bằng Aspose.Words for .NET. Những tính năng này cho phép bạn tạo các tài liệu có cấu trúc tốt và được định dạng chuyên nghiệp theo chương trình.
+Và bạn có nó! Bằng cách làm theo các bước đơn giản này, bạn đã học được cách thiết lập hướng trang, điều chỉnh lề và chọn khổ giấy bằng Aspose.Words for .NET. Những tính năng này cho phép bạn tạo các tài liệu có cấu trúc tốt và được định dạng chuyên nghiệp theo chương trình.
 
 Cho dù bạn đang làm việc trên một dự án nhỏ hay xử lý việc xử lý tài liệu quy mô lớn, việc nắm vững các thiết lập cơ bản này có thể nâng cao đáng kể khả năng trình bày và khả năng sử dụng tài liệu của bạn. Đi sâu hơn vào[Tài liệu Aspose.Words](https://reference.aspose.com/words/net/) để biết thêm các tính năng nâng cao và tùy chọn tùy chỉnh.
 

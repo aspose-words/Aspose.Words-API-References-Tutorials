@@ -88,7 +88,7 @@ public void ShowHideBookmarkedContent(Document doc, string bookmarkName, bool is
 
 ### รายละเอียดของวิธีการ
 
--  การดึงบุ๊กมาร์ก:`Bookmark bm = doc.Range.Bookmarks[bookmarkName];` ดึงบุ๊กมาร์ก
+-  การเรียกค้นบุ๊กมาร์ก:`Bookmark bm = doc.Range.Bookmarks[bookmarkName];` เรียกบุ๊กมาร์ก
 - Node Traversal: เราสำรวจโหนดภายในบุ๊กมาร์ก
 -  Visibility Toggle: หากโหนดเป็น`Run` (ข้อความต่อเนื่องกัน) เราตั้งค่าไว้`Hidden` คุณสมบัติ.
 

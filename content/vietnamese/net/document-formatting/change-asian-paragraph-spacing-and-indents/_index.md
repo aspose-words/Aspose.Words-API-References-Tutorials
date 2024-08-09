@@ -9,13 +9,13 @@ url: /vi/net/document-formatting/change-asian-paragraph-spacing-and-indents/
 ---
 ## Giới thiệu
 
-Này! Bạn đã bao giờ tự hỏi làm thế nào để điều chỉnh khoảng cách và mức thụt lề trong tài liệu Word, đặc biệt là khi xử lý kiểu chữ Châu Á chưa? Nếu bạn đang làm việc với các tài liệu bao gồm các ngôn ngữ như tiếng Trung, tiếng Nhật hoặc tiếng Hàn, bạn có thể nhận thấy rằng cài đặt mặc định không phải lúc nào cũng phù hợp. Đừng sợ! Trong hướng dẫn này, chúng ta sẽ đi sâu vào cách bạn có thể thay đổi khoảng cách và thụt lề đoạn văn kiểu Châu Á bằng cách sử dụng Aspose.Words cho .NET. Việc này dễ dàng hơn bạn nghĩ và có thể làm cho tài liệu của bạn trông chuyên nghiệp hơn nhiều. Sẵn sàng để cải thiện định dạng tài liệu của bạn? Bắt đầu nào!
+Này! Bạn đã bao giờ tự hỏi làm thế nào để điều chỉnh khoảng cách và mức thụt lề trong tài liệu Word, đặc biệt là khi xử lý kiểu chữ Châu Á chưa? Nếu bạn đang làm việc với các tài liệu bao gồm các ngôn ngữ như tiếng Trung, tiếng Nhật hoặc tiếng Hàn, bạn có thể nhận thấy rằng cài đặt mặc định không phải lúc nào cũng phù hợp. Đừng sợ! Trong hướng dẫn này, chúng ta sẽ đi sâu vào cách bạn có thể thay đổi khoảng cách và thụt lề đoạn văn kiểu Châu Á bằng cách sử dụng Aspose.Words cho .NET. Việc này dễ dàng hơn bạn nghĩ và có thể làm cho tài liệu của bạn trông chuyên nghiệp hơn nhiều. Sẵn sàng để cải thiện định dạng tài liệu của bạn? Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
 Trước khi đi sâu vào mã, hãy đảm bảo bạn có mọi thứ bạn cần để làm theo:
 
-1.  Aspose.Words for .NET Library: Đảm bảo bạn có thư viện Aspose.Words for .NET. Nếu bạn chưa có, bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Đảm bảo bạn có thư viện Aspose.Words for .NET. Nếu bạn chưa có, bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Bạn cần thiết lập môi trường phát triển. Visual Studio là một lựa chọn phổ biến để phát triển .NET.
 3. Tài liệu Word: Chuẩn bị sẵn một tài liệu Word để bạn có thể sử dụng. Chúng tôi sẽ sử dụng một tài liệu mẫu có tên là "Asian Typography.docx".
 4. Kiến thức cơ bản về C#: Bạn nên làm quen với lập trình C# để làm theo các ví dụ về mã.
@@ -89,12 +89,12 @@ Dòng này lưu tài liệu với định dạng mới. Bạn có thể kiểm t
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn vừa học cách thay đổi khoảng cách và thụt lề đoạn văn kiểu Châu Á trong tài liệu Word bằng Aspose.Words cho .NET. Nó không khó lắm phải không? Bằng cách làm theo các bước này, bạn có thể đảm bảo tài liệu của mình trông chuyên nghiệp và có định dạng tốt, ngay cả khi xử lý kiểu chữ phức tạp của Châu Á. Tiếp tục thử nghiệm các giá trị khác nhau và xem giá trị nào phù hợp nhất với tài liệu của bạn. Chúc mừng mã hóa!
+Và bạn có nó! Bạn vừa học cách thay đổi khoảng cách và thụt lề đoạn văn kiểu Châu Á trong tài liệu Word bằng Aspose.Words cho .NET. Nó không khó lắm phải không? Bằng cách làm theo các bước này, bạn có thể đảm bảo tài liệu của mình trông chuyên nghiệp và có định dạng tốt, ngay cả khi xử lý kiểu chữ phức tạp của Châu Á. Tiếp tục thử nghiệm các giá trị khác nhau và xem giá trị nào phù hợp nhất với tài liệu của bạn. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 
 ### Tôi có thể sử dụng các cài đặt này cho kiểu chữ không phải Châu Á không?
-Có, những cài đặt này có thể được áp dụng cho bất kỳ văn bản nào, nhưng chúng đặc biệt hữu ích cho kiểu chữ châu Á do các yêu cầu về khoảng cách và thụt lề duy nhất.
+Có, những cài đặt này có thể được áp dụng cho bất kỳ văn bản nào, nhưng chúng đặc biệt hữu ích cho kiểu chữ Châu Á do các yêu cầu về khoảng cách và thụt lề duy nhất.
 
 ### Tôi có cần giấy phép để sử dụng Aspose.Words cho .NET không?
  Có, Aspose.Words for .NET là thư viện trả phí, nhưng bạn có thể tải xuống[dùng thử miễn phí](https://releases.aspose.com/) hoặc một[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) để thử nó.

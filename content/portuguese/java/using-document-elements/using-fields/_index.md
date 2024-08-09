@@ -100,7 +100,7 @@ Código fonte da classe HandleMergeField
             // Decidimos que queremos que todos os valores booleanos sejam exibidos como campos de formulário de caixa de seleção.
             if (e.getFieldValue() instanceof /*boolean*/Boolean)
             {
-                // Mova o "cursor" para o campo de mesclagem atual.
+                // Mova o “cursor” para o campo de mesclagem atual.
                 mBuilder.moveToMergeField(e.getFieldName());
                 String checkBoxName = MessageFormat.format("{0}{1}", e.getFieldName(), e.getRecordIndex());
                 mBuilder.insertCheckBox(checkBoxName, (Boolean) e.getFieldValue(), 0);
@@ -239,7 +239,7 @@ Código fonte da classe HandleMergeField
     {
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs args)
         {
-            // Fazer nada.
+            // Não faça nada.
         }
         /// <resumo>
         /// Isso é chamado quando o mecanismo de mala direta encontra o campo de mesclagem Image:XXX no documento.
@@ -320,7 +320,7 @@ Código fonte da classe HandleMergeField
         }
         public void /*IFieldMergingCallback.*/imageFieldMerging(ImageFieldMergingArgs args)
         {
-            // Fazer nada.
+            // Não faça nada.
         }
         private DocumentBuilder mBuilder;
         private int mRowIdx;

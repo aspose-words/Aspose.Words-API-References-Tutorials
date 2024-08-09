@@ -7,15 +7,15 @@ type: docs
 weight: 10
 url: /cs/net/add-content-using-documentbuilder/insert-horizontal-rule/
 ---
-## Úvod
+## Zavedení
 
-Ahoj, kolegové vývojáři! Ocitli jste se někdy po kolena v projektu dokumentu Word a pomysleli jste si: „Člověče, opravdu sem potřebuji vložit horizontální pravidlo, abych věci rozbil“? No, hádejte co? Máte štěstí! V dnešním tutoriálu se ponoříme do toho, jak vložit vodorovné pravítko do dokumentu aplikace Word pomocí Aspose.Words for .NET. Toto není jen tak obyčejný tutoriál – je nabitý podrobnými kroky, poutavými vysvětleními a špetkou zábavy. Takže se připoutejte a připravte se na to, abyste se stali profesionálem ve zpracování Aspose.Words pro .NET!
+Ahoj, kolegové vývojáři! Ocitli jste se někdy po kolena v projektu dokumentu Word a pomysleli jste si: „Člověče, opravdu sem potřebuji vložit horizontální pravidlo, abych věci rozbil“? Hádej co? Máte štěstí! V dnešním tutoriálu se ponoříme do toho, jak vložit vodorovné pravítko do dokumentu aplikace Word pomocí Aspose.Words for .NET. Toto není jen tak obyčejný tutoriál – je nabitý podrobnými kroky, poutavými vysvětleními a špetkou zábavy. Takže se připoutejte a připravte se na to, abyste se stali profesionálem ve zpracování Aspose.Words pro .NET!
 
 ## Předpoklady
 
 Než se ponoříme do toho nejnutnějšího, ujistěte se, že máte vše, co potřebujete, abyste mohli začít. Zde je rychlý kontrolní seznam:
 
-1.  Aspose.Words for .NET: Ujistěte se, že máte nejnovější verzi. Můžeš[stáhněte si jej zde](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že máte nejnovější verzi. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Jakékoli IDE, které podporuje .NET, jako je Visual Studio.
 3. Základní znalost C#: Díky znalosti programování v C# bude tento tutoriál plynulejší.
 4. Adresář dokumentů: Budete potřebovat adresář, kam můžete ukládat dokumenty aplikace Word.
@@ -41,7 +41,7 @@ Otevřete vývojové prostředí (například Visual Studio) a vytvořte nový p
 
 ### Přidejte Aspose.Words do svého projektu
 
- Nezapomeňte přidat odkaz na Aspose.Words. Pokud jste si ji ještě nestáhli, stáhněte si ji z[tady](https://releases.aspose.com/words/net/). Můžete jej přidat do svého projektu pomocí NuGet Package Manager.
+ Nezapomeňte přidat odkaz na Aspose.Words. Pokud jste si ji ještě nestáhli, stáhněte si ji z[zde](https://releases.aspose.com/words/net/). Můžete jej přidat do svého projektu pomocí NuGet Package Manager.
 
 ## Krok 2: Inicializujte Document a DocumentBuilder
 
@@ -113,7 +113,7 @@ Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vyt
 
 ### Jak mohu začít s Aspose.Words pro .NET?
 
- Můžete začít stažením knihovny z[webová stránka](https://releases.aspose.com/words/net/) a přidejte jej do svého projektu .NET.
+ Můžete začít stažením knihovny z[webové stránky](https://releases.aspose.com/words/net/) a přidejte jej do svého projektu .NET.
 
 ### Mohu používat Aspose.Words zdarma?
 

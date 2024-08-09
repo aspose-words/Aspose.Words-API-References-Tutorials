@@ -9,7 +9,7 @@ url: /nl/net/programming-with-digital-signatures/signing-existing-signature-line
 ---
 ## Invoering
 
-Hallo daar! Heeft u ooit een digitaal document moeten ondertekenen, maar vond u dit een beetje gedoe? Je hebt geluk, want vandaag onderzoeken we hoe je moeiteloos een bestaande handtekeningregel in een Word-document kunt ondertekenen met Aspose.Words voor .NET. Deze tutorial begeleidt u stap voor stap door het proces, zodat u deze taak binnen de kortste keren onder de knie heeft.
+Hé daar! Heeft u ooit een digitaal document moeten ondertekenen, maar vond u dit een beetje gedoe? Je hebt geluk, want vandaag onderzoeken we hoe je moeiteloos een bestaande handtekeningregel in een Word-document kunt ondertekenen met Aspose.Words voor .NET. Deze tutorial begeleidt u stap voor stap door het proces, zodat u deze taak binnen de kortste keren onder de knie heeft.
 
 ## Vereisten
 

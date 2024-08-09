@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/add-content-using-documentbuilder/cursor-position/
 ---
-## Úvod
+## Zavedení
 
 Ahoj, kolegové kodéři! Ocitli jste se někdy hluboko v projektu a zápasili s dokumenty Wordu ve svých aplikacích .NET? Nejsi sám. Všichni jsme tam byli, drbali se na hlavě a snažili se přijít na to, jak manipulovat se soubory Wordu, aniž bychom ztratili zdravý rozum. Dnes se ponoříme do světa Aspose.Words for .NET – fantastické knihovny, která ušetří námahu při programovém zpracování dokumentů Wordu. Rozebereme si, jak spravovat pozici kurzoru v dokumentu aplikace Word pomocí tohoto šikovného nástroje. Takže si dejte kávu a pojďme kódovat!
 
@@ -17,7 +17,7 @@ Než se pustíme do kódu, ujistěte se, že máte vše, co potřebujete:
 
 1. Základní porozumění C#: Tento tutoriál předpokládá, že se vyznáte v C# a .NET konceptech.
 2.  Nainstalované Visual Studio: Bude stačit jakákoli nejnovější verze. Pokud ji ještě nemáte, můžete si ji vzít z[místo](https://visualstudio.microsoft.com/).
-3.  Aspose.Words for .NET Library: Tuto knihovnu si musíte stáhnout a nainstalovat. Můžete to získat od[tady](https://releases.aspose.com/words/net/).
+3.  Aspose.Words for .NET Library: Tuto knihovnu si musíte stáhnout a nainstalovat. Můžete to získat od[zde](https://releases.aspose.com/words/net/).
 
 Dobře, pokud máte vše připraveno, pojďme k nastavení!
 
@@ -124,7 +124,7 @@ Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vyt
 
 ### Mohu používat Aspose.Words zdarma?
 
- Aspose.Words nabízí bezplatnou zkušební verzi, ale pro plné funkce a komerční využití si budete muset zakoupit licenci. Můžete získat bezplatnou zkušební verzi[tady](https://releases.aspose.com/).
+ Aspose.Words nabízí bezplatnou zkušební verzi, ale pro plné funkce a komerční využití si budete muset zakoupit licenci. Můžete získat bezplatnou zkušební verzi[zde](https://releases.aspose.com/).
 
 ### Jak přesunu kurzor na konkrétní buňku tabulky?
 
@@ -136,4 +136,4 @@ Ano, Aspose.Words je plně kompatibilní s .NET Core, což vám umožňuje vytv�
 
 ### Kde najdu dokumentaci k Aspose.Words?
 
- Můžete najít komplexní dokumentaci pro Aspose.Words pro .NET[tady](https://reference.aspose.com/words/net/).
+ Můžete najít komplexní dokumentaci pro Aspose.Words pro .NET[zde](https://reference.aspose.com/words/net/).

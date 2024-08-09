@@ -89,7 +89,7 @@ Bỏ qua văn bản được chèn giúp duy trì sự tập trung vào nội du
 Có, bạn có thể hoàn nguyên văn bản đã chèn bị bỏ qua bằng cách sử dụng cài đặt FindReplaceOptions thích hợp.
 
 ### Tôi có thể tìm thêm tài liệu về Aspose.Words cho .NET ở đâu?
- Tham quan[Aspose.Words cho tài liệu .NET](https://reference.aspose.com/words/net/) để biết hướng dẫn chi tiết và tài liệu tham khảo API.
+ Ghé thăm[Aspose.Words cho tài liệu .NET](https://reference.aspose.com/words/net/) để biết hướng dẫn chi tiết và tài liệu tham khảo API.
 
 ### Có diễn đàn cộng đồng nào để thảo luận về Aspose.Words cho các truy vấn liên quan đến .NET không?
  Có, bạn có thể ghé thăm[Diễn đàn Aspose.Words](https://forum.aspose.com/c/words/8) để được cộng đồng hỗ trợ và thảo luận.

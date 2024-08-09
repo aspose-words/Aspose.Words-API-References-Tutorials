@@ -16,7 +16,7 @@ Witajcie, drodzy programiści i entuzjaści dokumentów! 🌟 Jeśli kiedykolwie
 
 Zanim zaczniemy, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
-1.  Aspose.Words dla biblioteki .NET: Upewnij się, że masz najnowszą wersję.[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla biblioteki .NET: Upewnij się, że masz najnowszą wersję.[Pobierz go tutaj](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: środowisko programistyczne zgodne z platformą .NET, takie jak Visual Studio.
 3. Podstawowa znajomość języka C#: Pomocne będzie zrozumienie podstawowej składni języka C#.
 4. Przykładowy dokument programu Word: Chociaż utworzymy taki dokument od podstaw, posiadanie próbki może być przydatne do testowania.
@@ -124,7 +124,7 @@ Przerywanie łączy do przodu umożliwia reorganizację lub izolowanie treści w
 
 ### Czy zrywanie linków może mieć wpływ na układ dokumentu?
 
-Zrywanie linków może potencjalnie wpłynąć na układ, szczególnie jeśli pola tekstowe zostały zaprojektowane tak, aby miały określoną sekwencję lub przebieg.
+Zrywanie linków może potencjalnie wpłynąć na układ, zwłaszcza jeśli pola tekstowe zostały zaprojektowane tak, aby miały określoną sekwencję lub przebieg.
 
 ### Gdzie mogę znaleźć więcej zasobów na temat pracy z Aspose.Words?
 

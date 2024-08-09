@@ -103,4 +103,4 @@ Ja, u kunt de originele stijl opslaan voordat u wijzigingen aanbrengt en deze in
 Absoluut! Deze methode werkt voor verschillende documentelementen. Pas gewoon de code aan om het gewenste element te targeten.
 
 ### Ondersteunt Aspose.Words naast .NET ook andere platforms?  
-Ja, Aspose.Words is beschikbaar voor Java, C++ en andere platforms. Controleer hun[documentatie](https://reference.aspose.com/words/net/) voor meer details.
+Ja, Aspose.Words is beschikbaar voor Java, C++ en andere platforms. Controleer hun[documentatie](https://reference.aspose.com/words/net/) voor meer informatie.

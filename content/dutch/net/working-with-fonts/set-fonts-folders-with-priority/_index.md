@@ -2,79 +2,91 @@
 title: Stel lettertypemappen met prioriteit in
 linktitle: Stel lettertypemappen met prioriteit in
 second_title: Aspose.Words-API voor documentverwerking
-description: Stapsgewijze handleiding voor het instellen van lettertypemappen met prioriteit bij het renderen van een document met Aspose.Words voor .NET.
+description: Leer hoe u lettertypemappen met prioriteit kunt instellen in Word-documenten met behulp van Aspose.Words voor .NET. Onze gids zorgt ervoor dat uw documenten elke keer perfect worden weergegeven.
 type: docs
 weight: 10
 url: /nl/net/working-with-fonts/set-fonts-folders-with-priority/
 ---
+## Invoering
 
-In deze zelfstudie leiden we u stapsgewijs door het proces om lettertypemappen met prioriteit in te stellen bij het renderen van een document met Aspose.Words voor .NET. We leggen de gebundelde C#-broncode uit en bieden u een uitgebreide handleiding om u te helpen deze functie te begrijpen en in uw eigen projecten te implementeren. Aan het einde van deze zelfstudie weet u hoe u meerdere lettertypemappen met aangepaste zoekprioriteit kunt opgeven bij het renderen van uw documenten met Aspose.Words voor .NET.
+In de wereld van documentmanipulatie kan het instellen van aangepaste lettertypemappen een wereld van verschil maken door ervoor te zorgen dat uw documenten perfect worden weergegeven, waar ze ook worden bekeken. Vandaag gaan we dieper in op hoe u lettertypemappen met prioriteit kunt instellen in uw Word-documenten met behulp van Aspose.Words voor .NET. Deze uitgebreide gids begeleidt u bij elke stap, waardoor het proces zo soepel mogelijk verloopt.
 
-## Stap 1: Definieer de documentmap
-Eerst moet u het pad naar uw documentenmap instellen. Dit is de locatie waar u uw bewerkte, gerenderde document wilt opslaan. Vervang "UW DOCUMENTENDIRECTORY" door het juiste pad.
+## Vereisten
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Voordat we beginnen, moeten we ervoor zorgen dat we alles hebben wat we nodig hebben. Hier is een korte checklist:
 
-## Stap 2: Stel lettertypemappen met prioriteit in
- Vervolgens kunt u de lettertypemappen met prioriteit instellen met behulp van de`FontSettings` klasse en de`SetFontsSources()`methode. U kunt meerdere lettertypebronnen opgeven met behulp van exemplaren van`SystemFontSource`En`FolderFontSource`. In dit voorbeeld hebben we twee lettertypebronnen gedefinieerd: de standaard systeemlettertypebron en een aangepaste lettertypemap met prioriteit 1.
+-  Aspose.Words voor .NET: deze bibliotheek moet geïnstalleerd zijn. Als je hem nog niet hebt, dan kan dat[download het hier](https://releases.aspose.com/words/net/).
+- Ontwikkelomgeving: Zorg ervoor dat u over een werkende .NET-ontwikkelomgeving beschikt, zoals Visual Studio.
+-  Documentmap: Zorg ervoor dat u een map voor uw documenten heeft. Voor onze voorbeelden gebruiken we`"YOUR DOCUMENT DIRECTORY"` als tijdelijke aanduiding voor dit pad.
 
-```csharp
-FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
-{
-new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true, 1)
-});
-```
+## Naamruimten importeren
 
-## Stap 3: Laad het document dat u wilt renderen
- Nu kunt u het document laden om te renderen met behulp van de`Document` klas. Zorg ervoor dat u het juiste documentpad opgeeft.
+Allereerst moeten we de benodigde naamruimten importeren. Deze naamruimten zijn essentieel voor toegang tot de klassen en methoden die door Aspose.Words worden geleverd.
 
 ```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Stap 4: Sla het gerenderde document op
- Ten slotte kunt u het gerenderde document opslaan in een bestand met behulp van de`Save()` werkwijze van de`Document` klas. Zorg ervoor dat u het juiste pad en de juiste bestandsnaam opgeeft.
+Laten we nu elke stap opsplitsen om lettertypemappen met prioriteit in te stellen.
 
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
-```
+## Stap 1: Stel uw lettertypebronnen in
 
-### Voorbeeldbroncode voor het instellen van lettertypemappen met prioriteit met behulp van Aspose.Words voor .NET 
+Om te beginnen wilt u de lettertypebronnen definiëren. Hier vertelt u Aspose.Words waar u naar lettertypen moet zoeken. U kunt meerdere lettertypemappen opgeven en zelfs hun prioriteit instellen.
+
 ```csharp
 // Pad naar uw documentmap
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
 {
-	new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true,1)
+    new SystemFontSource(), 
+    new FolderFontSource("C:\\MyFonts\\", true, 1)
 });
+```
+
+In dit voorbeeld stellen we twee lettertypebronnen in:
+- SystemFontSource: Dit is de standaardlettertypebron die alle lettertypen bevat die op uw systeem zijn geïnstalleerd.
+-  FolderFontSource: Dit is een aangepaste lettertypemap die zich bevindt op`C:\\MyFonts\\` . De`true` parameter specificeert dat deze map recursief moet worden gescand, en`1` stelt zijn prioriteit.
+
+## Stap 2: Laad uw document
+
+Laad vervolgens het document waarmee u wilt werken. Zorg ervoor dat het document zich in de door u opgegeven map bevindt.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+ Deze coderegel laadt een document met de naam`Rendering.docx` vanuit uw documentmap.
+
+## Stap 3: Sla uw document op met de nieuwe lettertype-instellingen
+
+Sla ten slotte uw document op. Wanneer u het document opslaat, gebruikt Aspose.Words de lettertype-instellingen die u hebt opgegeven.
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
 ```
 
+ Hiermee wordt het document als PDF opgeslagen in uw documentmap met de naam`WorkingWithFonts.SetFontsFoldersWithPriority.pdf`.
+
 ## Conclusie
-In deze zelfstudie hebben we geleerd hoe u lettertypemappen met prioriteit kunt instellen bij het renderen van een document met Aspose.Words voor .NET. Door deze stapsgewijze handleiding te volgen, kunt u bij het renderen van uw documenten eenvoudig meerdere lettertypemappen met aangepaste zoekprioriteit opgeven. Aspose.Words biedt een krachtige en flexibele API voor woordenverwerking met lettertypen in uw documenten. Met deze kennis kunt u de lettertypebronnen die worden gebruikt bij het renderen van uw documenten beheren en aanpassen aan uw specifieke behoeften.
 
-### Veelgestelde vragen
+En daar heb je het! U hebt met succes lettertypemappen met prioriteit ingesteld met Aspose.Words voor .NET. Door aangepaste lettertypemappen en -prioriteiten op te geven, kunt u ervoor zorgen dat uw documenten consistent worden weergegeven, ongeacht waar ze worden bekeken. Dit is vooral handig in omgevingen waar specifieke lettertypen niet standaard zijn geïnstalleerd.
 
-#### Vraag: Hoe kan ik lettertypemappen met prioriteit instellen in Aspose.Words?
+## Veelgestelde vragen
 
- A: Om lettertypemappen met prioriteit in Aspose.Words in te stellen, kunt u de`SetFontsFoldersWithPriority` werkwijze van de`Fonts` klasse door de locaties van de lettertypemap en hun prioriteitsvolgorde op te geven.
+### Waarom zou ik aangepaste lettertypemappen moeten instellen?
+Als u aangepaste lettertypemappen instelt, zorgt u ervoor dat uw documenten correct worden weergegeven, zelfs als ze lettertypen gebruiken die niet zijn geïnstalleerd op het systeem waarop ze worden bekeken.
 
-#### Vraag: Wat gebeurt er als een lettertype in meerdere mappen met verschillende prioriteit aanwezig is?
+### Kan ik meerdere aangepaste lettertypemappen instellen?
+Ja, u kunt meerdere lettertypemappen opgeven. Met Aspose.Words kunt u voor elke map de prioriteit instellen, zodat de belangrijkste lettertypen als eerste worden gevonden.
 
-A: Als een lettertype in meerdere mappen met verschillende prioriteit aanwezig is, gebruikt Aspose.Words bij het verwerken van documenten de versie uit de map met de hoogste prioriteit.
+### Wat gebeurt er als een lettertype ontbreekt in alle opgegeven bronnen?
+Als een lettertype ontbreekt in alle opgegeven bronnen, gebruikt Aspose.Words een reservelettertype om ervoor te zorgen dat het document nog steeds leesbaar is.
 
-#### Vraag: Kan ik meerdere lettertypemappen met dezelfde prioriteit opgeven in Aspose.Words?
+### Kan ik de prioriteit van de systeemlettertypen wijzigen?
+De systeemlettertypen worden altijd standaard meegeleverd, maar u kunt hun prioriteit instellen ten opzichte van uw aangepaste lettertypemappen.
 
-A: Ja, u kunt meerdere lettertypemappen met dezelfde prioriteit opgeven in Aspose.Words. Aspose.Words zal ze allemaal met gelijke prioriteit in overweging nemen bij het zoeken naar lettertypen in uw documenten.
-
-#### Vraag: Hoe kan ik de lettertypemappen controleren die met prioriteit zijn gedefinieerd in Aspose.Words?
-
- A: Om de lettertypemappen te controleren die met prioriteit zijn gedefinieerd in Aspose.Words, kunt u de`GetFolders` werkwijze van de`Fonts` class om de lijst met geconfigureerde lettertypemappen op te halen, inclusief hun prioriteitsvolgorde.
-
-#### Vraag: Wat is het nut van het instellen van lettertypemappen met prioriteit in Aspose.Words?
-
-A: Door lettertypemappen met prioriteit in te stellen in Aspose.Words kunt u de zoekvolgorde van lettertypen in uw Word-documenten bepalen. Zo weet u zeker dat de gewenste lettertypen worden gebruikt en voorkomt u ongewenste problemen met het vervangen van lettertypen.
+### Is het mogelijk om netwerkpaden te gebruiken voor aangepaste lettertypemappen?
+Ja, u kunt netwerkpaden opgeven als aangepaste lettertypemappen, zodat u lettertypebronnen op een netwerklocatie kunt centraliseren.

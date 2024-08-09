@@ -77,7 +77,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
 ```
 
-## συμπέρασμα
+## Σύναψη
 
 Συμπερασματικά, το Aspose.Words για .NET απλοποιεί το έργο της συγχώνευσης εγγράφων του Word διατηρώντας ταυτόχρονα την αρχική μορφοποίηση απρόσκοπτα. Αυτή η δυνατότητα είναι ζωτικής σημασίας για εφαρμογές που απαιτούν αυτοματοποιημένη επεξεργασία εγγράφων.
 

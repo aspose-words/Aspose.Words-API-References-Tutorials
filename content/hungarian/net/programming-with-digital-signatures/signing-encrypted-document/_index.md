@@ -57,7 +57,7 @@ Szüksége lesz egy könyvtárra a Word-dokumentumok és -tanúsítványok táro
 
 ## 4. lépés: A kód megírása
 
- Most pedig merüljünk el a kódban. Nyissa meg`Program.cs` fájlt, és először állítsa be a dokumentumkönyvtár elérési útját, és inicializálja a`SignOptions` a visszafejtési jelszóval.
+ Most pedig merüljünk el a kódban. Nyissa meg a sajátját`Program.cs` fájlt, és először állítsa be a dokumentumkönyvtár elérési útját, és inicializálja a`SignOptions` a visszafejtési jelszóval.
 
 ```csharp
 // A dokumentumok könyvtárának elérési útja.

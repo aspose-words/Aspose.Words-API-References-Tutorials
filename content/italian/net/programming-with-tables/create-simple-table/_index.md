@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-tables/create-simple-table/
 ---
-## introduzione
+## Introduzione
 
 Lavorare con i documenti a livello di codice può essere un po' scoraggiante se sei nuovo. Ma non preoccuparti, sono qui per guidarti attraverso il processo di creazione di una semplice tabella in un documento Word utilizzando Aspose.Words per .NET. Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato, questo tutorial ti guiderà attraverso tutto ciò che devi sapere, passo dopo passo.
 
@@ -57,7 +57,7 @@ builder.StartTable();
 
 ## Passaggio 4: inserisci la prima cella e aggiungi contenuto
 
- Ora inseriamo la prima cella nella tabella e vi aggiungiamo del contenuto. Noi usiamo il`InsertCell` metodo per inserire una nuova cella e il`Write` metodo per aggiungere testo alla cella.
+ Ora inseriamo la prima cella nella tabella e vi aggiungiamo del contenuto. Usiamo il`InsertCell` metodo per inserire una nuova cella e il`Write` metodo per aggiungere testo alla cella.
 
 ```csharp
 builder.InsertCell();
@@ -113,7 +113,7 @@ doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 
 ## Conclusione
 
-il gioco è fatto! Hai appena creato una semplice tabella in un documento Word utilizzando Aspose.Words per .NET. Suddividendo il processo in passaggi gestibili, lo abbiamo reso facile da comprendere e implementare. Ora puoi sperimentare diverse strutture e contenuti delle tabelle in base alle tue esigenze. Buona programmazione!
+Ed ecco qua! Hai appena creato una semplice tabella in un documento Word utilizzando Aspose.Words per .NET. Suddividendo il processo in passaggi gestibili, lo abbiamo reso facile da comprendere e implementare. Ora puoi sperimentare diverse strutture e contenuti delle tabelle in base alle tue esigenze. Buona programmazione!
 
 ## Domande frequenti
 
@@ -127,7 +127,7 @@ Sì, Aspose.Words per .NET supporta vari linguaggi di programmazione eseguiti su
  Sì, puoi scaricare una versione di prova gratuita da[Qui](https://releases.aspose.com/).
 
 ### Come posso ottenere supporto per Aspose.Words per .NET?
- Puoi ottenere supporto visitando Aspose.Words[Forum di assistenza](https://forum.aspose.com/c/words/8).
+ Puoi ottenere supporto visitando Aspose.Words[forum di supporto](https://forum.aspose.com/c/words/8).
 
 ### Dove posso trovare una documentazione più dettagliata per Aspose.Words per .NET?
  È possibile trovare documentazione dettagliata[Qui](https://reference.aspose.com/words/net/).

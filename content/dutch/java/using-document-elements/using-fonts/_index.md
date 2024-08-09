@@ -18,7 +18,7 @@ Lettertypen spelen een cruciale rol bij het ontwerp en de leesbaarheid van docum
 
 Voordat je in de code duikt, zorg ervoor dat je aan de volgende vereisten voldoet:
 
-1.  Aspose.Words voor Java-bibliotheek: Zorg ervoor dat u de Aspose.Words voor Java-bibliotheek hebt gedownload en geïnstalleerd. Jij kan[download het hier](https://releases.aspose.com/words/java/).
+1.  Aspose.Words voor Java-bibliotheek: Zorg ervoor dat u de Aspose.Words voor Java-bibliotheek hebt gedownload en geïnstalleerd. Dat kan[download het hier](https://releases.aspose.com/words/java/).
 
 2. Java-ontwikkelomgeving: Zorg ervoor dat u een Java-ontwikkelomgeving hebt ingesteld.
 

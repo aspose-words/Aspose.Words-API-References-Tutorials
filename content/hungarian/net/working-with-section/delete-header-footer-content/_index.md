@@ -9,7 +9,7 @@ url: /hu/net/working-with-section/delete-header-footer-content/
 ---
 ## Bevezetés
 
-Sziasztok, Word-dokumentumcsavarók! 📝 Előfordult már, hogy ki kellett törölnie a fejléceket és a láblécet egy Word-dokumentumból, de azon kapta magát, hogy elakadt a fárasztó manuális erőfeszítés? Nos, ne aggódj tovább! Az Aspose.Words for .NET segítségével néhány lépésben automatizálhatja ezt a feladatot. Ez az útmutató végigvezeti a fejléc- és lábléctartalom Word-dokumentumból való törlésének folyamatán az Aspose.Words for .NET használatával. Készen áll a dokumentumok törlésére? Kezdjük el!
+Sziasztok, Word-dokumentumcsavarók! 📝 Előfordult már, hogy ki kellett törölnie a fejléceket és a láblécet egy Word-dokumentumból, de azon kapta magát, hogy elakadt a fárasztó manuális erőfeszítés? Nos, ne aggódj tovább! Az Aspose.Words for .NET segítségével néhány lépésben automatizálhatja ezt a feladatot. Ez az útmutató végigvezeti a fejléc- és lábléctartalom Word-dokumentumból való törlésének folyamatán az Aspose.Words for .NET használatával. Készen áll a dokumentumok törlésére? Kezdjük is!
 
 ## Előfeltételek
 
@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Document.docx");
 ```
 
 - `string dataDir = "YOUR DOCUMENT DIRECTORY";` megadja a könyvtár elérési útját, ahol a dokumentum tárolva van.
-- `Document doc = new Document(dataDir + "Document.docx");` betölti a Word dokumentumot a`doc` tárgy.
+- `Document doc = new Document(dataDir + "Document.docx");` betölti a Word dokumentumot a`doc` objektum.
 
 ## 3. lépés: Nyissa meg a szakaszt
 

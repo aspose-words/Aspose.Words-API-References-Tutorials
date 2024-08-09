@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## 步骤 6：创建表并添加行
 
-创建一个新的`Table`对象并指定行数和列数。
+创建新的`Table`对象并指定行数和列数。
 
 ```java
 Table table = new Table(doc);

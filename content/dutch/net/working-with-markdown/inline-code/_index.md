@@ -2,76 +2,114 @@
 title: Inline-code
 linktitle: Inline-code
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u code inline kunt plaatsen met Aspose.Words voor .NET Stapsgewijze handleiding.
+description: Leer hoe u inline codestijlen toepast in Word-documenten met Aspose.Words voor .NET. In deze zelfstudie worden enkele en meerdere backticks voor codeopmaak besproken.
 type: docs
 weight: 10
 url: /nl/net/working-with-markdown/inline-code/
 ---
+## Invoering
 
-In dit voorbeeld laten we u zien hoe u de inline codefunctie gebruikt met Aspose.Words voor .NET. Inlinecode wordt gebruikt om stukjes code binnen een alinea visueel weer te geven.
+Als u bezig bent met het programmatisch genereren of manipuleren van Word-documenten, moet u mogelijk de tekst opmaken zodat deze op code lijkt. Of het nu gaat om documentatie of codefragmenten in een rapport, Aspose.Words voor .NET biedt een robuuste manier om met tekststijl om te gaan. In deze zelfstudie concentreren we ons op het toepassen van inline codestijlen op tekst met behulp van Aspose.Words. We onderzoeken hoe u aangepaste stijlen kunt definiëren en gebruiken voor enkele en meerdere backticks, waardoor uw codesegmenten duidelijk opvallen in uw documenten.
 
-## Stap 1: Een documentgenerator gebruiken
+## Vereisten
 
-Eerst gebruiken we een documentgenerator om inhoud aan ons document toe te voegen.
+Voordat we beginnen, zorg ervoor dat u over het volgende beschikt:
+
+1.  Aspose.Words voor .NET-bibliotheek: Zorg ervoor dat Aspose.Words in uw .NET-omgeving is geïnstalleerd. Je kunt het downloaden van de[Aspose.Words voor .NET-releasespagina](https://releases.aspose.com/words/net/).
+
+2. Basiskennis van .NET-programmering: Deze handleiding gaat ervan uit dat u een fundamenteel begrip hebt van C#- en .NET-programmering.
+
+3. Ontwikkelomgeving: U moet een .NET-ontwikkelomgeving hebben opgezet, zoals Visual Studio, waar u C#-code kunt schrijven en uitvoeren.
+
+## Naamruimten importeren
+
+Om Aspose.Words in uw project te gaan gebruiken, moet u de benodigde naamruimten importeren. Zo doe je het:
 
 ```csharp
+using Aspose.Words;
+using Aspose.Words.Drawing;
+```
+
+Laten we het proces in duidelijke stappen opsplitsen:
+
+## Stap 1: Initialiseer het document en DocumentBuilder
+
+ Eerst moet u een nieuw document maken en een`DocumentBuilder` aanleg. De`DocumentBuilder`class helpt u inhoud toe te voegen en deze op te maken in een Word-document.
+
+```csharp
+// Initialiseer DocumentBuilder met het nieuwe document.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Stap 2: Voeg styling toe voor inline code
+## Stap 2: Voeg inline codestijl toe met één backtick
 
- We zullen een aangepaste stijl toevoegen voor de inline code met behulp van de`Styles.Add` werkwijze van de`Document` voorwerp. In dit voorbeeld maken we een stijl met de naam 'InlineCode' voor inline code met een standaard backtick.
+In deze stap definiëren we een stijl voor inline code met een enkele backtick. Met deze stijl wordt tekst opgemaakt zodat deze op inlinecode lijkt.
+
+### Definieer de stijl
 
 ```csharp
+// Definieer een nieuwe tekenstijl voor inlinecode met één backtick.
 Style inlineCode1BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode");
-builder.Font.Style = inlineCode1BackTicks;
+inlineCode1BackTicks.Font.Name = "Courier New"; // Een typisch lettertype voor code.
+inlineCode1BackTicks.Font.Size = 10.5; // Lettergrootte voor de inlinecode.
+inlineCode1BackTicks.Font.Color = System.Drawing.Color.Blue; // Codetekstkleur.
+inlineCode1BackTicks.Font.Bold = true; // Maak de codetekst vetgedrukt.
 ```
 
-## Stap 3: Voeg inlinecode toe
+### Pas de stijl toe
 
-Nu kunnen we inline code toevoegen met behulp van de aangepaste stijl "InlineCode". In dit voorbeeld voegen we twee stukken tekst toe met verschillende aantallen backticks.
+Nu kunt u deze stijl toepassen op tekst in uw document.
 
 ```csharp
+// Gebruik de DocumentBuilder om tekst in te voegen met de inline codestijl.
+builder.Font.Style = inlineCode1BackTicks;
 builder.Writeln("Text with InlineCode style with 1 backtick");
 ```
 
+## Stap 3: Voeg inlinecodestijl toe met drie backticks
+
+Vervolgens definiëren we een stijl voor inline code met drie backticks, die doorgaans wordt gebruikt voor codeblokken met meerdere regels.
+
+### Definieer de stijl
+
 ```csharp
+// Definieer een nieuwe tekenstijl voor inlinecode met drie backticks.
 Style inlineCode3BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode.3");
+inlineCode3BackTicks.Font.Name = "Courier New"; // Consistent lettertype voor code.
+inlineCode3BackTicks.Font.Size = 10.5; // Lettergrootte voor het codeblok.
+inlineCode3BackTicks.Font.Color = System.Drawing.Color.Green; //Andere kleur voor zichtbaarheid.
+inlineCode3BackTicks.Font.Bold = true; // Houd het vetgedrukt om de nadruk te leggen.
+```
+
+### Pas de stijl toe
+
+Pas deze stijl toe op tekst om deze op te maken als een codeblok met meerdere regels.
+
+```csharp
+// Pas de stijl voor het codeblok toe.
 builder.Font.Style = inlineCode3BackTicks;
 builder.Writeln("Text with InlineCode style with 3 backticks");
 ```
 
+## Conclusie
 
-### Voorbeeldbroncode voor inlinecode met Aspose.Words voor .NET
+Het opmaken van tekst als inlinecode in Word-documenten met Aspose.Words voor .NET is eenvoudig zodra u de stappen kent. Door aangepaste stijlen met enkele of meerdere backticks te definiëren en toe te passen, kunt u uw codefragmenten duidelijk laten opvallen. Deze methode is vooral handig voor technische documentatie of elk ander document waarbij de leesbaarheid van de code essentieel is.
 
-```csharp
-// Gebruik een documentbuilder om inhoud aan het document toe te voegen.
-DocumentBuilder builder = new DocumentBuilder();
+Experimenteer gerust met verschillende stijlen en opmaakopties om het beste bij uw behoeften te passen. Aspose.Words biedt uitgebreide flexibiliteit, waardoor u het uiterlijk van uw document in hoge mate kunt aanpassen.
 
-// Het aantal backticks wordt gemist; standaard wordt één backticks gebruikt.
-Style inlineCode1BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode");
-builder.Font.Style = inlineCode1BackTicks;
-builder.Writeln("Text with InlineCode style with 1 backtick");
+## Veelgestelde vragen
 
-// Er zullen 3 backticks zijn.
-Style inlineCode3BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode.3");
-builder.Font.Style = inlineCode3BackTicks;
-builder.Writeln("Text with InlineCode style with 3 backtick");
-```
+### Kan ik verschillende lettertypen gebruiken voor inline codestijlen?
+Ja, u kunt elk lettertype gebruiken dat aan uw wensen voldoet. Lettertypen zoals "Courier New" worden doorgaans gebruikt voor code vanwege hun monospatie-karakter.
 
-Gefeliciteerd! U hebt nu geleerd hoe u inline codefunctionaliteit kunt gebruiken met Aspose.Words voor .NET.
+### Hoe wijzig ik de kleur van de inlinecodetekst?
+ U kunt de kleur wijzigen door de instelling in te stellen`Font.Color` eigendom van de stijl voor iedereen`System.Drawing.Color`.
 
+### Kan ik meerdere stijlen op dezelfde tekst toepassen?
+In Aspose.Words kunt u slechts één stijl tegelijk toepassen. Als u stijlen wilt combineren, kunt u overwegen een nieuwe stijl te maken waarin alle gewenste opmaak is opgenomen.
 
-### Veelgestelde vragen
+### Hoe pas ik stijlen toe op bestaande tekst in een document?
+ Om stijlen op bestaande tekst toe te passen, moet u eerst de tekst selecteren en vervolgens de gewenste stijl toepassen met behulp van de`Font.Style` eigendom.
 
-#### Vraag: Hoe kan ik de inlinecode in Aspose.Words gebruiken?
-
-A: Om inlinecode in Aspose.Words te gebruiken, kunt u de juiste tags gebruiken om de tekst te omringen die moet worden opgemaakt als inlinecode. U kunt bijvoorbeeld gebruik maken van de`<code>` of`<kbd>` tag om tekst te omringen die moet worden opgemaakt als inlinecode.
-
-#### Vraag: Is het mogelijk om het lettertype of de kleur van de inline code op te geven in Aspose.Words?
-
- A: Ja, u kunt het lettertype of de kleur van de inlinecode opgeven in Aspose.Words. U kunt gebruik maken van de`Font.Name`En`Font.Color` eigenschappen van de`Run` object om het lettertype en de kleur van inline code in te stellen. U kunt bijvoorbeeld gebruiken`run.Font.Name = "Courier New"` om het lettertype voor inline code op te geven en`run.Font.Color = Color.Blue` om de kleur op te geven.
-
-#### Vraag: Kan ik de inlinecode gebruiken in een alinea die andere tekstelementen bevat?
-
- A: Ja, u kunt de inlinecode gebruiken in een alinea die andere tekstelementen bevat. Je kunt er meerdere maken`Run` objecten om verschillende delen van de alinea weer te geven, en gebruik vervolgens inline codetags om alleen de specifieke delen op te maken als inline code. Vervolgens kunt u ze aan de alinea toevoegen met behulp van de`Paragraph.AppendChild(run)` methode.
+### Kan ik Aspose.Words voor andere documentformaten gebruiken?
+Aspose.Words is speciaal ontworpen voor Word-documenten. Voor andere formaten moet u mogelijk andere bibliotheken gebruiken of de documenten converteren naar een compatibel formaat.

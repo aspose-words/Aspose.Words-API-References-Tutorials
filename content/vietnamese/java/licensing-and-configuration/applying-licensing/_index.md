@@ -107,7 +107,7 @@ Trong hướng dẫn này, chúng tôi đã đề cập đến các bước cầ
 ## Câu hỏi thường gặp
 
 ### Làm cách nào để có được giấy phép tạm thời cho Aspose.Words cho Java?
- Tham quan[Trang giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) để yêu cầu giấy phép tạm thời.
+ Ghé thăm[Trang giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) để yêu cầu giấy phép tạm thời.
 
 ### Tôi có thể sử dụng Aspose.Words cho Java mà không cần giấy phép không?
 Có, nhưng nó sẽ hoạt động ở chế độ dùng thử với những hạn chế. Bạn nên có giấy phép hợp lệ để có đầy đủ chức năng.

@@ -9,12 +9,12 @@ url: /vi/net/programming-with-tables/get-table-position/
 ---
 ## Giới thiệu
 
-Bạn đã bao giờ gặp khó khăn khi cố gắng tìm ra vị trí chính xác của một bảng trong tài liệu Word của mình chưa? Cho dù đó là để sắp xếp nội dung của bạn một cách hoàn hảo hay chỉ vì tò mò, việc biết vị trí của một cái bàn có thể cực kỳ tiện lợi. Hôm nay, chúng ta sẽ đi sâu vào cách lấy vị trí trong bảng bằng Aspose.Words cho .NET. Chúng tôi sẽ chia nó thành các bước nhỏ để ngay cả khi bạn là người mới, bạn vẫn có thể làm theo mà không gặp trở ngại nào. Bạn đã sẵn sàng trở thành trình hướng dẫn tài liệu Word chưa? Bắt đầu nào!
+Bạn đã bao giờ gặp khó khăn khi cố gắng tìm ra vị trí chính xác của một bảng trong tài liệu Word của mình chưa? Cho dù đó là để sắp xếp nội dung của bạn một cách hoàn hảo hay chỉ vì tò mò, việc biết vị trí của một cái bàn có thể cực kỳ tiện lợi. Hôm nay, chúng ta sẽ đi sâu vào cách lấy vị trí trong bảng bằng Aspose.Words cho .NET. Chúng tôi sẽ chia nó thành các bước nhỏ để ngay cả khi bạn là người mới, bạn vẫn có thể làm theo mà không gặp trở ngại nào. Bạn đã sẵn sàng trở thành trình hướng dẫn tài liệu Word chưa? Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
 Trước khi chúng ta đi sâu vào vấn đề chi tiết, hãy đảm bảo rằng bạn có mọi thứ mình cần:
--  Aspose.Words for .NET: Đảm bảo bạn có phiên bản mới nhất. Nếu không, bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Đảm bảo bạn có phiên bản mới nhất. Nếu không, bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 - Visual Studio: Bất kỳ phiên bản nào cũng được, nhưng phiên bản mới nhất luôn được khuyến khích.
 - .NET Framework: Đảm bảo bạn có .NET Framework 4.0 trở lên.
 - Tài liệu Word: Đối với hướng dẫn này, chúng tôi sẽ sử dụng tài liệu có tên`Tables.docx`.
@@ -79,7 +79,7 @@ Khi mã của bạn chạy, bạn sẽ thấy chi tiết vị trí của bảng 
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bằng cách làm theo các bước đơn giản này, bạn đã học được cách xác định vị trí của bảng trong tài liệu Word bằng Aspose.Words for .NET. Cho dù đó là để căn chỉnh hoàn hảo hay chỉ để thỏa mãn sự tò mò của bạn, việc biết cách xác định vị trí của bàn có thể vô cùng hữu ích. Hãy tiếp tục thử nghiệm và khám phá thêm nhiều tính năng của Aspose.Words để trở thành chuyên gia tài liệu Word thực sự!
+Và bạn có nó! Bằng cách làm theo các bước đơn giản này, bạn đã học được cách xác định vị trí của bảng trong tài liệu Word bằng Aspose.Words for .NET. Cho dù đó là để căn chỉnh hoàn hảo hay chỉ để thỏa mãn sự tò mò của bạn, việc biết cách xác định vị trí của bàn có thể cực kỳ hữu ích. Hãy tiếp tục thử nghiệm và khám phá thêm nhiều tính năng của Aspose.Words để trở thành chuyên gia tài liệu Word thực sự!
 
 ## Câu hỏi thường gặp
 

@@ -143,4 +143,4 @@ Sie können Datenbeschriftungen formatieren, indem Sie auf das`DataLabels` Eigen
 
 ### Wie kann ich eine Diagrammachse ausblenden?
 
- Sie können eine Diagrammachse ausblenden, indem Sie die`setHidden(true)` Eigenschaft der Achse.
+ Sie können eine Diagrammachse ausblenden, indem Sie das`setHidden(true)` Eigenschaft der Achse.

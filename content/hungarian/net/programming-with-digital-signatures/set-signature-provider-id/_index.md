@@ -9,7 +9,7 @@ url: /hu/net/programming-with-digital-signatures/set-signature-provider-id/
 ---
 ## Bevezetés
 
-Halihó! Szóval, megvan ez a csodálatos Word-dokumentum, amelyhez digitális aláírásra van szükség, igaz? De nem akármilyen aláírást – be kell állítania egy konkrét aláírás-szolgáltató azonosítót. Akár jogi dokumentumokat, szerződéseket vagy bármilyen papírmunkát kezel, a biztonságos, digitális aláírás hozzáadása kulcsfontosságú. Ebben az oktatóanyagban végigvezetem az aláírásszolgáltató azonosítójának Word-dokumentumban történő beállításának teljes folyamatán az Aspose.Words for .NET használatával. Kész? Merüljünk el!
+Szia! Szóval, megvan ez a csodálatos Word-dokumentum, amelyhez digitális aláírásra van szükség, igaz? De nem akármilyen aláírást – be kell állítania egy konkrét aláírás-szolgáltató azonosítót. Akár jogi dokumentumokat, szerződéseket vagy bármilyen papírmunkát kezel, a biztonságos, digitális aláírás hozzáadása kulcsfontosságú. Ebben az oktatóanyagban végigvezetem az aláírásszolgáltató azonosítójának Word-dokumentumban történő beállításának teljes folyamatán az Aspose.Words for .NET használatával. Kész? Merüljünk el!
 
 ## Előfeltételek
 
@@ -21,7 +21,7 @@ Mielőtt elkezdenénk, győződjön meg arról, hogy rendelkezik a következőkk
 4.  Digitális tanúsítvány: A`.pfx` tanúsítvány fájl (pl.`morzal.pfx`).
 5. Alapvető C# ismeretek: Csak az alapok – ne aggódjon, itt vagyunk, hogy segítsünk!
 
-Most pedig vágjunk bele az akcióba!
+Most pedig ugorjunk bele az akcióba!
 
 ## Névterek importálása
 
@@ -54,7 +54,7 @@ Ezután el kell érnünk a dokumentumon belüli aláírási sort. Az aláíráss
 SignatureLine signatureLine = ((Shape)doc.FirstSection.Body.GetChild(NodeType.Shape, 0, true)).SignatureLine;
 ```
 
- Ez a kódsor megkapja az első alakzatot a dokumentum első szakaszának törzsében, és átadja azt a`SignatureLine` tárgy.
+ Ez a kódsor megkapja az első alakzatot a dokumentum első szakaszának törzsében, és átadja azt a`SignatureLine` objektum.
 
 ## 3. lépés: Aláírási beállítások beállítása
 

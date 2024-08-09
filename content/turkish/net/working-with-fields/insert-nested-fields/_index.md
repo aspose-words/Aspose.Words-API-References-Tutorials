@@ -98,7 +98,7 @@ doc.Save(dataDir + "InsertNestedFields.docx");
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak iç içe geçmiş alanları bir Word belgesine başarıyla eklediniz. Bu güçlü kitaplık, Word belgelerini programlı olarak yönetmeyi inanılmaz derecede kolaylaştırır. İster rapor oluşturuyor olun, ister şablon oluşturuyor olun, ister belge iş akışlarını otomatikleştiriyor olun, Aspose.Words yanınızdadır.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak iç içe geçmiş alanları bir Word belgesine başarıyla eklediniz. Bu güçlü kitaplık, Word belgelerini programlı olarak yönetmeyi inanılmaz derecede kolaylaştırır. İster rapor oluşturuyor olun, ister şablon oluşturuyor olun, ister belge iş akışlarını otomatikleştiriyor olun, Aspose.Words yanınızdadır.
 
 ## SSS'ler
 

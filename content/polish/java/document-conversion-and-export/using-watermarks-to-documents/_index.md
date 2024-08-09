@@ -99,7 +99,7 @@ doc.save("DocumentWithoutWatermark.docx");
 
 ## Wniosek
 
-tym samouczku nauczyliśmy się, jak dodawać znaki wodne do dokumentów za pomocą Aspose.Words dla Java. Niezależnie od tego, czy chcesz dodać tekstowe, czy graficzne znaki wodne, Aspose.Words zapewnia narzędzia do dostosowywania i wydajnego zarządzania nimi. Możesz także usunąć znaki wodne, gdy nie są już potrzebne, dzięki czemu Twoje dokumenty będą czyste i profesjonalne.
+tym samouczku nauczyliśmy się, jak dodawać znaki wodne do dokumentów za pomocą Aspose.Words dla Java. Niezależnie od tego, czy chcesz dodać tekstowe, czy graficzne znaki wodne, Aspose.Words zapewnia narzędzia do dostosowywania ich i efektywnego zarządzania nimi. Możesz także usunąć znaki wodne, gdy nie są już potrzebne, dzięki czemu Twoje dokumenty będą czyste i profesjonalne.
 
 ## Często zadawane pytania
 

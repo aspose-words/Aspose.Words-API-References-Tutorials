@@ -84,7 +84,7 @@ secondTable.Remove();
 doc.Save(dataDir + "WorkingWithTables.CombineRows.docx");
 ```
 
-Вот и все! Вы успешно объединили строки из двух таблиц в одну, используя Aspose.Words для .NET.
+И все! Вы успешно объединили строки из двух таблиц в одну, используя Aspose.Words для .NET.
 
 ## Заключение
 

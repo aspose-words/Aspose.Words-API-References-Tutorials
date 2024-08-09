@@ -89,7 +89,7 @@ doc.Range.Replace(regex, "*", options);
 Да, вы можете вернуть проигнорированный вставленный текст, используя соответствующие настройки FindReplaceOptions.
 
 ### Где я могу найти дополнительную документацию по Aspose.Words для .NET?
- Посетить[Документация Aspose.Words для .NET](https://reference.aspose.com/words/net/) подробные руководства и ссылки на API.
+ Посетите[Документация Aspose.Words для .NET](https://reference.aspose.com/words/net/) подробные руководства и ссылки на API.
 
 ### Существует ли форум сообщества для обсуждения запросов, связанных с Aspose.Words for .NET?
  Да, вы можете посетить[Форум Aspose.Words](https://forum.aspose.com/c/words/8) за поддержку сообщества и обсуждения.

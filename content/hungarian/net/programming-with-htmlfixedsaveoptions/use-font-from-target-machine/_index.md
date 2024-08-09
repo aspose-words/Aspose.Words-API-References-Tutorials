@@ -9,7 +9,7 @@ url: /hu/net/programming-with-htmlfixedsaveoptions/use-font-from-target-machine/
 ---
 ## Bevezetés
 
-Készen állsz, hogy belemerülj az Aspose.Words for .NET lenyűgöző világába? Kapcsold be, mert mindjárt elvezetünk egy utazásra a betűtípusok varázslatos birodalmában. Ma arra összpontosítunk, hogyan használjunk betűtípusokat a célgépről a Word dokumentumokkal való munka során. Ez a remek funkció biztosítja, hogy a dokumentum pontosan úgy nézzen ki, ahogyan szeretné, függetlenül attól, hogy hol tekintik meg. Kezdjük el!
+Készen állsz, hogy belemerülj az Aspose.Words for .NET lenyűgöző világába? Kapcsold be, mert mindjárt elvezetünk egy utazásra a betűtípusok varázslatos birodalmában. Ma arra összpontosítunk, hogyan használjunk betűtípusokat a célgépről a Word dokumentumokkal való munka során. Ez a remek funkció biztosítja, hogy a dokumentum pontosan úgy nézzen ki, ahogyan szeretné, függetlenül attól, hogy hol tekintik meg. Kezdjük is!
 
 ## Előfeltételek
 
@@ -104,10 +104,10 @@ Igen, az Aspose.Words for .NET különféle dokumentumformátumokat támogat, é
 Ha a célgép nem rendelkezik a szükséges betűtípusokkal, előfordulhat, hogy a dokumentum nem a kívánt módon jelenik meg. Mindig célszerű betűtípusokat beágyazni, ha szükséges.
 
 ### Hogyan ágyazhatok be betűtípusokat egy dokumentumba?
- A betűtípusok beágyazása a`FontSettings` osztály az Aspose.Words for .NET-ben. Utal[dokumentáció](https://reference.aspose.com/words/net/) további részletekért.
+ A betűtípusok beágyazása a`FontSettings` osztály az Aspose.Words for .NET-ben. Lásd a[dokumentáció](https://reference.aspose.com/words/net/) további részletekért.
 
 ### Van mód a dokumentum előnézetére mentés előtt?
- Igen, használhatod a`DocumentRenderer` osztályt a dokumentum előnézetének megtekintéséhez a mentés előtt. Nézze meg az Aspose.Words for .NET-et[dokumentáció](https://reference.aspose.com/words/net/) további információért.
+ Igen, használhatod a`DocumentRenderer` osztályt a dokumentum előnézetének megtekintéséhez a mentés előtt. Nézze meg az Aspose.Words for .NET-et[dokumentáció](https://reference.aspose.com/words/net/) további információkért.
 
 ### Testreszabhatom a HTML kimenetet?
  Teljesen! A`HtmlFixedSaveOptions` osztály különféle tulajdonságokat biztosít a HTML-kimenet testreszabásához. Fedezze fel a[dokumentáció](https://reference.aspose.com/words/net/) az összes elérhető opcióhoz.

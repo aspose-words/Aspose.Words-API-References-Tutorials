@@ -7,6 +7,7 @@ type: docs
 weight: 10
 url: /es/net/working-with-fonts/receive-warning-notification/
 ---
+## Introducción
 
 ¿Estás cansado de lidiar con problemas de fuentes inesperados en tus documentos? Con Aspose.Words para .NET, puede recibir notificaciones sobre cualquier problema potencial durante el procesamiento de documentos, lo que facilita el mantenimiento de la calidad de los documentos. Esta guía completa lo guiará a través de la configuración de notificaciones de advertencia en Aspose.Words, asegurándose de que nunca más se pierda una advertencia crucial.
 
@@ -17,7 +18,7 @@ Antes de sumergirnos, asegúrese de tener lo siguiente:
 - Conocimientos básicos de C#: la familiaridad con C# le ayudará a comprender e implementar los pasos.
 -  Aspose.Words para la biblioteca .NET: descárguelo e instálelo desde[enlace de descarga](https://releases.aspose.com/words/net/).
 - Entorno de desarrollo: una configuración como Visual Studio para escribir y ejecutar su código.
--  Documento de muestra: tenga un documento de muestra (p. ej.,`Rendering.docx`) trabajar con.
+-  Documento de muestra: tenga un documento de muestra (p. ej.,`Rendering.docx`) para trabajar.
 
 ## Importar espacios de nombres
 
@@ -69,7 +70,7 @@ doc.WarningCallback = callback;
 ```
 ## Paso 5: actualizar el diseño de la página
 
- Llama a`UpdatePageLayout` método. Esto representa el documento en la memoria y captura cualquier advertencia que ocurra durante la representación.
+ Llame al`UpdatePageLayout` método. Esto representa el documento en la memoria y captura cualquier advertencia que ocurra durante la representación.
 
 ```csharp
 doc.UpdatePageLayout();
@@ -101,11 +102,11 @@ No, solo puedes especificar una fuente predeterminada para la sustitución. Sin 
 
 ###  P3: ¿Puedo manejar otros tipos de advertencias con`IWarningCallback`?
 
- Sí el`IWarningCallback`La interfaz puede manejar varios tipos de advertencias, no solo la sustitución de fuentes.
+ Sí, el`IWarningCallback`La interfaz puede manejar varios tipos de advertencias, no solo la sustitución de fuentes.
 
 ### P4: ¿Dónde puedo encontrar soporte para Aspose.Words?
 
- Visita el[Foro de soporte de Aspose.Words](https://forum.aspose.com/c/words/8) para asistencia.
+ Visita el[Foro de soporte de Aspose.Words](https://forum.aspose.com/c/words/8) para obtener ayuda.
 
 ### P5: ¿Es posible obtener una licencia temporal para Aspose.Words?
 

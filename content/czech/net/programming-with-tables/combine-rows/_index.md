@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-tables/combine-rows/
 ---
-## Úvod
+## Zavedení
 
 Kombinování řádků z více tabulek do jediné soudržné tabulky může být skličující úkol. Ale s Aspose.Words pro .NET je to hračka! Tento průvodce vás provede celým procesem a usnadní vám bezproblémové slučování tabulek. Ať už jste ostřílený vývojář nebo teprve začínáte, tento návod shledáte neocenitelným. Pojďme se tedy ponořit a transformovat tyto rozptýlené řádky do jednotné tabulky.
 
@@ -15,11 +15,11 @@ Kombinování řádků z více tabulek do jediné soudržné tabulky může být
 
 Než se pustíme do kódovací části, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET: Můžete si ji stáhnout[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Můžete si ji stáhnout[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Visual Studio nebo jakékoli jiné IDE kompatibilní s .NET.
 3. Základní znalost C#: Pochopení C# bude prospěšné.
 
- Pokud ještě nemáte Aspose.Words pro .NET, můžete získat a[zkušební verze zdarma](https://releases.aspose.com/) nebo si to koupit[tady](https://purchase.aspose.com/buy) . V případě jakýchkoli dotazů,[Fórum podpory](https://forum.aspose.com/c/words/8) je skvělé místo, kde začít.
+ Pokud ještě nemáte Aspose.Words pro .NET, můžete získat a[zkušební verze zdarma](https://releases.aspose.com/) nebo si to koupit[zde](https://purchase.aspose.com/buy) . V případě jakýchkoli dotazů,[fórum podpory](https://forum.aspose.com/c/words/8) je skvělé místo, kde začít.
 
 ## Importovat jmenné prostory
 
@@ -84,13 +84,13 @@ Nakonec upravený dokument uložte. Tento krok zajistí, že vaše změny budou 
 doc.Save(dataDir + "WorkingWithTables.CombineRows.docx");
 ```
 
-A to je vše! Úspěšně jste zkombinovali řádky ze dvou tabulek do jedné pomocí Aspose.Words for .NET.
+A je to! Úspěšně jste zkombinovali řádky ze dvou tabulek do jedné pomocí Aspose.Words for .NET.
 
 ## Závěr
 
 Kombinace řádků z více tabulek do jedné může výrazně zjednodušit vaše úlohy zpracování dokumentů. S Aspose.Words pro .NET se tento úkol stává přímočarým a efektivním. Podle tohoto podrobného průvodce můžete snadno sloučit tabulky a zefektivnit svůj pracovní postup.
 
-Pokud potřebujete další informace nebo máte nějaké dotazy, na[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) je vynikajícím zdrojem. Můžete také prozkoumat možnosti nákupu[tady](https://purchase.aspose.com/buy) nebo získat a[dočasná licence](https://purchase.aspose.com/temporary-license/) pro testování.
+Pokud potřebujete další informace nebo máte nějaké dotazy, na[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) je vynikajícím zdrojem. Můžete také prozkoumat možnosti nákupu[zde](https://purchase.aspose.com/buy) nebo získat a[dočasná licence](https://purchase.aspose.com/temporary-license/) pro testování.
 
 ## FAQ
 
@@ -102,7 +102,7 @@ Ano, Aspose.Words vám umožňuje kombinovat tabulky, i když mají různé poč
 
 Formátování řádků je zachováno, když jsou připojeny k první tabulce.
 
-### Je možné spojit více než dva stoly?
+### Je možné kombinovat více než dva stoly?
 
 Ano, můžete kombinovat více tabulek opakováním kroků pro každou další tabulku.
 

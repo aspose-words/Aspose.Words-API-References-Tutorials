@@ -2,80 +2,94 @@
 title: Při vykreslování zadejte výchozí písmo
 linktitle: Při vykreslování zadejte výchozí písmo
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Podrobný průvodce určením výchozího písma při vykreslování dokumentu pomocí Aspose.Words for .NET.
+description: Přečtěte si, jak určit výchozí písmo při vykreslování dokumentů aplikace Word pomocí Aspose.Words for .NET. Zajistěte konzistentní vzhled dokumentu napříč platformami.
 type: docs
 weight: 10
 url: /cs/net/working-with-fonts/specify-default-font-when-rendering/
 ---
+## Zavedení
 
-tomto tutoriálu vás provedeme krok za krokem procesem zadání výchozího písma při vykreslování dokumentu pomocí Aspose.Words for .NET. Vysvětlíme vám přibalený zdrojový kód C# a poskytneme vám komplexního průvodce, který vám pomůže pochopit a implementovat tuto funkci ve vašich vlastních projektech. Na konci tohoto tutoriálu budete vědět, jak určit výchozí písmo, které se použije při vykreslování dokumentů pomocí Aspose.Words for .NET.
+Zajištění správného vykreslení dokumentů aplikace Word na různých platformách může být problém, zejména pokud jde o kompatibilitu písem. Jedním ze způsobů, jak zachovat konzistentní vzhled, je určit výchozí písmo při vykreslování dokumentů do PDF nebo jiných formátů. V tomto tutoriálu prozkoumáme, jak nastavit výchozí písmo pomocí Aspose.Words pro .NET, aby vaše dokumenty vypadaly skvěle bez ohledu na to, kde jsou zobrazeny.
 
-## Krok 1: Definujte adresář dokumentů
-Nejprve musíte nastavit cestu k adresáři dokumentů. Toto je umístění, kam chcete uložit upravený vykreslený dokument. Nahraďte "VAŠE ADRESÁŘ DOKUMENTŮ" příslušnou cestou.
+## Předpoklady
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Než se ponoříme do kódu, pojďme si s tímto návodem probrat, co budete muset dodržovat:
 
-## Krok 2: Načtěte dokument k vykreslení
- Dále musíte načíst dokument k vykreslení pomocí`Document` třída. Ujistěte se, že jste zadali správnou cestu dokumentu.
+- Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou nejnovější verzi. Můžete si jej stáhnout[zde](https://releases.aspose.com/words/net/).
+- Vývojové prostředí: Visual Studio nebo jakékoli jiné vývojové prostředí .NET.
+- Základní znalost C#: Tento tutoriál předpokládá, že se vyznáte v programování v C#.
 
-```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
-```
+## Importovat jmenné prostory
 
-## Krok 3: Nastavte výchozí písmo
- Nyní můžete určit výchozí písmo, které se má použít při vykreslování, vytvořením instance souboru`FontSettings` třídy a nastavení`DefaultFontName` majetek z`DefaultFontSubstitution` namítat proti`DefaultFontSubstitution` objekt`SubstitutionSettings` z`FontSettings`.
+Chcete-li začít, musíte importovat potřebné jmenné prostory. Ty vám umožní přístup ke třídám a metodám potřebným pro práci s Aspose.Words.
 
 ```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial Unicode MS";
-doc.FontSettings = fontSettings;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Krok 4: Uložte vykreslený dokument
- Nakonec můžete vykreslený dokument uložit do souboru pomocí`Save()` metoda`Document` třída. Ujistěte se, že jste zadali správnou cestu a název souboru.
+Nyní si rozeberme proces zadávání výchozího písma do snadno srozumitelných kroků.
 
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
-```
+## Krok 1: Nastavte adresář dokumentů
 
-### Ukázkový zdrojový kód pro specifikaci výchozího písma při vykreslování pomocí Aspose.Words for .NET 
+Nejprve definujte cestu k adresáři dokumentů. Zde budou uloženy vaše vstupní a výstupní soubory.
 
 ```csharp
 // Cesta k vašemu adresáři dokumentů
 string dataDir = "YOUR DOCUMENT DIRECTORY";
+```
 
+## Krok 2: Vložte svůj dokument
+
+Dále načtěte dokument, který chcete vykreslit. V tomto příkladu použijeme soubor s názvem „Rendering.docx“.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+## Krok 3: Nakonfigurujte nastavení písma
+
+ Vytvořte instanci`FontSettings` a zadejte výchozí písmo. Pokud nelze během vykreslování najít definované písmo, Aspose.Words použije nejbližší dostupný font na počítači.
+
+```csharp
 FontSettings fontSettings = new FontSettings();
-// Pokud zde definované výchozí písmo nelze během vykreslování najít
-// místo toho se použije nejbližší písmo na stroji.
 fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial Unicode MS";
+```
+
+## Krok 4: Použijte nastavení písma na dokument
+
+Přiřaďte dokumentu nakonfigurovaná nastavení písma.
+
+```csharp
 doc.FontSettings = fontSettings;
+```
+
+## Krok 5: Uložte dokument
+
+Nakonec dokument uložte v požadovaném formátu. V tomto případě jej uložíme jako PDF.
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 ```
 
 ## Závěr
-tomto tutoriálu jsme se naučili, jak určit výchozí písmo při vykreslování dokumentu pomocí Aspose.Words for .NET. Podle tohoto podrobného průvodce můžete snadno nastavit výchozí písmo, které se použije při vykreslování dokumentů. Aspose.Words nabízí výkonné a flexibilní API pro zpracování textu s písmy ve vašich dokumentech. S těmito znalostmi můžete řídit a přizpůsobovat vykreslování svých dokumentů svým konkrétním potřebám.
 
-### FAQ
+Pomocí těchto kroků můžete zajistit, aby se vaše dokumenty aplikace Word vykreslily se zadaným výchozím písmem, a zachovaly si konzistenci na různých platformách. To může být užitečné zejména pro dokumenty široce sdílené nebo prohlížené na systémech s různou dostupností písem.
 
-#### Otázka: Jak mohu určit výchozí písmo při převodu do PDF v Aspose.Words?
 
- A: Chcete-li určit výchozí písmo při převodu do PDF v Aspose.Words, můžete použít`PdfOptions` třídu a nastavte`DefaultFontName` vlastnost na název požadovaného písma.
+## FAQ
 
-#### Otázka: Co když není při převodu do PDF k dispozici výchozí písmo?
+### Proč zadat výchozí písmo v Aspose.Words?
+Zadáním výchozího písma zajistíte, že váš dokument bude vypadat konzistentně na různých platformách, i když původní písma nejsou k dispozici.
 
-Odpověď: Pokud zadané výchozí písmo není při převodu do PDF dostupné, Aspose.Words použije náhradní písmo pro zobrazení textu v převedeném dokumentu. To může způsobit mírný rozdíl ve vzhledu od původního písma.
+### Co se stane, když nebude během vykreslování nalezeno výchozí písmo?
+Aspose.Words použije nejbližší dostupné písmo na stroji, aby zachovalo vzhled dokumentu co nejpřesněji.
 
-#### Otázka: Mohu určit výchozí písmo pro jiné výstupní formáty, jako je DOCX nebo HTML?
+### Mohu zadat více výchozích písem?
+ Ne, můžete zadat pouze jedno výchozí písmo. Náhradu písem pro konkrétní případy však můžete zvládnout pomocí`FontSettings` třída.
 
-Odpověď: Ano, můžete určit výchozí písmo pro jiné výstupní formáty, jako je DOCX nebo HTML, pomocí příslušných voleb převodu a nastavením odpovídající vlastnosti pro každý formát.
+### Je Aspose.Words for .NET kompatibilní se všemi verzemi dokumentů aplikace Word?
+Ano, Aspose.Words for .NET podporuje širokou škálu formátů dokumentů Word, včetně DOC, DOCX, RTF a dalších.
 
-#### Otázka: Jak mohu zkontrolovat výchozí písmo určené v Aspose.Words?
-
- A: Chcete-li zkontrolovat výchozí písmo určené v Aspose.Words, můžete použít`DefaultFontName` majetek z`PdfOptions` třídy a načte název nakonfigurovaného písma.
-
-#### Otázka: Je možné určit jiné výchozí písmo pro každou část dokumentu?
-
-Odpověď: Ano, je možné určit různé výchozí písmo pro každou část dokumentu pomocí možností formátování specifických pro každou část. To by však vyžadovalo pokročilejší manipulaci s dokumentem pomocí funkcí Aspose.Words.
+### Kde mohu získat podporu, pokud narazím na problémy?
+ Podporu od komunity Aspose a vývojářů můžete získat na[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8).

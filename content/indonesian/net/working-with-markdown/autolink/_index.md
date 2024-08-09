@@ -2,68 +2,97 @@
 title: Tautan otomatis
 linktitle: Tautan otomatis
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menyisipkan tautan otomatis dengan Aspose.Words untuk .NET Panduan langkah demi langkah.
+description: Pelajari cara menyisipkan dan mengkustomisasi hyperlink di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan mendetail ini. Sempurnakan dokumen Anda dengan mudah.
 type: docs
 weight: 10
 url: /id/net/working-with-markdown/autolink/
 ---
+## Perkenalan
 
-Dalam contoh ini, kami akan menjelaskan cara menggunakan fitur "Tautan Otomatis" dengan Aspose.Words untuk .NET. Fitur ini memungkinkan Anda memasukkan hyperlink ke dalam dokumen Anda secara otomatis.
+Membuat dokumen yang profesional dan sempurna sering kali memerlukan kemampuan untuk menyisipkan dan mengelola hyperlink secara efektif. Baik Anda perlu menambahkan tautan ke situs web, alamat email, atau dokumen lainnya, Aspose.Words untuk .NET menawarkan serangkaian alat canggih untuk membantu Anda mencapai hal ini. Dalam tutorial ini, kita akan mempelajari cara menyisipkan dan mengkustomisasi hyperlink di dokumen Word menggunakan Aspose.Words untuk .NET, menguraikan setiap langkah untuk membuat prosesnya mudah dan mudah diakses.
 
-## Langkah 1: Menggunakan pembuat dokumen
+## Prasyarat
 
-Pertama, kita akan menggunakan pembuat dokumen untuk menambahkan konten ke dokumen kita.
+Sebelum mendalami langkah-langkahnya, pastikan Anda memiliki semua yang Anda butuhkan:
+
+-  Aspose.Words untuk .NET: Unduh dan instal versi terbaru dari[Di Sini](https://releases.aspose.com/words/net/).
+- Lingkungan Pengembangan: IDE seperti Visual Studio.
+- .NET Framework: Pastikan Anda telah menginstal versi yang sesuai.
+- Pengetahuan Dasar C#: Keakraban dengan pemrograman C# akan sangat membantu.
+
+## Impor Namespace
+
+Untuk memulai, pastikan Anda mengimpor namespace yang diperlukan ke dalam proyek Anda. Ini akan memungkinkan Anda mengakses fungsionalitas Aspose.Words dengan lancar.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Saving;
+```
+
+## Langkah 1: Menyiapkan Proyek Anda
+
+Hal pertama yang pertama, siapkan proyek Anda di Visual Studio. Buka Visual Studio dan buat Aplikasi Konsol baru. Beri nama sesuatu yang relevan, seperti "HyperlinkDemo".
+
+## Langkah 2: Inisialisasi Dokumen dan DocumentBuilder
+
+Selanjutnya, inisialisasi dokumen baru dan objek DocumentBuilder. DocumentBuilder adalah alat praktis yang memungkinkan Anda memasukkan berbagai elemen ke dalam dokumen Word Anda.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Langkah 2: Memasukkan hyperlink
+## Langkah 3: Masukkan Hyperlink ke Situs Web
 
- Kita dapat menyisipkan hyperlink menggunakan`InsertHyperlink` metode pembuat dokumen. Kami menentukan URL dan teks yang akan ditampilkan untuk tautan tersebut.
-
-```csharp
-builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", salah);
-```
-
-## Langkah 3: Memasukkan alamat email sebagai tautan
-
-Kita juga dapat memasukkan alamat email sebagai link menggunakan awalan "mailto:". Ini akan memungkinkan pengguna mengeklik tautan untuk membuka klien email default mereka.
+ Untuk menyisipkan hyperlink ke situs web, gunakan`InsertHyperlink` metode. Anda harus memberikan teks tampilan, URL, dan boolean yang menunjukkan apakah tautan tersebut harus ditampilkan sebagai hyperlink.
 
 ```csharp
-builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
+// Sisipkan hyperlink ke situs web.
+builder.InsertHyperlink("Aspose Website", "https://www.aspose.com", salah);
 ```
 
-## Langkah 4: Menyimpan dokumen
+Ini akan memasukkan tautan yang dapat diklik dengan teks "Aspose Website" yang mengarahkan ke beranda Aspose.
 
-Terakhir, kita bisa menyimpan dokumen dalam format yang diinginkan.
+## Langkah 4: Masukkan Hyperlink ke Alamat Email
 
-### Contoh Source Code untuk Autolink menggunakan Aspose.Words for .NET
-
+ Memasukkan tautan ke alamat email juga mudah. Gunakan hal yang sama`InsertHyperlink` metode tetapi dengan awalan "mailto:" di URL.
 
 ```csharp
-// Gunakan pembuat dokumen untuk menambahkan konten ke dokumen.
-DocumentBuilder builder = new DocumentBuilder();
-
-// Sisipkan hyperlink.
-builder.InsertHyperlink("https://www.aspose.com", "https://www.aspose.com", salah);
-builder.InsertHyperlink("email@aspose.com", "mailto:email@aspose.com", false);
+// Masukkan hyperlink ke alamat email.
+builder.InsertHyperlink("Contact Support", "mailto:support@aspose.com", false);
 ```
 
+ Sekarang, mengklik "Hubungi Dukungan" akan membuka klien email default dengan alamat email baru`support@aspose.com`.
 
-Selamat! Anda sekarang telah mempelajari cara menggunakan fitur "Tautan Otomatis" dengan Aspose.Words untuk .NET.
+## Langkah 5: Sesuaikan Tampilan Hyperlink
 
+Hyperlink dapat dikustomisasi agar sesuai dengan gaya dokumen Anda. Anda dapat mengubah warna font, ukuran, dan atribut lainnya menggunakan`Font` milik DocumentBuilder.
 
-### FAQ
+```csharp
+// Sesuaikan tampilan hyperlink.
+builder.Font.Color = System.Drawing.Color.Blue;
+builder.Font.Underline = Underline.Single;
+builder.InsertHyperlink("Styled Link", "https://www.aspose.com", salah);
+```
 
-#### T: Bagaimana cara membuat tautan otomatis ke alamat URL di Aspose.Words?
+Cuplikan ini akan menyisipkan hyperlink berwarna biru yang digarisbawahi, membuatnya menonjol di dokumen Anda.
 
- A: Untuk membuat tautan otomatis ke alamat URL di Aspose.Words, Anda dapat menggunakan`<a>` tandai dengan`href` atribut yang berisi alamat URL. Misalnya, Anda bisa menggunakan`<a href="https://www.aspose.com">https://www.aspose.com</a>` untuk secara otomatis menautkan ke "https: //www.aspose.com".
+## Kesimpulan
 
-#### T: Apakah mungkin untuk menyesuaikan teks tampilan tautan otomatis di Aspose.Words?
+Memasukkan dan menyesuaikan hyperlink di dokumen Word menggunakan Aspose.Words untuk .NET sangatlah mudah jika Anda mengetahui langkah-langkahnya. Dengan mengikuti panduan ini, Anda dapat menyempurnakan dokumen Anda dengan tautan yang bermanfaat, menjadikannya lebih interaktif dan profesional. Baik itu menautkan ke situs web, alamat email, atau menyesuaikan tampilan, Aspose.Words menyediakan semua alat yang Anda butuhkan.
 
- A: Ya, Anda dapat menyesuaikan teks tampilan tautan otomatis di Aspose.Words. Daripada menggunakan alamat URL sebagai teks tampilan, Anda dapat menggunakan teks lain dengan mengganti konten di antara`<a>` tag. Misalnya, Anda bisa menggunakan`<a href="https://www.aspose.com">Click here</a>`untuk menampilkan teks "Klik di sini" sebagai tautan otomatis.
+## FAQ
 
-#### T: Bagaimana cara menambahkan atribut tambahan ke tautan otomatis di Aspose.Words?
+### Bisakah saya menyisipkan hyperlink ke dokumen lain?
+Ya, Anda dapat menyisipkan hyperlink ke dokumen lain dengan memberikan jalur file sebagai URL.
 
- A: Untuk menambahkan atribut tambahan pada tautan otomatis di Aspose.Words, Anda dapat menggunakan atribut HTML tambahan di dalamnya`<a>` menandai. Misalnya, Anda bisa menggunakan`<a href="https://www.aspose.com" target="_blank">Link</a>` untuk membuka tautan di jendela atau tab baru menggunakan` attribute target="_blank"`.
+### Bagaimana cara menghapus hyperlink?
+ Anda dapat menghapus hyperlink dengan menggunakan`Remove` metode pada node hyperlink.
+
+### Bisakah saya menambahkan keterangan alat ke hyperlink?
+Ya, Anda dapat menambahkan tooltips dengan mengatur`ScreenTip` milik hyperlink.
+
+### Apakah mungkin untuk menata hyperlink secara berbeda di seluruh dokumen?
+ Ya, Anda dapat menata hyperlink secara berbeda dengan mengatur`Font` properti sebelum menyisipkan setiap hyperlink.
+
+### Bagaimana cara memperbarui atau mengubah hyperlink yang ada?
+Anda dapat memperbarui hyperlink yang ada dengan mengaksesnya melalui node dokumen dan mengubah propertinya.

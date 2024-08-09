@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-bookmarks/update-bookmark-data/
 ---
-## introduzione
+## Introduzione
 
 Hai mai riscontrato una situazione in cui avevi bisogno di aggiornare dinamicamente sezioni specifiche all'interno di un documento Word? Forse stai generando report con segnaposto per i dati o forse stai lavorando con modelli che richiedono frequenti modifiche ai contenuti. Bene, non preoccuparti più! Aspose.Words per .NET si presenta come il tuo cavaliere dall'armatura scintillante, offrendo una soluzione robusta e facile da usare per gestire i segnalibri e mantenere aggiornati i tuoi documenti.
 
@@ -15,7 +15,7 @@ Hai mai riscontrato una situazione in cui avevi bisogno di aggiornare dinamicame
 
 Prima di immergerci nel codice, assicuriamoci di avere a disposizione gli strumenti necessari:
 
--  Aspose.Words per .NET: questa è la libreria potente che ti consente di lavorare con documenti Word a livello di codice. Vai alla sezione download sul sito Aspose[Link per scaricare](https://releases.aspose.com/words/net/) per prendere la tua copia. - Puoi optare per una prova gratuita o esplorare le varie opzioni di licenza[collegamento](https://purchase.aspose.com/buy).
+-  Aspose.Words per .NET: questa è la libreria potente che ti consente di lavorare con documenti Word a livello di codice. Vai alla sezione download sul sito Aspose[Collegamento per il download](https://releases.aspose.com/words/net/) per prendere la tua copia. - Puoi optare per una prova gratuita o esplorare le varie opzioni di licenza[collegamento](https://purchase.aspose.com/buy).
 - Un ambiente di sviluppo .NET: Visual Studio, Visual Studio Code o qualsiasi altro IDE .NET di tua scelta fungerà da parco giochi di sviluppo.
 - Un documento Word di esempio: crea un semplice documento Word (come "Bookmarks.docx") contenente del testo e inserisci un segnalibro (vedremo come farlo più avanti) con cui esercitarti.
 

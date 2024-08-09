@@ -15,7 +15,7 @@ Aspose.Words for .NET'te HTML yükleme seçenekleriyle nasıl çalışılacağı
 
 Koda geçmeden önce, yerine getirmeniz gereken birkaç şey var:
 
-1.  Aspose.Words for .NET: Aspose.Words for .NET kütüphanesinin kurulu olduğundan emin olun. adresinden indirebilirsiniz.[İnternet sitesi](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Aspose.Words for .NET kütüphanesinin kurulu olduğundan emin olun. adresinden indirebilirsiniz.[web sitesi](https://releases.aspose.com/words/net/).
 2. Geliştirme Ortamı: Visual Studio gibi bir geliştirme ortamına sahip olmalısınız.
 3. Temel C# Bilgisi: Öğreticiyi takip etmek için C# programlamaya ilişkin temel bir anlayış gereklidir.
 4. HTML İçeriği: Bu örnekte HTML içeriğiyle çalışacağımız için temel HTML bilgisi faydalıdır.
@@ -93,7 +93,7 @@ Bu, oluşturulan birleşik giriş kutusu denetimiyle birlikte Word belgesini bel
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET kullanarak, HTML yükleme seçeneklerini kullanarak bir Word belgesine başarılı bir şekilde birleşik giriş kutusu form alanı ekledik. Bu adım adım kılavuz, süreci anlamanıza ve projelerinize uygulamanıza yardımcı olacaktır. İster belge oluşturmayı otomatikleştiriyor olun ister HTML içeriğini yönetiyor olun, Aspose.Words for .NET, hedeflerinize ulaşmanız için güçlü araçlar sağlar.
+Ve işte karşınızda! Aspose.Words for .NET kullanarak, HTML yükleme seçeneklerini kullanarak bir Word belgesine başarılı bir şekilde birleşik giriş kutusu form alanı ekledik. Bu adım adım kılavuz, süreci anlamanıza ve projelerinize uygulamanıza yardımcı olacaktır. İster belge oluşturmayı otomatikleştiriyor olun ister HTML içeriğini yönetiyor olun, Aspose.Words for .NET, hedeflerinize ulaşmanız için güçlü araçlar sağlar.
 
 ## SSS'ler
 

@@ -77,11 +77,11 @@ image.text_wrapping.side = aw.drawing.TextWrappingSide.BOTH
 
 ## Speciális funkciókat tartalmaz
 
-Az Aspose.Words for Python fejlett szolgáltatásokat kínál a dokumentumelrendezések továbbfejlesztéséhez. Ide tartozik a táblázatok, diagramok, hiperhivatkozások és egyebek hozzáadása. Tekintse meg a dokumentációt a lehetőségek átfogó listájához.
+Az Aspose.Words for Python fejlett szolgáltatásokat kínál a dokumentumelrendezések továbbfejlesztéséhez. Ide tartozik a táblázatok, diagramok, hiperhivatkozások és egyebek hozzáadása. Fedezze fel a dokumentációt a lehetőségek átfogó listájához.
 
 ## Következtetés
 
-Az Aspose.Words for Python képességeinek köszönhetően a vizuálisan lenyűgöző dokumentumformák és -elrendezések elkészítése többé nem bonyolult feladat. Hatékony funkcióival a hétköznapi dokumentumokat vizuálisan lebilincselő darabokká alakíthatja, amelyek megnyerik a közönséget és visszhangot keltenek benne.
+Az Aspose.Words for Python képességeinek köszönhetően a vizuálisan lenyűgöző dokumentumformák és -elrendezések elkészítése többé nem bonyolult feladat. Hatékony funkcióival a hétköznapi dokumentumokat vizuálisan lebilincselő darabokká alakíthatja, amelyek megnyerik a közönséget, és visszhangot keltenek benne.
 
 ## GYIK
 
@@ -89,7 +89,7 @@ Az Aspose.Words for Python képességeinek köszönhetően a vizuálisan lenyűg
  Az Aspose.Words for Python letölthető a[letöltési link](https://releases.aspose.com/words/python/).
 
 ### Hol találom az Aspose.Words for Python átfogó dokumentációját?
- Utal[dokumentáció](https://reference.aspose.com/words/python-net/) részletes útmutatásért az Aspose.Words for Python használatához.
+ Lásd a[dokumentáció](https://reference.aspose.com/words/python-net/) részletes útmutatásért az Aspose.Words for Python használatához.
 
 ### Testreszabhatom a formák színeit és stílusát?
 Teljesen! Az Aspose.Words for Python lehetőséget biztosít az alakzatok színének, méretének és stílusának testreszabására az Ön tervezési preferenciáinak megfelelően.

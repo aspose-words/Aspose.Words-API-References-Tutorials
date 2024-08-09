@@ -10,7 +10,7 @@ url: /zh-hant/net/programming-with-loadoptions/set-ms-word-version/
 ---
 ## 介紹
 
-您是否曾經發現自己需要使用特定版本的 MS Word 文檔，但不知道如何以程式設計方式進行設定？你不是一個人！在本教學中，我們將逐步介紹使用 Aspose.Words for .NET 設定 MS Word 版本的過程。這是一個非常棒的工具，可以讓操作 Word 文件變得輕而易舉。我們將深入探討細節，分解每個步驟，以確保您順利啟動並運行。準備好開始了嗎？讓我們深入了解吧！
+您是否曾經發現自己需要使用特定版本的 MS Word 文檔，但不知道如何以程式設計方式進行設定？你並不孤單！在本教學中，我們將逐步介紹使用 Aspose.Words for .NET 設定 MS Word 版本的過程。這是一個非常棒的工具，可以讓操作 Word 文件變得輕而易舉。我們將深入探討細節，分解每個步驟，以確保您順利啟動並運行。準備好開始了嗎？讓我們深入了解吧！
 
 ## 先決條件
 
@@ -23,7 +23,7 @@ url: /zh-hant/net/programming-with-loadoptions/set-ms-word-version/
 
 ## 導入命名空間
 
-在開始編碼之前，您需要匯入必要的名稱空間。您可以這樣做：
+在開始編碼之前，您需要匯入必要的命名空間。您可以這樣做：
 
 ```csharp
 using Aspose.Words;

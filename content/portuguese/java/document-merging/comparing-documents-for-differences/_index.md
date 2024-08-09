@@ -81,7 +81,7 @@ Aspose.Words pode lidar com documentos grandes de forma eficiente, mas é essenc
 
 ### Posso personalizar a forma como as diferenças são destacadas no resultado da comparação?
 
-Sim, Aspose.Words permite personalizar a aparência das diferenças no documento de resultado da comparação, como usar cores ou estilos diferentes para conteúdo adicionado e excluído.
+Sim, Aspose.Words permite personalizar a aparência das diferenças no documento de resultados de comparação, como usar cores ou estilos diferentes para conteúdo adicionado e excluído.
 
 ### Existe uma versão de teste do Aspose.Words disponível para teste?
 

@@ -40,7 +40,7 @@ Ange först sökvägen där du vill spara ditt dokument. Det är här Aspose.Wor
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där du vill lagra dina dokument. Denna sökväg är avgörande eftersom den leder Aspose.Words var du ska spara utdatafilen.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där du vill lagra dina dokument. Denna sökväg är avgörande eftersom den leder Aspose.Words var du ska spara utdatafilen.
 
 ## Steg 2: Skapa ett exempel på textdokument
 
@@ -90,7 +90,7 @@ Slutligen, spara det bearbetade dokumentet i din angivna katalog. Detta steg skr
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx");
 ```
 
- Denna kod sparar dokumentet med de rensade utrymmena till den namngivna filen`WorkingWithTxtLoadOptions.HandleSpacesOptions.docx` i din utsedda katalog.
+ Den här koden sparar dokumentet med de rensade utrymmena till den namngivna filen`WorkingWithTxtLoadOptions.HandleSpacesOptions.docx` i din utsedda katalog.
 
 ## Slutsats
 

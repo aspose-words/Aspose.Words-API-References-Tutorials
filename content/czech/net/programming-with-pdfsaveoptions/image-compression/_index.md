@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-pdfsaveoptions/image-compression/
 ---
-## Úvod
+## Zavedení
 
 dnešním digitálním věku je správa velikosti dokumentu zásadní pro výkon i efektivitu úložiště. Ať už pracujete s velkými zprávami nebo složitými prezentacemi, snížení velikosti souboru bez obětování kvality je zásadní. Komprese obrázků v dokumentech PDF je klíčovou technikou k dosažení tohoto cíle. Pokud pracujete s Aspose.Words pro .NET, máte štěstí! Tento tutoriál vás provede procesem komprese obrázků v dokumentech PDF pomocí Aspose.Words pro .NET. Prozkoumáme různé možnosti komprese a jak je efektivně použít, abychom zajistili, že vaše soubory PDF budou optimalizovány z hlediska kvality i velikosti.
 
@@ -55,11 +55,11 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Tady,`"Rendering.docx"` je název vašeho ukázkového dokumentu aplikace Word. Ujistěte se, že je tento soubor umístěn v určeném adresáři.
+ Zde,`"Rendering.docx"` je název vašeho ukázkového dokumentu aplikace Word. Ujistěte se, že je tento soubor umístěn v určeném adresáři.
 
 ## Krok 3: Nakonfigurujte základní kompresi obrazu
 
- Vytvořit`PdfSaveOptions`objekt pro konfiguraci možností uložení PDF, včetně komprese obrazu. Nastav`ImageCompression`majetek do`PdfImageCompression.Jpeg` pro použití komprese JPEG pro obrázky.
+ Vytvořte a`PdfSaveOptions`objekt pro konfiguraci možností uložení PDF, včetně komprese obrazu. Nastavte`ImageCompression`majetek do`PdfImageCompression.Jpeg` pro použití komprese JPEG pro obrázky.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression.pdf", saveOpti
 
 ## Krok 5: Nakonfigurujte pokročilou kompresi s PDF/A
 
- Pro ještě lepší kompresi, zejména pokud potřebujete vyhovět standardům PDF/A, můžete nakonfigurovat další možnosti. Nastav`Compliance`majetek do`PdfCompliance.PdfA2u` a upravit`JpegQuality` vlastnictví.
+ Pro ještě lepší kompresi, zejména pokud potřebujete vyhovět standardům PDF/A, můžete nakonfigurovat další možnosti. Nastavte`Compliance`majetek do`PdfCompliance.PdfA2u` a upravit`JpegQuality` vlastnictví.
 
 ```csharp
 PdfSaveOptions saveOptionsA2U = new PdfSaveOptions
@@ -127,7 +127,7 @@ Ano, Aspose.Words podporuje PDF/A, což vám umožňuje ukládat dokumenty ve fo
 Vyšší nastavení kvality JPEG vede k lepší kvalitě obrazu, ale větší velikosti souborů, zatímco nastavení nižší kvality zmenšuje velikost souboru, ale může ovlivnit čistotu obrazu.
 
 ### Kde najdu další informace o Aspose.Words pro .NET?
- Více o Aspose.Words pro .NET můžete prozkoumat na jejich stránkách[Dokumentace](https://reference.aspose.com/words/net/), [Podpěra, podpora](https://forum.aspose.com/c/words/8) , a[Stažení](https://releases.aspose.com/words/net/) stránky.
+ Více o Aspose.Words pro .NET můžete prozkoumat na jejich stránkách[Dokumentace](https://reference.aspose.com/words/net/), [Podpora](https://forum.aspose.com/c/words/8) a[Stáhnout](https://releases.aspose.com/words/net/) stránky.
 
 ### Ukázka zdrojového kódu pro kompresi obrázků pomocí Aspose.Words pro .NET
 

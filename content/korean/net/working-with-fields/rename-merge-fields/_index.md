@@ -99,7 +99,7 @@ doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
 
 ### .NET용 Aspose.Words는 무료인가요?
 
- Aspose.Words for .NET은 상용 제품이지만 다음을 사용할 수 있습니다.[무료 시험판](https://releases.aspose.com/) 그것을 평가하기 위해.
+ Aspose.Words for .NET은 상용 제품이지만 다음을 사용할 수 있습니다.[무료 평가판](https://releases.aspose.com/) 그것을 평가하기 위해.
 
 ### .NET용 Aspose.Words에 대한 추가 문서는 어디서 찾을 수 있나요?
 

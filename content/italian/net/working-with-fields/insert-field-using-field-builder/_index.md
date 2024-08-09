@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/working-with-fields/insert-field-using-field-builder/
 ---
-## introduzione
+## Introduzione
 
 Ehilà! Ti sei mai trovato a grattarti la testa, chiedendoti come inserire campi dinamici nei tuoi documenti Word a livello di codice? Bene, non preoccuparti più! In questo tutorial approfondiremo le meraviglie di Aspose.Words per .NET, una potente libreria che ti consente di creare, manipolare e trasformare documenti Word senza problemi. Nello specifico, spiegheremo come inserire i campi utilizzando il Field Builder. Iniziamo!
 
@@ -95,7 +95,7 @@ Infine, salviamo il nostro documento e controlliamo i risultati.
 doc.Save(dataDir + "InsertFieldWithFieldBuilder.docx");
 ```
 
-E il gioco è fatto! Hai inserito con successo un campo in un documento di Word utilizzando Aspose.Words per .NET.
+Ed ecco qua! Hai inserito con successo un campo in un documento di Word utilizzando Aspose.Words per .NET.
 
 ## Conclusione
 

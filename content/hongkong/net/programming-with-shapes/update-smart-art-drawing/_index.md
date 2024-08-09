@@ -9,7 +9,7 @@ url: /zh-hant/net/programming-with-shapes/update-smart-art-drawing/
 ---
 ## 介紹
 
-Smart Art 圖形是在 Word 文件中直觀地表示資訊的絕佳方式。無論您是在起草商業報告、教育文章還是演示文稿，Smart Art 都可以讓複雜的數據更易於理解。但是，隨著文件的發展，其中的 Smart Art 圖形可能需要更新以反映最新的變更。如果您使用 Aspose.Words for .NET，則可以透過程式簡化此流程。本教學將引導您了解如何使用 Aspose.Words for .NET 更新 Word 文件中的智慧藝術繪圖，從而更輕鬆地保持視覺效果的新鮮和準確。
+Smart Art 圖形是在 Word 文件中直觀地表示資訊的絕佳方式。無論您是在起草商業報告、教育文章還是演示文稿，Smart Art 都可以讓複雜的數據更易於理解。但是，隨著文件的發展，其中的 Smart Art 圖形可能需要更新以反映最新的變更。如果您使用 Aspose.Words for .NET，則可以透過程式簡化此流程。本教學將引導您了解如何使用 Aspose.Words for .NET 更新 Word 文件中的智慧藝術繪圖，從而更輕鬆地保持視覺效果的新鮮度和準確性。
 
 ## 先決條件
 

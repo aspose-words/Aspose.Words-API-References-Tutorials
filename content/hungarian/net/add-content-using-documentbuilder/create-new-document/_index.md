@@ -49,7 +49,7 @@ Most pedig hozzunk létre egy új dokumentumot. Gondoljon erre úgy, mint egy ü
 Document doc = new Document();
 ```
 
-Most hoztunk létre egy üres Word-dokumentumot. Elég menő, mi?
+Most hoztunk létre egy üres Word-dokumentumot. Nagyon klassz, mi?
 
 ## 3. lépés: Tartalom hozzáadása a DocumentBuilder segítségével
 
@@ -81,7 +81,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.CreateNewDocument.docx");
 
 ## Következtetés
 
-Gratulálunk! Az Aspose.Words for .NET segítségével megtette az első lépéseket a dokumentumautomatizálás világába. A nulláról kezdtük, beállítottuk a környezetünket, létrehoztunk egy új dokumentumot, hozzáadtunk némi tartalmat, és elmentettük. Ez csak a jéghegy csúcsa. Az Aspose.Word segítségével olyan módon kezelheti a dokumentumokat, ahogyan azt soha nem is gondolta – egyesítheti a dokumentumokat, képeket adhat hozzá, táblázatokat hozhat létre és még sok minden mást.
+Gratulálok! Az Aspose.Words for .NET segítségével megtette az első lépéseket a dokumentumautomatizálás világába. A nulláról kezdtük, beállítottuk a környezetünket, létrehoztunk egy új dokumentumot, hozzáadtunk némi tartalmat, és elmentettük. Ez csak a jéghegy csúcsa. Az Aspose.Word segítségével olyan módon kezelheti a dokumentumokat, ahogyan azt soha nem is gondolta – egyesítheti a dokumentumokat, képeket adhat hozzá, táblázatokat hozhat létre és még sok minden mást.
 
 ## GYIK
 

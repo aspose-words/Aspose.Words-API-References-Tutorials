@@ -7,9 +7,9 @@ type: docs
 weight: 10
 url: /it/net/programming-with-htmlsaveoptions/resolve-font-names/
 ---
-## introduzione
+## Introduzione
 
-Ehi, collega programmatore! Se ti sei mai trovato a lottare con problemi relativi ai caratteri durante il salvataggio di documenti Word come HTML, non sei il solo. I caratteri possono essere complicati, ma non preoccuparti; Ti guardo le spalle. Oggi approfondiremo come risolvere i nomi dei caratteri nei documenti di Word utilizzando Aspose.Words per .NET. Questa guida ti guiderà attraverso il processo passo dopo passo, assicurandoti che i tuoi caratteri appaiano perfettamente nel formato HTML.
+Ehi, collega programmatore! Se ti sei mai trovato a lottare con problemi relativi ai caratteri durante il salvataggio di documenti Word come HTML, non sei il solo. I caratteri possono essere complicati, ma non preoccuparti; Ti copro le spalle. Oggi approfondiremo come risolvere i nomi dei caratteri nei documenti di Word utilizzando Aspose.Words per .NET. Questa guida ti guiderà attraverso il processo passo dopo passo, assicurandoti che i tuoi caratteri appaiano perfettamente nel formato HTML.
 
 ## Prerequisiti
 
@@ -82,7 +82,7 @@ Spiegazione:
 
 ## Conclusione
 
-E il gioco è fatto! Seguendo questi passaggi, hai risolto con successo i nomi dei caratteri durante la conversione di un documento Word in HTML utilizzando Aspose.Words per .NET. Ciò non solo garantisce che i tuoi caratteri vengano visualizzati correttamente, ma rende anche il tuo output HTML raffinato e professionale. Buona programmazione!
+Ed ecco qua! Seguendo questi passaggi, hai risolto con successo i nomi dei caratteri durante la conversione di un documento Word in HTML utilizzando Aspose.Words per .NET. Ciò non solo garantisce che i tuoi caratteri vengano visualizzati correttamente, ma rende anche il tuo output HTML raffinato e professionale. Buona programmazione!
 
 ## Domande frequenti
 

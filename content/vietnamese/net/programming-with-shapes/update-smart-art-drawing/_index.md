@@ -38,7 +38,7 @@ Các không gian tên này cung cấp các lớp và phương thức cần thi�
 
 Tiêu đề: Tải tài liệu
 
-Giải trình:
+Giải thích:
  Trước tiên, bạn cần tải tài liệu Word có chứa đồ họa Smart Art. Điều này được thực hiện bằng cách tạo một thể hiện của`Document` class và cung cấp đường dẫn đến tài liệu của bạn.
 
 ```csharp
@@ -56,7 +56,7 @@ Việc tải tài liệu sẽ thiết lập môi trường làm việc của b�
 
 Tiêu đề: Xác định vị trí Đồ họa nghệ thuật thông minh
 
-Giải trình:
+Giải thích:
 Sau khi tài liệu được tải, bạn cần xác định hình dạng nào là Smart Art. Điều này đạt được bằng cách lặp qua tất cả các hình dạng trong tài liệu và kiểm tra xem chúng có phải là Smart Art hay không.
 
 ```csharp
@@ -79,8 +79,8 @@ Việc xác định các hình dạng Smart Art đảm bảo rằng bạn chỉ 
 
 Tiêu đề: Làm mới đồ họa nghệ thuật thông minh
 
-Giải trình:
- Các`UpdateSmartArtDrawing` phương pháp làm mới đồ họa Smart Art, đảm bảo rằng nó phản ánh bất kỳ thay đổi nào trong dữ liệu hoặc bố cục của tài liệu. Phương pháp này phải được gọi trên mỗi hình Smart Art được xác định ở bước trước.
+Giải thích:
+ các`UpdateSmartArtDrawing` phương pháp làm mới đồ họa Smart Art, đảm bảo rằng nó phản ánh bất kỳ thay đổi nào trong dữ liệu hoặc bố cục của tài liệu. Phương pháp này phải được gọi trên mỗi hình Smart Art được xác định ở bước trước.
 
 ```csharp
 // Cập nhật bản vẽ Smart Art cho từng hình Smart Art
@@ -97,7 +97,7 @@ Cập nhật Smart Art đảm bảo hình ảnh luôn cập nhật và chính x�
 
 Tiêu đề: Lưu tài liệu đã cập nhật
 
-Giải trình:
+Giải thích:
 Sau khi cập nhật Smart Art, hãy lưu tài liệu để giữ nguyên các thay đổi. Bước này đảm bảo rằng tất cả các sửa đổi được ghi vào tệp.
 
 ```csharp

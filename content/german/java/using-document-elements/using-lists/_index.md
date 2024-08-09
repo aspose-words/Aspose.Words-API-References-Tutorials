@@ -216,7 +216,7 @@ Indem Sie diese Schritte befolgen, können Sie Dokumente mit benutzerdefinierten
 
 Herzlichen Glückwunsch! Sie haben gelernt, wie Sie in Aspose.Words für Java effektiv mit Listen arbeiten. Listen sind entscheidend für die Organisation und Präsentation von Inhalten in Ihren Dokumenten. Ob Sie Listen in jedem Abschnitt neu starten oder Listenebenen angeben müssen, Aspose.Words für Java bietet die Tools, die Sie zum Erstellen professionell aussehender Dokumente benötigen.
 
-Jetzt können Sie diese Funktionen vertrauensvoll nutzen, um Ihre Aufgaben bei der Dokumenterstellung und -formatierung zu verbessern. Wenn Sie Fragen haben oder weitere Hilfe benötigen, wenden Sie sich bitte an den[Aspose-Community-Forum](https://forum.aspose.com/) zur Unterstützung.
+Jetzt können Sie diese Funktionen vertrauensvoll nutzen, um Ihre Aufgaben bei der Dokumenterstellung und -formatierung zu verbessern. Wenn Sie Fragen haben oder weitere Hilfe benötigen, wenden Sie sich bitte an den[Aspose-Community-Forum](https://forum.aspose.com/) für die Unterstützung.
 
 ## FAQs
 

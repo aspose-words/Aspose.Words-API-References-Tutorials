@@ -89,7 +89,7 @@ Crear formas y diseños de documentos visualmente impresionantes ya no es una ta
  Puede descargar Aspose.Words para Python desde[enlace de descarga](https://releases.aspose.com/words/python/).
 
 ### ¿Dónde puedo encontrar documentación completa sobre Aspose.Words para Python?
- Referirse a[documentación](https://reference.aspose.com/words/python-net/) para obtener orientación detallada sobre el uso de Aspose.Words para Python.
+ Consulte el[documentación](https://reference.aspose.com/words/python-net/) para obtener orientación detallada sobre el uso de Aspose.Words para Python.
 
 ### ¿Puedo personalizar los colores y estilos de las formas?
 ¡Absolutamente! Aspose.Words para Python ofrece opciones para personalizar los colores, tamaños y estilos de las formas para que coincidan con sus preferencias de diseño.

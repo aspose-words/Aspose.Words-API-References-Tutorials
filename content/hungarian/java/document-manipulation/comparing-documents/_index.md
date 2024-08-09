@@ -35,7 +35,7 @@ Az Aspose.Words for Java kiterjedt lehetőségeket kínál a dokumentumok össze
 
 ## A formázás figyelmen kívül hagyása
 
- A formázási különbségek figyelmen kívül hagyásához használja a`setIgnoreFormatting` választási lehetőség.
+ A formázási különbségek figyelmen kívül hagyásához használja a`setIgnoreFormatting` opció.
 
 ```java
 CompareOptions options = new CompareOptions();
@@ -45,7 +45,7 @@ docA.compare(docB, "user", new Date(), options);
 
 ## A fejlécek és láblécek figyelmen kívül hagyása
 
- A fejlécek és láblécek összehasonlításból való kizárásához állítsa be a`setIgnoreHeadersAndFooters` választási lehetőség.
+ A fejlécek és láblécek összehasonlításból való kizárásához állítsa be a`setIgnoreHeadersAndFooters` opció.
 
 ```java
 CompareOptions options = new CompareOptions();

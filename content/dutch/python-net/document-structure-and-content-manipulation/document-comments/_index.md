@@ -16,7 +16,7 @@ Samenwerking is een fundamenteel aspect bij het maken van documenten, en opmerki
 
 ## Aspose.Words instellen voor Python
 
- Om aan de slag te gaan, moet je Aspose.Words voor Python installeren. U kunt de bibliotheek downloaden via de[Aspose.Woorden voor Python](https://releases.aspose.com/words/python/) download link. Eenmaal gedownload, kun je het installeren met pip:
+ Om aan de slag te gaan, moet je Aspose.Words voor Python installeren. U kunt de bibliotheek downloaden via de[Aspose.Woorden voor Python](https://releases.aspose.com/words/python/) downloadlink. Eenmaal gedownload, kun je het installeren met pip:
 
 ```python
 pip install aspose-words

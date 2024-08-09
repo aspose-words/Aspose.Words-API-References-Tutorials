@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-ooxmlsaveoptions/encrypt-docx-with-password/
 ---
-## introduzione
+## Introduzione
 
 Nell'era digitale di oggi, la protezione delle informazioni sensibili è più importante che mai. Che si tratti di documenti personali, file aziendali o documenti accademici, è fondamentale proteggere i tuoi documenti Word da accessi non autorizzati. È qui che entra in gioco la crittografia. Crittografando i tuoi file DOCX con una password, puoi garantire che solo chi ha la password corretta possa aprire e leggere i tuoi documenti. In questo tutorial, ti guideremo attraverso il processo di crittografia di un file DOCX utilizzando Aspose.Words per .NET. Non preoccuparti se sei nuovo a questo argomento: la nostra guida passo passo ti consentirà di seguirlo facilmente e di proteggere i tuoi file in pochissimo tempo.
 

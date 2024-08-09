@@ -81,7 +81,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 
 ### ステップ4.1: セル間隔を許可する
 
-をセットする`AllowCellSpacing`テーブルの特性`true`.
+設定する`AllowCellSpacing`テーブルの特性`true`.
 
 ```csharp
 table.AllowCellSpacing = true;

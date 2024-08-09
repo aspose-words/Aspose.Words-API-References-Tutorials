@@ -18,7 +18,7 @@ url: /zh-hant/java/document-splitting/extracting-document-content-pages/
 
 ### 設定您的開發環境
 
-在開始使用 Aspose.Words for Java 之前，我們需要設定開發環境。按著這些次序：
+在開始使用 Aspose.Words for Java 之前，我們需要設定開發環境。請依照下列步驟操作：
 
 1. 安裝 Java：如果您尚未安裝 Java，請從網站下載並安裝最新版本。
 
@@ -70,7 +70,7 @@ String extractedText = visitor.getText();
 
 ## 按頁面擷取內容
 
-### 什麼是文檔頁面？
+### 什麼是文檔頁？
 
 在Aspose.Words中，文件可以分為多個頁面。每個頁面代表文檔內容的一部分。但是我們如何以程式設計方式存取這些頁面呢？
 

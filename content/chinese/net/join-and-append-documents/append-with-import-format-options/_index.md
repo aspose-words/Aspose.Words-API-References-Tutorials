@@ -91,7 +91,7 @@ dstDoc.Save(dataDir + "MergedDocument.docx");
 ## 常见问题解答
 
 ### 我可以保留目标文档的编号而不是源文档的编号吗？
-是的，你可以修改`ImportFormatOptions`为了达成这个。
+是的，你可以修改`ImportFormatOptions`来实现这一目标。
 
 ### 如果我没有 Aspose.Words for .NET 怎么办？
 您可以从下载免费试用版[这里](https://releases.aspose.com/).

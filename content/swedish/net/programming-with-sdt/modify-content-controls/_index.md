@@ -37,9 +37,9 @@ using Aspose.Words.Tables;
 
 Dessa namnrymder ger dig tillgång till de klasser och metoder som krävs för att manipulera strukturerade dokumenttaggar i dina Word-dokument.
 
-## Steg 1: Konfigurera din dokumentsökväg
+## Steg 1: Ställ in din dokumentsökväg
 
- Innan du gör några ändringar måste du ange sökvägen till ditt dokument. Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där ditt dokument är lagrat.
+ Innan du gör några ändringar måste du ange sökvägen till ditt dokument. Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där ditt dokument är lagrat.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -181,4 +181,4 @@ doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");
 
 ```
 
-Det är allt! Du har framgångsrikt modifierat olika typer av innehållskontroller i ditt Word-dokument med Aspose.Words för .NET.
+Det är det! Du har framgångsrikt modifierat olika typer av innehållskontroller i ditt Word-dokument med Aspose.Words för .NET.

@@ -15,7 +15,7 @@ url: /ko/net/join-and-append-documents/update-page-layout/
 
 시작하기 전에 다음 사항이 준비되어 있는지 확인하세요.
 
-1.  Aspose.Words for .NET: 이 라이브러리는 Word 문서를 프로그래밍 방식으로 조작하는 데 필수적입니다. 아직 하지 않았다면 다음을 수행할 수 있습니다.[여기에서 다운로드하십시오](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: 이 라이브러리는 Word 문서를 프로그래밍 방식으로 조작하는 데 필수적입니다. 아직 하지 않았다면 다음을 수행할 수 있습니다.[여기에서 다운로드하세요](https://releases.aspose.com/words/net/).
    
 2. Visual Studio: .NET 코드를 작성하고 실행하려면 IDE가 필요합니다. Visual Studio는 널리 사용되는 선택입니다.
 

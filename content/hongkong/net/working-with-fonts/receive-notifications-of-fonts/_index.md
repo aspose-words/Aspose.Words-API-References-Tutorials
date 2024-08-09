@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /zh-hant/net/working-with-fonts/receive-notifications-of-fonts/
 ---
-
+## 介紹
 
 如果您曾經遇到過文件中字體無法正確呈現的問題，那麼您並不孤單。管理字體設定和接收有關字體替換的通知可以為您省去很多麻煩。在本綜合指南中，我們將探討如何使用 Aspose.Words for .NET 處理字體通知，確保您的文件始終保持最佳狀態。
 
@@ -95,7 +95,7 @@ doc.FontSettings = fontSettings;
 doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
 ```
 
-透過執行這些步驟，您已將應用程式配置為正常處理字體替換，並在發生替換時接收通知。
+透過執行這些步驟，您已將應用程式配置為正常處理字體替換，並在替換發生時接收通知。
 
 ## 結論
 
@@ -113,7 +113,7 @@ doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
 
 ###  Q3：我可以處理其他類型的警告嗎？`IWarningCallback`?
 
-是的`IWarningCallback`介面可以處理各種類型的警告，而不僅僅是字體替換。
+是的，`IWarningCallback`介面可以處理各種類型的警告，而不僅僅是字體替換。
 
 ### Q4：在哪裡可以找到對 Aspose.Words 的支援？
 

@@ -10,7 +10,7 @@ url: /fr/java/document-manipulation/adding-content-using-documentbuilder/
 
 ## Introduction à l'ajout de contenu à l'aide de DocumentBuilder dans Aspose.Words pour Java
 
-Dans ce guide étape par étape, nous explorerons comment utiliser Aspose.Words pour DocumentBuilder de Java pour ajouter différents types de contenu à un document Word. Nous aborderons l'insertion de texte, de tableaux, de règles horizontales, de champs de formulaire, de HTML, de liens hypertexte, de table des matières, d'images en ligne et flottantes, de paragraphes, etc. Commençons!
+Dans ce guide étape par étape, nous explorerons comment utiliser Aspose.Words pour DocumentBuilder de Java pour ajouter différents types de contenu à un document Word. Nous aborderons l'insertion de texte, de tableaux, de règles horizontales, de champs de formulaire, de HTML, de liens hypertexte, de table des matières, d'images en ligne et flottantes, de paragraphes, etc. Commençons !
 
 ## Conditions préalables
 
@@ -215,7 +215,7 @@ doc.save("path/to/your/document.docx");
 
 ## Étape 10 : Déplacer le curseur
 
- Vous pouvez contrôler la position du curseur dans le document en utilisant diverses méthodes telles que`moveToParagraph`, `moveToCell`et plus. Voici un exemple :
+ Vous pouvez contrôler la position du curseur dans le document en utilisant diverses méthodes telles que`moveToParagraph`, `moveToCell`et plus encore. Voici un exemple :
 
 ```java
 Document doc = new Document();
@@ -310,7 +310,7 @@ builder.writeln("This is a formatted paragraph.");
 
 ### Q : Comment puis-je déplacer le curseur vers un emplacement spécifique dans le document ?
 
- R : Vous pouvez contrôler la position du curseur en utilisant des méthodes telles que`moveToParagraph`, `moveToCell`et plus. Voici un exemple :
+ R : Vous pouvez contrôler la position du curseur en utilisant des méthodes telles que`moveToParagraph`, `moveToCell`et plus encore. Voici un exemple :
 
 ```java
 Document doc = new Document();

@@ -43,7 +43,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 LoadOptions loadOptions = new LoadOptions { ConvertShapeToOfficeMath = true };
 ```
 
- In diesem Schritt geben wir das Verzeichnis an, in dem sich unser Dokument befindet, und konfigurieren die Ladeoptionen.`ConvertShapeToOfficeMath` Die Eigenschaft ist auf`true` um die Konvertierung zu aktivieren.
+ In diesem Schritt geben wir das Verzeichnis an, in dem sich unser Dokument befindet und konfigurieren die Ladeoptionen.`ConvertShapeToOfficeMath` Die Eigenschaft ist auf`true` um die Konvertierung zu aktivieren.
 
 ## Schritt 2: Laden Sie das Dokument
 

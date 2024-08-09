@@ -12,6 +12,6 @@ L'elaborazione delle parole con la sillabazione è una risorsa completa che ti g
  ## Tutorial
 | Titolo | Descrizione |
 | --- | --- |
-| [Parole con trattino delle lingue](./hyphenate-words-of-languages/) | Scopri come sillabare le parole in diverse lingue nei documenti di Word utilizzando Aspose.Words per .NET. |
-| [Carica il dizionario di sillabazione per la lingua](./load-hyphenation-dictionary-for-language/) |Scopri come caricare un dizionario di sillabazione per una lingua specifica in Aspose.Words per .NET. |
-| [Richiamata con sillabazione](./hyphenation-callback/) | Scopri come utilizzare il callback di sillabazione in Aspose.Words per .NET per gestire la sillabazione delle parole. |
+| [Parole con trattino delle lingue](./hyphenate-words-of-languages/) | Scopri come sillabare le parole in diverse lingue utilizzando Aspose.Words per .NET. Segui questa guida dettagliata passo dopo passo per migliorare la leggibilità del tuo documento. |
+| [Carica il dizionario di sillabazione per la lingua](./load-hyphenation-dictionary-for-language/) | Scopri come caricare un dizionario di sillabazione per qualsiasi lingua utilizzando Aspose.Words per .NET in questo tutorial completo e dettagliato. |
+| [Richiamata con sillabazione](./hyphenation-callback/) | Impara a implementare la richiamata di sillabazione in Aspose.Words per .NET per migliorare la formattazione dei documenti con questa guida passo passo completa. |

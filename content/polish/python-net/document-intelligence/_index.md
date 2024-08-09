@@ -24,4 +24,4 @@ Opanowując analizę dokumentów za pomocą Aspose.Words dla Pythona, programiś
 
 ## Samouczki dotyczące inteligencji dokumentów w języku Python
 ### [Inteligencja dokumentów głównych](./master-document-intelligence/)
-Opanuj inteligencję dokumentów za pomocą Aspose.Words dla Pythona. Automatyzuj przepływy pracy, analizuj dane i wydajnie przetwarzaj dokumenty. Zacznij teraz!
+Opanuj inteligencję dokumentów za pomocą Aspose.Words dla Pythona. Automatyzuj przepływy pracy, analizuj dane i wydajnie przetwarzaj dokumenty. Zacznij już teraz!

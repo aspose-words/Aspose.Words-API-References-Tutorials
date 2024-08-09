@@ -9,7 +9,7 @@ url: /pl/net/programming-with-document-options-and-settings/cleanup-unused-style
 ---
 ## Wstęp
 
-No hej! Czy kiedykolwiek miałeś wrażenie, że Twoje dokumenty Worda są nieco zaśmiecone? Wiesz, te nieużywane style i listy, które po prostu tam leżą, zajmują miejsce i sprawiają, że dokument wygląda na bardziej skomplikowany, niż powinien? Cóż, masz szczęście! Dzisiaj zajmiemy się małą sztuczką, używając Aspose.Words dla .NET do czyszczenia nieużywanych stylów i list. To jak zafundować dokumentowi przyjemną, orzeźwiającą kąpiel. Zatem napij się kawy, usiądź wygodnie i zaczynajmy!
+Hej tam! Czy kiedykolwiek miałeś wrażenie, że Twoje dokumenty Worda są nieco zaśmiecone? Wiesz, te nieużywane style i listy, które po prostu tam leżą, zajmują miejsce i sprawiają, że dokument wygląda na bardziej skomplikowany, niż powinien? Cóż, masz szczęście! Dzisiaj zajmiemy się małą sztuczką, używając Aspose.Words dla .NET do czyszczenia nieużywanych stylów i list. To jak zafundować dokumentowi przyjemną, orzeźwiającą kąpiel. Zatem napij się kawy, usiądź wygodnie i zaczynajmy!
 
 ## Warunki wstępne
 
@@ -96,7 +96,7 @@ Tak, możesz ustawić oba`UnusedLists`I`UnusedStyles` Do`true` w`CleanupOptions`
 Nie, po zakończeniu czyszczenia i zapisaniu dokumentu nie można cofnąć zmian. Zawsze noś kopię zapasową oryginalnego dokumentu.
 
 ### Czy potrzebuję licencji na Aspose.Words dla .NET?
- Tak, Aspose.Words dla .NET wymaga licencji dla pełnej funkcjonalności. Możesz dostać[licencja tymczasowa](https://purchase.aspose.com/temporary-license) Lub[kup jeden](https://purchase.aspose.com/buy).
+ Tak, Aspose.Words dla .NET wymaga licencji dla pełnej funkcjonalności. Możesz zdobyć[licencja tymczasowa](https://purchase.aspose.com/temporary-license) Lub[kup jeden](https://purchase.aspose.com/buy).
 
 ### Gdzie mogę znaleźć więcej informacji i wsparcia?
  Można znaleźć szczegółową dokumentację[Tutaj](https://reference.aspose.com/words/net/) i uzyskaj wsparcie od[forum dyskusyjne](https://forum.aspose.com/c/words/8).

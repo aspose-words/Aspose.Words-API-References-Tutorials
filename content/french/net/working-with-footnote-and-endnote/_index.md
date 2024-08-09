@@ -12,6 +12,6 @@ Le traitement de mots avec notes de bas de page et notes de fin est une ressourc
  ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Définir les colonnes de notes de bas de page](./set-foot-note-columns/) | Découvrez comment définir le nombre de colonnes pour les notes de bas de page dans les documents Word à l'aide d'Aspose.Words pour .NET. |
-| [Définir la position des notes de bas de page et des notes de fin](./set-footnote-and-end-note-position/) | Découvrez comment définir la position des notes de bas de page et des notes de fin dans les documents Word à l'aide d'Aspose.Words pour .NET. |
-| [Définir les options de note de fin](./set-endnote-options/) | Découvrez comment définir les options de note de fin dans les documents Word à l'aide d'Aspose.Words pour .NET. |
+| [Définir les colonnes de notes de bas de page](./set-foot-note-columns/) | Découvrez comment définir des colonnes de notes de bas de page dans des documents Word à l'aide d'Aspose.Words pour .NET. Personnalisez facilement la mise en page de vos notes de bas de page grâce à notre guide étape par étape. |
+| [Définir la position des notes de bas de page et des notes de fin](./set-footnote-and-end-note-position/) | Découvrez comment définir les positions des notes de bas de page et de fin dans les documents Word à l'aide d'Aspose.Words for .NET avec ce guide détaillé étape par étape. |
+| [Définir les options de note de fin](./set-endnote-options/) | Découvrez comment définir les options de note de fin dans les documents Word à l'aide d'Aspose.Words for .NET avec ce guide complet étape par étape. |

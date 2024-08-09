@@ -48,7 +48,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## चरण 2: नया दस्तावेज़ बनाएँ
 
- कोई नया बनाएं`Document` ऑब्जेक्ट, जो आपके वर्ड दस्तावेज़ के लिए आधार का काम करेगा।
+ एक नया बनाएँ`Document` ऑब्जेक्ट, जो आपके वर्ड दस्तावेज़ के लिए आधार का काम करेगा।
 
 ```csharp
 Document doc = new Document();

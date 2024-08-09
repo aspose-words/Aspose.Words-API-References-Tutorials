@@ -71,7 +71,7 @@ saveOptions.setExportDocumentStructure(true);
 doc.save("output.pdf", saveOptions);
 ```
 
-## ضغط الصورة
+## ضغط الصور
 
 يمكنك التحكم في ضغط الصور باستخدام الكود التالي:
 

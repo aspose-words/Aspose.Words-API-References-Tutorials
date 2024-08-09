@@ -15,7 +15,7 @@ en värld av dokumentbearbetning kan möjligheten att lägga till interaktiva el
 
 Innan du dyker in i handledningen, se till att du har följande:
 
-1.  Aspose.Words for .NET: Se till att du har Aspose.Words for .NET installerat. Om du inte har gjort det ännu kan du ladda ner den från[här](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Se till att du har Aspose.Words for .NET installerat. Om du inte har gjort det ännu kan du ladda ner det från[här](https://releases.aspose.com/words/net/).
 
 2. Visual Studio: En utvecklingsmiljö som Visual Studio hjälper dig att skriva och exekvera koden.
 
@@ -44,7 +44,7 @@ Ange först sökvägen där du vill spara ditt dokument. Det är här den genere
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Byta ut`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där du vill spara ditt dokument.
+ Ersätta`"YOUR DOCUMENT DIRECTORY"` med den faktiska sökvägen där du vill spara ditt dokument.
 
 ## Steg 2: Skapa ett nytt dokument
 
@@ -66,7 +66,7 @@ StructuredDocumentTag sdtRichText = new StructuredDocumentTag(doc, SdtType.RichT
 
  Här,`SdtType.RichText` anger att SDT kommer att vara en Rich Text Box, och`MarkupLevel.Block` definierar dess beteende i dokumentet.
 
-## Steg 4: Lägg till innehåll i Rich Text Box
+## Steg 4: Lägg till innehåll i Rich Text-rutan
 
  Skapa en`Paragraph` och a`Run` objekt för att hålla innehållet du vill visa i Rich Text Box. Anpassa texten och formateringen efter behov.
 
@@ -81,7 +81,7 @@ sdtRichText.ChildNodes.Add(para);
 
 det här exemplet lägger vi till ett stycke som innehåller texten "Hello World" med grön teckenfärg till Rich Text Box.
 
-## Steg 5: Lägg till RTF-rutan till dokumentet
+## Steg 5: Lägg till Rich Text Box till dokumentet
 
  Lägg till`StructuredDocumentTag` till dokumentets brödtext.
 

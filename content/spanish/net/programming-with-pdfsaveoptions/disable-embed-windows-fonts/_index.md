@@ -54,7 +54,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- Configurando`FontEmbeddingMode` a`EmbedNone`, le indicamos a Aspose.Words que no incluya estas fuentes en el PDF, lo que reduce el tamaño del archivo.
+ Al configurar`FontEmbeddingMode` a`EmbedNone`, le indicamos a Aspose.Words que no incluya estas fuentes en el PDF, lo que reduce el tamaño del archivo.
 
 ## Paso 3: guarde el documento como PDF
 
@@ -64,7 +64,7 @@ Finalmente guardamos el documento como PDF usando las opciones de guardado confi
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", saveOptions);
 ```
 
- Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta de su directorio real una vez más. El PDF de salida ahora se guardará en el directorio especificado sin fuentes estándar integradas.
+ Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta de su directorio real una vez más. El PDF de salida ahora se guardará en el directorio especificado sin fuentes estándar incrustadas.
 
 ## Conclusión
 

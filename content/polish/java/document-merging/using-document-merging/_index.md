@@ -2,7 +2,7 @@
 title: Korzystanie z łączenia dokumentów
 linktitle: Korzystanie z łączenia dokumentów
 second_title: Aspose.Words API przetwarzania dokumentów Java
-description: Dowiedz się, jak płynnie łączyć dokumenty programu Word za pomocą Aspose.Words dla Java. Efektywnie łącz, formatuj i rozwiązuj konflikty w zaledwie kilku krokach. Zacznij teraz!
+description: Dowiedz się, jak płynnie łączyć dokumenty programu Word za pomocą Aspose.Words dla Java. Efektywnie łącz, formatuj i rozwiązuj konflikty w zaledwie kilku krokach. Zacznij już teraz!
 type: docs
 weight: 10
 url: /pl/java/document-merging/using-document-merging/
@@ -165,7 +165,7 @@ public class DocumentMerger {
 }
 ```
 
- Używając`ImportFormatMode.KEEP_DIFFERENT_STYLES`, Aspose.Words zachowuje style, które różnią się między dokumentami źródłowymi i docelowymi, skutecznie rozwiązując konflikty.
+ Używając`ImportFormatMode.KEEP_DIFFERENT_STYLES`, Aspose.Words zachowuje style, które różnią się pomiędzy dokumentami źródłowymi i docelowymi, skutecznie rozwiązując konflikty.
 
 ## 9. Najlepsze praktyki dotyczące łączenia dokumentów
 

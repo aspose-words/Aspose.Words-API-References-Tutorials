@@ -2,83 +2,105 @@
 title: Hervorhebungszeichen für die Schriftart festlegen
 linktitle: Hervorhebungszeichen für die Schriftart festlegen
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET den Hervorhebungsstil der Schrift in einem Word-Dokument festlegen.
+description: Erfahren Sie in dieser ausführlichen Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Hervorhebungszeichen in Word-Dokumenten setzen. Perfekt für .NET-Entwickler.
 type: docs
 weight: 10
 url: /de/net/working-with-fonts/set-font-emphasis-mark/
 ---
+## Einführung
 
-In diesem Tutorial zeigen wir Ihnen, wie Sie mit Aspose.Words für .NET den Schrifthervorhebungsstil in einem Word-Dokument festlegen. Die Schrifthervorhebung wird verwendet, um bestimmte Wörter oder Ausdrücke im Text hervorzuheben.
+Im heutigen Tutorial erfahren Sie, wie Sie mit Aspose.Words für .NET Hervorhebungszeichen in einem Word-Dokument setzen. Egal, ob Sie bestimmten Text mit einem eindeutigen Zeichen unterstreichen oder einfach bestimmte Wörter hervorheben möchten, diese Anleitung hilft Ihnen weiter. Also, schnallen Sie sich an und legen Sie los!
 
 ## Voraussetzungen
-Bevor Sie beginnen, stellen Sie sicher, dass Sie über die folgenden Elemente verfügen:
-- Gute Kenntnisse der Programmiersprache C#
-- Die in Ihrem Projekt installierte Aspose.Words-Bibliothek für .NET
 
-## Schritt 1: Dokumentverzeichnis festlegen
-Legen Sie zunächst den Verzeichnispfad auf den Speicherort Ihres Word-Dokuments fest. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"` im Code mit dem entsprechenden Pfad.
+Bevor wir in die Einzelheiten eintauchen, stellen Sie sicher, dass Sie die folgenden Voraussetzungen erfüllt haben:
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+-  Aspose.Words für .NET-Bibliothek: Stellen Sie sicher, dass Sie die Aspose.Words für .NET-Bibliothek installiert haben. Sie können sie hier herunterladen:[Hier](https://releases.aspose.com/words/net/).
+- Entwicklungsumgebung: Eine funktionierende Entwicklungsumgebung wie Visual Studio.
+- .NET Framework: Stellen Sie sicher, dass Sie das .NET Framework installiert haben.
 
-## Schritt 2: Erstellen und Anpassen des Dokuments
- Erstellen Sie eine Instanz des`Document` Klasse und eine zugehörige`DocumentBuilder` um den Dokumentinhalt zu erstellen. Verwenden Sie die`Font.EmphasisMark` Eigenschaft, um den Schrifthervorhebungsstil auf`EmphasisMark.UnderSolidCircle` . Dann verwenden Sie die`Write`Und`Writeln` Methoden der`DocumentBuilder` um Text mit der angegebenen Schrifthervorhebung hinzuzufügen.
+## Namespaces importieren
+
+Um mit Aspose.Words für .NET zu arbeiten, müssen Sie die erforderlichen Namespaces importieren. Fügen Sie diese oben in Ihrer Codedatei hinzu:
 
 ```csharp
-Document document = new Document();
-DocumentBuilder builder = new DocumentBuilder(document);
-builder.Font.EmphasisMark = EmphasisMark.UnderSolidCircle;
-builder.Write("Emphasized text");
-builder. Writen();
-builder.Font.ClearFormatting();
-builder.Write("Simple text");
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Schritt 3: Speichern Sie das Dokument
- Speichern Sie das Dokument mit dem`Save` Methode der`Document` mit dem entsprechenden Pfad und Dateinamen.
+Lassen Sie uns den Vorgang nun in einfache Schritte unterteilen. Befolgen Sie jeden Schritt sorgfältig, um Hervorhebungszeichen in Ihrem Word-Dokument festzulegen.
 
-```csharp
-document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
-```
+## Schritt 1: Dokument und DocumentBuilder initialisieren
 
-### Beispielquellcode zum Festlegen von Hervorhebungszeichen mit Aspose.Words für .NET 
+Als Erstes müssen Sie ein neues Dokument und einen DocumentBuilder initialisieren. Die DocumentBuilder-Klasse bietet Methoden zum Einfügen von Text und anderen Elementen in das Dokument.
 
 ```csharp
 // Pfad zu Ihrem Dokumentverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
+// Initialisieren eines neuen Dokuments
 Document document = new Document();
+
+// Initialisieren Sie DocumentBuilder mit dem Dokument
 DocumentBuilder builder = new DocumentBuilder(document);
+```
+
+## Schritt 2: Hervorhebungszeichen für die Schrift festlegen
+
+Wenn der DocumentBuilder bereit ist, können Sie nun das Hervorhebungszeichen für die Schriftart festlegen. In diesem Beispiel verwenden wir das Hervorhebungszeichen „UnderSolidCircle“.
+
+```csharp
+// Festlegen des Hervorhebungszeichens für die Schriftart
 builder.Font.EmphasisMark = EmphasisMark.UnderSolidCircle;
+
+// Schreiben Sie Text mit dem Hervorhebungszeichen
 builder.Write("Emphasis text");
 builder.Writeln();
+```
+
+## Schritt 3: Formatierung löschen und normalen Text hinzufügen
+
+Nachdem Sie das Hervorhebungszeichen gesetzt haben, möchten Sie möglicherweise normalen Text ohne Hervorhebung hinzufügen. Dazu müssen Sie die Formatierung löschen.
+
+```csharp
+// Löschen der Schriftformatierung
 builder.Font.ClearFormatting();
+
+// Normalen Text schreiben
 builder.Write("Simple text");
+```
+
+## Schritt 4: Speichern Sie das Dokument
+
+Nachdem Sie den gesamten Text und die Formatierung hinzugefügt haben, müssen Sie das Dokument im letzten Schritt speichern. Geben Sie den Pfad und den Dateinamen an, unter dem Sie Ihr Dokument speichern möchten.
+
+```csharp
+// Speichern des Dokuments
 document.Save(dataDir + "WorkingWithFonts.SetFontEmphasisMark.docx");
 ```
 
 ## Abschluss
-In diesem Tutorial haben Sie gelernt, wie Sie mit Aspose.Words für .NET den Hervorhebungsstil der Schrift in einem Word-Dokument festlegen. Experimentieren Sie mit verschiedenen Hervorhebungsstilen und verwenden Sie diese Funktion, um Wörter oder Ausdrücke in Ihren Dokumenten hervorzuheben.
 
-### Häufig gestellte Fragen
+Und da haben Sie es! So einfach ist es, mit Aspose.Words für .NET Hervorhebungszeichen in einem Word-Dokument zu setzen. Mit nur wenigen Codezeilen können Sie Ihren Text hervorheben und Ihren Dokumenten einen professionellen Touch verleihen. Zögern Sie nicht, mit verschiedenen Hervorhebungszeichen und Stilen zu experimentieren, um Ihren Anforderungen gerecht zu werden.
 
-#### F: Wie kann ich mit Aspose.Words einer bestimmten Schriftart in einem Word-Dokument Akzentzeichen hinzufügen?
+## Häufig gestellte Fragen
 
-A: Um mit Aspose.Words einer bestimmten Schriftart in einem Word-Dokument Akzentzeichen hinzuzufügen, können Sie die API verwenden, um zur gewünschten Schriftart zu navigieren und die entsprechenden Akzentzeichen anzuwenden. Dadurch werden dem Text Akzentzeichen mit der ausgewählten Schriftart hinzugefügt.
+### Was sind Hervorhebungszeichen in Schriftarten?
 
-#### F: Ist es mit Aspose.Words möglich, den Stil der Akzentzeichen in einem Word-Dokument zu ändern?
+Hervorhebungszeichen sind spezielle Symbole, die einem Text hinzugefügt werden, um ihn hervorzuheben. Dazu können Punkte, Kreise und andere dekorative Zeichen gehören.
 
-A: Ja, mit Aspose.Words können Sie den Stil von Akzentzeichen in einem Word-Dokument ändern. Mit der API können Sie Stileigenschaften wie Farbe, Größe, Linientyp usw. anpassen, um das Erscheinungsbild von Akzentzeichen anzupassen.
+### Kann ich mit Aspose.Words für .NET andere Hervorhebungszeichen verwenden?
 
-#### F: Wie kann ich mit Aspose.Words alle Akzentzeichen aus einem Word-Dokument entfernen?
+ Ja, Aspose.Words für .NET unterstützt verschiedene Hervorhebungszeichen. Sie können verschiedene Optionen erkunden, indem Sie auf die[Dokumentation](https://reference.aspose.com/words/net/).
 
-A: Um mit Aspose.Words alle Akzentzeichen aus einem Word-Dokument zu entfernen, können Sie die API verwenden, um das Dokument zu durchsuchen, vorhandene Akzentzeichen zu erkennen und diese mit den entsprechenden Methoden zu entfernen. Dadurch werden alle Hervorhebungszeichen aus dem Dokument entfernt.
+### Ist die Nutzung von Aspose.Words für .NET kostenlos?
 
-#### F: Kann ich einem bestimmten Textteil in einem Word-Dokument Akzentzeichen hinzufügen?
+ Aspose.Words für .NET erfordert eine Lizenz für die volle Funktionalität. Sie können eine kostenlose Testversion erhalten[Hier](https://releases.aspose.com/) oder eine Lizenz erwerben[Hier](https://purchase.aspose.com/buy).
 
-A: Ja, Sie können mit Aspose.Words einem bestimmten Textteil in einem Word-Dokument Akzentzeichen hinzufügen. Sie können mithilfe der API den gewünschten Textbereich auswählen und diesem Textteil entsprechende Hervorhebungszeichen hinzufügen.
+### Wie erhalte ich Support für Aspose.Words für .NET?
 
-#### F: Können die Akzentzeichen meinen Bedürfnissen entsprechend angepasst werden?
+ Sie können Unterstützung von der Aspose-Community und dem Support-Team erhalten, indem Sie deren[Support-Forum](https://forum.aspose.com/c/words/8).
 
-A: Ja, Akzentzeichen können mit Aspose.Words an Ihre Bedürfnisse angepasst werden. Sie können die Stileigenschaften von Akzentzeichen wie Farbe, Größe, Linientyp und mehr an Ihre Formatierungseinstellungen anpassen.
+### Kann ich Aspose.Words für .NET mit anderen .NET-Frameworks verwenden?
+
+Ja, Aspose.Words für .NET ist mit verschiedenen .NET-Frameworks kompatibel, einschließlich .NET Core und .NET 5/6.

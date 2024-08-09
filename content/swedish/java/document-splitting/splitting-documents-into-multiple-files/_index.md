@@ -27,7 +27,7 @@ Det första steget är att ladda dokumentet du vill dela. Här är ett kodavsnit
 Document doc = new Document("your-document.docx");
 ```
 
- Byta ut`"your-document.docx"` med sökvägen till din dokumentfil.
+ Ersätta`"your-document.docx"` med sökvägen till din dokumentfil.
 
 ## Steg 2: Definiera delningskriterier
 
@@ -56,7 +56,7 @@ Den här koden sparar varje delad del med ett filnamn som "split-del-1.docx", "s
 För att dela upp ett dokument efter ett nyckelord kan du iterera igenom dokumentets innehåll och leta efter nyckelordet. När du hittar det, skapa ett nytt dokument och lägg till innehållet fram till den punkten.
 
 ### Kan jag dela upp ett dokument i PDF-filer?
-Jo det kan du. Efter att ha delat upp dokumentet med Aspose.Words för Java kan du använda Aspose.PDF för Java för att spara varje del som en PDF-fil.
+Ja, det kan du. Efter att ha delat upp dokumentet med Aspose.Words för Java kan du använda Aspose.PDF för Java för att spara varje del som en PDF-fil.
 
 ### Är Aspose.Words för Java gratis att använda?
 Aspose.Words för Java är ett kommersiellt bibliotek, men det erbjuder en gratis provperiod. Du kan kontrollera deras priser och licenser på deras hemsida.

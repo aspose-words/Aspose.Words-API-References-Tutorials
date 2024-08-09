@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/clone-and-combine-documents/insert-document-at-replace/
 ---
-## Úvod
+## Zavedení
 
 Ahoj, mistři dokumentů! Přistihli jste se někdy po kolena v kódu a snažili se přijít na to, jak hladce vložit jeden dokument Wordu do druhého? Nebojte se, protože dnes se ponoříme do světa Aspose.Words pro .NET, abychom tento úkol usnadnili. Projdeme si podrobným průvodcem krok za krokem, jak používat tuto výkonnou knihovnu k vkládání dokumentů do konkrétních bodů během operace hledání a nahrazení. Jste připraveni stát se průvodcem Aspose.Words? Začněme!
 
@@ -15,7 +15,7 @@ Ahoj, mistři dokumentů! Přistihli jste se někdy po kolena v kódu a snažili
 
 Než se pustíme do kódu, je třeba mít připraveno několik věcí:
 
--  Visual Studio: Ujistěte se, že máte na svém počítači nainstalované Visual Studio. Pokud ji ještě nemáte, můžete si ji stáhnout z[tady](https://visualstudio.microsoft.com/).
+-  Visual Studio: Ujistěte se, že máte na svém počítači nainstalované Visual Studio. Pokud ji ještě nemáte, můžete si ji stáhnout z[zde](https://visualstudio.microsoft.com/).
 -  Aspose.Words for .NET: Budete potřebovat knihovnu Aspose.Words. Můžete to získat z[Aspose webové stránky](https://releases.aspose.com/words/net/).
 - Základní znalosti C#: Základní znalost C# a .NET vám pomůže pokračovat v tomto tutoriálu.
 
@@ -158,7 +158,7 @@ Aspose.Words for .NET je výkonná knihovna pro programovou manipulaci s dokumen
 Ano, obslužnou rutinu zpětného volání můžete upravit tak, aby zvládla více vkládání iterací přes kolekci dokumentů.
 
 ### Je k dispozici bezplatná zkušební verze?
- Absolutně! Bezplatnou zkušební verzi si můžete stáhnout z[tady](https://releases.aspose.com/).
+ Absolutně! Bezplatnou zkušební verzi si můžete stáhnout z[zde](https://releases.aspose.com/).
 
 ### Jak získám podporu pro Aspose.Words?
 Podporu můžete získat návštěvou stránky[Fórum Aspose.Words](https://forum.aspose.com/c/words/8).

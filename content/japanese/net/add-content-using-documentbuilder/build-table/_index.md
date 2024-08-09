@@ -46,7 +46,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## ステップ2: テーブルを開始する
 
-さて、テーブルを始めましょう。`StartTable`方法の`DocumentBuilder`始める。
+さて、テーブルを始めましょう。`StartTable`方法の`DocumentBuilder`始めます。
 
 ```csharp
 Table table = builder.StartTable();

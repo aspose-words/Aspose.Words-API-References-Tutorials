@@ -88,7 +88,7 @@ Dan itu dia! Anda telah berhasil menerapkan lisensi dari file di Aspose.Words un
 Jika Anda tidak menetapkan lisensi, Aspose.Words akan beroperasi dalam mode evaluasi, yang memiliki batasan seperti dokumen yang diberi watermark dan fungsionalitas terbatas.
 
 ### Bisakah saya menggunakan lisensi dari aliran?  
- Ya, Anda dapat memuat lisensi dari aliran jika file lisensi tertanam sebagai sumber daya. Menggunakan`SetLicense` metode yang menerima aliran.
+ Ya, Anda dapat memuat lisensi dari aliran jika file lisensi tertanam sebagai sumber daya. Gunakan`SetLicense` metode yang menerima aliran.
 
 ### Di mana saya harus meletakkan file lisensi saya?  
 Anda dapat menempatkan file lisensi Anda di direktori yang sama dengan file yang dapat dieksekusi atau di jalur mana pun yang dapat diakses oleh aplikasi Anda.

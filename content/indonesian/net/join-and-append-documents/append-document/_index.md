@@ -2,7 +2,7 @@
 title: Tambahkan Dokumen
 linktitle: Tambahkan Dokumen
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menambahkan dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang komprehensif ini. Sempurna untuk mengotomatiskan alur kerja dokumen Anda.
+description: Pelajari cara menambahkan dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang komprehensif ini. Sempurna untuk mengotomatisasi alur kerja dokumen Anda.
 type: docs
 weight: 10
 url: /id/net/join-and-append-documents/append-document/
@@ -83,7 +83,7 @@ Di sini, kami menyimpan dokumen yang ditambahkan dengan nama file deskriptif, ya
 
 ### 1. Apa itu Aspose.Words untuk .NET?
 
-Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang membuat, memanipulasi, dan mengonversi dokumen Word secara terprogram. Ini ideal untuk mengotomatisasi tugas-tugas yang berhubungan dengan dokumen.
+Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang membuat, memanipulasi, dan mengonversi dokumen Word secara terprogram. Ini ideal untuk mengotomatiskan tugas-tugas terkait dokumen.
 
 ### 2. Bisakah saya menggunakan Aspose.Words untuk .NET secara gratis?
 
@@ -91,7 +91,7 @@ Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang
 
 ### 3. Bagaimana cara memastikan bahwa format dipertahankan saat menambahkan dokumen?
 
- Menggunakan`ImportFormatMode.KeepSourceFormatting` parameter di`AppendDocument` metode untuk mempertahankan format dokumen sumber.
+ Gunakan`ImportFormatMode.KeepSourceFormatting` parameter di`AppendDocument` metode untuk mempertahankan format dokumen sumber.
 
 ### 4. Bagaimana cara mendapatkan dukungan untuk Aspose.Words untuk .NET?
 

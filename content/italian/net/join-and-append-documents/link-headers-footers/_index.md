@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/join-and-append-documents/link-headers-footers/
 ---
-## introduzione
+## Introduzione
 
 In questo tutorial esploreremo come collegare intestazioni e piè di pagina tra documenti utilizzando Aspose.Words per .NET. Questa funzionalità ti consente di mantenere coerenza e continuità tra più documenti sincronizzando in modo efficace intestazioni e piè di pagina.
 

@@ -9,7 +9,7 @@ url: /ja/net/basic-conversions/docx-to-epub/
 ---
 ## 導入
 
-.NET 開発の分野では、Word ドキュメントを効率的に操作することが多くのアプリケーションにとって重要です。Aspose.Words for .NET は、DOCX ファイルを EPUB 形式に変換するなど、ドキュメント処理タスクを簡素化する強力なツールキットを提供します。このチュートリアルでは、Aspose.Words for .NET を使用してこれを実現するために必要な手順を説明します。
+.NET 開発の分野では、Word 文書を効率的に操作することが多くのアプリケーションにとって重要です。Aspose.Words for .NET は、DOCX ファイルを EPUB 形式に変換するなど、文書処理タスクを簡素化する強力なツールキットを提供します。このチュートリアルでは、Aspose.Words for .NET を使用してこれを達成するために必要な手順を説明します。
 
 ## 前提条件
 
@@ -59,7 +59,7 @@ Aspose.Words は、DOCX、EPUB、PDF、HTML など、幅広いドキュメント
 はい、Aspose.Words は .NET Core と .NET Framework を完全にサポートしています。
 
 ### Aspose.Words のその他の例やドキュメントはどこで見つかりますか?
-訪問[Aspose.Words for .NET ドキュメント](https://reference.aspose.com/words/net/)詳細な例と API リファレンスについては、こちらをご覧ください。
+訪問する[Aspose.Words for .NET ドキュメント](https://reference.aspose.com/words/net/)詳細な例と API リファレンスについては、こちらをご覧ください。
 
 ### Aspose.Words 関連の問題に関するサポートを受けるにはどうすればよいですか?
 サポートについては、[Aspose.Words フォーラム](https://forum.aspose.com/c/words/8)質問したり、コミュニティと交流したりできる場所です。

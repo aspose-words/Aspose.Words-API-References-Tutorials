@@ -94,4 +94,4 @@ Có, bạn có thể xuất tài liệu chứa biểu đồ sang nhiều định
 Có, Aspose.Words for .NET cho phép bạn tự động điền dữ liệu vào biểu đồ từ các nguồn bên ngoài như cơ sở dữ liệu hoặc API.
 
 ### Tôi có thể tìm thêm tài nguyên và hỗ trợ cho Aspose.Words cho .NET ở đâu?
- Tham quan[Aspose.Words cho tài liệu .NET](https://reference.aspose.com/words/net/) để biết các ví dụ và tài liệu tham khảo API chi tiết. Để được hỗ trợ, bạn cũng có thể truy cập[Diễn đàn Aspose.Words](https://forum.aspose.com/c/words/8).
+ Ghé thăm[Aspose.Words cho tài liệu .NET](https://reference.aspose.com/words/net/) để biết các ví dụ và tài liệu tham khảo API chi tiết. Để được hỗ trợ, bạn cũng có thể truy cập[Diễn đàn Aspose.Words](https://forum.aspose.com/c/words/8).

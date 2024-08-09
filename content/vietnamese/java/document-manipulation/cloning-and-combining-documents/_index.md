@@ -37,7 +37,7 @@ mainDoc.getRange().replace(Pattern.compile("\\[MY_DOCUMENT\\]"), "", options);
 mainDoc.save("Your Directory Path" + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
 ```
 
- Trong ví dụ này, chúng tôi sử dụng một`FindReplaceOptions` đối tượng để chỉ định trình xử lý gọi lại để thay thế. Các`InsertDocumentAtReplaceHandler` lớp xử lý logic chèn.
+ Trong ví dụ này, chúng tôi sử dụng một`FindReplaceOptions` đối tượng để chỉ định trình xử lý gọi lại để thay thế. các`InsertDocumentAtReplaceHandler` lớp xử lý logic chèn.
 
 ## Bước 3: Chèn tài liệu vào Bookmark
 

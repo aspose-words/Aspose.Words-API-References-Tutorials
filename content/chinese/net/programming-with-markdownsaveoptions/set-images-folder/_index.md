@@ -9,7 +9,7 @@ url: /zh/net/programming-with-markdownsaveoptions/set-images-folder/
 ---
 ## 介绍
 
-您是否曾想过将 Word 文档导出为 Markdown 格式，同时确保表格和内容完美对齐？Aspose.Words for .NET 是您完成此任务的首选解决方案。在本文中，我们将引导您完成设置 Aspose.Words、准备文档以及以正确的表格内容对齐方式将其导出到 Markdown 的过程。我们将分解每个步骤，使其易于遵循和理解。那么，让我们深入研究并将您的 Word 文档转换为精美对齐的 Markdown 文件！
+您是否曾想过将 Word 文档导出为 Markdown 格式，同时确保表格和内容完美对齐？Aspose.Words for .NET 是您完成此任务的首选解决方案。在本文中，我们将引导您完成设置 Aspose.Words、准备文档以及以正确的表格内容对齐方式将其导出到 Markdown 的过程。我们将分解每个步骤，使其易于遵循和理解。所以，让我们深入研究并将您的 Word 文档转换为精美对齐的 Markdown 文件！
 
 ## 先决条件
 
@@ -79,7 +79,7 @@ MarkdownSaveOptions saveOptions = new MarkdownSaveOptions
 
 ### 2.4 将文档保存为 Markdown
 
-用一个`MemoryStream`将文档保存为 Markdown 格式。
+使用`MemoryStream`将文档保存为 Markdown 格式。
 
 ```csharp
 using (MemoryStream stream = new MemoryStream())

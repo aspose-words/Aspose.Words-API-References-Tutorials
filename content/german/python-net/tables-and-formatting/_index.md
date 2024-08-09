@@ -11,7 +11,7 @@ url: /de/python-net/tables-and-formatting/
 
 ## Einführung in Tabellen und Formatierung in Aspose.Words-Tutorials
 
-Willkommen in der Welt der Aspose.Words-Tutorials, in denen wir uns mit der Kunst der Tabellen und Formatierung befassen. Diese Tutorial-Reihe ist auf Entwickler zugeschnitten, die mit Python und .NET arbeiten, und soll Ihnen die Fähigkeiten vermitteln, die Sie benötigen, um die Leistungsfähigkeit von Tabellen in Ihren Dokumenten zu nutzen. Egal, ob Sie Berichte entwerfen, Newsletter erstellen oder akademische Arbeiten verfassen: Die Beherrschung der Tabellenerstellung, -anpassung und -formatierung ist für die Erstellung optisch ansprechender und inhaltsreicher Dokumente unerlässlich.
+Willkommen in der Welt der Aspose.Words-Tutorials, in denen wir uns mit der Kunst der Tabellen und Formatierung befassen. Diese Tutorial-Reihe ist auf Entwickler zugeschnitten, die mit Python und .NET arbeiten, und soll Ihnen die Fähigkeiten vermitteln, die Sie benötigen, um die Leistungsfähigkeit von Tabellen in Ihren Dokumenten zu nutzen. Egal, ob Sie Berichte entwerfen, Newsletter erstellen oder akademische Arbeiten verfassen, die Beherrschung der Tabellenerstellung, -anpassung und -formatierung ist für die Erstellung von Dokumenten, die sowohl optisch ansprechend als auch inhaltsreich sind, unerlässlich.
 
 ## Die Bedeutung von Tabellen und Formatierung
 

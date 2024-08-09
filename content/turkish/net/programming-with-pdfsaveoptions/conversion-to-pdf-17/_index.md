@@ -2,7 +2,7 @@
 title: Word Belgesini PDF'ye Dönüştürme 1.7
 linktitle: Word Belgesini PDF'ye Dönüştürme 1.7
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'i kullanarak Word belgelerini zahmetsizce PDF 1.7'ye dönüştürün. Belgelerinizin evrensel olarak erişilebilir olduğundan ve profesyonel biçimde biçimlendirildiğinden emin olmak için bu kılavuzu izleyin.
+description: Aspose.Words for .NET'i kullanarak Word belgelerini zahmetsizce PDF 1.7'ye dönüştürün. Belgelerinizin evrensel olarak erişilebilir olduğundan ve profesyonelce biçimlendirildiğinden emin olmak için bu kılavuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/conversion-to-pdf-17/
@@ -67,7 +67,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ConversionToPdf17.pdf", saveOption
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET ile bir Word belgesini PDF 1.7'ye dönüştürmek basit ve etkilidir. Bu işlem yalnızca zamandan tasarruf sağlamakla kalmaz, aynı zamanda belgelerinizin evrensel olarak erişilebilir olmasını ve profesyonel biçimde biçimlendirilmesini de sağlar. İster yasal belgelerle, ister akademik makalelerle, ister iş raporlarıyla ilgileniyor olun, bu yöntem güvenilir bir çözümdür.
+Ve işte karşınızda! Aspose.Words for .NET ile bir Word belgesini PDF 1.7'ye dönüştürmek basit ve etkilidir. Bu işlem yalnızca zamandan tasarruf sağlamakla kalmaz, aynı zamanda belgelerinizin evrensel olarak erişilebilir olmasını ve profesyonel biçimde biçimlendirilmesini de sağlar. İster yasal belgelerle, ister akademik makalelerle, ister iş raporlarıyla ilgileniyor olun, bu yöntem güvenilir bir çözümdür.
 
 ## SSS'ler
 

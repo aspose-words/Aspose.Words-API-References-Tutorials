@@ -84,7 +84,7 @@ ChartAxis axis = shape.Chart.AxisX;
 
 अब जादू शुरू हो गया है! हम मल्टी-लाइन लेबल के लिए टिक लेबल संरेखण सेट करेंगे।
 
- ठीक`TickLabelAlignment` अक्ष की संपत्ति`ParagraphAlignment.Right`.
+ सेट करें`TickLabelAlignment` अक्ष की संपत्ति`ParagraphAlignment.Right`.
 
 ```csharp
 axis.TickLabelAlignment = ParagraphAlignment.Right;

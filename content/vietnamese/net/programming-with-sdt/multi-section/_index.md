@@ -115,4 +115,4 @@ foreach (StructuredDocumentTagRangeStart tag in tags)
 	Console.WriteLine(tag.Title);
 ```
 
-Đó là nó! Bạn đã truy xuất và xử lý thành công các thẻ tài liệu có cấu trúc nhiều phần trong tài liệu Word của mình bằng Aspose.Words for .NET.
+Thế thôi! Bạn đã truy xuất và xử lý thành công các thẻ tài liệu có cấu trúc nhiều phần trong tài liệu Word của mình bằng Aspose.Words for .NET.

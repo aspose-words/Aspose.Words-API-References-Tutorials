@@ -23,7 +23,7 @@ url: /zh-hant/net/working-with-section/add-section/
 
 ## 導入命名空間
 
-首先，我們需要導入必要的命名空間。這些對於存取 Aspose.Words 提供的類別和方法至關重要。
+首先，我們需要導入必要的名稱空間。這些對於存取 Aspose.Words 提供的類別和方法至關重要。
 
 ```csharp
 using Aspose.Words;
@@ -129,4 +129,4 @@ Word 文件中的節是可以有自己的版面和格式的段，例如頁首、
 
 ### 在哪裡可以找到有關 Aspose.Words 的更多資源？
 
-欲了解更多信息，您可以訪問[Aspose.Words 文檔](https://reference.aspose.com/words/net/)或者[支援論壇](https://forum.aspose.com/c/words/8)尋求幫助和討論。
+欲了解更多信息，您可以訪問[Aspose.Words 文檔](https://reference.aspose.com/words/net/)或[支援論壇](https://forum.aspose.com/c/words/8)尋求幫助和討論。

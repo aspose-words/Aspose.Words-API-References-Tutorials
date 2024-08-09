@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/keep-source-formatting/
 ---
-## Úvod
+## Zavedení
 
 tomto tutoriálu prozkoumáme, jak sloučit a připojit dokumenty aplikace Word pomocí Aspose.Words for .NET. Tato výkonná knihovna poskytuje vývojářům rozsáhlé možnosti pro programovou manipulaci s dokumenty Wordu. Zaměříme se na metodu, jak zachovat zdrojové formátování během slučování dokumentů beze změny a zajistit bezproblémové zachování původních stylů a rozvržení.
 
@@ -16,7 +16,7 @@ tomto tutoriálu prozkoumáme, jak sloučit a připojit dokumenty aplikace Word 
 Než se pustíte do výukového programu, ujistěte se, že máte nastaveny následující předpoklady:
 
 - Vývojové prostředí: Visual Studio nebo jakékoli IDE, které podporuje vývoj .NET.
--  Aspose.Words for .NET Library: Stáhněte a nainstalujte knihovnu z[tady](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET Library: Stáhněte a nainstalujte knihovnu z[zde](https://releases.aspose.com/words/net/).
 - Základní znalost programování v C#: Znalost syntaxe C# a konceptů objektově orientovaného programování.
 
 ## Importovat jmenné prostory

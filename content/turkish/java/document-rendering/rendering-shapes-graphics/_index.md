@@ -71,7 +71,7 @@ shape.setShadowEnabled(true);
 
 ## Konumlandırma ve Boyutlandırma
 
-Şekillerin hassas konumlandırılması ve boyutlandırılması belgenin düzeni açısından çok önemlidir. Aspose.Words for Java şu özellikleri ayarlamak için yöntemler sağlar:
+Şekillerin hassas konumlandırılması ve boyutlandırılması belgenin düzeni açısından çok önemlidir. Aspose.Words for Java şu özellikleri ayarlamak için yöntemler sunar:
 
 ```java
 shape.setLeft(100);
@@ -106,8 +106,8 @@ doc.getFirstSection().getBody().getFirstParagraph().appendChild(group);
 Z sırasını kullanarak şekillerin görüntülenme sırasını kontrol edebilirsiniz:
 
 ```java
-shape1.setZOrder(1); // Öne getirmek
-shape2.setZOrder(0); // Geri gönder
+shape1.setZOrder(1); // Öne getir
+shape2.setZOrder(0); // Arkaya gönder
 ```
 
 ## Belgeyi Kaydetme
@@ -127,7 +127,7 @@ Aspose.Words for Java çok yönlüdür ve çeşitli senaryolarda kullanılabilir
 - Sertifika ve ödüllerin tasarlanması.
 - Belgelere ek açıklamalar ve belirtme çizgileri ekleme.
 
-## Sorun giderme ipuçları
+## Sorun Giderme İpuçları
 
 Şekiller ve grafiklerle çalışırken sorunlarla karşılaşırsanız çözümler için Aspose.Words for Java belgelerine veya topluluk forumlarına bakın. Yaygın sorunlar arasında resim formatı uyumluluğu ve yazı tipiyle ilgili sorunlar yer alır.
 
@@ -161,8 +161,8 @@ shape.setFillColor(Color.GREEN);
 
 ### Bir şeklin içine metin ekleyebilir miyim?
 
- Evet, şeklin içine metin ekleyebilirsiniz. Kullan`getTextPath` Metni ayarlamak ve biçimlendirmesini özelleştirmek için şeklin özelliği.
+ Evet, şeklin içine metin ekleyebilirsiniz. Kullanın`getTextPath` Metni ayarlamak ve biçimlendirmesini özelleştirmek için şeklin özelliği.
 
 ### Şekilleri belirli bir sıraya göre nasıl düzenleyebilirim?
 
- Z-düzeni özelliğini kullanarak şekillerin sırasını kontrol edebilirsiniz. Yı kur`ZOrder` Bir şeklin, şekil yığınındaki konumunu belirleyen özelliği. Düşük değerler arkaya, yüksek değerler ise öne gönderilir.
+ Z-düzeni özelliğini kullanarak şekillerin sırasını kontrol edebilirsiniz. Ayarla`ZOrder` Bir şeklin, şekil yığınındaki konumunu belirleyen özelliği. Düşük değerler arkaya, yüksek değerler ise öne gönderilir.

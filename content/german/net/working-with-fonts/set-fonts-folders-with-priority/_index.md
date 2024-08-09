@@ -2,79 +2,91 @@
 title: Legen Sie Schriftartenordner mit Priorität fest
 linktitle: Legen Sie Schriftartenordner mit Priorität fest
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Schritt-für-Schritt-Anleitung zum Festlegen der Priorität von Schriftartordnern beim Rendern eines Dokuments mit Aspose.Words für .NET.
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Schriftartordner mit Priorität in Word-Dokumenten festlegen. Unser Leitfaden stellt sicher, dass Ihre Dokumente jedes Mal perfekt dargestellt werden.
 type: docs
 weight: 10
 url: /de/net/working-with-fonts/set-fonts-folders-with-priority/
 ---
+## Einführung
 
-In diesem Tutorial führen wir Sie Schritt für Schritt durch den Prozess, um Schriftartordner mit Priorität festzulegen, wenn Sie ein Dokument mit Aspose.Words für .NET rendern. Wir erklären den mitgelieferten C#-Quellcode und stellen Ihnen eine umfassende Anleitung zur Verfügung, die Ihnen hilft, diese Funktion zu verstehen und in Ihren eigenen Projekten zu implementieren. Am Ende dieses Tutorials wissen Sie, wie Sie mehrere Schriftartordner mit benutzerdefinierter Suchpriorität angeben, wenn Sie Ihre Dokumente mit Aspose.Words für .NET rendern.
+In der Welt der Dokumentbearbeitung kann das Festlegen benutzerdefinierter Schriftartordner einen großen Unterschied machen, um sicherzustellen, dass Ihre Dokumente perfekt dargestellt werden, unabhängig davon, wo sie angezeigt werden. Heute werden wir uns damit befassen, wie Sie mit Aspose.Words für .NET Schriftartordner mit Priorität in Ihren Word-Dokumenten festlegen können. Diese umfassende Anleitung führt Sie durch jeden Schritt und macht den Prozess so reibungslos wie möglich.
 
-## Schritt 1: Dokumentverzeichnis festlegen
-Zuerst müssen Sie den Pfad zu Ihrem Dokumentenverzeichnis festlegen. Dies ist der Ort, an dem Sie Ihr bearbeitetes, gerendertes Dokument speichern möchten. Ersetzen Sie „IHR DOKUMENTENVERZEICHNIS“ durch den entsprechenden Pfad.
+## Voraussetzungen
 
-```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
+Bevor wir beginnen, stellen wir sicher, dass wir alles haben, was wir brauchen. Hier ist eine kurze Checkliste:
 
-## Schritt 2: Schriftartenordner mit Priorität festlegen
- Anschließend können Sie die Schriftartenordner mit Priorität festlegen mit dem`FontSettings` Klasse und die`SetFontsSources()`Methode. Sie können mehrere Schriftartquellen angeben, indem Sie Instanzen von`SystemFontSource`Und`FolderFontSource`. In diesem Beispiel haben wir zwei Schriftartquellen definiert: die Standardsystemschriftartquelle und einen benutzerdefinierten Schriftartordner mit der Priorität 1.
+-  Aspose.Words für .NET: Sie müssen diese Bibliothek installiert haben. Wenn Sie sie noch nicht haben, können Sie[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
+- Entwicklungsumgebung: Stellen Sie sicher, dass Sie über eine funktionierende .NET-Entwicklungsumgebung wie Visual Studio verfügen.
+-  Dokumentverzeichnis: Stellen Sie sicher, dass Sie ein Verzeichnis für Ihre Dokumente haben. Für unsere Beispiele verwenden wir`"YOUR DOCUMENT DIRECTORY"` als Platzhalter für diesen Pfad.
 
-```csharp
-FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
-{
-new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true, 1)
-});
-```
+## Namespaces importieren
 
-## Schritt 3: Laden Sie das zu rendernde Dokument
- Nun können Sie das zu rendernde Dokument laden mit dem`Document` Klasse. Achten Sie darauf, den richtigen Dokumentpfad anzugeben.
+Als Erstes müssen wir die erforderlichen Namespaces importieren. Diese Namespaces sind für den Zugriff auf die von Aspose.Words bereitgestellten Klassen und Methoden unerlässlich.
 
 ```csharp
-Document doc = new Document(dataDir + "Rendering.docx");
+using System;
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Schritt 4: Speichern des gerenderten Dokuments
- Abschließend können Sie das gerenderte Dokument in einer Datei speichern mit dem`Save()` Methode der`Document` Klasse. Achten Sie darauf, den richtigen Pfad und Dateinamen anzugeben.
+Lassen Sie uns nun jeden Schritt aufschlüsseln, um Schriftartordner mit Priorität festzulegen.
 
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
-```
+## Schritt 1: Richten Sie Ihre Schriftartquellen ein
 
-### Beispielquellcode zum Festlegen von Schriftartordnern mit Priorität unter Verwendung von Aspose.Words für .NET 
+Zu Beginn müssen Sie die Schriftartquellen definieren. Hier teilen Sie Aspose.Words mit, wo nach Schriftarten gesucht werden soll. Sie können mehrere Schriftartenordner angeben und sogar deren Priorität festlegen.
+
 ```csharp
 // Pfad zu Ihrem Dokumentverzeichnis
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
 {
-	new SystemFontSource(), new FolderFontSource("C:\\MyFonts\\", true,1)
+    new SystemFontSource(), 
+    new FolderFontSource("C:\\MyFonts\\", true, 1)
 });
+```
+
+In diesem Beispiel legen wir zwei Schriftartquellen fest:
+- SystemFontSource: Dies ist die Standardschriftartquelle, die alle auf Ihrem System installierten Schriftarten enthält.
+-  FolderFontSource: Dies ist ein benutzerdefinierter Schriftartenordner unter`C:\\MyFonts\\` . Der`true` Parameter gibt an, dass dieser Ordner rekursiv gescannt werden soll, und`1` legt seine Priorität fest.
+
+## Schritt 2: Laden Sie Ihr Dokument
+
+Laden Sie als Nächstes das Dokument, mit dem Sie arbeiten möchten. Stellen Sie sicher, dass sich das Dokument im angegebenen Verzeichnis befindet.
+
+```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
+```
+
+ Diese Codezeile lädt ein Dokument namens`Rendering.docx` aus Ihrem Dokumentverzeichnis.
+
+## Schritt 3: Speichern Sie Ihr Dokument mit den neuen Schrifteinstellungen
+
+Speichern Sie abschließend Ihr Dokument. Wenn Sie das Dokument speichern, verwendet Aspose.Words die von Ihnen angegebenen Schrifteinstellungen.
+
+```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
 ```
 
+ Dadurch wird das Dokument als PDF in Ihrem Dokumentverzeichnis unter dem Namen`WorkingWithFonts.SetFontsFoldersWithPriority.pdf`.
+
 ## Abschluss
-In diesem Tutorial haben wir gelernt, wie man beim Rendern eines Dokuments mit Aspose.Words für .NET Schriftartenordner mit Priorität einstellt. Indem Sie dieser Schritt-für-Schritt-Anleitung folgen, können Sie beim Rendern Ihrer Dokumente problemlos mehrere Schriftartenordner mit benutzerdefinierter Suchpriorität angeben. Aspose.Words bietet eine leistungsstarke und flexible API für die Textverarbeitung mit Schriftarten in Ihren Dokumenten. Mit diesem Wissen können Sie die beim Rendern Ihrer Dokumente verwendeten Schriftartenquellen steuern und an Ihre spezifischen Anforderungen anpassen.
 
-### Häufig gestellte Fragen
+Und da haben Sie es! Sie haben erfolgreich Schriftartenordner mit Priorität mithilfe von Aspose.Words für .NET eingerichtet. Durch die Angabe benutzerdefinierter Schriftartenordner und -prioritäten können Sie sicherstellen, dass Ihre Dokumente konsistent gerendert werden, unabhängig davon, wo sie angezeigt werden. Dies ist insbesondere in Umgebungen nützlich, in denen bestimmte Schriftarten nicht standardmäßig installiert sind.
 
-#### F: Wie kann ich in Aspose.Words Schriftartordner mit Priorität festlegen?
+## Häufig gestellte Fragen
 
- A: Um Schriftartenordner mit Priorität in Aspose.Words festzulegen, können Sie den`SetFontsFoldersWithPriority` Methode der`Fonts` Klasse, indem Sie die Speicherorte der Schriftartordner und deren Prioritätsreihenfolge angeben.
+### Warum muss ich benutzerdefinierte Schriftartordner einrichten?
+Durch das Einrichten benutzerdefinierter Schriftartordner wird sichergestellt, dass Ihre Dokumente korrekt wiedergegeben werden, auch wenn sie Schriftarten verwenden, die auf dem System, auf dem sie angezeigt werden, nicht installiert sind.
 
-#### F: Was passiert, wenn eine Schriftart in mehreren Ordnern mit unterschiedlicher Priorität vorhanden ist?
+### Kann ich mehrere benutzerdefinierte Schriftartordner festlegen?
+Ja, Sie können mehrere Schriftartenordner angeben. Mit Aspose.Words können Sie die Priorität für jeden Ordner festlegen und so sicherstellen, dass die wichtigsten Schriftarten zuerst gefunden werden.
 
-A: Wenn eine Schriftart in mehreren Ordnern mit unterschiedlicher Priorität vorhanden ist, verwendet Aspose.Words bei der Verarbeitung von Dokumenten die Version aus dem Ordner mit der höchsten Priorität.
+### Was passiert, wenn eine Schriftart in allen angegebenen Quellen fehlt?
+Wenn eine Schriftart in allen angegebenen Quellen fehlt, verwendet Aspose.Words eine Ersatzschriftart, um sicherzustellen, dass das Dokument weiterhin lesbar ist.
 
-#### F: Kann ich in Aspose.Words mehrere Schriftartenordner mit derselben Priorität angeben?
+### Kann ich die Priorität der Systemschriftarten ändern?
+Die Systemschriftarten sind standardmäßig immer enthalten, Sie können jedoch ihre Priorität relativ zu Ihren benutzerdefinierten Schriftartordnern festlegen.
 
-A: Ja, Sie können in Aspose.Words mehrere Schriftartenordner mit derselben Priorität angeben. Aspose.Words berücksichtigt sie alle mit gleicher Priorität, wenn in Ihren Dokumenten nach Schriftarten gesucht wird.
-
-#### F: Wie kann ich die in Aspose.Words mit Priorität definierten Schriftartordner überprüfen?
-
- A: Um die in Aspose.Words mit Priorität definierten Schriftordner zu überprüfen, können Sie den`GetFolders` Methode der`Fonts` Klasse, um die Liste der konfigurierten Schriftartordner einschließlich ihrer Prioritätsreihenfolge abzurufen.
-
-#### F: Welchen Nutzen hat es, in Aspose.Words Schriftartordner mit Priorität zu versehen?
-
-A: Indem Sie in Aspose.Words Schriftartordner mit Priorität festlegen, können Sie die Suchreihenfolge von Schriftarten in Ihren Word-Dokumenten steuern. Auf diese Weise können Sie sicherstellen, dass die gewünschten Schriftarten verwendet werden, und unerwünschte Probleme beim Ersetzen von Schriftarten vermeiden.
+### Ist es möglich, Netzwerkpfade für benutzerdefinierte Schriftartordner zu verwenden?
+Ja, Sie können Netzwerkpfade als benutzerdefinierte Schriftartenordner angeben und so Schriftartenressourcen an einem Netzwerkspeicherort zentralisieren.

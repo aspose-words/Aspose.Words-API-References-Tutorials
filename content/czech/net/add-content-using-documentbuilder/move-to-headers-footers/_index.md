@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/add-content-using-documentbuilder/move-to-headers-footers/
 ---
-## Úvod
+## Zavedení
 
 Pokud jde o vytváření a správu dokumentů aplikace Word programově, Aspose.Words for .NET je výkonný nástroj, který vám může ušetřit spoustu času a úsilí. V tomto článku prozkoumáme, jak se přesunout do záhlaví a zápatí v dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato funkce je nezbytná, když potřebujete přidat konkrétní obsah do části záhlaví nebo zápatí dokumentu. Ať už vytváříte sestavu, fakturu nebo jakýkoli dokument, který vyžaduje profesionální přístup, pochopení toho, jak zacházet se záhlavími a zápatím, je zásadní.
 
@@ -116,4 +116,4 @@ Aspose.Words for .NET je knihovna, která umožňuje vývojářům vytvářet, u
 vytváření složitých rozvržení můžete použít tabulky, obrázky a různé možnosti formátování, které poskytuje Aspose.Words.
 
 ### Kde najdu další příklady a návody?
- Podívejte se na[dokumentace](https://reference.aspose.com/words/net/) a[Fórum podpory](https://forum.aspose.com/c/words/8) pro další příklady a podporu komunity.
+ Podívejte se na[dokumentace](https://reference.aspose.com/words/net/) a[fórum podpory](https://forum.aspose.com/c/words/8) pro další příklady a podporu komunity.

@@ -8,15 +8,15 @@ weight: 12
 url: /cs/java/table-processing/creating-tables-rows/
 ---
 
-## Úvod
+## Zavedení
 Vytváření tabulek a řádků v dokumentech je základním aspektem zpracování dokumentů a Aspose.Words pro Java tento úkol usnadňuje než kdy dříve. V tomto podrobném průvodci prozkoumáme, jak využít Aspose.Words pro Java k vytváření tabulek a řádků ve vašich dokumentech. Ať už vytváříte sestavy, generujete faktury nebo vytváříte jakýkoli dokument, který vyžaduje prezentaci strukturovaných dat, tato příručka vám pomůže.
 
 ## Nastavení jeviště
- Než se ponoříme do hrubších detailů, ujistěte se, že máte potřebné nastavení pro práci s Aspose.Words pro Java. Ujistěte se, že jste stáhli a nainstalovali knihovnu. Pokud jste to ještě neudělali, můžete najít odkaz ke stažení[tady](https://releases.aspose.com/words/java/).
+ Než se ponoříme do hrubších detailů, ujistěte se, že máte potřebné nastavení pro práci s Aspose.Words pro Java. Ujistěte se, že jste stáhli a nainstalovali knihovnu. Pokud jste to ještě neudělali, můžete najít odkaz ke stažení[zde](https://releases.aspose.com/words/java/).
 
 ## Stavební stoly
 ### Vytvoření tabulky
-Pro začátek vytvořte v dokumentu tabulku. Zde je jednoduchý úryvek kódu, který vám pomůže:
+Začněme vytvořením tabulky v dokumentu. Zde je jednoduchý úryvek kódu, který vám pomůže:
 
 ```java
 // Importujte potřebné třídy

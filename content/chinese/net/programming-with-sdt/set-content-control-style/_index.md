@@ -103,4 +103,4 @@ doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");
 当然可以！此方法适用于各种文档元素。只需调整代码以定位所需元素即可。
 
 ### Aspose.Words 除了.NET 之外还支持其他平台吗？  
-是的，Aspose.Words 适用于 Java、C++和其他平台。检查他们的[文档](https://reference.aspose.com/words/net/)更多细节。
+是的，Aspose.Words 适用于 Java、C++和其他平台。检查他们的[文档](https://reference.aspose.com/words/net/)了解更多详情。

@@ -7,15 +7,15 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-charts/single-chart-series/
 ---
-## Úvod
+## Zavedení
 
-Nazdárek! Chtěli jste někdy oživit své dokumenty Word nějakými elegantními tabulkami? Tak to jste na správném místě! Dnes se ponoříme do světa Aspose.Words pro .NET, abychom přizpůsobili jednotlivé řady grafů v grafu. Ať už jste ostřílený profík nebo teprve začínáte, tento průvodce vás krok za krokem provede celým procesem. Tak se připoutejte a pojďme mapovat!
+Ahoj! Chtěli jste někdy oživit své dokumenty Word nějakými elegantními tabulkami? Tak to jste na správném místě! Dnes se ponoříme do světa Aspose.Words pro .NET, abychom přizpůsobili jednotlivé řady grafů v grafu. Ať už jste ostřílený profík nebo teprve začínáte, tento průvodce vás krok za krokem provede celým procesem. Tak se připoutejte a pojďme mapovat!
 
 ## Předpoklady
 
 Než začneme, ujistěte se, že máme vše, co potřebujeme. Zde je rychlý kontrolní seznam:
 
-1.  Aspose.Words for .NET Library: Můžete si ji stáhnout z[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Můžete si ji stáhnout z[zde](https://releases.aspose.com/words/net/).
 2. Visual Studio: Všechny nejnovější verze by měly stačit.
 3. Základní porozumění C#: Nic moc přepychového, stačí jen základy.
 
@@ -115,7 +115,7 @@ Aspose.Words for .NET je výkonná knihovna, která umožňuje vytvářet, uprav
  Ano, můžete začít s a[zkušební verze zdarma](https://releases.aspose.com/).
 
 ### Jak získám podporu pro Aspose.Words?
- Na jejich stránkách můžete získat podporu od komunity Aspose[Fórum](https://forum.aspose.com/c/words/8).
+ Na jejich stránkách můžete získat podporu od komunity Aspose[forum](https://forum.aspose.com/c/words/8).
 
 ### Je možné přizpůsobit jiné typy grafů?
 Absolutně! Aspose.Words podporuje různé typy grafů, jako jsou pruhové, výsečové a bodové grafy.

@@ -20,7 +20,7 @@ Voordat we ingaan op de kern van de zaak, moeten we ervoor zorgen dat u alles he
 3. .NET Framework: Zorg ervoor dat .NET Framework is geïnstalleerd.
 4. Een Word-document: u hebt een voorbeeld van een Word-document nodig om mee te werken.
 
-Heb alles? Geweldig! Laten we verder gaan.
+Heb je alles? Geweldig! Laten we verder gaan.
 
 ## Naamruimten importeren
 

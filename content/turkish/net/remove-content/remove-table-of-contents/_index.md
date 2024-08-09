@@ -55,7 +55,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 
 ## 3. Adım: TOC Alanını Belirleyin ve Kaldırın
 
-Sihir yapılan yer burasıdır. TOC alanını bulup kaldıracağız.
+Sihrin gerçekleştiği yer burasıdır. TOC alanını bulup kaldıracağız.
 
 ```csharp
 doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
@@ -79,7 +79,7 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET kullanarak bir Word belgesinden TOC'yi kaldırmak, işlemi bu basit adımlara ayırdığınızda çok kolaydır. Bu güçlü kitaplık yalnızca İçindekiler'in kaldırılmasına yardımcı olmakla kalmaz, aynı zamanda sayısız diğer belge işlemlerini de gerçekleştirebilir. Öyleyse devam edin ve deneyin!
+Ve işte karşınızda! Aspose.Words for .NET kullanarak bir Word belgesinden TOC'yi kaldırmak, işlemi bu basit adımlara ayırdığınızda çok kolaydır. Bu güçlü kitaplık yalnızca İçindekiler'in kaldırılmasına yardımcı olmakla kalmaz, aynı zamanda sayısız diğer belge işlemlerini de gerçekleştirebilir. Öyleyse devam edin ve deneyin!
 
 ## SSS'ler
 

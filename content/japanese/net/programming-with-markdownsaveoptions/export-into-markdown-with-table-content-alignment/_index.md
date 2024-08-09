@@ -9,7 +9,7 @@ url: /ja/net/programming-with-markdownsaveoptions/export-into-markdown-with-tabl
 ---
 ## 導入
 
-こんにちは! Word 文書を、完璧に整列した表とともに Markdown 形式にエクスポートする方法を考えたことはありませんか? ドキュメント作成に取り組んでいる開発者でも、Markdown を愛用している人でも、このガイドは役に立ちます。これを実現するために Aspose.Words for .NET を使用する方法について詳しく説明します。Word の表を、整列した Markdown 表に変換する準備はできていますか? さあ、始めましょう!
+こんにちは! Word 文書を、完璧に整列した表とともに Markdown 形式にエクスポートする方法を考えたことはありませんか? ドキュメント作成に取り組んでいる開発者でも、Markdown を愛用している人でも、このガイドは役に立ちます。これを実現するために Aspose.Words for .NET を使用する方法について詳しく説明します。Word の表を、整列した Markdown 表に変換する準備はできましたか? さあ、始めましょう!
 
 ## 前提条件
 

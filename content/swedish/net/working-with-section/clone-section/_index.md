@@ -87,7 +87,7 @@ Efter att ha klonat och lagt till avsnittet är det sista steget att spara ditt 
 doc.Save(dataDir + "ClonedDocument.docx");
 ```
 
- Byta ut`"dataDir + "ClonedDocument.docx"` med den faktiska sökvägen där du vill spara ditt dokument. Denna kodrad kommer att spara din Word-fil, komplett med det klonade avsnittet.
+ Ersätta`"dataDir + "ClonedDocument.docx"` med den faktiska sökvägen där du vill spara ditt dokument. Denna kodrad kommer att spara din Word-fil, komplett med det klonade avsnittet.
 
 ## Steg-för-steg-guide
 

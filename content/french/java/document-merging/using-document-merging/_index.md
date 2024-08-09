@@ -2,7 +2,7 @@
 title: Utilisation de la fusion de documents
 linktitle: Utilisation de la fusion de documents
 second_title: API de traitement de documents Java Aspose.Words
-description: Apprenez à fusionner des documents Word de manière transparente à l'aide d'Aspose.Words pour Java. Combinez, formatez et gérez efficacement les conflits en quelques étapes seulement. Commencez maintenant!
+description: Apprenez à fusionner des documents Word de manière transparente à l'aide d'Aspose.Words pour Java. Combinez, formatez et gérez efficacement les conflits en quelques étapes seulement. Commencez maintenant !
 type: docs
 weight: 10
 url: /fr/java/document-merging/using-document-merging/
@@ -171,7 +171,7 @@ public class DocumentMerger {
 
 - Gérez toujours les exceptions lors de la fusion de documents pour éviter les erreurs inattendues.
 
-- Vérifiez régulièrement les mises à jour et utilisez la dernière version d'Aspose.Words for Java pour bénéficier de corrections de bugs et de nouvelles fonctionnalités.
+- Vérifiez régulièrement les mises à jour et utilisez la dernière version d'Aspose.Words for Java pour bénéficier de corrections de bogues et de nouvelles fonctionnalités.
 
 - Testez la fusion de documents avec différents types et tailles de documents pour garantir des performances optimales.
 

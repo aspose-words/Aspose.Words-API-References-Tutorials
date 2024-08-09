@@ -214,7 +214,7 @@ Ezeket a lépéseket követve egyéni listaszintű dokumentumokat hozhat létre,
 
 ## Következtetés
 
-Gratulálunk! Megtanulta, hogyan kell hatékonyan dolgozni listákkal az Aspose.Words for Java programban. A listák kulcsfontosságúak a dokumentumok tartalmának rendszerezéséhez és megjelenítéséhez. Akár újra kell indítania a listákat az egyes szakaszokban, akár a listaszinteket kell megadnia, az Aspose.Words for Java biztosítja a professzionális megjelenésű dokumentumok létrehozásához szükséges eszközöket.
+Gratulálok! Megtanulta, hogyan kell hatékonyan dolgozni listákkal az Aspose.Words for Java programban. A listák kulcsfontosságúak a dokumentumok tartalmának rendszerezéséhez és megjelenítéséhez. Akár újra kell indítania a listákat az egyes szakaszokban, akár a listaszinteket kell megadnia, az Aspose.Words for Java biztosítja a professzionális megjelenésű dokumentumok létrehozásához szükséges eszközöket.
 
 Most már magabiztosan használhatja ezeket a funkciókat a dokumentum-előállítási és -formázási feladatok javítására. Ha bármilyen kérdése van, vagy további segítségre van szüksége, forduljon bizalommal a[Aspose közösségi fórum](https://forum.aspose.com/) támogatásért.
 

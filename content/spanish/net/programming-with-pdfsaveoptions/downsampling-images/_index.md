@@ -70,7 +70,7 @@ En este paso final, guardaremos el documento como PDF en el mismo directorio con
 
 ## Conclusión
 
-¡Y ahí lo tienes! Ha reducido con éxito el tamaño de su PDF al reducir la resolución de las imágenes usando Aspose.Words para .NET. Esto no solo hace que sus archivos PDF sean más manejables, sino que también ayuda a realizar cargas y descargas más rápidas y experiencias de visualización más fluidas.
+¡Y ahí lo tienes! Ha reducido con éxito el tamaño de su PDF al reducir la resolución de las imágenes utilizando Aspose.Words para .NET. Esto no solo hace que sus archivos PDF sean más manejables, sino que también ayuda a realizar cargas y descargas más rápidas y experiencias de visualización más fluidas.
 
 ## Preguntas frecuentes
 

@@ -72,7 +72,7 @@ Kaydetme seçeneklerimiz yapılandırıldığında son adım, belgeyi bir HTML d
 doc.Save(dataDir + "SplitDocument.BySectionsHtml.html", options);
 ```
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesini başarıyla HTML'ye bölümlere ayırdınız.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesini başarıyla HTML'ye bölümlere ayırdınız.
 
 ## Çözüm
 

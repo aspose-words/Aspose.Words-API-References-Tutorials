@@ -9,13 +9,13 @@ url: /vi/net/join-and-append-documents/different-page-setup/
 ---
 ## Giới thiệu
 
-Này! Bạn đã sẵn sàng bước vào thế giới thao tác tài liệu hấp dẫn với Aspose.Words cho .NET chưa? Hôm nay, chúng ta sẽ giải quyết một vấn đề khá hay: thiết lập các thiết lập trang khác nhau khi kết hợp các tài liệu Word. Cho dù bạn đang hợp nhất các báo cáo, tạo một cuốn tiểu thuyết hay chỉ loay hoay với các tài liệu để giải trí, hướng dẫn này sẽ hướng dẫn bạn thực hiện từng bước. Bắt đầu nào!
+Này! Bạn đã sẵn sàng bước vào thế giới thao tác tài liệu hấp dẫn với Aspose.Words cho .NET chưa? Hôm nay, chúng ta sẽ giải quyết một vấn đề khá hay: thiết lập các thiết lập trang khác nhau khi kết hợp các tài liệu Word. Cho dù bạn đang hợp nhất các báo cáo, tạo một cuốn tiểu thuyết hay chỉ loay hoay với các tài liệu để giải trí, hướng dẫn này sẽ hướng dẫn bạn thực hiện từng bước. Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
 Trước khi bắt tay vào việc, hãy đảm bảo bạn có mọi thứ bạn cần:
 
-1.  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt Aspose.Words for .NET. Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt Aspose.Words for .NET. bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 2. .NET Framework: Bất kỳ phiên bản nào hỗ trợ Aspose.Words cho .NET.
 3. Môi trường phát triển: Visual Studio hoặc bất kỳ IDE tương thích .NET nào khác.
 4. Kiến thức C# cơ bản: Chỉ là kiến thức cơ bản để hiểu cú pháp và cấu trúc.
@@ -119,7 +119,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn vừa kết hợp hai tài liệu Word với các thiết lập trang khác nhau bằng Aspose.Words cho .NET. Thư viện mạnh mẽ này giúp việc thao tác tài liệu theo chương trình trở nên cực kỳ dễ dàng. Cho dù bạn đang tạo các báo cáo phức tạp, tập hợp sách hay quản lý bất kỳ tài liệu nhiều phần nào, Aspose.Words đều có thể hỗ trợ bạn.
+Và bạn có nó! Bạn vừa kết hợp hai tài liệu Word với các thiết lập trang khác nhau bằng Aspose.Words cho .NET. Thư viện mạnh mẽ này giúp việc thao tác tài liệu theo chương trình trở nên cực kỳ dễ dàng. Cho dù bạn đang tạo các báo cáo phức tạp, tập hợp sách hay quản lý bất kỳ tài liệu nhiều phần nào, Aspose.Words đều có thể hỗ trợ bạn.
 
 ## Câu hỏi thường gặp
 
@@ -133,7 +133,7 @@ Bạn cũng có thể khớp cài đặt lề tương tự như cách chúng tô
 Có, Aspose.Words for .NET hoàn toàn tương thích với .NET Core.
 
 ### Tôi có thể giữ nguyên kiểu từ cả hai tài liệu không?
- Vâng`ImportFormatMode.KeepSourceFormatting` tùy chọn đảm bảo rằng các kiểu từ tài liệu nguồn được giữ nguyên.
+ Vâng, cái`ImportFormatMode.KeepSourceFormatting` tùy chọn đảm bảo rằng các kiểu từ tài liệu nguồn được giữ nguyên.
 
 ### Tôi có thể nhận thêm trợ giúp về Aspose.Words ở đâu?
  Kiểm tra[Tài liệu Aspose.Words](https://reference.aspose.com/words/net/) hoặc ghé thăm họ[diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8) để được hỗ trợ thêm.

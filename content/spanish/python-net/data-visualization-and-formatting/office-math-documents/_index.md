@@ -14,7 +14,7 @@ Office Math es una función de Microsoft Office que permite a los usuarios crear
 
 ## Configurando Aspose.Words para Python
 
-Antes de sumergirnos en la creación de ecuaciones matemáticas, configuremos el entorno. Asegúrese de tener instalado Aspose.Words para Python siguiendo estos pasos:
+Antes de sumergirnos en la creación de ecuaciones matemáticas, configuremos el entorno. Asegúrese de tener Aspose.Words para Python instalado siguiendo estos pasos:
 
 1. Instale el paquete Aspose.Words usando pip:
    ```python

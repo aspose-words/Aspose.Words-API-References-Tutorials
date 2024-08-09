@@ -69,7 +69,7 @@ RtfSaveOptions saveOptions = new RtfSaveOptions(); { saveOptions.setSaveImagesAs
 doc.save("Your Directory Path" + "WorkingWithRtfSaveOptions.SavingImagesAsWmf.rtf", saveOptions);
 ```
 
-## συμπέρασμα
+## Σύναψη
 
 Σε αυτόν τον οδηγό, δείξαμε πώς να αποθηκεύετε έγγραφα σε μορφή RTF χρησιμοποιώντας το Aspose.Words για Java. Ακολουθώντας αυτά τα βήματα και διαμορφώνοντας τις επιλογές αποθήκευσης, μπορείτε να μετατρέψετε αποτελεσματικά τα έγγραφά σας Word σε μορφή RTF με ευκολία.
 

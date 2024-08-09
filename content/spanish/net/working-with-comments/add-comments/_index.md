@@ -1,6 +1,6 @@
 ---
-title: Añadir comentarios
-linktitle: Añadir comentarios
+title: Agregar comentarios
+linktitle: Agregar comentarios
 second_title: API de procesamiento de documentos Aspose.Words
 description: Aprenda cómo agregar comentarios a sus documentos de Word usando Aspose.Words para .NET con nuestra guía. Mejore su proceso de colaboración de documentos sin esfuerzo.
 type: docs
@@ -91,7 +91,7 @@ doc.Save(dataDir + "WorkingWithComments.AddComments.docx");
 
 ## Conclusión
 
-¡Ahí tienes! Ha agregado correctamente comentarios a un documento de Word utilizando Aspose.Words para .NET. Esta poderosa característica puede mejorar enormemente su proceso de revisión de documentos, facilitando la colaboración y la comunicación de comentarios. No olvide explorar otras capacidades de Aspose.Words para optimizar aún más sus tareas de gestión de documentos.
+¡Ahí lo tienes! Ha agregado correctamente comentarios a un documento de Word utilizando Aspose.Words para .NET. Esta poderosa característica puede mejorar enormemente su proceso de revisión de documentos, facilitando la colaboración y la comunicación de comentarios. No olvide explorar otras capacidades de Aspose.Words para optimizar aún más sus tareas de gestión de documentos.
 
 ## Preguntas frecuentes
 

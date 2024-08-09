@@ -106,7 +106,7 @@ doc.Save(dataDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.docx"
 
 ## Conclusion
 
-Et voila! Vous avez ajouté avec succès un champ TOA à un document Word sans utiliser de générateur de documents. En suivant ces étapes, vous pouvez gérer efficacement les citations et créer des tableaux complets de références dans vos documents juridiques. Aspose.Words for .NET rend ce processus fluide et efficace, vous offrant les outils nécessaires pour gérer facilement des tâches documentaires complexes.
+Et voilà ! Vous avez ajouté avec succès un champ TOA à un document Word sans utiliser de générateur de documents. En suivant ces étapes, vous pouvez gérer efficacement les citations et créer des tableaux complets de références dans vos documents juridiques. Aspose.Words for .NET rend ce processus fluide et efficace, vous offrant les outils nécessaires pour gérer facilement des tâches documentaires complexes.
 
 ## FAQ
 

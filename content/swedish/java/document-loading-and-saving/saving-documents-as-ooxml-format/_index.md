@@ -37,7 +37,7 @@ doc.save("EncryptedDoc.docx", saveOptions);
 
 ## Ställa in OOXML-efterlevnad
 
-Du kan ange OOXML-efterlevnadsnivån när du sparar dokumentet. Du kan till exempel ställa in den på ISO 29500:2008 (Strikt). Här är hur:
+Du kan ange OOXML-efterlevnadsnivån när du sparar dokumentet. Du kan till exempel ställa in den på ISO 29500:2008 (Strikt). Så här gör du:
 
 ```java
 import com.aspose.words.Document;
@@ -61,7 +61,7 @@ doc.save("ComplianceDoc.docx", saveOptions);
 
 ## Uppdaterar egenskapen Senaste sparad tid
 
-Du kan välja att uppdatera egenskapen "Senast sparad tid" för dokumentet när du sparar det. Här är hur:
+Du kan välja att uppdatera egenskapen "Senast sparad tid" för dokumentet när du sparar det. Så här gör du:
 
 ```java
 import com.aspose.words.Document;
@@ -80,7 +80,7 @@ doc.save("UpdatedLastSavedTime.docx", saveOptions);
 
 ## Behåller äldre kontrollkaraktärer
 
-Om ditt dokument innehåller äldre kontrolltecken kan du välja att behålla dem medan du sparar. Här är hur:
+Om ditt dokument innehåller äldre kontrolltecken kan du välja att behålla dem medan du sparar. Så här gör du:
 
 ```java
 import com.aspose.words.Document;
@@ -100,7 +100,7 @@ doc.save("LegacyControlCharsPreserved.docx", saveOptions);
 
 ## Ställa in kompressionsnivå
 
-Du kan justera komprimeringsnivån när du sparar dokumentet. Du kan till exempel ställa in den på SUPER_FAST för minimal komprimering. Här är hur:
+Du kan justera komprimeringsnivån när du sparar dokumentet. Du kan till exempel ställa in den på SUPER_FAST för minimal komprimering. Så här gör du:
 
 ```java
 import com.aspose.words.Document;

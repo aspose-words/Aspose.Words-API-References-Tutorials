@@ -71,7 +71,7 @@ doc.save("merged_document.docx");
 
 ## Conclusion
 
-Toutes nos félicitations! Vous avez appris à fusionner des documents à l'aide d'Aspose.Words pour Java. Cette fonctionnalité puissante peut changer la donne pour vos tâches de gestion de documents. Expérimentez avec différentes combinaisons de documents et explorez d'autres options de personnalisation en fonction de vos besoins.
+Félicitations! Vous avez appris à fusionner des documents à l'aide d'Aspose.Words pour Java. Cette fonctionnalité puissante peut changer la donne pour vos tâches de gestion de documents. Expérimentez avec différentes combinaisons de documents et explorez d'autres options de personnalisation en fonction de vos besoins.
 
 ## FAQ
 

@@ -99,7 +99,7 @@ Lisansı akıştan uygula
         }
 ```
 
-## 7. Karar
+## 7. Sonuç
 
 Bu eğitimde Aspose.Words for Java'ya lisans başvurusu için gerekli adımları ele aldık. Bu güçlü kütüphanenin tüm potansiyelini ortaya çıkarmak için lisanslama hayati öneme sahiptir. Artık Java uygulamalarınızda Word belgelerini sorunsuz bir şekilde oluşturabilir, düzenleyebilir ve değiştirebilirsiniz.
 

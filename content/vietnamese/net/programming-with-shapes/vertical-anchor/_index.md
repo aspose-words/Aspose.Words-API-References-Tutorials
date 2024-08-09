@@ -9,13 +9,13 @@ url: /vi/net/programming-with-shapes/vertical-anchor/
 ---
 ## Giới thiệu
 
-Bạn đã bao giờ thấy mình cần kiểm soát chính xác vị trí văn bản xuất hiện bên trong hộp văn bản trong tài liệu Word chưa? Có thể bạn muốn văn bản của mình được neo vào đầu, giữa hoặc cuối hộp văn bản? Nếu vậy, bạn đang ở đúng nơi! Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng Aspose.Words cho .NET để đặt neo dọc của hộp văn bản trong tài liệu Word. Hãy nghĩ về việc neo dọc như cây đũa thần giúp định vị văn bản của bạn một cách chính xác ở nơi bạn muốn trong vùng chứa nó. Sẵn sàng để đi sâu vào? Bắt đầu nào!
+Bạn đã bao giờ thấy mình cần kiểm soát chính xác vị trí văn bản xuất hiện bên trong hộp văn bản trong tài liệu Word chưa? Có thể bạn muốn văn bản của mình được neo vào đầu, giữa hoặc cuối hộp văn bản? Nếu vậy, bạn đang ở đúng nơi! Trong hướng dẫn này, chúng ta sẽ khám phá cách sử dụng Aspose.Words cho .NET để đặt neo dọc của hộp văn bản trong tài liệu Word. Hãy nghĩ về việc neo dọc như cây đũa thần giúp định vị văn bản của bạn một cách chính xác ở nơi bạn muốn trong vùng chứa nó. Sẵn sàng để đi sâu vào? Hãy bắt đầu!
 
 ## Điều kiện tiên quyết
 
 Trước khi chúng ta đi sâu vào các vấn đề cơ bản về neo dọc, bạn sẽ cần chuẩn bị sẵn một số thứ:
 
-1.  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt thư viện Aspose.Words for .NET. Nếu bạn chưa có nó, bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Đảm bảo bạn đã cài đặt thư viện Aspose.Words for .NET. Nếu bạn chưa có nó, bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 2. Visual Studio: Hướng dẫn này giả sử bạn đang sử dụng Visual Studio hoặc .NET IDE khác để mã hóa.
 3. Kiến thức cơ bản về C#: Làm quen với C# và .NET sẽ giúp bạn theo dõi suôn sẻ.
 
@@ -85,7 +85,7 @@ doc.Save(dataDir + "WorkingWithShapes.VerticalAnchor.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn vừa học cách kiểm soát việc căn chỉnh văn bản theo chiều dọc trong hộp văn bản trong tài liệu Word bằng Aspose.Words for .NET. Cho dù bạn đang neo văn bản vào đầu, giữa hay dưới cùng, tính năng này sẽ mang lại cho bạn quyền kiểm soát chính xác bố cục tài liệu của mình. Vì vậy, lần tới khi bạn cần điều chỉnh vị trí văn bản trong tài liệu của mình, bạn sẽ biết phải làm gì!
+Và bạn có nó! Bạn vừa học cách kiểm soát việc căn chỉnh văn bản theo chiều dọc trong hộp văn bản trong tài liệu Word bằng Aspose.Words for .NET. Cho dù bạn đang neo văn bản vào đầu, giữa hay dưới cùng, tính năng này sẽ mang lại cho bạn quyền kiểm soát chính xác bố cục tài liệu của mình. Vì vậy, lần tới khi bạn cần điều chỉnh vị trí văn bản trong tài liệu của mình, bạn sẽ biết phải làm gì!
 
 ## Câu hỏi thường gặp
 
@@ -99,7 +99,7 @@ Có, bạn có thể sử dụng tính năng neo dọc với các hình dạng k
  Bạn có thể thay đổi điểm neo bằng cách đặt`VerticalAnchor` thuộc tính trên đối tượng hình dạng hộp văn bản.
 
 ### Có thể neo văn bản vào giữa hộp văn bản không?
- Tuyệt đối! Chỉ dùng`TextBoxAnchor.Center` để căn giữa văn bản theo chiều dọc trong hộp văn bản.
+ Tuyệt đối! Chỉ cần sử dụng`TextBoxAnchor.Center` để căn giữa văn bản theo chiều dọc trong hộp văn bản.
 
 ### Tôi có thể tìm thêm thông tin về Aspose.Words cho .NET ở đâu?
  Kiểm tra[Tài liệu Aspose.Words](https://reference.aspose.com/words/net/) để biết thêm chi tiết và hướng dẫn.

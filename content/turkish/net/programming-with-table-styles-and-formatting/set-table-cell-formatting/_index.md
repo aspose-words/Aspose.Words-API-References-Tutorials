@@ -15,7 +15,7 @@ Word belgelerinizi nasıl daha profesyonel ve görsel olarak çekici hale getire
 
 Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
-1.  Aspose.Words for .NET: Buradan indirebilirsiniz.[İndirme: {link](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Buradan indirebilirsiniz.[İndirme bağlantısı](https://releases.aspose.com/words/net/).
 2. Geliştirme Ortamı: Visual Studio veya .NET geliştirmeyi destekleyen başka bir IDE.
 3. Temel C# Bilgisi: C#'ta temel programlama kavramlarının ve sözdiziminin anlaşılması.
 4.  Belge Dizininiz: Belgelerinizi kaydetmek için belirlenmiş bir dizininiz olduğundan emin olun. Buna şu şekilde değineceğiz:`YOUR DOCUMENT DIRECTORY`.
@@ -46,7 +46,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 2. Adım: Bir Tablo Başlatın
 
- İle`DocumentBuilder` örneğin bir tablo oluşturmaya başlayabilirsiniz. Bu, çağrılarak yapılır.`StartTable` yöntem.
+ ile`DocumentBuilder` örneğin bir tablo oluşturmaya başlayabilirsiniz. Bu, çağrılarak yapılır.`StartTable` Yöntem.
 
 ```csharp
 // Tabloyu başlat
@@ -113,7 +113,7 @@ Tablo hücrelerini biçimlendirmek, Word belgelerinizin okunabilirliğini ve gö
 ### Tablodaki her hücre için farklı dolgu değerleri ayarlayabilir miyim?
  Evet, her hücre için ayrı ayrı farklı dolgu değerleri ayarlayabilirsiniz.`CellFormat` özellikleri ayrı ayrı.
 
-### Aynı biçimlendirmeyi aynı anda birden fazla hücreye uygulamak mümkün müdür?
+### Aynı biçimlendirmeyi aynı anda birden fazla hücreye uygulamak mümkün mü?
 Evet, hücreler arasında geçiş yapabilir ve programlı olarak her birine aynı biçimlendirme ayarlarını uygulayabilirsiniz.
 
 ### Tek tek hücreler yerine tablonun tamamını nasıl biçimlendirebilirim?

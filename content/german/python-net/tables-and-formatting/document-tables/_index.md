@@ -58,7 +58,7 @@ table.preferred_width = doc.page_width
 
 ## Anpassen der Spaltenbreiten:
 
- Durch die richtige Anpassung der Spaltenbreiten wird sichergestellt, dass der Tabelleninhalt sauber und einheitlich passt. Sie können die Breite einzelner Spalten mithilfe der`set_preferred_width` Methode.
+ Durch die richtige Anpassung der Spaltenbreiten wird sichergestellt, dass der Tabelleninhalt sauber und einheitlich passt. Sie können die Breite einzelner Spalten mithilfe der`set_preferred_width` Verfahren.
 
 ```python
 # Set preferred width for the first column

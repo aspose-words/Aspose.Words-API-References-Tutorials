@@ -32,7 +32,7 @@ Bontsuk fel a dokumentum létrehozásának folyamatát többszintű listával é
 
 ## 1. lépés: Állítsa be a dokumentumot
 
- Először is létre kell hoznia egy új dokumentumot, és inicializálnia kell`DocumentBuilder` tárgy. Ez az objektum lehetővé teszi a tartalom egyszerű hozzáadását és szükség szerinti formázását.
+ Először is létre kell hoznia egy új dokumentumot, és inicializálnia kell`DocumentBuilder` objektum. Ez az objektum lehetővé teszi a tartalom egyszerű hozzáadását és szükség szerinti formázását.
 
 ```csharp
 // A dokumentumkönyvtár elérési útja
@@ -47,7 +47,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 2. lépés: Hozzon létre egy listát többszintű behúzással
 
- A ... val`DocumentBuilder` Például most már létrehozhat egy listát különböző behúzási szintekkel. Használja a`ListFormat` tulajdonság a számozás alkalmazásához és a listaelemek igény szerinti behúzásához.
+ A`DocumentBuilder` Például most már létrehozhat egy listát különböző behúzási szintekkel. Használja a`ListFormat` tulajdonság a számozás alkalmazásához és a listaelemek igény szerinti behúzásához.
 
 ```csharp
 // Hozzon létre egy listát három behúzási szinttel
@@ -95,7 +95,7 @@ Az alábbi lépések végrehajtásával sikeresen létrehozott egy dokumentumot 
  Igen, a lista behúzásához különböző karaktereket adhat meg a`Character` ingatlan be`TxtSaveOptions`.
 
 ### Hogyan alkalmazhatok felsorolásjeleket a számok helyett a listákban?
- Használat`ListFormat.ApplyBulletDefault()` ahelyett`ApplyNumberDefault()` pontozott lista létrehozásához.
+ Használat`ListFormat.ApplyBulletDefault()` helyett`ApplyNumberDefault()` pontozott lista létrehozásához.
 
 ### Beállíthatom a szóközök számát dinamikusan a behúzáshoz?
  Igen, beállíthatja a`ListIndentation.Count` tulajdonságot a helyek számának beállításához az Ön igényei alapján.

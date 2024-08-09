@@ -105,7 +105,7 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx");
  예, 다음을 구성할 수 있습니다.`TxtLoadOptions` 설정하여 선행 공백을 유지하려면`LeadingSpacesOptions` 에게`TxtLeadingSpacesOptions.None`.
 
 ### 후행 공백을 자르지 않으면 어떻게 되나요?  
-후행 공백이 잘리지 않으면 문서의 줄 끝에 그대로 남아 형식이나 모양에 영향을 줄 수 있습니다.
+후행 공백이 잘리지 않으면 문서의 줄 끝에 그대로 남아 형식이나 모양에 영향을 미칠 수 있습니다.
 
 ### Aspose.Words를 사용하여 다른 유형의 공백을 처리할 수 있나요?  
 Aspose.Words는 주로 선행 및 후행 공백에 중점을 둡니다. 보다 복잡한 공백 처리의 경우 추가 처리가 필요할 수 있습니다.

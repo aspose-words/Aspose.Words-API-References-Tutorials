@@ -69,7 +69,7 @@ builder.EndRow();
 
  Di sini, kita menyisipkan sel, mengatur properti penggabungan vertikalnya menjadi`CellMerge.None`, dan tambahkan beberapa teks ke dalamnya. Kami kemudian mengakhiri baris saat ini.
 
-## Langkah 4: Memasukkan Baris Kedua dan Menggabungkannya Secara Vertikal
+## Langkah 4: Memasukkan Baris Kedua dan Menggabungkan Secara Vertikal
 
 Pada langkah ini, kita menyisipkan baris kedua dan menggabungkan sel pertama secara vertikal dengan sel di atasnya.
 

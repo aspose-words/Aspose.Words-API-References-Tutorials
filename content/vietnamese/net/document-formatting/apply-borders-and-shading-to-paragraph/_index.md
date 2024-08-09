@@ -9,7 +9,7 @@ url: /vi/net/document-formatting/apply-borders-and-shading-to-paragraph/
 ---
 ## Giới thiệu
 
-Xin chào, bạn đã bao giờ tự hỏi làm cách nào để làm cho tài liệu Word của mình nổi bật với một số đường viền và bóng đẹp mắt chưa? Vâng, bạn đang ở đúng nơi! Hôm nay, chúng ta sẽ đi sâu vào thế giới của Aspose.Words dành cho .NET để làm nổi bật các đoạn văn của chúng ta. Hãy tưởng tượng tài liệu của bạn trông bóng bẩy như tác phẩm của một nhà thiết kế chuyên nghiệp chỉ với một vài dòng mã. Sẵn sàng để bắt đầu? Đi nào!
+Xin chào, bạn đã bao giờ tự hỏi làm cách nào để làm cho tài liệu Word của mình nổi bật với một số đường viền và bóng đẹp mắt chưa? Vâng, bạn đang ở đúng nơi! Hôm nay, chúng ta sẽ đi sâu vào thế giới của Aspose.Words dành cho .NET để làm nổi bật các đoạn văn của chúng ta. Hãy tưởng tượng tài liệu của bạn trông bóng bẩy như tác phẩm của một nhà thiết kế chuyên nghiệp chỉ với một vài dòng mã. Sẵn sàng để bắt đầu? Đi thôi!
 
 ## Điều kiện tiên quyết
 
@@ -31,7 +31,7 @@ using Aspose.Words.Drawing;
 using System.Drawing;
 ```
 
-Bây giờ, hãy chia quy trình thành các bước nhỏ. Mỗi bước sẽ có tiêu đề và giải thích chi tiết. Sẵn sàng? Đi nào!
+Bây giờ, hãy chia quy trình thành các bước nhỏ. Mỗi bước sẽ có tiêu đề và giải thích chi tiết. Sẵn sàng? Đi thôi!
 
 ## Bước 1: Thiết lập thư mục tài liệu của bạn
 
@@ -46,14 +46,14 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Bước 2: Tạo Tài liệu mới và DocumentBuilder
 
- Tiếp theo, chúng ta cần tạo một tài liệu mới và một`DocumentBuilder` sự vật. Các`DocumentBuilder` là cây đũa thần cho phép chúng ta thao tác với tài liệu.
+ Tiếp theo, chúng ta cần tạo một tài liệu mới và một`DocumentBuilder` sự vật. các`DocumentBuilder` là cây đũa thần cho phép chúng ta thao tác với tài liệu.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Các`Document` đối tượng đại diện cho toàn bộ tài liệu Word của chúng tôi và`DocumentBuilder` giúp chúng tôi thêm và định dạng nội dung.
+ các`Document` đối tượng đại diện cho toàn bộ tài liệu Word của chúng tôi và`DocumentBuilder` giúp chúng tôi thêm và định dạng nội dung.
 
 ## Bước 3: Xác định đường viền đoạn văn
 
@@ -105,7 +105,7 @@ doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Chỉ với một vài dòng mã, chúng tôi đã biến một đoạn văn đơn giản thành một đoạn nội dung hấp dẫn về mặt hình ảnh. Aspose.Words for .NET giúp việc thêm định dạng trông chuyên nghiệp vào tài liệu của bạn trở nên vô cùng dễ dàng. Cho dù bạn đang chuẩn bị một báo cáo, một lá thư hay bất kỳ tài liệu nào, những thủ thuật này sẽ giúp bạn tạo ấn tượng tuyệt vời. Vì vậy, hãy tiếp tục, dùng thử và xem tài liệu của bạn trở nên sống động!
+Và bạn có nó! Chỉ với một vài dòng mã, chúng tôi đã biến một đoạn văn đơn giản thành một đoạn nội dung hấp dẫn về mặt hình ảnh. Aspose.Words for .NET giúp việc thêm định dạng trông chuyên nghiệp vào tài liệu của bạn trở nên vô cùng dễ dàng. Cho dù bạn đang chuẩn bị một báo cáo, một lá thư hay bất kỳ tài liệu nào, những thủ thuật này sẽ giúp bạn tạo ấn tượng tuyệt vời. Vì vậy, hãy tiếp tục, dùng thử và xem tài liệu của bạn trở nên sống động!
 
 ## Câu hỏi thường gặp
 

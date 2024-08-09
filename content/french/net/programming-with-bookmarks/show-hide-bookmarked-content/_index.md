@@ -9,7 +9,7 @@ url: /fr/net/programming-with-bookmarks/show-hide-bookmarked-content/
 ---
 ## Introduction
 
-Prêt à plonger dans le monde de la manipulation de documents avec Aspose.Words pour .NET ? Que vous soyez un développeur cherchant à automatiser les tâches liées aux documents ou simplement une personne curieuse de gérer les fichiers Word par programmation, vous êtes au bon endroit. Aujourd'hui, nous allons explorer comment afficher et masquer le contenu mis en signet dans un document Word à l'aide d'Aspose.Words pour .NET. Ce guide étape par étape fera de vous un pro du contrôle de la visibilité du contenu en fonction des signets. Commençons!
+Prêt à plonger dans le monde de la manipulation de documents avec Aspose.Words pour .NET ? Que vous soyez un développeur cherchant à automatiser les tâches liées aux documents ou simplement une personne curieuse de gérer les fichiers Word par programmation, vous êtes au bon endroit. Aujourd'hui, nous allons explorer comment afficher et masquer le contenu mis en signet dans un document Word à l'aide d'Aspose.Words pour .NET. Ce guide étape par étape fera de vous un pro du contrôle de la visibilité du contenu en fonction des signets. Commençons !
 
 ## Conditions préalables
 
@@ -114,7 +114,7 @@ Cela enregistre le document avec les modifications que nous avons apportées.
 
 ## Conclusion
 
-Et voila! Vous venez d'apprendre à afficher et masquer le contenu mis en signet dans un document Word à l'aide d'Aspose.Words pour .NET. Cet outil puissant facilite la manipulation de documents, que vous automatisiez des rapports, créiez des modèles ou brichiez simplement des fichiers Word. Bon codage !
+Et voilà ! Vous venez d'apprendre à afficher et masquer le contenu mis en signet dans un document Word à l'aide d'Aspose.Words pour .NET. Cet outil puissant facilite la manipulation de documents, que vous automatisiez des rapports, créiez des modèles ou brichiez simplement des fichiers Word. Bon codage !
 
 ## FAQ
 

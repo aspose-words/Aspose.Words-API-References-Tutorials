@@ -33,7 +33,7 @@ doc.save("output.pdf", saveOptions);
 
 ## Controlar las opciones de guardar PDF
 
- Puede controlar varias opciones para guardar PDF usando el`PdfSaveOptions` clase. Por ejemplo, puede configurar el título de visualización del documento PDF de la siguiente manera:
+ Puede controlar varias opciones para guardar PDF utilizando el`PdfSaveOptions` clase. Por ejemplo, puede configurar el título de visualización del documento PDF de la siguiente manera:
 
 ```java
 PdfSaveOptions saveOptions = new PdfSaveOptions();

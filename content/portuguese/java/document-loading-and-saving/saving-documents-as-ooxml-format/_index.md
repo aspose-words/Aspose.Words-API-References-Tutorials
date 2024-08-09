@@ -176,4 +176,4 @@ Para remover a proteção por senha de um documento protegido por senha, você p
 
 ### Qual é o nível de compactação padrão ao salvar um documento no formato OOXML?
 
- O nível de compactação padrão ao salvar um documento no formato OOXML usando Aspose.Words for Java é`NORMAL` . Você pode alterar o nível de compactação para`SUPER_FAST` ou`MAXIMUM` como necessário.
+ O nível de compactação padrão ao salvar um documento no formato OOXML usando Aspose.Words for Java é`NORMAL` . Você pode alterar o nível de compactação para`SUPER_FAST` ou`MAXIMUM` conforme necessário.

@@ -128,7 +128,7 @@ doc.Save(dataDir + "WorkingWithVba.CreateVbaProject.docm");
 Aspose.Words for .NET एक व्यापक लाइब्रेरी है जो डेवलपर्स को .NET अनुप्रयोगों में Word दस्तावेज़ बनाने, संपादित करने और परिवर्तित करने की अनुमति देती है। यह दस्तावेज़ वर्कफ़्लो को स्वचालित करने और VBA के साथ कार्यक्षमता बढ़ाने के लिए एकदम सही है।
 
 ### क्या मैं Aspose.Words को निःशुल्क आज़मा सकता हूँ?  
- हाँ, आप Aspose.Words को आज़मा सकते हैं[मुफ्त परीक्षण](https://releases.aspose.com/) या प्राप्त करें[अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/) मूल्यांकन के लिए।
+ हाँ, आप Aspose.Words को आज़मा सकते हैं[मुफ्त परीक्षण](https://releases.aspose.com/) या प्राप्त करें[अस्थायी लाइसेंस](https://purchase.aspose.com/temporary-license/) मूल्यांकन हेतु.
 
 ### मैं Word दस्तावेज़ में VBA कोड कैसे जोड़ूँ?  
  आप एक बनाकर VBA कोड जोड़ सकते हैं`VbaModule` और इसकी स्थापना`SourceCode` अपने मैक्रो कोड के साथ प्रॉपर्टी जोड़ें। फिर, मॉड्यूल को अपने में जोड़ें`VbaProject`.

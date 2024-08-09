@@ -72,7 +72,7 @@ ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = tr
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
- Ở đây, chúng tôi đang thêm`srcDoc` ĐẾN`dstDoc` sử dụng phong cách đích. Các`options` tham số đảm bảo các quy tắc định dạng của chúng tôi được áp dụng.
+ Ở đây, chúng tôi đang thêm`srcDoc` ĐẾN`dstDoc` sử dụng phong cách đích. các`options` tham số đảm bảo các quy tắc định dạng của chúng tôi được áp dụng.
 
 ## Bước 5: Lưu tài liệu đã hợp nhất
 
@@ -86,7 +86,7 @@ Bùm! Bạn đã hợp nhất thành công hai tài liệu Word mà vẫn giữ 
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bằng cách làm theo các bước này, bạn có thể dễ dàng nối thêm tài liệu bằng Aspose.Words cho .NET mà không làm mất định dạng. Cho dù bạn là nhà phát triển đang tìm cách hợp lý hóa việc quản lý tài liệu hay chỉ là người yêu thích các tài liệu có tổ chức thì hướng dẫn này sẽ giúp bạn. Chúc mừng mã hóa!
+Và bạn có nó! Bằng cách làm theo các bước này, bạn có thể dễ dàng nối thêm tài liệu bằng Aspose.Words cho .NET mà không làm mất định dạng. Cho dù bạn là nhà phát triển đang tìm cách hợp lý hóa việc quản lý tài liệu hay chỉ là người yêu thích các tài liệu có tổ chức thì hướng dẫn này sẽ giúp bạn. Chúc mừng mã hóa!
 
 ## Câu hỏi thường gặp
 

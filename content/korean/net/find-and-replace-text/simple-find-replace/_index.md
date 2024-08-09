@@ -102,10 +102,10 @@ doc.Save(dataDir + "FindAndReplace.SimpleFindReplace.docx");
 ## FAQ
 
 ### 여러 개의 다른 텍스트를 한 번에 바꿀 수 있나요?
- 그래 넌 할수있어. 그냥 전화해`Replace` 바꾸려는 각 텍스트에 대한 메서드입니다.
+ 예, 가능합니다. 그냥 전화해`Replace` 바꾸려는 각 텍스트에 대한 메서드입니다.
 
 ### .NET용 Aspose.Words는 무료인가요?
-.NET용 Aspose.Words는 무료 평가판을 제공하지만 전체 기능을 사용하려면 라이센스를 구입해야 합니다. 확인해 보세요[가격](https://purchase.aspose.com/buy) 상세 사항은.
+.NET용 Aspose.Words는 무료 평가판을 제공하지만 전체 기능을 사용하려면 라이센스를 구입해야 합니다. 확인해 보세요[가격](https://purchase.aspose.com/buy) 자세한 내용은
 
 ### 텍스트를 서식으로 바꿀 수 있나요?
  전적으로! 다음을 사용하여 텍스트를 바꾸고 서식을 적용할 수 있습니다.`FindReplaceOptions` 수업.

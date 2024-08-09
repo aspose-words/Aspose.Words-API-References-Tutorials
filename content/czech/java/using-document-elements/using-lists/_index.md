@@ -16,7 +16,7 @@ Než začneme pracovat se seznamy, seznamme se s Aspose.Words pro Javu. Toto roz
 
 ### Nastavení vašeho prostředí
 
- Nejprve se ujistěte, že máte Aspose.Words for Java nainstalovaný a nastavený ve svém vývojovém prostředí. Můžete si jej stáhnout[tady](https://releases.aspose.com/words/java/). 
+ Nejprve se ujistěte, že máte Aspose.Words for Java nainstalovaný a nastavený ve svém vývojovém prostředí. Můžete si jej stáhnout[zde](https://releases.aspose.com/words/java/). 
 
 ## Restartování seznamů v každé sekci
 
@@ -214,14 +214,14 @@ Podle těchto kroků můžete vytvořit dokumenty s vlastními úrovněmi seznam
 
 ## Závěr
 
-Gratulujeme! Naučili jste se efektivně pracovat se seznamy v Aspose.Words for Java. Seznamy jsou zásadní pro uspořádání a prezentaci obsahu ve vašich dokumentech. Ať už potřebujete restartovat seznamy v každé sekci nebo zadat úrovně seznamu, Aspose.Words for Java poskytuje nástroje, které potřebujete k vytváření profesionálně vypadajících dokumentů.
+Gratuluji! Naučili jste se efektivně pracovat se seznamy v Aspose.Words for Java. Seznamy jsou zásadní pro uspořádání a prezentaci obsahu ve vašich dokumentech. Ať už potřebujete restartovat seznamy v každé sekci nebo zadat úrovně seznamu, Aspose.Words for Java poskytuje nástroje, které potřebujete k vytváření profesionálně vypadajících dokumentů.
 
-Nyní můžete s jistotou používat tyto funkce k vylepšení úloh generování a formátování dokumentů. Pokud máte nějaké dotazy nebo potřebujete další pomoc, neváhejte se obrátit na[Aspose komunitní fórum](https://forum.aspose.com/) pro podporu.
+Nyní můžete s jistotou používat tyto funkce k vylepšení úloh generování a formátování dokumentů. Pokud máte nějaké dotazy nebo potřebujete další pomoc, neváhejte se obrátit na[Aspose komunitní fórum](https://forum.aspose.com/) za podporu.
 
 ## Nejčastější dotazy
 
 ### Jak nainstaluji Aspose.Words for Java?
- Aspose.Words for Java si můžete stáhnout z[tady](https://releases.aspose.com/words/java/) a postupujte podle pokynů k instalaci v dokumentaci.
+ Aspose.Words for Java si můžete stáhnout z[zde](https://releases.aspose.com/words/java/) a postupujte podle pokynů k instalaci v dokumentaci.
 
 ### Mohu přizpůsobit formát číslování seznamů?
 Ano, Aspose.Words for Java poskytuje rozsáhlé možnosti přizpůsobení formátů číslování seznamů. Podrobnosti najdete v dokumentaci API.
@@ -233,4 +233,4 @@ Ano, Aspose.Words pro Java můžete nakonfigurovat tak, aby vyhovovala různým 
 Absolutně! Aspose.Words for Java podporuje pokročilé formátování dokumentů, včetně tabulek, obrázků a dalších. Příklady naleznete v dokumentaci.
 
 ### Kde mohu získat dočasnou licenci pro Aspose.Words for Java?
- Můžete získat dočasnou licenci[tady](https://purchase.aspose.com/temporary-license/).
+ Můžete získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).

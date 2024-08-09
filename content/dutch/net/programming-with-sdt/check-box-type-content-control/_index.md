@@ -68,7 +68,7 @@ builder.InsertNode(sdtCheckBox);
 
  Hier maken we een nieuwe`StructuredDocumentTag` object met het type`Checkbox` en plaats het in het document met behulp van de`DocumentBuilder`.
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Ten slotte moeten we ons document in de opgegeven map opslaan.
 
@@ -99,4 +99,4 @@ Ja, Aspose.Words ondersteunt verschillende soorten inhoudsbesturingselementen, w
  Ja, u kunt een gratis proefversie downloaden van de[Aspose-website](https://releases.aspose.com/).
 
 ### Waar kan ik ondersteuning krijgen als ik problemen tegenkom?
- U kunt een bezoek brengen aan de[Aspose-ondersteuningsforum](https://forum.aspose.com/c/words/8) Voor assistentie.
+ U kunt een bezoek brengen aan de[Aspose-ondersteuningsforum](https://forum.aspose.com/c/words/8) voor hulp.

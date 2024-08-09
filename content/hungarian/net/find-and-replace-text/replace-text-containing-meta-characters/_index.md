@@ -9,7 +9,7 @@ url: /hu/net/find-and-replace-text/replace-text-containing-meta-characters/
 ---
 ## Bevezetés
 
-Előfordult már, hogy a Word-dokumentumok szövegcseréinek útvesztőjében ragadt? Ha bólogat a fejével, akkor csukja be, mert egy izgalmas oktatóanyagba merülünk az Aspose.Words for .NET használatával. Ma azzal foglalkozunk, hogyan cseréljük le a metakaraktereket tartalmazó szöveget. Készen áll arra, hogy a dokumentumkezelést minden eddiginél gördülékenyebbé tegye? Kezdjük el!
+Előfordult már, hogy a Word-dokumentumok szövegcseréinek útvesztőjében ragadt? Ha bólogat a fejével, akkor csukja be, mert egy izgalmas oktatóanyagba merülünk az Aspose.Words for .NET használatával. Ma azzal foglalkozunk, hogyan cseréljük le a metakaraktereket tartalmazó szöveget. Készen áll arra, hogy a dokumentumkezelést minden eddiginél gördülékenyebbé tegye? Kezdjük is!
 
 ## Előfeltételek
 
@@ -29,7 +29,7 @@ using Aspose.Words;
 using Aspose.Words.Replacing;
 ```
 
-Most bontsuk le a folyamatot emészthető lépésekre. Kész? Gyerünk!
+Most bontsuk le a folyamatot emészthető lépésekre. Kész? Menjünk!
 
 ## 1. lépés: Állítsa be környezetét
 
@@ -44,7 +44,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
  Ez a kódrészlet inicializálja a dokumentumot, és beállít egy építőt. A`dataDir` a dokumentum alapja.
 
-## 2. lépés: A betűtípus testreszabása és a tartalom hozzáadása
+## 2. lépés: A betűtípus testreszabása és tartalom hozzáadása
 
 Ezután adjunk hozzá szöveget a dokumentumunkhoz. Tekintsd ezt úgy, mintha megírnád a darabod forgatókönyvét.
 
@@ -73,7 +73,7 @@ findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
 
 ## 4. lépés: Cserélje ki a szöveget metakarakterekre
 
-Ez a lépés az, ahol a varázslat megtörténik! Cseréljük a "szakasz" szót, majd egy bekezdéstörést, és adjunk hozzá egy aláhúzást.
+Ez a lépés az, ahol megtörténik a varázslat! Cseréljük a "szakasz" szót, majd egy bekezdéstörést, és adjunk hozzá egy aláhúzást.
 
 ```csharp
 // Kétszer minden bekezdéstörést a "szakasz" szó után, adjon hozzá egyfajta aláhúzást, és tegye középre.

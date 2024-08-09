@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-styles-and-themes/insert-style-separator/
 ---
-## introduzione
+## Introduzione
 
 Quando si lavora con documenti Word a livello di codice utilizzando Aspose.Words per .NET, potrebbe essere necessario gestire meticolosamente gli stili e la formattazione dei documenti. Una di queste attività è l'inserimento di un separatore di stile per distinguere gli stili nel documento. Questa guida ti guiderà attraverso il processo di aggiunta di un separatore di stili di documento, fornendoti un approccio passo passo.
 

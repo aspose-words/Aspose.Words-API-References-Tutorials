@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-table-styles-and-formatting/format-table-and-cell-with-different-borders/
 ---
-## introduzione
+## Introduzione
 
 Hai mai provato a rendere i tuoi documenti Word più professionali personalizzando i bordi di tabelle e celle? In caso contrario, ti aspetta una sorpresa! Questo tutorial ti guiderà attraverso il processo di formattazione di tabelle e celle con bordi diversi utilizzando Aspose.Words per .NET. Immagina di avere il potere di cambiare l'aspetto delle tue tabelle con solo poche righe di codice. Incuriosito? Immergiamoci ed esploriamo come puoi raggiungere questo obiettivo con facilità.
 
@@ -127,7 +127,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDi
 
 ## Conclusione
 
-E il gioco è fatto! Hai appena imparato come formattare tabelle e celle con bordi diversi utilizzando Aspose.Words per .NET. Personalizzando i bordi delle tabelle e l'ombreggiatura delle celle, puoi migliorare in modo significativo l'attrattiva visiva dei tuoi documenti. Quindi vai avanti, sperimenta stili diversi e metti in risalto i tuoi documenti!
+Ed ecco qua! Hai appena imparato come formattare tabelle e celle con bordi diversi utilizzando Aspose.Words per .NET. Personalizzando i bordi delle tabelle e l'ombreggiatura delle celle, puoi migliorare in modo significativo l'attrattiva visiva dei tuoi documenti. Quindi vai avanti, sperimenta stili diversi e metti in risalto i tuoi documenti!
 
 ## Domande frequenti
 

@@ -50,7 +50,7 @@ comparer.compare();
 
 ## Étape 3 : Enregistrez le résultat de la comparaison
 
-Après avoir comparé les documents, vous souhaiterez enregistrer le résultat. Aspose.Words vous permet d'enregistrer le résultat de la comparaison en tant que nouveau document. Voici comment:
+Après avoir comparé les documents, vous souhaiterez enregistrer le résultat. Aspose.Words vous permet d'enregistrer le résultat de la comparaison en tant que nouveau document. Voici comment procéder :
 
 ```java
 // Enregistrez le résultat de la comparaison

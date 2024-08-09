@@ -77,7 +77,7 @@ builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
 builder.Write("Heading 1");
 ```
 
-Itt beállítjuk a`StyleIdentifier` nak nek`Heading1`, amely az előre meghatározott címsorstílust alkalmazza a beszúrni kívánt szövegre.
+Itt beállítjuk a`StyleIdentifier` hogy`Heading1`, amely az előre meghatározott címsorstílust alkalmazza a beszúrni kívánt szövegre.
 
 ## 4. lépés: Helyezzen be egy stíluselválasztót
 

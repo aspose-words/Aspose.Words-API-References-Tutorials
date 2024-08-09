@@ -35,7 +35,7 @@ Voordat we digitale handtekeningen kunnen gaan detecteren, moeten we ons project
 
 ### 1.1 Maak een nieuw project
 
- Open Visual Studio en maak een nieuw Console App-project (.NET Core). Noem maar op`DigitalSignatureDetector`.
+ Open Visual Studio en maak een nieuw Console App-project (.NET Core). Noem het`DigitalSignatureDetector`.
 
 ### 1.2 Aspose.Words voor .NET installeren
 
@@ -91,7 +91,7 @@ Nee, Aspose.Words voor .NET bewaart geen digitale handtekeningen bij het openen 
 
 ### Is er een manier om meerdere digitale handtekeningen op een document te detecteren?
 
- Ja de`HasDigitalSignature` eigenschap kan wijzen op de aanwezigheid van een of meer digitale handtekeningen op het document.
+ Ja, de`HasDigitalSignature` eigenschap kan wijzen op de aanwezigheid van een of meer digitale handtekeningen op het document.
 
 ### Hoe krijg ik een gratis proefversie van Aspose.Words voor .NET?
 

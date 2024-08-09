@@ -15,7 +15,7 @@ Hallo! Haben Sie sich schon einmal in Dokumentenverwaltungsaufgaben verstrickt? 
 
 Bevor wir uns die Hände schmutzig machen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
 
-1.  Aspose.Words für .NET: Wenn Sie es noch nicht getan haben, laden Sie es herunter[Hier](https://releases.aspose.com/words/net/) Sie können auch ein[Kostenlose Testphase](https://releases.aspose.com/) wenn Sie gerade erst anfangen.
+1.  Aspose.Words für .NET: Wenn Sie es noch nicht getan haben, laden Sie es herunter[Hier](https://releases.aspose.com/words/net/) Sie können auch ein[Kostenlose Testversion](https://releases.aspose.com/) wenn Sie gerade erst anfangen.
 2. Entwicklungsumgebung: Visual Studio oder jede andere .NET-Entwicklungsumgebung Ihrer Wahl.
 3. Grundkenntnisse in C#: Sie müssen kein Zauberer sein, aber mit ein wenig Vertrautheit kommen Sie schon weit.
 
@@ -76,7 +76,7 @@ Zu den persönlichen Informationen gehören Autorennamen, Dokumenteigenschaften 
 
 ### Ist Aspose.Words für .NET kostenlos?
 
- Aspose.Words bietet eine[Kostenlose Testphase](https://releases.aspose.com/) damit Sie es testen können, aber Sie müssen eine Lizenz erwerben, um die volle Funktionalität zu erhalten. Schauen Sie sich die[Preisgestaltung](https://purchase.aspose.com/buy) für mehr Details.
+ Aspose.Words bietet eine[Kostenlose Testversion](https://releases.aspose.com/) damit Sie es testen können, aber Sie müssen eine Lizenz erwerben, um die volle Funktionalität zu erhalten. Schauen Sie sich die[Preisgestaltung](https://purchase.aspose.com/buy) für weitere Details.
 
 ### Kann ich Aspose.Words für andere Dokumentformate verwenden?
 
@@ -84,7 +84,7 @@ Auf jeden Fall! Aspose.Words unterstützt eine Vielzahl von Formaten, darunter D
 
 ### Wie erhalte ich Unterstützung, wenn Probleme auftreten?
 
- Sie können Aspose.Words besuchen[Hilfeforum](https://forum.aspose.com/c/words/8) für Hilfe bei allen Problemen oder Fragen, die Sie haben könnten.
+ Sie können Aspose.Words besuchen[Support-Forum](https://forum.aspose.com/c/words/8) für Hilfe bei allen Problemen oder Fragen, die Sie haben könnten.
 
 ### Welche weiteren Funktionen bietet Aspose.Words?
 

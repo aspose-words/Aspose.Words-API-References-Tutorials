@@ -33,7 +33,7 @@ using Aspose.Words.Tables;
 
 ## 第 1 步：載入您的文檔
 
-首先，您需要載入包含要修改的表格的文件。該文件應該已經存在於您的專案目錄中。
+首先，您需要載入包含要修改的表的文件。該文件應該已經存在於您的專案目錄中。
 
 ```csharp
 //文檔目錄的路徑
@@ -80,4 +80,4 @@ Aspose.Words for .NET 主要是為 C# 等 .NET 語言設計的。但是，您可
 是的，Aspose.Words for .NET 允許您從檔案和串流套用授權。您可以在以下位置找到更多信息[文件](https://reference.aspose.com/words/net/).
 
 ### Aspose.Words for .NET 還提供哪些其他功能？  
-Aspose.Words for .NET 提供了廣泛的功能，包括文件產生、操作、轉換和渲染。查看[文件](https://reference.aspose.com/words/net/)更多細節。
+Aspose.Words for .NET 提供了廣泛的功能，包括文件產生、操作、轉換和渲染。查看[文件](https://reference.aspose.com/words/net/)了解更多詳情。

@@ -2,21 +2,21 @@
 title: Dołącz treść słowa sekcji
 linktitle: Dołącz treść słowa sekcji
 second_title: Aspose.Words API do przetwarzania dokumentów
-description: W tym samouczku dowiesz się, jak dodawać zawartość słowną do określonych sekcji dokumentu programu Word za pomocą Aspose.Words dla .NET.
+description: tym samouczku dowiesz się, jak dodawać zawartość słowną do określonych sekcji dokumentu programu Word za pomocą Aspose.Words dla .NET.
 type: docs
 weight: 10
 url: /pl/net/working-with-section/append-section-content/
 ---
 ## Wstęp
 
-No hej! Czy zastanawiałeś się kiedyś, jak programowo manipulować dokumentami programu Word przy użyciu platformy .NET? Jeśli szukasz solidnej biblioteki do obsługi zadań związanych z dokumentami programu Word, najlepszym wyborem będzie Aspose.Words dla .NET. Dzisiaj poprowadzę Cię przez proces dołączania sekcji w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Niezależnie od tego, czy jesteś nowicjuszem, czy doświadczonym programistą, ten samouczek pomoże Ci opanować podstawy i niektóre zaawansowane koncepcje. Zatem zanurzmy się!
+Hej tam! Czy zastanawiałeś się kiedyś, jak programowo manipulować dokumentami programu Word przy użyciu platformy .NET? Jeśli szukasz solidnej biblioteki do obsługi zadań związanych z dokumentami programu Word, najlepszym wyborem będzie Aspose.Words dla .NET. Dzisiaj poprowadzę Cię przez proces dołączania sekcji w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Niezależnie od tego, czy jesteś nowicjuszem, czy doświadczonym programistą, ten samouczek pomoże Ci opanować podstawy i niektóre zaawansowane koncepcje. Zatem zanurzmy się!
 
 ## Warunki wstępne
 
 Zanim zaczniemy, potrzebujesz kilku rzeczy:
 
 1. Podstawowa znajomość języka C#: Nie musisz być ekspertem, ale podstawowa znajomość języka C# będzie pomocna.
-2.  Aspose.Words dla .NET: Można[Pobierz to tutaj](https://releases.aspose.com/words/net/) . Jeśli nie chcesz kupować od razu, możesz zdecydować się na opcję[bezpłatna wersja próbna](https://releases.aspose.com/).
+2.  Aspose.Words dla .NET: Można[pobierz go tutaj](https://releases.aspose.com/words/net/) . Jeśli nie chcesz kupować od razu, możesz zdecydować się na opcję[bezpłatna wersja próbna](https://releases.aspose.com/).
 3. Visual Studio: dowolna wersja powinna działać, ale zalecana jest najnowsza wersja.
 4. .NET Framework: Upewnij się, że masz go zainstalowany na swoim komputerze.
 

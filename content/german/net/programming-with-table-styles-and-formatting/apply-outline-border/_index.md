@@ -117,13 +117,13 @@ Mit diesen Fähigkeiten können Sie die visuelle Darstellung Ihrer Tabellen verb
 ## Häufig gestellte Fragen
 
 ### Kann ich den einzelnen Rändern der Tabelle unterschiedliche Stile zuweisen?  
- Ja, Sie können jedem Rahmen verschiedene Stile und Farben zuweisen, indem Sie die Parameter im`SetBorder` Methode.
+ Ja, Sie können jedem Rahmen verschiedene Stile und Farben zuweisen, indem Sie die Parameter im`SetBorder` Verfahren.
 
 ### Wie kann ich die Breite des Rahmens ändern?  
  Sie können die Breite ändern, indem Sie den dritten Parameter im`SetBorder` Methode. Beispielsweise`1.5` legt eine Breite von 1,5 Punkt fest.
 
 ### Ist es möglich, einzelne Zellen zu schattieren?  
- Ja, Sie können Schattierungen auf einzelne Zellen anwenden, indem Sie auf jede Zelle zugreifen und die`SetShading` Methode.
+ Ja, Sie können Schattierungen auf einzelne Zellen anwenden, indem Sie auf jede Zelle zugreifen und die`SetShading` Verfahren.
 
 ### Kann ich für Ränder und Schattierungen andere Farben verwenden?  
  Absolut! Sie können jede Farbe verwenden, die im`System.Drawing.Color` Klasse.

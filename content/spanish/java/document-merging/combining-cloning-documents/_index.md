@@ -51,7 +51,7 @@ Document doc2 = new Document("document2.docx");
 
 ## Paso 3: combinar documentos
 
-Ahora que tiene cargados sus documentos fuente, es hora de combinarlos en un solo documento.
+Ahora que tiene cargados sus documentos de origen, es hora de combinarlos en un solo documento.
 
 ```java
 // Combinar documentos
@@ -120,7 +120,7 @@ Finalmente, guarde el documento clonado en un archivo.
 clonedDoc.save("cloned_document.docx");
 ```
 
-## Técnicas avanzadas
+## Técnicas Avanzadas
 
 En esta sección, exploraremos técnicas avanzadas para trabajar con Aspose.Words en Java, como el manejo de estructuras de documentos complejas y la aplicación de formatos personalizados.
 

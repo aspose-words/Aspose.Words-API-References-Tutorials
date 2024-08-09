@@ -79,7 +79,7 @@ doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTextInputFormField.docx
 
 ## Conclusion
 
-Et voila! Vous avez inséré avec succès un champ de formulaire de saisie de texte dans un document Word à l'aide d'Aspose.Words pour .NET. Ce n'est que la pointe de l'iceberg. Avec Aspose.Words, vous pouvez automatiser et améliorer vos tâches de traitement de documents d'innombrables façons. De la création de modèles complexes à la génération de formulaires interactifs, les possibilités sont infinies.
+Et voilà ! Vous avez inséré avec succès un champ de formulaire de saisie de texte dans un document Word à l'aide d'Aspose.Words pour .NET. Ce n'est que la pointe de l'iceberg. Avec Aspose.Words, vous pouvez automatiser et améliorer vos tâches de traitement de documents d'innombrables façons. De la création de modèles complexes à la génération de formulaires interactifs, les possibilités sont infinies.
 
 ## FAQ
 

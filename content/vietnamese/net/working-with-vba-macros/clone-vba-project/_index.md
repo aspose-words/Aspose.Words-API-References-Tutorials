@@ -16,10 +16,10 @@ Xin chào các nhà phát triển đồng nghiệp! Bạn đã bao giờ thấy 
 
 Trước khi chúng ta bắt đầu, hãy đảm bảo bạn đã sắp xếp mọi thứ:
 
-1.  Aspose.Words for .NET Library: Bạn sẽ cần phiên bản Aspose.Words mới nhất cho .NET. Nếu bạn chưa có, bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Bạn sẽ cần phiên bản Aspose.Words mới nhất cho .NET. Nếu bạn chưa có, bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Môi trường phát triển .NET như Visual Studio sẽ rất cần thiết để viết và kiểm tra mã của bạn.
 3. Kiến thức cơ bản về C#: Hiểu biết cơ bản về C# sẽ giúp bạn theo dõi các đoạn mã.
-4.  Tài liệu Word mẫu: Có một[Tài liệu văn bản](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm)(.docm) chứa dự án VBA sẵn sàng hoạt động. Bạn có thể tạo của riêng bạn hoặc sử dụng một cái hiện có.
+4.  Tài liệu Word mẫu: Có một[tài liệu Word](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm)(.docm) chứa dự án VBA sẵn sàng hoạt động. Bạn có thể tạo của riêng bạn hoặc sử dụng một cái hiện có.
 
 ## Nhập không gian tên
 
@@ -92,7 +92,7 @@ Dòng này lưu tài liệu mới với dự án VBA được nhân bản dướ
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Bạn vừa thành thạo nghệ thuật sao chép dự án VBA trong tài liệu Word bằng Aspose.Words cho .NET. Thư viện mạnh mẽ này giúp bạn dễ dàng làm việc với các tài liệu Word phức tạp, từ các thao tác văn bản đơn giản đến các dự án VBA phức tạp. Bằng cách làm theo hướng dẫn này, bạn không chỉ học cách sao chép các dự án VBA mà còn đặt nền tảng để khám phá thêm các khả năng to lớn của Aspose.Words.
+Và bạn có nó! Bạn vừa thành thạo nghệ thuật sao chép dự án VBA trong tài liệu Word bằng Aspose.Words cho .NET. Thư viện mạnh mẽ này giúp bạn dễ dàng làm việc với các tài liệu Word phức tạp, từ các thao tác văn bản đơn giản đến các dự án VBA phức tạp. Bằng cách làm theo hướng dẫn này, bạn không chỉ học cách sao chép các dự án VBA mà còn đặt nền tảng để khám phá thêm các khả năng to lớn của Aspose.Words.
 
  Nếu bạn tò mò muốn tìm hiểu sâu hơn, đừng quên xem[Tài liệu API](https://reference.aspose.com/words/net/) . Đối với bất kỳ câu hỏi hoặc hỗ trợ,[diễn đàn hỗ trợ](https://forum.aspose.com/c/words/8) luôn là nơi tuyệt vời để kết nối với các nhà phát triển khác.
 

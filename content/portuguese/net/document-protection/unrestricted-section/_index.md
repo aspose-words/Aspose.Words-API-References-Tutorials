@@ -18,7 +18,7 @@ Antes de entrarmos no âmago da questão, certifique-se de ter tudo o que precis
 -  Aspose.Words for .NET: Se ainda não o fez, você pode[baixe aqui](https://releases.aspose.com/words/net/).
 - Visual Studio: ou qualquer outro IDE compatível com .NET.
 - Compreensão básica de C#: Um pouco de familiaridade com C# o ajudará a avançar rapidamente neste tutorial.
--  Licença Aspose: pegue um[teste grátis](https://releases.aspose.com/) ou obter um[licença temporária](https://purchase.aspose.com/temporary-license/) se você precisar dele para teste.
+-  Licença Aspose: pegue um[teste gratuito](https://releases.aspose.com/) ou obter um[licença temporária](https://purchase.aspose.com/temporary-license/) se você precisar dele para teste.
 
 ## Importar namespaces
 

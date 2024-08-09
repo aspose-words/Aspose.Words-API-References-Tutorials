@@ -84,7 +84,7 @@ DigitalSignatureUtil.Sign(
 
 ## Conclusion
 
-Et voila! Vous avez signé avec succès une ligne de signature existante dans un document Word à l'aide d'Aspose.Words pour .NET. Pas trop dur, non ? Grâce à ces étapes, vous pouvez désormais signer numériquement des documents, ajoutant ainsi une couche supplémentaire d'authenticité et de professionnalisme. Ainsi, la prochaine fois que quelqu’un vous enverra un document à signer, vous saurez exactement quoi faire !
+Et voilà ! Vous avez signé avec succès une ligne de signature existante dans un document Word à l'aide d'Aspose.Words pour .NET. Pas trop dur, non ? Grâce à ces étapes, vous pouvez désormais signer numériquement des documents, ajoutant ainsi une couche supplémentaire d'authenticité et de professionnalisme. Ainsi, la prochaine fois que quelqu’un vous enverra un document à signer, vous saurez exactement quoi faire !
 
 ## FAQ
 

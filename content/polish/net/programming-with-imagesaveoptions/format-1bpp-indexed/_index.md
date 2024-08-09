@@ -9,13 +9,13 @@ url: /pl/net/programming-with-imagesaveoptions/format-1bpp-indexed/
 ---
 ## Wstęp
 
-Czy zastanawiałeś się kiedyś, jak zapisać dokument programu Word jako czarno-biały obraz za pomocą zaledwie kilku linii kodu? Cóż, masz szczęście! Dzisiaj zagłębimy się w małą sztuczkę przy użyciu Aspose.Words dla .NET, która pozwala konwertować dokumenty na obrazy indeksowane 1Bpp. Ten format jest idealny do niektórych rodzajów cyfrowej archiwizacji, drukowania lub gdy trzeba zaoszczędzić miejsce. Podzielimy każdy krok, aby było to tak proste, jak bułka z masłem. Gotowy żeby zacząć? Zanurzmy się!
+Czy zastanawiałeś się kiedyś, jak zapisać dokument programu Word jako czarno-biały obraz za pomocą zaledwie kilku linii kodu? Cóż, masz szczęście! Dzisiaj zagłębimy się w małą sztuczkę przy użyciu Aspose.Words dla .NET, która pozwala konwertować dokumenty na obrazy indeksowane 1Bpp. Ten format jest idealny do niektórych rodzajów cyfrowej archiwizacji, drukowania lub gdy trzeba zaoszczędzić miejsce. Podzielimy każdy krok, aby było to tak proste, jak bułka z masłem. Gotowy, aby zacząć? Zanurzmy się!
 
 ## Warunki wstępne
 
 Zanim ubrudzimy sobie ręce, warto mieć pod ręką kilka rzeczy:
 
--  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę. Możesz[Pobierz to tutaj](https://releases.aspose.com/words/net/).
+-  Aspose.Words dla .NET: Upewnij się, że masz zainstalowaną bibliotekę. Możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
 - Środowisko programistyczne .NET: Visual Studio to dobra opcja, ale możesz używać dowolnego środowiska, w którym czujesz się komfortowo.
 - Podstawowa znajomość języka C#: Nie martw się, uprościmy to, ale odrobina znajomości języka C# będzie pomocna.
 - Dokument programu Word: Przygotuj przykładowy dokument programu Word do konwersji.
@@ -85,7 +85,7 @@ Obraz indeksowany 1 Bpp (1 bit na piksel) to czarno-biały format obrazu, w któ
  Tak, możesz. Zmodyfikuj`PageSet` nieruchomość w`ImageSaveOptions` aby uwzględnić wiele stron lub cały dokument.
 
 ### Czy potrzebuję licencji, aby używać Aspose.Words dla .NET?
- Tak, Aspose.Words dla .NET wymaga licencji dla pełnej funkcjonalności. Możesz dostać[licencja tymczasowa tutaj](https://purchase.aspose.com/temporary-license/).
+ Tak, Aspose.Words dla .NET wymaga licencji dla pełnej funkcjonalności. Możesz zdobyć[licencja tymczasowa tutaj](https://purchase.aspose.com/temporary-license/).
 
 ### Na jakie inne formaty obrazów mogę przekonwertować dokument programu Word?
  Aspose.Words obsługuje różne formaty obrazów, w tym JPEG, BMP i TIFF. Po prostu zmień`SaveFormat` w`ImageSaveOptions`.

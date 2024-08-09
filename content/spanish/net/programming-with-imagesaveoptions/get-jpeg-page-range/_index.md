@@ -15,7 +15,7 @@ Convertir documentos de Word en imágenes puede resultar increíblemente útil, 
 
 Antes de comenzar, necesitará algunas cosas en su lugar:
 
--  Aspose.Words para .NET: asegúrese de tener instalado Aspose.Words para .NET. Puede[descarguelo aqui](https://releases.aspose.com/words/net/).
+-  Aspose.Words para .NET: asegúrese de tener instalado Aspose.Words para .NET. Puede[descárgalo aquí](https://releases.aspose.com/words/net/).
 - Entorno de desarrollo: entorno de desarrollo AC# como Visual Studio.
 - Documento de muestra: un documento de Word con el que trabajar. Puede utilizar cualquier archivo .docx para este tutorial.
 - Conocimientos básicos de C#: familiaridad con la programación en C#.
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options)
  Puede ajustar la calidad del JPEG utilizando el`JpegQuality` propiedad en`ImageSaveOptions`.
 
 ### ¿Puedo guardar en otros formatos de imagen?
- Sí, Aspose.Words admite varios formatos de imagen como PNG, BMP y TIFF. Cambiar el`SaveFormat` en`ImageSaveOptions` respectivamente.
+ Sí, Aspose.Words admite varios formatos de imagen como PNG, BMP y TIFF. cambiar el`SaveFormat` en`ImageSaveOptions` respectivamente.
 
 ### ¿Hay alguna forma de obtener una vista previa de la imagen antes de guardarla?
 Debería implementar un mecanismo de vista previa por separado, ya que Aspose.Words no proporciona una función de vista previa incorporada.

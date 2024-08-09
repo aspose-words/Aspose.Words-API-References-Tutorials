@@ -97,7 +97,7 @@ doc.Save(dataDir + "WorkWithWatermark.AddTextWatermarkWithSpecificOptions.docx")
 
 ### 如何更改水印的颜色？
 
-您可以通过设置`Color`财产在`TextWatermarkOptions`去任何`System.Drawing.Color`价值。
+您可以通过设置`Color`财产在`TextWatermarkOptions`对任何`System.Drawing.Color`价值。
 
 ### 是否可以在文档中添加多个水印？
 

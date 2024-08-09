@@ -9,7 +9,7 @@ url: /pl/net/document-protection/get-protection-type/
 ---
 ## Wstęp
 
-No hej! Czy zastanawiałeś się kiedyś, jak programowo sprawdzić typ ochrony dokumentów programu Word? Niezależnie od tego, czy zabezpieczasz wrażliwe dane, czy po prostu ciekawi Cię status dokumentu, wiedza, jak uzyskać typ ochrony, może być bardzo przydatna. Dzisiaj przejdziemy przez ten proces, korzystając z Aspose.Words dla .NET, potężnej biblioteki, która sprawia, że praca z dokumentami programu Word jest dziecinnie prosta. Zapnij pasy i zanurzmy się!
+Hej tam! Czy zastanawiałeś się kiedyś, jak programowo sprawdzić typ ochrony dokumentów programu Word? Niezależnie od tego, czy zabezpieczasz wrażliwe dane, czy po prostu ciekawi Cię status dokumentu, wiedza, jak uzyskać typ ochrony, może być bardzo przydatna. Dzisiaj przejdziemy przez ten proces, korzystając z Aspose.Words dla .NET, potężnej biblioteki, która sprawia, że praca z dokumentami programu Word jest dziecinnie prosta. Zapnij pasy i zanurzmy się!
 
 ## Warunki wstępne
 

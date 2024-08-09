@@ -2,45 +2,61 @@
 title: Eindnootopties instellen
 linktitle: Eindnootopties instellen
 second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u eindnootopties in Word-documenten instelt met Aspose.Words voor .NET. Stap-voor-stap handleiding met voorbeeldbroncode.
+description: Leer hoe u eindnootopties in Word-documenten instelt met Aspose.Words voor .NET met deze uitgebreide stapsgewijze handleiding.
 type: docs
 weight: 10
 url: /nl/net/working-with-footnote-and-endnote/set-endnote-options/
 ---
+## Invoering
 
-In deze stapsgewijze zelfstudie laten we u zien hoe u Aspose.Words voor .NET kunt gebruiken om eindnootopties in een Word-document in te stellen. We leggen de meegeleverde C#-broncode uit en laten u zien hoe u deze in uw eigen projecten kunt implementeren.
+Wilt u uw Word-documenten verbeteren door eindnoten efficiënt te beheren? Zoek niet verder! In deze zelfstudie begeleiden we u bij het instellen van eindnootopties in Word-documenten met behulp van Aspose.Words voor .NET. Aan het einde van deze handleiding bent u een professional in het aanpassen van eindnoten aan de behoeften van uw document.
 
- Om aan de slag te gaan, moet u ervoor zorgen dat Aspose.Words voor .NET is geïnstalleerd en ingesteld in uw ontwikkelomgeving. Als u dit nog niet hebt gedaan, downloadt en installeert u de bibliotheek van[Aspose.Releases]https://releases.aspose.com/words/net/.
+## Vereisten
 
-## Stap 1: Het documentobject initialiseren
+Voordat u in de zelfstudie duikt, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
 
- Initialiseer eerst de`Document` object door het pad naar uw brondocument op te geven:
+-  Aspose.Words voor .NET: Zorg ervoor dat de Aspose.Words voor .NET-bibliotheek is geïnstalleerd. Je kunt het downloaden van[hier](https://releases.aspose.com/words/net/).
+- Ontwikkelomgeving: Zorg dat u een ontwikkelomgeving hebt opgezet, zoals Visual Studio.
+- Basiskennis van C#: Een fundamenteel begrip van C#-programmeren zal nuttig zijn.
+
+## Naamruimten importeren
+
+Om aan de slag te gaan, moet u de benodigde naamruimten importeren. Deze naamruimten bieden toegang tot de klassen en methoden die nodig zijn voor het manipuleren van Word-documenten.
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Notes;
+```
+
+## Stap 1: Laad het document
+
+ Laten we eerst het document laden waarin we de eindnootopties willen instellen. Wij gebruiken de`Document` klasse uit de Aspose.Words-bibliotheek om dit te bereiken.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-## Stap 2: Initialiseren van het DocumentBuilder-object
+## Stap 2: Initialiseer DocumentBuilder
 
- Initialiseer vervolgens de`DocumentBuilder` object om bewerkingen op het document uit te voeren:
+ Vervolgens initialiseren we de`DocumentBuilder`klas. Deze klasse biedt een eenvoudige manier om inhoud aan het document toe te voegen.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Stap 3: Tekst en eindnoot toevoegen
+## Stap 3: tekst toevoegen en eindnoot invoegen
 
- Gebruik de`Write` werkwijze van de`DocumentBuilder` object om tekst aan het document toe te voegen, en de`InsertFootnote` methode om een eindnoot in te voegen:
+ Laten we nu wat tekst aan het document toevoegen en een eindnoot invoegen. De`InsertFootnote` werkwijze van de`DocumentBuilder` class stelt ons in staat om eindnoten aan het document toe te voegen.
 
 ```csharp
 builder.Write("Some text");
 builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
 ```
 
-## Stap 4: Eindnootopties instellen
+## Stap 4: Eindnootopties openen en instellen
 
- Toegang krijgen tot`EndnoteOptions`eigenschap van het document om de eindnootopties te wijzigen. In dit voorbeeld stellen we de herstartregel in op herstarten op elke pagina en de positie aan het einde van de sectie:
+ Om de eindnootopties aan te passen, hebben we toegang nodig tot de`EndnoteOptions` eigendom van de`Document` klas. We kunnen dan verschillende opties instellen, zoals de herstartregel en positie.
 
 ```csharp
 EndnoteOptions option = doc.EndnoteOptions;
@@ -48,53 +64,31 @@ option.RestartRule = FootnoteNumberingRule.RestartPage;
 option.Position = EndnotePosition.EndOfSection;
 ```
 
-## Stap 5: Het document opslaan
+## Stap 5: Bewaar het document
 
-Sla ten slotte het gewijzigde document op:
+ Laten we ten slotte het document opslaan met de bijgewerkte eindnootopties. De`Save` werkwijze van de`Document` class stelt ons in staat het document in de opgegeven map op te slaan.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 ```
 
-Dat is het! U hebt met succes eindnootopties ingesteld in een Word-document met Aspose.Words voor .NET.
+## Conclusie
 
-### Voorbeeldbroncode voor Set Endnote Options met Aspose.Words voor .NET
+Het instellen van eindnootopties in uw Word-documenten met Aspose.Words voor .NET is een fluitje van een cent met deze eenvoudige stappen. Door de herstartregel en de positie van eindnoten aan te passen, kunt u uw documenten afstemmen op specifieke vereisten. Met Aspose.Words heeft u de mogelijkheid om Word-documenten te manipuleren binnen handbereik.
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";	
-Document doc = new Document(dataDir + "Document.docx");
-DocumentBuilder builder = new DocumentBuilder(doc);
+## Veelgestelde vragen
 
-builder.Write("Some text");
-builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
+### Wat is Aspose.Words voor .NET?
+Aspose.Words voor .NET is een krachtige bibliotheek voor het programmatisch manipuleren van Word-documenten. Hiermee kunnen ontwikkelaars Word-documenten in verschillende formaten maken, wijzigen en converteren.
 
-EndnoteOptions option = doc.EndnoteOptions;
-option.RestartRule = FootnoteNumberingRule.RestartPage;
-option.Position = EndnotePosition.EndOfSection;
+### Kan ik Aspose.Words gratis gebruiken?
+ U kunt Aspose.Words gebruiken met een gratis proefperiode. Voor langdurig gebruik kunt u een licentie aanschaffen bij[hier](https://purchase.aspose.com/buy).
 
-doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
-```
+### Wat zijn eindnoten?
+Eindnoten zijn verwijzingen of notities die aan het einde van een sectie of document worden geplaatst. Ze bieden aanvullende informatie of citaten.
 
-U kunt deze code gerust in uw eigen projecten gebruiken en aanpassen aan uw specifieke vereisten.
+### Hoe pas ik het uiterlijk van eindnoten aan?
+ U kunt eindnootopties, zoals nummering, positie en herstartregels, aanpassen met behulp van de`EndnoteOptions` klasse in Aspose.Words voor .NET.
 
-### Veelgestelde vragen
-
-#### Vraag: Hoe kan ik eindnoten opmaken in Aspose.Words?
-
- A: Om eindnoten op te maken in Aspose.Words, kunt u de`EndnoteOptions` klasse en de`SeparatorNoteTextStyle` eigendom. Met deze eigenschap kunt u de letterstijl, grootte, kleur, enz. voor eindnoten opgeven.
-
-#### Vraag: Is het mogelijk om de nummering van eindnoten in een document aan te passen?
-
- A: Ja, het is mogelijk om de nummering van eindnoten in een document aan te passen. U kunt gebruik maken van de`RestartRule`En`NumberStyle` eigenschappen van de`EndnoteOptions` class om specifieke herstartregels en nummeringsstijlen te definiëren.
-
-#### Vraag: Hoe kan ik eindnoten in een document plaatsen?
-
-A: Om eindnoten in een document te plaatsen, kunt u de`Position` eigendom van de`EndnoteOptions` klas. U kunt opgeven of eindnoten onderaan elke pagina, aan het einde van elke sectie of aan het einde van het document moeten worden geplaatst.
-
-#### Vraag: Kan ik het nummeringsformaat van de eindnoten aanpassen?
-
- A: Ja, u kunt het formaat van de eindnootnummering aanpassen in Aspose.Words. Gebruik de`NumberFormat` eigendom van de`EndnoteOptions` class om het gewenste formaat in te stellen, zoals Arabische cijfers, Romeinse cijfers, letters, enz.
-
-#### Vraag: Is het mogelijk om de eindnootnummering tussen secties van een document voort te zetten?
-
- A: Ja, het is mogelijk om de eindnootnummering tussen secties van een document voort te zetten. Gebruik de`RestartRule` eigendom van de`EndnoteOptions` klasse en stel deze in`RestartContinuous` om de nummering tussen secties door te laten gaan.
+### Waar kan ik meer documentatie vinden over Aspose.Words voor .NET?
+ Gedetailleerde documentatie is beschikbaar op de[Aspose.Words voor .NET-documentatie](https://reference.aspose.com/words/net/) pagina.

@@ -36,7 +36,7 @@ Dividamos el proceso en varios pasos para asegurarnos de que comprenda cada part
 
 ## Paso 1: cargue el documento DOCX
 
- Primero, debes cargar el documento DOCX que deseas convertir. Utilizar el`Document` clase de Aspose.Words para cargar su archivo DOCX.
+ Primero, debes cargar el documento DOCX que deseas convertir. Utilice el`Document` clase de Aspose.Words para cargar su archivo DOCX.
 
 ```csharp
 // La ruta al directorio de documentos.

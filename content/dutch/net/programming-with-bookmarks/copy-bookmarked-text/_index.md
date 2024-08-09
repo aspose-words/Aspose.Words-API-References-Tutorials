@@ -115,7 +115,7 @@ Ja, u kunt meerdere bladwijzers doorlopen en dezelfde methode gebruiken om ze al
  De`Range.Bookmarks` eigendom zal terugkeren`null`Zorg er dus voor dat u deze zaak afhandelt om uitzonderingen te voorkomen.
 
 ### Kan ik de opmaak van de originele bladwijzer behouden?
- Absoluut! Gebruik makend van`ImportFormatMode.KeepSourceFormatting` zorgt ervoor dat de originele opmaak behouden blijft.
+ Absoluut! Gebruiken`ImportFormatMode.KeepSourceFormatting` zorgt ervoor dat de originele opmaak behouden blijft.
 
 ### Is er een limiet aan de grootte van de tekst in de bladwijzer?
 Er is geen specifieke limiet, maar de prestaties kunnen variëren bij extreem grote documenten.

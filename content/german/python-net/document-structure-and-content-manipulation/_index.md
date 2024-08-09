@@ -65,4 +65,4 @@ Erfahren Sie, wie Sie Dokumentabschnitte und -layouts mit Aspose.Words für Pyth
 ### [Visuelle Inhalte mit Textfeldern in Word-Dokumenten verbessern](./document-textboxes/)
 Verbessern Sie die visuelle Darstellung von Dokumenten mit Aspose.Words Python! Erfahren Sie Schritt für Schritt, wie Sie Textfelder in Word-Dokumenten erstellen und anpassen. Verbessern Sie Inhaltslayout, Formatierung und Stil für ansprechende Dokumente.
 ### [Erweiterte Automatisierung mit VBA-Makros in Word-Dokumenten freischalten](./document-vba-macros/)
-Schalten Sie erweiterte Automatisierung in Word-Dokumenten mithilfe der Aspose.Words Python API und VBA-Makros frei. Lernen Sie Schritt für Schritt mit Quellcode und FAQs. Steigern Sie jetzt Ihre Produktivität. Zugriff unter[Verknüpfung].
+Schalten Sie erweiterte Automatisierung in Word-Dokumenten mithilfe der Aspose.Words Python API und VBA-Makros frei. Lernen Sie Schritt für Schritt mit Quellcode und FAQs. Steigern Sie jetzt Ihre Produktivität. Zugriff unter[Link].

@@ -2,88 +2,115 @@
 title: Habilitar Desabilitar Substituição de Fonte
 linktitle: Habilitar Desabilitar Substituição de Fonte
 second_title: API de processamento de documentos Aspose.Words
-description: Neste tutorial, aprenda como ativar ou desativar a substituição de fonte em um documento do Word com Aspose.Words for .NET.
+description: Aprenda como ativar ou desativar a substituição de fontes em documentos do Word usando Aspose.Words for .NET. Garanta que seus documentos tenham aparência consistente em todas as plataformas.
 type: docs
 weight: 10
 url: /pt/net/working-with-fonts/enable-disable-font-substitution/
 ---
-Neste tutorial, orientaremos você sobre como ativar ou desativar a substituição de fonte em um documento do Word ao renderizá-lo usando a biblioteca Aspose.Words para .NET. Ativar ou desativar a substituição de fontes permite controlar se as fontes ausentes serão substituídas automaticamente por uma fonte padrão. Iremos guiá-lo passo a passo para ajudá-lo a entender e implementar o código em seu projeto .NET.
+## Introdução
+
+Você já se viu em uma situação em que as fontes meticulosamente escolhidas em um documento do Word são substituídas quando visualizadas em outro computador? Irritante, certo? Isso acontece devido à substituição de fontes, processo em que o sistema substitui uma fonte ausente por uma disponível. Mas não se preocupe! Com Aspose.Words for .NET, você pode gerenciar e controlar facilmente a substituição de fontes. Neste tutorial, orientaremos você nas etapas para ativar ou desativar a substituição de fontes em seus documentos do Word, garantindo que seus documentos sempre tenham a aparência que você deseja.
 
 ## Pré-requisitos
-Antes de começar, certifique-se de ter os seguintes itens:
-- Conhecimento prático da linguagem de programação C#
-- A biblioteca Aspose.Words para .NET instalada em seu projeto
-- Um documento do Word que você deseja renderizar com ou sem substituição de fonte
 
-## Passo 1: Defina o diretório do documento
- Primeiro, você precisa definir o caminho do diretório para o local do seu documento do Word. Substituir`"YOUR DOCUMENT DIRECTORY"` no código com o caminho apropriado.
+Antes de mergulhar nas etapas, vamos garantir que você tenha tudo o que precisa:
+
+-  Aspose.Words para .NET: Baixe a versão mais recente[aqui](https://releases.aspose.com/words/net/).
+- Visual Studio: qualquer versão com suporte para .NET.
+- Conhecimento básico de C#: Isso o ajudará a acompanhar os exemplos de codificação.
+
+## Importar namespaces
+
+Para começar, certifique-se de ter os namespaces necessários importados em seu projeto. Adicione-os no topo do seu arquivo C#:
 
 ```csharp
-// Caminho para o seu diretório de documentos
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
+using Aspose.Words;
+using Aspose.Words.Fonts;
 ```
 
-## Etapa 2: carregue o documento e defina as configurações de fonte
- A seguir, carregaremos o documento Word que você deseja renderizar e criaremos uma instância do`FontSettings` class para lidar com as configurações de fonte. Definiremos a substituição da fonte padrão especificando o nome da fonte em`DefaultFontName` e desative a substituição de informações de fonte com`Enabled` definido como`false`.
+Agora, vamos dividir o processo em etapas simples e gerenciáveis.
+
+## Etapa 1: configure seu projeto
+
+Primeiro, configure um novo projeto no Visual Studio e adicione uma referência à biblioteca Aspose.Words for .NET. Se ainda não o fez, baixe-o no[Aspor site](https://releases.aspose.com/words/net/).
+
+## Etapa 2: carregue seu documento
+
+Em seguida, carregue o documento com o qual deseja trabalhar. Veja como você faz isso:
 
 ```csharp
-// Carregue o documento
-Document doc = new Document(dataDir + "Rendering.docx");
-
-// Definir configurações de fonte
-FontSettings fontSettings = new FontSettings();
-fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
-fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
-
-// Aplicar as configurações de fonte ao documento
-doc.FontSettings = fontSettings;
-```
-
-## Etapa 3: salve o documento renderizado
-Por fim, salvaremos o documento renderizado, que respeitará as configurações de substituição de fonte definidas.
-
-```csharp
-doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
-```
-
-
-### Exemplo de código-fonte para ativar e desativar substituição de fonte usando Aspose.Words for .NET 
-
-```csharp
-
 // Caminho para o diretório do seu documento
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
-FontSettings fontSettings = new FontSettings();
-fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
-fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
-doc.FontSettings = fontSettings;
-doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
+```
 
+ Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho real para o diretório do seu documento. Este código carrega o documento na memória para que você possa manipulá-lo.
+
+## Etapa 3: definir as configurações de fonte
+
+ Agora, vamos criar um`FontSettings` objeto para gerenciar as configurações de substituição de fonte:
+
+```csharp
+FontSettings fontSettings = new FontSettings();
+```
+
+## Etapa 4: definir a substituição de fonte padrão
+
+Defina a substituição de fonte padrão para uma fonte de sua escolha. Esta fonte será usada se a fonte original não estiver disponível:
+
+```csharp
+fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial";
+```
+
+Neste exemplo, estamos usando Arial como fonte padrão.
+
+## Etapa 5: desative a substituição de informações de fonte
+
+Para desativar a substituição de informações de fonte, o que impede o sistema de substituir fontes ausentes por fontes disponíveis, use o seguinte código:
+
+```csharp
+fontSettings.SubstitutionSettings.FontInfoSubstitution.Enabled = false;
+```
+
+## Etapa 6: aplicar configurações de fonte ao documento
+
+Agora, aplique estas configurações ao seu documento:
+
+```csharp
+doc.FontSettings = fontSettings;
+```
+
+## Etapa 7: salve seu documento
+
+Finalmente, salve seu documento modificado. Você pode salvá-lo em qualquer formato que desejar. Para este tutorial, vamos salvá-lo como PDF:
+
+```csharp
+doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 ```
 
 ## Conclusão
-Neste tutorial, vimos como ativar ou desativar a substituição de fonte em um documento do Word ao renderizá-lo com Aspose.Words for .NET. Ao controlar a substituição de fontes, você pode influenciar como as fontes ausentes são tratadas nos documentos renderizados. Não hesite em usar este recurso para personalizar o gerenciamento de fontes em seus documentos Word.
 
-### Perguntas frequentes
+E aí está! Seguindo essas etapas, você pode controlar facilmente a substituição de fontes em seus documentos do Word usando Aspose.Words for .NET. Isso garante que seus documentos mantenham a aparência pretendida, não importa onde sejam visualizados.
 
-#### P: Como posso ativar a substituição de fonte em um documento do Word com Aspose.Words?
+## Perguntas frequentes
 
-R: Para habilitar a substituição de fontes em um documento do Word com Aspose.Words, você pode usar a API para especificar fontes de substituição a serem usadas quando as fontes necessárias não estiverem disponíveis. Isso garantirá uma visualização consistente do texto, mesmo sem as fontes originais.
+### Posso usar fontes diferentes de Arial para substituição?
 
-#### P: É possível desabilitar a substituição de fonte em um documento do Word com Aspose.Words?
+ Absolutamente! Você pode especificar qualquer fonte disponível em seu sistema alterando o nome da fonte no campo`DefaultFontName` propriedade.
 
-R: Sim, com Aspose.Words você pode desabilitar a substituição de fonte em um documento do Word. Ao usar a API, você pode evitar que o Word substitua as fontes necessárias por outras fontes, o que mantém a aparência original do texto.
+### O que acontece se a fonte padrão especificada não estiver disponível?
 
-#### P: O que acontece quando faltam as fontes necessárias durante a substituição em um documento do Word?
+Se a fonte padrão não estiver disponível, o Aspose.Words usará um mecanismo de fallback do sistema para encontrar uma substituição apropriada.
 
-R: Quando as fontes necessárias estão faltando durante a substituição em um documento do Word, o Aspose.Words pode detectar esse problema e fornecer opções para corrigi-lo. Você pode optar por substituir as fontes ausentes por fontes alternativas ou incluir as fontes ausentes no documento, garantindo a visualização correta.
+### Posso ativar a substituição de fontes novamente após desativá-la?
 
-#### P: Como posso lidar com fontes ausentes ao substituí-las em um documento do Word por Aspose.Words?
+ Sim, você pode alternar o`Enabled` propriedade de`FontInfoSubstitution` de volta para`true` se você deseja ativar a substituição de fontes novamente.
 
-R: Para lidar com fontes ausentes ao substituir um documento do Word por Aspose.Words, você pode usar a API para detectar fontes ausentes e fornecer opções de resolução. Você pode optar por substituir as fontes ausentes por fontes alternativas ou incluir fontes ausentes no documento, dependendo de suas necessidades.
+### Existe uma maneira de verificar quais fontes estão sendo substituídas?
 
-#### P: É importante controlar a substituição de fontes em um documento do Word?
+Sim, o Aspose.Words fornece métodos para registrar e rastrear a substituição de fontes, permitindo que você veja quais fontes estão sendo substituídas.
 
-R: Sim, é importante controlar a substituição de fontes em um documento Word para manter a integridade visual do texto. Ao usar Aspose.Words para ativar ou desativar a substituição de fontes, você pode garantir que as fontes necessárias sejam usadas e evitar problemas com fontes ausentes ou substituídas.
+### Posso usar este método para outros formatos de documento além de DOCX?
+
+Definitivamente! Aspose.Words oferece suporte a vários formatos e você pode aplicar essas configurações de fonte a qualquer formato compatível.

@@ -26,7 +26,7 @@ Genom att behärska dokumentrevision med Aspose.Words för Java kan utvecklare o
 
 ## Handledning för dokumentrevision
 ### [Den ultimata guiden till dokumentrevision](./guide-document-revision/)
-Master dokumentrevision med Aspose.Words för Java! Hantera ändringar effektivt, acceptera/avvisa revisioner och samarbeta sömlöst. Börja nu!
+Master dokumentrevision med Aspose.Words för Java! Hantera ändringar effektivt, acceptera/avvisa revisioner och samarbeta sömlöst. Kom igång nu!
 ### [Spåra och hantera dokumentrevisioner](./tracking-managing-document-revisions/)
 Lär dig hur du spårar och hanterar dokumentrevisioner med Aspose.Words för Java i den här omfattande guiden. Få steg-för-steg-instruktioner och exempel på källkod.
 ### [Jämföra dokumentversioner](./comparing-document-versions/)

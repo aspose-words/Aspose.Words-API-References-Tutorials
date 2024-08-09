@@ -8,13 +8,13 @@ weight: 11
 url: /cs/java/document-revision/comparing-document-versions/
 ---
 
-## Úvod
+## Zavedení
 
 Porovnání dokumentů zahrnuje analýzu dvou nebo více verzí dokumentu za účelem zjištění rozdílů a podobností. Aspose.Words for Java poskytuje nástroje pro efektivní provedení tohoto úkolu. V této příručce vás provedeme celým procesem od nastavení vývojového prostředí až po uložení porovnávaného dokumentu.
 
 ## Nastavení vývojového prostředí
 
-Než se vrhneme na porovnávání dokumentů, musíte nastavit vývojové prostředí. Ujistěte se, že máte nainstalovaný Aspose.Words for Java. Můžete si jej stáhnout z webu[tady](https://releases.aspose.com/words/java/).
+Než se vrhneme na porovnávání dokumentů, musíte nastavit vývojové prostředí. Ujistěte se, že máte nainstalovaný Aspose.Words for Java. Můžete si jej stáhnout z webu[zde](https://releases.aspose.com/words/java/).
 
 ## Načítání dokumentů
 
@@ -89,4 +89,4 @@ Ano, Aspose.Words for Java podporuje různé formáty dokumentů, včetně DOC, 
 
 ### Kde mohu získat přístup k dokumentaci Aspose.Words for Java?
 
-Komplexní dokumentaci k Aspose.Words for Java naleznete na adrese[tady](https://reference.aspose.com/words/java/).
+Komplexní dokumentaci k Aspose.Words for Java naleznete na adrese[zde](https://reference.aspose.com/words/java/).

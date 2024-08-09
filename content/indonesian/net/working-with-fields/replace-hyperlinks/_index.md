@@ -52,7 +52,7 @@ foreach (Field field in doc.Range.Fields)
     {
         FieldHyperlink hyperlink = (FieldHyperlink)field;
         
-        // Periksa apakah hyperlink tersebut bukan tautan lokal (abaikan bookmark).
+        // Periksa apakah hyperlink tersebut bukan link lokal (abaikan bookmark).
         if (hyperlink.SubAddress != null)
             continue;
         

@@ -59,7 +59,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Langkah 3: Konfigurasikan Kompresi Gambar Dasar
 
- Membuat`PdfSaveOptions`objek untuk mengonfigurasi opsi penyimpanan PDF, termasuk kompresi gambar. Mengatur`ImageCompression`properti ke`PdfImageCompression.Jpeg` untuk menggunakan kompresi JPEG untuk gambar.
+ Buat sebuah`PdfSaveOptions`objek untuk mengonfigurasi opsi penyimpanan PDF, termasuk kompresi gambar. Atur`ImageCompression`properti ke`PdfImageCompression.Jpeg` untuk menggunakan kompresi JPEG untuk gambar.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.PdfImageCompression.pdf", saveOpti
 
 ## Langkah 5: Konfigurasikan Kompresi Tingkat Lanjut dengan Kepatuhan PDF/A
 
- Untuk kompresi yang lebih baik lagi, terutama jika Anda harus mematuhi standar PDF/A, Anda dapat mengonfigurasi opsi tambahan. Mengatur`Compliance`properti ke`PdfCompliance.PdfA2u` dan sesuaikan`JpegQuality` Properti.
+ Untuk kompresi yang lebih baik lagi, terutama jika Anda harus mematuhi standar PDF/A, Anda dapat mengonfigurasi opsi tambahan. Atur`Compliance`properti ke`PdfCompliance.PdfA2u` dan sesuaikan`JpegQuality` milik.
 
 ```csharp
 PdfSaveOptions saveOptionsA2U = new PdfSaveOptions

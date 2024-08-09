@@ -45,7 +45,7 @@ doc.save("document_with_watermark.docx");
 
 Yazı tipini, boyutunu, rengini ve dönüşünü ayarlayarak filigranları daha da özelleştirebilirsiniz. Bu esneklik, filigranınızın belgenizin stiliyle kusursuz bir şekilde eşleşmesini sağlar.
 
-## Sayfa ayarı
+## Sayfa Yapısı
 
 ### Sayfa Boyutu ve Yönü
 

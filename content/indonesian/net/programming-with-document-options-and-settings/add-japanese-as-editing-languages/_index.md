@@ -64,7 +64,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Langkah 4: Muat Dokumen
 
-Setelah semuanya siap, saatnya memuat dokumen Anda. Ini adalah dimana keajaiban terjadi!
+Setelah semuanya siap, saatnya memuat dokumen Anda. Di sinilah keajaiban terjadi!
 
 ```csharp
 Document doc = new Document(dataDir + "No default editing language.docx", loadOptions);
@@ -74,7 +74,7 @@ Document doc = new Document(dataDir + "No default editing language.docx", loadOp
 
 ## Langkah 5: Periksa Pengaturan Bahasa
 
- Setelah memuat dokumen, penting untuk memverifikasi apakah pengaturan bahasa diterapkan dengan benar. Anda dapat melakukannya dengan mencentang`LocaleIdFarEast` Properti.
+ Setelah memuat dokumen, penting untuk memverifikasi apakah pengaturan bahasa diterapkan dengan benar. Anda dapat melakukannya dengan mencentang`LocaleIdFarEast` milik.
 
 ```csharp
 int localeIdFarEast = doc.Styles.DefaultFont.LocaleIdFarEast;

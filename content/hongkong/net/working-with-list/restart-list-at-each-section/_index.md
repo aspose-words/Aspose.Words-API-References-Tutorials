@@ -2,101 +2,111 @@
 title: 在每個部分重新啟動列表
 linktitle: 在每個部分重新啟動列表
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 重設 Word 文件中每個部分的編號清單。
+description: 了解如何使用 Aspose.Words for .NET 重新啟動 Word 文件中每個部分的清單。請遵循我們詳細的逐步指南來有效管理清單。
 type: docs
 weight: 10
 url: /zh-hant/net/working-with-list/restart-list-at-each-section/
 ---
+## 介紹
 
-在本逐步教學中，我們將向您展示如何使用 Aspose.Words for .NET 重設 Word 文件中每個部分的編號清單。我們將解釋提供的 C# 原始程式碼並向您展示如何在您自己的專案中實現它。
+創建結構化且組織良好的文件有時感覺就像在解決一個複雜的難題。其中一個難題是有效管理列表，特別是當您希望它們在每個部分重新啟動時。透過 Aspose.Words for .NET，您可以無縫地完成此任務。讓我們深入了解如何使用 Aspose.Words for .NET 在 Word 文件的每個部分重新啟動清單。
 
-首先，請確保您已在開發環境中安裝並設定了 Aspose.Words for .NET。如果您還沒有安裝該庫，請從以下位置下載並安裝該庫：[Aspose.Releases]https://releases.aspose.com/words/net/。
+## 先決條件
 
-## 第 1 步：建立文件和列表
+在我們開始之前，請確保您具備以下條件：
 
-首先，建立一個新文件並新增預設編號清單：
+1.  Aspose.Words for .NET：從以下位置下載並安裝最新版本[Aspose 發布](https://releases.aspose.com/words/net/)頁。
+2. .NET 環境：設定安裝了 .NET 的開發環境。
+3. 對 C# 的基本了解：建議熟悉 C# 程式語言。
+4.  Aspose 許可證：您可以選擇[臨時執照](https://purchase.aspose.com/temporary-license/)如果你沒有的話。
+
+## 導入命名空間
+
+在編寫程式碼之前，請確保導入必要的命名空間：
+
+```csharp
+using System;
+using Aspose.Words;
+using Aspose.Words.Lists;
+```
+
+現在，讓我們將該過程分解為多個步驟，以便於遵循。
+
+## 步驟1：初始化文檔
+
+首先，您需要建立一個新的文檔實例。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
-
-doc.Lists.Add(ListTemplate.NumberDefault);
-
-List list = doc.Lists[0];
-list. IsRestartAtEachSection = true;
 ```
 
-## 第 2 步：將項目新增到清單中
+## 第 2 步：新增編號列表
 
-然後使用一個`DocumentBuilder`將項目新增到清單中。您可以使用循環將多個項目新增至清單：
+接下來，將編號清單新增至文件。此清單將遵循預設的編號格式。
+
+```csharp
+doc.Lists.Add(ListTemplate.NumberDefault);
+```
+
+## 步驟 3：存取清單並設定重啟屬性
+
+檢索您剛剛建立的清單並設定其`IsRestartAtEachSection`財產給`true`。這可確保清單在每個新部分重新編號。
+
+```csharp
+List list = doc.Lists[0];
+list.IsRestartAtEachSection = true;
+```
+
+## 步驟 4：建立文件產生器並關聯列表
+
+創建一個`DocumentBuilder`將內容插入文件並將其與清單關聯。
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.ListFormat.List = list;
+```
 
+## 步驟 5：新增清單項目並插入分節符
+
+現在，將項目新增至清單。為了說明重新啟動功能，我們將在一定數量的項目後插入分節符。
+
+```csharp
 for (int i = 1; i < 45; i++)
 {
-     builder.Writeln($"List item {i}");
+    builder.Writeln($"List item {i}");
 
-     if (i == 15)
-         builder.InsertBreak(BreakType.SectionBreakNewPage);
+    if (i == 15)
+        builder.InsertBreak(BreakType.SectionBreakNewPage);
 }
 ```
 
-在此範例中，我們在第 15 個清單項目之後插入分節符號以說明重新編號。
+## 第 6 步：儲存文檔
 
-## 第三步：儲存修改後的文檔
-
-最後儲存修改後的文件：
+最後，使用適當的選項儲存文件以確保合規性。
 
 ```csharp
 OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Transitional };
-
 doc.Save(dataDir + "ResetListAtEachSection.docx", options);
 ```
 
-所以 ！您已使用 Aspose.Words for .NET 成功重置了 Word 文件中每個部分的編號清單。
+## 結論
 
-### 用於重置每個部分的清單的範例原始程式碼
+現在你就得到它了！透過執行這些步驟，您可以使用 Aspose.Words for .NET 輕鬆地重新啟動 Word 文件中每個部分的清單。此功能對於建立結構良好的文件非常有用，這些文件需要具有自己的清單編號的單獨部分。透過 Aspose.Words，處理此類任務變得輕而易舉，讓您專注於製作高品質的內容。
 
-```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY";
-Document doc = new Document();
+## 常見問題解答
 
-doc.Lists.Add(ListTemplate.NumberDefault);
+### 我可以在每個部分為不同的清單類型重新啟動清單嗎？
+是的，Aspose.Words for .NET 可讓您重新啟動各種清單類型，包括項目符號清單和編號清單。
 
-List list = doc.Lists[0];
-list. IsRestartAtEachSection = true;
+### 如果我想自訂編號格式怎麼辦？
+您可以透過修改來自訂編號格式`ListTemplate`建立清單時的屬性。
 
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.ListFormat.List = list;
+### 清單中的項目數量有限制嗎？
+不，使用 Aspose.Words for .NET 的清單中的項目數量沒有具體限制。
 
-for (int i = 1; i < 45; i++)
-{
-	 builder.Writeln($"List item {i}");
+### 我可以在 PDF 等其他文件格式中使用此功能嗎？
+是的，您可以使用 Aspose.Words 將 Word 文件轉換為 PDF 等其他格式，同時保留清單結構。
 
-	 if (i == 15)
-		 builder.InsertBreak(BreakType.SectionBreakNewPage);
-}
-
-OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Transitional };
-
-doc.Save(dataDir + "ResetListAtEachSection.docx", options);
-
-```
-
-請隨意在您自己的專案中使用此程式碼並對其進行修改以滿足您的特定需求。
-
-### 常見問題解答
-
-#### Q：如何在 Aspose.Words 的每個部分重新啟動清單？
-
-答：要在 Aspose.Words 中的每個部分重新啟動列表，您需要建立一個實例`List`類別並為其指派一個編號清單。然後您可以使用`List.IsRestartAtEachSection`屬性來指定應在每個部分重新開始編號。您可以將此清單與文件的一個或多個部分相關聯，以便在每個部分正確地重新開始編號。
-
-#### Q：我可以在 Aspose.Words 中自訂清單的編號格式嗎？
-
-答：是的，您可以在 Aspose.Words 中自訂清單的編號格式。這`List`類別為此提供了幾個屬性，例如`List.ListFormat.ListType`, `List.ListLevels`, `ListLevel.NumberFormat`等等。
-
-#### Q：是否可以為 Aspose.Words 中的編號清單新增其他層級？
-
-答：是的，可以在 Aspose.Words 中的編號清單中新增其他等級。這`ListLevel`類別允許您為清單的每個層級設定格式屬性。您可以設定前綴、後綴、對齊、縮排等選項。
+### 如何獲得 Aspose.Words for .NET 的免費試用版？
+您可以從以下網站獲得免費試用[Aspose 發布](https://releases.aspose.com/)頁。

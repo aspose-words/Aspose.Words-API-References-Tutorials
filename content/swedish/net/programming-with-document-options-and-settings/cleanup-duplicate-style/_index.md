@@ -71,7 +71,7 @@ CleanupOptions options = new CleanupOptions { DuplicateStyle = true };
 
 Med rensningsalternativen inställda är det dags att rensa upp de där irriterande dubblettstilarna.
 
- Åberopa rengöringsmetoden: Använd`Cleanup` metod för`Document` klass, som klarar av saneringsalternativen.
+ Åberopa rengöringsmetoden: Använd`Cleanup` metod för`Document` klass, och klarar av saneringsalternativen.
 
 ```csharp
 doc.Cleanup(options);
@@ -84,7 +84,7 @@ Låt oss se resultatet av vår saneringsoperation genom att räkna stilarna igen
  Skriv ut antalet nya stilar: Använd`Console.WriteLine` för att visa det uppdaterade antalet stilar.
 
 ```csharp
-// Antalet stilar efter Cleanup minskade.
+// Antalet stilar efter rengöring minskades.
 Console.WriteLine(doc.Styles.Count);
 ```
 

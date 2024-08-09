@@ -109,7 +109,7 @@ Und da haben Sie es! Mit nur wenigen Codezeilen können Sie mit Aspose.Words fü
  Ja, Sie können zusätzliche Formatierungen auf die Kopfzeilen anwenden, indem Sie die Eigenschaften von`ParagraphFormat`, `RowFormat` , Und`CellFormat`.
 
 ### Ist es möglich, der Tabelle weitere Spalten hinzuzufügen?
- Absolut! Sie können so viele Spalten wie nötig hinzufügen, indem Sie weitere Zellen in den`InsertCell` Methode.
+ Absolut! Sie können so viele Spalten wie nötig hinzufügen, indem Sie weitere Zellen in den`InsertCell` Verfahren.
 
 ### Wie kann ich dafür sorgen, dass sich andere Zeilen auf den Folgeseiten wiederholen?
  Um eine Zeile zu wiederholen, setzen Sie die`RowFormat.HeadingFormat`Eigentum an`true` für diese bestimmte Zeile.
@@ -118,4 +118,4 @@ Und da haben Sie es! Mit nur wenigen Codezeilen können Sie mit Aspose.Words fü
  Ja, Sie können vorhandene Tabellen ändern, indem Sie auf sie zugreifen über`Document` Objekt und Anwenden einer ähnlichen Formatierung.
 
 ### Welche anderen Tabellenformatierungsoptionen sind in Aspose.Words für .NET verfügbar?
- Aspose.Words für .NET bietet eine breite Palette an Optionen zur Tabellenformatierung, einschließlich Zellzusammenführung, Rahmeneinstellungen und Tabellenausrichtung. Schauen Sie sich die[Dokumentation](https://reference.aspose.com/words/net/) für mehr Details.
+ Aspose.Words für .NET bietet eine breite Palette an Optionen zur Tabellenformatierung, einschließlich Zellzusammenführung, Rahmeneinstellungen und Tabellenausrichtung. Schauen Sie sich die[Dokumentation](https://reference.aspose.com/words/net/) für weitere Details.

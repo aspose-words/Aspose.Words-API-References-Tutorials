@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-sdt/clear-contents-control/
 ---
-## Úvod
+## Zavedení
 
 Jste připraveni ponořit se do světa Aspose.Words pro .NET? Dnes se podíváme na to, jak vymazat ovládání obsahu v dokumentu aplikace Word pomocí této výkonné knihovny. Začněme s jednoduchým průvodcem krok za krokem!
 
@@ -15,7 +15,7 @@ Jste připraveni ponořit se do světa Aspose.Words pro .NET? Dnes se podíváme
 
 Než začneme, ujistěte se, že máte následující předpoklady:
 
-1.  Aspose.Words for .NET: Stáhněte si knihovnu z[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Stáhněte si knihovnu z[zde](https://releases.aspose.com/words/net/).
 2. .NET Framework: Ujistěte se, že máte na svém počítači nainstalované rozhraní .NET Framework.
 3. IDE: Integrované vývojové prostředí jako Visual Studio.
 4. Dokument: Dokument aplikace Word se strukturovanými značkami dokumentu.
@@ -86,7 +86,7 @@ Nakonec upravený dokument uložte.
 
 ## Závěr
 
-Gratulujeme! Úspěšně jste vymazali řízení obsahu v dokumentu aplikace Word pomocí Aspose.Words for .NET. Díky této výkonné knihovně je manipulace s dokumenty aplikace Word hračkou. Pomocí těchto kroků můžete snadno spravovat tagy strukturovaných dokumentů ve svých projektech.
+Gratuluji! Úspěšně jste vymazali řízení obsahu v dokumentu aplikace Word pomocí Aspose.Words for .NET. Díky této výkonné knihovně je manipulace s dokumenty aplikace Word hračkou. Pomocí těchto kroků můžete snadno spravovat tagy strukturovaných dokumentů ve svých projektech.
 
 ## FAQ
 
@@ -96,11 +96,11 @@ Aspose.Words for .NET je výkonná knihovna pro práci s dokumenty Wordu program
 
 ### Mohu používat Aspose.Words zdarma?
 
- Aspose.Words nabízí bezplatnou zkušební verzi, kterou si můžete stáhnout[tady](https://releases.aspose.com/).
+ Aspose.Words nabízí bezplatnou zkušební verzi, kterou si můžete stáhnout[zde](https://releases.aspose.com/).
 
 ### Jak získám podporu pro Aspose.Words?
 
- Můžete získat podporu od komunity Aspose[tady](https://forum.aspose.com/c/words/8).
+ Můžete získat podporu od komunity Aspose[zde](https://forum.aspose.com/c/words/8).
 
 ### Co jsou to štítky strukturovaných dokumentů?
 
@@ -108,4 +108,4 @@ Značky strukturovaného dokumentu (SDT) jsou ovládací prvky obsahu v dokument
 
 ### Kde najdu dokumentaci k Aspose.Words?
 
- Dokumentace je k dispozici[tady](https://reference.aspose.com/words/net/).
+ Dokumentace je k dispozici[zde](https://reference.aspose.com/words/net/).

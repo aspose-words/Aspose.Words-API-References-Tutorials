@@ -10,7 +10,7 @@ url: /hu/java/document-loading-and-saving/advance-html-documents-saving-options/
 
 Ebben az oktatóanyagban megvizsgáljuk az Aspose.Words for Java által biztosított speciális HTML-dokumentummentési lehetőségeket. Az Aspose.Words egy hatékony Java API Word-dokumentumokkal való munkavégzéshez, és funkciók széles skáláját kínálja a dokumentumok kezeléséhez és konvertálásához.
 
-## 1. Bemutatkozás
+## 1. Bevezetés
 Az Aspose.Words for Java lehetővé teszi, hogy programozottan dolgozzon Word dokumentumokkal. Ebben az oktatóanyagban a speciális HTML-dokumentummentési lehetőségekre összpontosítunk, amelyek lehetővé teszik a Word-dokumentumok HTML-formátumba való konvertálásának szabályozását.
 
 ## 2. Oda-vissza információk exportálása
@@ -26,7 +26,7 @@ public void exportRoundtripInformation() throws Exception {
 ```
 
 ## 3. Betűtípusok exportálása Base64-ként
- A ... val`exportFontsAsBase64` módszerrel a dokumentumban használt betűtípusokat Base64-kódolású adatként exportálhatja a HTML-be. Ez biztosítja, hogy a HTML-ábrázolás megőrizze ugyanazokat a betűstílusokat, mint az eredeti Word-dokumentum.
+ A`exportFontsAsBase64` módszerrel a dokumentumban használt betűtípusokat Base64-kódolású adatként exportálhatja a HTML-be. Ez biztosítja, hogy a HTML-ábrázolás megőrizze ugyanazokat a betűstílusokat, mint az eredeti Word-dokumentum.
 
 ```java
 @Test
@@ -75,7 +75,7 @@ public void convertMetafilesToSvg() throws Exception {
 ```
 
 ## 7. Adja hozzá a CSS-osztálynév előtagot
- A ... val`addCssClassNamePrefix` módszerrel előtagot adhat a CSS-osztályok nevéhez az exportált HTML-ben. Ez segít megelőzni az ütközéseket a meglévő stílusokkal.
+ A`addCssClassNamePrefix` módszerrel előtagot adhat a CSS-osztályok nevéhez az exportált HTML-ben. Ez segít megelőzni az ütközéseket a meglévő stílusokkal.
 
 ```java
 @Test

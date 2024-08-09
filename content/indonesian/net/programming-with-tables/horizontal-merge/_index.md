@@ -44,7 +44,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Cuplikan kode ini menyiapkan dokumen baru dan menyiapkan`DocumentBuilder` untuk aksi.
+ Cuplikan kode ini menyiapkan dokumen baru dan menyiapkan`DocumentBuilder` untuk tindakan.
 
 ## Langkah 2: Memasukkan Sel Pertama
 
@@ -106,7 +106,7 @@ Dan itu dia! Anda baru saja menguasai seni menggabungkan sel secara horizontal d
 Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang membuat, mengedit, dan memanipulasi dokumen Word secara terprogram dalam aplikasi .NET.
 
 ### Bisakah saya menggabungkan sel secara vertikal dengan Aspose.Words untuk .NET?
- Ya, Anda juga dapat menggabungkan sel secara vertikal dengan menggunakan`CellFormat.VerticalMerge` Properti.
+ Ya, Anda juga dapat menggabungkan sel secara vertikal dengan menggunakan`CellFormat.VerticalMerge` milik.
 
 ### Apakah Aspose.Words untuk .NET gratis untuk digunakan?
  Aspose.Words untuk .NET menawarkan uji coba gratis, tetapi untuk fungsionalitas penuh, Anda perlu membeli lisensi. Anda bisa mendapatkan lisensi sementara[Di Sini](https://purchase.aspose.com/temporary-license/).

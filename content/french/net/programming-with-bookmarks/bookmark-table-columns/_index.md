@@ -9,7 +9,7 @@ url: /fr/net/programming-with-bookmarks/bookmark-table-columns/
 ---
 ## Introduction
 
-Si vous souhaitez améliorer vos compétences en automatisation de documents, alors vous allez vous régaler. Ce didacticiel vous guidera tout au long du processus de mise en signet des colonnes d'un tableau dans un document Word à l'aide d'Aspose.Words pour .NET. Prêt à plonger ? Commençons!
+Si vous souhaitez améliorer vos compétences en automatisation de documents, alors vous allez vous régaler. Ce didacticiel vous guidera tout au long du processus de mise en signet des colonnes d'un tableau dans un document Word à l'aide d'Aspose.Words pour .NET. Prêt à plonger ? Commençons !
 
 ## Conditions préalables
 
@@ -107,7 +107,7 @@ foreach (Bookmark bookmark in doc.Range.Bookmarks)
 
 ## Conclusion
 
-Et voila! Vous avez réussi à mettre en favoris des colonnes de tableau dans un document Word à l'aide d'Aspose.Words pour .NET. Ce processus aide non seulement à organiser votre document, mais facilite également la navigation et la manipulation de sections spécifiques. La création de favoris est une fonctionnalité puissante qui peut améliorer considérablement vos capacités de gestion de documents.
+Et voilà ! Vous avez réussi à mettre en favoris des colonnes de tableau dans un document Word à l'aide d'Aspose.Words pour .NET. Ce processus aide non seulement à organiser votre document, mais facilite également la navigation et la manipulation de sections spécifiques. La création de favoris est une fonctionnalité puissante qui peut améliorer considérablement vos capacités de gestion de documents.
 
 ## FAQ
 
@@ -121,7 +121,7 @@ Aspose.Words for .NET est une bibliothèque puissante permettant de travailler a
 Oui, Aspose.Words for .NET peut être utilisé avec n'importe quel langage pris en charge par .NET, notamment C#, VB.NET et F#.
 
 ### Comment puis-je obtenir de l’assistance pour Aspose.Words pour .NET ?
- Vous pouvez obtenir le soutien de la communauté Aspose et des experts en visitant le[forum d'entraide](https://forum.aspose.com/c/words/8).
+ Vous pouvez obtenir le soutien de la communauté Aspose et des experts en visitant le[forum d'assistance](https://forum.aspose.com/c/words/8).
 
 ### Existe-t-il une version d’essai d’Aspose.Words pour .NET disponible ?
  Oui, vous pouvez bénéficier d'un essai gratuit auprès de[ici](https://releases.aspose.com/).

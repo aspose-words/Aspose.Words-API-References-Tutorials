@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-bookmarks/access-bookmarks/
 ---
-## introduzione
+## Introduzione
 
 Nell'era digitale di oggi, automatizzare le attività di elaborazione dei documenti è un must. Sia che tu abbia a che fare con grandi serie di documenti o che tu abbia semplicemente bisogno di semplificare il tuo flusso di lavoro, capire come manipolare i documenti di Word a livello di codice può farti risparmiare un sacco di tempo. Un aspetto essenziale di ciò è l'accesso ai segnalibri all'interno di un documento di Word. Questa guida ti guiderà attraverso il processo di accesso ai segnalibri in un documento Word utilizzando Aspose.Words per .NET. Quindi, tuffiamoci e ti aggiorniamo!
 

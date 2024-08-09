@@ -215,7 +215,7 @@ doc.save("path/to/your/document.docx");
 
 ## 第10步：移動遊標
 
-您可以使用各種方法控製文件中的遊標位置，例如`moveToParagraph`, `moveToCell`， 和更多。這是一個例子：
+您可以使用各種方法控製文件中的遊標位置，例如`moveToParagraph`, `moveToCell`，等等。這是一個例子：
 
 ```java
 Document doc = new Document();
@@ -310,7 +310,7 @@ builder.writeln("This is a formatted paragraph.");
 
 ### Q：如何將遊標移到文件中的特定位置？
 
-答：您可以使用以下方法控制遊標位置`moveToParagraph`, `moveToCell`， 和更多。這是一個例子：
+答：您可以使用以下方法控制遊標位置`moveToParagraph`, `moveToCell`，等等。這是一個例子：
 
 ```java
 Document doc = new Document();

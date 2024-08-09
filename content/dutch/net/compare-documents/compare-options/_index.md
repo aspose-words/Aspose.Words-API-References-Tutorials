@@ -58,7 +58,7 @@ Document docB = docA.Clone();
 In dit fragment:
 - We specificeren de map waar onze documenten zijn opgeslagen.
 - We laden het eerste document (`docA`).
--  Wij klonen`docA` maken`docB`. Op deze manier hebben we twee identieke documenten om mee te werken.
+-  Wij klonen`docA` creëren`docB`. Op deze manier hebben we twee identieke documenten om mee te werken.
 
 ## Stap 3: Vergelijkingsopties configureren
 

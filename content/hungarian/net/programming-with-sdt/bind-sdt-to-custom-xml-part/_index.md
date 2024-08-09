@@ -93,7 +93,7 @@ Ez a parancs elmenti a dokumentumot a kötött SDT-vel a kijelölt könyvtárba.
 
 ## Következtetés
 
-Gratulálunk! Sikeresen kötött egy SDT-t egy egyéni XML-részhez az Aspose.Words for .NET használatával. Ez a hatékony funkció lehetővé teszi dinamikus dokumentumok létrehozását, amelyek egyszerűen frissíthetők új adatokkal az XML-tartalom egyszerű módosításával. Akár jelentéseket készít, akár sablonokat hoz létre, vagy automatizálja a dokumentum-munkafolyamatokat, az Aspose.Words for .NET olyan eszközöket kínál, amelyekkel megkönnyítheti és hatékonyabbá teheti feladatait.
+Gratulálok! Sikeresen kötött egy SDT-t egy egyéni XML-részhez az Aspose.Words for .NET használatával. Ez a hatékony funkció lehetővé teszi dinamikus dokumentumok létrehozását, amelyek egyszerűen frissíthetők új adatokkal az XML-tartalom egyszerű módosításával. Akár jelentéseket készít, akár sablonokat hoz létre, vagy automatizálja a dokumentum-munkafolyamatokat, az Aspose.Words for .NET olyan eszközöket kínál, amelyekkel megkönnyítheti és hatékonyabbá teheti feladatait.
 
 ## GYIK
 

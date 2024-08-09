@@ -165,7 +165,7 @@ builder.endTable();
 doc.save(outPath + "WorkingWithMarkdown.CreateMarkdownDocument.md");
 ```
 
-## συμπέρασμα
+## Σύναψη
 
 Σε αυτό το σεμινάριο, καλύψαμε τα βασικά της χρήσης Markdown στο Aspose.Words για Java. Έχετε μάθει πώς να ρυθμίζετε το περιβάλλον σας, να εφαρμόζετε στυλ, να προσθέτετε πίνακες και να αποθηκεύετε το έγγραφο Markdown. Με αυτή τη γνώση, μπορείτε να αρχίσετε να χρησιμοποιείτε το Aspose.Words για Java για να δημιουργήσετε έγγραφα Markdown αποτελεσματικά.
 
@@ -177,7 +177,7 @@ doc.save(outPath + "WorkingWithMarkdown.CreateMarkdownDocument.md");
 ### Μπορώ να χρησιμοποιήσω το Aspose.Words για Java για να μετατρέψω έγγραφα Markdown σε Word; 
    Ναι, μπορείτε να χρησιμοποιήσετε το Aspose.Words για Java για να μετατρέψετε έγγραφα Markdown σε έγγραφα Word και αντίστροφα.
 
-### Είναι δωρεάν η χρήση του Aspose.Words για Java; 
+### Είναι το Aspose.Words για Java δωρεάν στη χρήση; 
     Το Aspose.Words για Java είναι ένα εμπορικό προϊόν και απαιτείται άδεια χρήσης για τη χρήση. Μπορείτε να αποκτήσετε άδεια από[εδώ](https://purchase.aspose.com/buy).
 
 ### Υπάρχουν διαθέσιμα σεμινάρια ή τεκμηρίωση για το Aspose.Words για Java; 

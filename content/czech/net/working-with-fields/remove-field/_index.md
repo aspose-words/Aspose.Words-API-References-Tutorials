@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/working-with-fields/remove-field/
 ---
-## Úvod
+## Zavedení
 
 Zasekli jste se někdy při pokusu o odstranění nežádoucích polí z dokumentů aplikace Word? Pokud pracujete s Aspose.Words pro .NET, máte štěstí! V tomto tutoriálu se ponoříme hluboko do světa odstraňování polí. Ať už uklízíte dokument nebo jen potřebujete trochu uklidit, provedu vás procesem krok za krokem. Tak se připoutejte a můžeme začít!
 
@@ -15,7 +15,7 @@ Zasekli jste se někdy při pokusu o odstranění nežádoucích polí z dokumen
 
 Než se vrhneme na to, co potřebujete, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET: Ujistěte se, že jste si jej stáhli a nainstalovali. Pokud ne, vezměte si to[tady](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Ujistěte se, že jste si jej stáhli a nainstalovali. Pokud ne, vezměte si to[zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Jakékoli vývojové prostředí .NET, jako je Visual Studio.
 3. Základní znalost C#: Tento tutoriál předpokládá, že máte základní znalosti C#.
 

@@ -56,7 +56,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- Létrehozunk egy példányt`PdfSaveOptions` és állítsa be a`Dml3DEffectsRenderingMode` nak nek`Advanced`. Ez arra utasítja az Aspose.Words-t, hogy speciális beállításokkal jelenítse meg a 3D-s effektusokat, biztosítva, hogy azok a PDF-ben a lehető leglenyűgözőbbek legyenek.
+ Létrehozunk egy példányt`PdfSaveOptions` és állítsa be a`Dml3DEffectsRenderingMode` hogy`Advanced`. Ez arra utasítja az Aspose.Words-t, hogy speciális beállításokkal jelenítse meg a 3D-s effektusokat, biztosítva, hogy azok a PDF-ben a lehető leglenyűgözőbbek legyenek.
 
 ## 3. lépés: Mentse el a dokumentumot PDF formátumban
 
@@ -66,11 +66,11 @@ Végül a megadott mentési beállításokkal PDF formátumban mentjük a dokume
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.Dml3DEffectsRendering.pdf", saveOptions);
 ```
 
- Használjuk a`Save` módszere a`Document` osztályban a Word dokumentumot PDF formátumban mentheti. A korábban beállított mentési beállítások paraméterként kerülnek átadásra, hogy biztosítsák a 3D effektusok megfelelő megjelenítését.
+ Használjuk a`Save` módszere a`Document` osztályba a Word dokumentum PDF formátumban történő mentéséhez. A korábban beállított mentési beállítások paraméterként kerülnek átadásra, hogy biztosítsák a 3D effektusok megfelelő megjelenítését.
 
 ## Következtetés
 
-Gratulálunk! Sikeresen megjelenítette a 3D DML-effektusokat egy PDF-dokumentumban az Aspose.Words for .NET használatával. Ezeket az egyszerű lépéseket követve a fejlett 3D-s effektusokkal rendelkező Word-dokumentumokat lenyűgöző PDF-fájlokká alakíthatja, így dokumentumait vonzóbbá és látványosabbá teheti. Az Aspose.Words ezen hatékony funkciója jelentősen javíthatja a dokumentumok megjelenítési minőségét.
+Gratulálok! Sikeresen megjelenítette a 3D DML-effektusokat egy PDF-dokumentumban az Aspose.Words for .NET használatával. Ezeket az egyszerű lépéseket követve a fejlett 3D-s effektusokkal rendelkező Word-dokumentumokat lenyűgöző PDF-fájlokká alakíthatja, így dokumentumait vonzóbbá és látványosabbá teheti. Az Aspose.Words ezen hatékony funkciója jelentősen javíthatja a dokumentumok megjelenítési minőségét.
 
 ## GYIK
 

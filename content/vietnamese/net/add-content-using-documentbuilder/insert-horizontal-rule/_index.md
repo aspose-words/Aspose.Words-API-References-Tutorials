@@ -9,13 +9,13 @@ url: /vi/net/add-content-using-documentbuilder/insert-horizontal-rule/
 ---
 ## Giới thiệu
 
-Xin chào các nhà phát triển đồng nghiệp! Bạn đã bao giờ thấy mình đang tập trung vào một dự án tài liệu Word và nghĩ: "Trời ạ, tôi thực sự cần phải chèn một đường kẻ ngang vào đây để chia nhỏ mọi thứ" chưa? Cũng đoán những gì? Bạn may mắn! Trong hướng dẫn hôm nay, chúng ta sẽ tìm hiểu cách chèn thước ngang vào tài liệu Word bằng Aspose.Words cho .NET. Đây không chỉ là một hướng dẫn thông thường—nó có rất nhiều bước chi tiết, những lời giải thích hấp dẫn và một chút thú vị. Vì vậy, hãy thắt dây an toàn và sẵn sàng trở thành chuyên gia xử lý Aspose.Words cho .NET!
+Xin chào các nhà phát triển đồng nghiệp! Bạn đã bao giờ thấy mình đang tập trung vào một dự án tài liệu Word và nghĩ: "Trời ạ, tôi thực sự cần phải chèn một đường kẻ ngang vào đây để chia nhỏ mọi thứ" chưa? Vâng, đoán xem? Bạn thật may mắn! Trong hướng dẫn hôm nay, chúng ta sẽ tìm hiểu cách chèn thước ngang vào tài liệu Word bằng Aspose.Words cho .NET. Đây không chỉ là một hướng dẫn thông thường—nó có rất nhiều bước chi tiết, những lời giải thích hấp dẫn và một chút thú vị. Vì vậy, hãy thắt dây an toàn và sẵn sàng trở thành chuyên gia xử lý Aspose.Words cho .NET!
 
 ## Điều kiện tiên quyết
 
 Trước khi chúng ta đi sâu vào vấn đề chi tiết, hãy đảm bảo bạn có mọi thứ bạn cần để bắt đầu. Dưới đây là danh sách kiểm tra nhanh:
 
-1.  Aspose.Words for .NET: Đảm bảo bạn có phiên bản mới nhất. Bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Đảm bảo bạn có phiên bản mới nhất. bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Bất kỳ IDE nào hỗ trợ .NET, chẳng hạn như Visual Studio.
 3. Kiến thức cơ bản về C#: Làm quen với lập trình C# sẽ giúp bài hướng dẫn này trôi chảy hơn.
 4. Thư mục Tài liệu: Bạn sẽ cần một thư mục nơi bạn có thể lưu tài liệu Word của mình.
@@ -97,7 +97,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.docx");
 ```
 
-Và bạn có nó rồi đấy! Bạn đã chèn thành công thước ngang vào tài liệu Word bằng Aspose.Words for .NET.
+Và bạn có nó! Bạn đã chèn thành công thước ngang vào tài liệu Word bằng Aspose.Words for .NET.
 
 ## Phần kết luận
 
@@ -113,7 +113,7 @@ Aspose.Words for .NET là một thư viện mạnh mẽ cho phép các nhà phá
 
 ### Làm cách nào để bắt đầu với Aspose.Words cho .NET?
 
- Bạn có thể bắt đầu bằng cách tải xuống thư viện từ[trang mạng](https://releases.aspose.com/words/net/) và thêm nó vào dự án .NET của bạn.
+ Bạn có thể bắt đầu bằng cách tải xuống thư viện từ[trang web](https://releases.aspose.com/words/net/) và thêm nó vào dự án .NET của bạn.
 
 ### Tôi có thể sử dụng Aspose.Words miễn phí không?
 
@@ -121,7 +121,7 @@ Aspose.Words for .NET là một thư viện mạnh mẽ cho phép các nhà phá
 
 ### Tôi có thể tìm thêm hướng dẫn về Aspose.Words cho .NET ở đâu?
 
- Các[Tài liệu Aspose.Words](https://reference.aspose.com/words/net/) là một nơi tuyệt vời để tìm các hướng dẫn và ví dụ chi tiết.
+ các[Tài liệu Aspose.Words](https://reference.aspose.com/words/net/) là một nơi tuyệt vời để tìm các hướng dẫn và ví dụ chi tiết.
 
 ### Làm cách nào tôi có thể nhận được hỗ trợ nếu gặp sự cố?
 

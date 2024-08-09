@@ -103,4 +103,4 @@ Ja, Aspose.Words unterstützt verschiedene Formate, sodass Sie Dokumente von For
 Auf jeden Fall! Integrieren Sie diesen Code in Ihre Anwendungen oder Skripte, um den Konvertierungsprozess als Teil Ihrer Dokumentenverwaltungs-Workflows zu automatisieren.
 
 ### Wo finde ich weitere Hilfe, wenn ich auf Probleme stoße?
- Besuche den[Aspose Support Forum](https://forum.aspose.com/c/words/8) für Community-Hilfe und -Support im Zusammenhang mit Aspose.Words.
+ Besuchen Sie die[Aspose Support Forum](https://forum.aspose.com/c/words/8) für Community-Hilfe und -Support im Zusammenhang mit Aspose.Words.

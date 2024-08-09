@@ -74,7 +74,7 @@ In dit voorbeeld voegen we een MERGEFIELD in, dat doorgaans wordt gebruikt voor 
 
 ### Sla het document op
 
-Nadat we het veld hebben ingevoegd, moeten we ons document opslaan. Hier is hoe:
+Nadat we het veld hebben ingevoegd, moeten we ons document opslaan. Hier ziet u hoe:
 
 ```csharp
 doc.Save(dataDir + "InsertionField.docx");
@@ -88,7 +88,7 @@ Gefeliciteerd! U hebt zojuist geleerd hoe u een veld in een Word-document kunt i
 
 ## Veelgestelde vragen
 
-### Kan ik verschillende typen velden invoegen met Aspose.Words voor .NET?  
+### Kan ik verschillende soorten velden invoegen met Aspose.Words voor .NET?  
 Absoluut! Aspose.Words ondersteunt een breed scala aan velden, waaronder MERGEFIELD, IF, INCLUDETEXT en meer.
 
 ### Hoe kan ik de velden opmaken die in mijn document zijn ingevoegd?  

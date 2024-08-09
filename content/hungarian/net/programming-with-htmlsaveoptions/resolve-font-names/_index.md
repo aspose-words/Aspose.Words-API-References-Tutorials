@@ -9,7 +9,7 @@ url: /hu/net/programming-with-htmlsaveoptions/resolve-font-names/
 ---
 ## Bevezetés
 
-Szia kódolótárs! Ha valaha is fontproblémákkal küszködött a Word-dokumentumok HTML formátumban történő mentésekor, nincs egyedül. A betűtípusok bonyolultak lehetnek, de ne aggódjon; Fedezlek. Ma azt vizsgáljuk meg, hogyan lehet feloldani a betűtípusneveket a Word-dokumentumokban az Aspose.Words for .NET használatával. Ez az útmutató lépésről lépésre végigvezeti a folyamaton, biztosítva, hogy a betűtípusok HTML formátumban megfelelően nézzenek ki.
+Szia kódolótárs! Ha valaha is fontproblémákkal küszködött a Word-dokumentumok HTML formátumban történő mentésekor, nincs egyedül. A betűtípusok bonyolultak lehetnek, de ne aggódjon; Megkaptam a hátad. Ma azt vizsgáljuk meg, hogyan lehet feloldani a betűtípusneveket a Word-dokumentumokban az Aspose.Words for .NET használatával. Ez az útmutató lépésről lépésre végigvezeti a folyamaton, biztosítva, hogy a betűtípusok HTML formátumban megfelelően nézzenek ki.
 
 ## Előfeltételek
 
@@ -67,7 +67,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Html)
 ```
 
 Magyarázat:
- Létrehozunk egy példányt`HtmlSaveOptions` val vel`SaveFormat.Html` . A`PrettyFormat` opció olvashatóbbá teszi a HTML kimenetet, és`ResolveFontNames` biztosítja a betűtípusnevek feloldását.
+ Létrehozunk egy példányt`HtmlSaveOptions` -vel`SaveFormat.Html` . A`PrettyFormat` opció olvashatóbbá teszi a HTML kimenetet, és`ResolveFontNames` biztosítja a betűtípusnevek feloldását.
 
 ## 4. lépés: A dokumentum mentése HTML-ként
 
@@ -96,7 +96,7 @@ Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi a fejl
  Igen, de ennek lesznek bizonyos korlátai. A teljes funkcionalitás érdekében licencet vásárolhat[itt](https://purchase.aspose.com/buy) vagy ideiglenes engedélyt szerezni[itt](https://purchase.aspose.com/temporary-license/).
 
 ### Miért nem jelennek meg megfelelően a betűtípusaim a HTML-ben?
- Ez akkor fordulhat elő, ha a betűtípusok nincsenek megfelelően feloldva az átalakítás során. Használata`ResolveFontNames = true` ban ben`HtmlSaveOptions` segíthet a probléma megoldásában.
+ Ez akkor fordulhat elő, ha a betűtípusok nincsenek megfelelően feloldva az átalakítás során. Használata`ResolveFontNames = true` be`HtmlSaveOptions` segíthet a probléma megoldásában.
 
 ### Hol kaphatok támogatást az Aspose.Words for .NET-hez?
  Támogatást kaphat a[Aspose.Words támogatási fórum](https://forum.aspose.com/c/words/8).

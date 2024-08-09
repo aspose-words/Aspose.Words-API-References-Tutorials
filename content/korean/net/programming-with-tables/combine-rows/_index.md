@@ -19,7 +19,7 @@ url: /ko/net/programming-with-tables/combine-rows/
 2. 개발 환경: Visual Studio 또는 기타 .NET 호환 IDE.
 3. C# 기본 지식: C#을 이해하면 도움이 됩니다.
 
- 아직 .NET용 Aspose.Words가 없다면,[무료 시험판](https://releases.aspose.com/) 아니면 사세요[여기](https://purchase.aspose.com/buy) . 질문이 있으신 경우,[지원 포럼](https://forum.aspose.com/c/words/8) 시작하기 좋은 곳입니다.
+ 아직 .NET용 Aspose.Words가 없다면,[무료 평가판](https://releases.aspose.com/) 아니면 사세요[여기](https://purchase.aspose.com/buy) . 질문이 있으신 경우,[지원 포럼](https://forum.aspose.com/c/words/8) 시작하기 좋은 곳입니다.
 
 ## 네임스페이스 가져오기
 
@@ -47,7 +47,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 
 ## 2단계: 테이블 식별
 
- 다음으로 결합할 테이블을 식별해야 합니다. Aspose.Words를 사용하면 다음을 사용하여 문서에서 테이블을 가져올 수 있습니다.`GetChild` 방법. 방법은 다음과 같습니다.
+ 다음으로 결합하려는 테이블을 식별해야 합니다. Aspose.Words를 사용하면 다음을 사용하여 문서에서 테이블을 가져올 수 있습니다.`GetChild` 방법. 방법은 다음과 같습니다.
 
 ```csharp
 Table firstTable = (Table) doc.GetChild(NodeType.Table, 0, true);
@@ -90,7 +90,7 @@ doc.Save(dataDir + "WorkingWithTables.CombineRows.docx");
 
 여러 테이블의 행을 하나로 결합하면 문서 처리 작업을 크게 단순화할 수 있습니다. .NET용 Aspose.Words를 사용하면 이 작업이 간단하고 효율적이 됩니다. 이 단계별 가이드를 따르면 테이블을 쉽게 병합하고 작업 흐름을 간소화할 수 있습니다.
 
-더 많은 정보가 필요하시거나 문의사항이 있으신 경우,[Aspose.Words 문서](https://reference.aspose.com/words/net/) 훌륭한 자원입니다. 구매 옵션을 탐색할 수도 있습니다.[여기](https://purchase.aspose.com/buy) 아니면[임시 면허증](https://purchase.aspose.com/temporary-license/) 시험용.
+더 많은 정보가 필요하시거나 문의사항이 있으신 경우,[Aspose.Words 문서](https://reference.aspose.com/words/net/) 훌륭한 자원입니다. 구매 옵션을 탐색할 수도 있습니다.[여기](https://purchase.aspose.com/buy) 아니면[임시 면허증](https://purchase.aspose.com/temporary-license/) 테스트용.
 
 ## FAQ
 

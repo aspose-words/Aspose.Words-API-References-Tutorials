@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/add-content-using-documentbuilder/insert-horizontal-rule/
 ---
-## introduzione
+## Introduzione
 
 Ehi, colleghi sviluppatori! Ti sei mai trovato immerso fino alle ginocchia in un progetto di documento Word e hai pensato: "Amico, ho davvero bisogno di inserire una regola orizzontale qui per spezzare le cose"? Beh, indovina un po'? Sei fortunato! Nel tutorial di oggi, approfondiremo come inserire una regola orizzontale in un documento Word utilizzando Aspose.Words per .NET. Questo non è un tutorial qualunque: è ricco di passaggi dettagliati, spiegazioni accattivanti e un pizzico di divertimento. Quindi, allacciati le cinture e preparati a diventare un professionista nella gestione di Aspose.Words per .NET!
 
@@ -97,7 +97,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHorizontalRule.docx");
 ```
 
-E il gioco è fatto! Hai inserito con successo una regola orizzontale in un documento Word utilizzando Aspose.Words per .NET.
+Ed ecco qua! Hai inserito con successo una regola orizzontale in un documento Word utilizzando Aspose.Words per .NET.
 
 ## Conclusione
 

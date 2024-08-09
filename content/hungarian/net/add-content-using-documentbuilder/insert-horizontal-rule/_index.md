@@ -15,7 +15,7 @@ Sziasztok, fejlesztő kollégák! Előfordult már, hogy térdig merült egy Wor
 
 Mielőtt belemerülnénk az apróságokba, győződjünk meg arról, hogy mindennel rendelkezünk, ami az induláshoz szükséges. Íme egy gyors ellenőrző lista:
 
-1.  Aspose.Words for .NET: Győződjön meg arról, hogy a legújabb verzióval rendelkezik. tudsz[töltse le itt](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Győződjön meg arról, hogy a legújabb verzióval rendelkezik. Tudod[töltse le itt](https://releases.aspose.com/words/net/).
 2. Fejlesztői környezet: Bármely IDE, amely támogatja a .NET-et, például a Visual Studio.
 3. A C# alapismeretei: A C# programozás ismerete simábbá teszi ezt az oktatóanyagot.
 4. Dokumentumkönyvtár: Szüksége lesz egy könyvtárra, ahová elmentheti Word-dokumentumait.

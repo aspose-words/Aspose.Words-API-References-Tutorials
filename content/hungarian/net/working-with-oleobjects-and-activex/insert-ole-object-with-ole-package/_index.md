@@ -2,140 +2,103 @@
 title: Ole objektum beszúrása a Wordbe Ole csomaggal
 linktitle: Ole objektum beszúrása a Wordbe Ole csomaggal
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan szúrhat be egy OLE-objektumot OLE-csomaggal egy dokumentumba az Aspose.Words for .NET használatával.
+description: Ismerje meg, hogyan illeszthet be OLE objektumokat Word dokumentumokba az Aspose.Words for .NET használatával. Kövesse részletes, lépésenkénti útmutatónkat a fájlok zökkenőmentes beágyazásához.
 type: docs
 weight: 10
 url: /hu/net/working-with-oleobjects-and-activex/insert-ole-object-with-ole-package/
 ---
+## Bevezetés
 
-Az alábbiakban egy lépésről lépésre bemutatjuk a C# forráskódot, amely bemutatja, hogyan lehet OLE-objektumot beszúrni a Wordbe egy OLE-csomaggal az Aspose.Words for .NET használatával.
+Ha valaha is be akart ágyazni egy fájlt egy Word-dokumentumba, akkor jó helyen jár. Legyen szó ZIP-fájlról, Excel-lapról vagy bármilyen más fájltípusról, hihetetlenül hasznos lehet, ha közvetlenül a Word-dokumentumba ágyazza be. Tekintsd úgy, mintha lenne egy titkos rekesz az iratodban, ahol mindenféle kincset elrejthetsz. Ma pedig végig fogjuk járni, hogyan kell ezt megtenni az Aspose.Words for .NET használatával. Készen állsz arra, hogy Word varázslóvá válj? Merüljünk el!
 
-## 1. lépés: Importálja a szükséges referenciákat
-Mielőtt elkezdené, győződjön meg arról, hogy importálta az Aspose.Words for .NET használatához szükséges hivatkozásokat a projektbe. Ez magában foglalja az Aspose.Words könyvtár importálását és a szükséges névterek hozzáadását a forrásfájlhoz.
+## Előfeltételek
+
+Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik az alábbiakkal:
+
+1. Aspose.Words for .NET: Ha még nem tette meg, töltse le innen[itt](https://releases.aspose.com/words/net/).
+2. Fejlesztői környezet: Visual Studio vagy bármely más .NET fejlesztői környezet.
+3. C# alapismeretei: Nem kell szakértőnek lenned, de a C# ismerete segíthet.
+4. Dokumentumkönyvtár: Egy mappa, ahol dokumentumokat tárolhat és visszakereshet.
+
+## Névterek importálása
+
+Először is tegyük rendbe a névtereinket. A következő névtereket kell belefoglalnia a projektbe:
 
 ```csharp
+using System;
+using System.IO;
 using Aspose.Words;
 using Aspose.Words.Drawing;
-using System.IO;
 ```
 
-## 2. lépés: Hozzon létre egy új dokumentumot és dokumentumgenerátort
- Ebben a lépésben egy új dokumentumot hozunk létre a`Document` osztályt és egy dokumentumkészítőt a`DocumentBuilder` osztály.
+Bontsuk ezt falatnyi lépésekre, így könnyen követhető.
+
+## 1. lépés: Állítsa be a dokumentumot
+
+Képzeld el, hogy művész vagy üres vászonnal. Először is szükségünk van az üres vásznunkra, amely a Word dokumentumunk. Így állíthatja be:
 
 ```csharp
+// A dokumentumkönyvtár elérési útja
+string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 3. lépés: Szúrjon be egy OLE-objektumot egy OLE-csomaggal
- Használja a Dokumentumgenerátort`InsertOleObject`módszer egy OLE-csomaggal rendelkező OLE objektum dokumentumba való beillesztésére. Adja meg az adatfolyamot, az objektum típusát, a megjelenítési beállításokat és az egyéb szükséges beállításokat.
+Ez a kód inicializál egy új Word-dokumentumot, és beállít egy DocumentBuilder-t, amellyel tartalmat illesztünk be a dokumentumunkba.
+
+## 2. lépés: Olvassa el az Ole objektumot
+
+Ezután olvassuk el a beágyazni kívánt fájlt. Gondoljon erre úgy, mint amikor felveszi azt a kincset, amelyet el szeretne rejteni a titkos rekeszében:
 
 ```csharp
-byte[] bs = File.ReadAllBytes(MyDir + "Zip file.zip");
+byte[] bs = File.ReadAllBytes(dataDir + "Zip file.zip");
+```
+
+Ez a sor beolvassa az összes bájtot a ZIP-fájlból, és egy bájttömbben tárolja azokat.
+
+## 3. lépés: Helyezze be az Ole objektumot
+
+Most jön a varázslatos rész. A fájlt beágyazzuk a Word dokumentumunkba:
+
+```csharp
 using (Stream stream = new MemoryStream(bs))
 {
-     Shape shape = builder.InsertOleObject(stream, "Package", true, null);
-     OlePackage olePackage = shape.OleFormat.OlePackage;
-     olePackage.FileName = "filename.zip";
-     olePackage.DisplayName = "displayname.zip";
+    Shape shape = builder.InsertOleObject(stream, "Package", true, null);
+    OlePackage olePackage = shape.OleFormat.OlePackage;
+    olePackage.FileName = "filename.zip";
+    olePackage.DisplayName = "displayname.zip";
 }
 ```
+
+ Itt létrehozunk egy memóriafolyamot a bájttömbből, és használjuk a`InsertOleObject` módszerrel beágyazhatja a dokumentumba. Beállítjuk a beágyazott objektum fájlnevét és megjelenítési nevét is.
 
 ## 4. lépés: Mentse el a dokumentumot
- Használja a dokumentumot`Save` módszerrel mentheti a dokumentumot fájlba.
+
+Végül mentsük meg remekművünket:
 
 ```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
+doc.Save(dataDir + "WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
 ```
 
-### Minta forráskód egy OLE-objektum beszúrásához OLE-csomaggal az Aspose.Words for .NET-hez
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-byte[] bs = File.ReadAllBytes(MyDir + "Zip file.zip");
-using (Stream stream = new MemoryStream(bs))
-{
-     Shape shape = builder.InsertOleObject(stream, "Package", true, null);
-     OlePackage olePackage = shape.OleFormat.OlePackage;
-     olePackage.FileName = "filename.zip";
-     olePackage.DisplayName = "displayname.zip";
-}
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
-```
-
-Ez egy teljes kódminta egy OLE objektum beszúrásához az Aspose.Words for .NET OLE csomaggal. Ügyeljen arra, hogy importálja a szükséges hivatkozásokat, és kövesse a korábban leírt lépéseket a kód projektbe való integrálásához.
+Ezzel elmenti a dokumentumot a beágyazott fájllal a megadott könyvtárba.
 
 ## Következtetés
 
-Végezetül, végignéztünk egy lépésről lépésre bemutatott útmutatón, amellyel az Aspose.Words for .NET használatával OLE-objektumot illeszthetünk be egy Word-dokumentumba egy OLE-csomaggal.
+És megvan! Sikeresen beágyazott egy OLE objektumot egy Word dokumentumba az Aspose.Words for .NET használatával. Ez olyan, mintha egy rejtett gyöngyszemet adna a dokumentumba, amely bármikor leleplezhető. Ez a technika hihetetlenül hasznos lehet számos alkalmazáshoz, a műszaki dokumentációtól a dinamikus jelentésekig. 
 
-Ha követi ezeket a lépéseket, az Aspose.Words for .NET segítségével sikeresen beillesztheti az OLE-csomagokat tartalmazó OLE-objektumokat Word-dokumentumaiba. Ügyeljen arra, hogy importálja a szükséges referenciákat, és gondosan kövesse az utasításokat a kívánt eredmény elérése érdekében.
+## GYIK
 
-### GYIK az ole objektum beszúrásához a Wordbe az ole csomaggal
+### Beágyazhatok más fájltípusokat ezzel a módszerrel?
+Igen, beágyazhat különféle fájltípusokat, például Excel-lapokat, PDF-eket és képeket.
 
-#### K: Milyen hitelesítő adatokat kell importálnom az Aspose.Words for .NET használatához?
+### Szükségem van engedélyre az Aspose.Words használatához?
+ Igen, érvényes jogosítvány kell. Kaphatsz a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/) értékeléshez.
 
-V: Az Aspose.Words for .NET használatához importálnia kell a következő hivatkozásokat:
+### Hogyan szabhatom testre az OLE objektum megjelenített nevét?
+ Beállíthatja a`DisplayName` tulajdona a`OlePackage` testreszabni.
 
-```csharp
-using Aspose.Words;
-using Aspose.Words.Drawing;
-using System.IO;
-```
+### Az Aspose.Words kompatibilis a .NET Core-al?
+Igen, az Aspose.Words támogatja a .NET-keretrendszert és a .NET Core-t is.
 
-#### K: Hogyan lehet új dokumentumot és dokumentumgenerátort létrehozni?
-
- V: Új dokumentumot hozhat létre a`Document` osztályt és egy dokumentumkészítőt a`DocumentBuilder` osztály, az alábbiak szerint:
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-#### K: Hogyan lehet beszúrni egy OLE-objektumot OLE-csomaggal a dokumentumba?
-
- V: Használja a`InsertOleObject` a dokumentumkészítő módszere (`DocumentBuilder`) egy OLE-csomaggal rendelkező OLE objektum beszúrásához a dokumentumba. Adja meg az adatfolyamot, az objektum típusát, a megjelenítési beállításokat és az egyéb szükséges beállításokat. Íme egy példa:
-
-```csharp
-byte[] bs = File.ReadAllBytes(MyDir + "File_zip.zip");
-using (Stream stream = new MemoryStream(bs))
-{
-      Shape shape = builder.InsertOleObject(stream, "Package", true, null);
-      OlePackage olePackage = shape.OleFormat.OlePackage;
-      olePackage.FileName = "file_name.zip";
-      olePackage.DisplayName = "display_name.zip";
-}
-```
-
-#### K: Hogyan lehet menteni a dokumentumot?
-
- V: Használja a dokumentumot`Save`módszerrel mentheti a dokumentumot fájlba. Íme egy példa:
-
-```csharp
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
-```
-
-#### K: Tudna mutatni egy teljes példát egy OLE objektum beszúrására az Aspose.Words for .NET OLE csomaggal?
-
-V: Íme egy teljes mintakód egy OLE-objektum beszúrásához egy OLE-csomaggal az Aspose.Words for .NET használatával. Ügyeljen arra, hogy importálja a szükséges hivatkozásokat, és kövesse a korábban leírt lépéseket a kód projektbe való integrálásához:
-
-```csharp
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-
-byte[] bs = File.ReadAllBytes(MyDir + "File_zip.zip");
-using (Stream stream = new MemoryStream(bs))
-{
-      Shape shape = builder.InsertOleObject(stream, "Package", true, null);
-      OlePackage olePackage = shape.OleFormat.OlePackage;
-      olePackage.FileName = "file_name.zip";
-      olePackage.DisplayName = "display_name.zip";
-}
-
-doc.Save("Path_to_your_directory/WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackage.docx");
-```
-
-Ezzel az oktatóanyagunk egy OLE-csomaggal rendelkező OLE-objektum Word-dokumentumba történő beszúrásáról szóló oktatóanyagunk befejeződik az Aspose.Words for .NET használatával. Nyugodtan importálja a szükséges hivatkozásokat, és kövesse a leírt lépéseket a kód projektbe való integrálásához. Ha további kérdése van, forduljon hozzánk bizalommal.
+### Szerkeszthetem a beágyazott OLE objektumot a Word dokumentumban?
+Nem, az OLE objektumot nem szerkesztheti közvetlenül a Wordben. Meg kell nyitnia a natív alkalmazásban.

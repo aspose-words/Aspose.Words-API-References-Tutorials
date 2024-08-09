@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-pdfsaveoptions/downsampling-images/
 ---
-## introduzione
+## Introduzione
 
 PDF sono un punto fermo nel mondo digitale, utilizzati per qualsiasi cosa, dalla condivisione di documenti alla creazione di eBook. Tuttavia, le loro dimensioni a volte possono rappresentare un ostacolo, soprattutto quando si ha a che fare con contenuti ricchi di immagini. È qui che entra in gioco il downsampling delle immagini. Riducendo la risoluzione delle immagini all'interno del PDF, puoi ridurre significativamente le dimensioni del file senza compromettere troppo la qualità. In questo tutorial, esamineremo i passaggi per raggiungere questo obiettivo utilizzando Aspose.Words per .NET.
 
@@ -70,7 +70,7 @@ In questo passaggio finale, salviamo il documento come PDF nella stessa director
 
 ## Conclusione
 
-il gioco è fatto! Hai ridotto con successo le dimensioni del tuo PDF riducendo le immagini utilizzando Aspose.Words per .NET. Ciò non solo rende i tuoi PDF più gestibili, ma aiuta anche a caricare e scaricare più velocemente ed esperienze di visualizzazione più fluide.
+Ed ecco qua! Hai ridotto con successo le dimensioni del tuo PDF riducendo le immagini utilizzando Aspose.Words per .NET. Ciò non solo rende i tuoi PDF più gestibili, ma aiuta anche a caricare e scaricare più velocemente ed esperienze di visualizzazione più fluide.
 
 ## Domande frequenti
 

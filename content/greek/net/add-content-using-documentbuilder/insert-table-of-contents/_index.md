@@ -33,7 +33,7 @@ using Aspose.Words.Tables;
 
 ## Βήμα 1: Αρχικοποιήστε το Aspose.Words Document και DocumentBuilder
 
- Αρχικά, αρχικοποιήστε ένα νέο Aspose.Words`Document` αντικείμενο και α`DocumentBuilder` για να δουλέψω με:
+ Αρχικά, αρχικοποιήστε ένα νέο Aspose.Words`Document` αντικείμενο και α`DocumentBuilder` να εργαστείτε με:
 
 ```csharp
 // Αρχικοποιήστε το Document και το DocumentBuilder
@@ -108,7 +108,7 @@ string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
 doc.Save(dataDir + "InsertTableOfContentsUsingAsposeWords.docx");
 ```
 
-## συμπέρασμα
+## Σύναψη
 
 Η προσθήκη πίνακα περιεχομένων χρησιμοποιώντας το Aspose.Words για .NET είναι απλή και βελτιώνει σημαντικά τη χρηστικότητα των εγγράφων σας. Ακολουθώντας αυτά τα βήματα, μπορείτε να οργανώσετε και να πλοηγηθείτε αποτελεσματικά σε πολύπλοκα έγγραφα.
 

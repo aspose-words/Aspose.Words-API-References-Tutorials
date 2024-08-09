@@ -15,7 +15,7 @@ Khi nói đến việc xử lý các tệp PDF trong các ứng dụng .NET, Asp
 
 Trước khi chúng ta bắt đầu, có một số điều bạn cần:
 
-1. Aspose.Words for .NET: Đảm bảo bạn có thư viện Aspose.Words. Nếu bạn chưa có nó, bạn có thể[tải về tại đây](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Đảm bảo bạn có thư viện Aspose.Words. Nếu bạn chưa có nó, bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Thiết lập môi trường phát triển của bạn với Visual Studio hoặc bất kỳ IDE ưa thích nào khác.
 3.  Giấy phép: Trong khi Aspose.Words cung cấp bản dùng thử miễn phí, hãy cân nhắc việc nhận[giấy phép tạm thời](https://purchase.aspose.com/temporary-license/) cho đầy đủ chức năng mà không có giới hạn.
 

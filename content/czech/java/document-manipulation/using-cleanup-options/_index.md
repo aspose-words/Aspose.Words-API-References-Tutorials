@@ -14,7 +14,7 @@ tomto tutoriálu prozkoumáme, jak používat možnosti čištění v Aspose.Wor
 
 ## Předpoklady
 
- Než začneme, ujistěte se, že máte do projektu integrovanou knihovnu Aspose.Words for Java. Můžete si jej stáhnout z[tady](https://releases.aspose.com/words/java/).
+ Než začneme, ujistěte se, že máte do projektu integrovanou knihovnu Aspose.Words for Java. Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/java/).
 
 ## Krok 1: Odstranění prázdných odstavců
 

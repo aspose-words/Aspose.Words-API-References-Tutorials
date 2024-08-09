@@ -127,7 +127,7 @@ Aspose.Words for .NETは、`PdfSaveOptions`クラスでは、JPEG 圧縮を含�
 JPEG 品質設定を高くすると画像品質は向上しますが、ファイル サイズが大きくなります。一方、品質設定を低くするとファイル サイズは小さくなりますが、画像の鮮明さに影響する可能性があります。
 
 ### Aspose.Words for .NET の詳細情報はどこで入手できますか?
- Aspose.Words for .NETの詳細については、[ドキュメンテーション](https://reference.aspose.com/words/net/), [サポート](https://forum.aspose.com/c/words/8) 、 そして[ダウンロード](https://releases.aspose.com/words/net/)ページ。
+ Aspose.Words for .NETの詳細については、[ドキュメント](https://reference.aspose.com/words/net/), [サポート](https://forum.aspose.com/c/words/8) 、 そして[ダウンロード](https://releases.aspose.com/words/net/)ページ。
 
 ### Aspose.Words for .NET で画像を圧縮するためのサンプル ソース コード
 

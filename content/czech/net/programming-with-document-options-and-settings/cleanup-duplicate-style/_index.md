@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /cs/net/programming-with-document-options-and-settings/cleanup-duplicate-style/
 ---
-## Úvod
+## Zavedení
 
 Ahoj, nadšenci do kódování! Stalo se vám, že jste se při práci na dokumentu aplikace Word zapletli do sítě duplicitních stylů? Všichni jsme tam byli a není to hezký pohled. Ale nebojte se, Aspose.Words pro .NET je tu, aby zachránil situaci! V tomto tutoriálu se ponoříme do toho nejnutnějšího čištění duplicitních stylů v dokumentech aplikace Word pomocí Aspose.Words for .NET. Ať už jste zkušený vývojář nebo teprve začínáte, tento průvodce vás provede každým krokem s jasnými a snadno pochopitelnými pokyny. Takže, vyhrňme si rukávy a začněme!
 
@@ -16,7 +16,7 @@ Ahoj, nadšenci do kódování! Stalo se vám, že jste se při práci na dokume
 Než se pustíme do akce, ujistěte se, že máte vše, co potřebujete:
 
 1. Základní znalost C#: Nemusíte být průvodcem C#, ale základní znalost jazyka vám pomůže.
-2. Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words for .NET. Pokud ne, můžete si jej stáhnout[tady](https://releases.aspose.com/words/net/).
+2. Aspose.Words for .NET: Ujistěte se, že máte nainstalovanou knihovnu Aspose.Words for .NET. Pokud ne, můžete si jej stáhnout[zde](https://releases.aspose.com/words/net/).
 3. Vývojové prostředí: Dobré vývojové prostředí, jako je Visual Studio, vám hodně usnadní život.
 4. Ukázkový dokument: Připravte si k testování ukázkový dokument aplikace Word (.docx), který obsahuje duplicitní styly.
 
@@ -47,7 +47,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 Než provedeme úklid, podívejme se, kolik stylů je aktuálně v dokumentu. To nám dává základní linii, se kterou lze po vyčištění porovnat.
 
-1.  Přístup ke kolekci stylů: Použijte`Styles` majetek z`Document` třída.
+1.  Přístup ke kolekci stylů: Použijte`Styles` vlastnictvím`Document` třída.
 2. Vytiskněte počet stylů: Použít`Console.WriteLine` pro zobrazení počtu stylů.
 
 ```csharp
@@ -114,7 +114,7 @@ Vyčištění duplicitních stylů pomáhá zachovat konzistentní a profesioná
 Ano, Aspose.Words for .NET lze použít s jakýmkoli jazykem .NET, včetně VB.NET a F#.
 
 ### Kde najdu další dokumentaci k Aspose.Words pro .NET?
- Můžete najít podrobnou dokumentaci[tady](https://reference.aspose.com/words/net/).
+ Můžete najít podrobnou dokumentaci[zde](https://reference.aspose.com/words/net/).
 
 ### Je k dispozici bezplatná zkušební verze pro Aspose.Words pro .NET?
- Ano, můžete si stáhnout bezplatnou zkušební verzi[tady](https://releases.aspose.com/).
+ Ano, můžete si stáhnout bezplatnou zkušební verzi[zde](https://releases.aspose.com/).

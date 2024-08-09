@@ -15,7 +15,7 @@ Bereit, in tolle technische Dinge einzutauchen? Heute beschäftigen wir uns mit 
 
 Bevor wir zum spaßigen Teil übergehen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
 
-1.  Aspose.Words für .NET-Bibliothek: Sie können[hier herunterladen](https://releases.aspose.com/words/net/) . Wenn Sie es noch nicht gekauft haben, holen Sie sich ein[Kostenlose Testphase](https://releases.aspose.com/) oder[Kaufen Sie es hier](https://purchase.aspose.com/buy).
+1.  Aspose.Words für .NET-Bibliothek: Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/) . Wenn Sie es noch nicht gekauft haben, holen Sie sich ein[Kostenlose Testversion](https://releases.aspose.com/) oder[Kaufen Sie es hier](https://purchase.aspose.com/buy).
 2. Entwicklungsumgebung: Visual Studio oder jede andere IDE, die .NET unterstützt.
 3. Grundkenntnisse in C#: Sie müssen mit C# vertraut sein, um folgen zu können.
 
@@ -49,7 +49,7 @@ Als nächstes müssen wir die Ladeoptionen so konfigurieren, dass UTF-8-Text erk
 RtfLoadOptions loadOptions = new RtfLoadOptions { RecognizeUtf8Text = true };
 ```
 
- Indem man es einstellt`RecognizeUtf8Text` Zu`true`, sagen wir Aspose.Words, dass es nach UTF-8-Text Ausschau halten soll. Das ist sehr praktisch, wenn man mit Dokumenten arbeitet, die eine Vielzahl von Zeichen enthalten.
+ Durch die Einstellung`RecognizeUtf8Text` Zu`true`, sagen wir Aspose.Words, dass es nach UTF-8-Text Ausschau halten soll. Das ist sehr praktisch, wenn man mit Dokumenten arbeitet, die eine Vielzahl von Zeichen enthalten.
 
 ## Schritt 3: Laden Sie das Dokument
 

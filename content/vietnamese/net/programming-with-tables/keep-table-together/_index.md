@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 
 ## Phần kết luận
 
-Và bạn có nó rồi đấy! Chỉ với một vài dòng mã, bạn có thể giữ cho bảng của mình không bị chia tách giữa các trang trong tài liệu Word. Giải pháp đơn giản nhưng hiệu quả này đảm bảo các bảng của bạn luôn gọn gàng và chuyên nghiệp, nâng cao khả năng đọc tài liệu của bạn. Aspose.Words for .NET giúp việc xử lý các vấn đề định dạng như vậy trở nên dễ dàng, cho phép bạn tập trung vào việc tạo nội dung tuyệt vời.
+Và bạn có nó! Chỉ với một vài dòng mã, bạn có thể giữ cho bảng của mình không bị chia tách giữa các trang trong tài liệu Word. Giải pháp đơn giản nhưng hiệu quả này đảm bảo các bảng của bạn luôn gọn gàng và chuyên nghiệp, nâng cao khả năng đọc tài liệu của bạn. Aspose.Words for .NET giúp việc xử lý các vấn đề định dạng như vậy trở nên dễ dàng, cho phép bạn tập trung vào việc tạo nội dung tuyệt vời.
 
 ## Câu hỏi thường gặp
 

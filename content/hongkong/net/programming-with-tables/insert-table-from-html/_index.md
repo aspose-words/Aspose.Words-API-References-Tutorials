@@ -52,7 +52,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 第 3 步：插入 HTML 表格
 
-有趣的來了！您將使用`DocumentBuilder`將 HTML 表格插入到 Word 文件中。請注意，自動調整設定不適用於從 HTML 插入的表格，因此您的表格看起來將與 HTML 程式碼中定義的完全一樣。
+現在來了有趣的部分！您將使用`DocumentBuilder`將 HTML 表格插入到 Word 文件中。請注意，自動調整設定不適用於從 HTML 插入的表格，因此您的表格看起來將與 HTML 程式碼中定義的完全一樣。
 
 ```csharp
 //插入 HTML 表格

@@ -54,7 +54,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
-設定することにより`FontEmbeddingMode`に`EmbedNone`、Aspose.Words にこれらのフォントを PDF に含めないように指示し、ファイル サイズを縮小します。
+設定により`FontEmbeddingMode`に`EmbedNone`、Aspose.Words にこれらのフォントを PDF に含めないように指示し、ファイル サイズを縮小します。
 
 ## ステップ3: ドキュメントをPDFとして保存する
 

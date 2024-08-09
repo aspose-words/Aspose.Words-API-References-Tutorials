@@ -2,7 +2,7 @@
 title: إدراج الجدول مباشرة
 linktitle: إدراج الجدول مباشرة
 second_title: Aspose.Words واجهة برمجة تطبيقات معالجة المستندات
-description: تعرف على كيفية إدراج الجداول مباشرة في مستندات Word باستخدام Aspose.Words لـ .NET. اتبع دليلنا التفصيلي خطوة بخطوة لتبسيط إنشاء المستندات الخاصة بك.
+description: تعرف على كيفية إدراج الجداول مباشرةً في مستندات Word باستخدام Aspose.Words لـ .NET. اتبع دليلنا التفصيلي خطوة بخطوة لتبسيط إنشاء المستندات الخاصة بك.
 type: docs
 weight: 10
 url: /ar/net/programming-with-tables/insert-table-directly/

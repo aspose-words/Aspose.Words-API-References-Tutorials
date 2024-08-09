@@ -70,7 +70,7 @@ Bu son adımda, belgeyi belirtilen alt örnekleme seçenekleriyle aynı dizine P
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak görüntüleri altörnekleyerek PDF'nizin boyutunu başarıyla küçülttünüz. Bu yalnızca PDF'lerinizi daha kolay yönetilebilir hale getirmekle kalmaz, aynı zamanda daha hızlı yükleme, indirme ve daha sorunsuz görüntüleme deneyimlerine de yardımcı olur.
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak görüntüleri altörnekleyerek PDF'nizin boyutunu başarıyla küçülttünüz. Bu yalnızca PDF'lerinizi daha kolay yönetilebilir hale getirmekle kalmaz, aynı zamanda daha hızlı yükleme, indirme ve daha sorunsuz görüntüleme deneyimlerine de yardımcı olur.
 
 ## SSS'ler
 

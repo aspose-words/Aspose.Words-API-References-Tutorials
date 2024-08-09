@@ -19,7 +19,7 @@ Zanim zagłębimy się w kod, upewnij się, że masz następujące elementy:
 
 2. Visual Studio: IDE, takie jak Visual Studio, do pisania i uruchamiania kodu C#.
 
-3. Podstawowa znajomość języka C#: Znajomość języka C# i podstawowych koncepcji programowania .NET pomoże Ci płynnie kontynuować naukę.
+3. Podstawowa znajomość języka C#: Znajomość języka C# i podstawowych koncepcji programowania .NET ułatwi Ci płynne wykonywanie zadań.
 
 4. Dokument ze znacznikami dokumentu strukturalnego: Do tego samouczka będziesz potrzebować dokumentu programu Word zawierającego znaczniki dokumentu strukturalnego. Możesz użyć przykładowego dokumentu lub utworzyć dokument z SDT do testowania.
 
@@ -48,7 +48,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Krok 2: Załaduj dokument
 
- Użyj`Document` class, aby załadować dokument programu Word. Ta klasa umożliwia programowe otwieranie dokumentu i manipulowanie nim.
+ Skorzystaj z`Document` class, aby załadować dokument programu Word. Ta klasa umożliwia programowe otwieranie dokumentu i manipulowanie nim.
 
 ```csharp
 Document doc = new Document(dataDir + "Multi-section structured document tags.docx");
@@ -115,4 +115,4 @@ foreach (StructuredDocumentTagRangeStart tag in tags)
 	Console.WriteLine(tag.Title);
 ```
 
-Otóż to! Pomyślnie pobrałeś i przetworzyłeś wielosekcyjne znaczniki dokumentu strukturalnego w dokumencie programu Word przy użyciu Aspose.Words dla .NET.
+To wszystko! Pomyślnie pobrałeś i przetworzyłeś wielosekcyjne znaczniki dokumentu strukturalnego w dokumencie programu Word przy użyciu Aspose.Words dla .NET.

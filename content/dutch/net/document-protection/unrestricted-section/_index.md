@@ -9,7 +9,7 @@ url: /nl/net/document-protection/unrestricted-section/
 ---
 ## Invoering
 
-Hallo daar! Klaar om in de wereld van Aspose.Words voor .NET te duiken? Vandaag pakken we iets superpraktisch aan: hoe je specifieke secties in een Word-document kunt ontgrendelen terwijl je andere delen beschermd houdt. Als u ooit bepaalde delen van uw document wilt beveiligen, maar andere delen open wilt laten voor bewerking, dan is deze tutorial iets voor u. Laten we beginnen!
+Hé daar! Klaar om in de wereld van Aspose.Words voor .NET te duiken? Vandaag pakken we iets superpraktisch aan: hoe je specifieke secties in een Word-document kunt ontgrendelen terwijl je andere delen beschermd houdt. Als u ooit bepaalde delen van uw document wilt beveiligen, maar andere delen open wilt laten voor bewerking, dan is deze tutorial iets voor u. Laten we beginnen!
 
 ## Vereisten
 

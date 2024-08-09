@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-ここでは、インスタンスを作成しています`Document`そして`DocumentBuilder`。 のことを考える`Document`空白のWord文書として`DocumentBuilder`あなたのペンとして。
+ここでは、インスタンスを作成しています`Document`そして`DocumentBuilder`考えてみましょう`Document`空白のWord文書として`DocumentBuilder`あなたのペンとして。
 
 ## ステップ2: ドキュメントの開始に移動する
 
@@ -84,4 +84,4 @@ Aspose.Words for .NET は、C# でプログラム的に Word 文書を作成、�
 はい、Aspose.Words for .NET は .NET Framework と .NET Core の両方をサポートしています。
 
 ### Aspose.Words for .NET に関するその他のチュートリアルはどこで見つかりますか?  
-ぜひチェックしてみてください[ドキュメンテーション](https://reference.aspose.com/words/net/)または訪問する[サポートフォーラム](https://forum.aspose.com/c/words/8)さらに詳しいヘルプについては、
+ぜひチェックしてみてください[ドキュメント](https://reference.aspose.com/words/net/)または訪問する[サポートフォーラム](https://forum.aspose.com/c/words/8)さらに詳しいヘルプについては、

@@ -70,7 +70,7 @@ chart.Legend.Position = LegendPosition.Left;
 chart.Legend.Overlay = true;
 ```
 
-## Stap 5: Sla het document op
+## Stap 5: Bewaar het document
 
 Ten slotte moet u het document opslaan. Deze stap zorgt ervoor dat al uw wijzigingen naar het bestand worden geschreven.
 
@@ -86,7 +86,7 @@ In deze zelfstudie hebben we besproken hoe u een lijndiagram in een Word-documen
 
 ### Kan ik Aspose.Words voor .NET gebruiken om andere typen diagrammen te maken?
 
- Ja, Aspose.Words voor .NET ondersteunt verschillende diagramtypen, waaronder staafdiagrammen, cirkeldiagrammen en meer. U kunt de documentatie verkennen[hier](https://reference.aspose.com/words/net/) voor meer details.
+ Ja, Aspose.Words voor .NET ondersteunt verschillende diagramtypen, waaronder staafdiagrammen, cirkeldiagrammen en meer. U kunt de documentatie verkennen[hier](https://reference.aspose.com/words/net/) voor meer informatie.
 
 ### Hoe kan ik Aspose.Words voor .NET uitproberen voordat ik het aanschaf?
 

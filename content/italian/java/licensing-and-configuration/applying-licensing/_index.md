@@ -107,7 +107,7 @@ In questo tutorial, abbiamo trattato i passaggi essenziali per applicare la lice
 ## Domande frequenti
 
 ### Come posso ottenere una licenza temporanea per Aspose.Words per Java?
- Visitare il[Pagina della licenza temporanea di Aspose](https://purchase.aspose.com/temporary-license/) per richiedere una licenza temporanea.
+ Visita il[Pagina della licenza temporanea di Aspose](https://purchase.aspose.com/temporary-license/) per richiedere una licenza temporanea.
 
 ### Posso utilizzare Aspose.Words per Java senza licenza?
 Sì, ma funzionerà in modalità di prova con limitazioni. Si consiglia di ottenere una licenza valida per la piena funzionalità.

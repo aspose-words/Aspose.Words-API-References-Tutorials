@@ -45,7 +45,7 @@ Document doc = new Document(dataDir + "Document.docx");
 
 ## Langkah 2: Hitung Gaya Sebelum Pembersihan
 
-Sebelum kita membersihkannya, mari kita lihat berapa banyak gaya yang saat ini ada dalam dokumen. Ini memberi kita dasar untuk membandingkannya setelah pembersihan.
+Sebelum kita membersihkannya, mari kita lihat berapa banyak gaya yang ada di dokumen saat ini. Ini memberi kita dasar untuk membandingkannya setelah pembersihan.
 
 1.  Akses Koleksi Gaya: Gunakan`Styles` properti dari`Document` kelas.
 2. Cetak Hitungan Gaya: Gunakan`Console.WriteLine` untuk menampilkan jumlah gaya.

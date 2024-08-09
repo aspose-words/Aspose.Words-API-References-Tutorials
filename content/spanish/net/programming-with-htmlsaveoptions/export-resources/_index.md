@@ -92,7 +92,7 @@ Esta línea de código guarda el documento en formato HTML, junto con los recurs
 ## Preguntas frecuentes
 
 ### ¿Puedo exportar imágenes junto con fuentes y CSS?
- ¡Sí tu puedes! Aspose.Words para .NET también admite la exportación de imágenes. Sólo asegúrese de configurar el`HtmlSaveOptions` respectivamente.
+ ¡Sí, puedes! Aspose.Words para .NET también admite la exportación de imágenes. Sólo asegúrese de configurar el`HtmlSaveOptions` respectivamente.
 
 ### ¿Existe alguna forma de incrustar CSS en lugar de utilizar una hoja de estilo externa?
  Absolutamente. Puedes configurar`CssStyleSheetType` a`CssStyleSheetType.Embedded` si prefiere estilos incrustados.
@@ -101,7 +101,7 @@ Esta línea de código guarda el documento en formato HTML, junto con los recurs
  Puede especificar cualquier nombre de archivo que desee en el`doc.Save` método. Por ejemplo,`doc.Save(dataDir + "CustomFileName.html", saveOptions);`.
 
 ### ¿Aspose.Words admite otros formatos además de HTML?
- Sí, admite varios formatos, incluidos PDF, DOCX, TXT y más. Revisar la[documentación](https://reference.aspose.com/words/net/) para obtener una lista completa.
+ Sí, admite varios formatos, incluidos PDF, DOCX, TXT y más. Mira el[documentación](https://reference.aspose.com/words/net/) para obtener una lista completa.
 
 ### ¿Dónde puedo obtener más apoyo y recursos?
 Para obtener más ayuda, visite el[Foro de soporte de Aspose.Words](https://forum.aspose.com/c/words/8) . También puede encontrar documentación detallada y ejemplos en el[Aspose sitio web](https://reference.aspose.com/words/net/).

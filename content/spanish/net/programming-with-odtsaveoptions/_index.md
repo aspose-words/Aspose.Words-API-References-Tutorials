@@ -2,7 +2,7 @@
 title: Procesamiento de palabras con Odtsaveoptions
 linktitle: Procesamiento de palabras con Odtsaveoptions
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda el procesamiento de palabras con las opciones de guardado de ODT en Aspose.Words para .NET. Tutoriales detallados con código de muestra para guardar documentos de Word en formato ODT.
+description: Aprenda el procesamiento de palabras con las opciones de guardado ODT en Aspose.Words para .NET. Tutoriales detallados con código de muestra para guardar documentos de Word en formato ODT.
 type: docs
 weight: 1650
 url: /es/net/programming-with-odtsaveoptions/

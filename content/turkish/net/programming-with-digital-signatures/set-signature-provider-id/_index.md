@@ -82,7 +82,7 @@ CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", 
 
 ## Adım 5: Belgeyi İmzalayın
 
- Son olarak, belgeyi kullanarak imzalamanın zamanı geldi.`DigitalSignatureUtil.Sign` yöntem.
+ Son olarak, belgeyi kullanarak imzalamanın zamanı geldi.`DigitalSignatureUtil.Sign` Yöntem.
 
 ```csharp
 DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
@@ -93,7 +93,7 @@ DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET'i kullanarak bir Word belgesinde İmza Sağlayıcı Kimliğini başarıyla ayarladınız. Bu işlem belgelerinizi güvence altına almanın yanı sıra dijital imza standartlarıyla uyumlu olmalarını da sağlar. Şimdi devam edin ve belgelerinizle deneyin. Herhangi bir sorunuz var mı? Aşağıdaki SSS'lere göz atın veya[Aspose destek forumu](https://forum.aspose.com/c/words/8).
+Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesinde İmza Sağlayıcı Kimliğini başarıyla ayarladınız. Bu işlem belgelerinizi güvence altına almanın yanı sıra dijital imza standartlarıyla uyumlu olmalarını da sağlar. Şimdi devam edin ve belgelerinizle deneyin. Herhangi bir sorunuz var mı? Aşağıdaki SSS'lere göz atın veya[Aspose destek forumu](https://forum.aspose.com/c/words/8).
 
 ## SSS'ler
 

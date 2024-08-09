@@ -2,75 +2,99 @@
 title: Définir le dossier des polices
 linktitle: Définir le dossier des polices
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment définir le répertoire des polices dans Aspose.Words for .NET et garantir la disponibilité des polices utilisées dans vos documents.
+description: Découvrez comment définir un dossier de polices personnalisées dans Aspose.Words for .NET pour garantir que vos documents Word sont rendus correctement sans polices manquantes.
 type: docs
 weight: 10
 url: /fr/net/working-with-fonts/set-fonts-folder/
 ---
-Dans ce didacticiel, nous allons vous montrer comment définir le répertoire des polices dans Aspose.Words pour .NET. Vous apprendrez à spécifier le répertoire contenant les polices utilisées dans votre document Word.
+## Introduction
+
+Avez-vous déjà rencontré des problèmes de polices manquantes lorsque vous travailliez avec des documents Word dans votre application .NET ? Eh bien, vous n'êtes pas seul. La définition du bon dossier de polices peut résoudre ce problème de manière transparente. Dans ce guide, nous vous expliquerons comment définir le dossier des polices à l'aide d'Aspose.Words pour .NET. Allons-y !
 
 ## Conditions préalables
-Avant de commencer, assurez-vous de disposer des éléments suivants :
-- Une connaissance pratique du langage de programmation C#
-- La bibliothèque Aspose.Words pour .NET installée dans votre projet
+
+Avant de commencer, assurez-vous d'avoir les éléments suivants :
+
+- Visual Studio installé sur votre machine
+- Configuration du .NET Framework
+-  Bibliothèque Aspose.Words pour .NET. Si ce n'est pas déjà fait, vous pouvez le télécharger depuis[ici](https://releases.aspose.com/words/net/).
+
+## Importer des espaces de noms
+
+Tout d’abord, vous devez importer les espaces de noms nécessaires pour travailler avec Aspose.Words. Ajoutez les lignes suivantes en haut de votre fichier de code :
+
+```csharp
+using Aspose.Words;
+using Aspose.Words.Fonts;
+```
+
+La configuration du dossier des polices est simple si vous suivez attentivement ces étapes.
 
 ## Étape 1 : Définir le répertoire des documents
-Commencez par définir le chemin du répertoire vers l’emplacement de votre document Word. Remplacer`"YOUR DOCUMENT DIRECTORY"` dans le code avec le chemin approprié.
+
+Avant toute chose, définissez le chemin d’accès à votre répertoire de documents. Ce répertoire contiendra vos documents Word et les polices que vous souhaitez utiliser.
 
 ```csharp
-string dataDir = "YOUR DOCUMENTS DIRECTORY";
-```
-
-## Étape 2 : Définir le répertoire des polices
- Créez une instance du`FontSettings` classe et utiliser le`SetFontsFolder` méthode pour spécifier le répertoire contenant les polices. Remplacer`"Fonts"` avec le nom du répertoire de polices actuel.
-
-```csharp
-FontSettings fontSettings = new FontSettings();
-fontSettings.SetFontsFolder(dataDir + "Fonts", false);
-```
-
-## Étape 3 : Chargez le document avec les paramètres de police
- Utilisez le`LoadOptions` classe pour spécifier les paramètres de police dans le`FontSettings` option. Utilisez ensuite le`Document` classe pour charger le document en utilisant ces options.
-
-```csharp
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.FontSettings = fontSettings;
-Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
-
-```
-
-### Exemple de code source pour définir le dossier de polices à l'aide d'Aspose.Words pour .NET 
-
-```csharp
-
 // Chemin d'accès à votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
-
-FontSettings fontSettings = new FontSettings();
-fontSettings.SetFontsFolder(dataDir + "Fonts", false);
-LoadOptions loadOptions = new LoadOptions();
-loadOptions.FontSettings = fontSettings;
-Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
-
 ```
 
+ Assurez-vous de remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel de votre répertoire.
+
+## Étape 2 : initialiser les paramètres de police
+
+ Maintenant, vous devez initialiser le`FontSettings` objet. Cet objet vous permet de spécifier des dossiers de polices personnalisés.
+
+```csharp
+FontSettings fontSettings = new FontSettings();
+```
+
+## Étape 3 : définir le dossier des polices
+
+ En utilisant le`SetFontsFolder` méthode du`FontSettings` objet, spécifiez le dossier dans lequel vos polices personnalisées sont stockées.
+
+```csharp
+fontSettings.SetFontsFolder(dataDir + "Fonts", false);
+```
+
+ Ici,`dataDir + "Fonts"` pointe vers le dossier nommé « Polices » dans votre répertoire de documents. Le deuxième paramètre,`false`, indique que le dossier n'est pas récursif.
+
+## Étape 4 : Créer des options de chargement
+
+ Ensuite, créez une instance de`LoadOptions` classe. Cette classe vous aidera à charger le document avec les paramètres de police spécifiés.
+
+```csharp
+LoadOptions loadOptions = new LoadOptions();
+loadOptions.FontSettings = fontSettings;
+```
+
+## Étape 5 : Charger le document
+
+ Enfin, chargez le document Word à l'aide du`Document` la classe et le`LoadOptions` objet.
+
+```csharp
+Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
+```
+
+ Assurez-vous que`"Rendering.docx"` est le nom de votre document Word. Vous pouvez le remplacer par le nom de votre fichier.
+
 ## Conclusion
-Félicitation ! Vous savez maintenant comment définir le répertoire des polices dans Aspose.Words for .NET. Vous pouvez utiliser cette fonctionnalité pour garantir la disponibilité des polices utilisées dans votre document et pour garantir la cohérence de l'affichage des polices.
 
-### FAQ
+Et voilà ! En suivant ces étapes, vous pouvez facilement définir un dossier de polices personnalisées dans Aspose.Words for .NET, garantissant ainsi que toutes vos polices sont correctement rendues. Cette configuration simple peut vous éviter bien des maux de tête et donner à vos documents exactement ce que vous souhaitez.
 
-#### Q : Comment puis-je définir un dossier de polices personnalisé dans Aspose.Words ?
+## FAQ
 
- R : Pour définir un dossier de polices personnalisées dans Aspose.Words, vous pouvez utiliser le`FontsFolder` la classe et le`SetFontsFolders` méthode spécifiant le chemin d’accès au dossier contenant vos polices.
+### Pourquoi dois-je définir un dossier de polices personnalisées ?
+La définition d'un dossier de polices personnalisées garantit que toutes les polices utilisées dans vos documents Word sont correctement rendues, évitant ainsi les problèmes de polices manquantes.
 
-#### Q : Puis-je définir plusieurs dossiers de polices dans Aspose.Words ?
+### Puis-je définir plusieurs dossiers de polices ?
+ Oui, vous pouvez utiliser le`SetFontsFolders` méthode pour spécifier plusieurs dossiers.
 
- R : Oui, vous pouvez définir plusieurs dossiers de polices dans Aspose.Words en appelant le`SetFontsFolders` méthode plusieurs fois avec les chemins des différents dossiers de polices que vous souhaitez utiliser.
+### Que se passe-t-il si une police n'est pas trouvée ?
+Aspose.Words tentera de remplacer la police manquante par une police similaire provenant des polices système.
 
-#### Q : Que se passe-t-il si une police utilisée dans le document n'est pas présente dans les dossiers de polices définis ?
+### Aspose.Words est-il compatible avec .NET Core ?
+Oui, Aspose.Words prend en charge .NET Core avec .NET Framework.
 
-R : Si une police utilisée dans le document n'est pas présente dans les dossiers de polices définis dans Aspose.Words, une police de remplacement sera utilisée à la place. Cela garantit que le texte du document sera toujours affiché correctement, même si la police d'origine n'est pas disponible.
-
-#### Q : Les dossiers de polices définis dans Aspose.Words ont-ils la priorité sur les polices installées sur le système ?
-
-R : Oui, les dossiers de polices définis dans Aspose.Words ont priorité sur les polices installées sur le système. Cela signifie que si une police du même nom est présente à la fois dans les dossiers de polices définis et dans les polices système, la version du dossier de polices sera utilisée lors du traitement des documents Word.
+### Où puis-je obtenir de l'aide si je rencontre des problèmes ?
+ Vous pouvez bénéficier du soutien du[Forum d'assistance Aspose.Words](https://forum.aspose.com/c/words/8).

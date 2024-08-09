@@ -2,104 +2,108 @@
 title: Revizyon Grubu Detaylarını Al
 linktitle: Revizyon Grubu Detaylarını Al
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile revizyon grubu ayrıntılarını bir Word belgesinden alın.
+description: Bu adım adım kılavuzla Aspose.Words for .NET'i kullanarak Word belgelerindeki revizyon grubu ayrıntılarını kolayca alın. .NET geliştiricileri için mükemmel.
 type: docs
 weight: 10
 url: /tr/net/working-with-revisions/get-revision-group-details/
 ---
+## giriiş
 
-Bu adım adım kılavuzda, Aspose.Words for .NET kullanarak bir Word belgesindeki bir grup revizyonun ayrıntılarına nasıl ulaşacağınızı göstereceğiz. Size kaynak kodunun tamamını sağlayacağız ve işaretleme çıktısını nasıl biçimlendireceğinizi göstereceğiz.
+Hiç bir Word belgesindeki revizyonların en ince ayrıntısına kadar incelemeye ihtiyaç duyduğunuzu fark ettiniz mi? Belki bir proje üzerinde işbirliği yapıyorsunuz ve değişiklikleri titizlikle takip etmeniz gerekiyor. Pekala, kemerlerinizi bağlayın çünkü Aspose.Words for .NET kullanarak revizyon grubu ayrıntılarının nasıl elde edileceğine dair harika bir eğitime dalmak üzereyiz. Bu kılavuzun sonunda revizyon ayrıntılarını çıkarma ve görüntüleme konusunda uzmanlaşacak ve belge yönetiminizi kolaylaştıracaksınız.
 
-## 1. Adım: Belgeyi yükleme
+## Önkoşullar
 
-İlk adım, revizyonları içeren belgeyi yüklemektir.
+Bu kodlama yolculuğuna çıkmadan önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
+-  Aspose.Words for .NET: En son sürümün kurulu olduğundan emin olun. Değilse indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+- .NET Ortamı: Çalışan bir .NET geliştirme ortamı kurduğunuzdan emin olun. Visual Studio harika bir seçenektir.
+- Düzeltmeleri Olan Bir Word Belgesi: Bu eğitim için, düzeltmeleri olan örnek bir Word belgesi kullanacağız (`Revisions.docx`).
+
+## Ad Alanlarını İçe Aktar
+
+Öncelikle projenize gerekli ad alanlarını aktaralım. Aspose.Words işlevselliğine erişmek için bu çok önemlidir.
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
+using Aspose.Words;
+using System;
 ```
 
-## 2. Adım: Düzeltmelere göz atın
+Tamam, bunu adım adım inceleyelim. Her adım, Aspose.Words for .NET'i kullanarak revizyon grubu ayrıntılarını alma sürecinde size rehberlik edecektir.
 
-Daha sonra, belgede bulunan düzeltmeler arasında geçiş yapacağız ve bunların tür, yazar, tarih ve düzeltilmiş metin gibi ayrıntılarını görüntüleyeceğiz.
+## Adım 1: Word Belgesini Yükleyin
+
+İlk adım Word belgenizi yüklemektir. Burası revizyonlarınızın saklandığı yerdir.
+
+```csharp
+// Belgeler dizininin yolu.
+string dataDir = "YOUR DOCUMENT DIRECTORY";
+Document doc = new Document(dataDir + "Revisions.docx");
+```
+
+ Bu kod parçasında değiştirin`"YOUR DOCUMENT DIRECTORY"` belgenizin gerçek yolu ile. Bu kod yüklenecek`Revisions.docx` içine dosya`doc` nesne.
+
+## 2. Adım: Revizyon Koleksiyonuna Erişin
+
+ Şimdi belgedeki revizyonlara erişelim. Aspose.Words şunları sağlar:`Revisions` tekrarlayabileceğimiz bir koleksiyon.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
 {
-     string groupText = revision.Group != null
-         ? "Revision group text: " + revision.Group.Text
-         : "The revision does not belong to any group";
-
-     Console.WriteLine("Type: " + revision.RevisionType);
-     Console.WriteLine("Author: " + revision.Author);
-     Console.WriteLine("Date: " + revision.DateTime);
-     Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
-     Console.WriteLine(groupText);
+    // Her revizyonu işleyin
 }
 ```
 
+Bu döngü, belgedeki her revizyondan geçerek ayrıntıları çıkarmamıza olanak tanır.
 
-### Aspose.Words for .NET kullanarak Revizyon Grubu Detaylarını Alma için örnek kaynak kodu
+## 3. Adım: Revizyon Ayrıntılarını Çıkarın
 
-Aspose.Words for .NET kullanarak bir belgedeki bir grup revizyonun ayrıntılarını almak için tam kaynak kodu burada bulabilirsiniz:
+Döngü içerisinde her revizyon hakkında tür, yazar, tarih ve metin gibi çeşitli ayrıntıları çıkarabiliriz.
 
 ```csharp
-Document doc = new Document(MyDir + "Revisions.docx");
-
 foreach (Revision revision in doc.Revisions)
 {
-	 string groupText = revision.Group != null
-		 ? "Revision group text: " + revision.Group.Text
-		 : "The revision does not belong to any group";
-
-	 Console.WriteLine("Type: " + revision.RevisionType);
-	 Console.WriteLine("Author: " + revision.Author);
-	 Console.WriteLine("Date: " + revision.DateTime);
-	 Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
-	 Console.WriteLine(groupText);
+    Console.WriteLine("Type: " + revision.RevisionType);
+    Console.WriteLine("Author: " + revision.Author);
+    Console.WriteLine("Date: " + revision.DateTime);
+    Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
 }
 ```
+
+Bu kod, revizyon türünü, yazarı, tarihi ve metni konsola yazdıracaktır.
+
+## Adım 4: Revizyon Grubunu Kontrol Edin
+
+Bazen revizyonlar gruplandırılır. Bir revizyonun bir gruba ait olup olmadığını kontrol etmemiz ve varsa grubun metnini görüntülememiz gerekiyor.
+
+```csharp
+foreach (Revision revision in doc.Revisions)
+{
+    string groupText = revision.Group != null
+        ? "Revision group text: " + revision.Group.Text
+        : "The revision does not belong to any group";
+
+    Console.WriteLine(groupText);
+}
+```
+
+Bu kod parçası, revizyon bir grubun parçasıysa veya herhangi bir gruba ait olmadığını gösteriyorsa grup metnini yazdıracaktır.
 
 ## Çözüm
 
-Bu eğitimde Aspose.Words for .NET kullanarak bir Word belgesindeki bir grup revizyonun ayrıntılarına nasıl ulaşacağımızı öğrendik. Bir döngü ve uygun özellikleri kullanarak revizyon türü, yazar, tarih ve revize edilen metin gibi ayrıntıları görüntüleyebildik. Aspose.Words for .NET, revizyon yönetimi de dahil olmak üzere Word belgelerinin işlenmesi için birçok güçlü özellik sunar. Artık bu bilgiyi, Aspose.Words for .NET'i kullanarak revizyon grubu ayrıntılarını kendi Word belgelerinize almak için kullanabilirsiniz.
+Ve işte karşınızda! Bu adımları takip ederek Aspose.Words for .NET kullanarak bir Word belgesindeki revizyonlar hakkında detaylı bilgiye kolaylıkla ulaşabilirsiniz. Bu güçlü araç, değişiklikleri yönetmeyi ve izlemeyi kolaylaştırarak ortak projelerinizin sorunsuz bir şekilde ilerlemesini sağlar.
 
-### SSS'ler
+## SSS'ler
 
-#### S: Revizyonları olan bir belgeyi Aspose.Words for .NET'e nasıl yüklerim?
+### Aspose.Words for .NET nedir?
+Word belgelerini programlı olarak oluşturmak, düzenlemek, dönüştürmek ve yazdırmak için güçlü bir .NET kitaplığıdır.
 
- C: Kullan`Document` Revizyonları içeren bir dosyadan belge yüklemek için Aspose.Words for .NET sınıfı. Tam belge yolunu belirtebilirsiniz.
+### Aspose.Words for .NET'i diğer .NET dilleriyle kullanabilir miyim?
+Kesinlikle! C#, VB.NET ve ASP.NET dahil herhangi bir .NET diliyle kullanabilirsiniz.
 
-```csharp
-Document doc = new Document("path/to/the/document.docx");
-```
+### Aspose.Words for .NET'in ücretsiz deneme sürümünü nasıl edinebilirim?
+ Ücretsiz deneme alabilirsiniz[Burada](https://releases.aspose.com/).
 
-#### S: Aspose.Words for .NET'te bir revizyon grubunun ayrıntılarını nasıl edinebilirim?
+### Aspose.Words for .NET'i kullanmak için lisansa ihtiyacım var mı?
+ Evet, Aspose.Words for .NET tam işlevsellik için lisans gerektirir. Bir tane satın alabilirsiniz[Burada](https://purchase.aspose.com/buy) veya geçici lisans alın[Burada](https://purchase.aspose.com/temporary-license/).
 
-C: Bir döngü kullanarak belgenin revizyonlarını gözden geçirin ve istediğiniz ayrıntıları elde etmek için her revizyonun özelliklerine erişin. Şunu kullanabilirsiniz:`RevisionType`, `Author`, `DateTime`Ve`ParentNode` sırasıyla revizyon türünü, yazarı, tarihi ve revize edilen metni almak için özellikler.
-
-```csharp
-foreach (Revision revision in doc.Revisions)
-{
-      Console.WriteLine("Type: " + revision.RevisionType
-
-);
-      Console.WriteLine("Author: " + revision.Author);
-      Console.WriteLine("Date: " + revision.DateTime);
-      Console.WriteLine("Revision text: " + revision.ParentNode.ToString(SaveFormat.Text));
-}
-```
-
-#### S: Aspose.Words for .NET'te bir revizyonun bir gruba ait olup olmadığı nasıl kontrol edilir?
-
- C: Kullan`Group` mülkiyeti`Revision` Bir revizyonun bir gruba ait olup olmadığını kontrol etmek için nesne. Eğer`Group` mülkiyet`null`, revizyonun herhangi bir gruba ait olmadığı anlamına gelir.
-
-```csharp
-if (revision.Group != null)
-{
-      // Revizyon bir gruba ait
-}
-else
-{
-      // Revizyon herhangi bir gruba ait değil
-}
-```
+### Aspose.Words for .NET hakkında daha fazla belgeyi nerede bulabilirim?
+ Detaylı dokümantasyon mevcut[Burada](https://reference.aspose.com/words/net/).

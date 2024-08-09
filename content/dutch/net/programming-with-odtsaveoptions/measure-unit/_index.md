@@ -1,6 +1,6 @@
 ---
-title: Meeteenheid
-linktitle: Meeteenheid
+title: Maateenheid
+linktitle: Maateenheid
 second_title: Aspose.Words-API voor documentverwerking
 description: Leer hoe u de functie voor maateenheden in Aspose.Words voor .NET configureert om de documentopmaak te behouden tijdens ODT-conversie.
 type: docs
@@ -9,7 +9,7 @@ url: /nl/net/programming-with-odtsaveoptions/measure-unit/
 ---
 ## Invoering
 
-Heeft u ooit uw Word-documenten naar verschillende formaten moeten converteren, maar had u een specifieke maateenheid nodig voor uw lay-out? Of u nu te maken heeft met inches, centimeters of punten, het is van cruciaal belang dat uw document tijdens het conversieproces zijn integriteit behoudt. In deze zelfstudie laten we zien hoe u de functie voor maateenheden in Aspose.Words voor .NET kunt configureren. Deze krachtige functie zorgt ervoor dat de opmaak van uw document precies behouden blijft zoals u deze nodig heeft bij het converteren naar ODT-indeling (Open Document Text).
+Heeft u ooit uw Word-documenten naar verschillende formaten moeten converteren, maar had u een specifieke maateenheid nodig voor uw lay-out? Of u nu te maken heeft met inches, centimeters of punten, het is van cruciaal belang dat uw document tijdens het conversieproces zijn integriteit behoudt. In deze zelfstudie laten we zien hoe u de functie voor maateenheden in Aspose.Words voor .NET kunt configureren. Deze krachtige functie zorgt ervoor dat de opmaak van uw document precies zo blijft als u deze nodig heeft bij het converteren naar ODT-indeling (Open Document Text).
 
 ## Vereisten
 
@@ -38,7 +38,7 @@ Eerst moet u het pad naar uw documentmap definiëren. Dit is waar uw Word-docume
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
- Vervangen`"YOUR DOCUMENTS DIRECTORY"` met het daadwerkelijke pad naar uw map. Dit zorgt ervoor dat uw code weet waar uw Word-document kan worden gevonden.
+ Vervangen`"YOUR DOCUMENTS DIRECTORY"` met het daadwerkelijke pad naar uw directory. Dit zorgt ervoor dat uw code weet waar uw Word-document kan worden gevonden.
 
 ## Stap 2: Laad het Word-document
 
@@ -89,7 +89,7 @@ Aspose.Words voor .NET is een krachtige bibliotheek voor het programmatisch werk
  Ja, u kunt een gratis proefversie van Aspose.Words voor .NET downloaden van[hier](https://releases.aspose.com/).
 
 ### Waar kan ik documentatie vinden voor Aspose.Words voor .NET?
- U kunt toegang krijgen tot uitgebreide documentatie voor Aspose.Words voor .NET op[deze link](https://reference.aspose.com/words/net/).
+ U kunt toegang krijgen tot uitgebreide documentatie voor Aspose.Words voor .NET op[deze koppeling](https://reference.aspose.com/words/net/).
 
 ### Hoe kan ik ondersteuning krijgen voor Aspose.Words voor .NET?
- Voor ondersteuning kunt u het Aspose.Words-forum bezoeken op[deze link](https://forum.aspose.com/c/words/8).
+ Voor ondersteuning kunt u het Aspose.Words-forum bezoeken op[deze koppeling](https://forum.aspose.com/c/words/8).

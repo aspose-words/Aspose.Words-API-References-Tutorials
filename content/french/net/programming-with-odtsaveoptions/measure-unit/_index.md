@@ -75,7 +75,7 @@ Cette ligne de code enregistre le document converti dans le répertoire spécifi
 
 ## Conclusion
 
-Et voila! En suivant ces étapes, vous pouvez facilement configurer la fonctionnalité d'unité de mesure dans Aspose.Words for .NET pour garantir que la mise en page de votre document est préservée lors de la conversion. Que vous travailliez avec des pouces, des centimètres ou des points, ce didacticiel vous a montré comment contrôler facilement la mise en forme de votre document.
+Et voilà ! En suivant ces étapes, vous pouvez facilement configurer la fonctionnalité d'unité de mesure dans Aspose.Words for .NET pour garantir que la mise en page de votre document est préservée lors de la conversion. Que vous travailliez avec des pouces, des centimètres ou des points, ce didacticiel vous a montré comment contrôler facilement la mise en forme de votre document.
 
 ## FAQ
 

@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-bookmarks/copy-bookmarked-text/
 ---
-## introduzione
+## Introduzione
 
 Ti sei mai trovato a dover copiare sezioni specifiche da un documento Word a un altro? Bene, sei fortunato! In questo tutorial ti spiegheremo come copiare il testo con segnalibri da un documento Word a un altro utilizzando Aspose.Words per .NET. Che tu stia creando un report dinamico o automatizzando la generazione di documenti, questa guida semplificherà il processo per te.
 

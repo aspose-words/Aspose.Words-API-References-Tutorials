@@ -65,7 +65,7 @@ builder.EndTable();
 
 ## 4. lépés: Ismétlődő szakasz létrehozása
 
- Hozzon létre egy`StructuredDocumentTag` (SDT) az ismétlődő szakaszhoz, és leképezi az XML adatokra:
+ Hozzon létre a`StructuredDocumentTag` (SDT) az ismétlődő szakaszhoz, és leképezi az XML adatokra:
 
 ```csharp
 StructuredDocumentTag repeatingSectionSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);

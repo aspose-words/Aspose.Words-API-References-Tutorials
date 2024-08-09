@@ -65,7 +65,7 @@ doc.save("output.pdf", pdfSaveOptions);
 
 Aspose.Words voor Java ondersteunt een breed scala aan uitvoerformaten voor documentconversie. Enkele van de populaire formaten zijn PDF, DOCX, HTML, RTF en meer. U kunt het formaat kiezen dat het beste bij uw behoeften past.
 
-## Geavanceerde mogelijkheden
+## Geavanceerde opties
 
 Voor meer geavanceerde documentconversietaken biedt Aspose.Words extra opties en functies. Verken de documentatie voor meer informatie over watermerken, het samenvoegen van documenten en meer.
 

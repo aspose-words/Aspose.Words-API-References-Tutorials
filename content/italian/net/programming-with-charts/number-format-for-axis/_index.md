@@ -7,7 +7,7 @@ type: docs
 weight: 10
 url: /it/net/programming-with-charts/number-format-for-axis/
 ---
-## introduzione
+## Introduzione
 
 Ehilà! Hai mai lavorato con i grafici nei tuoi documenti e vorresti poter formattare i numeri sul tuo asse per farli sembrare più professionali? Bene, sei fortunato! In questo tutorial, approfondiremo come ottenere questo risultato utilizzando Aspose.Words per .NET. Questa potente libreria ti consente di gestire i documenti Word in un modo semplicissimo. E oggi ci concentreremo sul rinnovamento degli assi del grafico con formati numerici personalizzati.
 
@@ -102,7 +102,7 @@ doc.Save(dataDir + "WorkingWithCharts.NumberFormatForAxis.docx");
 
 ## Conclusione
 
-E il gioco è fatto! Hai formattato con successo i numeri sull'asse Y del tuo grafico utilizzando Aspose.Words per .NET. Ciò non solo conferisce ai tuoi grafici un aspetto più professionale, ma migliora anche la leggibilità. Aspose.Words offre una vasta gamma di funzionalità che possono aiutarti a creare straordinari documenti Word a livello di codice. Quindi, perché non esplorare di più e vedere cos'altro puoi fare?
+Ed ecco qua! Hai formattato con successo i numeri sull'asse Y del tuo grafico utilizzando Aspose.Words per .NET. Ciò non solo conferisce ai tuoi grafici un aspetto più professionale, ma migliora anche la leggibilità. Aspose.Words offre una vasta gamma di funzionalità che possono aiutarti a creare straordinari documenti Word a livello di codice. Quindi, perché non esplorare di più e vedere cos'altro puoi fare?
 
 ## Domande frequenti
 

@@ -94,5 +94,5 @@ Gratulacje! Właśnie nauczyłeś się, jak przejść do określonej komórki ta
  Tak,`DocumentBuilder` umożliwia wstawianie obrazów, tabel i innych elementów w bieżącej pozycji w komórce.
 
 ### Jak zapisać zmodyfikowany dokument?
- Użyj`Save` metoda`Document` class, aby zapisać zmiany. Na przykład:`doc.Save(dataDir + "UpdatedTables.docx");`
+ Skorzystaj z`Save` metoda`Document` class, aby zapisać zmiany. Na przykład:`doc.Save(dataDir + "UpdatedTables.docx");`
 

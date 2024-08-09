@@ -65,7 +65,7 @@ private void Untangle(Document doc)
 Här är en steg-för-steg förklaring av vad koden gör:
 
  Vi itererar igenom alla bokmärken i dokumentet med hjälp av en`foreach` slinga.
-För varje bokmärke hämtar vi den överordnade raden för både bokmärkets start (`bookmark.BookmarkStart`) och bokmärkesänden (`bookmark.BookmarkEnd` ) använda`GetAncestor` metod.
+För varje bokmärke hämtar vi den överordnade raden för både bokmärkets start (`bookmark.BookmarkStart`) och bokmärkesänden (`bookmark.BookmarkEnd` ) med hjälp av`GetAncestor` metod.
 Vi kontrollerar sedan om båda raderna hittas (`row1 != null`och`row2 != null`) och om de är intilliggande rader (`row1.NextSibling == row2`). Detta säkerställer att vi bara ändrar bokmärken som sträcker sig över intilliggande rader.
 Om villkoren är uppfyllda flyttar vi bokmärkets slutnod till slutet av sista stycket i den sista cellen i den översta raden (`row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd)`) effektivt reda ut dem.
 

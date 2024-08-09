@@ -96,7 +96,7 @@ Bu satırlar, tercih edilen genişlik türünü ve değerini konsola yazdırarak
 
 ## Çözüm
 
-İşte buyur! Aspose.Words for .NET kullanarak Word belgelerinde tercih edilen genişlikteki tablo hücrelerine ulaşmak, yönetilebilir adımlara bölündüğünde basittir. Bu kılavuzu takip ederek Word belgelerinizdeki tablo özelliklerini kolayca düzenleyebilir, belge yönetimi görevlerinizi çok daha verimli hale getirebilirsiniz.
+Ve işte karşınızda! Aspose.Words for .NET kullanarak Word belgelerinde tercih edilen genişlikteki tablo hücrelerine ulaşmak, yönetilebilir adımlara bölündüğünde basittir. Bu kılavuzu takip ederek Word belgelerinizdeki tablo özelliklerini kolayca düzenleyebilir, belge yönetimi görevlerinizi çok daha verimli hale getirebilirsiniz.
 
 ## SSS'ler
 

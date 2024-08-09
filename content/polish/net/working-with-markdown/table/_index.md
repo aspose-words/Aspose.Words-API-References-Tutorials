@@ -82,7 +82,7 @@ Tworzenie i dostosowywanie tabel w Aspose.Words dla .NET jest proste, gdy już t
  Tak, możesz dodać dowolną liczbę komórek z rzędu, powtarzając`InsertCell()`I`Writeln()` metody.
 
 ### Jak scalić komórki w tabeli?
- Możesz łączyć komórki za pomocą`CellFormat.HorizontalMerge`I`CellFormat.VerticalMerge` nieruchomości.
+ Możesz łączyć komórki za pomocą`CellFormat.HorizontalMerge`I`CellFormat.VerticalMerge` właściwości.
 
 ### Czy można dodawać obrazy do komórek tabeli?
  Absolutnie! Możesz wstawiać obrazy do komórek za pomocą`DocumentBuilder.InsertImage` metoda.

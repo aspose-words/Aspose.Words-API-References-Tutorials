@@ -102,7 +102,7 @@ Para instalar Aspose.Words para Python, use o seguinte comando:
 pip install aspose-words
 ```
 
-### Posso preservar a formatação ao unir documentos?
+### Posso preservar a formatação ao juntar documentos?
 
 Sim, Aspose.Words mantém formatação e estilo consistentes ao juntar ou anexar documentos.
 

@@ -151,7 +151,7 @@ Durch das Anwenden von Stilen und Designs mit Aspose.Words für Python können S
 
 ### Wie kann ich Aspose.Words für Python herunterladen?
 
- Sie können Aspose.Words für Python von der Website herunterladen:[Download-Link](https://releases.aspose.com/words/python/).
+ Sie können Aspose.Words für Python von der Website herunterladen:[Link zum Herunterladen](https://releases.aspose.com/words/python/).
 
 ### Kann ich meine eigenen benutzerdefinierten Stile erstellen?
 

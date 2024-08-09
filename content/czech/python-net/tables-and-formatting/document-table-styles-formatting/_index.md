@@ -26,7 +26,7 @@ Než se ponoříme do specifik stylů a formátování tabulek dokumentů, ujist
     import aspose.words
     ```
 
-3. Načíst dokument: Načtěte existující dokument nebo vytvořte nový pomocí Aspose.Words API.
+3. Načíst dokument: Načtěte existující dokument nebo vytvořte nový pomocí rozhraní API Aspose.Words.
 
 ## Vytváření a vkládání tabulek do dokumentů
 
@@ -108,7 +108,7 @@ Aspose.Words pro Python nabízí řadu možností stylingu, aby byly vaše tabul
     run.font.color = aspose.words.Color.from_rgb(0, 0, 0)
     ```
 
-## Slučování a dělení buněk pro komplexní rozvržení
+## Slučování a rozdělování buněk pro komplexní rozvržení
 
 Vytváření složitých rozložení tabulek často vyžaduje sloučení a rozdělení buněk:
 
