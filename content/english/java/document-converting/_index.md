@@ -27,8 +27,8 @@ Learn how to export documents to PDF using Aspose.Words for Java. This step-by-s
 ### [Converting Documents to Different Formats](./converting-documents-different-formats/)
 Learn how to convert documents to different formats using Aspose.Words for Java. Step-by-step guide for efficient document conversion.
 ### [Converting HTML to Documents](./converting-html-documents/)
-Learn how to convert HTML to Word documents in Java using Aspose.Words. Follow our step-by-step guide for seamless document processing.
+Convert HTML to Word documents effortlessly with Aspose.Words for Java. Learn how to perform this conversion in just a few steps with our comprehensive guide.
 ### [Document Conversion with SaveOptions](./document-conversion-saveoptions/)
-Learn document conversion with Aspose.Words in Java. Step-by-step guide, code examples, and FAQs for seamless Word to PDF conversion.
+Efficiently convert DOCX to EPUB using Aspose.Words for Java. Learn how to customize save options, split content, and export document properties in this step-by-step guide.
 ### [Converting Documents to Images](./converting-documents-images/)
-Learn how to convert documents to images using Aspose.Words for Java. A step-by-step guide for Java developers.
+Learn how to convert Word documents to images using Aspose.Words for Java. Step-by-step guide, complete with code examples and FAQs.
