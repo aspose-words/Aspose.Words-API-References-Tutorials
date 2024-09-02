@@ -43,17 +43,6 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, Aspose.Words!");
 ```
 
-## Customizing Document Elements
-
-You can customize various document elements, such as fonts, styles, and formatting. Here's an example of changing the font size:
-
-```java
-// Java code to change font size
-Run run = (Run) doc.getChildNodes(NodeType.RUN, true).get(0);
-Font font = run.getFont();
-font.setSize(14);
-```
-
 ## Printing the Document
 
 Printing your customized document is simple with Aspose.Words for Java:
