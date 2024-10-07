@@ -64,21 +64,20 @@ Now it's time to create a comment. We'll initialize a new Comment object, specif
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
 ```
 
-## Step 5: Attach the Comment to the Paragraph
+## Step 5: Add Content to the Comment
+
+Finally, we'll add content to the comment. We'll create a new Paragraph and Run to hold the comment text, then add these to the comment.
+
+```csharp
+comment.SetText("Comment text.");
+```
+
+## Step 6: Attach the Comment to the Paragraph
 
 We need to attach the comment to the current paragraph where we added the text. This is done by appending the comment to the paragraph.
 
 ```csharp
 builder.CurrentParagraph.AppendChild(comment);
-```
-
-## Step 6: Add Content to the Comment
-
-Finally, we'll add content to the comment. We'll create a new Paragraph and Run to hold the comment text, then add these to the comment.
-
-```csharp
-comment.Paragraphs.Add(new Paragraph(doc));
-comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
 ```
 
 ## Step 7: Save the Document
