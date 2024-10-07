@@ -32,8 +32,6 @@ using Aspose.Words.Tables;
 
 The first step is to load the Word document you want to work with. This document will contain the bookmarks you need to untangle.
 
-Step 1 Heading: Loading the Document
-
 ```csharp
 Document doc = new Document("path/to/your/document.docx");
 ```
@@ -43,8 +41,6 @@ In this line, we’re simply loading the document from a specified path. Make su
 ## Step 2: Iterate Through Bookmarks
 
 Next, we need to iterate through all the bookmarks in the document. This allows us to access each bookmark and its properties.
-
-Step 2 Heading: Iterating Through Bookmarks
 
 ```csharp
 foreach (Bookmark bookmark in doc.Range.Bookmarks)
@@ -59,8 +55,6 @@ Here, we’re using a `foreach` loop to go through each bookmark in the document
 
 For each bookmark, we need to find the rows that contain the start and end of the bookmark. This is crucial for determining whether the bookmark spans across adjacent rows.
 
-Step 3 Heading: Identifying Rows
-
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
 Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
@@ -71,8 +65,6 @@ In this step, we’re using the `GetAncestor` method to find the parent row of b
 ## Step 4: Check for Adjacent Rows
 
 Before we move the bookmark end, we need to ensure that the bookmark start and end are in adjacent rows. This condition is essential to correctly untangle the bookmark.
-
-Step 4 Heading: Checking Row Adjacency
 
 ```csharp
 if (row1 != null && row2 != null && row1.NextSibling == row2)
@@ -86,8 +78,6 @@ Here, we’re adding a condition to check if both rows are found and if they are
 ## Step 5: Move the Bookmark End
 
 Finally, if the conditions are met, we move the bookmark end node to the end of the last paragraph in the top row’s last cell. This step effectively untangles the bookmark.
-
-Step 5 Heading: Moving the Bookmark End
 
 ```csharp
 row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
