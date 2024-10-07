@@ -1,4 +1,3 @@
-
 ---
 title: Set Footnote And Endnote Position
 linktitle: Set Footnote And End Note Position
