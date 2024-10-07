@@ -60,7 +60,6 @@ Here, you specify the directory where the document will be saved and initialize 
 Insert the first cell into the table with a fixed width of 40 points. This will ensure that this cell always maintains a width of 40 points regardless of the table size.
 
 ```csharp
-
 // Insert an absolute sized cell.
 builder.InsertCell();
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPoints(40);
