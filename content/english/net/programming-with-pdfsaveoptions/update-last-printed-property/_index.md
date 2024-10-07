@@ -53,10 +53,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 We need to configure the PDF save options to update the last printed property. Create a new instance of `PdfSaveOptions` and set the `UpdateLastPrintedProperty` property to `true`.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions 
-{ 
-	UpdateLastPrintedProperty = true 
-};
+PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
 ## Step 5: Save the Document as PDF
