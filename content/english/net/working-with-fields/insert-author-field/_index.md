@@ -69,7 +69,7 @@ Document doc = new Document();
 2. Add a Paragraph: Next, we'll add a paragraph to the document.
 
 ```csharp
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+Paragraph para = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
 This paragraph will be where we insert our author field.
