@@ -66,47 +66,6 @@ builder.ParagraphFormat.StyleName = "Heading 3";
 builder.Writeln("Details");
 ```
 
-## Adding More Customizations
-
-### Customizing Font and Paragraphs
-
-You can further customize the font and paragraph settings to suit your needs. For instance, changing the font size, color, and alignment.
-
-```csharp
-builder.Font.Size = 14;
-builder.Font.Color = System.Drawing.Color.Blue;
-builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-builder.Writeln("Centered Blue Heading");
-```
-
-### Inserting a Table of Contents
-
-A well-structured document often includes a table of contents. Here's how you can insert one using Aspose.Words for .NET.
-
-```csharp
-builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
-doc.UpdateFields();
-```
-
-### Adding Images
-
-Images can make your document more engaging. Let's add an image to our document.
-
-```csharp
-builder.InsertImage("YOUR DOCUMENT DIRECTORY/image.png");
-```
-
-### Using Document Sections
-
-Sections help in organizing content, especially when you need different formatting for different parts of the document.
-
-```csharp
-Section section = doc.Sections.Add();
-DocumentBuilder sectionBuilder = new DocumentBuilder(section);
-sectionBuilder.ParagraphFormat.StyleName = "Heading 1";
-sectionBuilder.Writeln("New Section Heading");
-```
-
 ## Conclusion
 
 Creating a well-formatted document is not just about aesthetics; it also enhances readability and professionalism. With Aspose.Words for .NET, you have a powerful tool at your disposal to achieve this effortlessly. Follow this guide, experiment with different settings, and soon you'll be a pro at document formatting!
