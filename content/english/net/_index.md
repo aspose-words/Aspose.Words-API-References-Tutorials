@@ -13,6 +13,7 @@ is_root: true
 ## Tutorials
 | Title | Description |
 | --- | --- | 
+| [AI Powered Document Processing](./ai-powered-document-processing/) | Unlock your potential with Aspose.Words for .NET tutorials. Learn to enhance document processing with AI-powered solutions for quick and effective results. |  
 | [Apply License](./apply-license/) | Tutorials of different variations of applying licensing to Aspose.Words for .NET including apply license from file, stream and metered license. |  
 | [Enable OpenType features](./enable-opentype-features/) | Learn how to enable OpenType features in Word documents with Aspose.Words for .NET. The tutorials will guide you through the steps to enable advanced features of OpenType fonts. |  
 | [Words Processing with Comments](./working-with-comments/) | Explore comment management features in Word documents with Aspose.Words for .NET. Learn how to add, delete, search, and format comments using step-by-step tutorials. |  

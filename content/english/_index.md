@@ -14,6 +14,7 @@ These tutorials offer clear and detailed instructions on how to work with Micros
 {{% /alert %}}
 
 These are links to some useful resources:
+- [AI Powered Document Processing](./net/ai-powered-document-processing/)
 - [Apply License](./net/apply-license/)   
 - [Enable OpenType features](./net/enable-opentype-features/)   
 - [Working with Comments](./net/working-with-comments/)   
