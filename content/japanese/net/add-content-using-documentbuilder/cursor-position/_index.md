@@ -16,14 +16,14 @@ url: /ja/net/add-content-using-documentbuilder/cursor-position/
 コードに進む前に、必要なものがすべて揃っていることを確認しましょう。
 
 1. C# の基本的な理解: このチュートリアルでは、C# と .NET の概念に精通していることを前提としています。
-2.  Visual Studioがインストールされている: 最新バージョンであればどれでも構いません。まだインストールしていない場合は、[サイト](https://visualstudio.microsoft.com/).
+2.  Visual Studioがインストールされている: 最新バージョンであれば問題ありません。まだインストールしていない場合は、[サイト](https://visualstudio.microsoft.com/).
 3. Aspose.Words for .NET ライブラリ: このライブラリをダウンロードしてインストールする必要があります。[ここ](https://releases.aspose.com/words/net/).
 
 準備が整ったら、設定に進みましょう。
 
 ### 新しいプロジェクトを作成する
 
-まず最初に、Visual Studio を起動して、新しい C# コンソール アプリを作成します。これが今日の遊び場になります。
+まず最初に、Visual Studio を起動して新しい C# コンソール アプリを作成します。これが今日の遊び場になります。
 
 ### Aspose.Words for .NET をインストールする
 
@@ -55,7 +55,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ### コンテンツを追加する
 
-カーソルの動作を確認するために、ドキュメントに段落を追加してみましょう。
+カーソルの動作を確認するには、ドキュメントに段落を追加してみましょう。
 
 ```csharp
 builder.Writeln("Hello, Aspose.Words!");
@@ -86,7 +86,7 @@ Console.WriteLine("\nCursor is currently at paragraph: " + curParagraph.GetText(
 
 ### 特定の段落に移動する
 
-カーソルを特定の段落に移動するには、ドキュメント ノードを移動する必要があります。手順は次のとおりです。
+カーソルを特定の段落に移動するには、ドキュメント ノードを移動する必要があります。方法は次のとおりです。
 
 ```csharp
 builder.MoveTo(doc.FirstSection.Body.Paragraphs[0]);

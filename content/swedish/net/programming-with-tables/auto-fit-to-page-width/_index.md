@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
- De`Aspose.Words` namespace innehåller kärnklasserna för att manipulera Word-dokument, while`Aspose.Words.Tables` är speciellt för hantering av bord.
+De`Aspose.Words` namespace innehåller kärnklasserna för att manipulera Word-dokument, while`Aspose.Words.Tables` är speciellt för hantering av bord.
 
 ## Steg 1: Konfigurera ditt dokument
 
@@ -68,7 +68,7 @@ Nu när du har tabellen kan du använda den automatiska anpassningsfunktionen. D
 table.AutoFit(AutoFitBehavior.AutoFitToWindow);
 ```
 
- De`AutoFit` metod med`AutoFitBehavior.AutoFitToWindow` ser till att bordets bredd justeras för att passa hela sidans bredd.
+De`AutoFit` metod med`AutoFitBehavior.AutoFitToWindow` ser till att bordets bredd justeras för att passa hela sidans bredd.
 
 ## Steg 4: Spara det ändrade dokumentet
 

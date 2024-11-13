@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- De`Document` klass initierar ett nytt dokument, och`DocumentBuilder` hjälper oss att enkelt lägga till innehåll i vårt dokument.
+De`Document` klass initierar ett nytt dokument, och`DocumentBuilder` hjälper oss att enkelt lägga till innehåll i vårt dokument.
 
 ## Steg 2: Infoga sektioner
 
@@ -76,7 +76,7 @@ builder.InsertBreak(BreakType.SectionBreakContinuous);
 builder.Writeln("Section 2. Protected.");
 ```
 
- De`InsertBreak` metoden infogar en kontinuerlig sektionsbrytning, vilket gör att vi kan ha olika inställningar för varje sektion.
+De`InsertBreak` metoden infogar en kontinuerlig sektionsbrytning, vilket gör att vi kan ha olika inställningar för varje sektion.
 
 ## Steg 3: Skydda dokumentet
 

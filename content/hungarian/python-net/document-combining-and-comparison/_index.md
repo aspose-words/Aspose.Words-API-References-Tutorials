@@ -39,7 +39,7 @@ Fedezze fel a strukturált dokumentumcímkék (SDT) erejét a tartalom rendszere
 ### [Stílusok és témák alkalmazása a dokumentumok átalakításához](./apply-styles-themes-documents/)
 Fokozza a dokumentumok esztétikáját az Aspose.Words for Python segítségével. Könnyedén alkalmazhat stílusokat, témákat és testreszabásokat.
 ### [Átfogó tartalomjegyzék készítése Word dokumentumokhoz](./generate-table-contents/)
-Készítsen olvasóbarát tartalomjegyzéket az Aspose.Words for Python segítségével. Tanulja meg zökkenőmentesen létrehozni, testreszabni és frissíteni a dokumentum szerkezetét.
+Készítsen olvasóbarát tartalomjegyzéket az Aspose.Words for Python segítségével. Tanulja meg zökkenőmentesen létrehozni, testreszabni és frissíteni dokumentuma szerkezetét.
 ### [Dokumentumok védelme fejlett védelmi technikákkal](./secure-documents-protection/)
 Biztosítsa dokumentumait fejlett védelemmel az Aspose.Words for Python használatával. Ismerje meg, hogyan adhat hozzá jelszavakat, titkosíthat tartalmat, hogyan alkalmazhat digitális aláírásokat stb.
 ### [A digitális aláírások és a hitelesség kezelése](./manage-digital-signatures/)

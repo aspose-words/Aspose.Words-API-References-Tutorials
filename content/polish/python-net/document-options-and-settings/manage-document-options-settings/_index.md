@@ -1,8 +1,8 @@
 ---
-title: Dostosowywanie opcji i ustawień dokumentu pod kątem wydajności
-linktitle: Dostosowywanie opcji i ustawień dokumentu pod kątem wydajności
-second_title: Aspose.Words API do zarządzania dokumentami w języku Python
-description: Dowiedz się, jak efektywnie manipulować dokumentami programu Word przy użyciu Aspose.Words dla języka Python. Przewodnik krok po kroku z kodem źródłowym.
+title: Dostrajanie opcji i ustawień dokumentu w celu zwiększenia wydajności
+linktitle: Dostrajanie opcji i ustawień dokumentu w celu zwiększenia wydajności
+second_title: Aspose.Words API zarządzania dokumentami Python
+description: Dowiedz się, jak skutecznie manipulować dokumentami Worda za pomocą Aspose.Words dla Pythona. Przewodnik krok po kroku z kodem źródłowym.
 type: docs
 weight: 11
 url: /pl/python-net/document-options-and-settings/manage-document-options-settings/
@@ -10,11 +10,11 @@ url: /pl/python-net/document-options-and-settings/manage-document-options-settin
 
 ## Wprowadzenie do Aspose.Words dla Pythona:
 
-Aspose.Words dla języka Python to bogaty w funkcje interfejs API, który umożliwia programistom programowe tworzenie, manipulowanie i przetwarzanie dokumentów programu Word. Zapewnia obszerny zestaw klas i metod do obsługi różnych elementów dokumentu, takich jak tekst, akapity, tabele, obrazy i inne.
+Aspose.Words for Python to bogate w funkcje API, które umożliwia programistom programowe tworzenie, manipulowanie i przetwarzanie dokumentów Word. Zapewnia rozbudowany zestaw klas i metod do obsługi różnych elementów dokumentu, takich jak tekst, akapity, tabele, obrazy i inne.
 
 ## Konfigurowanie środowiska:
 
-Aby rozpocząć, upewnij się, że masz zainstalowany język Python w swoim systemie. Możesz zainstalować bibliotekę Aspose.Words za pomocą pip:
+Aby rozpocząć, upewnij się, że masz zainstalowany Python w swoim systemie. Możesz zainstalować bibliotekę Aspose.Words za pomocą pip:
 
 ```python
 pip install aspose-words
@@ -22,7 +22,7 @@ pip install aspose-words
 
 ## Tworzenie nowego dokumentu:
 
-Aby utworzyć nowy dokument programu Word, wykonaj następujące kroki:
+Aby utworzyć nowy dokument programu Word, wykonaj następujące czynności:
 
 ```python
 import aspose.words as aw
@@ -32,7 +32,7 @@ doc = aw.Document()
 
 ## Modyfikowanie właściwości dokumentu:
 
-Dostosowanie właściwości dokumentu, takich jak tytuł, autor i słowa kluczowe, jest niezbędne dla właściwej organizacji i możliwości wyszukiwania:
+Dostosowanie właściwości dokumentu, takich jak tytuł, autor i słowa kluczowe, jest niezbędne do jego właściwej organizacji i możliwości wyszukiwania:
 
 ```python
 doc.built_in_document_properties["Title"].value = "My Document"
@@ -42,7 +42,7 @@ doc.built_in_document_properties["Keywords"].value = "Python, Aspose.Words, Docu
 
 ## Zarządzanie ustawieniami strony:
 
-Kontrolowanie wymiarów strony, marginesów i orientacji gwarantuje, że dokument będzie wyglądał zgodnie z zamierzeniami:
+Kontrolując wymiary strony, marginesy i orientację, możesz mieć pewność, że dokument będzie wyglądał zgodnie z oczekiwaniami:
 
 ```python
 page_setup = doc.sections[0].page_setup
@@ -53,7 +53,7 @@ page_setup.top_margin = aw.ConvertUtil.inch_to_point(1.5)
 page_setup.bottom_margin = aw.ConvertUtil.inch_to_point(1.5)
 ```
 
-## Kontrolowanie czcionki i formatowania:
+## Kontrola czcionki i formatowania:
 
 Zastosuj spójne formatowanie do tekstu dokumentu za pomocą Aspose.Words:
 
@@ -75,7 +75,7 @@ header.append_paragraph("My Custom Header")
 
 ## Dodawanie i formatowanie tabel:
 
-Tabele są integralną częścią wielu dokumentów. Oto jak je utworzyć i sformatować:
+Tabele są integralną częścią wielu dokumentów. Oto jak je tworzyć i formatować:
 
 ```python
 table = doc.tables.add(section.body)
@@ -84,9 +84,9 @@ for row in table.rows:
         cell.paragraphs[0].text = "Cell Text"
 ```
 
-## Dołączanie obrazów i hiperłączy:
+## Dodawanie obrazów i hiperłączy:
 
-Wzbogać swój dokument obrazami i hiperłączami:
+Wzbogać swój dokument obrazami i hiperlinkami:
 
 ```python
 shape = aw.drawing.Shape(doc, aw.drawing.ShapeType.IMAGE)
@@ -105,13 +105,13 @@ doc.save("output.pdf", aw.SaveFormat.PDF)
 
 ## Wniosek:
 
-Aspose.Words dla Pythona umożliwia programistom efektywne zarządzanie opcjami i ustawieniami dokumentów, oferując szczegółową kontrolę nad każdym aspektem tworzenia i manipulowania dokumentami. Intuicyjne API oraz obszerna dokumentacja czynią go nieocenionym narzędziem do zadań związanych z dokumentacją.
+Aspose.Words for Python umożliwia programistom wydajne zarządzanie opcjami i ustawieniami dokumentów, oferując szczegółową kontrolę nad każdym aspektem tworzenia i manipulowania dokumentami. Jego intuicyjny interfejs API i obszerna dokumentacja sprawiają, że jest to nieocenione narzędzie do zadań związanych z dokumentami.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Jak mogę zainstalować Aspose.Words dla Pythona?
+### Jak zainstalować Aspose.Words dla języka Python?
 
-Możesz zainstalować Aspose.Words dla Pythona za pomocą następującego polecenia pip:
+Możesz zainstalować Aspose.Words dla języka Python przy użyciu następującego polecenia pip:
 
 ```python
 pip install aspose-words
@@ -119,11 +119,11 @@ pip install aspose-words
 
 ### Czy mogę tworzyć nagłówki i stopki za pomocą Aspose.Words?
 
-Tak, możesz tworzyć niestandardowe nagłówki i stopki za pomocą Aspose.Words i dostosowywać je do swoich wymagań.
+Tak, możesz tworzyć niestandardowe nagłówki i stopki za pomocą Aspose.Words i dostosowywać je do swoich potrzeb.
 
-### Jak dostosować marginesy strony za pomocą interfejsu API?
+### Jak dostosować marginesy strony za pomocą API?
 
- Marginesy strony można dostosować za pomocą opcji`PageSetup` klasa. Na przykład:
+ Możesz dostosować marginesy strony za pomocą`PageSetup` klasa. Na przykład:
 
 ```python
 page_setup = doc.sections[0].page_setup
@@ -131,14 +131,14 @@ page_setup.left_margin = aw.ConvertUtil.inch_to_point(1)
 page_setup.right_margin = aw.ConvertUtil.inch_to_point(1)
 ```
 
-### Czy mogę wyeksportować dokument do formatu PDF za pomocą Aspose.Words?
+### Czy mogę wyeksportować mój dokument do formatu PDF za pomocą Aspose.Words?
 
- Oczywiście możesz wyeksportować swój dokument do różnych formatów, w tym PDF, za pomocą`save` metoda. Na przykład:
+ Oczywiście, możesz eksportować swój dokument do różnych formatów, w tym PDF, korzystając z`save` metoda. Na przykład:
 
 ```python
 doc.save("output.pdf", aw.SaveFormat.PDF)
 ```
 
-### Gdzie mogę znaleźć więcej informacji na temat Aspose.Words dla Pythona?
+### Gdzie mogę znaleźć więcej informacji o Aspose.Words dla języka Python?
 
- Możesz zapoznać się z dokumentacją pod adresem[Tutaj](https://reference.aspose.com/words/python-net/).
+ Dokumentację można znaleźć pod adresem[Tutaj](https://reference.aspose.com/words/python-net/).

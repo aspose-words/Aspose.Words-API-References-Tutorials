@@ -10,24 +10,24 @@ url: /id/java/document-printing/printing-specific-document-pages/
 
 ## Perkenalan
 
-Mencetak halaman tertentu dari suatu dokumen dapat menjadi persyaratan umum dalam berbagai aplikasi. Aspose.Words untuk Java menyederhanakan tugas ini dengan menyediakan serangkaian fitur lengkap untuk mengelola dokumen Word. Dalam tutorial ini, kita akan membuat aplikasi Java yang memuat dokumen Word dan hanya mencetak halaman yang diinginkan.
+Mencetak halaman tertentu dari sebuah dokumen dapat menjadi persyaratan umum dalam berbagai aplikasi. Aspose.Words untuk Java menyederhanakan tugas ini dengan menyediakan serangkaian fitur yang komprehensif untuk mengelola dokumen Word. Dalam tutorial ini, kita akan membuat aplikasi Java yang memuat dokumen Word dan hanya mencetak halaman yang diinginkan.
 
 ## Prasyarat
 
 Sebelum kita mulai, pastikan Anda memiliki prasyarat berikut:
 
-- Kit Pengembangan Java (JDK) diinstal
-- Lingkungan Pengembangan Terintegrasi (IDE) seperti Eclipse atau IntelliJ IDEA
-- Aspose.Words untuk perpustakaan Java
+- Java Development Kit (JDK) terinstal
+- Lingkungan Pengembangan Terpadu (IDE) seperti Eclipse atau IntelliJ IDEA
+- Aspose.Words untuk pustaka Java
 - Pengetahuan dasar tentang pemrograman Java
 
 ## Buat Proyek Java Baru
 
-Mari kita mulai dengan membuat proyek Java baru di IDE pilihan Anda. Anda dapat menamainya sesuka Anda. Proyek ini akan berfungsi sebagai ruang kerja kami untuk mencetak halaman dokumen tertentu.
+Mari kita mulai dengan membuat proyek Java baru di IDE pilihan Anda. Anda dapat menamainya apa pun yang Anda suka. Proyek ini akan berfungsi sebagai ruang kerja untuk mencetak halaman dokumen tertentu.
 
 ## Tambahkan Ketergantungan Aspose.Words
 
-Untuk menggunakan Aspose.Words for Java dalam proyek Anda, Anda perlu menambahkan file JAR Aspose.Words sebagai dependensi. Anda dapat mengunduh perpustakaan dari situs web Aspose atau menggunakan alat pembangunan seperti Maven atau Gradle untuk mengelola dependensi.
+Untuk menggunakan Aspose.Words untuk Java dalam proyek Anda, Anda perlu menambahkan berkas JAR Aspose.Words sebagai dependensi. Anda dapat mengunduh pustaka dari situs web Aspose atau menggunakan alat bantu seperti Maven atau Gradle untuk mengelola dependensi.
 
 ```xml
 <!-- Add Aspose.Words dependency in your pom.xml if using Maven -->
@@ -38,24 +38,24 @@ Untuk menggunakan Aspose.Words for Java dalam proyek Anda, Anda perlu menambahka
 </dependency>
 ```
 
-## Muat Dokumen Word
+## Memuat Dokumen Word
 
-Dalam kode Java Anda, impor kelas yang diperlukan dari perpustakaan Aspose.Words dan muat dokumen Word yang ingin Anda cetak. Berikut ini contoh sederhananya:
+Dalam kode Java Anda, impor kelas yang diperlukan dari pustaka Aspose.Words dan muat dokumen Word yang ingin Anda cetak. Berikut contoh sederhananya:
 
 ```java
 import com.aspose.words.*;
 
 public class PrintSpecificPages {
     public static void main(String[] args) throws Exception {
-        // Muat dokumen Word
+        // Memuat dokumen Word
         Document doc = new Document("path/to/your/document.docx");
     }
 }
 ```
 
-## Tentukan Halaman yang akan Dicetak
+## Tentukan Halaman yang Akan Dicetak
 
- Sekarang, mari tentukan halaman mana yang ingin Anda cetak. Anda dapat menggunakan`PageRange` kelas untuk menentukan rentang halaman yang Anda butuhkan. Misalnya, untuk mencetak halaman 3 sampai 5:
+ Sekarang, mari tentukan halaman mana yang ingin Anda cetak. Anda dapat menggunakan`PageRange` kelas untuk menentukan rentang halaman yang Anda perlukan. Misalnya, untuk mencetak halaman 3 hingga 5:
 
 ```java
 PageRange pageRange = new PageRange(3, 5);
@@ -63,7 +63,7 @@ PageRange pageRange = new PageRange(3, 5);
 
 ## Cetak Dokumen
 
-Dengan rentang halaman yang ditentukan, Anda dapat mencetak dokumen menggunakan fitur pencetakan Aspose.Words. Berikut cara mencetak halaman tertentu ke printer:
+Setelah rentang halaman ditentukan, Anda dapat mencetak dokumen menggunakan fitur pencetakan Aspose.Words. Berikut ini cara mencetak halaman yang ditentukan ke printer:
 
 ```java
 //Buat objek PrintOptions
@@ -76,26 +76,26 @@ doc.print(printOptions);
 
 ## Kesimpulan
 
-Dalam tutorial ini, kita telah mempelajari cara mencetak halaman tertentu dari dokumen Word menggunakan Aspose.Words untuk Java. Pustaka canggih ini menyederhanakan proses pengelolaan dan pencetakan dokumen secara terprogram, menjadikannya pilihan tepat bagi pengembang Java. Jangan ragu untuk menjelajahi lebih banyak fitur dan kemampuannya untuk meningkatkan tugas pemrosesan dokumen Anda.
+Dalam tutorial ini, kita telah mempelajari cara mencetak halaman tertentu dari dokumen Word menggunakan Aspose.Words untuk Java. Pustaka canggih ini menyederhanakan proses pengelolaan dan pencetakan dokumen secara terprogram, menjadikannya pilihan yang sangat baik bagi pengembang Java. Jangan ragu untuk menjelajahi lebih banyak fitur dan kemampuannya untuk meningkatkan tugas pemrosesan dokumen Anda.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Bagaimana cara mencetak beberapa halaman yang tidak berurutan dari dokumen Word?
 
- Untuk mencetak beberapa halaman yang tidak berurutan, Anda dapat membuat beberapa halaman`PageRange` objek dan tentukan rentang halaman yang diinginkan. Lalu, tambahkan ini`PageRange` objek ke`PageRanges` susunan di`PrintOptions` obyek.
+ Untuk mencetak beberapa halaman yang tidak berurutan, Anda dapat membuat beberapa`PageRange` objek dan tentukan rentang halaman yang diinginkan. Kemudian, tambahkan ini`PageRange` objek ke`PageRanges` susunan dalam`PrintOptions` obyek.
 
-### Apakah Aspose.Words untuk Java kompatibel dengan format dokumen yang berbeda?
+### Apakah Aspose.Words untuk Java kompatibel dengan berbagai format dokumen?
 
-Ya, Aspose.Words untuk Java mendukung berbagai format dokumen, termasuk DOCX, DOC, PDF, RTF, dan banyak lagi. Anda dapat dengan mudah mengonversi format-format ini menggunakan perpustakaan.
+Ya, Aspose.Words untuk Java mendukung berbagai format dokumen, termasuk DOCX, DOC, PDF, RTF, dan banyak lagi. Anda dapat dengan mudah mengonversi antarformat ini menggunakan pustaka tersebut.
 
 ### Bisakah saya mencetak bagian tertentu dari dokumen Word?
 
  Ya, Anda dapat mencetak bagian tertentu dari dokumen Word dengan menentukan halaman dalam bagian tersebut menggunakan`PageRange`kelas. Ini memberi Anda kendali terperinci atas apa yang akan dicetak.
 
-### Bagaimana cara mengatur opsi pencetakan tambahan, seperti orientasi halaman dan ukuran kertas?
+### Bagaimana cara mengatur opsi cetak tambahan, seperti orientasi halaman dan ukuran kertas?
 
- Anda dapat mengatur pilihan pencetakan tambahan, seperti orientasi halaman dan ukuran kertas, dengan mengkonfigurasi`PrintOptions` objek sebelum mencetak dokumen. Gunakan metode seperti`setOrientation`Dan`setPaperSize` untuk menyesuaikan pengaturan pencetakan.
+ Anda dapat mengatur opsi cetak tambahan, seperti orientasi halaman dan ukuran kertas, dengan mengonfigurasi`PrintOptions` objek sebelum mencetak dokumen. Gunakan metode seperti`setOrientation` Dan`setPaperSize` untuk menyesuaikan pengaturan cetak.
 
 ### Apakah ada versi uji coba Aspose.Words untuk Java yang tersedia?
 
-Ya, Anda dapat mengunduh versi uji coba Aspose.Words untuk Java dari situs web. Hal ini memungkinkan Anda menjelajahi fitur perpustakaan dan melihat apakah perpustakaan memenuhi persyaratan Anda sebelum membeli lisensi.
+Ya, Anda dapat mengunduh versi uji coba Aspose.Words untuk Java dari situs web. Dengan demikian, Anda dapat menjelajahi fitur-fitur pustaka dan melihat apakah pustaka tersebut memenuhi persyaratan Anda sebelum membeli lisensi.

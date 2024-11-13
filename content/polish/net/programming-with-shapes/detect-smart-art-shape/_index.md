@@ -1,8 +1,8 @@
 ---
-title: Wykryj inteligentny kształt grafiki
-linktitle: Wykryj inteligentny kształt grafiki
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Z tego obszernego przewodnika dowiesz się, jak wykrywać kształty SmartArt w dokumentach programu Word za pomocą Aspose.Words dla .NET. Idealny do automatyzacji obiegu dokumentów.
+title: Wykryj kształt Smart Art
+linktitle: Wykryj kształt Smart Art
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak wykrywać kształty SmartArt w dokumentach Word za pomocą Aspose.Words dla .NET dzięki temu kompleksowemu przewodnikowi. Idealne do automatyzacji przepływu pracy nad dokumentami.
 type: docs
 weight: 10
 url: /pl/net/programming-with-shapes/detect-smart-art-shape/
@@ -10,18 +10,18 @@ url: /pl/net/programming-with-shapes/detect-smart-art-shape/
 
 ## Wstęp
 
-Hej tam! Czy kiedykolwiek musiałeś programowo pracować z grafiką SmartArt w dokumentach programu Word? Niezależnie od tego, czy automatyzujesz raporty, tworzysz dynamiczne dokumenty, czy po prostu zajmujesz się przetwarzaniem dokumentów, Aspose.Words dla .NET pomoże Ci. W tym samouczku omówimy, jak wykrywać kształty SmartArt w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Każdy krok omówimy w szczegółowym, łatwym do zrozumienia przewodniku. Pod koniec tego artykułu będziesz w stanie bez wysiłku identyfikować kształty SmartArt w dowolnym dokumencie programu Word!
+Cześć! Czy kiedykolwiek musiałeś programowo pracować ze SmartArt w dokumentach Word? Niezależnie od tego, czy automatyzujesz raporty, tworzysz dynamiczne dokumenty, czy po prostu zagłębiasz się w przetwarzanie dokumentów, Aspose.Words dla .NET ma dla Ciebie rozwiązanie. W tym samouczku pokażemy, jak wykrywać kształty SmartArt w dokumentach Word za pomocą Aspose.Words dla .NET. Podzielimy każdy krok na szczegółowe, łatwe do naśladowania przewodniki. Do końca tego artykułu będziesz w stanie bez wysiłku identyfikować kształty SmartArt w dowolnym dokumencie Word!
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zagłębimy się w szczegóły, upewnijmy się, że wszystko mamy skonfigurowane:
+Zanim przejdziemy do szczegółów, upewnijmy się, że wszystko jest skonfigurowane:
 
-1. Podstawowa znajomość języka C#: Powinieneś znać składnię i koncepcje języka C#.
-2.  Aspose.Words dla .NET: Pobierz[Tutaj](https://releases.aspose.com/words/net/) . Jeśli dopiero odkrywasz, możesz zacząć od[bezpłatna wersja próbna](https://releases.aspose.com/).
-3. Visual Studio: każda najnowsza wersja powinna działać, ale zalecana jest najnowsza wersja.
-4. .NET Framework: Upewnij się, że jest zainstalowany w twoim systemie.
+1. Podstawowa wiedza o języku C#: Powinieneś znać składnię i koncepcje języka C#.
+2.  Aspose.Words dla .NET: Pobierz[Tutaj](https://releases.aspose.com/words/net/) Jeśli dopiero zaczynasz eksplorować, możesz zacząć od[bezpłatny okres próbny](https://releases.aspose.com/).
+3. Visual Studio: powinna działać każda nowsza wersja, ale zaleca się korzystanie z najnowszej wersji.
+4. .NET Framework: Upewnij się, że jest zainstalowany w systemie.
 
-Gotowy, aby zacząć? Wspaniały! Wskoczmy od razu.
+Gotowy, żeby zacząć? Super! Zaczynajmy.
 
 ## Importuj przestrzenie nazw
 
@@ -34,31 +34,31 @@ using Aspose.Words;
 using Aspose.Words.Drawing;
 ```
 
-Te przestrzenie nazw są niezbędne do tworzenia, manipulowania i analizowania dokumentów programu Word.
+Te przestrzenie nazw są niezbędne do tworzenia, edytowania i analizowania dokumentów programu Word.
 
 ## Krok 1: Konfigurowanie katalogu dokumentów
 
-Najpierw musimy określić katalog, w którym przechowywane są nasze dokumenty. Pomaga to Aspose.Words zlokalizować pliki, które chcemy przeanalizować.
+Najpierw musimy określić katalog, w którym przechowywane są nasze dokumenty. Pomaga to Aspose.Words zlokalizować pliki, które chcemy analizować.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do dokumentów.
+ Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do Twoich dokumentów.
 
 ## Krok 2: Ładowanie dokumentu
 
-Następnie załadujemy dokument programu Word zawierający kształty SmartArt, które chcemy wykryć.
+Następnie załadujemy dokument Word zawierający kształty SmartArt, które chcemy wykryć.
 
 ```csharp
 Document doc = new Document(dataDir + "Smart Art.docx");
 ```
 
- Tutaj inicjujemy a`Document` obiekt ścieżką do naszego pliku Worda.
+ Tutaj inicjujemy`Document` obiekt zawierający ścieżkę do naszego pliku Word.
 
 ## Krok 3: Wykrywanie kształtów SmartArt
 
-Teraz następuje ekscytująca część – wykrywanie kształtów SmartArt w dokumencie. Policzymy liczbę kształtów zawierających grafikę SmartArt.
+Teraz nadchodzi ekscytująca część – wykrywanie kształtów SmartArt w dokumencie. Zliczymy liczbę kształtów zawierających SmartArt.
 
 ```csharp
 int count = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().Count(shape => shape.HasSmartArt);
@@ -66,40 +66,40 @@ int count = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().Count(shape =>
 Console.WriteLine("The document has {0} shapes with SmartArt.", count);
 ```
 
- Na tym etapie używamy LINQ do filtrowania i zliczania kształtów zawierających grafikę SmartArt. The`GetChildNodes` Metoda pobiera wszystkie kształty, a metoda`HasSmartArt` Właściwość sprawdza, czy kształt zawiera grafikę SmartArt.
+ W tym kroku używamy LINQ do filtrowania i liczenia kształtów, które mają SmartArt.`GetChildNodes` Metoda ta pobiera wszystkie kształty i`HasSmartArt` Właściwość sprawdza, czy kształt zawiera SmartArt.
 
 ## Krok 4: Uruchomienie kodu
 
-Po napisaniu kodu uruchom go w programie Visual Studio. Konsola wyświetli liczbę kształtów SmartArt znalezionych w dokumencie.
+Po napisaniu kodu uruchom go w Visual Studio. Konsola wyświetli liczbę kształtów SmartArt znalezionych w dokumencie.
 
 ```plaintext
 The document has X shapes with SmartArt.
 ```
 
-Zamień „X” na rzeczywistą liczbę kształtów SmartArt w dokumencie.
+Zastąp „X” faktyczną liczbą kształtów SmartArt w dokumencie.
 
 ## Wniosek
 
- masz to! Pomyślnie nauczyłeś się wykrywać kształty SmartArt w dokumentach programu Word przy użyciu Aspose.Words dla .NET. W tym samouczku omówiono konfigurowanie środowiska, ładowanie dokumentów, wykrywanie kształtów SmartArt i uruchamianie kodu. Aspose.Words oferuje szeroką gamę funkcji, więc koniecznie zapoznaj się z[Dokumentacja API](https://reference.aspose.com/words/net/) aby uwolnić jego pełny potencjał.
+ masz to! Udało Ci się nauczyć, jak wykrywać kształty SmartArt w dokumentach Worda za pomocą Aspose.Words dla .NET. Ten samouczek obejmował konfigurację środowiska, ładowanie dokumentów, wykrywanie kształtów SmartArt i uruchamianie kodu. Aspose.Words oferuje szeroki zakres funkcji, więc koniecznie zapoznaj się z[Dokumentacja API](https://reference.aspose.com/words/net/) aby w pełni wykorzystać jego potencjał.
 
 ## Często zadawane pytania
 
-### 1. Co to jest Aspose.Words dla .NET?
+### 1. Czym jest Aspose.Words dla .NET?
 
-Aspose.Words dla .NET to potężna biblioteka, która umożliwia programistom programowe tworzenie, manipulowanie i konwertowanie dokumentów programu Word. Jest idealny do automatyzacji zadań związanych z dokumentami.
+Aspose.Words for .NET to potężna biblioteka, która umożliwia programistom programowe tworzenie, manipulowanie i konwertowanie dokumentów Word. Jest idealna do automatyzacji zadań związanych z dokumentami.
 
 ### 2. Czy mogę używać Aspose.Words dla .NET za darmo?
 
- Możesz wypróbować Aspose.Words dla .NET przy użyciu pliku[bezpłatna wersja próbna](https://releases.aspose.com/). Aby używać długoterminowo, musisz kupić licencję.
+ Możesz wypróbować Aspose.Words dla .NET przy użyciu[bezpłatny okres próbny](https://releases.aspose.com/). Do długoterminowego użytkowania należy zakupić licencję.
 
 ### 3. Jak wykryć inne typy kształtów w dokumencie?
 
- Możesz zmodyfikować zapytanie LINQ, aby sprawdzić inne właściwości lub typy kształtów. Patrz[dokumentacja](https://reference.aspose.com/words/net/) aby uzyskać więcej szczegółów.
+ Możesz zmodyfikować zapytanie LINQ, aby sprawdzić inne właściwości lub typy kształtów. Zapoznaj się z[dokumentacja](https://reference.aspose.com/words/net/) po więcej szczegółów.
 
-### 4. Jak uzyskać wsparcie dla Aspose.Words dla .NET?
+### 4. Jak uzyskać pomoc techniczną dotyczącą Aspose.Words dla .NET?
 
-Możesz uzyskać wsparcie, odwiedzając stronę[Forum wsparcia Aspose](https://forum.aspose.com/c/words/8).
+Możesz uzyskać pomoc odwiedzając stronę[Forum wsparcia Aspose](https://forum.aspose.com/c/words/8).
 
 ### 5. Czy mogę programowo manipulować kształtami SmartArt?
 
- Tak, Aspose.Words umożliwia programowe manipulowanie kształtami SmartArt. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) szczegółowe instrukcje.
+ Tak, Aspose.Words pozwala programowo manipulować kształtami SmartArt. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) Aby uzyskać szczegółowe instrukcje.

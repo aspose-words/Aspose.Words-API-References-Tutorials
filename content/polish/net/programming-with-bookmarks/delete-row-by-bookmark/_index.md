@@ -1,38 +1,38 @@
 ---
-title: Usuń wiersz według zakładki w dokumencie programu Word
-linktitle: Usuń wiersz według zakładki w dokumencie programu Word
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak usunąć wiersz po zakładce w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby efektywnie zarządzać dokumentami.
+title: Usuń wiersz według zakładki w dokumencie Word
+linktitle: Usuń wiersz według zakładki w dokumencie Word
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak usunąć wiersz za pomocą zakładki w dokumencie Word za pomocą Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby skutecznie zarządzać dokumentami.
 type: docs
 weight: 10
 url: /pl/net/programming-with-bookmarks/delete-row-by-bookmark/
 ---
 ## Wstęp
 
-Usuwanie wierszy po zakładkach w dokumencie programu Word może wydawać się skomplikowane, ale dzięki Aspose.Words dla .NET jest to proste. Ten przewodnik przeprowadzi Cię przez wszystko, co musisz wiedzieć, aby skutecznie wykonać to zadanie. Gotowy do nurkowania? Zacznijmy!
+Usuwanie wiersza za pomocą zakładki w dokumencie Word może wydawać się skomplikowane, ale dzięki Aspose.Words dla .NET jest to bułka z masłem. Ten przewodnik przeprowadzi Cię przez wszystko, co musisz wiedzieć, aby sprawnie wykonać to zadanie. Gotowy do działania? Zaczynajmy!
 
-## Warunki wstępne
+## Wymagania wstępne
 
 Zanim przejdziemy do kodu, upewnij się, że masz następujące elementy:
 
--  Aspose.Words dla .NET: Upewnij się, że masz zainstalowany Aspose.Words dla .NET. Można go pobrać z[Strona z wydaniami Aspose](https://releases.aspose.com/words/net/).
-- Środowisko programistyczne: Visual Studio lub dowolne inne IDE obsługujące programowanie .NET.
-- Podstawowa znajomość języka C#: Znajomość programowania w języku C# pomoże Ci śledzić tutorial.
+-  Aspose.Words dla .NET: Upewnij się, że masz zainstalowany Aspose.Words dla .NET. Możesz go pobrać ze strony[Strona wydań Aspose](https://releases.aspose.com/words/net/).
+- Środowisko programistyczne: Visual Studio lub inne środowisko IDE obsługujące programowanie w środowisku .NET.
+- Podstawowa wiedza o języku C#: Znajomość programowania w języku C# pomoże Ci zrozumieć treść kursu.
 
 ## Importuj przestrzenie nazw
 
-Aby rozpocząć, musisz zaimportować niezbędne przestrzenie nazw. Te przestrzenie nazw udostępniają klasy i metody wymagane do pracy z dokumentami programu Word w Aspose.Words.
+Na początek musisz zaimportować niezbędne przestrzenie nazw. Te przestrzenie nazw udostępniają klasy i metody wymagane do pracy z dokumentami Word w Aspose.Words.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Podzielmy proces na łatwe do wykonania etapy. Każdy krok zostanie szczegółowo wyjaśniony, aby upewnić się, że wiesz, jak usunąć wiersz po zakładce w dokumencie programu Word.
+Podzielmy proces na łatwe do opanowania kroki. Każdy krok zostanie szczegółowo wyjaśniony, aby upewnić się, że rozumiesz, jak usunąć wiersz za pomocą zakładki w dokumencie Word.
 
 ## Krok 1: Załaduj dokument
 
-Najpierw musisz załadować dokument Word zawierający zakładkę. Będzie to dokument, z którego chcesz usunąć wiersz.
+Najpierw musisz załadować dokument Word zawierający zakładkę. To będzie ten dokument, z którego chcesz usunąć wiersz.
 
 ```csharp
 Document doc = new Document("your-document.docx");
@@ -40,15 +40,15 @@ Document doc = new Document("your-document.docx");
 
 ## Krok 2: Znajdź zakładkę
 
-Następnie znajdź zakładkę w dokumencie. Zakładka pomoże Ci zidentyfikować konkretny wiersz, który chcesz usunąć.
+Następnie zlokalizuj zakładkę w dokumencie. Zakładka pomoże Ci zidentyfikować konkretny wiersz, który chcesz usunąć.
 
 ```csharp
 Bookmark bookmark = doc.Range.Bookmarks["YourBookmarkName"];
 ```
 
-## Krok 3: Zidentyfikuj rząd
+## Krok 3: Zidentyfikuj wiersz
 
- Po utworzeniu zakładki musisz zidentyfikować wiersz zawierający zakładkę. Wiąże się to z przejściem do przodka zakładki, czyli typu`Row`.
+ Gdy już masz zakładkę, musisz zidentyfikować wiersz, który ją zawiera. Wiąże się to z przejściem do przodka zakładki, który jest typu`Row`.
 
 ```csharp
 Row row = (Row)bookmark?.BookmarkStart.GetAncestor(typeof(Row));
@@ -56,7 +56,7 @@ Row row = (Row)bookmark?.BookmarkStart.GetAncestor(typeof(Row));
 
 ## Krok 4: Usuń wiersz
 
-Po zidentyfikowaniu wiersza możesz przystąpić do usunięcia go z dokumentu. Upewnij się, że obsługujesz wszelkie potencjalne wartości null, aby uniknąć wyjątków.
+Teraz, gdy zidentyfikowałeś wiersz, możesz usunąć go z dokumentu. Upewnij się, że obsługujesz wszelkie potencjalne wartości null, aby uniknąć wyjątków.
 
 ```csharp
 row?.Remove();
@@ -64,7 +64,7 @@ row?.Remove();
 
 ## Krok 5: Zapisz dokument
 
-Po usunięciu wiersza zapisz dokument, aby odzwierciedlić zmiany. To zakończy proces usuwania wierszy według zakładek.
+Po usunięciu wiersza zapisz dokument, aby odzwierciedlić zmiany. To zakończy proces usuwania wiersza według zakładki.
 
 ```csharp
 doc.Save("output-document.docx");
@@ -72,21 +72,21 @@ doc.Save("output-document.docx");
 
 ## Wniosek
 
-I masz to! Usuwanie wierszy po zakładkach w dokumencie programu Word przy użyciu Aspose.Words dla .NET jest proste, jeśli podzielisz je na proste kroki. Ta metoda zapewnia precyzyjne kierowanie i usuwanie wierszy na podstawie zakładek, dzięki czemu zadania związane z zarządzaniem dokumentami są bardziej wydajne.
+I masz! Usuwanie wiersza za pomocą zakładki w dokumencie Word przy użyciu Aspose.Words dla .NET jest proste, gdy rozbijesz to na proste kroki. Ta metoda zapewnia, że możesz precyzyjnie wybrać i usunąć wiersze na podstawie zakładek, co sprawia, że zadania związane z zarządzaniem dokumentami są bardziej wydajne.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Czy mogę usunąć wiele wierszy za pomocą zakładek?
-Tak, możesz usunąć wiele wierszy, iterując po wielu zakładkach i stosując tę samą metodę.
+### Czy mogę usunąć wiele wierszy używając zakładek?
+Tak, możesz usunąć wiele wierszy, przechodząc przez wiele zakładek i stosując tę samą metodę.
 
 ### Co się stanie, jeśli zakładka nie zostanie znaleziona?
- Jeśli zakładka nie zostanie znaleziona, plik`row` zmienna będzie miała wartość null, a`Remove` metoda nie zostanie wywołana, co zapobiegnie błędom.
+ Jeżeli zakładka nie zostanie znaleziona,`row` zmienna będzie nullem, a`Remove` Metoda nie zostanie wywołana, co zapobiegnie błędom.
 
 ### Czy mogę cofnąć usunięcie po zapisaniu dokumentu?
-Po zapisaniu dokumentu zmiany są trwałe. Jeśli chcesz cofnąć zmiany, pamiętaj o utworzeniu kopii zapasowej.
+Po zapisaniu dokumentu zmiany są trwałe. Upewnij się, że masz kopię zapasową, jeśli musisz cofnąć zmiany.
 
-### Czy można usunąć wiersz na podstawie innych kryteriów?
-Tak, Aspose.Words dla .NET zapewnia różne metody nawigacji i manipulowania elementami dokumentu w oparciu o różne kryteria.
+### Czy można usunąć wiersz w oparciu o inne kryteria?
+Tak, Aspose.Words for .NET udostępnia różne metody nawigacji i manipulowania elementami dokumentu na podstawie różnych kryteriów.
 
-### Czy ta metoda działa w przypadku wszystkich typów dokumentów programu Word?
-Ta metoda działa w przypadku dokumentów kompatybilnych z Aspose.Words dla .NET. Upewnij się, że format Twojego dokumentu jest obsługiwany.
+### Czy ta metoda działa dla wszystkich typów dokumentów Word?
+Ta metoda działa dla dokumentów zgodnych z Aspose.Words dla .NET. Upewnij się, że format Twojego dokumentu jest obsługiwany.

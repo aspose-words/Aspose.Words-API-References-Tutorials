@@ -2,24 +2,24 @@
 title: Ganti Hyperlink
 linktitle: Ganti Hyperlink
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mengganti hyperlink di dokumen .NET menggunakan Aspose.Words untuk manajemen dokumen yang efisien dan pembaruan konten dinamis.
+description: Pelajari cara mengganti hyperlink dalam dokumen .NET menggunakan Aspose.Words untuk manajemen dokumen yang efisien dan pembaruan konten yang dinamis.
 type: docs
 weight: 10
 url: /id/net/working-with-fields/replace-hyperlinks/
 ---
 ## Perkenalan
 
-Dalam dunia pengembangan .NET, mengelola dan memanipulasi dokumen adalah tugas penting, yang sering kali memerlukan penanganan hyperlink dalam dokumen secara efisien. Aspose.Words untuk .NET memberikan kemampuan canggih untuk mengganti hyperlink dengan lancar, memastikan dokumen Anda tertaut secara dinamis ke sumber daya yang tepat. Tutorial ini mendalami bagaimana Anda dapat mencapai hal ini menggunakan Aspose.Words untuk .NET, memandu Anda langkah demi langkah melalui proses tersebut.
+Dalam dunia pengembangan .NET, mengelola dan memanipulasi dokumen merupakan tugas penting, yang sering kali memerlukan penanganan hyperlink yang efisien dalam dokumen. Aspose.Words untuk .NET menyediakan kemampuan canggih untuk mengganti hyperlink dengan mudah, memastikan dokumen Anda terhubung secara dinamis ke sumber daya yang tepat. Tutorial ini membahas secara mendalam cara mencapainya menggunakan Aspose.Words untuk .NET, dengan memandu Anda langkah demi langkah melalui prosesnya.
 
 ## Prasyarat
 
 Sebelum mulai mengganti hyperlink dengan Aspose.Words untuk .NET, pastikan Anda memiliki hal berikut:
 
-- Visual Studio: Diinstal dan disiapkan untuk pengembangan .NET.
--  Aspose.Words untuk .NET: Diunduh dan direferensikan dalam proyek Anda. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+- Visual Studio: Terpasang dan disiapkan untuk pengembangan .NET.
+-  Aspose.Words untuk .NET: Diunduh dan dirujuk dalam proyek Anda. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
 - Keakraban dengan C#: Pemahaman dasar untuk menulis dan mengkompilasi kode.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
 Pertama, pastikan untuk menyertakan namespace yang diperlukan dalam proyek Anda:
 
@@ -39,9 +39,9 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Hyperlinks.docx");
 ```
 
- Mengganti`"Hyperlinks.docx"` dengan jalur ke dokumen Anda yang sebenarnya.
+ Mengganti`"Hyperlinks.docx"` dengan jalur ke dokumen Anda sebenarnya.
 
-## Langkah 2: Iterasi Melalui Bidang
+## Langkah 2: Ulangi Melalui Bidang
 
 Ulangi setiap bidang dalam dokumen untuk menemukan dan mengganti hyperlink:
 
@@ -52,7 +52,7 @@ foreach (Field field in doc.Range.Fields)
     {
         FieldHyperlink hyperlink = (FieldHyperlink)field;
         
-        // Periksa apakah hyperlink tersebut bukan link lokal (abaikan bookmark).
+        // Periksa apakah hyperlink tersebut bukan tautan lokal (abaikan bookmark).
         if (hyperlink.SubAddress != null)
             continue;
         
@@ -71,25 +71,25 @@ Terakhir, simpan dokumen yang dimodifikasi dengan hyperlink yang diganti:
 doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
 ```
 
- Mengganti`"WorkingWithFields.ReplaceHyperlinks.docx"` dengan jalur file keluaran yang Anda inginkan.
+ Mengganti`"WorkingWithFields.ReplaceHyperlinks.docx"` dengan jalur berkas keluaran yang Anda inginkan.
 
 ## Kesimpulan
 
-Mengganti hyperlink dalam dokumen menggunakan Aspose.Words untuk .NET sangatlah mudah dan meningkatkan sifat dinamis dokumen Anda. Baik memperbarui URL atau mengubah konten dokumen secara terprogram, Aspose.Words menyederhanakan tugas-tugas ini, memastikan manajemen dokumen yang efisien.
+Mengganti hyperlink dalam dokumen menggunakan Aspose.Words untuk .NET mudah dan meningkatkan sifat dinamis dokumen Anda. Baik memperbarui URL atau mengubah konten dokumen secara terprogram, Aspose.Words menyederhanakan tugas-tugas ini, memastikan manajemen dokumen yang efisien.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
-### Bisakah Aspose.Words for .NET menangani struktur dokumen yang kompleks?
-Ya, Aspose.Words mendukung struktur kompleks seperti tabel, gambar, dan hyperlink dengan lancar.
+### Bisakah Aspose.Words untuk .NET menangani struktur dokumen yang kompleks?
+Ya, Aspose.Words mendukung struktur kompleks seperti tabel, gambar, dan hyperlink dengan mulus.
 
 ### Apakah ada versi uji coba yang tersedia untuk Aspose.Words untuk .NET?
  Ya, Anda dapat mengunduh uji coba gratis dari[Di Sini](https://releases.aspose.com/).
 
-### Di mana saya dapat menemukan dokumentasi Aspose.Words untuk .NET?
- Dokumentasi terperinci tersedia[Di Sini](https://reference.aspose.com/words/net/).
+### Di mana saya dapat menemukan dokumentasi untuk Aspose.Words untuk .NET?
+Dokumentasi terperinci tersedia[Di Sini](https://reference.aspose.com/words/net/).
 
-### Bagaimana saya bisa mendapatkan lisensi sementara untuk Aspose.Words untuk .NET?
+### Bagaimana cara mendapatkan lisensi sementara untuk Aspose.Words untuk .NET?
  Lisensi sementara dapat diperoleh[Di Sini](https://purchase.aspose.com/temporary-license/).
 
-### Opsi dukungan apa yang tersedia untuk Aspose.Words untuk .NET?
- Anda bisa mendapatkan dukungan komunitas atau mengirimkan pertanyaan di[Aspose.Forum kata-kata](https://forum.aspose.com/c/words/8).
+### Pilihan dukungan apa yang tersedia untuk Aspose.Words untuk .NET?
+ Anda bisa mendapatkan dukungan komunitas atau mengajukan pertanyaan di[Forum Aspose.Words](https://forum.aspose.com/c/words/8).

@@ -77,7 +77,7 @@ doc.FontSettings = fontSettings;
 
 ## Steg 6: Spara dokumentet
 
-Spara slutligen det ändrade dokumentet. Du kan spara det i vilket format som helst som stöds av Aspose.Words. I det här fallet kommer vi att spara den som en PDF.
+Slutligen, spara det ändrade dokumentet. Du kan spara det i vilket format som helst som stöds av Aspose.Words. I det här fallet kommer vi att spara den som en PDF.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.NotoFallbackSettings.pdf");

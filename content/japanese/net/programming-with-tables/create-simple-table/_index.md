@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-すべての設定が完了したので、Word 文書に簡単な表を作成するプロセスを詳しく説明します。
+これですべての準備が整いましたので、Word 文書で簡単な表を作成するプロセスを詳しく説明します。
 
 ## ステップ1: ドキュメントディレクトリを設定する
 
@@ -113,7 +113,7 @@ doc.Save(dataDir + "WorkingWithTables.CreateSimpleTable.docx");
 
 ## 結論
 
-これで完了です。Aspose.Words for .NET を使用して、Word 文書に簡単な表を作成しました。プロセスを管理しやすいステップに分割することで、理解と実装が容易になりました。これで、ニーズに合わせてさまざまな表構造とコンテンツを試すことができます。コーディングを楽しんでください。
+これで完了です。Aspose.Words for .NET を使用して、Word 文書に簡単な表を作成しました。プロセスを管理しやすいステップに分割することで、理解と実装が簡単になりました。これで、ニーズに合わせてさまざまな表構造とコンテンツを試すことができます。コーディングを楽しんでください。
 
 ## よくある質問
 
@@ -124,7 +124,7 @@ Aspose.Words for .NET は、開発者がプログラムによって Word ドキ�
 はい、Aspose.Words for .NET は、VB.NET や C# など、.NET フレームワーク上で実行されるさまざまなプログラミング言語をサポートしています。
 
 ### Aspose.Words for .NET の無料試用版はありますか?
-はい、無料トライアルはここからダウンロードできます。[ここ](https://releases.aspose.com/).
+はい、無料トライアルは以下からダウンロードできます。[ここ](https://releases.aspose.com/).
 
 ### Aspose.Words for .NET のサポートを受けるにはどうすればよいですか?
  Aspose.Wordsにアクセスしてサポートを受けることができます。[サポートフォーラム](https://forum.aspose.com/c/words/8).

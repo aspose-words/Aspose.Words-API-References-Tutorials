@@ -1,28 +1,28 @@
 ---
 title: Dodaj wartości daty i godziny do osi wykresu
 linktitle: Dodaj wartości daty i godziny do osi wykresu
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak dodać wartości daty i godziny do osi wykresu za pomocą Aspose.Words dla .NET w tym kompleksowym przewodniku krok po kroku.
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak dodać wartości daty i godziny do osi wykresu za pomocą Aspose.Words dla .NET, korzystając z tego kompleksowego przewodnika krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/programming-with-charts/date-time-values-to-axis/
 ---
 ## Wstęp
 
-Tworzenie wykresów w dokumentach może być skutecznym sposobem wizualizacji danych. W przypadku danych szeregów czasowych dodanie wartości daty i godziny na osi wykresu ma kluczowe znaczenie dla przejrzystości. W tym samouczku przeprowadzimy Cię przez proces dodawania wartości daty i godziny do osi wykresu za pomocą Aspose.Words dla .NET. Ten przewodnik krok po kroku pomoże Ci skonfigurować środowisko, napisać kod i zrozumieć każdą część procesu. Zanurzmy się!
+Tworzenie wykresów w dokumentach może być skutecznym sposobem wizualizacji danych. Podczas pracy z danymi szeregów czasowych dodawanie wartości daty i godziny do osi wykresu jest kluczowe dla przejrzystości. W tym samouczku przeprowadzimy Cię przez proces dodawania wartości daty i godziny do osi wykresu przy użyciu Aspose.Words dla .NET. Ten przewodnik krok po kroku pomoże Ci skonfigurować środowisko, napisać kod i zrozumieć każdą część procesu. Zanurzmy się!
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zaczniemy, upewnij się, że masz następujące wymagania wstępne:
+Zanim zaczniemy, upewnij się, że spełnione są następujące wymagania wstępne:
 
-1. Visual Studio lub dowolne środowisko .NET IDE: Do pisania i uruchamiania kodu .NET potrzebne jest środowisko programistyczne.
-2.  Aspose.Words dla .NET: Powinieneś mieć zainstalowaną bibliotekę Aspose.Words dla .NET. Można go pobrać z[Tutaj](https://releases.aspose.com/words/net/).
-3. Podstawowa znajomość języka C#: W tym samouczku założono, że masz podstawową wiedzę na temat programowania w języku C#.
-4.  Ważna licencja Aspose: Możesz uzyskać tymczasową licencję od[Tutaj](https://purchase.aspose.com/temporary-license/).
+1. Visual Studio lub dowolne środowisko IDE .NET: potrzebujesz środowiska programistycznego, aby pisać i uruchamiać kod .NET.
+2.  Aspose.Words dla .NET: Powinieneś mieć zainstalowaną bibliotekę Aspose.Words dla .NET. Możesz ją pobrać z[Tutaj](https://releases.aspose.com/words/net/).
+3. Podstawowa znajomość języka C#: W tym samouczku zakładamy, że posiadasz podstawową wiedzę na temat programowania w języku C#.
+4.  Ważna licencja Aspose: Licencję tymczasową można uzyskać od[Tutaj](https://purchase.aspose.com/temporary-license/).
 
 ## Importuj przestrzenie nazw
 
-Na początek upewnij się, że w projekcie zaimportowano niezbędne przestrzenie nazw. Ten krok jest kluczowy dla uzyskania dostępu do klas i metod Aspose.Words.
+Na początek upewnij się, że masz niezbędne przestrzenie nazw zaimportowane do swojego projektu. Ten krok jest kluczowy dla dostępu do klas i metod Aspose.Words.
 
 ```csharp
 using System;
@@ -33,15 +33,15 @@ using Aspose.Words.Drawing.Charts;
 
 ## Krok 1: Skonfiguruj katalog dokumentów
 
-Najpierw musisz zdefiniować katalog, w którym zostanie zapisany dokument. Jest to ważne dla uporządkowania plików i zapewnienia prawidłowego działania kodu.
+Najpierw musisz zdefiniować katalog, w którym zostanie zapisany Twój dokument. Jest to ważne dla uporządkowania plików i zapewnienia, że Twój kod działa poprawnie.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Krok 2: Utwórz nowy dokument i narzędzie DocumentBuider
+## Krok 2: Utwórz nowy dokument i DocumentBuilder
 
- Następnie utwórz nową instancję pliku`Document` klasa i A`DocumentBuilder` obiekt. Obiekty te pomogą Ci w tworzeniu dokumentu i manipulowaniu nim.
+ Następnie utwórz nową instancję`Document` klasa i`DocumentBuilder` obiekt. Te obiekty pomogą Ci budować i manipulować Twoim dokumentem.
 
 ```csharp
 Document doc = new Document();
@@ -50,16 +50,16 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Krok 3: Wstaw wykres do dokumentu
 
- Teraz wstaw wykres do swojego dokumentu za pomocą`DocumentBuilder` obiekt. W tym przykładzie używamy wykresu kolumnowego, ale możesz wybrać także inne typy.
+ Teraz wstaw wykres do dokumentu za pomocą`DocumentBuilder` obiekt. W tym przykładzie używamy wykresu kolumnowego, ale możesz wybrać również inne typy.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Krok 4: Wyczyść istniejącą serię
+## Krok 4: Wyczyść istniejące serie
 
-Wyczyść wszystkie istniejące serie na wykresie, aby mieć pewność, że zaczynasz od czystej karty. Ten krok jest niezbędny w przypadku danych niestandardowych.
+Wyczyść wszystkie istniejące serie na wykresie, aby mieć pewność, że zaczynasz od pustej karty. Ten krok jest niezbędny w przypadku danych niestandardowych.
 
 ```csharp
 chart.Series.Clear();
@@ -67,7 +67,7 @@ chart.Series.Clear();
 
 ## Krok 5: Dodaj wartości daty i godziny do serii
 
-Dodaj wartości daty i godziny do serii wykresów. Ten krok polega na utworzeniu tablic dla dat i odpowiadających im wartości.
+Dodaj wartości daty i godziny do serii wykresu. Ten krok obejmuje tworzenie tablic dla dat i odpowiadających im wartości.
 
 ```csharp
 chart.Series.Add("Aspose Series 1",
@@ -81,7 +81,7 @@ chart.Series.Add("Aspose Series 1",
 
 ## Krok 6: Skonfiguruj oś X
 
-Ustaw skalowanie i znaczniki dla osi X. Dzięki temu daty będą wyświetlane prawidłowo i w odpowiednich odstępach czasu.
+Ustaw skalowanie i znaczniki osi X. Dzięki temu daty będą wyświetlane poprawnie i w odpowiednich odstępach czasu.
 
 ```csharp
 ChartAxis xAxis = chart.AxisX;
@@ -95,7 +95,7 @@ xAxis.MinorTickMark = AxisTickMark.Outside;
 
 ## Krok 7: Zapisz dokument
 
-Na koniec zapisz dokument we wskazanym katalogu. Ten krok kończy proces, a Twój dokument powinien teraz zawierać wykres z wartościami daty i godziny na osi X.
+Na koniec zapisz dokument w określonym katalogu. Ten krok kończy proces, a Twój dokument powinien teraz zawierać wykres z wartościami daty i godziny na osi X.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
@@ -103,25 +103,25 @@ doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 
 ## Wniosek
 
-Dodawanie wartości daty i godziny do osi wykresu w dokumencie jest prostym procesem dzięki Aspose.Words dla .NET. Wykonując kroki opisane w tym samouczku, możesz utworzyć przejrzyste i pouczające wykresy, które skutecznie wizualizują dane szeregów czasowych. Niezależnie od tego, czy przygotowujesz raporty, prezentacje, czy jakikolwiek dokument wymagający szczegółowej reprezentacji danych, Aspose.Words zapewnia narzędzia potrzebne do osiągnięcia sukcesu.
+Dodawanie wartości daty i godziny do osi wykresu w dokumencie to prosty proces dzięki Aspose.Words dla .NET. Postępując zgodnie z krokami opisanymi w tym samouczku, możesz tworzyć przejrzyste i informacyjne wykresy, które skutecznie wizualizują dane szeregów czasowych. Niezależnie od tego, czy przygotowujesz raporty, prezentacje czy jakikolwiek dokument wymagający szczegółowej reprezentacji danych, Aspose.Words zapewnia narzędzia potrzebne do osiągnięcia sukcesu.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Czy mogę używać innych typów wykresów w Aspose.Words dla .NET?
+### Czy mogę używać innych typów wykresów z Aspose.Words dla .NET?
 
 Tak, Aspose.Words obsługuje różne typy wykresów, w tym liniowe, słupkowe, kołowe i inne.
 
 ### Jak mogę dostosować wygląd mojego wykresu?
 
-Możesz dostosować wygląd, uzyskując dostęp do właściwości wykresu i ustawiając style, kolory i nie tylko.
+Możesz dostosować wygląd wykresu, uzyskując dostęp do jego właściwości i ustawiając style, kolory itp.
 
 ### Czy można dodać wiele serii do wykresu?
 
- Absolutnie! Możesz dodać wiele serii do swojego wykresu, wywołując metodę`Series.Add` metodę wielokrotnie z różnymi danymi.
+ Oczywiście! Możesz dodać wiele serii do swojego wykresu, wywołując`Series.Add` metodę wielokrotnie z różnymi danymi.
 
-### Co się stanie, jeśli będę musiał dynamicznie aktualizować dane wykresu?
+### Co zrobić, jeśli muszę dynamicznie aktualizować dane na wykresie?
 
-Możesz dynamicznie aktualizować dane wykresu, programowo manipulując właściwościami serii i osi w oparciu o swoje wymagania.
+Dane na wykresie można aktualizować dynamicznie, manipulując właściwościami serii i osi programowo zgodnie ze swoimi wymaganiami.
 
 ### Gdzie mogę znaleźć bardziej szczegółową dokumentację Aspose.Words dla .NET?
 

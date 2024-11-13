@@ -1,50 +1,50 @@
 ---
-title: Wstaw pływający obraz do dokumentu programu Word
-linktitle: Wstaw pływający obraz do dokumentu programu Word
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak wstawić pływający obraz do dokumentu programu Word za pomocą Aspose.Words dla .NET, korzystając ze szczegółowego przewodnika krok po kroku. Idealny do ulepszania dokumentów.
+title: Wstaw obraz pływający do dokumentu Word
+linktitle: Wstaw obraz pływający do dokumentu Word
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak wstawić pływający obraz do dokumentu Word za pomocą Aspose.Words dla .NET dzięki temu szczegółowemu przewodnikowi krok po kroku. Idealne do ulepszania dokumentów.
 type: docs
 weight: 10
 url: /pl/net/add-content-using-documentbuilder/insert-floating-image/
 ---
 ## Wstęp
 
-Wyobraź sobie, że tworzysz oszałamiający raport lub propozycję, w której obrazy są idealnie umieszczone, aby uzupełniać tekst. Dzięki Aspose.Words dla .NET możesz to osiągnąć bez wysiłku. Ta biblioteka zapewnia zaawansowane funkcje manipulacji dokumentami, dzięki czemu jest idealnym rozwiązaniem dla programistów. W tym samouczku skupimy się na wstawieniu pływającego obrazu przy użyciu klasy DocumentBuilder. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, ten przewodnik przeprowadzi Cię przez każdy krok.
+Wyobraź sobie tworzenie oszałamiającego raportu lub propozycji, w której obrazy są idealnie rozmieszczone, aby uzupełnić tekst. Dzięki Aspose.Words dla .NET możesz to osiągnąć bez wysiłku. Ta biblioteka zapewnia potężne funkcje do manipulacji dokumentami, co czyni ją rozwiązaniem dla programistów. W tym samouczku skupimy się na wstawianiu pływającego obrazu za pomocą klasy DocumentBuilder. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, ten przewodnik przeprowadzi Cię przez każdy krok.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zagłębimy się w szczegóły, upewnijmy się, że masz wszystko, czego potrzebujesz, aby zacząć:
+Zanim przejdziemy do konkretów, upewnijmy się, że masz wszystko, czego potrzebujesz, aby zacząć:
 
-1.  Aspose.Words dla .NET: Możesz pobrać bibliotekę z[Strona z wydaniami Aspose](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla .NET: Bibliotekę można pobrać ze strony[Strona wydań Aspose](https://releases.aspose.com/words/net/).
 2. Visual Studio: dowolna wersja obsługująca programowanie .NET.
-3. Podstawowa znajomość języka C#: Pomocne będzie zrozumienie podstaw programowania w języku C#.
-4. Plik obrazu: plik obrazu, który chcesz wstawić, na przykład logo lub obraz.
+3. Podstawowa wiedza o języku C#: Przydatna będzie znajomość podstaw programowania w języku C#.
+4. Plik obrazu: Plik obrazu, który chcesz wstawić, np. logo lub zdjęcie.
 
 ## Importuj przestrzenie nazw
 
-Aby użyć Aspose.Words w swoim projekcie, musisz zaimportować niezbędne przestrzenie nazw. Odbywa się to poprzez dodanie następujących wierszy na górze pliku C#:
+Aby użyć Aspose.Words w swoim projekcie, musisz zaimportować niezbędne przestrzenie nazw. Można to zrobić, dodając następujące wiersze na górze pliku C#:
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Drawing;
 ```
 
-Po spełnieniu tych wymagań wstępnych i przestrzeni nazw możemy rozpocząć nasz samouczek.
+Mając te wymagania wstępne i przestrzenie nazw za sobą, możemy rozpocząć nasz samouczek.
 
-Podzielmy proces wstawiania pływającego obrazu do dokumentu programu Word na łatwe do wykonania kroki. Każdy krok zostanie szczegółowo wyjaśniony, abyś mógł go wykonać bez żadnych problemów.
+Podzielmy proces wstawiania pływającego obrazu do dokumentu Word na łatwe do opanowania kroki. Każdy krok zostanie szczegółowo wyjaśniony, aby zapewnić, że będziesz mógł go śledzić bez żadnych przeszkód.
 
 ## Krok 1: Skonfiguruj swój projekt
 
-Najpierw utwórz nowy projekt C# w programie Visual Studio. Dla uproszczenia możesz wybrać aplikację konsolową.
+Najpierw utwórz nowy projekt C# w Visual Studio. Możesz wybrać aplikację konsolową dla uproszczenia.
 
-1. Otwórz Visual Studio i utwórz nowy projekt.
+1. Otwórz program Visual Studio i utwórz nowy projekt.
 2. Wybierz „Aplikacja konsolowa (.NET Core)” i kliknij „Dalej”.
 3. Nazwij swój projekt i wybierz lokalizację, w której chcesz go zapisać. Kliknij „Utwórz”.
-4. Zainstaluj Aspose.Words dla .NET za pomocą Menedżera pakietów NuGet. Kliknij projekt prawym przyciskiem myszy w Eksploratorze rozwiązań, wybierz opcję „Zarządzaj pakietami NuGet” i wyszukaj ciąg „Aspose.Words”. Zainstaluj najnowszą wersję.
+4. Zainstaluj Aspose.Words dla .NET za pomocą NuGet Package Manager. Kliknij prawym przyciskiem myszy swój projekt w Solution Explorer, wybierz „Manage NuGet Packages” i wyszukaj „Aspose.Words”. Zainstaluj najnowszą wersję.
 
-## Krok 2: Zainicjuj dokument i narzędzie DocumentBuider
+## Krok 2: Zainicjuj dokument i DocumentBuilder
 
-Teraz, gdy projekt jest już skonfigurowany, zainicjujmy obiekty Document i DocumentBuilder.
+Teraz gdy Twój projekt jest już skonfigurowany, zainicjujmy obiekty Document i DocumentBuilder.
 
 1.  Utwórz nową instancję`Document` klasa:
 
@@ -58,11 +58,11 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- The`Document` obiekt reprezentuje dokument programu Word, a`DocumentBuilder` pomaga w dodawaniu do niego treści.
+Ten`Document` obiekt reprezentuje dokument Worda, a`DocumentBuilder` pomaga w dodawaniu do niego treści.
 
 ## Krok 3: Zdefiniuj ścieżkę obrazu
 
-Następnie określ ścieżkę do pliku obrazu. Upewnij się, że Twój obraz jest dostępny z katalogu projektu.
+Następnie określ ścieżkę do pliku obrazu. Upewnij się, że obraz jest dostępny z katalogu projektu.
 
 Zdefiniuj katalog obrazu i nazwę pliku obrazu:
 
@@ -71,13 +71,13 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 string imagePath = dataDir + "Transparent background logo.png";
 ```
 
- Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką, w której przechowywany jest obraz.
+ Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką, pod którą przechowywany jest Twój obraz.
 
-## Krok 4: Wstaw pływający obraz
+## Krok 4: Wstaw obraz pływający
 
-Po skonfigurowaniu wszystkiego wstawmy pływający obraz do dokumentu.
+Gdy wszystko jest już skonfigurowane, wstawmy obraz pływający do dokumentu.
 
- Skorzystaj z`InsertImage` metoda`DocumentBuilder` klasa, aby wstawić obraz:
+ Użyj`InsertImage` metoda`DocumentBuilder` klasa do wstawiania obrazu:
 
 ```csharp
 builder.InsertImage(imagePath,
@@ -90,21 +90,21 @@ builder.InsertImage(imagePath,
    WrapType.Square);
 ```
 
-Oto znaczenie poszczególnych parametrów:
-- `imagePath`Ścieżka do pliku obrazu.
-- `RelativeHorizontalPosition.Margin`: Pozycja pozioma względem marginesu.
-- `100`: Poziome odsunięcie od marginesu (w punktach).
-- `RelativeVerticalPosition.Margin`: Pozycja pionowa względem marginesu.
-- `100`: Odsunięcie w pionie od marginesu (w punktach).
+Oto co oznacza każdy parametr:
+- `imagePath`:Ścieżka do pliku obrazu.
+- `RelativeHorizontalPosition.Margin`:Pozycja pozioma względem marginesu.
+- `100`:Odchylenie poziome od marginesu (w punktach).
+- `RelativeVerticalPosition.Margin`:Pozycja pionowa względem marginesu.
+- `100`:Odchylenie pionowe od marginesu (w punktach).
 - `200`: Szerokość obrazu (w punktach).
-- `100`: Wysokość obrazu (w punktach).
-- `WrapType.Square`: styl zawijania tekstu wokół obrazu.
+- `100`:Wysokość obrazu (w punktach).
+- `WrapType.Square`:Styl otaczania obrazu tekstem.
 
 ## Krok 5: Zapisz dokument
 
 Na koniec zapisz dokument w wybranej lokalizacji.
 
-1. Określ ścieżkę pliku wyjściowego:
+1. Podaj ścieżkę do pliku wyjściowego:
 
 ```csharp
 string outputPath = dataDir + "AddContentUsingDocumentBuilder.InsertFloatingImage.docx";
@@ -116,30 +116,30 @@ string outputPath = dataDir + "AddContentUsingDocumentBuilder.InsertFloatingImag
 doc.Save(outputPath);
 ```
 
-Twój dokument Word z pływającym obrazem jest już gotowy!
+Twój dokument Word z pływającym obrazkiem jest już gotowy!
 
 ## Wniosek
 
-Wstawianie pływającego obrazu do dokumentu programu Word za pomocą Aspose.Words dla .NET jest prostym procesem, jeśli zostanie podzielony na łatwe do wykonania kroki. Postępując zgodnie z tym przewodnikiem, możesz dodawać profesjonalnie wyglądające obrazy do swoich dokumentów, poprawiając ich atrakcyjność wizualną. Aspose.Words zapewnia solidny interfejs API, który sprawia, że manipulowanie dokumentami jest dziecinnie proste, niezależnie od tego, czy pracujesz nad raportami, propozycjami, czy jakimkolwiek innym typem dokumentu.
+Wstawianie pływającego obrazu do dokumentu Word za pomocą Aspose.Words dla .NET to prosty proces, gdy jest podzielony na łatwe do opanowania kroki. Postępując zgodnie z tym przewodnikiem, możesz dodawać profesjonalnie wyglądające obrazy do swoich dokumentów, zwiększając ich atrakcyjność wizualną. Aspose.Words zapewnia solidne API, które sprawia, że manipulacja dokumentami jest dziecinnie prosta, niezależnie od tego, czy pracujesz nad raportami, propozycjami czy jakimkolwiek innym typem dokumentu.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Czy mogę wstawić wiele obrazów za pomocą Aspose.Words dla .NET?
+### Czy mogę wstawiać wiele obrazów za pomocą Aspose.Words dla .NET?
 
  Tak, możesz wstawić wiele obrazów, powtarzając`InsertImage` metodę dla każdego obrazu o pożądanych parametrach.
 
 ### Jak zmienić położenie obrazu?
 
- Możesz dostosować`RelativeHorizontalPosition`, `RelativeVerticalPosition`i parametry przesunięcia, aby ustawić obraz zgodnie z potrzebami.
+ Możesz dostosować`RelativeHorizontalPosition`, `RelativeVerticalPosition`i parametry przesunięcia, aby ustawić obraz w żądanym położeniu.
 
-### Jakie inne rodzaje zawijania są dostępne dla obrazów?
+### Jakie inne typy owijania są dostępne dla obrazów?
 
- Aspose.Words obsługuje różne typy zawijania, takie jak`Inline`, `TopBottom`, `Tight`, `Through`i nie tylko. Możesz wybrać ten, który najlepiej pasuje do układu Twojego dokumentu.
+ Aspose.Words obsługuje różne typy zawijania, takie jak:`Inline`, `TopBottom`, `Tight`, `Through`i więcej. Możesz wybrać ten, który najlepiej pasuje do układu Twojego dokumentu.
 
 ### Czy mogę używać różnych formatów obrazów?
 
 Tak, Aspose.Words obsługuje szeroką gamę formatów obrazów, w tym JPEG, PNG, BMP i GIF.
 
-### Jak uzyskać bezpłatną wersję próbną Aspose.Words dla .NET?
+### Jak mogę uzyskać bezpłatną wersję próbną Aspose.Words dla .NET?
 
- Możesz uzyskać bezpłatną wersję próbną od[Aspose bezpłatna strona próbna](https://releases.aspose.com/).
+ Możesz otrzymać bezpłatną wersję próbną[Strona z bezpłatną wersją próbną](https://releases.aspose.com/).

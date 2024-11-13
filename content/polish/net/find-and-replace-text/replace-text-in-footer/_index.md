@@ -1,28 +1,28 @@
 ---
 title: Zamień tekst w stopce
 linktitle: Zamień tekst w stopce
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak zamienić tekst w stopce dokumentu programu Word za pomocą Aspose.Words dla .NET. Postępuj zgodnie z tym przewodnikiem, aby opanować proces zastępowania tekstu za pomocą szczegółowych przykładów.
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak zastąpić tekst w stopce dokumentu Word za pomocą Aspose.Words dla .NET. Postępuj zgodnie z tym przewodnikiem, aby opanować zastępowanie tekstu ze szczegółowymi przykładami.
 type: docs
 weight: 10
 url: /pl/net/find-and-replace-text/replace-text-in-footer/
 ---
 ## Wstęp
 
-Hej tam! Czy jesteś gotowy, aby zanurzyć się w świat manipulacji dokumentami za pomocą Aspose.Words dla .NET? Dzisiaj zajmiemy się ciekawym zadaniem: zamianą tekstu w stopce dokumentu Word. Ten samouczek przeprowadzi Cię krok po kroku przez cały proces. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, ten przewodnik będzie pomocny i łatwy w obsłudze. Zacznijmy więc naszą podróż do opanowania zamiany tekstu w stopkach za pomocą Aspose.Words dla .NET!
+Cześć! Jesteś gotowy, aby zanurzyć się w świecie manipulacji dokumentami za pomocą Aspose.Words dla .NET? Dzisiaj zajmiemy się ciekawym zadaniem: zamianą tekstu w stopce dokumentu Word. Ten samouczek przeprowadzi Cię przez cały proces krok po kroku. Niezależnie od tego, czy jesteś doświadczonym programistą, czy dopiero zaczynasz, ten przewodnik okaże się pomocny i łatwy do naśladowania. Więc zacznijmy naszą podróż, aby opanować zamianę tekstu w stopkach za pomocą Aspose.Words dla .NET!
 
-## Warunki wstępne
+## Wymagania wstępne
 
 Zanim przejdziemy do kodu, jest kilka rzeczy, które musisz mieć na miejscu:
 
-1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowany Aspose.Words dla .NET. Można go pobrać z[Strona z wydaniami Aspose](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowany Aspose.Words dla .NET. Możesz go pobrać ze strony[Strona wydań Aspose](https://releases.aspose.com/words/net/).
 2. Środowisko programistyczne: Będziesz potrzebować środowiska programistycznego, takiego jak Visual Studio.
-3. Podstawowa znajomość języka C#: Zrozumienie podstaw języka C# pomoże Ci postępować zgodnie z kodem.
-4. Przykładowy dokument: dokument programu Word ze stopką do pracy. W tym samouczku użyjemy pliku „Footer.docx”.
+3. Podstawowa wiedza o języku C#: Znajomość podstaw języka C# pomoże Ci śledzić kod.
+4. Przykładowy dokument: Dokument Word ze stopką do pracy. W tym samouczku użyjemy „Footer.docx”.
 
 ## Importuj przestrzenie nazw
 
-Na początek zaimportujmy niezbędne przestrzenie nazw. Umożliwią nam one pracę z Aspose.Words i obsługę manipulacji dokumentami.
+Najpierw zaimportujmy niezbędne przestrzenie nazw. Umożliwią nam one pracę z Aspose.Words i obsługę manipulacji dokumentami.
 
 ```csharp
 using Aspose.Words;
@@ -31,7 +31,7 @@ using Aspose.Words.Replacing;
 
 ## Krok 1: Załaduj swój dokument
 
- Na początek musimy załadować dokument Word zawierający tekst stopki, który chcemy zastąpić. Określimy ścieżkę do dokumentu i użyjemy`Document` klasę, aby go załadować.
+ Na początek musimy załadować dokument Word zawierający tekst stopki, który chcemy zastąpić. Określimy ścieżkę do dokumentu i użyjemy`Document` klasę, aby ją załadować.
 
 ```csharp
 // Ścieżka do katalogu dokumentów.
@@ -39,22 +39,22 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Footer.docx");
 ```
 
- Na tym etapie wymień`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką, w której przechowywany jest dokument. The`Document` obiekt`doc` teraz trzyma nasz załadowany dokument.
+ W tym kroku zastąp`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką, gdzie przechowywany jest Twój dokument.`Document` obiekt`doc` teraz zawiera nasz załadowany dokument.
 
-## Krok 2: Uzyskaj dostęp do stopki
+## Krok 2: Dostęp do stopki
 
-Następnie musimy uzyskać dostęp do sekcji stopki dokumentu. Pobierzemy kolekcję nagłówków i stopek z pierwszej sekcji dokumentu, a następnie skupimy się na głównej stopce.
+Następnie musimy uzyskać dostęp do sekcji stopki dokumentu. Pobierzemy zbiór nagłówków i stopek z pierwszej sekcji dokumentu, a następnie konkretnie docelowo dotrzemy do głównej stopki.
 
 ```csharp
 HeaderFooterCollection headersFooters = doc.FirstSection.HeadersFooters;
 HeaderFooter footer = headersFooters[HeaderFooterType.FooterPrimary];
 ```
 
- Tutaj,`headersFooters` to zbiór wszystkich nagłówków i stopek w pierwszej sekcji dokumentu. Następnie otrzymujemy podstawową stopkę`HeaderFooterType.FooterPrimary`.
+ Tutaj,`headersFooters` jest zbiorem wszystkich nagłówków i stopek w pierwszej sekcji dokumentu. Następnie otrzymujemy główną stopkę za pomocą`HeaderFooterType.FooterPrimary`.
 
 ## Krok 3: Skonfiguruj opcje Znajdź i zamień
 
-Zanim dokonamy zamiany tekstu, musimy skonfigurować pewne opcje operacji znajdowania i zamiany. Obejmuje to uwzględnianie wielkości liter i to, czy dopasowywać tylko całe słowa.
+Zanim wykonamy zamianę tekstu, musimy skonfigurować kilka opcji dla operacji znajdowania i zamieniania. Obejmuje to rozróżnianie wielkości liter i czy dopasowywać tylko całe słowa.
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions
@@ -64,45 +64,45 @@ FindReplaceOptions options = new FindReplaceOptions
 };
 ```
 
- W tym przykładzie`MatchCase` jest ustawiony na`false` ignorować różnice w wielkości liter oraz`FindWholeWordsOnly` jest ustawiony na`false` aby zezwolić na częściowe dopasowania w słowach.
+ W tym przykładzie,`MatchCase` jest ustawiony na`false` zignorować różnice w wielkościach liter i`FindWholeWordsOnly` jest ustawiony na`false` aby umożliwić częściowe dopasowania w obrębie słów.
 
 ## Krok 4: Zamień tekst w stopce
 
- Nadszedł czas na zastąpienie starego tekstu nowym. Skorzystamy z`Range.Replace` metodę na zakresie stopki, określając stary tekst, nowy tekst i konfigurowane przez nas opcje.
+ Teraz czas zastąpić stary tekst nowym. Użyjemy`Range.Replace` metodę w zakresie stopki, określając stary tekst, nowy tekst i skonfigurowane opcje.
 
 ```csharp
 footer.Range.Replace("(C) 2006 Aspose Pty Ltd.", "Copyright (C) 2020 by Aspose Pty Ltd.", options);
 ```
 
- Na tym etapie tekst`(C) 2006 Aspose Pty Ltd.` zostaje zastąpiony przez`Copyright (C) 2020 by Aspose Pty Ltd.` w stopce.
+ W tym kroku tekst`(C) 2006 Aspose Pty Ltd.` jest zastąpiony przez`Copyright (C) 2020 by Aspose Pty Ltd.` w stopce.
 
 ## Krok 5: Zapisz zmodyfikowany dokument
 
-Na koniec musimy zapisać nasz zmodyfikowany dokument. Określimy ścieżkę i nazwę pliku nowego dokumentu.
+Na koniec musimy zapisać nasz zmodyfikowany dokument. Określimy ścieżkę i nazwę pliku dla nowego dokumentu.
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.ReplaceTextInFooter.docx");
 ```
 
- Ta linia zapisuje dokument z zastąpionym tekstem stopki do nowego pliku o nazwie`FindAndReplace.ReplaceTextInFooter.docx` w określonym katalogu.
+ Ten wiersz zapisuje dokument z zastąpionym tekstem stopki do nowego pliku o nazwie`FindAndReplace.ReplaceTextInFooter.docx` w określonym katalogu.
 
 ## Wniosek
 
-Gratulacje! Pomyślnie zastąpiłeś tekst w stopce dokumentu Word przy użyciu Aspose.Words dla .NET. W tym samouczku opisano proces ładowania dokumentu, uzyskiwania dostępu do stopki, konfigurowania opcji wyszukiwania i zamiany, zastępowania tekstu i zapisywania zmodyfikowanego dokumentu. Wykonując te kroki, możesz łatwo programowo manipulować i aktualizować zawartość dokumentów Word.
+Gratulacje! Udało Ci się zastąpić tekst w stopce dokumentu Word za pomocą Aspose.Words dla .NET. Ten samouczek przeprowadził Cię przez ładowanie dokumentu, dostęp do stopki, konfigurowanie opcji wyszukiwania i zamiany, wykonywanie zamiany tekstu i zapisywanie zmodyfikowanego dokumentu. Dzięki tym krokom możesz łatwo manipulować i aktualizować zawartość swoich dokumentów Word programowo.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Czy mogę zastąpić tekst w innych częściach dokumentu przy użyciu tej samej metody?
- Tak, możesz skorzystać z`Range.Replace` metoda zastępowania tekstu w dowolnej części dokumentu, w tym w nagłówkach, treści i stopkach.
+### Czy mogę zastąpić tekst w innych częściach dokumentu, korzystając z tej samej metody?
+ Tak, możesz użyć`Range.Replace` metoda zastępowania tekstu w dowolnej części dokumentu, w tym w nagłówkach, treści i stopkach.
 
-### Co się stanie, jeśli moja stopka zawiera wiele wierszy tekstu?
-Możesz zastąpić dowolny konkretny tekst w stopce. Jeśli chcesz zastąpić wiele wierszy, upewnij się, że wyszukiwany ciąg odpowiada dokładnie tekstowi, który chcesz zastąpić.
+### Co zrobić, jeśli moja stopka zawiera wiele wierszy tekstu?
+Możesz zastąpić dowolny konkretny tekst w stopce. Jeśli musisz zastąpić wiele wierszy, upewnij się, że ciąg wyszukiwania pasuje do dokładnego tekstu, który chcesz zastąpić.
 
-### Czy w przypadku zamiany rozróżniana jest wielkość liter?
- Absolutnie! Ustawić`MatchCase` Do`true` w`FindReplaceOptions` aby w zamian uwzględniać wielkość liter.
+### Czy można zmienić tak, aby zamiennik uwzględniał wielkość liter?
+ Oczywiście! Ustaw`MatchCase` Do`true` w`FindReplaceOptions` aby zamiana uwzględniała wielkość liter.
 
 ### Czy mogę używać wyrażeń regularnych do zastępowania tekstu?
-Tak, Aspose.Words obsługuje wyrażenia regularne do operacji znajdowania i zamieniania. Możesz określić wzorzec wyrażenia regularnego w pliku`Range.Replace` metoda.
+Tak, Aspose.Words obsługuje używanie wyrażeń regularnych do operacji wyszukiwania i zamiany. Możesz określić wzorzec regex w`Range.Replace` metoda.
 
-### Jak obsługiwać wiele stopek w dokumencie?
-Jeśli dokument zawiera wiele sekcji z różnymi stopkami, wykonaj iterację po każdej sekcji i zastosuj zamianę tekstu dla każdej stopki indywidualnie.
+### Jak radzić sobie z wieloma stopkami w dokumencie?
+Jeśli dokument składa się z wielu sekcji z różnymi stopkami, przejrzyj każdą sekcję i zastosuj zamianę tekstu dla każdej stopki osobno.

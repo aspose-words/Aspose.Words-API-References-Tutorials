@@ -85,7 +85,7 @@ Grattis! Du har precis lärt dig hur du flyttar till en specifik tabellcell i et
  Ja, genom att ange rätt tabellindex i`MoveToCell` metod kan du navigera till valfri cell i valfri tabell i dokumentet.
 
 ### Hur hanterar jag celler som sträcker sig över flera rader eller kolumner?
- Du kan använda`RowSpan`och`ColSpan` egenskaper hos`Cell` klass för att hantera sammanslagna celler.
+ Du kan använda`RowSpan` och`ColSpan` egenskaper hos`Cell` klass för att hantera sammanslagna celler.
 
 ### Är det möjligt att formatera texten inuti cellen?
  Absolut! Använda`DocumentBuilder` metoder som`Font.Size`, `Font.Bold`, och andra för att formatera din text.

@@ -1,27 +1,27 @@
 ---
-title: Exportar fontes como Base 64
-linktitle: Exportar fontes como Base 64
+title: Exportar fontes como base 64
+linktitle: Exportar fontes como base 64
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como exportar fontes como Base64 usando Aspose.Words for .NET neste tutorial detalhado. Certifique-se de que as fontes estejam incorporadas e exibidas corretamente nos arquivos HTML.
+description: Aprenda como exportar fontes como Base64 usando Aspose.Words para .NET neste tutorial detalhado. Garanta que as fontes sejam incorporadas e exibidas corretamente em arquivos HTML.
 type: docs
 weight: 10
 url: /pt/net/programming-with-htmlsaveoptions/export-fonts-as-base-64/
 ---
 ## Introdução
 
-Quando se trata de manipular documentos do Word programaticamente, o Aspose.Words for .NET é uma potência. Um de seus recursos interessantes é exportar fontes como Base64 em arquivos HTML, garantindo que as fontes sejam incorporadas e exibidas corretamente em diferentes navegadores e sistemas. Neste tutorial, veremos como você pode conseguir isso. Pronto para tornar as fontes de seus documentos do Word compatíveis com a web? Vamos começar!
+Quando se trata de manipular documentos do Word programaticamente, o Aspose.Words para .NET é uma potência. Um de seus recursos bacanas é exportar fontes como Base64 em arquivos HTML, garantindo que as fontes sejam incorporadas e exibidas corretamente em diferentes navegadores e sistemas. Neste tutorial, vamos nos aprofundar em como você pode conseguir isso. Pronto para tornar suas fontes de documentos do Word amigáveis à web? Vamos começar!
 
 ## Pré-requisitos
 
-Antes de começarmos a codificação, vamos ter certeza de que você tem tudo o que precisa:
+Antes de começarmos a codificar, vamos garantir que você tenha tudo o que precisa:
 
--  Biblioteca Aspose.Words for .NET: você pode baixá-lo do[Aspose Lançamentos](https://releases.aspose.com/words/net/) página.
-- Ambiente de desenvolvimento .NET: Qualquer IDE como o Visual Studio funcionará perfeitamente.
+-  Biblioteca Aspose.Words para .NET: Você pode baixá-la do[Lançamentos Aspose](https://releases.aspose.com/words/net/) página.
+- Ambiente de desenvolvimento .NET: qualquer IDE como o Visual Studio funcionará perfeitamente.
 - Conhecimento básico de C#: você não precisa ser um profissional, mas um conhecimento básico ajudará.
 
 ## Importar namespaces
 
-Para usar o Aspose.Words for .NET, você precisará importar os namespaces necessários em seu código C#. Isso disponibiliza todas as classes e métodos para uso.
+Para usar o Aspose.Words para .NET, você precisará importar os namespaces necessários no seu código C#. Isso torna todas as classes e métodos disponíveis para uso.
 
 ```csharp
 using Aspose.Words;
@@ -32,19 +32,19 @@ using Aspose.Words.Saving;
 
 Primeiramente, vamos configurar seu projeto e instalar a biblioteca Aspose.Words.
 
-### 1.1 Crie um novo projeto
+### 1.1 Criar um novo projeto
 
-Abra o Visual Studio e crie um novo projeto de aplicativo de console. Nomeie-o com algo significativo como "ExportFontsBase64".
+Abra o Visual Studio e crie um novo projeto Console App. Dê a ele um nome significativo, como "ExportFontsBase64".
 
-### 1.2 Instale Aspose.Words
+### 1.2 Instalar Aspose.Words
 
-Você pode instalar o Aspose.Words for .NET por meio do NuGet Package Manager:
+Você pode instalar o Aspose.Words para .NET por meio do Gerenciador de Pacotes NuGet:
 
-1. Clique com o botão direito em seu projeto no Solution Explorer.
+1. Clique com o botão direito do mouse no seu projeto no Solution Explorer.
 2. Selecione "Gerenciar pacotes NuGet".
 3. Procure por "Aspose.Words" e instale-o.
 
-Alternativamente, você pode executar o seguinte comando no Console do Gerenciador de Pacotes:
+Como alternativa, você pode executar o seguinte comando no Console do Gerenciador de Pacotes:
 
 ```sh
 Install-Package Aspose.Words
@@ -52,11 +52,11 @@ Install-Package Aspose.Words
 
 ## Etapa 2: carregue seu documento do Word
 
-Agora que seu projeto está configurado, vamos carregar o documento do Word do qual deseja exportar as fontes.
+Agora que seu projeto está configurado, vamos carregar o documento do Word do qual você deseja exportar as fontes.
 
 ### 2.1 Definir o diretório de documentos
 
-Primeiro, defina o diretório onde seu documento Word está localizado:
+Primeiro, defina o diretório onde seu documento do Word está localizado:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -74,7 +74,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 Certifique-se de que "Rendering.docx" esteja no diretório especificado.
 
-## Etapa 3: configurar opções de salvamento de HTML
+## Etapa 3: Configurar opções de salvamento de HTML
 
  Para exportar fontes como Base64, precisamos configurar o`HtmlSaveOptions`.
 
@@ -85,36 +85,36 @@ Certifique-se de que "Rendering.docx" esteja no diretório especificado.
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportFontsAsBase64 = true };
 ```
 
-## Etapa 4: salve o documento como HTML
+## Etapa 4: Salve o documento como HTML
 
 Por fim, vamos salvar o documento com as opções configuradas.
 
 
- Use o`Save` método do`Document` class para salvar seu documento:
+ Use o`Save` método do`Document` classe para salvar seu documento:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportFontsAsBase64.html", saveOptions);
 ```
 
-Esta linha salvará seu documento como um arquivo HTML com fontes exportadas como Base64, garantindo que sejam incorporadas ao HTML.
+Esta linha salvará seu documento como um arquivo HTML com fontes exportadas como Base64, garantindo que elas sejam incorporadas ao HTML.
 
 ## Conclusão
 
-Parabéns! Você exportou com sucesso fontes como Base64 de um documento do Word usando Aspose.Words for .NET. Isso garante que suas fontes sejam preservadas e exibidas corretamente em diferentes plataformas. Esteja você preparando documentos para exibição na web ou simplesmente garantindo a compatibilidade, esse recurso é extremamente útil.
+Parabéns! Você exportou com sucesso fontes como Base64 de um documento do Word usando o Aspose.Words para .NET. Isso garante que suas fontes sejam preservadas e exibidas corretamente em diferentes plataformas. Esteja você preparando documentos para exibição na web ou simplesmente garantindo compatibilidade, esse recurso é incrivelmente útil.
 
 ## Perguntas frequentes
 
 ### O que é codificação Base64?
-Base64 é um método de codificação de dados binários (como fontes) em formato de texto. Isso garante compatibilidade com formatos baseados em texto como HTML.
+Base64 é um método de codificação de dados binários (como fontes) em um formato de texto. Isso garante compatibilidade com formatos baseados em texto como HTML.
 
 ### Por que devo usar Base64 para fontes em HTML?
-O uso de Base64 garante que as fontes sejam incorporadas diretamente no HTML, evitando problemas com arquivos de fontes ausentes e garantindo uma exibição consistente.
+Usar Base64 garante que as fontes sejam incorporadas diretamente no HTML, evitando problemas com arquivos de fonte ausentes e garantindo uma exibição consistente.
 
-### Posso usar este método para outros recursos como imagens?
-Absolutamente! Aspose.Words for .NET permite incorporar vários recursos, incluindo imagens, como Base64 em seus arquivos HTML.
+### Posso usar esse método para outros recursos, como imagens?
+Absolutamente! O Aspose.Words for .NET permite que você incorpore vários recursos, incluindo imagens, como Base64 em seus arquivos HTML.
 
 ### E se meu documento tiver várias fontes?
-Sem problemas! Aspose.Words for .NET incorporará todas as fontes usadas em seu documento como Base64 no arquivo HTML resultante.
+Sem problemas! O Aspose.Words for .NET incorporará todas as fontes usadas no seu documento como Base64 no arquivo HTML resultante.
 
-### O uso do Aspose.Words for .NET é gratuito?
- Aspose.Words for .NET é uma biblioteca comercial. No entanto, você pode baixar uma versão de avaliação gratuita no site[Aspose Lançamentos](https://releases.aspose.com/) página.
+### O Aspose.Words para .NET é gratuito?
+ Aspose.Words para .NET é uma biblioteca comercial. No entanto, você pode baixar uma versão de teste gratuita do[Lançamentos Aspose](https://releases.aspose.com/) página.

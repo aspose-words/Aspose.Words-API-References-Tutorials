@@ -29,7 +29,7 @@ Mielőtt elkezdené, győződjön meg arról, hogy a következő előfeltételek
 Kezdjük egy üres dokumentum létrehozásával az Aspose.Words for Java segítségével:
 
 ```java
-//Java kód egy üres dokumentum létrehozásához
+// Java kód egy üres dokumentum létrehozásához
 Document doc = new Document();
 ```
 
@@ -41,17 +41,6 @@ Most pedig adjunk hozzá némi tartalmat a dokumentumunkhoz:
 // Java kód tartalom hozzáadásához a dokumentumhoz
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, Aspose.Words!");
-```
-
-## A dokumentumelemek testreszabása
-
-Testreszabhatja a különböző dokumentumelemeket, például a betűtípusokat, stílusokat és formázást. Íme egy példa a betűméret módosítására:
-
-```java
-// Java kód a betűméret megváltoztatásához
-Run run = (Run) doc.getChildNodes(NodeType.RUN, true).get(0);
-Font font = run.getFont();
-font.setSize(14);
 ```
 
 ## A dokumentum kinyomtatása
@@ -79,7 +68,7 @@ Az Aspose.Words for Java segítségével személyre szabott dokumentumnyomtatás
 
 ### Hogyan telepíthetem az Aspose.Words for Java programot?
 
- Az Aspose.Words for Java telepítéséhez töltse le a könyvtárat innen[itt](https://releases.aspose.com/words/java/) és kövesse a mellékelt telepítési utasításokat.
+ Az Aspose.Words for Java telepítéséhez töltse le a könyvtárat innen[itt](https://releases.aspose.com/words/java/)és kövesse a mellékelt telepítési utasításokat.
 
 ### Testreszabhatom a dokumentum elrendezését?
 

@@ -20,13 +20,13 @@ Word 文書を PDF に変換してオンライン配布、アーカイブ、ま�
 | [PDF レンダリングの警告](./pdf-render-warnings/) | Aspose.Words for .NET を使用して PDF レンダリングの警告に対処するためのステップバイステップ ガイド。 |
 | [証明書ホルダーを使用してPDFにデジタル署名を追加する](./digitally-signed-pdf-using-certificate-holder/) | Aspose.Words for .NET を使用して、デジタル署名で PDF ファイルを保護します。このステップバイステップ ガイドに従って、PDF にデジタル署名を簡単に追加します。 |
 | [PDF文書にフォントを埋め込む](./embedded-all-fonts/) | この詳細なステップバイステップ ガイドに従って、Aspose.Words for .NET を使用して PDF ドキュメントにフォントを簡単に埋め込みます。すべてのデバイスで一貫した外観を実現します。 |
-| [PDF ドキュメントにサブセット フォントを埋め込む](./embedded-subset-fonts/) | Aspose.Words for .NET を使用して必要なフォント サブセットのみを埋め込むことで、PDF ファイルのサイズを縮小します。ステップ バイ ステップ ガイドに従って、PDF を効率的に最適化します。 |
+| [PDF ドキュメントにサブセットフォントを埋め込む](./embedded-subset-fonts/) | Aspose.Words for .NET を使用して必要なフォント サブセットのみを埋め込むことで、PDF ファイルのサイズを縮小します。ステップ バイ ステップ ガイドに従って、PDF を効率的に最適化します。 |
 | [埋め込みフォントを無効にしてPDFのサイズを縮小する](./disable-embed-windows-fonts/) | Aspose.Words for .NET を使用して埋め込みフォントを無効にすることで、PDF のサイズを縮小します。ステップ バイ ステップ ガイドに従って、ドキュメントを最適化し、効率的に保存および共有できるようにします。 |
 | [埋め込まれた Arial および Times Roman フォントをスキップして PDF サイズを最適化](./skip-embedded-arial-and-times-roman-fonts/) | Aspose.Words for .NET を使用して、埋め込まれた Arial および Times Roman フォントをスキップすることで PDF サイズを最適化します。このステップ バイ ステップ ガイドに従って、PDF ファイルを効率化します。 |
 | [コアフォントを埋め込まないことでPDFファイルのサイズを縮小する](./avoid-embedding-core-fonts/) | Aspose.Words for .NET を使用してコア フォントを埋め込まないことで PDF ファイルのサイズを縮小する方法を学びます。ステップ バイ ステップ ガイドに従って PDF を最適化してください。 |
 | [PDF ドキュメント内の URI をエスケープする](./escape-uri/) | Aspose.Words for .NET を使用して PDF 内の URI をエスケープする方法を学びます。この詳細なガイドでは、プロセスをステップごとに説明します。 |
 | [Word 文書のヘッダー フッター ブックマークを PDF 文書にエクスポートする](./export-header-footer-bookmarks/) | Aspose.Words for .NET を使用して、Word 文書からヘッダーとフッターのブックマークを PDF にエクスポートする方法をステップバイステップ ガイドで学習します。 |
-| [WMF フォントをメタファイル サイズにスケールして PDF サイズを縮小する](./scale-wmf-fonts-to-metafile-size/) | Aspose.Words for .NET を使用して PDF に変換するときに、wmf フォントをメタファイル サイズに合わせて PDF サイズを縮小する手順ガイド。 |
+| [WMF フォントをメタファイル サイズにスケールして PDF サイズを縮小する](./scale-wmf-fonts-to-metafile-size/) | Aspose.Words for .NET を使用して PDF に変換するときに、wmf フォントをメタファイル サイズにスケールして PDF サイズを縮小する手順ガイド。 |
 | [追加のテキスト配置でPDFテキストの配置を改善](./additional-text-positioning/) | Aspose.Words for .NET を使用して、いくつかの簡単な手順で PDF テキストの配置を改善する方法を学びます。ドキュメントの外観を強化します。 |
 | [Word 文書を PDF に変換する 1.7](./conversion-to-pdf-17/) | Aspose.Words for .NET を使用して、Word 文書を PDF 1.7 に簡単に変換できます。このガイドに従って、文書がユニバーサルにアクセス可能でプロフェッショナルな形式になっていることを確認してください。 |
 | [画像のダウンサンプリングでPDF文書のサイズを縮小](./downsampling-images/) | Aspose.Words for .NET を使用して画像をダウンサンプリングすることで、PDF ドキュメントのサイズを縮小します。PDF を最適化して、アップロードとダウンロードの時間を短縮します。 |

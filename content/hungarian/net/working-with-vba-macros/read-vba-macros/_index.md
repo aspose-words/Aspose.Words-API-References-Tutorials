@@ -15,7 +15,7 @@ Sziasztok, Word dokumentumvarázslók! Gondolkozott már azon, hogy mi történi
 
 Mielőtt belemerülnénk a kódba, győződjön meg arról, hogy mindennel rendelkezik, amire szüksége van:
 
-1.  Aspose.Words for .NET Library: A Word-dokumentumok kezeléséhez az Aspose.Words for .NET legújabb verziójára lesz szüksége. Tudod[töltse le itt](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: A Word-dokumentumok kezeléséhez az Aspose.Words for .NET legújabb verziójára lesz szüksége. Megteheti[töltse le itt](https://releases.aspose.com/words/net/).
 2. Fejlesztői környezet: A .NET fejlesztői környezet, például a Visual Studio, elengedhetetlen a kód írásához és teszteléséhez.
 3. Alapvető C# ismeretek: A C# alapvető ismerete segít eligazodni a kódrészletek és fogalmak között.
 4.  Word dokumentum minta: Legyen a[Word dokumentum](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) VBA-makróval. Ez lesz a forrásunk a makrók olvasásához.

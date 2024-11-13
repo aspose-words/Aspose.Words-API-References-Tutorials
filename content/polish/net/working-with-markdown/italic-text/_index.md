@@ -1,91 +1,91 @@
 ---
 title: Tekst kursywą
 linktitle: Tekst kursywą
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak zastosować kursywę do tekstu w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Przewodnik krok po kroku z dołączonymi przykładami kodu.
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak stosować kursywę do tekstu w dokumentach Word za pomocą Aspose.Words dla .NET. Przewodnik krok po kroku z dołączonymi przykładami kodu.
 type: docs
 weight: 10
 url: /pl/net/working-with-markdown/italic-text/
 ---
 ## Wstęp
 
-Podczas pracy z Aspose.Words dla .NET tworzenie bogato sformatowanych dokumentów jest proste. Niezależnie od tego, czy generujesz raporty, piszesz pisma, czy zarządzasz złożonymi strukturami dokumentów, jedną z najbardziej przydatnych funkcji jest formatowanie tekstu. W tym samouczku omówimy, jak ustawić kursywę w tekście za pomocą Aspose.Words dla .NET. Tekst kursywą może podkreślić, wyróżnić określoną treść lub po prostu poprawić styl dokumentu. Postępując zgodnie z tym przewodnikiem, dowiesz się, jak programowo zastosować do tekstu kursywę, dzięki czemu Twoje dokumenty będą wyglądać elegancko i profesjonalnie.
+Podczas pracy z Aspose.Words dla .NET tworzenie bogato sformatowanych dokumentów to pestka. Niezależnie od tego, czy generujesz raporty, piszesz listy czy zarządzasz złożonymi strukturami dokumentów, jedną z najbardziej przydatnych funkcji jest formatowanie tekstu. W tym samouczku zagłębimy się w to, jak uczynić tekst kursywą za pomocą Aspose.Words dla .NET. Tekst kursywą może dodać nacisku, wyróżnić określoną treść lub po prostu poprawić styl dokumentu. Postępując zgodnie z tym przewodnikiem, nauczysz się, jak programowo stosować formatowanie kursywą do tekstu, dzięki czemu Twoje dokumenty będą wyglądać dopracowane i profesjonalne.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zaczniemy, musisz przygotować kilka rzeczy:
+Zanim zaczniemy, jest kilka rzeczy, które musisz mieć na miejscu:
 
-1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowany Aspose.Words dla .NET. Można go pobrać z[Strona z plikami do pobrania Aspose](https://releases.aspose.com/words/net/).
+1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowany Aspose.Words dla .NET. Możesz go pobrać ze strony[Strona pobierania Aspose](https://releases.aspose.com/words/net/).
 
-2. Visual Studio: Skonfigurowanie programu Visual Studio na komputerze sprawi, że proces kodowania będzie płynniejszy. 
+2. Visual Studio: zainstalowanie na komputerze programu Visual Studio sprawi, że proces kodowania będzie przebiegał sprawniej. 
 
-3. Podstawowa znajomość języka C#: Znajomość języka programowania C# jest pomocna w podążaniu za przykładami.
+3. Podstawowa znajomość języka C#: Znajomość języka programowania C# będzie pomocna w zrozumieniu przykładów.
 
-4. Projekt .NET: Powinieneś mieć projekt .NET, w którym możesz dodawać i testować przykłady kodu.
+4. Projekt .NET: Powinieneś mieć projekt .NET, w którym będziesz mógł dodawać i testować przykłady kodu.
 
-5.  Licencja Aspose: Dostępna jest bezpłatna wersja próbna[Tutaj](https://releases.aspose.com/) do użytku produkcyjnego wymagana będzie wersja licencjonowana. Możesz kupić licencję[Tutaj](https://purchase.aspose.com/buy) lub zdobądź[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) do oceny.
+5.  Licencja Aspose: Dostępna jest bezpłatna wersja próbna[Tutaj](https://releases.aspose.com/) do użytku produkcyjnego będzie potrzebna wersja licencjonowana. Możesz kupić licencję[Tutaj](https://purchase.aspose.com/buy) lub zdobądź[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) do oceny.
 
 ## Importuj przestrzenie nazw
 
-Aby użyć Aspose.Words w swoim projekcie, musisz zaimportować niezbędne przestrzenie nazw. Oto jak możesz to skonfigurować:
+Aby użyć Aspose.Words w swoim projekcie, musisz zaimportować niezbędne przestrzenie nazw. Oto, jak możesz to skonfigurować:
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Drawing;
 ```
 
-Te przestrzenie nazw zapewniają dostęp do klas i metod wymaganych do manipulowania dokumentami i stosowania różnych formatów, w tym kursywy.
+Te przestrzenie nazw zapewniają dostęp do klas i metod wymaganych do manipulowania dokumentami i stosowania różnych formatów, w tym tekstu kursywnego.
 
-## Krok 1: Utwórz narzędzie DocumentBuilder
+## Krok 1: Utwórz DocumentBuilder
 
- The`DocumentBuilder` class pomaga dodawać i formatować treść w dokumencie. Tworząc`DocumentBuilder` obiekt, konfigurujesz narzędzie do wstawiania tekstu i manipulowania nim.
+Ten`DocumentBuilder` Klasa pomaga dodawać i formatować zawartość w dokumencie. Tworząc`DocumentBuilder` obiekt, konfigurujesz narzędzie do wstawiania i manipulowania tekstem.
 
 ```csharp
-// Utwórz instancję DocumentBuilder do pracy z dokumentem.
+// Utwórz instancję DocumentBuilder, aby pracować z dokumentem.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
- Tutaj,`DocumentBuilder` jest przywiązany do`Document` instancję, którą utworzyłeś wcześniej. To narzędzie będzie używane do wprowadzania zmian i dodawania nowej treści do Twojego dokumentu.
+ Tutaj,`DocumentBuilder` jest przywiązany do`Document` wystąpienie, które utworzyłeś wcześniej. To narzędzie będzie używane do wprowadzania zmian i dodawania nowej zawartości do twojego dokumentu.
 
-## Krok 2: Zastosuj kursywę
+## Krok 2: Zastosuj formatowanie kursywą
 
- Aby ustawić kursywę w tekście, musisz ustawić`Italic` własność`Font` oponować`true` . The`DocumentBuilder` pozwala kontrolować różne opcje formatowania, w tym kursywę.
+ Aby tekst był pochylony, należy ustawić`Italic` własność`Font` oponować`true` . Ten`DocumentBuilder` umożliwia kontrolowanie różnych opcji formatowania, w tym kursywy.
 
 ```csharp
-// Ustaw właściwość Font Italic na true, aby tekst był kursywą.
+// Ustaw właściwość Font Italic na true, aby tekst był pochylony.
 builder.Font.Italic = true;
 ```
 
-Ta linia kodu konfiguruje`Font` ustawienia`DocumentBuilder` aby zastosować kursywę do następującego tekstu.
+Ta linia kodu konfiguruje`Font` Ustawienia`DocumentBuilder` aby zastosować formatowanie kursywą do tekstu, który następuje po nim.
 
 ## Krok 3: Dodaj tekst kursywą
 
- Po ustawieniu formatowania możesz dodać tekst, który będzie wyświetlany kursywą. The`Writeln` Metoda dodaje nową linię tekstu do dokumentu.
+ Teraz, gdy formatowanie jest ustawione, możesz dodać tekst, który będzie wyświetlany kursywą.`Writeln` Metoda dodaje nowy wiersz tekstu do dokumentu.
 
 ```csharp
-// Wpisz tekst kursywą w dokumencie.
+// Wpisz tekst kursywą do dokumentu.
 builder.Writeln("This text will be Italic");
 ```
 
-Ten krok powoduje wstawienie do dokumentu wiersza tekstu sformatowanego kursywą. To jak pisanie specjalnym piórem, które podkreśla słowa.
+Ten krok wstawia wiersz tekstu do dokumentu, sformatowany kursywą. To jak pisanie specjalnym długopisem, który podkreśla słowa.
 
 ## Wniosek
 
-I masz to! Pomyślnie zastosowałeś kursywę do tekstu w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Ta prosta, ale skuteczna technika może znacznie poprawić czytelność i styl Twoich dokumentów. Niezależnie od tego, czy pracujesz nad raportami, listami czy jakimkolwiek innym typem dokumentu, kursywa jest cennym narzędziem do dodawania nacisku i niuansów.
+I masz! Udało Ci się zastosować kursywę do tekstu w dokumencie Word przy użyciu Aspose.Words dla .NET. Ta prosta, ale skuteczna technika może znacznie poprawić czytelność i styl Twoich dokumentów. Niezależnie od tego, czy pracujesz nad raportami, listami czy jakimkolwiek innym typem dokumentu, kursywa jest cennym narzędziem do dodawania nacisku i niuansów.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Jak zastosować inne formaty tekstu, takie jak pogrubienie lub podkreślenie?
- Aby zastosować pogrubienie lub podkreślenie, użyj`builder.Font.Bold = true;` Lub`builder.Font.Underline = Underline.Single;`odpowiednio.
+### Jak zastosować inne formatowanie tekstu, np. pogrubienie lub podkreślenie?
+ Aby zastosować formatowanie pogrubione lub podkreślone, użyj`builder.Font.Bold = true;` Lub`builder.Font.Underline = Underline.Single;`, odpowiednio.
 
-### Czy mogę sformatować określony zakres tekstu jako kursywę?
-Tak, możesz zastosować kursywę do określonych zakresów tekstu, umieszczając kod formatujący wokół tekstu, który chcesz stylizować.
+### Czy mogę sformatować konkretny fragment tekstu kursywą?
+Tak, możesz zastosować formatowanie kursywą do określonych fragmentów tekstu, umieszczając kod formatowania wokół tekstu, który chcesz sformatować.
 
-### Jak mogę sprawdzić programowo, czy tekst jest kursywą?
- Używać`builder.Font.Italic` aby sprawdzić, czy bieżące formatowanie tekstu uwzględnia kursywę.
+### Jak mogę sprawdzić, czy tekst jest programowo pochylony?
+ Używać`builder.Font.Italic` aby sprawdzić, czy bieżące formatowanie tekstu obejmuje kursywę.
 
-### Czy mogę sformatować tekst w tabelach lub nagłówkach kursywą?
+### Czy mogę sformatować tekst w tabelach lub nagłówkach jako kursywę?
  Absolutnie! Użyj tego samego`DocumentBuilder` techniki formatowania tekstu w tabelach lub nagłówkach.
 
-### Co się stanie, jeśli chcę zastosować kursywę w określonym rozmiarze czcionki lub kolorze?
+### Co zrobić, jeśli chcę użyć kursywy w określonym rozmiarze lub kolorze czcionki?
  Możesz ustawić dodatkowe właściwości, takie jak`builder.Font.Size = 14;` Lub`builder.Font.Color = Color.Red;` aby jeszcze bardziej dostosować wygląd tekstu.

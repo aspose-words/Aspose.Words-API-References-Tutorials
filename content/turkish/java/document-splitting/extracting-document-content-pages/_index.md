@@ -1,18 +1,18 @@
 ---
-title: Belge İçeriğini Sayfalara Göre Çıkarma
-linktitle: Belge İçeriğini Sayfalara Göre Çıkarma
+title: Sayfalara Göre Belge İçeriğini Çıkarma
+linktitle: Sayfalara Göre Belge İçeriğini Çıkarma
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Aspose.Words for Java kullanarak belge içeriğini sayfalara göre nasıl çıkaracağınızı öğrenin. Kaynak kodlu bu adım adım kılavuz sizi kısa sürede uzman yapacaktır.
+description: Java için Aspose.Words kullanarak sayfalara göre belge içeriğini nasıl çıkaracağınızı öğrenin. Kaynak kodlu bu adım adım kılavuz sizi kısa sürede uzman yapacaktır.
 type: docs
 weight: 13
 url: /tr/java/document-splitting/extracting-document-content-pages/
 ---
 
-Aspose.Words for Java'yı kullanarak belge içeriğini sayfalara göre çıkarma sanatında ustalaşacağınız bir yolculuğa çıkmaya hazır mısınız? Doğru yerdesiniz! Bu kapsamlı kılavuzda, Aspose.Words for Java'nın inceliklerini derinlemesine inceleyeceğiz ve bu güçlü Java API'nin tüm potansiyelini açığa çıkarmanıza yardımcı olacak adım adım talimatlar ve kaynak kodu örnekleri sunacağız.
+Aspose.Words for Java kullanarak sayfalara göre belge içeriğini çıkarma sanatında ustalaşmak için bir yolculuğa çıkmaya hazır mısınız? Doğru yerdesiniz! Bu kapsamlı kılavuzda, Aspose.Words for Java'nın inceliklerini derinlemesine inceleyeceğiz ve bu güçlü Java API'sinin tüm potansiyelini açığa çıkarmanıza yardımcı olacak adım adım talimatlar ve kaynak kodu örnekleri sunacağız.
 
 ## giriiş
 
-Aspose.Words for Java, Word belgeleriyle programlı olarak çalışma konusunda oyunun kurallarını değiştiren bir yazılımdır. İster deneyimli bir Java geliştiricisi olun ister kodlama yolculuğunuza yeni başlıyor olun, bu kılavuz belge içeriğini sayfalar halinde çıkarma sürecinde size yol gösterecek ve çeşitli uygulamalar için değerli bir beceri seti sağlayacaktır.
+Aspose.Words for Java, Word belgeleriyle programatik olarak çalışma konusunda oyunun kurallarını değiştiriyor. İster deneyimli bir Java geliştiricisi olun, ister kodlama yolculuğunuza yeni başlıyor olun, bu kılavuz sizi sayfalar halinde belge içeriğini çıkarma sürecinde yönlendirecek ve çeşitli uygulamalar için değerli bir beceri seti sağlayacaktır.
 
 ## Başlarken
 
@@ -20,9 +20,9 @@ Aspose.Words for Java, Word belgeleriyle programlı olarak çalışma konusunda 
 
 Aspose.Words for Java ile çalışmaya başlamadan önce geliştirme ortamımızı kurmamız gerekiyor. Şu adımları izleyin:
 
-1. Java'yı yükleyin: Java yüklü değilse, web sitesinden en son sürümü indirip yükleyin.
+1. Java'yı yükleyin: Eğer Java yüklü değilse, web sitesinden en son sürümü indirip yükleyin.
 
-2.  Aspose.Words for Java'yı indirin: Şuraya gidin:[Aspose.Words for Java](https://releases.aspose.com/words/java/) ve kütüphanenin en son sürümünü indirin.
+2.  Java için Aspose.Words'ü indirin: Şuraya gidin:[Java için Aspose.Words](https://releases.aspose.com/words/java/) ve kütüphanenin en son sürümünü indirin.
 
 3. Aspose.Words'ü Projenize Entegre Edin: Aspose.Words JAR dosyalarını Java projenizin sınıf yoluna ekleyin.
 
@@ -40,39 +40,39 @@ public class DocumentExtractor {
 
 ### Aspose.Words'ü Projenize Ekleme
 
- Aspose.Words'ü projenize eklemek için indirilen JAR dosyalarını projenizin klasörüne kopyalayın.`lib` klasörünü açın ve bunları sınıf yolunuza ekleyin. Artık belge çıkarma dünyasına dalmaya hazırsınız!
+ Aspose.Words'ü projenize eklemek için, indirilen JAR dosyalarını projenizin klasörüne kopyalayın.`lib` klasöre ekleyin ve bunları sınıf yolunuza ekleyin. Artık belge çıkarma dünyasına dalmaya hazırsınız!
 
 ## Belgeleri Yükleme ve Ayrıştırma
 
-### Word Belgesi Yükleme
+### Bir Word Belgesi Yükleme
 
 Bir Word belgesi yükleyerek başlayalım:
 
 ```java
-// Belgeyi yükleyin
+// Belgeyi yükle
 Document doc = new Document("sample.docx");
 ```
 
 ### Belge Yapısını Ayrıştırma
 
-Artık belgemizi yüklediğimize göre yapısını ayrıştıralım:
+Artık belgemiz yüklendiğine göre yapısını ayrıştıralım:
 
 ```java
-// DocumentVisitor oluşturma
+// Bir DocumentVisitor Oluşturun
 DocumentVisitor visitor = new DocumentVisitor();
 
-// Belgeyi çaprazlayın
+// Belgeyi dolaş
 doc.accept(visitor);
 
 //Çıkarılan içerik artık ziyaretçide mevcut
 String extractedText = visitor.getText();
 ```
 
-## İçeriği Sayfalara Göre Çıkarma
+## Sayfalara Göre İçerik Çıkarma
 
-### Belge Sayfaları nedir?
+### Belge Sayfaları Nelerdir?
 
-Aspose.Words'te bir belge sayfalara bölünebilir. Her sayfa belge içeriğinin bir bölümünü temsil eder. Peki bu sayfalara programlı olarak nasıl erişiriz?
+Aspose.Words'de bir belge sayfalara bölünebilir. Her sayfa belgenin içeriğinin bir bölümünü temsil eder. Peki bu sayfalara programatik olarak nasıl erişiriz?
 
 ### Belirli Bir Sayfadan Metin Çıkarma
 
@@ -80,12 +80,12 @@ Aspose.Words'te bir belge sayfalara bölünebilir. Her sayfa belge içeriğinin 
 // Sayfa numarasını belirtin (sıfır tabanlı dizin)
 int pageNumber = 0;
 
-// Belirtilen sayfadan metni çıkart
+// Belirtilen sayfadan metni çıkar
 PageInfo pageInfo = doc.getPageInfo(pageNumber);
 String pageText = doc.extractText(pageInfo);
 ```
 
-### Tüm Sayfalarda Döngü Yapmak
+### Tüm Sayfalarda Döngü
 
 Tüm sayfalardan içerik çıkarmak için basit bir döngü kullanabilirsiniz:
 
@@ -100,14 +100,14 @@ for (int i = 0; i < pageCount; i++) {
 }
 ```
 
-## Çıkarılan İçeriği Değiştirme
+## Çıkarılan İçeriğin İşlenmesi
 
 ### Metni Biçimlendirme ve Şekillendirme
 
-Çıkarılan metne, Java'daki diğer metinlerde olduğu gibi biçimlendirme ve stil uygulayabilirsiniz. Örneğin metni kalın yapmak için:
+Çıkarılan metne, tıpkı Java'daki diğer metinlerde yaptığınız gibi biçimlendirme ve stil uygulayabilirsiniz. Örneğin, metni kalın yapmak için:
 
 ```java
-// DocumentBuilder'ı oluşturun
+// Bir DocumentBuilder Oluşturun
 DocumentBuilder builder = new DocumentBuilder(doc);
 
 // Biçimlendirilmiş metin ekle
@@ -117,7 +117,7 @@ builder.write("This text is bold.");
 
 ### Çıkarılan İçeriği Yeni Bir Belgeye Kaydetme
 
-İçeriği çıkardıktan ve değiştirdikten sonra onu yeni bir belgeye kaydedebilirsiniz:
+İçeriği çıkarıp düzenledikten sonra onu yeni bir belgeye kaydedebilirsiniz:
 
 ```java
 //Çıkarılan içeriği yeni bir belgeye kaydedin
@@ -126,9 +126,9 @@ doc.save("extracted_content.docx");
 
 ## SSS
 
-### Şifrelenmiş Word belgelerini nasıl yönetirim?
+### Şifrelenmiş Word belgelerini nasıl işlerim?
 
-Aspose.Words for Java, şifrelenmiş Word belgelerini açmaya ve işlemeye yönelik yöntemler sağlar. Belgeyi yüklerken şifreyi belirleyebilirsiniz:
+Java için Aspose.Words, şifrelenmiş Word belgelerini açmak ve düzenlemek için yöntemler sağlar. Belgeyi yüklerken parolayı belirtebilirsiniz:
 
 ```java
 Document doc = new Document("encrypted.docx", new LoadOptions("password"));
@@ -136,24 +136,24 @@ Document doc = new Document("encrypted.docx", new LoadOptions("password"));
 
 ### Parola korumalı belgelerden içerik çıkarabilir miyim?
 
-Evet, Aspose.Words for Java'yı kullanarak şifre korumalı belgelerden içerik çıkarabilirsiniz. Yukarıda gösterildiği gibi belgeyi yüklerken doğru şifreyi girmeniz yeterlidir.
+Evet, Aspose.Words for Java kullanarak parola korumalı belgelerden içerik çıkarabilirsiniz. Yukarıda gösterildiği gibi, belgeyi yüklerken doğru parolayı girmeniz yeterlidir.
 
-### Aspose.Words for Java, Java 11 ve üzeri ile uyumlu mu?
+### Aspose.Words for Java, Java 11 ve üzeri sürümlerle uyumlu mu?
 
 Evet, Aspose.Words for Java, Java 11 ve üzeri sürümlerle uyumludur.
 
-### Bazı yaygın hatalar nelerdir ve bunları nasıl giderebilirsiniz?
+### Yaygın hatalar nelerdir ve bunları nasıl giderebilirsiniz?
 
-Aspose.Words for Java'daki yaygın hatalar genellikle belge yapısı veya biçimlendirmeyle ilgilidir. Sorun giderme ipuçları için belgelere ve topluluk forumlarına bakın.
+Aspose.Words for Java'daki yaygın hatalar genellikle belge yapısı veya biçimlendirmesiyle ilgilidir. Sorun giderme ipuçları için belgelere ve topluluk forumlarına bakın.
 
 ### Aspose.Words for Java topluluğuna nasıl katkıda bulunabilirim?
 
-Bilgilerinizi forumlarda paylaşarak, hataları bildirerek ve hatta kod katkıları göndererek katkıda bulunabilirsiniz. Canlı Aspose topluluğuna bugün katılın!
+Bilginizi forumlarda paylaşarak, hataları bildirerek veya hatta kod katkıları göndererek katkıda bulunabilirsiniz. Bugün canlı Aspose topluluğuna katılın!
 
-### Lisanslamayla ilgili herhangi bir husus var mı?
+### Lisanslama hususunda herhangi bir husus var mı?
 
-Aspose.Words for Java, ticari kullanım için geçerli bir lisans gerektirir. Kullanım koşullarına uymak için gerekli lisansı aldığınızdan emin olun.
+Aspose.Words for Java ticari kullanım için geçerli bir lisans gerektirir. Kullanım şartlarına uymak için gerekli lisansı edindiğinizden emin olun.
 
 ## Çözüm
 
-Tebrikler! Aspose.Words for Java kullanarak belge içeriğini sayfalara göre çıkarmaya ilişkin adım adım kılavuzu tamamladınız. Artık Word belgeleriyle programlı olarak çalışmak için değerli bir beceriye sahipsiniz. Aspose.Words'ün daha fazla özelliğini keşfetmekten çekinmeyin ve belge işlemede yaratıcılığınızı ortaya çıkarın.
+Tebrikler! Aspose.Words for Java kullanarak sayfalara göre belge içeriğini çıkarma konusunda adım adım kılavuzu tamamladınız. Artık Word belgeleriyle programatik olarak çalışmak için değerli bir beceri setine sahipsiniz. Aspose.Words'ün daha fazla özelliğini keşfetmekten ve belge düzenlemede yaratıcılığınızı serbest bırakmaktan çekinmeyin.

@@ -61,7 +61,7 @@ Most jön a döntő rész – a betűtípusmappák beállítása. Itt adhatja me
 fontSettings.SetFontsFolders(new[] { @"C:\MyFonts\", @"D:\Misc\Fonts\" }, true);
 ```
 
-A második paraméter (`true` ) azt jelzi, hogy ezek a mappák felülírnak minden alapértelmezett betűtípus-forrást. Ha meg szeretné tartani a rendszer betűtípus-forrásait is, használhatja a kombinációt`GetFontSources`és`SetFontSources`.
+A második paraméter (`true` ) azt jelzi, hogy ezek a mappák felülírnak minden alapértelmezett betűtípus-forrást. Ha meg szeretné tartani a rendszer betűtípus-forrásait is, használhatja a kombinációt`GetFontSources` és`SetFontSources`.
 
 ## 4. lépés: Alkalmazza a betűtípus-beállításokat a dokumentumra
 

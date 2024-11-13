@@ -53,10 +53,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
  Az utolsó nyomtatott tulajdonság frissítéséhez be kell állítanunk a PDF mentési beállításokat. Hozzon létre egy új példányt a`PdfSaveOptions` és állítsa be a`UpdateLastPrintedProperty`tulajdonát`true`.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions 
-{ 
-	UpdateLastPrintedProperty = true 
-};
+PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
 ## 5. lépés: Mentse el a dokumentumot PDF formátumban

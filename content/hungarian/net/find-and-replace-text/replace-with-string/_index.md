@@ -2,7 +2,7 @@
 title: Cserélje ki karakterláncra
 linktitle: Cserélje ki karakterláncra
 second_title: Aspose.Words Document Processing API
-description: Ebből a lépésről lépésre szóló útmutatóból megtudhatja, hogyan cserélheti le a karakterláncokat Word-dokumentumokban az Aspose.Words for .NET használatával. Tökéletes azoknak a fejlesztőknek, akik automatizálni szeretnék a dokumentumszerkesztést.
+description: Ebből a lépésenkénti útmutatóból megtudhatja, hogyan cserélheti le a karakterláncokat Word dokumentumokban az Aspose.Words for .NET használatával. Tökéletes azoknak a fejlesztőknek, akik automatizálni szeretnék a dokumentumszerkesztést.
 type: docs
 weight: 10
 url: /hu/net/find-and-replace-text/replace-with-string/
@@ -71,7 +71,7 @@ Itt történik az igazi cselekmény. Meg fogjuk találni a „szomorú” szót,
 doc.Range.Replace("sad", "bad", new FindReplaceOptions(FindReplaceDirection.Forward));
 ```
 
- A`Replace` módszer egyszerű. Megadjuk a keresendő szót, a helyettesítő szót, valamint a keresés és csere művelet opcióit.
+A`Replace` módszer egyszerű. Megadjuk a keresendő szót, a helyettesítő szót, valamint a keresés és csere művelet opcióit.
 
 ## 5. lépés: Mentse el a dokumentumot
 

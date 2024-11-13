@@ -69,7 +69,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf", saveOptions
 
 ## GYIK
 
-### Miért érdemes csak betűtípus-alkészleteket ágyaznom be egy PDF-be?
+### Miért ágyazzam be a PDF-be csak a betűtípus-alkészleteket?
 Csak a szükséges betűkészlet-alkészletek beágyazásával jelentősen csökkenthető a PDF-fájl mérete anélkül, hogy a dokumentum megjelenése és olvashatósága csökkenne.
 
 ### Ha szükséges, visszatérhetek a teljes betűtípusok beágyazásához?

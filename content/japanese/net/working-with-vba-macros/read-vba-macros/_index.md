@@ -2,7 +2,7 @@
 title: Word 文書から VBA マクロを読み取る
 linktitle: Word 文書から VBA マクロを読み取る
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書から VBA マクロを読み取る方法を学びます。シームレスな文書自動化のための詳細なガイドに従ってください。
+description: Aspose.Words for .NET を使用して Word 文書から VBA マクロを読み取る方法を学びます。シームレスな文書自動化については、詳細なガイドに従ってください。
 type: docs
 weight: 10
 url: /ja/net/working-with-vba-macros/read-vba-macros/
@@ -103,7 +103,7 @@ foreach (VbaModule module in doc.VbaProject.Modules)
 
 ### 出力例
 
-次のような出力が表示されます。
+次のような出力が表示される場合があります。
 
 ```
 Sub HelloWorld()
@@ -115,7 +115,7 @@ End Sub
 
 ## 結論
 
-これで完了です。Aspose.Words for .NET を使用して、Word 文書から VBA マクロを読み取ることができました。このチュートリアルでは、環境の設定、文書の読み込み、VBA プロジェクトへのアクセス、マクロの読み取りまで、すべてを説明しました。Aspose.Words を使用すると、タスクの自動化、文書のカスタマイズ、VBA の世界を深く探求するための強力なツールを自由に使用できます。
+これで完了です。Aspose.Words for .NET を使用して、Word ドキュメントから VBA マクロを読み取ることができました。このチュートリアルでは、環境の設定、ドキュメントの読み込み、VBA プロジェクトへのアクセス、マクロの読み取りまで、すべてを説明しました。Aspose.Words を使用すると、タスクの自動化、ドキュメントのカスタマイズ、VBA の世界を深く探求するための強力なツールを自由に使用できます。
 
 もっと詳しく知りたい方は、[APIドキュメント](https://reference.aspose.com/words/net/)ここから始めるのがよいでしょう。疑問に思ったり助けが必要になったりした場合は、[サポートフォーラム](https://forum.aspose.com/c/words/8)あなたのためにそこにあります。
 

@@ -2,24 +2,24 @@
 title: Meja
 linktitle: Meja
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara membuat dan mengkustomisasi tabel di Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. Sempurna untuk menghasilkan dokumen terstruktur dan menarik secara visual.
+description: Pelajari cara membuat dan menyesuaikan tabel di Aspose.Words untuk .NET dengan panduan langkah demi langkah ini. Sempurna untuk membuat dokumen terstruktur dan menarik secara visual.
 type: docs
 weight: 10
 url: /id/net/working-with-markdown/table/
 ---
 ## Perkenalan
 
-Bekerja dengan tabel dalam dokumen adalah persyaratan umum. Baik Anda membuat laporan, faktur, atau data terstruktur apa pun, tabel sangat diperlukan. Dalam tutorial ini, saya akan memandu Anda dalam membuat dan mengkustomisasi tabel menggunakan Aspose.Words untuk .NET. Ayo selami!
+Bekerja dengan tabel dalam dokumen merupakan persyaratan umum. Baik Anda membuat laporan, faktur, atau data terstruktur lainnya, tabel sangatlah penting. Dalam tutorial ini, saya akan memandu Anda membuat dan menyesuaikan tabel menggunakan Aspose.Words untuk .NET. Mari kita mulai!
 
 ## Prasyarat
 
-Sebelum kita mulai, pastikan Anda memiliki prasyarat berikut:
+Sebelum kita memulai, pastikan Anda memiliki prasyarat berikut:
 
-- Visual Studio: Anda memerlukan lingkungan pengembangan untuk menulis dan menguji kode Anda. Visual Studio adalah pilihan yang bagus.
--  Aspose.Words untuk .NET: Pastikan Anda telah menginstal perpustakaan Aspose.Words. Jika Anda tidak memilikinya, Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/net/).
-- Pemahaman Dasar C#: Beberapa keakraban dengan pemrograman C# diperlukan untuk diikuti.
+- Visual Studio: Anda memerlukan lingkungan pengembangan untuk menulis dan menguji kode Anda. Visual Studio adalah pilihan yang tepat.
+-  Aspose.Words untuk .NET: Pastikan Anda telah menginstal pustaka Aspose.Words. Jika Anda belum memilikinya, Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/net/).
+- Pemahaman Dasar tentang C#: Diperlukan sedikit pemahaman tentang pemrograman C# untuk mengikutinya.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
 Sebelum kita masuk ke langkah-langkahnya, mari impor namespace yang diperlukan:
 
@@ -30,18 +30,18 @@ using Aspose.Words.Tables;
 
 ## Langkah 1: Inisialisasi Dokumen dan DocumentBuilder
 
-Hal pertama yang pertama, kita perlu membuat dokumen baru dan menginisialisasi kelas DocumentBuilder, yang akan membantu kita dalam membuat tabel.
+Hal pertama yang harus dilakukan, kita perlu membuat dokumen baru dan menginisialisasi kelas DocumentBuilder, yang akan membantu kita dalam membangun tabel kita.
 
 ```csharp
 // Inisialisasi DocumentBuilder.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-Langkah ini seperti menyiapkan ruang kerja Anda. Anda telah menyiapkan dokumen kosong dan pena Anda.
+Langkah ini seperti menyiapkan ruang kerja Anda. Anda telah menyiapkan dokumen kosong dan pena.
 
-## Langkah 2: Mulailah Membangun Meja Anda
+## Langkah 2: Mulai Membangun Tabel Anda
 
-Sekarang kita sudah memiliki alatnya, mari kita mulai membuat tabelnya. Kita akan mulai dengan menyisipkan sel pertama dari baris pertama.
+Sekarang setelah kita memiliki alatnya, mari kita mulai membuat tabel. Kita akan mulai dengan memasukkan sel pertama dari baris pertama.
 
 ```csharp
 // Tambahkan baris pertama.
@@ -56,7 +56,7 @@ builder.Writeln("b");
 builder.EndRow();
 ```
 
-Bayangkan langkah ini seperti menggambar baris pertama tabel Anda di selembar kertas dan mengisi dua sel pertama dengan "a" dan "b".
+Bayangkan langkah ini seperti menggambar baris pertama tabel Anda pada selembar kertas dan mengisi dua sel pertama dengan "a" dan "b".
 
 ## Langkah 3: Tambahkan Lebih Banyak Baris
 
@@ -70,25 +70,25 @@ builder.InsertCell();
 builder.Writeln("d");
 ```
 
-Di sini, kita cukup memperluas tabel kita dengan menambahkan baris lain dengan dua sel yang diisi dengan "c" dan "d".
+Di sini, kita hanya memperluas tabel kita dengan menambahkan baris lain dengan dua sel yang diisi dengan "c" dan "d".
 
 ## Kesimpulan
 
-Membuat dan menyesuaikan tabel di Aspose.Words untuk .NET sangatlah mudah setelah Anda memahaminya. Dengan mengikuti langkah-langkah ini, Anda dapat membuat tabel terstruktur dan menarik secara visual di dokumen Anda. Selamat membuat kode!
+Membuat dan menyesuaikan tabel di Aspose.Words untuk .NET mudah dilakukan setelah Anda menguasainya. Dengan mengikuti langkah-langkah ini, Anda dapat membuat tabel yang terstruktur dan menarik secara visual dalam dokumen Anda. Selamat membuat kode!
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
-### Bisakah saya menambahkan lebih dari dua sel berturut-turut?
- Ya, Anda dapat menambahkan sel sebanyak yang Anda butuhkan dalam satu baris dengan mengulanginya`InsertCell()`Dan`Writeln()` metode.
+### Bisakah saya menambahkan lebih dari dua sel dalam satu baris?
+ Ya, Anda dapat menambahkan sel sebanyak yang Anda butuhkan dalam satu baris dengan mengulangi`InsertCell()` Dan`Writeln()` metode.
 
 ### Bagaimana cara menggabungkan sel dalam tabel?
- Anda dapat menggabungkan sel menggunakan`CellFormat.HorizontalMerge`Dan`CellFormat.VerticalMerge` properti.
+ Anda dapat menggabungkan sel menggunakan`CellFormat.HorizontalMerge` Dan`CellFormat.VerticalMerge` properti.
 
-### Apakah mungkin menambahkan gambar ke sel tabel?
- Sangat! Anda dapat memasukkan gambar ke dalam sel menggunakan`DocumentBuilder.InsertImage` metode.
+### Apakah mungkin untuk menambahkan gambar ke sel tabel?
+ Tentu saja! Anda dapat memasukkan gambar ke dalam sel menggunakan`DocumentBuilder.InsertImage` metode.
 
-### Bisakah saya menata setiap sel secara berbeda?
- Ya, Anda dapat menerapkan gaya berbeda ke sel individual dengan mengaksesnya melalui`Cells` koleksi berturut-turut.
+### Bisakah saya menata sel individual secara berbeda?
+ Ya, Anda dapat menerapkan gaya yang berbeda ke sel individual dengan mengaksesnya melalui`Cells` koleksi baris.
 
 ### Bagaimana cara menghapus batas dari tabel?
- Anda dapat menghapus batas dengan mengatur gaya batas menjadi`LineStyle.None` untuk setiap jenis perbatasan.
+ Anda dapat menghapus batas dengan mengatur gaya batas ke`LineStyle.None` untuk setiap jenis perbatasan.

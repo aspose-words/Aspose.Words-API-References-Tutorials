@@ -107,4 +107,4 @@ Ja, när HTML-koden har infogats kan du manipulera dokumentet ytterligare med de
  Du kan börja med en[gratis provperiod](https://releases.aspose.com/) eller skaffa en[tillfällig licens](https://purchase.aspose.com/temporary-license/) för alla funktioner.
 
 ### Var kan jag hitta fler handledningar och exempel?  
- De[dokumentation](https://reference.aspose.com/words/net/)och[supportforum](https://forum.aspose.com/c/words/8)är bra ställen att börja för mer detaljerade guider och stöd från samhället.
+De[dokumentation](https://reference.aspose.com/words/net/) och[supportforum](https://forum.aspose.com/c/words/8)är bra ställen att börja för mer detaljerade guider och stöd från samhället.

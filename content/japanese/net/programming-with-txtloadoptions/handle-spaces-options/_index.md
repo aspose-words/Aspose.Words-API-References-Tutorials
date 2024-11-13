@@ -90,7 +90,7 @@ Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), l
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx");
 ```
 
-このコードは、スペースを消去した文書を次の名前のファイルに保存します。`WorkingWithTxtLoadOptions.HandleSpacesOptions.docx`指定されたディレクトリに保存されます。
+このコードは、スペースを消去した文書を次のファイルに保存します。`WorkingWithTxtLoadOptions.HandleSpacesOptions.docx`指定されたディレクトリに保存されます。
 
 ## 結論
 

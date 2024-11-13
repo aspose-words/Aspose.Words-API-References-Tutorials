@@ -2,26 +2,26 @@
 title: Atur Folder Font Dengan Prioritas
 linktitle: Atur Folder Font Dengan Prioritas
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mengatur folder font dengan prioritas di dokumen Word menggunakan Aspose.Words untuk .NET. Panduan kami memastikan dokumen Anda ditampilkan dengan sempurna setiap saat.
+description: Pelajari cara mengatur folder font dengan prioritas dalam dokumen Word menggunakan Aspose.Words untuk .NET. Panduan kami memastikan dokumen Anda ditampilkan dengan sempurna setiap saat.
 type: docs
 weight: 10
 url: /id/net/working-with-fonts/set-fonts-folders-with-priority/
 ---
 ## Perkenalan
 
-Dalam dunia manipulasi dokumen, mengatur folder font khusus dapat membuat perbedaan besar dalam memastikan dokumen Anda ditampilkan dengan sempurna, di mana pun dokumen tersebut dilihat. Hari ini, kita akan mendalami cara mengatur folder font dengan prioritas di dokumen Word Anda menggunakan Aspose.Words untuk .NET. Panduan komprehensif ini akan memandu Anda melalui setiap langkah, membuat prosesnya selancar mungkin.
+Dalam dunia manipulasi dokumen, pengaturan folder font khusus dapat membuat perbedaan besar dalam memastikan dokumen Anda ditampilkan dengan sempurna, di mana pun dokumen tersebut dilihat. Hari ini, kita akan membahas cara mengatur folder font dengan prioritas dalam dokumen Word Anda menggunakan Aspose.Words untuk .NET. Panduan lengkap ini akan memandu Anda melalui setiap langkah, membuat prosesnya semulus mungkin.
 
 ## Prasyarat
 
-Sebelum kita mulai, pastikan kita memiliki semua yang kita butuhkan. Berikut daftar periksa singkatnya:
+Sebelum kita mulai, mari kita pastikan kita memiliki semua yang kita butuhkan. Berikut ini daftar periksa singkatnya:
 
--  Aspose.Words untuk .NET: Anda harus menginstal perpustakaan ini. Jika Anda belum memilikinya, Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
+-  Aspose.Words untuk .NET: Anda perlu menginstal pustaka ini. Jika Anda belum memilikinya, Anda dapat[unduh disini](https://releases.aspose.com/words/net/).
 - Lingkungan Pengembangan: Pastikan Anda memiliki lingkungan pengembangan .NET yang berfungsi, seperti Visual Studio.
--  Direktori Dokumen: Pastikan Anda memiliki direktori untuk dokumen Anda. Sebagai contoh, kami akan menggunakan`"YOUR DOCUMENT DIRECTORY"` sebagai pengganti jalur ini.
+-  Direktori Dokumen: Pastikan Anda memiliki direktori untuk dokumen Anda. Untuk contoh kita, kita akan menggunakan`"YOUR DOCUMENT DIRECTORY"` sebagai pengganti jalur ini.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Hal pertama yang pertama, kita perlu mengimpor namespace yang diperlukan. Namespace ini penting untuk mengakses kelas dan metode yang disediakan oleh Aspose.Words.
+Pertama-tama, kita perlu mengimpor namespace yang diperlukan. Namespace ini penting untuk mengakses kelas dan metode yang disediakan oleh Aspose.Words.
 
 ```csharp
 using System;
@@ -33,7 +33,7 @@ Sekarang, mari kita uraikan setiap langkah untuk mengatur folder font dengan pri
 
 ## Langkah 1: Siapkan Sumber Font Anda
 
-Untuk memulai, Anda ingin menentukan sumber font. Di sinilah Anda memberi tahu Aspose.Words di mana mencari font. Anda dapat menentukan beberapa folder font dan bahkan mengatur prioritasnya.
+Untuk memulai, Anda perlu menentukan sumber font. Di sinilah Anda memberi tahu Aspose.Words di mana mencari font. Anda dapat menentukan beberapa folder font dan bahkan mengatur prioritasnya.
 
 ```csharp
 // Jalur ke direktori dokumen Anda
@@ -47,12 +47,12 @@ FontSettings.DefaultInstance.SetFontsSources(new FontSourceBase[]
 ```
 
 Dalam contoh ini, kami menetapkan dua sumber font:
-- SystemFontSource: Ini adalah sumber font default yang mencakup semua font yang diinstal pada sistem Anda.
--  FolderFontSource: Ini adalah folder font khusus yang terletak di`C:\\MyFonts\\` . Itu`true` parameter menentukan bahwa folder ini harus dipindai secara rekursif, dan`1` menetapkan prioritasnya.
+- SystemFontSource: Ini adalah sumber font default yang mencakup semua font yang terinstal pada sistem Anda.
+-  FolderFontSource: Ini adalah folder font kustom yang terletak di`C:\\MyFonts\\` . Itu`true` parameter menentukan bahwa folder ini harus dipindai secara rekursif, dan`1` menetapkan prioritasnya.
 
 ## Langkah 2: Muat Dokumen Anda
 
-Selanjutnya, muat dokumen yang ingin Anda kerjakan. Pastikan dokumen tersebut terletak di direktori yang Anda tentukan.
+Selanjutnya, muat dokumen yang ingin Anda kerjakan. Pastikan dokumen tersebut berada di direktori yang Anda tentukan.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -72,21 +72,21 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
 
 ## Kesimpulan
 
-Dan itu dia! Anda telah berhasil menyiapkan folder font dengan prioritas menggunakan Aspose.Words untuk .NET. Dengan menentukan folder dan prioritas font khusus, Anda dapat memastikan dokumen Anda ditampilkan secara konsisten, di mana pun dokumen tersebut dilihat. Ini sangat berguna di lingkungan di mana font tertentu tidak diinstal secara default.
+Nah, itu dia! Anda telah berhasil menyiapkan folder font dengan prioritas menggunakan Aspose.Words untuk .NET. Dengan menentukan folder dan prioritas font khusus, Anda dapat memastikan dokumen Anda ditampilkan secara konsisten, di mana pun dokumen tersebut dilihat. Ini sangat berguna di lingkungan tempat font tertentu tidak diinstal secara default.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Mengapa saya perlu mengatur folder font khusus?
-Mengatur folder font khusus memastikan dokumen Anda ditampilkan dengan benar, meskipun menggunakan font yang tidak diinstal pada sistem tempat dokumen tersebut dilihat.
+Menetapkan folder font khusus memastikan dokumen Anda ditampilkan dengan benar, meskipun dokumen tersebut menggunakan font yang tidak diinstal pada sistem tempat dokumen tersebut dilihat.
 
 ### Bisakah saya mengatur beberapa folder font khusus?
-Ya, Anda dapat menentukan beberapa folder font. Aspose.Words memungkinkan Anda mengatur prioritas untuk setiap folder, memastikan font terpenting ditemukan terlebih dahulu.
+Ya, Anda dapat menentukan beberapa folder font. Aspose.Words memungkinkan Anda untuk mengatur prioritas untuk setiap folder, memastikan bahwa font yang paling penting ditemukan terlebih dahulu.
 
 ### Apa yang terjadi jika font hilang dari semua sumber yang ditentukan?
-Jika font hilang dari semua sumber yang ditentukan, Aspose.Words akan menggunakan font fallback untuk memastikan dokumen masih dapat dibaca.
+Jika font hilang dari semua sumber yang ditentukan, Aspose.Words akan menggunakan font cadangan untuk memastikan dokumen masih dapat dibaca.
 
 ### Bisakah saya mengubah prioritas font sistem?
-Font sistem selalu disertakan secara default, namun Anda dapat mengatur prioritasnya terkait dengan folder font khusus Anda.
+Font sistem selalu disertakan secara default, tetapi Anda dapat mengatur prioritasnya relatif terhadap folder font kustom Anda.
 
 ### Apakah mungkin menggunakan jalur jaringan untuk folder font khusus?
-Ya, Anda dapat menentukan jalur jaringan sebagai folder font khusus, memungkinkan Anda memusatkan sumber daya font di lokasi jaringan.
+Ya, Anda dapat menentukan jalur jaringan sebagai folder font kustom, yang memungkinkan Anda memusatkan sumber daya font pada lokasi jaringan.

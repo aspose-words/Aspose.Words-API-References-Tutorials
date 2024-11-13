@@ -1,8 +1,8 @@
 ---
-title: Propriedades de documentos e gerenciamento de metadados
-linktitle: Propriedades de documentos e gerenciamento de metadados
+title: Propriedades do documento e gerenciamento de metadados
+linktitle: Propriedades do documento e gerenciamento de metadados
 second_title: API de gerenciamento de documentos Python Aspose.Words
-description: Aprenda como gerenciar propriedades e metadados de documentos usando Aspose.Words para Python. Guia passo a passo com código-fonte.
+description: Aprenda a gerenciar propriedades de documentos e metadados usando Aspose.Words para Python. Guia passo a passo com código-fonte.
 type: docs
 weight: 12
 url: /pt/python-net/document-options-and-settings/document-properties-metadata/
@@ -10,11 +10,11 @@ url: /pt/python-net/document-options-and-settings/document-properties-metadata/
 
 ## Introdução às propriedades e metadados do documento
 
-As propriedades e metadados dos documentos são componentes essenciais dos documentos eletrônicos. Eles fornecem informações cruciais sobre o documento, como autoria, data de criação e palavras-chave. Os metadados podem incluir informações contextuais adicionais, que auxiliam na categorização e pesquisa de documentos. Aspose.Words for Python simplifica o processo de gerenciamento desses aspectos programaticamente.
+Propriedades de documentos e metadados são componentes essenciais de documentos eletrônicos. Eles fornecem informações cruciais sobre o documento, como autoria, data de criação e palavras-chave. Metadados podem incluir informações contextuais adicionais, que auxiliam na categorização e busca de documentos. Aspose.Words para Python simplifica o processo de gerenciamento desses aspectos programaticamente.
 
-## Primeiros passos com Aspose.Words para Python
+## Introdução ao Aspose.Words para Python
 
-Antes de nos aprofundarmos no gerenciamento de propriedades e metadados de documentos, vamos configurar nosso ambiente com Aspose.Words para Python.
+Antes de começarmos a gerenciar propriedades e metadados de documentos, vamos configurar nosso ambiente com o Aspose.Words para Python.
 
 ```python
 # Install the Aspose.Words for Python package
@@ -40,7 +40,7 @@ print("Author:", author)
 print("Title:", title)
 ```
 
-## Configurando propriedades do documento
+## Definindo propriedades do documento
 
 Atualizar as propriedades do documento é igualmente simples. Digamos que você queira atualizar o nome do autor e o título:
 
@@ -53,9 +53,9 @@ doc.built_in_document_properties["Title"] = "My Updated Document"
 doc.save("updated_document.docx")
 ```
 
-## Trabalhando com propriedades personalizadas de documentos
+## Trabalhando com propriedades de documentos personalizadas
 
-As propriedades personalizadas do documento permitem armazenar informações adicionais no documento. Vamos adicionar uma propriedade personalizada chamada "Departamento":
+Propriedades de documentos personalizadas permitem que você armazene informações adicionais dentro do documento. Vamos adicionar uma propriedade personalizada chamada "Department":
 
 ```python
 # Add a custom document property
@@ -67,7 +67,7 @@ doc.save("document_with_custom_property.docx")
 
 ## Gerenciando informações de metadados
 
-O gerenciamento de metadados envolve o controle de informações como rastrear alterações, estatísticas de documentos e muito mais. Aspose.Words permite acessar e modificar esses metadados programaticamente.
+O gerenciamento de metadados envolve o controle de informações como rastrear alterações, estatísticas de documentos e muito mais. O Aspose.Words permite que você acesse e modifique esses metadados programaticamente.
 
 ```python
 # Access and modify metadata
@@ -85,7 +85,7 @@ doc.built_in_document_properties["LastModifiedBy"] = "Automated Process"
 
 ## Protegendo informações confidenciais em metadados
 
-Às vezes, os metadados podem conter informações confidenciais. Para garantir a privacidade dos dados, você pode remover propriedades específicas:
+Metadados podem às vezes conter informações sensíveis. Para garantir a privacidade dos dados, você pode remover propriedades específicas:
 
 ```python
 # Remove sensitive metadata properties
@@ -95,9 +95,9 @@ for prop in sensitive_properties:
         doc.built_in_document_properties.remove(prop)
 ```
 
-## Tratamento de versões e histórico de documentos
+## Manipulando versões e histórico de documentos
 
-O controle de versão é crucial para manter o histórico do documento. Aspose.Words permite gerenciar versões de forma eficaz:
+O versionamento é crucial para manter o histórico do documento. O Aspose.Words permite que você gerencie versões de forma eficaz:
 
 ```python
 # Add version history information
@@ -105,16 +105,16 @@ version_info = doc.built_in_document_properties.add("VersionInfo")
 version_info.value = "Version 1.0 - Initial Release"
 ```
 
-## Práticas recomendadas de propriedade de documentos
+## Melhores práticas de propriedade de documentos
 
 - Mantenha as propriedades do documento precisas e atualizadas.
-- Use propriedades customizadas para contexto adicional.
-- Audite e atualize regularmente os metadados.
+- Use propriedades personalizadas para contexto adicional.
+- Audite e atualize metadados regularmente.
 - Proteja informações confidenciais em metadados.
 
 ## Conclusão
 
-O gerenciamento eficaz das propriedades e dos metadados dos documentos é vital para a organização e recuperação de documentos. Aspose.Words for Python agiliza esse processo, permitindo que os desenvolvedores manipulem e controlem facilmente os atributos do documento de forma programática.
+Gerenciar efetivamente as propriedades e metadados do documento é vital para a organização e recuperação de documentos. O Aspose.Words para Python simplifica esse processo, permitindo que os desenvolvedores manipulem e controlem facilmente os atributos do documento programaticamente.
 
 ## Perguntas frequentes
 
@@ -126,7 +126,7 @@ Você pode instalar o Aspose.Words para Python usando o seguinte comando:
 pip install aspose-words
 ```
 
-### Posso automatizar atualizações de metadados usando Aspose.Words?
+### Posso automatizar atualizações de metadados usando o Aspose.Words?
 
 Sim, você pode automatizar atualizações de metadados usando Aspose.Words. Por exemplo, você pode atualizar automaticamente a propriedade "Última modificação por".
 

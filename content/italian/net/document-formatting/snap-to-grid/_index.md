@@ -1,28 +1,28 @@
 ---
-title: Blocca sulla griglia nel documento di Word
-linktitle: Blocca sulla griglia nel documento di Word
+title: Aggancia alla griglia nel documento Word
+linktitle: Aggancia alla griglia nel documento Word
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come abilitare Snap to Grid nei documenti Word utilizzando Aspose.Words per .NET. Questo tutorial dettagliato copre i prerequisiti, la guida passo passo e le domande frequenti.
+description: Scopri come abilitare Snap to Grid nei documenti Word usando Aspose.Words per .NET. Questo tutorial dettagliato copre i prerequisiti, la guida passo passo e le FAQ.
 type: docs
 weight: 10
 url: /it/net/document-formatting/snap-to-grid/
 ---
 ## Introduzione
 
-Quando si lavora con documenti Word, mantenere un layout coerente e strutturato è fondamentale, soprattutto quando si ha a che fare con formattazioni complesse o contenuti multilingue. Una caratteristica utile che può aiutare a raggiungere questo obiettivo è la funzionalità "Snap to Grid". In questo tutorial, approfondiremo come abilitare e utilizzare Snap to Grid nei tuoi documenti Word utilizzando Aspose.Words per .NET.
+Quando si lavora con documenti Word, mantenere un layout coerente e strutturato è fondamentale, soprattutto quando si ha a che fare con formattazioni complesse o contenuti multilingue. Una funzionalità utile che può aiutare a raggiungere questo obiettivo è la funzionalità "Snap to Grid". In questo tutorial, approfondiremo come abilitare e utilizzare Snap to Grid nei documenti Word utilizzando Aspose.Words per .NET.
 
 ## Prerequisiti
 
 Prima di iniziare, assicurati di avere quanto segue:
 
--  Aspose.Words per .NET Library: puoi scaricarlo[Qui](https://releases.aspose.com/words/net/).
+-  Aspose.Words per la libreria .NET: puoi scaricarla[Qui](https://releases.aspose.com/words/net/).
 - Ambiente di sviluppo: Visual Studio o qualsiasi altro IDE compatibile con .NET.
-- Conoscenza di base di C#: comprendere le basi della programmazione C# ti aiuterà a seguire gli esempi.
--  Licenza Aspose: mentre è possibile acquisire una licenza temporanea[Qui](https://purchase.aspose.com/temporary-license/), l'utilizzo di una licenza completa garantirà l'accesso a tutte le funzionalità senza limitazioni.
+- Conoscenza di base di C#: comprendere le basi della programmazione in C# ti aiuterà a seguire gli esempi.
+-  Licenza Aspose: Sebbene sia possibile acquisire una licenza temporanea[Qui](https://purchase.aspose.com/temporary-license/), utilizzando una licenza completa sarà garantito l'accesso a tutte le funzionalità senza limitazioni.
 
-## Importa spazi dei nomi
+## Importazione degli spazi dei nomi
 
-Per iniziare, devi importare gli spazi dei nomi necessari. Ciò ti consente di utilizzare le funzionalità della libreria Aspose.Words nel tuo progetto.
+Per iniziare, devi importare i namespace necessari. Questo ti consente di usare le funzionalità della libreria Aspose.Words nel tuo progetto.
 
 ```csharp
 using Aspose.Words;
@@ -30,32 +30,32 @@ using Aspose.Words.Tables;
 using System;
 ```
 
-Analizziamo passo dopo passo il processo di abilitazione di Blocca sulla griglia in un documento di Word. Ogni passaggio includerà un titolo e una spiegazione dettagliata.
+Analizziamo passo dopo passo il processo di abilitazione di Snap to Grid in un documento Word. Ogni passaggio includerà un'intestazione e una spiegazione dettagliata.
 
 ## Passaggio 1: imposta il tuo progetto
 
-Innanzitutto, devi configurare il tuo progetto .NET e includere la libreria Aspose.Words.
+Per prima cosa, devi configurare il tuo progetto .NET e includere la libreria Aspose.Words.
 
 Impostazione del progetto
 
 1. Crea un nuovo progetto:
-   - Apri VisualStudio.
-   - Creare un nuovo progetto di app console (.NET Framework).
+   - Aprire Visual Studio.
+   - Crea un nuovo progetto di applicazione console (.NET Framework).
 
 2. Installa Aspose.Words:
-   - Aprire Gestione pacchetti NuGet (Strumenti > Gestione pacchetti NuGet > Gestisci pacchetti NuGet per la soluzione).
+   - Aprire NuGet Package Manager (Strumenti > NuGet Package Manager > Gestisci pacchetti NuGet per la soluzione).
    - Cerca "Aspose.Words" e installalo.
 
 ```csharp
-// Il percorso della directory dei documenti.
+// Percorso verso la directory dei documenti.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Questa riga imposta la directory in cui verranno salvati i tuoi documenti. Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory.
+ Questa riga imposta la directory in cui verranno salvati i tuoi documenti. Sostituisci`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della tua directory.
 
 ## Passaggio 2: inizializzare il documento e DocumentBuilder
 
- Successivamente, è necessario creare un nuovo documento Word e inizializzare il file`DocumentBuilder`class, che aiuta nella costruzione del documento.
+ Successivamente, è necessario creare un nuovo documento Word e inizializzare il`DocumentBuilder` classe, che aiuta nella costruzione del documento.
 
 Creazione di un nuovo documento
 
@@ -64,49 +64,49 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-- `Document doc = new Document();` crea un nuovo documento Word.
+- `Document doc = new Document();`crea un nuovo documento Word.
 - `DocumentBuilder builder = new DocumentBuilder(doc);` inizializza DocumentBuilder con il documento creato.
 
-## Passaggio 3: attiva l'opzione Blocca sulla griglia per i paragrafi
+## Passaggio 3: abilitare l'aggancio alla griglia per i paragrafi
 
-Ora abilitiamo Snap to Grid per un paragrafo all'interno del tuo documento.
+Ora abilitiamo l'opzione Allinea alla griglia per un paragrafo all'interno del documento.
 
 Ottimizzazione del layout del paragrafo
 
 ```csharp
-// Ottimizza il layout durante la digitazione di caratteri asiatici.
+// Ottimizza il layout quando digiti caratteri asiatici.
 Paragraph par = doc.FirstSection.Body.FirstParagraph;
 par.ParagraphFormat.SnapToGrid = true;
 ```
 
 - `Paragraph par = doc.FirstSection.Body.FirstParagraph;` recupera il primo paragrafo del documento.
-- `par.ParagraphFormat.SnapToGrid = true;` abilita la funzione Blocca sulla griglia per il paragrafo, assicurando che il testo sia allineato con la griglia.
+- `par.ParagraphFormat.SnapToGrid = true;` abilita la funzionalità Allinea alla griglia per il paragrafo, assicurando che il testo sia allineato alla griglia.
 
-## Passaggio 4: aggiungi contenuto al documento
+## Passaggio 4: aggiungere contenuto al documento
 
-Aggiungiamo del contenuto testuale al documento per vedere come funziona nella pratica la funzione Blocca sulla griglia.
+Aggiungiamo del testo al documento per vedere come funziona in pratica la funzionalità Allinea alla griglia.
 
-Scrivere testo
+Scrittura di testo
 
 ```csharp
 builder.Writeln("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.");
 ```
 
-- `builder.Writeln("Lorem ipsum dolor sit amet...");` scrive il testo specificato nel documento, applicando l'impostazione Blocca sulla griglia.
+- `builder.Writeln("Lorem ipsum dolor sit amet...");` scrive il testo specificato nel documento, applicando l'impostazione Allinea alla griglia.
 
-## Passaggio 5: attiva l'opzione Blocca sulla griglia per i caratteri
+## Passaggio 5: abilitare l'aggancio alla griglia per i caratteri
 
-Inoltre, puoi abilitare Blocca sulla griglia per i caratteri all'interno di un paragrafo per mantenere un allineamento coerente dei caratteri.
+Inoltre, è possibile abilitare l'aggancio alla griglia per i font all'interno di un paragrafo per mantenere un allineamento coerente dei caratteri.
 
-Impostazione dello snap del carattere alla griglia
+Impostazione dell'aggancio del carattere alla griglia
 
 ```csharp
 par.Runs[0].Font.SnapToGrid = true;
 ```
 
-- `par.Runs[0].Font.SnapToGrid = true;`garantisce che il carattere utilizzato nel paragrafo sia allineato con la griglia.
+- `par.Runs[0].Font.SnapToGrid = true;` assicura che il carattere utilizzato nel paragrafo sia allineato alla griglia.
 
-## Passaggio 6: salva il documento
+## Passaggio 6: Salvare il documento
 
 Infine, salva il documento nella directory specificata.
 
@@ -120,21 +120,21 @@ doc.Save(dataDir + "Paragraph.SnapToGrid.docx");
 
 ## Conclusione
 
-Seguendo questi passaggi, hai abilitato con successo lo snap alla griglia in un documento di Word utilizzando Aspose.Words per .NET. Questa funzionalità aiuta a mantenere un layout ordinato e organizzato, particolarmente utile quando si ha a che fare con strutture di documenti complesse o contenuti multilingue.
+Seguendo questi passaggi, hai abilitato con successo Snap to Grid in un documento Word usando Aspose.Words per .NET. Questa funzionalità aiuta a mantenere un layout ordinato e organizzato, particolarmente utile quando si hanno a che fare con strutture di documenti complesse o contenuti multilingue.
 
 ## Domande frequenti
 
-### Cos'è la funzione Blocca sulla griglia?
-Blocca sulla griglia allinea il testo e gli elementi a una griglia predefinita, garantendo una formattazione del documento coerente e strutturata.
+### Che cos'è la funzione Aggancia alla griglia?
+La funzione Allinea alla griglia allinea il testo e gli elementi a una griglia predefinita, garantendo una formattazione del documento coerente e strutturata.
 
-### Posso utilizzare Snap to Grid solo per sezioni specifiche?
-Sì, puoi abilitare Blocca sulla griglia per paragrafi o sezioni specifici all'interno del tuo documento.
+### Posso usare Allinea alla griglia solo per sezioni specifiche?
+Sì, puoi abilitare Allinea alla griglia per paragrafi o sezioni specifici all'interno del tuo documento.
 
 ### È necessaria una licenza per utilizzare Aspose.Words?
-Sì, anche se è possibile utilizzare una licenza temporanea a scopo di valutazione, per un accesso completo è consigliata una licenza completa.
+Sì, anche se è possibile utilizzare una licenza temporanea per la valutazione, per un accesso completo si consiglia una licenza completa.
 
-### Blocca sulla griglia influisce sulle prestazioni del documento?
-No, l'abilitazione di Snap to Grid non influisce in modo significativo sulle prestazioni del documento.
+### La funzione Allinea alla griglia influisce sulle prestazioni del documento?
+No, l'attivazione dell'opzione Allinea alla griglia non influisce in modo significativo sulle prestazioni del documento.
 
-### Dove posso trovare ulteriori informazioni su Aspose.Words per .NET?
- Visita il[documentazione](https://reference.aspose.com/words/net/)per informazioni dettagliate ed esempi.
+### Dove posso trovare maggiori informazioni su Aspose.Words per .NET?
+ Visita il[documentazione](https://reference.aspose.com/words/net/) per informazioni dettagliate ed esempi.

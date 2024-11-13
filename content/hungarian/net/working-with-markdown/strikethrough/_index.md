@@ -32,7 +32,7 @@ using Aspose.Words.Saving;
 
 ## 1. lépés: Inicializálja a DocumentBuildert
 
- A`DocumentBuilder` osztály az Aspose.Words hatékony eszköze, amely lehetővé teszi, hogy könnyedén hozzáadjon tartalmat a dokumentumhoz.
+A`DocumentBuilder` osztály az Aspose.Words hatékony eszköze, amely lehetővé teszi, hogy könnyedén hozzáadjon tartalmat a dokumentumhoz.
 
 ```csharp
 // Inicializáljon egy DocumentBuilder programot.

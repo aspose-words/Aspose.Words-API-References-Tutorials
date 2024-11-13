@@ -26,7 +26,7 @@ url: /ja/java/document-printing/customized-document-printing/
 
 ## 空白のドキュメントを作成する
 
-まず、Aspose.Words for Java を使用して空白のドキュメントを作成します。
+まず、Aspose.Words for Java を使用して空白のドキュメントを作成しましょう。
 
 ```java
 //空白のドキュメントを作成するための Java コード
@@ -43,20 +43,9 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, Aspose.Words!");
 ```
 
-## ドキュメント要素のカスタマイズ
-
-フォント、スタイル、書式設定など、さまざまなドキュメント要素をカスタマイズできます。フォント サイズを変更する例を次に示します。
-
-```java
-//フォントサイズを変更するJavaコード
-Run run = (Run) doc.getChildNodes(NodeType.RUN, true).get(0);
-Font font = run.getFont();
-font.setSize(14);
-```
-
 ## 文書の印刷
 
-Aspose.Words for Java を使用すると、カスタマイズしたドキュメントを簡単に印刷できます。
+Aspose.Words for Java を使用すると、カスタマイズしたドキュメントの印刷が簡単になります。
 
 ```java
 //文書を印刷するためのJavaコード

@@ -1,24 +1,24 @@
 ---
-title: Aspose.Words for Java'da Belgeleri Birleştirme ve Ekleme
-linktitle: Belgelerin Birleştirilmesi ve Eklenmesi
+title: Java için Aspose.Words'de Belgeleri Birleştirme ve Ekleme
+linktitle: Belgeleri Birleştirme ve Ekleme
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Aspose.Words for Java'yı kullanarak belgeleri kolayca birleştirmeyi ve eklemeyi öğrenin. Biçimlendirmeyi koruyun, üstbilgi altbilgilerini yönetin ve daha fazlasını yapın.
+description: Aspose.Words for Java kullanarak belgeleri zahmetsizce nasıl birleştireceğinizi ve ekleyeceğinizi öğrenin. Biçimlendirmeyi koruyun, üstbilgileri ve altbilgileri yönetin ve daha fazlasını yapın.
 type: docs
 weight: 30
 url: /tr/java/document-manipulation/joining-and-appending-documents/
 ---
 
-## Aspose.Words for Java'da Belgeleri Birleştirme ve Eklemeye Giriş
+## Java için Aspose.Words'de Belgeleri Birleştirme ve Eklemeye Giriş
 
-Bu eğitimde Aspose.Words for Java kütüphanesini kullanarak belgeleri nasıl birleştirip ekleyeceğimizi keşfedeceğiz. Biçimlendirmeyi ve yapıyı korurken birden çok belgeyi sorunsuz bir şekilde nasıl birleştireceğinizi öğreneceksiniz.
+Bu eğitimde, Aspose.Words for Java kütüphanesini kullanarak belgeleri nasıl birleştireceğinizi ve ekleyeceğinizi inceleyeceğiz. Biçimlendirme ve yapıyı korurken birden fazla belgeyi sorunsuz bir şekilde nasıl birleştireceğinizi öğreneceksiniz.
 
-## Önkoşullar
+## Ön koşullar
 
-Başlamadan önce Java projenizde Aspose.Words for Java API'sinin kurulu olduğundan emin olun.
+Başlamadan önce, Java projenizde Aspose.Words for Java API'sinin kurulu olduğundan emin olun.
 
 ## Belge Birleştirme Seçenekleri
 
-### Basit Ekle
+### Basit Ekleme
 
 ```java
 Document srcDoc = new Document("source.docx");
@@ -26,7 +26,7 @@ Document dstDoc = new Document("destination.docx");
 dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-### İçe Aktarma Formatı Seçenekleri ile Ekle
+### İçe Aktarma Biçim Seçenekleriyle Ekle
 
 ```java
 ImportFormatOptions options = new ImportFormatOptions();
@@ -43,24 +43,24 @@ dstDoc.removeAllChildren();
 dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-### Sayfa Numarası Dönüşümüyle Ekle
+### Sayfa Numarası Dönüşümü ile Ekle
 
 ```java
 Document srcDoc = new Document("source.docx");
 Document dstDoc = new Document("destination.docx");
 dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
-convertNumPageFieldsToPageRef(dstDoc); // NUMPAGES alanı dönüştür
+convertNumPageFieldsToPageRef(dstDoc); // NUMPAGES alanını dönüştür
 dstDoc.updatePageLayout(); // Doğru numaralandırma için sayfa düzenini güncelleyin
 ```
 
-## Farklı Sayfa Düzenlerini Yönetme
+## Farklı Sayfa Kurulumlarını Yönetme
 
 Farklı sayfa düzenlerine sahip belgeleri eklerken:
 
 ```java
 srcDoc.getFirstSection().getPageSetup().setSectionStart(SectionStart.CONTINUOUS);
 srcDoc.getFirstSection().getPageSetup().setRestartPageNumbering(true);
-// Sayfa yapısı ayarlarının hedef belgeyle eşleştiğinden emin olun
+// Sayfa düzeni ayarlarının hedef belgeyle eşleştiğinden emin olun
 ```
 
 ## Farklı Stillerdeki Belgeleri Birleştirme
@@ -77,14 +77,14 @@ options.setSmartStyleBehavior(true);
 builder.insertDocument(srcDoc, ImportFormatMode.USE_DESTINATION_STYLES, options);
 ```
 
-## DocumentBuilder ile Belge Ekleme
+## DocumentBuilder ile Belgeleri Ekleme
 
 ```java
 DocumentBuilder builder = new DocumentBuilder(dstDoc);
 builder.insertDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-## Kaynak Numaralandırmasının Tutulması
+## Kaynak Numaralandırmayı Tutma
 
 ```java
 ImportFormatOptions importFormatOptions = new ImportFormatOptions();
@@ -100,16 +100,16 @@ importFormatOptions.setIgnoreTextBoxes(false);
 dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING, importFormatOptions);
 ```
 
-## Üstbilgileri ve Altbilgileri Yönetme
+## Başlıkları ve Altbilgileri Yönetme
 
-### Üstbilgileri ve Altbilgileri Bağlama
+### Başlıklar ve Altbilgileri Bağlama
 
 ```java
 srcDoc.getFirstSection().getHeadersFooters().linkToPrevious(true);
 dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-### Üstbilgilerin ve Altbilgilerin Bağlantısını Kaldırma
+### Başlıklar ve Altbilgilerin Bağlantısını Kaldırma
 
 ```java
 srcDoc.getFirstSection().getHeadersFooters().linkToPrevious(false);
@@ -118,26 +118,26 @@ dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 
 ## Çözüm
 
-Aspose.Words for Java, ister biçimlendirmeyi korumanız, farklı sayfa düzenlerini yönetmeniz veya üstbilgileri ve altbilgileri yönetmeniz olsun, belgeleri birleştirmek ve eklemek için esnek ve güçlü araçlar sağlar. Özel belge işleme ihtiyaçlarınızı karşılamak için bu teknikleri deneyin.
+Java için Aspose.Words, biçimlendirmeyi korumanız, farklı sayfa kurulumlarını yönetmeniz veya başlıkları ve altbilgileri yönetmeniz gerekip gerekmediğine bakılmaksızın belgeleri birleştirmek ve eklemek için esnek ve güçlü araçlar sağlar. Belirli belge işleme ihtiyaçlarınızı karşılamak için bu teknikleri deneyin.
 
-## SSS'ler
+## SSS
 
-### Farklı stillerdeki belgeleri sorunsuz bir şekilde nasıl birleştirebilirim?
+### Farklı stillere sahip belgeleri sorunsuz bir şekilde nasıl birleştirebilirim?
 
- Farklı stillerdeki belgeleri birleştirmek için şunu kullanın:`ImportFormatMode.USE_DESTINATION_STYLES` eklerken.
+ Farklı stillere sahip belgeleri birleştirmek için şunu kullanın:`ImportFormatMode.USE_DESTINATION_STYLES` eklerken.
 
-### Belgeleri eklerken sayfa numaralandırmasını koruyabilir miyim?
+### Belge eklerken sayfa numaralandırmasını koruyabilir miyim?
 
- Evet, sayfa numaralandırmasını aşağıdaki komutu kullanarak koruyabilirsiniz:`convertNumPageFieldsToPageRef` yöntemi ve sayfa düzeninin güncellenmesi.
+ Evet, sayfa numaralandırmasını kullanarak koruyabilirsiniz.`convertNumPageFieldsToPageRef` yöntem ve sayfa düzenini güncelleme.
 
 ### Akıllı Stil Davranışı Nedir?
 
- Akıllı Stil Davranışı, belgeleri eklerken tutarlı stillerin korunmasına yardımcı olur. Şununla kullan:`ImportFormatOptions` daha iyi sonuçlar için.
+ Akıllı Stil Davranışı, belgeler eklerken tutarlı stilleri korumaya yardımcı olur. Bunu şununla kullanın:`ImportFormatOptions` Daha iyi sonuçlar için.
 
-### Belgeleri eklerken metin kutularını nasıl kullanabilirim?
+### Belge eklerken metin kutularını nasıl kullanabilirim?
 
-Ayarlamak`importFormatOptions.setIgnoreTextBoxes(false)` ekleme sırasında metin kutularını dahil etmek için.
+Ayarlamak`importFormatOptions.setIgnoreTextBoxes(false)` Ekleme sırasında metin kutuları eklemek için.
 
-### Belgeler arasında üstbilgileri ve altbilgileri bağlamak/bağlantısını kaldırmak istersem ne olur?
+### Belgeler arasındaki üstbilgi ve altbilgileri birbirine bağlamak/bağlantısını kaldırmak istersem ne olur?
 
- Üstbilgileri ve altbilgileri şu şekilde bağlayabilirsiniz:`linkToPrevious(true)` veya bunların bağlantısını kaldırın`linkToPrevious(false)` gerektiği gibi.
+ Başlıkları ve altbilgileri şu şekilde bağlayabilirsiniz:`linkToPrevious(true)` veya onları bağlantısını kes`linkToPrevious(false)` ihtiyaç duyulduğu takdirde.

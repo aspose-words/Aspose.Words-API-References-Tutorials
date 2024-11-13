@@ -1,21 +1,21 @@
 ---
-title: Tworzenie sekcji powtarzanej tabeli odwzorowanej na niestandardową część Xml
-linktitle: Tworzenie sekcji powtarzanej tabeli odwzorowanej na niestandardową część Xml
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak utworzyć tabelę z powtarzającą się sekcją odwzorowaną na CustomXmlPart w dokumencie programu Word przy użyciu Aspose.Words dla .NET.
+title: Tworzenie powtarzającej się sekcji tabeli zamapowanej na niestandardową część XML
+linktitle: Tworzenie powtarzającej się sekcji tabeli zamapowanej na niestandardową część XML
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak utworzyć tabelę z powtarzalną sekcją zamapowaną na CustomXmlPart w dokumencie programu Word przy użyciu Aspose.Words for .NET.
 type: docs
 weight: 10
 url: /pl/net/programming-with-sdt/creating-table-repeating-section-mapped-to-custom-xml-part/
 ---
 ## Wstęp
 
-W tym samouczku omówimy proces tworzenia tabeli z powtarzającą się sekcją, która jest mapowana na niestandardową część XML za pomocą Aspose.Words dla .NET. Jest to szczególnie przydatne przy dynamicznym generowaniu dokumentów w oparciu o ustrukturyzowane dane.
+W tym samouczku przejdziemy przez proces tworzenia tabeli z powtarzającą się sekcją, która jest mapowana na niestandardową część XML przy użyciu Aspose.Words dla .NET. Jest to szczególnie przydatne do dynamicznego generowania dokumentów na podstawie ustrukturyzowanych danych.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zaczniemy, upewnij się, że masz następujące elementy:
-1.  Zainstalowana biblioteka Aspose.Words dla .NET. Można go pobrać z[Strona Aspose](https://releases.aspose.com/words/net/).
-2. Podstawowa znajomość C# i XML.
+Zanim zaczniemy, upewnij się, że masz następujące rzeczy:
+1.  Zainstalowano bibliotekę Aspose.Words dla .NET. Możesz ją pobrać ze strony[Strona internetowa Aspose](https://releases.aspose.com/words/net/).
+2. Podstawowa znajomość języka C# i XML.
 
 ## Importuj przestrzenie nazw
 
@@ -27,9 +27,9 @@ using Aspose.Words.Markup;
 using Aspose.Words.Tables;
 ```
 
-## Krok 1: Zainicjuj dokument i narzędzie DocumentBuider
+## Krok 1: Zainicjuj dokument i DocumentBuilder
 
- Najpierw utwórz nowy dokument i zainicjuj plik`DocumentBuilder`:
+ Najpierw utwórz nowy dokument i zainicjuj`DocumentBuilder`:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -40,7 +40,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Krok 2: Dodaj niestandardową część XML
 
-Dodaj niestandardową część XML do dokumentu. Ten plik XML zawiera dane, które chcemy zmapować do naszej tabeli:
+Dodaj niestandardową część XML do dokumentu. Ten XML zawiera dane, które chcemy zmapować do naszej tabeli:
 
 ```csharp
 CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
@@ -65,7 +65,7 @@ builder.EndTable();
 
 ## Krok 4: Utwórz sekcję powtarzalną
 
- Utwórz`StructuredDocumentTag` (SDT) dla sekcji powtarzalnej i zmapuj ją na dane XML:
+ Utwórz`StructuredDocumentTag` (SDT) dla powtarzającej się sekcji i mapuj ją na dane XML:
 
 ```csharp
 StructuredDocumentTag repeatingSectionSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);
@@ -73,9 +73,9 @@ repeatingSectionSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book", "");
 table.AppendChild(repeatingSectionSdt);
 ```
 
-## Krok 5: Utwórz element sekcji powtarzalnej
+## Krok 5: Utwórz powtarzający się element sekcji
 
-Utwórz SDT dla elementu sekcji powtarzanej i dodaj go do sekcji powtarzanej:
+Utwórz SDT dla elementu sekcji powtarzalnej i dodaj go do sekcji powtarzalnej:
 
 ```csharp
 StructuredDocumentTag repeatingSectionItemSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSectionItem, MarkupLevel.Row);
@@ -84,9 +84,9 @@ Row row = new Row(doc);
 repeatingSectionItemSdt.AppendChild(row);
 ```
 
-## Krok 6: Mapuj dane XML na komórki tabeli
+## Krok 6: Mapowanie danych XML do komórek tabeli
 
-Utwórz SDT dla tytułu i autora, zmapuj je do danych XML i dołącz je do wiersza:
+Utwórz SDT dla tytułu i autora, zmapuj je do danych XML i dołącz do wiersza:
 
 ```csharp
 StructuredDocumentTag titleSdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
@@ -100,7 +100,7 @@ row.AppendChild(authorSdt);
 
 ## Krok 7: Zapisz dokument
 
-Na koniec zapisz dokument we wskazanym katalogu:
+Na koniec zapisz dokument w określonym katalogu:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXmlPart.docx");
@@ -108,15 +108,15 @@ doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXm
 
 ## Wniosek
 
-Wykonując te kroki, pomyślnie utworzyłeś tabelę z powtarzającą się sekcją odwzorowaną na niestandardową część XML przy użyciu Aspose.Words dla .NET. Pozwala to na dynamiczne generowanie treści w oparciu o dane strukturalne, dzięki czemu tworzenie dokumentów jest bardziej elastyczne i wydajne.
+Postępując zgodnie z tymi krokami, udało Ci się utworzyć tabelę z powtarzającą się sekcją zamapowaną na niestandardową część XML przy użyciu Aspose.Words dla .NET. Umożliwia to dynamiczne generowanie treści na podstawie ustrukturyzowanych danych, dzięki czemu tworzenie dokumentów jest bardziej elastyczne i wydajne.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Co to jest tag dokumentu strukturalnego (SDT)?
-SDT, znany również jako kontrola treści, to ograniczony region w dokumencie używany do przechowywania danych strukturalnych.
+### Czym jest StructuredDocumentTag (SDT)?
+SDT, znany również jako kontrolka zawartości, to ograniczony obszar w dokumencie, który służy do przechowywania ustrukturyzowanych danych.
 
 ### Czy mogę używać innych typów danych w niestandardowej części XML?
-Tak, możesz ustrukturyzować swoją niestandardową część XML za pomocą dowolnych typów danych i odpowiednio je zmapować.
+Tak, możesz utworzyć strukturę własnego pliku XML przy użyciu dowolnych typów danych i odpowiednio je mapować.
 
-### Jak dodać więcej wierszy do sekcji powtarzanej?
-Sekcja powtarzana automatycznie replikuje strukturę wierszy dla każdego elementu w mapowanej ścieżce XML.
+### Jak dodać więcej wierszy do sekcji powtarzalnej?
+Sekcja powtarzalna automatycznie replikuje strukturę wiersza dla każdego elementu w mapowanej ścieżce XML.

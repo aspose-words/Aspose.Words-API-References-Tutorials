@@ -1,51 +1,51 @@
 ---
-title: Yüzen Masa Konumunu Alın
-linktitle: Yüzen Masa Konumunu Alın
+title: Yüzen Tablo Pozisyonunu Alın
+linktitle: Yüzen Tablo Pozisyonunu Alın
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak Word belgelerinde kayan tablo konumlarını nasıl elde edeceğinizi öğrenin. Bu ayrıntılı, adım adım kılavuz, bilmeniz gereken her şeyde size yol gösterecektir.
+description: Aspose.Words for .NET kullanarak Word belgelerinde yüzen tablo konumlarının nasıl alınacağını öğrenin. Bu ayrıntılı, adım adım kılavuz, bilmeniz gereken her şeyde size yol gösterecektir.
 type: docs
 weight: 10
 url: /tr/net/programming-with-tables/get-floating-table-position/
 ---
 ## giriiş
 
-Aspose.Words for .NET dünyasına dalmaya hazır mısınız? Bugün sizi Word belgelerindeki kayan tabloların sırlarını açığa çıkaracak bir yolculuğa çıkaracağız. Sadece sabit durmayan, aynı zamanda metnin etrafında zarif bir şekilde süzülen bir masanız olduğunu hayal edin. Oldukça hoş, değil mi? Bu eğitim, bu tür kayan tabloların konumlandırma özelliklerinin nasıl elde edileceği konusunda size yol gösterecektir. Öyleyse başlayalım!
+Aspose.Words for .NET dünyasına dalmaya hazır mısınız? Bugün, Word belgelerindeki yüzen tabloların sırlarını ortaya çıkarmak için bir yolculuğa çıkaracağız. Sadece hareketsiz durmayan, aynı zamanda metnin etrafında zarifçe yüzen bir tablonuz olduğunu hayal edin. Oldukça havalı, değil mi? Bu eğitim, bu tür yüzen tabloların konumlandırma özelliklerini nasıl elde edeceğinizi size gösterecek. Hadi başlayalım!
 
-## Önkoşullar
+## Ön koşullar
 
-Eğlenceli kısma geçmeden önce, hazır bulundurmanız gereken birkaç şey var:
+Eğlenceli kısma geçmeden önce, elinizde olması gereken birkaç şey var:
 
-1.  Aspose.Words for .NET: Henüz yapmadıysanız Aspose.Words for .NET'i aşağıdaki adresten indirip yükleyin:[Aspose sürümler sayfası](https://releases.aspose.com/words/net/).
-2. Geliştirme Ortamı: Bir .NET geliştirme ortamı kurduğunuzdan emin olun. Visual Studio harika bir seçenektir.
-3. Örnek Belge: Kayan tablo içeren bir Word belgesine ihtiyacınız olacak. Bir tane oluşturabilir veya mevcut bir belgeyi kullanabilirsiniz. 
+1.  Aspose.Words for .NET: Henüz yapmadıysanız, Aspose.Words for .NET'i şu adresten indirin ve yükleyin:[Aspose sürüm sayfası](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: .NET geliştirme ortamınızın kurulu olduğundan emin olun. Visual Studio harika bir seçenektir.
+3. Örnek Belge: Yüzen tablo içeren bir Word belgesine ihtiyacınız olacak. Bir tane oluşturabilir veya mevcut bir belgeyi kullanabilirsiniz. 
 
 ## Ad Alanlarını İçe Aktar
 
-Başlamak için gerekli ad alanlarını içe aktarmanız gerekir. Bu, Word belgelerini düzenlemek için gereken Aspose.Words sınıflarına ve yöntemlerine erişmenizi sağlar.
+Başlamak için gerekli ad alanlarını içe aktarmanız gerekir. Bu, Word belgelerini düzenlemek için gereken Aspose.Words sınıflarına ve yöntemlerine erişiminizin olmasını sağlar.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Peki, süreci takip edilmesi kolay adımlara ayıralım.
+Tamam, süreci takip etmesi kolay adımlara bölelim.
 
-## 1. Adım: Belgenizi Yükleyin
+## Adım 1: Belgenizi Yükleyin
 
-Öncelikle Word belgenizi yüklemeniz gerekir. Bu belge incelemek istediğiniz kayan tabloyu içermelidir.
+İlk önce, Word belgenizi yüklemeniz gerekir. Bu belge incelemek istediğiniz yüzen tabloyu içermelidir.
 
 ```csharp
-// Belge dizininizin yolu
+// Belge dizininize giden yol
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 ```
 
- Bu adımda Aspose.Words'e belgenizi nerede bulacağını söylüyorsunuz. Değiştirdiğinizden emin olun`"YOUR DOCUMENT DIRECTORY"` belgenizin gerçek yolu ile.
+ Bu adımda, temel olarak Aspose.Words'e belgenizi nerede bulacağını söylüyorsunuz. Değiştirdiğinizden emin olun`"YOUR DOCUMENT DIRECTORY"` belgenizin gerçek yolunu belirtin.
 
-## Adım 2: Belgedeki Tablolara Erişin
+## Adım 2: Belgedeki Tablolara Erişim
 
-Daha sonra belgenin ilk bölümündeki tablolara erişmeniz gerekiyor. Belgeyi büyük bir kap olarak düşünün ve tüm tabloları bulmak için onu kazıyorsunuz.
+Sonra, belgenin ilk bölümündeki tablolara erişmeniz gerekir. Belgeyi büyük bir kap olarak düşünün ve tüm tabloları bulmak için içine dalıyorsunuz.
 
 ```csharp
 foreach (Table table in doc.FirstSection.Body.Tables)
@@ -54,24 +54,24 @@ foreach (Table table in doc.FirstSection.Body.Tables)
 }
 ```
 
-Burada, belgenizin ilk bölümünün gövdesinde bulunan her tablonun içinde dolaşıyorsunuz.
+Burada, belgenizin ilk bölümünün gövdesinde bulunan her tabloda döngü oluşturuyorsunuz.
 
-## 3. Adım: Tablonun Kayan olup olmadığını kontrol edin
+## Adım 3: Tablonun Yüzer Olup Olmadığını Kontrol Edin
 
-Şimdi tablonun kayan tipte olup olmadığını belirlemeniz gerekiyor. Kayan tabloların belirli metin sarma ayarları vardır.
+Şimdi, tablonun yüzen bir tür olup olmadığını belirlemeniz gerekiyor. Yüzen tabloların belirli metin kaydırma ayarları vardır.
 
 ```csharp
 if (table.TextWrapping == TextWrapping.Around)
 {
-    // Tablo konumlandırma özelliklerini yazdırma kodunuz buraya gelir
+    // Tablo konumlandırma özelliklerini yazdırmak için kodunuz buraya gelir
 }
 ```
 
-Bu koşul, tablonun metin sarma stilinin "Etrafında" olarak ayarlanıp ayarlanmadığını kontrol eder; bu, tablonun kayan bir tablo olduğunu gösterir.
+Bu koşul, tablonun metin kaydırma stilinin "Etrafında" olarak ayarlanıp ayarlanmadığını kontrol eder; bu, tablonun yüzen bir tablo olduğunu gösterir.
 
 ## Adım 4: Konumlandırma Özelliklerini Yazdırın
 
-Son olarak kayan tablonun konumlandırma özelliklerini çıkartıp yazdıralım. Bu özellikler size tablonun metne ve sayfaya göre nerede konumlandırıldığını söyler.
+Son olarak, yüzen tablonun konumlandırma özelliklerini çıkaralım ve yazdıralım. Bu özellikler, tablonun metne ve sayfaya göre nerede konumlandırıldığını söyler.
 
 ```csharp
 if (table.TextWrapping == TextWrapping.Around)
@@ -86,27 +86,27 @@ if (table.TextWrapping == TextWrapping.Around)
 }
 ```
 
-Bu özellikler, tablonun belge içinde nasıl sabitlendiğine ve konumlandırıldığına ilişkin ayrıntılı bir görünüm sağlar.
+Bu özellikler, tablonun belge içerisinde nasıl sabitlendiği ve konumlandırıldığı konusunda ayrıntılı bir görünüm sağlar.
 
 ## Çözüm
 
-Ve işte karşınızda! Bu adımları izleyerek Aspose.Words for .NET'i kullanarak Word belgelerinizdeki kayan tabloların konumlandırma özelliklerini kolayca alabilir ve yazdırabilirsiniz. İster belge işlemeyi otomatikleştiriyor olun, ister yalnızca tablo düzenlerini merak ediyor olun, bu bilgi kesinlikle işinize yarayacaktır.
+İşte karşınızda! Bu adımları izleyerek, Aspose.Words for .NET kullanarak Word belgelerinizdeki yüzen tabloların konumlandırma özelliklerini kolayca alabilir ve yazdırabilirsiniz. Belge işlemeyi otomatikleştiriyor veya sadece tablo düzenleri hakkında meraklıysanız, bu bilgi kesinlikle işinize yarayacaktır.
 
-Unutmayın, Aspose.Words for .NET ile çalışmak, belge işleme ve otomasyon için bir olasılıklar dünyasının kapılarını açar. Mutlu kodlama!
+Unutmayın, Aspose.Words for .NET ile çalışmak, belge düzenleme ve otomasyonu için bir olasılıklar dünyasının kapılarını açar. İyi kodlamalar!
 
-## SSS'ler
+## SSS
 
-### Word belgelerinde kayan tablo nedir?
-Kayan tablo, metne sabitlenmeyen ancak genellikle etrafına metin sarılarak hareket edebilen bir tablodur.
+### Word belgelerinde yüzen tablo nedir?
+Yüzen tablo, metne sabitlenmemiş ancak hareket edebilen, genellikle etrafına metin sarılmış bir tablodur.
 
-### Aspose.Words for .NET kullanarak bir tablonun değişken olup olmadığını nasıl anlarım?
- Bir tablonun kayan olup olmadığını inceleyerek kontrol edebilirsiniz.`TextWrapping` mülk. Eğer ayarlanmışsa`TextWrapping.Around`, masa yüzüyor.
+### Aspose.Words for .NET kullanarak bir tablonun yüzer durumda olup olmadığını nasıl anlarım?
+ Bir tablonun yüzen olup olmadığını, tablonun yüzen olup olmadığını incelemek suretiyle kontrol edebilirsiniz.`TextWrapping` özelliği. Eğer ayarlanmışsa`TextWrapping.Around`, masa yüzüyor.
 
-### Kayan tablonun konumlandırma özelliklerini değiştirebilir miyim?
-Evet, Aspose.Words for .NET'i kullanarak, kayan tablonun konumlandırma özelliklerini değiştirerek düzenini özelleştirebilirsiniz.
+### Yüzen bir tablonun konumlandırma özelliklerini değiştirebilir miyim?
+Evet, Aspose.Words for .NET'i kullanarak yüzen bir tablonun konumlandırma özelliklerini değiştirerek düzenini özelleştirebilirsiniz.
 
-### Aspose.Words for .NET büyük ölçekli belge otomasyonuna uygun mu?
+### Aspose.Words for .NET büyük ölçekli belge otomasyonu için uygun mudur?
 Kesinlikle! Aspose.Words for .NET, yüksek performanslı belge otomasyonu için tasarlanmıştır ve büyük ölçekli işlemleri verimli bir şekilde gerçekleştirebilir.
 
-### Aspose.Words for .NET hakkında daha fazla bilgiyi ve kaynağı nerede bulabilirim?
-Ayrıntılı belge ve kaynakları şu adreste bulabilirsiniz:[Aspose.Words for .NET dokümantasyon sayfası](https://reference.aspose.com/words/net/).
+### Aspose.Words for .NET hakkında daha fazla bilgi ve kaynağı nerede bulabilirim?
+Ayrıntılı dokümanları ve kaynakları şu adreste bulabilirsiniz:[Aspose.Words for .NET dokümantasyon sayfası](https://reference.aspose.com/words/net/).

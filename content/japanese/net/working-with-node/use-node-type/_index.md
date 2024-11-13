@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## ステップ2: NodeTypeプロパティにアクセスする
 
-の`NodeType`プロパティは Aspose.Words の基本的な機能です。これにより、処理するノードの種類を識別できます。このプロパティにアクセスするには、次のコードを使用します。
+の`NodeType`プロパティは Aspose.Words の基本的な機能です。これにより、処理するノードの種類を識別できます。このプロパティにアクセスするには、次のコードを使用するだけです。
 
 ```csharp
 NodeType type = doc.NodeType;

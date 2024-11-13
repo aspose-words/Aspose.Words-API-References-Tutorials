@@ -19,12 +19,12 @@ Aspose.Words for .NET の表を使用した Words 処理に関するチュート
 | [表をコンテンツに自動調整](./auto-fit-table-to-contents/) | このガイドでは、Aspose.Words for .NET を使用して Word 文書のコンテンツにテーブルを自動的に合わせる方法を学習します。動的で整然とした文書の書式設定に最適です。 |
 | [完全なテーブルを複製](./clone-complete-table/) | この詳細なステップバイステップのチュートリアルでは、Aspose.Words for .NET を使用して Word 文書内の完全な表を複製する方法を学習します。 |
 | [インデックスの検索](./finding-index/) | この包括的なステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書内の表、行、セルのインデックスを見つける方法を学習します。 |
-| [表を直接挿入する](./insert-table-directly/) | Aspose.Words for .NET を使用して Word 文書に表を直接挿入する方法を学びます。詳細なステップバイステップのガイドに従って、文書作成を効率化します。 |
-| [HTML からテーブルを挿入](./insert-table-from-html/) | Aspose.Words for .NET を使用して HTML から Word 文書に表を挿入する方法を学びます。シームレスな文書統合のための詳細なガイドに従ってください。 |
+| [表を直接挿入する](./insert-table-directly/) | Aspose.Words for .NET を使用して Word 文書に表を直接挿入する方法を学びます。詳細なステップバイステップ ガイドに従って、文書作成を効率化します。 |
+| [HTML から表を挿入](./insert-table-from-html/) | Aspose.Words for .NET を使用して HTML から Word 文書に表を挿入する方法を学びます。シームレスな文書統合のための詳細なガイドに従ってください。 |
 | [シンプルなテーブルを作成する](./create-simple-table/) | 包括的なステップバイステップ ガイドを使用して、Aspose.Words for .NET を使用して Word 文書に簡単な表を作成する方法を学習します。 |
 | [フォーマットされた表](./formatted-table/) | この詳細なステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書で表を作成し、書式設定する方法を学習します。 |
 | [ネストされたテーブル](./nested-table/) | ガイドを使用して、Aspose.Words for .NET を使用して Word 文書にネストされたテーブルを作成する方法を学びます。複雑なドキュメント レイアウトをプログラムで生成するのに最適です。 |
-| [行を結合する](./combine-rows/) | Aspose.Words for .NET を使用して複数のテーブルの行を 1 つに結合する方法をステップバイステップ ガイドで学習します。 |
+| [行を結合する](./combine-rows/) | Aspose.Words for .NET を使用して複数のテーブルの行を 1 つに結合する方法を、ステップバイステップ ガイドで学習します。 |
 | [テーブルを分割](./split-table/) | Aspose.Words for .NET を使用して Word 文書内の表を分割する方法を学びます。ステップバイステップのガイドにより、表の管理が簡単かつ効率的になります。 |
 | [行の書式設定 ページ間の区切りを無効にする](./row-format-disable-break-across-pages/) | Aspose.Words for .NET を使用して Word 文書内のページ間の行区切りを無効にし、表の読みやすさと書式を維持する方法を学習します。 |
 | [テーブルをまとめる](./keep-table-together/) | Aspose.Words for .NET を使用して、Word 文書内の表がページ間で分割されないようにする方法を学びます。プロフェッショナルで読みやすい文書を維持するには、ガイドに従ってください。 |
@@ -36,6 +36,6 @@ Aspose.Words for .NET の表を使用した Words 処理に関するチュート
 | [推奨幅設定](./preferred-width-settings/) | このステップバイステップ ガイドでは、Aspose.Words for .NET で絶対幅、相対幅、自動幅の設定を使用してテーブルを作成する方法を学習します。 |
 | [優先幅タイプを取得](./retrieve-preferred-width-type/) | Aspose.Words for .NET を使用して Word 文書内の表セルの推奨幅タイプを取得する方法を、ステップバイステップ ガイドで学習します。 |
 | [テーブルの位置を取得](./get-table-position/) | Aspose.Words for .NET を使用して Word 文書内の表の位置を決定する方法を、ステップバイステップ ガイドで説明します。 |
-| [フローティングテーブルの位置を取得する](./get-floating-table-position/) | Aspose.Words for .NET を使用して Word 文書内のフローティング テーブルの位置を取得する方法を学びます。この詳細なステップ バイ ステップ ガイドでは、知っておく必要のあるすべてのことを説明します。 |
+| [フローティングテーブルの位置を取得する](./get-floating-table-position/) | Aspose.Words for .NET を使用して、Word 文書内のフローティング テーブルの位置を取得する方法を学びます。この詳細なステップ バイ ステップ ガイドでは、知っておく必要のあるすべてのことを説明します。 |
 | [フローティングテーブルの位置](./floating-table-position/) | 詳細なステップバイステップ ガイドを使用して、Aspose.Words for .NET を使用して Word 文書内の表のフローティング位置を制御する方法を学習します。 |
 | [相対的な水平または垂直位置を設定する](./set-relative-horizontal-or-vertical-position/) | このステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書内の表の相対的な水平位置と垂直位置を設定する方法を学習します。 |

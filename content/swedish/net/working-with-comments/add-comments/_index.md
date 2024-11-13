@@ -64,21 +64,20 @@ Nu är det dags att skapa en kommentar. Vi initierar ett nytt kommentarobjekt, o
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
 ```
 
-## Steg 5: Bifoga kommentaren till stycket
+## Steg 5: Lägg till innehåll i kommentaren
+
+Slutligen kommer vi att lägga till innehåll i kommentaren. Vi skapar ett nytt stycke och kör för att hålla kommentarstexten och lägger sedan till dessa i kommentaren.
+
+```csharp
+comment.SetText("Comment text.");
+```
+
+## Steg 6: Bifoga kommentaren till stycket
 
 Vi måste bifoga kommentaren till det aktuella stycket där vi lagt till texten. Detta görs genom att kommentaren läggs till paragrafen.
 
 ```csharp
 builder.CurrentParagraph.AppendChild(comment);
-```
-
-## Steg 6: Lägg till innehåll i kommentaren
-
-Slutligen kommer vi att lägga till innehåll i kommentaren. Vi skapar ett nytt stycke och kör för att hålla kommentarstexten och lägger sedan till dessa i kommentaren.
-
-```csharp
-comment.Paragraphs.Add(new Paragraph(doc));
-comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
 ```
 
 ## Steg 7: Spara dokumentet

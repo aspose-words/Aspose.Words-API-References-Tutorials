@@ -1,27 +1,27 @@
 ---
-title: Proporcje obrazu zablokowane
-linktitle: Proporcje obrazu zablokowane
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak zablokować proporcje kształtów w dokumentach programu Word za pomocą Aspose.Words dla .NET. Postępuj zgodnie z tym przewodnikiem krok po kroku, aby zachować proporcje obrazów i kształtów.
+title: Zablokowany współczynnik proporcji
+linktitle: Zablokowany współczynnik proporcji
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak zablokować proporcje kształtów w dokumentach Word za pomocą Aspose.Words dla .NET. Postępuj zgodnie z tym przewodnikiem krok po kroku, aby zachować proporcje obrazów i kształtów.
 type: docs
 weight: 10
 url: /pl/net/programming-with-shapes/aspect-ratio-locked/
 ---
 ## Wstęp
 
-Czy zastanawiałeś się kiedyś, jak zachować idealne proporcje obrazów i kształtów w dokumentach programu Word? Czasami musisz upewnić się, że obrazy i kształty nie ulegną zniekształceniu podczas zmiany rozmiaru. W tym miejscu przydaje się blokowanie proporcji. W tym samouczku omówimy, jak ustawić współczynnik proporcji kształtów w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Podzielimy to na łatwe do wykonania kroki, dzięki czemu będziesz mieć pewność, że będziesz mógł bez obaw zastosować te umiejętności w swoich projektach.
+Czy kiedykolwiek zastanawiałeś się, jak zachować idealne proporcje obrazów i kształtów w dokumentach Word? Czasami musisz upewnić się, że obrazy i kształty nie zostaną zniekształcone podczas zmiany rozmiaru. W tym miejscu przydaje się blokowanie współczynnika proporcji. W tym samouczku pokażemy, jak ustawić współczynnik proporcji kształtów w dokumentach Word za pomocą Aspose.Words dla .NET. Podzielimy to na łatwe do wykonania kroki, upewniając się, że możesz zastosować te umiejętności w swoich projektach z pewnością siebie.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zagłębimy się w kod, przyjrzyjmy się, czego potrzebujesz, aby zacząć:
+Zanim zagłębimy się w kod, omówmy, co będzie potrzebne, aby zacząć:
 
-- Biblioteka Aspose.Words dla .NET: Musisz mieć zainstalowaną bibliotekę Aspose.Words dla .NET. Jeśli jeszcze tego nie zrobiłeś, możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
-- Środowisko programistyczne: Upewnij się, że masz skonfigurowane środowisko programistyczne .NET. Visual Studio to popularny wybór.
-- Podstawowa znajomość języka C#: Pomocna będzie pewna znajomość programowania w języku C#.
+- Biblioteka Aspose.Words dla .NET: Musisz mieć zainstalowaną bibliotekę Aspose.Words dla .NET. Jeśli jeszcze tego nie zrobiłeś, możesz[pobierz tutaj](https://releases.aspose.com/words/net/).
+- Środowisko programistyczne: Upewnij się, że masz skonfigurowane środowisko programistyczne .NET. Visual Studio jest popularnym wyborem.
+- Podstawowa wiedza z zakresu języka C#: Przydatna będzie pewna znajomość programowania w języku C#.
 
 ## Importuj przestrzenie nazw
 
-Na początek zaimportujmy niezbędne przestrzenie nazw. Te przestrzenie nazw zapewnią nam dostęp do klas i metod potrzebnych do pracy z dokumentami i kształtami programu Word.
+Najpierw zaimportujmy niezbędne przestrzenie nazw. Te przestrzenie nazw dadzą nam dostęp do klas i metod, których potrzebujemy do pracy z dokumentami i kształtami Worda.
 
 ```csharp
 using Aspose.Words;
@@ -30,7 +30,7 @@ using Aspose.Words.Drawing;
 
 ## Krok 1: Skonfiguruj katalog dokumentów
 
- Zanim zaczniemy manipulować kształtami, musimy założyć katalog, w którym będą przechowywane nasze dokumenty. Dla uproszczenia użyjemy symbolu zastępczego`YOUR DOCUMENT DIRECTORY`. Zastąp to rzeczywistą ścieżką do katalogu dokumentów.
+ Zanim zaczniemy manipulować kształtami, musimy utworzyć katalog, w którym będą przechowywane nasze dokumenty. Dla uproszczenia użyjemy symbolu zastępczego`YOUR DOCUMENT DIRECTORY`. Zastąp to rzeczywistą ścieżką do katalogu dokumentów.
 
 ```csharp
 // Ścieżka do katalogu dokumentów
@@ -39,18 +39,18 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Krok 2: Utwórz nowy dokument
 
-Następnie utworzymy nowy dokument programu Word przy użyciu Aspose.Words. Dokument ten posłuży nam jako płótno do dodawania kształtów i obrazów.
+Następnie utworzymy nowy dokument Word za pomocą Aspose.Words. Ten dokument będzie służył jako nasze płótno do dodawania kształtów i obrazów.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Tutaj tworzymy instancję`Document` klasę i użyj a`DocumentBuilder` aby pomóc nam w tworzeniu treści dokumentu.
+ Tutaj tworzymy instancję`Document` klasa i użyj`DocumentBuilder` aby pomóc nam w tworzeniu treści dokumentu.
 
 ## Krok 3: Wstaw obraz
 
- Teraz wstawmy obraz do naszego dokumentu. Skorzystamy z`InsertImage` metoda`DocumentBuilder`klasa. Upewnij się, że masz obraz w określonym katalogu.
+ Teraz wstawmy obraz do naszego dokumentu. Użyjemy`InsertImage` metoda`DocumentBuilder`klasa. Upewnij się, że masz obraz w określonym katalogu.
 
 ```csharp
 Shape shape = builder.InsertImage(dataDir + "Transparent background logo.png");
@@ -58,19 +58,19 @@ Shape shape = builder.InsertImage(dataDir + "Transparent background logo.png");
 
  Zastępować`dataDir + "Transparent background logo.png"` ze ścieżką do pliku obrazu.
 
-## Krok 4: Zablokuj współczynnik proporcji
+## Krok 4: Zablokuj proporcje obrazu
 
-Po wstawieniu obrazu możemy zablokować jego proporcje. Zablokowanie proporcji obrazu gwarantuje, że proporcje obrazu pozostaną stałe podczas zmiany rozmiaru.
+Po wstawieniu obrazu możemy zablokować jego współczynnik proporcji. Zablokowanie współczynnika proporcji zapewnia, że proporcje obrazu pozostaną stałe podczas zmiany rozmiaru.
 
 ```csharp
 shape.AspectRatioLocked = true;
 ```
 
- Ustawienie`AspectRatioLocked` Do`true` gwarantuje, że obraz zachowa oryginalne proporcje.
+ Ustawienie`AspectRatioLocked` Do`true` zapewnia zachowanie oryginalnych proporcji obrazu.
 
 ## Krok 5: Zapisz dokument
 
-Na koniec zapiszemy dokument we wskazanym katalogu. W tym kroku zapisywane są wszystkie zmiany, które dokonaliśmy w pliku dokumentu.
+Na koniec zapiszemy dokument w określonym katalogu. Ten krok zapisze wszystkie zmiany, które wprowadziliśmy do pliku dokumentu.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.AspectRatioLocked.docx");
@@ -78,21 +78,21 @@ doc.Save(dataDir + "WorkingWithShapes.AspectRatioLocked.docx");
 
 ## Wniosek
 
-Gratulacje! Pomyślnie nauczyłeś się ustawiać współczynnik proporcji kształtów w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Wykonując poniższe kroki, możesz mieć pewność, że obrazy i kształty zachowają swoje proporcje, dzięki czemu Twoje dokumenty będą wyglądać profesjonalnie i dopracowanie. Możesz eksperymentować z różnymi obrazami i kształtami, aby zobaczyć, jak działa funkcja blokowania proporcji obrazu w różnych scenariuszach.
+Gratulacje! Udało Ci się nauczyć, jak ustawić proporcje kształtów w dokumentach Worda za pomocą Aspose.Words dla .NET. Postępując zgodnie z tymi krokami, możesz mieć pewność, że Twoje obrazy i kształty zachowają swoje proporcje, dzięki czemu Twoje dokumenty będą wyglądać profesjonalnie i dopracowane. Możesz swobodnie eksperymentować z różnymi obrazami i kształtami, aby zobaczyć, jak funkcja blokowania proporcji działa w różnych scenariuszach.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Czy mogę odblokować proporcje po ich zablokowaniu?
+### Czy mogę odblokować proporcje obrazu po jego zablokowaniu?
 Tak, możesz odblokować współczynnik proporcji, ustawiając`shape.AspectRatioLocked = false`.
 
-### Co się stanie, jeśli zmienię rozmiar obrazu przy zablokowanym współczynniku proporcji?
-Rozmiar obrazu zmieni się proporcjonalnie, zachowując oryginalny stosunek szerokości do wysokości.
+### Co się stanie, jeśli zmienię rozmiar obrazu o zablokowanych proporcjach?
+Obraz zostanie proporcjonalnie zmieniony, zachowując oryginalny stosunek szerokości do wysokości.
 
-### Czy mogę zastosować to do innych kształtów oprócz obrazów?
-Absolutnie! Funkcję blokowania proporcji można zastosować do dowolnego kształtu, w tym prostokątów, okręgów i innych.
+### Czy mogę zastosować to do innych kształtów niż obrazy?
+Oczywiście! Funkcja blokowania proporcji może być stosowana do dowolnego kształtu, w tym prostokątów, okręgów i innych.
 
 ### Czy Aspose.Words dla .NET jest kompatybilny z .NET Core?
-Tak, Aspose.Words dla .NET obsługuje zarówno .NET Framework, jak i .NET Core.
+Tak, Aspose.Words for .NET obsługuje zarówno .NET Framework, jak i .NET Core.
 
 ### Gdzie mogę znaleźć więcej dokumentacji na temat Aspose.Words dla .NET?
- Można znaleźć obszerną dokumentację[Tutaj](https://reference.aspose.com/words/net/).
+ Można znaleźć kompleksową dokumentację[Tutaj](https://reference.aspose.com/words/net/).

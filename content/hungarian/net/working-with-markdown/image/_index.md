@@ -46,7 +46,7 @@ Ezután beszúr egy képet a dokumentumba. Íme, hogyan kell csinálni:
 Shape shape = builder.InsertImage("path_to_your_image.jpg");
 ```
 
- Cserélje ki`"path_to_your_image.jpg"` a képfájl tényleges elérési útjával. A`InsertImage`módszer hozzáadja a képet a dokumentumhoz.
+ Cserélje ki`"path_to_your_image.jpg"` a képfájl tényleges elérési útjával. A`InsertImage` módszer hozzáadja a képet a dokumentumhoz.
 
 ## 3. lépés: Állítsa be a kép tulajdonságait
 
@@ -63,7 +63,7 @@ Ha képeket ad hozzá a dokumentumokhoz, nagymértékben növelheti azok vizuál
 ## GYIK
 
 ### Hozzáadhatok több képet egyetlen dokumentumhoz?  
- Igen, tetszőleges számú képet hozzáadhat a következő megismétlésével`InsertImage` módszer minden képhez.
+Igen, tetszőleges számú képet hozzáadhat a következő megismétlésével`InsertImage` módszer minden képhez.
 
 ### Milyen képformátumokat támogat az Aspose.Words for .NET?  
 Az Aspose.Words különféle képformátumokat támogat, beleértve a JPEG-et, PNG-t, BMP-t, GIF-et stb.
@@ -72,7 +72,7 @@ Az Aspose.Words különféle képformátumokat támogat, beleértve a JPEG-et, P
  Teljesen! Beállíthatja a magasság és a szélesség tulajdonságait`Shape` objektumot a képek átméretezéséhez.
 
 ### Lehetséges képeket hozzáadni egy URL-ből?  
-Igen, hozzáadhat képeket egy URL-ből, ha megadja az URL-t a`InsertImage` módszer.
+ Igen, hozzáadhat képeket egy URL-ből, ha megadja az URL-t a`InsertImage` módszer.
 
 ### Hogyan szerezhetem be az Aspose.Words for .NET ingyenes próbaverzióját?  
  Ingyenes próbaverziót kaphat a[Aspose honlapja](https://releases.aspose.com/).

@@ -20,7 +20,7 @@ Aspose.Words for Java は、Word 文書をプログラムで操作できる強�
 - Aspose.Words for Java ライブラリ
 - 作業に使えるサンプルのWord文書
 
- Aspose.Words for Javaライブラリは以下からダウンロードできます。[ここ](https://releases.aspose.com/words/java/).
+Aspose.Words for Javaライブラリは以下からダウンロードできます。[ここ](https://releases.aspose.com/words/java/).
 
 ## 単純なテキストの検索と置換
 
@@ -122,7 +122,7 @@ doc.getRange().replace("text-to-replace", "new-text", options);
 doc.save("modified-document.docx");
 ```
 
-これにより、変更履歴に挿入されたとマークされたテキストを置換対象から除外できます。
+これにより、変更履歴で挿入としてマークされたテキストを置換対象から除外できます。
 
 ## テキストをHTMLに置き換える
 
@@ -260,7 +260,7 @@ Aspose.Words for Java を使用すると、置換パターン内での置換を�
 //ドキュメントを読み込む
 Document doc = new Document("your-document.docx");
 
-//UseSubstitutionsをtrueに設定してFindReplaceOptionsインスタンスを作成します。
+// UseSubstitutionsをtrueに設定してFindReplaceOptionsインスタンスを作成します。
 FindReplaceOptions options = new FindReplaceOptions();
 options.setUseSubstitutions(true);
 
@@ -273,7 +273,7 @@ doc.save("modified-document.docx");
 
 これにより、置換パターン内で置換を実行し、より高度な置換を実行できるようになります。
 
-## 文字列に置き換える
+## 文字列で置き換える
 
 Aspose.Words for Java を使用して、テキストを単純な文字列に置き換えることができます。
 

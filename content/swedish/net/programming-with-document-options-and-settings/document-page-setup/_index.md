@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.DocumentPageSetup.docx
 
 ## Slutsats
 
-Och där har du det! Med dessa enkla steg har du ställt in ditt dokuments sidlayout med Aspose.Words för .NET. Den här processen kan spara dig en hel del formateringshuvudvärk och säkerställa att dina dokument ser professionella och polerade ut. Så nästa gång du arbetar med ett projekt, kom ihåg den här guiden och gå igenom din sidinställningar som ett proffs.
+Och där har du det! Med dessa enkla steg har du ställt in ditt dokuments sidlayout med Aspose.Words för .NET. Den här processen kan spara dig en hel del formateringshuvudvärk och säkerställa att dina dokument ser professionella och polerade ut. Så nästa gång du arbetar med ett projekt, kom ihåg den här guiden och gå igenom din sidkonfiguration som ett proffs.
 
 ## FAQ's
 
@@ -94,4 +94,4 @@ Ja, du kan använda den med en tillfällig licens som du kan få[här](https://p
 Den stöder ett brett utbud av språk inklusive asiatiska språk som kinesiska och japanska.
 
 ### Var kan jag hitta mer detaljerad dokumentation?
- Detaljerad dokumentation finns tillgänglig[här](https://reference.aspose.com/words/net/).
+Detaljerad dokumentation finns tillgänglig[här](https://reference.aspose.com/words/net/).

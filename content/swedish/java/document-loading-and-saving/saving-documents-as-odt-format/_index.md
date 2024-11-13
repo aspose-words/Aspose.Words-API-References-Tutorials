@@ -69,7 +69,7 @@ I den här artikeln har vi lärt oss hur man sparar dokument som ODT-format med 
 
 ### Hur kan jag ladda ner Aspose.Words för Java?
 
- Du kan ladda ner Aspose.Words för Java från Asposes webbplats. Besök[denna länk](https://releases.aspose.com/words/java/)för att komma åt nedladdningssidan.
+ Du kan ladda ner Aspose.Words för Java från Asposes webbplats. Besök[denna länk](https://releases.aspose.com/words/java/) för att komma åt nedladdningssidan.
 
 ### Vad är fördelen med att spara dokument i ODT-format?
 

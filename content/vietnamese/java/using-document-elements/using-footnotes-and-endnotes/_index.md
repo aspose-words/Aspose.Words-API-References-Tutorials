@@ -1,26 +1,26 @@
 ---
-title: Sử dụng chú thích cuối trang và chú thích cuối trong Aspose.Words cho Java
+title: Sử dụng Footnotes và Endnotes trong Aspose.Words cho Java
 linktitle: Sử dụng chú thích cuối trang và chú thích cuối trang
 second_title: API xử lý tài liệu Java Aspose.Words
-description: Tìm hiểu cách sử dụng chú thích cuối trang và chú thích cuối trang một cách hiệu quả trong Aspose.Words cho Java. Hãy nâng cao kỹ năng định dạng tài liệu của bạn ngay hôm nay!
+description: Học cách sử dụng chú thích cuối trang và chú thích cuối văn bản hiệu quả trong Aspose.Words for Java. Nâng cao kỹ năng định dạng tài liệu của bạn ngay hôm nay!
 type: docs
 weight: 13
 url: /vi/java/using-document-elements/using-footnotes-and-endnotes/
 ---
 
-Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình sử dụng chú thích cuối trang và chú thích cuối trong Aspose.Words cho Java. Chú thích cuối trang và chú thích cuối trang là những thành phần thiết yếu trong định dạng tài liệu, thường được sử dụng để trích dẫn, tài liệu tham khảo và thông tin bổ sung. Aspose.Words for Java cung cấp chức năng mạnh mẽ để làm việc liền mạch với chú thích cuối trang và chú thích cuối trang.
+Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn quy trình sử dụng chú thích cuối trang và chú thích cuối văn bản trong Aspose.Words for Java. Chú thích cuối trang và chú thích cuối văn bản là những thành phần thiết yếu trong định dạng tài liệu, thường được sử dụng để trích dẫn, tham khảo và thông tin bổ sung. Aspose.Words for Java cung cấp chức năng mạnh mẽ để làm việc với chú thích cuối trang và chú thích cuối văn bản một cách liền mạch.
 
-## 1. Giới thiệu về Footnote và Endnote
+## 1. Giới thiệu về Chú thích cuối trang và Chú thích cuối văn bản
 
-Chú thích cuối trang và chú thích cuối trang là những chú thích cung cấp thông tin bổ sung hoặc trích dẫn trong tài liệu. Chú thích cuối trang xuất hiện ở cuối trang, trong khi chú thích cuối trang được thu thập ở cuối phần hoặc tài liệu. Chúng thường được sử dụng trong các bài viết học thuật, báo cáo, văn bản pháp luật để tham khảo nguồn hoặc làm rõ nội dung.
+Chú thích cuối trang và chú thích cuối văn bản là các chú thích cung cấp thông tin bổ sung hoặc trích dẫn trong một tài liệu. Chú thích cuối trang xuất hiện ở cuối trang, trong khi chú thích cuối văn bản được thu thập ở cuối một phần hoặc tài liệu. Chúng thường được sử dụng trong các bài báo học thuật, báo cáo và tài liệu pháp lý để tham khảo nguồn hoặc làm rõ nội dung.
 
 ## 2. Thiết lập môi trường của bạn
 
-Trước khi chúng ta đi sâu vào làm việc với chú thích cuối trang và chú thích cuối trang, bạn cần thiết lập môi trường phát triển của mình. Đảm bảo bạn đã cài đặt và định cấu hình API Aspose.Words cho Java trong dự án của mình.
+Trước khi chúng ta bắt đầu làm việc với chú thích cuối trang và chú thích cuối văn bản, bạn cần thiết lập môi trường phát triển của mình. Đảm bảo bạn đã cài đặt và cấu hình Aspose.Words for Java API trong dự án của mình.
 
-## 3. Thêm chú thích cuối trang vào tài liệu của bạn
+## 3. Thêm chú thích vào tài liệu của bạn
 
-Để thêm chú thích cuối trang vào tài liệu của bạn, hãy làm theo các bước sau:
+Để thêm chú thích vào tài liệu, hãy làm theo các bước sau:
 ```java
 string dataDir = "Your Document Directory";
 string outPath = "Your Output Directory";
@@ -28,15 +28,15 @@ string outPath = "Your Output Directory";
 public void getFootnoteOptions(){
     Document doc = new Document(dataDir + "Document.docx");
     
-    // Chỉ định số cột mà khu vực chú thích cuối trang được định dạng.
+    // Chỉ định số cột được định dạng cho vùng chú thích.
     doc.getFootnoteOptions().setColumns(3);
     doc.save("Your Directory Path" + "WorkingWithFootnotes.SetFootNoteColumns.docx");
 }
 ```
 
-## 4. Sửa đổi tùy chọn chú thích cuối trang
+## 4. Sửa đổi tùy chọn chú thích
 
-Bạn có thể sửa đổi các tùy chọn chú thích cuối trang để tùy chỉnh hình thức và hành vi của chúng. Đây là cách thực hiện:
+Bạn có thể sửa đổi tùy chọn chú thích để tùy chỉnh giao diện và hành vi của chúng. Sau đây là cách thực hiện:
 ```java
 @Test
 public void setFootnoteAndEndNotePosition() throws Exception {
@@ -49,9 +49,9 @@ public void setFootnoteAndEndNotePosition() throws Exception {
 }
 ```
 
-## 5. Thêm chú thích vào tài liệu của bạn
+## 5. Thêm chú thích cuối trang vào tài liệu của bạn
 
-Việc thêm chú thích cuối vào tài liệu của bạn rất đơn giản. Đây là một ví dụ:
+Việc thêm chú thích cuối trang vào tài liệu của bạn rất đơn giản. Sau đây là một ví dụ:
 ```java
 @Test
 public void setEndnoteOptions() throws Exception {
@@ -69,17 +69,17 @@ public void setEndnoteOptions() throws Exception {
 }
 ```
 
-## 6. Tùy chỉnh cài đặt ghi chú cuối
+## 6. Tùy chỉnh cài đặt Endnote
 
-Bạn có thể tùy chỉnh thêm cài đặt ghi chú cuối để đáp ứng yêu cầu tài liệu của mình.
+Bạn có thể tùy chỉnh thêm cài đặt chú thích cuối trang để đáp ứng yêu cầu của tài liệu.
 
-## Mã nguồn hoàn chỉnh
+## Mã nguồn đầy đủ
 ```java
 	string dataDir = "Your Document Directory";
 	string outPath = "Your Output Directory";
 	public void getFootnoteOptions(){
         Document doc = new Document(dataDir + "Document.docx");
-        // Chỉ định số cột mà khu vực chú thích cuối trang được định dạng.
+        // Chỉ định số cột được định dạng cho vùng chú thích.
         doc.getFootnoteOptions().setColumns(3);
         doc.save("Your Directory Path" + "WorkingWithFootnotes.SetFootNoteColumns.docx");
     }
@@ -107,22 +107,22 @@ Bạn có thể tùy chỉnh thêm cài đặt ghi chú cuối để đáp ứng
 
 ## 7. Kết luận
 
-Trong hướng dẫn này, chúng ta đã khám phá cách làm việc với chú thích cuối trang và chú thích cuối trong Aspose.Words cho Java. Những tính năng này rất có giá trị trong việc tạo ra các tài liệu có cấu trúc tốt với các trích dẫn và tài liệu tham khảo thích hợp.
+Trong hướng dẫn này, chúng tôi đã khám phá cách làm việc với chú thích cuối trang và chú thích cuối văn bản trong Aspose.Words for Java. Các tính năng này vô cùng hữu ích để tạo ra các tài liệu có cấu trúc tốt với trích dẫn và tham chiếu phù hợp.
 
-Bây giờ bạn đã học cách sử dụng chú thích cuối trang và chú thích cuối, bạn có thể cải thiện định dạng tài liệu và làm cho nội dung của mình chuyên nghiệp hơn.
+Bây giờ bạn đã biết cách sử dụng chú thích cuối trang và chú thích cuối văn bản, bạn có thể cải thiện định dạng tài liệu và làm cho nội dung trở nên chuyên nghiệp hơn.
 
-### Câu hỏi thường gặp
+### Những câu hỏi thường gặp
 
-### 1. Sự khác biệt giữa chú thích cuối trang và chú thích cuối trang là gì?
-Chú thích cuối trang xuất hiện ở cuối trang, trong khi chú thích cuối trang được thu thập ở cuối phần hoặc tài liệu.
+### 1. Sự khác biệt giữa chú thích cuối trang và chú thích cuối văn bản là gì?
+Chú thích xuất hiện ở cuối trang, trong khi chú thích cuối trang được thu thập ở cuối phần hoặc cuối tài liệu.
 
-### 2. Làm cách nào để thay đổi vị trí của cước chú hoặc chú thích cuối?
- Bạn có thể sử dụng`setPosition` phương pháp thay đổi vị trí của cước chú hoặc chú thích cuối.
+### 2. Làm thế nào để thay đổi vị trí chú thích hoặc chú thích cuối trang?
+ Bạn có thể sử dụng`setPosition` phương pháp thay đổi vị trí chú thích hoặc chú thích cuối trang.
 
-### 3. Tôi có thể tùy chỉnh định dạng của chú thích cuối trang và chú thích cuối sách không?
-Có, bạn có thể tùy chỉnh định dạng chú thích cuối trang và chú thích cuối bằng Aspose.Words for Java.
+### 3. Tôi có thể tùy chỉnh định dạng chú thích cuối trang và chú thích cuối văn bản không?
+Có, bạn có thể tùy chỉnh định dạng chú thích cuối trang và chú thích cuối văn bản bằng Aspose.Words cho Java.
 
-### 4. Chú thích cuối trang và chú thích cuối có quan trọng trong việc định dạng tài liệu không?
-Có, chú thích cuối trang và chú thích cuối trang rất cần thiết để cung cấp tài liệu tham khảo và thông tin bổ sung trong tài liệu.
+### 4. Chú thích cuối trang và chú thích cuối trang có quan trọng trong việc định dạng tài liệu không?
+Có, chú thích cuối trang và chú thích cuối trang rất cần thiết để cung cấp thông tin tham khảo và bổ sung trong tài liệu.
 
-Vui lòng khám phá thêm các tính năng của Aspose.Words cho Java và nâng cao khả năng tạo tài liệu của bạn. Chúc mừng mã hóa!
+Hãy thoải mái khám phá thêm nhiều tính năng của Aspose.Words for Java và nâng cao khả năng tạo tài liệu của bạn. Chúc bạn viết mã vui vẻ!

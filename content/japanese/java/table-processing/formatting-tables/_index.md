@@ -45,7 +45,7 @@ public class TableFormattingExample {
 
 ## テーブルの作成とデータ入力
 
-環境を設定したので、ドキュメント内のテーブルの作成とデータ入力に取り掛かりましょう。
+環境が設定されたので、ドキュメント内のテーブルの作成とデータ入力に取り掛かりましょう。
 
 ### テーブルの作成
 
@@ -70,7 +70,7 @@ cell1.getCellFormat().setPreferredWidth(100.0);
 Cell cell2 = row.getCells().add();
 cell2.getCellFormat().setPreferredWidth(200.0);
 
-//テーブルにデータを入力するコードをここに記述します
+//テーブルにデータを入力するコードはここに記述します
 ```
 
 ## 表の書式設定

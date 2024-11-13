@@ -1,6 +1,6 @@
 ---
-title: PDF ドキュメントにサブセット フォントを埋め込む
-linktitle: PDF ドキュメントにサブセット フォントを埋め込む
+title: PDF ドキュメントにサブセットフォントを埋め込む
+linktitle: PDF ドキュメントにサブセットフォントを埋め込む
 second_title: Aspose.Words ドキュメント処理 API
 description: Aspose.Words for .NET を使用して必要なフォント サブセットのみを埋め込むことで、PDF ファイルのサイズを縮小します。ステップ バイ ステップ ガイドに従って、PDF を効率的に最適化します。
 type: docs
@@ -21,7 +21,7 @@ url: /ja/net/programming-with-pdfsaveoptions/embedded-subset-fonts/
 
 ## 名前空間のインポート
 
-Aspose.Words for .NET を使用するには、プロジェクトに必要な名前空間をインポートする必要があります。これらを C# ファイルの先頭に追加します。
+Aspose.Words for .NET を使用するには、プロジェクトに必要な名前空間をインポートする必要があります。C# ファイルの先頭に以下を追加します。
 
 ```csharp
 using System;
@@ -65,7 +65,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbedSubsetFonts.pdf", saveOptions
 
 ## 結論
 
-これで完了です。これらの簡単な手順に従うと、Aspose.Words for .NET を使用して必要なフォント サブセットのみを埋め込むことで、PDF ファイルのサイズを効率的に縮小できます。これにより、ストレージ領域が節約されるだけでなく、特にフォントが豊富なドキュメントの場合、読み込み時間が短縮され、パフォーマンスが向上します。
+これで完了です。これらの簡単な手順に従うだけで、Aspose.Words for .NET を使用して必要なフォント サブセットのみを埋め込むことで、PDF ファイルのサイズを効率的に縮小できます。これにより、ストレージ領域が節約されるだけでなく、特にフォントが豊富なドキュメントの場合、読み込み時間が短縮され、パフォーマンスが向上します。
 
 ## よくある質問
 

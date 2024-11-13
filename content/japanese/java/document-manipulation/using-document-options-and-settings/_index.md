@@ -134,7 +134,7 @@ public void addJapaneseAsEditingLanguages() throws Exception
 
 ### 特定の Word バージョンに合わせてドキュメントを最適化するにはどうすればよいでしょうか?
 
-特定のWordバージョンに合わせて文書を最適化するには、`optimizeFor`方法を選択し、希望するバージョンを指定します。たとえば、Word 2016 用に最適化するには、次のようにします。
+特定のWordバージョンに合わせて文書を最適化するには、`optimizeFor`メソッドを選択し、目的のバージョンを指定します。たとえば、Word 2016 用に最適化するには、次のようにします。
 
 ```java
 Document doc = new Document("Your Directory Path" + "Document.docx");
@@ -159,7 +159,7 @@ doc.save("Your Directory Path" + "ShowErrors.docx");
 
 ### ドキュメントから重複したスタイルを削除するにはどうすればよいですか?
 
-ドキュメントから重複したスタイルを削除するには、`cleanup`方法`duplicateStyle`オプション設定`true`以下に例を示します。
+ドキュメントから重複したスタイルを削除するには、`cleanup`方法`duplicateStyle`オプションを設定`true`次に例を示します。
 
 ```java
 Document doc = new Document("Your Directory Path" + "Document.docx");

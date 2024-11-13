@@ -2,7 +2,7 @@
 title: Menerima dan Menolak Perubahan Dokumen
 linktitle: Menerima dan Menolak Perubahan Dokumen
 second_title: API Pemrosesan Dokumen Java Aspose.Words
-description: Pelajari cara mengelola perubahan dokumen dengan mudah dengan Aspose.Words untuk Java. Terima dan tolak revisi dengan lancar.
+description: Pelajari cara mengelola perubahan dokumen dengan mudah menggunakan Aspose.Words untuk Java. Terima dan tolak revisi dengan mudah.
 type: docs
 weight: 12
 url: /id/java/document-revision/accepting-rejecting-document-changes/
@@ -10,15 +10,15 @@ url: /id/java/document-revision/accepting-rejecting-document-changes/
 
 ## Pengantar Aspose.Words untuk Java
 
-Aspose.Words for Java adalah perpustakaan tangguh yang memungkinkan pengembang Java membuat, memanipulasi, dan mengonversi dokumen Word dengan mudah. Salah satu fitur utamanya adalah kemampuan untuk bekerja dengan perubahan dokumen, menjadikannya alat yang sangat berharga untuk pengeditan dokumen kolaboratif.
+Aspose.Words untuk Java adalah pustaka tangguh yang memungkinkan pengembang Java membuat, memanipulasi, dan mengonversi dokumen Word dengan mudah. Salah satu fitur utamanya adalah kemampuan untuk bekerja dengan perubahan dokumen, menjadikannya alat yang sangat berharga untuk penyuntingan dokumen secara kolaboratif.
 
 ## Memahami Perubahan Dokumen
 
-Sebelum mendalami implementasinya, mari kita pahami apa saja perubahan dokumen. Perubahan dokumen mencakup pengeditan, penyisipan, penghapusan, dan modifikasi format yang dilakukan dalam dokumen. Perubahan ini biasanya dilacak menggunakan fitur revisi.
+Sebelum menyelami implementasinya, mari kita pahami apa saja perubahan dokumen itu. Perubahan dokumen meliputi suntingan, penyisipan, penghapusan, dan modifikasi format yang dilakukan dalam dokumen. Perubahan ini biasanya dilacak menggunakan fitur revisi.
 
 ## Memuat Dokumen
 
-Untuk memulai, Anda perlu memuat dokumen Word yang berisi perubahan terlacak. Aspose.Words untuk Java menyediakan cara mudah untuk melakukan ini:
+Untuk memulai, Anda perlu memuat dokumen Word yang berisi perubahan yang dilacak. Aspose.Words untuk Java menyediakan cara mudah untuk melakukannya:
 
 ```java
 // Muat dokumen
@@ -32,7 +32,7 @@ Setelah Anda memuat dokumen, penting untuk meninjau perubahannya. Anda dapat men
 ```java
 // Ulangi melalui revisi
 for (Revision revision : doc.getRevisions()) {
-    // Tampilkan detail revisi
+    // Menampilkan detail revisi
     System.out.println("Revision Type: " + revision.getRevisionType());
     System.out.println("Text: " + revision.getText());
 }
@@ -40,7 +40,7 @@ for (Revision revision : doc.getRevisions()) {
 
 ## Menerima Perubahan
 
-Menerima perubahan adalah langkah penting dalam menyelesaikan dokumen. Aspose.Words untuk Java memudahkan untuk menerima semua revisi atau revisi tertentu:
+Menerima perubahan merupakan langkah penting dalam menyelesaikan dokumen. Aspose.Words untuk Java memudahkan penerimaan semua revisi atau revisi tertentu:
 
 ```java
 // Terima semua revisi
@@ -52,7 +52,7 @@ doc.acceptRevision(0);
 
 ## Menolak Perubahan
 
-Dalam beberapa kasus, Anda mungkin perlu menolak perubahan tertentu. Aspose.Words untuk Java memberikan fleksibilitas untuk menolak revisi sesuai kebutuhan:
+Dalam beberapa kasus, Anda mungkin perlu menolak perubahan tertentu. Aspose.Words untuk Java menyediakan fleksibilitas untuk menolak revisi sesuai kebutuhan:
 
 ```java
 // Tolak semua revisi
@@ -67,36 +67,36 @@ doc.rejectRevision(1);
 Setelah menerima atau menolak perubahan, penting untuk menyimpan dokumen dengan modifikasi yang diinginkan:
 
 ```java
-// Simpan dokumen yang diubah
+// Simpan dokumen yang dimodifikasi
 doc.save("document_with_accepted_changes.docx");
 ```
 
 ## Mengotomatiskan Proses
 
-Untuk menyederhanakan proses lebih lanjut, Anda dapat mengotomatiskan penerimaan atau penolakan perubahan berdasarkan kriteria tertentu, seperti komentar pengulas atau jenis revisi. Hal ini memastikan alur kerja dokumen yang lebih efisien.
+Untuk lebih menyederhanakan proses, Anda dapat mengotomatiskan penerimaan atau penolakan perubahan berdasarkan kriteria tertentu, seperti komentar pengulas atau jenis revisi. Ini memastikan alur kerja dokumen yang lebih efisien.
 
 ## Kesimpulan
 
 Kesimpulannya, menguasai seni menerima dan menolak perubahan dokumen menggunakan Aspose.Words untuk Java dapat meningkatkan pengalaman kolaborasi dokumen Anda secara signifikan. Pustaka canggih ini menyederhanakan proses, memungkinkan Anda meninjau, memodifikasi, dan menyelesaikan dokumen dengan mudah.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
-### Bagaimana cara menentukan siapa yang membuat perubahan spesifik pada dokumen?
+### Bagaimana saya dapat menentukan siapa yang membuat perubahan tertentu dalam dokumen?
 
  Anda dapat mengakses informasi penulis untuk setiap revisi menggunakan`getAuthor` metode pada`Revision` obyek.
 
-### Bisakah saya mengkustomisasi tampilan perubahan terlacak dalam dokumen?
+### Dapatkah saya menyesuaikan tampilan perubahan yang dilacak dalam dokumen?
 
-Ya, Anda dapat menyesuaikan tampilan perubahan terlacak dengan memodifikasi opsi pemformatan untuk revisi.
+Ya, Anda dapat menyesuaikan tampilan perubahan yang dilacak dengan memodifikasi opsi pemformatan untuk revisi.
 
-### Apakah Aspose.Words untuk Java kompatibel dengan format dokumen Word yang berbeda?
+### Apakah Aspose.Words untuk Java kompatibel dengan berbagai format dokumen Word?
 
 Ya, Aspose.Words untuk Java mendukung berbagai format dokumen Word, termasuk DOCX, DOC, RTF, dan banyak lagi.
 
 ### Bisakah saya membatalkan penerimaan atau penolakan perubahan?
 
-Sayangnya, perubahan yang telah diterima atau ditolak tidak dapat dengan mudah dibatalkan dalam perpustakaan Aspose.Words.
+Sayangnya, perubahan yang telah diterima atau ditolak tidak dapat dengan mudah dibatalkan dalam pustaka Aspose.Words.
 
 ### Di mana saya dapat menemukan informasi dan dokumentasi lebih lanjut untuk Aspose.Words untuk Java?
 
- Untuk dokumentasi dan contoh terperinci, kunjungi[Aspose.Words untuk Referensi API Java](https://reference.aspose.com/words/java/).
+ Untuk dokumentasi dan contoh terperinci, kunjungi[Referensi API Aspose.Words untuk Java](https://reference.aspose.com/words/java/).

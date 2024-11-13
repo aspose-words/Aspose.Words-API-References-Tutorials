@@ -54,7 +54,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## 3. lépés: DocumentBuilder objektum létrehozása
 
- A`DocumentBuilder` osztály egy hatékony eszköz az Aspose.Words könyvtárban. Segítségével navigálhatunk és kezelhetjük a dokumentumot.
+A`DocumentBuilder` osztály egy hatékony eszköz az Aspose.Words könyvtárban. Segítségével navigálhatunk és kezelhetjük a dokumentumot.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(dstDoc);
@@ -64,7 +64,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 
 ## 4. lépés: Ugrás a dokumentum végére
 
-forrásdokumentum beszúrása előtt az építő kurzort a céldokumentum végére kell mozgatnunk.
+A forrásdokumentum beszúrása előtt az építő kurzort a céldokumentum végére kell mozgatnunk.
 
 ```csharp
 builder.MoveToDocumentEnd();
@@ -100,7 +100,7 @@ Végül mentsük el az egyesített dokumentumot. Ez egy fájlba fogja egyesíten
 builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilder.docx");
 ```
 
-dokumentum elmentésével befejezzük a két dokumentum egyesítésének folyamatát. Az új dokumentum készen áll, és a megadott könyvtárba mentve.
+A dokumentum elmentésével befejezzük a két dokumentum egyesítésének folyamatát. Az új dokumentum készen áll, és a megadott könyvtárba mentve.
 
 ## Következtetés
 
@@ -121,4 +121,4 @@ Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi a fejl
 Teljesen! A leírt módszer beépíthető nagyobb alkalmazásokba a dokumentumfeldolgozási feladatok automatizálása érdekében.
 
 ### Hol találhatok további forrásokat és támogatást?  
-További információkért ellenőrizze a[dokumentáció](https://reference.aspose.com/words/net/) , vagy látogassa meg a[támogatási fórum](https://forum.aspose.com/c/words/8) segítségért.
+ További információkért ellenőrizze a[dokumentáció](https://reference.aspose.com/words/net/) , vagy látogassa meg a[támogatási fórum](https://forum.aspose.com/c/words/8) segítségért.

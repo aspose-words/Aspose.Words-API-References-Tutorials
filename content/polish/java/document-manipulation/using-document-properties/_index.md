@@ -2,7 +2,7 @@
 title: Korzystanie z właściwości dokumentu w Aspose.Words dla Java
 linktitle: Korzystanie z właściwości dokumentu
 second_title: Aspose.Words API przetwarzania dokumentów Java
-description: Zoptymalizuj zarządzanie dokumentami za pomocą Aspose.Words dla Java. W tym obszernym samouczku nauczysz się pracować z właściwościami dokumentu, dodawać niestandardowe metadane i nie tylko.
+description: Zoptymalizuj zarządzanie dokumentami za pomocą Aspose.Words dla Java. Naucz się pracować z właściwościami dokumentu, dodawać niestandardowe metadane i nie tylko w tym kompleksowym samouczku.
 type: docs
 weight: 32
 url: /pl/java/document-manipulation/using-document-properties/
@@ -10,13 +10,13 @@ url: /pl/java/document-manipulation/using-document-properties/
 
 ## Wprowadzenie do właściwości dokumentu
 
-Właściwości dokumentu są istotną częścią każdego dokumentu. Dostarczają dodatkowych informacji o samym dokumencie, takich jak jego tytuł, autor, temat, słowa kluczowe i inne. W Aspose.Words dla Java możesz manipulować zarówno wbudowanymi, jak i niestandardowymi właściwościami dokumentu.
+Właściwości dokumentu są istotną częścią każdego dokumentu. Dostarczają dodatkowych informacji o samym dokumencie, takich jak tytuł, autor, temat, słowa kluczowe i inne. W Aspose.Words for Java możesz manipulować zarówno wbudowanymi, jak i niestandardowymi właściwościami dokumentu.
 
 ## Wyliczanie właściwości dokumentu
 
-### Wbudowane właściwości
+### Właściwości wbudowane
 
-Aby pobrać wbudowane właściwości dokumentu i pracować z nimi, możesz użyć następującego fragmentu kodu:
+Aby pobrać i pracować z wbudowanymi właściwościami dokumentu, możesz użyć następującego fragmentu kodu:
 
 ```java
 @Test
@@ -53,7 +53,7 @@ public void addCustomDocumentProperties() throws Exception
 }
 ```
 
-Ten fragment kodu demonstruje, jak dodać niestandardowe właściwości dokumentu, w tym wartość logiczną, ciąg znaków, datę, numer wersji i wartość liczbową.
+Ten fragment kodu pokazuje, jak dodać niestandardowe właściwości dokumentu, w tym wartość logiczną, ciąg, datę, numer wersji i wartość liczbową.
 
 ## Usuwanie właściwości dokumentu
 
@@ -68,11 +68,11 @@ public void removeCustomDocumentProperties() throws Exception
 }
 ```
 
-Ten kod usuwa niestandardową właściwość „Data autoryzacji” z dokumentu.
+Ten kod usuwa z dokumentu właściwość niestandardową „Data autoryzacji”.
 
 ## Konfigurowanie łącza do treści
 
-W niektórych przypadkach możesz chcieć utworzyć łącza w swoim dokumencie. Oto jak możesz to zrobić:
+W niektórych przypadkach możesz chcieć utworzyć linki w swoim dokumencie. Oto jak możesz to zrobić:
 
 ```java
 @Test
@@ -95,11 +95,11 @@ public void configuringLinkToContent() throws Exception
 }
 ```
 
-Ten fragment kodu demonstruje, jak utworzyć zakładkę w dokumencie i dodać niestandardową właściwość dokumentu zawierającą łącze do tej zakładki.
+Ten fragment kodu pokazuje, jak utworzyć zakładkę w dokumencie i dodać niestandardową właściwość dokumentu zawierającą odnośnik do tej zakładki.
 
-## Konwersja pomiędzy jednostkami miary
+## Konwersja między jednostkami miary
 
-W Aspose.Words dla Java możesz łatwo konwertować jednostki miary. Oto przykład, jak to zrobić:
+W Aspose.Words for Java możesz łatwo konwertować jednostki miary. Oto przykład, jak to zrobić:
 
 ```java
 @Test
@@ -119,11 +119,11 @@ public void convertBetweenMeasurementUnits() throws Exception
 }
 ```
 
-Ten fragment kodu ustawia różne marginesy i odległości w calach, konwertując je na punkty.
+Ten fragment kodu ustawia różne marginesy i odległości w calach, zamieniając je na punkty.
 
-## Używanie znaków kontrolnych
+## Korzystanie ze znaków kontrolnych
 
-Znaki sterujące mogą być przydatne podczas pracy z tekstem. Oto jak zamienić znak kontrolny w tekście:
+Znaki kontrolne mogą być przydatne w przypadku tekstu. Oto jak zastąpić znak kontrolny w tekście:
 
 ```java
 @Test
@@ -136,30 +136,30 @@ public void useControlCharacters()
 }
 ```
 
-W tym przykładzie zastępujemy powrót karetki (`\r`) z powrotem karetki, po którym następuje przesunięcie wiersza (`\r\n`).
+W tym przykładzie zastępujemy znak powrotu karetki (`\r`) z powrotem karetki i następującym po nim znakiem nowej linii (`\r\n`).
 
 ## Wniosek
 
-Właściwości dokumentu odgrywają znaczącą rolę w efektywnym zarządzaniu dokumentami i organizowaniu ich w Aspose.Words for Java. Niezależnie od tego, czy pracujesz z właściwościami wbudowanymi, właściwościami niestandardowymi, czy też używasz znaków sterujących, masz do dyspozycji szereg narzędzi zwiększających możliwości zarządzania dokumentami.
+Właściwości dokumentu odgrywają znaczącą rolę w efektywnym zarządzaniu i organizowaniu dokumentów w Aspose.Words for Java. Niezależnie od tego, czy pracujesz z wbudowanymi właściwościami, właściwościami niestandardowymi, czy używasz znaków kontrolnych, masz do dyspozycji szereg narzędzi, które ulepszą Twoje możliwości zarządzania dokumentami.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
 ### Jak uzyskać dostęp do wbudowanych właściwości dokumentu?
 
  Aby uzyskać dostęp do wbudowanych właściwości dokumentu w Aspose.Words dla Java, możesz użyć`getBuiltInDocumentProperties` metoda na`Document` obiekt. Ta metoda zwraca kolekcję wbudowanych właściwości, po których można iterować.
 
-### Czy mogę dodać niestandardowe właściwości dokumentu do dokumentu?
+### Czy mogę dodać do dokumentu niestandardowe właściwości?
 
- Tak, możesz dodać niestandardowe właściwości dokumentu do dokumentu za pomocą`CustomDocumentProperties` kolekcja. Można definiować właściwości niestandardowe za pomocą różnych typów danych, w tym ciągów znaków, wartości logicznych, dat i wartości numerycznych.
+ Tak, możesz dodać niestandardowe właściwości dokumentu do dokumentu za pomocą`CustomDocumentProperties` kolekcja. Możesz zdefiniować niestandardowe właściwości z różnymi typami danych, w tym ciągami, wartościami logicznymi, datami i wartościami liczbowymi.
 
 ### Jak mogę usunąć określoną niestandardową właściwość dokumentu?
 
- Aby usunąć określoną niestandardową właściwość dokumentu, możesz użyć metody`remove` metoda na`CustomDocumentProperties`kolekcji, przekazując jako parametr nazwę właściwości, którą chcesz usunąć.
+ Aby usunąć określoną niestandardową właściwość dokumentu, możesz użyć`remove` metoda na`CustomDocumentProperties`kolekcji, przekazując jako parametr nazwę właściwości, którą chcesz usunąć.
 
-### Jaki jest cel tworzenia linków do treści w dokumencie?
+### Jaki jest cel linkowania do treści w dokumencie?
 
-Linki do treści w dokumencie umożliwiają tworzenie dynamicznych odniesień do określonych części dokumentu. Może to być przydatne do tworzenia interaktywnych dokumentów lub odsyłaczy między sekcjami.
+Łączenie z treścią w dokumencie umożliwia tworzenie dynamicznych odniesień do określonych części dokumentu. Może to być przydatne do tworzenia interaktywnych dokumentów lub odniesień krzyżowych między sekcjami.
 
-### Jak mogę przekonwertować różne jednostki miary w Aspose.Words dla Java?
+### W jaki sposób mogę konwertować różne jednostki miary w Aspose.Words dla Java?
 
- Możesz konwertować pomiędzy różnymi jednostkami miary w Aspose.Words dla Java za pomocą`ConvertUtil` klasa. Zapewnia metody konwersji jednostek, takich jak cale na punkty, punkty na centymetry i inne.
+ W Aspose.Words for Java możesz konwertować różne jednostki miary za pomocą`ConvertUtil` Klasa. Dostarcza metod konwersji jednostek, takich jak cale na punkty, punkty na centymetry i inne.

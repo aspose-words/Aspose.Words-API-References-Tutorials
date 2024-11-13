@@ -2,7 +2,7 @@
 title: Word に表を追加する
 linktitle: Word に表を追加する
 second_title: Aspose.Words Java ドキュメント処理 API
-description: Aspose.Words for Java を使用して Word に表を追加する方法を学習します。Word 文書で適切にフォーマットされた表を簡単に生成します。
+description: Aspose.Words for Java を使用して Word に表を追加する方法を学びます。Word 文書で適切にフォーマットされた表を簡単に生成します。
 type: docs
 weight: 10
 url: /ja/java/table-processing/add-table-in-word/

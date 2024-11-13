@@ -20,7 +20,7 @@ url: /ja/java/document-printing/guide-to-document-printing/
 
 ### Aspose.Words for Java を使用する理由
 
-Aspose.Words for Java は、Word ドキュメントをプログラムで操作するための包括的な機能セットを提供する強力な Java ライブラリです。ドキュメントの作成、操作、レンダリングを幅広くサポートします。さらに、Aspose.Words for Java は、ドキュメントの印刷を簡単に処理するためのユーザーフレンドリーなインターフェイスを提供します。
+Aspose.Words for Java は、Word 文書をプログラムで操作するための包括的な機能セットを提供する強力な Java ライブラリです。文書の作成、操作、レンダリングを幅広くサポートします。さらに、Aspose.Words for Java は、文書の印刷を簡単に処理するためのユーザーフレンドリーなインターフェイスを提供します。
 
 ## 環境の設定
 

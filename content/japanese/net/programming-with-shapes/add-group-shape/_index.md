@@ -55,7 +55,7 @@ GroupShape groupShape = new GroupShape(doc);
 
 さて、個々の図形を追加してみましょう`GroupShape`コンテナー。アクセントの境界線の図形から始めて、アクション ボタンの図形を追加します。
 
-### アクセントの境界線を追加する
+### アクセントの境界線シェイプを追加する
 
 ```csharp
 Shape accentBorderShape = new Shape(doc, ShapeType.AccentBorderCallout1)
@@ -117,7 +117,7 @@ doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");
 
 ## 結論
 
-Word 文書にグループ図形を追加するのは、複雑なプロセスである必要はありません。Aspose.Words for .NET を使用すると、図形を簡単に作成および操作できるため、文書の見た目が魅力的で機能的になります。このチュートリアルで説明されている手順に従えば、すぐにプロになれます。
+Word 文書にグループ図形を追加するのは、複雑なプロセスである必要はありません。Aspose.Words for .NET を使用すると、図形を簡単に作成および操作して、文書の見た目と機能性を向上させることができます。このチュートリアルで説明されている手順に従えば、すぐにプロになれます。
 
 ## よくある質問
 

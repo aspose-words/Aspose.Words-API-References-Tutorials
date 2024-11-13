@@ -2,22 +2,22 @@
 title: Reemplazar hipervínculos
 linktitle: Reemplazar hipervínculos
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a reemplazar hipervínculos en documentos .NET usando Aspose.Words para una gestión eficiente de documentos y actualizaciones dinámicas de contenido.
+description: Aprenda a reemplazar hipervínculos en documentos .NET usando Aspose.Words para una gestión eficiente de documentos y actualizaciones de contenido dinámico.
 type: docs
 weight: 10
 url: /es/net/working-with-fields/replace-hyperlinks/
 ---
 ## Introducción
 
-En el mundo del desarrollo de .NET, administrar y manipular documentos es una tarea crucial, que a menudo requiere un manejo eficiente de los hipervínculos dentro de los documentos. Aspose.Words para .NET proporciona poderosas capacidades para reemplazar sin problemas los hipervínculos, asegurando que sus documentos estén vinculados dinámicamente a los recursos correctos. Este tutorial profundiza en cómo puede lograr esto usando Aspose.Words para .NET, guiándolo paso a paso a través del proceso.
+En el mundo del desarrollo .NET, la gestión y manipulación de documentos es una tarea crucial que, a menudo, requiere un manejo eficiente de los hipervínculos dentro de los documentos. Aspose.Words para .NET ofrece potentes capacidades para reemplazar los hipervínculos sin problemas, lo que garantiza que sus documentos estén vinculados dinámicamente a los recursos adecuados. Este tutorial profundiza en cómo puede lograr esto utilizando Aspose.Words para .NET y lo guía paso a paso a través del proceso.
 
-## Requisitos previos
+## Prerrequisitos
 
-Antes de sumergirse en el reemplazo de hipervínculos con Aspose.Words para .NET, asegúrese de tener lo siguiente:
+Antes de comenzar a reemplazar hipervínculos con Aspose.Words para .NET, asegúrese de tener lo siguiente:
 
-- Visual Studio: instalado y configurado para desarrollo .NET.
--  Aspose.Words para .NET: descargado y referenciado en su proyecto. Puedes descargarlo desde[aquí](https://releases.aspose.com/words/net/).
-- Familiaridad con C#: conocimientos básicos para escribir y compilar código.
+- Visual Studio: instalado y configurado para el desarrollo .NET.
+-  Aspose.Words para .NET: descargado y referenciado en su proyecto. Puede descargarlo desde[aquí](https://releases.aspose.com/words/net/).
+- Familiaridad con C#: comprensión básica para escribir y compilar código.
 
 ## Importar espacios de nombres
 
@@ -28,22 +28,22 @@ using Aspose.Words;
 using Aspose.Words.Fields;
 ```
 
-## Paso 1: cargue el documento
+## Paso 1: Cargue el documento
 
 Comience cargando el documento donde desea reemplazar los hipervínculos:
 
 ```csharp
-// Ruta a su directorio de documentos
+// Ruta al directorio de su documento
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Hyperlinks.docx");
 ```
 
- Reemplazar`"Hyperlinks.docx"` con la ruta a su documento real.
+ Reemplazar`"Hyperlinks.docx"` con la ruta a su documento actual.
 
-## Paso 2: iterar a través de los campos
+## Paso 2: Iterar a través de los campos
 
-Recorra cada campo del documento para buscar y reemplazar hipervínculos:
+Recorrer cada campo del documento para buscar y reemplazar hipervínculos:
 
 ```csharp
 foreach (Field field in doc.Range.Fields)
@@ -52,44 +52,44 @@ foreach (Field field in doc.Range.Fields)
     {
         FieldHyperlink hyperlink = (FieldHyperlink)field;
         
-        // Compruebe si el hipervínculo no es un enlace local (ignore los marcadores).
+        // Compruebe si el hipervínculo no es un enlace local (ignorar marcadores).
         if (hyperlink.SubAddress != null)
             continue;
         
         // Reemplace la dirección del hipervínculo y el resultado.
-        hyperlink.Address = "http://www.aspose.com";
+        hyperlink.Address = "http://"www.aspose.com";
         hyperlink.Result = "Aspose - The .NET & Java Component Publisher";
     }
 }
 ```
 
-## Paso 3: guarde el documento
+## Paso 3: Guardar el documento
 
-Finalmente, guarde el documento modificado con los hipervínculos reemplazados:
+Por último, guarde el documento modificado con los hipervínculos reemplazados:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ReplaceHyperlinks.docx");
 ```
 
- Reemplazar`"WorkingWithFields.ReplaceHyperlinks.docx"` con la ruta del archivo de salida deseada.
+ Reemplazar`"WorkingWithFields.ReplaceHyperlinks.docx"` con la ruta de archivo de salida deseada.
 
 ## Conclusión
 
-Reemplazar hipervínculos en documentos usando Aspose.Words para .NET es sencillo y mejora la naturaleza dinámica de sus documentos. Ya sea actualizando URL o transformando el contenido del documento mediante programación, Aspose.Words simplifica estas tareas, garantizando una gestión de documentos eficiente.
+Reemplazar hipervínculos en documentos con Aspose.Words para .NET es sencillo y mejora la naturaleza dinámica de sus documentos. Ya sea que actualice direcciones URL o transforme el contenido de los documentos mediante programación, Aspose.Words simplifica estas tareas, lo que garantiza una administración eficiente de los documentos.
 
 ## Preguntas frecuentes
 
 ### ¿Puede Aspose.Words para .NET manejar estructuras de documentos complejas?
 Sí, Aspose.Words admite estructuras complejas como tablas, imágenes e hipervínculos sin problemas.
 
-### ¿Existe una versión de prueba disponible para Aspose.Words para .NET?
- Sí, puedes descargar una prueba gratuita desde[aquí](https://releases.aspose.com/).
+### ¿Hay una versión de prueba disponible de Aspose.Words para .NET?
+ Sí, puedes descargar una versión de prueba gratuita desde[aquí](https://releases.aspose.com/).
 
-### ¿Dónde puedo encontrar documentación para Aspose.Words para .NET?
- La documentación detallada está disponible.[aquí](https://reference.aspose.com/words/net/).
+### ¿Dónde puedo encontrar documentación de Aspose.Words para .NET?
+La documentación detallada está disponible[aquí](https://reference.aspose.com/words/net/).
 
-### ¿Cómo puedo obtener una licencia temporal de Aspose.Words para .NET?
- Se pueden obtener licencias temporales.[aquí](https://purchase.aspose.com/temporary-license/).
+### ¿Cómo puedo obtener una licencia temporal para Aspose.Words para .NET?
+ Se pueden obtener licencias temporales[aquí](https://purchase.aspose.com/temporary-license/).
 
 ### ¿Qué opciones de soporte están disponibles para Aspose.Words para .NET?
- Puede obtener soporte de la comunidad o enviar consultas en el[Foro Aspose.Words](https://forum.aspose.com/c/words/8).
+ Puede obtener soporte de la comunidad o enviar consultas en[Foro Aspose.Words](https://forum.aspose.com/c/words/8).

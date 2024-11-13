@@ -51,7 +51,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 
-交換する`"your-document.docx"`ファイル名に置き換えます。このコード行はドキュメントを読み込み、作業を開始できるようにします。
+交換する`"your-document.docx"`ファイル名に置き換えます。このコード行によりドキュメントが読み込まれ、作業を開始できるようになります。
 
 ## ステップ3: TOCフィールドを識別して削除する
 
@@ -69,7 +69,7 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
 
 ## ステップ4: 変更したドキュメントを保存する
 
-最後に、変更を保存する必要があります。元のファイルを保存するために、ドキュメントを新しい名前で保存することができます。
+最後に、変更内容を保存する必要があります。元のファイルを保存するために、ドキュメントを新しい名前で保存することができます。
 
 ```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
@@ -93,7 +93,7 @@ Aspose.Words for .NET は、ドキュメント操作用の強力な .NET ライ�
 
 ### Aspose.Words を使用して他のフィールドを削除することは可能ですか?
 
-もちろんです! フィルター条件でフィールドのタイプを指定することで、任意のフィールドを削除できます。
+もちろんです! フィルター条件でフィールドのタイプを指定することにより、任意のフィールドを削除できます。
 
 ### Aspose.Words を使用するには Visual Studio が必要ですか?
 

@@ -62,7 +62,7 @@ Shape shape2 = new Shape(doc, ShapeType.TextBox);
 
 I detta utdrag:
 - `ShapeType.TextBox` anger att formerna vi skapar är textrutor.
-- `shape1`och`shape2` är våra två textrutor.
+- `shape1` och`shape2` är våra två textrutor.
 
 ## Steg 3: Åtkomst till TextBox-objekt
 
@@ -77,7 +77,7 @@ TextBox textBox1 = shape1.TextBox;
 TextBox textBox2 = shape2.TextBox;
 ```
 
- Dessa rader lagrar`TextBox` föremål från formerna till`textBox1`och`textBox2`.
+ Dessa rader lagrar`TextBox` föremål från formerna till`textBox1` och`textBox2`.
 
 ## Steg 4: Länka textrutor
 

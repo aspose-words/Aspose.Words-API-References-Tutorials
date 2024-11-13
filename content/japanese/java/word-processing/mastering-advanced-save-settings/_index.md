@@ -220,9 +220,9 @@ Document doc = new Document("document.docx");
 doc.save("document.pdf", SaveFormat.PDF);
 ```
 
-### Aspose.Words for Java はバッチドキュメント生成に適していますか?
+### Aspose.Words for Java はバッチ ドキュメント生成に適していますか?
 
-はい、Aspose.Words for Java はバッチ ドキュメント生成に適しているため、大規模なドキュメント作成に効率的です。
+はい、Aspose.Words for Java はバッチ ドキュメント生成に適しているため、大規模なドキュメント作成を効率的に行うことができます。
 
 ```java
 Document doc = new Document();

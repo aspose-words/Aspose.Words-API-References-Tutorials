@@ -1,22 +1,22 @@
 ---
-title: Wstaw spis treści do dokumentu programu Word
-linktitle: Wstaw spis treści do dokumentu programu Word
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak wstawić spis treści w programie Word przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby uzyskać płynną nawigację po dokumentach.
+title: Wstaw spis treści do dokumentu Word
+linktitle: Wstaw spis treści do dokumentu Word
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak wstawić spis treści w programie Word za pomocą Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby płynnie poruszać się po dokumencie.
 type: docs
 weight: 10
 url: /pl/net/add-content-using-documentbuilder/insert-table-of-contents/
 ---
 ## Wstęp
-tym samouczku dowiesz się, jak efektywnie dodawać spis treści (TOC) do dokumentów programu Word przy użyciu Aspose.Words dla .NET. Ta funkcja jest niezbędna do organizowania i nawigacji w długich dokumentach, zwiększania czytelności i zapewniania szybkiego przeglądu sekcji dokumentu.
+tym samouczku dowiesz się, jak skutecznie dodawać spis treści (TOC) do dokumentów Word za pomocą Aspose.Words dla .NET. Ta funkcja jest niezbędna do organizowania i nawigacji po długich dokumentach, zwiększania czytelności i zapewniania szybkiego przeglądu sekcji dokumentu.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zaczniesz, upewnij się, że masz następujące elementy:
+Zanim zaczniesz, upewnij się, że masz następujące rzeczy:
 
-- Podstawowa znajomość C# i frameworku .NET.
-- Program Visual Studio zainstalowany na Twoim komputerze.
--  Aspose.Words dla biblioteki .NET. Jeśli jeszcze go nie zainstalowałeś, możesz go pobrać ze strony[Tutaj](https://releases.aspose.com/words/net/).
+- Podstawowa znajomość języka C# i środowiska .NET.
+- Na Twoim komputerze zainstalowano program Visual Studio.
+-  Biblioteka Aspose.Words dla .NET. Jeśli jeszcze jej nie zainstalowałeś, możesz ją pobrać z[Tutaj](https://releases.aspose.com/words/net/).
 
 ## Importuj przestrzenie nazw
 
@@ -29,14 +29,14 @@ using Aspose.Words.Fields;
 using Aspose.Words.Tables;
 ```
 
-Podzielmy proces na jasne etapy:
+Podzielmy ten proces na jasne kroki:
 
-## Krok 1: Zainicjuj dokument Aspose.Words i narzędzie DocumentBuilder
+## Krok 1: Zainicjuj dokument Aspose.Words i DocumentBuilder
 
- Najpierw zainicjuj nowy plik Aspose.Words`Document` obiekt i a`DocumentBuilder` pracować z:
+ Najpierw zainicjuj nowy Aspose.Words`Document` obiekt i`DocumentBuilder` pracować z:
 
 ```csharp
-// Zainicjuj dokument i narzędzie DocumentBuilder
+// Zainicjuj dokument i DocumentBuilder
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
@@ -50,18 +50,18 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 ```
 
-## Krok 3: Rozpocznij zawartość dokumentu na nowej stronie
+## Krok 3: Rozpocznij tworzenie zawartości dokumentu na nowej stronie
 
-Aby zapewnić prawidłowe formatowanie, należy rozpocząć właściwą treść dokumentu na nowej stronie:
+Aby zapewnić właściwe formatowanie, zacznij pisać właściwą treść dokumentu na nowej stronie:
 
 ```csharp
 // Wstaw podział strony
 builder.InsertBreak(BreakType.PageBreak);
 ```
 
-## Krok 4: Zbuduj swój dokument za pomocą nagłówków
+## Krok 4: Ustrukturyzuj swój dokument za pomocą nagłówków
 
-Uporządkuj zawartość dokumentu, używając odpowiednich stylów nagłówków:
+Zorganizuj zawartość dokumentu, stosując odpowiednie style nagłówków:
 
 ```csharp
 // Ustaw style nagłówków
@@ -89,7 +89,7 @@ builder.Writeln("Heading 3.2");
 builder.Writeln("Heading 3.3");
 ```
 
-## Krok 5: Zaktualizuj i wypełnij spis treści
+## Krok 5: Aktualizacja i uzupełnienie spisu treści
 
 Zaktualizuj spis treści, aby odzwierciedlał strukturę dokumentu:
 
@@ -110,21 +110,21 @@ doc.Save(dataDir + "InsertTableOfContentsUsingAsposeWords.docx");
 
 ## Wniosek
 
-Dodanie spisu treści przy użyciu Aspose.Words dla .NET jest proste i znacznie zwiększa użyteczność dokumentów. Wykonując poniższe kroki, możesz efektywnie organizować i poruszać się po złożonych dokumentach.
+Dodawanie spisu treści za pomocą Aspose.Words dla .NET jest proste i znacznie zwiększa użyteczność dokumentów. Postępując zgodnie z tymi krokami, możesz sprawnie organizować i poruszać się po złożonych dokumentach.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
 ### Czy mogę dostosować wygląd spisu treści?
-Tak, możesz dostosować wygląd i zachowanie spisu treści za pomocą Aspose.Words dla interfejsów API .NET.
+Tak, możesz dostosować wygląd i zachowanie spisu treści przy użyciu interfejsów API Aspose.Words for .NET.
 
-### Czy Aspose.Words obsługuje automatyczne aktualizowanie pól?
-Tak, Aspose.Words umożliwia dynamiczną aktualizację pól takich jak spis treści w oparciu o zmiany w dokumencie.
+### Czy Aspose.Words obsługuje automatyczną aktualizację pól?
+Tak, Aspose.Words pozwala na dynamiczną aktualizację pól, takich jak spis treści, na podstawie zmian w dokumencie.
 
 ### Czy mogę wygenerować wiele spisów treści w jednym dokumencie?
-Aspose.Words obsługuje generowanie wielu spisów treści z różnymi ustawieniami w jednym dokumencie.
+Aspose.Words umożliwia generowanie wielu spisów treści z różnymi ustawieniami w ramach jednego dokumentu.
 
-### Czy Aspose.Words jest kompatybilny z różnymi wersjami Microsoft Word?
-Tak, Aspose.Words zapewnia kompatybilność z różnymi wersjami formatów Microsoft Word.
+### Czy Aspose.Words jest kompatybilny z różnymi wersjami programu Microsoft Word?
+Tak, Aspose.Words zapewnia zgodność z różnymi wersjami formatów Microsoft Word.
 
-### Gdzie mogę znaleźć dalszą pomoc i wsparcie dla Aspose.Words?
- Aby uzyskać dodatkową pomoc, odwiedź stronę[Forum Aspose.Words](https://forum.aspose.com/c/words/8) lub sprawdź[oficjalna dokumentacja](https://reference.aspose.com/words/net/).
+### Gdzie mogę znaleźć dodatkową pomoc i wsparcie dla Aspose.Words?
+ Aby uzyskać dalszą pomoc, odwiedź stronę[Forum Aspose.Words](https://forum.aspose.com/c/words/8) lub sprawdź[oficjalna dokumentacja](https://reference.aspose.com/words/net/).

@@ -142,7 +142,7 @@ doc.Save(dataDir + "ClonedDocument.docx");
 
 ## GYIK
 
-### Mi az a szakasz egy Word dokumentumban?
+### Mi az a szakasz a Word-dokumentumban?
 
 Word-dokumentum egy szakasza olyan szegmens, amelynek saját elrendezése és formázása lehet, például fejlécek, láblécek és oszlopok. Segít a tartalom különálló részekre való rendszerezésében.
 

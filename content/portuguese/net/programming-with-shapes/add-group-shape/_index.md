@@ -2,22 +2,22 @@
 title: Adicionar forma de grupo
 linktitle: Adicionar forma de grupo
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como adicionar formas de grupo a documentos do Word usando Aspose.Words for .NET com este tutorial passo a passo abrangente.
+description: Aprenda como adicionar formas de grupo a documentos do Word usando o Aspose.Words para .NET com este tutorial abrangente passo a passo.
 type: docs
 weight: 10
 url: /pt/net/programming-with-shapes/add-group-shape/
 ---
 ## Introdução
 
-Criar documentos complexos com elementos visuais ricos às vezes pode ser uma tarefa difícil, especialmente quando se trata de formas de grupo. Mas não tema! Aspose.Words for .NET simplifica esse processo, tornando-o muito fácil. Neste tutorial, orientaremos você nas etapas para adicionar formas de grupo aos seus documentos do Word. Pronto para mergulhar? Vamos começar!
+Criar documentos complexos com elementos visuais ricos pode às vezes ser uma tarefa assustadora, especialmente ao lidar com formas de grupo. Mas não tenha medo! O Aspose.Words para .NET simplifica esse processo, tornando-o tão fácil quanto uma torta. Neste tutorial, mostraremos as etapas para adicionar formas de grupo aos seus documentos do Word. Pronto para mergulhar? Vamos começar!
 
 ## Pré-requisitos
 
-Antes de começarmos, certifique-se de ter o seguinte:
+Antes de começar, certifique-se de ter o seguinte:
 
-1.  Aspose.Words for .NET: Você pode baixá-lo no[Página de lançamentos do Aspose](https://releases.aspose.com/words/net/).
+1.  Aspose.Words para .NET: Você pode baixá-lo do[Página de lançamentos da Aspose](https://releases.aspose.com/words/net/).
 2. Ambiente de desenvolvimento: Visual Studio ou qualquer outro IDE compatível com .NET.
-3. Compreensão básica de C#: Familiaridade com programação C# é uma vantagem.
+3. Conhecimento básico de C#: Familiaridade com programação em C# é um diferencial.
 
 ## Importar namespaces
 
@@ -29,9 +29,9 @@ using Aspose.Words;
 using Aspose.Words.Drawing;
 ```
 
-## Etapa 1: inicializar o documento
+## Etapa 1: Inicializar o documento
 
-Primeiramente, vamos inicializar um novo documento do Word. Pense nisso como criar uma tela em branco onde adicionaremos nossas formas de grupo.
+Primeiro, vamos inicializar um novo documento do Word. Pense nisso como criar uma tela em branco onde adicionaremos nossas formas de grupo.
 
 ```csharp
 // Caminho para o diretório do seu documento
@@ -45,17 +45,17 @@ doc.EnsureMinimum();
 
 ## Etapa 2: Crie o objeto GroupShape
 
- A seguir, precisamos criar um`GroupShape`objeto. Este objeto servirá de recipiente para outras formas, permitindo-nos agrupá-las.
+ Em seguida, precisamos criar um`GroupShape`objeto. Este objeto servirá como um contêiner para outras formas, permitindo que as agrupemos.
 
 ```csharp
 GroupShape groupShape = new GroupShape(doc);
 ```
 
-## Etapa 3: adicionar formas ao GroupShape
+## Etapa 3: Adicionar formas ao GroupShape
 
- Agora, vamos adicionar formas individuais ao nosso`GroupShape` recipiente. Começaremos com uma forma de borda acentuada e, em seguida, adicionaremos uma forma de botão de ação.
+ Agora, vamos adicionar formas individuais ao nosso`GroupShape` container. Começaremos com uma forma de borda de destaque e então adicionaremos uma forma de botão de ação.
 
-### Adicionando uma forma de borda acentuada
+### Adicionando uma forma de borda de destaque
 
 ```csharp
 Shape accentBorderShape = new Shape(doc, ShapeType.AccentBorderCallout1)
@@ -66,7 +66,7 @@ Shape accentBorderShape = new Shape(doc, ShapeType.AccentBorderCallout1)
 groupShape.AppendChild(accentBorderShape);
 ```
 
- Este trecho de código cria uma forma de borda acentuada com largura e altura de 100 unidades e a adiciona ao`GroupShape`.
+ Este trecho de código cria uma forma de borda de destaque com largura e altura de 100 unidades e a adiciona ao`GroupShape`.
 
 ### Adicionando um formato de botão de ação
 
@@ -80,9 +80,9 @@ Shape actionButtonShape = new Shape(doc, ShapeType.ActionButtonBeginning)
 groupShape.AppendChild(actionButtonShape);
 ```
 
- Aqui, criamos um formato de botão de ação, posicionamo-lo e adicionamos ao nosso`GroupShape`.
+ Aqui, criamos uma forma de botão de ação, posicionamos e adicionamos ao nosso`GroupShape`.
 
-## Etapa 4: definir as dimensões do GroupShape
+## Etapa 4: Defina as dimensões do GroupShape
 
  Para garantir que nossas formas se encaixem bem no grupo, precisamos definir as dimensões do`GroupShape`.
 
@@ -92,9 +92,9 @@ groupShape.Height = 200;
 groupShape.CoordSize = new Size(200, 200);
 ```
 
- Isso define a largura e a altura do`GroupShape` como 200 unidades e define o tamanho da coordenada de acordo.
+ Isso define a largura e a altura do`GroupShape` como 200 unidades e define o tamanho das coordenadas adequadamente.
 
-## Etapa 5: insira o GroupShape no documento
+## Etapa 5: Insira o GroupShape no documento
 
  Agora, vamos inserir nosso`GroupShape` no documento usando`DocumentBuilder`.
 
@@ -105,9 +105,9 @@ builder.InsertNode(groupShape);
 
 `DocumentBuilder` fornece uma maneira fácil de adicionar nós, incluindo formas, ao documento.
 
-## Etapa 6: salve o documento
+## Etapa 6: Salve o documento
 
-Finalmente, salve o documento no diretório especificado.
+Por fim, salve o documento no diretório especificado.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");
@@ -117,21 +117,21 @@ aí está! Seu documento com formas de grupo está pronto.
 
 ## Conclusão
 
-Adicionar formas de grupo aos seus documentos do Word não precisa ser um processo complicado. Com Aspose.Words for .NET, você pode criar e manipular formas com facilidade, tornando seus documentos mais atraentes visualmente e funcionais. Siga as etapas descritas neste tutorial e você se tornará um profissional rapidamente!
+Adicionar formas de grupo aos seus documentos do Word não precisa ser um processo complicado. Com o Aspose.Words para .NET, você pode criar e manipular formas com facilidade, tornando seus documentos mais atraentes visualmente e funcionais. Siga as etapas descritas neste tutorial e você será um profissional em pouco tempo!
 
 ## Perguntas frequentes
 
 ### Posso adicionar mais de duas formas a um GroupShape?
- Sim, você pode adicionar quantas formas precisar em um`GroupShape` . Basta usar o`AppendChild` método para cada forma.
+ Sim, você pode adicionar quantas formas precisar a um`GroupShape` . Basta usar o`AppendChild` método para cada forma.
 
 ### É possível estilizar as formas dentro de um GroupShape?
  Absolutamente! Cada forma pode ser estilizada individualmente usando as propriedades disponíveis no`Shape` aula.
 
 ### Como posiciono o GroupShape dentro do documento?
- Você pode posicionar o`GroupShape` definindo seu`Left`e`Top` propriedades.
+ Você pode posicionar o`GroupShape` definindo seu`Left` e`Top` propriedades.
 
 ### Posso adicionar texto às formas dentro do GroupShape?
- Sim, você pode adicionar texto a formas usando o`AppendChild` método para adicionar um`Paragraph` contendo`Run` nós com texto.
+ Sim, você pode adicionar texto às formas usando o`AppendChild` método para adicionar um`Paragraph` contendo`Run` nós com texto.
 
 ### É possível agrupar formas dinamicamente com base na entrada do usuário?
-Sim, você pode criar e agrupar formas dinamicamente com base na entrada do usuário, ajustando as propriedades e os métodos de acordo.
+Sim, você pode criar e agrupar formas dinamicamente com base na entrada do usuário ajustando as propriedades e os métodos adequadamente.

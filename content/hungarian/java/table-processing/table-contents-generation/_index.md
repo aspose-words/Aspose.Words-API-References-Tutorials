@@ -69,7 +69,7 @@ Az Aspose.Words for Java kiterjedt testreszabási lehetőségeket kínál a TOC-
 
 ### TOC stílusok testreszabása
 
-Meghatározhatja a tartalomjegyzék-stílusokat, hogy azok megfeleljenek a dokumentum esztétikájának.
+Meghatározhatja a tartalomjegyzék-stílusokat, hogy azok illeszkedjenek a dokumentum esztétikájához.
 
 ```java
 // TOC stílusok testreszabása

@@ -9,7 +9,7 @@ url: /ja/net/working-with-fields/insert-author-field/
 ---
 ## 導入
 
-このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書に作成者フィールドを挿入する方法を詳しく説明します。ビジネス用の文書作成を自動化する場合でも、単にファイルをカスタマイズする場合でも、このステップ バイ ステップ ガイドが役立ちます。環境の設定から完成した文書の保存まで、すべてを順を追って説明します。さあ、始めましょう!
+このチュートリアルでは、Aspose.Words for .NET を使用して Word 文書に作成者フィールドを挿入する方法について詳しく説明します。ビジネス用の文書作成を自動化する場合でも、単にファイルをカスタマイズする場合でも、このステップ バイ ステップ ガイドが役立ちます。環境の設定から完成した文書の保存まで、すべてを順を追って説明します。さあ、始めましょう!
 
 ## 前提条件
 
@@ -41,7 +41,7 @@ using Aspose.Words.Fields;
 
 1. Visual Studio を開く: コンピューターで Visual Studio を起動します。
 2. 新しいプロジェクトの作成: 「新しいプロジェクトの作成」をクリックします。
-3. プロジェクト タイプを選択: 言語として C# を選択し、「コンソール アプリ」を選択します。
+3. プロジェクト タイプの選択: 言語として C# を選択し、「コンソール アプリ」を選択します。
 4. プロジェクトを構成する: プロジェクトに名前を付け、保存する場所を選択します。「作成」をクリックします。
 
 ### Aspose.Words for .NET をインストールする
@@ -69,7 +69,7 @@ Document doc = new Document();
 2. 段落を追加する: 次に、ドキュメントに段落を追加します。
 
 ```csharp
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+Paragraph para = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
 この段落に著者フィールドを挿入します。
@@ -116,7 +116,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 doc.Save(dataDir + "InsertionAuthorField.docx");
 ```
 
-これで完了です。Aspose.Words for .NET を使用して、Word 文書に作成者フィールドを正常に挿入できました。
+これで完了です。Aspose.Words for .NET を使用して、Word 文書に作成者フィールドを挿入できました。
 
 ## 結論
 
@@ -142,4 +142,4 @@ Aspose.Wordsは無料トライアルを提供していますが、フル機能�
 
 ### 問題が発生した場合、どこでサポートを受けることができますか?
 
- Aspose.Wordsフォーラムでサポートを受けることができます[ここ](https://forum.aspose.com/c/words/8).
+ Aspose.Wordsフォーラムでサポートを見つけることができます[ここ](https://forum.aspose.com/c/words/8).

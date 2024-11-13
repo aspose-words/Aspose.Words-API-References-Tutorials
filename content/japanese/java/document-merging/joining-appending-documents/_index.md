@@ -16,7 +16,7 @@ Aspose.Words for Java は、DOC、DOCX、RTF など、さまざまなドキュ�
 
 コードに進む前に、次の前提条件が満たされていることを確認してください。
 
-- Java Development Kit (JDK) がシステムにインストールされています。
+- システムに Java 開発キット (JDK) がインストールされています。
 -  Aspose.Words for Javaライブラリ。ここからダウンロードできます。[ここ](https://releases.aspose.com/words/java/).
 
 ## ステップ1: Javaプロジェクトの設定
@@ -73,7 +73,7 @@ doc1.save("joined_document.docx");
 
 ## 結論
 
-おめでとうございます。Aspose.Words for Java を使用してドキュメントを結合および追加する方法を学習しました。この多目的ライブラリを使用すると、ドキュメントを簡単に操作できるため、Java 開発者にとって非常に貴重なツールになります。
+おめでとうございます! Aspose.Words for Java を使用してドキュメントを結合および追加する方法を学習しました。この多目的ライブラリを使用すると、ドキュメントを簡単に操作できるため、Java 開発者にとって非常に貴重なツールになります。
 
 ## よくある質問
 

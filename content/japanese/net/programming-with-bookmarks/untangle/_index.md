@@ -9,7 +9,7 @@ url: /ja/net/programming-with-bookmarks/untangle/
 ---
 ## 導入
 
-プログラムで Word 文書内を移動することは、迷路を抜ける道を見つけるようなものです。ブックマーク、見出し、表、その他の操作が必要な要素に遭遇するかもしれません。今日は、一般的でありながら複雑なタスク、つまり Aspose.Words for .NET を使用して Word 文書内のブックマークを解くことに取り組みます。このチュートリアルでは、プロセスをステップごとにガイドし、すべてのプロセスを理解できるようにします。
+プログラムで Word 文書内を移動することは、迷路を進むのに似ています。ブックマーク、見出し、表、その他の操作が必要な要素に遭遇するかもしれません。今日は、一般的でありながら複雑なタスクである、Aspose.Words for .NET を使用して Word 文書内のブックマークを解くことに取り組みます。このチュートリアルでは、プロセスをステップごとに説明し、すべてのプロセスを理解できるようにします。
 
 ## 前提条件
 
@@ -32,8 +32,6 @@ using Aspose.Words.Tables;
 
 最初のステップは、作業する Word 文書を読み込むことです。この文書には、解読に必要なブックマークが含まれています。
 
-ステップ 1 見出し: ドキュメントの読み込み
-
 ```csharp
 Document doc = new Document("path/to/your/document.docx");
 ```
@@ -43,8 +41,6 @@ Document doc = new Document("path/to/your/document.docx");
 ## ステップ2: ブックマークを反復処理する
 
 次に、ドキュメント内のすべてのブックマークを反復処理する必要があります。これにより、各ブックマークとそのプロパティにアクセスできるようになります。
-
-ステップ 2 見出し: ブックマークの反復処理
 
 ```csharp
 foreach (Bookmark bookmark in doc.Range.Bookmarks)
@@ -59,8 +55,6 @@ foreach (Bookmark bookmark in doc.Range.Bookmarks)
 
 各ブックマークについて、ブックマークの開始と終了を含む行を見つける必要があります。これは、ブックマークが隣接する行にまたがっているかどうかを判断するために重要です。
 
-ステップ3 見出し: 行の識別
-
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
 Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
@@ -71,8 +65,6 @@ Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 ## ステップ4: 隣接する行を確認する
 
 ブックマークの終了位置を移動する前に、ブックマークの開始位置と終了位置が隣接する行にあることを確認する必要があります。この条件は、ブックマークを正しく解くために不可欠です。
-
-ステップ 4 見出し: 行の隣接性の確認
 
 ```csharp
 if (row1 != null && row2 != null && row1.NextSibling == row2)
@@ -87,8 +79,6 @@ if (row1 != null && row2 != null && row1.NextSibling == row2)
 
 最後に、条件が満たされた場合、ブックマーク終了ノードを最上行の最後のセルの最後の段落の末尾に移動します。この手順により、ブックマークが効果的に解かれます。
 
-ステップ5 見出し: ブックマークの終了を移動する
-
 ```csharp
 row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 ```
@@ -97,7 +87,7 @@ row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 
 ## 結論
 
-Aspose.Words for .NET を使用して Word 文書内のブックマークを整理するのは困難に思えるかもしれませんが、管理しやすいステップに分割することで、プロセスがはるかに明確になります。文書の読み込み、ブックマークの反復処理、関連行の識別、隣接関係の確認、そして最後にブックマークの終了ノードの移動について説明しました。このガイドを使用すると、Word 文書内のブックマークをより効率的に処理できるようになります。
+Aspose.Words for .NET を使用して Word 文書内のブックマークを整理するのは困難に思えるかもしれませんが、管理しやすいステップに分割することで、プロセスがはるかに明確になります。文書の読み込み、ブックマークの反復処理、関連行の識別、隣接性のチェック、そして最後にブックマークの終了ノードの移動について説明しました。このガイドを使用すると、Word 文書内のブックマークをより効率的に処理できるようになります。
 
 ## よくある質問
 

@@ -85,7 +85,7 @@ doc.Save(dataDir + "CenterTableContentAlignment.md", saveOptions);
 
 ## Steg 4: Använd automatisk justering av tabellinnehåll
 
- De`Auto`alignment alternativet tar justeringen från första stycket i motsvarande tabellkolumn. Detta kan vara praktiskt när du har blandade justeringar i en enda tabell.
+De`Auto`alignment alternativet tar justeringen från första stycket i motsvarande tabellkolumn. Detta kan vara praktiskt när du har blandade justeringar i en enda tabell.
 
 ```csharp
 // Ställ in justering på Auto.

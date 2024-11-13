@@ -1,65 +1,65 @@
 ---
-title: Bỏ qua hình ảnh Pdf
-linktitle: Bỏ qua hình ảnh Pdf
+title: Bỏ qua hình ảnh PDF
+linktitle: Bỏ qua hình ảnh PDF
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách bỏ qua hình ảnh khi tải tài liệu PDF bằng Aspose.Words for .NET. Hãy làm theo hướng dẫn từng bước này để trích xuất văn bản liền mạch.
+description: Tìm hiểu cách bỏ qua hình ảnh khi tải tài liệu PDF bằng Aspose.Words cho .NET. Thực hiện theo hướng dẫn từng bước này để trích xuất văn bản liền mạch.
 type: docs
 weight: 10
 url: /vi/net/programming-with-loadoptions/skip-pdf-images/
 ---
 ## Giới thiệu
 
-Xin chào những người đam mê Aspose.Words! Hôm nay, chúng ta sẽ đi sâu vào một tính năng tuyệt vời của Aspose.Words dành cho .NET: cách bỏ qua hình ảnh PDF khi tải tài liệu. Hướng dẫn này sẽ hướng dẫn bạn thực hiện quy trình, đảm bảo bạn nắm bắt từng bước một cách dễ dàng. Vì vậy, hãy thắt dây an toàn và sẵn sàng để thành thạo thủ thuật tiện lợi này.
+Xin chào, những người đam mê Aspose.Words! Hôm nay, chúng ta sẽ tìm hiểu một tính năng tuyệt vời của Aspose.Words dành cho .NET: cách bỏ qua hình ảnh PDF khi tải tài liệu. Hướng dẫn này sẽ hướng dẫn bạn thực hiện quy trình, đảm bảo bạn nắm bắt mọi bước một cách dễ dàng. Vì vậy, hãy thắt dây an toàn và sẵn sàng để thành thạo thủ thuật tiện lợi này.
 
 ## Điều kiện tiên quyết
 
-Trước khi chúng ta bắt đầu, hãy đảm bảo bạn có mọi thứ bạn cần:
+Trước khi bắt đầu, hãy đảm bảo rằng bạn có mọi thứ cần thiết:
 
--  Aspose.Words for .NET: Tải phiên bản mới nhất[đây](https://releases.aspose.com/words/net/).
-- Visual Studio: Mọi phiên bản gần đây đều hoạt động tốt.
-- Hiểu biết cơ bản về C#: Bạn không cần phải là dân chuyên nghiệp, nhưng hiểu biết cơ bản sẽ giúp ích.
-- Tài liệu PDF: Chuẩn bị sẵn tài liệu PDF mẫu để thử nghiệm.
+-  Aspose.Words cho .NET: Tải xuống phiên bản mới nhất[đây](https://releases.aspose.com/words/net/).
+- Visual Studio: Bất kỳ phiên bản gần đây nào cũng có thể hoạt động tốt.
+- Hiểu biết cơ bản về C#: Bạn không cần phải là người chuyên nghiệp, nhưng nắm được những kiến thức cơ bản sẽ giúp ích.
+- Tài liệu PDF: Chuẩn bị một tài liệu PDF mẫu để thử nghiệm.
 
 ## Nhập không gian tên
 
-Để làm việc với Aspose.Words, bạn cần nhập các không gian tên cần thiết. Các không gian tên này chứa các lớp và phương thức giúp làm việc với tài liệu trở nên dễ dàng.
+Để làm việc với Aspose.Words, bạn cần nhập các không gian tên cần thiết. Các không gian tên này chứa các lớp và phương thức giúp làm việc với tài liệu dễ dàng.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Loading;
 ```
 
-Được rồi, hãy chia nhỏ nó ra từng bước một. Mỗi bước sẽ hướng dẫn bạn thực hiện quy trình, giúp bạn dễ dàng theo dõi và thực hiện.
+Được rồi, chúng ta hãy chia nhỏ từng bước. Mỗi bước sẽ hướng dẫn bạn thực hiện quy trình, giúp bạn dễ dàng làm theo và thực hiện.
 
 ## Bước 1: Thiết lập dự án của bạn
 
 ### Tạo một dự án mới
 
-Trước tiên, hãy mở Visual Studio và tạo dự án Ứng dụng Bảng điều khiển C# mới. Đặt tên nó là "AsposeSkipPdfImages" để giữ mọi thứ ngăn nắp.
+Trước tiên, hãy mở Visual Studio và tạo một dự án C# Console Application mới. Đặt tên cho nó là "AsposeSkipPdfImages" để giữ mọi thứ được tổ chức.
 
-### Thêm tài liệu tham khảo Aspose.Words
+### Thêm tham chiếu Aspose.Words
 
-Tiếp theo, bạn cần thêm một tham chiếu đến Aspose.Words cho .NET. Bạn có thể thực hiện việc này thông qua Trình quản lý gói NuGet:
+Tiếp theo, bạn cần thêm tham chiếu đến Aspose.Words cho .NET. Bạn có thể thực hiện việc này thông qua NuGet Package Manager:
 
 1. Nhấp chuột phải vào dự án của bạn trong Solution Explorer.
 2. Chọn "Quản lý gói NuGet".
-3. Tìm kiếm "Aspose.Words" và cài đặt nó.
+3. Tìm kiếm "Aspose.Words" và cài đặt.
 
-## Bước 2: Định cấu hình tùy chọn tải
+## Bước 2: Cấu hình Tùy chọn Tải
 
 ### Xác định thư mục dữ liệu
 
- Trong dự án của bạn`Program.cs` tập tin, hãy bắt đầu bằng cách xác định đường dẫn đến thư mục tài liệu của bạn. Đây là nơi chứa tệp PDF của bạn.
+ Trong dự án của bạn`Program.cs` tệp, hãy bắt đầu bằng cách xác định đường dẫn đến thư mục tài liệu của bạn. Đây là nơi tệp PDF của bạn nằm.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
- Thay thế`"YOUR DOCUMENTS DIRECTORY"` với đường dẫn thực tế đến thư mục tài liệu của bạn.
+ Thay thế`"YOUR DOCUMENTS DIRECTORY"` bằng đường dẫn thực tế đến thư mục tài liệu của bạn.
 
-### Đặt tùy chọn tải để bỏ qua hình ảnh PDF
+### Đặt Tùy chọn Tải để Bỏ qua Hình ảnh PDF
 
-Bây giờ, hãy định cấu hình tùy chọn tải PDF để bỏ qua hình ảnh. Đây là nơi phép thuật xảy ra. 
+Bây giờ, hãy cấu hình tùy chọn tải PDF để bỏ qua hình ảnh. Đây chính là nơi phép thuật xảy ra. 
 
 ```csharp
 PdfLoadOptions loadOptions = new PdfLoadOptions { SkipPdfImages = true };
@@ -67,7 +67,7 @@ PdfLoadOptions loadOptions = new PdfLoadOptions { SkipPdfImages = true };
 
 ## Bước 3: Tải tài liệu PDF
 
-Với các tùy chọn tải được đặt, bạn đã sẵn sàng tải tài liệu PDF. Bước này rất quan trọng vì nó yêu cầu Aspose.Words bỏ qua các hình ảnh trong PDF.
+Với các tùy chọn tải được thiết lập, bạn đã sẵn sàng tải tài liệu PDF. Bước này rất quan trọng vì nó yêu cầu Aspose.Words bỏ qua hình ảnh trong PDF.
 
 ```csharp
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
@@ -77,26 +77,26 @@ Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 
 ## Phần kết luận
 
-Và bạn có nó! Bạn vừa học cách bỏ qua hình ảnh trong tài liệu PDF bằng Aspose.Words cho .NET. Tính năng này cực kỳ hữu ích khi bạn cần xử lý các tệp PDF nặng văn bản mà không có hình ảnh lộn xộn. Hãy nhớ rằng, luyện tập sẽ tạo nên sự hoàn hảo, vì vậy hãy thử trải nghiệm với các tệp PDF khác nhau để xem tính năng này hoạt động như thế nào trong các tình huống khác nhau.
+Và bạn đã có nó! Bạn vừa học cách bỏ qua hình ảnh trong tài liệu PDF bằng Aspose.Words cho .NET. Tính năng này cực kỳ hữu ích khi bạn cần xử lý các tệp PDF có nhiều văn bản mà không có hình ảnh lộn xộn. Hãy nhớ rằng, thực hành tạo nên sự hoàn hảo, vì vậy hãy thử nghiệm với các tệp PDF khác nhau để xem tính năng này hoạt động như thế nào trong các tình huống khác nhau.
 
 ## Câu hỏi thường gặp
 
-### Tôi có thể bỏ qua một số hình ảnh nhất định trong PDF một cách có chọn lọc không?
+### Tôi có thể bỏ qua một số hình ảnh nhất định trong tệp PDF không?
 
- Không, cái`SkipPdfImages` tùy chọn bỏ qua tất cả hình ảnh trong PDF. Nếu bạn cần kiểm soát có chọn lọc, hãy cân nhắc việc xử lý trước tệp PDF.
+ Không,`SkipPdfImages` tùy chọn bỏ qua tất cả hình ảnh trong PDF. Nếu bạn cần kiểm soát có chọn lọc, hãy cân nhắc xử lý trước PDF.
 
 ### Tính năng này có ảnh hưởng đến văn bản trong PDF không?
 
-Không, bỏ qua hình ảnh chỉ ảnh hưởng đến hình ảnh. Văn bản vẫn còn nguyên vẹn và có thể truy cập đầy đủ.
+Không, việc bỏ qua hình ảnh chỉ ảnh hưởng đến hình ảnh. Văn bản vẫn còn nguyên vẹn và có thể truy cập đầy đủ.
 
 ### Tôi có thể sử dụng tính năng này với các định dạng tài liệu khác không?
 
- các`SkipPdfImages` tùy chọn dành riêng cho tài liệu PDF. Đối với các định dạng khác, có sẵn các tùy chọn và phương pháp khác nhau.
+Các`SkipPdfImages` tùy chọn này dành riêng cho tài liệu PDF. Đối với các định dạng khác, có các tùy chọn và phương pháp khác nhau.
 
-### Làm cách nào để xác minh rằng hình ảnh đã bị bỏ qua?
+### Làm sao tôi có thể xác minh rằng hình ảnh đã bị bỏ qua?
 
-Bạn có thể mở tài liệu đầu ra trong bộ xử lý Word để xác nhận trực quan sự vắng mặt của hình ảnh.
+Bạn có thể mở tài liệu đầu ra trong trình xử lý Word để xác nhận trực quan xem có hình ảnh nào không.
 
-### Điều gì xảy ra nếu PDF không có hình ảnh?
+### Điều gì xảy ra nếu tệp PDF không có hình ảnh?
 
- Tài liệu tải như bình thường, không ảnh hưởng đến quá trình. các`SkipPdfImages` tùy chọn đơn giản là không có hiệu lực trong trường hợp này.
+ Tài liệu tải như bình thường, không ảnh hưởng đến quá trình.`SkipPdfImages` tùy chọn này không có tác dụng gì trong trường hợp này.

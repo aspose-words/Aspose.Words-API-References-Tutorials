@@ -33,7 +33,7 @@ using Aspose.Words.Saving;
 
 まず最初に、Visual Studio でプロジェクトをセットアップします。Visual Studio を開き、新しいコンソール アプリケーションを作成します。「HyperlinkDemo」など、適切な名前を付けます。
 
-## ステップ2: DocumentとDocumentBuilderを初期化する
+## ステップ 2: Document と DocumentBuilder を初期化する
 
 次に、新しいドキュメントと DocumentBuilder オブジェクトを初期化します。DocumentBuilder は、Word ドキュメントにさまざまな要素を挿入できる便利なツールです。
 
@@ -68,10 +68,8 @@ builder.InsertHyperlink("Contact Support", "mailto:support@aspose.com", false);
 ハイパーリンクは文書のスタイルに合わせてカスタマイズできます。フォントの色、サイズ、その他の属性を変更するには、`Font` DocumentBuilder のプロパティ。
 
 ```csharp
-//ハイパーリンクの外観をカスタマイズします。
-builder.Font.Color = System.Drawing.Color.Blue;
-builder.Font.Underline = Underline.Single;
-builder.InsertHyperlink("Styled Link", "https://www.aspose.com", 偽);
+builder.Font.Style = doc.Styles[StyleIdentifier.Hyperlink];
+builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", 偽);
 ```
 
 このスニペットにより、青い下線付きのハイパーリンクが挿入され、ドキュメント内で目立つようになります。

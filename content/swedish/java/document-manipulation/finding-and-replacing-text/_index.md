@@ -180,11 +180,11 @@ Document doc = new Document("your-document.docx");
 // Skaffa det första avsnittet
 Section firstPageSection = doc.getFirstSection();
 
-// Skapa en FindReplaceOptions-instans och tillämpa den på dokumentets intervall
+//Skapa en FindReplaceOptions-instans och tillämpa den på dokumentets intervall
 FindReplaceOptions options = new FindReplaceOptions();
 options.setReplacingCallback(new ReplaceLog());
 
-//Ersätt text som påverkar ordning på sidhuvuden och sidfötter
+// Ersätt text som påverkar ordning på sidhuvuden och sidfötter
 doc.getRange().replace(Pattern.compile("(header|footer)"), "", options);
 
 // Spara det ändrade dokumentet
@@ -260,7 +260,7 @@ Du kan känna igen och göra ersättningar inom ersättningsmönster med Aspose.
 // Ladda dokumentet
 Document doc = new Document("your-document.docx");
 
-//Skapa en FindReplaceOptions-instans med UseSubstitutions inställd på true
+// Skapa en FindReplaceOptions-instans med UseSubstitutions inställd på true
 FindReplaceOptions options = new FindReplaceOptions();
 options.setUseSubstitutions(true);
 
@@ -322,7 +322,7 @@ Document doc = new Document("your-document.docx");
 // Skaffa en specifik tabell (t.ex. den första tabellen)
 Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
 
-// Använd FindReplaceOptions för att ersätta text i tabellen
+//Använd FindReplaceOptions för att ersätta text i tabellen
 table.getRange().replace("old-text", "new-text", new FindReplaceOptions());
 
 // Spara det ändrade dokumentet
@@ -347,7 +347,7 @@ Ja, du kan använda reguljära uttryck för textersättning i Aspose.Words för 
 
 ### Hur kan jag ignorera text i fält under ersättning?
 
- För att ignorera text i fält under ersättning, kan du ställa in`IgnoreFields` egendom av`FindReplaceOptions` till`true`Detta säkerställer att text i fält, såsom sammanfogningsfält, utesluts från ersättningen.
+För att ignorera text i fält under ersättning, kan du ställa in`IgnoreFields` egendom av`FindReplaceOptions` till`true`. Detta säkerställer att text i fält, såsom sammanfogningsfält, utesluts från ersättningen.
 
 ### Kan jag ersätta text i sidhuvuden och sidfötter?
 
@@ -355,4 +355,4 @@ Ja, du kan använda reguljära uttryck för textersättning i Aspose.Words för 
 
 ### Vad är alternativet UseLegacyOrder till för?
 
- De`UseLegacyOrder` alternativ i`FindReplaceOptions` låter dig använda äldre ordning när du utför sök- och ersätt-operationer. Detta kan vara användbart i vissa scenarier där äldre orderbeteende önskas.
+De`UseLegacyOrder` alternativ i`FindReplaceOptions` låter dig använda äldre ordning när du utför sök- och ersätt-operationer. Detta kan vara användbart i vissa scenarier där äldre orderbeteende önskas.

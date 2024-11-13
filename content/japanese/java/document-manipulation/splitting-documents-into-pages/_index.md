@@ -18,7 +18,7 @@ Aspose.Words for Java は、Word 文書をプログラムで操作できる Java
 
 コードに進む前に、次の前提条件が満たされていることを確認してください。
 
-- Java Development Kit (JDK) がシステムにインストールされています。
+- システムに Java 開発キット (JDK) がインストールされています。
 - Aspose.Words for Javaライブラリはダウンロードできます[ここ](https://releases.aspose.com/words/java/).
 
 ## 3. 環境の設定
@@ -115,7 +115,7 @@ public Document getDocumentOfPage(int pageIndex) throws Exception {
 //<param name="開始インデックス">
 /// スタートページの 1 から始まるインデックス。
 /// </パラメータ>
-/// <パラメータ名="endIndex">
+/// <param name="endIndex">
 /// 終了ページの 1 から始まるインデックス。
 /// </パラメータ>
 /// <戻る>
@@ -183,7 +183,7 @@ public int getPageEnd(Node node) throws Exception {
 		: collector.getEndPageIndex(node);
 }
 /// <要約>
-//指定されたノードが何ページにまたがるかを返します。ノードが 1 ページ内に含まれる場合は 1 を返します。
+//指定されたノードが何ページにわたっているかを返します。ノードが 1 ページ内に含まれている場合は 1 を返します。
 /// </要約>
 /// <パラメータ名="ノード">
 /// ノード。
@@ -446,7 +446,7 @@ public int visitTableEnd(Table table) throws Exception {
 	return VisitorAction.CONTINUE;
 }
 public int visitParagraphEnd(Paragraph paragraph) throws Exception {
-	//段落にセクション区切りのみが含まれる場合は、偽のセクション区切りを追加します。
+	//段落にセクション区切りのみが含まれる場合は、偽の run into を追加します。
 	if (paragraph.isEndOfSection() && paragraph.getChildNodes().getCount() == 1 &&
 		"\f".equals(paragraph.getChildNodes().get(0).getText()))
 	{
@@ -683,13 +683,13 @@ Aspose.Words for Java をプロジェクトに追加するには、次の手順�
 
 いいえ、Aspose.Words for Javaは無料ライブラリではありません。ライセンス料がかかる商用製品です。[Aspose.Words for Java の価格ページ](https://purchase.aspose.com/words/java)ライセンスと価格の詳細については、こちらをご覧ください。
 
-### ドキュメントをカスタムページサイズと形式に分割できますか?
+### ドキュメントをカスタムのページ サイズと形式に分割できますか?
 
 はい、Aspose.Words for Java のページ設定プロパティを変更することで、分割されたドキュメントのページ サイズと形式をカスタマイズできます。要件に応じてページ設定をカスタマイズする方法の詳細については、Aspose.Words のドキュメントを参照してください。
 
 ### 分割できるページ数に制限はありますか?
 
-Aspose.Words for Java では、分割できるページ数に特に制限はありません。ただし、非常に大きなドキュメントでは、より多くのメモリと処理時間が必要になる場合があることに注意してください。大きなドキュメントを扱うときは、システム リソースに注意してください。
+Aspose.Words for Java では、分割できるページ数に特別な制限はありません。ただし、非常に大きなドキュメントでは、より多くのメモリと処理時間が必要になる場合があることに注意してください。大きなドキュメントを扱うときは、システム リソースに注意してください。
 
 ### ドキュメントを分割するときにヘッダーとフッターをどのように処理すればよいですか?
 

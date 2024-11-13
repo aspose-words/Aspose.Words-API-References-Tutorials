@@ -10,7 +10,7 @@ url: /hu/java/document-manipulation/using-structured-document-tags/
 
 ## Bevezetés a strukturált dokumentumcímkék (SDT) használatába az Aspose.Words for Java programban
 
-Structured Document Tags (SDT) az Aspose.Words for Java hatékony funkciója, amely lehetővé teszi strukturált tartalom létrehozását és kezelését a dokumentumokban. Ebben az átfogó útmutatóban végigvezetjük az SDT-k Aspose.Words for Java programban való használatának különböző szempontjain. Akár kezdő, akár tapasztalt fejlesztő, ebben a cikkben értékes meglátásokat és gyakorlati példákat talál.
+A Structured Document Tags (SDT) az Aspose.Words for Java hatékony funkciója, amely lehetővé teszi strukturált tartalom létrehozását és kezelését a dokumentumokban. Ebben az átfogó útmutatóban végigvezetjük az SDT-k Aspose.Words for Java programban való használatának különböző szempontjain. Akár kezdő, akár tapasztalt fejlesztő, ebben a cikkben értékes meglátásokat és gyakorlati példákat talál.
 
 ## Kezdő lépések
 
@@ -118,7 +118,7 @@ doc.save("ComboBoxDocument.docx");
 
 ## A Rich Text Content Control használata
 
-A Rich Text tartalomvezérlők tökéletesek a formázott szövegek dokumentumaihoz való hozzáadásához. Hozzunk létre egyet, és állítsuk be a tartalmát.
+Rich Text tartalomvezérlők tökéletesek a formázott szövegek dokumentumaihoz való hozzáadásához. Hozzunk létre egyet, és állítsuk be a tartalmát.
 
 ```java
 Document doc = new Document();
@@ -142,7 +142,7 @@ Stílusokat alkalmazhat a tartalomvezérlőkre a dokumentum vizuális megjelené
 Document doc = new Document("WorkingWithSDT.docx");
 StructuredDocumentTag sdt = (StructuredDocumentTag) doc.getChild(NodeType.STRUCTURED_DOCUMENT_TAG, 0, true);
 
-//Egyéni stílus alkalmazása
+// Egyéni stílus alkalmazása
 Style style = doc.getStyles().getByStyleIdentifier(StyleIdentifier.QUOTE);
 sdt.setStyle(style);
 
@@ -237,6 +237,6 @@ Igen, stílusokat alkalmazhat a tartalomvezérlőkre, hogy testreszabhassa megje
 
 Igen, az SDT-t egyéni XML-adatokhoz kötheti, lehetővé téve a dinamikus tartalomgenerálást és adatleképezést.
 
-### Mik azok az ismétlődő szakaszok az SDT-kben?
+### Mik azok az ismétlődő szakaszok az SDT-ben?
 
 Az SDT-k szakaszainak ismétlése lehetővé teszi, hogy dinamikus adatokat tartalmazó táblázatokat hozzon létre, ahol a sorok megismételhetők a leképezett XML-adatok alapján.

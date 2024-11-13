@@ -1,8 +1,8 @@
 ---
-title: PrintDialog ile Belgeyi Yazdırma
-linktitle: PrintDialog ile Belgeyi Yazdırma
+title: PrintDialog ile Belgeyi Yazdır
+linktitle: PrintDialog ile Belgeyi Yazdır
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Aspose.Words for Java'yı PrintDialog ile kullanarak belgeleri nasıl yazdıracağınızı öğrenin. Bu adım adım kılavuzda ayarları özelleştirin, belirli sayfaları yazdırın ve daha fazlasını yapın.
+description: Aspose.Words for Java ile PrintDialog kullanarak belgeleri nasıl yazdıracağınızı öğrenin. Bu adım adım kılavuzda ayarları özelleştirin, belirli sayfaları yazdırın ve daha fazlasını yapın.
 type: docs
 weight: 14
 url: /tr/java/document-printing/print-document-printdialog/
@@ -11,29 +11,29 @@ url: /tr/java/document-printing/print-document-printdialog/
 
 ## giriiş
 
-Belgeleri yazdırmak birçok Java uygulamasında ortak bir gereksinimdir. Aspose.Words for Java, belge işleme ve yazdırma için uygun bir API sağlayarak bu görevi basitleştirir.
+Belge yazdırma, birçok Java uygulamasında ortak bir gereksinimdir. Aspose.Words for Java, belge düzenleme ve yazdırma için kullanışlı bir API sağlayarak bu görevi basitleştirir.
 
-## Önkoşullar
+## Ön koşullar
 
-Kodun ayrıntılarına girmeden önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
+Koda dalmadan önce aşağıdaki ön koşulların mevcut olduğundan emin olun:
 
-- Java Geliştirme Kiti (JDK): Sisteminizde Java'nın kurulu olduğundan emin olun.
--  Aspose.Words for Java: Kütüphaneyi şu adresten indirebilirsiniz:[Burada](https://releases.aspose.com/words/java/).
+- Java Geliştirme Kiti (JDK): Sisteminizde Java'nın yüklü olduğundan emin olun.
+-  Java için Aspose.Words: Kütüphaneyi şu adresten indirebilirsiniz:[Burada](https://releases.aspose.com/words/java/).
 
 ## Java Projenizi Kurma
 
-Başlamak için tercih ettiğiniz Entegre Geliştirme Ortamında (IDE) yeni bir Java projesi oluşturun. JDK'nın kurulu olduğundan emin olun.
+Başlamak için, tercih ettiğiniz Entegre Geliştirme Ortamında (IDE) yeni bir Java projesi oluşturun. JDK'nın yüklü olduğundan emin olun.
 
-## Aspose.Words for Java'yı Projenize Ekleme
+## Projenize Aspose.Words for Java'yı Ekleme
 
-Aspose.Words for Java'yı projenizde kullanmak için şu adımları izleyin:
+Projenizde Aspose.Words for Java'yı kullanmak için şu adımları izleyin:
 
-- Aspose.Words for Java kütüphanesini web sitesinden indirin.
+- Web sitesinden Aspose.Words for Java kütüphanesini indirin.
 - JAR dosyasını projenizin sınıf yoluna ekleyin.
 
 ## PrintDialog ile Belge Yazdırma
 
-Şimdi Aspose.Words kullanarak PrintDialog ile bir belgeyi yazdırmak için bazı Java kodları yazalım. Aşağıda temel bir örnek verilmiştir:
+Şimdi, Aspose.Words kullanarak PrintDialog ile bir belgeyi yazdırmak için biraz Java kodu yazalım. Aşağıda temel bir örnek verilmiştir:
 
 ```java
 import com.aspose.words.Document;
@@ -42,36 +42,36 @@ import java.awt.print.PrinterJob;
 
 public class PrintDocumentWithDialog {
     public static void main(String[] args) throws Exception {
-        // Belgeyi yükleyin
+        // Belgeyi yükle
         Document doc = new Document("sample.docx");
 
-        // Yazıcı Ayarlarını Başlatın
+        // PrinterSettings'i başlatın
         PrinterSettings settings = new PrinterSettings();
 
         // Yazdırma iletişim kutusunu göster
         if (settings.showPrintDialog()) {
-            // Belgeyi seçilen ayarlarla yazdırın
+            // Belgeyi seçili ayarlarla yazdır
             doc.print(settings);
         }
     }
 }
 ```
 
- Bu kodda önce Aspose.Words kullanarak belgeyi yüklüyoruz ve ardından PrinterSettings'i başlatıyoruz. biz kullanıyoruz`showPrintDialog()` PrintDialog'u kullanıcıya görüntüleme yöntemi. Kullanıcı yazdırma ayarlarını seçtikten sonra belgeyi kullanarak yazdırırız.`doc.print(settings)`.
+ Bu kodda, önce Aspose.Words kullanarak belgeyi yüklüyoruz ve ardından PrinterSettings'i başlatıyoruz.`showPrintDialog()` PrintDialog'u kullanıcıya görüntüleme yöntemi. Kullanıcı yazdırma ayarlarını seçtikten sonra, belgeyi kullanarak yazdırırız`doc.print(settings)`.
 
 ## Yazdırma Ayarlarını Özelleştirme
 
-Yazdırma ayarlarını özel gereksinimlerinizi karşılayacak şekilde özelleştirebilirsiniz. Aspose.Words for Java, yazdırma sürecini kontrol etmek için sayfa kenar boşluklarını ayarlama, yazıcıyı seçme ve daha fazlası gibi çeşitli seçenekler sunar. Özelleştirmeyle ilgili ayrıntılı bilgi için belgelere bakın.
+Yazdırma ayarlarını özel gereksinimlerinizi karşılayacak şekilde özelleştirebilirsiniz. Aspose.Words for Java, sayfa kenar boşluklarını ayarlama, yazıcıyı seçme ve daha fazlası gibi yazdırma sürecini kontrol etmek için çeşitli seçenekler sunar. Özelleştirme hakkında ayrıntılı bilgi için belgelere bakın.
 
 ## Çözüm
 
-Bu kılavuzda Aspose.Words for Java kullanarak PrintDialog ile bir belgenin nasıl yazdırılacağını araştırdık. Bu kitaplık, Java geliştiricileri için belge işlemeyi ve yazdırmayı kolaylaştırarak belgeyle ilgili görevlerde zamandan ve emekten tasarruf sağlar.
+Bu kılavuzda, Java için Aspose.Words kullanarak PrintDialog ile bir belgenin nasıl yazdırılacağını inceledik. Bu kütüphane, Java geliştiricileri için belge düzenleme ve yazdırmayı basit hale getirerek belgeyle ilgili görevlerde zamandan ve emekten tasarruf sağlar.
 
 ## SSS
 
 ### Yazdırma için sayfa yönünü nasıl ayarlayabilirim?
 
- Yazdırma için sayfa yönünü (dikey veya yatay) ayarlamak için`PageSetup` Aspose.Words'deki sınıf. İşte bir örnek:
+ Yazdırma için sayfa yönünü (dikey veya yatay) ayarlamak için,`PageSetup` Aspose.Words'deki sınıf. İşte bir örnek:
 
 ```java
 Document doc = new Document("sample.docx");
@@ -81,7 +81,7 @@ pageSetup.setOrientation(Orientation.LANDSCAPE);
 
 ### Bir belgenin belirli sayfalarını yazdırabilir miyim?
 
- Evet, sayfa aralığını belirterek bir belgedeki belirli sayfaları yazdırabilirsiniz.`PrinterSettings` nesne. İşte bir örnek:
+ Evet, sayfa aralığını belirterek bir belgenin belirli sayfalarını yazdırabilirsiniz.`PrinterSettings` nesne. İşte bir örnek:
 
 ```java
 PrinterSettings settings = new PrinterSettings();
@@ -90,7 +90,7 @@ settings.setPageRange("1-3, 5");
 
 ### Yazdırma için kağıt boyutunu nasıl değiştirebilirim?
 
-Yazdırma amacıyla kağıt boyutunu değiştirmek için`PageSetup` sınıfı seçin ve ayarlayın`PaperSize` mülk. İşte bir örnek:
+Yazdırma için kağıt boyutunu değiştirmek için şunu kullanabilirsiniz:`PageSetup` sınıf ve ayarla`PaperSize` mülk. İşte bir örnek:
 
 ```java
 Document doc = new Document("sample.docx");
@@ -98,10 +98,10 @@ PageSetup pageSetup = doc.getFirstSection().getPageSetup();
 pageSetup.setPaperSize(PaperSize.A4);
 ```
 
-### Aspose.Words for Java farklı işletim sistemleriyle uyumlu mu?
+### Aspose.Words for Java farklı işletim sistemleriyle uyumlu mudur?
 
-Evet, Aspose.Words for Java, Windows, Linux ve macOS dahil çeşitli işletim sistemleriyle uyumludur.
+Evet, Aspose.Words for Java, Windows, Linux ve macOS dahil olmak üzere çeşitli işletim sistemleriyle uyumludur.
 
-### Daha fazla belge ve örneği nerede bulabilirim?
+### Daha fazla doküman ve örneği nerede bulabilirim?
 
- Aspose.Words for Java ile ilgili kapsamlı belgeleri ve örnekleri web sitesinde bulabilirsiniz:[Aspose.Words for Java Belgelendirmesi](https://reference.aspose.com/words/java/).
+ Aspose.Words for Java için kapsamlı dokümanları ve örnekleri web sitesinde bulabilirsiniz:[Java Belgeleri için Aspose.Words](https://reference.aspose.com/words/java/).

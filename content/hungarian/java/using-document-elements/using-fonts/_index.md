@@ -18,7 +18,7 @@ betűtípusok döntő szerepet játszanak a dokumentumok tervezésében és olva
 
 Mielőtt belemerülne a kódba, győződjön meg arról, hogy a következő előfeltételek teljesülnek:
 
-1.  Aspose.Words for Java Library: Győződjön meg arról, hogy letöltötte és telepítette az Aspose.Words for Java könyvtárat. Tudod[töltse le itt](https://releases.aspose.com/words/java/).
+1.  Aspose.Words for Java Library: Győződjön meg arról, hogy letöltötte és telepítette az Aspose.Words for Java könyvtárat. Megteheti[töltse le itt](https://releases.aspose.com/words/java/).
 
 2. Java fejlesztői környezet: Győződjön meg arról, hogy be van állítva Java fejlesztői környezet.
 

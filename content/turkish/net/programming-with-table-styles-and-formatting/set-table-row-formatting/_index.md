@@ -2,58 +2,58 @@
 title: Tablo Satır Biçimlendirmesini Ayarla
 linktitle: Tablo Satır Biçimlendirmesini Ayarla
 second_title: Aspose.Words Belge İşleme API'si
-description: Kılavuzumuzla Aspose.Words for .NET kullanarak Word belgelerinde tablo satır formatını nasıl ayarlayacağınızı öğrenin. İyi biçimlendirilmiş ve profesyonel belgeler oluşturmak için mükemmeldir.
+description: Aspose.Words for .NET rehberimizle Word belgelerinde tablo satır biçimlendirmesini nasıl ayarlayacağınızı öğrenin. İyi biçimlendirilmiş ve profesyonel belgeler oluşturmak için mükemmeldir.
 type: docs
 weight: 10
 url: /tr/net/programming-with-table-styles-and-formatting/set-table-row-formatting/
 ---
 ## giriiş
 
-Aspose.Words for .NET kullanarak Word belgelerindeki tabloları biçimlendirme sanatında ustalaşmak istiyorsanız doğru yerdesiniz. Bu eğitim, belgelerinizin yalnızca işlevsel değil aynı zamanda estetik açıdan da hoş olmasını sağlayacak şekilde tablo satır biçimlendirmesini ayarlama sürecinde size rehberlik edecektir. O halde hemen konuya dalalım ve bu sade tabloları iyi biçimlendirilmiş tablolara dönüştürelim!
+Aspose.Words for .NET kullanarak Word belgelerindeki tabloları biçimlendirme sanatında ustalaşmak istiyorsanız doğru yerdesiniz. Bu eğitim, tablo satır biçimlendirmesini ayarlama sürecinde size rehberlik edecek ve belgelerinizin yalnızca işlevsel değil aynı zamanda estetik açıdan da hoş olmasını sağlayacaktır. Hadi, başlayalım ve bu sade tabloları iyi biçimlendirilmiş olanlara dönüştürelim!
 
-## Önkoşullar
+## Ön koşullar
 
-Eğiticiye geçmeden önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
+Eğitime başlamadan önce aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
 
-1.  Aspose.Words for .NET - Henüz yapmadıysanız adresinden indirip yükleyin.[Burada](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET - Eğer henüz yapmadıysanız, buradan indirip kurun[Burada](https://releases.aspose.com/words/net/).
 2. Geliştirme Ortamı - .NET'i destekleyen Visual Studio gibi herhangi bir IDE.
-3. Temel C# Bilgisi - Temel C# kavramlarını anlamak, sorunsuz bir şekilde ilerlemenize yardımcı olacaktır.
+3. Temel C# Bilgisi - Temel C# kavramlarını anlamak, konuyu akıcı bir şekilde takip etmenize yardımcı olacaktır.
 
 ## Ad Alanlarını İçe Aktar
 
-Öncelikle gerekli ad alanlarını içe aktarmanız gerekir. Bu, Aspose.Words for .NET tarafından sağlanan tüm işlevlere erişmenizi sağladığı için çok önemlidir.
+İlk önce, gerekli ad alanlarını içe aktarmanız gerekir. Bu, Aspose.Words for .NET tarafından sağlanan tüm işlevlere erişiminizi garantilediği için önemlidir.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Süreci basit, sindirilebilir adımlara ayıralım. Her adım, tablo biçimlendirme işleminin belirli bir bölümünü kapsayacaktır.
+Süreci basit, sindirilebilir adımlara bölelim. Her adım, tablo biçimlendirme sürecinin belirli bir bölümünü kapsayacaktır.
 
-## 1. Adım: Yeni Bir Belge Oluşturun
+## Adım 1: Yeni Bir Belge Oluşturun
 
-İlk adım yeni bir Word belgesi oluşturmaktır. Bu, masanız için tuval görevi görecek.
+İlk adım yeni bir Word belgesi oluşturmaktır. Bu, tablonuz için tuval görevi görecektir.
 
 ```csharp
-// Belge dizininizin yolu
+// Belge dizininize giden yol
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 2. Adım: Bir Tablo Başlatın
+## Adım 2: Bir Tablo Başlatın
 
- Daha sonra tabloyu oluşturmaya başlayacaksınız.`DocumentBuilder` class, tabloları eklemek ve biçimlendirmek için basit bir yol sağlar.
+ Sonra, tabloyu oluşturmaya başlayacaksınız.`DocumentBuilder` sınıfı, tabloları eklemek ve biçimlendirmek için basit bir yol sağlar.
 
 ```csharp
 Table table = builder.StartTable();
 builder.InsertCell();
 ```
 
-## 3. Adım: Satır Biçimlendirmesini Ayarlayın
+## Adım 3: Satır Biçimlendirmesini Ayarlayın
 
-Şimdi işin eğlenceli kısmı geliyor; satır biçimlendirmesini ayarlama. Satırın yüksekliğini ayarlayacak ve yükseklik kuralını belirleyeceksiniz.
+Şimdi eğlenceli kısma geliyoruz - satır biçimlendirmesini ayarlamak. Satırın yüksekliğini ayarlayacak ve yükseklik kuralını belirleyeceksiniz.
 
 ```csharp
 RowFormat rowFormat = builder.RowFormat;
@@ -63,7 +63,7 @@ rowFormat.HeightRule = HeightRule.Exactly;
 
 ## Adım 4: Tabloya Dolgu Uygulayın
 
-Dolgu, hücre içindeki içeriğin çevresine boşluk ekleyerek metni daha okunabilir hale getirir. Masanın her tarafı için dolgu ayarlayacaksınız.
+Dolgu, hücre içindeki içeriğin etrafına boşluk ekleyerek metni daha okunabilir hale getirir. Tablonun tüm kenarları için dolgu ayarlayacaksınız.
 
 ```csharp
 table.LeftPadding = 30;
@@ -72,9 +72,9 @@ table.TopPadding = 30;
 table.BottomPadding = 30;
 ```
 
-## 5. Adım: Satıra İçerik Ekleme
+## Adım 5: Satıra İçerik Ekleme
 
-Biçimlendirme yerinde olduğundan satıra biraz içerik eklemenin zamanı geldi. Bu, eklemek istediğiniz herhangi bir metin veya veri olabilir.
+Biçimlendirme yerindeyken, satıra biraz içerik eklemenin zamanı geldi. Bu, eklemek istediğiniz herhangi bir metin veya veri olabilir.
 
 ```csharp
 builder.Writeln("I'm a wonderfully formatted row.");
@@ -92,21 +92,21 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableR
 
 ## Çözüm
 
-Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesinde başarıyla biçimlendirilmiş bir tablo oluşturdunuz. Bu süreç daha karmaşık gereksinimlere uyacak şekilde genişletilebilir ve özelleştirilebilir, ancak bu temel adımlar sağlam bir temel sağlar. Farklı biçimlendirme seçeneklerini deneyin ve belgelerinizi nasıl geliştirdiklerini görün.
+İşte karşınızda! Aspose.Words for .NET kullanarak bir Word belgesinde biçimlendirilmiş bir tabloyu başarıyla oluşturdunuz. Bu süreç daha karmaşık gereksinimlere uyacak şekilde genişletilebilir ve özelleştirilebilir, ancak bu temel adımlar sağlam bir temel sağlar. Farklı biçimlendirme seçeneklerini deneyin ve belgelerinizi nasıl geliştirdiklerini görün.
 
-## SSS'ler
+## SSS
 
 ### Tablodaki her satır için farklı biçimlendirme ayarlayabilir miyim?
- Evet, farklı biçimlendirmeler uygulayarak her satır için ayrı biçimlendirme ayarlayabilirsiniz.`RowFormat` oluşturduğunuz her satır için özellikler.
+ Evet, farklı biçimlendirmeler uygulayarak her satır için ayrı biçimlendirme ayarlayabilirsiniz.`RowFormat` Oluşturduğunuz her satır için özellikler.
 
-### Tablo hücrelerine resimler gibi başka öğeler eklemek mümkün müdür?
- Kesinlikle! kullanarak tablo hücrelerine resimler, şekiller ve diğer öğeleri ekleyebilirsiniz.`DocumentBuilder` sınıf.
+### Tablo hücrelerine resim gibi başka öğeler eklemek mümkün müdür?
+ Kesinlikle! Tablo hücrelerine resim, şekil ve diğer öğeleri ekleyebilirsiniz.`DocumentBuilder` sınıf.
 
-### Tablo hücrelerindeki metin hizalamasını nasıl değiştiririm?
- Ayarlayarak metin hizalamasını değiştirebilirsiniz.`ParagraphFormat.Alignment` mülkiyeti`DocumentBuilder` nesne.
+### Tablo hücreleri içindeki metin hizalamasını nasıl değiştiririm?
+ Metin hizalamasını,`ParagraphFormat.Alignment` mülkiyeti`DocumentBuilder` nesne.
 
 ### Aspose.Words for .NET kullanarak bir tablodaki hücreleri birleştirebilir miyim?
- Evet, hücreleri birleştirebilirsiniz.`CellFormat.HorizontalMerge`Ve`CellFormat.VerticalMerge` özellikler.
+ Evet, hücreleri şu şekilde birleştirebilirsiniz:`CellFormat.HorizontalMerge` Ve`CellFormat.VerticalMerge` özellikler.
 
-### Tabloyu önceden tanımlanmış stillerle şekillendirmenin bir yolu var mı?
- Evet, Aspose.Words for .NET, önceden tanımlanmış tablo stillerini`Table.Style` mülk.
+### Tabloyu önceden tanımlanmış stillerle biçimlendirmenin bir yolu var mı?
+ Evet, Aspose.Words for .NET, önceden tanımlanmış tablo stillerini kullanarak uygulamanıza olanak tanır.`Table.Style` mülk.

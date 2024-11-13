@@ -59,7 +59,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## ステップ4: インポートオプションを構成する
 
-テキストボックスの書式設定を維持するには、`IgnoreTextBoxes`オプション`false`.
+テキストボックスの書式設定が維持されるようにするには、`IgnoreTextBoxes`オプション`false`.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };

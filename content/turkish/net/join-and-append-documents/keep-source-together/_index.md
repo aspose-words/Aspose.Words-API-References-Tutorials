@@ -1,99 +1,133 @@
 ---
-title: Kaynağı Bir Arada Tutun
-linktitle: Kaynağı Bir Arada Tutun
+title: Masayı Bir Arada Tutun
+linktitle: Masayı Bir Arada Tutun
 second_title: Aspose.Words Belge İşleme API'si
-description: Biçimlendirmeyi korurken Aspose.Words for .NET kullanarak Word belgelerini nasıl birleştireceğinizi öğrenin. Bu kapsamlı kılavuz, kurulumdan yürütmeye kadar her şeyi kapsar.
+description: Bu adım adım kılavuzla .NET için Aspose.Words'ü kullanarak tabloların sayfalar arasında dağılmasını nasıl önleyeceğinizi öğrenin. Düzgün, profesyonel görünümlü Word belgeleri sağlayın
 type: docs
 weight: 10
 url: /tr/net/join-and-append-documents/keep-source-together/
 ---
 ## giriiş
 
-Günümüzün dijital çağında, Word belgelerinin programlı olarak işlenmesi çeşitli endüstriler için çok önemlidir. Aspose.Words for .NET, geliştiricilerin belge işleme görevlerini verimli bir şekilde otomatikleştirmesine olanak tanır. Bu kapsamlı kılavuz, Aspose.Words for .NET kullanarak kaynak formatını korurken belgeleri birleştirme sürecinde size yol gösterecektir.
+Tablolar birçok Word belgesinin önemli bir parçasıdır, ancak bazen tablonuzun iki sayfaya bölündüğü bir durumla karşılaşabilirsiniz. Bu, belgenizin akışını bozabilir ve okunabilirliğini etkileyebilir. Tüm tabloyu tek bir sayfada bir arada tutmanın bir yolu olsa harika olmaz mıydı? Aspose.Words for .NET ile bu soruna kolay bir çözüm var! Bu eğitimde, tabloların sayfalar arasında bölünmesini nasıl önleyeceğinizi ve belgenizin düzgün ve profesyonel görünmesini nasıl sağlayacağınızı ele alacağız.
 
-## Önkoşullar
+## Ön koşullar
 
-Aspose.Words for .NET ile belge birleştirmeye başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
+Eğitime başlamadan önce, süreci sorunsuz bir şekilde takip edebilmeniz için ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım.
 
-- Visual Studio: .NET geliştirme için Tümleşik Geliştirme Ortamı (IDE).
-- Aspose.Words for .NET: Geliştirme ortamınıza yüklenir ve ayarlanır.
-- C#'a aşinalık: C# programlama dilinin temel anlayışı.
+### Aspose.Words for .NET Kütüphanesi
 
-## Ad Alanlarını İçe Aktar
+Öncelikle, .NET için Aspose.Words'ün yüklü olması gerekir. Bu, Word belgeleriyle programlı olarak çalışmanıza olanak tanıyan güçlü bir kütüphanedir.
 
-Başlamak için gerekli ad alanlarını içe aktarın:
+- [.NET için Aspose.Words'ü indirin](https://releases.aspose.com/words/net/)
+
+### Geliştirme Ortamı
+
+C# kodunu çalıştırmak için aşağıdaki gibi bir geliştirme ortamı kurmuş olmalısınız:
+
+- Visual Studio (herhangi bir yeni sürüm)
+- .NET Framework 2.0 veya üzeri
+
+### Tablolu Bir Word Belgesi
+
+ Bir tablo içeren bir Word belgesine ihtiyacınız olacak. Bu eğitimde, adlı bir örnek belgeyle çalışacağız.`"Table spanning two pages.docx"`Bu dosya şu anda iki sayfaya yayılan bir tablo içeriyor.
+
+### Geçici Lisans (Opsiyonel)
+
+ Aspose.Words ücretsiz deneme sürümüyle birlikte gelirken, bir[geçici lisans](https://purchase.aspose.com/temporary-license/) Kütüphanenin tüm potansiyelini ortaya çıkarmak.
+
+## Paketleri İçe Aktar
+
+Herhangi bir kod yazmadan önce, .NET için Aspose.Words ile çalışmak için gerekli ad alanlarını içe aktarmamız gerekir. Kod dosyanızın en üstüne aşağıdaki içe aktarmaları ekleyin:
 
 ```csharp
 using Aspose.Words;
-using Aspose.Words.DocumentBuilder;
+using Aspose.Words.Tables;
 ```
 
-## 1. Adım: Belgeleri Yükleyin
+ Bu ad alanları size şu tür sınıflara erişim sağlar:`Document`, `Table`, `Cell`ve bu eğitimde kullanacağımız diğerleri.
 
- Öncelikle kaynak ve hedef belgeleri Aspose.Words'e yükleyin.`Document` nesneler.
+## Adım 1: Belgeyi Yükleyin
+
+ Yapmamız gereken ilk şey tabloyu içeren Word belgesini yüklemektir. Bunun için şunu kullanacağız:`Document` Aspose.Words sınıfından. Bu sınıf Word dosyalarını programlı olarak açmanıza ve düzenlemenize olanak tanır.
 
 ```csharp
-// Belge dizininizin yolu
-string dataDir = "YOUR_DOCUMENT_DIRECTORY/";
+// Belgeler dizinine giden yol.
+string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Kaynak ve hedef belgeleri yükleyin
-Document srcDoc = new Document(dataDir + "Document source.docx");
-Document dstDoc = new Document(dataDir + "Document destination with list.docx");
+Document doc = new Document(dataDir + "Table spanning two pages.docx");
 ```
 
-## Adım 2: Bölüm Başlangıcını Ayarlayın
+ Bu kod parçacığında, belgemizin konumunu belirtiyoruz. Değiştir`"YOUR DOCUMENTS DIRECTORY"` Belgenizin saklandığı gerçek dizinle.
 
-Kaynak belge içeriğinin hedef belgeden sonra sürekli olarak akmasını sağlamak için bölüm başlangıcını yapılandırın.
+## Adım 2: Tabloya Erişim
+
+Belge yüklendikten sonra bir sonraki adım, bir arada tutmak istediğimiz tabloya erişmektir. Bu örnekte, tablonun belgedeki ilk tablo olduğunu varsayıyoruz.
 
 ```csharp
-// Kaynak belgeyi, hedef belgenin içeriğinden hemen sonra görünecek şekilde ayarlayın
-srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
+Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 ```
 
-## 3. Adım: Paragrafları Bir Arada Tutun
+ Bu kod satırı belgedeki ilk tabloyu bulur.`GetChild` yöntem, bu durumda belirli bir düğüm türünü alır`NodeType.Table` .`0` ilk tabloyu istediğimizi gösterir ve`true`bayrak, tüm alt düğümlerde yinelemeli arama yapmamızı sağlar.
 
-Biçimlendirme bütünlüğünü korumak için kaynak belgedeki her paragrafı bir sonraki paragrafta kalacak şekilde işaretleyin.
+## Adım 3: Tablo Hücreleri Arasında Döngü
+
+Şimdi, tablodaki her hücrede döngü yapmamız gerekiyor. Bir tablo birden fazla satır ve her satır birden fazla hücre içerdiğinden, her hücrede yineleme yapacağız ve sayfalar arasında bölünmediğinden emin olacağız.
 
 ```csharp
-foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
+foreach (Cell cell in table.GetChildNodes(NodeType.Cell, true))
 {
-    para.ParagraphFormat.KeepWithNext = true;
-}
+    cell.EnsureMinimum();
 ```
 
-## 4. Adım: Belgeleri Ekleyin
+ Burada,`GetChildNodes` tablodaki tüm hücreleri alır ve her birinde döngü oluştururuz.`EnsureMinimum()` Bu yöntem, her hücrenin en az bir paragraf içermesini sağlar; çünkü boş bir hücre daha sonra sorunlara yol açabilir.
 
- Belgeleri kullanarak birleştirin`AppendDocument` kaynak belgenin formatının korunmasını sağlayan yöntem.
+## Adım 4: KeepWithNext Özelliğini Ayarlayın
+
+ Tablonun sayfalar arasında dağılmasını önlemek için,`KeepWithNext` Tablo içindeki her paragraf için özellik. Bu özellik, paragrafın bir sonraki paragrafla birlikte kalmasını sağlayarak aralarında sayfa sonlarının oluşmasını etkili bir şekilde önler.
 
 ```csharp
-dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
+    foreach (Paragraph para in cell.Paragraphs)
+        if (!(cell.ParentRow.IsLastRow && para.IsEndOfCell))
+            para.ParagraphFormat.KeepWithNext = true;
 ```
 
-## Adım 5: Birleştirilmiş Belgeyi Kaydet
+ Bu döngü her hücrenin içindeki her paragrafı kontrol eder. Koşul, şunu uygulamadığımızdan emin olur:`KeepWithNext`son satırdaki son paragrafa özellik. Aksi takdirde, bir sonraki paragraf olmadığı için özelliğin hiçbir etkisi olmazdı.
 
-Son olarak birleştirilmiş belgeyi istediğiniz konuma kaydedin.
+## Adım 5: Belgeyi Kaydedin
+
+ Son olarak, uygulandıktan sonra`KeepWithNext` özelliği, değiştirilen belgeyi kaydetmemiz gerekiyor.
 
 ```csharp
-dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
+doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 ```
+
+Bu satır güncellenen belgeyi yeni bir adla kaydeder ve orijinal dosyayı korur. Artık ortaya çıkan dosyayı açabilir ve tablonun artık iki sayfaya bölünmediğini görebilirsiniz!
 
 ## Çözüm
 
-Sonuç olarak Aspose.Words for .NET, orijinal formatı kusursuz bir şekilde korurken Word belgelerini birleştirme görevini basitleştirir. Bu yetenek, otomatik belge işleme gerektiren uygulamalar için çok önemlidir.
+İşte bu kadar! Bu basit adımları izleyerek, .NET için Aspose.Words kullanarak Word belgelerinde tabloların sayfalar arasında dağılmasını kolayca önleyebilirsiniz. İster raporlar, ister sözleşmeler veya diğer belgeler üzerinde çalışın, tabloları olduğu gibi tutmak daha cilalı, profesyonel bir görünüm sağlar.
 
-## SSS'ler
+Aspose.Words'ün güzelliği, esnekliği ve kullanım kolaylığıdır; makinenizde Microsoft Word'ün yüklü olmasına gerek kalmadan Word belgelerini programatik olarak düzenlemenize olanak tanır. Artık tabloları bir arada tutmayı öğrendiğinize göre, belge işleme becerilerinizi bir üst seviyeye taşımak için kütüphanenin diğer özelliklerini keşfedin!
 
-### Aspose.Words for .NET farklı formatlardaki belgeleri birleştirebilir mi?
-Evet, kaynak formatını koruyarak, formatlarına bakılmaksızın belgeleri birleştirebilir.
+## SSS
 
-### Aspose.Words for .NET büyük belgelerin verimli bir şekilde birleştirilmesini destekliyor mu?
-Kesinlikle, büyük belgeleri optimum performansla işler.
+### Bu kodu kullandıktan sonra tablom neden hala sayfalar arasında bozuluyor?
 
-### Aspose.Words for .NET'in deneme sürümü mevcut mu?
- Evet, ücretsiz deneme sürümünü indirebilirsiniz[Burada](https://releases.aspose.com/).
+ Masanız hala kırılıyorsa, şu adımları uyguladığınızdan emin olun:`KeepWithNext` Özelliği doğru bir şekilde ayarlayın. Her hücredeki sonuncusu hariç tüm paragrafların bu özelliğe sahip olduğunu iki kez kontrol edin.
 
-### Aspose.Words for .NET için nasıl teknik destek alabilirim?
- Teknik destek şu adresten sağlanmaktadır:[Aspose.Words forumu](https://forum.aspose.com/c/words/8).
+### Sadece belirli satırları bir arada tutabilir miyim?
 
-### Aspose.Words for .NET için geçici bir lisans satın alabilir miyim?
- Evet, geçici lisans alabilirsiniz[Burada](https://purchase.aspose.com/temporary-license/).
+ Evet, seçici olarak uygulayabilirsiniz`KeepWithNext` Tablo içindeki belirli satırlara veya paragraflara, hangi parçaların bir arada kalacağını kontrol etmek için özellik.
+
+### Bu yöntem büyük tablolarda işe yarar mı?
+
+Çok büyük tablolar için, tüm tabloyu bir sayfaya sığdırmak için yeterli alan yoksa Word bunları yine de sayfalara bölebilir. Daha büyük tablolara uyum sağlamak için tablonuzun biçimlendirmesini veya kenar boşluklarını ayarlamayı düşünün.
+
+### Bu yöntemi diğer belge formatlarıyla da kullanabilir miyim?
+
+Evet! Aspose.Words for .NET, DOC, DOCX, PDF ve diğerleri gibi birçok formatı destekler. Aynı yöntem tabloları destekleyen tüm formatlarda çalışır.
+
+### Aspose.Words for .NET ücretsiz bir kütüphane midir?
+
+ Aspose.Words for .NET ücretsiz deneme sunuyor, ancak tüm özelliklere tam erişim için bir lisans satın almanız gerekiyor. Lisanslama seçeneklerini şu adreste inceleyebilirsiniz:[Aspose satın alma sayfası](https://purchase.aspose.com/buy).

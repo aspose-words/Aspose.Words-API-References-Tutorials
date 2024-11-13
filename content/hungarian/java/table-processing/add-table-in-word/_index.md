@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## 6. lépés: Hozzon létre egy táblázatot és adjon hozzá sorokat
 
- Hozzon létre egy újat`Table`objektumot, és adja meg a sorok és oszlopok számát.
+Hozzon létre egy újat`Table` objektumot, és adja meg a sorok és oszlopok számát.
 
 ```java
 Table table = new Table(doc);
@@ -123,7 +123,7 @@ lépésenkénti útmutató követésével megtanulta, hogyan kell beállítani a
 
 ### 1. kérdés: Használhatom az Aspose.Words for Java programot más Java könyvtárakkal?
 
-Igen, az Aspose.Words for Java úgy lett kialakítva, hogy jól működjön más Java könyvtárakkal, lehetővé téve a zökkenőmentes integrációt a meglévő projektjeibe.
+Igen, az Aspose.Words for Java úgy lett kialakítva, hogy jól működjön más Java könyvtárakkal, lehetővé téve a zökkenőmentes integrációt a meglévő projektekbe.
 
 ### 2. kérdés: Az Aspose.Words támogatja a Word dokumentumok más formátumokba konvertálását?
 

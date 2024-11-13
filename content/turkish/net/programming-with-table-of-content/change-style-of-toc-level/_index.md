@@ -1,27 +1,27 @@
 ---
-title: Word Belgesinde Toc Stilini Değiştirme
-linktitle: Word Belgesinde Toc Stilini Değiştirme
+title: Word Belgesinde İçindekiler Stilini Değiştir
+linktitle: Word Belgesinde İçindekiler Stilini Değiştir
 second_title: Aspose.Words Belge İşleme API'si
-description: Bu adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerindeki TOC stilini nasıl değiştireceğinizi öğrenin. İçindekiler Tablonuzu zahmetsizce özelleştirin.
+description: Bu adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerindeki TOC stilini nasıl değiştireceğinizi öğrenin. TOC'nizi zahmetsizce özelleştirin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-table-of-content/change-style-of-toc-level/
 ---
 ## giriiş
 
-Profesyonel bir Word belgesi oluşturmaya ihtiyaç duyduysanız, İçindekiler Tablosunun (TOC) ne kadar önemli olabileceğini bilirsiniz. Yalnızca içeriğinizi düzenlemekle kalmaz, aynı zamanda profesyonellik dokunuşu da katar. Ancak TOC'yi tarzınıza uyacak şekilde özelleştirmek biraz yanıltıcı olabilir. Bu eğitimde, Aspose.Words for .NET kullanarak bir Word belgesindeki TOC stilinin nasıl değiştirileceğini açıklayacağız. Dalmaya hazır mısınız? Hadi başlayalım!
+Eğer daha önce profesyonel bir Word belgesi oluşturmanız gerektiyse, İçindekiler Tablosu'nun (TOC) ne kadar önemli olduğunu biliyorsunuzdur. Sadece içeriğinizi düzenlemekle kalmaz, aynı zamanda bir profesyonellik dokunuşu da katar. Ancak, TOC'yi stilinize uyacak şekilde özelleştirmek biraz zor olabilir. Bu eğitimde, .NET için Aspose.Words kullanarak bir Word belgesindeki TOC stilini nasıl değiştireceğinizi ele alacağız. Başlamaya hazır mısınız? Hadi başlayalım!
 
-## Önkoşullar
+## Ön koşullar
 
-Koda geçmeden önce aşağıdakilere sahip olduğunuzdan emin olun:
+Koda geçmeden önce aşağıdakilerin mevcut olduğundan emin olun:
 
-1.  Aspose.Words for .NET: Aspose.Words for .NET kütüphanesinin kurulu olması gerekir. Eğer henüz yüklemediyseniz şuradan indirebilirsiniz.[Aspose sürümler sayfası](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Aspose.Words for .NET kütüphanesinin yüklü olması gerekir. Henüz yüklemediyseniz, şuradan indirebilirsiniz:[Aspose sürüm sayfası](https://releases.aspose.com/words/net/).
 2. Geliştirme Ortamı: Visual Studio gibi bir geliştirme ortamı.
-3. Temel C# Bilgisi: C# programlama dilinin anlaşılması.
+3. C# Temel Bilgisi: C# programlama dilinin anlaşılması.
 
 ## Ad Alanlarını İçe Aktar
 
-Aspose.Words for .NET ile çalışmak için gerekli ad alanlarını içe aktarmanız gerekir. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
+Aspose.Words for .NET ile çalışmak için gerekli ad alanlarını içe aktarmanız gerekir. Bunu şu şekilde yapabilirsiniz:
 
 ```csharp
 using System;
@@ -29,11 +29,11 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Süreci takip edilmesi kolay adımlara ayıralım:
+Süreci kolay takip edilebilir adımlara bölelim:
 
-## 1. Adım: Projenizi Kurun
+## Adım 1: Projenizi Kurun
 
-Öncelikle projenizi Visual Studio'da ayarlayın. Yeni bir C# projesi oluşturun ve Aspose.Words for .NET kütüphanesine bir referans ekleyin.
+İlk önce, projenizi Visual Studio'da kurun. Yeni bir C# projesi oluşturun ve Aspose.Words for .NET kütüphanesine bir referans ekleyin.
 
 ```csharp
 // Yeni bir belge oluştur
@@ -42,19 +42,19 @@ Document doc = new Document();
 
 ## Adım 2: İçindekiler Stilini Değiştirin
 
-Sonra, İçindekiler Tablosunun (TOC) ilk düzeyinin stilini değiştirelim.
+Şimdi İçindekiler Tablosunun (TOC) ilk seviyesinin stilini değiştirelim.
 
 ```csharp
-// İçindekiler tablosunun birinci düzeyinin stilinin değiştirilmesi
+// İçindekiler tablosunun birinci seviyesinin stilinin değiştirilmesi
 doc.Styles[StyleIdentifier.Toc1].Font.Bold = true;
 ```
 
-## 3. Adım: Değiştirilen Belgeyi Kaydedin
+## Adım 3: Değiştirilen Belgeyi Kaydedin
 
-İçindekiler stilinde gerekli değişiklikleri yaptıktan sonra değiştirilen belgeyi kaydedin.
+İçindekiler stilinde gerekli değişiklikleri yaptıktan sonra, değiştirilen belgeyi kaydedin.
 
 ```csharp
-// Belgeler dizininizin yolu
+// Belgelerinizin dizinine giden yol
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Değiştirilen belgeyi kaydet
@@ -63,21 +63,21 @@ doc.Save(dataDir + "WorkingWithChangeStyleOfTocLevel.ModifiedDocument.docx");
 
 ## Çözüm
 
-Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesindeki İçindekiler stilini başarıyla değiştirdiniz. Bu küçük özelleştirme, belgenizin genel görünümünde ve hissinde büyük bir fark yaratabilir. İçindekiler'inizi tamamen özelleştirmek için diğer stilleri ve seviyeleri denemeyi unutmayın.
+Ve işte oldu! Aspose.Words for .NET kullanarak bir Word belgesindeki TOC stilini başarıyla değiştirdiniz. Bu küçük özelleştirme, belgenizin genel görünümünde ve hissiyatında büyük bir fark yaratabilir. TOC'nizi tamamen özelleştirmek için diğer stilleri ve seviyeleri denemeyi unutmayın.
 
-## SSS'ler
+## SSS
 
 ### Aspose.Words for .NET nedir?
-Aspose.Words for .NET, .NET uygulamalarında Word belgeleri oluşturmaya, değiştirmeye ve dönüştürmeye yönelik bir sınıf kitaplığıdır.
+Aspose.Words for .NET, .NET uygulamaları içerisinde Word belgeleri oluşturmak, değiştirmek ve dönüştürmek için kullanılan bir sınıf kütüphanesidir.
 
 ### İçindekiler'deki diğer stilleri değiştirebilir miyim?
-Evet, farklı düzeylere ve stil özelliklerine erişerek İçindekiler İçindekiler içindeki çeşitli stilleri değiştirebilirsiniz.
+Evet, İçindekiler tablosundaki çeşitli stilleri, farklı seviyelere ve stil özelliklerine erişerek değiştirebilirsiniz.
 
 ### Aspose.Words for .NET ücretsiz mi?
- Aspose.Words for .NET ücretli bir kütüphanedir, ancak[ücretsiz deneme](https://releases.aspose.com/) veya bir[geçici lisans](https://purchase.aspose.com/temporary-license/).
+ Aspose.Words for .NET ücretli bir kütüphanedir, ancak bir tane alabilirsiniz[ücretsiz deneme](https://releases.aspose.com/) veya bir[geçici lisans](https://purchase.aspose.com/temporary-license/).
 
 ### Aspose.Words for .NET'i kullanmak için Microsoft Word'ü yüklemem gerekir mi?
-Hayır, Aspose.Words for .NET, makinenizde Microsoft Word'ün kurulu olmasını gerektirmez.
+Hayır, Aspose.Words for .NET bilgisayarınızda Microsoft Word'ün yüklü olmasını gerektirmez.
 
-### Aspose.Words for .NET hakkında daha fazla belgeyi nerede bulabilirim?
- Daha ayrıntılı belgeler bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).
+### Aspose.Words for .NET hakkında daha fazla dokümanı nerede bulabilirim?
+ Daha detaylı dokümanları bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).

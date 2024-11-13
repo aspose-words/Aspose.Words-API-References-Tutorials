@@ -52,7 +52,7 @@ Document doc = new Document();
 
 ## 3. lépés: A DocumentBuilder inicializálása
 
- A`DocumentBuilder` olyan, mint az ecset. Segítségével tartalmat adhat a dokumentumhoz. Inicializáljuk.
+A`DocumentBuilder` olyan, mint az ecset. Segítségével tartalmat adhat a dokumentumhoz. Inicializáljuk.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

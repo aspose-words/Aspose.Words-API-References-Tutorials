@@ -15,7 +15,7 @@ Word 文書内の画像や図形の完璧な比率を維持する方法を考え
 
 コードに進む前に、始めるために必要なものを確認しましょう。
 
-- Aspose.Words for .NET ライブラリ: Aspose.Words for .NET がインストールされている必要があります。まだインストールしていない場合は、[ここからダウンロード](https://releases.aspose.com/words/net/).
+- Aspose.Words for .NETライブラリ: Aspose.Words for .NETがインストールされている必要があります。まだインストールしていない場合は、[ここからダウンロード](https://releases.aspose.com/words/net/).
 - 開発環境: .NET 開発環境が設定されていることを確認します。Visual Studio が一般的な選択肢です。
 - C# の基礎知識: C# プログラミングに関するある程度の知識があると役立ちます。
 

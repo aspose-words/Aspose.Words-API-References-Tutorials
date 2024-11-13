@@ -1,43 +1,43 @@
 ---
-title: Khởi động lại đánh số trang
-linktitle: Khởi động lại đánh số trang
+title: Khởi động lại Đánh số trang
+linktitle: Khởi động lại Đánh số trang
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách bắt đầu lại việc đánh số trang trong khi nối và nối thêm tài liệu Word bằng Aspose.Words for .NET.
+description: Tìm hiểu cách đánh số trang lại khi nối và thêm các tài liệu Word bằng Aspose.Words cho .NET.
 type: docs
 weight: 10
 url: /vi/net/join-and-append-documents/restart-page-numbering/
 ---
 ## Giới thiệu
 
-Bạn đã bao giờ gặp khó khăn trong việc tạo một tài liệu tinh tế với các phần riêng biệt, mỗi phần bắt đầu bằng trang số 1 chưa? Hãy tưởng tượng một báo cáo trong đó các chương bắt đầu lại từ đầu hoặc một đề xuất dài với các phần riêng biệt dành cho phần tóm tắt và phụ lục chi tiết. Aspose.Words for .NET, một thư viện xử lý tài liệu mạnh mẽ, cho phép bạn đạt được điều này một cách khéo léo. Hướng dẫn toàn diện này sẽ tiết lộ bí quyết bắt đầu lại việc đánh số trang, trang bị cho bạn cách tạo tài liệu trông chuyên nghiệp một cách dễ dàng.
+Bạn đã bao giờ vật lộn để tạo một tài liệu được đánh bóng với các phần riêng biệt, mỗi phần bắt đầu bằng số trang 1 chưa? Hãy tưởng tượng một báo cáo mà các chương bắt đầu lại từ đầu, hoặc một đề xuất dài với các phần riêng biệt cho phần tóm tắt và phụ lục chi tiết. Aspose.Words cho .NET, một thư viện xử lý tài liệu mạnh mẽ, giúp bạn thực hiện điều này một cách tinh tế. Hướng dẫn toàn diện này sẽ tiết lộ bí mật của việc đánh số trang lại, trang bị cho bạn khả năng tạo ra các tài liệu trông chuyên nghiệp một cách dễ dàng.
 
 ## Điều kiện tiên quyết
 
-Trước khi bắt đầu cuộc hành trình này, hãy đảm bảo bạn có những điều sau:
+Trước khi bắt đầu chuyến đi này, hãy đảm bảo bạn có những điều sau:
 
-1.  Aspose.Words for .NET: Tải xuống thư viện từ trang web chính thức[Liên kết tải xuống](https://releases.aspose.com/words/net/) . Bạn có thể khám phá bản dùng thử miễn phí[Link dùng thử miễn phí](https://releases.aspose.com/) hoặc mua giấy phép[Mua liên kết](https://purchase.aspose.com/buy) dựa trên nhu cầu của bạn.
-2. Môi trường phát triển AC#: Visual Studio hoặc bất kỳ môi trường nào hỗ trợ phát triển .NET sẽ hoạt động hoàn hảo.
-3. Tài liệu mẫu: Xác định vị trí tài liệu Word mà bạn muốn thử nghiệm.
+1.  Aspose.Words cho .NET: Tải xuống thư viện từ trang web chính thức[Liên kết tải xuống](https://releases.aspose.com/words/net/) . Bạn có thể khám phá bản dùng thử miễn phí[Liên kết dùng thử miễn phí](https://releases.aspose.com/) hoặc mua giấy phép[Mua liên kết](https://purchase.aspose.com/buy) dựa trên nhu cầu của bạn.
+2. Môi trường phát triển AC#: Visual Studio hoặc bất kỳ môi trường nào hỗ trợ phát triển .NET đều hoạt động hoàn hảo.
+3. Một tài liệu mẫu: Tìm một tài liệu Word mà bạn muốn thử nghiệm.
 
-## Nhập các không gian tên thiết yếu
+## Nhập không gian tên thiết yếu
 
-Để tương tác với các đối tượng và chức năng của Aspose.Words, chúng ta cần nhập các không gian tên cần thiết. Đây là cách thực hiện:
+Để tương tác với các đối tượng và chức năng của Aspose.Words, chúng ta cần nhập các không gian tên cần thiết. Sau đây là cách thực hiện:
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Settings;
 ```
 
- Đoạn mã này nhập`Aspose.Words` không gian tên, cung cấp quyền truy cập vào các lớp thao tác tài liệu cốt lõi. Ngoài ra, chúng tôi nhập khẩu`Aspose.Words.Settings` không gian tên, cung cấp các tùy chọn để tùy chỉnh hành vi tài liệu.
+ Đoạn mã này nhập`Aspose.Words` không gian tên, cung cấp quyền truy cập vào các lớp thao tác tài liệu cốt lõi. Ngoài ra, chúng tôi nhập`Aspose.Words.Settings` không gian tên, cung cấp các tùy chọn để tùy chỉnh hành vi của tài liệu.
 
 
-Bây giờ, hãy đi sâu vào các bước thực tế liên quan đến việc bắt đầu lại việc đánh số trang trong tài liệu của bạn:
+Bây giờ, chúng ta hãy cùng tìm hiểu các bước thực tế liên quan đến việc đánh số trang lại trong tài liệu của bạn:
 
 ## Bước 1: Tải tài liệu nguồn và đích:
 
- Xác định một biến chuỗi`dataDir` để lưu trữ đường dẫn đến thư mục tài liệu của bạn. Thay thế "THƯ MỤC TÀI LIỆU CỦA BẠN" bằng vị trí thực tế.
+Định nghĩa một biến chuỗi`dataDir` để lưu đường dẫn đến thư mục tài liệu của bạn. Thay thế "THƯ MỤC TÀI LIỆU CỦA BẠN" bằng vị trí thực tế.
 
- Tạo hai`Document` các đối tượng sử dụng`Aspose.Words.Document`người xây dựng. Cái đầu tiên (`srcDoc`) sẽ giữ tài liệu nguồn chứa nội dung được thêm vào. Thứ hai (`dstDoc`) đại diện cho tài liệu đích nơi chúng tôi sẽ tích hợp nội dung nguồn với việc đánh số trang được khởi động lại.
+ Tạo hai`Document` các đối tượng sử dụng`Aspose.Words.Document` constructor. Cái đầu tiên (`srcDoc`) sẽ giữ tài liệu nguồn có chứa nội dung cần thêm vào. Thứ hai (`dstDoc`) biểu thị tài liệu đích mà chúng ta sẽ tích hợp nội dung nguồn với việc đánh số trang lại.
 
 ```csharp
 string dataDir = @"C:\MyDocuments\"; // Thay thế bằng thư mục thực tế của bạn
@@ -47,9 +47,9 @@ Document dstDoc = new Document(dataDir + "destination.docx");
 
 ## Bước 2: Thiết lập ngắt phần:
 
- Truy cập`FirstSection` thuộc tính của tài liệu nguồn (`srcDoc`) để thao tác phần ban đầu. Phần này sẽ được đánh số trang lại.
+ Truy cập vào`FirstSection` thuộc tính của tài liệu nguồn (`srcDoc`) để thao tác phần ban đầu. Phần này sẽ được đánh số trang lại.
 
- Sử dụng`PageSetup` thuộc tính của phần để định cấu hình hành vi bố cục của phần đó.
+ Sử dụng`PageSetup` thuộc tính của phần để cấu hình hành vi bố trí của nó.
 
  Đặt`SectionStart` tài sản của`PageSetup` ĐẾN`SectionStart.NewPage`. Điều này đảm bảo một trang mới được tạo trước khi nội dung nguồn được thêm vào tài liệu đích.
 
@@ -57,21 +57,21 @@ Document dstDoc = new Document(dataDir + "destination.docx");
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 ```
 
-## Bước 3: Kích hoạt khởi động lại đánh số trang:
+## Bước 3: Kích hoạt Khởi động lại Đánh số trang:
 
- Trong cùng một`PageSetup` đối tượng của phần đầu tiên của tài liệu nguồn, hãy đặt`RestartPageNumbering`tài sản để`true`. Bước quan trọng này hướng dẫn Aspose.Words bắt đầu đánh số trang mới cho nội dung được nối thêm.
+ Trong cùng một`PageSetup` đối tượng của phần đầu tiên của tài liệu nguồn, đặt`RestartPageNumbering`tài sản để`true`Bước quan trọng này hướng dẫn Aspose.Words bắt đầu đánh số trang mới cho nội dung được thêm vào.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 ```
 
-## Bước 4: Bổ sung tài liệu nguồn:
+## Bước 4: Thêm Tài liệu Nguồn:
 
-Bây giờ tài liệu nguồn đã được chuẩn bị với cấu hình đánh số và ngắt trang mong muốn, đã đến lúc tích hợp nó vào tài liệu đích.
+Bây giờ tài liệu nguồn đã được chuẩn bị với cấu hình ngắt trang và đánh số trang mong muốn, đã đến lúc tích hợp nó vào tài liệu đích.
 
- Sử dụng`AppendDocument` phương thức của tài liệu đích (`dstDoc`) để thêm liền mạch nội dung nguồn.
+ Sử dụng`AppendDocument` phương pháp của tài liệu đích (`dstDoc`) để thêm nội dung nguồn một cách liền mạch.
 
-Truyền tài liệu nguồn (`srcDoc` ) và một`ImportFormatMode.KeepSourceFormatting` lập luận cho phương pháp này. Đối số này giữ nguyên định dạng ban đầu của tài liệu nguồn khi được thêm vào.
+Truyền tài liệu nguồn (`srcDoc` ) và một`ImportFormatMode.KeepSourceFormatting` đối số cho phương pháp này. Đối số này giữ nguyên định dạng gốc của tài liệu nguồn khi được thêm vào.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -79,7 +79,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Bước 5: Lưu tài liệu cuối cùng:
 
- Cuối cùng, hãy sử dụng`Save` phương thức của tài liệu đích (`dstDoc`) để lưu trữ tài liệu kết hợp với việc đánh số trang được khởi động lại. Chỉ định tên tệp và vị trí phù hợp cho tài liệu đã lưu.
+ Cuối cùng, sử dụng`Save` phương pháp của tài liệu đích (`dstDoc`) để lưu trữ tài liệu kết hợp với số trang được khởi động lại. Chỉ định tên tệp và vị trí phù hợp cho tài liệu đã lưu.
 
 ```csharp
 dstDoc.Save(dataDir + "final_document.docx");
@@ -87,26 +87,26 @@ dstDoc.Save(dataDir + "final_document.docx");
 
 ## Phần kết luận
 
-Tóm lại, việc nắm vững các ngắt trang và đánh số trong Aspose.Words for .NET cho phép bạn tạo các tài liệu có cấu trúc tốt và bóng bẩy. Bằng cách triển khai các kỹ thuật được nêu trong hướng dẫn này, bạn có thể tích hợp liền mạch nội dung với việc đánh số trang được khởi động lại, đảm bảo bản trình bày chuyên nghiệp và thân thiện với người đọc. Hãy nhớ rằng, Aspose.Words cung cấp vô số tính năng bổ sung để thao tác tài liệu.
+Tóm lại, việc thành thạo ngắt trang và đánh số trong Aspose.Words for .NET giúp bạn tạo ra các tài liệu được trau chuốt và có cấu trúc tốt. Bằng cách triển khai các kỹ thuật được nêu trong hướng dẫn này, bạn có thể tích hợp liền mạch nội dung với việc đánh số trang được khởi động lại, đảm bảo trình bày chuyên nghiệp và thân thiện với người đọc. Hãy nhớ rằng, Aspose.Words cung cấp nhiều tính năng bổ sung để thao tác tài liệu.
 
 ## Câu hỏi thường gặp
 
 ### Tôi có thể bắt đầu lại việc đánh số trang ở giữa một phần không?
 
- Thật không may, Aspose.Words for .NET không hỗ trợ trực tiếp việc khởi động lại việc đánh số trang trong một phần. Tuy nhiên, bạn có thể đạt được hiệu ứng tương tự bằng cách tạo một phần mới tại điểm mong muốn và cài đặt`RestartPageNumbering` ĐẾN`true` cho phần đó.
+ Thật không may, Aspose.Words for .NET không hỗ trợ trực tiếp việc khởi động lại đánh số trang trong một phần duy nhất. Tuy nhiên, bạn có thể đạt được hiệu ứng tương tự bằng cách tạo một phần mới tại điểm mong muốn và thiết lập`RestartPageNumbering` ĐẾN`true` cho phần đó.
 
-### Làm cách nào để tùy chỉnh số trang bắt đầu sau khi khởi động lại?
+### Làm thế nào để tùy chỉnh số trang bắt đầu sau khi khởi động lại?
 
- Mặc dù mã được cung cấp bắt đầu đánh số từ 1 nhưng bạn có thể tùy chỉnh mã đó. Sử dụng`PageNumber` tài sản của`HeaderFooter` đối tượng trong phần mới. Đặt thuộc tính này cho phép bạn xác định số trang bắt đầu.
+ Trong khi mã được cung cấp bắt đầu đánh số từ 1, bạn có thể tùy chỉnh nó. Sử dụng`PageNumber` tài sản của`HeaderFooter` đối tượng trong phần mới. Thiết lập thuộc tính này cho phép bạn xác định số trang bắt đầu.
 
 ### Điều gì xảy ra với số trang hiện có trong tài liệu nguồn?
 
-Số trang hiện có trong tài liệu nguồn vẫn không bị ảnh hưởng. Chỉ nội dung được nối thêm trong tài liệu đích mới được đánh số lại.
+Số trang hiện có trong tài liệu nguồn vẫn không bị ảnh hưởng. Chỉ có nội dung được thêm vào trong tài liệu đích sẽ được đánh số lại.
 
-### Tôi có thể áp dụng các định dạng đánh số khác nhau (ví dụ: chữ số La Mã) không?
+### Tôi có thể áp dụng các định dạng đánh số khác nhau (ví dụ: số La Mã) không?
 
- Tuyệt đối! Aspose.Words cung cấp khả năng kiểm soát rộng rãi đối với các định dạng đánh số trang. Khám phá`NumberStyle` tài sản của`HeaderFooter` đối tượng để chọn từ nhiều kiểu đánh số khác nhau như chữ số La Mã, chữ cái hoặc định dạng tùy chỉnh.
+ Chắc chắn rồi! Aspose.Words cung cấp khả năng kiểm soát rộng rãi đối với các định dạng đánh số trang. Khám phá`NumberStyle` tài sản của`HeaderFooter` cho phép lựa chọn nhiều kiểu đánh số khác nhau như số La Mã, chữ cái hoặc định dạng tùy chỉnh.
 
-### Tôi có thể tìm thêm nguồn lực hoặc hỗ trợ ở đâu?
+### Tôi có thể tìm thêm tài nguyên hoặc hỗ trợ ở đâu?
 
- Aspose cung cấp một cổng thông tin tài liệu toàn diện[Liên kết tài liệu](https://reference.aspose.com/words/net/) đi sâu hơn vào các chức năng đánh số trang và các tính năng khác của Aspose.Words. Ngoài ra, diễn đàn hoạt động của họ[Liên kết hỗ trợ](https://forum.aspose.com/c/words/8) là một nền tảng tuyệt vời để kết nối với cộng đồng nhà phát triển và tìm kiếm sự trợ giúp khi giải quyết những thách thức cụ thể.
+ Aspose cung cấp một cổng thông tin tài liệu toàn diện[Liên kết tài liệu](https://reference.aspose.com/words/net/) đi sâu hơn vào các chức năng đánh số trang và các tính năng khác của Aspose.Words. Ngoài ra, diễn đàn hoạt động của họ[Liên kết hỗ trợ](https://forum.aspose.com/c/words/8) là một nền tảng tuyệt vời để kết nối với cộng đồng nhà phát triển và tìm kiếm sự hỗ trợ cho những thách thức cụ thể.

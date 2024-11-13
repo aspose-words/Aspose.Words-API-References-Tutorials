@@ -55,7 +55,7 @@ Lär dig avancerad dokumenthantering med Aspose.Words för Java. Kryptera, hante
 ### [Spara HTML-dokument med fast layout i Aspose.Words för Java](./saving-html-documents-with-fixed-layout/)
 Lär dig hur du sparar HTML-dokument med fast layout i Aspose.Words för Java. Följ vår steg-för-steg-guide för sömlös dokumentformatering.
 ### [Avancera alternativ för att spara HTML-dokument med Aspose.Words Java](./advance-html-documents-saving-options/)
-den här handledningen har vi täckt olika avancerade alternativ för att spara HTML-dokument med Aspose.Words för Java. Dessa alternativ ger dig möjlighet att skapa HTML av hög kvalitet.
+I den här handledningen har vi täckt olika avancerade alternativ för att spara HTML-dokument med Aspose.Words för Java. Dessa alternativ ger dig möjlighet att skapa HTML av hög kvalitet.
 ### [Spara bilder från dokument i Aspose.Words för Java](./saving-images-from-documents/)
 Lär dig hur du sparar bilder från dokument med Aspose.Words för Java med vår omfattande steg-för-steg-guide. Anpassa format, komprimering och mer.
 ### [Spara dokument som Markdown i Aspose.Words för Java](./saving-documents-as-markdown/)

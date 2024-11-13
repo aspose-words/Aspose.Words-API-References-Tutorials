@@ -128,7 +128,7 @@ Aspose.Words for Java は、書式設定の維持、さまざまなページ設�
 
 ### ドキュメントを追加するときにページ番号を保持できますか?
 
-はい、ページ番号を維持するには、`convertNumPageFieldsToPageRef`メソッドとページレイアウトの更新。
+はい、ページ番号を維持するには、`convertNumPageFieldsToPageRef`メソッドとページ レイアウトの更新について説明します。
 
 ### スマートスタイルビヘイビアとは何ですか?
 

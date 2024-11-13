@@ -107,7 +107,7 @@ table.mergeCells(cell1, cell2);
 
 ## Speciális táblázatkezelés
 
-Az Aspose.Words for Java fejlett szolgáltatásokat nyújt az összetett táblaforgatókönyvek kezeléséhez. Nézzünk meg néhányat közülük:
+Az Aspose.Words for Java fejlett szolgáltatásokat nyújt összetett táblaforgatókönyvek kezeléséhez. Nézzünk meg néhányat közülük:
 
 ### Beágyazott táblázatok hozzáadása
 

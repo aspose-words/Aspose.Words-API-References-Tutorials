@@ -42,7 +42,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 2. lépés: Illessze be a beágyazott képet
+## 2. lépés: Helyezze be a beágyazott képet
 
  Használja a`InsertImage` módszere a`DocumentBuilder` osztályban képet szúrhat be a dokumentumba az aktuális pozícióban.
 

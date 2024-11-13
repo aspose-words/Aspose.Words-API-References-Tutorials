@@ -91,7 +91,7 @@ Nem, a képek átugrása csak a képeket érinti. A szöveg érintetlen és telj
 
 ### Használhatom ezt a funkciót más dokumentumformátumokkal?
 
- A`SkipPdfImages` Az opció kifejezetten PDF dokumentumokhoz használható. Más formátumokhoz különböző lehetőségek és módszerek állnak rendelkezésre.
+A`SkipPdfImages` Az opció kifejezetten PDF dokumentumokhoz használható. Más formátumokhoz különböző lehetőségek és módszerek állnak rendelkezésre.
 
 ### Hogyan ellenőrizhetem, hogy a képek kimaradtak-e?
 

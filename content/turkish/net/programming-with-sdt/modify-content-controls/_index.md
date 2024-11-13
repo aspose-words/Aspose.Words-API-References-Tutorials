@@ -1,33 +1,33 @@
 ---
-title: İçerik Kontrollerini Değiştirin
-linktitle: İçerik Kontrollerini Değiştirin
+title: İçerik Denetimlerini Değiştir
+linktitle: İçerik Denetimlerini Değiştir
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak Word'deki yapılandırılmış belge etiketlerini nasıl değiştireceğinizi öğrenin. Metni, açılır menüleri ve görselleri adım adım güncelleyin.
+description: Aspose.Words for .NET kullanarak Word'de yapılandırılmış belge etiketlerini nasıl değiştireceğinizi öğrenin. Metni, açılır menüleri ve görselleri adım adım güncelleyin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-sdt/modify-content-controls/
 ---
 ## giriiş
 
-Daha önce Word belgeleriyle çalıştıysanız ve Aspose.Words for .NET'i kullanarak düz metin, açılır listeler veya resimler gibi yapılandırılmış içerik kontrollerini değiştirmeniz gerekiyorsa, doğru yerdesiniz! Yapılandırılmış Belge Etiketleri (SDT'ler), belge otomasyonunu daha kolay ve daha esnek hale getiren güçlü araçlardır. Bu eğitimde, bu SDT'leri ihtiyaçlarınıza uyacak şekilde nasıl değiştirebileceğinizi ele alacağız. İster metni güncelliyor, ister açılır menü seçimlerini değiştiriyor, ister görselleri değiştiriyor olun, bu kılavuz süreç boyunca size adım adım yol gösterecektir.
+Word belgeleriyle çalıştıysanız ve .NET için Aspose.Words kullanarak düz metin, açılır listeler veya resimler gibi yapılandırılmış içerik denetimlerini değiştirmeniz gerekiyorsa, doğru yerdesiniz! Yapılandırılmış Belge Etiketleri (SDT'ler), belge otomasyonunu daha kolay ve daha esnek hale getiren güçlü araçlardır. Bu eğitimde, bu SDT'leri ihtiyaçlarınıza uyacak şekilde nasıl değiştirebileceğinizi ele alacağız. İster metni güncelleyin, ister açılır seçimleri değiştirin veya resimleri değiştirin, bu kılavuz sizi adım adım süreçte yönlendirecektir.
 
-## Önkoşullar
+## Ön koşullar
 
-İçerik kontrollerini değiştirmenin en ince ayrıntılarına geçmeden önce aşağıdakilere sahip olduğunuzdan emin olun:
+İçerik kontrollerini değiştirmenin inceliklerine girmeden önce, aşağıdakilere sahip olduğunuzdan emin olun:
 
-1.  Aspose.Words for .NET Kurulu: Aspose.Words kütüphanesinin kurulu olduğundan emin olun. Değilse, yapabilirsiniz[buradan indir](https://releases.aspose.com/words/net/).
+1.  .NET için Aspose.Words Yüklendi: Aspose.Words kütüphanesinin yüklü olduğundan emin olun. Değilse, şunları yapabilirsiniz:[buradan indirin](https://releases.aspose.com/words/net/).
 
-2. Temel C# Bilgisi: Bu eğitimde temel C# programlama kavramlarına aşina olduğunuz varsayılmaktadır.
+2. Temel C# Bilgisi: Bu eğitimde temel C# programlama kavramlarına aşina olduğunuzu varsayıyoruz.
 
-3. .NET Geliştirme Ortamı: .NET uygulamalarını çalıştırmak için Visual Studio benzeri bir IDE'ye sahip olmanız gerekir.
+3. .NET Geliştirme Ortamı: .NET uygulamalarını çalıştırmak için Visual Studio gibi bir IDE'niz olmalıdır.
 
-4. Örnek Bir Belge: Çeşitli SDT türlerini içeren örnek bir Word belgesi kullanacağız. Örnektekini kullanabilir veya kendinizinkini oluşturabilirsiniz.
+4. Örnek Belge: Çeşitli SDT türlerini içeren bir örnek Word belgesi kullanacağız. Örnektekini kullanabilir veya kendinizinkini oluşturabilirsiniz.
 
-5.  Aspose Dokümantasyonuna Erişim: Daha ayrıntılı bilgi için bkz.[Aspose.Words belgeleri](https://reference.aspose.com/words/net/).
+5.  Aspose Belgelerine Erişim: Daha ayrıntılı bilgi için şuraya bakın:[Aspose.Words belgeleri](https://reference.aspose.com/words/net/).
 
 ## Ad Alanlarını İçe Aktar
 
-Aspose.Words ile çalışmaya başlamak için ilgili ad alanlarını C# projenize aktarmanız gerekir. İşte bunu nasıl yapacağınız:
+Aspose.Words ile çalışmaya başlamak için ilgili ad alanlarını C# projenize aktarmanız gerekir. Bunu şu şekilde yapabilirsiniz:
 
 ```csharp
 using Aspose.Words;
@@ -35,20 +35,20 @@ using Aspose.Words.Drawing;
 using Aspose.Words.Tables;
 ```
 
-Bu ad alanları, Word belgelerinizdeki yapılandırılmış belge etiketlerini değiştirmek için gerekli sınıflara ve yöntemlere erişmenizi sağlayacaktır.
+Bu ad alanları, Word belgelerinizdeki yapılandırılmış belge etiketlerini düzenlemek için gerekli sınıflara ve yöntemlere erişmenizi sağlayacaktır.
 
-## 1. Adım: Belge Yolunuzu Ayarlayın
+## Adım 1: Belge Yolunuzu Ayarlayın
 
- Herhangi bir değişiklik yapmadan önce belgenizin yolunu belirtmeniz gerekir. Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgenizin saklandığı gerçek yolla.
+ Herhangi bir değişiklik yapmadan önce, belgenizin yolunu belirtmeniz gerekir. Değiştir`"YOUR DOCUMENT DIRECTORY"` Belgenizin saklandığı gerçek yol ile.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Structured document tags.docx");
 ```
 
-## Adım 2: Yapılandırılmış Belge Etiketlerinde Döngü Yapın
+## Adım 2: Yapılandırılmış Belge Etiketleri Arasında Döngü
 
- SDT'leri değiştirmek için öncelikle belgedeki tüm SDT'ler arasında döngü yapmanız gerekir. Bu, kullanılarak yapılır.`GetChildNodes` türdeki tüm düğümleri alma yöntemi`StructuredDocumentTag`.
+ SDT'leri değiştirmek için öncelikle belgedeki tüm SDT'leri dolaşmanız gerekir. Bu, şu şekilde yapılır:`GetChildNodes` türündeki tüm düğümleri alma yöntemi`StructuredDocumentTag`.
 
 ```csharp
 foreach (StructuredDocumentTag sdt in doc.GetChildNodes(NodeType.StructuredDocumentTag, true))
@@ -57,9 +57,9 @@ foreach (StructuredDocumentTag sdt in doc.GetChildNodes(NodeType.StructuredDocum
 }
 ```
 
-## 3. Adım: Düz Metin SDT'lerini değiştirin
+## Adım 3: Düz Metin SDT'lerini Değiştirin
 
-SDT düz metin türüyse içeriğini değiştirebilirsiniz. Öncelikle mevcut içeriği temizleyin, ardından yeni metin ekleyin.
+SDT düz metin türündeyse içeriğini değiştirebilirsiniz. Önce mevcut içeriği temizleyin, sonra yeni metin ekleyin.
 
 ```csharp
 if (sdt.SdtType == SdtType.PlainText)
@@ -71,11 +71,11 @@ if (sdt.SdtType == SdtType.PlainText)
 }
 ```
 
- Açıklama: Burada,`RemoveAllChildren()`SDT'nin mevcut içeriğini temizler. Daha sonra yeni bir tane oluşturuyoruz`Paragraph`Ve`Run` Yeni metni eklemek için nesneyi seçin.
+ Açıklama: Burada,`RemoveAllChildren()`SDT'nin mevcut içeriğini temizler. Daha sonra yeni bir içerik oluştururuz`Paragraph` Ve`Run` yeni metni eklemek için nesne.
 
-## 4. Adım: Açılır Liste SDT'lerini değiştirin
+## Adım 4: Açılır Liste SDT'lerini Değiştirin
 
- Açılır liste SDT'leri için, seçilen öğeyi şuraya erişerek değiştirebilirsiniz:`ListItems` koleksiyon. Burada listedeki üçüncü öğeyi seçiyoruz.
+ Açılır liste SDT'leri için, seçili öğeyi şuraya erişerek değiştirebilirsiniz:`ListItems` koleksiyon. Burada, listedeki üçüncü öğeyi seçiyoruz.
 
 ```csharp
 if (sdt.SdtType == SdtType.DropDownList)
@@ -85,11 +85,11 @@ if (sdt.SdtType == SdtType.DropDownList)
 }
 ```
 
-Açıklama: Bu kod parçacığı, açılır listeden dizin 2'deki (üçüncü öğe) öğeyi seçer. Endeksi ihtiyaçlarınıza göre ayarlayın.
+Açıklama: Bu kod parçacığı, açılır listeden 2. dizindeki öğeyi (üçüncü öğe) seçer. Dizini ihtiyaçlarınıza göre ayarlayın.
 
-## Adım 5: Resim SDT'lerini değiştirin
+## Adım 5: Resim SDT'lerini Değiştirin
 
-Resim SDT'sindeki bir görüntüyü güncellemek için mevcut görüntüyü yenisiyle değiştirebilirsiniz.
+Bir resim SDT'si içindeki bir resmi güncellemek için mevcut resmi yenisiyle değiştirebilirsiniz.
 
 ```csharp
 if (sdt.SdtType == SdtType.Picture)
@@ -102,49 +102,49 @@ if (sdt.SdtType == SdtType.Picture)
 }
 ```
 
- Açıklama: Bu kod, şeklin bir görüntü içerip içermediğini kontrol eder ve ardından onu, şu konumda bulunan yeni bir görüntüyle değiştirir:`ImagesDir`.
+ Açıklama: Bu kod, şeklin bir resim içerip içermediğini kontrol eder ve ardından onu şu konumda bulunan yeni bir resimle değiştirir:`ImagesDir`.
 
-## Adım 6: Değiştirilen Belgenizi Kaydedin
+## Adım 6: Değiştirilmiş Belgenizi Kaydedin
 
-Gerekli tüm değişiklikleri yaptıktan sonra, orijinal belgenizi olduğu gibi korumak için değiştirilen belgeyi yeni bir adla kaydedin.
+Gerekli tüm değişiklikleri yaptıktan sonra, orijinal belgenizi korumak için değiştirilen belgeyi yeni bir adla kaydedin.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");
 ```
 
-Açıklama: Bu, belgeyi yeni bir dosya adıyla kaydeder, böylece onu orijinalinden kolayca ayırt edebilirsiniz.
+Açıklama: Bu, belgeyi yeni bir dosya adıyla kaydeder, böylece orijinalinden kolayca ayırt edebilirsiniz.
 
 ## Çözüm
 
-İlgili adımları anladıktan sonra Aspose.Words for .NET kullanarak bir Word belgesindeki içerik kontrollerini değiştirmek çok kolaydır. İster metni güncelliyor, ister açılır menüleri değiştiriyor, ister görselleri değiştiriyor olun, Aspose.Words bu görevler için güçlü bir API sağlar. Bu öğreticiyi takip ederek belgenizin yapılandırılmış içerik kontrollerini etkili bir şekilde yönetebilir ve özelleştirebilir, belgelerinizi daha dinamik ve ihtiyaçlarınıza göre uyarlanmış hale getirebilirsiniz.
+Aspose.Words for .NET kullanarak bir Word belgesindeki içerik denetimlerini değiştirmek, ilgili adımları anladığınızda basittir. Metni güncelliyor, açılır seçimleri değiştiriyor veya görselleri değiştiriyor olun, Aspose.Words bu görevler için sağlam bir API sağlar. Bu öğreticiyi izleyerek belgenizin yapılandırılmış içerik denetimlerini etkili bir şekilde yönetebilir ve özelleştirebilir, belgelerinizi daha dinamik ve ihtiyaçlarınıza göre uyarlanmış hale getirebilirsiniz.
 
 ## SSS
 
-1. Yapılandırılmış Belge Etiketi (SDT) nedir?
+1. Yapılandırılmış Belge Etiketi (SDT) Nedir?
 
-SDT'ler, Word belgelerindeki metin kutuları, açılır listeler veya resimler gibi belge içeriğini yönetmeye ve biçimlendirmeye yardımcı olan öğelerdir.
+SDT'ler, metin kutuları, açılır listeler veya resimler gibi belge içeriğini yönetmeye ve biçimlendirmeye yardımcı olan Word belgelerindeki öğelerdir.
 
-2. Bir SDT'ye nasıl yeni bir açılır öğe ekleyebilirim?
+2. SDT'ye yeni bir açılır liste öğesi nasıl ekleyebilirim?
 
- Yeni bir öğe eklemek için şunu kullanın:`ListItems` özellik ve yeni bir özellik ekleyin`SdtListItem` koleksiyona.
+ Yeni bir öğe eklemek için şunu kullanın:`ListItems` özellik ve yeni bir tane ekle`SdtListItem` koleksiyona.
 
 3. Bir belgeden SDT'leri kaldırmak için Aspose.Words'ü kullanabilir miyim?
 
 Evet, belgenin düğümlerine erişip istediğiniz SDT'yi silerek SDT'leri kaldırabilirsiniz.
 
-4. Diğer öğelerin içine yerleştirilmiş SDT'leri nasıl işleyebilirim?
+4. Diğer öğelerin içine yerleştirilmiş SDT'leri nasıl işlerim?
 
- Kullanın`GetChildNodes` iç içe SDT'lere erişmek için uygun parametrelere sahip yöntem.
+ Kullanın`GetChildNodes` İç içe geçmiş SDT'lere erişmek için uygun parametrelere sahip yöntem.
 
 5. Değiştirmem gereken SDT belgede görünmüyorsa ne yapmalıyım?
 
-SDT'nin gizli olmadığından veya korunmadığından emin olun. Belge ayarlarını kontrol edin ve kodunuzun SDT türünü doğru şekilde hedeflediğinden emin olun.
+SDT'nin gizli veya korumalı olmadığından emin olun. Belge ayarlarını kontrol edin ve kodunuzun SDT türünü doğru şekilde hedeflediğinden emin olun.
 
 
-### Aspose.Words for .NET kullanarak İçerik Kontrollerini Değiştirmek için örnek kaynak kodu 
+### Aspose.Words for .NET kullanarak İçerik Denetimlerini Değiştirmek için örnek kaynak kodu 
 
 ```csharp
-// Belge dizininizin yolu
+// Belge dizininize giden yol
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Structured document tags.docx");
@@ -181,4 +181,4 @@ doc.Save(dataDir + "WorkingWithSdt.ModifyContentControls.docx");
 
 ```
 
-İşte bu! Aspose.Words for .NET'i kullanarak Word belgenizdeki farklı içerik kontrol türlerini başarıyla değiştirdiniz.
+İşte bu kadar! Aspose.Words for .NET kullanarak Word belgenizdeki farklı içerik denetimlerini başarıyla değiştirdiniz.

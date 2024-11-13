@@ -8,29 +8,29 @@ weight: 17
 url: /id/java/document-manipulation/using-bookmarks/
 ---
 
-## Pengantar Menggunakan Bookmark di Aspose.Words untuk Java
+## Pengantar Penggunaan Bookmark di Aspose.Words untuk Java
 
-Bookmark adalah fitur canggih di Aspose.Words untuk Java yang memungkinkan Anda menandai dan memanipulasi bagian tertentu dari dokumen. Dalam panduan langkah demi langkah ini, kita akan mempelajari cara menggunakan bookmark di Aspose.Words untuk Java untuk meningkatkan pemrosesan dokumen Anda. 
+Bookmark merupakan fitur hebat di Aspose.Words untuk Java yang memungkinkan Anda menandai dan memanipulasi bagian tertentu dari sebuah dokumen. Dalam panduan langkah demi langkah ini, kita akan membahas cara menggunakan bookmark di Aspose.Words untuk Java untuk meningkatkan pemrosesan dokumen Anda. 
 
 ## Langkah 1: Membuat Bookmark
 
-Untuk membuat bookmark, ikuti langkah-langkah berikut:
+Untuk membuat penanda buku, ikuti langkah-langkah berikut:
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Mulai penanda
+// Mulai penanda buku
 builder.startBookmark("My Bookmark");
 builder.writeln("Text inside a bookmark.");
 
-//Akhiri penanda
+//Akhiri penanda buku
 builder.endBookmark("My Bookmark");
 ```
 
 ## Langkah 2: Mengakses Bookmark
 
-Anda dapat mengakses bookmark di dokumen menggunakan indeks atau namanya. Begini caranya:
+Anda dapat mengakses bookmark dalam dokumen menggunakan indeks atau namanya. Berikut caranya:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Bookmarks.docx");
@@ -44,7 +44,7 @@ Bookmark bookmark2 = doc.getRange().getBookmarks().get("MyBookmark3");
 
 ## Langkah 3: Memperbarui Data Bookmark
 
-Untuk memperbarui data bookmark, gunakan kode berikut:
+Untuk memperbarui data penanda, gunakan kode berikut:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Bookmarks.docx");
@@ -57,7 +57,7 @@ bookmark.setText("This is new bookmarked text.");
 
 ## Langkah 4: Bekerja dengan Teks yang Ditandai
 
-Anda dapat menyalin teks yang diberi bookmark dan menambahkannya ke dokumen lain. Begini caranya:
+Anda dapat menyalin teks yang ditandai dan menambahkannya ke dokumen lain. Berikut caranya:
 
 ```java
 Document srcDoc = new Document("Your Directory Path" + "Bookmarks.docx");
@@ -68,9 +68,9 @@ appendBookmarkedText(importer, srcBookmark, dstDoc.getLastSection().getBody());
 dstDoc.save("Your Directory Path" + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 ```
 
-## Langkah 5: Tampilkan dan Sembunyikan Bookmark
+## Langkah 5: Menampilkan dan Menyembunyikan Bookmark
 
-Anda dapat menampilkan atau menyembunyikan penanda dalam dokumen. Berikut ini contohnya:
+Anda dapat menampilkan atau menyembunyikan penanda dalam dokumen. Berikut contohnya:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Bookmarks.docx");
@@ -78,9 +78,9 @@ showHideBookmarkedContent(doc, "MyBookmark1", false);
 doc.save("Your Directory Path" + "WorkingWithBookmarks.ShowHideBookmarks.docx");
 ```
 
-## Langkah 6: Menguraikan Bookmark Baris
+## Langkah 6: Melepas Penanda Baris
 
-Menguraikan penanda baris memungkinkan Anda bekerja dengannya secara lebih efektif:
+Melepas penanda baris memungkinkan Anda bekerja dengannya secara lebih efektif:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Table column bookmarks.docx");
@@ -91,26 +91,26 @@ doc.save("Your Directory Path" + "WorkingWithBookmarks.UntangleRowBookmarks.docx
 
 ## Kesimpulan
 
-Menggunakan bookmark di Aspose.Words untuk Java dapat sangat menyederhanakan tugas pemrosesan dokumen. Baik Anda perlu menavigasi, mengekstrak, atau memanipulasi konten, bookmark menyediakan mekanisme canggih untuk melakukannya secara efisien.
+Menggunakan bookmark di Aspose.Words untuk Java dapat sangat menyederhanakan tugas pemrosesan dokumen. Baik Anda perlu menavigasi, mengekstrak, atau memanipulasi konten, bookmark menyediakan mekanisme yang hebat untuk melakukannya secara efisien.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
-### Bagaimana cara membuat bookmark di sel tabel?
+### Bagaimana cara membuat penanda halaman di sel tabel?
 
- Untuk membuat bookmark di sel tabel, gunakan`DocumentBuilder` kelas dan memulai dan mengakhiri bookmark di dalam sel.
+ Untuk membuat penanda di sel tabel, gunakan`DocumentBuilder` kelas dan memulai dan mengakhiri penanda dalam sel.
 
-### Bisakah saya menyalin bookmark ke dokumen lain?
+### Bisakah saya menyalin penanda buku ke dokumen lain?
 
- Ya, Anda dapat menyalin penanda ke dokumen lain menggunakan`NodeImporter` kelas untuk memastikan format dipertahankan.
+ Ya, Anda dapat menyalin penanda ke dokumen lain menggunakan`NodeImporter` kelas untuk memastikan pemformatan dipertahankan.
 
-### Bagaimana cara menghapus baris berdasarkan bookmarknya?
+### Bagaimana cara menghapus baris berdasarkan penandanya?
 
-Anda dapat menghapus baris berdasarkan penandanya dengan terlebih dahulu menemukan baris yang diberi penanda lalu menghapusnya dari dokumen.
+Anda dapat menghapus baris berdasarkan penandanya dengan terlebih dahulu menemukan baris yang ditandai tersebut, lalu menghapusnya dari dokumen.
 
-### Apa saja kasus penggunaan umum untuk bookmark?
+### Apa sajakah penggunaan umum penanda buku?
 
-Bookmark biasanya digunakan untuk membuat daftar isi, mengekstraksi konten tertentu, dan mengotomatiskan proses pembuatan dokumen.
+Bookmark umumnya digunakan untuk membuat daftar isi, mengekstrak konten tertentu, dan mengotomatiskan proses pembuatan dokumen.
 
 ### Di mana saya dapat menemukan informasi lebih lanjut tentang Aspose.Words untuk Java?
 
- Untuk dokumentasi dan unduhan terperinci, kunjungi[Aspose.Words untuk Dokumentasi Java](https://reference.aspose.com/words/java/).
+ Untuk dokumentasi dan unduhan terperinci, kunjungi[Dokumentasi Aspose.Words untuk Java](https://reference.aspose.com/words/java/).

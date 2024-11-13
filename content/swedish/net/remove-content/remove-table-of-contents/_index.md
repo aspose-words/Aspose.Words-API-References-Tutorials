@@ -79,7 +79,7 @@ doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 
 ## Slutsats
 
-Och där har du det! Att ta bort en innehållsförteckning från ett Word-dokument med Aspose.Words för .NET är enkelt när du delar upp det i dessa enkla steg. Detta kraftfulla bibliotek hjälper inte bara till med att ta bort innehållsförteckningar utan kan också hantera en myriad av andra dokumentmanipulationer. Så varsågod och prova!
+Och där har du det! Att ta bort en innehållsförteckning från ett Word-dokument med Aspose.Words för .NET är enkelt när du delar upp det i dessa enkla steg. Detta kraftfulla bibliotek hjälper inte bara till med att ta bort innehållsförteckningar utan kan också hantera en myriad av andra dokumentmanipulationer. Så fortsätt och prova!
 
 ## FAQ's
 

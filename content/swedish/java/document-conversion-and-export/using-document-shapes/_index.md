@@ -10,11 +10,11 @@ url: /sv/java/document-conversion-and-export/using-document-shapes/
 
 ## Introduktion till att använda dokumentformer i Aspose.Words för Java
 
-den här omfattande guiden kommer vi att fördjupa oss i dokumentformernas värld i Aspose.Words för Java. Former är viktiga element när det gäller att skapa visuellt tilltalande och interaktiva dokument. Oavsett om du behöver lägga till bildtexter, knappar, bilder eller vattenstämplar, tillhandahåller Aspose.Words för Java verktygen för att göra det effektivt. Låt oss undersöka hur du använder dessa former steg för steg med exempel på källkod.
+I den här omfattande guiden kommer vi att fördjupa oss i dokumentformernas värld i Aspose.Words för Java. Former är viktiga element när det gäller att skapa visuellt tilltalande och interaktiva dokument. Oavsett om du behöver lägga till bildtexter, knappar, bilder eller vattenstämplar, tillhandahåller Aspose.Words för Java verktygen för att göra det effektivt. Låt oss undersöka hur du använder dessa former steg för steg med exempel på källkod.
 
 ## Komma igång med dokumentformer
 
- Innan vi hoppar in i koden, låt oss ställa in vår miljö. Se till att du har Aspose.Words för Java integrerat i ditt projekt. Om du inte redan har gjort det kan du ladda ner det från Asposes webbplats[Ladda ner Aspose.Words för Java](https://releases.aspose.com/words/java/)
+Innan vi hoppar in i koden, låt oss ställa in vår miljö. Se till att du har Aspose.Words för Java integrerat i ditt projekt. Om du inte redan har gjort det kan du ladda ner det från Asposes webbplats[Ladda ner Aspose.Words för Java](https://releases.aspose.com/words/java/)
 
 ## Lägga till former i dokument
 

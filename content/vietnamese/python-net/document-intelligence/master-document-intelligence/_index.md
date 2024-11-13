@@ -1,24 +1,24 @@
 ---
-title: Làm chủ trí tuệ tài liệu
-linktitle: Làm chủ trí tuệ tài liệu
+title: Làm chủ trí thông minh tài liệu
+linktitle: Làm chủ trí thông minh tài liệu
 second_title: API quản lý tài liệu Python Aspose.Words
-description: Làm chủ tài liệu thông minh với Aspose.Words cho Python. Tự động hóa quy trình làm việc, phân tích dữ liệu và xử lý tài liệu một cách hiệu quả. Bắt đầu ngay bây giờ!
+description: Làm chủ trí thông minh tài liệu với Aspose.Words cho Python. Tự động hóa quy trình làm việc, phân tích dữ liệu và xử lý tài liệu hiệu quả. Bắt đầu ngay!
 type: docs
 weight: 10
 url: /vi/python-net/document-intelligence/master-document-intelligence/
 ---
 
-## Hiểu tài liệu thông minh
+## Hiểu về trí thông minh tài liệu
 
-Thông tin tài liệu đề cập đến quá trình tự động trích xuất thông tin có giá trị từ tài liệu, chẳng hạn như văn bản, siêu dữ liệu, bảng và biểu đồ. Nó liên quan đến việc phân tích dữ liệu phi cấu trúc trong tài liệu và chuyển đổi nó thành các định dạng có cấu trúc và có thể sử dụng được. Thông tin tài liệu giúp các tổ chức hợp lý hóa quy trình xử lý tài liệu của họ, cải thiện việc ra quyết định dựa trên dữ liệu và nâng cao năng suất tổng thể.
+Trí thông minh tài liệu đề cập đến quá trình tự động trích xuất thông tin có giá trị từ các tài liệu, chẳng hạn như văn bản, siêu dữ liệu, bảng và biểu đồ. Nó bao gồm việc phân tích dữ liệu phi cấu trúc trong các tài liệu và chuyển đổi thành các định dạng có cấu trúc và có thể sử dụng được. Trí thông minh tài liệu trao quyền cho các tổ chức để hợp lý hóa quy trình làm việc tài liệu của họ, cải thiện việc ra quyết định dựa trên dữ liệu và nâng cao năng suất chung.
 
-## Tầm quan trọng của trí thông minh tài liệu trong Python
+## Tầm quan trọng của Document Intelligence trong Python
 
-Python đã nổi lên như một ngôn ngữ lập trình mạnh mẽ và linh hoạt, khiến nó trở thành lựa chọn phổ biến cho các nhiệm vụ thu thập thông tin tài liệu. Bộ thư viện và gói phong phú, kết hợp với tính đơn giản và dễ đọc, khiến Python trở thành ngôn ngữ lý tưởng để xử lý các tác vụ xử lý tài liệu phức tạp.
+Python đã nổi lên như một ngôn ngữ lập trình mạnh mẽ và linh hoạt, khiến nó trở thành lựa chọn phổ biến cho các tác vụ trí tuệ tài liệu. Bộ thư viện và gói phong phú của nó, kết hợp với tính đơn giản và dễ đọc, khiến Python trở thành ngôn ngữ lý tưởng để xử lý các tác vụ xử lý tài liệu phức tạp.
 
 ## Bắt đầu với Aspose.Words cho Python
 
-Aspose.Words là thư viện Python hàng đầu cung cấp nhiều khả năng xử lý tài liệu. Để bắt đầu, bạn cần cài đặt thư viện và thiết lập môi trường Python của mình. Dưới đây là mã nguồn để cài đặt Aspose.Words:
+Aspose.Words là một thư viện Python hàng đầu cung cấp nhiều khả năng xử lý tài liệu. Để bắt đầu, bạn cần cài đặt thư viện và thiết lập môi trường Python của mình. Dưới đây là mã nguồn để cài đặt Aspose.Words:
 
 ```python
 # Install Aspose.Words for Python using pip
@@ -29,7 +29,7 @@ pip install aspose-words
 
 ### Tạo và chỉnh sửa tài liệu Word
 
-Với Aspose.Words for Python, bạn có thể dễ dàng tạo tài liệu Word mới hoặc chỉnh sửa tài liệu hiện có theo chương trình. Điều này cho phép bạn tạo các tài liệu động và được cá nhân hóa cho nhiều mục đích khác nhau. Hãy xem ví dụ về cách tạo một tài liệu Word mới:
+Với Aspose.Words for Python, bạn có thể dễ dàng tạo tài liệu Word mới hoặc chỉnh sửa tài liệu hiện có theo chương trình. Điều này cho phép bạn tạo tài liệu động và được cá nhân hóa cho nhiều mục đích khác nhau. Hãy xem ví dụ về cách tạo tài liệu Word mới:
 
 ```python
 import aspose.words as aw
@@ -48,7 +48,7 @@ doc.save("output.docx")
 
 ### Trích xuất văn bản và siêu dữ liệu
 
-Thư viện cho phép bạn trích xuất văn bản và siêu dữ liệu từ tài liệu Word một cách hiệu quả. Điều này đặc biệt hữu ích cho việc khai thác dữ liệu và phân tích nội dung. Dưới đây là ví dụ về cách trích xuất văn bản từ tài liệu Word:
+Thư viện cho phép bạn trích xuất văn bản và siêu dữ liệu từ tài liệu Word một cách hiệu quả. Điều này đặc biệt hữu ích cho việc khai thác dữ liệu và phân tích nội dung. Dưới đây là một ví dụ về cách trích xuất văn bản từ tài liệu Word:
 
 ```python
 import aspose.words as aw
@@ -64,11 +64,11 @@ for para in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
 print(text)
 ```
 
-## Thông tin tài liệu nâng cao
+## Trí thông minh tài liệu nâng cao
 
-### Làm việc với bảng và biểu đồ
+### Làm việc với Bảng và Biểu đồ
 
-Aspose.Words cho phép bạn thao tác với các bảng và biểu đồ trong tài liệu Word của mình. Bạn có thể tự động tạo và cập nhật các bảng và biểu đồ dựa trên dữ liệu. Dưới đây là ví dụ về cách tạo bảng trong tài liệu Word:
+Aspose.Words cho phép bạn thao tác các bảng và biểu đồ trong tài liệu Word của mình. Bạn có thể tạo và cập nhật các bảng và biểu đồ một cách động dựa trên dữ liệu. Dưới đây là ví dụ về cách tạo bảng trong tài liệu Word:
 
 ```python
 import aspose.words as aw
@@ -94,7 +94,7 @@ doc.save("output.docx")
 
 ### Thêm hình ảnh và hình dạng
 
-Kết hợp hình ảnh và hình dạng vào tài liệu của bạn một cách dễ dàng. Tính năng này tỏ ra có giá trị trong việc tạo ra các báo cáo và tài liệu hấp dẫn trực quan. Dưới đây là ví dụ về cách thêm hình ảnh vào tài liệu Word:
+Kết hợp hình ảnh và hình dạng vào tài liệu của bạn một cách dễ dàng. Tính năng này chứng tỏ có giá trị trong việc tạo ra các báo cáo và tài liệu hấp dẫn về mặt hình ảnh. Dưới đây là ví dụ về cách thêm hình ảnh vào tài liệu Word:
 
 ```python
 import aspose.words as aw
@@ -113,9 +113,9 @@ builder.insert_image("image.jpg")
 doc.save("output.docx")
 ```
 
-### Triển khai tự động hóa tài liệu
+### Triển khai Tự động hóa Tài liệu
 
-Tự động hóa quy trình tạo tài liệu bằng Aspose.Words. Điều này làm giảm sự can thiệp thủ công, giảm thiểu sai sót và tăng hiệu quả. Dưới đây là ví dụ về cách tự động tạo tài liệu bằng Aspose.Words:
+Tự động hóa quy trình tạo tài liệu bằng Aspose.Words. Điều này làm giảm sự can thiệp thủ công, giảm thiểu lỗi và tăng hiệu quả. Dưới đây là ví dụ về cách tự động hóa việc tạo tài liệu bằng Aspose.Words:
 
 ```python
 import aspose.words as aw
@@ -136,7 +136,7 @@ for para in section.body.paragraphs:
 doc.save("output.docx")
 ```
 
-## Tận dụng thư viện Python để thu thập thông tin tài liệu
+## Tận dụng các thư viện Python cho trí thông minh tài liệu
 
 ### Kỹ thuật NLP để phân tích tài liệu
 
@@ -166,7 +166,7 @@ doc_nlp = nlp(text)
 
 ### Học máy để phân loại tài liệu
 
-Sử dụng thuật toán học máy để phân loại tài liệu dựa trên nội dung của chúng, giúp tổ chức và phân loại các kho tài liệu lớn.
+Sử dụng thuật toán học máy để phân loại tài liệu dựa trên nội dung, giúp sắp xếp và phân loại các kho lưu trữ tài liệu lớn.
 
 ```python
 # Use a Python machine learning library (e.g., scikit-learn) in combination with Aspose.Words for document classification
@@ -215,11 +215,11 @@ predicted_label = clf.predict(new_X)[0]
 print(predicted_label)
 ```
 
-## Thông tin tài liệu trong các ứng dụng trong thế giới thực
+## Trí thông minh tài liệu trong các ứng dụng thực tế
 
 ### Tự động hóa quy trình làm việc của tài liệu
 
-Khám phá cách các tổ chức sử dụng thông tin tài liệu để tự động hóa các tác vụ lặp đi lặp lại, chẳng hạn như xử lý hóa đơn, tạo hợp đồng và tạo báo cáo.
+Khám phá cách các tổ chức sử dụng trí thông minh tài liệu để tự động hóa các tác vụ lặp đi lặp lại, chẳng hạn như xử lý hóa đơn, tạo hợp đồng và tạo báo cáo.
 
 ```python
 # Implementing document automation using Aspose.Words for Python
@@ -244,7 +244,7 @@ doc.save("invoice_output.docx")
 
 ### Cải thiện việc tìm kiếm và truy xuất tài liệu
 
-Nâng cao khả năng tìm kiếm trong tài liệu, giúp người dùng tìm thấy thông tin liên quan một cách nhanh chóng và hiệu quả.
+Nâng cao khả năng tìm kiếm trong tài liệu, cho phép người dùng tìm thông tin có liên quan một cách nhanh chóng và hiệu quả.
 
 ```python
 # Searching for specific text in a Word document using Aspose.Words for Python
@@ -269,36 +269,36 @@ else:
 
 ## Phần kết luận
 
-Nắm vững trí thông minh tài liệu bằng Python và Aspose.Words sẽ mở ra một thế giới khả năng. Từ việc xử lý tài liệu một cách hiệu quả đến tự động hóa quy trình làm việc, sự kết hợp giữa Python và Aspose.Words giúp các doanh nghiệp có được những hiểu biết sâu sắc có giá trị từ các tài liệu giàu dữ liệu của họ.
+Làm chủ trí thông minh tài liệu với Python và Aspose.Words mở ra một thế giới khả năng. Từ việc xử lý tài liệu hiệu quả đến tự động hóa quy trình làm việc, sự kết hợp giữa Python và Aspose.Words giúp các doanh nghiệp có được những hiểu biết có giá trị từ các tài liệu giàu dữ liệu của họ.
 
 ## Câu hỏi thường gặp
 
-### Thông tin tài liệu là gì?
-Thông tin tài liệu đề cập đến quá trình tự động trích xuất thông tin có giá trị từ tài liệu, chẳng hạn như văn bản, siêu dữ liệu, bảng và biểu đồ. Nó liên quan đến việc phân tích dữ liệu phi cấu trúc trong tài liệu và chuyển đổi nó thành các định dạng có cấu trúc và có thể sử dụng được.
+### Document Intelligence là gì?
+Trí tuệ tài liệu đề cập đến quá trình tự động trích xuất thông tin có giá trị từ tài liệu, chẳng hạn như văn bản, siêu dữ liệu, bảng và biểu đồ. Nó bao gồm việc phân tích dữ liệu phi cấu trúc trong tài liệu và chuyển đổi thành các định dạng có cấu trúc và có thể sử dụng được.
 
-### Tại sao Thông tin Tài liệu lại quan trọng?
-Thông tin tài liệu rất cần thiết vì nó cho phép các tổ chức hợp lý hóa quy trình xử lý tài liệu của họ, cải thiện việc ra quyết định dựa trên dữ liệu và nâng cao năng suất tổng thể. Nó cho phép khai thác hiệu quả những hiểu biết sâu sắc từ các tài liệu giàu dữ liệu, dẫn đến kết quả kinh doanh tốt hơn.
+### Tại sao Document Intelligence lại quan trọng?
+Document Intelligence rất cần thiết vì nó cho phép các tổ chức hợp lý hóa quy trình làm việc với tài liệu, cải thiện việc ra quyết định dựa trên dữ liệu và nâng cao năng suất chung. Nó cho phép trích xuất thông tin chi tiết hiệu quả từ các tài liệu giàu dữ liệu, dẫn đến kết quả kinh doanh tốt hơn.
 
-### Aspose.Words trợ giúp như thế nào về Tài liệu thông minh với Python?
-Aspose.Words là một thư viện Python mạnh mẽ cung cấp nhiều khả năng xử lý tài liệu. Nó cho phép người dùng tạo, chỉnh sửa, trích xuất và thao tác với tài liệu Word theo chương trình, khiến nó trở thành một công cụ có giá trị cho các tác vụ thu thập thông tin tài liệu.
+### Aspose.Words hỗ trợ Document Intelligence bằng Python như thế nào?
+Aspose.Words là một thư viện Python mạnh mẽ cung cấp nhiều khả năng xử lý tài liệu. Nó cho phép người dùng tạo, chỉnh sửa, trích xuất và thao tác các tài liệu Word theo chương trình, khiến nó trở thành một công cụ có giá trị cho các tác vụ trí tuệ tài liệu.
 
-### Aspose.Words có thể xử lý các định dạng tài liệu khác ngoài tài liệu Word (DOCX) không?
-Có, mặc dù Aspose.Words chủ yếu tập trung vào tài liệu Word (DOCX), nhưng nó cũng có thể xử lý các định dạng khác như RTF (Rich Text Format) và ODT (OpenDocument Text).
+### Aspose.Words có thể xử lý các định dạng tài liệu khác ngoài Word (DOCX) không?
+Có, mặc dù Aspose.Words chủ yếu tập trung vào các tài liệu Word (DOCX), nhưng nó cũng có thể xử lý các định dạng khác như RTF (Định dạng văn bản phong phú) và ODT (Văn bản OpenDocument).
 
 ### Aspose.Words có tương thích với phiên bản Python 3.x không?
-Có, Aspose.Words hoàn toàn tương thích với các phiên bản Python 3.x, đảm bảo người dùng có thể khai thác các tính năng và cải tiến mới nhất do Python cung cấp.
+Có, Aspose.Words hoàn toàn tương thích với phiên bản Python 3.x, đảm bảo người dùng có thể khai thác các tính năng và cải tiến mới nhất do Python cung cấp.
 
-### Aspose cập nhật thư viện của nó thường xuyên như thế nào?
-Aspose thường xuyên cập nhật thư viện của mình để thêm các tính năng mới, cải thiện hiệu suất và khắc phục mọi sự cố được báo cáo. Người dùng có thể cập nhật những cải tiến mới nhất bằng cách kiểm tra các bản cập nhật từ trang web Aspose.
+### Aspose cập nhật thư viện thường xuyên như thế nào?
+Aspose thường xuyên cập nhật thư viện của mình để thêm các tính năng mới, cải thiện hiệu suất và khắc phục mọi sự cố được báo cáo. Người dùng có thể cập nhật các cải tiến mới nhất bằng cách kiểm tra các bản cập nhật từ trang web Aspose.
 
-### Aspose.Words có thể được sử dụng để dịch tài liệu không?
-Mặc dù Aspose.Words chủ yếu tập trung vào các tác vụ xử lý tài liệu nhưng nó có thể được tích hợp với các API hoặc thư viện dịch khác để đạt được chức năng dịch tài liệu.
+### Có thể sử dụng Aspose.Words để dịch tài liệu không?
+Trong khi Aspose.Words chủ yếu tập trung vào các tác vụ xử lý tài liệu, nó có thể được tích hợp với các API hoặc thư viện dịch thuật khác để đạt được chức năng dịch tài liệu.
 
-### Một số khả năng thông tin tài liệu nâng cao được Aspose.Words cung cấp cho Python là gì?
+### Một số khả năng thông minh tài liệu nâng cao được Aspose.Words cung cấp cho Python là gì?
 Aspose.Words cho phép người dùng làm việc với bảng, biểu đồ, hình ảnh và hình dạng trong tài liệu Word. Nó cũng hỗ trợ tự động hóa tài liệu, giúp tạo tài liệu động và được cá nhân hóa dễ dàng hơn.
 
-### Làm cách nào để kết hợp các thư viện Python NLP với Aspose.Words để phân tích tài liệu?
-Người dùng có thể tận dụng các thư viện Python NLP, chẳng hạn như spaCy, kết hợp với Aspose.Words để thực hiện phân tích tài liệu chuyên sâu, phân tích tình cảm và nhận dạng thực thể.
+### Làm thế nào để kết hợp thư viện NLP Python với Aspose.Words để phân tích tài liệu?
+Người dùng có thể tận dụng các thư viện NLP của Python, chẳng hạn như spaCy, kết hợp với Aspose.Words để thực hiện phân tích tài liệu chuyên sâu, phân tích tình cảm và nhận dạng thực thể.
 
-### Thuật toán học máy có thể được sử dụng với Aspose.Words để phân loại tài liệu không?
-Có, người dùng có thể sử dụng các thuật toán học máy, chẳng hạn như các thuật toán do scikit-learn cung cấp, kết hợp với Aspose.Words để phân loại tài liệu dựa trên nội dung của chúng, giúp tổ chức và phân loại các kho tài liệu lớn.
+### Có thể sử dụng thuật toán học máy với Aspose.Words để phân loại tài liệu không?
+Có, người dùng có thể sử dụng các thuật toán học máy, chẳng hạn như thuật toán do scikit-learn cung cấp, kết hợp với Aspose.Words để phân loại tài liệu dựa trên nội dung của chúng, giúp tổ chức và phân loại các kho lưu trữ tài liệu lớn.

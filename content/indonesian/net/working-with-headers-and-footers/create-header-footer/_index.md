@@ -1,15 +1,15 @@
 ---
-title: Buat Header Footer
-linktitle: Buat Header Footer
+title: Buat Header dan Footer
+linktitle: Buat Header dan Footer
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menambahkan dan mengkustomisasi header dan footer di dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah ini memastikan pemformatan dokumen profesional.
+description: Pelajari cara menambahkan dan menyesuaikan header dan footer dalam dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah ini memastikan pemformatan dokumen yang profesional.
 type: docs
 weight: 10
 url: /id/net/working-with-headers-and-footers/create-header-footer/
 ---
 ## Perkenalan
 
-Menambahkan header dan footer ke dokumen Anda dapat meningkatkan profesionalisme dan keterbacaannya. Dengan Aspose.Words untuk .NET, Anda dapat dengan mudah membuat dan mengkustomisasi header dan footer untuk dokumen Word Anda. Dalam tutorial ini, kami akan memandu Anda melalui proses langkah demi langkah, memastikan Anda dapat mengimplementasikan fitur-fitur ini dengan lancar.
+Menambahkan header dan footer ke dokumen Anda dapat meningkatkan profesionalisme dan keterbacaannya. Dengan Aspose.Words untuk .NET, Anda dapat dengan mudah membuat dan menyesuaikan header dan footer untuk dokumen Word Anda. Dalam tutorial ini, kami akan memandu Anda melalui proses ini langkah demi langkah, memastikan Anda dapat menerapkan fitur-fitur ini dengan lancar.
 
 ## Prasyarat
 
@@ -17,10 +17,10 @@ Sebelum memulai, pastikan Anda memiliki hal berikut:
 
 -  Aspose.Words untuk .NET: Unduh dan instal dari[tautan unduhan](https://releases.aspose.com/words/net/).
 - Lingkungan Pengembangan: Seperti Visual Studio, untuk menulis dan menjalankan kode Anda.
-- Pengetahuan Dasar C#: Pemahaman C# dan .NET framework.
-- Contoh Dokumen: Contoh dokumen untuk menerapkan header dan footer, atau membuat yang baru seperti yang ditunjukkan dalam tutorial.
+- Pengetahuan Dasar C#: Pemahaman tentang C# dan kerangka kerja .NET.
+- Dokumen Contoh: Dokumen contoh untuk menerapkan header dan footer, atau membuat yang baru seperti yang ditunjukkan dalam tutorial.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
 Pertama, Anda perlu mengimpor namespace yang diperlukan untuk mengakses kelas dan metode Aspose.Words.
 
@@ -41,7 +41,7 @@ string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 
 ## Langkah 2: Buat Dokumen Baru
 
- Buat dokumen baru dan a`DocumentBuilder`untuk memudahkan penambahan konten.
+ Buat dokumen baru dan`DocumentBuilder`untuk memfasilitasi penambahan konten.
 
 ```csharp
 Document doc = new Document();
@@ -121,7 +121,7 @@ builder.EndTable();
 
 ## Langkah 7: Tambahkan Konten dan Hentian Halaman
 
-Pindah ke akhir dokumen, tambahkan hentian halaman, dan buat bagian baru dengan pengaturan halaman berbeda.
+Pindah ke akhir dokumen, tambahkan jeda halaman, dan buat bagian baru dengan pengaturan halaman yang berbeda.
 
 ```csharp
 builder.MoveToDocumentEnd();
@@ -165,13 +165,13 @@ private static void CopyHeadersFootersFromPreviousSection(Section section)
 
 ## Kesimpulan
 
-Dengan mengikuti langkah-langkah ini, Anda dapat secara efektif menambahkan dan mengkustomisasi header dan footer di dokumen Word Anda menggunakan Aspose.Words untuk .NET. Hal ini meningkatkan tampilan dan profesionalisme dokumen Anda, membuatnya lebih mudah dibaca dan menarik.
+Dengan mengikuti langkah-langkah ini, Anda dapat menambahkan dan menyesuaikan header dan footer secara efektif di dokumen Word Anda menggunakan Aspose.Words for .NET. Ini akan meningkatkan tampilan dan profesionalisme dokumen Anda, membuatnya lebih mudah dibaca dan menarik.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Apa itu Aspose.Words untuk .NET?
 
-Aspose.Words untuk .NET adalah pustaka yang memungkinkan pengembang membuat, mengedit, dan mengonversi dokumen Word secara terprogram dalam aplikasi .NET.
+Aspose.Words untuk .NET adalah pustaka yang memungkinkan pengembang untuk membuat, mengedit, dan mengonversi dokumen Word secara terprogram dalam aplikasi .NET.
 
 ### Bisakah saya menambahkan gambar ke header atau footer?
 
@@ -179,12 +179,12 @@ Aspose.Words untuk .NET adalah pustaka yang memungkinkan pengembang membuat, men
 
 ### Bagaimana cara mengatur header dan footer yang berbeda untuk halaman pertama?
 
- Anda dapat mengatur header dan footer yang berbeda untuk halaman pertama dengan menggunakan`DifferentFirstPageHeaderFooter` properti dari`PageSetup` kelas.
+ Anda dapat mengatur header dan footer yang berbeda untuk halaman pertama dengan menggunakan`DifferentFirstPageHeaderFooter` milik`PageSetup` kelas.
 
 ### Di mana saya dapat menemukan dokumentasi lebih lanjut tentang Aspose.Words?
 
- Anda dapat menemukan dokumentasi lengkap di[Halaman dokumentasi Aspose.Words API](https://reference.aspose.com/words/net/).
+ Anda dapat menemukan dokumentasi lengkap di[Halaman dokumentasi API Aspose.Words](https://reference.aspose.com/words/net/).
 
 ### Apakah ada dukungan yang tersedia untuk Aspose.Words?
 
- Ya, Aspose menawarkan dukungan melalui mereka[forum dukungan](https://forum.aspose.com/c/words/8).
+ Ya, Aspose menawarkan dukungan melalui[forum dukungan](https://forum.aspose.com/c/words/8).

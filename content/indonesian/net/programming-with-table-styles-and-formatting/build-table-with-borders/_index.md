@@ -1,28 +1,28 @@
 ---
-title: Bangun Tabel Dengan Batas
-linktitle: Bangun Tabel Dengan Batas
+title: Membuat Tabel Dengan Batas
+linktitle: Membuat Tabel Dengan Batas
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara membuat dan mengkustomisasi batas tabel di dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk petunjuk rinci.
+description: Pelajari cara membuat dan menyesuaikan batas tabel dalam dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk petunjuk terperinci.
 type: docs
 weight: 10
 url: /id/net/programming-with-table-styles-and-formatting/build-table-with-borders/
 ---
 ## Perkenalan
 
-Membuat tabel dengan batas yang disesuaikan dalam dokumen Word dapat membuat konten Anda menarik secara visual dan terorganisir dengan baik. Dengan Aspose.Words untuk .NET, Anda dapat dengan mudah membuat dan memformat tabel dengan kontrol presisi atas batas, gaya, dan warna. Tutorial ini akan memandu Anda melalui proses langkah demi langkah, memastikan Anda memiliki pemahaman mendetail tentang setiap bagian kode.
+Membuat tabel dengan batas yang disesuaikan dalam dokumen Word dapat membuat konten Anda menarik secara visual dan terorganisasi dengan baik. Dengan Aspose.Words untuk .NET, Anda dapat dengan mudah membuat dan memformat tabel dengan kontrol yang tepat atas batas, gaya, dan warna. Tutorial ini akan memandu Anda melalui proses ini langkah demi langkah, memastikan Anda memiliki pemahaman terperinci tentang setiap bagian kode.
 
 ## Prasyarat
 
-Sebelum masuk ke tutorial, pastikan Anda memiliki prasyarat berikut:
+Sebelum memulai tutorial, pastikan Anda memiliki prasyarat berikut:
 
-1.  Aspose.Words untuk .NET Library: Unduh dan instal[Aspose.Kata-kata untuk .NET](https://releases.aspose.com/words/net/) perpustakaan.
-2. Lingkungan Pengembangan: Pastikan Anda memiliki lingkungan pengembangan seperti Visual Studio yang diatur di mesin Anda.
+1.  Aspose.Words untuk Pustaka .NET: Unduh dan instal[Aspose.Words untuk .NET](https://releases.aspose.com/words/net/) perpustakaan.
+2. Lingkungan Pengembangan: Pastikan Anda memiliki lingkungan pengembangan seperti Visual Studio yang disiapkan di komputer Anda.
 3. Pengetahuan Dasar C#: Keakraban dengan bahasa pemrograman C# akan sangat membantu.
 4. Direktori Dokumen: Direktori tempat dokumen masukan dan keluaran Anda akan disimpan.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Untuk menggunakan Aspose.Words untuk .NET di proyek Anda, Anda perlu mengimpor namespace yang diperlukan. Tambahkan baris berikut ke bagian atas file C# Anda:
+Untuk menggunakan Aspose.Words for .NET dalam proyek Anda, Anda perlu mengimpor namespace yang diperlukan. Tambahkan baris berikut di bagian atas file C# Anda:
 
 ```csharp
 using System;
@@ -33,7 +33,7 @@ using Aspose.Words.Tables;
 
 ## Langkah 1: Muat Dokumen
 
-Langkah pertama adalah memuat dokumen Word Anda yang berisi tabel yang ingin Anda format. Inilah cara Anda melakukannya:
+Langkah pertama adalah memuat dokumen Word yang berisi tabel yang ingin Anda format. Berikut cara melakukannya:
 
 ```csharp
 // Jalur ke direktori dokumen Anda
@@ -47,36 +47,36 @@ Document doc = new Document(dataDir + "Tables.docx");
 
 ## Langkah 2: Akses Tabel
 
- Selanjutnya, Anda perlu mengakses tabel di dalam dokumen. Ini dapat dilakukan dengan menggunakan`GetChild` metode untuk mengambil node tabel:
+ Selanjutnya, Anda perlu mengakses tabel di dalam dokumen. Ini dapat dilakukan dengan menggunakan`GetChild` metode untuk mengambil simpul tabel:
 
 ```csharp
 // Akses tabel pertama dalam dokumen
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
- Di sini, kita mengakses tabel pertama dalam dokumen. Itu`NodeType.Table` memastikan kita mengambil node tabel, dan indeks`0` menunjukkan kita menginginkan tabel pertama.
+ Di sini, kita mengakses tabel pertama dalam dokumen.`NodeType.Table` memastikan kita mengambil simpul tabel, dan indeks`0` menunjukkan kita menginginkan tabel pertama.
 
 ## Langkah 3: Hapus Batas yang Ada
 
-Sebelum menetapkan perbatasan baru, ada baiknya untuk membersihkan perbatasan yang sudah ada. Ini memastikan bahwa pemformatan baru Anda diterapkan dengan bersih:
+Sebelum menetapkan batas baru, sebaiknya bersihkan batas yang ada. Ini memastikan bahwa format baru Anda diterapkan dengan rapi:
 
 ```csharp
 // Hapus semua batas yang ada dari tabel
 table.ClearBorders();
 ```
 
-Metode ini menghapus semua batas yang ada dari tabel, memberi Anda landasan yang bersih untuk dikerjakan.
+Metode ini menghapus semua batas yang ada dari tabel, memberikan Anda dasar yang bersih untuk bekerja.
 
 ## Langkah 4: Tetapkan Batas Baru
 
-Sekarang, Anda dapat mengatur batas baru di sekitar dan di dalam tabel. Anda dapat menyesuaikan gaya, lebar, dan warna batas sesuai kebutuhan:
+Sekarang, Anda dapat mengatur batas baru di sekeliling dan di dalam tabel. Anda dapat menyesuaikan gaya, lebar, dan warna batas sesuai kebutuhan:
 
 ```csharp
-// Tetapkan batas hijau di sekeliling dan di dalam tabel
+// Tetapkan batas hijau di sekitar dan di dalam tabel
 table.SetBorders(LineStyle.Single, 1.5, Color.Green);
 ```
 
-Pada langkah ini, kita mengatur batas menjadi gaya garis tunggal, dengan lebar 1,5 poin, dan warna hijau.
+Pada langkah ini, kita menetapkan batas ke gaya garis tunggal, dengan lebar 1,5 poin, dan warna hijau.
 
 ## Langkah 5: Simpan Dokumen
 
@@ -91,21 +91,21 @@ Baris ini menyimpan dokumen dengan nama baru, yang menunjukkan bahwa batas tabel
 
 ## Kesimpulan
 
-Dengan mengikuti langkah-langkah ini, Anda dapat dengan mudah membuat dan mengkustomisasi batas tabel di dokumen Word menggunakan Aspose.Words untuk .NET. Pustaka canggih ini menawarkan fitur ekstensif untuk manipulasi dokumen, menjadikannya pilihan tepat bagi pengembang yang bekerja dengan dokumen Word secara terprogram.
+Dengan mengikuti langkah-langkah ini, Anda dapat dengan mudah membuat dan menyesuaikan batas tabel dalam dokumen Word menggunakan Aspose.Words for .NET. Pustaka canggih ini menawarkan fitur yang luas untuk manipulasi dokumen, menjadikannya pilihan yang tepat bagi pengembang yang bekerja dengan dokumen Word secara terprogram.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
-### Bisakah saya menerapkan gaya batas yang berbeda ke bagian tabel yang berbeda?
+### Dapatkah saya menerapkan gaya batas yang berbeda pada bagian tabel yang berbeda?
 Ya, Aspose.Words untuk .NET memungkinkan Anda menerapkan gaya batas yang berbeda ke berbagai bagian tabel, seperti sel, baris, atau kolom individual.
 
-### Apakah mungkin menetapkan batas hanya untuk sel tertentu?
- Sangat. Anda dapat menargetkan sel tertentu dan menetapkan batasnya satu per satu menggunakan`CellFormat` milik.
+### Bisakah menetapkan batas untuk sel tertentu saja?
+ Tentu saja. Anda dapat menargetkan sel tertentu dan mengatur batas untuk sel tersebut secara individual menggunakan`CellFormat` milik.
 
-### Bagaimana cara menghapus batas tabel?
+### Bagaimana cara menghapus batas dari tabel?
  Anda dapat menghapus batas dengan menggunakan`ClearBorders` metode, yang menghapus semua batas yang ada dari tabel.
 
-### Bisakah saya menggunakan warna khusus untuk pembatas?
- Ya, Anda dapat menggunakan warna apa pun untuk batasnya dengan menentukan`Color` milik. Warna khusus dapat diatur menggunakan`Color.FromArgb` metode jika Anda membutuhkan warna tertentu.
+### Bisakah saya menggunakan warna khusus untuk batasnya?
+ Ya, Anda dapat menggunakan warna apa pun untuk batas dengan menentukan`Color` properti. Warna kustom dapat diatur menggunakan`Color.FromArgb` metode jika Anda membutuhkan warna tertentu.
 
-### Apakah perbatasan yang ada perlu dibersihkan sebelum menetapkan perbatasan baru?
-Meskipun tidak wajib, menghapus batas yang ada sebelum menetapkan yang baru akan memastikan bahwa pengaturan batas baru Anda diterapkan tanpa gangguan apa pun dari gaya sebelumnya.
+### Apakah perlu membersihkan batas-batas yang ada sebelum menetapkan batas-batas yang baru?
+Meskipun tidak wajib, menghapus batas yang ada sebelum menetapkan yang baru memastikan bahwa pengaturan batas baru Anda diterapkan tanpa gangguan dari gaya sebelumnya.

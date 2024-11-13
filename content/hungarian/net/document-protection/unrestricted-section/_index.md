@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- A`Document` osztály inicializál egy új dokumentumot, és a`DocumentBuilder` segít abban, hogy tartalmat egyszerűen hozzáadhassunk dokumentumunkhoz.
+A`Document` osztály inicializál egy új dokumentumot, és a`DocumentBuilder` segít abban, hogy tartalmat egyszerűen hozzáadhassunk dokumentumunkhoz.
 
 ## 2. lépés: Szekciók beszúrása
 
@@ -76,7 +76,7 @@ builder.InsertBreak(BreakType.SectionBreakContinuous);
 builder.Writeln("Section 2. Protected.");
 ```
 
- A`InsertBreak` metódus folyamatos szakasztörést szúr be, lehetővé téve számunkra, hogy minden szakaszhoz különböző beállításokat állítsunk be.
+A`InsertBreak` metódus folyamatos szakasztörést szúr be, lehetővé téve számunkra, hogy minden szakaszhoz különböző beállításokat állítsunk be.
 
 ## 3. lépés: Védje meg a dokumentumot
 

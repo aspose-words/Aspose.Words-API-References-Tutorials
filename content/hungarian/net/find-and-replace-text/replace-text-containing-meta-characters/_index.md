@@ -44,7 +44,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
  Ez a kódrészlet inicializálja a dokumentumot, és beállít egy építőt. A`dataDir` a dokumentum alapja.
 
-## 2. lépés: A betűtípus testreszabása és tartalom hozzáadása
+## 2. lépés: A betűtípus testreszabása és a tartalom hozzáadása
 
 Ezután adjunk hozzá szöveget a dokumentumunkhoz. Tekintsd ezt úgy, mintha megírnád a darabod forgatókönyvét.
 
@@ -73,7 +73,7 @@ findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
 
 ## 4. lépés: Cserélje ki a szöveget metakarakterekre
 
-Ez a lépés az, ahol megtörténik a varázslat! Cseréljük a "szakasz" szót, majd egy bekezdéstörést, és adjunk hozzá egy aláhúzást.
+Ez a lépés az, ahol a varázslat megtörténik! Cseréljük a "szakasz" szót, majd egy bekezdéstörést, és adjunk hozzá egy aláhúzást.
 
 ```csharp
 // Kétszer minden bekezdéstörést a "szakasz" szó után, adjon hozzá egyfajta aláhúzást, és tegye középre.
@@ -119,7 +119,7 @@ Teljesen! Szükség szerint módosíthatja a helyettesítő karakterláncot, hog
  Többet is láncolhatsz`Replace` hívások különböző címkék vagy minták kezelésére a dokumentumban.
 
 ### Lehetséges más betűtípusok és formázások használata?
-Igen, testreszabhatja a betűtípusokat és egyéb formázási beállításokat a`DocumentBuilder`és`FindReplaceOptions` tárgyakat.
+Igen, testreszabhatja a betűtípusokat és egyéb formázási beállításokat a`DocumentBuilder` és`FindReplaceOptions` tárgyakat.
 
 ### Hol találhatok további információt az Aspose.Words for .NET-ről?
  Meglátogathatja a[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/) további részletekért és példákért.

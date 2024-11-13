@@ -24,7 +24,7 @@ url: /ja/python-net/document-structure-and-content-manipulation/document-textbox
 
 ## Aspose.Words for Python のインストール
 
-まず、Aspose.Words for Python パッケージをインストールする必要があります。これは、Python パッケージ インストーラーである pip を使用して、次のコマンドで実行できます。
+まず、Aspose.Words for Python パッケージをインストールする必要があります。これは、Python パッケージ インストーラーの pip を使用して、次のコマンドで実行できます。
 
 ```python
 pip install aspose-words
@@ -102,7 +102,7 @@ doc.save("output.docx")
 
 ### テキストボックスを回転できますか?
 
-はい、テキストボックスを回転させるには、`rotation`プロパティを希望の角度に設定します。
+はい、テキストボックスを回転するには、`rotation`プロパティを希望の角度に設定します。
 
 ### テキストボックスに境界線を追加するにはどうすればよいですか?
 

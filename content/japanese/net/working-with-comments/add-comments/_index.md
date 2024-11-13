@@ -15,7 +15,7 @@ Aspose.Words for .NET を使用して Word 文書にコメントを追加する�
 
 始める前に、次の前提条件が満たされていることを確認してください。
 
-1. Aspose.Words for .NET: Aspose.Words for .NET がインストールされている必要があります。ここからダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Aspose.Words for .NET がインストールされている必要があります。ダウンロードはこちらから行えます。[ここ](https://releases.aspose.com/words/net/).
 2. .NET Framework: マシンに .NET Framework がインストールされていることを確認してください。
 3. 開発環境: コードを記述および実行するための Visual Studio などの IDE。
 4. C# の基礎知識: C# プログラミング言語に精通していると、例を理解するのに役立ちます。
@@ -64,21 +64,20 @@ builder.Write("Some text is added.");
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
 ```
 
-## ステップ5: 段落にコメントを添付する
+## ステップ5: コメントにコンテンツを追加する
+
+最後に、コメントにコンテンツを追加します。コメント テキストを保持するための新しい段落と実行を作成し、これらをコメントに追加します。
+
+```csharp
+comment.SetText("Comment text.");
+```
+
+## ステップ6: 段落にコメントを添付する
 
 テキストを追加した現在の段落にコメントを添付する必要があります。これは、段落にコメントを追加することによって行われます。
 
 ```csharp
 builder.CurrentParagraph.AppendChild(comment);
-```
-
-## ステップ6: コメントにコンテンツを追加する
-
-最後に、コメントにコンテンツを追加します。コメント テキストを保持するための新しい段落と実行を作成し、これらをコメントに追加します。
-
-```csharp
-comment.Paragraphs.Add(new Paragraph(doc));
-comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
 ```
 
 ## ステップ7: ドキュメントを保存する

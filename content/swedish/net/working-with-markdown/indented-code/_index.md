@@ -48,7 +48,7 @@ Låt oss nu gå igenom processen att lägga till och utforma ett indraget kodblo
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
- Här skapar vi ett nytt dokument och använder`DocumentBuilder` för att börja lägga till innehåll.
+Här skapar vi ett nytt dokument och använder`DocumentBuilder` för att börja lägga till innehåll.
 
 ## Steg 2: Definiera den anpassade stilen
 
@@ -86,7 +86,7 @@ Experimentera gärna med olika stilar och inställningar för att skräddarsy ut
  Ja, du kan ändra`LeftIndent` stilens egenskap för att öka eller minska indraget.
 
 ### Hur kan jag ändra teckensnittet som används för kodblocket?  
- Du kan ställa in`Font.Name`egenskap till valfritt teckensnitt med monospace som du väljer, som "Courier New" eller "Consolas".
+ Du kan ställa in`Font.Name` egenskap till valfritt teckensnitt med monospace som du väljer, som "Courier New" eller "Consolas".
 
 ### Är det möjligt att lägga till flera kodblock med olika stilar?  
 Absolut! Du kan definiera flera stilar med olika namn och tillämpa dem på olika kodblock efter behov.

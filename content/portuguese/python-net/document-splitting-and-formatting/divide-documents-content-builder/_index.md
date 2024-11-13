@@ -1,18 +1,18 @@
 ---
-title: Dividindo documentos com Content Builder para precisão
-linktitle: Dividindo documentos com Content Builder para precisão
+title: Dividindo documentos com o Content Builder para precisão
+linktitle: Dividindo documentos com o Content Builder para precisão
 second_title: API de gerenciamento de documentos Python Aspose.Words
-description: Divida e conquiste seus documentos com precisão usando Aspose.Words para Python. Aprenda como aproveitar o Content Builder para extração e organização eficiente de conteúdo.
+description: Divida e conquiste seus documentos com precisão usando Aspose.Words para Python. Aprenda como aproveitar o Content Builder para extração e organização de conteúdo eficientes.
 type: docs
 weight: 11
 url: /pt/python-net/document-splitting-and-formatting/divide-documents-content-builder/
 ---
 
-Aspose.Words for Python fornece uma API robusta para trabalhar com documentos do Word, permitindo que você execute várias tarefas com eficiência. Um recurso essencial é dividir documentos com o Content Builder, que ajuda a obter precisão e organização em seus documentos. Neste tutorial, exploraremos como usar Aspose.Words for Python para dividir documentos usando o módulo Content Builder.
+O Aspose.Words para Python fornece uma API robusta para trabalhar com documentos do Word, permitindo que você execute várias tarefas de forma eficiente. Um recurso essencial é dividir documentos com o Content Builder, que ajuda a obter precisão e organização em seus documentos. Neste tutorial, exploraremos como usar o Aspose.Words para Python para dividir documentos usando o módulo Content Builder.
 
 ## Introdução
 
-Ao lidar com documentos grandes, é crucial manter uma estrutura e organização claras. Dividir um documento em seções pode melhorar a legibilidade e facilitar a edição direcionada. Aspose.Words for Python permite que você consiga isso com seu poderoso módulo Content Builder.
+Ao lidar com documentos grandes, é crucial manter uma estrutura e organização claras. Dividir um documento em seções pode melhorar a legibilidade e facilitar a edição direcionada. O Aspose.Words para Python permite que você consiga isso com seu poderoso módulo Content Builder.
 
 ## Configurando Aspose.Words para Python
 
@@ -32,14 +32,14 @@ Antes de mergulharmos na implementação, vamos configurar o Aspose.Words para P
 
 ## Criando um novo documento
 
-Vamos começar criando um novo documento do Word usando Aspose.Words para Python.
+Vamos começar criando um novo documento do Word usando o Aspose.Words para Python.
 
 ```python
 # Create a new document
 doc = aw.Document()
 ```
 
-## Adicionando conteúdo com Content Builder
+## Adicionando conteúdo com o Content Builder
 
 O módulo Content Builder nos permite adicionar conteúdo ao documento de forma eficiente. Vamos adicionar um título e algum texto introdutório.
 
@@ -57,7 +57,7 @@ builder.writeln("Dividing documents is essential for maintaining precision and o
 builder.writeln("In this tutorial, we will explore how to use the Content Builder module to achieve this.")
 ```
 
-## Dividindo Documentos para Precisão
+## Dividindo documentos para precisão
 
 Agora vem a funcionalidade principal – dividir o documento em seções. Usaremos o Content Builder para inserir quebras de seção.
 
@@ -66,11 +66,11 @@ Agora vem a funcionalidade principal – dividir o documento em seções. Usarem
 builder.insert_break(aw.BreakType.SECTION_BREAK_NEW_PAGE)
 ```
 
- Você pode inserir diferentes tipos de quebras de seção com base em seus requisitos, como`SECTION_BREAK_NEW_PAGE`, `SECTION_BREAK_CONTINUOUS` , ou`SECTION_BREAK_EVEN_PAGE`.
+ Você pode inserir diferentes tipos de quebras de seção com base em suas necessidades, como`SECTION_BREAK_NEW_PAGE`, `SECTION_BREAK_CONTINUOUS` , ou`SECTION_BREAK_EVEN_PAGE`.
 
-## Exemplo de caso de uso: criação de um Curriculum Vitae
+## Exemplo de caso de uso: criação de um currículo vitae
 
-Vamos considerar um caso de uso prático: criar um curriculum vitae (CV) com seções distintas.
+Vamos considerar um caso de uso prático: criar um currículo vitae (CV) com seções distintas.
 
 ```python
 # Add CV sections
@@ -84,7 +84,7 @@ for section in sections:
 
 ## Conclusão
 
-Neste tutorial, exploramos como usar o módulo Aspose.Words for Python Content Builder para dividir documentos e aumentar a precisão. Este recurso é particularmente útil ao lidar com conteúdo extenso que requer organização estruturada.
+Neste tutorial, exploramos como usar o módulo Content Builder do Aspose.Words for Python para dividir documentos e aumentar a precisão. Esse recurso é particularmente útil ao lidar com conteúdo extenso que requer organização estruturada.
 
 ## Perguntas frequentes
 
@@ -92,13 +92,13 @@ Neste tutorial, exploramos como usar o módulo Aspose.Words for Python Content B
  Você pode instalá-lo usando o comando:`pip install aspose-words`.
 
 ### Que tipos de quebras de seção estão disponíveis?
-Aspose.Words for Python fornece vários tipos de quebras de seção, como nova página, contínua e até mesmo quebras de página.
+O Aspose.Words para Python fornece vários tipos de quebra de seção, como nova página, contínua e até mesmo quebras de página.
 
 ### Posso personalizar a formatação de cada seção?
 Sim, você pode aplicar diferentes formatações, estilos e fontes a cada seção usando o módulo Content Builder.
 
 ### O Aspose.Words é adequado para gerar relatórios?
-Absolutamente! Aspose.Words for Python é amplamente utilizado para gerar diversos tipos de relatórios e documentos com formatação precisa.
+Absolutamente! Aspose.Words para Python é amplamente usado para gerar vários tipos de relatórios e documentos com formatação precisa.
 
-### Onde posso acessar a documentação e downloads?
- Visite o[Documentação Aspose.Words para Python](https://reference.aspose.com/words/python-net/) e baixe a biblioteca de[Lançamentos do Aspose.Words Python](https://releases.aspose.com/words/python/).
+### Onde posso acessar a documentação e os downloads?
+ Visite o[Aspose.Words para documentação do Python](https://reference.aspose.com/words/python-net/) e baixe a biblioteca de[Lançamentos do Aspose.Words Python](https://releases.aspose.com/words/python/).

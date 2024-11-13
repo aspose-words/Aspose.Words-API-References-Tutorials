@@ -2,38 +2,38 @@
 title: Satır Biçimlendirmesini Uygula
 linktitle: Satır Biçimlendirmesini Uygula
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak bir Word belgesinde satır formatlamayı nasıl uygulayacağınızı öğrenin. Ayrıntılı talimatlar için adım adım kılavuzumuzu izleyin.
+description: Aspose.Words for .NET kullanarak Word belgesinde satır biçimlendirmenin nasıl uygulanacağını öğrenin. Ayrıntılı talimatlar için adım adım kılavuzumuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-table-styles-and-formatting/apply-row-formatting/
 ---
 ## giriiş
 
-Word belgelerinizi şık satır biçimlendirmeleriyle renklendirmek istiyorsanız doğru yere geldiniz! Bu eğitimde Aspose.Words for .NET kullanarak satır formatlamanın nasıl uygulanacağını ayrıntılı olarak ele alacağız. Takip etmenizi ve bunu projelerinize uygulamanızı kolaylaştırmak için her adımı parçalara ayıracağız.
+Word belgelerinizi gösterişli satır biçimlendirmeleriyle renklendirmek istiyorsanız doğru yerdesiniz! Bu eğitimde, .NET için Aspose.Words kullanarak satır biçimlendirmesinin nasıl uygulanacağını inceleyeceğiz. Her adımı parçalara ayırarak takip etmenizi ve bunu projelerinize uygulamanızı kolaylaştıracağız.
 
-## Önkoşullar
+## Ön koşullar
 
 Koda dalmadan önce, başlamak için ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
-1.  Aspose.Words for .NET: Aspose.Words kütüphanesinin kurulu olduğundan emin olun. Eğer indirmediyseniz adresinden indirebilirsiniz.[Aspose sürümler sayfası](https://releases.aspose.com/words/net/).
-2. Geliştirme Ortamı: Visual Studio gibi AC# geliştirme ortamı.
-3. Temel C# Bilgisi: C# programlamaya aşinalık esastır.
-4. Doküman Dizini: Dokümanınızı kaydedeceğiniz dizin.
+1.  Aspose.Words for .NET: Aspose.Words kütüphanesinin yüklü olduğundan emin olun. Eğer yüklü değilse, şuradan indirebilirsiniz:[Aspose sürüm sayfası](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: Visual Studio benzeri AC# geliştirme ortamı.
+3. Temel C# Bilgisi: C# programlamaya aşinalık şarttır.
+4. Belge Dizini: Belgenizi kaydedeceğiniz dizin.
 
 ## Ad Alanlarını İçe Aktar
 
-Başlangıç olarak C# projenize gerekli ad alanlarını içe aktarmanız gerekir:
+Öncelikle C# projenize gerekli ad alanlarını içe aktarmanız gerekecek:
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Şimdi süreci adım adım inceleyelim.
+Şimdi bu süreci adım adım inceleyelim.
 
-## 1. Adım: Yeni Bir Belge Oluşturun
+## Adım 1: Yeni Bir Belge Oluşturun
 
-Öncelikle yeni bir belge oluşturmamız gerekiyor. Bu, tablomuzu ekleyeceğimiz ve formatlamayı uygulayacağımız tuvalimiz olacak.
+Öncelikle yeni bir belge oluşturmamız gerekiyor. Bu, tablomuzu ekleyeceğimiz ve biçimlendirmeyi uygulayacağımız tuvalimiz olacak.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -43,16 +43,16 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Adım 2: Yeni Bir Tablo Başlatın
 
- Daha sonra aşağıdaki komutu kullanarak yeni bir tablo başlatacağız:`DocumentBuilder`nesne. Sihrin gerçekleştiği yer burasıdır.
+ Daha sonra, şunu kullanarak yeni bir tablo başlatacağız:`DocumentBuilder`nesne. Sihir burada gerçekleşir.
 
 ```csharp
 Table table = builder.StartTable();
 builder.InsertCell();
 ```
 
-## 3. Adım: Satır Biçimlendirmesini Tanımlayın
+## Adım 3: Satır Biçimlendirmesini Tanımlayın
 
-Burada satır formatını tanımlayacağız. Bu, satır yüksekliğini ve dolguyu ayarlamayı içerir.
+Burada satır biçimlendirmesini tanımlayacağız. Bu, satır yüksekliğini ve dolgusunu ayarlamayı içerir.
 
 ```csharp
 RowFormat rowFormat = builder.RowFormat;
@@ -64,9 +64,9 @@ table.TopPadding = 30;
 table.BottomPadding = 30;
 ```
 
-## Adım 4: İçeriği Hücreye Ekleme
+## Adım 4: İçeriği Hücreye Ekle
 
-Güzelce biçimlendirilmiş satırımıza biraz içerik ekleyelim. Bu içerik, biçimlendirmenin nasıl göründüğünü gösterecek.
+Güzel biçimlendirilmiş satırımıza biraz içerik ekleyelim. Bu içerik biçimlendirmenin nasıl göründüğünü gösterecektir.
 
 ```csharp
 builder.Writeln("I'm a wonderfully formatted row.");
@@ -74,7 +74,7 @@ builder.Writeln("I'm a wonderfully formatted row.");
 
 ## Adım 5: Satırı ve Tabloyu Sonlandırın
 
-Son olarak yapımızı tamamlamak için satırı ve tabloyu sonlandırmamız gerekiyor.
+Son olarak yapımızı tamamlamak için satırı ve tabloyu sonlandırmalıyız.
 
 ```csharp
 builder.EndRow();
@@ -83,7 +83,7 @@ builder.EndTable();
 
 ## Adım 6: Belgeyi Kaydedin
 
-Artık tablomuz hazır olduğuna göre belgeyi kaydetme zamanı geldi. Belge dizininizin yolunu belirtin ve dosyayı kaydedin.
+Artık tablomuz hazır olduğuna göre, belgeyi kaydetme zamanı geldi. Belge dizininize giden yolu belirtin ve dosyayı kaydedin.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx");
@@ -91,21 +91,21 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyRowFormatting.docx"
 
 ## Çözüm
 
-Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesindeki bir tabloya satır formatlamayı başarıyla uyguladınız. Bu basit ama güçlü teknik, belgelerinizin okunabilirliğini ve estetiğini büyük ölçüde artırabilir.
+Ve işte oldu! Aspose.Words for .NET kullanarak Word belgenizdeki bir tabloya satır biçimlendirmesini başarıyla uyguladınız. Bu basit ama güçlü teknik belgelerinizin okunabilirliğini ve estetiğini büyük ölçüde artırabilir.
 
-## SSS'ler
+## SSS
 
-### Tek tek satırlara farklı biçimlendirme uygulayabilir miyim?  
- Evet, farklı özellikler ayarlayarak her satırı ayrı ayrı özelleştirebilirsiniz.`RowFormat`.
+### Her bir satıra farklı biçimlendirme uygulayabilir miyim?  
+ Evet, her satırı farklı özellikler ayarlayarak ayrı ayrı özelleştirebilirsiniz.`RowFormat`.
 
-### Sütunların genişliğini nasıl ayarlayabilirim?  
+### Sütunların genişliğini nasıl ayarlarım?  
  Sütunların genişliğini kullanarak ayarlayabilirsiniz.`CellFormat.Width` mülk.
 
-### Aspose.Words for .NET'te hücreleri birleştirmek mümkün mü?  
- Evet, hücreleri birleştirebilirsiniz.`CellMerge` mülkiyeti`CellFormat`.
+### Aspose.Words for .NET'te hücreleri birleştirmek mümkün müdür?  
+ Evet, hücreleri şu şekilde birleştirebilirsiniz:`CellMerge` mülkiyeti`CellFormat`.
 
 ### Satırlara kenarlık ekleyebilir miyim?  
- Kesinlikle! Ayarlayarak satırlara kenarlıklar ekleyebilirsiniz.`Borders` mülkiyeti`RowFormat`.
+ Kesinlikle! Satırlara kenarlıklar eklemek için şunu ayarlayabilirsiniz:`Borders` mülkiyeti`RowFormat`.
 
-### Satırlara koşullu biçimlendirmeyi nasıl uygularım?  
-Belirli koşullara göre farklı biçimlendirme uygulamak için kodunuzda koşullu mantığı kullanabilirsiniz.
+### Koşullu biçimlendirmeyi satırlara nasıl uygularım?  
+Belirli koşullara bağlı olarak farklı biçimlendirmeler uygulamak için kodunuzda koşullu mantığı kullanabilirsiniz.

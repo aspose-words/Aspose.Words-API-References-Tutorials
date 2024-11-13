@@ -2,27 +2,27 @@
 title: Recupera il tipo di larghezza preferito
 linktitle: Recupera il tipo di larghezza preferito
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come recuperare il tipo di larghezza preferito delle celle della tabella nei documenti Word utilizzando Aspose.Words per .NET con la nostra guida passo passo.
+description: Scopri come recuperare il tipo di larghezza preferito delle celle della tabella nei documenti Word utilizzando Aspose.Words per .NET con la nostra guida dettagliata.
 type: docs
 weight: 10
 url: /it/net/programming-with-tables/retrieve-preferred-width-type/
 ---
 ## Introduzione
 
-Ti sei mai chiesto come recuperare il tipo di larghezza preferito delle celle della tabella nei tuoi documenti Word utilizzando Aspose.Words per .NET? Bene, sei nel posto giusto! In questo tutorial, analizzeremo il processo passo dopo passo, rendendolo semplicissimo. Che tu sia uno sviluppatore esperto o che tu abbia appena iniziato, troverai questa guida utile e coinvolgente. Quindi, tuffiamoci e scopriamo i segreti dietro la gestione della larghezza delle celle delle tabelle nei documenti di Word.
+Ti sei mai chiesto come recuperare il tipo di larghezza preferito delle celle di tabella nei tuoi documenti Word usando Aspose.Words per .NET? Bene, sei nel posto giusto! In questo tutorial, analizzeremo il processo passo dopo passo, rendendolo facile come una torta. Che tu sia uno sviluppatore esperto o alle prime armi, troverai questa guida utile e coinvolgente. Quindi, tuffiamoci e scopriamo i segreti dietro la gestione delle larghezze delle celle di tabella nei documenti Word.
 
 ## Prerequisiti
 
-Prima di iniziare, ci sono alcune cose di cui avrai bisogno:
+Prima di iniziare, ecco alcune cose di cui avrai bisogno:
 
-1.  Aspose.Words per .NET: assicurati di avere installata la versione più recente. Puoi scaricarlo da[Qui](https://releases.aspose.com/words/net/).
+1.  Aspose.Words per .NET: assicurati di avere installata l'ultima versione. Puoi scaricarla da[Qui](https://releases.aspose.com/words/net/).
 2. Ambiente di sviluppo: avrai bisogno di un IDE come Visual Studio.
-3. Conoscenza di base di C#: comprendere le nozioni di base di C# ti aiuterà a proseguire.
-4.  Documento di esempio: tieni pronto un documento Word con le tabelle su cui puoi lavorare. È possibile utilizzare qualsiasi documento, ma lo chiameremo come`Tables.docx` in questo tutorial.
+3. Conoscenza di base di C#: comprendere le basi di C# ti aiuterà a seguire il corso.
+4.  Documento di esempio: tieni pronto un documento Word con tabelle su cui puoi lavorare. Puoi usare qualsiasi documento, ma lo chiameremo`Tables.docx` in questo tutorial.
 
-## Importa spazi dei nomi
+## Importazione degli spazi dei nomi
 
-Per prima cosa, importiamo gli spazi dei nomi necessari. Questo passaggio è cruciale in quanto configura il nostro ambiente per utilizzare le funzionalità di Aspose.Words.
+Per prima cosa, importiamo i namespace necessari. Questo passaggio è cruciale perché imposta il nostro ambiente per usare le funzionalità di Aspose.Words.
 
 ```csharp
 using System;
@@ -35,25 +35,25 @@ using Aspose.Words.Tables;
 Prima di manipolare il nostro documento, dobbiamo specificare la directory in cui si trova. Questo è un passaggio semplice ma essenziale.
 
 ```csharp
-// Percorso della directory dei documenti
+// Percorso alla directory del documento
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory dei documenti. Questo dice al nostro programma dove trovare il file con cui vogliamo lavorare.
+ Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo della directory del tuo documento. Questo indica al nostro programma dove trovare il file con cui vogliamo lavorare.
 
 ## Passaggio 2: caricare il documento
 
-Successivamente, carichiamo il documento Word nella nostra applicazione. Questo ci consente di interagire con i suoi contenuti in modo programmatico.
+Poi, carichiamo il documento Word nella nostra applicazione. Questo ci consente di interagire con i suoi contenuti a livello di programmazione.
 
 ```csharp
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
- Questa riga di codice apre il file`Tables.docx` documento dalla directory specificata. Ora il nostro documento è pronto per ulteriori operazioni.
+ Questa riga di codice apre il`Tables.docx` documento dalla directory specificata. Ora, il nostro documento è pronto per ulteriori operazioni.
 
 ## Passaggio 3: accedi alla tabella
 
-Ora che il nostro documento è caricato, dobbiamo accedere alla tabella con cui vogliamo lavorare. Per semplicità, prenderemo di mira la prima tabella nel documento.
+Ora che il nostro documento è caricato, dobbiamo accedere alla tabella con cui vogliamo lavorare. Per semplicità, punteremo alla prima tabella nel documento.
 
 ```csharp
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
@@ -63,17 +63,17 @@ Questa riga recupera la prima tabella dal documento. Se il tuo documento contien
 
 ## Passaggio 4: abilitare l'adattamento automatico per la tabella
 
-Per garantire che la tabella regoli automaticamente le sue colonne, dobbiamo abilitare la proprietà AutoFit.
+Per garantire che la tabella adatti automaticamente le sue colonne, dobbiamo abilitare la proprietà AutoFit.
 
 ```csharp
 table.AllowAutoFit = true;
 ```
 
- Collocamento`AllowAutoFit` A`true` assicura che le colonne della tabella si ridimensionino in base al loro contenuto, dando un aspetto dinamico alla nostra tabella.
+ Collocamento`AllowAutoFit` A`true` garantisce che le colonne della tabella vengano ridimensionate in base al loro contenuto, conferendo un aspetto dinamico alla nostra tabella.
 
-## Passaggio 5: recupera il tipo di larghezza preferito della prima cella
+## Passaggio 5: recuperare il tipo di larghezza preferito della prima cella
 
-Ora arriva il punto cruciale del nostro tutorial: recuperare il tipo di larghezza preferito della prima cella nella tabella.
+Ora arriva il nocciolo del nostro tutorial: recuperare il tipo di larghezza preferito della prima cella della tabella.
 
 ```csharp
 Cell firstCell = table.FirstRow.FirstCell;
@@ -81,7 +81,7 @@ PreferredWidthType type = firstCell.CellFormat.PreferredWidth.Type;
 double value = firstCell.CellFormat.PreferredWidth.Value;
 ```
 
- Queste righe di codice accedono alla prima cella nella prima riga della tabella e recuperano il tipo e il valore di larghezza preferiti. IL`PreferredWidthType` può essere`Auto`, `Percent` , O`Point`, indicando come viene determinata la larghezza.
+ Queste righe di codice accedono alla prima cella nella prima riga della tabella e recuperano il suo tipo di larghezza e valore preferiti.`PreferredWidthType` può essere`Auto`, `Percent` , O`Point`, indicando come viene determinata la larghezza.
 
 ## Passaggio 6: visualizzare i risultati
 
@@ -92,29 +92,29 @@ Console.WriteLine("Preferred Width Type: " + type);
 Console.WriteLine("Preferred Width Value: " + value);
 ```
 
-Queste righe stamperanno il tipo e il valore di larghezza preferiti sulla console, consentendoti di vedere i risultati dell'esecuzione del codice.
+Queste righe visualizzeranno sulla console il tipo e il valore di larghezza preferiti, consentendo di visualizzare i risultati dell'esecuzione del codice.
 
 ## Conclusione
 
-Ed ecco qua! Recuperare il tipo di larghezza preferito delle celle della tabella nei documenti Word utilizzando Aspose.Words per .NET è semplice se suddiviso in passaggi gestibili. Seguendo questa guida, puoi facilmente manipolare le proprietà delle tabelle nei tuoi documenti Word, rendendo le tue attività di gestione dei documenti molto più efficienti.
+Ed ecco fatto! Recuperare il tipo di larghezza preferito delle celle di tabella nei documenti Word usando Aspose.Words per .NET è semplice se suddiviso in passaggi gestibili. Seguendo questa guida, puoi facilmente manipolare le proprietà della tabella nei tuoi documenti Word, rendendo le tue attività di gestione dei documenti molto più efficienti.
 
 ## Domande frequenti
 
 ### Posso recuperare il tipo di larghezza preferito per tutte le celle di una tabella?
 
-Sì, puoi scorrere ciascuna cella nella tabella e recuperare individualmente i tipi di larghezza preferiti.
+Sì, puoi scorrere ogni cella della tabella e recuperare singolarmente i tipi di larghezza preferiti.
 
-###  A cosa servono i valori possibili?`PreferredWidthType`?
+###  Quali sono i possibili valori per`PreferredWidthType`?
 
 `PreferredWidthType` può essere`Auto`, `Percent` , O`Point`.
 
-### È possibile impostare il tipo di larghezza preferito a livello di codice?
+### È possibile impostare il tipo di larghezza preferito a livello di programmazione?
 
- Assolutamente! È possibile impostare il tipo e il valore di larghezza preferiti utilizzando il file`PreferredWidth` proprietà del`CellFormat` classe.
+ Assolutamente! Puoi impostare il tipo e il valore di larghezza preferiti utilizzando`PreferredWidth` proprietà del`CellFormat` classe.
 
-### Posso utilizzare questo metodo per tabelle in documenti diversi da Word?
+### Posso usare questo metodo per le tabelle presenti in documenti diversi da Word?
 
-Questo tutorial riguarda specificamente i documenti Word. Per altri tipi di documenti, dovresti utilizzare la libreria Aspose appropriata.
+Questo tutorial riguarda specificamente i documenti Word. Per altri tipi di documenti, dovresti usare la libreria Aspose appropriata.
 
 ### Ho bisogno di una licenza per utilizzare Aspose.Words per .NET?
 

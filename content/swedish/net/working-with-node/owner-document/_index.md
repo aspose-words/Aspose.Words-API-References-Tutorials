@@ -9,7 +9,7 @@ url: /sv/net/working-with-node/owner-document/
 ---
 ## Introduktion
 
-Har du någonsin kliat dig i huvudet och försökt förstå hur man arbetar med dokument i Aspose.Words för .NET? Nåväl, du är på rätt plats! I den här handledningen kommer vi att dyka djupt in i konceptet "Ägardokumentet" och hur det spelar en avgörande roll för att hantera noder i ett dokument. Vi går igenom ett praktiskt exempel och delar upp det i små steg för att göra allt kristallklart. I slutet av den här guiden kommer du att vara ett proffs på att manipulera dokument med Aspose.Words för .NET.
+Har du någonsin kliat dig i huvudet och försökt förstå hur man arbetar med dokument i Aspose.Words för .NET? Tja, du är på rätt plats! I den här handledningen kommer vi att dyka djupt in i konceptet "Ägardokumentet" och hur det spelar en avgörande roll för att hantera noder i ett dokument. Vi går igenom ett praktiskt exempel och delar upp det i små steg för att göra allt kristallklart. I slutet av den här guiden kommer du att vara ett proffs på att manipulera dokument med Aspose.Words för .NET.
 
 ## Förutsättningar
 
@@ -50,7 +50,7 @@ Paragraph para = new Paragraph(doc);
 
 ## Steg 3: Kontrollera nodens förälder
 
-I det här skedet har styckenoden inte lagts till i dokumentet ännu. Låt oss kontrollera dess överordnade nod.
+I det här skedet har styckenoden inte lagts till i dokumentet ännu. Låt oss kontrollera dess föräldernod.
 
 ```csharp
 Console.WriteLine("Paragraph has no parent node: " + (para.ParentNode == null));
@@ -107,7 +107,7 @@ Och där har du det! Du har precis lärt dig hur du arbetar med "Ägardokumentet
 Nej, varje nod i Aspose.Words för .NET måste tillhöra ett dokument. Detta säkerställer att noder kan komma åt dokumentspecifika egenskaper och data.
 
 ### Hur kontrollerar jag om en nod har en förälder?  
-Du kan kontrollera om en nod har en förälder genom att komma åt dess`ParentNode` egendom. Om den kommer tillbaka`null`, noden har ingen förälder.
+Du kan kontrollera om en nod har en förälder genom att komma åt dess`ParentNode` egendom. Om det kommer tillbaka`null`, noden har ingen förälder.
 
 ### Kan jag ändra en nods egenskaper utan att lägga till den i ett dokument?  
 Ja, så länge noden tillhör ett dokument kan du ändra dess egenskaper även om den inte har lagts till i dokumentet ännu.

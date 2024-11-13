@@ -1,27 +1,27 @@
 ---
-title: Dodaj do zakładek kolumny tabeli w dokumencie programu Word
-linktitle: Dodaj do zakładek kolumny tabeli w dokumencie programu Word
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak dodawać zakładki do kolumn tabeli w dokumencie programu Word za pomocą Aspose.Words dla .NET, korzystając z tego wszechstronnego samouczka krok po kroku.
+title: Zakładki do kolumn tabeli w dokumencie Word
+linktitle: Zakładki do kolumn tabeli w dokumencie Word
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak dodawać zakładki do kolumn tabeli w dokumencie programu Word za pomocą Aspose.Words for .NET, korzystając z tego kompleksowego samouczka krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/programming-with-bookmarks/bookmark-table-columns/
 ---
 ## Wstęp
 
-Jeśli chcesz udoskonalić swoje umiejętności automatyzacji dokumentów, czeka Cię gratka. Ten samouczek poprowadzi Cię przez proces dodawania zakładek do kolumn tabeli w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Gotowy do nurkowania? Zacznijmy!
+Jeśli chcesz poprawić swoje umiejętności automatyzacji dokumentów, to czeka cię gratka. Ten samouczek przeprowadzi cię przez proces dodawania zakładek do kolumn tabeli w dokumencie Word przy użyciu Aspose.Words dla .NET. Gotowy do działania? Zaczynajmy!
 
-## Warunki wstępne
+## Wymagania wstępne
 
 Zanim przejdziemy do kodu, jest kilka rzeczy, które musisz mieć na miejscu:
 
 1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowany Aspose.Words dla .NET. Możesz go pobrać[Tutaj](https://releases.aspose.com/words/net/).
-2. Środowisko programistyczne: Skonfiguruj środowisko programistyczne, takie jak Visual Studio.
+2. Środowisko programistyczne: Skonfiguruj środowisko programistyczne, np. Visual Studio.
 3. Podstawowa znajomość języka C#: Znajomość programowania w języku C# będzie pomocna.
 
 ## Importuj przestrzenie nazw
 
-Aby rozpocząć, musisz zaimportować niezbędne przestrzenie nazw do swojego projektu C#:
+Na początek musisz zaimportować niezbędne przestrzenie nazw do swojego projektu C#:
 
 ```csharp
 using System;
@@ -29,11 +29,11 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Podzielmy teraz proces na szczegółowe etapy.
+Teraz omówimy ten proces szczegółowo, w poszczególnych krokach.
 
-## Krok 1: Zainicjuj dokument i narzędzie DocumentBuider
+## Krok 1: Zainicjuj dokument i DocumentBuilder
 
- Najpierw musimy utworzyć nowy dokument Word i zainicjować plik`DocumentBuilder` pracować z tym.
+ Najpierw musimy utworzyć nowy dokument Word i zainicjować go`DocumentBuilder` aby z nim pracować.
 
 ```csharp
 Document doc = new Document();
@@ -42,16 +42,16 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Krok 2: Uruchom tabelę i wstaw pierwszą komórkę
 
-Rozpocznij tworzenie tabeli i wstaw pierwszą komórkę, w której rozpoczniemy zakładkę.
+Rozpocznij tworzenie tabeli i wstaw pierwszą komórkę, w której rozpoczniesz zakładkę.
 
 ```csharp
 builder.StartTable();
 builder.InsertCell();
 ```
 
-## Krok 3: Uruchom zakładkę
+## Krok 3: Rozpocznij tworzenie zakładki
 
-Następnie w pierwszej komórce uruchamiamy zakładkę o nazwie „Moja zakładka”.
+Następnie w pierwszej komórce tworzymy zakładkę o nazwie „MyBookmark”.
 
 ```csharp
 builder.StartBookmark("MyBookmark");
@@ -68,9 +68,9 @@ builder.Write("This is row 1 cell 2");
 builder.EndRow();
 ```
 
-## Krok 5: Wstaw komórki drugiego rzędu
+## Krok 5: Wstaw komórki do drugiego wiersza
 
-Kontynuuj, dodając komórki dla drugiego wiersza.
+Kontynuuj dodając komórki dla drugiego wiersza.
 
 ```csharp
 builder.InsertCell();
@@ -89,7 +89,7 @@ Zakończ zakładkę po zakończeniu tabeli.
 builder.EndBookmark("MyBookmark");
 ```
 
-## Krok 7: Iteruj po zakładkach i wyświetlaj informacje
+## Krok 7: Przejrzyj zakładki i wyświetl informacje
 
 Na koniec przejrzyj zakładki w dokumencie i wyświetl informacje o każdej z nich.
 
@@ -107,21 +107,21 @@ foreach (Bookmark bookmark in doc.Range.Bookmarks)
 
 ## Wniosek
 
-I masz to! Pomyślnie dodałeś zakładki do kolumn tabeli w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Ten proces nie tylko pomaga w uporządkowaniu dokumentu, ale także ułatwia nawigację i manipulowanie określonymi sekcjami. Tworzenie zakładek to zaawansowana funkcja, która może znacznie zwiększyć możliwości zarządzania dokumentami.
+I masz! Udało Ci się dodać zakładki do kolumn tabeli w dokumencie Word za pomocą Aspose.Words dla .NET. Ten proces nie tylko pomaga w organizacji dokumentu, ale także ułatwia nawigację i manipulowanie określonymi sekcjami. Dodawanie zakładek to potężna funkcja, która może znacznie zwiększyć możliwości zarządzania dokumentami.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Co to jest Aspose.Words dla .NET?
-Aspose.Words dla .NET to potężna biblioteka do programowej pracy z dokumentami programu Word. Umożliwia tworzenie, modyfikowanie i konwertowanie dokumentów bez konieczności instalowania programu Microsoft Word.
+### Czym jest Aspose.Words dla .NET?
+Aspose.Words for .NET to potężna biblioteka do programowej pracy z dokumentami Word. Umożliwia tworzenie, modyfikowanie i konwertowanie dokumentów bez konieczności instalowania programu Microsoft Word.
 
 ### Jak zainstalować Aspose.Words dla .NET?
- Możesz pobrać Aspose.Words dla .NET z[strona internetowa](https://releases.aspose.com/words/net/). Postępuj zgodnie z dostarczonymi instrukcjami instalacji.
+ Aspose.Words dla .NET można pobrać ze strony[strona internetowa](https://releases.aspose.com/words/net/). Postępuj zgodnie z dostarczonymi instrukcjami instalacji.
 
 ### Czy mogę używać Aspose.Words dla .NET z innymi językami programowania?
-Tak, Aspose.Words dla .NET może być używany z dowolnym językiem obsługiwanym przez .NET, w tym C#, VB.NET i F#.
+Tak, Aspose.Words dla .NET można używać z dowolnym językiem obsługiwanym przez platformę .NET, w tym C#, VB.NET i F#.
 
-### Jak mogę uzyskać wsparcie dla Aspose.Words dla .NET?
- Możesz uzyskać wsparcie od społeczności Aspose i ekspertów, odwiedzając stronę[forum wsparcia](https://forum.aspose.com/c/words/8).
+### Gdzie mogę uzyskać pomoc techniczną dotyczącą Aspose.Words dla .NET?
+ Możesz uzyskać wsparcie od społeczności i ekspertów Aspose, odwiedzając stronę[forum wsparcia](https://forum.aspose.com/c/words/8).
 
-### Czy dostępna jest wersja próbna Aspose.Words dla .NET?
- Tak, możesz uzyskać bezpłatną wersję próbną od[Tutaj](https://releases.aspose.com/).
+### Czy jest dostępna wersja próbna Aspose.Words dla .NET?
+ Tak, możesz otrzymać bezpłatną wersję próbną[Tutaj](https://releases.aspose.com/).

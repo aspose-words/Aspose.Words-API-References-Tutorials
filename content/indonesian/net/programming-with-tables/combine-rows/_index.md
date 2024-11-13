@@ -9,21 +9,21 @@ url: /id/net/programming-with-tables/combine-rows/
 ---
 ## Perkenalan
 
-Menggabungkan baris dari beberapa tabel menjadi satu tabel kohesif bisa menjadi tugas yang menakutkan. Namun dengan Aspose.Words untuk .NET, semuanya sangat mudah! Panduan ini akan memandu Anda melalui keseluruhan proses, sehingga memudahkan Anda menggabungkan tabel dengan lancar. Baik Anda seorang pengembang berpengalaman atau baru memulai, tutorial ini akan sangat berharga bagi Anda. Jadi, mari selami dan ubah baris-baris yang tersebar tersebut menjadi tabel terpadu.
+Menggabungkan baris dari beberapa tabel menjadi satu tabel yang kohesif bisa menjadi tugas yang berat. Namun dengan Aspose.Words untuk .NET, hal itu mudah dilakukan! Panduan ini akan memandu Anda melalui seluruh proses, sehingga memudahkan Anda untuk menggabungkan tabel dengan lancar. Baik Anda seorang pengembang berpengalaman atau baru memulai, Anda akan menganggap tutorial ini sangat berharga. Jadi, mari kita mulai dan ubah baris-baris yang tersebar itu menjadi tabel yang terpadu.
 
 ## Prasyarat
 
-Sebelum kita beralih ke bagian pengkodean, pastikan Anda memiliki semua yang Anda butuhkan:
+Sebelum kita masuk ke bagian pengkodean, mari pastikan Anda memiliki semua yang Anda butuhkan:
 
 1.  Aspose.Words untuk .NET: Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Visual Studio atau IDE lain yang kompatibel dengan .NET.
-3. Pengetahuan Dasar C#: Pemahaman C# akan bermanfaat.
+3. Pengetahuan Dasar C#: Pemahaman tentang C# akan bermanfaat.
 
- Jika Anda belum memiliki Aspose.Words untuk .NET, Anda bisa mendapatkan[uji coba gratis](https://releases.aspose.com/) atau membelinya[Di Sini](https://purchase.aspose.com/buy) . Untuk pertanyaan apa pun,[forum dukungan](https://forum.aspose.com/c/words/8) adalah tempat yang bagus untuk memulai.
+ Jika Anda belum memiliki Aspose.Words untuk .NET, Anda bisa mendapatkannya[uji coba gratis](https://releases.aspose.com/) atau membelinya[Di Sini](https://purchase.aspose.com/buy) Untuk pertanyaan apa pun,[forum dukungan](https://forum.aspose.com/c/words/8) adalah tempat yang bagus untuk memulai.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Pertama, Anda harus mengimpor namespace yang diperlukan. Ini akan memungkinkan Anda untuk mengakses kelas dan metode Aspose.Words. Inilah cara Anda melakukannya:
+Pertama, Anda perlu mengimpor namespace yang diperlukan. Ini akan memungkinkan Anda mengakses kelas dan metode Aspose.Words. Berikut cara melakukannya:
 
 ```csharp
 using System;
@@ -31,7 +31,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Sekarang setelah semuanya siap, mari kita bagi prosesnya menjadi langkah-langkah yang mudah diikuti.
+Sekarang setelah semuanya disiapkan, mari kita uraikan prosesnya menjadi langkah-langkah yang mudah diikuti.
 
 ## Langkah 1: Muat Dokumen Anda
 
@@ -47,7 +47,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 
 ## Langkah 2: Identifikasi Tabel
 
- Selanjutnya, Anda perlu mengidentifikasi tabel yang ingin Anda gabungkan. Aspose.Words memungkinkan Anda mendapatkan tabel dari dokumen menggunakan`GetChild` metode. Begini caranya:
+ Selanjutnya, Anda perlu mengidentifikasi tabel yang ingin Anda gabungkan. Aspose.Words memungkinkan Anda untuk mendapatkan tabel dari dokumen menggunakan`GetChild` metode. Berikut caranya:
 
 ```csharp
 Table firstTable = (Table) doc.GetChild(NodeType.Table, 0, true);
@@ -58,7 +58,7 @@ Dalam kode ini, kita mengambil tabel pertama dan kedua dari dokumen.
 
 ## Langkah 3: Tambahkan Baris dari Tabel Kedua ke Tabel Pertama
 
-Sekarang saatnya menggabungkan baris-baris tersebut. Kami akan menambahkan semua baris dari tabel kedua ke tabel pertama. Ini dilakukan dengan menggunakan loop while sederhana:
+Sekarang, saatnya menggabungkan baris-baris. Kita akan menambahkan semua baris dari tabel kedua ke tabel pertama. Ini dilakukan dengan menggunakan while loop sederhana:
 
 ```csharp
 // Tambahkan semua baris dari tabel kedua ke tabel pertama
@@ -70,7 +70,7 @@ Perulangan ini berlanjut hingga semua baris dari tabel kedua ditambahkan ke tabe
 
 ## Langkah 4: Hapus Tabel Kedua
 
- Setelah menambahkan baris, tabel kedua tidak diperlukan lagi. Anda dapat menghapusnya menggunakan`Remove` metode:
+ Setelah menambahkan baris, tabel kedua tidak lagi diperlukan. Anda dapat menghapusnya menggunakan`Remove` metode:
 
 ```csharp
 secondTable.Remove();
@@ -78,27 +78,27 @@ secondTable.Remove();
 
 ## Langkah 5: Simpan Dokumen
 
-Terakhir, simpan dokumen yang dimodifikasi. Langkah ini memastikan bahwa perubahan Anda ditulis ke file:
+Terakhir, simpan dokumen yang telah dimodifikasi. Langkah ini memastikan bahwa perubahan Anda ditulis ke dalam berkas:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.CombineRows.docx");
 ```
 
-Dan itu saja! Anda telah berhasil menggabungkan baris dari dua tabel menjadi satu menggunakan Aspose.Words untuk .NET.
+Selesai! Anda telah berhasil menggabungkan baris dari dua tabel menjadi satu menggunakan Aspose.Words untuk .NET.
 
 ## Kesimpulan
 
 Menggabungkan baris dari beberapa tabel menjadi satu dapat menyederhanakan tugas pemrosesan dokumen Anda secara signifikan. Dengan Aspose.Words untuk .NET, tugas ini menjadi mudah dan efisien. Dengan mengikuti panduan langkah demi langkah ini, Anda dapat dengan mudah menggabungkan tabel dan menyederhanakan alur kerja Anda.
 
-Jika Anda memerlukan informasi lebih lanjut atau memiliki pertanyaan,[Dokumentasi Aspose.Words](https://reference.aspose.com/words/net/) adalah sumber yang bagus. Anda juga dapat menjelajahi opsi pembelian[Di Sini](https://purchase.aspose.com/buy) atau dapatkan a[izin sementara](https://purchase.aspose.com/temporary-license/) untuk pengujian.
+Jika Anda memerlukan informasi lebih lanjut atau memiliki pertanyaan,[Dokumentasi Aspose.Words](https://reference.aspose.com/words/net/) adalah sumber yang sangat bagus. Anda juga dapat menjelajahi opsi pembelian[Di Sini](https://purchase.aspose.com/buy) atau dapatkan[lisensi sementara](https://purchase.aspose.com/temporary-license/) untuk pengujian.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
-### Bisakah saya menggabungkan tabel dengan jumlah kolom berbeda?
+### Bisakah saya menggabungkan tabel dengan jumlah kolom yang berbeda?
 
-Ya, Aspose.Words memungkinkan Anda menggabungkan tabel meskipun tabel tersebut memiliki jumlah dan lebar kolom yang berbeda.
+Ya, Aspose.Words memungkinkan Anda menggabungkan tabel meskipun memiliki jumlah kolom dan lebar yang berbeda.
 
-### Apa yang terjadi pada pemformatan baris bila digabungkan?
+### Apa yang terjadi pada format baris saat digabungkan?
 
 Pemformatan baris dipertahankan saat ditambahkan ke tabel pertama.
 
@@ -106,10 +106,10 @@ Pemformatan baris dipertahankan saat ditambahkan ke tabel pertama.
 
 Ya, Anda dapat menggabungkan beberapa tabel dengan mengulangi langkah-langkah untuk setiap tabel tambahan.
 
-### Bisakah saya mengotomatiskan proses ini untuk banyak dokumen?
+### Bisakah saya mengotomatiskan proses ini untuk beberapa dokumen?
 
-Sangat! Anda dapat membuat skrip untuk mengotomatiskan proses ini untuk banyak dokumen.
+Tentu saja! Anda dapat membuat skrip untuk mengotomatiskan proses ini untuk beberapa dokumen.
 
-### Di mana saya bisa mendapatkan bantuan jika saya mengalami masalah?
+### Di mana saya bisa mendapatkan bantuan jika saya menghadapi masalah?
 
- Itu[Forum dukungan Aspose.Words](https://forum.aspose.com/c/words/8) adalah tempat yang tepat untuk mendapatkan bantuan dan menemukan solusi terhadap masalah umum.
+Itu[Forum dukungan Aspose.Words](https://forum.aspose.com/c/words/8) adalah tempat yang bagus untuk mendapatkan bantuan dan menemukan solusi untuk masalah umum.

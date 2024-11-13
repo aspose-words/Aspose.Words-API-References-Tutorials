@@ -41,7 +41,7 @@ public class DocumentCombination {
 
 ## 2. lépés: Töltse be a forrásdokumentumokat
 
-Ezután be kell töltenie az egyesíteni kívánt forrásdokumentumokat. Több dokumentumot is betölthet a program külön példányaiba`Document` osztály.
+ Ezután be kell töltenie az egyesíteni kívánt forrásdokumentumokat. Több dokumentumot is betölthet a program külön példányaiba`Document` osztály.
 
 ```java
 // Forrásdokumentumok betöltése
@@ -95,7 +95,7 @@ Document sourceDoc = new Document("source_document.docx");
 
 ## 3. lépés: Klónozza a dokumentumot
 
-Új dokumentum létrehozásához klónozza a forrásdokumentumot.
+Klónozza a forrásdokumentumot egy új létrehozásához.
 
 ```java
 // Klónozza a dokumentumot

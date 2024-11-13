@@ -32,7 +32,7 @@ Låt oss nu dela upp processen i enkla, hanterbara steg.
 
 ## Steg 1: Konfigurera ditt projekt
 
-Skapa först ett nytt projekt i Visual Studio och lägg till en referens till Aspose.Words for .NET-biblioteket. Om du inte redan har gjort det, ladda ner det från[Aspose hemsida](https://releases.aspose.com/words/net/).
+Skapa först ett nytt projekt i Visual Studio och lägg till en referens till Aspose.Words for .NET-biblioteket. Om du inte redan har gjort det, ladda ner den från[Aspose hemsida](https://releases.aspose.com/words/net/).
 
 ## Steg 2: Ladda ditt dokument
 
@@ -65,7 +65,7 @@ fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Ari
 
 I det här exemplet använder vi Arial som standardteckensnitt.
 
-## Steg 5: Inaktivera Font Info Substitution
+## Steg 5: Inaktivera teckensnittsinformationsersättning
 
 För att inaktivera teckensnittsinformationsersättning, som hindrar systemet från att ersätta saknade teckensnitt med tillgängliga, använder du följande kod:
 

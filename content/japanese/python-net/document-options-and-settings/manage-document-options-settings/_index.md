@@ -2,7 +2,7 @@
 title: 効率化のためのドキュメントオプションと設定の微調整
 linktitle: 効率化のためのドキュメントオプションと設定の微調整
 second_title: Aspose.Words Python ドキュメント管理 API
-description: Aspose.Words for Python を使用して Word 文書を効率的に操作する方法を学びます。ソース コード付きのステップ バイ ステップ ガイド。
+description: Aspose.Words for Python を使用して Word 文書を効率的に操作する方法を学びます。ソース コードを使用したステップ バイ ステップ ガイド。
 type: docs
 weight: 11
 url: /ja/python-net/document-options-and-settings/manage-document-options-settings/
@@ -10,7 +10,7 @@ url: /ja/python-net/document-options-and-settings/manage-document-options-settin
 
 ## Aspose.Words for Python の紹介:
 
-Aspose.Words for Python は、開発者が Word 文書をプログラムで作成、操作、処理できるようにする機能豊富な API です。テキスト、段落、表、画像などのさまざまな文書要素を処理するためのクラスとメソッドの広範なセットを提供します。
+Aspose.Words for Python は、開発者がプログラムで Word 文書を作成、操作、処理できるようにする機能豊富な API です。テキスト、段落、表、画像などのさまざまな文書要素を処理するためのクラスとメソッドの広範なセットを提供します。
 
 ## 環境の設定:
 
@@ -32,7 +32,7 @@ doc = aw.Document()
 
 ## ドキュメントのプロパティの変更:
 
-タイトル、作成者、キーワードなどのドキュメントのプロパティを調整することは、適切な整理と検索性を実現するために不可欠です。
+タイトル、作成者、キーワードなどのドキュメントのプロパティを調整することは、適切な整理と検索可能性を実現するために不可欠です。
 
 ```python
 doc.built_in_document_properties["Title"].value = "My Document"

@@ -61,7 +61,7 @@ Itt kezdődik a varázslat. Az eredeti dokumentumot az Aspose.Words használatá
     Document doc = new Document(dataDir + "Document.docx");
     ```
 
-## 4. lépés: A dokumentum klónozása
+## 4. lépés: Klónozza a dokumentumot
 
 A dokumentum klónozása gyerekjáték az Aspose.Words segítségével:
 

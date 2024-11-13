@@ -54,7 +54,7 @@ using Aspose.Words.Saving;
 プロジェクトが設定されたので、テキスト入力フォーム フィールドを含む Word 文書を読み込みます。
 
 1. ドキュメント ディレクトリを指定します。ドキュメントが保存されるディレクトリへのパスを定義します。
-2. ドキュメントをロードする:`Document` Word 文書を読み込むためのクラス。
+2. ドキュメントを読み込む:`Document` Word 文書を読み込むためのクラス。
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

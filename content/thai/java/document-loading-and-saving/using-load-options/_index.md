@@ -1,18 +1,18 @@
 ---
-title: การใช้ตัวเลือกการโหลดใน Aspose.Words สำหรับ Java
-linktitle: การใช้ตัวเลือกการโหลด
-second_title: Aspose.Words Java การประมวลผลเอกสาร API
-description: การเรียนรู้ตัวเลือกการโหลดใน Aspose.Words สำหรับ Java ปรับแต่งการโหลดเอกสาร จัดการการเข้ารหัส แปลงรูปร่าง ตั้งค่าเวอร์ชัน Word และอื่นๆ เพื่อการประมวลผลเอกสาร Java ที่มีประสิทธิภาพ
+title: การใช้ตัวเลือกโหลดใน Aspose.Words สำหรับ Java
+linktitle: การใช้ตัวเลือกโหลด
+second_title: API การประมวลผลเอกสาร Java ของ Aspose.Words
+description: การเรียนรู้ตัวเลือกการโหลดใน Aspose.Words สำหรับ Java ปรับแต่งการโหลดเอกสาร จัดการการเข้ารหัส แปลงรูปร่าง ตั้งค่าเวอร์ชันของ Word และอื่นๆ เพื่อการประมวลผลเอกสาร Java ที่มีประสิทธิภาพ
 type: docs
 weight: 11
 url: /th/java/document-loading-and-saving/using-load-options/
 ---
 
-## ข้อมูลเบื้องต้นเกี่ยวกับการทำงานกับตัวเลือกการโหลดใน Aspose.Words สำหรับ Java
+## บทนำสู่การทำงานกับตัวเลือกโหลดใน Aspose.Words สำหรับ Java
 
-ในบทช่วยสอนนี้ เราจะสำรวจวิธีการทำงานกับตัวเลือกการโหลดใน Aspose.Words สำหรับ Java ตัวเลือกการโหลดช่วยให้คุณสามารถปรับแต่งวิธีการโหลดและประมวลผลเอกสารได้ เราจะครอบคลุมสถานการณ์ต่างๆ รวมถึงการอัปเดตฟิลด์สกปรก การโหลดเอกสารที่เข้ารหัส การแปลงรูปร่างเป็น Office Math การตั้งค่าเวอร์ชัน MS Word การระบุโฟลเดอร์ชั่วคราว การจัดการคำเตือน และการแปลงเมตาไฟล์เป็น PNG มาดำน้ำกันทีละขั้นตอน
+ในบทช่วยสอนนี้ เราจะมาสำรวจวิธีการทำงานกับตัวเลือกการโหลดใน Aspose.Words สำหรับ Java ตัวเลือกการโหลดช่วยให้คุณปรับแต่งวิธีการโหลดและประมวลผลเอกสารได้ เราจะครอบคลุมสถานการณ์ต่างๆ เช่น การอัปเดตฟิลด์ที่ไม่ปลอดภัย การโหลดเอกสารที่เข้ารหัส การแปลงรูปร่างเป็น Office Math การตั้งค่าเวอร์ชัน MS Word การระบุโฟลเดอร์ชั่วคราว การจัดการคำเตือน และการแปลงเมตาไฟล์เป็น PNG มาเจาะลึกทีละขั้นตอนกันเลย
 
-## อัปเดตฟิลด์สกปรก
+## อัพเดทสนามสกปรก
 
 ```java
 LoadOptions loadOptions = new LoadOptions();
@@ -22,7 +22,7 @@ Document doc = new Document("Your Directory Path" + "Dirty field.docx", loadOpti
 doc.save("Your Directory Path" + "WorkingWithLoadOptions.UpdateDirtyFields.docx");
 ```
 
- ข้อมูลโค้ดนี้สาธิตวิธีอัปเดตฟิลด์สกปรกในเอกสาร ที่`setUpdateDirtyFields(true)` วิธีการนี้ใช้เพื่อให้แน่ใจว่าฟิลด์สกปรกได้รับการอัปเดตระหว่างการโหลดเอกสาร
+ ตัวอย่างโค้ดนี้แสดงวิธีการอัปเดตฟิลด์ที่ไม่ปลอดภัยในเอกสาร`setUpdateDirtyFields(true)` วิธีนี้ใช้เพื่อให้แน่ใจว่าฟิลด์ที่สกปรกได้รับการอัปเดตในระหว่างการโหลดเอกสาร
 
 ## โหลดเอกสารที่เข้ารหัส
 
@@ -34,7 +34,7 @@ public void loadEncryptedDocument() throws Exception {
 }
 ```
 
- ที่นี่ เราโหลดเอกสารที่เข้ารหัสโดยใช้รหัสผ่าน ที่`LoadOptions` Constructor ยอมรับรหัสผ่านเอกสาร และคุณยังสามารถระบุรหัสผ่านใหม่เมื่อบันทึกเอกสารโดยใช้`OdtSaveOptions`.
+ ที่นี่เราโหลดเอกสารที่เข้ารหัสโดยใช้รหัสผ่าน`LoadOptions` ผู้สร้างยอมรับรหัสผ่านเอกสาร และคุณยังสามารถระบุรหัสผ่านใหม่ได้เมื่อบันทึกเอกสารโดยใช้`OdtSaveOptions`.
 
 ## แปลงรูปร่างเป็น Office Math
 
@@ -46,7 +46,7 @@ Document doc = new Document("Your Directory Path" + "Office math.docx", loadOpti
 doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveFormat.DOCX);
 ```
 
- รหัสนี้สาธิตวิธีการแปลงรูปร่างเป็นวัตถุ Office Math ในระหว่างการโหลดเอกสาร ที่`setConvertShapeToOfficeMath(true)`วิธีการเปิดใช้งานการแปลงนี้
+ โค้ดนี้สาธิตวิธีการแปลงรูปร่างเป็นวัตถุ Office Math ในระหว่างการโหลดเอกสาร`setConvertShapeToOfficeMath(true)`วิธีการนี้เปิดใช้การแปลงนี้
 
 ## ตั้งค่าเวอร์ชัน MS Word
 
@@ -75,9 +75,9 @@ public void useTempFolder() throws Exception {
 }
 ```
 
- โดยการตั้งค่าโฟลเดอร์ชั่วคราวโดยใช้`setTempFolder`คุณสามารถควบคุมตำแหน่งที่จะจัดเก็บไฟล์ชั่วคราวระหว่างการประมวลผลเอกสารได้
+ โดยการตั้งค่าโฟลเดอร์ชั่วคราวโดยใช้`setTempFolder`คุณสามารถควบคุมได้ว่าจะจัดเก็บไฟล์ชั่วคราวไว้ที่ไหนในระหว่างการประมวลผลเอกสาร
 
-## คำเตือน โทรกลับ
+## คำเตือนการโทรกลับ
 
 ```java
 @Test
@@ -90,16 +90,16 @@ public void warningCallback() throws Exception {
 
 public static class DocumentLoadingWarningCallback implements IWarningCallback {
     public void warning(WarningInfo info) {
-        // จัดการคำเตือนที่เกิดขึ้นระหว่างการโหลดเอกสาร
+        // จัดการคำเตือนเมื่อเกิดขึ้นในระหว่างการโหลดเอกสาร
         System.out.println(MessageFormat.format("WARNING: {0}, source: {1}", info.getWarningType(), info.getSource()));
         System.out.println(MessageFormat.format("\tDescription: {0}", info.getDescription()));
     }
 }
 ```
 
-รหัสนี้สาธิตวิธีตั้งค่าการโทรกลับคำเตือนเพื่อจัดการคำเตือนระหว่างการโหลดเอกสาร คุณสามารถปรับแต่งลักษณะการทำงานของแอปพลิเคชันของคุณเมื่อมีคำเตือนเกิดขึ้น
+โค้ดนี้สาธิตวิธีการตั้งค่าการเรียกกลับคำเตือนเพื่อจัดการคำเตือนระหว่างการโหลดเอกสาร คุณสามารถปรับแต่งพฤติกรรมของแอปพลิเคชันของคุณเมื่อเกิดคำเตือนได้
 
-## แปลง Metafiles เป็น PNG
+## แปลงไฟล์ Metafile เป็น PNG
 
 ```java
 @Test
@@ -111,9 +111,9 @@ public void convertMetafilesToPng() throws Exception {
 }
 ```
 
- หากต้องการแปลงไฟล์เมตา (เช่น WMF) เป็นรูปภาพ PNG ในระหว่างการโหลดเอกสาร คุณสามารถใช้ไฟล์`setConvertMetafilesToPng(true)` วิธี.
+ หากต้องการแปลงไฟล์เมตา (เช่น WMF) เป็นภาพ PNG ในระหว่างการโหลดเอกสาร คุณสามารถใช้`setConvertMetafilesToPng(true)` วิธี.
 
-## กรอกซอร์สโค้ดสำหรับการทำงานกับตัวเลือกโหลดใน Aspose.Words สำหรับ Java
+## โค้ดต้นฉบับที่สมบูรณ์สำหรับการทำงานกับตัวเลือกโหลดใน Aspose.Words สำหรับ Java
 
 ```java
 public void updateDirtyFields() throws Exception {
@@ -140,8 +140,8 @@ public void convertShapeToOfficeMath() throws Exception {
 }
 @Test
 public void setMsWordVersion() throws Exception {
-	// สร้างวัตถุ LoadOptions ใหม่ ซึ่งจะโหลดเอกสารตามข้อกำหนด MS Word 2019 เป็นค่าเริ่มต้น
-	// และเปลี่ยนเวอร์ชั่นโหลดเป็น Microsoft Word 2010
+	// สร้างวัตถุ LoadOptions ใหม่ซึ่งจะโหลดเอกสารตามข้อกำหนดของ MS Word 2019 ตามค่าเริ่มต้น
+	// และเปลี่ยนเวอร์ชันโหลดเป็น Microsoft Word 2010
 	LoadOptions loadOptions = new LoadOptions();
 	{
 		loadOptions.setMswVersion(MsWordVersion.WORD_2010);
@@ -167,7 +167,7 @@ public void warningCallback() throws Exception {
 }
 public static class DocumentLoadingWarningCallback implements IWarningCallback {
 	public void warning(WarningInfo info) {
-		//พิมพ์คำเตือนและรายละเอียดที่เกิดขึ้นระหว่างการโหลดเอกสาร
+		//พิมพ์คำเตือนและรายละเอียดที่เกิดขึ้นในระหว่างการโหลดเอกสาร
 		System.out.println(MessageFormat.format("WARNING: {0}, source: {1}", info.getWarningType(), info.getSource()));
 		System.out.println(MessageFormat.format("\tDescription: {0}", info.getDescription()));
 	}
@@ -192,13 +192,13 @@ public void loadChm() throws Exception {
 
 ## บทสรุป
 
-ในบทช่วยสอนนี้ เราได้เจาะลึกแง่มุมต่างๆ ของการทำงานกับตัวเลือกการโหลดใน Aspose.Words สำหรับ Java ตัวเลือกการโหลดมีบทบาทสำคัญในการปรับแต่งวิธีการโหลดและประมวลผลเอกสาร ซึ่งช่วยให้คุณปรับแต่งการประมวลผลเอกสารให้ตรงตามความต้องการเฉพาะของคุณได้ มาสรุปประเด็นสำคัญที่กล่าวถึงในคู่มือนี้กัน:
+ในบทช่วยสอนนี้ เราได้เจาะลึกถึงแง่มุมต่างๆ ของการทำงานกับตัวเลือกการโหลดใน Aspose.Words สำหรับ Java ตัวเลือกการโหลดมีบทบาทสำคัญในการปรับแต่งวิธีการโหลดและประมวลผลเอกสาร ช่วยให้คุณปรับแต่งการประมวลผลเอกสารให้เหมาะกับความต้องการเฉพาะของคุณได้ มาสรุปประเด็นสำคัญที่ครอบคลุมในคู่มือนี้กัน:
 
 ## คำถามที่พบบ่อย
 
-### ฉันจะจัดการคำเตือนระหว่างการโหลดเอกสารได้อย่างไร
+### ฉันจะจัดการคำเตือนในระหว่างการโหลดเอกสารได้อย่างไร
 
- คุณสามารถตั้งค่าการแจ้งเตือนการโทรกลับได้ตามที่แสดงใน`warningCallback()` วิธีการข้างต้น ปรับแต่ง`DocumentLoadingWarningCallback` คลาสเพื่อจัดการคำเตือนตามความต้องการของแอปพลิเคชันของคุณ
+ คุณสามารถตั้งค่าการโทรกลับคำเตือนดังที่แสดงใน`warningCallback()` วิธีการข้างต้น ปรับแต่ง`DocumentLoadingWarningCallback` คลาสที่จะจัดการคำเตือนตามความต้องการของแอปพลิเคชันของคุณ
 
 ### ฉันสามารถแปลงรูปร่างเป็นวัตถุ Office Math เมื่อโหลดเอกสารได้หรือไม่
 
@@ -208,6 +208,6 @@ public void loadChm() throws Exception {
 
  ใช้`loadOptions.setMswVersion(MsWordVersion.WORD_2010)` เพื่อระบุเวอร์ชัน MS Word สำหรับการโหลดเอกสาร
 
-###  จุดประสงค์ของ..คืออะไร.`setTempFolder` method in Load Options?
+###  จุดประสงค์ของการ`setTempFolder` method in Load Options?
 
- ที่`setTempFolder`วิธีการช่วยให้คุณระบุโฟลเดอร์ที่เก็บไฟล์ชั่วคราวระหว่างการประมวลผลเอกสาร
+การ`setTempFolder`วิธีการนี้ช่วยให้คุณระบุโฟลเดอร์ที่เก็บไฟล์ชั่วคราวในระหว่างการประมวลผลเอกสาร

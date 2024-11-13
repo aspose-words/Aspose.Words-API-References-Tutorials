@@ -1,25 +1,25 @@
 ---
-title: Aspose.Words for Java'da Stilleri ve Temaları Kullanmak
-linktitle: Stilleri ve Temaları Kullanma
+title: Java için Aspose.Words'de Stiller ve Temalar Kullanma
+linktitle: Stiller ve Temaların Kullanımı
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Aspose.Words for Java ile belge formatını nasıl geliştireceğinizi öğrenin. Kaynak kodu örnekleri içeren bu kapsamlı kılavuzda stilleri, temaları ve daha fazlasını keşfedin.
+description: Aspose.Words for Java ile belge biçimlendirmesini nasıl geliştireceğinizi öğrenin. Kaynak kod örneklerinin bulunduğu bu kapsamlı kılavuzda stilleri, temaları ve daha fazlasını keşfedin.
 type: docs
 weight: 20
 url: /tr/java/document-manipulation/using-styles-and-themes/
 ---
 
-## Aspose.Words for Java'da Stil ve Tema Kullanımına Giriş
+## Java için Aspose.Words'de Stil ve Temaların Kullanımına Giriş
 
-Bu kılavuzda, belgelerinizin formatını ve görünümünü geliştirmek için Aspose.Words for Java'da stil ve temalarla nasıl çalışılacağını keşfedeceğiz. Stilleri alma, stilleri kopyalama, temaları yönetme ve stil ayırıcıları ekleme gibi konuları ele alacağız. Hadi başlayalım!
+Bu kılavuzda, belgelerinizin biçimlendirmesini ve görünümünü geliştirmek için Aspose.Words for Java'da stiller ve temalarla nasıl çalışılacağını inceleyeceğiz. Stilleri alma, stilleri kopyalama, temaları yönetme ve stil ayırıcıları ekleme gibi konuları ele alacağız. Hadi başlayalım!
 
-## Stilleri Alma
+## Stilleri Geri Alma
 
 Bir belgeden stilleri almak için aşağıdaki Java kod parçacığını kullanabilirsiniz:
 
 ```java
 Document doc = new Document();
 String styleName = "";
-//Belgeden stil koleksiyonunu alın.
+//Belgeden stiller koleksiyonunu al.
 StyleCollection styles = doc.getStyles();
 for (Style style : styles)
 {
@@ -36,11 +36,11 @@ for (Style style : styles)
 }
 ```
 
-Bu kod, belgede tanımlanan stilleri getirir ve adlarını yazdırır.
+Bu kod, belgede tanımlanan stilleri getirir ve isimlerini yazdırır.
 
 ## Stilleri Kopyalama
 
- Stilleri bir belgeden diğerine kopyalamak için`copyStylesFromTemplate` aşağıda gösterildiği gibi yöntem:
+ Stilleri bir belgeden diğerine kopyalamak için şunu kullanabilirsiniz:`copyStylesFromTemplate` Aşağıda gösterildiği gibi bir yöntem:
 
 ```java
 @Test
@@ -80,11 +80,11 @@ public void setThemeProperties() throws Exception
 }
 ```
 
-Bu parçacıklar, yazı tipleri ve renkler gibi tema özelliklerinin nasıl alınacağını ve değiştirileceğini gösterir.
+Bu kod parçacıkları, yazı tipleri ve renkler gibi tema özelliklerinin nasıl alınacağını ve değiştirileceğini göstermektedir.
 
 ## Stil Ayırıcıları Ekleme
 
-Stil ayırıcılar, tek bir paragrafta farklı stiller uygulamak için kullanışlıdır. Stil ayırıcıların nasıl ekleneceğine ilişkin bir örnek:
+Stil ayırıcıları, tek bir paragraf içinde farklı stiller uygulamak için kullanışlıdır. Stil ayırıcılarının nasıl ekleneceğine dair bir örnek aşağıdadır:
 
 ```java
 @Test
@@ -96,34 +96,34 @@ public void insertStyleSeparator() throws Exception
     paraStyle.getFont().setBold(false);
     paraStyle.getFont().setSize(8.0);
     paraStyle.getFont().setName("Arial");
-    // Metni "Başlık 1" stiliyle ekleyin.
+    // "Başlık 1" stilinde metin ekleyin.
     builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_1);
     builder.write("Heading 1");
     builder.insertStyleSeparator();
-    // Metni başka bir stille ekleyin.
+    // Metni başka bir stilde ekleyin.
     builder.getParagraphFormat().setStyleName(paraStyle.getName());
     builder.write("This is text with some other formatting ");
     doc.save("Your Directory Path" + "WorkingWithStylesAndThemes.InsertStyleSeparator.docx");
 }
 ```
 
-Bu kodda, özel bir paragraf stili oluşturuyoruz ve aynı paragraf içindeki stilleri değiştirmek için bir stil ayırıcı ekliyoruz.
+Bu kodda, özel bir paragraf stili oluşturuyoruz ve aynı paragraf içinde stiller arasında geçiş yapmak için bir stil ayracı ekliyoruz.
 
 ## Çözüm
 
-Bu kılavuz Aspose.Words for Java'da stil ve temalarla çalışmanın temellerini kapsamaktadır. Görsel olarak çekici ve iyi biçimlendirilmiş belgeler oluşturmak için stilleri nasıl alıp kopyalayacağınızı, temaları nasıl yöneteceğinizi ve stil ayırıcıları nasıl ekleyeceğinizi öğrendiniz. Belgelerinizi gereksinimlerinize göre özelleştirmek için bu teknikleri deneyin.
+Bu kılavuz, Java için Aspose.Words'de stiller ve temalarla çalışmanın temellerini ele aldı. Stilleri nasıl alacağınızı ve kopyalayacağınızı, temaları nasıl yöneteceğinizi ve görsel olarak çekici ve iyi biçimlendirilmiş belgeler oluşturmak için stil ayırıcıları nasıl ekleyeceğinizi öğrendiniz. Belgelerinizi gereksinimlerinize göre özelleştirmek için bu teknikleri deneyin.
 
 
-## SSS'ler
+## SSS
 
 ### Aspose.Words for Java'da tema özelliklerini nasıl alabilirim?
 
-Tema nesnesine ve onun özelliklerine erişerek tema özelliklerini alabilirsiniz.
+Tema nesnesine ve özelliklerine erişerek tema özelliklerini alabilirsiniz.
 
-### Yazı tipleri ve renkler gibi tema özelliklerini nasıl ayarlayabilirim?
+### Temanın yazı tipleri ve renkleri gibi özelliklerini nasıl ayarlayabilirim?
 
 Tema nesnesinin özelliklerini değiştirerek tema özelliklerini ayarlayabilirsiniz.
 
-### Aynı paragraftaki stilleri değiştirmek için stil ayırıcıları nasıl kullanabilirim?
+### Aynı paragraf içinde stiller arasında geçiş yapmak için stil ayırıcılarını nasıl kullanabilirim?
 
- Şunu kullanarak stil ayırıcıları ekleyebilirsiniz:`insertStyleSeparator` yöntemi`DocumentBuilder` sınıf.
+ Stil ayırıcılarını kullanarak ekleyebilirsiniz.`insertStyleSeparator` yöntemi`DocumentBuilder` sınıf.

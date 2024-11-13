@@ -70,7 +70,7 @@ Aspose.Words for .NET は、.NET アプリケーション内で Word 文書を�
 臨時免許証は以下から取得できます。[ここ](https://purchase.aspose.com/temporary-license/).
 
 ### Aspose.Words for .NET の無料試用版はありますか?
-はい、無料トライアルはここからダウンロードできます。[ここ](https://releases.aspose.com/).
+はい、無料トライアルは以下からダウンロードできます。[ここ](https://releases.aspose.com/).
 
 ### その他の例やドキュメントはどこで見つかりますか?
 包括的なドキュメントと例については、[Aspose.Words for .NET ドキュメント ページ](https://reference.aspose.com/words/net/).

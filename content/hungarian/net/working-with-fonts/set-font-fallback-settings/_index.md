@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## 3. lépés: Konfigurálja a betűtípus-beállításokat
 
- Hozzon létre egy újat`FontSettings` objektumot, és töltse be a tartalék font-beállításokat egy XML-fájlból. Ez az XML-fájl tartalmazza a tartalék betűkészlet szabályait.
+Hozzon létre egy újat`FontSettings` objektumot, és töltse be a tartalék font-beállításokat egy XML-fájlból. Ez az XML-fájl tartalmazza a tartalék betűkészlet szabályait.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();

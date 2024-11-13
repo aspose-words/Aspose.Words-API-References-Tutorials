@@ -51,7 +51,7 @@ Document doc = new Document(dataDir + "Emphases markdown warning.docx");
 
  Här skapar vi en ny`Document` objekt och ladda vår exempel DOCX-fil.
 
-## Steg 3: Konfigurera varningsinsamling
+## Steg 3: Ställa in varningsinsamling
 
  Föreställ dig att läsa en bok med klisterlappar som lyfter fram viktiga punkter. De`WarningInfoCollection` gör just det för vår dokumentbehandling.
 

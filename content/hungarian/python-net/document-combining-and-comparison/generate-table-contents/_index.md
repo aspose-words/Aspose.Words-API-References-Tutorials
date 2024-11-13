@@ -2,7 +2,7 @@
 title: Átfogó tartalomjegyzék készítése Word dokumentumokhoz
 linktitle: Átfogó tartalomjegyzék készítése Word dokumentumokhoz
 second_title: Aspose.Words Python Document Management API
-description: Készítsen olvasóbarát tartalomjegyzéket az Aspose.Words for Python segítségével. Tanulja meg zökkenőmentesen létrehozni, testreszabni és frissíteni a dokumentum szerkezetét.
+description: Készítsen olvasóbarát tartalomjegyzéket az Aspose.Words for Python segítségével. Tanulja meg zökkenőmentesen létrehozni, testreszabni és frissíteni dokumentuma szerkezetét.
 type: docs
 weight: 15
 url: /hu/python-net/document-combining-and-comparison/generate-table-contents/

@@ -13,12 +13,12 @@ Aspose.Words for .NET の素晴らしい世界へようこそ! 今日は、時�
 
 ## 前提条件
 
-具体的な内容に入る前に、必要なものがすべて揃っていることを確認しましょう。
+具体的な作業に入る前に、必要なものがすべて揃っていることを確認しましょう。
 
 1.  Aspose.Words for .NET: 最新バージョンであることを確認してください。[ここからダウンロード](https://releases.aspose.com/words/net/).
 2. 開発環境: Visual Studio またはその他の C# 互換 IDE。
 3. C# の基礎知識: C# と .NET フレームワークに多少精通していると役立ちます。
-4. ライセンス: フルライセンスをお持ちでない場合は、一時ライセンスを使用することができます。[ここ](https://purchase.aspose.com/temporary-license/).
+4. ライセンス: フルライセンスをお持ちでない場合は、一時ライセンスを使用することができます。入手してください[ここ](https://purchase.aspose.com/temporary-license/).
 
 ## 名前空間のインポート
 
@@ -57,7 +57,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportRoundtripInformation =
 
 ## ステップ4: ドキュメントをHTMLとして保存する
 
-最後に、設定した保存オプションを使用して、ドキュメントを HTML ファイルとして保存します。この手順により、ドキュメントを HTML に変換して Word に戻すときに、すべての書式とデータが保持されます。
+最後に、構成された保存オプションを使用して、ドキュメントを HTML ファイルとして保存します。この手順により、ドキュメントを HTML に変換して Word に戻すときに、ドキュメントのすべての書式とデータが保持されます。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportRoundtripInformation.html", saveOptions);

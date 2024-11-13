@@ -1,6 +1,6 @@
 ---
-title: Ekspor Url Cid Untuk Sumber Daya Mhtml
-linktitle: Ekspor Url Cid Untuk Sumber Daya Mhtml
+title: Ekspor URL Cid untuk Sumber Daya Mhtml
+linktitle: Ekspor URL Cid untuk Sumber Daya Mhtml
 second_title: API Pemrosesan Dokumen Aspose.Words
 description: Pelajari cara mengekspor URL Cid untuk sumber daya MHTML menggunakan Aspose.Words untuk .NET dalam tutorial langkah demi langkah ini. Sempurna untuk pengembang dari semua tingkatan.
 type: docs
@@ -9,19 +9,19 @@ url: /id/net/programming-with-htmlsaveoptions/export-cid-urls-for-mhtml-resource
 ---
 ## Perkenalan
 
-Apakah Anda siap menguasai seni mengekspor URL Cid untuk sumber daya MHTML menggunakan Aspose.Words untuk .NET? Baik Anda seorang pengembang berpengalaman atau baru memulai, panduan komprehensif ini akan memandu Anda melalui setiap langkah. Di akhir artikel ini, Anda akan memiliki pemahaman yang jelas tentang cara menangani sumber daya MHTML secara efisien di dokumen Word Anda. Ayo selami!
+Apakah Anda siap menguasai seni mengekspor URL Cid untuk sumber daya MHTML menggunakan Aspose.Words untuk .NET? Baik Anda pengembang berpengalaman atau baru memulai, panduan lengkap ini akan memandu Anda melalui setiap langkah. Di akhir artikel ini, Anda akan memiliki pemahaman yang sangat jelas tentang cara menangani sumber daya MHTML secara efisien dalam dokumen Word Anda. Mari kita mulai!
 
 ## Prasyarat
 
-Sebelum kita mulai, pastikan Anda memiliki semua yang Anda butuhkan:
+Sebelum kita mulai, mari pastikan Anda memiliki semua yang Anda butuhkan:
 
--  Aspose.Words for .NET: Pastikan Anda menginstal Aspose.Words for .NET versi terbaru. Jika tidak, Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+-  Aspose.Words untuk .NET: Pastikan Anda telah menginstal Aspose.Words versi terbaru untuk .NET. Jika belum, Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
 - Lingkungan Pengembangan: Lingkungan pengembangan seperti Visual Studio.
-- Pengetahuan Dasar tentang C#: Meskipun saya akan memandu Anda melalui setiap langkah, pemahaman dasar tentang C# akan bermanfaat.
+- Pengetahuan Dasar C#: Meskipun saya akan memandu Anda melalui setiap langkah, pemahaman dasar tentang C# akan bermanfaat.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Hal pertama yang pertama, mari impor namespace yang diperlukan. Langkah ini menetapkan tahapan untuk tutorial kita:
+Pertama-tama, mari impor namespace yang diperlukan. Langkah ini menjadi dasar tutorial kita:
 
 ```csharp
 using System;
@@ -29,15 +29,15 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Sekarang, mari kita bagi prosesnya menjadi langkah-langkah sederhana dan mudah dilakukan. Setiap langkah akan menyertakan penjelasan mendetail untuk memastikan Anda dapat mengikutinya dengan mudah.
+Sekarang, mari kita uraikan prosesnya menjadi beberapa langkah yang sederhana dan mudah dikelola. Setiap langkah akan disertai penjelasan terperinci untuk memastikan Anda dapat mengikutinya dengan mudah.
 
 ## Langkah 1: Menyiapkan Proyek Anda
 
 ### Langkah 1.1: Buat Proyek Baru
-Buka Visual Studio dan buat proyek C# baru. Pilih templat Aplikasi Konsol untuk mempermudah.
+Buka Visual Studio dan buat proyek C# baru. Pilih templat Aplikasi Konsol agar semuanya tetap sederhana.
 
 ### Langkah 1.2: Tambahkan Aspose.Words untuk Referensi .NET
-Untuk menggunakan Aspose.Words untuk .NET, Anda perlu menambahkan referensi ke perpustakaan Aspose.Words. Anda dapat melakukan ini melalui Manajer Paket NuGet:
+Untuk menggunakan Aspose.Words untuk .NET, Anda perlu menambahkan referensi ke pustaka Aspose.Words. Anda dapat melakukannya melalui Pengelola Paket NuGet:
 
 1. Klik kanan pada proyek Anda di Solution Explorer.
 2. Pilih "Kelola Paket NuGet".
@@ -63,7 +63,7 @@ Document doc = new Document(dataDir + "Content-ID.docx");
 
 ## Langkah 3: Mengonfigurasi Opsi Penyimpanan HTML
 
- Buat sebuah contoh dari`HtmlSaveOptions` untuk menyesuaikan bagaimana dokumen Anda akan disimpan sebagai MHTML.
+ Buat contoh dari`HtmlSaveOptions` untuk menyesuaikan cara dokumen Anda akan disimpan sebagai MHTML.
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Mhtml)
@@ -73,7 +73,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Mhtml)
 };
 ```
 
-- `SaveFormat.Mhtml` menentukan bahwa format output adalah MHTML.
+- `SaveFormat.Mhtml` menentukan bahwa format keluaran adalah MHTML.
 - `PrettyFormat = true` memastikan output diformat dengan rapi.
 - `ExportCidUrlsForMhtmlResources = true` memungkinkan ekspor URL Cid untuk sumber daya MHTML.
 
@@ -88,21 +88,21 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportCidUrlsForMhtmlResources.mh
 
 ## Kesimpulan
 
-Selamat! Anda telah berhasil mengekspor URL Cid untuk sumber daya MHTML menggunakan Aspose.Words untuk .NET. Tutorial ini memandu Anda dalam menyiapkan proyek, memuat dokumen Word, mengonfigurasi opsi penyimpanan HTML, dan menyimpan dokumen sebagai MHTML. Sekarang Anda dapat menerapkan langkah-langkah ini pada proyek Anda sendiri dan meningkatkan tugas manajemen dokumen Anda.
+Selamat! Anda telah berhasil mengekspor URL Cid untuk sumber daya MHTML menggunakan Aspose.Words untuk .NET. Tutorial ini memandu Anda dalam menyiapkan proyek, memuat dokumen Word, mengonfigurasi opsi penyimpanan HTML, dan menyimpan dokumen sebagai MHTML. Sekarang Anda dapat menerapkan langkah-langkah ini ke proyek Anda sendiri dan menyempurnakan tugas manajemen dokumen Anda.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Apa tujuan mengekspor URL Cid untuk sumber daya MHTML?
-Mengekspor URL Cid untuk sumber daya MHTML memastikan bahwa sumber daya yang tertanam dalam file MHTML Anda direferensikan dengan benar, sehingga meningkatkan portabilitas dan integritas dokumen.
+Mengekspor URL Cid untuk sumber daya MHTML memastikan bahwa sumber daya yang tertanam dalam file MHTML Anda direferensikan dengan benar, meningkatkan portabilitas dan integritas dokumen.
 
 ### Bisakah saya menyesuaikan format keluaran lebih lanjut?
- Ya, Aspose.Words untuk .NET menawarkan opsi penyesuaian yang luas untuk menyimpan dokumen. Mengacu kepada[dokumentasi](https://reference.aspose.com/words/net/) untuk lebih jelasnya.
+ Ya, Aspose.Words untuk .NET menawarkan opsi penyesuaian yang luas untuk menyimpan dokumen. Lihat[dokumentasi](https://reference.aspose.com/words/net/) untuk lebih jelasnya.
 
 ### Apakah saya memerlukan lisensi untuk menggunakan Aspose.Words untuk .NET?
- Ya, Anda memerlukan lisensi untuk menggunakan Aspose.Words untuk .NET. Anda bisa mendapatkan uji coba gratis[Di Sini](https://releases.aspose.com/) atau membeli lisensi[Di Sini](https://purchase.aspose.com/buy).
+ Ya, Anda memerlukan lisensi untuk menggunakan Aspose.Words untuk .NET. Anda dapat memperoleh uji coba gratis[Di Sini](https://releases.aspose.com/) atau membeli lisensi[Di Sini](https://purchase.aspose.com/buy).
 
-### Bisakah saya mengotomatiskan proses ini untuk banyak dokumen?
-Sangat! Anda dapat membuat skrip untuk mengotomatiskan proses beberapa dokumen, memanfaatkan kekuatan Aspose.Words for .NET untuk menangani operasi batch secara efisien.
+### Bisakah saya mengotomatiskan proses ini untuk beberapa dokumen?
+Tentu saja! Anda dapat membuat skrip untuk mengotomatiskan proses untuk beberapa dokumen, memanfaatkan kekuatan Aspose.Words untuk .NET guna menangani operasi batch secara efisien.
 
 ### Di mana saya bisa mendapatkan dukungan jika saya mengalami masalah?
 Jika Anda memerlukan dukungan, kunjungi forum dukungan Aspose[Di Sini](https://forum.aspose.com/c/words/8) untuk bantuan dari komunitas dan pengembang Aspose.

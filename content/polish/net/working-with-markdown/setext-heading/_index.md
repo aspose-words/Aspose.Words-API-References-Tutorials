@@ -1,26 +1,26 @@
 ---
-title: Nagłówek setekstu
-linktitle: Nagłówek setekstu
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak używać Aspose.Words dla .NET do automatyzacji tworzenia i formatowania dokumentów programu Word, korzystając z tego wszechstronnego samouczka krok po kroku.
+title: Nagłówek Settext
+linktitle: Nagłówek Settext
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak za pomocą Aspose.Words for .NET zautomatyzować tworzenie i formatowanie dokumentów Word, korzystając z tego kompleksowego samouczka krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/working-with-markdown/setext-heading/
 ---
 ## Wstęp
 
-Czy kiedykolwiek próbowałeś bawić się automatyzacją dokumentów w .NET i czułeś się, jakbyś uderzył w ścianę? Cóż, dzisiaj zagłębimy się w Aspose.Words dla .NET, potężną bibliotekę, która sprawia, że manipulowanie dokumentami programu Word jest dziecinnie proste. Niezależnie od tego, czy chcesz programowo tworzyć, modyfikować czy konwertować dokumenty, Aspose.Words Cię wspiera. W tym samouczku przeprowadzimy Cię krok po kroku przez cały proces, upewniając się, że możesz śmiało używać Aspose.Words do wstawiania pól za pomocą narzędzia Field Builder i obsługiwać bloki adresów korespondencji seryjnej jak profesjonalista.
+Czy kiedykolwiek próbowałeś majstrować przy automatyzacji dokumentów w .NET i czułeś, że uderzyłeś w ścianę? Cóż, dzisiaj zagłębimy się w Aspose.Words dla .NET, potężną bibliotekę, która sprawia, że manipulowanie dokumentami Worda staje się dziecinnie proste. Niezależnie od tego, czy chcesz tworzyć, modyfikować czy konwertować dokumenty programowo, Aspose.Words ma dla Ciebie wsparcie. W tym samouczku przeprowadzimy Cię przez cały proces krok po kroku, zapewniając, że możesz pewnie używać Aspose.Words do wstawiania pól za pomocą Field Builder i obsługiwać bloki adresów korespondencji seryjnej jak profesjonalista.
 
-## Warunki wstępne
+## Wymagania wstępne
 
 Zanim przejdziemy do kodu, upewnijmy się, że mamy wszystko, czego potrzebujemy:
 
-1. Środowisko programistyczne: Visual Studio (lub dowolne inne preferowane IDE).
-2. .NET Framework: Upewnij się, że masz zainstalowany program .NET Framework 4.0 lub nowszy.
-3.  Aspose.Words dla .NET: Można[pobierz najnowszą wersję](https://releases.aspose.com/words/net/) lub zdobądź[bezpłatna wersja próbna](https://releases.aspose.com/).
-4. Podstawowa znajomość języka C#: Pomocna będzie znajomość składni języka C# i podstawowych koncepcji programowania.
+1. Środowisko programistyczne: Visual Studio (lub inne preferowane środowisko IDE).
+2. .NET Framework: Upewnij się, że masz zainstalowany .NET Framework 4.0 lub nowszy.
+3.  Aspose.Words dla .NET: Możesz[pobierz najnowszą wersję](https://releases.aspose.com/words/net/) lub zdobądź[bezpłatny okres próbny](https://releases.aspose.com/).
+4. Podstawowa znajomość języka C#: Znajomość składni języka C# i podstawowych koncepcji programowania będzie pomocna.
 
-Gdy już je przygotujesz, możemy zaczynać!
+Gdy już to wszystko ustawimy, możemy zaczynać!
 
 ## Importuj przestrzenie nazw
 
@@ -34,44 +34,44 @@ using Aspose.Words.Saving;
 
 ## Krok 1: Konfigurowanie katalogu dokumentów
 
-Na początek musimy określić ścieżkę do naszego katalogu dokumentów. Tutaj będą zapisywane nasze dokumenty Worda.
+Po pierwsze, musimy określić ścieżkę do naszego katalogu dokumentów. To tutaj będą zapisywane nasze dokumenty Word.
 
 ```csharp
 // Ścieżka do katalogu dokumentów.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Krok 2: Tworzenie kreatora dokumentów
+## Krok 2: Tworzenie Kreatora Dokumentów
 
- Następnie utworzymy instancję`DocumentBuilder` klasa. Ta klasa pomaga nam dodawać treść do naszego dokumentu programu Word.
+ Następnie utworzymy instancję`DocumentBuilder` klasa. Ta klasa pomaga nam dodawać zawartość do naszego dokumentu Word.
 
 ```csharp
-// Użyj narzędzia do tworzenia dokumentów, aby dodać treść do dokumentu.
+// Użyj kreatora dokumentów, aby dodać treść do dokumentu.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Krok 3: Dodawanie tagu nagłówka 1
+## Krok 3: Dodawanie znacznika Nagłówek 1
 
-Zacznijmy od dodania do naszego dokumentu znacznika Heading 1. To będzie nasz główny tytuł.
+Zacznijmy od dodania do naszego dokumentu znacznika Heading 1. Będzie to nasz główny tytuł.
 
 ```csharp
 builder.ParagraphFormat.StyleName = "Heading 1";
 builder.Writeln("This is an H1 tag");
 ```
 
-## Krok 4: Resetowanie stylów akapitowych
+## Krok 4: Resetowanie stylów akapitu
 
 Po dodaniu nagłówka musimy zresetować style, aby mieć pewność, że nie zostaną przeniesione do następnego akapitu.
 
 ```csharp
-// Zresetuj style z poprzedniego akapitu, aby nie łączyć stylów między akapitami.
+//Zresetuj style z poprzedniego akapitu, aby nie łączyć stylów pomiędzy akapitami.
 builder.Font.Bold = false;
 builder.Font.Italic = false;
 ```
 
-## Krok 5: Dodawanie nagłówka Setext, poziom 1
+## Krok 5: Dodawanie nagłówka Settext Poziom 1
 
-Teraz dodamy nagłówek Setext poziomu 1. Nagłówki Setext to kolejny sposób definiowania nagłówków w przecenach.
+Teraz dodamy nagłówek Setext poziomu 1. Nagłówki Setext to kolejny sposób definiowania nagłówków w Markdown.
 
 ```csharp
 Style setexHeading1 = builder.Document.Styles.Add(StyleType.Paragraph, "SetextHeading1");
@@ -80,65 +80,65 @@ builder.Document.Styles["SetextHeading1"].BaseStyleName = "Heading 1";
 builder.Writeln("Setext Heading level 1");
 ```
 
-## Krok 6: Dodawanie tagu nagłówka 3
+## Krok 6: Dodawanie znacznika nagłówka 3
 
-Następnie dodajmy do naszego dokumentu znacznik Nagłówek 3. Będzie to działać jako podtytuł.
+Następnie dodajmy do naszego dokumentu tag Heading 3. Będzie on działał jako podtytuł.
 
 ```csharp
 builder.ParagraphFormat.Style = builder.Document.Styles["Heading 3"];
 builder.Writeln("This is an H3 tag");
 ```
 
-## Krok 7: Ponowne resetowanie stylów akapitowych
+## Krok 7: Ponowne resetowanie stylów akapitu
 
-Tak jak poprzednio, musimy zresetować style, aby uniknąć niechcianego formatowania.
+Tak jak poprzednio, musimy zresetować style, aby uniknąć niepożądanego formatowania.
 
 ```csharp
-// Zresetuj style z poprzedniego akapitu, aby nie łączyć stylów między akapitami.
+//Zresetuj style z poprzedniego akapitu, aby nie łączyć stylów pomiędzy akapitami.
 builder.Font.Bold = false;
 builder.Font.Italic = false;
 ```
 
-## Krok 8: Dodawanie nagłówka Setext, poziom 2
+## Krok 8: Dodawanie nagłówka Setext Poziom 2
 
-Na koniec dodamy nagłówek Setext poziomu 2. Jest to przydatne do dalszego podziału struktury naszego dokumentu.
+Na koniec dodamy nagłówek Setext poziomu 2. Przyda się on do dalszego podziału struktury naszego dokumentu.
 
 ```csharp
 Style setexHeading2 = builder.Document.Styles.Add(StyleType.Paragraph, "SetextHeading2");
 builder.ParagraphFormat.Style = setexHeading2;
 builder.Document.Styles["SetextHeading2"].BaseStyleName = "Heading 3";
 
-// Poziom nagłówka Setex zostanie zresetowany do 2, jeśli akapit podstawowy ma poziom nagłówka większy niż 2.
+// Poziom nagłówka Setex zostanie zresetowany do 2, jeśli akapit bazowy ma poziom nagłówka większy niż 2.
 builder.Writeln("Setext Heading level 2");
 ```
 
 ## Krok 9: Zapisywanie dokumentu
 
-Teraz, gdy dodaliśmy już naszą treść i ją sformatowaliśmy, czas zapisać dokument.
+Teraz, gdy dodaliśmy treść i ją sformatowaliśmy, czas zapisać dokument.
 
 ```csharp
 builder.Document.Save(dataDir + "Test.md");
 ```
 
-I tyle! Właśnie utworzyłeś dokument programu Word przy użyciu Aspose.Words dla .NET, wraz z nagłówkami i sformatowanym tekstem.
+I to wszystko! Właśnie utworzyłeś dokument Worda za pomocą Aspose.Words dla .NET, kompletny z nagłówkami i sformatowanym tekstem.
 
 ## Wniosek
 
-Proszę bardzo, ludzie! Dzięki Aspose.Words dla .NET programowe manipulowanie dokumentami programu Word jest dziecinnie proste. Od skonfigurowania katalogu dokumentów po dodawanie różnych nagłówków i formatowanie tekstu, Aspose.Words zapewnia wszechstronne i elastyczne API, które zaspokoi wszystkie Twoje potrzeby w zakresie automatyzacji dokumentów. Niezależnie od tego, czy generujesz raporty, tworzysz szablony, czy obsługujesz korespondencję seryjną, ta biblioteka Ci pomoże. Więc śmiało, spróbuj — będziesz zaskoczony tym, co możesz osiągnąć!
+No i macie, ludzie! Dzięki Aspose.Words dla .NET programowe manipulowanie dokumentami Worda to bułka z masłem. Od konfiguracji katalogu dokumentów po dodawanie różnych nagłówków i formatowanie tekstu, Aspose.Words zapewnia kompleksowe i elastyczne API, które spełnia wszystkie Twoje potrzeby automatyzacji dokumentów. Niezależnie od tego, czy generujesz raporty, tworzysz szablony czy obsługujesz korespondencję seryjną, ta biblioteka ma wszystko, czego potrzebujesz. Więc śmiało, wypróbuj ją — będziesz zdumiony tym, co możesz osiągnąć!
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Co to jest Aspose.Words dla .NET?
-Aspose.Words dla .NET to potężna biblioteka, która umożliwia programistom tworzenie, modyfikowanie i konwertowanie dokumentów programu Word programowo przy użyciu C# lub VB.NET.
+### Czym jest Aspose.Words dla .NET?
+Aspose.Words for .NET to zaawansowana biblioteka umożliwiająca programistom tworzenie, modyfikowanie i konwertowanie dokumentów Word programowo przy użyciu języka C# lub VB.NET.
 
 ### Jak zainstalować Aspose.Words dla .NET?
- Najnowszą wersję można pobrać ze strony[Strona Aspose](https://releases.aspose.com/words/net/) lub zdobądź[bezpłatna wersja próbna](https://releases.aspose.com/).
+ Najnowszą wersję można pobrać ze strony[Strona internetowa Aspose](https://releases.aspose.com/words/net/) lub zdobądź[bezpłatny okres próbny](https://releases.aspose.com/).
 
 ### Czy mogę używać Aspose.Words dla .NET z .NET Core?
-Tak, Aspose.Words dla .NET obsługuje .NET Core, co pozwala na używanie go w aplikacjach wieloplatformowych.
+Tak, Aspose.Words for .NET obsługuje platformę .NET Core, co pozwala na jego wykorzystanie w aplikacjach wieloplatformowych.
 
-### Czy istnieje darmowa wersja Aspose.Words dla .NET?
- Aspose oferuje m.in[bezpłatna wersja próbna](https://releases.aspose.com/) których możesz użyć do oceny biblioteki przed zakupem licencji.
+### Czy istnieje bezpłatna wersja Aspose.Words dla platformy .NET?
+ Aspose oferuje[bezpłatny okres próbny](https://releases.aspose.com/) którego możesz użyć do oceny biblioteki przed zakupem licencji.
 
 ### Gdzie mogę uzyskać pomoc dotyczącą Aspose.Words dla .NET?
  Możesz uzyskać wsparcie od społeczności Aspose na ich stronie[forum wsparcia](https://forum.aspose.com/c/words/8).

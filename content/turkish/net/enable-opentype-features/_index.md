@@ -1,15 +1,15 @@
 ---
-title: OpenType özelliklerini etkinleştirin
-linktitle: OpenType özelliklerini etkinleştirin
+title: OpenType özelliklerini etkinleştir
+linktitle: OpenType özelliklerini etkinleştir
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET ile Word belgelerinde OpenType özelliklerini nasıl etkinleştireceğinizi öğrenin. Eğitimler, OpenType yazı tiplerinin gelişmiş özelliklerini etkinleştirme adımlarında size rehberlik edecektir.
+description: Aspose.Words for .NET ile Word belgelerinde OpenType özelliklerinin nasıl etkinleştirileceğini öğrenin. Eğitimler, OpenType yazı tiplerinin gelişmiş özelliklerini etkinleştirme adımlarında size rehberlik edecektir.
 type: docs
 weight: 40
 url: /tr/net/enable-opentype-features/
 ---
-Aspose.Words for .NET ile Word belgelerinizde OpenType özelliklerini nasıl etkinleştireceğinizi öğrenin. Bu ayrıntılı eğitim, bitişik harfler, stilistik alternatifler, bağlamsal ikameler ve daha fazlası gibi OpenType özelliklerini kullanma konusunda size adım adım yol gösterir. Word belgelerinizin tipografisini ve görünümünü iyileştirmek için bu özellikleri nasıl etkinleştireceğinizi öğrenin.
+Aspose.Words for .NET ile Word belgelerinizde OpenType özelliklerini nasıl etkinleştireceğinizi öğrenin. Bu ayrıntılı eğitim, bağlar, stilistik alternatifler, bağlamsal ikameler ve daha fazlası gibi OpenType özelliklerini adım adım kullanmanızı sağlar. Word belgelerinizin tipografisini ve görünümünü iyileştirmek için bu özellikleri nasıl etkinleştireceğinizi öğrenin.
 
- ## Öğreticiler
+ ## Eğitimler
 | Başlık | Tanım |
 | --- | --- |
-| [Açık Tip Özellikler](./open-type-features/) | Bu ayrıntılı, adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerinde OpenType özelliklerini nasıl etkinleştireceğinizi öğrenin. |
+| [Açık Tip Özellikleri](./open-type-features/) | Bu ayrıntılı, adım adım kılavuzla Aspose.Words for .NET'i kullanarak Word belgelerinde OpenType özelliklerinin nasıl etkinleştirileceğini öğrenin. |

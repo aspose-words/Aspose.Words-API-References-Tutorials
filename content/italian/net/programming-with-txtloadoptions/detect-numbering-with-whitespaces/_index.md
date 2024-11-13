@@ -1,28 +1,28 @@
 ---
-title: Rileva la numerazione con spazi bianchi
-linktitle: Rileva la numerazione con spazi bianchi
+title: Rileva la numerazione con gli spazi vuoti
+linktitle: Rileva la numerazione con gli spazi vuoti
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come utilizzare Aspose.Words per .NET per rilevare la numerazione con spazi bianchi nei documenti di testo normale e garantire che i tuoi elenchi siano riconosciuti correttamente.
+description: Scopri come utilizzare Aspose.Words per .NET per rilevare la numerazione con spazi nei documenti di testo normale e garantire che i tuoi elenchi vengano riconosciuti correttamente.
 type: docs
 weight: 10
 url: /it/net/programming-with-txtloadoptions/detect-numbering-with-whitespaces/
 ---
 ## Introduzione
 
-Aspose.Words per gli appassionati di .NET! Oggi ci addentreremo in un'affascinante funzionalità che può rendere la gestione degli elenchi nei documenti in chiaro un gioco da ragazzi. Hai mai avuto a che fare con file di testo in cui alcune righe dovrebbero essere elenchi, ma semplicemente non sembrano corrette quando vengono caricate in un documento Word? Bene, abbiamo un bel asso nella manica: rilevare la numerazione con spazi bianchi. Questo tutorial ti guiderà attraverso come utilizzare il file`DetectNumberingWithWhitespaces` opzione in Aspose.Words per .NET per garantire che i tuoi elenchi vengano riconosciuti correttamente, anche quando c'è spazio bianco tra i numeri e il testo.
+Aspose.Words per gli appassionati di .NET! Oggi ci immergiamo in una funzionalità affascinante che può semplificare la gestione degli elenchi nei documenti in testo normale. Hai mai avuto a che fare con file di testo in cui alcune righe dovrebbero essere elenchi, ma non sembrano proprio corretti quando vengono caricati in un documento Word? Bene, abbiamo un bel trucco nella manica: rilevare la numerazione con spazi vuoti. Questo tutorial ti guiderà attraverso l'uso di`DetectNumberingWithWhitespaces` opzione in Aspose.Words per .NET per garantire che gli elenchi vengano riconosciuti correttamente, anche quando sono presenti spazi vuoti tra i numeri e il testo.
 
 ## Prerequisiti
 
 Prima di iniziare, assicurati di avere quanto segue:
 
--  Aspose.Words per .NET: puoi scaricarlo dal file[Rilasci Aspose](https://releases.aspose.com/words/net/) pagina.
+-  Aspose.Words per .NET: puoi scaricarlo da[Rilasci di Aspose](https://releases.aspose.com/words/net/) pagina.
 - Ambiente di sviluppo: Visual Studio o qualsiasi altro IDE C#.
 - .NET Framework installato sul tuo computer.
-- Conoscenza di base di C#: comprendere le nozioni di base ti aiuterà a seguire gli esempi.
+- Conoscenza di base di C#: comprendere le basi ti aiuterà a seguire gli esempi.
 
-## Importa spazi dei nomi
+## Importazione degli spazi dei nomi
 
-Prima di tuffarti nel codice, assicurati di aver importato gli spazi dei nomi necessari nel tuo progetto. Ecco un breve frammento per iniziare:
+Prima di buttarti nel codice, assicurati di aver importato i namespace necessari nel tuo progetto. Ecco un breve frammento per iniziare:
 
 ```csharp
 using System;
@@ -30,20 +30,20 @@ using Aspose.Words;
 using Aspose.Words.Loading;
 ```
 
-Analizziamo il processo in passaggi semplici e gestibili. Ogni passaggio ti guiderà attraverso il codice necessario e spiegherà cosa sta succedendo.
+Analizziamo il processo in semplici passaggi gestibili. Ogni passaggio ti guiderà attraverso il codice necessario e spiegherà cosa sta succedendo.
 
 ## Passaggio 1: definire la directory dei documenti
 
-Per prima cosa, impostiamo il percorso della directory dei documenti. Qui è dove verranno archiviati i file di input e di output.
+Per prima cosa, impostiamo il percorso per la directory dei tuoi documenti. È qui che verranno archiviati i tuoi file di input e output.
 
 ```csharp
-// Percorso della directory dei documenti
+// Percorso alla directory del documento
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Passaggio 2: crea un documento di testo normale
+## Passaggio 2: creare un documento in testo normale
 
-Successivamente, creeremo un documento di testo normale come una stringa. Questo documento conterrà parti che possono essere interpretate come elenchi.
+Successivamente, creeremo un documento di testo normale come stringa. Questo documento conterrà parti che potrebbero essere interpretate come elenchi.
 
 ```csharp
 const string textDoc = "Full stop delimiters:\n" +
@@ -64,9 +64,9 @@ const string textDoc = "Full stop delimiters:\n" +
                        "3 Fourth list item 3";
 ```
 
-## Passaggio 3: configura LoadOptions
+## Passaggio 3: configurare LoadOptions
 
- Per rilevare la numerazione con spazi bianchi, dobbiamo impostare il file`DetectNumberingWithWhitespaces` opzione a`true` nell'a`TxtLoadOptions` oggetto.
+ Per rilevare la numerazione con spazi vuoti, dobbiamo impostare`DetectNumberingWithWhitespaces` opzione per`true` in un`TxtLoadOptions` oggetto.
 
 ```csharp
 TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
@@ -74,15 +74,15 @@ TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces
 
 ## Passaggio 4: caricare il documento
 
- Ora carichiamo il documento utilizzando il file`TxtLoadOptions` come parametro. Ciò garantisce che il quarto elenco (con spazi bianchi) venga rilevato correttamente.
+ Ora carichiamo il documento utilizzando`TxtLoadOptions` come parametro. Ciò assicura che il quarto elenco (con spazi vuoti) venga rilevato correttamente.
 
 ```csharp
 Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), loadOptions);
 ```
 
-## Passaggio 5: salva il documento
+## Passaggio 5: Salvare il documento
 
-Infine, salva il documento nella directory specificata. Ciò genererà un documento Word con elenchi rilevati correttamente.
+Infine, salva il documento nella directory specificata. Questo produrrà un documento Word con elenchi rilevati correttamente.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
@@ -90,22 +90,22 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.doc
 
 ## Conclusione
 
-Ed ecco qua! Con solo poche righe di codice, hai imparato l'arte di rilevare la numerazione con spazi bianchi nei documenti di testo normale utilizzando Aspose.Words per .NET. Questa funzionalità può essere incredibilmente utile quando si ha a che fare con vari formati di testo e si garantisce che gli elenchi siano rappresentati accuratamente nei documenti di Word. Quindi la prossima volta che incontrerai questi elenchi complicati, saprai esattamente cosa fare.
+Ed ecco fatto! Con solo poche righe di codice, hai padroneggiato l'arte di rilevare la numerazione con spazi vuoti nei documenti di testo normale usando Aspose.Words per .NET. Questa funzionalità può essere incredibilmente utile quando si ha a che fare con vari formati di testo e si garantisce che i tuoi elenchi siano rappresentati in modo accurato nei tuoi documenti Word. Quindi la prossima volta che ti imbatterai in quegli elenchi difficili, saprai esattamente cosa fare.
 
 ## Domande frequenti
 
 ###  Cosa è`DetectNumberingWithWhitespaces` in Aspose.Words for .NET?
-`DetectNumberingWithWhitespaces` è un'opzione in`TxtLoadOptions` che consente ad Aspose.Words di riconoscere gli elenchi anche quando sono presenti spazi bianchi tra la numerazione e il testo dell'elemento dell'elenco.
+`DetectNumberingWithWhitespaces` è un'opzione in`TxtLoadOptions` che consente ad Aspose.Words di riconoscere gli elenchi anche quando sono presenti spazi vuoti tra la numerazione e il testo dell'elemento dell'elenco.
 
-### Posso utilizzare questa funzione per altri delimitatori come punti elenco e parentesi?
- Sì, Aspose.Words rileva automaticamente gli elenchi con delimitatori comuni come punti elenco e parentesi. IL`DetectNumberingWithWhitespaces` aiuta specificamente con gli elenchi che contengono spazi bianchi.
+### Posso usare questa funzionalità per altri delimitatori come elenchi puntati e parentesi?
+ Sì, Aspose.Words rileva automaticamente gli elenchi con delimitatori comuni come punti elenco e parentesi.`DetectNumberingWithWhitespaces` aiuta in particolare con gli elenchi che contengono spazi vuoti.
 
 ###  Cosa succede se non lo uso`DetectNumberingWithWhitespaces`?
-Senza questa opzione, gli elenchi con spazi bianchi tra la numerazione e il testo potrebbero non essere riconosciuti come elenchi e gli elementi potrebbero apparire come semplici paragrafi.
+Senza questa opzione, gli elenchi con spazi vuoti tra la numerazione e il testo potrebbero non essere riconosciuti come elenchi e gli elementi potrebbero apparire come semplici paragrafi.
 
 ### Questa funzionalità è disponibile in altri prodotti Aspose?
-Questa funzionalità specifica è adattata per Aspose.Words per .NET, progettata per gestire l'elaborazione dei documenti Word.
+Questa funzionalità specifica è pensata su misura per Aspose.Words per .NET, progettato per gestire l'elaborazione dei documenti Word.
 
 ### Come posso ottenere una licenza temporanea per Aspose.Words per .NET?
- È possibile ottenere una licenza temporanea da[Richiedi licenza temporanea](https://purchase.aspose.com/temporary-license/) pagina.
+ È possibile ottenere una licenza temporanea dall'[Licenza temporanea Aspose](https://purchase.aspose.com/temporary-license/) pagina.
 

@@ -16,7 +16,7 @@ Har du någonsin funnit dig trasslad i nätet av CSS-regler utspridda överallt 
 Innan vi dyker in i det nitty-gritty, låt oss få våra ankor på rad. Här är vad du behöver för att komma igång:
 
 1.  Aspose.Words for .NET: Se till att du har Aspose.Words for .NET-biblioteket. Om du inte har det än så kan du[ladda ner den här](https://releases.aspose.com/words/net/).
-2. .NET-utvecklingsmiljö: Du behöver en .NET-utvecklingsmiljö konfigurerad på din dator. Visual Studio är ett populärt val.
+2. .NET-utvecklingsmiljö: Du behöver en .NET-utvecklingsmiljö konfigurerad på din maskin. Visual Studio är ett populärt val.
 3. Grundläggande kunskaper i C#: En grundläggande förståelse för C#-programmering kommer att vara till hjälp.
 4. Ett Word-dokument: Ha ett Word-dokument (.docx) redo som du vill konvertera.
 
@@ -66,7 +66,7 @@ HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions
 Slutligen sparar vi dokumentet som en HTML-fil med hjälp av de konfigurerade sparalternativen. Detta steg säkerställer att alla CSS-regler skrivs i en enda fil.
 
 ```csharp
-//Konvertera dokument till fast HTML
+// Konvertera dokument till fast HTML
 doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile.html", saveOptions);
 ```
 
@@ -89,4 +89,4 @@ Att använda en enda CSS-fil förenklar hanteringen och underhållet av dina sti
 Aspose.Words för .NET stöder olika format inklusive PDF, TXT och bildformat som JPEG och PNG.
 
 ### Var kan jag hitta fler resurser på Aspose.Words för .NET?
- Kolla in[dokumentation](https://reference.aspose.com/words/net/) för omfattande guider och API-referenser.
+ Kolla in[dokumentation](https://reference.aspose.com/words/net/)för omfattande guider och API-referenser.

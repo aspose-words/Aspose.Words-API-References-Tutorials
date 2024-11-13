@@ -56,7 +56,7 @@ Document doc = new Document(dataDir + "Missing font.docx");
 
 ## ステップ3: HTML保存オプションの設定
 
-次に、ドキュメントを HTML として保存するためのオプションを設定します。ここでは、フォント名が正しく解決されることを確認します。
+次に、ドキュメントを HTML として保存するためのオプションを設定しましょう。ここでは、フォント名が正しく解決されることを確認します。
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions(SaveFormat.Html)

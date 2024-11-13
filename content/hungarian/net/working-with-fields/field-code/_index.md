@@ -72,7 +72,7 @@ foreach(Field field in doc.Range.Fields)
 
  Magyarázat: Ez a kódrészlet végigfut a dokumentum minden mezőjén. Minden mezőnél lekéri a mező kódját és a mező eredményét. A`GetFieldCode()` metódus a nyers mezőkódot adja vissza, míg a`Result` tulajdonság megadja a mező által előállított értéket vagy eredményt.
 
-## 4. lépés: A mezőkódok feldolgozása
+## 4. lépés: Mezőkódok feldolgozása
 
 Most, hogy hozzáfér a mezőkódokhoz és azok eredményeihez, igény szerint feldolgozhatja azokat. Érdemes lehet ezeket megjeleníteni, módosítani, vagy használni bizonyos számításokhoz.
 

@@ -60,7 +60,7 @@ TextBox textBox = shape.TextBox;
 ```
 
 - `ShapeType.TextBox`テキスト ボックスの図形を作成することを指定します。
-- `textBox`は、私たちが操作するテキスト ボックス オブジェクトです。
+- `textBox`操作するテキスト ボックス オブジェクトです。
 
 ## ステップ3: 前方リンクを解除する
 

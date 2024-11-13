@@ -32,7 +32,7 @@ using Aspose.Words.Saving;
 
 ## ステップ1: Word文書を読み込む
 
-最初のステップは、変換する Word 文書を読み込むことです。文書ディレクトリへのパスを確認してください。
+最初のステップは、変換する Word 文書を読み込むことです。文書ディレクトリへのパスを必ず確認してください。
 
 ```csharp
 //ドキュメント ディレクトリへのパス。
@@ -53,7 +53,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
-ここでは、`PdfSaveOptions`オブジェクトを設定し、`Compliance`財産に`PdfCompliance.Pdf17`これにより、PDF が 1.7 標準に準拠していることが保証されます。
+ここでは、`PdfSaveOptions`オブジェクトを設定し、`Compliance`財産に`PdfCompliance.Pdf17`これにより、PDF が 1.7 標準を満たしていることが保証されます。
 
 ## ステップ3: ドキュメントをPDFとして保存する
 
@@ -67,7 +67,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ConversionToPdf17.pdf", saveOption
 
 ## 結論
 
-これで完了です。Aspose.Words for .NET を使用した Word 文書の PDF 1.7 への変換は、簡単かつ効率的です。このプロセスにより、時間が節約されるだけでなく、文書が誰でもアクセス可能になり、プロフェッショナルなフォーマットに保たれます。法律文書、学術論文、ビジネス レポートのいずれを扱う場合でも、この方法は信頼できるソリューションです。
+これで完了です。Aspose.Words for .NET を使用した Word 文書の PDF 1.7 への変換は、簡単かつ効率的です。このプロセスにより、時間が節約されるだけでなく、文書が誰でもアクセス可能で、プロフェッショナルな形式に整えられるようになります。法律文書、学術論文、ビジネス レポートのいずれを扱う場合でも、この方法は信頼できるソリューションです。
 
 ## よくある質問
 

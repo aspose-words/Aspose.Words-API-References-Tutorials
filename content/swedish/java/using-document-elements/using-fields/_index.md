@@ -10,7 +10,7 @@ url: /sv/java/using-document-elements/using-fields/
 
 denna steg-för-steg handledning kommer vi att guida dig om hur du använder fält i Aspose.Words för Java för att enkelt manipulera dokument. Aspose.Words för Java är ett kraftfullt API som låter dig arbeta med Word-dokument programmatiskt, vilket ger dig full kontroll över deras innehåll och formatering.
 
-## 1. Inledning
+## 1. Introduktion
 
 Aspose.Words för Java är ett viktigt verktyg för alla som arbetar med Word-dokument i Java-applikationer. Fält är platshållare som kan lagra dynamisk data i ditt dokument. Denna handledning visar dig hur du arbetar med fält effektivt.
 
@@ -28,7 +28,7 @@ string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
 ```
 
- Ersätta`"Your Document Directory"`och`"Your Output Directory"` med lämpliga vägar.
+ Ersätta`"Your Document Directory"` och`"Your Output Directory"` med lämpliga vägar.
 
 ## 4. Anpassa Mail Merge
 

@@ -1,6 +1,6 @@
 ---
-title: Tetapkan Tingkat Kompresi
-linktitle: Tetapkan Tingkat Kompresi
+title: Atur Tingkat Kompresi
+linktitle: Atur Tingkat Kompresi
 second_title: API Pemrosesan Dokumen Aspose.Words
 description: Pelajari cara mengatur tingkat kompresi dalam dokumen Word menggunakan Aspose.Words untuk .NET. Ikuti panduan langkah demi langkah kami untuk mengoptimalkan penyimpanan dan kinerja dokumen Anda.
 type: docs
@@ -9,13 +9,13 @@ url: /id/net/programming-with-ooxmlsaveoptions/set-compression-level/
 ---
 ## Perkenalan
 
-Siap terjun ke dunia kompresi dokumen dengan Aspose.Words untuk .NET? Baik Anda ingin mengoptimalkan penyimpanan dokumen atau mempercepat waktu pemrosesan, mengatur tingkat kompresi dapat membuat perbedaan besar. Dalam tutorial ini, kita akan memandu proses pengaturan tingkat kompresi untuk dokumen Word menggunakan Aspose.Words untuk .NET. Di akhir panduan ini, Anda akan menjadi ahli dalam membuat dokumen Anda lebih ramping dan rapi.
+Siap menyelami dunia kompresi dokumen dengan Aspose.Words untuk .NET? Baik Anda ingin mengoptimalkan penyimpanan dokumen atau mempercepat waktu pemrosesan, pengaturan tingkat kompresi dapat membuat perbedaan besar. Dalam tutorial ini, kami akan memandu Anda melalui proses pengaturan tingkat kompresi untuk dokumen Word menggunakan Aspose.Words untuk .NET. Di akhir panduan ini, Anda akan menjadi ahli dalam membuat dokumen Anda lebih ramping dan lebih ringkas.
 
 ## Prasyarat
 
-Sebelum kita masuk ke seluk beluknya, pastikan Anda memiliki semua yang perlu Anda ikuti bersama dengan tutorial ini:
+Sebelum kita masuk ke inti pembahasan, mari pastikan Anda memiliki semua yang dibutuhkan untuk mengikuti tutorial ini:
 
-1.  Aspose.Words for .NET: Pastikan Anda telah menginstal perpustakaan Aspose.Words for .NET. Anda dapat mengunduhnya dari[Halaman Rilis Aspose](https://releases.aspose.com/words/net/).
+1.  Aspose.Words untuk .NET: Pastikan Anda telah menginstal pustaka Aspose.Words untuk .NET. Anda dapat mengunduhnya dari[Halaman Rilis Aspose](https://releases.aspose.com/words/net/).
 
 2. Lingkungan Pengembangan: Anda harus menyiapkan lingkungan pengembangan, seperti Visual Studio.
 
@@ -23,28 +23,28 @@ Sebelum kita masuk ke seluk beluknya, pastikan Anda memiliki semua yang perlu An
 
 4. Contoh Dokumen: Siapkan dokumen Word (misalnya, "Document.docx") di direktori proyek Anda.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Hal pertama yang pertama, mari impor namespace yang diperlukan. Ini penting untuk mengakses fungsi Aspose.Words.
+Pertama-tama, mari impor namespace yang diperlukan. Ini penting untuk mengakses fungsi Aspose.Words.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Baiklah, mari kita bagi menjadi beberapa langkah kecil agar Anda mudah mengikutinya.
+Baiklah, mari kita uraikan ini ke dalam langkah-langkah kecil agar mudah Anda ikuti.
 
 ## Langkah 1: Siapkan Proyek Anda
 
-Sebelum kita masuk ke kodenya, pastikan proyek Anda sudah diatur dengan benar.
+Sebelum kita masuk ke kode, pastikan proyek Anda telah disiapkan dengan benar.
 
 ### Langkah 1.1: Buat Proyek Baru
 
-Buka Visual Studio dan buat proyek Aplikasi Konsol C# baru. Beri nama seperti "AsposeWordsCompressionDemo".
+Buka Visual Studio dan buat proyek Aplikasi Konsol C# baru. Beri nama seperti "AsposeWordsCompressionDemo."
 
 ### Langkah 1.2: Instal Aspose.Words untuk .NET
 
-Anda perlu menambahkan Aspose.Words untuk .NET ke proyek Anda. Anda dapat melakukan ini melalui Manajer Paket NuGet. Cari "Aspose.Words" dan instal. Alternatifnya, Anda dapat menggunakan Konsol Manajer Paket:
+Anda perlu menambahkan Aspose.Words for .NET ke proyek Anda. Anda dapat melakukannya melalui Pengelola Paket NuGet. Cari "Aspose.Words" dan instal. Atau, Anda dapat menggunakan Konsol Pengelola Paket:
 
 ```shell
 Install-Package Aspose.Words
@@ -52,7 +52,7 @@ Install-Package Aspose.Words
 
 ## Langkah 2: Muat Dokumen Anda
 
-Sekarang proyek Anda sudah siap, mari muat dokumen yang ingin Anda kerjakan.
+Sekarang proyek Anda sudah disiapkan, mari muat dokumen yang ingin Anda kerjakan.
 
 ### Langkah 2.1: Tentukan Direktori Dokumen
 
@@ -70,11 +70,11 @@ Gunakan kode berikut untuk memuat dokumen Word Anda:
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-## Langkah 3: Tetapkan Tingkat Kompresi
+## Langkah 3: Atur Tingkat Kompresi
 
 Di sinilah keajaiban terjadi. Kami akan mengatur tingkat kompresi untuk dokumen tersebut.
 
- Buat sebuah contoh dari`OoxmlSaveOptions` dan atur tingkat kompresi. Itu`CompressionLevel` properti dapat diatur ke berbagai level seperti`Normal`, `Maximum`, `Fast` , Dan`SuperFast` . Untuk contoh ini, kami akan menggunakan`SuperFast`.
+ Buat contoh dari`OoxmlSaveOptions` dan mengatur tingkat kompresi.`CompressionLevel` properti dapat diatur ke berbagai level seperti`Normal`, `Maximum`, `Fast` , Dan`SuperFast` Untuk contoh ini, kita akan menggunakan`SuperFast`.
 
 ```csharp
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions
@@ -93,29 +93,29 @@ Terakhir, simpan dokumen dengan pengaturan kompresi baru.
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.SetCompressionLevel.docx", saveOptions);
 ```
 
-## Langkah 5: Verifikasi Outputnya
+## Langkah 5: Verifikasi Output
 
-Setelah menjalankan aplikasi Anda, navigasikan ke direktori yang ditentukan dan periksa file baru. Anda akan melihat bahwa ukurannya diperkecil dibandingkan dengan dokumen aslinya, berkat pengaturan kompresi yang kami terapkan.
+Setelah menjalankan aplikasi Anda, navigasikan ke direktori yang ditentukan dan periksa berkas baru. Anda akan melihat bahwa ukurannya berkurang dibandingkan dengan dokumen asli, berkat pengaturan kompresi yang kami terapkan.
 
 ## Kesimpulan
 
-Dan itu dia! Anda telah berhasil mengatur tingkat kompresi untuk dokumen Word menggunakan Aspose.Words untuk .NET. Ini dapat mengurangi ukuran file secara signifikan dan meningkatkan kinerja saat bekerja dengan dokumen besar. Jangan lupa untuk menjelajahi tingkat kompresi lainnya untuk menemukan keseimbangan terbaik antara ukuran file dan kinerja untuk kebutuhan Anda.
+Nah, itu dia! Anda telah berhasil mengatur tingkat kompresi untuk dokumen Word menggunakan Aspose.Words for .NET. Ini dapat mengurangi ukuran file secara signifikan dan meningkatkan kinerja saat bekerja dengan dokumen berukuran besar. Jangan lupa untuk menjelajahi tingkat kompresi lainnya untuk menemukan keseimbangan terbaik antara ukuran file dan kinerja sesuai kebutuhan Anda.
 
-Jika Anda memiliki pertanyaan atau mengalami masalah apa pun, lihat[Dokumentasi Aspose.Words](https://reference.aspose.com/words/net/) atau menghubungi mereka[Forum Dukungan](https://forum.aspose.com/c/words/8).
+Jika Anda memiliki pertanyaan atau mengalami masalah, lihat[Dokumentasi Aspose.Words](https://reference.aspose.com/words/net/) atau hubungi mereka[Forum Dukungan](https://forum.aspose.com/c/words/8).
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Apa itu Aspose.Words untuk .NET?
 
-Aspose.Words untuk .NET adalah pustaka manipulasi dokumen canggih yang memungkinkan pengembang membuat, mengedit, mengonversi, dan mencetak dokumen Word secara terprogram menggunakan .NET.
+Aspose.Words untuk .NET adalah pustaka manipulasi dokumen canggih yang memungkinkan pengembang untuk membuat, mengedit, mengonversi, dan mencetak dokumen Word secara terprogram menggunakan .NET.
 
 ### Bagaimana cara menginstal Aspose.Words untuk .NET?
 
 Anda dapat menginstal Aspose.Words untuk .NET melalui NuGet Package Manager di Visual Studio. Cukup cari "Aspose.Words" dan instal.
 
-### Apa sajakah tingkat kompresi berbeda yang tersedia?
+### Apa saja tingkat kompresi yang tersedia?
 
-Aspose.Words for .NET menyediakan beberapa level kompresi antara lain Normal, Maksimum, Cepat, dan SuperFast. Setiap level menawarkan keseimbangan berbeda antara ukuran file dan kecepatan pemrosesan.
+Aspose.Words untuk .NET menyediakan beberapa tingkat kompresi termasuk Normal, Maksimum, Cepat, dan SuperCepat. Setiap tingkat menawarkan keseimbangan yang berbeda antara ukuran file dan kecepatan pemrosesan.
 
 ### Bisakah saya menerapkan kompresi ke format dokumen lain?
 
@@ -123,4 +123,4 @@ Ya, Aspose.Words untuk .NET mendukung kompresi untuk berbagai format dokumen ter
 
 ### Di mana saya bisa mendapatkan dukungan jika saya mengalami masalah?
 
- Anda bisa mendapatkan dukungan dari komunitas Aspose dengan mengunjungi mereka[Forum Dukungan](https://forum.aspose.com/c/words/8).
+ Anda bisa mendapatkan dukungan dari komunitas Aspose dengan mengunjungi[Forum Dukungan](https://forum.aspose.com/c/words/8).

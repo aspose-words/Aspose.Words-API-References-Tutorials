@@ -16,7 +16,7 @@ url: /ja/net/join-and-append-documents/list-keep-source-formatting/
 続行する前に、次の前提条件を満たしていることを確認してください。
 
 - マシンに Visual Studio がインストールされています。
--  Aspose.Words for .NETがインストールされていること。ダウンロードはこちらから[ここ](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NETがインストールされています。ダウンロードはこちらから[ここ](https://releases.aspose.com/words/net/).
 - C# プログラミングと .NET 環境に関する基本的な知識。
 
 ## 名前空間のインポート

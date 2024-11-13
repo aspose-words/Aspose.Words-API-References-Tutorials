@@ -98,4 +98,4 @@ Teljesen! Az Aspose.Words különféle típusú hivatkozásokat támogat, beleé
 
 ### Hol találhatok részletesebb dokumentációt az Aspose.Words for .NET-ről?
 
- A részletes dokumentációt megtalálja[itt](https://reference.aspose.com/words/net/).
+ A részletes dokumentációt megtalálod[itt](https://reference.aspose.com/words/net/).

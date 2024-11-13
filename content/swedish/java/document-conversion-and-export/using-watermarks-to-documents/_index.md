@@ -10,7 +10,7 @@ url: /sv/java/document-conversion-and-export/using-watermarks-to-documents/
 
 ## Introduktion till att lägga till vattenstämplar till dokument i Aspose.Words för Java
 
-I den här handledningen kommer vi att utforska hur man lägger till vattenstämplar i dokument med Aspose.Words för Java API. Vattenstämplar är ett användbart sätt att märka dokument med text eller grafik för att ange deras status, konfidentialitet eller annan relevant information. Vi kommer att täcka både text- och bildvattenstämplar i den här guiden.
+den här handledningen kommer vi att utforska hur man lägger till vattenstämplar i dokument med Aspose.Words för Java API. Vattenstämplar är ett användbart sätt att märka dokument med text eller grafik för att ange deras status, konfidentialitet eller annan relevant information. Vi kommer att täcka både text- och bildvattenstämplar i den här guiden.
 
 ## Konfigurera Aspose.Words för Java
 
@@ -27,7 +27,7 @@ Nu när vi har satt upp biblioteket, låt oss fortsätta med att lägga till vat
 Textvattenstämplar är ett vanligt val när du vill lägga till textinformation i dina dokument. Så här kan du lägga till en textvattenstämpel med Aspose.Words för Java:
 
 ```java
-//Skapa en dokumentinstans
+// Skapa en dokumentinstans
 Document doc = new Document("Document.docx");
 
 // Definiera TextWatermarkOptions
@@ -38,7 +38,7 @@ options.setColor(Color.BLACK);
 options.setLayout(WatermarkLayout.HORIZONTAL);
 options.setSemitransparent(false);
 
-// Ställ in vattenstämpelns text och alternativ
+//Ställ in vattenstämpelns text och alternativ
 doc.getWatermark().setText("Test", options);
 
 // Spara dokumentet med vattenstämpeln
@@ -50,7 +50,7 @@ doc.save("DocumentWithWatermark.docx");
 Förutom textvattenstämplar kan du även lägga till bildvattenstämplar i dina dokument. Så här lägger du till en bildvattenstämpel:
 
 ```java
-//Skapa en dokumentinstans
+// Skapa en dokumentinstans
 Document doc = new Document("Document.docx");
 
 // Ladda bilden för vattenstämpeln
@@ -80,7 +80,7 @@ Du kan anpassa vattenstämplar genom att justera deras utseende och placering. F
 För att ta bort vattenstämplar från ett dokument kan du använda följande kod:
 
 ```java
-//Skapa en dokumentinstans
+// Skapa en dokumentinstans
 Document doc = new Document("DocumentWithWatermark.docx");
 
 // Ta bort vattenstämpeln
@@ -119,7 +119,7 @@ options.setFontFamily("Times New Roman");
 
  Ja, du kan rotera en vattenstämpel genom att ställa in`setRotation` egendom i`Shape` objekt. Positiva värden roterar vattenstämpeln medurs och negativa värden roterar den moturs.
 
-### Hur gör jag en vattenstämpel halvtransparent?
+### Hur kan jag göra en vattenstämpel halvtransparent?
 
  För att göra en vattenstämpel halvtransparent, ställ in`setSemitransparent`egendom till`true` i`TextWatermarkOptions`.
 

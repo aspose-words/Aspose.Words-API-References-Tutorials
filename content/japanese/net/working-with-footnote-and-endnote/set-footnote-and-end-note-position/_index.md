@@ -1,5 +1,5 @@
 ---
-title: 脚注と末尾の注釈の位置を設定する
+title: 脚注と文末脚注の位置を設定する
 linktitle: 脚注と末尾の注釈の位置を設定する
 second_title: Aspose.Words ドキュメント処理 API
 description: この詳細なステップバイステップ ガイドでは、Aspose.Words for .NET を使用して Word 文書内の脚注と文末脚注の位置を設定する方法を学習します。
@@ -57,7 +57,7 @@ doc.FootnoteOptions.Position = FootnotePosition.BeneathText;
 doc.EndnoteOptions.Position = EndnotePosition.EndOfSection;
 ```
 
-この例では、各セクションの最後に文末脚注を配置しています。文末脚注を文書の最後に配置するには、`EndnotePosition.EndOfDocument`.
+この例では、各セクションの最後に文末脚注を配置します。文末脚注を文書の最後に配置するには、`EndnotePosition.EndOfDocument`.
 
 ## ステップ4: ドキュメントを保存する
 

@@ -1,5 +1,5 @@
 ---
-title: Aspose.Words Java を使用した HTML ドキュメントの高度な保存オプション
+title: Aspose.Words Java を使用した HTML ドキュメントの保存オプションの強化
 linktitle: HTML文書を保存する
 second_title: Aspose.Words Java ドキュメント処理 API
 description: このチュートリアルでは、Aspose.Words for Javaのさまざまな高度なHTMLドキュメント保存オプションについて説明しました。これらのオプションにより、高品質のHTMLを作成できます。
@@ -108,7 +108,7 @@ public void resolveFontNames() throws Exception {
 }
 ```
 
-## 10. テキスト入力フォームフィールドをテキストとしてエクスポート
+## 10. テキスト入力フォームフィールドをテキストとしてエクスポートする
 の`exportTextInputFormFieldAsText`このメソッドは、フォーム フィールドを HTML 内のプレーン テキストとしてエクスポートし、簡単に読み取りおよび編集できるようにします。
 
 ```java
@@ -122,13 +122,13 @@ public void exportTextInputFormFieldAsText() throws Exception {
 このチュートリアルでは、Aspose.Words for Java が提供する高度な HTML ドキュメント保存オプションについて説明しました。これらのオプションを使用すると、変換プロセスを細かく制御できるため、元の Word ドキュメントによく似た HTML ドキュメントを作成できます。
 
 ## 12. よくある質問
-Aspose.Words for Java および HTML ドキュメント保存オプションの使用に関するよくある質問を以下に示します。
+Aspose.Words for Java および HTML ドキュメント保存オプションの使用に関するよくある質問を次に示します。
 
 ### Q1: Aspose.Words for Java を使用して HTML を Word 形式に戻すにはどうすればよいですか?
  HTMLをWord形式に戻すには、Aspose.Words APIの`load`HTML ドキュメントを読み込み、Word 形式で保存する方法。
 
 ### Q2: HTML にエクスポートするときに CSS スタイルをカスタマイズできますか?
-はい、HTMLで使用されるスタイルシートを変更するか、`addCssClassNamePrefix` CSS クラス名にプレフィックスを追加するメソッド。
+はい、HTMLで使用されているスタイルシートを変更するか、`addCssClassNamePrefix` CSS クラス名にプレフィックスを追加するメソッド。
 
 ### Q3: HTML 出力を Web 表示用に最適化する方法はありますか?
 はい、フォントを Base64 としてエクスポートしたり、メタファイルを SVG に変換したりするなどのオプションを構成することで、HTML 出力を Web 表示用に最適化できます。

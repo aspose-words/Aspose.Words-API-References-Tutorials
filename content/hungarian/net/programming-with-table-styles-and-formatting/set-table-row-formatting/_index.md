@@ -81,7 +81,7 @@ builder.Writeln("I'm a wonderfully formatted row.");
 builder.EndRow();
 ```
 
-## 6. lépés: Végezze el a táblázatot
+## 6. lépés: Véglegesítse a táblázatot
 
 A táblázatkészítési folyamat lezárásához be kell fejeznie a táblázatot, és el kell mentenie a dokumentumot.
 
@@ -106,7 +106,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableR
  A szöveg igazítását a beállításával módosíthatja`ParagraphFormat.Alignment` tulajdona a`DocumentBuilder` objektum.
 
 ### Egyesíthetek cellákat egy táblázatban az Aspose.Words for .NET használatával?
- Igen, egyesítheti a cellákat a`CellFormat.HorizontalMerge`és`CellFormat.VerticalMerge` tulajdonságait.
+ Igen, egyesítheti a cellákat a`CellFormat.HorizontalMerge` és`CellFormat.VerticalMerge` tulajdonságait.
 
 ### Van mód a táblázat stílusozására előre meghatározott stílusokkal?
  Igen, az Aspose.Words for .NET lehetővé teszi előre meghatározott táblázatstílusok alkalmazását a`Table.Style` ingatlan.

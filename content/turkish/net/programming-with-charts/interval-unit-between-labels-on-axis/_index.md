@@ -1,6 +1,6 @@
 ---
-title: Grafiğin Eksenindeki Etiketler Arasındaki Aralık Birimi
-linktitle: Grafiğin Eksenindeki Etiketler Arasındaki Aralık Birimi
+title: Bir Grafik Eksenindeki Etiketler Arasındaki Aralık Birimi
+linktitle: Bir Grafik Eksenindeki Etiketler Arasındaki Aralık Birimi
 second_title: Aspose.Words Belge İşleme API'si
 description: Aspose.Words for .NET kullanarak bir grafiğin eksenindeki etiketler arasındaki aralık birimini nasıl ayarlayacağınızı öğrenin.
 type: docs
@@ -9,39 +9,39 @@ url: /tr/net/programming-with-charts/interval-unit-between-labels-on-axis/
 ---
 ## giriiş
 
-Aspose.Words for .NET kullanımına ilişkin kapsamlı kılavuzumuza hoş geldiniz! İster deneyimli bir geliştirici olun, ister yeni başlıyor olun, bu makale, .NET uygulamalarında Word belgelerini programlı olarak işlemek ve oluşturmak için Aspose.Words'ten yararlanma hakkında bilmeniz gereken her şeyi size anlatacaktır.
+.NET için Aspose.Words'ü kullanma konusunda kapsamlı rehberimize hoş geldiniz! İster deneyimli bir geliştirici olun ister yeni başlıyor olun, bu makale .NET uygulamalarında Word belgelerini programatik olarak düzenlemek ve oluşturmak için Aspose.Words'ü kullanma konusunda bilmeniz gereken her şeyi size anlatacaktır.
 
-## Önkoşullar
+## Ön koşullar
 
-Aspose.Words'e dalmadan önce aşağıdaki ayarlara sahip olduğunuzdan emin olun:
+Aspose.Words'e dalmadan önce aşağıdaki ayarların yapıldığından emin olun:
 - Makinenizde Visual Studio yüklü
-- C# programlama dili hakkında temel bilgi
--  Aspose.Words for .NET kütüphanesine erişim (indirme bağlantısı[Burada](https://releases.aspose.com/words/net/))
+- C# programlama dilinin temel bilgisi
+-  Aspose.Words for .NET kütüphanesine erişim (indirme bağlantısı)[Burada](https://releases.aspose.com/words/net/))
 
-## Ad Alanlarını İçe Aktarma ve Başlarken
+## Ad Alanlarını İçe Aktarma ve Başlama
 
-Gerekli ad alanlarını içe aktararak ve geliştirme ortamımızı kurarak başlayalım.
+Gerekli ad alanlarını içe aktararak ve geliştirme ortamımızı ayarlayarak başlayalım.
 
 ### Projenizi Visual Studio'da Kurma
 Başlamak için Visual Studio'yu başlatın ve yeni bir C# projesi oluşturun.
 
-### Aspose.Words for .NET'in Kurulumu
- Aspose.Words for .NET'i NuGet Paket Yöneticisi aracılığıyla veya doğrudan şuradan indirerek kurabilirsiniz:[Web sitesi](https://releases.aspose.com/words/net/).
+### .NET için Aspose.Words'ü yükleme
+ Aspose.Words for .NET'i NuGet Paket Yöneticisi aracılığıyla veya doğrudan şu adresten indirerek yükleyebilirsiniz:[Aspose web sitesi](https://releases.aspose.com/words/net/).
 
-### Aspose.Words Ad Alanını İçe Aktarma
-Sınıflarına ve yöntemlerine erişim kazanmak için C# kod dosyanızda Aspose.Words ad alanını içe aktarın:
+### Aspose.Words Ad Alanının İçe Aktarılması
+C# kod dosyanıza, sınıflarına ve yöntemlerine erişim sağlamak için Aspose.Words ad alanını içe aktarın:
 ```csharp
 using Aspose.Words;
 ```
 
-Bu bölümde Aspose.Words for .NET kullanarak grafiklerin nasıl oluşturulacağını ve özelleştirileceğini inceleyeceğiz.
+Bu bölümde, Aspose.Words for .NET kullanarak grafiklerin nasıl oluşturulacağını ve özelleştirileceğini inceleyeceğiz.
 
-## Adım 1: Belgeye Grafik Ekleme
-Word belgesine grafik eklemek için şu adımları izleyin:
+## Adım 1: Bir Belgeye Grafik Ekleme
+Bir Word belgesine grafik eklemek için şu adımları izleyin:
 
-### Adım 1.1: DocumentBuilder'ı Başlatın ve Grafik Ekleyin
+### Adım 1.1: DocumentBuilder'ı Başlatın ve Bir Grafik Ekleyin
 ```csharp
-// Belge dizininizin yolu
+// Belge dizininize giden yol
 string dataDir = "YOUR_DOCUMENT_DIRECTORY";
 
 Document doc = new Document();
@@ -60,36 +60,36 @@ chart.Series.Add("Aspose Series 1",
 ```
 
 ## Adım 2: Eksen Özelliklerini Ayarlama
-Şimdi grafiğimizin görünümünü kontrol etmek için eksen özelliklerini özelleştirelim:
+Şimdi, grafiğimizin görünümünü kontrol etmek için eksen özelliklerini özelleştirelim:
 
 ```csharp
 chart.AxisX.TickLabelSpacing = 2;
 ```
 
 ## Adım 3: Belgeyi Kaydetme
-Son olarak, belgeyi eklenen grafikle birlikte kaydedin:
+Son olarak eklenen grafikle birlikte belgeyi kaydedin:
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.IntervalUnitBetweenLabelsOnAxis.docx");
 ```
 
 ## Çözüm
 
-Tebrikler! Aspose.Words for .NET'i kullanarak grafikleri nasıl entegre edeceğinizi ve değiştireceğinizi öğrendiniz. Bu güçlü kitaplık, geliştiricilerin dinamik ve görsel olarak çekici belgeleri zahmetsizce oluşturmasına olanak tanır.
+Tebrikler! Aspose.Words for .NET kullanarak grafikleri nasıl entegre edeceğinizi ve yöneteceğinizi öğrendiniz. Bu güçlü kütüphane, geliştiricilerin dinamik ve görsel olarak çekici belgeleri zahmetsizce oluşturmasını sağlar.
 
 
-## SSS'ler
+## SSS
 
 ### Aspose.Words for .NET nedir?
-Aspose.Words for .NET, geliştiricilerin .NET uygulamaları içinde Word belgeleri oluşturmasına, değiştirmesine ve dönüştürmesine olanak tanıyan bir belge işleme kitaplığıdır.
+Aspose.Words for .NET, geliştiricilerin .NET uygulamaları içerisinde Word belgeleri oluşturmalarına, değiştirmelerine ve dönüştürmelerine olanak tanıyan bir belge işleme kütüphanesidir.
 
-### Aspose.Words for .NET belgelerini nerede bulabilirim?
- Ayrıntılı belgeleri bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).
+### Aspose.Words for .NET için dokümanları nerede bulabilirim?
+ Ayrıntılı dokümanları bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).
 
 ### Satın almadan önce Aspose.Words for .NET'i deneyebilir miyim?
- Evet, ücretsiz deneme sürümünü indirebilirsiniz[Burada](https://releases.aspose.com/).
+ Evet, ücretsiz denemeyi indirebilirsiniz[Burada](https://releases.aspose.com/).
 
-### Aspose.Words for .NET için nasıl destek alabilirim?
+### Aspose.Words for .NET desteğini nasıl alabilirim?
  Destek ve topluluk tartışmaları için şu adresi ziyaret edin:[Aspose.Words forumu](https://forum.aspose.com/c/words/8).
 
 ### Aspose.Words for .NET lisansını nereden satın alabilirim?
- Lisans satın alabilirsiniz[Burada](https://purchase.aspose.com/buy).
+ Bir lisans satın alabilirsiniz[Burada](https://purchase.aspose.com/buy).

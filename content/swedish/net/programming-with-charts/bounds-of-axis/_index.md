@@ -65,7 +65,7 @@ Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Steg 5: Rensa befintlig serie
+## Steg 5: Rensa befintliga serier
 
 För att säkerställa att du börjar med ett rent blad, rensa alla befintliga serier från diagrammet.
 
@@ -112,13 +112,13 @@ Med Aspose.Words för .NET kan du enkelt skapa och manipulera diagram i dina dok
 Aspose.Words för .NET är ett bibliotek som låter dig skapa, ändra och konvertera Word-dokument programmatiskt med hjälp av .NET-ramverket.
 
 ### Hur ställer jag in Aspose.Words för .NET?
- Du kan ladda ner den från[här](https://releases.aspose.com/words/net/) och följ installationsanvisningarna.
+ Du kan ladda ner den från[här](https://releases.aspose.com/words/net/)och följ installationsanvisningarna.
 
 ### Kan jag använda Aspose.Words gratis?
  Ja, du kan använda en[gratis provperiod](https://releases.aspose.com/) eller skaffa en[tillfällig licens](https://purchase.aspose.com/temporary-license/).
 
 ### Var kan jag hitta dokumentation för Aspose.Words för .NET?
- Detaljerad dokumentation finns tillgänglig[här](https://reference.aspose.com/words/net/).
+Detaljerad dokumentation finns tillgänglig[här](https://reference.aspose.com/words/net/).
 
 ### Hur kan jag få support för Aspose.Words?
  Du kan besöka[supportforum](https://forum.aspose.com/c/words/8) för hjälp.

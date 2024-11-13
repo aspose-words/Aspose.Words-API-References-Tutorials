@@ -38,7 +38,7 @@ Install-Package Aspose.Words
 
 ## Steg 2: Ladda dina dokument
 
- Därefter måste du ladda de Word-dokument du vill jämföra. I det här exemplet antar vi att du har två namngivna dokument`Document.docx`och`Document2.docx` finns i din dokumentkatalog.
+ Därefter måste du ladda de Word-dokument du vill jämföra. I det här exemplet antar vi att du har två namngivna dokument`Document.docx` och`Document2.docx` finns i din dokumentkatalog.
 
 ```csharp
 // Sökvägen till dokumentkatalogen.
@@ -49,7 +49,7 @@ Document docB = new Document(dataDir + "Document2.docx");
 
 ## Steg 3: Klona ett av dokumenten
 
- För att jämföra dokumenten klona du ett av dem. Detta är nödvändigt eftersom`Compare` metoden ändrar dokumentet och du kanske vill behålla originaldokumentet oförändrat för andra ändamål.
+ För att jämföra dokumenten klona du ett av dem. Detta är nödvändigt eftersom`Compare`metoden ändrar dokumentet och du kanske vill behålla originaldokumentet oförändrat för andra ändamål.
 
 ```csharp
 Document docBClone = docB.Clone();
@@ -57,7 +57,7 @@ Document docBClone = docB.Clone();
 
 ## Steg 4: Utför jämförelsen
 
- Nu är du redo att jämföra dokumenten. De`Compare`metod kommer att belysa skillnaderna mellan de två dokumenten. Du kan ange användaren som utför jämförelsen och datum för jämförelsen.
+ Nu är du redo att jämföra dokumenten. De`Compare` metod kommer att belysa skillnaderna mellan de två dokumenten. Du kan ange användaren som utför jämförelsen och datum för jämförelsen.
 
 ```csharp
 docA.Compare(docBClone, "user", DateTime.Now);

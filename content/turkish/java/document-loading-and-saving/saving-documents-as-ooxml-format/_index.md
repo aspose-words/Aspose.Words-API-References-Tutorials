@@ -2,42 +2,42 @@
 title: Aspose.Words for Java'da Belgeleri OOXML Formatında Kaydetme
 linktitle: Belgeleri OOXML Formatında Kaydetme
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Aspose.Words for Java ile belgeleri OOXML formatında nasıl kaydedeceğinizi öğrenin. Dosyalarınızı zahmetsizce koruyun, optimize edin ve özelleştirin.
+description: Aspose.Words for Java ile belgeleri OOXML formatında nasıl kaydedeceğinizi öğrenin. Dosyalarınızı zahmetsizce güvenceye alın, optimize edin ve özelleştirin.
 type: docs
 weight: 20
 url: /tr/java/document-loading-and-saving/saving-documents-as-ooxml-format/
 ---
 
-## Aspose.Words for Java'da Belgeleri OOXML Formatında Kaydetmeye Giriş
+## Aspose.Words for Java'da Belgeleri OOXML Biçiminde Kaydetmeye Giriş
 
-Bu kılavuzda Aspose.Words for Java kullanarak OOXML formatındaki belgelerin nasıl kaydedileceğini inceleyeceğiz. OOXML (Office Open XML), Microsoft Word ve diğer ofis uygulamaları tarafından kullanılan bir dosya formatıdır. Belgeleri OOXML formatında kaydetmek için çeşitli seçenekleri ve ayarları ele alacağız.
+Bu kılavuzda, Aspose.Words for Java kullanarak belgelerin OOXML formatında nasıl kaydedileceğini inceleyeceğiz. OOXML (Office Open XML), Microsoft Word ve diğer ofis uygulamaları tarafından kullanılan bir dosya biçimidir. Belgeleri OOXML formatında kaydetmek için çeşitli seçenekleri ve ayarları ele alacağız.
 
-## Önkoşullar
+## Ön koşullar
 
 Başlamadan önce projenizde Aspose.Words for Java kütüphanesinin kurulu olduğundan emin olun.
 
-## Bir Belgeyi Parola Şifrelemeyle Kaydetme
+## Bir Belgeyi Parola Şifreleme ile Kaydetme
 
-Belgenizi OOXML formatında kaydederken şifre ile şifreleyebilirsiniz. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
+Belgenizi OOXML formatında kaydederken bir parola ile şifreleyebilirsiniz. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
 
 ```java
 import com.aspose.words.Document;
 import com.aspose.words.OoxmlSaveOptions;
 
-// Belgeyi yükleyin
+// Belgeyi yükle
 Document doc = new Document("Document.docx");
 
-// OoxmlSaveOptions oluşturun ve şifreyi ayarlayın
+// OoxmlSaveOptions'ı oluşturun ve parolayı ayarlayın
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions();
 saveOptions.setPassword("password");
 
-// Belgeyi şifrelemeyle kaydedin
+// Belgeyi şifreleyerek kaydedin
 doc.save("EncryptedDoc.docx", saveOptions);
 ```
 
 ## OOXML Uyumluluğunu Ayarlama
 
-Belgeyi kaydederken OOXML uyumluluk düzeyini belirtebilirsiniz. Örneğin ISO 29500:2008 (Katı) olarak ayarlayabilirsiniz. İşte nasıl:
+Belgeyi kaydederken OOXML uyumluluk düzeyini belirtebilirsiniz. Örneğin, bunu ISO 29500:2008 (Strict) olarak ayarlayabilirsiniz. İşte nasıl:
 
 ```java
 import com.aspose.words.Document;
@@ -45,13 +45,13 @@ import com.aspose.words.OoxmlSaveOptions;
 import com.aspose.words.MsWordVersion;
 import com.aspose.words.OoxmlCompliance;
 
-// Belgeyi yükleyin
+// Belgeyi yükle
 Document doc = new Document("Document.docx");
 
-// Word 2016 için Optimize Etme
+// Word 2016 için optimize edin
 doc.getCompatibilityOptions().optimizeFor(MsWordVersion.WORD_2016);
 
-// OoxmlSaveOptions oluşturun ve uyumluluk düzeyini ayarlayın
+// OoxmlSaveOptions'ı oluşturun ve uyumluluk düzeyini ayarlayın
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions();
 saveOptions.setCompliance(OoxmlCompliance.ISO_29500_2008_STRICT);
 
@@ -59,7 +59,7 @@ saveOptions.setCompliance(OoxmlCompliance.ISO_29500_2008_STRICT);
 doc.save("ComplianceDoc.docx", saveOptions);
 ```
 
-## Son Kaydedilen Zaman Özelliği Güncelleniyor
+## Son Kaydedilen Zaman Özelliğini Güncelliyor
 
 Belgeyi kaydederken "Son Kaydedilen Zaman" özelliğini güncellemeyi seçebilirsiniz. İşte nasıl:
 
@@ -67,50 +67,50 @@ Belgeyi kaydederken "Son Kaydedilen Zaman" özelliğini güncellemeyi seçebilir
 import com.aspose.words.Document;
 import com.aspose.words.OoxmlSaveOptions;
 
-// Belgeyi yükleyin
+// Belgeyi yükle
 Document doc = new Document("Document.docx");
 
-// OoxmlSaveOptions oluşturun ve Son Kaydedilen Zaman özelliğinin güncellenmesini etkinleştirin
+// OoxmlSaveOptions'ı oluşturun ve Son Kaydedilen Zaman özelliğini güncellemeyi etkinleştirin
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions();
 saveOptions.setUpdateLastSavedTimeProperty(true);
 
-// Belgeyi güncellenen özellikle kaydedin
+// Belgeyi güncellenmiş özellik ile kaydedin
 doc.save("UpdatedLastSavedTime.docx", saveOptions);
 ```
 
-## Eski Kontrol Karakterlerini Korumak
+## Miras Kontrol Karakterlerini Koruma
 
-Belgeniz eski kontrol karakterleri içeriyorsa kaydederken bunları saklamayı seçebilirsiniz. İşte nasıl:
+Belgeniz eski denetim karakterleri içeriyorsa, kaydederken bunları tutmayı seçebilirsiniz. İşte nasıl:
 
 ```java
 import com.aspose.words.Document;
 import com.aspose.words.OoxmlSaveOptions;
 import com.aspose.words.SaveFormat;
 
-// Eski kontrol karakterlerini içeren bir belge yükleyin
+//Eski denetim karakterlerini içeren bir belgeyi yükleyin
 Document doc = new Document("LegacyControlChars.doc");
 
-//FLAT_OPC formatıyla OoxmlSaveOptions oluşturun ve eski kontrol karakterlerinin korunmasını etkinleştirin
+// OoxmlSaveOptions'ı FLAT_OPC biçimiyle oluşturun ve eski kontrol karakterlerinin tutulmasını etkinleştirin
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FLAT_OPC);
 saveOptions.setKeepLegacyControlChars(true);
 
-// Belgeyi eski kontrol karakterleriyle kaydedin
+// Belgeyi eski denetim karakterleriyle kaydedin
 doc.save("LegacyControlCharsPreserved.docx", saveOptions);
 ```
 
 ## Sıkıştırma Seviyesini Ayarlama
 
-Belgeyi kaydederken sıkıştırma düzeyini ayarlayabilirsiniz. Örneğin, minimum sıkıştırma için bunu SUPER_FAST olarak ayarlayabilirsiniz. İşte nasıl:
+Belgeyi kaydederken sıkıştırma seviyesini ayarlayabilirsiniz. Örneğin, minimum sıkıştırma için SUPER_FAST olarak ayarlayabilirsiniz. İşte nasıl:
 
 ```java
 import com.aspose.words.Document;
 import com.aspose.words.OoxmlSaveOptions;
 import com.aspose.words.CompressionLevel;
 
-// Belgeyi yükleyin
+// Belgeyi yükle
 Document doc = new Document("Document.docx");
 
-// OoxmlSaveOptions oluşturun ve sıkıştırma düzeyini ayarlayın
+// OoxmlSaveOptions'ı oluşturun ve sıkıştırma düzeyini ayarlayın
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions();
 saveOptions.setCompressionLevel(CompressionLevel.SUPER_FAST);
 
@@ -118,7 +118,7 @@ saveOptions.setCompressionLevel(CompressionLevel.SUPER_FAST);
 doc.save("FastCompressionDoc.docx", saveOptions);
 ```
 
-Bunlar, Aspose.Words for Java'yı kullanarak belgeleri OOXML formatında kaydederken kullanabileceğiniz temel seçeneklerden ve ayarlardan bazılarıdır. Daha fazla seçeneği keşfetmekten ve belge kaydetme sürecinizi gerektiği gibi özelleştirmekten çekinmeyin.
+Bunlar, Aspose.Words for Java kullanarak belgeleri OOXML formatında kaydederken kullanabileceğiniz bazı temel seçenekler ve ayarlardır. Daha fazla seçeneği keşfetmekten ve belge kaydetme sürecinizi gerektiği gibi özelleştirmekten çekinmeyin.
 
 ## Aspose.Words for Java'da Belgeleri OOXML Formatında Kaydetmek İçin Tam Kaynak Kodu
 
@@ -162,18 +162,18 @@ public void setCompressionLevel() throws Exception
 
 ## Çözüm
 
-Bu kapsamlı kılavuzda Aspose.Words for Java kullanarak OOXML formatındaki belgelerin nasıl kaydedileceğini araştırdık. Belgelerinizi parolalarla şifrelemeniz, belirli OOXML standartlarıyla uyumluluğu sağlamanız, belge özelliklerini güncellemeniz, eski kontrol karakterlerini korumanız veya sıkıştırma düzeylerini ayarlamanız gerekiyorsa Aspose.Words, gereksinimlerinizi karşılayacak çok yönlü bir araç seti sunar.
+Bu kapsamlı kılavuzda, Aspose.Words for Java kullanarak belgeleri OOXML formatında nasıl kaydedeceğinizi inceledik. Belgelerinizi parolalarla şifrelemeniz, belirli OOXML standartlarına uyumu sağlamanız, belge özelliklerini güncellemeniz, eski kontrol karakterlerini korumanız veya sıkıştırma seviyelerini ayarlamanız gerekip gerekmediğine bakılmaksızın, Aspose.Words gereksinimlerinizi karşılamak için çok yönlü bir araç seti sunar.
 
-## SSS'ler
+## SSS
 
 ### Parola korumalı bir belgeden parola korumasını nasıl kaldırabilirim?
 
-Parola korumalı bir belgedeki parola korumasını kaldırmak için belgeyi doğru parolayla açabilir ve ardından kaydetme seçeneklerinde parola belirtmeden kaydedebilirsiniz. Bu, belgeyi parola koruması olmadan kaydedecektir.
+Parola korumalı bir belgeden parola korumasını kaldırmak için, belgeyi doğru parolayla açabilir ve ardından kaydetme seçeneklerinde parola belirtmeden kaydedebilirsiniz. Bu, belgeyi parola koruması olmadan kaydedecektir.
 
-### Bir belgeyi OOXML formatında kaydederken özel özellikleri ayarlayabilir miyim?
+### Bir belgeyi OOXML formatında kaydederken özel özellikler ayarlayabilir miyim?
 
- Evet, bir belgeyi OOXML formatında kaydetmeden önce onun özel özelliklerini ayarlayabilirsiniz. Kullanın`BuiltInDocumentProperties`Ve`CustomDocumentProperties` yazar, başlık, anahtar kelimeler ve özel özellikler gibi çeşitli özellikleri ayarlamak için sınıflar.
+ Evet, bir belgeyi OOXML biçiminde kaydetmeden önce özel özellikler ayarlayabilirsiniz.`BuiltInDocumentProperties` Ve`CustomDocumentProperties` Yazar, başlık, anahtar kelimeler ve özel özellikler gibi çeşitli özellikleri ayarlamak için sınıflar.
 
 ### Bir belgeyi OOXML formatında kaydederken varsayılan sıkıştırma düzeyi nedir?
 
- Aspose.Words for Java kullanarak bir belgeyi OOXML formatında kaydederken varsayılan sıkıştırma düzeyi şu şekildedir:`NORMAL` . Sıkıştırma düzeyini şu şekilde değiştirebilirsiniz:`SUPER_FAST` veya`MAXIMUM` gerektiği gibi.
+ Aspose.Words for Java kullanılarak bir belge OOXML biçiminde kaydedilirken varsayılan sıkıştırma düzeyi:`NORMAL` Sıkıştırma seviyesini değiştirebilirsiniz`SUPER_FAST` veya`MAXIMUM` ihtiyaç duyulduğu takdirde.

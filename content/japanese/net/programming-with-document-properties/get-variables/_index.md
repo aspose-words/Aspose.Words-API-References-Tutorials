@@ -13,7 +13,7 @@ url: /ja/net/programming-with-document-properties/get-variables/
 
 ## 前提条件
 
-詳細に入る前に、必要なものがすべて揃っていることを確認しましょう。
+細かい点に入る前に、必要なものがすべて揃っているかどうか確認しましょう。
 
 1. C# と .NET の基礎知識: C# と .NET フレームワークの基礎を理解している必要があります。
 2.  Aspose.Words for .NETライブラリ: Aspose.Words for .NETライブラリを以下からダウンロードしてください。[ここ](https://releases.aspose.com/words/net/).

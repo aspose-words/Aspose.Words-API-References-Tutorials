@@ -1,28 +1,28 @@
 ---
-title: Wykryj numerację ze spacjami
-linktitle: Wykryj numerację ze spacjami
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak używać Aspose.Words dla .NET do wykrywania numeracji ze spacjami w dokumentach w postaci zwykłego tekstu i zapewnienia prawidłowego rozpoznawania list.
+title: Wykryj numerację z odstępami
+linktitle: Wykryj numerację z odstępami
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak używać Aspose.Words for .NET do wykrywania numeracji zawierającej spacje w dokumentach zwykłego tekstu i mieć pewność, że Twoje listy będą prawidłowo rozpoznawane.
 type: docs
 weight: 10
 url: /pl/net/programming-with-txtloadoptions/detect-numbering-with-whitespaces/
 ---
 ## Wstęp
 
-Aspose.Words dla entuzjastów .NET! Dzisiaj zagłębimy się w fascynującą funkcję, dzięki której obsługa list w dokumentach w postaci zwykłego tekstu będzie dziecinnie prosta. Czy kiedykolwiek miałeś do czynienia z plikami tekstowymi, w których niektóre wiersze miały być listami, ale po załadowaniu do dokumentu Word nie wyglądały dobrze? Cóż, mamy niezłą sztuczkę w rękawie: wykrywanie numerowania za pomocą białych znaków. W tym samouczku dowiesz się, jak korzystać z narzędzia`DetectNumberingWithWhitespaces` opcję w Aspose.Words dla .NET, aby mieć pewność, że Twoje listy zostaną poprawnie rozpoznane, nawet jeśli między liczbami a tekstem znajdują się spacje.
+Aspose.Words dla entuzjastów .NET! Dzisiaj zagłębimy się w fascynującą funkcję, która może sprawić, że obsługa list w dokumentach tekstowych stanie się dziecinnie prosta. Czy kiedykolwiek miałeś do czynienia z plikami tekstowymi, w których niektóre wiersze powinny być listami, ale po załadowaniu do dokumentu Worda po prostu nie wyglądają dobrze? Cóż, mamy w zanadrzu sprytny trik: wykrywanie numeracji z odstępami. Ten samouczek przeprowadzi Cię przez sposób korzystania z`DetectNumberingWithWhitespaces` opcja w Aspose.Words dla .NET zapewniająca prawidłowe rozpoznawanie list, nawet gdy między liczbami i tekstem występuje spacja.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zaczniemy, upewnij się, że masz następujące elementy:
+Zanim zaczniemy, upewnij się, że masz następujące rzeczy:
 
--  Aspose.Words dla .NET: Możesz pobrać go z[Wydania Aspose](https://releases.aspose.com/words/net/) strona.
-- Środowisko programistyczne: Visual Studio lub dowolne inne IDE C#.
+-  Aspose.Words dla .NET: Można go pobrać ze strony[Wydania Aspose](https://releases.aspose.com/words/net/) strona.
+- Środowisko programistyczne: Visual Studio lub inne środowisko IDE C#.
 - .NET Framework zainstalowany na Twoim komputerze.
-- Podstawowa znajomość języka C#: Zrozumienie podstaw pomoże Ci postępować zgodnie z przykładami.
+- Podstawowa wiedza o języku C#: Zrozumienie podstaw ułatwi Ci zrozumienie przykładów.
 
 ## Importuj przestrzenie nazw
 
-Zanim przejdziesz do kodu, upewnij się, że w projekcie zaimportowano niezbędne przestrzenie nazw. Oto krótki fragment na dobry początek:
+Zanim zaczniesz kodować, upewnij się, że masz zaimportowane niezbędne przestrzenie nazw do swojego projektu. Oto krótki fragment kodu, który pomoże Ci zacząć:
 
 ```csharp
 using System;
@@ -30,20 +30,20 @@ using Aspose.Words;
 using Aspose.Words.Loading;
 ```
 
-Podzielmy proces na proste, łatwe do wykonania etapy. Każdy krok poprowadzi Cię przez niezbędny kod i wyjaśni, co się dzieje.
+Podzielmy proces na proste, łatwe do opanowania kroki. Każdy krok przeprowadzi Cię przez niezbędny kod i wyjaśni, co się dzieje.
 
 ## Krok 1: Zdefiniuj katalog dokumentów
 
-Na początek ustawmy ścieżkę do katalogu dokumentów. W tym miejscu będą przechowywane pliki wejściowe i wyjściowe.
+Po pierwsze, ustawmy ścieżkę do katalogu dokumentów. To tutaj będą przechowywane pliki wejściowe i wyjściowe.
 
 ```csharp
 // Ścieżka do katalogu dokumentów
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Krok 2: Utwórz dokument w postaci zwykłego tekstu
+## Krok 2: Utwórz dokument w formacie zwykłego tekstu
 
-Następnie utworzymy dokument w postaci zwykłego tekstu jako ciąg znaków. Dokument ten będzie zawierał części, które można interpretować jako listy.
+Następnie utworzymy dokument w postaci zwykłego tekstu jako ciąg. Ten dokument będzie zawierał części, które można interpretować jako listy.
 
 ```csharp
 const string textDoc = "Full stop delimiters:\n" +
@@ -64,9 +64,9 @@ const string textDoc = "Full stop delimiters:\n" +
                        "3 Fourth list item 3";
 ```
 
-## Krok 3: Skonfiguruj opcje ładowania
+## Krok 3: Skonfiguruj LoadOptions
 
- Aby wykryć numerację ze spacjami, musimy ustawić`DetectNumberingWithWhitespaces` opcja`true` w`TxtLoadOptions` obiekt.
+ Aby wykryć numerację z odstępami, musimy ustawić`DetectNumberingWithWhitespaces` opcja do`true` w`TxtLoadOptions` obiekt.
 
 ```csharp
 TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
@@ -74,7 +74,7 @@ TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces
 
 ## Krok 4: Załaduj dokument
 
- Teraz załadujmy dokument za pomocą metody`TxtLoadOptions` jako parametr. Dzięki temu czwarta lista (ze spacjami) zostanie poprawnie wykryta.
+ Teraz załadujmy dokument za pomocą`TxtLoadOptions` jako parametr. Zapewnia to, że czwarta lista (z odstępami) zostanie wykryta poprawnie.
 
 ```csharp
 Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), loadOptions);
@@ -82,7 +82,7 @@ Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), l
 
 ## Krok 5: Zapisz dokument
 
-Na koniec zapisz dokument w określonym katalogu. Spowoduje to wygenerowanie dokumentu programu Word z poprawnie wykrytymi listami.
+Na koniec zapisz dokument w określonym katalogu. Spowoduje to wygenerowanie dokumentu Word z prawidłowo wykrytymi listami.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
@@ -90,22 +90,22 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.doc
 
 ## Wniosek
 
-masz to! Dzięki zaledwie kilku linijkom kodu opanowałeś sztukę wykrywania numeracji ze spacjami w dokumentach w postaci zwykłego tekstu przy użyciu Aspose.Words dla .NET. Ta funkcja może być niezwykle przydatna w przypadku pracy z różnymi formatami tekstu i zapewnienia dokładnego przedstawienia list w dokumentach programu Word. Więc następnym razem, gdy napotkasz te trudne listy, będziesz dokładnie wiedział, co robić.
+masz to! Za pomocą zaledwie kilku linijek kodu opanowałeś sztukę wykrywania numeracji z odstępami w dokumentach zwykłego tekstu za pomocą Aspose.Words dla .NET. Ta funkcja może być niezwykle przydatna podczas pracy z różnymi formatami tekstu i zapewniania, że listy są dokładnie reprezentowane w dokumentach Word. Więc następnym razem, gdy natkniesz się na te trudne listy, będziesz dokładnie wiedział, co zrobić.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-###  Co jest`DetectNumberingWithWhitespaces` in Aspose.Words for .NET?
-`DetectNumberingWithWhitespaces` jest opcją`TxtLoadOptions` co pozwala Aspose.Words rozpoznawać listy nawet wtedy, gdy pomiędzy numeracją a tekstem elementu listy znajduje się spacja.
+###  Co to jest`DetectNumberingWithWhitespaces` in Aspose.Words for .NET?
+`DetectNumberingWithWhitespaces` jest opcją w`TxtLoadOptions` co pozwala Aspose.Words rozpoznawać listy nawet wtedy, gdy między numeracją a tekstem elementu listy występuje spacja.
 
-### Czy mogę używać tej funkcji do innych ograniczników, takich jak punktory i nawiasy?
- Tak, Aspose.Words automatycznie wykrywa listy z typowymi ogranicznikami, takimi jak wypunktowania i nawiasy. The`DetectNumberingWithWhitespaces` szczególnie pomaga w przypadku list zawierających białe znaki.
+### Czy mogę używać tej funkcji w przypadku innych rozgraniczników, np. punktorów i nawiasów?
+ Tak, Aspose.Words automatycznie wykrywa listy z typowymi ogranicznikami, takimi jak punkty i nawiasy.`DetectNumberingWithWhitespaces` pomaga szczególnie w przypadku list zawierających spacje.
 
 ###  Co się stanie, jeśli nie użyję`DetectNumberingWithWhitespaces`?
-Bez tej opcji listy zawierające odstępy między numeracją a tekstem mogą nie zostać rozpoznane jako listy, a elementy mogą być wyświetlane jako zwykłe akapity.
+Bez tej opcji listy zawierające odstępy między numeracją i tekstem mogłyby nie zostać rozpoznane jako listy, a elementy mogłyby zostać wyświetlone jako zwykłe akapity.
 
 ### Czy ta funkcja jest dostępna w innych produktach Aspose?
-Ta specyficzna funkcja jest dostosowana do Aspose.Words dla .NET, zaprojektowanego do obsługi przetwarzania dokumentów Word.
+Ta konkretna funkcja jest dostosowana do środowiska Aspose.Words for .NET i służy do przetwarzania dokumentów Word.
 
 ### Jak mogę uzyskać tymczasową licencję na Aspose.Words dla .NET?
- Licencję tymczasową można uzyskać od firmy[Aspose licencja tymczasowa](https://purchase.aspose.com/temporary-license/) strona.
+ Możesz uzyskać tymczasową licencję od[Licencja tymczasowa Aspose](https://purchase.aspose.com/temporary-license/) strona.
 

@@ -39,7 +39,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- De`dataDir` variabel är en platshållare för katalogen där du ska spara din Markdown-fil. Se till att ersätta "DIN DOKUMENTKATOLOG" med den faktiska sökvägen.
+De`dataDir` variabel är en platshållare för katalogen där du ska spara din Markdown-fil. Se till att ersätta "DIN DOKUMENTKATOLOG" med den faktiska sökvägen.
 
 ## Steg 2: Skriva vanlig text
 
@@ -80,7 +80,7 @@ Detta kommer att göra "kursiv" i kursiv stil, följt av vanlig text.
 
 ## Steg 5: Kombinera fet och kursiv text
 
-Du kan kombinera fetstil och kursiv stil genom att slå in text med tre asterisker (`*` ). Ställ in båda`Bold`och`Italic` fastigheter till`true`.
+Du kan kombinera fetstil och kursiv stil genom att slå in text med tre asterisker (`*` ). Ställ in båda`Bold` och`Italic` fastigheter till`true`.
 
 ```csharp
 builder.Write("You can also write ");
@@ -114,7 +114,7 @@ Och där har du det! Du har nu bemästrat hur du skapar betonad text i Markdown 
 Ja, du kan använda andra stilar som rubriker, listor och kodblock. Aspose.Words för .NET stöder ett brett utbud av Markdown-formateringsalternativ.
 
 ### Hur kan jag installera Aspose.Words för .NET?
- Du kan ladda ner biblioteket från[Aspose releaser sida](https://releases.aspose.com/words/net/) och följ installationsanvisningarna.
+ Du kan ladda ner biblioteket från[Aspose releaser sida](https://releases.aspose.com/words/net/)och följ installationsanvisningarna.
 
 ### Finns det en gratis testversion tillgänglig för Aspose.Words för .NET?
  Ja, du kan ladda ner en[gratis provperiod](https://releases.aspose.com/) för att testa funktionerna i Aspose.Words för .NET.

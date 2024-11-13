@@ -9,7 +9,7 @@ url: /ja/net/add-content-using-documentbuilder/move-to-bookmark-end/
 ---
 ## 導入
 
-こんにちは、プログラマーの皆さん！Word 文書の操作に困惑し、ブックマークの末尾に正確に移動して、その直後にコンテンツを追加する方法を見つけようとしたことはありますか？今日はラッキーな日です！Word 文書をプロのように扱える強力なライブラリである Aspose.Words for .NET について詳しく説明します。このチュートリアルでは、ブックマークの末尾に移動して、そこにテキストを挿入する手順を説明します。さあ、始めましょう！
+こんにちは、コーダーの皆さん! ブックマークの末尾に正確に移動して、その直後にコンテンツを追加する方法を見つけようと、Word 文書の操作に困惑したことはありませんか? 今日はラッキーな日です! Word 文書をプロのように処理できる強力なライブラリである Aspose.Words for .NET について詳しく説明します。このチュートリアルでは、ブックマークの末尾に移動して、そこにテキストを挿入する手順を説明します。さあ、始めましょう!
 
 ## 前提条件
 
@@ -17,7 +17,7 @@ url: /ja/net/add-content-using-documentbuilder/move-to-bookmark-end/
 
 -  Visual Studio: ダウンロードはこちらから[ここ](https://visualstudio.microsoft.com/).
 - Aspose.Words for .NET: ここから入手[ダウンロードリンク](https://releases.aspose.com/words/net/).
-- 有効なAspose.Wordsライセンス: 一時ライセンスを取得できます[ここ](https://purchase.aspose.com/temporary-license/)持っていない場合。
+- 有効なAspose.Wordsライセンス: 一時ライセンスを取得できます[ここ](https://purchase.aspose.com/temporary-license/)持っていない場合は。
 
 もちろん、C# と .NET の基本的な知識があれば大いに役立ちます。
 

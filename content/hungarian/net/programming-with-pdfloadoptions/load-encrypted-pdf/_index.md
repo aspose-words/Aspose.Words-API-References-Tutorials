@@ -55,7 +55,7 @@ Document doc = new Document(dataDir + "Pdf Document.pdf");
 
 ## 3. lépés: A PDF-mentési opciók beállítása titkosítással
 
- Most adjunk némi biztonságot a PDF-nek. Felállítjuk a`PdfSaveOptions` hogy tartalmazza a titkosítás részleteit.
+ Most pedig adjunk némi biztonságot a PDF-nek. Felállítjuk a`PdfSaveOptions` hogy tartalmazza a titkosítás részleteit.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
@@ -91,7 +91,7 @@ doc = new Document(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", l
 
 És megvan! A titkosított PDF betöltése az Aspose.Words for .NET segítségével nem csak egyszerű, hanem kifejezetten szórakoztató is. Az alábbi lépések végrehajtásával felszabadította a PDF-titkosítás profi kezelésének lehetőségét. Ne feledje, hogy minden eszköz elsajátításának kulcsa a gyakorlat, ezért ne habozzon kísérletezni és felfedezni.
 
- Ha bármilyen kérdése van, vagy további segítségre van szüksége, a[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/)és[támogatási fórum](https://forum.aspose.com/c/words/8) nagyszerű helyek a kezdéshez.
+ Ha bármilyen kérdése van, vagy további segítségre van szüksége, a[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/) és[támogatási fórum](https://forum.aspose.com/c/words/8) remek helyek a kezdéshez.
 
 ## GYIK
 

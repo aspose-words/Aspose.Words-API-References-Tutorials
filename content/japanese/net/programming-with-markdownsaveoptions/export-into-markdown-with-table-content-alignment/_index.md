@@ -1,6 +1,6 @@
 ---
-title: 表の内容を揃えて Markdown にエクスポートする
-linktitle: 表の内容を揃えて Markdown にエクスポートする
+title: 表のコンテンツの位置合わせをしながら Markdown にエクスポートする
+linktitle: 表のコンテンツの位置合わせをしながら Markdown にエクスポートする
 second_title: Aspose.Words ドキュメント処理 API
 description: Aspose.Words for .NET を使用して、整列したテーブルを含む Word 文書を Markdown にエクスポートする方法を学びます。完璧な Markdown テーブルを作成するには、ステップバイステップのガイドに従ってください。
 type: docs
@@ -97,7 +97,7 @@ doc.Save(dataDir + "AutoTableContentAlignment.md", saveOptions);
 
 ## 結論
 
-これで完了です。Aspose.Words for .NET を使用して、整列した表を含む Word 文書を Markdown にエクスポートするのは、やり方がわかれば簡単です。この強力なライブラリを使用すると、表の書式設定と整列を簡単に制御できるため、Markdown 文書が希望どおりに表示されるようになります。コーディングを楽しんでください。
+これで完了です。Aspose.Words for .NET を使用して、整列した表を含む Word 文書を Markdown にエクスポートするのは、やり方がわかれば簡単です。この強力なライブラリを使用すると、表の書式設定と配置を簡単に制御できるため、Markdown 文書が希望どおりに表示されるようになります。コーディングを楽しんでください。
 
 ## よくある質問
 

@@ -9,7 +9,7 @@ url: /ja/net/working-with-fields/insert-toafield-without-document-builder/
 ---
 ## 導入
 
-Word 文書に引用文献一覧 (TOA) フィールドを作成するのは、複雑なパズルを組み立てるような作業です。しかし、Aspose.Words for .NET を使用すると、プロセスはスムーズかつ簡単になります。この記事では、ドキュメント ビルダーを使用せずに TOA フィールドを挿入する手順を説明します。これにより、Word 文書内で引用文献や法的な参照を簡単に管理できるようになります。
+Word 文書に引用文献一覧 (TOA) フィールドを作成するのは、複雑なパズルを組み立てるような作業です。しかし、Aspose.Words for .NET を使用すると、プロセスはスムーズかつ簡単になります。この記事では、ドキュメント ビルダーを使用せずに TOA フィールドを挿入する手順を説明します。これにより、Word 文書内で引用文献や法的な参照文献を簡単に管理できるようになります。
 
 ## 前提条件
 
@@ -43,7 +43,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 ```
 
-このコードは、新しい Word 文書を初期化します。コンテンツを追加する空白のキャンバスを作成するものと考えることができます。
+このコードは、新しい Word 文書を初期化します。これは、コンテンツを追加する空白のキャンバスを作成するものと考えることができます。
 
 ## ステップ2: TAフィールドを作成して構成する
 
@@ -63,7 +63,7 @@ doc.FirstSection.Body.AppendChild(para);
 
 内訳は次のとおりです。
 - Paragraph para = new Paragraph(doc);: ドキュメント内に新しい段落を作成します。
--  FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTOAEntry, false);: 段落にTAフィールドを追加します。`FieldType.FieldTOAEntry`これは TOA エントリ フィールドであることを指定します。
+-  FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTOAEntry, false);: TA フィールドを段落に追加します。の`FieldType.FieldTOAEntry`これは TOA エントリ フィールドであることを指定します。
 - fieldTA.EntryCategory = "1";: エントリ カテゴリを設定します。これは、さまざまな種類のエントリを分類するのに役立ちます。
 - fieldTA.LongCitation = "Value 0";: 長い引用テキストを指定します。これは TOA に表示されるテキストです。
 - doc.FirstSection.Body.AppendChild(para);: TA フィールドを含む段落をドキュメントの本文に追加します。
@@ -102,7 +102,7 @@ fieldToa.Update();
 doc.Save(dataDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.docx");
 ```
 
-このコード行は、指定されたディレクトリにドキュメントを保存します。`"YOUR DOCUMENT DIRECTORY"`ファイルを保存する実際のパスを入力します。
+このコード行は、ドキュメントを指定されたディレクトリに保存します。`"YOUR DOCUMENT DIRECTORY"`ファイルを保存する実際のパスを入力します。
 
 ## 結論
 
@@ -123,4 +123,4 @@ doc.Save(dataDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.docx"
 はい、目的の段落またはセクションに TA フィールドを挿入することで、特定の場所に TA フィールドを追加できます。
 
 ### 1 つのドキュメントで複数の TOA フィールドを処理するにはどうすればよいですか?
-異なるTOAフィールドを割り当てることで複数のTOAフィールドを管理できます。`EntryCategory`値を設定し、各 TOA フィールドがカテゴリに基づいてエントリをフィルター処理できるようにします。
+異なるTOAフィールドを割り当てることで複数のTOAフィールドを管理できます。`EntryCategory`値を設定し、各 TOA フィールドがカテゴリに基づいてエントリをフィルター処理するようにします。

@@ -85,7 +85,7 @@ catch (Exception ex)
 
  Miután a CHM fájl betöltődött a`Document` objektumot, elmentheti Word dokumentumként.
 
-1. Kimeneti elérési út megadása: Határozza meg az elérési utat, ahová a Word dokumentumot menteni kívánja.
+1. Kimeneti útvonal megadása: Határozza meg az elérési utat, ahová a Word dokumentumot menteni kívánja.
 
 ```csharp
 string outputPath = dataDir + "LoadedCHM.docx";

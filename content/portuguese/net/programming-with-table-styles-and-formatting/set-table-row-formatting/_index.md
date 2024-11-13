@@ -1,27 +1,27 @@
 ---
-title: Definir formatação de linha da tabela
-linktitle: Definir formatação de linha da tabela
+title: Definir formatação de linha de tabela
+linktitle: Definir formatação de linha de tabela
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como definir a formatação de linhas da tabela em documentos do Word usando Aspose.Words for .NET com nosso guia. Perfeito para criar documentos bem formatados e profissionais.
+description: Aprenda como definir a formatação de linhas de tabela em documentos do Word usando o Aspose.Words para .NET com nosso guia. Perfeito para criar documentos bem formatados e profissionais.
 type: docs
 weight: 10
 url: /pt/net/programming-with-table-styles-and-formatting/set-table-row-formatting/
 ---
 ## Introdução
 
-Se você deseja dominar a arte de formatar tabelas em documentos do Word usando Aspose.Words for .NET, você está no lugar certo. Este tutorial irá guiá-lo através do processo de configuração da formatação das linhas da tabela, garantindo que seus documentos não sejam apenas funcionais, mas também esteticamente agradáveis. Então, vamos nos aprofundar e transformar essas tabelas simples em tabelas bem formatadas!
+Se você está procurando dominar a arte de formatar tabelas em documentos do Word usando o Aspose.Words para .NET, você está no lugar certo. Este tutorial irá guiá-lo pelo processo de configuração da formatação de linhas de tabela, garantindo que seus documentos não sejam apenas funcionais, mas também esteticamente agradáveis. Então, vamos mergulhar e transformar essas tabelas simples em bem formatadas!
 
 ## Pré-requisitos
 
-Antes de entrarmos no tutorial, certifique-se de ter os seguintes pré-requisitos:
+Antes de começarmos o tutorial, certifique-se de ter os seguintes pré-requisitos:
 
-1.  Aspose.Words for .NET - Se ainda não o fez, baixe e instale-o em[aqui](https://releases.aspose.com/words/net/).
-2. Ambiente de Desenvolvimento - Qualquer IDE como o Visual Studio que suporte .NET.
-3. Conhecimento básico de C# – Compreender os conceitos básicos de C# o ajudará a seguir em frente sem problemas.
+1.  Aspose.Words para .NET - Se você ainda não fez isso, baixe e instale-o em[aqui](https://releases.aspose.com/words/net/).
+2. Ambiente de desenvolvimento - Qualquer IDE como o Visual Studio que suporte .NET.
+3. Conhecimento básico de C# - Entender os conceitos básicos de C# ajudará você a acompanhar o processo sem problemas.
 
 ## Importar namespaces
 
-Em primeiro lugar, você precisa importar os namespaces necessários. Isso é crucial porque garante que você tenha acesso a todas as funcionalidades fornecidas pelo Aspose.Words for .NET.
+Primeiramente, você precisa importar os namespaces necessários. Isso é crucial, pois garante que você tenha acesso a todas as funcionalidades fornecidas pelo Aspose.Words para .NET.
 
 ```csharp
 using Aspose.Words;
@@ -30,9 +30,9 @@ using Aspose.Words.Tables;
 
 Vamos dividir o processo em etapas simples e digeríveis. Cada etapa cobrirá uma parte específica do processo de formatação de tabela.
 
-## Etapa 1: crie um novo documento
+## Etapa 1: Crie um novo documento
 
-A primeira etapa é criar um novo documento do Word. Isso servirá como tela para sua mesa.
+O primeiro passo é criar um novo documento do Word. Ele servirá como tela para sua tabela.
 
 ```csharp
 // Caminho para o diretório do seu documento
@@ -42,18 +42,18 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Etapa 2: iniciar uma mesa
+## Etapa 2: iniciar uma tabela
 
- A seguir, você começará a criar a tabela. O`DocumentBuilder` class fornece uma maneira direta de inserir e formatar tabelas.
+ Em seguida, você começará a criar a tabela. O`DocumentBuilder` A classe fornece uma maneira simples de inserir e formatar tabelas.
 
 ```csharp
 Table table = builder.StartTable();
 builder.InsertCell();
 ```
 
-## Etapa 3: definir a formatação da linha
+## Etapa 3: Definir formatação de linha
 
-Agora vem a parte divertida: definir a formatação da linha. Você ajustará a altura da linha e especificará a regra de altura.
+Agora vem a parte divertida - definir a formatação da linha. Você ajustará a altura da linha e especificará a regra de altura.
 
 ```csharp
 RowFormat rowFormat = builder.RowFormat;
@@ -63,7 +63,7 @@ rowFormat.HeightRule = HeightRule.Exactly;
 
 ## Etapa 4: aplicar preenchimento à tabela
 
-preenchimento adiciona espaço ao redor do conteúdo de uma célula, tornando o texto mais legível. Você definirá o preenchimento para todos os lados da mesa.
+preenchimento adiciona espaço ao redor do conteúdo dentro de uma célula, tornando o texto mais legível. Você definirá o preenchimento para todos os lados da tabela.
 
 ```csharp
 table.LeftPadding = 30;
@@ -72,18 +72,18 @@ table.TopPadding = 30;
 table.BottomPadding = 30;
 ```
 
-## Etapa 5: adicionar conteúdo à linha
+## Etapa 5: Adicionar conteúdo à linha
 
-Com a formatação definida, é hora de adicionar algum conteúdo à linha. Pode ser qualquer texto ou dado que você deseja incluir.
+Com a formatação pronta, é hora de adicionar algum conteúdo à linha. Pode ser qualquer texto ou dado que você queira incluir.
 
 ```csharp
 builder.Writeln("I'm a wonderfully formatted row.");
 builder.EndRow();
 ```
 
-## Etapa 6: finalizar a tabela
+## Etapa 6: Finalizar a tabela
 
-Para finalizar o processo de criação da tabela, você precisa encerrar a tabela e salvar o documento.
+Para concluir o processo de criação da tabela, você precisa encerrá-la e salvar o documento.
 
 ```csharp
 builder.EndTable();
@@ -92,21 +92,21 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableR
 
 ## Conclusão
 
-E aí está! Você criou com sucesso uma tabela formatada em um documento do Word usando Aspose.Words for .NET. Esse processo pode ser estendido e personalizado para atender requisitos mais complexos, mas essas etapas básicas fornecem uma base sólida. Experimente diferentes opções de formatação e veja como elas melhoram seus documentos.
+E aí está! Você criou com sucesso uma tabela formatada em um documento do Word usando o Aspose.Words para .NET. Esse processo pode ser estendido e personalizado para atender a requisitos mais complexos, mas essas etapas básicas fornecem uma base sólida. Experimente diferentes opções de formatação e veja como elas aprimoram seus documentos.
 
 ## Perguntas frequentes
 
-### Posso definir uma formatação diferente para cada linha da tabela?
- Sim, você pode definir formatação individual para cada linha aplicando diferentes`RowFormat` propriedades para cada linha que você cria.
+### Posso definir formatação diferente para cada linha na tabela?
+ Sim, você pode definir formatação individual para cada linha aplicando diferentes`RowFormat` propriedades para cada linha que você criar.
 
 ### É possível adicionar outros elementos, como imagens, nas células da tabela?
- Absolutamente! Você pode inserir imagens, formas e outros elementos nas células da tabela usando o`DocumentBuilder` aula.
+ Claro! Você pode inserir imagens, formas e outros elementos nas células da tabela usando o`DocumentBuilder` aula.
 
-### Como altero o alinhamento do texto nas células da tabela?
+### Como altero o alinhamento do texto dentro das células da tabela?
  Você pode alterar o alinhamento do texto definindo o`ParagraphFormat.Alignment` propriedade do`DocumentBuilder` objeto.
 
-### Posso mesclar células em uma tabela usando Aspose.Words for .NET?
- Sim, você pode mesclar células usando o`CellFormat.HorizontalMerge`e`CellFormat.VerticalMerge` propriedades.
+### Posso mesclar células em uma tabela usando o Aspose.Words para .NET?
+ Sim, você pode mesclar células usando o`CellFormat.HorizontalMerge` e`CellFormat.VerticalMerge` propriedades.
 
 ### Existe uma maneira de estilizar a tabela com estilos predefinidos?
- Sim, Aspose.Words for .NET permite aplicar estilos de tabela predefinidos usando o`Table.Style` propriedade.
+ Sim, o Aspose.Words para .NET permite que você aplique estilos de tabela predefinidos usando o`Table.Style` propriedade.

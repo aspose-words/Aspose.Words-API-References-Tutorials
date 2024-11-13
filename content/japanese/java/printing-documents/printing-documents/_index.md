@@ -121,7 +121,7 @@ class MultipagePrintDocument implements Printable
                 //左と上の開始位置を計算します。
                 int leftPos = (int) (thumbLeft + pf.getImageableX());
                 int topPos = (int) (thumbTop + pf.getImageableY());
-                //計算された座標を使用してドキュメントページをGraphicsオブジェクトにレンダリングします。
+                //計算された座標を使用してドキュメントページをグラフィックスオブジェクトにレンダリングします。
                 //およびサムネイル プレースホルダーのサイズ。
                 //便利な戻り値は、ページがレンダリングされたスケールです。
                 float scale = mDocument.renderToSize(pageIndex, (Graphics2D) g, leftPos, topPos, (int) thumbSize.x,
@@ -147,7 +147,7 @@ class MultipagePrintDocument implements Printable
     }
     private Dimension getThumbCount(int pagesPerSheet, PageFormat pf) {
         Dimension size;
-        //シート上の列と行の数を定義します。
+        //シート上の列数と行数を定義します。
         //横長の用紙です。
         switch (pagesPerSheet) {
             case 16:

@@ -1,6 +1,6 @@
 ---
-title: İzlenen Belgedeki Düğümü Taşı
-linktitle: İzlenen Belgedeki Düğümü Taşı
+title: İzlenen Belgede Düğümü Taşı
+linktitle: İzlenen Belgede Düğümü Taşı
 second_title: Aspose.Words Belge İşleme API'si
 description: Ayrıntılı, adım adım kılavuzumuzla Aspose.Words for .NET kullanarak izlenen bir Word belgesindeki düğümleri nasıl taşıyacağınızı öğrenin. Geliştiriciler için mükemmel.
 type: docs
@@ -9,40 +9,40 @@ url: /tr/net/working-with-revisions/move-node-in-tracked-document/
 ---
 ## giriiş
 
-Merhaba Aspose.Words tutkunları! Düzeltmeleri izlerken bir Word belgesindeki bir düğümü taşımanız gerekiyorsa doğru yerdesiniz. Bugün bunu Aspose.Words for .NET kullanarak nasıl başaracağımızı inceliyoruz. Yalnızca adım adım süreci öğrenmekle kalmayacak, aynı zamanda belge işlemlerinizi sorunsuz ve verimli hale getirmek için bazı ipuçları ve püf noktaları da öğreneceksiniz.
+Merhaba, Aspose.Words meraklıları! Revizyonları izlerken bir Word belgesinde bir düğümü taşımanız gerektiyse doğru yerdesiniz. Bugün, bunu .NET için Aspose.Words kullanarak nasıl başaracağınıza derinlemesine bakıyoruz. Sadece adım adım süreci öğrenmekle kalmayacak, aynı zamanda belge düzenlemenizi sorunsuz ve verimli hale getirmek için bazı ipuçları ve püf noktaları da edineceksiniz.
 
-## Önkoşullar
+## Ön koşullar
 
-Bazı kodlarla elimizi kirletmeden önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
+Ellerimizi biraz kodla kirletmeden önce, ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
 -  Aspose.Words for .NET: İndirin[Burada](https://releases.aspose.com/words/net/).
 - .NET Ortamı: Uyumlu bir .NET geliştirme ortamı kurduğunuzdan emin olun.
-- Temel C# Bilgisi: Bu eğitimde, C# hakkında temel bilgiye sahip olduğunuz varsayılmaktadır.
+- Temel C# Bilgisi: Bu eğitimde C# hakkında temel bir anlayışa sahip olduğunuzu varsayıyoruz.
 
-Herşeyi aldın mı? Harika! Şimdi içe aktarmamız gereken ad alanlarına geçelim.
+Her şeyi anladınız mı? Harika! İçe aktarmamız gereken ad alanlarına geçelim.
 
 ## Ad Alanlarını İçe Aktar
 
-Öncelikle gerekli ad alanlarını içe aktarmamız gerekiyor. Bunlar Aspose.Words ile çalışmak ve belge düğümlerini yönetmek için gereklidir.
+İlk önce, gerekli ad alanlarını içe aktarmamız gerekiyor. Bunlar Aspose.Words ile çalışmak ve belge düğümlerini yönetmek için önemlidir.
 
 ```csharp
 using Aspose.Words;
 using System;
 ```
 
-Peki, süreci yönetilebilir adımlara ayıralım. Her noktada neler olduğunu anlamanızı sağlamak için her adım ayrıntılı olarak açıklanacaktır.
+Tamam, süreci yönetilebilir adımlara bölelim. Her adım, her noktada ne olduğunu anlamanızı sağlamak için ayrıntılı olarak açıklanacaktır.
 
-## 1. Adım: Belgeyi Başlatın
+## Adım 1: Belgeyi Başlatın
 
- Başlamak için yeni bir belge başlatmamız ve bir`DocumentBuilder` bazı paragraflar eklemek için.
+ Başlamak için yeni bir belge başlatmamız ve bir`DocumentBuilder` birkaç paragraf eklemek için.
 
 ```csharp
-// Belgeler dizininin yolu.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Bazı paragraflar ekleme
+// Birkaç paragraf ekleniyor
 builder.Writeln("Paragraph 1");
 builder.Writeln("Paragraph 2");
 builder.Writeln("Paragraph 3");
@@ -55,18 +55,18 @@ Body body = doc.FirstSection.Body;
 Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
 ```
 
-## 2. Adım: Düzeltmeleri İzlemeye Başlayın
+## Adım 2: Revizyonları İzlemeye Başlayın
 
-Daha sonra revizyonları izlemeye başlamamız gerekiyor. Bu, belgede yapılan değişiklikleri görmemize olanak tanıdığı için çok önemlidir.
+Sonra, revizyonları izlemeye başlamamız gerekiyor. Bu, belgede yapılan değişiklikleri görmemizi sağladığı için önemlidir.
 
 ```csharp
-// Revizyonları izlemeye başlayın
+// Revizyonları izlemeye başla
 doc.StartTrackRevisions("Author", new DateTime(2020, 12, 23, 14, 0, 0));
 ```
 
-## 3. Adım: Düğümleri Taşı
+## Adım 3: Düğümleri Taşı
 
-Şimdi görevimizin temel kısmı geliyor: bir düğümü bir konumdan diğerine taşımak. Üçüncü paragrafı taşıyıp ilk paragrafın önüne yerleştireceğiz.
+Şimdi görevimizin temel kısmına geliyoruz: bir düğümü bir yerden başka bir yere taşımak. Üçüncü paragrafı taşıyacağız ve ilk paragraftan önce yerleştireceğiz.
 
 ```csharp
 // Taşınacak düğümü ve bitiş aralığını tanımlayın
@@ -83,9 +83,9 @@ while (node != endNode)
 }
 ```
 
-## 4. Adım: Düzeltmeleri İzlemeyi Durdurun
+## Adım 4: Revizyonları İzlemeyi Durdurun
 
-Düğümleri taşıdıktan sonra revizyonları izlemeyi durdurmamız gerekir.
+Düğümleri taşıdıktan sonra revizyonları izlemeyi bırakmamız gerekiyor.
 
 ```csharp
 // Revizyonları izlemeyi durdur
@@ -94,38 +94,38 @@ doc.StopTrackRevisions();
 
 ## Adım 5: Belgeyi Kaydedin
 
-Son olarak değiştirdiğimiz belgemizi belirtilen dizine kaydedelim.
+Son olarak, değiştirdiğimiz belgeyi belirtilen dizine kaydedelim.
 
 ```csharp
 // Değiştirilen belgeyi kaydet
 doc.Save(dataDir + "WorkingWithRevisions.MoveNodeInTrackedDocument.docx");
 
-// Son paragraf sayısının çıktısını alın
+// Son paragraf sayısını çıktı olarak ver
 Console.WriteLine("Paragraph count: {0}", body.Paragraphs.Count);
 ```
 
 ## Çözüm
 
-Ve işte karşınızda! Aspose.Words for .NET'i kullanarak takip edilen bir belgedeki bir düğümü başarıyla taşıdınız. Bu güçlü kitaplık, Word belgelerini programlı olarak yönetmeyi kolaylaştırır. İster oluşturuyor, ister düzenliyor, ister değişiklikleri izliyor olun, Aspose.Words yanınızdadır. Öyleyse devam edin ve deneyin. Mutlu kodlama!
+Ve işte karşınızda! Aspose.Words for .NET kullanarak izlenen bir belgedeki bir düğümü başarıyla taşıdınız. Bu güçlü kütüphane, Word belgelerini programatik olarak yönetmenizi kolaylaştırır. İster oluşturuyor, ister düzenliyor veya değişiklikleri izliyor olun, Aspose.Words sizin için her şeyi yapar. O halde devam edin ve deneyin. İyi kodlamalar!
 
-## SSS'ler
+## SSS
 
 ### Aspose.Words for .NET nedir?
 
-Aspose.Words for .NET, Word belgeleriyle programlı olarak çalışmak için kullanılan bir sınıf kütüphanesidir. Geliştiricilerin .NET uygulamaları içinde Word belgeleri oluşturmasına, düzenlemesine, dönüştürmesine ve yazdırmasına olanak tanır.
+Aspose.Words for .NET, Word belgeleriyle programatik olarak çalışmak için bir sınıf kütüphanesidir. Geliştiricilerin .NET uygulamaları içinde Word belgeleri oluşturmasına, düzenlemesine, dönüştürmesine ve yazdırmasına olanak tanır.
 
-### Aspose.Words'ü kullanarak bir Word belgesindeki revizyonları nasıl izlerim?
+### Aspose.Words kullanarak bir Word belgesindeki revizyonları nasıl takip edebilirim?
 
- Revizyonları izlemek için şunu kullanın:`StartTrackRevisions` konusundaki yöntem`Document` nesne. Bu, belgede yapılan değişiklikleri gösteren revizyon takibini etkinleştirecektir.
+ Düzeltmeleri izlemek için şunu kullanın:`StartTrackRevisions` yöntem üzerinde`Document` nesne. Bu, belgede yapılan tüm değişiklikleri göstererek revizyon izlemeyi etkinleştirecektir.
 
-### Aspose.Words'te birden fazla düğümü taşıyabilir miyim?
+### Aspose.Words'de birden fazla düğümü taşıyabilir miyim?
 
-Evet, birden fazla düğümü üzerlerinde yineleyerek ve aşağıdaki gibi yöntemleri kullanarak taşıyabilirsiniz:`InsertBefore` veya`InsertAfter` bunları istediğiniz yere yerleştirmek için.
+Evet, üzerlerinde yineleme yaparak ve şu yöntemleri kullanarak birden fazla düğümü taşıyabilirsiniz:`InsertBefore` veya`InsertAfter` onları istenilen yere yerleştirmek.
 
-### Aspose.Words'te revizyonları izlemeyi nasıl durdurabilirim?
+### Aspose.Words'de revizyonları izlemeyi nasıl durdurabilirim?
 
- Kullanın`StopTrackRevisions` konusundaki yöntem`Document` revizyonları izlemeyi durdurmaya itiraz edin.
+ Kullanın`StopTrackRevisions` yöntem üzerinde`Document` revizyonların izlenmesini durdurmaya yönelik nesne.
 
-### Aspose.Words for .NET hakkında daha fazla belgeyi nerede bulabilirim?
+### Aspose.Words for .NET hakkında daha fazla dokümanı nerede bulabilirim?
 
- Ayrıntılı belgeleri bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).
+ Ayrıntılı dokümanları bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).

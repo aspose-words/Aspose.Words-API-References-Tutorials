@@ -1,287 +1,188 @@
 ---
-title: Форматирование таблиц и стилей таблиц в Aspose.Words для Java
-linktitle: Форматирование таблиц и стили таблиц
-second_title: API обработки Java-документов Aspose.Words
-description: Узнайте, как форматировать таблицы и применять стили таблиц в Aspose.Words для Java. Изучите пошаговые руководства с исходным кодом для эффективного форматирования таблиц. Улучшите макет вашего документа с помощью Aspose.Words.
+title: Форматирование таблиц и стилей таблиц
+linktitle: Форматирование таблиц и стилей таблиц
+second_title: API обработки документов Java Aspose.Words
+description: Узнайте, как форматировать таблицы и применять стили с помощью Aspose.Words для Java. Это пошаговое руководство охватывает установку границ, затенение ячеек и применение стилей таблиц.
 type: docs
 weight: 17
 url: /ru/java/document-conversion-and-export/formatting-tables-and-table-styles/
 ---
 
-## Введение в форматирование таблиц и стили таблиц в Aspose.Words для Java
+## Введение
 
-Таблицы играют решающую роль в структурировании и организации информации в документах. Aspose.Words for Java предоставляет мощные функции для форматирования таблиц и применения стилей таблиц для повышения визуальной привлекательности ваших документов. В этом пошаговом руководстве мы рассмотрим различные аспекты форматирования таблиц и применения стилей таблиц с помощью Aspose.Words для Java.
+Когда дело доходит до форматирования документа, таблицы играют решающую роль в организации и четком представлении данных. Если вы работаете с Java и Aspose.Words, в вашем распоряжении есть мощные инструменты для создания и форматирования таблиц в ваших документах. Независимо от того, разрабатываете ли вы простую таблицу или применяете расширенные стили, Aspose.Words для Java предлагает ряд функций, которые помогут вам достичь профессионально выглядящих результатов.
 
-## Предварительные условия
+В этом руководстве мы проведем вас через процесс форматирования таблиц и применения стилей таблиц с помощью Aspose.Words для Java. Вы узнаете, как устанавливать границы таблиц, применять затенение ячеек и использовать стили таблиц для улучшения внешнего вида ваших документов. К концу вы будете иметь навыки создания хорошо отформатированных таблиц, которые выделят ваши данные.
 
-Прежде чем мы углубимся в детали, убедитесь, что в ваш проект интегрирована библиотека Aspose.Words for Java. Скачать его можно с сайта Aspose:[Скачать Aspose.Words для Java](https://releases.aspose.com/words/java/).
+## Предпосылки
 
-## Получить расстояние между таблицей и окружающим текстом
+Прежде чем начать, вам необходимо подготовить несколько вещей:
 
-Для начала давайте рассмотрим, как получить расстояние между таблицей и окружающим текстом в документе.
+1. Java Development Kit (JDK): Убедитесь, что у вас установлен JDK 8 или более поздней версии. Aspose.Words для Java требует совместимого JDK для корректной работы.
+2. Интегрированная среда разработки (IDE): такая среда IDE, как IntelliJ IDEA или Eclipse, поможет вам управлять проектами Java и оптимизировать процесс разработки.
+3.  Библиотека Aspose.Words для Java: Загрузите последнюю версию Aspose.Words для Java[здесь](https://releases.aspose.com/words/java/) и включите его в свой проект.
+4. Пример кода: мы будем использовать несколько примеров фрагментов кода, поэтому убедитесь, что у вас есть базовые знания о программировании на Java и о том, как интегрировать библиотеки в свой проект.
 
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-System.out.println("Distance Top: " + table.getDistanceTop());
-System.out.println("Distance Bottom: " + table.getDistanceBottom());
-System.out.println("Distance Right: " + table.getDistanceRight());
-System.out.println("Distance Left: " + table.getDistanceLeft());
-```
+## Импортные пакеты
 
-## Применить контурную границу к таблице
-
-Вы можете выровнять таблицу по центру страницы, очистить существующие границы и установить собственную границу контура с помощью этого кода:
+Для работы с Aspose.Words for Java вам необходимо импортировать соответствующие пакеты в ваш проект. Эти пакеты предоставляют классы и методы, необходимые для обработки и форматирования документов.
 
 ```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-table.setAlignment(TableAlignment.CENTER);
-table.clearBorders();
-table.setBorder(BorderType.LEFT, LineStyle.SINGLE, 1.5, Color.GREEN, true);
-table.setBorder(BorderType.RIGHT, LineStyle.SINGLE, 1.5, Color.GREEN, true);
-table.setBorder(BorderType.TOP, LineStyle.SINGLE, 1.5, Color.GREEN, true);
-table.setBorder(BorderType.BOTTOM, LineStyle.SINGLE, 1.5, Color.GREEN, true);
-table.setShading(TextureIndex.TEXTURE_SOLID, Color.lightGray, new Color(0, true));
+import com.aspose.words.*;
 ```
 
-## Создайте таблицу с границами
+Этот оператор импорта предоставляет вам доступ ко всем основным классам, необходимым для создания и форматирования таблиц в ваших документах.
 
-Этот фрагмент кода демонстрирует, как создать таблицу и установить границы как для таблицы, так и для ее ячеек:
+## Шаг 1: Форматирование таблиц
 
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-table.clearBorders();
-table.setBorders(LineStyle.SINGLE, 1.5, Color.GREEN);
-```
+Форматирование таблиц в Aspose.Words для Java включает в себя установку границ, затенение ячеек и применение различных параметров форматирования. Вот как это можно сделать:
 
-## Изменить форматирование строки
-
-Узнайте, как изменить форматирование определенной строки в таблице:
-
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-Row firstRow = table.getFirstRow();
-firstRow.getRowFormat().getBorders().setLineStyle(LineStyle.NONE);
-firstRow.getRowFormat().setHeightRule(HeightRule.AUTO);
-firstRow.getRowFormat().setAllowBreakAcrossPages(true);
-```
-
-## Применить форматирование строк
-
-В этом примере показано, как применить форматирование ко всей строке таблицы:
+### Загрузить документ
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
+
+### Создать и отформатировать таблицу
+
+```java
 Table table = builder.startTable();
 builder.insertCell();
-RowFormat rowFormat = builder.getRowFormat();
-rowFormat.setHeight(100.0);
-rowFormat.setHeightRule(HeightRule.EXACTLY);
-table.setLeftPadding(30.0);
-table.setRightPadding(30.0);
-table.setTopPadding(30.0);
-table.setBottomPadding(30.0);
-builder.writeln("I'm a wonderfully formatted row.");
-```
 
-## Установить заполнение ячеек
-
-Узнайте, как установить отступы для отдельных ячеек таблицы:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.startTable();
-builder.insertCell();
-builder.getCellFormat().setPaddings(30.0, 50.0, 30.0, 50.0);
-builder.writeln("I'm a wonderfully formatted cell.");
-```
-
-## Изменить форматирование ячейки
-
-Узнайте, как изменить форматирование определенной ячейки в таблице:
-
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-Cell firstCell = table.getFirstRow().getFirstCell();
-firstCell.getCellFormat().setWidth(30.0);
-firstCell.getCellFormat().setOrientation(TextOrientation.DOWNWARD);
-firstCell.getCellFormat().getShading().setForegroundPatternColor(Color.GREEN);
-```
-
-## Форматирование таблицы и ячейки с разными границами
-
-Узнайте, как установить разные границы для отдельных ячеек таблицы:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-Table table = builder.startTable();
-// Установить границы таблицы
+// Установите границы для всей таблицы.
 table.setBorders(LineStyle.SINGLE, 2.0, Color.BLACK);
-// Установить затенение ячеек для отдельных ячеек
+        
+// Установите затенение для этой ячейки.
 builder.getCellFormat().getShading().setBackgroundPatternColor(Color.RED);
-// Добавление содержимого в ячейки
 builder.writeln("Cell #1");
+
 builder.insertCell();
+        
+// Укажите другую заливку ячейки для второй ячейки.
 builder.getCellFormat().getShading().setBackgroundPatternColor(Color.GREEN);
 builder.writeln("Cell #2");
-// Очистить форматирование ячейки для следующей строки
+
+builder.endRow();
+```
+
+### Настроить границы ячеек
+
+```java
+// Очистить форматирование ячеек от предыдущих операций.
 builder.getCellFormat().clearFormatting();
-// Создайте более крупные границы для первой ячейки этой строки.
+
+builder.insertCell();
+
+//Создайте более крупные границы для первой ячейки этой строки.
 builder.getCellFormat().getBorders().getLeft().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getRight().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getTop().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getBottom().setLineWidth(4.0);
 builder.writeln("Cell #3");
+
 builder.insertCell();
 builder.getCellFormat().clearFormatting();
 builder.writeln("Cell #4");
+        
+doc.save("FormatTableAndCellWithDifferentBorders.docx");
 ```
 
-## Установить заголовок и описание таблицы
+### Объяснение
 
-Добавьте заголовок и описание к вашей таблице:
+В этом примере:
+- Установить границы: Мы устанавливаем границы всей таблицы в виде одной линии толщиной 2,0 пункта.
+- Затенение ячеек: Первая ячейка затенена красным, а вторая — зеленым. Это помогает визуально различать ячейки.
+- Границы ячеек: для третьей ячейки мы создаем более толстые границы, чтобы выделить ее на фоне остальных.
 
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-table.setTitle("Test title");
-table.setDescription("Test description");
-```
+## Шаг 2: Применение стилей таблицы
 
-## Шаг 10: Разрешить расстояние между ячейками
+Стили таблиц в Aspose.Words для Java позволяют применять предопределенные параметры форматирования к таблицам, что упрощает достижение единообразного вида. Вот как применить стиль к таблице:
 
-Разрешите расстояние между ячейками и установите его значение для таблицы:
-
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-table.setAllowCellSpacing(true);
-table.setCellSpacing(2.0);
-```
-
-## Шаг 11: Создайте стильную таблицу
-
-Создайте таблицу с предопределенным стилем:
+### Создать документ и таблицу
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+
 Table table = builder.startTable();
+        
+// Прежде чем настраивать форматирование таблицы, необходимо вставить хотя бы одну строку.
+builder.insertCell();
+```
+
+### Применить стиль таблицы
+
+```java
+// Задайте стиль таблицы на основе уникального идентификатора стиля.
 table.setStyleIdentifier(StyleIdentifier.MEDIUM_SHADING_1_ACCENT_1);
+        
+// Примените, какие объекты должны быть отформатированы с помощью стиля.
 table.setStyleOptions(TableStyleOptions.FIRST_COLUMN | TableStyleOptions.ROW_BANDS | TableStyleOptions.FIRST_ROW);
+table.autoFit(AutoFitBehavior.AUTO_FIT_TO_CONTENTS);
+```
+
+### Добавить данные таблицы
+
+```java
 builder.writeln("Item");
 builder.getCellFormat().setRightPadding(40.0);
 builder.insertCell();
 builder.writeln("Quantity (kg)");
-```
+builder.endRow();
 
-## Шаг 12. Расширьте форматирование ячеек и строк из стиля
-
-Узнайте, как расширить стили таблицы, чтобы применить форматирование к ячейкам и строкам:
-
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-Cell firstCell = table.getFirstRow().getFirstCell();
-Color cellShadingBefore = firstCell.getCellFormat().getShading().getBackgroundPatternColor();
-doc.expandTableStylesToDirectFormatting();
-Color cellShadingAfter = firstCell.getCellFormat().getShading().getBackgroundPatternColor();
-```
-
-## Шаг 13: Создайте стиль таблицы
-
-Создайте собственный стиль таблицы с определенным форматированием:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-Table table = builder.startTable();
-table.setStyleIdentifier(StyleIdentifier.MEDIUM_SHADING_1_ACCENT_1);
-table.setStyleOptions(TableStyleOptions.FIRST_COLUMN | TableStyleOptions.ROW_BANDS | TableStyleOptions.FIRST_ROW);
-builder.writeln("Item");
-builder.getCellFormat().setRightPadding(40.0);
 builder.insertCell();
-builder.writeln("Quantity (kg)");
-```
-
-## Шаг 14: Определите условное форматирование
-
-Примените условное форматирование к строкам таблицы:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-Table table = builder.startTable();
-TableStyle tableStyle = (TableStyle) doc.getStyles().add(StyleType.TABLE, "MyTableStyle1");
-tableStyle.getConditionalStyles().getFirstRow().getShading().setBackgroundPatternColor(Color.yellow);
-table.setStyle(tableStyle);
-```
-
-## Шаг 15. Установите форматирование TableCell
-
-Установите определенное форматирование для отдельных ячеек:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.startTable();
+builder.writeln("Apples");
 builder.insertCell();
-CellFormat cellFormat = builder.getCellFormat();
-cellFormat.setWidth(250.0);
-cellFormat.setLeftPadding(30.0);
-cellFormat.setRightPadding(30.0);
-cellFormat.setTopPadding(30.0);
-cellFormat.setBottomPadding(30.0);
-builder.writeln("I'm a wonderfully formatted cell.");
+builder.writeln("20");
+builder.endRow();
+
+builder.insertCell();
+builder.writeln("Bananas");
+builder.insertCell();
+builder.writeln("40");
+builder.endRow();
+
+builder.insertCell();
+builder.writeln("Carrots");
+builder.insertCell();
+builder.writeln("50");
+builder.endRow();
+
+doc.save("BuildTableWithStyle.docx");
 ```
 
-## Шаг 16: Установите форматирование TableRow
+### Объяснение
 
-Примените форматирование ко всем строкам таблицы:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-Table table = builder.startTable();
-RowFormat rowFormat = builder.getRowFormat();
-rowFormat.setHeight(100.0);
-rowFormat.setHeightRule(HeightRule.EXACTLY);
-table.setLeftPadding(30.0);
-table.setRightPadding(30.0);
-table.setTopPadding(30.0);
-table.setBottomPadding(30.0);
-builder.writeln("I'm a wonderfully formatted row.");
-```
+В этом примере:
+- Установить стиль таблицы: мы применяем предопределенный стиль (`MEDIUM_SHADING_1_ACCENT_1`) к таблице. Этот стиль включает форматирование для разных частей таблицы.
+- Параметры стиля: мы указываем, что первый столбец, полосы строк и первая строка должны быть отформатированы в соответствии с параметрами стиля.
+-  AutoFit: Мы используем`AUTO_FIT_TO_CONTENTS` чтобы гарантировать, что размер таблицы будет меняться в зависимости от ее содержимого.
 
 ## Заключение
 
-Aspose.Words for Java позволяет вам точно форматировать таблицы и применять стили таблиц. От изменения форматирования отдельных ячеек до создания пользовательских стилей таблиц — у вас есть инструменты, которые сделают ваши документы визуально привлекательными и организованными.
+И вот оно! Вы успешно отформатировали таблицы и применили стили с помощью Aspose.Words для Java. С помощью этих методов вы можете создавать таблицы, которые не только функциональны, но и визуально привлекательны. Эффективное форматирование таблиц может значительно улучшить читаемость и профессиональный вид ваших документов.
+
+Aspose.Words for Java — это надежный инструмент, который предлагает обширные возможности для работы с документами. Освоив форматирование таблиц и стили, вы на один шаг приблизитесь к использованию всей мощи этой библиотеки.
 
 ## Часто задаваемые вопросы
 
-### Как загрузить Aspose.Words для Java?
+### 1. Могу ли я использовать пользовательские стили таблиц, не входящие в параметры по умолчанию?
 
- Вы можете скачать Aspose.Words для Java с веб-сайта Aspose:[Скачать Aspose.Words для Java](https://releases.aspose.com/words/java/).
+Да, вы можете определять и применять пользовательские стили к своим таблицам с помощью Aspose.Words for Java. Проверьте[документация](https://reference.aspose.com/words/java/) для получения более подробной информации о создании пользовательских стилей.
 
-### Могу ли я применить разные границы к отдельным ячейкам таблицы?
+### 2. Как применить условное форматирование к таблицам?
 
-Да, вы можете установить разные границы для отдельных ячеек в таблице с помощью Aspose.Words для Java, как показано в этом руководстве.
+Aspose.Words for Java позволяет программно настраивать форматирование таблиц на основе условий. Это можно сделать, проверив определенные критерии в коде и применив форматирование соответствующим образом.
 
-### Какова цель установки заголовка и описания таблицы?
+### 3. Можно ли форматировать объединенные ячейки в таблице?
 
-Установка заголовка и описания таблицы улучшает доступность и организацию вашего документа, облегчая читателям и вспомогательным технологиям понимание содержимого.
+Да, вы можете форматировать объединенные ячейки так же, как и обычные ячейки. Убедитесь, что вы применили форматирование после объединения ячеек, чтобы увидеть отраженные изменения.
 
-### Как применить условное форматирование к определенным строкам таблицы?
+### 4. Можно ли динамически изменять расположение таблиц?
 
-Вы можете применить условное форматирование к определенным строкам в таблице, определив пользовательские стили таблицы с правилами условного форматирования, как показано в этом руководстве.
+Да, вы можете динамически настраивать макет таблицы, изменяя размеры ячеек, ширину таблицы и другие свойства на основе содержимого или ввода пользователя.
 
-### Где я могу найти дополнительную документацию и ресурсы для Aspose.Words для Java?
+### 5. Где я могу получить более подробную информацию о форматировании таблиц?
 
- Подробную документацию и дополнительные ресурсы можно найти в документации Aspose.Words for Java:[Документация Aspose.Words для Java](https://reference.aspose.com/words/java/).
+ Для более подробных примеров и вариантов посетите[Документация API Aspose.Words](https://reference.aspose.com/words/java/).

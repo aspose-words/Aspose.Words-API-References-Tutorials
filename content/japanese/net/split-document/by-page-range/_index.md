@@ -17,7 +17,7 @@ url: /ja/net/split-document/by-page-range/
 
 1.  Aspose.Words for .NET: Aspose.Words for .NET がインストールされている必要があります。まだインストールしていない場合は、以下からダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
 2. 開発環境: Visual Studio などの適切な開発環境。
-3. C# の基本知識: 各ステップを順を追って説明しますが、C# の基本的な知識があると役立ちます。
+3. C# の基本知識: 各ステップを順を追って説明しますが、C# の基本的な理解が役立ちます。
 
 ## 名前空間のインポート
 

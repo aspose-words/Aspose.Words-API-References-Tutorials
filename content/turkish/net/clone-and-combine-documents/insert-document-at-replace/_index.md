@@ -1,6 +1,6 @@
 ---
-title: Belgeyi Değiştirme Sırasına Ekle
-linktitle: Belgeyi Değiştirme Sırasına Ekle
+title: Değiştir'de Belge Ekle
+linktitle: Değiştir'de Belge Ekle
 second_title: Aspose.Words Belge İşleme API'si
 description: Ayrıntılı, adım adım kılavuzumuzla Aspose.Words for .NET kullanarak bir Word belgesini diğerine sorunsuz bir şekilde nasıl ekleyeceğinizi öğrenin. Belge işlemeyi kolaylaştırmak isteyen geliştiriciler için mükemmeldir.
 type: docs
@@ -9,21 +9,21 @@ url: /tr/net/clone-and-combine-documents/insert-document-at-replace/
 ---
 ## giriiş
 
-Merhaba belge ustaları! Hiç kendinizi bir Word belgesini diğerine sorunsuz bir şekilde nasıl ekleyeceğinizi bulmaya çalışırken kodlara gömülmüş halde buldunuz mu? Korkmayın, çünkü bugün bu görevi kolaylaştırmak için Aspose.Words for .NET dünyasına dalıyoruz. Bulma ve değiştirme işlemi sırasında belgeleri belirli noktalara eklemek için bu güçlü kitaplığın nasıl kullanılacağına ilişkin ayrıntılı, adım adım bir kılavuzu inceleyeceğiz. Aspose.Words sihirbazı olmaya hazır mısınız? Hadi başlayalım!
+Merhaba, belge ustaları! Kendinizi hiç bir Word belgesini diğerine sorunsuz bir şekilde nasıl ekleyeceğinizi anlamaya çalışırken kodların içinde buldunuz mu? Korkmayın, çünkü bugün bu görevi kolaylaştırmak için .NET için Aspose.Words dünyasına dalıyoruz. Bu güçlü kütüphaneyi kullanarak bul ve değiştir işlemi sırasında belirli noktalara belge ekleme konusunda ayrıntılı, adım adım bir kılavuzda ilerleyeceğiz. Bir Aspose.Words sihirbazı olmaya hazır mısınız? Hadi başlayalım!
 
-## Önkoşullar
+## Ön koşullar
 
-Koda geçmeden önce, yerine getirmeniz gereken birkaç şey var:
+Koda geçmeden önce, yerinde olması gereken birkaç şey var:
 
--  Visual Studio: Makinenizde Visual Studio'nun kurulu olduğundan emin olun. Henüz sahip değilseniz, adresinden indirebilirsiniz.[Burada](https://visualstudio.microsoft.com/).
--  Aspose.Words for .NET: Aspose.Words kütüphanesine ihtiyacınız olacak. Şu adresten alabilirsiniz:[Web sitesi](https://releases.aspose.com/words/net/).
-- Temel C# Bilgisi: C# ve .NET'e ilişkin temel bir anlayış, bu öğreticiyi takip etmenize yardımcı olacaktır.
+-  Visual Studio: Makinenizde Visual Studio'nun yüklü olduğundan emin olun. Eğer henüz yüklü değilse, şuradan indirebilirsiniz:[Burada](https://visualstudio.microsoft.com/).
+-  .NET için Aspose.Words: Aspose.Words kütüphanesine ihtiyacınız olacak. Bunu şuradan edinebilirsiniz:[Aspose web sitesi](https://releases.aspose.com/words/net/).
+- Temel C# Bilgisi: C# ve .NET hakkında temel bir anlayışa sahip olmak bu eğitimi takip etmenize yardımcı olacaktır.
 
-Pekala, bunları aradan çıkaralım, biraz kodla ellerimizi kirletelim!
+Tamam, bunları aradan çıkardığımıza göre, biraz kodla işimize bakalım!
 
 ## Ad Alanlarını İçe Aktar
 
-Öncelikle Aspose.Words ile çalışmak için gerekli ad alanlarını içe aktarmamız gerekiyor. Bu, bir projeye başlamadan önce tüm araçlarınızı toplamaya benzer. Bunları kullanarak C# dosyanızın en üstüne yönergeleri ekleyin:
+İlk önce, Aspose.Words ile çalışmak için gerekli ad alanlarını içe aktarmamız gerekiyor. Bu, bir projeye başlamadan önce tüm araçlarınızı toplamak gibidir. C# dosyanızın en üstüne şu using yönergelerini ekleyin:
 
 ```csharp
 using System;
@@ -33,31 +33,31 @@ using Aspose.Words.Replacing;
 using Aspose.Words.Tables;
 ```
 
-Artık önkoşullarımızı yerine getirdiğimize göre, süreci küçük adımlara ayıralım. Her adım çok önemli ve bizi hedefimize yaklaştıracak.
+Artık ön koşullarımız hazır olduğuna göre, süreci küçük adımlara bölelim. Her adım kritik öneme sahiptir ve bizi hedefimize yaklaştıracaktır.
 
-## 1. Adım: Belge Dizinini Ayarlama
+## Adım 1: Belgeler Dizinini Ayarlama
 
-Öncelikle belgelerimizin saklandığı dizini belirtmemiz gerekiyor. Bu, büyük performanstan önce sahneyi hazırlamak gibidir.
+Öncelikle belgelerimizin saklandığı dizini belirtmemiz gerekiyor. Bu, büyük gösteriden önce sahneyi hazırlamak gibidir.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` dizininizin yolu ile. Belgelerinizin yaşayacağı ve nefes alacağı yer burasıdır.
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` dizininize giden yol ile. Belgelerinizin yaşayacağı ve nefes alacağı yer burasıdır.
 
 ## Adım 2: Ana Belgeyi Yükleyin
 
-Daha sonra içine başka bir belge eklemek istediğimiz ana belgeyi yüklüyoruz. Bunu tüm aksiyonun gerçekleşeceği ana sahnemiz olarak düşünün.
+Sonra, içine başka bir belge eklemek istediğimiz ana belgeyi yükleriz. Bunu, tüm eylemin gerçekleşeceği ana sahnemiz olarak düşünün.
 
 ```csharp
 Document mainDoc = new Document(dataDir + "Document insertion 1.docx");
 ```
 
-Bu kod, ana belgeyi belirtilen dizinden yükler.
+Bu kod belirtilen dizinden ana belgeyi yükler.
 
-## 3. Adım: Bul ve Değiştir Seçeneklerini Ayarlayın
+## Adım 3: Bul ve Değiştir Seçeneklerini Ayarlayın
 
-Belgemizi eklemek istediğimiz belirli konumu bulmak için bul ve değiştir işlevini kullanırız. Bu, yeni eklememizin tam yerini bulmak için harita kullanmaya benziyor.
+Belgemizi eklemek istediğimiz belirli konumu bulmak için bul ve değiştir işlevini kullanırız. Bu, yeni eklememiz için tam noktayı bulmak için bir harita kullanmaya benzer.
 
 ```csharp
 FindReplaceOptions options = new FindReplaceOptions
@@ -67,11 +67,11 @@ FindReplaceOptions options = new FindReplaceOptions
 };
 ```
 
-Burada yönü geriye doğru ayarlıyoruz ve daha sonra tanımlayacağımız özel bir geri arama işleyicisini belirliyoruz.
+Burada yönü geriye doğru ayarlıyoruz ve daha sonra tanımlayacağımız özel bir geri çağırma işleyicisi belirliyoruz.
 
 ## Adım 4: Değiştirme İşlemini Gerçekleştirin
 
-Şimdi, başka bir belge eklemek için özel geri çağrımızı kullanırken, ana belgemize belirli bir yer tutucu metni aramasını ve onu hiçbir şeyle değiştirmemesini söylüyoruz.
+Şimdi, ana belgemize belirli bir yer tutucu metni aramasını ve onu hiçbir şeyle değiştirmesini söylerken, başka bir belge eklemek için özel geri aramamızı kullanıyoruz.
 
 ```csharp
 mainDoc.Range.Replace(new Regex("\\[MY_DOCUMENT\\]"), "", options);
@@ -80,9 +80,9 @@ mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtReplace.docx");
 
 Bu kod bul ve değiştir işlemini gerçekleştirir ve ardından güncellenen belgeyi kaydeder.
 
-## Adım 5: Özel Bir Geri Arama İşleyicisini Değiştirme Oluşturun
+## Adım 5: Özel Bir Değiştirme Geri Çağırma İşleyicisi Oluşturun
 
-Özel geri arama işleyicimiz sihrin gerçekleştiği yerdir. Bu işleyici, bulma ve değiştirme işlemi sırasında belge ekleme işleminin nasıl gerçekleştirileceğini tanımlayacaktır.
+Özel geri çağırma işleyicimiz sihrin gerçekleştiği yerdir. Bu işleyici, bul ve değiştir işlemi sırasında belge eklemenin nasıl gerçekleştirileceğini tanımlayacaktır.
 
 ```csharp
 private class InsertDocumentAtReplaceHandler : IReplacingCallback
@@ -95,73 +95,77 @@ private class InsertDocumentAtReplaceHandler : IReplacingCallback
         Paragraph para = (Paragraph)args.MatchNode.ParentNode;
         InsertDocument(para, subDoc);
 
-        // Eşleşme metnini içeren paragrafı kaldırın.
+        // Eşleşen metni içeren paragrafı kaldırın.
         para.Remove();
         return ReplaceAction.Skip;
     }
 }
 ```
 
-Burada eklenecek belgeyi yüklüyoruz ve ardından eklemeyi gerçekleştirmek için bir yardımcı yöntem çağırıyoruz.
+Burada eklenecek belgeyi yüklüyoruz ve ardından eklemeyi gerçekleştirmek için bir yardımcı metodu çağırıyoruz.
 
 ## Adım 6: Belge Ekleme Yöntemini Tanımlayın
 
-Yapbozumuzun son parçası, belgeyi belirtilen konuma gerçekten yerleştiren yöntemdir.
+Bulmacamızın son parçası, belgeyi belirtilen yere ekleyen yöntemdir.
 
 ```csharp
 private static void InsertDocument(Node insertionDestination, Document docToInsert)
 {
-	if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
-	{
-		CompositeNode destinationParent = insertionDestination.ParentNode;
+    // Ekleme hedefinin Paragraf mı yoksa Tablo mu olduğunu kontrol edin
+    if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
+    {
+        CompositeNode destinationParent = insertionDestination.ParentNode;
 
-		NodeImporter importer =
-			new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
+        // Kaynak belgeden düğümleri içe aktarmak için bir NodeImporter oluşturun
+        NodeImporter importer = new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
 
-		// Bölümün gövdesindeki tüm blok düzeyindeki düğümler arasında döngü yapın,
-		// daha sonra bir bölümün son boş paragrafı olmayan her düğümü kopyalayın ve ekleyin.
-		foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
-		foreach (Node srcNode in srcSection.Body)
-		{
-			if (srcNode.NodeType == NodeType.Paragraph)
-			{
-				Paragraph para = (Paragraph)srcNode;
-				if (para.IsEndOfSection && !para.HasChildNodes)
-					continue;
-			}
+        // Kaynak belgenin bölümlerindeki tüm blok düzeyindeki düğümler arasında döngü oluştur
+        foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
+        {
+            foreach (Node srcNode in srcSection.Body)
+            {
+                // Bir bölümün son boş paragrafını atla
+                if (srcNode.NodeType == NodeType.Paragraph)
+                {
+                    Paragraph para = (Paragraph)srcNode;
+                    if (para.IsEndOfSection && !para.HasChildNodes)
+                        continue;
+                }
 
-			Node newNode = importer.ImportNode(srcNode, true);
-
-			destinationParent.InsertAfter(newNode, insertionDestination);
-			insertionDestination = newNode;
-		}
-	}
-	else
-	{
-		throw new ArgumentException("The destination node should be either a paragraph or table.");
-	}
+                // Düğümü hedefe aktarın ve ekleyin
+                Node newNode = importer.ImportNode(srcNode, true);
+                destinationParent.InsertAfter(newNode, insertionDestination);
+                insertionDestination = newNode;
+            }
+        }
+    }
+    else
+    {
+        throw new ArgumentException("The destination node should be either a paragraph or table.");
+    }
 }
+
 ```
 
-Bu yöntem, eklenecek belgedeki düğümlerin içe aktarılmasını ve bunların ana belgede doğru noktaya yerleştirilmesini sağlar.
+Bu yöntem, eklenecek düğümlerin belgeden içe aktarılması ve ana belgede doğru noktaya yerleştirilmesiyle ilgilenir.
 
 ## Çözüm
 
-Ve işte karşınızda! Aspose.Words for .NET kullanarak bir belgeyi diğerine eklemeye yönelik kapsamlı bir kılavuz. Bu adımları izleyerek belge birleştirme ve düzenleme görevlerini kolayca otomatikleştirebilirsiniz. İster bir belge yönetim sistemi oluşturuyor olun, ister yalnızca belge işleme iş akışınızı kolaylaştırmaya ihtiyacınız olsun, Aspose.Words güvenilir yardımcınızdır.
+İşte karşınızda! Aspose.Words for .NET kullanarak bir belgeyi diğerine eklemek için kapsamlı bir kılavuz. Bu adımları izleyerek, belge birleştirme ve düzenleme görevlerini kolayca otomatikleştirebilirsiniz. İster bir belge yönetim sistemi oluşturuyor olun, ister yalnızca belge işleme iş akışınızı düzene sokmanız gereksin, Aspose.Words sizin güvenilir yardımcınızdır.
 
-## SSS'ler
+## SSS
 
 ### Aspose.Words for .NET nedir?
-Aspose.Words for .NET, Word belgelerini programlı olarak işlemek için güçlü bir kütüphanedir. Word belgelerini kolaylıkla oluşturmanıza, değiştirmenize, dönüştürmenize ve işlemenize olanak tanır.
+Aspose.Words for .NET, Word belgelerini programatik olarak düzenlemek için güçlü bir kütüphanedir. Word belgelerini kolaylıkla oluşturmanıza, değiştirmenize, dönüştürmenize ve işlemenize olanak tanır.
 
-### Aynı anda birden fazla belge ekleyebilir miyim?
-Evet, bir belge koleksiyonu üzerinde yineleme yaparak geri arama işleyicisini birden çok eklemeyi işleyecek şekilde değiştirebilirsiniz.
+### Birden fazla belgeyi aynı anda ekleyebilir miyim?
+Evet, bir belge koleksiyonu üzerinde yineleme yaparak birden fazla eklemeyi işleyecek şekilde geri çağırma işleyicisini değiştirebilirsiniz.
 
-### Ücretsiz deneme mevcut mu?
+### Ücretsiz deneme imkanı var mı?
  Kesinlikle! Ücretsiz deneme sürümünü şuradan indirebilirsiniz:[Burada](https://releases.aspose.com/).
 
 ### Aspose.Words için nasıl destek alabilirim?
-adresini ziyaret ederek destek alabilirsiniz.[Aspose.Words forumu](https://forum.aspose.com/c/words/8).
+Destek almak için şu adresi ziyaret edebilirsiniz:[Aspose.Words forumu](https://forum.aspose.com/c/words/8).
 
-### Eklenen belgenin formatını koruyabilir miyim?
- Evet,`NodeImporter` class, düğümleri bir belgeden diğerine aktarırken biçimlendirmenin nasıl işleneceğini belirtmenize olanak tanır.
+### Eklediğim belgenin formatını koruyabilir miyim?
+ Evet,`NodeImporter` sınıfı, düğümleri bir belgeden diğerine aktarırken biçimlendirmenin nasıl işleneceğini belirtmenize olanak tanır.

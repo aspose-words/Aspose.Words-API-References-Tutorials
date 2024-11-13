@@ -1,26 +1,26 @@
 ---
-title: Menggunakan Bidang di Aspose.Words untuk Java
-linktitle: Menggunakan Bidang
+title: Menggunakan Fields di Aspose.Words untuk Java
+linktitle: Menggunakan Fields
 second_title: API Pemrosesan Dokumen Java Aspose.Words
-description: Pelajari cara menggunakan bidang Aspose.Words untuk Java secara efektif dalam tutorial langkah demi langkah ini. Buat dokumen Word dinamis dengan mudah.
+description: Pelajari cara menggunakan Aspose.Words untuk bidang Java secara efektif dalam tutorial langkah demi langkah ini. Buat dokumen Word yang dinamis dengan mudah.
 type: docs
 weight: 11
 url: /id/java/using-document-elements/using-fields/
 ---
 
-Dalam tutorial langkah demi langkah ini, kami akan memandu Anda tentang cara menggunakan kolom di Aspose.Words untuk Java untuk memanipulasi dokumen dengan mudah. Aspose.Words untuk Java adalah API canggih yang memungkinkan Anda bekerja dengan dokumen Word secara terprogram, memberi Anda kendali penuh atas konten dan pemformatannya.
+Dalam tutorial langkah demi langkah ini, kami akan memandu Anda tentang cara menggunakan kolom di Aspose.Words untuk Java untuk memanipulasi dokumen dengan mudah. Aspose.Words untuk Java adalah API canggih yang memungkinkan Anda bekerja dengan dokumen Word secara terprogram, memberi Anda kendali penuh atas konten dan formatnya.
 
 ## 1. Pendahuluan
 
-Aspose.Words for Java adalah alat penting bagi siapa pun yang berurusan dengan dokumen Word di aplikasi Java. Bidang adalah tempat penampung yang dapat menyimpan data dinamis dalam dokumen Anda. Tutorial ini akan menunjukkan cara bekerja dengan bidang secara efektif.
+Aspose.Words untuk Java adalah alat penting bagi siapa saja yang menangani dokumen Word dalam aplikasi Java. Kolom adalah tempat penampung yang dapat menyimpan data dinamis dalam dokumen Anda. Tutorial ini akan menunjukkan kepada Anda cara bekerja dengan kolom secara efektif.
 
 ## 2. Menyiapkan Lingkungan Anda
 
- Sebelum memulai, pastikan Anda telah menginstal Aspose.Words for Java. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/java/). Selain itu, pastikan Anda memiliki Java dan lingkungan pengembangan terintegrasi (IDE) seperti Eclipse atau IntelliJ IDEA yang terinstal di sistem Anda.
+ Sebelum memulai, pastikan Anda telah menginstal Aspose.Words untuk Java. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/java/)Pastikan juga Anda telah menginstal Java dan lingkungan pengembangan terintegrasi (IDE) seperti Eclipse atau IntelliJ IDEA di sistem Anda.
 
 ## 3. Memuat Dokumen Word
 
-Di aplikasi Java Anda, Anda perlu memuat dokumen Word yang ingin Anda gunakan. Berikut cuplikan kode untuk Anda mulai:
+Dalam aplikasi Java Anda, Anda perlu memuat dokumen Word yang ingin Anda gunakan. Berikut ini cuplikan kode untuk membantu Anda memulai:
 
 ```java
 string dataDir = "Your Document Directory";
@@ -28,17 +28,17 @@ string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
 ```
 
- Mengganti`"Your Document Directory"`Dan`"Your Output Directory"` dengan jalur yang sesuai.
+ Mengganti`"Your Document Directory"` Dan`"Your Output Directory"` dengan jalur yang sesuai.
 
-## 4. Menyesuaikan Penggabungan Surat
+## 4. Menyesuaikan Gabungan Surat
 
-Aspose.Words untuk Java memberikan dukungan luar biasa untuk operasi penggabungan surat. Anda dapat menyesuaikan proses gabungan surat dengan menyiapkan pengendali peristiwa gabungan surat. Berikut cara melakukannya:
+Aspose.Words untuk Java menyediakan dukungan yang sangat baik untuk operasi gabungan surat. Anda dapat menyesuaikan proses gabungan surat dengan menyiapkan pengendali peristiwa gabungan surat. Berikut cara melakukannya:
 
 ```java
-// Siapkan pengendali peristiwa gabungan surat untuk melakukan pekerjaan khusus.
+// Siapkan penangan peristiwa gabungan surat untuk melakukan pekerjaan kustom.
 doc.getMailMerge().setFieldMergingCallback(new HandleMergeField());
 
-// Pangkas nilai gabungan surat di akhir dan di depan spasi.
+// Pangkas nilai gabungan surat spasi kosong di awal dan akhir.
 doc.getMailMerge().setTrimWhitespaces(false);
 
 String[] fieldNames = {
@@ -69,9 +69,9 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
 string dataDir = "Your Document Directory";
 string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
-// Siapkan pengendali peristiwa gabungan surat untuk melakukan pekerjaan khusus.
+// Siapkan penangan peristiwa gabungan surat untuk melakukan pekerjaan kustom.
 doc.getMailMerge().setFieldMergingCallback(new HandleMergeField());
-// Pangkas nilai gabungan surat di akhir dan di depan spasi.
+// Pangkas nilai gabungan surat spasi kosong di awal dan akhir.
 doc.getMailMerge().setTrimWhitespaces(false);
 String[] fieldNames = {
 	"RecipientName", "SenderName", "FaxNumber", "PhoneNumber",
@@ -90,9 +90,9 @@ Kode sumber Kelas HandleMergeField
     private static class HandleMergeField implements IFieldMergingCallback
     {
         /// <ringkasan>
-        /// Penangan ini dipanggil untuk setiap bidang gabungan surat yang ditemukan dalam dokumen,
-        /// untuk setiap catatan yang ditemukan di sumber data.
-        ///</ringkasan>
+        /// Penanganan ini dipanggil untuk setiap bidang gabungan surat yang ditemukan dalam dokumen,
+        /// untuk setiap catatan yang ditemukan dalam sumber data.
+        /// </ringkasan>
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs e) throws Exception
         {
             if (mBuilder == null)
@@ -203,20 +203,20 @@ Kode sumber Kelas HandleMergeField
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        // Masukkan MERGEFIELD yang bersarang di dalam bidang IF.
-        // Karena pernyataan kolom IF salah, hasil dari MERGEFIELD bagian dalam tidak akan ditampilkan,
+        // Sisipkan MERGEFIELD yang bersarang di dalam kolom IF.
+        // Karena pernyataan bidang IF salah, hasil MERGEFIELD bagian dalam tidak akan ditampilkan,
         //dan MERGEFIELD tidak akan menerima data apa pun selama penggabungan surat.
         FieldIf fieldIf = (FieldIf)builder.insertField(" IF 1 = 2 ");
         builder.moveTo(fieldIf.getSeparator());
         builder.insertField(" MERGEFIELD  FullName ");
-        // Kita masih dapat menghitung MERGEFIELD di dalam kolom pernyataan IF yang salah jika kita menyetel tanda ini ke true.
+        // Kita masih dapat menghitung MERGEFIELD di dalam bidang IF pernyataan salah jika kita menetapkan tanda ini ke benar.
         doc.getMailMerge().setUnconditionalMergeFieldsAndRegions(true);
         DataTable dataTable = new DataTable();
         dataTable.getColumns().add("FullName");
         dataTable.getRows().add("James Bond");
         doc.getMailMerge().execute(dataTable);
-        // Hasilnya tidak akan terlihat di dokumen karena kolom IF salah,
-        // tapi MERGEFIELD bagian dalam memang menerima data.
+        // Hasilnya tidak akan terlihat dalam dokumen karena kolom IF salah,
+        // tetapi MERGEFIELD bagian dalam memang menerima data.
         doc.save("Your Directory Path" + "WorkingWithFields.MailMergeAndConditionalField.docx");
     }
     @Test
@@ -239,17 +239,17 @@ Kode sumber Kelas HandleMergeField
     {
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs args)
         {
-            // Jangan lakukan apa pun.
+            // Tidak melakukan apa pun.
         }
         /// <ringkasan>
-        /// Ini dipanggil ketika mesin gabungan surat menemukan bidang gabungan Gambar:XXX dalam dokumen.
-        /// Anda mempunyai kesempatan untuk mengembalikan objek Gambar, nama file, atau aliran yang berisi gambar.
-        ///</ringkasan>
+        /// Ini dipanggil saat mesin gabungan surat menemukan bidang gabungan Gambar:XXX dalam dokumen.
+        /// Anda memiliki kesempatan untuk mengembalikan objek Gambar, nama berkas, atau aliran yang berisi gambar.
+        /// </ringkasan>
         public void /*IFieldMergingCallback.*/imageFieldMerging(ImageFieldMergingArgs e) throws Exception
         {
-            // Nilai bidangnya adalah array byte, cukup transmisikan dan buat aliran di dalamnya.
+            // Nilai bidang merupakan array byte, masukkan saja dan buat aliran di atasnya.
             ByteArrayInputStream imageStream = new ByteArrayInputStream((byte[]) e.getFieldValue());
-            // Sekarang mesin gabungan surat akan mengambil gambar dari aliran.
+            // Kini mesin gabungan surat akan mengambil gambar dari aliran.
             e.setImageStream(imageStream);
         }
     }
@@ -297,19 +297,19 @@ Kode sumber Kelas HandleMergeField
         /// <ringkasan>
         /// Dipanggil untuk setiap bidang gabungan yang ditemukan dalam dokumen.
         /// Kita dapat mengembalikan beberapa data ke mesin gabungan surat atau melakukan hal lain dengan dokumen tersebut.
-        /// Dalam hal ini kami mengubah format sel.
-        ///</ringkasan>
+        /// Dalam kasus ini kita memodifikasi format sel.
+        /// </ringkasan>
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs e)
         {
             if (mBuilder == null)
                 mBuilder = new DocumentBuilder(e.getDocument());
             if ("CompanyName".equals(e.getFieldName()))
             {
-                // Pilih warna tergantung pada apakah nomor barisnya genap atau ganjil.
+                // Pilih warna tergantung pada apakah nomor baris genap atau ganjil.
                 Color rowColor = isOdd(mRowIdx) 
                     ? new Color((213), (227), (235)) 
                     : new Color((242), (242), (242));
-                //Tidak ada cara untuk mengatur properti sel untuk seluruh baris saat ini, jadi kita harus mengulangi semua sel dalam baris.
+                //Saat ini tidak ada cara untuk menetapkan properti sel untuk seluruh baris, jadi kami harus mengulangi semua sel di baris tersebut.
                 for (int colIdx = 0; colIdx < 4; colIdx++)
                 {
                     mBuilder.moveToCell(0, mRowIdx, colIdx, 0);
@@ -320,22 +320,22 @@ Kode sumber Kelas HandleMergeField
         }
         public void /*IFieldMergingCallback.*/imageFieldMerging(ImageFieldMergingArgs args)
         {
-            // Jangan lakukan apa pun.
+            // Tidak melakukan apa pun.
         }
         private DocumentBuilder mBuilder;
         private int mRowIdx;
     }
     /// <ringkasan>
-    /// Mengembalikan nilai benar jika nilainya ganjil; salah jika nilainya genap.
-    ///</ringkasan>
+    /// Mengembalikan true jika nilainya ganjil; false jika nilainya genap.
+    /// </ringkasan>
     private static boolean isOdd(int value)
     {
         return (value / 2 * 2) == value;
     }
     /// <ringkasan>
     /// Buat DataTable dan isi dengan data.
-    /// Dalam kehidupan nyata, DataTable ini harus diisi dari database.
-    ///</ringkasan>
+    /// Dalam kehidupan nyata DataTable ini seharusnya diisi dari database.
+    /// </ringkasan>
     private DataTable getSuppliersDataTable()
     {
         DataTable dataTable = new DataTable("Suppliers");
@@ -355,9 +355,9 @@ Kode sumber Kelas HandleMergeField
 
 ## 6. Kesimpulan
 
-Selamat! Anda telah mempelajari cara menggunakan bidang di Aspose.Words untuk Java untuk memanipulasi dokumen Word secara dinamis. API canggih ini memberi Anda kendali penuh atas dokumen Anda, menjadikannya aset berharga bagi pengembang Java.
+Selamat! Anda telah mempelajari cara menggunakan kolom di Aspose.Words untuk Java guna memanipulasi dokumen Word secara dinamis. API canggih ini memberi Anda kendali penuh atas dokumen Anda, menjadikannya aset berharga bagi pengembang Java.
 
-## 7. Pertanyaan Umum
+## 7. Tanya Jawab Umum
 
 ### Q1: Di mana saya dapat mengunduh Aspose.Words untuk Java?
  Anda dapat mengunduh Aspose.Words untuk Java dari[Di Sini](https://releases.aspose.com/words/java/).
@@ -368,11 +368,11 @@ Selamat! Anda telah mempelajari cara menggunakan bidang di Aspose.Words untuk Ja
 ### Q3: Di mana saya bisa mendapatkan dukungan untuk Aspose.Words untuk Java?
  Untuk dukungan, Anda dapat mengunjungi forum Aspose.Words[Di Sini](https://forum.aspose.com/).
 
-### Q4: Apakah Aspose.Words untuk Java cocok untuk menangani konten HTML di dokumen Word?
-Ya, Aspose.Words untuk Java memberikan dukungan luar biasa untuk menangani konten HTML di dokumen Word.
+### Q4: Apakah Aspose.Words untuk Java cocok untuk menangani konten HTML dalam dokumen Word?
+Ya, Aspose.Words untuk Java menyediakan dukungan luar biasa untuk menangani konten HTML dalam dokumen Word.
 
 ### Q5: Dapatkah saya menggunakan Aspose.Words untuk Java secara gratis?
- Aspose.Words untuk Java adalah produk komersial, tetapi Anda dapat menjelajahi fitur-fiturnya dengan uji coba gratis yang tersedia[Di Sini](https://releases.aspose.com/).
+ Aspose.Words untuk Java adalah produk komersial, tetapi Anda dapat menjelajahi fiturnya dengan uji coba gratis yang tersedia[Di Sini](https://releases.aspose.com/).
 
-Mulailah dengan Aspose.Words untuk Java hari ini dan kendalikan dokumen Word Anda dengan cara yang belum pernah ada sebelumnya!
+Mulailah dengan Aspose.Words untuk Java hari ini dan kendalikan dokumen Word Anda seperti belum pernah sebelumnya!
 

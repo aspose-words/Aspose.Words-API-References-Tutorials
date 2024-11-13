@@ -2,7 +2,7 @@
 title: Tambahkan Dokumen
 linktitle: Tambahkan Dokumen
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menambahkan dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang komprehensif ini. Sempurna untuk mengotomatisasi alur kerja dokumen Anda.
+description: Pelajari cara menambahkan dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang komprehensif ini. Sempurna untuk mengotomatiskan alur kerja dokumen Anda.
 type: docs
 weight: 10
 url: /id/net/join-and-append-documents/append-document/
@@ -10,20 +10,20 @@ url: /id/net/join-and-append-documents/append-document/
 
 ## Perkenalan
 
-Hai! Pernahkah Anda perlu menggabungkan dua dokumen Word menjadi satu, menjaga format aslinya tetap utuh? Baik Anda menyusun laporan, membuat dokumentasi proyek ekstensif, atau hanya mencoba menyederhanakan manajemen dokumen Anda, Aspose.Words untuk .NET dapat membuat hidup Anda jauh lebih mudah. Dalam tutorial ini, kita akan mempelajari cara menambahkan satu dokumen Word ke dokumen lain menggunakan Aspose.Words untuk .NET, menguraikan setiap langkah secara mendetail. Di akhir panduan ini, Anda akan menggabungkan dokumen seperti seorang profesional!
+Hai! Pernahkah Anda perlu menggabungkan dua dokumen Word menjadi satu, dengan tetap mempertahankan format aslinya? Baik Anda sedang menyusun laporan, membuat dokumentasi proyek yang ekstensif, atau sekadar mencoba menyederhanakan pengelolaan dokumen, Aspose.Words untuk .NET dapat mempermudah hidup Anda. Dalam tutorial ini, kita akan membahas cara menambahkan satu dokumen Word ke dokumen lain menggunakan Aspose.Words untuk .NET, dengan menguraikan setiap langkah secara terperinci. Di akhir panduan ini, Anda akan menggabungkan dokumen seperti seorang profesional!
 
 ## Prasyarat
 
-Sebelum kita mendalami seluk beluknya, pastikan Anda memiliki semua yang Anda butuhkan:
+Sebelum kita masuk ke inti pembahasan, mari pastikan Anda memiliki semua yang dibutuhkan:
 
-1. Pengetahuan Dasar C#: Anda harus terbiasa dengan sintaks dan konsep C#.
-2.  Aspose.Words untuk .NET: Unduh[Di Sini](https://releases.aspose.com/words/net/) . Jika Anda baru menjelajah, Anda bisa memulai dengan a[uji coba gratis](https://releases.aspose.com/).
-3. Visual Studio: Versi terbaru apa pun akan berfungsi, tetapi versi terbaru disarankan.
-4. .NET Framework: Pastikan itu diinstal pada sistem Anda.
+1. Pengetahuan Dasar C#: Anda harus memahami sintaksis dan konsep C#.
+2.  Aspose.Words untuk .NET: Unduh[Di Sini](https://releases.aspose.com/words/net/) Jika Anda baru menjelajah, Anda bisa memulai dengan[uji coba gratis](https://releases.aspose.com/).
+3. Visual Studio: Versi terbaru apa pun seharusnya berfungsi, tetapi versi terbaru lebih direkomendasikan.
+4. .NET Framework: Pastikan telah terinstal di sistem Anda.
 
-Apakah semuanya sudah siap? Besar! Ayo masuk.
+Sudah siap? Bagus! Mari kita mulai.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
 Untuk mulai bekerja dengan Aspose.Words untuk .NET, kita perlu mengimpor namespace yang diperlukan. Langkah ini memastikan kita memiliki akses ke semua kelas dan metode yang kita perlukan.
 
@@ -32,11 +32,11 @@ using System;
 using Aspose.Words;
 ```
 
-Namespace ini penting untuk membuat, memanipulasi, dan menyimpan dokumen Word.
+Ruang nama ini penting untuk membuat, memanipulasi, dan menyimpan dokumen Word.
 
 ## Langkah 1: Menyiapkan Direktori Dokumen
 
-Pertama, kita perlu menentukan direktori tempat dokumen kita disimpan. Ini membantu Aspose.Words menemukan file yang ingin kita kerjakan.
+Pertama, kita perlu menentukan direktori tempat dokumen kita disimpan. Ini membantu Aspose.Words menemukan berkas yang ingin kita gunakan.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -46,57 +46,57 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Langkah 2: Memuat Dokumen Sumber dan Tujuan
 
-Selanjutnya, kita akan memuat dokumen sumber (dokumen yang akan ditambahkan) dan dokumen tujuan (dokumen ke mana sumber akan ditambahkan).
+Berikutnya, kita akan memuat dokumen sumber (dokumen yang akan ditambahkan) dan dokumen tujuan (dokumen tempat dokumen sumber akan ditambahkan).
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
- Di sini, kami menginisialisasi dua`Document` objek.`srcDoc` mewakili dokumen sumber, dan`dstDoc` mewakili dokumen tujuan.
+ Di sini, kita menginisialisasi dua`Document` objek.`srcDoc` mewakili dokumen sumber, dan`dstDoc` mewakili dokumen tujuan.
 
 ## Langkah 3: Menambahkan Dokumen Sumber ke Dokumen Tujuan
 
-Sekarang sampai pada bagian yang menarik – menambahkan dokumen sumber ke dokumen tujuan sambil menjaga format aslinya tetap utuh.
+Kini tibalah pada bagian yang menarik – menambahkan dokumen sumber ke dokumen tujuan sambil tetap menjaga format aslinya tetap utuh.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
- Pada langkah ini, kami menggunakan`AppendDocument`metode untuk menggabungkan kedua dokumen tersebut. Itu`ImportFormatMode.KeepSourceFormatting` parameter memastikan bahwa format dokumen sumber dipertahankan.
+ Pada langkah ini, kami menggunakan`AppendDocument`metode untuk menggabungkan dua dokumen.`ImportFormatMode.KeepSourceFormatting` parameter memastikan bahwa format dokumen sumber dipertahankan.
 
 ## Langkah 4: Menyimpan Dokumen Gabungan
 
-Setelah menambahkan dokumen, langkah terakhir adalah menyimpan dokumen gabungan tersebut dengan nama baru.
+Setelah menambahkan dokumen, langkah terakhir adalah menyimpan dokumen gabungan dengan nama baru.
 
 ```csharp
 dstDoc.Save(dataDir + "AppendedDocument.docx");
 ```
 
-Di sini, kami menyimpan dokumen yang ditambahkan dengan nama file deskriptif, yang menunjukkan bahwa dokumen tersebut menyertakan konten yang ditambahkan.
+Di sini, kami menyimpan dokumen tambahan dengan nama berkas deskriptif, yang menunjukkan bahwa dokumen tersebut menyertakan konten tambahan.
 
 ## Kesimpulan
 
- Dan itu dia! Anda telah berhasil mempelajari cara menambahkan satu dokumen Word ke dokumen lain menggunakan Aspose.Words untuk .NET. Tutorial ini mencakup pengaturan lingkungan Anda, memuat dokumen, menambahkan satu dokumen ke dokumen lain sambil mempertahankan format sumber, dan menyimpan dokumen gabungan. Aspose.Words menawarkan berbagai fitur, jadi pastikan untuk menjelajahinya[dokumentasi API](https://reference.aspose.com/words/net/) untuk membuka potensi penuhnya.
+ Nah, itu dia! Anda telah berhasil mempelajari cara menambahkan satu dokumen Word ke dokumen lain menggunakan Aspose.Words untuk .NET. Tutorial ini mencakup pengaturan lingkungan Anda, memuat dokumen, menambahkan satu dokumen ke dokumen lain sambil mempertahankan format sumber, dan menyimpan dokumen gabungan. Aspose.Words menawarkan berbagai fitur, jadi pastikan untuk menjelajahi[Dokumentasi API](https://reference.aspose.com/words/net/) untuk membuka potensi penuhnya.
 
-## FAQ
+## Tanya Jawab Umum
 
 ### 1. Apa itu Aspose.Words untuk .NET?
 
-Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang membuat, memanipulasi, dan mengonversi dokumen Word secara terprogram. Ini ideal untuk mengotomatiskan tugas-tugas terkait dokumen.
+Aspose.Words untuk .NET adalah pustaka canggih yang memungkinkan pengembang membuat, memanipulasi, dan mengonversi dokumen Word secara terprogram. Pustaka ini ideal untuk mengotomatiskan tugas-tugas yang terkait dengan dokumen.
 
-### 2. Bisakah saya menggunakan Aspose.Words untuk .NET secara gratis?
+### 2. Dapatkah saya menggunakan Aspose.Words untuk .NET secara gratis?
 
- Anda dapat mencoba Aspose.Words untuk .NET menggunakan a[uji coba gratis](https://releases.aspose.com/). Untuk penggunaan jangka panjang, Anda harus membeli lisensi.
+ Anda dapat mencoba Aspose.Words untuk .NET menggunakan[uji coba gratis](https://releases.aspose.com/)Untuk penggunaan jangka panjang, Anda perlu membeli lisensi.
 
-### 3. Bagaimana cara memastikan bahwa format dipertahankan saat menambahkan dokumen?
+### 3. Bagaimana cara memastikan format dipertahankan saat menambahkan dokumen?
 
- Gunakan`ImportFormatMode.KeepSourceFormatting` parameter di`AppendDocument` metode untuk mempertahankan format dokumen sumber.
+ Gunakan`ImportFormatMode.KeepSourceFormatting` parameternya di dalam`AppendDocument` metode untuk mempertahankan format dokumen sumber.
 
 ### 4. Bagaimana cara mendapatkan dukungan untuk Aspose.Words untuk .NET?
 
-Anda bisa mendapatkan dukungan dengan mengunjungi[Asumsikan forum dukungan](https://forum.aspose.com/c/words/8).
+Anda bisa mendapatkan dukungan dengan mengunjungi[Forum dukungan Aspose](https://forum.aspose.com/c/words/8).
 
-### 5. Bisakah saya menambahkan dokumen dengan format berbeda?
+### 5. Dapatkah saya menambahkan dokumen dengan format berbeda?
 
-Ya, Aspose.Words mendukung berbagai format, dan Anda dapat menambahkan dokumen dengan format berbeda, seperti DOCX, DOC, RTF, dll.
+Ya, Aspose.Words mendukung berbagai format, dan Anda dapat menambahkan dokumen dalam berbagai format, seperti DOCX, DOC, RTF, dll.

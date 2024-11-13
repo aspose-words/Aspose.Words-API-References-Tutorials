@@ -2,25 +2,25 @@
 title: Menggunakan Bentuk Dokumen di Aspose.Words untuk Java
 linktitle: Menggunakan Bentuk Dokumen
 second_title: API Pemrosesan Dokumen Java Aspose.Words
-description: Buka Kekuatan Bentuk Dokumen di Aspose.Words untuk Java. Belajar Membuat Dokumen yang Menarik Secara Visual dengan Contoh Langkah demi Langkah.
+description: Buka Kekuatan Bentuk Dokumen di Aspose.Words untuk Java. Pelajari Cara Membuat Dokumen yang Menarik Secara Visual dengan Contoh Langkah demi Langkah.
 type: docs
 weight: 14
 url: /id/java/document-conversion-and-export/using-document-shapes/
 ---
 
-## Pengantar Menggunakan Bentuk Dokumen di Aspose.Words untuk Java
+## Pengantar Penggunaan Bentuk Dokumen di Aspose.Words untuk Java
 
-Dalam panduan komprehensif ini, kita akan mempelajari dunia bentuk dokumen di Aspose.Words untuk Java. Bentuk adalah elemen penting dalam membuat dokumen yang menarik secara visual dan interaktif. Baik Anda perlu menambahkan info, tombol, gambar, atau tanda air, Aspose.Words untuk Java menyediakan alat untuk melakukannya secara efisien. Mari jelajahi cara menggunakan bentuk ini langkah demi langkah dengan contoh kode sumber.
+Dalam panduan lengkap ini, kita akan menyelami dunia bentuk dokumen di Aspose.Words untuk Java. Bentuk merupakan elemen penting dalam membuat dokumen yang menarik secara visual dan interaktif. Baik Anda perlu menambahkan keterangan, tombol, gambar, atau tanda air, Aspose.Words untuk Java menyediakan alat untuk melakukannya secara efisien. Mari kita jelajahi cara menggunakan bentuk ini langkah demi langkah dengan contoh kode sumber.
 
 ## Memulai dengan Bentuk Dokumen
 
- Sebelum kita beralih ke kode, mari kita siapkan lingkungan kita. Pastikan Anda memiliki Aspose.Words untuk Java yang terintegrasi ke dalam proyek Anda. Jika belum, Anda dapat mendownloadnya dari website Aspose[Unduh Aspose.Words untuk Java](https://releases.aspose.com/words/java/)
+Sebelum kita mulai membuat kode, mari kita siapkan lingkungan kita. Pastikan Anda telah mengintegrasikan Aspose.Words untuk Java ke dalam proyek Anda. Jika belum, Anda dapat mengunduhnya dari situs web Aspose[Unduh Aspose.Words untuk Java](https://releases.aspose.com/words/java/)
 
 ## Menambahkan Bentuk ke Dokumen
 
 ### Memasukkan GroupShape
 
- A`GroupShape` memungkinkan Anda mengelompokkan beberapa bentuk menjadi satu. Inilah cara Anda membuat dan menyisipkan a`GroupShape`:
+ A`GroupShape` memungkinkan Anda mengelompokkan beberapa bentuk bersama-sama. Berikut cara membuat dan menyisipkan`GroupShape`:
 
 ```java
 Document doc = new Document();
@@ -52,7 +52,7 @@ doc.save("Your Directory Path" + "WorkingWithShapes.AddGroupShape.docx");
 
 ### Memasukkan Bentuk Kotak Teks
 
- Untuk menyisipkan bentuk kotak teks, Anda dapat menggunakan`insertShape` caranya seperti pada contoh di bawah ini:
+ Untuk menyisipkan bentuk kotak teks, Anda dapat menggunakan`insertShape` metode seperti yang ditunjukkan pada contoh di bawah ini:
 
 ```java
 Document doc = new Document();
@@ -77,7 +77,7 @@ doc.save("Your Directory Path" + "WorkingWithShapes.InsertShape.docx", saveOptio
 
 ### Mengelola Rasio Aspek
 
-Anda dapat mengontrol apakah rasio aspek suatu bentuk dikunci atau tidak. Berikut cara membuka kunci rasio aspek suatu bentuk:
+Anda dapat mengontrol apakah rasio aspek suatu bentuk terkunci atau tidak. Berikut cara membuka kunci rasio aspek suatu bentuk:
 
 ```java
 Document doc = new Document();
@@ -162,26 +162,26 @@ for (Shape shape : (Iterable<Shape>) doc.getChildNodes(NodeType.SHAPE, true)) {
 
 ## Kesimpulan
 
-Dalam panduan ini, kita telah menjelajahi dunia bentuk dokumen di Aspose.Words untuk Java. Anda telah mempelajari cara menambahkan berbagai bentuk ke dokumen Anda, memanipulasi propertinya, dan bekerja dengan bentuk SmartArt. Dengan pengetahuan ini, Anda dapat membuat dokumen yang menarik secara visual dan interaktif dengan mudah.
+Dalam panduan ini, kami telah menjelajahi dunia bentuk dokumen di Aspose.Words untuk Java. Anda telah mempelajari cara menambahkan berbagai bentuk ke dokumen Anda, memanipulasi propertinya, dan bekerja dengan bentuk SmartArt. Dengan pengetahuan ini, Anda dapat membuat dokumen yang menarik secara visual dan interaktif dengan mudah.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Apa itu Aspose.Words untuk Java?
 
-Aspose.Words for Java adalah perpustakaan Java yang memungkinkan pengembang membuat, memodifikasi, dan mengonversi dokumen Word secara terprogram. Ini menyediakan berbagai fitur dan alat untuk bekerja dengan dokumen dalam berbagai format.
+Aspose.Words untuk Java adalah pustaka Java yang memungkinkan pengembang membuat, memodifikasi, dan mengonversi dokumen Word secara terprogram. Pustaka ini menyediakan berbagai fitur dan alat untuk bekerja dengan dokumen dalam berbagai format.
 
 ### Bagaimana cara mengunduh Aspose.Words untuk Java?
 
- Anda dapat mengunduh Aspose.Words for Java dari situs web Aspose dengan mengikuti tautan ini:[Unduh Aspose.Words untuk Java](https://releases.aspose.com/words/java/)
+ Anda dapat mengunduh Aspose.Words untuk Java dari situs web Aspose dengan mengikuti tautan ini:[Unduh Aspose.Words untuk Java](https://releases.aspose.com/words/java/)
 
 ### Apa keuntungan menggunakan bentuk dokumen?
 
-Bentuk dokumen menambahkan elemen visual dan interaktivitas ke dokumen Anda, menjadikannya lebih menarik dan informatif. Dengan bentuk, Anda dapat membuat info, tombol, gambar, tanda air, dan lainnya, sehingga meningkatkan pengalaman pengguna secara keseluruhan.
+Bentuk dokumen menambahkan elemen visual dan interaktivitas ke dokumen Anda, sehingga membuatnya lebih menarik dan informatif. Dengan bentuk, Anda dapat membuat keterangan, tombol, gambar, tanda air, dan banyak lagi, yang akan meningkatkan pengalaman pengguna secara keseluruhan.
 
 ### Bisakah saya menyesuaikan tampilan bentuk?
 
-Ya, Anda dapat menyesuaikan tampilan bentuk dengan menyesuaikan propertinya seperti ukuran, posisi, rotasi, dan warna isian. Aspose.Words untuk Java menyediakan opsi luas untuk penyesuaian bentuk.
+Ya, Anda dapat menyesuaikan tampilan bentuk dengan menyesuaikan propertinya seperti ukuran, posisi, rotasi, dan warna isian. Aspose.Words untuk Java menyediakan opsi yang luas untuk penyesuaian bentuk.
 
 ### Apakah Aspose.Words untuk Java kompatibel dengan SmartArt?
 
-Ya, Aspose.Words untuk Java mendukung bentuk SmartArt, memungkinkan Anda bekerja dengan diagram dan grafik kompleks di dokumen Anda.
+Ya, Aspose.Words untuk Java mendukung bentuk SmartArt, yang memungkinkan Anda bekerja dengan diagram dan grafik kompleks dalam dokumen Anda.

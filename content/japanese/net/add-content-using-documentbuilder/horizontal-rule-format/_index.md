@@ -79,7 +79,7 @@ builder.Document.Save(dataDir + "AddContentUsingDocumentBuilder.HorizontalRuleFo
 
 ## 結論
 
-Aspose.Words for .NET を使用して Word 文書に水平線を挿入する方法を習得すると、文書の自動化機能が強化されます。Aspose.Words の柔軟性とパワーを活用することで、開発者は文書の生成と書式設定のプロセスを効率的に合理化できます。
+Aspose.Words for .NET を使用して Word 文書に水平線を挿入する方法を習得すると、文書の自動化機能が強化されます。Aspose.Words の柔軟性とパワーを活用することで、開発者は文書の生成と書式設定のプロセスを効率よく合理化できます。
 
 ## よくある質問
 
@@ -90,7 +90,7 @@ Aspose.Words for .NET は、.NET アプリケーションで Word 文書をプ�
  Aspose.Words for .NETは以下からダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
 
 ### Aspose.Words で水平線の外観をカスタマイズできますか?
-はい、Aspose.Words を使用すると、配置、幅、高さ、色、水平線の色付けなど、さまざまな側面をカスタマイズできます。
+はい、Aspose.Words を使用すると、配置、幅、高さ、色、水平線の網掛けなど、さまざまな側面をカスタマイズできます。
 
 ### Aspose.Words はエンタープライズ レベルのドキュメント処理に適していますか?
 はい、Aspose.Words は、その強力なドキュメント操作機能により、エンタープライズ環境で広く使用されています。

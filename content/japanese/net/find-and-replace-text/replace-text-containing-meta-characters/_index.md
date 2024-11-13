@@ -62,14 +62,14 @@ builder.Writeln("  1st paragraph");
 
 ## ステップ3: 検索と置換のオプションを設定する
 
-ここで、検索と置換のオプションを設定します。これは、ゲームのルールを設定するようなものです。
+さて、検索と置換のオプションを設定します。これはゲームのルールを設定するようなものです。
 
 ```csharp
 FindReplaceOptions findReplaceOptions = new FindReplaceOptions();
 findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
 ```
 
-私たちは`FindReplaceOptions`オブジェクトを作成し、段落の配置を中央に設定します。
+私たちは、`FindReplaceOptions`オブジェクトを作成し、段落の配置を中央に設定します。
 
 ## ステップ4: テキストをメタ文字に置き換える
 
@@ -95,7 +95,7 @@ count = doc.Range.Replace("{insert-section}", "&b", findReplaceOptions);
 
 ## ステップ6: ドキュメントを保存する
 
-最後に、一生懸命に作った作品を保存しましょう。これは傑作に「保存」ボタンを押すようなものと考えてください。
+最後に、一生懸命に作った作品を保存しましょう。これは傑作に対して「保存」ボタンを押すようなものと考えてください。
 
 ```csharp
 doc.Save(dataDir + "FindAndReplace.ReplaceTextContainingMetaCharacters.docx");
@@ -105,12 +105,12 @@ doc.Save(dataDir + "FindAndReplace.ReplaceTextContainingMetaCharacters.docx");
 
 ## 結論
 
-これで完了です。これで、Aspose.Words for .NET を使用して Word 文書内のメタ文字を含むテキストを置換する技術を習得できました。環境の設定から最終文書の保存まで、各ステップはテキスト操作を制御できるように設計されています。さあ、文書を開いて、自信を持って置換を行ってください。
+これで完了です。これで、Aspose.Words for .NET を使用して Word 文書内のメタ文字を含むテキストを置換する技術を習得できました。環境の設定から最終的な文書の保存まで、各ステップはテキスト操作を制御できるように設計されています。さあ、文書を開いて、自信を持って置換を行ってください。
 
 ## よくある質問
 
 ### テキスト置換におけるメタ文字とは何ですか?
-メタ文字とは、次のような独自の機能を持つ特殊文字です。`&p`段落区切りと`&b`セクション区切り用。
+メタ文字とは、次のような特別な機能を持つ特殊文字です。`&p`段落区切りと`&b`セクション区切り用。
 
 ### 置換テキストをさらにカスタマイズできますか?
 もちろんです! 必要に応じて、置換文字列を変更して、異なるテキスト、書式、またはその他のメタ文字を含めることができます。

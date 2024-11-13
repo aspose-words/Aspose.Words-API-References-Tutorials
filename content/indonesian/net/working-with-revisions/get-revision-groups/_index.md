@@ -9,17 +9,17 @@ url: /id/net/working-with-revisions/get-revision-groups/
 ---
 ## Perkenalan
 
-Dalam dunia pemrosesan dokumen yang dinamis, melacak perubahan dan revisi pada dokumen Word Anda sangatlah penting. Aspose.Words untuk .NET menawarkan serangkaian fitur canggih untuk menangani persyaratan tersebut dengan lancar. Dalam tutorial ini, kami akan memandu Anda melalui proses mengambil grup revisi dari dokumen Word menggunakan Aspose.Words untuk .NET. Jadi, mari selami dan sederhanakan tugas pengelolaan dokumen Anda!
+Dalam dunia pemrosesan dokumen yang dinamis, pelacakan perubahan dan revisi dalam dokumen Word Anda sangatlah penting. Aspose.Words untuk .NET menawarkan serangkaian fitur yang tangguh untuk menangani persyaratan tersebut dengan lancar. Dalam tutorial ini, kami akan memandu Anda melalui proses pengambilan grup revisi dari dokumen Word menggunakan Aspose.Words untuk .NET. Jadi, mari kita mulai dan sederhanakan tugas manajemen dokumen Anda!
 
 ## Prasyarat
 
-Sebelum kita mulai, pastikan Anda memiliki prasyarat berikut:
+Sebelum kita memulai, pastikan Anda memiliki prasyarat berikut:
 
-1.  Perpustakaan Aspose.Words for .NET: Pastikan Anda telah mengunduh dan menginstal versi terbaru Aspose.Words for .NET. Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/net/).
+1.  Pustaka Aspose.Words untuk .NET: Pastikan Anda telah mengunduh dan menginstal versi terbaru Aspose.Words untuk .NET. Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Siapkan lingkungan pengembangan .NET (misalnya, Visual Studio).
 3. Pengetahuan Dasar C#: Keakraban dengan pemrograman C# akan bermanfaat.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
 Pertama, Anda perlu mengimpor namespace yang diperlukan dalam proyek C# Anda. Langkah ini memastikan bahwa Anda dapat mengakses kelas dan metode yang disediakan oleh Aspose.Words untuk .NET.
 
@@ -29,11 +29,11 @@ using Aspose.Words;
 using Aspose.Words.Revision;
 ```
 
-Sekarang, mari kita uraikan proses mendapatkan grup revisi dari dokumen Word menjadi langkah-langkah yang mudah diikuti.
+Sekarang, mari kita uraikan proses mendapatkan grup revisi dari dokumen Word ke dalam langkah-langkah yang mudah diikuti.
 
 ## Langkah 1: Inisialisasi Dokumen
 
- Langkah pertama adalah menginisialisasi`Document` objek dengan jalur ke dokumen Word Anda. Objek ini memungkinkan Anda mengakses dan memanipulasi isi dokumen.
+ Langkah pertama adalah menginisialisasi`Document` objek dengan jalur ke dokumen Word Anda. Objek ini akan memungkinkan Anda untuk mengakses dan memanipulasi konten dokumen.
 
 ```csharp
 // Jalur ke direktori dokumen.
@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "Revisions.docx");
 
 ## Langkah 2: Akses Grup Revisi
 
-Selanjutnya, Anda akan mengakses grup revisi di dokumen. Kelompok revisi membantu mengatur perubahan yang dibuat oleh penulis berbeda.
+Berikutnya, Anda akan mengakses grup revisi dalam dokumen. Grup revisi membantu dalam mengatur perubahan yang dibuat oleh penulis yang berbeda.
 
 ```csharp
 foreach (RevisionGroup group in doc.Revisions.Groups)
@@ -53,7 +53,7 @@ foreach (RevisionGroup group in doc.Revisions.Groups)
 }
 ```
 
-## Langkah 3: Ulangi Melalui Grup Revisi
+## Langkah 3: Ulangi Melalui Kelompok Revisi
 
 Pada langkah ini, Anda akan mengulangi setiap grup revisi untuk mengambil detail seperti penulis revisi, jenis revisi, dan teks yang terkait dengan setiap revisi.
 
@@ -65,9 +65,9 @@ foreach (RevisionGroup group in doc.Revisions.Groups)
 }
 ```
 
-## Langkah 4: Tampilkan Informasi Revisi
+## Langkah 4: Menampilkan Informasi Revisi
 
-Terakhir, tampilkan informasi revisi yang dikumpulkan. Hal ini akan membantu Anda memahami siapa yang membuat perubahan dan sifat dari perubahan tersebut.
+Terakhir, tampilkan informasi revisi yang dikumpulkan. Ini akan membantu Anda memahami siapa yang membuat perubahan apa dan sifat perubahan tersebut.
 
 ```csharp
 foreach (RevisionGroup group in doc.Revisions.Groups)
@@ -79,26 +79,26 @@ foreach (RevisionGroup group in doc.Revisions.Groups)
 
 ## Kesimpulan
 
-Mengambil grup revisi dari dokumen Word menggunakan Aspose.Words untuk .NET adalah proses yang mudah. Dengan mengikuti langkah-langkah yang diuraikan dalam tutorial ini, Anda dapat dengan mudah mengelola dan melacak perubahan pada dokumen Anda. Baik Anda berkolaborasi dalam sebuah proyek atau sekadar mengawasi pengeditan, fitur ini pasti akan terbukti sangat berharga.
+Mengambil grup revisi dari dokumen Word menggunakan Aspose.Words untuk .NET merupakan proses yang mudah. Dengan mengikuti langkah-langkah yang diuraikan dalam tutorial ini, Anda dapat mengelola dan melacak perubahan dalam dokumen Anda dengan mudah. Baik Anda berkolaborasi dalam sebuah proyek atau sekadar mengawasi suntingan, fitur ini niscaya akan terbukti sangat berharga.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Bisakah saya memfilter revisi berdasarkan penulis tertentu?
 
- Ya, Anda dapat memfilter revisi oleh penulis tertentu dengan mencentang`Author` milik masing-masing`RevisionGroup` selama iterasi.
+ Ya, Anda dapat memfilter revisi berdasarkan penulis tertentu dengan mencentang`Author` milik masing-masing`RevisionGroup` selama iterasi.
 
 ### Bagaimana cara mendapatkan uji coba gratis Aspose.Words untuk .NET?
 
  Anda bisa mendapatkan uji coba gratis Aspose.Words untuk .NET[Di Sini](https://releases.aspose.com/).
 
-### Fitur lain apa yang ditawarkan Aspose.Words for .NET untuk mengelola revisi?
+### Fitur lain apa yang ditawarkan Aspose.Words untuk .NET untuk mengelola revisi?
 
- Aspose.Words untuk .NET menawarkan fitur seperti menerima atau menolak revisi, membandingkan dokumen, dan banyak lagi. Periksa[dokumentasi](https://reference.aspose.com/words/net/) untuk informasi rinci.
+ Aspose.Words untuk .NET menawarkan fitur-fitur seperti menerima atau menolak revisi, membandingkan dokumen, dan banyak lagi. Periksa[dokumentasi](https://reference.aspose.com/words/net/) untuk informasi lebih rinci.
 
 ### Apakah mungkin mendapatkan dukungan untuk Aspose.Words untuk .NET?
 
 Ya, Anda bisa mendapatkan dukungan dari komunitas Aspose[Di Sini](https://forum.aspose.com/c/words/8).
 
-### Bagaimana saya bisa membeli Aspose.Words untuk .NET?
+### Bagaimana cara membeli Aspose.Words untuk .NET?
 
  Anda dapat membeli Aspose.Words untuk .NET[Di Sini](https://purchase.aspose.com/buy).

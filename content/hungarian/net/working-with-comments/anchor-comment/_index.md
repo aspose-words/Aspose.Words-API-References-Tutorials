@@ -2,14 +2,14 @@
 title: Horgony megjegyzés
 linktitle: Horgony megjegyzés
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan adhat hozzá horgonyzó megjegyzéseket a Word-dokumentumokhoz az Aspose.Words for .NET használatával. Kövesse lépésenkénti útmutatónkat a hatékony dokumentum-együttműködés érdekében.
+description: Ismerje meg, hogyan adhat hozzá horgonyzó megjegyzéseket Word-dokumentumokhoz az Aspose.Words for .NET használatával. Kövesse lépésenkénti útmutatónkat a hatékony dokumentum-együttműködés érdekében.
 type: docs
 weight: 10
 url: /hu/net/working-with-comments/anchor-comment/
 ---
 ## Bevezetés
 
-Előfordult már, hogy olyan helyzetbe került, amikor programozottan megjegyzéseket kellett fűznie egy Word-dokumentum bizonyos szövegrészeihez? Képzelje el, hogy egy dokumentumon dolgozik együtt a csapatával, és bizonyos részeket megjegyzésekkel kell kiemelnie, hogy mások áttekinthessék. Ebben az oktatóanyagban részletesen bemutatjuk, hogyan illeszthetünk be horgonyzó megjegyzéseket Word-dokumentumokhoz az Aspose.Words for .NET használatával. A folyamatot egyszerű lépésekre bontjuk, így Ön könnyen követheti és megvalósíthatja projektjeit.
+Előfordult már, hogy olyan helyzetbe került, amikor programozottan megjegyzéseket kellett fűznie egy Word-dokumentum adott szövegrészeihez? Képzelje el, hogy egy dokumentumon dolgozik együtt a csapatával, és bizonyos részeket megjegyzésekkel kell kiemelnie, hogy mások áttekinthessék. Ebben az oktatóanyagban részletesen bemutatjuk, hogyan illeszthetünk be horgonyzó megjegyzéseket Word-dokumentumokhoz az Aspose.Words for .NET használatával. A folyamatot egyszerű lépésekre bontjuk, így Ön könnyen követheti és megvalósíthatja projektjeit.
 
 ## Előfeltételek
 
@@ -79,8 +79,7 @@ Most pedig hozzunk létre egy megjegyzést, amelyet a szövegünkhöz csatolunk.
 ```csharp
 // Hozzon létre egy új megjegyzést
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
-comment.Paragraphs.Add(new Paragraph(doc));
-comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
+comment.SetText("Comment text.");
 ```
 
  Ebben a lépésben létrehozzuk a`Comment` objektumot, és adjon hozzá egy bekezdést és egy futást a megjegyzés szövegével.
@@ -102,7 +101,7 @@ run3.ParentNode.InsertAfter(commentRangeEnd, run3);
 commentRangeEnd.ParentNode.InsertAfter(comment, commentRangeEnd);
 ```
 
- Itt alkotunk`CommentRangeStart`és`CommentRangeEnd` objektumok, összekapcsolva őket a megjegyzéssel annak azonosítójával. Ezután ezeket a tartományokat beillesztjük a dokumentumba, gyakorlatilag rögzítve a megjegyzésünket a megadott szöveghez.
+ Itt alkotunk`CommentRangeStart` és`CommentRangeEnd` objektumok, összekapcsolva őket a megjegyzéssel annak azonosítójával. Ezután ezeket a tartományokat beillesztjük a dokumentumba, gyakorlatilag rögzítve a megjegyzésünket a megadott szöveghez.
 
 ## 5. lépés: Mentse el a dokumentumot
 

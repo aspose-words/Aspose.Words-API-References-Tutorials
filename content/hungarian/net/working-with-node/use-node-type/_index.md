@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## 2. lépés: Nyissa meg a NodeType tulajdonságot
 
- A`NodeType` tulajdonság az Aspose.Words alapvető jellemzője. Lehetővé teszi az Ön által kezelt csomópont típusának azonosítását. A tulajdon eléréséhez egyszerűen használja a következő kódot:
+A`NodeType` tulajdonság az Aspose.Words alapvető jellemzője. Lehetővé teszi az Ön által kezelt csomópont típusának azonosítását. A tulajdon eléréséhez egyszerűen használja a következő kódot:
 
 ```csharp
 NodeType type = doc.NodeType;
@@ -63,7 +63,7 @@ Console.WriteLine("The NodeType of the document is: " + type);
 
 ###  Mi az a`NodeType` property in Aspose.Words?
 
- A`NodeType` tulajdonság azonosítja a csomópont típusát a dokumentumon belül, például dokumentum, szakasz, bekezdés, futtatás vagy táblázat.
+A`NodeType` tulajdonság azonosítja a csomópont típusát a dokumentumon belül, például dokumentum, szakasz, bekezdés, futtatás vagy táblázat.
 
 ###  Hogyan ellenőrizhetem a`NodeType` of a node?
 

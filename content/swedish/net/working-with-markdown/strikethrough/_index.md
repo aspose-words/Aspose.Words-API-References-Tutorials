@@ -32,7 +32,7 @@ using Aspose.Words.Saving;
 
 ## Steg 1: Initiera DocumentBuilder
 
- De`DocumentBuilder` class är ett kraftfullt verktyg i Aspose.Words som låter dig lägga till innehåll till ditt dokument med lätthet.
+De`DocumentBuilder` class är ett kraftfullt verktyg i Aspose.Words som låter dig lägga till innehåll till ditt dokument med lätthet.
 
 ```csharp
 // Initiera en DocumentBuilder.
@@ -67,7 +67,7 @@ Och där har du det! Du har framgångsrikt lagt till genomstruken formatering ti
 Aspose.Words för .NET är ett kraftfullt dokumentbehandlingsbibliotek som låter utvecklare skapa, manipulera och konvertera Word-dokument programmatiskt.
 
 ### Kan jag använda Aspose.Words för .NET i ett kommersiellt projekt?
- Ja, du kan använda Aspose.Words för .NET i kommersiella projekt. För inköpsalternativ, besök[köpsida](https://purchase.aspose.com/buy).
+ Ja, du kan använda Aspose.Words för .NET i kommersiella projekt. För köpalternativ, besök[köpsida](https://purchase.aspose.com/buy).
 
 ### Finns det en gratis testversion tillgänglig för Aspose.Words för .NET?
  Ja, du kan ladda ner en gratis testversion[här](https://releases.aspose.com/).

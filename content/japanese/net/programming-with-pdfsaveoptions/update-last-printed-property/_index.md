@@ -53,10 +53,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 最後に印刷したプロパティを更新するには、PDF保存オプションを設定する必要があります。`PdfSaveOptions`そして、`UpdateLastPrintedProperty`財産に`true`.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions 
-{ 
-	UpdateLastPrintedProperty = true 
-};
+PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
 ## ステップ5: ドキュメントをPDFとして保存する

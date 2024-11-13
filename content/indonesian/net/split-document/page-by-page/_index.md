@@ -1,25 +1,25 @@
 ---
-title: Pisahkan Dokumen Word Berdasarkan Halaman
-linktitle: Pisahkan Dokumen Word Berdasarkan Halaman
+title: Membagi Dokumen Word Berdasarkan Halaman
+linktitle: Membagi Dokumen Word Berdasarkan Halaman
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara membagi dokumen Word berdasarkan halaman menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang mendetail ini. Sempurna untuk mengelola dokumen besar secara efisien.
+description: Pelajari cara membagi dokumen Word berdasarkan halaman menggunakan Aspose.Words untuk .NET dengan panduan terperinci dan langkah demi langkah ini. Sempurna untuk mengelola dokumen besar secara efisien.
 type: docs
 weight: 10
 url: /id/net/split-document/page-by-page/
 ---
 ## Perkenalan
 
-Memisahkan dokumen Word berdasarkan halaman bisa sangat berguna, terutama ketika berhadapan dengan dokumen besar yang halaman tertentu perlu diekstraksi atau dibagikan secara terpisah. Dalam tutorial ini, kita akan memandu proses pemisahan dokumen Word menjadi halaman individual menggunakan Aspose.Words untuk .NET. Panduan ini akan mencakup semuanya mulai dari prasyarat hingga rincian langkah demi langkah, memastikan Anda dapat dengan mudah mengikuti dan menerapkan solusinya.
+Memisahkan dokumen Word berdasarkan halaman bisa sangat berguna, terutama saat menangani dokumen besar yang halaman-halamannya perlu diekstrak atau dibagikan secara terpisah. Dalam tutorial ini, kita akan membahas proses pemisahan dokumen Word menjadi beberapa halaman menggunakan Aspose.Words untuk .NET. Panduan ini akan mencakup semuanya, mulai dari prasyarat hingga uraian langkah demi langkah yang terperinci, memastikan Anda dapat dengan mudah mengikuti dan menerapkan solusinya.
 
 ## Prasyarat
 
-Sebelum kita masuk ke tutorialnya, pastikan Anda memiliki semua yang Anda perlukan untuk memulai:
+Sebelum kita masuk ke tutorialnya, mari pastikan Anda memiliki semua yang dibutuhkan untuk memulai:
 
-1. Aspose.Words untuk .NET: Pastikan Anda telah menginstal perpustakaan Aspose.Words. Anda dapat mengunduhnya dari[Halaman rilis Aspose](https://releases.aspose.com/words/net/).
-2. Lingkungan Pengembangan: Anda memerlukan lingkungan pengembangan yang diatur dengan .NET. Visual Studio adalah pilihan yang populer.
-3. Contoh Dokumen: Miliki contoh dokumen Word yang ingin Anda pisahkan. Simpan di direktori dokumen yang Anda tunjuk.
+1. Aspose.Words untuk .NET: Pastikan Anda telah menginstal pustaka Aspose.Words. Anda dapat mengunduhnya dari[Aspose merilis halaman](https://releases.aspose.com/words/net/).
+2. Lingkungan Pengembangan: Anda memerlukan lingkungan pengembangan yang disiapkan dengan .NET. Visual Studio adalah pilihan yang populer.
+3. Contoh Dokumen: Miliki contoh dokumen Word yang ingin Anda bagi. Simpan di direktori dokumen yang Anda tentukan.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
 Untuk memulai, pastikan Anda telah mengimpor namespace yang diperlukan ke proyek Anda:
 
@@ -29,7 +29,7 @@ using Aspose.Words;
 
 ## Langkah 1: Muat Dokumen
 
-Pertama, kita perlu memuat dokumen yang ingin kita pisahkan. Tempatkan dokumen Word Anda di direktori yang ditentukan.
+Pertama, kita perlu memuat dokumen yang ingin kita bagi. Letakkan dokumen Word Anda di direktori yang ditentukan.
 
 ```csharp
 // Jalur ke direktori dokumen.
@@ -39,7 +39,7 @@ Document doc = new Document(dataDir + "Big document.docx");
 
 ## Langkah 2: Dapatkan Jumlah Halaman
 
-Selanjutnya, kita akan menentukan jumlah halaman dalam dokumen. Informasi ini akan digunakan untuk mengulangi dokumen dan mengekstrak setiap halaman.
+Selanjutnya, kita akan menentukan jumlah total halaman dalam dokumen. Informasi ini akan digunakan untuk menelusuri dokumen dan mengekstrak setiap halaman.
 
 ```csharp
 int pageCount = doc.PageCount;
@@ -47,7 +47,7 @@ int pageCount = doc.PageCount;
 
 ## Langkah 3: Ekstrak dan Simpan Setiap Halaman
 
-Sekarang, kita akan menelusuri setiap halaman, mengekstraknya, dan menyimpannya sebagai dokumen terpisah.
+Sekarang, kita akan mengulang setiap halaman, mengekstraknya, dan menyimpannya sebagai dokumen terpisah.
 
 ```csharp
 for (int page = 0; page < pageCount; page++)
@@ -60,21 +60,21 @@ for (int page = 0; page < pageCount; page++)
 
 ## Kesimpulan
 
-Memisahkan dokumen Word berdasarkan halaman menggunakan Aspose.Words untuk .NET sangatlah mudah dan sangat efisien. Dengan mengikuti langkah-langkah yang diuraikan dalam panduan ini, Anda dapat dengan mudah mengekstrak halaman individual dari dokumen besar dan menyimpannya sebagai file terpisah. Ini bisa sangat berguna untuk tujuan pengelolaan, berbagi, dan pengarsipan dokumen.
+Memisahkan dokumen Word berdasarkan halaman menggunakan Aspose.Words untuk .NET mudah dan sangat efisien. Dengan mengikuti langkah-langkah yang diuraikan dalam panduan ini, Anda dapat dengan mudah mengekstrak halaman individual dari dokumen besar dan menyimpannya sebagai file terpisah. Ini dapat sangat berguna untuk tujuan manajemen, berbagi, dan pengarsipan dokumen.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Bisakah saya membagi dokumen dengan format yang rumit?
 Ya, Aspose.Words untuk .NET menangani dokumen dengan format kompleks dengan mulus.
 
-### Apakah mungkin untuk mengekstrak serangkaian halaman, bukan satu per satu?
- Sangat. Anda dapat memodifikasi`ExtractPages` metode untuk menentukan rentang.
+### Mungkinkah mengekstrak sejumlah halaman, bukan satu per satu?
+ Tentu saja. Anda dapat memodifikasi`ExtractPages` metode untuk menentukan rentang.
 
 ### Apakah metode ini berfungsi untuk format file lain seperti PDF?
-Metode yang ditampilkan khusus untuk dokumen Word. Untuk PDF, Anda akan menggunakan Aspose.PDF.
+Metode yang ditunjukkan khusus untuk dokumen Word. Untuk PDF, Anda dapat menggunakan Aspose.PDF.
 
-### Bagaimana cara menangani dokumen dengan orientasi halaman berbeda?
-Aspose.Words mempertahankan format asli dan orientasi setiap halaman selama ekstraksi.
+### Bagaimana cara menangani dokumen dengan orientasi halaman yang berbeda?
+Aspose.Words mempertahankan format dan orientasi asli setiap halaman selama ekstraksi.
 
-### Bisakah saya mengotomatiskan proses ini untuk banyak dokumen?
+### Bisakah saya mengotomatiskan proses ini untuk beberapa dokumen?
 Ya, Anda dapat membuat skrip untuk mengotomatiskan proses pemisahan beberapa dokumen dalam satu direktori.

@@ -1,26 +1,26 @@
 ---
 title: การใช้ฟิลด์ใน Aspose.Words สำหรับ Java
 linktitle: การใช้ฟิลด์
-second_title: Aspose.Words Java การประมวลผลเอกสาร API
-description: เรียนรู้การใช้ฟิลด์ Aspose.Words สำหรับ Java อย่างมีประสิทธิภาพในบทช่วยสอนทีละขั้นตอนนี้ สร้างเอกสาร Word แบบไดนามิกได้อย่างง่ายดาย
+second_title: API การประมวลผลเอกสาร Java ของ Aspose.Words
+description: เรียนรู้การใช้ Aspose.Words สำหรับฟิลด์ Java อย่างมีประสิทธิภาพด้วยบทช่วยสอนแบบทีละขั้นตอนนี้ สร้างเอกสาร Word แบบไดนามิกได้อย่างง่ายดาย
 type: docs
 weight: 11
 url: /th/java/using-document-elements/using-fields/
 ---
 
-ในบทช่วยสอนทีละขั้นตอนนี้ เราจะแนะนำคุณเกี่ยวกับวิธีใช้ฟิลด์ใน Aspose.Words สำหรับ Java เพื่อจัดการเอกสารได้อย่างง่ายดาย Aspose.Words สำหรับ Java เป็น API ที่ทรงพลังที่ช่วยให้คุณทำงานกับเอกสาร Word โดยทางโปรแกรม ทำให้คุณควบคุมเนื้อหาและการจัดรูปแบบได้อย่างเต็มที่
+ในบทช่วยสอนทีละขั้นตอนนี้ เราจะแนะนำคุณเกี่ยวกับวิธีใช้ฟิลด์ใน Aspose.Words สำหรับ Java เพื่อจัดการเอกสารได้อย่างง่ายดาย Aspose.Words สำหรับ Java เป็น API ที่มีประสิทธิภาพที่ช่วยให้คุณทำงานกับเอกสาร Word ได้ด้วยการเขียนโปรแกรม ทำให้คุณควบคุมเนื้อหาและการจัดรูปแบบได้อย่างเต็มที่
 
 ## 1. บทนำ
 
-Aspose.Words for Java เป็นเครื่องมือสำคัญสำหรับทุกคนที่เกี่ยวข้องกับเอกสาร Word ในแอปพลิเคชัน Java ช่องคือตัวยึดตำแหน่งที่สามารถจัดเก็บข้อมูลแบบไดนามิกในเอกสารของคุณได้ บทช่วยสอนนี้จะแสดงวิธีการทำงานกับฟิลด์อย่างมีประสิทธิภาพ
+Aspose.Words สำหรับ Java เป็นเครื่องมือสำคัญสำหรับทุกคนที่ต้องจัดการกับเอกสาร Word ในแอปพลิเคชัน Java ฟิลด์คือตัวแทนที่สามารถจัดเก็บข้อมูลแบบไดนามิกในเอกสารของคุณได้ บทช่วยสอนนี้จะแสดงให้คุณเห็นถึงวิธีการทำงานกับฟิลด์อย่างมีประสิทธิภาพ
 
 ## 2. การตั้งค่าสภาพแวดล้อมของคุณ
 
- ก่อนที่คุณจะเริ่มต้น ตรวจสอบให้แน่ใจว่าคุณได้ติดตั้ง Aspose.Words สำหรับ Java แล้ว คุณสามารถดาวน์โหลดได้จาก[ที่นี่](https://releases.aspose.com/words/java/)- นอกจากนี้ ตรวจสอบให้แน่ใจว่าคุณได้ติดตั้ง Java และสภาพแวดล้อมการพัฒนาแบบรวม (IDE) เช่น Eclipse หรือ IntelliJ IDEA บนระบบของคุณ
+ ก่อนเริ่มต้น โปรดแน่ใจว่าคุณได้ติดตั้ง Aspose.Words สำหรับ Java แล้ว คุณสามารถดาวน์โหลดได้จาก[ที่นี่](https://releases.aspose.com/words/java/)นอกจากนี้ ควรแน่ใจว่าคุณมี Java และสภาพแวดล้อมการพัฒนาแบบบูรณาการ (IDE) เช่น Eclipse หรือ IntelliJ IDEA ติดตั้งอยู่บนระบบของคุณ
 
 ## 3. การโหลดเอกสาร Word
 
-ในแอปพลิเคชัน Java ของคุณ คุณต้องโหลดเอกสาร Word ที่คุณต้องการใช้งาน ต่อไปนี้เป็นตัวอย่างโค้ดสำหรับการเริ่มต้น:
+ในแอปพลิเคชัน Java ของคุณ คุณต้องโหลดเอกสาร Word ที่คุณต้องการใช้งาน นี่คือตัวอย่างโค้ดเพื่อช่วยคุณเริ่มต้น:
 
 ```java
 string dataDir = "Your Document Directory";
@@ -28,17 +28,17 @@ string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
 ```
 
- แทนที่`"Your Document Directory"`และ`"Your Output Directory"` ด้วยแนวทางที่เหมาะสม
+ แทนที่`"Your Document Directory"` และ`"Your Output Directory"` ด้วยเส้นทางที่เหมาะสม
 
 ## 4. การปรับแต่งจดหมายเวียน
 
-Aspose.Words for Java ให้การสนับสนุนที่ดีเยี่ยมสำหรับการดำเนินการจดหมายเวียน คุณสามารถปรับแต่งกระบวนการจดหมายเวียนได้ด้วยการตั้งค่าตัวจัดการเหตุการณ์จดหมายเวียน ต่อไปนี้เป็นวิธีดำเนินการ:
+Aspose.Words สำหรับ Java ให้การสนับสนุนที่ยอดเยี่ยมสำหรับการดำเนินการผสานจดหมาย คุณสามารถปรับแต่งกระบวนการผสานจดหมายได้โดยการตั้งค่าตัวจัดการเหตุการณ์การผสานจดหมาย ดังต่อไปนี้คือวิธีการดำเนินการ:
 
 ```java
-// ตั้งค่าตัวจัดการเหตุการณ์จดหมายเวียนเพื่อทำงานแบบกำหนดเอง
+// ตั้งค่าตัวจัดการเหตุการณ์การผสานจดหมายเพื่อทำงานแบบกำหนดเอง
 doc.getMailMerge().setFieldMergingCallback(new HandleMergeField());
 
-// ตัดค่าจดหมายเวียนต่อท้ายและช่องว่างนำหน้า
+// ตัดค่าการผสานจดหมายช่องว่างด้านท้ายและด้านนำ
 doc.getMailMerge().setTrimWhitespaces(false);
 
 String[] fieldNames = {
@@ -56,22 +56,22 @@ doc.getMailMerge().execute(fieldNames, fieldValues);
 
 ## 5. การบันทึกเอกสาร
 
-หลังจากปรับแต่งเอกสารของคุณแล้ว คุณสามารถบันทึกโดยใช้โค้ดต่อไปนี้:
+หลังจากปรับแต่งเอกสารของคุณแล้ว คุณสามารถบันทึกได้โดยใช้รหัสดังต่อไปนี้:
 
 ```java
 doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
 ```
 
- แทนที่`"Your Output Directory"` ด้วยเส้นทางขาออกที่ต้องการ
+ แทนที่`"Your Output Directory"` ด้วยเส้นทางเอาท์พุตตามที่ต้องการ
 
-## กรอกซอร์สโค้ดให้สมบูรณ์
+## ซอร์สโค้ดที่สมบูรณ์
 ```java
 string dataDir = "Your Document Directory";
 string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
-// ตั้งค่าตัวจัดการเหตุการณ์จดหมายเวียนเพื่อทำงานแบบกำหนดเอง
+// ตั้งค่าตัวจัดการเหตุการณ์การผสานจดหมายเพื่อทำงานแบบกำหนดเอง
 doc.getMailMerge().setFieldMergingCallback(new HandleMergeField());
-// ตัดค่าจดหมายเวียนต่อท้ายและช่องว่างนำหน้า
+// ตัดค่าการผสานจดหมายช่องว่างด้านท้ายและด้านนำ
 doc.getMailMerge().setTrimWhitespaces(false);
 String[] fieldNames = {
 	"RecipientName", "SenderName", "FaxNumber", "PhoneNumber",
@@ -90,17 +90,17 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
     private static class HandleMergeField implements IFieldMergingCallback
     {
         /// <สรุป>
-        /// ตัวจัดการนี้ถูกเรียกสำหรับทุกฟิลด์จดหมายเวียนที่พบในเอกสาร
-        /// สำหรับทุกบันทึกที่พบในแหล่งข้อมูล
+        //ตัวจัดการนี้จะถูกเรียกใช้สำหรับฟิลด์จดหมายเวียนทุกฟิลด์ที่พบในเอกสาร
+        /// สำหรับทุกรายการที่พบในแหล่งข้อมูล
         /// </สรุป>
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs e) throws Exception
         {
             if (mBuilder == null)
                 mBuilder = new DocumentBuilder(e.getDocument());
-            // เราตัดสินใจว่าเราต้องการให้ค่าบูลีนทั้งหมดส่งออกเป็นช่องแบบฟอร์มช่องทำเครื่องหมาย
+            // เราตัดสินใจว่าเราต้องการให้ค่าบูลีนทั้งหมดถูกส่งออกเป็นฟิลด์ฟอร์มกล่องกาเครื่องหมาย
             if (e.getFieldValue() instanceof /*boolean*/Boolean)
             {
-                // ย้าย "เคอร์เซอร์" ไปยังช่องผสานปัจจุบัน
+                // ย้าย "เคอร์เซอร์" ไปยังฟิลด์ผสานปัจจุบัน
                 mBuilder.moveToMergeField(e.getFieldName());
                 String checkBoxName = MessageFormat.format("{0}{1}", e.getFieldName(), e.getRecordIndex());
                 mBuilder.insertCheckBox(checkBoxName, (Boolean) e.getFieldValue(), 0);
@@ -152,7 +152,7 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
     {
         public void fieldMerging(FieldMergingArgs args)
         {
-            // ไม่จำเป็นต้องมีการดำเนินการ
+            // ไม่จำเป็นต้องมีการดำเนินการใดๆ
         }
         public void imageFieldMerging(ImageFieldMergingArgs args) throws Exception
         {
@@ -203,20 +203,20 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
     {
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
-        // แทรก MERGEFIELD ที่ซ้อนกันภายในฟิลด์ IF
-        // เนื่องจากคำสั่งฟิลด์ IF เป็นเท็จ ผลลัพธ์ของ MERGEFIELD ภายในจะไม่แสดงขึ้นมา
-        //และ MERGEFIELD จะไม่ได้รับข้อมูลใด ๆ ในระหว่างการรวมจดหมาย
+        // แทรก MERGEFIELD ที่ซ้อนอยู่ในฟิลด์ IF
+        // เนื่องจากคำสั่งฟิลด์ IF เป็นเท็จ ผลลัพธ์ของ MERGEFIELD ภายในจะไม่แสดง
+        //และ MERGEFIELD จะไม่รับข้อมูลใดๆ ในระหว่างการรวมจดหมาย
         FieldIf fieldIf = (FieldIf)builder.insertField(" IF 1 = 2 ");
         builder.moveTo(fieldIf.getSeparator());
         builder.insertField(" MERGEFIELD  FullName ");
-        // เรายังคงสามารถนับ MERGEFIELD ในช่อง IF ที่เป็นข้อความเท็จได้ หากเราตั้งค่าสถานะนี้เป็นจริง
+        // เราจะยังคงนับ MERGEFIELD ภายในฟิลด์ IF ที่เป็นคำสั่งเท็จได้หากเราตั้งค่าแฟล็กนี้เป็น true
         doc.getMailMerge().setUnconditionalMergeFieldsAndRegions(true);
         DataTable dataTable = new DataTable();
         dataTable.getColumns().add("FullName");
         dataTable.getRows().add("James Bond");
         doc.getMailMerge().execute(dataTable);
         // ผลลัพธ์จะไม่ปรากฏในเอกสารเนื่องจากฟิลด์ IF เป็นเท็จ
-        // แต่ MERGEFIELD ภายในได้รับข้อมูลจริงๆ
+        // แต่ MERGEFIELD ด้านในก็ได้รับข้อมูลแล้ว
         doc.save("Your Directory Path" + "WorkingWithFields.MailMergeAndConditionalField.docx");
     }
     @Test
@@ -239,17 +239,17 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
     {
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs args)
         {
-            // ไม่ต้องทำอะไรเลย
+            // ไม่ต้องทำอะไร
         }
         /// <สรุป>
-        /// สิ่งนี้เรียกว่าเมื่อกลไกจัดการจดหมายเวียนพบฟิลด์รูปภาพ:XXX ผสานในเอกสาร
-        /// คุณมีโอกาสที่จะส่งคืนออบเจ็กต์รูปภาพ ชื่อไฟล์ หรือสตรีมที่มีรูปภาพนั้น
+        /// นี่จะถูกเรียกใช้เมื่อโปรแกรมผสานจดหมายพบฟิลด์ผสาน Image:XXX ในเอกสาร
+        /// คุณมีโอกาสที่จะส่งคืนวัตถุ Image ชื่อไฟล์ หรือสตรีมที่ประกอบด้วยรูปภาพ
         /// </สรุป>
         public void /*IFieldMergingCallback.*/imageFieldMerging(ImageFieldMergingArgs e) throws Exception
         {
-            // ค่าของฟิลด์เป็นอาร์เรย์ไบต์ เพียงแค่ส่งและสร้างสตรีมบนนั้น
+            // ค่าของฟิลด์เป็นอาร์เรย์ไบต์ เพียงแค่แคสต์และสร้างสตรีมบนนั้น
             ByteArrayInputStream imageStream = new ByteArrayInputStream((byte[]) e.getFieldValue());
-            // ขณะนี้กลไกจัดการจดหมายเวียนจะดึงข้อมูลรูปภาพจากกระแสข้อมูล
+            // ขณะนี้เครื่องมือผสานจดหมายจะดึงภาพจากสตรีม
             e.setImageStream(imageStream);
         }
     }
@@ -295,9 +295,9 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
     private static class HandleMergeFieldAlternatingRows implements IFieldMergingCallback
     {
         /// <สรุป>
-        /// เรียกทุกช่องผสานที่พบในเอกสาร
-        /// เราสามารถส่งคืนข้อมูลบางส่วนไปยังโปรแกรมจดหมายเวียนหรือดำเนินการอย่างอื่นกับเอกสารได้
-        /// ในกรณีนี้ เราแก้ไขการจัดรูปแบบเซลล์
+        /// เรียกใช้สำหรับฟิลด์ผสานทุกฟิลด์ที่พบในเอกสาร
+        //เราจะส่งข้อมูลบางส่วนกลับไปยังโปรแกรมผสานจดหมายหรือทำอย่างอื่นกับเอกสารได้
+        /// ในกรณีนี้เราจะปรับเปลี่ยนการจัดรูปแบบเซลล์
         /// </สรุป>
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs e)
         {
@@ -305,11 +305,11 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
                 mBuilder = new DocumentBuilder(e.getDocument());
             if ("CompanyName".equals(e.getFieldName()))
             {
-                // เลือกสีขึ้นอยู่กับว่าหมายเลขแถวเป็นเลขคู่หรือคี่
+                // เลือกสีขึ้นอยู่กับว่าหมายเลขแถวเป็นคู่หรือคี่
                 Color rowColor = isOdd(mRowIdx) 
                     ? new Color((213), (227), (235)) 
                     : new Color((242), (242), (242));
-                //ขณะนี้ยังไม่มีวิธีตั้งค่าคุณสมบัติของเซลล์สำหรับทั้งแถว ดังนั้นเราจึงต้องวนซ้ำเซลล์ทั้งหมดในแถว
+                //ในขณะนี้ยังไม่มีวิธีตั้งค่าคุณสมบัติเซลล์สำหรับแถวทั้งหมด ดังนั้นเราจะต้องทำซ้ำในเซลล์ทั้งหมดในแถว
                 for (int colIdx = 0; colIdx < 4; colIdx++)
                 {
                     mBuilder.moveToCell(0, mRowIdx, colIdx, 0);
@@ -320,21 +320,21 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
         }
         public void /*IFieldMergingCallback.*/imageFieldMerging(ImageFieldMergingArgs args)
         {
-            // ไม่ต้องทำอะไรเลย
+            // ไม่ต้องทำอะไร
         }
         private DocumentBuilder mBuilder;
         private int mRowIdx;
     }
     /// <สรุป>
-    /// คืนค่าเป็นจริงหากค่าเป็นเลขคี่ เท็จถ้าค่าเป็นเลขคู่
+    /// คืนค่าเป็นจริงถ้าค่าเป็นคี่ คืนค่าเท็จถ้าค่าเป็นคู่
     /// </สรุป>
     private static boolean isOdd(int value)
     {
         return (value / 2 * 2) == value;
     }
     /// <สรุป>
-    /// สร้าง DataTable แล้วกรอกข้อมูล
-    /// ในชีวิตจริง DataTable นี้ควรถูกเติมจากฐานข้อมูล
+    /// สร้าง DataTable และกรอกข้อมูลลงไป
+    //ในชีวิตจริง DataTable นี้ควรได้รับการกรอกจากฐานข้อมูล
     /// </สรุป>
     private DataTable getSuppliersDataTable()
     {
@@ -355,24 +355,24 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
 
 ## 6. บทสรุป
 
-ยินดีด้วย! คุณได้เรียนรู้วิธีใช้ฟิลด์ใน Aspose.Words สำหรับ Java เพื่อจัดการเอกสาร Word แบบไดนามิก API อันทรงพลังนี้ช่วยให้คุณควบคุมเอกสารของคุณได้อย่างสมบูรณ์ ทำให้เป็นทรัพย์สินที่มีค่าสำหรับนักพัฒนา Java
+ขอแสดงความยินดี! คุณได้เรียนรู้วิธีใช้ฟิลด์ใน Aspose.Words สำหรับ Java เพื่อจัดการเอกสาร Word แบบไดนามิกแล้ว API ที่มีประสิทธิภาพนี้ช่วยให้คุณควบคุมเอกสารของคุณได้อย่างสมบูรณ์ ทำให้เป็นทรัพยากรที่มีค่าสำหรับนักพัฒนา Java
 
 ## 7. คำถามที่พบบ่อย
 
-### คำถามที่ 1: ฉันจะดาวน์โหลด Aspose.Words สำหรับ Java ได้ที่ไหน
+### คำถามที่ 1: ฉันสามารถดาวน์โหลด Aspose.Words สำหรับ Java ได้ที่ไหน
  คุณสามารถดาวน์โหลด Aspose.Words สำหรับ Java ได้จาก[ที่นี่](https://releases.aspose.com/words/java/).
 
-### คำถามที่ 2: ฉันจะรับใบอนุญาตชั่วคราวสำหรับ Aspose.Words สำหรับ Java ได้อย่างไร
- คุณสามารถขอรับใบอนุญาตชั่วคราวได้จาก[ที่นี่](https://purchase.aspose.com/temporary-license/).
+### คำถามที่ 2: ฉันจะได้รับใบอนุญาตชั่วคราวสำหรับ Aspose.Words สำหรับ Java ได้อย่างไร
+ คุณสามารถขอใบอนุญาตชั่วคราวได้จาก[ที่นี่](https://purchase.aspose.com/temporary-license/).
 
-### คำถามที่ 3: ฉันจะรับการสนับสนุนสำหรับ Aspose.Words สำหรับ Java ได้ที่ไหน
- หากต้องการการสนับสนุน คุณสามารถไปที่ฟอรัม Aspose.Words[ที่นี่](https://forum.aspose.com/).
+### คำถามที่ 3: ฉันจะได้รับการสนับสนุนสำหรับ Aspose.Words สำหรับ Java ได้จากที่ไหน
+ หากต้องการความช่วยเหลือ คุณสามารถเยี่ยมชมฟอรัม Aspose.Words ได้[ที่นี่](https://forum.aspose.com/).
 
-### คำถามที่ 4: Aspose.Words สำหรับ Java เหมาะสำหรับการจัดการเนื้อหา HTML ในเอกสาร Word หรือไม่
-ใช่ Aspose.Words สำหรับ Java ให้การสนับสนุนที่ยอดเยี่ยมสำหรับการจัดการเนื้อหา HTML ในเอกสาร Word
+### คำถามที่ 4: Aspose.Words สำหรับ Java เหมาะกับการจัดการเนื้อหา HTML ในเอกสาร Word หรือไม่
+ใช่ Aspose.Words สำหรับ Java รองรับการจัดการเนื้อหา HTML ในเอกสาร Word ได้อย่างยอดเยี่ยม
 
-### คำถามที่ 5: ฉันสามารถใช้ Aspose.Words สำหรับ Java ได้ฟรีหรือไม่
- Aspose.Words for Java เป็นผลิตภัณฑ์เชิงพาณิชย์ แต่คุณสามารถสำรวจฟีเจอร์ต่างๆ ของมันได้ด้วยการทดลองใช้ฟรี[ที่นี่](https://releases.aspose.com/).
+### คำถามที่ 5: ฉันสามารถใช้ Aspose.Words สำหรับ Java ได้ฟรีหรือไม่?
+ Aspose.Words สำหรับ Java เป็นผลิตภัณฑ์เชิงพาณิชย์ แต่คุณสามารถสำรวจคุณลักษณะต่างๆ ของมันได้ด้วยการทดลองใช้ฟรี[ที่นี่](https://releases.aspose.com/).
 
-เริ่มต้นใช้งาน Aspose.Words สำหรับ Java วันนี้และควบคุมเอกสาร Word ของคุณอย่างที่ไม่เคยมีมาก่อน!
+เริ่มต้นใช้งาน Aspose.Words สำหรับ Java วันนี้และควบคุมเอกสาร Word ของคุณได้อย่างที่ไม่เคยมีมาก่อน!
 

@@ -2,7 +2,7 @@
 title: Akıllı Sanat Şeklini Algıla
 linktitle: Akıllı Sanat Şeklini Algıla
 second_title: Aspose.Words Belge İşleme API'si
-description: Bu kapsamlı kılavuzla Aspose.Words for .NET kullanarak Word belgelerindeki SmartArt şekillerini nasıl tespit edeceğinizi öğrenin. Belge iş akışınızı otomatikleştirmek için mükemmeldir.
+description: Bu kapsamlı kılavuzla Aspose.Words for .NET kullanarak Word belgelerindeki SmartArt şekillerini nasıl algılayacağınızı öğrenin. Belge iş akışınızı otomatikleştirmek için mükemmeldir.
 type: docs
 weight: 10
 url: /tr/net/programming-with-shapes/detect-smart-art-shape/
@@ -10,22 +10,22 @@ url: /tr/net/programming-with-shapes/detect-smart-art-shape/
 
 ## giriiş
 
-Selam! Hiç Word belgelerinde SmartArt ile programlı olarak çalışmanız gerekti mi? İster raporları otomatikleştiriyor olun, ister dinamik belgeler oluşturuyor olun, ister yalnızca belge işlemeye dalıyor olun, Aspose.Words for .NET size yardımcı olacaktır. Bu eğitimde Aspose.Words for .NET kullanarak Word belgelerindeki SmartArt şekillerinin nasıl algılanacağını inceleyeceğiz. Her adımı ayrıntılı, takip edilmesi kolay bir kılavuzda ele alacağız. Bu makalenin sonunda, herhangi bir Word belgesindeki SmartArt şekillerini zahmetsizce tanımlayabileceksiniz!
+Merhaba! Word belgelerinde SmartArt ile programatik olarak çalışmanız gerekti mi hiç? İster raporları otomatikleştirin, ister dinamik belgeler oluşturun veya sadece belge işlemeye dalın, Aspose.Words for .NET sizin için her şeyi halleder. Bu eğitimde, Aspose.Words for .NET kullanarak Word belgelerinde SmartArt şekillerini nasıl tespit edeceğinizi inceleyeceğiz. Her adımı ayrıntılı, kolay takip edilebilir bir kılavuzda açıklayacağız. Bu makalenin sonunda, herhangi bir Word belgesindeki SmartArt şekillerini zahmetsizce tespit edebileceksiniz!
 
-## Önkoşullar
+## Ön koşullar
 
-Ayrıntılara dalmadan önce her şeyin ayarlandığından emin olalım:
+Ayrıntılara girmeden önce her şeyin ayarlandığından emin olalım:
 
-1. Temel C# Bilgisi: C# sözdizimi ve kavramları konusunda rahat olmalısınız.
-2.  Aspose.Words for .NET: İndirin[Burada](https://releases.aspose.com/words/net/) . Sadece keşfediyorsanız, bir tane ile başlayabilirsiniz.[ücretsiz deneme](https://releases.aspose.com/).
-3. Visual Studio: Güncel sürümlerden herhangi biri çalışmalıdır ancak en son sürüm önerilir.
+1. Temel C# Bilgisi: C# söz dizimi ve kavramlarına hakim olmalısınız.
+2.  Aspose.Words for .NET: İndirin[Burada](https://releases.aspose.com/words/net/) Eğer yeni keşfediyorsanız, bir başlangıçla başlayabilirsiniz[ücretsiz deneme](https://releases.aspose.com/).
+3. Visual Studio: Güncel herhangi bir sürüm işe yarar, ancak en son sürüm önerilir.
 4. .NET Framework: Sisteminizde kurulu olduğundan emin olun.
 
-Başlamaya hazır mısınız? Mükemmel! Hemen içeri girelim.
+Başlamaya hazır mısınız? Harika! Hemen başlayalım.
 
 ## Ad Alanlarını İçe Aktar
 
-Başlamak için gerekli ad alanlarını içe aktarmamız gerekiyor. Bu adım, kullanacağımız sınıflara ve yöntemlere erişim sağladığı için çok önemlidir.
+Başlamak için gerekli ad alanlarını içe aktarmamız gerekiyor. Bu adım, kullanacağımız sınıflara ve yöntemlere erişim sağladığı için önemlidir.
 
 ```csharp
 using System;
@@ -34,17 +34,17 @@ using Aspose.Words;
 using Aspose.Words.Drawing;
 ```
 
-Bu ad alanları, Word belgelerini oluşturmak, değiştirmek ve analiz etmek için gereklidir.
+Bu ad alanları, Word belgelerini oluşturmak, düzenlemek ve analiz etmek için gereklidir.
 
 ## Adım 1: Belge Dizinini Ayarlama
 
-Öncelikle belgelerimizin saklandığı dizini belirtmemiz gerekiyor. Bu Aspose.Words'ün analiz etmek istediğimiz dosyaları bulmasına yardımcı olur.
+Öncelikle belgelerimizin saklandığı dizini belirtmemiz gerekiyor. Bu, Aspose.Words'ün analiz etmek istediğimiz dosyaları bulmasına yardımcı olur.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belgelerinizin gerçek yolu ile.
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` Belgelerinize giden gerçek yol ile.
 
 ## Adım 2: Belgeyi Yükleme
 
@@ -54,11 +54,11 @@ Daha sonra algılamak istediğimiz SmartArt şekillerini içeren Word belgesini 
 Document doc = new Document(dataDir + "Smart Art.docx");
 ```
 
- Burada bir başlangıç başlatıyoruz`Document` Word dosyamızın yolunu içeren nesne.
+ Burada bir`Document` Word dosyamızın yolunu içeren nesne.
 
-## 3. Adım: SmartArt Şekillerini Algılama
+## Adım 3: SmartArt Şekillerini Algılama
 
-Şimdi heyecan verici kısım geliyor; belgedeki SmartArt şekillerini tespit etmek. SmartArt içeren şekillerin sayısını sayacağız.
+Şimdi heyecan verici kısma geliyoruz - belgedeki SmartArt şekillerini algılamak. SmartArt içeren şekillerin sayısını sayacağız.
 
 ```csharp
 int count = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().Count(shape => shape.HasSmartArt);
@@ -66,40 +66,40 @@ int count = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().Count(shape =>
 Console.WriteLine("The document has {0} shapes with SmartArt.", count);
 ```
 
- Bu adımda SmartArt içeren şekilleri filtrelemek ve saymak için LINQ kullanıyoruz.`GetChildNodes` yöntem tüm şekilleri alır ve`HasSmartArt` özelliği, bir şeklin SmartArt içerip içermediğini kontrol eder.
+ Bu adımda, SmartArt'a sahip şekilleri filtrelemek ve saymak için LINQ'u kullanırız.`GetChildNodes` yöntem tüm şekilleri alır ve`HasSmartArt` özellik bir şeklin SmartArt içerip içermediğini kontrol eder.
 
 ## Adım 4: Kodu Çalıştırma
 
-Kodu yazdıktan sonra Visual Studio'da çalıştırın. Konsol, belgede bulunan SmartArt şekillerinin sayısını görüntüleyecektir.
+Kodu yazdıktan sonra, Visual Studio'da çalıştırın. Konsol, belgede bulunan SmartArt şekillerinin sayısını görüntüler.
 
 ```plaintext
 The document has X shapes with SmartArt.
 ```
 
-"X" harfini belgenizdeki SmartArt şekillerinin gerçek sayısıyla değiştirin.
+"X"i belgenizdeki SmartArt şekillerinin gerçek sayısıyla değiştirin.
 
 ## Çözüm
 
-Ve işte karşınızda! Aspose.Words for .NET kullanarak Word belgelerindeki SmartArt şekillerini nasıl tespit edeceğinizi başarıyla öğrendiniz. Bu eğitim ortamınızı ayarlamayı, belgeleri yüklemeyi, SmartArt şekillerini algılamayı ve kodu çalıştırmayı kapsıyordu. Aspose.Words çok çeşitli özellikler sunar; bu nedenle,[API belgeleri](https://reference.aspose.com/words/net/) tüm potansiyelini ortaya çıkarmak için.
+Ve işte oldu! Aspose.Words for .NET kullanarak Word belgelerinde SmartArt şekillerini nasıl algılayacağınızı başarıyla öğrendiniz. Bu eğitimde ortamınızı kurma, belgeleri yükleme, SmartArt şekillerini algılama ve kodu çalıştırma konuları ele alındı. Aspose.Words çok çeşitli özellikler sunar, bu nedenle[API dokümantasyonu](https://reference.aspose.com/words/net/) tüm potansiyelini ortaya çıkarmak için.
 
 ## SSS
 
 ### 1. Aspose.Words for .NET nedir?
 
-Aspose.Words for .NET, geliştiricilerin Word belgelerini programlı olarak oluşturmasına, değiştirmesine ve dönüştürmesine olanak tanıyan güçlü bir kitaplıktır. Belgeyle ilgili görevleri otomatikleştirmek için idealdir.
+Aspose.Words for .NET, geliştiricilerin Word belgelerini programatik olarak oluşturmasına, düzenlemesine ve dönüştürmesine olanak tanıyan güçlü bir kütüphanedir. Belgeyle ilgili görevleri otomatikleştirmek için idealdir.
 
 ### 2. Aspose.Words for .NET'i ücretsiz kullanabilir miyim?
 
- Aspose.Words for .NET'i kullanarak deneyebilirsiniz.[ücretsiz deneme](https://releases.aspose.com/). Uzun süreli kullanım için lisans satın almanız gerekir.
+ .NET için Aspose.Words'ü şu şekilde deneyebilirsiniz:[ücretsiz deneme](https://releases.aspose.com/)Uzun süreli kullanım için lisans satın almanız gerekecektir.
 
-### 3. Bir belgedeki diğer şekil türlerini nasıl tespit ederim?
+### 3. Bir belgedeki diğer şekil türlerini nasıl tespit edebilirim?
 
- Diğer özellikleri veya şekil türlerini denetlemek için LINQ sorgusunu değiştirebilirsiniz. Şuraya bakın:[dokümantasyon](https://reference.aspose.com/words/net/) daha fazla ayrıntı için.
+ Diğer özellikleri veya şekil türlerini kontrol etmek için LINQ sorgusunu değiştirebilirsiniz.[belgeleme](https://reference.aspose.com/words/net/) Daha detaylı bilgi için.
 
 ### 4. Aspose.Words for .NET desteğini nasıl alabilirim?
 
-adresini ziyaret ederek destek alabilirsiniz.[Aspose destek forumu](https://forum.aspose.com/c/words/8).
+Destek almak için şu adresi ziyaret edebilirsiniz:[Aspose destek forumu](https://forum.aspose.com/c/words/8).
 
-### 5. SmartArt şekillerini programlı olarak değiştirebilir miyim?
+### 5. SmartArt şekillerini program aracılığıyla düzenleyebilir miyim?
 
- Evet, Aspose.Words, SmartArt şekillerini programlı olarak değiştirmenize olanak sağlar. Kontrol edin[dokümantasyon](https://reference.aspose.com/words/net/) ayrıntılı talimatlar için.
+ Evet, Aspose.Words SmartArt şekillerini programatik olarak düzenlemenize olanak tanır.[belgeleme](https://reference.aspose.com/words/net/) Ayrıntılı talimatlar için.

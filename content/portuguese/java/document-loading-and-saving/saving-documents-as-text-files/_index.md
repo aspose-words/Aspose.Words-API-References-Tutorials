@@ -1,26 +1,26 @@
 ---
-title: Salvando documentos como arquivos de texto em Aspose.Words para Java
+title: Salvando documentos como arquivos de texto no Aspose.Words para Java
 linktitle: Salvando documentos como arquivos de texto
 second_title: API de processamento de documentos Java Aspose.Words
-description: Aprenda como salvar documentos como arquivos de texto em Aspose.Words for Java. Siga nosso guia passo a passo com exemplos de código Java.
+description: Aprenda como salvar documentos como arquivos de texto no Aspose.Words para Java. Siga nosso guia passo a passo com exemplos de código Java.
 type: docs
 weight: 24
 url: /pt/java/document-loading-and-saving/saving-documents-as-text-files/
 ---
 
-## Introdução ao salvamento de documentos como arquivos de texto em Aspose.Words for Java
+## Introdução ao salvamento de documentos como arquivos de texto no Aspose.Words para Java
 
-Neste tutorial, exploraremos como salvar documentos como arquivos de texto usando a biblioteca Aspose.Words para Java. Aspose.Words é uma API Java poderosa para trabalhar com documentos do Word e oferece várias opções para salvar documentos em diferentes formatos, incluindo texto simples. Abordaremos as etapas para conseguir isso e forneceremos exemplos de código Java ao longo do caminho.
+Neste tutorial, exploraremos como salvar documentos como arquivos de texto usando a biblioteca Aspose.Words para Java. Aspose.Words é uma API Java poderosa para trabalhar com documentos do Word e fornece várias opções para salvar documentos em diferentes formatos, incluindo texto simples. Abordaremos as etapas para conseguir isso e forneceremos um código Java de exemplo ao longo do caminho.
 
 ## Pré-requisitos
 
-Antes de começarmos, certifique-se de ter os seguintes pré-requisitos em vigor:
+Antes de começar, certifique-se de que você tenha os seguintes pré-requisitos:
 
-- Java Development Kit (JDK) instalado em seu sistema.
--  Biblioteca Aspose.Words for Java integrada ao seu projeto. Você pode baixá-lo em[aqui](https://releases.aspose.com/words/java/).
+- Java Development Kit (JDK) instalado no seu sistema.
+-  Biblioteca Aspose.Words para Java integrada ao seu projeto. Você pode baixá-la em[aqui](https://releases.aspose.com/words/java/).
 - Conhecimento básico de programação Java.
 
-## Etapa 1: crie um documento
+## Etapa 1: Criar um documento
 
 Para salvar um documento como um arquivo de texto, primeiro precisamos criar um documento usando Aspose.Words. Aqui está um trecho de código Java simples para criar um documento com algum conteúdo:
 
@@ -35,11 +35,11 @@ builder.writeln("مرحبا بالعالم!");
 
 Neste código, criamos um novo documento e adicionamos algum texto a ele, incluindo texto em diferentes idiomas.
 
-## Etapa 2: definir opções para salvar texto
+## Etapa 2: Defina as opções de salvamento de texto
 
-A seguir, precisamos definir as opções de salvamento de texto que especificam como o documento deve ser salvo como um arquivo de texto. Podemos definir várias configurações, como adicionar marcas bidi, recuo de lista e muito mais. Vejamos dois exemplos:
+Em seguida, precisamos definir as opções de salvamento de texto que especificam como o documento deve ser salvo como um arquivo de texto. Podemos configurar várias configurações, como adicionar marcas bidi, recuo de lista e muito mais. Vejamos dois exemplos:
 
-### Exemplo 1: Adicionando Marcas Bidi
+### Exemplo 1: Adicionando marcas Bidi
 
 ```java
 TxtSaveOptions saveOptions = new TxtSaveOptions();
@@ -47,9 +47,9 @@ saveOptions.setAddBidiMarks(true);
 doc.save("output.txt", saveOptions);
 ```
 
- Neste exemplo, criamos um`TxtSaveOptions` objeto e definir o`AddBidiMarks`propriedade para`true` para incluir marcas bidi na saída de texto.
+ Neste exemplo, criamos um`TxtSaveOptions` objeto e definir o`AddBidiMarks`propriedade para`true` para incluir marcas bidirecionais na saída de texto.
 
-### Exemplo 2: Usando caractere de tabulação para recuo de lista
+### Exemplo 2: Usando o caractere Tab para recuo de lista
 
 ```java
 TxtSaveOptions saveOptions = new TxtSaveOptions();
@@ -58,19 +58,19 @@ saveOptions.getListIndentation().setCharacter('\t');
 doc.save("output.txt", saveOptions);
 ```
 
-Aqui, configuramos as opções de salvamento para usar um caractere de tabulação para recuo da lista com contagem de 1.
+Aqui, configuramos as opções de salvamento para usar um caractere de tabulação para recuo de lista com uma contagem de 1.
 
-## Etapa 3: salve o documento como texto
+## Etapa 3: Salve o documento como texto
 
-Agora que definimos as opções para salvar texto, podemos salvar o documento como um arquivo de texto. O código a seguir demonstra como fazer isso:
+Agora que definimos as opções de salvamento de texto, podemos salvar o documento como um arquivo de texto. O código a seguir demonstra como fazer isso:
 
 ```java
 doc.save("output.txt", saveOptions);
 ```
 
- Substituir`"output.txt"` com o caminho do arquivo desejado onde deseja salvar o arquivo de texto.
+ Substituir`"output.txt"` com o caminho do arquivo desejado onde você deseja salvar o arquivo de texto.
 
-## Código-fonte completo para salvar documentos como arquivos de texto em Aspose.Words para Java
+## Código fonte completo para salvar documentos como arquivos de texto no Aspose.Words para Java
 
 ```java
     public void addBidiMarks() throws Exception
@@ -122,11 +122,11 @@ doc.save("output.txt", saveOptions);
 
 ## Conclusão
 
-Neste tutorial, aprendemos como salvar documentos como arquivos de texto em Aspose.Words for Java. Abordamos as etapas para criar um documento, definir opções para salvar texto e salvar o documento em formato de texto. Aspose.Words oferece ampla flexibilidade quando se trata de salvar documentos, permitindo adaptar a saída às suas necessidades específicas.
+Neste tutorial, aprendemos como salvar documentos como arquivos de texto no Aspose.Words para Java. Cobrimos as etapas para criar um documento, definir opções de salvamento de texto e salvar o documento em formato de texto. O Aspose.Words fornece ampla flexibilidade quando se trata de salvar documentos, permitindo que você adapte a saída aos seus requisitos específicos.
 
 ## Perguntas frequentes
 
-### Como adiciono marcas bidi à saída de texto?
+### Como adiciono marcas bidirecionais à saída de texto?
 
  Para adicionar marcas bidi à saída de texto, defina o`AddBidiMarks` propriedade de`TxtSaveOptions` para`true`. Por exemplo:
 
@@ -145,14 +145,14 @@ saveOptions.getListIndentation().setCount(1);
 saveOptions.getListIndentation().setCharacter('\t');
 ```
 
-### O Aspose.Words for Java é adequado para lidar com texto multilíngue?
+### O Aspose.Words para Java é adequado para lidar com texto multilíngue?
 
-Sim, Aspose.Words for Java é adequado para lidar com texto multilíngue. Suporta vários idiomas e codificações de caracteres, tornando-o uma escolha versátil para trabalhar com documentos em diferentes idiomas.
+Sim, o Aspose.Words para Java é adequado para lidar com texto multilíngue. Ele suporta vários idiomas e codificações de caracteres, tornando-o uma escolha versátil para trabalhar com documentos em diferentes idiomas.
 
-### Como posso acessar mais documentação e recursos para Aspose.Words for Java?
+### Como posso acessar mais documentação e recursos do Aspose.Words para Java?
 
- Você pode encontrar documentação e recursos abrangentes para Aspose.Words for Java no site de documentação do Aspose:[Documentação Aspose.Words para Java](https://reference.aspose.com/words/java/).
+ Você pode encontrar documentação e recursos abrangentes para Aspose.Words para Java no site de documentação do Aspose:[Aspose.Words para documentação Java](https://reference.aspose.com/words/java/).
 
-### Onde posso baixar Aspose.Words para Java?
+### Onde posso baixar o Aspose.Words para Java?
 
- Você pode baixar a biblioteca Aspose.Words para Java no site da Aspose:[Baixe Aspose.Words para Java](https://releases.aspose.com/words/java/).
+ Você pode baixar a biblioteca Aspose.Words para Java no site da Aspose:[Baixar Aspose.Words para Java](https://releases.aspose.com/words/java/).

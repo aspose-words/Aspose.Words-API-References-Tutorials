@@ -1,6 +1,6 @@
 ---
-title: Ordbehandling med Docsaveoptions
-linktitle: Ordbehandling med Docsaveoptions
+title: Ordbehandling med DocSaveOptions
+linktitle: Ordbehandling med DocSaveOptions
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du anpassar sparalternativ för Word-dokument med Aspose.Words för .NET. Handledningarna leder dig genom de olika tillgängliga alternativen, såsom filformat, komprimering, lösenordsskydd.
 type: docs

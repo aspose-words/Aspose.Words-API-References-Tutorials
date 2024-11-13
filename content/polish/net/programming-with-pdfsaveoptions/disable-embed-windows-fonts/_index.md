@@ -1,7 +1,7 @@
 ---
 title: Zmniejsz rozmiar pliku PDF, wyłączając osadzone czcionki
 linktitle: Zmniejsz rozmiar pliku PDF, wyłączając osadzone czcionki
-second_title: Aspose.Words API do przetwarzania dokumentów
+second_title: Aspose.Words API przetwarzania dokumentów
 description: Zmniejsz rozmiar pliku PDF, wyłączając osadzone czcionki za pomocą Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby zoptymalizować dokumenty pod kątem wydajnego przechowywania i udostępniania.
 type: docs
 weight: 10
@@ -9,30 +9,30 @@ url: /pl/net/programming-with-pdfsaveoptions/disable-embed-windows-fonts/
 ---
 ## Wstęp
 
-Zmniejszenie rozmiaru plików PDF może mieć kluczowe znaczenie dla wydajnego przechowywania i szybkiego udostępniania. Skutecznym sposobem na osiągnięcie tego jest wyłączenie czcionek osadzonych, zwłaszcza gdy czcionki standardowe są już dostępne w większości systemów. W tym samouczku przyjrzymy się, jak zmniejszyć rozmiar pliku PDF, wyłączając osadzone czcionki za pomocą Aspose.Words dla .NET. Przeanalizujemy każdy krok, aby mieć pewność, że możesz łatwo wdrożyć to we własnych projektach.
+Zmniejszenie rozmiaru plików PDF może mieć kluczowe znaczenie dla wydajnego przechowywania i szybkiego udostępniania. Jednym ze skutecznych sposobów na to jest wyłączenie osadzonych czcionek, zwłaszcza gdy standardowe czcionki są już dostępne w większości systemów. W tym samouczku przyjrzymy się, jak zmniejszyć rozmiar pliku PDF, wyłączając osadzone czcionki za pomocą Aspose.Words dla .NET. Przeprowadzimy Cię przez każdy krok, aby upewnić się, że możesz łatwo wdrożyć to we własnych projektach.
 
-## Warunki wstępne
+## Wymagania wstępne
 
 Zanim zagłębisz się w kod, upewnij się, że masz następujące elementy:
 
--  Aspose.Words dla .NET: Jeśli jeszcze tego nie zrobiłeś, pobierz i zainstaluj go z[Pobierz link](https://releases.aspose.com/words/net/).
-- Środowisko programistyczne .NET: popularnym wyborem jest Visual Studio.
-- Przykładowy dokument programu Word: Przygotuj plik DOCX, który chcesz przekonwertować do formatu PDF.
+-  Aspose.Words dla .NET: Jeśli jeszcze tego nie zrobiłeś, pobierz i zainstaluj ze strony[Link do pobrania](https://releases.aspose.com/words/net/).
+- Środowisko programistyczne .NET: popularnym wyborem jest program Visual Studio.
+- Przykładowy dokument Word: Przygotuj plik DOCX, który chcesz przekonwertować na format PDF.
 
 ## Importuj przestrzenie nazw
 
-Aby rozpocząć, upewnij się, że do projektu zaimportowano niezbędne przestrzenie nazw. Dzięki temu mamy dostęp do klas i metod wymaganych do wykonania naszego zadania.
+Aby rozpocząć, upewnij się, że masz niezbędne przestrzenie nazw zaimportowane do swojego projektu. Dzięki temu uzyskasz dostęp do klas i metod wymaganych do naszego zadania.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Podzielmy proces na proste, łatwe do wykonania etapy. Każdy krok poprowadzi Cię przez zadanie, upewniając się, że rozumiesz, co się dzieje w każdym momencie.
+Podzielmy proces na proste, łatwe do opanowania kroki. Każdy krok poprowadzi Cię przez zadanie, zapewniając, że rozumiesz, co dzieje się w każdym punkcie.
 
-## Krok 1: Zainicjuj dokument
+## Krok 1: Zainicjuj swój dokument
 
-Najpierw musimy załadować dokument Word, który chcesz przekonwertować na plik PDF. Tutaj zaczyna się Twoja podróż.
+Najpierw musimy załadować dokument Word, który chcesz przekonwertować na PDF. Tutaj zaczyna się Twoja podróż.
 
 ```csharp
 // Ścieżka do katalogu dokumentów.
@@ -40,11 +40,11 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Tutaj,`dataDir` jest symbolem zastępczym katalogu, w którym znajduje się dokument. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką.
+ Tutaj,`dataDir` jest symbolem zastępczym dla katalogu, w którym znajduje się Twój dokument. Zastąp`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką.
 
-## Krok 2: Skonfiguruj opcje zapisywania plików PDF
+## Krok 2: Skonfiguruj opcje zapisywania pliku PDF
 
-Następnie skonfigurujemy opcje zapisywania plików PDF. W tym miejscu określamy, że nie chcemy osadzać standardowych czcionek systemu Windows.
+Następnie skonfigurujemy opcje zapisu PDF. Tutaj określamy, że nie chcemy osadzać standardowych czcionek Windows.
 
 ```csharp
 // Wyjściowy plik PDF zostanie zapisany bez osadzania standardowych czcionek systemu Windows.
@@ -54,35 +54,35 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- Ustawiając`FontEmbeddingMode` Do`EmbedNone`, instruujemy Aspose.Words, aby nie umieszczał tych czcionek w pliku PDF, co zmniejszy rozmiar pliku.
+ Poprzez ustawienie`FontEmbeddingMode` Do`EmbedNone`, polecamy Aspose.Words, aby nie uwzględniał tych czcionek w pliku PDF, co zmniejszy rozmiar pliku.
 
-## Krok 3: Zapisz dokument w formacie PDF
+## Krok 3: Zapisz dokument jako PDF
 
-Na koniec zapisujemy dokument jako plik PDF, korzystając ze skonfigurowanych opcji zapisywania. To jest moment prawdy, w którym Twój DOCX przekształca się w kompaktowy plik PDF.
+Na koniec zapisujemy dokument jako PDF, korzystając z skonfigurowanych opcji zapisu. To jest moment prawdy, w którym Twój DOCX przekształca się w kompaktowy PDF.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DisableEmbedWindowsFonts.pdf", saveOptions);
 ```
 
- Zastępować`"YOUR DOCUMENT DIRECTORY"` ponownie z rzeczywistą ścieżką katalogu. Wyjściowy plik PDF zostanie teraz zapisany w określonym katalogu bez osadzonych standardowych czcionek.
+ Zastępować`"YOUR DOCUMENT DIRECTORY"` z Twoją rzeczywistą ścieżką katalogu jeszcze raz. Wyjściowy plik PDF zostanie teraz zapisany w określonym katalogu bez osadzonych standardowych czcionek.
 
 ## Wniosek
 
-Wykonując poniższe kroki, możesz znacznie zmniejszyć rozmiar plików PDF. Wyłączenie osadzonych czcionek to prosty, ale skuteczny sposób na uczynienie dokumentów lżejszymi i łatwiejszymi do udostępniania. Aspose.Words dla .NET sprawia, że proces ten przebiega bezproblemowo, zapewniając optymalizację plików przy minimalnym wysiłku.
+Wykonując te kroki, możesz znacznie zmniejszyć rozmiar plików PDF. Wyłączenie osadzonych czcionek to prosty, ale skuteczny sposób na uczynienie dokumentów lżejszymi i łatwiejszymi do udostępniania. Aspose.Words dla .NET sprawia, że proces ten jest bezproblemowy, zapewniając optymalizację plików przy minimalnym wysiłku.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
 ### Dlaczego powinienem wyłączyć osadzone czcionki w pliku PDF?
-Wyłączenie osadzonych czcionek może znacznie zmniejszyć rozmiar pliku PDF, zwiększając efektywność jego przechowywania i szybsze udostępnianie.
+Wyłączenie osadzonych czcionek może znacznie zmniejszyć rozmiar pliku PDF, dzięki czemu będzie on bardziej wydajny w przechowywaniu i szybszy w udostępnianiu.
 
-### Czy plik PDF będzie nadal wyświetlany poprawnie bez osadzonych czcionek?
-Tak, o ile czcionki są standardowe i dostępne w systemie, w którym przeglądany jest plik PDF, będzie on wyświetlany poprawnie.
+### Czy plik PDF będzie wyświetlał się prawidłowo bez osadzonych czcionek?
+Tak, jeśli czcionki są standardowe i dostępne w systemie, w którym przeglądasz plik PDF, będzie on wyświetlany prawidłowo.
 
-### Czy mogę selektywnie osadzać tylko określone czcionki w pliku PDF?
-Tak, Aspose.Words dla .NET pozwala dostosować, które czcionki są osadzone, zapewniając elastyczność w zmniejszaniu rozmiaru pliku.
+### Czy mogę osadzać w pliku PDF tylko wybrane czcionki?
+Tak, Aspose.Words dla .NET pozwala na dostosowanie osadzonych czcionek, zapewniając elastyczność w zmniejszaniu rozmiaru pliku.
 
-### Czy potrzebuję Aspose.Words dla .NET, aby wyłączyć osadzone czcionki w plikach PDF?
-Tak, Aspose.Words dla .NET zapewnia funkcjonalność potrzebną do konfiguracji opcji osadzania czcionek w plikach PDF.
+### Czy potrzebuję Aspose.Words for .NET, aby wyłączyć osadzone czcionki w plikach PDF?
+Tak, Aspose.Words for .NET zapewnia funkcjonalność potrzebną do konfigurowania opcji osadzania czcionek w plikach PDF.
 
-### Jak uzyskać pomoc, jeśli napotkam problemy?
- Możesz odwiedzić[Forum wsparcia](https://forum.aspose.com/c/words/8) o pomoc w rozwiązaniu wszelkich napotkanych problemów.
+### Gdzie mogę uzyskać pomoc, jeśli napotkam problemy?
+ Możesz odwiedzić[Forum wsparcia](https://forum.aspose.com/c/words/8) aby uzyskać pomoc w rozwiązaniu jakichkolwiek problemów.

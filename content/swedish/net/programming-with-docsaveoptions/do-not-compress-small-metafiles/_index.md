@@ -94,7 +94,7 @@ Ja, Aspose.Words för .NET låter dig konfigurera sparaalternativ för olika fil
 
 ### Behöver jag en licens för att använda Aspose.Words för .NET?
 
- Även om du kan använda Aspose.Words för .NET utan licens för utvärdering, krävs en licens för att låsa upp alla funktioner. Du kan få en licens[här](https://purchase.aspose.com/buy)eller använd en[tillfällig licens](https://purchase.aspose.com/temporary-license/) för utvärdering.
+ Även om du kan använda Aspose.Words för .NET utan licens för utvärdering, krävs en licens för att låsa upp alla funktioner. Du kan få en licens[här](https://purchase.aspose.com/buy) eller använd en[tillfällig licens](https://purchase.aspose.com/temporary-license/) för utvärdering.
 
 ### Hur kan jag säkerställa att mina dokument överensstämmer med PDF/A-standarder?
 

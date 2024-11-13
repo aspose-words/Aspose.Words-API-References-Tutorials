@@ -2,26 +2,26 @@
 title: İç İçe Alanlar Ekle
 linktitle: İç İçe Alanlar Ekle
 second_title: Aspose.Words Belge İşleme API'si
-description: Adım adım kılavuzumuzla Aspose.Words for .NET kullanarak Word belgelerine yuvalanmış alanları nasıl ekleyeceğinizi öğrenin. Belge oluşturmayı otomatikleştirmek isteyen geliştiriciler için mükemmeldir.
+description: Aspose.Words for .NET'i kullanarak Word belgelerine iç içe alanların nasıl ekleneceğini adım adım kılavuzumuzla öğrenin. Belge oluşturmayı otomatikleştirmek isteyen geliştiriciler için mükemmeldir.
 type: docs
 weight: 10
 url: /tr/net/working-with-fields/insert-nested-fields/
 ---
 ## giriiş
 
-Hiç Word belgelerinize programlı olarak iç içe geçmiş alanlar eklemeye ihtiyaç duyduğunuzu fark ettiniz mi? Belki sayfa numarasına göre farklı metinleri koşullu olarak görüntülemek istersiniz? Şanslısın! Bu eğitim, Aspose.Words for .NET'i kullanarak iç içe alanlar ekleme sürecinde size rehberlik edecektir. Hadi dalalım!
+Word belgelerinize programatik olarak iç içe alanlar eklemeniz gerektiğini hiç fark ettiniz mi? Belki de sayfa numarasına göre farklı metinleri koşullu olarak görüntülemek istiyorsunuz? Şanslısınız! Bu eğitim, .NET için Aspose.Words kullanarak iç içe alanlar ekleme sürecinde size rehberlik edecektir. Hadi başlayalım!
 
-## Önkoşullar
+## Ön koşullar
 
 Başlamadan önce ihtiyacınız olacak birkaç şey var:
 
-1.  Aspose.Words for .NET: Aspose.Words for .NET kitaplığına sahip olduğunuzdan emin olun. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Aspose.Words for .NET kütüphanesine sahip olduğunuzdan emin olun. Bunu şu adresten indirebilirsiniz:[Burada](https://releases.aspose.com/words/net/).
 2. Geliştirme Ortamı: Visual Studio benzeri bir IDE.
-3. Temel C# Bilgisi: C# programlama dilinin anlaşılması.
+3. C# Temel Bilgisi: C# programlama dilinin anlaşılması.
 
 ## Ad Alanlarını İçe Aktar
 
-Öncelikle projenize gerekli ad alanlarını içe aktardığınızdan emin olun. Bu ad alanları Aspose.Words ile etkileşime geçmek için ihtiyaç duyacağınız sınıfları içerir.
+Öncelikle projenize gerekli ad alanlarını içe aktardığınızdan emin olun. Bu ad alanları Aspose.Words ile etkileşime girmeniz gereken sınıfları içerir.
 
 ```csharp
 using Aspose.Words;
@@ -29,12 +29,12 @@ using Aspose.Words.Fields;
 using Aspose.Words.HeaderFooter;
 ```
 
-## 1. Adım: Belgeyi Başlatın
+## Adım 1: Belgeyi Başlatın
 
-İlk adım, yeni bir belge ve DocumentBuilder nesnesi oluşturmaktır. DocumentBuilder sınıfı, Word belgelerinin oluşturulmasına ve değiştirilmesine yardımcı olur.
+İlk adım yeni bir belge ve bir DocumentBuilder nesnesi oluşturmaktır. DocumentBuilder sınıfı Word belgelerini oluşturmada ve değiştirmede yardımcı olur.
 
 ```csharp
-// Belgeler dizininin yolu.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
 // Belgeyi ve DocumentBuilder'ı oluşturun.
@@ -42,9 +42,9 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Adım 2: Sayfa Sonlarını Ekle
+## Adım 2: Sayfa Sonları Ekle
 
-Daha sonra belgeye birkaç sayfa sonu ekleyeceğiz. Bu, iç içe geçmiş alanları etkili bir şekilde göstermemize olanak sağlayacaktır.
+Sonra, belgeye birkaç sayfa sonu ekleyeceğiz. Bu, iç içe geçmiş alanları etkili bir şekilde göstermemize olanak tanıyacaktır.
 
 ```csharp
 // Sayfa sonları ekleyin.
@@ -54,21 +54,21 @@ for (int i = 0; i < 5; i++)
 }
 ```
 
-## 3. Adım: Alt Bilgiye Taşı
+## Adım 3: Alt Bilgiye Geçin
 
-Sayfa sonlarını ekledikten sonra belgenin altbilgisine gitmemiz gerekiyor. Burası iç içe alanımızı ekleyeceğimiz yer.
+Sayfa sonlarını ekledikten sonra, belgenin altbilgisine geçmemiz gerekiyor. İç içe geçmiş alanımızı buraya ekleyeceğiz.
 
 ```csharp
-// Altbilgiye git.
+// Alt bilgiye git.
 builder.MoveToHeaderFooter(HeaderFooterType.FooterPrimary);
 ```
 
 ## Adım 4: İç İçe Alan Ekle
 
-Şimdi iç içe alanı ekleyelim. Geçerli sayfa numarasına göre metni koşullu olarak görüntülemek için IF alanını kullanacağız.
+Şimdi, iç içe geçmiş alanı ekleyelim. IF alanını, geçerli sayfa numarasına göre metni koşullu olarak görüntülemek için kullanacağız.
 
 ```csharp
-// İç içe alan ekleyin.
+// İç içe alan ekle.
 Field field = builder.InsertField(@"IF ");
 builder.MoveTo(field.Separator);
 builder.InsertField("PAGE");
@@ -77,9 +77,9 @@ builder.InsertField("NUMPAGES");
 builder.Write(" \"See next page\" \"Last page\" ");
 ```
 
-Bu adımda öncelikle IF alanını ekliyoruz, ayırıcısına geçiyoruz ve ardından PAGE ve NUMPAGES alanlarını ekliyoruz. IF alanı, geçerli sayfa numarasının (PAGE) toplam sayfa sayısına (NUMPAGES) eşit olup olmadığını kontrol eder. Doğruysa “Sonraki sayfaya bakın”, aksi takdirde “Son sayfa” görüntülenir.
+Bu adımda, önce IF alanını ekliyoruz, ayırıcısına geçiyoruz ve sonra PAGE ve NUMPAGES alanlarını ekliyoruz. IF alanı, geçerli sayfa numarasının (PAGE) toplam sayfa sayısına (NUMPAGES) eşit olup olmadığını kontrol eder. True ise, “Sonraki sayfaya bak”ı, aksi takdirde “Last page”ı görüntüler.
 
-## 5. Adım: Alanı Güncelleyin
+## Adım 5: Alanı Güncelleyin
 
 Son olarak, doğru metni gösterdiğinden emin olmak için alanı güncelliyoruz.
 
@@ -90,7 +90,7 @@ field.Update();
 
 ## Adım 6: Belgeyi Kaydedin
 
-Son adım, belgeyi belirttiğiniz dizine kaydetmektir.
+Son adım belgeyi belirttiğiniz dizine kaydetmektir.
 
 ```csharp
 doc.Save(dataDir + "InsertNestedFields.docx");
@@ -98,21 +98,21 @@ doc.Save(dataDir + "InsertNestedFields.docx");
 
 ## Çözüm
 
-Ve işte karşınızda! Aspose.Words for .NET'i kullanarak iç içe geçmiş alanları bir Word belgesine başarıyla eklediniz. Bu güçlü kitaplık, Word belgelerini programlı olarak yönetmeyi inanılmaz derecede kolaylaştırır. İster rapor oluşturuyor olun, ister şablon oluşturuyor olun, ister belge iş akışlarını otomatikleştiriyor olun, Aspose.Words yanınızdadır.
+İşte karşınızda! Aspose.Words for .NET kullanarak bir Word belgesine iç içe geçmiş alanları başarıyla eklediniz. Bu güçlü kütüphane, Word belgelerini programatik olarak yönetmeyi inanılmaz derecede kolaylaştırır. İster raporlar üretiyor, ister şablonlar oluşturuyor veya belge iş akışlarını otomatikleştiriyor olun, Aspose.Words sizin için her şeyi yapar.
 
-## SSS'ler
+## SSS
 
 ### Word belgelerinde iç içe alan nedir?
-Yuvalanmış alan, içinde başka alanlar içeren bir alandır. Belgelerde daha karmaşık ve koşullu içeriğe izin verir.
+İç içe geçmiş alan, içinde başka alanlar barındıran bir alandır. Belgelerde daha karmaşık ve koşullu içeriklere olanak tanır.
 
-### IF alanı içindeki diğer alanları kullanabilir miyim?
-Evet, dinamik içerik oluşturmak için IF alanının içine DATE, TIME ve AUTHOR gibi çeşitli alanları iç içe yerleştirebilirsiniz.
+### IF alanı içerisinde başka alanlar kullanabilir miyim?
+Evet, dinamik içerik oluşturmak için TARİH, SAAT ve YAZAR gibi çeşitli alanları IF alanının içine yerleştirebilirsiniz.
 
 ### Aspose.Words for .NET ücretsiz mi?
- Aspose.Words for .NET ticari bir kütüphanedir, ancak[ücretsiz deneme](https://releases.aspose.com/) denemek için.
+ Aspose.Words for .NET ticari bir kütüphanedir, ancak bir tane edinebilirsiniz[ücretsiz deneme](https://releases.aspose.com/) denemek için.
 
 ### Aspose.Words'ü diğer .NET dilleriyle kullanabilir miyim?
-Evet, Aspose.Words, VB.NET ve F# dahil tüm .NET dillerini destekler.
+Evet, Aspose.Words VB.NET ve F# dahil tüm .NET dillerini destekler.
 
-### Aspose.Words for .NET hakkında daha fazla belgeyi nerede bulabilirim?
- Ayrıntılı belgeleri bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).
+### Aspose.Words for .NET hakkında daha fazla dokümanı nerede bulabilirim?
+ Ayrıntılı dokümanları bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).

@@ -1,28 +1,28 @@
 ---
-title: Yeni İmza Satırı Oluşturma ve İmzalama
-linktitle: Yeni İmza Satırı Oluşturma ve İmzalama
+title: Yeni İmza Hattı Oluşturma ve İmzalama
+linktitle: Yeni İmza Hattı Oluşturma ve İmzalama
 second_title: Aspose.Words Belge İşleme API'si
-description: Bu adım adım eğitimle Aspose.Words for .NET kullanarak bir Word belgesinde nasıl imza satırı oluşturulacağını ve dijital olarak imzalanacağını öğrenin. Belge otomasyonu için mükemmeldir.
+description: Bu adım adım eğitimle Aspose.Words for .NET kullanarak bir Word belgesinde imza satırının nasıl oluşturulacağını ve dijital olarak imzalanacağını öğrenin. Belge otomasyonu için mükemmeldir.
 type: docs
 weight: 10
 url: /tr/net/programming-with-digital-signatures/creating-and-signing-new-signature-line/
 ---
 ## giriiş
 
-Selam! Yani bir Word belgeniz var ve bir imza satırı eklemeniz ve ardından onu dijital olarak imzalamanız gerekiyor. Zor görünüyor mu? Hiç de bile! Aspose.Words for .NET sayesinde bunu yalnızca birkaç satır kodla sorunsuz bir şekilde başarabilirsiniz. Bu eğitimde, ortamınızı ayarlamaktan belgenizi yeni ve parlak bir imzayla kaydetmeye kadar tüm süreç boyunca size yol göstereceğiz. Hazır? Hadi dalalım!
+Merhaba! Bir Word belgeniz var ve bir imza satırı eklemeniz ve ardından dijital olarak imzalamanız gerekiyor. Kulağa zor geliyor mu? Hiç de değil! .NET için Aspose.Words sayesinde bunu yalnızca birkaç satır kodla sorunsuz bir şekilde başarabilirsiniz. Bu eğitimde, ortamınızı kurmaktan belgenizi yepyeni bir imzayla kaydetmeye kadar tüm süreci size anlatacağız. Hazır mısınız? Hadi başlayalım!
 
-## Önkoşullar
+## Ön koşullar
 
 Koda geçmeden önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
-1.  Aspose.Words for .NET - Yapabilirsin[buradan indir](https://releases.aspose.com/words/net/).
-2. .NET Geliştirme Ortamı - Visual Studio önemle tavsiye edilir.
-3. İmzalanacak Belge - Basit bir Word belgesi oluşturun veya mevcut bir belgeyi kullanın.
-4.  Sertifika Dosyası - Bu, dijital imzalar için gereklidir. Bir kullanabilirsiniz`.pfx` dosya.
-5. İmza Satırı Görselleri - İsteğe bağlı olarak imza için bir görsel dosyası.
+1.  Aspose.Words for .NET - Şunları yapabilirsiniz[buradan indirin](https://releases.aspose.com/words/net/).
+2. .NET Geliştirme Ortamı - Visual Studio şiddetle tavsiye edilir.
+3. İmzalanacak Bir Belge - Basit bir Word belgesi oluşturun veya mevcut bir belgeyi kullanın.
+4.  Bir Sertifika Dosyası - Bu, dijital imzalar için gereklidir. Bir`.pfx` dosya.
+5. İmza Satırı İçin Görseller - İsteğe bağlı olarak imza için bir görsel dosyası.
 
 ## Ad Alanlarını İçe Aktar
 
-Öncelikle gerekli ad alanlarını içe aktarmamız gerekiyor. Bu adım, Aspose.Words işlevlerinin kullanılmasına yönelik ortamı oluşturduğu için çok önemlidir.
+Öncelikle gerekli ad alanlarını içe aktarmamız gerekiyor. Bu adım, Aspose.Words işlevlerini kullanmak için ortamı ayarladığı için önemlidir.
 
 ```csharp
 using System;
@@ -35,7 +35,7 @@ using Aspose.Words.Signing;
 
 ## Adım 1: Belge Dizinini Ayarlama
 
-Her projenin iyi bir başlangıca ihtiyacı vardır. Belge dizininizin yolunu ayarlayalım. Burası belgelerinizin kaydedileceği ve alınacağı yerdir.
+Her projenin iyi bir başlangıca ihtiyacı vardır. Belge dizininize giden yolu ayarlayalım. Belgelerinizin kaydedileceği ve alınacağı yer burasıdır.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -52,15 +52,15 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Adım 3: İmza Satırını Ekleme
 
- Sihrin gerçekleştiği yer burasıdır. Kullanarak belgemize bir imza satırı ekliyoruz.`DocumentBuilder` sınıf.
+ İşte sihir burada gerçekleşir. Belgemize bir imza satırı ekleriz.`DocumentBuilder` sınıf.
 
 ```csharp
 SignatureLine signatureLine = builder.InsertSignatureLine(new SignatureLineOptions()).SignatureLine;
 ```
 
-## Adım 4: Belgeyi İmza Satırıyla Kaydetme
+## Adım 4: İmza Satırıyla Belgeyi Kaydetme
 
-İmza satırı yerleştirildikten sonra belgeyi kaydetmemiz gerekiyor. Bu, imzalamaya geçmeden önce bir ara adımdır.
+İmza satırı yerleştirildiğinde, belgeyi kaydetmemiz gerekir. Bu, imzalamaya geçmeden önceki ara bir adımdır.
 
 ```csharp
 doc.Save(dataDir + "SignDocuments.SignatureLine.docx");
@@ -68,7 +68,7 @@ doc.Save(dataDir + "SignDocuments.SignatureLine.docx");
 
 ## Adım 5: İmzalama Seçeneklerini Ayarlama
 
-Şimdi belgeyi imzalama seçeneklerini ayarlayalım. Bu, imza satırı kimliğinin ve kullanılacak görüntünün belirtilmesini içerir.
+Şimdi, belgeyi imzalamak için seçenekleri ayarlayalım. Bu, imza satırı kimliğini ve kullanılacak resmi belirtmeyi içerir.
 
 ```csharp
 SignOptions signOptions = new SignOptions
@@ -78,17 +78,17 @@ SignOptions signOptions = new SignOptions
 };
 ```
 
-## Adım 6: Sertifikayı Yükleme
+## Adım 6: Sertifikanın Yüklenmesi
 
-Dijital imzalar bir sertifika gerektirir. Burada belgeyi imzalamak için kullanılacak sertifika dosyasını yüklüyoruz.
+Dijital imzalar bir sertifika gerektirir. Burada, belgeyi imzalamak için kullanılacak sertifika dosyasını yüklüyoruz.
 
 ```csharp
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-## Adım 7: Belgeyi İmzalama
+## Adım 7: Belgenin İmzalanması
 
- Bu son adımdır. biz kullanıyoruz`DigitalSignatureUtil`belgeyi imzalamak için sınıf. İmzalanan belge yeni bir adla kaydedilir.
+ Bu son adımdır. Şunu kullanırız:`DigitalSignatureUtil`Belgeyi imzalamak için sınıf. İmzalanan belge yeni bir adla kaydedilir.
 
 ```csharp
 DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
@@ -97,21 +97,21 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
 
 ## Çözüm
 
-Ve işte karşınızda! Bu adımlarla başarılı bir şekilde yeni bir Word belgesi oluşturdunuz, bir imza satırı eklediniz ve onu Aspose.Words for .NET kullanarak dijital olarak imzaladınız. Belge otomasyonunu çocuk oyuncağı haline getiren güçlü bir araçtır. İster sözleşmelerle, anlaşmalarla ister herhangi bir resmi belgeyle ilgileniyor olun, bu yöntem bunların güvenli bir şekilde imzalanmasını ve doğrulanmasını sağlar.
+İşte karşınızda! Bu adımlarla, yeni bir Word belgesini başarıyla oluşturdunuz, bir imza satırı eklediniz ve Aspose.Words for .NET kullanarak dijital olarak imzaladınız. Belge otomasyonunu kolaylaştıran güçlü bir araçtır. Sözleşmeler, anlaşmalar veya herhangi bir resmi belgeyle uğraşıyor olun, bu yöntem bunların güvenli bir şekilde imzalanmasını ve doğrulanmasını sağlar.
 
-## SSS'ler
+## SSS
 
-### İmza satırı için başka resim formatlarını kullanabilir miyim?
-Evet, PNG, JPG, BMP vb. gibi çeşitli resim formatlarını kullanabilirsiniz.
+### İmza satırında başka resim formatları kullanabilir miyim?
+Evet, PNG, JPG, BMP gibi çeşitli resim formatlarını kullanabilirsiniz.
 
-###  Kullanmak gerekli mi?`.pfx` file for the certificate?
- Evet, bir`.pfx` dosyası, sertifikalar ve özel anahtarlar dahil olmak üzere kriptografik bilgileri depolamak için yaygın bir formattır.
+###  Birini kullanmak gerekli mi?`.pfx` file for the certificate?
+ Evet, bir`.pfx` Dosya, sertifikalar ve özel anahtarlar da dahil olmak üzere kriptografik bilgileri depolamak için kullanılan yaygın bir formattır.
 
 ### Tek bir belgeye birden fazla imza satırı ekleyebilir miyim?
 Kesinlikle! Her imza için ekleme adımını tekrarlayarak birden fazla imza satırı ekleyebilirsiniz.
 
 ### Dijital sertifikam yoksa ne olur?
-Güvenilir bir sertifika yetkilisinden dijital sertifika almanız veya OpenSSL gibi araçları kullanarak bir sertifika oluşturmanız gerekir.
+Güvenilir bir sertifika kuruluşundan dijital sertifika almanız veya OpenSSL gibi araçları kullanarak bir sertifika oluşturmanız gerekecektir.
 
 ### Belgedeki dijital imzayı nasıl doğrularım?
-İmzalı belgeyi Word'de açabilir ve imzanın gerçekliğini ve bütünlüğünü doğrulamak için imza ayrıntılarına gidebilirsiniz.
+İmzalanmış belgeyi Word'de açıp imza ayrıntılarına giderek imzanın gerçekliğini ve bütünlüğünü doğrulayabilirsiniz.

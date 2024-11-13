@@ -43,7 +43,7 @@ Mielőtt belevágnánk a kódba, győződjünk meg arról, hogy projektünk megf
 2.  Új projekt létrehozása: Navigáljon ide`File > New > Project` . Válassza ki`Console App (.NET Core)` vagy bármely más releváns projekttípus.
 3.  Nevezze el projektjét: Adjon értelmes nevet a projektjének, valami ilyesmit`AsposeWordsExportExample`.
 
-## Az Aspose.Words hozzáadása
+## Aspose.Words hozzáadása
 
 1.  NuGet-csomagok kezelése: Kattintson a jobb gombbal a projektre a Solution Explorerben, és válassza a lehetőséget`Manage NuGet Packages`.
 2.  Aspose.Words keresése: A NuGet Package Managerben keressen rá`Aspose.Words`.
@@ -112,7 +112,7 @@ doc.Save(dataDir + "ExportedDocument.html", saveOptions);
 
 ### Exportálhatok más típusú űrlapmezőket ugyanezzel a módszerrel?
 
- Igen, exportálhat más típusú űrlapmezőket is, ha beállítja a különböző tulajdonságait`HtmlSaveOptions` osztály.
+ Igen, más típusú űrlapmezőket is exportálhat a különböző tulajdonságainak konfigurálásával`HtmlSaveOptions` osztály.
 
 ### Mi van, ha a dokumentumom képeket tartalmaz?
 

@@ -2,7 +2,7 @@
 title: Szövegfeldolgozás fejlécekkel és láblécekkel
 linktitle: Szövegfeldolgozás fejlécekkel és láblécekkel
 second_title: Aspose.Words Document Processing API
-description: Ismerje meg, hogyan dolgozhat fejlécekkel és láblécekkel Word dokumentumokban az Aspose.Words for .NET használatával. Teljes oktatóanyagok és gyakorlati példák.
+description: Ismerje meg, hogyan dolgozhat fejlécekkel és láblécekkel Word-dokumentumokban az Aspose.Words for .NET használatával. Teljes oktatóanyagok és gyakorlati példák.
 type: docs
 weight: 730
 url: /hu/net/working-with-headers-and-footers/

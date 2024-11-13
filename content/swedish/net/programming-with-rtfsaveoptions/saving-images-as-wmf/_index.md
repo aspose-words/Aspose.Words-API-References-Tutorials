@@ -9,7 +9,7 @@ url: /sv/net/programming-with-rtfsaveoptions/saving-images-as-wmf/
 ---
 ## Introduktion
 
-Hej där, andra utvecklare! Har du någonsin undrat hur du kan spara bilder som WMF (Windows Metafile) i dina Word-dokument med Aspose.Words för .NET? Nåväl, du är på rätt plats! I den här handledningen kommer vi att dyka in i Aspose.Words-världen för .NET och utforska hur man sparar bilder som WMF. Det är väldigt praktiskt för att bevara bildkvaliteten och säkerställa kompatibilitet mellan olika plattformar. Redo? Låt oss komma igång!
+Hej där, andra utvecklare! Har du någonsin undrat hur du kan spara bilder som WMF (Windows Metafile) i dina Word-dokument med Aspose.Words för .NET? Tja, du är på rätt plats! I den här handledningen kommer vi att dyka in i Aspose.Words-världen för .NET och utforska hur man sparar bilder som WMF. Det är väldigt praktiskt för att bevara bildkvaliteten och säkerställa kompatibilitet mellan olika plattformar. Redo? Låt oss komma igång!
 
 ## Förutsättningar
 

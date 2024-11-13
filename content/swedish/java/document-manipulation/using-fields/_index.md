@@ -111,7 +111,7 @@ Villkorliga fält i Aspose.Words för Java låter dig skapa dynamiska dokument g
 
 ### Var kan jag hitta mer dokumentation och resurser för Aspose.Words för Java?
 
- Du kan hitta omfattande dokumentation, kodexempel och handledning för Aspose.Words för Java på Asposes webbplats:[Aspose.Words för Java-dokumentation](https://reference.aspose.com/words/java/). Den här resursen hjälper dig att utforska ytterligare funktioner och funktioner i biblioteket.
+ Du kan hitta omfattande dokumentation, kodexempel och handledning för Aspose.Words för Java på Asposes webbplats:[Aspose.Words för Java-dokumentation](https://reference.aspose.com/words/java/)Den här resursen hjälper dig att utforska ytterligare funktioner och funktioner i biblioteket.
 
 ### Hur kan jag få support eller söka hjälp med Aspose.Words för Java?
 

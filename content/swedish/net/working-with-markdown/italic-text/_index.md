@@ -38,7 +38,7 @@ Dessa namnrymder ger tillgång till de klasser och metoder som krävs för att m
 
 ## Steg 1: Skapa en DocumentBuilder
 
- De`DocumentBuilder` klass hjälper dig att lägga till och formatera innehåll i dokumentet. Genom att skapa en`DocumentBuilder` objekt, ställer du in ett verktyg för att infoga och manipulera text.
+De`DocumentBuilder` klass hjälper dig att lägga till och formatera innehåll i dokumentet. Genom att skapa en`DocumentBuilder` objekt, ställer du in ett verktyg för att infoga och manipulera text.
 
 ```csharp
 // Skapa en DocumentBuilder-instans för att arbeta med dokumentet.

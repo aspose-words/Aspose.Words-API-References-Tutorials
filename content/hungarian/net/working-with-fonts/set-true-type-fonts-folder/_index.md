@@ -82,7 +82,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetTrueTypeFontsFolder.pdf");
 ## GYIK
 
 ### Használhatok több betűtípus mappát?
- Igen, kombinálással több betűtípusmappát is használhat`FontSettings.GetFontSources`és`FontSettings.SetFontSources`.
+ Igen, kombinálással több betűtípusmappát is használhat`FontSettings.GetFontSources` és`FontSettings.SetFontSources`.
 
 ### Mi a teendő, ha a megadott betűtípus mappa nem létezik?
 Ha a megadott betűtípusmappa nem létezik, az Aspose.Words nem fogja tudni megtalálni a betűtípusokat, és helyette az alapértelmezett rendszer-betűtípusokat fogja használni.

@@ -127,4 +127,4 @@ Teljesen! Az Aspose.Words for .NET lehetővé teszi a dokumentumelemek széles s
 
 ### Hol találok további dokumentációt az Aspose.Words for .NET-ről?
 
- A részletes dokumentáció elérhető[itt](https://reference.aspose.com/words/net/).
+ részletes dokumentáció elérhető[itt](https://reference.aspose.com/words/net/).

@@ -1,5 +1,5 @@
 ---
-title: Lägg till innehåll med Documentbuilder
+title: Lägg till innehåll med DocumentBuilder
 linktitle: Lägg till innehåll med Documentbuilder
 second_title: Aspose.Words Document Processing API
 description: Lär dig hur du lägger till innehåll i dina Word-dokument med DocumentBuilder med Aspose.Words för .NET. Praktiska handledningar med detaljerade kodexempel.
@@ -25,7 +25,7 @@ Lägga till innehåll med DocumentBuilder är en omfattande resurs som leder dig
 | [Infoga HTML i Word-dokument](./insert-html/) | Lär dig hur du sömlöst infogar HTML i Word-dokument med Aspose.Words för .NET med vår detaljerade, steg-för-steg handledning. Perfekt för utvecklare. |
 | [Infoga hyperlänk i Word-dokument](./insert-hyperlink/) | Lär dig hur du infogar hyperlänkar i Word-dokument med Aspose.Words för .NET med vår steg-för-steg-guide. Perfekt för att automatisera dina dokumentskapande uppgifter. |
 | [Infoga innehållsförteckning i Word-dokument](./insert-table-of-contents/) | Lär dig hur du infogar en innehållsförteckning i Word med Aspose.Words för .NET. Följ vår steg-för-steg-guide för sömlös dokumentnavigering. |
-| [Infoga inline bild i Word-dokument](./insert-inline-image/) | Lär dig hur du infogar inline-bilder i Word-dokument med Aspose.Words för .NET. Steg-för-steg-guide med kodexempel och vanliga frågor och svar. |
+| [Infoga inbyggd bild i Word-dokument](./insert-inline-image/) | Lär dig hur du infogar inline-bilder i Word-dokument med Aspose.Words för .NET. Steg-för-steg-guide med kodexempel och vanliga frågor och svar. |
 | [Infoga flytande bild i Word-dokument](./insert-floating-image/) | Lär dig hur du infogar en flytande bild i ett Word-dokument med Aspose.Words för .NET med denna detaljerade steg-för-steg-guide. Perfekt för att förbättra dina dokument. |
 | [Infoga stycke i Word-dokument](./insert-paragraph/) | Lär dig hur du infogar stycken i Word-dokument med Aspose.Words för .NET. Följ vår detaljerade handledning för sömlös dokumenthantering. |
 | [Infoga TCField i Word-dokument](./insert-tcfield/) | Lär dig hur du infogar ett TC-fält i ett Word-dokument med Aspose.Words för .NET. Följ vår steg-för-steg-guide för sömlös dokumentautomatisering. |

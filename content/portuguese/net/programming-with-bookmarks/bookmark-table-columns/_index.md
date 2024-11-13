@@ -1,27 +1,27 @@
 ---
-title: Marcar colunas da tabela em um documento do Word
-linktitle: Marcar colunas da tabela em um documento do Word
+title: Marcar colunas de tabela em documento do Word
+linktitle: Marcar colunas de tabela em documento do Word
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como marcar colunas de tabela em um documento do Word usando Aspose.Words for .NET com este tutorial passo a passo abrangente.
+description: Aprenda como marcar colunas de tabela em um documento do Word usando o Aspose.Words para .NET com este tutorial abrangente passo a passo.
 type: docs
 weight: 10
 url: /pt/net/programming-with-bookmarks/bookmark-table-columns/
 ---
 ## Introdução
 
-Se você deseja aprimorar suas habilidades de automação de documentos, então você terá uma surpresa. Este tutorial irá guiá-lo através do processo de marcação de colunas de tabela em um documento do Word usando Aspose.Words for .NET. Pronto para mergulhar? Vamos começar!
+Se você está procurando aprimorar suas habilidades de automação de documentos, então você está em uma surpresa. Este tutorial irá guiá-lo através do processo de marcação de colunas de tabela em um documento do Word usando o Aspose.Words para .NET. Pronto para mergulhar? Vamos começar!
 
 ## Pré-requisitos
 
-Antes de entrarmos no código, há algumas coisas que você precisa ter em mente:
+Antes de começarmos a usar o código, há algumas coisas que você precisa ter em mente:
 
-1.  Aspose.Words for .NET: Certifique-se de ter o Aspose.Words for .NET instalado. Você pode baixá-lo[aqui](https://releases.aspose.com/words/net/).
+1.  Aspose.Words para .NET: Certifique-se de ter o Aspose.Words para .NET instalado. Você pode baixá-lo[aqui](https://releases.aspose.com/words/net/).
 2. Ambiente de desenvolvimento: configure um ambiente de desenvolvimento como o Visual Studio.
-3. Conhecimento básico de C#: Familiaridade com programação C# será útil.
+3. Conhecimento básico de C#: familiaridade com programação em C# será útil.
 
 ## Importar namespaces
 
-Para começar, você precisará importar os namespaces necessários em seu projeto C#:
+Para começar, você precisará importar os namespaces necessários no seu projeto C#:
 
 ```csharp
 using System;
@@ -33,32 +33,32 @@ Agora, vamos dividir o processo em etapas detalhadas.
 
 ## Etapa 1: inicializar o documento e o DocumentBuilder
 
- Primeiro, precisamos criar um novo documento Word e inicializar o`DocumentBuilder` para trabalhar com isso.
+ Primeiro, precisamos criar um novo documento do Word e inicializá-lo`DocumentBuilder` para trabalhar com isso.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Etapa 2: inicie a tabela e insira a primeira célula
+## Etapa 2: Inicie a tabela e insira a primeira célula
 
-Comece criando uma tabela e insira a primeira célula onde iniciaremos o marcador.
+Comece criando uma tabela e insira a primeira célula onde começaremos o marcador.
 
 ```csharp
 builder.StartTable();
 builder.InsertCell();
 ```
 
-## Etapa 3: inicie o marcador
+## Etapa 3: Inicie o marcador
 
-A seguir, iniciamos o marcador denominado "MyBookmark" na primeira célula.
+Em seguida, iniciamos o marcador chamado "MyBookmark" na primeira célula.
 
 ```csharp
 builder.StartBookmark("MyBookmark");
 builder.Write("This is row 1 cell 1");
 ```
 
-## Etapa 4: insira células adicionais e finalize a linha
+## Etapa 4: Insira células adicionais e finalize a linha
 
 Adicione outra célula à primeira linha e complete a primeira linha.
 
@@ -68,7 +68,7 @@ builder.Write("This is row 1 cell 2");
 builder.EndRow();
 ```
 
-## Etapa 5: inserir células para a segunda linha
+## Etapa 5: Insira células para a segunda linha
 
 Continue adicionando células para a segunda linha.
 
@@ -81,17 +81,17 @@ builder.EndRow();
 builder.EndTable();
 ```
 
-## Etapa 6: encerrar o marcador
+## Etapa 6: Finalize o marcador
 
-Finalize o marcador após terminar a tabela.
+Termine o marcador depois de terminar a tabela.
 
 ```csharp
 builder.EndBookmark("MyBookmark");
 ```
 
-## Etapa 7: iterar por meio de marcadores e exibir informações
+## Etapa 7: iterar pelos favoritos e exibir informações
 
-Por fim, percorra os marcadores do documento e exiba informações sobre cada um deles.
+Por fim, percorra os marcadores no documento e exiba informações sobre cada um.
 
 ```csharp
 foreach (Bookmark bookmark in doc.Range.Bookmarks)
@@ -107,21 +107,21 @@ foreach (Bookmark bookmark in doc.Range.Bookmarks)
 
 ## Conclusão
 
-E aí está! Você marcou com êxito colunas de tabela em um documento do Word usando Aspose.Words for .NET. Este processo não só ajuda na organização do seu documento, mas também facilita a navegação e manipulação de seções específicas. Os marcadores são um recurso poderoso que pode aprimorar significativamente seus recursos de gerenciamento de documentos.
+E aí está! Você marcou com sucesso colunas de tabela em um documento do Word usando o Aspose.Words para .NET. Esse processo não só ajuda a organizar seu documento, mas também facilita a navegação e a manipulação de seções específicas. Marcar é um recurso poderoso que pode melhorar significativamente seus recursos de gerenciamento de documentos.
 
 ## Perguntas frequentes
 
 ### O que é Aspose.Words para .NET?
-Aspose.Words for .NET é uma biblioteca poderosa para trabalhar programaticamente com documentos do Word. Ele permite criar, modificar e converter documentos sem precisar do Microsoft Word instalado.
+Aspose.Words for .NET é uma biblioteca poderosa para trabalhar com documentos do Word programaticamente. Ela permite que você crie, modifique e converta documentos sem precisar instalar o Microsoft Word.
 
 ### Como instalo o Aspose.Words para .NET?
- Você pode baixar Aspose.Words para .NET em[site](https://releases.aspose.com/words/net/). Siga as instruções de instalação fornecidas.
+ Você pode baixar o Aspose.Words para .NET no[site](https://releases.aspose.com/words/net/). Siga as instruções de instalação fornecidas.
 
-### Posso usar Aspose.Words for .NET com outras linguagens de programação?
-Sim, Aspose.Words for .NET pode ser usado com qualquer linguagem compatível com .NET, incluindo C#, VB.NET e F#.
+### Posso usar o Aspose.Words para .NET com outras linguagens de programação?
+Sim, o Aspose.Words para .NET pode ser usado com qualquer linguagem compatível com .NET, incluindo C#, VB.NET e F#.
 
-### Como posso obter suporte para Aspose.Words for .NET?
- Você pode obter suporte da comunidade Aspose e de especialistas visitando o[fórum de suporte](https://forum.aspose.com/c/words/8).
+### Como posso obter suporte para o Aspose.Words para .NET?
+ Você pode obter suporte da comunidade e especialistas da Aspose visitando o[fórum de suporte](https://forum.aspose.com/c/words/8).
 
-### Existe uma versão de teste do Aspose.Words for .NET disponível?
- Sim, você pode obter um teste gratuito em[aqui](https://releases.aspose.com/).
+### Existe uma versão de teste do Aspose.Words para .NET disponível?
+ Sim, você pode obter uma avaliação gratuita em[aqui](https://releases.aspose.com/).

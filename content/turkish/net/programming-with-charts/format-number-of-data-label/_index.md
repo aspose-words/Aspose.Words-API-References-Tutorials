@@ -1,30 +1,30 @@
 ---
-title: Grafikteki Veri Etiketi Sayısını Biçimlendir
-linktitle: Grafikteki Veri Etiketi Sayısını Biçimlendir
+title: Bir Grafikteki Veri Etiketinin Biçim Numarası
+linktitle: Bir Grafikteki Veri Etiketinin Biçim Numarası
 second_title: Aspose.Words Belge İşleme API'si
-description: Bu adım adım kılavuzla Aspose.Words for .NET kullanarak grafiklerdeki veri etiketlerini nasıl formatlayacağınızı öğrenin. Word belgelerinizi zahmetsizce geliştirin.
+description: Bu adım adım kılavuzla Aspose.Words for .NET kullanarak grafiklerdeki veri etiketlerini nasıl biçimlendireceğinizi öğrenin. Word belgelerinizi zahmetsizce geliştirin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-charts/format-number-of-data-label/
 ---
 ## giriiş
 
-İlgi çekici ve bilgilendirici belgeler oluşturmak genellikle iyi biçimlendirilmiş veri etiketlerine sahip grafiklerin eklenmesini içerir. Word belgelerinizi gelişmiş grafiklerle geliştirmek isteyen bir .NET geliştiricisiyseniz, Aspose.Words for .NET bunu başarmanıza yardımcı olacak muhteşem bir kütüphanedir. Bu eğitim, Aspose.Words for .NET kullanarak bir grafikteki sayı etiketlerini biçimlendirme sürecinde size adım adım yol gösterecektir.
+İlgi çekici ve bilgilendirici belgeler oluşturmak genellikle iyi biçimlendirilmiş veri etiketlerine sahip grafikler eklemeyi içerir. Word belgelerinizi gelişmiş grafiklerle geliştirmek isteyen bir .NET geliştiricisiyseniz, Aspose.Words for .NET bunu başarmanıza yardımcı olacak harika bir kütüphanedir. Bu eğitim, Aspose.Words for .NET kullanarak bir grafikteki sayı etiketlerini biçimlendirme sürecini adım adım anlatacaktır.
 
-## Önkoşullar
+## Ön koşullar
 
-Koda dalmadan önce yerine getirmeniz gereken birkaç önkoşul vardır:
+Koda dalmadan önce, yerine getirmeniz gereken birkaç ön koşul vardır:
 
--  Aspose.Words for .NET: Aspose.Words for .NET kütüphanesinin kurulu olduğundan emin olun. Henüz yüklemediyseniz, yapabilirsiniz[buradan indir](https://releases.aspose.com/words/net/).
-- Geliştirme Ortamı: Bir .NET geliştirme ortamı kurmuş olmalısınız. Visual Studio şiddetle tavsiye edilir.
-- Temel C# Bilgisi: Bu eğitim C# kodunu yazmayı ve anlamayı içerdiğinden, C# programlamaya aşinalık önemlidir.
+-  Aspose.Words for .NET: Aspose.Words for .NET kütüphanesinin yüklü olduğundan emin olun. Henüz yüklemediyseniz,[buradan indirin](https://releases.aspose.com/words/net/).
+- Geliştirme Ortamı: .NET geliştirme ortamını kurmuş olmanız gerekir. Visual Studio şiddetle tavsiye edilir.
+- Temel C# Bilgisi: Bu eğitim C# kodunu yazmayı ve anlamayı içerdiğinden, C# programlamaya aşinalık şarttır.
 -  Geçici Lisans: Aspose.Words'ü herhangi bir sınırlama olmaksızın kullanmak için,[geçici lisans](https://purchase.aspose.com/temporary-license/).
 
-Şimdi bir grafikteki sayı etiketlerini biçimlendirmenin adım adım sürecine dalalım.
+Şimdi, bir grafikteki sayı etiketlerinin biçimlendirilmesinin adım adım sürecine bakalım.
 
 ## Ad Alanlarını İçe Aktar
 
-Öncelikle Aspose.Words for .NET ile çalışmak için gerekli ad alanlarını içe aktarmamız gerekiyor. C# dosyanızın en üstüne aşağıdaki satırları ekleyin:
+İlk önce, Aspose.Words for .NET ile çalışmak için gerekli ad alanlarını içe aktarmamız gerekiyor. C# dosyanızın en üstüne aşağıdaki satırları ekleyin:
 
 ```csharp
 using Aspose.Words;
@@ -32,28 +32,28 @@ using Aspose.Words.Drawing;
 using Aspose.Words.Drawing.Charts;
 ```
 
-## 1. Adım: Belge Dizininizi Kurun
+## Adım 1: Belge Dizininizi Ayarlayın
 
-Word belgenizi düzenlemeye başlamadan önce belgenizin kaydedileceği dizini belirtmeniz gerekir. Bu daha sonra kaydetme işlemi için gereklidir.
+Word belgenizi düzenlemeye başlamadan önce, belgenizin kaydedileceği dizini belirtmeniz gerekir. Bu, daha sonraki kaydetme işlemi için önemlidir.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belge dizininizin gerçek yolu ile.
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belge dizininize giden gerçek yol ile.
 
-## Adım 2: Document'ı ve DocumentBuilder'ı başlatın
+## Adım 2: Belgeyi ve Belge Oluşturucuyu Başlatın
 
- Bir sonraki adım yeni bir başlangıç başlatmaktır`Document` ve bir`DocumentBuilder` .`DocumentBuilder` belge içeriğini oluşturmamızı sağlayan yardımcı sınıftır.
+ Bir sonraki adım yeni bir tane başlatmaktır`Document` ve bir`DocumentBuilder` .`DocumentBuilder` Belgenin içeriğini oluşturmamızı sağlayan yardımcı bir sınıftır.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 3. Adım: Belgeye Grafik Ekleme
+## Adım 3: Belgeye Bir Grafik Ekleyin
 
- Şimdi belgeye şunu kullanarak bir grafik ekleyelim:`DocumentBuilder`. Bu eğitimde örnek olarak Çizgi grafiği kullanacağız.
+ Şimdi, belgeye bir grafik ekleyelim`DocumentBuilder`Bu eğitimde örnek olarak bir Çizgi grafiği kullanacağız.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
@@ -61,25 +61,25 @@ Chart chart = shape.Chart;
 chart.Title.Text = "Data Labels With Different Number Format";
 ```
 
-Burada belirli genişlik ve yüksekliğe sahip bir Çizgi grafiği ekliyoruz ve grafiğin başlığını belirliyoruz.
+Burada belirli bir genişlik ve yüksekliğe sahip bir Çizgi grafiği ekliyoruz ve grafik başlığını ayarlıyoruz.
 
-## Adım 4: Varsayılan Seriyi Temizleyin ve Yeni Seriyi Ekleyin
+## Adım 4: Varsayılan Seriyi Temizle ve Yeni Seri Ekle
 
-Varsayılan olarak grafikte önceden oluşturulmuş bazı seriler bulunur. Bunları temizleyip belirli veri noktalarına sahip kendi serilerimizi eklememiz gerekiyor.
+Varsayılan olarak, grafikte önceden oluşturulmuş bazı seriler olacaktır. Bunları temizlememiz ve belirli veri noktalarıyla kendi serimizi eklememiz gerekir.
 
 ```csharp
-// Varsayılan oluşturulan seriyi silin.
+// Varsayılan olarak oluşturulan seriyi sil.
 chart.Series.Clear();
 
-// Özel veri noktalarına sahip yeni seriler ekleyin.
+// Özel veri noktalarıyla yeni seriler ekleyin.
 ChartSeries series1 = chart.Series.Add("Aspose Series 1", 
 	new string[] { "Category 1", "Category 2", "Category 3" }, 
 	new double[] { 2.5, 1.5, 3.5 });
 ```
 
-## 5. Adım: Veri Etiketlerini Etkinleştirin
+## Adım 5: Veri Etiketlerini Etkinleştir
 
-Veri etiketlerini grafikte görüntülemek için bunları serimiz için etkinleştirmemiz gerekir.
+Veri etiketlerini grafikte görüntüleyebilmek için, bunları serimiz için etkinleştirmemiz gerekir.
 
 ```csharp
 series1.HasDataLabels = true;
@@ -88,15 +88,15 @@ series1.DataLabels.ShowValue = true;
 
 ## Adım 6: Veri Etiketlerini Biçimlendirin
 
-Bu eğitimin özü veri etiketlerinin biçimlendirilmesidir. Her veri etiketine ayrı ayrı farklı sayı formatları uygulayabiliyoruz.
+Bu eğitimin özü veri etiketlerini biçimlendirmektir. Her veri etiketine ayrı ayrı farklı sayı biçimleri uygulayabiliriz.
 
 ```csharp
 series1.DataLabels[0].NumberFormat.FormatCode = "\"$\"#,##0.00"; // Para birimi biçimi
-series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy"; // Tarih formatı
-series1.DataLabels[2].NumberFormat.FormatCode = "0.00%"; // Yüzde biçimi
+series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy"; // Tarih biçimi
+series1.DataLabels[2].NumberFormat.FormatCode = "0.00%"; // Yüzde formatı
 ```
 
- Ek olarak, bir veri etiketinin biçimini bir kaynak hücreye bağlayabilirsiniz. Bağlandığında,`NumberFormat` genel olarak sıfırlanacak ve kaynak hücreden devralınacak.
+ Ayrıca, bir veri etiketinin biçimini bir kaynak hücreye bağlayabilirsiniz. Bağlandığında,`NumberFormat` genel olarak sıfırlanacak ve kaynak hücreden devralınacaktır.
 
 ```csharp
 series1.DataLabels[2].NumberFormat.IsLinkedToSource = true;
@@ -114,21 +114,21 @@ Bu, belgenizi belirtilen adla kaydeder ve biçimlendirilmiş veri etiketlerine s
 
 ## Çözüm
 
-Aspose.Words for .NET kullanarak bir grafikteki veri etiketlerini biçimlendirmek, Word belgelerinizin okunabilirliğini ve profesyonelliğini büyük ölçüde artırabilir. Bu adım adım kılavuzu izleyerek artık bir grafik oluşturabilir, veri serileri ekleyebilir ve veri etiketlerini ihtiyaçlarınızı karşılayacak şekilde biçimlendirebilirsiniz. Aspose.Words for .NET, Word belgelerinin kapsamlı şekilde kişiselleştirilmesine ve otomasyonuna olanak tanıyan güçlü bir araçtır ve bu da onu .NET geliştiricileri için paha biçilmez bir varlık haline getirir.
+Aspose.Words for .NET kullanarak bir grafikteki veri etiketlerini biçimlendirmek, Word belgelerinizin okunabilirliğini ve profesyonelliğini büyük ölçüde artırabilir. Bu adım adım kılavuzu izleyerek artık bir grafik oluşturabilir, veri serileri ekleyebilir ve veri etiketlerini ihtiyaçlarınızı karşılayacak şekilde biçimlendirebilirsiniz. Aspose.Words for .NET, Word belgelerinin kapsamlı bir şekilde özelleştirilmesine ve otomasyonuna olanak tanıyan güçlü bir araçtır ve bu da onu .NET geliştiricileri için paha biçilmez bir varlık haline getirir.
 
-## SSS'ler
+## SSS
 
 ### Aspose.Words for .NET nedir?
-Aspose.Words for .NET, Word belgelerini C# kullanarak programlı bir şekilde oluşturmak, değiştirmek ve dönüştürmek için kullanılan güçlü bir kütüphanedir.
+Aspose.Words for .NET, C# kullanarak Word belgelerini programlı olarak oluşturmak, düzenlemek ve dönüştürmek için güçlü bir kütüphanedir.
 
-### Aspose.Words for .NET ile diğer grafik türlerini formatlayabilir miyim?
-Evet, Aspose.Words for .NET çubuk, sütun, pasta ve daha fazlasını içeren çeşitli grafik türlerini destekler.
+### Aspose.Words for .NET ile diğer grafik türlerini biçimlendirebilir miyim?
+Evet, Aspose.Words for .NET çubuk, sütun, pasta ve daha fazlası dahil olmak üzere çeşitli grafik türlerini destekler.
 
-### Aspose.Words for .NET için nasıl geçici lisans alabilirim?
- Geçici lisans alabilirsiniz[Burada](https://purchase.aspose.com/temporary-license/).
+### Aspose.Words for .NET için geçici lisansı nasıl alabilirim?
+Geçici bir lisans alabilirsiniz[Burada](https://purchase.aspose.com/temporary-license/).
 
-### Veri etiketlerini Excel'deki kaynak hücrelere bağlamak mümkün mü?
-Evet, veri etiketlerini kaynak hücrelere bağlayarak sayı biçiminin kaynak hücreden devralınmasına olanak tanıyabilirsiniz.
+### Excel'de veri etiketlerini kaynak hücrelere bağlamak mümkün müdür?
+Evet, veri etiketlerini kaynak hücrelere bağlayabilir, böylece sayı biçiminin kaynak hücreden alınmasına olanak sağlayabilirsiniz.
 
-### Aspose.Words for .NET için daha ayrıntılı belgeleri nerede bulabilirim?
- Kapsamlı belgeler bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).
+### Aspose.Words for .NET için daha detaylı dokümanları nerede bulabilirim?
+ Kapsamlı dokümanları bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).

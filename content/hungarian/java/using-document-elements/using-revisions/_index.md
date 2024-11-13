@@ -91,7 +91,7 @@ Paragraph para = body.getFirstParagraph();
 para.appendChild(new Run(doc, "Paragraph 1. "));
 body.appendParagraph("Paragraph 2. ");
 body.appendParagraph("Paragraph 3. ");
-//Három paragrafusunk van, amelyek közül egyiket sem vették nyilvántartásba bármilyen típusú revízióként
+// Három paragrafusunk van, amelyek közül egyiket sem vették nyilvántartásba bármilyen típusú revízióként
 // Ha a revíziók nyomon követése közben bármilyen tartalmat hozzáadunk/eltávolítunk a dokumentumból,
 // ilyen formában jelennek meg a dokumentumban, és elfogadhatók/elutasíthatók.
 doc.startTrackRevisions("John Doe", new Date());
@@ -112,7 +112,7 @@ doc.acceptAllRevisions();
 Assert.assertEquals(3, paragraphs.getCount());
 Assert.assertEquals(para.getRuns().getCount(), 0); //volt.Üres
 // A revíziók követésének leállításával ez a szöveg normál szövegként jelenik meg.
-// A revíziókat a rendszer nem veszi figyelembe a dokumentum megváltoztatásakor.
+// revíziókat a rendszer nem veszi figyelembe a dokumentum megváltoztatásakor.
 doc.stopTrackRevisions();
 // Mentse el a dokumentumot.
 doc.save(outPath + "WorkingWithRevisions.AcceptRevisions.docx");
@@ -135,7 +135,7 @@ Igen, az Aspose.Words for Java segítségével nyomon követheti a meglévő Wor
 
 ### 4. Vannak-e licenckövetelmények az Aspose.Words for Java használatához?
 
- Igen, licencet kell szereznie az Aspose.Words for Java használatához projektjeiben. Tudod[itt szerezheti be a licencet](https://purchase.aspose.com/buy).
+ Igen, licencet kell szereznie az Aspose.Words for Java használatához projektjeiben. Megteheti[itt szerezheti be a licencet](https://purchase.aspose.com/buy).
 
 ### 5. Hol találok támogatást az Aspose.Words for Java számára?
 

@@ -9,20 +9,20 @@ url: /id/net/programming-with-charts/date-time-values-to-axis/
 ---
 ## Perkenalan
 
-Membuat bagan dalam dokumen bisa menjadi cara ampuh untuk memvisualisasikan data. Saat menangani data deret waktu, menambahkan nilai tanggal dan waktu ke sumbu bagan sangat penting untuk kejelasan. Dalam tutorial ini, kami akan memandu Anda melalui proses menambahkan nilai tanggal dan waktu ke sumbu bagan menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah ini akan membantu Anda menyiapkan lingkungan, menulis kode, dan memahami setiap bagian proses. Ayo selami!
+Membuat bagan dalam dokumen dapat menjadi cara yang ampuh untuk memvisualisasikan data. Saat menangani data deret waktu, menambahkan nilai tanggal dan waktu ke sumbu bagan sangat penting untuk kejelasan. Dalam tutorial ini, kami akan memandu Anda melalui proses menambahkan nilai tanggal dan waktu ke sumbu bagan menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah ini akan membantu Anda menyiapkan lingkungan, menulis kode, dan memahami setiap bagian dari proses. Mari kita mulai!
 
 ## Prasyarat
 
-Sebelum kita mulai, pastikan Anda memiliki prasyarat berikut:
+Sebelum kita memulai, pastikan Anda memiliki prasyarat berikut:
 
-1. Visual Studio atau .NET IDE apa pun: Anda memerlukan lingkungan pengembangan untuk menulis dan menjalankan kode .NET Anda.
-2.  Aspose.Words untuk .NET: Anda harus menginstal perpustakaan Aspose.Words untuk .NET. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+1. Visual Studio atau IDE .NET apa pun: Anda memerlukan lingkungan pengembangan untuk menulis dan menjalankan kode .NET Anda.
+2.  Aspose.Words untuk .NET: Anda harus menginstal pustaka Aspose.Words untuk .NET. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
 3. Pengetahuan dasar C#: Tutorial ini mengasumsikan Anda memiliki pemahaman dasar tentang pemrograman C#.
 4.  Lisensi Aspose yang valid: Anda dapat memperoleh lisensi sementara dari[Di Sini](https://purchase.aspose.com/temporary-license/).
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Untuk memulai, pastikan Anda telah mengimpor namespace yang diperlukan ke proyek Anda. Langkah ini penting untuk mengakses kelas dan metode Aspose.Words.
+Untuk memulai, pastikan Anda telah mengimpor namespace yang diperlukan ke dalam proyek Anda. Langkah ini penting untuk mengakses kelas dan metode Aspose.Words.
 
 ```csharp
 using System;
@@ -33,7 +33,7 @@ using Aspose.Words.Drawing.Charts;
 
 ## Langkah 1: Siapkan Direktori Dokumen Anda
 
-Pertama, Anda perlu menentukan direktori tempat dokumen Anda akan disimpan. Ini penting untuk mengatur file Anda dan memastikan kode Anda berjalan dengan benar.
+Pertama, Anda perlu menentukan direktori tempat dokumen Anda akan disimpan. Hal ini penting untuk mengatur berkas-berkas Anda dan memastikan kode Anda berjalan dengan benar.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Langkah 2: Buat Dokumen Baru dan DocumentBuilder
 
- Selanjutnya, buat instance baru dari`Document` kelas dan a`DocumentBuilder` obyek. Objek-objek ini akan membantu Anda membangun dan memanipulasi dokumen Anda.
+ Selanjutnya, buat instance baru dari`Document` kelas dan a`DocumentBuilder` objek. Objek-objek ini akan membantu Anda membuat dan memanipulasi dokumen Anda.
 
 ```csharp
 Document doc = new Document();
@@ -50,7 +50,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Langkah 3: Masukkan Bagan ke dalam Dokumen
 
- Sekarang, masukkan bagan ke dalam dokumen Anda menggunakan`DocumentBuilder` obyek. Dalam contoh ini, kami menggunakan bagan kolom, namun Anda juga dapat memilih tipe lainnya.
+ Sekarang, masukkan bagan ke dalam dokumen Anda menggunakan`DocumentBuilder` objek. Dalam contoh ini, kami menggunakan bagan kolom, tetapi Anda juga dapat memilih jenis lain.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
@@ -59,7 +59,7 @@ Chart chart = shape.Chart;
 
 ## Langkah 4: Hapus Seri yang Ada
 
-Hapus semua rangkaian yang ada di bagan untuk memastikan Anda memulai dengan lembaran kosong. Langkah ini penting untuk data khusus.
+Hapus semua seri yang ada dalam bagan untuk memastikan Anda memulai dengan lembar kosong. Langkah ini penting untuk data kustom.
 
 ```csharp
 chart.Series.Clear();
@@ -67,7 +67,7 @@ chart.Series.Clear();
 
 ## Langkah 5: Tambahkan Nilai Tanggal dan Waktu ke Seri
 
-Tambahkan nilai tanggal dan waktu Anda ke rangkaian bagan. Langkah ini melibatkan pembuatan array untuk tanggal dan nilai terkait.
+Tambahkan nilai tanggal dan waktu ke rangkaian bagan. Langkah ini melibatkan pembuatan array untuk tanggal dan nilai terkait.
 
 ```csharp
 chart.Series.Add("Aspose Series 1",
@@ -81,7 +81,7 @@ chart.Series.Add("Aspose Series 1",
 
 ## Langkah 6: Konfigurasikan Sumbu X
 
-Atur skala dan tanda centang untuk sumbu X. Ini memastikan tanggal Anda ditampilkan dengan benar dan pada interval yang sesuai.
+Atur skala dan tanda centang untuk sumbu X. Ini memastikan tanggal Anda ditampilkan dengan benar dan pada interval yang tepat.
 
 ```csharp
 ChartAxis xAxis = chart.AxisX;
@@ -95,7 +95,7 @@ xAxis.MinorTickMark = AxisTickMark.Outside;
 
 ## Langkah 7: Simpan Dokumen
 
-Terakhir, simpan dokumen Anda ke direktori yang ditentukan. Langkah ini mengakhiri prosesnya, dan dokumen Anda sekarang harus berisi bagan dengan nilai tanggal dan waktu pada sumbu X.
+Terakhir, simpan dokumen Anda ke direktori yang ditentukan. Langkah ini mengakhiri proses, dan dokumen Anda sekarang akan berisi bagan dengan nilai tanggal dan waktu pada sumbu X.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
@@ -103,26 +103,26 @@ doc.Save(dataDir + "WorkingWithCharts.DateTimeValuesToAxis.docx");
 
 ## Kesimpulan
 
-Menambahkan nilai tanggal dan waktu ke sumbu bagan dalam dokumen adalah proses yang mudah dengan Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah yang diuraikan dalam tutorial ini, Anda dapat membuat bagan yang jelas dan informatif yang secara efektif memvisualisasikan data deret waktu. Baik Anda menyiapkan laporan, presentasi, atau dokumen apa pun yang memerlukan representasi data terperinci, Aspose.Words menyediakan alat yang Anda butuhkan untuk berhasil.
+Menambahkan nilai tanggal dan waktu ke sumbu bagan dalam dokumen merupakan proses yang mudah dengan Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah yang diuraikan dalam tutorial ini, Anda dapat membuat bagan yang jelas dan informatif yang memvisualisasikan data deret waktu secara efektif. Baik Anda sedang mempersiapkan laporan, presentasi, atau dokumen apa pun yang memerlukan representasi data terperinci, Aspose.Words menyediakan alat yang Anda butuhkan untuk berhasil.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
-### Bisakah saya menggunakan tipe bagan lain dengan Aspose.Words untuk .NET?
+### Bisakah saya menggunakan jenis bagan lain dengan Aspose.Words untuk .NET?
 
-Ya, Aspose.Words mendukung berbagai jenis bagan, termasuk garis, batang, pai, dan lainnya.
+Ya, Aspose.Words mendukung berbagai jenis bagan, termasuk garis, batang, pai, dan banyak lagi.
 
-### Bagaimana cara menyesuaikan tampilan bagan saya?
+### Bagaimana saya dapat menyesuaikan tampilan grafik saya?
 
-Anda dapat menyesuaikan tampilan dengan mengakses properti bagan dan mengatur gaya, warna, dan lainnya.
+Anda dapat menyesuaikan tampilan dengan mengakses properti bagan dan mengatur gaya, warna, dan banyak lagi.
 
-### Apakah mungkin untuk menambahkan beberapa rangkaian ke bagan?
+### Apakah mungkin untuk menambahkan beberapa seri ke bagan?
 
- Sangat! Anda dapat menambahkan beberapa rangkaian ke bagan Anda dengan memanggil`Series.Add` metode beberapa kali dengan data yang berbeda.
+ Tentu saja! Anda dapat menambahkan beberapa seri ke bagan Anda dengan memanggil`Series.Add` metode beberapa kali dengan data yang berbeda.
 
 ### Bagaimana jika saya perlu memperbarui data grafik secara dinamis?
 
 Anda dapat memperbarui data bagan secara dinamis dengan memanipulasi properti seri dan sumbu secara terprogram berdasarkan kebutuhan Anda.
 
-### Di mana saya dapat menemukan dokumentasi lebih rinci untuk Aspose.Words untuk .NET?
+### Di mana saya dapat menemukan dokumentasi yang lebih rinci untuk Aspose.Words untuk .NET?
 
- Anda dapat menemukan dokumentasi yang lebih detail[Di Sini](https://reference.aspose.com/words/net/).
+ Anda dapat menemukan dokumentasi yang lebih rinci[Di Sini](https://reference.aspose.com/words/net/).

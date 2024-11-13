@@ -2,7 +2,7 @@
 title: Menggabungkan Dokumen dengan DocumentBuilder
 linktitle: Menggabungkan Dokumen dengan DocumentBuilder
 second_title: API Pemrosesan Dokumen Java Aspose.Words
-description: Pelajari cara memanipulasi dokumen Word dengan Aspose.Words untuk Java. Membuat, mengedit, menggabungkan, dan mengonversi dokumen secara terprogram di Java.
+description: Pelajari cara memanipulasi dokumen Word dengan Aspose.Words untuk Java. Buat, edit, gabungkan, dan konversi dokumen secara terprogram dalam Java.
 type: docs
 weight: 13
 url: /id/java/document-merging/merging-documents-documentbuilder/
@@ -10,23 +10,23 @@ url: /id/java/document-merging/merging-documents-documentbuilder/
 
 ## Pengantar Penggabungan Dokumen dengan DocumentBuilder
 
-Dalam dunia pemrosesan dokumen, Aspose.Words for Java berdiri sebagai alat yang ampuh untuk memanipulasi dan mengelola dokumen. Salah satu fitur utamanya adalah kemampuan untuk menggabungkan dokumen secara mulus menggunakan DocumentBuilder. Dalam panduan langkah demi langkah ini, kita akan mempelajari cara mencapai hal ini dengan contoh kode, memastikan bahwa Anda dapat memanfaatkan kemampuan ini untuk meningkatkan alur kerja manajemen dokumen Anda.
+Dalam dunia pemrosesan dokumen, Aspose.Words untuk Java merupakan alat yang ampuh untuk memanipulasi dan mengelola dokumen. Salah satu fitur utamanya adalah kemampuan untuk menggabungkan dokumen dengan mudah menggunakan DocumentBuilder. Dalam panduan langkah demi langkah ini, kami akan membahas cara mencapainya dengan contoh kode, memastikan bahwa Anda dapat memanfaatkan kemampuan ini untuk meningkatkan alur kerja manajemen dokumen Anda.
 
 ## Prasyarat
 
-Sebelum mendalami proses penggabungan dokumen, pastikan Anda memiliki prasyarat berikut:
+Sebelum memulai proses penggabungan dokumen, pastikan Anda memiliki prasyarat berikut:
 
 - Lingkungan Pengembangan Java Terpasang
-- Aspose.Words untuk Perpustakaan Java
+- Aspose.Words untuk Pustaka Java
 - Pengetahuan dasar tentang pemrograman Java
 
 ## Memulai
 
- Mari kita mulai dengan membuat proyek Java baru dan menambahkan perpustakaan Aspose.Words ke dalamnya. Anda dapat mengunduh perpustakaan dari[Di Sini](https://releases.aspose.com/words/java/).
+ Mari kita mulai dengan membuat proyek Java baru dan menambahkan pustaka Aspose.Words ke dalamnya. Anda dapat mengunduh pustaka tersebut dari[Di Sini](https://releases.aspose.com/words/java/).
 
 ## Membuat Dokumen Baru
 
-Untuk menggabungkan dokumen, kita perlu membuat dokumen baru tempat kita akan menyisipkan konten kita. Inilah cara Anda melakukannya:
+Untuk menggabungkan dokumen, kita perlu membuat dokumen baru tempat kita akan memasukkan konten. Berikut cara melakukannya:
 
 ```java
 // Inisialisasi objek Dokumen
@@ -36,9 +36,9 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Penggabungan Dokumen
+## Menggabungkan Dokumen
 
-Sekarang, katakanlah kita memiliki dua dokumen yang ingin kita gabungkan. Kami akan memuat dokumen-dokumen ini dan kemudian menambahkan konten ke dokumen yang baru kami buat menggunakan DocumentBuilder.
+Sekarang, anggaplah kita memiliki dua dokumen yang ingin kita gabungkan. Kita akan memuat dokumen-dokumen ini lalu menambahkan konten ke dokumen yang baru kita buat menggunakan DocumentBuilder.
 
 ```java
 // Muat dokumen yang akan digabungkan
@@ -47,9 +47,9 @@ Document doc2 = new Document("document2.docx");
 
 // Ulangi bagian-bagian dokumen pertama
 for (Section section : doc1.getSections()) {
-    // Ulangi tubuh setiap bagian
+    // Ulangi melalui badan setiap bagian
     for (Node node : section.getBody()) {
-        // Impor node ke dalam dokumen baru
+        // Impor node ke dokumen baru
         Node importedNode = doc.importNode(node, true, ImportFormatMode.KEEP_SOURCE_FORMATTING);
         
         // Masukkan node yang diimpor menggunakan DocumentBuilder
@@ -62,7 +62,7 @@ Ulangi proses yang sama untuk dokumen kedua (doc2) jika Anda memiliki lebih bany
 
 ## Menyimpan Dokumen yang Digabung
 
-Setelah Anda menggabungkan dokumen yang diinginkan, Anda dapat menyimpan dokumen yang dihasilkan ke sebuah file.
+Setelah Anda menggabungkan dokumen yang diinginkan, Anda dapat menyimpan dokumen yang dihasilkan ke sebuah berkas.
 
 ```java
 // Simpan dokumen yang digabungkan
@@ -71,26 +71,26 @@ doc.save("merged_document.docx");
 
 ## Kesimpulan
 
-Selamat! Anda telah mempelajari cara menggabungkan dokumen menggunakan Aspose.Words untuk Java. Fitur canggih ini dapat menjadi terobosan baru dalam tugas pengelolaan dokumen Anda. Bereksperimenlah dengan berbagai kombinasi dokumen dan jelajahi opsi penyesuaian lebih lanjut sesuai kebutuhan Anda.
+Selamat! Anda telah mempelajari cara menggabungkan dokumen menggunakan Aspose.Words untuk Java. Fitur hebat ini dapat mengubah tugas pengelolaan dokumen Anda. Bereksperimenlah dengan berbagai kombinasi dokumen dan jelajahi opsi penyesuaian lebih lanjut untuk memenuhi kebutuhan Anda.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Bagaimana cara menggabungkan beberapa dokumen menjadi satu?
 
-Untuk menggabungkan beberapa dokumen menjadi satu, Anda dapat mengikuti langkah-langkah yang diuraikan dalam panduan ini. Muat setiap dokumen, impor kontennya menggunakan DocumentBuilder, dan simpan dokumen gabungan.
+Untuk menggabungkan beberapa dokumen menjadi satu, Anda dapat mengikuti langkah-langkah yang diuraikan dalam panduan ini. Muat setiap dokumen, impor kontennya menggunakan DocumentBuilder, dan simpan dokumen yang digabungkan.
 
-### Bisakah saya mengontrol urutan konten saat menggabungkan dokumen?
+### Dapatkah saya mengontrol urutan konten saat menggabungkan dokumen?
 
-Ya, Anda dapat mengontrol urutan konten dengan menyesuaikan urutan impor node dari dokumen berbeda. Ini memungkinkan Anda untuk menyesuaikan proses penggabungan dokumen sesuai dengan kebutuhan Anda.
+Ya, Anda dapat mengontrol urutan konten dengan menyesuaikan urutan saat Anda mengimpor node dari berbagai dokumen. Ini memungkinkan Anda untuk menyesuaikan proses penggabungan dokumen sesuai dengan kebutuhan Anda.
 
 ### Apakah Aspose.Words cocok untuk tugas manipulasi dokumen tingkat lanjut?
 
-Sangat! Aspose.Words untuk Java menyediakan berbagai fitur untuk manipulasi dokumen tingkat lanjut, termasuk namun tidak terbatas pada penggabungan, pemisahan, pemformatan, dan banyak lagi.
+Tentu saja! Aspose.Words untuk Java menyediakan berbagai fitur untuk manipulasi dokumen tingkat lanjut, termasuk namun tidak terbatas pada penggabungan, pemisahan, pemformatan, dan banyak lagi.
 
 ### Apakah Aspose.Words mendukung format dokumen lain selain DOCX?
 
-Ya, Aspose.Words mendukung berbagai format dokumen, termasuk DOC, RTF, HTML, PDF, dan lainnya. Anda dapat bekerja dengan format berbeda berdasarkan kebutuhan Anda.
+Ya, Aspose.Words mendukung berbagai format dokumen, termasuk DOC, RTF, HTML, PDF, dan lainnya. Anda dapat bekerja dengan berbagai format berdasarkan kebutuhan Anda.
 
 ### Di mana saya dapat menemukan lebih banyak dokumentasi dan sumber daya?
 
- Anda dapat menemukan dokumentasi dan sumber daya komprehensif untuk Aspose.Words untuk Java di situs web Aspose:[Aspose.Words untuk Dokumentasi Java](https://reference.aspose.com/words/java/).
+ Anda dapat menemukan dokumentasi dan sumber daya yang komprehensif untuk Aspose.Words untuk Java di situs web Aspose:[Dokumentasi Aspose.Words untuk Java](https://reference.aspose.com/words/java/).

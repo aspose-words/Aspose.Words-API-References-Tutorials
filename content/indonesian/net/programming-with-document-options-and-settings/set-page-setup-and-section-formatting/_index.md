@@ -9,19 +9,19 @@ url: /id/net/programming-with-document-options-and-settings/set-page-setup-and-s
 ---
 ## Perkenalan
 
-Dalam hal manipulasi dokumen, mengatur tata letak halaman dan memformat bagian dengan benar sangatlah penting. Baik Anda menyiapkan laporan, membuat brosur, atau memformat novel, tata letak menentukan tingkat keterbacaan dan profesionalisme. Dengan Aspose.Words untuk .NET, Anda memiliki alat canggih yang dapat Anda gunakan untuk menyempurnakan pengaturan ini secara terprogram. Dalam tutorial ini, kita akan mempelajari cara mengatur pengaturan halaman dan pemformatan bagian dalam dokumen Word menggunakan Aspose.Words untuk .NET.
+Dalam hal manipulasi dokumen, pengaturan tata letak halaman dan pemformatan bagian dengan benar sangatlah penting. Baik Anda sedang mempersiapkan laporan, membuat brosur, atau memformat novel, tata letak menentukan keterbacaan dan profesionalisme. Dengan Aspose.Words for .NET, Anda memiliki alat yang hebat untuk menyempurnakan pengaturan ini secara terprogram. Dalam tutorial ini, kami akan memandu Anda tentang cara mengatur pengaturan halaman dan pemformatan bagian dalam dokumen Word menggunakan Aspose.Words for .NET.
 
 ## Prasyarat
 
-Sebelum kita mendalami kodenya, mari kita bahas apa yang Anda perlukan untuk memulai.
+Sebelum kita masuk ke kode, mari kita bahas apa yang Anda perlukan untuk memulai.
 
--  Aspose.Words untuk .NET: Anda harus menginstal Aspose.Words untuk .NET. Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
-- Lingkungan Pengembangan: Semua IDE yang kompatibel dengan .NET (misalnya, Visual Studio).
-- Pengetahuan Dasar C#: Keakraban dengan pemrograman C# sangat penting.
+-  Aspose.Words untuk .NET: Anda perlu menginstal Aspose.Words untuk .NET. Anda dapat[unduh disini](https://releases.aspose.com/words/net/).
+- Lingkungan Pengembangan: Setiap IDE yang kompatibel dengan .NET (misalnya, Visual Studio).
+- Pengetahuan Dasar C#: Keakraban dengan pemrograman C# sangatlah penting.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Pertama, pastikan Anda mengimpor namespace yang diperlukan ke proyek Anda:
+Pertama, pastikan Anda telah mengimpor namespace yang diperlukan ke proyek Anda:
 
 ```csharp
 using System;
@@ -31,7 +31,7 @@ using Aspose.Words.Saving;
 
 ## Langkah 1: Inisialisasi Dokumen dan DocumentBuilder
 
- Mari kita mulai dengan menginisialisasi`Document`Dan`DocumentBuilder` objek. Itu`DocumentBuilder` adalah kelas pembantu yang menyederhanakan pembuatan dan manipulasi dokumen.
+ Mari kita mulai dengan menginisialisasi`Document` Dan`DocumentBuilder` objek.`DocumentBuilder` adalah kelas pembantu yang menyederhanakan pembuatan dan manipulasi dokumen.
 
 ```csharp
 // Jalur ke direktori dokumen.
@@ -40,9 +40,9 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Langkah 2: Atur Orientasi Halaman
+## Langkah 2: Mengatur Orientasi Halaman
 
-Pada langkah ini, kita akan mengatur orientasi halaman ke Lanskap. Ini khususnya berguna untuk dokumen dengan tabel atau gambar lebar.
+Pada langkah ini, kita akan mengatur orientasi halaman ke Lanskap. Ini dapat sangat berguna untuk dokumen dengan tabel atau gambar yang lebar.
 
 ```csharp
 builder.PageSetup.Orientation = Orientation.Landscape;
@@ -50,7 +50,7 @@ builder.PageSetup.Orientation = Orientation.Landscape;
 
 ## Langkah 3: Sesuaikan Margin Halaman
 
-Selanjutnya, kita akan menyesuaikan margin kiri halaman. Ini mungkin diperlukan untuk mengikat atau sekadar untuk alasan estetika.
+Selanjutnya, kita akan menyesuaikan margin kiri halaman. Ini mungkin diperlukan untuk penjilidan atau sekadar untuk alasan estetika.
 
 ```csharp
 builder.PageSetup.LeftMargin = 50; // Atur margin kiri menjadi 50 poin.
@@ -58,7 +58,7 @@ builder.PageSetup.LeftMargin = 50; // Atur margin kiri menjadi 50 poin.
 
 ## Langkah 4: Pilih Ukuran Kertas
 
-Memilih ukuran kertas yang tepat sangatlah penting tergantung pada jenis dokumen. Misalnya, dokumen hukum sering kali menggunakan ukuran kertas yang berbeda.
+Memilih ukuran kertas yang tepat sangat penting, tergantung pada jenis dokumen. Misalnya, dokumen hukum sering kali menggunakan ukuran kertas yang berbeda.
 
 ```csharp
 builder.PageSetup.PaperSize = PaperSize.Paper10x14; // Atur ukuran kertas menjadi 10x14 inci.
@@ -66,7 +66,7 @@ builder.PageSetup.PaperSize = PaperSize.Paper10x14; // Atur ukuran kertas menjad
 
 ## Langkah 5: Simpan Dokumen
 
-Terakhir, simpan dokumen ke direktori yang Anda tentukan. Langkah ini memastikan bahwa semua pengaturan Anda diterapkan dan dokumen siap digunakan.
+Terakhir, simpan dokumen ke direktori yang Anda tentukan. Langkah ini memastikan bahwa semua pengaturan Anda telah diterapkan dan dokumen siap digunakan.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.SetPageSetupAndSectionFormatting.docx");
@@ -74,27 +74,27 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.SetPageSetupAndSection
 
 ## Kesimpulan
 
-Dan itu dia! Dengan mengikuti langkah-langkah sederhana ini, Anda telah mempelajari cara mengatur orientasi halaman, menyesuaikan margin, dan memilih ukuran kertas menggunakan Aspose.Words untuk .NET. Fitur-fitur ini memungkinkan Anda membuat dokumen yang terstruktur dengan baik dan berformat profesional secara terprogram.
+Nah, itu dia! Dengan mengikuti langkah-langkah sederhana ini, Anda telah mempelajari cara mengatur orientasi halaman, menyesuaikan margin, dan memilih ukuran kertas menggunakan Aspose.Words untuk .NET. Fitur-fitur ini memungkinkan Anda membuat dokumen yang terstruktur dengan baik dan diformat secara profesional secara terprogram.
 
-Baik Anda mengerjakan proyek kecil atau menangani pemrosesan dokumen berskala besar, menguasai pengaturan dasar ini dapat meningkatkan presentasi dan kegunaan dokumen Anda secara signifikan. Selami lebih dalam[Dokumentasi Aspose.Words](https://reference.aspose.com/words/net/) untuk fitur lanjutan dan opsi penyesuaian lainnya.
+Baik Anda sedang mengerjakan proyek kecil atau menangani pemrosesan dokumen berskala besar, menguasai pengaturan dasar ini dapat meningkatkan presentasi dan kegunaan dokumen Anda secara signifikan. Pelajari lebih lanjut[Dokumentasi Aspose.Words](https://reference.aspose.com/words/net/) untuk fitur lebih lanjut dan opsi penyesuaian.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Apa itu Aspose.Words untuk .NET?
 
-Aspose.Words for .NET adalah perpustakaan yang kuat untuk bekerja dengan dokumen Word secara terprogram. Hal ini memungkinkan pengembang untuk membuat, mengedit, mengkonversi, dan mencetak dokumen tanpa memerlukan Microsoft Word.
+Aspose.Words untuk .NET adalah pustaka yang hebat untuk bekerja dengan dokumen Word secara terprogram. Pustaka ini memungkinkan pengembang untuk membuat, mengedit, mengonversi, dan mencetak dokumen tanpa memerlukan Microsoft Word.
 
 ### Bagaimana cara menginstal Aspose.Words untuk .NET?
 
- Anda dapat menginstal Aspose.Words untuk .NET dari[Halaman rilis Aspose](https://releases.aspose.com/words/net/). Ikuti petunjuk instalasi yang disediakan untuk lingkungan pengembangan Anda.
+ Anda dapat menginstal Aspose.Words untuk .NET dari[Aspose merilis halaman](https://releases.aspose.com/words/net/)Ikuti petunjuk instalasi yang disediakan untuk lingkungan pengembangan Anda.
 
-### Bisakah saya menggunakan Aspose.Words untuk .NET dengan .NET Core?
+### Dapatkah saya menggunakan Aspose.Words untuk .NET dengan .NET Core?
 
-Ya, Aspose.Words untuk .NET kompatibel dengan .NET Core, memungkinkan Anda membangun aplikasi lintas platform.
+Ya, Aspose.Words untuk .NET kompatibel dengan .NET Core, memungkinkan Anda membangun aplikasi lintas-platform.
 
 ### Bagaimana cara mendapatkan uji coba gratis Aspose.Words untuk .NET?
 
- Anda bisa mendapatkan uji coba gratis dari[Halaman rilis Aspose](https://releases.aspose.com/). Versi uji coba memungkinkan Anda menguji semua fitur Aspose.Words untuk jangka waktu terbatas.
+ Anda bisa mendapatkan uji coba gratis dari[Aspose merilis halaman](https://releases.aspose.com/)Versi uji coba memungkinkan Anda menguji semua fitur Aspose.Words untuk jangka waktu terbatas.
 
 ### Di mana saya dapat menemukan dukungan untuk Aspose.Words untuk .NET?
 

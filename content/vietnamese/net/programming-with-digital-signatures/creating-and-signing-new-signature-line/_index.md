@@ -2,23 +2,23 @@
 title: Tạo và ký dòng chữ ký mới
 linktitle: Tạo và ký dòng chữ ký mới
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách tạo và ký điện tử dòng chữ ký trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước này. Hoàn hảo cho việc tự động hóa tài liệu.
+description: Tìm hiểu cách tạo và ký số dòng chữ ký trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước này. Hoàn hảo cho việc tự động hóa tài liệu.
 type: docs
 weight: 10
 url: /vi/net/programming-with-digital-signatures/creating-and-signing-new-signature-line/
 ---
 ## Giới thiệu
 
-Này! Như vậy, bạn đã có một tài liệu Word và bạn cần thêm dòng chữ ký rồi ký điện tử. Nghe có vẻ phức tạp? Không có gì! Nhờ Aspose.Words for .NET, bạn có thể đạt được điều này một cách liền mạch chỉ với một vài dòng mã. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn toàn bộ quá trình từ thiết lập môi trường đến lưu tài liệu của bạn bằng chữ ký mới sáng bóng. Sẵn sàng? Hãy đi sâu vào!
+Xin chào! Vậy là bạn có một tài liệu Word và bạn cần thêm một dòng chữ ký rồi ký số vào đó. Nghe có vẻ khó khăn phải không? Không hề! Nhờ Aspose.Words dành cho .NET, bạn có thể thực hiện việc này một cách liền mạch chỉ với một vài dòng mã. Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn toàn bộ quy trình từ thiết lập môi trường đến lưu tài liệu của bạn với một chữ ký mới sáng bóng. Sẵn sàng chưa? Hãy cùng bắt đầu nào!
 
 ## Điều kiện tiên quyết
 
-Trước khi chúng ta chuyển sang mã, hãy đảm bảo bạn có mọi thứ bạn cần:
-1.  Aspose.Words cho .NET - Bạn có thể[tải nó ở đây](https://releases.aspose.com/words/net/).
-2. Môi trường phát triển .NET - Visual Studio rất được khuyến khích.
-3. Tài liệu cần ký - Tạo một tài liệu Word đơn giản hoặc sử dụng tài liệu hiện có.
-4.  Tệp chứng chỉ - Điều này cần thiết cho chữ ký số. Bạn có thể sử dụng một`.pfx` tài liệu.
-5. Hình ảnh cho dòng chữ ký - Tùy chọn, tệp hình ảnh cho chữ ký.
+Trước khi tìm hiểu mã, hãy đảm bảo rằng bạn có mọi thứ cần thiết:
+1.  Aspose.Words cho .NET - Bạn có thể[tải xuống ở đây](https://releases.aspose.com/words/net/).
+2. Môi trường phát triển .NET - Visual Studio được khuyến khích sử dụng.
+3. Tài liệu để ký - Tạo một tài liệu Word đơn giản hoặc sử dụng một tài liệu có sẵn.
+4.  Tệp chứng chỉ - Tệp này cần thiết cho chữ ký số. Bạn có thể sử dụng`.pfx` tài liệu.
+5. Hình ảnh cho Dòng chữ ký - Tùy chọn, một tệp hình ảnh cho chữ ký.
 
 ## Nhập không gian tên
 
@@ -35,7 +35,7 @@ using Aspose.Words.Signing;
 
 ## Bước 1: Thiết lập thư mục tài liệu
 
-Mọi dự án đều cần có sự khởi đầu tốt đẹp. Hãy thiết lập đường dẫn đến thư mục tài liệu của bạn. Đây là nơi tài liệu của bạn sẽ được lưu và lấy ra.
+Mỗi dự án đều cần có khởi đầu tốt. Hãy thiết lập đường dẫn đến thư mục tài liệu của bạn. Đây là nơi tài liệu của bạn sẽ được lưu và truy xuất.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -43,7 +43,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Bước 2: Tạo một tài liệu mới
 
-Bây giờ, hãy tạo một tài liệu Word mới bằng Aspose.Words. Đây sẽ là canvas nơi chúng tôi thêm dòng chữ ký.
+Bây giờ, hãy tạo một tài liệu Word mới bằng Aspose.Words. Đây sẽ là khung vẽ nơi chúng ta thêm dòng chữ ký.
 
 ```csharp
 Document doc = new Document();
@@ -52,23 +52,23 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Bước 3: Chèn dòng chữ ký
 
- Đây là nơi phép thuật xảy ra. Chúng tôi chèn một dòng chữ ký vào tài liệu của mình bằng cách sử dụng`DocumentBuilder` lớp học.
+ Đây là nơi phép thuật xảy ra. Chúng tôi chèn một dòng chữ ký vào tài liệu của chúng tôi bằng cách sử dụng`DocumentBuilder` lớp học.
 
 ```csharp
 SignatureLine signatureLine = builder.InsertSignatureLine(new SignatureLineOptions()).SignatureLine;
 ```
 
-## Bước 4: Lưu tài liệu bằng dòng chữ ký
+## Bước 4: Lưu tài liệu có dòng chữ ký
 
-Sau khi đã có dòng chữ ký, chúng ta cần lưu tài liệu. Đây là bước trung gian trước khi chúng ta tiến hành ký kết.
+Sau khi dòng chữ ký đã vào vị trí, chúng ta cần lưu tài liệu. Đây là bước trung gian trước khi chúng ta tiến hành ký.
 
 ```csharp
 doc.Save(dataDir + "SignDocuments.SignatureLine.docx");
 ```
 
-## Bước 5: Thiết lập tùy chọn đăng nhập
+## Bước 5: Thiết lập tùy chọn ký tên
 
-Bây giờ, hãy thiết lập các tùy chọn để ký tài liệu. Điều này bao gồm việc chỉ định ID dòng chữ ký và hình ảnh sẽ được sử dụng.
+Bây giờ, hãy thiết lập các tùy chọn để ký tài liệu. Điều này bao gồm chỉ định ID dòng chữ ký và hình ảnh sẽ được sử dụng.
 
 ```csharp
 SignOptions signOptions = new SignOptions
@@ -88,7 +88,7 @@ CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", 
 
 ## Bước 7: Ký tài liệu
 
- Đây là bước cuối cùng. Chúng tôi sử dụng`DigitalSignatureUtil`lớp để ký tài liệu. Tài liệu đã ký được lưu với tên mới.
+ Đây là bước cuối cùng. Chúng tôi sử dụng`DigitalSignatureUtil`lớp để ký tài liệu. Tài liệu đã ký sẽ được lưu với tên mới.
 
 ```csharp
 DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
@@ -97,21 +97,21 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
 
 ## Phần kết luận
 
-Và bạn có nó! Với các bước này, bạn đã tạo thành công tài liệu Word mới, thêm dòng chữ ký và ký tên kỹ thuật số bằng Aspose.Words cho .NET. Đó là một công cụ mạnh mẽ giúp việc tự động hóa tài liệu trở nên dễ dàng. Cho dù bạn đang xử lý các hợp đồng, thỏa thuận hay bất kỳ tài liệu chính thức nào, phương pháp này đều đảm bảo chúng được ký và xác thực một cách an toàn.
+Và bạn đã có nó! Với các bước này, bạn đã tạo thành công một tài liệu Word mới, thêm dòng chữ ký và ký số bằng Aspose.Words cho .NET. Đây là một công cụ mạnh mẽ giúp tự động hóa tài liệu trở nên dễ dàng. Cho dù bạn đang xử lý hợp đồng, thỏa thuận hay bất kỳ tài liệu chính thức nào, phương pháp này đảm bảo chúng được ký và xác thực an toàn.
 
 ## Câu hỏi thường gặp
 
-### Tôi có thể sử dụng định dạng hình ảnh khác cho dòng chữ ký được không?
+### Tôi có thể sử dụng định dạng hình ảnh khác cho dòng chữ ký không?
 Có, bạn có thể sử dụng nhiều định dạng hình ảnh khác nhau như PNG, JPG, BMP, v.v.
 
 ###  Có cần thiết phải sử dụng một`.pfx` file for the certificate?
- Vâng, một`.pfx` file là một định dạng phổ biến để lưu trữ thông tin mật mã bao gồm chứng chỉ và khóa riêng.
+ Vâng, một`.pfx` tệp là định dạng phổ biến để lưu trữ thông tin mật mã bao gồm chứng chỉ và khóa riêng.
 
 ### Tôi có thể thêm nhiều dòng chữ ký vào một tài liệu không?
-Tuyệt đối! Bạn có thể chèn nhiều dòng chữ ký bằng cách lặp lại bước chèn cho từng dòng chữ ký.
+Hoàn toàn có thể! Bạn có thể chèn nhiều dòng chữ ký bằng cách lặp lại bước chèn cho mỗi chữ ký.
 
-### Nếu tôi không có chứng chỉ kỹ thuật số thì sao?
-Bạn sẽ cần lấy chứng chỉ kỹ thuật số từ cơ quan cấp chứng chỉ đáng tin cậy hoặc tạo chứng chỉ bằng cách sử dụng các công cụ như OpenSSL.
+### Nếu tôi không có chứng chỉ số thì sao?
+Bạn sẽ cần phải xin chứng chỉ số từ một cơ quan cấp chứng chỉ đáng tin cậy hoặc tạo chứng chỉ bằng các công cụ như OpenSSL.
 
-### Làm cách nào để xác minh chữ ký số trong tài liệu?
-Bạn có thể mở tài liệu đã ký trong Word và đi đến chi tiết chữ ký để xác minh tính xác thực và tính toàn vẹn của chữ ký.
+### Làm thế nào để xác minh chữ ký số trong tài liệu?
+Bạn có thể mở tài liệu đã ký trong Word và đi tới chi tiết chữ ký để xác minh tính xác thực và toàn vẹn của chữ ký.

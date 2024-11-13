@@ -71,7 +71,7 @@ Color cellShadingBefore = firstCell.CellFormat.Shading.BackgroundPatternColor;
 Console.WriteLine("Cell shading before style expansion: " + cellShadingBefore);
 ```
 
-## 5. lépés: Bontsa ki a táblázatstílusokat
+## 5. lépés: Bontsa ki a Táblázatstílusokat
 
  Itt történik a varázslat. Felhívjuk a`ExpandTableStylesToDirectFormatting` módszer a táblázatstílusok közvetlenül a cellákra történő alkalmazására.
 

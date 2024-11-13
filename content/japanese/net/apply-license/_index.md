@@ -15,4 +15,4 @@ url: /ja/net/apply-license/
 | --- | --- |
 | [ファイルからライセンスを適用](./apply-license-from-file/) | 詳細なステップバイステップ ガイドを使用して、Aspose.Words for .NET のファイルからライセンスを適用する方法を学びます。ライブラリの可能性を簡単に最大限に引き出します。 |
 | [ストリームからライセンスを適用](./apply-license-from-stream/) | このステップバイステップ ガイドでは、Aspose.Words for .NET のストリームからライセンスを適用する方法を学習します。Aspose.Words の可能性を最大限に引き出します。 |
-| [従量制ライセンスを適用する](./apply-metered-license/) | ステップバイステップ ガイドを使用して、Aspose.Words for .NET で従量制ライセンスを適用する方法を学びます。柔軟でコスト効率の高いライセンスを簡単に実現できます。 |
+| [従量制ライセンスを適用する](./apply-metered-license/) | ステップバイステップ ガイドを使用して、Aspose.Words for .NET で従量制ライセンスを適用する方法を学びます。柔軟でコスト効率の高いライセンスを簡単に取得できます。 |

@@ -68,7 +68,7 @@ doc.RevisionsView = RevisionsView.Final;
 
 ## Steg 5: Iteration genom revisioner
 
- För att komma åt revisionerna måste du iterera dig igenom`Revisions` insamling av dokumentet. Detta steg innebär att du använder en`foreach` loop för att gå igenom varje revision.
+ För att komma åt revisionerna måste du iterera dig igenom`Revisions` insamling av dokumentet. Detta steg innebär att använda en`foreach` loop för att gå igenom varje revision.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)

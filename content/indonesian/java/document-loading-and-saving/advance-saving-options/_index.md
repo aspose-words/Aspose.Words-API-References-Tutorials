@@ -1,5 +1,5 @@
 ---
-title: Opsi Penghematan Tingkat Lanjut dengan Aspose.Words untuk Java
+title: Opsi Penyimpanan Lanjutan dengan Aspose.Words untuk Java
 linktitle: Menyimpan Dokumen dalam Berbagai Format dengan
 second_title: API Pemrosesan Dokumen Java Aspose.Words
 description: Pelajari manipulasi dokumen tingkat lanjut dengan Aspose.Words untuk Java. Enkripsi, tangani metafile, dan banyak lagi. Dokumen Word Anda, sesuai keinginan Anda.
@@ -8,17 +8,17 @@ weight: 14
 url: /id/java/document-loading-and-saving/advance-saving-options/
 ---
 
-# Panduan Tutorial Langkah-demi-Langkah: Opsi Penyimpanan Tingkat Lanjut dengan Aspose.Words untuk Java
+# Panduan Tutorial Langkah demi Langkah: Opsi Penyimpanan Lanjutan dengan Aspose.Words untuk Java
 
-Di era digital saat ini, manipulasi dokumen adalah tugas umum bagi para pengembang. Baik itu mengenkripsi dokumen, menangani metafile, atau mengelola poin gambar, Aspose.Words untuk Java menyediakan API yang kuat untuk menyederhanakan proses ini. Dalam tutorial ini, kita akan mempelajari cara melakukan opsi penyimpanan tingkat lanjut menggunakan Aspose.Words untuk Java.
+Di era digital saat ini, manipulasi dokumen merupakan tugas umum bagi para pengembang. Baik itu mengenkripsi dokumen, menangani metafile, atau mengelola poin-poin gambar, Aspose.Words untuk Java menyediakan API yang canggih untuk menyederhanakan proses-proses ini. Dalam tutorial ini, kita akan membahas cara menjalankan opsi penyimpanan tingkat lanjut menggunakan Aspose.Words untuk Java.
 
 ## Pengantar Aspose.Words untuk Java
 
-Sebelum kita mendalami kodenya, mari kita perkenalkan secara singkat Aspose.Words untuk Java. Ini adalah perpustakaan Java tangguh yang memungkinkan pengembang membuat, memanipulasi, dan mengonversi dokumen Word dengan mudah. Baik Anda perlu membuat laporan, menambahkan keamanan, atau memformat teks, Aspose.Words untuk Java siap membantu Anda.
+Sebelum kita menyelami kodenya, mari kita perkenalkan Aspose.Words for Java secara singkat. Ini adalah pustaka Java yang tangguh yang memungkinkan pengembang membuat, memanipulasi, dan mengonversi dokumen Word dengan mudah. Baik Anda perlu membuat laporan, menambahkan keamanan, atau memformat teks, Aspose.Words for Java siap membantu Anda.
 
 ## Menyiapkan Lingkungan
 
-Sebelum memulai pengkodean, pastikan Anda telah menyiapkan lingkungan yang diperlukan:
+Sebelum Anda memulai pengkodean, pastikan Anda telah menyiapkan lingkungan yang diperlukan:
 
 1. Buat Dokumen: Inisialisasi dokumen baru menggunakan Aspose.Words untuk Java.
 
@@ -30,7 +30,7 @@ Sebelum memulai pengkodean, pastikan Anda telah menyiapkan lingkungan yang diper
 
 ## Mengenkripsi Dokumen dengan Kata Sandi
 
-Sekarang, mari selami langkah pertama - mengenkripsi dokumen dengan kata sandi. Ini menambahkan lapisan keamanan ekstra pada dokumen sensitif Anda.
+Sekarang, mari kita masuk ke langkah pertama - mengenkripsi dokumen dengan kata sandi. Ini menambahkan lapisan keamanan ekstra pada dokumen sensitif Anda.
 
 ```java
 DocSaveOptions saveOptions = new DocSaveOptions();
@@ -42,7 +42,7 @@ doc.save("Your Directory Path" + "EncryptedDocument.docx", saveOptions);
 
 ## Tidak Mengompresi Metafile Kecil
 
-Metafile sangat penting dalam dokumen Word, namun Anda mungkin tidak ingin mengompres yang kecil. Berikut cara mencapainya:
+Metafile penting dalam dokumen Word, tetapi Anda mungkin tidak ingin mengompres file berukuran kecil. Berikut cara melakukannya:
 
 ```java
 @Test
@@ -56,9 +56,9 @@ public void doNotCompressSmallMetafiles() throws Exception {
 }
 ```
 
-## Menghindari Menyimpan Peluru Gambar
+## Menghindari Menyimpan Poin Gambar
 
-Poin-poin bergambar mungkin menarik perhatian, tetapi Anda mungkin ingin mengecualikannya. Begini caranya:
+Poin-poin bergambar bisa menarik perhatian, tetapi Anda mungkin ingin mengecualikannya. Berikut caranya:
 
 ```java
 @Test
@@ -73,7 +73,7 @@ public void doNotSavePictureBullet() throws Exception {
 ```
 
 
-## Source Code Lengkap Untuk Menyimpan Dokumen dalam Berbagai Format dengan Aspose.Words for Java
+## Source Code Lengkap Untuk Menyimpan Dokumen dalam Berbagai Format dengan Aspose.Words untuk Java
 
 ```java
 public void encryptDocumentWithPassword() throws Exception {
@@ -107,13 +107,13 @@ public void doNotSavePictureBullet() throws Exception {
 
 ## Kesimpulan
 
-Selamat! Anda telah mempelajari cara menggunakan Aspose.Words untuk Java untuk melakukan opsi penyimpanan tingkat lanjut. Baik itu mengenkripsi dokumen, menangani metafile, atau mengelola poin gambar, Aspose.Words untuk Java memberdayakan Anda untuk mengendalikan dokumen Word Anda.
+Selamat! Anda telah mempelajari cara menggunakan Aspose.Words untuk Java untuk menjalankan opsi penyimpanan tingkat lanjut. Baik itu mengenkripsi dokumen, menangani metafile, atau mengelola poin-poin gambar, Aspose.Words untuk Java memberdayakan Anda untuk mengendalikan dokumen Word Anda.
 
-## FAQ
+## Tanya Jawab Umum
 
-### 1. Apakah Aspose.Words untuk Java merupakan perpustakaan gratis?
+### 1. Apakah Aspose.Words untuk Java merupakan pustaka gratis?
 
- Tidak, Aspose.Words untuk Java adalah perpustakaan komersial. Anda dapat menemukan detail lisensi[Di Sini](https://purchase.aspose.com/buy).
+ Tidak, Aspose.Words untuk Java adalah pustaka komersial. Anda dapat menemukan detail lisensi[Di Sini](https://purchase.aspose.com/buy).
 
 ### 2. Bagaimana cara mendapatkan uji coba gratis Aspose.Words untuk Java?
 
@@ -121,13 +121,13 @@ Anda bisa mendapatkan uji coba gratis Aspose.Words untuk Java[Di Sini](https://r
 
 ### 3. Di mana saya dapat menemukan dukungan untuk Aspose.Words untuk Java?
 
- Untuk dukungan dan diskusi komunitas, kunjungi[Aspose.Words untuk forum Java](https://forum.aspose.com/).
+ Untuk dukungan dan diskusi komunitas, kunjungi[Forum Aspose.Words untuk Java](https://forum.aspose.com/).
 
-### 4. Bisakah saya menggunakan Aspose.Words for Java dengan perpustakaan Java lainnya?
+### 4. Dapatkah saya menggunakan Aspose.Words untuk Java dengan pustaka Java lainnya?
 
-Ya, Aspose.Words for Java kompatibel dengan berbagai pustaka dan kerangka kerja Java.
+Ya, Aspose.Words untuk Java kompatibel dengan berbagai pustaka dan kerangka kerja Java.
 
-### 5. Apakah tersedia opsi lisensi sementara?
+### 5. Apakah ada pilihan lisensi sementara yang tersedia?
 
  Ya, Anda bisa mendapatkan lisensi sementara[Di Sini](https://purchase.aspose.com/temporary-license/).
 

@@ -1,28 +1,28 @@
 ---
 title: Ustaw folder obrazów
 linktitle: Ustaw folder obrazów
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Konwertuj dokumenty Word do Markdown z odpowiednim wyrównaniem tabeli za pomocą Aspose.Words dla .NET. Aby uzyskać doskonałe rezultaty, postępuj zgodnie z naszym szczegółowym przewodnikiem.
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Konwertuj dokumenty Word do Markdown z odpowiednim wyrównaniem tabeli za pomocą Aspose.Words dla .NET. Postępuj zgodnie z naszym szczegółowym przewodnikiem, aby uzyskać idealne wyniki.
 type: docs
 weight: 10
 url: /pl/net/programming-with-markdownsaveoptions/set-images-folder/
 ---
 ## Wstęp
 
-Czy kiedykolwiek chciałeś wyeksportować dokument programu Word do formatu Markdown, mając jednocześnie pewność, że tabele i treść będą idealnie dopasowane? Aspose.Words dla .NET to idealne rozwiązanie do tego zadania. W tym artykule przeprowadzimy Cię przez proces konfigurowania Aspose.Words, przygotowywania dokumentu i eksportowania go do Markdown z odpowiednim wyrównaniem zawartości tabeli. Podzielimy każdy krok, aby ułatwić jego śledzenie i zrozumienie. Zagłębmy się więc w szczegóły i przekształćmy Twoje dokumenty Worda w pięknie dopasowane pliki Markdown!
+Czy kiedykolwiek chciałeś wyeksportować swój dokument Word do formatu Markdown, zapewniając jednocześnie idealne wyrównanie tabel i zawartości? Aspose.Words dla .NET to Twoje rozwiązanie do tego zadania. W tym artykule przeprowadzimy Cię przez proces konfigurowania Aspose.Words, przygotowywania dokumentu i eksportowania go do Markdown z odpowiednim wyrównaniem zawartości tabeli. Podzielimy każdy krok, aby ułatwić śledzenie i zrozumienie. Więc zanurzmy się i przekształćmy Twoje dokumenty Word w pięknie wyrównane pliki Markdown!
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zaczniemy, upewnij się, że masz następujące elementy:
+Zanim zaczniemy, upewnij się, że masz następujące rzeczy:
 
--  Aspose.Words dla .NET: Możesz go pobrać[Tutaj](https://releases.aspose.com/words/net/).
--  Ważna licencja: Uzyskaj bezpłatną wersję próbną[Tutaj](https://releases.aspose.com/) lub licencję tymczasową[Tutaj](https://purchase.aspose.com/temporary-license/).
-- Visual Studio: Lub dowolne inne IDE obsługujące programowanie .NET.
-- Podstawowa znajomość języka C#: Znajomość języka programowania C#.
+-  Aspose.Words dla .NET: Można go pobrać[Tutaj](https://releases.aspose.com/words/net/).
+-  Ważna licencja: Uzyskaj bezpłatną wersję próbną[Tutaj](https://releases.aspose.com/) lub tymczasowa licencja[Tutaj](https://purchase.aspose.com/temporary-license/).
+- Visual Studio: lub dowolne inne środowisko IDE obsługujące programowanie w środowisku .NET.
+- Podstawowa znajomość języka C#: Zrozumienie języka programowania C#.
 
 ## Importuj przestrzenie nazw
 
-Aby rozpocząć, musisz zaimportować niezbędne przestrzenie nazw do projektu C#. Te przestrzenie nazw pozwolą ci uzyskać dostęp do funkcjonalności Aspose.Words.
+Na początek musisz zaimportować niezbędne przestrzenie nazw do swojego projektu C#. Te przestrzenie nazw umożliwią Ci dostęp do funkcjonalności Aspose.Words.
 
 ```csharp
 using Aspose.Words;
@@ -32,27 +32,27 @@ using System.IO;
 
 ## Krok 1: Skonfiguruj swój projekt
 
-Po pierwsze, skonfiguruj projekt .NET w swoim środowisku IDE. Utwórz nową aplikację konsolową i dodaj odwołanie do Aspose.Words dla .NET.
+Najpierw skonfiguruj swój projekt .NET w IDE. Utwórz nową aplikację konsolową i dodaj odwołanie do Aspose.Words dla .NET.
 
 ### 1.1 Utwórz nowy projekt
 
-Otwórz program Visual Studio i utwórz nowy projekt aplikacji konsolowej. Nazwij go „MarkdownExporter” lub coś podobnego.
+Otwórz Visual Studio i utwórz nowy projekt aplikacji konsoli. Nazwij go „MarkdownExporter” lub podobnie.
 
-### 1.2 Dodaj odniesienie do Aspose.Words
+### 1.2 Dodaj odniesienie Aspose.Words
 
- Aby dodać Aspose.Words do swojego projektu, możesz pobrać bibliotekę DLL z[Strona Aspose](https://releases.aspose.com/words/net/) i dodaj go ręcznie lub użyj Menedżera pakietów NuGet:
+ Aby dodać Aspose.Words do swojego projektu, możesz pobrać plik DLL z[Strona internetowa Aspose](https://releases.aspose.com/words/net/) i dodaj go ręcznie lub skorzystaj z Menedżera pakietów NuGet:
 
 ```bash
 Install-Package Aspose.Words
 ```
 
-## Krok 2: Napisz kod do wyeksportowania jako Markdown
+## Krok 2: Napisz kod do eksportu jako Markdown
 
-Teraz napiszmy kod, aby odczytać dokument programu Word i zapisać go jako plik Markdown z odpowiednim wyrównaniem tabeli.
+Teraz napiszemy kod, który odczyta dokument Word i zapisze go jako plik Markdown z odpowiednim wyrównaniem tabeli.
 
-### 2.1 Zdefiniuj ścieżkę do swojego dokumentu
+### 2.1 Określ ścieżkę do swojego dokumentu
 
-Ustaw ścieżkę do dokumentu programu Word i folderu, w którym chcesz zapisywać obrazy.
+Ustaw ścieżkę do dokumentu Word i folder, w którym chcesz zapisywać obrazy.
 
 ```csharp
 string dataDir = "YOUR_DOCUMENT_DIRECTORY";
@@ -60,15 +60,15 @@ string dataDir = "YOUR_DOCUMENT_DIRECTORY";
 
 ### 2.2 Załaduj dokument
 
-Załaduj dokument programu Word za pomocą Aspose.Words.
+Wczytaj dokument Word za pomocą Aspose.Words.
 
 ```csharp
 Document doc = new Document(dataDir + "Image bullet points.docx");
 ```
 
-### 2.3 Skonfiguruj opcje zapisywania Markdown
+### 2.3 Konfigurowanie opcji zapisu Markdown
 
- Skonfiguruj`MarkdownSaveOptions` aby określić, gdzie mają być przechowywane obrazy.
+ Skonfiguruj`MarkdownSaveOptions` aby określić miejsce przechowywania obrazów.
 
 ```csharp
 MarkdownSaveOptions saveOptions = new MarkdownSaveOptions
@@ -90,26 +90,26 @@ using (MemoryStream stream = new MemoryStream())
 
 ## Wniosek
 
-Eksportowanie dokumentu Word do Markdown z wyrównaniem zawartości tabeli przy użyciu Aspose.Words dla .NET jest proste, jeśli wykonasz poniższe kroki. Za pomocą kilku linijek kodu możesz zautomatyzować proces konwersji i zapewnić prawidłowe sformatowanie treści. Teraz możesz łatwo udostępniać swoje dokumenty w formacie Markdown, wiedząc, że będą świetnie wyglądać i zachowają swoją strukturę.
+Eksportowanie dokumentu Word do Markdown z wyrównaniem zawartości tabeli za pomocą Aspose.Words dla .NET jest proste, gdy wykonasz te kroki. Za pomocą kilku linijek kodu możesz zautomatyzować proces konwersji i upewnić się, że Twoja zawartość jest dobrze sformatowana. Teraz możesz łatwo udostępniać swoje dokumenty w formacie Markdown, wiedząc, że będą wyglądać świetnie i zachowają swoją strukturę.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
 ### Czy mogę używać Aspose.Words dla .NET z innymi językami programowania?
 
-Tak, Aspose.Words dla .NET może być używany z dowolnym językiem kompatybilnym z .NET, takim jak VB.NET, F# i innymi.
+Tak, Aspose.Words dla .NET można używać z dowolnym językiem zgodnym z platformą .NET, takim jak VB.NET, F# i innymi.
 
 ### Jak uzyskać tymczasową licencję na Aspose.Words?
 
- Możesz uzyskać licencję tymczasową[Tutaj](https://purchase.aspose.com/temporary-license/).
+Możesz uzyskać tymczasową licencję[Tutaj](https://purchase.aspose.com/temporary-license/).
 
-### Jakie typy dokumentów mogę przekonwertować do Markdown?
+### Jakie typy dokumentów mogę przekonwertować do formatu Markdown?
 
-Możesz konwertować różne dokumenty programu Word, w tym .doc, .docx, .rtf i inne.
+Możesz konwertować różne dokumenty Word, w tym .doc, .docx, .rtf i inne.
 
-### Czy są jakieś ograniczenia w wersji próbnej Aspose.Words?
+### Czy wersja próbna Aspose.Words ma jakieś ograniczenia?
 
-Wersja próbna ma pewne ograniczenia, takie jak znaki wodne w plikach wyjściowych. Możesz skorzystać z bezpłatnego okresu próbnego[Tutaj](https://releases.aspose.com/).
+Wersja próbna ma pewne ograniczenia, takie jak znaki wodne w plikach wyjściowych. Możesz otrzymać bezpłatną wersję próbną[Tutaj](https://releases.aspose.com/).
 
 ### Gdzie mogę znaleźć więcej przykładów i dokumentacji dla Aspose.Words?
 
- Szczegółową dokumentację i przykłady można znaleźć na stronie[Strona Aspose](https://reference.aspose.com/words/net/).
+ Szczegółową dokumentację i przykłady można znaleźć na stronie[Strona internetowa Aspose](https://reference.aspose.com/words/net/).

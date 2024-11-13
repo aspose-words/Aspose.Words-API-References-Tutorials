@@ -50,7 +50,7 @@ loadOptions.LanguagePreferences.DefaultEditingLanguage = EditingLanguage.Russian
 
 ## ステップ2: ドキュメントを読み込む
 
-次に、Word文書を読み込むには、`LoadOptions`前の手順で設定した内容に従います。これには、ドキュメントへのパスを指定し、`LoadOptions`インスタンスに`Document`コンストラクタ。
+次に、Word文書を読み込む必要があります。`LoadOptions`前の手順で設定した内容に従います。これには、ドキュメントへのパスを指定し、`LoadOptions`インスタンスに`Document`コンストラクタ。
 
 ### ドキュメントパスを指定
 
@@ -64,7 +64,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "No default editing language.docx", loadOptions);
 ```
 
-このステップでは、ドキュメントが保存されているディレクトリパスを指定し、`Document`コンストラクタ。`LoadOptions`ロシア語がデフォルトの編集言語として設定されていることを確認します。
+このステップでは、ドキュメントが保存されているディレクトリパスを指定し、`Document`コンストラクタ。`LoadOptions`デフォルトの編集言語としてロシア語が設定されていることを確認します。
 
 ## ステップ3: デフォルトの編集言語を確認する
 

@@ -30,13 +30,13 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-これらの名前空間は、チュートリアルで使用する Aspose.Words のクラスとメソッドにアクセスするために重要です。
+これらの名前空間は、チュートリアルで使用する Aspose.Words のクラスとメソッドにアクセスするために不可欠です。
 
 Word 文書を HTML として保存するときにリソースをエクスポートするプロセスを詳しく説明します。手順を 1 つ 1 つ説明していくので、わかりやすいでしょう。
 
 ## ステップ1: ドキュメントディレクトリを設定する
 
-まず最初に、ドキュメント ディレクトリへのパスを指定する必要があります。これは、Word ドキュメントが保存され、HTML ファイルが保存される場所です。
+まず最初に、ドキュメント ディレクトリへのパスを指定する必要があります。これは、Word ドキュメントが保存される場所であり、HTML ファイルが保存される場所です。
 
 ```csharp
 //ドキュメント ディレクトリへのパス。
@@ -103,5 +103,5 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportResources.html", saveOption
 ### Aspose.Words は HTML 以外の形式もサポートしていますか?
 はい、PDF、DOCX、TXTなど、さまざまな形式をサポートしています。[ドキュメント](https://reference.aspose.com/words/net/)完全なリストについてはこちらをご覧ください。
 
-### さらにサポートやリソースはどこで入手できますか?
+### さらにサポートやリソースを入手できる場所はどこですか?
 さらに詳しい情報については、[Aspose.Words サポート フォーラム](https://forum.aspose.com/c/words/8)詳細なドキュメントと例は、[Aspose ウェブサイト](https://reference.aspose.com/words/net/).

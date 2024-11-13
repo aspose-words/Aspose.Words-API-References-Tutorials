@@ -1,20 +1,20 @@
 ---
-title: Aspose.Words for Java'daki Belgelerden İçeriği Kaldırma
-linktitle: Belgelerden İçeriği Kaldırma
+title: Java için Aspose.Words'de Belgelerden İçerik Kaldırma
+linktitle: Belgelerden İçerik Kaldırma
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Aspose.Words for Java'yı kullanarak Java'daki Word belgelerinden içeriği nasıl kaldıracağınızı öğrenin. Sayfa sonlarını, bölüm sonlarını ve daha fazlasını kaldırın. Belge işlemenizi optimize edin.
+description: Java'da Aspose.Words for Java kullanarak Word belgelerinden içerik kaldırmayı öğrenin. Sayfa sonlarını, bölüm sonlarını ve daha fazlasını kaldırın. Belge işlemenizi optimize edin.
 type: docs
 weight: 16
 url: /tr/java/document-manipulation/removing-content-from-documents/
 ---
 
-## Aspose.Words for Java'ya Giriş
+## Java için Aspose.Words'e Giriş
 
-Temizleme tekniklerine geçmeden önce Aspose.Words for Java'yı kısaca tanıtalım. Word belgeleriyle çalışmak için kapsamlı özellikler sağlayan bir Java API'sidir. Bu kitaplığı kullanarak Word belgelerini sorunsuz bir şekilde oluşturabilir, düzenleyebilir, dönüştürebilir ve değiştirebilirsiniz.
+Kaldırma tekniklerine dalmadan önce, Aspose.Words for Java'yı kısaca tanıtalım. Word belgeleriyle çalışmak için kapsamlı özellikler sağlayan bir Java API'sidir. Bu kütüphaneyi kullanarak Word belgelerini sorunsuz bir şekilde oluşturabilir, düzenleyebilir, dönüştürebilir ve işleyebilirsiniz.
 
 ## Sayfa Sonlarını Kaldırma
 
-Sayfa sonları genellikle bir belgenin düzenini kontrol etmek için kullanılır. Ancak bunları kaldırmanız gereken durumlar olabilir. Aspose.Words for Java'yı kullanarak sayfa sonlarını nasıl kaldırabileceğiniz aşağıda açıklanmıştır:
+Sayfa sonları genellikle bir belgenin düzenini kontrol etmek için kullanılır. Ancak, bunları kaldırmanız gereken durumlar olabilir. Java için Aspose.Words kullanarak sayfa sonlarını nasıl kaldırabileceğinizi burada bulabilirsiniz:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Document.docx");
@@ -32,11 +32,11 @@ for (Paragraph para : (Iterable<Paragraph>) paragraphs) {
 doc.save("Your Directory Path" + "RemoveContent.RemovePageBreaks.docx");
 ```
 
-Bu kod parçacığı, belgedeki paragraflar boyunca yinelenecek, sayfa sonlarını kontrol edecek ve bunları kaldıracaktır.
+Bu kod parçacığı belgedeki paragraflar arasında dolaşacak, sayfa sonlarını kontrol edecek ve kaldıracaktır.
 
 ## Bölüm Sonlarını Kaldırma
 
-Bölüm sonları, belgeyi farklı biçimlendirmeye sahip ayrı bölümlere ayırır. Bölüm sonlarını kaldırmak için şu adımları izleyin:
+Bölüm sonları, bir belgeyi farklı biçimlendirmeyle ayrı bölümlere ayırır. Bölüm sonlarını kaldırmak için şu adımları izleyin:
 
 ```java
 for (int i = doc.getSections().getCount() - 2; i >= 0; i--) {
@@ -45,11 +45,11 @@ for (int i = doc.getSections().getCount() - 2; i >= 0; i--) {
 }
 ```
 
-Bu kod, mevcut bölümün içeriğini sonuncuyla birleştirerek ve ardından kopyalanan bölümü kaldırarak bölümler arasında ters sırada yinelenir.
+Bu kod, bölümleri ters sırada yineleyerek geçerli bölümün içeriğini son bölümle birleştirir ve ardından kopyalanan bölümü kaldırır.
 
 ## Altbilgileri Kaldırma
 
-Word belgelerindeki altbilgiler genellikle sayfa numaraları, tarihler veya başka bilgiler içerir. Bunları kaldırmanız gerekirse aşağıdaki kodu kullanabilirsiniz:
+Word belgelerindeki altbilgiler genellikle sayfa numaraları, tarihler veya diğer bilgileri içerir. Bunları kaldırmanız gerekirse, aşağıdaki kodu kullanabilirsiniz:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Header and footer types.docx");
@@ -64,11 +64,11 @@ for (Section section : doc.getSections()) {
 doc.save("Your Directory Path" + "RemoveContent.RemoveFooters.docx");
 ```
 
-Bu kod, belgedeki her bölümden tüm altbilgi türlerini (ilk, birincil ve çift) kaldırır.
+Bu kod, belgedeki her bölümden her türlü altbilgiyi (ilk, birincil ve çift) kaldırır.
 
 ## İçindekiler Tablosunu Kaldırma
 
-İçindekiler tablosu (TOC) alanları, başlıkları ve bunların sayfa numaralarını listeleyen dinamik bir tablo oluşturur. Bir TOC'yi kaldırmak için aşağıdaki kodu kullanabilirsiniz:
+İçindekiler (İÇT) alanları, başlıkları ve sayfa numaralarını listeleyen dinamik bir tablo oluşturur. Bir İÇT'yi kaldırmak için aşağıdaki kodu kullanabilirsiniz:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Table of contents.docx");
@@ -76,27 +76,27 @@ removeTableOfContents(doc, 0);
 doc.save("Your Directory Path" + "RemoveContent.RemoveToc.doc");
 ```
 
- Bu kod bir yöntemi tanımlar`removeTableOfContents` belirtilen TOC'yi belgeden kaldırır.
+ Bu kod bir yöntemi tanımlar`removeTableOfContents` belirtilen İçindekiler'i belgeden kaldırır.
 
 
 ## Çözüm
 
-Bu makalede Aspose.Words for Java kullanarak çeşitli içerik türlerinin Word belgelerinden nasıl kaldırılacağını araştırdık. Aspose.Words, sayfa sonları, bölüm sonları, alt bilgiler veya içindekiler tablosu olsun, belgelerinizi etkili bir şekilde düzenlemeniz için gereken araçları sağlar.
+Bu makalede, Aspose.Words for Java kullanarak Word belgelerinden çeşitli içerik türlerinin nasıl kaldırılacağını inceledik. Sayfa sonları, bölüm sonları, altbilgiler veya içerik tablosu olsun, Aspose.Words belgelerinizi etkili bir şekilde düzenlemeniz için araçlar sağlar.
 
-## SSS'ler
+## SSS
 
 ### Belirli sayfa sonlarını nasıl kaldırabilirim?
 
-Belirli sayfa sonlarını kaldırmak için belgenizdeki paragraflar arasında ilerleyin ve istediğiniz paragraflar için sayfa sonu özelliğini temizleyin.
+Belirli sayfa sonlarını kaldırmak için belgenizdeki paragraflar arasında gezinin ve istediğiniz paragraflar için sayfa sonu özniteliğini temizleyin.
 
-### Altbilgilerle birlikte üstbilgileri de kaldırabilir miyim?
+### Başlıkları ve altbilgileri kaldırabilir miyim?
 
-Evet, altbilgiler makalesinde gösterilene benzer bir yaklaşım izleyerek hem üstbilgileri hem de altbilgileri belgenizden kaldırabilirsiniz.
+Evet, makalede altbilgiler için gösterilen benzer yaklaşımı izleyerek belgenizden hem üstbilgileri hem de altbilgileri kaldırabilirsiniz.
 
-### Aspose.Words for Java en son Word belge formatlarıyla uyumlu mu?
+### Aspose.Words for Java en son Word belge formatlarıyla uyumlu mudur?
 
-Evet, Aspose.Words for Java, en yeni Word belge formatlarını destekleyerek modern belgelerle uyumluluk sağlar.
+Evet, Aspose.Words for Java en son Word belge formatlarını destekleyerek modern belgelerle uyumluluğu garanti eder.
 
-### Aspose.Words for Java başka hangi belge işleme özelliklerini sunuyor?
+### Aspose.Words for Java başka hangi belge düzenleme özelliklerini sunuyor?
 
-Aspose.Words for Java, belge oluşturma, düzenleme, dönüştürme ve daha fazlasını içeren çok çeşitli özellikler sunar. Ayrıntılı bilgi için belgelerini inceleyebilirsiniz.
+Java için Aspose.Words, belge oluşturma, düzenleme, dönüştürme ve daha fazlası dahil olmak üzere çok çeşitli özellikler sunar. Ayrıntılı bilgi için belgelerini inceleyebilirsiniz.

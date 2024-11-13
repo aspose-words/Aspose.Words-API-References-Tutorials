@@ -70,7 +70,7 @@ cell1.getCellFormat().setPreferredWidth(100.0);
 Cell cell2 = row.getCells().add();
 cell2.getCellFormat().setPreferredWidth(200.0);
 
-// Din kod för att fylla i tabellen kommer här
+// Din kod för att fylla i tabellen finns här
 ```
 
 ## Formatera tabeller

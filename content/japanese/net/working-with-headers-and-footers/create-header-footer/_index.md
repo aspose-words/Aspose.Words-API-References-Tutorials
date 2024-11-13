@@ -165,7 +165,7 @@ private static void CopyHeadersFootersFromPreviousSection(Section section)
 
 ## 結論
 
-これらの手順に従うことで、Aspose.Words for .NET を使用して Word 文書にヘッダーとフッターを効果的に追加およびカスタマイズできます。これにより、文書の外観と専門性が向上し、より読みやすく魅力的なものになります。
+これらの手順に従うことで、Aspose.Words for .NET を使用して Word 文書にヘッダーとフッターを効果的に追加およびカスタマイズできます。これにより、文書の外観と専門性が向上し、より読みやすく魅力的な文書になります。
 
 ## よくある質問
 

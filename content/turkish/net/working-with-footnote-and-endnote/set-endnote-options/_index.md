@@ -1,43 +1,43 @@
 ---
-title: Son Not Seçeneklerini Ayarlayın
-linktitle: Son Not Seçeneklerini Ayarlayın
+title: Son Not Seçeneklerini Ayarla
+linktitle: Son Not Seçeneklerini Ayarla
 second_title: Aspose.Words Belge İşleme API'si
-description: Bu kapsamlı adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerinde son not seçeneklerini nasıl ayarlayacağınızı öğrenin.
+description: Bu kapsamlı adım adım kılavuzla Aspose.Words for .NET'i kullanarak Word belgelerinde son not seçeneklerini nasıl ayarlayacağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/working-with-footnote-and-endnote/set-endnote-options/
 ---
 ## giriiş
 
-Son notları verimli bir şekilde yöneterek Word belgelerinizi geliştirmek mi istiyorsunuz? Başka yere bakmayın! Bu eğitimde, Aspose.Words for .NET'i kullanarak Word belgelerinde son not seçeneklerini ayarlama sürecinde size yol göstereceğiz. Bu kılavuzun sonunda, son notları belgenizin ihtiyaçlarına uyacak şekilde özelleştirme konusunda uzman olacaksınız.
+Word belgelerinizi dipnotları etkili bir şekilde yöneterek geliştirmek mi istiyorsunuz? Başka yere bakmayın! Bu eğitimde, .NET için Aspose.Words kullanarak Word belgelerinde dipnot seçeneklerini ayarlama sürecinde size yol göstereceğiz. Bu kılavuzun sonunda, dipnotları belgenizin ihtiyaçlarına uyacak şekilde özelleştirmede uzman olacaksınız.
 
-## Önkoşullar
+## Ön koşullar
 
-Eğiticiye dalmadan önce aşağıdaki önkoşulların yerine getirildiğinden emin olun:
+Eğitime başlamadan önce aşağıdaki ön koşulların mevcut olduğundan emin olun:
 
--  Aspose.Words for .NET: Aspose.Words for .NET kütüphanesinin kurulu olduğundan emin olun. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Aspose.Words for .NET kütüphanesinin yüklü olduğundan emin olun. Buradan indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
 - Geliştirme Ortamı: Visual Studio gibi bir geliştirme ortamı kurun.
-- Temel C# Bilgisi: C# programlamanın temel bir anlayışı faydalı olacaktır.
+- Temel C# Bilgisi: C# programlamanın temellerini anlamak faydalı olacaktır.
 
 ## Ad Alanlarını İçe Aktar
 
-Başlamak için gerekli ad alanlarını içe aktarmanız gerekir. Bu ad alanları, Word belgelerini işlemek için gereken sınıflara ve yöntemlere erişim sağlar.
+Başlamak için gerekli ad alanlarını içe aktarmanız gerekir. Bu ad alanları, Word belgelerini düzenlemek için gereken sınıflara ve yöntemlere erişim sağlar.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Notes;
 ```
 
-## 1. Adım: Belgeyi Yükleyin
+## Adım 1: Belgeyi Yükleyin
 
- Öncelikle belgeyi son not seçeneklerini ayarlamak istediğimiz yere yükleyelim. biz kullanacağız`Document` Bunu gerçekleştirmek için Aspose.Words kütüphanesinden sınıf.
+ İlk olarak, son not seçeneklerini ayarlamak istediğimiz belgeyi yükleyelim.`Document` Bunu başarmak için Aspose.Words kütüphanesinden bir sınıf kullanabilirsiniz.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-## Adım 2: DocumentBuilder'ı başlatın
+## Adım 2: DocumentBuilder'ı Başlatın
 
  Daha sonra, şunu başlatacağız:`DocumentBuilder`sınıf. Bu sınıf, belgeye içerik eklemenin basit bir yolunu sağlar.
 
@@ -45,18 +45,18 @@ Document doc = new Document(dataDir + "Document.docx");
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 3. Adım: Metin Ekle ve Son Not Ekle
+## Adım 3: Metin Ekle ve Son Not Ekle
 
- Şimdi belgeye biraz metin ekleyelim ve bir son not ekleyelim.`InsertFootnote` yöntemi`DocumentBuilder` class belgeye son notlar eklememize olanak tanır.
+ Şimdi belgeye biraz metin ekleyelim ve bir dipnot ekleyelim.`InsertFootnote` yöntemi`DocumentBuilder` sınıf, belgeye dipnot eklememize olanak tanır.
 
 ```csharp
 builder.Write("Some text");
 builder.InsertFootnote(FootnoteType.Endnote, "Footnote text.");
 ```
 
-## 4. Adım: Son Not Seçeneklerine Erişin ve Ayarlayın
+## Adım 4: Endnote Seçeneklerine Erişim ve Ayarlama
 
- Son not seçeneklerini özelleştirmek için şuraya erişmemiz gerekir:`EndnoteOptions` mülkiyeti`Document` sınıf. Daha sonra yeniden başlatma kuralı ve konumu gibi çeşitli seçenekleri ayarlayabiliriz.
+ Son not seçeneklerini özelleştirmek için şuraya erişmemiz gerekiyor:`EndnoteOptions` mülkiyeti`Document` Daha sonra yeniden başlatma kuralı ve pozisyon gibi çeşitli seçenekleri ayarlayabiliriz.
 
 ```csharp
 EndnoteOptions option = doc.EndnoteOptions;
@@ -66,7 +66,7 @@ option.Position = EndnotePosition.EndOfSection;
 
 ## Adım 5: Belgeyi Kaydedin
 
- Son olarak belgeyi güncellenmiş son not seçenekleriyle kaydedelim.`Save` yöntemi`Document` class belgeyi belirtilen dizine kaydetmemizi sağlar.
+ Son olarak, belgeyi güncellenmiş dipnot seçenekleriyle kaydedelim.`Save` yöntemi`Document` class, belgeyi belirtilen dizine kaydetmemize olanak tanır.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
@@ -74,21 +74,21 @@ doc.Save(dataDir + "WorkingWithFootnotes.SetEndnoteOptions.docx");
 
 ## Çözüm
 
-Aspose.Words for .NET'i kullanarak Word belgelerinizdeki son not seçeneklerini ayarlamak bu basit adımlarla çok kolaydır. Yeniden başlatma kuralını ve son notların konumunu özelleştirerek belgelerinizi belirli gereksinimleri karşılayacak şekilde uyarlayabilirsiniz. Aspose.Words ile Word belgelerini yönetme gücü parmaklarınızın ucunda.
+Aspose.Words for .NET kullanarak Word belgelerinizde dipnot seçeneklerini ayarlamak bu basit adımlarla çocuk oyuncağı. Yeniden başlatma kuralını ve dipnotların konumunu özelleştirerek belgelerinizi belirli gereksinimleri karşılayacak şekilde uyarlayabilirsiniz. Aspose.Words ile Word belgelerini düzenleme gücü parmaklarınızın ucunda.
 
-## SSS'ler
+## SSS
 
 ### Aspose.Words for .NET nedir?
-Aspose.Words for .NET, Word belgelerini programlı olarak işlemek için güçlü bir kütüphanedir. Geliştiricilerin Word belgelerini çeşitli formatlarda oluşturmasına, değiştirmesine ve dönüştürmesine olanak tanır.
+Aspose.Words for .NET, Word belgelerini programatik olarak düzenlemek için güçlü bir kütüphanedir. Geliştiricilerin çeşitli biçimlerde Word belgeleri oluşturmasına, değiştirmesine ve dönüştürmesine olanak tanır.
 
 ### Aspose.Words'ü ücretsiz kullanabilir miyim?
- Aspose.Words'ü ücretsiz deneme sürümüyle kullanabilirsiniz. Uzun süreli kullanım için adresinden bir lisans satın alabilirsiniz.[Burada](https://purchase.aspose.com/buy).
+ Aspose.Words'ü ücretsiz deneme sürümüyle kullanabilirsiniz. Uzun süreli kullanım için, şu adresten lisans satın alabilirsiniz:[Burada](https://purchase.aspose.com/buy).
 
-### Son notlar nelerdir?
-Son notlar, bir bölümün veya belgenin sonuna yerleştirilen referanslar veya notlardır. Ek bilgi veya alıntılar sağlarlar.
+### Dipnotlar nelerdir?
+Dipnotlar, bir bölümün veya belgenin sonuna yerleştirilen referanslar veya notlardır. Ek bilgi veya alıntılar sağlarlar.
 
-### Son notların görünümünü nasıl özelleştiririm?
- Numaralandırma, konum ve yeniden başlatma kuralları gibi son not seçeneklerini özelleştirebilirsiniz.`EndnoteOptions` Aspose.Words for .NET'teki sınıf.
+### Dipnotların görünümünü nasıl özelleştirebilirim?
+ Numaralandırma, konum ve yeniden başlatma kuralları gibi son not seçeneklerini özelleştirebilirsiniz.`EndnoteOptions` .NET için Aspose.Words'deki sınıf.
 
-### Aspose.Words for .NET hakkında daha fazla belgeyi nerede bulabilirim?
- Ayrıntılı belgeler şu adreste mevcuttur:[Aspose.Words for .NET Belgeleri](https://reference.aspose.com/words/net/) sayfa.
+### Aspose.Words for .NET hakkında daha fazla dokümanı nerede bulabilirim?
+ Ayrıntılı dokümantasyon şu adreste mevcuttur:[Aspose.Words .NET Belgeleri için](https://reference.aspose.com/words/net/) sayfa.

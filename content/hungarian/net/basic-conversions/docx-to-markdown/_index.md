@@ -38,23 +38,7 @@ string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
 Document doc = new Document(dataDir + "YourDocument.docx");
 ```
 
-## 2. lépés: Hozzon létre DocumentBuilder objektumot
-
- Ezután hozzon létre a`DocumentBuilder` a dokumentumkezelés megkönnyítése érdekében.
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-## 3. lépés: Manipulálja a dokumentum tartalmát
-
- Használja a`DocumentBuilder` tiltakozik a tartalom szükség szerinti manipulálására. Például adjon hozzá szöveget vagy formázást.
-
-```csharp
-builder.Writeln("Insert your text or content manipulation code here!");
-```
-
-## 4. lépés: Mentés Markdown néven
+## 2. lépés: Mentés Markdown néven
 
 Végül mentse el a módosított dokumentumot Markdown formátumban.
 
@@ -75,10 +59,10 @@ Az Aspose.Words a dokumentumformátumok széles skáláját támogatja, beleért
 Igen, az Aspose.Words robusztus API-kat biztosít a dokumentumokon belüli táblázatok, képek, szövegformázás és egyebek kezeléséhez.
 
 ### Hol találom az Aspose.Words for .NET részletes dokumentációját?
- A részletes dokumentáció elérhető[itt](https://reference.aspose.com/words/net/).
+ részletes dokumentáció elérhető[itt](https://reference.aspose.com/words/net/).
 
 ### Hogyan szerezhetek ideiglenes licencet az Aspose.Words for .NET-hez?
- Kaphat ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).
+Kaphat ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).
 
 ### Hol kaphatok közösségi támogatást az Aspose.Words for .NET-hez?
  Közösségi támogatást találhat, és kapcsolatba léphet más felhasználókkal[itt](https://forum.aspose.com/c/words/8).

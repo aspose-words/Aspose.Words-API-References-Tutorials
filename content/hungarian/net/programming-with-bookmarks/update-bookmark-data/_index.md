@@ -117,7 +117,7 @@ Teljesen! Az Aspose.Words módszereket biztosít könyvjelzők beszúrására a 
 
  Mint korábban említettük, egy nem létező könyvjelző elérése kivételt jelent. Megvalósíthat kivételkezelési mechanizmusokat (például a`try-catch` blokk), hogy kecsesen kezelje az ilyen forgatókönyveket.
 
-### Törölhetem a könyvjelzőket frissítésük után?
+### Törölhetem a könyvjelzőket a frissítés után?
 
  Igen, az Aspose.Words biztosítja a`Remove` módszer a`Bookmarks` gyűjtemény a könyvjelzők törléséhez.
 

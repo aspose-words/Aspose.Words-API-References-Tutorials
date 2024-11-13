@@ -84,4 +84,4 @@ Aspose Web サイトからライブラリをダウンロードし、Visual Studi
 Aspose.Words for .NET は、大規模な追跡されたリビジョンを含む大規模なドキュメントを効率的に処理するように最適化されています。
 
 ### Aspose.Words for .NET のその他のリソースやサポートはどこで見つかりますか?
-包括的なドキュメントを閲覧し、Aspose.Words for .NETコミュニティからサポートを受けることができます。[Aspose.Words フォーラム](https://forum.aspose.com/c/words/8).
+包括的なドキュメントを参照し、Aspose.Words for .NETコミュニティからサポートを受けることができます。[Aspose.Words フォーラム](https://forum.aspose.com/c/words/8).

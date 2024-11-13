@@ -1,22 +1,22 @@
 ---
-title: Unir y anexar documentos en Aspose.Words para Java
-linktitle: Unir y adjuntar documentos
+title: Cómo unir y agregar documentos en Aspose.Words para Java
+linktitle: Unir y anexar documentos
 second_title: API de procesamiento de documentos Java Aspose.Words
-description: Aprenda a unir y adjuntar documentos sin esfuerzo utilizando Aspose.Words para Java. Conserve el formato, administre encabezados, pies de página y más.
+description: Aprenda a unir y anexar documentos sin esfuerzo con Aspose.Words para Java. Conserve el formato, administre encabezados y pies de página, y más.
 type: docs
 weight: 30
 url: /es/java/document-manipulation/joining-and-appending-documents/
 ---
 
-## Introducción a unir y anexar documentos en Aspose.Words para Java
+## Introducción a la unión y anexión de documentos en Aspose.Words para Java
 
-En este tutorial, exploraremos cómo unir y adjuntar documentos usando la biblioteca Aspose.Words para Java. Aprenderá cómo fusionar varios documentos sin problemas conservando el formato y la estructura.
+En este tutorial, exploraremos cómo unir y anexar documentos mediante la biblioteca Aspose.Words para Java. Aprenderá a combinar sin problemas varios documentos conservando el formato y la estructura.
 
-## Requisitos previos
+## Prerrequisitos
 
-Antes de comenzar, asegúrese de tener configurada la API Aspose.Words para Java en su proyecto Java.
+Antes de comenzar, asegúrese de tener la API Aspose.Words para Java configurada en su proyecto Java.
 
-## Opciones de unión de documentos
+## Opciones para unir documentos
 
 ### Anexar simple
 
@@ -26,7 +26,7 @@ Document dstDoc = new Document("destination.docx");
 dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-### Agregar con opciones de formato de importación
+### Añadir con opciones de formato de importación
 
 ```java
 ImportFormatOptions options = new ImportFormatOptions();
@@ -34,7 +34,7 @@ options.setKeepSourceNumbering(true);
 dstDoc.appendDocument(srcDoc, ImportFormatMode.USE_DESTINATION_STYLES, options);
 ```
 
-### Agregar a documento en blanco
+### Añadir a documento en blanco
 
 ```java
 Document srcDoc = new Document("source.docx");
@@ -43,7 +43,7 @@ dstDoc.removeAllChildren();
 dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-### Agregar con conversión de número de página
+### Añadir con conversión de número de página
 
 ```java
 Document srcDoc = new Document("source.docx");
@@ -53,14 +53,14 @@ convertNumPageFieldsToPageRef(dstDoc); // Convertir campos NUMPAGES
 dstDoc.updatePageLayout(); // Actualizar el diseño de la página para una numeración correcta
 ```
 
-## Manejo de diferentes configuraciones de página
+## Cómo manejar diferentes configuraciones de página
 
-Al adjuntar documentos con diferentes configuraciones de página:
+Al adjuntar documentos con distintas configuraciones de página:
 
 ```java
 srcDoc.getFirstSection().getPageSetup().setSectionStart(SectionStart.CONTINUOUS);
 srcDoc.getFirstSection().getPageSetup().setRestartPageNumbering(true);
-// Asegúrese de que la configuración de configuración de página coincida con el documento de destino
+// Asegúrese de que la configuración de la página coincida con el documento de destino
 ```
 
 ## Unir documentos con diferentes estilos
@@ -84,7 +84,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 builder.insertDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-## Mantener la numeración de fuentes
+## Manteniendo la numeración de fuentes
 
 ```java
 ImportFormatOptions importFormatOptions = new ImportFormatOptions();
@@ -100,9 +100,9 @@ importFormatOptions.setIgnoreTextBoxes(false);
 dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING, importFormatOptions);
 ```
 
-## Administrar encabezados y pies de página
+## Gestión de encabezados y pies de página
 
-### Vincular encabezados y pies de página
+### Vinculación de encabezados y pies de página
 
 ```java
 srcDoc.getFirstSection().getHeadersFooters().linkToPrevious(true);
@@ -118,25 +118,25 @@ dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 
 ## Conclusión
 
-Aspose.Words para Java proporciona herramientas potentes y flexibles para unir y agregar documentos, ya sea que necesite mantener el formato, manejar diferentes configuraciones de página o administrar encabezados y pies de página. Experimente con estas técnicas para satisfacer sus necesidades específicas de procesamiento de documentos.
+Aspose.Words para Java ofrece herramientas flexibles y potentes para unir y anexar documentos, ya sea que necesite mantener el formato, manejar distintas configuraciones de página o administrar encabezados y pies de página. Experimente con estas técnicas para satisfacer sus necesidades específicas de procesamiento de documentos.
 
 ## Preguntas frecuentes
 
 ### ¿Cómo puedo unir documentos con diferentes estilos sin problemas?
 
- Para unir documentos con diferentes estilos, utilice`ImportFormatMode.USE_DESTINATION_STYLES` al agregar.
+ Para unir documentos con diferentes estilos, utilice`ImportFormatMode.USE_DESTINATION_STYLES` Al añadir.
 
 ### ¿Puedo conservar la numeración de páginas al adjuntar documentos?
 
- Sí, puede conservar la numeración de páginas utilizando el`convertNumPageFieldsToPageRef` método y actualizar el diseño de la página.
+ Sí, puede conservar la numeración de páginas utilizando el`convertNumPageFieldsToPageRef` método y actualización del diseño de la página.
 
 ### ¿Qué es el comportamiento de estilo inteligente?
 
- Smart Style Behavior ayuda a mantener estilos consistentes al agregar documentos. Úselo con`ImportFormatOptions` para mejores resultados.
+ El comportamiento de estilo inteligente ayuda a mantener estilos consistentes al adjuntar documentos. Úselo con`ImportFormatOptions` Para obtener mejores resultados.
 
 ### ¿Cómo puedo manejar cuadros de texto al adjuntar documentos?
 
-Colocar`importFormatOptions.setIgnoreTextBoxes(false)` para incluir cuadros de texto al agregar.
+Colocar`importFormatOptions.setIgnoreTextBoxes(false)` para incluir cuadros de texto durante la adición.
 
 ### ¿Qué pasa si quiero vincular/desvincular encabezados y pies de página entre documentos?
 

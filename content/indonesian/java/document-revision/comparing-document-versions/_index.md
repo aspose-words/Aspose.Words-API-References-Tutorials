@@ -14,23 +14,23 @@ Perbandingan dokumen melibatkan analisis dua atau lebih versi dokumen untuk meng
 
 ## Menyiapkan Lingkungan Pengembangan Anda
 
-Sebelum kita mendalami perbandingan dokumen, Anda perlu menyiapkan lingkungan pengembangan Anda. Pastikan Anda telah menginstal Aspose.Words untuk Java. Anda dapat mengunduhnya dari situs web[Di Sini](https://releases.aspose.com/words/java/).
+Sebelum kita menyelami perbandingan dokumen, Anda perlu menyiapkan lingkungan pengembangan Anda. Pastikan Anda telah menginstal Aspose.Words untuk Java. Anda dapat mengunduhnya dari situs web[Di Sini](https://releases.aspose.com/words/java/).
 
 ## Memuat Dokumen
 
-Untuk membandingkan versi dokumen, Anda perlu memuat dokumen yang ingin Anda analisis terlebih dahulu. Aspose.Words untuk Java mempermudah hal ini dengan kemampuan memuat dokumennya yang kuat.
+Untuk membandingkan versi dokumen, pertama-tama Anda perlu memuat dokumen yang ingin Anda analisis. Aspose.Words untuk Java mempermudah hal ini dengan kemampuan pemuatan dokumennya yang tangguh.
 
 ```java
 // Muat dokumen asli
 Document originalDocument = new Document("original.docx");
 
-// Muat dokumen yang direvisi
+// Muat dokumen yang telah direvisi
 Document revisedDocument = new Document("revised.docx");
 ```
 
 ## Membandingkan Versi Dokumen
 
-Sekarang setelah dokumen kita dimuat, mari kita lanjutkan dengan perbandingan. Aspose.Words for Java menyediakan metode langsung untuk ini.
+Sekarang setelah dokumen kita dimuat, mari kita lanjutkan dengan perbandingan. Aspose.Words untuk Java menyediakan metode yang mudah untuk ini.
 
 ```java
 // Bandingkan dokumennya
@@ -40,19 +40,19 @@ comparer.compare();
 
 ## Mengidentifikasi Perubahan
 
-Setelah perbandingan, penting untuk mengidentifikasi perubahan yang dilakukan antara kedua dokumen tersebut. Aspose.Words untuk Java membantu kami mengambil informasi ini.
+Setelah melakukan perbandingan, penting untuk mengidentifikasi perubahan yang terjadi antara kedua dokumen. Aspose.Words for Java membantu kami mengambil informasi ini.
 
 ```java
-// Dapatkan daftar perubahan
+// Dapatkan daftar perubahannya
 List<DocumentChange> changes = comparer.getChanges();
 ```
 
 ## Menerapkan Perubahan
 
-Setelah Anda mengidentifikasi perubahannya, Anda dapat memilih untuk menerapkannya secara selektif atau sekaligus pada salah satu dokumen.
+Setelah Anda mengidentifikasi perubahan, Anda dapat memilih untuk menerapkannya secara selektif atau sekaligus pada salah satu dokumen.
 
 ```java
-// Terapkan perubahan pada dokumen asli
+// Terapkan perubahan ke dokumen asli
 comparer.applyChangesToOriginalDocument();
 ```
 
@@ -67,26 +67,26 @@ originalDocument.save("compared_document.docx");
 
 ## Kesimpulan
 
-Membandingkan versi dokumen adalah tugas penting dalam banyak skenario, dan Aspose.Words untuk Java menyederhanakan proses ini. Dengan API yang kuat, Anda dapat memuat, membandingkan, mengidentifikasi perubahan, menerapkannya, dan menyimpan dokumen yang dibandingkan secara efisien. Panduan ini telah memberikan panduan langkah demi langkah dari keseluruhan proses.
+Membandingkan versi dokumen merupakan tugas penting dalam banyak skenario, dan Aspose.Words untuk Java menyederhanakan proses ini. Dengan API yang tangguh, Anda dapat memuat, membandingkan, mengidentifikasi perubahan, menerapkannya, dan menyimpan dokumen yang dibandingkan secara efisien. Panduan ini telah menyediakan panduan langkah demi langkah untuk keseluruhan proses.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
-### Seberapa akurat Aspose.Words for Java dalam mengidentifikasi perubahan?
+### Seberapa akurat Aspose.Words untuk Java dalam mengidentifikasi perubahan?
 
-Aspose.Words untuk Java sangat akurat dalam mengidentifikasi perubahan antar versi dokumen. Ia menggunakan algoritma canggih untuk memastikan presisi.
+Aspose.Words untuk Java sangat akurat dalam mengidentifikasi perubahan antar versi dokumen. Ia menggunakan algoritme canggih untuk memastikan ketepatan.
 
-### Bisakah saya menyesuaikan cara penerapan perubahan pada dokumen?
+### Dapatkah saya menyesuaikan cara penerapan perubahan pada dokumen?
 
-Ya, Anda dapat menyesuaikan cara penerapan perubahan sesuai dengan kebutuhan spesifik Anda.
+Ya, Anda dapat menyesuaikan cara penerapan perubahan berdasarkan kebutuhan spesifik Anda.
 
 ### Apakah ada batasan ukuran dokumen yang dapat dibandingkan menggunakan Aspose.Words untuk Java?
 
-Aspose.Words untuk Java dapat menangani dokumen dengan berbagai ukuran, sehingga cocok untuk perbandingan skala kecil dan besar.
+Aspose.Words untuk Java dapat menangani dokumen dengan berbagai ukuran, membuatnya cocok untuk perbandingan skala kecil dan besar.
 
 ### Apakah Aspose.Words untuk Java mendukung format dokumen lain selain DOCX?
 
-Ya, Aspose.Words untuk Java mendukung berbagai format dokumen, termasuk DOC, RTF, HTML, dan lainnya.
+Ya, Aspose.Words untuk Java mendukung berbagai format dokumen, termasuk DOC, RTF, HTML, dan banyak lagi.
 
 ### Di mana saya dapat mengakses dokumentasi Aspose.Words untuk Java?
 
-Anda dapat menemukan dokumentasi komprehensif untuk Aspose.Words untuk Java di[Di Sini](https://reference.aspose.com/words/java/).
+ Anda dapat menemukan dokumentasi lengkap untuk Aspose.Words untuk Java di[Di Sini](https://reference.aspose.com/words/java/).

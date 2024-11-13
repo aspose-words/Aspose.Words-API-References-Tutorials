@@ -74,7 +74,7 @@ Végül a dokumentumot rögzített HTML fájlként mentjük el. Itt történik a
  Használjuk a`Save` módszerrel mentheti a dokumentumot a konfigurált mentési beállításokkal.
 
 ```csharp
-//Konvertálja a dokumentumot rögzített HTML formátumba
+// Konvertálja a dokumentumot rögzített HTML formátumba
 doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html", saveOptions);
 ```
 

@@ -9,7 +9,7 @@ url: /sv/net/working-with-section/delete-header-footer-content/
 ---
 ## Introduktion
 
-Hej där, Word-dokumentstråkare! 📝 Har du någonsin behövt rensa ut sidhuvuden och sidfötter i ett Word-dokument men blivit fastlåst av den tråkiga manuella ansträngningen? Nåväl, oroa dig inte längre! Med Aspose.Words för .NET kan du automatisera denna uppgift med bara några få steg. Den här guiden leder dig genom processen att ta bort innehåll i sidhuvud och sidfot från ett Word-dokument med Aspose.Words för .NET. Är du redo att rensa i dessa dokument? Låt oss komma igång!
+Hej där, Word-dokumentstråkare! 📝 Har du någonsin behövt rensa ut sidhuvuden och sidfötter i ett Word-dokument men blivit fastlåst av den tråkiga manuella ansträngningen? Nåväl, oroa dig inte mer! Med Aspose.Words för .NET kan du automatisera denna uppgift med bara några få steg. Den här guiden leder dig genom processen att ta bort innehåll i sidhuvud och sidfot från ett Word-dokument med Aspose.Words för .NET. Är du redo att rensa i dessa dokument? Låt oss komma igång!
 
 ## Förutsättningar
 

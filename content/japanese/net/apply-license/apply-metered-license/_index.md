@@ -2,7 +2,7 @@
 title: 従量制ライセンスを適用する
 linktitle: 従量制ライセンスを適用する
 second_title: Aspose.Words ドキュメント処理 API
-description: ステップバイステップ ガイドを使用して、Aspose.Words for .NET で従量制ライセンスを適用する方法を学びます。柔軟でコスト効率の高いライセンスを簡単に実現できます。
+description: ステップバイステップ ガイドを使用して、Aspose.Words for .NET で従量制ライセンスを適用する方法を学びます。柔軟でコスト効率の高いライセンスを簡単に取得できます。
 type: docs
 weight: 10
 url: /ja/net/apply-license/apply-metered-license/
@@ -46,7 +46,7 @@ Metered metered = new Metered();
 metered.SetMeteredKey("your_public_key", "your_private_key");
 ```
 
-交換する`"your_public_key"`そして`"your_private_key"`Aspose から受け取った実際のキーを使用します。この手順では基本的に、従量制ライセンスを使用する必要があることを Aspose に伝えます。
+交換する`"your_public_key"`そして`"your_private_key"` Aspose から受け取った実際のキーを使用します。この手順では基本的に、従量制ライセンスを使用する必要があることを Aspose に伝えます。
 
 ## ステップ3: ドキュメントを読み込む
 

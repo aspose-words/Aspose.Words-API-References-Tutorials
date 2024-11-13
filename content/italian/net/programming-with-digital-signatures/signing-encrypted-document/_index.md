@@ -1,28 +1,28 @@
 ---
-title: Firma di documenti Word crittografati
-linktitle: Firma di documenti Word crittografati
+title: Firma di un documento Word crittografato
+linktitle: Firma di un documento Word crittografato
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come firmare documenti Word crittografati utilizzando Aspose.Words per .NET con questa guida dettagliata passo passo. Perfetto per gli sviluppatori.
+description: Scopri come firmare documenti Word crittografati usando Aspose.Words per .NET con questa guida dettagliata, passo dopo passo. Perfetta per gli sviluppatori.
 type: docs
 weight: 10
 url: /it/net/programming-with-digital-signatures/signing-encrypted-document/
 ---
 ## Introduzione
 
-Ti sei mai chiesto come firmare un documento Word crittografato? Oggi esamineremo questo processo utilizzando Aspose.Words per .NET. Allacciate le cinture e preparatevi per un tutorial dettagliato, coinvolgente e divertente!
+Ti sei mai chiesto come firmare un documento Word crittografato? Oggi, ti guideremo attraverso questo processo usando Aspose.Words per .NET. Allacciati le cinture e preparati per un tutorial dettagliato, coinvolgente e divertente!
 
 ## Prerequisiti
 
-Prima di immergerti nel codice, assicuriamoci di avere tutto ciò di cui hai bisogno:
+Prima di immergerci nel codice, assicuriamoci di avere tutto ciò di cui hai bisogno:
 
-1.  Aspose.Words per .NET: scarica e installa da[Qui](https://releases.aspose.com/words/net/).
+1.  Aspose.Words per .NET: Scarica e installa da[Qui](https://releases.aspose.com/words/net/).
 2. Visual Studio: assicurati di averlo installato.
 3. Un certificato valido: avrai bisogno di un file di certificato .pfx.
-4. Conoscenza di base di C#: la comprensione delle nozioni di base renderà questo tutorial più fluido.
+4. Conoscenze di base del linguaggio C#: comprendere le basi renderà questo tutorial più semplice.
 
-## Importa spazi dei nomi
+## Importazione degli spazi dei nomi
 
-Per prima cosa importiamo gli spazi dei nomi necessari. Questi sono fondamentali per accedere alle funzionalità di Aspose.Words.
+Per prima cosa, importiamo i namespace necessari. Sono essenziali per accedere alle funzionalità di Aspose.Words.
 
 ```csharp
 using System;
@@ -31,51 +31,51 @@ using Aspose.Words.Saving;
 using Aspose.Words.DigitalSignatures;
 ```
 
-Ora suddividiamo il processo in passaggi semplici e gestibili.
+Ora scomponiamo il processo in passaggi semplici e gestibili.
 
-## Passaggio 1: impostazione del progetto
+## Fase 1: Impostazione del progetto
 
-Per prima cosa, configura il tuo progetto Visual Studio. Apri Visual Studio e crea una nuova applicazione console C#. Assegnagli un nome descrittivo come "SignEncryptedWordDoc".
+Per prima cosa, imposta il tuo progetto Visual Studio. Apri Visual Studio e crea una nuova C# Console Application. Assegnale un nome descrittivo, come "SignEncryptedWordDoc".
 
-## Passaggio 2: aggiunta di Aspose.Words al tuo progetto
+## Passaggio 2: aggiunta di Aspose.Words al progetto
 
-Successivamente, dobbiamo aggiungere Aspose.Words al tuo progetto. Esistono alcuni modi per eseguire questa operazione, ma l'uso di NuGet è il più semplice. 
+Poi, dobbiamo aggiungere Aspose.Words al tuo progetto. Ci sono alcuni modi per farlo, ma usare NuGet è il più semplice. 
 
-1. Aprire la console di gestione pacchetti NuGet da Strumenti > Gestione pacchetti NuGet > Console di gestione pacchetti.
-2. Esegui il seguente comando:
+1. Aprire la console di NuGet Package Manager da Strumenti > NuGet Package Manager > Console di Package Manager.
+2. Eseguire il seguente comando:
 
 ```powershell
 Install-Package Aspose.Words
 ```
 
-## Passaggio 3: preparazione della directory dei documenti
+## Fase 3: Preparazione della directory dei documenti
 
-Avrai bisogno di una directory in cui archiviare i tuoi documenti e certificati Word. Creiamone uno.
+Avrai bisogno di una directory per archiviare i tuoi documenti Word e certificati. Creiamone una.
 
-1. Crea una directory sul tuo computer. Per semplicità, chiamiamolo "DocumentDirectory".
+1. Crea una directory sul tuo computer. Per semplicità, chiamiamola "DocumentDirectory".
 2. Inserisci il tuo documento Word (ad esempio "Document.docx") e il tuo certificato .pfx (ad esempio "morzal.pfx") in questa directory.
 
-## Passaggio 4: scrivere il codice
+## Fase 4: Scrittura del codice
 
- Ora tuffiamoci nel codice. Apri il tuo`Program.cs` file e inizia impostando il percorso della directory dei documenti e inizializzando il file`SignOptions` con la password di decrittazione.
+ Ora, immergiamoci nel codice. Apri il tuo`Program.cs` file e inizia impostando il percorso verso la directory del documento e inizializzando il`SignOptions` con la password di decrittazione.
 
 ```csharp
-// Il percorso della directory dei documenti.
+// Percorso verso la directory dei documenti.
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 SignOptions signOptions = new SignOptions { DecryptionPassword = "decryptionPassword" };
 ```
 
-## Passaggio 5: caricamento del certificato
+## Fase 5: Caricamento del certificato
 
- Successivamente, carica il certificato utilizzando il file`CertificateHolder`classe. Ciò richiederà il percorso del file .pfx e la password del certificato.
+ Quindi, carica il tuo certificato utilizzando`CertificateHolder`classe. Ciò richiederà il percorso al tuo file .pfx e la password del certificato.
 
 ```csharp
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
 ```
 
-## Passaggio 6: firma del documento
+## Fase 6: Firma del documento
 
- Infine, utilizzare il`DigitalSignatureUtil.Sign` metodo per firmare il tuo documento Word crittografato. Questo metodo richiede le opzioni file di input, file di output, titolare del certificato e firma.
+ Infine, utilizzare il`DigitalSignatureUtil.Sign` metodo per firmare il tuo documento Word crittografato. Questo metodo richiede il file di input, il file di output, il titolare del certificato e le opzioni di firma.
 
 ```csharp
 DigitalSignatureUtil.Sign(
@@ -87,25 +87,25 @@ DigitalSignatureUtil.Sign(
 
 ## Passaggio 7: esecuzione del codice
 
-Salva il file ed esegui il progetto. Se tutto è impostato correttamente, dovresti vedere il documento firmato nella directory specificata.
+Salva il tuo file ed esegui il progetto. Se tutto è impostato correttamente, dovresti vedere il tuo documento firmato nella directory specificata.
 
 ## Conclusione
 
-Ed ecco qua! Hai firmato con successo un documento Word crittografato utilizzando Aspose.Words per .NET. Con questa potente libreria, la firma digitale diventa un gioco da ragazzi, anche per i file crittografati. Buona programmazione!
+Ed ecco fatto! Hai firmato con successo un documento Word crittografato usando Aspose.Words per .NET. Con questa potente libreria, la firma digitale diventa un gioco da ragazzi, anche per i file crittografati. Buona codifica!
 
 ## Domande frequenti
 
-### Posso utilizzare un tipo diverso di certificato?
-Sì, Aspose.Words supporta vari tipi di certificati, purché siano nel formato corretto.
+### Posso utilizzare un tipo di certificato diverso?
+Sì, Aspose.Words supporta vari tipi di certificati, a condizione che siano nel formato corretto.
 
 ### È possibile firmare più documenti contemporaneamente?
-Assolutamente! È possibile scorrere una raccolta di documenti e firmarli ciascuno a livello di codice.
+Assolutamente! Puoi scorrere una raccolta di documenti e firmare ciascuno di essi in modo programmatico.
 
 ### Cosa succede se dimentico la password di decrittazione?
-Sfortunatamente, senza la password di decrittazione non potrai firmare il documento.
+Purtroppo senza la password di decrittazione non sarà possibile firmare il documento.
 
 ### Posso aggiungere una firma visibile al documento?
-Sì, Aspose.Words ti consente anche di aggiungere firme digitali visibili.
+Sì, Aspose.Words consente anche di aggiungere firme digitali visibili.
 
-### C'è un modo per verificare la firma?
- Sì, puoi usare il`DigitalSignatureUtil.Verify` Metodo per verificare le firme.
+### Esiste un modo per verificare la firma?
+ Sì, puoi usare il`DigitalSignatureUtil.Verify` metodo per verificare le firme.

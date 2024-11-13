@@ -36,7 +36,7 @@ Most, hogy importáltuk az alapvető névtereket, folytassuk a dokumentumunk lé
 
 ## 1. lépés: Hozzon létre egy új Word-dokumentumot
 
-Kezdjük egy új Word-dokumentum létrehozásával. Ez lesz az alap, ahová beillesztjük a területdiagramunkat.
+Kezdjük egy új Word dokumentum létrehozásával. Ez lesz az alap, ahová beillesztjük a területdiagramunkat.
 
 ```csharp
 // A dokumentumkönyvtár elérési útja

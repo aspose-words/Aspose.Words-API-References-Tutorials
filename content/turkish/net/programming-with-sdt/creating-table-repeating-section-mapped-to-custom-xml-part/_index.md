@@ -1,21 +1,21 @@
 ---
-title: Özel Xml Parçasına Eşlenen Tablo Yinelenen Bölüm Oluşturma
-linktitle: Özel Xml Parçasına Eşlenen Tablo Yinelenen Bölüm Oluşturma
+title: Özel Xml Parçasına Eşlenen Tekrarlayan Bölüm Tablosu Oluşturma
+linktitle: Özel Xml Parçasına Eşlenen Tekrarlayan Bölüm Tablosu Oluşturma
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak bir Word belgesinde CustomXmlPart'a eşlenen yinelenen bölüm içeren bir tablonun nasıl oluşturulacağını öğrenin.
+description: Aspose.Words for .NET kullanarak bir Word belgesinde CustomXmlPart'a eşlenen tekrarlayan bir bölüm içeren bir tablonun nasıl oluşturulacağını öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-sdt/creating-table-repeating-section-mapped-to-custom-xml-part/
 ---
 ## giriiş
 
-Bu eğitimde, Aspose.Words for .NET'i kullanarak özel bir XML parçasıyla eşlenen yinelenen bölüm içeren bir tablo oluşturma sürecini anlatacağız. Bu özellikle yapılandırılmış verilere dayalı dinamik olarak belge oluşturmak için kullanışlıdır.
+Bu eğitimde, Aspose.Words for .NET kullanarak özel bir XML parçasına eşlenen tekrarlayan bir bölüme sahip bir tablo oluşturma sürecini ele alacağız. Bu, özellikle yapılandırılmış verilere dayalı belgeleri dinamik olarak oluşturmak için yararlıdır.
 
-## Önkoşullar
+## Ön koşullar
 
 Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
-1.  Aspose.Words for .NET kütüphanesi kuruldu. adresinden indirebilirsiniz.[Web sitesi](https://releases.aspose.com/words/net/).
-2. C# ve XML'in temel anlayışı.
+1.  Aspose.Words for .NET kütüphanesi yüklendi. Bunu şuradan indirebilirsiniz:[Aspose web sitesi](https://releases.aspose.com/words/net/).
+2. C# ve XML hakkında temel bilgi.
 
 ## Ad Alanlarını İçe Aktar
 
@@ -27,9 +27,9 @@ using Aspose.Words.Markup;
 using Aspose.Words.Tables;
 ```
 
-## 1. Adım: Document ve DocumentBuilder'ı başlatın
+## Adım 1: Belgeyi ve DocumentBuilder'ı Başlatın
 
- Öncelikle yeni bir belge oluşturun ve bir başlangıç değeri oluşturun.`DocumentBuilder`:
+ İlk olarak yeni bir belge oluşturun ve başlatın`DocumentBuilder`:
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -38,9 +38,9 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 2. Adım: Özel XML Parçası Ekleme
+## Adım 2: Özel XML Parçası Ekle
 
-Belgeye özel bir XML bölümü ekleyin. Bu XML, tablomuza eşlemek istediğimiz verileri içerir:
+Belgeye özel bir XML parçası ekleyin. Bu XML, tablomuza eşlemek istediğimiz verileri içerir:
 
 ```csharp
 CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
@@ -51,7 +51,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add("Books",
 
 ## Adım 3: Tablo Yapısını Oluşturun
 
- Daha sonra şunu kullanın:`DocumentBuilder` tablo başlığını oluşturmak için:
+ Sonra şunu kullanın:`DocumentBuilder` tablo başlığını oluşturmak için:
 
 ```csharp
 Table table = builder.StartTable();
@@ -63,9 +63,9 @@ builder.EndRow();
 builder.EndTable();
 ```
 
-## Adım 4: Yinelenen Bölüm Oluşturun
+## Adım 4: Tekrarlayan Bölüm Oluşturun
 
- Bir oluştur`StructuredDocumentTag` (SDT) yinelenen bölüm için ve bunu XML verileriyle eşleyin:
+ Bir tane oluştur`StructuredDocumentTag` (SDT) tekrar eden bölüm için ve bunu XML verilerine eşleyin:
 
 ```csharp
 StructuredDocumentTag repeatingSectionSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSection, MarkupLevel.Row);
@@ -73,9 +73,9 @@ repeatingSectionSdt.XmlMapping.SetMapping(xmlPart, "/books[1]/book", "");
 table.AppendChild(repeatingSectionSdt);
 ```
 
-## Adım 5: Yinelenen Bölüm Öğesi Oluşturun
+## Adım 5: Tekrarlayan Bölüm Öğesi Oluşturun
 
-Yinelenen bölüm öğesi için bir SDT oluşturun ve bunu yinelenen bölüme ekleyin:
+Tekrar eden bölüm öğesi için bir SDT oluşturun ve bunu tekrar eden bölüme ekleyin:
 
 ```csharp
 StructuredDocumentTag repeatingSectionItemSdt = new StructuredDocumentTag(doc, SdtType.RepeatingSectionItem, MarkupLevel.Row);
@@ -84,9 +84,9 @@ Row row = new Row(doc);
 repeatingSectionItemSdt.AppendChild(row);
 ```
 
-## Adım 6: XML Verilerini Tablo Hücreleriyle Eşleyin
+## Adım 6: XML Verilerini Tablo Hücrelerine Eşleyin
 
-Başlık ve yazar için SDT'ler oluşturun, bunları XML verileriyle eşleştirin ve satıra ekleyin:
+Başlık ve yazar için SDT'ler oluşturun, bunları XML verilerine eşleyin ve satıra ekleyin:
 
 ```csharp
 StructuredDocumentTag titleSdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Cell);
@@ -108,15 +108,15 @@ doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXm
 
 ## Çözüm
 
-Bu adımları izleyerek, Aspose.Words for .NET'i kullanarak özel bir XML parçasına eşlenen yinelenen bölümü olan bir tabloyu başarıyla oluşturdunuz. Bu, yapılandırılmış verilere dayalı dinamik içerik oluşturmaya olanak tanıyarak belge oluşturmayı daha esnek ve güçlü hale getirir.
+Bu adımları izleyerek, Aspose.Words for .NET kullanarak özel bir XML parçasına eşlenen tekrarlayan bir bölüme sahip bir tabloyu başarıyla oluşturdunuz. Bu, yapılandırılmış verilere dayalı dinamik içerik oluşturulmasına olanak tanır ve belge oluşturmayı daha esnek ve güçlü hale getirir.
 
-## SSS'ler
+## SSS
 
 ### StructuredDocumentTag (SDT) nedir?
-İçerik kontrolü olarak da bilinen SDT, bir belgede yapılandırılmış verileri barındırmak için kullanılan sınırlı bir bölgedir.
+İçerik denetimi olarak da bilinen SDT, bir belgede yapılandırılmış verileri barındırmak için kullanılan sınırlı bir bölgedir.
 
-### Özel XML bölümünde diğer veri türlerini kullanabilir miyim?
-Evet, özel XML parçanızı istediğiniz veri türüyle yapılandırabilir ve bunları buna göre eşleyebilirsiniz.
+### Özel XML kısmında başka veri tipleri kullanabilir miyim?
+Evet, özel XML parçanızı herhangi bir veri türüyle yapılandırabilir ve buna göre eşleyebilirsiniz.
 
-### Yinelenen bölüme nasıl daha fazla satır eklerim?
-Yinelenen bölüm, eşlenen XML yolundaki her öğe için satır yapısını otomatik olarak çoğaltır.
+### Tekrarlanan bölüme nasıl daha fazla satır eklerim?
+Tekrarlanan bölüm, eşlenen XML yolundaki her öğe için satır yapısını otomatik olarak çoğaltır.

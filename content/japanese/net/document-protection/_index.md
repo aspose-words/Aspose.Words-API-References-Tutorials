@@ -23,4 +23,4 @@ Aspose.Words for .NET ドキュメント保護チュートリアルでは、実�
 | [Word 文書の制限なしセクション](./unrestricted-section/) | このステップバイステップ ガイドに従って、Aspose.Words for .NET を使用して Word 文書内の特定のセクションのロックを解除します。機密コンテンツを保護するのに最適です。 |
 | [Word 文書の保護タイプを取得する](./get-protection-type/) | Aspose.Words for .NET を使用して Word 文書の保護タイプを確認する方法を学びます。ステップバイステップ ガイド、コード例、FAQ が含まれています。 |
 | [Word 文書の読み取り専用保護](./read-only-protection/) | Aspose.Words for .NET を使用して読み取り専用保護を適用し、Word 文書を保護する方法を学びます。ステップ バイ ステップ ガイドに従ってください。 |
-| [読み取り専用制限を解除](./remove-read-only-restriction/) | 詳細なステップバイステップ ガイドに従って、Aspose.Words for .NET を使用して Word 文書から読み取り専用制限を簡単に削除できます。開発者に最適です。 |
+| [読み取り専用制限を解除](./remove-read-only-restriction/) | 詳細なステップバイステップ ガイドに従って、Aspose.Words for .NET を使用して Word ドキュメントから読み取り専用制限を簡単に削除できます。開発者に最適です。 |

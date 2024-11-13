@@ -17,7 +17,7 @@ url: /ja/net/programming-with-document-options-and-settings/optimize-for-ms-word
 
 1.  Aspose.Words for .NET: 次のようなことができます[ここからダウンロード](https://releases.aspose.com/words/net/).
 2. 開発環境: Visual Studio または .NET をサポートするその他の IDE。
-3. C# の基本知識: 魔法使いになる必要はありませんが、C# の使い方を知っておくと役立ちます。
+3. C# の基礎知識: 魔法使いになる必要はありませんが、C# の使い方を知っておくと役立ちます。
 
 ## 名前空間のインポート
 
@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-さて、ツールの準備ができたので、MS Word 用にドキュメントを最適化する手順を順に見ていきましょう。
+さて、ツールの準備ができたので、MS Word 用にドキュメントを最適化する手順を追って説明しましょう。
 
 ## ステップ1: ドキュメントディレクトリの設定
 
@@ -70,7 +70,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.OptimizeForMsWord.docx
 ## よくある質問
 
 ### Aspose.Words for .NET とは何ですか?
-Aspose.Words for .NET は、開発者がプログラムによって Word 文書を作成、操作、変換できるようにする強力なライブラリです。
+Aspose.Words for .NET は、開発者がプログラムで Word 文書を作成、操作、変換できるようにする強力なライブラリです。
 
 ### 他のバージョンの MS Word 用に最適化できますか?
 もちろんです！Aspose.Wordsは複数のバージョンをサポートしています。`MsWordVersion.Word2016`必要なバージョンを選択してください。

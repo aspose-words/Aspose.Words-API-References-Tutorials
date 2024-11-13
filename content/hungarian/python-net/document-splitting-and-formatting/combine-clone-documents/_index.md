@@ -127,7 +127,7 @@ Igen, egy sekély klónozással csak a dokumentum szerkezetét másolhatja a tar
  Használja ki a`range.replace()` módszert, valamint a megfelelő lehetőségeket a szöveg hatékony megtalálásához és cseréjéhez.
 
 ### Az Aspose.Words támogatja a formázás módosítását?
-Természetesen módosíthatja a formázást olyan módszerekkel, mint pl`run.font.size`és`run.font.bold`.
+Természetesen módosíthatja a formázást olyan módszerekkel, mint pl`run.font.size` és`run.font.bold`.
 
 ### Hol érhetem el az Aspose.Words dokumentációját?
  A teljes körű dokumentációt a címen találja[Aspose.Words for Python API Reference](https://reference.aspose.com/words/python-net/).

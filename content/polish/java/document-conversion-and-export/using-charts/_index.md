@@ -2,7 +2,7 @@
 title: Korzystanie z wykresów w Aspose.Words dla Java
 linktitle: Korzystanie z wykresów
 second_title: Aspose.Words API przetwarzania dokumentów Java
-description: Dowiedz się, jak tworzyć i dostosowywać wykresy w Aspose.Words dla Java. Przeglądaj typy wykresów, formatowanie i właściwości osi na potrzeby wizualizacji danych.
+description: Dowiedz się, jak tworzyć i dostosowywać wykresy w Aspose.Words for Java. Poznaj typy wykresów, formatowanie i właściwości osi do wizualizacji danych.
 type: docs
 weight: 12
 url: /pl/java/document-conversion-and-export/using-charts/
@@ -10,7 +10,7 @@ url: /pl/java/document-conversion-and-export/using-charts/
 
 ## Wprowadzenie do korzystania z wykresów w Aspose.Words dla Java
 
-tym samouczku odkryjemy, jak pracować z wykresami za pomocą Aspose.Words dla Java. Dowiesz się, jak tworzyć różne typy wykresów, dostosowywać właściwości osi, formatować etykiety danych i nie tylko. Zanurzmy się!
+W tym samouczku pokażemy, jak pracować z wykresami przy użyciu Aspose.Words for Java. Dowiesz się, jak tworzyć różne typy wykresów, dostosowywać właściwości osi, formatować etykiety danych i nie tylko. Zanurzmy się!
 
 ## Tworzenie wykresu liniowego
 
@@ -45,7 +45,7 @@ doc.save("Your Directory Path" + "WorkingWithCharts.FormatNumberOfDataLabel.docx
 
 ## Tworzenie innych typów wykresów
 
-Korzystając z podobnych technik, możesz tworzyć różne typy wykresów, takie jak wykresy kolumnowe, obszarowe, bąbelkowe, punktowe i inne. Oto przykład wstawienia prostego wykresu kolumnowego:
+Możesz tworzyć różne typy wykresów, takie jak wykresy kolumnowe, obszarowe, bąbelkowe, punktowe i inne, używając podobnych technik. Oto przykład wstawiania prostego wykresu kolumnowego:
 
 ```java
 Document doc = new Document();
@@ -66,7 +66,7 @@ doc.save("Your Directory Path" + "WorkingWithCharts.InsertSimpleColumnChart.docx
 
 ## Dostosowywanie właściwości osi
 
-Możesz dostosować właściwości osi, takie jak zmiana typu osi, ustawienie znaczników, formatowanie etykiet i inne. Oto przykład definiowania właściwości osi XY:
+Możesz dostosować właściwości osi, takie jak zmiana typu osi, ustawienie znaczników, formatowanie etykiet i wiele więcej. Oto przykład definiowania właściwości osi XY:
 
 ```java
 Document doc = new Document();
@@ -74,15 +74,15 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Shape shape = builder.insertChart(ChartType.AREA, 432.0, 252.0);
 Chart chart = shape.getChart();
 
-// Wyczyść serię domyślną i dodaj swoje dane.
+// Wyczyść domyślne serie i dodaj swoje dane.
 
 ChartAxis xAxis = chart.getAxisX();
 ChartAxis yAxis = chart.getAxisY();
 
-// Zmień oś X tak, aby była kategorią zamiast datą.
+// Zmień oś X tak, aby przedstawiała kategorię zamiast daty.
 xAxis.setCategoryType(AxisCategoryType.CATEGORY);
 xAxis.setCrosses(AxisCrosses.CUSTOM);
-xAxis.setCrossesAt(3.0); //Mierzone w jednostkach wyświetlania osi Y (setki).
+xAxis.setCrossesAt(3.0); // Mierzone w jednostkach wyświetlanych na osi Y (setkach).
 xAxis.setReverseOrder(true);
 xAxis.setMajorTickMark(AxisTickMark.CROSS);
 xAxis.setMinorTickMark(AxisTickMark.OUTSIDE);
@@ -100,7 +100,7 @@ doc.save("Your Directory Path" + "WorkingWithCharts.DefineXYAxisProperties.docx"
 
 ## Formatowanie etykiet danych
 
-Etykiety danych można formatować przy użyciu różnych formatów liczb. Oto przykład:
+Możesz formatować etykiety danych różnymi formatami liczb. Oto przykład:
 
 ```java
 Document doc = new Document();
@@ -108,39 +108,39 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Shape shape = builder.insertChart(ChartType.COLUMN, 432.0, 252.0);
 Chart chart = shape.getChart();
 
-// Wyczyść serię domyślną i dodaj swoje dane.
+// Wyczyść domyślne serie i dodaj swoje dane.
 
 chart.getAxisY().getNumberFormat().setFormatCode("#,##0");
 
 doc.save("Your Directory Path" + "WorkingWithCharts.NumberFormatForAxis.docx");
 ```
 
-## Dodatkowe dostosowania wykresów
+## Dodatkowe dostosowania wykresu
 
-Możesz dodatkowo dostosować swoje wykresy, dostosowując granice, jednostki odstępów między etykietami, ukrywając osie wykresu i nie tylko. Przejrzyj udostępnione fragmenty kodu, aby dowiedzieć się więcej o tych opcjach.
+Możesz dalej dostosowywać swoje wykresy, dostosowując granice, jednostki interwału między etykietami, ukrywając osie wykresu i nie tylko. Przeglądaj dostarczone fragmenty kodu, aby dowiedzieć się więcej o tych opcjach.
 
 ## Wniosek
 
-W tym samouczku omówiliśmy, jak pracować z wykresami za pomocą Aspose.Words dla Java. Nauczyłeś się już, jak tworzyć różne typy wykresów, dostosowywać właściwości osi, formatować etykiety danych i nie tylko. Aspose.Words dla Java zapewnia potężne narzędzia do dodawania wizualnych reprezentacji danych do dokumentów, poprawiając sposób prezentacji informacji.
+tym samouczku przyjrzeliśmy się sposobowi pracy z wykresami przy użyciu Aspose.Words for Java. Nauczyłeś się, jak tworzyć różne typy wykresów, dostosowywać właściwości osi, formatować etykiety danych i nie tylko. Aspose.Words for Java udostępnia potężne narzędzia do dodawania wizualnych reprezentacji danych do dokumentów, ulepszając sposób prezentacji informacji.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Jak dodać wiele serii do wykresu?
+### Jak mogę dodać wiele serii do wykresu?
 
- Możesz dodać wiele serii do wykresu za pomocą opcji`chart.getSeries().add()` metoda. Pamiętaj, aby określić nazwę serii, kategorie i wartości danych.
+ Do wykresu można dodać wiele serii za pomocą`chart.getSeries().add()` metoda. Upewnij się, że określiłeś nazwę serii, kategorie i wartości danych.
 
-### Jak sformatować etykiety danych przy użyciu niestandardowych formatów liczb?
+### Jak mogę sformatować etykiety danych, używając niestandardowych formatów liczb?
 
-Etykiety danych można formatować, uzyskując dostęp do pliku`DataLabels` właściwości serii i ustawienie żądanego kodu formatu za pomocą`getNumberFormat().setFormatCode()`.
+ Możesz sformatować etykiety danych, uzyskując dostęp do`DataLabels` właściwości serii i ustawienie żądanego kodu formatu za pomocą`getNumberFormat().setFormatCode()`.
 
 ### Jak dostosować właściwości osi na wykresie?
 
- Możesz dostosować właściwości osi, takie jak typ, znaczniki, etykiety i inne, uzyskując dostęp do`ChartAxis` właściwości jak`setCategoryType()`, `setCrosses()` , I`setMajorTickMark()`.
+ Możesz dostosować właściwości osi, takie jak typ, znaczniki, etykiety i inne, uzyskując dostęp do`ChartAxis` właściwości takie jak`setCategoryType()`, `setCrosses()` , I`setMajorTickMark()`.
 
-### Jak mogę utworzyć inne typy wykresów, np. wykresy punktowe lub warstwowe?
+### Jak mogę tworzyć inne typy wykresów, np. wykresy punktowe lub wykresy powierzchniowe?
 
- Można tworzyć różne typy wykresów, określając odpowiednie`ChartType` podczas wstawiania wykresu za pomocą`builder.insertChart(ChartType.TYPE, width, height)`.
+Możesz tworzyć różne typy wykresów, określając odpowiednie`ChartType` podczas wstawiania wykresu za pomocą`builder.insertChart(ChartType.TYPE, width, height)`.
 
-### Jak ukryć oś wykresu?
+### Jak mogę ukryć oś wykresu?
 
- Możesz ukryć oś wykresu, ustawiając opcję`setHidden(true)` właściwość osi.
+ Możesz ukryć oś wykresu, ustawiając`setHidden(true)` Własność osi.

@@ -1,27 +1,27 @@
 ---
 title: Ignoruj pola tekstowe
 linktitle: Ignoruj pola tekstowe
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Scal dokumenty Word za pomocą Aspose.Words dla .NET, zapewniając zachowanie formatowania pól tekstowych. Postępuj zgodnie z tym przewodnikiem krok po kroku, aby bezproblemowo przetwarzać dokumenty.
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Scalaj dokumenty Word za pomocą Aspose.Words dla .NET, zapewniając zachowanie formatowania pola tekstowego. Postępuj zgodnie z tym przewodnikiem krok po kroku, aby płynnie przetwarzać dokumenty.
 type: docs
 weight: 10
 url: /pl/net/join-and-append-documents/ignore-text-boxes/
 ---
 ## Wstęp
 
-Witamy w tym szczegółowym samouczku dotyczącym używania Aspose.Words dla .NET do łączenia dokumentów programu Word przy ignorowaniu pól tekstowych. Jeśli chcesz usprawnić przetwarzanie dokumentów i zachować formatowanie pól tekstowych, jesteś we właściwym miejscu. Zagłębmy się w ten przewodnik krok po kroku.
+Witamy w tym szczegółowym samouczku dotyczącym korzystania z Aspose.Words dla .NET w celu scalania dokumentów Word, ignorując pola tekstowe. Jeśli chcesz usprawnić przetwarzanie dokumentów i upewnić się, że formatowanie pól tekstowych jest zachowane, jesteś we właściwym miejscu. Zanurzmy się w tym przewodniku krok po kroku.
 
-## Warunki wstępne
+## Wymagania wstępne
 
 Zanim zaczniemy, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
 1.  Aspose.Words dla .NET: Pobierz[Tutaj](https://releases.aspose.com/words/net/).
-2. Środowisko programistyczne .NET: Visual Studio lub dowolne inne preferowane IDE.
-3. Podstawowa znajomość języka C#: Zrozumienie podstawowych koncepcji programowania w języku C#.
+2. Środowisko programistyczne .NET: Visual Studio lub inne preferowane środowisko IDE.
+3. Podstawowa wiedza z zakresu języka C#: Zrozumienie podstawowych koncepcji programowania w języku C#.
 
 ## Importuj przestrzenie nazw
 
-Aby rozpocząć, musisz zaimportować niezbędne przestrzenie nazw w swoim projekcie:
+Aby rozpocząć, musisz zaimportować niezbędne przestrzenie nazw do swojego projektu:
 
 ```csharp
 using Aspose.Words;
@@ -30,7 +30,7 @@ using Aspose.Words.Importing;
 
 ## Krok 1: Skonfiguruj swój projekt
 
-Najpierw upewnij się, że projekt jest poprawnie skonfigurowany. Otwórz swoje IDE, utwórz nowy projekt i zainstaluj bibliotekę Aspose.Words dla .NET za pomocą Menedżera pakietów NuGet.
+Najpierw upewnij się, że projekt jest poprawnie skonfigurowany. Otwórz IDE, utwórz nowy projekt i zainstaluj bibliotekę Aspose.Words for .NET za pomocą NuGet Package Manager.
 
 ### Jak zainstalować Aspose.Words
 
@@ -50,7 +50,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Krok 3: Załaduj dokumenty
 
-Teraz załaduj do swojego projektu zarówno dokumenty źródłowe, jak i docelowe.
+Teraz załaduj do projektu zarówno dokument źródłowy, jak i docelowy.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source.docx");
@@ -59,13 +59,13 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Krok 4: Skonfiguruj opcje importu
 
- Aby mieć pewność, że formatowanie pól tekstowych zostanie zachowane, ustaw opcję`IgnoreTextBoxes` opcja`false`.
+ Aby zapewnić zachowanie formatowania pól tekstowych, ustaw`IgnoreTextBoxes` opcja do`false`.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
 ```
 
-## Krok 5: Zainicjuj importera węzłów
+## Krok 5: Zainicjuj importer węzłów
 
  Zainicjuj`NodeImporter` aby zaimportować węzły z dokumentu źródłowego do dokumentu docelowego.
 
@@ -83,7 +83,7 @@ ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
 
 ## Krok 7: Dołącz zaimportowane akapity do dokumentu docelowego
 
-Przejrzyj każdy akapit w pętli i dołącz go do dokumentu docelowego.
+Przejrzyj każdy akapit i dołącz go do dokumentu docelowego.
 
 ```csharp
 foreach (Paragraph srcPara in srcParas)
@@ -95,7 +95,7 @@ foreach (Paragraph srcPara in srcParas)
 
 ## Krok 8: Zapisz scalony dokument
 
-Na koniec zapisz scalony dokument pod nową nazwą, aby uniknąć nadpisania oryginalnych plików.
+Na koniec zapisz połączony dokument pod nową nazwą, aby uniknąć nadpisania oryginalnych plików.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");
@@ -103,21 +103,21 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");
 
 ## Wniosek
 
-Pomyślnie połączyłeś dwa dokumenty programu Word przy użyciu Aspose.Words dla .NET, upewniając się, że pola tekstowe nie zostaną zignorowane podczas importu. Ten proces jest nieoceniony dla utrzymania integralności formatowania dokumentów. Niezależnie od tego, czy masz do czynienia z raportami, umowami czy jakimkolwiek innym typem dokumentu, Aspose.Words dla .NET sprawia, że proces ten przebiega bezproblemowo.
+Udało Ci się połączyć dwa dokumenty Word za pomocą Aspose.Words dla .NET, zapewniając jednocześnie, że pola tekstowe nie zostaną zignorowane podczas importu. Ten proces jest nieoceniony dla zachowania integralności formatowania Twoich dokumentów. Niezależnie od tego, czy masz do czynienia z raportami, umowami czy jakimkolwiek innym typem dokumentu, Aspose.Words dla .NET sprawia, że proces ten jest bezproblemowy.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Co to jest Aspose.Words dla .NET?
- Aspose.Words dla .NET to potężna biblioteka do tworzenia, manipulowania i konwertowania dokumentów Word w aplikacjach .NET.[Dowiedz się więcej](https://reference.aspose.com/words/net/).
+### Czym jest Aspose.Words dla .NET?
+ Aspose.Words for .NET to zaawansowana biblioteka umożliwiająca tworzenie, edytowanie i konwertowanie dokumentów Word w aplikacjach .NET.[Dowiedz się więcej](https://reference.aspose.com/words/net/).
 
 ### Czy mogę wypróbować Aspose.Words dla .NET przed zakupem?
  Tak, możesz pobrać bezpłatną wersję próbną[Tutaj](https://releases.aspose.com/).
 
 ### Jak mogę uzyskać tymczasową licencję na Aspose.Words dla .NET?
- Możesz uzyskać licencję tymczasową[Tutaj](https://purchase.aspose.com/temporary-license/).
+Możesz uzyskać tymczasową licencję[Tutaj](https://purchase.aspose.com/temporary-license/).
 
 ### Gdzie mogę znaleźć bardziej szczegółową dokumentację?
- Można znaleźć obszerną dokumentację[Tutaj](https://reference.aspose.com/words/net/).
+ Pełną dokumentację można znaleźć[Tutaj](https://reference.aspose.com/words/net/).
 
-### Jak mogę uzyskać wsparcie dla Aspose.Words dla .NET?
+### Gdzie mogę uzyskać pomoc techniczną dotyczącą Aspose.Words dla .NET?
  Aby uzyskać pomoc, odwiedź fora Aspose[Tutaj](https://forum.aspose.com/c/words/8).

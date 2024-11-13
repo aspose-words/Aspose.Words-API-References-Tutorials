@@ -2,22 +2,22 @@
 title: Tabela formatada
 linktitle: Tabela formatada
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como criar e formatar tabelas em documentos do Word usando Aspose.Words for .NET com este guia passo a passo detalhado.
+description: Aprenda a criar e formatar tabelas em documentos do Word usando o Aspose.Words para .NET com este guia passo a passo detalhado.
 type: docs
 weight: 10
 url: /pt/net/programming-with-tables/formatted-table/
 ---
 ## Introdução
 
-Criar e formatar tabelas em documentos do Word programaticamente pode parecer uma tarefa difícil, mas com Aspose.Words for .NET, torna-se simples e gerenciável. Neste tutorial, orientaremos você sobre como criar uma tabela formatada em um documento do Word usando Aspose.Words for .NET. Abordaremos tudo, desde a configuração do seu ambiente até salvar seu documento com uma tabela lindamente formatada.
+Criar e formatar tabelas em documentos do Word programaticamente pode parecer uma tarefa assustadora, mas com o Aspose.Words para .NET, isso se torna simples e gerenciável. Neste tutorial, mostraremos como criar uma tabela formatada em um documento do Word usando o Aspose.Words para .NET. Abordaremos tudo, desde a configuração do seu ambiente até salvar seu documento com uma tabela lindamente formatada.
 
 ## Pré-requisitos
 
 Antes de mergulhar no código, vamos ter certeza de que você tem tudo o que precisa:
 
-1. Biblioteca Aspose.Words for .NET: Faça o download em[aqui](https://releases.aspose.com/words/net/).
-2. Ambiente de desenvolvimento: um IDE como o Visual Studio.
-3. .NET Framework: certifique-se de ter o .NET Framework instalado em sua máquina.
+1. Biblioteca Aspose.Words para .NET: Baixe em[aqui](https://releases.aspose.com/words/net/).
+2. Ambiente de desenvolvimento: Um IDE como o Visual Studio.
+3. .NET Framework: certifique-se de ter o .NET Framework instalado na sua máquina.
 
 ## Importar namespaces
 
@@ -42,18 +42,18 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Etapa 2: inicializar o documento e o DocumentBuilder
 
-Agora inicialize um novo documento e um objeto DocumentBuilder.
+Agora, inicialize um novo documento e um objeto DocumentBuilder.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- O`DocumentBuilder` é uma classe auxiliar que simplifica o processo de construção de documentos.
+O`DocumentBuilder` é uma classe auxiliar que simplifica o processo de construção de documentos.
 
-## Etapa 3: inicie a mesa
+## Etapa 3: Inicie a tabela
 
- A seguir, comece a criar a tabela usando o`StartTable` método.
+ Em seguida, comece a criar a tabela usando o`StartTable` método.
 
 ```csharp
 Table table = builder.StartTable();
@@ -64,15 +64,15 @@ builder.InsertCell();
 
 ## Etapa 4: aplicar formatação em toda a tabela
 
-Você pode aplicar formatação que afete toda a tabela. Por exemplo, definindo o recuo à esquerda:
+Você pode aplicar formatação que afeta a tabela inteira. Por exemplo, definindo o recuo esquerdo:
 
 ```csharp
 table.LeftIndent = 20.0;
 ```
 
-## Etapa 5: formate a linha do cabeçalho
+## Etapa 5: formatar a linha de cabeçalho
 
-Defina a altura, o alinhamento e outras propriedades da linha do cabeçalho.
+Defina a altura, o alinhamento e outras propriedades para a linha de cabeçalho.
 
 ```csharp
 builder.RowFormat.Height = 40.0;
@@ -86,11 +86,11 @@ builder.CellFormat.Width = 100.0;
 builder.Write("Header Row,\n Cell 1");
 ```
 
-Nesta etapa, destacamos a linha do cabeçalho definindo a cor de fundo, o tamanho da fonte e o alinhamento.
+Nesta etapa, fazemos com que a linha de cabeçalho se destaque definindo uma cor de fundo, tamanho de fonte e alinhamento.
 
-## Etapa 6: inserir células de cabeçalho adicionais
+## Etapa 6: Insira células de cabeçalho adicionais
 
-Insira mais células para a linha do cabeçalho:
+Insira mais células para a linha de cabeçalho:
 
 ```csharp
 builder.InsertCell();
@@ -101,9 +101,9 @@ builder.Write("Header Row,\n Cell 3");
 builder.EndRow();
 ```
 
-## Etapa 7: formate as linhas do corpo
+## Etapa 7: formatar as linhas do corpo
 
-Após configurar o cabeçalho, formate o corpo da tabela:
+Depois de configurar o cabeçalho, formate o corpo da tabela:
 
 ```csharp
 builder.CellFormat.Shading.BackgroundPatternColor = Color.White;
@@ -113,9 +113,9 @@ builder.RowFormat.Height = 30.0;
 builder.RowFormat.HeightRule = HeightRule.Auto;
 ```
 
-## Etapa 8: inserir linhas do corpo
+## Etapa 8: Insira as linhas do corpo
 
-Insira as linhas do corpo com conteúdo:
+Insira as linhas do corpo com o conteúdo:
 
 ```csharp
 builder.InsertCell();
@@ -130,7 +130,7 @@ builder.Write("Row 1, Cell 3 Content");
 builder.EndRow();
 ```
 
-Repita para linhas adicionais:
+Repita para as carreiras adicionais:
 
 ```csharp
 builder.InsertCell();
@@ -145,9 +145,9 @@ builder.EndRow();
 builder.EndTable();
 ```
 
-## Etapa 9: salve o documento
+## Etapa 9: Salve o documento
 
-Finalmente, salve o documento no diretório especificado:
+Por fim, salve o documento no diretório especificado:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
@@ -157,21 +157,21 @@ Isso criará e salvará um documento do Word com a tabela formatada.
 
 ## Conclusão
 
-E aí está! Seguindo essas etapas, você pode criar uma tabela bem formatada em um documento do Word usando Aspose.Words for .NET. Esta poderosa biblioteca facilita a manipulação programática de documentos do Word, economizando tempo e esforço.
+E aí está! Seguindo esses passos, você pode criar uma tabela bem formatada em um documento do Word usando o Aspose.Words para .NET. Essa biblioteca poderosa facilita a manipulação programática de documentos do Word, economizando tempo e esforço.
 
 ## Perguntas frequentes
 
 ### O que é Aspose.Words para .NET?
-Aspose.Words for .NET é uma biblioteca poderosa para criar, editar e converter documentos do Word programaticamente.
+Aspose.Words para .NET é uma biblioteca poderosa para criar, editar e converter documentos do Word programaticamente.
 
 ### Posso usar cores diferentes para linhas diferentes?
-Sim, você pode aplicar formatações diferentes, incluindo cores, a linhas ou células diferentes.
+Sim, você pode aplicar formatações diferentes, incluindo cores, a diferentes linhas ou células.
 
 ### O Aspose.Words para .NET é gratuito?
- Aspose.Words for .NET é uma biblioteca paga, mas você pode obter um[teste gratuito](https://releases.aspose.com/).
+ Aspose.Words para .NET é uma biblioteca paga, mas você pode obter uma[teste gratuito](https://releases.aspose.com/).
 
-### Como obtenho suporte para Aspose.Words for .NET?
- Você pode obter suporte do[Aspose fóruns da comunidade](https://forum.aspose.com/c/words/8).
+### Como obtenho suporte para o Aspose.Words para .NET?
+ Você pode obter suporte do[Fóruns da comunidade Aspose](https://forum.aspose.com/c/words/8).
 
-### Posso criar outros tipos de documentos com Aspose.Words for .NET?
-Sim, Aspose.Words for .NET oferece suporte a vários formatos de documentos, incluindo PDF, HTML e TXT.
+### Posso criar outros tipos de documentos com o Aspose.Words para .NET?
+Sim, o Aspose.Words para .NET suporta vários formatos de documento, incluindo PDF, HTML e TXT.

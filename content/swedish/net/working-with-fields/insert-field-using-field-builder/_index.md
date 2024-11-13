@@ -9,7 +9,7 @@ url: /sv/net/working-with-fields/insert-field-using-field-builder/
 ---
 ## Introduktion
 
-Hej där! Har du någon gång kliat dig i huvudet och undrat hur du infogar dynamiska fält i dina Word-dokument programmatiskt? Nåväl, oroa dig inte längre! I den här handledningen kommer vi att dyka in i underverken i Aspose.Words för .NET, ett kraftfullt bibliotek som låter dig skapa, manipulera och transformera Word-dokument sömlöst. Specifikt kommer vi att gå igenom hur du infogar fält med hjälp av Fältbyggaren. Låt oss komma igång!
+Hej där! Har du någon gång kliat dig i huvudet och undrat hur du infogar dynamiska fält i dina Word-dokument programmatiskt? Nåväl, oroa dig inte mer! I den här handledningen kommer vi att dyka in i underverken i Aspose.Words för .NET, ett kraftfullt bibliotek som låter dig skapa, manipulera och transformera Word-dokument sömlöst. Specifikt kommer vi att gå igenom hur du infogar fält med hjälp av Fältbyggaren. Låt oss komma igång!
 
 ## Förutsättningar
 
@@ -62,7 +62,7 @@ FieldBuilder fieldBuilder = new FieldBuilder(FieldType.FieldIf)
     .AddArgument("right expression");
 ```
 
-## Steg 4: Lägg till argument i FieldBuilder
+## Steg 4: Lägg till argument till FieldBuilder
 
 Nu lägger vi till de nödvändiga argumenten till vår FieldBuilder. Detta kommer att inkludera våra uttryck och text vi vill infoga.
 

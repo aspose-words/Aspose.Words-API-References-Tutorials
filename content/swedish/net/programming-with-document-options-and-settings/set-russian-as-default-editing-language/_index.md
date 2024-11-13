@@ -68,7 +68,7 @@ Document doc = new Document(dataDir + "No default editing language.docx", loadOp
 
 ## Steg 3: Verifiera standardredigeringsspråket
 
- Efter att ha laddat dokumentet är det viktigt att verifiera om standardspråket för redigering har ställts in på ryska. Detta innebär att kontrollera`LocaleId` av dokumentets standardtypsnittsstil.
+ Efter att ha laddat dokumentet är det viktigt att verifiera om standardspråket för redigering har ställts in på ryska. Detta innebär att kontrollera`LocaleId` av dokumentets standardteckensnittsstil.
 
 ### Hämta LocaleId för standardteckensnitt
 

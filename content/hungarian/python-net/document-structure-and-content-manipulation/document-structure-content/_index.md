@@ -122,7 +122,7 @@ page_setup.left_margin = 72
 
 ## Fejlécek és láblécek hozzáadása
 
-A fejlécek és láblécek következetes információkat nyújtanak az oldalakon:
+A fejlécek és láblécek következetes információkat nyújtanak az oldalakról:
 
 ```python
 from aspose.words import HeaderFooterType

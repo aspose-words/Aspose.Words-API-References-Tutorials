@@ -2,12 +2,12 @@
 title: Word 文書のヘッダーとフッターの操作
 linktitle: Word 文書のヘッダーとフッターの操作
 second_title: Aspose.Words Python ドキュメント管理 API
-description: Aspose.Words for Python を使用して Word 文書のヘッダーとフッターを操作する方法を学びます。カスタマイズ、追加、削除などを行うためのソース コード付きのステップ バイ ステップ ガイド。今すぐ文書の書式設定を強化しましょう。
+description: Aspose.Words for Python を使用して Word 文書のヘッダーとフッターを操作する方法を学びます。カスタマイズ、追加、削除などを行うためのソース コード付きのステップ バイ ステップ ガイド。今すぐドキュメントの書式設定を強化しましょう。
 type: docs
 weight: 16
 url: /ja/python-net/document-structure-and-content-manipulation/document-headers-footers/
 ---
-Word 文書のヘッダーとフッターは、コンテンツにコンテキスト、ブランド、および追加情報を提供する上で重要な役割を果たします。Aspose.Words for Python API を使用してこれらの要素を操作すると、文書の外観と機能を大幅に強化できます。このステップ バイ ステップ ガイドでは、Aspose.Words for Python を使用してヘッダーとフッターを操作する方法について説明します。
+Word 文書のヘッダーとフッターは、コンテンツにコンテキスト、ブランド、および追加情報を提供する上で重要な役割を果たします。Aspose.Words for Python API を使用してこれらの要素を操作すると、文書の外観と機能が大幅に向上します。このステップ バイ ステップ ガイドでは、Aspose.Words for Python を使用してヘッダーとフッターを操作する方法について説明します。
 
 
 ## Python 用 Aspose.Words を使い始める
@@ -146,7 +146,7 @@ section.page_setup.odd_and_even_pages_header_footer = False
 
 ### 特定のページからヘッダーとフッターを削除できますか?
 
-はい、ヘッダーとフッターの内容をクリアして、効果的に削除することができます。
+はい、ヘッダーとフッターの内容をクリアして、それらを効果的に削除することができます。
 
 ### Aspose.Words for Python について詳しくはどこで知ることができますか?
 

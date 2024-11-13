@@ -78,7 +78,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.AvoidEmbeddingCoreFonts.pdf", save
 
 ## Következtetés
 
-A PDF-fájl méretének csökkentése gyerekjáték az Aspose.Words for .NET segítségével. Az alapvető betűtípusok beágyazásának elkerülésével jelentősen csökkentheti a fájlméretet, ami megkönnyíti a dokumentumok megosztását és tárolását. Remélem, hogy ez az oktatóanyag hasznos volt, és világosan megértette a folyamatot. Ne feledje, a kis finomítások nagy változást hozhatnak!
+A PDF-fájl méretének csökkentése gyerekjáték az Aspose.Words for .NET segítségével. Az alapvető betűtípusok beágyazásának elkerülésével jelentősen csökkentheti a fájlméretet, megkönnyítve a dokumentumok megosztását és tárolását. Remélem, hogy ez az oktatóanyag hasznos volt, és világosan megértette a folyamatot. Ne feledje, a kis finomítások nagy változást hozhatnak!
 
 ## GYIK
 

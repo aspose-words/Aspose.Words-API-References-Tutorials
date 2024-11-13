@@ -50,7 +50,7 @@ using Aspose.Words.Saving;
 
 ## ステップ2: ドキュメントを読み込む
 
-プロジェクトがセットアップされたので、結合する Word 文書を読み込みます。このチュートリアルでは、これらを「Document source.docx」と「Northwind traders.docx」と呼びます。
+プロジェクトがセットアップされたので、結合する Word ドキュメントをロードしましょう。このチュートリアルでは、これらを「Document source.docx」と「Northwind traders.docx」と呼びます。
 
 Aspose.Words を使用してロードする方法は次のとおりです。
 
@@ -73,11 +73,11 @@ Document dstDocument = new Document(dataDir + "Northwind traders.docx");
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreHeaderFooter = true };
 ```
 
-設定により`IgnoreHeaderFooter`に`true`マージ処理中にヘッダーとフッターを無視するように Aspose.Words に指示します。
+設定により`IgnoreHeaderFooter`に`true`、マージ プロセス中にヘッダーとフッターを無視するように Aspose.Words に指示します。
 
 ## ステップ4: ドキュメントを結合する
 
-ドキュメントが読み込まれ、インポート オプションが設定されたら、ドキュメントを結合します。
+ドキュメントを読み込み、インポート オプションを設定したら、ドキュメントを結合します。
 
 やり方は次のとおりです:
 

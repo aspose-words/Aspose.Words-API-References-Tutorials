@@ -122,7 +122,7 @@ Igen, több dokumentumot is csatolhat a szám ismételt hívásával`AppendDocum
 
 ### Mi történik, ha a forrásdokumentum eltérő formázással rendelkezik?
 
- A`ImportFormatMode.KeepSourceFormatting` biztosítja, hogy a forrásdokumentum formázása megmaradjon hozzáfűzéskor.
+A`ImportFormatMode.KeepSourceFormatting` biztosítja, hogy a forrásdokumentum formázása megmaradjon hozzáfűzéskor.
 
 ### Szükségem van engedélyre az Aspose.Words használatához?
 

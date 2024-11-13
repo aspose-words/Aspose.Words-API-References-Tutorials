@@ -18,7 +18,7 @@ Mielőtt elkezdené, győződjön meg arról, hogy rendelkezik az alábbiakkal:
 1.  Aspose.Words for .NET: Letöltheti a[Letöltési link](https://releases.aspose.com/words/net/).
 2. Fejlesztői környezet: Visual Studio vagy bármely más IDE, amely támogatja a .NET fejlesztést.
 3. C# alapismeretek: Az alapvető programozási fogalmak és szintaxis megértése C# nyelven.
-4.  Az Ön dokumentumkönyvtára: Győződjön meg arról, hogy rendelkezik egy kijelölt könyvtárral a dokumentumok mentéséhez. Ezt úgy fogjuk hivatkozni`YOUR DOCUMENT DIRECTORY`.
+4.  Az Ön dokumentumkönyvtára: Győződjön meg arról, hogy rendelkezik egy kijelölt könyvtárral a dokumentumok mentéséhez. Erre úgy fogunk hivatkozni`YOUR DOCUMENT DIRECTORY`.
 
 ## Névterek importálása
 

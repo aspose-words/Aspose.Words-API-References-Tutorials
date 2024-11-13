@@ -14,7 +14,7 @@ url: /ja/python-net/data-visualization-and-formatting/document-shape-handling-fo
 
 ## 環境の設定
 
-印象的なドキュメントシェイプの作成に取り掛かる前に、Aspose.Words for Pythonがインストールされていることを確認してください。ダウンロードは以下から行えます。[ダウンロードリンク](https://releases.aspose.com/words/python/)さらに、[ドキュメント](https://reference.aspose.com/words/python-net/)図書館の利用に関する包括的なガイダンス。
+印象的なドキュメントシェイプの作成に取り掛かる前に、Aspose.Words for Pythonがインストールされていることを確認してください。ダウンロードは以下から行えます。[ダウンロードリンク](https://releases.aspose.com/words/python/)さらに、[ドキュメント](https://reference.aspose.com/words/python-net/)ライブラリの使用に関する包括的なガイダンス。
 
 ## 基本文書の作成
 
@@ -98,4 +98,4 @@ Aspose.Words for Python の機能により、視覚的に印象的なドキュ�
 ドキュメントに画像を追加するには、`append_image`メソッドは、画像ファイルへのパスを提供します。
 
 ### Aspose.Words for Python には、さらに高度な機能がありますか?
-はい、Aspose.Words for Python は、動的で魅力的なドキュメントを作成するための、表、グラフ、ハイパーリンクなどの幅広い高度な機能を提供します。
+はい、Aspose.Words for Python は、表、グラフ、ハイパーリンクなど、動的で魅力的なドキュメントを作成するための幅広い高度な機能を提供します。

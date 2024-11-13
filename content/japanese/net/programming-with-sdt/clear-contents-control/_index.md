@@ -2,7 +2,7 @@
 title: クリアコンテンツコントロール
 linktitle: クリアコンテンツコントロール
 second_title: Aspose.Words ドキュメント処理 API
-description: ステップバイステップ ガイドを使用して、Aspose.Words for .NET を使用して Word 文書内のコンテンツ コントロールをクリアする方法を学びます。
+description: Aspose.Words for .NET を使用して Word 文書内のコンテンツ コントロールをクリアする方法を、ステップ バイ ステップ ガイドで学習します。
 type: docs
 weight: 10
 url: /ja/net/programming-with-sdt/clear-contents-control/
@@ -52,7 +52,7 @@ Install-Package Aspose.Words
    ```csharp
    string dataDir = "YOUR DOCUMENT DIRECTORY";
    ```
-2. ドキュメントをロードする:`Document` Word 文書を読み込むためのクラス。
+2. ドキュメントを読み込む:`Document` Word 文書を読み込むためのクラス。
    ```csharp
    Document doc = new Document(dataDir + "Structured document tags.docx");
    ```
@@ -68,7 +68,7 @@ Install-Package Aspose.Words
 
 ## ステップ4: SDTの内容をクリアする
 
-構造化ドキュメントタグの内容をクリアします。
+構造化ドキュメント タグの内容をクリアします。
 
 1.  SDTの内容をクリアする:`Clear`内容を削除する方法。
    ```csharp
@@ -79,7 +79,7 @@ Install-Package Aspose.Words
 
 最後に、変更したドキュメントを保存します。
 
-1. ドキュメントを保存: 元のファイルを保持するために、ドキュメントを新しい名前で保存します。
+1. ドキュメントを保存: 元のファイルを保持するには、新しい名前でドキュメントを保存します。
    ```csharp
    doc.Save(dataDir + "WorkingWithSdt.ClearContentsControl.doc");
    ```

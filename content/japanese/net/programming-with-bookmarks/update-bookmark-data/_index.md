@@ -41,7 +41,7 @@ string dataDir = "YOUR_DOCUMENT_DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
-このコードスニペットは、まずWord文書が存在するディレクトリパスを定義します。`"YOUR_DOCUMENT_DIRECTORY"`システム上の実際のパスと照合します。その後、新しい`Document`オブジェクトは、基本的に指定されたWord文書を開きます（`Bookmarks.docx`この例では、
+このコードスニペットは、まずWord文書が存在するディレクトリパスを定義します。`"YOUR_DOCUMENT_DIRECTORY"`システム上の実際のパスと照合します。その後、新しい`Document`オブジェクトは、基本的に指定されたWord文書（`Bookmarks.docx`この例では、
 
 ## ステップ2: ブックマークにアクセスする
 

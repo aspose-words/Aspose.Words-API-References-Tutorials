@@ -59,7 +59,7 @@ doc.WriteProtection.SetPassword("MyPassword");
 
 Magyarázat:
 
--  A`SetPassword` módszert hívják a`WriteProtection` a dokumentum tulajdonsága.
+- A`SetPassword` módszert hívják a`WriteProtection` a dokumentum tulajdonsága.
 - Megadunk egy jelszót (jelszó ebben az esetben), amely a védelem eltávolításához szükséges.
 
 ## 3. lépés: Engedélyezze a csak olvasható ajánlást
@@ -73,7 +73,7 @@ doc.WriteProtection.ReadOnlyRecommended = true;
 
 Magyarázat:
 
--  A`ReadOnlyRecommended` tulajdonság értékre van állítva`true`.
+- A`ReadOnlyRecommended` tulajdonság értékre van állítva`true`.
 - Ez arra kéri a felhasználókat, hogy csak olvasható módban nyissa meg a dokumentumot, bár dönthetnek úgy, hogy figyelmen kívül hagyják az ajánlást.
 
 ## 4. lépés: Alkalmazza az írásvédettséget
@@ -87,7 +87,7 @@ doc.Protect(ProtectionType.ReadOnly);
 
 Magyarázat:
 
--  A`Protect` metódust hívják meg a dokumentumon`ProtectionType.ReadOnly` mint az érv.
+- A`Protect` metódust hívják meg a dokumentumon`ProtectionType.ReadOnly` mint az érv.
 - Ez a módszer az írásvédettséget kényszeríti ki, megakadályozva a dokumentum jelszó nélküli módosítását.
 
 ## 5. lépés: Mentse el a dokumentumot
@@ -101,7 +101,7 @@ doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
 
 Magyarázat:
 
--  A`Save` metódus kerül meghívásra a dokumentumon, megadva a fájl elérési útját és nevét.
+- A`Save` metódus kerül meghívásra a dokumentumon, megadva a fájl elérési útját és nevét.
 - A dokumentum mentése csak olvasható védelem mellett történik.
 
 ## Következtetés

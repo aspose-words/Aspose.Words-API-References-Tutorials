@@ -2,22 +2,22 @@
 title: Metin Kutularını Yoksay
 linktitle: Metin Kutularını Yoksay
 second_title: Aspose.Words Belge İşleme API'si
-description: Word belgelerini Aspose.Words for .NET ile birleştirerek metin kutusu formatının korunmasını sağlayın. Sorunsuz belge işleme için bu adım adım kılavuzu izleyin.
+description: Word belgelerini Aspose.Words for .NET ile birleştirin ve metin kutusu biçimlendirmesinin korunduğundan emin olun. Sorunsuz belge işleme için bu adım adım kılavuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/join-and-append-documents/ignore-text-boxes/
 ---
 ## giriiş
 
-Metin kutularını göz ardı ederek Word belgelerini birleştirmek için Aspose.Words for .NET'in kullanımına ilişkin bu ayrıntılı eğitime hoş geldiniz. Belge işlemenizi kolaylaştırmak ve metin kutularının formatının korunduğundan emin olmak istiyorsanız doğru yerdesiniz. Bu adım adım kılavuza dalalım.
+Metin kutularını yok sayarak Word belgelerini birleştirmek için Aspose.Words for .NET'i kullanma hakkında bu ayrıntılı eğitime hoş geldiniz. Belge işlemenizi kolaylaştırmak ve metin kutularının biçimlendirmesinin korunduğundan emin olmak istiyorsanız doğru yerdesiniz. Bu adım adım kılavuza dalalım.
 
-## Önkoşullar
+## Ön koşullar
 
 Başlamadan önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
 1.  Aspose.Words for .NET: İndirin[Burada](https://releases.aspose.com/words/net/).
-2. .NET Geliştirme Ortamı: Visual Studio veya tercih edilen herhangi bir IDE.
-3. Temel C# Bilgisi: C#'taki temel programlama kavramlarının anlaşılması.
+2. .NET Geliştirme Ortamı: Visual Studio veya tercih ettiğiniz herhangi bir IDE.
+3. C# Temel Bilgileri: C# dilinde temel programlama kavramlarının anlaşılması.
 
 ## Ad Alanlarını İçe Aktar
 
@@ -28,9 +28,9 @@ using Aspose.Words;
 using Aspose.Words.Importing;
 ```
 
-## 1. Adım: Projenizi Kurun
+## Adım 1: Projenizi Kurun
 
-Öncelikle projenizin doğru şekilde kurulduğundan emin olun. IDE'nizi açın, yeni bir proje oluşturun ve Aspose.Words for .NET kitaplığını NuGet Paket Yöneticisi aracılığıyla yükleyin.
+Öncelikle projenizin doğru şekilde ayarlandığından emin olun. IDE'nizi açın, yeni bir proje oluşturun ve NuGet Paket Yöneticisi aracılığıyla Aspose.Words for .NET kütüphanesini yükleyin.
 
 ### Aspose.Words Nasıl Kurulur
 
@@ -46,9 +46,9 @@ Daha sonra kaynak ve hedef belgelerinizin bulunduğu dizini belirtin.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belge dizininizin gerçek yolu ile.
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` belge dizininize giden gerçek yol ile.
 
-## 3. Adım: Belgeleri Yükleyin
+## Adım 3: Belgeleri Yükleyin
 
 Şimdi hem kaynak hem de hedef belgeleri projenize yükleyin.
 
@@ -57,9 +57,9 @@ Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## 4. Adım: İçe Aktarma Seçeneklerini Yapılandırın
+## Adım 4: İçe Aktarma Seçeneklerini Yapılandırın
 
- Metin kutularının formatının korunduğundan emin olmak için`IgnoreTextBoxes` seçeneği`false`.
+ Metin kutularının biçimlendirmesinin korunduğundan emin olmak için,`IgnoreTextBoxes` seçeneği`false`.
 
 ```csharp
 ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBoxes = false };
@@ -67,23 +67,23 @@ ImportFormatOptions importFormatOptions = new ImportFormatOptions { IgnoreTextBo
 
 ## Adım 5: Düğüm İçe Aktarıcısını Başlatın
 
- Başlat`NodeImporter` Düğümleri kaynak belgeden hedef belgeye aktarmak için.
+ Başlat`NodeImporter` kaynak belgeden hedef belgeye düğümleri içe aktarmak için.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting, importFormatOptions);
 ```
 
-## Adım 6: Kaynak Belgeden Paragrafları İçe Aktarın
+## Adım 6: Kaynak Belgeden Paragrafları İçe Aktar
 
-Kaynak belgenin ilk bölümündeki tüm paragrafları getir.
+Kaynak belgenin ilk bölümünden tüm paragrafları getir.
 
 ```csharp
 ParagraphCollection srcParas = srcDoc.FirstSection.Body.Paragraphs;
 ```
 
-## Adım 7: İçe Aktarılan Paragrafları Hedef Belgeye Ekleme
+## Adım 7: İçe Aktarılan Paragrafları Hedef Belgeye Ekleyin
 
-Her paragrafta döngü yapın ve onu hedef belgeye ekleyin.
+Her paragrafı dolaşın ve hedef belgeye ekleyin.
 
 ```csharp
 foreach (Paragraph srcPara in srcParas)
@@ -95,7 +95,7 @@ foreach (Paragraph srcPara in srcParas)
 
 ## Adım 8: Birleştirilmiş Belgeyi Kaydedin
 
-Son olarak, orijinal dosyaların üzerine yazılmasını önlemek için birleştirilmiş belgeyi yeni bir adla kaydedin.
+Son olarak, orijinal dosyaların üzerine yazılmasını önlemek için birleştirilen belgeyi yeni bir adla kaydedin.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");
@@ -103,21 +103,21 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");
 
 ## Çözüm
 
-Aspose.Words for .NET'i kullanarak iki Word belgesini başarıyla birleştirirken, içe aktarma sırasında metin kutularının göz ardı edilmemesini sağladınız. Bu işlem belgelerinizin biçimlendirme bütünlüğünü korumak açısından çok değerlidir. İster raporlarla, sözleşmelerle, ister başka türdeki belgelerle ilgileniyor olun, Aspose.Words for .NET süreci kusursuz hale getirir.
+Aspose.Words for .NET'i kullanarak iki Word belgesini başarıyla birleştirdiniz ve içe aktarma sırasında metin kutularının göz ardı edilmediğinden emin oldunuz. Bu işlem, belgelerinizin biçimlendirme bütünlüğünü korumak için paha biçilmezdir. İster raporlarla, ister sözleşmelerle veya başka herhangi bir belge türüyle uğraşıyor olun, Aspose.Words for .NET işlemi sorunsuz hale getirir.
 
-## SSS'ler
+## SSS
 
 ### Aspose.Words for .NET nedir?
- Aspose.Words for .NET, .NET uygulamalarında Word belgelerini oluşturmaya, işlemeye ve dönüştürmeye yönelik güçlü bir kitaplıktır.[Daha fazla bilgi edin](https://reference.aspose.com/words/net/).
+ Aspose.Words for .NET, .NET uygulamaları içerisinde Word belgeleri oluşturmak, düzenlemek ve dönüştürmek için güçlü bir kütüphanedir.[Daha fazla bilgi edin](https://reference.aspose.com/words/net/).
 
 ### Satın almadan önce Aspose.Words for .NET'i deneyebilir miyim?
- Evet, ücretsiz deneme sürümünü indirebilirsiniz[Burada](https://releases.aspose.com/).
+ Evet, ücretsiz denemeyi indirebilirsiniz[Burada](https://releases.aspose.com/).
 
-### Aspose.Words for .NET için nasıl geçici lisans alabilirim?
- Geçici lisans alabilirsiniz[Burada](https://purchase.aspose.com/temporary-license/).
+### Aspose.Words for .NET için geçici lisansı nasıl alabilirim?
+Geçici bir lisans alabilirsiniz[Burada](https://purchase.aspose.com/temporary-license/).
 
-### Daha ayrıntılı belgeleri nerede bulabilirim?
- Kapsamlı belgeleri bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).
+### Daha detaylı dokümanları nerede bulabilirim?
+ Kapsamlı dokümantasyonu bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).
 
-### Aspose.Words for .NET için nasıl destek alabilirim?
+### Aspose.Words for .NET desteğini nasıl alabilirim?
  Destek için Aspose forumlarını ziyaret edin[Burada](https://forum.aspose.com/c/words/8).

@@ -1,26 +1,26 @@
 ---
-title: Word Belgesine İçindekiler Tablosu Ekleme
-linktitle: Word Belgesine İçindekiler Tablosu Ekleme
+title: Word Belgesine İçindekiler Tablosu Ekle
+linktitle: Word Belgesine İçindekiler Tablosu Ekle
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak Word'e nasıl İçindekiler ekleyeceğinizi öğrenin. Belgelerde kusursuz gezinme için adım adım kılavuzumuzu izleyin.
+description: Aspose.Words for .NET kullanarak Word'e İçindekiler Tablosu eklemeyi öğrenin. Sorunsuz belge gezintisi için adım adım kılavuzumuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/add-content-using-documentbuilder/insert-table-of-contents/
 ---
 ## giriiş
-Bu eğitimde, Aspose.Words for .NET kullanarak Word belgelerinize nasıl etkili bir İçindekiler Tablosu (TOC) ekleyeceğinizi öğreneceksiniz. Bu özellik, uzun belgeleri düzenlemek ve gezinmek, okunabilirliği artırmak ve belge bölümlerine hızlı bir genel bakış sağlamak için gereklidir.
+Bu eğitimde, Aspose.Words for .NET kullanarak Word belgelerinize İçindekiler Tablosu'nu (TOC) nasıl etkili bir şekilde ekleyeceğinizi öğreneceksiniz. Bu özellik, uzun belgeleri düzenlemek ve gezinmek, okunabilirliği artırmak ve belge bölümlerine hızlı bir genel bakış sağlamak için önemlidir.
 
-## Önkoşullar
+## Ön koşullar
 
 Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
-- C# ve .NET çerçevesine ilişkin temel anlayış.
-- Makinenizde Visual Studio yüklü.
--  Aspose.Words for .NET kitaplığı. Henüz yüklemediyseniz adresinden indirebilirsiniz.[Burada](https://releases.aspose.com/words/net/).
+- C# ve .NET framework'üne dair temel bilgi.
+- Bilgisayarınızda Visual Studio yüklü.
+-  Aspose.Words for .NET kütüphanesi. Eğer henüz yüklemediyseniz, şuradan indirebilirsiniz:[Burada](https://releases.aspose.com/words/net/).
 
 ## Ad Alanlarını İçe Aktar
 
-Başlamak için C# projenize gerekli ad alanlarını içe aktarın:
+Başlamak için, gerekli ad alanlarını C# projenize aktarın:
 
 ```csharp
 using Aspose.Words;
@@ -29,42 +29,42 @@ using Aspose.Words.Fields;
 using Aspose.Words.Tables;
 ```
 
-Süreci net adımlara ayıralım:
+Süreci net adımlara bölelim:
 
-## Adım 1: Aspose.Words Document ve DocumentBuilder'ı başlatın
+## Adım 1: Aspose.Words Belgesini ve DocumentBuilder'ı Başlatın
 
- Öncelikle yeni bir Aspose.Words başlatın`Document` nesne ve bir`DocumentBuilder` çalışmak için:
+ İlk olarak yeni bir Aspose.Words başlatın`Document` nesne ve bir`DocumentBuilder` çalışmak için:
 
 ```csharp
-// Document ve DocumentBuilder'ı Başlat
+// Belgeyi ve DocumentBuilder'ı Başlat
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
 ## Adım 2: İçindekiler Tablosunu Ekleyin
 
- Şimdi içindekileri kullanarak İçindekiler'i ekleyin.`InsertTableOfContents` yöntem:
+ Şimdi, İçindekiler Tablosunu şunu kullanarak ekleyin:`InsertTableOfContents` yöntem:
 
 ```csharp
-// İçindekiler Ekle
+// İçindekiler Tablosunu Ekle
 builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 ```
 
-## 3. Adım: Belge İçeriğini Yeni Bir Sayfada Başlatın
+## Adım 3: Belge İçeriğini Yeni Bir Sayfada Başlatın
 
-Doğru biçimlendirmeyi sağlamak için asıl belge içeriğini yeni bir sayfada başlatın:
+Doğru biçimlendirmeyi sağlamak için gerçek belge içeriğini yeni bir sayfada başlatın:
 
 ```csharp
-// Sayfa sonu ekleme
+// Bir sayfa sonu ekle
 builder.InsertBreak(BreakType.PageBreak);
 ```
 
 ## Adım 4: Belgenizi Başlıklarla Yapılandırın
 
-Uygun başlık stillerini kullanarak belge içeriğinizi düzenleyin:
+Uygun başlık stillerini kullanarak belgenizin içeriğini düzenleyin:
 
 ```csharp
-// Başlık stillerini ayarlama
+// Başlık stilleri ayarla
 builder.ParagraphFormat.StyleIdentifier = StyleIdentifier.Heading1;
 builder.Writeln("Heading 1");
 
@@ -89,12 +89,12 @@ builder.Writeln("Heading 3.2");
 builder.Writeln("Heading 3.3");
 ```
 
-## 5. Adım: İçindekiler Tablosunu Güncelleyin ve Doldurun
+## Adım 5: İçindekiler Tablosunu Güncelleyin ve Doldurun
 
-Belge yapısını yansıtacak şekilde İçindekiler Tablosunu güncelleyin:
+İçindekiler tablosunu belge yapısını yansıtacak şekilde güncelleyin:
 
 ```csharp
-// İçindekiler alanlarını güncelleme
+// İçindekiler alanlarını güncelleyin
 doc.UpdateFields();
 ```
 
@@ -110,21 +110,21 @@ doc.Save(dataDir + "InsertTableOfContentsUsingAsposeWords.docx");
 
 ## Çözüm
 
-Aspose.Words for .NET'i kullanarak İçindekiler Tablosu eklemek basittir ve belgelerinizin kullanılabilirliğini önemli ölçüde artırır. Bu adımları izleyerek karmaşık belgeleri verimli bir şekilde düzenleyebilir ve bunlar arasında gezinebilirsiniz.
+Aspose.Words for .NET kullanarak İçindekiler Tablosu eklemek basittir ve belgelerinizin kullanılabilirliğini önemli ölçüde artırır. Bu adımları izleyerek karmaşık belgeleri etkili bir şekilde düzenleyebilir ve bunlar arasında gezinebilirsiniz.
 
-## SSS'ler
+## SSS
 
-### İçindekiler Tablosunun görünümünü özelleştirebilir miyim?
-Evet, Aspose.Words for .NET API'lerini kullanarak İçindekiler'in görünümünü ve davranışını özelleştirebilirsiniz.
+### İçindekiler bölümünün görünümünü özelleştirebilir miyim?
+Evet, Aspose.Words for .NET API'lerini kullanarak İçindekiler tablosunun görünümünü ve davranışını özelleştirebilirsiniz.
 
 ### Aspose.Words alanların otomatik olarak güncellenmesini destekliyor mu?
-Evet, Aspose.Words, İçindekiler gibi alanları belge değişikliklerine göre dinamik olarak güncellemenize olanak tanır.
+Evet, Aspose.Words, belgedeki değişikliklere bağlı olarak İçindekiler gibi alanları dinamik olarak güncellemenize olanak tanır.
 
 ### Tek bir belgede birden fazla İçindekiler Tablosu oluşturabilir miyim?
-Aspose.Words, tek bir belgede farklı ayarlarla birden fazla İçindekiler oluşturmayı destekler.
+Aspose.Words, tek bir belge içerisinde farklı ayarlara sahip birden fazla İçindekiler Tablosu oluşturulmasını destekler.
 
-### Aspose.Words Microsoft Word'ün farklı sürümleriyle uyumlu mu?
-Evet, Aspose.Words, Microsoft Word formatlarının çeşitli sürümleriyle uyumluluk sağlar.
+### Aspose.Words Microsoft Word'ün farklı sürümleriyle uyumlu mudur?
+Evet, Aspose.Words Microsoft Word formatlarının çeşitli sürümleriyle uyumluluğu garanti eder.
 
-### Aspose.Words için nerede daha fazla yardım ve destek bulabilirim?
- Daha fazla yardım için şu adresi ziyaret edin:[Aspose.Words Forumu](https://forum.aspose.com/c/words/8) veya şuraya göz atın[resmi belgeler](https://reference.aspose.com/words/net/).
+### Aspose.Words için daha fazla yardım ve desteği nerede bulabilirim?
+ Daha fazla yardım için şu adresi ziyaret edin:[Aspose.Words Forum](https://forum.aspose.com/c/words/8) veya kontrol edin[resmi belgeler](https://reference.aspose.com/words/net/).

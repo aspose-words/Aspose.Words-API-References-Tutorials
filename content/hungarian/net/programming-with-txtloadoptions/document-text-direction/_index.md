@@ -89,7 +89,7 @@ A szöveg irányának beállítása a Word dokumentumokban egyszerű folyamat az
 
 ###  Mi az a`DocumentDirection` property used for?
 
- A`DocumentDirection` ingatlan be`TxtLoadOptions` meghatározza a dokumentum szövegének irányát. Be lehet állítani`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , vagy`DocumentDirection.RightToLeft`.
+A`DocumentDirection` ingatlan be`TxtLoadOptions` meghatározza a dokumentum szövegének irányát. Be lehet állítani`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , vagy`DocumentDirection.RightToLeft`.
 
 ### Beállíthatom a szöveg irányát adott bekezdésekhez a teljes dokumentum helyett?
 

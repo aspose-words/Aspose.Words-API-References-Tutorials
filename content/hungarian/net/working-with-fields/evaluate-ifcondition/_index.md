@@ -1,6 +1,6 @@
 ---
-title: Értékelje IF állapotát
-linktitle: Értékelje IF állapotát
+title: Értékelje az IF állapotát
+linktitle: Értékelje az IF állapotát
 second_title: Aspose.Words Document Processing API
 description: Ismerje meg, hogyan értékelheti ki az IF-feltételeket Word dokumentumokban az Aspose.Words for .NET használatával. Ez a lépésenkénti útmutató a beszúrást, az értékelést és az eredmények megjelenítését tartalmazza.
 type: docs
@@ -65,7 +65,7 @@ FieldIf field = (FieldIf)builder.InsertField("IF 1 = 1", null);
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
- A`EvaluateCondition` metódus visszaadja a`FieldIfComparisonResult` enum, amely az állapotértékelés eredményét reprezentálja. Ennek az enumnak olyan értékei lehetnek, mint`True`, `False` , vagy`Unknown`.
+A`EvaluateCondition` metódus visszaadja a`FieldIfComparisonResult` enum, amely az állapotértékelés eredményét reprezentálja. Ennek az enumnak olyan értékei lehetnek, mint`True`, `False` , vagy`Unknown`.
 
 ## 4. lépés: Jelenítse meg az eredményt
 
@@ -93,7 +93,7 @@ Az IF mező egy Word mező, amely lehetővé teszi feltételes logika beilleszt�
  IF mezőt beszúrhat a`InsertField` módszere a`DocumentBuilder` osztályban, megadva az értékelni kívánt feltételt.
 
 ###  Mit tesz`EvaluateCondition` method do?
- A`EvaluateCondition` A metódus kiértékeli az IF mezőben megadott feltételt, és visszaadja az eredményt, jelezve, hogy a feltétel igaz vagy hamis.
+A`EvaluateCondition` A metódus kiértékeli az IF mezőben megadott feltételt, és visszaadja az eredményt, jelezve, hogy a feltétel igaz vagy hamis.
 
 ### Használhatok összetett feltételeket az IF mezővel?
 Igen, összetett feltételeket is használhat az IF mezővel, ha szükség szerint különböző kifejezéseket és összehasonlításokat ad meg.

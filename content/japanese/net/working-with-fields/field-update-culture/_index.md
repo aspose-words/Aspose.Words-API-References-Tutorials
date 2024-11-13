@@ -9,7 +9,7 @@ url: /ja/net/working-with-fields/field-update-culture/
 ---
 ## 導入
 
-日付、時刻、カスタム情報など、動的に更新する必要があるさまざまなフィールドを含む Word 文書で作業しているとします。Word でフィールドを使用したことがある場合、更新を正しく行うことがいかに重要であるかはご存知でしょう。しかし、これらのフィールドのカルチャ設定を処理する必要がある場合はどうでしょうか。文書がさまざまな地域で共有されるグローバルな世界では、フィールド更新カルチャを構成する方法を理解することで大きな違いが生まれます。このガイドでは、Aspose.Words for .NET を使用して Word 文書のフィールド更新カルチャを管理する方法について説明します。環境の設定から変更の実装と保存まで、すべてをカバーします。
+日付、時刻、カスタム情報など、動的に更新する必要があるさまざまなフィールドを含む Word 文書で作業しているとします。以前に Word でフィールドを使用したことがある場合は、更新を正しく行うことがいかに重要であるかがわかります。しかし、これらのフィールドのカルチャ設定を処理する必要がある場合はどうでしょうか。文書がさまざまな地域で共有されるグローバルな世界では、フィールド更新カルチャを構成する方法を理解することで大きな違いが生じます。このガイドでは、Aspose.Words for .NET を使用して Word 文書のフィールド更新カルチャを管理する方法について説明します。環境の設定から変更の実装と保存まで、すべてをカバーします。
 
 ## 前提条件
 
@@ -75,7 +75,52 @@ doc.FieldOptions.FieldUpdateCultureProvider = new FieldUpdateCultureProvider();
 - `FieldUpdateCultureSource.FieldCode` Aspose.Words に、更新時にフィールド コードで指定されたカルチャを使用するように指示します。
 - `FieldUpdateCultureProvider`フィールド更新用のカルチャ プロバイダーを指定できます。カスタム プロバイダーを実装する必要がある場合は、このクラスを拡張できます。
 
-## ステップ4: ドキュメントを保存する
+## ステップ 4: カスタム カルチャ プロバイダーの実装
+
+ここで、フィールドが更新されたときに日付形式などのカルチャ設定がどのように適用されるかを制御するカスタム カルチャ プロバイダーを実装する必要があります。
+
+というクラスを作成します`FieldUpdateCultureProvider`を実装する`IFieldUpdateCultureProvider`インターフェイス。このクラスは、地域に基づいて異なるカルチャ形式を返します。この例では、ロシア語と米国のカルチャ設定を構成します。
+
+```csharp
+private class FieldUpdateCultureProvider : IFieldUpdateCultureProvider
+{
+    public CultureInfo GetCulture(string name, Field field)
+    {
+        switch (name)
+        {
+            case "ru-RU":
+                CultureInfo culture = new CultureInfo(name, false);
+                DateTimeFormatInfo format = culture.DateTimeFormat;
+
+                format.MonthNames = new[] { "месяц 1", "месяц 2", "месяц 3", "месяц 4", "месяц 5", "месяц 6", "месяц 7", "месяц 8", "месяц 9", "месяц 10", "месяц 11", "месяц 12", "" };
+                format.MonthGenitiveNames = format.MonthNames;
+                format.AbbreviatedMonthNames = new[] { "мес 1", "мес 2", "мес 3", "мес 4", "мес 5", "мес 6", "мес 7", "мес 8", "мес 9", "мес 10", "мес 11", "мес 12", "" };
+                format.AbbreviatedMonthGenitiveNames = format.AbbreviatedMonthNames;
+
+                format.DayNames = new[] { "день недели 7", "день недели 1", "день недели 2", "день недели 3", "день недели 4", "день недели 5", "день недели 6" };
+                format.AbbreviatedDayNames = new[] { "день 7", "день 1", "день 2", "день 3", "день 4", "день 5", "день 6" };
+                format.ShortestDayNames = new[] { "д7", "д1", "д2", "д3", "д4", "д5", "д6" };
+
+                format.AMDesignator = "До полудня";
+                format.PMDesignator = "После полудня";
+
+                const string pattern = "yyyy MM (MMMM) dd (dddd) hh:mm:ss tt";
+                format.LongDatePattern = pattern;
+                format.LongTimePattern = pattern;
+                format.ShortDatePattern = pattern;
+                format.ShortTimePattern = pattern;
+
+                return culture;
+            case "en-US":
+                return new CultureInfo(name, false);
+            default:
+                return null;
+        }
+    }
+}
+```
+
+## ステップ5: ドキュメントを保存する
 
 最後に、ドキュメントを指定されたディレクトリに保存します。これにより、すべての変更が保持されます。
 
@@ -104,9 +149,9 @@ Word ドキュメントのフィールド更新カルチャの構成は複雑に
 
 完全な機能を使用するには、有効なAsposeライセンスが必要になる場合があります。ライセンスは以下から取得できます。[Asposeの購入ページ](https://purchase.aspose.com/buy)または一時ライセンスを使用する[ここ](https://purchase.aspose.com/temporary-license/).
 
-### フィールド更新文化をさらにカスタマイズするにはどうすればよいでしょうか?
+### フィールド更新文化をさらにカスタマイズするにはどうすればよいですか?
 
-延長することができます`FieldUpdateCultureProvider`クラスを使用して、特定のニーズに合わせたカスタム カルチャー プロバイダーを作成します。
+延長することができます`FieldUpdateCultureProvider`クラスを使用して、特定のニーズに合わせてカスタマイズされたカスタム カルチャー プロバイダーを作成します。
 
 ### 問題が発生した場合、詳細情報やサポートはどこで入手できますか?
 

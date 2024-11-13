@@ -55,7 +55,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 2. lépés: Inicializálja a Dokumentumot és a DocumentBuildert
 
- Ezután létre kell hoznia egy új Word-dokumentumot, és inicializálnia kell a`DocumentBuilder`osztály, amely segít a dokumentum felépítésében.
+ Ezután létre kell hoznia egy új Word-dokumentumot, és inicializálnia kell a`DocumentBuilder` osztály, amely segít a dokumentum felépítésében.
 
 Új dokumentum létrehozása
 
@@ -64,7 +64,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-- `Document doc = new Document();` létrehoz egy új Word dokumentumot.
+- `Document doc = new Document();`létrehoz egy új Word dokumentumot.
 - `DocumentBuilder builder = new DocumentBuilder(doc);` inicializálja a DocumentBuildert a létrehozott dokumentummal.
 
 ## 3. lépés: Rácshoz illesztés engedélyezése bekezdésekhez
@@ -104,7 +104,7 @@ Betűtípusraszter beállítása rácsra
 par.Runs[0].Font.SnapToGrid = true;
 ```
 
-- `par.Runs[0].Font.SnapToGrid = true;`biztosítja, hogy a bekezdésben használt betűtípus illeszkedjen a rácshoz.
+- `par.Runs[0].Font.SnapToGrid = true;` biztosítja, hogy a bekezdésben használt betűtípus illeszkedjen a rácshoz.
 
 ## 6. lépés: Mentse el a dokumentumot
 
@@ -137,4 +137,4 @@ Igen, bár ideiglenes licencet is használhat az értékeléshez, a teljes hozz�
 Nem, a Snap to Grid engedélyezése nincs jelentős hatással a dokumentum teljesítményére.
 
 ### Hol találhatok további információt az Aspose.Words for .NET-ről?
- Látogassa meg a[dokumentáció](https://reference.aspose.com/words/net/)részletes információkért és példákért.
+ Látogassa meg a[dokumentáció](https://reference.aspose.com/words/net/) részletes információkért és példákért.

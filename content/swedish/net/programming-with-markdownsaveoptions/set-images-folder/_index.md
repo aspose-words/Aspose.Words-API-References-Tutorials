@@ -100,7 +100,7 @@ Ja, Aspose.Words för .NET kan användas med alla .NET-kompatibla språk som VB.
 
 ### Hur får jag en tillfällig licens för Aspose.Words?
 
- Du kan få en tillfällig licens[här](https://purchase.aspose.com/temporary-license/).
+Du kan få en tillfällig licens[här](https://purchase.aspose.com/temporary-license/).
 
 ### Vilka typer av dokument kan jag konvertera till Markdown?
 

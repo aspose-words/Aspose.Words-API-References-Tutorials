@@ -83,7 +83,7 @@ Ebben a példában:
 
 ## 4. lépés: Frissítse az oldalelrendezést
 
-A módosítások elvégzése után manuálisan kell frissítenie az oldal elrendezését, hogy tükrözze a módosításokat. Ez biztosítja, hogy a gyorsítótárazott elrendezés az új beállításokkal újjáépüljön.
+módosítások elvégzése után manuálisan kell frissítenie az oldal elrendezését, hogy tükrözze a módosításokat. Ez biztosítja, hogy a gyorsítótárazott elrendezés az új beállításokkal újjáépüljön.
 
 ```csharp
 // Frissítse az oldal elrendezését
@@ -101,11 +101,11 @@ Végül mentse újra a dokumentumot egy új PDF-fájlba a frissített elrendezé
 doc.Save(dataDir + "Document.UpdatePageLayout.2.pdf");
 ```
 
-Ez az utolsó mentési művelet rögzíti az Ön által végzett változtatásokat, és alkalmazza a frissített elrendezést az új PDF-re.
+Ez az utolsó mentési művelet rögzíti az Ön által végzett módosításokat, és alkalmazza a frissített elrendezést az új PDF-re.
 
 ## Következtetés
 
-A Word dokumentumok oldalelrendezésének frissítése az Aspose.Words for .NET segítségével hatékony módja annak, hogy a dokumentumok pontosan úgy nézzenek ki, ahogyan szeretné. Az alábbi lépések követésével zökkenőmentesen betöltheti a dokumentumot, végrehajthatja a módosításokat, frissítheti az elrendezést és mentheti a változtatásokat. Függetlenül attól, hogy módosítja a betűtípusokat, módosítja a tájolást vagy a margókat, ez a folyamat segít megőrizni a dokumentumok vizuális integritását.
+A Word dokumentumok oldalelrendezésének frissítése az Aspose.Words for .NET segítségével hatékony módja annak, hogy a dokumentumok pontosan úgy nézzenek ki, ahogyan szeretné. Ha követi ezeket a lépéseket, zökkenőmentesen betöltheti a dokumentumot, alkalmazhat módosításokat, frissítheti az elrendezést és mentheti a változtatásokat. Függetlenül attól, hogy módosítja a betűtípusokat, módosítja a tájolást vagy a margókat, ez a folyamat segít megőrizni a dokumentumok vizuális integritását.
 
 
 ## GYIK

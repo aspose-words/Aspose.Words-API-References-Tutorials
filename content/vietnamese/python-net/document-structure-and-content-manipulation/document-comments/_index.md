@@ -1,30 +1,30 @@
 ---
-title: Sử dụng tính năng nhận xét trong tài liệu Word
-linktitle: Sử dụng tính năng nhận xét trong tài liệu Word
+title: Sử dụng tính năng bình luận trong tài liệu Word
+linktitle: Sử dụng tính năng bình luận trong tài liệu Word
 second_title: API quản lý tài liệu Python Aspose.Words
-description: Tìm hiểu cách sử dụng các tính năng nhận xét trong Tài liệu Word bằng Aspose.Words cho Python. Hướng dẫn từng bước với mã nguồn. Tăng cường hợp tác và hợp lý hóa việc đánh giá trong tài liệu.
+description: Tìm hiểu cách sử dụng các tính năng bình luận trong Tài liệu Word bằng Aspose.Words cho Python. Hướng dẫn từng bước với mã nguồn. Tăng cường cộng tác và hợp lý hóa việc đánh giá trong tài liệu.
 type: docs
 weight: 11
 url: /vi/python-net/document-structure-and-content-manipulation/document-comments/
 ---
 
-Nhận xét đóng vai trò quan trọng trong việc cộng tác và đánh giá tài liệu, cho phép nhiều cá nhân chia sẻ suy nghĩ và đề xuất của họ trong tài liệu Word. Aspose.Words for Python cung cấp một API mạnh mẽ cho phép các nhà phát triển dễ dàng làm việc với các nhận xét trong tài liệu Word. Trong bài viết này, chúng ta sẽ khám phá cách sử dụng các tính năng nhận xét trong tài liệu Word bằng Aspose.Words cho Python.
+Bình luận đóng vai trò quan trọng trong việc cộng tác và xem xét tài liệu, cho phép nhiều cá nhân chia sẻ suy nghĩ và đề xuất của họ trong một tài liệu Word. Aspose.Words for Python cung cấp một API mạnh mẽ cho phép các nhà phát triển dễ dàng làm việc với các bình luận trong tài liệu Word. Trong bài viết này, chúng ta sẽ khám phá cách sử dụng các tính năng bình luận trong tài liệu Word bằng Aspose.Words for Python.
 
 ## Giới thiệu
 
-Cộng tác là một khía cạnh cơ bản của việc tạo tài liệu và nhận xét cung cấp một cách liền mạch để nhiều người dùng chia sẻ phản hồi và suy nghĩ của họ trong tài liệu. Aspose.Words for Python, một thư viện thao tác tài liệu mạnh mẽ, trao quyền cho các nhà phát triển làm việc theo chương trình với các tài liệu Word, bao gồm thêm, sửa đổi và truy xuất nhận xét.
+Cộng tác là một khía cạnh cơ bản của việc tạo tài liệu và bình luận cung cấp một cách liền mạch để nhiều người dùng chia sẻ phản hồi và suy nghĩ của họ trong một tài liệu. Aspose.Words for Python, một thư viện thao tác tài liệu mạnh mẽ, trao quyền cho các nhà phát triển làm việc theo chương trình với các tài liệu Word, bao gồm thêm, sửa đổi và truy xuất bình luận.
 
 ## Thiết lập Aspose.Words cho Python
 
- Để bắt đầu, bạn cần cài đặt Aspose.Words cho Python. Bạn có thể tải xuống thư viện từ[Aspose.Words cho Python](https://releases.aspose.com/words/python/) liên kết tải về. Sau khi tải xuống, bạn có thể cài đặt nó bằng pip:
+ Để bắt đầu, bạn cần cài đặt Aspose.Words cho Python. Bạn có thể tải xuống thư viện từ[Aspose.Words cho Python](https://releases.aspose.com/words/python/) liên kết tải xuống. Sau khi tải xuống, bạn có thể cài đặt bằng pip:
 
 ```python
 pip install aspose-words
 ```
 
-## Thêm nhận xét vào tài liệu
+## Thêm bình luận vào tài liệu
 
-Việc thêm nhận xét vào tài liệu Word bằng Aspose.Words dành cho Python rất đơn giản. Đây là một ví dụ đơn giản:
+Việc thêm bình luận vào tài liệu Word bằng Aspose.Words for Python rất đơn giản. Sau đây là một ví dụ đơn giản:
 
 ```python
 import aspose.words as aw
@@ -45,9 +45,9 @@ run = paragraph.runs[0]
 run.insert_comment(comment)
 ```
 
-## Truy xuất nhận xét từ tài liệu
+## Lấy lại bình luận từ một tài liệu
 
-Việc lấy nhận xét từ một tài liệu cũng dễ dàng không kém. Bạn có thể lặp qua các nhận xét trong tài liệu và truy cập các thuộc tính của chúng:
+Việc lấy lại các bình luận từ một tài liệu cũng dễ dàng như vậy. Bạn có thể lặp lại các bình luận trong một tài liệu và truy cập các thuộc tính của chúng:
 
 ```python
 for comment in doc.comments:
@@ -56,9 +56,9 @@ for comment in doc.comments:
     print("Date:", comment.date_time)
 ```
 
-## Sửa đổi và giải quyết ý kiến
+## Sửa đổi và giải quyết bình luận
 
-Bình luận thường có thể thay đổi. Aspose.Words for Python cho phép bạn sửa đổi các nhận xét hiện có và đánh dấu chúng là đã giải quyết:
+Bình luận thường có thể thay đổi. Aspose.Words for Python cho phép bạn sửa đổi các bình luận hiện có và đánh dấu chúng là đã giải quyết:
 
 ```python
 # Modify a comment's text
@@ -69,9 +69,9 @@ comment.text = "Updated insight: " + comment.text
 comment.resolved = True
 ```
 
-## Xử lý câu trả lời và cuộc trò chuyện
+## Xử lý trả lời và hội thoại
 
-Nhận xét có thể là một phần của cuộc trò chuyện và các câu trả lời sẽ bổ sung thêm chiều sâu cho cuộc thảo luận. Aspose.Words for Python cho phép bạn quản lý các câu trả lời nhận xét:
+Bình luận có thể là một phần của cuộc trò chuyện, với các phản hồi làm tăng thêm chiều sâu cho các cuộc thảo luận. Aspose.Words for Python cho phép bạn quản lý các phản hồi bình luận:
 
 ```python
 # Add a reply to a comment
@@ -81,9 +81,9 @@ reply.date_time = aw.DateTime.now()
 comment.replies.add(reply)
 ```
 
-## Định dạng và tạo kiểu cho nhận xét
+## Định dạng và Kiểu dáng Bình luận
 
-Định dạng nhận xét nâng cao khả năng hiển thị của họ. Bạn có thể áp dụng định dạng cho nhận xét bằng Aspose.Words cho Python:
+Định dạng bình luận giúp tăng khả năng hiển thị của chúng. Bạn có thể áp dụng định dạng cho bình luận bằng Aspose.Words for Python:
 
 ```python
 # Apply formatting to a comment
@@ -94,7 +94,7 @@ comment.runs[0].font.color = aw.Color.red
 
 ## Quản lý tác giả bình luận
 
-Bình luận được quy cho các tác giả. Aspose.Words for Python cho phép bạn quản lý tác giả nhận xét:
+Bình luận được ghi nhận cho tác giả. Aspose.Words for Python cho phép bạn quản lý tác giả bình luận:
 
 ```python
 # Change the author's name
@@ -104,7 +104,7 @@ comment.author = "Jane Doe"
 
 ## Xuất và nhập bình luận
 
-Các nhận xét có thể được xuất và nhập để tạo điều kiện cho sự hợp tác bên ngoài:
+Có thể xuất và nhập bình luận để tạo điều kiện thuận lợi cho việc cộng tác bên ngoài:
 
 ```python
 # Export comments to a file
@@ -114,38 +114,38 @@ doc.save_comments("comments.xml")
 doc.import_comments("comments.xml")
 ```
 
-## Các phương pháp hay nhất để sử dụng nhận xét
+## Thực hành tốt nhất để sử dụng bình luận
 
-- Sử dụng nhận xét để cung cấp ngữ cảnh, giải thích và đề xuất.
-- Giữ bình luận ngắn gọn và phù hợp với nội dung.
-- Giải quyết các nhận xét khi quan điểm của họ đã được giải quyết.
-- Sử dụng câu trả lời để thúc đẩy các cuộc thảo luận chi tiết.
+- Sử dụng bình luận để cung cấp bối cảnh, giải thích và gợi ý.
+- Viết bình luận ngắn gọn và phù hợp với nội dung.
+- Giải quyết các bình luận khi các vấn đề đã được giải quyết.
+- Sử dụng phản hồi để thúc đẩy các cuộc thảo luận chi tiết.
 
 ## Phần kết luận
 
-Aspose.Words for Python đơn giản hóa thao tác với nhận xét trong tài liệu Word, cung cấp API toàn diện để thêm, truy xuất, sửa đổi và quản lý nhận xét. Bằng cách tích hợp Aspose.Words for Python vào dự án của mình, bạn có thể tăng cường cộng tác và hợp lý hóa quy trình xem xét trong tài liệu của mình.
+Aspose.Words for Python đơn giản hóa việc làm việc với các bình luận trong tài liệu Word, cung cấp API toàn diện để thêm, truy xuất, sửa đổi và quản lý các bình luận. Bằng cách tích hợp Aspose.Words for Python vào các dự án của bạn, bạn có thể tăng cường sự cộng tác và hợp lý hóa quy trình xem xét trong tài liệu của mình.
 
 ## Câu hỏi thường gặp
 
-### Aspose.Words cho Python là gì?
+### Aspose.Words dành cho Python là gì?
 
-Aspose.Words for Python là một thư viện thao tác tài liệu mạnh mẽ cho phép các nhà phát triển tạo, sửa đổi và xử lý tài liệu Word bằng Python theo chương trình.
+Aspose.Words for Python là một thư viện xử lý tài liệu mạnh mẽ cho phép các nhà phát triển tạo, sửa đổi và xử lý tài liệu Word theo chương trình bằng Python.
 
-### Làm cách nào để cài đặt Aspose.Words cho Python?
+### Làm thế nào để cài đặt Aspose.Words cho Python?
 
 Bạn có thể cài đặt Aspose.Words cho Python bằng pip:
 ```python
 pip install aspose-words
 ```
 
-### Tôi có thể sử dụng Aspose.Words for Python để trích xuất các nhận xét hiện có từ tài liệu Word không?
+### Tôi có thể sử dụng Aspose.Words cho Python để trích xuất các chú thích hiện có từ tài liệu Word không?
 
-Có, bạn có thể lặp qua các nhận xét trong tài liệu và truy xuất các thuộc tính của chúng bằng Aspose.Words for Python.
+Có, bạn có thể lặp lại các bình luận trong tài liệu và lấy các thuộc tính của chúng bằng Aspose.Words cho Python.
 
-### Có thể ẩn hoặc hiển thị nhận xét theo chương trình bằng API không?
+### Có thể ẩn hoặc hiển thị bình luận theo chương trình bằng API không?
 
- Có, bạn có thể kiểm soát khả năng hiển thị của nhận xét bằng cách sử dụng`comment.visible` thuộc tính trong Aspose.Words cho Python.
+ Có, bạn có thể kiểm soát khả năng hiển thị của bình luận bằng cách sử dụng`comment.visible` thuộc tính trong Aspose.Words dành cho Python.
 
-### Aspose.Words for Python có hỗ trợ thêm nhận xét vào các phạm vi văn bản cụ thể không?
+### Aspose.Words for Python có hỗ trợ thêm chú thích vào các phạm vi văn bản cụ thể không?
 
-Hoàn toàn có thể, bạn có thể thêm nhận xét vào các phạm vi văn bản cụ thể trong tài liệu bằng cách sử dụng API phong phú của Aspose.Words cho Python.
+Hoàn toàn có thể thêm chú thích vào các vùng văn bản cụ thể trong tài liệu bằng cách sử dụng API phong phú của Aspose.Words for Python.

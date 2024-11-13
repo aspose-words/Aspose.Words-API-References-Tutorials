@@ -15,7 +15,7 @@ Szia kódolótárs! Gondolkozott már azon, hogyan módosíthatja a Word-dokumen
 
 Mielőtt belemerülnénk a kódba, győződjünk meg arról, hogy mindennel rendelkezünk, amit követnünk kell az oktatóanyaggal együtt. Íme egy gyors ellenőrző lista:
 
-1.  Aspose.Words for .NET Library: Győződjön meg arról, hogy rendelkezik az Aspose.Words for .NET könyvtárral. Tudod[töltse le itt](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Library: Győződjön meg arról, hogy rendelkezik az Aspose.Words for .NET könyvtárral. Megteheti[töltse le itt](https://releases.aspose.com/words/net/).
 2. Fejlesztési környezet: A gépre telepítve kell lennie egy IDE-nek, mint a Visual Studio.
 3. Alapvető C# ismerete: Bár a dolgokat egyszerűnek tartjuk, a C# alapvető ismerete hasznos lesz.
 4. Word-dokumentum minta: Készítsen Word-mintadokumentumot. Ebben az oktatóanyagban "Document.docx" néven fogjuk hivatkozni.

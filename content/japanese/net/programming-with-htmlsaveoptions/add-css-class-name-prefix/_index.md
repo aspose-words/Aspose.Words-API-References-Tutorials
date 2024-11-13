@@ -35,7 +35,7 @@ using Aspose.Words.Saving;
 
 CSS クラス名プレフィックスを追加する前に、プロジェクトを設定しましょう。
 
-### ステップ 1.1: 新しいプロジェクトを作成する
+### ステップ1.1: 新しいプロジェクトを作成する
 
  Visual Studioを起動し、新しいコンソールアプリプロジェクトを作成します。次のようなキャッチーな名前を付けます。`AsposeCssPrefixExample`.
 
@@ -61,7 +61,7 @@ Install-Package Aspose.Words
 string dataDir = @"C:\YourProject\Documents\";
 ```
 
-### ステップ2.2: ドキュメントを読み込む
+### ステップ 2.2: ドキュメントを読み込む
 
 次に、Aspose.Words を使用してドキュメントを読み込みます。
 

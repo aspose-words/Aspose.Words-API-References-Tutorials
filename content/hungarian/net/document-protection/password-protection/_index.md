@@ -15,10 +15,10 @@ Szia! Gondolkozott már azon, hogyan védheti meg Word-dokumentumait a nem kív�
 
 Mielőtt belevetnénk magunkat a Word-dokumentumok jelszóval való védelmének ügyébe, néhány dologra szüksége lesz:
 
-1.  Aspose.Words for .NET: Győződjön meg arról, hogy rendelkezik az Aspose.Words for .NET könyvtárral. Tudod[töltse le itt](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Győződjön meg arról, hogy rendelkezik az Aspose.Words for .NET könyvtárral. Megteheti[töltse le itt](https://releases.aspose.com/words/net/).
 2. Fejlesztői környezet: Visual Studio vagy bármely más C# fejlesztői környezet.
 3. Alapvető C# ismeretek: A C# programozás alapvető ismerete.
-4.  Aspose Licenc: Szerezzen licencet a következőtől[itt](https://purchase.aspose.com/buy)vagy használja a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/) értékeléshez.
+4. Aspose Licenc: Szerezzen licencet a következőtől[itt](https://purchase.aspose.com/buy) vagy használja a[ideiglenes engedély](https://purchase.aspose.com/temporary-license/) értékeléshez.
 
 ## Névterek importálása
 
@@ -62,7 +62,7 @@ Document doc = new Document();
 
 Itt történik a varázslat. Jelszavas védelmet alkalmazunk dokumentumunkra, hogy megakadályozzuk az illetéktelen hozzáférést.
 
-### Válassza a Védelem típusát
+### Válassza ki a Védelem típusát
 
  Az Aspose.Words különféle típusú védelmet kínál, mint pl`NoProtection`, `ReadOnly`, `AllowOnlyComments` , és`AllowOnlyFormFields` . Ehhez a példához használjuk`NoProtection` de jelszóval, ami lényegében azt jelenti, hogy a dokumentum szerkeszthető, de jelszó szükséges a védelem eltávolításához.
 
@@ -88,7 +88,7 @@ doc.Save(dataDir + "DocumentProtection.PasswordProtection.docx");
 
 ## Következtetés
 
-És megvan! Sikeresen hozzáadta a jelszavas védelmet Word-dokumentumához az Aspose.Words for .NET használatával. Olyan ez, mintha digitális zárral védené a legfontosabb dokumentumait, így biztonságban vannak a kíváncsi szemek elől. Akár érzékeny információkat véd, akár csak egy további biztonsági réteget szeretne hozzáadni, az Aspose.Words ezt egyszerűvé és hatékonysá teszi. Boldog kódolást!
+És megvan! Sikeresen hozzáadta a jelszavas védelmet Word-dokumentumához az Aspose.Words for .NET segítségével. Olyan ez, mintha digitális zárral védené a legfontosabb dokumentumait, így biztonságban vannak a kíváncsi szemek elől. Akár érzékeny információkat véd, akár csak egy további biztonsági réteget szeretne hozzáadni, az Aspose.Words ezt egyszerűvé és hatékonysá teszi. Boldog kódolást!
 
 ## GYIK
 

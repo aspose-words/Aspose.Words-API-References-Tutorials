@@ -23,7 +23,7 @@ Mielőtt elkezdené, győződjön meg arról, hogy a következő előfeltételek
 
 ## Hozzon létre egy új Java projektet
 
-Kezdjük egy új Java projekt létrehozásával az Ön által preferált IDE-ben. Nevezheti úgy, ahogy akarja. Ez a projekt szolgál majd munkaterületünkként meghatározott dokumentumoldalak nyomtatásához.
+Kezdjük egy új Java projekt létrehozásával az Ön által preferált IDE-ben. Nevezheted, ahogy akarod. Ez a projekt szolgál majd munkaterületünkként meghatározott dokumentumoldalak nyomtatásához.
 
 ## Adja hozzá az Aspose.Words Dependency-t
 
@@ -94,7 +94,7 @@ Igen, az Aspose.Words for Java a dokumentumformátumok széles skáláját támo
 
 ### Hogyan állíthatok be további nyomtatási beállításokat, például az oldal tájolását és a papírméretet?
 
- Beállíthat további nyomtatási beállításokat, például az oldal tájolását és a papírméretet, ha konfigurálja a`PrintOptions` tárgyat a dokumentum kinyomtatása előtt. Használjon olyan módszereket, mint pl`setOrientation`és`setPaperSize` a nyomtatási beállítások testreszabásához.
+ Beállíthat további nyomtatási beállításokat, például az oldal tájolását és a papírméretet, ha konfigurálja a`PrintOptions` tárgyat a dokumentum kinyomtatása előtt. Használjon olyan módszereket, mint pl`setOrientation` és`setPaperSize` a nyomtatási beállítások testreszabásához.
 
 ### Elérhető az Aspose.Words for Java próbaverziója?
 

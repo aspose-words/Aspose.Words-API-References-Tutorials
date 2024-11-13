@@ -2,7 +2,7 @@
 title: 行を結合する
 linktitle: 行を結合する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して複数のテーブルの行を 1 つに結合する方法をステップバイステップ ガイドで学習します。
+description: Aspose.Words for .NET を使用して複数のテーブルの行を 1 つに結合する方法を、ステップバイステップ ガイドで学習します。
 type: docs
 weight: 10
 url: /ja/net/programming-with-tables/combine-rows/

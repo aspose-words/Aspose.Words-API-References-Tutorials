@@ -1,20 +1,20 @@
 ---
-title: Używanie znaczników dokumentów strukturalnych (SDT) w Aspose.Words dla Java
-linktitle: Korzystanie ze znaczników dokumentów strukturalnych (SDT)
+title: Korzystanie ze strukturalnych znaczników dokumentu (SDT) w Aspose.Words dla języka Java
+linktitle: Korzystanie ze strukturalnych znaczników dokumentu (SDT)
 second_title: Aspose.Words API przetwarzania dokumentów Java
-description: Dowiedz się, jak używać znaczników dokumentów strukturalnych (SDT) w Aspose.Words dla Java, korzystając z tego obszernego przewodnika. Twórz, modyfikuj i wiąż SDT z niestandardowymi danymi XML.
+description: Dowiedz się, jak używać Structured Document Tags (SDT) w Aspose.Words for Java dzięki temu kompleksowemu przewodnikowi. Twórz, modyfikuj i wiąż SDT z niestandardowymi danymi XML.
 type: docs
 weight: 19
 url: /pl/java/document-manipulation/using-structured-document-tags/
 ---
 
-## Wprowadzenie do używania znaczników dokumentów strukturalnych (SDT) w Aspose.Words dla Java
+## Wprowadzenie do korzystania ze strukturalnych znaczników dokumentu (SDT) w Aspose.Words dla języka Java
 
-Tagi dokumentów strukturalnych (SDT) to potężna funkcja w Aspose.Words dla Java, która umożliwia tworzenie i manipulowanie ustrukturyzowaną zawartością w dokumentach. W tym obszernym przewodniku przeprowadzimy Cię przez różne aspekty używania SDT w Aspose.Words dla Java. Niezależnie od tego, czy jesteś początkującym, czy doświadczonym programistą, w tym artykule znajdziesz cenne spostrzeżenia i praktyczne przykłady.
+Structured Document Tags (SDT) to potężna funkcja w Aspose.Words for Java, która umożliwia tworzenie i manipulowanie ustrukturyzowaną zawartością w dokumentach. W tym kompleksowym przewodniku przeprowadzimy Cię przez różne aspekty korzystania z SDT w Aspose.Words for Java. Niezależnie od tego, czy jesteś początkującym, czy doświadczonym programistą, w tym artykule znajdziesz cenne spostrzeżenia i praktyczne przykłady.
 
 ## Pierwsze kroki
 
-Zanim zagłębimy się w szczegóły, skonfigurujmy nasze środowisko i utwórzmy podstawowe narzędzie SDT. W tej sekcji omówimy następujące tematy:
+Zanim przejdziemy do szczegółów, skonfigurujmy nasze środowisko i utwórzmy podstawowy SDT. W tej sekcji omówimy następujące tematy:
 
 - Tworzenie nowego dokumentu
 - Dodawanie znacznika dokumentu strukturalnego
@@ -24,7 +24,7 @@ Zanim zagłębimy się w szczegóły, skonfigurujmy nasze środowisko i utwórzm
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Utwórz znacznik dokumentu strukturalnego typu CHECKBOX
+// Utwórz znacznik dokumentu strukturalnego typu POLE WYBORU
 StructuredDocumentTag sdtCheckBox = new StructuredDocumentTag(doc, SdtType.CHECKBOX, MarkupLevel.INLINE);
 builder.insertNode(sdtCheckBox);
 
@@ -34,7 +34,7 @@ doc.save("WorkingWithSDT.docx");
 
 ## Sprawdzanie bieżącego stanu pola wyboru SDT
 
-Po dodaniu pola wyboru SDT do dokumentu możesz chcieć programowo sprawdzić jego bieżący stan. Może to być przydatne, gdy trzeba sprawdzić dane wejściowe użytkownika lub wykonać określone działania w oparciu o stan pola wyboru.
+Po dodaniu pola wyboru SDT do dokumentu możesz chcieć sprawdzić jego aktualny stan programowo. Może to być przydatne, gdy musisz zweryfikować dane wejściowe użytkownika lub wykonać określone czynności na podstawie stanu pola wyboru.
 
 ```java
 Document doc = new Document("WorkingWithSDT.docx");
@@ -48,9 +48,9 @@ if (sdtCheckBox.getSdtType() == SdtType.CHECKBOX) {
 doc.save("UpdatedDocument.docx");
 ```
 
-## Modyfikowanie kontroli treści
+## Modyfikowanie elementów sterujących zawartością
 
-W tej sekcji omówimy, jak modyfikować elementy sterujące treścią w dokumencie. Omówimy trzy typy kontroli zawartości: zwykły tekst, lista rozwijana i obraz.
+W tej sekcji przyjrzymy się sposobom modyfikowania kontrolek zawartości w dokumencie. Omówimy trzy typy kontrolek zawartości: Zwykły tekst, Lista rozwijana i Obraz.
 
 ### Modyfikowanie kontroli zawartości zwykłego tekstu
 
@@ -103,7 +103,7 @@ doc.save("ModifiedDocument.docx");
 
 ## Tworzenie kontrolki zawartości ComboBox
 
-Kontrola zawartości ComboBox umożliwia użytkownikom wybieranie z predefiniowanej listy opcji. Stwórzmy taki w naszym dokumencie.
+Kontrolka ComboBox Content Control pozwala użytkownikom wybierać z predefiniowanej listy opcji. Utwórzmy jedną w naszym dokumencie.
 
 ```java
 Document doc = new Document();
@@ -116,9 +116,9 @@ doc.getFirstSection().getBody().appendChild(sdtComboBox);
 doc.save("ComboBoxDocument.docx");
 ```
 
-## Praca z kontrolą zawartości tekstu sformatowanego
+## Praca z kontrolą zawartości w formacie Rich Text
 
-Elementy sterujące zawartością tekstu sformatowanego doskonale nadają się do dodawania sformatowanego tekstu do dokumentów. Stwórzmy taki i ustalmy jego zawartość.
+Kontrolki zawartości Rich Text są idealne do dodawania sformatowanego tekstu do dokumentów. Utwórzmy jedną i ustawmy jej zawartość.
 
 ```java
 Document doc = new Document();
@@ -134,15 +134,15 @@ doc.getFirstSection().getBody().appendChild(sdtRichText);
 doc.save("RichTextDocument.docx");
 ```
 
-## Ustawianie stylów kontroli treści
+## Ustawianie stylów kontroli zawartości
 
-Możesz zastosować style do kontrolek zawartości, aby poprawić wygląd dokumentu. Zobaczmy, jak ustawić styl kontrolki zawartości.
+Możesz stosować style do kontrolek zawartości, aby poprawić wygląd wizualny dokumentu. Zobaczmy, jak ustawić styl kontrolki zawartości.
 
 ```java
 Document doc = new Document("WorkingWithSDT.docx");
 StructuredDocumentTag sdt = (StructuredDocumentTag) doc.getChild(NodeType.STRUCTURED_DOCUMENT_TAG, 0, true);
 
-//Zastosuj niestandardowy styl
+// Zastosuj niestandardowy styl
 Style style = doc.getStyles().getByStyleIdentifier(StyleIdentifier.QUOTE);
 sdt.setStyle(style);
 
@@ -163,9 +163,9 @@ sdt.getXmlMapping().setMapping(xmlPart, "/root[1]/text[1]", "");
 doc.save("CustomXMLBinding.docx");
 ```
 
-## Tworzenie tabeli z powtarzającymi się sekcjami odwzorowanymi na niestandardowe dane XML
+## Tworzenie tabeli z powtarzającymi się sekcjami mapowanymi na niestandardowe dane XML
 
-Tabele z powtarzającymi się sekcjami mogą być niezwykle przydatne do prezentacji ustrukturyzowanych danych. Utwórzmy taką tabelę i zmapujmy ją na niestandardowe dane XML.
+Tabele z powtarzającymi się sekcjami mogą być niezwykle przydatne do prezentowania ustrukturyzowanych danych. Utwórzmy taką tabelę i zmapujmy ją na niestandardowe dane XML.
 
 ```java
 Document doc = new Document();
@@ -200,9 +200,9 @@ row.appendChild(authorSdt);
 doc.save("RepeatingTableDocument.docx");
 ```
 
-## Praca z wielosekcyjnymi znacznikami dokumentów strukturalnych
+## Praca z wielosekcyjnymi strukturalnymi znacznikami dokumentów
 
-Tagi dokumentu strukturalnego mogą obejmować wiele sekcji dokumentu. W tej sekcji omówimy, jak pracować z wielosekcyjnymi zestawami SDT.
+Ustrukturyzowane znaczniki dokumentu mogą obejmować wiele sekcji w dokumencie. W tej sekcji przyjrzymy się, jak pracować z wielosekcyjnymi SDT.
 
 ```java
 Document doc = new Document("MultiSectionDocument.docx");
@@ -217,26 +217,26 @@ doc.save("ModifiedMultiSectionDocument.docx");
 
 ## Wniosek
 
-Ustrukturyzowane znaczniki dokumentów w Aspose.Words dla Java zapewniają wszechstronny sposób zarządzania i formatowania treści w dokumentach. Niezależnie od tego, czy chcesz utworzyć szablony, formularze czy dokumenty dynamiczne, narzędzia SDT zapewniają wymaganą elastyczność i kontrolę. Postępując zgodnie z przykładami i wskazówkami zawartymi w tym artykule, możesz wykorzystać możliwości narzędzi SDT w celu usprawnienia zadań związanych z przetwarzaniem dokumentów.
+Ustrukturyzowane znaczniki dokumentów w Aspose.Words for Java zapewniają wszechstronny sposób zarządzania i formatowania treści w dokumentach. Niezależnie od tego, czy musisz tworzyć szablony, formularze czy dynamiczne dokumenty, SDT oferują elastyczność i kontrolę, których potrzebujesz. Postępując zgodnie z przykładami i wskazówkami podanymi w tym artykule, możesz wykorzystać moc SDT, aby ulepszyć zadania przetwarzania dokumentów.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Jaki jest cel znaczników dokumentów strukturalnych (SDT)?
+### Jaki jest cel stosowania strukturalnych znaczników dokumentów (SDT)?
 
-Tagi dokumentów strukturalnych (SDT) służą do organizowania i formatowania treści w dokumentach, ułatwiając tworzenie szablonów, formularzy i dokumentów strukturalnych.
+Ustrukturyzowane Tagi Dokumentów (SDT) służą do organizowania i formatowania treści w dokumentach, dzięki czemu tworzenie szablonów, formularzy i ustrukturyzowanych dokumentów staje się łatwiejsze.
 
-### Jak mogę sprawdzić bieżący stan SDT pola wyboru?
+### Jak mogę sprawdzić aktualny stan Checkbox SDT?
 
- Możesz sprawdzić bieżący stan SDT pola wyboru za pomocą`setChecked` sposób, jak pokazano w artykule.
+ Aktualny stan pola wyboru SDT można sprawdzić za pomocą`setChecked` metoda, jak pokazano w artykule.
 
-### Czy mogę zastosować style do kontroli zawartości?
+### Czy mogę stosować style do kontrolek zawartości?
 
-Tak, możesz zastosować style do Kontroli treści, aby dostosować ich wygląd w dokumencie.
+Tak, możesz stosować style do kontrolek zawartości, aby dostosować ich wygląd w dokumencie.
 
 ### Czy można powiązać SDT z niestandardowymi danymi XML?
 
-Tak, możesz powiązać SDT z niestandardowymi danymi XML, umożliwiając dynamiczne generowanie treści i mapowanie danych.
+Tak, można powiązać SDT z niestandardowymi danymi XML, co umożliwia dynamiczne generowanie treści i mapowanie danych.
 
-### Co to są powtarzające się sekcje w SDT?
+### Czym są sekcje powtarzalne w SDT?
 
-Sekcje powtarzalne w narzędziach SDT umożliwiają tworzenie tabel z danymi dynamicznymi, w których wiersze mogą się powtarzać w oparciu o zmapowane dane XML.
+Powtarzalne sekcje w SDT umożliwiają tworzenie tabel z dynamicznymi danymi, w których wiersze mogą być powtarzane na podstawie mapowanych danych XML.

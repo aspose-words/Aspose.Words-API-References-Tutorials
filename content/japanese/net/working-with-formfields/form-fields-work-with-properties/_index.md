@@ -33,13 +33,13 @@ using Aspose.Words.Fields;
 
 まず最初に、.NET プロジェクトをセットアップし、Aspose.Words for .NET をインストールする必要があります。
 
-### ステップ 1.1: 新しいプロジェクトを作成する
+### ステップ1.1: 新しいプロジェクトを作成する
 
-Visual Studio を開き、新しいコンソール アプリ (.NET Core) プロジェクトを作成します。「FormFieldsExample」のような意味のある名前を付けます。
+Visual Studio を開き、新しいコンソール アプリ (.NET Core) プロジェクトを作成します。「FormFieldsExample」のようなわかりやすい名前を付けます。
 
 ### ステップ 1.2: Aspose.Words for .NET をインストールする
 
- Aspose.WordsはNuGetパッケージマネージャーからインストールできます。`Tools` ->`NuGet Package Manager` ->`Manage NuGet Packages for Solution`をクリックし、「Aspose.Words」を検索します。パッケージをインストールします。
+ Aspose.WordsはNuGetパッケージマネージャーからインストールできます。`Tools` ->`NuGet Package Manager` ->`Manage NuGet Packages for Solution`で、「Aspose.Words」を検索し、パッケージをインストールします。
 
 あるいは、NuGet パッケージ マネージャー コンソールを使用することもできます。
 
@@ -59,7 +59,7 @@ Install-Package Aspose.Words
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-### ステップ2.2: ドキュメントを読み込む
+### ステップ 2.2: ドキュメントを読み込む
 
 Word 文書を Aspose.Words Document オブジェクトに読み込みます。
 
@@ -102,7 +102,7 @@ doc.Save(dataDir + "ModifiedFormFields.docx");
 
 ## 結論
 
-これで完了です。Aspose.Words for .NET を使用して、Word 文書内のフォーム フィールドを正常に操作できました。この強力なライブラリを使用すると、Word 文書をプログラムで簡単に自動化および処理できるため、手作業に費やす膨大な時間を節約できます。
+これで完了です。Aspose.Words for .NET を使用して、Word 文書内のフォーム フィールドを正常に操作できました。この強力なライブラリを使用すると、Word 文書をプログラムで簡単に自動化および処理できるため、手作業にかかる膨大な時間を節約できます。
 
 複雑なドキュメント自動化ソリューションを開発する場合でも、単純な変更を加えるだけの場合でも、Aspose.Words for .NET が役立ちます。さまざまなフォーム フィールド プロパティとドキュメント機能を試して、このツールの機能を最大限に活用してください。
 

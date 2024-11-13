@@ -48,7 +48,7 @@ Install-Package Aspose.Words
 
 ## Steg 2: Ladda dokumenten
 
- Låt oss nu ladda de dokument vi vill slå samman. För det här exemplet behöver du två Word-dokument:`Document source.docx`och`Northwind traders.docx`. Se till att dessa filer finns i din projektkatalog.
+ Låt oss nu ladda de dokument vi vill slå samman. För det här exemplet behöver du två Word-dokument:`Document source.docx` och`Northwind traders.docx`. Se till att dessa filer finns i din projektkatalog.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";

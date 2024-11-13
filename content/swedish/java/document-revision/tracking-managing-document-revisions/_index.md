@@ -103,7 +103,7 @@ I det här exemplet sparar vi en kopia av dokumentet med "_v2" suffix för att i
 
 ### Kan jag acceptera eller avvisa ändringar programmatiskt?
 
- Ja, du kan acceptera eller avvisa revisioner med Aspose.Words för Java. Använd`acceptAllRevisions`och`rejectAllRevisions` metoder för att hantera revisioner.
+ Ja, du kan acceptera eller avvisa revisioner med Aspose.Words för Java. Använd`acceptAllRevisions` och`rejectAllRevisions` metoder för att hantera revisioner.
 
 ### Är det möjligt att skapa flera versioner av ett dokument?
 

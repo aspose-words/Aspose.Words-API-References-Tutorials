@@ -65,7 +65,7 @@ catch (Exception e)
 
 ## Steg 4: Verifiera licensen
 
- När du har ställt in licensen är det en bra idé att verifiera att den har tillämpats korrekt. Du kan göra detta genom att kontrollera`IsLicensed` egendom av`License` klass.
+När du har ställt in licensen är det en bra idé att verifiera att den har tillämpats korrekt. Du kan göra detta genom att kontrollera`IsLicensed` egendom av`License` klass.
 
 ```csharp
 if (license.IsLicensed)

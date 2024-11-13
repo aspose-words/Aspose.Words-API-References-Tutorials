@@ -16,7 +16,7 @@ Szia! Volt már olyan, hogy belegabalyodott a szövegformázás bonyolultságáb
 
 Mielőtt bepiszkítanánk a kódot, győződjünk meg arról, hogy mindennel megvan, amire szüksége van:
 
-1. Aspose.Words for .NET: Győződjön meg arról, hogy rendelkezik a könyvtárral. Tudod[töltse le itt](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET: Győződjön meg arról, hogy rendelkezik a könyvtárral. Megteheti[töltse le itt](https://releases.aspose.com/words/net/).
 2. IDE: Olyan fejlesztői környezet, mint a Visual Studio.
 3. C# alapismeretek: C# és .NET keretrendszer ismerete.
 4. Elválasztási szótárak: Elválasztási szótárak a használni kívánt nyelvekhez.

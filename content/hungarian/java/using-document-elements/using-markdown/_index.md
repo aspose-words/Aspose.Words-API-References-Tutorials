@@ -31,7 +31,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## dokumentum formázása
+## A dokumentum formázása
 
 Ebben a részben megvitatjuk, hogyan alkalmazhat stílusokat a Markdown dokumentumra. Kitérünk a címekre, a hangsúlyokra, a listákra és még sok másra.
 
@@ -115,10 +115,10 @@ doc.save(outPath + "WorkingWithMarkdown.CreateMarkdownDocument.md");
 string outPath = "Your Output Directory";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
-//Adja meg a bekezdés "Címsor 1" stílusát.
+// Adja meg a bekezdés "Címsor 1" stílusát.
 builder.getParagraphFormat().setStyleName("Heading 1");
 builder.writeln("Heading 1");
-// Állítsa vissza a stílusokat az előző bekezdésből, hogy ne keverje össze a stílusokat a bekezdések között.
+//Állítsa vissza a stílusokat az előző bekezdésből, hogy ne keverje össze a stílusokat a bekezdések között.
 builder.getParagraphFormat().setStyleName("Normal");
 // Szúrjon be vízszintes szabályt.
 builder.insertHorizontalRule();

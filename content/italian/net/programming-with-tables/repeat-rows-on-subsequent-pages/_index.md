@@ -2,14 +2,14 @@
 title: Ripeti le righe nelle pagine successive
 linktitle: Ripeti le righe nelle pagine successive
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come creare documenti Word con righe di intestazione di tabella ripetute utilizzando Aspose.Words per .NET. Segui questa guida per assicurarti documenti professionali e raffinati.
+description: Scopri come creare documenti Word con righe di intestazione di tabella ripetute usando Aspose.Words per .NET. Segui questa guida per garantire documenti professionali e curati.
 type: docs
 weight: 10
 url: /it/net/programming-with-tables/repeat-rows-on-subsequent-pages/
 ---
 ## Introduzione
 
-Creare un documento Word a livello di codice può essere un compito arduo, soprattutto quando è necessario mantenere la formattazione su più pagine. Hai mai provato a creare una tabella in Word, solo per renderti conto che le righe di intestazione non si ripetono nelle pagine successive? Non temere! Con Aspose.Words per .NET, puoi facilmente assicurarti che le intestazioni delle tabelle si ripetano su ogni pagina, fornendo un aspetto professionale e raffinato ai tuoi documenti. In questo tutorial ti guideremo attraverso i passaggi per raggiungere questo obiettivo utilizzando semplici esempi di codice e spiegazioni dettagliate. Immergiamoci!
+Creare un documento Word a livello di programmazione può essere un compito arduo, soprattutto quando è necessario mantenere la formattazione su più pagine. Hai mai provato a creare una tabella in Word, solo per scoprire che le righe di intestazione non si ripetono nelle pagine successive? Niente paura! Con Aspose.Words per .NET, puoi facilmente assicurarti che le intestazioni delle tue tabelle si ripetano su ogni pagina, conferendo un aspetto professionale e raffinato ai tuoi documenti. In questo tutorial, ti guideremo attraverso i passaggi per ottenere questo risultato utilizzando semplici esempi di codice e spiegazioni dettagliate. Immergiamoci!
 
 ## Prerequisiti
 
@@ -20,11 +20,11 @@ Prima di iniziare, assicurati di avere quanto segue:
 3. Visual Studio o qualsiasi altro IDE che supporti lo sviluppo .NET.
 4. Conoscenza di base della programmazione C#.
 
-Assicurati di aver installato Aspose.Words per .NET e di configurare il tuo ambiente di sviluppo prima di procedere.
+Prima di procedere, assicurati di aver installato Aspose.Words per .NET e di aver configurato l'ambiente di sviluppo.
 
-## Importa spazi dei nomi
+## Importazione degli spazi dei nomi
 
-Per iniziare, devi importare gli spazi dei nomi necessari nel tuo progetto. Aggiungi le seguenti direttive using nella parte superiore del file C#:
+Per iniziare, devi importare i namespace necessari nel tuo progetto. Aggiungi le seguenti direttive using in cima al tuo file C#:
 
 ```csharp
 using Aspose.Words;
@@ -35,21 +35,21 @@ Questi spazi dei nomi includono le classi e i metodi necessari per manipolare do
 
 ## Passaggio 1: inizializzare il documento
 
- Innanzitutto, creiamo un nuovo documento Word e a`DocumentBuilder` per costruire la nostra tabella.
+ Per prima cosa, creiamo un nuovo documento Word e un`DocumentBuilder` per costruire la nostra tabella.
 
 ```csharp
-// Percorso della directory dei documenti
+// Percorso alla directory del documento
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Questo codice inizializza un nuovo documento e a`DocumentBuilder` oggetto, che aiuta a costruire la struttura del documento.
+ Questo codice inizializza un nuovo documento e un`DocumentBuilder` oggetto, che aiuta a costruire la struttura del documento.
 
 ## Passaggio 2: avviare la tabella e definire le righe di intestazione
 
-Successivamente, inizieremo la tabella e definiremo le righe di intestazione che vogliamo ripetere nelle pagine successive.
+Ora inizieremo la tabella e definiremo le righe di intestazione che vogliamo ripetere nelle pagine successive.
 
 ```csharp
 builder.StartTable();
@@ -68,7 +68,7 @@ builder.EndRow();
 
  Qui, iniziamo una nuova tabella, impostiamo il`HeadingFormat`proprietà a`true` per indicare che le righe sono intestazioni e definire l'allineamento e la larghezza delle celle.
 
-## Passaggio 3: aggiungi righe di dati alla tabella
+## Passaggio 3: aggiungere righe di dati alla tabella
 
 Ora aggiungeremo più righe di dati alla nostra tabella. Queste righe non si ripeteranno nelle pagine successive.
 
@@ -87,9 +87,9 @@ for (int i = 0; i < 50; i++)
 }
 ```
 
- Questo ciclo inserisce 50 righe di dati nella tabella, con due colonne in ciascuna riga. IL`HeadingFormat` è impostato su`false` per queste righe, poiché non sono righe di intestazione.
+ Questo ciclo inserisce 50 righe di dati nella tabella, con due colonne in ogni riga.`HeadingFormat` è impostato su`false` per queste righe, poiché non sono righe di intestazione.
 
-## Passaggio 4: salva il documento
+## Passaggio 4: Salvare il documento
 
 Infine, salviamo il documento nella directory specificata.
 
@@ -97,25 +97,25 @@ Infine, salviamo il documento nella directory specificata.
 doc.Save(dataDir + "WorkingWithTables.RepeatRowsOnSubsequentPages.docx");
 ```
 
-Ciò salva il documento con il nome specificato nella directory dei documenti.
+In questo modo il documento verrà salvato con il nome specificato nella directory dei documenti.
 
 ## Conclusione
 
-Ed ecco qua! Con solo poche righe di codice, puoi creare un documento Word con tabelle che hanno righe di intestazione ripetute nelle pagine successive utilizzando Aspose.Words per .NET. Ciò non solo migliora la leggibilità dei tuoi documenti, ma garantisce anche un aspetto coerente e professionale. Ora vai avanti e provalo nei tuoi progetti!
+Ed ecco fatto! Con solo poche righe di codice, puoi creare un documento Word con tabelle che hanno righe di intestazione ripetute nelle pagine successive usando Aspose.Words per .NET. Questo non solo migliora la leggibilità dei tuoi documenti, ma assicura anche un aspetto coerente e professionale. Ora, vai avanti e provalo nei tuoi progetti!
 
 ## Domande frequenti
 
 ### Posso personalizzare ulteriormente le righe di intestazione?
  Sì, puoi applicare una formattazione aggiuntiva alle righe di intestazione modificando le proprietà di`ParagraphFormat`, `RowFormat` , E`CellFormat`.
 
-### È possibile aggiungere più colonne alla tabella?
- Assolutamente! Puoi aggiungere tutte le colonne necessarie inserendo più celle all'interno del file`InsertCell` metodo.
+### È possibile aggiungere altre colonne alla tabella?
+ Assolutamente! Puoi aggiungere tutte le colonne che ti servono inserendo più celle all'interno del`InsertCell` metodo.
 
-### Come posso fare in modo che altre righe si ripetano nelle pagine successive?
- Per ripetere qualsiasi riga, impostare il`RowFormat.HeadingFormat`proprietà a`true` per quella riga specifica.
+### Come posso fare in modo che altre righe vengano ripetute nelle pagine successive?
+ Per ripetere una riga qualsiasi, impostare`RowFormat.HeadingFormat`proprietà a`true` per quella riga specifica.
 
-### Posso utilizzare questo metodo per le tabelle esistenti in un documento?
- Sì, puoi modificare le tabelle esistenti accedendovi tramite il file`Document` oggetto e applicando una formattazione simile.
+### Posso usare questo metodo per le tabelle esistenti in un documento?
+ Sì, puoi modificare le tabelle esistenti accedendovi tramite`Document` oggetto e applicando una formattazione simile.
 
-### Quali altre opzioni di formattazione della tabella sono disponibili in Aspose.Words per .NET?
- Aspose.Words per .NET offre un'ampia gamma di opzioni di formattazione delle tabelle, tra cui l'unione delle celle, le impostazioni dei bordi e l'allineamento delle tabelle. Dai un'occhiata a[documentazione](https://reference.aspose.com/words/net/) per maggiori dettagli
+### Quali altre opzioni di formattazione delle tabelle sono disponibili in Aspose.Words per .NET?
+ Aspose.Words per .NET offre un'ampia gamma di opzioni di formattazione delle tabelle, tra cui l'unione delle celle, le impostazioni dei bordi e l'allineamento delle tabelle. Dai un'occhiata a[documentazione](https://reference.aspose.com/words/net/) per maggiori dettagli.

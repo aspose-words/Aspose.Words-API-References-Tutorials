@@ -2,7 +2,7 @@
 title: グラフの軸の境界
 linktitle: グラフの軸の境界
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、軸に表示される値の範囲を制御しながら、グラフの軸の境界を設定する方法を学習します。
+description: Aspose.Words for .NET を使用して、軸に表示される値の範囲を制御しながら、グラフ内の軸の境界を設定する方法を学習します。
 type: docs
 weight: 10
 url: /ja/net/programming-with-charts/bounds-of-axis/
@@ -104,12 +104,12 @@ doc.Save(dataDir + "WorkingWithCharts.BoundsOfAxis.docx");
 
 ## 結論
 
-Aspose.Words for .NET を使用すると、ドキュメント内でグラフを簡単に作成および操作できます。このステップ バイ ステップ ガイドでは、グラフの軸の境界を設定し、データのプレゼンテーションをより正確かつプロフェッショナルにする方法を説明しました。レポート、プレゼンテーション、またはその他のドキュメントを作成する場合でも、Aspose.Words は必要なツールを提供します。
+Aspose.Words for .NET を使用すると、ドキュメント内でグラフを簡単に作成および操作できます。このステップ バイ ステップ ガイドでは、グラフの軸の境界を設定し、データのプレゼンテーションをより正確かつプロフェッショナルにする方法を説明しました。レポート、プレゼンテーション、またはその他のドキュメントを生成する場合、Aspose.Words は必要なツールを提供します。
 
 ## よくある質問
 
 ### Aspose.Words for .NET とは何ですか?
-Aspose.Words for .NET は、.NET フレームワークを使用してプログラムで Word 文書を作成、変更、変換できるライブラリです。
+Aspose.Words for .NET は、.NET フレームワークを使用して Word 文書をプログラムで作成、変更、変換できるライブラリです。
 
 ### Aspose.Words for .NET をセットアップするにはどうすればよいですか?
 ダウンロードはこちらから[ここ](https://releases.aspose.com/words/net/)提供されているインストール手順に従ってください。

@@ -17,7 +17,7 @@ VBA マクロを使用した Words Processing は、開発者にとって貴重�
 | タイトル | 説明 |
 | --- | --- |
 | [Vba プロジェクトを作成する](./create-vba-project/) | Aspose.Words for .NET を使用して Word 文書で VBA プロジェクトを作成する方法を学びます。シームレスな文書自動化のためのステップバイステップ ガイドに従ってください。 |
-| [VBAマクロを読む](./read-vba-macros/) | Aspose.Words for .NET を使用して Word 文書から VBA マクロを読み取る方法を学びます。シームレスな文書自動化のための詳細なガイドに従ってください。 |
+| [Vbaマクロを読む](./read-vba-macros/) | Aspose.Words for .NET を使用して Word 文書から VBA マクロを読み取る方法を学びます。シームレスな文書自動化のための詳細なガイドに従ってください。 |
 | [VBAマクロの変更](./modify-vba-macros/) | Aspose.Words for .NET を使用して Word 文書内の VBA マクロを変更する方法を学びます。シームレスな文書自動化を実現するには、詳細なステップ バイ ステップ ガイドに従ってください。 |
-| [Vba プロジェクトのクローン](./clone-vba-project/) | Aspose.Words for .NET を使用して Word 文書に VBA プロジェクトを複製する方法を学びます。シームレスなドキュメント操作については、ステップバイステップのガイドに従ってください。|
+| [Vba プロジェクトのクローン](./clone-vba-project/) | Aspose.Words for .NET を使用して Word 文書に VBA プロジェクトを複製する方法を学びます。シームレスな文書操作については、ステップバイステップのガイドに従ってください。|
 | [Vba モジュールのクローン](./clone-vba-module/) | Aspose.Words for .NET を使用すると、Word ドキュメント内の VBA モジュールを簡単に複製できます。シームレスなドキュメント操作については、当社のステップバイステップ ガイドに従ってください。 |

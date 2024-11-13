@@ -1,94 +1,94 @@
 ---
-title: PDF Belgesinde URI'dan Kaçış
-linktitle: PDF Belgesinde URI'dan Kaçış
+title: PDF Belgesinde URI'den Kaçış
+linktitle: PDF Belgesinde URI'den Kaçış
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak PDF'lerdeki URI'lerden nasıl çıkış yapacağınızı öğrenin. Bu ayrıntılı kılavuz, süreç boyunca size adım adım yol gösterir.
+description: Aspose.Words for .NET kullanarak PDF'lerdeki URI'lerden nasıl kaçacağınızı öğrenin. Bu ayrıntılı kılavuz sizi adım adım süreçte yönlendirir.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/escape-uri/
 ---
 ## giriiş
 
-Selam! Aspose.Words for .NET kullanarak bir Word belgesini PDF olarak kaydederken URI'lerin nasıl işleneceğini hiç merak ettiniz mi? Doğru yerdesiniz! Bugün, belgeniz dönüştürülürken bunların doğru şekilde çalıştığından emin olmak için PDF belgelerindeki kaçış URI'lerini derinlemesine inceleyeceğiz. Gelin bu yolculuğa adım adım birlikte çıkalım ve yol boyunca her konsepti kavramanızı sağlayın.
+Merhaba! Aspose.Words for .NET kullanarak bir Word belgesini PDF olarak kaydederken URI'lerin nasıl işleneceğini hiç merak ettiniz mi? Doğru yerdesiniz! Bugün, belgeniz dönüştürüldüğünde doğru şekilde çalışmasını sağlamak için PDF belgelerindeki URI'lerden kaçmayı derinlemesine inceleyeceğiz. Bu yolculuğa birlikte adım adım çıkalım ve yol boyunca her kavramı kavradığınızdan emin olalım.
 
-## Önkoşullar
+## Ön koşullar
 
 Başlamadan önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
-1.  Aspose.Words for .NET: En son sürüme sahip olduğunuzdan emin olun. İndirebilirsin[Burada](https://releases.aspose.com/words/net/).
-2. Geliştirme Ortamı: Visual Studio veya başka herhangi bir .NET geliştirme ortamı.
-3. Temel C# Bilgisi: Bu eğitimde, C# programlama konusunda temel bir anlayışa sahip olduğunuz varsayılmaktadır.
+1.  Aspose.Words for .NET: En son sürüme sahip olduğunuzdan emin olun. İndirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: Visual Studio veya herhangi bir .NET geliştirme ortamı.
+3. Temel C# Bilgisi: Bu eğitimde C# programlama hakkında temel bir anlayışa sahip olduğunuzu varsayıyoruz.
 
 ## Ad Alanlarını İçe Aktar
 
-Öncelikle gerekli ad alanlarını içe aktarmanız gerekir. Aspose.Words işlevlerine erişim için bu çok önemlidir.
+İlk önce, gerekli ad alanlarını içe aktarmanız gerekir. Bu, Aspose.Words işlevlerine erişmek için önemlidir.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Tamam, hadi süreci sindirilebilir adımlara ayıralım. Takip edin ve kısa sürede URI'lerden kaçma konusunda profesyonel olacaksınız!
+Tamam, süreci sindirilebilir adımlara bölelim. Takip edin ve kısa sürede URI'lerden kaçmada uzman olacaksınız!
 
-## 1. Adım: Belge Dizininizi Kurun
+## Adım 1: Belge Dizininizi Ayarlayın
 
-Koda dalmadan önce belgeler dizininizin yolunu ayarlayın. Dosyalarınızın kaydedileceği yer burasıdır.
+Koda dalmadan önce, belgeler dizininize giden yolu ayarlayın. Dosyalarınız buraya kaydedilecektir.
 
 ```csharp
-// Belgeler dizininin yolu.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` PDF belgenizi kaydetmek istediğiniz asıl yolla.
+ Yer değiştirmek`"YOUR DOCUMENT DIRECTORY"` PDF belgenizi kaydetmek istediğiniz gerçek yol ile.
 
 ## Adım 2: Yeni Bir Belge Oluşturun
 
-Daha sonra Aspose.Words'ü kullanarak yeni bir belge oluşturacağız. Bu belge, köprüler eklemek için tuvalimiz olarak hizmet edecektir.
+Sonra, Aspose.Words kullanarak yeni bir belge oluşturacağız. Bu belge, köprü metinleri eklemek için tuvalimiz olarak hizmet edecek.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Burada,`Document` yeni Word belgenizdir ve`DocumentBuilder` belge oluşturma sürecini kolaylaştıran yardımcı bir sınıftır.
+ Burada,`Document` yeni Word belgeniz ve`DocumentBuilder` belge oluşturma sürecini basitleştiren bir yardımcı sınıftır.
 
-## 3. Adım: Köprü Ekleme
+## Adım 3: Bir Köprü Bağlantısı Ekleyin
 
-Şimdi belgeye bir köprü ekleyelim. Bu köprü, URI kaçış sürecimizin odak noktası olacaktır.
+Şimdi, belgeye bir köprü metni ekleyelim. Bu köprü metni, URI kaçış sürecimizin odak noktası olacak.
 
 ```csharp
 builder.InsertHyperlink("Testlink", "https://www.google.com/search?q= aspose", false);
 ```
 
- Bu satırda,`"Testlink"` köprünün görüntü metnidir ve`"https://www.google.com/search?q= aspose"` URL'dir.`false` parametresi, bağlantının köprü olarak biçimlendirilmemesi gerektiğini belirtir (yani altı çizili ve mavi olmayacaktır).
+ Bu satırda,`"Testlink"` köprü metni için görüntü metnidir ve`"https://www.google.com/search?q= aspose"` URL'dir.`false` parametresi, bağlantının bir köprü metni olarak biçimlendirilmemesi gerektiğini belirtir (yani, altı çizili ve mavi olmaz).
 
-## 4. Adım: Belgeyi PDF olarak kaydedin
+## Adım 4: Belgeyi PDF olarak kaydedin
 
-Son olarak belgeyi PDF olarak kaydedin. Aspose.Words'ün PDF çıktısındaki URI'den kaçma işlemini burada halleder.
+Son olarak, belgeyi PDF olarak kaydedin. Aspose.Words'ün PDF çıktısında URI'yi kaçırmakla ilgilendiği yer burasıdır.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");
 ```
 
- Bu satır, belgeyi dosya adıyla belirtilen dizine kaydeder.`WorkingWithPdfSaveOptions.EscapeUri.pdf`.
+ Bu satır, belgeyi belirtilen dizine dosya adıyla kaydeder`WorkingWithPdfSaveOptions.EscapeUri.pdf`.
 
 ## Çözüm
 
-Ve işte karşınızda! Aspose.Words for .NET kullanarak bir Word belgesini PDF olarak kaydederken URI'lerden nasıl kaçacağınızı öğrendiniz. Bu işlem, köprülerinizin sonuçtaki PDF'de işlevsel kalmasını ve düzgün biçimlendirilmiş olmasını sağlar. 
+Ve işte oldu! Aspose.Words for .NET kullanarak bir Word belgesini PDF olarak kaydederken URI'lerden nasıl kaçacağınızı öğrendiniz. Bu işlem, köprülerinizin işlevsel kalmasını ve ortaya çıkan PDF'de düzgün biçimlendirilmesini sağlar. 
 
-Bu küçük ama önemli tekniklerde uzmanlaşmanın belgelerinizin kalitesini ve işlevselliğini büyük ölçüde artırabileceğini unutmayın. Mutlu kodlama!
+Unutmayın, bu küçük ama önemli tekniklerde ustalaşmak belgelerinizin kalitesini ve işlevselliğini büyük ölçüde artırabilir. Mutlu kodlamalar!
 
-## SSS'ler
+## SSS
 
 ### Aspose.Words for .NET nedir?
 
-Aspose.Words for .NET, geliştiricilerin .NET uygulamalarında Word belgeleri oluşturmasına, yönetmesine ve dönüştürmesine olanak tanıyan güçlü bir kitaplıktır.
+Aspose.Words for .NET, geliştiricilerin .NET uygulamalarında Word belgeleri oluşturmasına, düzenlemesine ve dönüştürmesine olanak tanıyan güçlü bir kütüphanedir.
 
-### PDF'lerde URI'den kaçış neden önemlidir?
+### PDF'lerde URI kaçışı neden önemlidir?
 
-URI kaçışı, URL'lerdeki özel karakterlerin doğru şekilde yorumlanmasını sağlayarak bozuk bağlantıların önlenmesini ve bunların amaçlandığı gibi çalışmasını sağlar.
+URI kaçışı, URL'lerdeki özel karakterlerin doğru yorumlanmasını sağlayarak, bozuk bağlantıları önler ve amaçlandığı gibi çalışmasını sağlar.
 
-### Aspose.Words for .NET'te diğer bağlantı türlerini kullanabilir miyim?
+### Aspose.Words for .NET'te başka tür bağlantılar kullanabilir miyim?
 
 Kesinlikle! Aspose.Words, dahili belge bağlantıları, yer imleri ve harici URL'ler dahil olmak üzere çeşitli bağlantı türlerini destekler.
 
@@ -96,6 +96,6 @@ Kesinlikle! Aspose.Words, dahili belge bağlantıları, yer imleri ve harici URL
 
  Ücretsiz deneme alabilirsiniz[Burada](https://releases.aspose.com/).
 
-### Aspose.Words for .NET hakkında daha ayrıntılı belgeleri nerede bulabilirim?
+### Aspose.Words for .NET hakkında daha detaylı dokümanları nerede bulabilirim?
 
- Ayrıntılı belgeleri bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).
+ Ayrıntılı dokümantasyonu bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).

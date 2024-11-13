@@ -1,24 +1,24 @@
 ---
-title: Aspose.Words for Java'da Belgelerden İçerik Çıkarma
+title: Java için Aspose.Words'de Belgelerden İçerik Çıkarma
 linktitle: Belgelerden İçerik Çıkarma
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Aspose.Words for Java'yı kullanarak belgelerden içeriği nasıl kolaylıkla çıkaracağınızı öğrenin. Adım adım kılavuzumuz ve kod örneklerimiz süreci basitleştirir.
+description: Aspose.Words for Java kullanarak belgelerden içerikleri kolayca nasıl çıkaracağınızı öğrenin. Adım adım kılavuzumuz ve kod örneklerimiz süreci basitleştirir.
 type: docs
 weight: 13
 url: /tr/java/document-manipulation/extracting-content-from-documents/
 ---
 
-## Aspose.Words for Java'da Belgelerden İçerik Çıkarmaya Giriş
+## Java için Aspose.Words'de Belgelerden İçerik Çıkarmaya Giriş
 
-Belge işleme dünyasında belgelerden içerik çıkarmak ortak bir gerekliliktir. Metin, tablo, resim veya belirli belge öğelerini ayıklamanız gerekiyorsa, Aspose.Words for Java bu görevi kolaylaştırmak için güçlü araçlar sağlar. Bu kapsamlı kılavuzda Aspose.Words for Java kullanarak belgelerden içerik çıkarma sürecinde size yol göstereceğiz. 
+Belge işleme dünyasında, belgelerden içerik çıkarmak yaygın bir gerekliliktir. Metin, tablo, resim veya belirli belge öğelerini çıkarmanız gerekip gerekmediğine bakılmaksızın, Aspose.Words for Java bu görevi kolaylaştırmak için güçlü araçlar sunar. Bu kapsamlı kılavuzda, Aspose.Words for Java kullanarak belgelerden içerik çıkarma sürecini adım adım anlatacağız. 
 
-## Önkoşullar
+## Ön koşullar
 
-Çıkarma işlemine geçmeden önce aşağıdaki önkoşulların yerine getirildiğinden emin olun:
+Çıkarma işlemine başlamadan önce aşağıdaki ön koşulların mevcut olduğundan emin olun:
 
-1.  Aspose.Words for Java: Java geliştirme ortamınızda Aspose.Words for Java'nın kurulu ve ayarlanmış olması gerekir. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/java/).
+1.  Java için Aspose.Words: Java geliştirme ortamınızda Java için Aspose.Words'ün yüklü ve ayarlanmış olması gerekir. Bunu şuradan indirebilirsiniz:[Burada](https://releases.aspose.com/words/java/).
 
-2. İçerik Çıkarılacak Bir Belge: Bu kılavuz için "İçerik Çıkart.docx" adlı örnek bir belge kullanacağız. Benzer bir belgenin çıkarılmaya hazır olduğundan emin olun.
+2. İçeriği Çıkarmak İçin Bir Belge: Bu kılavuz için "İçeriği çıkar.docx" adlı örnek bir belge kullanacağız. Çıkarmak için benzer bir belgenizin hazır olduğundan emin olun.
 
 ## Blok Düzeyindeki Düğümler Arasında İçerik Çıkarma
 
@@ -39,7 +39,7 @@ doc.save("Your Directory Path" + "ExtractContent.ExtractContentBetweenBlockLevel
 ## Yer İşaretleri Arasındaki İçeriği Çıkarma
 
 ```java
-//Yer imleri arasında içerik çıkarmak için Java kod örneği
+//Yer imleri arasındaki içeriği çıkarmak için Java kod örneği
 Document doc = new Document("Your Directory Path" + "Extract content.docx");
 Bookmark bookmark = doc.getRange().getBookmarks().get("Bookmark1");
 BookmarkStart bookmarkStart = bookmark.getBookmarkStart();
@@ -52,10 +52,10 @@ dstDoc = ExtractContentHelper.generateDocument(doc, extractedNodesExclusive);
 dstDoc.save("Your Directory Path" + "ExtractContent.ExtractContentBetweenBookmark.WithoutBookmark.docx");
 ```
 
-## Yorum Aralıkları Arasında İçerik Çıkarma
+## Yorum Aralıkları Arasındaki İçeriği Çıkarma
 
 ```java
-// Yorum aralıkları arasında içerik çıkarmak için Java kod örneği
+// Yorum aralıkları arasındaki içeriği çıkarmak için Java kod örneği
 Document doc = new Document("Your Directory Path" + "Extract content.docx");
 CommentRangeStart commentStart = (CommentRangeStart) doc.getChild(NodeType.COMMENT_RANGE_START, 0, true);
 CommentRangeEnd commentEnd = (CommentRangeEnd) doc.getChild(NodeType.COMMENT_RANGE_END, 0, true);
@@ -67,10 +67,10 @@ dstDoc = ExtractContentHelper.generateDocument(doc, extractedNodesExclusive);
 dstDoc.save("Your Directory Path" + "ExtractContent.ExtractContentBetweenCommentRange.WithoutComment.docx");
 ```
 
-## Paragraf Arasındaki İçeriği Çıkarma
+## Paragraflar Arası İçerik Çıkarma
 
 ```java
-// Paragraflar arasında içerik çıkarmak için Java kod örneği
+// Paragraflar arasındaki içeriği çıkarmak için Java kod örneği
 Document doc = new Document("Your Directory Path" + "Extract content.docx");
 Paragraph startPara = (Paragraph) doc.getFirstSection().getBody().getChild(NodeType.PARAGRAPH, 6, true);
 Paragraph endPara = (Paragraph) doc.getFirstSection().getBody().getChild(NodeType.PARAGRAPH, 10, true);
@@ -79,10 +79,10 @@ Document dstDoc = ExtractContentHelper.generateDocument(doc, extractedNodes);
 dstDoc.save("Your Directory Path" + "ExtractContent.ExtractContentBetweenParagraphs.docx");
 ```
 
-## Paragraf Stilleri Arasında İçerik Çıkarma
+## Paragraf Stilleri Arasındaki İçeriği Çıkarma
 
 ```java
-// Paragraf stilleri arasında içerik çıkarmak için Java kod örneği
+// Paragraf stilleri arasındaki içeriği çıkarmak için Java kod örneği
 Document doc = new Document("Your Directory Path" + "Extract content.docx");
 ArrayList<Paragraph> parasStyleHeading1 = ExtractContentHelper.paragraphsByStyleName(doc, "Heading 1");
 ArrayList<Paragraph> parasStyleHeading3 = ExtractContentHelper.paragraphsByStyleName(doc, "Heading 3");
@@ -106,7 +106,7 @@ Node node = (Node) extractedNodes.get(0);
 System.out.println(node.toString(SaveFormat.TEXT));
 ```
 
-## DocumentVisitor'ı Kullanarak İçerik Çıkarma
+## DocumentVisitor Kullanarak İçerik Çıkarma
 
 ```java
 // DocumentVisitor kullanarak içerik çıkarmak için Java kod örneği
@@ -116,10 +116,10 @@ doc.accept(myConverter);
 System.out.println(myConverter.getText());
 ```
 
-## Alanı Kullanarak İçerik Çıkarma
+## Alan Kullanarak İçerik Çıkarma
 
 ```java
-// Field'ı kullanarak içerik çıkarmak için Java kod örneği
+// Field kullanarak içerik çıkarmak için Java kod örneği
 Document doc = new Document("Your Directory Path" + "Extract content.docx");
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.moveToMergeField("Fullname", false, false);
@@ -130,7 +130,7 @@ Document dstDoc = ExtractContentHelper.generateDocument(doc, extractedNodes);
 dstDoc.save("Your Directory Path" + "ExtractContent.ExtractContentUsingField.docx");
 ```
 
-## İçindekiler Tablosunun Çıkarılması
+## İçindekiler Tablosunu Çıkarma
 
 ```java
 // İçindekiler tablosunu çıkarmak için Java kod örneği
@@ -153,7 +153,7 @@ for (Field field : doc.getRange().getFields()) {
 ## Yalnızca Metin Çıkarma
 
 ```java
-// Yalnızca metni çıkarmak için Java kod örneği
+// Yalnızca metin çıkarmak için Java kod örneği
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.insertField("MERGEFIELD Field");
@@ -161,7 +161,7 @@ System.out.println("GetText() Result: " + doc.getText());
 System.out.println("ToString() Result: " + doc.toString(SaveFormat.TEXT));
 ```
 
-## Stillere Göre İçerik Çıkarma
+## Stillere Dayalı İçerik Çıkarma
 
 ```java
 // Stillere dayalı içerik çıkarmak için Java kod örneği
@@ -232,26 +232,26 @@ for (Shape shape : (Iterable<Shape>) shapes) {
 
 ## Çözüm
 
-Tebrikler! Aspose.Words for Java kullanarak belgelerden nasıl içerik çıkaracağınızı öğrendiniz. Bu kılavuz, blok düzeyindeki düğümler arasındaki içerik, yer imleri, yorum aralıkları, paragraflar ve daha fazlası dahil olmak üzere çeşitli çıkarma tekniklerini kapsıyordu. Artık Java uygulamalarınızda belge içeriği çıkarmayı verimli bir şekilde gerçekleştirebilecek donanıma sahipsiniz.
+Tebrikler! Java için Aspose.Words kullanarak belgelerden içerik çıkarmayı öğrendiniz. Bu kılavuz, blok düzeyindeki düğümler, yer imleri, yorum aralıkları, paragraflar ve daha fazlası arasındaki içerik dahil olmak üzere çeşitli çıkarma tekniklerini ele aldı. Artık Java uygulamalarınızda belge içeriği çıkarmayı verimli bir şekilde halletmek için donanımlısınız.
 
-## SSS'ler
+## SSS
 
-### Belirli belge bölümlerinden içeriği nasıl çıkarabilirim?
+### Belirli belge bölümlerinden içerik nasıl çıkarabilirim?
 
-Belirli belge bölümlerinden içerik çıkarmak için bölümlerin başlangıç ve bitiş noktalarını tanımlayabilir ve bunlar arasında içerik çıkarmak için uygun Aspose.Words for Java yöntemlerini kullanabilirsiniz.
+Belirli belge bölümlerinden içerik çıkarmak için bölümlerin başlangıç ve bitiş noktalarını belirleyebilir ve aralarındaki içeriği çıkarmak için uygun Aspose.Words for Java yöntemlerini kullanabilirsiniz.
 
 ### Parola korumalı belgelerden içerik çıkarabilir miyim?
 
-Evet, Aspose.Words for Java, parola korumalı belgelerden içerik çıkarmaya yönelik işlevsellik sağlar. Belgeyi açarken şifreyi kullanarak girebilirsiniz.`Document` sınıf yapıcısı.
+Evet, Aspose.Words for Java, parola korumalı belgelerden içerik çıkarma işlevi sağlar. Belgeyi açarken parolayı şu şekilde sağlayabilirsiniz:`Document` sınıf oluşturucusu.
 
-### İçeriği nasıl çıkarabilirim ve onu düz metin veya HTML gibi farklı formatlarda kaydedebilirim?
+### İçeriği nasıl çıkarabilirim ve düz metin veya HTML gibi farklı formatlarda nasıl kaydedebilirim?
 
- Aspose.Words for Java'yı kullanarak bir belgeden içerik çıkarabilir ve onu farklı formatlarda kaydedebilirsiniz. İçeriği çıkardıktan sonra kullanabilirsiniz.`Document` düz metin, HTML veya diğerleri gibi formatlarda kaydetmek için sınıf yöntemleri.
+ Aspose.Words for Java kullanarak bir belgeden içerik çıkarabilir ve farklı biçimlerde kaydedebilirsiniz. İçeriği çıkardıktan sonra,`Document` düz metin, HTML veya diğerleri gibi formatlarda kaydetmek için sınıf yöntemleri.
 
 ### Tablolar veya resimler gibi belirli belge öğelerinden içerik çıkarmanın bir yolu var mı?
 
-Evet, Aspose.Words for Java'yı kullanarak tablolar veya resimler gibi belirli belge öğelerinden içerik çıkarabilirsiniz. Çıkarmak istediğiniz öğeleri tanımlayın ve ardından içeriklerini çıkarmak için uygun yöntemleri kullanın.
+Evet, tablolar veya resimler gibi belirli belge öğelerinden Aspose.Words for Java kullanarak içerik çıkarabilirsiniz. Çıkarmak istediğiniz öğeleri belirleyin ve ardından içeriklerini çıkarmak için uygun yöntemleri kullanın.
 
-### Java uygulamamda içerik çıkarma işlemini nasıl otomatikleştirebilirim?
+### Java uygulamamda içerik çıkarma sürecini nasıl otomatikleştirebilirim?
 
-Java uygulamanızdaki içerik çıkarma sürecini otomatikleştirmek için bu kılavuzda açıklanan tekniklere dayalı olarak özel kod oluşturabilirsiniz. Ayrıca, birden çok belgeyi yinelemek ve gerektiğinde içeriği çıkarmak için mantığı da uygulayabilirsiniz.
+Java uygulamanızda içerik çıkarma sürecini otomatikleştirmek için, bu kılavuzda açıklanan tekniklere dayalı özel kod oluşturabilirsiniz. Ayrıca, birden fazla belgede yineleme yapmak ve gerektiğinde içerik çıkarmak için mantığı uygulayabilirsiniz.

@@ -54,7 +54,7 @@ Document doc = new Document();
 
 ## Steg 3: Initiera Document Builder
 
- De`DocumentBuilder` klass är ditt favoritverktyg för att lägga till innehåll i dokumentet. Se det som din borste och palett.
+De`DocumentBuilder` klass är ditt favoritverktyg för att lägga till innehåll i dokumentet. Se det som din borste och palett.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

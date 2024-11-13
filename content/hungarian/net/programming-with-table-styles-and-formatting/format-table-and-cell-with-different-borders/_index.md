@@ -144,4 +144,4 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDi
 Míg az Aspose.Words közvetlenül nem támogatja a képeket cellaháttérként, beszúrhat egy képet a cellába, és beállíthatja a méretét, hogy lefedje a cella területét.
 
 ### Hogyan egyesíthetem a cellákat egy táblázatban?
- A cellákat a segítségével egyesítheti`CellFormat.HorizontalMerge`és`CellFormat.VerticalMerge` tulajdonságait.
+ A cellákat a segítségével egyesítheti`CellFormat.HorizontalMerge` és`CellFormat.VerticalMerge` tulajdonságait.

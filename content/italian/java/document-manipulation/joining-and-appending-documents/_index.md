@@ -1,8 +1,8 @@
 ---
 title: Unire e aggiungere documenti in Aspose.Words per Java
-linktitle: Unione e aggiunta di documenti
+linktitle: Unire e aggiungere documenti
 second_title: API di elaborazione dei documenti Java Aspose.Words
-description: Scopri come unire e aggiungere documenti senza sforzo utilizzando Aspose.Words per Java. Conserva la formattazione, gestisci le intestazioni, i piè di pagina e altro ancora.
+description: Scopri come unire e aggiungere documenti senza sforzo usando Aspose.Words per Java. Mantieni la formattazione, gestisci intestazioni, piè di pagina e altro ancora.
 type: docs
 weight: 30
 url: /it/java/document-manipulation/joining-and-appending-documents/
@@ -10,11 +10,11 @@ url: /it/java/document-manipulation/joining-and-appending-documents/
 
 ## Introduzione all'unione e all'aggiunta di documenti in Aspose.Words per Java
 
-In questo tutorial esploreremo come unire e aggiungere documenti utilizzando la libreria Aspose.Words per Java. Imparerai come unire più documenti senza problemi preservando la formattazione e la struttura.
+In questo tutorial, esploreremo come unire e aggiungere documenti utilizzando la libreria Aspose.Words per Java. Imparerai come unire senza problemi più documenti preservandone formattazione e struttura.
 
 ## Prerequisiti
 
-Prima di iniziare, assicurati di aver impostato l'API Aspose.Words per Java nel tuo progetto Java.
+Prima di iniziare, assicurati di aver configurato Aspose.Words per Java API nel tuo progetto Java.
 
 ## Opzioni di unione dei documenti
 
@@ -34,7 +34,7 @@ options.setKeepSourceNumbering(true);
 dstDoc.appendDocument(srcDoc, ImportFormatMode.USE_DESTINATION_STYLES, options);
 ```
 
-### Aggiungi a documento vuoto
+### Aggiungi al documento vuoto
 
 ```java
 Document srcDoc = new Document("source.docx");
@@ -43,27 +43,27 @@ dstDoc.removeAllChildren();
 dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-### Aggiungi con conversione del numero di pagina
+### Aggiungi con conversione numero pagina
 
 ```java
 Document srcDoc = new Document("source.docx");
 Document dstDoc = new Document("destination.docx");
 dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
-convertNumPageFieldsToPageRef(dstDoc); // Converti campi NUMPAGES
-dstDoc.updatePageLayout(); // Aggiorna il layout della pagina per la numerazione corretta
+convertNumPageFieldsToPageRef(dstDoc); // Convertire i campi NUMPAGES
+dstDoc.updatePageLayout(); // Aggiorna il layout della pagina per una numerazione corretta
 ```
 
 ## Gestione di diverse impostazioni di pagina
 
-Quando si aggiungono documenti con impostazioni di pagina diverse:
+Quando si allegano documenti con diverse impostazioni di pagina:
 
 ```java
 srcDoc.getFirstSection().getPageSetup().setSectionStart(SectionStart.CONTINUOUS);
 srcDoc.getFirstSection().getPageSetup().setRestartPageNumbering(true);
-// Assicurarsi che le impostazioni di impostazione della pagina corrispondano al documento di destinazione
+// Assicurarsi che le impostazioni di configurazione della pagina corrispondano al documento di destinazione
 ```
 
-## Unione di documenti con stili diversi
+## Unire documenti con stili diversi
 
 ```java
 dstDoc.appendDocument(srcDoc, ImportFormatMode.USE_DESTINATION_STYLES);
@@ -84,7 +84,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 builder.insertDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-## Mantenimento della numerazione delle fonti
+## Mantenere la numerazione delle fonti
 
 ```java
 ImportFormatOptions importFormatOptions = new ImportFormatOptions();
@@ -109,7 +109,7 @@ srcDoc.getFirstSection().getHeadersFooters().linkToPrevious(true);
 dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-### Scollegare intestazioni e piè di pagina
+### Scollegamento di intestazioni e piè di pagina
 
 ```java
 srcDoc.getFirstSection().getHeadersFooters().linkToPrevious(false);
@@ -118,21 +118,21 @@ dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 
 ## Conclusione
 
-Aspose.Words per Java fornisce strumenti flessibili e potenti per unire e aggiungere documenti, sia che tu abbia bisogno di mantenere la formattazione, gestire diverse impostazioni di pagina o gestire intestazioni e piè di pagina. Sperimenta queste tecniche per soddisfare le tue specifiche esigenze di elaborazione dei documenti.
+Aspose.Words per Java fornisce strumenti flessibili e potenti per unire e aggiungere documenti, sia che tu debba mantenere la formattazione, gestire diverse impostazioni di pagina o gestire intestazioni e piè di pagina. Sperimenta queste tecniche per soddisfare le tue specifiche esigenze di elaborazione dei documenti.
 
 ## Domande frequenti
 
-### Come posso unire documenti con stili diversi senza problemi?
+### Come posso unire senza problemi documenti con stili diversi?
 
  Per unire documenti con stili diversi, utilizzare`ImportFormatMode.USE_DESTINATION_STYLES` durante l'aggiunta.
 
-### Posso preservare la numerazione delle pagine quando allego documenti?
+### Posso mantenere la numerazione delle pagine quando allego documenti?
 
- Sì, puoi preservare la numerazione delle pagine utilizzando il file`convertNumPageFieldsToPageRef` metodo e aggiornando il layout della pagina.
+ Sì, puoi preservare la numerazione delle pagine utilizzando`convertNumPageFieldsToPageRef` metodo e aggiornamento del layout della pagina.
 
-### Che cos'è il comportamento di stile intelligente?
+### Che cosa si intende per comportamento intelligente?
 
- Il comportamento intelligente degli stili aiuta a mantenere stili coerenti durante l'aggiunta di documenti. Usalo con`ImportFormatOptions` per risultati migliori.
+ Smart Style Behavior aiuta a mantenere stili coerenti quando si aggiungono documenti. Usalo con`ImportFormatOptions` per ottenere risultati migliori.
 
 ### Come posso gestire le caselle di testo quando allego documenti?
 
@@ -140,4 +140,4 @@ Impostato`importFormatOptions.setIgnoreTextBoxes(false)` per includere caselle d
 
 ### Cosa succede se voglio collegare/scollegare intestazioni e piè di pagina tra documenti?
 
- Puoi collegare intestazioni e piè di pagina con`linkToPrevious(true)` o scollegarli con`linkToPrevious(false)` secondo necessità.
+ È possibile collegare intestazioni e piè di pagina con`linkToPrevious(true)` o scollegarli con`linkToPrevious(false)` secondo necessità.

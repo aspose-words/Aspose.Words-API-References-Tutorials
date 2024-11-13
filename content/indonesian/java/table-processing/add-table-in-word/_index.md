@@ -2,18 +2,18 @@
 title: Tambahkan Tabel Di Word
 linktitle: Tambahkan Tabel Di Word
 second_title: API Pemrosesan Dokumen Java Aspose.Words
-description: Pelajari cara menambahkan tabel di Word menggunakan Aspose.Words untuk Java. Hasilkan tabel yang diformat dengan baik dengan mudah di dokumen Word.
+description: Pelajari cara menambahkan tabel di Word menggunakan Aspose.Words untuk Java. Buat tabel yang diformat dengan baik dengan mudah di dokumen Word.
 type: docs
 weight: 10
 url: /id/java/table-processing/add-table-in-word/
 ---
 
-Microsoft Word adalah alat pengolah kata canggih yang memungkinkan pengguna membuat dan memformat dokumen dengan mudah. Tabel adalah fitur dasar dokumen Word, yang memungkinkan pengguna mengatur dan menyajikan data secara terstruktur. Dalam tutorial langkah demi langkah ini, kami akan memandu Anda melalui proses menambahkan tabel di Word menggunakan perpustakaan Aspose.Words untuk Java. Aspose.Words adalah Java API tangguh yang menawarkan berbagai fungsi untuk pemrosesan dokumen, menjadikannya pilihan yang sangat baik bagi pengembang. Mari kita mulai tutorial ini dan jelajahi cara menambahkan tabel di Word secara efisien.
+Microsoft Word adalah alat pengolah kata yang hebat yang memungkinkan pengguna membuat dan memformat dokumen dengan mudah. Tabel adalah fitur dasar dokumen Word, yang memungkinkan pengguna mengatur dan menyajikan data secara terstruktur. Dalam tutorial langkah demi langkah ini, kami akan memandu Anda melalui proses penambahan tabel di Word menggunakan pustaka Aspose.Words untuk Java. Aspose.Words adalah API Java yang tangguh yang menawarkan berbagai fungsi untuk pemrosesan dokumen, menjadikannya pilihan yang sangat baik bagi para pengembang. Mari kita mulai dengan tutorial ini dan pelajari cara menambahkan tabel di Word secara efisien.
 
 
 ## Langkah 1: Siapkan Lingkungan Pengembangan
 
-Sebelum memulai, pastikan Anda telah menyiapkan lingkungan pengembangan Java di mesin Anda. Unduh dan instal Java Development Kit (JDK) versi terbaru dari situs web Oracle.
+Sebelum memulai, pastikan Anda telah menyiapkan lingkungan pengembangan Java di komputer Anda. Unduh dan instal Java Development Kit (JDK) versi terbaru dari situs web Oracle.
 
 ## Langkah 2: Buat Proyek Java Baru
 
@@ -21,7 +21,7 @@ Buka Lingkungan Pengembangan Terpadu (IDE) pilihan Anda atau editor teks dan bua
 
 ## Langkah 3: Tambahkan Ketergantungan Aspose.Words
 
- Untuk bekerja dengan Aspose.Words untuk Java, Anda perlu menyertakan file JAR Aspose.Words di jalur kelas proyek Anda. Unduh versi terbaru Aspose.Words untuk Java dari[Aspose.Rilis](https://releases.aspose.com/words/java) dan tambahkan file JAR ke proyek Anda.
+ Untuk bekerja dengan Aspose.Words untuk Java, Anda perlu menyertakan berkas JAR Aspose.Words di classpath proyek Anda. Unduh versi terbaru Aspose.Words untuk Java dari[Aspose.Rilis](https://releases.aspose.com/words/java) dan tambahkan file JAR ke proyek Anda.
 
 ## Langkah 4: Impor Kelas yang Diperlukan
 
@@ -33,7 +33,7 @@ import com.aspose.words.*;
 
 ## Langkah 5: Buat Dokumen Word Baru
 
- Buat instance yang baru`Document` objek untuk membuat dokumen Word baru.
+ Membuat instance baru`Document` objek untuk membuat dokumen Word baru.
 
 ```java
 Document doc = new Document();
@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## Langkah 6: Buat Tabel dan Tambahkan Baris
 
- Buat yang baru`Table`objek dan tentukan jumlah baris dan kolom.
+Buat yang baru`Table` objek dan tentukan jumlah baris dan kolom.
 
 ```java
 Table table = new Table(doc);
@@ -62,7 +62,7 @@ for (int row = 0; row < rowCount; row++) {
 
 ## Langkah 7: Tambahkan Tabel ke Dokumen
 
- Masukkan tabel ke dalam dokumen menggunakan`appendChild()` metode`Document` obyek.
+ Masukkan tabel ke dalam dokumen menggunakan`appendChild()` metode dari`Document` obyek.
 
 ```java
 doc.getFirstSection().getBody().appendChild(table);
@@ -78,7 +78,7 @@ doc.save(""output.docx"");
 
 ## Langkah 9: Lengkapi Kode
 
-Berikut kode lengkap untuk menambahkan tabel di Word menggunakan Aspose.Words for Java:
+Berikut kode lengkap untuk menambahkan tabel di Word menggunakan Aspose.Words untuk Java:
 
 ```java
 import com.aspose.words.*;
@@ -115,25 +115,25 @@ public class AddTableInWord {
 
 ## Kesimpulan
 
-Selamat! Anda telah berhasil menambahkan tabel di dokumen Word menggunakan Aspose.Words for Java. Aspose.Words menyediakan API yang kuat dan efisien untuk bekerja dengan dokumen Word, membuatnya mudah untuk membuat, memanipulasi, dan menyesuaikan tabel dan elemen lain dalam dokumen Anda.
+Selamat! Anda telah berhasil menambahkan tabel dalam dokumen Word menggunakan Aspose.Words untuk Java. Aspose.Words menyediakan API yang tangguh dan efisien untuk bekerja dengan dokumen Word, sehingga memudahkan pembuatan, manipulasi, dan penyesuaian tabel dan elemen lain dalam dokumen Anda.
 
-Dengan mengikuti panduan langkah demi langkah ini, Anda telah mempelajari cara menyiapkan lingkungan pengembangan, membuat dokumen Word baru, menambahkan tabel dengan baris dan kolom, dan menyimpan dokumen. Jangan ragu untuk menjelajahi lebih banyak fitur Aspose.Words untuk lebih meningkatkan tugas pemrosesan dokumen Anda.
+Dengan mengikuti panduan langkah demi langkah ini, Anda telah mempelajari cara menyiapkan lingkungan pengembangan, membuat dokumen Word baru, menambahkan tabel dengan baris dan kolom, dan menyimpan dokumen. Jangan ragu untuk menjelajahi lebih banyak fitur Aspose.Words untuk lebih menyempurnakan tugas pemrosesan dokumen Anda.
 
 ## Pertanyaan yang Sering Diajukan (FAQ)
 
-### Q1: Bisakah saya menggunakan Aspose.Words for Java dengan pustaka Java lainnya?
+### Q1: Dapatkah saya menggunakan Aspose.Words untuk Java dengan pustaka Java lainnya?
 
-Ya, Aspose.Words untuk Java dirancang untuk bekerja dengan baik dengan pustaka Java lainnya, memungkinkan integrasi yang lancar ke dalam proyek Anda yang sudah ada.
+Ya, Aspose.Words untuk Java dirancang agar berfungsi baik dengan pustaka Java lainnya, memungkinkan integrasi yang mulus ke dalam proyek Anda yang sudah ada.
 
-### Q2: Apakah Aspose.Words mendukung konversi dokumen Word ke format lain?
+### Q2: Apakah Aspose.Wors mendukung konversi dokumen Word ke format lain?
 
-Sangat! Aspose.Words memberikan dukungan ekstensif untuk mengonversi dokumen Word ke berbagai format, termasuk PDF, HTML, EPUB, dan banyak lagi.
+Tentu saja! Aspose.Words menyediakan dukungan ekstensif untuk mengonversi dokumen Word ke berbagai format, termasuk PDF, HTML, EPUB, dan banyak lagi.
 
 ### Q3: Apakah Aspose.Words cocok untuk pemrosesan dokumen tingkat perusahaan?
 
-Memang benar, Aspose.Words adalah solusi tingkat perusahaan yang dipercaya oleh ribuan pengembang di seluruh dunia karena keandalan dan ketahanannya dalam tugas pemrosesan dokumen.
+Memang, Aspose.Words adalah solusi tingkat perusahaan yang dipercaya oleh ribuan pengembang di seluruh dunia karena keandalan dan ketahanannya dalam tugas pemrosesan dokumen.
 
-### Q4: Bisakah saya menerapkan pemformatan khusus ke sel tabel?
+### Q4: Dapatkah saya menerapkan format khusus pada sel tabel?
 
 Ya, Aspose.Words memungkinkan Anda menerapkan berbagai opsi pemformatan ke sel tabel, seperti gaya font, warna, perataan, dan batas.
 

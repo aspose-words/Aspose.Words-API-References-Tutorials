@@ -1,25 +1,25 @@
 ---
-title: Aspose.Words for Java'da Belgeleri Markdown olarak Kaydetme
+title: Java için Aspose.Words'de Belgeleri Markdown Olarak Kaydetme
 linktitle: Belgeleri Markdown Olarak Kaydetme
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Aspose.Words for Java ile Word belgelerini Markdown'a nasıl dönüştüreceğinizi öğrenin. Bu adım adım kılavuz, tablo hizalamayı, görüntü işlemeyi ve daha fazlasını kapsar.
+description: Word belgelerini Aspose.Words for Java ile Markdown'a nasıl dönüştüreceğinizi öğrenin. Bu adım adım kılavuz tablo hizalamasını, görüntü işlemeyi ve daha fazlasını kapsar.
 type: docs
 weight: 18
 url: /tr/java/document-loading-and-saving/saving-documents-as-markdown/
 ---
 
-## Aspose.Words for Java'da Belgeleri Markdown Olarak Kaydetmeye Giriş
+## Java için Aspose.Words'de Belgeleri Markdown Olarak Kaydetmeye Giriş
 
-Bu adım adım kılavuzda Aspose.Words for Java kullanarak belgelerin Markdown olarak nasıl kaydedileceğini göstereceğiz. Markdown, metin belgelerini biçimlendirmek için yaygın olarak kullanılan hafif bir biçimlendirme dilidir. Aspose.Words for Java ile Word belgelerinizi kolayca Markdown formatına dönüştürebilirsiniz. Tablo içeriği hizalaması ve görüntülerin işlenmesi de dahil olmak üzere Markdown dosyalarını kaydetmenin farklı yönlerini ele alacağız.
+Bu adım adım kılavuzda, Aspose.Words for Java kullanarak belgeleri Markdown olarak nasıl kaydedeceğinizi göstereceğiz. Markdown, genellikle metin belgelerini biçimlendirmek için kullanılan hafif bir işaretleme dilidir. Aspose.Words for Java ile Word belgelerinizi kolayca Markdown biçimine dönüştürebilirsiniz. Tablo içerik hizalaması ve görselleri işleme dahil olmak üzere Markdown dosyalarını kaydetmenin farklı yönlerini ele alacağız.
 
-## Önkoşullar
+## Ön koşullar
 
-Başlamadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
+Başlamadan önce aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
 
 - Sisteminizde Java Geliştirme Kiti (JDK) yüklü.
--  Aspose.Words for Java kütüphanesi. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/java/).
+-  Aspose.Words for Java kütüphanesi. Buradan indirebilirsiniz[Burada](https://releases.aspose.com/words/java/).
 
-## Adım 1: Word Belgesi Oluşturma
+## Adım 1: Bir Word Belgesi Oluşturma
 
 Daha sonra Markdown formatına dönüştüreceğimiz bir Word belgesi oluşturarak başlayalım. Bu belgeyi ihtiyaçlarınıza göre özelleştirebilirsiniz.
 
@@ -27,7 +27,7 @@ Daha sonra Markdown formatına dönüştüreceğimiz bir Word belgesi oluşturar
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// İki hücreli bir tablo ekleme
+//İki hücreli bir tablo ekle
 builder.insertCell();
 builder.getParagraphFormat().setAlignment(ParagraphAlignment.RIGHT);
 builder.write("Cell1");
@@ -41,55 +41,55 @@ MarkdownSaveOptions saveOptions = new MarkdownSaveOptions();
 doc.save("output.md", saveOptions);
 ```
 
- Bu örnekte iki hücreli basit bir tablo oluşturuyoruz ve bu hücreler içindeki paragrafların hizalamasını ayarlıyoruz. Daha sonra belgeyi Markdown olarak kaydediyoruz.`MarkdownSaveOptions`.
+ Bu örnekte, iki hücreli basit bir tablo oluşturuyoruz ve bu hücrelerdeki paragrafların hizalamasını ayarlıyoruz. Ardından, belgeyi Markdown olarak kaydediyoruz`MarkdownSaveOptions`.
 
-## 2. Adım: Tablo İçeriği Hizalamasını Özelleştirin
+## Adım 2: Tablo İçeriği Hizalamasını Özelleştirin
 
-Aspose.Words for Java, Markdown olarak kaydederken tablo içeriğinin hizalamasını özelleştirmenize olanak tanır. Tablo içeriğini sola, sağa, ortaya hizalayabilir veya her tablo sütunundaki ilk paragrafa göre otomatik olarak belirlenmesini sağlayabilirsiniz.
+Java için Aspose.Words, Markdown olarak kaydederken tablo içeriğinin hizalamasını özelleştirmenize olanak tanır. Tablo içeriğini sola, sağa, ortaya hizalayabilir veya her tablo sütunundaki ilk paragrafa göre otomatik olarak belirlenmesine izin verebilirsiniz.
 
-Tablo içeriği hizalamasını nasıl özelleştireceğiniz aşağıda açıklanmıştır:
+Tablo içeriği hizalamasını özelleştirme yöntemi:
 
 ```java
-// Tablo içeriği hizalamasını sola ayarla
+// Tablo içeriğinin hizalamasını sola ayarlayın
 saveOptions.setTableContentAlignment(TableContentAlignment.LEFT);
 doc.save("left_alignment.md", saveOptions);
 
-// Tablo içeriği hizalamasını sağa ayarla
+// Tablo içeriğinin hizalamasını sağa ayarla
 saveOptions.setTableContentAlignment(TableContentAlignment.RIGHT);
 doc.save("right_alignment.md", saveOptions);
 
-// Tablo içeriği hizalamasını merkeze ayarlayın
+// Tablo içeriği hizalamasını ortaya ayarlayın
 saveOptions.setTableContentAlignment(TableContentAlignment.CENTER);
 doc.save("center_alignment.md", saveOptions);
 
-//Tablo içeriği hizalamasını otomatik olarak ayarlayın (ilk paragrafa göre belirlenir)
+// Tablo içerik hizalamasını otomatik olarak ayarlayın (ilk paragraf tarafından belirlenir)
 saveOptions.setTableContentAlignment(TableContentAlignment.AUTO);
 doc.save("auto_alignment.md", saveOptions);
 ```
 
- Değiştirerek`TableContentAlignment` özelliğiyle, Markdown'a dönüştürme sırasında tabloların içindeki içeriğin nasıl hizalanacağını kontrol edebilirsiniz.
+ Değiştirerek`TableContentAlignment` özelliğiyle, Markdown'a dönüştürülürken tabloların içindeki içeriğin nasıl hizalanacağını kontrol edebilirsiniz.
 
-## 3. Adım: Görüntüleri İşleme
+## Adım 3: Görüntülerin İşlenmesi
 
- Markdown belgenize görsel eklemek için görsellerin bulunduğu klasörü belirtmeniz gerekir. Aspose.Words for Java, resimler klasörünü`MarkdownSaveOptions`.
+Markdown belgenize resimler eklemek için resimlerin bulunduğu klasörü belirtmeniz gerekir. Java için Aspose.Words, resimler klasörünü`MarkdownSaveOptions`.
 
-Resimler klasörünü nasıl ayarlayacağınız ve resimlerle birlikte belgeyi nasıl kaydedeceğiniz aşağıda açıklanmıştır:
+İşte images klasörünü nasıl ayarlayacağınız ve belgeyi images ile nasıl kaydedeceğiniz:
 
 ```java
-// Görüntü içeren bir belge yükleyin
+// Görüntüler içeren bir belge yükleyin
 Document doc = new Document("document_with_images.docx");
 
-// Görüntüler klasörü yolunu ayarlayın
+// Görüntüler klasör yolunu ayarlayın
 MarkdownSaveOptions saveOptions = new MarkdownSaveOptions();
 saveOptions.setImagesFolder("images_folder/");
 
-// Belgeyi resimlerle kaydedin
+// Belgeyi resimlerle birlikte kaydedin
 doc.save("document_with_images.md", saveOptions);
 ```
 
- Değiştirdiğinizden emin olun`"document_with_images.docx"` görüntüleri içeren Word belgenizin yolu ile birlikte`"images_folder/"` resimlerinizin saklandığı klasörün gerçek yolunu belirtin.
+ Değiştirdiğinizden emin olun`"document_with_images.docx"` resim ve dosyaları içeren Word belgenize giden yol ile`"images_folder/"` Resimlerinizin saklandığı klasörün gerçek yolunu belirtin.
 
-## Aspose.Words for Java'da Belgeleri Markdown Olarak Kaydetmek İçin Tam Kaynak Kodu
+## Java için Aspose.Words'de Belgeleri Markdown Olarak Kaydetmek İçin Tam Kaynak Kodu
 
 ```java
 public void autoTableContentAlignment() throws Exception
@@ -102,7 +102,7 @@ public void autoTableContentAlignment() throws Exception
 	builder.insertCell();
 	builder.getParagraphFormat().setAlignment(ParagraphAlignment.CENTER);
 	builder.write("Cell2");
-	// Tablo içindeki tüm paragrafların hizalanmasını sağlar.
+	// Tablonun içindeki tüm paragrafların hizalanmasını sağlar.
 	MarkdownSaveOptions saveOptions = new MarkdownSaveOptions();
 	{
 		saveOptions.setTableContentAlignment(TableContentAlignment.LEFT);
@@ -112,7 +112,7 @@ public void autoTableContentAlignment() throws Exception
 	doc.save("Your Directory Path" + "WorkingWithMarkdownSaveOptions.RightTableContentAlignment.md", saveOptions);
 	saveOptions.setTableContentAlignment(TableContentAlignment.CENTER);
 	doc.save("Your Directory Path" + "WorkingWithMarkdownSaveOptions.CenterTableContentAlignment.md", saveOptions);
-	// Bu durumda hizalama ilgili tablo sütunundaki ilk paragraftan alınacaktır.
+	// Bu durumda hizalama, ilgili tablo sütunundaki ilk paragraftan alınacaktır.
 	saveOptions.setTableContentAlignment(TableContentAlignment.AUTO);
 	doc.save("Your Directory Path" + "WorkingWithMarkdownSaveOptions.AutoTableContentAlignment.md", saveOptions);
 }
@@ -130,26 +130,26 @@ public void setImagesFolder() throws Exception
 
 ## Çözüm
 
-Bu kılavuzda Aspose.Words for Java kullanarak belgelerin Markdown olarak nasıl kaydedileceğini araştırdık. Bir Word belgesinin oluşturulmasını, tablo içeriği hizalamasını özelleştirmeyi ve Markdown dosyalarındaki görüntüleri yönetmeyi ele aldık. Artık Word belgelerinizi verimli bir şekilde Markdown biçimine dönüştürebilir, böylece onları çeşitli yayınlama platformları ve belge gereksinimlerine uygun hale getirebilirsiniz.
+Bu kılavuzda, Java için Aspose.Words kullanarak belgeleri Markdown olarak nasıl kaydedeceğinizi inceledik. Bir Word belgesinin oluşturulmasını, tablo içeriği hizalamasını özelleştirmeyi ve Markdown dosyalarındaki resimleri işlemeyi ele aldık. Artık Word belgelerinizi Markdown biçimine verimli bir şekilde dönüştürebilir, bunları çeşitli yayın platformları ve belge gereksinimleri için uygun hale getirebilirsiniz.
 
-## SSS'ler
+## SSS
 
-### Aspose.Words for Java'yı nasıl yüklerim?
+### Java için Aspose.Words'ü nasıl yüklerim?
 
- Aspose.Words for Java, kütüphaneyi Java projenize dahil ederek kurulabilir. Kütüphaneyi adresinden indirebilirsiniz.[Burada](https://releases.aspose.com/words/java/) ve belgelerde verilen kurulum talimatlarını izleyin.
+ Java için Aspose.Words, Java projenize kütüphaneyi ekleyerek yüklenebilir. Kütüphaneyi şu adresten indirebilirsiniz:[Burada](https://releases.aspose.com/words/java/) ve dokümanlarda verilen kurulum talimatlarını izleyin.
 
-### Tablolar ve resimler içeren karmaşık Word belgelerini Markdown'a dönüştürebilir miyim?
+### Tablo ve resim içeren karmaşık Word belgelerini Markdown'a dönüştürebilir miyim?
 
 Evet, Aspose.Words for Java, tablolar, resimler ve çeşitli biçimlendirme öğeleri içeren karmaşık Word belgelerinin Markdown'a dönüştürülmesini destekler. Markdown çıktısını belgenizin karmaşıklığına göre özelleştirebilirsiniz.
 
 ### Markdown dosyalarındaki görselleri nasıl işleyebilirim?
 
- Görüntüleri Markdown dosyalarına dahil etmek için, görüntülerin klasör yolunu kullanarak ayarlayın.`setImagesFolder`yöntem`MarkdownSaveOptions`. Görüntü dosyalarının belirtilen klasörde saklandığından emin olun; Aspose.Words for Java, görüntü referanslarını buna göre işleyecektir.
+ Markdown dosyalarına resim eklemek için, resim klasör yolunu kullanarak ayarlayın`setImagesFolder`yöntemde`MarkdownSaveOptions`Görüntü dosyalarının belirtilen klasörde saklandığından emin olun; Aspose.Words for Java, görüntü referanslarını buna göre işleyecektir.
 
 ### Aspose.Words for Java'nın deneme sürümü mevcut mu?
 
-Evet, Aspose.Words for Java'nın deneme sürümünü Aspose web sitesinden edinebilirsiniz. Deneme sürümü, bir lisans satın almadan önce kütüphanenin yeteneklerini değerlendirmenize olanak tanır.
+Evet, Aspose.Words for Java'nın deneme sürümünü Aspose web sitesinden edinebilirsiniz. Deneme sürümü, lisans satın almadan önce kütüphanenin yeteneklerini değerlendirmenize olanak tanır.
 
-### Daha fazla örnek ve belgeyi nerede bulabilirim?
+### Daha fazla örnek ve dokümanı nerede bulabilirim?
 
- Aspose.Words for Java hakkında daha fazla örnek, belge ve ayrıntılı bilgi için lütfen şu adresi ziyaret edin:[dokümantasyon](https://reference.aspose.com/words/java/).
+ Aspose.Words for Java hakkında daha fazla örnek, belge ve ayrıntılı bilgi için lütfen şu adresi ziyaret edin:[belgeleme](https://reference.aspose.com/words/java/).

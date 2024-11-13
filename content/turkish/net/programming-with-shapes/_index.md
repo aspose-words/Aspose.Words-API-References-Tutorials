@@ -2,26 +2,26 @@
 title: Şekillerle Kelime İşleme
 linktitle: Şekillerle Kelime İşleme
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'te şekil programlamayı keşfedin. Adım adım öğreticiler ve C#'taki örnek kodla Word belgelerinizdeki şekilleri nasıl değiştireceğinizi ve özelleştireceğinizi öğrenin.
+description: Aspose.Words for .NET'te şekil programlamayı keşfedin. Adım adım eğitimler ve C# dilinde örnek kodlarla Word belgelerinizdeki şekilleri nasıl değiştireceğinizi ve özelleştireceğinizi öğrenin.
 type: docs
 weight: 1560
 url: /tr/net/programming-with-shapes/
 ---
-Şekillerle Kelime İşleme hakkındaki Aspose.Words for .NET eğitimleri, Word belgelerindeki şekilleri işlemek ve yönetmek için kapsamlı bir kılavuz sunar. Bu eğitimlerde şekillerin nasıl oluşturulacağı, değiştirileceği ve silineceği ile bunların renk, boyut, konum ve diğer nitelikler açısından nasıl özelleştirileceği adım adım açıklanmaktadır. Öğreticilerde, kolay anlaşılması ve uygulanması için açık kod örnekleri ve adım adım açıklamalar bulunur.
+Şekillerle Word İşleme konusunda Aspose.Words for .NET eğitimleri, Word belgelerinde şekilleri düzenleme ve yönetme konusunda kapsamlı bir kılavuz sunar. Bu eğitimler, şekillerin nasıl oluşturulacağını, değiştirileceğini ve silineceğini ve ayrıca renk, boyut, konum ve diğer nitelikler açısından nasıl özelleştirileceğini adım adım açıklar. Eğitimler, kolay anlama ve uygulama için net kod örnekleri ve adım adım açıklamalar içerir.
 
-Bu eğitimler aracılığıyla, düzeni ve bilgi görselleştirmesini geliştirmek için belgelerinize dikdörtgenler, daireler, çizgiler ve oklar gibi şekilleri nasıl ekleyeceğinizi öğreneceksiniz. Ayrıca döndürme, şeffaflık ve dolgu gibi şekil özelliklerini özel ihtiyaçlarınıza göre nasıl değiştireceğinizi de öğreneceksiniz.
+Bu eğitimler aracılığıyla, düzeni ve bilgi görselleştirmesini iyileştirmek için dikdörtgenler, daireler, çizgiler ve oklar gibi şekilleri belgelerinize nasıl ekleyeceğinizi öğreneceksiniz. Ayrıca, dönüş, şeffaflık ve dolgu gibi şekil özelliklerini özel ihtiyaçlarınıza uyacak şekilde nasıl değiştireceğinizi de öğreneceksiniz.
 
-Aspose.Words for .NET'i kullanarak ve bu eğitimleri takip ederek, Word belgelerinizdeki şekillerin manipülasyonunda ustalaşabilecek, görsel olarak çekici ve profesyonel görünümlü belgeler oluşturmanıza olanak tanıyacaksınız. İster yeni başlayan ister deneyimli bir geliştirici olun, bu eğitimler size süreç boyunca yol gösterecek ve Aspose.Words for .NET'teki şekil manipülasyonunun tüm potansiyelini ortaya çıkarmanıza yardımcı olacaktır.
+Aspose.Words for .NET'i kullanarak ve bu eğitimleri takip ederek, Word belgelerinizdeki şekillerin manipülasyonunda ustalaşabilecek ve görsel olarak çekici ve profesyonel görünümlü belgeler oluşturabileceksiniz. İster yeni başlayan ister deneyimli bir geliştirici olun, bu eğitimler sizi süreçte yönlendirecek ve Aspose.Words for .NET'te şekil manipülasyonunun tüm potansiyelini ortaya çıkarmanıza yardımcı olacaktır.
 
- ## Öğreticiler
+ ## Eğitimler
 | Başlık | Tanım |
 | --- | --- |
-| [Grup Şekli Ekle](./add-group-shape/) | Bu kapsamlı, adım adım eğitimle Aspose.Words for .NET kullanarak Word belgelerine nasıl grup şekilleri ekleyeceğinizi öğrenin. |
-| [Şekil Ekle](./insert-shape/) | Adım adım kılavuzumuzla Aspose.Words for .NET kullanarak Word belgelerine şekilleri nasıl ekleyeceğinizi ve değiştireceğinizi öğrenin. |
-| [En Boy Oranı Kilitli](./aspect-ratio-locked/) | Aspose.Words for .NET kullanarak Word belgelerindeki şekillerin en boy oranını nasıl kilitleyeceğinizi öğrenin. Resimlerinizi ve şekillerinizi orantılı tutmak için bu adım adım kılavuzu izleyin. |
-| [Hücre İçi Düzen](./layout-in-cell/) | Bu kapsamlı kılavuzla Aspose.Words for .NET kullanarak hücre düzenini nasıl ayarlayacağınızı öğrenin. Word belgelerini özelleştirmek isteyen geliştiriciler için mükemmeldir. |
-| [Kırpılmış Köşeleri Ekle](./add-corners-snipped/) | Aspose.Words for .NET'i kullanarak Word belgelerinize köşelerden kesilmiş şekli nasıl ekleyeceğinizi öğrenin. Bu adım adım kılavuz, belgelerinizi kolayca geliştirebilmenizi sağlar. |
-| [Gerçek Şekil Sınır Noktalarını Alın](./get-actual-shape-bounds-points/) | Aspose.Words for .NET kullanarak Word belgelerinde gerçek şekil sınır noktalarının nasıl elde edileceğini keşfedin. Bu ayrıntılı kılavuzla hassas şekil manipülasyonunu öğrenin. |
-| [Dikey Ankraj](./vertical-anchor/) | Aspose.Words for .NET kullanarak Word belgelerindeki metin kutuları için dikey bağlantı konumlarını nasıl ayarlayacağınızı öğrenin. Kolay adım adım kılavuz dahildir.|
-| [Akıllı Sanat Şeklini Algıla](./detect-smart-art-shape/) | Bu kapsamlı kılavuzla Aspose.Words for .NET kullanarak Word belgelerindeki SmartArt şekillerini nasıl tespit edeceğinizi öğrenin. Belge iş akışınızı otomatikleştirmek için mükemmeldir. |
+| [Grup Şekli Ekle](./add-group-shape/) | Bu kapsamlı, adım adım eğitimle Aspose.Words for .NET'i kullanarak Word belgelerine grup şekillerinin nasıl ekleneceğini öğrenin. |
+| [Şekil Ekle](./insert-shape/) | Aspose.Words for .NET'i kullanarak Word belgelerine şekil eklemeyi ve düzenlemeyi adım adım anlatan kılavuzumuzla öğrenin. |
+| [En Boy Oranı Kilitli](./aspect-ratio-locked/) | Aspose.Words for .NET kullanarak Word belgelerindeki şekillerin en boy oranını nasıl kilitleyeceğinizi öğrenin. Görüntülerinizi ve şekillerinizi orantılı tutmak için bu adım adım kılavuzu izleyin. |
+| [Hücredeki Düzen](./layout-in-cell/) | Bu kapsamlı kılavuzla, Aspose.Words for .NET kullanarak hücredeki düzeni nasıl ayarlayacağınızı öğrenin. Word belgelerini özelleştirmek isteyen geliştiriciler için mükemmeldir. |
+| [Köşeler Kesildi Ekle](./add-corners-snipped/) | Aspose.Words for .NET kullanarak Word belgelerinize köşeleri kesilmiş bir şeklin nasıl ekleneceğini öğrenin. Bu adım adım kılavuz, belgelerinizi kolayca geliştirebilmenizi sağlar. |
+| [Gerçek Şekil Sınır Noktalarını Alın](./get-actual-shape-bounds-points/) | Aspose.Words for .NET kullanarak Word belgelerinde gerçek şekil sınır noktalarının nasıl alınacağını keşfedin. Bu ayrıntılı kılavuzla hassas şekil manipülasyonunu öğrenin. |
+| [Dikey Çapa](./vertical-anchor/) | Aspose.Words for .NET kullanarak Word belgelerindeki metin kutuları için dikey bağlantı konumlarının nasıl ayarlanacağını öğrenin. Kolay adım adım kılavuz dahildir.|
+| [Akıllı Sanat Şeklini Algıla](./detect-smart-art-shape/) | Bu kapsamlı kılavuzla Aspose.Words for .NET kullanarak Word belgelerindeki SmartArt şekillerini nasıl algılayacağınızı öğrenin. Belge iş akışınızı otomatikleştirmek için mükemmeldir. |
 | [Akıllı Sanat Çizimini Güncelle](./update-smart-art-drawing/) | Bu adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerindeki Smart Art çizimlerini nasıl güncelleyeceğinizi öğrenin. Görsellerinizin her zaman doğru olduğundan emin olun. |

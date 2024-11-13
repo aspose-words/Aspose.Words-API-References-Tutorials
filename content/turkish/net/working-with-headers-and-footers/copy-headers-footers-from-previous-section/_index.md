@@ -1,28 +1,28 @@
 ---
-title: Önceki Bölümden Üstbilgi Altbilgilerini Kopyala
-linktitle: Önceki Bölümden Üstbilgi Altbilgilerini Kopyala
+title: Önceki Bölümden Üstbilgileri Altbilgileri Kopyala
+linktitle: Önceki Bölümden Üstbilgileri Altbilgileri Kopyala
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak Word belgelerindeki bölümler arasında üstbilgi ve altbilgileri nasıl kopyalayacağınızı öğrenin. Bu ayrıntılı kılavuz tutarlılık ve profesyonellik sağlar.
+description: Aspose.Words for .NET kullanarak Word belgelerindeki bölümler arasında başlıkları ve alt bilgileri nasıl kopyalayacağınızı öğrenin. Bu ayrıntılı kılavuz tutarlılık ve profesyonellik sağlar.
 type: docs
 weight: 10
 url: /tr/net/working-with-headers-and-footers/copy-headers-footers-from-previous-section/
 ---
 ## giriiş
 
-Belgelerinize üstbilgi ve altbilgi eklemek ve kopyalamak, belgelerinizin profesyonelliğini ve tutarlılığını büyük ölçüde artırabilir. Aspose.Words for .NET ile bu görev basit ve son derece özelleştirilebilir hale geliyor. Bu kapsamlı eğitimde, üstbilgileri ve altbilgileri Word belgelerinizde bir bölümden diğerine adım adım kopyalama sürecinde size yol göstereceğiz.
+Belgelerinize başlık ve altbilgi eklemek ve kopyalamak, profesyonelliklerini ve tutarlılıklarını büyük ölçüde artırabilir. Aspose.Words for .NET ile bu görev basit ve oldukça özelleştirilebilir hale gelir. Bu kapsamlı eğitimde, Word belgelerinizde bir bölümden diğerine başlık ve altbilgi kopyalama sürecini adım adım size göstereceğiz.
 
-## Önkoşullar
+## Ön koşullar
 
-Eğiticiye dalmadan önce aşağıdakilere sahip olduğunuzdan emin olun:
+Eğitime başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
--  Aspose.Words for .NET: Buradan indirip yükleyin.[indirme bağlantısı](https://releases.aspose.com/words/net/).
-- Geliştirme Ortamı: C# kodunuzu yazmak ve çalıştırmak için Visual Studio gibi.
-- Temel C# Bilgisi: C# programlama ve .NET çerçevesine aşinalık.
+-  Aspose.Words for .NET: Bunu şu adresten indirin ve kurun:[indirme bağlantısı](https://releases.aspose.com/words/net/).
+- Geliştirme Ortamı: C# kodunuzu yazıp çalıştırabileceğiniz Visual Studio gibi bir ortam.
+- Temel C# Bilgisi: C# programlama ve .NET framework'üne aşinalık.
 - Örnek Belge: Mevcut bir belgeyi kullanın veya bu eğitimde gösterildiği gibi yeni bir belge oluşturun.
 
 ## Ad Alanlarını İçe Aktar
 
-Başlamak için Aspose.Words işlevlerini kullanmanıza olanak sağlayacak gerekli ad alanlarını içe aktarmanız gerekir.
+Başlamak için, Aspose.Words işlevselliklerinden faydalanmanızı sağlayacak gerekli ad alanlarını içe aktarmanız gerekir.
 
 ```csharp
 using Aspose.Words;
@@ -30,18 +30,18 @@ using Aspose.Words.Tables;
 using System;
 ```
 
-## 1. Adım: Yeni Bir Belge Oluşturun
+## Adım 1: Yeni Bir Belge Oluşturun
 
- Öncelikle yeni bir belge oluşturun ve`DocumentBuilder` İçeriğin eklenmesini ve değiştirilmesini kolaylaştırmak için.
+ İlk olarak yeni bir belge oluşturun ve`DocumentBuilder` içerik eklenmesini ve düzenlenmesini kolaylaştırmak.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Adım 2: Geçerli Bölüme Erişin
+## Adım 2: Mevcut Bölüme Erişim
 
-Ardından, belgenin üstbilgileri ve altbilgileri kopyalamak istediğiniz geçerli bölümüne erişin.
+Daha sonra, üstbilgi ve altbilgileri kopyalamak istediğiniz belgenin geçerli bölümüne erişin.
 
 ```csharp
 Section currentSection = builder.CurrentSection;
@@ -49,7 +49,7 @@ Section currentSection = builder.CurrentSection;
 
 ## Adım 3: Önceki Bölümü Tanımlayın
 
-Üstbilgileri ve altbilgileri kopyalamak istediğiniz önceki bölümü tanımlayın. Önceki bölüm yoksa herhangi bir işlem yapmadan kolayca geri dönebilirsiniz.
+Başlıkları ve altbilgileri kopyalamak istediğiniz önceki bölümü tanımlayın. Önceki bölüm yoksa, herhangi bir işlem yapmadan geri dönebilirsiniz.
 
 ```csharp
 Section previousSection = (Section)currentSection.PreviousSibling;
@@ -57,17 +57,17 @@ if (previousSection == null)
     return;
 ```
 
-## 4. Adım: Mevcut Üstbilgileri ve Altbilgileri Temizleyin
+## Adım 4: Mevcut Başlıkları ve Alt Bilgileri Temizle
 
-Tekrarlamayı önlemek için geçerli bölümdeki mevcut üstbilgileri ve altbilgileri temizleyin.
+Yinelenen içerikleri önlemek için mevcut bölümdeki tüm üstbilgileri ve altbilgileri temizleyin.
 
 ```csharp
 currentSection.HeadersFooters.Clear();
 ```
 
-## Adım 5: Üstbilgileri ve Altbilgileri Kopyalayın
+## Adım 5: Başlıkları ve Altbilgileri Kopyala
 
-Önceki bölümdeki üstbilgileri ve altbilgileri geçerli bölüme kopyalayın. Bu, biçimlendirmenin ve içeriğin bölümler arasında tutarlı olmasını sağlar.
+Önceki bölümden başlıkları ve alt bilgileri geçerli bölüme kopyalayın. Bu, biçimlendirmenin ve içeriğin bölümler arasında tutarlı olmasını sağlar.
 
 ```csharp
 foreach (HeaderFooter headerFooter in previousSection.HeadersFooters)
@@ -76,7 +76,7 @@ foreach (HeaderFooter headerFooter in previousSection.HeadersFooters)
 
 ## Adım 6: Belgeyi Kaydedin
 
-Son olarak belgeyi istediğiniz konuma kaydedin. Bu adım, tüm değişikliklerinizin belge dosyasına yazılmasını sağlar.
+Son olarak, belgeyi istediğiniz bir konuma kaydedin. Bu adım, tüm değişikliklerinizin belge dosyasına yazılmasını sağlar.
 
 ```csharp
 doc.Save("OutputDocument.docx");
@@ -84,26 +84,26 @@ doc.Save("OutputDocument.docx");
 
 ## Çözüm
 
-Aspose.Words for .NET kullanarak üstbilgileri ve altbilgileri bir Word belgesinde bir bölümden diğerine kopyalamak basit ve etkilidir. Bu adım adım kılavuzu izleyerek belgelerinizin tüm bölümlerde tutarlı ve profesyonel bir görünüme sahip olmasını sağlayabilirsiniz.
+Aspose.Words for .NET kullanarak bir Word belgesinde başlıkları ve alt bilgileri bir bölümden diğerine kopyalamak basit ve etkilidir. Bu adım adım kılavuzu izleyerek belgelerinizin tüm bölümlerde tutarlı ve profesyonel bir görünüme sahip olmasını sağlayabilirsiniz.
 
-## SSS'ler
+## SSS
 
 ### Aspose.Words for .NET nedir?
 
-Aspose.Words for .NET, geliştiricilerin .NET uygulamaları içinde Word belgelerini programlı olarak oluşturmasına, değiştirmesine ve dönüştürmesine olanak tanıyan güçlü bir kitaplıktır.
+Aspose.Words for .NET, geliştiricilerin .NET uygulamaları içerisinde Word belgelerini programlı bir şekilde oluşturmalarına, düzenlemelerine ve dönüştürmelerine olanak tanıyan güçlü bir kütüphanedir.
 
-### Üstbilgileri ve altbilgileri herhangi bir bölümden başka bir bölüme kopyalayabilir miyim?
+### Herhangi bir bölümden başka bir bölüme üstbilgi ve altbilgi kopyalayabilir miyim?
 
-Evet, bu eğitimde açıklanan yöntemi kullanarak bir Word belgesindeki herhangi bir bölüm arasında üstbilgileri ve altbilgileri kopyalayabilirsiniz.
+Evet, bu eğitimde anlatılan yöntemi kullanarak Word belgesindeki herhangi bir bölüm arasında üstbilgi ve altbilgileri kopyalayabilirsiniz.
 
-### Tek ve çift sayfalar için farklı üstbilgileri ve altbilgileri nasıl kullanırım?
+### Tek ve çift sayfalar için farklı üstbilgi ve altbilgileri nasıl işlerim?
 
  Tek ve çift sayfalar için farklı üstbilgiler ve altbilgiler ayarlayabilirsiniz.`PageSetup.OddAndEvenPagesHeaderFooter` mülk.
 
 ### Aspose.Words for .NET hakkında daha fazla bilgiyi nerede bulabilirim?
 
- Hakkında kapsamlı belgeler bulabilirsiniz.[Aspose.Words API dokümantasyon sayfası](https://reference.aspose.com/words/net/).
+ Kapsamlı belgeleri şurada bulabilirsiniz:[Aspose.Words API dokümantasyon sayfası](https://reference.aspose.com/words/net/).
 
-### Aspose.Words for .NET'in ücretsiz deneme sürümü mevcut mu?
+### Aspose.Words for .NET için ücretsiz deneme sürümü mevcut mu?
 
- Evet, ücretsiz deneme sürümünü şuradan indirebilirsiniz:[indirme sayfası](https://releases.aspose.com/).
+ Evet, ücretsiz deneme sürümünü şu adresten indirebilirsiniz:[indirme sayfası](https://releases.aspose.com/).

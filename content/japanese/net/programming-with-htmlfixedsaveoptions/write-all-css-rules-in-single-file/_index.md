@@ -2,7 +2,7 @@
 title: すべての CSS ルールを 1 つのファイルに記述する
 linktitle: すべての CSS ルールを 1 つのファイルに記述する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書を HTML に変換する方法を学びます。すべての CSS ルールが 1 つのファイルにまとめられており、コードがよりクリーンになり、メンテナンスが容易になります。
+description: Aspose.Words for .NET を使用して Word 文書を HTML に変換する方法を学びます。すべての CSS ルールが 1 つのファイルにまとめられ、コードがよりクリーンになり、メンテナンスが容易になります。
 type: docs
 weight: 10
 url: /ja/net/programming-with-htmlfixedsaveoptions/write-all-css-rules-in-single-file/

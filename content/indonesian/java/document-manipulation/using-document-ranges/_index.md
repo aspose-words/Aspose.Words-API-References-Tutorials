@@ -2,19 +2,19 @@
 title: Menggunakan Rentang Dokumen di Aspose.Words untuk Java
 linktitle: Menggunakan Rentang Dokumen
 second_title: API Pemrosesan Dokumen Java Aspose.Words
-description: Manipulasi rentang dokumen master di Aspose.Words untuk Java. Pelajari cara menghapus, mengekstrak, dan memformat teks dengan panduan komprehensif ini.
+description: Kuasai manipulasi rentang dokumen di Aspose.Words untuk Java. Pelajari cara menghapus, mengekstrak, dan memformat teks dengan panduan lengkap ini.
 type: docs
 weight: 18
 url: /id/java/document-manipulation/using-document-ranges/
 ---
 
-## Pengantar Menggunakan Rentang Dokumen di Aspose.Words untuk Java
+## Pengantar Penggunaan Rentang Dokumen di Aspose.Words untuk Java
 
-Dalam panduan komprehensif ini, kita akan mempelajari cara memanfaatkan kekuatan rentang dokumen di Aspose.Words untuk Java. Anda akan mempelajari cara memanipulasi dan mengekstrak teks dari bagian tertentu dokumen, membuka banyak kemungkinan untuk kebutuhan pemrosesan dokumen Java Anda.
+Dalam panduan lengkap ini, kita akan menjelajahi cara memanfaatkan kekuatan rentang dokumen di Aspose.Words untuk Java. Anda akan mempelajari cara memanipulasi dan mengekstrak teks dari bagian tertentu dokumen, membuka kemungkinan untuk kebutuhan pemrosesan dokumen Java Anda.
 
 ## Memulai
 
- Sebelum mendalami kodenya, pastikan Anda telah menyiapkan pustaka Aspose.Words untuk Java di proyek Anda. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/java/).
+ Sebelum menyelami kode, pastikan Anda telah menyiapkan pustaka Aspose.Words untuk Java di proyek Anda. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/java/).
 
 ## Membuat Dokumen
 
@@ -26,7 +26,7 @@ Document doc = new Document("Your Directory Path" + "Document.docx");
 
 ## Menghapus Rentang Dokumen
 
-Salah satu kasus penggunaan umum untuk rentang dokumen adalah menghapus konten tertentu. Misalkan Anda ingin menghapus konten di bagian pertama dokumen Anda. Anda dapat mencapainya dengan menggunakan kode berikut:
+Salah satu kasus penggunaan umum untuk rentang dokumen adalah menghapus konten tertentu. Misalkan Anda ingin menghapus konten dalam bagian pertama dokumen Anda. Anda dapat melakukannya dengan menggunakan kode berikut:
 
 ```java
 doc.getSections().get(0).getRange().delete();
@@ -34,7 +34,7 @@ doc.getSections().get(0).getRange().delete();
 
 ## Mengekstrak Teks dari Rentang Dokumen
 
-Mengekstrak teks dari berbagai dokumen adalah kemampuan berharga lainnya. Untuk mendapatkan teks dalam suatu rentang, gunakan kode berikut:
+Mengekstrak teks dari suatu rentang dokumen merupakan kemampuan lain yang berharga. Untuk mendapatkan teks dalam suatu rentang, gunakan kode berikut:
 
 ```java
 @Test
@@ -51,13 +51,13 @@ Aspose.Words untuk Java menawarkan berbagai metode dan properti untuk memanipula
 
 ## Kesimpulan
 
-Rentang dokumen di Aspose.Words untuk Java memberi Anda kemampuan untuk bekerja dengan bagian tertentu dari dokumen Anda secara efisien. Baik Anda perlu menghapus konten, mengekstrak teks, atau melakukan manipulasi rumit, memahami cara menggunakan rentang dokumen adalah keterampilan yang berharga.
+Rentang dokumen di Aspose.Words untuk Java memberi Anda kemampuan untuk bekerja dengan bagian-bagian tertentu dari dokumen Anda secara efisien. Apakah Anda perlu menghapus konten, mengekstrak teks, atau melakukan manipulasi yang rumit, memahami cara menggunakan rentang dokumen merupakan keterampilan yang berharga.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
-### Apa yang dimaksud dengan rentang dokumen?
+### Apa itu rentang dokumen?
 
-Rentang dokumen di Aspose.Words untuk Java adalah bagian tertentu dari dokumen yang dapat dimanipulasi atau diekstraksi secara independen. Ini memungkinkan Anda untuk melakukan operasi yang ditargetkan dalam dokumen.
+Rentang dokumen di Aspose.Words untuk Java adalah bagian tertentu dari dokumen yang dapat dimanipulasi atau diekstraksi secara independen. Rentang ini memungkinkan Anda untuk melakukan operasi yang ditargetkan dalam sebuah dokumen.
 
 ### Bagaimana cara menghapus konten dalam rentang dokumen?
 
@@ -65,12 +65,12 @@ Rentang dokumen di Aspose.Words untuk Java adalah bagian tertentu dari dokumen y
 
 ### Bisakah saya memformat teks dalam rentang dokumen?
 
-Ya, Anda dapat memformat teks dalam rentang dokumen menggunakan berbagai metode pemformatan dan properti yang disediakan oleh Aspose.Words untuk Java.
+Ya, Anda dapat memformat teks dalam rentang dokumen menggunakan berbagai metode dan properti pemformatan yang disediakan oleh Aspose.Words untuk Java.
 
 ### Apakah rentang dokumen berguna untuk ekstraksi teks?
 
-Sangat! Rentang dokumen berguna untuk mengekstrak teks dari bagian tertentu dokumen, membuatnya mudah untuk bekerja dengan data yang diekstraksi.
+Tentu saja! Rentang dokumen berguna untuk mengekstrak teks dari bagian tertentu suatu dokumen, sehingga memudahkan pengerjaan data yang diekstrak.
 
-### Di mana saya dapat menemukan perpustakaan Aspose.Words untuk Java?
+### Di mana saya dapat menemukan pustaka Aspose.Words untuk Java?
 
- Anda dapat mengunduh perpustakaan Aspose.Words untuk Java dari situs web Aspose[Di Sini](https://releases.aspose.com/words/java/).
+ Anda dapat mengunduh pustaka Aspose.Words untuk Java dari situs web Aspose[Di Sini](https://releases.aspose.com/words/java/).

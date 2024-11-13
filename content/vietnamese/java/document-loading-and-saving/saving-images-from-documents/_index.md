@@ -2,7 +2,7 @@
 title: Lưu hình ảnh từ tài liệu trong Aspose.Words cho Java
 linktitle: Lưu hình ảnh từ tài liệu
 second_title: API xử lý tài liệu Java Aspose.Words
-description: Tìm hiểu cách lưu hình ảnh từ tài liệu bằng Aspose.Words cho Java với hướng dẫn từng bước toàn diện của chúng tôi. Tùy chỉnh định dạng, nén và hơn thế nữa.
+description: Tìm hiểu cách lưu hình ảnh từ tài liệu bằng Aspose.Words for Java với hướng dẫn từng bước toàn diện của chúng tôi. Tùy chỉnh định dạng, nén và nhiều hơn nữa.
 type: docs
 weight: 17
 url: /vi/java/document-loading-and-saving/saving-images-from-documents/
@@ -10,15 +10,15 @@ url: /vi/java/document-loading-and-saving/saving-images-from-documents/
 
 ## Giới thiệu về Lưu hình ảnh từ tài liệu trong Aspose.Words cho Java
 
-Trong hướng dẫn này, chúng ta sẽ khám phá cách lưu hình ảnh từ tài liệu bằng Aspose.Words cho Java. Chúng tôi sẽ đề cập đến nhiều tình huống và tùy chọn tùy chỉnh khác nhau để lưu hình ảnh. Hướng dẫn này cung cấp hướng dẫn từng bước với các ví dụ về mã nguồn.
+Trong hướng dẫn này, chúng ta sẽ khám phá cách lưu hình ảnh từ tài liệu bằng Aspose.Words for Java. Chúng ta sẽ đề cập đến nhiều tình huống và tùy chọn tùy chỉnh khác nhau để lưu hình ảnh. Hướng dẫn này cung cấp hướng dẫn từng bước với các ví dụ về mã nguồn.
 
 ## Điều kiện tiên quyết
 
- Trước khi bắt đầu, hãy đảm bảo bạn đã tích hợp thư viện Aspose.Words for Java vào dự án của mình. Bạn có thể tải nó xuống từ[đây](https://releases.aspose.com/words/java/).
+ Trước khi bắt đầu, hãy đảm bảo bạn đã tích hợp thư viện Aspose.Words for Java vào dự án của mình. Bạn có thể tải xuống từ[đây](https://releases.aspose.com/words/java/).
 
 ## Bước 1: Lưu hình ảnh dưới dạng TIFF với Kiểm soát ngưỡng
 
-Để lưu hình ảnh dưới định dạng TIFF với kiểm soát ngưỡng, hãy làm theo các bước sau:
+Để lưu hình ảnh ở định dạng TIFF với ngưỡng kiểm soát, hãy làm theo các bước sau:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Rendering.docx");
@@ -43,7 +43,7 @@ saveOptions.setResolution(160f);
 doc.save("Your Directory Path" + "SpecificPageMultipage.tiff", saveOptions);
 ```
 
-## Bước 3: Lưu hình ảnh dưới dạng 1 BPP được lập chỉ mục PNG
+## Bước 3: Lưu hình ảnh dưới dạng PNG được lập chỉ mục 1 BPP
 
 Để lưu hình ảnh dưới dạng PNG được lập chỉ mục 1 BPP, hãy làm theo các bước sau:
 
@@ -70,9 +70,9 @@ options.setHorizontalResolution(72f);
 doc.save("Your Directory Path" + "CustomizedJPEG.jpeg", options);
 ```
 
-## Bước 5: Sử dụng tính năng gọi lại lưu trang
+## Bước 5: Sử dụng Page Saving Callback
 
-Bạn có thể sử dụng lệnh gọi lại để tùy chỉnh việc lưu trang. Đây là một ví dụ:
+Bạn có thể sử dụng lệnh gọi lại để tùy chỉnh việc lưu trang. Sau đây là một ví dụ:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Rendering.docx");
@@ -90,7 +90,7 @@ private static class HandlePageSavingCallback implements IPageSavingCallback {
 }
 ```
 
-## Mã nguồn hoàn chỉnh để lưu hình ảnh từ tài liệu trong Aspose.Words cho Java
+## Mã nguồn đầy đủ để lưu hình ảnh từ tài liệu trong Aspose.Words cho Java
 
 ```java
 public void exposeThresholdControlForTiffBinarization() throws Exception
@@ -136,11 +136,11 @@ public void getJpegPageRange() throws Exception
 	// Đặt "PageSet" thành "0" để chỉ chuyển đổi trang đầu tiên của tài liệu.
 	options.setPageSet(new PageSet(0));
 	// Thay đổi độ sáng và độ tương phản của hình ảnh.
-	// Cả hai đều có thang điểm 0-1 và ở mức 0,5 theo mặc định.
+	// Cả hai đều có thang điểm từ 0-1 và mặc định là 0,5.
 	options.setImageBrightness(0.3f);
 	options.setImageContrast(0.7f);
-	// Thay đổi độ phân giải ngang.
-	// Giá trị mặc định cho các thuộc tính này là 96,0, cho độ phân giải 96dpi.
+	// Thay đổi độ phân giải theo chiều ngang.
+	// Giá trị mặc định cho các thuộc tính này là 96.0, cho độ phân giải 96dpi.
 	options.setHorizontalResolution(72f);
 	doc.save("Your Directory Path" + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options);
 }
@@ -165,13 +165,13 @@ private static class HandlePageSavingCallback implements IPageSavingCallback
 
 ## Phần kết luận
 
-Bạn đã học cách lưu hình ảnh từ tài liệu bằng Aspose.Words cho Java. Những ví dụ này minh họa các tùy chọn tùy chỉnh khác nhau để lưu hình ảnh, bao gồm định dạng, nén và sử dụng gọi lại. Khám phá nhiều khả năng hơn với Aspose.Words cho các khả năng mạnh mẽ của Java.
+Bạn đã học cách lưu hình ảnh từ tài liệu bằng Aspose.Words for Java. Các ví dụ này minh họa các tùy chọn tùy chỉnh khác nhau để lưu hình ảnh, bao gồm định dạng, nén và sử dụng lệnh gọi lại. Khám phá thêm nhiều khả năng với các khả năng mạnh mẽ của Aspose.Words for Java.
 
 ## Câu hỏi thường gặp
 
-### Làm cách nào để thay đổi định dạng hình ảnh khi lưu bằng Aspose.Words cho Java?
+### Làm thế nào để thay đổi định dạng hình ảnh khi lưu bằng Aspose.Words cho Java?
 
- Bạn có thể thay đổi định dạng hình ảnh bằng cách chỉ định định dạng mong muốn trong`ImageSaveOptions` . Ví dụ: để lưu dưới dạng PNG, hãy sử dụng`SaveFormat.PNG` như được hiển thị trong mã:
+ Bạn có thể thay đổi định dạng hình ảnh bằng cách chỉ định định dạng mong muốn trong`ImageSaveOptions` . Ví dụ, để lưu dưới dạng PNG, hãy sử dụng`SaveFormat.PNG` như được hiển thị trong mã:
 
 ```java
 ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
@@ -179,38 +179,38 @@ ImageSaveOptions saveOptions = new ImageSaveOptions(SaveFormat.PNG);
 
 ### Tôi có thể tùy chỉnh cài đặt nén cho hình ảnh TIFF không?
 
-Có, bạn có thể tùy chỉnh cài đặt nén ảnh TIFF. Ví dụ: để đặt phương pháp nén thành CCITT_3, hãy sử dụng mã sau:
+Có, bạn có thể tùy chỉnh cài đặt nén hình ảnh TIFF. Ví dụ, để đặt phương pháp nén thành CCITT_3, hãy sử dụng mã sau:
 
 ```java
 saveOptions.setTiffCompression(TiffCompression.CCITT_3);
 ```
 
-### Làm cách nào tôi có thể lưu một trang cụ thể từ tài liệu dưới dạng hình ảnh riêng biệt?
+### Làm thế nào để lưu một trang cụ thể trong tài liệu dưới dạng hình ảnh riêng biệt?
 
- Để lưu một trang cụ thể dưới dạng hình ảnh, hãy sử dụng`setPageSet`phương pháp trong`ImageSaveOptions` . Ví dụ: để chỉ lưu trang đầu tiên, hãy đặt`PageSet` ĐẾN`new PageSet(0)`.
+ Để lưu một trang cụ thể dưới dạng hình ảnh, hãy sử dụng`setPageSet`phương pháp trong`ImageSaveOptions` . Ví dụ, để chỉ lưu trang đầu tiên, hãy đặt`PageSet` ĐẾN`new PageSet(0)`.
 
 ```java
 saveOptions.setPageSet(new PageSet(0)); // Lưu trang đầu tiên dưới dạng hình ảnh
 ```
 
-### Làm cách nào để áp dụng cài đặt tùy chỉnh cho hình ảnh JPEG khi lưu?
+### Làm thế nào để áp dụng cài đặt tùy chỉnh cho ảnh JPEG khi lưu?
 
-Bạn có thể áp dụng cài đặt tùy chỉnh cho hình ảnh JPEG bằng cách sử dụng`ImageSaveOptions`. Điều chỉnh các thuộc tính như độ sáng, độ tương phản và độ phân giải. Ví dụ: để thay đổi độ sáng thành 0,3 và độ tương phản thành 0,7, hãy sử dụng mã này:
+Bạn có thể áp dụng các thiết lập tùy chỉnh cho hình ảnh JPEG bằng cách sử dụng`ImageSaveOptions`. Điều chỉnh các thuộc tính như độ sáng, độ tương phản và độ phân giải. Ví dụ, để thay đổi độ sáng thành 0,3 và độ tương phản thành 0,7, hãy sử dụng mã này:
 
 ```java
 options.setImageBrightness(0.3f);
 options.setImageContrast(0.7f);
 ```
 
-### Làm cách nào tôi có thể sử dụng lệnh gọi lại để tùy chỉnh việc lưu hình ảnh?
+### Tôi có thể sử dụng lệnh gọi lại để tùy chỉnh việc lưu hình ảnh như thế nào?
 
- Để sử dụng lệnh gọi lại để tùy chỉnh việc lưu hình ảnh, hãy đặt`PageSavingCallback` TRONG`ImageSaveOptions` . Tạo một lớp thực hiện các`IPageSavingCallback` giao diện và ghi đè`pageSaving` phương pháp.
+ Để sử dụng lệnh gọi lại để tùy chỉnh việc lưu hình ảnh, hãy đặt`PageSavingCallback` TRONG`ImageSaveOptions` . Tạo một lớp thực hiện`IPageSavingCallback` giao diện và ghi đè`pageSaving` phương pháp.
 
 ```java
 imageSaveOptions.setPageSavingCallback(new HandlePageSavingCallback());
 ```
 
- Sau đó, tạo một lớp thực hiện`IPageSavingCallback` giao diện và tùy chỉnh tên tập tin và vị trí trong`pageSaving` phương pháp.
+ Sau đó, tạo một lớp thực hiện`IPageSavingCallback` giao diện và tùy chỉnh tên tệp và vị trí trong`pageSaving` phương pháp.
 
 ```java
 private static class HandlePageSavingCallback implements IPageSavingCallback {

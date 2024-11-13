@@ -113,7 +113,7 @@ doc.Save(dataDir + "WorkingWithSdt.CreatingTableRepeatingSectionMappedToCustomXm
 ## よくある質問
 
 ### StructuredDocumentTag (SDT) とは何ですか?
-SDT (コンテンツ コントロールとも呼ばれます) は、構造化データを格納するために使用されるドキュメント内の境界付き領域です。
+SDT (コンテンツ コントロールとも呼ばれます) は、構造化データを格納するために使用されるドキュメント内の境界領域です。
 
 ### カスタム XML 部分で他のデータ型を使用できますか?
 はい、カスタム XML パーツを任意のデータ型で構造化し、それに応じてマップすることができます。

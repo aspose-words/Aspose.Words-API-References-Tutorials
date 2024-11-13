@@ -1,8 +1,8 @@
 ---
 title: Gestión de firmas digitales y autenticidad
 linktitle: Gestión de firmas digitales y autenticidad
-second_title: API de gestión de documentos Aspose.Words Python
-description: Aprenda a administrar firmas digitales y garantizar la autenticidad de los documentos utilizando Aspose.Words para Python. Guía paso a paso con código fuente.
+second_title: API de gestión de documentos de Python de Aspose.Words
+description: Aprenda a gestionar firmas digitales y garantizar la autenticidad de los documentos con Aspose.Words para Python. Guía paso a paso con código fuente.
 type: docs
 weight: 17
 url: /es/python-net/document-combining-and-comparison/manage-digital-signatures/
@@ -10,19 +10,19 @@ url: /es/python-net/document-combining-and-comparison/manage-digital-signatures/
 
 ## Introducción a las firmas digitales
 
-Las firmas digitales sirven como equivalentes electrónicos de las firmas manuscritas. Proporcionan una forma de verificar la autenticidad, integridad y origen de los documentos electrónicos. Cuando un documento se firma digitalmente, se genera un hash criptográfico basado en el contenido del documento. Luego, este hash se cifra utilizando la clave privada del firmante, creando la firma digital. Cualquier persona que disponga de la correspondiente clave pública puede verificar la firma y comprobar la autenticidad del documento.
+Las firmas digitales son el equivalente electrónico de las firmas manuscritas y permiten verificar la autenticidad, la integridad y el origen de los documentos electrónicos. Cuando se firma digitalmente un documento, se genera un hash criptográfico basado en el contenido del documento. Luego, este hash se cifra con la clave privada del firmante, lo que crea la firma digital. Cualquier persona que tenga la clave pública correspondiente puede verificar la firma y determinar la autenticidad del documento.
 
-## Configurando Aspose.Words para Python
+## Configuración de Aspose.Words para Python
 
-Para comenzar a administrar firmas digitales usando Aspose.Words para Python, siga estos pasos:
+Para comenzar a administrar firmas digitales con Aspose.Words para Python, siga estos pasos:
 
-1. Instale Aspose.Words: puede instalar Aspose.Words para Python usando pip con el siguiente comando:
+1. Instalar Aspose.Words: puedes instalar Aspose.Words para Python usando pip con el siguiente comando:
    
    ```python
    pip install aspose-words
    ```
 
-2. Importe los módulos necesarios: importe los módulos necesarios en su secuencia de comandos Python:
+2. Importe los módulos necesarios: Importe los módulos necesarios en su script de Python:
    
    ```python
    import asposewords
@@ -30,13 +30,13 @@ Para comenzar a administrar firmas digitales usando Aspose.Words para Python, si
 
 ## Carga y acceso a documentos
 
-Antes de agregar o verificar firmas digitales, debe cargar el documento usando Aspose.Words:
+Antes de agregar o verificar firmas digitales, debe cargar el documento mediante Aspose.Words:
 
 ```python
 document = asposewords.Document("document.docx")
 ```
 
-## Agregar firmas digitales a documentos
+## Cómo agregar firmas digitales a los documentos
 
 Para agregar una firma digital a un documento, necesitará un certificado digital:
 
@@ -44,7 +44,7 @@ Para agregar una firma digital a un documento, necesitará un certificado digita
 certificate = asposewords.Certificate("certificate.pfx", "password")
 ```
 
-Ahora firma el documento:
+Ahora, firma el documento:
 
 ```python
 digital_signature = asposewords.DigitalSignature()
@@ -74,9 +74,9 @@ document.digital_signatures.clear()
 document.save("unsigned_document.docx")
 ```
 
-## Garantizar la autenticidad del documento
+## Garantizar la autenticidad de los documentos
 
-Las firmas digitales garantizan la autenticidad del documento al confirmar la fuente y la integridad del documento. Protegen contra manipulaciones y modificaciones no autorizadas.
+Las firmas digitales garantizan la autenticidad de los documentos al confirmar su origen e integridad. Además, protegen contra la manipulación y las modificaciones no autorizadas.
 
 ## Personalización de la apariencia de la firma digital
 
@@ -89,7 +89,7 @@ digital_signature.options.sign_date_time = datetime.now()
 
 ## Conclusión
 
-Gestionar las firmas digitales y garantizar la autenticidad de los documentos son fundamentales en el panorama digital actual. Aspose.Words para Python simplifica el proceso de agregar, verificar y personalizar firmas digitales, lo que permite a los desarrolladores mejorar la seguridad y confiabilidad de sus documentos.
+La gestión de firmas digitales y la garantía de la autenticidad de los documentos son aspectos fundamentales en el panorama digital actual. Aspose.Words para Python simplifica el proceso de agregar, verificar y personalizar firmas digitales, lo que permite a los desarrolladores mejorar la seguridad y la confiabilidad de sus documentos.
 
 ## Preguntas frecuentes
 
@@ -99,16 +99,16 @@ Las firmas digitales utilizan criptografía para generar un hash único basado e
 
 ### ¿Se puede alterar un documento firmado digitalmente?
 
-No, la manipulación de un documento firmado digitalmente invalidaría la firma, lo que indicaría posibles cambios no autorizados.
+No, alterar un documento firmado digitalmente invalidaría la firma, lo que indicaría posibles cambios no autorizados.
 
 ### ¿Se pueden agregar varias firmas a un solo documento?
 
-Sí, puede agregar varias firmas digitales a un solo documento, cada una de un firmante diferente.
+Sí, puedes agregar varias firmas digitales a un solo documento, cada una de un firmante diferente.
 
 ### ¿Qué tipos de certificados son compatibles?
 
 Aspose.Words admite certificados X.509, incluidos archivos PFX, que se utilizan comúnmente para firmas digitales.
 
-### ¿Son las firmas digitales legalmente válidas?
+### ¿Son legalmente válidas las firmas digitales?
 
-Sí, las firmas digitales son legalmente válidas en muchos países y, a menudo, se consideran equivalentes a las firmas manuscritas.
+Sí, las firmas digitales son legalmente válidas en muchos países y a menudo se consideran equivalentes a las firmas manuscritas.

@@ -90,7 +90,7 @@ Nyugodtan kísérletezzen a különböző listastílusokkal és -formátumokkal 
     Használja a`ListIndent` módszer további szintek hozzáadásához és`ListOutdent` hogy visszatérjen egy magasabb szintre.
 
 ### Lehet-e keverni a felsorolásjeleket és a számlistákat?
-   Teljesen! A felsorolásjelek és a számformátumok között a gombbal válthat`ApplyNumberDefault`és`ApplyBulletDefault` mód.
+   Teljesen! A felsorolásjelek és a számformátumok között a gombbal válthat`ApplyNumberDefault` és`ApplyBulletDefault` mód.
 
 ### Stílusozhatom a szöveget a listaelemekben?
     Igen, különböző stílusokat, betűtípusokat és formázásokat alkalmazhat a listaelemeken belüli szövegre a segítségével`Font` tulajdona a`DocumentBuilder`.

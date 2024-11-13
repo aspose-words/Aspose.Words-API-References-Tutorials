@@ -14,6 +14,7 @@ is_root: true
 {{% /alert %}}
 
 以下は役に立つリソースへのリンクです:
+- [AIを活用したドキュメント処理](./net/ai-powered-document-processing/)
 - [ライセンスを適用](./net/apply-license/)   
 - [OpenType機能を有効にする](./net/enable-opentype-features/)   
 - [コメントの操作](./net/working-with-comments/)   

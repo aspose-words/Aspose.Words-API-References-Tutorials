@@ -10,7 +10,7 @@ url: /sv/java/document-conversion-and-export/generating-custom-barcode-labels/
 
 ## Introduktion till att skapa anpassade streckkodsetiketter i Aspose.Words för Java
 
-den här omfattande guiden kommer vi att fördjupa oss i processen att skapa anpassade streckkodsetiketter med Aspose.Words för Java. Aspose.Words för Java är ett kraftfullt API som tillåter utvecklare att manipulera Word-dokument programmatiskt. En av dess anmärkningsvärda egenskaper är förmågan att arbeta med streckkodsetiketter, vilket gör det till ett värdefullt verktyg för företag och organisationer som kräver skräddarsydda streckkodslösningar.
+I den här omfattande guiden kommer vi att fördjupa oss i processen att skapa anpassade streckkodsetiketter med Aspose.Words för Java. Aspose.Words för Java är ett kraftfullt API som tillåter utvecklare att manipulera Word-dokument programmatiskt. En av dess anmärkningsvärda egenskaper är förmågan att arbeta med streckkodsetiketter, vilket gör det till ett värdefullt verktyg för företag och organisationer som kräver skräddarsydda streckkodslösningar.
 
 ## Förutsättningar
 
@@ -81,7 +81,7 @@ private static float convertScalingFactor(String scalingFactor) throws Exception
 
 ## Implementering av GetBarCodeImage()-metoden
 
- I det här steget kommer vi att implementera`getBarcodeImage` metod, som genererar streckkodsbilden baserat på de angivna parametrarna. Vi kommer att hantera olika streckkodstyper, ställa in färger, justera mått och mer. Här är koden för denna metod:
+ I det här steget kommer vi att implementera`getBarcodeImage`metod, som genererar streckkodsbilden baserat på de angivna parametrarna. Vi kommer att hantera olika streckkodstyper, ställa in färger, justera mått och mer. Här är koden för denna metod:
 
 ```java
 /// <sammanfattning>
@@ -121,7 +121,7 @@ public BufferedImage getBarcodeImage(BarcodeParameters parameters) throws Except
 		generator.getParameters().setAutoSizeMode(AutoSizeMode.NONE);
 	}
 	
-	//Anpassa kodtextens plats
+	// Anpassa kodtextens plats
 	generator.getParameters().getBarcode().getCodeTextParameters().setLocation(CodeLocation.NONE);
 	if (parameters.getDisplayText())
 		generator.getParameters().getBarcode().getCodeTextParameters().setLocation(CodeLocation.BELOW);
@@ -160,7 +160,7 @@ public BufferedImage getBarcodeImage(BarcodeParameters parameters) throws Except
 
 ## Implementering av metoden GetOldBarcodeImage()
 
- I det här steget kommer vi att implementera`getOldBarcodeImage` metod, som genererar streckkodsbilder för gammaldags streckkoder. Här kommer vi att hantera en specifik streckkodstyp, såsom POSTNET. Här är koden för denna metod:
+ I det här steget kommer vi att implementera`getOldBarcodeImage`metod, som genererar streckkodsbilder för gammaldags streckkoder. Här kommer vi att hantera en specifik streckkodstyp, såsom POSTNET. Här är koden för denna metod:
 
 ```java
 /// <sammanfattning>

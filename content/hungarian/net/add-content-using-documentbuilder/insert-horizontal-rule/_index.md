@@ -15,7 +15,7 @@ Sziasztok, fejlesztő kollégák! Előfordult már, hogy térdig merült egy Wor
 
 Mielőtt belemerülnénk az apróságokba, győződjünk meg arról, hogy mindennel rendelkezünk, ami az induláshoz szükséges. Íme egy gyors ellenőrző lista:
 
-1.  Aspose.Words for .NET: Győződjön meg arról, hogy a legújabb verzióval rendelkezik. Tudod[töltse le itt](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Győződjön meg arról, hogy a legújabb verzióval rendelkezik. Megteheti[töltse le itt](https://releases.aspose.com/words/net/).
 2. Fejlesztői környezet: Bármely IDE, amely támogatja a .NET-et, például a Visual Studio.
 3. A C# alapismeretei: A C# programozás ismerete simábbá teszi ezt az oktatóanyagot.
 4. Dokumentumkönyvtár: Szüksége lesz egy könyvtárra, ahová elmentheti Word-dokumentumait.
@@ -121,7 +121,7 @@ Az Aspose.Words for .NET egy hatékony könyvtár, amely lehetővé teszi a fejl
 
 ### Hol találok további oktatóanyagokat az Aspose.Words for .NET-hez?
 
- A[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/) remek hely a részletes oktatóanyagok és példák megtalálásához.
+A[Aspose.Words dokumentáció](https://reference.aspose.com/words/net/) remek hely a részletes oktatóanyagok és példák megtalálásához.
 
 ### Hogyan kaphatok támogatást, ha problémákba ütközöm?
 

@@ -16,7 +16,7 @@ Word ドキュメントをプログラムで操作しているときに、警告
 実装に進む前に、次の前提条件が満たされていることを確認してください。
 
 - C#プログラミングの基礎知識
-- お使いのマシンに Visual Studio がインストールされている
+- マシンに Visual Studio がインストールされている
 - Aspose.Words for .NETライブラリ（ダウンロードできます）[ここ](https://releases.aspose.com/words/net/）)
 -  Aspose.Wordsの有効なライセンス（お持ちでない場合は、[一時ライセンス](https://purchase.aspose.com/temporary-license/）)
 

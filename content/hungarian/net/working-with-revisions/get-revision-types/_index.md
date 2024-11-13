@@ -9,7 +9,7 @@ url: /hu/net/working-with-revisions/get-revision-types/
 ---
 ## Bevezetés
 
-Volt már valaha olyan, hogy térdig ér a dokumentum-revíziók tengerében, és azon töprengett, ki mit és mikor költözött? Nem vagy egyedül. A dokumentumok revízióinak kezelése fárasztó feladat lehet, különösen akkor, ha kiterjedt dokumentumokat kezel. De ne aggódj! Az Aspose.Words for .NET segítségével könnyen azonosíthatja és kezelheti ezeket a változatokat. Ebben az útmutatóban lépésről lépésre végigvezetjük Önt egy olyan folyamaton, amely során az Aspose.Words for .NET segítségével revíziós típusú szavakat kaphat egy Word-dokumentumban. Szóval, csatt, és merüljünk bele!
+Volt már valaha olyan, hogy térdig ér a dokumentum-revíziók tengerében, és azon töprengett, ki mit és mikor költözött? Nem vagy egyedül. A dokumentumok revízióinak kezelése fárasztó feladat lehet, különösen akkor, ha kiterjedt dokumentumokat kezel. De ne izgulj! Az Aspose.Words for .NET segítségével könnyen azonosíthatja és kezelheti ezeket a változatokat. Ebben az útmutatóban lépésről lépésre végigvezetjük Önt egy olyan folyamaton, amely során az Aspose.Words for .NET segítségével revíziós típusú szavakat kaphat egy Word-dokumentumban. Szóval, csatt, és merüljünk bele!
 
 ## Előfeltételek
 
@@ -74,7 +74,7 @@ for (int i = 0; i < paragraphs.Count; i++)
 }
 ```
 
- Ez a ciklus végigmegy az egyes bekezdéseken, és a`IsMoveFromRevision`és`IsMoveToRevision` tulajdonságok annak meghatározására, hogy a bekezdést áthelyezték (törölték) vagy áthelyezték (beszúrták).
+ Ez a ciklus végigmegy az egyes bekezdéseken, és a`IsMoveFromRevision` és`IsMoveToRevision` tulajdonságok annak meghatározására, hogy a bekezdést áthelyezték (törölték) vagy áthelyezték (beszúrták).
 
 ## Következtetés
 

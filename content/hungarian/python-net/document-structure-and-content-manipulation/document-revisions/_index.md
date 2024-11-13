@@ -8,7 +8,7 @@ weight: 23
 url: /hu/python-net/document-structure-and-content-manipulation/document-revisions/
 ---
 
-dokumentumok átdolgozása és nyomon követése az együttműködésen alapuló munkakörnyezetek kulcsfontosságú szempontjai. Az Aspose.Words for Python hatékony eszközöket kínál a dokumentum-változatok hatékony nyomon követésére és áttekintésére. Ebben az átfogó útmutatóban lépésről lépésre megvizsgáljuk, hogyan érhetjük el ezt az Aspose.Words for Python használatával. Ennek az oktatóanyagnak a végére alapos ismerete lesz arról, hogyan integrálhatja a verziókövetési képességeket Python-alkalmazásaiba.
+dokumentumok felülvizsgálata és nyomon követése az együttműködésen alapuló munkakörnyezetek kulcsfontosságú szempontjai. Az Aspose.Words for Python hatékony eszközöket kínál a dokumentum-változatok hatékony nyomon követésére és áttekintésére. Ebben az átfogó útmutatóban lépésről lépésre megvizsgáljuk, hogyan érhetjük el ezt az Aspose.Words for Python használatával. Ennek az oktatóanyagnak a végére alapos ismerete lesz arról, hogyan integrálhatja a verziókövetési képességeket Python-alkalmazásaiba.
 
 ## Bevezetés a dokumentum-revíziókba
 

@@ -2,33 +2,33 @@
 title: Bidang Formulir Dapatkan Koleksi Bidang Formulir
 linktitle: Bidang Formulir Dapatkan Koleksi Bidang Formulir
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mendapatkan dan memanipulasi bidang formulir di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah komprehensif kami.
+description: Pelajari cara mendapatkan dan memanipulasi bidang formulir dalam dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah kami yang komprehensif.
 type: docs
 weight: 10
 url: /id/net/working-with-formfields/form-fields-get-form-fields-collection/
 ---
 ## Perkenalan
 
-Apakah Anda siap terjun ke dunia manipulasi bidang formulir di dokumen Word? Baik Anda mengotomatiskan pembuatan dokumen atau hanya perlu menangani formulir dengan lebih efisien, Aspose.Words for .NET adalah alat bantu Anda. Mari jelajahi cara mendapatkan kumpulan bidang formulir dari dokumen Word dan mengerjakannya langkah demi langkah.
+Apakah Anda siap untuk menyelami dunia manipulasi kolom formulir dalam dokumen Word? Baik Anda mengotomatiskan pembuatan dokumen atau sekadar perlu menangani formulir dengan lebih efisien, Aspose.Words for .NET adalah alat yang tepat untuk Anda. Mari kita jelajahi cara mendapatkan kumpulan kolom formulir dari dokumen Word dan mengolahnya langkah demi langkah.
 
 ## Prasyarat
 
-Sebelum kita beralih ke kode, pastikan Anda memiliki semua yang Anda perlukan untuk memulai.
+Sebelum kita masuk ke kode, mari pastikan Anda memiliki semua yang dibutuhkan untuk memulai.
 
-1.  Aspose.Words for .NET: Pastikan Anda menginstal Aspose.Words for .NET versi terbaru. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+1.  Aspose.Words untuk .NET: Pastikan Anda telah menginstal versi terbaru Aspose.Words untuk .NET. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: IDE seperti Visual Studio untuk menulis dan menjalankan kode .NET Anda.
-3. .NET Framework: Pastikan proyek Anda menargetkan versi .NET framework yang kompatibel.
+3. .NET Framework: Pastikan proyek Anda menargetkan versi .NET Framework yang kompatibel.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Sebelum memulai coding, Anda perlu mengimpor namespace yang diperlukan. Ini membantu Anda menghindari penulisan nama kelas lengkap berulang kali, sehingga membuat kode Anda lebih bersih dan mudah dibaca.
+Sebelum memulai pengodean, Anda perlu mengimpor namespace yang diperlukan. Ini membantu Anda menghindari penulisan nama kelas secara berulang, sehingga kode Anda lebih bersih dan mudah dibaca.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Fields;
 ```
 
-Mari kita uraikan proses mendapatkan dan memanipulasi bidang formulir di dokumen Word menggunakan Aspose.Words untuk .NET.
+Mari kita uraikan proses mendapatkan dan memanipulasi kolom formulir dalam dokumen Word menggunakan Aspose.Words untuk .NET.
 
 ## Langkah 1: Muat Dokumen
 
@@ -43,17 +43,17 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 ## Langkah 2: Dapatkan Koleksi Bidang Formulir
 
-Setelah dokumen dimuat, langkah selanjutnya adalah mengakses kumpulan kolom formulir. Koleksi ini memungkinkan Anda memanipulasi bidang formulir individual sesuai kebutuhan.
+Setelah dokumen dimuat, langkah selanjutnya adalah mengakses kumpulan kolom formulir. Kumpulan ini memungkinkan Anda untuk memanipulasi kolom formulir individual sesuai kebutuhan.
 
 ```csharp
 FormFieldCollection formFields = doc.Range.FormFields;
 ```
 
- Penjelasan: Itu`FormFields` properti dari`Range` objek memberi Anda akses ke bidang formulir di dokumen. Kami menyimpan koleksi ini di a`formFields` variabel untuk manipulasi lebih lanjut.
+ Penjelasan:`FormFields` milik`Range` objek memberi Anda akses ke bidang formulir dalam dokumen. Kami menyimpan koleksi ini di`formFields` variabel untuk manipulasi lebih lanjut.
 
 ## Langkah 3: Memanipulasi Bidang Formulir
 
-Sekarang setelah Anda memiliki kumpulan bidang formulir, Anda dapat mengakses dan memanipulasi setiap bidang formulir sesuai dengan kebutuhan Anda. Katakanlah Anda ingin mengubah nilai bidang formulir tertentu.
+Sekarang setelah Anda memiliki koleksi kolom formulir, Anda dapat mengakses dan memanipulasi setiap kolom formulir sesuai dengan kebutuhan Anda. Misalnya, Anda ingin mengubah nilai kolom formulir tertentu.
 
 ```csharp
 foreach (FormField formField in formFields)
@@ -65,11 +65,11 @@ foreach (FormField formField in formFields)
 }
 ```
 
-Penjelasan: Dalam contoh ini, kita mengulang setiap kolom formulir dalam koleksi. Jika bidang formulir adalah input teks (`FieldType.FieldFormTextInput`), kita ubah nilainya menjadi "Nilai Baru".
+Penjelasan: Dalam contoh ini, kita mengulang setiap kolom formulir dalam koleksi. Jika kolom formulir adalah input teks (`FieldType.FieldFormTextInput`), kita ubah nilainya menjadi "Nilai Baru".
 
 ## Langkah 4: Simpan Dokumen yang Dimodifikasi
 
-Setelah melakukan perubahan yang diperlukan pada kolom formulir, langkah terakhir adalah menyimpan dokumen yang dimodifikasi.
+Setelah membuat perubahan yang diperlukan pada kolom formulir, langkah terakhir adalah menyimpan dokumen yang telah dimodifikasi.
 
 ```csharp
 doc.Save(dataDir + "ModifiedFormFields.docx");
@@ -79,20 +79,20 @@ doc.Save(dataDir + "ModifiedFormFields.docx");
 
 ## Kesimpulan
 
-Selamat! Anda baru saja mempelajari cara mendapatkan dan memanipulasi bidang formulir di dokumen Word menggunakan Aspose.Words untuk .NET. Pustaka canggih ini memudahkan pengotomatisan tugas pemrosesan dokumen, sehingga menghemat waktu dan tenaga Anda.
+Selamat! Anda baru saja mempelajari cara mendapatkan dan memanipulasi kolom formulir dalam dokumen Word menggunakan Aspose.Words for .NET. Pustaka canggih ini memudahkan Anda untuk mengotomatiskan tugas pemrosesan dokumen, sehingga menghemat waktu dan tenaga.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Apa itu Aspose.Words untuk .NET?
-Aspose.Words for .NET adalah perpustakaan lengkap untuk bekerja dengan dokumen Word dalam aplikasi .NET. Ini memungkinkan Anda membuat, mengedit, mengonversi, dan memanipulasi dokumen Word secara terprogram.
+Aspose.Words untuk .NET adalah pustaka lengkap untuk bekerja dengan dokumen Word dalam aplikasi .NET. Pustaka ini memungkinkan Anda membuat, mengedit, mengonversi, dan memanipulasi dokumen Word secara terprogram.
 
-### Bisakah saya menggunakan Aspose.Words untuk .NET dalam aplikasi web?
-Ya, Aspose.Words for .NET dapat digunakan di berbagai jenis aplikasi, termasuk aplikasi web, aplikasi desktop, dan layanan.
+### Dapatkah saya menggunakan Aspose.Words untuk .NET dalam aplikasi web?
+Ya, Aspose.Words untuk .NET dapat digunakan dalam berbagai jenis aplikasi, termasuk aplikasi web, aplikasi desktop, dan layanan.
 
 ### Apakah Aspose.Words untuk .NET gratis?
 Aspose.Words untuk .NET menawarkan uji coba gratis, tetapi untuk fungsionalitas penuh, diperlukan lisensi. Anda bisa mendapatkan lisensi sementara[Di Sini](https://purchase.aspose.com/temporary-license/).
 
-### Di mana saya dapat menemukan dokumentasi Aspose.Words untuk .NET?
+### Di mana saya dapat menemukan dokumentasi untuk Aspose.Words untuk .NET?
  Dokumentasi untuk Aspose.Words untuk .NET dapat ditemukan[Di Sini](https://reference.aspose.com/words/net/).
 
 ### Bagaimana cara mendapatkan dukungan untuk Aspose.Words untuk .NET?

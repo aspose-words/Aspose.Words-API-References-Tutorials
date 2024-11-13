@@ -10,14 +10,14 @@ url: /tr/java/document-manipulation/splitting-documents-into-html-pages/
 
 ## Aspose.Words for Java'da Belgeleri HTML Sayfalarına Bölmeye Giriş
 
-Bu adım adım kılavuzda, Aspose.Words for Java'yı kullanarak belgeleri HTML sayfalarına nasıl böleceğinizi inceleyeceğiz. Aspose.Words, Microsoft Word belgeleriyle çalışmak için güçlü bir Java API'sidir ve belgeleri HTML dahil çeşitli formatlara dönüştürme yeteneği de dahil olmak üzere belge işleme için kapsamlı özellikler sağlar.
+Bu adım adım kılavuzda, Aspose.Words for Java kullanarak belgeleri HTML sayfalarına nasıl böleceğinizi inceleyeceğiz. Aspose.Words, Microsoft Word belgeleriyle çalışmak için güçlü bir Java API'sidir ve belgeleri HTML de dahil olmak üzere çeşitli biçimlere dönüştürme yeteneği de dahil olmak üzere belge düzenleme için kapsamlı özellikler sağlar.
 
-## Önkoşullar
+## Ön koşullar
 
-Başlamadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
+Başlamadan önce aşağıdaki ön koşulların mevcut olduğundan emin olun:
 
 - Sisteminizde Java Geliştirme Kiti (JDK) yüklü.
--  Aspose.Words for Java kütüphanesi. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/java/).
+-  Aspose.Words for Java kütüphanesi. Buradan indirebilirsiniz[Burada](https://releases.aspose.com/words/java/).
 
 ## Adım 1: Gerekli Paketleri İçe Aktarın
 
@@ -27,17 +27,17 @@ import java.io.*;
 import java.util.ArrayList;
 ```
 
-## Adım 2: Word'den HTML'ye Dönüştürme için Bir Yöntem Oluşturun
+## Adım 2: Word'den HTML'e Dönüştürme Yöntemi Oluşturun
 
 ```java
 class WordToHtmlConverter
 {
-    // Word'den HTML'ye dönüştürme için uygulama ayrıntıları.
+    // Word'den HTML'e dönüştürme için uygulama detayları.
     // ...
 }
 ```
 
-## Adım 3: Konu Başlarken Başlık Paragraflarını Seçin
+## Adım 3: Konu Başlangıcı Olarak Başlık Paragraflarını Seçin
 
 ```java
 private ArrayList<Paragraph> selectTopicStarts()
@@ -54,7 +54,7 @@ private ArrayList<Paragraph> selectTopicStarts()
 }
 ```
 
-## Adım 4: Paragrafların Başlığından Önce Bölüm Sonlarını Ekleyin
+## Adım 4: Başlık Paragraflarından Önce Bölüm Sonlarını Ekleyin
 
 ```java
 private void insertSectionBreaks(ArrayList<Paragraph> topicStartParas)
@@ -73,7 +73,7 @@ private void insertSectionBreaks(ArrayList<Paragraph> topicStartParas)
 }
 ```
 
-## Adım 5: Belgeyi Konulara Bölün
+## Adım 5: Belgeyi Konulara Ayırın
 
 ```java
 private ArrayList<Topic> saveHtmlTopics() throws Exception
@@ -117,7 +117,7 @@ private void saveHtmlTopic(Section section, Topic topic) throws Exception
 }
 ```
 
-## Adım 7: Konular için Bir İçindekiler Tablosu Oluşturun
+## Adım 7: Konular için İçindekiler Tablosu Oluşturun
 
 ```java
 private void saveTableOfContents(ArrayList<Topic> topics) throws Exception
@@ -129,30 +129,30 @@ private void saveTableOfContents(ArrayList<Topic> topics) throws Exception
 }
 ```
 
-Artık adımları özetlediğimize göre, Aspose.Words for Java'yı kullanarak belgeleri HTML sayfalarına bölmek için Java projenizdeki her adımı uygulayabilirsiniz. Bu süreç, belgelerinizin yapılandırılmış bir HTML temsilini oluşturmanıza olanak tanıyarak onları daha erişilebilir ve kullanıcı dostu hale getirir.
+Artık adımları özetlediğimize göre, Aspose.Words for Java kullanarak belgeleri HTML sayfalarına bölmek için her adımı Java projenizde uygulayabilirsiniz. Bu süreç, belgelerinizin yapılandırılmış bir HTML gösterimini oluşturmanıza olanak tanır ve bunları daha erişilebilir ve kullanıcı dostu hale getirir.
 
 ## Çözüm
 
-Bu kapsamlı kılavuzda Aspose.Words for Java kullanarak belgeleri HTML sayfalarına bölme sürecini ele aldık. Belirtilen adımları izleyerek, Word belgelerini etkili bir şekilde HTML biçimine dönüştürebilir ve içeriğinizin web üzerinde daha erişilebilir olmasını sağlayabilirsiniz.
+Bu kapsamlı kılavuzda, Aspose.Words for Java kullanarak belgeleri HTML sayfalarına bölme sürecini ele aldık. Belirtilen adımları izleyerek, Word belgelerini HTML biçimine verimli bir şekilde dönüştürebilir ve içeriğinizi web'de daha erişilebilir hale getirebilirsiniz.
 
-## SSS'ler
+## SSS
 
-### Aspose.Words for Java'yı nasıl yüklerim?
+### Java için Aspose.Words'ü nasıl yüklerim?
 
- Aspose.Words for Java'yı yüklemek için kütüphaneyi şu adresten indirebilirsiniz:[Burada](https://releases.aspose.com/words/java/) ve belgelerde verilen kurulum talimatlarını izleyin.
+ Java için Aspose.Words'ü yüklemek için kütüphaneyi şu adresten indirebilirsiniz:[Burada](https://releases.aspose.com/words/java/) ve dokümanlarda verilen kurulum talimatlarını izleyin.
 
 ### HTML çıktısını özelleştirebilir miyim?
 
- Evet, kaydetme seçeneklerini ayarlayarak HTML çıktısını özelleştirebilirsiniz.`HtmlSaveOptions` sınıf. Bu, oluşturulan HTML dosyalarının biçimlendirmesini ve görünümünü kontrol etmenize olanak tanır.
+ Evet, HTML çıktısını, kaydetme seçeneklerini ayarlayarak özelleştirebilirsiniz.`HtmlSaveOptions` sınıf. Bu, oluşturulan HTML dosyalarının biçimlendirmesini ve görünümünü kontrol etmenizi sağlar.
 
-### Aspose.Words for Java Microsoft Word'ün hangi sürümlerini destekliyor?
+### Aspose.Words for Java hangi Microsoft Word sürümlerini destekliyor?
 
-Aspose.Words for Java, DOC, DOCX, RTF ve daha fazlasını içeren çok çeşitli Microsoft Word belge formatlarını destekler. Microsoft Word'ün çeşitli sürümleriyle uyumludur.
+Aspose.Words for Java, DOC, DOCX, RTF ve daha fazlası dahil olmak üzere çok çeşitli Microsoft Word belge formatlarını destekler. Microsoft Word'ün çeşitli sürümleriyle uyumludur.
 
 ### Dönüştürülen HTML'deki görselleri nasıl işleyebilirim?
 
-Aspose.Words for Java, dönüştürülen HTML'deki görüntüleri, HTML dosyasıyla aynı klasörde ayrı dosyalar olarak kaydederek işleyebilir. Bu, görüntülerin HTML çıktısında doğru şekilde görüntülenmesini sağlar.
+Java için Aspose.Words, dönüştürülen HTML'deki resimleri, HTML dosyasıyla aynı klasörde ayrı dosyalar olarak kaydederek işleyebilir. Bu, resimlerin HTML çıktısında doğru şekilde görüntülenmesini sağlar.
 
 ### Aspose.Words for Java'nın deneme sürümü mevcut mu?
 
-Evet, bir lisans satın almadan önce özelliklerini ve yeteneklerini değerlendirmek için Aspose web sitesinden Aspose.Words for Java'nın ücretsiz deneme sürümünü talep edebilirsiniz.
+Evet, lisans satın almadan önce Aspose.Words for Java'nın özelliklerini ve yeteneklerini değerlendirmek için Aspose web sitesinden Aspose.Words for Java'nın ücretsiz deneme sürümünü talep edebilirsiniz.

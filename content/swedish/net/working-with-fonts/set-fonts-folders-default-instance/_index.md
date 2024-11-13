@@ -88,7 +88,7 @@ Aspose.Words stöder olika format inklusive DOCX, PDF, HTML, EPUB och mer.
 Nej, Aspose.Words stöder för närvarande endast lokala teckensnittsfiler.
 
 ### Hur kan jag säkerställa att mina anpassade teckensnitt är inbäddade i den sparade PDF-filen?
- Genom att ställa in`FontSettings` korrekt och för att se till att typsnitten är tillgängliga, kommer Aspose.Words att bädda in dem i PDF-utdata.
+ Genom att ställa in`FontSettings` korrekt och se till att typsnitten är tillgängliga, kommer Aspose.Words att bädda in dem i PDF-utdata.
 
 ### Vad händer om ett teckensnitt inte hittas i den angivna mappen?
 Aspose.Words kommer att använda ett reservteckensnitt om det angivna teckensnittet inte hittas.

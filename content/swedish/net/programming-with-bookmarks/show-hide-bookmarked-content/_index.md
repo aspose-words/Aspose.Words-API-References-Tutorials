@@ -60,7 +60,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
- Detta kodavsnitt anger sökvägen till din dokumentkatalog och laddar dokumentet i`doc` objekt.
+ Det här kodavsnittet anger sökvägen till din dokumentkatalog och laddar dokumentet i`doc` objekt.
 
 ## Steg 3: Visa/dölj bokmärkt innehåll
 

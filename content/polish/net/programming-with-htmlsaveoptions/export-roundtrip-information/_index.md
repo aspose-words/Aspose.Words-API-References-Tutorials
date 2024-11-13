@@ -1,39 +1,39 @@
 ---
-title: Eksportuj informacje o podróży w obie strony
-linktitle: Eksportuj informacje o podróży w obie strony
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak eksportować informacje o podróży w obie strony za pomocą Aspose.Words dla .NET. Zachowaj integralność i formatowanie dokumentu podczas konwersji.
+title: Informacje o eksporcie w obie strony
+linktitle: Informacje o eksporcie w obie strony
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak eksportować informacje o obiegu zamkniętym za pomocą Aspose.Words dla .NET. Zachowaj integralność i formatowanie dokumentu podczas konwersji.
 type: docs
 weight: 10
 url: /pl/net/programming-with-htmlsaveoptions/export-roundtrip-information/
 ---
 ## Wstęp
 
-Witamy w cudownym świecie Aspose.Words dla .NET! Dzisiaj zagłębiamy się w fajną funkcję, która może zaoszczędzić mnóstwo czasu i wysiłku: eksportowanie informacji o podróży w obie strony. Wyobraź sobie, że konwertujesz dokument programu Word do formatu HTML i odwrotnie, bez utraty kluczowych danych i formatowania. Brzmi jak sen, prawda? Cóż, jest to całkowicie możliwe dzięki Aspose.Words. Zapnij pasy i rozpocznijmy tę ekscytującą podróż!
+Witamy w cudownym świecie Aspose.Words dla .NET! Dzisiaj zagłębimy się w przydatną funkcję, która może zaoszczędzić mnóstwo czasu i wysiłku: eksportowanie informacji w obie strony. Wyobraź sobie, że konwertujesz dokument Word na HTML i z powrotem, nie tracąc żadnych ważnych danych ani formatowania. Brzmi jak marzenie, prawda? Cóż, jest to całkowicie możliwe dzięki Aspose.Words. Zapnij pasy i ruszajmy w tę ekscytującą podróż!
 
-## Warunki wstępne
+## Wymagania wstępne
 
 Zanim przejdziemy do konkretów, upewnijmy się, że mamy wszystko, czego potrzebujemy:
 
-1.  Aspose.Words dla .NET: Upewnij się, że masz najnowszą wersję.[Pobierz go tutaj](https://releases.aspose.com/words/net/).
-2. Środowisko programistyczne: Visual Studio lub dowolne inne IDE zgodne z C#.
-3. Podstawowa znajomość języka C#: Pomocna jest znajomość języka C# i platformy .NET.
-4. Licencja: Możesz użyć licencji tymczasowej, jeśli nie posiadasz pełnej. Dostać za swoje[Tutaj](https://purchase.aspose.com/temporary-license/).
+1.  Aspose.Words dla .NET: Upewnij się, że masz najnowszą wersję.[Pobierz tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: Visual Studio lub inne środowisko IDE zgodne z językiem C#.
+3. Podstawowa znajomość języka C#: Przydatna jest pewna znajomość języka C# i platformy .NET.
+4. Licencja: Możesz użyć tymczasowej licencji, jeśli nie masz pełnej. Pobierz ją[Tutaj](https://purchase.aspose.com/temporary-license/).
 
 ## Importuj przestrzenie nazw
 
-Po pierwsze, musimy zaimportować niezbędne przestrzenie nazw, aby rozpocząć pracę z Aspose.Words dla .NET.
+Przede wszystkim musimy zaimportować niezbędne przestrzenie nazw, aby rozpocząć pracę z Aspose.Words dla platformy .NET.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Podzielmy teraz proces na łatwe do wykonania etapy. Każdemu krokowi będą towarzyszyć szczegółowe wyjaśnienia, dzięki którym nie przegapisz żadnego rytmu.
+Teraz podzielmy proces na łatwe do opanowania kroki. Każdy krok będzie opatrzony szczegółowymi wyjaśnieniami, aby mieć pewność, że niczego nie przegapisz.
 
 ## Krok 1: Skonfiguruj katalog dokumentów
 
-Najpierw musisz ustawić ścieżkę do katalogu dokumentów. Tutaj jest przechowywany dokument programu Word i plik HTML.
+Najpierw musisz ustawić ścieżkę do katalogu dokumentów. To jest miejsce, w którym przechowywany jest dokument Word i gdzie zostanie zapisany plik HTML.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Krok 2: Załaduj dokument Word
 
-Następnie załaduj dokument Word, który chcesz przekonwertować. W tym samouczku będziemy używać dokumentu o nazwie „Rendering.docx”.
+Następnie załaduj dokument Word, który chcesz przekonwertować. W tym samouczku użyjemy dokumentu o nazwie „Rendering.docx”.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -49,7 +49,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Krok 3: Skonfiguruj opcje zapisywania HTML
 
-Teraz właśnie tutaj dzieje się magia. Musimy skonfigurować opcje zapisywania HTML, w szczególności włączając właściwość ExportRoundtripInformation. Dzięki temu podczas konwersji zostaną zachowane wszystkie informacje dotyczące podróży w obie strony.
+Teraz, tutaj dzieje się magia. Musimy skonfigurować opcje zapisu HTML, konkretnie włączając właściwość ExportRoundtripInformation. Gwarantuje to, że wszystkie informacje o roundtrip zostaną zachowane podczas konwersji.
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportRoundtripInformation = true };
@@ -57,7 +57,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportRoundtripInformation =
 
 ## Krok 4: Zapisz dokument jako HTML
 
-Na koniec zapisz dokument jako plik HTML, korzystając ze skonfigurowanych opcji zapisywania. Ten krok gwarantuje, że dokument zachowa całe swoje formatowanie i dane po konwersji do formatu HTML i z powrotem do programu Word.
+Na koniec zapisz dokument jako plik HTML, używając skonfigurowanych opcji zapisywania. Ten krok zapewnia, że dokument zachowa całe swoje formatowanie i dane po konwersji do HTML i z powrotem do Worda.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportRoundtripInformation.html", saveOptions);
@@ -65,21 +65,21 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportRoundtripInformation.html",
 
 ## Wniosek
 
-I masz to! Za pomocą zaledwie kilku linii kodu udało Ci się wyeksportować informacje w obie strony z dokumentu programu Word do formatu HTML przy użyciu Aspose.Words dla .NET. Ta zaawansowana funkcja gwarantuje, że dokumenty zachowają integralność i formatowanie podczas konwersji, co znacznie ułatwi Ci życie.
+I masz to! Za pomocą zaledwie kilku linijek kodu udało Ci się wyeksportować informacje o obiegu zamkniętym z dokumentu Word do HTML przy użyciu Aspose.Words dla .NET. Ta potężna funkcja zapewnia, że Twoje dokumenty zachowują integralność i formatowanie podczas konwersji, co znacznie ułatwia Ci życie.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Co to są informacje o podróży w obie strony w Aspose.Words?
-Informacje w obie strony odnoszą się do danych zapewniających integralność i formatowanie dokumentu podczas jego konwersji z jednego formatu na inny i z powrotem.
+### Czym są informacje o podróży w obie strony w Aspose.Words?
+Informacje w obie strony odnoszą się do danych, które zapewniają integralność i formatowanie dokumentu podczas konwersji z jednego formatu na drugi i z powrotem.
 
 ### Czy mogę używać Aspose.Words dla .NET bez licencji?
 Tak, możesz go używać z licencją tymczasową, którą możesz uzyskać[Tutaj](https://purchase.aspose.com/temporary-license/).
 
-### Gdzie mogę znaleźć najnowszą wersję Aspose.Words dla .NET?
+### Gdzie mogę znaleźć najnowszą wersję Aspose.Words dla platformy .NET?
  Możesz pobrać najnowszą wersję[Tutaj](https://releases.aspose.com/words/net/).
 
-### Jak uzyskać wsparcie dla Aspose.Words dla .NET?
+### Jak uzyskać pomoc techniczną dotyczącą Aspose.Words dla platformy .NET?
  Możesz uzyskać wsparcie od społeczności Aspose[Tutaj](https://forum.aspose.com/c/words/8).
 
-### Czy można zachować formatowanie podczas konwersji dokumentów programu Word na HTML?
-Tak, używając właściwości ExportRoundtripInformation w HtmlSaveOptions, możesz zachować całe formatowanie podczas konwersji.
+### Czy można zachować formatowanie podczas konwersji dokumentów Word na HTML?
+Tak, korzystając z właściwości ExportRoundtripInformation w HtmlSaveOptions, można zachować całe formatowanie podczas konwersji.

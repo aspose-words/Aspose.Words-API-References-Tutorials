@@ -27,7 +27,7 @@ Låt oss börja med att skapa ett Word-dokument som vi senare kommer att konvert
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Infoga en tabell med två celler
+//Infoga en tabell med två celler
 builder.insertCell();
 builder.getParagraphFormat().setAlignment(ParagraphAlignment.RIGHT);
 builder.write("Cell1");
@@ -62,7 +62,7 @@ doc.save("right_alignment.md", saveOptions);
 saveOptions.setTableContentAlignment(TableContentAlignment.CENTER);
 doc.save("center_alignment.md", saveOptions);
 
-//Ställ in justering av tabellinnehåll till auto (bestäms av första stycket)
+// Ställ in justering av tabellinnehåll till auto (bestäms av första stycket)
 saveOptions.setTableContentAlignment(TableContentAlignment.AUTO);
 doc.save("auto_alignment.md", saveOptions);
 ```
@@ -71,7 +71,7 @@ doc.save("auto_alignment.md", saveOptions);
 
 ## Steg 3: Hantera bilder
 
- För att inkludera bilder i ditt Markdown-dokument måste du ange mappen där bilderna finns. Aspose.Words för Java låter dig ställa in bildmappen i`MarkdownSaveOptions`.
+För att inkludera bilder i ditt Markdown-dokument måste du ange mappen där bilderna finns. Aspose.Words för Java låter dig ställa in bildmappen i`MarkdownSaveOptions`.
 
 Så här ställer du in bildmappen och sparar dokumentet med bilder:
 

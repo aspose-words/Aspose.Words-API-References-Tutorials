@@ -68,10 +68,8 @@ builder.InsertHyperlink("Contact Support", "mailto:support@aspose.com", false);
 Hyperlänkar kan anpassas för att passa stilen på ditt dokument. Du kan ändra teckensnittets färg, storlek och andra attribut med hjälp av`Font` egendom för DocumentBuilder.
 
 ```csharp
-// Anpassa hyperlänkens utseende.
-builder.Font.Color = System.Drawing.Color.Blue;
-builder.Font.Underline = Underline.Single;
-builder.InsertHyperlink("Styled Link", "https://www.aspose.com", false);
+builder.Font.Style = doc.Styles[StyleIdentifier.Hyperlink];
+builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", false);
 ```
 
 Detta utdrag kommer att infoga en blå, understruken hyperlänk, vilket gör att den sticker ut i ditt dokument.
@@ -89,7 +87,7 @@ Ja, du kan infoga hyperlänkar till andra dokument genom att ange filsökvägen 
  Du kan ta bort en hyperlänk genom att använda`Remove` metod på hyperlänknoden.
 
 ### Kan jag lägga till verktygstips till hyperlänkar?
-Ja, du kan lägga till verktygstips genom att ställa in`ScreenTip` egenskapen för hyperlänken.
+ Ja, du kan lägga till verktygstips genom att ställa in`ScreenTip`egenskapen för hyperlänken.
 
 ### Är det möjligt att utforma hyperlänkar olika i hela dokumentet?
  Ja, du kan utforma hyperlänkar annorlunda genom att ställa in`Font` egenskaper innan du infogar varje hyperlänk.

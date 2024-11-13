@@ -1,57 +1,57 @@
 ---
-title: Belgelerdeki Dijital İmzalar
-linktitle: Belgelerdeki Dijital İmzalar
+title: Belgelerde Dijital İmzalar
+linktitle: Belgelerde Dijital İmzalar
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Aspose.Words for Java kullanarak belgelere güvenli dijital imzaların nasıl uygulanacağını öğrenin. Adım adım rehberlik ve kaynak koduyla belge bütünlüğünü sağlayın
+description: Aspose.Words for Java kullanarak belgelerde güvenli dijital imzaların nasıl uygulanacağını öğrenin. Adım adım kılavuz ve kaynak koduyla belge bütünlüğünü sağlayın
 type: docs
 weight: 13
 url: /tr/java/document-security/digital-signatures-in-documents/
 ---
 
-Dijital imzalar, dijital belgelerin orijinalliğini ve bütünlüğünü sağlamada çok önemli bir rol oynamaktadır. Bir belgenin tahrif edilmediğini ve gerçekten de belirtilen imza sahibi tarafından oluşturulduğunu veya onaylandığını doğrulamanın bir yolunu sağlarlar. Bu adım adım kılavuzda Aspose.Words for Java kullanarak belgelere dijital imzaların nasıl uygulanacağını inceleyeceğiz. Ortamın kurulumundan belgelerinize dijital imzaların eklenmesine kadar her şeyi ele alacağız. Hadi başlayalım!
+Dijital imzalar, dijital belgelerin gerçekliğini ve bütünlüğünü sağlamada önemli bir rol oynar. Bir belgenin tahrif edilmediğini ve gerçekten belirtilen imzalayan tarafından oluşturulduğunu veya onaylandığını doğrulamanın bir yolunu sağlarlar. Bu adım adım kılavuzda, Aspose.Words for Java kullanarak belgelerde dijital imzaların nasıl uygulanacağını inceleyeceğiz. Ortamı kurmaktan belgelerinize dijital imzalar eklemeye kadar her şeyi ele alacağız. Başlayalım!
 
-## Önkoşullar
+## Ön koşullar
 
-Uygulamaya geçmeden önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
+Uygulamaya geçmeden önce aşağıdaki ön koşulların mevcut olduğundan emin olun:
 
--  Aspose.Words for Java: Aspose.Words for Java'yı şu adresten indirip yükleyin:[Burada](https://releases.aspose.com/words/java/).
+-  Aspose.Words for Java: Aspose.Words for Java'yı indirin ve yükleyin[Burada](https://releases.aspose.com/words/java/).
 
 ## Projenizi Kurma
 
 1. Tercih ettiğiniz Entegre Geliştirme Ortamında (IDE) yeni bir Java projesi oluşturun.
 
-2. JAR dosyasını sınıf yolunuza ekleyerek Aspose.Words for Java kütüphanesini projenize ekleyin.
+2. Sınıf yolunuza JAR dosyasını ekleyerek Aspose.Words for Java kütüphanesini projenize ekleyin.
 
 ## Dijital İmza Ekleme
 
-Şimdi bir belgeye dijital imza eklemeye devam edelim:
+Şimdi bir belgeye dijital imza eklemeye geçelim:
 
 ```java
-// Aspose.Words'ü başlat
+// Aspose.Words'ü Başlat
 com.aspose.words.Document doc = new com.aspose.words.Document("your_document.docx");
 
-// DigitalSignature nesnesi oluşturma
+// Bir DigitalSignature nesnesi oluşturun
 com.aspose.words.digitalSignatures.DigitalSignature digitalSignature = new com.aspose.words.digitalSignatures.DigitalSignature();
 
 // Sertifika yolunu ayarlayın
 digitalSignature.setCertificateFile("your_certificate.pfx");
 
-//Sertifikanın şifresini ayarlayın
+//Sertifika için parolayı ayarlayın
 digitalSignature.setPassword("your_password");
 
-// Belgeyi imzalayın
+// Belgeyi imzala
 doc.getDigitalSignatures().add(digitalSignature);
 
 // Belgeyi kaydet
 doc.save("signed_document.docx");
 ```
 
-## Dijital İmzayı Doğrulama
+## Dijital İmzanın Doğrulanması
 
 Bir belgedeki dijital imzayı doğrulamak için şu adımları izleyin:
 
 ```java
-// İmzalı belgeyi yükleyin
+// İmzalanmış belgeyi yükleyin
 com.aspose.words.Document signedDoc = new com.aspose.words.Document("signed_document.docx");
 
 // Belgenin dijital olarak imzalanıp imzalanmadığını kontrol edin
@@ -71,7 +71,7 @@ if (signedDoc.getDigitalSignatures().getCount() > 0) {
 
 ## Çözüm
 
-Bu kılavuzda Aspose.Words for Java kullanarak belgelere dijital imzaların nasıl uygulanacağını öğrendik. Bu, dijital belgelerinizin orijinalliğini ve bütünlüğünü sağlamada çok önemli bir adımdır. Burada özetlenen adımları izleyerek Java uygulamalarınıza güvenle dijital imza ekleyebilir ve doğrulayabilirsiniz.
+Bu kılavuzda, Aspose.Words for Java kullanarak belgelerde dijital imzaların nasıl uygulanacağını öğrendik. Bu, dijital belgelerinizin gerçekliğini ve bütünlüğünü sağlamada önemli bir adımdır. Burada özetlenen adımları izleyerek, Java uygulamalarınızda dijital imzaları güvenle ekleyebilir ve doğrulayabilirsiniz.
 
 ## SSS
 
@@ -79,18 +79,18 @@ Bu kılavuzda Aspose.Words for Java kullanarak belgelere dijital imzaların nas�
 
 Dijital imza, dijital bir belgenin veya mesajın gerçekliğini ve bütünlüğünü doğrulayan bir şifreleme tekniğidir.
 
-### Dijital imzalar için kendinden imzalı bir sertifika kullanabilir miyim?
+### Dijital imzalar için kendinden imzalı sertifika kullanabilir miyim?
 
-Evet, kendinden imzalı bir sertifika kullanabilirsiniz ancak bu, güvenilir bir Sertifika Yetkilisinden (CA) alınan sertifikayla aynı düzeyde güven sağlamayabilir.
+Evet, kendi kendine imzalanmış bir sertifika kullanabilirsiniz, ancak bu sertifika güvenilir bir Sertifika Yetkilisinden (CA) alınan sertifika ile aynı düzeyde güven sağlamayabilir.
 
-### Aspose.Words for Java diğer belge formatlarıyla uyumlu mu?
+### Aspose.Words for Java diğer belge formatlarıyla uyumlu mudur?
 
-Evet, Aspose.Words for Java, DOCX, PDF, HTML ve daha fazlası dahil olmak üzere çeşitli belge formatlarını destekler.
+Evet, Aspose.Words for Java, DOCX, PDF, HTML ve daha fazlası dahil olmak üzere çeşitli belge biçimlerini destekler.
 
-### Belgeleri imzalamak için nasıl dijital sertifika alabilirim?
+### Belgeleri imzalamak için dijital sertifikayı nasıl alabilirim?
 
-Güvenilir bir Sertifika Yetkilisinden (CA) dijital bir sertifika alabilir veya OpenSSL gibi araçları kullanarak kendinden imzalı bir sertifika oluşturabilirsiniz.
+Güvenilir bir Sertifika Yetkilisinden (CA) dijital sertifika alabilir veya OpenSSL gibi araçları kullanarak kendi kendinize imzalı bir sertifika oluşturabilirsiniz.
 
-### Dijital imzalar yasal olarak bağlayıcı mıdır?
+### Dijital imzalar hukuken bağlayıcı mıdır?
 
-Birçok yargı bölgesinde dijital imzalar yasal olarak bağlayıcıdır ve elle atılan imzalarla aynı ağırlığa sahiptir. Ancak bölgenizdeki belirli yasal gereksinimler için hukuk uzmanlarına danışmanız önemlidir.
+Birçok yargı alanında, dijital imzalar yasal olarak bağlayıcıdır ve el yazısıyla atılan imzalarla aynı ağırlığa sahiptir. Ancak, bölgenizdeki belirli yasal gereklilikler için hukuk uzmanlarına danışmanız önemlidir.

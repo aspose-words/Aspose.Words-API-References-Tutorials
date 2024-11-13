@@ -1,41 +1,41 @@
 ---
 title: Zaakceptuj poprawki
 linktitle: Zaakceptuj poprawki
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Wersje dokumentów głównych za pomocą Aspose.Words dla .NET. Naucz się bez wysiłku śledzić, akceptować i odrzucać zmiany. Zwiększ swoje umiejętności zarządzania dokumentami.
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Opanuj rewizje dokumentów dzięki Aspose.Words dla .NET. Naucz się śledzić, akceptować i odrzucać zmiany bez wysiłku. Popraw swoje umiejętności zarządzania dokumentami.
 type: docs
 weight: 10
 url: /pl/net/working-with-revisions/accept-revisions/
 ---
 ## Wstęp
 
-Czy kiedykolwiek znalazłeś się w labiryncie poprawek dokumentów, starając się śledzić każdą zmianę dokonaną przez wielu autorów? Dzięki Aspose.Words dla .NET zarządzanie wersjami w dokumentach Word staje się proste. Ta potężna biblioteka umożliwia programistom łatwe śledzenie, akceptowanie i odrzucanie zmian, zapewniając porządek i aktualność dokumentów. W tym samouczku zagłębimy się w krok po kroku proces obsługi wersji dokumentów przy użyciu Aspose.Words dla .NET, od inicjalizacji dokumentu po zaakceptowanie wszystkich zmian.
+Czy kiedykolwiek znalazłeś się w labiryncie rewizji dokumentów, zmagając się ze śledzeniem każdej zmiany wprowadzonej przez wielu współpracowników? Dzięki Aspose.Words dla .NET zarządzanie rewizjami w dokumentach Word staje się dziecinnie proste. Ta potężna biblioteka pozwala deweloperom śledzić, akceptować i odrzucać zmiany bez wysiłku, zapewniając, że Twoje dokumenty pozostają uporządkowane i aktualne. W tym samouczku zagłębimy się w proces obsługi rewizji dokumentów za pomocą Aspose.Words dla .NET krok po kroku, od zainicjowania dokumentu do zaakceptowania wszystkich zmian.
 
-## Warunki wstępne
+## Wymagania wstępne
 
 Zanim zaczniemy, upewnij się, że spełnione są następujące wymagania wstępne:
 
-- Program Visual Studio zainstalowany na Twoim komputerze.
-- Framework .NET (najlepiej najnowsza wersja).
--  Aspose.Words dla biblioteki .NET. Możesz go pobrać[Tutaj](https://releases.aspose.com/words/net/).
+- Na Twoim komputerze zainstalowano program Visual Studio.
+- .NET Framework (najlepiej najnowsza wersja).
+-  Biblioteka Aspose.Words dla .NET. Możesz ją pobrać[Tutaj](https://releases.aspose.com/words/net/).
 - Podstawowa znajomość programowania w języku C#.
 
-Przejdźmy teraz do szczegółów i zobaczmy, jak możemy opanować rewizje dokumentów za pomocą Aspose.Words dla .NET.
+Przejdźmy teraz do szczegółów i zobaczmy, jak można opanować wprowadzanie zmian w dokumentach za pomocą Aspose.Words dla platformy .NET.
 
 ## Importuj przestrzenie nazw
 
-Po pierwsze, musisz zaimportować niezbędne przestrzenie nazw, aby móc pracować z Aspose.Words. Dodaj następujące dyrektywy using na górze pliku kodu:
+Po pierwsze, musisz zaimportować niezbędne przestrzenie nazw, aby pracować z Aspose.Words. Dodaj następujące dyrektywy using na górze pliku kodu:
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Revision;
 ```
 
-Podzielmy proces na łatwe do wykonania etapy. Każdy krok zostanie szczegółowo wyjaśniony, aby upewnić się, że rozumiesz każdą część kodu.
+Podzielmy proces na łatwe do opanowania kroki. Każdy krok zostanie szczegółowo wyjaśniony, aby upewnić się, że rozumiesz każdą część kodu.
 
 ## Krok 1: Zainicjuj dokument
 
-Na początek musimy utworzyć nowy dokument i dodać kilka akapitów. To przygotuje grunt pod śledzenie poprawek.
+Na początek musimy utworzyć nowy dokument i dodać kilka akapitów. To przygotuje grunt pod śledzenie rewizji.
 
 ```csharp
 // Ścieżka do katalogu dokumentów.
@@ -50,66 +50,66 @@ body.AppendParagraph("Paragraph 2. ");
 body.AppendParagraph("Paragraph 3. ");
 ```
 
-Na tym etapie utworzyliśmy nowy dokument i dodaliśmy do niego trzy akapity. Akapity te posłużą jako punkt odniesienia dla naszego śledzenia wersji.
+W tym kroku utworzyliśmy nowy dokument i dodaliśmy do niego trzy akapity. Te akapity będą służyć jako punkt odniesienia dla naszego śledzenia rewizji.
 
 ## Krok 2: Rozpocznij śledzenie wersji
 
-Następnie musimy włączyć śledzenie wersji. Dzięki temu możemy uchwycić wszelkie zmiany wprowadzone w dokumencie.
+Następnie musimy włączyć śledzenie rewizji. Pozwala nam to na przechwycenie wszelkich zmian wprowadzonych do dokumentu.
 
 ```csharp
-// Rozpocznij śledzenie wersji.
+// Rozpocznij śledzenie rewizji.
 doc.StartTrackRevisions("John Doe", DateTime.Now);
 ```
 
- Dzwoniąc`StartTrackRevisions`, umożliwiamy dokumentowi śledzenie wszystkich kolejnych zmian. Jako parametry przekazywane są imię autora i bieżąca data.
+ Dzwoniąc`StartTrackRevisions`, umożliwiamy dokumentowi śledzenie wszystkich kolejnych zmian. Imię i nazwisko autora oraz bieżąca data są przekazywane jako parametry.
 
 ## Krok 3: Dodaj wersję
 
-Teraz, gdy włączone jest śledzenie wersji, dodajmy nowy akapit. Dodatek ten zostanie oznaczony jako wersja.
+Teraz, gdy śledzenie rewizji jest włączone, dodajmy nowy akapit. Ten dodatek zostanie oznaczony jako rewizja.
 
 ```csharp
-// Ten akapit jest wersją i będzie miał ustawioną odpowiednią flagę „IsInsertRevision”.
+// Ten akapit jest wersją poprawioną i będzie miał ustawioną odpowiednią flagę „IsInsertRevision”.
 para = body.AppendParagraph("Paragraph 4. ");
 ```
 
-W tym miejscu dodaje się nowy akapit („Ustęp 4”). Ponieważ włączone jest śledzenie wersji, ten akapit jest oznaczony jako wersja.
+Tutaj dodano nowy akapit („Akapit 4.”). Ponieważ śledzenie rewizji jest włączone, ten akapit jest oznaczony jako rewizja.
 
 ## Krok 4: Usuń akapit
 
-Następnie usuniemy istniejący akapit i zobaczymy, jak śledzona jest wersja.
+Następnie usuniemy istniejący akapit i przyjrzymy się, jak śledzona jest poprawka.
 
 ```csharp
-// Pobierz zbiór akapitów dokumentu i usuń akapit.
+// Pobierz kolekcję akapitów dokumentu i usuń akapit.
 ParagraphCollection paragraphs = body.Paragraphs;
 para = paragraphs[2];
 para.Remove();
 ```
 
-Na tym etapie usuwa się trzeci akapit. Ze względu na śledzenie wersji usunięcie to jest rejestrowane, a akapit oznaczany do usunięcia, a nie natychmiastowy usuwany z dokumentu.
+W tym kroku trzeci akapit jest usuwany. Ze względu na śledzenie rewizji, to usunięcie jest rejestrowane, a akapit jest oznaczany do usunięcia, zamiast być natychmiast usuwanym z dokumentu.
 
 ## Krok 5: Zaakceptuj wszystkie poprawki
 
-Na koniec zaakceptujmy wszystkie prześledzone wersje, utrwalając zmiany w dokumencie.
+Na koniec zaakceptujmy wszystkie śledzone zmiany, utrwalając w ten sposób zmiany w dokumencie.
 
 ```csharp
 // Zaakceptuj wszystkie poprawki.
 doc.AcceptAllRevisions();
 ```
 
- Dzwoniąc`AcceptAllRevisions`, zapewniamy, że wszystkie zmiany (dodatki i skreślenia) zostały zaakceptowane i zastosowane w dokumencie. Zmiany nie są już oznaczane i są zintegrowane z dokumentem.
+ Dzwoniąc`AcceptAllRevisions`, zapewniamy, że wszystkie zmiany (dodatki i usunięcia) są akceptowane i stosowane w dokumencie. Poprawki nie są już oznaczane i są zintegrowane z dokumentem.
 
 ## Krok 6: Zatrzymaj śledzenie wersji
 
-### Wyłącz śledzenie wersji
+### Wyłącz śledzenie rewizji
 
-Podsumowując, możemy wyłączyć śledzenie wersji, aby zatrzymać rejestrowanie dalszych zmian.
+Podsumowując, możemy wyłączyć śledzenie rewizji, aby zatrzymać rejestrowanie dalszych zmian.
 
 ```csharp
-// Przestań śledzić wersje.
+// Przestań śledzić rewizje.
 doc.StopTrackRevisions();
 ```
 
-Ten krok powoduje, że dokument nie będzie śledził żadnych nowych zmian, a wszystkie kolejne edycje będą traktowane jak zwykła treść.
+Ten krok zapobiega śledzeniu przez dokument nowych zmian, a wszystkie kolejne edycje są traktowane jako zwykła treść.
 
 ## Krok 7: Zapisz dokument
 
@@ -120,30 +120,30 @@ Na koniec zapisz zmodyfikowany dokument w określonym katalogu.
 doc.Save(dataDir + "WorkingWithRevisions.AcceptRevisions.docx");
 ```
 
-Zapisując dokument, mamy pewność, że wszystkie nasze zmiany i zaakceptowane poprawki zostaną zachowane.
+Zapisując dokument, mamy pewność, że wszystkie wprowadzone przez nas zmiany i zaakceptowane poprawki zostaną zachowane.
 
 ## Wniosek
 
-Zarządzanie wersjami dokumentów może być trudnym zadaniem, ale dzięki Aspose.Words dla .NET staje się to proste i wydajne. Wykonując czynności opisane w tym przewodniku, możesz łatwo śledzić, akceptować i odrzucać zmiany w dokumentach programu Word, zapewniając, że dokumenty będą zawsze aktualne i dokładne. Więc po co czekać? Już dziś zanurz się w świat Aspose.Words i usprawnij zarządzanie dokumentami!
+Zarządzanie rewizjami dokumentów może być trudnym zadaniem, ale dzięki Aspose.Words dla .NET staje się ono proste i wydajne. Postępując zgodnie z krokami opisanymi w tym przewodniku, możesz łatwo śledzić, akceptować i odrzucać zmiany w dokumentach Word, zapewniając, że Twoje dokumenty są zawsze aktualne i dokładne. Więc po co czekać? Zanurz się w świecie Aspose.Words i usprawnij zarządzanie dokumentami już dziś!
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Jak rozpocząć śledzenie wersji w Aspose.Words dla .NET?
+### Jak rozpocząć śledzenie wersji w Aspose.Words dla platformy .NET?
 
- Możesz rozpocząć śledzenie wersji, dzwoniąc pod numer`StartTrackRevisions` metodę na obiekcie dokumentu i przekazując nazwisko autora i bieżącą datę.
+ Możesz rozpocząć śledzenie rewizji, dzwoniąc pod numer`StartTrackRevisions` metodę na obiekcie dokumentu i przekazując imię i nazwisko autora oraz bieżącą datę.
 
-### Czy mogę w dowolnym momencie przerwać śledzenie wersji?
+### Czy mogę w dowolnym momencie przestać śledzić wersje?
 
-Tak, możesz zatrzymać śledzenie wersji, dzwoniąc pod numer`StopTrackRevisions` metodę na obiekcie dokumentu.
+Tak, możesz zatrzymać śledzenie rewizji, dzwoniąc pod numer`StopTrackRevisions` metodę na obiekcie dokumentu.
 
-### Jak zaakceptować wszystkie poprawki w dokumencie?
+### Jak zaakceptować wszystkie zmiany w dokumencie?
 
- Aby zaakceptować wszystkie wersje, użyj opcji`AcceptAllRevisions` metodę na obiekcie dokumentu.
+ Aby zaakceptować wszystkie poprawki, użyj`AcceptAllRevisions` metodę na obiekcie dokumentu.
 
-### Czy mogę odrzucić określone poprawki?
+### Czy mogę odrzucić konkretne poprawki?
 
- Tak, możesz odrzucić określone wersje, przechodząc do nich i używając przycisku`Reject` metoda.
+ Tak, możesz odrzucić konkretne poprawki, przechodząc do nich i używając`Reject` metoda.
 
 ### Gdzie mogę pobrać Aspose.Words dla .NET?
 
- Możesz pobrać Aspose.Words dla .NET z[link do pobrania](https://releases.aspose.com/words/net/).
+ Aspose.Words dla .NET można pobrać ze strony[link do pobrania](https://releases.aspose.com/words/net/).

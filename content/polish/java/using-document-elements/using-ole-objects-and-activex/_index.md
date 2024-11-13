@@ -1,25 +1,25 @@
 ---
-title: Używanie obiektów OLE i kontrolek ActiveX w Aspose.Words dla Java
+title: Korzystanie z obiektów OLE i kontrolek ActiveX w Aspose.Words dla Java
 linktitle: Korzystanie z obiektów OLE i kontrolek ActiveX
 second_title: Aspose.Words API przetwarzania dokumentów Java
-description: Naucz się korzystać z obiektów OLE i kontrolek ActiveX w Aspose.Words dla Java. Z łatwością twórz interaktywne dokumenty. Zacznij już teraz!
+description: Naucz się używać obiektów OLE i kontrolek ActiveX w Aspose.Words dla Java. Twórz interaktywne dokumenty z łatwością. Zacznij teraz!
 type: docs
 weight: 21
 url: /pl/java/using-document-elements/using-ole-objects-and-activex/
 ---
-tym samouczku odkryjemy, jak pracować z obiektami OLE (łączenie i osadzanie obiektów) i kontrolkami ActiveX w Aspose.Words dla Java. Obiekty OLE i kontrolki ActiveX to potężne narzędzia umożliwiające ulepszanie dokumentów poprzez osadzanie lub łączenie zawartości zewnętrznej, takiej jak arkusze kalkulacyjne, pliki multimedialne lub interaktywne kontrolki. Obserwuj, jak zagłębimy się w przykłady kodu i dowiemy się, jak efektywnie korzystać z tych funkcji.
+W tym samouczku pokażemy, jak pracować z obiektami OLE (Object Linking and Embedding) i kontrolkami ActiveX w Aspose.Words for Java. Obiekty OLE i kontrolki ActiveX to potężne narzędzia, które pozwalają na ulepszanie dokumentów poprzez osadzanie lub łączenie zewnętrznej zawartości, takiej jak arkusze kalkulacyjne, pliki multimedialne lub kontrolki interaktywne. Śledź, jak zagłębiamy się w przykłady kodu i uczymy się, jak skutecznie korzystać z tych funkcji.
 
-### Warunki wstępne
+### Wymagania wstępne
 
 Zanim zaczniemy, upewnij się, że spełnione są następujące wymagania wstępne:
 
-1.  Aspose.Words dla Java: Upewnij się, że masz zainstalowaną bibliotekę Aspose.Words w swoim projekcie Java. Można go pobrać z[Tutaj](https://releases.aspose.com/words/java/).
+1.  Aspose.Words dla Java: Upewnij się, że biblioteka Aspose.Words jest zainstalowana w Twoim projekcie Java. Możesz ją pobrać z[Tutaj](https://releases.aspose.com/words/java/).
 
-2. Środowisko programistyczne Java: W swoim systemie powinieneś mieć skonfigurowane działające środowisko programistyczne Java.
+2. Środowisko programistyczne Java: Na swoim systemie powinieneś mieć zainstalowane działające środowisko programistyczne Java.
 
 ### Wstawianie obiektu OLE
 
-Zacznijmy od wstawienia obiektu OLE do dokumentu Word. Stworzymy prosty dokument Word, a następnie wstawimy obiekt OLE reprezentujący stronę internetową.
+Zacznijmy od wstawienia obiektu OLE do dokumentu Word. Utworzymy prosty dokument Word, a następnie wstawimy obiekt OLE reprezentujący stronę internetową.
 
 ```java
 string outPath = "Your Output Directory";
@@ -27,16 +27,16 @@ public void insertOleObject() throws Exception
 {
     Document doc = new Document();
     DocumentBuilder builder = new DocumentBuilder(doc);
-    builder.insertOleObject("http://www.aspose.com”, „plik html”, prawda, prawda, null);
+    builder.insertOleObject("http://www.aspose.com", "htmlfile", prawda, prawda, null);
     doc.save("Your Directory Path" + "WorkingWithOleObjectsAndActiveX.InsertOleObject.docx");
 }
 ```
 
-W tym kodzie tworzymy nowy dokument i wstawiamy obiekt OLE wyświetlający stronę internetową Aspose. Możesz zastąpić adres URL żądaną treścią.
+W tym kodzie tworzymy nowy dokument i wstawiamy obiekt OLE, który wyświetla witrynę Aspose. Możesz zastąpić adres URL żądaną treścią.
 
-### Wstawianie obiektu OLE za pomocą pakietu OlePackage
+### Wstawianie obiektu OLE za pomocą OlePackage
 
-Następnie przyjrzyjmy się, jak wstawić obiekt OLE przy użyciu pakietu OlePackage. Umożliwia to osadzanie plików zewnętrznych jako obiektów OLE w dokumencie.
+Następnie przyjrzyjmy się sposobowi wstawiania obiektu OLE za pomocą OlePackage. Pozwala to na osadzanie plików zewnętrznych jako obiektów OLE w dokumencie.
 
 ```java
 @Test
@@ -56,11 +56,11 @@ public void insertOleObjectWithOlePackage() throws Exception
 }
 ```
 
-W tym przykładzie wstawiamy obiekt OLE przy użyciu pakietu OlePackage, co pozwala na dołączenie plików zewnętrznych jako obiektów osadzonych.
+tym przykładzie wstawiamy obiekt OLE za pomocą OlePackage, co umożliwia dołączenie plików zewnętrznych jako obiektów osadzonych.
 
 ### Wstawianie obiektu OLE jako ikony
 
-Zobaczmy teraz, jak wstawić obiekt OLE jako ikonę. Jest to przydatne, gdy chcesz wyświetlić ikonę reprezentującą osadzony plik.
+Teraz zobaczmy, jak wstawić obiekt OLE jako ikonę. Jest to przydatne, gdy chcesz wyświetlić ikonę reprezentującą osadzony plik.
 
 ```java
 @Test
@@ -73,11 +73,11 @@ public void insertOleObjectAsIcon() throws Exception
 }
 ```
 
-W tym kodzie wstawiamy obiekt OLE jako ikonę, zapewniając bardziej atrakcyjną wizualnie reprezentację osadzonej treści.
+W tym kodzie wstawiamy obiekt OLE jako ikonę, zapewniając bardziej atrakcyjną wizualnie reprezentację osadzonej zawartości.
 
 ### Odczytywanie właściwości kontrolki ActiveX
 
-Teraz skupmy się na kontrolkach ActiveX. Dowiemy się, jak czytać właściwości kontrolek ActiveX w dokumencie Word.
+Teraz przenieśmy naszą uwagę na kontrolki ActiveX. Nauczymy się, jak odczytywać właściwości kontrolek ActiveX w dokumencie Word.
 
 ```java
 @Test
@@ -108,27 +108,27 @@ public void readActiveXControlProperties() throws Exception
 }
 ```
 
-W tym kodzie iterujemy po kształtach w dokumencie programu Word, identyfikujemy kontrolki ActiveX i pobieramy ich właściwości.
+W tym kodzie przeglądamy kształty w dokumencie Word, identyfikujemy kontrolki ActiveX i pobieramy ich właściwości.
 
 ### Wniosek
 
-Gratulacje! Nauczyłeś się, jak pracować z obiektami OLE i kontrolkami ActiveX w Aspose.Words dla Java. Funkcje te otwierają świat możliwości tworzenia dynamicznych i interaktywnych dokumentów.
+Gratulacje! Nauczyłeś się, jak pracować z obiektami OLE i kontrolkami ActiveX w Aspose.Words for Java. Te funkcje otwierają świat możliwości tworzenia dynamicznych i interaktywnych dokumentów.
 
 ### Często zadawane pytania
 
-### Jaki jest cel obiektów OLE w dokumencie programu Word? 
-   - Obiekty OLE umożliwiają osadzanie lub łączenie zawartości zewnętrznej, takiej jak pliki lub strony internetowe, w dokumencie programu Word.
+### Jaki jest cel obiektów OLE w dokumencie Word? 
+   - Obiekty OLE umożliwiają osadzanie lub łączenie zewnętrznej zawartości, np. plików lub stron internetowych, w dokumencie programu Word.
 
 ### Czy mogę dostosować wygląd obiektów OLE w moim dokumencie? 
-   - Tak, możesz dostosować wygląd obiektów OLE, w tym ustawić ikony i nazwy plików.
+   - Tak, można dostosować wygląd obiektów OLE, w tym ustawić ikony i nazwy plików.
 
-### Co to są formanty ActiveX i jak mogą ulepszyć moje dokumenty? 
-   - Formanty ActiveX to interaktywne elementy, które mogą dodawać funkcje do dokumentów programu Word, takie jak kontrolki formularzy lub odtwarzacze multimedialne.
+### Czym są kontrolki ActiveX i w jaki sposób mogą ulepszyć moje dokumenty? 
+   - Kontrolki ActiveX to interaktywne elementy, które mogą dodawać funkcjonalność do dokumentów programu Word, np. kontrolek formularzy lub odtwarzaczy multimedialnych.
 
-### Czy Aspose.Words dla Java nadaje się do automatyzacji dokumentów na poziomie przedsiębiorstwa? 
-   - Tak, Aspose.Words for Java to potężna biblioteka do automatyzacji generowania i manipulowania dokumentami w aplikacjach Java.
+### Czy Aspose.Words for Java nadaje się do automatyzacji dokumentów na poziomie przedsiębiorstwa? 
+   - Tak, Aspose.Words for Java to potężna biblioteka umożliwiająca automatyzację generowania i manipulowania dokumentami w aplikacjach Java.
 
 ### Gdzie mogę uzyskać dostęp do Aspose.Words dla Java? 
-   -  Możesz pobrać Aspose.Words dla Java z[Tutaj](https://releases.aspose.com/words/java/).
+   -  Możesz pobrać Aspose.Words dla Javy ze strony[Tutaj](https://releases.aspose.com/words/java/).
 
-Zacznij korzystać z Aspose.Words dla Java już dziś i odblokuj pełny potencjał automatyzacji i dostosowywania dokumentów!
+Zacznij korzystać z Aspose.Words for Java już dziś i odkryj pełen potencjał automatyzacji i personalizacji dokumentów!

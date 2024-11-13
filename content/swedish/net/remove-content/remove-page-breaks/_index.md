@@ -58,7 +58,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 
 Nu måste vi komma åt alla styckenoder i dokumentet. Detta gör att vi kan kontrollera och ändra deras egenskaper.
 
-Åtkomst till paragrafnoder
+Åtkomst till styckenoder
 ```csharp
 NodeCollection paragraphs = doc.GetChildNodes(NodeType.Paragraph, true);
 ```

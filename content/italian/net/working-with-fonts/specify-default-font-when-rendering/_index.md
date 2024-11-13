@@ -1,70 +1,70 @@
 ---
-title: Specificare il carattere predefinito durante il rendering
-linktitle: Specificare il carattere predefinito durante il rendering
+title: Specificare il font predefinito durante il rendering
+linktitle: Specificare il font predefinito durante il rendering
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come specificare un carattere predefinito durante il rendering di documenti Word utilizzando Aspose.Words per .NET. Garantisci un aspetto coerente dei documenti su tutte le piattaforme.
+description: Scopri come specificare un font predefinito quando esegui il rendering di documenti Word usando Aspose.Words per .NET. Garantisci un aspetto coerente del documento su tutte le piattaforme.
 type: docs
 weight: 10
 url: /it/net/working-with-fonts/specify-default-font-when-rendering/
 ---
 ## Introduzione
 
-Garantire che i tuoi documenti Word vengano visualizzati correttamente su piattaforme diverse può essere una sfida, soprattutto quando si ha a che fare con la compatibilità dei caratteri. Un modo per mantenere un aspetto coerente è specificare un carattere predefinito durante il rendering dei documenti in PDF o altri formati. In questo tutorial esploreremo come impostare un carattere predefinito utilizzando Aspose.Words per .NET, in modo che i tuoi documenti abbiano un bell'aspetto indipendentemente da dove vengono visualizzati.
+Garantire che i tuoi documenti Word vengano renderizzati correttamente su diverse piattaforme può essere una sfida, specialmente quando si ha a che fare con la compatibilità dei font. Un modo per mantenere un aspetto coerente è specificare un font predefinito quando si renderizzano i documenti in PDF o altri formati. In questo tutorial, esploreremo come impostare un font predefinito usando Aspose.Words per .NET, in modo che i tuoi documenti abbiano un aspetto fantastico indipendentemente da dove vengono visualizzati.
 
 ## Prerequisiti
 
-Prima di immergerci nel codice, vediamo cosa dovrai seguire insieme a questo tutorial:
+Prima di immergerci nel codice, vediamo cosa ti servirà per seguire questo tutorial:
 
-- Aspose.Words per .NET: assicurati di avere installata la versione più recente. Puoi scaricarlo[Qui](https://releases.aspose.com/words/net/).
+- Aspose.Words per .NET: assicurati di avere installata la versione più recente. Puoi scaricarla[Qui](https://releases.aspose.com/words/net/).
 - Ambiente di sviluppo: Visual Studio o qualsiasi altro ambiente di sviluppo .NET.
-- Conoscenza di base di C#: questo tutorial presuppone che tu abbia dimestichezza con la programmazione in C#.
+- Conoscenza di base di C#: questo tutorial presuppone che tu abbia familiarità con la programmazione in C#.
 
-## Importa spazi dei nomi
+## Importazione degli spazi dei nomi
 
-Per iniziare, devi importare gli spazi dei nomi necessari. Questi ti permetteranno di accedere alle classi e ai metodi necessari per lavorare con Aspose.Words.
+Per iniziare, devi importare i namespace necessari. Questi ti consentiranno di accedere alle classi e ai metodi richiesti per lavorare con Aspose.Words.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Fonts;
 ```
 
-Ora suddividiamo il processo di specifica di un carattere predefinito in passaggi facili da seguire.
+Ora scomponiamo il processo di specificazione di un font predefinito in semplici passaggi.
 
 ## Passaggio 1: imposta la directory dei documenti
 
-Innanzitutto, definisci il percorso della directory dei documenti. Qui è dove verranno archiviati i file di input e di output.
+Per prima cosa, definisci il percorso per la directory del tuo documento. È qui che verranno archiviati i tuoi file di input e output.
 
 ```csharp
-// Percorso della directory dei documenti
+// Percorso alla directory del documento
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Passaggio 2: carica il documento
 
-Successivamente, carica il documento di cui desideri eseguire il rendering. In questo esempio utilizzeremo un file denominato "Rendering.docx".
+Poi, carica il documento che vuoi renderizzare. In questo esempio, useremo un file denominato "Rendering.docx".
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Passaggio 3: configura le impostazioni dei caratteri
+## Passaggio 3: configurare le impostazioni del carattere
 
- Crea un'istanza di`FontSettings` e specificare il carattere predefinito. Se il carattere definito non può essere trovato durante il rendering, Aspose.Words utilizzerà il carattere disponibile più vicino sulla macchina.
+ Crea un'istanza di`FontSettings` e specificare il font predefinito. Se il font definito non può essere trovato durante il rendering, Aspose.Words utilizzerà il font più vicino disponibile sulla macchina.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
 fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Arial Unicode MS";
 ```
 
-## Passaggio 4: applica le impostazioni dei caratteri al documento
+## Passaggio 4: applicare le impostazioni del carattere al documento
 
-Assegna le impostazioni dei caratteri configurate al tuo documento.
+Assegna le impostazioni del font configurate al tuo documento.
 
 ```csharp
 doc.FontSettings = fontSettings;
 ```
 
-## Passaggio 5: salva il documento
+## Passaggio 5: Salvare il documento
 
 Infine, salva il documento nel formato desiderato. In questo caso, lo salveremo come PDF.
 
@@ -74,22 +74,22 @@ doc.Save(dataDir + "WorkingWithFonts.SpecifyDefaultFontWhenRendering.pdf");
 
 ## Conclusione
 
-Seguendo questi passaggi puoi assicurarti che i tuoi documenti Word vengano visualizzati con un carattere predefinito specificato, mantenendo la coerenza tra piattaforme diverse. Ciò può essere particolarmente utile per i documenti ampiamente condivisi o visualizzati su sistemi con diversa disponibilità di caratteri.
+Seguendo questi passaggi, puoi assicurarti che i tuoi documenti Word vengano renderizzati con un font predefinito specificato, mantenendo la coerenza su diverse piattaforme. Ciò può essere particolarmente utile per documenti ampiamente condivisi o visualizzati su sistemi con disponibilità di font variabile.
 
 
 ## Domande frequenti
 
-### Perché specificare un carattere predefinito in Aspose.Words?
-Specificare un carattere predefinito garantisce che il documento appaia coerente su diverse piattaforme, anche se i caratteri originali non sono disponibili.
+### Perché specificare un font predefinito in Aspose.Words?
+Specificando un font predefinito si garantisce che il documento appaia coerente su diverse piattaforme, anche se i font originali non sono disponibili.
 
-### Cosa succede se il carattere predefinito non viene trovato durante il rendering?
-Aspose.Words utilizzerà il carattere disponibile più vicino sulla macchina per mantenere l'aspetto del documento il più fedele possibile.
+### Cosa succede se il font predefinito non viene trovato durante il rendering?
+Aspose.Words utilizzerà il font più simile disponibile sul computer per mantenere l'aspetto del documento il più fedele possibile.
 
-### Posso specificare più caratteri predefiniti?
- No, puoi specificare solo un carattere predefinito. Tuttavia, puoi gestire la sostituzione dei caratteri per casi specifici utilizzando il file`FontSettings` classe.
+### Posso specificare più font predefiniti?
+ No, puoi specificare solo un font predefinito. Tuttavia, puoi gestire la sostituzione del font per casi specifici utilizzando`FontSettings` classe.
 
 ### Aspose.Words per .NET è compatibile con tutte le versioni dei documenti Word?
-Sì, Aspose.Words per .NET supporta un'ampia gamma di formati di documenti Word, inclusi DOC, DOCX, RTF e altri.
+Sì, Aspose.Words per .NET supporta un'ampia gamma di formati di documenti Word, tra cui DOC, DOCX, RTF e altri.
 
 ### Dove posso ottenere supporto se riscontro problemi?
  Puoi ottenere supporto dalla comunità Aspose e dagli sviluppatori su[Forum di supporto di Aspose.Words](https://forum.aspose.com/c/words/8).

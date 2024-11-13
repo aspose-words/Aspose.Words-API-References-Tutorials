@@ -2,22 +2,22 @@
 title: Copiar texto marcado em documento do Word
 linktitle: Copiar texto marcado em documento do Word
 second_title: API de processamento de documentos Aspose.Words
-description: Copie facilmente texto marcado entre documentos do Word usando Aspose.Words for .NET. Aprenda como com este guia passo a passo.
+description: Copie facilmente texto marcado entre documentos do Word usando o Aspose.Words para .NET. Aprenda como com este guia passo a passo.
 type: docs
 weight: 10
 url: /pt/net/programming-with-bookmarks/copy-bookmarked-text/
 ---
 ## Introdução
 
-Você já precisou copiar seções específicas de um documento do Word para outro? Bem, você está com sorte! Neste tutorial, orientaremos você sobre como copiar texto marcado como favorito de um documento do Word para outro usando Aspose.Words for .NET. Esteja você criando um relatório dinâmico ou automatizando a geração de documentos, este guia simplificará o processo para você.
+Já se viu precisando copiar seções específicas de um documento do Word para outro? Bem, você está com sorte! Neste tutorial, mostraremos como copiar texto marcado de um documento do Word para outro usando o Aspose.Words para .NET. Não importa se você está criando um relatório dinâmico ou automatizando a geração de documentos, este guia simplificará o processo para você.
 
 ## Pré-requisitos
 
 Antes de começarmos, certifique-se de ter o seguinte:
 
--  Biblioteca Aspose.Words for .NET: você pode baixá-lo em[aqui](https://releases.aspose.com/words/net/).
-- Ambiente de Desenvolvimento: Visual Studio ou qualquer outro ambiente de desenvolvimento .NET.
-- Conhecimento básico de C#: Familiaridade com programação C# e framework .NET.
+-  Biblioteca Aspose.Words para .NET: Você pode baixá-la em[aqui](https://releases.aspose.com/words/net/).
+- Ambiente de desenvolvimento: Visual Studio ou qualquer outro ambiente de desenvolvimento .NET.
+- Conhecimento básico de C#: Familiaridade com programação em C# e framework .NET.
 
 ## Importar namespaces
 
@@ -29,9 +29,9 @@ using Aspose.Words.Import;
 using Aspose.Words.Bookmark;
 ```
 
-## Etapa 1: carregar o documento de origem
+## Etapa 1: Carregue o documento de origem
 
-Em primeiro lugar, você precisa carregar o documento de origem que contém o texto marcado que deseja copiar.
+Primeiramente, você precisa carregar o documento de origem que contém o texto marcado que você deseja copiar.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -42,13 +42,13 @@ Document srcDoc = new Document(dataDir + "Bookmarks.docx");
 
 ## Etapa 2: Identifique o marcador
 
-A seguir, identifique o marcador que deseja copiar do documento de origem.
+Em seguida, identifique o marcador que você deseja copiar do documento de origem.
 
 ```csharp
 Bookmark srcBookmark = srcDoc.Range.Bookmarks["MyBookmark1"];
 ```
 
- Substituir`"MyBookmark1"` com o nome real do seu favorito.
+ Substituir`"MyBookmark1"` com o nome real do seu marcador.
 
 ## Etapa 3: Crie o documento de destino
 
@@ -59,7 +59,7 @@ Document dstDoc = new Document();
 CompositeNode dstNode = dstDoc.LastSection.Body;
 ```
 
-## Etapa 4: importar conteúdo marcado como favorito
+## Etapa 4: Importar conteúdo marcado
 
  Para garantir que os estilos e a formatação sejam preservados, use`NodeImporter` para importar o conteúdo marcado do documento de origem para o documento de destino.
 
@@ -68,7 +68,7 @@ NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSo
 AppendBookmarkedText(importer, srcBookmark, dstNode);
 ```
 
-## Etapa 5: definir o método AppendBookmarkedText
+## Etapa 5: Defina o método AppendBookmarkedText
 
 É aqui que a mágica acontece. Defina um método para lidar com a cópia do texto marcado:
 
@@ -94,7 +94,7 @@ private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, C
 }
 ```
 
-## Etapa 6: salve o documento de destino
+## Etapa 6: Salve o documento de destino
 
 Por fim, salve o documento de destino para verificar o conteúdo copiado.
 
@@ -104,21 +104,21 @@ dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 
 ## Conclusão
 
-E é isso! Você copiou com sucesso o texto marcado de um documento do Word para outro usando Aspose.Words for .NET. Este método é poderoso para automatizar tarefas de manipulação de documentos, tornando seu fluxo de trabalho mais eficiente e ágil.
+E é isso! Você copiou com sucesso o texto marcado de um documento do Word para outro usando o Aspose.Words para .NET. Este método é poderoso para automatizar tarefas de manipulação de documentos, tornando seu fluxo de trabalho mais eficiente e simplificado.
 
 ## Perguntas frequentes
 
 ### Posso copiar vários favoritos de uma vez?
-Sim, você pode percorrer vários marcadores e usar o mesmo método para copiar cada um deles.
+Sim, você pode iterar por vários favoritos e usar o mesmo método para copiar cada um.
 
 ### O que acontece se o marcador não for encontrado?
- O`Range.Bookmarks` propriedade retornará`null`, portanto, certifique-se de lidar com esse caso para evitar exceções.
+O`Range.Bookmarks` propriedade retornará`null`, portanto, certifique-se de lidar com esse caso para evitar exceções.
 
 ### Posso preservar a formatação do marcador original?
  Absolutamente! Usando`ImportFormatMode.KeepSourceFormatting` garante que a formatação original seja preservada.
 
 ### Existe um limite para o tamanho do texto marcado?
-Não há limite específico, mas o desempenho pode variar com documentos extremamente grandes.
+Não há um limite específico, mas o desempenho pode variar com documentos extremamente grandes.
 
-### Posso copiar texto entre diferentes formatos de documentos do Word?
-Sim, Aspose.Words oferece suporte a vários formatos do Word e o método funciona nesses formatos.
+### Posso copiar texto entre diferentes formatos de documento do Word?
+Sim, o Aspose.Words suporta vários formatos do Word, e o método funciona em todos esses formatos.

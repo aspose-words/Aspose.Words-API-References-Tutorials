@@ -2,22 +2,22 @@
 title: Tạo Bookmark Trong Tài Liệu Word
 linktitle: Tạo Bookmark Trong Tài Liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách tạo dấu trang trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn từng bước chi tiết này. Hoàn hảo cho việc điều hướng và tổ chức tài liệu.
+description: Tìm hiểu cách tạo dấu trang trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn chi tiết từng bước này. Hoàn hảo cho việc điều hướng và sắp xếp tài liệu.
 type: docs
 weight: 10
 url: /vi/net/programming-with-bookmarks/create-bookmark/
 ---
 ## Giới thiệu
 
-Tạo dấu trang trong tài liệu Word có thể thay đổi cuộc chơi, đặc biệt khi bạn muốn điều hướng qua các tài liệu lớn một cách dễ dàng. Hôm nay, chúng ta sẽ hướng dẫn quy trình tạo dấu trang bằng Aspose.Words cho .NET. Hướng dẫn này sẽ hướng dẫn bạn từng bước, đảm bảo bạn hiểu từng phần của quy trình. Vì vậy, hãy đi sâu vào ngay!
+Tạo dấu trang trong tài liệu Word có thể là một bước ngoặt, đặc biệt là khi bạn muốn điều hướng qua các tài liệu lớn một cách dễ dàng. Hôm nay, chúng ta sẽ hướng dẫn quy trình tạo dấu trang bằng Aspose.Words cho .NET. Hướng dẫn này sẽ hướng dẫn bạn từng bước, đảm bảo bạn hiểu từng phần của quy trình. Vậy, hãy cùng bắt đầu ngay nhé!
 
 ## Điều kiện tiên quyết
 
-Trước khi chúng tôi bắt đầu, bạn cần có những điều sau:
+Trước khi bắt đầu, bạn cần có những thứ sau:
 
-1.  Thư viện Aspose.Words for .NET: Tải xuống và cài đặt từ[đây](https://releases.aspose.com/words/net/).
+1.  Aspose.Words cho Thư viện .NET: Tải xuống và cài đặt từ[đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Visual Studio hoặc bất kỳ môi trường phát triển .NET nào khác.
-3. Kiến thức cơ bản về C#: Hiểu các khái niệm lập trình C# cơ bản.
+3. Kiến thức cơ bản về C#: Hiểu biết về các khái niệm lập trình C# cơ bản.
 
 ## Nhập không gian tên
 
@@ -30,9 +30,9 @@ using Aspose.Words.Saving;
 
 ## Bước 1: Thiết lập Document và DocumentBuilder
 
-Khởi tạo tài liệu
+Khởi tạo Tài liệu
 
-Đầu tiên chúng ta cần tạo một tài liệu mới và khởi tạo`DocumentBuilder`. Đây là điểm bắt đầu để thêm nội dung và dấu trang vào tài liệu của bạn.
+Đầu tiên, chúng ta cần tạo một tài liệu mới và khởi tạo`DocumentBuilder`. Đây là điểm khởi đầu để thêm nội dung và dấu trang vào tài liệu của bạn.
 
 ```csharp
 // Đường dẫn đến thư mục tài liệu.
@@ -41,26 +41,26 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Giải thích: Các`Document` đối tượng là canvas của bạn. các`DocumentBuilder` giống như chiếc bút của bạn, nó cho phép bạn viết nội dung và tạo dấu trang trong tài liệu.
+ Giải thích:`Document` đối tượng là bức tranh của bạn.`DocumentBuilder` giống như chiếc bút của bạn, cho phép bạn viết nội dung và tạo dấu trang trong tài liệu.
 
-## Bước 2: Tạo dấu trang chính
+## Bước 2: Tạo Dấu trang Chính
 
 Bắt đầu và kết thúc dấu trang chính
 
-Để tạo dấu trang, bạn cần chỉ định điểm bắt đầu và điểm kết thúc. Ở đây, chúng ta sẽ tạo một bookmark có tên "My Bookmark".
+Để tạo dấu trang, bạn cần chỉ định điểm bắt đầu và điểm kết thúc. Ở đây, chúng ta sẽ tạo một dấu trang có tên là "Dấu trang của tôi".
 
 ```csharp
 builder.StartBookmark("My Bookmark");
 builder.Writeln("Text inside a bookmark.");
 ```
 
- Giải thích: Các`StartBookmark` phương thức đánh dấu sự bắt đầu của dấu trang và`Writeln` thêm văn bản vào dấu trang.
+ Giải thích:`StartBookmark` phương pháp đánh dấu sự bắt đầu của dấu trang và`Writeln` thêm văn bản vào dấu trang.
 
-## Bước 3: Tạo dấu trang lồng nhau
+## Bước 3: Tạo một dấu trang lồng nhau
 
-Thêm dấu trang lồng nhau bên trong dấu trang chính
+Thêm dấu trang lồng nhau vào dấu trang chính
 
-Bạn có thể lồng các dấu trang vào trong các dấu trang khác. Ở đây, chúng tôi thêm "Dấu trang lồng nhau" trong "Dấu trang của tôi".
+Bạn có thể lồng dấu trang vào các dấu trang khác. Ở đây, chúng tôi thêm "Dấu trang lồng nhau" vào "Dấu trang của tôi".
 
 ```csharp
 builder.StartBookmark("Nested Bookmark");
@@ -68,13 +68,13 @@ builder.Writeln("Text inside a NestedBookmark.");
 builder.EndBookmark("Nested Bookmark");
 ```
 
- Giải thích: Dấu trang lồng nhau cho phép tổ chức nội dung có cấu trúc và phân cấp hơn. các`EndBookmark` phương pháp đóng dấu trang hiện tại.
+ Giải thích: Việc lồng các dấu trang cho phép tổ chức nội dung có cấu trúc và phân cấp hơn.`EndBookmark` phương pháp này đóng dấu trang hiện tại.
 
 ## Bước 4: Thêm văn bản bên ngoài dấu trang lồng nhau
 
 Tiếp tục thêm nội dung
 
-Sau dấu trang lồng nhau, chúng ta có thể tiếp tục thêm nhiều nội dung hơn trong dấu trang chính.
+Sau khi tạo dấu trang lồng nhau, chúng ta có thể tiếp tục thêm nội dung vào dấu trang chính.
 
 ```csharp
 builder.Writeln("Text after Nested Bookmark.");
@@ -83,11 +83,11 @@ builder.EndBookmark("My Bookmark");
 
 Giải thích: Điều này đảm bảo rằng dấu trang chính bao gồm cả dấu trang lồng nhau và văn bản bổ sung.
 
-## Bước 5: Định cấu hình tùy chọn lưu PDF
+## Bước 5: Cấu hình tùy chọn lưu PDF
 
 Thiết lập tùy chọn lưu PDF cho dấu trang
 
-Khi lưu tài liệu dưới dạng PDF, chúng ta có thể định cấu hình các tùy chọn để bao gồm dấu trang.
+Khi lưu tài liệu dưới dạng PDF, chúng ta có thể cấu hình các tùy chọn để bao gồm dấu trang.
 
 ```csharp
 PdfSaveOptions options = new PdfSaveOptions();
@@ -95,7 +95,7 @@ options.OutlineOptions.BookmarksOutlineLevels.Add("My Bookmark", 1);
 options.OutlineOptions.BookmarksOutlineLevels.Add("Nested Bookmark", 2);
 ```
 
- Giải thích: Các`PdfSaveOptions` lớp cho phép bạn chỉ định cách lưu tài liệu dưới dạng PDF. các`BookmarksOutlineLevels` thuộc tính xác định thứ bậc của dấu trang trong PDF.
+ Giải thích:`PdfSaveOptions` lớp cho phép bạn chỉ định cách tài liệu sẽ được lưu dưới dạng PDF.`BookmarksOutlineLevels` Thuộc tính này xác định thứ bậc của các dấu trang trong PDF.
 
 ## Bước 6: Lưu tài liệu
 
@@ -107,23 +107,23 @@ Cuối cùng, lưu tài liệu với các tùy chọn đã chỉ định.
 doc.Save(dataDir + "WorkingWithBookmarks.CreateBookmark.pdf", options);
 ```
 
- Giải thích: Các`Save` phương pháp lưu tài liệu ở định dạng và vị trí đã chỉ định. Tệp PDF bây giờ sẽ bao gồm các dấu trang mà chúng tôi đã tạo.
+ Giải thích:`Save` phương pháp lưu tài liệu theo định dạng và vị trí đã chỉ định. PDF bây giờ sẽ bao gồm các dấu trang chúng ta đã tạo.
 
 ## Phần kết luận
 
-Tạo dấu trang trong tài liệu Word bằng Aspose.Words cho .NET rất đơn giản và vô cùng hữu ích cho việc sắp xếp và điều hướng tài liệu. Cho dù bạn đang tạo báo cáo, tạo sách điện tử hay quản lý tài liệu lớn, dấu trang đều giúp cuộc sống dễ dàng hơn. Hãy làm theo các bước được nêu trong hướng dẫn này và bạn sẽ có sẵn bản PDF được đánh dấu trang ngay lập tức.
+Tạo dấu trang trong tài liệu Word bằng Aspose.Words cho .NET rất đơn giản và cực kỳ hữu ích cho việc điều hướng và sắp xếp tài liệu. Cho dù bạn đang tạo báo cáo, tạo sách điện tử hay quản lý tài liệu lớn, dấu trang giúp cuộc sống dễ dàng hơn. Làm theo các bước được nêu trong hướng dẫn này và bạn sẽ có một tệp PDF được đánh dấu sẵn sàng trong thời gian ngắn.
 
 ## Câu hỏi thường gặp
 
-### Tôi có thể tạo nhiều dấu trang ở các cấp độ khác nhau không?
+### Tôi có thể tạo nhiều dấu trang ở nhiều cấp độ khác nhau không?
 
-Tuyệt đối! Bạn có thể tạo bao nhiêu dấu trang nếu cần và xác định cấp độ phân cấp của chúng khi lưu tài liệu dưới dạng PDF.
+Hoàn toàn được! Bạn có thể tạo bao nhiêu dấu trang tùy thích và xác định cấp độ phân cấp của chúng khi lưu tài liệu dưới dạng PDF.
 
-### Làm cách nào để cập nhật văn bản của dấu trang?
+### Làm thế nào để cập nhật văn bản của dấu trang?
 
  Bạn có thể điều hướng đến dấu trang bằng cách sử dụng`DocumentBuilder.MoveToBookmark` và sau đó cập nhật văn bản.
 
-### Có thể xóa một dấu trang?
+### Có thể xóa dấu trang không?
 
  Có, bạn có thể xóa dấu trang bằng cách sử dụng`Bookmarks.Remove` phương pháp bằng cách chỉ định tên của dấu trang.
 
@@ -131,6 +131,6 @@ Tuyệt đối! Bạn có thể tạo bao nhiêu dấu trang nếu cần và xá
 
 Có, Aspose.Words hỗ trợ dấu trang ở nhiều định dạng khác nhau, bao gồm DOCX, HTML và EPUB.
 
-### Làm cách nào để đảm bảo dấu trang xuất hiện chính xác trong tệp PDF?
+### Làm sao để đảm bảo dấu trang xuất hiện chính xác trong PDF?
 
- Hãy đảm bảo xác định`BookmarksOutlineLevels` đúng cách trong`PdfSaveOptions`. Điều này đảm bảo các dấu trang được đưa vào dàn ý của tệp PDF.
+ Hãy chắc chắn để xác định`BookmarksOutlineLevels` đúng cách trong`PdfSaveOptions`. Điều này đảm bảo các dấu trang được bao gồm trong phần phác thảo của PDF.

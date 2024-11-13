@@ -59,13 +59,10 @@ Document doc = new Document(dataDir + "Rendering.docx");
 För att säkerställa att bilder interpoleras måste du konfigurera`PdfSaveOptions`. Den här klassen låter dig ställa in olika alternativ för hur ditt dokument sparas som PDF. Specifikt vill du aktivera bildinterpolation.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions 
-{ 
-	InterpolateImages = true
-};
+PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
- De`InterpolateImages` egenskapen är inställd på`true` för att säkerställa att bilderna i din PDF interpoleras, vilket förbättrar deras kvalitet.
+De`InterpolateImages` egenskapen är inställd på`true` för att säkerställa att bilderna i din PDF interpoleras, vilket förbättrar deras kvalitet.
 
 ## Steg 4: Spara dokumentet som en PDF
 

@@ -2,27 +2,27 @@
 title: Detectar numeración con espacios en blanco
 linktitle: Detectar numeración con espacios en blanco
 second_title: API de procesamiento de documentos Aspose.Words
-description: Descubra cómo utilizar Aspose.Words para .NET para detectar numeración con espacios en blanco en documentos de texto sin formato y asegurarse de que sus listas se reconozcan correctamente.
+description: Descubra cómo utilizar Aspose.Words para .NET para detectar numeración con espacios en blanco en documentos de texto sin formato y garantizar que sus listas se reconozcan correctamente.
 type: docs
 weight: 10
 url: /es/net/programming-with-txtloadoptions/detect-numbering-with-whitespaces/
 ---
 ## Introducción
 
-Aspose. ¡Palabras para entusiastas de .NET! Hoy, nos sumergimos en una característica fascinante que puede facilitar el manejo de listas en documentos de texto sin formato. ¿Alguna vez ha tratado con archivos de texto en los que algunas líneas se supone que son listas, pero simplemente no se ven del todo bien cuando se cargan en un documento de Word? Bueno, tenemos un buen truco bajo la manga: detectar numeración con espacios en blanco. Este tutorial le guiará a través de cómo utilizar el`DetectNumberingWithWhitespaces` opción en Aspose.Words para .NET para garantizar que sus listas se reconozcan correctamente, incluso cuando hay espacios en blanco entre los números y el texto.
+Aspose.Words para entusiastas de .NET. Hoy, nos sumergiremos en una característica fascinante que puede hacer que el manejo de listas en documentos de texto sin formato sea muy fácil. ¿Alguna vez ha trabajado con archivos de texto donde se supone que algunas líneas son listas, pero simplemente no se ven del todo bien cuando se cargan en un documento de Word? Bueno, tenemos un truco genial bajo la manga: detectar numeración con espacios en blanco. Este tutorial le mostrará cómo usar la función`DetectNumberingWithWhitespaces` opción en Aspose.Words para .NET para garantizar que sus listas se reconozcan correctamente, incluso cuando haya espacios en blanco entre los números y el texto.
 
-## Requisitos previos
+## Prerrequisitos
 
 Antes de comenzar, asegúrese de tener lo siguiente:
 
--  Aspose.Words para .NET: puede descargarlo desde[Lanzamientos de Aspose](https://releases.aspose.com/words/net/) página.
+-  Aspose.Words para .NET: Puedes descargarlo desde[Comunicados de Aspose](https://releases.aspose.com/words/net/) página.
 - Entorno de desarrollo: Visual Studio o cualquier otro IDE de C#.
 - .NET Framework instalado en su máquina.
 - Conocimientos básicos de C#: comprender los conceptos básicos le ayudará a seguir los ejemplos.
 
 ## Importar espacios de nombres
 
-Antes de saltar al código, asegúrese de haber importado los espacios de nombres necesarios en su proyecto. Aquí hay un fragmento rápido para comenzar:
+Antes de comenzar con el código, asegúrese de haber importado los espacios de nombres necesarios en su proyecto. A continuación, se incluye un breve fragmento para comenzar:
 
 ```csharp
 using System;
@@ -30,20 +30,20 @@ using Aspose.Words;
 using Aspose.Words.Loading;
 ```
 
-Dividamos el proceso en pasos simples y manejables. Cada paso lo guiará a través del código necesario y le explicará lo que está sucediendo.
+Dividamos el proceso en pasos sencillos y manejables. Cada paso lo guiará a través del código necesario y le explicará qué está sucediendo.
 
 ## Paso 1: Defina su directorio de documentos
 
-Primero lo primero, configuremos la ruta a su directorio de documentos. Aquí es donde se almacenarán sus archivos de entrada y salida.
+Lo primero es lo primero: configuremos la ruta al directorio de documentos. Aquí se almacenarán los archivos de entrada y salida.
 
 ```csharp
-// Ruta a su directorio de documentos
+// Ruta al directorio de su documento
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-## Paso 2: cree un documento de texto sin formato
+## Paso 2: Crear un documento de texto sin formato
 
-A continuación, crearemos un documento de texto sin formato como una cadena. Este documento contendrá partes que pueden interpretarse como listas.
+A continuación, crearemos un documento de texto simple en forma de cadena. Este documento contendrá partes que pueden interpretarse como listas.
 
 ```csharp
 const string textDoc = "Full stop delimiters:\n" +
@@ -64,15 +64,15 @@ const string textDoc = "Full stop delimiters:\n" +
                        "3 Fourth list item 3";
 ```
 
-## Paso 3: configurar las opciones de carga
+## Paso 3: Configurar LoadOptions
 
- Para detectar la numeración con espacios en blanco, debemos configurar el`DetectNumberingWithWhitespaces` opción de`true` en un`TxtLoadOptions` objeto.
+ Para detectar numeración con espacios en blanco, necesitamos configurar el`DetectNumberingWithWhitespaces` Opción a`true` En un`TxtLoadOptions` objeto.
 
 ```csharp
 TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces = true };
 ```
 
-## Paso 4: cargue el documento
+## Paso 4: Cargar el documento
 
  Ahora, carguemos el documento usando el`TxtLoadOptions` como parámetro. Esto garantiza que la cuarta lista (con espacios en blanco) se detecte correctamente.
 
@@ -80,9 +80,9 @@ TxtLoadOptions loadOptions = new TxtLoadOptions { DetectNumberingWithWhitespaces
 Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), loadOptions);
 ```
 
-## Paso 5: guarde el documento
+## Paso 5: Guardar el documento
 
-Finalmente, guarde el documento en su directorio especificado. Esto generará un documento de Word con listas detectadas correctamente.
+Por último, guarde el documento en el directorio especificado. Esto generará un documento de Word con las listas detectadas correctamente.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.docx");
@@ -90,22 +90,22 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.doc
 
 ## Conclusión
 
-¡Y ahí lo tienes! Con solo unas pocas líneas de código, dominará el arte de detectar numeración con espacios en blanco en documentos de texto sin formato usando Aspose.Words para .NET. Esta característica puede ser increíblemente útil cuando se trata de varios formatos de texto y se garantiza que sus listas estén representadas con precisión en sus documentos de Word. Así que la próxima vez que te encuentres con esas listas complicadas, sabrás exactamente qué hacer.
+¡Y ya lo tienes! Con solo unas pocas líneas de código, dominarás el arte de detectar numeraciones con espacios en blanco en documentos de texto sin formato utilizando Aspose.Words para .NET. Esta función puede resultar increíblemente útil cuando se trabaja con varios formatos de texto y se garantiza que las listas se representen con precisión en los documentos de Word. Así, la próxima vez que te encuentres con esas listas complicadas, sabrás exactamente qué hacer.
 
 ## Preguntas frecuentes
 
 ###  Qué es`DetectNumberingWithWhitespaces` in Aspose.Words for .NET?
-`DetectNumberingWithWhitespaces` es una opción en`TxtLoadOptions` eso permite a Aspose.Words reconocer listas incluso cuando hay espacios en blanco entre la numeración y el texto del elemento de la lista.
+`DetectNumberingWithWhitespaces` es una opción en`TxtLoadOptions` que permite a Aspose.Words reconocer listas incluso cuando hay espacios en blanco entre la numeración y el texto del elemento de la lista.
 
-### ¿Puedo usar esta función para otros delimitadores como viñetas y corchetes?
- Sí, Aspose.Words detecta automáticamente listas con delimitadores comunes como viñetas y corchetes. El`DetectNumberingWithWhitespaces` ayuda específicamente con listas que tienen espacios en blanco.
+### ¿Puedo utilizar esta función para otros delimitadores como viñetas y corchetes?
+ Sí, Aspose.Words detecta automáticamente listas con delimitadores comunes como viñetas y corchetes.`DetectNumberingWithWhitespaces` Ayuda específicamente con listas que tienen espacios en blanco.
 
-###  ¿Qué pasa si no uso?`DetectNumberingWithWhitespaces`?
+###  ¿Qué pasa si no lo uso?`DetectNumberingWithWhitespaces`?
 Sin esta opción, las listas con espacios en blanco entre la numeración y el texto podrían no reconocerse como listas y los elementos podrían aparecer como párrafos simples.
 
 ### ¿Esta función está disponible en otros productos Aspose?
-Esta característica específica está diseñada para Aspose.Words para .NET, diseñada para manejar el procesamiento de documentos de Word.
+Esta característica específica está diseñada para Aspose.Words para .NET y está diseñada para manejar el procesamiento de documentos de Word.
 
 ### ¿Cómo puedo obtener una licencia temporal de Aspose.Words para .NET?
- Puede obtener una licencia temporal del[Aspose Licencia Temporal](https://purchase.aspose.com/temporary-license/) página.
+ Puede obtener una licencia temporal en la[Licencia temporal de Aspose](https://purchase.aspose.com/temporary-license/) página.
 

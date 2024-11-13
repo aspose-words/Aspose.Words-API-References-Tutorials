@@ -1,287 +1,188 @@
 ---
-title: Formatowanie tabel i style tabel w Aspose.Words dla Java
+title: Formatowanie tabel i style tabel
 linktitle: Formatowanie tabel i style tabel
 second_title: Aspose.Words API przetwarzania dokumentów Java
-description: Dowiedz się, jak formatować tabele i stosować style tabel w Aspose.Words dla Java. Przeglądaj przewodniki krok po kroku z kodem źródłowym dotyczące efektywnego formatowania tabeli. Ulepsz układ swojego dokumentu za pomocą Aspose.Words.
+description: Dowiedz się, jak formatować tabele i stosować style za pomocą Aspose.Words for Java. Ten przewodnik krok po kroku obejmuje ustawianie obramowań, cieniowanie komórek i stosowanie stylów tabeli.
 type: docs
 weight: 17
 url: /pl/java/document-conversion-and-export/formatting-tables-and-table-styles/
 ---
 
-## Wprowadzenie do formatowania tabel i stylów tabel w Aspose.Words dla Java
+## Wstęp
 
-Tabele odgrywają kluczową rolę w strukturyzowaniu i organizowaniu informacji w dokumentach. Aspose.Words dla Java zapewnia zaawansowane funkcje formatowania tabel i stosowania stylów tabel w celu zwiększenia atrakcyjności wizualnej dokumentów. W tym przewodniku krok po kroku zbadamy różne aspekty formatowania tabel i stosowania stylów tabel za pomocą Aspose.Words dla Java.
+Jeśli chodzi o formatowanie dokumentów, tabele odgrywają kluczową rolę w organizowaniu i prezentowaniu danych w sposób przejrzysty. Jeśli pracujesz z Javą i Aspose.Words, masz do dyspozycji potężne narzędzia do tworzenia i formatowania tabel w dokumentach. Niezależnie od tego, czy projektujesz prostą tabelę, czy stosujesz zaawansowane style, Aspose.Words dla Javy oferuje szereg funkcji, które pomogą Ci osiągnąć profesjonalnie wyglądające rezultaty.
 
-## Warunki wstępne
+tym przewodniku przeprowadzimy Cię przez proces formatowania tabel i stosowania stylów tabel przy użyciu Aspose.Words for Java. Nauczysz się, jak ustawiać obramowania tabel, stosować cieniowanie komórek i używać stylów tabel, aby poprawić wygląd dokumentów. Na koniec będziesz mieć umiejętności tworzenia dobrze sformatowanych tabel, które wyróżnią Twoje dane.
 
-Zanim zagłębimy się w szczegóły, upewnij się, że masz zintegrowaną bibliotekę Aspose.Words for Java ze swoim projektem. Można go pobrać ze strony internetowej Aspose:[Pobierz Aspose.Words dla Javy](https://releases.aspose.com/words/java/).
+## Wymagania wstępne
 
-## Uzyskaj odległość między tabelą a otaczającym tekstem
+Zanim zaczniemy, jest kilka rzeczy, które musisz mieć na miejscu:
 
-Na początek przyjrzyjmy się, jak sprawdzić odległość między tabelą a otaczającym ją tekstem w dokumencie.
+1. Java Development Kit (JDK): Upewnij się, że masz zainstalowany JDK 8 lub nowszy. Aspose.Words for Java wymaga zgodnego JDK, aby działać poprawnie.
+2. Zintegrowane środowisko programistyczne (IDE): IDE, takie jak IntelliJ IDEA lub Eclipse, pomoże Ci zarządzać projektami Java i usprawni proces tworzenia oprogramowania.
+3.  Biblioteka Aspose.Words dla Java: Pobierz najnowszą wersję Aspose.Words dla Java[Tutaj](https://releases.aspose.com/words/java/) i uwzględnij go w swoim projekcie.
+4. Przykładowy kod: Będziemy korzystać z przykładowych fragmentów kodu, dlatego upewnij się, że masz podstawową wiedzę na temat programowania w Javie i wiesz, jak integrować biblioteki ze swoim projektem.
 
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-System.out.println("Distance Top: " + table.getDistanceTop());
-System.out.println("Distance Bottom: " + table.getDistanceBottom());
-System.out.println("Distance Right: " + table.getDistanceRight());
-System.out.println("Distance Left: " + table.getDistanceLeft());
-```
+## Importuj pakiety
 
-## Zastosuj obramowanie konturu do tabeli
-
-Możesz wyrównać tabelę do środka strony, wyczyścić istniejące obramowania i ustawić niestandardową ramkę konspektu za pomocą tego kodu:
+Aby pracować z Aspose.Words for Java, musisz zaimportować odpowiednie pakiety do swojego projektu. Pakiety te dostarczają klas i metod niezbędnych do manipulowania dokumentami i formatowania ich.
 
 ```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-table.setAlignment(TableAlignment.CENTER);
-table.clearBorders();
-table.setBorder(BorderType.LEFT, LineStyle.SINGLE, 1.5, Color.GREEN, true);
-table.setBorder(BorderType.RIGHT, LineStyle.SINGLE, 1.5, Color.GREEN, true);
-table.setBorder(BorderType.TOP, LineStyle.SINGLE, 1.5, Color.GREEN, true);
-table.setBorder(BorderType.BOTTOM, LineStyle.SINGLE, 1.5, Color.GREEN, true);
-table.setShading(TextureIndex.TEXTURE_SOLID, Color.lightGray, new Color(0, true));
+import com.aspose.words.*;
 ```
 
-## Zbuduj stół z obramowaniami
+To polecenie importu udostępnia wszystkie podstawowe klasy wymagane do tworzenia i formatowania tabel w dokumentach.
 
-Ten fragment kodu demonstruje, jak utworzyć tabelę i ustawić obramowania zarówno dla tabeli, jak i jej komórek:
+## Krok 1: Formatowanie tabel
 
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-table.clearBorders();
-table.setBorders(LineStyle.SINGLE, 1.5, Color.GREEN);
-```
+Formatowanie tabel w Aspose.Words dla Java obejmuje ustawianie obramowań, cieniowanie komórek i stosowanie różnych opcji formatowania. Oto, jak możesz to zrobić:
 
-## Zmodyfikuj formatowanie wierszy
-
-Dowiedz się, jak modyfikować formatowanie określonego wiersza w tabeli:
-
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-Row firstRow = table.getFirstRow();
-firstRow.getRowFormat().getBorders().setLineStyle(LineStyle.NONE);
-firstRow.getRowFormat().setHeightRule(HeightRule.AUTO);
-firstRow.getRowFormat().setAllowBreakAcrossPages(true);
-```
-
-## Zastosuj formatowanie wierszy
-
-Ten przykład ilustruje, jak zastosować formatowanie do całego wiersza w tabeli:
+### Załaduj dokument
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
+
+### Utwórz i sformatuj tabelę
+
+```java
 Table table = builder.startTable();
 builder.insertCell();
-RowFormat rowFormat = builder.getRowFormat();
-rowFormat.setHeight(100.0);
-rowFormat.setHeightRule(HeightRule.EXACTLY);
-table.setLeftPadding(30.0);
-table.setRightPadding(30.0);
-table.setTopPadding(30.0);
-table.setBottomPadding(30.0);
-builder.writeln("I'm a wonderfully formatted row.");
-```
 
-## Ustaw dopełnienie komórek
-
-Dowiedz się, jak ustawić dopełnienie poszczególnych komórek w tabeli:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.startTable();
-builder.insertCell();
-builder.getCellFormat().setPaddings(30.0, 50.0, 30.0, 50.0);
-builder.writeln("I'm a wonderfully formatted cell.");
-```
-
-## Zmodyfikuj formatowanie komórek
-
-Dowiedz się, jak zmodyfikować formatowanie określonej komórki w tabeli:
-
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-Cell firstCell = table.getFirstRow().getFirstCell();
-firstCell.getCellFormat().setWidth(30.0);
-firstCell.getCellFormat().setOrientation(TextOrientation.DOWNWARD);
-firstCell.getCellFormat().getShading().setForegroundPatternColor(Color.GREEN);
-```
-
-## Formatuj tabelę i komórkę z różnymi obramowaniami
-
-Dowiedz się, jak ustawić różne obramowania dla poszczególnych komórek w tabeli:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-Table table = builder.startTable();
-// Ustaw krawędzie tabeli
+// Ustaw obramowanie całej tabeli.
 table.setBorders(LineStyle.SINGLE, 2.0, Color.BLACK);
-// Ustaw cieniowanie komórek dla poszczególnych komórek
+        
+// Ustaw cieniowanie komórki dla tej komórki.
 builder.getCellFormat().getShading().setBackgroundPatternColor(Color.RED);
-// Dodaj zawartość do komórek
 builder.writeln("Cell #1");
+
 builder.insertCell();
+        
+// Określ inne cieniowanie komórki dla drugiej komórki.
 builder.getCellFormat().getShading().setBackgroundPatternColor(Color.GREEN);
 builder.writeln("Cell #2");
-// Wyczyść formatowanie komórek dla następnego wiersza
+
+builder.endRow();
+```
+
+### Dostosuj obramowania komórek
+
+```java
+// Wyczyść formatowanie komórek z poprzednich operacji.
 builder.getCellFormat().clearFormatting();
-// Utwórz większe obramowanie dla pierwszej komórki tego wiersza
+
+builder.insertCell();
+
+//Utwórz większe obramowanie dla pierwszej komórki tego wiersza.
 builder.getCellFormat().getBorders().getLeft().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getRight().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getTop().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getBottom().setLineWidth(4.0);
 builder.writeln("Cell #3");
+
 builder.insertCell();
 builder.getCellFormat().clearFormatting();
 builder.writeln("Cell #4");
+        
+doc.save("FormatTableAndCellWithDifferentBorders.docx");
 ```
 
-## Ustaw tytuł i opis tabeli
+### Wyjaśnienie
 
-Dodaj tytuł i opis do swojej tabeli:
+W tym przykładzie:
+- Ustaw obramowanie: Ustawiamy obramowanie całej tabeli na styl pojedynczej linii o grubości 2,0 punktów.
+- Cieniowanie komórek: Pierwsza komórka jest cieniowana na czerwono, a druga na zielono. Pomaga to wizualnie odróżnić komórki.
+- Obramowania komórek: W przypadku trzeciej komórki tworzymy grubsze obramowania, aby wyróżnić ją w inny sposób niż pozostałe.
 
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-table.setTitle("Test title");
-table.setDescription("Test description");
-```
+## Krok 2: Stosowanie stylów tabeli
 
-## Krok 10: Zezwól na odstępy między komórkami
+Style tabel w Aspose.Words for Java pozwalają na zastosowanie wstępnie zdefiniowanych opcji formatowania do tabel, co ułatwia uzyskanie spójnego wyglądu. Oto jak zastosować styl do tabeli:
 
-Zezwól na odstępy między komórkami i ustaw ich wartość dla tabeli:
-
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-table.setAllowCellSpacing(true);
-table.setCellSpacing(2.0);
-```
-
-## Krok 11: Zbuduj stół ze stylem
-
-Utwórz tabelę z predefiniowanym stylem:
+### Utwórz dokument i tabelę
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+
 Table table = builder.startTable();
+        
+// Przed ustawieniem formatowania tabeli musimy wstawić co najmniej jeden wiersz.
+builder.insertCell();
+```
+
+### Zastosuj styl tabeli
+
+```java
+// Ustaw styl tabeli na podstawie unikalnego identyfikatora stylu.
 table.setStyleIdentifier(StyleIdentifier.MEDIUM_SHADING_1_ACCENT_1);
+        
+// Zastosuj funkcje, które powinny być sformatowane przez styl.
 table.setStyleOptions(TableStyleOptions.FIRST_COLUMN | TableStyleOptions.ROW_BANDS | TableStyleOptions.FIRST_ROW);
+table.autoFit(AutoFitBehavior.AUTO_FIT_TO_CONTENTS);
+```
+
+### Dodaj dane tabeli
+
+```java
 builder.writeln("Item");
 builder.getCellFormat().setRightPadding(40.0);
 builder.insertCell();
 builder.writeln("Quantity (kg)");
-```
+builder.endRow();
 
-## Krok 12: Rozwiń formatowanie komórek i wierszy ze stylu
-
-Dowiedz się, jak rozwinąć style tabeli, aby zastosować formatowanie do komórek i wierszy:
-
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-Cell firstCell = table.getFirstRow().getFirstCell();
-Color cellShadingBefore = firstCell.getCellFormat().getShading().getBackgroundPatternColor();
-doc.expandTableStylesToDirectFormatting();
-Color cellShadingAfter = firstCell.getCellFormat().getShading().getBackgroundPatternColor();
-```
-
-## Krok 13: Utwórz styl tabeli
-
-Utwórz niestandardowy styl tabeli z określonym formatowaniem:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-Table table = builder.startTable();
-table.setStyleIdentifier(StyleIdentifier.MEDIUM_SHADING_1_ACCENT_1);
-table.setStyleOptions(TableStyleOptions.FIRST_COLUMN | TableStyleOptions.ROW_BANDS | TableStyleOptions.FIRST_ROW);
-builder.writeln("Item");
-builder.getCellFormat().setRightPadding(40.0);
 builder.insertCell();
-builder.writeln("Quantity (kg)");
-```
-
-## Krok 14: Zdefiniuj formatowanie warunkowe
-
-Zastosuj formatowanie warunkowe do wierszy w tabeli:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-Table table = builder.startTable();
-TableStyle tableStyle = (TableStyle) doc.getStyles().add(StyleType.TABLE, "MyTableStyle1");
-tableStyle.getConditionalStyles().getFirstRow().getShading().setBackgroundPatternColor(Color.yellow);
-table.setStyle(tableStyle);
-```
-
-## Krok 15: Ustaw formatowanie komórek tabeli
-
-Ustaw specyficzne formatowanie dla poszczególnych komórek:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.startTable();
+builder.writeln("Apples");
 builder.insertCell();
-CellFormat cellFormat = builder.getCellFormat();
-cellFormat.setWidth(250.0);
-cellFormat.setLeftPadding(30.0);
-cellFormat.setRightPadding(30.0);
-cellFormat.setTopPadding(30.0);
-cellFormat.setBottomPadding(30.0);
-builder.writeln("I'm a wonderfully formatted cell.");
+builder.writeln("20");
+builder.endRow();
+
+builder.insertCell();
+builder.writeln("Bananas");
+builder.insertCell();
+builder.writeln("40");
+builder.endRow();
+
+builder.insertCell();
+builder.writeln("Carrots");
+builder.insertCell();
+builder.writeln("50");
+builder.endRow();
+
+doc.save("BuildTableWithStyle.docx");
 ```
 
-## Krok 16: Ustaw formatowanie wierszy tabeli
+### Wyjaśnienie
 
-Zastosuj formatowanie do całych wierszy w tabeli:
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-Table table = builder.startTable();
-RowFormat rowFormat = builder.getRowFormat();
-rowFormat.setHeight(100.0);
-rowFormat.setHeightRule(HeightRule.EXACTLY);
-table.setLeftPadding(30.0);
-table.setRightPadding(30.0);
-table.setTopPadding(30.0);
-table.setBottomPadding(30.0);
-builder.writeln("I'm a wonderfully formatted row.");
-```
+W tym przykładzie:
+- Ustaw styl tabeli: Stosujemy wstępnie zdefiniowany styl (`MEDIUM_SHADING_1_ACCENT_1`) do tabeli. Ten styl obejmuje formatowanie różnych części tabeli.
+- Opcje stylu: Określamy, że pierwsza kolumna, pasma wierszy i pierwszy wiersz powinny być sformatowane zgodnie z opcjami stylu.
+-  AutoFit: Używamy`AUTO_FIT_TO_CONTENTS` aby zapewnić, że tabela dopasuje swój rozmiar do zawartości.
 
 ## Wniosek
 
-Aspose.Words dla Java umożliwia precyzyjne formatowanie tabel i stosowanie stylów tabel. Od modyfikowania formatowania poszczególnych komórek po tworzenie niestandardowych stylów tabel — masz narzędzia, dzięki którym Twoje dokumenty będą atrakcyjne wizualnie i zorganizowane.
+I masz to! Udało Ci się sformatować tabele i zastosować style za pomocą Aspose.Words for Java. Dzięki tym technikom możesz tworzyć tabele, które są nie tylko funkcjonalne, ale również atrakcyjne wizualnie. Skuteczne formatowanie tabel może znacznie poprawić czytelność i profesjonalny wygląd Twoich dokumentów.
+
+Aspose.Words for Java to solidne narzędzie oferujące rozbudowane funkcje do manipulacji dokumentami. Opanowując formatowanie tabel i style, jesteś o krok bliżej wykorzystania pełnej mocy tej biblioteki.
 
 ## Często zadawane pytania
 
-### Jak pobrać Aspose.Words dla Java?
+### 1. Czy mogę używać niestandardowych stylów tabeli, które nie są zawarte w opcjach domyślnych?
 
- Możesz pobrać Aspose.Words dla Java ze strony internetowej Aspose:[Pobierz Aspose.Words dla Javy](https://releases.aspose.com/words/java/).
+Tak, możesz definiować i stosować niestandardowe style do swoich tabel za pomocą Aspose.Words dla Java. Sprawdź[dokumentacja](https://reference.aspose.com/words/java/) aby uzyskać więcej szczegółów na temat tworzenia niestandardowych stylów.
 
-### Czy mogę zastosować różne obramowania do poszczególnych komórek w tabeli?
+### 2. Jak mogę zastosować formatowanie warunkowe do tabel?
 
-Tak, możesz ustawić różne obramowania dla poszczególnych komórek w tabeli za pomocą Aspose.Words dla Java, jak pokazano w tym przewodniku.
+Aspose.Words for Java umożliwia programowe dostosowywanie formatowania tabeli na podstawie warunków. Można to zrobić, sprawdzając określone kryteria w kodzie i stosując odpowiednie formatowanie.
 
-### Jaki jest cel ustawienia tytułu i opisu tabeli?
+### 3. Czy mogę sformatować połączone komórki w tabeli?
 
-Ustawienie tytułu i opisu tabeli poprawia dostępność i organizację dokumentu, ułatwiając czytelnikom i technologiom pomocniczym zrozumienie treści.
+Tak, możesz formatować scalone komórki tak jak zwykłe komórki. Upewnij się, że zastosujesz formatowanie po scaleniu komórek, aby zobaczyć odzwierciedlone zmiany.
 
-### Jak zastosować formatowanie warunkowe do określonych wierszy tabeli?
+### 4. Czy istnieje możliwość dynamicznej zmiany układu tabeli?
 
-Możesz zastosować formatowanie warunkowe do określonych wierszy tabeli, definiując niestandardowe style tabeli z regułami formatowania warunkowego, jak pokazano w tym przewodniku.
+Tak, możesz dynamicznie dostosowywać układ tabeli, modyfikując rozmiary komórek, szerokość tabeli i inne właściwości na podstawie zawartości lub danych wprowadzonych przez użytkownika.
 
-### Gdzie mogę znaleźć więcej dokumentacji i zasobów dotyczących Aspose.Words dla Java?
+### 5. Gdzie mogę uzyskać więcej informacji na temat formatowania tabel?
 
- Aby uzyskać obszerną dokumentację i dodatkowe zasoby, odwiedź dokumentację Aspose.Words for Java:[Aspose.Words dla dokumentacji Java](https://reference.aspose.com/words/java/).
+ Aby uzyskać bardziej szczegółowe przykłady i opcje, odwiedź stronę[Dokumentacja API Aspose.Words](https://reference.aspose.com/words/java/).

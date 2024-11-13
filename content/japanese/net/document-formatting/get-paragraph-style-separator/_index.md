@@ -49,7 +49,7 @@ using System;
     string dataDir = "YOUR DOCUMENT DIRECTORY";
     ```
 
-2. ドキュメントをロードする:`Document`ドキュメントを読み込むには、Aspose.Words のクラスを使用します。
+2. ドキュメントを読み込む:`Document`ドキュメントを読み込むには、Aspose.Words のクラスを使用します。
 
     ```csharp
     Document doc = new Document(dataDir + "Document.docx");

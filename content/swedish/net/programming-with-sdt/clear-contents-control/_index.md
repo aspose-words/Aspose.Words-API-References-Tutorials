@@ -77,7 +77,7 @@ Rensa innehållet i den strukturerade dokumenttaggen.
 
 ## Steg 5: Spara dokumentet
 
-Spara slutligen det ändrade dokumentet.
+Slutligen, spara det ändrade dokumentet.
 
 1. Spara dokument: Spara dokumentet med ett nytt namn för att bevara originalfilen.
    ```csharp

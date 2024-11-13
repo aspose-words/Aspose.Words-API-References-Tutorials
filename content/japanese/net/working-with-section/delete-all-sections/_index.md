@@ -18,7 +18,7 @@ Word 文書のすべてのセクションを削除しようとして、わかり
 -  Aspose.Words for .NET: ダウンロードはこちらから[ここ](https://releases.aspose.com/words/net/).
 - 開発環境: .NET 互換の IDE (Visual Studio など)。
 - C# の基礎知識: コード スニペットをよりよく理解するのに役立ちます。
-- Word 文書: 作業する入力文書。
+- Word 文書: 作業に使用する入力文書。
 
 ## 名前空間のインポート
 
@@ -55,7 +55,7 @@ doc.Sections.Clear();
 
 ## 結論
 
-これで完了です。Aspose.Words for .NET を使用して Word 文書のすべてのセクションを削除するのは、手順がわかれば簡単です。この強力なライブラリにより、非常に面倒な多くのタスクが簡素化されます。単純な文書でも複雑な文書でも、Aspose.Words が対応します。 
+これで完了です。Aspose.Words for .NET を使用して Word 文書内のすべてのセクションを削除するのは、手順がわかれば簡単です。この強力なライブラリにより、非常に面倒な多くのタスクが簡素化されます。単純な文書でも複雑な文書でも、Aspose.Words が対応します。 
 
 ## よくある質問
 
@@ -63,7 +63,7 @@ doc.Sections.Clear();
  Aspose.Words for .NETは、Word文書をプログラムで操作するための強力なライブラリです。詳細については、[ここ](https://reference.aspose.com/words/net/).
 
 ### Aspose.Words for .NET を無料で試すことはできますか?
-はい、無料トライアルはここからダウンロードできます。[ここ](https://releases.aspose.com/).
+はい、無料トライアルは以下からダウンロードできます。[ここ](https://releases.aspose.com/).
 
 ### Aspose.Words for .NET を購入するにはどうすればよいですか?
 こちらからご購入いただけます[ここ](https://purchase.aspose.com/buy).

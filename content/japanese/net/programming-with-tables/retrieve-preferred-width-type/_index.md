@@ -15,7 +15,7 @@ Aspose.Words for .NET を使用して、Word 文書内の表セルの優先幅�
 
 始める前に、いくつか必要なものがあります:
 
-1.  Aspose.Words for .NET: 最新バージョンがインストールされていることを確認してください。ダウンロードはこちらからできます。[ここ](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: 最新バージョンがインストールされていることを確認してください。こちらからダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
 2. 開発環境: Visual Studio などの IDE が必要です。
 3. C# の基礎知識: C# の基礎を理解しておくと、理解しやすくなります。
 4. サンプル文書: 作業できる表を含むWord文書を用意してください。任意の文書を使用できますが、ここでは次のように呼びます。`Tables.docx`このチュートリアルでは。
@@ -73,7 +73,7 @@ table.AllowAutoFit = true;
 
 ## ステップ5: 最初のセルの推奨幅タイプを取得する
 
-ここで、このチュートリアルの核心である、テーブルの最初のセルの推奨される幅タイプを取得します。
+ここで、このチュートリアルの核心である、テーブルの最初のセルの推奨される幅の種類を取得します。
 
 ```csharp
 Cell firstCell = table.FirstRow.FirstCell;

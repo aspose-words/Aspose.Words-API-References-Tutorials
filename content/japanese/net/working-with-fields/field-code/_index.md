@@ -18,7 +18,7 @@ url: /ja/net/working-with-fields/field-code/
 1.  Aspose.Words for .NET: Aspose.Wordsがインストールされていることを確認してください。インストールされていない場合は、以下からダウンロードできます。[Aspose.Words for .NET リリース](https://releases.aspose.com/words/net/).
 2. Visual Studio: .NET コードを記述して実行するには、Visual Studio などの統合開発環境 (IDE) が必要です。
 3. C# の基礎知識: C# プログラミングの知識があれば、例やコード スニペットを理解するのに役立ちます。
-4. サンプル文書: フィールドコードが入ったサンプルWord文書を用意してください。このチュートリアルでは、次のような文書があると仮定します。`Hyperlinks.docx`さまざまなフィールドコード付き。
+4. サンプル文書: フィールドコードが入ったサンプルのWord文書を用意してください。このチュートリアルでは、次のような文書があると仮定します。`Hyperlinks.docx`さまざまなフィールドコード付き。
 
 ## 名前空間のインポート
 
@@ -42,7 +42,7 @@ Word 文書内のフィールド コードを抽出して操作するプロセ�
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
-説明: 置き換え`"YOUR DOCUMENTS DIRECTORY"`ドキュメントが保存されている実際のパスを入力します。このパスは、Aspose.Words に、操作するファイルの場所を指示します。
+説明: 置き換え`"YOUR DOCUMENTS DIRECTORY"`ドキュメントが保存されている実際のパスを入力します。このパスは、Aspose.Words に、作業するファイルの場所を指示します。
 
 ## ステップ2: ドキュメントを読み込む
 

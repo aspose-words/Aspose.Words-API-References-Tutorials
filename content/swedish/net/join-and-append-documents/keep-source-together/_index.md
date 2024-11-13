@@ -1,99 +1,133 @@
 ---
-title: Håll källan tillsammans
-linktitle: Håll källan tillsammans
+title: Håll ihop bordet
+linktitle: Håll ihop bordet
 second_title: Aspose.Words Document Processing API
-description: Lär dig hur du slår samman Word-dokument med Aspose.Words för .NET samtidigt som du behåller formateringen. Den här omfattande guiden täcker allt från installation till utförande.
+description: Lär dig hur du förhindrar tabeller från att delas över sidor med Aspose.Words för .NET med denna steg-för-steg-guide. Säkerställ snygga, professionella Word-dokument
 type: docs
 weight: 10
 url: /sv/net/join-and-append-documents/keep-source-together/
 ---
 ## Introduktion
 
-I dagens digitala tidsålder är det viktigt att manipulera Word-dokument programmatiskt i olika branscher. Aspose.Words för .NET ger utvecklare möjlighet att automatisera dokumenthanteringsuppgifter effektivt. Denna omfattande guide kommer att leda dig genom processen att sammanfoga dokument samtidigt som källformateringen bevaras med Aspose.Words för .NET.
+Tabeller är en viktig del av många Word-dokument, men ibland kan du stöta på en situation där din tabell delas över två sidor. Detta kan störa flödet av ditt dokument och påverka dess läsbarhet. Skulle det inte vara trevligt om det fanns ett sätt att hålla ihop hela bordet på en sida? Tja, med Aspose.Words för .NET finns det en enkel lösning på detta problem! I den här självstudien går vi igenom hur du förhindrar att tabeller delas upp på sidorna och ser till att ditt dokument ser snyggt och professionellt ut.
 
 ## Förutsättningar
 
-Innan du går in i dokumentsammanslagning med Aspose.Words för .NET, se till att du har följande:
+Innan vi hoppar in i handledningen, låt oss se till att du har allt du behöver för att följa smidigt.
 
-- Visual Studio: Integrated Development Environment (IDE) för .NET-utveckling.
-- Aspose.Words för .NET: Installerat och konfigurerat i din utvecklingsmiljö.
-- Kännedom om C#: Grundläggande förståelse för programmeringsspråket C#.
+### Aspose.Words för .NET Library
 
-## Importera namnområden
+Först måste du ha Aspose.Words för .NET installerat. Detta är det kraftfulla biblioteket som låter dig arbeta med Word-dokument programmatiskt.
 
-För att börja, importera de nödvändiga namnrymden:
+- [Ladda ner Aspose.Words för .NET](https://releases.aspose.com/words/net/)
+
+### Utvecklingsmiljö
+
+Du bör ha en utvecklingsmiljö inställd för att köra C#-kod, till exempel:
+
+- Visual Studio (alla nyare versioner)
+- .NET Framework 2.0 eller senare
+
+### Ett Word-dokument med en tabell
+
+ Du behöver ett Word-dokument som innehåller en tabell. I den här handledningen kommer vi att arbeta med ett exempeldokument som heter`"Table spanning two pages.docx"`. Den här filen innehåller en tabell som för närvarande sträcker sig över två sidor.
+
+### Tillfällig licens (valfritt)
+
+ Medan Aspose.Words kommer med en gratis provperiod, kanske du vill använda en[tillfällig licens](https://purchase.aspose.com/temporary-license/) för att låsa upp bibliotekets fulla potential.
+
+## Importera paket
+
+Innan vi skriver någon kod måste vi importera de nödvändiga namnrymden för att arbeta med Aspose.Words för .NET. Lägg till följande importer överst i din kodfil:
 
 ```csharp
 using Aspose.Words;
-using Aspose.Words.DocumentBuilder;
+using Aspose.Words.Tables;
 ```
 
-## Steg 1: Ladda dokument
+ Dessa namnrymder ger dig tillgång till klasser som`Document`, `Table`, `Cell`, och andra som vi kommer att använda i den här handledningen.
 
- Först laddar du käll- och måldokumenten i Aspose.Words`Document` föremål.
+## Steg 1: Ladda dokumentet
+
+ Det första vi behöver göra är att ladda Word-dokumentet som innehåller tabellen. För detta kommer vi att använda`Document` klass från Aspose.Words. Denna klass låter dig öppna och manipulera Word-filer programmatiskt.
 
 ```csharp
-// Sökväg till din dokumentkatalog
-string dataDir = "YOUR_DOCUMENT_DIRECTORY/";
+// Sökvägen till dokumentkatalogen.
+string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Ladda käll- och måldokument
-Document srcDoc = new Document(dataDir + "Document source.docx");
-Document dstDoc = new Document(dataDir + "Document destination with list.docx");
+Document doc = new Document(dataDir + "Table spanning two pages.docx");
 ```
 
-## Steg 2: Ställ in sektionsstart
+ I det här kodavsnittet anger vi platsen för vårt dokument. Ersätta`"YOUR DOCUMENTS DIRECTORY"` med den faktiska katalogen där ditt dokument är lagrat.
 
-Konfigurera avsnittsstarten för att säkerställa att källdokumentets innehåll flödar kontinuerligt efter måldokumentet.
+## Steg 2: Gå till tabellen
+
+När dokumentet är laddat är nästa steg att komma åt tabellen som vi vill hålla ihop. I det här exemplet antar vi att tabellen är den första tabellen i dokumentet.
 
 ```csharp
-// Ställ in att källdokumentet ska visas direkt efter måldokumentets innehåll
-srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
+Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 ```
 
-## Steg 3: Håll ihop stycken
+ Denna kodrad hittar den första tabellen i dokumentet. De`GetChild` metod hämtar en specifik typ av nod, vilket i det här fallet är`NodeType.Table` . De`0` indikerar att vi vill ha den första tabellen och`true`flaggan ser till att vi söker rekursivt genom alla underordnade noder.
 
-För att behålla formateringsintegriteten markerar du varje stycke i källdokumentet för att stanna kvar vid nästa stycke.
+## Steg 3: Slinga genom tabellceller
+
+Nu måste vi gå igenom varje cell i tabellen. Eftersom en tabell innehåller flera rader och varje rad innehåller flera celler, går vi igenom varje cell och säkerställer att den inte delas över sidor.
 
 ```csharp
-foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
+foreach (Cell cell in table.GetChildNodes(NodeType.Cell, true))
 {
-    para.ParagraphFormat.KeepWithNext = true;
-}
+    cell.EnsureMinimum();
 ```
 
-## Steg 4: Bifoga dokument
+ Här,`GetChildNodes` hämtar alla celler i tabellen, och vi går igenom var och en av dem. De`EnsureMinimum()` metod ser till att varje cell innehåller minst ett stycke, eftersom en tom cell kan orsaka problem senare.
 
- Slå samman dokumenten med hjälp av`AppendDocument` metod, vilket säkerställer att källdokumentets formatering behålls.
+## Steg 4: Ställ in KeepWithNext-egenskapen
+
+ För att förhindra att tabellen delas över sidor måste vi ställa in`KeepWithNext` egenskap för varje stycke i tabellen. Den här egenskapen säkerställer att stycket förblir med nästa stycke, vilket effektivt förhindrar sidbrytningar mellan dem.
 
 ```csharp
-dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
+    foreach (Paragraph para in cell.Paragraphs)
+        if (!(cell.ParentRow.IsLastRow && para.IsEndOfCell))
+            para.ParagraphFormat.KeepWithNext = true;
 ```
 
-## Steg 5: Spara sammanslagna dokument
+ Denna loop kontrollerar varje stycke i varje cell. Villkoret säkerställer att vi inte tillämpar`KeepWithNext`egenskap till sista stycket i sista raden. Annars skulle egendomen inte ha någon effekt eftersom det inte finns något nästa stycke.
 
-Spara slutligen det sammanslagna dokumentet på önskad plats.
+## Steg 5: Spara dokumentet
+
+ Slutligen, efter att ha tillämpat`KeepWithNext` egenskap måste vi spara det ändrade dokumentet.
 
 ```csharp
-dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
+doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 ```
+
+Den här raden sparar det uppdaterade dokumentet med ett nytt namn och bevarar originalfilen. Du kan nu öppna den resulterande filen och se att tabellen inte längre är uppdelad på två sidor!
 
 ## Slutsats
 
-Sammanfattningsvis förenklar Aspose.Words för .NET uppgiften att slå samman Word-dokument samtidigt som den ursprungliga formateringen bevaras sömlöst. Denna förmåga är avgörande för applikationer som kräver automatiserad dokumentbehandling.
+Och där har du det! Genom att följa dessa enkla steg kan du enkelt förhindra att tabeller delas över sidor i Word-dokument med Aspose.Words för .NET. Oavsett om du arbetar med rapporter, kontrakt eller andra dokument, garanterar att hålla tabellerna intakta ett mer polerat, professionellt utseende.
+
+Det fina med Aspose.Words är dess flexibilitet och användarvänlighet, vilket gör att du kan manipulera Word-dokument programmatiskt utan att behöva Microsoft Word installerat på din maskin. Nu när du har hunnit med att hålla ihop tabeller kan du utforska andra funktioner i biblioteket för att ta dina färdigheter i dokumentbehandling till nästa nivå!
 
 ## FAQ's
 
-### Kan Aspose.Words för .NET slå samman dokument i olika format?
-Ja, det kan slå samman dokument oavsett format och behålla källformateringen.
+### Varför delas min tabell fortfarande över sidor efter att ha använt den här koden?
 
-### Stöder Aspose.Words för .NET sammanslagning av stora dokument effektivt?
-Absolut, den hanterar stora dokument med optimal prestanda.
+ Om ditt bord fortfarande går sönder, se till att du har tillämpat`KeepWithNext` egendom korrekt. Dubbelkolla att alla stycken utom det sista i varje cell har denna egenskap.
 
-### Finns det en testversion tillgänglig för Aspose.Words för .NET?
- Ja, du kan ladda ner en gratis testversion[här](https://releases.aspose.com/).
+### Kan jag bara hålla ihop specifika rader?
 
-### Hur kan jag få teknisk support för Aspose.Words för .NET?
- Teknisk support är tillgänglig via[Aspose.Words forum](https://forum.aspose.com/c/words/8).
+ Ja, du kan selektivt tillämpa`KeepWithNext` egenskap till specifika rader eller stycken i tabellen för att styra vilka delar som ska hålla ihop.
 
-### Kan jag köpa en tillfällig licens för Aspose.Words för .NET?
- Ja, du kan skaffa en tillfällig licens[här](https://purchase.aspose.com/temporary-license/).
+### Fungerar den här metoden med stora bord?
+
+För mycket stora tabeller kan Word fortfarande dela upp dem över sidor om det inte finns tillräckligt med utrymme för att få plats med hela tabellen på en sida. Överväg att justera tabellens formatering eller marginaler för att passa större tabeller.
+
+### Kan jag använda den här metoden med andra dokumentformat?
+
+Ja! Aspose.Words för .NET stöder många format som DOC, DOCX, PDF och andra. Samma metod fungerar i alla format som stöder tabeller.
+
+### Är Aspose.Words för .NET ett gratis bibliotek?
+
+ Aspose.Words för .NET erbjuder en gratis provperiod, men för full tillgång till alla funktioner måste du köpa en licens. Du kan utforska licensalternativ på[Aspose köpsida](https://purchase.aspose.com/buy).

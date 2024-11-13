@@ -1,27 +1,27 @@
 ---
-title: Imposta il sistema di cartelle dei caratteri e la cartella personalizzata
-linktitle: Imposta il sistema di cartelle dei caratteri e la cartella personalizzata
+title: Imposta i font, le cartelle di sistema e le cartelle personalizzate
+linktitle: Imposta i font, le cartelle di sistema e le cartelle personalizzate
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come impostare cartelle di caratteri di sistema e personalizzate nei documenti di Word utilizzando Aspose.Words per .NET, assicurando che i tuoi documenti vengano visualizzati correttamente in ambienti diversi.
+description: Scopri come impostare le cartelle dei font di sistema e personalizzati nei documenti Word utilizzando Aspose.Words per .NET, assicurandoti che i tuoi documenti vengano visualizzati correttamente in diversi ambienti.
 type: docs
 weight: 10
 url: /it/net/working-with-fonts/set-fonts-folders-system-and-custom-folder/
 ---
 ## Introduzione
 
-Immagina di creare un documento con uno stile di carattere unico, solo per scoprire che i caratteri non vengono visualizzati correttamente su un altro computer. Frustrante, vero? È qui che entra in gioco la configurazione delle cartelle dei caratteri. Con Aspose.Words per .NET, puoi definire cartelle di caratteri di sistema e personalizzate per garantire che i tuoi documenti abbiano sempre l'aspetto previsto. Vediamo come puoi raggiungere questo obiettivo.
+Immagina di creare un documento con uno stile di font unico, solo per scoprire che i font non vengono visualizzati correttamente su un'altra macchina. Frustrante, vero? Ecco dove entra in gioco la configurazione delle cartelle dei font. Con Aspose.Words per .NET, puoi definire cartelle di font di sistema e personalizzate per garantire che i tuoi documenti abbiano sempre l'aspetto desiderato. Immergiamoci in come puoi ottenere questo risultato.
 
 ## Prerequisiti
 
 Prima di iniziare, assicurati di avere quanto segue:
 
--  Aspose.Words per .NET Library: se non l'hai già fatto, scaricalo[Qui](https://releases.aspose.com/words/net/).
+-  Aspose.Words per la libreria .NET: se non l'hai ancora fatto, scaricalo[Qui](https://releases.aspose.com/words/net/).
 - Ambiente di sviluppo: un IDE come Visual Studio.
 - Conoscenza di base di C#: la familiarità con C# ti aiuterà a seguire gli esempi di codice.
 
-## Importa spazi dei nomi
+## Importazione degli spazi dei nomi
 
-Innanzitutto, importa gli spazi dei nomi necessari nel tuo progetto:
+Per prima cosa, importa gli spazi dei nomi necessari nel tuo progetto:
 
 ```csharp
 using System;
@@ -30,56 +30,56 @@ using Aspose.Words;
 using Aspose.Words.Fonts;
 ```
 
-Ora suddividiamo il processo in semplici passaggi.
+Ora scomponiamo il processo in semplici passaggi.
 
 ## Passaggio 1: caricare il documento
 
- Per iniziare, carica il tuo documento Word in un Aspose.Words`Document` oggetto. Questo documento sarà quello in cui desideri impostare le cartelle dei caratteri.
+ Per iniziare, carica il tuo documento Word in Aspose.Words`Document` oggetto. Questo documento sarà quello in cui vuoi impostare le cartelle dei font.
 
 ```csharp
-// Percorso della directory dei documenti
+// Percorso alla directory del documento
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Passaggio 2: inizializza le impostazioni dei caratteri
+## Passaggio 2: inizializzare le impostazioni del carattere
 
- Crea una nuova istanza di`FontSettings`. Questo oggetto ti permetterà di gestire le fonti dei caratteri.
+ Crea una nuova istanza di`FontSettings`Questo oggetto ti consentirà di gestire le fonti dei font.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
 ```
 
-## Passaggio 3: recuperare le origini dei caratteri di sistema
+## Passaggio 3: Recupera le origini dei font di sistema
 
-Recupera le origini dei caratteri di sistema predefinite. Su un computer Windows, questo in genere include il file "Windows\Fonts\"rubrica.
+Recupera le fonti dei font di sistema predefinite. Su una macchina Windows, questo include in genere "Windows\Fonts\" directory.
 
 ```csharp
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
 ```
 
-## Passaggio 4: aggiungi una cartella di caratteri personalizzata
+## Passaggio 4: aggiungere una cartella di font personalizzata
 
-Aggiungi una cartella personalizzata che contenga i tuoi caratteri aggiuntivi. Ciò è utile se hai font specifici non installati nella directory dei font di sistema.
+Aggiungi una cartella personalizzata che contiene i tuoi font aggiuntivi. Questo è utile se hai font specifici non installati nella directory dei font di sistema.
 
 ```csharp
 FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
 fontSources.Add(folderFontSource);
 ```
 
-## Passaggio 5: aggiorna le origini dei caratteri
+## Passaggio 5: Aggiorna le origini dei font
 
- Converti nuovamente l'elenco delle origini dei caratteri in un array e impostalo su`FontSettings` oggetto.
+ Convertire l'elenco delle origini dei font in un array e impostarlo su`FontSettings` oggetto.
 
 ```csharp
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 fontSettings.SetFontsSources(updatedFontSources);
 ```
 
-## Passaggio 6: applica le impostazioni dei caratteri al documento
+## Passaggio 6: applicare le impostazioni del carattere al documento
 
- Infine, applica il configurato`FontSettings` al documento e salvarlo nel formato desiderato, ad esempio PDF.
+ Infine, applicare la configurazione`FontSettings` al tuo documento e salvalo nel formato desiderato, ad esempio PDF.
 
 ```csharp
 doc.FontSettings = fontSettings;
@@ -88,26 +88,26 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersSystemAndCustomFolder.pdf");
 
 ## Conclusione
 
-Ed ecco qua! Seguendo questi passaggi puoi assicurarti che i tuoi documenti Word utilizzino i caratteri corretti, siano essi caratteri di sistema o personalizzati archiviati in una directory specifica. Questa configurazione aiuta a mantenere l'integrità dell'aspetto del documento in ambienti diversi.
+Ed ecco fatto! Seguendo questi passaggi, puoi assicurarti che i tuoi documenti Word utilizzino i font corretti, che siano font di sistema o personalizzati archiviati in una directory specifica. Questa configurazione aiuta a mantenere l'integrità dell'aspetto del tuo documento in diversi ambienti.
 
 ## Domande frequenti
 
-### Cosa succede se manca un carattere sia nella cartella di sistema che in quella personalizzata?
+### Cosa succede se un font manca sia nella cartella di sistema che in quella personalizzata?
 
-Aspose.Words utilizzerà un carattere predefinito per sostituire il carattere mancante, garantendo che il documento rimanga leggibile.
+Aspose.Words utilizzerà un font predefinito per sostituire il font mancante, garantendo così la leggibilità del documento.
 
-### Posso aggiungere più cartelle di caratteri personalizzati?
+### Posso aggiungere più cartelle di font personalizzati?
 
- Sì, puoi aggiungere più cartelle di caratteri personalizzati ripetendo il processo di creazione`FolderFontSource` oggetti e aggiungendoli all'elenco delle origini dei caratteri.
+ Sì, puoi aggiungere più cartelle di font personalizzati ripetendo il processo di creazione`FolderFontSource` oggetti e aggiungerli all'elenco delle sorgenti dei font.
 
-### È possibile utilizzare percorsi di rete per cartelle di caratteri personalizzati?
+### È possibile utilizzare percorsi di rete per cartelle di font personalizzati?
 
- Sì, puoi specificare un percorso di rete nel file`FolderFontSource` costruttore.
+ Sì, puoi specificare un percorso di rete nel`FolderFontSource` costruttore.
 
 ### Quali formati di file supporta Aspose.Words per il salvataggio dei documenti?
 
-Aspose.Words supporta vari formati, inclusi DOCX, PDF, HTML e altri.
+Aspose.Words supporta vari formati, tra cui DOCX, PDF, HTML e altri.
 
-### Come gestisco le notifiche di sostituzione dei caratteri?
+### Come gestisco le notifiche di sostituzione dei font?
 
- È possibile gestire le notifiche di sostituzione dei caratteri utilizzando il file`FontSettings` classe`FontSubstitutionWarning`evento.
+ È possibile gestire le notifiche di sostituzione dei font utilizzando`FontSettings` di classe`FontSubstitutionWarning`evento.

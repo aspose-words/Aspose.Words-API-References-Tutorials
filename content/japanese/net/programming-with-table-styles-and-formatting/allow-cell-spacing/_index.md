@@ -15,7 +15,7 @@ Aspose.Words for .NET を使用して表のセルの間隔を設定する方法�
 
 始める前に、必要なものがすべて揃っていることを確認しましょう。
 
-- Aspose.Words for .NET: Aspose.Words for .NET がインストールされている必要があります。ここからダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
+- Aspose.Words for .NET: Aspose.Words for .NET がインストールされている必要があります。ダウンロードはこちらから行えます。[ここ](https://releases.aspose.com/words/net/).
 - 開発環境: Visual Studio のような開発環境。
 - C# の基本的な理解: C# プログラミングに精通していることが必須です。
 
@@ -37,7 +37,7 @@ using Aspose.Words.Tables;
 
 まず最初に、Visual Studio でプロジェクトをセットアップしましょう。
 
-### ステップ 1.1: 新しいプロジェクトを作成する
+### ステップ1.1: 新しいプロジェクトを作成する
 
 Visual Studio を開き、新しい C# コンソール アプリケーションを作成します。「TableCellSpacingDemo」のような名前を付けます。
 
@@ -57,7 +57,7 @@ Aspose.Words for .NET をプロジェクトに追加します。これは、NuGe
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-### ステップ2.2: ドキュメントを読み込む
+### ステップ 2.2: ドキュメントを読み込む
 
 次に、`Document` Aspose.Words のクラス。
 
@@ -113,7 +113,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.AllowCellSpacing.docx");
 
 ### Aspose.Words for .NET とは何ですか?
 
-Aspose.Words for .NET は、開発者がプログラムによって Word 文書を作成、操作、変換できるようにする強力なライブラリです。
+Aspose.Words for .NET は、開発者がプログラムで Word 文書を作成、操作、変換できるようにする強力なライブラリです。
 
 ### Aspose.Words for .NET を他のプログラミング言語で使用できますか?
 
@@ -125,7 +125,7 @@ Visual Studio の NuGet パッケージ マネージャーを使用して、Aspo
 
 ### Aspose.Words for .NET の無料試用版はありますか?
 
-はい、無料トライアルはここからダウンロードできます。[ここ](https://releases.aspose.com/).
+はい、無料トライアルは以下からダウンロードできます。[ここ](https://releases.aspose.com/).
 
 ### Aspose.Words for .NET に関する詳細なドキュメントはどこで入手できますか?
 

@@ -2,23 +2,23 @@
 title: Yorum Ekle
 linktitle: Yorum Ekle
 second_title: Aspose.Words Belge İşleme API'si
-description: Rehberimizi kullanarak Aspose.Words for .NET'i kullanarak Word belgelerinize nasıl yorum ekleyeceğinizi öğrenin. Belge işbirliği sürecinizi zahmetsizce geliştirin.
+description: Aspose.Words for .NET'i kullanarak Word belgelerinize yorum eklemeyi rehberimizle öğrenin. Belge işbirliği sürecinizi zahmetsizce geliştirin.
 type: docs
 weight: 10
 url: /tr/net/working-with-comments/add-comments/
 ---
 ## giriiş
 
-Aspose.Words for .NET kullanarak Word belgelerinize yorum eklemeyle ilgili ayrıntılı kılavuzumuza hoş geldiniz! Yorumları programlı bir şekilde dahil ederek belge inceleme sürecinizi kolaylaştırmak istiyorsanız doğru yere geldiniz. Bu eğitim, ortamınızı ayarlamaktan Word belgelerinize yorum yazmaya ve kaydetmeye kadar bilmeniz gereken her şeyde size yol gösterecektir. Haydi hemen konuya dalalım ve belge işbirliğini çocuk oyuncağı haline getirelim!
+Aspose.Words for .NET kullanarak Word belgelerinize yorum ekleme konusunda detaylı rehberimize hoş geldiniz! Yorumları programatik olarak dahil ederek belge inceleme sürecinizi kolaylaştırmak istiyorsanız doğru yerdesiniz. Bu eğitim, ortamınızı kurmaktan Word belgelerinize yorum yazmaya ve kaydetmeye kadar bilmeniz gereken her şeyi size anlatacak. Hadi başlayalım ve belge iş birliğini kolaylaştıralım!
 
-## Önkoşullar
+## Ön koşullar
 
-Başlamadan önce aşağıdaki önkoşulların mevcut olduğundan emin olun:
+Başlamadan önce aşağıdaki ön koşulların mevcut olduğundan emin olun:
 
-1. Aspose.Words for .NET: Aspose.Words for .NET'in kurulu olması gerekir. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
-2. .NET Framework: Makinenizde .NET Framework'ün kurulu olduğundan emin olun.
-3. Geliştirme Ortamı: Kodunuzu yazmak ve yürütmek için Visual Studio benzeri bir IDE.
-4. Temel C# Bilgisi: C# programlama diline aşinalık, örnekleri takip etmenize yardımcı olacaktır.
+1. Aspose.Words for .NET: Aspose.Words for .NET'in yüklü olması gerekir. Buradan indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+2. .NET Framework: Bilgisayarınızda .NET Framework'ün yüklü olduğundan emin olun.
+3. Geliştirme Ortamı: Kodunuzu yazmak ve çalıştırmak için Visual Studio benzeri bir IDE.
+4. Temel C# Bilgisi: C# programlama diline aşina olmanız örnekleri takip etmenize yardımcı olacaktır.
 
 ## Ad Alanlarını İçe Aktar
 
@@ -29,11 +29,11 @@ using System;
 using Aspose.Words;
 ```
 
-Şimdi süreci takip edilmesi kolay adımlara ayıralım. Her adımda mantığı ve işlevselliği anlamanıza yardımcı olacak ayrıntılı bir açıklama yer alacaktır.
+Şimdi, süreci takip etmesi kolay adımlara bölelim. Her adım, mantığı ve işlevselliği anlamanıza yardımcı olacak ayrıntılı bir açıklama içerecektir.
 
-## 1. Adım: Belge Dizininizi Kurun
+## Adım 1: Belge Dizininizi Ayarlayın
 
- Öncelikle belgenizin kaydedileceği dizini tanımlamamız gerekiyor. Bir yer tutucu kullanacağız`YOUR DOCUMENT DIRECTORY` bunu gerçek dizin yolunuzla değiştirmeniz gerekir.
+ İlk olarak, belgenizin kaydedileceği dizini tanımlamamız gerekiyor. Bir yer tutucu kullanacağız`YOUR DOCUMENT DIRECTORY` Bunu gerçek dizin yolunuzla değiştirmeniz gerekir.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -41,49 +41,48 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Adım 2: Belgeyi Başlatın
 
-Daha sonra yeni bir belge ve DocumentBuilder nesnesini başlatacağız. DocumentBuilder belgeyi oluşturmamıza ve değiştirmemize yardımcı olur.
+Sonra, yeni bir belge ve bir DocumentBuilder nesnesi başlatacağız. DocumentBuilder, belgeyi oluşturmamıza ve değiştirmemize yardımcı olur.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 3. Adım: Belgeye Metin Ekleme
+## Adım 3: Belgeye Metin Ekleyin
 
-DocumentBuilder'ı kullanarak belgeye bir miktar metin ekleyeceğiz. Bu metin yorumumuzu ekleyeceğimiz yer olacaktır.
+DocumentBuilder'ı kullanarak belgeye biraz metin ekleyeceğiz. Bu metin yorumumuzu ekleyeceğimiz yer olacak.
 
 ```csharp
 builder.Write("Some text is added.");
 ```
 
-## 4. Adım: Yorum Oluşturun ve Ekleyin
+## Adım 4: Yorum Oluşturun ve Ekleyin
 
-Şimdi yorum oluşturmanın zamanı geldi. Belgeyi, yazarın adını, baş harflerini ve tarihi belirterek yeni bir Yorum nesnesini başlatacağız.
+Şimdi bir yorum oluşturma zamanı. Belgeyi, yazar adını, baş harfleri ve tarihi belirten yeni bir Yorum nesnesi başlatacağız.
 
 ```csharp
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
 ```
 
-## Adım 5: Yorumu Paragrafa Eklemek
+## Adım 5: Yorumlara İçerik Ekleyin
 
-Yorumu metni eklediğimiz mevcut paragrafa eklememiz gerekiyor. Bu, yorumun paragrafa eklenmesiyle yapılır.
+Son olarak yoruma içerik ekleyeceğiz. Yorum metnini tutmak için yeni bir Paragraf ve Çalıştır oluşturacağız, sonra bunları yoruma ekleyeceğiz.
+
+```csharp
+comment.SetText("Comment text.");
+```
+
+## Adım 6: Yorumu Paragrafa Ekleyin
+
+Metni eklediğimiz geçerli paragrafa yorumu eklememiz gerekiyor. Bu, yorumu paragrafa ekleyerek yapılır.
 
 ```csharp
 builder.CurrentParagraph.AppendChild(comment);
 ```
 
-## 6. Adım: Yoruma İçerik Ekleyin
-
-Son olarak yoruma içerik ekleyeceğiz. Yorum metnini tutmak için yeni bir Paragraf ve Çalıştır oluşturacağız, ardından bunları yoruma ekleyeceğiz.
-
-```csharp
-comment.Paragraphs.Add(new Paragraph(doc));
-comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
-```
-
 ## Adım 7: Belgeyi Kaydedin
 
-Son adım, belgeyi yorumlarla birlikte kaydetmektir. Dizini ve dosya adını belirteceğiz.
+Son adım, belgeyi yorumlarla kaydetmektir. Dizin ve dosya adını belirteceğiz.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithComments.AddComments.docx");
@@ -91,26 +90,26 @@ doc.Save(dataDir + "WorkingWithComments.AddComments.docx");
 
 ## Çözüm
 
-İşte burada! Aspose.Words for .NET'i kullanarak bir Word belgesine başarıyla yorum eklediniz. Bu güçlü özellik, belge inceleme sürecinizi büyük ölçüde geliştirebilir, işbirliği yapmayı ve geri bildirimde bulunmayı kolaylaştırabilir. Belge yönetimi görevlerinizi daha da kolaylaştırmak için Aspose.Words'ün diğer özelliklerini keşfetmeyi unutmayın.
+İşte oldu! Aspose.Words for .NET kullanarak bir Word belgesine yorumları başarıyla eklediniz. Bu güçlü özellik, belge inceleme sürecinizi büyük ölçüde iyileştirebilir, işbirliği yapmayı ve geri bildirimi iletmeyi kolaylaştırabilir. Belge yönetimi görevlerinizi daha da kolaylaştırmak için Aspose.Words'ün diğer yeteneklerini keşfetmeyi unutmayın.
 
-## SSS'ler
+## SSS
 
 ### Aspose.Words for .NET nedir?
 
-Aspose.Words for .NET, geliştiricilerin .NET dillerini kullanarak Word belgelerini programlı olarak oluşturmasına, yönetmesine ve dönüştürmesine olanak tanıyan güçlü bir API'dir.
+Aspose.Words for .NET, geliştiricilerin .NET dillerini kullanarak Word belgelerini programlı bir şekilde oluşturmalarına, düzenlemelerine ve dönüştürmelerine olanak tanıyan güçlü bir API'dir.
 
 ### Tek bir belgeye birden fazla yorum ekleyebilir miyim?
 
-Evet, farklı paragraflara veya metin dizilerine yorum oluşturma ve ekleme işlemini tekrarlayarak tek bir belgeye birden fazla yorum ekleyebilirsiniz.
+Evet, farklı paragraflara veya metin bölümlerine yorum oluşturma ve ekleme işlemini tekrarlayarak tek bir belgeye birden fazla yorum ekleyebilirsiniz.
 
 ### Yorumların görünümünü nasıl özelleştirebilirim?
 
-Aspose.Words yorumların içeriğine ve yapısına odaklanırken görünüm, Word'ün yerleşik biçimlendirme özellikleri kullanılarak özelleştirilebilir.
+Aspose.Words yorumların içeriğine ve yapısına odaklanırken, görünüm Word'ün yerleşik biçimlendirme özellikleri kullanılarak özelleştirilebilir.
 
-### Yorumları programlı olarak kaldırmak mümkün mü?
+### Yorumları programatik olarak kaldırmak mümkün müdür?
 
-Evet, belgedeki yorumları yineleyerek ve gerektiğinde kaldırarak yorumları programlı bir şekilde kaldırabilirsiniz.
+Evet, belgedeki yorumlar arasında gezinerek ve gerektiğinde bunları kaldırarak yorumları programlı bir şekilde kaldırabilirsiniz.
 
-### Yorumlara yanıt ekleyebilir miyim?
+### Yorumlara cevap ekleyebilir miyim?
 
-Aspose.Words, zincir halindeki yorumlarla çalışmanıza olanak tanıyarak, daha ayrıntılı tartışmalar için mevcut yorumlara yanıtlar eklemenizi sağlar.
+Aspose.Words, daha ayrıntılı tartışmalar için mevcut yorumlara yanıtlar eklemenize olanak tanıyan, dizili yorumlarla çalışmanıza olanak tanır.

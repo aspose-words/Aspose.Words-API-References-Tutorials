@@ -1,25 +1,25 @@
 ---
-title: Przejdź do zakładki Koniec w dokumencie programu Word
-linktitle: Przejdź do zakładki Koniec w dokumencie programu Word
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak przejść do końca zakładki w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z naszym szczegółowym przewodnikiem krok po kroku, aby precyzyjnie manipulować dokumentami.
+title: Przenieś do końca zakładki w dokumencie Word
+linktitle: Przenieś do końca zakładki w dokumencie Word
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak przejść do końca zakładki w dokumencie Word za pomocą Aspose.Words dla .NET. Postępuj zgodnie z naszym szczegółowym przewodnikiem krok po kroku, aby precyzyjnie manipulować dokumentem.
 type: docs
 weight: 10
 url: /pl/net/add-content-using-documentbuilder/move-to-bookmark-end/
 ---
 ## Wstęp
 
-Hej, kolego koderze! Czy kiedykolwiek zaplątałeś się w sieć manipulacji dokumentami programu Word, próbując dowiedzieć się, jak precyzyjnie przejść do końca zakładki i dodać treść zaraz po niej? Cóż, dzisiaj jest twój szczęśliwy dzień! Zagłębiamy się w Aspose.Words dla .NET, potężną bibliotekę, która pozwala obsługiwać dokumenty programu Word jak profesjonalista. Ten samouczek przeprowadzi Cię przez kolejne kroki, aby przejść na koniec zakładki i wstawić tam tekst. Wyruszmy z tym programem w trasę!
+Hej, kolego programisto! Czy kiedykolwiek znalazłeś się w sieci manipulacji dokumentami Worda, próbując rozgryźć, jak precyzyjnie przejść do końca zakładki i dodać zawartość zaraz po niej? Cóż, dziś jest twój szczęśliwy dzień! Zanurzamy się głęboko w Aspose.Words dla .NET, potężnej bibliotece, która pozwala obsługiwać dokumenty Worda jak profesjonalista. Ten samouczek przeprowadzi cię przez kroki, aby przejść do końca zakładki i wstawić tam tekst. Zaczynajmy!
 
-## Warunki wstępne
+## Wymagania wstępne
 
 Zanim zaczniemy, upewnijmy się, że mamy wszystko, czego potrzebujemy:
 
--  Visual Studio: Możesz go pobrać z[Tutaj](https://visualstudio.microsoft.com/).
--  Aspose.Words dla .NET: Pobierz go z[link do pobrania](https://releases.aspose.com/words/net/).
--  Ważna licencja Aspose.Words: Możesz uzyskać licencję tymczasową[Tutaj](https://purchase.aspose.com/temporary-license/) jeśli go nie masz.
+-  Visual Studio: Możesz pobrać je ze strony[Tutaj](https://visualstudio.microsoft.com/).
+-  Aspose.Words dla .NET: Pobierz z[link do pobrania](https://releases.aspose.com/words/net/).
+-  Ważna licencja Aspose.Words: Możesz uzyskać tymczasową licencję[Tutaj](https://purchase.aspose.com/temporary-license/) jeśli nie masz.
 
-I oczywiście podstawowa znajomość C# i .NET będzie bardzo przydatna.
+Oczywiście, podstawowa znajomość języka C# i .NET bardzo się przyda.
 
 ## Importuj przestrzenie nazw
 
@@ -31,19 +31,19 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Proste, prawda? Przejdźmy teraz do sedna sprawy.
+Proste, prawda? A teraz przejdźmy do sedna.
 
-porządku, podzielmy to na zrozumiałe etapy. Każdy krok będzie miał swój własny nagłówek i szczegółowe wyjaśnienie.
+Dobrze, podzielmy to na przyswajalne kroki. Każdy krok będzie miał swój własny nagłówek i szczegółowe wyjaśnienie.
 
 ## Krok 1: Skonfiguruj swój projekt
 
 ### Utwórz nowy projekt
 
- Otwórz program Visual Studio i utwórz nowy projekt aplikacji konsolowej C#. Nazwij to jakoś`BookmarkEndExample`. To będzie nasz plac zabaw dla tego samouczka.
+ Otwórz program Visual Studio i utwórz nowy projekt aplikacji konsoli C#. Nazwij go w następujący sposób`BookmarkEndExample`. To będzie nasz plac zabaw w tym samouczku.
 
 ### Zainstaluj Aspose.Words dla .NET
 
- Następnie musisz zainstalować Aspose.Words dla .NET. Możesz to zrobić za pomocą Menedżera pakietów NuGet. Po prostu wyszukaj`Aspose.Words` i naciśnij instaluj. Alternatywnie użyj konsoli Menedżera pakietów:
+ Następnie musisz zainstalować Aspose.Words dla .NET. Możesz to zrobić za pomocą NuGet Package Manager. Wystarczy wyszukać`Aspose.Words` i kliknij instaluj. Alternatywnie, użyj Konsoli Menedżera Pakietów:
 
 ```bash
 Install-Package Aspose.Words
@@ -68,31 +68,31 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
- Pamiętaj o wymianie`YOUR DOCUMENT DIRECTORY` z rzeczywistą ścieżką, w której zapisano dokument.
+ Pamiętaj o wymianie`YOUR DOCUMENT DIRECTORY` z rzeczywistą ścieżką, pod którą zapisany jest Twój dokument.
 
-## Krok 3: Zainicjuj DocumentBuider
+## Krok 3: Zainicjuj DocumentBuilder
 
-DocumentBuilder to magiczna różdżka do manipulowania dokumentami programu Word. Stwórzmy instancję:
+DocumentBuilder to Twoja magiczna różdżka do manipulowania dokumentami Worda. Utwórzmy instancję:
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 4: Przejdź do końca zakładek
+## Krok 4: Przejdź do końca zakładki
 
 ### Zrozumienie MoveToBookmark
 
- The`MoveToBookmark`Metoda umożliwia przejście do określonej zakładki w dokumencie. Sygnatura metody to:
+Ten`MoveToBookmark`Metoda pozwala na przejście do konkretnej zakładki w dokumencie. Podpis metody to:
 
 ```csharp
 bool MoveToBookmark(string bookmarkName, bool isBookmarkStart, bool isBookmarkEnd);
 ```
 
-- `bookmarkName`: nazwa zakładki, do której chcesz przejść.
-- `isBookmarkStart` : Jeśli ustawione na`true`, przenosi na początek zakładki.
-- `isBookmarkEnd` : Jeśli ustawione na`true`, przenosi na koniec zakładki.
+- `bookmarkName`: Nazwa zakładki, do której chcesz przejść.
+- `isBookmarkStart` :Jeśli ustawione na`true`, przenosi na początek zakładki.
+- `isBookmarkEnd` :Jeśli ustawione na`true`, przechodzi na koniec zakładki.
 
-### Zaimplementuj metodę MoveToBookmark
+### Implementacja metody MoveToBookmark
 
  Przejdźmy teraz na koniec zakładki`MyBookmark1`:
 
@@ -103,13 +103,13 @@ builder.MoveToBookmark("MyBookmark1", false, true);
 ## Krok 5: Wstaw tekst na końcu zakładki
 
 
-Gdy znajdziesz się na końcu zakładki, możesz wstawić tekst lub inną treść. Dodajmy prostą linijkę tekstu:
+Gdy jesteś na końcu zakładki, możesz wstawić tekst lub inną treść. Dodajmy prostą linię tekstu:
 
 ```csharp
 builder.Writeln("This is a bookmark.");
 ```
 
-I tyle! Udało Ci się przejść na koniec zakładki i wstawić tam tekst.
+I to wszystko! Udało Ci się przejść na koniec zakładki i wstawić tam tekst.
 
 ## Krok 6: Zapisz dokument
 
@@ -120,30 +120,30 @@ Na koniec nie zapomnij zapisać zmian:
 doc.Save(dataDir + "UpdatedBookmarks.docx");
 ```
 
- Możesz teraz otworzyć zaktualizowany dokument i zobaczyć tekst „To jest zakładka”. zaraz po`MyBookmark1`.
+ Teraz możesz otworzyć zaktualizowany dokument i zobaczyć tekst „To jest zakładka”. zaraz po`MyBookmark1`.
 
 ## Wniosek
 
-Masz to! Właśnie nauczyłeś się, jak przejść na koniec zakładki w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Ta zaawansowana funkcja może zaoszczędzić mnóstwo czasu i wysiłku, dzięki czemu zadania przetwarzania dokumentów będą znacznie wydajniejsze. Pamiętaj, praktyka czyni mistrza. Dlatego eksperymentuj z różnymi zakładkami i strukturami dokumentów, aby opanować tę umiejętność.
+Oto masz! Właśnie nauczyłeś się, jak przejść na koniec zakładki w dokumencie Word za pomocą Aspose.Words dla .NET. Ta potężna funkcja może zaoszczędzić Ci mnóstwo czasu i wysiłku, czyniąc Twoje zadania przetwarzania dokumentów znacznie bardziej wydajnymi. Pamiętaj, praktyka czyni mistrza. Więc eksperymentuj z różnymi zakładkami i strukturami dokumentów, aby opanować tę umiejętność.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### 1. Czy mogę przejść na początek zakładki zamiast na koniec?
+### 1. Czy mogę przejść na początek zakładki zamiast na jej koniec?
 
- Absolutnie! Po prostu ustaw`isBookmarkStart` parametr do`true`I`isBookmarkEnd` Do`false` w`MoveToBookmark` metoda.
+ Absolutnie! Po prostu ustaw`isBookmarkStart` parametr do`true` I`isBookmarkEnd` Do`false` w`MoveToBookmark` metoda.
 
-### 2. Co się stanie, jeśli nazwa mojej zakładki jest nieprawidłowa?
+### 2. Co zrobić, jeśli nazwa mojej zakładki jest nieprawidłowa?
 
- Jeśli nazwa zakładki jest niepoprawna lub nie istnieje, plik`MoveToBookmark` metoda powróci`false`, a moduł DocumentBuilder nie zostanie przeniesiony do żadnej lokalizacji.
+ Jeżeli nazwa zakładki jest nieprawidłowa lub nie istnieje,`MoveToBookmark` metoda zwróci`false`, a DocumentBuilder nie zostanie przeniesiony w żadne miejsce.
 
-### 3. Czy na końcu zakładki mogę wstawić inny rodzaj treści?
+### 3. Czy mogę wstawić inne typy treści na końcu zakładki?
 
- Tak, DocumentBuilder umożliwia wstawianie różnych typów treści, takich jak tabele, obrazy i inne. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) aby uzyskać więcej szczegółów.
+ Tak, DocumentBuilder pozwala na wstawianie różnych typów treści, takich jak tabele, obrazy i inne. Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) po więcej szczegółów.
 
 ### 4. Jak uzyskać tymczasową licencję na Aspose.Words?
 
- Możesz uzyskać tymczasową licencję od[Strona Aspose](https://purchase.aspose.com/temporary-license/).
+ Możesz uzyskać tymczasową licencję od[Strona internetowa Aspose](https://purchase.aspose.com/temporary-license/).
 
 ### 5. Czy Aspose.Words dla .NET jest darmowy?
 
-Aspose.Words dla .NET jest produktem komercyjnym, ale możesz uzyskać bezpłatną wersję próbną na stronie[Strona Aspose](https://releases.aspose.com/).
+Aspose.Words dla platformy .NET to produkt komercyjny, ale możesz uzyskać bezpłatną wersję próbną na stronie[Strona internetowa Aspose](https://releases.aspose.com/).

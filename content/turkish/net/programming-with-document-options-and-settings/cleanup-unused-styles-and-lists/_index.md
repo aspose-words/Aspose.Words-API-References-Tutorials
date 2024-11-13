@@ -1,6 +1,6 @@
 ---
-title: Kullanılmayan Stilleri ve Listeleri Temizleme
-linktitle: Kullanılmayan Stilleri ve Listeleri Temizleme
+title: Kullanılmayan Stilleri ve Listeleri Temizle
+linktitle: Kullanılmayan Stilleri ve Listeleri Temizle
 second_title: Aspose.Words Belge İşleme API'si
 description: Kullanılmayan stilleri ve listeleri kaldırarak Word belgelerinizi Aspose.Words for .NET ile temizleyin. Belgelerinizi zahmetsizce düzenlemek için bu adım adım kılavuzu izleyin.
 type: docs
@@ -9,61 +9,61 @@ url: /tr/net/programming-with-document-options-and-settings/cleanup-unused-style
 ---
 ## giriiş
 
-Selam! Hiç Word belgelerinizin biraz karmaşıklaştığını hissettiniz mi? Bilirsiniz, orada öylece duran, yer kaplayan ve belgenizin olması gerekenden daha karmaşık görünmesine neden olan kullanılmayan stiller ve listeler? Şanslısın! Bugün, kullanılmayan stilleri ve listeleri temizlemek için Aspose.Words for .NET'i kullanarak küçük ve güzel bir numaraya dalıyoruz. Belgenize güzel, canlandırıcı bir banyo yaptırmak gibidir. O halde kahvenizi alın, arkanıza yaslanın ve başlayalım!
+Merhaba! Word belgelerinizin biraz dağınık olduğunu hiç hissettiniz mi? Biliyorsunuz, orada öylece duran, yer kaplayan ve belgenizin olması gerekenden daha karmaşık görünmesini sağlayan kullanılmayan stiller ve listeler? Şanslısınız! Bugün, kullanılmayan stilleri ve listeleri temizlemek için .NET için Aspose.Words'ü kullanarak harika bir küçük numaraya dalacağız. Belgenize güzel, ferahlatıcı bir banyo yaptırmak gibi. O halde kahvenizi alın, arkanıza yaslanın ve başlayalım!
 
-## Önkoşullar
+## Ön koşullar
 
-En ince ayrıntılara dalmadan önce, ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım. İşte hızlı bir kontrol listesi:
+Ayrıntılara dalmadan önce, ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım. İşte hızlı bir kontrol listesi:
 
-- Temel C# Bilgisi: C# programlama konusunda rahat olmalısınız.
--  Aspose.Words for .NET: Bu kütüphanenin kurulu olduğundan emin olun. Değilse indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
-- Geliştirme Ortamı: Visual Studio gibi herhangi bir C# uyumlu IDE.
-- Örnek Belge: Kullanılmayan bazı stillerin ve temizlenmesi gereken listelerin bulunduğu bir Word belgesi.
+- Temel C# Bilgisi: C# programlamayı rahatça anlayabiliyor olmalısınız.
+-  Aspose.Words for .NET: Bu kütüphanenin kurulu olduğundan emin olun. Eğer kurulu değilse, indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+- Geliştirme Ortamı: Visual Studio gibi C# uyumlu herhangi bir IDE.
+- Örnek Belge: Kullanılmayan bazı stiller ve temizlenmesi gereken listeler içeren bir Word belgesi.
 
 ## Ad Alanlarını İçe Aktar
 
-Öncelikle isim alanlarımızı düzene koyalım. Aspose.Words ile çalışmak için birkaç önemli ad alanını içe aktarmanız gerekecek.
+Öncelikle ad alanlarımızı düzenleyelim. Aspose.Words ile çalışmak için birkaç temel ad alanını içe aktarmanız gerekecek.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Cleaning;
 ```
 
-## 1. Adım: Belgenizi Yükleyin
+## Adım 1: Belgenizi Yükleyin
 
-İlk adım, temizlemek istediğiniz belgeyi yüklemektir. Belge dizininizin yolunu belirtmeniz gerekecektir. Burası Word dosyanızın bulunduğu yerdir.
+İlk adım temizlemek istediğiniz belgeyi yüklemektir. Belge dizininize giden yolu belirtmeniz gerekir. Word dosyanız burada bulunur.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Unused styles.docx");
 ```
 
-## 2. Adım: Mevcut Stilleri ve Listeleri Kontrol Edin
+## Adım 2: Mevcut Stilleri ve Listeleri Kontrol Edin
 
-Temizliğe başlamadan önce belgenizde şu anda kaç stil ve listenin bulunduğunu görmek iyi bir fikirdir. Bu bize temizlikten sonra karşılaştırma yapabileceğimiz bir temel verecektir.
+Temizliğe başlamadan önce, belgenizde şu anda kaç tane stil ve liste olduğunu görmek iyi bir fikirdir. Bu, temizlemeden sonra karşılaştırma yapmak için bize bir temel sağlayacaktır.
 
 ```csharp
 Console.WriteLine($"Count of styles before Cleanup: {doc.Styles.Count}");
 Console.WriteLine($"Count of lists before Cleanup: {doc.Lists.Count}");
 ```
 
-## 3. Adım: Temizleme Seçeneklerini Tanımlayın
+## Adım 3: Temizleme Seçeneklerini Tanımlayın
 
-Şimdi temizleme seçeneklerini tanımlamanın zamanı geldi. Bu örnekte kullanılmayan stilleri kaldıracağız ancak kullanılmayan listeleri tutacağız. Bu seçenekleri ihtiyaçlarınıza göre ayarlayabilirsiniz.
+Şimdi temizleme seçeneklerini tanımlama zamanı. Bu örnekte, kullanılmayan stilleri kaldıracağız ancak kullanılmayan listeleri tutacağız. Bu seçenekleri ihtiyaçlarınıza göre ayarlayabilirsiniz.
 
 ```csharp
 CleanupOptions cleanupOptions = new CleanupOptions { UnusedLists = false, UnusedStyles = true };
 ```
 
-## 4. Adım: Temizleme işlemini gerçekleştirin
+## Adım 4: Temizlemeyi Gerçekleştirin
 
-Temizleme seçeneklerimizi ayarladığımızda artık belgeyi temizleyebiliriz. Bu adım, kullanılmayan stilleri kaldıracak ve kullanılmayan listeleri olduğu gibi tutacaktır.
+Temizleme seçeneklerimiz ayarlandığında, artık belgeyi temizleyebiliriz. Bu adım kullanılmayan stilleri kaldıracak ve kullanılmayan listeleri olduğu gibi bırakacaktır.
 
 ```csharp
 doc.Cleanup(cleanupOptions);
 ```
 
-## Adım 5: Temizlemeden Sonra Stilleri ve Listeleri Kontrol Edin
+## Adım 5: Temizlikten Sonra Stilleri ve Listeleri Kontrol Edin
 
 Temizlememizin etkisini görmek için stil ve liste sayısını tekrar kontrol edelim. Bu, kaç stilin kaldırıldığını gösterecektir.
 
@@ -74,7 +74,7 @@ Console.WriteLine($"Count of lists after Cleanup: {doc.Lists.Count}");
 
 ## Adım 6: Temizlenen Belgeyi Kaydedin
 
-Son olarak temizlenmiş belgemizi kaydedelim. Bu, tüm değişikliklerin kaydedilmesini ve belgenizin mümkün olduğunca düzenli olmasını sağlayacaktır.
+Son olarak, temizlenmiş belgemizi kaydedelim. Bu, tüm değişikliklerin kaydedilmesini ve belgenizin mümkün olduğunca düzenli olmasını sağlayacaktır.
 
 ```csharp
 doc.Save(dataDir + "CleanedDocument.docx");
@@ -82,21 +82,21 @@ doc.Save(dataDir + "CleanedDocument.docx");
 
 ## Çözüm
 
-Ve işte karşınızda! Aspose.Words for .NET kullanarak kullanılmayan stilleri ve listeleri kaldırarak Word belgenizi başarıyla temizlediniz. Bu, dijital masanızın dağınıklığını gidermek, belgelerinizi daha yönetilebilir ve verimli hale getirmek gibidir. İyi yapılmış bir iş için kendinizin sırtını sıvazlayın!
+Ve işte karşınızda! Aspose.Words for .NET kullanarak kullanılmayan stilleri ve listeleri kaldırarak Word belgenizi başarıyla temizlediniz. Dijital masanızı düzenlemek, belgelerinizi daha yönetilebilir ve verimli hale getirmek gibi. İyi yapılmış bir iş için kendinize bir övgüde bulunun!
 
-## SSS'ler
+## SSS
 
 ### Aspose.Words for .NET nedir?
-Aspose.Words for .NET, C# kullanarak Word belgelerini programlı olarak oluşturmanıza, değiştirmenize ve dönüştürmenize olanak tanıyan güçlü bir kitaplıktır.
+Aspose.Words for .NET, C# kullanarak Word belgelerini programlı bir şekilde oluşturmanıza, değiştirmenize ve dönüştürmenize olanak tanıyan güçlü bir kütüphanedir.
 
 ### Kullanılmayan stilleri ve listeleri aynı anda kaldırabilir miyim?
-Evet ikisini de ayarlayabilirsiniz`UnusedLists`Ve`UnusedStyles` ile`true` içinde`CleanupOptions` ikisini de kaldırmak için.
+Evet, her ikisini de ayarlayabilirsiniz`UnusedLists` Ve`UnusedStyles` ile`true` içinde`CleanupOptions` ikisini de kaldırmak için.
 
-### Temizleme işlemini geri almak mümkün mü?
-Hayır, temizleme işlemi tamamlandıktan ve belge kaydedildikten sonra değişiklikleri geri alamazsınız. Her zaman orijinal belgenizin yedeğini alın.
+### Temizleme işlemini geri almak mümkün müdür?
+Hayır, temizleme işlemi tamamlandıktan ve belge kaydedildikten sonra değişiklikleri geri alamazsınız. Her zaman orijinal belgenizin bir yedeğini saklayın.
 
-### Aspose.Words for .NET lisansına ihtiyacım var mı?
- Evet, Aspose.Words for .NET tam işlevsellik için lisans gerektirir. Alabilirsin[geçici lisans](https://purchase.aspose.com/temporary-license) veya[bir tane satın al](https://purchase.aspose.com/buy).
+### Aspose.Words for .NET için lisansa ihtiyacım var mı?
+ Evet, Aspose.Words for .NET tam işlevsellik için bir lisans gerektirir. Bir tane alabilirsiniz[geçici lisans](https://purchase.aspose.com/temporary-license) veya[bir tane satın al](https://purchase.aspose.com/buy).
 
-### Daha fazla bilgi ve desteği nerede bulabilirim?
- Ayrıntılı belgeleri bulabilirsiniz[Burada](https://reference.aspose.com/words/net/) ve destek alın[Forumu aspose](https://forum.aspose.com/c/words/8).
+### Daha fazla bilgi ve desteği nereden bulabilirim?
+ Ayrıntılı dokümanları bulabilirsiniz[Burada](https://reference.aspose.com/words/net/) ve destek alın[Aspose forumu](https://forum.aspose.com/c/words/8).

@@ -74,7 +74,7 @@ Slutligen sparar vi dokumentet som en fast HTML-fil. Det är här magin händer!
  Vi kommer att använda`Save` metod för att spara dokumentet med de konfigurerade sparalternativen.
 
 ```csharp
-//Konvertera dokument till fast HTML
+// Konvertera dokument till fast HTML
 doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html", saveOptions);
 ```
 

@@ -1,38 +1,38 @@
 ---
-title: Belgeyi Parolayla Şifrele
-linktitle: Belgeyi Parolayla Şifrele
+title: Belgeyi Parola ile Şifrele
+linktitle: Belgeyi Parola ile Şifrele
 second_title: Aspose.Words Belge İşleme API'si
-description: Bu ayrıntılı, adım adım kılavuzdan Aspose.Words for .NET kullanarak bir belgeyi parolayla nasıl şifreleyeceğinizi öğrenin. Hassas bilgilerinizi zahmetsizce koruyun.
+description: Bu ayrıntılı, adım adım kılavuzda Aspose.Words for .NET kullanarak bir belgeyi parola ile nasıl şifreleyeceğinizi öğrenin. Hassas bilgilerinizi zahmetsizce güvence altına alın.
 type: docs
 weight: 10
 url: /tr/net/programming-with-docsaveoptions/encrypt-document-with-password/
 ---
 ## giriiş
 
-Hiç bir belgeyi parolayla korumaya ihtiyaç duyduğunuzu fark ettiniz mi? Yalnız değilsin. Dijital belgelerin yükselişiyle hassas bilgilerin korunması her zamankinden daha önemli. Aspose.Words for .NET belgelerinizi parolalarla şifrelemenin kusursuz bir yolunu sunar. Bunu günlüğünüze bir kilit koymak gibi düşünün. Yalnızca anahtarı (veya bu durumda şifreyi) bilenler içeriye göz atabilir. Bunu nasıl başarabileceğinizi adım adım ele alalım.
+Hiç kendinizi bir belgeyi parola ile güvence altına alma ihtiyacı içinde buldunuz mu? Yalnız değilsiniz. Dijital dokümantasyonun yükselişiyle, hassas bilgileri korumak her zamankinden daha önemli hale geldi. Aspose.Words for .NET, belgelerinizi parolalarla şifrelemenin kusursuz bir yolunu sunar. Bunu ajandanıza bir kilit takmak olarak düşünün. Sadece anahtarı (veya bu durumda parolayı) olanlar içeri bakabilir. Bunu nasıl başarabileceğinize adım adım bakalım.
 
-## Önkoşullar
+## Ön koşullar
 
-Bazı kodlarla elimizi kirletmeden önce ihtiyacınız olacak birkaç şey var:
-1.  Aspose.Words for .NET: Yapabilirsin[buradan indir](https://releases.aspose.com/words/net/).
-2. Geliştirme Ortamı: Visual Studio veya seçtiğiniz herhangi bir C# IDE.
-3. .NET Framework: Yüklediğinizden emin olun.
-4.  Lisans: Bir ile başlayabilirsiniz[ücretsiz deneme](https://releases.aspose.com/) veya bir tane al[geçici lisans](https://purchase.aspose.com/temporary-license/) tüm özellikler için.
+Kodlarla uğraşmaya başlamadan önce, ihtiyacınız olacak birkaç şey var:
+1.  Aspose.Words for .NET: Şunları yapabilirsiniz:[buradan indirin](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: Visual Studio veya tercih ettiğiniz herhangi bir C# IDE.
+3. .NET Framework: Yüklü olduğundan emin olun.
+4.  Lisans: Bir lisansla başlayabilirsiniz[ücretsiz deneme](https://releases.aspose.com/) veya bir tane al[geçici lisans](https://purchase.aspose.com/temporary-license/) Tüm özellikler için.
 
-Herşeyi aldın mı? Harika! Projemizi oluşturmaya devam edelim.
+Her şey tamam mı? Harika! Projemizi kurmaya geçelim.
 
 ## Ad Alanlarını İçe Aktar
 
-Başlamadan önce gerekli ad alanlarını içe aktarmanız gerekir. Ad alanlarını Kendin Yap projeniz için ihtiyaç duyduğunuz araç seti olarak düşünün.
+Başlamadan önce, gerekli ad alanlarını içe aktarmanız gerekir. Ad alanlarını DIY projeniz için ihtiyaç duyduğunuz araç takımı olarak düşünün.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-## 1. Adım: Bir Belge Oluşturun
+## Adım 1: Bir Belge Oluşturun
 
-İlk önce yeni bir belge oluşturalım. Bu, boş bir sayfa hazırlamaya benzer.
+İlk önce ilk şeyler, yeni bir belge oluşturalım. Bu, boş bir kağıt hazırlamak gibidir.
 
 ```csharp
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
@@ -42,13 +42,13 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ### Açıklama
 
-- dataDir: Bu değişken belgenizin kaydedileceği yolu saklar.
-- Document doc = new Document(): Bu satır yeni bir belgeyi başlatır.
-- DocumentBuilder oluşturucu = yeni DocumentBuilder(doc): DocumentBuilder, belgenize içerik eklemek için kullanışlı bir araçtır.
+- dataDir: Bu değişken belgenizin kaydedileceği yolu depolar.
+- Belge doc = new Document(): Bu satır yeni bir belge başlatır.
+- DocumentBuilder builder = new DocumentBuilder(doc): DocumentBuilder, belgenize içerik eklemek için kullanışlı bir araçtır.
 
-## 2. Adım: İçerik Ekle
+## Adım 2: İçerik Ekle
 
-Artık boş sayfamız olduğuna göre üzerine bir şeyler yazalım. Basit bir “Merhaba dünya!”ya ne dersiniz? Klasik.
+Şimdi boş bir sayfamız olduğuna göre, üzerine bir şeyler yazalım. Basit bir "Merhaba dünya!" ne dersiniz? Klasik.
 
 ```csharp
 builder.Write("Hello world!");
@@ -56,11 +56,11 @@ builder.Write("Hello world!");
 
 ### Açıklama
 
-- builder.Write("Merhaba dünya!"): Bu satır "Merhaba dünya!" metnini ekler. belgenize.
+- builder.Write("Merhaba dünya!"): Bu satır, belgenize "Merhaba dünya!" metnini ekler.
 
-## 3. Adım: Kaydetme Seçeneklerini Yapılandırın
+## Adım 3: Kaydetme Seçeneklerini Yapılandırın
 
-İşte en önemli kısım geliyor; kaydetme seçeneklerini şifre korumasını içerecek şekilde yapılandırmak. Kilidinizin gücüne buradan karar verirsiniz.
+İşte kritik kısım geliyor: kaydetme seçeneklerini parola korumasını içerecek şekilde yapılandırmak. Burada kilidinizin gücüne karar verirsiniz.
 
 ```csharp
 DocSaveOptions saveOptions = new DocSaveOptions { Password = "password" };
@@ -69,11 +69,11 @@ DocSaveOptions saveOptions = new DocSaveOptions { Password = "password" };
 ### Açıklama
 
 - DocSaveOptions saveOptions = new DocSaveOptions: DocSaveOptions sınıfının yeni bir örneğini başlatır.
-- Şifre = "şifre": Belgenin şifresini ayarlar. "Şifre"yi istediğiniz şifreyle değiştirin.
+- Şifre = "şifre": Belge için şifreyi ayarlar. "şifre"yi istediğiniz şifreyle değiştirin.
 
 ## Adım 4: Belgeyi Kaydedin
 
-Son olarak belirtilen seçeneklerle belgemizi kaydedelim. Bu, kilitli günlüğünüzü güvenli bir yerde saklamak gibidir.
+Son olarak, belirtilen seçeneklerle belgemizi kaydedelim. Bu, kilitli günlüğünüzü güvenli bir yerde saklamak gibidir.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithDocSaveOptions.EncryptDocumentWithPassword.docx", saveOptions);
@@ -81,26 +81,26 @@ doc.Save(dataDir + "WorkingWithDocSaveOptions.EncryptDocumentWithPassword.docx",
 
 ### Açıklama
 
-- doc.Save: Belgeyi belirlenen kaydetme seçenekleriyle belirtilen yola kaydeder.
-- dataDir + "WorkingWithDocSaveOptions.EncryptDocumentWithPassword.docx": Belgenin tam yolunu ve dosya adını oluşturur.
+- doc.Save: Belgeyi, tanımlanan kaydetme seçenekleriyle belirtilen yola kaydeder.
+- dataDir + "WorkingWithDocSaveOptions.EncryptDocumentWithPassword.docx": Belge için tam yolu ve dosya adını oluşturur.
 
 ## Çözüm
 
-Ve işte karşınızda! Aspose.Words for .NET kullanarak bir belgeyi parolayla nasıl şifreleyeceğinizi öğrendiniz. Belgelerinizin güvende ve sağlam olmasını sağlayan dijital bir çilingir olmak gibidir. İster hassas iş raporlarınızı ister kişisel notlarınızı güvence altına alıyor olun, bu yöntem basit ama etkili bir çözüm sunar.
+Ve işte karşınızda! Aspose.Words for .NET kullanarak bir belgeyi parola ile nasıl şifreleyeceğinizi öğrendiniz. Bu, dijital bir çilingir olmak, belgelerinizin güvende ve sağlam olduğundan emin olmak gibidir. İster hassas iş raporlarını ister kişisel notları güvence altına alın, bu yöntem basit ama etkili bir çözüm sunar.
 
-## SSS'ler
+## SSS
 
-### Farklı türde bir şifreleme kullanabilir miyim?
- Evet, Aspose.Words for .NET çeşitli şifreleme yöntemlerini destekler. Kontrol edin[dokümantasyon](https://reference.aspose.com/words/net/) daha fazla ayrıntı için.
+### Farklı bir şifreleme türü kullanabilir miyim?
+ Evet, Aspose.Words for .NET çeşitli şifreleme yöntemlerini destekler. Kontrol edin[belgeleme](https://reference.aspose.com/words/net/) Daha detaylı bilgi için.
 
-### Belge parolamı unutursam ne olur?
-Maalesef şifreyi unutursanız belgeye erişemezsiniz. Şifrelerinizi güvende tuttuğunuzdan emin olun!
+### Belge şifremi unutursam ne olur?
+Ne yazık ki, şifrenizi unutursanız, belgeye erişemezsiniz. Şifrelerinizi güvende tuttuğunuzdan emin olun!
 
 ### Mevcut bir belgenin şifresini değiştirebilir miyim?
-Evet, aynı adımları kullanarak mevcut bir belgeyi yükleyebilir ve yeni bir şifreyle kaydedebilirsiniz.
+Evet, aynı adımları kullanarak mevcut bir belgeyi yükleyip yeni bir parola ile kaydedebilirsiniz.
 
-### Parolayı bir belgeden kaldırmak mümkün müdür?
+### Bir belgenin şifresini kaldırmak mümkün müdür?
 Evet, belgeyi şifre belirtmeden kaydederek mevcut şifre korumasını kaldırabilirsiniz.
 
-### Aspose.Words for .NET tarafından sağlanan şifreleme ne kadar güvenli?
-Aspose.Words for .NET güçlü şifreleme standartları kullanarak belgelerinizin iyi korunmasını sağlar.
+### Aspose.Words for .NET tarafından sağlanan şifreleme ne kadar güvenlidir?
+Aspose.Words for .NET, belgelerinizin iyi korunmasını sağlamak için güçlü şifreleme standartları kullanır.

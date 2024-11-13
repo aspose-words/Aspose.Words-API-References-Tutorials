@@ -2,7 +2,7 @@
 title: フローティングテーブルの位置を取得する
 linktitle: フローティングテーブルの位置を取得する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書内のフローティング テーブルの位置を取得する方法を学びます。この詳細なステップ バイ ステップ ガイドでは、知っておく必要のあるすべてのことを説明します。
+description: Aspose.Words for .NET を使用して、Word 文書内のフローティング テーブルの位置を取得する方法を学びます。この詳細なステップ バイ ステップ ガイドでは、知っておく必要のあるすべてのことを説明します。
 type: docs
 weight: 10
 url: /ja/net/programming-with-tables/get-floating-table-position/

@@ -9,7 +9,7 @@ url: /ja/net/clone-and-combine-documents/insert-document-at-replace/
 ---
 ## 導入
 
-ドキュメント マエストロの皆さん、こんにちは。Word ドキュメントを別のドキュメントにシームレスに挿入する方法を解明しようとして、コードにどっぷりつかってしまったことはありませんか? 心配はいりません。今日は、その作業を簡単にするために Aspose.Words for .NET の世界に飛び込みます。この強力なライブラリを使用して、検索と置換操作中に特定のポイントにドキュメントを挿入する方法について、詳細なステップ バイ ステップ ガイドで説明します。Aspose.Words の達人になる準備はできましたか? さあ、始めましょう!
+ドキュメント マエストロの皆さん、こんにちは。Word ドキュメントを別のドキュメントにシームレスに挿入する方法を模索しながら、コードにどっぷりつかってしまったことはありませんか? 心配はいりません。今日は、その作業を簡単にするために Aspose.Words for .NET の世界に飛び込みます。この強力なライブラリを使用して、検索と置換操作中に特定のポイントにドキュメントを挿入する方法について、詳細なステップ バイ ステップ ガイドで説明します。Aspose.Words の達人になる準備はできましたか? さあ、始めましょう!
 
 ## 前提条件
 
@@ -111,36 +111,40 @@ private class InsertDocumentAtReplaceHandler : IReplacingCallback
 ```csharp
 private static void InsertDocument(Node insertionDestination, Document docToInsert)
 {
-	if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
-	{
-		CompositeNode destinationParent = insertionDestination.ParentNode;
+    //挿入先が段落か表か確認する
+    if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
+    {
+        CompositeNode destinationParent = insertionDestination.ParentNode;
 
-		NodeImporter importer =
-			new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
+        //ソースドキュメントからノードをインポートするためのNodeImporterを作成する
+        NodeImporter importer = new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
 
-		//セクション本体内のすべてのブロックレベルノードをループし、
-		//次に、セクションの最後の空の段落ではないすべてのノードを複製して挿入します。
-		foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
-		foreach (Node srcNode in srcSection.Body)
-		{
-			if (srcNode.NodeType == NodeType.Paragraph)
-			{
-				Paragraph para = (Paragraph)srcNode;
-				if (para.IsEndOfSection && !para.HasChildNodes)
-					continue;
-			}
+        //ソースドキュメントのセクション内のすべてのブロックレベルノードをループします。
+        foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
+        {
+            foreach (Node srcNode in srcSection.Body)
+            {
+                //セクションの最後の空の段落をスキップする
+                if (srcNode.NodeType == NodeType.Paragraph)
+                {
+                    Paragraph para = (Paragraph)srcNode;
+                    if (para.IsEndOfSection && !para.HasChildNodes)
+                        continue;
+                }
 
-			Node newNode = importer.ImportNode(srcNode, true);
-
-			destinationParent.InsertAfter(newNode, insertionDestination);
-			insertionDestination = newNode;
-		}
-	}
-	else
-	{
-		throw new ArgumentException("The destination node should be either a paragraph or table.");
-	}
+                //ノードをインポートして宛先に挿入する
+                Node newNode = importer.ImportNode(srcNode, true);
+                destinationParent.InsertAfter(newNode, insertionDestination);
+                insertionDestination = newNode;
+            }
+        }
+    }
+    else
+    {
+        throw new ArgumentException("The destination node should be either a paragraph or table.");
+    }
 }
+
 ```
 
 このメソッドは、挿入するドキュメントからノードをインポートし、メイン ドキュメント内の適切な場所に配置します。

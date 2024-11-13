@@ -2,7 +2,7 @@
 title: フィールドを削除
 linktitle: フィールドを削除
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、Word 文書からフィールドをプログラムで削除する方法を学びます。コード例を含むわかりやすいステップバイステップ ガイドです。
+description: Aspose.Words for .NET を使用して、Word 文書からフィールドをプログラムで削除する方法を学びます。コード例を含むわかりやすいステップバイステップのガイドです。
 type: docs
 weight: 10
 url: /ja/net/working-with-fields/delete-fields/

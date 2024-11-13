@@ -1,27 +1,27 @@
 ---
-title: Exportar marcadores de rodapé de cabeçalho de documento do Word para documento PDF
-linktitle: Exportar marcadores de rodapé de cabeçalho de documento do Word para documento PDF
+title: Exportar marcadores de cabeçalho e rodapé de documento do Word para documento PDF
+linktitle: Exportar marcadores de cabeçalho e rodapé de documento do Word para documento PDF
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como exportar marcadores de cabeçalho e rodapé de um documento do Word para PDF usando Aspose.Words for .NET com nosso guia passo a passo.
+description: Aprenda como exportar marcadores de cabeçalho e rodapé de um documento do Word para PDF usando o Aspose.Words para .NET com nosso guia passo a passo.
 type: docs
 weight: 10
 url: /pt/net/programming-with-pdfsaveoptions/export-header-footer-bookmarks/
 ---
 ## Introdução
 
-Converter documentos Word em PDF é uma tarefa comum, especialmente quando você deseja compartilhar ou arquivar documentos preservando sua formatação. Às vezes, esses documentos contêm marcadores importantes nos cabeçalhos e rodapés. Neste tutorial, percorreremos o processo de exportação desses marcadores de um documento Word para um PDF usando Aspose.Words for .NET.
+Converter documentos do Word para PDF é uma tarefa comum, especialmente quando você quer compartilhar ou arquivar documentos preservando sua formatação. Às vezes, esses documentos contêm marcadores importantes dentro dos cabeçalhos e rodapés. Neste tutorial, vamos percorrer o processo de exportação desses marcadores de um documento do Word para um PDF usando o Aspose.Words para .NET.
 
 ## Pré-requisitos
 
 Antes de começarmos, certifique-se de ter o seguinte:
 
-- Aspose.Words for .NET: Você precisa ter o Aspose.Words for .NET instalado. Você pode baixá-lo em[aqui](https://releases.aspose.com/words/net/).
-- Ambiente de desenvolvimento: configure seu ambiente de desenvolvimento. Você pode usar o Visual Studio ou qualquer outro IDE compatível com .NET.
-- Conhecimento básico de C#: É necessária familiaridade com programação C# para acompanhar os exemplos de código.
+- Aspose.Words para .NET: Você precisa ter o Aspose.Words para .NET instalado. Você pode baixá-lo em[aqui](https://releases.aspose.com/words/net/).
+- Ambiente de desenvolvimento: Configure seu ambiente de desenvolvimento. Você pode usar o Visual Studio ou qualquer outro IDE compatível com .NET.
+- Conhecimento básico de C#: É necessário ter familiaridade com programação em C# para acompanhar os exemplos de código.
 
 ## Importar namespaces
 
-Primeiramente, você precisa importar os namespaces necessários em seu projeto C#. Adicione estas linhas no topo do seu arquivo de código:
+Primeiro, você precisa importar os namespaces necessários no seu projeto C#. Adicione estas linhas no topo do seu arquivo de código:
 
 ```csharp
 using Aspose.Words;
@@ -30,9 +30,9 @@ using Aspose.Words.Saving;
 
 Vamos dividir o processo em etapas fáceis de seguir.
 
-## Etapa 1: inicializar o documento
+## Etapa 1: Inicializar o documento
 
-primeiro passo é carregar seu documento Word. Veja como você pode fazer isso:
+primeiro passo é carregar seu documento do Word. Veja como você pode fazer isso:
 
 ```csharp
 // O caminho para o diretório de documentos.
@@ -42,9 +42,9 @@ Document doc = new Document(dataDir + "Bookmarks in headers and footers.docx");
 
 Nesta etapa, você simplesmente especifica o caminho para o diretório do documento e carrega o documento do Word.
 
-## Passo 2: Configurar opções para salvar PDF
+## Etapa 2: Configurar opções de salvamento de PDF
 
-Em seguida, você precisa configurar as opções de salvamento do PDF para garantir que os marcadores nos cabeçalhos e rodapés sejam exportados corretamente.
+Em seguida, você precisa configurar as opções de salvamento de PDF para garantir que os marcadores nos cabeçalhos e rodapés sejam exportados corretamente.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -52,9 +52,9 @@ saveOptions.OutlineOptions.DefaultBookmarksOutlineLevel = 1;
 saveOptions.HeaderFooterBookmarksExportMode = HeaderFooterBookmarksExportMode.First;
 ```
 
- Aqui, estamos configurando o`PdfSaveOptions` . O`DefaultBookmarksOutlineLevel` propriedade define o nível de estrutura de tópicos para marcadores e a propriedade`HeaderFooterBookmarksExportMode` propriedade garante que apenas a primeira ocorrência de marcadores em cabeçalhos e rodapés seja exportada.
+ Aqui, estamos configurando o`PdfSaveOptions` . O`DefaultBookmarksOutlineLevel` propriedade define o nível de estrutura para marcadores e o`HeaderFooterBookmarksExportMode` propriedade garante que apenas a primeira ocorrência de marcadores em cabeçalhos e rodapés seja exportada.
 
-## Etapa 3: salve o documento como PDF
+## Etapa 3: Salve o documento como PDF
 
 Por fim, salve seu documento como PDF com as opções configuradas.
 
@@ -66,26 +66,26 @@ Nesta etapa, você salva o documento no caminho especificado com as opções con
 
 ## Conclusão
 
-aí está! Seguindo essas etapas, você pode exportar facilmente marcadores de cabeçalhos e rodapés de um documento do Word para um PDF usando Aspose.Words for .NET. Este método garante que importantes auxílios à navegação em seu documento sejam preservados no formato PDF, facilitando a navegação dos leitores pelo documento.
+aí está! Seguindo esses passos, você pode facilmente exportar marcadores dos cabeçalhos e rodapés de um documento do Word para um PDF usando o Aspose.Words para .NET. Esse método garante que importantes auxílios de navegação dentro do seu documento sejam preservados no formato PDF, facilitando a navegação dos leitores pelo seu documento.
 
 ## Perguntas frequentes
 
-### Posso exportar todos os marcadores do documento Word para PDF?
+### Posso exportar todos os favoritos do documento do Word para PDF?
 
- Sim, você pode. No`PdfSaveOptions`, você pode ajustar as configurações para incluir todos os marcadores, se necessário.
+ Sim, você pode. No`PdfSaveOptions`, você pode ajustar as configurações para incluir todos os favoritos, se necessário.
 
-### E se eu quiser exportar marcadores também do corpo do documento?
+### E se eu quiser exportar também os favoritos do corpo do documento?
 
  Você pode configurar o`OutlineOptions` em`PdfSaveOptions` para incluir marcadores do corpo do documento.
 
 ### É possível personalizar os níveis de marcadores no PDF?
 
- Absolutamente! Você pode personalizar o`DefaultBookmarksOutlineLevel` propriedade para definir diferentes níveis de estrutura de tópicos para seus marcadores.
+ Absolutamente! Você pode personalizar o`DefaultBookmarksOutlineLevel` propriedade para definir diferentes níveis de contorno para seus favoritos.
 
 ### Como lidar com documentos sem marcadores?
 
-Se o seu documento não tiver marcadores, o PDF será gerado sem nenhum contorno de marcador. Certifique-se de que seu documento contenha marcadores se precisar deles no PDF.
+Se o seu documento não tiver marcadores, o PDF será gerado sem nenhum esboço de marcador. Certifique-se de que seu documento contenha marcadores se precisar deles no PDF.
 
-### Posso usar este método para outros tipos de documentos como DOCX ou RTF?
+### Posso usar esse método para outros tipos de documentos, como DOCX ou RTF?
 
-Sim, Aspose.Words for .NET oferece suporte a vários tipos de documentos, incluindo DOCX, RTF e outros.
+Sim, o Aspose.Words para .NET suporta vários tipos de documentos, incluindo DOCX, RTF e outros.

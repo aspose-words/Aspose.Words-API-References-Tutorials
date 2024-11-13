@@ -1,8 +1,8 @@
 ---
-title: Mencetak Dokumen dengan Page Setup
-linktitle: Mencetak Dokumen dengan Page Setup
+title: Mencetak Dokumen dengan Pengaturan Halaman
+linktitle: Mencetak Dokumen dengan Pengaturan Halaman
 second_title: API Pemrosesan Dokumen Java Aspose.Words
-description: Pelajari cara mencetak dokumen dengan pengaturan halaman yang tepat menggunakan Aspose.Words untuk Java. Sesuaikan tata letak, ukuran kertas, dan lainnya.
+description: Pelajari cara mencetak dokumen dengan pengaturan halaman yang tepat menggunakan Aspose.Words untuk Java. Sesuaikan tata letak, ukuran kertas, dan banyak lagi.
 type: docs
 weight: 11
 url: /id/java/document-printing/printing-documents-page-setup/
@@ -10,27 +10,27 @@ url: /id/java/document-printing/printing-documents-page-setup/
 
 ## Perkenalan
 
-Mencetak dokumen dengan pengaturan halaman yang tepat sangat penting dalam membuat laporan, faktur, atau materi cetakan apa pun yang terlihat profesional. Aspose.Words for Java menyederhanakan proses ini untuk pengembang Java, memungkinkan mereka mengontrol setiap aspek tata letak halaman.
+Mencetak dokumen dengan pengaturan halaman yang tepat sangat penting untuk membuat laporan, faktur, atau materi cetak apa pun yang tampak profesional. Aspose.Words untuk Java menyederhanakan proses ini bagi pengembang Java, yang memungkinkan mereka mengendalikan setiap aspek tata letak halaman.
 
-## Menyiapkan Lingkungan Pembangunan
+## Menyiapkan Lingkungan Pengembangan
 
-Sebelum memulai, pastikan Anda memiliki lingkungan pengembangan yang sesuai. Anda membutuhkan:
+Sebelum memulai, mari pastikan Anda memiliki lingkungan pengembangan yang sesuai. Anda memerlukan:
 
 - Kit Pengembangan Java (JDK)
-- Lingkungan Pengembangan Terintegrasi (IDE) seperti Eclipse atau IntelliJ IDEA
-- Aspose.Words untuk perpustakaan Java
+- Lingkungan Pengembangan Terpadu (IDE) seperti Eclipse atau IntelliJ IDEA
+- Aspose.Words untuk pustaka Java
 
 ## Membuat Proyek Java
 
-Mulailah dengan membuat proyek Java baru di IDE pilihan Anda. Beri nama yang bermakna, dan Anda siap melanjutkan.
+Mulailah dengan membuat proyek Java baru di IDE pilihan Anda. Berikan nama yang bermakna, dan Anda siap untuk melanjutkan.
 
 ## Menambahkan Aspose.Words untuk Java ke Proyek Anda
 
-Untuk menggunakan Aspose.Words untuk Java, Anda perlu menambahkan perpustakaan ke proyek Anda. Ikuti langkah-langkah berikut:
+Untuk menggunakan Aspose.Words untuk Java, Anda perlu menambahkan pustaka tersebut ke proyek Anda. Ikuti langkah-langkah berikut:
 
-1.  Unduh perpustakaan Aspose.Words untuk Java dari[Di Sini](https://releases.aspose.com/words/java/).
+1.  Unduh pustaka Aspose.Words untuk Java dari[Di Sini](https://releases.aspose.com/words/java/).
 
-2. Tambahkan file JAR ke classpath proyek Anda.
+2. Tambahkan berkas JAR ke classpath proyek Anda.
 
 ## Memuat Dokumen
 
@@ -43,7 +43,7 @@ Document doc = new Document("sample.docx");
 
 ## Menyesuaikan Pengaturan Halaman
 
-Sekarang sampai pada bagian yang menarik. Anda dapat menyesuaikan pengaturan pengaturan halaman sesuai dengan kebutuhan Anda. Ini termasuk mengatur ukuran halaman, margin, orientasi, dan banyak lagi.
+Sekarang tibalah bagian yang menarik. Anda dapat menyesuaikan pengaturan pengaturan halaman sesuai dengan kebutuhan Anda. Ini termasuk pengaturan ukuran halaman, margin, orientasi, dan banyak lagi.
 
 ```java
 // Sesuaikan pengaturan halaman
@@ -57,7 +57,7 @@ pageSetup.setRightMargin(72.0);
 
 ## Mencetak Dokumen
 
-Mencetak dokumen adalah proses yang mudah dengan Aspose.Words untuk Java. Anda dapat mencetak ke printer fisik atau membuat PDF untuk distribusi digital.
+Mencetak dokumen merupakan proses yang mudah dengan Aspose.Words untuk Java. Anda dapat mencetaknya ke printer fisik atau membuat PDF untuk distribusi digital.
 
 ```java
 // Cetak dokumennya
@@ -69,26 +69,26 @@ job.print();
 
 ## Kesimpulan
 
-Pada artikel ini, kita telah menjelajahi cara mencetak dokumen dengan pengaturan halaman kustom menggunakan Aspose.Words untuk Java. Dengan fitur canggihnya, Anda dapat membuat materi cetakan yang terlihat profesional dengan mudah. Baik itu laporan bisnis atau proyek kreatif, Aspose.Words untuk Java siap membantu Anda.
+Dalam artikel ini, kami telah membahas cara mencetak dokumen dengan pengaturan halaman khusus menggunakan Aspose.Words untuk Java. Dengan fitur-fiturnya yang canggih, Anda dapat membuat materi cetak yang tampak profesional dengan mudah. Baik itu laporan bisnis atau proyek kreatif, Aspose.Words untuk Java siap membantu Anda.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Bagaimana cara mengubah ukuran kertas dokumen saya?
 
- Untuk mengubah ukuran kertas dokumen Anda, gunakan`setPageWidth`Dan`setPageHeight` metode dari`PageSetup` kelas dan tentukan dimensi yang diinginkan dalam poin.
+ Untuk mengubah ukuran kertas dokumen Anda, gunakan`setPageWidth` Dan`setPageHeight` metode dari`PageSetup` kelas dan tentukan dimensi yang diinginkan dalam poin.
 
-### Bisakah saya mencetak banyak salinan dokumen?
+### Bisakah saya mencetak beberapa salinan dokumen?
 
- Ya, Anda dapat mencetak banyak salinan dokumen dengan mengatur jumlah salinan dalam pengaturan cetak sebelum memanggil`print()` metode.
+ Ya, Anda dapat mencetak beberapa salinan dokumen dengan mengatur jumlah salinan di pengaturan cetak sebelum memanggil perintah cetak.`print()` metode.
 
-### Apakah Aspose.Words untuk Java kompatibel dengan format dokumen yang berbeda?
+### Apakah Aspose.Words untuk Java kompatibel dengan berbagai format dokumen?
 
 Ya, Aspose.Words untuk Java mendukung berbagai format dokumen, termasuk DOCX, DOC, RTF, dan banyak lagi.
 
 ### Bisakah saya mencetak ke printer tertentu?
 
-Tentu! Anda dapat menentukan printer tertentu dengan menggunakan`setPrintService` metode dan memberikan yang diinginkan`PrintService` obyek.
+ Tentu saja! Anda dapat menentukan printer tertentu dengan menggunakan`setPrintService` metode dan memberikan hasil yang diinginkan`PrintService` obyek.
 
-### Bagaimana cara menyimpan dokumen yang dicetak sebagai PDF?
+### Bagaimana cara menyimpan dokumen cetak sebagai PDF?
 
-Untuk menyimpan dokumen yang dicetak sebagai PDF, Anda dapat menggunakan Aspose.Words for Java untuk menyimpan dokumen sebagai file PDF setelah dicetak.
+Untuk menyimpan dokumen cetak sebagai PDF, Anda dapat menggunakan Aspose.Words untuk Java untuk menyimpan dokumen sebagai berkas PDF setelah dicetak.

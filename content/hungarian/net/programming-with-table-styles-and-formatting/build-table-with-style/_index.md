@@ -76,7 +76,7 @@ table.StyleOptions = TableStyleOptions.FirstColumn | TableStyleOptions.RowBands 
 
 ## 6. lépés: Állítsa be a táblázatot a tartalomhoz
 
- Annak érdekében, hogy asztalunk szép és rendezett legyen, használhatjuk a`AutoFit` módszerrel állíthatja be a táblázatot a tartalmához.
+Annak érdekében, hogy asztalunk szép és rendezett legyen, használhatjuk a`AutoFit` módszerrel állíthatja be a táblázatot a tartalmához.
 
 ```csharp
 table.AutoFit(AutoFitBehavior.AutoFitToContents);

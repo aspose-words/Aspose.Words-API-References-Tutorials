@@ -1,28 +1,28 @@
 ---
-title: Remover índice do documento do Word
-linktitle: Remover índice do documento do Word
+title: Remover Índice em Documento Word
+linktitle: Remover Índice em Documento Word
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como remover um Índice (TOC) em documentos do Word usando Aspose.Words for .NET com este tutorial fácil de seguir.
+description: Aprenda como remover um Índice (TOC) em documentos do Word usando o Aspose.Words para .NET com este tutorial fácil de seguir.
 type: docs
 weight: 10
 url: /pt/net/remove-content/remove-table-of-contents/
 ---
 ## Introdução
 
-Você está cansado de lidar com um Índice (TOC) indesejado em seus documentos do Word? Todos nós já passamos por isso – às vezes o TOC simplesmente não é necessário. Para sua sorte, o Aspose.Words for .NET facilita a remoção de um sumário programaticamente. Neste tutorial, vou guiá-lo passo a passo pelo processo, para que você possa dominá-lo rapidamente. Vamos mergulhar de cabeça!
+Você está cansado de lidar com um Índice (TOC) indesejado em seus documentos do Word? Todos nós já passamos por isso — às vezes o TOC simplesmente não é necessário. Para sua sorte, o Aspose.Words para .NET facilita a remoção de um TOC programaticamente. Neste tutorial, eu o guiarei pelo processo passo a passo, para que você possa dominá-lo em pouco tempo. Vamos mergulhar de cabeça!
 
 ## Pré-requisitos
 
-Antes de começarmos, vamos garantir que você tenha tudo o que precisa:
+Antes de começar, vamos garantir que você tenha tudo o que precisa:
 
-1.  Biblioteca Aspose.Words for .NET: Se ainda não o fez, baixe e instale a biblioteca Aspose.Words for .NET do[Aspose.Lançamentos](https://releases.aspose.com/words/net/).
+1.  Biblioteca Aspose.Words para .NET: Se ainda não o fez, baixe e instale a biblioteca Aspose.Words para .NET do[Aspose.Lançamentos](https://releases.aspose.com/words/net/).
 2. Ambiente de desenvolvimento: um IDE como o Visual Studio tornará a codificação mais fácil.
 3. .NET Framework: certifique-se de ter o .NET Framework instalado.
-4. Documento do Word: tenha um documento do Word (.docx) com um sumário que deseja remover.
+4. Documento do Word: tenha um documento do Word (.docx) com um índice que você deseja remover.
 
 ## Importar namespaces
 
-Primeiramente, vamos importar os namespaces necessários. Isso configura o ambiente para usar Aspose.Words.
+Primeiro, vamos importar os namespaces necessários. Isso configura o ambiente para usar Aspose.Words.
 
 ```csharp
 using System;
@@ -31,21 +31,21 @@ using Aspose.Words;
 using Aspose.Words.Fields;
 ```
 
-Agora, vamos dividir o processo de remoção de um sumário de um documento do Word em etapas claras e gerenciáveis.
+Agora, vamos dividir o processo de remoção de um índice de um documento do Word em etapas claras e gerenciáveis.
 
 ## Etapa 1: configure seu diretório de documentos
 
-Antes de podermos manipular o seu documento, precisamos definir onde ele está localizado. Este é o caminho do diretório do seu documento.
+Antes de podermos manipular seu documento, precisamos definir onde ele está localizado. Este é o caminho do diretório do seu documento.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho para sua pasta de documentos. É aqui que reside o seu arquivo do Word.
+ Substituir`"YOUR DOCUMENT DIRECTORY"` com o caminho para sua pasta de documentos. É aqui que seu arquivo Word reside.
 
-## Etapa 2: carregue o documento
+## Etapa 2: Carregue o documento
 
-Em seguida, precisamos carregar o documento Word em nosso aplicativo. Aspose.Words torna isso incrivelmente simples.
+Em seguida, precisamos carregar o documento do Word em nosso aplicativo. O Aspose.Words torna isso incrivelmente simples.
 
 ```csharp
 Document doc = new Document(dataDir + "your-document.docx");
@@ -53,7 +53,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 
  Substituir`"your-document.docx"` com o nome do seu arquivo. Esta linha de código carrega seu documento para que possamos começar a trabalhar nele.
 
-## Etapa 3: identificar e remover o campo TOC
+## Etapa 3: Identifique e remova o campo TOC
 
 É aqui que a mágica acontece. Vamos localizar o campo TOC e removê-lo.
 
@@ -62,43 +62,43 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
     .ForEach(f => f.Remove());
 ```
 
-Aqui está o que está acontecendo:
-- `doc.Range.Fields`: acessa todos os campos do documento.
-- `.Where(f => f.Type == FieldType.FieldTOC)`isso filtra os campos para localizar apenas aqueles que são sumários.
-- `.ToList().ForEach(f => f.Remove())`: converte os campos filtrados em uma lista e remove cada um deles.
+Veja o que está acontecendo:
+- `doc.Range.Fields`: Isso acessa todos os campos no documento.
+- `.Where(f => f.Type == FieldType.FieldTOC)`Isso filtra os campos para encontrar apenas aqueles que são TOCs.
+- `.ToList().ForEach(f => f.Remove())`: Isso converte os campos filtrados em uma lista e remove cada um deles.
 
-## Etapa 4: salve o documento modificado
+## Etapa 4: Salve o documento modificado
 
-Finalmente, precisamos salvar nossas alterações. Você pode salvar o documento com um novo nome para preservar o arquivo original.
+Por fim, precisamos salvar nossas alterações. Você pode salvar o documento com um novo nome para preservar o arquivo original.
 
 ```csharp
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
- Esta linha salva seu documento com as alterações feitas. Substituir`"modified-document.docx"` com o nome do arquivo desejado.
+ Esta linha salva seu documento com as alterações feitas. Substituir`"modified-document.docx"` com o nome de arquivo desejado.
 
 ## Conclusão
 
-E aí está! Remover um sumário de um documento do Word usando Aspose.Words for .NET é simples, uma vez dividido nestas etapas simples. Esta poderosa biblioteca não apenas ajuda a remover índices, mas também pode lidar com uma infinidade de outras manipulações de documentos. Então, vá em frente e experimente!
+E aí está! Remover um TOC de um documento do Word usando o Aspose.Words para .NET é simples quando você o divide nessas etapas simples. Esta biblioteca poderosa não só ajuda a remover TOCs, mas também pode lidar com uma miríade de outras manipulações de documentos. Então, vá em frente e experimente!
 
 ## Perguntas frequentes
 
 ### O que é Aspose.Words para .NET?
 
-Aspose.Words for .NET é uma biblioteca .NET robusta para manipulação de documentos, permitindo aos desenvolvedores criar, modificar e converter documentos do Word programaticamente.
+Aspose.Words para .NET é uma biblioteca .NET robusta para manipulação de documentos, permitindo que desenvolvedores criem, modifiquem e convertam documentos do Word programaticamente.
 
 ### Posso usar o Aspose.Words gratuitamente?
 
- Sim, você pode usar Aspose.Words com um[teste gratuito](https://releases.aspose.com/) ou obter um[licença temporária](https://purchase.aspose.com/temporary-license/).
+ Sim, você pode usar Aspose.Words com um[teste gratuito](https://releases.aspose.com/) ou pegue um[licença temporária](https://purchase.aspose.com/temporary-license/).
 
 ### É possível remover outros campos usando Aspose.Words?
 
-Absolutamente! Você pode remover qualquer campo especificando seu tipo na condição de filtro.
+Absolutamente! Você pode remover qualquer campo especificando seu tipo na condição do filtro.
 
 ### Preciso do Visual Studio para usar o Aspose.Words?
 
 Embora o Visual Studio seja altamente recomendado para facilitar o desenvolvimento, você pode usar qualquer IDE que suporte .NET.
 
-### Onde posso encontrar mais informações sobre Aspose.Words?
+### Onde posso encontrar mais informações sobre o Aspose.Words?
 
- Para documentação mais detalhada, visite o[Documentação da API Aspose.Words para .NET](https://reference.aspose.com/words/net/).
+ Para documentação mais detalhada, visite o[Aspose.Words para documentação da API .NET](https://reference.aspose.com/words/net/).

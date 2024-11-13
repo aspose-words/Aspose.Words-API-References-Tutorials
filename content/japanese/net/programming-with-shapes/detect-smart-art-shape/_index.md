@@ -80,7 +80,7 @@ The document has X shapes with SmartArt.
 
 ## 結論
 
-これで完了です。Aspose.Words for .NET を使用して Word 文書内の SmartArt 図形を検出する方法を学習しました。このチュートリアルでは、環境の設定、文書の読み込み、SmartArt 図形の検出、コードの実行について説明しました。Aspose.Words は幅広い機能を提供しているので、ぜひ詳細を確認してください。[APIドキュメント](https://reference.aspose.com/words/net/)その潜在能力を最大限に引き出すために。
+これで完了です。Aspose.Words for .NET を使用して Word 文書内の SmartArt 図形を検出する方法を学習しました。このチュートリアルでは、環境の設定、文書の読み込み、SmartArt 図形の検出、コードの実行について説明しました。Aspose.Words は幅広い機能を提供しているので、ぜひ試してみてください。[APIドキュメント](https://reference.aspose.com/words/net/)その潜在能力を最大限に引き出すために。
 
 ## よくある質問
 

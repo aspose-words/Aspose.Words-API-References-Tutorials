@@ -9,20 +9,20 @@ url: /id/net/working-with-fonts/receive-notifications-of-fonts/
 ---
 ## Perkenalan
 
-Jika Anda pernah menghadapi masalah dengan font yang tidak ditampilkan dengan benar di dokumen Anda, Anda tidak sendirian. Mengelola pengaturan font dan menerima pemberitahuan tentang penggantian font dapat menyelamatkan Anda dari banyak sakit kepala. Dalam panduan komprehensif ini, kita akan mempelajari cara menangani pemberitahuan font menggunakan Aspose.Words untuk .NET, memastikan dokumen Anda selalu terlihat terbaik.
+Jika Anda pernah menghadapi masalah dengan font yang tidak ditampilkan dengan benar di dokumen Anda, Anda tidak sendirian. Mengelola pengaturan font dan menerima pemberitahuan tentang penggantian font dapat menyelamatkan Anda dari banyak masalah. Dalam panduan lengkap ini, kami akan membahas cara menangani pemberitahuan font menggunakan Aspose.Words untuk .NET, memastikan dokumen Anda selalu terlihat terbaik.
 
 ## Prasyarat
 
-Sebelum kita masuk ke detailnya, pastikan Anda memiliki hal berikut:
+Sebelum kita masuk ke rinciannya, pastikan Anda memiliki hal berikut:
 
 - Pengetahuan Dasar C#: Keakraban dengan pemrograman C# akan membantu Anda mengikutinya.
--  Aspose.Words untuk .NET Library: Unduh dan instal dari[tautan unduhan resmi](https://releases.aspose.com/words/net/).
+-  Aspose.Words untuk Pustaka .NET: Unduh dan instal dari[tautan unduhan resmi](https://releases.aspose.com/words/net/).
 - Lingkungan Pengembangan: Pengaturan seperti Visual Studio untuk menulis dan mengeksekusi kode Anda.
 -  Contoh Dokumen: Miliki contoh dokumen (misalnya,`Rendering.docx`) siap untuk menguji pengaturan font.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Untuk mulai bekerja dengan Aspose.Words, Anda perlu mengimpor namespace yang diperlukan ke dalam proyek Anda. Ini memberikan akses ke kelas dan metode yang Anda perlukan.
+Untuk mulai bekerja dengan Aspose.Words, Anda perlu mengimpor namespace yang diperlukan ke dalam proyek Anda. Ini akan memberikan akses ke kelas dan metode yang Anda perlukan.
 
 ```csharp
 using Aspose.Words;
@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Langkah 2: Muat Dokumen
 
- Muat dokumen Anda ke dalam Aspose.Words`Document` obyek. Ini memungkinkan Anda memanipulasi dokumen secara terprogram.
+ Muat dokumen Anda ke Aspose.Words`Document` objek. Ini memungkinkan Anda untuk memanipulasi dokumen secara terprogram.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -59,9 +59,9 @@ fontSettings.SubstitutionSettings.DefaultFontSubstitution.DefaultFontName = "Ari
 fontSettings.SetFontsFolder(string.Empty, false);
 ```
 
-## Langkah 4: Atur Panggilan Balik Peringatan
+## Langkah 4: Siapkan Panggilan Balik Peringatan
 
- Untuk menangkap dan menangani peringatan penggantian font, buatlah kelas yang mengimplementasikan`IWarningCallback` antarmuka. Kelas ini akan mencatat setiap peringatan yang terjadi selama pemrosesan dokumen.
+ Untuk menangkap dan menangani peringatan penggantian font, buat kelas yang mengimplementasikan`IWarningCallback` antarmuka. Kelas ini akan mencatat peringatan apa pun yang terjadi selama pemrosesan dokumen.
 
 ```csharp
 public class HandleDocumentWarnings : IWarningCallback
@@ -79,7 +79,7 @@ public class HandleDocumentWarnings : IWarningCallback
 
 ## Langkah 5: Tetapkan Pengaturan Panggilan Balik dan Font ke Dokumen
 
-Tetapkan panggilan balik peringatan dan pengaturan font yang dikonfigurasi ke dokumen. Ini memastikan bahwa masalah font apa pun telah ditangkap dan dicatat.
+Tetapkan panggilan balik peringatan dan pengaturan font yang dikonfigurasikan ke dokumen. Ini memastikan bahwa setiap masalah font terdeteksi dan dicatat.
 
 ```csharp
 HandleDocumentWarnings callback = new HandleDocumentWarnings();
@@ -89,31 +89,31 @@ doc.FontSettings = fontSettings;
 
 ## Langkah 6: Simpan Dokumen
 
-Terakhir, simpan dokumen setelah menerapkan pengaturan font dan menangani penggantian font apa pun. Simpan dalam format pilihan Anda; di sini, kami akan menyimpannya sebagai PDF.
+Terakhir, simpan dokumen setelah menerapkan pengaturan font dan menangani penggantian font. Simpan dalam format pilihan Anda; di sini, kita akan menyimpannya sebagai PDF.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.ReceiveNotificationsOfFonts.pdf");
 ```
 
-Dengan mengikuti langkah-langkah ini, Anda telah mengonfigurasi aplikasi Anda untuk menangani penggantian font dengan baik dan menerima pemberitahuan setiap kali terjadi penggantian.
+Dengan mengikuti langkah-langkah ini, Anda telah mengonfigurasi aplikasi Anda untuk menangani penggantian font dengan baik dan menerima pemberitahuan setiap kali penggantian terjadi.
 
 ## Kesimpulan
 
-Anda sekarang telah menguasai proses menerima pemberitahuan untuk penggantian font menggunakan Aspose.Words untuk .NET. Keterampilan ini akan membantu Anda memastikan bahwa dokumen Anda selalu terlihat terbaik, bahkan ketika font yang diperlukan tidak tersedia. Teruslah bereksperimen dengan pengaturan berbeda untuk memanfaatkan sepenuhnya kekuatan Aspose.Words.
+Anda kini telah menguasai proses menerima pemberitahuan untuk penggantian font menggunakan Aspose.Words untuk .NET. Keterampilan ini akan membantu Anda memastikan bahwa dokumen Anda selalu terlihat terbaik, bahkan saat font yang diperlukan tidak tersedia. Teruslah bereksperimen dengan pengaturan yang berbeda untuk memanfaatkan sepenuhnya kekuatan Aspose.Words.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Q1: Dapatkah saya menentukan beberapa font default?
 
-Tidak, Anda hanya dapat menentukan satu font default untuk substitusi. Namun, Anda dapat mengonfigurasi beberapa sumber font cadangan.
+Tidak, Anda hanya dapat menentukan satu font default untuk substitusi. Namun, Anda dapat mengonfigurasi beberapa sumber font fallback.
 
 ### Q2: Di mana saya bisa mendapatkan uji coba gratis Aspose.Words untuk .NET?
 
- Anda dapat mengunduh uji coba gratis dari[Asumsikan halaman uji coba gratis](https://releases.aspose.com/).
+ Anda dapat mengunduh uji coba gratis dari[Halaman uji coba gratis Aspose](https://releases.aspose.com/).
 
-###  Q3: Dapatkah saya menangani jenis peringatan lainnya`IWarningCallback`?
+###  Q3: Bisakah saya menangani jenis peringatan lain dengan`IWarningCallback`?
 
- Ya, itu`IWarningCallback`antarmuka dapat menangani berbagai jenis peringatan, tidak hanya penggantian font.
+ Ya, itu`IWarningCallback`Antarmuka dapat menangani berbagai jenis peringatan, bukan hanya penggantian font.
 
 ### Q4: Di mana saya dapat menemukan dukungan untuk Aspose.Words?
 
@@ -121,4 +121,4 @@ Tidak, Anda hanya dapat menentukan satu font default untuk substitusi. Namun, An
 
 ### Q5: Apakah mungkin untuk mendapatkan lisensi sementara untuk Aspose.Words?
 
- Ya, Anda bisa mendapatkan lisensi sementara dari[halaman lisensi sementara](https://purchase.aspose.com/temporary-license/).
+ Ya, Anda dapat memperoleh lisensi sementara dari[halaman lisensi sementara](https://purchase.aspose.com/temporary-license/).

@@ -84,34 +84,12 @@ doc.save("output.html", SaveFormat.HTML);
 doc.save("output.epub", SaveFormat.EPUB);
 ```
 
-## Steg 5: Hantera teckensnittsersättning
-
-Typsnittsersättning är en vanlig utmaning vid konvertering av dokument. Aspose.Words tillhandahåller en mekanism för att hantera teckensnittsersättning för att säkerställa den visuella konsekvensen av det konverterade dokumentet:
-
-```java
-// Aktivera teckensnittsersättning
-FontSettings.setFontsFolder("/path/to/fonts", true);
-```
-
-## Steg 6: Anpassa konverteringsprocessen
-
-Aspose.Words erbjuder ett brett utbud av alternativ för att anpassa dokumentkonverteringsprocessen. Du kan till exempel ställa in sidintervallet för konvertering eller ange bildupplösningen när du sparar till PDF:
-
-```java
-// Ställ in sidintervallet för konvertering (konvertera sidorna 1 till 3)
-PdfSaveOptions options = new PdfSaveOptions();
-options.setPageSet(new PageSet(1, 3));
-
-// Ställ in bildupplösningen till 300 DPI
-options.setJpegQuality(300);
-```
-
 ## Tips för effektiv dokumentkonvertering
 
 För att säkerställa en smidig och effektiv dokumentkonverteringsprocess, överväg följande tips:
 
 ## Dokumentformatkompatibilitet: 
- Se till att käll- och målformaten är kompatibla med Aspose.Words.[Aspose.Words Java API Referens](https://reference.aspose.com/words/java/) för de format som stöds.
+Se till att käll- och målformaten är kompatibla med Aspose.Words.[Aspose.Words Java API Referens](https://reference.aspose.com/words/java/) för de format som stöds.
 
 ## Hanteringsundantag: 
 När man hanterar ett stort antal dokument kan fel uppstå under konverteringsprocessen. Implementera korrekt undantagshantering för att identifiera och ta itu med dessa problem på ett elegant sätt.

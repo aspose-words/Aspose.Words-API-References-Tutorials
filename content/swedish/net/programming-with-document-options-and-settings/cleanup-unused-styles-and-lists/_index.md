@@ -74,7 +74,7 @@ Console.WriteLine($"Count of lists after Cleanup: {doc.Lists.Count}");
 
 ## Steg 6: Spara det rengjorda dokumentet
 
-Låt oss slutligen spara vårt rensade dokument. Detta säkerställer att alla ändringar sparas och att ditt dokument är så snyggt som möjligt.
+Till sist, låt oss spara vårt rensade dokument. Detta säkerställer att alla ändringar sparas och att ditt dokument är så snyggt som möjligt.
 
 ```csharp
 doc.Save(dataDir + "CleanedDocument.docx");
@@ -90,7 +90,7 @@ Och där har du det! Du har lyckats rengöra ditt Word-dokument genom att ta bor
 Aspose.Words för .NET är ett kraftfullt bibliotek som låter dig skapa, ändra och konvertera Word-dokument programmatiskt med C#.
 
 ### Kan jag ta bort både oanvända stilar och listor samtidigt?
-Ja, du kan ställa in båda`UnusedLists`och`UnusedStyles` till`true` i`CleanupOptions` att ta bort båda.
+Ja, du kan ställa in båda`UnusedLists` och`UnusedStyles` till`true` i`CleanupOptions` för att ta bort båda.
 
 ### Är det möjligt att ångra rensningen?
 Nej, när rensningen är klar och dokumentet har sparats kan du inte ångra ändringarna. Håll alltid en säkerhetskopia av ditt originaldokument.

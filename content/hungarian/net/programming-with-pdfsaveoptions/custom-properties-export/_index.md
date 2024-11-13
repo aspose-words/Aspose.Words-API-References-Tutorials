@@ -50,7 +50,7 @@ doc.CustomDocumentProperties.Add("Company", "Aspose");
 
 ## 3. lépés: Konfigurálja a PDF mentési beállításokat
 
- Most állítsa be a PDF-mentési beállításokat annak biztosítására, hogy az egyéni tulajdonságok szerepeljenek a dokumentum exportálásakor. A`PdfSaveOptions` osztály különféle beállításokat biztosít a dokumentum PDF formátumban történő mentésének szabályozásához.
+ Most állítsa be a PDF-mentési beállításokat annak biztosítására, hogy az egyéni tulajdonságok szerepeljenek a dokumentum exportálásakor. A`PdfSaveOptions` osztály különféle beállításokat biztosít a dokumentum PDF-ként való mentésének szabályozásához.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions
@@ -77,7 +77,7 @@ Egyéni tulajdonságok exportálása PDF-dokumentumban az Aspose.Words for .NET 
 Az egyéni tulajdonságok a dokumentumhoz hozzáadott metaadatok, amelyek olyan információkat tartalmazhatnak, mint a szerző, a cég neve vagy bármely más releváns adat, amelyet be kell ágyazni a dokumentumba.
 
 ### Miért használjam az Aspose.Words for .NET-et egyéni tulajdonságok exportálásához?
-Az Aspose.Words for .NET robusztus és könnyen használható API-t biztosít a Word-dokumentumok kezeléséhez és PDF-formátumú exportálásához, biztosítva az egyéni tulajdonságok megőrzését és elérhetőségét.
+Az Aspose.Words for .NET robusztus és könnyen használható API-t biztosít a Word-dokumentumok kezeléséhez és PDF-formátumban történő exportálásához, biztosítva az egyéni tulajdonságok megőrzését és elérhetőségét.
 
 ### Hozzáadhatok több egyéni tulajdonságot egy dokumentumhoz?
  Igen, több egyéni tulajdonságot is hozzáadhat egy dokumentumhoz a következő meghívásával`Add`módszert minden egyes felvenni kívánt ingatlanhoz.

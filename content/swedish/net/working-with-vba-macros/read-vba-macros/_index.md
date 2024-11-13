@@ -103,7 +103,7 @@ Utdata från ovanstående kod kommer att visa VBA-makrokoden för varje modul i 
 
 ### Exempel utgång
 
-Du kanske ser utdata så här:
+Du kan se utdata så här:
 
 ```
 Sub HelloWorld()

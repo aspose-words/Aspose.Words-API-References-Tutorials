@@ -2,7 +2,7 @@
 title: Menggunakan Opsi Muat di Aspose.Words untuk Java
 linktitle: Menggunakan Opsi Muat
 second_title: API Pemrosesan Dokumen Java Aspose.Words
-description: Menguasai Opsi Muat di Aspose.Words untuk Java. Sesuaikan pemuatan dokumen, tangani enkripsi, konversi bentuk, atur versi Word, dan lainnya untuk pemrosesan dokumen Java yang efisien.
+description: Menguasai Opsi Pemuatan di Aspose.Words untuk Java. Menyesuaikan pemuatan dokumen, menangani enkripsi, mengonversi bentuk, mengatur versi Word, dan banyak lagi untuk pemrosesan dokumen Java yang efisien.
 type: docs
 weight: 11
 url: /id/java/document-loading-and-saving/using-load-options/
@@ -10,7 +10,7 @@ url: /id/java/document-loading-and-saving/using-load-options/
 
 ## Pengantar Bekerja dengan Opsi Muat di Aspose.Words untuk Java
 
-Dalam tutorial ini, kita akan mempelajari cara bekerja dengan Load Options di Aspose.Words untuk Java. Opsi Muat memungkinkan Anda menyesuaikan cara dokumen dimuat dan diproses. Kami akan membahas berbagai skenario, termasuk memperbarui bidang kotor, memuat dokumen terenkripsi, mengonversi bentuk ke Office Math, mengatur versi MS Word, menentukan folder sementara, menangani peringatan, dan mengonversi metafile ke PNG. Mari selami langkah demi langkah.
+Dalam tutorial ini, kita akan menjelajahi cara bekerja dengan Opsi Pemuatan di Aspose.Words untuk Java. Opsi Pemuatan memungkinkan Anda untuk menyesuaikan cara dokumen dimuat dan diproses. Kita akan membahas berbagai skenario, termasuk memperbarui kolom kosong, memuat dokumen terenkripsi, mengonversi bentuk ke Office Math, menyetel versi MS Word, menentukan folder sementara, menangani peringatan, dan mengonversi metafile ke PNG. Mari kita bahas langkah demi langkah.
 
 ## Perbarui Bidang Kotor
 
@@ -22,7 +22,7 @@ Document doc = new Document("Your Directory Path" + "Dirty field.docx", loadOpti
 doc.save("Your Directory Path" + "WorkingWithLoadOptions.UpdateDirtyFields.docx");
 ```
 
- Cuplikan kode ini menunjukkan cara memperbarui bidang kotor dalam dokumen. Itu`setUpdateDirtyFields(true)` metode ini digunakan untuk memastikan bahwa bidang kotor diperbarui selama pemuatan dokumen.
+ Potongan kode ini menunjukkan cara memperbarui kolom kosong dalam dokumen.`setUpdateDirtyFields(true)` metode ini digunakan untuk memastikan bahwa bidang kotor diperbarui selama pemuatan dokumen.
 
 ## Muat Dokumen Terenkripsi
 
@@ -34,9 +34,9 @@ public void loadEncryptedDocument() throws Exception {
 }
 ```
 
- Di sini, kami memuat dokumen terenkripsi menggunakan kata sandi. Itu`LoadOptions` konstruktor menerima kata sandi dokumen, dan Anda juga dapat menentukan kata sandi baru saat menyimpan dokumen menggunakan`OdtSaveOptions`.
+ Di sini, kami memuat dokumen terenkripsi menggunakan kata sandi.`LoadOptions` konstruktor menerima kata sandi dokumen, dan Anda juga dapat menentukan kata sandi baru saat menyimpan dokumen menggunakan`OdtSaveOptions`.
 
-## Ubah Bentuk menjadi Matematika Office
+## Ubah Bentuk ke Matematika Kantor
 
 ```java
 LoadOptions loadOptions = new LoadOptions();
@@ -46,7 +46,7 @@ Document doc = new Document("Your Directory Path" + "Office math.docx", loadOpti
 doc.save("Your Directory Path" + "WorkingWithLoadOptions.ConvertShapeToOfficeMath.docx", SaveFormat.DOCX);
 ```
 
- Kode ini menunjukkan cara mengonversi bentuk menjadi objek Office Math selama pemuatan dokumen. Itu`setConvertShapeToOfficeMath(true)`metode memungkinkan konversi ini.
+ Kode ini menunjukkan cara mengonversi bentuk ke objek Office Math selama pemuatan dokumen.`setConvertShapeToOfficeMath(true)`metode ini memungkinkan konversi ini.
 
 ## Atur Versi MS Word
 
@@ -61,7 +61,7 @@ public void setMsWordVersion() throws Exception {
 }
 ```
 
- Anda dapat menentukan versi MS Word untuk memuat dokumen. Dalam contoh ini, kami menyetel versi ke Microsoft Word 2010 menggunakan`setMswVersion`.
+ Anda dapat menentukan versi MS Word untuk memuat dokumen. Dalam contoh ini, kami menetapkan versi ke Microsoft Word 2010 menggunakan`setMswVersion`.
 
 ## Gunakan Folder Sementara
 
@@ -75,7 +75,7 @@ public void useTempFolder() throws Exception {
 }
 ```
 
- Dengan mengatur folder sementara menggunakan`setTempFolder`, Anda dapat mengontrol lokasi penyimpanan file sementara selama pemrosesan dokumen.
+ Dengan mengatur folder sementara menggunakan`setTempFolder`, Anda dapat mengontrol tempat penyimpanan file sementara selama pemrosesan dokumen.
 
 ## Peringatan Panggilan Balik
 
@@ -97,7 +97,7 @@ public static class DocumentLoadingWarningCallback implements IWarningCallback {
 }
 ```
 
-Kode ini menunjukkan cara menyiapkan panggilan balik peringatan untuk menangani peringatan selama pemuatan dokumen. Anda dapat menyesuaikan perilaku aplikasi Anda saat peringatan muncul.
+Kode ini menunjukkan cara menyiapkan panggilan balik peringatan untuk menangani peringatan selama pemuatan dokumen. Anda dapat menyesuaikan perilaku aplikasi saat peringatan terjadi.
 
 ## Konversi Metafile ke PNG
 
@@ -111,7 +111,7 @@ public void convertMetafilesToPng() throws Exception {
 }
 ```
 
- Untuk mengonversi metafile (misalnya WMF) ke gambar PNG selama pemuatan dokumen, Anda dapat menggunakan`setConvertMetafilesToPng(true)` metode.
+ Untuk mengonversi metafile (misalnya, WMF) ke gambar PNG selama pemuatan dokumen, Anda dapat menggunakan`setConvertMetafilesToPng(true)` metode.
 
 ## Kode Sumber Lengkap Untuk Bekerja dengan Opsi Muat di Aspose.Words untuk Java
 
@@ -192,22 +192,22 @@ public void loadChm() throws Exception {
 
 ## Kesimpulan
 
-Dalam tutorial ini, kami telah mempelajari berbagai aspek bekerja dengan Load Options di Aspose.Words untuk Java. Opsi Pemuatan memainkan peran penting dalam menyesuaikan cara dokumen dimuat dan diproses, memungkinkan Anda menyesuaikan pemrosesan dokumen dengan kebutuhan spesifik Anda. Mari kita rekap poin-poin penting yang dibahas dalam panduan ini:
+Dalam tutorial ini, kami telah mempelajari berbagai aspek tentang cara kerja Opsi Pemuatan di Aspose.Words untuk Java. Opsi Pemuatan memainkan peran penting dalam menyesuaikan cara dokumen dimuat dan diproses, yang memungkinkan Anda menyesuaikan pemrosesan dokumen dengan kebutuhan spesifik Anda. Mari kita rangkum poin-poin utama yang dibahas dalam panduan ini:
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
-### Bagaimana cara menangani peringatan saat memuat dokumen?
+### Bagaimana saya dapat menangani peringatan selama pemuatan dokumen?
 
- Anda dapat mengatur panggilan balik peringatan seperti yang ditunjukkan di`warningCallback()` metode di atas. Sesuaikan`DocumentLoadingWarningCallback` kelas untuk menangani peringatan sesuai dengan kebutuhan aplikasi Anda.
+ Anda dapat mengatur panggilan balik peringatan seperti yang ditunjukkan di`warningCallback()` metode di atas. Sesuaikan`DocumentLoadingWarningCallback` kelas untuk menangani peringatan sesuai dengan persyaratan aplikasi Anda.
 
-### Bisakah saya mengonversi bentuk menjadi objek Office Math saat memuat dokumen?
+### Bisakah saya mengubah bentuk menjadi objek Office Math saat memuat dokumen?
 
- Ya, Anda bisa mengonversi bentuk menjadi objek Office Math dengan menggunakan`loadOptions.setConvertShapeToOfficeMath(true)`.
+ Ya, Anda dapat mengubah bentuk menjadi objek Office Math dengan menggunakan`loadOptions.setConvertShapeToOfficeMath(true)`.
 
 ### Bagaimana cara menentukan versi MS Word untuk memuat dokumen?
 
- Menggunakan`loadOptions.setMswVersion(MsWordVersion.WORD_2010)` untuk menentukan versi MS Word untuk memuat dokumen.
+ Menggunakan`loadOptions.setMswVersion(MsWordVersion.WORD_2010)` untuk menentukan versi MS Word untuk pemuatan dokumen.
 
 ###  Apa tujuan dari`setTempFolder` method in Load Options?
 
- Itu`setTempFolder`metode ini memungkinkan Anda menentukan folder tempat file sementara disimpan selama pemrosesan dokumen.
+Itu`setTempFolder`Metode ini memungkinkan Anda menentukan folder tempat file sementara disimpan selama pemrosesan dokumen.

@@ -1,28 +1,28 @@
 ---
-title: Skopiuj nagłówki i stopki z poprzedniej sekcji
-linktitle: Skopiuj nagłówki i stopki z poprzedniej sekcji
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak kopiować nagłówki i stopki pomiędzy sekcjami dokumentów programu Word przy użyciu Aspose.Words dla .NET. Ten szczegółowy przewodnik zapewnia spójność i profesjonalizm.
+title: Kopiuj nagłówki i stopki z poprzedniej sekcji
+linktitle: Kopiuj nagłówki i stopki z poprzedniej sekcji
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak kopiować nagłówki i stopki między sekcjami w dokumentach Word za pomocą Aspose.Words dla .NET. Ten szczegółowy przewodnik zapewnia spójność i profesjonalizm.
 type: docs
 weight: 10
 url: /pl/net/working-with-headers-and-footers/copy-headers-footers-from-previous-section/
 ---
 ## Wstęp
 
-Dodawanie i kopiowanie nagłówków i stopek w dokumentach może znacznie zwiększyć ich profesjonalizm i spójność. Dzięki Aspose.Words dla .NET zadanie to staje się proste i daje duże możliwości dostosowania. W tym obszernym samouczku przeprowadzimy Cię krok po kroku przez proces kopiowania nagłówków i stopek z jednej sekcji do drugiej w dokumentach programu Word.
+Dodawanie i kopiowanie nagłówków i stopek w dokumentach może znacznie zwiększyć ich profesjonalizm i spójność. Dzięki Aspose.Words dla .NET zadanie to staje się proste i wysoce konfigurowalne. W tym kompleksowym samouczku przeprowadzimy Cię przez proces kopiowania nagłówków i stopek z jednej sekcji do drugiej w dokumentach Word, krok po kroku.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim przejdziemy do samouczka, upewnij się, że posiadasz następujące elementy:
+Zanim przejdziemy do samouczka, upewnij się, że masz następujące rzeczy:
 
 -  Aspose.Words dla .NET: Pobierz i zainstaluj z[link do pobrania](https://releases.aspose.com/words/net/).
 - Środowisko programistyczne: takie jak Visual Studio, do pisania i uruchamiania kodu C#.
-- Podstawowa znajomość języka C#: Znajomość programowania w języku C# i frameworku .NET.
-- Przykładowy dokument: użyj istniejącego dokumentu lub utwórz nowy, jak pokazano w tym samouczku.
+- Podstawowa znajomość języka C#: Znajomość programowania w języku C# i środowiska .NET.
+- Przykładowy dokument: Użyj istniejącego dokumentu lub utwórz nowy, tak jak pokazano w tym samouczku.
 
 ## Importuj przestrzenie nazw
 
-Aby rozpocząć, musisz zaimportować niezbędne przestrzenie nazw, które pozwolą Ci korzystać z funkcjonalności Aspose.Words.
+Na początek musisz zaimportować niezbędne przestrzenie nazw, które umożliwią Ci wykorzystanie funkcjonalności Aspose.Words.
 
 ```csharp
 using Aspose.Words;
@@ -32,7 +32,7 @@ using System;
 
 ## Krok 1: Utwórz nowy dokument
 
- Najpierw utwórz nowy dokument i plik`DocumentBuilder` aby ułatwić dodawanie i manipulowanie treścią.
+ Najpierw utwórz nowy dokument i`DocumentBuilder` aby ułatwić dodawanie i modyfikowanie treści.
 
 ```csharp
 Document doc = new Document();
@@ -49,7 +49,7 @@ Section currentSection = builder.CurrentSection;
 
 ## Krok 3: Zdefiniuj poprzednią sekcję
 
-Zdefiniuj poprzednią sekcję, z której chcesz skopiować nagłówki i stopki. Jeśli nie ma poprzedniej sekcji, możesz po prostu wrócić bez wykonywania jakichkolwiek czynności.
+Zdefiniuj poprzednią sekcję, z której chcesz skopiować nagłówki i stopki. Jeśli nie ma poprzedniej sekcji, możesz po prostu wrócić bez wykonywania żadnych czynności.
 
 ```csharp
 Section previousSection = (Section)currentSection.PreviousSibling;
@@ -59,15 +59,15 @@ if (previousSection == null)
 
 ## Krok 4: Wyczyść istniejące nagłówki i stopki
 
-Wyczyść wszystkie istniejące nagłówki i stopki w bieżącej sekcji, aby uniknąć powielania.
+Wyczyść wszystkie istniejące nagłówki i stopki w bieżącej sekcji, aby uniknąć duplikacji.
 
 ```csharp
 currentSection.HeadersFooters.Clear();
 ```
 
-## Krok 5: Skopiuj nagłówki i stopki
+## Krok 5: Kopiuj nagłówki i stopki
 
-Skopiuj nagłówki i stopki z poprzedniej sekcji do bieżącej sekcji. Dzięki temu formatowanie i treść będą spójne we wszystkich sekcjach.
+Skopiuj nagłówki i stopki z poprzedniej sekcji do bieżącej sekcji. Dzięki temu formatowanie i zawartość będą spójne w sekcjach.
 
 ```csharp
 foreach (HeaderFooter headerFooter in previousSection.HeadersFooters)
@@ -76,7 +76,7 @@ foreach (HeaderFooter headerFooter in previousSection.HeadersFooters)
 
 ## Krok 6: Zapisz dokument
 
-Na koniec zapisz dokument w wybranej lokalizacji. Ten krok gwarantuje, że wszystkie zmiany zostaną zapisane w pliku dokumentu.
+Na koniec zapisz dokument w wybranej lokalizacji. Ten krok zapewnia, że wszystkie zmiany zostaną zapisane w pliku dokumentu.
 
 ```csharp
 doc.Save("OutputDocument.docx");
@@ -84,26 +84,26 @@ doc.Save("OutputDocument.docx");
 
 ## Wniosek
 
-Kopiowanie nagłówków i stopek z jednej sekcji do drugiej w dokumencie Word przy użyciu Aspose.Words dla .NET jest proste i wydajne. Postępując zgodnie z tym przewodnikiem krok po kroku, możesz mieć pewność, że Twoje dokumenty zachowują spójny i profesjonalny wygląd we wszystkich sekcjach.
+Kopiowanie nagłówków i stopek z jednej sekcji do drugiej w dokumencie Word przy użyciu Aspose.Words dla .NET jest proste i wydajne. Postępując zgodnie z tym przewodnikiem krok po kroku, możesz mieć pewność, że Twoje dokumenty będą miały spójny i profesjonalny wygląd we wszystkich sekcjach.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Co to jest Aspose.Words dla .NET?
+### Czym jest Aspose.Words dla .NET?
 
-Aspose.Words dla .NET to potężna biblioteka, która pozwala programistom programowo tworzyć, manipulować i konwertować dokumenty Word w aplikacjach .NET.
+Aspose.Words for .NET to zaawansowana biblioteka umożliwiająca programistom tworzenie, edytowanie i konwertowanie dokumentów Word programowo w aplikacjach .NET.
 
-### Czy mogę skopiować nagłówki i stopki z dowolnej sekcji do innej sekcji?
+### Czy mogę skopiować nagłówki i stopki z dowolnej sekcji do innej?
 
-Tak, możesz kopiować nagłówki i stopki pomiędzy dowolnymi sekcjami dokumentu programu Word, korzystając z metody opisanej w tym samouczku.
+Tak, możesz kopiować nagłówki i stopki pomiędzy dowolnymi sekcjami w dokumencie Word, korzystając z metody opisanej w tym samouczku.
 
-### Jak obsługiwać różne nagłówki i stopki dla stron nieparzystych i parzystych?
+### Jak ustawić różne nagłówki i stopki dla stron parzystych i nieparzystych?
 
- Za pomocą opcji można ustawić różne nagłówki i stopki dla stron nieparzystych i parzystych`PageSetup.OddAndEvenPagesHeaderFooter` nieruchomość.
+ Możesz ustawić różne nagłówki i stopki dla stron nieparzystych i parzystych za pomocą`PageSetup.OddAndEvenPagesHeaderFooter` nieruchomość.
 
 ### Gdzie mogę znaleźć więcej informacji na temat Aspose.Words dla .NET?
 
- Obszerną dokumentację można znaleźć na stronie[Strona dokumentacji API Aspose.Words](https://reference.aspose.com/words/net/).
+ Pełną dokumentację można znaleźć na stronie[Strona dokumentacji API Aspose.Words](https://reference.aspose.com/words/net/).
 
-### Czy dostępna jest bezpłatna wersja próbna Aspose.Words dla .NET?
+### Czy jest dostępna bezpłatna wersja próbna Aspose.Words dla .NET?
 
- Tak, możesz pobrać bezpłatną wersję próbną ze strony[strona pobierania](https://releases.aspose.com/).
+ Tak, możesz pobrać bezpłatną wersję próbną ze strony[strona do pobrania](https://releases.aspose.com/).

@@ -2,14 +2,14 @@
 title: Ubah Pemformatan Sel
 linktitle: Ubah Pemformatan Sel
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mengubah pemformatan sel di dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah yang mendetail ini.
+description: Pelajari cara mengubah pemformatan sel dalam dokumen Word menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah terperinci ini.
 type: docs
 weight: 10
 url: /id/net/programming-with-table-styles-and-formatting/modify-cell-formatting/
 ---
 ## Perkenalan
 
-Jika Anda pernah bergulat dengan dokumen Word, mencoba mendapatkan format sel yang tepat, Anda akan mendapat hadiah. Dalam tutorial ini, kita akan memandu langkah-langkah untuk mengubah pemformatan sel di dokumen Word menggunakan Aspose.Words untuk .NET. Dari menyesuaikan lebar sel hingga mengubah orientasi teks dan bayangan, semuanya sudah kami bahas. Jadi, mari selami dan buat pengeditan dokumen Anda menjadi mudah!
+Jika Anda pernah kesulitan dengan dokumen Word, mencoba mendapatkan format sel yang tepat, Anda akan dimanjakan. Dalam tutorial ini, kami akan memandu Anda melalui langkah-langkah untuk mengubah format sel dalam dokumen Word menggunakan Aspose.Words untuk .NET. Mulai dari menyesuaikan lebar sel hingga mengubah orientasi dan bayangan teks, semuanya sudah kami bahas. Jadi, mari kita mulai dan buat pengeditan dokumen Anda menjadi mudah!
 
 ## Prasyarat
 
@@ -18,11 +18,11 @@ Sebelum kita mulai, pastikan Anda memiliki hal berikut:
 1. Aspose.Words untuk .NET - Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/net/).
 2. Visual Studio - Atau IDE lain pilihan Anda.
 3. Pengetahuan dasar C# - Ini akan membantu Anda mengikuti contoh kode.
-4.  Dokumen Word - Khususnya, dokumen yang berisi tabel. Kami akan menggunakan file bernama`Tables.docx`.
+4.  Dokumen Word - Secara khusus, dokumen yang berisi tabel. Kita akan menggunakan file bernama`Tables.docx`.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Sebelum mendalami kode, Anda perlu mengimpor namespace yang diperlukan. Ini memastikan Anda memiliki akses ke semua fitur yang disediakan oleh Aspose.Words untuk .NET.
+Sebelum menyelami kode, Anda perlu mengimpor namespace yang diperlukan. Ini memastikan Anda memiliki akses ke semua fitur yang disediakan oleh Aspose.Words untuk .NET.
 
 ```csharp
 using Aspose.Words;
@@ -30,11 +30,11 @@ using Aspose.Words.Tables;
 using System.Drawing;
 ```
 
-Sekarang, mari kita uraikan proses memodifikasi pemformatan sel menjadi langkah-langkah sederhana dan mudah diikuti.
+Sekarang, mari kita uraikan proses modifikasi pemformatan sel menjadi langkah-langkah sederhana dan mudah diikuti.
 
 ## Langkah 1: Muat Dokumen Anda
 
-Hal pertama yang pertama, Anda perlu memuat dokumen Word yang berisi tabel yang ingin Anda modifikasi. Ini seperti membuka file di pengolah kata favorit Anda, tapi kami akan melakukannya secara terprogram.
+Pertama-tama, Anda perlu memuat dokumen Word yang berisi tabel yang ingin Anda ubah. Ini seperti membuka berkas di pengolah kata favorit Anda, tetapi kita akan melakukannya secara terprogram.
 
 ```csharp
 // Jalur ke direktori dokumen Anda
@@ -47,23 +47,23 @@ Document doc = new Document(dataDir + "Tables.docx");
 
 ## Langkah 2: Akses Tabel
 
-Selanjutnya, Anda perlu mengakses tabel di dalam dokumen Anda. Anggap saja ini seperti menemukan tabel di dokumen Anda secara visual, tapi kami melakukannya melalui kode.
+Selanjutnya, Anda perlu mengakses tabel di dalam dokumen Anda. Anggap saja ini seperti mencari tabel di dokumen Anda secara visual, tetapi kita melakukannya melalui kode.
 
 ```csharp
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-Di sini, kami menggunakan`GetChild` metode untuk mendapatkan tabel pertama dalam dokumen. Itu`NodeType.Table` parameter menentukan bahwa kita sedang mencari tabel, dan`0` menunjukkan tabel pertama. Itu`true` parameter memastikan pencarian mendalam, artinya akan memeriksa semua node anak.
+Di sini, kami menggunakan`GetChild` metode untuk mendapatkan tabel pertama dalam dokumen.`NodeType.Table` parameter menentukan bahwa kita sedang mencari tabel, dan`0` menunjukkan tabel pertama.`true` parameter memastikan penelusuran mendalam, artinya akan menelusuri semua node anak.
 
 ## Langkah 3: Pilih Sel Pertama
 
-Sekarang kita sudah mendapatkan tabelnya, mari kita fokus pada sel pertama. Di sinilah kami akan membuat perubahan format.
+Sekarang setelah kita punya tabel, mari kita fokus pada sel pertama. Di sinilah kita akan membuat perubahan format.
 
 ```csharp
 Cell firstCell = table.FirstRow.FirstCell;
 ```
 
-Di baris ini, kita mengakses baris pertama tabel dan kemudian sel pertama di baris itu. Sederhana, bukan?
+Pada baris ini, kita mengakses baris pertama tabel dan kemudian sel pertama di baris tersebut. Sederhana, bukan?
 
 ## Langkah 4: Ubah Lebar Sel
 
@@ -73,45 +73,45 @@ Salah satu tugas pemformatan yang paling umum adalah menyesuaikan lebar sel. Mar
 firstCell.CellFormat.Width = 30;
 ```
 
- Di sini, kami sedang mengatur`Width` properti format sel menjadi`30`. Ini mengubah lebar sel pertama menjadi 30 poin.
+ Di sini, kami sedang mengatur`Width` properti format sel untuk`30`Ini mengubah lebar sel pertama menjadi 30 poin.
 
 ## Langkah 5: Ubah Orientasi Teks
 
-Selanjutnya, mari bersenang-senang dengan orientasi teks. Kami akan memutar teks ke bawah.
+Selanjutnya, mari kita bersenang-senang dengan orientasi teks. Kita akan memutar teks ke bawah.
 
 ```csharp
 firstCell.CellFormat.Orientation = TextOrientation.Downward;
 ```
 
- Dengan mengatur`Orientation`properti ke`TextOrientation.Downward`kita telah memutar teks di dalam sel menghadap ke bawah. Ini berguna untuk membuat header tabel atau catatan samping yang unik.
+ Dengan mengatur`Orientation`properti untuk`TextOrientation.Downward`kita telah memutar teks di dalam sel agar menghadap ke bawah. Ini dapat berguna untuk membuat tajuk tabel atau catatan samping yang unik.
 
-## Langkah 6: Terapkan Shading Sel
+## Langkah 6: Terapkan Cell Shading
 
-Terakhir, mari tambahkan beberapa warna pada sel kita. Kami akan menaunginya dengan warna hijau muda.
+Terakhir, mari tambahkan sedikit warna ke sel kita. Kita akan mewarnainya dengan warna hijau muda.
 
 ```csharp
 firstCell.CellFormat.Shading.ForegroundPatternColor = Color.LightGreen;
 ```
 
- Pada langkah ini, kami menggunakan`Shading` properti untuk mengatur`ForegroundPatternColor` ke`Color.LightGreen`. Ini menambahkan warna latar belakang hijau muda ke sel, membuatnya menonjol.
+ Pada langkah ini, kami menggunakan`Shading` properti untuk mengatur`ForegroundPatternColor` ke`Color.LightGreen`Ini menambahkan warna latar belakang hijau muda ke sel, membuatnya menonjol.
 
 ## Kesimpulan
 
-Dan itu dia! Kami telah berhasil memodifikasi pemformatan sel dalam dokumen Word menggunakan Aspose.Words untuk .NET. Dari memuat dokumen hingga menerapkan bayangan, setiap langkah sangat penting dalam membuat dokumen Anda terlihat sesuai keinginan Anda. Ingat, ini hanyalah beberapa contoh tentang apa yang dapat Anda lakukan dengan pemformatan sel. Aspose.Words untuk .NET menawarkan banyak fitur lain untuk dijelajahi.
+Nah, itu dia! Kami telah berhasil mengubah format sel dalam dokumen Word menggunakan Aspose.Words untuk .NET. Dari memuat dokumen hingga menerapkan bayangan, setiap langkah sangat penting untuk membuat dokumen Anda terlihat seperti yang Anda inginkan. Ingat, ini hanyalah beberapa contoh tentang apa yang dapat Anda lakukan dengan format sel. Aspose.Words untuk .NET menawarkan banyak fitur lain untuk dijelajahi.
 
-## FAQ
+## Tanya Jawab Umum
 
-### Bisakah saya mengubah banyak sel sekaligus?
-Ya, Anda dapat mengulang sel-sel di tabel Anda dan menerapkan pemformatan yang sama ke masing-masing sel.
+### Bisakah saya memodifikasi beberapa sel sekaligus?
+Ya, Anda dapat melakukan pengulangan melalui sel dalam tabel dan menerapkan format yang sama pada setiap sel.
 
-### Bagaimana cara menyimpan dokumen yang diubah?
+### Bagaimana cara menyimpan dokumen yang sudah dimodifikasi?
  Gunakan`doc.Save("output.docx")` metode untuk menyimpan perubahan Anda.
 
-### Apakah mungkin untuk menerapkan corak berbeda pada sel berbeda?
-Sangat! Cukup akses setiap sel satu per satu dan atur bayangannya.
+### Mungkinkah menerapkan warna yang berbeda pada sel yang berbeda?
+Tentu saja! Akses saja setiap sel satu per satu dan atur bayangannya.
 
-### Bisakah saya menggunakan Aspose.Words untuk .NET dengan bahasa pemrograman lain?
-Aspose.Words untuk .NET dirancang untuk bahasa .NET seperti C#, tetapi ada versi untuk platform lain juga.
+### Dapatkah saya menggunakan Aspose.Words untuk .NET dengan bahasa pemrograman lain?
+Aspose.Words untuk .NET dirancang untuk bahasa .NET seperti C#, tetapi ada juga versi untuk platform lain.
 
-### Di mana saya dapat menemukan dokumentasi yang lebih detail?
+### Di mana saya dapat menemukan dokumentasi yang lebih rinci?
  Anda dapat menemukan dokumentasi lengkapnya[Di Sini](https://reference.aspose.com/words/net/).

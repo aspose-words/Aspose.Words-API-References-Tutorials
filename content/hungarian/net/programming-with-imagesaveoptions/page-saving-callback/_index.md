@@ -85,7 +85,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.PageSavingCallback.png", imageSa
 
 ## Következtetés
 
-És megvan! Sikeresen beállított egy oldalmentő visszahívást, amellyel egy Word-dokumentum minden oldalát külön PNG-képként mentheti az Aspose.Words for .NET segítségével. Ez a technika hihetetlenül hasznos különféle alkalmazásokhoz, az oldal-előnézetek létrehozásától a jelentésekhez készített egyedi oldalképekig. 
+És megvan! Sikeresen beállított egy oldalmentő visszahívást, amellyel egy Word-dokumentum minden oldalát külön PNG-képként mentheti az Aspose.Words for .NET segítségével. Ez a technika hihetetlenül hasznos a különböző alkalmazásokhoz, az oldal-előnézetek létrehozásától a jelentésekhez készített egyedi oldalképekig. 
 
 Boldog kódolást!
 

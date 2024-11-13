@@ -14,7 +14,7 @@ url: /ja/java/document-splitting/splitting-documents-into-html-pages/
 
 コードに進む前に、次の前提条件が満たされていることを確認してください。
 
-- Java Development Kit (JDK) がシステムにインストールされています。
+- システムに Java 開発キット (JDK) がインストールされています。
 -  Aspose.Words for Javaライブラリ。ここからダウンロードできます。[ここ](https://releases.aspose.com/words/java/).
 
 

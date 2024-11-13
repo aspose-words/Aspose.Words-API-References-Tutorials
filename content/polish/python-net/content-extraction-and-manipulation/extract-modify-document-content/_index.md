@@ -1,8 +1,8 @@
 ---
-title: Wyodrębnianie i modyfikowanie treści w dokumentach programu Word
-linktitle: Wyodrębnianie i modyfikowanie treści w dokumentach programu Word
-second_title: Aspose.Words API do zarządzania dokumentami w języku Python
-description: Dowiedz się, jak wyodrębniać i modyfikować zawartość dokumentów programu Word przy użyciu Aspose.Words dla języka Python. Przewodnik krok po kroku z kodem źródłowym.
+title: Wyodrębnianie i modyfikowanie zawartości w dokumentach programu Word
+linktitle: Wyodrębnianie i modyfikowanie zawartości w dokumentach programu Word
+second_title: Aspose.Words API zarządzania dokumentami Python
+description: Dowiedz się, jak wyodrębnić i zmodyfikować zawartość dokumentów Word za pomocą Aspose.Words dla Pythona. Przewodnik krok po kroku z kodem źródłowym.
 type: docs
 weight: 10
 url: /pl/python-net/content-extraction-and-manipulation/extract-modify-document-content/
@@ -10,19 +10,19 @@ url: /pl/python-net/content-extraction-and-manipulation/extract-modify-document-
 
 ## Wprowadzenie do Aspose.Words dla Pythona
 
-Aspose.Words to popularna biblioteka do manipulowania i generowania dokumentów, która zapewnia szerokie możliwości programowej pracy z dokumentami programu Word. Jego interfejs API Pythona oferuje szeroką gamę funkcji do wyodrębniania, modyfikowania i manipulowania treścią w dokumentach Word.
+Aspose.Words to popularna biblioteka do manipulacji i generowania dokumentów, która zapewnia szerokie możliwości programowej pracy z dokumentami Word. Jej API Pythona oferuje szeroki zakres funkcji do wyodrębniania, modyfikowania i manipulowania treścią w dokumentach Word.
 
 ## Instalacja i konfiguracja
 
-Na początek upewnij się, że masz zainstalowany Python w swoim systemie. Następnie możesz zainstalować bibliotekę Aspose.Words dla Pythona, używając następującego polecenia:
+Na początek upewnij się, że masz zainstalowany Python w swoim systemie. Następnie możesz zainstalować bibliotekę Aspose.Words for Python za pomocą następującego polecenia:
 
 ```python
 pip install aspose-words
 ```
 
-## Ładowanie dokumentów Worda
+## Ładowanie dokumentów Word
 
-Załadowanie dokumentu Worda to pierwszy krok w kierunku pracy z jego zawartością. Aby załadować dokument, możesz użyć następującego fragmentu kodu:
+Załadowanie dokumentu Word jest pierwszym krokiem do pracy z jego zawartością. Możesz użyć następującego fragmentu kodu, aby załadować dokument:
 
 ```python
 from asposewords import Document
@@ -32,7 +32,7 @@ doc = Document("path/to/your/document.docx")
 
 ## Wyodrębnianie tekstu
 
-Aby wyodrębnić tekst z dokumentu, możesz iterować po akapitach i biegach:
+Aby wyodrębnić tekst z dokumentu, możesz przejść przez akapity i przebiegi:
 
 ```python
 for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
@@ -42,7 +42,7 @@ for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
 
 ## Modyfikowanie tekstu
 
-Możesz modyfikować tekst, bezpośrednio ustawiając tekst przebiegów lub akapitów:
+Możesz modyfikować tekst poprzez bezpośrednie ustawienie tekstu serii lub akapitów:
 
 ```python
 for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
@@ -62,7 +62,7 @@ run.get_font().set_color(255, 0, 0)
 
 ## Zastępowanie tekstu
 
- Zastępowanie tekstu można osiągnąć za pomocą`replace` metoda:
+ Zastępowanie tekstu można wykonać za pomocą`replace` metoda:
 
 ```python
 doc.get_range().replace("old_text", "new_text", False, False)
@@ -70,7 +70,7 @@ doc.get_range().replace("old_text", "new_text", False, False)
 
 ## Dodawanie i modyfikowanie obrazów
 
- Obrazy można dodawać lub zastępować za pomocą opcji`insert_image` metoda:
+ Obrazy można dodawać i zastępować za pomocą`insert_image` metoda:
 
 ```python
 shape = doc.get_first_section().get_body().append_child(asposewords.Drawing.Shape(doc, asposewords.Drawing.ShapeType.IMAGE))
@@ -79,7 +79,7 @@ shape.get_image_data().set_source("path/to/image.jpg")
 
 ## Zapisywanie zmodyfikowanego dokumentu
 
-Po dokonaniu modyfikacji zapisz dokument:
+Po wprowadzeniu zmian zapisz dokument:
 
 ```python
 doc.save("path/to/modified/document.docx")
@@ -87,7 +87,7 @@ doc.save("path/to/modified/document.docx")
 
 ## Obsługa tabel i list
 
-Praca z tabelami i listami polega na iteracji po wierszach i komórkach:
+Praca z tabelami i listami wymaga iteracyjnego przeglądania wierszy i komórek:
 
 ```python
 for table in doc.get_child_nodes(asposewords.NodeType.TABLE, True):
@@ -96,9 +96,9 @@ for table in doc.get_child_nodes(asposewords.NodeType.TABLE, True):
             text = cell.get_text()
 ```
 
-## Postępowanie z nagłówkami i stopkami
+## Jak radzić sobie z nagłówkami i stopkami
 
-Dostęp do nagłówków i stopek oraz ich modyfikowanie można uzyskać:
+Do nagłówków i stopek można uzyskać dostęp i je modyfikować:
 
 ```python
 header = doc.get_first_section().get_headers_footers().get_by_header_footer_type(asposewords.HeaderFooterType.HEADER_PRIMARY)
@@ -107,12 +107,12 @@ header.get_paragraphs().add("Header content")
 
 ## Dodawanie hiperłączy
 
- Hiperłącza można dodawać za pomocą opcji`insert_hyperlink` metoda:
+ Hiperłącza można dodawać za pomocą`insert_hyperlink` metoda:
 
 ```python
 run = doc.get_first_section().get_body().get_first_paragraph().get_runs().get(0)
 run.get_font().set_color(0, 0, 255)
-doc.get_hyperlinks().add(run, "https://www.przyklad.com")
+doc.get_hyperlinks().add(run, "https://(www.example.com)
 ```
 
 ## Konwersja do innych formatów
@@ -125,30 +125,30 @@ doc.save("path/to/converted/document.pdf", asposewords.SaveFormat.PDF)
 
 ## Zaawansowane funkcje i automatyzacja
 
-Aspose.Words oferuje bardziej zaawansowane funkcje, takie jak korespondencja seryjna, porównywanie dokumentów i inne. Z łatwością automatyzuj złożone zadania.
+Aspose.Words oferuje bardziej zaawansowane funkcje, takie jak korespondencja seryjna, porównywanie dokumentów i wiele innych. Łatwa automatyzacja złożonych zadań.
 
 ## Wniosek
 
-Aspose.Words dla Pythona to wszechstronna biblioteka, która umożliwia łatwe manipulowanie i modyfikowanie dokumentów programu Word. Niezależnie od tego, czy chcesz wyodrębnić tekst, zastąpić treść, czy sformatować dokumenty, ten interfejs API zapewnia niezbędne narzędzia.
+Aspose.Words for Python to wszechstronna biblioteka, która umożliwia bezproblemowe manipulowanie i modyfikowanie dokumentów Word. Niezależnie od tego, czy potrzebujesz wyodrębnić tekst, zastąpić zawartość czy sformatować dokumenty, ten interfejs API zapewnia niezbędne narzędzia.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Jak mogę zainstalować Aspose.Words dla Pythona?
+### Jak zainstalować Aspose.Words dla języka Python?
 
- Aby zainstalować Aspose.Words dla Pythona, użyj polecenia`pip install aspose-words`.
+ Aby zainstalować Aspose.Words dla języka Python, użyj polecenia`pip install aspose-words`.
 
 ### Czy mogę modyfikować formatowanie tekstu za pomocą tej biblioteki?
 
-Tak, możesz modyfikować formatowanie tekstu, takie jak pogrubienie, kolor i rozmiar czcionki, używając interfejsu API Aspose.Words for Python.
+Tak, możesz modyfikować formatowanie tekstu, np. pogrubienie, kolor i rozmiar czcionki, korzystając z interfejsu API Aspose.Words for Python.
 
-### Czy można zastąpić konkretny tekst w dokumencie?
+### Czy można zastąpić określony tekst w dokumencie?
 
- Oczywiście, że możesz skorzystać z tzw`replace` metoda zastępowania określonego tekstu w dokumencie.
+ Oczywiście, że możesz użyć`replace` metoda umożliwiająca zastąpienie określonego tekstu w dokumencie.
 
-### Czy mogę dodać hiperłącza do mojego dokumentu programu Word?
+### Czy mogę dodać hiperłącza do mojego dokumentu Word?
 
- Oczywiście możesz dodać hiperłącza do swojego dokumentu za pomocą`insert_hyperlink` metoda dostarczona przez Aspose.Words.
+ Oczywiście, możesz dodać hiperłącza do swojego dokumentu, używając`insert_hyperlink` metoda dostarczona przez Aspose.Words.
 
-### Na jakie inne formaty mogę przekonwertować dokumenty programu Word?
+### Do jakich innych formatów mogę konwertować dokumenty Word?
 
 Aspose.Words obsługuje konwersję do różnych formatów, takich jak PDF, HTML, EPUB i inne.

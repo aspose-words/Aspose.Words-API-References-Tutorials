@@ -1,16 +1,16 @@
 ---
-title: Aspose.Words for Java'da Grafikleri Kullanma
+title: Java için Aspose.Words'de Grafiklerin Kullanımı
 linktitle: Grafikleri Kullanma
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Aspose.Words for Java'da grafikleri nasıl oluşturup özelleştireceğinizi öğrenin. Veri görselleştirmeye yönelik grafik türlerini, biçimlendirmeyi ve eksen özelliklerini keşfedin.
+description: Java için Aspose.Words'de grafiklerin nasıl oluşturulacağını ve özelleştirileceğini öğrenin. Veri görselleştirme için grafik türlerini, biçimlendirmeyi ve eksen özelliklerini keşfedin.
 type: docs
 weight: 12
 url: /tr/java/document-conversion-and-export/using-charts/
 ---
 
-## Aspose.Words for Java'da Grafik Kullanımına Giriş
+## Java için Aspose.Words'de Grafiklerin Kullanımına Giriş
 
-Bu eğitimde Aspose.Words for Java kullanarak grafiklerle nasıl çalışılacağını inceleyeceğiz. Çeşitli grafik türlerini nasıl oluşturacağınızı, eksen özelliklerini nasıl özelleştireceğinizi, veri etiketlerini nasıl biçimlendireceğinizi ve daha fazlasını öğreneceksiniz. Hadi dalalım!
+Bu eğitimde, Java için Aspose.Words kullanarak grafiklerle nasıl çalışılacağını keşfedeceğiz. Çeşitli grafik türleri oluşturmayı, eksen özelliklerini özelleştirmeyi, veri etiketlerini biçimlendirmeyi ve daha fazlasını öğreneceksiniz. Hadi başlayalım!
 
 ## Çizgi Grafiği Oluşturma
 
@@ -23,10 +23,10 @@ Shape shape = builder.insertChart(ChartType.LINE, 432.0, 252.0);
 Chart chart = shape.getChart();
 chart.getTitle().setText("Data Labels With Different Number Format");
 
-// Varsayılan oluşturulan seriyi silin.
+// Varsayılan olarak oluşturulan seriyi sil.
 chart.getSeries().clear();
 
-// Veri ve veri etiketleri içeren bir seri ekleme.
+// Veri ve veri etiketleriyle bir seri ekleme.
 ChartSeries series1 = chart.getSeries().add("Aspose Series 1", 
     new String[] { "Category 1", "Category 2", "Category 3" }, 
     new double[] { 2.5, 1.5, 3.5 });
@@ -43,9 +43,9 @@ series1.getDataLabels().get(2).getNumberFormat().isLinkedToSource(true);
 doc.save("Your Directory Path" + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 ```
 
-## Diğer Grafik Türlerini Oluşturma
+## Diğer Grafik Türlerinin Oluşturulması
 
-Benzer teknikleri kullanarak sütun, alan, kabarcık, dağılım ve daha fazlası gibi farklı türde grafikler oluşturabilirsiniz. Basit bir sütun grafiği eklemenin bir örneğini burada bulabilirsiniz:
+Benzer teknikleri kullanarak sütun, alan, balon, dağılım ve daha fazlası gibi farklı grafik türleri oluşturabilirsiniz. İşte basit bir sütun grafiği eklemenin bir örneği:
 
 ```java
 Document doc = new Document();
@@ -53,7 +53,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Shape shape = builder.insertChart(ChartType.COLUMN, 432.0, 252.0);
 Chart chart = shape.getChart();
 
-// Varsayılan oluşturulan seriyi silin.
+// Varsayılan olarak oluşturulan seriyi sil.
 chart.getSeries().clear();
 
 // Kategori oluşturma ve veri ekleme.
@@ -66,7 +66,7 @@ doc.save("Your Directory Path" + "WorkingWithCharts.InsertSimpleColumnChart.docx
 
 ## Eksen Özelliklerini Özelleştirme
 
-Eksen türünü değiştirme, onay işaretlerini ayarlama, etiketleri biçimlendirme ve daha fazlası gibi eksen özelliklerini özelleştirebilirsiniz. Aşağıda XY ekseni özelliklerini tanımlamaya ilişkin bir örnek verilmiştir:
+Eksen türünü değiştirme, işaret çizgilerini ayarlama, etiketleri biçimlendirme ve daha fazlası gibi eksen özelliklerini özelleştirebilirsiniz. İşte XY eksen özelliklerini tanımlamanın bir örneği:
 
 ```java
 Document doc = new Document();
@@ -79,10 +79,10 @@ Chart chart = shape.getChart();
 ChartAxis xAxis = chart.getAxisX();
 ChartAxis yAxis = chart.getAxisY();
 
-// X eksenini tarih yerine kategori olacak şekilde değiştirin.
+// X eksenini tarih yerine kategori olarak değiştirin.
 xAxis.setCategoryType(AxisCategoryType.CATEGORY);
 xAxis.setCrosses(AxisCrosses.CUSTOM);
-xAxis.setCrossesAt(3.0); // ekseninin görüntü birimleri (yüzlerce) cinsinden ölçülür.
+xAxis.setCrossesAt(3.0); // Y ekseninin (yüzlerce) gösterge birimleriyle ölçülmüştür.
 xAxis.setReverseOrder(true);
 xAxis.setMajorTickMark(AxisTickMark.CROSS);
 xAxis.setMinorTickMark(AxisTickMark.OUTSIDE);
@@ -117,30 +117,30 @@ doc.save("Your Directory Path" + "WorkingWithCharts.NumberFormatForAxis.docx");
 
 ## Ek Grafik Özelleştirmeleri
 
-Sınırları, etiketler arasındaki aralık birimlerini ayarlayarak, grafik eksenlerini gizleyerek ve daha fazlasını yaparak grafiklerinizi daha da özelleştirebilirsiniz. Bu seçenekler hakkında daha fazla bilgi edinmek için sağlanan kod parçacıklarını inceleyin.
+Sınırları, etiketler arasındaki aralık birimlerini, grafik eksenlerini gizlemeyi ve daha fazlasını ayarlayarak grafiklerinizi daha da özelleştirebilirsiniz. Bu seçenekler hakkında daha fazla bilgi edinmek için sağlanan kod parçacıklarını inceleyin.
 
 ## Çözüm
 
-Bu eğitimde Aspose.Words for Java kullanarak grafiklerle nasıl çalışılacağını araştırdık. Çeşitli grafik türlerini nasıl oluşturacağınızı, eksen özelliklerini özelleştirmeyi, veri etiketlerini biçimlendirmeyi ve daha fazlasını öğrendiniz. Aspose.Words for Java, belgelerinize verilerin görsel temsillerini eklemek için güçlü araçlar sağlayarak bilgileri sunma şeklinizi geliştirir.
+Bu eğitimde, Aspose.Words for Java kullanarak grafiklerle nasıl çalışılacağını inceledik. Çeşitli grafik türlerinin nasıl oluşturulacağını, eksen özelliklerinin nasıl özelleştirileceğini, veri etiketlerinin nasıl biçimlendirileceğini ve daha fazlasını öğrendiniz. Aspose.Words for Java, belgelerinize verilerin görsel temsillerini eklemek ve bilgileri sunma şeklinizi geliştirmek için güçlü araçlar sağlar.
 
-## SSS'ler
+## SSS
 
-### Bir grafiğe birden fazla seriyi nasıl ekleyebilirim?
+### Bir grafiğe birden fazla seri nasıl ekleyebilirim?
 
- kullanarak bir grafiğe birden fazla seri ekleyebilirsiniz.`chart.getSeries().add()` Yöntem. Seri adını, kategorileri ve veri değerlerini belirttiğinizden emin olun.
+ Bir grafiğe birden fazla seriyi kullanarak ekleyebilirsiniz.`chart.getSeries().add()` yöntem. Seri adını, kategorileri ve veri değerlerini belirttiğinizden emin olun.
 
 ### Veri etiketlerini özel sayı biçimleriyle nasıl biçimlendirebilirim?
 
-Veri etiketlerini şuraya erişerek biçimlendirebilirsiniz:`DataLabels` bir serinin özellikleri ve kullanılarak istenen format kodunun ayarlanması`getNumberFormat().setFormatCode()`.
+ Veri etiketlerini şuraya erişerek biçimlendirebilirsiniz:`DataLabels` bir serinin özelliklerini ve istenilen biçim kodunu kullanarak ayarlama`getNumberFormat().setFormatCode()`.
 
-### Bir grafikte eksen özelliklerini nasıl özelleştiririm?
+### Bir grafikteki eksen özelliklerini nasıl özelleştirebilirim?
 
- Yazım, onay işaretleri, etiketler ve daha fazlası gibi eksen özelliklerini,`ChartAxis` gibi özellikler`setCategoryType()`, `setCrosses()` , Ve`setMajorTickMark()`.
+ Tür, onay işaretleri, etiketler ve daha fazlası gibi eksen özelliklerini şuraya erişerek özelleştirebilirsiniz:`ChartAxis` gibi özellikler`setCategoryType()`, `setCrosses()` , Ve`setMajorTickMark()`.
 
 ### Dağılım veya alan grafikleri gibi diğer grafik türlerini nasıl oluşturabilirim?
 
- Uygun grafik türlerini belirterek çeşitli grafik türleri oluşturabilirsiniz.`ChartType` kullanarak grafiği eklerken`builder.insertChart(ChartType.TYPE, width, height)`.
+Uygun olanı belirterek çeşitli grafik türleri oluşturabilirsiniz.`ChartType` kullanarak grafik eklerken`builder.insertChart(ChartType.TYPE, width, height)`.
 
 ### Bir grafik eksenini nasıl gizleyebilirim?
 
- ayarlayarak bir grafik eksenini gizleyebilirsiniz.`setHidden(true)` eksenin özelliği.
+ Bir grafik eksenini ayarlayarak gizleyebilirsiniz.`setHidden(true)` eksenin özelliği.

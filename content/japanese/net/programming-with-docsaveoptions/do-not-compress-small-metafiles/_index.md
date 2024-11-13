@@ -2,14 +2,14 @@
 title: 小さなメタファイルを圧縮しない
 linktitle: 小さなメタファイルを圧縮しない
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して、Word 文書内の小さなメタファイルが圧縮されず、品質と整合性が維持されるようにする方法を学びます。ステップバイステップのガイドが含まれています。
+description: Aspose.Words for .NET を使用して、Word 文書内の小さなメタファイルが圧縮されず、品質と整合性が維持されるようにする方法を学びます。ステップ バイ ステップ ガイドが含まれています。
 type: docs
 weight: 10
 url: /ja/net/programming-with-docsaveoptions/do-not-compress-small-metafiles/
 ---
 ## 導入
 
-ドキュメント処理の分野では、ファイルの保存方法を最適化することで、品質と使いやすさを大幅に向上できます。Aspose.Words for .NET には、Word ドキュメントを正確に保存するためのさまざまな機能が用意されています。その 1 つが、「小さなメタファイルを圧縮しない」オプションです。このチュートリアルでは、この機能を利用して Word ドキュメント内のメタファイルの整合性を維持するプロセスについて説明します。さっそく始めましょう。
+ドキュメント処理の分野では、ファイルの保存方法を最適化することで、品質と使いやすさを大幅に向上できます。Aspose.Words for .NET には、Word ドキュメントを正確に保存するためのさまざまな機能が用意されています。その 1 つが、「小さなメタファイルを圧縮しない」オプションです。このチュートリアルでは、この機能を利用して Word ドキュメント内のメタファイルの整合性を維持する手順を説明します。さっそく始めましょう。
 
 ## 前提条件
 
@@ -60,7 +60,7 @@ builder.Writeln("Text added to a document.");
 ここで、保存オプションを設定して「小さなメタファイルを圧縮しない」機能を使用します。これは、`DocSaveOptions`クラス。
 
 ```csharp
-// 「小さなメタファイルを圧縮しない」機能を使用して保存オプションを設定します
+// 「小さなメタファイルを圧縮しない」機能を使用して保存オプションを構成する
 DocSaveOptions saveOptions = new DocSaveOptions();
 saveOptions.Compliance = PdfCompliance.PdfA1a;
 ```
@@ -72,7 +72,7 @@ saveOptions.Compliance = PdfCompliance.PdfA1a;
 最後に、小さなメタファイルが圧縮されないように、指定されたオプションを使用してドキュメントを保存します。
 
 ```csharp
-//指定されたオプションでドキュメントを保存します
+//指定したオプションでドキュメントを保存します
 doc.Save(dataDir + "DocumentWithDoNotCompressMetafiles.pdf", saveOptions);
 ```
 

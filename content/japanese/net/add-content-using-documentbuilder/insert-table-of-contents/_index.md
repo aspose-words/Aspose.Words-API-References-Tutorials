@@ -33,7 +33,7 @@ using Aspose.Words.Tables;
 
 ## ステップ 1: Aspose.Words ドキュメントと DocumentBuilder を初期化する
 
-まず、新しいAspose.Wordsを初期化します`Document`オブジェクトと`DocumentBuilder`一緒に働く：
+まず、新しいAspose.Wordsを初期化します。`Document`オブジェクトと`DocumentBuilder`一緒に働く：
 
 ```csharp
 // DocumentとDocumentBuilderを初期化する

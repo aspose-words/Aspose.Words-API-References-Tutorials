@@ -2,7 +2,7 @@
 title: Dokumentum titkosítása jelszóval
 linktitle: Dokumentum titkosítása jelszóval
 second_title: Aspose.Words Document Processing API
-description: Ebből a részletes, lépésenkénti útmutatóból megtudhatja, hogyan titkosíthat egy dokumentumot jelszóval az Aspose.Words for .NET használatával. Gondoskodjon érzékeny információinak biztonságáról.
+description: Ebből a részletes, lépésenkénti útmutatóból megtudhatja, hogyan titkosíthat egy dokumentumot jelszóval az Aspose.Words for .NET használatával. Gondoskodjon kényes információiról erőfeszítés nélkül.
 type: docs
 weight: 10
 url: /hu/net/programming-with-docsaveoptions/encrypt-document-with-password/

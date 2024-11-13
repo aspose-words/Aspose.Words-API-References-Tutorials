@@ -1,27 +1,27 @@
 ---
-title: Centang Penyelarasan Label Multi Garis Dalam Bagan
-linktitle: Centang Penyelarasan Label Multi Garis Dalam Bagan
+title: Centang Penyelarasan Label Multi Baris Dalam Bagan
+linktitle: Centang Penyelarasan Label Multi Baris Dalam Bagan
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mencentang perataan label multi-baris dalam bagan menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah terperinci kami. Sempurna untuk pengembang dari semua tingkatan.
+description: Pelajari cara menandai perataan label multi-baris dalam bagan menggunakan Aspose.Words untuk .NET dengan panduan langkah demi langkah terperinci kami. Sempurna untuk pengembang dari semua tingkatan.
 type: docs
 weight: 10
 url: /id/net/programming-with-charts/tick-multi-line-label-alignment/
 ---
 ## Perkenalan
 
-Hai, penggemar teknologi! Pernahkah Anda menggaruk-garuk kepala dan bertanya-tanya bagaimana cara mencentang perataan label multi-baris dalam bagan menggunakan Aspose.Words untuk .NET? Jika Anda menganggukkan kepala sekarang, Anda berada di tempat yang tepat! Dalam panduan komprehensif ini, kami akan memandu Anda melewati setiap sudut dan celah proses ini. Dari menyiapkan prasyarat hingga mendalami seluk beluk pengkodean, kami siap membantu Anda. Jadi, ambillah secangkir kopi, duduk santai, dan mari kita mulai!
+Hai, para penggemar teknologi! Pernahkah Anda merasa bingung, bertanya-tanya bagaimana cara menandai perataan label multi-baris dalam bagan menggunakan Aspose.Words untuk .NET? Jika Anda menganggukkan kepala sekarang, berarti Anda berada di tempat yang tepat! Dalam panduan komprehensif ini, kami akan memandu Anda melalui setiap sudut dan celah proses ini. Dari menyiapkan prasyarat hingga menyelami seluk-beluk pengkodean, kami siap membantu Anda. Jadi, ambil secangkir kopi, duduk santai, dan mari kita mulai!
 
 ## Prasyarat
 
-Sebelum kita mendalami dunia penyelarasan label multi-baris, pastikan Anda sudah menyiapkan semuanya secara berurutan. Inilah yang Anda perlukan:
+Sebelum kita menyelami dunia penyelarasan label multi-baris, mari pastikan Anda telah mempersiapkan semuanya dengan baik. Berikut ini yang Anda perlukan:
 
-1.  Aspose.Words for .NET: Pastikan Anda memiliki Aspose.Words for .NET versi terbaru. Jika tidak, Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
-2. Lingkungan .NET: Pastikan lingkungan pengembangan Anda diatur dengan .NET.
+1.  Aspose.Words untuk .NET: Pastikan Anda memiliki versi terbaru Aspose.Words untuk .NET. Jika tidak, Anda dapat[unduh disini](https://releases.aspose.com/words/net/).
+2. Lingkungan .NET: Pastikan lingkungan pengembangan Anda disiapkan dengan .NET.
 3. Pengetahuan Dasar C#: Pemahaman mendasar tentang C# akan membuat perjalanan ini lebih lancar.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Sebelum kita mulai coding, mari impor namespace yang diperlukan. Langkah ini penting karena memungkinkan kita mengakses fungsionalitas Aspose.Words untuk .NET dengan lancar.
+Sebelum kita mulai membuat kode, mari impor namespace yang diperlukan. Langkah ini penting karena memungkinkan kita mengakses fungsionalitas Aspose.Words for .NET dengan lancar.
 
 ```csharp
 using System;
@@ -31,10 +31,10 @@ using Aspose.Words.Drawing;
 
 ## Langkah 1: Siapkan Direktori Dokumen Anda
 
-Hal pertama yang pertama, kita perlu menentukan jalur ke direktori dokumen Anda. Di sinilah dokumen Word Anda akan disimpan.
+Pertama-tama, kita perlu menentukan jalur ke direktori dokumen Anda. Di sinilah dokumen Word Anda akan disimpan.
 
 
- Mari tentukan jalur ke direktori dokumen Anda. Mengganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya tempat Anda ingin menyimpan dokumen Anda.
+ Mari kita tentukan jalur ke direktori dokumen Anda. Ganti`"YOUR DOCUMENT DIRECTORY"` dengan jalur sebenarnya tempat Anda ingin menyimpan dokumen Anda.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Langkah 2: Buat Dokumen Baru
 
-Sekarang, mari buat dokumen Word baru. Dokumen ini akan berfungsi sebagai kanvas untuk bagan kita.
+Sekarang, mari kita buat dokumen Word baru. Dokumen ini akan berfungsi sebagai kanvas untuk bagan kita.
 
  Kita akan mulai dengan menginisialisasi instance baru dari`Document` kelas.
 
@@ -52,7 +52,7 @@ Document doc = new Document();
 
 ## Langkah 3: Gunakan DocumentBuilder
 
- Itu`DocumentBuilder` kelas di Aspose.Words adalah alat yang ampuh yang membantu dalam membuat dokumen. Kami akan menggunakannya untuk memasukkan grafik ke dalam dokumen kami.
+Itu`DocumentBuilder` Kelas di Aspose.Words adalah alat yang hebat yang membantu dalam menyusun dokumen. Kita akan menggunakannya untuk menyisipkan bagan ke dalam dokumen kita.
 
  Inisialisasi sebuah instance dari`DocumentBuilder` kelas, meneruskan objek dokumen kita ke konstruktornya.
 
@@ -60,11 +60,11 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Langkah 4: Sisipkan Bagan
+## Langkah 4: Masukkan Bagan
 
-Mari masukkan bagan ke dalam dokumen kita. Kami akan menggunakan diagram sebar untuk contoh ini.
+Mari masukkan diagram ke dalam dokumen kita. Kita akan menggunakan diagram sebar untuk contoh ini.
 
- Menggunakan`InsertChart` metode`DocumentBuilder` kelas, kita dapat menyisipkan diagram sebar ke dalam dokumen kita.
+ Menggunakan`InsertChart` metode dari`DocumentBuilder` kelas, kita dapat menyisipkan diagram sebar ke dalam dokumen kita.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Scatter, 450, 250);
@@ -80,11 +80,11 @@ Kita akan mendapatkan sumbu X dari bentuk grafik kita.
 ChartAxis axis = shape.Chart.AxisX;
 ```
 
-## Langkah 6: Atur Perataan Label Centang
+## Langkah 6: Atur Penyelarasan Label Centang
 
-Sekarang tibalah keajaibannya! Kami akan mengatur perataan label centang untuk label multi-baris.
+Sekarang saatnya keajaiban! Kita akan mengatur perataan label centang untuk label multi-baris.
 
- Atur`TickLabelAlignment` properti sumbu ke`ParagraphAlignment.Right`.
+ Mengatur`TickLabelAlignment` properti sumbu ke`ParagraphAlignment.Right`.
 
 ```csharp
 axis.TickLabelAlignment = ParagraphAlignment.Right;
@@ -92,9 +92,9 @@ axis.TickLabelAlignment = ParagraphAlignment.Right;
 
 ## Langkah 7: Simpan Dokumen
 
-Terakhir, mari simpan dokumen kita dengan perubahan yang diinginkan.
+Terakhir namun tidak kalah pentingnya, mari simpan dokumen kita dengan perubahan yang diinginkan.
 
- Gunakan`Save` metode`Document` kelas untuk menyimpan dokumen di direktori yang ditentukan.
+ Gunakan`Save` metode dari`Document` kelas untuk menyimpan dokumen dalam direktori yang ditentukan.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
@@ -102,26 +102,26 @@ doc.Save(dataDir + "WorkingWithCharts.TickMultiLineLabelAlignment.docx");
 
 ## Kesimpulan
 
-Dan itu dia! Anda telah berhasil mencentang perataan label multi-baris dalam bagan menggunakan Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah ini, Anda dapat dengan mudah menyesuaikan grafik untuk memenuhi kebutuhan spesifik Anda. Baik Anda menyiapkan laporan profesional atau sekadar bereksperimen, Aspose.Words untuk .NET memberikan fleksibilitas dan kekuatan untuk menyelesaikan pekerjaan. Selamat membuat kode!
+Nah, itu dia! Anda telah berhasil menandai perataan label multi-baris dalam bagan menggunakan Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah ini, Anda dapat dengan mudah menyesuaikan bagan untuk memenuhi kebutuhan spesifik Anda. Baik Anda sedang mempersiapkan laporan profesional atau sekadar bereksperimen, Aspose.Words untuk .NET menyediakan fleksibilitas dan kekuatan untuk menyelesaikan pekerjaan. Selamat membuat kode!
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Apa itu Aspose.Words untuk .NET?
 
- Aspose.Words untuk .NET adalah perpustakaan canggih yang memungkinkan pengembang membuat, memodifikasi, dan mengonversi dokumen Word secara terprogram. Anda dapat mempelajarinya lebih lanjut[Di Sini](https://reference.aspose.com/words/net/).
+ Aspose.Words untuk .NET adalah pustaka canggih yang memungkinkan pengembang membuat, memodifikasi, dan mengonversi dokumen Word secara terprogram. Anda dapat mempelajari lebih lanjut tentangnya[Di Sini](https://reference.aspose.com/words/net/).
 
 ### Bagaimana cara menginstal Aspose.Words untuk .NET?
 
  Anda dapat mengunduh Aspose.Words untuk .NET dari[situs web](https://releases.aspose.com/words/net/)Ikuti petunjuk instalasi yang disediakan di sana.
 
-### Bisakah saya menggunakan Aspose.Words untuk .NET secara gratis?
+### Dapatkah saya menggunakan Aspose.Words untuk .NET secara gratis?
 
- Asumsikan penawaran a[uji coba gratis](https://releases.aspose.com/) yang dapat Anda gunakan untuk mengevaluasi produk. Untuk akses penuh, Anda perlu membeli lisensi.
+ Aspose menawarkan[uji coba gratis](https://releases.aspose.com/) yang dapat Anda gunakan untuk mengevaluasi produk. Untuk akses penuh, Anda perlu membeli lisensi.
 
 ### Di mana saya bisa mendapatkan dukungan untuk Aspose.Words untuk .NET?
 
- Anda bisa mendapatkan dukungan dari[Asumsikan forum komunitas](https://forum.aspose.com/c/words/8).
+ Anda bisa mendapatkan dukungan dari[Forum komunitas Aspose](https://forum.aspose.com/c/words/8).
 
-### Apa saja persyaratan sistem untuk Aspose.Words untuk .NET?
+### Apa persyaratan sistem untuk Aspose.Words for .NET?
 
  Aspose.Words untuk .NET memerlukan lingkungan .NET. Persyaratan sistem khusus dapat ditemukan di[dokumentasi](https://reference.aspose.com/words/net/).

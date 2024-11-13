@@ -1,89 +1,89 @@
 ---
-title: Belge Yazdırma ve Oluşturma
-linktitle: Belge Yazdırma ve Oluşturma
+title: Belge Yazdırma ve İşleme
+linktitle: Belge Yazdırma ve İşleme
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Aspose.Words for Java'yı kullanarak verimli belge yazdırma ve görüntülemeyi keşfedin. Kaynak kodu örnekleriyle adım adım öğrenin.
+description: Java için Aspose.Words'ü kullanarak verimli belge yazdırma ve işlemeyi keşfedin. Kaynak kod örnekleriyle adım adım öğrenin.
 type: docs
 weight: 13
 url: /tr/java/document-rendering/document-printing-rendering/
 ---
 
-## Aspose.Words for Java'ya Giriş
+## Java için Aspose.Words'e Giriş
 
-Aspose.Words for Java, Java geliştiricilerinin Word belgelerini kolaylıkla oluşturmasına, düzenlemesine ve işlemesine olanak tanıyan, zengin özelliklere sahip bir kitaplıktır. Yazdırma ve işleme de dahil olmak üzere belge işleme için geniş bir işlevsellik yelpazesi sunar. Raporlar, faturalar veya başka türde bir belge oluşturmanız gerekiyorsa, Aspose.Words for Java bu görevi basitleştirir.
+Aspose.Words for Java, Java geliştiricilerinin Word belgelerini kolaylıkla oluşturmasına, düzenlemesine ve işlemesine olanak tanıyan özellik açısından zengin bir kütüphanedir. Yazdırma ve işleme dahil olmak üzere belge işleme için geniş bir işlevsellik yelpazesi sunar. Raporlar, faturalar veya başka herhangi bir tür belge oluşturmanız gerekip gerekmediğine bakılmaksızın, Aspose.Words for Java görevi basitleştirir.
 
-## Geliştirme Ortamını Kurma
+## Geliştirme Ortamının Kurulumu
 
- Başlamadan önce geliştirme ortamımızı ayarlayalım. Sisteminizde Java'nın kurulu olduğundan emin olun. Aspose.Words for Java'yı web sitesinden indirebilirsiniz.[Burada](https://releases.aspose.com/words/java/).
+ Başlamadan önce, geliştirme ortamımızı ayarlayalım. Sisteminizde Java'nın yüklü olduğundan emin olun. Java için Aspose.Words'ü web sitesinden indirebilirsiniz[Burada](https://releases.aspose.com/words/java/).
 
-## Belge Oluşturma ve Yükleme
+## Belgeleri Oluşturma ve Yükleme
 
-Aspose.Words for Java ile çalışmak için bir belge oluşturmamız veya yüklememiz gerekiyor. Yeni bir belge oluşturarak başlayalım:
+Java için Aspose.Words ile çalışmak için bir belge oluşturmamız veya yüklememiz gerekir. Yeni bir belge oluşturarak başlayalım:
 
 ```java
 // Yeni bir belge oluştur
 Document doc = new Document();
 ```
 
-Ayrıca mevcut bir belgeyi de yükleyebilirsiniz:
+Mevcut bir belgeyi de yükleyebilirsiniz:
 
 ```java
-// Mevcut bir belgeyi yükleme
+// Mevcut bir belgeyi yükleyin
 Document doc = new Document("sample.docx");
 ```
 
 ## Belgeleri Yazdırma
 
-Aspose.Words for Java kullanarak bir belgeyi yazdırmak çok kolaydır. İşte temel bir örnek:
+Java için Aspose.Words kullanarak bir belge yazdırmak basittir. İşte basit bir örnek:
 
 ```java
 // Belgeyi yazdır
 doc.print("printerName");
 ```
 
- Yazıcı adını bağımsız değişken olarak belirtebilirsiniz.`print`Yöntem. Bu, belgeyi yazdırılmak üzere belirtilen yazıcıya gönderecektir.
+ Yazıcı adını bir argüman olarak belirtebilirsiniz.`print`yöntem. Bu, belgeyi yazdırma için belirtilen yazıcıya gönderecektir.
 
-## Belgeleri Oluşturma
+## Belgelerin İşlenmesi
 
-Belgeleri PDF, XPS veya görüntüler gibi farklı biçimlere dönüştürmeniz gerektiğinde, belge oluşturmak çok önemlidir. Aspose.Words for Java kapsamlı işleme seçenekleri sunar. Bir belgeyi PDF'ye nasıl dönüştürebileceğiniz aşağıda açıklanmıştır:
+Belgeleri PDF, XPS veya resimler gibi farklı biçimlere dönüştürmeniz gerektiğinde belgeleri işlemek önemlidir. Java için Aspose.Words kapsamlı işleme seçenekleri sunar. Bir belgeyi PDF'ye nasıl işleyebileceğiniz aşağıda açıklanmıştır:
 
 ```java
 // Belgeyi PDF'ye dönüştür
 doc.save("output.pdf", SaveFormat.PDF);
 ```
 
- Değiştirebilirsin`SaveFormat.PDF` render için istenilen formatta.
+ Değiştirebilirsin`SaveFormat.PDF` İstenilen formatta render edilebilir.
 
-## Yazdırmayı ve İşlemeyi Özelleştirme
+## Baskı ve İşlemeyi Özelleştirme
 
-Aspose.Words for Java, sayfa ayarları, kenar boşlukları ve kalite gibi yazdırma ve görüntülemenin çeşitli yönlerini özelleştirmenize olanak tanır. Ayrıntılı özelleştirme seçenekleri için belgelere bakın.
+Java için Aspose.Words, sayfa ayarları, kenar boşlukları ve kalite gibi yazdırma ve işlemenin çeşitli yönlerini özelleştirmenize olanak tanır. Ayrıntılı özelleştirme seçenekleri için belgelere bakın.
 
-## Belge Formatlarını Kullanma
+## Belge Biçimlerinin İşlenmesi
 
-Aspose.Words for Java, DOC, DOCX, RTF, HTML ve daha fazlasını içeren çok çeşitli belge formatlarını destekler. Belgeleri farklı biçimlerde yükleyebilir ve bunları çeşitli çıktı biçimlerinde kaydederek belge işleme ihtiyaçlarınız için çok yönlü hale getirebilirsiniz.
+Aspose.Words for Java, DOC, DOCX, RTF, HTML ve daha fazlası dahil olmak üzere çok çeşitli belge biçimlerini destekler. Belgeleri farklı biçimlerde yükleyebilir ve bunları çeşitli çıktı biçimlerinde kaydedebilirsiniz, bu da onu belge işleme ihtiyaçlarınız için çok yönlü hale getirir.
 
 ## Çözüm
 
-Aspose.Words for Java, Java uygulamalarında belge yazdırma ve görüntüleme için güçlü bir araçtır. Kapsamlı özellikleri ve kullanımı kolay API'si ile belgeleri çeşitli formatlarda verimli bir şekilde oluşturabilir, değiştirebilir ve çıktısını alabilirsiniz. Fatura yazdırmak, rapor oluşturmak veya belgeleri PDF'ye dönüştürmek istiyorsanız Aspose.Words for Java ihtiyacınızı karşılar.
+Aspose.Words for Java, Java uygulamalarında belge yazdırma ve işleme için güçlü bir araçtır. Kapsamlı özellikleri ve kullanımı kolay API'siyle, çeşitli formatlarda belgeleri verimli bir şekilde oluşturabilir, düzenleyebilir ve çıktısını alabilirsiniz. Fatura yazdırmanız, raporlar oluşturmanız veya belgeleri PDF'ye işlemeniz gerekip gerekmediğine bakılmaksızın, Aspose.Words for Java sizin için her şeyi yapar.
 
-## SSS'ler
+## SSS
 
 ### Aspose.Words for Java'da sayfa kenar boşluklarını nasıl ayarlarım?
 
- Sayfa kenar boşluklarını ayarlamak için`PageSetup` sınıf ve onun gibi özellikleri`setLeftMargin`, `setRightMargin`, `setTopMargin` , Ve`setBottomMargin`.
+ Sayfa kenar boşluklarını ayarlamak için şunu kullanın:`PageSetup` sınıf ve özellikleri gibi`setLeftMargin`, `setRightMargin`, `setTopMargin` , Ve`setBottomMargin`.
 
 ### Bir belgenin birden fazla kopyasını yazdırabilir miyim?
 
- Evet, çağrı sırasında kopya sayısını belirterek birden fazla kopya yazdırabilirsiniz.`print` Yöntem.
+ Evet, çağrı sırasında kopya sayısını belirterek birden fazla kopya yazdırabilirsiniz.`print` yöntem.
 
-### Bir belgeyi resme nasıl dönüştürebilirim?
+### Bir belgeyi nasıl görüntüye dönüştürebilirim?
 
- Bir belgeyi görüntüye dönüştürmek için şunları kullanabilirsiniz:`save` ile yöntem`SaveFormat.PNG` veya diğer görüntü formatları.
+ Bir belgeyi görüntüye dönüştürmek için şunu kullanabilirsiniz:`save` yöntem ile`SaveFormat.PNG` veya diğer görüntü formatları.
 
-### Aspose.Words for Java büyük ölçekli belge işlemeye uygun mu?
+### Aspose.Words for Java büyük ölçekli belge işleme için uygun mudur?
 
-Evet, Aspose.Words for Java hem küçük hem de büyük ölçekli belge işleme için tasarlanmıştır, bu da onu çeşitli uygulamalar için çok yönlü bir seçim haline getirir.
+Evet, Aspose.Words for Java hem küçük hem de büyük ölçekli belge işleme için tasarlanmıştır ve bu da onu çeşitli uygulamalar için çok yönlü bir seçenek haline getirir.
 
-### Daha fazla örnek ve belgeyi nerede bulabilirim?
+### Daha fazla örnek ve dokümanı nerede bulabilirim?
 
- Daha fazla örnek ve ayrıntılı belgeler için şu adresi ziyaret edin:[Aspose.Words for Java belgeleri](https://reference.aspose.com/words/java/).
+ Daha fazla örnek ve ayrıntılı belgeler için şu adresi ziyaret edin:[Java için Aspose.Words belgeleri](https://reference.aspose.com/words/java/).

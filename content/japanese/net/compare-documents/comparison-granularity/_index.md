@@ -15,7 +15,7 @@ Aspose.Words for .NET の詳細な比較機能を使用すると、文字レベ�
 
 ## ステップ2: 環境の設定
 
-開始する前に、Aspose.Words for .NET を使用するための開発環境をセットアップする必要があります。Aspose.Words ライブラリがインストールされており、コードを埋め込むための適切な C# プロジェクトがあることを確認してください。
+開始する前に、Aspose.Words for .NET を使用するための開発環境を設定する必要があります。Aspose.Words ライブラリがインストールされており、コードを埋め込むための適切な C# プロジェクトがあることを確認してください。
 
 ## ステップ3: 必要なアセンブリを追加する
 
@@ -56,7 +56,7 @@ CompareOptions compareOptions = new CompareOptions { Granularity = Granularity.C
 builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOptions);
 ```
 
-の`Compare`メソッドは、ドキュメント A とドキュメント B を比較し、変更をドキュメント A に保存します。参照用に作成者の名前と比較の日付を指定できます。
+の`Compare`メソッドは、ドキュメント A とドキュメント B を比較し、変更をドキュメント A に保存します。参照用に、作成者の名前と比較の日付を指定できます。
 
 ## 結論
 

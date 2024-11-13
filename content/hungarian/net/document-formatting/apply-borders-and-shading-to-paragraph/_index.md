@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- A`Document` objektum a teljes Word dokumentumunkat képviseli, és a`DocumentBuilder` segít tartalmat hozzáadni és formázni.
+A`Document` objektum a teljes Word dokumentumunkat képviseli, és a`DocumentBuilder` segít tartalmat hozzáadni és formázni.
 
 ## 3. lépés: Határozza meg a bekezdés határait
 
@@ -112,7 +112,7 @@ doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");
 ### Használhatok különböző vonalstílusokat minden szegélyhez?  
  Teljesen! Az Aspose.Words for .NET lehetővé teszi az egyes szegélyek egyéni testreszabását. Csak állítsd be a`LineStyle` minden szegélytípushoz az útmutatóban látható módon.
 
-### Milyen egyéb árnyékoló textúrák állnak rendelkezésre?  
+### Milyen más árnyékoló textúrák állnak rendelkezésre?  
  Számos textúra használható, például tömör, vízszintes csík, függőleges csík stb. Ellenőrizze a[Aspose dokumentáció](https://reference.aspose.com/words/net/) a teljes listáért.
 
 ### Hogyan tudom megváltoztatni a keret színét?  

@@ -1,8 +1,8 @@
 ---
-title: Granularitas Perbandingan Dalam Dokumen Word
-linktitle: Granularitas Perbandingan Dalam Dokumen Word
+title: Perbandingan Granularitas Dalam Dokumen Word
+linktitle: Perbandingan Granularitas Dalam Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari Bandingkan Granularitas dalam fitur dokumen kata Aspose.Words untuk .NET yang memungkinkan dokumen dibandingkan karakter demi karakter, melaporkan perubahan yang dilakukan.
+description: Pelajari fitur Bandingkan Granularitas dalam dokumen Word Aspose.Words untuk .NET yang memungkinkan dokumen dibandingkan karakter demi karakter, melaporkan perubahan yang dibuat.
 type: docs
 weight: 10
 url: /id/net/compare-documents/comparison-granularity/
@@ -11,15 +11,15 @@ Berikut adalah panduan langkah demi langkah untuk menjelaskan kode sumber C# di 
 
 ## Langkah 1: Pendahuluan
 
-Fitur Bandingkan Granularitas Aspose.Words untuk .NET memungkinkan Anda membandingkan dokumen pada tingkat karakter. Artinya setiap karakter akan dibandingkan dan perubahannya akan dilaporkan sesuai dengan itu.
+Fitur Compare Granularity dari Aspose.Words untuk .NET memungkinkan Anda membandingkan dokumen pada tingkat karakter. Ini berarti bahwa setiap karakter akan dibandingkan dan perubahan akan dilaporkan sesuai dengan itu.
 
 ## Langkah 2: Menyiapkan lingkungan
 
-Sebelum memulai, Anda perlu menyiapkan lingkungan pengembangan agar berfungsi dengan Aspose.Words untuk .NET. Pastikan Anda telah menginstal pustaka Aspose.Words dan memiliki proyek C# yang sesuai untuk menyematkan kode.
+Sebelum memulai, Anda perlu menyiapkan lingkungan pengembangan agar dapat bekerja dengan Aspose.Words untuk .NET. Pastikan Anda telah menginstal pustaka Aspose.Words dan memiliki proyek C# yang sesuai untuk menyematkan kode.
 
-## Langkah 3: Tambahkan Majelis yang Diperlukan
+## Langkah 3: Tambahkan Perakitan yang Diperlukan
 
-Untuk menggunakan fitur Bandingkan Granularitas Aspose.Words untuk .NET, Anda perlu menambahkan rakitan yang diperlukan ke proyek Anda. Pastikan Anda memiliki referensi yang tepat ke Aspose.Words di proyek Anda.
+Untuk menggunakan fitur Compare Granularity dari Aspose.Words untuk .NET, Anda perlu menambahkan assembly yang diperlukan ke proyek Anda. Pastikan Anda memiliki referensi yang tepat ke Aspose.Words dalam proyek Anda.
 
 ```csharp
 using Aspose.Words;
@@ -40,9 +40,9 @@ DocumentBuilder builderB = new DocumentBuilder(new Document());
 builderB.Writeln("This is simple B words.");
 ```
 
-## Langkah 5: Mengonfigurasi Opsi Bandingkan
+## Langkah 5: Mengonfigurasi Opsi Perbandingan
 
-Pada langkah ini, kami akan mengonfigurasi opsi perbandingan untuk menentukan rincian perbandingan. Di sini kita akan menggunakan granularitas tingkat karakter.
+Pada langkah ini, kita akan mengonfigurasi opsi perbandingan untuk menentukan granularitas perbandingan. Di sini kita akan menggunakan granularitas tingkat karakter.
 
 ```csharp
 CompareOptions compareOptions = new CompareOptions { Granularity = Granularity.CharLevel };
@@ -50,17 +50,17 @@ CompareOptions compareOptions = new CompareOptions { Granularity = Granularity.C
 
 ## Langkah 6: Perbandingan Dokumen
 
-Sekarang mari kita bandingkan dokumen menggunakan metode Bandingkan dari kelas Dokumen. Perubahan akan disimpan dalam dokumen A.
+Sekarang mari kita bandingkan dokumen menggunakan metode Compare dari kelas Document. Perubahan akan disimpan dalam dokumen A.
 
 ```csharp
 builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOptions);
 ```
 
- Itu`Compare`metode membandingkan dokumen A dengan dokumen B dan menyimpan perubahan pada dokumen A. Anda dapat menentukan nama penulis dan tanggal perbandingan untuk referensi.
+Itu`Compare`metode membandingkan dokumen A dengan dokumen B dan menyimpan perubahan pada dokumen A. Anda dapat menentukan nama penulis dan tanggal perbandingan untuk referensi.
 
 ## Kesimpulan
 
-Dalam artikel ini, kami menjelajahi fitur Bandingkan Granularitas Aspose.Words untuk .NET. Fitur ini memungkinkan Anda membandingkan dokumen pada tingkat karakter dan melaporkan perubahan. Anda dapat menggunakan pengetahuan ini untuk melakukan perbandingan dokumen mendetail dalam proyek Anda.
+Dalam artikel ini, kami menjelajahi fitur Compare Granularity dari Aspose.Words untuk .NET. Fitur ini memungkinkan Anda membandingkan dokumen pada tingkat karakter dan melaporkan perubahan. Anda dapat menggunakan pengetahuan ini untuk melakukan perbandingan dokumen secara terperinci dalam proyek Anda.
 
 ### Contoh kode sumber untuk Perbandingan Granularitas menggunakan Aspose.Words untuk .NET
 
@@ -80,30 +80,30 @@ builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOpti
 
 ## Kesimpulan
 
-Dalam tutorial ini, kita menjelajahi fitur Perbandingan Granularitas Aspose.Words untuk .NET. Fitur ini memungkinkan Anda menentukan tingkat detail saat membandingkan dokumen. Dengan memilih tingkat perincian yang berbeda, Anda dapat melakukan perbandingan mendetail pada tingkat karakter, kata, atau blok, bergantung pada kebutuhan spesifik Anda. Aspose.Words untuk .NET memberikan kemampuan perbandingan dokumen yang fleksibel dan kuat, sehingga memudahkan untuk mengidentifikasi perbedaan dalam dokumen dengan berbagai tingkat perincian.
+Dalam tutorial ini, kami menjelajahi fitur Comparison Granularity dari Aspose.Words untuk .NET. Fitur ini memungkinkan Anda menentukan tingkat detail saat membandingkan dokumen. Dengan memilih tingkat granularitas yang berbeda, Anda dapat melakukan perbandingan terperinci pada tingkat karakter, kata, atau blok, tergantung pada kebutuhan spesifik Anda. Aspose.Words untuk .NET menyediakan kemampuan perbandingan dokumen yang fleksibel dan canggih, sehingga memudahkan untuk mengidentifikasi perbedaan dalam dokumen dengan berbagai tingkat granularitas.
 
-### FAQ
+### Pertanyaan yang Sering Diajukan
 
-#### T: Apa tujuan penggunaan Granularitas Perbandingan di Aspose.Words untuk .NET?
+#### T: Apa tujuan penggunaan Comparison Granularity di Aspose.Words untuk .NET?
 
-J: Granularitas Perbandingan di Aspose.Words untuk .NET memungkinkan Anda menentukan tingkat detail saat membandingkan dokumen. Dengan fitur ini, Anda dapat membandingkan dokumen pada level yang berbeda, seperti level karakter, level kata, atau bahkan level blok. Setiap tingkat granularitas memberikan tingkat detail yang berbeda-beda pada hasil perbandingan.
+A: Granularitas Perbandingan di Aspose.Words untuk .NET memungkinkan Anda menentukan tingkat detail saat membandingkan dokumen. Dengan fitur ini, Anda dapat membandingkan dokumen pada berbagai tingkat, seperti tingkat karakter, tingkat kata, atau bahkan tingkat blok. Setiap tingkat granularitas memberikan tingkat detail yang berbeda dalam hasil perbandingan.
 
 #### T: Bagaimana cara menggunakan Granularitas Perbandingan di Aspose.Words untuk .NET?
 
-J: Untuk menggunakan Granularitas Perbandingan di Aspose.Words untuk .NET, ikuti langkah-langkah berikut:
-1. Siapkan lingkungan pengembangan Anda dengan perpustakaan Aspose.Words.
+A: Untuk menggunakan Granularitas Perbandingan di Aspose.Words untuk .NET, ikuti langkah-langkah berikut:
+1. Siapkan lingkungan pengembangan Anda dengan pustaka Aspose.Words.
 2. Tambahkan rakitan yang diperlukan ke proyek Anda dengan merujuk Aspose.Words.
 3.  Buat dokumen yang ingin Anda bandingkan menggunakan`DocumentBuilder` kelas.
-4.  Konfigurasikan opsi perbandingan dengan membuat a`CompareOptions` objek dan pengaturannya`Granularity` properti ke tingkat yang diinginkan (misalnya,`Granularity.CharLevel` untuk perbandingan tingkat karakter).
-5.  Gunakan`Compare`metode pada satu dokumen, meneruskan dokumen lain dan`CompareOptions` objek sebagai parameter. Cara ini akan membandingkan dokumen berdasarkan granularitas yang ditentukan dan menyimpan perubahan pada dokumen pertama.
+4.  Konfigurasikan opsi perbandingan dengan membuat`CompareOptions` objek dan pengaturan`Granularity` properti ke tingkat yang diinginkan (misalnya,`Granularity.CharLevel` untuk perbandingan tingkat karakter).
+5.  Gunakan`Compare`metode pada satu dokumen, meneruskan dokumen lain dan`CompareOptions` objek sebagai parameter. Metode ini akan membandingkan dokumen berdasarkan tingkat ketelitian yang ditentukan dan menyimpan perubahan pada dokumen pertama.
 
-#### T: Berapa tingkat Granularitas Perbandingan yang tersedia di Aspose.Words untuk .NET?
+#### T: Apa saja tingkat Granularitas Perbandingan yang tersedia di Aspose.Words untuk .NET?
 
-J: Aspose.Words untuk .NET menyediakan tiga tingkat Granularitas Perbandingan:
+A: Aspose.Words untuk .NET menyediakan tiga tingkat Granularitas Perbandingan:
 - `Granularity.CharLevel`: Membandingkan dokumen pada tingkat karakter.
 - `Granularity.WordLevel`: Membandingkan dokumen pada tingkat kata.
 - `Granularity.BlockLevel`: Membandingkan dokumen pada tingkat blok.
 
-#### T: Bagaimana cara menafsirkan hasil perbandingan dengan perincian tingkat karakter?
+#### T: Bagaimana saya dapat menafsirkan hasil perbandingan dengan tingkat ketelitian tingkat karakter?
 
-J: Dengan perincian tingkat karakter, setiap karakter dalam dokumen yang dibandingkan dianalisis perbedaannya. Hasil perbandingan akan menunjukkan perubahan pada level karakter individu, meliputi penambahan, penghapusan, dan modifikasi.
+A: Dengan ketelitian tingkat karakter, setiap karakter dalam dokumen yang dibandingkan dianalisis untuk mengetahui perbedaannya. Hasil perbandingan akan menunjukkan perubahan pada tingkat karakter individual, termasuk penambahan, penghapusan, dan modifikasi.

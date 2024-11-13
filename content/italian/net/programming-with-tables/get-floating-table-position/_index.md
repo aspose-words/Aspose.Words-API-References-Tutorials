@@ -2,50 +2,50 @@
 title: Ottieni la posizione della tabella mobile
 linktitle: Ottieni la posizione della tabella mobile
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come ottenere posizioni di tabelle mobili nei documenti di Word utilizzando Aspose.Words per .NET. Questa guida dettagliata e passo dopo passo ti guiderà attraverso tutto ciò che devi sapere.
+description: Scopri come ottenere posizioni di tabella mobili nei documenti Word usando Aspose.Words per .NET. Questa guida dettagliata, passo dopo passo, ti guiderà attraverso tutto ciò che devi sapere.
 type: docs
 weight: 10
 url: /it/net/programming-with-tables/get-floating-table-position/
 ---
 ## Introduzione
 
-Sei pronto per tuffarti nel mondo di Aspose.Words per .NET? Oggi ti porteremo in un viaggio alla scoperta dei segreti delle tabelle mobili nei documenti Word. Immagina di avere un tavolo che non si limita a stare fermo ma fluttua elegantemente attorno al testo. Abbastanza bello, vero? Questo tutorial ti spiegherà come ottenere le proprietà di posizionamento di tali tabelle mobili. Quindi, cominciamo!
+Siete pronti a immergervi nel mondo di Aspose.Words per .NET? Oggi vi porteremo in un viaggio alla scoperta dei segreti delle tabelle mobili nei documenti Word. Immaginate di avere una tabella che non sta ferma, ma fluttua elegantemente attorno al testo. Abbastanza interessante, vero? Questo tutorial vi guiderà attraverso come ottenere le proprietà di posizionamento di tali tabelle mobili. Quindi, iniziamo!
 
 ## Prerequisiti
 
-Prima di passare alla parte divertente, ci sono alcune cose che devi avere a posto:
+Prima di passare alla parte divertente, ecco alcune cose che devi sapere:
 
-1.  Aspose.Words per .NET: se non lo hai già fatto, scarica e installa Aspose.Words per .NET dal[Pagina delle versioni di Aspose](https://releases.aspose.com/words/net/).
+1.  Aspose.Words per .NET: se non l'hai ancora fatto, scarica e installa Aspose.Words per .NET da[Pagina delle release di Aspose](https://releases.aspose.com/words/net/).
 2. Ambiente di sviluppo: assicurati di avere un ambiente di sviluppo .NET configurato. Visual Studio è un'ottima opzione.
-3. Documento di esempio: avrai bisogno di un documento Word con una tabella mobile. Puoi crearne uno o utilizzare un documento esistente. 
+3. Documento di esempio: ti servirà un documento Word con una tabella mobile. Puoi crearne uno o usare un documento esistente. 
 
-## Importa spazi dei nomi
+## Importazione degli spazi dei nomi
 
-Per iniziare, devi importare gli spazi dei nomi necessari. Ciò garantisce l'accesso alle classi e ai metodi Aspose.Words necessari per manipolare i documenti Word.
+Per iniziare, devi importare i namespace necessari. Questo assicura che tu abbia accesso alle classi e ai metodi Aspose.Words richiesti per manipolare i documenti Word.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Va bene, suddividiamo il processo in passaggi facili da seguire.
+Bene, scomponiamo il processo in passaggi facili da seguire.
 
 ## Passaggio 1: carica il documento
 
-Per prima cosa, devi caricare il tuo documento Word. Questo documento dovrebbe contenere la tabella mobile che desideri esaminare.
+Per prima cosa, devi caricare il tuo documento Word. Questo documento dovrebbe contenere la tabella mobile che vuoi esaminare.
 
 ```csharp
-// Percorso della directory dei documenti
+// Percorso alla directory del documento
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 ```
 
- In questo passaggio, stai essenzialmente dicendo ad Aspose.Words dove trovare il tuo documento. Assicurati di sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo del documento.
+ In questo passaggio, stai essenzialmente dicendo ad Aspose.Words dove trovare il tuo documento. Assicurati di sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo del tuo documento.
 
-## Passaggio 2: accedi alle tabelle nel documento
+## Passaggio 2: accedere alle tabelle nel documento
 
-Successivamente, è necessario accedere alle tabelle all'interno della prima sezione del documento. Pensa al documento come a un grande contenitore e lo stai scavando per trovare tutte le tabelle.
+Poi, devi accedere alle tabelle nella prima sezione del documento. Pensa al documento come a un grande contenitore, e stai scavando al suo interno per trovare tutte le tabelle.
 
 ```csharp
 foreach (Table table in doc.FirstSection.Body.Tables)
@@ -54,11 +54,11 @@ foreach (Table table in doc.FirstSection.Body.Tables)
 }
 ```
 
-Qui stai scorrendo ciascuna tabella trovata nel corpo della prima sezione del tuo documento.
+Qui stai scorrendo ogni tabella trovata nel corpo della prima sezione del tuo documento.
 
-## Passaggio 3: controlla se la tabella è mobile
+## Passaggio 3: verificare se la tabella è mobile
 
-Ora devi determinare se la tabella è di tipo mobile. Le tabelle mobili hanno impostazioni di disposizione del testo specifiche.
+Ora, devi determinare se la tabella è di tipo floating. Le tabelle floating hanno impostazioni specifiche di text wrapping.
 
 ```csharp
 if (table.TextWrapping == TextWrapping.Around)
@@ -67,11 +67,11 @@ if (table.TextWrapping == TextWrapping.Around)
 }
 ```
 
-Questa condizione controlla se lo stile di disposizione del testo della tabella è impostato su "Intorno", il che indica che si tratta di una tabella mobile.
+Questa condizione verifica se lo stile di avvolgimento del testo della tabella è impostato su "Intorno", il che indica che si tratta di una tabella mobile.
 
 ## Passaggio 4: stampare le proprietà di posizionamento
 
-Infine, estraiamo e stampiamo le proprietà di posizionamento della tabella mobile. Queste proprietà indicano dove è posizionata la tabella rispetto al testo e alla pagina.
+Infine, estraiamo e stampiamo le proprietà di posizionamento della tabella mobile. Queste proprietà indicano dove è posizionata la tabella in relazione al testo e alla pagina.
 
 ```csharp
 if (table.TextWrapping == TextWrapping.Around)
@@ -86,27 +86,27 @@ if (table.TextWrapping == TextWrapping.Around)
 }
 ```
 
-Queste proprietà forniscono uno sguardo dettagliato su come la tabella è ancorata e posizionata all'interno del documento.
+Queste proprietà forniscono una panoramica dettagliata del modo in cui la tabella è ancorata e posizionata all'interno del documento.
 
 ## Conclusione
 
-Ed ecco qua! Seguendo questi passaggi, puoi facilmente recuperare e stampare le proprietà di posizionamento delle tabelle mobili nei tuoi documenti Word utilizzando Aspose.Words per .NET. Che tu stia automatizzando l'elaborazione dei documenti o semplicemente sei curioso di conoscere i layout delle tabelle, questa conoscenza ti tornerà sicuramente utile.
+Ed ecco fatto! Seguendo questi passaggi, puoi facilmente recuperare e stampare le proprietà di posizionamento delle tabelle mobili nei tuoi documenti Word usando Aspose.Words per .NET. Che tu stia automatizzando l'elaborazione dei documenti o semplicemente curioso dei layout delle tabelle, questa conoscenza tornerà sicuramente utile.
 
-Ricorda, lavorare con Aspose.Words per .NET apre un mondo di possibilità per la manipolazione e l'automazione dei documenti. Buona programmazione!
+Ricorda, lavorare con Aspose.Words per .NET apre un mondo di possibilità per la manipolazione e l'automazione dei documenti. Buona codifica!
 
 ## Domande frequenti
 
-### Cos'è una tabella mobile nei documenti di Word?
-Una tabella mobile è una tabella che non è fissata al testo ma può spostarsi, in genere con il testo che la avvolge.
+### Che cosa sono le tabelle mobili nei documenti Word?
+Una tabella mobile è una tabella che non è fissata al testo ma può essere spostata, in genere con il testo disposto attorno ad essa.
 
-### Come posso sapere se una tabella è mobile utilizzando Aspose.Words per .NET?
- Puoi verificare se una tabella è mobile esaminandone il file`TextWrapping` proprietà. Se è impostato su`TextWrapping.Around`, il tavolo è fluttuante.
+### Come faccio a sapere se una tabella è mobile utilizzando Aspose.Words per .NET?
+ È possibile verificare se una tabella è mobile esaminandola`TextWrapping` proprietà. Se è impostato su`TextWrapping.Around`, il tavolo è galleggiante.
 
 ### Posso modificare le proprietà di posizionamento di una tabella mobile?
-Sì, utilizzando Aspose.Words per .NET, puoi modificare le proprietà di posizionamento di una tabella mobile per personalizzarne il layout.
+Sì, utilizzando Aspose.Words per .NET è possibile modificare le proprietà di posizionamento di una tabella mobile per personalizzarne il layout.
 
-### Aspose.Words per .NET è adatto per l'automazione di documenti su larga scala?
-Assolutamente! Aspose.Words per .NET è progettato per l'automazione dei documenti ad alte prestazioni e può gestire in modo efficiente operazioni su larga scala.
+### Aspose.Words per .NET è adatto all'automazione di documenti su larga scala?
+Assolutamente! Aspose.Words per .NET è progettato per l'automazione di documenti ad alte prestazioni e può gestire operazioni su larga scala in modo efficiente.
 
-### Dove posso trovare ulteriori informazioni e risorse su Aspose.Words per .NET?
-È possibile trovare documentazione e risorse dettagliate su[Aspose.Words per la pagina della documentazione .NET](https://reference.aspose.com/words/net/).
+### Dove posso trovare maggiori informazioni e risorse su Aspose.Words per .NET?
+Puoi trovare documentazione e risorse dettagliate su[Pagina di documentazione di Aspose.Words per .NET](https://reference.aspose.com/words/net/).

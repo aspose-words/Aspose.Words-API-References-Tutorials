@@ -17,7 +17,7 @@ url: /ja/java/document-rendering/rendering-shapes-graphics/
 図形やグラフィックの追加に進む前に、Aspose.Words for Java を使い始めましょう。開発環境をセットアップし、Aspose.Words ライブラリを含める必要があります。開始手順は次のとおりです。
 
 ```java
-// Aspose.WordsをMavenプロジェクトに追加する
+// MavenプロジェクトにAspose.Wordsを追加する
 <dependency>
     <groupId>com.aspose</groupId>
     <artifactId>aspose-words</artifactId>
@@ -71,7 +71,7 @@ shape.setShadowEnabled(true);
 
 ## 位置とサイズ
 
-ドキュメントのレイアウトには、図形の正確な配置とサイズ設定が重要です。Aspose.Words for Java には、これらのプロパティを設定するメソッドが用意されています。
+図形の正確な配置とサイズ設定は、ドキュメントのレイアウトにとって重要です。Aspose.Words for Java には、これらのプロパティを設定するメソッドが用意されています。
 
 ```java
 shape.setLeft(100);

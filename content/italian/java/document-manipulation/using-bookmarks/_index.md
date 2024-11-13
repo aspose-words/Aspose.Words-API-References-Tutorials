@@ -2,7 +2,7 @@
 title: Utilizzo dei segnalibri in Aspose.Words per Java
 linktitle: Utilizzo dei segnalibri
 second_title: API di elaborazione dei documenti Java Aspose.Words
-description: Ottimizza l'elaborazione dei tuoi documenti con Aspose.Words per Java. Impara a utilizzare i segnalibri per una navigazione e una manipolazione efficiente dei contenuti in questa guida passo passo.
+description: Ottimizza l'elaborazione dei tuoi documenti con Aspose.Words per Java. Impara a usare i segnalibri per una navigazione e una manipolazione efficienti dei contenuti in questa guida passo-passo.
 type: docs
 weight: 17
 url: /it/java/document-manipulation/using-bookmarks/
@@ -14,7 +14,7 @@ I segnalibri sono una potente funzionalità di Aspose.Words per Java che consent
 
 ## Passaggio 1: creazione di un segnalibro
 
-Per creare un segnalibro, attenersi alla seguente procedura:
+Per creare un segnalibro, segui questi passaggi:
 
 ```java
 Document doc = new Document();
@@ -30,7 +30,7 @@ builder.endBookmark("My Bookmark");
 
 ## Passaggio 2: accesso ai segnalibri
 
-È possibile accedere ai segnalibri in un documento utilizzando il relativo indice o nome. Ecco come:
+Puoi accedere ai segnalibri in un documento usando il loro indice o nome. Ecco come:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Bookmarks.docx");
@@ -55,9 +55,9 @@ bookmark.setName("RenamedBookmark");
 bookmark.setText("This is new bookmarked text.");
 ```
 
-## Passaggio 4: lavorare con il testo segnalibro
+## Fase 4: Lavorare con il testo aggiunto ai segnalibri
 
-È possibile copiare il testo con segnalibro e aggiungerlo a un altro documento. Ecco come:
+Puoi copiare il testo con segnalibro e aggiungerlo a un altro documento. Ecco come:
 
 ```java
 Document srcDoc = new Document("Your Directory Path" + "Bookmarks.docx");
@@ -68,7 +68,7 @@ appendBookmarkedText(importer, srcBookmark, dstDoc.getLastSection().getBody());
 dstDoc.save("Your Directory Path" + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 ```
 
-## Passaggio 5: mostra e nascondi i segnalibri
+## Passaggio 5: Mostra e nascondi i segnalibri
 
 Puoi mostrare o nascondere i segnalibri in un documento. Ecco un esempio:
 
@@ -78,9 +78,9 @@ showHideBookmarkedContent(doc, "MyBookmark1", false);
 doc.save("Your Directory Path" + "WorkingWithBookmarks.ShowHideBookmarks.docx");
 ```
 
-## Passaggio 6: districare i segnalibri delle righe
+## Fase 6: Districare i segnalibri di riga
 
-Districare i segnalibri di riga ti consente di lavorare con loro in modo più efficace:
+Districando i segnalibri di riga puoi lavorarci in modo più efficace:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Table column bookmarks.docx");
@@ -91,26 +91,26 @@ doc.save("Your Directory Path" + "WorkingWithBookmarks.UntangleRowBookmarks.docx
 
 ## Conclusione
 
-L'utilizzo dei segnalibri in Aspose.Words per Java può semplificare notevolmente le attività di elaborazione dei documenti. Che tu abbia bisogno di navigare, estrarre o manipolare contenuti, i segnalibri forniscono un potente meccanismo per farlo in modo efficiente.
+L'utilizzo dei segnalibri in Aspose.Words per Java può semplificare notevolmente le attività di elaborazione dei documenti. Che tu debba navigare, estrarre o manipolare contenuti, i segnalibri forniscono un potente meccanismo per farlo in modo efficiente.
 
 ## Domande frequenti
 
-### Come posso creare un segnalibro in una cella di tabella?
+### Come posso creare un segnalibro in una cella di una tabella?
 
- Per creare un segnalibro in una cella di tabella, utilizzare il file`DocumentBuilder` classe e iniziare e terminare il segnalibro all'interno della cella.
+ Per creare un segnalibro in una cella della tabella, utilizzare`DocumentBuilder` classe e avvia e termina il segnalibro all'interno della cella.
 
 ### Posso copiare un segnalibro in un altro documento?
 
- Sì, puoi copiare un segnalibro in un altro documento utilizzando il file`NodeImporter` class per garantire che la formattazione venga preservata.
+ Sì, puoi copiare un segnalibro in un altro documento utilizzando`NodeImporter` classe per garantire che la formattazione venga preservata.
 
 ### Come posso eliminare una riga tramite il suo segnalibro?
 
-Puoi eliminare una riga tramite il relativo segnalibro trovando prima la riga con segnalibro e quindi rimuovendola dal documento.
+È possibile eliminare una riga tramite il suo segnalibro: innanzitutto, individua la riga con il segnalibro e poi rimuoverla dal documento.
 
 ### Quali sono alcuni casi d'uso comuni per i segnalibri?
 
-I segnalibri vengono comunemente utilizzati per generare sommari, estrarre contenuti specifici e automatizzare i processi di generazione di documenti.
+I segnalibri vengono comunemente utilizzati per generare indici, estrarre contenuti specifici e automatizzare i processi di generazione di documenti.
 
-### Dove posso trovare ulteriori informazioni su Aspose.Words per Java?
+### Dove posso trovare maggiori informazioni su Aspose.Words per Java?
 
- Per documentazione dettagliata e download, visitare[Aspose.Words per la documentazione Java](https://reference.aspose.com/words/java/).
+ Per documentazione dettagliata e download, visitare[Documentazione di Aspose.Words per Java](https://reference.aspose.com/words/java/).

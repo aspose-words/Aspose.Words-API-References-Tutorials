@@ -2,25 +2,25 @@
 title: Insertar tabla de contenidos en un documento de Word
 linktitle: Insertar tabla de contenidos en un documento de Word
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a insertar una tabla de contenido en Word usando Aspose.Words para .NET. Siga nuestra guía paso a paso para una navegación fluida por los documentos.
+description: Aprenda a insertar una tabla de contenido en Word con Aspose.Words para .NET. Siga nuestra guía paso a paso para navegar sin problemas por los documentos.
 type: docs
 weight: 10
 url: /es/net/add-content-using-documentbuilder/insert-table-of-contents/
 ---
 ## Introducción
-En este tutorial, aprenderá cómo agregar de manera eficiente una tabla de contenido (TOC) a sus documentos de Word usando Aspose.Words para .NET. Esta característica es esencial para organizar y navegar por documentos extensos, mejorar la legibilidad y proporcionar una descripción general rápida de las secciones del documento.
+En este tutorial, aprenderá a agregar de manera eficiente una tabla de contenido (TOC) a sus documentos de Word mediante Aspose.Words para .NET. Esta función es esencial para organizar y navegar por documentos extensos, mejorar la legibilidad y brindar una descripción general rápida de las secciones del documento.
 
-## Requisitos previos
+## Prerrequisitos
 
 Antes de comenzar, asegúrese de tener lo siguiente:
 
-- Conocimientos básicos de C# y .NET framework.
+- Comprensión básica de C# y .NET Framework.
 - Visual Studio instalado en su máquina.
--  Aspose.Words para la biblioteca .NET. Si aún no lo has instalado, puedes descargarlo desde[aquí](https://releases.aspose.com/words/net/).
+-  Biblioteca Aspose.Words para .NET. Si aún no la has instalado, puedes descargarla desde[aquí](https://releases.aspose.com/words/net/).
 
 ## Importar espacios de nombres
 
-Para comenzar, importe los espacios de nombres necesarios en su proyecto C#:
+Para comenzar, importe los espacios de nombres necesarios en su proyecto de C#:
 
 ```csharp
 using Aspose.Words;
@@ -31,9 +31,9 @@ using Aspose.Words.Tables;
 
 Dividamos el proceso en pasos claros:
 
-## Paso 1: Inicialice el documento Aspose.Words y DocumentBuilder
+## Paso 1: Inicializar el documento Aspose.Words y DocumentBuilder
 
- Primero, inicialice un nuevo Aspose.Words`Document` objeto y un`DocumentBuilder` para trabajar con:
+ Primero, inicialice un nuevo Aspose.Words`Document` objeto y un`DocumentBuilder` Trabajar con:
 
 ```csharp
 // Inicializar documento y DocumentBuilder
@@ -41,27 +41,27 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Paso 2: inserte la tabla de contenido
+## Paso 2: Insertar la tabla de contenidos
 
- Ahora, inserte la tabla de contenido usando el`InsertTableOfContents` método:
+ Ahora, inserte la Tabla de Contenidos usando el`InsertTableOfContents` método:
 
 ```csharp
 // Insertar tabla de contenidos
 builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 ```
 
-## Paso 3: iniciar el contenido del documento en una página nueva
+## Paso 3: Iniciar el contenido del documento en una página nueva
 
-Para garantizar el formato adecuado, comience el contenido del documento real en una nueva página:
+Para garantizar un formato adecuado, comience el contenido del documento real en una página nueva:
 
 ```csharp
 // Insertar un salto de página
 builder.InsertBreak(BreakType.PageBreak);
 ```
 
-## Paso 4: estructura tu documento con títulos
+## Paso 4: Estructura tu documento con títulos
 
-Organice el contenido de su documento utilizando estilos de encabezado apropiados:
+Organice el contenido de su documento utilizando estilos de título apropiados:
 
 ```csharp
 // Establecer estilos de encabezado
@@ -89,7 +89,7 @@ builder.Writeln("Heading 3.2");
 builder.Writeln("Heading 3.3");
 ```
 
-## Paso 5: actualice y complete la tabla de contenido
+## Paso 5: Actualizar y completar la tabla de contenidos
 
 Actualice la tabla de contenido para reflejar la estructura del documento:
 
@@ -98,33 +98,33 @@ Actualice la tabla de contenido para reflejar la estructura del documento:
 doc.UpdateFields();
 ```
 
-## Paso 6: guarde el documento
+## Paso 6: Guardar el documento
 
-Finalmente, guarde su documento en un directorio específico:
+Por último, guarde el documento en un directorio específico:
 
 ```csharp
-// guardar el documento
+// Guardar el documento
 string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
 doc.Save(dataDir + "InsertTableOfContentsUsingAsposeWords.docx");
 ```
 
 ## Conclusión
 
-Agregar una tabla de contenido usando Aspose.Words para .NET es sencillo y mejora significativamente la usabilidad de sus documentos. Si sigue estos pasos, podrá organizar y navegar de manera eficiente a través de documentos complejos.
+Agregar una tabla de contenido con Aspose.Words para .NET es sencillo y mejora significativamente la usabilidad de sus documentos. Si sigue estos pasos, podrá organizar y navegar de manera eficiente por documentos complejos.
 
 ## Preguntas frecuentes
 
 ### ¿Puedo personalizar la apariencia de la tabla de contenido?
-Sí, puede personalizar la apariencia y el comportamiento de la tabla de contenido utilizando Aspose.Words para las API de .NET.
+Sí, puede personalizar la apariencia y el comportamiento de la Tabla de contenido utilizando Aspose.Words para las API de .NET.
 
-### ¿Aspose.Words admite la actualización de campos automáticamente?
-Sí, Aspose.Words le permite actualizar campos como la tabla de contenido de forma dinámica en función de los cambios en el documento.
+### ¿Aspose.Words admite la actualización automática de campos?
+Sí, Aspose.Words le permite actualizar campos como la Tabla de contenido de forma dinámica en función de los cambios en el documento.
 
 ### ¿Puedo generar varias tablas de contenido en un solo documento?
 Aspose.Words admite la generación de múltiples tablas de contenido con diferentes configuraciones dentro de un solo documento.
 
 ### ¿Aspose.Words es compatible con diferentes versiones de Microsoft Word?
-Sí, Aspose.Words garantiza la compatibilidad con varias versiones de los formatos de Microsoft Word.
+Sí, Aspose.Words garantiza la compatibilidad con varias versiones de formatos de Microsoft Word.
 
 ### ¿Dónde puedo encontrar más ayuda y soporte para Aspose.Words?
- Para obtener más ayuda, visite el[Foro Aspose.Words](https://forum.aspose.com/c/words/8) o echa un vistazo a[documentación oficial](https://reference.aspose.com/words/net/).
+ Para obtener más ayuda, visite el sitio[Foro Aspose.Words](https://forum.aspose.com/c/words/8) o echa un vistazo a la[documentación oficial](https://reference.aspose.com/words/net/).

@@ -40,7 +40,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- A`Document` objektum az Aspose.Words magja. A teljes Word dokumentumot képviseli.
+A`Document` objektum az Aspose.Words magja. A teljes Word dokumentumot képviseli.
 
 ## 2. lépés: Szöveg hozzáadása a dokumentumhoz
 
@@ -50,7 +50,7 @@ Ezután adjunk hozzá szöveget a dokumentumhoz. Ez a szöveg lesz a csereművel
 builder.Write("Jason give money to Paul.");
 ```
 
- A`DocumentBuilder` osztály egy hatékony eszköz szöveg és egyéb elemek hozzáadásához a dokumentumhoz.
+A`DocumentBuilder` osztály egy hatékony eszköz szöveg és egyéb elemek hozzáadásához a dokumentumhoz.
 
 ## 3. lépés: Határozza meg a Regex mintát
 
@@ -70,7 +70,7 @@ Az Aspose.Words lehetővé teszi a helyettesítések használatát a cserék sor
 FindReplaceOptions options = new FindReplaceOptions { UseSubstitutions = true };
 ```
 
- A`FindReplaceOptions` osztály különféle lehetőségeket kínál a keresési és csereműveletek testreszabásához.
+A`FindReplaceOptions` osztály különféle lehetőségeket kínál a keresési és csereműveletek testreszabásához.
 
 ## 5. lépés: Hajtsa végre a cserét
 
@@ -80,7 +80,7 @@ Most végezzük el a csereműveletet. Itt történik a varázslat!
 doc.Range.Replace(regex, @"$2 take money from $1", options);
 ```
 
- Itt,`$2`és`$1` helyettesítési minták.`$2` a második elfogott csoportra utal (Pál), és`$1` az első elfogott csoportra (Jason) utal. Az eredmény a következő lesz: "Paul vegyen el pénzt Jasontól."
+ Itt,`$2` és`$1` helyettesítési minták.`$2` a második elfogott csoportra utal (Pál), és`$1` az első elfogott csoportra (Jason) utal. Az eredmény a következő lesz: "Paul vegyen el pénzt Jasontól."
 
 ## 6. lépés: Mentse el a dokumentumot
 
@@ -108,7 +108,7 @@ Az Aspose.Words for .NET egy hatékony könyvtár a Word dokumentumokkal való m
 Igen, az Aspose.Words támogatja a reguláris kifejezéseket a keresési és csereműveletekhez, lehetővé téve az összetett szövegkezelést.
 
 ### Mik a helyettesítési minták a regexben?
- Helyettesítési minták, pl`$1`és`$2`, hivatkozzon a rögzített csoportokra a reguláris kifejezésben. Arra használják, hogy átrendezzék vagy újra felhasználják a helyettesítő karakterláncban lévő egyező szöveg egyes részeit.
+ Helyettesítési minták, pl`$1` és`$2`, hivatkozzon a rögzített csoportokra a reguláris kifejezésben. Arra használják, hogy átrendezzék vagy újra felhasználják a helyettesítő karakterláncban lévő egyező szöveg egyes részeit.
 
 ### Hogyan kaphatok támogatást az Aspose.Words for .NET-hez?
  Támogatást kaphat az Aspose közösségi fórumokon[itt](https://forum.aspose.com/c/words/8).

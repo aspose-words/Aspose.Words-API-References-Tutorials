@@ -1,6 +1,6 @@
 ---
-title: Los campos del formulario se obtienen por nombre
-linktitle: Los campos del formulario se obtienen por nombre
+title: Campos de formulario Obtener por nombre
+linktitle: Campos de formulario Obtener por nombre
 second_title: API de procesamiento de documentos Aspose.Words
 description: Aprenda cómo obtener y modificar campos de formulario por nombre en documentos de Word usando Aspose.Words para .NET con esta guía detallada paso a paso.
 type: docs
@@ -9,19 +9,19 @@ url: /es/net/working-with-formfields/form-fields-get-by-name/
 ---
 ## Introducción
 
-¿Estás cansado de editar manualmente los campos de formulario en tus documentos de Word? Bueno, ¡no te preocupes más! Aspose.Words para .NET está aquí para salvar el día. Esta poderosa biblioteca le permite automatizar el proceso de manipulación de campos de formulario, haciéndole la vida mucho más fácil. Hoy, profundizaremos en cómo obtener campos de formulario por nombre usando Aspose.Words para .NET. Entonces, ¡tome su bebida favorita y comencemos este viaje para optimizar sus tareas de procesamiento de documentos!
+¿Está cansado de editar manualmente los campos de formulario en sus documentos de Word? ¡No se preocupe más! Aspose.Words para .NET está aquí para salvar el día. Esta potente biblioteca le permite automatizar el proceso de manipulación de campos de formulario, lo que le hará la vida mucho más fácil. Hoy, profundizaremos en cómo obtener campos de formulario por nombre utilizando Aspose.Words para .NET. Así que, tome su bebida favorita y comencemos este viaje para agilizar sus tareas de procesamiento de documentos.
 
-## Requisitos previos
+## Prerrequisitos
 
-Antes de profundizar en el código, asegurémonos de que tiene todo lo que necesita:
+Antes de sumergirnos en el código, asegurémonos de que tienes todo lo que necesitas:
 
-1.  Aspose.Words para la biblioteca .NET: si aún no lo ha hecho, descárguelo desde[aquí](https://releases.aspose.com/words/net/).
+1.  Biblioteca Aspose.Words para .NET: si aún no lo ha hecho, descárguela desde[aquí](https://releases.aspose.com/words/net/).
 2. Entorno de desarrollo: cualquier entorno de desarrollo .NET como Visual Studio.
-3. Conocimientos básicos de C#: cierta familiaridad con C# será útil, pero no obligatoria.
+3. Conocimientos básicos de C#: será útil tener cierta familiaridad con C#, pero no es obligatorio.
 
 ## Importar espacios de nombres
 
-Lo primero es lo primero: debe importar los espacios de nombres necesarios. Así es como lo haces:
+Lo primero es lo primero: debes importar los espacios de nombres necesarios. Así es como se hace:
 
 ```csharp
 using System;
@@ -30,25 +30,25 @@ using Aspose.Words;
 using Aspose.Words.Fields;
 ```
 
-## Paso 1: configura tu proyecto
+## Paso 1: Configura tu proyecto
 
-Antes de saltar al código, debe configurar su proyecto. He aquí cómo:
+Antes de comenzar a escribir código, debes configurar tu proyecto. A continuación, te indicamos cómo hacerlo:
 
 ### 1.1 Crear un nuevo proyecto
 
-Abra su entorno de desarrollo y cree un nuevo proyecto de C#. Nómbrelo con algo relevante, como "AsposeFormFieldsExample".
+Abra su entorno de desarrollo y cree un nuevo proyecto de C#. Asígnele un nombre relevante, como "AsposeFormFieldsExample".
 
-### 1.2 Agregar Aspose.Words para la biblioteca .NET
+### 1.2 Agregar la biblioteca Aspose.Words para .NET
 
-Agregue la biblioteca Aspose.Words para .NET a su proyecto. Puede hacer esto a través del Administrador de paquetes NuGet ejecutando el siguiente comando:
+Agregue la biblioteca Aspose.Words para .NET a su proyecto. Puede hacerlo a través del Administrador de paquetes NuGet ejecutando el siguiente comando:
 
 ```bash
 Install-Package Aspose.Words
 ```
 
-## Paso 2: cargue el documento
+## Paso 2: Cargue el documento
 
-Ahora, carguemos el documento de Word que contiene los campos del formulario. Comenzaremos definiendo la ruta a su directorio de documentos y luego cargaremos el documento.
+Ahora, carguemos el documento de Word que contiene los campos del formulario. Comenzaremos definiendo la ruta al directorio del documento y luego cargaremos el documento.
 
 ### 2.1 Definir el directorio de documentos
 
@@ -62,11 +62,11 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Form fields.docx");
 ```
 
-## Paso 3: acceder a los campos del formulario
+## Paso 3: Acceder a los campos del formulario
 
-A continuación, accederemos a los campos del formulario en el documento. He aquí cómo:
+A continuación, accederemos a los campos del formulario en el documento. A continuación, le indicamos cómo:
 
-### 3.1 Obtener la colección de campos del formulario
+### 3.1 Obtener la colección de campos de formulario
 
 ```csharp
 FormFieldCollection documentFormFields = doc.Range.FormFields;
@@ -79,9 +79,9 @@ FormField formField1 = documentFormFields[3];
 FormField formField2 = documentFormFields["Text2"];
 ```
 
-## Paso 4: modificar los campos del formulario
+## Paso 4: Modificar los campos del formulario
 
-Ahora que tenemos acceso a los campos del formulario, modifiquémoslos. ¡Aquí es donde ocurre la magia!
+Ahora que tenemos acceso a los campos del formulario, vamos a modificarlos. ¡Aquí es donde ocurre la magia!
 
 ### 4.1 Cambiar el tamaño de fuente de FormField1
 
@@ -95,9 +95,9 @@ formField1.Font.Size = 20;
 formField2.Font.Color = Color.Red;
 ```
 
-## Paso 5: guarde el documento modificado
+## Paso 5: Guardar el documento modificado
 
-Finalmente, guardemos el documento modificado con un nuevo nombre para conservar el archivo original.
+Por último, guardemos el documento modificado con un nuevo nombre para preservar el archivo original.
 
 ```csharp
 doc.Save(dataDir + "ModifiedFormFields.docx");
@@ -105,26 +105,26 @@ doc.Save(dataDir + "ModifiedFormFields.docx");
 
 ## Conclusión
 
-¡Y ahí lo tienes! Acaba de aprender cómo obtener y modificar campos de formulario por nombre usando Aspose.Words para .NET. Esta poderosa biblioteca hace que sea increíblemente fácil automatizar sus tareas de procesamiento de documentos, ahorrándole tiempo y esfuerzo. ¡Así que adelante, experimente con diferentes modificaciones y haga que su flujo de trabajo de procesamiento de documentos sea lo más eficiente posible!
+¡Y ya está! Acaba de aprender a obtener y modificar campos de formulario por nombre utilizando Aspose.Words para .NET. Esta potente biblioteca facilita enormemente la automatización de las tareas de procesamiento de documentos, lo que le permite ahorrar tiempo y esfuerzo. Así que, ¡anímese a experimentar con diferentes modificaciones y haga que su flujo de trabajo de procesamiento de documentos sea lo más eficiente posible!
 
 ## Preguntas frecuentes
 
-### ¿Puedo utilizar Aspose.Words para .NET con otros lenguajes de programación?
+### ¿Puedo usar Aspose.Words para .NET con otros lenguajes de programación?
 
-Sí, Aspose.Words para .NET admite múltiples lenguajes como VB.NET e incluso interoperabilidad COM.
+Sí, Aspose.Words para .NET admite varios lenguajes como VB.NET e incluso interoperabilidad COM.
 
 ### ¿Hay una prueba gratuita disponible para Aspose.Words para .NET?
 
- Sí, puedes descargar una prueba gratuita desde[aquí](https://releases.aspose.com/).
+ Sí, puedes descargar una versión de prueba gratuita desde[aquí](https://releases.aspose.com/).
 
-### ¿Puedo manipular otros elementos del documento de Word además de los campos del formulario?
+### ¿Puedo manipular otros elementos del documento de Word además de los campos de formulario?
 
-¡Absolutamente! Aspose.Words para .NET le permite manipular una amplia gama de elementos de documentos, incluidos texto, imágenes, tablas y más.
+¡Por supuesto! Aspose.Words para .NET le permite manipular una amplia variedad de elementos de documentos, incluidos texto, imágenes, tablas y más.
 
-### ¿Cómo obtengo soporte si tengo algún problema?
+### ¿Cómo puedo obtener ayuda si encuentro algún problema?
 
- Puedes visitar el[Aspose foro de soporte](https://forum.aspose.com/c/words/8) para obtener ayuda con cualquier problema que encuentre.
+ Puedes visitar el[Foro de soporte de Aspose](https://forum.aspose.com/c/words/8) para obtener ayuda con cualquier problema que encuentre.
 
 ### ¿Dónde puedo encontrar más documentación sobre Aspose.Words para .NET?
 
- La documentación detallada está disponible.[aquí](https://reference.aspose.com/words/net/).
+La documentación detallada está disponible[aquí](https://reference.aspose.com/words/net/).

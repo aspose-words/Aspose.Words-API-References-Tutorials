@@ -30,7 +30,7 @@ Aspose.Words for Java をダウンロードしたら、お好みの IDE で新�
 
 ## ステップ3: ドキュメントの読み込み
 
-ドキュメントを変換する前に、Java アプリケーションに読み込む必要があります。Aspose.Words は、DOCX、PDF などのさまざまなドキュメント形式を読み込むための使いやすいクラスを提供します。
+ドキュメントを変換する前に、Java アプリケーションに読み込む必要があります。Aspose.Words には、DOCX、PDF などのさまざまなドキュメント形式を読み込むための使いやすいクラスが用意されています。
 
 ```java
 // DOCX文書を読み込む
@@ -48,18 +48,6 @@ Document doc = new Document("sample.docx");
 ```java
 //文書をPDFに変換する
 doc.save("output.pdf", SaveFormat.PDF);
-```
-
-## ステップ6: 例外の処理
-
-ドキュメントを操作する場合、例外を適切に処理することが重要です。Aspose.Words for Java は、アプリケーションがスムーズに実行されるように例外処理メカニズムを提供します。
-
-```java
-try {
-    //ここでドキュメント変換を実行します
-} catch (Exception e) {
-    //例外を処理する
-}
 ```
 
 ## 結論
@@ -86,4 +74,4 @@ Aspose.Words for Java は、DOCX、PDF、HTML など、幅広いドキュメン�
 
 ### Aspose.Words for Java のドキュメントにはどこでアクセスできますか?
 
-Aspose.Words for Javaの包括的なドキュメントは以下でご覧いただけます。[Aspose.Words for Java API リファレンス](https://reference.aspose.com/words/java/).
+ Aspose.Words for Javaの包括的なドキュメントは以下でご覧いただけます。[Aspose.Words for Java API リファレンス](https://reference.aspose.com/words/java/).

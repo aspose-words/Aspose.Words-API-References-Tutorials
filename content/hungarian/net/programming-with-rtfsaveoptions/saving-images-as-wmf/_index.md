@@ -75,7 +75,7 @@ Igen, az Aspose.Words for .NET különféle képformátumokat támogat, mint pé
  Teljesen! Ingyenes próbaverziót letölthet a webhelyről[itt](https://releases.aspose.com/).
 
 ### Szükségem van licencre az Aspose.Words for .NET használatához?
- Igen, az Aspose.Words for .NET használatához licenc szükséges. Vásárolhat egyet[itt](https://purchase.aspose.com/buy) vagy ideiglenes engedélyt szerezni[itt](https://purchase.aspose.com/temporary-license/).
+ Igen, az Aspose.Words for .NET használatához licenc szükséges. Vásárolhat egyet[itt](https://purchase.aspose.com/buy) vagy szerezzen ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).
 
 ### Kaphatok támogatást, ha problémákba ütközöm?
  Határozottan! Az Aspose átfogó támogatást kínál fórumaikon keresztül. Hozzáférhet a támogatáshoz[itt](https://forum.aspose.com/c/words/8).

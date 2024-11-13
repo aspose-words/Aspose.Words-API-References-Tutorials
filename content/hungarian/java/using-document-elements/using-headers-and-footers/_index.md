@@ -99,7 +99,7 @@ builder.moveToHeaderFooter(HeaderFooterType.FOOTER_PRIMARY);
 
 ## 8. Oldalszámozás
 
- A fejlécekbe és a láblécekbe oldalszámokat is beilleszthet olyan mezők használatával, mint pl`PAGE`és`NUMPAGES`. Ezek a mezők automatikusan frissülnek, amikor oldalakat ad hozzá vagy eltávolít.
+ A fejlécekbe és a láblécekbe oldalszámokat is beilleszthet olyan mezők használatával, mint pl`PAGE` és`NUMPAGES`. Ezek a mezők automatikusan frissülnek, amikor oldalakat ad hozzá vagy eltávolít.
 
 ## 9. Szerzői jogi információk a láblécekben
 

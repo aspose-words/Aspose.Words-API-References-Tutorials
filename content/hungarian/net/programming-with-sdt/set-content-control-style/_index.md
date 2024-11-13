@@ -62,7 +62,7 @@ StructuredDocumentTag sdt = (StructuredDocumentTag) doc.GetChild(NodeType.Struct
 Style style = doc.Styles[StyleIdentifier.Quote];
 ```
 
- A`Styles` tulajdona a`Document` osztály hozzáférést biztosít a dokumentumban elérhető összes stílushoz. Használjuk a`StyleIdentifier.Quote`az idézet stílusának kiválasztásához.
+A`Styles` tulajdona a`Document` osztály hozzáférést biztosít a dokumentumban elérhető összes stílushoz. Használjuk a`StyleIdentifier.Quote`az idézet stílusának kiválasztásához.
 
 ## 4. lépés: Alkalmazza a stílust a strukturált dokumentum címkére
 

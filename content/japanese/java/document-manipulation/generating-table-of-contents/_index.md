@@ -72,7 +72,7 @@ for (Paragraph para : (Iterable<Paragraph>) doc.getChildNodes(NodeType.PARAGRAPH
         //古いタブを削除します。
         para.getParagraphFormat().getTabStops().removeByPosition(tab.getPosition());
         
-        //変更した位置（たとえば、左に 50 単位）に新しいタブを挿入します。
+        //変更した位置（たとえば、50 単位左）に新しいタブを挿入します。
         para.getParagraphFormat().getTabStops().add(tab.getPosition() - 50.0, tab.getAlignment(), tab.getLeader());
     }
 }
@@ -85,7 +85,7 @@ doc.save("output.docx");
 
 ## 結論
 
-このチュートリアルでは、Word 文書を操作するための強力なライブラリである Aspose.Words for Java を使用して目次 (TOC) を生成する方法について説明しました。適切に構造化された TOC は、長い文書を整理してナビゲートするために不可欠です。Aspose.Words は、TOC を簡単に作成およびカスタマイズするためのツールを提供します。
+このチュートリアルでは、Word 文書を操作するための強力なライブラリである Aspose.Words for Java を使用して目次 (TOC) を生成する方法について説明しました。長い文書を整理してナビゲートするには、適切に構造化された TOC が不可欠です。Aspose.Words には、TOC を簡単に作成およびカスタマイズするためのツールが用意されています。
 
 ## よくある質問
 

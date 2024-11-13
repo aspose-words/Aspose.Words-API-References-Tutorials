@@ -9,65 +9,65 @@ url: /tr/net/join-and-append-documents/link-headers-footers/
 ---
 ## giriiş
 
-Bu eğitimde Aspose.Words for .NET kullanarak belgeler arasında üstbilgi ve altbilgilerin nasıl bağlanacağını inceleyeceğiz. Bu özellik, üstbilgileri ve altbilgileri etkili bir şekilde senkronize ederek birden fazla belgede tutarlılığı ve sürekliliği korumanıza olanak tanır.
+Bu eğitimde, .NET için Aspose.Words kullanarak belgeler arasında başlıkları ve alt bilgileri nasıl bağlayacağımızı inceleyeceğiz. Bu özellik, başlıkları ve alt bilgileri etkili bir şekilde senkronize ederek birden fazla belge arasında tutarlılık ve sürekliliği korumanızı sağlar.
 
-## Önkoşullar
+## Ön koşullar
 
 Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
-- Aspose.Words for .NET ile Visual Studio'yu yükledim.
-- C# programlama ve .NET çerçevesi hakkında temel bilgi.
+- Aspose.Words for .NET ile Visual Studio'yu kurdum.
+- C# programlama ve .NET framework hakkında temel bilgi.
 - Kaynak ve hedef belgelerinizin saklandığı belge dizininize erişim.
 
 ## Ad Alanlarını İçe Aktar
 
-Başlamak için C# projenize gerekli ad alanlarını ekleyin:
+Başlamak için, C# projenize gerekli ad alanlarını ekleyin:
 
 ```csharp
 using Aspose.Words;
 ```
 
-Süreci net adımlara ayıralım:
+Süreci net adımlara bölelim:
 
-## 1. Adım: Belgeleri Yükleyin
+## Adım 1: Belgeleri Yükle
 
- Öncelikle kaynak ve hedef belgeleri şuraya yükleyin:`Document` nesneler:
+ İlk olarak kaynak ve hedef belgeleri yükleyin`Document` nesneler:
 
 ```csharp
-// Belge dizininizin yolu
+// Belge dizininize giden yol
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## Adım 2: Bölüm Başlangıcını Ayarlayın
+## Adım 2: Bölüm Başlangıcını Ayarla
 
- Eklenen belgenin yeni bir sayfada başlamasını sağlamak için`SectionStart` kaynak belgenin ilk bölümünün özelliği:
+ Eklenen belgenin yeni bir sayfada başlamasını sağlamak için,`SectionStart` kaynak belgenin ilk bölümünün mülkiyeti:
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 ```
 
-## 3. Adım: Üstbilgileri ve Altbilgileri Bağlayın
+## Adım 3: Başlıkları ve Altbilgileri Bağlayın
 
-Kaynak belgedeki üstbilgileri ve altbilgileri hedef belgedeki önceki bölüme bağlayın. Bu adım, kaynak belgedeki üstbilgi ve altbilgilerin, hedef belgede mevcut olanların üzerine yazılmadan uygulanmasını sağlar:
+Kaynak belgedeki üstbilgileri ve altbilgileri hedef belgedeki önceki bölüme bağlayın. Bu adım, kaynak belgedeki üstbilgilerin ve altbilgilerin hedef belgedeki mevcut olanların üzerine yazılmadan uygulanmasını sağlar:
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(true);
 ```
 
-## 4. Adım: Belgeleri Ekleyin
+## Adım 4: Belgeleri Ekleyin
 
-Kaynaktaki biçimlendirmeyi koruyarak kaynak belgeyi hedef belgeye ekleyin:
+Kaynak belgeyi, kaynaktaki biçimlendirmeyi koruyarak hedef belgeye ekleyin:
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## Adım 5: Sonucu Kaydet
+## Adım 5: Sonucu Kaydedin
 
-Son olarak değiştirilen hedef belgeyi istediğiniz konuma kaydedin:
+Son olarak, değiştirilen hedef belgeyi istediğiniz konuma kaydedin:
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.LinkHeadersFooters.docx");
@@ -75,21 +75,21 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.LinkHeadersFooters.docx");
 
 ## Çözüm
 
-Aspose.Words for .NET kullanarak üstbilgileri ve altbilgileri belgeler arasında bağlamak basittir ve belgeleriniz arasında tutarlılık sağlayarak büyük belge kümelerini yönetmeyi ve korumayı kolaylaştırır.
+Aspose.Words for .NET kullanarak belgeler arasında üstbilgi ve altbilgileri birbirine bağlamak basittir ve belgeleriniz arasında tutarlılığı garanti ederek büyük belge kümelerini yönetmeyi ve sürdürmeyi kolaylaştırır.
 
 ## SSS
 
-### Farklı düzenlere sahip belgeler arasında üstbilgileri ve altbilgileri bağlayabilir miyim?
-Evet, Aspose.Words farklı düzenleri sorunsuz bir şekilde yöneterek üstbilgi ve altbilgilerin bütünlüğünü korur.
+### Farklı düzenlere sahip belgeler arasında üstbilgi ve altbilgileri birbirine bağlayabilir miyim?
+Evet, Aspose.Words farklı düzenleri sorunsuz bir şekilde işler ve başlık ve altbilgilerin bütünlüğünü korur.
 
-### Üstbilgileri ve altbilgileri bağlamak belgelerdeki diğer biçimlendirmeyi etkiler mi?
-Hayır, üstbilgi ve altbilgilerin bağlanması yalnızca belirtilen bölümleri etkiler ve diğer içerik ve biçimlendirmeyi olduğu gibi bırakır.
+### Başlık ve altbilgilerin birbirine bağlanması belgelerdeki diğer biçimlendirmeleri etkiler mi?
+Hayır, üstbilgi ve altbilgileri birbirine bağlamak yalnızca belirtilen bölümleri etkiler, diğer içerik ve biçimlendirmeyi olduğu gibi bırakır.
 
-### Aspose.Words .NET'in tüm sürümleriyle uyumlu mu?
-Aspose.Words, .NET Framework ve .NET Core'un çeşitli sürümlerini destekleyerek platformlar arasında uyumluluk sağlar.
+### Aspose.Words .NET'in tüm sürümleriyle uyumlu mudur?
+Aspose.Words, .NET Framework ve .NET Core'un çeşitli sürümlerini destekleyerek platformlar arası uyumluluğu garanti altına alır.
 
-### Üstbilgileri ve altbilgileri bağladıktan sonra bunların bağlantısını kaldırabilir miyim?
-Evet, bireysel belge formatını geri yüklemek için Aspose.Words API yöntemlerini kullanarak üstbilgi ve altbilgilerin bağlantısını kaldırabilirsiniz.
+### Başlık ve altbilgileri bağladıktan sonra bağlantısını kaldırabilir miyim?
+Evet, Aspose.Words API yöntemlerini kullanarak başlık ve altbilgilerin bağlantısını kaldırabilir ve bireysel belge biçimlendirmesini geri yükleyebilirsiniz.
 
-### Aspose.Words for .NET hakkında daha ayrıntılı belgeleri nerede bulabilirim?
- Ziyaret etmek[Aspose.Words for .NET Belgeleri](https://reference.aspose.com/words/net/) kapsamlı kılavuzlar ve API referansları için.
+### Aspose.Words for .NET hakkında daha detaylı dokümanları nerede bulabilirim?
+ Ziyaret etmek[Aspose.Words .NET Belgeleri için](https://reference.aspose.com/words/net/)kapsamlı kılavuzlar ve API referansları için.

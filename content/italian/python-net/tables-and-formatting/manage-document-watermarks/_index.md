@@ -1,24 +1,24 @@
 ---
-title: Creazione e formattazione di filigrane per l'estetica del documento
-linktitle: Creazione e formattazione di filigrane per l'estetica del documento
+title: Creazione e formattazione di filigrane per l'estetica dei documenti
+linktitle: Creazione e formattazione di filigrane per l'estetica dei documenti
 second_title: API di gestione dei documenti Python Aspose.Words
-description: Scopri come creare e formattare filigrane nei documenti utilizzando Aspose.Words per Python. Guida passo passo con codice sorgente per aggiungere filigrane di testo e immagini. Migliora l'estetica del tuo documento con questo tutorial.
+description: Scopri come creare e formattare filigrane nei documenti usando Aspose.Words per Python. Guida passo passo con codice sorgente per aggiungere filigrane di testo e immagini. Migliora l'estetica del tuo documento con questo tutorial.
 type: docs
 weight: 10
 url: /it/python-net/tables-and-formatting/manage-document-watermarks/
 ---
 
-Le filigrane fungono da elemento sottile ma di grande impatto nei documenti, aggiungendo uno strato di professionalità ed estetica. Con Aspose.Words per Python, puoi facilmente creare e formattare filigrane per migliorare l'attrattiva visiva dei tuoi documenti. Questo tutorial ti guiderà attraverso il processo passo passo per aggiungere filigrane ai tuoi documenti utilizzando l'API Aspose.Words per Python.
+Le filigrane sono un elemento sottile ma di impatto nei documenti, aggiungendo un livello di professionalità ed estetica. Con Aspose.Words per Python, puoi facilmente creare e formattare filigrane per migliorare l'aspetto visivo dei tuoi documenti. Questo tutorial ti guiderà passo dopo passo nel processo di aggiunta di filigrane ai tuoi documenti utilizzando l'API Aspose.Words per Python.
 
 ## Introduzione alle filigrane nei documenti
 
-Le filigrane sono elementi di design posizionati sullo sfondo dei documenti per trasmettere informazioni aggiuntive o marchio senza ostacolare il contenuto principale. Sono comunemente utilizzati nei documenti aziendali, negli atti legali e nei lavori creativi per mantenere l'integrità dei documenti e migliorare l'attrattiva visiva.
+Le filigrane sono elementi di design posizionati sullo sfondo dei documenti per trasmettere informazioni aggiuntive o marchi senza ostacolare il contenuto principale. Sono comunemente utilizzate nei documenti aziendali, legali e nei lavori creativi per mantenere l'integrità del documento e migliorare l'attrattiva visiva.
 
-## Iniziare con Aspose.Words per Python
+## Introduzione ad Aspose.Words per Python
 
- Per iniziare, assicurati di avere Aspose.Words per Python installato. Puoi scaricarlo da Aspose Releases:[Scarica Aspose.Words per Python](https://releases.aspose.com/words/python/).
+ Per iniziare, assicurati di avere Aspose.Words for Python installato. Puoi scaricarlo da Aspose Releases:[Scarica Aspose.Words per Python](https://releases.aspose.com/words/python/).
 
-Dopo l'installazione è possibile importare i moduli necessari e configurare l'oggetto documento.
+Dopo l'installazione, è possibile importare i moduli necessari e configurare l'oggetto documento.
 
 ```python
 import aspose.words as aw
@@ -31,11 +31,11 @@ doc = aw.Document()
 
 ## Aggiunta di filigrane di testo
 
-Per aggiungere una filigrana di testo, attenersi alla seguente procedura:
+Per aggiungere una filigrana di testo, segui questi passaggi:
 
 1. Crea un oggetto filigrana.
 2. Specificare il testo per la filigrana.
-3. Aggiungi la filigrana al documento.
+3. Aggiungere la filigrana al documento.
 
 ```python
 # Create a watermark object
@@ -50,7 +50,7 @@ doc.watermark = watermark
 
 ## Personalizzazione dell'aspetto della filigrana del testo
 
-Puoi personalizzare l'aspetto della filigrana del testo regolando varie proprietà:
+È possibile personalizzare l'aspetto della filigrana di testo modificando varie proprietà:
 
 ```python
 # Customize text watermark appearance
@@ -61,11 +61,11 @@ watermark.color = aw.drawing.Color.GRAY
 
 ## Aggiunta di filigrane alle immagini
 
-L'aggiunta di filigrane alle immagini prevede un processo simile:
+L'aggiunta di filigrane alle immagini comporta un processo simile:
 
 1. Carica l'immagine per la filigrana.
 2. Crea un oggetto filigrana immagine.
-3. Aggiungi la filigrana dell'immagine al documento.
+3. Aggiungere la filigrana dell'immagine al documento.
 
 ```python
 # Load the image for the watermark
@@ -79,9 +79,9 @@ image_watermark = aw.drawing.ImageWatermark(watermark_image)
 doc.watermark = image_watermark
 ```
 
-## Regolazione delle proprietà della filigrana immagine
+## Regolazione delle proprietà della filigrana dell'immagine
 
-Puoi controllare la dimensione e la posizione della filigrana dell'immagine:
+È possibile controllare la dimensione e la posizione della filigrana dell'immagine:
 
 ```python
 # Adjust image watermark properties
@@ -92,7 +92,7 @@ image_watermark.relative_vertical_position = aw.drawing.RelativeVerticalPosition
 
 ## Applicazione di filigrane a sezioni specifiche del documento
 
-Se desideri applicare filigrane a sezioni specifiche del documento, puoi utilizzare il seguente approccio:
+Se si desidera applicare filigrane a sezioni specifiche del documento, è possibile utilizzare il seguente approccio:
 
 ```python
 # Apply watermark to a specific section
@@ -109,7 +109,7 @@ Per creare una filigrana trasparente, regola il livello di trasparenza:
 watermark.transparency = 0.5  # Range: 0 (opaque) to 1 (fully transparent)
 ```
 
-## Salvare il documento con filigrane
+## Salvataggio del documento con filigrane
 
 Dopo aver aggiunto le filigrane, salva il documento con le filigrane applicate:
 
@@ -121,7 +121,7 @@ doc.save(output_path)
 
 ## Conclusione
 
-Aggiungere filigrane ai tuoi documenti utilizzando Aspose.Words per Python è un processo semplice che migliora l'attrattiva visiva e il marchio dei tuoi contenuti. Che si tratti di filigrane di testo o di immagini, hai la flessibilità di personalizzarne l'aspetto e il posizionamento in base alle tue preferenze.
+Aggiungere filigrane ai tuoi documenti usando Aspose.Words per Python è un processo semplice che migliora l'aspetto visivo e il branding dei tuoi contenuti. Che si tratti di filigrane di testo o di immagini, hai la flessibilità di personalizzarne l'aspetto e il posizionamento in base alle tue preferenze.
 
 ## Domande frequenti
 
@@ -131,18 +131,18 @@ Aggiungere filigrane ai tuoi documenti utilizzando Aspose.Words per Python è un
 
 ### Posso applicare filigrane diverse a pagine diverse?
 
-Sì, puoi applicare filigrane diverse a sezioni o pagine diverse all'interno di un documento.
+Sì, è possibile applicare filigrane diverse a sezioni o pagine diverse all'interno di un documento.
 
-### È possibile utilizzare una filigrana di testo ruotata?
+### È possibile utilizzare una filigrana con testo ruotato?
 
-Assolutamente! È possibile ruotare la filigrana del testo impostando la proprietà dell'angolo di rotazione.
+Assolutamente! Puoi ruotare la filigrana del testo impostando la proprietà dell'angolo di rotazione.
 
-### Posso proteggere la filigrana dalla modifica o dalla rimozione?
+### Posso proteggere la filigrana da modifiche o rimozioni?
 
-Sebbene le filigrane non possano essere completamente protette, puoi renderle più resistenti alle manomissioni regolandone la trasparenza e il posizionamento.
+Sebbene le filigrane non possano essere completamente protette, è possibile renderle più resistenti alla manomissione modificandone la trasparenza e il posizionamento.
 
 ### Aspose.Words per Python è adatto sia a Windows che a Linux?
 
-Sì, Aspose.Words for Python è compatibile sia con ambienti Windows che Linux.
+Sì, Aspose.Words per Python è compatibile sia con gli ambienti Windows che Linux.
 
- Per maggiori dettagli e riferimenti API completi, visitare la documentazione di Aspose.Words:[Aspose.Words per riferimenti API Python](https://reference.aspose.com/words/python-net/)
+ Per maggiori dettagli e riferimenti API completi, visita la documentazione di Aspose.Words:[Riferimenti API Aspose.Words per Python](https://reference.aspose.com/words/python-net/)

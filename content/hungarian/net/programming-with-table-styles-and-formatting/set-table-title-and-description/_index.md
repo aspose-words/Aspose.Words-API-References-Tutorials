@@ -22,7 +22,7 @@ Mielőtt belevágnánk a finomságokba, győződjünk meg arról, hogy mindennel
 
 ## Névterek importálása
 
-A kódolás megkezdése előtt importálni kell a szükséges névtereket. Tekintsd ezt az eszköztár felállításának.
+A kódolás megkezdése előtt importálni kell a szükséges névtereket. Tekintsd ezt úgy, mint az eszköztár felállítását.
 
 ```csharp
 using Aspose.Words;

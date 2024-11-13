@@ -17,7 +17,7 @@ Mielőtt hozzákezdenénk, győződjön meg arról, hogy minden lényeges elem a
 
 -  Aspose.Words for .NET Library: Győződjön meg arról, hogy a legújabb verzióval rendelkezik.[Töltse le itt](https://releases.aspose.com/words/net/).
 - .NET-keretrendszer: Győződjön meg arról, hogy a .NET-keretrendszer telepítve van a számítógépen.
-- C# alapvető ismerete: Hasznos lesz a C# programozás alapszintű ismerete.
+- A C# alapvető ismerete: Hasznos lesz a C# programozás alapszintű ismerete.
 - Integrált fejlesztői környezet (IDE): a Visual Studio ajánlott.
 
 ## Névterek importálása
@@ -51,7 +51,7 @@ Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
- A`InsertChart` metódus a diagram típusát, szélességét és magasságát veszi paraméterként. Ebben az esetben egy 432 szélességű és 252 magasságú vonaldiagramot szúrunk be.
+A`InsertChart` metódus a diagram típusát, szélességét és magasságát veszi paraméterként. Ebben az esetben egy 432 szélességű és 252 magasságú vonaldiagramot szúrunk be.
 
 ## 3. lépés: Access Chart Series
 
@@ -86,7 +86,7 @@ dataPoint00.Marker.Size = 15;
 
  Mert`dataPoint00`, egy robbanást állítunk be (kördiagramoknál hasznos), a jelölő szimbólumát körre változtatjuk, a jelölő méretét pedig 15-re.
 
-### A 01. adatpont testreszabása
+### 01. adatpont testreszabása
 
 ```csharp
 dataPoint01.Marker.Symbol = MarkerSymbol.Diamond;

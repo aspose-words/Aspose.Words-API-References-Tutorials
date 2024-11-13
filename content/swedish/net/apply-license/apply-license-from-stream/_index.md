@@ -9,7 +9,7 @@ url: /sv/net/apply-license/apply-license-from-stream/
 ---
 ## Introduktion
 
-Hej där, andra kodare! Om du dyker in i Aspose.Words för .NET-världen är en av de första sakerna du behöver göra att ansöka om en licens för att låsa upp bibliotekets fulla potential. I den här guiden går vi igenom hur du ansöker om en licens från en stream. Lita på mig, det är enklare än det låter, och i slutet av den här handledningen kommer du att ha din ansökan igång smidigt. Redo att börja? Låt oss hoppa direkt in!
+Hej där, andra kodare! Om du dyker in i Aspose.Words för .NET-världen är en av de första sakerna du behöver göra att ansöka om en licens för att låsa upp bibliotekets fulla potential. I den här guiden går vi igenom hur du ansöker om en licens från en stream. Lita på mig, det är enklare än det låter, och i slutet av den här handledningen kommer du att ha din ansökan igång smidigt. Redo att komma igång? Låt oss hoppa direkt in!
 
 ## Förutsättningar
 
@@ -80,7 +80,7 @@ catch (Exception e)
 
 ## Slutsats
 
-Och där har du det! Att ansöka om en licens från en stream i Aspose.Words för .NET är en enkel process när du väl känner till stegen. Genom att följa den här guiden säkerställer du att din applikation kan utnyttja alla funktioner i Aspose.Words utan några begränsningar. Om du stöter på några problem, tveka inte att kolla in[dokumentation](https://reference.aspose.com/words/net/) eller sök hjälp på[supportforum](https://forum.aspose.com/c/words/8). Glad kodning!
+ Och där har du det! Att ansöka om en licens från en stream i Aspose.Words för .NET är en enkel process när du väl känner till stegen. Genom att följa den här guiden säkerställer du att din applikation kan utnyttja alla funktioner i Aspose.Words utan några begränsningar. Om du stöter på några problem, tveka inte att kolla in[dokumentation](https://reference.aspose.com/words/net/) eller sök hjälp på[supportforum](https://forum.aspose.com/c/words/8). Glad kodning!
 
 ## FAQ's
 

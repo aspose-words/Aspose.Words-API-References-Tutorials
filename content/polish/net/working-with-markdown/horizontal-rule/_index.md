@@ -1,73 +1,73 @@
 ---
-title: Reguła pozioma
-linktitle: Reguła pozioma
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak dodawać linie poziome w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z tym szczegółowym przewodnikiem krok po kroku, aby ulepszyć układ dokumentu.
+title: Linia pozioma
+linktitle: Linia pozioma
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak dodawać poziome linie w dokumentach Worda za pomocą Aspose.Words dla .NET. Postępuj zgodnie z tym szczegółowym przewodnikiem krok po kroku, aby ulepszyć układ dokumentu.
 type: docs
 weight: 10
 url: /pl/net/working-with-markdown/horizontal-rule/
 ---
 ## Wstęp
 
-Czy kiedykolwiek chciałeś dodać odrobinę profesjonalizmu do swoich dokumentów Word? Linie poziome, zwane także liniami poziomymi, to świetny sposób na podzielenie sekcji i sprawienie, by zawartość wyglądała na przejrzystą i uporządkowaną. W tym samouczku przyjrzymy się, jak łatwo wstawiać poziome linie do dokumentów programu Word za pomocą Aspose.Words dla .NET. Chcesz, aby Twoje dokumenty wyróżniały się? Zacznijmy!
+Czy kiedykolwiek chciałeś dodać odrobinę profesjonalizmu do swoich dokumentów Word? Linie poziome, znane również jako linie poziome, są świetnym sposobem na podzielenie sekcji i sprawienie, że Twoja treść będzie wyglądać czysto i uporządkowanie. W tym samouczku zagłębimy się w to, jak możesz łatwo wstawiać linie poziome do swoich dokumentów Word za pomocą Aspose.Words dla .NET. Gotowy, aby wyróżnić swoje dokumenty? Zaczynajmy!
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim przejdziemy do przewodnika krok po kroku, upewnijmy się, że masz wszystko, czego potrzebujesz.
+Zanim przejdziemy do szczegółowego przewodnika, upewnijmy się, że masz wszystko, czego potrzebujesz.
 
--  Aspose.Words dla .NET: Upewnij się, że masz zainstalowany Aspose.Words dla .NET. Jeśli jeszcze tego nie zrobiłeś, możesz pobrać go ze strony[Strona Aspose](https://releases.aspose.com/words/net/).
-- Środowisko programistyczne: Będziesz potrzebować środowiska programistycznego .NET skonfigurowanego na swoim komputerze. Visual Studio to świetny wybór.
-- Podstawowa znajomość języka C#: W tym samouczku założono, że masz podstawową wiedzę na temat języków C# i .NET.
+-  Aspose.Words dla .NET: Upewnij się, że masz zainstalowany Aspose.Words dla .NET. Jeśli jeszcze tego nie zrobiłeś, możesz pobrać go z[Strona internetowa Aspose](https://releases.aspose.com/words/net/).
+- Środowisko programistyczne: Będziesz potrzebować środowiska programistycznego .NET skonfigurowanego na swojej maszynie. Visual Studio jest świetnym wyborem.
+- Podstawowa wiedza o języku C#: W tym samouczku zakładamy, że posiadasz podstawową wiedzę o języku C# i .NET.
 
 ## Importuj przestrzenie nazw
 
-Aby rozpocząć, upewnij się, że do projektu C# zaimportowano niezbędne przestrzenie nazw:
+Aby rozpocząć, upewnij się, że w projekcie C# zaimportowano niezbędne przestrzenie nazw:
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Podzielmy teraz proces dodawania reguły poziomej na proste, łatwe do wykonania kroki.
+Teraz omówimy proces dodawania linii poziomej na proste, łatwe do wykonania kroki.
 
 ## Krok 1: Zainicjuj dokument
 
-Po pierwsze, musisz zainicjować nowy dokument i narzędzie do tworzenia dokumentów. Kreator dokumentów jest tutaj kluczowym graczem, ponieważ umożliwia dodawanie treści do dokumentu.
+Po pierwsze, musisz zainicjować nowy dokument i konstruktora dokumentów. Konstruktor dokumentów jest tutaj kluczowym graczem, ponieważ pozwala ci dodawać treść do dokumentu.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-Spowoduje to utworzenie nowego dokumentu, w którym będziemy dodawać naszą regułę poziomą.
+Tworzymy nowy dokument, w którym dodamy linię poziomą.
 
-## Krok 2: Wstaw linię poziomą
+## Krok 2: Włóż poziomą linijkę
 
-Teraz czas na najprzyjemniejszą część – wstawienie linijki poziomej. Dzięki narzędziu do tworzenia dokumentów jest to dziecinnie proste.
+Teraz nadchodzi zabawna część – wstawianie poziomej linii. Dzięki kreatorowi dokumentów jest to dziecinnie proste.
 
 ```csharp
 // Wstaw linię poziomą
 builder.InsertHorizontalRule();
 ```
 
-I tyle! Właśnie dodałeś poziomą linię do swojego dokumentu.
+I to wszystko! Właśnie dodałeś linię poziomą do swojego dokumentu.
 
 ## Wniosek
 
-Dodawanie poziomej linii do dokumentów programu Word za pomocą Aspose.Words dla .NET jest niezwykle proste. Za pomocą zaledwie kilku linii kodu możesz poprawić wygląd swoich dokumentów, czyniąc je bardziej profesjonalnymi i łatwiejszymi do odczytania. Więc następnym razem, gdy będziesz chciał dodać trochę elegancji swoim dokumentom, pamiętaj o tej prostej, ale skutecznej sztuczce.
+Dodanie poziomej linii do dokumentów Word za pomocą Aspose.Words dla .NET jest niezwykle proste. Za pomocą zaledwie kilku linijek kodu możesz poprawić wygląd swoich dokumentów, czyniąc je bardziej profesjonalnymi i łatwiejszymi do czytania. Więc następnym razem, gdy będziesz chciał dodać trochę stylu do swoich dokumentów, pamiętaj o tej prostej, ale skutecznej sztuczce.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Co to jest reguła horyzontalna?
-Linia pozioma to linia rozciągająca się na szerokość strony lub sekcji, służąca do oddzielania treści w celu zapewnienia lepszej czytelności i organizacji.
+### Czym jest liniał poziomy?
+Linia pozioma to linia biegnąca przez całą szerokość strony lub sekcji, używana do oddzielania treści w celu zapewnienia lepszej czytelności i organizacji.
 
 ### Czy mogę dostosować wygląd linii poziomej?
-Tak, Aspose.Words pozwala dostosować styl, szerokość, wysokość i wyrównanie linii poziomej.
+Tak, Aspose.Words pozwala na dostosowanie stylu, szerokości, wysokości i wyrównania linii poziomej.
 
-### Czy potrzebuję specjalnych narzędzi, aby używać Aspose.Words dla .NET?
-Potrzebujesz środowiska programistycznego .NET, takiego jak Visual Studio i kopię Aspose.Words dla .NET.
+### Czy potrzebuję jakichś specjalnych narzędzi, aby korzystać z Aspose.Words dla .NET?
+Potrzebne jest środowisko programistyczne .NET, takie jak Visual Studio, oraz kopia pakietu Aspose.Words dla platformy .NET.
 
 ### Czy Aspose.Words dla .NET jest darmowy?
- Aspose.Words dla .NET jest produktem płatnym, ale możesz uzyskać[bezpłatna wersja próbna](https://releases.aspose.com/) lub[licencja tymczasowa](https://purchase.aspose.com/temporary-license/).
+ Aspose.Words dla .NET jest produktem płatnym, ale można uzyskać[bezpłatny okres próbny](https://releases.aspose.com/) lub[licencja tymczasowa](https://purchase.aspose.com/temporary-license/).
 
 ### Gdzie mogę uzyskać pomoc dotyczącą Aspose.Words dla .NET?
  Możesz uzyskać wsparcie od[Forum wsparcia Aspose.Words](https://forum.aspose.com/c/words/8).

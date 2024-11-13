@@ -1,23 +1,23 @@
 ---
-title: Convertir campos en cuerpo
-linktitle: Convertir campos en cuerpo
+title: Convertir campos en el cuerpo
+linktitle: Convertir campos en el cuerpo
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda a convertir campos de documentos en texto estático usando Aspose.Words para .NET para mejorar la eficiencia del procesamiento de documentos.
+description: Aprenda a convertir campos de documentos en texto estático utilizando Aspose.Words para .NET para mejorar la eficiencia del procesamiento de documentos.
 type: docs
 weight: 10
 url: /es/net/working-with-fields/convert-fields-in-body/
 ---
 ## Introducción
 
-En el ámbito del desarrollo .NET, la gestión dinámica del contenido de los documentos es esencial, ya que a menudo requiere la manipulación de varios tipos de campos dentro de los documentos. Aspose.Words para .NET se destaca como un poderoso conjunto de herramientas para desarrolladores, que ofrece funcionalidades sólidas para manejar campos de documentos de manera eficiente. Esta guía completa se centra en cómo convertir campos en el cuerpo de un documento usando Aspose.Words para .NET y proporciona instrucciones paso a paso para capacitar a los desarrolladores a mejorar la automatización y gestión de documentos.
+En el ámbito del desarrollo .NET, la gestión dinámica del contenido de los documentos es esencial, y a menudo requiere la manipulación de varios tipos de campos dentro de los documentos. Aspose.Words para .NET se destaca como un potente conjunto de herramientas para desarrolladores, que ofrece funcionalidades sólidas para gestionar los campos de los documentos de manera eficiente. Esta guía completa se centra en cómo convertir los campos en el cuerpo de un documento mediante Aspose.Words para .NET, y proporciona instrucciones paso a paso para que los desarrolladores puedan mejorar la automatización y la gestión de los documentos.
 
-## Requisitos previos
+## Prerrequisitos
 
 Antes de profundizar en el tutorial sobre cómo convertir campos en el cuerpo de un documento usando Aspose.Words para .NET, asegúrese de tener los siguientes requisitos previos:
 
-- Visual Studio: instalado y configurado para desarrollo .NET.
--  Aspose.Words para .NET: descargado y referenciado en su proyecto de Visual Studio. Puedes obtenerlo de[aquí](https://releases.aspose.com/words/net/).
-- Conocimientos básicos de C#: familiaridad con el lenguaje de programación C# para comprender y modificar los fragmentos de código proporcionados.
+- Visual Studio: instalado y configurado para el desarrollo .NET.
+-  Aspose.Words para .NET: descargado y referenciado en su proyecto de Visual Studio. Puede obtenerlo desde[aquí](https://releases.aspose.com/words/net/).
+- Conocimientos básicos de C#: Familiaridad con el lenguaje de programación C# para comprender y modificar los fragmentos de código proporcionados.
 
 ## Importar espacios de nombres
 
@@ -28,9 +28,9 @@ using Aspose.Words;
 using System.Linq;
 ```
 
-Estos espacios de nombres son esenciales para acceder a las funcionalidades de Aspose.Words y consultas LINQ.
+Estos espacios de nombres son esenciales para acceder a las funcionalidades de Aspose.Words y a las consultas LINQ.
 
-## Paso 1: cargue el documento
+## Paso 1: Cargue el documento
 
 Comience cargando el documento donde desea convertir los campos:
 
@@ -39,11 +39,11 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Linked fields.docx");
 ```
 
- Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta a su documento real.
+ Reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta a su documento actual.
 
-## Paso 2: identificar y convertir campos
+## Paso 2: Identificar y convertir campos
 
-Identifique y convierta campos específicos dentro del cuerpo del documento. Por ejemplo, para convertir campos de PÁGINA en texto:
+Identificar y convertir campos específicos dentro del cuerpo del documento. Por ejemplo, para convertir campos PÁGINA en texto:
 
 ```csharp
 doc.FirstSection.Body.Range.Fields
@@ -52,9 +52,9 @@ doc.FirstSection.Body.Range.Fields
     .ForEach(f => f.Unlink());
 ```
 
-Este fragmento de código utiliza LINQ para buscar todos los campos de PÁGINA en el cuerpo del documento y luego los desvincula, convirtiéndolos efectivamente en texto estático.
+Este fragmento de código utiliza LINQ para encontrar todos los campos PAGE en el cuerpo del documento y luego los desvincula, convirtiéndolos efectivamente en texto estático.
 
-## Paso 3: guarde el documento
+## Paso 3: Guardar el documento
 
 Guarde el documento modificado después de convertir los campos:
 
@@ -66,7 +66,7 @@ doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
 
 ## Conclusión
 
-Dominar el arte de manipular campos de documentos utilizando Aspose.Words para .NET permite a los desarrolladores automatizar los flujos de trabajo de documentos de manera eficiente. Ya sea convirtiendo campos a texto sin formato o manejando tipos de campos más complejos, Aspose.Words simplifica estas tareas con su API intuitiva y su sólido conjunto de funciones, lo que garantiza una integración perfecta en aplicaciones .NET.
+Dominar el arte de manipular campos de documentos con Aspose.Words para .NET permite a los desarrolladores automatizar los flujos de trabajo de documentos de manera eficiente. Ya sea que se trate de convertir campos a texto sin formato o de manejar tipos de campos más complejos, Aspose.Words simplifica estas tareas con su API intuitiva y su sólido conjunto de funciones, lo que garantiza una integración perfecta en las aplicaciones .NET.
 
 ## Preguntas frecuentes
 
@@ -79,8 +79,8 @@ Aspose.Words admite varios tipos de campos como FECHA, PÁGINA, MERGEFIELD y má
 ### ¿Puede Aspose.Words para .NET convertir campos en diferentes formatos de documentos?
 Sí, Aspose.Words para .NET puede convertir y manipular campos en formatos como DOCX, DOC, RTF y más sin problemas.
 
-### ¿Dónde puedo encontrar documentación completa sobre Aspose.Words para .NET?
- Documentación detallada y referencias de API disponibles[aquí](https://reference.aspose.com/words/net/).
+### ¿Dónde puedo encontrar documentación completa de Aspose.Words para .NET?
+ La documentación detallada y las referencias API están disponibles[aquí](https://reference.aspose.com/words/net/).
 
-### ¿Existe una versión de prueba disponible para Aspose.Words para .NET?
+### ¿Hay una versión de prueba disponible de Aspose.Words para .NET?
  Sí, puedes descargar una versión de prueba gratuita desde[aquí](https://releases.aspose.com/).

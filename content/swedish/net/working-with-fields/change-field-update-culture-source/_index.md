@@ -83,7 +83,7 @@ Och där har du det! Du har framgångsrikt ändrat fältuppdateringskulturkälla
 ## FAQ's
 
 ###  Vad är syftet med att ställa in`LocaleId`?
- De`LocaleId` anger kulturinställningarna för texten, vilket påverkar hur datum och andra lokalitetskänsliga data formateras.
+De`LocaleId` anger kulturinställningarna för texten, vilket påverkar hur datum och andra lokalitetskänsliga data formateras.
 
 ### Kan jag använda en annan plats än tyska?
  Ja, du kan ställa in`LocaleId`till valfri giltig lokalidentifierare. Till exempel 1033 för engelska (USA).
@@ -92,7 +92,7 @@ Och där har du det! Du har framgångsrikt ändrat fältuppdateringskulturkälla
 Om den här egenskapen inte är inställd kommer dokumentets standardkulturinställningar att användas vid uppdatering av fält.
 
 ### Är det möjligt att uppdatera fält baserat på dokumentets kultur istället för fältkoden?
- Ja, du kan ställa in`FieldUpdateCultureSource` till`FieldUpdateCultureSource.Document` för att använda dokumentets kulturinställningar.
+ Ja, du kan ställa in`FieldUpdateCultureSource` till`FieldUpdateCultureSource.Document` att använda dokumentets kulturinställningar.
 
 ### Hur formaterar jag datum i ett annat mönster?
  Du kan ändra datumformatmönstret i`InsertField` metod genom att modifiera`\\@` växla värde.

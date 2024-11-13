@@ -2,7 +2,7 @@
 title: ドキュメントの複製と結合
 linktitle: ドキュメントの複製と結合
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書を複製および結合する方法を学習します。文書のコピーを作成する方法、複数の文書を 1 つに結合する方法、セクション、ヘッダー、フッターを管理する方法を学習します。
+description: Aspose.Words for .NET を使用して Word 文書を複製および結合する方法を学びます。文書のコピーを作成する方法、複数の文書を 1 つに結合する方法、セクション、ヘッダー、フッターを管理する方法を学びます。
 type: docs
 weight: 1470
 url: /ja/net/clone-and-combine-documents/

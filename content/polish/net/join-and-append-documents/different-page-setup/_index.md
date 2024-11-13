@@ -1,28 +1,28 @@
 ---
-title: Inna konfiguracja strony
-linktitle: Inna konfiguracja strony
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak skonfigurować różne konfiguracje stron podczas łączenia dokumentów programu Word za pomocą Aspose.Words dla .NET. W zestawie instrukcja krok po kroku.
+title: Różne ustawienia strony
+linktitle: Różne ustawienia strony
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak ustawić różne konfiguracje stron podczas scalania dokumentów Word za pomocą Aspose.Words dla .NET. Zawiera przewodnik krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/join-and-append-documents/different-page-setup/
 ---
 ## Wstęp
 
-Hej tam! Gotowy do zanurzenia się w fascynujący świat manipulacji dokumentami za pomocą Aspose.Words dla .NET? Dzisiaj zajmiemy się czymś całkiem fajnym: konfigurowaniem różnych ustawień strony podczas łączenia dokumentów programu Word. Niezależnie od tego, czy łączysz raporty, tworzysz powieść, czy po prostu bawisz się dokumentami dla zabawy, ten przewodnik przeprowadzi Cię przez to krok po kroku. Zacznijmy!
+Cześć! Gotowy, aby zanurzyć się w fascynującym świecie manipulacji dokumentami za pomocą Aspose.Words dla .NET? Dzisiaj zajmiemy się czymś całkiem fajnym: konfiguracją różnych ustawień stron podczas łączenia dokumentów Word. Niezależnie od tego, czy łączysz raporty, tworzysz powieść, czy po prostu bawisz się dokumentami dla zabawy, ten przewodnik przeprowadzi Cię przez to krok po kroku. Zaczynajmy!
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim ubrudzimy sobie ręce, upewnijmy się, że mamy wszystko, czego potrzebujemy:
+Zanim zaczniemy, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
-1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowany Aspose.Words dla .NET. Możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
-2. .NET Framework: dowolna wersja obsługująca Aspose.Words dla .NET.
-3. Środowisko programistyczne: Visual Studio lub dowolne inne IDE kompatybilne z .NET.
-4. Podstawowa znajomość języka C#: tylko podstawy, aby zrozumieć składnię i strukturę.
+1.  Aspose.Words dla .NET: Upewnij się, że masz zainstalowany Aspose.Words dla .NET. Możesz[pobierz tutaj](https://releases.aspose.com/words/net/).
+2. .NET Framework: Dowolna wersja obsługująca Aspose.Words dla platformy .NET.
+3. Środowisko programistyczne: Visual Studio lub inne środowisko IDE zgodne z platformą .NET.
+4. Podstawowa wiedza o języku C#: Tylko podstawy pozwalające zrozumieć składnię i strukturę.
 
 ## Importuj przestrzenie nazw
 
-Na początek zaimportujmy niezbędne przestrzenie nazw do Twojego projektu C#. Te przestrzenie nazw są kluczowe dla uzyskania dostępu do funkcji Aspose.Words.
+Po pierwsze, zaimportujmy niezbędne przestrzenie nazw do projektu C#. Te przestrzenie nazw są kluczowe dla dostępu do funkcji Aspose.Words.
 
 ```csharp
 using Aspose.Words;
@@ -30,17 +30,17 @@ using Aspose.Words.Saving;
 using Aspose.Words.Tables;
 ```
 
-No dobrze, przejdźmy do sedna sprawy. Podzielimy cały proces na łatwe do wykonania kroki.
+Dobrze, przejdźmy do sedna sprawy. Podzielimy cały proces na łatwe do naśladowania kroki.
 
 ## Krok 1: Skonfiguruj swój projekt
 
 ### Krok 1.1: Utwórz nowy projekt
 
-Uruchom Visual Studio i utwórz nową aplikację konsolową C#. Nazwij to czymś fajnym, na przykład „DifferentPageSetupExample”.
+Uruchom program Visual Studio i utwórz nową aplikację konsoli C#. Nazwij ją jakoś fajnie, np. „DifferentPageSetupExample”.
 
 ### Krok 1.2: Dodaj odniesienie do Aspose.Words
 
-Aby używać Aspose.Words, musisz dodać go do swojego projektu. Jeśli jeszcze tego nie zrobiłeś, pobierz pakiet Aspose.Words dla .NET. Możesz go zainstalować za pomocą Menedżera pakietów NuGet za pomocą następującego polecenia:
+Aby użyć Aspose.Words, musisz dodać go do swojego projektu. Jeśli jeszcze tego nie zrobiłeś, pobierz pakiet Aspose.Words dla .NET. Możesz go zainstalować za pomocą NuGet Package Manager za pomocą następującego polecenia:
 
 ```bash
 Install-Package Aspose.Words
@@ -48,7 +48,7 @@ Install-Package Aspose.Words
 
 ## Krok 2: Załaduj dokumenty
 
- Teraz załadujmy dokumenty, które chcemy scalić. W tym przykładzie potrzebne będą dwa dokumenty programu Word:`Document source.docx`I`Northwind traders.docx`. Upewnij się, że te pliki znajdują się w katalogu projektu.
+ Teraz załadujmy dokumenty, które chcemy połączyć. W tym przykładzie będziesz potrzebować dwóch dokumentów Word:`Document source.docx` I`Northwind traders.docx`. Upewnij się, że te pliki znajdują się w katalogu Twojego projektu.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -59,11 +59,11 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Krok 3: Skonfiguruj ustawienia strony dla dokumentu źródłowego
 
-Musimy upewnić się, że ustawienia strony w dokumencie źródłowym są zgodne z dokumentem docelowym. Ten krok jest kluczowy dla płynnego scalania.
+Musimy upewnić się, że ustawienia strony dokumentu źródłowego są zgodne z dokumentem docelowym. Ten krok jest kluczowy dla płynnego scalenia.
 
 ### Krok 3.1: Kontynuuj po dokumencie docelowym
 
-Ustaw dokument źródłowy tak, aby był kontynuowany natychmiast po dokumencie docelowym.
+Ustaw dokument źródłowy tak, aby następował bezpośrednio po dokumencie docelowym.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
@@ -71,7 +71,7 @@ srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 
 ### Krok 3.2: Uruchom ponownie numerację stron
 
-Rozpocznij ponownie numerację stron na początku dokumentu źródłowego.
+Rozpocznij numerację stron od początku dokumentu źródłowego.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
@@ -80,7 +80,7 @@ srcDoc.FirstSection.PageSetup.PageStartingNumber = 1;
 
 ## Krok 4: Dopasuj ustawienia konfiguracji strony
 
-Aby uniknąć niespójności układu, upewnij się, że ustawienia strony w pierwszej sekcji dokumentu źródłowego odpowiadają ustawieniom ostatniej sekcji dokumentu docelowego.
+Aby uniknąć niespójności układu, upewnij się, że ustawienia strony w pierwszej sekcji dokumentu źródłowego są zgodne z ustawieniami w ostatniej sekcji dokumentu docelowego.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.PageWidth = dstDoc.LastSection.PageSetup.PageWidth;
@@ -90,9 +90,9 @@ srcDoc.FirstSection.PageSetup.Orientation = dstDoc.LastSection.PageSetup.Orienta
 
 ## Krok 5: Dostosuj formatowanie akapitu
 
-Aby zapewnić płynny przepływ, musimy dostosować formatowanie akapitu w dokumencie źródłowym.
+Aby zapewnić płynny przepływ tekstu, musimy dostosować formatowanie akapitu w dokumencie źródłowym.
 
- Wykonaj iterację po wszystkich akapitach w dokumencie źródłowym i ustaw opcję`KeepWithNext` nieruchomość.
+ Przejrzyj wszystkie akapity w dokumencie źródłowym i ustaw`KeepWithNext` nieruchomość.
 
 ```csharp
 foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
@@ -103,7 +103,7 @@ foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
 
 ## Krok 6: Dołącz dokument źródłowy
 
-Na koniec dołącz dokument źródłowy do dokumentu docelowego, upewniając się, że zachowane zostało oryginalne formatowanie.
+Na koniec należy dołączyć dokument źródłowy do dokumentu docelowego, upewniając się, że oryginalne formatowanie zostanie zachowane.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -111,7 +111,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Krok 7: Zapisz połączony dokument
 
-Teraz zapisz swój pięknie scalony dokument.
+Teraz zapisz pięknie połączony dokument.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
@@ -119,21 +119,21 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.DifferentPageSetup.docx");
 
 ## Wniosek
 
-masz to! Właśnie połączyłeś dwa dokumenty Worda z różnymi ustawieniami strony, używając Aspose.Words dla .NET. Ta potężna biblioteka sprawia, że programowe manipulowanie dokumentami jest niezwykle łatwe. Niezależnie od tego, czy tworzysz złożone raporty, montujesz księgi, czy zarządzasz dokumentami składającymi się z wielu sekcji, Aspose.Words Cię wspiera.
+masz to! Właśnie połączyłeś dwa dokumenty Word z różnymi ustawieniami strony za pomocą Aspose.Words dla .NET. Ta potężna biblioteka sprawia, że manipulowanie dokumentami programowo jest niezwykle łatwe. Niezależnie od tego, czy tworzysz złożone raporty, składasz książki, czy zarządzasz dokumentami wielosekcyjnymi, Aspose.Words ma dla Ciebie wsparcie.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Czy mogę zastosować tę metodę w przypadku więcej niż dwóch dokumentów?
-Absolutnie! Po prostu powtórz kroki dla każdego dodatkowego dokumentu, który chcesz scalić.
+### Czy mogę użyć tej metody do więcej niż dwóch dokumentów?
+Oczywiście! Po prostu powtórz kroki dla każdego dodatkowego dokumentu, który chcesz scalić.
 
-### Co się stanie, jeśli moje dokumenty mają różne marginesy?
-Możesz także dopasować ustawienia marginesów w podobny sposób, jak szerokość, wysokość i orientację strony.
+### Co zrobić, jeśli moje dokumenty mają różne marginesy?
+Możesz także dopasować ustawienia marginesów w podobny sposób, w jaki dopasowaliśmy szerokość, wysokość i orientację strony.
 
 ### Czy Aspose.Words jest kompatybilny z .NET Core?
 Tak, Aspose.Words dla .NET jest w pełni kompatybilny z .NET Core.
 
 ### Czy mogę zachować style z obu dokumentów?
- Tak,`ImportFormatMode.KeepSourceFormatting` Opcja zapewnia zachowanie stylów z dokumentu źródłowego.
+ Tak,`ImportFormatMode.KeepSourceFormatting` opcja ta zapewnia zachowanie stylów ze źródłowego dokumentu.
 
-### Gdzie mogę uzyskać dodatkową pomoc dotyczącą Aspose.Words?
- Sprawdź[Dokumentacja Aspose.Words](https://reference.aspose.com/words/net/) lub odwiedź ich[forum wsparcia](https://forum.aspose.com/c/words/8) aby uzyskać dodatkową pomoc.
+### Gdzie mogę uzyskać więcej pomocy na temat Aspose.Words?
+ Sprawdź[Dokumentacja Aspose.Words](https://reference.aspose.com/words/net/) lub odwiedź ich[forum wsparcia](https://forum.aspose.com/c/words/8) Aby uzyskać dalszą pomoc.

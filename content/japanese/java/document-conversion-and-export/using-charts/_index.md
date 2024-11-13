@@ -45,7 +45,7 @@ doc.save("Your Directory Path" + "WorkingWithCharts.FormatNumberOfDataLabel.docx
 
 ## その他の種類のグラフを作成する
 
-同様の手法を使用して、縦棒グラフ、面グラフ、バブル グラフ、散布図など、さまざまな種類のグラフを作成できます。以下は、単純な縦棒グラフを挿入する例です。
+同様の手法を使用して、縦棒グラフ、面グラフ、バブルグラフ、散布図など、さまざまな種類のグラフを作成できます。以下は、単純な縦棒グラフを挿入する例です。
 
 ```java
 Document doc = new Document();
@@ -82,7 +82,7 @@ ChartAxis yAxis = chart.getAxisY();
 // X 軸を日付ではなくカテゴリに変更します。
 xAxis.setCategoryType(AxisCategoryType.CATEGORY);
 xAxis.setCrosses(AxisCrosses.CUSTOM);
-xAxis.setCrossesAt(3.0); // 軸の表示単位 (百) で測定されます。
+xAxis.setCrossesAt(3.0); // Y 軸の表示単位 (百) で測定されます。
 xAxis.setReverseOrder(true);
 xAxis.setMajorTickMark(AxisTickMark.CROSS);
 xAxis.setMinorTickMark(AxisTickMark.OUTSIDE);
@@ -127,7 +127,7 @@ doc.save("Your Directory Path" + "WorkingWithCharts.NumberFormatForAxis.docx");
 
 ### グラフに複数のシリーズを追加するにはどうすればよいですか?
 
-複数のシリーズをチャートに追加するには、`chart.getSeries().add()`方法。シリーズ名、カテゴリ、データ値を必ず指定してください。
+チャートに複数のシリーズを追加するには、`chart.getSeries().add()`方法。シリーズ名、カテゴリ、データ値を必ず指定してください。
 
 ### カスタム数値形式でデータ ラベルをフォーマットするにはどうすればよいですか?
 

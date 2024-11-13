@@ -2,7 +2,7 @@
 title: リソース Steam フォント ソースの例
 linktitle: リソース Steam フォント ソースの例
 second_title: Aspose.Words ドキュメント処理 API
-description: この詳細なガイドでは、Aspose.Words for .NET でリソース ストリーム フォント ソースを使用する方法を説明します。ドキュメントが常に正しくレンダリングされることを確認します。
+description: この詳細なガイドでは、Aspose.Words for .NET でリソース ストリーム フォント ソースを使用する方法を学習します。ドキュメントが常に正しくレンダリングされることを確認します。
 type: docs
 weight: 10
 url: /ja/net/working-with-fonts/resource-steam-font-source-example/

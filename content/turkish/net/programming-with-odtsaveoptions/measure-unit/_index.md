@@ -2,94 +2,94 @@
 title: Ölçü Birimi
 linktitle: Ölçü Birimi
 second_title: Aspose.Words Belge İşleme API'si
-description: ODT dönüşümü sırasında belge formatını korumak için Aspose.Words for .NET'te ölçü birimi özelliğini nasıl yapılandıracağınızı öğrenin.
+description: ODT dönüştürme sırasında belge biçimlendirmesini korumak için Aspose.Words for .NET'te ölçüm birimi özelliğinin nasıl yapılandırılacağını öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-odtsaveoptions/measure-unit/
 ---
 ## giriiş
 
-Hiç Word belgelerinizi farklı formatlara dönüştürmek zorunda kaldınız mı, ancak düzeniniz için belirli bir ölçü birimine ihtiyaç duydunuz mu? İster inç, ister santimetre veya noktalarla ilgileniyor olun, dönüştürme işlemi sırasında belgenizin bütünlüğünü korumasını sağlamak çok önemlidir. Bu eğitimde Aspose.Words for .NET'te ölçü birimi özelliğinin nasıl yapılandırılacağını anlatacağız. Bu güçlü özellik, ODT (Açık Belge Metni) biçimine dönüştürürken belgenizin biçimlendirmesinin tam olarak ihtiyaç duyduğunuz şekilde korunmasını sağlar.
+Word belgelerinizi farklı biçimlere dönüştürmeniz gerekti ancak düzeniniz için belirli bir ölçü birimine mi ihtiyacınız oldu? İster inç, ister santimetre veya puanla uğraşıyor olun, belgenizin dönüştürme işlemi sırasında bütünlüğünü koruması çok önemlidir. Bu eğitimde, .NET için Aspose.Words'de ölçü birimi özelliğinin nasıl yapılandırılacağını ele alacağız. Bu güçlü özellik, belgenizin biçimlendirmesinin ODT (Açık Belge Metni) biçimine dönüştürürken tam olarak ihtiyaç duyduğunuz şekilde korunmasını sağlar.
 
-## Önkoşullar
+## Ön koşullar
 
-Koda dalmadan önce başlamanız gereken birkaç şey var:
+Koda dalmadan önce, başlamak için ihtiyacınız olacak birkaç şey var:
 
-1. Aspose.Words for .NET: Aspose.Words for .NET'in en son sürümünün kurulu olduğundan emin olun. Henüz sahip değilseniz, adresinden indirebilirsiniz.[Burada](https://releases.aspose.com/words/net/).
-2. Geliştirme Ortamı: C# kodunuzu yazmak ve yürütmek için Visual Studio benzeri bir IDE.
-3. Temel C# Bilgisi: C#'ın temellerini anlamak, öğreticiyi takip etmenize yardımcı olacaktır.
-4. Bir Word Belgesi: Dönüştürme için kullanabileceğiniz örnek bir Word belgesini hazır bulundurun.
+1. Aspose.Words for .NET: Aspose.Words for .NET'in en son sürümünün yüklü olduğundan emin olun. Eğer henüz yüklü değilse, şuradan indirebilirsiniz:[Burada](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: C# kodunuzu yazmak ve çalıştırmak için Visual Studio benzeri bir IDE.
+3. Temel C# Bilgisi: C# temellerini anlamak, eğitimi takip etmenize yardımcı olacaktır.
+4. Word Belgesi: Dönüştürme işleminde kullanabileceğiniz örnek bir Word belgesi hazır bulundurun.
 
 ## Ad Alanlarını İçe Aktar
 
-Kodlamaya başlamadan önce gerekli ad alanlarının içe aktarıldığından emin olalım. Bunları kullanarak yönergeleri kod dosyanızın en üstüne ekleyin:
+Kodlamaya başlamadan önce, gerekli ad alanlarının içe aktarıldığından emin olalım. Kod dosyanızın en üstüne şu using yönergelerini ekleyin:
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-## 1. Adım: Belge Dizininizi Kurun
+## Adım 1: Belge Dizininizi Ayarlayın
 
-Öncelikle belge dizininizin yolunu tanımlamanız gerekir. Burası Word belgenizin bulunduğu ve dönüştürülen dosyanın kaydedileceği yerdir.
+Öncelikle belge dizininize giden yolu tanımlamanız gerekir. Word belgenizin bulunduğu ve dönüştürülen dosyanın kaydedileceği yer burasıdır.
 
 ```csharp
-// Belgeler dizininizin yolu
+// Belgelerinizin dizinine giden yol
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
- Yer değiştirmek`"YOUR DOCUMENTS DIRECTORY"` Dizininizin gerçek yolu ile. Bu, kodunuzun Word belgenizi nerede bulacağını bilmesini sağlar.
+ Yer değiştirmek`"YOUR DOCUMENTS DIRECTORY"` dizininize giden gerçek yol ile. Bu, kodunuzun Word belgenizi nerede bulacağını bilmesini sağlar.
 
 ## Adım 2: Word Belgesini Yükleyin
 
- Daha sonra dönüştürmek istediğiniz Word belgesini yüklemeniz gerekir. Bu, kullanılarak yapılır.`Document` Aspose.Words'ten sınıf.
+ Sonra, dönüştürmek istediğiniz Word belgesini yüklemeniz gerekir. Bu, şu şekilde yapılır:`Document` Aspose.Words'den sınıf.
 
 ```csharp
 // Word belgesini yükleyin
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-"Document.docx" adlı Word belgenizin belirtilen dizinde bulunduğundan emin olun.
+"Belge.docx" adlı Word belgenizin belirtilen dizinde bulunduğundan emin olun.
 
-## 3. Adım: Ölçü Birimini Yapılandırın
+## Adım 3: Ölçüm Birimini Yapılandırın
 
- Şimdi ODT dönüşümü için ölçü birimini yapılandıralım. Sihrin gerçekleştiği yer burasıdır. Biz kuracağız`OdtSaveOptions` ölçü birimi olarak inç kullanmak.
+ Şimdi, ODT dönüşümü için ölçüm birimini yapılandıralım. Sihir burada gerçekleşir. Şunu ayarlayacağız:`OdtSaveOptions` ölçü birimi olarak inç kullanmak.
 
 ```csharp
-// Yedekleme seçeneklerinin "Ölçü birimi" özelliği ile yapılandırılması
+// "Ölçüm birimi" özelliği ile yedekleme seçeneklerinin yapılandırılması
 OdtSaveOptions saveOptions = new OdtSaveOptions { MeasureUnit = OdtSaveMeasureUnit.Inches };
 ```
 
- Bu örnekte ölçü birimini inç olarak ayarlıyoruz. Ayrıca aşağıdaki gibi diğer birimleri de seçebilirsiniz.`OdtSaveMeasureUnit.Centimeters` veya`OdtSaveMeasureUnit.Points` gereksinimlerinize bağlı olarak.
+ Bu örnekte, ölçüm birimini inç olarak ayarlıyoruz. Ayrıca, aşağıdaki gibi diğer birimleri de seçebilirsiniz:`OdtSaveMeasureUnit.Centimeters` veya`OdtSaveMeasureUnit.Points` İhtiyaçlarınıza bağlı olarak.
 
 ## Adım 4: Belgeyi ODT'ye Dönüştürün
 
- Son olarak, yapılandırılmış olanı kullanarak Word belgesini ODT formatına dönüştüreceğiz.`OdtSaveOptions`.
+ Son olarak, yapılandırılmış olan Word belgesini ODT biçimine dönüştüreceğiz.`OdtSaveOptions`.
 
 ```csharp
-// Belgeyi ODT'ye dönüştürün
+// Belgeyi ODT'ye dönüştür
 doc.Save(dataDir + "WorkingWithOdtSaveOptions.MeasureUnit.odt", saveOptions);
 ```
 
-Bu kod satırı, dönüştürülen belgeyi, uygulanan yeni ölçü birimiyle belirtilen dizine kaydeder.
+Bu kod satırı, dönüştürülen belgeyi yeni ölçüm birimi uygulanarak belirtilen dizine kaydeder.
 
 ## Çözüm
 
-Ve işte karşınızda! Bu adımları izleyerek Aspose.Words for .NET'teki ölçü birimi özelliğini kolayca yapılandırarak belgenizin düzeninin dönüştürme sırasında korunmasını sağlayabilirsiniz. İster inç, ister santimetre veya noktalarla çalışıyor olun, bu eğitim size belgenizin biçimlendirmesini nasıl kolaylıkla kontrol altına alacağınızı göstermiştir.
+İşte bu kadar! Bu adımları izleyerek, Aspose.Words for .NET'te ölçüm birimi özelliğini kolayca yapılandırabilir ve dönüştürme sırasında belgenizin düzeninin korunmasını sağlayabilirsiniz. İster inç, ister santimetre veya nokta ile çalışıyor olun, bu eğitim belgenizin biçimlendirmesini kolayca nasıl kontrol edeceğinizi göstermiştir.
 
 ## SSS
 
 ### Aspose.Words for .NET nedir?
-Aspose.Words for .NET, Word belgeleriyle programlı olarak çalışmak için güçlü bir kütüphanedir. Geliştiricilerin Microsoft Word gerektirmeden Word belgelerini oluşturmasına, değiştirmesine, dönüştürmesine ve işlemesine olanak tanır.
+Aspose.Words for .NET, Word belgeleriyle programatik olarak çalışmak için güçlü bir kütüphanedir. Geliştiricilerin Microsoft Word gerektirmeden Word belgeleri oluşturmasına, değiştirmesine, dönüştürmesine ve işlemesine olanak tanır.
 
 ### İnç dışında başka ölçü birimleri kullanabilir miyim?
- Evet, Aspose.Words for .NET santimetre ve nokta gibi diğer ölçü birimlerini destekler. İstediğiniz birimi kullanarak belirtebilirsiniz.`OdtSaveMeasureUnit` numaralandırma.
+ Evet, Aspose.Words for .NET santimetre ve puan gibi diğer ölçüm birimlerini destekler. İstediğiniz birimi kullanarak belirtebilirsiniz`OdtSaveMeasureUnit` sayım.
 
-### Aspose.Words for .NET'in ücretsiz deneme sürümü mevcut mu?
+### Aspose.Words for .NET için ücretsiz deneme sürümü mevcut mu?
  Evet, Aspose.Words for .NET'in ücretsiz deneme sürümünü şu adresten indirebilirsiniz:[Burada](https://releases.aspose.com/).
 
-### Aspose.Words for .NET belgelerini nerede bulabilirim?
- Aspose.Words for .NET'in kapsamlı belgelerine şu adresten ulaşabilirsiniz:[bu bağlantı](https://reference.aspose.com/words/net/).
+### Aspose.Words for .NET için dokümanları nerede bulabilirim?
+ Aspose.Words for .NET için kapsamlı belgelere şu adresten erişebilirsiniz:[bu bağlantı](https://reference.aspose.com/words/net/).
 
-### Aspose.Words for .NET için nasıl destek alabilirim?
- Destek için Aspose.Words forumunu ziyaret edebilirsiniz:[bu bağlantı](https://forum.aspose.com/c/words/8).
+### Aspose.Words for .NET desteğini nasıl alabilirim?
+ Destek için Aspose.Words forumunu ziyaret edebilirsiniz.[bu bağlantı](https://forum.aspose.com/c/words/8).

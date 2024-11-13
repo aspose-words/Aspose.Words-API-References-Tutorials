@@ -2,24 +2,24 @@
 title: Hợp nhất theo chiều ngang
 linktitle: Hợp nhất theo chiều ngang
 second_title: API xử lý tài liệu Aspose.Words
-description: Tìm hiểu cách hợp nhất các ô theo chiều ngang trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn chi tiết từng bước này.
+description: Tìm hiểu cách gộp ô theo chiều ngang trong tài liệu Word bằng Aspose.Words cho .NET với hướng dẫn chi tiết từng bước này.
 type: docs
 weight: 10
 url: /vi/net/programming-with-tables/horizontal-merge/
 ---
 ## Giới thiệu
 
-Này! Bạn đã sẵn sàng đi sâu vào thế giới Aspose.Words dành cho .NET chưa? Hôm nay, chúng ta sẽ giải quyết một tính năng cực kỳ hữu ích: hợp nhất theo chiều ngang trong bảng. Điều này nghe có vẻ hơi kỹ thuật nhưng đừng lo lắng, tôi sẽ hỗ trợ bạn. Đến cuối hướng dẫn này, bạn sẽ thành thạo trong việc hợp nhất các ô trong tài liệu Word theo chương trình. Vì vậy, hãy xắn tay áo lên và bắt đầu!
+Xin chào! Bạn đã sẵn sàng khám phá thế giới của Aspose.Words cho .NET chưa? Hôm nay, chúng ta sẽ giải quyết một tính năng cực kỳ hữu ích: hợp nhất theo chiều ngang trong các bảng. Nghe có vẻ hơi kỹ thuật, nhưng đừng lo, tôi sẽ hỗ trợ bạn. Đến cuối hướng dẫn này, bạn sẽ trở thành chuyên gia trong việc hợp nhất các ô trong tài liệu Word theo chương trình. Vậy, hãy xắn tay áo lên và bắt đầu thôi!
 
 ## Điều kiện tiên quyết
 
-Trước khi chúng ta đi sâu vào vấn đề chi tiết, có một số điều bạn cần chuẩn bị sẵn:
+Trước khi đi sâu vào vấn đề chính, bạn cần chuẩn bị một số điều sau:
 
-1. Aspose.Words for .NET Library: Nếu bạn chưa có, hãy tải xuống thư viện Aspose.Words for .NET. Bạn có thể lấy nó[đây](https://releases.aspose.com/words/net/).
+1. Aspose.Words cho Thư viện .NET: Nếu bạn chưa có, hãy tải xuống thư viện Aspose.Words cho .NET. Bạn có thể lấy nó[đây](https://releases.aspose.com/words/net/).
 2. Môi trường phát triển: Đảm bảo bạn đã thiết lập môi trường phát triển phù hợp, chẳng hạn như Visual Studio.
-3. Kiến thức cơ bản về C#: Hiểu biết cơ bản về lập trình C# sẽ có ích.
+3. Kiến thức cơ bản về C#: Hiểu biết cơ bản về lập trình C# sẽ rất có lợi.
 
-Khi bạn đã sắp xếp xong những thứ này, bạn đã sẵn sàng để bắt đầu!
+Khi đã sắp xếp xong những thứ này, bạn đã sẵn sàng rồi!
 
 ## Nhập không gian tên
 
@@ -30,7 +30,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Được rồi, hãy chia nhỏ quy trình hợp nhất các ô bảng theo chiều ngang trong tài liệu Word bằng Aspose.Words cho .NET.
+Được rồi, chúng ta hãy phân tích quy trình hợp nhất các ô trong bảng theo chiều ngang trong tài liệu Word bằng Aspose.Words cho .NET.
 
 ## Bước 1: Thiết lập tài liệu của bạn
 
@@ -44,7 +44,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Đoạn mã này thiết lập một tài liệu mới và chuẩn bị`DocumentBuilder` cho hành động.
+ Đoạn mã này thiết lập một tài liệu mới và chuẩn bị`DocumentBuilder` để hành động.
 
 ## Bước 2: Chèn ô đầu tiên
 
@@ -56,7 +56,7 @@ builder.CellFormat.HorizontalMerge = CellMerge.First;
 builder.Write("Text in merged cells.");
 ```
 
- Ở đây, chúng ta chèn một ô mới và đặt nó`HorizontalMerge`tài sản để`CellMerge.First`, cho biết ô này là điểm bắt đầu của chuỗi ô được hợp nhất.
+ Ở đây, chúng ta chèn một ô mới và thiết lập nó`HorizontalMerge`tài sản để`CellMerge.First`, cho biết rằng ô này là điểm bắt đầu của một chuỗi ô đã hợp nhất.
 
 ## Bước 3: Chèn ô đã hợp nhất
 
@@ -68,11 +68,11 @@ builder.CellFormat.HorizontalMerge = CellMerge.Previous;
 builder.EndRow();
 ```
 
- Ô này được đặt để hợp nhất với ô trước đó bằng cách sử dụng`CellMerge.Previous` . Lưu ý cách chúng tôi kết thúc hàng với`builder.EndRow()`.
+ Ô này được thiết lập để hợp nhất với ô trước đó bằng cách sử dụng`CellMerge.Previous` . Lưu ý cách chúng ta kết thúc hàng với`builder.EndRow()`.
 
 ## Bước 4: Chèn các ô chưa được hợp nhất
 
-Để minh họa sự khác biệt, hãy chèn một vài ô chưa được hợp nhất:
+Để minh họa sự khác biệt, chúng ta hãy chèn một vài ô chưa được hợp nhất:
 
 ```csharp
 builder.InsertCell();
@@ -83,7 +83,7 @@ builder.Write("Text in another cell.");
 builder.EndRow();
 ```
 
-Ở đây, chúng tôi chèn hai ô không có sự hợp nhất theo chiều ngang. Điều này cho thấy các ô hoạt động như thế nào khi chúng không phải là một phần của chuỗi đã hợp nhất.
+Ở đây, chúng tôi chèn hai ô không có sự hợp nhất theo chiều ngang. Điều này cho thấy cách các ô hoạt động khi chúng không phải là một phần của chuỗi được hợp nhất.
 
 ## Bước 5: Hoàn thiện bảng
 
@@ -94,25 +94,25 @@ builder.EndTable();
 doc.Save(dataDir + "WorkingWithTables.HorizontalMerge.docx");
 ```
 
-Đoạn mã này hoàn thành bảng và lưu tài liệu vào thư mục được chỉ định.
+Đoạn mã này hoàn thiện bảng và lưu tài liệu vào thư mục đã chỉ định.
 
 ## Phần kết luận
 
-Và bạn có nó! Bạn vừa nắm vững nghệ thuật hợp nhất các ô theo chiều ngang trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo các bước này, bạn có thể tạo các cấu trúc bảng phức tạp một cách dễ dàng. Hãy tiếp tục thử nghiệm và khám phá các khả năng của Aspose.Words để làm cho tài liệu của bạn trở nên năng động và linh hoạt như bạn cần. Chúc mừng mã hóa!
+Và bạn đã có nó rồi! Bạn vừa thành thạo nghệ thuật hợp nhất các ô theo chiều ngang trong tài liệu Word bằng Aspose.Words cho .NET. Bằng cách làm theo các bước này, bạn có thể dễ dàng tạo các cấu trúc bảng phức tạp. Tiếp tục thử nghiệm và khám phá các khả năng của Aspose.Words để làm cho tài liệu của bạn trở nên năng động và linh hoạt như bạn cần. Chúc bạn viết mã vui vẻ!
 
 ## Câu hỏi thường gặp
 
-### Aspose.Words cho .NET là gì?
+### Aspose.Words dành cho .NET là gì?
 Aspose.Words for .NET là một thư viện mạnh mẽ cho phép các nhà phát triển tạo, chỉnh sửa và thao tác các tài liệu Word theo chương trình trong các ứng dụng .NET.
 
-### Tôi có thể hợp nhất các ô theo chiều dọc với Aspose.Words cho .NET không?
+### Tôi có thể nhập các ô theo chiều dọc bằng Aspose.Words cho .NET không?
  Có, bạn cũng có thể hợp nhất các ô theo chiều dọc bằng cách sử dụng`CellFormat.VerticalMerge` tài sản.
 
-### Aspose.Words cho .NET có được sử dụng miễn phí không?
- Aspose.Words for .NET cung cấp bản dùng thử miễn phí nhưng để có đầy đủ chức năng, bạn sẽ cần phải mua giấy phép. Bạn có thể nhận được giấy phép tạm thời[đây](https://purchase.aspose.com/temporary-license/).
+### Aspose.Words cho .NET có miễn phí sử dụng không?
+ Aspose.Words cho .NET cung cấp bản dùng thử miễn phí, nhưng để có đầy đủ chức năng, bạn sẽ cần mua giấy phép. Bạn có thể nhận được giấy phép tạm thời[đây](https://purchase.aspose.com/temporary-license/).
 
-### Làm cách nào tôi có thể tìm hiểu thêm về Aspose.Words cho .NET?
- Bạn có thể khám phá các tài liệu chi tiết[đây](https://reference.aspose.com/words/net/).
+### Làm thế nào tôi có thể tìm hiểu thêm về Aspose.Words cho .NET?
+ Bạn có thể khám phá tài liệu chi tiết[đây](https://reference.aspose.com/words/net/).
 
-### Tôi có thể nhận hỗ trợ cho Aspose.Words cho .NET ở đâu?
- Nếu có bất kỳ thắc mắc hoặc vấn đề nào, bạn có thể truy cập diễn đàn hỗ trợ Aspose[đây](https://forum.aspose.com/c/words/8).
+### Tôi có thể nhận hỗ trợ cho Aspose.Words dành cho .NET ở đâu?
+ Đối với bất kỳ thắc mắc hoặc vấn đề nào, bạn có thể truy cập diễn đàn hỗ trợ Aspose[đây](https://forum.aspose.com/c/words/8).

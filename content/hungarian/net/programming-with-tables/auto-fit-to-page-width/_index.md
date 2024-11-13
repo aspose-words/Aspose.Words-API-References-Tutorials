@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
- A`Aspose.Words` névtér tartalmazza a Word dokumentumok kezeléséhez szükséges alapvető osztályokat, míg`Aspose.Words.Tables` kifejezetten asztalok kezelésére szolgál.
+A`Aspose.Words` névtér tartalmazza a Word dokumentumok kezeléséhez szükséges alapvető osztályokat, míg`Aspose.Words.Tables` kifejezetten asztalok kezelésére szolgál.
 
 ## 1. lépés: Állítsa be a dokumentumot
 
@@ -68,7 +68,7 @@ Most, hogy megvan a táblázat, alkalmazhatja az automatikus illesztés funkció
 table.AutoFit(AutoFitBehavior.AutoFitToWindow);
 ```
 
- A`AutoFit` módszerrel`AutoFitBehavior.AutoFitToWindow` biztosítja, hogy a táblázat szélessége az oldal teljes szélességéhez illeszkedjen.
+A`AutoFit` módszerrel`AutoFitBehavior.AutoFitToWindow` biztosítja, hogy a táblázat szélessége az oldal teljes szélességéhez illeszkedjen.
 
 ## 4. lépés: Mentse el a módosított dokumentumot
 

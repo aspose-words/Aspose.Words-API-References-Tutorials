@@ -16,7 +16,7 @@ Word 文書の表が 2 ページに分割されてイライラしたことはあ
 始める前に、以下のものを用意してください。
 
 1.  Aspose.Words for .NET - まだインストールしていない場合は、こちらからダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
-2. 表を含む Word 文書 - 複数ページにまたがる表を含むサンプル文書を操作します。
+2. 表を含む Word 文書 - 複数のページにわたる表を含むサンプル文書を操作します。
 3. C# の基本知識 - このチュートリアルでは、C# プログラミングの基本を理解していることを前提としています。
 
 ## 名前空間のインポート
@@ -51,7 +51,7 @@ Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 
 ## ステップ3: 段落のKeepWithNextを設定する
 
-表がページをまたいで分割されないようにするには、`KeepWithNext`最後の行の最後の段落を除く、表内の各段落のプロパティ。
+表がページをまたいで分割されないようにするには、`KeepWithNext`最後の行の最後の段落を除く、表の各段落のプロパティ。
 
 ```csharp
 foreach (Cell cell in table.GetChildNodes(NodeType.Cell, true))
@@ -67,7 +67,7 @@ foreach (Cell cell in table.GetChildNodes(NodeType.Cell, true))
 
 ## ステップ4: ドキュメントを保存する
 
-最後に、更新されたドキュメントを保存します。これにより変更が適用され、テーブルが 1 ページにまとめられるようになります。
+最後に、更新されたドキュメントを保存します。これにより、変更が適用され、表が 1 ページにまとめられるようになります。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");

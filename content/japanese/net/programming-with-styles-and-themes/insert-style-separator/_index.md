@@ -19,9 +19,9 @@ Aspose.Words for .NET を使用して Word 文書をプログラムで操作す�
    
 2. 開発環境: Visual Studio などの .NET 開発環境が設定されていることを確認します。
 
-3. 基礎知識: C# と .NET でのライブラリの使用方法に関する基本的な理解が役立ちます。
+3. 基礎知識: C# の基本的な理解と .NET でのライブラリの使用方法が役立ちます。
 
-4.  Asposeアカウント: サポート、購入、無料トライアルの取得については、[Asposeの購入ページ](https://purchase.aspose.com/buy)または[一時ライセンスページ](https://purchase.aspose.com/temporary-license/).
+4.  Asposeアカウント: サポート、購入、無料トライアルの取得については、こちらをご覧ください。[Asposeの購入ページ](https://purchase.aspose.com/buy)または[一時ライセンスページ](https://purchase.aspose.com/temporary-license/).
 
 ## 名前空間のインポート
 
@@ -54,7 +54,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 見出し: 新しい段落スタイルの作成とカスタマイズ
 
-説明: 段落に新しいスタイルを定義します。このスタイルは、Word が提供する標準スタイルとは異なる方法でテキストをフォーマットするために使用されます。
+説明: 段落に新しいスタイルを定義します。このスタイルは、Word が提供する標準スタイルとは異なるテキストの書式設定に使用されます。
 
 ```csharp
 Style paraStyle = builder.Document.Styles.Add(StyleType.Paragraph, "MyParaStyle");

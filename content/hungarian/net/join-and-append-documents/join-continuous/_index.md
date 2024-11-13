@@ -38,7 +38,7 @@ Először is be kell állítanunk a könyvtárat, ahol a dokumentumokat tárolju
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a tényleges elérési úttal, ahol a dokumentumokat tárolják.
+ Cserélje ki`"YOUR DOCUMENT DIRECTORY"` azzal a tényleges elérési úttal, ahol a dokumentumokat tárolják.
 
 ## 2. lépés: Töltse be a forrás- és céldokumentumot
 
@@ -85,7 +85,7 @@ Győződjön meg arról, hogy az elérési út és a fájlnév megfelel az Ön i
 
 ## Következtetés
 
-És megvan! Néhány sornyi kóddal sikeresen egyesített két Word-dokumentumot egyetlen folyamatos dokumentummá az Aspose.Words for .NET segítségével. Ez a folyamat nem csak egyszerű, hanem rendkívül hatékony is, biztosítva, hogy a dokumentumok megőrizzék eredeti formázásukat.
+És megvan! Néhány sornyi kóddal sikeresen egyesített két Word-dokumentumot egy folyamatos dokumentummá az Aspose.Words for .NET segítségével. Ez a folyamat nem csak egyszerű, hanem rendkívül hatékony is, biztosítva, hogy a dokumentumok megőrizzék eredeti formázásukat.
 
 ## GYIK
 

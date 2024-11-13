@@ -14,6 +14,7 @@ Dessa handledningar erbjuder tydliga och detaljerade instruktioner om hur du arb
 {{% /alert %}}
 
 Det här är länkar till några användbara resurser:
+- [AI-driven dokumentbearbetning](./net/ai-powered-document-processing/)
 - [Tillämpa licens](./net/apply-license/)   
 - [Aktivera OpenType-funktioner](./net/enable-opentype-features/)   
 - [Arbeta med kommentarer](./net/working-with-comments/)   

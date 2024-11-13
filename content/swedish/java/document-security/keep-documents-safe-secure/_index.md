@@ -10,7 +10,7 @@ url: /sv/java/document-security/keep-documents-safe-secure/
 
 I denna digitala tidsålder, där information är nyckeln, är det av yttersta vikt att hålla dina dokument säkra. Oavsett om det är personliga filer, affärsdokument eller konfidentiella data, är det avgörande att skydda dem från obehörig åtkomst och potentiella hot. I den här omfattande guiden går vi igenom processen för att säkra dina dokument med Aspose.Words för Java, ett kraftfullt ordbehandlings- och dokumentmanipuleringsbibliotek.
 
-## 1. Inledning
+## 1. Introduktion
 
 denna snabba digitala värld har säkerheten för elektroniska dokument blivit en högsta prioritet för både privatpersoner och företag. Dataintrång och cyberattacker har väckt oro för känslig informations konfidentialitet och integritet. Aspose.Words för Java kommer till undsättning genom att tillhandahålla en omfattande uppsättning funktioner för att säkerställa att dina dokument förblir säkra från obehörig åtkomst.
 

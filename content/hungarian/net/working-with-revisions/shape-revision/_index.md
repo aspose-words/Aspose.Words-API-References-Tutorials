@@ -15,9 +15,9 @@ Word-dokumentumok programozott szerkesztése ijesztő feladat lehet, különöse
 
 Mielőtt belemerülnénk a kódba, győződjön meg arról, hogy mindennel rendelkezik, amire szüksége van:
 
--  Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van az Aspose.Words könyvtár. Tudod[töltse le itt](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Győződjön meg arról, hogy telepítve van az Aspose.Words könyvtár. Megteheti[töltse le itt](https://releases.aspose.com/words/net/).
 - Fejlesztési környezet: Be kell állítania egy fejlesztői környezetet, például a Visual Studio-t.
-- A C# alapismerete: A C# programozási nyelv ismerete és az objektumorientált programozás alapfogalmai.
+- A C# alapismerete: A C# programozási nyelv ismerete és az objektum-orientált programozás alapfogalmai.
 - Word-dokumentum: Word-dokumentum, amellyel dolgozni kell, vagy létrehozhat egyet az oktatóprogram során.
 
 ## Névterek importálása
@@ -109,7 +109,7 @@ shapes = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().ToList();
 
 ## Következtetés
 
-És megvan! Sikeresen megtanulta, hogyan kell kezelni a Word dokumentumok alakváltozatait az Aspose.Words for .NET segítségével. Akár dokumentumsablonokat kezel, akár jelentéseket automatizál, akár egyszerűen nyomon követi a változásokat, ezek a készségek felbecsülhetetlen értékűek. Ennek a lépésenkénti útmutatónak a követésével nemcsak az alapokat sajátította el, hanem betekintést nyert a fejlettebb dokumentumkezelési technikákba is.
+És megvan! Sikeresen megtanulta, hogyan kell kezelni a Word dokumentumok alakváltozatait az Aspose.Words for .NET segítségével. Akár dokumentumsablonokat kezel, akár jelentéseket automatizál, akár egyszerűen nyomon követi a változásokat, ezek a készségek felbecsülhetetlen értékűek. A lépésenkénti útmutató követésével nemcsak az alapokat sajátította el, hanem betekintést nyert a fejlettebb dokumentumkezelési technikákba is.
 
 ## GYIK
 

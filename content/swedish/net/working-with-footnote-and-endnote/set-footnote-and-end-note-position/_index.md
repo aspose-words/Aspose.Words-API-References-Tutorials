@@ -37,7 +37,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- I den här koden, ersätt`"YOUR DOCUMENT DIRECTORY"`med den faktiska sökvägen där ditt dokument finns.
+ den här koden, ersätt`"YOUR DOCUMENT DIRECTORY"`med den faktiska sökvägen där ditt dokument finns.
 
 ## Steg 2: Ställ in fotnotsposition
 
@@ -93,4 +93,4 @@ Aspose.Words för .NET är designat för .NET-applikationer, men du kan använda
 
 ### Var kan jag hitta mer detaljerad dokumentation för Aspose.Words för .NET?
 
- Detaljerad dokumentation finns tillgänglig[här](https://reference.aspose.com/words/net/).
+Detaljerad dokumentation finns tillgänglig[här](https://reference.aspose.com/words/net/).

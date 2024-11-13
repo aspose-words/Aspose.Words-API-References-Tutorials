@@ -78,7 +78,7 @@ builder.Writeln("This is the 3rd paragraph.");
 
 ## GYIK
 
-### Továbbléphetek a dokumentum bármely bekezdésére?
+### A dokumentum bármely bekezdésére léphetek?
 Igen, bármelyik bekezdésre léphet az index megadásával.
 
 ### Mi van, ha a bekezdésindex kívül esik a tartományon?

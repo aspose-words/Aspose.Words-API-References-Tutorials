@@ -18,7 +18,7 @@ Aspose.Words for .NET を使用して Word ドキュメントの操作を強化�
 -  Aspose.Words for .NETライブラリ: ダウンロードできます[ここ](https://releases.aspose.com/words/net/).
 - Visual Studio: 最新バージョンであればどれでも構いません。
 - C# の基本知識: このチュートリアルでは、C# プログラミングの基礎を理解していることを前提としています。
--  Aspose.Words ライセンス: 一時ライセンスを取得する[ここ](https://purchase.aspose.com/temporary-license/)持っていない場合。
+-  Aspose.Words ライセンス: 一時ライセンスを取得する[ここ](https://purchase.aspose.com/temporary-license/)持っていない場合は。
 
 ## 名前空間のインポート
 
@@ -66,7 +66,7 @@ Document doc = new Document();
 2. ドキュメントの最初の段落を取得します。
 
 ```csharp
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+Paragraph para = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
 これにより、作業する段落が確保されます。

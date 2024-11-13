@@ -1,38 +1,38 @@
 ---
-title: Trzymajcie razem stół
-linktitle: Trzymajcie razem stół
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak zapobiec dzieleniu tabel między stronami w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem, aby zachować profesjonalne i czytelne dokumenty.
+title: Trzymaj stół razem
+linktitle: Trzymaj stół razem
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak zapobiec dzieleniu tabel na strony w dokumentach Word za pomocą Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem, aby zachować profesjonalne, czytelne dokumenty.
 type: docs
 weight: 10
 url: /pl/net/programming-with-tables/keep-table-together/
 ---
 ## Wstęp
 
-Czy kiedykolwiek czułeś się sfrustrowany, gdy tabela w dokumencie programu Word została podzielona na dwie strony? To tak, jakby starannie ułożone informacje nagle zdecydowały się zrobić sobie przerwę w połowie! Umieszczenie tabel razem na jednej stronie ma kluczowe znaczenie dla czytelności i prezentacji. Niezależnie od tego, czy chodzi o raport, propozycję projektu, czy po prostu dokument osobisty, podział tabel może być dość irytujący. Na szczęście dla nas, Aspose.Words dla .NET ma sprytny sposób na rozwiązanie tego problemu. W tym samouczku omówimy kroki, które pozwolą zachować stoły w stanie nienaruszonym i ostrym. Zanurzmy się!
+Czy kiedykolwiek byłeś sfrustrowany, gdy tabela w dokumencie Worda dzieliła się na dwie strony? To tak, jakby Twoje starannie rozplanowane informacje nagle postanowiły zrobić sobie przerwę w połowie! Utrzymywanie tabel razem na jednej stronie jest kluczowe dla czytelności i prezentacji. Niezależnie od tego, czy chodzi o raport, propozycję projektu, czy po prostu dokument osobisty, rozdzielenie tabel może być dość uciążliwe. Na szczęście dla nas, Aspose.Words dla .NET ma sprytny sposób na rozwiązanie tego problemu. W tym samouczku przejdziemy przez kroki, aby zachować tabele nienaruszone i wyglądające ostro. Zanurzmy się!
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zaczniemy, upewnij się, że masz następujące elementy:
+Zanim zaczniemy, upewnij się, że masz następujące rzeczy:
 
-1.  Aspose.Words dla .NET - Jeśli jeszcze go nie zainstalowałeś, możesz go pobrać ze strony[Tutaj](https://releases.aspose.com/words/net/).
-2. Dokument programu Word z tabelą — będziemy pracować z przykładowym dokumentem zawierającym tabelę obejmującą wiele stron.
-3. Podstawowa znajomość języka C# — w tym samouczku założono, że masz podstawową wiedzę na temat programowania w języku C#.
+1.  Aspose.Words dla .NET — jeśli jeszcze go nie zainstalowałeś, możesz go pobrać ze strony[Tutaj](https://releases.aspose.com/words/net/).
+2. Dokument programu Word zawierający tabelę — będziemy pracować z przykładowym dokumentem zawierającym tabelę rozciągającą się na wiele stron.
+3. Podstawowa wiedza o języku C# — w tym samouczku zakładamy, że posiadasz podstawową wiedzę na temat programowania w języku C#.
 
 ## Importuj przestrzenie nazw
 
-Na początek zaimportujmy niezbędne przestrzenie nazw. To da nam dostęp do klas i metod, których potrzebujemy z Aspose.Words dla .NET.
+Najpierw zaimportujmy niezbędne przestrzenie nazw. To da nam dostęp do klas i metod, których potrzebujemy z Aspose.Words dla .NET.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Podzielmy proces na łatwe i zrozumiałe etapy. Zaczniemy od załadowania naszego dokumentu, a zakończymy zapisaniem zaktualizowanego dokumentu w miejscu, w którym tabela pozostanie razem.
+Podzielmy proces na łatwe, przyswajalne kroki. Zaczniemy od załadowania naszego dokumentu i skończymy na zapisaniu zaktualizowanego dokumentu, w którym tabela pozostaje razem.
 
 ## Krok 1: Załaduj dokument
 
- Aby pracować z dokumentem Word, musimy go najpierw załadować. Skorzystamy z`Document` klasa do tego.
+ Aby pracować z dokumentem Word, najpierw musimy go załadować. Użyjemy`Document` klasa za to.
 
 ```csharp
 // Ścieżka do katalogu dokumentów
@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "Table spanning two pages.docx");
 
 ## Krok 2: Uzyskaj dostęp do tabeli
 
-Następnie musimy znaleźć stół, który chcemy trzymać razem. Zakładamy, że jest to pierwsza tabela w dokumencie.
+Następnie musimy uzyskać tabelę, którą chcemy zachować razem. Załóżmy, że jest to pierwsza tabela w dokumencie.
 
 ```csharp
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
@@ -51,7 +51,7 @@ Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 
 ## Krok 3: Ustaw KeepWithNext dla akapitów
 
- Aby zapobiec podziałowi tabeli na strony, musimy ustawić opcję`KeepWithNext` właściwość dla każdego akapitu w tabeli, z wyjątkiem ostatnich akapitów w ostatnim wierszu.
+ Aby zapobiec dzieleniu tabeli na strony, musimy ustawić`KeepWithNext` właściwość dla każdego akapitu w tabeli, z wyjątkiem ostatnich akapitów w ostatnim wierszu.
 
 ```csharp
 foreach (Cell cell in table.GetChildNodes(NodeType.Cell, true))
@@ -67,7 +67,7 @@ foreach (Cell cell in table.GetChildNodes(NodeType.Cell, true))
 
 ## Krok 4: Zapisz dokument
 
-Na koniec zapisujemy zaktualizowany dokument. Spowoduje to zastosowanie naszych zmian i sprawi, że tabela pozostanie razem na jednej stronie.
+Na koniec zapisujemy zaktualizowany dokument. Spowoduje to zastosowanie naszych zmian i upewnienie się, że tabela pozostanie na jednej stronie.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
@@ -75,21 +75,21 @@ doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 
 ## Wniosek
 
-masz to! Za pomocą zaledwie kilku wierszy kodu możesz zapobiec dzieleniu tabel na strony w dokumentach programu Word. To proste, ale skuteczne rozwiązanie sprawi, że Twoje stoły pozostaną schludne i profesjonalne, zwiększając czytelność dokumentów. Aspose.Words dla .NET sprawia, że obsługa takich problemów z formatowaniem jest dziecinnie prosta, pozwalając Ci skupić się na tworzeniu świetnej treści.
+masz to! Za pomocą zaledwie kilku linijek kodu możesz zapobiec rozdzielaniu tabel na strony w dokumentach Word. To proste, ale skuteczne rozwiązanie zapewnia, że tabele pozostaną schludne i profesjonalne, zwiększając czytelność dokumentów. Aspose.Words dla .NET sprawia, że radzenie sobie z takimi problemami formatowania jest dziecinnie proste, pozwalając Ci skupić się na tworzeniu świetnej treści.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Czy przy użyciu tej metody mogę zachować wiele tabel razem?  
-Tak, możesz zastosować tę samą logikę do wielu tabel, przeglądając każdą tabelę w dokumencie.
+### Czy mogę przechowywać wiele tabel razem, używając tej metody?  
+Tak, możesz zastosować tę samą logikę do wielu tabel, przechodząc przez każdą tabelę w dokumencie.
 
-### Co się stanie, jeśli moja tabela jest zbyt duża, aby zmieścić się na jednej stronie?  
-Jeśli tabela jest zbyt duża, aby zmieścić się na jednej stronie, nadal będzie obejmować wiele stron. Ta metoda gwarantuje, że mniejsze stoły pozostaną nienaruszone i nie zostaną rozdzielone.
+### Co zrobić, jeśli moja tabela jest za duża, aby zmieścić się na jednej stronie?  
+Jeśli tabela jest zbyt duża, aby zmieścić się na jednej stronie, nadal będzie rozciągać się na strony. Ta metoda zapewnia, że mniejsze tabele pozostaną nienaruszone bez dzielenia.
 
-### Czy istnieje sposób na zautomatyzowanie tego dla wszystkich tabel w dokumencie?  
- Tak, możesz przeglądać wszystkie tabele w dokumencie i zastosować`KeepWithNext` właściwość każdego akapitu.
+### Czy istnieje sposób, aby zautomatyzować tę czynność dla wszystkich tabel w dokumencie?  
+ Tak, możesz przejść przez wszystkie tabele w dokumencie i zastosować`KeepWithNext` właściwość do każdego akapitu.
 
 ### Czy potrzebuję płatnej licencji na Aspose.Words dla .NET?  
-Możesz zacząć od bezpłatnego okresu próbnego[Tutaj](https://releases.aspose.com/), ale dla pełnej funkcjonalności zalecana jest płatna licencja.
+Możesz rozpocząć bezpłatny okres próbny od[Tutaj](https://releases.aspose.com/), jednak w celu uzyskania pełnej funkcjonalności zaleca się wykupienie płatnej licencji.
 
-### Czy mogę zastosować inne formatowanie tabeli, zachowując ją razem?  
-Absolutnie! Możesz sformatować tabelę według potrzeb, upewniając się, że pozostaje ona razem na jednej stronie.
+### Czy mogę zastosować inne formatowanie w tabeli, nie naruszając jej spójności?  
+Oczywiście! Możesz sformatować swoją tabelę według potrzeb, zapewniając jednocześnie, że pozostanie na jednej stronie.

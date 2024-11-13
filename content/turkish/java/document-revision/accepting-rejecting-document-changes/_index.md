@@ -8,29 +8,29 @@ weight: 12
 url: /tr/java/document-revision/accepting-rejecting-document-changes/
 ---
 
-## Aspose.Words for Java'ya Giriş
+## Java için Aspose.Words'e Giriş
 
-Aspose.Words for Java, Java geliştiricilerinin Word belgelerini kolaylıkla oluşturmasına, yönetmesine ve dönüştürmesine olanak tanıyan güçlü bir kitaplıktır. Temel özelliklerinden biri, belge değişiklikleriyle çalışabilme yeteneğidir, bu da onu işbirliğine dayalı belge düzenleme için paha biçilmez bir araç haline getirir.
+Aspose.Words for Java, Java geliştiricilerinin Word belgelerini kolaylıkla oluşturmasını, düzenlemesini ve dönüştürmesini sağlayan sağlam bir kütüphanedir. Temel özelliklerinden biri, belge değişiklikleriyle çalışabilme yeteneğidir ve bu da onu işbirlikçi belge düzenleme için paha biçilmez bir araç haline getirir.
 
-## Belge Değişikliklerini Anlamak
+## Belge Değişikliklerini Anlama
 
-Uygulamaya geçmeden önce belge değişikliklerinin ne olduğunu anlayalım. Belge değişiklikleri, belge içinde yapılan düzenlemeleri, eklemeleri, silmeleri ve biçimlendirme değişikliklerini kapsar. Bu değişiklikler genellikle bir revizyon özelliği kullanılarak izlenir.
+Uygulamaya dalmadan önce, belge değişikliklerinin ne olduğunu anlayalım. Belge değişiklikleri, bir belge içinde yapılan düzenlemeleri, eklemeleri, silmeleri ve biçimlendirme değişikliklerini kapsar. Bu değişiklikler genellikle bir revizyon özelliği kullanılarak izlenir.
 
-## Belge Yükleme
+## Bir Belgeyi Yükleme
 
-Başlamak için izlenen değişiklikleri içeren bir Word belgesi yüklemeniz gerekir. Aspose.Words for Java bunu yapmanın basit bir yolunu sunar:
+Başlamak için, izlenen değişiklikleri içeren bir Word belgesi yüklemeniz gerekir. Java için Aspose.Words bunu yapmanın basit bir yolunu sunar:
 
 ```java
-// Belgeyi yükleyin
+// Belgeyi yükle
 Document doc = new Document("document_with_changes.docx");
 ```
 
-## Belge Değişikliklerini İnceleme
+## Belge Değişikliklerinin Gözden Geçirilmesi
 
-Belgeyi yükledikten sonra değişiklikleri gözden geçirmeniz önemlidir. Hangi değişikliklerin yapıldığını görmek için revizyonları yineleyebilirsiniz:
+Belgeyi yükledikten sonra değişiklikleri gözden geçirmeniz önemlidir. Hangi değişikliklerin yapıldığını görmek için revizyonlar arasında yineleme yapabilirsiniz:
 
 ```java
-// Revizyonlar yoluyla yineleme
+// Revizyonları yineleyin
 for (Revision revision : doc.getRevisions()) {
     // Revizyon ayrıntılarını görüntüle
     System.out.println("Revision Type: " + revision.getRevisionType());
@@ -40,63 +40,63 @@ for (Revision revision : doc.getRevisions()) {
 
 ## Değişiklikleri Kabul Etme
 
-Değişiklikleri kabul etmek, bir belgenin son haline getirilmesinde kritik bir adımdır. Aspose.Words for Java, tüm revizyonları veya belirli revizyonları kabul etmeyi kolaylaştırır:
+Değişiklikleri kabul etmek, bir belgeyi sonlandırmada kritik bir adımdır. Aspose.Words for Java, tüm revizyonları veya belirli olanları kabul etmeyi kolaylaştırır:
 
 ```java
-// Tüm düzeltmeleri kabul et
+// Tüm revizyonları kabul et
 doc.acceptAllRevisions();
 
-// Dizine göre belirli bir revizyonu kabul edin
+// Dizin tarafından belirli bir revizyonu kabul et
 doc.acceptRevision(0);
 ```
 
 ## Değişiklikleri Reddetme
 
-Bazı durumlarda belirli değişiklikleri reddetmeniz gerekebilir. Aspose.Words for Java, gerektiğinde revizyonları reddetme esnekliği sağlar:
+Bazı durumlarda, belirli değişiklikleri reddetmeniz gerekebilir. Aspose.Words for Java, gerektiğinde revizyonları reddetme esnekliği sağlar:
 
 ```java
-// Tüm düzeltmeleri reddet
+// Tüm revizyonları reddet
 doc.rejectAllRevisions();
 
-// Belirli bir revizyonu dizine göre reddetme
+// Dizin tarafından belirli bir revizyonu reddedin
 doc.rejectRevision(1);
 ```
 
 ## Belgeyi Kaydetme
 
-Değişiklikleri kabul ettikten veya reddettikten sonra belgeyi istenen değişikliklerle kaydetmek çok önemlidir:
+Değişiklikleri kabul ettikten veya reddettikten sonra, belgeyi istenilen değişikliklerle kaydetmek çok önemlidir:
 
 ```java
 // Değiştirilen belgeyi kaydet
 doc.save("document_with_accepted_changes.docx");
 ```
 
-## Süreci Otomatikleştirme
+## Sürecin Otomatikleştirilmesi
 
-Süreci daha da kolaylaştırmak için, gözden geçirenlerin yorumları veya revizyon türleri gibi belirli kriterlere göre değişikliklerin kabul edilmesini veya reddedilmesini otomatikleştirebilirsiniz. Bu, daha verimli bir belge iş akışı sağlar.
+Süreci daha da kolaylaştırmak için, gözden geçiren yorumları veya revizyon türleri gibi belirli ölçütlere göre değişikliklerin kabulünü veya reddini otomatikleştirebilirsiniz. Bu, daha verimli bir belge iş akışı sağlar.
 
 ## Çözüm
 
-Sonuç olarak, Aspose.Words for Java kullanarak belge değişikliklerini kabul etme ve reddetme sanatında ustalaşmak, belge işbirliği deneyiminizi önemli ölçüde geliştirebilir. Bu güçlü kitaplık süreci basitleştirerek belgeleri kolaylıkla incelemenize, değiştirmenize ve sonlandırmanıza olanak tanır.
+Sonuç olarak, Aspose.Words for Java kullanarak belge değişikliklerini kabul etme ve reddetme sanatında ustalaşmak, belge işbirliği deneyiminizi önemli ölçüde iyileştirebilir. Bu güçlü kitaplık, süreci basitleştirerek belgeleri kolayca incelemenize, değiştirmenize ve sonlandırmanıza olanak tanır.
 
-## SSS'ler
+## SSS
 
 ### Belgede belirli bir değişikliği kimin yaptığını nasıl belirleyebilirim?
 
- Her revizyonun yazar bilgilerine aşağıdaki düğmeyi kullanarak ulaşabilirsiniz:`getAuthor` konusundaki yöntem`Revision` nesne.
+ Her revizyon için yazar bilgilerine şurayı kullanarak ulaşabilirsiniz:`getAuthor` yöntem üzerinde`Revision` nesne.
 
 ### Belgede izlenen değişikliklerin görünümünü özelleştirebilir miyim?
 
-Evet, revizyonlara ilişkin biçimlendirme seçeneklerini değiştirerek izlenen değişikliklerin görünümünü özelleştirebilirsiniz.
+Evet, revizyonların biçimlendirme seçeneklerini değiştirerek izlenen değişikliklerin görünümünü özelleştirebilirsiniz.
 
-### Aspose.Words for Java farklı Word belge formatlarıyla uyumlu mu?
+### Aspose.Words for Java farklı Word belge formatlarıyla uyumlu mudur?
 
-Evet, Aspose.Words for Java, DOCX, DOC, RTF ve daha fazlası dahil çok çeşitli Word belge formatlarını destekler.
+Evet, Aspose.Words for Java, DOCX, DOC, RTF ve daha fazlası dahil olmak üzere çok çeşitli Word belge biçimlerini destekler.
 
 ### Değişikliklerin kabulünü veya reddini geri alabilir miyim?
 
-Maalesef kabul edilen veya reddedilen değişiklikler Aspose.Words kütüphanesinde kolayca geri alınamaz.
+Maalesef, kabul edilen veya reddedilen değişikliklerin Aspose.Words kütüphanesi içerisinde kolayca geri alınması mümkün değildir.
 
-### Aspose.Words for Java hakkında daha fazla bilgi ve belgeyi nerede bulabilirim?
+### Aspose.Words for Java hakkında daha fazla bilgi ve dokümanı nerede bulabilirim?
 
- Ayrıntılı belgeler ve örnekler için şu adresi ziyaret edin:[Aspose.Words for Java API Referansı](https://reference.aspose.com/words/java/).
+ Ayrıntılı dokümantasyon ve örnekler için şu adresi ziyaret edin:[Aspose.Words for Java API Referansı](https://reference.aspose.com/words/java/).

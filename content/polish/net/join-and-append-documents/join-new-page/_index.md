@@ -1,22 +1,22 @@
 ---
 title: Dołącz do nowej strony
 linktitle: Dołącz do nowej strony
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak łączyć i dołączać dokumenty w programie Word przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, jak efektywnie łączyć dokumenty.
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak łączyć i dołączać dokumenty w programie Word za pomocą Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby skutecznie scalać dokumenty.
 type: docs
 weight: 10
 url: /pl/net/join-and-append-documents/join-new-page/
 ---
 ## Wstęp
 
-Podczas pracy z dużymi dokumentami lub łączenia wielu dokumentów w jeden zachowanie formatowania i zapewnienie przejrzystości ma kluczowe znaczenie. Aspose.Words dla .NET zapewnia potężne narzędzia do programowego manipulowania dokumentami programu Word, umożliwiając programistom efektywne wykonywanie złożonych zadań.
+Podczas pracy z dużymi dokumentami lub łączenia wielu dokumentów w jeden, zachowanie formatowania i zapewnienie przejrzystości jest kluczowe. Aspose.Words for .NET zapewnia potężne narzędzia do programowego manipulowania dokumentami Word, umożliwiając programistom wydajne wykonywanie złożonych zadań.
 
-## Warunki wstępne
+## Wymagania wstępne
 
 Przed rozpoczęciem tego samouczka upewnij się, że posiadasz następujące elementy:
-- Program Visual Studio zainstalowany na Twoim komputerze.
--  Aspose.Words dla biblioteki .NET. Można go pobrać z[Tutaj](https://releases.aspose.com/words/net/).
-- Podstawowa znajomość programowania w C# i środowisku .NET.
+- Na Twoim komputerze zainstalowano program Visual Studio.
+-  Biblioteka Aspose.Words dla .NET. Możesz ją pobrać z[Tutaj](https://releases.aspose.com/words/net/).
+- Podstawowa znajomość programowania w języku C# i środowiska .NET.
 
 ## Importuj przestrzenie nazw
 
@@ -27,11 +27,11 @@ using Aspose.Words;
 using System;
 ```
 
-Wykonaj poniższe kroki, aby połączyć i dołączyć dokumenty, upewniając się, że dołączona treść zaczyna się na nowej stronie:
+Aby połączyć i dodać dokumenty, wykonaj poniższe kroki, upewniając się, że dodawana treść zaczyna się na nowej stronie:
 
 ## Krok 1: Skonfiguruj swój projekt
 
-Zacznij od utworzenia nowej aplikacji konsolowej C# w programie Visual Studio. Zainstaluj pakiet Aspose.Words NuGet w swoim projekcie.
+Zacznij od utworzenia nowej aplikacji konsolowej C# w Visual Studio. Zainstaluj pakiet NuGet Aspose.Words w swoim projekcie.
 
 ## Krok 2: Załaduj dokumenty źródłowe i docelowe
 
@@ -48,13 +48,13 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Krok 3: Ustaw początek sekcji na nową stronę
 
-Ustaw początek pierwszej sekcji w dokumencie źródłowym tak, aby rozpoczynał się na nowej stronie:
+Ustaw początek pierwszej sekcji w dokumencie źródłowym tak, aby zaczynał się na nowej stronie:
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 ```
 
-Dzięki temu dołączona treść zacznie się na nowej stronie dokumentu docelowego.
+Dzięki temu dołączona treść zaczyna się na nowej stronie dokumentu docelowego.
 
 ## Krok 4: Dołącz dokument źródłowy do dokumentu docelowego
 
@@ -73,25 +73,25 @@ Zapisz zmodyfikowany dokument docelowy w nowym pliku:
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.JoinNewPage.docx");
 ```
 
-Spowoduje to zapisanie połączonego dokumentu z dołączoną treścią, zaczynając od nowej strony.
+Zapisuje połączony dokument z dołączoną zawartością, zaczynając od nowej strony.
 
 ## Wniosek
 
-W tym samouczku nauczyliśmy się, jak łączyć i dołączać dokumenty do pliku Word za pomocą Aspose.Words dla .NET. Wykonując poniższe kroki, możesz efektywnie scalić wiele dokumentów, upewniając się, że dołączona treść zaczyna się na nowej stronie, zachowując oryginalne formatowanie.
+W tym samouczku nauczyliśmy się, jak łączyć i dołączać dokumenty w pliku Word za pomocą Aspose.Words dla .NET. Wykonując te kroki, możesz sprawnie scalić wiele dokumentów, zapewniając jednocześnie, że dołączana zawartość zaczyna się na nowej stronie, zachowując oryginalne formatowanie.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
 ### Czy mogę dołączyć więcej niż dwa dokumenty za pomocą Aspose.Words dla .NET?
 Tak, możesz dołączać wiele dokumentów sekwencyjnie, powtarzając operację dołączania dla każdego dokumentu.
 
-### Jak mogę poradzić sobie z konfliktami formatowania dokumentów podczas dołączania?
-Aspose.Words zapewnia różne tryby importu do obsługi konfliktów formatowania, takich jak zachowywanie formatowania źródłowego lub używanie formatowania docelowego.
+### Jak poradzić sobie z konfliktami formatowania dokumentów podczas dołączania?
+Aspose.Words udostępnia różne tryby importowania umożliwiające obsługę konfliktów formatowania, takie jak zachowanie formatowania źródłowego lub użycie formatowania docelowego.
 
-### Czy Aspose.Words obsługuje dołączanie dokumentów w różnych językach i kodowaniach?
-Tak, Aspose.Words obsługuje dołączanie dokumentów niezależnie od języka i kodowania, zapewniając bezproblemową integrację.
+### Czy Aspose.Words obsługuje dołączanie dokumentów w różnych językach lub z różnymi kodowaniami?
+Tak, Aspose.Words obsługuje dołączanie dokumentów niezależnie od języka i kodowania, co zapewnia bezproblemową integrację.
 
 ### Czy można dołączać dokumenty zawierające makra lub pola formularzy?
-Aspose.Words obsługuje dołączanie dokumentów z makrami i polami formularzy, zachowując ich funkcjonalność w scalonym dokumencie.
+Aspose.Words obsługuje dołączanie do dokumentów makr i pól formularzy, zachowując ich funkcjonalność w scalonym dokumencie.
 
 ### Czy mogę zautomatyzować zadania dołączania dokumentów w procesie wsadowym za pomocą Aspose.Words?
-Aspose.Words dla .NET umożliwia automatyzację zadań dołączania dokumentów w procesach wsadowych, zwiększając produktywność w zarządzaniu dokumentami.
+Aspose.Words for .NET umożliwia automatyzację zadań dołączania dokumentów w procesach wsadowych, zwiększając produktywność w zarządzaniu dokumentami.

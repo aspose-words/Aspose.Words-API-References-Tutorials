@@ -16,7 +16,7 @@ url: /hu/net/programming-with-document-options-and-settings/document-page-setup/
 Mielőtt belemerülnénk az apró kavicsba, győződjünk meg arról, hogy mindennel megvan, amire szüksége van:
 
 -  Aspose.Words for .NET: Letöltheti[itt](https://releases.aspose.com/words/net/).
--  Érvényes licenc: megvásárolhat egyet[itt](https://purchase.aspose.com/buy) vagy ideiglenes engedélyt szerezni[itt](https://purchase.aspose.com/temporary-license/).
+-  Érvényes licenc: megvásárolhat egyet[itt](https://purchase.aspose.com/buy) vagy szerezzen ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).
 - A C# programozás alapvető ismerete: Ne aggódjon, egyszerűnek és egyértelműnek fogom tartani.
 - Integrált fejlesztői környezet (IDE): A Visual Studio jó választás.
 
@@ -94,4 +94,4 @@ Igen, ideiglenes licenccel használhatod, amit megszerezhetsz[itt](https://purch
 A nyelvek széles skáláját támogatja, beleértve az ázsiai nyelveket, például a kínait és a japánt.
 
 ### Hol találok részletesebb dokumentációt?
- A részletes dokumentáció elérhető[itt](https://reference.aspose.com/words/net/).
+ részletes dokumentáció elérhető[itt](https://reference.aspose.com/words/net/).

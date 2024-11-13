@@ -189,7 +189,7 @@ Att bestämma dokumentformat i Aspose.Words för Java är avgörande för effekt
 
 ### Hur installerar jag Aspose.Words för Java?
 
- Du kan ladda ner Aspose.Words för Java från[här](https://releases.aspose.com/words/java/) och följ installationsanvisningarna.
+ Du kan ladda ner Aspose.Words för Java från[här](https://releases.aspose.com/words/java/)och följ installationsanvisningarna.
 
 ### Vilka är de dokumentformat som stöds?
 

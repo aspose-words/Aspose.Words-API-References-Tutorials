@@ -2,7 +2,7 @@
 title: ソース番号を保持
 linktitle: ソース番号を保持
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して書式設定を保持しながらドキュメントをインポートする方法を学びます。コード例を使用したステップバイステップのガイド。
+description: Aspose.Words for .NET を使用して書式を保持しながらドキュメントをインポートする方法を学びます。コード例を使用したステップバイステップのガイド。
 type: docs
 weight: 10
 url: /ja/net/join-and-append-documents/keep-source-numbering/
@@ -73,7 +73,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceNumbering.docx");
 
 ## 結論
 
-結論として、Aspose.Words for .NETを使用して書式設定を保持しながらドキュメントをインポートするのは簡単です。`NodeImporter`クラス。このメソッドにより、ドキュメントの元の外観と構造がシームレスに維持されます。
+結論として、Aspose.Words for .NETを使用して書式設定を保持しながらドキュメントをインポートすることは、`NodeImporter`クラス。このメソッドにより、ドキュメントの元の外観と構造がシームレスに維持されます。
 
 ## よくある質問
 

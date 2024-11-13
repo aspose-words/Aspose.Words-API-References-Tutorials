@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "WMF with image.docx");
 
 ## Steg 3: Konfigurera metafilåtergivningsalternativ
 
-Ställ in alternativen för metafilrendering för att bestämma hur metafiler (t.ex. WMF-filer) bearbetas under renderingen.
+Ställ in alternativen för rendering av metafiler för att bestämma hur metafiler (t.ex. WMF-filer) bearbetas under renderingen.
 
 ```csharp
 MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
@@ -62,7 +62,7 @@ MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 
 ## Steg 4: Konfigurera PDF-sparalternativ
 
-Ställ in PDF-sparalternativen, inkludera alternativen för metafilrendering. Detta säkerställer att det angivna renderingsbeteendet tillämpas när dokumentet sparas som en PDF.
+Ställ in alternativen för att spara PDF, inkludera alternativen för rendering av metafiler. Detta säkerställer att det angivna renderingsbeteendet tillämpas när dokumentet sparas som en PDF.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions

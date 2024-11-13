@@ -2,19 +2,19 @@
 title: Menggunakan Properti Dokumen di Aspose.Words untuk Java
 linktitle: Menggunakan Properti Dokumen
 second_title: API Pemrosesan Dokumen Java Aspose.Words
-description: Optimalkan manajemen dokumen dengan Aspose.Words untuk Java. Pelajari cara bekerja dengan properti dokumen, menambahkan metadata khusus, dan banyak lagi dalam tutorial komprehensif ini.
+description: Optimalkan manajemen dokumen dengan Aspose.Words untuk Java. Pelajari cara bekerja dengan properti dokumen, menambahkan metadata khusus, dan banyak lagi dalam tutorial lengkap ini.
 type: docs
 weight: 32
 url: /id/java/document-manipulation/using-document-properties/
 ---
 
-## Pengantar Properti Dokumen
+## Pengenalan Properti Dokumen
 
-Properti dokumen adalah bagian penting dari dokumen apa pun. Mereka memberikan informasi tambahan tentang dokumen itu sendiri, seperti judul, penulis, subjek, kata kunci, dan banyak lagi. Di Aspose.Words untuk Java, Anda dapat memanipulasi properti dokumen bawaan dan kustom.
+Properti dokumen merupakan bagian penting dari dokumen apa pun. Properti tersebut menyediakan informasi tambahan tentang dokumen itu sendiri, seperti judul, penulis, subjek, kata kunci, dan banyak lagi. Di Aspose.Words untuk Java, Anda dapat memanipulasi properti dokumen bawaan dan kustom.
 
 ## Menghitung Properti Dokumen
 
-### Properti Bawaan
+### Properti bawaan
 
 Untuk mengambil dan bekerja dengan properti dokumen bawaan, Anda dapat menggunakan cuplikan kode berikut:
 
@@ -30,11 +30,11 @@ public void enumerateProperties() throws Exception
 }
 ```
 
-Kode ini akan menampilkan nama dokumen dan properti bawaannya, termasuk properti seperti "Judul", "Penulis", dan "Kata Kunci".
+Kode ini akan menampilkan nama dokumen dan properti bawaan, termasuk properti seperti "Judul," "Penulis," dan "Kata Kunci."
 
 ### Properti Kustom
 
-Untuk bekerja dengan properti dokumen kustom, Anda dapat menggunakan cuplikan kode berikut:
+Untuk bekerja dengan properti dokumen khusus, Anda dapat menggunakan cuplikan kode berikut:
 
 ```java
 @Test
@@ -53,7 +53,7 @@ public void addCustomDocumentProperties() throws Exception
 }
 ```
 
-Cuplikan kode ini menunjukkan cara menambahkan properti dokumen kustom, termasuk nilai boolean, string, tanggal, nomor revisi, dan nilai numerik.
+Potongan kode ini menunjukkan cara menambahkan properti dokumen kustom, termasuk nilai boolean, string, tanggal, nomor revisi, dan nilai numerik.
 
 ## Menghapus Properti Dokumen
 
@@ -72,7 +72,7 @@ Kode ini menghapus properti khusus "Tanggal Resmi" dari dokumen.
 
 ## Mengonfigurasi Tautan ke Konten
 
-Dalam beberapa kasus, Anda mungkin ingin membuat link dalam dokumen Anda. Inilah cara Anda melakukannya:
+Dalam beberapa kasus, Anda mungkin ingin membuat tautan dalam dokumen Anda. Berikut cara melakukannya:
 
 ```java
 @Test
@@ -86,7 +86,7 @@ public void configuringLinkToContent() throws Exception
 
     CustomDocumentProperties customProperties = doc.getCustomDocumentProperties();
 
-    // Tambahkan properti tertaut ke konten.
+    // Tambahkan tautan ke properti konten.
     DocumentProperty customProperty = customProperties.addLinkToContent("Bookmark", "MyBookmark");
     customProperty = customProperties.get("Bookmark");
     boolean isLinkedToContent = customProperty.isLinkToContent();
@@ -95,11 +95,11 @@ public void configuringLinkToContent() throws Exception
 }
 ```
 
-Cuplikan kode ini menunjukkan cara membuat bookmark di dokumen Anda dan menambahkan properti dokumen khusus yang tertaut ke bookmark tersebut.
+Potongan kode ini memperagakan cara membuat penanda dalam dokumen Anda dan menambahkan properti dokumen kustom yang tertaut ke penanda tersebut.
 
 ## Konversi Antar Satuan Pengukuran
 
-Di Aspose.Words untuk Java, Anda dapat mengonversi satuan pengukuran dengan mudah. Berikut ini contoh cara melakukannya:
+Di Aspose.Words untuk Java, Anda dapat mengonversi satuan ukuran dengan mudah. Berikut contoh cara melakukannya:
 
 ```java
 @Test
@@ -119,11 +119,11 @@ public void convertBetweenMeasurementUnits() throws Exception
 }
 ```
 
-Cuplikan kode ini menetapkan berbagai margin dan jarak dalam inci dengan mengonversinya menjadi poin.
+Cuplikan kode ini menetapkan berbagai margin dan jarak dalam inci dengan mengubahnya menjadi poin.
 
 ## Menggunakan Karakter Kontrol
 
-Karakter kontrol dapat berguna ketika berhadapan dengan teks. Berikut cara mengganti karakter kontrol dalam teks Anda:
+Karakter kontrol dapat berguna saat menangani teks. Berikut cara mengganti karakter kontrol dalam teks Anda:
 
 ```java
 @Test
@@ -136,30 +136,30 @@ public void useControlCharacters()
 }
 ```
 
-Dalam contoh ini, kami mengganti carriage return (`\r`) dengan pengangkutan kembali diikuti dengan umpan baris (`\r\n`).
+Dalam contoh ini, kami mengganti carriage return (`\r`) dengan carriage return diikuti dengan line feed (`\r\n`).
 
 ## Kesimpulan
 
-Properti dokumen memainkan peran penting dalam mengelola dan mengatur dokumen Anda secara efektif di Aspose.Words untuk Java. Baik itu bekerja dengan properti bawaan, properti kustom, atau menggunakan karakter kontrol, Anda memiliki serangkaian alat yang dapat Anda gunakan untuk meningkatkan kemampuan manajemen dokumen Anda.
+Properti dokumen memainkan peran penting dalam mengelola dan mengatur dokumen Anda secara efektif di Aspose.Words untuk Java. Baik itu bekerja dengan properti bawaan, properti kustom, atau menggunakan karakter kontrol, Anda memiliki berbagai alat yang dapat digunakan untuk meningkatkan kemampuan manajemen dokumen Anda.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Bagaimana cara mengakses properti dokumen bawaan?
 
- Untuk mengakses properti dokumen bawaan di Aspose.Words untuk Java, Anda dapat menggunakan`getBuiltInDocumentProperties` metode pada`Document` obyek. Metode ini mengembalikan kumpulan properti bawaan yang dapat Anda ulangi.
+ Untuk mengakses properti dokumen bawaan di Aspose.Words untuk Java, Anda dapat menggunakan`getBuiltInDocumentProperties` metode pada`Document` objek. Metode ini mengembalikan kumpulan properti bawaan yang dapat Anda gunakan berulang-ulang.
 
-### Bisakah saya menambahkan properti dokumen khusus ke dokumen?
+### Bisakah saya menambahkan properti dokumen khusus ke suatu dokumen?
 
- Ya, Anda dapat menambahkan properti dokumen kustom ke dokumen menggunakan`CustomDocumentProperties` koleksi. Anda dapat menentukan properti khusus dengan berbagai tipe data, termasuk string, boolean, tanggal, dan nilai numerik.
+ Ya, Anda dapat menambahkan properti dokumen kustom ke dokumen menggunakan`CustomDocumentProperties` koleksi. Anda dapat menentukan properti kustom dengan berbagai tipe data, termasuk string, boolean, tanggal, dan nilai numerik.
 
-### Bagaimana cara menghapus properti dokumen khusus tertentu?
+### Bagaimana cara menghapus properti dokumen kustom tertentu?
 
  Untuk menghapus properti dokumen kustom tertentu, Anda dapat menggunakan`remove` metode pada`CustomDocumentProperties`koleksi, meneruskan nama properti yang ingin Anda hapus sebagai parameter.
 
 ### Apa tujuan menautkan ke konten dalam dokumen?
 
-Menautkan ke konten dalam dokumen memungkinkan Anda membuat referensi dinamis ke bagian tertentu dari dokumen. Hal ini dapat berguna untuk membuat dokumen interaktif atau referensi silang antar bagian.
+Dengan menautkan ke konten dalam dokumen, Anda dapat membuat referensi dinamis ke bagian tertentu dari dokumen. Ini dapat berguna untuk membuat dokumen interaktif atau referensi silang antarbagian.
 
-### Bagaimana cara mengonversi unit pengukuran yang berbeda di Aspose.Words untuk Java?
+### Bagaimana cara mengkonversi antar satuan pengukuran yang berbeda di Aspose.Words untuk Java?
 
- Anda dapat mengonversi antara unit pengukuran yang berbeda di Aspose.Words untuk Java dengan menggunakan`ConvertUtil` kelas. Ini menyediakan metode untuk mengonversi satuan seperti inci ke titik, titik ke sentimeter, dan banyak lagi.
+ Anda dapat mengonversi antara unit pengukuran yang berbeda di Aspose.Words untuk Java dengan menggunakan`ConvertUtil` kelas. Menyediakan metode untuk mengonversi satuan seperti inci ke poin, poin ke sentimeter, dan banyak lagi.

@@ -1,27 +1,27 @@
 ---
-title: Lista Zachowaj formatowanie źródła
-linktitle: Lista Zachowaj formatowanie źródła
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak scalać dokumenty programu Word, zachowując formatowanie, używając Aspose.Words dla .NET. Ten samouczek zawiera wskazówki krok po kroku dotyczące bezproblemowego scalania dokumentów.
+title: Lista Zachowaj formatowanie źródłowe
+linktitle: Lista Zachowaj formatowanie źródłowe
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak scalać dokumenty Word, zachowując formatowanie, korzystając z Aspose.Words dla .NET. Ten samouczek zawiera wskazówki krok po kroku dotyczące bezproblemowego scalania dokumentów.
 type: docs
 weight: 10
 url: /pl/net/join-and-append-documents/list-keep-source-formatting/
 ---
 ## Wstęp
 
-W tym samouczku odkryjemy, jak wykorzystać Aspose.Words dla .NET do łączenia dokumentów przy jednoczesnym zachowaniu formatowania źródłowego. Ta funkcja jest niezbędna w scenariuszach, w których kluczowe znaczenie ma zachowanie oryginalnego wyglądu dokumentów.
+W tym samouczku pokażemy, jak wykorzystać Aspose.Words dla .NET do scalania dokumentów przy zachowaniu formatowania źródłowego. Ta możliwość jest niezbędna w scenariuszach, w których zachowanie oryginalnego wyglądu dokumentów jest kluczowe.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Przed kontynuowaniem upewnij się, że spełnione są następujące wymagania wstępne:
+Zanim przejdziesz dalej, upewnij się, że spełnione są następujące wymagania wstępne:
 
-- Program Visual Studio zainstalowany na Twoim komputerze.
--  Zainstalowano Aspose.Words dla .NET. Można go pobrać z[Tutaj](https://releases.aspose.com/words/net/).
-- Podstawowa znajomość programowania w C# i środowisku .NET.
+- Na Twoim komputerze zainstalowano program Visual Studio.
+-  Aspose.Words dla .NET zainstalowany. Możesz go pobrać z[Tutaj](https://releases.aspose.com/words/net/).
+- Podstawowa znajomość programowania w języku C# i środowiska .NET.
 
 ## Importuj przestrzenie nazw
 
-Najpierw zaimportuj niezbędne przestrzenie nazw do projektu C#:
+Najpierw zaimportuj niezbędne przestrzenie nazw do swojego projektu C#:
 
 ```csharp
 using Aspose.Words;
@@ -29,7 +29,7 @@ using Aspose.Words;
 
 ## Krok 1: Skonfiguruj swój projekt
 
-Zacznij od utworzenia nowego projektu C# w programie Visual Studio. Upewnij się, że w Twoim projekcie znajduje się odwołanie do Aspose.Words for .NET. Jeśli nie, możesz go dodać za pomocą Menedżera pakietów NuGet.
+Zacznij od utworzenia nowego projektu C# w Visual Studio. Upewnij się, że Aspose.Words dla .NET jest przywoływany w Twoim projekcie. Jeśli nie, możesz dodać go za pomocą NuGet Package Manager.
 
 ## Krok 2: Zainicjuj zmienne dokumentu
 
@@ -44,15 +44,15 @@ Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 
 ## Krok 3: Skonfiguruj ustawienia sekcji
 
-Aby zachować ciągłość przepływu scalonego dokumentu, dostosuj początek sekcji:
+Aby zachować ciągłość przepływu w scalonym dokumencie, dostosuj początek sekcji:
 
 ```csharp
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
 ```
 
-## Krok 4: Połącz dokumenty
+## Krok 4: Scalanie dokumentów
 
-Dołącz treść dokumentu źródłowego (`srcDoc`) do dokumentu docelowego (`dstDoc`) zachowując oryginalne formatowanie:
+Dołącz zawartość dokumentu źródłowego (`srcDoc`) do dokumentu docelowego (`dstDoc`) zachowując oryginalne formatowanie:
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -68,21 +68,21 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.ListKeepSourceFormatting.docx");
 
 ## Wniosek
 
-Podsumowując, łączenie dokumentów przy zachowaniu ich oryginalnego formatowania jest proste dzięki Aspose.Words dla .NET. Ten samouczek poprowadził Cię przez cały proces, upewniając się, że scalony dokument zachowuje układ i styl dokumentu źródłowego.
+Podsumowując, scalanie dokumentów przy zachowaniu ich oryginalnego formatowania jest proste dzięki Aspose.Words dla .NET. Ten samouczek poprowadził Cię przez proces, zapewniając, że scalony dokument zachowuje układ i styl dokumentu źródłowego.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Co się stanie, jeśli moje dokumenty mają różne style?
-Aspose.Words z wdziękiem obsługuje różne style, zachowując oryginalne formatowanie tak wiernie, jak to możliwe.
+### Co zrobić, jeśli moje dokumenty mają różne style?
+Aspose.Words sprawnie obsługuje różne style, zachowując w jak największym stopniu oryginalne formatowanie.
 
-### Czy mogę łączyć dokumenty w różnych formatach?
-Tak, Aspose.Words obsługuje łączenie dokumentów w różnych formatach, w tym DOCX, DOC, RTF i innych.
+### Czy mogę scalać dokumenty w różnych formatach?
+Tak, Aspose.Words obsługuje scalanie dokumentów w różnych formatach, w tym DOCX, DOC, RTF i innych.
 
 ### Czy Aspose.Words jest kompatybilny z .NET Core?
-Tak, Aspose.Words w pełni obsługuje .NET Core, umożliwiając rozwój na wielu platformach.
+Tak, Aspose.Words w pełni obsługuje platformę .NET Core, co umożliwia tworzenie aplikacji na wielu platformach.
 
-### Jak efektywnie obsługiwać duże dokumenty?
-Aspose.Words zapewnia wydajne interfejsy API do manipulacji dokumentami, zoptymalizowane pod kątem wydajności nawet w przypadku dużych dokumentów.
+### Jak mogę wydajnie obsługiwać duże dokumenty?
+Aspose.Words udostępnia wydajne interfejsy API do manipulowania dokumentami, zoptymalizowane pod kątem wydajności nawet w przypadku obszernych dokumentów.
 
 ### Gdzie mogę znaleźć więcej przykładów i dokumentacji?
  Więcej przykładów i szczegółową dokumentację można znaleźć na stronie[Dokumentacja Aspose.Words](https://reference.aspose.com/words/net/).

@@ -18,7 +18,7 @@ Jämförelse av dokument innebär att man analyserar två dokument och identifie
 
 ## Grundläggande dokumentjämförelse
 
- Låt oss börja med grunderna för dokumentjämförelse. Vi kommer att använda två dokument,`docA`och`docB`och jämför dem.
+ Låt oss börja med grunderna för dokumentjämförelse. Vi kommer att använda två dokument,`docA` och`docB`och jämför dem.
 
 ```java
 Document docA = new Document("Your Directory Path" + "Document.docx");
@@ -27,7 +27,7 @@ docA.compare(docB, "user", new Date());
 System.out.println(docA.getRevisions().getCount() == 0 ? "Documents are equal" : "Documents are not equal");
 ```
 
- det här kodavsnittet laddar vi två dokument,`docA`och`docB` , och använd sedan`compare` metod för att jämföra dem. Vi anger författaren som "användare" och jämförelsen utförs. Slutligen kontrollerar vi om det finns revideringar, vilket indikerar skillnader mellan dokumenten.
+ det här kodavsnittet laddar vi två dokument,`docA` och`docB` , och använd sedan`compare` metod för att jämföra dem. Vi anger författaren som "användare" och jämförelsen utförs. Slutligen kontrollerar vi om det finns revideringar, vilket indikerar skillnader mellan dokumenten.
 
 ## Anpassa jämförelse med alternativ
 

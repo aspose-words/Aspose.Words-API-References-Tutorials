@@ -60,7 +60,6 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 最初のセルを 40 ポイントの固定幅で表に挿入します。これにより、表のサイズに関係なく、このセルの幅が常に 40 ポイントに維持されます。
 
 ```csharp
-
 //絶対サイズのセルを挿入します。
 builder.InsertCell();
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPoints(40);
@@ -112,7 +111,7 @@ doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
 
 ## 結論
 
-Aspose.Words for .NET で、好みの幅設定を使用してテーブルを作成するのは、利用可能なさまざまなサイズ設定オプションを理解すれば簡単です。固定、相対、自動のセル幅のいずれが必要であっても、Aspose.Words はさまざまなテーブル レイアウト シナリオを効率的に処理する柔軟性を提供します。このガイドで説明されている手順に従うことで、Word ドキュメント内のテーブルが適切に構造化され、視覚的に魅力的になることを保証できます。
+Aspose.Words for .NET で好みの幅設定を使用して表を作成するのは、利用可能なさまざまなサイズ設定オプションを理解すれば簡単です。固定、相対、自動のセル幅のいずれが必要であっても、Aspose.Words はさまざまな表レイアウト シナリオを効率的に処理する柔軟性を提供します。このガイドで説明されている手順に従うことで、Word 文書内の表が適切に構造化され、視覚的に魅力的になることを保証できます。
 
 ## よくある質問
 

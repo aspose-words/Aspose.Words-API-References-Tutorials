@@ -62,7 +62,7 @@ Itt létrehozunk egy új egyéni XML részt egyedi azonosítóval, és hozzáadu
 Az Egyéni XML rész hozzáadása után létrehozunk egy SDT-t az XML adatok megjelenítéséhez.
 
 ```csharp
-// Strukturált dokumentumcímke (SDT) létrehozása
+//Strukturált dokumentumcímke (SDT) létrehozása
 StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Block);
 doc.FirstSection.Body.AppendChild(sdt);
 ```

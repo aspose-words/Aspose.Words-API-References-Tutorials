@@ -2,28 +2,28 @@
 title: Word Belgesinde Yer İşareti Sonuna Taşı
 linktitle: Word Belgesinde Yer İşareti Sonuna Taşı
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'i kullanarak bir Word belgesinde yer işareti sonuna nasıl geçeceğinizi öğrenin. Hassas belge işleme için ayrıntılı, adım adım kılavuzumuzu izleyin.
+description: Aspose.Words for .NET kullanarak bir Word belgesinde yer imi sonuna nasıl geçeceğinizi öğrenin. Hassas belge düzenlemesi için ayrıntılı, adım adım kılavuzumuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/add-content-using-documentbuilder/move-to-bookmark-end/
 ---
 ## giriiş
 
-Merhaba kodlayıcı arkadaşım! Kendinizi hiç Word belgesi manipülasyonları ağına karışmış halde buldunuz mu, tam olarak bir yer işaretinin sonuna nasıl gideceğinizi ve hemen ardından içerik ekleyeceğinizi bulmaya çalışırken buldunuz mu? Peki, bugün şanslı günün! Word belgelerini bir profesyonel gibi kullanmanızı sağlayan güçlü bir kütüphane olan Aspose.Words for .NET'in derinliklerine dalıyoruz. Bu eğitim, bir yer iminin sonuna gitme ve oraya bir miktar metin ekleme adımlarında size yol gösterecektir. Haydi bu gösteriyi yollara taşıyalım!
+Merhaba, kodlayıcı arkadaşım! Hiç kendinizi Word belge düzenlemeleri ağında, bir yer imi sonuna nasıl tam olarak geçeceğinizi ve hemen ardından içerik ekleyeceğinizi anlamaya çalışırken buldunuz mu? Bugün şanslı gününüz! Word belgelerini bir profesyonel gibi yönetmenizi sağlayan güçlü bir kütüphane olan .NET için Aspose.Words'e derinlemesine dalıyoruz. Bu eğitim, bir yer imi sonuna nasıl geçeceğinizi ve oraya biraz metin nasıl ekleyeceğinizi adım adım anlatacak. Hadi bu gösteriyi yola koyalım!
 
-## Önkoşullar
+## Ön koşullar
 
 Başlamadan önce ihtiyacımız olan her şeye sahip olduğumuzdan emin olalım:
 
--  Visual Studio: Buradan indirebilirsiniz.[Burada](https://visualstudio.microsoft.com/).
--  Aspose.Words for .NET: Onu şuradan alın:[indirme bağlantısı](https://releases.aspose.com/words/net/).
--  Geçerli bir Aspose.Words lisansı: Geçici bir lisans alabilirsiniz[Burada](https://purchase.aspose.com/temporary-license/) eğer sende yoksa.
+-  Visual Studio: Buradan indirebilirsiniz[Burada](https://visualstudio.microsoft.com/).
+-  Aspose.Words for .NET: Buradan edinin[indirme bağlantısı](https://releases.aspose.com/words/net/).
+-  Geçerli bir Aspose.Words lisansı: Geçici bir lisans alabilirsiniz[Burada](https://purchase.aspose.com/temporary-license/) eğer yoksa.
 
-Ve elbette, bazı temel C# ve .NET bilgilerinin size çok faydası olacaktır.
+Ve tabii ki, C# ve .NET hakkında temel bilgilere sahip olmak çok işinize yarayacaktır.
 
 ## Ad Alanlarını İçe Aktar
 
-Öncelikle gerekli ad alanlarını içe aktarmamız gerekiyor. İşte bunu nasıl yapacağınız:
+İlk önce gerekli ad alanlarını içe aktarmamız gerekiyor. Bunu nasıl yapacağınız aşağıda açıklanmıştır:
 
 ```csharp
 using System;
@@ -31,27 +31,27 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Basit, değil mi? Şimdi işin özüne geçelim.
+Basit, değil mi? Şimdi konunun özüne inelim.
 
-Pekala, hadi bunu sindirilebilir adımlara ayıralım. Her adımın kendi başlığı ve ayrıntılı açıklaması olacaktır.
+Tamam, bunu sindirilebilir adımlara bölelim. Her adımın kendi başlığı ve detaylı açıklaması olacak.
 
-## 1. Adım: Projenizi Kurun
+## Adım 1: Projenizi Kurun
 
 ### Yeni Bir Proje Oluştur
 
- Visual Studio'yu açın ve yeni bir C# Konsol Uygulaması projesi oluşturun. Şöyle bir ad verin`BookmarkEndExample`. Bu eğitim için oyun alanımız burası olacak.
+ Visual Studio'yu açın ve yeni bir C# Konsol Uygulaması projesi oluşturun. Buna şu şekilde bir isim verin:`BookmarkEndExample`Bu eğitim için burası bizim oyun alanımız olacak.
 
-### Aspose.Words for .NET'i yükleyin
+### .NET için Aspose.Words'ü yükleyin
 
- Daha sonra Aspose.Words for .NET'i kurmanız gerekiyor. Bunu NuGet Paket Yöneticisi aracılığıyla yapabilirsiniz. Sadece arayın`Aspose.Words` ve kuruluma basın. Alternatif olarak Paket Yönetici Konsolunu kullanın:
+ Sonra, .NET için Aspose.Words'ü yüklemeniz gerekir. Bunu NuGet Paket Yöneticisi aracılığıyla yapabilirsiniz. Sadece şunu arayın`Aspose.Words` ve install'a basın. Alternatif olarak, Paket Yöneticisi Konsolunu kullanın:
 
 ```bash
 Install-Package Aspose.Words
 ```
 
-## 2. Adım: Belgenizi Yükleyin
+## Adım 2: Belgenizi Yükleyin
 
-Öncelikle bazı yer işaretlerini içeren bir Word belgesi oluşturun. Proje dizininize kaydedin. Aşağıda örnek bir belge yapısı verilmiştir:
+Öncelikle, bazı yer imleri içeren bir Word belgesi oluşturun. Bunu proje dizininize kaydedin. İşte örnek bir belge yapısı:
 
 ```plaintext
 [Bookmark: MyBookmark1]
@@ -60,17 +60,17 @@ Some text here...
 
 ### Belgeyi Projenize Yükleyin
 
-Şimdi bu belgeyi projemize yükleyelim.
+Şimdi bu dokümanı projemize yükleyelim.
 
 ```csharp
-// Belgeler dizininin yolu.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks.docx");
 ```
 
- Değiştirdiğinizden emin olun`YOUR DOCUMENT DIRECTORY` belgenizin kaydedildiği gerçek yolla.
+ Değiştirdiğinizden emin olun`YOUR DOCUMENT DIRECTORY` Belgenizin kaydedildiği gerçek yol ile.
 
-## 3. Adım: DocumentBuilder'ı başlatın
+## Adım 3: DocumentBuilder'ı Başlatın
 
 DocumentBuilder, Word belgelerini düzenlemek için sihirli değneğinizdir. Bir örnek oluşturalım:
 
@@ -78,21 +78,21 @@ DocumentBuilder, Word belgelerini düzenlemek için sihirli değneğinizdir. Bir
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## 4. Adım: Yer İşareti Sonuna Taşı
+## Adım 4: Yer İşareti Sonuna Taşı
 
 ### MoveToBookmark'ı Anlamak
 
-`MoveToBookmark`yöntemi, belgenizdeki belirli bir yer imine gitmenizi sağlar. Yöntem imzası:
+The`MoveToBookmark`method, belgeniz içinde belirli bir yer işaretine gitmenizi sağlar. Method imzası şudur:
 
 ```csharp
 bool MoveToBookmark(string bookmarkName, bool isBookmarkStart, bool isBookmarkEnd);
 ```
 
 - `bookmarkName`: Gitmek istediğiniz yer iminin adı.
-- `isBookmarkStart` : Eğer ayarlanmışsa`true`, yer iminin başına gider.
-- `isBookmarkEnd` : Eğer ayarlanmışsa`true`, yer iminin sonuna gider.
+- `isBookmarkStart` : Eğer ayarlanırsa`true`, yer iminin başına gider.
+- `isBookmarkEnd` : Eğer ayarlanırsa`true`, yer iminin sonuna gider.
 
-### MoveToBookmark Yöntemini Uygulama
+### MoveToBookmark Yöntemini Uygula
 
  Şimdi yer iminin sonuna geçelim`MyBookmark1`:
 
@@ -100,16 +100,16 @@ bool MoveToBookmark(string bookmarkName, bool isBookmarkStart, bool isBookmarkEn
 builder.MoveToBookmark("MyBookmark1", false, true);
 ```
 
-## Adım 5: Yer İşaretinin Sonuna Metin Ekle
+## Adım 5: Yer İşareti Sonuna Metin Ekle
 
 
-Yer iminin sonuna geldiğinizde metin veya başka herhangi bir içerik ekleyebilirsiniz. Basit bir metin satırı ekleyelim:
+Yer iminin sonuna geldiğinizde, metin veya başka herhangi bir içerik ekleyebilirsiniz. Basit bir metin satırı ekleyelim:
 
 ```csharp
 builder.Writeln("This is a bookmark.");
 ```
 
-İşte bu kadar! Başarıyla bir yer iminin sonuna taşındınız ve oraya metin eklediniz.
+Ve işte bu kadar! Bir yer iminin sonuna başarıyla taşındınız ve oraya metin eklediniz.
 
 ## Adım 6: Belgeyi Kaydedin
 
@@ -120,30 +120,30 @@ Son olarak değişikliklerinizi kaydetmeyi unutmayın:
 doc.Save(dataDir + "UpdatedBookmarks.docx");
 ```
 
- Artık güncellenen belgeyi açabilir ve "Bu bir yer işaretidir" metnini görebilirsiniz. hemen sonra`MyBookmark1`.
+ Artık güncellenen belgeyi açabilir ve hemen ardından "Bu bir yer imi." metnini görebilirsiniz.`MyBookmark1`.
 
 ## Çözüm
 
-İşte burada! Aspose.Words for .NET'i kullanarak bir Word belgesinde yer iminin sonuna nasıl gidileceğini az önce öğrendiniz. Bu güçlü özellik, belge işleme görevlerinizi çok daha verimli hale getirerek tonlarca zaman ve çabadan tasarruf etmenizi sağlayabilir. Unutmayın, pratik mükemmelleştirir. Bu beceride ustalaşmak için farklı yer imleri ve belge yapılarını denemeye devam edin.
+İşte oldu! Aspose.Words for .NET kullanarak bir Word belgesinde yer iminin sonuna nasıl gideceğinizi öğrendiniz. Bu güçlü özellik size tonlarca zaman ve emek kazandırabilir, belge işleme görevlerinizi çok daha verimli hale getirebilir. Unutmayın, pratik mükemmelleştirir. Bu yüzden, bu beceride ustalaşmak için farklı yer imleri ve belge yapıları ile denemeler yapmaya devam edin.
 
-## SSS'ler
+## SSS
 
-### 1. Bir yer iminin sonu yerine başına gidebilir miyim?
+### 1. Yer iminin sonuna gitmek yerine başına gidebilir miyim?
 
- Kesinlikle! Sadece ayarlayın`isBookmarkStart` parametre`true`Ve`isBookmarkEnd` ile`false` içinde`MoveToBookmark` Yöntem.
+ Kesinlikle! Sadece şunu ayarlayın`isBookmarkStart` parametreye`true` Ve`isBookmarkEnd` ile`false` içinde`MoveToBookmark` yöntem.
 
 ### 2. Yer imi adım yanlışsa ne olur?
 
- Yer imi adı yanlışsa veya mevcut değilse,`MoveToBookmark` yöntem geri dönecek`false`ve DocumentBuilder hiçbir konuma taşınmayacaktır.
+ Yer imi adı yanlışsa veya mevcut değilse,`MoveToBookmark` yöntem geri dönecek`false`ve DocumentBuilder hiçbir yere taşınmayacaktır.
 
-### 3. Yer iminin sonuna başka türde içerik ekleyebilir miyim?
+### 3. Yer imi kısmına başka türde içerikler ekleyebilir miyim?
 
- Evet, DocumentBuilder tablolar, resimler ve daha fazlası gibi çeşitli içerik türlerini eklemenize olanak tanır. Kontrol edin[dokümantasyon](https://reference.aspose.com/words/net/) daha fazla ayrıntı için.
+ Evet, DocumentBuilder tablolar, resimler ve daha fazlası gibi çeşitli içerik türlerini eklemenize olanak tanır. Kontrol edin[belgeleme](https://reference.aspose.com/words/net/) Daha detaylı bilgi için.
 
-### 4. Aspose.Words için nasıl geçici lisans alabilirim?
+### 4. Aspose.Words için geçici lisansı nasıl alabilirim?
 
- Geçici lisansı şu adresten alabilirsiniz:[Web sitesi](https://purchase.aspose.com/temporary-license/).
+ Geçici bir lisansı şuradan alabilirsiniz:[Aspose web sitesi](https://purchase.aspose.com/temporary-license/).
 
 ### 5. Aspose.Words for .NET ücretsiz mi?
 
-Aspose.Words for .NET ticari bir üründür, ancak ücretsiz deneme sürümünden yararlanabilirsiniz.[Web sitesi](https://releases.aspose.com/).
+Aspose.Words for .NET ticari bir üründür, ancak ücretsiz deneme sürümünü şu adresten edinebilirsiniz:[Aspose web sitesi](https://releases.aspose.com/).

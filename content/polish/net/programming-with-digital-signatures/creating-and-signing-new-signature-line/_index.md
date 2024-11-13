@@ -1,24 +1,24 @@
 ---
 title: Tworzenie i podpisywanie nowej linii podpisu
 linktitle: Tworzenie i podpisywanie nowej linii podpisu
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak utworzyć i podpisać cyfrowo linię podpisu w dokumencie programu Word przy użyciu Aspose.Words dla .NET, korzystając z tego samouczka krok po kroku. Idealny do automatyzacji dokumentów.
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak utworzyć i cyfrowo podpisać linię podpisu w dokumencie Word za pomocą Aspose.Words dla .NET dzięki temu samouczkowi krok po kroku. Idealne do automatyzacji dokumentów.
 type: docs
 weight: 10
 url: /pl/net/programming-with-digital-signatures/creating-and-signing-new-signature-line/
 ---
 ## Wstęp
 
-Hej tam! Masz więc dokument Word i musisz dodać linię podpisu, a następnie podpisać go cyfrowo. Brzmi trudne? Zupełnie nie! Dzięki Aspose.Words dla .NET możesz to osiągnąć bezproblemowo za pomocą zaledwie kilku linijek kodu. W tym samouczku przeprowadzimy Cię przez cały proces, od skonfigurowania środowiska po zapisanie dokumentu z nowym, błyszczącym podpisem. Gotowy? Zanurzmy się!
+Cześć! Masz więc dokument Word i musisz dodać linię podpisu, a następnie podpisać go cyfrowo. Brzmi skomplikowanie? Wcale nie! Dzięki Aspose.Words dla .NET możesz to osiągnąć bezproblemowo, używając zaledwie kilku linii kodu. W tym samouczku przeprowadzimy Cię przez cały proces, od skonfigurowania środowiska po zapisanie dokumentu z błyszczącym nowym podpisem. Gotowy? Zaczynajmy!
 
-## Warunki wstępne
+## Wymagania wstępne
 
 Zanim przejdziemy do kodu, upewnijmy się, że masz wszystko, czego potrzebujesz:
-1.  Aspose.Words dla .NET - Możesz[pobierz go tutaj](https://releases.aspose.com/words/net/).
-2. Środowisko programistyczne .NET — zdecydowanie zaleca się program Visual Studio.
-3. Dokument do podpisania — utwórz prosty dokument Word lub użyj istniejącego.
-4.  Plik certyfikatu — jest potrzebny w przypadku podpisów cyfrowych. Możesz użyć A`.pfx` plik.
-5. Obrazy do linii podpisu — opcjonalnie plik obrazu do podpisu.
+1.  Aspose.Words dla .NET — możesz[pobierz tutaj](https://releases.aspose.com/words/net/).
+2. Zdecydowanie zalecane jest środowisko programistyczne .NET — Visual Studio.
+3. Dokument do podpisania — utwórz prosty dokument Word lub wykorzystaj istniejący.
+4.  Plik certyfikatu – jest potrzebny do podpisów cyfrowych. Możesz użyć`.pfx` plik.
+5. Obrazy do wiersza podpisu – opcjonalnie plik obrazu podpisu.
 
 ## Importuj przestrzenie nazw
 
@@ -35,7 +35,7 @@ using Aspose.Words.Signing;
 
 ## Krok 1: Konfigurowanie katalogu dokumentów
 
-Każdy projekt wymaga dobrego początku. Ustawmy ścieżkę do katalogu dokumentów. Tutaj będą zapisywane i pobierane Twoje dokumenty.
+Każdy projekt potrzebuje dobrego początku. Ustawmy ścieżkę do katalogu dokumentów. To tutaj będą zapisywane i pobierane Twoje dokumenty.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -43,7 +43,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Krok 2: Tworzenie nowego dokumentu
 
-Teraz utwórzmy nowy dokument programu Word przy użyciu Aspose.Words. To będzie nasze płótno, na którym dodamy linię podpisu.
+Teraz utwórzmy nowy dokument Word za pomocą Aspose.Words. To będzie nasze płótno, w którym dodamy linię podpisu.
 
 ```csharp
 Document doc = new Document();
@@ -52,7 +52,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Krok 3: Wstawianie linii podpisu
 
- To tutaj dzieje się magia. Wstawiamy linię podpisu do naszego dokumentu za pomocą`DocumentBuilder` klasa.
+ Tutaj dzieje się magia. Wstawiamy linię podpisu do naszego dokumentu za pomocą`DocumentBuilder` klasa.
 
 ```csharp
 SignatureLine signatureLine = builder.InsertSignatureLine(new SignatureLineOptions()).SignatureLine;
@@ -60,7 +60,7 @@ SignatureLine signatureLine = builder.InsertSignatureLine(new SignatureLineOptio
 
 ## Krok 4: Zapisywanie dokumentu z linią podpisu
 
-Gdy linia podpisu jest już na swoim miejscu, musimy zapisać dokument. Jest to etap pośredni przed przystąpieniem do jego podpisania.
+Gdy linia podpisu jest już na miejscu, musimy zapisać dokument. Jest to krok pośredni przed przystąpieniem do jego podpisania.
 
 ```csharp
 doc.Save(dataDir + "SignDocuments.SignatureLine.docx");
@@ -68,7 +68,7 @@ doc.Save(dataDir + "SignDocuments.SignatureLine.docx");
 
 ## Krok 5: Konfigurowanie opcji podpisywania
 
-Teraz skonfigurujmy opcje podpisywania dokumentu. Obejmuje to określenie identyfikatora linii podpisu i obrazu, który ma zostać użyty.
+Teraz skonfigurujmy opcje podpisywania dokumentu. Obejmuje to określenie identyfikatora wiersza podpisu i obrazu, który ma zostać użyty.
 
 ```csharp
 SignOptions signOptions = new SignOptions
@@ -80,7 +80,7 @@ SignOptions signOptions = new SignOptions
 
 ## Krok 6: Ładowanie certyfikatu
 
-Podpisy cyfrowe wymagają certyfikatu. Tutaj ładujemy plik certyfikatu, który posłuży do podpisania dokumentu.
+Podpisy cyfrowe wymagają certyfikatu. Tutaj ładujemy plik certyfikatu, który będzie użyty do podpisania dokumentu.
 
 ```csharp
 CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", "aw");
@@ -88,7 +88,7 @@ CertificateHolder certHolder = CertificateHolder.Create(dataDir + "morzal.pfx", 
 
 ## Krok 7: Podpisanie dokumentu
 
- To jest ostatni krok. Używamy`DigitalSignatureUtil`klasie do podpisania dokumentu. Podpisany dokument zostanie zapisany pod nową nazwą.
+ To jest ostatni krok. Używamy`DigitalSignatureUtil`klasa do podpisania dokumentu. Podpisany dokument jest zapisywany pod nową nazwą.
 
 ```csharp
 DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
@@ -97,21 +97,21 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
 
 ## Wniosek
 
-I masz to! Wykonując te kroki, pomyślnie utworzyłeś nowy dokument Word, dodałeś linię podpisu i podpisałeś go cyfrowo za pomocą Aspose.Words dla .NET. To potężne narzędzie, dzięki któremu automatyzacja dokumentów jest dziecinnie prosta. Niezależnie od tego, czy masz do czynienia z umowami, porozumieniami czy jakimikolwiek formalnymi dokumentami, ta metoda zapewnia ich bezpieczne podpisanie i uwierzytelnienie.
+I masz to! Dzięki tym krokom udało Ci się utworzyć nowy dokument Word, dodać wiersz podpisu i podpisać go cyfrowo za pomocą Aspose.Words dla .NET. To potężne narzędzie, które sprawia, że automatyzacja dokumentów staje się dziecinnie prosta. Niezależnie od tego, czy masz do czynienia z kontraktami, umowami czy innymi formalnymi dokumentami, ta metoda zapewnia ich bezpieczne podpisanie i uwierzytelnienie.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Czy mogę użyć innych formatów obrazu w linii podpisu?
+### Czy mogę użyć innych formatów obrazu w podpisie?
 Tak, możesz używać różnych formatów obrazów, takich jak PNG, JPG, BMP itp.
 
-###  Czy konieczne jest użycie tzw`.pfx` file for the certificate?
- Tak,`.pfx` plik to powszechny format przechowywania informacji kryptograficznych, w tym certyfikatów i kluczy prywatnych.
+###  Czy konieczne jest użycie`.pfx` file for the certificate?
+ Tak,`.pfx` Plik jest popularnym formatem służącym do przechowywania informacji kryptograficznych, w tym certyfikatów i kluczy prywatnych.
 
-### Czy mogę dodać wiele linii podpisu w jednym dokumencie?
-Absolutnie! Można wstawić wiele wierszy podpisu, powtarzając krok wstawiania dla każdego podpisu.
+### Czy mogę dodać wiele wierszy podpisu w jednym dokumencie?
+Oczywiście! Możesz wstawić wiele wierszy podpisu, powtarzając krok wstawiania dla każdego podpisu.
 
-### Co się stanie, jeśli nie mam certyfikatu cyfrowego?
-Będziesz musiał uzyskać certyfikat cyfrowy od zaufanego urzędu certyfikacji lub wygenerować go za pomocą narzędzi takich jak OpenSSL.
+### Co zrobić, jeśli nie mam certyfikatu cyfrowego?
+Będziesz musiał uzyskać certyfikat cyfrowy od zaufanego urzędu certyfikacji lub wygenerować go przy użyciu narzędzi typu OpenSSL.
 
 ### Jak zweryfikować podpis cyfrowy w dokumencie?
-Możesz otworzyć podpisany dokument w programie Word i przejść do szczegółów podpisu, aby zweryfikować autentyczność i integralność podpisu.
+Możesz otworzyć podpisany dokument w programie Word i przejść do szczegółów podpisu, aby sprawdzić autentyczność i integralność podpisu.

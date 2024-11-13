@@ -1,50 +1,50 @@
 ---
-title: Ölçü Birimleri Arasında Dönüştürme
-linktitle: Ölçü Birimleri Arasında Dönüştürme
+title: Ölçüm Birimleri Arasında Dönüşüm
+linktitle: Ölçüm Birimleri Arasında Dönüşüm
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'te ölçü birimlerini nasıl dönüştüreceğinizi öğrenin. Belge kenar boşluklarını, üstbilgilerini ve altbilgilerini inç ve nokta cinsinden ayarlamak için adım adım kılavuzumuzu izleyin.
+description: Aspose.Words for .NET'te ölçü birimlerini nasıl dönüştüreceğinizi öğrenin. Belge kenar boşluklarını, üstbilgileri ve altbilgileri inç ve nokta cinsinden ayarlamak için adım adım kılavuzumuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-document-properties/convert-between-measurement-units/
 ---
 ## giriiş
 
-Selam! Aspose.Words for .NET kullanarak Word belgeleriyle çalışan bir geliştirici misiniz? Eğer öyleyse, genellikle kenar boşluklarını, üstbilgileri veya altbilgileri farklı ölçü birimlerinde ayarlamanız gerektiğini görebilirsiniz. Kitaplığın işlevlerine aşina değilseniz, inç ve nokta gibi birimler arasında dönüştürme yapmak zor olabilir. Bu kapsamlı eğitimde, Aspose.Words for .NET'i kullanarak ölçü birimleri arasında dönüştürme işlemi boyunca size rehberlik edeceğiz. Şimdi bu dönüşümlere dalalım ve basitleştirelim!
+Merhaba! Aspose.Words for .NET kullanarak Word belgeleriyle çalışan bir geliştirici misiniz? Öyleyse, sık sık farklı ölçü birimlerinde kenar boşlukları, üstbilgiler veya altbilgiler ayarlamanız gerekebilir. Kütüphanenin işlevlerine aşina değilseniz, inç ve nokta gibi birimler arasında dönüştürme yapmak zor olabilir. Bu kapsamlı eğitimde, Aspose.Words for .NET kullanarak ölçü birimleri arasında dönüştürme yapma sürecinde size rehberlik edeceğiz. Hadi başlayalım ve bu dönüştürmeleri basitleştirelim!
 
-## Önkoşullar
+## Ön koşullar
 
 Başlamadan önce aşağıdakilere sahip olduğunuzdan emin olun:
 
-1.  Aspose.Words for .NET Library: Henüz yapmadıysanız indirin[Burada](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET Kütüphanesi: Henüz yapmadıysanız indirin[Burada](https://releases.aspose.com/words/net/).
 2. Geliştirme Ortamı: Visual Studio veya herhangi bir .NET uyumlu IDE.
-3. Temel C# Bilgisi: C#'ın temellerini anlamak, kolayca takip etmenize yardımcı olacaktır.
-4.  Aspose Lisansı: İsteğe bağlıdır ancak tam işlevsellik için önerilir. Geçici lisans alabilirsiniz[Burada](https://purchase.aspose.com/temporary-license/).
+3. Temel C# Bilgisi: C# temellerini anlamak, konuyu kolayca takip etmenize yardımcı olacaktır.
+4.  Aspose Lisansı: İsteğe bağlı ancak tam işlevsellik için önerilir. Geçici bir lisans alabilirsiniz[Burada](https://purchase.aspose.com/temporary-license/).
 
 ## Ad Alanlarını İçe Aktar
 
-Öncelikle gerekli ad alanlarını içe aktarmanız gerekir. Bu, Aspose.Words tarafından sağlanan sınıflara ve yöntemlere erişim için çok önemlidir.
+Öncelikle gerekli ad alanlarını içe aktarmanız gerekir. Bu, Aspose.Words tarafından sağlanan sınıflara ve yöntemlere erişim için önemlidir.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Layout;
 ```
 
-Aspose.Words for .NET'te ölçü birimlerini dönüştürme sürecini inceleyelim. Belgenizin kenar boşluklarını ve mesafelerini ayarlamak ve özelleştirmek için bu ayrıntılı adımları izleyin.
+Aspose.Words for .NET'te ölçü birimlerini dönüştürme sürecini parçalara ayıralım. Belgenizin kenar boşluklarını ve mesafelerini ayarlamak ve özelleştirmek için şu ayrıntılı adımları izleyin.
 
-## 1. Adım: Yeni Bir Belge Oluşturun
+## Adım 1: Yeni Bir Belge Oluşturun
 
-Öncelikle Aspose.Words'ü kullanarak yeni bir belge oluşturmanız gerekiyor.
+Öncelikle Aspose.Words kullanarak yeni bir belge oluşturmanız gerekiyor.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Bu, yeni bir Word belgesini başlatır ve`DocumentBuilder` içerik oluşturmayı ve biçimlendirmeyi kolaylaştırmak için.
+ Bu, yeni bir Word belgesini ve bir`DocumentBuilder` İçerik oluşturma ve biçimlendirmeyi kolaylaştırmak.
 
-## Adım 2: Sayfa Yapısına Erişim
+## Adım 2: Sayfa Kurulumuna Erişim
 
- Kenar boşluklarını, üstbilgileri ve altbilgileri ayarlamak için`PageSetup` nesne.
+ Kenar boşluklarını, üstbilgileri ve altbilgileri ayarlamak için şuraya erişmeniz gerekir:`PageSetup` nesne.
 
 ```csharp
 PageSetup pageSetup = builder.PageSetup;
@@ -54,7 +54,7 @@ Bu, kenar boşlukları, üst bilgi mesafesi ve alt bilgi mesafesi gibi çeşitli
 
 ## Adım 3: İnçleri Noktalara Dönüştürün
 
- Aspose.Words varsayılan olarak ölçü birimi olarak noktaları kullanır. Kenar boşluklarını inç cinsinden ayarlamak için inçleri noktalara dönüştürmeniz gerekir.`ConvertUtil.InchToPoint` Yöntem.
+ Aspose.Words varsayılan olarak ölçüm birimi olarak noktaları kullanır. Kenar boşluklarını inç olarak ayarlamak için, inçleri şu şekilde kullanarak noktalara dönüştürmeniz gerekir:`ConvertUtil.InchToPoint` yöntem.
 
 ```csharp
 pageSetup.TopMargin = ConvertUtil.InchToPoint(1.0);
@@ -65,10 +65,10 @@ pageSetup.HeaderDistance = ConvertUtil.InchToPoint(0.2);
 pageSetup.FooterDistance = ConvertUtil.InchToPoint(0.2);
 ```
 
-İşte her satırın ne yaptığının bir dökümü:
-- Üst ve alt kenar boşluklarını 1 inç olarak ayarlar (noktalara dönüştürülür).
-- Sol ve sağ kenar boşluklarını 1,5 inç olarak ayarlar (noktalara dönüştürülür).
-- Üstbilgi ve altbilgi mesafelerini 0,2 inç (noktalara dönüştürülmüş) olarak ayarlar.
+Her satırın ne işe yaradığının dökümü şöyle:
+- Üst ve alt kenar boşluklarını 1 inç olarak ayarlar (noktaya dönüştürülür).
+- Sol ve sağ kenar boşluklarını 1,5 inç olarak ayarlar (noktaya dönüştürülür).
+- Üstbilgi ve altbilgi mesafelerini 0,2 inç olarak ayarlar (noktalara dönüştürülür).
 
 ## Adım 4: Belgeyi Kaydedin
 
@@ -78,25 +78,25 @@ Son olarak, tüm değişikliklerin uygulandığından emin olmak için belgenizi
 doc.Save("ConvertedDocument.docx");
 ```
 
-Bu, belgenizi belirtilen kenar boşlukları ve mesafelerle nokta cinsinden kaydeder.
+Bu, belgenizi belirtilen kenar boşlukları ve nokta cinsinden mesafelerle kaydeder.
 
 ## Çözüm
 
-Ve işte karşınızda! Aspose.Words for .NET'i kullanarak bir Word belgesindeki kenar boşluklarını ve mesafeleri başarıyla dönüştürüp ayarladınız. Bu adımları izleyerek çeşitli birim dönüşümlerini kolayca gerçekleştirebilir ve belge özelleştirme sürecinizi çok kolaylaştırabilirsiniz. Farklı ayarları denemeye devam edin ve Aspose.Words'ün sunduğu geniş işlevleri keşfedin. Mutlu kodlama!
+Ve işte oldu! Aspose.Words for .NET kullanarak bir Word belgesinde kenar boşluklarını ve mesafeleri başarıyla dönüştürdünüz ve ayarladınız. Bu adımları izleyerek, çeşitli birim dönüşümlerini kolayca halledebilir ve belge özelleştirme sürecinizi kolaylaştırabilirsiniz. Farklı ayarlarla denemeler yapmaya devam edin ve Aspose.Words'ün sunduğu geniş işlevleri keşfedin. İyi kodlamalar!
 
-## SSS'ler
+## SSS
 
-### Aspose.Words'ü kullanarak santimetre gibi diğer birimleri noktalara dönüştürebilir miyim?
- Evet, Aspose.Words aşağıdaki gibi yöntemler sağlar:`ConvertUtil.CmToPoint` santimetreyi noktaya dönüştürmek için.
+### Aspose.Words kullanarak santimetre gibi diğer birimleri puana dönüştürebilir miyim?
+ Evet, Aspose.Words şu yöntemleri sağlar:`ConvertUtil.CmToPoint` Santimetreyi noktaya dönüştürmek için.
 
-### Aspose.Words for .NET'i kullanmak için lisans gerekli midir?
-Aspose.Words'ü lisans olmadan kullanabilirsiniz ancak bazı gelişmiş özellikler kısıtlı olabilir. Lisans almak tam işlevsellik sağlar.
+### Aspose.Words for .NET'i kullanmak için lisans gerekli mi?
+Aspose.Words'ü lisans olmadan kullanabilirsiniz ancak bazı gelişmiş özellikler kısıtlanabilir. Lisans almak tam işlevselliği garanti eder.
 
 ### Aspose.Words for .NET'i nasıl yüklerim?
- adresinden indirebilirsiniz.[web sitesi](https://releases.aspose.com/words/net/) ve kurulum talimatlarını takip edin.
+ Bunu şuradan indirebilirsiniz:[web sitesi](https://releases.aspose.com/words/net/) ve kurulum talimatlarını izleyin.
 
-### Bir belgenin farklı bölümleri için farklı birimler ayarlayabilir miyim?
+### Bir belgenin farklı bölümleri için farklı birimler belirleyebilir miyim?
  Evet, farklı bölümler için kenar boşluklarını ve diğer ayarları özelleştirebilirsiniz.`Section` sınıf.
 
 ### Aspose.Words başka hangi özellikleri sunuyor?
- Aspose.Words, belge dönüştürme, adres-mektup birleştirme ve kapsamlı biçimlendirme seçenekleri dahil olmak üzere çok çeşitli özellikleri destekler. Kontrol edin[dokümantasyon](https://reference.aspose.com/words/net/) daha fazla ayrıntı için.
+ Aspose.Words, belge dönüştürme, posta birleştirme ve kapsamlı biçimlendirme seçenekleri dahil olmak üzere çok çeşitli özellikleri destekler.[belgeleme](https://reference.aspose.com/words/net/) Daha detaylı bilgi için.

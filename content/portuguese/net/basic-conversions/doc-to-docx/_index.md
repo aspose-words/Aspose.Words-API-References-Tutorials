@@ -1,35 +1,35 @@
 ---
-title: Converter documento em docx
-linktitle: Converter documento em docx
+title: Converter Doc para Docx
+linktitle: Converter Doc para Docx
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como converter DOC em DOCX usando Aspose.Words for .NET. Guia passo a passo com exemplos de código. Perfeito para desenvolvedores.
+description: Aprenda como converter DOC para DOCX usando Aspose.Words para .NET. Guia passo a passo com exemplos de código. Perfeito para desenvolvedores.
 type: docs
 weight: 10
 url: /pt/net/basic-conversions/doc-to-docx/
 ---
 ## Introdução
 
-Neste tutorial, exploraremos como converter arquivos DOC para o formato DOCX usando Aspose.Words for .NET. Aspose.Words é uma poderosa biblioteca de processamento de documentos que permite aos desenvolvedores manipular e converter documentos do Word programaticamente.
+Neste tutorial, exploraremos como converter arquivos DOC para o formato DOCX usando o Aspose.Words para .NET. O Aspose.Words é uma poderosa biblioteca de processamento de documentos que permite aos desenvolvedores manipular e converter documentos do Word programaticamente.
 
 ## Pré-requisitos
 
-Antes de começarmos, certifique-se de ter a seguinte configuração:
-- Visual Studio instalado em seu sistema.
+Antes de começar, certifique-se de ter o seguinte configurado:
+- Visual Studio instalado no seu sistema.
 -  Aspose.Words para .NET instalado. Você pode baixá-lo em[aqui](https://releases.aspose.com/words/net/).
 - Conhecimento básico da linguagem de programação C#.
 
 ## Importar namespaces
 
-Primeiro, você precisa importar os namespaces necessários em seu código C#:
+Primeiro, você precisa importar os namespaces necessários no seu código C#:
 ```csharp
 using Aspose.Words;
 ```
 
 Este namespace fornece acesso à API Aspose.Words, permitindo que você trabalhe com documentos do Word em seu aplicativo.
 
-## Etapa 1: carregar o arquivo DOC
+## Etapa 1: Carregue o arquivo DOC
 
-Comece carregando o arquivo DOC que deseja converter:
+Comece carregando o arquivo DOC que você deseja converter:
 ```csharp
 // O caminho para o diretório de documentos.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -38,11 +38,11 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.doc");
 ```
 
-## Etapa 2: salvar como DOCX
+## Etapa 2: Salvar como DOCX
 
-A seguir, salve o documento carregado no formato DOCX:
+Em seguida, salve o documento carregado no formato DOCX:
 ```csharp
-// Salve o documento como DOCX
+//Salvar o documento como DOCX
 doc.Save(dataDir + "ConvertedDocument.docx", SaveFormat.Docx);
 ```
 
@@ -50,27 +50,27 @@ doc.Save(dataDir + "ConvertedDocument.docx", SaveFormat.Docx);
 
 Compile e execute seu aplicativo para executar o processo de conversão. Certifique-se de que o arquivo de entrada "Document.doc" exista no diretório especificado.
 
-## Etapa 4: verifique a saída
+## Etapa 4: Verifique a saída
 
-Verifique o diretório de saída do arquivo DOCX convertido denominado "ConvertedDocument.docx". Você converteu com sucesso um arquivo DOC em DOCX usando Aspose.Words for .NET!
+Verifique o diretório de saída para o arquivo DOCX convertido chamado "ConvertedDocument.docx". Você converteu com sucesso um arquivo DOC para DOCX usando Aspose.Words para .NET!
 
 ## Conclusão
 
-Converter DOC em DOCX programaticamente usando Aspose.Words for .NET é simples e eficiente. Com apenas algumas linhas de código, você pode automatizar as conversões de documentos, economizando tempo e esforço. Esteja você lidando com conversões em lote ou integrando o processamento de documentos ao seu aplicativo, o Aspose.Words fornece funcionalidade robusta para atender às suas necessidades.
+Converter DOC para DOCX programaticamente usando o Aspose.Words para .NET é simples e eficiente. Com apenas algumas linhas de código, você pode automatizar conversões de documentos, economizando tempo e esforço. Não importa se você está lidando com conversões em lote ou integrando o processamento de documentos ao seu aplicativo, o Aspose.Words fornece funcionalidade robusta para atender às suas necessidades.
 
 ## Perguntas frequentes
 
-### O Aspose.Words pode converter outros formatos de documentos?
-Sim, Aspose.Words suporta conversão entre vários formatos, incluindo DOC, DOCX, RTF, HTML, PDF e muito mais.
+### O Aspose.Words pode converter outros formatos de documento?
+Sim, o Aspose.Words suporta conversão entre vários formatos, incluindo DOC, DOCX, RTF, HTML, PDF e muito mais.
 
 ### Onde posso encontrar a documentação do Aspose.Words?
  Você pode acessar a documentação[aqui](https://reference.aspose.com/words/net/).
 
-### Existe um teste gratuito disponível para Aspose.Words?
- Sim, você pode obter um teste gratuito em[aqui](https://releases.aspose.com/).
+### Existe um teste gratuito disponível para o Aspose.Words?
+ Sim, você pode obter uma avaliação gratuita em[aqui](https://releases.aspose.com/).
 
-### Como posso adquirir uma licença do Aspose.Words?
+### Como posso comprar uma licença para o Aspose.Words?
  Você pode comprar uma licença[aqui](https://purchase.aspose.com/buy).
 
-### Onde posso obter suporte para Aspose.Words?
- Para suporte, visite Aspose.Words[fórum](https://forum.aspose.com/c/words/8).
+### Onde posso obter suporte para o Aspose.Words?
+ Para obter suporte, visite o Aspose.Words[fórum](https://forum.aspose.com/c/words/8).

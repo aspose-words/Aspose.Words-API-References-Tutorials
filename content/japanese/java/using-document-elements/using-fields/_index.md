@@ -12,7 +12,7 @@ url: /ja/java/using-document-elements/using-fields/
 
 ## 1. はじめに
 
-Aspose.Words for Java は、Java アプリケーションで Word 文書を扱うすべての人にとって不可欠なツールです。フィールドは、文書に動的なデータを保存できるプレースホルダーです。このチュートリアルでは、フィールドを効果的に操作する方法を説明します。
+Aspose.Words for Java は、Java アプリケーションで Word 文書を扱うすべての人にとって不可欠なツールです。フィールドは、文書内に動的なデータを保存できるプレースホルダーです。このチュートリアルでは、フィールドを効果的に操作する方法を説明します。
 
 ## 2. 環境の設定
 
@@ -84,7 +84,7 @@ Object[] fieldValues = {
 doc.getMailMerge().execute(fieldNames, fieldValues);
 doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
 ```
-クラスHandleMergeFieldのソースコード
+HandleMergeField クラスのソースコード
 
 ```java
     private static class HandleMergeField implements IFieldMergingCallback
@@ -97,7 +97,7 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
         {
             if (mBuilder == null)
                 mBuilder = new DocumentBuilder(e.getDocument());
-            //すべてのブール値をチェック ボックス フォーム フィールドとして出力することに決定しました。
+            //すべてのブール値をチェック ボックス フォーム フィールドとして出力することにしました。
             if (e.getFieldValue() instanceof /*boolean*/Boolean)
             {
                 // 「カーソル」を現在のマージ フィールドに移動します。
@@ -355,7 +355,7 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
 
 ## 6. 結論
 
-おめでとうございます! Aspose.Words for Java のフィールドを使用して Word ドキュメントを動的に操作する方法を学びました。この強力な API を使用すると、ドキュメントを完全に制御できるため、Java 開発者にとって貴重な資産となります。
+おめでとうございます! Aspose.Words for Java のフィールドを使用して Word ドキュメントを動的に操作する方法を学びました。この強力な API を使用すると、ドキュメントを完全に制御できるため、Java 開発者にとって貴重な資産になります。
 
 ## 7. よくある質問
 

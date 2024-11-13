@@ -10,7 +10,7 @@ url: /sv/java/document-conversion-and-export/using-charts/
 
 ## Introduktion till att använda diagram i Aspose.Words för Java
 
-den här handledningen kommer vi att utforska hur man arbetar med diagram med Aspose.Words för Java. Du lär dig hur du skapar olika typer av diagram, anpassar axelegenskaper, formaterar dataetiketter och mer. Låt oss dyka in!
+I den här handledningen kommer vi att utforska hur man arbetar med diagram med Aspose.Words för Java. Du lär dig hur du skapar olika typer av diagram, anpassar axelegenskaper, formaterar dataetiketter och mer. Låt oss dyka in!
 
 ## Skapa ett linjediagram
 
@@ -82,7 +82,7 @@ ChartAxis yAxis = chart.getAxisY();
 // Ändra X-axeln till en kategori istället för datum.
 xAxis.setCategoryType(AxisCategoryType.CATEGORY);
 xAxis.setCrosses(AxisCrosses.CUSTOM);
-xAxis.setCrossesAt(3.0); //Mätt i displayenheter för Y-axeln (hundratals).
+xAxis.setCrossesAt(3.0); // Mätt i displayenheter för Y-axeln (hundratals).
 xAxis.setReverseOrder(true);
 xAxis.setMajorTickMark(AxisTickMark.CROSS);
 xAxis.setMinorTickMark(AxisTickMark.OUTSIDE);
@@ -121,7 +121,7 @@ Du kan anpassa dina diagram ytterligare genom att justera gränser, intervallenh
 
 ## Slutsats
 
-I den här handledningen har vi utforskat hur man arbetar med diagram med Aspose.Words för Java. Du har lärt dig hur du skapar olika typer av diagram, anpassar axelegenskaper, formaterar dataetiketter och mer. Aspose.Words för Java tillhandahåller kraftfulla verktyg för att lägga till visuella representationer av data till dina dokument, vilket förbättrar hur du presenterar information.
+den här handledningen har vi utforskat hur man arbetar med diagram med Aspose.Words för Java. Du har lärt dig hur du skapar olika typer av diagram, anpassar axelegenskaper, formaterar dataetiketter och mer. Aspose.Words för Java tillhandahåller kraftfulla verktyg för att lägga till visuella representationer av data till dina dokument, vilket förbättrar hur du presenterar information.
 
 ## FAQ's
 
@@ -131,7 +131,7 @@ I den här handledningen har vi utforskat hur man arbetar med diagram med Aspose
 
 ### Hur kan jag formatera dataetiketter med anpassade nummerformat?
 
-Du kan formatera dataetiketter genom att gå till`DataLabels` egenskaper för en serie och ställ in önskad formatkod med hjälp av`getNumberFormat().setFormatCode()`.
+ Du kan formatera dataetiketter genom att gå till`DataLabels` egenskaper för en serie och ställ in önskad formatkod med hjälp av`getNumberFormat().setFormatCode()`.
 
 ### Hur anpassar jag axelegenskaper i ett diagram?
 
@@ -139,7 +139,7 @@ Du kan formatera dataetiketter genom att gå till`DataLabels` egenskaper för en
 
 ### Hur kan jag skapa andra typer av diagram som punkt- eller ytdiagram?
 
- Du kan skapa olika diagramtyper genom att ange lämpliga`ChartType` när du infogar diagrammet med`builder.insertChart(ChartType.TYPE, width, height)`.
+Du kan skapa olika diagramtyper genom att ange lämpliga`ChartType` när du infogar diagrammet med`builder.insertChart(ChartType.TYPE, width, height)`.
 
 ### Hur kan jag dölja en diagramaxel?
 

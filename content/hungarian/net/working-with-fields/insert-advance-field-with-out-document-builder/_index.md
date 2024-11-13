@@ -66,7 +66,7 @@ Ezzel egy új, üres dokumentumot állít be.
 2. Szerezd meg a dokumentum első bekezdését:
 
 ```csharp
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+Paragraph para = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
 Ez biztosítja, hogy legyen egy bekezdés, amellyel dolgozhatunk.

@@ -1,27 +1,27 @@
 ---
 title: Wywołanie zwrotne zapisywania strony
 linktitle: Wywołanie zwrotne zapisywania strony
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak zapisać każdą stronę dokumentu programu Word jako oddzielny obraz PNG przy użyciu Aspose.Words dla .NET, korzystając z naszego szczegółowego przewodnika krok po kroku.
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak zapisać każdą stronę dokumentu Word jako oddzielny obraz PNG za pomocą Aspose.Words dla .NET, korzystając z naszego szczegółowego przewodnika krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/programming-with-imagesaveoptions/page-saving-callback/
 ---
 ## Wstęp
 
-Hej tam! Czy kiedykolwiek czułeś potrzebę zapisania każdej strony dokumentu programu Word jako osobnych obrazów? Być może chcesz podzielić duży raport na łatwo przyswajalne wizualizacje, a może chcesz utworzyć miniatury do podglądu. Bez względu na powód, użycie Aspose.Words dla .NET sprawia, że to zadanie jest proste. W tym przewodniku przeprowadzimy Cię przez proces konfigurowania wywołania zwrotnego zapisywania strony, aby zapisać każdą stronę dokumentu jako indywidualny obraz PNG. Zanurkujmy od razu!
+Cześć! Czy kiedykolwiek czułeś potrzebę zapisania każdej strony dokumentu Word jako osobnych obrazów? Może chcesz rozbić duży raport na łatwe do przyswojenia wizualizacje lub może musisz utworzyć miniatury do podglądu. Bez względu na powód, użycie Aspose.Words dla .NET sprawia, że to zadanie staje się proste. W tym przewodniku przeprowadzimy Cię przez proces konfigurowania wywołania zwrotnego zapisywania strony, aby zapisać każdą stronę dokumentu jako pojedynczy obraz PNG. Zanurzmy się w tym!
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zaczniemy, upewnij się, że masz następujące elementy:
+Zanim zaczniemy, upewnij się, że masz następujące rzeczy:
 
-1.  Aspose.Words dla .NET: Jeśli jeszcze tego nie zrobiłeś, pobierz i zainstaluj z[Tutaj](https://releases.aspose.com/words/net/).
-2. Visual Studio: dowolna wersja powinna działać, ale w tym przewodniku będę używać programu Visual Studio 2019.
-3. Podstawowa znajomość języka C#: Aby kontynuować naukę, będziesz potrzebować podstawowej znajomości języka C#.
+1.  Aspose.Words dla .NET: Jeśli jeszcze tego nie zrobiłeś, pobierz i zainstaluj ze strony[Tutaj](https://releases.aspose.com/words/net/).
+2. Visual Studio: powinna działać każda wersja, jednak w tym przewodniku będę korzystać z Visual Studio 2019.
+3. Podstawowa znajomość języka C#: Aby móc korzystać z kursu, konieczna jest podstawowa znajomość języka C#.
 
 ## Importuj przestrzenie nazw
 
-Najpierw musimy zaimportować niezbędne przestrzenie nazw. Pomaga nam to uzyskać dostęp do wymaganych klas i metod bez konieczności wpisywania za każdym razem pełnej przestrzeni nazw.
+Najpierw musimy zaimportować niezbędne przestrzenie nazw. Pomaga nam to uzyskać dostęp do wymaganych klas i metod bez konieczności wpisywania pełnej przestrzeni nazw za każdym razem.
 
 ```csharp
 using System;
@@ -31,7 +31,7 @@ using Aspose.Words.Saving;
 
 ## Krok 1: Skonfiguruj katalog dokumentów
 
-W porządku, zacznijmy od zdefiniowania ścieżki do katalogu dokumentów. Tutaj znajduje się wejściowy dokument programu Word i miejsce, w którym zostaną zapisane obrazy wyjściowe.
+Dobrze, zacznijmy od zdefiniowania ścieżki do katalogu dokumentów. To tutaj znajduje się Twój dokument Word wejściowy i gdzie będą zapisywane obrazy wyjściowe.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -39,7 +39,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Krok 2: Załaduj swój dokument
 
-Następnie załadujemy dokument, który chcesz przetworzyć. Upewnij się, że dokument („Rendering.docx”) znajduje się w określonym katalogu.
+Następnie załadujemy dokument, który chcesz przetworzyć. Upewnij się, że Twój dokument („Rendering.docx”) znajduje się w określonym katalogu.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -57,11 +57,11 @@ ImageSaveOptions imageSaveOptions = new ImageSaveOptions(SaveFormat.Png)
 };
 ```
 
- Tutaj,`PageSet` określa zakres stron do zapisania, oraz`PageSavingCallback` wskazuje na naszą niestandardową klasę wywołania zwrotnego.
+ Tutaj,`PageSet` określa zakres stron do zapisania i`PageSavingCallback` wskazuje na naszą niestandardową klasę wywołania zwrotnego.
 
-## Krok 4: Zaimplementuj wywołanie zwrotne zapisywania strony
+## Krok 4: Wdróż funkcję zwrotną zapisywania strony
 
-Teraz zaimplementujmy klasę wywołania zwrotnego, która obsługuje sposób zapisywania każdej strony.
+Teraz zaimplementujemy klasę wywołania zwrotnego, która obsługuje sposób zapisywania każdej strony.
 
 ```csharp
 private class HandlePageSavingCallback : IPageSavingCallback
@@ -73,11 +73,11 @@ private class HandlePageSavingCallback : IPageSavingCallback
 }
 ```
 
- Ta klasa implementuje`IPageSavingCallback` interfejsie oraz wewnątrz`PageSaving` metodą definiujemy wzór nazewnictwa dla każdej zapisanej strony.
+ Ta klasa implementuje`IPageSavingCallback` interfejs i w jego obrębie`PageSaving` metodą definiujemy wzór nazewnictwa dla każdej zapisanej strony.
 
 ## Krok 5: Zapisz dokument jako obrazy
 
-Na koniec zapisujemy dokument korzystając ze skonfigurowanych opcji.
+Na koniec zapisujemy dokument korzystając z skonfigurowanych opcji.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithImageSaveOptions.PageSavingCallback.png", imageSaveOptions);
@@ -85,23 +85,23 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.PageSavingCallback.png", imageSa
 
 ## Wniosek
 
-I masz to! Pomyślnie skonfigurowałeś wywołanie zwrotne zapisywania strony, aby zapisać każdą stronę dokumentu programu Word jako oddzielny obraz PNG przy użyciu Aspose.Words dla .NET. Technika ta jest niezwykle przydatna w różnych zastosowaniach, od tworzenia podglądów stron po generowanie pojedynczych obrazów stron na potrzeby raportów. 
+I masz to! Udało Ci się skonfigurować wywołanie zwrotne zapisywania strony, aby zapisać każdą stronę dokumentu Word jako osobny obraz PNG przy użyciu Aspose.Words dla .NET. Ta technika jest niezwykle przydatna w różnych aplikacjach, od tworzenia podglądów stron po generowanie pojedynczych obrazów stron do raportów. 
 
 Miłego kodowania!
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
 ### Czy mogę zapisywać strony w formatach innych niż PNG?  
- Tak, możesz zapisywać strony w różnych formatach, takich jak JPEG, BMP i TIFF, zmieniając plik`SaveFormat` W`ImageSaveOptions`.
+ Tak, możesz zapisywać strony w różnych formatach, takich jak JPEG, BMP i TIFF, zmieniając`SaveFormat` W`ImageSaveOptions`.
 
-### Co jeśli chcę zapisać tylko określone strony?  
- Możesz określić strony, które chcesz zapisać, dostosowując opcję`PageSet` parametr w`ImageSaveOptions`.
+### Co zrobić, jeśli chcę zapisać tylko konkretne strony?  
+ Możesz określić strony, które chcesz zapisać, dostosowując`PageSet` parametr w`ImageSaveOptions`.
 
 ### Czy można dostosować jakość obrazu?  
- Absolutnie! Możesz ustawić właściwości takie jak`ImageSaveOptions.JpegQuality` do kontrolowania jakości obrazów wyjściowych.
+ Oczywiście! Możesz ustawić właściwości takie jak`ImageSaveOptions.JpegQuality` aby kontrolować jakość obrazów wyjściowych.
 
-### Jak efektywnie obsługiwać duże dokumenty?  
-W przypadku dużych dokumentów rozważ przetwarzanie stron partiami, aby efektywnie zarządzać wykorzystaniem pamięci.
+### Jak mogę wydajnie obsługiwać duże dokumenty?  
+W przypadku obszernych dokumentów warto rozważyć przetwarzanie stron w partiach, aby efektywnie zarządzać wykorzystaniem pamięci.
 
 ### Gdzie mogę znaleźć więcej informacji na temat Aspose.Words dla .NET?  
- Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) obszerne przewodniki i przykłady.
+ Sprawdź[dokumentacja](https://reference.aspose.com/words/net/) aby uzyskać kompleksowe przewodniki i przykłady.

@@ -66,13 +66,13 @@ for (Paragraph para : (Iterable<Paragraph>) doc.getChildNodes(NodeType.PARAGRAPH
     if (para.getParagraphFormat().getStyle().getStyleIdentifier() >= StyleIdentifier.TOC_1 &&
         para.getParagraphFormat().getStyle().getStyleIdentifier() <= StyleIdentifier.TOC_9)
     {
-        //Szerezze be az ebben a bekezdésben használt első tabulátort, amely az oldalszámokat igazítja.
+        // Szerezze be az ebben a bekezdésben használt első tabulátort, amely az oldalszámokat igazítja.
         TabStop tab = para.getParagraphFormat().getTabStops().get(0);
         
         // Távolítsa el a régi fület.
         para.getParagraphFormat().getTabStops().removeByPosition(tab.getPosition());
         
-        // Szúrjon be egy új fület egy módosított pozícióba (pl. 50 egységgel balra).
+        //Szúrjon be egy új fület egy módosított pozícióba (pl. 50 egységgel balra).
         para.getParagraphFormat().getTabStops().add(tab.getPosition() - 50.0, tab.getAlignment(), tab.getLeader());
     }
 }

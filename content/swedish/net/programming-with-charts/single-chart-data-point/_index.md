@@ -51,7 +51,7 @@ Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
- De`InsertChart` metoden tar diagramtyp, bredd och höjd som parametrar. I det här fallet infogar vi ett linjediagram med en bredd på 432 och en höjd på 252.
+De`InsertChart` metoden tar diagramtyp, bredd och höjd som parametrar. I det här fallet infogar vi ett linjediagram med en bredd på 432 och en höjd på 252.
 
 ## Steg 3: Access Chart Series
 

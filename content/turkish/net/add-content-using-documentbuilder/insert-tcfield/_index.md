@@ -1,28 +1,28 @@
 ---
-title: TCField'ı Word Belgesine Ekle
-linktitle: TCField'ı Word Belgesine Ekle
+title: Word Belgesine TCField Ekle
+linktitle: Word Belgesine TCField Ekle
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak bir Word belgesine nasıl TC alanı ekleyeceğinizi öğrenin. Sorunsuz belge otomasyonu için adım adım kılavuzumuzu izleyin.
+description: Aspose.Words for .NET kullanarak bir Word belgesine TC alanı eklemeyi öğrenin. Sorunsuz belge otomasyonu için adım adım kılavuzumuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/add-content-using-documentbuilder/insert-tcfield/
 ---
 ## giriiş
 
-Selam! Belge otomasyonu dünyasına dalıyorsanız doğru yerdesiniz. Bugün Aspose.Words for .NET kullanarak bir Word belgesine TC (İçindekiler Tablosu) alanının nasıl ekleneceğini inceleyeceğiz. İnanın bana, bu eğitimin sonunda kendinizi Word belgelerinize büyü yapan bir sihirbaz gibi hissedeceksiniz. Başlamaya hazır mısınız? Haydi bunu yapalım!
+Merhaba! Belge otomasyonu dünyasına dalıyorsanız, doğru yerdesiniz. Bugün, .NET için Aspose.Words kullanarak bir Word belgesine TC (İçindekiler) alanının nasıl ekleneceğini inceleyeceğiz. İnanın bana, bu eğitimin sonunda Word belgelerinizde büyü yapan bir sihirbaz gibi hissedeceksiniz. Başlamaya hazır mısınız? Hadi yapalım!
 
-## Önkoşullar
+## Ön koşullar
 
-İşin özüne geçmeden önce, ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
+Ayrıntılara girmeden önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
-1.  Aspose.Words for .NET: Henüz yapmadıysanız Aspose.Words for .NET'i indirip yüklemeniz gerekecektir. Şu adresten alabilirsiniz:[indirme sayfası](https://releases.aspose.com/words/net/).
-2. Geliştirme Ortamı: Herhangi bir .NET geliştirme ortamı iş görecektir ancak Visual Studio önemle tavsiye edilir.
-3. Temel C# Bilgisi: C# programlamanın temelleri konusunda rahat olmalısınız.
-4.  Geçici Lisans: Aspose.Words'ün tüm özelliklerinden yararlanmak için edinebileceğiniz geçici bir lisansa ihtiyacınız olabilir.[Burada](https://purchase.aspose.com/temporary-license/).
+1.  Aspose.Words for .NET: Eğer henüz yapmadıysanız, Aspose.Words for .NET'i indirip yüklemeniz gerekecek. Bunu şu adresten edinebilirsiniz:[indirme sayfası](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: Herhangi bir .NET geliştirme ortamı işinizi görecektir, ancak Visual Studio şiddetle tavsiye edilir.
+3. Temel C# Bilgisi: C# programlamanın temellerine hakim olmalısınız.
+4.  Geçici Lisans: Aspose.Words'ün tüm yeteneklerinin kilidini açmak için, edinebileceğiniz geçici bir lisansa ihtiyacınız olabilir[Burada](https://purchase.aspose.com/temporary-license/).
 
 ## Ad Alanlarını İçe Aktar
 
-Öncelikle gerekli ad alanlarını içe aktaralım. Bu, sihir gösterimiz için sahneyi hazırlamak gibi bir şey.
+İlk önce, gerekli ad alanlarını içe aktaralım. Bu, sihir gösterimizin sahnesini hazırlamak gibidir.
 
 ```csharp
 using System;
@@ -30,11 +30,11 @@ using Aspose.Words;
 using Aspose.Words.Fields;
 ```
 
-Pekala, ön hazırlıkları bir kenara bırakalım, hadi aksiyona geçelim!
+Tamam, ön elemeleri tamamladığımıza göre artık aksiyona geçebiliriz!
 
-## 1. Adım: Projenizi Kurun
+## Adım 1: Projenizi Kurun
 
-Kodlamaya geçmeden önce projemizi oluşturalım. Geliştirme ortamınızı açın ve yeni bir .NET projesi oluşturun. Aspose.Words for .NET kütüphanesine bir referans eklediğinizden emin olun. NuGet kullanıyorsanız Paket Yönetici Konsolu aracılığıyla kolayca yükleyebilirsiniz:
+Kodlamaya başlamadan önce projemizi kuralım. Geliştirme ortamınızı açın ve yeni bir .NET projesi oluşturun. Aspose.Words for .NET kütüphanesine bir referans eklediğinizden emin olun. NuGet kullanıyorsanız, bunu Paket Yöneticisi Konsolu aracılığıyla kolayca yükleyebilirsiniz:
 
 ```shell
 Install-Package Aspose.Words
@@ -42,10 +42,10 @@ Install-Package Aspose.Words
 
 ## Adım 2: Yeni Bir Belge Oluşturun
 
- Tamam, yeni bir Word belgesi oluşturarak başlayalım. biz kullanacağız`Document`Ve`DocumentBuilder` İşleri yoluna koymak için Aspose.Words'ten dersler.
+ Tamam, yeni bir Word belgesi oluşturarak başlayalım.`Document` Ve`DocumentBuilder` Aspose.Words'den dersleri alarak işleri yoluna koyun.
 
 ```csharp
-// Belgeler dizininin yolu.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 // Yeni bir belge oluştur
@@ -53,52 +53,52 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Bu, belgemizi oluşturur ve bizi onu oluşturmaya başlamaya hazırlar.
+Bu, belgemizi oluşturur ve onu oluşturmaya başlamamız için bizi hazırlar.
 
-## 3. Adım: TC Alanı ekleyin
+## Adım 3: Bir TC Alanı Ekle
 
-Şimdi işin eğlenceli kısmı geliyor. Belgemize TC alanı ekleyeceğiz. TC alanı, İçindekiler Tablosu'na ilişkin girişleri işaretlemek için kullanılır.
+Şimdi, eğlenceli kısma geliyoruz. Belgemize bir TC alanı ekleyeceğiz. TC alanı, İçindekiler Tablosu için girdileri işaretlemek için kullanılır.
 
 ```csharp
-// TC alanı ekleyin
+// Bir TC alanı ekleyin
 builder.InsertField("TC \"Entry Text\" \\f t");
 ```
 
- Bu kod satırı Aspose.Words'e "Giriş Metni" giriş metnini içeren bir TC alanı eklemesini söyler.`\\f t`bölüm, girişin İçindekiler Tablosunda nasıl görüntüleneceğini belirleyen bir anahtardır.
+ Bu kod satırı Aspose.Words'e "Giriş Metni" giriş metniyle bir TC alanı eklemesini söyler.`\\f t`parça, girdinin İçindekiler'de nasıl görüntüleneceğini belirleyen bir anahtardır.
 
 ## Adım 4: Belgeyi Kaydedin
 
-Son olarak belgemizi kaydedelim. Bütün emeklerimizin birleştiği nokta burası.
+Son olarak, belgemizi kaydedelim. Tüm sıkı çalışmamızın bir araya geldiği yer burasıdır.
 
 ```csharp
 // Belgeyi kaydet
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTCField.docx");
 ```
 
-Bum! Az önce TC alanı içeren bir Word belgesi oluşturdunuz. Bu ne kadar muhteşem?
+Pat! TC alanı olan bir Word belgesi oluşturdunuz. Ne kadar harika değil mi?
 
 ## Çözüm
 
- Ve işte karşınızda! Aspose.Words for .NET kullanarak bir Word belgesine TC alanının nasıl ekleneceğini anlattık. Oldukça basit, değil mi? Bu becerilerle artık Word belgelerinizi bir profesyonel gibi otomatikleştirebilir ve özelleştirebilirsiniz. Herhangi bir sorunuz varsa veya herhangi bir sorunla karşılaşırsanız, kontrol etmekten çekinmeyin.[Aspose.Words belgeleri](https://reference.aspose.com/words/net/) veya onlara ulaşın[destek forumu](https://forum.aspose.com/c/words/8). Mutlu kodlama!
+ İşte karşınızda! Aspose.Words for .NET kullanarak bir Word belgesine TC alanının nasıl ekleneceğini adım adım anlattık. Oldukça basit, değil mi? Bu becerilerle artık Word belgelerinizi bir profesyonel gibi otomatikleştirebilir ve özelleştirebilirsiniz. Herhangi bir sorunuz varsa veya herhangi bir sorunla karşılaşırsanız, şuraya göz atmaktan çekinmeyin:[Aspose.Words belgeleri](https://reference.aspose.com/words/net/) veya onlara ulaşın[destek forumu](https://forum.aspose.com/c/words/8). Keyifli kodlamalar!
 
-## SSS'ler
+## SSS
 
-### 1. Word'deki TC alanı nedir?
+### 1. Word’de TC alanı nedir?
 
-Word'deki TC (İçindekiler Tablosu) alanı, İçindekiler Tablonuza eklemek istediğiniz belirli girişleri işaretlemek için kullanılır.
+Word'deki TC (İçindekiler) alanı, İçindekiler tablonuza eklemek istediğiniz belirli girdileri işaretlemek için kullanılır.
 
 ### 2. Aspose.Words for .NET'i kullanmak için lisansa ihtiyacım var mı?
 
- Evet, Aspose.Words'ün tüm özelliklerinin kilidini açmak için geçici bir lisans kullanabilirsiniz. Bir tane alabilirsiniz[Burada](https://purchase.aspose.com/temporary-license/).
+ Evet, Aspose.Words'ün tüm özelliklerinin kilidini açmak için geçici bir lisans kullanabilirsiniz. Bir tane edinebilirsiniz[Burada](https://purchase.aspose.com/temporary-license/).
 
-### 3. Aspose.Words'ü diğer programlama dilleriyle kullanabilir miyim?
+### 3. Aspose.Words'ü diğer programlama dilleriyle birlikte kullanabilir miyim?
 
-Aspose.Words öncelikle C# gibi .NET dillerini destekler ancak Java ve diğer platformlar için versiyonları da mevcuttur.
+Aspose.Words öncelikli olarak C# gibi .NET dillerini destekler, ancak Java ve diğer platformlar için de sürümleri mevcuttur.
 
-### 4. Aspose.Words for .NET kullanımına ilişkin daha fazla örneği nerede bulabilirim?
+### 4. Aspose.Words for .NET kullanımına dair daha fazla örneği nerede bulabilirim?
 
- Daha fazla örnek ve ayrıntılı belgeleri şu adreste bulabilirsiniz:[Aspose.Words dokümantasyon sayfası](https://reference.aspose.com/words/net/).
+ Daha fazla örnek ve ayrıntılı dokümanı şu adreste bulabilirsiniz:[Aspose.Words dokümantasyon sayfası](https://reference.aspose.com/words/net/).
 
-### 5. Sorunla karşılaşırsam nasıl destek alabilirim?
+### 5. Sorun yaşarsam nasıl destek alabilirim?
 
- Herhangi bir sorunla karşılaşırsanız destek alabilirsiniz.[Aspose.Words destek forumu](https://forum.aspose.com/c/words/8).
+ Herhangi bir sorunla karşılaşırsanız, destek alabilirsiniz.[Aspose.Words destek forumu](https://forum.aspose.com/c/words/8).

@@ -1,24 +1,24 @@
 ---
-title: Aspose.Words for Java'da Belge Formatını Belirleme
+title: Java için Aspose.Words'de Belge Biçimini Belirleme
 linktitle: Belge Formatının Belirlenmesi
 second_title: Aspose.Words Java Belge İşleme API'si
-description: Aspose.Words ile Java'da belge formatlarını nasıl tespit edeceğinizi öğrenin. DOC, DOCX ve daha fazlasını tanımlayın. Dosyaları verimli bir şekilde düzenleyin.
+description: Aspose.Words ile Java'da belge biçimlerini nasıl algılayacağınızı öğrenin. DOC, DOCX ve daha fazlasını tanımlayın. Dosyaları verimli bir şekilde düzenleyin.
 type: docs
 weight: 25
 url: /tr/java/document-loading-and-saving/determining-document-format/
 ---
 
-## Aspose.Words for Java'da Belge Formatını Belirlemeye Giriş
+## Java için Aspose.Words'de Belge Biçimini Belirlemeye Giriş
 
-Java'da belge işlemeyle çalışırken, uğraştığınız dosyaların formatını belirlemek çok önemlidir. Aspose.Words for Java, belge formatlarını tanımlamak için güçlü özellikler sunar; biz de size süreç boyunca yol göstereceğiz.
+Java'da belge işlemeyle çalışırken, uğraştığınız dosyaların biçimini belirlemek çok önemlidir. Java için Aspose.Words, belge biçimlerini tanımlamak için güçlü özellikler sunar ve bu süreçte size yol göstereceğiz.
 
-## Önkoşullar
+## Ön koşullar
 
-Başlamadan önce aşağıdaki önkoşullara sahip olduğunuzdan emin olun:
+Başlamadan önce aşağıdaki ön koşullara sahip olduğunuzdan emin olun:
 
-- [Aspose.Words for Java](https://releases.aspose.com/words/java/)
-- Sisteminizde kurulu Java Geliştirme Kiti (JDK)
-- Java programlamayla ilgili temel bilgiler
+- [Java için Aspose.Words](https://releases.aspose.com/words/java/)
+- Sisteminizde yüklü Java Geliştirme Kiti (JDK)
+- Java programlamanın temel bilgisi
 
 ## Adım 1: Dizin Kurulumu
 
@@ -30,7 +30,7 @@ File unknownDir = new File("Your Directory Path" + "Unknown");
 File encryptedDir = new File("Your Directory Path" + "Encrypted");
 File pre97Dir = new File("Your Directory Path" + "Pre97");
 
-// Henüz mevcut değilse dizinleri oluşturun.
+// Eğer henüz mevcut değilse dizinleri oluşturun.
 if (!supportedDir.exists())
     supportedDir.mkdir();
 if (!unknownDir.exists())
@@ -43,9 +43,9 @@ if (!pre97Dir.exists())
 
 Desteklenen, bilinmeyen, şifrelenmiş ve 97 öncesi belge türleri için dizinler oluşturduk.
 
-## Adım 2: Belge Formatını Algılama
+## Adım 2: Belge Biçimini Algılama
 
-Şimdi dizinlerimizdeki dokümanların formatlarını tespit edelim. Bunu başarmak için Aspose.Words for Java'yı kullanacağız.
+Şimdi dizinlerimizdeki belgelerin formatını tespit edelim. Bunu başarmak için Java için Aspose.Words kullanacağız.
 
 ```java
 Set<String> listFiles = Stream.of(new File("Your Directory Path").listFiles())
@@ -63,7 +63,7 @@ for (String fileName : listFiles) {
         case LoadFormat.DOC:
             System.out.println("\tMicrosoft Word 97-2003 document.");
             break;
-        // Gerektiğinde diğer belge formatları için vakalar ekleyin
+        // Gerektiğinde diğer belge biçimleri için durumlar ekleyin
     }
 
     // Şifrelenmiş belgeleri yönetin
@@ -87,16 +87,16 @@ for (String fileName : listFiles) {
 }
 ```
 
-Bu kod parçacığında dosyalar üzerinde yinelemeler yapıyoruz, formatlarını tespit ediyoruz ve bunları ilgili dizinler halinde düzenliyoruz.
+Bu kod parçacığında dosyalar arasında geziniyoruz, biçimlerini tespit ediyoruz ve bunları ilgili dizinlere düzenliyoruz.
 
-## Aspose.Words for Java'da Belge Formatını Belirlemek İçin Tam Kaynak Kodu
+## Java için Aspose.Words'de Belge Formatını Belirlemeye Yönelik Tam Kaynak Kodu
 
 ```java
         File supportedDir = new File("Your Directory Path" + "Supported");
         File unknownDir = new File("Your Directory Path" + "Unknown");
         File encryptedDir = new File("Your Directory Path" + "Encrypted");
         File pre97Dir = new File("Your Directory Path" + "Pre97");
-        // Henüz mevcut değilse dizinleri oluşturun.
+        // Eğer henüz mevcut değilse dizinleri oluşturun.
         if (supportedDir.exists() == false)
             supportedDir.mkdir();
         if (unknownDir.exists() == false)
@@ -183,26 +183,26 @@ Bu kod parçacığında dosyalar üzerinde yinelemeler yapıyoruz, formatların�
 
 ## Çözüm
 
-Aspose.Words for Java'da belge formatlarını belirlemek, verimli belge işleme için çok önemlidir. Bu kılavuzda özetlenen adımlarla belge türlerini tanımlayabilir ve bunları Java uygulamalarınızda buna uygun şekilde kullanabilirsiniz.
+Java için Aspose.Words'de belge biçimlerini belirlemek, verimli belge işleme için önemlidir. Bu kılavuzda özetlenen adımlarla, belge türlerini belirleyebilir ve bunları Java uygulamalarınızda uygun şekilde işleyebilirsiniz.
 
-## SSS'ler
+## SSS
 
-### Aspose.Words for Java'yı nasıl yüklerim?
+### Java için Aspose.Words'ü nasıl yüklerim?
 
- Aspose.Words for Java'yı şu adresten indirebilirsiniz:[Burada](https://releases.aspose.com/words/java/) ve verilen kurulum talimatlarını izleyin.
+ Java için Aspose.Words'ü şu adresten indirebilirsiniz:[Burada](https://releases.aspose.com/words/java/)ve verilen kurulum talimatlarını izleyin.
 
-### Desteklenen belge formatları nelerdir?
+### Desteklenen belge biçimleri nelerdir?
 
-Aspose.Words for Java, DOC, DOCX, RTF, HTML ve daha fazlası dahil olmak üzere çeşitli belge formatlarını destekler. Tam liste için belgelere başvurabilirsiniz.
+Aspose.Words for Java, DOC, DOCX, RTF, HTML ve daha fazlası dahil olmak üzere çeşitli belge biçimlerini destekler. Tam liste için belgelere başvurabilirsiniz.
 
 ### Aspose.Words for Java kullanarak şifrelenmiş belgeleri nasıl tespit edebilirim?
 
- Şunu kullanabilirsiniz:`FileFormatUtil.detectFileFormat()` Bu kılavuzda gösterildiği gibi, şifrelenmiş belgeleri algılama yöntemini kullanın.
+ Kullanabilirsiniz`FileFormatUtil.detectFileFormat()` Bu kılavuzda gösterildiği gibi şifrelenmiş belgeleri tespit etme yöntemi.
 
 ### Eski belge formatlarıyla çalışırken herhangi bir sınırlama var mı?
 
-MS Word 6 veya Word 95 gibi daha eski belge formatlarının özellikleri ve modern uygulamalarla uyumluluk açısından sınırlamaları olabilir. Gerektiğinde bu belgeleri yükseltmeyi veya dönüştürmeyi düşünün.
+MS Word 6 veya Word 95 gibi eski belge biçimleri, özellikler ve modern uygulamalarla uyumluluk açısından sınırlamalara sahip olabilir. Gerektiğinde bu belgeleri yükseltmeyi veya dönüştürmeyi düşünün.
 
-### Java uygulamamda belge biçimi algılamayı otomatikleştirebilir miyim?
+### Java uygulamamda belge formatı algılamayı otomatikleştirebilir miyim?
 
-Evet, sağlanan kodu Java uygulamanıza entegre ederek belge biçimi algılamayı otomatikleştirebilirsiniz. Bu, belgeleri algılanan formatlara göre işlemenize olanak tanır.
+Evet, sağlanan kodu Java uygulamanıza entegre ederek belge biçimi algılamayı otomatikleştirebilirsiniz. Bu, belgeleri algılanan biçimlerine göre işlemenize olanak tanır.

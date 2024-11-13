@@ -74,7 +74,7 @@ public void enumerateChildNodes() throws Exception
 ```
 
 ## 6. Minden csomópont ismétlése
-A dokumentum összes csomópontjának bejárásához használhat egy rekurzív függvényt, például:
+dokumentum összes csomópontjának bejárásához használhat egy rekurzív függvényt, például:
 
 ```java
 @Test
@@ -109,7 +109,7 @@ Ebben az oktatóanyagban az Aspose.Words for Java csomópontjaival való munka a
 Az Aspose.Words for Java egy Java-könyvtár, amely lehetővé teszi a fejlesztők számára Word-dokumentumok programozott létrehozását, kezelését és konvertálását.
 
 ### Q2. Hogyan telepíthetem az Aspose.Words for Java programot?
-Letöltheti és telepítheti az Aspose.Words for Java programot innen[itt](https://releases.aspose.com/words/java/).
+ Letöltheti és telepítheti az Aspose.Words for Java programot innen[itt](https://releases.aspose.com/words/java/).
 
 ### Q3. Van ingyenes próbaverzió?
  Igen, ingyenesen kipróbálhatja az Aspose.Words for Java-t[itt](https://releases.aspose.com/).

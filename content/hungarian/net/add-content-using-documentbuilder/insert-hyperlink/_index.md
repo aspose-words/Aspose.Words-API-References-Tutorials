@@ -118,7 +118,7 @@ A hiperhivatkozások beillesztése Word-dokumentumba az Aspose.Words for .NET ha
 
 ### Mi történik, ha az URL érvénytelen?
 
- A`InsertHyperlink` metódus nem ellenőrzi az URL-eket, ezért fontos, hogy az URL-ek helyesek legyenek, mielőtt beillesztik őket.
+A`InsertHyperlink` metódus nem ellenőrzi az URL-eket, ezért fontos, hogy az URL-ek helyesek legyenek, mielőtt beillesztik őket.
 
 ### Eltávolítható a hiperhivatkozás a beillesztés után?
 

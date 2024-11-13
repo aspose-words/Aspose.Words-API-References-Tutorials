@@ -2,31 +2,31 @@
 title: Szyfrowanie i deszyfrowanie dokumentów
 linktitle: Szyfrowanie i deszyfrowanie dokumentów
 second_title: Aspose.Words API przetwarzania dokumentów Java
-description: Dowiedz się, jak szyfrować i deszyfrować dokumenty za pomocą Aspose.Words dla Java. Skutecznie zabezpiecz swoje dane, korzystając ze wskazówek krok po kroku i przykładów kodu źródłowego.
+description: Dowiedz się, jak szyfrować i odszyfrowywać dokumenty za pomocą Aspose.Words for Java. Zabezpieczaj swoje dane efektywnie dzięki wskazówkom krok po kroku i przykładom kodu źródłowego.
 type: docs
 weight: 12
 url: /pl/java/document-security/document-encryption-decryption/
 ---
-Z pewnością! Oto przewodnik krok po kroku dotyczący szyfrowania i deszyfrowania dokumentów za pomocą Aspose.Words dla Java.
+Oczywiście! Oto przewodnik krok po kroku, jak wykonać szyfrowanie i deszyfrowanie dokumentów za pomocą Aspose.Words dla Java.
 
 # Szyfrowanie i deszyfrowanie dokumentów za pomocą Aspose.Words dla Java
 
-W tym samouczku omówimy, jak szyfrować i deszyfrować dokumenty za pomocą Aspose.Words dla Java. Szyfrowanie dokumentów gwarantuje, że Twoje wrażliwe dane pozostaną bezpieczne i będą miały do nich dostęp wyłącznie upoważnieni użytkownicy.
+W tym samouczku pokażemy, jak szyfrować i odszyfrowywać dokumenty za pomocą Aspose.Words for Java. Szyfrowanie dokumentów zapewnia, że Twoje poufne dane pozostaną bezpieczne i będą dostępne tylko dla autoryzowanych użytkowników.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zaczniemy, upewnij się, że masz następujące elementy:
+Zanim zaczniemy, upewnij się, że masz następujące rzeczy:
 
-- [Zestaw programistyczny Java (JDK)](https://www.oracle.com/java/technologies/javase-downloads.html) zainstalowany.
-- [Aspose.Words dla Javy](https://products.aspose.com/words/java) biblioteka. Można go pobrać z[Tutaj](https://downloads.aspose.com/words/java).
+- [Zestaw narzędzi programistycznych Java (JDK)](https://www.oracle.com/java/technologies/javase-downloads.html) zainstalowano.
+- [Aspose.Words dla Javy](https://products.aspose.com/words/java) biblioteka. Możesz ją pobrać z[Tutaj](https://downloads.aspose.com/words/java).
 
 ## Krok 1: Utwórz projekt Java
 
-Zacznijmy od utworzenia nowego projektu Java w Twoim ulubionym zintegrowanym środowisku programistycznym (IDE). Upewnij się, że do ścieżki klasy projektu dodano pliki JAR Aspose.Words.
+Zacznijmy od utworzenia nowego projektu Java w Twoim ulubionym zintegrowanym środowisku programistycznym (IDE). Upewnij się, że dodałeś pliki JAR Aspose.Words do ścieżki klas swojego projektu.
 
-## Krok 2: Zaszyfruj dokument
+## Krok 2: Szyfrowanie dokumentu
 
-Najpierw zaszyfrujmy dokument. Oto przykładowy kod, aby to zrobić:
+Najpierw zaszyfrujmy dokument. Oto przykładowy kod, który to zrobi:
 
 ```java
 import com.aspose.words.Document;
@@ -52,11 +52,11 @@ public class DocumentEncryptionExample {
 }
 ```
 
-W tym kodzie ładujemy dokument, ustawiamy hasło do szyfrowania, a następnie zapisujemy zaszyfrowany dokument jako „zaszyfrowany_dokument.docx”.
+W tym kodzie ładujemy dokument, ustawiamy hasło szyfrujące, a następnie zapisujemy zaszyfrowany dokument jako „encrypted_document.docx”.
 
 ## Krok 3: Odszyfruj dokument
 
-Zobaczmy teraz, jak odszyfrować zaszyfrowany dokument przy użyciu podanego hasła:
+Teraz zobaczmy, jak odszyfrować zaszyfrowany dokument, korzystając z podanego hasła:
 
 ```java
 import com.aspose.words.Document;
@@ -81,24 +81,24 @@ public class DocumentDecryptionExample {
 }
 ```
 
-Ten kod ładuje zaszyfrowany dokument, podaje hasło do odszyfrowania, a następnie zapisuje odszyfrowany dokument jako „deszyfrowany_dokument.docx”.
+Ten kod ładuje zaszyfrowany dokument, podaje hasło do odszyfrowania, a następnie zapisuje odszyfrowany dokument jako „decrypted_document.docx”.
 
 ## Często zadawane pytania
 
 ### Jak mogę zmienić algorytm szyfrowania?
-Aspose.Words for Java używa domyślnego algorytmu szyfrowania. Nie możesz tego zmienić bezpośrednio poprzez API.
+Aspose.Words for Java używa domyślnego algorytmu szyfrowania. Nie można go zmienić bezpośrednio przez API.
 
-### Co się stanie, jeśli zapomnę hasła do szyfrowania?
-Jeśli zapomnisz hasła szyfrowania, nie będzie możliwości odzyskania dokumentu. Upewnij się, że pamiętasz hasło lub trzymaj je w bezpiecznym miejscu.
+### Co się stanie, jeśli zapomnę hasła szyfrującego?
+Jeśli zapomnisz hasła szyfrującego, nie ma możliwości odzyskania dokumentu. Upewnij się, że pamiętasz hasło lub przechowuj je w bezpiecznym miejscu.
 
 ## Wniosek
 
-W tym samouczku zbadaliśmy proces szyfrowania i deszyfrowania dokumentów za pomocą Aspose.Words dla Java. Zapewnienie bezpieczeństwa poufnych dokumentów jest kluczowe, a Aspose.Words zapewnia solidny i prosty sposób, aby to osiągnąć.
+W tym samouczku zbadaliśmy proces szyfrowania i deszyfrowania dokumentów przy użyciu Aspose.Words dla Java. Zapewnienie bezpieczeństwa poufnych dokumentów jest kluczowe, a Aspose.Words zapewnia solidny i prosty sposób na osiągnięcie tego celu.
 
-Zaczęliśmy od skonfigurowania naszego projektu Java i upewnienia się, że mamy niezbędne wymagania wstępne, w tym bibliotekę Aspose.Words. Następnie przeszliśmy przez kolejne etapy szyfrowania dokumentu, dodając dodatkową warstwę ochrony, aby zapobiec nieautoryzowanemu dostępowi. Dowiedzieliśmy się także, jak w razie potrzeby odszyfrować zaszyfrowany dokument, korzystając z podanego hasła.
+Zaczęliśmy od skonfigurowania naszego projektu Java i upewnienia się, że mamy niezbędne warunki wstępne, w tym bibliotekę Aspose.Words. Następnie przeszliśmy przez kroki szyfrowania dokumentu, dodając dodatkową warstwę ochrony, aby zapobiec nieautoryzowanemu dostępowi. Dowiedzieliśmy się również, jak odszyfrować zaszyfrowany dokument, gdy było to potrzebne, używając określonego hasła.
 
-Należy pamiętać, że szyfrowanie dokumentów jest cennym środkiem bezpieczeństwa, ale wiąże się z odpowiedzialnością za bezpieczeństwo hasła szyfrującego. Jeśli zapomnisz hasła, nie ma możliwości odzyskania zawartości dokumentu.
+Ważne jest, aby pamiętać, że szyfrowanie dokumentów jest cennym środkiem bezpieczeństwa, ale wiąże się z odpowiedzialnością za zachowanie hasła szyfrującego w bezpiecznym miejscu. Jeśli zapomnisz hasła, nie ma możliwości odzyskania zawartości dokumentu.
 
-Wykonując kroki opisane w tym samouczku, możesz zwiększyć bezpieczeństwo aplikacji Java i skutecznie chronić poufne informacje w dokumentach.
+Postępując zgodnie z instrukcjami przedstawionymi w tym samouczku, możesz zwiększyć bezpieczeństwo swoich aplikacji Java i skutecznie chronić poufne informacje zawarte w dokumentach.
 
-Aspose.Words dla Java upraszcza proces manipulowania dokumentami i zapewnia bezpieczeństwo, umożliwiając programistom tworzenie solidnych aplikacji spełniających ich potrzeby w zakresie przetwarzania dokumentów.
+Aspose.Words for Java upraszcza proces manipulowania dokumentami i zapewniania ich bezpieczeństwa, umożliwiając programistom tworzenie niezawodnych aplikacji spełniających ich potrzeby w zakresie przetwarzania dokumentów.

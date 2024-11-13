@@ -2,7 +2,7 @@
 title: 表を直接挿入する
 linktitle: 表を直接挿入する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書に表を直接挿入する方法を学びます。詳細なステップバイステップのガイドに従って、文書作成を効率化します。
+description: Aspose.Words for .NET を使用して Word 文書に表を直接挿入する方法を学びます。詳細なステップバイステップ ガイドに従って、文書作成を効率化します。
 type: docs
 weight: 10
 url: /ja/net/programming-with-tables/insert-table-directly/
@@ -92,7 +92,7 @@ cell.FirstParagraph.AppendChild(new Run(doc, "Row 1, Cell 1 Text"));
 row.AppendChild(cell);
 ```
 
-このスニペットでは、セルを作成し、背景色を水色に設定し、幅を定義します。次に、テキストを保持するためにセルに段落と実行を追加します。
+このスニペットでは、セルを作成し、背景色を水色に設定し、幅を定義します。次に、テキストを保持するために、セルに段落と実行を追加します。
 
 ## ステップ4: 細胞のクローン作成
 

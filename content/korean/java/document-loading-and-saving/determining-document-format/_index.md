@@ -1,28 +1,28 @@
 ---
-title: Aspose.Words for Java에서 문서 형식 결정
+title: Java용 Aspose.Words에서 문서 형식 결정
 linktitle: 문서 형식 결정
 second_title: Aspose.Words Java 문서 처리 API
-description: Aspose.Words를 사용하여 Java에서 문서 형식을 감지하는 방법을 알아보세요. DOC, DOCX 등을 식별합니다. 파일을 효율적으로 정리하세요.
+description: Aspose.Words를 사용하여 Java에서 문서 형식을 감지하는 방법을 알아보세요. DOC, DOCX 등을 식별하세요. 파일을 효율적으로 정리하세요.
 type: docs
 weight: 25
 url: /ko/java/document-loading-and-saving/determining-document-format/
 ---
 
-## Aspose.Words for Java의 문서 형식 결정 소개
+## Aspose.Words for Java에서 문서 형식 결정 소개
 
-Java에서 문서 처리 작업을 수행할 때 처리 중인 파일의 형식을 결정하는 것이 중요합니다. Aspose.Words for Java는 문서 형식을 식별하는 강력한 기능을 제공하며 그 과정을 안내해 드립니다.
+Java에서 문서 처리를 할 때는 다루는 파일의 형식을 결정하는 것이 중요합니다. Aspose.Words for Java는 문서 형식을 식별하는 강력한 기능을 제공하며, 이 과정을 안내해 드리겠습니다.
 
-## 전제 조건
+## 필수 조건
 
-시작하기 전에 다음 전제 조건이 충족되었는지 확인하세요.
+시작하기에 앞서 다음과 같은 전제 조건이 충족되었는지 확인하세요.
 
 - [Aspose.Words for Java](https://releases.aspose.com/words/java/)
-- 시스템에 설치된 JDK(Java Development Kit)
+- 시스템에 Java Development Kit(JDK) 설치
 - Java 프로그래밍에 대한 기본 지식
 
-## 1단계: 디렉터리 설정
+## 1단계: 디렉토리 설정
 
-먼저, 파일을 효과적으로 정리하는 데 필요한 디렉토리를 설정해야 합니다. 다양한 문서 유형에 대한 디렉토리를 생성하겠습니다.
+먼저, 우리는 파일을 효과적으로 정리하기 위해 필요한 디렉토리를 설정해야 합니다. 우리는 다양한 문서 유형에 대한 디렉토리를 만들 것입니다.
 
 ```java
 File supportedDir = new File("Your Directory Path" + "Supported");
@@ -30,7 +30,7 @@ File unknownDir = new File("Your Directory Path" + "Unknown");
 File encryptedDir = new File("Your Directory Path" + "Encrypted");
 File pre97Dir = new File("Your Directory Path" + "Pre97");
 
-// 디렉토리가 아직 존재하지 않는 경우 디렉토리를 작성하십시오.
+// 아직 존재하지 않으면 디렉토리를 만듭니다.
 if (!supportedDir.exists())
     supportedDir.mkdir();
 if (!unknownDir.exists())
@@ -41,11 +41,11 @@ if (!pre97Dir.exists())
     pre97Dir.mkdir();
 ```
 
-지원되는 문서 유형, 알 수 없는 문서, 암호화된 문서 유형, 97 이전 문서 유형에 대한 디렉터리를 만들었습니다.
+지원되는 문서 유형, 알려지지 않은 문서 유형, 암호화된 문서 유형, 97년 이전 문서 유형에 대한 디렉토리를 만들었습니다.
 
 ## 2단계: 문서 형식 감지
 
-이제 디렉토리에 있는 문서의 형식을 감지해 보겠습니다. 이를 달성하기 위해 Java용 Aspose.Words를 사용할 것입니다.
+이제 디렉토리에 있는 문서의 형식을 감지해 보겠습니다. 이를 위해 Aspose.Words for Java를 사용하겠습니다.
 
 ```java
 Set<String> listFiles = Stream.of(new File("Your Directory Path").listFiles())
@@ -63,7 +63,7 @@ for (String fileName : listFiles) {
         case LoadFormat.DOC:
             System.out.println("\tMicrosoft Word 97-2003 document.");
             break;
-        // 필요에 따라 다른 문서 형식에 대한 케이스 추가
+        // 필요에 따라 다른 문서 형식에 대한 사례를 추가합니다.
     }
 
     // 암호화된 문서 처리
@@ -71,7 +71,7 @@ for (String fileName : listFiles) {
         System.out.println("\tAn encrypted document.");
         FileUtils.copyFile(new File(fileName), new File(encryptedDir, nameOnly));
     } else {
-        // 기타 문서 유형 처리
+        // 다른 문서 유형 처리
         switch (info.getLoadFormat()) {
             case LoadFormat.DOC_PRE_WORD_60:
                 FileUtils.copyFile(new File(fileName), new File(pre97Dir, nameOnly));
@@ -87,7 +87,7 @@ for (String fileName : listFiles) {
 }
 ```
 
-이 코드 조각에서는 파일을 반복하고, 해당 형식을 감지하고, 해당 디렉터리로 구성합니다.
+이 코드 조각에서는 파일을 반복하고, 형식을 감지하고, 이를 해당 디렉터리로 구성합니다.
 
 ## Aspose.Words for Java에서 문서 형식을 결정하기 위한 완전한 소스 코드
 
@@ -96,7 +96,7 @@ for (String fileName : listFiles) {
         File unknownDir = new File("Your Directory Path" + "Unknown");
         File encryptedDir = new File("Your Directory Path" + "Encrypted");
         File pre97Dir = new File("Your Directory Path" + "Pre97");
-        // 디렉토리가 아직 존재하지 않는 경우 디렉토리를 작성하십시오.
+        // 아직 존재하지 않으면 디렉토리를 만듭니다.
         if (supportedDir.exists() == false)
             supportedDir.mkdir();
         if (unknownDir.exists() == false)
@@ -183,26 +183,26 @@ for (String fileName : listFiles) {
 
 ## 결론
 
-효율적인 문서 처리를 위해서는 Aspose.Words for Java에서 문서 형식을 결정하는 것이 필수적입니다. 이 가이드에 설명된 단계를 통해 문서 유형을 식별하고 Java 애플리케이션에서 그에 따라 처리할 수 있습니다.
+Aspose.Words for Java에서 문서 형식을 결정하는 것은 효율적인 문서 처리에 필수적입니다. 이 가이드에 설명된 단계를 통해 문서 유형을 식별하고 Java 애플리케이션에서 적절히 처리할 수 있습니다.
 
-## FAQ
+## 자주 묻는 질문
 
 ### Java용 Aspose.Words를 어떻게 설치하나요?
 
- Java용 Aspose.Words를 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/java/) 제공된 설치 지침을 따르십시오.
+ Aspose.Words for Java는 다음에서 다운로드할 수 있습니다.[여기](https://releases.aspose.com/words/java/)제공된 설치 지침을 따르세요.
 
 ### 지원되는 문서 형식은 무엇입니까?
 
-Aspose.Words for Java는 DOC, DOCX, RTF, HTML 등을 포함한 다양한 문서 형식을 지원합니다. 전체 목록은 설명서를 참조하세요.
+Aspose.Words for Java는 DOC, DOCX, RTF, HTML 등 다양한 문서 형식을 지원합니다. 전체 목록은 설명서를 참조하세요.
 
 ### Aspose.Words for Java를 사용하여 암호화된 문서를 어떻게 감지할 수 있나요?
 
- 당신은 사용할 수 있습니다`FileFormatUtil.detectFileFormat()` 이 가이드에 설명된 대로 암호화된 문서를 탐지하는 방법입니다.
+ 당신은 사용할 수 있습니다`FileFormatUtil.detectFileFormat()` 이 가이드에서 설명하는 대로 암호화된 문서를 감지하는 방법입니다.
 
-### 이전 문서 형식으로 작업할 때 제한 사항이 있나요?
+### 이전 문서 형식을 사용할 때 제한이 있나요?
 
-MS Word 6 또는 Word 95와 같은 이전 문서 형식은 최신 응용 프로그램과의 기능 및 호환성 측면에서 제한이 있을 수 있습니다. 필요한 경우 이러한 문서를 업그레이드하거나 변환하는 것을 고려하십시오.
+MS Word 6 또는 Word 95와 같은 이전 문서 형식은 기능 및 최신 애플리케이션과의 호환성 측면에서 제한이 있을 수 있습니다. 필요한 경우 이러한 문서를 업그레이드하거나 변환하는 것을 고려하세요.
 
 ### Java 애플리케이션에서 문서 형식 감지를 자동화할 수 있습니까?
 
-예, 제공된 코드를 Java 애플리케이션에 통합하여 문서 형식 감지를 자동화할 수 있습니다. 이를 통해 감지된 형식을 기반으로 문서를 처리할 수 있습니다.
+네, 제공된 코드를 Java 애플리케이션에 통합하여 문서 형식 감지를 자동화할 수 있습니다. 이를 통해 감지된 형식에 따라 문서를 처리할 수 있습니다.

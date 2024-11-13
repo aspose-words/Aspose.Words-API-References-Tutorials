@@ -29,7 +29,7 @@ Innan vi börjar, se till att du har följande förutsättningar på plats:
 Låt oss börja med att skapa ett tomt dokument med Aspose.Words för Java:
 
 ```java
-//Java-kod för att skapa ett tomt dokument
+// Java-kod för att skapa ett tomt dokument
 Document doc = new Document();
 ```
 
@@ -41,17 +41,6 @@ Låt oss nu lägga till lite innehåll i vårt dokument:
 // Java-kod för att lägga till innehåll i dokumentet
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, Aspose.Words!");
-```
-
-## Anpassa dokumentelement
-
-Du kan anpassa olika dokumentelement, som typsnitt, stilar och formatering. Här är ett exempel på hur du ändrar teckenstorleken:
-
-```java
-// Java-kod för att ändra teckenstorlek
-Run run = (Run) doc.getChildNodes(NodeType.RUN, true).get(0);
-Font font = run.getFont();
-font.setSize(14);
 ```
 
 ## Skriva ut dokumentet
@@ -79,7 +68,7 @@ Skräddarsydd dokumentutskrift med Aspose.Words för Java ger företag möjlighe
 
 ### Hur kan jag installera Aspose.Words för Java?
 
- För att installera Aspose.Words för Java, ladda ner biblioteket från[här](https://releases.aspose.com/words/java/) och följ installationsanvisningarna.
+ För att installera Aspose.Words för Java, ladda ner biblioteket från[här](https://releases.aspose.com/words/java/)och följ installationsanvisningarna.
 
 ### Kan jag anpassa dokumentlayouten?
 

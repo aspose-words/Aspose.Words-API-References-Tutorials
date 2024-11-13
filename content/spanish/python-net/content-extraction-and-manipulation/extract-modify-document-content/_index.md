@@ -1,8 +1,8 @@
 ---
-title: Extracción y modificación de contenido en documentos de Word
-linktitle: Extracción y modificación de contenido en documentos de Word
-second_title: API de gestión de documentos Aspose.Words Python
-description: Aprenda a extraer y modificar contenido en documentos de Word usando Aspose.Words para Python. Guía paso a paso con código fuente.
+title: Cómo extraer y modificar contenido en documentos de Word
+linktitle: Cómo extraer y modificar contenido en documentos de Word
+second_title: API de gestión de documentos de Python de Aspose.Words
+description: Aprenda a extraer y modificar contenido en documentos de Word con Aspose.Words para Python. Guía paso a paso con código fuente.
 type: docs
 weight: 10
 url: /es/python-net/content-extraction-and-manipulation/extract-modify-document-content/
@@ -10,11 +10,11 @@ url: /es/python-net/content-extraction-and-manipulation/extract-modify-document-
 
 ## Introducción a Aspose.Words para Python
 
-Aspose.Words es una popular biblioteca de generación y manipulación de documentos que proporciona amplias capacidades para trabajar con documentos de Word mediante programación. Su API Python ofrece una amplia gama de funciones para extraer, modificar y manipular contenido dentro de documentos de Word.
+Aspose.Words es una biblioteca popular de generación y manipulación de documentos que ofrece amplias capacidades para trabajar con documentos de Word de manera programática. Su API de Python ofrece una amplia gama de funciones para extraer, modificar y manipular contenido dentro de documentos de Word.
 
 ## Instalación y configuración
 
-Para comenzar, asegúrese de tener Python instalado en su sistema. Luego puede instalar la biblioteca Aspose.Words para Python usando el siguiente comando:
+Para comenzar, asegúrese de tener Python instalado en su sistema. Luego, puede instalar la biblioteca Aspose.Words para Python con el siguiente comando:
 
 ```python
 pip install aspose-words
@@ -32,7 +32,7 @@ doc = Document("path/to/your/document.docx")
 
 ## Extrayendo texto
 
-Para extraer texto del documento, puede recorrer párrafos y ejecutar:
+Para extraer texto del documento, puede iterar a través de los párrafos y ejecutar:
 
 ```python
 for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
@@ -42,7 +42,7 @@ for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
 
 ## Modificar texto
 
-Puede modificar el texto configurando directamente el texto de corridas o párrafos:
+Puedes modificar el texto configurando directamente el texto de las líneas o párrafos:
 
 ```python
 for para in doc.get_child_nodes(asposewords.NodeType.PARAGRAPH, True):
@@ -62,7 +62,7 @@ run.get_font().set_color(255, 0, 0)
 
 ## Reemplazo de texto
 
- Reemplazar texto se puede lograr usando el`replace` método:
+ La sustitución del texto se puede lograr utilizando el`replace` método:
 
 ```python
 doc.get_range().replace("old_text", "new_text", False, False)
@@ -70,7 +70,7 @@ doc.get_range().replace("old_text", "new_text", False, False)
 
 ## Agregar y modificar imágenes
 
- Las imágenes se pueden agregar o reemplazar usando el`insert_image` método:
+ Se pueden agregar o reemplazar imágenes usando el`insert_image` método:
 
 ```python
 shape = doc.get_first_section().get_body().append_child(asposewords.Drawing.Shape(doc, asposewords.Drawing.ShapeType.IMAGE))
@@ -79,7 +79,7 @@ shape.get_image_data().set_source("path/to/image.jpg")
 
 ## Guardar el documento modificado
 
-Después de realizar modificaciones, guarde el documento:
+Luego de realizar las modificaciones, guarde el documento:
 
 ```python
 doc.save("path/to/modified/document.docx")
@@ -96,7 +96,7 @@ for table in doc.get_child_nodes(asposewords.NodeType.TABLE, True):
             text = cell.get_text()
 ```
 
-## Manejo de encabezados y pies de página
+## Cómo manejar encabezados y pies de página
 
 Se puede acceder y modificar los encabezados y pies de página:
 
@@ -107,7 +107,7 @@ header.get_paragraphs().add("Header content")
 
 ## Agregar hipervínculos
 
- Se pueden agregar hipervínculos usando el`insert_hyperlink` método:
+ Se pueden agregar hipervínculos utilizando el`insert_hyperlink` método:
 
 ```python
 run = doc.get_first_section().get_body().get_first_paragraph().get_runs().get(0)
@@ -115,7 +115,7 @@ run.get_font().set_color(0, 0, 255)
 doc.get_hyperlinks().add(run, "https://www.ejemplo.com")
 ```
 
-## Convertir a otros formatos
+## Conversión a otros formatos
 
 Aspose.Words admite la conversión de documentos a varios formatos:
 
@@ -125,25 +125,25 @@ doc.save("path/to/converted/document.pdf", asposewords.SaveFormat.PDF)
 
 ## Funciones avanzadas y automatización
 
-Aspose.Words ofrece funciones más avanzadas como combinación de correspondencia, comparación de documentos y más. Automatiza tareas complejas fácilmente.
+Aspose.Words ofrece funciones más avanzadas, como combinación de correspondencia, comparación de documentos y más. Automatice tareas complejas fácilmente.
 
 ## Conclusión
 
-Aspose.Words para Python es una biblioteca versátil que le permite manipular y modificar documentos de Word sin esfuerzo. Ya sea que necesite extraer texto, reemplazar contenido o formatear documentos, esta API proporciona las herramientas necesarias.
+Aspose.Words para Python es una biblioteca versátil que le permite manipular y modificar documentos de Word sin esfuerzo. Ya sea que necesite extraer texto, reemplazar contenido o dar formato a documentos, esta API le proporciona las herramientas necesarias.
 
 ## Preguntas frecuentes
 
 ### ¿Cómo puedo instalar Aspose.Words para Python?
 
- Para instalar Aspose.Words para Python, use el comando`pip install aspose-words`.
+ Para instalar Aspose.Words para Python, utilice el comando`pip install aspose-words`.
 
 ### ¿Puedo modificar el formato del texto usando esta biblioteca?
 
-Sí, puede modificar el formato del texto, como negrita, color y tamaño de fuente, utilizando Aspose.Words para la API de Python.
+Sí, puede modificar el formato del texto, como negrita, color y tamaño de fuente, utilizando la API de Aspose.Words para Python.
 
 ### ¿Es posible reemplazar texto específico dentro del documento?
 
- Por supuesto, puedes utilizar el`replace` Método para reemplazar texto específico dentro del documento.
+ Por supuesto, puedes utilizar el`replace` método para reemplazar texto específico dentro del documento.
 
 ### ¿Puedo agregar hipervínculos a mi documento de Word?
 

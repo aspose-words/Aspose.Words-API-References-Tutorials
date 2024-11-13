@@ -1,28 +1,28 @@
 ---
-title: Korzystanie z okienek zadań rozszerzenia sieciowego
-linktitle: Korzystanie z okienek zadań rozszerzenia sieciowego
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak dodawać i konfigurować okienka zadań rozszerzenia sieciowego w dokumentach programu Word przy użyciu Aspose.Words dla .NET w tym szczegółowym samouczku krok po kroku.
+title: Korzystanie z paneli zadań rozszerzeń internetowych
+linktitle: Korzystanie z paneli zadań rozszerzeń internetowych
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak dodawać i konfigurować panele zadań rozszerzeń internetowych w dokumentach programu Word przy użyciu Aspose.Words dla platformy .NET, korzystając ze szczegółowego samouczka krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/programming-with-webextension/using-web-extension-task-panes/
 ---
 ## Wstęp
 
-Witamy w tym szczegółowym samouczku dotyczącym korzystania z okienek zadań rozszerzenia sieciowego w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Jeśli kiedykolwiek chciałeś ulepszyć swoje dokumenty programu Word za pomocą interaktywnych okienek zadań, jesteś we właściwym miejscu. Ten przewodnik przeprowadzi Cię przez każdy krok, aby osiągnąć ten cel bezproblemowo.
+Witamy w tym dogłębnym samouczku dotyczącym korzystania z okienek zadań rozszerzeń internetowych w dokumencie Word przy użyciu Aspose.Words dla .NET. Jeśli kiedykolwiek chciałeś ulepszyć swoje dokumenty Word za pomocą interaktywnych okienek zadań, jesteś we właściwym miejscu. Ten przewodnik przeprowadzi Cię przez każdy krok, aby osiągnąć to bezproblemowo.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zagłębimy się w szczegóły, upewnijmy się, że masz wszystko, czego potrzebujesz:
+Zanim przejdziemy do konkretów, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
--  Aspose.Words dla .NET: Możesz go pobrać[Tutaj](https://releases.aspose.com/words/net/).
-- Środowisko programistyczne .NET: Visual Studio lub dowolne inne IDE, które wolisz.
-- Podstawowa znajomość języka C#: pomoże Ci to w podążaniu za przykładami kodu.
--  Licencja na Aspose.Words: Możesz ją kupić[Tutaj](https://purchase.aspose.com/buy) lub zdobądź licencję tymczasową[Tutaj](https://purchase.aspose.com/temporary-license/).
+-  Aspose.Words dla .NET: Można go pobrać[Tutaj](https://releases.aspose.com/words/net/).
+- Środowisko programistyczne .NET: Visual Studio lub inne preferowane środowisko IDE.
+- Podstawowa znajomość języka C#: Ułatwi Ci to śledzenie przykładów kodu.
+-  Licencja na Aspose.Words: Możesz kupić jedną[Tutaj](https://purchase.aspose.com/buy) lub uzyskaj tymczasową licencję[Tutaj](https://purchase.aspose.com/temporary-license/).
 
 ## Importuj przestrzenie nazw
 
-Zanim zaczniemy kodować, upewnij się, że w projekcie zaimportowano następujące przestrzenie nazw:
+Zanim zaczniesz kodować, upewnij się, że do projektu zaimportowano następujące przestrzenie nazw:
 
 ```csharp
 using Aspose.Words;
@@ -31,18 +31,18 @@ using Aspose.Words.WebExtensions;
 
 ## Przewodnik krok po kroku
 
-Podzielmy teraz proces na łatwe do wykonania kroki.
+Teraz podzielimy ten proces na łatwe do wykonania kroki.
 
 ### Krok 1: Konfigurowanie katalogu dokumentów
 
-Najpierw musimy ustawić ścieżkę do katalogu dokumentów. Tutaj zostanie zapisany dokument programu Word.
+Po pierwsze, musimy ustawić ścieżkę do katalogu dokumentów. To tutaj zostanie zapisany dokument Word.
 
 ```csharp
 // Ścieżka do katalogu dokumentów.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do folderu dokumentów.
+ Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do folderu z dokumentami.
 
 ### Krok 2: Tworzenie nowego dokumentu
 
@@ -52,11 +52,11 @@ Następnie utworzymy nowy dokument Word za pomocą Aspose.Words.
 Document doc = new Document();
 ```
 
- Ta linia inicjuje nową instancję klasy`Document` klasa, która reprezentuje dokument programu Word.
+ Ta linia inicjuje nową instancję`Document` Klasa, która reprezentuje dokument Worda.
 
-### Krok 3: Dodawanie okienka zadań
+### Krok 3: Dodawanie panelu zadań
 
-Teraz dodamy okienko zadań do naszego dokumentu. Okienka zadań są przydatne do udostępniania dodatkowych funkcji i narzędzi w dokumencie programu Word.
+Teraz dodamy Panel zadań do naszego dokumentu. Panele zadań są przydatne do zapewniania dodatkowych funkcjonalności i narzędzi w dokumencie Word.
 
 ```csharp
 TaskPane taskPane = new TaskPane();
@@ -65,9 +65,9 @@ doc.WebExtensionTaskPanes.Add(taskPane);
 
  Tutaj tworzymy nowy`TaskPane` obiekt i dodaj go do dokumentu`WebExtensionTaskPanes` kolekcja.
 
-### Krok 4: Konfiguracja okienka zadań
+### Krok 4: Konfigurowanie panelu zadań
 
-Aby wyświetlić nasz Panel zadań i ustawić jego właściwości, używamy następującego kodu:
+Aby uczynić nasz Panel zadań widocznym i ustawić jego właściwości, używamy następującego kodu:
 
 ```csharp
 taskPane.DockState = TaskPaneDockState.Right;
@@ -75,13 +75,13 @@ taskPane.IsVisible = true;
 taskPane.Width = 300;
 ```
 
-- `DockState` ustawia miejsce, w którym pojawi się okienko zadań. W tym przypadku jest to po prawej stronie.
-- `IsVisible` zapewnia widoczność okienka zadań.
-- `Width` ustawia szerokość okienka zadań.
+- `DockState` ustawia, gdzie pojawi się Panel zadań. W tym przypadku jest to po prawej stronie.
+- `IsVisible` zapewnia widoczność panelu zadań.
+- `Width` ustawia szerokość Panelu zadań.
 
-### Krok 5: Konfigurowanie odniesienia do rozszerzenia internetowego
+### Krok 5: Konfigurowanie rozszerzenia internetowego
 
-Następnie konfigurujemy odwołanie do rozszerzenia sieciowego, które zawiera identyfikator, wersję, typ sklepu i sklep.
+Następnie konfigurujemy odniesienie do rozszerzenia internetowego, które obejmuje identyfikator, wersję, typ sklepu i sklep.
 
 ```csharp
 taskPane.WebExtension.Reference.Id = "wa102923726";
@@ -90,14 +90,14 @@ taskPane.WebExtension.Reference.StoreType = WebExtensionStoreType.OMEX;
 taskPane.WebExtension.Reference.Store = "th-TH";
 ```
 
-- `Id`to unikalny identyfikator rozszerzenia internetowego.
+- `Id`jest unikalnym identyfikatorem rozszerzenia internetowego.
 - `Version` określa wersję rozszerzenia.
-- `StoreType` wskazuje typ sklepu (w tym przypadku OMEX).
-- `Store` określa kod języka/kultury sklepu.
+- `StoreType` wskazuje rodzaj sklepu (w tym przypadku OMEX).
+- `Store` określa kod językowy/kulturowy sklepu.
 
 ### Krok 6: Dodawanie właściwości do rozszerzenia internetowego
 
-Do rozszerzenia internetowego możesz dodać właściwości, aby zdefiniować jego zachowanie lub zawartość.
+Możesz dodać właściwości do swojego rozszerzenia internetowego, aby zdefiniować jego zachowanie lub zawartość.
 
 ```csharp
 taskPane.WebExtension.Properties.Add(new WebExtensionProperty("mailchimpCampaign", "mailchimpCampaign"));
@@ -107,29 +107,29 @@ taskPane.WebExtension.Properties.Add(new WebExtensionProperty("mailchimpCampaign
 
 ### Krok 7: Powiązanie rozszerzenia internetowego
 
-Na koniec dodajemy powiązania do naszego rozszerzenia internetowego. Wiązania umożliwiają powiązanie rozszerzenia z określonymi częściami dokumentu.
+Na koniec dodajemy powiązania do naszego rozszerzenia internetowego. Powiązania pozwalają na łączenie rozszerzenia z określonymi częściami dokumentu.
 
 ```csharp
 taskPane.WebExtension.Bindings.Add(new WebExtensionBinding("UnnamedBinding_0_1506535429545", WebExtensionBindingType.Text, "194740422"));
 ```
 
-- `UnnamedBinding_0_1506535429545` to nazwa wiązania.
-- `WebExtensionBindingType.Text` wskazuje, że powiązanie jest typu tekstowego.
-- `194740422` to identyfikator części dokumentu, z którym powiązane jest rozszerzenie.
+- `UnnamedBinding_0_1506535429545` jest nazwą wiązania.
+- `WebExtensionBindingType.Text` oznacza, że powiązanie jest typu tekstowego.
+- `194740422` jest identyfikatorem części dokumentu, do której rozszerzenie jest powiązane.
 
 ### Krok 8: Zapisywanie dokumentu
 
-Po skonfigurowaniu wszystkiego zapisz dokument.
+Po skonfigurowaniu wszystkich ustawień zapisz dokument.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
 ```
 
-Linia ta zapisuje dokument we wskazanym katalogu o podanej nazwie pliku.
+Ten wiersz zapisuje dokument w określonym katalogu pod podaną nazwą pliku.
 
-### Krok 9: Ładowanie i wyświetlanie informacji w okienku zadań
+### Krok 9: Ładowanie i wyświetlanie informacji w panelu zadań
 
-Aby zweryfikować i wyświetlić informacje w panelu zadań, ładujemy dokument i przeglądamy panele zadań.
+Aby sprawdzić i wyświetlić informacje w panelu zadań, ładujemy dokument i przechodzimy przez panele zadań.
 
 ```csharp
 doc = new Document(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
@@ -143,25 +143,25 @@ foreach (TaskPane taskPaneInfo in doc.WebExtensionTaskPanes)
 }
 ```
 
-Ten kod ładuje dokument i drukuje dostawcę, wersję i identyfikator katalogu każdego okienka zadań w konsoli.
+Ten kod ładuje dokument i drukuje dostawcę, wersję i identyfikator katalogu każdego panelu zadań w konsoli.
 
 ## Wniosek
 
-I tyle! Pomyślnie dodałeś i skonfigurowałeś okienko zadań rozszerzenia sieciowego w dokumencie programu Word przy użyciu Aspose.Words dla .NET. Ta zaawansowana funkcja może znacznie ulepszyć dokumenty programu Word, udostępniając dodatkowe funkcje bezpośrednio w dokumencie. 
+I to wszystko! Udało Ci się dodać i skonfigurować panel zadań rozszerzenia internetowego w dokumencie Word przy użyciu Aspose.Words dla .NET. Ta potężna funkcja może znacznie ulepszyć Twoje dokumenty Word, zapewniając dodatkowe funkcjonalności bezpośrednio w dokumencie. 
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Co to jest okienko zadań w programie Word?
-Okienko zadań to element interfejsu udostępniający dodatkowe narzędzia i funkcje w dokumencie programu Word, zwiększające interakcję z użytkownikiem i produktywność.
+### Czym jest okienko zadań w programie Word?
+Okienko zadań to element interfejsu, który udostępnia dodatkowe narzędzia i funkcjonalności w dokumencie programu Word, zwiększając interakcję użytkownika i jego produktywność.
 
-### Czy mogę dostosować wygląd okienka zadań?
- Tak, możesz dostosować wygląd Okienka zadań, ustawiając właściwości takie jak`DockState`, `IsVisible` , I`Width`.
+### Czy mogę dostosować wygląd Panelu zadań?
+ Tak, możesz dostosować wygląd Panelu zadań, ustawiając takie właściwości, jak:`DockState`, `IsVisible` , I`Width`.
 
-### Jakie są właściwości rozszerzenia internetowego?
+### Czym są właściwości rozszerzeń internetowych?
 Właściwości rozszerzenia internetowego to niestandardowe właściwości, które można dodać do rozszerzenia internetowego w celu zdefiniowania jego zachowania lub zawartości.
 
 ### Jak powiązać rozszerzenie internetowe z częścią dokumentu?
- Możesz powiązać rozszerzenie internetowe z częścią dokumentu za pomocą`WebExtensionBinding` class, określając typ powiązania i identyfikator celu.
+ Możesz powiązać rozszerzenie internetowe z częścią dokumentu za pomocą`WebExtensionBinding` Klasa, określająca typ powiązania i identyfikator docelowy.
 
 ### Gdzie mogę znaleźć więcej informacji na temat Aspose.Words dla .NET?
- Można znaleźć szczegółową dokumentację[Tutaj](https://reference.aspose.com/words/net/).
+ Szczegółową dokumentację można znaleźć[Tutaj](https://reference.aspose.com/words/net/).

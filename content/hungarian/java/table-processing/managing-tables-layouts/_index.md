@@ -101,7 +101,7 @@ table.getRows().get(0).getCells().get(0).getParagraphs().get(0).getRuns().get(0)
 ## Gyakran Ismételt Kérdések (GYIK)
 
 ### Hogyan állíthatok be egy adott asztalszélességet?
- Egy táblázat adott szélességének beállításához használja a`setPreferredWidth` módszerrel, ahogy a példánkban is látható.
+ A táblázat adott szélességének beállításához használja a`setPreferredWidth` módszerrel, ahogy a példánkban is látható.
 
 ### Egyesíthetem a cellákat egy táblázatban?
 Igen, egyesíthet cellákat egy táblázatban az Aspose.Words használatával, amint az az útmutatóban látható.

@@ -9,7 +9,7 @@ url: /ja/net/basic-conversions/docx-to-markdown/
 ---
 ## 導入
 
-.NET 開発の分野では、Word ドキュメントをプログラムで操作すると、生産性と機能性が大幅に向上します。Aspose.Words for .NET は、開発者がドキュメント処理機能をアプリケーションにシームレスに統合できるようにする強力な API として際立っています。ドキュメントの変換、作成、変更、または最初からの生成など、Aspose.Words はこれらのタスクを効率的に合理化する強力なツールを提供します。
+.NET 開発の分野では、Word ドキュメントをプログラムで操作すると、生産性と機能性が大幅に向上します。Aspose.Words for .NET は、開発者がドキュメント処理機能をアプリケーションにシームレスに統合できるようにする強力な API として際立っています。ドキュメントの変換、作成、変更、または最初からの生成など、どのような作業でも、Aspose.Words はこれらの作業を効率的に合理化する強力なツールを提供します。
 
 ## 前提条件
 
@@ -31,30 +31,14 @@ using Aspose.Words.DocumentBuilder;
 
 ## ステップ1: DOCXファイルを読み込む
 
-まず、`Document`オブジェクトを作成し、DOCX ファイルをそこに読み込みます。
+まず、`Document`オブジェクトを作成し、DOCX ファイルをその中に読み込みます。
 
 ```csharp
 string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
 Document doc = new Document(dataDir + "YourDocument.docx");
 ```
 
-## ステップ2: DocumentBuilderオブジェクトを作成する
-
-次に、`DocumentBuilder`ドキュメントの操作を容易にするオブジェクト。
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-## ステップ3: ドキュメントコンテンツを操作する
-
-使用`DocumentBuilder`オブジェクトを使用して、必要に応じてコンテンツを操作します。たとえば、テキストや書式を追加します。
-
-```csharp
-builder.Writeln("Insert your text or content manipulation code here!");
-```
-
-## ステップ4: Markdownとして保存
+## ステップ2: Markdownとして保存
 
 最後に、変更したドキュメントを Markdown 形式で保存します。
 

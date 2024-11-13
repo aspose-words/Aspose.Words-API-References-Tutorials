@@ -66,7 +66,7 @@ public static ArrayList<Node> extractContentBetweenNodes(Node startNode, Node en
     //ドキュメントから抽出している現在のノード。
     Node currNode = startNode;
 
-    //コンテンツの抽出を開始します。すべてのブロックレベルのノードを処理し、特に最初のノードを分割します。
+    //コンテンツの抽出を開始します。すべてのブロックレベルのノードを処理し、特に最初の
     //必要に応じて最後のノードを追加して、段落の書式設定が保持されるようにします。
     //この方法は通常の抽出器よりも少し複雑で、因数分解する必要がある。
     //インライン ノード、フィールド、ブックマークなどを使用して抽出することで、有用になります。
@@ -125,7 +125,7 @@ public static Document generateDocument(Document srcDoc, ArrayList<Node> nodes) 
     //空のドキュメントから最初の段落を削除します。
     dstDoc.getFirstSection().getBody().removeAllChildren();
     
-    //リストの各ノードを新しいドキュメントにインポートします。ノードの元の書式設定を維持します。
+    //リストの各ノードを新しいドキュメントにインポートします。ノードの元の書式を維持します。
     NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
     for (Node node : nodes) {
         Node importNode = importer.importNode(node, true);

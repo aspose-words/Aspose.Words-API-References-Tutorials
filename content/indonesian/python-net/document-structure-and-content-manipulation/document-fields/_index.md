@@ -1,26 +1,26 @@
 ---
-title: Menangani Bidang dan Data di Dokumen Word
-linktitle: Menangani Bidang dan Data di Dokumen Word
-second_title: API Manajemen Dokumen Aspose.Words Python
-description: Pelajari cara menangani bidang dan data dalam dokumen Word menggunakan Aspose.Words untuk Python. Panduan langkah demi langkah dengan contoh kode untuk konten dinamis, otomatisasi, dan banyak lagi.
+title: Menangani Bidang dan Data dalam Dokumen Word
+linktitle: Menangani Bidang dan Data dalam Dokumen Word
+second_title: API Manajemen Dokumen Python Aspose.Words
+description: Pelajari cara menangani kolom dan data dalam dokumen Word menggunakan Aspose.Words untuk Python. Panduan langkah demi langkah dengan contoh kode untuk konten dinamis, otomatisasi, dan banyak lagi.
 type: docs
 weight: 12
 url: /id/python-net/document-structure-and-content-manipulation/document-fields/
 ---
 
-Manipulasi bidang dan data di dokumen Word dapat sangat meningkatkan otomatisasi dokumen dan representasi data. Dalam panduan ini, kita akan mempelajari cara bekerja dengan bidang dan data menggunakan Aspose.Words untuk Python API. Dari memasukkan konten dinamis hingga mengekstraksi data, kami akan membahas langkah-langkah penting beserta contoh kode.
+Bidang dan manipulasi data dalam dokumen Word dapat meningkatkan otomatisasi dokumen dan representasi data secara signifikan. Dalam panduan ini, kita akan menjelajahi cara bekerja dengan bidang dan data menggunakan API Aspose.Words untuk Python. Mulai dari memasukkan konten dinamis hingga mengekstrak data, kita akan membahas langkah-langkah penting beserta contoh kode.
 
 ## Perkenalan
 
-Dokumen Microsoft Word sering kali memerlukan konten dinamis seperti tanggal, perhitungan, atau data dari sumber eksternal. Aspose.Words untuk Python menyediakan cara yang ampuh untuk berinteraksi dengan elemen-elemen ini secara terprogram.
+Dokumen Microsoft Word sering kali memerlukan konten dinamis seperti tanggal, perhitungan, atau data dari sumber eksternal. Aspose.Words untuk Python menyediakan cara yang hebat untuk berinteraksi dengan elemen-elemen ini secara terprogram.
 
 ## Memahami Bidang Dokumen Word
 
-Bidang adalah tempat penampung dalam dokumen yang menampilkan data secara dinamis. Mereka dapat digunakan untuk berbagai tujuan seperti menampilkan tanggal saat ini, referensi silang konten, atau melakukan penghitungan.
+Kolom adalah tempat penampung dalam dokumen yang menampilkan data secara dinamis. Kolom dapat digunakan untuk berbagai keperluan seperti menampilkan tanggal saat ini, merujuk silang konten, atau melakukan perhitungan.
 
 ## Memasukkan Bidang Sederhana
 
- Untuk menyisipkan bidang, Anda dapat menggunakan`FieldBuilder` kelas. Misalnya, untuk memasukkan kolom tanggal saat ini:
+ Untuk memasukkan bidang, Anda dapat menggunakan`FieldBuilder` kelas. Misalnya, untuk memasukkan kolom tanggal saat ini:
 
 ```python
 from asposewords import Document, FieldBuilder
@@ -33,15 +33,15 @@ doc.save('document_with_date_field.docx')
 
 ## Bekerja dengan Bidang Tanggal dan Waktu
 
-Bidang tanggal dan waktu dapat dikustomisasi menggunakan sakelar format. Misalnya, untuk menampilkan tanggal dalam format berbeda:
+Kolom tanggal dan waktu dapat disesuaikan menggunakan sakelar format. Misalnya, untuk menampilkan tanggal dalam format yang berbeda:
 
 ```python
 builder.insert_field('DATE \\@ "dd/MM/yyyy"')
 ```
 
-## Menggabungkan Bidang Numerik dan Terhitung
+## Menggabungkan Bidang Numerik dan Bidang Terhitung
 
-Bidang numerik dapat digunakan untuk perhitungan otomatis. Misalnya, untuk membuat kolom yang menghitung jumlah dua angka:
+Kolom numerik dapat digunakan untuk perhitungan otomatis. Misalnya, untuk membuat kolom yang menghitung jumlah dua angka:
 
 ```python
 builder.insert_field('= 5 + 3')
@@ -58,9 +58,9 @@ if field:
     field_result = field.result
 ```
 
-## Mengotomatiskan Pembuatan Dokumen dengan Bidang
+## Mengotomatiskan Pembuatan Dokumen dengan Fields
 
-Bidang sangat penting untuk pembuatan dokumen otomatis. Anda dapat mengisi kolom dengan data dari sumber eksternal:
+Kolom sangat penting untuk pembuatan dokumen otomatis. Anda dapat mengisi kolom dengan data dari sumber eksternal:
 
 ```python
 data = fetch_data_from_database()
@@ -69,15 +69,15 @@ builder.insert_field(f'MERGEFIELD Name \\* MERGEFORMAT')
 
 ## Mengintegrasikan Bidang dengan Sumber Data
 
-Bidang dapat ditautkan ke sumber data eksternal seperti Excel. Hal ini memungkinkan pembaruan nilai bidang secara real-time ketika sumber data berubah.
+Kolom dapat ditautkan ke sumber data eksternal seperti Excel. Hal ini memungkinkan pembaruan nilai kolom secara real-time saat sumber data berubah.
 
 ```python
 builder.insert_field('LINK Excel.Sheet "path_to_excel_file" "Sheet1!A1"')
 ```
 
-## Meningkatkan Interaksi Pengguna dengan Bidang Formulir
+## Meningkatkan Interaksi Pengguna dengan Kolom Formulir
 
-Bidang formulir membuat dokumen menjadi interaktif. Anda dapat menyisipkan kolom formulir seperti kotak centang atau input teks:
+Kolom formulir membuat dokumen menjadi interaktif. Anda dapat menyisipkan kolom formulir seperti kotak centang atau input teks:
 
 ```python
 builder.insert_field('FORMCHECKBOX "Check this"')
@@ -85,7 +85,7 @@ builder.insert_field('FORMCHECKBOX "Check this"')
 
 ## Menangani Hyperlink dan Referensi Silang
 
-Bidang dapat membuat hyperlink dan referensi silang:
+Kolom dapat membuat hyperlink dan referensi silang:
 
 ```python
 builder.insert_field('HYPERLINK "https://www.example.com" "Kunjungi situs web kami"')
@@ -93,15 +93,15 @@ builder.insert_field('HYPERLINK "https://www.example.com" "Kunjungi situs web ka
 
 ## Menyesuaikan Format Bidang
 
-Bidang dapat diformat menggunakan sakelar:
+Kolom dapat diformat menggunakan sakelar:
 
 ```python
 builder.insert_field('DATE \\@ "MMMM yyyy"')
 ```
 
-## Mengatasi Masalah Lapangan
+## Pemecahan Masalah Lapangan
 
-Bidang mungkin tidak diperbarui seperti yang diharapkan. Pastikan pembaruan otomatis diaktifkan:
+Kolom mungkin tidak diperbarui seperti yang diharapkan. Pastikan pembaruan otomatis diaktifkan:
 
 ```python
 doc.update_fields()
@@ -109,30 +109,30 @@ doc.update_fields()
 
 ## Kesimpulan
 
-Menangani bidang dan data secara efektif di dokumen Word memberdayakan Anda untuk membuat dokumen yang dinamis dan otomatis. Aspose.Words untuk Python menyederhanakan proses ini, menawarkan berbagai fitur.
+Penanganan kolom dan data secara efektif dalam dokumen Word memungkinkan Anda membuat dokumen yang dinamis dan otomatis. Aspose.Words untuk Python menyederhanakan proses ini, dengan menawarkan berbagai fitur.
 
-## FAQ
+## Tanya Jawab Umum
 
 ### Bagaimana cara memperbarui nilai bidang secara manual?
 
- Untuk memperbarui nilai bidang secara manual, pilih bidang tersebut dan tekan`F9`.
+ Untuk memperbarui nilai bidang secara manual, pilih bidang dan tekan`F9`.
 
-### Bisakah saya menggunakan kolom di area header dan footer?
+### Dapatkah saya menggunakan kolom di area header dan footer?
 
-Ya, field dapat digunakan di area header dan footer seperti di dokumen utama.
+Ya, kolom dapat digunakan di area header dan footer seperti pada dokumen utama.
 
-### Apakah bidang didukung di semua format Word?
+### Apakah bidang didukung dalam semua format Word?
 
-Sebagian besar tipe bidang didukung dalam berbagai format Word, namun beberapa mungkin berperilaku berbeda dalam format berbeda.
+Sebagian besar jenis bidang didukung dalam berbagai format Word, tetapi beberapa mungkin berperilaku berbeda dalam format yang berbeda.
 
-### Bagaimana cara melindungi bidang dari pengeditan yang tidak disengaja?
+### Bagaimana saya dapat melindungi bidang dari penyuntingan yang tidak disengaja?
 
-Anda dapat melindungi bidang dari pengeditan yang tidak disengaja dengan menguncinya. Klik kanan bidang tersebut, pilih "Edit Bidang", dan aktifkan opsi "Terkunci".
+Anda dapat melindungi kolom dari penyuntingan yang tidak disengaja dengan menguncinya. Klik kanan kolom, pilih "Edit Kolom," dan aktifkan opsi "Terkunci".
 
-### Apakah mungkin untuk menyatukan bidang satu sama lain?
+### Mungkinkah untuk menumpuk bidang-bidang di dalam satu sama lain?
 
-Ya, bidang dapat disarangkan satu sama lain untuk membuat konten dinamis yang kompleks.
+Ya, bidang dapat ditumpuk satu sama lain untuk membuat konten dinamis yang kompleks.
 
 ## Akses Lebih Banyak Sumber Daya
 
- Untuk informasi lebih rinci dan contoh kode, kunjungi[Aspose.Words untuk referensi Python API](https://reference.aspose.com/words/python-net/) . Untuk mengunduh perpustakaan versi terbaru, kunjungi[Halaman unduh Aspose.Words untuk Python](https://releases.aspose.com/words/python/).
+ Untuk informasi lebih rinci dan contoh kode, kunjungi[Aspose.Words untuk referensi API Python](https://reference.aspose.com/words/python-net/) Untuk mengunduh versi terbaru perpustakaan, kunjungi[Halaman unduhan Aspose.Words untuk Python](https://releases.aspose.com/words/python/).

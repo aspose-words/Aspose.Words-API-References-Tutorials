@@ -55,7 +55,7 @@ paragraphFormat.AddSpaceBetweenFarEastAndAlpha = true;
 paragraphFormat.AddSpaceBetweenFarEastAndDigit = true;
 ```
 
- Beállítás által`AddSpaceBetweenFarEastAndAlpha`és`AddSpaceBetweenFarEastAndDigit` hogy`true`, azt mondjuk az Aspose.Words-nek, hogy automatikusan állítsa be az ázsiai karakterek és a latin betűk vagy számjegyek közötti távolságot.
+ Beállítás által`AddSpaceBetweenFarEastAndAlpha` és`AddSpaceBetweenFarEastAndDigit` hogy`true`, azt mondjuk az Aspose.Words-nek, hogy automatikusan állítsa be az ázsiai karakterek és a latin betűk vagy számjegyek közötti távolságot.
 
 ## 3. lépés: Szöveg hozzáadása a dokumentumhoz
 

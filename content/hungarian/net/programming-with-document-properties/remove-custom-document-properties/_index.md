@@ -101,10 +101,10 @@ Az Aspose.Words for .NET egy hatékony könyvtár Word-dokumentumokkal való pro
 Az Aspose.Words for .NET kifejezetten .NET-alkalmazásokhoz készült. Az Aspose azonban hasonló könyvtárakat kínál a Java és más platformokon.
 
 ### 3. Hogyan szerezhetem be az Aspose.Words .NET ingyenes próbaverzióját?
- Tudod[tölts le egy ingyenes próbaverziót](https://releases.aspose.com/) az Aspose webhelyéről.
+ Megteheti[tölts le egy ingyenes próbaverziót](https://releases.aspose.com/) az Aspose webhelyéről.
 
 ### 4. Hol találok további oktatóanyagokat az Aspose.Words for .NET-ről?
  Nézze meg a[dokumentáció](https://reference.aspose.com/words/net/) további oktatóanyagokért és példákért.
 
 ### 5. Hogyan vásárolhatok licencet az Aspose.Words for .NET-hez?
- Tudod[vásároljon licencet](https://purchase.aspose.com/buy) közvetlenül az Aspose webhelyéről.
+ Megteheti[vásároljon licencet](https://purchase.aspose.com/buy) közvetlenül az Aspose webhelyéről.

@@ -1,28 +1,28 @@
 ---
 title: Przekreślenie
 linktitle: Przekreślenie
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak zastosować formatowanie przekreślone do tekstu za pomocą Aspose.Words dla .NET, korzystając z naszego przewodnika krok po kroku. Zwiększ swoje umiejętności przetwarzania dokumentów.
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak stosować formatowanie przekreślone do tekstu za pomocą Aspose.Words dla .NET dzięki naszemu przewodnikowi krok po kroku. Udoskonal swoje umiejętności przetwarzania dokumentów.
 type: docs
 weight: 10
 url: /pl/net/working-with-markdown/strikethrough/
 ---
 ## Wstęp
 
-Witamy w tym szczegółowym przewodniku na temat stosowania formatowania przekreślonego do tekstu za pomocą Aspose.Words dla .NET. Jeśli chcesz udoskonalić swoje umiejętności przetwarzania dokumentów i nadać tekstowi niepowtarzalny charakter, jesteś we właściwym miejscu. Zanurzmy się!
+Witamy w tym szczegółowym przewodniku dotyczącym stosowania formatowania przekreślonego do tekstu za pomocą Aspose.Words dla .NET. Jeśli chcesz udoskonalić swoje umiejętności przetwarzania dokumentów i dodać tekstowi wyjątkowego charakteru, jesteś we właściwym miejscu. Zanurzmy się!
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zaczniemy, upewnij się, że masz następujące elementy:
+Zanim zaczniemy, upewnij się, że masz następujące rzeczy:
 
 -  Aspose.Words dla .NET: Pobierz[Tutaj](https://releases.aspose.com/words/net/).
-- .NET Framework: Upewnij się, że masz zainstalowaną platformę .NET Framework w swoim systemie.
-- Środowisko programistyczne: IDE takie jak Visual Studio.
-- Podstawowa znajomość języka C#: Konieczna jest znajomość programowania w języku C#.
+- .NET Framework: Upewnij się, że w systemie jest zainstalowany .NET Framework.
+- Środowisko programistyczne: IDE, np. Visual Studio.
+- Podstawowa znajomość języka C#: Znajomość programowania w języku C# jest konieczna.
 
 ## Importuj przestrzenie nazw
 
-Aby rozpocząć, musisz zaimportować niezbędne przestrzenie nazw. Są one niezbędne do uzyskania dostępu do biblioteki Aspose.Words i jej funkcji.
+Na początek musisz zaimportować niezbędne przestrzenie nazw. Są one niezbędne do uzyskania dostępu do biblioteki Aspose.Words i jej funkcji.
 
 ```csharp
 using System;
@@ -30,12 +30,12 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-## Krok 1: Zainicjuj narzędzie DocumentBuilder
+## Krok 1: Zainicjuj DocumentBuilder
 
- The`DocumentBuilder` class to potężne narzędzie w Aspose.Words, które pozwala z łatwością dodawać treść do dokumentu.
+Ten`DocumentBuilder` class to potężne narzędzie w Aspose.Words, które umożliwia łatwe dodawanie treści do dokumentu.
 
 ```csharp
-// Zainicjuj narzędzie DocumentBuilder.
+// Zainicjuj DocumentBuilder.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
@@ -44,36 +44,36 @@ DocumentBuilder builder = new DocumentBuilder();
 Teraz zastosujmy właściwość przekreślenia do naszego tekstu. Wiąże się to z ustawieniem`StrikeThrough` własność`Font` oponować`true`.
 
 ```csharp
-// Zrób przekreślenie tekstu.
+// Przekreśl tekst.
 builder.Font.StrikeThrough = true;
 ```
 
-## Krok 3: Napisz tekst przekreśleniem
+## Krok 3: Napisz tekst z przekreśleniem
 
- Po ustawieniu właściwości przekreślenia możemy teraz dodać nasz tekst. The`Writeln` metoda doda tekst do dokumentu.
+ Po ustawieniu właściwości przekreślenia możemy teraz dodać nasz tekst.`Writeln` Metoda doda tekst do dokumentu.
 
 ```csharp
-// Wpisz tekst za pomocą przekreślenia.
+// Napisz tekst przekreślając go.
 builder.Writeln("This text will be StrikeThrough");
 ```
 
 ## Wniosek
 
-I masz to! Pomyślnie dodałeś przekreślenie do swojego tekstu przy użyciu Aspose.Words dla .NET. Ta potężna biblioteka otwiera świat możliwości przetwarzania i dostosowywania dokumentów. Niezależnie od tego, czy tworzysz raporty, listy, czy inny rodzaj dokumentów, opanowanie tych funkcji niewątpliwie zwiększy Twoją produktywność i jakość wyników.
+I masz! Udało Ci się dodać formatowanie przekreślenia do tekstu za pomocą Aspose.Words dla .NET. Ta potężna biblioteka otwiera świat możliwości przetwarzania i dostosowywania dokumentów. Niezależnie od tego, czy tworzysz raporty, listy czy jakikolwiek inny rodzaj dokumentu, opanowanie tych funkcji niewątpliwie zwiększy Twoją produktywność i jakość Twoich wyników.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Co to jest Aspose.Words dla .NET?
-Aspose.Words dla .NET to potężna biblioteka do przetwarzania dokumentów, która umożliwia programistom programowe tworzenie, manipulowanie i konwertowanie dokumentów programu Word.
+### Czym jest Aspose.Words dla .NET?
+Aspose.Words for .NET to zaawansowana biblioteka do przetwarzania dokumentów, która umożliwia programistom programistyczne tworzenie, modyfikowanie i konwertowanie dokumentów Word.
 
 ### Czy mogę używać Aspose.Words dla .NET w projekcie komercyjnym?
- Tak, możesz używać Aspose.Words dla .NET w projektach komercyjnych. Aby zapoznać się z opcjami zakupu, odwiedź stronę[kup stronę](https://purchase.aspose.com/buy).
+ Tak, możesz używać Aspose.Words dla .NET w projektach komercyjnych. Aby uzyskać opcje zakupu, odwiedź stronę[kup stronę](https://purchase.aspose.com/buy).
 
-### Czy dostępna jest bezpłatna wersja próbna Aspose.Words dla .NET?
+### Czy jest dostępna bezpłatna wersja próbna Aspose.Words dla .NET?
  Tak, możesz pobrać bezpłatną wersję próbną[Tutaj](https://releases.aspose.com/).
 
-### Jak uzyskać wsparcie dla Aspose.Words dla .NET?
-Możesz uzyskać wsparcie od społeczności Aspose i ekspertów ds[forum wsparcia](https://forum.aspose.com/c/words/8).
+### Jak uzyskać pomoc techniczną dotyczącą Aspose.Words dla platformy .NET?
+Możesz uzyskać wsparcie od społeczności Aspose i ekspertów na[forum wsparcia](https://forum.aspose.com/c/words/8).
 
-### Czy mogę zastosować inne opcje formatowania tekstu za pomocą Aspose.Words dla .NET?
-Absolutnie! Aspose.Words dla .NET obsługuje szeroką gamę opcji formatowania tekstu, w tym pogrubienie, kursywę, podkreślenie i inne.
+### Czy mogę zastosować inne opcje formatowania tekstu, używając Aspose.Words dla .NET?
+Oczywiście! Aspose.Words dla .NET obsługuje szeroki zakres opcji formatowania tekstu, w tym pogrubienie, kursywę, podkreślenie i wiele innych.

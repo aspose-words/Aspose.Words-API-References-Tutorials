@@ -9,7 +9,7 @@ url: /ja/net/working-with-fonts/get-substitution-without-suffixes/
 ---
 ## 導入
 
-Aspose.Words for .NET を使用してフォント置換を管理する包括的なガイドへようこそ。ドキュメントにフォントが正しく表示されないことに悩んだことがあるなら、このガイドはまさにうってつけです。このチュートリアルでは、サフィックスなしでフォント置換を効率的に処理するための手順を段階的に説明します。
+Aspose.Words for .NET を使用してフォント置換を管理する包括的なガイドへようこそ。ドキュメントにフォントが正しく表示されないことに悩んだことがあるなら、ここはまさにうってつけです。このチュートリアルでは、サフィックスなしでフォント置換を効率的に処理するための手順を段階的に説明します。
 
 ## 前提条件
 
@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithFonts.GetSubstitutionWithoutSuffixes.pdf");
 
 ## ステップ5: 警告ハンドラクラスを作成する
 
-警告を効果的に処理するには、`IWarningCallback`インターフェース。このクラスは、フォント置換の警告をキャプチャしてログに記録します。
+警告を効果的に処理するには、`IWarningCallback`インターフェイス。このクラスは、フォント置換の警告をキャプチャしてログに記録します。
 
 ```csharp
 public class DocumentSubstitutionWarnings : IWarningCallback
@@ -98,7 +98,7 @@ public class DocumentSubstitutionWarnings : IWarningCallback
 
 ## 結論
 
-これで、Aspose.Words for .NET を使用してサフィックスなしでフォントの置換を処理するプロセスを習得できました。この知識により、システムで使用可能なフォントに関係なく、ドキュメントが意図した外観を維持できるようになります。さまざまな設定とソースを試して、Aspose.Words のパワーを最大限に活用してください。
+これで、Aspose.Words for .NET を使用してサフィックスなしでフォントの置換を処理するプロセスを習得できました。この知識があれば、システムで使用できるフォントに関係なく、ドキュメントが意図した外観を維持できるようになります。さまざまな設定とソースを試して、Aspose.Words のパワーを最大限に活用してください。
 
 ## よくある質問
 

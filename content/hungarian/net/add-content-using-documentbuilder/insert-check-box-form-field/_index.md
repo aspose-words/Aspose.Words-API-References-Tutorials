@@ -54,7 +54,7 @@ Document doc = new Document();
 
 ## 3. lépés: A Document Builder inicializálása
 
- A`DocumentBuilder` osztály az Ön által választott eszköz a dokumentum tartalom hozzáadásához. Tekintsd úgy, mint az ecsetet és a palettát.
+A`DocumentBuilder` osztály az Ön által választott eszköz a dokumentum tartalom hozzáadásához. Tekintsd úgy, mint az ecsetet és a palettát.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

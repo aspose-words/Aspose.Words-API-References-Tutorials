@@ -1,26 +1,26 @@
 ---
 title: Word Belgelerinde Liste Oluşturma ve Yönetme
 linktitle: Word Belgelerinde Liste Oluşturma ve Yönetme
-second_title: Aspose.Words Python Doküman Yönetimi API'si
-description: Aspose.Words Python API'sini kullanarak Word belgelerinde listeleri nasıl oluşturacağınızı ve yöneteceğinizi öğrenin. Liste biçimlendirmesi, özelleştirme, iç içe yerleştirme ve daha fazlası için kaynak kodunu içeren adım adım kılavuz.
+second_title: Aspose.Words Python Belge Yönetim API'si
+description: Aspose.Words Python API'sini kullanarak Word belgelerinde listelerin nasıl oluşturulacağını ve yönetileceğini öğrenin. Liste biçimlendirme, özelleştirme, iç içe yerleştirme ve daha fazlası için kaynak kodlu adım adım kılavuz.
 type: docs
 weight: 18
 url: /tr/python-net/document-structure-and-content-manipulation/document-lists/
 ---
 
-Listeler birçok belgenin temel bileşenidir ve bilgilerin sunulması için yapılandırılmış ve organize bir yol sağlar. Aspose.Words for Python ile Word belgelerinizde sorunsuz bir şekilde listeler oluşturabilir ve yönetebilirsiniz. Bu eğitimde Aspose.Words Python API'sini kullanarak listelerle çalışma sürecinde size rehberlik edeceğiz.
+Listeler birçok belgenin temel bileşenidir ve bilgileri sunmak için yapılandırılmış ve organize bir yol sağlar. Python için Aspose.Words ile Word belgelerinizde listeleri sorunsuz bir şekilde oluşturabilir ve yönetebilirsiniz. Bu eğitimde, Aspose.Words Python API'sini kullanarak listelerle çalışma sürecinde size rehberlik edeceğiz.
 
-## Word Belgelerindeki Listelere Giriş
+## Word Belgelerinde Listelere Giriş
 
-Listeler iki ana türde gelir: madde işaretli ve numaralı. Bilgileri yapılandırılmış bir şekilde sunmanıza olanak tanıyarak okuyucuların anlamasını kolaylaştırırlar. Listeler ayrıca belgelerinizin görsel çekiciliğini de artırır.
+Listeler iki temel türde gelir: madde işaretli ve numaralı. Bilgileri yapılandırılmış bir şekilde sunmanıza olanak tanır ve okuyucuların anlamasını kolaylaştırır. Listeler ayrıca belgelerinizin görsel çekiciliğini de artırır.
 
-## Ortamın Ayarlanması
+## Ortamın Kurulması
 
-Liste oluşturma ve yönetmeye geçmeden önce Aspose.Words for Python kütüphanesinin kurulu olduğundan emin olun. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/python/) . Ek olarak şu adresteki API belgelerine bakın:[bu bağlantı](https://reference.aspose.com/words/python-net/) detaylı bilgi için.
+Listeleri oluşturma ve yönetmeye dalmadan önce, Aspose.Words for Python kütüphanesinin yüklü olduğundan emin olun. Bunu şu adresten indirebilirsiniz:[Burada](https://releases.aspose.com/words/python/) Ayrıca, API belgelerine bakın:[bu bağlantı](https://reference.aspose.com/words/python-net/) Detaylı bilgi için.
 
 ## Madde İşaretli Listeler Oluşturma
 
-Madde işaretli listeler, öğelerin sırasının önemli olmadığı durumlarda kullanılır. Aspose.Words Python'u kullanarak madde işaretli liste oluşturmak için şu adımları izleyin:
+Madde işaretli listeler, öğelerin sırasının önemli olmadığı durumlarda kullanılır. Aspose.Words Python kullanarak madde işaretli bir liste oluşturmak için şu adımları izleyin:
 
 ```python
 # Import the necessary classes
@@ -50,9 +50,9 @@ for text in list_item_texts:
     run = paragraph.runs.add(text)
 ```
 
-## Numaralı Listeler Oluşturma
+## Numaralandırılmış Listeler Oluşturma
 
-Numaralandırılmış listeler öğelerin sırası önemli olduğunda uygundur. Aspose.Words Python'u kullanarak numaralı listeyi şu şekilde oluşturabilirsiniz:
+Numaralandırılmış listeler, öğelerin sırası önemli olduğunda uygundur. İşte Aspose.Words Python kullanarak numaralandırılmış bir liste oluşturmanın yolu:
 
 ```python
 # Import the necessary classes
@@ -86,45 +86,45 @@ for text in list_item_texts:
 
 ## Liste Biçimlendirmesini Özelleştirme
 
-Madde işareti stilleri, numaralandırma biçimleri ve hizalama gibi biçimlendirme seçeneklerini ayarlayarak listelerinizin görünümünü daha da özelleştirebilirsiniz.
+Madde işaretleri stilleri, numaralandırma biçimleri ve hizalama gibi biçimlendirme seçeneklerini ayarlayarak listelerinizin görünümünü daha da özelleştirebilirsiniz.
 
 ## Liste Düzeylerini Yönetme
 
-Listelerin birden fazla düzeyi olabilir; bu, iç içe geçmiş listeler oluşturmak için kullanışlıdır. Her seviyenin kendi biçimlendirme ve numaralandırma şeması olabilir.
+Listeler, iç içe listeler oluşturmak için yararlı olan birden fazla seviyeye sahip olabilir. Her seviyenin kendi biçimlendirme ve numaralandırma şeması olabilir.
 
 ## Alt Listeler Ekleme
 
-Alt listeler bilgileri hiyerarşik olarak organize etmenin güçlü bir yoludur. Aspose.Words Python API'sini kullanarak kolayca alt listeler ekleyebilirsiniz.
+Alt listeler, bilgileri hiyerarşik olarak düzenlemenin güçlü bir yoludur. Aspose.Words Python API'sini kullanarak alt listeleri kolayca ekleyebilirsiniz.
 
 ## Düz Metni Listelere Dönüştürme
 
-Listelere dönüştürmek istediğiniz mevcut metniniz varsa Aspose.Words Python, metni uygun şekilde ayrıştırıp biçimlendirmek için yöntemler sağlar.
+Eğer listeye dönüştürmek istediğiniz mevcut metinleriniz varsa, Aspose.Words Python metni buna göre ayrıştırmak ve biçimlendirmek için yöntemler sunar.
 
 ## Listeleri Kaldırma
 
-Bir listeyi kaldırmak, oluşturmak kadar önemlidir. API'yi kullanarak listeleri programlı bir şekilde kaldırabilirsiniz.
+Bir listeyi kaldırmak, bir liste oluşturmak kadar önemlidir. API'yi kullanarak listeleri programatik olarak kaldırabilirsiniz.
 
 ## Belgeleri Kaydetme ve Dışa Aktarma
 
-Listelerinizi oluşturup özelleştirdikten sonra belgeyi DOCX ve PDF dahil çeşitli formatlarda kaydedebilirsiniz.
+Listelerinizi oluşturup özelleştirdikten sonra belgeyi DOCX ve PDF gibi çeşitli formatlarda kaydedebilirsiniz.
 
 ## Çözüm
 
-Bu eğitimde Aspose.Words Python API'sini kullanarak Word belgelerinde listelerin nasıl oluşturulacağını ve yönetileceğini araştırdık. Listeler, bilgilerin etkili bir şekilde organize edilmesi ve sunulması için gereklidir. Burada özetlenen adımları izleyerek belgelerinizin yapısını ve görsel çekiciliğini artırabilirsiniz.
+Bu eğitimde, Aspose.Words Python API'sini kullanarak Word belgelerinde listelerin nasıl oluşturulacağını ve yönetileceğini inceledik. Listeler, bilgileri etkili bir şekilde düzenlemek ve sunmak için olmazsa olmazdır. Burada özetlenen adımları izleyerek, belgelerinizin yapısını ve görsel çekiciliğini artırabilirsiniz.
 
 ## SSS
 
-### Aspose.Words for Python'u nasıl yüklerim?
- Kütüphaneyi adresinden indirebilirsiniz.[bu bağlantı](https://releases.aspose.com/words/python/) ve belgelerde verilen kurulum talimatlarını izleyin.
+### Python için Aspose.Words'ü nasıl kurarım?
+ Kütüphaneyi şu adresten indirebilirsiniz:[bu bağlantı](https://releases.aspose.com/words/python/) ve dokümanlarda verilen kurulum talimatlarını izleyin.
 
 ### Listelerimin numaralandırma stilini özelleştirebilir miyim?
-Kesinlikle! Aspose.Words Python, listelerinizi özel ihtiyaçlarınıza göre uyarlamak için numaralandırma formatlarını, madde işareti stillerini ve hizalamayı özelleştirmenize olanak tanır.
+Kesinlikle! Aspose.Words Python, listelerinizi özel ihtiyaçlarınıza göre uyarlamak için numaralandırma biçimlerini, madde işaretlerini ve hizalamayı özelleştirmenize olanak tanır.
 
-### Aspose.Words kullanarak iç içe listeler oluşturmak mümkün mü?
-Evet, ana listenize alt listeler ekleyerek iç içe listeler oluşturabilirsiniz. Bu, bilgilerin hiyerarşik olarak sunulması açısından kullanışlıdır.
+### Aspose.Words kullanarak iç içe listeler oluşturmak mümkün müdür?
+Evet, ana listenize alt listeler ekleyerek iç içe listeler oluşturabilirsiniz. Bu, bilgileri hiyerarşik olarak sunmak için yararlıdır.
 
-### Mevcut düz metnimi listelere dönüştürebilir miyim?
-Evet, Aspose.Words Python, düz metinleri ayrıştırıp listeler halinde biçimlendirmek için yöntemler sunarak içeriğinizi yapılandırmanızı kolaylaştırır.
+### Mevcut düz metnimi liste haline dönüştürebilir miyim?
+Evet, Aspose.Words Python, düz metni listeler halinde ayrıştırmak ve biçimlendirmek için yöntemler sunarak içeriğinizi yapılandırmayı kolaylaştırır.
 
 ### Listeleri oluşturduktan sonra belgemi nasıl kaydedebilirim?
- Belgenizi kullanarak kaydedebilirsiniz.`doc.save()` yöntemi ve DOCX veya PDF gibi istenen çıktı biçimini belirtme.
+ Belgenizi kullanarak kaydedebilirsiniz.`doc.save()` Yöntemi seçin ve DOCX veya PDF gibi istenen çıktı formatını belirtin.

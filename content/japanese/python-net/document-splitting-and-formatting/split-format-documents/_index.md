@@ -12,7 +12,7 @@ url: /ja/python-net/document-splitting-and-formatting/split-format-documents/
 ## 前提条件
 チュートリアルに進む前に、次の前提条件が満たされていることを確認してください。
 - Python プログラミング言語の基本的な理解。
--  Aspose.Words for Pythonをインストールしました。ここからダウンロードできます。[ここ](https://releases.aspose.com/words/python/).
+-  Aspose.Words for Pythonをインストールしました。ダウンロードはこちらから[ここ](https://releases.aspose.com/words/python/).
 - テスト用のサンプルドキュメント。
 
 ## ステップ1: ドキュメントを読み込む

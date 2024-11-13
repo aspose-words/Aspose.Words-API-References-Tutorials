@@ -1,6 +1,6 @@
 ---
-title: Aspose.Words for Java'da Dipnotları ve Sonnotları Kullanma
-linktitle: Dipnotları ve Sonnotları Kullanma
+title: Java için Aspose.Words'de Dipnot ve Son Not Kullanımı
+linktitle: Dipnot ve Sonnot Kullanımı
 second_title: Aspose.Words Java Belge İşleme API'si
 description: Aspose.Words for Java'da dipnotları ve sonnotları etkili bir şekilde kullanmayı öğrenin. Belge biçimlendirme becerilerinizi bugün geliştirin!
 type: docs
@@ -8,17 +8,17 @@ weight: 13
 url: /tr/java/using-document-elements/using-footnotes-and-endnotes/
 ---
 
-Bu eğitimde size Aspose.Words for Java'da dipnot ve sonnot kullanma sürecinde yol göstereceğiz. Dipnotlar ve son notlar belge biçimlendirmesinde temel öğelerdir ve genellikle alıntılar, referanslar ve ek bilgiler için kullanılır. Aspose.Words for Java, dipnotlar ve sonnotlarla sorunsuz bir şekilde çalışmak için güçlü işlevsellik sağlar.
+Bu eğitimde, Aspose.Words for Java'da dipnot ve son notları kullanma sürecinde size yol göstereceğiz. Dipnotlar ve son notlar, genellikle alıntılar, referanslar ve ek bilgiler için kullanılan belge biçimlendirmesinde temel öğelerdir. Aspose.Words for Java, dipnot ve son notlarla sorunsuz bir şekilde çalışmak için sağlam işlevsellik sağlar.
 
-## 1. Dipnot ve Sonnotlara Giriş
+## 1. Dipnotlar ve Sonnotlara Giriş
 
-Dipnotlar ve son notlar, bir belge içinde ek bilgi veya alıntılar sağlayan ek açıklamalardır. Dipnotlar sayfanın altında görünürken, son notlar bir bölümün veya belgenin sonunda toplanır. Kaynaklara başvurmak veya içeriği netleştirmek için akademik makalelerde, raporlarda ve yasal belgelerde yaygın olarak kullanılırlar.
+Dipnotlar ve son notlar, bir belge içinde tamamlayıcı bilgi veya alıntılar sağlayan açıklamalardır. Dipnotlar sayfanın alt kısmında görünürken, son notlar bir bölümün veya belgenin sonunda toplanır. Genellikle akademik makalelerde, raporlarda ve yasal belgelerde kaynaklara atıfta bulunmak veya içeriği açıklamak için kullanılırlar.
 
-## 2. Ortamınızı Kurmak
+## 2. Ortamınızı Ayarlama
 
-Dipnotlar ve sonnotlarla çalışmaya başlamadan önce geliştirme ortamınızı ayarlamanız gerekir. Aspose.Words for Java API'nin projenizde kurulu ve yapılandırılmış olduğundan emin olun.
+Dipnotlar ve sonnotlarla çalışmaya başlamadan önce, geliştirme ortamınızı ayarlamanız gerekir. Projenizde Aspose.Words for Java API'sinin kurulu ve yapılandırılmış olduğundan emin olun.
 
-## 3. Belgenize Dipnot Eklemek
+## 3. Belgenize Dipnot Ekleme
 
 Belgenize dipnot eklemek için şu adımları izleyin:
 ```java
@@ -36,7 +36,7 @@ public void getFootnoteOptions(){
 
 ## 4. Dipnot Seçeneklerini Değiştirme
 
-Görünümlerini ve davranışlarını özelleştirmek için dipnot seçeneklerini değiştirebilirsiniz. İşte nasıl:
+Dipnot seçeneklerini düzenleyerek görünümlerini ve davranışlarını özelleştirebilirsiniz. İşte nasıl:
 ```java
 @Test
 public void setFootnoteAndEndNotePosition() throws Exception {
@@ -49,9 +49,9 @@ public void setFootnoteAndEndNotePosition() throws Exception {
 }
 ```
 
-## 5. Belgenize Son Not Ekleme
+## 5. Belgenize Dipnot Ekleme
 
-Belgenize son notlar eklemek basittir. İşte bir örnek:
+Belgenize dipnot eklemek basittir. İşte bir örnek:
 ```java
 @Test
 public void setEndnoteOptions() throws Exception {
@@ -69,11 +69,11 @@ public void setEndnoteOptions() throws Exception {
 }
 ```
 
-## 6. Son Not Ayarlarını Özelleştirme
+## 6. Endnote Ayarlarını Özelleştirme
 
-Belge gereksinimlerinizi karşılamak için son not ayarlarını daha da özelleştirebilirsiniz.
+Ayrıca, belge gereksinimlerinizi karşılamak için dipnot ayarlarını özelleştirebilirsiniz.
 
-## Kaynak Kodunu Tamamlayın
+## Tam Kaynak Kodu
 ```java
 	string dataDir = "Your Document Directory";
 	string outPath = "Your Output Directory";
@@ -107,22 +107,22 @@ Belge gereksinimlerinizi karşılamak için son not ayarlarını daha da özelle
 
 ## 7. Sonuç
 
-Bu eğitimde Aspose.Words for Java'da dipnotlar ve sonnotlarla nasıl çalışılacağını araştırdık. Bu özellikler, uygun alıntılar ve referanslarla iyi yapılandırılmış belgeler oluşturmak için çok değerlidir.
+Bu eğitimde, Java için Aspose.Words'de dipnotlar ve sonnotlarla nasıl çalışılacağını inceledik. Bu özellikler, uygun alıntılar ve referanslarla iyi yapılandırılmış belgeler oluşturmak için paha biçilmezdir.
 
-Artık dipnotları ve son notları nasıl kullanacağınızı öğrendiğinize göre belgenizin biçimlendirmesini geliştirebilir ve içeriğinizi daha profesyonel hale getirebilirsiniz.
+Artık dipnot ve sonnotların nasıl kullanılacağını öğrendiğinize göre, belgenizin biçimlendirmesini geliştirebilir ve içeriğinizi daha profesyonel hale getirebilirsiniz.
 
 ### Sıkça Sorulan Sorular
 
-### 1. Dipnotlarla sonnotlar arasındaki fark nedir?
-Dipnotlar sayfanın altında görünürken, son notlar bir bölümün veya belgenin sonunda toplanır.
+### 1. Dipnot ve sonnot arasındaki fark nedir?
+Dipnotlar sayfanın en altında yer alırken, sonnotlar bir bölümün veya belgenin sonunda toplanır.
 
-### 2. Dipnotların veya son notların konumunu nasıl değiştirebilirim?
- Şunu kullanabilirsiniz:`setPosition` Dipnotların veya son notların konumunu değiştirme yöntemi.
+### 2. Dipnotların veya sonnotların konumunu nasıl değiştirebilirim?
+ Kullanabilirsiniz`setPosition` Dipnotların veya sonnotların konumunu değiştirme yöntemi.
 
-### 3. Dipnotların ve son notların formatını özelleştirebilir miyim?
-Evet, Aspose.Words for Java'yı kullanarak dipnotların ve sonnotların formatını özelleştirebilirsiniz.
+### 3. Dipnot ve sonnotların biçimlendirmesini özelleştirebilir miyim?
+Evet, Aspose.Words for Java'yı kullanarak dipnotların ve sonnotların biçimlendirmesini özelleştirebilirsiniz.
 
-### 4. Belge biçimlendirmesinde dipnotlar ve sonnotlar önemli midir?
-Evet, dipnotlar ve sonnotlar belgelerde referans ve ek bilgi sağlamak için gereklidir.
+### 4. Dipnotlar ve sonnotlar belge biçimlendirmede önemli midir?
+Evet, dipnotlar ve sonnotlar belgelerde kaynak ve ek bilgi sağlamak için önemlidir.
 
-Aspose.Words for Java'nın daha fazla özelliğini keşfetmekten ve belge oluşturma yeteneklerinizi geliştirmekten çekinmeyin. Mutlu kodlama!
+Aspose.Words for Java'nın daha fazla özelliğini keşfetmekten ve belge oluşturma yeteneklerinizi geliştirmekten çekinmeyin. İyi kodlamalar!

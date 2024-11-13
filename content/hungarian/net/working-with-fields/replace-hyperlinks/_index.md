@@ -56,7 +56,7 @@ foreach (Field field in doc.Range.Fields)
         if (hyperlink.SubAddress != null)
             continue;
         
-        // Cserélje ki a hiperhivatkozás címét és eredményét.
+        // Cserélje ki a hiperhivatkozás címét és az eredményt.
         hyperlink.Address = "http://www.aspose.com";
         hyperlink.Result = "Aspose - The .NET & Java Component Publisher";
     }
@@ -86,7 +86,7 @@ Igen, az Aspose.Words zökkenőmentesen támogatja az összetett struktúrákat,
  Igen, letölthet egy ingyenes próbaverziót a webhelyről[itt](https://releases.aspose.com/).
 
 ### Hol találom az Aspose.Words for .NET dokumentációját?
- A részletes dokumentáció elérhető[itt](https://reference.aspose.com/words/net/).
+ részletes dokumentáció elérhető[itt](https://reference.aspose.com/words/net/).
 
 ### Hogyan szerezhetek ideiglenes licencet az Aspose.Words for .NET-hez?
  Ideiglenes jogosítványok szerezhetők be[itt](https://purchase.aspose.com/temporary-license/).

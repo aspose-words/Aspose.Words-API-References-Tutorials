@@ -1,30 +1,30 @@
 ---
 title: Wstaw HTML do dokumentu Word
 linktitle: Wstaw HTML do dokumentu Word
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak bezproblemowo wstawiać kod HTML do dokumentów programu Word za pomocą Aspose.Words dla .NET, korzystając z naszego szczegółowego samouczka krok po kroku. Idealny dla programistów.
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak bezproblemowo wstawiać kod HTML do dokumentów Word za pomocą Aspose.Words dla .NET dzięki naszemu szczegółowemu samouczkowi krok po kroku. Idealne dla programistów.
 type: docs
 weight: 10
 url: /pl/net/add-content-using-documentbuilder/insert-html/
 ---
 ## Wstęp
 
-Cześć, entuzjasta kodowania! Czy zastanawiałeś się kiedyś, jak wstawić kod HTML do dokumentu programu Word za pomocą Aspose.Words dla .NET? Niezależnie od tego, czy chcesz dodać fantazyjne formatowanie, czy po prostu chcesz usprawnić proces tworzenia dokumentów, jesteś we właściwym miejscu. W tym samouczku zagłębimy się w szczegóły używania Aspose.Words dla .NET do osadzania kodu HTML bezpośrednio w dokumentach programu Word. I nie martw się; sprawimy, że wszystko będzie proste, wciągające i wręcz zabawne!
+Cześć, entuzjasto kodowania! Czy kiedykolwiek zastanawiałeś się, jak wstawić kod HTML do dokumentu Word za pomocą Aspose.Words dla .NET? Niezależnie od tego, czy chcesz dodać trochę fantazyjnego formatowania, czy po prostu usprawnić proces tworzenia dokumentu, jesteś we właściwym miejscu. W tym samouczku zagłębimy się w szczegóły korzystania z Aspose.Words dla .NET, aby osadzać kod HTML bezpośrednio w dokumentach Word. I nie martw się; zachowamy prostotę, zaangażowanie i po prostu zabawę!
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zagłębimy się w przewodnik krok po kroku, upewnijmy się, że mamy wszystko, czego potrzebujemy. Oto krótka lista kontrolna:
+Zanim przejdziemy do przewodnika krok po kroku, upewnijmy się, że mamy wszystko, czego potrzebujemy. Oto krótka lista kontrolna:
 
-1. Biblioteka Aspose.Words dla .NET: Jeśli jeszcze tego nie zrobiłeś, musisz pobrać bibliotekę Aspose.Words dla .NET. Możesz to zdobyć[Tutaj](https://releases.aspose.com/words/net/).
-2. Środowisko programistyczne: upewnij się, że masz skonfigurowane środowisko programistyczne, takie jak Visual Studio.
-3. .NET Framework: Upewnij się, że masz zainstalowaną platformę .NET na swoim komputerze.
-4. Podstawowa znajomość języka C#: odrobina znajomości języka C# bardzo się przyda.
+1. Biblioteka Aspose.Words dla .NET: Jeśli jeszcze tego nie zrobiłeś, musisz pobrać bibliotekę Aspose.Words dla .NET. Możesz ją pobrać[Tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: Upewnij się, że masz skonfigurowane środowisko programistyczne, np. Visual Studio.
+3. .NET Framework: Upewnij się, że na Twoim komputerze jest zainstalowany .NET Framework.
+4. Podstawowa wiedza o języku C#: Znajomość języka C# może okazać się bardzo przydatna.
 
-Po zaznaczeniu wszystkich tych pól możesz zaczynać!
+Gdy już zaznaczysz wszystkie pola, możesz zaczynać!
 
 ## Importuj przestrzenie nazw
 
-Najpierw zaimportujmy podstawowe przestrzenie nazw. To przygotuje grunt pod całą magię, którą za chwilę wyczarujemy.
+Po pierwsze, zaimportujmy niezbędne przestrzenie nazw. To przygotuje grunt pod całą magię, którą zamierzamy wyczarować.
 
 ```csharp
 using System;
@@ -32,37 +32,37 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-W porządku, rozbijmy to krok po kroku. Gotowy? Zacznijmy!
+Dobrze, rozłóżmy to na czynniki pierwsze krok po kroku. Gotowi? Zaczynajmy!
 
 ## Krok 1: Konfigurowanie katalogu dokumentów
 
-Zanim będziemy mogli cokolwiek zrobić, musimy określić ścieżkę do naszego katalogu dokumentów. Tutaj zostanie zapisany nasz dokument Word.
+Zanim cokolwiek zrobimy, musimy określić ścieżkę do naszego katalogu dokumentów. To tutaj zostanie zapisany nasz dokument Word.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką, w której chcesz zapisać dokument.
+ Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką, pod którą chcesz zapisać dokument.
 
 ## Krok 2: Tworzenie nowego dokumentu
 
- Następnie utworzymy nową instancję pliku`Document` klasa. To reprezentuje nasz dokument Word.
+ Następnie utworzymy nową instancję`Document` klasa. To przedstawia nasz dokument Word.
 
 ```csharp
 Document doc = new Document();
 ```
 
-## Krok 3: Inicjowanie narzędzia DocumentBuilder
+## Krok 3: Inicjalizacja DocumentBuilder
 
-Aby wstawić HTML, będziemy potrzebować pomocy`DocumentBuilder` klasa. Ta przydatna klasa ułatwia dodawanie treści do naszego dokumentu.
+Aby wstawić kod HTML, będziemy potrzebować pomocy`DocumentBuilder` klasa. Ta przydatna klasa ułatwia dodawanie treści do naszego dokumentu.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Krok 4: Wstawianie treści HTML
+## Krok 4: Wstawianie zawartości HTML
 
- Teraz przychodzi zabawna część — dodanie zawartości HTML. Korzystanie z`InsertHtml` metoda`DocumentBuilder` class, możemy osadzić HTML bezpośrednio w naszym dokumencie Word.
+ Teraz nadchodzi zabawna część — dodawanie zawartości HTML. Używając`InsertHtml` metoda`DocumentBuilder` klasie możemy osadzać kod HTML bezpośrednio w naszym dokumencie Word.
 
 ```csharp
 builder.InsertHtml(
@@ -72,39 +72,39 @@ builder.InsertHtml(
     "<h1 align='left'>Heading 1 left.</h1>");
 ```
 
-Ten fragment wstawia do dokumentu akapit wyrównany do prawej, pogrubiony akapit wyrównany do lewej, element div wyrównany do środka i nagłówek wyrównany do lewej.
+Ten fragment kodu wstawia do dokumentu akapit wyrównany do prawej, pogrubiony akapit wyrównany do lewej, wyśrodkowany element div i nagłówek wyrównany do lewej.
 
 ## Krok 5: Zapisywanie dokumentu
 
-Na koniec zapiszemy nasz dokument we wskazanym katalogu.
+Na koniec zapiszemy nasz dokument w podanym katalogu.
 
 ```csharp
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertHtml.docx");
 ```
 
-I masz to! Właśnie wstawiłeś HTML do dokumentu Worda przy użyciu Aspose.Words dla .NET. Piątka!
+I masz! Właśnie wstawiłeś HTML do dokumentu Word za pomocą Aspose.Words dla .NET. Piątka!
 
 ## Wniosek
 
-Wstawianie kodu HTML do dokumentu programu Word nigdy nie było łatwiejsze, prawda? Dzięki Aspose.Words dla .NET możesz płynnie połączyć moc HTML z wszechstronnością dokumentów Word. Niezależnie od tego, czy automatyzujesz generowanie raportów, czy tworzysz pięknie sformatowane dokumenty, to narzędzie będzie idealnym rozwiązaniem.
+Wstawianie HTML do dokumentu Word nigdy nie było łatwiejsze, prawda? Dzięki Aspose.Words dla .NET możesz płynnie połączyć moc HTML z wszechstronnością dokumentów Word. Niezależnie od tego, czy automatyzujesz generowanie raportów, czy tworzysz pięknie sformatowane dokumenty, to narzędzie jest Twoim rozwiązaniem.
 
-Jeśli masz jakieś pytania lub potrzebujesz dalszej pomocy, nie wahaj się i sprawdź[dokumentacja](https://reference.aspose.com/words/net/), [fora wsparcia](https://forum.aspose.com/c/words/8) lub kup sobie[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) aby odblokować pełny potencjał Aspose.Words dla .NET.
+Jeśli masz jakiekolwiek pytania lub potrzebujesz dalszej pomocy, nie wahaj się sprawdzić[dokumentacja](https://reference.aspose.com/words/net/), [fora wsparcia](https://forum.aspose.com/c/words/8) lub zdobądź sobie[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) aby w pełni wykorzystać potencjał Aspose.Words dla .NET.
 
 Miłego kodowania!
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
 ### Czy mogę wstawiać złożone struktury HTML za pomocą Aspose.Words dla .NET?  
-Absolutnie! Aspose.Words dla .NET może obsłużyć szeroką gamę treści HTML, od prostego tekstu po złożone struktury.
+Oczywiście! Aspose.Words dla .NET może obsługiwać szeroki zakres treści HTML, od prostego tekstu do złożonych struktur.
 
 ### Czy Aspose.Words dla .NET jest kompatybilny ze wszystkimi wersjami .NET?  
-Tak, Aspose.Words dla .NET został zaprojektowany tak, aby był kompatybilny z różnymi wersjami platformy .NET.
+Tak, Aspose.Words dla .NET jest zaprojektowany tak, aby był kompatybilny z różnymi wersjami środowiska .NET.
 
-### Czy mogę edytować wstawioną treść HTML po dodaniu jej do dokumentu?  
-Tak, po wstawieniu kodu HTML możesz dalej manipulować dokumentem, korzystając z różnych metod udostępnianych przez Aspose.Words dla .NET.
+### Czy mogę edytować wstawioną zawartość HTML po dodaniu jej do dokumentu?  
+Tak, po wstawieniu kodu HTML można dalej manipulować dokumentem, korzystając z różnych metod udostępnianych przez Aspose.Words dla .NET.
 
 ### Czy potrzebuję licencji, aby używać Aspose.Words dla .NET?  
- Możesz zacząć od A[bezpłatna wersja próbna](https://releases.aspose.com/) lub uzyskaj[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) dla pełnych funkcji.
+ Możesz zacząć od[bezpłatny okres próbny](https://releases.aspose.com/) lub uzyskać[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) aby uzyskać dostęp do pełnej wersji funkcji.
 
-### Gdzie mogę znaleźć więcej tutoriali i przykładów?  
- The[dokumentacja](https://reference.aspose.com/words/net/)I[fora wsparcia](https://forum.aspose.com/c/words/8)to świetne miejsca na rozpoczęcie poszukiwania bardziej szczegółowych przewodników i wsparcia społeczności.
+### Gdzie mogę znaleźć więcej samouczków i przykładów?  
+Ten[dokumentacja](https://reference.aspose.com/words/net/) I[fora wsparcia](https://forum.aspose.com/c/words/8)są doskonałym miejscem, w którym można znaleźć bardziej szczegółowe przewodniki i wsparcie społeczności.

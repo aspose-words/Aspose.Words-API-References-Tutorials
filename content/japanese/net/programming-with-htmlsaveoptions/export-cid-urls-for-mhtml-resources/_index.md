@@ -33,7 +33,7 @@ using Aspose.Words.Saving;
 
 ## ステップ1: プロジェクトの設定
 
-### ステップ 1.1: 新しいプロジェクトを作成する
+### ステップ1.1: 新しいプロジェクトを作成する
 Visual Studio を開き、新しい C# プロジェクトを作成します。シンプルにするために、コンソール アプリ テンプレートを選択します。
 
 ### ステップ 1.2: Aspose.Words for .NET 参照を追加する
@@ -54,7 +54,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 交換する`"YOUR DOCUMENT DIRECTORY"`ディレクトリへの実際のパスを入力します。
 
-### ステップ2.2: ドキュメントを読み込む
+### ステップ 2.2: ドキュメントを読み込む
 Word 文書をプロジェクトに読み込みます。
 
 ```csharp
@@ -88,7 +88,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportCidUrlsForMhtmlResources.mh
 
 ## 結論
 
-おめでとうございます! Aspose.Words for .NET を使用して、MHTML リソースの Cid URL を正常にエクスポートできました。このチュートリアルでは、プロジェクトの設定、Word 文書の読み込み、HTML 保存オプションの構成、および文書を MHTML として保存する手順について説明しました。これで、これらの手順を独自のプロジェクトに適用して、ドキュメント管理タスクを強化できます。
+おめでとうございます! Aspose.Words for .NET を使用して、MHTML リソースの Cid URL を正常にエクスポートしました。このチュートリアルでは、プロジェクトの設定、Word 文書の読み込み、HTML 保存オプションの構成、および文書を MHTML として保存する手順について説明しました。これで、これらの手順を独自のプロジェクトに適用して、ドキュメント管理タスクを強化できます。
 
 ## よくある質問
 

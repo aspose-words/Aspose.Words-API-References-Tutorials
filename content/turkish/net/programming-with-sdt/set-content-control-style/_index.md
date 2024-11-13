@@ -2,49 +2,49 @@
 title: İçerik Kontrol Stilini Ayarla
 linktitle: İçerik Kontrol Stilini Ayarla
 second_title: Aspose.Words Belge İşleme API'si
-description: Bu ayrıntılı, adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerinde içerik kontrol stillerini nasıl ayarlayacağınızı öğrenin. Belge estetiğini geliştirmek için mükemmeldir.
+description: Bu ayrıntılı, adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerinde içerik kontrol stillerinin nasıl ayarlanacağını öğrenin. Belge estetiğini geliştirmek için mükemmeldir.
 type: docs
 weight: 10
 url: /tr/net/programming-with-sdt/set-content-control-style/
 ---
 ## giriiş
 
-Hiç Word belgelerinizi bazı özel stillerle canlandırmak istediniz mi, ancak kendinizi teknik yabani otların arasında buldunuz mu? Şanslısın! Bugün Aspose.Words for .NET'i kullanarak içerik kontrol stillerini ayarlama dünyasına dalıyoruz. Düşündüğünüzden daha kolay ve bu eğitimin sonunda belgelerinizi bir profesyonel gibi şekillendirebileceksiniz. Sürecin her bölümünü anladığınızdan emin olmak için size her şeyi adım adım anlatacağız. Word belgelerinizi dönüştürmeye hazır mısınız? Hadi başlayalım!
+Word belgelerinizi özel stillerle canlandırmak istediniz ama kendinizi teknik ayrıntılarla boğuşurken buldunuz mu? Şanslısınız! Bugün, .NET için Aspose.Words kullanarak içerik kontrol stilleri ayarlama dünyasına dalacağız. Düşündüğünüzden daha kolay ve bu eğitimin sonunda belgelerinizi bir profesyonel gibi şekillendiriyor olacaksınız. Sürecin her bir bölümünü anladığınızdan emin olarak her şeyi adım adım anlatacağız. Word belgelerinizi dönüştürmeye hazır mısınız? Hadi başlayalım!
 
-## Önkoşullar
+## Ön koşullar
 
-Koda geçmeden önce, yerine getirmeniz gereken birkaç şey var:
+Koda geçmeden önce, yerinde olması gereken birkaç şey var:
 
-1.  Aspose.Words for .NET: En son sürümün kurulu olduğundan emin olun. Henüz almadıysanız indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
-2. Geliştirme Ortamı: Visual Studio'yu veya rahat olduğunuz herhangi bir C# IDE'yi kullanabilirsiniz.
-3. Temel C# Bilgisi: Endişelenmeyin, uzman olmanıza gerek yok, ancak biraz aşinalık yardımcı olacaktır.
-4. Örnek Word Belgesi: Adlı örnek bir Word belgesi kullanacağız.`Structured document tags.docx`.
+1.  Aspose.Words for .NET: En son sürümün yüklü olduğundan emin olun. Henüz almadıysanız, indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+2. Geliştirme Ortamı: Visual Studio'yu veya kendinizi rahat hissettiğiniz herhangi bir C# IDE'sini kullanabilirsiniz.
+3. Temel C# Bilgisi: Merak etmeyin, uzman olmanıza gerek yok, ancak biraz aşinalık faydalı olacaktır.
+4. Örnek Word Belgesi: Adlı bir örnek Word belgesi kullanacağız.`Structured document tags.docx`.
 
 ## Ad Alanlarını İçe Aktar
 
-Öncelikle gerekli ad alanlarını içe aktaralım. Bunlar Aspose.Words kullanarak Word belgeleriyle etkileşim kurmamıza yardımcı olacak kütüphanelerdir.
+Öncelikle gerekli ad alanlarını içe aktaralım. Bunlar, Aspose.Words kullanarak Word belgeleriyle etkileşime girmemize yardımcı olacak kütüphanelerdir.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Markup;
 ```
 
-Şimdi süreci basit, yönetilebilir adımlara ayıralım.
+Şimdi süreci basit ve yönetilebilir adımlara bölelim.
 
-## 1. Adım: Belgenizi Yükleyin
+## Adım 1: Belgenizi Yükleyin
 
 Başlamak için yapılandırılmış belge etiketlerini (SDT'ler) içeren Word belgesini yükleyeceğiz.
 
 ```csharp
-// Belge dizininizin yolu
+// Belge dizininize giden yol
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Structured document tags.docx");
 ```
 
- Bu adımda belge dizinimizin yolunu belirliyoruz ve belgeyi kullanarak yüklüyoruz.`Document` Aspose.Words'ten sınıf. Bu sınıf bir Word belgesini temsil eder.
+ Bu adımda, belge dizinimize giden yolu belirtiyoruz ve belgeyi kullanarak yüklüyoruz.`Document` Aspose.Words sınıfından. Bu sınıf bir Word belgesini temsil eder.
 
-## 2. Adım: Yapılandırılmış Belge Etiketine Erişin
+## Adım 2: Yapılandırılmış Belge Etiketine Erişim
 
 Daha sonra belgemizdeki ilk yapılandırılmış belge etiketine erişmemiz gerekiyor.
 
@@ -52,55 +52,55 @@ Daha sonra belgemizdeki ilk yapılandırılmış belge etiketine erişmemiz gere
 StructuredDocumentTag sdt = (StructuredDocumentTag) doc.GetChild(NodeType.StructuredDocumentTag, 0, true);
 ```
 
- Burada şunu kullanıyoruz:`GetChild` türün ilk düğümünü bulma yöntemi`StructuredDocumentTag`. Bu yöntem belgede arama yapar ve bulduğu ilk eşleşmeyi döndürür.
+ Burada şunu kullanıyoruz:`GetChild` türünün ilk düğümünü bulma yöntemi`StructuredDocumentTag`Bu yöntem belgeyi arar ve bulduğu ilk eşleşmeyi döndürür.
 
-## 3. Adım: Stili Tanımlayın
+## Adım 3: Stili Tanımlayın
 
- Şimdi uygulamak istediğimiz stili tanımlayalım. Bu durumda yerleşik olanı kullanacağız.`Quote` tarzı.
+ Şimdi, uygulamak istediğimiz stili tanımlayalım. Bu durumda, yerleşik`Quote` stil.
 
 ```csharp
 Style style = doc.Styles[StyleIdentifier.Quote];
 ```
 
-`Styles` mülkiyeti`Document` class bize belgede bulunan tüm stillere erişim sağlar. biz kullanıyoruz`StyleIdentifier.Quote`Alıntı stilini seçmek için
+The`Styles` mülkiyeti`Document` sınıf bize belgede bulunan tüm stillere erişim sağlar.`StyleIdentifier.Quote`alıntı stilini seçmek için.
 
-## 4. Adım: Stili Yapılandırılmış Belge Etiketine Uygulayın
+## Adım 4: Stili Yapılandırılmış Belge Etiketine Uygulayın
 
-Stilimiz tanımlandığında, onu yapılandırılmış belge etiketine uygulama zamanı geldi.
+Stilimizi tanımladığımıza göre, onu yapılandırılmış belge etiketine uygulamanın zamanı geldi.
 
 ```csharp
 sdt.Style = style;
 ```
 
-Bu kod satırı, seçilen stili yapılandırılmış belge etiketimize atayarak ona yepyeni bir görünüm kazandırır.
+Bu kod satırı, seçilen stili yapılandırılmış belge etiketimize atar ve ona yepyeni bir görünüm kazandırır.
 
 ## Adım 5: Güncellenen Belgeyi Kaydedin
 
-Son olarak tüm değişikliklerin uygulandığından emin olmak için belgemizi kaydetmemiz gerekiyor.
+Son olarak, tüm değişikliklerin uygulandığından emin olmak için belgemizi kaydetmemiz gerekiyor.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");
 ```
 
-Bu adımda, orijinal dosyayı korumak için değiştirilen belgeyi yeni bir adla kaydediyoruz. Artık bu belgeyi açabilir ve stillendirilmiş içerik kontrolünü çalışırken görebilirsiniz.
+Bu adımda, orijinal dosyayı korumak için değiştirilmiş belgeyi yeni bir adla kaydediyoruz. Artık bu belgeyi açabilir ve biçimlendirilmiş içerik denetimini eylem halinde görebilirsiniz.
 
 ## Çözüm
 
-Ve işte karşınızda! Aspose.Words for .NET kullanarak Word belgelerinde içerik kontrol stillerini nasıl ayarlayacağınızı öğrendiniz. Bu basit adımları izleyerek Word belgelerinizin görünümünü kolayca özelleştirerek onları daha ilgi çekici ve profesyonel hale getirebilirsiniz. Aspose.Words'ün gücünü tam anlamıyla açığa çıkarmak için farklı stiller ve belge öğeleriyle denemeler yapmaya devam edin.
+İşte bu kadar! Aspose.Words for .NET kullanarak Word belgelerinde içerik kontrol stillerini nasıl ayarlayacağınızı öğrendiniz. Bu basit adımları izleyerek Word belgelerinizin görünümünü kolayca özelleştirebilir, onları daha ilgi çekici ve profesyonel hale getirebilirsiniz. Aspose.Words'ün gücünü tam olarak ortaya çıkarmak için farklı stiller ve belge öğeleriyle denemeler yapmaya devam edin.
 
-## SSS'ler
+## SSS
 
 ### Yerleşik stiller yerine özel stiller uygulayabilir miyim?  
-Evet, özel stiller oluşturabilir ve uygulayabilirsiniz. Özel stilinizi yapılandırılmış belge etiketine uygulamadan önce belgede tanımlamanız yeterlidir.
+Evet, özel stiller oluşturabilir ve uygulayabilirsiniz. Yapılandırılmış belge etiketine uygulamadan önce özel stilinizi belgede tanımlamanız yeterlidir.
 
 ### Belgemde birden fazla yapılandırılmış belge etiketi varsa ne olur?  
- Bir anahtar kullanarak tüm etiketler arasında geçiş yapabilirsiniz.`foreach` döngü yapın ve stilleri her birine ayrı ayrı uygulayın.
+ Tüm etiketler arasında bir döngü kullanarak dolaşabilirsiniz`foreach` döngüye alın ve her birine ayrı ayrı stil uygulayın.
 
 ### Değişiklikleri orijinal stile geri döndürmek mümkün mü?  
-Evet, değişiklik yapmadan önce orijinal stili kaydedebilir ve gerekirse yeniden uygulayabilirsiniz.
+Evet, değişiklik yapmadan önce orijinal stili saklayabilir ve gerektiğinde yeniden uygulayabilirsiniz.
 
-### Bu yöntemi paragraflar veya tablolar gibi diğer belge öğeleri için kullanabilir miyim?  
-Kesinlikle! Bu yöntem çeşitli belge öğeleri için işe yarar. İstediğiniz öğeyi hedefleyecek şekilde kodu ayarlamanız yeterlidir.
+### Bu yöntemi paragraflar veya tablolar gibi diğer belge öğeleri için de kullanabilir miyim?  
+Kesinlikle! Bu yöntem çeşitli belge öğeleri için işe yarar. Sadece kodu istenen öğeyi hedefleyecek şekilde ayarlayın.
 
 ### Aspose.Words .NET dışında başka platformları da destekliyor mu?  
-Evet, Aspose.Words Java, C için mevcuttur++ ve diğer platformlar. kontrol edin[dokümantasyon](https://reference.aspose.com/words/net/) daha fazla ayrıntı için.
+Evet, Aspose.Words Java, C için kullanılabilir++ ve diğer platformlar. Kontrol edin[belgeleme](https://reference.aspose.com/words/net/) Daha detaylı bilgi için.

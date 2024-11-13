@@ -47,7 +47,7 @@ doc.save("document_with_watermark.docx");
 
 ## ページ設定
 
-### ページのサイズと方向
+### ページのサイズと向き
 
 ページ設定はドキュメントの書式設定において極めて重要です。Aspose.Words for Java では、ページのサイズと方向を完全に制御できます。
 

@@ -1,35 +1,35 @@
 ---
-title: Atur Pemformatan Sel Tabel
-linktitle: Atur Pemformatan Sel Tabel
+title: Mengatur Pemformatan Sel Tabel
+linktitle: Mengatur Pemformatan Sel Tabel
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Sempurnakan dokumen Word Anda dengan pemformatan sel tabel profesional menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah ini menyederhanakan prosesnya untuk Anda.
+description: Sempurnakan dokumen Word Anda dengan format sel tabel profesional menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah ini menyederhanakan prosesnya untuk Anda.
 type: docs
 weight: 10
 url: /id/net/programming-with-table-styles-and-formatting/set-table-cell-formatting/
 ---
 ## Perkenalan
 
-Pernahkah Anda bertanya-tanya bagaimana cara membuat dokumen Word Anda lebih profesional dan menarik secara visual? Salah satu elemen kunci untuk mencapai hal ini adalah dengan menguasai pemformatan sel tabel. Dalam tutorial ini, kita akan mendalami secara spesifik pengaturan pemformatan sel tabel di dokumen Word menggunakan Aspose.Words untuk .NET. Kami akan menguraikan prosesnya langkah demi langkah, memastikan bahwa Anda dapat mengikuti dan menerapkan teknik ini dalam proyek Anda sendiri.
+Pernahkah Anda bertanya-tanya bagaimana cara membuat dokumen Word Anda lebih profesional dan menarik secara visual? Salah satu elemen kunci untuk mencapainya adalah dengan menguasai pemformatan sel tabel. Dalam tutorial ini, kita akan membahas secara spesifik tentang pengaturan pemformatan sel tabel dalam dokumen Word menggunakan Aspose.Words untuk .NET. Kami akan menguraikan prosesnya langkah demi langkah, memastikan bahwa Anda dapat mengikuti dan menerapkan teknik ini dalam proyek Anda sendiri.
 
 ## Prasyarat
 
-Sebelum kita mulai, pastikan Anda memiliki yang berikut ini:
+Sebelum kita mulai, pastikan Anda memiliki hal berikut:
 
 1.  Aspose.Words untuk .NET: Anda dapat mengunduhnya dari[Tautan unduhan](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Visual Studio atau IDE lain yang mendukung pengembangan .NET.
-3. Pengetahuan Dasar C#: Pemahaman konsep dasar pemrograman dan sintaksis dalam C#.
-4.  Direktori Dokumen Anda: Pastikan Anda memiliki direktori khusus untuk menyimpan dokumen Anda. Kami akan menyebut ini sebagai`YOUR DOCUMENT DIRECTORY`.
+3. Pengetahuan Dasar C#: Memahami konsep pemrograman dasar dan sintaksis dalam C#.
+4.  Direktori Dokumen Anda: Pastikan Anda memiliki direktori khusus untuk menyimpan dokumen Anda. Kami akan menyebutnya sebagai`YOUR DOCUMENT DIRECTORY`.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Pertama, Anda harus mengimpor namespace yang diperlukan. Ini penting untuk mengakses kelas dan metode yang disediakan oleh Aspose.Words.
+Pertama, Anda perlu mengimpor namespace yang diperlukan. Namespace ini penting untuk mengakses kelas dan metode yang disediakan oleh Aspose.Words.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Mari kita uraikan cuplikan kode yang disediakan dan jelaskan setiap langkah untuk mengatur pemformatan sel tabel dalam dokumen Word.
+Mari kita uraikan cuplikan kode yang disediakan dan jelaskan setiap langkah untuk mengatur format sel tabel dalam dokumen Word.
 
 ## Langkah 1: Inisialisasi Dokumen dan DocumentBuilder
 
@@ -46,16 +46,16 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Langkah 2: Mulai Tabel
 
- Dengan`DocumentBuilder` Misalnya, Anda dapat mulai membuat tabel. Hal ini dilakukan dengan menelepon`StartTable` metode.
+ Dengan`DocumentBuilder` Misalnya, Anda dapat mulai membuat tabel. Ini dilakukan dengan memanggil`StartTable` metode.
 
 ```csharp
-// Mulai meja
+// Mulai tabel
 builder.StartTable();
 ```
 
 ## Langkah 3: Masukkan Sel
 
-Selanjutnya, Anda akan memasukkan sel ke dalam tabel. Di sinilah keajaiban pemformatan terjadi.
+Berikutnya, Anda akan memasukkan sel ke dalam tabel. Di sinilah keajaiban pemformatan terjadi.
 
 ```csharp
 // Masukkan sel
@@ -64,10 +64,10 @@ builder.InsertCell();
 
 ## Langkah 4: Akses dan Atur Properti Format Sel
 
- Setelah sel disisipkan, Anda dapat mengakses properti formatnya menggunakan`CellFormat` properti dari`DocumentBuilder`. Di sini, Anda dapat mengatur berbagai opsi pemformatan seperti lebar dan padding.
+ Setelah sel dimasukkan, Anda dapat mengakses properti formatnya menggunakan`CellFormat` milik`DocumentBuilder`Di sini, Anda dapat mengatur berbagai opsi pemformatan seperti lebar dan bantalan.
 
 ```csharp
-// Akses dan atur properti format sel
+// Mengakses dan mengatur properti format sel
 CellFormat cellFormat = builder.CellFormat;
 cellFormat.Width = 250;
 cellFormat.LeftPadding = 30;
@@ -78,7 +78,7 @@ cellFormat.BottomPadding = 30;
 
 ## Langkah 5: Tambahkan Konten ke Sel
 
-Sekarang, Anda dapat menambahkan beberapa konten ke sel yang diformat. Untuk contoh ini, mari tambahkan satu baris teks sederhana.
+Sekarang, Anda dapat menambahkan beberapa konten ke sel yang diformat. Untuk contoh ini, mari tambahkan sebaris teks sederhana.
 
 ```csharp
 // Tambahkan konten ke sel
@@ -97,30 +97,30 @@ builder.EndTable();
 
 ## Langkah 7: Simpan Dokumen
 
-Terakhir, simpan dokumen ke direktori yang Anda tentukan. Pastikan direktori tersebut ada, atau buatlah jika perlu.
+Terakhir, simpan dokumen ke direktori yang Anda tentukan. Pastikan direktori tersebut ada, atau buat jika perlu.
 
 ```csharp
-// Simpan dokumennya
+// Simpan dokumen
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.DocumentBuilderSetTableCellFormatting.docx");
 ```
 
 ## Kesimpulan
 
-Memformat sel tabel dapat meningkatkan keterbacaan dan daya tarik visual dokumen Word Anda secara signifikan. Dengan Aspose.Words untuk .NET, Anda memiliki alat canggih yang dapat Anda gunakan untuk membuat dokumen berformat profesional dengan mudah. Baik Anda menyiapkan laporan, brosur, atau dokumen lainnya, menguasai teknik pemformatan ini akan membuat karya Anda menonjol.
+Memformat sel tabel dapat meningkatkan keterbacaan dan daya tarik visual dokumen Word Anda secara signifikan. Dengan Aspose.Words untuk .NET, Anda memiliki alat yang hebat untuk membuat dokumen berformat profesional dengan mudah. Baik Anda sedang mempersiapkan laporan, brosur, atau dokumen lainnya, menguasai teknik pemformatan ini akan membuat karya Anda menonjol.
 
-## FAQ
+## Tanya Jawab Umum
 
-### Bisakah saya menetapkan nilai padding yang berbeda untuk setiap sel dalam tabel?
- Ya, Anda dapat mengatur nilai padding yang berbeda untuk setiap sel satu per satu dengan mengaksesnya`CellFormat` properti secara terpisah.
+### Bisakah saya mengatur nilai padding yang berbeda untuk setiap sel dalam tabel?
+ Ya, Anda dapat mengatur nilai padding yang berbeda untuk setiap sel secara individual dengan mengaksesnya`CellFormat` properti secara terpisah.
 
-### Apakah mungkin menerapkan pemformatan yang sama ke beberapa sel sekaligus?
-Ya, Anda dapat mengulang sel dan menerapkan pengaturan pemformatan yang sama ke masing-masing sel secara terprogram.
+### Apakah mungkin untuk menerapkan format yang sama ke beberapa sel sekaligus?
+Ya, Anda dapat melakukan pengulangan melalui sel dan menerapkan pengaturan pemformatan yang sama ke setiap sel secara terprogram.
 
-### Bagaimana cara memformat seluruh tabel, bukan sel individual?
- Anda dapat mengatur format keseluruhan tabel menggunakan`Table` properti kelas dan metode yang tersedia di Aspose.Words.
+### Bagaimana saya dapat memformat seluruh tabel, bukan sel individual?
+ Anda dapat mengatur format tabel secara keseluruhan menggunakan`Table` properti kelas dan metode yang tersedia di Aspose.Words.
 
-### Bisakah saya mengubah perataan teks di dalam sel?
- Ya, Anda dapat mengubah perataan teks menggunakan`ParagraphFormat` properti dari`DocumentBuilder`.
+### Bisakah saya mengubah perataan teks dalam sel?
+ Ya, Anda dapat mengubah perataan teks menggunakan`ParagraphFormat` milik`DocumentBuilder`.
 
 ### Apakah ada cara untuk menambahkan batas ke sel tabel?
- Ya, Anda dapat menambahkan batas ke sel tabel dengan mengatur`Borders` properti dari`CellFormat` kelas.
+ Ya, Anda dapat menambahkan batas ke sel tabel dengan mengatur`Borders` milik`CellFormat` kelas.

@@ -2,65 +2,65 @@
 title: Escape URI nel documento PDF
 linktitle: Escape URI nel documento PDF
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come eseguire l'escape degli URI nei PDF utilizzando Aspose.Words per .NET. Questa guida dettagliata ti guida attraverso il processo passo dopo passo.
+description: Scopri come eseguire l'escape degli URI nei PDF usando Aspose.Words per .NET. Questa guida dettagliata ti accompagna passo dopo passo nel processo.
 type: docs
 weight: 10
 url: /it/net/programming-with-pdfsaveoptions/escape-uri/
 ---
 ## Introduzione
 
-Ehilà! Ti sei mai chiesto come gestire gli URI quando salvi un documento Word come PDF utilizzando Aspose.Words per .NET? Sei nel posto giusto! Oggi approfondiremo gli URI di escape nei documenti PDF per garantire che funzionino correttamente quando il documento viene convertito. Intraprendiamo questo viaggio insieme, passo dopo passo, assicurandoci di comprendere ogni concetto lungo il percorso.
+Ciao! Ti sei mai chiesto come gestire gli URI quando salvi un documento Word come PDF usando Aspose.Words per .NET? Sei nel posto giusto! Oggi approfondiremo l'escape degli URI nei documenti PDF per assicurarci che funzionino correttamente quando il documento viene convertito. Intraprendiamo questo viaggio insieme, passo dopo passo, assicurandoci che tu comprenda ogni concetto lungo il percorso.
 
 ## Prerequisiti
 
 Prima di iniziare, assicuriamoci di avere tutto ciò di cui hai bisogno:
 
-1.  Aspose.Words per .NET: assicurati di avere la versione più recente. Puoi scaricarlo[Qui](https://releases.aspose.com/words/net/).
+1.  Aspose.Words per .NET: assicurati di avere la versione più recente. Puoi scaricarla[Qui](https://releases.aspose.com/words/net/).
 2. Ambiente di sviluppo: Visual Studio o qualsiasi altro ambiente di sviluppo .NET.
-3. Conoscenza di base di C#: questo tutorial presuppone che tu abbia una conoscenza di base della programmazione C#.
+3. Conoscenza di base di C#: questo tutorial presuppone una conoscenza di base della programmazione in C#.
 
-## Importa spazi dei nomi
+## Importazione degli spazi dei nomi
 
-Per prima cosa, devi importare gli spazi dei nomi necessari. Questo è fondamentale per accedere alle funzionalità di Aspose.Words.
+Per prima cosa, devi importare i namespace necessari. Questo è fondamentale per accedere alle funzionalità di Aspose.Words.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Va bene, suddividiamo il processo in passaggi digeribili. Segui e diventerai un professionista nell'evitare gli URI in pochissimo tempo!
+Bene, scomponiamo il processo in passaggi digeribili. Seguiteci e diventerete dei professionisti nell'escape degli URI in men che non si dica!
 
 ## Passaggio 1: imposta la directory dei documenti
 
-Prima di immergerti nel codice, imposta il percorso della directory dei tuoi documenti. Qui è dove verranno salvati i tuoi file.
+Prima di immergerti nel codice, imposta il percorso per la tua directory dei documenti. È qui che verranno salvati i tuoi file.
 
 ```csharp
-// Il percorso della directory dei documenti.
+// Percorso verso la directory dei documenti.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
  Sostituire`"YOUR DOCUMENT DIRECTORY"` con il percorso effettivo in cui desideri salvare il documento PDF.
 
-## Passaggio 2: crea un nuovo documento
+## Passaggio 2: creare un nuovo documento
 
-Successivamente, creeremo un nuovo documento utilizzando Aspose.Words. Questo documento servirà come tela per l'inserimento dei collegamenti ipertestuali.
+Successivamente, creeremo un nuovo documento usando Aspose.Words. Questo documento servirà come canvas per l'inserimento di collegamenti ipertestuali.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Qui,`Document` è il tuo nuovo documento Word e`DocumentBuilder` è una classe helper che semplifica il processo di creazione del documento.
+ Qui,`Document` è il tuo nuovo documento Word e`DocumentBuilder` è una classe helper che semplifica il processo di creazione dei documenti.
 
-## Passaggio 3: inserisci un collegamento ipertestuale
+## Passaggio 3: inserire un collegamento ipertestuale
 
-Ora inseriamo un collegamento ipertestuale nel documento. Questo collegamento ipertestuale sarà il fulcro del nostro processo di escape dell'URI.
+Ora, inseriamo un collegamento ipertestuale nel documento. Questo collegamento ipertestuale sarà il focus del nostro processo di escape URI.
 
 ```csharp
 builder.InsertHyperlink("Testlink", "https://www.google.com/search?q= aspose", false);
 ```
 
- In questa linea,`"Testlink"` è il testo visualizzato per il collegamento ipertestuale e`"https://www.google.com/search?q= aspose"` è l'URL. IL`false` Il parametro indica che il collegamento non deve essere formattato come collegamento ipertestuale (ovvero, non sarà sottolineato e blu).
+ In questa linea,`"Testlink"` è il testo visualizzato per l'hyperlink e`"https://www.google.com/search?q= aspose"` è l'URL. Il`false` Il parametro indica che il collegamento non deve essere formattato come collegamento ipertestuale (ovvero, non sarà sottolineato e non sarà blu).
 
 ## Passaggio 4: salva il documento come PDF
 
@@ -74,23 +74,23 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EscapeUri.pdf");
 
 ## Conclusione
 
-Ed ecco qua! Hai appena imparato come eseguire l'escape degli URI durante il salvataggio di un documento Word come PDF utilizzando Aspose.Words per .NET. Questo processo garantisce che i collegamenti ipertestuali rimangano funzionali e formattati correttamente nel PDF risultante. 
+Ed ecco fatto! Hai appena imparato come fare escape degli URI quando salvi un documento Word come PDF usando Aspose.Words per .NET. Questo processo assicura che i tuoi collegamenti ipertestuali rimangano funzionali e formattati correttamente nel PDF risultante. 
 
-Ricorda, padroneggiare queste piccole ma significative tecniche può migliorare notevolmente la qualità e la funzionalità dei tuoi documenti. Buona programmazione!
+Ricorda, padroneggiare queste piccole ma significative tecniche può migliorare notevolmente la qualità e la funzionalità dei tuoi documenti. Buona codifica!
 
 ## Domande frequenti
 
-### Cos'è Aspose.Words per .NET?
+### Che cos'è Aspose.Words per .NET?
 
-Aspose.Words per .NET è una potente libreria che consente agli sviluppatori di creare, manipolare e convertire documenti Word in applicazioni .NET.
+Aspose.Words per .NET è una potente libreria che consente agli sviluppatori di creare, manipolare e convertire documenti Word nelle applicazioni .NET.
 
-### Perché l'escape dell'URI è importante nei PDF?
+### Perché l'escape degli URI è importante nei PDF?
 
-L'escape dell'URI garantisce che i caratteri speciali negli URL vengano interpretati correttamente, prevenendo collegamenti interrotti e garantendo che funzionino come previsto.
+L'escape degli URI garantisce che i caratteri speciali negli URL vengano interpretati correttamente, impedendo la creazione di link non funzionanti e garantendo che funzionino come previsto.
 
 ### Posso utilizzare altri tipi di collegamenti in Aspose.Words per .NET?
 
-Assolutamente! Aspose.Words supporta vari tipi di collegamenti, inclusi collegamenti a documenti interni, segnalibri e URL esterni.
+Assolutamente! Aspose.Words supporta vari tipi di link, inclusi link a documenti interni, segnalibri e URL esterni.
 
 ### Come posso ottenere una prova gratuita di Aspose.Words per .NET?
 

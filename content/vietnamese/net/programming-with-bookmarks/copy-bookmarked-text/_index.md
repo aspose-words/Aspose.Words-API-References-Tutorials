@@ -1,23 +1,23 @@
 ---
-title: Sao chép văn bản được đánh dấu trong tài liệu Word
-linktitle: Sao chép văn bản được đánh dấu trong tài liệu Word
+title: Sao chép văn bản đã đánh dấu trong tài liệu Word
+linktitle: Sao chép văn bản đã đánh dấu trong tài liệu Word
 second_title: API xử lý tài liệu Aspose.Words
-description: Dễ dàng sao chép văn bản được đánh dấu giữa các tài liệu Word bằng Aspose.Words cho .NET. Tìm hiểu cách thực hiện với hướng dẫn từng bước này.
+description: Sao chép văn bản được đánh dấu dễ dàng giữa các tài liệu Word bằng Aspose.Words cho .NET. Tìm hiểu cách thực hiện với hướng dẫn từng bước này.
 type: docs
 weight: 10
 url: /vi/net/programming-with-bookmarks/copy-bookmarked-text/
 ---
 ## Giới thiệu
 
-Bạn có bao giờ thấy mình cần sao chép các phần cụ thể từ tài liệu Word này sang tài liệu Word khác không? Vâng, bạn thật may mắn! Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn cách sao chép văn bản được đánh dấu từ tài liệu Word này sang tài liệu Word khác bằng Aspose.Words cho .NET. Cho dù bạn đang tạo báo cáo động hay tự động tạo tài liệu, hướng dẫn này sẽ đơn giản hóa quy trình cho bạn.
+Bạn đã bao giờ thấy mình cần sao chép các phần cụ thể từ một tài liệu Word sang một tài liệu Word khác chưa? Vâng, bạn thật may mắn! Trong hướng dẫn này, chúng tôi sẽ hướng dẫn bạn cách sao chép văn bản được đánh dấu từ một tài liệu Word sang một tài liệu Word khác bằng Aspose.Words cho .NET. Cho dù bạn đang xây dựng một báo cáo động hay tự động tạo tài liệu, hướng dẫn này sẽ đơn giản hóa quy trình cho bạn.
 
 ## Điều kiện tiên quyết
 
-Trước khi chúng ta đi sâu vào, hãy đảm bảo bạn có những điều sau:
+Trước khi bắt đầu, hãy đảm bảo bạn có những điều sau:
 
--  Thư viện Aspose.Words for .NET: Bạn có thể tải xuống từ[đây](https://releases.aspose.com/words/net/).
+-  Aspose.Words cho Thư viện .NET: Bạn có thể tải xuống từ[đây](https://releases.aspose.com/words/net/).
 - Môi trường phát triển: Visual Studio hoặc bất kỳ môi trường phát triển .NET nào khác.
-- Kiến thức cơ bản về C#: Làm quen với lập trình C# và .NET framework.
+- Kiến thức cơ bản về C#: Có hiểu biết về lập trình C# và .NET framework.
 
 ## Nhập không gian tên
 
@@ -29,9 +29,9 @@ using Aspose.Words.Import;
 using Aspose.Words.Bookmark;
 ```
 
-## Bước 1: Tải tài liệu nguồn
+## Bước 1: Tải Tài liệu Nguồn
 
-Trước tiên, bạn cần tải tài liệu nguồn chứa văn bản đã đánh dấu mà bạn muốn sao chép.
+Trước tiên, bạn cần tải tài liệu nguồn có chứa văn bản được đánh dấu mà bạn muốn sao chép.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -40,7 +40,7 @@ Document srcDoc = new Document(dataDir + "Bookmarks.docx");
 
  Đây,`dataDir` là đường dẫn đến thư mục tài liệu của bạn và`Bookmarks.docx` là tài liệu nguồn.
 
-## Bước 2: Xác định dấu trang
+## Bước 2: Xác định Dấu trang
 
 Tiếp theo, xác định dấu trang bạn muốn sao chép từ tài liệu nguồn.
 
@@ -48,20 +48,20 @@ Tiếp theo, xác định dấu trang bạn muốn sao chép từ tài liệu ng
 Bookmark srcBookmark = srcDoc.Range.Bookmarks["MyBookmark1"];
 ```
 
- Thay thế`"MyBookmark1"` với tên thật của dấu trang của bạn.
+ Thay thế`"MyBookmark1"` bằng tên thực tế của dấu trang của bạn.
 
-## Bước 3: Tạo tài liệu đích
+## Bước 3: Tạo Tài liệu đích
 
-Bây giờ, tạo một tài liệu mới nơi văn bản được đánh dấu sẽ được sao chép.
+Bây giờ, hãy tạo một tài liệu mới trong đó văn bản được đánh dấu sẽ được sao chép.
 
 ```csharp
 Document dstDoc = new Document();
 CompositeNode dstNode = dstDoc.LastSection.Body;
 ```
 
-## Bước 4: Nhập nội dung được đánh dấu
+## Bước 4: Nhập nội dung đã đánh dấu
 
- Để đảm bảo kiểu dáng và định dạng được giữ nguyên, hãy sử dụng`NodeImporter` để nhập nội dung được đánh dấu từ tài liệu nguồn sang tài liệu đích.
+ Để đảm bảo các kiểu dáng và định dạng được bảo toàn, hãy sử dụng`NodeImporter` để nhập nội dung được đánh dấu từ tài liệu nguồn vào tài liệu đích.
 
 ```csharp
 NodeImporter importer = new NodeImporter(srcDoc, dstDoc, ImportFormatMode.KeepSourceFormatting);
@@ -70,7 +70,7 @@ AppendBookmarkedText(importer, srcBookmark, dstNode);
 
 ## Bước 5: Xác định phương thức AppendBookmarkedText
 
-Đây là nơi phép thuật xảy ra. Xác định phương thức xử lý việc sao chép văn bản được đánh dấu:
+Đây là nơi phép thuật xảy ra. Xác định phương pháp để xử lý việc sao chép văn bản được đánh dấu:
 
 ```csharp
 private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, CompositeNode dstNode)
@@ -94,9 +94,9 @@ private void AppendBookmarkedText(NodeImporter importer, Bookmark srcBookmark, C
 }
 ```
 
-## Bước 6: Lưu tài liệu đích
+## Bước 6: Lưu Tài liệu Đích
 
-Cuối cùng, lưu tài liệu đích để xác minh nội dung đã sao chép.
+Cuối cùng, hãy lưu tài liệu đích để xác minh nội dung đã sao chép.
 
 ```csharp
 dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
@@ -104,21 +104,21 @@ dstDoc.Save(dataDir + "WorkingWithBookmarks.CopyBookmarkedText.docx");
 
 ## Phần kết luận
 
-Và thế là xong! Bạn đã sao chép thành công văn bản được đánh dấu từ tài liệu Word này sang tài liệu Word khác bằng Aspose.Words for .NET. Phương pháp này rất hiệu quả để tự động hóa các tác vụ thao tác tài liệu, giúp quy trình làm việc của bạn hiệu quả và hợp lý hơn.
+Và thế là xong! Bạn đã sao chép thành công văn bản được đánh dấu từ một tài liệu Word sang một tài liệu Word khác bằng Aspose.Words for .NET. Phương pháp này rất hiệu quả để tự động hóa các tác vụ thao tác tài liệu, giúp quy trình làm việc của bạn hiệu quả và hợp lý hơn.
 
 ## Câu hỏi thường gặp
 
 ### Tôi có thể sao chép nhiều dấu trang cùng một lúc không?
-Có, bạn có thể lặp qua nhiều dấu trang và sử dụng cùng một phương pháp để sao chép từng dấu trang.
+Có, bạn có thể lặp lại nhiều dấu trang và sử dụng cùng một phương pháp để sao chép từng dấu trang.
 
 ### Điều gì xảy ra nếu không tìm thấy dấu trang?
- các`Range.Bookmarks` tài sản sẽ trở lại`null`, vì vậy hãy đảm bảo bạn xử lý trường hợp này để tránh trường hợp ngoại lệ.
+Các`Range.Bookmarks` tài sản sẽ trở lại`null`, vì vậy hãy đảm bảo bạn xử lý trường hợp này để tránh trường hợp ngoại lệ.
 
 ### Tôi có thể giữ nguyên định dạng của dấu trang gốc không?
- Tuyệt đối! sử dụng`ImportFormatMode.KeepSourceFormatting` đảm bảo rằng định dạng ban đầu được giữ nguyên.
+ Chắc chắn rồi! Sử dụng`ImportFormatMode.KeepSourceFormatting` đảm bảo định dạng ban đầu được giữ nguyên.
 
 ### Có giới hạn về kích thước của văn bản được đánh dấu không?
-Không có giới hạn cụ thể nhưng hiệu suất có thể khác nhau đối với các tài liệu cực lớn.
+Không có giới hạn cụ thể, nhưng hiệu suất có thể thay đổi đối với các tài liệu cực lớn.
 
 ### Tôi có thể sao chép văn bản giữa các định dạng tài liệu Word khác nhau không?
-Có, Aspose.Words hỗ trợ nhiều định dạng Word khác nhau và phương pháp này hoạt động trên các định dạng này.
+Có, Aspose.Words hỗ trợ nhiều định dạng Word khác nhau và phương pháp này có thể áp dụng trên các định dạng này.

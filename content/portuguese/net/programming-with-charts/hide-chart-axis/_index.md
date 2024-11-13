@@ -1,28 +1,28 @@
 ---
-title: Ocultar o eixo do gráfico em um documento do Word
-linktitle: Ocultar o eixo do gráfico em um documento do Word
+title: Ocultar eixo do gráfico em um documento do Word
+linktitle: Ocultar eixo do gráfico em um documento do Word
 second_title: API de processamento de documentos Aspose.Words
-description: Aprenda como ocultar o eixo do gráfico em um documento do Word usando Aspose.Words for .NET com nosso tutorial passo a passo detalhado.
+description: Aprenda como ocultar o eixo do gráfico em um documento do Word usando o Aspose.Words para .NET com nosso tutorial detalhado passo a passo.
 type: docs
 weight: 10
 url: /pt/net/programming-with-charts/hide-chart-axis/
 ---
 ## Introdução
 
-A criação de documentos Word dinâmicos e visualmente atraentes geralmente envolve a incorporação de tabelas e gráficos. Um desses cenários pode exigir a ocultação do eixo do gráfico para uma apresentação mais limpa. Aspose.Words for .NET fornece uma API abrangente e fácil de usar para tais tarefas. Este tutorial irá guiá-lo através das etapas para ocultar um eixo de gráfico em um documento do Word usando Aspose.Words for .NET.
+Criar documentos dinâmicos e visualmente atraentes do Word geralmente envolve incorporar tabelas e gráficos. Um cenário como esse pode exigir ocultar o eixo do gráfico para uma apresentação mais limpa. O Aspose.Words para .NET fornece uma API abrangente e fácil de usar para essas tarefas. Este tutorial o guiará pelas etapas para ocultar um eixo de gráfico em um documento do Word usando o Aspose.Words para .NET.
 
 ## Pré-requisitos
 
-Antes de mergulharmos no tutorial, certifique-se de ter os seguintes pré-requisitos:
+Antes de começarmos o tutorial, certifique-se de ter os seguintes pré-requisitos:
 
--  Aspose.Words for .NET: você pode baixá-lo em[aqui](https://releases.aspose.com/words/net/).
-- Ambiente de desenvolvimento: qualquer IDE que ofereça suporte ao desenvolvimento .NET, como Visual Studio.
-- .NET Framework: certifique-se de ter o .NET Framework instalado em sua máquina.
+-  Aspose.Words para .NET: Você pode baixá-lo em[aqui](https://releases.aspose.com/words/net/).
+- Ambiente de desenvolvimento: qualquer IDE que suporte desenvolvimento .NET, como o Visual Studio.
+- .NET Framework: certifique-se de ter o .NET Framework instalado na sua máquina.
 - Conhecimento básico de C#: Familiaridade com a linguagem de programação C# será benéfica.
 
 ## Importar namespaces
 
-Para começar a trabalhar com Aspose.Words for .NET, você precisa importar os namespaces necessários em seu projeto. Veja como você pode fazer isso:
+Para começar a trabalhar com Aspose.Words para .NET, você precisa importar os namespaces necessários no seu projeto. Veja como você pode fazer isso:
 
 ```csharp
 using Aspose.Words;
@@ -34,7 +34,7 @@ Vamos dividir o processo em etapas simples e fáceis de seguir.
 
 ## Etapa 1: inicializar o documento e o DocumentBuilder
 
-primeira etapa envolve a criação de um novo documento do Word e a inicialização do objeto DocumentBuilder.
+primeiro passo envolve criar um novo documento do Word e inicializar o objeto DocumentBuilder.
 
 ```csharp
 // Caminho para o diretório do seu documento
@@ -44,11 +44,11 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Nesta etapa definimos o caminho onde o documento será salvo. Criamos então um novo`Document` objeto e um`DocumentBuilder` objeto para começar a construir nosso documento.
+ Nesta etapa, definimos o caminho onde o documento será salvo. Em seguida, criamos um novo`Document` objeto e um`DocumentBuilder` objeto para começar a construir nosso documento.
 
-## Etapa 2: inserir um gráfico
+## Etapa 2: Insira um gráfico
 
- A seguir, inseriremos um gráfico no documento usando o`DocumentBuilder` objeto.
+ Em seguida, inseriremos um gráfico no documento usando o`DocumentBuilder` objeto.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
@@ -57,7 +57,7 @@ Chart chart = shape.Chart;
 
  Aqui, inserimos um gráfico de colunas com dimensões especificadas. O`InsertChart` método retorna um`Shape` objeto que contém o gráfico.
 
-## Etapa 3: limpar séries existentes
+## Etapa 3: Limpar séries existentes
 
 Antes de adicionar novos dados ao gráfico, precisamos limpar todas as séries existentes.
 
@@ -65,9 +65,9 @@ Antes de adicionar novos dados ao gráfico, precisamos limpar todas as séries e
 chart.Series.Clear();
 ```
 
-Esta etapa garante que todos os dados padrão do gráfico sejam removidos, abrindo caminho para os novos dados que adicionaremos a seguir.
+Esta etapa garante que todos os dados padrão no gráfico sejam removidos, abrindo caminho para os novos dados que adicionaremos a seguir.
 
-## Etapa 4: adicionar dados de série
+## Etapa 4: Adicionar dados de série
 
 Agora, vamos adicionar nossa própria série de dados ao gráfico.
 
@@ -79,9 +79,9 @@ chart.Series.Add("Aspose Series 1",
 
 Nesta etapa, adicionamos uma série intitulada "Aspose Series 1" com categorias e valores correspondentes.
 
-## Etapa 5: ocultar o eixo Y
+## Etapa 5: Ocultar o eixo Y
 
- Para ocultar o eixo Y do gráfico, simplesmente definimos o`Hidden` propriedade do eixo Y para`true`.
+ Para ocultar o eixo Y do gráfico, basta definir o`Hidden` propriedade do eixo Y para`true`.
 
 ```csharp
 chart.AxisY.Hidden = true;
@@ -89,9 +89,9 @@ chart.AxisY.Hidden = true;
 
 Esta linha de código oculta o eixo Y, tornando-o invisível no gráfico.
 
-## Etapa 6: salve o documento
+## Etapa 6: Salve o documento
 
-Finalmente, salve o documento no diretório especificado.
+Por fim, salve o documento no diretório especificado.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.HideChartAxis.docx");
@@ -101,21 +101,21 @@ Este comando salva o documento do Word com o gráfico no caminho especificado.
 
 ## Conclusão
 
-Parabéns! Você aprendeu com sucesso como ocultar um eixo de gráfico em um documento do Word usando Aspose.Words for .NET. Esta poderosa biblioteca facilita a manipulação programática de documentos do Word. Seguindo essas etapas, você pode criar documentos personalizados e com aparência profissional com o mínimo de esforço.
+Parabéns! Você aprendeu com sucesso como ocultar um eixo de gráfico em um documento do Word usando o Aspose.Words para .NET. Esta biblioteca poderosa facilita a manipulação de documentos do Word programaticamente. Seguindo estas etapas, você pode criar documentos personalizados e com aparência profissional com o mínimo de esforço.
 
 ## Perguntas frequentes
 
 ### O que é Aspose.Words para .NET?
-Aspose.Words for .NET é uma API poderosa para criar, editar, converter e manipular documentos Word em aplicativos .NET.
+Aspose.Words para .NET é uma API poderosa para criar, editar, converter e manipular documentos do Word em aplicativos .NET.
 
 ### Posso ocultar os eixos X e Y em um gráfico?
- Sim, você pode ocultar ambos os eixos definindo o`Hidden` propriedade de ambos`AxisX`e`AxisY` para`true`.
+ Sim, você pode ocultar ambos os eixos definindo o`Hidden` propriedade de ambos`AxisX` e`AxisY` para`true`.
 
-### Existe um teste gratuito disponível para Aspose.Words for .NET?
- Sim, você pode obter um teste gratuito[aqui](https://releases.aspose.com/).
+### Existe uma versão de avaliação gratuita disponível para o Aspose.Words para .NET?
+ Sim, você pode obter uma avaliação gratuita[aqui](https://releases.aspose.com/).
 
 ### Onde posso encontrar mais documentação?
- Você pode encontrar documentação detalhada no Aspose.Words for .NET[aqui](https://reference.aspose.com/words/net/).
+ Você pode encontrar documentação detalhada no Aspose.Words para .NET[aqui](https://reference.aspose.com/words/net/).
 
-### Como posso obter suporte para Aspose.Words for .NET?
+### Como posso obter suporte para o Aspose.Words para .NET?
  Você pode obter suporte da comunidade Aspose[aqui](https://forum.aspose.com/c/words/8).

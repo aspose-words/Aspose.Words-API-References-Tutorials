@@ -37,7 +37,7 @@ Rendben, bontsuk ezt le lépésről lépésre. A nulláról kezdjük, és haladu
 Mielőtt belevágnánk a kódba, állítsuk be a projektet a Visual Studio-ban.
 
 1. Új projekt létrehozása: Nyissa meg a Visual Studio-t, és hozzon létre egy új konzolalkalmazás (.NET-keretrendszer) projektet.
-2.  Az Aspose.Words for .NET telepítése: A NuGet Package Manager segítségével telepítse az Aspose.Words for .NET könyvtárat. Egyszerűen keressen`Aspose.Words` és kattintson a 'Telepítés' gombra.
+2.  Az Aspose.Words for .NET telepítése: A NuGet Package Manager segítségével telepítse az Aspose.Words for .NET könyvtárat. Egyszerűen keressen`Aspose.Words` és kattintson a „Telepítés” gombra.
 
 ## 2. lépés: Töltse be a Word-dokumentumot
 
@@ -76,7 +76,7 @@ A dokumentum betöltése után itt az ideje, hogy ismételje meg a bekezdéseket
 
 ## 4. lépés: Futtassa a kódot
 
-Most pedig futtassuk le a kódot, és nézzük meg működés közben.
+Most futtassuk le a kódot, és nézzük meg működés közben.
 
 1. Építés és futtatás: Építse fel projektjét, és futtassa. Ha minden megfelelően van beállítva, akkor a "Separator Found!" kinyomtatva a konzolon a dokumentum minden stíluselválasztójához.
 

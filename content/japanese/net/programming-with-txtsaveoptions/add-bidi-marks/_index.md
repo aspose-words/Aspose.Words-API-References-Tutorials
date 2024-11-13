@@ -13,7 +13,7 @@ url: /ja/net/programming-with-txtsaveoptions/add-bidi-marks/
 
 ## 前提条件
 
-コードに進む前に、次のものを用意しておいてください。
+コードに進む前に、次のものを用意してください。
 
 1.  Aspose.Words for .NET: Aspose.Words for .NETがインストールされている必要があります。[Aspose ダウンロード ページ](https://releases.aspose.com/words/net/).
 2. .NET Framework または .NET Core: 例を実行するために互換性のある .NET 環境が設定されていることを確認します。
@@ -32,7 +32,7 @@ Word 文書に Bidi マークを追加するプロセスを明確な手順に分
 
 ## ステップ1: ドキュメントを設定する
 
-まず、新しいインスタンスを作成します。`Document`クラスと`DocumentBuilder`ドキュメントにコンテンツを追加します。
+まず、`Document`クラスと`DocumentBuilder`ドキュメントにコンテンツを追加します。
 
 ```csharp
 //ドキュメントディレクトリへのパス
@@ -79,7 +79,7 @@ Word 文書に Bidi マークを追加することは、テキスト方向が異
 ### Bidi マークとは何ですか? また、なぜ重要ですか?
 Bidi マークは、文書内のテキストの方向を制御するために使用される特殊文字です。アラビア語やヘブライ語など、右から左に読む言語を適切に表示するために不可欠です。
 
-### Aspose.Words for .NET を使用して、他の種類のテキスト方向の問題を処理できますか?
+### Aspose.Words for .NET を使用して他の種類のテキスト方向の問題を処理できますか?
 はい、Aspose.Words for .NET は、右から左、左から右の言語を含む、さまざまなテキスト方向と書式設定のニーズを包括的にサポートします。
 
 ### ドキュメントの特定の部分にのみ Bidi フォーマットを適用することは可能ですか?

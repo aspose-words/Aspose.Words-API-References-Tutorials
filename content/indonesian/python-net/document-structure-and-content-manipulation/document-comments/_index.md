@@ -1,22 +1,22 @@
 ---
-title: Memanfaatkan Fitur Komentar pada Dokumen Word
-linktitle: Memanfaatkan Fitur Komentar pada Dokumen Word
-second_title: API Manajemen Dokumen Aspose.Words Python
-description: Pelajari cara memanfaatkan fitur komentar di Dokumen Word menggunakan Aspose.Words untuk Python. Panduan langkah demi langkah dengan kode sumber. Tingkatkan kolaborasi dan sederhanakan tinjauan dalam dokumen.
+title: Memanfaatkan Fitur Komentar dalam Dokumen Word
+linktitle: Memanfaatkan Fitur Komentar dalam Dokumen Word
+second_title: API Manajemen Dokumen Python Aspose.Words
+description: Pelajari cara memanfaatkan fitur komentar di Dokumen Word menggunakan Aspose.Words untuk Python. Panduan langkah demi langkah dengan kode sumber. Tingkatkan kolaborasi dan sederhanakan ulasan dalam dokumen.
 type: docs
 weight: 11
 url: /id/python-net/document-structure-and-content-manipulation/document-comments/
 ---
 
-Komentar memainkan peran penting dalam berkolaborasi dan meninjau dokumen, memungkinkan banyak individu untuk berbagi pemikiran dan saran mereka dalam dokumen Word. Aspose.Words untuk Python menyediakan API canggih yang memungkinkan pengembang bekerja dengan mudah dengan komentar di dokumen Word. Pada artikel ini, kita akan mempelajari cara memanfaatkan fitur komentar di dokumen Word menggunakan Aspose.Words untuk Python.
+Komentar memainkan peran penting dalam berkolaborasi dan meninjau dokumen, yang memungkinkan banyak orang untuk berbagi pemikiran dan saran mereka dalam dokumen Word. Aspose.Words untuk Python menyediakan API canggih yang memungkinkan pengembang untuk bekerja dengan mudah menggunakan komentar dalam dokumen Word. Dalam artikel ini, kita akan membahas cara memanfaatkan fitur komentar dalam dokumen Word menggunakan Aspose.Words untuk Python.
 
 ## Perkenalan
 
-Kolaborasi adalah aspek mendasar dalam pembuatan dokumen, dan komentar memberikan cara yang lancar bagi banyak pengguna untuk berbagi masukan dan pemikiran mereka dalam sebuah dokumen. Aspose.Words untuk Python, pustaka manipulasi dokumen yang canggih, memberdayakan pengembang untuk bekerja secara terprogram dengan dokumen Word, termasuk menambahkan, memodifikasi, dan mengambil komentar.
+Kolaborasi merupakan aspek mendasar dari pembuatan dokumen, dan komentar menyediakan cara yang mudah bagi banyak pengguna untuk berbagi umpan balik dan pemikiran mereka dalam sebuah dokumen. Aspose.Words untuk Python, pustaka manipulasi dokumen yang canggih, memberdayakan pengembang untuk bekerja secara terprogram dengan dokumen Word, termasuk menambahkan, memodifikasi, dan mengambil komentar.
 
 ## Menyiapkan Aspose.Words untuk Python
 
- Untuk memulai, Anda perlu menginstal Aspose.Words untuk Python. Anda dapat mengunduh perpustakaan dari[Aspose.Kata-kata untuk Python](https://releases.aspose.com/words/python/) tautan unduhan. Setelah diunduh, Anda dapat menginstalnya menggunakan pip:
+ Untuk memulai, Anda perlu menginstal Aspose.Words untuk Python. Anda dapat mengunduh pustaka dari[Aspose.Words untuk Python](https://releases.aspose.com/words/python/) tautan unduhan. Setelah diunduh, Anda dapat menginstalnya menggunakan pip:
 
 ```python
 pip install aspose-words
@@ -24,7 +24,7 @@ pip install aspose-words
 
 ## Menambahkan Komentar ke Dokumen
 
-Menambahkan komentar ke dokumen Word menggunakan Aspose.Words untuk Python sangatlah mudah. Berikut ini contoh sederhananya:
+Menambahkan komentar ke dokumen Word menggunakan Aspose.Words untuk Python sangatlah mudah. Berikut contoh sederhananya:
 
 ```python
 import aspose.words as aw
@@ -47,7 +47,7 @@ run.insert_comment(comment)
 
 ## Mengambil Komentar dari Dokumen
 
-Mengambil komentar dari dokumen juga mudah. Anda dapat mengulangi komentar di dokumen dan mengakses propertinya:
+Mengambil komentar dari sebuah dokumen juga mudah. Anda dapat menelusuri komentar dalam sebuah dokumen dan mengakses propertinya:
 
 ```python
 for comment in doc.comments:
@@ -56,9 +56,9 @@ for comment in doc.comments:
     print("Date:", comment.date_time)
 ```
 
-## Memodifikasi dan Menyelesaikan Komentar
+## Mengubah dan Menyelesaikan Komentar
 
-Komentar sering kali dapat berubah. Aspose.Words untuk Python memungkinkan Anda mengubah komentar yang ada dan menandainya sebagai terselesaikan:
+Komentar sering kali dapat berubah. Aspose.Words untuk Python memungkinkan Anda untuk mengubah komentar yang ada dan menandainya sebagai selesai:
 
 ```python
 # Modify a comment's text
@@ -83,7 +83,7 @@ comment.replies.add(reply)
 
 ## Memformat dan Menata Komentar
 
-Memformat komentar meningkatkan visibilitasnya. Anda dapat menerapkan pemformatan pada komentar menggunakan Aspose.Words untuk Python:
+Memformat komentar akan meningkatkan visibilitasnya. Anda dapat menerapkan pemformatan pada komentar menggunakan Aspose.Words untuk Python:
 
 ```python
 # Apply formatting to a comment
@@ -94,7 +94,7 @@ comment.runs[0].font.color = aw.Color.red
 
 ## Mengelola Penulis Komentar
 
-Komentar diberikan kepada penulis. Aspose.Words untuk Python memungkinkan Anda mengelola penulis komentar:
+Komentar dikaitkan dengan penulis. Aspose.Words untuk Python memungkinkan Anda mengelola penulis komentar:
 
 ```python
 # Change the author's name
@@ -117,19 +117,19 @@ doc.import_comments("comments.xml")
 ## Praktik Terbaik untuk Memanfaatkan Komentar
 
 - Gunakan komentar untuk memberikan konteks, penjelasan, dan saran.
-- Jaga agar komentar tetap ringkas dan relevan dengan konten.
-- Selesaikan komentar ketika poin mereka telah ditangani.
-- Manfaatkan balasan untuk mendorong diskusi terperinci.
+- Buatlah komentar tetap ringkas dan relevan dengan konten.
+- Selesaikan komentar ketika poin-poinnya telah ditangani.
+- Memanfaatkan balasan untuk mendorong diskusi terperinci.
 
 ## Kesimpulan
 
-Aspose.Words untuk Python menyederhanakan bekerja dengan komentar di dokumen Word, menawarkan API komprehensif untuk menambahkan, mengambil, memodifikasi, dan mengelola komentar. Dengan mengintegrasikan Aspose.Words untuk Python ke dalam proyek Anda, Anda dapat meningkatkan kolaborasi dan menyederhanakan proses peninjauan dalam dokumen Anda.
+Aspose.Words untuk Python menyederhanakan penggunaan komentar dalam dokumen Word, menawarkan API yang komprehensif untuk menambahkan, mengambil, mengubah, dan mengelola komentar. Dengan mengintegrasikan Aspose.Words untuk Python ke dalam proyek Anda, Anda dapat meningkatkan kolaborasi dan menyederhanakan proses peninjauan dalam dokumen Anda.
 
-## FAQ
+## Tanya Jawab Umum
 
 ### Apa itu Aspose.Words untuk Python?
 
-Aspose.Words untuk Python adalah pustaka manipulasi dokumen canggih yang memungkinkan pengembang membuat, memodifikasi, dan memproses dokumen Word secara terprogram menggunakan Python.
+Aspose.Words untuk Python adalah pustaka manipulasi dokumen canggih yang memungkinkan pengembang untuk membuat, memodifikasi, dan memproses dokumen Word secara terprogram menggunakan Python.
 
 ### Bagaimana cara menginstal Aspose.Words untuk Python?
 
@@ -138,14 +138,14 @@ Anda dapat menginstal Aspose.Words untuk Python menggunakan pip:
 pip install aspose-words
 ```
 
-### Bisakah saya menggunakan Aspose.Words untuk Python untuk mengekstrak komentar yang ada dari dokumen Word?
+### Dapatkah saya menggunakan Aspose.Words untuk Python untuk mengekstrak komentar yang ada dari dokumen Word?
 
-Ya, Anda dapat mengulangi komentar di dokumen dan mengambil propertinya menggunakan Aspose.Words untuk Python.
+Ya, Anda dapat mengulangi komentar dalam dokumen dan mengambil propertinya menggunakan Aspose.Words untuk Python.
 
-### Apakah mungkin menyembunyikan atau menampilkan komentar secara terprogram menggunakan API?
+### Apakah mungkin untuk menyembunyikan atau menampilkan komentar secara terprogram menggunakan API?
 
  Ya, Anda dapat mengontrol visibilitas komentar menggunakan`comment.visible` properti di Aspose.Words untuk Python.
 
 ### Apakah Aspose.Words untuk Python mendukung penambahan komentar ke rentang teks tertentu?
 
-Tentu saja, Anda dapat menambahkan komentar ke rentang teks tertentu dalam dokumen menggunakan Aspose.Words untuk API kaya Python.
+Tentu saja, Anda dapat menambahkan komentar ke rentang teks tertentu dalam dokumen menggunakan Aspose.Words untuk API Python yang kaya.

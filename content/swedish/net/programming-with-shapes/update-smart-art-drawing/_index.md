@@ -80,7 +80,7 @@ Att identifiera Smart Art-former säkerställer att du bara försöker uppdatera
 Rubrik: Uppdatera Smart Art Graphics
 
 Förklaring:
- De`UpdateSmartArtDrawing` metoden uppdaterar Smart Art-grafiken och säkerställer att den återspeglar alla ändringar i dokumentets data eller layout. Denna metod måste anropas på varje Smart Art-form som identifierats i föregående steg.
+De`UpdateSmartArtDrawing` metoden uppdaterar Smart Art-grafiken och säkerställer att den återspeglar alla ändringar i dokumentets data eller layout. Denna metod måste anropas på varje Smart Art-form som identifierats i föregående steg.
 
 ```csharp
 // Uppdatera Smart Art-teckning för varje Smart Art-form

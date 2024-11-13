@@ -1,27 +1,27 @@
 ---
-title: Usuń stopki nagłówków źródłowych
-linktitle: Usuń stopki nagłówków źródłowych
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak usuwać nagłówki i stopki w dokumentach programu Word za pomocą Aspose.Words dla .NET. Uprość zarządzanie dokumentami dzięki naszemu przewodnikowi krok po kroku.
+title: Usuń nagłówki i stopki źródłowe
+linktitle: Usuń nagłówki i stopki źródłowe
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak usuwać nagłówki i stopki w dokumentach Word za pomocą Aspose.Words dla .NET. Uprość zarządzanie dokumentami dzięki naszemu przewodnikowi krok po kroku.
 type: docs
 weight: 10
 url: /pl/net/join-and-append-documents/remove-source-headers-footers/
 ---
 ## Wstęp
 
-tym obszernym przewodniku zagłębimy się w skuteczne usuwanie nagłówków i stopek z dokumentu programu Word za pomocą Aspose.Words dla .NET. Nagłówki i stopki są powszechnie używane do numerowania stron, tytułów dokumentów lub innych powtarzających się treści w dokumentach programu Word. Niezależnie od tego, czy scalasz dokumenty, czy usuwasz formatowanie, opanowanie tego procesu może usprawnić zadania związane z zarządzaniem dokumentami. Przyjrzyjmy się krok po kroku procesowi osiągnięcia tego za pomocą Aspose.Words dla .NET.
+W tym kompleksowym przewodniku zagłębimy się w to, jak skutecznie usuwać nagłówki i stopki z dokumentu Word za pomocą Aspose.Words dla .NET. Nagłówki i stopki są powszechnie używane do numerowania stron, tytułów dokumentów lub innej powtarzającej się zawartości w dokumentach Word. Niezależnie od tego, czy scalasz dokumenty, czy oczyszczasz formatowanie, opanowanie tego procesu może usprawnić zadania związane z zarządzaniem dokumentami. Przyjrzyjmy się procesowi krok po kroku, aby to osiągnąć za pomocą Aspose.Words dla .NET.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim przejdziesz do samouczka, upewnij się, że masz skonfigurowane następujące wymagania wstępne:
+Zanim przejdziesz do samouczka, upewnij się, że spełnione są następujące wymagania wstępne:
 
-1. Środowisko programistyczne: Zainstaluj program Visual Studio lub dowolne inne środowisko programistyczne .NET.
-2.  Aspose.Words dla .NET: Upewnij się, że pobrałeś i zainstalowałeś Aspose.Words dla .NET. Jeśli nie, możesz to uzyskać[Tutaj](https://releases.aspose.com/words/net/).
-3. Podstawowa wiedza: Znajomość podstaw programowania w C# i .NET Framework.
+1. Środowisko programistyczne: Musisz mieć zainstalowany program Visual Studio lub inne środowisko programistyczne .NET.
+2.  Aspose.Words dla .NET: Upewnij się, że pobrałeś i zainstalowałeś Aspose.Words dla .NET. Jeśli nie, możesz go pobrać z[Tutaj](https://releases.aspose.com/words/net/).
+3. Wiedza podstawowa: Znajomość programowania w języku C# i podstaw .NET Framework.
 
 ## Importuj przestrzenie nazw
 
-Zanim zaczniesz kodować, pamiętaj o zaimportowaniu niezbędnych przestrzeni nazw do pliku C#:
+Zanim zaczniesz kodować, upewnij się, że zaimportowałeś niezbędne przestrzenie nazw do pliku C#:
 
 ```csharp
 using Aspose.Words;
@@ -29,7 +29,7 @@ using Aspose.Words;
 
 ## Krok 1: Załaduj dokument źródłowy
 
-Najpierw musisz załadować dokument źródłowy, z którego chcesz usunąć nagłówki i stopki. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu dokumentów, w którym znajduje się dokument źródłowy.
+ Najpierw musisz załadować dokument źródłowy, z którego chcesz usunąć nagłówki i stopki. Zastąp`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do katalogu dokumentów, w którym znajduje się dokument źródłowy.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -38,15 +38,15 @@ Document srcDoc = new Document(dataDir + "Document source.docx");
 
 ## Krok 2: Utwórz lub załaduj dokument docelowy
 
- Jeśli nie utworzyłeś jeszcze dokumentu docelowego, w którym chcesz umieścić zmodyfikowaną treść, możesz utworzyć nowy`Document` obiektu lub załaduj istniejący.
+ Jeśli nie utworzyłeś jeszcze dokumentu docelowego, w którym chcesz umieścić zmodyfikowaną zawartość, możesz utworzyć nowy`Document` obiekt lub załadować istniejący.
 
 ```csharp
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-## Krok 3: Usuń nagłówki i stopki z sekcji
+## Krok 3: Wyczyść nagłówki i stopki z sekcji
 
-Iteruj po każdej sekcji dokumentu źródłowego (`srcDoc`) i wyczyść nagłówki i stopki.
+Przejdź przez każdą sekcję w dokumencie źródłowym (`srcDoc`) i wyczyść jego nagłówki i stopki.
 
 ```csharp
 foreach (Section section in srcDoc.Sections)
@@ -57,7 +57,7 @@ foreach (Section section in srcDoc.Sections)
 
 ## Krok 4: Zarządzaj ustawieniami LinkToPrevious
 
-Aby zapobiec kontynuowaniu nagłówków i stopek w dokumencie docelowym (`dstDoc` ), upewnij się, że`LinkToPrevious` ustawienie nagłówków i stopek jest ustawione na`false`.
+Aby zapobiec dalszemu umieszczaniu nagłówków i stopek w dokumencie docelowym (`dstDoc` ), upewnij się, że`LinkToPrevious` ustawienie dla nagłówków i stopek jest ustawione na`false`.
 
 ```csharp
 srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
@@ -65,13 +65,13 @@ srcDoc.FirstSection.HeadersFooters.LinkToPrevious(false);
 
 ## Krok 5: Dołącz zmodyfikowany dokument do dokumentu docelowego
 
-Na koniec dołącz zmodyfikowaną treść z dokumentu źródłowego (`srcDoc`) do dokumentu docelowego (`dstDoc`) przy zachowaniu formatowania źródłowego.
+Na koniec dołącz zmodyfikowaną treść ze źródłowego dokumentu (`srcDoc`) do dokumentu docelowego (`dstDoc`) zachowując formatowanie źródłowe.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
-## Krok 6: Zapisz wynikowy dokument
+## Krok 6: Zapisz powstały dokument
 
 Zapisz ostateczny dokument z usuniętymi nagłówkami i stopkami w określonym katalogu.
 
@@ -81,21 +81,21 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.RemoveSourceHeadersFooters.docx");
 
 ## Wniosek
 
-Usuwanie nagłówków i stopek z dokumentu programu Word za pomocą Aspose.Words dla .NET to prosty proces, który może znacznie usprawnić zadania związane z zarządzaniem dokumentami. Wykonując czynności opisane powyżej, możesz skutecznie oczyścić dokumenty, aby uzyskać dopracowany, profesjonalny wygląd.
+Usuwanie nagłówków i stopek z dokumentu Word za pomocą Aspose.Words dla .NET to prosty proces, który może znacznie usprawnić zadania związane z zarządzaniem dokumentami. Postępując zgodnie z powyższymi krokami, możesz skutecznie oczyścić dokumenty, aby uzyskać dopracowany, profesjonalny wygląd.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Czy mogę usunąć nagłówki i stopki tylko z określonych sekcji?
+### Czy mogę usunąć nagłówki i stopki tylko z wybranych sekcji?
 Tak, możesz przeglądać sekcje i selektywnie czyścić nagłówki i stopki, jeśli zajdzie taka potrzeba.
 
-### Czy Aspose.Words dla .NET obsługuje usuwanie nagłówków i stopek w wielu dokumentach?
-Absolutnie możesz manipulować nagłówkami i stopkami w wielu dokumentach za pomocą Aspose.Words dla .NET.
+### Czy Aspose.Words dla platformy .NET obsługuje usuwanie nagłówków i stopek w wielu dokumentach?
+Oczywiście, możesz manipulować nagłówkami i stopkami w wielu dokumentach, korzystając z Aspose.Words dla .NET.
 
 ###  Co się stanie, jeśli zapomnę ustawić`LinkToPrevious` to `false`?
 Nagłówki i stopki z dokumentu źródłowego mogą być kontynuowane w dokumencie docelowym.
 
-### Czy mogę programowo usunąć nagłówki i stopki bez wpływu na inne formatowanie?
-Tak, Aspose.Words dla .NET umożliwia usuwanie nagłówków i stopek przy jednoczesnym zachowaniu pozostałej części formatowania dokumentu.
+### Czy mogę programowo usuwać nagłówki i stopki bez wpływu na inne formatowanie?
+Tak, Aspose.Words dla platformy .NET umożliwia usuwanie nagłówków i stopek przy zachowaniu pozostałego formatowania dokumentu.
 
-### Gdzie mogę znaleźć więcej zasobów i wsparcia dla Aspose.Words dla .NET?
- Odwiedź[Aspose.Words dla dokumentacji .NET](https://reference.aspose.com/words/net/) szczegółowe odniesienia do API i przykłady.
+### Gdzie mogę znaleźć więcej materiałów i pomocy dla Aspose.Words dla .NET?
+ Odwiedź[Dokumentacja Aspose.Words dla .NET](https://reference.aspose.com/words/net/) aby uzyskać szczegółowe odniesienia i przykłady API.

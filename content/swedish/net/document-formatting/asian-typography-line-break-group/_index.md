@@ -1,6 +1,6 @@
 ---
-title: Asiatisk Typografi Linjebrytning Grupp I Word-dokument
-linktitle: Asiatisk Typografi Linjebrytning Grupp I Word-dokument
+title: Asiatisk typografi linjebrytning grupp i Word-dokument
+linktitle: Asiatisk typografi linjebrytning grupp i Word-dokument
 second_title: Aspose.Words Document Processing API
 description: Bemästra radbrytningar i asiatisk typografi i Word-dokument med Aspose.Words för .NET. Den här guiden ger en steg-för-steg handledning för exakt formatering.
 type: docs

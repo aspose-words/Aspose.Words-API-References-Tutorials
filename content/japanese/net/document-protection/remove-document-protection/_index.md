@@ -78,7 +78,7 @@ doc.Protect(ProtectionType.ReadOnly, "newPassword");
 doc.Unprotect("newPassword");
 ```
 
-上記のコードでは、まずパスワードで新しい保護を追加します`"newPassword"`、そして同じパスワードを使用してすぐに削除します。
+上記のコードでは、まずパスワードで新しい保護を追加します。`"newPassword"`、そして同じパスワードを使用してすぐに削除します。
 
 ## ステップ5: ドキュメントを保存する
 

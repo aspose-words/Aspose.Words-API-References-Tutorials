@@ -80,7 +80,7 @@ A Smart Art alakzatok azonosítása biztosítja, hogy csak azokat a grafikákat 
 Rovat: Smart Art Graphics frissítése
 
 Magyarázat:
- A`UpdateSmartArtDrawing` módszer frissíti a Smart Art grafikát, biztosítva, hogy az tükrözze a dokumentum adataiban vagy elrendezésében bekövetkezett változásokat. Ezt a módszert minden, az előző lépésben azonosított Smart Art alakzaton meg kell hívni.
+A`UpdateSmartArtDrawing` módszer frissíti a Smart Art grafikát, biztosítva, hogy az tükrözze a dokumentum adataiban vagy elrendezésében bekövetkezett változásokat. Ezt a módszert minden, az előző lépésben azonosított Smart Art alakzaton meg kell hívni.
 
 ```csharp
 // Frissítse a Smart Art rajzot minden Smart Art alakzathoz

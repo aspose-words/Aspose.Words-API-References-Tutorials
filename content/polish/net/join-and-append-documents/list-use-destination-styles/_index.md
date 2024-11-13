@@ -1,62 +1,62 @@
 ---
-title: Lista Użyj stylów miejsc docelowych
-linktitle: Lista Użyj stylów miejsc docelowych
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak łączyć dokumenty programu Word za pomocą Aspose.Words dla .NET bez utraty formatowania list. Przewodnik krok po kroku, jak zachować nienaruszone style dokumentu.
+title: Lista Użyj stylów docelowych
+linktitle: Lista Użyj stylów docelowych
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak scalać dokumenty Word za pomocą Aspose.Words dla .NET bez utraty formatowania listy. Przewodnik krok po kroku, jak zachować nienaruszone style dokumentu.
 type: docs
 weight: 10
 url: /pl/net/join-and-append-documents/list-use-destination-styles/
 ---
 ## Wstęp
 
-Czy kiedykolwiek próbowałeś scalić dokumenty Worda i zaplątałeś się w formatowanie? To tak, jakby czasami próbować zmieszać olej i wodę, prawda? Cóż, dzisiaj zagłębimy się w ciekawą sztuczkę z użyciem Aspose.Words dla .NET, która uratuje Cię od tego bólu głowy. Dowiemy się, jak importować listy z jednego dokumentu do drugiego bez zmiany numeracji i stylów. Gotowy, aby ułatwić Ci życie? Zacznijmy!
+Czy kiedykolwiek próbowałeś scalać dokumenty Worda i utknąłeś w formatowaniu? To jak próba zmieszania oleju z wodą, prawda? Cóż, dzisiaj zagłębimy się w sprytny trik z użyciem Aspose.Words dla .NET, który oszczędzi ci tego bólu głowy. Dowiemy się, jak importować listy z jednego dokumentu do drugiego bez psucia numeracji i stylów. Gotowy, aby ułatwić sobie życie? Zaczynajmy!
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zagłębimy się w magię, upewnijmy się, że masz wszystko, czego potrzebujesz:
+Zanim przejdziemy do magii, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
-1.  Aspose.Words dla .NET: Jeśli jeszcze tego nie zrobiłeś, pobierz go[Tutaj](https://releases.aspose.com/words/net/).
-2. Visual Studio: wystarczy dowolna najnowsza wersja.
-3. Podstawowa znajomość języka C#: nie musisz być czarodziejem, ale pewna znajomość będzie pomocna.
+1.  Aspose.Words dla .NET: Jeśli jeszcze tego nie zrobiłeś, pobierz[Tutaj](https://releases.aspose.com/words/net/).
+2. Visual Studio: Wystarczy dowolna nowsza wersja.
+3. Podstawowa znajomość języka C#: Nie musisz być czarodziejem, ale pewna znajomość języka będzie pomocna.
 
- Upewnij się, że masz zainstalowany i skonfigurowany Aspose.Words w swoim projekcie. Jeśli nie masz pewności, jak to zrobić,[dokumentacja](https://reference.aspose.com/words/net/) to świetne miejsce na rozpoczęcie.
+ Upewnij się, że masz zainstalowany i skonfigurowany Aspose.Words w swoim projekcie. Jeśli nie wiesz, jak to zrobić,[dokumentacja](https://reference.aspose.com/words/net/) jest świetnym miejscem na początek.
 
 ## Importuj przestrzenie nazw
 
-Na początek zaimportujmy niezbędne przestrzenie nazw do pliku C#:
+Najpierw zaimportujmy niezbędne przestrzenie nazw do pliku C#:
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Masz je? Wspaniały. A teraz rozłóżmy to krok po kroku.
+Zrozumiano? Super. Teraz rozłóżmy to na czynniki pierwsze.
 
 ## Krok 1: Skonfiguruj ścieżki dokumentów
 
-Każdy projekt zaczyna się od uporządkowania plików. Skierujmy nasz kod na katalog, w którym przechowywane są Twoje dokumenty.
+Każdy projekt zaczyna się od uporządkowania plików. Skierujmy nasz kod do katalogu, w którym przechowywane są Twoje dokumenty.
 
 ```csharp
 // Ścieżka do katalogu dokumentów.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką, w której przechowywane są dokumenty. Łatwe, prawda?
+ Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką, gdzie przechowywane są Twoje dokumenty. Łatwe, prawda?
 
 ## Krok 2: Załaduj dokumenty źródłowe i docelowe
 
-Następnie musimy załadować zarówno dokumenty źródłowe, jak i docelowe. Pomyśl o tym jak o otwarciu dwóch plików programu Word na komputerze.
+Następnie musimy załadować zarówno dokumenty źródłowe, jak i docelowe. Wyobraź sobie, że otwierasz dwa pliki Word na swoim komputerze.
 
 ```csharp
 Document srcDoc = new Document(dataDir + "Document source with list.docx");
 Document dstDoc = new Document(dataDir + "Document destination with list.docx");
 ```
 
- Tutaj,`srcDoc` jest Twoim dokumentem źródłowym (tym, który zawiera listy, które chcesz skopiować) oraz`dstDoc` to dokument docelowy (ten, do którego chcesz wkleić te listy).
+ Tutaj,`srcDoc` jest to Twój dokument źródłowy (ten z listami, które chcesz skopiować) i`dstDoc` jest dokumentem docelowym (tym, do którego chcesz wkleić te listy).
 
 ## Krok 3: Skonfiguruj opcje importu
 
-Musimy określić pewne opcje, aby mieć pewność, że listy zostaną poprawnie zaimportowane. Ten krok gwarantuje, że w przypadku konfliktu numeracji zachowana zostanie numeracja z dokumentu źródłowego.
+Musimy określić kilka opcji, aby upewnić się, że listy są importowane poprawnie. Ten krok zapewnia, że jeśli wystąpi jakikolwiek konflikt numeracji, numeracja z dokumentu źródłowego zostanie zachowana.
 
 ```csharp
 ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = true };
@@ -64,31 +64,31 @@ ImportFormatOptions options = new ImportFormatOptions { KeepSourceNumbering = tr
 
 ## Krok 4: Dołącz dokument źródłowy do dokumentu docelowego
 
-Teraz wykonajmy fuzję. To tutaj dzieje się magia. Dołączamy dokument źródłowy do dokumentu docelowego, korzystając z określonych opcji importu.
+Teraz zróbmy scalenie. To tutaj dzieje się magia. Dołączamy dokument źródłowy do dokumentu docelowego, używając określonych opcji importu.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.UseDestinationStyles, options);
 ```
 
-Pomyślnie połączyłeś dwa dokumenty, zachowując listy nienaruszone.
+Udało Ci się połączyć dwa dokumenty, zachowując nienaruszone listy.
 
 ## Wniosek
 
-Masz to! Łączenie dokumentów bez zawracania sobie głowy problemami z formatowaniem jest proste dzięki Aspose.Words dla .NET. Niezależnie od tego, czy pracujesz nad dużym projektem, czy po prostu chcesz uporządkować niektóre pliki, dzięki tej metodzie Twoje listy będą wyglądać dobrze. Zatem następnym razem, gdy staniesz przed dylematem łączenia dokumentów, pamiętaj o tym przewodniku i poradź sobie z nim jak profesjonalista!
+I masz! Łączenie dokumentów bez utraty zmysłów z powodu problemów z formatowaniem to pestka dzięki Aspose.Words dla .NET. Niezależnie od tego, czy pracujesz nad dużym projektem, czy po prostu musisz uporządkować pliki, ta metoda sprawi, że Twoje listy będą wyglądać ostro. Więc następnym razem, gdy staniesz przed dylematem łączenia dokumentów, zapamiętaj ten przewodnik i podejdź do tego jak profesjonalista!
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Co to jest Aspose.Words dla .NET?
-Aspose.Words dla .NET to potężna biblioteka do programowej pracy z dokumentami programu Word. Umożliwia tworzenie, modyfikowanie i konwertowanie dokumentów w różnych formatach.
+### Czym jest Aspose.Words dla .NET?
+Aspose.Words for .NET to potężna biblioteka do programowej pracy z dokumentami Word. Umożliwia tworzenie, modyfikowanie i konwertowanie dokumentów w różnych formatach.
 
 ### Jak zainstalować Aspose.Words dla .NET?
- Można go pobrać z[strona internetowa](https://releases.aspose.com/words/net/) i postępuj zgodnie z instrukcjami instalacji zawartymi w pliku[dokumentacja](https://reference.aspose.com/words/net/).
+ Można go pobrać ze strony[strona internetowa](https://releases.aspose.com/words/net/) i postępuj zgodnie z instrukcjami instalacji[dokumentacja](https://reference.aspose.com/words/net/).
 
 ### Czy mogę używać Aspose.Words za darmo?
- Aspose.Words oferuje[bezpłatna wersja próbna](https://releases.aspose.com/) z ograniczonymi funkcjami. Aby uzyskać pełny dostęp, musisz kupić licencję[Tutaj](https://purchase.aspose.com/buy).
+ Aspose.Words oferuje[bezpłatny okres próbny](https://releases.aspose.com/) z ograniczonymi funkcjami. Aby uzyskać pełny dostęp, musisz kupić licencję[Tutaj](https://purchase.aspose.com/buy).
 
-### Co to są opcje ImportFormat?
- ImportFormatOptions umożliwiają określenie sposobu obsługi formatowania podczas importowania zawartości z jednego dokumentu do drugiego. Na przykład,`KeepSourceNumbering` zapewnia zachowanie numeracji wykazów z dokumentu źródłowego.
+### Czym są ImportFormatOptions?
+ ImportFormatOptions pozwala określić sposób obsługi formatowania podczas importowania zawartości z jednego dokumentu do drugiego. Na przykład,`KeepSourceNumbering` zapewnia zachowanie numeracji list z dokumentu źródłowego.
 
 ### Gdzie mogę uzyskać pomoc dotyczącą Aspose.Words?
- Możesz uzyskać wsparcie od[Forum Aspose.Words](https://forum.aspose.com/c/words/8), gdzie możesz zadawać pytania i uzyskać pomoc od społeczności i programistów Aspose.
+ Możesz uzyskać wsparcie od[Forum Aspose.Words](https://forum.aspose.com/c/words/8)gdzie możesz zadać pytania i uzyskać pomoc od społeczności oraz programistów Aspose.

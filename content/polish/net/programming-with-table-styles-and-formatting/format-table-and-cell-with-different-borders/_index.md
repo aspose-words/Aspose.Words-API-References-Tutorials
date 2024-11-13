@@ -1,23 +1,23 @@
 ---
 title: Formatuj tabelę i komórkę z różnymi obramowaniami
 linktitle: Formatuj tabelę i komórkę z różnymi obramowaniami
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak formatować tabele i komórki z różnymi obramowaniami za pomocą Aspose.Words dla .NET. Ulepsz swoje dokumenty programu Word za pomocą niestandardowych stylów tabel i cieniowania komórek.
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak formatować tabele i komórki z różnymi obramowaniami za pomocą Aspose.Words dla .NET. Ulepsz swoje dokumenty Word, stosując niestandardowe style tabel i cieniowanie komórek.
 type: docs
 weight: 10
 url: /pl/net/programming-with-table-styles-and-formatting/format-table-and-cell-with-different-borders/
 ---
 ## Wstęp
 
-Czy kiedykolwiek próbowałeś nadać dokumentom programu Word bardziej profesjonalny wygląd, dostosowując obramowania tabel i komórek? Jeśli nie, czeka Cię niespodzianka! Ten samouczek przeprowadzi Cię przez proces formatowania tabel i komórek z różnymi obramowaniami przy użyciu Aspose.Words dla .NET. Wyobraź sobie, że możesz zmienić wygląd swoich tabel za pomocą zaledwie kilku linijek kodu. Zaintrygowany? Przyjrzyjmy się bliżej i zobaczmy, jak możesz to z łatwością osiągnąć.
+Czy kiedykolwiek próbowałeś sprawić, aby Twoje dokumenty Word wyglądały bardziej profesjonalnie, dostosowując obramowania tabel i komórek? Jeśli nie, czeka Cię gratka! Ten samouczek przeprowadzi Cię przez proces formatowania tabel i komórek z różnymi obramowaniami przy użyciu Aspose.Words dla .NET. Wyobraź sobie, że masz możliwość zmiany wyglądu swoich tabel za pomocą zaledwie kilku linijek kodu. Zaintrygowany? Zanurzmy się i odkryjmy, jak możesz to osiągnąć z łatwością.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zaczniemy, upewnij się, że masz następujące wymagania wstępne:
+Zanim zaczniemy, upewnij się, że spełnione są następujące wymagania wstępne:
 - Podstawowa znajomość programowania w języku C#.
-- Program Visual Studio zainstalowany na komputerze.
--  Aspose.Words dla biblioteki .NET. Jeśli jeszcze go nie zainstalowałeś, możesz go pobrać[Tutaj](https://releases.aspose.com/words/net/).
--  Ważna licencja Aspose. Możesz uzyskać bezpłatną wersję próbną lub licencję tymczasową od[Tutaj](https://purchase.aspose.com/temporary-license/).
+- Na Twoim komputerze zainstalowano program Visual Studio.
+-  Biblioteka Aspose.Words dla .NET. Jeśli jeszcze jej nie zainstalowałeś, możesz ją pobrać[Tutaj](https://releases.aspose.com/words/net/).
+-  Ważna licencja Aspose. Możesz uzyskać bezpłatną wersję próbną lub tymczasową licencję od[Tutaj](https://purchase.aspose.com/temporary-license/).
 
 ## Importuj przestrzenie nazw
 
@@ -29,9 +29,9 @@ using Aspose.Words.Tables;
 using System.Drawing;
 ```
 
-## Krok 1: Zainicjuj dokument i narzędzie DocumentBuider
+## Krok 1: Zainicjuj dokument i DocumentBuilder
 
-Najpierw musisz utworzyć nowy dokument i zainicjować DocumentBuilder, który pomaga w budowaniu zawartości dokumentu. 
+Najpierw musisz utworzyć nowy dokument i zainicjować DocumentBuilder, który pomoże w budowaniu treści dokumentu. 
 
 ```csharp
 // Ścieżka do katalogu dokumentów
@@ -43,16 +43,16 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Krok 2: Rozpocznij tworzenie tabeli
 
-Następnie użyj narzędzia DocumentBuilder, aby rozpocząć tworzenie tabeli i wstaw pierwszą komórkę.
+Następnie użyj DocumentBuildera, aby rozpocząć tworzenie tabeli i wstawić pierwszą komórkę.
 
 ```csharp
 Table table = builder.StartTable();
 builder.InsertCell();
 ```
 
-## Krok 3: Ustaw obramowanie tabeli
+## Krok 3: Ustaw obramowania tabeli
 
-Ustaw obramowanie całej tabeli. Ten krok gwarantuje, że wszystkie komórki w tabeli będą miały spójny styl obramowania, chyba że określono inaczej.
+Ustaw obramowanie dla całej tabeli. Ten krok zapewnia, że wszystkie komórki w tabeli mają spójny styl obramowania, chyba że określono inaczej.
 
 ```csharp
 // Ustaw obramowanie całej tabeli.
@@ -61,7 +61,7 @@ table.SetBorders(LineStyle.Single, 2.0, Color.Black);
 
 ## Krok 4: Zastosuj cieniowanie komórek
 
-Zastosuj cieniowanie do komórek, aby wizualnie je od siebie odróżnić. W tym przykładzie ustawimy kolor tła pierwszej komórki na czerwony.
+Zastosuj cieniowanie do komórek, aby wizualnie je odróżnić. W tym przykładzie ustawimy kolor tła pierwszej komórki na czerwony.
 
 
 ```csharp
@@ -70,9 +70,9 @@ builder.CellFormat.Shading.BackgroundPatternColor = Color.Red;
 builder.Writeln("Cell #1");
 ```
 
-## Krok 5: Wstaw kolejną komórkę z innym cieniowaniem
+## Krok 5: Wstaw inną komórkę z innym cieniowaniem
 
-Wstaw drugą komórkę i zastosuj inny kolor cieniowania. Dzięki temu tabela jest bardziej kolorowa i czytelniejsza.
+Wstaw drugą komórkę i zastosuj inny kolor cieniowania. Dzięki temu tabela stanie się bardziej kolorowa i łatwiejsza do odczytania.
 
 ```csharp
 builder.InsertCell();
@@ -84,22 +84,22 @@ builder.EndRow();
 
 ## Krok 6: Wyczyść formatowanie komórek
 
-Wyczyść formatowanie komórek z poprzednich operacji, aby mieć pewność, że następne komórki nie odziedziczą tych samych stylów.
+Wyczyść formatowanie komórek z poprzednich operacji, aby mieć pewność, że kolejne komórki nie odziedziczą tego samego stylu.
 
 
 ```csharp
-// Usuń formatowanie komórki z poprzednich operacji.
+// Wyczyść formatowanie komórek z poprzednich operacji.
 builder.CellFormat.ClearFormatting();
 ```
 
 ## Krok 7: Dostosuj obramowania dla określonych komórek
 
-Dostosuj obramowania konkretnych komórek, aby je wyróżnić. Tutaj ustawimy większe obramowanie pierwszej komórki nowego wiersza.
+Dostosuj obramowania dla konkretnych komórek, aby się wyróżniały. Tutaj ustawimy większe obramowania dla pierwszej komórki nowego wiersza.
 
 ```csharp
 builder.InsertCell();
-// Utwórz większe obramowanie dla pierwszej komórki tego wiersza. To będzie inne
-// w porównaniu z granicami ustawionymi dla tabeli.
+// Utwórz większe obramowania dla pierwszej komórki tego wiersza. To będzie inne
+// w porównaniu do obramowań wyznaczonych dla tabeli.
 builder.CellFormat.Borders.Left.LineWidth = 4.0;
 builder.CellFormat.Borders.Right.LineWidth = 4.0;
 builder.CellFormat.Borders.Top.LineWidth = 4.0;
@@ -107,9 +107,9 @@ builder.CellFormat.Borders.Bottom.LineWidth = 4.0;
 builder.Writeln("Cell #3");
 ```
 
-## Krok 8: Wstaw końcową komórkę
+## Krok 8: Wstaw ostatnią komórkę
 
-Wstaw ostatnią komórkę i upewnij się, że jej formatowanie zostało wyczyszczone, tak aby korzystała z domyślnych stylów tabeli.
+Wstaw ostatnią komórkę i upewnij się, że jej formatowanie jest wyczyszczone, dzięki czemu będzie używała domyślnych stylów tabeli.
 
 ```csharp
 builder.InsertCell();
@@ -127,21 +127,21 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDi
 
 ## Wniosek
 
-I masz to! Właśnie nauczyłeś się formatować tabele i komórki z różnymi obramowaniami przy użyciu Aspose.Words dla .NET. Dostosowując obramowania tabel i cieniowanie komórek, możesz znacznie poprawić atrakcyjność wizualną swoich dokumentów. Więc śmiało, eksperymentuj z różnymi stylami i spraw, aby Twoje dokumenty wyróżniały się!
+I masz to! Właśnie nauczyłeś się formatować tabele i komórki z różnymi obramowaniami za pomocą Aspose.Words dla .NET. Dostosowując obramowania tabel i cieniowanie komórek, możesz znacznie poprawić atrakcyjność wizualną swoich dokumentów. Więc śmiało, eksperymentuj z różnymi stylami i spraw, aby Twoje dokumenty się wyróżniały!
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Czy mogę używać różnych stylów obramowania dla każdej komórki?
- Tak, możesz ustawić różne style obramowania dla każdej komórki, używając opcji`CellFormat.Borders` nieruchomość.
+### Czy mogę użyć innego stylu obramowania dla każdej komórki?
+ Tak, możesz ustawić różne style obramowania dla każdej komórki, używając`CellFormat.Borders` nieruchomość.
 
-### Jak mogę usunąć wszystkie obramowania ze stołu?
+### Jak usunąć wszystkie obramowania z tabeli?
  Możesz usunąć wszystkie obramowania, ustawiając styl obramowania na`LineStyle.None`.
 
 ### Czy można ustawić różne kolory obramowania dla każdej komórki?
- Absolutnie! Możesz dostosować kolor obramowania każdej komórki za pomocą opcji`CellFormat.Borders.Color` nieruchomość.
+ Oczywiście! Możesz dostosować kolor obramowania dla każdej komórki za pomocą`CellFormat.Borders.Color` nieruchomość.
 
 ### Czy mogę używać obrazów jako tła komórek?
-Chociaż Aspose.Words nie obsługuje bezpośrednio obrazów jako tła komórek, możesz wstawić obraz do komórki i dostosować jego rozmiar, aby pokryć cały obszar komórki.
+Chociaż Aspose.Words nie obsługuje bezpośrednio obrazów jako tła komórek, można wstawić obraz do komórki i dostosować jego rozmiar tak, aby zakryć obszar komórki.
 
-### Jak scalić komórki w tabeli?
- Możesz łączyć komórki za pomocą`CellFormat.HorizontalMerge`I`CellFormat.VerticalMerge` właściwości.
+### Jak połączyć komórki w tabeli?
+ Możesz scalić komórki za pomocą`CellFormat.HorizontalMerge` I`CellFormat.VerticalMerge` Właściwości.

@@ -54,7 +54,7 @@ Ezután be kell állítanunk a dokumentum mentési lehetőségeit. Itt adjuk meg
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "password" };
 ```
 
- A`OoxmlSaveOptions`osztály lehetővé teszi, hogy különféle beállításokat adjunk meg a DOCX fájlok mentéséhez. Itt beállítjuk a`Password`tulajdonát`"password"` . Cserélheted`"password"` tetszőleges jelszóval. Ez a jelszó szükséges a titkosított DOCX fájl megnyitásához.
+A`OoxmlSaveOptions`osztály lehetővé teszi, hogy különféle beállításokat adjunk meg a DOCX fájlok mentéséhez. Itt beállítjuk a`Password`tulajdonát`"password"` . Cserélheted`"password"` tetszőleges jelszóval. Ez a jelszó szükséges a titkosított DOCX fájl megnyitásához.
 
 ## 3. lépés: Mentse el a titkosított dokumentumot
 
@@ -65,7 +65,7 @@ Végül elmentjük a dokumentumot az előző lépésben beállított mentési be
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.EncryptDocxWithPassword.docx", saveOptions);
 ```
 
- A`Save` módszere a`Document` osztályt használjuk a dokumentum mentésére. Megadjuk a titkosított dokumentum elérési útját és fájlnevét, valamint a`saveOptions` korábban konfiguráltuk. A dokumentum most titkosított DOCX-fájlként kerül mentésre.
+A`Save` módszere a`Document` osztályt használjuk a dokumentum mentésére. Megadjuk a titkosított dokumentum elérési útját és fájlnevét, valamint a`saveOptions` korábban konfiguráltuk. A dokumentum most titkosított DOCX-fájlként kerül mentésre.
 
 ## Következtetés
 
@@ -91,4 +91,4 @@ Ha elfelejti a jelszót, nincs mód a titkosított dokumentum visszaállításá
 
 ### Az Aspose.Words for .NET támogatja több dokumentum kötegelt titkosítását?
 
-Igen, írhat egy parancsfájlt, amellyel több dokumentumot is áthaladhat, és mindegyikre titkosítást alkalmazhat az oktatóanyagban ismertetett lépésekkel.
+Igen, írhat egy szkriptet, amellyel több dokumentumot is áthaladhat, és mindegyikre titkosítást alkalmazhat az oktatóanyagban ismertetett lépésekkel.

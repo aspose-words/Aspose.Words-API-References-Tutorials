@@ -1,24 +1,24 @@
 ---
-title: Yazı Tipi Geri Dönüş Ayarlarını Belirleyin
-linktitle: Yazı Tipi Geri Dönüş Ayarlarını Belirleyin
+title: Yazı Tipi Yedek Ayarlarını Ayarla
+linktitle: Yazı Tipi Yedek Ayarlarını Ayarla
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET'te Font Geri Dönüş Ayarlarını nasıl ayarlayacağınızı öğrenin. Bu kapsamlı kılavuz, belgelerinizdeki tüm karakterlerin doğru şekilde görüntülenmesini sağlar.
+description: Aspose.Words for .NET'te Font Geri Dönüş Ayarlarının nasıl ayarlanacağını öğrenin. Bu kapsamlı kılavuz, belgelerinizdeki tüm karakterlerin doğru şekilde görüntülenmesini sağlar.
 type: docs
 weight: 10
 url: /tr/net/working-with-fonts/set-font-fallback-settings/
 ---
 ## giriiş
 
-Farklı diller veya özel karakterler gibi çeşitli metin öğeleri içeren belgelerle çalışırken bu öğelerin doğru şekilde görüntülendiğinden emin olmak çok önemlidir. Aspose.Words for .NET, orijinal yazı tipi belirli karakterleri desteklemediğinde yazı tiplerinin değiştirilmesine ilişkin kuralların tanımlanmasına yardımcı olan Yazı Tipi Geri Dönüş Ayarları adı verilen güçlü bir özellik sunar. Bu kılavuzda, Aspose.Words for .NET kullanarak Font Geri Dönüş Ayarlarının nasıl kurulacağını adım adım eğitimle inceleyeceğiz.
+Farklı diller veya özel karakterler gibi çeşitli metin öğeleri içeren belgelerle çalışırken, bu öğelerin doğru şekilde görüntülendiğinden emin olmak çok önemlidir. Aspose.Words for .NET, orijinal font belirli karakterleri desteklemediğinde fontları değiştirmek için kuralları tanımlamaya yardımcı olan Font Fallback Settings adlı güçlü bir özellik sunar. Bu kılavuzda, adım adım bir eğitimde Aspose.Words for .NET kullanarak Font Fallback Settings'in nasıl ayarlanacağını inceleyeceğiz.
 
-## Önkoşullar
+## Ön koşullar
 
-Eğiticiye dalmadan önce aşağıdaki önkoşulların yerine getirildiğinden emin olun:
+Eğitime başlamadan önce aşağıdaki ön koşulların mevcut olduğundan emin olun:
 
-- Temel C# Bilgisi: C# programlama dili ve .NET çerçevesine aşinalık.
--  Aspose.Words for .NET: Buradan indirip yükleyin.[indirme bağlantısı](https://releases.aspose.com/words/net/).
-- Geliştirme Ortamı: Kodunuzu yazmak ve çalıştırmak için Visual Studio gibi bir kurulum.
--  Örnek Belge: Örnek bir belgeye sahip olun (örn.`Rendering.docx`) teste hazır.
+- Temel C# Bilgisi: C# programlama dili ve .NET framework'üne aşinalık.
+-  Aspose.Words for .NET: Şuradan indirin ve kurun:[indirme bağlantısı](https://releases.aspose.com/words/net/).
+- Geliştirme Ortamı: Kodunuzu yazıp çalıştırabileceğiniz Visual Studio benzeri bir kurulum.
+-  Örnek Belge: Örnek bir belgeniz olsun (örneğin,`Rendering.docx`) test edilmeye hazır.
 - Yazı Tipi Geri Dönüş Kuralları XML: Yazı tipi geri dönüş kurallarını tanımlayan bir XML dosyası hazırlayın.
 
 ## Ad Alanlarını İçe Aktar
@@ -33,33 +33,33 @@ using System;
 
 ## Adım 1: Belge Dizinini Tanımlayın
 
-Öncelikle belgenizin saklandığı dizini tanımlayın. Bu, belgenizin bulunması ve işlenmesi için gereklidir.
+Öncelikle belgenizin saklandığı dizini tanımlayın. Bu, belgenizi bulmak ve işlemek için önemlidir.
 
 ```csharp
-// Belgeler dizininin yolu
+// Belgeler dizinine giden yol
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Adım 2: Belgeyi Yükleyin
 
- Belgenizi Aspose.Words'e yükleyin`Document` nesne. Bu adım, belgeyle programlı olarak çalışmanıza olanak tanır.
+ Belgenizi bir Aspose.Words'e yükleyin`Document` nesne. Bu adım, belgeyle programlı olarak çalışmanıza olanak tanır.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## 3. Adım: Yazı Tipi Ayarlarını Yapılandırın
+## Adım 3: Yazı Tipi Ayarlarını Yapılandırın
 
- Yeni bir tane oluştur`FontSettings` nesnesini kullanın ve yazı tipi geri dönüş ayarlarını bir XML dosyasından yükleyin. Bu XML dosyası, yazı tipi geri dönüşüne ilişkin kuralları içerir.
+Yeni bir tane oluştur`FontSettings` nesne ve yazı tipi geri dönüş ayarlarını bir XML dosyasından yükleyin. Bu XML dosyası yazı tipi geri dönüşü için kuralları içerir.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
 fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
 ```
 
-## Adım 4: Yazı Tipi Ayarlarını Belgeye Uygulayın
+## Adım 4: Yazı Tipi Ayarlarını Belgeye Uygula
 
- Yapılandırılmış olanı ata`FontSettings`belgeye. Bu, belge oluşturulurken yazı tipi geri dönüş kurallarının uygulanmasını sağlar.
+ Yapılandırılanı atayın`FontSettings`belgeye. Bu, belgenin işlenmesi sırasında yazı tipi yedek kurallarının uygulanmasını sağlar.
 
 ```csharp
 doc.FontSettings = fontSettings;
@@ -67,7 +67,7 @@ doc.FontSettings = fontSettings;
 
 ## Adım 5: Belgeyi Kaydedin
 
-Son olarak belgeyi kaydedin. Yazı tipinin doğru şekilde değiştirilmesini sağlamak için kaydetme işlemi sırasında yazı tipi geri dönüş ayarları kullanılacaktır.
+Son olarak belgeyi kaydedin. Font yedek ayarları, uygun font değişimini sağlamak için kaydetme işlemi sırasında kullanılacaktır.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
 
 ## XML Dosyası: Yazı Tipi Geri Dönüş Kuralları
 
-Aşağıda, yazı tipi geri dönüş kurallarını tanımlayan XML dosyanızın nasıl görünmesi gerektiğine ilişkin bir örnek verilmiştir:
+Yazı tipi yedek kurallarını tanımlayan XML dosyanızın nasıl görünmesi gerektiğine dair bir örnek aşağıda verilmiştir:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -93,26 +93,26 @@ Aşağıda, yazı tipi geri dönüş kurallarını tanımlayan XML dosyanızın 
 
 ## Çözüm
 
-Bu adımları izleyerek Aspose.Words for .NET'te Font Geri Dönüş Ayarlarını etkili bir şekilde ayarlayabilir ve kullanabilirsiniz. Bu, orijinal yazı tipi belirli karakterleri desteklemese bile belgelerinizin tüm karakterleri doğru şekilde görüntülemesini sağlar. Bu ayarların uygulanması belgelerinizin kalitesini ve okunabilirliğini büyük ölçüde artıracaktır.
+Bu adımları izleyerek, Aspose.Words for .NET'te Font Fallback Ayarlarını etkili bir şekilde ayarlayabilir ve kullanabilirsiniz. Bu, orijinal font belirli karakterleri desteklemese bile belgelerinizin tüm karakterleri doğru şekilde görüntülemesini sağlar. Bu ayarları uygulamak belgelerinizin kalitesini ve okunabilirliğini büyük ölçüde artıracaktır.
 
-## SSS'ler
+## SSS
 
-### S1: Yazı Tipi Geri Dönüşü nedir?
+### S1: Font Fallback Nedir?
 
-Yazı Tipi Geri Dönüşü, orijinal yazı tipi belirli karakterleri desteklemediğinde yazı tiplerinin değiştirilmesine olanak tanıyan ve tüm metin öğelerinin düzgün görüntülenmesini sağlayan bir özelliktir.
+Font Geri Dönüşü, orijinal fontun belirli karakterleri desteklememesi durumunda fontların değiştirilmesine olanak tanıyan ve tüm metin öğelerinin düzgün görüntülenmesini sağlayan bir özelliktir.
 
-### S2: Birden fazla yedek yazı tipi belirtebilir miyim?
+### S2: Birden fazla yedek yazı tipi belirleyebilir miyim?
 
-Evet, XML kurallarında birden çok yedek yazı tipi belirtebilirsiniz. Aspose.Words, karakteri destekleyen bir yazı tipi bulana kadar her yazı tipini belirtilen sırayla kontrol edecektir.
+Evet, XML kurallarında birden fazla yedek yazı tipi belirtebilirsiniz. Aspose.Words, karakteri destekleyen bir yazı tipi bulana kadar her yazı tipini belirtilen sırayla kontrol edecektir.
 
 ### S3: Aspose.Words for .NET'i nereden indirebilirim?
 
- adresinden indirebilirsiniz.[İndirme sayfasını düşünün](https://releases.aspose.com/words/net/).
+ Bunu şuradan indirebilirsiniz:[Aspose indirme sayfası](https://releases.aspose.com/words/net/).
 
-### S4: Yazı tipi geri dönüş kuralları için XML dosyasını nasıl oluşturabilirim?
+### S4: Yazı tipi geri dönüş kuralları için XML dosyasını nasıl oluştururum?
 
-XML dosyası herhangi bir metin düzenleyici kullanılarak oluşturulabilir. Bu eğitimde verilen örnekte gösterilen yapıyı takip etmelidir.
+XML dosyası herhangi bir metin düzenleyicisi kullanılarak oluşturulabilir. Bu eğitimde verilen örnekte gösterilen yapıyı takip etmelidir.
 
 ### S5: Aspose.Words için destek mevcut mu?
 
- Evet, şuradan destek bulabilirsiniz:[Aspose.Words destek forumu](https://forum.aspose.com/c/words/8).
+ Evet, destek bulabilirsiniz[Aspose.Words destek forumu](https://forum.aspose.com/c/words/8).

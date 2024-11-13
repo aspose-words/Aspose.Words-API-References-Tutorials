@@ -53,7 +53,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.Writeln("Text added to a document.");
 ```
 
- Itt létrehozunk egy újat`Document`és`DocumentBuilder` példa. A`DocumentBuilder` lehetővé teszi számunkra, hogy szöveget adjunk a dokumentumunkhoz.
+ Itt létrehozunk egy újat`Document` és`DocumentBuilder` példa. A`DocumentBuilder` lehetővé teszi számunkra, hogy szöveget adjunk a dokumentumunkhoz.
 
 ## 4. lépés: Védje meg a dokumentumot
 

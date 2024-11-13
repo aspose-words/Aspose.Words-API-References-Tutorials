@@ -79,7 +79,7 @@ Ez a sor PDF-ként menti a dokumentumot az alkalmazott egyéni betűtípusokkal.
 ## GYIK
 
 ### Beállíthatok több betűtípus mappát?
- Igen, több betűtípus mappát is beállíthat a segítségével`SetFontsFolders` metódus, amely mappa útvonalak tömbjét fogadja el.
+ Igen, több betűtípusmappát is beállíthat a segítségével`SetFontsFolders` metódus, amely mappa útvonalak tömbjét fogadja el.
 
 ### Milyen fájlformátumokat támogat az Aspose.Words a dokumentumok mentéséhez?
 Az Aspose.Words különféle formátumokat támogat, beleértve a DOCX, PDF, HTML, EPUB és egyebeket.

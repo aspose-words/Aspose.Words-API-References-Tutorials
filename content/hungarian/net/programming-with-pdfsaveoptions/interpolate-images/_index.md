@@ -59,13 +59,10 @@ Document doc = new Document(dataDir + "Rendering.docx");
  képek interpolációjának biztosításához konfigurálnia kell a`PdfSaveOptions`. Ez az osztály lehetővé teszi, hogy különféle beállításokat állítson be a dokumentum PDF formátumban történő mentésére. Pontosabban, engedélyezni szeretné a képinterpolációt.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions 
-{ 
-	InterpolateImages = true
-};
+PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
- A`InterpolateImages` tulajdonság értékre van állítva`true` annak biztosítása érdekében, hogy a PDF-ben lévő képek interpolálva legyenek, javítva azok minőségét.
+A`InterpolateImages` tulajdonság értékre van állítva`true` annak biztosítása érdekében, hogy a PDF-ben lévő képek interpolálva legyenek, javítva azok minőségét.
 
 ## 4. lépés: Mentse el a dokumentumot PDF formátumban
 
@@ -99,7 +96,7 @@ Az Aspose.Words elsősorban a képinterpolációt támogatja PDF-ekhez. Egyéb f
 
 ### Hogyan tesztelhetem a képinterpolációt a licenc megvásárlása előtt?
 
- Tudod[tölts le egy ingyenes próbaverziót](https://releases.aspose.com/) Az Aspose.Words a képinterpoláció és egyéb funkciók teszteléséhez.
+ Megteheti[tölts le egy ingyenes próbaverziót](https://releases.aspose.com/) Az Aspose.Words a képinterpoláció és egyéb funkciók teszteléséhez.
 
 ### Hol kaphatok segítséget, ha problémákat tapasztalok?
 

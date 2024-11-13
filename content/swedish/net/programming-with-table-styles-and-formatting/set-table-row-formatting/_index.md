@@ -106,7 +106,7 @@ Och där har du det! Du har framgångsrikt skapat en formaterad tabell i ett Wor
  Du kan ändra textjusteringen genom att ställa in`ParagraphFormat.Alignment` egendom av`DocumentBuilder` objekt.
 
 ### Kan jag slå samman celler i en tabell med Aspose.Words för .NET?
- Ja, du kan slå samman celler med hjälp av`CellFormat.HorizontalMerge`och`CellFormat.VerticalMerge` fastigheter.
+ Ja, du kan slå samman celler med hjälp av`CellFormat.HorizontalMerge` och`CellFormat.VerticalMerge` fastigheter.
 
 ### Finns det något sätt att utforma tabellen med fördefinierade stilar?
  Ja, Aspose.Words för .NET låter dig tillämpa fördefinierade tabellstilar med hjälp av`Table.Style` egendom.

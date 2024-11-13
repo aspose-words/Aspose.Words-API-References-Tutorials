@@ -82,7 +82,7 @@ Och där har du det! Du har framgångsrikt skapat en True Type Fonts-mapp för d
 ## FAQ's
 
 ### Kan jag använda flera teckensnittsmappar?
- Ja, du kan använda flera teckensnittsmappar genom att kombinera`FontSettings.GetFontSources`och`FontSettings.SetFontSources`.
+ Ja, du kan använda flera teckensnittsmappar genom att kombinera`FontSettings.GetFontSources` och`FontSettings.SetFontSources`.
 
 ### Vad händer om den angivna teckensnittsmappen inte finns?
 Om den angivna teckensnittsmappen inte finns, kommer Aspose.Words inte att kunna hitta teckensnitten, och standardtypsnitten kommer att användas istället.

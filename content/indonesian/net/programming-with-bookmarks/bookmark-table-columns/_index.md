@@ -1,27 +1,27 @@
 ---
-title: Tandai Kolom Tabel Di Dokumen Word
-linktitle: Tandai Kolom Tabel Di Dokumen Word
+title: Tandai Kolom Tabel Dalam Dokumen Word
+linktitle: Tandai Kolom Tabel Dalam Dokumen Word
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menandai kolom tabel di dokumen Word menggunakan Aspose.Words untuk .NET dengan tutorial langkah demi langkah yang komprehensif ini.
+description: Pelajari cara menandai kolom tabel dalam dokumen Word menggunakan Aspose.Words untuk .NET dengan tutorial langkah demi langkah yang komprehensif ini.
 type: docs
 weight: 10
 url: /id/net/programming-with-bookmarks/bookmark-table-columns/
 ---
 ## Perkenalan
 
-Jika Anda ingin meningkatkan keterampilan otomatisasi dokumen Anda, maka Anda siap menerima hadiahnya. Tutorial ini akan memandu Anda melalui proses penandaan kolom tabel di dokumen Word menggunakan Aspose.Words untuk .NET. Siap untuk terjun? Mari kita mulai!
+Jika Anda ingin meningkatkan keterampilan otomatisasi dokumen, maka Anda akan mendapatkan sesuatu yang istimewa. Tutorial ini akan memandu Anda melalui proses penandaan kolom tabel dalam dokumen Word menggunakan Aspose.Words untuk .NET. Siap untuk mencobanya? Mari kita mulai!
 
 ## Prasyarat
 
-Sebelum kita beralih ke kode, ada beberapa hal yang perlu Anda siapkan:
+Sebelum kita masuk ke kode, ada beberapa hal yang perlu Anda siapkan:
 
-1.  Aspose.Words for .NET: Pastikan Anda telah menginstal Aspose.Words for .NET. Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/net/).
+1.  Aspose.Words untuk .NET: Pastikan Anda telah menginstal Aspose.Words untuk .NET. Anda dapat mengunduhnya[Di Sini](https://releases.aspose.com/words/net/).
 2. Lingkungan Pengembangan: Siapkan lingkungan pengembangan seperti Visual Studio.
 3. Pengetahuan Dasar C#: Keakraban dengan pemrograman C# akan sangat membantu.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Untuk memulai, Anda harus mengimpor namespace yang diperlukan dalam proyek C# Anda:
+Untuk memulai, Anda perlu mengimpor namespace yang diperlukan dalam proyek C# Anda:
 
 ```csharp
 using System;
@@ -29,20 +29,20 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Sekarang, mari kita bagi prosesnya menjadi langkah-langkah mendetail.
+Sekarang, mari kita uraikan prosesnya ke dalam langkah-langkah terperinci.
 
 ## Langkah 1: Inisialisasi Dokumen dan DocumentBuilder
 
- Pertama, kita perlu membuat dokumen Word baru dan menginisialisasinya`DocumentBuilder` untuk bekerja dengannya.
+ Pertama, kita perlu membuat dokumen Word baru dan menginisialisasi`DocumentBuilder` untuk bekerja dengannya.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Langkah 2: Mulai Tabel dan Sisipkan Sel Pertama
+## Langkah 2: Mulai Tabel dan Masukkan Sel Pertama
 
-Mulailah membuat tabel dan masukkan sel pertama tempat kita akan memulai bookmark.
+Mulailah membuat tabel dan masukkan sel pertama di mana kita akan memulai penanda buku.
 
 ```csharp
 builder.StartTable();
@@ -51,16 +51,16 @@ builder.InsertCell();
 
 ## Langkah 3: Mulai Bookmark
 
-Selanjutnya, kita memulai bookmark bernama "MyBookmark" di sel pertama.
+Berikutnya, kita mulai penanda bernama "MyBookmark" pada sel pertama.
 
 ```csharp
 builder.StartBookmark("MyBookmark");
 builder.Write("This is row 1 cell 1");
 ```
 
-## Langkah 4: Sisipkan Sel Tambahan dan Akhiri Baris
+## Langkah 4: Masukkan Sel Tambahan dan Akhiri Baris
 
-Tambahkan sel lain ke baris pertama dan selesaikan baris pertama.
+Tambahkan sel lain ke baris pertama dan lengkapi baris pertama.
 
 ```csharp
 builder.InsertCell();
@@ -68,7 +68,7 @@ builder.Write("This is row 1 cell 2");
 builder.EndRow();
 ```
 
-## Langkah 5: Sisipkan Sel untuk Baris Kedua
+## Langkah 5: Masukkan Sel untuk Baris Kedua
 
 Lanjutkan dengan menambahkan sel untuk baris kedua.
 
@@ -83,15 +83,15 @@ builder.EndTable();
 
 ## Langkah 6: Akhiri Bookmark
 
-Akhiri penanda setelah menyelesaikan tabel.
+Akhiri penanda buku setelah menyelesaikan tabel.
 
 ```csharp
 builder.EndBookmark("MyBookmark");
 ```
 
-## Langkah 7: Ulangi Melalui Bookmark dan Tampilkan Informasi
+## Langkah 7: Ulangi Bookmark dan Tampilkan Informasi
 
-Terakhir, ulangi penanda di dokumen dan tampilkan informasi tentang masing-masing penanda.
+Terakhir, ulangi penanda buku dalam dokumen dan tampilkan informasi mengenai masing-masing penanda buku.
 
 ```csharp
 foreach (Bookmark bookmark in doc.Range.Bookmarks)
@@ -107,18 +107,18 @@ foreach (Bookmark bookmark in doc.Range.Bookmarks)
 
 ## Kesimpulan
 
-Dan itu dia! Anda telah berhasil menandai kolom tabel di dokumen Word menggunakan Aspose.Words untuk .NET. Proses ini tidak hanya membantu mengatur dokumen Anda tetapi juga mempermudah navigasi dan memanipulasi bagian tertentu. Bookmark adalah fitur canggih yang dapat meningkatkan kemampuan manajemen dokumen Anda secara signifikan.
+Nah, itu dia! Anda telah berhasil menandai kolom tabel dalam dokumen Word menggunakan Aspose.Words for .NET. Proses ini tidak hanya membantu dalam mengatur dokumen Anda, tetapi juga memudahkan navigasi dan manipulasi bagian-bagian tertentu. Penandaan adalah fitur hebat yang dapat meningkatkan kemampuan manajemen dokumen Anda secara signifikan.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Apa itu Aspose.Words untuk .NET?
-Aspose.Words for .NET adalah perpustakaan yang kuat untuk bekerja dengan dokumen Word secara terprogram. Ini memungkinkan Anda membuat, memodifikasi, dan mengonversi dokumen tanpa perlu menginstal Microsoft Word.
+Aspose.Words untuk .NET adalah pustaka yang hebat untuk bekerja dengan dokumen Word secara terprogram. Pustaka ini memungkinkan Anda membuat, memodifikasi, dan mengonversi dokumen tanpa perlu menginstal Microsoft Word.
 
 ### Bagaimana cara menginstal Aspose.Words untuk .NET?
- Anda dapat mengunduh Aspose.Words untuk .NET dari[situs web](https://releases.aspose.com/words/net/). Ikuti petunjuk instalasi yang disediakan.
+ Anda dapat mengunduh Aspose.Words untuk .NET dari[situs web](https://releases.aspose.com/words/net/)Ikuti petunjuk instalasi yang diberikan.
 
-### Bisakah saya menggunakan Aspose.Words untuk .NET dengan bahasa pemrograman lain?
-Ya, Aspose.Words untuk .NET dapat digunakan dengan bahasa apa pun yang didukung .NET, termasuk C#, VB.NET, dan F#.
+### Dapatkah saya menggunakan Aspose.Words untuk .NET dengan bahasa pemrograman lain?
+Ya, Aspose.Words untuk .NET dapat digunakan dengan bahasa apa pun yang mendukung .NET, termasuk C#, VB.NET, dan F#.
 
 ### Bagaimana saya bisa mendapatkan dukungan untuk Aspose.Words untuk .NET?
  Anda bisa mendapatkan dukungan dari komunitas dan pakar Aspose dengan mengunjungi[forum dukungan](https://forum.aspose.com/c/words/8).

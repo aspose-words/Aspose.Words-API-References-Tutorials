@@ -94,7 +94,7 @@ Ja, Aspose.Words för Java stöder ett brett utbud av dokumentformat, inklusive 
 
 ### Hur kan jag ställa in ytterligare utskriftsalternativ, som sidorientering och pappersstorlek?
 
- Du kan ställa in ytterligare utskriftsalternativ, såsom sidorientering och pappersstorlek, genom att konfigurera`PrintOptions` objekt innan du skriver ut dokumentet. Använd metoder som`setOrientation`och`setPaperSize` för att anpassa utskriftsinställningarna.
+ Du kan ställa in ytterligare utskriftsalternativ, såsom sidorientering och pappersstorlek, genom att konfigurera`PrintOptions` objekt innan du skriver ut dokumentet. Använd metoder som`setOrientation` och`setPaperSize` för att anpassa utskriftsinställningarna.
 
 ### Finns det en testversion av Aspose.Words för Java tillgänglig?
 

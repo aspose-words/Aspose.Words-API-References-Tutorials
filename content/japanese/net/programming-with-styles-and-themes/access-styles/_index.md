@@ -1,6 +1,6 @@
 ---
-title: Word で文書スタイルを取得する
-linktitle: Word で文書スタイルを取得する
+title: Word でドキュメント スタイルを取得する
+linktitle: Word でドキュメント スタイルを取得する
 second_title: Aspose.Words ドキュメント処理 API
 description: この詳細なステップバイステップのチュートリアルで、Aspose.Words for .NET を使用して Word でドキュメント スタイルを取得する方法を学びます。.NET アプリケーションでプログラムによってスタイルにアクセスし、管理します。
 type: docs
@@ -70,7 +70,7 @@ foreach (Style style in styles)
 }
 ```
 
-このコードが何をするかを詳しく説明します。
+このコードが何をするかを詳しく説明すると次のようになります。
 
 - 初期化`styleName`スタイル名のリストを構築するには、まず空の文字列から始めます。
 - スタイルをループする:`foreach`ループはそれぞれを繰り返す`Style`の`styles`コレクション。

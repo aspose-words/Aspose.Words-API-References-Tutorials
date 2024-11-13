@@ -35,7 +35,7 @@ String[] items = { "One", "Two", "Three" };
 builder.insertComboBox("DropDown", items, 0);
 ```
 
-## 5. フォームフィールドプロパティの操作
+## 5. フォームフィールドのプロパティの操作
 Aspose.Words for Java を使用すると、フォーム フィールドのプロパティを操作できます。たとえば、フォーム フィールドの結果を動的に設定できます。次に、その方法の例を示します。
 
 ```java
@@ -97,4 +97,4 @@ Aspose.Words for Java は、Word 文書のフォーム フィールドの操作�
 5. ### Aspose.Words for Java のサポートはどこで受けられますか?
    サポートと支援については、[Aspose.Words フォーラム](https://forum.aspose.com/).
 
-Aspose.Words for Java を使い始めて、動的でインタラクティブな Word 文書を作成する可能性を解き放ちましょう。コーディングを楽しんでください!
+Aspose.Words for Java を使い始めて、動的でインタラクティブな Word ドキュメントを作成する可能性を解き放ちましょう。コーディングを楽しんでください!

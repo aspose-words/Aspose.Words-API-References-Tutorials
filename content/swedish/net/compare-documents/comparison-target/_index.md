@@ -50,7 +50,7 @@ Install-Package Aspose.Words
 
 ## Steg 3: Ladda dina dokument
 
-Okej, dags att ladda de dokument du vill jämföra. Du behöver sökvägarna till dessa dokument. Låt oss anta att du har två dokument:`DocumentA.docx`och`DocumentB.docx`.
+Okej, dags att ladda de dokument du vill jämföra. Du behöver sökvägarna till dessa dokument. Låt oss anta att du har två dokument:`DocumentA.docx` och`DocumentB.docx`.
 
 ```csharp
 // Sökvägen till dokumentkatalogen.

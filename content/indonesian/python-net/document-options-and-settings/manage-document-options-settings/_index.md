@@ -1,20 +1,20 @@
 ---
 title: Menyempurnakan Opsi dan Pengaturan Dokumen untuk Efisiensi
 linktitle: Menyempurnakan Opsi dan Pengaturan Dokumen untuk Efisiensi
-second_title: API Manajemen Dokumen Aspose.Words Python
+second_title: API Manajemen Dokumen Python Aspose.Words
 description: Pelajari cara memanipulasi dokumen Word secara efisien menggunakan Aspose.Words untuk Python. Panduan langkah demi langkah dengan kode sumber.
 type: docs
 weight: 11
 url: /id/python-net/document-options-and-settings/manage-document-options-settings/
 ---
 
-## Pengantar Aspose.Kata-kata untuk Python:
+## Pengantar Aspose.Words untuk Python:
 
-Aspose.Words untuk Python adalah API kaya fitur yang memungkinkan pengembang membuat, memanipulasi, dan memproses dokumen Word secara terprogram. Ini menyediakan serangkaian kelas dan metode yang luas untuk menangani berbagai elemen dokumen seperti teks, paragraf, tabel, gambar, dan banyak lagi.
+Aspose.Words untuk Python adalah API kaya fitur yang memungkinkan pengembang untuk membuat, memanipulasi, dan memproses dokumen Word secara terprogram. API ini menyediakan serangkaian kelas dan metode yang luas untuk menangani berbagai elemen dokumen seperti teks, paragraf, tabel, gambar, dan banyak lagi.
 
 ## Menyiapkan Lingkungan:
 
-Untuk memulai, pastikan Anda telah menginstal Python di sistem Anda. Anda dapat menginstal perpustakaan Aspose.Words menggunakan pip:
+Untuk memulai, pastikan Anda telah menginstal Python di sistem Anda. Anda dapat menginstal pustaka Aspose.Words menggunakan pip:
 
 ```python
 pip install aspose-words
@@ -32,7 +32,7 @@ doc = aw.Document()
 
 ## Memodifikasi Properti Dokumen:
 
-Menyesuaikan properti dokumen seperti judul, penulis, dan kata kunci sangat penting untuk pengorganisasian dan kemudahan pencarian yang tepat:
+Menyesuaikan properti dokumen seperti judul, penulis, dan kata kunci sangat penting untuk organisasi dan penelusuran yang tepat:
 
 ```python
 doc.built_in_document_properties["Title"].value = "My Document"
@@ -42,7 +42,7 @@ doc.built_in_document_properties["Keywords"].value = "Python, Aspose.Words, Docu
 
 ## Mengelola Pengaturan Halaman:
 
-Mengontrol dimensi halaman, margin, dan orientasi memastikan dokumen Anda muncul sebagaimana mestinya:
+Mengontrol dimensi halaman, margin, dan orientasi memastikan bahwa dokumen Anda muncul sebagaimana mestinya:
 
 ```python
 page_setup = doc.sections[0].page_setup
@@ -55,7 +55,7 @@ page_setup.bottom_margin = aw.ConvertUtil.inch_to_point(1.5)
 
 ## Mengontrol Font dan Pemformatan:
 
-Terapkan pemformatan yang konsisten pada teks dokumen Anda menggunakan Aspose.Words:
+Terapkan format yang konsisten pada teks dokumen Anda menggunakan Aspose.Words:
 
 ```python
 for para in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
@@ -65,7 +65,7 @@ for para in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
 
 ## Bekerja dengan Bagian dan Header/Footer:
 
-Bagilah dokumen Anda menjadi beberapa bagian dan sesuaikan header dan footer:
+Membagi dokumen Anda menjadi beberapa bagian dan menyesuaikan header dan footer:
 
 ```python
 section = doc.sections[0]
@@ -73,9 +73,9 @@ header = section.headers_footers[aw.HeaderFooterType.HEADER_PRIMARY].as_header_f
 header.append_paragraph("My Custom Header")
 ```
 
-## Menambah dan Memformat Tabel:
+## Menambahkan dan Memformat Tabel:
 
-Tabel merupakan bagian integral dari banyak dokumen. Berikut cara membuat dan memformatnya:
+Tabel merupakan bagian penting dari banyak dokumen. Berikut cara membuat dan memformatnya:
 
 ```python
 table = doc.tables.add(section.body)
@@ -96,7 +96,7 @@ doc.first_section.body.first_paragraph.append_child(shape)
 
 ## Menyimpan dan Mengekspor Dokumen:
 
-Simpan dokumen Anda yang telah dimodifikasi dalam berbagai format:
+Simpan dokumen Anda yang dimodifikasi dalam berbagai format:
 
 ```python
 doc.save("output.docx", aw.SaveFormat.DOCX)
@@ -105,9 +105,9 @@ doc.save("output.pdf", aw.SaveFormat.PDF)
 
 ## Kesimpulan:
 
-Aspose.Words untuk Python memberdayakan pengembang untuk mengelola opsi dan pengaturan dokumen secara efisien, menawarkan kontrol terperinci atas setiap aspek pembuatan dan manipulasi dokumen. API intuitif dan dokumentasinya yang ekstensif menjadikannya alat yang sangat berharga untuk tugas-tugas terkait dokumen.
+Aspose.Words untuk Python memberdayakan pengembang untuk mengelola opsi dan pengaturan dokumen secara efisien, menawarkan kontrol terperinci atas setiap aspek pembuatan dan manipulasi dokumen. API intuitif dan dokumentasinya yang luas menjadikannya alat yang sangat berharga untuk tugas-tugas yang terkait dengan dokumen.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Bagaimana cara menginstal Aspose.Words untuk Python?
 

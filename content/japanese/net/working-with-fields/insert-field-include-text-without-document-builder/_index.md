@@ -15,7 +15,7 @@ url: /ja/net/working-with-fields/insert-field-include-text-without-document-buil
 
 コードに進む前に、必要なものがすべて揃っていることを確認しましょう。
 
-1.  Aspose.Words for .NET: 最新バージョンがインストールされていることを確認してください。ダウンロードはこちらからできます。[ここ](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: 最新バージョンがインストールされていることを確認してください。こちらからダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
 2. .NET 開発環境: Visual Studio などの .NET 互換 IDE。
 3. C# の基礎知識: C# プログラミングの知識があると、理解しやすくなります。
 

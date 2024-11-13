@@ -60,7 +60,7 @@ builder.Writeln("Text inside a bookmark.");
 
 Beágyazott könyvjelző hozzáadása a fő könyvjelzőn belül
 
-A könyvjelzőket más könyvjelzőkbe ágyazhatja be. Itt hozzáadjuk a "Beágyazott könyvjelzőt" a "Könyvjelzőm" részhez.
+A könyvjelzőket más könyvjelzőkbe ágyazhatja be. Itt hozzáadjuk a „Beágyazott könyvjelzőt” a „Saját könyvjelzőmhöz”.
 
 ```csharp
 builder.StartBookmark("Nested Bookmark");

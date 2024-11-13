@@ -116,6 +116,6 @@ public void cloneSection() throws Exception {
 
 ### Q5: Aspose.Words for Java のライセンスを購入するにはどうすればよいですか?
 
- Aspose.Words for Javaのライセンスを購入できます[ここ](https://purchase.aspose.com/buy).
+ Aspose.Words for Javaのライセンスを購入することができます[ここ](https://purchase.aspose.com/buy).
 
 今すぐ Aspose.Words for Java を使い始めて、ドキュメント処理機能を強化しましょう。

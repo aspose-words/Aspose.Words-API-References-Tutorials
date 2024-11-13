@@ -15,7 +15,7 @@ url: /ja/net/basic-conversions/docx-to-mhtml-and-sending-email/
 
 始める前に、次の前提条件が満たされていることを確認してください。
 
-1. Aspose.Words for .NET: Aspose.Words for .NETライブラリを以下のサイトからダウンロードしてインストールします。[Aspose リリース ページ](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET: Aspose.Words for .NETライブラリを以下のサイトからダウンロードしてインストールします。[Aspose リリース ページ](https://releases.aspose.com/words/net/).
 2.  Aspose.Email for .NET: Aspose.Email for .NETライブラリを以下のサイトからダウンロードしてインストールします。[Aspose リリース ページ](https://releases.aspose.com/email/net/).
 3. .NET Framework: マシンに .NET Framework がインストールされていることを確認します。
 4. SMTP サーバー: 電子メールを送信するには、SMTP サーバーにアクセスする必要があります。

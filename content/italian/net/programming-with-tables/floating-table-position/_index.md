@@ -1,28 +1,28 @@
 ---
-title: Posizione del tavolo mobile
-linktitle: Posizione del tavolo mobile
+title: Posizione della tabella mobile
+linktitle: Posizione della tabella mobile
 second_title: API di elaborazione dei documenti Aspose.Words
-description: Scopri come controllare la posizione mobile delle tabelle nei documenti Word utilizzando Aspose.Words per .NET con la nostra guida dettagliata passo passo.
+description: Scopri come controllare la posizione mobile delle tabelle nei documenti Word utilizzando Aspose.Words per .NET con la nostra guida dettagliata e passo dopo passo.
 type: docs
 weight: 10
 url: /it/net/programming-with-tables/floating-table-position/
 ---
 ## Introduzione
 
-Sei pronto per immergerti nel mondo della manipolazione delle posizioni delle tabelle nei documenti Word utilizzando Aspose.Words per .NET? Allacciate le cinture, perché oggi esploreremo come controllare facilmente la posizione fluttuante dei tavoli. Ti trasformeremo in un mago del posizionamento del tavolo in pochissimo tempo!
+Siete pronti a tuffarvi nel mondo della manipolazione delle posizioni delle tabelle nei documenti Word usando Aspose.Words per .NET? Allacciate le cinture, perché oggi esploreremo come controllare la posizione mobile delle tabelle con facilità. Vi trasformeremo in un mago del posizionamento delle tabelle in un batter d'occhio!
 
 ## Prerequisiti
 
 Prima di intraprendere questo entusiasmante viaggio, assicuriamoci di avere tutto ciò di cui abbiamo bisogno:
 
-1. Aspose.Words per .NET Library: assicurati di avere la versione più recente. Se non lo fai,[scaricalo qui](https://releases.aspose.com/words/net/).
+1. Aspose.Words per la libreria .NET: assicurati di avere la versione più recente. In caso contrario,[scaricalo qui](https://releases.aspose.com/words/net/).
 2. .NET Framework: assicurati che il tuo ambiente di sviluppo sia configurato con .NET.
 3. Ambiente di sviluppo: Visual Studio o qualsiasi IDE preferito.
-4. Un documento di Word: tieni pronto un documento di Word che contenga una tabella.
+4. Un documento Word: tieni pronto un documento Word che contenga una tabella.
 
-## Importa spazi dei nomi
+## Importazione degli spazi dei nomi
 
-Per iniziare, devi importare gli spazi dei nomi necessari nel tuo progetto .NET. Ecco lo snippet da includere nella parte superiore del file C#:
+Per iniziare, devi importare i namespace necessari nel tuo progetto .NET. Ecco lo snippet da includere in cima al tuo file C#:
 
 ```csharp
 using System;
@@ -32,52 +32,52 @@ using Aspose.Words.Tables;
 
 ## Guida passo passo
 
-Ora suddividiamo il processo in passaggi semplici e digeribili.
+Ora scomponiamo il processo in passaggi semplici e digeribili.
 
 ## Passaggio 1: caricare il documento
 
-Per prima cosa, devi caricare il tuo documento Word. Qui è dove si trova il tuo tavolo.
+Per prima cosa, devi caricare il tuo documento Word. È qui che si trova la tua tabella.
 
 ```csharp
-// Percorso della directory dei documenti
+// Percorso alla directory del documento
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 ```
 
-Immagina che il tuo documento Word sia una tela e che il tuo tavolo sia un'opera d'arte su di essa. Il nostro obiettivo è posizionare quest'arte esattamente dove vogliamo sulla tela.
+Immagina che il tuo documento Word sia una tela e che il tuo tavolo sia un'opera d'arte su di essa. Il nostro obiettivo è posizionare quest'opera d'arte esattamente dove vogliamo sulla tela.
 
 ## Passaggio 2: accedi alla tabella
 
-Successivamente, dobbiamo accedere alla tabella all'interno del documento. In genere, lavorerai con la prima tabella nel corpo del documento.
+Poi, dobbiamo accedere alla tabella all'interno del documento. In genere, lavorerai con la prima tabella nel corpo del documento.
 
 ```csharp
 Table table = doc.FirstSection.Body.Tables[0];
 ```
 
-Pensa a questo passaggio come all'individuazione della tabella con cui desideri lavorare in un documento fisico. È necessario sapere esattamente dove si trova per apportare eventuali modifiche.
+Pensa a questo passaggio come all'individuazione della tabella con cui vuoi lavorare in un documento fisico. Devi sapere esattamente dove si trova per apportare eventuali modifiche.
 
 ## Passaggio 3: imposta la posizione orizzontale
 
-Ora impostiamo la posizione orizzontale del tavolo. Ciò determina la distanza dal bordo sinistro del documento in cui verrà posizionata la tabella.
+Ora, impostiamo la posizione orizzontale della tabella. Ciò determina quanto lontano dal bordo sinistro del documento verrà posizionata la tabella.
 
 ```csharp
 table.AbsoluteHorizontalDistance = 10;
 ```
 
- Visualizza questo come se spostassi la tabella orizzontalmente sul tuo documento. IL`AbsoluteHorizontalDistance` è la distanza esatta dal bordo sinistro.
+ Visualizza questo come lo spostamento della tabella orizzontalmente attraverso il tuo documento.`AbsoluteHorizontalDistance` è la distanza esatta dal bordo sinistro.
 
 ## Passaggio 4: imposta l'allineamento verticale
 
-Dobbiamo anche impostare l'allineamento verticale della tabella. Ciò centrerà la tabella verticalmente all'interno del testo circostante.
+Dobbiamo anche impostare l'allineamento verticale della tabella. Questo centrerà la tabella verticalmente nel testo circostante.
 
 ```csharp
 table.RelativeVerticalAlignment = VerticalAlignment.Center;
 ```
 
-Immagina di appendere un quadro al muro. Vuoi assicurarti che sia centrato verticalmente per un aspetto estetico. Questo passaggio raggiunge questo obiettivo.
+Immagina di appendere un quadro a una parete. Vuoi assicurarti che sia centrato verticalmente per un effetto estetico. Questo passaggio ti aiuta a raggiungere questo obiettivo.
 
-## Passaggio 5: salva il documento modificato
+## Passaggio 5: Salvare il documento modificato
 
 Infine, dopo aver posizionato la tabella, salva il documento modificato.
 
@@ -89,7 +89,7 @@ doc.Save(dataDir + "WorkingWithTables.FloatingTablePosition.docx");
 
 ## Conclusione
 
-Ed ecco qua! Hai appena imparato come controllare la posizione mobile delle tabelle in un documento Word utilizzando Aspose.Words per .NET. Con queste competenze, puoi garantire che le tue tabelle siano posizionate perfettamente per migliorare la leggibilità e l'estetica dei tuoi documenti. Continua a sperimentare ed esplorare le vaste funzionalità di Aspose.Words per .NET.
+Ed ecco fatto! Hai appena imparato a controllare la posizione mobile delle tabelle in un documento Word usando Aspose.Words per .NET. Con queste competenze, puoi assicurarti che le tue tabelle siano posizionate perfettamente per migliorare la leggibilità e l'estetica dei tuoi documenti. Continua a sperimentare ed esplorare le vaste capacità di Aspose.Words per .NET.
 
 ## Domande frequenti
 
@@ -97,18 +97,18 @@ Ed ecco qua! Hai appena imparato come controllare la posizione mobile delle tabe
 
  Sì, puoi usare il`AbsoluteVerticalDistance` proprietà per impostare la distanza verticale della tabella dal bordo superiore della pagina.
 
-### Come allineo la tabella a destra del documento?
+### Come posso allineare la tabella a destra del documento?
 
- Per allineare la tabella a destra, è possibile impostare il`HorizontalAlignment` proprietà della tabella a`HorizontalAlignment.Right`.
+ Per allineare la tabella a destra, puoi impostare`HorizontalAlignment` proprietà della tabella a`HorizontalAlignment.Right`.
 
 ### È possibile posizionare più tabelle in modo diverso nello stesso documento?
 
- Assolutamente! È possibile accedere e impostare le posizioni per più tabelle individualmente scorrendo il file`Tables` raccolta nel documento.
+ Assolutamente! Puoi accedere e impostare le posizioni per più tabelle individualmente iterando attraverso il`Tables` raccolta nel documento.
 
-### Posso utilizzare il posizionamento relativo per l'allineamento orizzontale?
+### Posso usare il posizionamento relativo per l'allineamento orizzontale?
 
-Sì, Aspose.Words supporta il posizionamento relativo sia per gli allineamenti orizzontali che verticali utilizzando proprietà come`RelativeHorizontalAlignment`.
+Sì, Aspose.Words supporta il posizionamento relativo per allineamenti sia orizzontali che verticali utilizzando proprietà come`RelativeHorizontalAlignment`.
 
-### Aspose.Words supporta tabelle mobili in diverse sezioni di un documento?
+### Aspose.Words supporta tabelle mobili in sezioni diverse di un documento?
 
-Sì, puoi posizionare le tabelle mobili in diverse sezioni accedendo alla sezione specifica e alle relative tabelle all'interno del tuo documento.
+Sì, puoi posizionare le tabelle mobili in sezioni diverse accedendo alla sezione specifica e alle relative tabelle all'interno del documento.

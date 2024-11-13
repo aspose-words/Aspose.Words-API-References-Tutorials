@@ -31,7 +31,7 @@ Ennek a névtérnek a felvételével hozzáférhet az Aspose.Words könyvtár mi
 
 ## 1. lépés: Állítsa be a dokumentumkönyvtárat
 
- Először is meg kell határoznia a dokumentumkönyvtár elérési útját. Az Aspose.Words itt keresi a fájlokat. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` a tényleges elérési úttal, ahol a dokumentumokat tárolják.
+ Először is meg kell határoznia a dokumentumkönyvtár elérési útját. Az Aspose.Words itt keresi a fájlokat. Cserélje ki`"YOUR DOCUMENT DIRECTORY"` azzal a tényleges elérési úttal, ahol a dokumentumokat tárolják.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -73,7 +73,7 @@ Ez a kód új néven menti a módosított dokumentumot, megőrzi az eredeti fáj
 ## GYIK
 
 ###  Mi a célja a`CopyStylesFromTemplate` method?  
- A`CopyStylesFromTemplate` módszer stílusokat másol egyik dokumentumból a másikba, biztosítva, hogy a céldokumentum örökölje a forrásdokumentum formázását.
+A`CopyStylesFromTemplate` módszer stílusokat másol egyik dokumentumból a másikba, biztosítva, hogy a céldokumentum örökölje a forrásdokumentum formázását.
 
 ###  Használhatom`CopyStylesFromTemplate` with documents in different formats?  
  Nem, a`CopyStylesFromTemplate` módszer csak azonos formátumú dokumentumokkal működik, jellemzően DOCX.
@@ -82,7 +82,7 @@ Ez a kód új néven menti a módosított dokumentumot, megőrzi az eredeti fáj
 Nyissa meg a céldokumentumot, és ellenőrizze a stílusbeállításokat. Látnia kell az alkalmazott forrásdokumentum stílusait.
 
 ### Mi van akkor, ha a céldokumentumnak már vannak stílusai?  
- A`CopyStylesFromTemplate` metódus felülírja a céldokumentum meglévő stílusait a forrásdokumentum stílusaival.
+A`CopyStylesFromTemplate` metódus felülírja a céldokumentum meglévő stílusait a forrásdokumentum stílusaival.
 
 ### Ingyenesen használható az Aspose.Words for .NET?  
  Az Aspose.Words for .NET kereskedelmi termék, de ingyenes próbaverziót kaphat a webhelyen[Aspose.Words for .NET ingyenes próbaverzió](https://releases.aspose.com/).

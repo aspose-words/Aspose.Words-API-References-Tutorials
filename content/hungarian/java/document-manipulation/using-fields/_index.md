@@ -111,7 +111,7 @@ Az Aspose.Words for Java feltételes mezői lehetővé teszik dinamikus dokument
 
 ### Hol találok további dokumentációt és forrásokat az Aspose.Words for Java-hoz?
 
- Az Aspose.Words for Java-hoz átfogó dokumentációt, kódmintákat és oktatóanyagokat találhat az Aspose webhelyén:[Aspose.Words for Java Documentation](https://reference.aspose.com/words/java/). Ez az erőforrás segít felfedezni a könyvtár további szolgáltatásait és funkcióit.
+ Az Aspose.Words for Java-hoz átfogó dokumentációt, kódmintákat és oktatóanyagokat találhat az Aspose webhelyén:[Aspose.Words for Java Documentation](https://reference.aspose.com/words/java/)Ez az erőforrás segít felfedezni a könyvtár további szolgáltatásait és funkcióit.
 
 ### Hogyan kaphatok támogatást vagy kérhetek segítséget az Aspose.Words for Java-val kapcsolatban?
 

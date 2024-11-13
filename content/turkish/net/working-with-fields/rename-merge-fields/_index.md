@@ -1,27 +1,27 @@
 ---
-title: Birleştirme Alanlarını Yeniden Adlandırın
-linktitle: Birleştirme Alanlarını Yeniden Adlandırın
+title: Birleştirme Alanlarını Yeniden Adlandır
+linktitle: Birleştirme Alanlarını Yeniden Adlandır
 second_title: Aspose.Words Belge İşleme API'si
-description: Aspose.Words for .NET kullanarak Word belgelerindeki birleştirme alanlarını nasıl yeniden adlandıracağınızı öğrenin. Belgelerinizi kolayca düzenlemek için ayrıntılı, adım adım kılavuzumuzu izleyin.
+description: Aspose.Words for .NET kullanarak Word belgelerindeki birleştirme alanlarının nasıl yeniden adlandırılacağını öğrenin. Belgelerinizi kolayca düzenlemek için ayrıntılı, adım adım kılavuzumuzu izleyin.
 type: docs
 weight: 10
 url: /tr/net/working-with-fields/rename-merge-fields/
 ---
 ## giriiş
 
-Doğru araç ve tekniklere aşina değilseniz, Word belgelerindeki birleştirme alanlarını yeniden adlandırmak göz korkutucu bir görev olabilir. Ama endişelenme, seni koruyacağım! Bu kılavuzda, belge düzenlemeyi kolaylaştıran güçlü bir kütüphane olan Aspose.Words for .NET'i kullanarak birleştirme alanlarını yeniden adlandırma sürecini ayrıntılı olarak ele alacağız. İster deneyimli bir geliştirici olun, ister yeni başlıyor olun, bu adım adım eğitim, bilmeniz gereken her şeyde size yol gösterecektir.
+Word belgelerindeki birleştirme alanlarını yeniden adlandırmak, doğru araçlar ve tekniklerle aşina değilseniz göz korkutucu bir görev olabilir. Ama endişelenmeyin, sizin için her şeyi hallettim! Bu kılavuzda, belge düzenlemeyi çocuk oyuncağı haline getiren güçlü bir kütüphane olan Aspose.Words for .NET'i kullanarak birleştirme alanlarını yeniden adlandırma sürecine dalacağız. İster deneyimli bir geliştirici olun ister yeni başlıyor olun, bu adım adım eğitim bilmeniz gereken her şeyi size anlatacak.
 
-## Önkoşullar
+## Ön koşullar
 
-En ince ayrıntılara dalmadan önce, ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
+Ayrıntılara dalmadan önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
 
--  Aspose.Words for .NET: Aspose.Words for .NET'in kurulu olması gerekir. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET: Aspose.Words for .NET'in yüklü olması gerekir. Buradan indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
 - Geliştirme Ortamı: Visual Studio veya herhangi bir .NET uyumlu IDE.
 - Temel C# Bilgisi: C# programlamaya aşinalık faydalı olacaktır.
 
 ## Ad Alanlarını İçe Aktar
 
-Öncelikle gerekli ad alanlarını içe aktaralım. Bu, kodumuzun ihtiyacımız olan tüm sınıflara ve yöntemlere erişebilmesini sağlayacaktır.
+İlk önce gerekli ad alanlarını içe aktaralım. Bu, kodumuzun ihtiyaç duyduğumuz tüm sınıflara ve yöntemlere erişebilmesini sağlayacaktır.
 
 ```csharp
 using System;
@@ -29,14 +29,14 @@ using Aspose.Words;
 using Aspose.Words.Fields;
 ```
 
-Tamam, artık temel bilgileri bir kenara bıraktığımıza göre, haydi eğlenceli kısma geçelim! Word belgelerinizdeki birleştirme alanlarını yeniden adlandırmak için bu adımları izleyin.
+Tamam, artık temelleri hallettiğimize göre, eğlenceli kısma geçelim! Word belgelerinizdeki birleştirme alanlarını yeniden adlandırmak için şu adımları izleyin.
 
 ## Adım 1: Belgeyi Oluşturun ve Birleştirme Alanlarını Ekleyin
 
 Başlamak için yeni bir belge oluşturmamız ve bazı birleştirme alanları eklememiz gerekiyor. Bu bizim başlangıç noktamız olacak.
 
 ```csharp
-// Belgeler dizininin yolu.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 // Belgeyi oluşturun ve birleştirme alanlarını ekleyin.
@@ -47,11 +47,11 @@ builder.InsertField(@"MERGEFIELD MyMergeField1 \* MERGEFORMAT");
 builder.InsertField(@"MERGEFIELD MyMergeField2 \* MERGEFORMAT");
 ```
 
- Burada yeni bir belge oluşturuyoruz ve`DocumentBuilder` iki birleştirme alanı eklemek için sınıf:`MyMergeField1`Ve`MyMergeField2`.
+ Burada yeni bir belge oluşturuyoruz ve`DocumentBuilder` iki birleştirme alanı eklemek için sınıf:`MyMergeField1` Ve`MyMergeField2`.
 
-## Adım 2: Alanları Yineleyin ve Yeniden Adlandırın
+## Adım 2: Alanlar Arasında Gezinin ve Onları Yeniden Adlandırın
 
-Şimdi birleştirme alanlarını bulup yeniden adlandıracak kodu yazalım. Belgedeki tüm alanları gözden geçireceğiz, bunların birleştirme alanları olup olmadığını kontrol edeceğiz ve yeniden adlandıracağız.
+Şimdi, birleştirme alanlarını bulup yeniden adlandırmak için kodu yazalım. Belgedeki tüm alanlarda dolaşacağız, birleştirme alanları olup olmadıklarını kontrol edeceğiz ve yeniden adlandıracağız.
 
 ```csharp
 // Birleştirme alanlarını yeniden adlandırın.
@@ -66,41 +66,41 @@ foreach (Field f in doc.Range.Fields)
 }
 ```
 
- Bu kod parçasında bir kullanıyoruz`foreach` belgedeki tüm alanlar arasında yineleme yapmak için döngü. Her alan için şunu kullanarak bunun bir birleştirme alanı olup olmadığını kontrol ederiz.`f.Type == FieldType.FieldMergeField` . Eğer öyleyse, onu yayınlarız`FieldMergeField` ve ekle`_Renamed` adına.
+ Bu kod parçacığında şunu kullanıyoruz:`foreach` belgedeki tüm alanları yinelemek için döngü. Her alan için, birleştirme alanı olup olmadığını kullanarak kontrol ederiz`f.Type == FieldType.FieldMergeField` Eğer öyleyse, onu şu şekilde atarız:`FieldMergeField` ve ekle`_Renamed` adına.
 
-## 3. Adım: Belgeyi Kaydedin
+## Adım 3: Belgeyi Kaydedin
 
-Son olarak, yeniden adlandırılan birleştirme alanlarıyla belgemizi kaydedelim.
+Son olarak, yeniden adlandırılmış birleştirme alanlarıyla belgemizi kaydedelim.
 
 ```csharp
 // Belgeyi kaydedin.
 doc.Save(dataDir + "WorkingWithFields.RenameMergeFields.docx");
 ```
 
- Bu kod satırı, belgeyi belirtilen adla belirtilen dizine kaydeder.`WorkingWithFields.RenameMergeFields.docx`.
+ Bu kod satırı belgeyi belirtilen dizine şu adla kaydeder:`WorkingWithFields.RenameMergeFields.docx`.
 
 ## Çözüm
 
-Ve işte karşınızda! Adımları öğrendikten sonra Aspose.Words for .NET kullanarak Word belgelerindeki birleştirme alanlarını yeniden adlandırmak çok kolaydır. Bu kılavuzu takip ederek Word belgelerinizi ihtiyaçlarınıza uyacak şekilde kolayca değiştirebilir ve özelleştirebilirsiniz. İster rapor oluşturuyor olun, ister kişiselleştirilmiş mektuplar oluşturuyor olun, ister verileri yönetiyor olun, bu teknik işinize yarayacaktır.
+İşte karşınızda! Aspose.Words for .NET kullanarak Word belgelerindeki birleştirme alanlarını yeniden adlandırmak, adımları öğrendikten sonra basittir. Bu kılavuzu izleyerek, Word belgelerinizi ihtiyaçlarınıza uyacak şekilde kolayca düzenleyebilir ve özelleştirebilirsiniz. İster raporlar üretiyor, ister kişiselleştirilmiş mektuplar oluşturuyor veya verileri yönetiyor olun, bu teknik işinize yarayacaktır.
 
-## SSS'ler
+## SSS
 
-### Birden çok birleştirme alanını aynı anda yeniden adlandırabilir miyim?
+### Birden fazla birleştirme alanını aynı anda yeniden adlandırabilir miyim?
 
-Kesinlikle! Sağlanan kod, bir belgedeki tüm birleştirme alanlarının nasıl döngüye alınacağını ve yeniden adlandırılacağını zaten göstermektedir.
+Kesinlikle! Sağlanan kod, bir belgedeki tüm birleştirme alanlarını nasıl dolaşacağınızı ve yeniden adlandıracağınızı zaten gösteriyor.
 
 ### Birleştirme alanı mevcut değilse ne olur?
 
-Bir birleştirme alanı mevcut değilse kod bu alanı atlar. Hiçbir hata atılmayacaktır.
+Bir birleştirme alanı yoksa, kod onu atlar. Hiçbir hata atılmaz.
 
-### Ada eklemek yerine öneki değiştirebilir miyim?
+### İsme ekleme yapmak yerine öneki değiştirebilir miyim?
 
- Evet, değiştirebilirsiniz`mergeField.FieldName` istediğiniz herhangi bir değere ayarlamak için atama.
+ Evet, değiştirebilirsiniz`mergeField.FieldName` istediğiniz herhangi bir değere ayarlamak için atama yapın.
 
 ### Aspose.Words for .NET ücretsiz mi?
 
- Aspose.Words for .NET ticari bir üründür ancak[ücretsiz deneme](https://releases.aspose.com/) bunu değerlendirmek için.
+ Aspose.Words for .NET ticari bir üründür, ancak bir[ücretsiz deneme](https://releases.aspose.com/) değerlendirmek için.
 
-### Aspose.Words for .NET hakkında daha fazla belgeyi nerede bulabilirim?
+### Aspose.Words for .NET hakkında daha fazla dokümanı nerede bulabilirim?
 
- Kapsamlı belgeler bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).
+ Kapsamlı dokümanları bulabilirsiniz[Burada](https://reference.aspose.com/words/net/).

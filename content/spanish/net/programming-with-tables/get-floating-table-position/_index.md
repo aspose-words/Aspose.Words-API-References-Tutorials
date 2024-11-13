@@ -1,64 +1,64 @@
 ---
-title: Obtener posición de mesa flotante
-linktitle: Obtener posición de mesa flotante
+title: Obtener posición de tabla flotante
+linktitle: Obtener posición de tabla flotante
 second_title: API de procesamiento de documentos Aspose.Words
-description: Aprenda cómo obtener posiciones de tablas flotantes en documentos de Word usando Aspose.Words para .NET. Esta guía detallada paso a paso lo guiará a través de todo lo que necesita saber.
+description: Aprenda a obtener posiciones de tablas flotantes en documentos de Word con Aspose.Words para .NET. Esta guía detallada paso a paso le explicará todo lo que necesita saber.
 type: docs
 weight: 10
 url: /es/net/programming-with-tables/get-floating-table-position/
 ---
 ## Introducción
 
-¿Estás listo para sumergirte en el mundo de Aspose.Words para .NET? Hoy lo llevaremos en un viaje para descubrir los secretos de las tablas flotantes en documentos de Word. Imagine que tiene una mesa que no sólo permanece quieta sino que flota elegantemente alrededor del texto. Muy bien, ¿verdad? Este tutorial le mostrará cómo obtener las propiedades de posicionamiento de dichas tablas flotantes. Entonces, ¡comencemos!
+¿Estás listo para sumergirte en el mundo de Aspose.Words para .NET? Hoy te llevaremos a un viaje para descubrir los secretos de las tablas flotantes en los documentos de Word. Imagina que tienes una tabla que no solo permanece quieta, sino que flota elegantemente alrededor del texto. Genial, ¿verdad? Este tutorial te mostrará cómo obtener las propiedades de posicionamiento de dichas tablas flotantes. ¡Comencemos!
 
-## Requisitos previos
+## Prerrequisitos
 
 Antes de pasar a la parte divertida, hay algunas cosas que debes tener en cuenta:
 
-1.  Aspose.Words para .NET: si aún no lo ha hecho, descargue e instale Aspose.Words para .NET desde[Página de lanzamientos de Aspose](https://releases.aspose.com/words/net/).
-2. Entorno de desarrollo: asegúrese de tener configurado un entorno de desarrollo .NET. Visual Studio es una gran opción.
-3. Documento de muestra: necesitará un documento de Word con una tabla flotante. Puede crear uno o utilizar un documento existente. 
+1.  Aspose.Words para .NET: si aún no lo ha hecho, descargue e instale Aspose.Words para .NET desde[Página de lanzamiento de Aspose](https://releases.aspose.com/words/net/).
+2. Entorno de desarrollo: asegúrese de tener configurado un entorno de desarrollo .NET. Visual Studio es una excelente opción.
+3. Documento de muestra: Necesitará un documento de Word con una tabla flotante. Puede crear uno o utilizar un documento existente. 
 
 ## Importar espacios de nombres
 
-Para comenzar, necesita importar los espacios de nombres necesarios. Esto garantiza que tenga acceso a las clases y métodos de Aspose.Words necesarios para manipular documentos de Word.
+Para comenzar, debe importar los espacios de nombres necesarios. Esto garantiza que tenga acceso a las clases y métodos de Aspose.Words necesarios para manipular documentos de Word.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Muy bien, dividamos el proceso en pasos fáciles de seguir.
+Muy bien, vamos a dividir el proceso en pasos fáciles de seguir.
 
-## Paso 1: cargue su documento
+## Paso 1: Cargue su documento
 
-Lo primero es lo primero: debe cargar su documento de Word. Este documento debe contener la tabla flotante que desea examinar.
+Lo primero es lo primero: debes cargar el documento de Word. Este documento debe contener la tabla flotante que deseas examinar.
 
 ```csharp
-// Ruta a su directorio de documentos
+// Ruta al directorio de su documento
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 ```
 
- En este paso, básicamente le estás diciendo a Aspose.Words dónde encontrar tu documento. Asegúrate de reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real a su documento.
+ En este paso, básicamente le estás indicando a Aspose.Words dónde encontrar tu documento. Asegúrate de reemplazar`"YOUR DOCUMENT DIRECTORY"` con la ruta real a su documento.
 
-## Paso 2: acceder a las tablas del documento
+## Paso 2: Acceder a las tablas en el documento
 
-A continuación, debe acceder a las tablas dentro de la primera sección del documento. Piensa en el documento como un contenedor grande y estás investigando en él para encontrar todas las tablas.
+A continuación, debe acceder a las tablas que se encuentran en la primera sección del documento. Piense en el documento como si fuera un gran contenedor y busque en él todas las tablas.
 
 ```csharp
 foreach (Table table in doc.FirstSection.Body.Tables)
 {
-    // Su código para procesar cada tabla va aquí
+    // Tu código para procesar cada tabla va aquí
 }
 ```
 
-Aquí, recorrerá cada tabla que se encuentra en el cuerpo de la primera sección de su documento.
+Aquí, estás recorriendo cada tabla que se encuentra en el cuerpo de la primera sección de tu documento.
 
-## Paso 3: comprueba si la mesa está flotante
+## Paso 3: Verifique si la tabla es flotante
 
-Ahora, debe determinar si la tabla es de tipo flotante. Las tablas flotantes tienen configuraciones de ajuste de texto específicas.
+Ahora, debe determinar si la tabla es de tipo flotante. Las tablas flotantes tienen configuraciones específicas de ajuste de texto.
 
 ```csharp
 if (table.TextWrapping == TextWrapping.Around)
@@ -67,11 +67,11 @@ if (table.TextWrapping == TextWrapping.Around)
 }
 ```
 
-Esta condición verifica si el estilo de ajuste de texto de la tabla está configurado en "Alrededor", lo que indica que es una tabla flotante.
+Esta condición verifica si el estilo de ajuste de texto de la tabla está configurado en “Alrededor”, lo que indica que es una tabla flotante.
 
-## Paso 4: imprima las propiedades de posicionamiento
+## Paso 4: Imprima las propiedades de posicionamiento
 
-Finalmente, extraigamos e imprimamos las propiedades de posicionamiento de la tabla flotante. Estas propiedades le indican dónde está posicionada la tabla en relación con el texto y la página.
+Por último, extraigamos e imprimamos las propiedades de posicionamiento de la tabla flotante. Estas propiedades indican dónde se ubica la tabla en relación con el texto y la página.
 
 ```csharp
 if (table.TextWrapping == TextWrapping.Around)
@@ -86,27 +86,27 @@ if (table.TextWrapping == TextWrapping.Around)
 }
 ```
 
-Estas propiedades le brindan una visión detallada de cómo se ancla y posiciona la tabla dentro del documento.
+Estas propiedades le brindan una visión detallada de cómo está anclada y posicionada la tabla dentro del documento.
 
 ## Conclusión
 
-¡Y ahí lo tienes! Siguiendo estos pasos, puede recuperar e imprimir fácilmente las propiedades de posicionamiento de las tablas flotantes en sus documentos de Word usando Aspose.Words para .NET. Ya sea que esté automatizando el procesamiento de documentos o simplemente tenga curiosidad sobre los diseños de las tablas, este conocimiento definitivamente le resultará útil.
+¡Y ya está! Siguiendo estos pasos, podrá recuperar e imprimir fácilmente las propiedades de posicionamiento de las tablas flotantes en sus documentos de Word utilizando Aspose.Words para .NET. Ya sea que esté automatizando el procesamiento de documentos o simplemente sienta curiosidad por los diseños de tablas, este conocimiento definitivamente le resultará útil.
 
-Recuerde, trabajar con Aspose.Words para .NET abre un mundo de posibilidades para la manipulación y automatización de documentos. ¡Feliz codificación!
+Recuerde que trabajar con Aspose.Words para .NET abre un mundo de posibilidades para la manipulación y automatización de documentos. ¡Que disfrute codificando!
 
 ## Preguntas frecuentes
 
 ### ¿Qué es una tabla flotante en documentos de Word?
-Una tabla flotante es una tabla que no está fijada al texto pero que puede moverse, generalmente con texto a su alrededor.
+Una tabla flotante es una tabla que no está fija al texto sino que puede moverse, generalmente con el texto alrededor de ella.
 
 ### ¿Cómo puedo saber si una tabla está flotando usando Aspose.Words para .NET?
- Puede comprobar si una tabla está flotando examinando su`TextWrapping` propiedad. Si está configurado en`TextWrapping.Around`, la mesa está flotando.
+ Puedes comprobar si una tabla está flotando examinando su`TextWrapping` propiedad. Si está configurado en`TextWrapping.Around`, la mesa esta flotando.
 
-### ¿Puedo cambiar las propiedades de posicionamiento de una mesa flotante?
+### ¿Puedo cambiar las propiedades de posicionamiento de una tabla flotante?
 Sí, al utilizar Aspose.Words para .NET, puede modificar las propiedades de posicionamiento de una tabla flotante para personalizar su diseño.
 
-### ¿Aspose.Words para .NET es adecuado para la automatización de documentos a gran escala?
-¡Absolutamente! Aspose.Words para .NET está diseñado para la automatización de documentos de alto rendimiento y puede manejar operaciones a gran escala de manera eficiente.
+### ¿Es Aspose.Words para .NET adecuado para la automatización de documentos a gran escala?
+¡Por supuesto! Aspose.Words para .NET está diseñado para la automatización de documentos de alto rendimiento y puede gestionar operaciones a gran escala de manera eficiente.
 
 ### ¿Dónde puedo encontrar más información y recursos sobre Aspose.Words para .NET?
-Puede encontrar documentación detallada y recursos en el[Página de documentación de Aspose.Words para .NET](https://reference.aspose.com/words/net/).
+Puede encontrar documentación detallada y recursos en[Página de documentación de Aspose.Words para .NET](https://reference.aspose.com/words/net/).

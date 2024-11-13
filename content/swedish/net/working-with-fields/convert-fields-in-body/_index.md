@@ -62,7 +62,7 @@ Spara det ändrade dokumentet efter att ha konverterat fälten:
 doc.Save(dataDir + "WorkingWithFields.ConvertFieldsInBody.docx");
 ```
 
- Justera`"WorkingWithFields.ConvertFieldsInBody.docx"` för att ange önskad sökväg för utdatafilen.
+ Justera`"WorkingWithFields.ConvertFieldsInBody.docx"` för att ange den önskade sökvägen för utdatafilen.
 
 ## Slutsats
 

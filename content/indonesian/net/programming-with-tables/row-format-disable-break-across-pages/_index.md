@@ -1,25 +1,25 @@
 ---
-title: Format Baris Nonaktifkan Pemisahan Lintas Halaman
-linktitle: Format Baris Nonaktifkan Pemisahan Lintas Halaman
+title: Nonaktifkan Format Baris, Jeda Antar Halaman
+linktitle: Nonaktifkan Format Baris, Jeda Antar Halaman
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menonaktifkan pemisah baris di seluruh halaman dalam dokumen Word menggunakan Aspose.Words untuk .NET untuk menjaga keterbacaan dan pemformatan tabel.
+description: Pelajari cara menonaktifkan jeda baris di seluruh halaman dalam dokumen Word menggunakan Aspose.Words untuk .NET untuk menjaga keterbacaan dan pemformatan tabel.
 type: docs
 weight: 10
 url: /id/net/programming-with-tables/row-format-disable-break-across-pages/
 ---
 ## Perkenalan
 
-Saat bekerja dengan tabel di dokumen Word, Anda mungkin ingin memastikan bahwa baris tidak terpecah di seluruh halaman, yang penting untuk menjaga keterbacaan dan pemformatan dokumen Anda. Aspose.Words untuk .NET menyediakan cara mudah untuk menonaktifkan hentian baris di seluruh halaman.
+Saat bekerja dengan tabel dalam dokumen Word, Anda mungkin ingin memastikan bahwa baris tidak terputus di beberapa halaman, yang penting untuk menjaga keterbacaan dan pemformatan dokumen Anda. Aspose.Words untuk .NET menyediakan cara mudah untuk menonaktifkan pemisah baris di beberapa halaman.
 
 Dalam tutorial ini, kami akan memandu Anda melalui proses menonaktifkan jeda baris di seluruh halaman dalam dokumen Word menggunakan Aspose.Words untuk .NET.
 
 ## Prasyarat
 
 Sebelum kita mulai, pastikan Anda memiliki prasyarat berikut:
-- Aspose.Words untuk perpustakaan .NET diinstal.
+- Pustaka Aspose.Words untuk .NET terinstal.
 - Dokumen Word dengan tabel yang mencakup beberapa halaman.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
 Pertama, impor namespace yang diperlukan dalam proyek Anda:
 
@@ -47,12 +47,12 @@ Akses tabel pertama dalam dokumen. Ini mengasumsikan bahwa tabel yang ingin Anda
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 ```
 
-## Langkah 3: Nonaktifkan Pemecahan Halaman untuk Semua Baris
+## Langkah 3: Nonaktifkan Pemecahan Antar Halaman untuk Semua Baris
 
- Ulangi setiap baris dalam tabel dan atur`AllowBreakAcrossPages`properti ke`false`. Hal ini memastikan bahwa baris tidak akan terpecah di seluruh halaman.
+ Ulangi setiap baris dalam tabel dan atur`AllowBreakAcrossPages`properti untuk`false`Ini memastikan bahwa baris tidak akan terputus di beberapa halaman.
 
 ```csharp
-// Nonaktifkan pembagian halaman untuk semua baris dalam tabel.
+// Nonaktifkan pemisahan antar halaman untuk semua baris dalam tabel.
 foreach (Row row in table.Rows)
     row.RowFormat.AllowBreakAcrossPages = false;
 ```
@@ -67,21 +67,21 @@ doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
 
 ## Kesimpulan
 
-Dalam tutorial ini, kami mendemonstrasikan cara menonaktifkan pemisah baris di seluruh halaman dalam dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah yang diuraikan di atas, Anda dapat memastikan bahwa baris tabel Anda tetap utuh dan tidak terbagi menjadi beberapa halaman, sehingga menjaga keterbacaan dan pemformatan dokumen.
+Dalam tutorial ini, kami menunjukkan cara menonaktifkan pemisah baris di seluruh halaman dalam dokumen Word menggunakan Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah yang diuraikan di atas, Anda dapat memastikan bahwa baris tabel Anda tetap utuh dan tidak terbagi di seluruh halaman, sehingga dokumen tetap mudah dibaca dan diformat.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
-### Bisakah saya menonaktifkan jeda baris di seluruh halaman untuk baris tertentu, bukan semua baris?  
- Ya, Anda dapat menonaktifkan hentian baris untuk baris tertentu dengan mengakses baris yang diinginkan dan mengaturnya`AllowBreakAcrossPages`properti ke`false`.
+### Dapatkah saya menonaktifkan pemisah baris di seluruh halaman untuk baris tertentu, bukan semua baris?  
+ Ya, Anda dapat menonaktifkan pemisah baris untuk baris tertentu dengan mengakses baris yang diinginkan dan mengaturnya`AllowBreakAcrossPages`properti untuk`false`.
 
 ### Apakah metode ini berfungsi untuk tabel dengan sel yang digabungkan?  
  Ya, metode ini berfungsi untuk tabel dengan sel yang digabungkan. Properti`AllowBreakAcrossPages` berlaku untuk seluruh baris, terlepas dari penggabungan sel.
 
-### Apakah metode ini akan berhasil jika tabel tersebut disarangkan di dalam tabel lain?  
-Ya, Anda dapat mengakses dan mengubah tabel bertumpuk dengan cara yang sama. Pastikan Anda mereferensikan tabel bertumpuk dengan benar berdasarkan indeksnya atau properti lainnya.
+### Apakah metode ini akan berfungsi jika tabel bersarang di dalam tabel lain?  
+Ya, Anda dapat mengakses dan mengubah tabel bersarang dengan cara yang sama. Pastikan Anda merujuk tabel bersarang dengan benar melalui indeks atau properti lainnya.
 
-### Bagaimana saya bisa memeriksa apakah suatu baris memungkinkan pemisahan halaman?  
- Anda dapat memeriksa apakah suatu baris memungkinkan pemisahan halaman dengan mengakses`AllowBreakAcrossPages` properti dari`RowFormat` dan memeriksa nilainya.
+### Bagaimana saya dapat memeriksa apakah suatu baris dapat dipecah antarhalaman?  
+ Anda dapat memeriksa apakah suatu baris memungkinkan pemisahan antar halaman dengan mengakses`AllowBreakAcrossPages` milik`RowFormat` dan memeriksa nilainya.
 
 ### Apakah ada cara untuk menerapkan pengaturan ini ke semua tabel dalam dokumen?  
-Ya, Anda dapat mengulang semua tabel dalam dokumen dan menerapkan pengaturan ini ke masing-masing tabel.
+Ya, Anda dapat melakukan pengulangan pada semua tabel dalam dokumen dan menerapkan pengaturan ini pada masing-masing tabel.

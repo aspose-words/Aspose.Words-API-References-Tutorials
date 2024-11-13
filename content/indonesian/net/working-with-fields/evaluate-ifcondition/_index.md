@@ -1,33 +1,33 @@
 ---
-title: Evaluasi Kondisi IF
-linktitle: Evaluasi Kondisi IF
+title: Mengevaluasi Kondisi IF
+linktitle: Mengevaluasi Kondisi IF
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara mengevaluasi kondisi IF di dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah ini mencakup penyisipan, evaluasi, dan tampilan hasil.
+description: Pelajari cara mengevaluasi kondisi IF dalam dokumen Word menggunakan Aspose.Words untuk .NET. Panduan langkah demi langkah ini mencakup penyisipan, evaluasi, dan tampilan hasil.
 type: docs
 weight: 10
 url: /id/net/working-with-fields/evaluate-ifcondition/
 ---
 ## Perkenalan
 
-Saat bekerja dengan dokumen dinamis, sering kali penting untuk menyertakan logika kondisional untuk menyesuaikan konten berdasarkan kriteria tertentu. Di Aspose.Words untuk .NET, Anda dapat memanfaatkan bidang seperti pernyataan IF untuk memasukkan ketentuan ke dalam dokumen Word Anda. Panduan ini akan memandu Anda menjalani proses evaluasi kondisi IF menggunakan Aspose.Words untuk .NET, mulai dari menyiapkan lingkungan hingga memeriksa hasil evaluasi.
+Saat bekerja dengan dokumen dinamis, sering kali penting untuk menyertakan logika kondisional guna menyesuaikan konten berdasarkan kriteria tertentu. Di Aspose.Words for .NET, Anda dapat memanfaatkan kolom seperti pernyataan IF untuk memasukkan kondisi ke dalam dokumen Word Anda. Panduan ini akan memandu Anda melalui proses mengevaluasi kondisi IF menggunakan Aspose.Words for .NET, mulai dari menyiapkan lingkungan hingga memeriksa hasil evaluasi.
 
 ## Prasyarat
 
-Sebelum mendalami tutorial, pastikan Anda memiliki hal berikut:
+Sebelum memulai tutorial, pastikan Anda memiliki hal berikut:
 
-1.  Aspose.Words for .NET Library: Pastikan Anda telah menginstal perpustakaan Aspose.Words for .NET. Anda dapat mengunduhnya dari[situs web](https://releases.aspose.com/words/net/).
+1.  Pustaka Aspose.Words untuk .NET: Pastikan Anda telah menginstal pustaka Aspose.Words untuk .NET. Anda dapat mengunduhnya dari[situs web](https://releases.aspose.com/words/net/).
 
-2. Visual Studio: Versi Visual Studio apa pun yang mendukung pengembangan .NET. Pastikan Anda memiliki proyek .NET yang disiapkan di mana Anda dapat mengintegrasikan Aspose.Words.
+2. Visual Studio: Versi Visual Studio apa pun yang mendukung pengembangan .NET. Pastikan Anda telah menyiapkan proyek .NET tempat Anda dapat mengintegrasikan Aspose.Words.
 
-3. Pengetahuan Dasar C#: Keakraban dengan bahasa pemrograman C# dan kerangka .NET.
+3. Pengetahuan Dasar C#: Keakraban dengan bahasa pemrograman C# dan kerangka kerja .NET.
 
-4.  Lisensi Aspose: Jika Anda menggunakan versi berlisensi Aspose.Words, pastikan lisensi Anda dikonfigurasi dengan benar. Anda bisa mendapatkan[izin sementara](https://purchase.aspose.com/temporary-license/) jika diperlukan.
+4.  Lisensi Aspose: Jika Anda menggunakan versi berlisensi Aspose.Words, pastikan lisensi Anda dikonfigurasi dengan benar. Anda bisa mendapatkan lisensi[lisensi sementara](https://purchase.aspose.com/temporary-license/) jika diperlukan.
 
-5. Pemahaman tentang Bidang Kata: Pengetahuan tentang bidang Word, khususnya bidang IF, akan membantu tetapi tidak wajib.
+5. Pemahaman tentang Bidang Kata: Pengetahuan tentang bidang Kata, khususnya bidang IF, akan membantu namun tidak wajib.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Untuk memulai, Anda perlu mengimpor namespace yang diperlukan ke proyek C# Anda. Namespace ini memungkinkan Anda berinteraksi dengan perpustakaan Aspose.Words dan bekerja dengan dokumen Word.
+Untuk memulai, Anda perlu mengimpor namespace yang diperlukan ke dalam proyek C# Anda. Namespace ini memungkinkan Anda berinteraksi dengan pustaka Aspose.Words dan bekerja dengan dokumen Word.
 
 ```csharp
 using Aspose.Words;
@@ -36,67 +36,67 @@ using Aspose.Words.Fields;
 
 ## Langkah 1: Buat Dokumen Baru
 
- Pertama, Anda perlu membuat sebuah instance dari`DocumentBuilder` kelas. Kelas ini menyediakan metode untuk membuat dan memanipulasi dokumen Word secara terprogram.
+ Pertama, Anda perlu membuat instance dari`DocumentBuilder` Kelas ini menyediakan metode untuk membuat dan memanipulasi dokumen Word secara terprogram.
 
 ```csharp
-// Pembuatan pembuat dokumen.
+// Pembuatan generator dokumen.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
- Pada langkah ini, Anda menginisialisasi a`DocumentBuilder` objek, yang akan digunakan untuk menyisipkan dan memanipulasi bidang dalam dokumen.
+ Pada langkah ini, Anda menginisialisasi`DocumentBuilder` objek, yang akan digunakan untuk menyisipkan dan memanipulasi bidang dalam dokumen.
 
 ## Langkah 2: Masukkan Bidang IF
 
- Dengan`DocumentBuilder`instance sudah siap, langkah selanjutnya adalah memasukkan field IF ke dalam dokumen. Bidang IF memungkinkan Anda menentukan suatu kondisi dan menentukan keluaran yang berbeda berdasarkan apakah kondisi tersebut benar atau salah.
+ Dengan`DocumentBuilder`Jika instance sudah siap, langkah selanjutnya adalah memasukkan kolom IF ke dalam dokumen. Kolom IF memungkinkan Anda menentukan kondisi dan menentukan output yang berbeda berdasarkan apakah kondisi tersebut benar atau salah.
 
 ```csharp
-// Masukkan bidang IF ke dalam dokumen.
+// Masukkan kolom IF ke dalam dokumen.
 FieldIf field = (FieldIf)builder.InsertField("IF 1 = 1", null);
 ```
 
- Di Sini,`builder.InsertField` digunakan untuk menyisipkan bidang pada posisi kursor saat ini. Jenis bidang ditentukan sebagai`"IF 1 = 1"` , yang merupakan kondisi sederhana di mana 1 sama dengan 1. Nilainya akan selalu benar. Itu`null` parameter menandakan bahwa tidak diperlukan pemformatan tambahan untuk bidang tersebut.
+ Di Sini,`builder.InsertField` digunakan untuk memasukkan bidang pada posisi kursor saat ini. Jenis bidang ditentukan sebagai`"IF 1 = 1"` , yang merupakan kondisi sederhana di mana 1 sama dengan 1. Ini akan selalu bernilai benar.`null` parameter menandakan bahwa tidak ada pemformatan tambahan yang diperlukan untuk bidang tersebut.
 
-## Langkah 3: Evaluasi Kondisi IF
+## Langkah 3: Mengevaluasi Kondisi IF
 
- Setelah kolom IF dimasukkan, Anda perlu mengevaluasi kondisi untuk memeriksa apakah kondisinya benar atau salah. Ini dilakukan dengan menggunakan`EvaluateCondition` metode`FieldIf` kelas.
+ Setelah kolom IF dimasukkan, Anda perlu mengevaluasi kondisi untuk memeriksa apakah kondisi tersebut benar atau salah. Hal ini dilakukan dengan menggunakan`EvaluateCondition` metode dari`FieldIf` kelas.
 
 ```csharp
-// Evaluasi kondisi IF.
+// Mengevaluasi kondisi IF.
 FieldIfComparisonResult actualResult = field.EvaluateCondition();
 ```
 
- Itu`EvaluateCondition` metode mengembalikan a`FieldIfComparisonResult` enum yang mewakili hasil evaluasi kondisi. Enum ini dapat memiliki nilai seperti`True`, `False` , atau`Unknown`.
+Itu`EvaluateCondition` metode mengembalikan`FieldIfComparisonResult` enum yang mewakili hasil evaluasi kondisi. Enum ini dapat memiliki nilai seperti`True`, `False` , atau`Unknown`.
 
 ## Langkah 4: Tampilkan Hasilnya
 
-Terakhir, Anda dapat menampilkan hasil evaluasi. Hal ini membantu dalam memverifikasi apakah kondisi dievaluasi seperti yang diharapkan.
+Terakhir, Anda dapat menampilkan hasil evaluasi. Ini membantu dalam memverifikasi apakah kondisi dievaluasi seperti yang diharapkan.
 
 ```csharp
 //Menampilkan hasil evaluasi.
 Console.WriteLine(actualResult);
 ```
 
- Pada langkah ini, Anda menggunakan`Console.WriteLine` untuk menampilkan hasil evaluasi kondisi. Tergantung pada kondisi dan evaluasinya, Anda akan melihat hasilnya tercetak di konsol.
+ Pada langkah ini, Anda menggunakan`Console.WriteLine` untuk menampilkan hasil evaluasi kondisi. Bergantung pada kondisi dan evaluasinya, Anda akan melihat hasilnya tercetak di konsol.
 
 ## Kesimpulan
 
-Mengevaluasi kondisi IF di dokumen Word menggunakan Aspose.Words untuk .NET adalah cara ampuh untuk menambahkan konten dinamis berdasarkan kriteria tertentu. Dengan mengikuti panduan ini, Anda telah mempelajari cara membuat dokumen, menyisipkan kolom IF, mengevaluasi kondisinya, dan menampilkan hasilnya. Fungsionalitas ini berguna untuk menghasilkan laporan yang dipersonalisasi, dokumen dengan konten bersyarat, atau skenario apa pun yang memerlukan konten dinamis.
+Mengevaluasi kondisi IF dalam dokumen Word menggunakan Aspose.Words untuk .NET merupakan cara yang ampuh untuk menambahkan konten dinamis berdasarkan kriteria tertentu. Dengan mengikuti panduan ini, Anda telah mempelajari cara membuat dokumen, menyisipkan kolom IF, mengevaluasi kondisinya, dan menampilkan hasilnya. Fungsionalitas ini berguna untuk membuat laporan yang dipersonalisasi, dokumen dengan konten bersyarat, atau skenario apa pun yang memerlukan konten dinamis.
 
-Jangan ragu untuk bereksperimen dengan berbagai kondisi dan keluaran untuk memahami sepenuhnya cara memanfaatkan kolom IF di dokumen Anda.
+Jangan ragu untuk bereksperimen dengan berbagai kondisi dan keluaran untuk sepenuhnya memahami cara memanfaatkan kolom IF dalam dokumen Anda.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
-### Apa yang dimaksud dengan bidang IF di Aspose.Words untuk .NET?
-Bidang IF adalah bidang Word yang memungkinkan Anda memasukkan logika kondisional ke dalam dokumen Anda. Ini mengevaluasi suatu kondisi dan menampilkan konten yang berbeda berdasarkan apakah kondisi tersebut benar atau salah.
+### Apa itu kolom IF di Aspose.Words untuk .NET?
+Kolom IF adalah kolom Word yang memungkinkan Anda memasukkan logika kondisional ke dalam dokumen. Kolom ini mengevaluasi kondisi dan menampilkan konten yang berbeda berdasarkan apakah kondisi tersebut benar atau salah.
 
-### Bagaimana cara menyisipkan bidang IF ke dalam dokumen?
- Anda dapat menyisipkan kolom IF menggunakan`InsertField` metode`DocumentBuilder` kelas, menentukan kondisi yang ingin Anda evaluasi.
+### Bagaimana cara memasukkan kolom IF ke dalam dokumen?
+ Anda dapat memasukkan bidang IF menggunakan`InsertField` metode dari`DocumentBuilder` kelas, yang menentukan kondisi yang ingin Anda evaluasi.
 
-###  Apa artinya?`EvaluateCondition` method do?
- Itu`EvaluateCondition` Metode mengevaluasi kondisi yang ditentukan dalam bidang IF dan mengembalikan hasilnya, yang menunjukkan apakah kondisi tersebut benar atau salah.
+###  Apa itu`EvaluateCondition` method do?
+Itu`EvaluateCondition` metode mengevaluasi kondisi yang ditetapkan dalam bidang IF dan mengembalikan hasilnya, yang menunjukkan apakah kondisi tersebut benar atau salah.
 
-### Bisakah saya menggunakan kondisi kompleks dengan kolom IF?
+### Dapatkah saya menggunakan kondisi kompleks dengan kolom IF?
 Ya, Anda dapat menggunakan kondisi kompleks dengan bidang IF dengan menentukan ekspresi dan perbandingan yang berbeda sesuai kebutuhan.
 
-### Di mana saya dapat menemukan informasi selengkapnya tentang Aspose.Words untuk .NET?
+### Di mana saya dapat menemukan informasi lebih lanjut tentang Aspose.Words untuk .NET?
  Untuk informasi lebih lanjut, Anda dapat mengunjungi[Dokumentasi Aspose.Words](https://reference.aspose.com/words/net/), atau jelajahi sumber daya tambahan dan opsi dukungan yang disediakan oleh Aspose.

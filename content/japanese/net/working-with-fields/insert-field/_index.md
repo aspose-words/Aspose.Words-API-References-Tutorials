@@ -84,7 +84,7 @@ doc.Save(dataDir + "InsertionField.docx");
 
 ## 結論
 
-おめでとうございます! Aspose.Words for .NET を使用して Word 文書にフィールドを挿入する方法を学習しました。この強力なライブラリには、文書の自動化を簡単にする豊富な機能が用意されています。Aspose.Words が提供するさまざまな機能を試して探索してください。コーディングを楽しんでください!
+おめでとうございます! Aspose.Words for .NET を使用して Word 文書にフィールドを挿入する方法を学習しました。この強力なライブラリには、文書の自動化を簡単にする豊富な機能が用意されています。Aspose.Words が提供するさまざまな機能を試して探索し続けてください。コーディングを楽しんでください!
 
 ## よくある質問
 
@@ -92,7 +92,7 @@ doc.Save(dataDir + "InsertionField.docx");
 もちろんです! Aspose.Words は、MERGEFIELD、IF、INCLUDETEXT など、幅広いフィールドをサポートしています。
 
 ### ドキュメントに挿入されたフィールドをフォーマットするにはどうすればよいですか?  
-フィールドスイッチを使用してフィールドをフォーマットすることができます。たとえば、`\* MERGEFORMAT`フィールドに適用された書式を保持します。
+フィールドスイッチを使用してフィールドをフォーマットすることができます。たとえば、`\* MERGEFORMAT`フィールドに適用された書式設定を保持します。
 
 ### Aspose.Words for .NET は .NET Core と互換性がありますか?  
 はい、Aspose.Words for .NET は .NET Framework と .NET Core の両方と互換性があります。

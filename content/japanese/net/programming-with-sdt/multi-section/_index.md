@@ -13,7 +13,7 @@ Aspose.Words for .NET でマルチセクション構造化ドキュメント タ
 
 ## 前提条件
 
-コードに進む前に、次のものを用意しておいてください。
+コードに進む前に、次のものを用意してください。
 
 1.  Aspose.Words for .NET: Word文書を操作するにはAspose.Wordsライブラリが必要です。[Aspose.Words for .NET のダウンロード ページ](https://releases.aspose.com/words/net/).
 

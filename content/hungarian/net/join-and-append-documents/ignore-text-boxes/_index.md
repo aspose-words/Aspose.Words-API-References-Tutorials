@@ -114,7 +114,7 @@ Sikeresen egyesített két Word-dokumentumot az Aspose.Words for .NET használat
  Igen, letölthet egy ingyenes próbaverziót[itt](https://releases.aspose.com/).
 
 ### Hogyan szerezhetek ideiglenes licencet az Aspose.Words for .NET-hez?
- Kaphat ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).
+Kaphat ideiglenes engedélyt[itt](https://purchase.aspose.com/temporary-license/).
 
 ### Hol találok részletesebb dokumentációt?
  Az átfogó dokumentációt megtalálja[itt](https://reference.aspose.com/words/net/).

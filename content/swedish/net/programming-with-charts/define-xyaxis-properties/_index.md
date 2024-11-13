@@ -78,7 +78,7 @@ Nu är det dags att definiera egenskaperna för X-axeln. Detta inkluderar att st
 ChartAxis xAxis = chart.AxisX;
 xAxis.CategoryType = AxisCategoryType.Category;
 xAxis.Crosses = AxisCrosses.Custom;
-xAxis.CrossesAt = 3; //Mätt i displayenheter för Y-axeln (hundratals).
+xAxis.CrossesAt = 3; // Mätt i displayenheter för Y-axeln (hundratals).
 xAxis.ReverseOrder = true;
 xAxis.MajorTickMark = AxisTickMark.Cross;
 xAxis.MinorTickMark = AxisTickMark.Outside;
@@ -117,7 +117,7 @@ Att skapa och anpassa diagram i Word-dokument med Aspose.Words för .NET är enk
 Du kan skapa olika typer av diagram, inklusive område, stapel, linje, cirkel och mer.
 
 ### Hur installerar jag Aspose.Words för .NET?
- Du kan ladda ner Aspose.Words för .NET från[här](https://releases.aspose.com/words/net/) och följ installationsanvisningarna.
+ Du kan ladda ner Aspose.Words för .NET från[här](https://releases.aspose.com/words/net/)och följ installationsanvisningarna.
 
 ### Kan jag anpassa utseendet på mina diagram?
 Ja, Aspose.Words för .NET tillåter omfattande anpassning av diagram, inklusive färger, teckensnitt och axelegenskaper.

@@ -31,7 +31,7 @@ using Aspose.Words.Saving;
 
 ## 1. lépés: Hozzon létre egy új dokumentumot
 
-Kezdjük egy új Word-dokumentum létrehozásával. Ez az alap, amelyre gyönyörűen formázott dokumentumunkat építjük.
+Kezdjük egy új Word dokumentum létrehozásával. Ez az alap, amelyre gyönyörűen formázott dokumentumunkat építjük.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder();
@@ -66,50 +66,9 @@ builder.ParagraphFormat.StyleName = "Heading 3";
 builder.Writeln("Details");
 ```
 
-## További testreszabások hozzáadása
-
-### A betűtípus és a bekezdések testreszabása
-
-Tovább szabhatja a betűtípus- és bekezdésbeállításokat igényeinek megfelelően. Például a betűméret, a szín és az igazítás megváltoztatása.
-
-```csharp
-builder.Font.Size = 14;
-builder.Font.Color = System.Drawing.Color.Blue;
-builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-builder.Writeln("Centered Blue Heading");
-```
-
-### Tartalomjegyzék beszúrása
-
-Egy jól felépített dokumentum gyakran tartalmaz tartalomjegyzéket. Így illeszthet be egyet az Aspose.Words for .NET használatával.
-
-```csharp
-builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
-doc.UpdateFields();
-```
-
-### Képek hozzáadása
-
-A képek vonzóbbá tehetik a dokumentumot. Adjunk hozzá képet a dokumentumunkhoz.
-
-```csharp
-builder.InsertImage("YOUR DOCUMENT DIRECTORY/image.png");
-```
-
-### Dokumentumszakaszok használata
-
-A szakaszok segítenek a tartalom rendszerezésében, különösen akkor, ha a dokumentum különböző részeihez eltérő formázásra van szükség.
-
-```csharp
-Section section = doc.Sections.Add();
-DocumentBuilder sectionBuilder = new DocumentBuilder(section);
-sectionBuilder.ParagraphFormat.StyleName = "Heading 1";
-sectionBuilder.Writeln("New Section Heading");
-```
-
 ## Következtetés
 
-A jól formázott dokumentum elkészítése nem csak az esztétikáról szól; az olvashatóságot és a szakmaiságot is növeli. Az Aspose.Words for .NET segítségével egy hatékony eszköz áll rendelkezésére, amellyel ezt könnyedén elérheti. Kövesse ezt az útmutatót, kísérletezzen a különböző beállításokkal, és hamarosan profi lesz a dokumentumformázásban!
+jól formázott dokumentum elkészítése nem csak az esztétikáról szól; az olvashatóságot és a szakmaiságot is növeli. Az Aspose.Words for .NET segítségével egy hatékony eszköz áll rendelkezésére, amellyel ezt könnyedén elérheti. Kövesse ezt az útmutatót, kísérletezzen a különböző beállításokkal, és hamarosan profi lesz a dokumentumformázásban!
 
 ## GYIK
 

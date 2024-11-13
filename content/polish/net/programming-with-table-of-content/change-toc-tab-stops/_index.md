@@ -1,42 +1,42 @@
 ---
-title: Zmień tabulatory Toc w dokumencie programu Word
-linktitle: Zmień tabulatory Toc w dokumencie programu Word
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak zmieniać tabulatory spisu treści w dokumentach programu Word przy użyciu Aspose.Words dla .NET. Ten przewodnik krok po kroku pomoże Ci stworzyć profesjonalnie wyglądający spis treści.
+title: Zmiana tabulatorów spisu treści w dokumencie Word
+linktitle: Zmiana tabulatorów spisu treści w dokumencie Word
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak zmienić tabulatory spisu treści w dokumentach Worda za pomocą Aspose.Words dla .NET. Ten przewodnik krok po kroku pomoże Ci utworzyć profesjonalnie wyglądający spis treści.
 type: docs
 weight: 10
 url: /pl/net/programming-with-table-of-content/change-toc-tab-stops/
 ---
 ## Wstęp
 
-Czy zastanawiałeś się kiedyś, jak urozmaicić spis treści (TOC) w dokumentach programu Word? Może chcesz, aby te tabulatory były idealnie dopasowane, aby zapewnić profesjonalny wygląd. Jesteś we właściwym miejscu! Dzisiaj zagłębiamy się w to, jak zmieniać tabulatory spisu treści za pomocą Aspose.Words dla .NET. Zostań, a obiecuję, że wyjdziesz z całą wiedzą, jak sprawić, by Twój spis treści wyglądał efektownie i schludnie.
+Czy zastanawiałeś się kiedyś, jak urozmaicić spis treści (TOC) w dokumentach Word? Może chcesz, aby tabulatory były idealnie wyrównane, aby uzyskać profesjonalny efekt. Jesteś we właściwym miejscu! Dzisiaj zagłębimy się w to, jak możesz zmienić tabulatory TOC za pomocą Aspose.Words dla .NET. Zostań, a obiecuję, że wyjdziesz z tego ze wszystkimi umiejętnościami, aby Twój spis treści wyglądał elegancko i schludnie.
 
-## Warunki wstępne
+## Wymagania wstępne
 
 Zanim zaczniemy, upewnijmy się, że masz wszystko, czego potrzebujesz:
 
-1.  Aspose.Words dla .NET: Można[pobierz go tutaj](https://releases.aspose.com/words/net/).
-2. Środowisko programistyczne: Visual Studio lub dowolne IDE zgodne z C#.
-3. Dokument programu Word: w szczególności taki, który zawiera spis treści.
+1.  Aspose.Words dla .NET: Możesz[pobierz tutaj](https://releases.aspose.com/words/net/).
+2. Środowisko programistyczne: Visual Studio lub dowolne środowisko IDE zgodne z C#.
+3. Dokument Word: konkretnie taki, który zawiera spis treści.
 
-Masz to wszystko? Wspaniały! Rzućmy się.
+Zrozumiałeś wszystko? Super! Zaczynajmy.
 
 ## Importuj przestrzenie nazw
 
-Po pierwsze, musisz zaimportować niezbędne przestrzenie nazw. To jak pakowanie narzędzi przed rozpoczęciem projektu.
+Po pierwsze, musisz zaimportować niezbędne przestrzenie nazw. To tak, jakbyś pakował swoje narzędzia przed rozpoczęciem projektu.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Podzielmy ten proces na proste, zrozumiałe etapy. Przejdziemy przez ładowanie dokumentu, modyfikowanie tabulatorów spisu treści i zapisywanie zaktualizowanego dokumentu.
+Podzielmy ten proces na proste, przyswajalne kroki. Przejdziemy przez ładowanie dokumentu, modyfikowanie tabulatorów TOC i zapisywanie zaktualizowanego dokumentu.
 
 ## Krok 1: Załaduj dokument
 
-Dlaczego? Musimy uzyskać dostęp do dokumentu Word zawierającego spis treści, który chcemy zmodyfikować.
+Dlaczego? Musimy uzyskać dostęp do dokumentu Word, który zawiera spis treści, który chcemy zmodyfikować.
 
-Jak? Oto prosty fragment kodu na początek:
+Jak? Oto prosty fragment kodu, który pomoże Ci zacząć:
 
 ```csharp
 // Ścieżka do katalogu dokumentów
@@ -46,13 +46,13 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Table of contents.docx");
 ```
 
-Wyobraź sobie, że Twój dokument jest jak ciasto, a my zaraz dodamy trochę lukru. Pierwszym krokiem jest wyjęcie ciasta z pudełka.
+Wyobraź sobie, że Twój dokument jest jak ciasto, a my zaraz dodamy trochę lukru. Pierwszym krokiem jest wyjęcie tego ciasta z pudełka.
 
 ## Krok 2: Zidentyfikuj akapity spisu treści
 
-Dlaczego? Musimy wskazać akapity tworzące spis treści. 
+Dlaczego? Musimy wskazać akapity, które tworzą spis treści. 
 
-Jak? Przejrzyj akapity i sprawdź ich styl:
+Jak? Przejrzyj akapity i sprawdź ich style:
 
 ```csharp
 foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
@@ -65,11 +65,11 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-Pomyśl o tym jak o skanowaniu tłumu w celu znalezienia przyjaciół. Tutaj szukamy akapitów stylizowanych na wpisy w spisie treści.
+Wyobraź sobie skanowanie tłumu w poszukiwaniu znajomych. Tutaj szukamy akapitów stylizowanych na wpisy TOC.
 
-## Krok 3: Zmodyfikuj tabulatory
+## Krok 3: Modyfikowanie tabulatorów
 
-Dlaczego? To tutaj dzieje się magia. Zmiana tabulatorów nadaje spisowi treści bardziej przejrzysty wygląd.
+Dlaczego? To właśnie tutaj dzieje się magia. Zmiana tabulatorów nadaje spisowi treści czystszy wygląd.
 
 Jak? Usuń istniejący tabulator i dodaj nowy w zmodyfikowanej pozycji:
 
@@ -86,38 +86,38 @@ foreach(Paragraph para in doc.GetChildNodes(NodeType.Paragraph, true))
 }
 ```
 
-To jak dostosowywanie mebli w salonie, aż będą odpowiednie. Poprawiamy te tabulatory, aby były idealne.
+To jak ustawianie mebli w salonie, aż będą idealnie dopasowane. Dopracowujemy te ograniczniki, aby były idealne.
 
 ## Krok 4: Zapisz zmodyfikowany dokument
 
 Dlaczego? Aby mieć pewność, że cała Twoja ciężka praca zostanie zapisana i będzie można ją przeglądać lub udostępniać.
 
-Jak? Zapisz dokument pod nową nazwą, aby zachować oryginał:
+Jak? Zapisz dokument pod nową nazwą, aby zachować oryginał w nienaruszonym stanie:
 
 ```csharp
 // Zapisz zmodyfikowany dokument
 doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 ```
 
-I voila! Twój spis treści zawiera teraz tabulatory dokładnie tam, gdzie chcesz.
+I voila! Twój spis treści ma teraz tabulatory dokładnie tam, gdzie chcesz.
 
 ## Wniosek
 
-Zmiana tabulatorów spisu treści w dokumencie programu Word za pomocą Aspose.Words dla .NET jest prosta po podzieleniu na części. Ładując dokument, identyfikując akapity spisu treści, modyfikując tabulatory i zapisując dokument, możesz uzyskać dopracowany i profesjonalny wygląd. Pamiętaj, że praktyka czyni mistrza, więc eksperymentuj z różnymi pozycjami tabulatorów, aby uzyskać dokładnie taki układ, jakiego pragniesz.
+Zmiana tabulatorów TOC w dokumencie Word przy użyciu Aspose.Words dla .NET jest prosta, gdy już się ją rozłoży. Ładując dokument, identyfikując akapity TOC, modyfikując tabulatory i zapisując dokument, można uzyskać dopracowany i profesjonalny wygląd. Pamiętaj, że praktyka czyni mistrza, więc eksperymentuj z różnymi pozycjami tabulatorów, aby uzyskać dokładnie taki układ, jakiego pragniesz.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Czy mogę oddzielnie modyfikować tabulatory dla różnych poziomów spisu treści?
-Tak, możesz! Po prostu sprawdź każdy konkretny poziom TOC (Toc1, Toc2 itp.) i odpowiednio dostosuj.
+### Czy mogę modyfikować tabulatory dla różnych poziomów spisu treści osobno?
+Tak, możesz! Wystarczy sprawdzić każdy konkretny poziom TOC (Toc1, Toc2 itd.) i odpowiednio dostosować.
 
-### Co się stanie, jeśli mój dokument zawiera wiele spisów treści?
-Kod skanuje wszystkie akapity ze stylem TOC, zatem modyfikuje wszystkie spisy treści obecne w dokumencie.
+### Co zrobić, jeśli mój dokument ma wiele spisów treści?
+Kod skanuje wszystkie akapity ze stylem TOC, więc zmodyfikuje wszystkie spisy treści obecne w dokumencie.
 
-### Czy można dodać wiele tabulatorów we wpisie spisu treści?
- Absolutnie! Możesz dodać dowolną liczbę tabulatorów, dostosowując opcję`para.ParagraphFormat.TabStops` kolekcja.
+### Czy można dodać wiele tabulatorów do wpisu w spisie treści?
+ Oczywiście! Możesz dodać tyle tabulatorów, ile potrzebujesz, dostosowując`para.ParagraphFormat.TabStops` kolekcja.
 
 ### Czy mogę zmienić wyrównanie tabulatora i styl linii wiodącej?
-Tak, podczas dodawania nowego tabulatora można określić różne wyrównania i style linii wiodących.
+Tak, możesz określić różne wyrównania i style linii odniesienia podczas dodawania nowego tabulatora.
 
 ### Czy potrzebuję licencji, aby używać Aspose.Words dla .NET?
- Tak, potrzebujesz ważnej licencji, aby używać Aspose.Words dla .NET po okresie próbnym. Możesz zdobyć[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) Lub[kup jeden](https://purchase.aspose.com/buy).
+ Tak, potrzebujesz ważnej licencji, aby używać Aspose.Words dla .NET po okresie próbnym. Możesz uzyskać[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) Lub[kup jeden](https://purchase.aspose.com/buy).

@@ -104,7 +104,7 @@ DigitalSignatureUtil.Sign(dataDir + "SignDocuments.SignatureLine.docx",
 ### 署名欄に他の画像形式を使用できますか?
 はい、PNG、JPG、BMP などのさまざまな画像形式を使用できます。
 
-### 使用する必要がありますか？`.pfx` file for the certificate?
+### 使用する必要があるか`.pfx` file for the certificate?
 はい、`.pfx`ファイルは、証明書や秘密鍵などの暗号化情報を保存するための一般的な形式です。
 
 ### 1 つの文書に複数の署名行を追加できますか?

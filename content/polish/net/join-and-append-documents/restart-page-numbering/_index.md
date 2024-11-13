@@ -1,55 +1,55 @@
 ---
-title: Uruchom ponownie numerowanie stron
-linktitle: Uruchom ponownie numerowanie stron
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak ponownie uruchomić numerowanie stron podczas łączenia i dołączania dokumentów programu Word za pomocą Aspose.Words dla .NET.
+title: Uruchom ponownie numerację stron
+linktitle: Uruchom ponownie numerację stron
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak ponownie uruchomić numerację stron podczas łączenia i dopisywania dokumentów programu Word za pomocą pakietu Aspose.Words dla platformy .NET.
 type: docs
 weight: 10
 url: /pl/net/join-and-append-documents/restart-page-numbering/
 ---
 ## Wstęp
 
-Czy kiedykolwiek miałeś trudności ze stworzeniem dopracowanego dokumentu z odrębnymi sekcjami, z których każda zaczynała się od strony numer 1? Wyobraź sobie raport, w którym rozdziały zaczynają się od nowa, lub obszerną propozycję z oddzielnymi sekcjami na streszczenie i szczegółowe załączniki. Aspose.Words dla .NET, potężna biblioteka do przetwarzania dokumentów, umożliwia osiągnięcie tego z finezją. Ten obszerny przewodnik odkryje tajemnice ponownego uruchamiania numeracji stron, umożliwiając łatwe tworzenie profesjonalnie wyglądających dokumentów.
+Czy kiedykolwiek miałeś problem ze stworzeniem dopracowanego dokumentu z odrębnymi sekcjami, z których każda zaczyna się od numeru strony 1? Wyobraź sobie raport, w którym rozdziały zaczynają się od nowa, lub długą propozycję z oddzielnymi sekcjami dla streszczenia i szczegółowych załączników. Aspose.Words for .NET, potężna biblioteka przetwarzania dokumentów, umożliwia osiągnięcie tego z finezją. Ten kompleksowy przewodnik ujawni sekrety ponownego numerowania stron, wyposażając Cię w narzędzia do tworzenia profesjonalnie wyglądających dokumentów bez wysiłku.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Przed wyruszeniem w tę podróż upewnij się, że posiadasz:
+Zanim wyruszysz w podróż, upewnij się, że masz:
 
-1.  Aspose.Words dla .NET: Pobierz bibliotekę z oficjalnej strony internetowej[Pobierz link](https://releases.aspose.com/words/net/) . Możesz skorzystać z bezpłatnego okresu próbnego[Bezpłatny link próbny](https://releases.aspose.com/) lub kup licencję[Kup link](https://purchase.aspose.com/buy) w oparciu o Twoje potrzeby.
-2. Środowisko programistyczne AC#: Visual Studio lub dowolne środowisko obsługujące rozwój .NET będzie działać idealnie.
+1.  Aspose.Words dla .NET: Pobierz bibliotekę z oficjalnej strony internetowej[Link do pobrania](https://releases.aspose.com/words/net/) . Możesz wypróbować bezpłatną wersję próbną[Link do bezpłatnej wersji próbnej](https://releases.aspose.com/) lub kup licencję[Kup link](https://purchase.aspose.com/buy) w oparciu o Twoje potrzeby.
+2. Środowisko programistyczne AC#: Visual Studio lub dowolne środowisko obsługujące programowanie .NET sprawdzi się doskonale.
 3. Przykładowy dokument: Znajdź dokument programu Word, z którym chcesz poeksperymentować.
 
-## Importowanie podstawowych przestrzeni nazw
+## Importowanie niezbędnych przestrzeni nazw
 
-Aby wchodzić w interakcję z obiektami i funkcjonalnościami Aspose.Words, musimy zaimportować niezbędne przestrzenie nazw. Oto jak to zrobić:
+Aby wchodzić w interakcje z obiektami i funkcjonalnościami Aspose.Words, musimy zaimportować niezbędne przestrzenie nazw. Oto jak to zrobić:
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Settings;
 ```
 
- Ten fragment kodu importuje plik`Aspose.Words` przestrzeni nazw, która zapewnia dostęp do podstawowych klas manipulacji dokumentami. Dodatkowo importujemy`Aspose.Words.Settings` przestrzeni nazw, oferując opcje dostosowywania zachowania dokumentu.
+ Ten fragment kodu importuje`Aspose.Words` przestrzeń nazw, która zapewnia dostęp do podstawowych klas manipulacji dokumentami. Ponadto importujemy`Aspose.Words.Settings` przestrzeń nazw, oferująca opcje dostosowywania zachowania dokumentu.
 
 
 Przyjrzyjmy się teraz praktycznym krokom związanym z ponownym uruchomieniem numeracji stron w dokumentach:
 
 ## Krok 1: Załaduj dokumenty źródłowe i docelowe:
 
- Zdefiniuj zmienną łańcuchową`dataDir` aby zapisać ścieżkę do katalogu dokumentów. Zastąp „TWOJ KATALOG DOKUMENTÓW” rzeczywistą lokalizacją.
+Zdefiniuj zmienną ciągu`dataDir` aby zapisać ścieżkę do katalogu dokumentów. Zastąp „TWOJEGO KATALOGU DOKUMENTÓW” rzeczywistą lokalizacją.
 
- Utwórz dwa`Document` obiekty za pomocą`Aspose.Words.Document`konstruktor. Pierwszy (`srcDoc`) będzie zawierać dokument źródłowy zawierający treść, która ma zostać dołączona. Drugi (`dstDoc`) reprezentuje dokument docelowy, w którym zintegrujemy treść źródłową z ponownie uruchomioną numeracją stron.
+ Utwórz dwa`Document` obiekty korzystające z`Aspose.Words.Document` konstruktor. Pierwszy (`srcDoc`) będzie zawierać dokument źródłowy zawierający treść do dołączenia. Drugi (`dstDoc`) reprezentuje dokument docelowy, w którym zintegrujemy zawartość źródłową z nową numeracją stron.
 
 ```csharp
-string dataDir = @"C:\MyDocuments\"; // Zamień na rzeczywisty katalog
+string dataDir = @"C:\MyDocuments\"; // Zastąp swoim aktualnym katalogiem
 Document srcDoc = new Document(dataDir + "source.docx");
 Document dstDoc = new Document(dataDir + "destination.docx");
 ```
 
 ## Krok 2: Konfigurowanie podziału sekcji:
 
- Uzyskaj dostęp do`FirstSection` właściwość dokumentu źródłowego (`srcDoc`), aby manipulować sekcją początkową. W tej sekcji zostanie wznowiona numeracja stron.
+ Uzyskaj dostęp do`FirstSection` właściwość dokumentu źródłowego (`srcDoc`) aby manipulować sekcją początkową. Ta sekcja będzie miała ponownie uruchomioną numerację stron.
 
- Skorzystaj z`PageSetup` właściwość sekcji, aby skonfigurować jej zachowanie w układzie.
+ Wykorzystaj`PageSetup` właściwość sekcji umożliwiająca konfigurację jej zachowania układu.
 
  Ustaw`SectionStart` własność`PageSetup` Do`SectionStart.NewPage`. Dzięki temu nowa strona zostanie utworzona przed dołączeniem treści źródłowej do dokumentu docelowego.
 
@@ -57,9 +57,9 @@ Document dstDoc = new Document(dataDir + "destination.docx");
 srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.NewPage;
 ```
 
-## Krok 3: Włączenie ponownego uruchomienia numeracji stron:
+## Krok 3: Włączanie ponownego uruchamiania numerowania stron:
 
- W tym samym`PageSetup` obiekt pierwszej sekcji dokumentu źródłowego, ustaw`RestartPageNumbering`własność do`true`. Ten kluczowy krok instruuje Aspose.Words, aby ponownie zainicjował numerację stron dla dołączonej treści.
+ W tym samym`PageSetup` obiekt pierwszej sekcji dokumentu źródłowego, ustaw`RestartPageNumbering`nieruchomość do`true`Ten kluczowy krok nakazuje Aspose.Words ponowne zainicjowanie numeracji stron dla dołączonej zawartości.
 
 ```csharp
 srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
@@ -67,11 +67,11 @@ srcDoc.FirstSection.PageSetup.RestartPageNumbering = true;
 
 ## Krok 4: Dołączanie dokumentu źródłowego:
 
-Teraz, gdy dokument źródłowy jest już przygotowany z żądaną konfiguracją podziału strony i numeracji, czas zintegrować go z dokumentem docelowym.
+Teraz, gdy dokument źródłowy jest już przygotowany z odpowiednim podziałem stron i konfiguracją numeracji, czas zintegrować go z dokumentem docelowym.
 
- Zatrudnij`AppendDocument` metoda dokumentu docelowego (`dstDoc`), aby płynnie dodać treść źródłową.
+ Zatrudnij`AppendDocument` metoda dokumentu docelowego (`dstDoc`) aby płynnie dodać treść źródłową.
 
-Przekaż dokument źródłowy (`srcDoc` ) i`ImportFormatMode.KeepSourceFormatting` argument tej metody. Argument ten zachowuje oryginalne formatowanie dokumentu źródłowego po dołączeniu.
+Przekaż dokument źródłowy (`srcDoc` ) i`ImportFormatMode.KeepSourceFormatting` argument do tej metody. Ten argument zachowuje oryginalne formatowanie dokumentu źródłowego po dołączeniu.
 
 ```csharp
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
@@ -79,7 +79,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Krok 5: Zapisywanie dokumentu końcowego:
 
- Na koniec skorzystaj z`Save` metoda dokumentu docelowego (`dstDoc`) do przechowywania połączonego dokumentu z wznowioną numeracją stron. Określ odpowiednią nazwę pliku i lokalizację zapisanego dokumentu.
+ Na koniec wykorzystaj`Save` metoda dokumentu docelowego (`dstDoc`) aby zapisać połączony dokument z ponownym numerowaniem stron. Określ odpowiednią nazwę pliku i lokalizację dla zapisanego dokumentu.
 
 ```csharp
 dstDoc.Save(dataDir + "final_document.docx");
@@ -87,26 +87,26 @@ dstDoc.Save(dataDir + "final_document.docx");
 
 ## Wniosek
 
-Podsumowując, opanowanie podziału stron i numeracji w Aspose.Words dla .NET umożliwia tworzenie dopracowanych i dobrze zorganizowanych dokumentów. Stosując techniki opisane w tym przewodniku, możesz płynnie zintegrować treść z wznowioną numeracją stron, zapewniając profesjonalną i przyjazną dla czytelnika prezentację. Pamiętaj, że Aspose.Words oferuje mnóstwo dodatkowych funkcji do manipulacji dokumentami.
+Podsumowując, opanowanie podziału stron i numeracji w Aspose.Words dla .NET pozwala tworzyć dopracowane i dobrze ustrukturyzowane dokumenty. Wdrażając techniki opisane w tym przewodniku, możesz bezproblemowo zintegrować treść z ponownym numerowaniem stron, zapewniając profesjonalną i przyjazną dla czytelnika prezentację. Pamiętaj, że Aspose.Words oferuje bogactwo dodatkowych funkcji do manipulacji dokumentami.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Czy mogę wznowić numerację stron w środku sekcji?
+### Czy mogę rozpocząć numerację stron od nowa w środku sekcji?
 
- Niestety, Aspose.Words dla .NET nie obsługuje bezpośrednio ponownego uruchamiania numeracji stron w ramach pojedynczej sekcji. Podobny efekt można jednak osiągnąć tworząc nową sekcję w żądanym miejscu i ustawieniu`RestartPageNumbering` Do`true` dla tej sekcji.
+ Niestety, Aspose.Words dla .NET nie obsługuje bezpośrednio ponownego numerowania stron w obrębie pojedynczej sekcji. Podobny efekt można jednak uzyskać, tworząc nową sekcję w żądanym punkcie i ustawiając`RestartPageNumbering` Do`true` dla tej sekcji.
 
 ### Jak mogę dostosować numer strony początkowej po ponownym uruchomieniu?
 
- Chociaż podany kod inicjuje numerację od 1, możesz go dostosować. Skorzystaj z`PageNumber` własność`HeaderFooter` obiekt w nowej sekcji. Ustawienie tej właściwości umożliwia zdefiniowanie numeru strony początkowej.
+ Podczas gdy podany kod inicjuje numerowanie od 1, możesz go dostosować. Wykorzystaj`PageNumber` własność`HeaderFooter` obiekt w nowej sekcji. Ustawienie tej właściwości pozwala zdefiniować numer strony początkowej.
 
-### Co stanie się z istniejącymi numerami stron w dokumencie źródłowym?
+### Co się stanie z istniejącymi numerami stron w dokumencie źródłowym?
 
-Istniejące numery stron w dokumencie źródłowym pozostają niezmienione. Numerowanie zostanie wznowione tylko dla treści dołączonej w dokumencie docelowym.
+Istniejące numery stron w dokumencie źródłowym pozostają niezmienione. Tylko dołączona zawartość w dokumencie docelowym będzie miała ponownie uruchomioną numerację.
 
-### Czy mogę zastosować różne formaty numeracji (np. cyfry rzymskie)?
+### Czy mogę stosować różne formaty numeracji (np. cyfry rzymskie)?
 
- Absolutnie! Aspose.Words oferuje szeroką kontrolę nad formatami numeracji stron. Poznaj`NumberStyle` własność`HeaderFooter` obiekt do wyboru spośród różnych stylów numerowania, takich jak cyfry rzymskie, litery lub formaty niestandardowe.
+ Oczywiście! Aspose.Words oferuje rozległą kontrolę nad formatami numeracji stron. Przeglądaj`NumberStyle` własność`HeaderFooter` obiekt umożliwiający wybór spośród różnych stylów numeracji, takich jak cyfry rzymskie, litery lub formaty niestandardowe.
 
-### Gdzie mogę znaleźć dalsze zasoby i pomoc?
+### Gdzie mogę znaleźć dalsze zasoby lub pomoc?
 
- Aspose zapewnia kompleksowy portal dokumentacji[Link do dokumentacji](https://reference.aspose.com/words/net/) który zagłębia się w funkcje numerowania stron i inne funkcje Aspose.Words. Dodatkowo ich aktywne forum[Link do wsparcia](https://forum.aspose.com/c/words/8) to świetna platforma do łączenia się ze społecznością programistów i szukania pomocy w przypadku konkretnych wyzwań.
+ Aspose zapewnia kompleksowy portal dokumentacji[Link do dokumentacji](https://reference.aspose.com/words/net/) który zagłębia się w funkcjonalności numerowania stron i inne funkcje Aspose.Words. Ponadto ich aktywne forum[Link do pomocy technicznej](https://forum.aspose.com/c/words/8) jest doskonałą platformą do nawiązywania kontaktów ze społecznością programistów i szukania pomocy w rozwiązywaniu konkretnych problemów.

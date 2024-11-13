@@ -143,6 +143,6 @@ Absolut! Du kan rotera textens vattenstämpel genom att ställa in egenskapen ro
 
 ### Är Aspose.Words för Python lämplig för både Windows och Linux?
 
-Ja, Aspose.Words för Python är kompatibel med både Windows- och Linux-miljöer.
+Ja, Aspose.Words för Python är kompatibelt med både Windows- och Linux-miljöer.
 
  För mer information och omfattande API-referenser, besök Aspose.Words-dokumentationen:[Aspose.Words för Python API-referenser](https://reference.aspose.com/words/python-net/)

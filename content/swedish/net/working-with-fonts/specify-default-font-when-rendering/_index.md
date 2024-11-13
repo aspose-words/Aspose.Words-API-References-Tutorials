@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Steg 2: Ladda ditt dokument
 
-Ladda sedan in dokumentet du vill rendera. I det här exemplet använder vi en fil med namnet "Rendering.docx".
+Ladda sedan dokumentet du vill rendera. I det här exemplet använder vi en fil med namnet "Rendering.docx".
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");

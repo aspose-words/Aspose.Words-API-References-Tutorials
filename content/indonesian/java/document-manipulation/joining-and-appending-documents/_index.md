@@ -2,23 +2,23 @@
 title: Menggabungkan dan Menambahkan Dokumen di Aspose.Words untuk Java
 linktitle: Menggabungkan dan Menambahkan Dokumen
 second_title: API Pemrosesan Dokumen Java Aspose.Words
-description: Pelajari cara menggabungkan dan menambahkan dokumen dengan mudah menggunakan Aspose.Words untuk Java. Pertahankan pemformatan, kelola header dan footer, dan banyak lagi.
+description: Pelajari cara menggabungkan dan menambahkan dokumen dengan mudah menggunakan Aspose.Words untuk Java. Pertahankan format, kelola header, footer, dan banyak lagi.
 type: docs
 weight: 30
 url: /id/java/document-manipulation/joining-and-appending-documents/
 ---
 
-## Pengantar Menggabungkan dan Menambahkan Dokumen di Aspose.Words untuk Java
+## Pengantar Penggabungan dan Penambahan Dokumen di Aspose.Words untuk Java
 
-Dalam tutorial ini, kita akan menjelajahi cara menggabungkan dan menambahkan dokumen menggunakan pustaka Aspose.Words untuk Java. Anda akan mempelajari cara menggabungkan beberapa dokumen dengan mulus sambil mempertahankan format dan struktur.
+Dalam tutorial ini, kita akan mempelajari cara menggabungkan dan menambahkan dokumen menggunakan pustaka Aspose.Words untuk Java. Anda akan mempelajari cara menggabungkan beberapa dokumen dengan lancar sambil mempertahankan format dan struktur.
 
 ## Prasyarat
 
-Sebelum kita mulai, pastikan Anda telah menyiapkan Aspose.Words for Java API di proyek Java Anda.
+Sebelum memulai, pastikan Anda telah menyiapkan Aspose.Words untuk Java API di proyek Java Anda.
 
 ## Opsi Penggabungan Dokumen
 
-### Tambahkan Sederhana
+### Penambahan Sederhana
 
 ```java
 Document srcDoc = new Document("source.docx");
@@ -55,7 +55,7 @@ dstDoc.updatePageLayout(); // Perbarui tata letak halaman untuk penomoran yang b
 
 ## Menangani Pengaturan Halaman yang Berbeda
 
-Saat menambahkan dokumen dengan pengaturan halaman berbeda:
+Saat menambahkan dokumen dengan pengaturan halaman yang berbeda:
 
 ```java
 srcDoc.getFirstSection().getPageSetup().setSectionStart(SectionStart.CONTINUOUS);
@@ -109,7 +109,7 @@ srcDoc.getFirstSection().getHeadersFooters().linkToPrevious(true);
 dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 ```
 
-### Membatalkan Tautan Header dan Footer
+### Memutuskan Tautan Header dan Footer
 
 ```java
 srcDoc.getFirstSection().getHeadersFooters().linkToPrevious(false);
@@ -118,13 +118,13 @@ dstDoc.appendDocument(srcDoc, ImportFormatMode.KEEP_SOURCE_FORMATTING);
 
 ## Kesimpulan
 
-Aspose.Words untuk Java menyediakan alat yang fleksibel dan canggih untuk menggabungkan dan menambahkan dokumen, baik Anda perlu mempertahankan pemformatan, menangani pengaturan halaman yang berbeda, atau mengelola header dan footer. Bereksperimenlah dengan teknik ini untuk memenuhi kebutuhan spesifik pemrosesan dokumen Anda.
+Aspose.Words untuk Java menyediakan alat yang fleksibel dan canggih untuk menggabungkan dan menambahkan dokumen, baik Anda perlu mempertahankan format, menangani pengaturan halaman yang berbeda, atau mengelola header dan footer. Bereksperimenlah dengan teknik-teknik ini untuk memenuhi kebutuhan pemrosesan dokumen spesifik Anda.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
-### Bagaimana cara menggabungkan dokumen dengan gaya berbeda dengan lancar?
+### Bagaimana cara menggabungkan dokumen dengan gaya berbeda dengan mudah?
 
- Untuk menggabungkan dokumen dengan gaya berbeda, gunakan`ImportFormatMode.USE_DESTINATION_STYLES` saat menambahkan.
+ Untuk menggabungkan dokumen dengan gaya yang berbeda, gunakan`ImportFormatMode.USE_DESTINATION_STYLES` saat menambahkan.
 
 ### Bisakah saya mempertahankan penomoran halaman saat menambahkan dokumen?
 
@@ -132,12 +132,12 @@ Aspose.Words untuk Java menyediakan alat yang fleksibel dan canggih untuk mengga
 
 ### Apa itu Perilaku Gaya Cerdas?
 
- Smart Style Behavior membantu mempertahankan gaya yang konsisten saat menambahkan dokumen. Gunakan dengan`ImportFormatOptions` untuk hasil yang lebih baik.
+ Perilaku Gaya Cerdas membantu mempertahankan gaya yang konsisten saat menambahkan dokumen. Gunakan dengan`ImportFormatOptions` untuk hasil yang lebih baik.
 
-### Bagaimana cara menangani kotak teks saat menambahkan dokumen?
+### Bagaimana saya dapat menangani kotak teks saat menambahkan dokumen?
 
 Mengatur`importFormatOptions.setIgnoreTextBoxes(false)` untuk menyertakan kotak teks selama penambahan.
 
-### Bagaimana jika saya ingin menautkan/membatalkan tautan header dan footer antar dokumen?
+### Bagaimana jika saya ingin menautkan/melepas tautan header dan footer antar dokumen?
 
- Anda dapat menautkan header dan footer dengan`linkToPrevious(true)` atau putuskan tautannya`linkToPrevious(false)` sesuai kebutuhan.
+ Anda dapat menghubungkan header dan footer dengan`linkToPrevious(true)` atau putuskan tautannya dengan`linkToPrevious(false)` sesuai kebutuhan.

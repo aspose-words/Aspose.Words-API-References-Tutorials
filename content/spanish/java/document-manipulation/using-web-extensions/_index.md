@@ -1,8 +1,8 @@
 ---
 title: Uso de extensiones web en Aspose.Words para Java
-linktitle: Usando extensiones web
+linktitle: Uso de extensiones web
 second_title: API de procesamiento de documentos Java Aspose.Words
-description: Mejore documentos con extensiones web en Aspose.Words para Java. Aprenda a integrar contenido basado en web sin problemas.
+description: Mejore los documentos con extensiones web en Aspose.Words para Java. Aprenda a integrar contenido basado en la web sin problemas.
 type: docs
 weight: 33
 url: /es/java/document-manipulation/using-web-extensions/
@@ -10,17 +10,17 @@ url: /es/java/document-manipulation/using-web-extensions/
 
 ## Introducción al uso de extensiones web en Aspose.Words para Java
 
-En este tutorial, exploraremos cómo usar extensiones web en Aspose.Words para Java para mejorar la funcionalidad de su documento. Las extensiones web le permiten integrar contenido y aplicaciones basadas en web directamente en sus documentos. Cubriremos los pasos para agregar un panel de tareas de extensión web a un documento, establecer sus propiedades y recuperar información sobre él.
+En este tutorial, exploraremos cómo usar extensiones web en Aspose.Words para Java para mejorar la funcionalidad de su documento. Las extensiones web le permiten integrar contenido y aplicaciones basadas en la web directamente en sus documentos. Cubriremos los pasos para agregar un panel de tareas de extensión web a un documento, establecer sus propiedades y recuperar información sobre él.
 
-## Requisitos previos
+## Prerrequisitos
 
- Antes de comenzar, asegúrese de tener Aspose.Words para Java configurado en su proyecto. Puedes descargarlo desde[aquí](https://releases.aspose.com/words/java/).
+ Antes de comenzar, asegúrese de tener Aspose.Words para Java instalado en su proyecto. Puede descargarlo desde[aquí](https://releases.aspose.com/words/java/).
 
-## Agregar un panel de tareas de extensión web
+## Cómo agregar un panel de tareas de extensión web
 
 Para agregar un panel de tareas de extensión web a un documento, siga estos pasos:
 
-## Crea un nuevo documento:
+## Crear un nuevo documento:
 
 ```java
 Document doc = new Document();
@@ -45,7 +45,7 @@ taskPane.getWebExtension().getReference().setStoreType(WebExtensionStoreType.OME
 taskPane.getWebExtension().getReference().setStore("th-TH");
 ```
 
-## Agregue propiedades y enlaces a la extensión web:
+## Agregar propiedades y enlaces a la extensión web:
 
 ```java
 taskPane.getWebExtension().getProperties().add(new WebExtensionProperty("mailchimpCampaign", "mailchimpCampaign"));
@@ -53,15 +53,15 @@ taskPane.getWebExtension().getBindings().add(new WebExtensionBinding("UnnamedBin
    WebExtensionBindingType.TEXT, "194740422"));
 ```
 
-## Guarde el documento:
+## Guardar el documento:
 
 ```java
 doc.save("Your Directory Path" + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
 ```
 
-## Recuperar información del panel de tareas
+## Recuperación de información del panel de tareas
 
-Para recuperar información sobre los paneles de tareas del documento, puede recorrerlos en iteración y acceder a sus referencias:
+Para recuperar información sobre los paneles de tareas en el documento, puede iterarlos y acceder a sus referencias:
 
 ```java
 doc = new Document("Your Directory Path" + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
@@ -77,30 +77,30 @@ Este fragmento de código recupera e imprime información sobre cada panel de ta
 
 ## Conclusión
 
-En este tutorial, aprendió cómo usar extensiones web en Aspose.Words para Java para mejorar sus documentos con contenido y aplicaciones basadas en web. Ahora puede agregar paneles de tareas de extensiones web, establecer sus propiedades y recuperar información sobre ellos. Explore más e integre extensiones web para crear documentos dinámicos e interactivos adaptados a sus necesidades.
+En este tutorial, aprendió a usar extensiones web en Aspose.Words para Java para mejorar sus documentos con contenido y aplicaciones basados en la web. Ahora puede agregar paneles de tareas de extensiones web, configurar sus propiedades y recuperar información sobre ellos. Explore más e integre extensiones web para crear documentos dinámicos e interactivos adaptados a sus necesidades.
 
 ## Preguntas frecuentes
 
 ### ¿Cómo agrego varios paneles de tareas de extensión web a un documento?
 
-Para agregar varios paneles de tareas de extensión web a un documento, puede seguir los mismos pasos que se mencionan en el tutorial para agregar un único panel de tareas. Simplemente repita el proceso para cada panel de tareas que desee incluir en el documento. Cada panel de tareas puede tener su propio conjunto de propiedades y enlaces, lo que brinda flexibilidad para integrar contenido basado en web en su documento.
+Para agregar varios paneles de tareas de extensión web a un documento, puede seguir los mismos pasos que se mencionan en el tutorial para agregar un solo panel de tareas. Simplemente repita el proceso para cada panel de tareas que desee incluir en el documento. Cada panel de tareas puede tener su propio conjunto de propiedades y enlaces, lo que brinda flexibilidad para integrar contenido basado en web en su documento.
 
-### ¿Puedo personalizar la apariencia y el comportamiento del panel de tareas de una extensión web?
+### ¿Puedo personalizar la apariencia y el comportamiento de un panel de tareas de una extensión web?
 
-Sí, puede personalizar la apariencia y el comportamiento del panel de tareas de una extensión web. Puede ajustar propiedades como el ancho del panel de tareas, el estado del acoplamiento y la visibilidad, como se demuestra en el tutorial. Además, puede trabajar con las propiedades y enlaces de la extensión web para controlar su comportamiento e interacción con el contenido del documento.
+Sí, puedes personalizar la apariencia y el comportamiento del panel de tareas de una extensión web. Puedes ajustar propiedades como el ancho del panel de tareas, el estado de anclaje y la visibilidad, como se muestra en el tutorial. Además, puedes trabajar con las propiedades y los enlaces de la extensión web para controlar su comportamiento e interacción con el contenido del documento.
 
-### ¿Qué tipos de extensiones web son compatibles con Aspose.Words para Java?
+### ¿Qué tipos de extensiones web se admiten en Aspose.Words para Java?
 
-Aspose.Words para Java admite varios tipos de extensiones web, incluidas aquellas con diferentes tipos de tiendas, como complementos de Office (OMEX) y complementos de SharePoint (SPSS). Puede especificar el tipo de tienda y otras propiedades al configurar una extensión web, como se muestra en el tutorial.
+Aspose.Words para Java admite varios tipos de extensiones web, incluidas aquellas con distintos tipos de almacenamiento, como complementos de Office (OMEX) y complementos de SharePoint (SPSS). Puede especificar el tipo de almacenamiento y otras propiedades al configurar una extensión web, como se muestra en el tutorial.
 
 ### ¿Cómo puedo probar y obtener una vista previa de las extensiones web en mi documento?
 
-Puede realizar pruebas y obtener una vista previa de las extensiones web en su documento abriendo el documento en un entorno que admita el tipo de extensión web específico que ha agregado. Por ejemplo, si agregó un complemento de Office (OMEX), puede abrir el documento en una aplicación de Office que admita complementos, como Microsoft Word. Esto le permite interactuar y probar la funcionalidad de la extensión web dentro del documento.
+Para probar y obtener una vista previa de las extensiones web en el documento, abra el documento en un entorno que admita el tipo de extensión web específico que haya agregado. Por ejemplo, si agregó un complemento de Office (OMEX), puede abrir el documento en una aplicación de Office que admita complementos, como Microsoft Word. Esto le permite interactuar con la extensión web y probar su funcionalidad dentro del documento.
 
-### ¿Existen limitaciones o consideraciones de compatibilidad al usar extensiones web en Aspose.Words para Java?
+### ¿Existen limitaciones o consideraciones de compatibilidad al utilizar extensiones web en Aspose.Words para Java?
 
-Si bien Aspose.Words para Java brinda soporte sólido para extensiones web, es esencial garantizar que el entorno de destino donde se utilizará el documento admita el tipo de extensión web específica que ha agregado. Además, considere cualquier problema o requisito de compatibilidad relacionado con la extensión web en sí, ya que puede depender de servicios o API externos.
+Si bien Aspose.Words para Java ofrece un sólido soporte para extensiones web, es esencial asegurarse de que el entorno de destino donde se utilizará el documento admita el tipo de extensión web específico que ha agregado. Además, tenga en cuenta los problemas de compatibilidad o los requisitos relacionados con la extensión web en sí, ya que puede depender de servicios externos o API.
 
 ### ¿Cómo puedo encontrar más información y recursos sobre el uso de extensiones web en Aspose.Words para Java?
 
- Para obtener documentación detallada y recursos sobre el uso de extensiones web en Aspose.Words para Java, puede consultar la documentación de Aspose en[aquí](https://reference.aspose.com/words/java/). Proporciona información detallada, ejemplos y pautas para trabajar con extensiones web para mejorar la funcionalidad de su documento.
+ Para obtener documentación detallada y recursos sobre el uso de extensiones web en Aspose.Words para Java, puede consultar la documentación de Aspose en[aquí](https://reference.aspose.com/words/java/)Proporciona información detallada, ejemplos y pautas para trabajar con extensiones web para mejorar la funcionalidad de su documento.

@@ -1,8 +1,8 @@
 ---
-title: Panggilan Balik Tanda Hubung
-linktitle: Panggilan Balik Tanda Hubung
+title: Panggilan Balik Pemenggalan Kata
+linktitle: Panggilan Balik Pemenggalan Kata
 second_title: API Pemrosesan Dokumen Aspose.Words
-description: Pelajari cara menerapkan panggilan balik tanda hubung di Aspose.Words untuk .NET guna menyempurnakan pemformatan dokumen dengan panduan langkah demi langkah yang komprehensif ini.
+description: Pelajari cara mengimplementasikan panggilan balik pemenggalan kata dalam Aspose.Words untuk .NET guna menyempurnakan pemformatan dokumen dengan panduan langkah demi langkah yang komprehensif ini.
 type: docs
 weight: 10
 url: /id/net/working-with-hyphenation/hyphenation-callback/
@@ -10,21 +10,21 @@ url: /id/net/working-with-hyphenation/hyphenation-callback/
 
 ## Perkenalan
 
-Hai! Pernahkah Anda terjebak dalam kerumitan pemformatan teks, terutama ketika berhadapan dengan bahasa yang memerlukan tanda hubung? Anda tidak sendirian. Tanda hubung, meskipun penting untuk tata letak teks yang tepat, bisa sedikit memusingkan. Tapi coba tebak? Aspose.Words untuk .NET mendukung Anda. Pustaka canggih ini memungkinkan Anda mengelola pemformatan teks dengan lancar, termasuk menangani tanda hubung melalui mekanisme panggilan balik. Penasaran? Mari selami seluk beluk bagaimana Anda dapat mengimplementasikan callback tanda hubung menggunakan Aspose.Words untuk .NET.
+Hai! Pernahkah Anda merasa terjerat dalam kerumitan pemformatan teks, terutama saat berhadapan dengan bahasa yang memerlukan pemenggalan kata? Anda tidak sendirian. Pemenggalan kata, meskipun penting untuk tata letak teks yang tepat, bisa jadi sedikit menyulitkan. Tapi coba tebak? Aspose.Words untuk .NET siap membantu Anda. Pustaka canggih ini memungkinkan Anda mengelola pemformatan teks dengan lancar, termasuk menangani pemenggalan kata melalui mekanisme panggilan balik. Penasaran? Mari selami seluk-beluk cara menerapkan panggilan balik pemenggalan kata menggunakan Aspose.Words untuk .NET.
 
 ## Prasyarat
 
-Sebelum kita mengotak-atik kode, pastikan Anda memiliki semua yang Anda butuhkan:
+Sebelum kita mulai mengerjakan kode, mari pastikan Anda memiliki semua yang dibutuhkan:
 
-1. Aspose.Words untuk .NET: Pastikan Anda memiliki perpustakaan. Anda bisa[unduh di sini](https://releases.aspose.com/words/net/).
+1. Aspose.Words untuk .NET: Pastikan Anda memiliki pustaka. Anda dapat[unduh disini](https://releases.aspose.com/words/net/).
 2. IDE: Lingkungan pengembangan seperti Visual Studio.
-3. Pengetahuan Dasar C#: Pemahaman C# dan .NET framework.
-4. Kamus Tanda Hubung: Kamus tanda hubung untuk bahasa yang ingin Anda gunakan.
-5.  Lisensi Aspose: Lisensi Aspose yang valid. Anda bisa mendapatkan[izin sementara](https://purchase.aspose.com/temporary-license/) jika Anda tidak memilikinya.
+3. Pengetahuan Dasar C#: Pemahaman tentang C# dan kerangka kerja .NET.
+4. Kamus Pemenggalan Kata: Kamus pemenggalan kata untuk bahasa yang ingin Anda gunakan.
+5.  Lisensi Aspose: Lisensi Aspose yang valid. Anda bisa mendapatkan[lisensi sementara](https://purchase.aspose.com/temporary-license/) jika Anda tidak memilikinya.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Hal pertama yang pertama, mari impor namespace yang diperlukan. Ini memastikan kode kita memiliki akses ke semua kelas dan metode yang kita perlukan dari Aspose.Words.
+Pertama-tama, mari impor namespace yang diperlukan. Ini memastikan kode kita memiliki akses ke semua kelas dan metode yang kita perlukan dari Aspose.Words.
 
 ```csharp
 using Aspose.Words;
@@ -32,14 +32,14 @@ using System;
 using System.IO;
 ```
 
-## Langkah 1: Daftarkan Panggilan Balik Tanda Hubung
+## Langkah 1: Daftarkan Panggilan Balik Hyphenation
 
-Untuk memulai, kita perlu mendaftarkan panggilan balik tanda hubung kita. Di sinilah kami memberi tahu Aspose.Words untuk menggunakan logika tanda hubung khusus kami.
+Untuk memulai, kita perlu mendaftarkan panggilan balik pemenggalan kata. Di sinilah kita memberi tahu Aspose.Words untuk menggunakan logika pemenggalan kata kustom kita.
 
 ```csharp
 try
 {
-    // Daftarkan panggilan balik tanda hubung.
+    // Daftarkan panggilan balik pemenggalan kata.
     Hyphenation.Callback = new CustomHyphenationCallback();
 }
 catch (Exception e)
@@ -48,7 +48,7 @@ catch (Exception e)
 }
 ```
 
- Di sini, kami membuat instance panggilan balik khusus kami dan menugaskannya ke dalamnya`Hyphenation.Callback`.
+ Di sini, kami membuat contoh panggilan balik kustom kami dan menetapkannya ke`Hyphenation.Callback`.
 
 ## Langkah 2: Tentukan Jalur Dokumen
 
@@ -62,27 +62,27 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Langkah 3: Muat Dokumen
 
-Sekarang, mari muat dokumen yang memerlukan tanda hubung.
+Sekarang, mari kita muat dokumen yang memerlukan pemenggalan kata.
 
 ```csharp
 Document document = new Document(dataDir + "German text.docx");
 ```
 
-Di sini, kami memuat dokumen teks Jerman. Anda bisa menggantinya`"German text.docx"` dengan nama file dokumen Anda.
+Di sini, kami memuat dokumen teks Jerman. Anda dapat mengganti`"German text.docx"` dengan nama berkas dokumen Anda.
 
 ## Langkah 4: Simpan Dokumen
 
-Setelah memuat dokumen, kami menyimpannya ke file baru, menerapkan panggilan balik tanda hubung dalam prosesnya.
+Setelah memuat dokumen, kami menyimpannya ke berkas baru, menerapkan panggilan balik pemenggalan kata dalam prosesnya.
 
 ```csharp
 document.Save(dataDir + "TreatmentByCesureWithRecall.pdf");
 ```
 
-Baris ini menyimpan dokumen sebagai PDF dengan tanda hubung diterapkan.
+Baris ini menyimpan dokumen sebagai PDF dengan penerapan tanda hubung.
 
-## Langkah 5: Tangani Pengecualian Kamus Tanda Hubung yang Hilang
+## Langkah 5: Tangani Pengecualian Kamus Penghubung yang Hilang
 
-Terkadang, Anda mungkin mengalami masalah ketika kamus tanda hubung tidak ada. Mari kita atasi itu.
+Terkadang, Anda mungkin mengalami masalah saat kamus pemenggalan kata tidak ada. Mari kita tangani masalah itu.
 
 ```csharp
 catch (Exception e) when (e.Message.StartsWith("Missing hyphenation dictionary"))
@@ -97,9 +97,9 @@ finally
 
 Di blok ini, kami menangkap pengecualian spesifik yang terkait dengan kamus yang hilang dan mencetak pesannya.
 
-## Langkah 6: Terapkan Kelas Panggilan Balik Tanda Hubung Kustom
+## Langkah 6: Terapkan Kelas Panggilan Balik Pemenggalan Kata Kustom
 
- Sekarang, mari kita terapkan`CustomHyphenationCallback` kelas yang menangani permintaan kamus tanda hubung.
+ Sekarang, mari kita terapkan`CustomHyphenationCallback` kelas yang menangani permintaan kamus pemenggalan kata.
 
 ```csharp
 public class CustomHyphenationCallback : IHyphenationCallback
@@ -125,25 +125,25 @@ public class CustomHyphenationCallback : IHyphenationCallback
 }
 ```
 
- Di kelas ini,`RequestDictionary` metode dipanggil setiap kali kamus tanda hubung diperlukan. Ia memeriksa bahasa dan mendaftarkan kamus yang sesuai.
+ Di kelas ini,`RequestDictionary` Metode ini dipanggil setiap kali kamus pemenggalan kata dibutuhkan. Metode ini memeriksa bahasa dan mendaftarkan kamus yang sesuai.
 
 ## Kesimpulan
 
-Dan itu dia! Anda baru saja mempelajari cara menerapkan panggilan balik tanda hubung di Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah ini, Anda dapat memastikan dokumen Anda diformat dengan indah, apa pun bahasanya. Baik Anda menggunakan bahasa Inggris, Jerman, atau bahasa lainnya, metode ini memungkinkan Anda menangani tanda hubung dengan mudah.
+Nah, itu dia! Anda baru saja mempelajari cara menerapkan pemanggilan pemenggalan kata dalam Aspose.Words untuk .NET. Dengan mengikuti langkah-langkah ini, Anda dapat memastikan dokumen Anda diformat dengan baik, apa pun bahasanya. Baik Anda menggunakan bahasa Inggris, Jerman, atau bahasa lainnya, metode ini memungkinkan Anda menangani pemenggalan kata dengan mudah.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Apa itu Aspose.Words untuk .NET?
-Aspose.Words for .NET adalah pustaka manipulasi dokumen canggih yang memungkinkan pengembang membuat, memodifikasi, dan mengonversi dokumen secara terprogram.
+Aspose.Words untuk .NET adalah pustaka manipulasi dokumen canggih yang memungkinkan pengembang untuk membuat, memodifikasi, dan mengonversi dokumen secara terprogram.
 
-### Mengapa tanda hubung penting dalam pemformatan dokumen?
-Tanda hubung meningkatkan tata letak teks dengan memecah kata-kata di tempat yang tepat, memastikan dokumen lebih mudah dibaca dan menarik secara visual.
+### Mengapa pemenggalan kata penting dalam pemformatan dokumen?
+Pemenggalan kata memperbaiki tata letak teks dengan memisahkan kata pada tempat yang tepat, sehingga menghasilkan dokumen yang lebih mudah dibaca dan menarik secara visual.
 
-### Bisakah saya menggunakan Aspose.Words secara gratis?
+### Dapatkah saya menggunakan Aspose.Words secara gratis?
  Aspose.Words menawarkan uji coba gratis. Anda bisa mendapatkannya[Di Sini](https://releases.aspose.com/).
 
-### Bagaimana cara mendapatkan kamus tanda hubung?
-Anda dapat mengunduh kamus tanda hubung dari berbagai sumber online atau membuatnya sendiri jika diperlukan.
+### Bagaimana cara mendapatkan kamus pemenggalan kata?
+Anda dapat mengunduh kamus pemenggalan kata dari berbagai sumber daring atau membuatnya sendiri jika diperlukan.
 
-### Apa yang terjadi jika kamus tanda hubung tidak ada?
- Jika kamus tidak ada,`RequestDictionary`metode memunculkan pengecualian, yang dapat Anda tangani untuk memberi tahu pengguna atau menyediakan cadangan.
+### Apa yang terjadi jika kamus pemenggalan kata tidak ada?
+ Jika kamus tidak ada,`RequestDictionary`metode ini melempar pengecualian, yang dapat Anda tangani untuk memberi tahu pengguna atau menyediakan solusi sementara.

@@ -9,7 +9,7 @@ url: /ja/net/working-with-list/restart-list-at-each-section/
 ---
 ## 導入
 
-構造化され、整理されたドキュメントを作成するのは、複雑なパズルを解くような作業のように感じることがあります。そのパズルの 1 つのピースは、リストを効果的に管理することです。特に、リストをセクションごとに再開する場合はそうです。Aspose.Words for .NET を使用すると、これをシームレスに実現できます。Aspose.Words for .NET を使用して、Word ドキュメントの各セクションでリストを再開する方法について詳しく見ていきましょう。
+構造化され、整理されたドキュメントを作成するのは、複雑なパズルを解くような作業です。そのパズルの 1 つのピースは、リストを効果的に管理することです。特に、リストをセクションごとに再開する場合はそうです。Aspose.Words for .NET を使用すると、これをシームレスに実現できます。Aspose.Words for .NET を使用して、Word ドキュメントの各セクションでリストを再開する方法について詳しく見ていきましょう。
 
 ## 前提条件
 
@@ -18,7 +18,7 @@ url: /ja/net/working-with-list/restart-list-at-each-section/
 1.  Aspose.Words for .NET: 最新バージョンをダウンロードしてインストールしてください。[Aspose リリース](https://releases.aspose.com/words/net/)ページ。
 2. .NET 環境: .NET がインストールされた開発環境をセットアップします。
 3. C# の基本的な理解: C# プログラミング言語に精通していることが推奨されます。
-4.  Asposeライセンス:[一時ライセンス](https://purchase.aspose.com/temporary-license/)持っていない場合。
+4.  Asposeライセンス:[一時ライセンス](https://purchase.aspose.com/temporary-license/)持っていない場合は。
 
 ## 名前空間のインポート
 
@@ -87,7 +87,7 @@ for (int i = 1; i < 45; i++)
 
 ```csharp
 OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Transitional };
-doc.Save(dataDir + "ResetListAtEachSection.docx", options);
+doc.Save(dataDir + "WorkingWithList.RestartListAtEachSection.docx", options);		
 ```
 
 ## 結論
@@ -103,7 +103,7 @@ doc.Save(dataDir + "ResetListAtEachSection.docx", options);
 番号付けの形式は、`ListTemplate`リストを作成するときにプロパティを使用します。
 
 ### リスト内の項目数に制限はありますか?
-いいえ、Aspose.Words for .NET を使用したリストに含めることができる項目の数に特定の制限はありません。
+いいえ、Aspose.Words for .NET を使用したリストに含めることができる項目の数に特別な制限はありません。
 
 ### この機能を PDF などの他のドキュメント形式でも使用できますか?
 はい、Aspose.Words を使用すると、リスト構造を維持しながら Word 文書を PDF などの他の形式に変換できます。

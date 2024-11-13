@@ -30,7 +30,7 @@ public void addSection() throws Exception {
 }
 ```
 
-I det här kodavsnittet skapar vi ett nytt dokument, lägger till innehåll i det och lägger sedan till ett nytt avsnitt i dokumentet.
+det här kodavsnittet skapar vi ett nytt dokument, lägger till innehåll i det och lägger sedan till ett nytt avsnitt i dokumentet.
 
 ## Ta bort ett avsnitt
 

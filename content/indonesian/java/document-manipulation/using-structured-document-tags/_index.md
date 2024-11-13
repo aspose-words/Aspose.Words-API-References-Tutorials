@@ -1,20 +1,20 @@
 ---
-title: Menggunakan Tag Dokumen Terstruktur (SDT) di Aspose.Words untuk Java
+title: Menggunakan Structured Document Tags (SDT) di Aspose.Words untuk Java
 linktitle: Menggunakan Tag Dokumen Terstruktur (SDT)
 second_title: API Pemrosesan Dokumen Java Aspose.Words
-description: Pelajari cara menggunakan Tag Dokumen Terstruktur (SDT) di Aspose.Words untuk Java dengan panduan komprehensif ini. Membuat, memodifikasi, dan mengikat SDT ke data XML khusus.
+description: Pelajari cara menggunakan Structured Document Tags (SDT) di Aspose.Words untuk Java dengan panduan lengkap ini. Buat, ubah, dan ikat SDT ke data XML kustom.
 type: docs
 weight: 19
 url: /id/java/document-manipulation/using-structured-document-tags/
 ---
 
-## Pengantar Penggunaan Tag Dokumen Terstruktur (SDT) di Aspose.Words untuk Java
+## Pengantar Penggunaan Structured Document Tags (SDT) di Aspose.Words untuk Java
 
-Tag Dokumen Terstruktur (SDT) adalah fitur canggih di Aspose.Words untuk Java yang memungkinkan Anda membuat dan memanipulasi konten terstruktur dalam dokumen Anda. Dalam panduan komprehensif ini, kami akan memandu Anda melalui berbagai aspek penggunaan SDT di Aspose.Words untuk Java. Baik Anda seorang pemula atau pengembang berpengalaman, Anda akan menemukan wawasan berharga dan contoh praktis dalam artikel ini.
+Structured Document Tags (SDT) merupakan fitur hebat di Aspose.Words untuk Java yang memungkinkan Anda membuat dan memanipulasi konten terstruktur dalam dokumen Anda. Dalam panduan lengkap ini, kami akan memandu Anda melalui berbagai aspek penggunaan SDT di Aspose.Words untuk Java. Baik Anda seorang pemula atau pengembang berpengalaman, Anda akan menemukan wawasan berharga dan contoh praktis dalam artikel ini.
 
 ## Memulai
 
-Sebelum kita mendalami detailnya, mari siapkan lingkungan kita dan buat SDT dasar. Di bagian ini, kami akan membahas topik-topik berikut:
+Sebelum kita menyelami detailnya, mari kita siapkan lingkungan kita dan buat SDT dasar. Di bagian ini, kita akan membahas topik-topik berikut:
 
 - Membuat dokumen baru
 - Menambahkan Tag Dokumen Terstruktur
@@ -24,17 +24,17 @@ Sebelum kita mendalami detailnya, mari siapkan lingkungan kita dan buat SDT dasa
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Buat Tag Dokumen Terstruktur dengan tipe CHECKBOX
+// Buat Tag Dokumen Terstruktur bertipe CHECKBOX
 StructuredDocumentTag sdtCheckBox = new StructuredDocumentTag(doc, SdtType.CHECKBOX, MarkupLevel.INLINE);
 builder.insertNode(sdtCheckBox);
 
-// Simpan dokumennya
+// Simpan dokumen
 doc.save("WorkingWithSDT.docx");
 ```
 
-## Memeriksa Status Saat Ini dari SDT Kotak Centang
+## Memeriksa Status Kotak Centang SDT Saat Ini
 
-Setelah Anda menambahkan kotak centang SDT ke dokumen Anda, Anda mungkin ingin memeriksa statusnya saat ini secara terprogram. Ini bisa berguna ketika Anda perlu memvalidasi input pengguna atau melakukan tindakan tertentu berdasarkan status kotak centang.
+Setelah Anda menambahkan kotak centang SDT ke dokumen Anda, Anda mungkin ingin memeriksa statusnya saat ini secara terprogram. Ini dapat berguna saat Anda perlu memvalidasi masukan pengguna atau melakukan tindakan tertentu berdasarkan status kotak centang.
 
 ```java
 Document doc = new Document("WorkingWithSDT.docx");
@@ -48,11 +48,11 @@ if (sdtCheckBox.getSdtType() == SdtType.CHECKBOX) {
 doc.save("UpdatedDocument.docx");
 ```
 
-## Memodifikasi Kontrol Konten
+## Mengubah Kontrol Konten
 
-Di bagian ini, kita akan mempelajari cara mengubah kontrol konten dalam dokumen Anda. Kami akan membahas tiga jenis kontrol konten: Teks Biasa, Daftar Drop-Down, dan Gambar.
+Di bagian ini, kita akan membahas cara mengubah kontrol konten dalam dokumen Anda. Kita akan membahas tiga jenis kontrol konten: Teks Biasa, Daftar Drop-Down, dan Gambar.
 
-### Memodifikasi Kontrol Konten Teks Biasa
+### Mengubah Kontrol Konten Teks Biasa
 
 ```java
 Document doc = new Document("WorkingWithSDT.docx");
@@ -71,7 +71,7 @@ if (sdtPlainText.getSdtType() == SdtType.PLAIN_TEXT) {
 doc.save("ModifiedDocument.docx");
 ```
 
-### Memodifikasi Kontrol Konten Daftar Drop-Down
+### Mengubah Kontrol Konten Daftar Drop-Down
 
 ```java
 Document doc = new Document("WorkingWithSDT.docx");
@@ -86,7 +86,7 @@ if (sdtDropDown.getSdtType() == SdtType.DROP_DOWN_LIST) {
 doc.save("ModifiedDocument.docx");
 ```
 
-### Memodifikasi Kontrol Konten Gambar
+### Mengubah Kontrol Konten Gambar
 
 ```java
 Document doc = new Document("WorkingWithSDT.docx");
@@ -94,7 +94,7 @@ StructuredDocumentTag sdtPicture = (StructuredDocumentTag) doc.getChild(NodeType
 Shape shape = (Shape) sdtPicture.getChild(NodeType.SHAPE, 0, true);
 
 if (shape.hasImage()) {
-    // Ganti gambar tersebut dengan yang baru
+    // Ganti gambar dengan yang baru
     shape.getImageData().setImage("Watermark.png");
 }
 
@@ -103,7 +103,7 @@ doc.save("ModifiedDocument.docx");
 
 ## Membuat Kontrol Konten ComboBox
 
-Kontrol Konten ComboBox memungkinkan pengguna untuk memilih dari daftar opsi yang telah ditentukan sebelumnya. Mari kita buat satu di dokumen kita.
+Kontrol Konten ComboBox memungkinkan pengguna untuk memilih dari daftar opsi yang telah ditetapkan. Mari kita buat satu di dokumen kita.
 
 ```java
 Document doc = new Document();
@@ -118,7 +118,7 @@ doc.save("ComboBoxDocument.docx");
 
 ## Bekerja dengan Kontrol Konten Teks Kaya
 
-Kontrol Konten Teks Kaya sempurna untuk menambahkan teks berformat ke dokumen Anda. Mari buat satu dan atur isinya.
+Kontrol Konten Rich Text sangat cocok untuk menambahkan teks berformat ke dokumen Anda. Mari buat satu dan atur kontennya.
 
 ```java
 Document doc = new Document();
@@ -136,22 +136,22 @@ doc.save("RichTextDocument.docx");
 
 ## Mengatur Gaya Kontrol Konten
 
-Anda dapat menerapkan gaya ke kontrol konten untuk menyempurnakan tampilan visual dokumen Anda. Mari kita lihat cara mengatur gaya kontrol konten.
+Anda dapat menerapkan gaya pada kontrol konten untuk meningkatkan tampilan visual dokumen Anda. Mari kita lihat cara mengatur gaya kontrol konten.
 
 ```java
 Document doc = new Document("WorkingWithSDT.docx");
 StructuredDocumentTag sdt = (StructuredDocumentTag) doc.getChild(NodeType.STRUCTURED_DOCUMENT_TAG, 0, true);
 
-//Terapkan gaya khusus
+// Terapkan gaya khusus
 Style style = doc.getStyles().getByStyleIdentifier(StyleIdentifier.QUOTE);
 sdt.setStyle(style);
 
 doc.save("StyledDocument.docx");
 ```
 
-## Mengikat SDT ke Data XML Khusus
+## Mengikat SDT ke Data XML Kustom
 
-Dalam beberapa skenario, Anda mungkin perlu mengikat SDT ke data XML khusus untuk pembuatan konten dinamis. Mari kita jelajahi cara mencapainya.
+Dalam beberapa skenario, Anda mungkin perlu mengikat SDT ke data XML khusus untuk pembuatan konten dinamis. Mari kita bahas cara mencapainya.
 
 ```java
 Document doc = new Document();
@@ -163,9 +163,9 @@ sdt.getXmlMapping().setMapping(xmlPart, "/root[1]/text[1]", "");
 doc.save("CustomXMLBinding.docx");
 ```
 
-## Membuat Tabel dengan Bagian Berulang yang Dipetakan ke Data XML Khusus
+## Membuat Tabel dengan Bagian Berulang yang Dipetakan ke Data XML Kustom
 
-Tabel dengan bagian berulang bisa sangat berguna untuk menyajikan data terstruktur. Mari buat tabel seperti itu dan petakan ke data XML khusus.
+Tabel dengan bagian yang berulang dapat sangat berguna untuk menyajikan data terstruktur. Mari buat tabel seperti itu dan petakan ke data XML khusus.
 
 ```java
 Document doc = new Document();
@@ -202,7 +202,7 @@ doc.save("RepeatingTableDocument.docx");
 
 ## Bekerja dengan Tag Dokumen Terstruktur Multi-Bagian
 
-Tag Dokumen Terstruktur dapat menjangkau beberapa bagian dalam sebuah dokumen. Di bagian ini, kita akan mempelajari cara bekerja dengan SDT multi-bagian.
+Tag Dokumen Terstruktur dapat mencakup beberapa bagian dalam satu dokumen. Di bagian ini, kita akan membahas cara bekerja dengan SDT multi-bagian.
 
 ```java
 Document doc = new Document("MultiSectionDocument.docx");
@@ -217,26 +217,26 @@ doc.save("ModifiedMultiSectionDocument.docx");
 
 ## Kesimpulan
 
-Tag Dokumen Terstruktur di Aspose.Words untuk Java menyediakan cara serbaguna untuk mengelola dan memformat konten dalam dokumen Anda. Baik Anda perlu membuat templat, formulir, atau dokumen dinamis, SDT menawarkan fleksibilitas dan kontrol yang Anda perlukan. Dengan mengikuti contoh dan pedoman yang diberikan dalam artikel ini, Anda dapat memanfaatkan kekuatan SDT untuk meningkatkan tugas pemrosesan dokumen Anda.
+Tag Dokumen Terstruktur di Aspose.Words untuk Java menyediakan cara serbaguna untuk mengelola dan memformat konten dalam dokumen Anda. Baik Anda perlu membuat templat, formulir, atau dokumen dinamis, SDT menawarkan fleksibilitas dan kontrol yang Anda perlukan. Dengan mengikuti contoh dan panduan yang diberikan dalam artikel ini, Anda dapat memanfaatkan kekuatan SDT untuk meningkatkan tugas pemrosesan dokumen Anda.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
-### Apa tujuan dari Tag Dokumen Terstruktur (SDT)?
+### Apa tujuan dari Structured Document Tags (SDT)?
 
 Tag Dokumen Terstruktur (SDT) berfungsi untuk mengatur dan memformat konten dalam dokumen, sehingga memudahkan pembuatan templat, formulir, dan dokumen terstruktur.
 
-### Bagaimana cara memeriksa status SDT Kotak Centang saat ini?
+### Bagaimana cara memeriksa status Checkbox SDT saat ini?
 
- Anda dapat memeriksa status SDT Kotak Centang saat ini menggunakan`setChecked` metode, seperti yang ditunjukkan dalam artikel.
+ Anda dapat memeriksa status Checkbox SDT saat ini menggunakan`setChecked` metode, seperti yang ditunjukkan dalam artikel.
 
-### Bisakah saya menerapkan gaya ke Kontrol Konten?
+### Dapatkah saya menerapkan gaya ke Kontrol Konten?
 
-Ya, Anda bisa menerapkan gaya ke Kontrol Konten untuk menyesuaikan tampilannya di dokumen.
+Ya, Anda dapat menerapkan gaya ke Kontrol Konten untuk menyesuaikan tampilannya dalam dokumen.
 
 ### Apakah mungkin untuk mengikat SDT ke data XML khusus?
 
-Ya, Anda dapat mengikat SDT ke data XML khusus, sehingga memungkinkan pembuatan konten dinamis dan pemetaan data.
+Ya, Anda dapat mengikat SDT ke data XML khusus, yang memungkinkan pembuatan konten dinamis dan pemetaan data.
 
-### Apa Bagian Berulang di SDT?
+### Apa itu Bagian Berulang dalam SDT?
 
-Bagian Berulang di SDT memungkinkan Anda membuat tabel dengan data dinamis, tempat baris dapat diulang berdasarkan data XML yang dipetakan.
+Bagian Berulang dalam SDT memungkinkan Anda membuat tabel dengan data dinamis, di mana baris dapat diulang berdasarkan data XML yang dipetakan.

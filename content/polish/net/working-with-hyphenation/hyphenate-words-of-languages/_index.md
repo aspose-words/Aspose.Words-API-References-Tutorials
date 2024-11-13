@@ -1,28 +1,28 @@
 ---
-title: Dziel wyrazy w językach
-linktitle: Dziel wyrazy w językach
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak dzielić słowa w różnych językach za pomocą Aspose.Words dla .NET. Postępuj zgodnie z tym szczegółowym przewodnikiem krok po kroku, aby zwiększyć czytelność dokumentu.
+title: Łączenie wyrazów w językach
+linktitle: Łączenie wyrazów w językach
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak dzielić wyrazy w różnych językach za pomocą Aspose.Words dla .NET. Postępuj zgodnie z tym szczegółowym przewodnikiem krok po kroku, aby zwiększyć czytelność dokumentu.
 type: docs
 weight: 10
 url: /pl/net/working-with-hyphenation/hyphenate-words-of-languages/
 ---
 ## Wstęp
 
-Hej tam! Czy kiedykolwiek próbowałeś przeczytać dokument zawierający długie, nieprzerwane słowa i poczułeś skurcze mózgu? Wszyscy tam byliśmy. Ale zgadnij co? Dzielenie wyrazów jest Twoim wybawieniem! Dzięki Aspose.Words dla .NET możesz nadać swoim dokumentom profesjonalny wygląd, dzieląc wyrazy poprawnie, zgodnie z zasadami językowymi. Przyjrzyjmy się, jak można to osiągnąć bezproblemowo.
+Cześć! Czy kiedykolwiek próbowałeś przeczytać dokument z długimi, nieprzerwanymi słowami i poczułeś, że twój mózg się kurczy? Wszyscy przez to przeszliśmy. Ale zgadnij co? Dzielenie wyrazów jest twoim wybawcą! Dzięki Aspose.Words dla .NET możesz sprawić, że twoje dokumenty będą wyglądać profesjonalnie, dzieląc wyrazy poprawnie zgodnie z regułami języka. Przyjrzyjmy się, jak możesz to osiągnąć bezproblemowo.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim zaczniemy, upewnij się, że masz następujące elementy:
+Zanim zaczniemy, upewnij się, że masz następujące rzeczy:
 
--  Zainstalowano Aspose.Words dla .NET. Jeśli nie, chwyć go[Tutaj](https://releases.aspose.com/words/net/).
--  Ważna licencja na Aspose.Words. Możesz kupić jeden[Tutaj](https://purchase.aspose.com/buy) lub zdobądź licencję tymczasową[Tutaj](https://purchase.aspose.com/temporary-license/).
-- Podstawowa znajomość C# i frameworku .NET.
-- Edytor tekstu lub IDE, taki jak Visual Studio.
+-  Aspose.Words dla .NET zainstalowany. Jeśli nie masz, pobierz go[Tutaj](https://releases.aspose.com/words/net/).
+-  Ważna licencja na Aspose.Words. Możesz kupić jedną[Tutaj](https://purchase.aspose.com/buy) lub uzyskaj tymczasową licencję[Tutaj](https://purchase.aspose.com/temporary-license/).
+- Podstawowa znajomość języka C# i .NET Framework.
+- Edytor tekstu lub środowisko IDE, np. Visual Studio.
 
 ## Importuj przestrzenie nazw
 
-Na początek zaimportujmy niezbędne przestrzenie nazw. Pomaga to w dostępie do klas i metod wymaganych do dzielenia wyrazów.
+Po pierwsze, zaimportujmy niezbędne przestrzenie nazw. To pomoże w dostępie do klas i metod wymaganych do łączenia wyrazów.
 
 ```csharp
 using Aspose.Words;
@@ -31,7 +31,7 @@ using Aspose.Words.Hyphenation;
 
 ## Krok 1: Załaduj swój dokument
 
- Musisz określić katalog, w którym znajduje się dokument. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do dokumentu.
+ Musisz określić katalog, w którym znajduje się Twój dokument. Zastąp`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką do dokumentu.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -40,7 +40,7 @@ Document doc = new Document(dataDir + "German text.docx");
 
 ## Krok 3: Zarejestruj słowniki dzielenia wyrazów
 
- Aspose.Words wymaga słowników z dzieleniem wyrazów dla różnych języków. Upewnij się, że masz`.dic`pliki dla języków, które chcesz podzielić. Zarejestruj te słowniki za pomocą`Hyphenation.RegisterDictionary` metoda.
+ Aspose.Words wymaga słowników łączników dla różnych języków. Upewnij się, że masz`.dic`pliki dla języków, w których chcesz zastosować dywiz. Zarejestruj te słowniki za pomocą`Hyphenation.RegisterDictionary` metoda.
 
 ```csharp
 Hyphenation.RegisterDictionary("en-US", dataDir + "hyph_en_US.dic");
@@ -49,7 +49,7 @@ Hyphenation.RegisterDictionary("de-CH", dataDir + "hyph_de_CH.dic");
 
 ## Krok 4: Zapisz dokument
 
-Na koniec zapisz dokument z łącznikami w żądanym formacie. Tutaj zapisujemy go w formacie PDF.
+Na koniec zapisz łącznikowy dokument w żądanym formacie. Tutaj zapisujemy go jako PDF.
 
 ```csharp
 doc.Save(dataDir + "TreatmentByCesure.pdf");
@@ -57,21 +57,21 @@ doc.Save(dataDir + "TreatmentByCesure.pdf");
 
 ## Wniosek
 
-I masz to! Za pomocą zaledwie kilku linijek kodu możesz znacznie poprawić czytelność swoich dokumentów, dzieląc wyrazy zgodnie z zasadami obowiązującymi w danym języku. Aspose.Words dla .NET sprawia, że proces ten jest prosty i wydajny. Więc śmiało, zapewnij swoim czytelnikom płynniejsze czytanie!
+I masz to! Za pomocą zaledwie kilku linijek kodu możesz znacznie poprawić czytelność swoich dokumentów, łącząc wyrazy zgodnie z regułami specyficznymi dla danego języka. Aspose.Words dla .NET sprawia, że ten proces jest prosty i wydajny. Więc śmiało, zapewnij swoim czytelnikom płynniejsze wrażenia z czytania!
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Co to jest dzielenie wyrazów w dokumentach?
-Dzielenie wyrazów to proces dzielenia wyrazów na końcach wierszy w celu poprawy wyrównania i czytelności tekstu.
+### Czym jest dzielenie wyrazów w dokumentach?
+Dzielenie wyrazów to proces polegający na dzieleniu wyrazów na końcu wiersza w celu polepszenia wyrównania i czytelności tekstu.
 
 ### Gdzie mogę znaleźć słowniki dzielenia wyrazów dla różnych języków?
-W Internecie można znaleźć słowniki dotyczące dzielenia wyrazów, często udostępniane przez instytuty językowe lub projekty typu open source.
+W Internecie można znaleźć słowniki ułatwiające dzielenie wyrazów, często udostępniane przez instytuty językowe lub projekty typu open source.
 
 ### Czy mogę używać Aspose.Words dla .NET bez licencji?
- Tak, ale wersja nielicencjonowana będzie miała ograniczenia. Zaleca się zdobycie ok[licencja tymczasowa](https://purchase.aspose.com/temporary-license) dla pełnych funkcji.
+ Tak, ale wersja bez licencji będzie miała ograniczenia. Zaleca się, aby uzyskać[licencja tymczasowa](https://purchase.aspose.com/temporary-license) aby uzyskać dostęp do pełnej wersji funkcji.
 
 ### Czy Aspose.Words dla .NET jest kompatybilny z .NET Core?
-Tak, Aspose.Words dla .NET obsługuje zarówno .NET Framework, jak i .NET Core.
+Tak, Aspose.Words for .NET obsługuje zarówno .NET Framework, jak i .NET Core.
 
-### Jak obsługiwać wiele języków w jednym dokumencie?
-Możesz zarejestrować wiele słowników dzielenia wyrazów, jak pokazano w przykładzie, a Aspose.Words odpowiednio je obsłuży.
+### Jak poradzić sobie z wieloma językami w jednym dokumencie?
+Możesz zarejestrować wiele słowników dzielenia wyrazów, jak pokazano w przykładzie, a Aspose.Words obsłuży je odpowiednio.

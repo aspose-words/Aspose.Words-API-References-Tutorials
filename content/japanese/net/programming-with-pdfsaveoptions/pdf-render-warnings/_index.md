@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## ステップ2: ドキュメントを読み込む
 
-ドキュメントをAspose.Wordsにロードする`Document`オブジェクト。このステップでは、ドキュメントをプログラムで操作できます。
+ドキュメントをAspose.Wordsにロードする`Document`オブジェクト。この手順により、ドキュメントをプログラムで操作できるようになります。
 
 ```csharp
 Document doc = new Document(dataDir + "WMF with image.docx");
@@ -120,7 +120,7 @@ foreach (WarningInfo warningInfo in callback.mWarnings)
 
 ## 結論
 
-これらの手順に従うことで、Aspose.Words for .NET で PDF レンダリングの警告を効果的に処理できます。これにより、ドキュメント処理中に発生する可能性のある問題が確実に捕捉され、対処されるため、ドキュメントのレンダリングがより信頼性が高く正確になります。
+これらの手順に従うことで、Aspose.Words for .NET で PDF レンダリングの警告を効果的に処理できます。これにより、ドキュメント処理中に発生する可能性のある問題が確実に捕捉され、対処されるため、ドキュメントのレンダリングの信頼性と精度が向上します。
 
 ## よくある質問
 

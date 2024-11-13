@@ -2,7 +2,7 @@
 title: Word 文書にハイパーリンクを挿入する
 linktitle: Word 文書にハイパーリンクを挿入する
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET を使用して Word 文書にハイパーリンクを挿入する方法をステップバイステップ ガイドで学習します。文書作成タスクの自動化に最適です。
+description: Aspose.Words for .NET を使用して Word 文書にハイパーリンクを挿入する方法を、ステップバイステップ ガイドで学習します。文書作成タスクの自動化に最適です。
 type: docs
 weight: 10
 url: /ja/net/add-content-using-documentbuilder/insert-hyperlink/
@@ -52,7 +52,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## ステップ3: 最初のテキストを書く
 
-使用方法`DocumentBuilder`、ドキュメントに初期テキストを書き込みます。これにより、ハイパーリンクが挿入されるコンテキストが設定されます。
+使用方法`DocumentBuilder`では、ドキュメントに初期テキストを書き込みます。これにより、ハイパーリンクが挿入されるコンテキストが設定されます。
 
 ```csharp
 builder.Write("Please make sure to visit ");

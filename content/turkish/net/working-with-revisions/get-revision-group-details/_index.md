@@ -1,49 +1,49 @@
 ---
-title: Revizyon Grubu Detaylarını Al
-linktitle: Revizyon Grubu Detaylarını Al
+title: Revizyon Grubu Ayrıntılarını Alın
+linktitle: Revizyon Grubu Ayrıntılarını Alın
 second_title: Aspose.Words Belge İşleme API'si
-description: Bu adım adım kılavuzla Aspose.Words for .NET'i kullanarak Word belgelerindeki revizyon grubu ayrıntılarını kolayca alın. .NET geliştiricileri için mükemmel.
+description: Bu adım adım kılavuzla Aspose.Words for .NET kullanarak Word belgelerindeki revizyon grubu ayrıntılarını kolayca edinin. .NET geliştiricileri için mükemmel.
 type: docs
 weight: 10
 url: /tr/net/working-with-revisions/get-revision-group-details/
 ---
 ## giriiş
 
-Hiç bir Word belgesindeki revizyonların en ince ayrıntısına kadar incelemeye ihtiyaç duyduğunuzu fark ettiniz mi? Belki bir proje üzerinde işbirliği yapıyorsunuz ve değişiklikleri titizlikle takip etmeniz gerekiyor. Pekala, kemerlerinizi bağlayın çünkü Aspose.Words for .NET kullanarak revizyon grubu ayrıntılarının nasıl elde edileceğine dair harika bir eğitime dalmak üzereyiz. Bu kılavuzun sonunda revizyon ayrıntılarını çıkarma ve görüntüleme konusunda uzmanlaşacak ve belge yönetiminizi kolaylaştıracaksınız.
+Hiç Word belgesinde revizyonların ince ayrıntılarına dalmanız gerektiğini fark ettiniz mi? Belki bir proje üzerinde işbirliği yapıyorsunuz ve değişiklikleri titizlikle takip etmeniz gerekiyor. O zaman kemerlerinizi bağlayın çünkü .NET için Aspose.Words kullanarak revizyon grubu ayrıntılarını nasıl alacağınıza dair harika bir eğitime dalmak üzereyiz. Bu kılavuzun sonunda, revizyon ayrıntılarını çıkarma ve görüntüleme konusunda uzman olacaksınız ve belge yönetiminizi kolaylaştıracaksınız.
 
-## Önkoşullar
+## Ön koşullar
 
-Bu kodlama yolculuğuna çıkmadan önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
--  Aspose.Words for .NET: En son sürümün kurulu olduğundan emin olun. Değilse indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+Bu kodlama yolculuğuna başlamadan önce ihtiyacınız olan her şeye sahip olduğunuzdan emin olalım:
+-  Aspose.Words for .NET: En son sürümün yüklü olduğundan emin olun. Değilse, indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
 - .NET Ortamı: Çalışan bir .NET geliştirme ortamı kurduğunuzdan emin olun. Visual Studio harika bir seçenektir.
-- Düzeltmeleri Olan Bir Word Belgesi: Bu eğitim için, düzeltmeleri olan örnek bir Word belgesi kullanacağız (`Revisions.docx`).
+- Revizyonları Olan Bir Word Belgesi: Bu eğitim için, revizyonları olan bir örnek Word belgesi kullanacağız (`Revisions.docx`).
 
 ## Ad Alanlarını İçe Aktar
 
-Öncelikle projenize gerekli ad alanlarını aktaralım. Aspose.Words işlevselliğine erişmek için bu çok önemlidir.
+Öncelikle projenize gerekli ad alanlarını içe aktaralım. Bu, Aspose.Words işlevselliğine erişmek için çok önemlidir.
 
 ```csharp
 using Aspose.Words;
 using System;
 ```
 
-Tamam, bunu adım adım inceleyelim. Her adım, Aspose.Words for .NET'i kullanarak revizyon grubu ayrıntılarını alma sürecinde size rehberlik edecektir.
+Tamam, bunu adım adım parçalayalım. Her adım, Aspose.Words for .NET kullanarak revizyon grubu ayrıntılarını alma sürecinde size rehberlik edecektir.
 
 ## Adım 1: Word Belgesini Yükleyin
 
-İlk adım Word belgenizi yüklemektir. Burası revizyonlarınızın saklandığı yerdir.
+İlk adım Word belgenizi yüklemektir. Revizyonlarınız burada saklanır.
 
 ```csharp
-// Belgeler dizininin yolu.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Revisions.docx");
 ```
 
- Bu kod parçasında değiştirin`"YOUR DOCUMENT DIRECTORY"` belgenizin gerçek yolu ile. Bu kod yüklenecek`Revisions.docx` içine dosya`doc` nesne.
+ Bu kod parçacığında şunu değiştirin:`"YOUR DOCUMENT DIRECTORY"` belgenizin gerçek yolu ile. Bu kod yükleyecek`Revisions.docx` dosyaya koy`doc` nesne.
 
-## 2. Adım: Revizyon Koleksiyonuna Erişin
+## Adım 2: Revizyon Koleksiyonuna Erişim
 
- Şimdi belgedeki revizyonlara erişelim. Aspose.Words şunları sağlar:`Revisions` tekrarlayabileceğimiz bir koleksiyon.
+ Şimdi belgedeki revizyonlara erişelim. Aspose.Words bir`Revisions` İçinde yineleme yapabileceğimiz bir koleksiyon.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
@@ -52,9 +52,9 @@ foreach (Revision revision in doc.Revisions)
 }
 ```
 
-Bu döngü, belgedeki her revizyondan geçerek ayrıntıları çıkarmamıza olanak tanır.
+Bu döngü, belgedeki her revizyondan geçerek ayrıntıları çıkarmamızı sağlayacaktır.
 
-## 3. Adım: Revizyon Ayrıntılarını Çıkarın
+## Adım 3: Revizyon Ayrıntılarını Çıkarın
 
 Döngü içerisinde her revizyon hakkında tür, yazar, tarih ve metin gibi çeşitli ayrıntıları çıkarabiliriz.
 
@@ -68,11 +68,11 @@ foreach (Revision revision in doc.Revisions)
 }
 ```
 
-Bu kod, revizyon türünü, yazarı, tarihi ve metni konsola yazdıracaktır.
+Bu kod revizyon türünü, yazarını, tarihini ve metnini konsola yazdıracaktır.
 
 ## Adım 4: Revizyon Grubunu Kontrol Edin
 
-Bazen revizyonlar gruplandırılır. Bir revizyonun bir gruba ait olup olmadığını kontrol etmemiz ve varsa grubun metnini görüntülememiz gerekiyor.
+Bazen revizyonlar gruplandırılır. Bir revizyonun bir gruba ait olup olmadığını kontrol etmemiz ve eğer öyleyse grubun metnini görüntülememiz gerekir.
 
 ```csharp
 foreach (Revision revision in doc.Revisions)
@@ -85,25 +85,25 @@ foreach (Revision revision in doc.Revisions)
 }
 ```
 
-Bu kod parçası, revizyon bir grubun parçasıysa veya herhangi bir gruba ait olmadığını gösteriyorsa grup metnini yazdıracaktır.
+Bu kod parçacığı, revizyonun bir grubun parçası olması durumunda grup metnini yazdıracak veya herhangi bir gruba ait olmadığını belirtecektir.
 
 ## Çözüm
 
-Ve işte karşınızda! Bu adımları takip ederek Aspose.Words for .NET kullanarak bir Word belgesindeki revizyonlar hakkında detaylı bilgiye kolaylıkla ulaşabilirsiniz. Bu güçlü araç, değişiklikleri yönetmeyi ve izlemeyi kolaylaştırarak ortak projelerinizin sorunsuz bir şekilde ilerlemesini sağlar.
+İşte karşınızda! Bu adımları izleyerek, Aspose.Words for .NET kullanarak bir Word belgesindeki revizyonlar hakkında ayrıntılı bilgileri kolayca edinebilirsiniz. Bu güçlü araç, değişiklikleri yönetmeyi ve izlemeyi kolaylaştırır ve işbirlikçi projelerinizin sorunsuz bir şekilde çalışmasını sağlar.
 
-## SSS'ler
+## SSS
 
 ### Aspose.Words for .NET nedir?
-Word belgelerini programlı olarak oluşturmak, düzenlemek, dönüştürmek ve yazdırmak için güçlü bir .NET kitaplığıdır.
+Word belgelerini programlı bir şekilde oluşturmak, düzenlemek, dönüştürmek ve yazdırmak için güçlü bir .NET kütüphanesidir.
 
-### Aspose.Words for .NET'i diğer .NET dilleriyle kullanabilir miyim?
-Kesinlikle! C#, VB.NET ve ASP.NET dahil herhangi bir .NET diliyle kullanabilirsiniz.
+### Aspose.Words for .NET'i diğer .NET dilleriyle birlikte kullanabilir miyim?
+Kesinlikle! C#, VB.NET ve ASP.NET dahil olmak üzere herhangi bir .NET diliyle kullanabilirsiniz.
 
 ### Aspose.Words for .NET'in ücretsiz deneme sürümünü nasıl edinebilirim?
  Ücretsiz deneme alabilirsiniz[Burada](https://releases.aspose.com/).
 
 ### Aspose.Words for .NET'i kullanmak için lisansa ihtiyacım var mı?
- Evet, Aspose.Words for .NET tam işlevsellik için lisans gerektirir. Bir tane satın alabilirsiniz[Burada](https://purchase.aspose.com/buy) veya geçici lisans alın[Burada](https://purchase.aspose.com/temporary-license/).
+ Evet, Aspose.Words for .NET tam işlevsellik için bir lisans gerektirir. Bir tane satın alabilirsiniz[Burada](https://purchase.aspose.com/buy) veya geçici bir lisans alın[Burada](https://purchase.aspose.com/temporary-license/).
 
-### Aspose.Words for .NET hakkında daha fazla belgeyi nerede bulabilirim?
- Detaylı dokümantasyon mevcut[Burada](https://reference.aspose.com/words/net/).
+### Aspose.Words for .NET hakkında daha fazla dokümanı nerede bulabilirim?
+Ayrıntılı dokümantasyon mevcuttur[Burada](https://reference.aspose.com/words/net/).

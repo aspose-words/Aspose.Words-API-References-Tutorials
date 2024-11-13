@@ -56,7 +56,7 @@ Most hasonlítsuk össze a dokumentumokat a Dokumentum osztály Összehasonlít�
 builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOptions);
 ```
 
- A`Compare`módszer összehasonlítja az A dokumentumot a B dokumentummal, és elmenti az A dokumentum módosításait. Referenciaként megadhatja a szerző nevét és az összehasonlítás dátumát.
+A`Compare`módszer összehasonlítja az A dokumentumot a B dokumentummal, és elmenti az A dokumentum módosításait. Referenciaként megadhatja a szerző nevét és az összehasonlítás dátumát.
 
 ## Következtetés
 

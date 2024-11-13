@@ -13,7 +13,7 @@ url: /ja/net/working-with-markdown/read-markdown-document/
 
 ## 前提条件
 
-実際にコードに取り掛かる前に、準備しておくべきことがいくつかあります。
+実際にコードに取り組む前に、準備しておく必要があるものがいくつかあります。
 
 1. Visual Studioがインストールされている: お使いのマシンにVisual Studioがインストールされていることを確認してください。ダウンロードできます。[ここ](https://visualstudio.microsoft.com/downloads/).
 2.  Aspose.Words for .NETライブラリ:まだダウンロードしていない場合は、Aspose.Words for .NETライブラリを以下からダウンロードしてください。[このリンク](https://releases.aspose.com/words/net/).
@@ -68,7 +68,7 @@ doc.Save(dataDir + "WorkingWithMarkdown.ReadMarkdownDocument.md");
 
 ## 結論
 
-おめでとうございます。Aspose.Words for .NET を使用して Markdown ドキュメントを操作する方法を学習しました。この強力なライブラリは、Word ドキュメントをプログラムで操作するための無限の可能性を提供します。ドキュメント生成を自動化する場合でも、複雑なレポートを作成する場合でも、Aspose.Words が役立ちます。
+おめでとうございます! Aspose.Words for .NET を使用して Markdown ドキュメントを操作する方法を学習しました。この強力なライブラリは、Word ドキュメントをプログラムで操作するための無限の可能性を提供します。ドキュメント生成を自動化する場合でも、複雑なレポートを作成する場合でも、Aspose.Words が役立ちます。
 
 ## よくある質問
 
@@ -82,7 +82,7 @@ Aspose.Words for .NET は、開発者が C# を使用してプログラム的に
 
 ### Aspose.Words for .NET の無料試用版はありますか?
 
-はい、無料トライアルはここからダウンロードできます。[ここ](https://releases.aspose.com/).
+はい、無料トライアルは以下からダウンロードできます。[ここ](https://releases.aspose.com/).
 
 ### Aspose.Words for .NET のドキュメントはどこにありますか?
 

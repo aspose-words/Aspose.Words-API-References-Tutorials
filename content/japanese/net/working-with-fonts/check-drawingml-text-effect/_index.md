@@ -80,7 +80,7 @@ Console.WriteLine(runFont.HasDmlEffect(TextDmlEffect.Fill));
 
 ## 結論
 
-おめでとうございます! Aspose.Words for .NET を使用して Word 文書内の DrawingML テキスト効果を確認する方法を学習しました。この強力な機能により、高度なテキスト書式をプログラムで検出および操作できるため、ドキュメント処理タスクをより細かく制御できます。
+おめでとうございます! Aspose.Words for .NET を使用して Word 文書内の DrawingML テキスト効果を確認する方法を学習しました。この強力な機能により、高度なテキスト書式をプログラムで検出および操作できるようになり、文書処理タスクをより細かく制御できるようになります。
 
 
 ## よくある質問

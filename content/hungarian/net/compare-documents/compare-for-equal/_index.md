@@ -9,7 +9,7 @@ url: /hu/net/compare-documents/compare-for-equal/
 ---
 ## Bevezetés
 
-Word dokumentumokkal való munka során döntő feladat lehet annak biztosítása, hogy két dokumentum azonos legyen. Legyen szó a szerződés különböző verzióinak összehasonlításáról, a jogosulatlan módosítások ellenőrzéséről vagy a dokumentumok integritásának ellenőrzéséről, a dokumentumok összehasonlításának automatizált módja jelentős időt és erőfeszítést takaríthat meg. Az Aspose.Words for .NET robusztus megoldást kínál a Word dokumentumok összehasonlítására és a különbségek azonosítására. Ebben a cikkben végigvezetjük a két Word-dokumentum egyenjogúság szempontjából történő összehasonlításának folyamatán az Aspose.Words for .NET használatával. 
+A Word dokumentumokkal való munka során döntő feladat lehet annak biztosítása, hogy két dokumentum azonos legyen. Legyen szó a szerződés különböző verzióinak összehasonlításáról, a jogosulatlan módosítások ellenőrzéséről vagy a dokumentumok integritásának ellenőrzéséről, a dokumentumok összehasonlításának automatizált módja jelentős időt és erőfeszítést takaríthat meg. Az Aspose.Words for .NET robusztus megoldást kínál a Word dokumentumok összehasonlítására és a különbségek azonosítására. Ebben a cikkben végigvezetjük a két Word-dokumentum egyenjogúság szempontjából történő összehasonlításának folyamatán az Aspose.Words for .NET használatával. 
 
 ## Előfeltételek
 
@@ -38,7 +38,7 @@ Install-Package Aspose.Words
 
 ## 2. lépés: Töltse be a dokumentumokat
 
- Ezután be kell töltenie az összehasonlítani kívánt Word-dokumentumokat. Ebben a példában feltételezzük, hogy két megnevezett dokumentuma van`Document.docx`és`Document2.docx` dokumentumkönyvtárában található.
+ Ezután be kell töltenie az összehasonlítani kívánt Word-dokumentumokat. Ebben a példában feltételezzük, hogy két megnevezett dokumentuma van`Document.docx` és`Document2.docx` dokumentumkönyvtárában található.
 
 ```csharp
 // A dokumentumok könyvtárának elérési útja.
@@ -49,7 +49,7 @@ Document docB = new Document(dataDir + "Document2.docx");
 
 ## 3. lépés: Az egyik dokumentum klónozása
 
- A dokumentumok összehasonlításához klónozni kell az egyiket. Erre azért van szükség, mert a`Compare` módszer módosítja a dokumentumot, és érdemes lehet az eredeti dokumentumot változatlanul hagyni egyéb célokra.
+ A dokumentumok összehasonlításához klónozni kell az egyiket. Erre azért van szükség, mert a`Compare`módszer módosítja a dokumentumot, és érdemes lehet az eredeti dokumentumot változatlanul hagyni egyéb célokra.
 
 ```csharp
 Document docBClone = docB.Clone();
@@ -57,7 +57,7 @@ Document docBClone = docB.Clone();
 
 ## 4. lépés: Végezze el az összehasonlítást
 
- Most készen áll a dokumentumok összehasonlítására. A`Compare`módszer rávilágít a két dokumentum közötti különbségekre. Megadhatja az összehasonlítást végző felhasználót és az összehasonlítás dátumát.
+ Most készen áll a dokumentumok összehasonlítására. A`Compare` módszer rávilágít a két dokumentum közötti különbségekre. Megadhatja az összehasonlítást végző felhasználót és az összehasonlítás dátumát.
 
 ```csharp
 docA.Compare(docBClone, "user", DateTime.Now);
@@ -73,7 +73,7 @@ Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal" : "Documents
 
 ## Következtetés
 
-A Word dokumentumok összehasonlítása az egyenlőség érdekében az Aspose.Words for .NET használatával egyszerű folyamat, amely jelentős időt és erőfeszítést takaríthat meg. Az ebben az útmutatóban ismertetett lépések követésével gyorsan azonosíthatja a dokumentumok közötti különbségeket, és biztosíthatja azok integritását. Akár jogi dokumentumokat, műszaki dokumentációt vagy bármilyen más típusú Word-fájlt kezel, az Aspose.Words for .NET biztosítja a hatékony és pontos dokumentumok összehasonlításához szükséges eszközöket.
+Word dokumentumok összehasonlítása az egyenlőség érdekében az Aspose.Words for .NET használatával egyszerű folyamat, amely jelentős időt és erőfeszítést takaríthat meg. Az ebben az útmutatóban ismertetett lépések követésével gyorsan azonosíthatja a dokumentumok közötti különbségeket, és biztosíthatja azok integritását. Akár jogi dokumentumokat, műszaki dokumentációt vagy bármilyen más típusú Word-fájlt kezel, az Aspose.Words for .NET biztosítja a hatékony és pontos dokumentumok összehasonlításához szükséges eszközöket.
 
 ## GYIK
 

@@ -111,36 +111,40 @@ Den sista biten i vårt pussel är metoden som faktiskt infogar dokumentet på d
 ```csharp
 private static void InsertDocument(Node insertionDestination, Document docToInsert)
 {
-	if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
-	{
-		CompositeNode destinationParent = insertionDestination.ParentNode;
+    // Kontrollera om insättningsdestinationen är ett stycke eller en tabell
+    if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
+    {
+        CompositeNode destinationParent = insertionDestination.ParentNode;
 
-		NodeImporter importer =
-			new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
+        // Skapa en NodeImporter för att importera noder från källdokumentet
+        NodeImporter importer = new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
 
-		// Gå igenom alla noder på blocknivå i sektionens kropp,
-		// klona sedan och infoga varje nod som inte är det sista tomma stycket i ett avsnitt.
-		foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
-		foreach (Node srcNode in srcSection.Body)
-		{
-			if (srcNode.NodeType == NodeType.Paragraph)
-			{
-				Paragraph para = (Paragraph)srcNode;
-				if (para.IsEndOfSection && !para.HasChildNodes)
-					continue;
-			}
+        // Gå igenom alla noder på blocknivå i källdokumentets avsnitt
+        foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
+        {
+            foreach (Node srcNode in srcSection.Body)
+            {
+                // Hoppa över det sista tomma stycket i ett avsnitt
+                if (srcNode.NodeType == NodeType.Paragraph)
+                {
+                    Paragraph para = (Paragraph)srcNode;
+                    if (para.IsEndOfSection && !para.HasChildNodes)
+                        continue;
+                }
 
-			Node newNode = importer.ImportNode(srcNode, true);
-
-			destinationParent.InsertAfter(newNode, insertionDestination);
-			insertionDestination = newNode;
-		}
-	}
-	else
-	{
-		throw new ArgumentException("The destination node should be either a paragraph or table.");
-	}
+                // Importera och infoga noden i destinationen
+                Node newNode = importer.ImportNode(srcNode, true);
+                destinationParent.InsertAfter(newNode, insertionDestination);
+                insertionDestination = newNode;
+            }
+        }
+    }
+    else
+    {
+        throw new ArgumentException("The destination node should be either a paragraph or table.");
+    }
 }
+
 ```
 
 Denna metod tar hand om att importera noder från dokumentet som ska infogas och placera dem på rätt plats i huvuddokumentet.

@@ -58,7 +58,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- A`Document` objektum képviseli a Word dokumentumot, és a`DocumentBuilder` segít tartalmat adni hozzá.
+A`Document` objektum képviseli a Word dokumentumot, és a`DocumentBuilder` segít tartalmat adni hozzá.
 
 ## 3. lépés: Határozza meg a kép elérési útját
 

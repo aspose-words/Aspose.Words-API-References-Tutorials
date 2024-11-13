@@ -82,7 +82,7 @@ Ja, Aspose.Words låter dig anpassa färgen på revisionsfälten för att passa 
 Absolut. Du kan konfigurera Aspose.Words att endast visa vissa typer av revisioner, såsom raderingar eller formateringsändringar, i ballonger.
 
 ### Hur får jag en tillfällig licens för Aspose.Words?
- Du kan få en tillfällig licens[här](https://purchase.aspose.com/temporary-license/).
+Du kan få en tillfällig licens[här](https://purchase.aspose.com/temporary-license/).
 
 ### Kan jag använda Aspose.Words för .NET med andra programmeringsspråk?
 Aspose.Words är främst designat för .NET, men du kan använda det med alla .NET-stödda språk, inklusive VB.NET och C++/CLI.

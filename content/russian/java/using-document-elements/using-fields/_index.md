@@ -1,26 +1,26 @@
 ---
 title: Использование полей в Aspose.Words для Java
 linktitle: Использование полей
-second_title: API обработки Java-документов Aspose.Words
-description: Научитесь эффективно использовать поля Aspose.Words для Java в этом пошаговом руководстве. С легкостью создавайте динамические документы Word.
+second_title: API обработки документов Java Aspose.Words
+description: Научитесь эффективно использовать Aspose.Words для полей Java в этом пошаговом руководстве. Создавайте динамические документы Word с легкостью.
 type: docs
 weight: 11
 url: /ru/java/using-document-elements/using-fields/
 ---
 
-В этом пошаговом руководстве мы покажем вам, как использовать поля в Aspose.Words для Java для удобного управления документами. Aspose.Words for Java — это мощный API, который позволяет вам программно работать с документами Word, предоставляя вам полный контроль над их содержимым и форматированием.
+В этом пошаговом руководстве мы расскажем вам, как использовать поля в Aspose.Words для Java для легкой обработки документов. Aspose.Words для Java — это мощный API, который позволяет вам работать с документами Word программно, предоставляя вам полный контроль над их содержимым и форматированием.
 
 ## 1. Введение
 
-Aspose.Words for Java — это важный инструмент для всех, кто работает с документами Word в приложениях Java. Поля — это заполнители, которые могут хранить динамические данные в вашем документе. Из этого туториала вы узнаете, как эффективно работать с полями.
+Aspose.Words for Java — это необходимый инструмент для тех, кто работает с документами Word в приложениях Java. Поля — это заполнители, которые могут хранить динамические данные в вашем документе. Этот урок покажет вам, как эффективно работать с полями.
 
-## 2. Настройка среды
+## 2. Настройка вашей среды
 
- Прежде чем начать, убедитесь, что у вас установлен Aspose.Words для Java. Вы можете скачать его с[здесь](https://releases.aspose.com/words/java/). Кроме того, убедитесь, что в вашей системе установлена Java и интегрированная среда разработки (IDE), такая как Eclipse или IntelliJ IDEA.
+ Прежде чем начать, убедитесь, что у вас установлен Aspose.Words for Java. Вы можете загрузить его с[здесь](https://releases.aspose.com/words/java/). Также убедитесь, что в вашей системе установлены Java и интегрированная среда разработки (IDE), например Eclipse или IntelliJ IDEA.
 
 ## 3. Загрузка документа Word
 
-В вашем Java-приложении вам необходимо загрузить документ Word, с которым вы хотите работать. Вот фрагмент кода, который поможет вам начать:
+В вашем приложении Java вам нужно загрузить документ Word, с которым вы хотите работать. Вот фрагмент кода, с которого можно начать:
 
 ```java
 string dataDir = "Your Document Directory";
@@ -28,17 +28,17 @@ string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
 ```
 
- Заменять`"Your Document Directory"`и`"Your Output Directory"` с соответствующими путями.
+ Заменять`"Your Document Directory"` и`"Your Output Directory"` с соответствующими путями.
 
-## 4. Настройка слияния почты
+## 4. Настройка слияния писем
 
-Aspose.Words для Java обеспечивает отличную поддержку операций слияния почты. Вы можете настроить процесс слияния почты, настроив обработчик событий слияния почты. Вот как это сделать:
+Aspose.Words for Java обеспечивает превосходную поддержку операций слияния почты. Вы можете настроить процесс слияния почты, настроив обработчик событий слияния почты. Вот как это сделать:
 
 ```java
-// Настройте обработчик событий слияния почты для выполнения индивидуальной работы.
+// Настройте обработчик событий слияния почты для выполнения специальной работы.
 doc.getMailMerge().setFieldMergingCallback(new HandleMergeField());
 
-// Обрезать конечные и ведущие пробелы в значениях слияния почты.
+// Обрезайте конечные и начальные пробелы в значениях слияния почты.
 doc.getMailMerge().setTrimWhitespaces(false);
 
 String[] fieldNames = {
@@ -69,9 +69,9 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
 string dataDir = "Your Document Directory";
 string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
-// Настройте обработчик событий слияния почты для выполнения индивидуальной работы.
+// Настройте обработчик событий слияния почты для выполнения специальной работы.
 doc.getMailMerge().setFieldMergingCallback(new HandleMergeField());
-// Обрезать конечные и ведущие пробелы в значениях слияния почты.
+// Обрезайте конечные и начальные пробелы в значениях слияния почты.
 doc.getMailMerge().setTrimWhitespaces(false);
 String[] fieldNames = {
 	"RecipientName", "SenderName", "FaxNumber", "PhoneNumber",
@@ -89,15 +89,15 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
 ```java
     private static class HandleMergeField implements IFieldMergingCallback
     {
-        /// <сводка>
-        /// Этот обработчик вызывается для каждого поля слияния почты, найденного в документе,
+        /// <резюме>
+        /// Этот обработчик вызывается для каждого поля слияния, найденного в документе,
         /// для каждой записи, найденной в источнике данных.
-        /// </сводка>
+        /// </резюме>
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs e) throws Exception
         {
             if (mBuilder == null)
                 mBuilder = new DocumentBuilder(e.getDocument());
-            // Мы решили, что хотим, чтобы все логические значения выводились в виде полей формы флажков.
+            // Мы решили, что хотим, чтобы все логические значения выводились в виде полей формы с флажками.
             if (e.getFieldValue() instanceof /*boolean*/Boolean)
             {
                 // Переместите «курсор» в текущее поле слияния.
@@ -204,19 +204,19 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
         Document doc = new Document();
         DocumentBuilder builder = new DocumentBuilder(doc);
         // Вставьте MERGEFIELD, вложенный в поле IF.
-        // Поскольку оператор поля IF является ложным, результат внутреннего MERGEFIELD не будет отображаться.
+        // Поскольку оператор поля IF является ложным, результат внутреннего MERGEFIELD не будет отображен,
         //и MERGEFIELD не будет получать никаких данных во время слияния почты.
         FieldIf fieldIf = (FieldIf)builder.insertField(" IF 1 = 2 ");
         builder.moveTo(fieldIf.getSeparator());
         builder.insertField(" MERGEFIELD  FullName ");
-        // Мы по-прежнему можем считать поля MERGEFIELD внутри полей IF с ложным оператором, если установим для этого флага значение true.
+        // Мы по-прежнему можем подсчитывать MERGEFIELD внутри полей IF с ложным оператором, если установим этот флаг в значение true.
         doc.getMailMerge().setUnconditionalMergeFieldsAndRegions(true);
         DataTable dataTable = new DataTable();
         dataTable.getColumns().add("FullName");
         dataTable.getRows().add("James Bond");
         doc.getMailMerge().execute(dataTable);
-        // Результат не будет виден в документе, поскольку поле IF имеет значение false.
-        // но внутренний MERGEFILD действительно получил данные.
+        // Результат не будет виден в документе, поскольку поле IF имеет значение false,
+        // но внутренний MERGEFIELD действительно получил данные.
         doc.save("Your Directory Path" + "WorkingWithFields.MailMergeAndConditionalField.docx");
     }
     @Test
@@ -225,7 +225,7 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
         Document doc = new Document("Your Directory Path" + "Mail merge destination - Northwind employees.docx");
         doc.getMailMerge().setFieldMergingCallback(new HandleMergeImageFieldFromBlob());
         Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
-        String connString = "jdbc:ucanaccess://" + getDatabaseDir() + "Northwind.mdb";
+        String connString = "jdbc:ucanaccess://" + getDatabaseDir() + "Борей.mdb";
         Connection connection = DriverManager.getConnection(connString, "Admin", "");
         Statement statement = connection.createStatement();
         ResultSet resultSet = statement.executeQuery("SELECT * FROM Employees");
@@ -239,17 +239,17 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
     {
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs args)
         {
-            // Ничего не делайте.
+            // Ничего не делать.
         }
-        /// <сводка>
-        /// Это вызывается, когда механизм слияния почты обнаруживает в документе поле слияния Image:XXX.
+        /// <резюме>
+        /// Вызывается, когда механизм слияния почты обнаруживает в документе поле слияния Image:XXX.
         /// У вас есть возможность вернуть объект изображения, имя файла или поток, содержащий изображение.
-        /// </сводка>
+        /// </резюме>
         public void /*IFieldMergingCallback.*/imageFieldMerging(ImageFieldMergingArgs e) throws Exception
         {
-            // Значение поля представляет собой массив байтов, просто приведите его и создайте на нем поток.
+            // Значение поля — это массив байтов, просто приведите его к типу и создайте на его основе поток.
             ByteArrayInputStream imageStream = new ByteArrayInputStream((byte[]) e.getFieldValue());
-            // Теперь механизм слияния почты будет извлекать изображение из потока.
+            // Теперь механизм слияния писем извлечет изображение из потока.
             e.setImageStream(imageStream);
         }
     }
@@ -294,11 +294,11 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
     }
     private static class HandleMergeFieldAlternatingRows implements IFieldMergingCallback
     {
-        /// <сводка>
+        /// <резюме>
         /// Вызывается для каждого поля слияния, встречающегося в документе.
-        /// Мы можем либо вернуть некоторые данные в механизм слияния почты, либо сделать с документом что-то еще.
+        /// Мы можем либо вернуть некоторые данные в механизм слияния почты, либо сделать что-то еще с документом.
         /// В этом случае мы изменяем форматирование ячеек.
-        /// </сводка>
+        /// </резюме>
         public void /*IFieldMergingCallback.*/fieldMerging(FieldMergingArgs e)
         {
             if (mBuilder == null)
@@ -309,7 +309,7 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
                 Color rowColor = isOdd(mRowIdx) 
                     ? new Color((213), (227), (235)) 
                     : new Color((242), (242), (242));
-                //На данный момент нет возможности установить свойства ячейки для всей строки, поэтому нам приходится перебирать все ячейки в строке.
+                //На данный момент нет возможности задать свойства ячеек для всей строки, поэтому нам придется перебрать все ячейки в строке.
                 for (int colIdx = 0; colIdx < 4; colIdx++)
                 {
                     mBuilder.moveToCell(0, mRowIdx, colIdx, 0);
@@ -320,22 +320,22 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
         }
         public void /*IFieldMergingCallback.*/imageFieldMerging(ImageFieldMergingArgs args)
         {
-            // Ничего не делайте.
+            // Ничего не делать.
         }
         private DocumentBuilder mBuilder;
         private int mRowIdx;
     }
-    /// <сводка>
+    /// <резюме>
     /// Возвращает true, если значение нечетное; false, если значение четное.
-    /// </сводка>
+    /// </резюме>
     private static boolean isOdd(int value)
     {
         return (value / 2 * 2) == value;
     }
-    /// <сводка>
-    /// Создать DataTable и заполнить ее данными.
+    /// <резюме>
+    /// Создайте DataTable и заполните его данными.
     /// В реальной жизни этот DataTable должен заполняться из базы данных.
-    /// </сводка>
+    /// </резюме>
     private DataTable getSuppliersDataTable()
     {
         DataTable dataTable = new DataTable("Suppliers");
@@ -359,20 +359,20 @@ doc.save(outPath + "WorkingWithFields.MailMergeFormFields.docx");
 
 ## 7. Часто задаваемые вопросы
 
-### Вопрос 1: Где я могу скачать Aspose.Words для Java?
- Вы можете скачать Aspose.Words для Java с сайта[здесь](https://releases.aspose.com/words/java/).
+### В1: Где я могу скачать Aspose.Words для Java?
+ Вы можете загрузить Aspose.Words для Java с сайта[здесь](https://releases.aspose.com/words/java/).
 
-### В2: Как я могу получить временную лицензию на Aspose.Words для Java?
+### В2: Как получить временную лицензию на Aspose.Words для Java?
  Вы можете получить временную лицензию[здесь](https://purchase.aspose.com/temporary-license/).
 
-### Вопрос 3. Где я могу получить поддержку Aspose.Words для Java?
- Для поддержки вы можете посетить форум Aspose.Words.[здесь](https://forum.aspose.com/).
+### В3: Где я могу получить поддержку по Aspose.Words для Java?
+ Для получения поддержки вы можете посетить форум Aspose.Words.[здесь](https://forum.aspose.com/).
 
-### Вопрос 4. Подходит ли Aspose.Words для Java для обработки HTML-содержимого в документах Word?
-Да, Aspose.Words for Java обеспечивает отличную поддержку обработки HTML-содержимого в документах Word.
+### В4: Подходит ли Aspose.Words for Java для обработки HTML-контента в документах Word?
+Да, Aspose.Words для Java обеспечивает превосходную поддержку обработки HTML-контента в документах Word.
 
-### Вопрос 5: Могу ли я использовать Aspose.Words для Java бесплатно?
- Aspose.Words for Java — это коммерческий продукт, но вы можете изучить его возможности, воспользовавшись бесплатной пробной версией.[здесь](https://releases.aspose.com/).
+### В5: Могу ли я использовать Aspose.Words для Java бесплатно?
+ Aspose.Words для Java — коммерческий продукт, но вы можете изучить его возможности с помощью бесплатной пробной версии.[здесь](https://releases.aspose.com/).
 
-Начните работу с Aspose.Words для Java сегодня и возьмите под контроль свои документы Word, как никогда раньше!
+Начните работу с Aspose.Words для Java уже сегодня и получите невиданный ранее контроль над своими документами Word!
 

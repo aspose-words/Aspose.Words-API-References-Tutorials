@@ -80,7 +80,7 @@ catch (Exception e)
 
 ## 結論
 
-これで完了です。Aspose.Words for .NET のストリームからライセンスを適用するのは、手順さえわかれば簡単なプロセスです。このガイドに従うことで、アプリケーションが Aspose.Words の機能を制限なくフル活用できるようになります。問題が発生した場合は、[ドキュメント](https://reference.aspose.com/words/net/)または、[サポートフォーラム](https://forum.aspose.com/c/words/8)楽しいコーディングを！
+これで完了です。Aspose.Words for .NET のストリームからライセンスを適用するのは、手順さえわかれば簡単なプロセスです。このガイドに従うことで、アプリケーションが Aspose.Words の機能を制限なくフル活用できるようになります。問題が発生した場合は、[ドキュメント](https://reference.aspose.com/words/net/)または、[サポートフォーラム](https://forum.aspose.com/c/words/8). 楽しいコーディングを！
 
 ## よくある質問
 

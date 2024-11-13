@@ -38,23 +38,7 @@ string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
 Document doc = new Document(dataDir + "YourDocument.docx");
 ```
 
-## Steg 2: Skapa DocumentBuilder-objekt
-
- Skapa sedan en`DocumentBuilder` objekt för att underlätta dokumenthantering.
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-## Steg 3: Manipulera dokumentinnehåll
-
- Använd`DocumentBuilder` objekt för att manipulera innehållet efter behov. Lägg till exempel till text eller formatering.
-
-```csharp
-builder.Writeln("Insert your text or content manipulation code here!");
-```
-
-## Steg 4: Spara som Markdown
+## Steg 2: Spara som Markdown
 
 Slutligen, spara det ändrade dokumentet som Markdown-format.
 
@@ -75,10 +59,10 @@ Aspose.Words stöder ett brett utbud av dokumentformat inklusive DOCX, DOC, PDF,
 Ja, Aspose.Words tillhandahåller robusta API:er för att manipulera tabeller, bilder, textformatering och mer i dokument.
 
 ### Var kan jag hitta detaljerad dokumentation för Aspose.Words för .NET?
- Detaljerad dokumentation finns tillgänglig[här](https://reference.aspose.com/words/net/).
+Detaljerad dokumentation finns tillgänglig[här](https://reference.aspose.com/words/net/).
 
 ### Hur kan jag få en tillfällig licens för Aspose.Words för .NET?
- Du kan få en tillfällig licens[här](https://purchase.aspose.com/temporary-license/).
+Du kan få en tillfällig licens[här](https://purchase.aspose.com/temporary-license/).
 
 ### Var kan jag få communitysupport för Aspose.Words för .NET?
  Du kan hitta gemenskapsstöd och engagera dig med andra användare[här](https://forum.aspose.com/c/words/8).

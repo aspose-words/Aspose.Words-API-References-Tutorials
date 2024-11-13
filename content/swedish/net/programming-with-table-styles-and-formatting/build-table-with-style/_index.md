@@ -76,7 +76,7 @@ table.StyleOptions = TableStyleOptions.FirstColumn | TableStyleOptions.RowBands 
 
 ## Steg 6: Justera tabellen så att den passar innehållet
 
- För att säkerställa att vårt bord ser snyggt och snyggt ut kan vi använda`AutoFit` metod för att justera tabellen så att den passar dess innehåll.
+För att säkerställa att vårt bord ser snyggt och snyggt ut kan vi använda`AutoFit` metod för att justera tabellen så att den passar dess innehåll.
 
 ```csharp
 table.AutoFit(AutoFitBehavior.AutoFitToContents);

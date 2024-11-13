@@ -1,99 +1,133 @@
 ---
-title: Zachowajcie źródło razem
-linktitle: Zachowajcie źródło razem
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak łączyć dokumenty programu Word za pomocą Aspose.Words dla .NET, zachowując jednocześnie formatowanie. Ten obszerny przewodnik obejmuje wszystko, od konfiguracji po wykonanie.
+title: Trzymaj stół razem
+linktitle: Trzymaj stół razem
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak zapobiegać dzieleniu tabel na strony za pomocą Aspose.Words dla .NET dzięki temu przewodnikowi krok po kroku. Zapewnij schludne, profesjonalnie wyglądające dokumenty Word
 type: docs
 weight: 10
 url: /pl/net/join-and-append-documents/keep-source-together/
 ---
 ## Wstęp
 
-W dzisiejszej erze cyfrowej programowe manipulowanie dokumentami programu Word jest niezbędne w różnych branżach. Aspose.Words dla .NET umożliwia programistom efektywną automatyzację zadań związanych z obsługą dokumentów. Ten kompleksowy przewodnik przeprowadzi Cię przez proces łączenia dokumentów przy zachowaniu formatowania źródłowego przy użyciu Aspose.Words dla .NET.
+Tabele są istotną częścią wielu dokumentów Word, ale czasami możesz natknąć się na sytuację, w której tabela dzieli się na dwie strony. Może to zakłócić przepływ dokumentu i wpłynąć na jego czytelność. Czy nie byłoby miło, gdyby istniał sposób na utrzymanie całej tabeli razem na jednej stronie? Cóż, dzięki Aspose.Words dla .NET istnieje proste rozwiązanie tego problemu! W tym samouczku pokażemy, jak zapobiec rozdzielaniu się tabel na strony, zapewniając, że dokument wygląda schludnie i profesjonalnie.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Przed przystąpieniem do łączenia dokumentów za pomocą Aspose.Words dla .NET upewnij się, że posiadasz następujące elementy:
+Zanim przejdziemy do samouczka, upewnijmy się, że masz wszystko, czego potrzebujesz, aby płynnie z niego korzystać.
 
-- Visual Studio: zintegrowane środowisko programistyczne (IDE) dla programowania .NET.
-- Aspose.Words dla .NET: Zainstalowany i skonfigurowany w Twoim środowisku programistycznym.
-- Znajomość języka C#: Podstawowa znajomość języka programowania C#.
+### Aspose.Words dla biblioteki .NET
 
-## Importuj przestrzenie nazw
+Najpierw musisz zainstalować Aspose.Words dla .NET. Jest to potężna biblioteka, która umożliwia programową pracę z dokumentami Word.
 
-Aby rozpocząć, zaimportuj niezbędne przestrzenie nazw:
+- [Pobierz Aspose.Words dla .NET](https://releases.aspose.com/words/net/)
+
+### Środowisko programistyczne
+
+Powinieneś mieć skonfigurowane środowisko programistyczne do uruchamiania kodu C#, takie jak:
+
+- Visual Studio (dowolna nowsza wersja)
+- .NET Framework 2.0 lub nowszy
+
+### Dokument Word z tabelą
+
+ Będziesz potrzebować dokumentu Word zawierającego tabelę. W tym samouczku będziemy pracować z przykładowym dokumentem o nazwie`"Table spanning two pages.docx"`. Ten plik zawiera tabelę, która obecnie rozciąga się na dwie strony.
+
+### Licencja tymczasowa (opcjonalnie)
+
+ Chociaż Aspose.Words jest dostępny w bezpłatnej wersji próbnej, możesz chcieć skorzystać z[licencja tymczasowa](https://purchase.aspose.com/temporary-license/) aby w pełni wykorzystać potencjał biblioteki.
+
+## Importuj pakiety
+
+Zanim napiszemy jakikolwiek kod, musimy zaimportować niezbędne przestrzenie nazw do pracy z Aspose.Words dla .NET. Dodaj następujące importy na górze pliku kodu:
 
 ```csharp
 using Aspose.Words;
-using Aspose.Words.DocumentBuilder;
+using Aspose.Words.Tables;
 ```
 
-## Krok 1: Załaduj dokumenty
+ Te przestrzenie nazw zapewniają dostęp do klas takich jak`Document`, `Table`, `Cell`i inne, z których skorzystamy w tym samouczku.
 
- Najpierw załaduj dokumenty źródłowe i docelowe do Aspose.Words`Document` obiekty.
+## Krok 1: Załaduj dokument
+
+ Pierwszą rzeczą, którą musimy zrobić, jest załadowanie dokumentu Word zawierającego tabelę. W tym celu użyjemy`Document` klasa z Aspose.Words. Ta klasa pozwala programowo otwierać i manipulować plikami Word.
 
 ```csharp
-// Ścieżka do katalogu dokumentów
-string dataDir = "YOUR_DOCUMENT_DIRECTORY/";
+// Ścieżka do katalogu dokumentów.
+string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Załaduj dokumenty źródłowe i docelowe
-Document srcDoc = new Document(dataDir + "Document source.docx");
-Document dstDoc = new Document(dataDir + "Document destination with list.docx");
+Document doc = new Document(dataDir + "Table spanning two pages.docx");
 ```
 
-## Krok 2: Ustaw początek sekcji
+ W tym fragmencie kodu określamy lokalizację naszego dokumentu. Zastąp`"YOUR DOCUMENTS DIRECTORY"` z rzeczywistym katalogiem, w którym przechowywany jest Twój dokument.
 
-Skonfiguruj początek sekcji, aby zapewnić ciągły przepływ treści dokumentu źródłowego po dokumencie docelowym.
+## Krok 2: Uzyskaj dostęp do tabeli
+
+Po załadowaniu dokumentu następnym krokiem jest dostęp do tabeli, którą chcemy zachować razem. W tym przykładzie zakładamy, że tabela jest pierwszą tabelą w dokumencie.
 
 ```csharp
-// Ustaw dokument źródłowy tak, aby pojawiał się bezpośrednio po treści dokumentu docelowego
-srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
+Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 ```
 
-## Krok 3: Trzymaj akapity razem
+ Ta linia kodu znajduje pierwszą tabelę w dokumencie.`GetChild` Metoda pobiera określony typ węzła, który w tym przypadku jest`NodeType.Table` . Ten`0` oznacza, że chcemy pierwszej tabeli i`true`flaga zapewnia, że przeszukujemy rekurencyjnie wszystkie węzły podrzędne.
 
-Aby zachować integralność formatowania, zaznacz każdy akapit w dokumencie źródłowym, aby pozostał przy następnym akapicie.
+## Krok 3: Pętla przez komórki tabeli
+
+Teraz musimy przejść przez każdą komórkę w tabeli. Ponieważ tabela zawiera wiele wierszy, a każdy wiersz zawiera wiele komórek, przejdziemy przez każdą komórkę i upewnimy się, że nie zostanie podzielona na strony.
 
 ```csharp
-foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
+foreach (Cell cell in table.GetChildNodes(NodeType.Cell, true))
 {
-    para.ParagraphFormat.KeepWithNext = true;
-}
+    cell.EnsureMinimum();
 ```
 
-## Krok 4: Dołącz dokumenty
+ Tutaj,`GetChildNodes` pobiera wszystkie komórki w tabeli i przechodzimy przez każdą z nich.`EnsureMinimum()` Metoda ta zapewnia, że każda komórka zawiera co najmniej jeden akapit, gdyż pusta komórka może później powodować problemy.
 
- Połącz dokumenty za pomocą`AppendDocument` metodę, zapewniając zachowanie formatowania dokumentu źródłowego.
+## Krok 4: Ustaw właściwość KeepWithNext
+
+ Aby zapobiec dzieleniu tabeli na strony, musimy ustawić`KeepWithNext` właściwość dla każdego akapitu w tabeli. Ta właściwość zapewnia, że akapit pozostaje z następnym akapitem, skutecznie zapobiegając podziałom stron między nimi.
 
 ```csharp
-dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
+    foreach (Paragraph para in cell.Paragraphs)
+        if (!(cell.ParentRow.IsLastRow && para.IsEndOfCell))
+            para.ParagraphFormat.KeepWithNext = true;
 ```
 
-## Krok 5: Zapisz scalony dokument
+ Ta pętla sprawdza każdy akapit wewnątrz każdej komórki. Warunek zapewnia, że nie stosujemy`KeepWithNext`właściwość do ostatniego akapitu w ostatnim wierszu. W przeciwnym wypadku właściwość nie miałaby żadnego efektu, ponieważ nie ma następnego akapitu.
 
-Na koniec zapisz scalony dokument w żądanej lokalizacji.
+## Krok 5: Zapisz dokument
+
+ Na koniec, po zastosowaniu`KeepWithNext` nieruchomość, musimy zapisać zmodyfikowany dokument.
 
 ```csharp
-dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
+doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 ```
+
+Ten wiersz zapisuje zaktualizowany dokument pod nową nazwą, zachowując oryginalny plik. Teraz możesz otworzyć wynikowy plik i zobaczyć, że tabela nie jest już podzielona na dwie strony!
 
 ## Wniosek
 
-Podsumowując, Aspose.Words dla .NET upraszcza zadanie łączenia dokumentów programu Word, zachowując jednocześnie oryginalne formatowanie. Możliwość ta ma kluczowe znaczenie w zastosowaniach wymagających zautomatyzowanego przetwarzania dokumentów.
+I masz to! Postępując zgodnie z tymi prostymi krokami, możesz łatwo zapobiec dzieleniu tabel na strony w dokumentach Worda za pomocą Aspose.Words dla .NET. Niezależnie od tego, czy pracujesz nad raportami, umowami czy innymi dokumentami, zachowanie tabel w stanie nienaruszonym zapewnia bardziej dopracowany, profesjonalny wygląd.
 
-## Często zadawane pytania
+Piękno Aspose.Words polega na jego elastyczności i łatwości użytkowania, co pozwala na manipulowanie dokumentami Word programowo, bez konieczności instalowania programu Microsoft Word na komputerze. Teraz, gdy już wiesz, jak przechowywać tabele razem, poznaj inne funkcje biblioteki, aby przenieść swoje umiejętności przetwarzania dokumentów na wyższy poziom!
 
-### Czy Aspose.Words for .NET może łączyć dokumenty w różnych formatach?
-Tak, może łączyć dokumenty niezależnie od ich formatu, zachowując formatowanie źródłowe.
+## Najczęściej zadawane pytania
 
-### Czy Aspose.Words dla .NET obsługuje efektywne łączenie dużych dokumentów?
-Absolutnie obsługuje duże dokumenty z optymalną wydajnością.
+### Dlaczego po użyciu tego kodu moja tabela nadal jest dzielona na strony?
 
-### Czy dostępna jest wersja próbna Aspose.Words dla .NET?
- Tak, możesz pobrać bezpłatną wersję próbną[Tutaj](https://releases.aspose.com/).
+ Jeśli stół nadal się łamie, upewnij się, że zastosowałeś`KeepWithNext` właściwość poprawnie. Sprawdź dwukrotnie, czy wszystkie akapity oprócz ostatniego w każdej komórce mają ustawioną tę właściwość.
 
-### Jak mogę uzyskać pomoc techniczną dla Aspose.Words dla .NET?
- Wsparcie techniczne jest dostępne poprzez[Forum Aspose.Words](https://forum.aspose.com/c/words/8).
+### Czy mogę zachować razem tylko określone wiersze?
 
-### Czy mogę kupić tymczasową licencję na Aspose.Words dla .NET?
- Tak, możesz nabyć licencję tymczasową[Tutaj](https://purchase.aspose.com/temporary-license/).
+ Tak, możesz selektywnie zastosować`KeepWithNext` właściwości do określonych wierszy lub akapitów w tabeli, aby kontrolować, które części powinny pozostać razem.
+
+### Czy ta metoda działa w przypadku dużych tabel?
+
+przypadku bardzo dużych tabel Word może nadal dzielić je na strony, jeśli nie ma wystarczająco dużo miejsca, aby zmieścić całą tabelę na jednej stronie. Rozważ dostosowanie formatowania lub marginesów tabeli, aby pomieścić większe tabele.
+
+### Czy mogę stosować tę metodę w przypadku innych formatów dokumentów?
+
+Tak! Aspose.Words dla .NET obsługuje wiele formatów, takich jak DOC, DOCX, PDF i inne. Ta sama metoda działa we wszystkich formatach obsługujących tabele.
+
+### Czy Aspose.Words dla .NET jest darmową biblioteką?
+
+ Aspose.Words for .NET oferuje bezpłatną wersję próbną, ale aby uzyskać pełny dostęp do wszystkich funkcji, musisz kupić licencję. Możesz zapoznać się z opcjami licencjonowania na stronie[Strona zakupu Aspose](https://purchase.aspose.com/buy).

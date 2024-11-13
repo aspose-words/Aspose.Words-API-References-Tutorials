@@ -68,7 +68,7 @@ StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.ComboBox, Mar
 A kombinált doboz nem sok hasznot hoz, ha nem választhat elemeket. Adjunk hozzá néhány elemet.
 
 ```csharp
-// Adjon hozzá elemeket a ComboBoxhoz
+// Tételek hozzáadása a ComboBoxhoz
 sdt.ListItems.Add(new SdtListItem("Choose an item", "-1"));
 sdt.ListItems.Add(new SdtListItem("Item 1", "1"));
 sdt.ListItems.Add(new SdtListItem("Item 2", "2"));

@@ -53,14 +53,13 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Här anger du katalogen där dokumentet ska sparas och initialiserar`Document`och`DocumentBuilder` föremål.
+ Här anger du katalogen där dokumentet ska sparas och initialiserar`Document` och`DocumentBuilder` föremål.
 
 ## Steg 2: Sätt in den första tabellcellen med absolut bredd
 
 Infoga den första cellen i tabellen med en fast bredd på 40 punkter. Detta kommer att säkerställa att denna cell alltid bibehåller en bredd på 40 punkter oavsett tabellstorlek.
 
 ```csharp
-
 // Infoga en cell i absolut storlek.
 builder.InsertCell();
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPoints(40);
@@ -97,7 +96,7 @@ builder.Writeln("Cell automatically sized. The size of this cell is calculated f
 builder.Writeln("In this case the cell will fill up the rest of the available space.");
 ```
 
- De`PreferredWidth.Auto` inställningen tillåter den här cellen att expandera eller dra ihop sig baserat på det utrymme som finns kvar efter att de andra cellerna har tagits med i beräkningen. Detta säkerställer att bordslayouten ser balanserad och professionell ut.
+De`PreferredWidth.Auto` inställningen tillåter den här cellen att expandera eller dra ihop sig baserat på det utrymme som finns kvar efter att de andra cellerna har tagits med i beräkningen. Detta säkerställer att bordslayouten ser balanserad och professionell ut.
 
 ## Steg 5: Slutför och spara dokumentet
 

@@ -48,7 +48,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ここ、`dataDir`最終ファイルを保存するドキュメント ディレクトリへのパスです。`Document`そして`DocumentBuilder` Word 文書の作成と操作に役立つ Aspose.Words のクラスです。
 
-## ステップ2: グラフを挿入する
+## ステップ2: グラフの挿入
 
 見出し: ドキュメントにグラフを追加する
 
@@ -107,7 +107,7 @@ doc.Save(dataDir + "WorkingWithCharts.NumberFormatForAxis.docx");
 ## よくある質問
 
 ### Aspose.Words for .NET とは何ですか?
-Aspose.Words for .NET は、開発者がプログラムによって Word 文書を作成、操作、変換できるようにする強力なライブラリです。
+Aspose.Words for .NET は、開発者がプログラムで Word 文書を作成、操作、変換できるようにする強力なライブラリです。
 
 ### 軸の数字以外のグラフの要素をフォーマットできますか?
 もちろんです! Aspose.Words for .NET を使用すると、タイトルやラベルを書式設定したり、グラフの外観をカスタマイズしたりすることもできます。

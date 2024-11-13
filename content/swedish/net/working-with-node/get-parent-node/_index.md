@@ -9,7 +9,7 @@ url: /sv/net/working-with-node/get-parent-node/
 ---
 ## Introduktion
 
-Har du någonsin undrat hur du kan manipulera dokumentnoder med Aspose.Words för .NET? Nåväl, du är på rätt plats! Idag dyker vi in i en snygg liten funktion: att hämta föräldranoden för en dokumentsektion. Oavsett om du är ny på Aspose.Words eller bara vill höja dina färdigheter i dokumenthantering, har den här steg-för-steg-guiden dig täckt. Redo? Låt oss komma igång!
+Har du någonsin undrat hur du kan manipulera dokumentnoder med Aspose.Words för .NET? Tja, du är på rätt plats! Idag dyker vi in i en snygg liten funktion: att hämta föräldranoden för en dokumentsektion. Oavsett om du är ny på Aspose.Words eller bara vill höja dina färdigheter i dokumenthantering, har den här steg-för-steg-guiden dig täckt. Redo? Låt oss komma igång!
 
 ## Förutsättningar
 

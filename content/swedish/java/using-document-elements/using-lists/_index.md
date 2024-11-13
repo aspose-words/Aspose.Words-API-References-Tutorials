@@ -233,4 +233,4 @@ Ja, du kan konfigurera Aspose.Words för Java för att följa olika Word-dokumen
 Absolut! Aspose.Words för Java stöder avancerad dokumentformatering, inklusive tabeller, bilder och mer. Se dokumentationen för exempel.
 
 ### Var kan jag få en tillfällig licens för Aspose.Words för Java?
- Du kan få en tillfällig licens[här](https://purchase.aspose.com/temporary-license/).
+Du kan få en tillfällig licens[här](https://purchase.aspose.com/temporary-license/).

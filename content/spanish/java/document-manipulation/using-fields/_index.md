@@ -1,8 +1,8 @@
 ---
-title: Usando campos en Aspose.Words para Java
-linktitle: Usando campos
+title: Uso de campos en Aspose.Words para Java
+linktitle: Uso de campos
 second_title: API de procesamiento de documentos Java Aspose.Words
-description: Desbloquee la automatización de documentos con Aspose.Words para Java. Aprenda a fusionar, formatear e insertar imágenes en documentos Java. Guía completa y ejemplos de código para un procesamiento eficiente de documentos.
+description: Desbloquee la automatización de documentos con Aspose.Words para Java. Aprenda a combinar, formatear e insertar imágenes en documentos Java. Guía completa y ejemplos de código para un procesamiento eficiente de documentos.
 type: docs
 weight: 11
 url: /es/java/document-manipulation/using-fields/
@@ -10,15 +10,15 @@ url: /es/java/document-manipulation/using-fields/
  
 ## Introducción al uso de campos en Aspose.Words para Java
 
-En esta guía paso a paso, exploraremos cómo usar campos en Aspose.Words para Java. Los campos son poderosos marcadores de posición que pueden insertar datos dinámicamente en sus documentos. Cubriremos varios escenarios, incluida la combinación de campos básicos, campos condicionales, trabajo con imágenes y formato de filas alternas. Proporcionaremos fragmentos de código Java y explicaciones para cada escenario.
+En esta guía paso a paso, exploraremos cómo usar campos en Aspose.Words para Java. Los campos son marcadores de posición poderosos que pueden insertar datos de forma dinámica en sus documentos. Cubriremos varios escenarios, incluida la combinación básica de campos, los campos condicionales, el trabajo con imágenes y el formato de filas alternas. Proporcionaremos fragmentos de código Java y explicaciones para cada escenario.
 
-## Requisitos previos
+## Prerrequisitos
 
- Antes de comenzar, asegúrese de tener instalado Aspose.Words para Java. Puedes descargarlo desde[aquí](https://releases.aspose.com/words/java/).
+ Antes de comenzar, asegúrese de tener instalado Aspose.Words para Java. Puede descargarlo desde[aquí](https://releases.aspose.com/words/java/).
 
-## Fusión de campos básicos
+## Fusión básica de campos
 
-Comencemos con un ejemplo simple de combinación de campos. Tenemos una plantilla de documento con campos de combinación de correspondencia y queremos completarlos con datos. Aquí está el código Java para lograr esto:
+Comencemos con un ejemplo sencillo de combinación de campos. Tenemos una plantilla de documento con campos de combinación de correspondencia y queremos rellenarlos con datos. Este es el código Java para lograrlo:
 
 ```java
 Document doc = new Document("Mail merge template.docx");
@@ -35,11 +35,11 @@ doc.getMailMerge().execute(fieldNames, fieldValues);
 doc.save("MergedDocument.docx");
 ```
 
- En este código, cargamos una plantilla de documento, configuramos campos de combinación de correspondencia y ejecutamos la combinación. El`HandleMergeField` La clase maneja tipos de campos específicos, como casillas de verificación y contenido del cuerpo HTML.
+ En este código, cargamos una plantilla de documento, configuramos campos de combinación de correspondencia y ejecutamos la combinación.`HandleMergeField` La clase maneja tipos de campos específicos, como casillas de verificación y contenido del cuerpo HTML.
 
 ## Campos condicionales
 
-Puede utilizar campos condicionales en sus documentos. Insertemos un campo IF dentro de nuestro documento y rellenémoslo con datos:
+Puede utilizar campos condicionales en sus documentos. Insertemos un campo IF dentro de nuestro documento y complételo con datos:
 
 ```java
 Document doc = new Document("ConditionalFieldTemplate.docx");
@@ -52,16 +52,16 @@ dataTable.getRows().add("James Bond");
 doc.getMailMerge().execute(dataTable);
 ```
 
- Este código inserta un campo IF y un MERGEFIELD dentro de él. Aunque la declaración IF es falsa, establecemos`setUnconditionalMergeFieldsAndRegions(true)` para contar MERGEFIELD dentro de campos IF de declaración falsa durante la combinación de correspondencia.
+ Este código inserta un campo IF y un MERGEFIELD dentro de él. Aunque la declaración IF es falsa, establecemos`setUnconditionalMergeFieldsAndRegions(true)` para contar los MERGEFIELD dentro de los campos IF con declaraciones falsas durante la combinación de correspondencia.
 
 ## Trabajar con imágenes
 
-Puede fusionar imágenes en sus documentos. A continuación se muestra un ejemplo de cómo fusionar imágenes de una base de datos en un documento:
+Puede fusionar imágenes en sus documentos. A continuación, se muestra un ejemplo de cómo fusionar imágenes de una base de datos en un documento:
 
 ```java
 Document doc = new Document("ImageMergeTemplate.docx");
 doc.getMailMerge().setFieldMergingCallback(new HandleMergeImageFieldFromBlob());
-String connString = "jdbc:ucanaccess://" + getDatabaseDir() + "Neptuno.mdb";
+String connString = "jdbc:ucanaccess://" + getDatabaseDir() + "Northwind.mdb";
 Connection connection = DriverManager.getConnection(connString, "Admin", "");
 Statement statement = connection.createStatement();
 ResultSet resultSet = statement.executeQuery("SELECT * FROM Employees");
@@ -73,9 +73,9 @@ doc.save("MergedDocumentWithImages.docx");
 
 En este código, cargamos una plantilla de documento con campos de combinación de imágenes y los completamos con imágenes de una base de datos.
 
-## Formato de fila alterna
+## Formato de fila alternada
 
-Puede formatear filas alternas en una tabla. He aquí cómo hacerlo:
+Puedes dar formato a filas alternas en una tabla. A continuación, te indicamos cómo hacerlo:
 
 ```java
 Document doc = new Document("AlternatingRowsTemplate.docx");
@@ -85,17 +85,17 @@ doc.getMailMerge().executeWithRegions(dataTable);
 doc.save("FormattedDocument.doc");
 ```
 
- Este código da formato a las filas de una tabla con colores alternos según el`CompanyName` campo.
+ Este código formatea filas en una tabla con colores alternos según el`CompanyName` campo.
 
 ## Conclusión
 
-Aspose.Words para Java proporciona potentes funciones para trabajar con campos en sus documentos. Puede realizar una combinación de campos básica, trabajar con campos condicionales, insertar imágenes y formatear tablas con facilidad. Incorpore estas técnicas en sus procesos de automatización documental para crear documentos dinámicos y personalizados.
+Aspose.Words para Java ofrece potentes funciones para trabajar con campos en sus documentos. Puede realizar fusiones de campos básicas, trabajar con campos condicionales, insertar imágenes y dar formato a tablas con facilidad. Incorpore estas técnicas a sus procesos de automatización de documentos para crear documentos dinámicos y personalizados.
 
 ## Preguntas frecuentes
 
-### ¿Puedo realizar una combinación de correo con Aspose.Words para Java?
+### ¿Puedo realizar la fusión de correspondencia con Aspose.Words para Java?
 
-Sí, puede realizar la combinación de correo en Aspose.Words para Java. Puede crear plantillas de documentos con campos de combinación de correspondencia y luego completarlas con datos de diversas fuentes. Consulte los ejemplos de código proporcionados para obtener detalles sobre cómo realizar la combinación de correspondencia.
+Sí, puede realizar la combinación de correspondencia en Aspose.Words para Java. Puede crear plantillas de documentos con campos de combinación de correspondencia y luego completarlos con datos de varias fuentes. Consulte los ejemplos de código proporcionados para obtener detalles sobre cómo realizar la combinación de correspondencia.
 
 ### ¿Cómo puedo insertar imágenes en un documento usando Aspose.Words para Java?
 
@@ -103,20 +103,20 @@ Para insertar imágenes en un documento, puede utilizar la biblioteca Aspose.Wor
 
 ### ¿Cuál es el propósito de los campos condicionales en Aspose.Words para Java?
 
-Los campos condicionales en Aspose.Words para Java le permiten crear documentos dinámicos al incluir contenido condicionalmente según ciertos criterios. En el ejemplo proporcionado, se utiliza un campo IF para incluir datos condicionalmente en el documento durante una combinación de correspondencia según el resultado de la declaración IF.
+Los campos condicionales en Aspose.Words para Java permiten crear documentos dinámicos mediante la inclusión de contenido de forma condicional según determinados criterios. En el ejemplo proporcionado, se utiliza un campo IF para incluir datos de forma condicional en el documento durante una combinación de correspondencia según el resultado de la declaración IF.
 
 ### ¿Cómo puedo formatear filas alternas en una tabla usando Aspose.Words para Java?
 
- Para formatear filas alternas en una tabla, puede usar Aspose.Words para Java para aplicar un formato específico a las filas según sus criterios. En la sección "Formato de filas alternas", encontrará un ejemplo que demuestra cómo dar formato a filas con colores alternos según el`CompanyName` campo.
+ Para dar formato a filas alternadas en una tabla, puede utilizar Aspose.Words para Java para aplicar un formato específico a las filas según sus criterios. En la sección "Formato de filas alternadas", encontrará un ejemplo que demuestra cómo dar formato a filas con colores alternados según los criterios de la tabla.`CompanyName` campo.
 
 ### ¿Dónde puedo encontrar más documentación y recursos para Aspose.Words para Java?
 
- Puede encontrar documentación completa, ejemplos de código y tutoriales para Aspose.Words para Java en el sitio web de Aspose:[Aspose.Words para la documentación de Java](https://reference.aspose.com/words/java/). Este recurso le ayudará a explorar características y funcionalidades adicionales de la biblioteca.
+ Puede encontrar documentación completa, ejemplos de código y tutoriales de Aspose.Words para Java en el sitio web de Aspose:[Documentación de Aspose.Words para Java](https://reference.aspose.com/words/java/)Este recurso le ayudará a explorar características y funcionalidades adicionales de la biblioteca.
 
 ### ¿Cómo puedo obtener soporte o buscar ayuda con Aspose.Words para Java?
 
- Si necesita ayuda, tiene preguntas o encuentra problemas al usar Aspose.Words para Java, puede visitar el foro de Aspose.Words para obtener soporte y debates de la comunidad:[Foro Aspose.Words](https://forum.aspose.com/c/words).
+ Si necesita ayuda, tiene preguntas o encuentra problemas mientras usa Aspose.Words para Java, puede visitar el foro de Aspose.Words para obtener soporte y debates de la comunidad:[Foro Aspose.Words](https://forum.aspose.com/c/words).
 
 ### ¿Aspose.Words para Java es compatible con diferentes IDE de Java?
 
-Sí, Aspose.Words para Java es compatible con varios entornos de desarrollo integrado (IDE) de Java, como Eclipse, IntelliJ IDEA y NetBeans. Puede integrarlo en su IDE preferido para optimizar sus tareas de procesamiento de documentos.
+Sí, Aspose.Words para Java es compatible con varios entornos de desarrollo integrados (IDE) de Java, como Eclipse, IntelliJ IDEA y NetBeans. Puede integrarlo en su IDE preferido para agilizar sus tareas de procesamiento de documentos.

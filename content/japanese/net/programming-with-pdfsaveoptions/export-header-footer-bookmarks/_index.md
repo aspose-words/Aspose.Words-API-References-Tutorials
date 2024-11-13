@@ -15,7 +15,7 @@ Word 文書を PDF に変換することは、特に文書の書式設定を保�
 
 始める前に、以下のものを用意しておいてください。
 
-- Aspose.Words for .NET: Aspose.Words for .NET がインストールされている必要があります。ここからダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
+- Aspose.Words for .NET: Aspose.Words for .NET がインストールされている必要があります。ダウンロードはこちらから行えます。[ここ](https://releases.aspose.com/words/net/).
 - 開発環境: 開発環境を設定します。Visual Studio またはその他の .NET 互換 IDE を使用できます。
 - C# の基礎知識: コード例に従うには、C# プログラミングの知識が必要です。
 
@@ -76,7 +76,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", 
 
 ### ドキュメントの本文からもブックマークをエクスポートしたい場合はどうすればよいでしょうか?
 
-設定できるのは`OutlineOptions`で`PdfSaveOptions`ドキュメントの本文からブックマークを含めます。
+設定できるのは`OutlineOptions`で`PdfSaveOptions`ドキュメントの本文からブックマークを追加します。
 
 ### PDF 内のブックマーク レベルをカスタマイズすることは可能ですか?
 

@@ -64,7 +64,7 @@ Teman i Word-dokument innehåller ofta inställningar för olika typer av tecken
 Console.WriteLine(theme.MajorFonts.Latin);
 ```
 
- De`MajorFonts` egenskapen ger tillgång till de viktigaste teckensnittsinställningarna. I det här exemplet hämtar vi specifikt det latinska teckensnittet som används i temat. Du kan använda liknande kod för att få andra stora typsnitt som östasiatiska eller komplexa skriptteckensnitt.
+De`MajorFonts` egenskapen ger tillgång till de viktigaste teckensnittsinställningarna. I det här exemplet hämtar vi specifikt det latinska teckensnittet som används i temat. Du kan använda liknande kod för att få andra stora typsnitt som östasiatiska eller komplexa skriptteckensnitt.
 
 ## Steg 4: Hämta mindre teckensnitt
 
@@ -84,7 +84,7 @@ Teman definierar också olika färger som används för accenter i dokumentet. F
 Console.WriteLine(theme.Colors.Accent1);
 ```
 
- De`Colors` egendom av`Theme` class låter dig hämta olika färgaccenter definierade i temat, så att du kan hantera och tillämpa konsekventa färgscheman i dina dokument.
+De`Colors` egendom av`Theme` class låter dig hämta olika färgaccenter definierade i temat, så att du kan hantera och tillämpa konsekventa färgscheman i dina dokument.
 
 ## Slutsats
 

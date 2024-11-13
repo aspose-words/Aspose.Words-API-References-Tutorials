@@ -13,5 +13,5 @@ Words Processing with MarkdownSaveOptions は、Aspose.Words ライブラリ for
  ## チュートリアル
 | タイトル | 説明 |
 | --- | --- |
-| [表の内容を揃えて Markdown にエクスポートする](./export-into-markdown-with-table-content-alignment/) | Aspose.Words for .NET を使用して、整列したテーブルを含む Word 文書を Markdown にエクスポートする方法を学びます。完璧な Markdown テーブルを作成するには、ステップバイステップのガイドに従ってください。 |
+| [表のコンテンツの位置合わせをしながら Markdown にエクスポートする](./export-into-markdown-with-table-content-alignment/) | Aspose.Words for .NET を使用して、整列したテーブルを含む Word 文書を Markdown にエクスポートする方法を学びます。完璧な Markdown テーブルを作成するには、ステップバイステップのガイドに従ってください。 |
 | [画像フォルダの設定](./set-images-folder/) | Aspose.Words for .NET を使用して、適切なテーブル配置で Word 文書を Markdown に変換します。完璧な結果を得るには、詳細なガイドに従ってください。 |

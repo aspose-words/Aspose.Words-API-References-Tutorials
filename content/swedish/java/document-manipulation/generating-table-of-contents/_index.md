@@ -66,13 +66,13 @@ for (Paragraph para : (Iterable<Paragraph>) doc.getChildNodes(NodeType.PARAGRAPH
     if (para.getParagraphFormat().getStyle().getStyleIdentifier() >= StyleIdentifier.TOC_1 &&
         para.getParagraphFormat().getStyle().getStyleIdentifier() <= StyleIdentifier.TOC_9)
     {
-        //Få den första fliken som används i det här stycket, som justerar sidnumren.
+        // Få den första fliken som används i det här stycket, som justerar sidnumren.
         TabStop tab = para.getParagraphFormat().getTabStops().get(0);
         
         // Ta bort den gamla fliken.
         para.getParagraphFormat().getTabStops().removeByPosition(tab.getPosition());
         
-        // Sätt in en ny flik vid en modifierad position (t.ex. 50 enheter till vänster).
+        //Sätt in en ny flik vid en modifierad position (t.ex. 50 enheter till vänster).
         para.getParagraphFormat().getTabStops().add(tab.getPosition() - 50.0, tab.getAlignment(), tab.getLeader());
     }
 }

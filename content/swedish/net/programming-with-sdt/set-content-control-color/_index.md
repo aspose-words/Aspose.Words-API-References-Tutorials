@@ -45,7 +45,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Structured document tags.docx");
 ```
 
-## Steg 3: Få tillgång till strukturerade dokumenttaggen
+## Steg 3: Gå till Structured Document Tag
 
 Hämta Structured Document Tag (SDT) från dokumentet. I det här exemplet kommer vi åt den första SDT:en:
 
@@ -93,4 +93,4 @@ Aspose.Words stöder inte direkt händelsehantering för SDT. Du kan dock hanter
 
 ### Är det möjligt att ta bort en SDT från dokumentet?
 
- Ja, du kan ta bort en SDT genom att ringa`Remove()` metod på SDT:ns föräldranod.
+ Ja, du kan ta bort en SDT genom att ringa till`Remove()` metod på SDT:ns föräldranod.

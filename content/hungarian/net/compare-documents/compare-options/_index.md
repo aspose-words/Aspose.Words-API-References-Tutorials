@@ -1,6 +1,6 @@
 ---
-title: Hasonlítsa össze a Word-dokumentum beállításait
-linktitle: Hasonlítsa össze a Word-dokumentum beállításait
+title: Hasonlítsa össze a Word dokumentum beállításait
+linktitle: Hasonlítsa össze a Word dokumentum beállításait
 second_title: Aspose.Words Document Processing API
 description: Részletes útmutatónkból megtudhatja, hogyan hasonlíthatja össze a Word dokumentumokat az Aspose.Words for .NET használatával. Gondoskodjon a dokumentumok konzisztenciájáról könnyedén.
 type: docs

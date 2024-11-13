@@ -17,7 +17,7 @@ Word 文書の表セル内のテキストの周りに少し余分なスペース
 
 1. Aspose.Words for .NET: まだダウンロードしていない場合は、Aspose.Words for .NETを以下のサイトからダウンロードしてインストールしてください。[Aspose リリース ページ](https://releases.aspose.com/words/net/).
 2. 開発環境: マシンに Visual Studio などの IDE をセットアップする必要があります。
-3. C# の基本知識: すべてを説明しますが、C# の基本を理解していると理解しやすくなります。
+3. C# の基本知識: すべてを説明しますが、C# の基本を理解しておくと理解しやすくなります。
 
 ## 名前空間のインポート
 
@@ -87,7 +87,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetCellPadding.docx");
 
 ## よくある質問
 
-### 表内の各セルに異なるパディング値を設定できますか?
+### テーブル内の各セルに異なるパディング値を設定できますか?
 はい、各セルに異なるパディング値を設定するには、`SetPaddings`メソッドを各セルに個別に適用します。
 
 ### Aspose.Words のパディング値に使用される単位は何ですか?

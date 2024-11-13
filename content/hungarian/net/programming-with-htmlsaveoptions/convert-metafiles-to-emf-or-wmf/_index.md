@@ -71,7 +71,7 @@ Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(html)), load
 
 ## 4. lépés: Állítsa be a HtmlSaveOptions beállítást a metafile formátumhoz
 
- A dokumentum megfelelő metafájl formátumban történő mentéséhez használjuk`HtmlSaveOptions` . Tessék, beállítjuk`MetafileFormat` hogy`HtmlMetafileFormat.Png` , de ezt módosíthatja`Emf` vagy`Wmf` az Ön igényeitől függően.
+ A dokumentum megfelelő metafájl formátumban történő mentéséhez használjuk`HtmlSaveOptions` . Tessék, beállítjuk`MetafileFormat` hogy`HtmlMetafileFormat.Png` , de ezt módosíthatja`Emf` vagy`Wmf` igényeitől függően.
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { MetafileFormat = HtmlMetafileFormat.Png };

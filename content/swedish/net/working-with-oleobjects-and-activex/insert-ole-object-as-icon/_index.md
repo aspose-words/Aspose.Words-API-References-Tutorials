@@ -9,7 +9,7 @@ url: /sv/net/working-with-oleobjects-and-activex/insert-ole-object-as-icon/
 ---
 ## Introduktion
 
-Har du någonsin behövt bädda in ett OLE-objekt, som en PowerPoint-presentation eller ett Excel-kalkylblad, i ett Word-dokument, men ville att det skulle visas som en snygg liten ikon snarare än ett helt objekt? Nåväl, du är på rätt plats! I den här handledningen går vi igenom hur du infogar ett OLE-objekt som en ikon i ett Word-dokument med Aspose.Words för .NET. I slutet av den här guiden kommer du att sömlöst kunna integrera OLE-objekt i dina dokument, vilket gör dem mer interaktiva och visuellt tilltalande.
+Har du någonsin behövt bädda in ett OLE-objekt, som en PowerPoint-presentation eller ett Excel-kalkylblad, i ett Word-dokument, men ville att det skulle visas som en snygg liten ikon snarare än ett helt objekt? Tja, du är på rätt plats! I den här handledningen går vi igenom hur du infogar ett OLE-objekt som en ikon i ett Word-dokument med Aspose.Words för .NET. I slutet av den här guiden kommer du att sömlöst kunna integrera OLE-objekt i dina dokument, vilket gör dem mer interaktiva och visuellt tilltalande.
 
 ## Förutsättningar
 

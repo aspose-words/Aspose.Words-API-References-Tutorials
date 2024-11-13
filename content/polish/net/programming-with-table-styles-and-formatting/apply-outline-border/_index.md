@@ -1,27 +1,27 @@
 ---
 title: Zastosuj obramowanie konturu
 linktitle: Zastosuj obramowanie konturu
-second_title: Aspose.Words API do przetwarzania dokumentów
-description: Dowiedz się, jak zastosować obramowanie do tabeli w programie Word przy użyciu Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby uzyskać idealne formatowanie tabeli.
+second_title: Aspose.Words API przetwarzania dokumentów
+description: Dowiedz się, jak zastosować obramowanie konturowe do tabeli w programie Word za pomocą Aspose.Words dla .NET. Postępuj zgodnie z naszym przewodnikiem krok po kroku, aby uzyskać idealne formatowanie tabeli.
 type: docs
 weight: 10
 url: /pl/net/programming-with-table-styles-and-formatting/apply-outline-border/
 ---
 ## Wstęp
 
-dzisiejszym samouczku zagłębiamy się w świat manipulacji dokumentami za pomocą Aspose.Words dla .NET. W szczególności nauczymy się, jak zastosować obramowanie konturowe do tabeli w dokumencie programu Word. Jest to fantastyczna umiejętność, którą warto mieć w swoim zestawie narzędzi, jeśli często pracujesz z automatycznym generowaniem i formatowaniem dokumentów. Zacznijmy więc podróż, dzięki której Twoje stoły będą nie tylko funkcjonalne, ale także atrakcyjne wizualnie.
+dzisiejszym samouczku zanurzymy się w świat manipulacji dokumentami przy użyciu Aspose.Words dla .NET. Dokładniej, nauczymy się, jak zastosować obramowanie konturowe do tabeli w dokumencie Word. To fantastyczna umiejętność, którą warto mieć w swoim zestawie narzędzi, jeśli często pracujesz z automatycznym generowaniem i formatowaniem dokumentów. Zacznijmy więc tę podróż, aby uczynić tabele nie tylko funkcjonalnymi, ale także atrakcyjnymi wizualnie.
 
-## Warunki wstępne
+## Wymagania wstępne
 
-Zanim przejdziemy do kodu, potrzebujemy kilku rzeczy:
+Zanim przejdziemy do kodu, jest kilka rzeczy, których będziesz potrzebować:
 
 1.  Aspose.Words dla .NET: Musisz mieć zainstalowany Aspose.Words dla .NET. Możesz go pobrać[Tutaj](https://releases.aspose.com/words/net/).
-2. Środowisko programistyczne: odpowiednie środowisko programistyczne, takie jak Visual Studio.
-3. Podstawowa znajomość języka C#: Podstawowa znajomość języka C# pomoże Ci śledzić tutorial.
+2. Środowisko programistyczne: odpowiednie środowisko programistyczne, np. Visual Studio.
+3. Podstawowa znajomość języka C#: Podstawowa znajomość języka C# ułatwi Ci korzystanie z samouczka.
 
 ## Importuj przestrzenie nazw
 
-Na początek upewnij się, że zaimportowano niezbędne przestrzenie nazw. Jest to kluczowe dla uzyskania dostępu do funkcjonalności Aspose.Words.
+Na początek upewnij się, że masz zaimportowane niezbędne przestrzenie nazw. Jest to kluczowe dla dostępu do funkcjonalności Aspose.Words.
 
 ```csharp
 using System;
@@ -30,7 +30,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Podzielmy proces na proste, łatwe do wykonania etapy.
+Podzielmy ten proces na proste, łatwe do opanowania kroki.
 
 ## Krok 1: Załaduj dokument
 
@@ -43,7 +43,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
- W tym kroku używamy`Document` class z Aspose.Words, aby załadować istniejący dokument. Zastępować`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką, w której przechowywany jest dokument.
+ W tym kroku używamy`Document` klasa z Aspose.Words do załadowania istniejącego dokumentu. Zastąp`"YOUR DOCUMENT DIRECTORY"` z rzeczywistą ścieżką, pod którą przechowywany jest Twój dokument.
 
 ## Krok 2: Uzyskaj dostęp do tabeli
 
@@ -53,9 +53,9 @@ Następnie musimy uzyskać dostęp do konkretnej tabeli, którą chcemy sformato
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
- Tutaj,`GetChild` metoda pobiera pierwszą tabelę w dokumencie. Parametry`NodeType.Table, 0, true` upewnij się, że otrzymaliśmy poprawny typ węzła.
+ Tutaj,`GetChild` Metoda pobiera pierwszą tabelę w dokumencie. Parametry`NodeType.Table, 0, true` upewnić się, że otrzymamy właściwy typ węzła.
 
-## Krok 3: Wyrównaj stół
+## Krok 3: Wyrównaj tabelę
 
 Teraz wyśrodkujmy tabelę na stronie.
 
@@ -63,21 +63,21 @@ Teraz wyśrodkujmy tabelę na stronie.
 table.Alignment = TableAlignment.Center;
 ```
 
-Ten krok zapewnia dokładne wyśrodkowanie stołu i nadaje mu profesjonalny wygląd.
+Ten krok gwarantuje, że stół zostanie starannie wyśrodkowany, co nada mu profesjonalny wygląd.
 
-## Krok 4: Usuń istniejące granice
+## Krok 4: Wyczyść istniejące granice
 
-Zanim zastosujemy nowe granice, musimy oczyścić te już istniejące.
+Zanim ustalimy nowe granice, musimy oczyścić wszystkie istniejące.
 
 ```csharp
 table.ClearBorders();
 ```
 
-Wyczyszczenie granic gwarantuje, że nasze nowe obramowania zostaną zastosowane w sposób czysty, bez ingerencji starych stylów.
+Oczyszczenie granic gwarantuje, że nasze nowe granice zostaną zastosowane w czysty sposób, bez ingerencji starych stylów.
 
 ## Krok 5: Ustaw granice konturu
 
-Teraz zastosujmy zielone obramowania do tabeli.
+Teraz nadajmy tabeli zielony kontur.
 
 ```csharp
 table.SetBorder(BorderType.Left, LineStyle.Single, 1.5, Color.Green, true);
@@ -86,17 +86,17 @@ table.SetBorder(BorderType.Top, LineStyle.Single, 1.5, Color.Green, true);
 table.SetBorder(BorderType.Bottom, LineStyle.Single, 1.5, Color.Green, true);
 ```
 
- Każdy typ obramowania (lewy, prawy, górny, dolny) ustalany jest indywidualnie. Używamy`LineStyle.Single` dla linii ciągłej,`1.5` dla szerokości linii i`Color.Green` dla koloru obramowania.
+ Każdy typ obramowania (lewy, prawy, górny, dolny) jest ustawiany indywidualnie. Używamy`LineStyle.Single` dla linii ciągłej,`1.5` dla szerokości linii i`Color.Green` dla koloru obramowania.
 
 ## Krok 6: Zastosuj cieniowanie komórek
 
-Aby tabela była bardziej atrakcyjna wizualnie, wypełnijmy komórki jasnozielonym kolorem.
+Aby tabela wyglądała bardziej atrakcyjnie, wypełnijmy komórki jasnozielonym kolorem.
 
 ```csharp
 table.SetShading(TextureIndex.TextureSolid, Color.LightGreen, Color.Empty);
 ```
 
- Tutaj,`SetShading` służy do nałożenia na komórki jednolitego jasnozielonego koloru, dzięki czemu stół wyróżnia się.
+ Tutaj,`SetShading` służy do nadania komórkom jednolitego, jasnozielonego koloru, dzięki czemu tabela wyróżnia się.
 
 ## Krok 7: Zapisz dokument
 
@@ -106,27 +106,27 @@ Na koniec zapisz zmodyfikowany dokument.
 doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.ApplyOutlineBorder.docx");
 ```
 
-Ten krok powoduje zapisanie dokumentu z zastosowanym formatowaniem. Możesz go otworzyć, aby zobaczyć pięknie sformatowany stół.
+Ten krok zapisuje Twój dokument z zastosowanym formatowaniem. Możesz go otworzyć, aby zobaczyć pięknie sformatowaną tabelę.
 
 ## Wniosek
 
-I masz to! Wykonując te kroki, pomyślnie zastosowałeś obramowanie tabeli w dokumencie programu Word przy użyciu Aspose.Words dla .NET. W tym samouczku omówiono ładowanie dokumentu, uzyskiwanie dostępu do tabeli, wyrównywanie jej, czyszczenie istniejących obramowań, stosowanie nowych, dodawanie cieniowania komórek i na koniec zapisywanie dokumentu. 
+I masz to! Postępując zgodnie z tymi krokami, pomyślnie zastosowałeś obramowanie konturowe do tabeli w dokumencie Word przy użyciu Aspose.Words dla .NET. Ten samouczek obejmował ładowanie dokumentu, dostęp do tabeli, wyrównywanie jej, czyszczenie istniejących obramowań, stosowanie nowych obramowań, dodawanie cieniowania komórek i na koniec zapisywanie dokumentu. 
 
-Dzięki tym umiejętnościom możesz ulepszyć wizualną prezentację swoich tabel, czyniąc dokumenty bardziej profesjonalnymi i atrakcyjnymi. Miłego kodowania!
+Dzięki tym umiejętnościom możesz ulepszyć prezentację wizualną swoich tabel, czyniąc swoje dokumenty bardziej profesjonalnymi i atrakcyjnymi. Miłego kodowania!
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Czy mogę zastosować różne style do każdej krawędzi tabeli?  
- Tak, możesz zastosować różne style i kolory do każdej ramki, dostosowując parametry w pliku`SetBorder` metoda.
+### Czy mogę zastosować inny styl do każdej krawędzi tabeli?  
+ Tak, możesz zastosować różne style i kolory do każdej ramki, dostosowując parametry w`SetBorder` metoda.
 
 ### Jak mogę zmienić szerokość obramowania?  
- Możesz zmienić szerokość, modyfikując trzeci parametr w pliku`SetBorder` metoda. Na przykład,`1.5` ustawia szerokość na 1,5 punktu.
+ Możesz zmienić szerokość poprzez modyfikację trzeciego parametru w`SetBorder` metoda. Na przykład,`1.5` ustawia szerokość 1,5 punktu.
 
-### Czy można zastosować cieniowanie do poszczególnych komórek?  
- Tak, możesz zastosować cieniowanie do poszczególnych komórek, uzyskując dostęp do każdej komórki i używając opcji`SetShading` metoda.
+### Czy można zastosować cieniowanie do pojedynczych komórek?  
+ Tak, możesz zastosować cieniowanie do poszczególnych komórek, uzyskując dostęp do każdej komórki i używając`SetShading` metoda.
 
-### Czy mogę użyć innych kolorów obramowań i cieniowania?  
- Absolutnie! Można użyć dowolnego koloru dostępnego w ofercie`System.Drawing.Color` klasa.
+### Czy mogę użyć innych kolorów do obramowań i cieniowania?  
+ Oczywiście! Możesz użyć dowolnego koloru dostępnego w`System.Drawing.Color` klasa.
 
-### Jak wyśrodkować stół w poziomie?  
- The`table.Alignment = TableAlignment.Center;` linia w kodzie centruje tabelę poziomo na stronie.
+### Jak wyrównać tabelę do środka w poziomie?  
+Ten`table.Alignment = TableAlignment.Center;` Linia w kodzie centruje tabelę poziomo na stronie.

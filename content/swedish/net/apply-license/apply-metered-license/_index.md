@@ -16,7 +16,7 @@ Aspose.Words för .NET är ett kraftfullt bibliotek som låter dig arbeta med Wo
 Innan vi hoppar in i koden, låt oss se till att du har allt du behöver:
 
 1.  Aspose.Words för .NET: Om du inte redan har gjort det, ladda ner biblioteket från[Aspose hemsida](https://releases.aspose.com/words/net/).
-2. Giltiga uppmätta licensnycklar: Du behöver nycklarna för att aktivera den uppmätta licensen. Du kan få dessa från[Aspose köpsida](https://purchase.aspose.com/buy).
+2.  Giltiga uppmätta licensnycklar: Du behöver nycklarna för att aktivera den uppmätta licensen. Du kan få dessa från[Aspose köpsida](https://purchase.aspose.com/buy).
 3. Utvecklingsmiljö: Se till att du har en .NET-utvecklingsmiljö inrättad. Visual Studio är ett populärt val, men du kan använda vilken IDE som helst som stöder .NET.
 
 ## Importera namnområden
@@ -46,7 +46,7 @@ Metered metered = new Metered();
 metered.SetMeteredKey("your_public_key", "your_private_key");
 ```
 
- Ersätta`"your_public_key"`och`"your_private_key"`med de faktiska nycklarna du fick från Aspose. Detta steg säger i huvudsak till Aspose att du vill använda en mätlicens.
+ Ersätta`"your_public_key"` och`"your_private_key"` med de faktiska nycklarna du fick från Aspose. Detta steg säger i huvudsak till Aspose att du vill använda en mätlicens.
 
 ## Steg 3: Ladda ditt dokument
 

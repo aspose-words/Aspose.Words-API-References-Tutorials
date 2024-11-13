@@ -2,7 +2,7 @@
 title: Docx をバイトに変換
 linktitle: Docx をバイトに変換
 second_title: Aspose.Words ドキュメント処理 API
-description: 効率的なドキュメント処理のために、Aspose.Words を使用して .NET で Docx をバイト配列に変換する方法を学びます。ステップバイステップのガイドが含まれています。
+description: 効率的なドキュメント処理のために、Aspose.Words を使用して Docx を .NET のバイト配列に変換する方法を学びます。ステップバイステップのガイドが含まれています。
 type: docs
 weight: 10
 url: /ja/net/basic-conversions/docx-to-byte/

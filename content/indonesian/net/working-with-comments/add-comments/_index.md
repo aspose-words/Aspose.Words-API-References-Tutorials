@@ -9,31 +9,31 @@ url: /id/net/working-with-comments/add-comments/
 ---
 ## Perkenalan
 
-Selamat datang di panduan terperinci kami tentang menambahkan komentar ke dokumen Word Anda menggunakan Aspose.Words untuk .NET! Jika Anda ingin menyederhanakan proses peninjauan dokumen dengan memasukkan komentar secara terprogram, Anda datang ke tempat yang tepat. Tutorial ini akan memandu Anda melalui semua yang perlu Anda ketahui, mulai dari menyiapkan lingkungan hingga menulis dan menyimpan komentar di dokumen Word Anda. Mari selami dan jadikan kolaborasi dokumen menjadi mudah!
+Selamat datang di panduan terperinci kami tentang menambahkan komentar ke dokumen Word Anda menggunakan Aspose.Words untuk .NET! Jika Anda ingin menyederhanakan proses peninjauan dokumen dengan menyertakan komentar secara terprogram, Anda telah datang ke tempat yang tepat. Tutorial ini akan memandu Anda melalui semua hal yang perlu Anda ketahui, mulai dari menyiapkan lingkungan hingga menulis dan menyimpan komentar di dokumen Word Anda. Mari kita mulai dan buat kolaborasi dokumen menjadi mudah!
 
 ## Prasyarat
 
-Sebelum kita mulai, pastikan Anda memiliki prasyarat berikut:
+Sebelum kita memulai, pastikan Anda memiliki prasyarat berikut:
 
-1. Aspose.Words untuk .NET: Anda harus menginstal Aspose.Words untuk .NET. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
-2. .NET Framework: Pastikan Anda telah menginstal .NET Framework di mesin Anda.
+1. Aspose.Words untuk .NET: Anda perlu menginstal Aspose.Words untuk .NET. Anda dapat mengunduhnya dari[Di Sini](https://releases.aspose.com/words/net/).
+2. .NET Framework: Pastikan Anda telah menginstal .NET Framework di komputer Anda.
 3. Lingkungan Pengembangan: IDE seperti Visual Studio untuk menulis dan mengeksekusi kode Anda.
-4. Pengetahuan Dasar C#: Keakraban dengan bahasa pemrograman C# akan membantu Anda mengikuti contoh.
+4. Pengetahuan Dasar C#: Keakraban dengan bahasa pemrograman C# akan membantu Anda mengikuti contoh-contohnya.
 
-## Impor Namespace
+## Mengimpor Ruang Nama
 
-Pertama, Anda perlu mengimpor namespace yang diperlukan ke dalam proyek Anda. Ini akan memungkinkan Anda untuk mengakses kelas dan metode yang diperlukan untuk bekerja dengan Aspose.Words.
+Pertama, Anda perlu mengimpor namespace yang diperlukan ke dalam proyek Anda. Ini akan memungkinkan Anda mengakses kelas dan metode yang diperlukan untuk bekerja dengan Aspose.Words.
 
 ```csharp
 using System;
 using Aspose.Words;
 ```
 
-Sekarang, mari kita bagi prosesnya menjadi langkah-langkah yang mudah diikuti. Setiap langkah akan menyertakan penjelasan mendetail untuk membantu Anda memahami logika dan fungsinya.
+Sekarang, mari kita uraikan prosesnya menjadi beberapa langkah yang mudah diikuti. Setiap langkah akan disertai penjelasan terperinci untuk membantu Anda memahami logika dan fungsionalitasnya.
 
 ## Langkah 1: Siapkan Direktori Dokumen Anda
 
- Pertama, kita perlu menentukan direktori tempat dokumen Anda akan disimpan. Kami akan menggunakan placeholder`YOUR DOCUMENT DIRECTORY` yang harus Anda ganti dengan jalur direktori Anda yang sebenarnya.
+ Pertama, kita perlu menentukan direktori tempat dokumen Anda akan disimpan. Kita akan menggunakan placeholder`YOUR DOCUMENT DIRECTORY` yang harus Anda ganti dengan jalur direktori Anda yang sebenarnya.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -50,40 +50,39 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Langkah 3: Tambahkan Teks ke Dokumen
 
-Kami akan menambahkan beberapa teks ke dokumen menggunakan DocumentBuilder. Teks ini akan menjadi tempat kami melampirkan komentar kami.
+Kita akan menambahkan beberapa teks ke dokumen menggunakan DocumentBuilder. Teks ini akan menjadi tempat kita melampirkan komentar.
 
 ```csharp
 builder.Write("Some text is added.");
 ```
 
-## Langkah 4: Buat dan Tambahkan Komentar
+## Langkah 4: Membuat dan Menambahkan Komentar
 
-Sekarang saatnya membuat komentar. Kami akan menginisialisasi objek Komentar baru, menentukan dokumen, nama penulis, inisial, dan tanggal.
+Sekarang saatnya membuat komentar. Kita akan menginisialisasi objek Komentar baru, yang menentukan dokumen, nama penulis, inisial, dan tanggal.
 
 ```csharp
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
 ```
 
-## Langkah 5: Lampirkan Komentar ke Paragraf
+## Langkah 5: Tambahkan Konten ke Komentar
 
-Kita perlu melampirkan komentar ke paragraf saat ini di mana kita menambahkan teks. Hal ini dilakukan dengan menambahkan komentar ke paragraf.
+Terakhir, kita akan menambahkan konten ke komentar. Kita akan membuat Paragraph dan Run baru untuk menampung teks komentar, lalu menambahkannya ke komentar.
+
+```csharp
+comment.SetText("Comment text.");
+```
+
+## Langkah 6: Lampirkan Komentar ke Paragraf
+
+Kita perlu melampirkan komentar ke paragraf saat ini tempat kita menambahkan teks. Ini dilakukan dengan menambahkan komentar ke paragraf.
 
 ```csharp
 builder.CurrentParagraph.AppendChild(comment);
 ```
 
-## Langkah 6: Tambahkan Konten ke Komentar
-
-Terakhir, kami akan menambahkan konten ke komentar. Kita akan membuat Paragraph dan Run baru untuk menampung teks komentar, lalu menambahkannya ke komentar.
-
-```csharp
-comment.Paragraphs.Add(new Paragraph(doc));
-comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
-```
-
 ## Langkah 7: Simpan Dokumen
 
-Langkah terakhir adalah menyimpan dokumen dengan komentar. Kami akan menentukan direktori dan nama file.
+Langkah terakhir adalah menyimpan dokumen beserta komentarnya. Kita akan menentukan direktori dan nama filenya.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithComments.AddComments.docx");
@@ -91,26 +90,26 @@ doc.Save(dataDir + "WorkingWithComments.AddComments.docx");
 
 ## Kesimpulan
 
-Itu dia! Anda telah berhasil menambahkan komentar ke dokumen Word menggunakan Aspose.Words untuk .NET. Fitur canggih ini dapat meningkatkan proses peninjauan dokumen Anda secara signifikan, membuatnya lebih mudah untuk berkolaborasi dan mengomunikasikan umpan balik. Jangan lupa untuk mengeksplorasi kemampuan Aspose.Words lainnya untuk lebih menyederhanakan tugas pengelolaan dokumen Anda.
+Nah, itu dia! Anda telah berhasil menambahkan komentar ke dokumen Word menggunakan Aspose.Words untuk .NET. Fitur hebat ini dapat meningkatkan proses peninjauan dokumen Anda, sehingga memudahkan kolaborasi dan penyampaian umpan balik. Jangan lupa untuk menjelajahi kemampuan Aspose.Words lainnya untuk lebih menyederhanakan tugas pengelolaan dokumen Anda.
 
-## FAQ
+## Pertanyaan yang Sering Diajukan
 
 ### Apa itu Aspose.Words untuk .NET?
 
-Aspose.Words untuk .NET adalah API canggih yang memungkinkan pengembang membuat, memanipulasi, dan mengonversi dokumen Word secara terprogram menggunakan bahasa .NET.
+Aspose.Words untuk .NET adalah API canggih yang memungkinkan pengembang untuk membuat, memanipulasi, dan mengonversi dokumen Word secara terprogram menggunakan bahasa .NET.
 
-### Bisakah saya menambahkan banyak komentar ke satu dokumen?
+### Bisakah saya menambahkan beberapa komentar ke satu dokumen?
 
-Ya, Anda dapat menambahkan beberapa komentar ke satu dokumen dengan mengulangi proses membuat dan menambahkan komentar ke paragraf atau teks yang berbeda.
+Ya, Anda dapat menambahkan beberapa komentar ke satu dokumen dengan mengulangi proses pembuatan dan penambahan komentar ke paragraf atau teks yang berbeda.
 
-### Bagaimana cara menyesuaikan tampilan komentar?
+### Bagaimana saya dapat menyesuaikan tampilan komentar?
 
-Meskipun Aspose.Words berfokus pada konten dan struktur komentar, tampilannya dapat dikustomisasi menggunakan fitur pemformatan bawaan Word.
+Sementara Aspose.Words berfokus pada konten dan struktur komentar, tampilannya dapat disesuaikan menggunakan fitur pemformatan bawaan Word.
 
 ### Apakah mungkin untuk menghapus komentar secara terprogram?
 
-Ya, Anda dapat menghapus komentar secara terprogram dengan mengulangi komentar di dokumen dan menghapusnya sesuai kebutuhan.
+Ya, Anda dapat menghapus komentar secara terprogram dengan mengulangi komentar dalam dokumen dan menghapusnya sesuai kebutuhan.
 
-### Bisakah saya menambahkan balasan ke komentar?
+### Bisakah saya membalas komentar?
 
-Aspose.Words memungkinkan Anda bekerja dengan komentar berulir, memungkinkan Anda menambahkan balasan ke komentar yang ada untuk diskusi lebih rinci.
+Aspose.Words memungkinkan Anda bekerja dengan komentar berulir, memungkinkan Anda menambahkan balasan ke komentar yang ada untuk diskusi yang lebih terperinci.

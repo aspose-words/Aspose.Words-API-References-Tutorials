@@ -82,4 +82,4 @@ Igen, az Aspose.Words for Java kiváló választás az együttműködésen alapu
 
 ### Hol találhatok további információt és dokumentációt az Aspose.Words for Java programhoz?
 
-Az Aspose.Words for Java átfogó dokumentációját itt találja[itt](https://reference.aspose.com/words/java/).
+ Az Aspose.Words for Java átfogó dokumentációját itt találja[itt](https://reference.aspose.com/words/java/).

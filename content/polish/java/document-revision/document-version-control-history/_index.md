@@ -2,7 +2,7 @@
 title: Kontrola wersji dokumentu i historia
 linktitle: Kontrola wersji dokumentu i historia
 second_title: Aspose.Words API przetwarzania dokumentów Java
-description: Naucz się efektywnej kontroli wersji dokumentów przy użyciu Aspose.Words dla Java. Zarządzaj zmianami, płynnie współpracuj i bezproblemowo śledź poprawki.
+description: Poznaj skuteczną kontrolę wersji dokumentów za pomocą Aspose.Words for Java. Zarządzaj zmianami, współpracuj bezproblemowo i śledź poprawki bez wysiłku.
 type: docs
 weight: 13
 url: /pl/java/document-revision/document-version-control-history/
@@ -10,9 +10,9 @@ url: /pl/java/document-revision/document-version-control-history/
 
 ## Wstęp
 
-Skuteczna kontrola wersji dokumentów gwarantuje, że wszyscy interesariusze pracują z najnowszymi i najdokładniejszymi informacjami. Aspose.Words dla Java to wszechstronna biblioteka, która umożliwia programistom łatwe tworzenie, edytowanie i zarządzanie dokumentami. Przyjrzyjmy się krok po kroku procesowi wdrażania kontroli wersji i historii dokumentów.
+Skuteczna kontrola wersji dokumentów zapewnia, że wszyscy interesariusze pracują z najnowszymi i najdokładniejszymi informacjami. Aspose.Words for Java to wszechstronna biblioteka, która umożliwia programistom łatwe tworzenie, edytowanie i zarządzanie dokumentami. Zanurzmy się w proces krok po kroku wdrażania kontroli wersji i historii dokumentów.
 
-## Warunki wstępne
+## Wymagania wstępne
 
 Zanim zaczniemy, upewnij się, że spełnione są następujące wymagania wstępne:
 
@@ -20,13 +20,13 @@ Zanim zaczniemy, upewnij się, że spełnione są następujące wymagania wstęp
 - Aspose.Words dla biblioteki Java
 - Przykładowy dokument do pracy
 
-## Krok 1: Zaimportuj bibliotekę Aspose.Words
+## Krok 1: Importuj bibliotekę Aspose.Words
 
-Zacznij od zaimportowania biblioteki Aspose.Words for Java do swojego projektu. Możesz dodać go jako zależność w pliku kompilacji projektu lub pobrać plik JAR ze strony internetowej Aspose.
+Zacznij od zaimportowania biblioteki Aspose.Words for Java do swojego projektu. Możesz dodać ją jako zależność w pliku kompilacji swojego projektu lub pobrać plik JAR ze strony internetowej Aspose.
 
 ## Krok 2: Załaduj dokument
 
-Aby zaimplementować kontrolę wersji, załaduj dokument, z którym chcesz pracować, używając Aspose.Words. Oto fragment kodu na początek:
+Aby wdrożyć kontrolę wersji, załaduj dokument, z którym chcesz pracować, używając Aspose.Words. Oto fragment kodu, który pomoże Ci zacząć:
 
 ```java
 // Załaduj dokument
@@ -35,7 +35,7 @@ Document doc = new Document("sample.docx");
 
 ## Krok 3: Śledź zmiany
 
-Aspose.Words pozwala na włączenie śledzenia zmian w dokumencie, który będzie rejestrował wszystkie modyfikacje dokonane przez różnych użytkowników. Użyj poniższego kodu, aby włączyć śledzenie zmian:
+Aspose.Words umożliwia włączenie śledzenia zmian w dokumencie, co spowoduje zapisanie wszystkich modyfikacji wprowadzonych przez różnych użytkowników. Użyj następującego kodu, aby włączyć śledzenie zmian:
 
 ```java
 // Włącz śledzenie zmian
@@ -44,7 +44,7 @@ doc.startTrackRevisions();
 
 ## Krok 4: Wprowadź zmiany w dokumencie
 
-Teraz możesz wprowadzić zmiany w dokumencie według potrzeb. Zmiany te będą śledzone przez Aspose.Words.
+Teraz możesz wprowadzać zmiany w dokumencie, jeśli to konieczne. Zmiany te będą śledzone przez Aspose.Words.
 
 ```java
 // Wprowadź zmiany w dokumencie
@@ -52,12 +52,12 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.writeln("Updated content goes here.");
 ```
 
-## Krok 5: Zaakceptuj lub odrzuć zmiany
+## Krok 5: Akceptuj lub odrzucaj zmiany
 
-Po dokonaniu zmian możesz je przejrzeć i zaakceptować lub odrzucić. Ten krok gwarantuje, że w dokumencie końcowym zostaną uwzględnione wyłącznie zatwierdzone modyfikacje.
+Po wprowadzeniu zmian możesz je przejrzeć i zaakceptować lub odrzucić. Ten krok zapewnia, że w ostatecznym dokumencie zostaną uwzględnione tylko zatwierdzone modyfikacje.
 
 ```java
-// Zaakceptuj lub odrzuć zmiany
+// Akceptuj lub odrzucaj zmiany
 doc.acceptAllRevisions();
 ```
 
@@ -72,17 +72,17 @@ doc.save("sample_v2.docx");
 
 ## Wniosek
 
-Wdrażanie kontroli wersji dokumentów i historii przy użyciu Aspose.Words dla Java jest proste i bardzo skuteczne. Dzięki niemu Twoje dokumenty są zawsze aktualne, a Ty możesz śledzić wszelkie zmiany wprowadzane przez współpracowników. Zacznij korzystać z Aspose.Words dla Java już dziś, aby usprawnić proces zarządzania dokumentami.
+Wdrożenie kontroli wersji i historii dokumentów za pomocą Aspose.Words for Java jest proste i bardzo skuteczne. Zapewnia, że Twoje dokumenty są zawsze aktualne i możesz śledzić wszystkie zmiany wprowadzane przez współpracowników. Zacznij używać Aspose.Words for Java już dziś, aby usprawnić proces zarządzania dokumentami.
 
-## Często zadawane pytania
+## Najczęściej zadawane pytania
 
-### Jak mogę zainstalować Aspose.Words dla Java?
+### Jak zainstalować Aspose.Words dla Java?
 
-Możesz pobrać Aspose.Words dla Java ze strony internetowej i postępować zgodnie z instrukcjami instalacji podanymi w dokumentacji.
+Możesz pobrać Aspose.Words for Java ze strony internetowej i postępować zgodnie z instrukcjami instalacji podanymi w dokumentacji.
 
 ### Czy mogę dostosować śledzenie zmian w dokumentach?
 
-Tak, Aspose.Words dla Java oferuje szerokie opcje dostosowywania śledzenia zmian, w tym nazwisk autorów, komentarzy i innych.
+Tak, Aspose.Words for Java oferuje rozbudowane opcje dostosowywania śledzenia zmian, obejmujące m.in. nazwiska autorów i komentarze.
 
 ### Czy Aspose.Words nadaje się do zarządzania dokumentami na dużą skalę?
 
@@ -90,8 +90,8 @@ Tak, Aspose.Words for Java nadaje się zarówno do zadań związanych z zarządz
 
 ### Czy mogę zintegrować Aspose.Words z innymi bibliotekami Java?
 
-Oczywiście, Aspose.Words for Java można łatwo zintegrować z innymi bibliotekami i frameworkami Java, aby zwiększyć możliwości przetwarzania dokumentów.
+Oczywiście, Aspose.Words for Java można łatwo zintegrować z innymi bibliotekami i frameworkami Java w celu zwiększenia możliwości przetwarzania dokumentów.
 
-### Gdzie mogę znaleźć więcej zasobów i dokumentacji?
+### Gdzie mogę znaleźć więcej materiałów i dokumentacji?
 
- Dostęp do obszernej dokumentacji i dodatkowych zasobów Aspose.Words for Java można uzyskać pod adresem[Tutaj](https://reference.aspose.com/words/java/).
+ Pełną dokumentację i dodatkowe zasoby dotyczące Aspose.Words for Java można uzyskać pod adresem[Tutaj](https://reference.aspose.com/words/java/).

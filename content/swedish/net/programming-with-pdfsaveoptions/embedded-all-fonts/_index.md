@@ -9,7 +9,7 @@ url: /sv/net/programming-with-pdfsaveoptions/embedded-all-fonts/
 ---
 ## Introduktion
 
-Hej där, teknikentusiaster! Har du någonsin hamnat i en knipa när du försöker bädda in teckensnitt i ett PDF-dokument med Aspose.Words för .NET? Nåväl, du är på rätt plats! I den här självstudien dyker vi djupt in i det finurliga med att bädda in typsnitt i dina PDF-filer. Oavsett om du är en nybörjare eller ett erfaret proffs, kommer den här guiden att leda dig genom varje steg på ett enkelt, engagerande sätt. I slutet kommer du att vara en succé på att se till att dina PDF-filer behåller sitt avsedda utseende och känsla, oavsett var de visas. Så låt oss börja, ska vi?
+Hej där, teknikentusiaster! Har du någonsin hamnat i en knipa när du försöker bädda in teckensnitt i ett PDF-dokument med Aspose.Words för .NET? Tja, du är på rätt plats! I den här självstudien dyker vi djupt in i det finurliga med att bädda in typsnitt i dina PDF-filer. Oavsett om du är en nybörjare eller ett erfaret proffs, kommer den här guiden att leda dig genom varje steg på ett enkelt, engagerande sätt. I slutet kommer du att vara en succé på att se till att dina PDF-filer behåller sitt avsedda utseende och känsla, oavsett var de visas. Så låt oss börja, ska vi?
 
 ## Förutsättningar
 

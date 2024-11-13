@@ -109,7 +109,7 @@ Grattis! Du har framgångsrikt lärt dig hur du döljer en diagramaxel i ett Wor
 Aspose.Words för .NET är ett kraftfullt API för att skapa, redigera, konvertera och manipulera Word-dokument i .NET-applikationer.
 
 ### Kan jag dölja både X- och Y-axeln i ett diagram?
- Ja, du kan dölja båda axlarna genom att ställa in`Hidden` bådas egendom`AxisX`och`AxisY` till`true`.
+ Ja, du kan dölja båda axlarna genom att ställa in`Hidden` bådas egendom`AxisX` och`AxisY` till`true`.
 
 ### Finns det en gratis testversion tillgänglig för Aspose.Words för .NET?
  Ja, du kan få en gratis provperiod[här](https://releases.aspose.com/).

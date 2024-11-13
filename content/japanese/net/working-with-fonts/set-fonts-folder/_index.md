@@ -2,20 +2,20 @@
 title: フォントフォルダの設定
 linktitle: フォントフォルダの設定
 second_title: Aspose.Words ドキュメント処理 API
-description: Aspose.Words for .NET でカスタム フォント フォルダーを設定し、Word 文書がフォント不足なく正しくレンダリングされるようにする方法を学習します。
+description: Aspose.Words for .NET でカスタム フォント フォルダーを設定し、フォントが失われることなく Word 文書が正しくレンダリングされるようにする方法を学習します。
 type: docs
 weight: 10
 url: /ja/net/working-with-fonts/set-fonts-folder/
 ---
 ## 導入
 
-.NET アプリケーションで Word 文書を操作しているときに、フォントが見つからないという問題に直面したことはありませんか? あなただけではありません。正しいフォント フォルダーを設定すると、この問題はシームレスに解決できます。このガイドでは、Aspose.Words for .NET を使用してフォント フォルダーを設定する方法について説明します。さっそく始めましょう!
+.NET アプリケーションで Word 文書を操作しているときに、フォントが見つからないという問題に直面したことはありませんか? あなただけではありません。正しいフォント フォルダーを設定すると、この問題はシームレスに解決できます。このガイドでは、Aspose.Words for .NET を使用してフォント フォルダーを設定する方法について説明します。早速始めましょう!
 
 ## 前提条件
 
 始める前に、以下のものを用意してください。
 
-- お使いのマシンに Visual Studio がインストールされている
+- マシンに Visual Studio がインストールされている
 - .NET Framework のセットアップ
 - Aspose.Words for .NETライブラリ。まだダウンロードしていない場合は、こちらからダウンロードできます。[ここ](https://releases.aspose.com/words/net/).
 

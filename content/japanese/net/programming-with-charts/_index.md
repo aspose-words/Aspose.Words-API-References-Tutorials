@@ -26,7 +26,7 @@ Aspose.Words for .NET グラフィックス プログラミング チュート�
 | [グラフの XY 軸プロパティを定義する](./define-xyaxis-properties/) | このステップバイステップ ガイドでは、Aspose.Words for .NET を使用してグラフの XY 軸プロパティを定義する方法を学習します。.NET 開発者に最適です。 |
 | [グラフの軸に日付と時刻の値を追加する](./date-time-values-to-axis/) | この包括的なステップバイステップ ガイドでは、Aspose.Words for .NET を使用してグラフの軸に日付と時刻の値を追加する方法を学習します。 |
 | [グラフの軸の数値形式](./number-format-for-axis/) | このステップバイステップ ガイドでは、Aspose.Words for .NET を使用してグラフの軸の数字をフォーマットする方法を学習します。ドキュメントの読みやすさとプロフェッショナリズムを簡単に向上できます。 |
-| [軸の境界](./bounds-of-axis/) | Aspose.Words for .NET を使用して、軸に表示される値の範囲を制御しながら、グラフの軸の境界を設定する方法を学習します。 |
+| [軸の境界](./bounds-of-axis/) | Aspose.Words for .NET を使用して、軸に表示される値の範囲を制御しながら、グラフ内の軸の境界を設定する方法を学習します。 |
 | [グラフの軸上のラベル間の間隔単位](./interval-unit-between-labels-on-axis/) | Aspose.Words for .NET を使用して、グラフの軸上のラベル間の間隔単位を設定する方法を学習します。 |
 | [Word 文書でグラフの軸を非表示にする](./hide-chart-axis/) | 詳細なステップバイステップのチュートリアルで、Aspose.Words for .NET を使用して Word 文書内のグラフ軸を非表示にする方法を学びます。 |
 | [チャート内の複数行ラベルの配置をチェックする](./tick-multi-line-label-alignment/) | 詳細なステップバイステップ ガイドを使用して、Aspose.Words for .NET を使用してチャート内の複数行のラベル配置をチェックする方法を学びます。あらゆるレベルの開発者に最適です。 |

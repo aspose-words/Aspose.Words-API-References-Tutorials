@@ -1,50 +1,50 @@
 ---
-title: Word Belgesi Üst Bilgisi Alt Bilgisi Yer İmlerini PDF Belgesine Dışa Aktarma
-linktitle: Word Belgesi Üst Bilgisi Alt Bilgisi Yer İmlerini PDF Belgesine Dışa Aktarma
+title: Word Belgesi Üstbilgi Altbilgi Yer İşaretlerini PDF Belgesine Aktar
+linktitle: Word Belgesi Üstbilgi Altbilgi Yer İşaretlerini PDF Belgesine Aktar
 second_title: Aspose.Words Belge İşleme API'si
-description: Adım adım kılavuzumuzla Aspose.Words for .NET'i kullanarak üstbilgi ve altbilgi yer imlerini bir Word belgesinden PDF'ye nasıl aktaracağınızı öğrenin.
+description: Aspose.Words for .NET'i kullanarak adım adım kılavuzumuzla Word belgesinden üst bilgi ve alt bilgi yer imlerini PDF'ye nasıl aktaracağınızı öğrenin.
 type: docs
 weight: 10
 url: /tr/net/programming-with-pdfsaveoptions/export-header-footer-bookmarks/
 ---
 ## giriiş
 
-Word belgelerini PDF'ye dönüştürmek, özellikle belgeleri biçimlerini koruyarak paylaşmak veya arşivlemek istediğinizde yaygın bir iştir. Bazen bu belgelerin üstbilgileri ve altbilgileri içinde önemli yer imleri bulunur. Bu eğitimde, bu yer işaretlerini Aspose.Words for .NET kullanarak bir Word belgesinden PDF'ye aktarma sürecini anlatacağız.
+Word belgelerini PDF'ye dönüştürmek, özellikle biçimlendirmelerini koruyarak belgeleri paylaşmak veya arşivlemek istediğinizde yaygın bir görevdir. Bazen bu belgeler, başlıklar ve altbilgiler içinde önemli yer imleri içerir. Bu eğitimde, bu yer imlerini .NET için Aspose.Words kullanarak bir Word belgesinden bir PDF'ye aktarma sürecini ele alacağız.
 
-## Önkoşullar
+## Ön koşullar
 
-Dalışa geçmeden önce aşağıdakilere sahip olduğunuzdan emin olun:
+Başlamadan önce, aşağıdakilere sahip olduğunuzdan emin olun:
 
-- Aspose.Words for .NET: Aspose.Words for .NET'in kurulu olması gerekir. Şuradan indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
-- Geliştirme Ortamı: Geliştirme ortamınızı ayarlayın. Visual Studio'yu veya herhangi bir .NET uyumlu IDE'yi kullanabilirsiniz.
-- Temel C# Bilgisi: Kod örneklerini takip etmek için C# programlamaya aşinalık gerekir.
+- Aspose.Words for .NET: Aspose.Words for .NET'in yüklü olması gerekir. Buradan indirebilirsiniz[Burada](https://releases.aspose.com/words/net/).
+- Geliştirme Ortamı: Geliştirme ortamınızı kurun. Visual Studio veya herhangi bir .NET uyumlu IDE kullanabilirsiniz.
+- Temel C# Bilgisi: Kod örneklerini takip edebilmek için C# programlamaya aşinalık gerekmektedir.
 
 ## Ad Alanlarını İçe Aktar
 
-Öncelikle C# projenize gerekli ad alanlarını içe aktarmanız gerekir. Bu satırları kod dosyanızın en üstüne ekleyin:
+İlk önce, C# projenize gerekli ad alanlarını içe aktarmanız gerekir. Kod dosyanızın en üstüne şu satırları ekleyin:
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-Süreci takip edilmesi kolay adımlara ayıralım.
+Sürecin kolay takip edilebilir adımlara bölünmesine izin verin.
 
-## 1. Adım: Belgeyi Başlatın
+## Adım 1: Belgeyi Başlatın
 
-İlk adım Word belgenizi yüklemektir. Bunu nasıl yapabileceğiniz aşağıda açıklanmıştır:
+İlk adım Word belgenizi yüklemektir. Bunu şu şekilde yapabilirsiniz:
 
 ```csharp
-// Belgeler dizininin yolu.
+// Belgeler dizinine giden yol.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Bookmarks in headers and footers.docx");
 ```
 
-Bu adımda, belge dizininizin yolunu belirtmeniz ve Word belgesini yüklemeniz yeterlidir.
+Bu adımda, yalnızca belge dizininize giden yolu belirtmeniz ve Word belgesini yüklemeniz yeterli olacaktır.
 
-## 2. Adım: PDF Kaydetme Seçeneklerini Yapılandırın
+## Adım 2: PDF Kaydetme Seçeneklerini Yapılandırın
 
-Daha sonra, üstbilgi ve altbilgilerdeki yer işaretlerinin doğru şekilde dışa aktarıldığından emin olmak için PDF kaydetme seçeneklerini yapılandırmanız gerekir.
+Daha sonra, başlık ve altbilgilerdeki yer imlerinin doğru şekilde dışa aktarılmasını sağlamak için PDF kaydetme seçeneklerini yapılandırmanız gerekir.
 
 ```csharp
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -52,40 +52,40 @@ saveOptions.OutlineOptions.DefaultBookmarksOutlineLevel = 1;
 saveOptions.HeaderFooterBookmarksExportMode = HeaderFooterBookmarksExportMode.First;
 ```
 
- Burada kurulumu yapıyoruz.`PdfSaveOptions` .`DefaultBookmarksOutlineLevel` özelliği, yer imlerinin anahat düzeyini ayarlar ve`HeaderFooterBookmarksExportMode` özelliği, yer işaretlerinin üstbilgi ve altbilgilerde yalnızca ilk geçtiği yerin dışa aktarılmasını sağlar.
+ Burada, şunu kuruyoruz:`PdfSaveOptions` .`DefaultBookmarksOutlineLevel` özellik, yer imleri için anahat düzeyini ayarlar ve`HeaderFooterBookmarksExportMode` özellik, yer imlerinin yalnızca başlık ve altbilgilerdeki ilk oluşumunun dışa aktarılmasını sağlar.
 
-## 3. Adım: Belgeyi PDF olarak kaydedin
+## Adım 3: Belgeyi PDF olarak kaydedin
 
-Son olarak, yapılandırılmış seçeneklerle belgenizi PDF olarak kaydedin.
+Son olarak belgenizi yapılandırdığınız seçeneklerle PDF olarak kaydedin.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.ExportHeaderFooterBookmarks.pdf", saveOptions);
 ```
 
-Bu adımda, yapılandırdığınız seçeneklerle belgeyi belirtilen yola kaydediyorsunuz.
+Bu adımda, belgeyi yapılandırdığınız seçeneklerle belirtilen yola kaydediyorsunuz.
 
 ## Çözüm
 
-Ve işte karşınızda! Bu adımları izleyerek, Aspose.Words for .NET'i kullanarak bir Word belgesinin üstbilgi ve altbilgilerindeki yer işaretlerini kolayca PDF'ye aktarabilirsiniz. Bu yöntem, belgenizdeki önemli gezinme yardımcılarının PDF formatında korunmasını sağlayarak okuyucuların belgenizde gezinmesini kolaylaştırır.
+İşte bu kadar! Bu adımları izleyerek, Aspose.Words for .NET kullanarak bir Word belgesinin başlık ve alt bilgilerinden yer imlerini kolayca bir PDF'ye aktarabilirsiniz. Bu yöntem, belgenizdeki önemli gezinme yardımcılarının PDF formatında korunmasını sağlayarak okuyucuların belgenizde gezinmesini kolaylaştırır.
 
-## SSS'ler
+## SSS
 
-### Word belgesindeki tüm yer imlerini PDF'ye aktarabilir miyim?
+### Word belgesindeki tüm yer imlerini PDF'e aktarabilir miyim?
 
- Evet yapabilirsin. içinde`PdfSaveOptions`gerekiyorsa ayarları tüm yer işaretlerini içerecek şekilde ayarlayabilirsiniz.
+ Evet, yapabilirsiniz.`PdfSaveOptions`Gerekirse ayarları tüm yer imlerini içerecek şekilde düzenleyebilirsiniz.
 
-### Yer işaretlerini belgenin gövdesinden de dışa aktarmak istersem ne olur?
+### Belgenin gövdesinden de yer imlerini dışa aktarmak istersem ne olur?
 
- Yapılandırabilirsiniz`OutlineOptions` içinde`PdfSaveOptions` belgenin gövdesinden yer imleri eklemek için.
+ Şunu yapılandırabilirsiniz:`OutlineOptions` içinde`PdfSaveOptions` Belgenin gövdesinden yer imlerini dahil etmek için.
 
 ### PDF'deki yer imi düzeylerini özelleştirmek mümkün mü?
 
- Kesinlikle! özelleştirebilirsiniz`DefaultBookmarksOutlineLevel` Yer işaretleriniz için farklı anahat düzeyleri ayarlama özelliği.
+ Kesinlikle! Özelleştirebilirsiniz`DefaultBookmarksOutlineLevel` Yer imleriniz için farklı anahat düzeyleri ayarlama özelliği.
 
-### Yer imi olmayan belgeleri nasıl işleyebilirim?
+### Yer imi olmayan belgeleri nasıl işlerim?
 
-Belgenizde yer işareti yoksa PDF, yer işareti taslağı olmadan oluşturulur. PDF'de bunlara ihtiyacınız varsa belgenizin yer imleri içerdiğinden emin olun.
+Belgenizde yer imi yoksa, PDF herhangi bir yer imi taslağı olmadan oluşturulacaktır. PDF'te yer imlerine ihtiyacınız varsa belgenizin yer imleri içerdiğinden emin olun.
 
-### Bu yöntemi DOCX veya RTF gibi diğer belge türleri için kullanabilir miyim?
+### Bu yöntemi DOCX veya RTF gibi diğer belge türleri için de kullanabilir miyim?
 
-Evet, Aspose.Words for .NET, DOCX, RTF ve diğerleri dahil olmak üzere çeşitli belge türlerini destekler.
+Evet, Aspose.Words for .NET DOCX, RTF ve diğerleri de dahil olmak üzere çeşitli belge türlerini destekler.
