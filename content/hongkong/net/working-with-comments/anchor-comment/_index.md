@@ -17,7 +17,7 @@ url: /zh-hant/net/working-with-comments/anchor-comment/
 
 -  Aspose.Words for .NET：確保您已安裝 Aspose.Words 程式庫。您可以從以下位置下載：[這裡](https://releases.aspose.com/words/net/).
 - 開發環境：任何 .NET 開發環境，例如 Visual Studio。
-- 對 C# 的基本了解：熟悉 C# 程式設計將幫助您輕鬆遵循這些步驟。
+- 對 C# 的基本了解：熟悉 C# 程式設計將幫助您輕鬆執行以下步驟。
 
 現在，讓我們深入了解為此任務所需匯入的命名空間。
 
@@ -79,8 +79,7 @@ doc.FirstSection.Body.AppendChild(para2);
 ```csharp
 //建立新評論
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
-comment.Paragraphs.Add(new Paragraph(doc));
-comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
+comment.SetText("Comment text.");
 ```
 
 在這一步中，我們創建一個`Comment`物件並添加一個段落和帶有註釋文字的運行。
@@ -117,7 +116,7 @@ doc.Save(dataDir + "WorkingWithComments.AnchorComment.doc");
 
 ## 結論
 
-現在你就得到它了！您已經成功學習如何使用 Aspose.Words for .NET 將錨註解新增至 Word 文件中的特定文字部分。這項技術對於文件協作非常有用，可讓您輕鬆突出顯示文字的特定部分並對其進行評論。無論您是與團隊一起處理專案還是審查文檔，此方法都將提高您的工作效率並簡化您的工作流程。
+現在你就擁有了！您已經成功學習如何使用 Aspose.Words for .NET 將錨註解新增至 Word 文件中的特定文字部分。這項技術對於文件協作非常有用，可讓您輕鬆突出顯示文字的特定部分並對其進行評論。無論您是與團隊一起處理專案還是審查文檔，此方法都將提高您的工作效率並簡化您的工作流程。
 
 ## 常見問題解答
 

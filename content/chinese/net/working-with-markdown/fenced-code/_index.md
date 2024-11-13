@@ -16,7 +16,7 @@ url: /zh/net/working-with-markdown/fenced-code/
 在开始本教程之前，请确保您已准备好所需的一切：
 
 - C# 基础知识：对 C# 的一般了解将帮助您快速掌握概念。
--  Aspose.Words for .NET：您需要安装 Aspose.Words for .NET。如果您还没有安装，请立即获取[这里](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET：您需要安装 Aspose.Words for .NET。如果您还没有，请获取它[这里](https://releases.aspose.com/words/net/).
 - 开发环境：Visual Studio 或任何您熟悉的其他 C# IDE。
 
 ## 导入命名空间

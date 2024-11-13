@@ -45,7 +45,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## 步骤 2：初始化字体设置
 
-创建新实例`FontSettings`。该对象将允许您管理字体源。
+创建新的实例`FontSettings`。该对象将允许您管理字体源。
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
@@ -61,7 +61,7 @@ List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFont
 
 ## 步骤 4：添加自定义字体文件夹
 
-添加包含其他字体的自定义文件夹。如果您有未安装在系统字体目录中的特定字体，这将非常有用。
+添加包含附加字体的自定义文件夹。如果您有未安装在系统字体目录中的特定字体，这将非常有用。
 
 ```csharp
 FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);

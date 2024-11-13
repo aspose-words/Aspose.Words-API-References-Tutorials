@@ -74,7 +74,7 @@ Document doc = new Document(dataDir + "Document.docx", loadOptions);
 是的，您可以使用您的应用程序具有写权限的任何目录。
 
 ### 使用临时文件夹可以提高性能吗？
-是的，通过将部分内存使用转移到磁盘，它可以显著提高性能。
+是的，它可以通过将部分内存使用量卸载到磁盘来显著提高性能。
 
 ### 在哪里可以找到有关 Aspose.Words for .NET 的更多信息？
 您可以参考[文档](https://reference.aspose.com/words/net/)了解更多详细信息和示例。

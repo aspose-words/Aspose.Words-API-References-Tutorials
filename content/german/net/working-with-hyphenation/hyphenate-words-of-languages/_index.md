@@ -15,7 +15,7 @@ Hallo! Haben Sie schon einmal versucht, ein Dokument mit langen, ununterbrochene
 
 Bevor wir beginnen, stellen Sie sicher, dass Sie Folgendes haben:
 
--  Aspose.Words für .NET installiert. Wenn nicht, schnapp es dir[Hier](https://releases.aspose.com/words/net/).
+-  Aspose.Words für .NET installiert. Falls nicht, schnapp es dir[Hier](https://releases.aspose.com/words/net/).
 -  Eine gültige Lizenz für Aspose.Words. Sie können eine kaufen[Hier](https://purchase.aspose.com/buy) oder holen Sie sich eine temporäre Lizenz[Hier](https://purchase.aspose.com/temporary-license/).
 - Grundkenntnisse in C# und .NET Framework.
 - Ein Texteditor oder eine IDE wie Visual Studio.
@@ -73,5 +73,5 @@ Sie können online Silbentrennungswörterbücher finden, die oft von Sprachinsti
 ### Ist Aspose.Words für .NET mit .NET Core kompatibel?
 Ja, Aspose.Words für .NET unterstützt sowohl .NET Framework als auch .NET Core.
 
-### Wie verarbeite ich mehrere Sprachen in einem einzigen Dokument?
+### Wie verarbeite ich mehrere Sprachen in einem einzelnen Dokument?
 Sie können mehrere Silbentrennungswörterbücher wie im Beispiel gezeigt registrieren und Aspose.Words wird sie entsprechend behandeln.

@@ -9,7 +9,7 @@ url: /de/net/programming-with-officemath/math-equations/
 ---
 ## Einführung
 
-Bereit, in die Welt der mathematischen Gleichungen in Word-Dokumenten einzutauchen? Heute werden wir untersuchen, wie Sie mit Aspose.Words für .NET mathematische Gleichungen in Ihren Word-Dateien erstellen und konfigurieren können. Egal, ob Sie Schüler, Lehrer oder einfach jemand sind, der gerne mit Gleichungen arbeitet, dieser Leitfaden führt Sie durch jeden Schritt. Wir unterteilen ihn in leicht verständliche Abschnitte, damit Sie jeden Teil verstehen, bevor Sie fortfahren. Lassen Sie uns anfangen!
+Sind Sie bereit, in die Welt der mathematischen Gleichungen in Word-Dokumenten einzutauchen? Heute werden wir untersuchen, wie Sie mit Aspose.Words für .NET mathematische Gleichungen in Ihren Word-Dateien erstellen und konfigurieren können. Egal, ob Sie Schüler, Lehrer oder einfach jemand sind, der gerne mit Gleichungen arbeitet, dieser Leitfaden führt Sie durch jeden Schritt. Wir unterteilen ihn in leicht verständliche Abschnitte, damit Sie jeden Teil verstehen, bevor Sie fortfahren. Lassen Sie uns anfangen!
 
 ## Voraussetzungen
 

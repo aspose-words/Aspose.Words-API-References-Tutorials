@@ -17,7 +17,7 @@ url: /zh/net/programming-with-shapes/add-group-shape/
 
 1.  Aspose.Words for .NET：您可以从[Aspose 发布页面](https://releases.aspose.com/words/net/).
 2. 开发环境：Visual Studio 或任何其他与.NET 兼容的 IDE。
-3. 对 C# 的基本了解：熟悉 C# 编程是一个优势。
+3. 对 C# 的基本了解：熟悉 C# 编程是优势。
 
 ## 导入命名空间
 
@@ -117,7 +117,7 @@ doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");
 
 ## 结论
 
-向 Word 文档添加组形状并不一定是一个复杂的过程。使用 Aspose.Words for .NET，您可以轻松创建和操作形状，使您的文档更具视觉吸引力和功能性。按照本教程中概述的步骤操作，您很快就会成为专业人士！
+将组形状添加到 Word 文档并不一定是一个复杂的过程。使用 Aspose.Words for .NET，您可以轻松创建和操作形状，使您的文档更具视觉吸引力和功能性。按照本教程中概述的步骤操作，您很快就会成为专业人士！
 
 ## 常见问题解答
 

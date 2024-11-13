@@ -18,7 +18,7 @@ url: /zh/net/programming-with-tables/retrieve-preferred-width-type/
 1.  Aspose.Words for .NET：请确保您安装了最新版本。您可以从以下网址下载[这里](https://releases.aspose.com/words/net/).
 2. 开发环境：您需要一个像 Visual Studio 这样的 IDE。
 3. C# 基础知识：了解 C# 的基础知识将帮助您跟上。
-4. 示例文档：准备好一个包含表格的 Word 文档，以供您使用。您可以使用任何文档，但我们将其称为`Tables.docx`在本教程中。
+4. 示例文档：准备好一个 Word 文档，其中包含你可以处理的表格。你可以使用任何文档，但我们将其称为`Tables.docx`在本教程中。
 
 ## 导入命名空间
 

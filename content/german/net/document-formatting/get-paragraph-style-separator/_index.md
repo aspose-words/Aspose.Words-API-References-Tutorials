@@ -10,7 +10,7 @@ url: /de/net/document-formatting/get-paragraph-style-separator/
 
 ## Einführung
 
-Haben Sie schon einmal versucht, sich durch das Labyrinth eines Word-Dokuments zu navigieren, und sind dabei über diese hinterhältigen Absatzstiltrennzeichen gestolpert? Wenn Sie das schon einmal erlebt haben, wissen Sie, dass es ein echtes Problem ist. Aber wissen Sie was? Mit Aspose.Words für .NET ist das Identifizieren und Verwalten dieser Trennzeichen ein Kinderspiel. Tauchen wir in dieses Tutorial ein und machen Sie zu einem Profi für Absatzstiltrennzeichen!
+Haben Sie schon einmal versucht, sich durch das Labyrinth eines Word-Dokuments zu navigieren, und sind dabei über diese hinterhältigen Absatzstiltrennzeichen gestolpert? Wenn Sie das schon einmal erlebt haben, wissen Sie, dass es ein echtes Problem ist. Aber wissen Sie was? Mit Aspose.Words für .NET ist das Identifizieren und Verwalten dieser Trennzeichen ein Kinderspiel. Lassen Sie uns in dieses Tutorial eintauchen und Sie zu einem Profi für Absatzstiltrennzeichen machen!
 
 ## Voraussetzungen
 
@@ -18,7 +18,7 @@ Bevor wir uns in den Code stürzen, stellen wir sicher, dass Sie über alle ben�
 
 - Visual Studio: Stellen Sie sicher, dass Sie es installiert haben. Wenn nicht, laden Sie es von der Microsoft-Website herunter und installieren Sie es.
 - Aspose.Words für .NET: Wenn Sie es noch nicht haben, holen Sie sich die neueste Version[Hier](https://releases.aspose.com/words/net/).
-- Ein Beispiel-Word-Dokument: Dieses sollte Absatzformattrennzeichen enthalten, mit denen wir arbeiten können. Sie können eins erstellen oder ein vorhandenes Dokument verwenden.
+- Ein Beispiel-Word-Dokument: Dieses sollte Absatzformattrennzeichen enthalten, mit denen wir arbeiten können. Sie können ein solches Dokument erstellen oder ein vorhandenes verwenden.
 
 ## Namespaces importieren
 
@@ -78,7 +78,7 @@ Nachdem Ihr Dokument geladen ist, ist es an der Zeit, die Absätze zu durchlaufe
 
 Lassen Sie uns jetzt Ihren Code ausführen und ihn in Aktion sehen.
 
-1. Erstellen und Ausführen: Erstellen Sie Ihr Projekt und führen Sie es aus. Wenn alles richtig eingerichtet ist, sollte in Ihrer Konsole für jedes Stiltrennzeichen in Ihrem Dokument die Meldung „Trennzeichen gefunden!“ angezeigt werden.
+1. Erstellen und Ausführen: Erstellen Sie Ihr Projekt und führen Sie es aus. Wenn alles richtig eingerichtet ist, sollte in Ihrer Konsole für jeden Stiltrenner in Ihrem Dokument die Meldung „Trennzeichen gefunden!“ angezeigt werden.
 
 ## Abschluss
 

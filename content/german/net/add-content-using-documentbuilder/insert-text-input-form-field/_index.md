@@ -9,7 +9,7 @@ url: /de/net/add-content-using-documentbuilder/insert-text-input-form-field/
 ---
 ## Einführung
 
-In diesem Tutorial tauchen wir tief in die Welt von Aspose.Words für .NET ein, um zu lernen, wie man ein Texteingabeformularfeld in ein Word-Dokument einfügt. Schnall dich an, denn wir begeben uns auf eine Reise, die deine Aufgaben zur Dokumentenautomatisierung zum Kinderspiel macht. Egal, ob du Formulare, Vorlagen oder interaktive Dokumente erstellst, die Beherrschung dieser Fähigkeit wird deine .NET-Anwendungen auf die nächste Ebene heben.
+In diesem Tutorial tauchen wir tief in die Welt von Aspose.Words für .NET ein, um zu lernen, wie man ein Texteingabeformularfeld in ein Word-Dokument einfügt. Schnall dich an, denn wir begeben uns auf eine Reise, die deine Dokumentenautomatisierungsaufgaben zum Kinderspiel macht. Egal, ob du Formulare, Vorlagen oder interaktive Dokumente erstellst, die Beherrschung dieser Fähigkeit wird deine .NET-Anwendungen auf die nächste Ebene heben.
 
 ### Voraussetzungen
 
@@ -33,7 +33,7 @@ Lassen Sie uns den Prozess nun in einfache, leicht verständliche Schritte unter
 
 ## Schritt 1: Richten Sie Ihr Dokumentverzeichnis ein
 
-Bevor wir uns in den Code stürzen, müssen Sie den Pfad zu Ihrem Dokumentverzeichnis angeben. Hier wird Ihr generiertes Word-Dokument gespeichert.
+Bevor wir uns in den Code stürzen, müssen Sie den Pfad zu Ihrem Dokumentenverzeichnis angeben. Hier wird Ihr generiertes Word-Dokument gespeichert.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -49,7 +49,7 @@ Document doc = new Document();
 
 ## Schritt 3: DocumentBuilder initialisieren
 
- Der`DocumentBuilder` Klasse ist unser wichtigstes Werkzeug zum Hinzufügen von Inhalten zum Dokument. Stellen Sie es sich wie einen Stift vor, der auf die Arbeitsfläche des Word-Dokuments schreibt.
+Der`DocumentBuilder` Klasse ist unser primäres Werkzeug zum Hinzufügen von Inhalten zum Dokument. Stellen Sie es sich als einen Stift vor, der auf die Arbeitsfläche des Word-Dokuments schreibt.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -87,7 +87,7 @@ Und da haben Sie es! Sie haben erfolgreich ein Texteingabeformularfeld mit Aspos
 Aspose.Words für .NET ist eine leistungsstarke Dokumentverarbeitungsbibliothek, mit der Entwickler Word-Dokumente programmgesteuert erstellen, ändern und konvertieren können.
 
 ### Kann ich Aspose.Words kostenlos nutzen?
-Aspose.Words bietet eine kostenlose Testversion mit einigen Einschränkungen. Für die volle Funktionalität können Sie eine Lizenz erwerben oder eine temporäre Lizenz zur Evaluierung erhalten.
+Aspose.Words bietet eine kostenlose Testversion mit einigen Einschränkungen. Für den vollen Funktionsumfang können Sie eine Lizenz erwerben oder eine temporäre Lizenz zur Evaluierung erhalten.
 
 ### Wofür werden Text-Eingabeformularfelder verwendet?
 Texteingabeformularfelder werden in Word-Dokumenten verwendet, um Benutzern die Eingabe von Text in vordefinierte Bereiche zu ermöglichen, wodurch sie sich ideal für Formulare und Vorlagen eignen.

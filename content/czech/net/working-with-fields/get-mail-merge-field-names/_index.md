@@ -32,7 +32,7 @@ using Aspose.Words;
 using System;
 ```
 
- The`Aspose.Words` jmenný prostor vám poskytuje přístup ke všem třídám a metodám potřebným k manipulaci s dokumenty Wordu`System` se používá pro základní funkce, jako je výstup konzoly.
+The`Aspose.Words` jmenný prostor vám poskytuje přístup ke všem třídám a metodám potřebným k manipulaci s dokumenty Wordu`System` se používá pro základní funkce, jako je výstup konzoly.
 
 Pojďme si rozebrat proces extrahování názvů polí hromadné korespondence do jasného průvodce krok za krokem.
 
@@ -47,7 +47,7 @@ Nejprve musíte nastavit cestu k adresáři, kde se nachází váš dokument apl
 string dataDir = "YOUR DOCUMENTS DIRECTORY";
 ```
 
- Nahradit`"YOUR DOCUMENTS DIRECTORY"`se skutečnou cestou, kde se váš dokument nachází. Tohle by mohlo být něco jako`"C:\\Documents\\MyDoc.docx"`.
+ Nahradit`"YOUR DOCUMENTS DIRECTORY"` se skutečnou cestou, kde se váš dokument nachází. Tohle by mohlo být něco jako`"C:\\Documents\\MyDoc.docx"`.
 
 ## Krok 2: Vložte dokument
 
@@ -73,7 +73,7 @@ Nadpis: Výpis názvů polí hromadné korespondence
 string[] fieldNames = doc.MailMerge.GetFieldNames();
 ```
 
- The`GetFieldNames()` metoda vrací pole řetězců, z nichž každý představuje název pole hromadné korespondence nalezený v dokumentu. Toto jsou zástupné symboly, které uvidíte v dokumentu aplikace Word.
+The`GetFieldNames()`metoda vrací pole řetězců, z nichž každý představuje název pole hromadné korespondence nalezený v dokumentu. Toto jsou zástupné symboly, které uvidíte v dokumentu aplikace Word.
 
 ## Krok 4: Zobrazte počet slučovacích polí
 
@@ -92,7 +92,7 @@ Tento řádek kódu vytiskne celkový počet polí hromadné korespondence v dok
 
 Gratuluji! Nyní jste se naučili, jak extrahovat názvy polí hromadné korespondence z dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato technika je cenným nástrojem pro správu a automatizaci pracovních toků dokumentů, což usnadňuje práci s personalizovaným obsahem. Pomocí těchto kroků můžete efektivně identifikovat pole hromadné korespondence v dokumentech a pracovat s nimi.
 
- Pokud máte nějaké dotazy nebo potřebujete další pomoc, neváhejte prozkoumat[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) nebo se připojte k[Aspose komunita](https://forum.aspose.com/c/words/8) za podporu. Šťastné kódování!
+Pokud máte nějaké dotazy nebo potřebujete další pomoc, neváhejte prozkoumat[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) nebo se připojte k[Aspose komunita](https://forum.aspose.com/c/words/8) za podporu. Šťastné kódování!
 
 ## FAQ
 

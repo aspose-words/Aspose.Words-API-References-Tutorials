@@ -29,7 +29,7 @@ using Aspose.Words;
 using Aspose.Words.WarningInfo;
 ```
 
-## Schritt 1: Dokumentverzeichnis definieren
+## Schritt 1: Definieren Sie das Dokumentverzeichnis
 
 Geben Sie zunächst das Verzeichnis an, in dem Ihr Dokument gespeichert ist. Dies ist wichtig, um das zu verarbeitende Dokument zu finden.
 
@@ -60,7 +60,7 @@ public class HandleDocumentWarnings : IWarningCallback
 }
 ```
 
-## Schritt 4: Den Rückruf dem Dokument zuordnen
+## Schritt 4: Den Rückruf dem Dokument zuweisen
 
 Weisen Sie dem Dokument den Warnrückruf zu. Dadurch wird sichergestellt, dass alle Schriftartprobleme erfasst und protokolliert werden.
 

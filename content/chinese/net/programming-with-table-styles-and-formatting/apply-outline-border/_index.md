@@ -43,7 +43,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
-在此步骤中，我们使用`Document`类从 Aspose.Words 加载现有文档。替换`"YOUR DOCUMENT DIRECTORY"`使用您的文档存储的实际路径。
+在此步骤中，我们使用`Document`来自 Aspose.Words 的类来加载现有文档。替换`"YOUR DOCUMENT DIRECTORY"`使用您的文档存储的实际路径。
 
 ## 第 2 步：访问表
 
@@ -63,7 +63,7 @@ Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 table.Alignment = TableAlignment.Center;
 ```
 
-此步骤可确保表格整齐居中，使其看起来更专业。
+这一步可确保表格整齐居中，看起来更专业。
 
 ## 第四步：清除现有边界
 
@@ -73,7 +73,7 @@ table.Alignment = TableAlignment.Center;
 table.ClearBorders();
 ```
 
-清除边框可确保我们的新边框干净地应用，而不会受到任何旧样式的干扰。
+清除边界可确保我们的新边界能够干净地应用，而不会受到任何旧样式的干扰。
 
 ## 步骤 5：设置轮廓边框
 

@@ -80,7 +80,7 @@ Herzlichen Glückwunsch! Sie haben gelernt, wie Sie in Aspose.Words für Java mi
 ### F: Wie kann ich die Schriftgröße für einen bestimmten Textabschnitt in einem Dokument ändern?
  A: Sie können die`Font.setSize()` Methode, um die Schriftgröße für den gewünschten Text festzulegen.
 
-### F: Ist es möglich, Überschriften und Fließtext in einem Dokument unterschiedliche Schriftarten zuzuweisen?
+### F: Ist es möglich, in einem Dokument unterschiedliche Schriftarten für Überschriften und Fließtext anzuwenden?
 A: Ja, Sie können mit Aspose.Words für Java unterschiedliche Schriftarten auf verschiedene Teile eines Dokuments anwenden.
 
 ### F: Kann ich mit Aspose.Words für Java benutzerdefinierte Schriftarten verwenden?

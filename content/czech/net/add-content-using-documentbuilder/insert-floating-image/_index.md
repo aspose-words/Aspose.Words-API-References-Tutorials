@@ -58,7 +58,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- The`Document` objekt představuje dokument aplikace Word a`DocumentBuilder` pomáhá při přidávání obsahu.
+The`Document` objekt představuje dokument aplikace Word a`DocumentBuilder` pomáhá při přidávání obsahu.
 
 ## Krok 3: Definujte cestu obrázku
 

@@ -1,8 +1,8 @@
 ---
-title: Documentopties en -instellingen nauwkeurig afstemmen voor efficiëntie
-linktitle: Documentopties en -instellingen nauwkeurig afstemmen voor efficiëntie
-second_title: Aspose.Words Python Documentbeheer-API
-description: Leer hoe u Word-documenten efficiënt kunt manipuleren met Aspose.Words voor Python. Stap-voor-stap handleiding met broncode.
+title: Documentopties en -instellingen verfijnen voor efficiëntie
+linktitle: Documentopties en -instellingen verfijnen voor efficiëntie
+second_title: Aspose.Words Python-API voor documentbeheer
+description: Leer hoe u Word-documenten efficiënt kunt manipuleren met Aspose.Words voor Python. Stapsgewijze handleiding met broncode.
 type: docs
 weight: 11
 url: /nl/python-net/document-options-and-settings/manage-document-options-settings/
@@ -10,11 +10,11 @@ url: /nl/python-net/document-options-and-settings/manage-document-options-settin
 
 ## Inleiding tot Aspose.Words voor Python:
 
-Aspose.Words voor Python is een veelzijdige API waarmee ontwikkelaars Word-documenten programmatisch kunnen maken, manipuleren en verwerken. Het biedt een uitgebreide reeks klassen en methoden voor het verwerken van verschillende documentelementen, zoals tekst, alinea's, tabellen, afbeeldingen en meer.
+Aspose.Words voor Python is een API met veel functies waarmee ontwikkelaars Word-documenten programmatisch kunnen maken, bewerken en verwerken. Het biedt een uitgebreide set klassen en methoden voor het verwerken van verschillende documentelementen, zoals tekst, alinea's, tabellen, afbeeldingen en meer.
 
 ## De omgeving instellen:
 
-Zorg er om te beginnen voor dat Python op uw systeem is geïnstalleerd. U kunt de Aspose.Words-bibliotheek installeren met pip:
+Om te beginnen, zorg ervoor dat Python op uw systeem is geïnstalleerd. U kunt de Aspose.Words-bibliotheek installeren met behulp van pip:
 
 ```python
 pip install aspose-words
@@ -22,7 +22,7 @@ pip install aspose-words
 
 ## Een nieuw document maken:
 
-Volg deze stappen om een nieuw Word-document te maken:
+Om een nieuw Word-document te maken, volgt u deze stappen:
 
 ```python
 import aspose.words as aw
@@ -42,7 +42,7 @@ doc.built_in_document_properties["Keywords"].value = "Python, Aspose.Words, Docu
 
 ## Pagina-instellingen beheren:
 
-Door de paginaafmetingen, marges en richting te beheren, zorgt u ervoor dat uw document eruitziet zoals bedoeld:
+Door de pagina-afmetingen, marges en oriëntatie te bepalen, zorgt u ervoor dat uw document eruitziet zoals bedoeld:
 
 ```python
 page_setup = doc.sections[0].page_setup
@@ -55,7 +55,7 @@ page_setup.bottom_margin = aw.ConvertUtil.inch_to_point(1.5)
 
 ## Lettertype en opmaak beheren:
 
-Pas consistente opmaak toe op de tekst van uw document met Aspose.Words:
+Pas een consistente opmaak toe op de tekst van uw document met Aspose.Words:
 
 ```python
 for para in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
@@ -65,7 +65,7 @@ for para in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
 
 ## Werken met secties en kop-/voetteksten:
 
-Verdeel uw document in secties en pas kop- en voetteksten aan:
+Verdeel uw document in secties en pas de kop- en voetteksten aan:
 
 ```python
 section = doc.sections[0]
@@ -75,7 +75,7 @@ header.append_paragraph("My Custom Header")
 
 ## Tabellen toevoegen en opmaken:
 
-Tabellen zijn een integraal onderdeel van veel documenten. Zo maakt en formatteert u ze:
+Tabellen zijn integraal aan veel documenten. Hier leest u hoe u ze kunt maken en formatteren:
 
 ```python
 table = doc.tables.add(section.body)
@@ -96,7 +96,7 @@ doc.first_section.body.first_paragraph.append_child(shape)
 
 ## Documenten opslaan en exporteren:
 
-Bewaar uw gewijzigde document in verschillende formaten:
+Sla uw gewijzigde document op in verschillende formaten:
 
 ```python
 doc.save("output.docx", aw.SaveFormat.DOCX)
@@ -105,13 +105,13 @@ doc.save("output.pdf", aw.SaveFormat.PDF)
 
 ## Conclusie:
 
-Aspose.Words voor Python stelt ontwikkelaars in staat documentopties en -instellingen efficiënt te beheren en biedt gedetailleerde controle over elk aspect van het maken en manipuleren van documenten. De intuïtieve API en uitgebreide documentatie maken het tot een hulpmiddel van onschatbare waarde voor documentgerelateerde taken.
+Aspose.Words voor Python stelt ontwikkelaars in staat om documentopties en -instellingen efficiënt te beheren, en biedt gedetailleerde controle over elk aspect van documentcreatie en -manipulatie. De intuïtieve API en uitgebreide documentatie maken het een onschatbare tool voor documentgerelateerde taken.
 
 ## Veelgestelde vragen
 
 ### Hoe kan ik Aspose.Words voor Python installeren?
 
-U kunt Aspose.Words voor Python installeren met behulp van de volgende pip-opdracht:
+U kunt Aspose.Words voor Python installeren met de volgende pip-opdracht:
 
 ```python
 pip install aspose-words
@@ -123,7 +123,7 @@ Ja, u kunt aangepaste kop- en voetteksten maken met Aspose.Words en deze aanpass
 
 ### Hoe pas ik paginamarges aan met behulp van de API?
 
- U kunt de paginamarges aanpassen met behulp van de`PageSetup` klas. Bijvoorbeeld:
+ U kunt de paginamarges aanpassen met behulp van de`PageSetup` klasse. Bijvoorbeeld:
 
 ```python
 page_setup = doc.sections[0].page_setup
@@ -131,9 +131,9 @@ page_setup.left_margin = aw.ConvertUtil.inch_to_point(1)
 page_setup.right_margin = aw.ConvertUtil.inch_to_point(1)
 ```
 
-### Kan ik mijn document naar PDF exporteren met Aspose.Words?
+### Kan ik mijn document exporteren naar PDF met Aspose.Words?
 
- Absoluut, u kunt uw document naar verschillende formaten exporteren, waaronder PDF, met behulp van de`save` methode. Bijvoorbeeld:
+ Absoluut, u kunt uw document exporteren naar verschillende formaten, waaronder PDF, met behulp van de`save` methode. Bijvoorbeeld:
 
 ```python
 doc.save("output.pdf", aw.SaveFormat.PDF)

@@ -106,7 +106,7 @@ doc.VbaProject.Modules.Add(module);
 
 ### 保存文档
 
-以下是保存文档的代码：
+这是保存文档的代码：
 
 ```csharp
 doc.Save(dataDir + "WorkingWithVba.CreateVbaProject.docm");

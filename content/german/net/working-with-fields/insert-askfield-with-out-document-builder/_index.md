@@ -49,7 +49,7 @@ Dieser Codeausschnitt richtet ein neues Word-Dokument ein, in das wir unser ASK-
 In einem Word-Dokument ist der Inhalt in Knoten organisiert. Wir müssen auf den ersten Absatzknoten zugreifen, in den wir unser ASK-Feld einfügen:
 
 ```csharp
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+Paragraph para = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
 Diese Codezeile ruft den ersten Absatz im Dokument ab und ist bereit für die Einfügung unseres ASK-Felds.
@@ -93,7 +93,7 @@ Dieser Befehl stellt sicher, dass unser ASK-Feld bereit und im Dokument richtig 
 
 ## Schritt 6: Speichern Sie das Dokument
 
-Speichern wir das Dokument abschließend in unserem angegebenen Verzeichnis:
+Zum Schluss speichern wir das Dokument in unserem angegebenen Verzeichnis:
 
 ```csharp
 doc.Save(dataDir + "InsertionChampASKSansDocumentBuilder.docx");
@@ -114,7 +114,7 @@ Ein ASK-Feld in Aspose.Words ist ein Feld, das den Benutzer beim Öffnen des Dok
 Ja, Sie können mehrere ASK-Felder in ein Dokument einfügen, jedes mit einzigartigen Eingabeaufforderungen und Antworten.
 
 ###  Was ist der Zweck der`PromptOnceOnMailMerge` property?
- Der`PromptOnceOnMailMerge` Die Eigenschaft legt fest, ob die ASK-Eingabeaufforderung während eines Seriendruckvorgangs nur einmal oder jedes Mal angezeigt wird.
+Der`PromptOnceOnMailMerge` Die Eigenschaft legt fest, ob die ASK-Eingabeaufforderung während eines Serienbriefvorgangs nur einmal oder jedes Mal angezeigt wird.
 
 ### Muss ich das ASK-Feld aktualisieren, nachdem ich seine Eigenschaften festgelegt habe?
 Ja, durch die Aktualisierung des ASK-Felds wird sichergestellt, dass alle Eigenschaften korrekt angewendet werden und das Feld wie erwartet funktioniert.

@@ -9,7 +9,7 @@ url: /zh-hant/net/programming-with-pdfsaveoptions/additional-text-positioning/
 ---
 ## 介紹
 
-您準備好進入 Aspose.Words for .NET 的世界並解鎖 PDF 中精確文字定位的魔力了嗎？請繫好安全帶，因為本指南將帶您踏上一段令人興奮的旅程，逐步完成使用附加文字定位功能增強 PDF 文字定位的步驟。無論您是經驗豐富的開發人員還是剛起步，本教學都將為您提供您需要了解的所有內容。
+您準備好進入 Aspose.Words for .NET 的世界並解鎖 PDF 中精確文字定位的魔力了嗎？繫好安全帶，因為本指南將帶您踏上一段令人興奮的旅程，逐步完成使用附加文字定位功能增強 PDF 文字定位的步驟。無論您是經驗豐富的開發人員還是剛起步，本教學都將為您提供您需要了解的所有內容。
 
 ## 先決條件
 
@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.AdditionalTextPositioning.pdf", sa
 
 ## 結論
 
-現在你就得到它了！透過執行這些步驟，您已成功使用 Aspose.Words for .NET 改進了 PDF 中的文字定位。這項強大的功能可確保您的 PDF 看起來清晰且專業，文字位置準確。
+現在你就擁有了！透過執行這些步驟，您已成功使用 Aspose.Words for .NET 改進了 PDF 中的文字定位。這項強大的功能可確保您的 PDF 看起來清晰且專業，文字位置準確。
 
 ## 常見問題解答
 

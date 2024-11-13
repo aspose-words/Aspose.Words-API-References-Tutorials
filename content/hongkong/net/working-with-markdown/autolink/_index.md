@@ -68,10 +68,8 @@ builder.InsertHyperlink("Contact Support", "mailto:support@aspose.com", false);
 可以自訂超連結以適合您的文件樣式。您可以使用以下命令變更字體顏色、大小和其他屬性`Font`DocumentBuilder 的屬性。
 
 ```csharp
-//自訂超連結的外觀。
-builder.Font.Color = System.Drawing.Color.Blue;
-builder.Font.Underline = Underline.Single;
-builder.InsertHyperlink("Styled Link", "https://www.aspose.com”，錯誤）；
+builder.Font.Style = doc.Styles[StyleIdentifier.Hyperlink];
+builder.InsertHyperlink("Aspose Website", "http://www.aspose.com”，錯誤）；
 ```
 
 此程式碼片段將插入一個帶有下劃線的藍色超鏈接，使其在文件中脫穎而出。

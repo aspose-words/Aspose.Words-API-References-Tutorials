@@ -59,10 +59,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 為了確保圖像被插值，您需要配置`PdfSaveOptions`。此類別可讓您設定有關如何將文件另存為 PDF 的各種選項。具體來說，您想要啟用圖像插值。
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions 
-{ 
-	InterpolateImages = true
-};
+PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
 這`InterpolateImages`屬性設定為`true`確保 PDF 中的影像經過內插，從而提高其品質。

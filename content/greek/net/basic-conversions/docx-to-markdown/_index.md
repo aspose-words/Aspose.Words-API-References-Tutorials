@@ -38,23 +38,7 @@ string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
 Document doc = new Document(dataDir + "YourDocument.docx");
 ```
 
-## Βήμα 2: Δημιουργία αντικειμένου DocumentBuilder
-
- Στη συνέχεια, δημιουργήστε ένα`DocumentBuilder` να διευκολύνει τον χειρισμό εγγράφων.
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-## Βήμα 3: Χειρισμός περιεχομένου εγγράφου
-
- Χρησιμοποιήστε το`DocumentBuilder` αντικρούστε να χειριστείτε το περιεχόμενο όπως απαιτείται. Για παράδειγμα, προσθέστε κείμενο ή μορφοποίηση.
-
-```csharp
-builder.Writeln("Insert your text or content manipulation code here!");
-```
-
-## Βήμα 4: Αποθήκευση ως Markdown
+## Βήμα 2: Αποθήκευση ως Markdown
 
 Τέλος, αποθηκεύστε το τροποποιημένο έγγραφο ως μορφή Markdown.
 
@@ -75,10 +59,10 @@ doc.Save(dataDir + "ConvertedDocument.md", SaveFormat.Markdown);
 Ναι, το Aspose.Words παρέχει ισχυρά API για το χειρισμό πινάκων, εικόνων, μορφοποίησης κειμένου και πολλά άλλα μέσα στα έγγραφα.
 
 ### Πού μπορώ να βρω αναλυτική τεκμηρίωση για το Aspose.Words για .NET;
- Λεπτομερής τεκμηρίωση είναι διαθέσιμη[εδώ](https://reference.aspose.com/words/net/).
+Λεπτομερής τεκμηρίωση είναι διαθέσιμη[εδώ](https://reference.aspose.com/words/net/).
 
 ### Πώς μπορώ να αποκτήσω μια προσωρινή άδεια χρήσης για το Aspose.Words για .NET;
- Μπορείτε να αποκτήσετε μια προσωρινή άδεια[εδώ](https://purchase.aspose.com/temporary-license/).
+Μπορείτε να αποκτήσετε μια προσωρινή άδεια[εδώ](https://purchase.aspose.com/temporary-license/).
 
 ### Πού μπορώ να λάβω υποστήριξη κοινότητας για το Aspose.Words για .NET;
  Μπορείτε να βρείτε υποστήριξη κοινότητας και να αλληλεπιδράσετε με άλλους χρήστες[εδώ](https://forum.aspose.com/c/words/8).

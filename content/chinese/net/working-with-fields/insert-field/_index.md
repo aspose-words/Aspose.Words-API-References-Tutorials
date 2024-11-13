@@ -2,7 +2,7 @@
 title: 插入字段
 linktitle: 插入字段
 second_title: Aspose.Words 文档处理 API
-description: 通过我们详细的分步指南，了解如何使用 Aspose.Words for .NET 将字段插入 Word 文档。非常适合文档自动化。
+description: 通过我们详细的分步指南学习如何使用 Aspose.Words for .NET 将字段插入 Word 文档。非常适合文档自动化。
 type: docs
 weight: 10
 url: /zh/net/working-with-fields/insert-field/

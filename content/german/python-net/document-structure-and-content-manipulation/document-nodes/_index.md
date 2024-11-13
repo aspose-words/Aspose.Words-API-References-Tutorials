@@ -1,7 +1,7 @@
 ---
 title: Dokumentknoten verstehen und darin navigieren
 linktitle: Dokumentknoten verstehen und darin navigieren
-second_title: Aspose.Words Python-API zur Dokumentenverwaltung
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
 description: Lernen Sie, Word-Dokumente mit Aspose.Words für Python zu bearbeiten. Diese Schritt-für-Schritt-Anleitung behandelt Laden, Formatieren, Tabellen, Bilder und mehr. Verbessern Sie noch heute Ihre Fähigkeiten zur Dokumentenverarbeitung!
 type: docs
 weight: 20
@@ -157,7 +157,7 @@ for row in table.rows:
 
 ## Zusammenführen und Aufteilen von Dokumenten
 
-Das Kombinieren mehrerer Dokumente oder das Aufteilen eines Dokuments in kleinere Teile ist möglich.
+Das Zusammenführen mehrerer Dokumente oder das Aufteilen eines Dokuments in kleinere Teile ist möglich.
 
 ```python
 # Merge documents
@@ -210,4 +210,4 @@ Auf jeden Fall können Sie mit der Aspose.Words-API Text aus bestimmten Abschnit
 
 ### Wo kann ich auf weitere Ressourcen und Dokumentation zugreifen?
 
- Ausführliche Dokumentation und Beispiele finden Sie im[Aspose.Words für Python-API-Referenzen](https://reference.aspose.com/words/python-net/).
+ Umfassende Dokumentation und Beispiele finden Sie im[Aspose.Words für Python-API-Referenzen](https://reference.aspose.com/words/python-net/).

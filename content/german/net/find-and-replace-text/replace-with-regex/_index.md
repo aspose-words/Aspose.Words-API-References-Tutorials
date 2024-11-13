@@ -9,7 +9,7 @@ url: /de/net/find-and-replace-text/replace-with-regex/
 ---
 ## Einführung
 
-Hallo! Mussten Sie schon einmal Text in einem Word-Dokument ersetzen, aber Sie brauchen etwas mehr Leistung als ein einfaches Suchen und Ersetzen? Vielleicht brauchen Sie etwas, das mit Mustern und Platzhaltern umgehen kann? Nun, Sie haben Glück! Aspose.Words für .NET hat mit seiner auf Regex basierenden Suchen- und Ersetzen-Funktion alles, was Sie brauchen. In diesem Tutorial werden wir uns damit befassen, wie Sie mit Regex Text in Ihren Word-Dokumenten mit Aspose.Words für .NET ersetzen können. Wir werden alles Schritt für Schritt aufschlüsseln, sodass Sie selbst dann, wenn Sie mit Regex oder Aspose.Words noch nicht vertraut sind, in kürzester Zeit mit der Materie vertraut werden.
+Hallo! Mussten Sie schon einmal Text in einem Word-Dokument ersetzen, aber Sie brauchen etwas mehr Leistung als ein einfaches Suchen und Ersetzen? Vielleicht brauchen Sie etwas, das mit Mustern und Platzhaltern umgehen kann? Nun, Sie haben Glück! Aspose.Words für .NET hat mit seiner auf Regex basierenden Suchen-und-Ersetzen-Funktion alles, was Sie brauchen. In diesem Tutorial werden wir uns damit befassen, wie Sie mit Regex Text in Ihren Word-Dokumenten mit Aspose.Words für .NET ersetzen können. Wir werden alles Schritt für Schritt aufschlüsseln, sodass Sie selbst dann, wenn Sie mit Regex oder Aspose.Words noch nicht vertraut sind, in kürzester Zeit mit der Sache vertraut werden.
 
 ## Voraussetzungen
 
@@ -85,7 +85,7 @@ doc.Save(dataDir + "FindAndReplace.ReplaceWithRegex.docx");
 
 ## Abschluss
 
-Und da haben Sie es! Sie haben erfolgreich Regex verwendet, um Text in einem Word-Dokument mit Aspose.Words für .NET zu suchen und zu ersetzen. Diese leistungsstarke Funktion kann Ihnen eine Menge Zeit und Mühe sparen, insbesondere bei komplexen Textmustern. Egal, ob Sie Dokumente bereinigen, Text formatieren oder Massenänderungen vornehmen, Regex mit Aspose.Words für .NET ist ein Tool, das Sie in Ihrem Arsenal haben möchten.
+Und da haben Sie es! Sie haben erfolgreich Regex verwendet, um Text in einem Word-Dokument mit Aspose.Words für .NET zu suchen und zu ersetzen. Diese leistungsstarke Funktion kann Ihnen eine Menge Zeit und Mühe sparen, insbesondere bei der Arbeit mit komplexen Textmustern. Egal, ob Sie Dokumente bereinigen, Text formatieren oder Massenänderungen vornehmen, Regex mit Aspose.Words für .NET ist ein Tool, das Sie in Ihrem Arsenal haben möchten.
 
 ## Häufig gestellte Fragen
 

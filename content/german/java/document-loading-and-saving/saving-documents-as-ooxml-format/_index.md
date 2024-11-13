@@ -51,7 +51,7 @@ Document doc = new Document("Document.docx");
 // Optimieren für Word 2016
 doc.getCompatibilityOptions().optimizeFor(MsWordVersion.WORD_2016);
 
-// Erstellen Sie OoxmlSaveOptions und legen Sie die Konformitätsstufe fest
+// OoxmlSaveOptions erstellen und Compliance-Level festlegen
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions();
 saveOptions.setCompliance(OoxmlCompliance.ISO_29500_2008_STRICT);
 
@@ -87,10 +87,10 @@ import com.aspose.words.Document;
 import com.aspose.words.OoxmlSaveOptions;
 import com.aspose.words.SaveFormat;
 
-// Laden eines Dokuments mit älteren Steuerzeichen
+//Laden eines Dokuments mit älteren Steuerzeichen
 Document doc = new Document("LegacyControlChars.doc");
 
-//Erstellen Sie OoxmlSaveOptions mit dem FLAT_OPC-Format und aktivieren Sie die Beibehaltung von Legacy-Steuerzeichen
+// Erstellen Sie OoxmlSaveOptions mit dem FLAT_OPC-Format und aktivieren Sie die Beibehaltung von Legacy-Steuerzeichen
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions(SaveFormat.FLAT_OPC);
 saveOptions.setKeepLegacyControlChars(true);
 
@@ -162,7 +162,7 @@ public void setCompressionLevel() throws Exception
 
 ## Abschluss
 
-In dieser umfassenden Anleitung haben wir untersucht, wie Sie Dokumente mit Aspose.Words für Java im OOXML-Format speichern. Ob Sie Ihre Dokumente mit Passwörtern verschlüsseln, die Einhaltung bestimmter OOXML-Standards sicherstellen, Dokumenteigenschaften aktualisieren, alte Steuerzeichen beibehalten oder Komprimierungsstufen anpassen müssen – Aspose.Words bietet einen vielseitigen Satz von Tools, die Ihren Anforderungen gerecht werden.
+In diesem umfassenden Handbuch haben wir untersucht, wie Sie Dokumente mit Aspose.Words für Java im OOXML-Format speichern. Ob Sie Ihre Dokumente mit Passwörtern verschlüsseln, die Einhaltung bestimmter OOXML-Standards sicherstellen, Dokumenteigenschaften aktualisieren, alte Steuerzeichen beibehalten oder Komprimierungsstufen anpassen müssen – Aspose.Words bietet einen vielseitigen Satz von Tools, die Ihren Anforderungen gerecht werden.
 
 ## Häufig gestellte Fragen
 
@@ -172,7 +172,7 @@ Um den Kennwortschutz eines kennwortgeschützten Dokuments aufzuheben, können S
 
 ### Kann ich beim Speichern eines Dokuments im OOXML-Format benutzerdefinierte Eigenschaften festlegen?
 
- Ja, Sie können benutzerdefinierte Eigenschaften für ein Dokument festlegen, bevor Sie es im OOXML-Format speichern. Verwenden Sie die`BuiltInDocumentProperties`Und`CustomDocumentProperties` Klassen zum Festlegen verschiedener Eigenschaften wie Autor, Titel, Schlüsselwörter und benutzerdefinierte Eigenschaften.
+ Ja, Sie können benutzerdefinierte Eigenschaften für ein Dokument festlegen, bevor Sie es im OOXML-Format speichern. Verwenden Sie die`BuiltInDocumentProperties` Und`CustomDocumentProperties` Klassen zum Festlegen verschiedener Eigenschaften wie Autor, Titel, Schlüsselwörter und benutzerdefinierte Eigenschaften.
 
 ### Was ist die Standardkomprimierungsstufe beim Speichern eines Dokuments im OOXML-Format?
 

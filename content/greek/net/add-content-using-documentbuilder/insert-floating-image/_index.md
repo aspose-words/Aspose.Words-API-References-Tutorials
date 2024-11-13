@@ -58,7 +58,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Ο`Document` αντικείμενο αντιπροσωπεύει το έγγραφο του Word και το`DocumentBuilder` βοηθά στην προσθήκη περιεχομένου σε αυτό.
+Ο`Document` αντικείμενο αντιπροσωπεύει το έγγραφο του Word και το`DocumentBuilder` βοηθά στην προσθήκη περιεχομένου σε αυτό.
 
 ## Βήμα 3: Καθορίστε τη διαδρομή εικόνας
 

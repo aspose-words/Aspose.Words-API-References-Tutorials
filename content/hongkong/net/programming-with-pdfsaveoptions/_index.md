@@ -11,7 +11,7 @@ url: /zh-hant/net/programming-with-pdfsaveoptions/
 
 您將了解如何調整影像品質選項、選擇影像的壓縮等級、設定加密和權限等 PDF 安全性設置，甚至將浮水印插入生成的 PDF 檔案中。這些教學課程還包括詳細的程式碼範例，可協助您在專案中練習這些功能。
 
-無論您想要將 Word 文件轉換為 PDF 以便在線上分發、存檔或列印，這些教學課程都可以為您提供獲得準確、高品質結果的知識。透過 Aspose.Words for .NET 和 PdfSaveOptions，您可以最佳化檔案轉換過程並獲得滿足您特定需求的 PDF 檔案。
+無論您想要將 Word 文件轉換為 PDF 以便在線上分發、存檔還是列印，這些教學課程都可以為您提供獲得準確、高品質結果的知識。透過 Aspose.Words for .NET 和 PdfSaveOptions，您可以最佳化檔案轉換過程並獲得滿足您特定需求的 PDF 檔案。
 
  ## 教學
 | 標題 | 描述 |

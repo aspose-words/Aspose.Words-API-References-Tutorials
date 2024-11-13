@@ -60,7 +60,7 @@ RtfSaveOptions saveOptions = new RtfSaveOptions { SaveImagesAsWmf = true };
 doc.Save(dataDir + "WorkingWithRtfSaveOptions.SavingImagesAsWmf.rtf", saveOptions);
 ```
 
- स्पष्टीकरण: इस चरण में, हम उपयोग करते हैं`Save` की विधि`Document` दस्तावेज़ को सहेजने के लिए क्लास का उपयोग करें। हम फ़ाइल पथ और`saveOptions` पैरामीटर के रूप में। यह सुनिश्चित करता है कि छवियाँ WMF के रूप में सहेजी गई हैं।
+ स्पष्टीकरण: इस चरण में, हम उपयोग करते हैं`Save` की विधि`Document` दस्तावेज़ को सहेजने के लिए क्लास का उपयोग करें। हम फ़ाइल पथ और पास करते हैं`saveOptions` पैरामीटर के रूप में। यह सुनिश्चित करता है कि छवियाँ WMF के रूप में सहेजी गई हैं।
 
 ## निष्कर्ष
 

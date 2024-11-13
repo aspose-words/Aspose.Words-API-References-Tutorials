@@ -9,7 +9,7 @@ url: /de/net/programming-with-ranges/ranges-delete-text/
 ---
 ## Einführung
 
-Wenn Sie schon einmal bestimmte Textabschnitte in einem Word-Dokument löschen mussten, sind Sie hier richtig! Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Sie Word-Dokumente ganz einfach bearbeiten können. In diesem Tutorial führen wir Sie durch die Schritte zum Löschen von Text aus einem Bereich in einem Word-Dokument. Wir unterteilen den Vorgang in einfache, leicht verständliche Schritte, damit er kinderleicht ist. Also, legen wir los!
+Wenn Sie schon einmal bestimmte Textabschnitte in einem Word-Dokument löschen mussten, sind Sie hier richtig! Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Sie Word-Dokumente ganz einfach bearbeiten können. In diesem Tutorial führen wir Sie durch die Schritte zum Löschen von Text aus einem Bereich in einem Word-Dokument. Wir unterteilen den Vorgang in einfache, leicht verständliche Schritte, damit er kinderleicht wird. Also, legen wir los!
 
 ## Voraussetzungen
 
@@ -21,7 +21,7 @@ Bevor wir mit dem Codieren beginnen, stellen wir sicher, dass Sie alles haben, w
 
 ## Namespaces importieren
 
-Bevor Sie mit dem Codieren beginnen, müssen Sie die erforderlichen Namespaces in Ihr C#-Projekt importieren. So geht's:
+Bevor Sie mit dem Programmieren beginnen, müssen Sie die erforderlichen Namespaces in Ihr C#-Projekt importieren. So geht's:
 
 ```csharp
 using Aspose.Words;
@@ -97,7 +97,7 @@ Auf jeden Fall! Sie können bedingte Logik implementieren, um Text basierend auf
 
 ### Wie kann ich den gelöschten Text wiederherstellen?
 
-Wenn Sie das Dokument nach dem Löschen des Textes nicht gespeichert haben, können Sie das Dokument neu laden, um den gelöschten Text wiederherzustellen. Nach dem Speichern können Sie den gelöschten Text nicht wiederherstellen, es sei denn, Sie verfügen über eine Sicherungskopie.
+Wenn Sie das Dokument nach dem Löschen des Textes nicht gespeichert haben, können Sie das Dokument erneut laden, um den gelöschten Text wiederherzustellen. Nach dem Speichern können Sie den gelöschten Text nicht wiederherstellen, es sei denn, Sie verfügen über eine Sicherungskopie.
 
 ### Kann ich Text aus mehreren Abschnitten gleichzeitig löschen?
 

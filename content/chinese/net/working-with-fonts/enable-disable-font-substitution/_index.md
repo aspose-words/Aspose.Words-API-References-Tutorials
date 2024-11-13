@@ -21,7 +21,7 @@ url: /zh/net/working-with-fonts/enable-disable-font-substitution/
 
 ## 导入命名空间
 
-首先，请确保已在项目中导入必要的命名空间。将这些添加到 C# 文件的顶部：
+首先，确保已在项目中导入必要的命名空间。将这些添加到 C# 文件的顶部：
 
 ```csharp
 using Aspose.Words;
@@ -99,7 +99,7 @@ doc.Save(dataDir + "WorkingWithFonts.EnableDisableFontSubstitution.pdf");
 
 当然可以！您可以通过更改字体名称来指定系统上可用的任何字体`DefaultFontName`财产。
 
-### 如果指定的默认字体不可用会发生什么情况？
+### 如果指定的默认字体不可用，会发生什么情况？
 
 如果默认字体不可用，Aspose.Words 将使用系统回退机制来寻找合适的替代字体。
 

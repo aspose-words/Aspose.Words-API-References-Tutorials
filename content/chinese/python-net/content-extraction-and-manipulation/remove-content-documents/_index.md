@@ -86,7 +86,7 @@ for paragraph in doc.get_child_nodes(aw.NodeType.PARAGRAPH, True):
 
 ## 删除部分
 
-可以通过以下方式删除文档中的整个部分：
+可以通过如下方式删除文档中的整个部分：
 
 ```python
 for section in doc.sections:

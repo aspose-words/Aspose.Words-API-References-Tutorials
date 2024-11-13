@@ -31,7 +31,7 @@ using Aspose.Words.Saving;
 
 ## 步骤 1：加载加密文档
 
-首先，使用`LoadOptions`类。此类允许您指定打开文档所需的密码。
+首先，您将使用`LoadOptions`类。此类允许您指定打开文档所需的密码。
 
 ```csharp
 //文档目录的路径

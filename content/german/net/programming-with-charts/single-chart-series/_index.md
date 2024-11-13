@@ -115,7 +115,7 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Sie Word-Dok
  Ja, Sie können beginnen mit einem[Kostenlose Testversion](https://releases.aspose.com/).
 
 ### Wie erhalte ich Support für Aspose.Words?
- Sie können Unterstützung von der Aspose-Community erhalten auf deren[Forum](https://forum.aspose.com/c/words/8).
+ Sie können Unterstützung von der Aspose-Community erhalten über deren[Forum](https://forum.aspose.com/c/words/8).
 
 ### Ist es möglich, andere Diagrammtypen anzupassen?
 Auf jeden Fall! Aspose.Words unterstützt verschiedene Diagrammtypen wie Balken-, Kreis- und Streudiagramme.

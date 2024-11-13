@@ -2,7 +2,7 @@
 title: Zeile nach Lesezeichen im Word-Dokument löschen
 linktitle: Zeile nach Lesezeichen im Word-Dokument löschen
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Zeile per Lesezeichen in einem Word-Dokument löschen. Folgen Sie unserer Schritt-für-Schritt-Anleitung für eine effiziente Dokumentenverwaltung.
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET eine Zeile per Lesezeichen in einem Word-Dokument löschen. Folgen Sie unserer Schritt-für-Schritt-Anleitung für effizientes Dokumentenmanagement.
 type: docs
 weight: 10
 url: /de/net/programming-with-bookmarks/delete-row-by-bookmark/
@@ -15,7 +15,7 @@ Das Löschen einer Zeile per Lesezeichen in einem Word-Dokument mag kompliziert 
 
 Bevor wir in den Code einsteigen, stellen Sie sicher, dass Sie über Folgendes verfügen:
 
--  Aspose.Words für .NET: Stellen Sie sicher, dass Sie Aspose.Words für .NET installiert haben. Sie können es von der[Aspose-Veröffentlichungsseite](https://releases.aspose.com/words/net/).
+-  Aspose.Words für .NET: Stellen Sie sicher, dass Sie Aspose.Words für .NET installiert haben. Sie können es herunterladen von der[Aspose-Veröffentlichungsseite](https://releases.aspose.com/words/net/).
 - Entwicklungsumgebung: Visual Studio oder eine andere IDE, die .NET-Entwicklung unterstützt.
 - Grundkenntnisse in C#: Kenntnisse in der C#-Programmierung helfen Ihnen, dem Lernprogramm zu folgen.
 

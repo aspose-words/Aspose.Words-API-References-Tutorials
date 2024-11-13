@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.Format1BppIndexed.Png", saveOpti
 
 ## 結論
 
-現在你就得到它了！只需幾行程式碼，您就可以使用 Aspose.Words for .NET 將 Word 文件轉換為 1Bpp 索引圖片。此方法對於從文件創建高對比度、節省空間的圖像非常有用。現在，您可以輕鬆地將其整合到您的專案和工作流程中。快樂編碼！
+現在你就擁有了！只需幾行程式碼，您就可以使用 Aspose.Words for .NET 將 Word 文件轉換為 1Bpp 索引圖片。此方法對於從文件創建高對比度、節省空間的圖像非常有用。現在，您可以輕鬆地將其整合到您的專案和工作流程中。快樂編碼！
 
 ## 常見問題解答
 

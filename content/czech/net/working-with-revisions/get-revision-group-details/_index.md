@@ -106,4 +106,4 @@ Absolutně! Můžete jej použít s jakýmkoli jazykem .NET, včetně C#, VB.NET
  Ano, Aspose.Words for .NET vyžaduje licenci pro plnou funkčnost. Můžete si jeden zakoupit[zde](https://purchase.aspose.com/buy) nebo získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
 
 ### Kde najdu další dokumentaci k Aspose.Words pro .NET?
- K dispozici je podrobná dokumentace[zde](https://reference.aspose.com/words/net/).
+ dispozici je podrobná dokumentace[zde](https://reference.aspose.com/words/net/).

@@ -1,7 +1,7 @@
 ---
 title: Stijlen en thema's gebruiken in Aspose.Words voor Java
 linktitle: Stijlen en thema's gebruiken
-second_title: Aspose.Words Java-documentverwerkings-API
+second_title: Aspose.Words Java Documentverwerkings-API
 description: Leer hoe u de documentopmaak kunt verbeteren met Aspose.Words voor Java. Ontdek stijlen, thema's en meer in deze uitgebreide gids met broncodevoorbeelden.
 type: docs
 weight: 20
@@ -10,7 +10,7 @@ url: /nl/java/document-manipulation/using-styles-and-themes/
 
 ## Inleiding tot het gebruik van stijlen en thema's in Aspose.Words voor Java
 
-In deze handleiding onderzoeken we hoe u met stijlen en thema's in Aspose.Words voor Java kunt werken om de opmaak en het uiterlijk van uw documenten te verbeteren. We behandelen onderwerpen als het ophalen van stijlen, het kopiëren van stijlen, het beheren van thema's en het invoegen van stijlscheidingstekens. Laten we beginnen!
+In deze gids verkennen we hoe u met stijlen en thema's in Aspose.Words voor Java kunt werken om de opmaak en het uiterlijk van uw documenten te verbeteren. We behandelen onderwerpen zoals het ophalen van stijlen, het kopiëren van stijlen, het beheren van thema's en het invoegen van stijlscheidingstekens. Laten we beginnen!
 
 ## Stijlen ophalen
 
@@ -19,7 +19,7 @@ Om stijlen uit een document op te halen, kunt u het volgende Java-codefragment g
 ```java
 Document doc = new Document();
 String styleName = "";
-//Haal de stijlencollectie op uit het document.
+//Haal de stijlencollectie uit het document.
 StyleCollection styles = doc.getStyles();
 for (Style style : styles)
 {
@@ -53,11 +53,11 @@ public void copyStyles() throws Exception
 }
 ```
 
-Deze code kopieert stijlen van een sjabloondocument naar het huidige document.
+Met deze code kopieert u stijlen uit een sjabloondocument naar het huidige document.
 
 ## Thema's beheren
 
-Thema's zijn essentieel voor het bepalen van het algehele uiterlijk van uw document. U kunt thema-eigenschappen ophalen en instellen, zoals gedemonstreerd in de volgende code:
+Thema's zijn essentieel voor het definiëren van de algehele look van uw document. U kunt thema-eigenschappen ophalen en instellen zoals gedemonstreerd in de volgende code:
 
 ```java
 @Test
@@ -100,18 +100,18 @@ public void insertStyleSeparator() throws Exception
     builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_1);
     builder.write("Heading 1");
     builder.insertStyleSeparator();
-    // Voeg tekst toe met een andere stijl.
+    // Voeg tekst met een andere stijl toe.
     builder.getParagraphFormat().setStyleName(paraStyle.getName());
     builder.write("This is text with some other formatting ");
     doc.save("Your Directory Path" + "WorkingWithStylesAndThemes.InsertStyleSeparator.docx");
 }
 ```
 
-In deze code maken we een aangepaste alineastijl en voegen we een stijlscheidingsteken in om binnen dezelfde alinea van stijl te wisselen.
+In deze code maken we een aangepaste alineastijl en voegen we een stijlscheidingsteken toe om van stijl te wisselen binnen dezelfde alinea.
 
 ## Conclusie
 
-In deze handleiding worden de basisbeginselen behandeld van het werken met stijlen en thema's in Aspose.Words voor Java. U hebt geleerd hoe u stijlen kunt ophalen en kopiëren, thema's kunt beheren en stijlscheidingstekens kunt invoegen om visueel aantrekkelijke en goed opgemaakte documenten te maken. Experimenteer met deze technieken om uw documenten aan uw wensen aan te passen.
+Deze gids heeft de basisbeginselen van het werken met stijlen en thema's in Aspose.Words voor Java behandeld. U hebt geleerd hoe u stijlen kunt ophalen en kopiëren, thema's kunt beheren en stijlscheidingstekens kunt invoegen om visueel aantrekkelijke en goed opgemaakte documenten te maken. Experimenteer met deze technieken om uw documenten aan te passen aan uw vereisten.
 
 
 ## Veelgestelde vragen
@@ -120,10 +120,10 @@ In deze handleiding worden de basisbeginselen behandeld van het werken met stijl
 
 U kunt thema-eigenschappen ophalen door het thema-object en de bijbehorende eigenschappen te openen.
 
-### Hoe kan ik thema-eigenschappen instellen, zoals lettertypen en kleuren?
+### Hoe kan ik thema-eigenschappen, zoals lettertypen en kleuren, instellen?
 
 U kunt thema-eigenschappen instellen door de eigenschappen van het thema-object te wijzigen.
 
-### Hoe kan ik stijlscheidingstekens gebruiken om binnen dezelfde alinea van stijl te wisselen?
+### Hoe kan ik stijlscheidingstekens gebruiken om stijlen binnen dezelfde alinea te wijzigen?
 
- U kunt stijlscheidingstekens invoegen met behulp van de`insertStyleSeparator` werkwijze van de`DocumentBuilder` klas.
+ U kunt stijlscheidingstekens invoegen met behulp van de`insertStyleSeparator` methode van de`DocumentBuilder` klas.

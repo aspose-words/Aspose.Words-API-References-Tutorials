@@ -14,4 +14,4 @@ Words Processing with Silbentrennung ist eine umfassende Ressource, die Sie durc
 | --- | --- |
 | [Wörter in verschiedenen Sprachen mit Bindestrich verbinden](./hyphenate-words-of-languages/) | Erfahren Sie, wie Sie mit Aspose.Words für .NET Wörter in verschiedenen Sprachen trennen. Folgen Sie dieser detaillierten Schritt-für-Schritt-Anleitung, um die Lesbarkeit Ihres Dokuments zu verbessern. |
 | [Silbentrennungswörterbuch für Sprache laden](./load-hyphenation-dictionary-for-language/) | Erfahren Sie in diesem umfassenden Schritt-für-Schritt-Tutorial, wie Sie mit Aspose.Words für .NET ein Silbentrennungswörterbuch für jede Sprache laden. |
-| [Silbentrennungs-Rückruf](./hyphenation-callback/) | Erfahren Sie mit dieser umfassenden Schritt-für-Schritt-Anleitung, wie Sie in Aspose.Words für .NET die Silbentrennungs-Rückruffunktion implementieren, um die Dokumentformatierung zu verbessern. |
+| [Silbentrennungs-Rückruf](./hyphenation-callback/) | Erfahren Sie in dieser umfassenden Schritt-für-Schritt-Anleitung, wie Sie in Aspose.Words für .NET die Silbentrennungs-Rückruffunktion implementieren, um die Dokumentformatierung zu verbessern. |

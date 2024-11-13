@@ -15,7 +15,7 @@ Jste připraveni se ponořit do úžasných technických věcí? Dnes se budeme 
 
 Než se pustíme do té zábavné části, ujistěte se, že máte vše, co potřebujete:
 
-1.  Aspose.Words for .NET Library: Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/) . Pokud jste si ho ještě nekoupili, vezměte si[zkušební verze zdarma](https://releases.aspose.com/) nebo[koupit zde](https://purchase.aspose.com/buy).
+1.  Aspose.Words for .NET Library: Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/) . Pokud jste si to ještě nekoupili, vezměte si[zkušební verze zdarma](https://releases.aspose.com/) nebo[koupit zde](https://purchase.aspose.com/buy).
 2. Vývojové prostředí: Visual Studio nebo jakékoli jiné IDE, které podporuje .NET.
 3. Základní znalost C#: Abyste mohli pokračovat, musíte znát C#.
 

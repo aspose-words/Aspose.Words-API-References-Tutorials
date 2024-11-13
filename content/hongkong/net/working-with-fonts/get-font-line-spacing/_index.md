@@ -2,14 +2,14 @@
 title: 取得字體行距
 linktitle: 取得字體行距
 second_title: Aspose.Words 文件處理 API
-description: 透過此逐步教學，了解如何使用 Aspose.Words for .NET 取得字體行間距。非常適合開發人員。
+description: 透過此逐步教學，了解如何使用 Aspose.Words for .NET 取得字體行距。非常適合開發人員。
 type: docs
 weight: 10
 url: /zh-hant/net/working-with-fonts/get-font-line-spacing/
 ---
 ## 介紹
 
-Aspose.Words for .NET 是一個功能強大的程式庫，可讓您以程式設計方式建立、操作和轉換 Word 文件。您可能需要執行的常見任務是檢索文件中特定字體的行距。在本教學中，我們將逐步引導您完成流程，確保您可以使用 Aspose.Words for .NET 輕鬆取得字體行間距。 
+Aspose.Words for .NET 是一個功能強大的程式庫，可讓您以程式設計方式建立、操作和轉換 Word 文件。您可能需要執行的常見任務是檢索文件中特定字體的行距。在本教學中，我們將逐步引導您完成流程，確保您可以使用 Aspose.Words for .NET 輕鬆取得字體行距。 
 
 ## 先決條件
 
@@ -81,7 +81,7 @@ Console.WriteLine($"lineSpacing = {font.LineSpacing}");
 
 ## 結論
 
-現在你就得到它了！當您將其分解為以下簡單步驟時，使用 Aspose.Words for .NET 檢索字體行間距非常簡單。無論您是建立新文檔還是使用現有文檔，Aspose.Words 都提供了有效管理字體屬性所需的所有工具。
+現在你就擁有了！當您將其分解為以下簡單步驟時，使用 Aspose.Words for .NET 檢索字體行間距非常簡單。無論您是建立新文檔還是使用現有文檔，Aspose.Words 都提供了有效管理字體屬性所需的所有工具。
 
 ## 常見問題解答
 

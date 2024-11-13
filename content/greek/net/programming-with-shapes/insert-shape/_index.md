@@ -115,7 +115,7 @@ doc.Save(dataDir + "WorkingWithShapes.InsertShape.docx", saveOptions);
  Ναι, μπορείτε να διαμορφώσετε τα σχήματα ορίζοντας ιδιότητες όπως`FillColor`, `StrokeColor` , και`StrokeWeight`.
 
 ### Πώς τοποθετώ τα σχήματα σε σχέση με άλλα στοιχεία;
- Χρησιμοποιήστε το`RelativeHorizontalPosition`και`RelativeVerticalPosition` ιδιότητες για την τοποθέτηση σχημάτων σε σχέση με άλλα στοιχεία του εγγράφου.
+ Χρησιμοποιήστε το`RelativeHorizontalPosition` και`RelativeVerticalPosition` ιδιότητες για την τοποθέτηση σχημάτων σε σχέση με άλλα στοιχεία του εγγράφου.
 
 ### Μπορώ να ομαδοποιήσω πολλά σχήματα μαζί;
  Ναι, το Aspose.Words για .NET σάς επιτρέπει να ομαδοποιείτε σχήματα χρησιμοποιώντας το`GroupShape` τάξη.

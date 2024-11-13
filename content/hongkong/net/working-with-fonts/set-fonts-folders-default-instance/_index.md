@@ -14,7 +14,7 @@ url: /zh-hant/net/working-with-fonts/set-fonts-folders-default-instance/
 ## 先決條件
 
 在我們深入了解具體細節之前，讓我們確保您擁有所需的一切：
--  Aspose.Words for .NET：確保您已安裝程式庫。如果沒有，你可以[在這裡下載](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET：確保您已安裝程式庫。如果沒有，您可以[在這裡下載](https://releases.aspose.com/words/net/).
 - 開發環境：Visual Studio 或任何其他 .NET 相容 IDE。
 - C# 基礎知識：您應該熟悉 C# 程式設計。
 - 字體資料夾：包含自訂字體的目錄。
@@ -50,7 +50,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);
 ```
 
-在這一行中，`"C:\\MyFonts\\"`是自訂字型資料夾的路徑。第二個參數，`true`，表示應遞歸掃描此資料夾中的字型。
+在這一行中，`"C:\\MyFonts\\"`是自訂字型資料夾的路徑。第二個參數，`true`，表示應遞歸掃描該資料夾中的字型。
 
 ## 第 3 步：載入您的文檔
 
@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersDefaultInstance.pdf");
 
 ## 結論
 
-現在你就得到它了！當您將其分解為簡單的步驟時，為 Aspose.Words for .NET 中的預設實例設定字體資料夾是一件輕而易舉的事。透過遵循本指南，您可以確保您的 Word 文件看起來完全符合您的要求，並且所有自訂字體都已就位。所以，繼續嘗試吧，讓您的文件大放異彩！
+現在你就擁有了！當您將其分解為簡單的步驟時，為 Aspose.Words for .NET 中的預設實例設定字體資料夾是一件輕而易舉的事。透過遵循本指南，您可以確保您的 Word 文件看起來完全符合您的要求，並且所有自訂字體都已就位。所以，繼續嘗試吧，讓您的文件大放異彩！
 
 ## 常見問題解答
 

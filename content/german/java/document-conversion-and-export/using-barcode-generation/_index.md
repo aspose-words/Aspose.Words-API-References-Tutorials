@@ -38,7 +38,7 @@ Document doc = new Document("Field sample - BARCODE.docx");
 
 ## Barcode-Generator einstellen
 
- Richten Sie einen benutzerdefinierten Barcode-Generator ein mit dem`FieldOptions` Klasse. In diesem Beispiel gehen wir davon aus, dass Sie eine`CustomBarcodeGenerator`Klasse, um den Barcode zu generieren. Ersetzen Sie`CustomBarcodeGenerator` mit Ihrer tatsächlichen Barcode-Generierungslogik:
+ Richten Sie einen benutzerdefinierten Barcode-Generator ein mit dem`FieldOptions` Klasse. In diesem Beispiel gehen wir davon aus, dass Sie eine`CustomBarcodeGenerator` Klasse, um den Barcode zu generieren. Ersetzen Sie`CustomBarcodeGenerator` mit Ihrer tatsächlichen Barcode-Generierungslogik:
 
 ```java
 doc.getFieldOptions().setBarcodeGenerator(new CustomBarcodeGenerator());
@@ -80,7 +80,7 @@ Auf jeden Fall! Aspose.Words für Java ist für die effiziente Verarbeitung gro�
 
 ### Gibt es Lizenzanforderungen für die Verwendung von Aspose.Words für Java?
 
-Ja, Aspose.Words für Java erfordert für die kommerzielle Nutzung eine gültige Lizenz. Sie können eine Lizenz von der Aspose-Website erhalten.
+Ja, für die kommerzielle Nutzung von Aspose.Words für Java ist eine gültige Lizenz erforderlich. Sie können eine Lizenz von der Aspose-Website erhalten.
 
 ### Wo finde ich weitere Dokumentation und Beispiele?
 

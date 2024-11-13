@@ -9,7 +9,7 @@ url: /de/net/working-with-section/delete-header-footer-content/
 ---
 ## Einführung
 
-Hallo, Word-Dokument-Besitzer! 📝 Mussten Sie schon einmal die Kopf- und Fußzeilen in einem Word-Dokument löschen, waren aber von der mühsamen manuellen Arbeit überfordert? Machen Sie sich keine Sorgen mehr! Mit Aspose.Words für .NET können Sie diese Aufgabe in nur wenigen Schritten automatisieren. Diese Anleitung führt Sie durch den Prozess des Löschens von Kopf- und Fußzeileninhalten aus einem Word-Dokument mit Aspose.Words für .NET. Bereit, diese Dokumente zu bereinigen? Dann legen wir los!
+Hallo, Word-Dokument-Bearbeiter! 📝 Mussten Sie schon einmal die Kopf- und Fußzeilen in einem Word-Dokument löschen, waren aber von der mühsamen manuellen Arbeit überfordert? Machen Sie sich keine Sorgen mehr! Mit Aspose.Words für .NET können Sie diese Aufgabe in nur wenigen Schritten automatisieren. Diese Anleitung führt Sie durch den Prozess des Löschens von Kopf- und Fußzeileninhalten aus einem Word-Dokument mit Aspose.Words für .NET. Bereit, diese Dokumente zu bereinigen? Dann legen wir los!
 
 ## Voraussetzungen
 
@@ -105,7 +105,7 @@ foreach (Section section in doc.Sections)
 
 ### Entfernt diese Methode alle Arten von Kopf- und Fußzeilen?
 
- Ja,`ClearHeadersFooters()` Entfernt alle Kopf- und Fußzeilen, einschließlich der ersten Seite sowie der ungeraden und geraden Kopf- und Fußzeilen.
+ Ja,`ClearHeadersFooters()` Entfernt alle Kopf- und Fußzeilen, einschließlich der Kopf- und Fußzeilen der ersten Seite sowie der ungeraden und geraden Seiten.
 
 ### Ist Aspose.Words für .NET mit allen Versionen von Word-Dokumenten kompatibel?
 

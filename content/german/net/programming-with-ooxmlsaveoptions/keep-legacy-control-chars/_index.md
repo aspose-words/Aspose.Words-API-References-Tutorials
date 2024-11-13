@@ -9,7 +9,7 @@ url: /de/net/programming-with-ooxmlsaveoptions/keep-legacy-control-chars/
 ---
 ## Einführung
 
-Haben Sie sich schon einmal über diese seltsamen, unsichtbaren Steuerzeichen in Ihren Word-Dokumenten gewundert? Sie sind wie kleine, versteckte Gremlins, die Formatierung und Funktionalität durcheinanderbringen können. Glücklicherweise bietet Aspose.Words für .NET eine praktische Funktion, um diese alten Steuerzeichen beim Speichern von Dokumenten intakt zu halten. In diesem Tutorial werden wir uns eingehend mit der Verwaltung dieser Steuerzeichen mit Aspose.Words für .NET befassen. Wir werden es Schritt für Schritt aufschlüsseln und sicherstellen, dass Sie dabei jedes Detail verstehen. Bereit, loszulegen? Lassen Sie uns eintauchen!
+Haben Sie sich schon einmal über diese seltsamen, unsichtbaren Steuerzeichen in Ihren Word-Dokumenten gewundert? Sie sind wie kleine, versteckte Gremlins, die Formatierung und Funktionalität durcheinanderbringen können. Glücklicherweise bietet Aspose.Words für .NET eine praktische Funktion, um diese alten Steuerzeichen beim Speichern von Dokumenten intakt zu halten. In diesem Tutorial werden wir uns eingehend damit befassen, wie diese Steuerzeichen mit Aspose.Words für .NET verwaltet werden. Wir werden es Schritt für Schritt aufschlüsseln und sicherstellen, dass Sie dabei jedes Detail verstehen. Bereit, loszulegen? Lassen Sie uns eintauchen!
 
 ## Voraussetzungen
 
@@ -40,7 +40,7 @@ Zuerst müssen Sie Ihr Projekt in Visual Studio (oder Ihrer bevorzugten IDE) ein
 
 Als Nächstes laden Sie das Word-Dokument, das die alten Steuerzeichen enthält.
 
-1. Dokumentpfad angeben: Legen Sie den Pfad zu Ihrem Dokumentverzeichnis fest.
+1. Geben Sie den Dokumentpfad an: Legen Sie den Pfad zu Ihrem Dokumentverzeichnis fest.
    
    ```csharp
    string dataDir = "YOUR DOCUMENT DIRECTORY";

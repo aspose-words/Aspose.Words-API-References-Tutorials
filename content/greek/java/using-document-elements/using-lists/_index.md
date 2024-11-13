@@ -233,4 +233,4 @@ builder.getDocument().save(outPath + "SpecifyListLevel.docx");
 Απολύτως! Το Aspose.Words για Java υποστηρίζει προηγμένη μορφοποίηση εγγράφων, συμπεριλαμβανομένων πινάκων, εικόνων και άλλων. Ελέγξτε την τεκμηρίωση για παραδείγματα.
 
 ### Πού μπορώ να λάβω μια προσωρινή άδεια χρήσης για το Aspose.Words για Java;
- Μπορείτε να αποκτήσετε μια προσωρινή άδεια[εδώ](https://purchase.aspose.com/temporary-license/).
+Μπορείτε να αποκτήσετε μια προσωρινή άδεια[εδώ](https://purchase.aspose.com/temporary-license/).

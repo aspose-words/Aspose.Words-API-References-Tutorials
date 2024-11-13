@@ -78,7 +78,7 @@ chart.Series.Add("Aspose Series 1",
 ChartAxis xAxis = chart.AxisX;
 xAxis.CategoryType = AxisCategoryType.Category;
 xAxis.Crosses = AxisCrosses.Custom;
-xAxis.CrossesAt = 3; //Μετράται σε μονάδες απεικόνισης του άξονα Υ (εκατοντάδες).
+xAxis.CrossesAt = 3; // Μετράται σε μονάδες απεικόνισης του άξονα Υ (εκατοντάδες).
 xAxis.ReverseOrder = true;
 xAxis.MajorTickMark = AxisTickMark.Cross;
 xAxis.MinorTickMark = AxisTickMark.Outside;
@@ -117,7 +117,7 @@ doc.Save(dataDir + "WorkingWithCharts.DefineXYAxisProperties.docx");
 Μπορείτε να δημιουργήσετε διάφορους τύπους γραφημάτων, όπως Περιοχή, Γραμμή, Γραμμή, Πίτα και άλλα.
 
 ### Πώς μπορώ να εγκαταστήσω το Aspose.Words για .NET;
- Μπορείτε να κάνετε λήψη του Aspose.Words για .NET από[εδώ](https://releases.aspose.com/words/net/) και ακολουθήστε τις οδηγίες εγκατάστασης που παρέχονται.
+ Μπορείτε να κάνετε λήψη του Aspose.Words για .NET από[εδώ](https://releases.aspose.com/words/net/)και ακολουθήστε τις οδηγίες εγκατάστασης που παρέχονται.
 
 ### Μπορώ να προσαρμόσω την εμφάνιση των γραφημάτων μου;
 Ναι, το Aspose.Words για .NET επιτρέπει την εκτεταμένη προσαρμογή των γραφημάτων, συμπεριλαμβανομένων των χρωμάτων, των γραμματοσειρών και των ιδιοτήτων άξονα.

@@ -70,7 +70,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.DownsamplingImages.pdf", saveOptio
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 對影像進行下取樣，成功縮小了 PDF 的大小。這不僅使您的 PDF 更易於管理，還有助於更快的上傳、下載和更流暢的檢視體驗。
+現在你就擁有了！您已使用 Aspose.Words for .NET 對影像進行下取樣，成功縮小了 PDF 的大小。這不僅使您的 PDF 更易於管理，還有助於更快的上傳、下載和更流暢的檢視體驗。
 
 ## 常見問題解答
 

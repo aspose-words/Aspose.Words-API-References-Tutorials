@@ -84,34 +84,12 @@ doc.save("output.html", SaveFormat.HTML);
 doc.save("output.epub", SaveFormat.EPUB);
 ```
 
-## Schritt 5: Umgang mit der Schriftartenersetzung
-
-Das Ersetzen von Schriftarten ist eine häufige Herausforderung beim Konvertieren von Dokumenten. Aspose.Words bietet einen Mechanismus zum Ersetzen von Schriftarten, um die visuelle Konsistenz des konvertierten Dokuments sicherzustellen:
-
-```java
-// Schriftartenersetzung aktivieren
-FontSettings.setFontsFolder("/path/to/fonts", true);
-```
-
-## Schritt 6: Anpassen des Konvertierungsprozesses
-
-Aspose.Words bietet eine Vielzahl von Optionen zum Anpassen des Dokumentkonvertierungsprozesses. Sie können beispielsweise den Seitenbereich für die Konvertierung festlegen oder die Bildauflösung beim Speichern im PDF-Format angeben:
-
-```java
-// Legen Sie den Seitenbereich für die Konvertierung fest (konvertieren Sie die Seiten 1 bis 3).
-PdfSaveOptions options = new PdfSaveOptions();
-options.setPageSet(new PageSet(1, 3));
-
-// Stellen Sie die Bildauflösung auf 300 DPI ein
-options.setJpegQuality(300);
-```
-
 ## Tipps zur effektiven Dokumentkonvertierung
 
 Um einen reibungslosen und effizienten Dokumentkonvertierungsprozess zu gewährleisten, beachten Sie die folgenden Tipps:
 
 ## Kompatibilität der Dokumentformate: 
- Stellen Sie sicher, dass die Quell- und Zielformate mit Aspose.Words kompatibel sind.[Aspose.Words Java API-Referenz](https://reference.aspose.com/words/java/) für die unterstützten Formate.
+Stellen Sie sicher, dass die Quell- und Zielformate mit Aspose.Words kompatibel sind.[Aspose.Words Java API-Referenz](https://reference.aspose.com/words/java/) für die unterstützten Formate.
 
 ## Ausnahmebehandlung: 
 Beim Konvertieren einer großen Anzahl von Dokumenten können Fehler auftreten. Implementieren Sie eine geeignete Ausnahmebehandlung, um diese Probleme zu identifizieren und zu beheben.

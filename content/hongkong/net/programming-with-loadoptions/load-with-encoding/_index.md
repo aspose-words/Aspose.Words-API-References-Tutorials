@@ -70,7 +70,7 @@ Document doc = new Document(dataDir + "Encoded in UTF-7.txt", loadOptions);
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 成功載入了具有特定編碼的 Word 文件。這個強大的程式庫使處理不同的文字編碼變得非常容易，並確保您的文件得到正確處理。無論您是處理舊文件還是處理國際文本，Aspose.Words 都能滿足您的需求。
+現在你就擁有了！您已使用 Aspose.Words for .NET 成功載入了具有特定編碼的 Word 文件。這個強大的程式庫使處理不同的文字編碼變得非常容易，並確保您的文件得到正確處理。無論您是處理舊文件還是處理國際文本，Aspose.Words 都能滿足您的需求。
 
 ## 常見問題解答
 

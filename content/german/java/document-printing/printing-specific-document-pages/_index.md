@@ -55,7 +55,7 @@ public class PrintSpecificPages {
 
 ## Zu druckende Seiten angeben
 
- Nun legen wir fest, welche Seiten Sie ausdrucken möchten. Sie können die`PageRange` Klasse, um den Seitenbereich zu definieren, den Sie benötigen. Um beispielsweise die Seiten 3 bis 5 zu drucken:
+ Geben Sie nun an, welche Seiten Sie drucken möchten. Sie können die`PageRange` Klasse, um den Seitenbereich zu definieren, den Sie benötigen. Um beispielsweise die Seiten 3 bis 5 zu drucken:
 
 ```java
 PageRange pageRange = new PageRange(3, 5);
@@ -94,8 +94,8 @@ Ja, Aspose.Words für Java unterstützt eine Vielzahl von Dokumentformaten, daru
 
 ### Wie kann ich zusätzliche Druckoptionen wie Seitenausrichtung und Papiergröße einstellen?
 
- Sie können zusätzliche Druckoptionen wie Seitenausrichtung und Papiergröße festlegen, indem Sie die`PrintOptions` Objekt vor dem Drucken des Dokuments. Verwenden Sie Methoden wie`setOrientation`Und`setPaperSize` , um die Druckeinstellungen anzupassen.
+ Sie können zusätzliche Druckoptionen wie Seitenausrichtung und Papiergröße festlegen, indem Sie die`PrintOptions` Objekt vor dem Drucken des Dokuments. Verwenden Sie Methoden wie`setOrientation` Und`setPaperSize` , um die Druckeinstellungen anzupassen.
 
 ### Gibt es eine Testversion von Aspose.Words für Java?
 
-Ja, Sie können eine Testversion von Aspose.Words für Java von der Website herunterladen. Auf diese Weise können Sie die Funktionen der Bibliothek erkunden und prüfen, ob sie Ihren Anforderungen entspricht, bevor Sie eine Lizenz erwerben.
+Ja, Sie können eine Testversion von Aspose.Words für Java von der Website herunterladen. So können Sie die Funktionen der Bibliothek erkunden und prüfen, ob sie Ihren Anforderungen entspricht, bevor Sie eine Lizenz erwerben.

@@ -27,7 +27,7 @@ url: /el/java/document-loading-and-saving/saving-documents-as-markdown/
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Εισαγάγετε έναν πίνακα με δύο κελιά
+//Εισαγάγετε έναν πίνακα με δύο κελιά
 builder.insertCell();
 builder.getParagraphFormat().setAlignment(ParagraphAlignment.RIGHT);
 builder.write("Cell1");
@@ -62,7 +62,7 @@ doc.save("right_alignment.md", saveOptions);
 saveOptions.setTableContentAlignment(TableContentAlignment.CENTER);
 doc.save("center_alignment.md", saveOptions);
 
-//Ορίστε τη στοίχιση περιεχομένου πίνακα σε αυτόματη (καθορίζεται από την πρώτη παράγραφο)
+// Ορίστε τη στοίχιση περιεχομένου πίνακα σε αυτόματη (καθορίζεται από την πρώτη παράγραφο)
 saveOptions.setTableContentAlignment(TableContentAlignment.AUTO);
 doc.save("auto_alignment.md", saveOptions);
 ```
@@ -71,7 +71,7 @@ doc.save("auto_alignment.md", saveOptions);
 
 ## Βήμα 3: Χειρισμός εικόνων
 
- Για να συμπεριλάβετε εικόνες στο έγγραφο Markdown, πρέπει να καθορίσετε το φάκελο στον οποίο βρίσκονται οι εικόνες. Το Aspose.Words για Java σάς επιτρέπει να ορίσετε το φάκελο εικόνων στο`MarkdownSaveOptions`.
+Για να συμπεριλάβετε εικόνες στο έγγραφο Markdown, πρέπει να καθορίσετε το φάκελο στον οποίο βρίσκονται οι εικόνες. Το Aspose.Words για Java σάς επιτρέπει να ορίσετε το φάκελο εικόνων στο`MarkdownSaveOptions`.
 
 Δείτε πώς μπορείτε να ορίσετε το φάκελο εικόνων και να αποθηκεύσετε το έγγραφο με εικόνες:
 

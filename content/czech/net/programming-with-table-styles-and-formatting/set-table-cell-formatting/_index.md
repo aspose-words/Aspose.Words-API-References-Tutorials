@@ -64,7 +64,7 @@ builder.InsertCell();
 
 ## Krok 4: Otevřete a nastavte vlastnosti formátu buňky
 
- Jakmile je buňka vložena, můžete přistupovat k jejím vlastnostem formátu pomocí`CellFormat` vlastnictvím`DocumentBuilder`. Zde můžete nastavit různé možnosti formátování, jako je šířka a odsazení.
+ Jakmile je buňka vložena, můžete přistupovat k jejím vlastnostem formátu pomocí`CellFormat` vlastnictví`DocumentBuilder`. Zde můžete nastavit různé možnosti formátování, jako je šířka a odsazení.
 
 ```csharp
 // Přístup a nastavení vlastností formátu buňky
@@ -120,7 +120,7 @@ Ano, můžete procházet buňkami a na každou z nich programově použít stejn
  Celkový formát tabulky můžete nastavit pomocí`Table` vlastnosti třídy a metody dostupné v Aspose.Words.
 
 ### Mohu změnit zarovnání textu v buňce?
- Ano, můžete změnit zarovnání textu pomocí`ParagraphFormat` vlastnictvím`DocumentBuilder`.
+ Ano, můžete změnit zarovnání textu pomocí`ParagraphFormat` vlastnictví`DocumentBuilder`.
 
 ### Existuje způsob, jak přidat ohraničení do buněk tabulky?
- Ano, můžete přidat ohraničení k buňkám tabulky nastavením`Borders` vlastnictvím`CellFormat` třída.
+ Ano, můžete přidat ohraničení k buňkám tabulky nastavením`Borders` vlastnictví`CellFormat` třída.

@@ -112,13 +112,13 @@ Pomocí Aspose.Words for .NET můžete snadno vytvářet a manipulovat s grafy v
 Aspose.Words for .NET je knihovna, která umožňuje vytvářet, upravovat a převádět dokumenty Wordu programově pomocí rozhraní .NET.
 
 ### Jak nastavím Aspose.Words pro .NET?
- Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/) a postupujte podle dodaných pokynů k instalaci.
+ Můžete si jej stáhnout z[zde](https://releases.aspose.com/words/net/) postupujte podle dodaných pokynů k instalaci.
 
 ### Mohu používat Aspose.Words zdarma?
  Ano, můžete použít a[zkušební verze zdarma](https://releases.aspose.com/) nebo získat a[dočasná licence](https://purchase.aspose.com/temporary-license/).
 
 ### Kde najdu dokumentaci k Aspose.Words pro .NET?
- K dispozici je podrobná dokumentace[zde](https://reference.aspose.com/words/net/).
+ dispozici je podrobná dokumentace[zde](https://reference.aspose.com/words/net/).
 
 ### Jak mohu získat podporu pro Aspose.Words?
  Můžete navštívit[fórum podpory](https://forum.aspose.com/c/words/8) o pomoc.

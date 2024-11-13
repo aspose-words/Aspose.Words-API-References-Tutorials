@@ -1,14 +1,14 @@
 ---
 title: Formatieren von Absätzen und Text in Word-Dokumenten
 linktitle: Formatieren von Absätzen und Text in Word-Dokumenten
-second_title: Aspose.Words Python-API zur Dokumentenverwaltung
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für Python Absätze und Text in Word-Dokumenten formatieren. Schritt-für-Schritt-Anleitung mit Codebeispielen für eine effektive Dokumentformatierung.
 type: docs
 weight: 22
 url: /de/python-net/document-structure-and-content-manipulation/document-paragraphs/
 ---
 
-Im heutigen digitalen Zeitalter spielt die Dokumentformatierung eine entscheidende Rolle bei der strukturierten und optisch ansprechenden Darstellung von Informationen. Aspose.Words für Python bietet eine leistungsstarke Lösung für die programmgesteuerte Arbeit mit Word-Dokumenten und ermöglicht Entwicklern die Automatisierung des Formatierens von Absätzen und Text. In diesem Artikel erfahren Sie, wie Sie mit der Aspose.Words für Python-API eine effektive Formatierung erreichen. Tauchen Sie also ein und entdecken Sie die Welt der Dokumentformatierung!
+Im heutigen digitalen Zeitalter spielt die Dokumentformatierung eine entscheidende Rolle bei der strukturierten und optisch ansprechenden Darstellung von Informationen. Aspose.Words für Python bietet eine leistungsstarke Lösung für die programmgesteuerte Arbeit mit Word-Dokumenten und ermöglicht Entwicklern die Automatisierung des Formatierungsprozesses von Absätzen und Text. In diesem Artikel erfahren Sie, wie Sie mit der Aspose.Words für Python-API eine effektive Formatierung erreichen. Tauchen Sie also ein und entdecken Sie die Welt der Dokumentformatierung!
 
 ## Einführung in Aspose.Words für Python
 
@@ -50,7 +50,7 @@ builder.italic("italic").write(".")
 
 ## Absatzformatierung
 
-Die Absatzformatierung ist entscheidend für die Steuerung der Ausrichtung, Einrückung, Abstände und Ausrichtung von Text innerhalb von Absätzen:
+Die Absatzformatierung ist entscheidend für die Steuerung der Ausrichtung, Einrückung, des Abstands und der Ausrichtung von Text innerhalb von Absätzen:
 
 ```python
 # Format paragraphs

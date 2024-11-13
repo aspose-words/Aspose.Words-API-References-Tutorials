@@ -98,7 +98,7 @@ tady to máte! Úspěšně jste exportovali zdroje při ukládání dokumentu ap
  Absolutně. Můžete nastavit`CssStyleSheetType` na`CssStyleSheetType.Embedded` pokud dáváte přednost vloženým stylům.
 
 ### Jak mohu upravit název výstupního souboru HTML?
- V souboru můžete zadat libovolný název souboru`doc.Save` metoda. Například,`doc.Save(dataDir + "CustomFileName.html", saveOptions);`.
+ V souboru můžete zadat libovolný název souboru, který se vám líbí`doc.Save` metoda. Například,`doc.Save(dataDir + "CustomFileName.html", saveOptions);`.
 
 ### Podporuje Aspose.Words jiné formáty kromě HTML?
  Ano, podporuje různé formáty včetně PDF, DOCX, TXT a dalších. Podívejte se na[dokumentace](https://reference.aspose.com/words/net/) pro úplný seznam.

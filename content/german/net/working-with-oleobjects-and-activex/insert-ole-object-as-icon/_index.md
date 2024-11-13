@@ -17,7 +17,7 @@ Bevor wir in die Einzelheiten eintauchen, klären wir zunächst, was Sie benöti
 
 1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie Aspose.Words für .NET installiert haben. Wenn Sie es noch nicht installiert haben, können Sie es von der[Aspose-Veröffentlichungsseite](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Sie benötigen eine integrierte Entwicklungsumgebung (IDE) wie Visual Studio.
-3. Grundkenntnisse in C#: Grundkenntnisse der C#-Programmierung sind hilfreich.
+3. Grundkenntnisse in C#: Grundlegende Kenntnisse der C#-Programmierung sind hilfreich.
 
 ## Namespaces importieren
 

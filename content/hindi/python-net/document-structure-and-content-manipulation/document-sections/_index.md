@@ -2,7 +2,7 @@
 title: दस्तावेज़ अनुभाग और लेआउट प्रबंधित करना
 linktitle: दस्तावेज़ अनुभाग और लेआउट प्रबंधित करना
 second_title: Aspose.Words पायथन दस्तावेज़ प्रबंधन API
-description: Python के लिए Aspose.Words के साथ दस्तावेज़ अनुभागों और लेआउट को प्रबंधित करना सीखें। अनुभाग बनाएँ, संशोधित करें, लेआउट कस्टमाइज़ करें, और बहुत कुछ। अभी शुरू करें!
+description: Aspose.Words for Python के साथ दस्तावेज़ अनुभागों और लेआउट को प्रबंधित करना सीखें। अनुभाग बनाएँ, संशोधित करें, लेआउट कस्टमाइज़ करें, और बहुत कुछ। अभी शुरू करें!
 type: docs
 weight: 24
 url: /hi/python-net/document-structure-and-content-manipulation/document-sections/

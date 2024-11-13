@@ -115,4 +115,4 @@ Feldfunktionen sind Platzhalter in einem Word-Dokument, die dynamisch Inhalte ba
 
 ### Wo kann ich weitere Informationen zu Aspose.Words erhalten?
 
-Ausführliche Dokumentation, Tutorials und Support finden Sie im[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/), [Seite zum Herunterladen](https://releases.aspose.com/words/net/) , oder[Support Forum](https://forum.aspose.com/c/words/8).
+Ausführliche Dokumentation, Tutorials und Support finden Sie im[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/), [Seite herunterladen](https://releases.aspose.com/words/net/) , oder[Support Forum](https://forum.aspose.com/c/words/8).

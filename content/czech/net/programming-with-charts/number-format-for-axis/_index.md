@@ -46,7 +46,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Zde,`dataDir` je cesta k adresáři vašeho dokumentu, kam uložíte konečný soubor.`Document`a`DocumentBuilder` jsou třídy z Aspose.Words, které vám pomohou vytvářet a manipulovat s dokumenty Wordu.
+ Zde,`dataDir` je cesta k adresáři vašeho dokumentu, kam uložíte konečný soubor.`Document` a`DocumentBuilder` jsou třídy z Aspose.Words, které vám pomohou vytvářet a manipulovat s dokumenty Wordu.
 
 ## Krok 2: Vložení grafu
 
@@ -59,7 +59,7 @@ Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
- The`InsertChart` metoda vloží do dokumentu tabulku zadaného typu (v tomto případě sloupec) a rozměrů.
+The`InsertChart` metoda vloží do dokumentu tabulku zadaného typu (v tomto případě sloupec) a rozměrů.
 
 ## Krok 3: Přizpůsobení řady grafů
 
@@ -86,7 +86,7 @@ Nakonec zformátujme čísla na ose Y, aby byla čitelnější. Je to jako dodě
 chart.AxisY.NumberFormat.FormatCode = "#,##0";
 ```
 
- The`FormatCode` vlastnost umožňuje nastavit vlastní formát čísel na ose. V tomto příkladu`#,##0`zajišťuje, že se velká čísla zobrazují s čárkami za tisíce.
+The`FormatCode` vlastnost umožňuje nastavit vlastní formát čísel na ose. V tomto příkladu`#,##0`zajišťuje, že se velká čísla zobrazují s čárkami za tisíce.
 
 ## Krok 5: Uložení dokumentu
 

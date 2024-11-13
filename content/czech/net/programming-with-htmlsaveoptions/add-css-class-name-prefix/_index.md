@@ -117,7 +117,7 @@ A tady to máte! Pomocí těchto kroků jste úspěšně přidali předponu náz
  Ano, předponu můžete přizpůsobit pokaždé, když uložíte dokument změnou`CssClassNamePrefix` vlastnictví.
 
 ### Podporuje tato metoda inline CSS?
- The`CssClassNamePrefix`vlastnost pracuje s externím CSS. Pro inline CSS budete potřebovat jiný přístup.
+The`CssClassNamePrefix`vlastnost pracuje s externím CSS. Pro inline CSS budete potřebovat jiný přístup.
 
 ### Jak mohu zahrnout další možnosti uložení HTML?
  Můžete nakonfigurovat různé vlastnosti`HtmlSaveOptions` k přizpůsobení výstupu HTML. Zkontrolujte[dokumentace](https://reference.aspose.com/words/net/) pro více podrobností.

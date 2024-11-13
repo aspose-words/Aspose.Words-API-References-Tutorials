@@ -8,7 +8,7 @@ weight: 11
 url: /de/java/table-processing/
 ---
 
-Aspose.Words für Java bietet einen umfassenden Satz von APIs für die Tabellenverarbeitung, mit denen Entwickler Tabellen in Word-Dokumenten effizient erstellen, bearbeiten und formatieren können. Mit Aspose.Words können Entwickler problemlos Zeilen und Spalten hinzufügen oder entfernen, Zellen zusammenführen und teilen, Zelleneigenschaften festlegen und Tabellen mithilfe von Seriendruck dynamisch mit Daten füllen.
+Aspose.Words für Java bietet einen umfassenden Satz von APIs für die Tabellenverarbeitung, mit denen Entwickler Tabellen in Word-Dokumenten effizient erstellen, bearbeiten und formatieren können. Mit Aspose.Words können Entwickler problemlos Zeilen und Spalten hinzufügen oder entfernen, Zellen zusammenführen und teilen, Zelleneigenschaften festlegen und Tabellen mithilfe der Seriendruckfunktion dynamisch mit Daten füllen.
 
 Die Tutorials zu Aspose.Words für Java Table Processing bieten ausführliche Anleitungen zu allen Aspekten der Tabellenverarbeitung, von grundlegenden bis hin zu fortgeschrittenen Themen. Diese Tutorials decken alles ab, vom Erstellen einfacher Tabellen bis zum dynamischen Auffüllen von Tabellen mit Daten mithilfe von Seriendruck.
 
@@ -35,7 +35,7 @@ Erfahren Sie, wie Sie mit Aspose.Words Tabellen und Layouts in Ihren Java-Dokume
 Erfahren Sie, wie Sie mit Aspose.Words für Java mit Dokumentlisten in Java arbeiten. Diese Schritt-für-Schritt-Anleitung enthält Quellcodebeispiele für eine effiziente Dokumentbearbeitung.
 ### [Erstellen von Tabellen und Zeilen in Dokumenten](./creating-tables-rows/)
 Erfahren Sie, wie Sie mit Aspose.Words für Java Tabellen und Zeilen in Dokumenten erstellen. Folgen Sie dieser umfassenden Anleitung mit Quellcode und FAQs.
-### [Formatieren von Tabellen in Dokumenten](./formatting-tables/)
+### [Tabellen in Dokumenten formatieren](./formatting-tables/)
 Meistern Sie die Kunst der Tabellenformatierung in Dokumenten mit Aspose.Words für Java. Entdecken Sie Schritt-für-Schritt-Anleitungen und Quellcodebeispiele für eine präzise Tabellenformatierung.
 ### [Inhaltsverzeichnisgenerierung](./table-contents-generation/)
 Erfahren Sie, wie Sie mit Aspose.Words für Java dynamische Inhaltsverzeichnisse erstellen. Meistern Sie die Inhaltsverzeichnisgenerierung mit Schritt-für-Schritt-Anleitung und Quellcodebeispielen.

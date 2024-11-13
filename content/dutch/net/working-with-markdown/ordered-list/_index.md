@@ -1,34 +1,34 @@
 ---
-title: Bestelde lijst
-linktitle: Bestelde lijst
-second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u geordende lijsten in Word-documenten kunt maken met Aspose.Words voor .NET met onze stapsgewijze handleiding. Perfect voor het automatiseren van het maken van documenten.
+title: Geordende lijst
+linktitle: Geordende lijst
+second_title: Aspose.Words API voor documentverwerking
+description: Leer hoe u geordende lijsten in Word-documenten kunt maken met Aspose.Words voor .NET met onze stapsgewijze handleiding. Perfect voor het automatiseren van documentcreatie.
 type: docs
 weight: 10
 url: /nl/net/working-with-markdown/ordered-list/
 ---
 ## Invoering
 
-Dus je hebt besloten om in Aspose.Words voor .NET te duiken om programmatisch geweldige Word-documenten te maken. Fantastische keuze! Vandaag gaan we uitleggen hoe u een geordende lijst in een Word-document kunt maken. We zullen het stap voor stap doen, dus of je nu een nieuweling op het gebied van coderen bent of een doorgewinterde professional, je zult deze handleiding super nuttig vinden. Laten we beginnen!
+Dus, je hebt besloten om Aspose.Words voor .NET te gebruiken om programmatisch geweldige Word-documenten te maken. Fantastische keuze! Vandaag gaan we uitleggen hoe je een geordende lijst in een Word-document maakt. We doen het stap voor stap, dus of je nu een beginnende programmeur bent of een doorgewinterde professional, je zult deze gids superhandig vinden. Laten we beginnen!
 
 ## Vereisten
 
-Voordat we in de code duiken, zijn er een paar dingen die je nodig hebt:
+Voordat we in de code duiken, heb je een paar dingen nodig:
 
-1. Aspose.Words voor .NET: Zorg ervoor dat Aspose.Words voor .NET is geïnstalleerd. Als u dat niet doet, kunt u het downloaden[hier](https://releases.aspose.com/words/net/).
+1. Aspose.Words voor .NET: Zorg ervoor dat je Aspose.Words voor .NET hebt geïnstalleerd. Als je dat niet hebt, kun je het downloaden[hier](https://releases.aspose.com/words/net/).
 2. Ontwikkelomgeving: Visual Studio of een andere .NET-compatibele IDE.
-3. Basiskennis van C#: U moet vertrouwd zijn met de basisprincipes van C#, zodat u deze gemakkelijk kunt volgen.
+3. Basiskennis van C#: U moet vertrouwd zijn met de basisprincipes van C# om de cursus gemakkelijk te kunnen volgen.
 
 ## Naamruimten importeren
 
-Om Aspose.Words in uw project te gebruiken, moet u de benodigde naamruimten importeren. Dit is hetzelfde als het opzetten van uw gereedschapskist voordat u begint te werken.
+Om Aspose.Words in uw project te gebruiken, moet u de benodigde namespaces importeren. Dit is vergelijkbaar met het instellen van uw toolbox voordat u begint met werken.
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Lists;
 ```
 
-Laten we de code in hapklare stappen opsplitsen en elk onderdeel uitleggen. Klaar? Daar gaan we!
+Laten we de code opsplitsen in kleine stapjes en elk onderdeel uitleggen. Klaar? Daar gaan we!
 
 ## Stap 1: Initialiseer het document
 
@@ -39,21 +39,21 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-Hier initialiseren we een nieuw document en een DocumentBuilder-object. De DocumentBuilder is als een pen, waarmee u inhoud in het document kunt schrijven.
+Hier initialiseren we een nieuw document en een DocumentBuilder-object. De DocumentBuilder is als uw pen, waarmee u inhoud in het document kunt schrijven.
 
-## Stap 2: Pas het genummerde lijstformaat toe
+## Stap 2: Genummerde lijstindeling toepassen
 
-Laten we nu een standaard genummerde lijstindeling toepassen. Dit is hetzelfde als het instellen van uw Word-document om genummerde opsommingstekens te gebruiken.
+Laten we nu een standaard genummerde lijstopmaak toepassen. Dit is hetzelfde als het instellen van uw Word-document om genummerde opsommingstekens te gebruiken.
 
 ```csharp
 builder.ListFormat.ApplyNumberDefault();
 ```
 
-Met deze coderegel wordt de nummering van uw lijst ingesteld. Makkelijk, toch?
+Deze regel code stelt de nummering voor uw lijst in. Makkelijk toch?
 
-## Stap 3: lijstitems toevoegen
+## Stap 3: Lijstitems toevoegen
 
-Laten we vervolgens enkele items aan onze lijst toevoegen. Stel je voor dat je een boodschappenlijstje aan het noteren bent.
+Laten we nu wat items aan onze lijst toevoegen. Stel je voor dat je een boodschappenlijstje aan het opschrijven bent.
 
 ```csharp
 builder.Writeln("Item 1");
@@ -62,9 +62,9 @@ builder.Writeln("Item 2");
 
 Met deze regels voegt u de eerste twee items toe aan uw lijst.
 
-## Stap 4: Laat de lijst inspringen
+## Stap 4: De lijst inspringen
 
-Wat als u subitems onder een item wilt toevoegen? Laten we dat doen!
+Wat als je sub-items onder een item wilt toevoegen? Laten we dat doen!
 
 ```csharp
 builder.ListFormat.ListIndent();
@@ -73,25 +73,25 @@ builder.Writeln("Item 2a");
 builder.Writeln("Item 2b");
 ```
 
- De`ListIndent` methode laat de lijst inspringen, waardoor een sublijst ontstaat. U maakt nu een hiërarchische lijst, vergelijkbaar met een geneste takenlijst.
+De`ListIndent` methode springt de lijst in, waardoor een sublijst ontstaat. U maakt nu een hiërarchische lijst, vergelijkbaar met een geneste to-dolijst.
 
 ## Conclusie
 
-Programmatisch een geordende lijst in een Word-document maken kan in eerste instantie lastig lijken, maar met Aspose.Words voor .NET is het een fluitje van een cent. Door deze eenvoudige stappen te volgen, kunt u eenvoudig lijsten in uw documenten toevoegen en beheren. Of u nu rapporten genereert, gestructureerde documenten maakt of gewoon uw workflows automatiseert, Aspose.Words voor .NET heeft de oplossing voor u. Dus waarom wachten? Begin met coderen en zie hoe de magie zich ontvouwt!
+Het maken van een geordende lijst in een Word-document via een programma kan in eerste instantie ontmoedigend lijken, maar met Aspose.Words voor .NET is het een fluitje van een cent. Door deze eenvoudige stappen te volgen, kunt u eenvoudig lijsten toevoegen en beheren in uw documenten. Of u nu rapporten genereert, gestructureerde documenten maakt of gewoon uw workflows automatiseert, Aspose.Words voor .NET heeft u gedekt. Dus waarom wachten? Begin met coderen en zie de magie zich ontvouwen!
 
 ## Veelgestelde vragen
 
-### Kan ik de nummeringsstijl van de lijst aanpassen?  
- Ja, u kunt de nummeringsstijl aanpassen met behulp van de`ListFormat`eigenschappen. U kunt verschillende nummeringsstijlen instellen, zoals Romeinse cijfers, letters, enz.
+### Kan ik de nummering van de lijst aanpassen?  
+ Ja, u kunt de nummeringsstijl aanpassen met behulp van de`ListFormat`eigenschappen. U kunt verschillende nummeringsstijlen instellen, zoals Romeinse cijfers, letters, etc.
 
-### Hoe voeg ik meer inspringingsniveaus toe?  
- U kunt gebruik maken van de`ListIndent` methode meerdere keren uit om diepere niveaus van sublijsten te creëren. Elke oproep naar`ListIndent` voegt één niveau van inspringing toe.
+### Hoe kan ik meer inspringingsniveaus toevoegen?  
+ U kunt de`ListIndent` methode meerdere keren om diepere niveaus van sublijsten te creëren. Elke aanroep naar`ListIndent` voegt één inspringingsniveau toe.
 
 ### Kan ik opsommingstekens en genummerde lijsten combineren?  
- Absoluut! U kunt binnen hetzelfde document verschillende lijstformaten toepassen met behulp van de`ListFormat` eigendom.
+ Absoluut! U kunt verschillende lijstformaten binnen hetzelfde document toepassen met behulp van de`ListFormat` eigendom.
 
-### Is het mogelijk om door te nummeren vanaf een eerdere lijst?  
-Ja, u kunt doorgaan met nummeren door hetzelfde lijstformaat te gebruiken. Met Aspose.Words kunt u de lijstnummering over verschillende paragrafen beheren.
+### Is het mogelijk om door te nummeren vanuit een eerdere lijst?  
+Ja, u kunt doorgaan met nummeren door dezelfde lijstopmaak te gebruiken. Met Aspose.Words kunt u de lijstnummering over verschillende paragrafen beheren.
 
-### Hoe kan ik het lijstformaat verwijderen?  
- U kunt het lijstformaat verwijderen door te bellen`ListFormat.RemoveNumbers()`. Hierdoor worden de lijstitems weer normale alinea's.
+### Hoe kan ik de lijstopmaak verwijderen?  
+ U kunt de lijstopmaak verwijderen door`ListFormat.RemoveNumbers()`Hiermee worden de lijstitems weer omgezet in gewone alinea's.

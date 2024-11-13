@@ -1,7 +1,7 @@
 ---
 title: Kommentarfunktionen in Word-Dokumenten nutzen
 linktitle: Kommentarfunktionen in Word-Dokumenten nutzen
-second_title: Aspose.Words Python-API zur Dokumentenverwaltung
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für Python Kommentarfunktionen in Word-Dokumenten nutzen. Schritt-für-Schritt-Anleitung mit Quellcode. Verbessern Sie die Zusammenarbeit und optimieren Sie Überprüfungen in Dokumenten.
 type: docs
 weight: 11

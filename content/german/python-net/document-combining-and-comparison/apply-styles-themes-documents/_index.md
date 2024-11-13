@@ -1,7 +1,7 @@
 ---
 title: Anwenden von Stilen und Designs zum Transformieren von Dokumenten
 linktitle: Anwenden von Stilen und Designs zum Transformieren von Dokumenten
-second_title: Aspose.Words Python-API zur Dokumentenverwaltung
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
 description: Verbessern Sie die Dokumentästhetik mit Aspose.Words für Python. Wenden Sie mühelos Stile, Designs und Anpassungen an.
 type: docs
 weight: 14
@@ -30,7 +30,7 @@ doc = Document("input.docx")
 doc.save("output.docx")
 ```
 
-## Anwenden von Zeichenstilen
+## Zeichenstile anwenden
 
 Zeichenstile wie Fett und Kursiv heben bestimmte Textteile hervor. Sehen wir uns an, wie man sie anwendet.
 

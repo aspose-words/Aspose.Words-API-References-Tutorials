@@ -9,7 +9,7 @@ url: /de/net/working-with-fonts/set-fonts-folders-system-and-custom-folder/
 ---
 ## Einführung
 
-Stellen Sie sich vor, Sie erstellen ein Dokument mit einem einzigartigen Schriftstil und stellen dann fest, dass die Schriftarten auf einem anderen Computer nicht richtig angezeigt werden. Frustrierend, oder? Hier kommt die Konfiguration von Schriftartenordnern ins Spiel. Mit Aspose.Words für .NET können Sie System- und benutzerdefinierte Schriftartenordner definieren, um sicherzustellen, dass Ihre Dokumente immer wie beabsichtigt aussehen. Lassen Sie uns einen Blick darauf werfen, wie Sie dies erreichen können.
+Stellen Sie sich vor, Sie erstellen ein Dokument mit einem einzigartigen Schriftstil und stellen dann fest, dass die Schriftarten auf einem anderen Computer nicht richtig angezeigt werden. Frustrierend, oder? Hier kommt die Konfiguration von Schriftartordnern ins Spiel. Mit Aspose.Words für .NET können Sie System- und benutzerdefinierte Schriftartordner definieren, um sicherzustellen, dass Ihre Dokumente immer wie beabsichtigt aussehen. Sehen wir uns an, wie Sie dies erreichen können.
 
 ## Voraussetzungen
 
@@ -34,7 +34,7 @@ Lassen Sie uns den Vorgang nun in einfache Schritte unterteilen.
 
 ## Schritt 1: Dokument laden
 
- Laden Sie zunächst Ihr Word-Dokument in ein Aspose.Words`Document` Objekt. In diesem Dokument möchten Sie die Schriftartordner festlegen.
+ Laden Sie zunächst Ihr Word-Dokument in eine Aspose.Words`Document` Objekt. In diesem Dokument möchten Sie die Schriftartordner festlegen.
 
 ```csharp
 // Pfad zu Ihrem Dokumentverzeichnis
@@ -70,7 +70,7 @@ fontSources.Add(folderFontSource);
 
 ## Schritt 5: Schriftartquellen aktualisieren
 
- Konvertieren Sie die Liste der Schriftquellen zurück in ein Array und setzen Sie es auf den`FontSettings` Objekt.
+ Konvertieren Sie die Liste der Schriftquellen zurück in ein Array und setzen Sie es auf`FontSettings` Objekt.
 
 ```csharp
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
@@ -79,7 +79,7 @@ fontSettings.SetFontsSources(updatedFontSources);
 
 ## Schritt 6: Schrifteinstellungen auf Dokument anwenden
 
- Zum Schluss wenden Sie die konfigurierten`FontSettings` zu Ihrem Dokument und speichern Sie es im gewünschten Format, beispielsweise PDF.
+ Wenden Sie abschließend die konfigurierten`FontSettings` zu Ihrem Dokument und speichern Sie es im gewünschten Format, beispielsweise PDF.
 
 ```csharp
 doc.FontSettings = fontSettings;

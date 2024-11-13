@@ -114,10 +114,10 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.IgnoreTextBoxes.docx");
  Ano, můžete si stáhnout bezplatnou zkušební verzi[zde](https://releases.aspose.com/).
 
 ### Jak mohu získat dočasnou licenci pro Aspose.Words pro .NET?
- Můžete získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
+Můžete získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
 
 ### Kde najdu podrobnější dokumentaci?
  Můžete najít komplexní dokumentaci[zde](https://reference.aspose.com/words/net/).
 
 ### Jak mohu získat podporu pro Aspose.Words pro .NET?
- Pro podporu navštivte fóra Aspose[zde](https://forum.aspose.com/c/words/8).
+ Podporu získáte na fórech Aspose[zde](https://forum.aspose.com/c/words/8).

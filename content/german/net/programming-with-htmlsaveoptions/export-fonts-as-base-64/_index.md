@@ -2,7 +2,7 @@
 title: Schriftarten als Base 64 exportieren
 linktitle: Schriftarten als Base 64 exportieren
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie in diesem ausführlichen Tutorial, wie Sie Schriftarten mit Aspose.Words für .NET als Base64 exportieren. Stellen Sie sicher, dass Schriftarten in HTML-Dateien eingebettet und korrekt angezeigt werden.
+description: In diesem ausführlichen Tutorial erfahren Sie, wie Sie Schriftarten mit Aspose.Words für .NET als Base64 exportieren. Stellen Sie sicher, dass Schriftarten in HTML-Dateien eingebettet und korrekt angezeigt werden.
 type: docs
 weight: 10
 url: /de/net/programming-with-htmlsaveoptions/export-fonts-as-base-64/
@@ -100,7 +100,7 @@ Diese Zeile speichert Ihr Dokument als HTML-Datei mit als Base64 exportierten Sc
 
 ## Abschluss
 
-Herzlichen Glückwunsch! Sie haben Schriftarten erfolgreich als Base64 aus einem Word-Dokument mit Aspose.Words für .NET exportiert. Dadurch wird sichergestellt, dass Ihre Schriftarten auf verschiedenen Plattformen erhalten bleiben und korrekt angezeigt werden. Egal, ob Sie Dokumente für die Anzeige im Web vorbereiten oder einfach nur die Kompatibilität sicherstellen, diese Funktion ist unglaublich nützlich.
+Herzlichen Glückwunsch! Sie haben Schriftarten erfolgreich als Base64 aus einem Word-Dokument mit Aspose.Words für .NET exportiert. Dadurch wird sichergestellt, dass Ihre Schriftarten erhalten bleiben und auf verschiedenen Plattformen korrekt angezeigt werden. Egal, ob Sie Dokumente für die Anzeige im Web vorbereiten oder einfach nur die Kompatibilität sicherstellen, diese Funktion ist unglaublich nützlich.
 
 ## Häufig gestellte Fragen
 

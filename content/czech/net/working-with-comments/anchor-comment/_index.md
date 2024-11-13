@@ -70,7 +70,7 @@ para2.AppendChild(run4);
 doc.FirstSection.Body.AppendChild(para2);
 ```
 
- Zde vytvoříme dva odstavce s nějakým textem. Každý text je zapouzdřen v a`Run` objekt, který je pak přidán do odstavců.
+ Zde vytvoříme dva odstavce s nějakým textem. Každý text je zapouzdřen v a`Run` objekt, který je poté přidán do odstavců.
 
 ## Krok 3: Vytvořte komentář
 
@@ -79,8 +79,7 @@ Nyní vytvoříme komentář, který připojíme k našemu textu.
 ```csharp
 // Vytvořte nový komentář
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
-comment.Paragraphs.Add(new Paragraph(doc));
-comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
+comment.SetText("Comment text.");
 ```
 
  V tomto kroku vytvoříme a`Comment` objekt a přidejte odstavec a běh s textem komentáře.
@@ -102,7 +101,7 @@ run3.ParentNode.InsertAfter(commentRangeEnd, run3);
 commentRangeEnd.ParentNode.InsertAfter(comment, commentRangeEnd);
 ```
 
- Tady tvoříme`CommentRangeStart`a`CommentRangeEnd` objekty a spojí je s komentářem pomocí jeho ID. Tyto rozsahy pak vložíme do dokumentu, čímž efektivně ukotvíme náš komentář k zadanému textu.
+ Tady tvoříme`CommentRangeStart` a`CommentRangeEnd` objekty a spojí je s komentářem pomocí jeho ID. Tyto rozsahy pak vložíme do dokumentu, čímž efektivně ukotvíme náš komentář k zadanému textu.
 
 ## Krok 5: Uložte dokument
 

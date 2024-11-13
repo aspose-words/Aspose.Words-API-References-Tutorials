@@ -53,7 +53,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Merger.Merge(dataDir + "MergedDocument.docx", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" });
 ```
 
- Σε αυτό το βήμα, συγχωνευόμαστε`Document1.docx`και`Document2.docx` σε ένα νέο αρχείο που ονομάζεται`MergedDocument.docx`.
+ Σε αυτό το βήμα, συγχωνευόμαστε`Document1.docx` και`Document2.docx` σε ένα νέο αρχείο που ονομάζεται`MergedDocument.docx`.
 
 ## Βήμα 3: Συγχώνευση με Επιλογές Αποθήκευσης
 
@@ -74,7 +74,7 @@ Merger.Merge(dataDir + "MergedWithPassword.docx", new[] { dataDir + "Document1.d
 Merger.Merge(dataDir + "MergedDocument.pdf", new[] { dataDir + "Document1.docx", dataDir + "Document2.docx" }, SaveFormat.Pdf, MergeFormatMode.KeepSourceLayout);
 ```
 
- Εδώ, συγχωνευόμαστε`Document1.docx`και`Document2.docx` και αποθηκεύστε το αποτέλεσμα ως αρχείο PDF.
+ Εδώ, συγχωνευόμαστε`Document1.docx` και`Document2.docx` και αποθηκεύστε το αποτέλεσμα ως αρχείο PDF.
 
 ## Βήμα 5: Δημιουργία παρουσίας εγγράφου από συγχωνευμένα έγγραφα
 
@@ -103,11 +103,11 @@ doc.Save(dataDir + "MergedDocumentInstance.docx");
 
 ### Πώς μπορώ να χειριστώ τη διαφορετική μορφοποίηση κατά τη συγχώνευση;
 
- Το Aspose.Words παρέχει διάφορες λειτουργίες μορφής συγχώνευσης όπως`KeepSourceFormatting`και`MergeFormatting` Ανατρέξτε στο[Τεκμηρίωση API](https://reference.aspose.com/words/net/) για αναλυτικές οδηγίες.
+ Το Aspose.Words παρέχει διάφορες λειτουργίες μορφής συγχώνευσης όπως`KeepSourceFormatting` και`MergeFormatting` Ανατρέξτε στο[Τεκμηρίωση API](https://reference.aspose.com/words/net/) για αναλυτικές οδηγίες.
 
 ### Πώς μπορώ να λάβω υποστήριξη για το Aspose.Words για .NET;
 
-Μπορείτε να λάβετε υποστήριξη επισκεπτόμενοι το[Aspose forum υποστήριξης](https://forum.aspose.com/c/words/8).
+Μπορείτε να λάβετε υποστήριξη μεταβαίνοντας στο[Aspose forum υποστήριξης](https://forum.aspose.com/c/words/8).
 
 ### Μπορώ να συγχωνεύσω άλλες μορφές αρχείων με το Aspose.Words για .NET;
 

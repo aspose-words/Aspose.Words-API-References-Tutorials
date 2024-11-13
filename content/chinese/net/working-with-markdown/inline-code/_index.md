@@ -13,7 +13,7 @@ url: /zh/net/working-with-markdown/inline-code/
 
 ## 先决条件
 
-在开始之前，请确保您已准备好以下内容：
+在开始之前，请确保您已准备好以下物品：
 
 1.  Aspose.Words for .NET 库：确保您已在 .NET 环境中安装 Aspose.Words。您可以从[Aspose.Words for .NET 发布页面](https://releases.aspose.com/words/net/).
 
@@ -43,12 +43,12 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## 步骤 2：使用一个反引号添加内联代码样式
 
-在此步骤中，我们将使用单个反引号定义内联代码的样式。此样式将格式化文本，使其看起来像内联代码。
+在此步骤中，我们将使用单个反引号定义内联代码的样式。此样式将文本格式化为内联代码。
 
 ### 定义风格
 
 ```csharp
-//使用一个反引号为内联代码定义新的字符样式。
+//使用一个反引号为内联代码定义一个新的字符样式。
 Style inlineCode1BackTicks = builder.Document.Styles.Add(StyleType.Character, "InlineCode");
 inlineCode1BackTicks.Font.Name = "Courier New"; //代码的典型字体。
 inlineCode1BackTicks.Font.Size = 10.5; //内联代码的字体大小。
@@ -103,7 +103,7 @@ builder.Writeln("Text with InlineCode style with 3 backticks");
 是的，您可以使用任何适合您需要的字体。像“Courier New”这样的字体由于其等宽特性而通常用于代码。
 
 ### 如何更改内联代码文本的颜色？
-您可以通过设置来更改颜色`Font.Color`样式的属性`System.Drawing.Color`.
+您可以通过设置来更改颜色`Font.Color`任何风格的属性`System.Drawing.Color`.
 
 ### 我可以对同一文本应用多种样式吗？
 在 Aspose.Words 中，您一次只能应用一种样式。如果您需要组合样式，请考虑创建一个包含所有所需格式的新样式。

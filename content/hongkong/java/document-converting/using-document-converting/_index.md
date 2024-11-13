@@ -31,7 +31,7 @@ Aspose.Words 使您能夠將多個文檔合併為一個文檔，從而更輕鬆�
 使用 Aspose.Words，您可以執行高級文字處理任務，例如尋找和取代文字、處理段落和表格以及處理文件元資料。
 
 ## 平台獨立性： 
-Aspose.Words 是獨立於平台的，這意味著它可以在各種作業系統上無縫工作，使其具有多功能性並適用於不同的開發環境。
+Aspose.Words 是平台無關的，這意味著它可以在各種作業系統上無縫工作，使其具有多功能性並適應不同的開發環境。
 
 ## 使用 Aspose.Words for Java 進行文件轉換
 
@@ -82,28 +82,6 @@ doc.save("output.html", SaveFormat.HTML);
 ```java
 //將文檔另存為 EPUB
 doc.save("output.epub", SaveFormat.EPUB);
-```
-
-## 第 5 步：處理字型替換
-
-字體替換是轉換文件時的常見挑戰。 Aspose.Words提供了一種處理字體替換的機制，以確保轉換後的文件的視覺一致性：
-
-```java
-//啟用字型替換
-FontSettings.setFontsFolder("/path/to/fonts", true);
-```
-
-## 第 6 步：自訂轉換過程
-
-Aspose.Words 提供了多種選項來自訂文件轉換過程。例如，您可以設定轉換的頁面範圍或指定儲存為 PDF 時的影像解析度：
-
-```java
-//設定轉換的頁面範圍（轉換頁面 1 至 3）
-PdfSaveOptions options = new PdfSaveOptions();
-options.setPageSet(new PageSet(1, 3));
-
-//將影像解析度設定為 300 DPI
-options.setJpegQuality(300);
 ```
 
 ## 有效文件轉換的技巧

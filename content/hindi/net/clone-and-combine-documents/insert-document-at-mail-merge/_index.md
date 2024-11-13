@@ -66,7 +66,7 @@ mainDoc.MailMerge.Execute(new[] { "Document_1" }, new object[] { dataDir + "Docu
 
 ## चरण 5: दस्तावेज़ को सहेजना
 
-मेल मर्ज पूरा होने के बाद, आप संशोधित दस्तावेज़ को सहेज लेंगे। इस नए दस्तावेज़ में सम्मिलित सामग्री ठीक उसी स्थान पर होगी जहाँ आप चाहते हैं।
+मेल मर्ज पूरा होने के बाद, आप संशोधित दस्तावेज़ को सहेज लेंगे। इस नए दस्तावेज़ में सम्मिलित सामग्री ठीक वहीं होगी जहाँ आप चाहते हैं।
 
 ```csharp
 mainDoc.Save(dataDir + "CloneAndCombineDocuments.InsertDocumentAtMailMerge.doc");

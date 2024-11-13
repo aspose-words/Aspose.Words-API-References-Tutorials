@@ -9,7 +9,7 @@ url: /zh/net/programming-with-odtsaveoptions/measure-unit/
 ---
 ## 介绍
 
-您是否曾经将 Word 文档转换为不同的格式，但需要为布局指定一个特定的测量单位？无论您处理的是英寸、厘米还是点，确保文档在转换过程中保持完整性都至关重要。在本教程中，我们将介绍如何在 Aspose.Words for .NET 中配置测量单位功能。此强大功能可确保在转换为 ODT（开放文档文本）格式时，文档的格式完全按照您的需要保留。
+您是否曾经将 Word 文档转换为不同的格式，但需要为布局指定特定的测量单位？无论您处理的是英寸、厘米还是点，确保文档在转换过程中保持完整性都至关重要。在本教程中，我们将介绍如何在 Aspose.Words for .NET 中配置测量单位功能。此强大功能可确保在转换为 ODT（开放文档文本）格式时，文档的格式完全按照您的需要保留。
 
 ## 先决条件
 
@@ -18,7 +18,7 @@ url: /zh/net/programming-with-odtsaveoptions/measure-unit/
 1. Aspose.Words for .NET：请确保您已安装最新版本的 Aspose.Words for .NET。如果您还没有，可以从以下位置下载[这里](https://releases.aspose.com/words/net/).
 2. 开发环境：像 Visual Studio 这样的 IDE，用于编写和执行 C# 代码。
 3. C# 基础知识：了解 C# 的基础知识将帮助您跟随本教程。
-4. Word 文档：准备好可以用于转换的示例 Word 文档。
+4. Word 文档：准备好一个可以用于转换的示例 Word 文档。
 
 ## 导入命名空间
 
@@ -49,7 +49,7 @@ string dataDir = "YOUR DOCUMENTS DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
-确保名为“Document.docx”的 Word 文档存在于指定目录中。
+确保您的 Word 文档（名为“Document.docx”）存在于指定目录中。
 
 ## 步骤 3：配置计量单位
 
@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithOdtSaveOptions.MeasureUnit.odt", saveOptions);
 
 ## 结论
 
-就这样！按照以下步骤，您可以轻松配置 Aspose.Words for .NET 中的测量单位功能，以确保在转换过程中保留文档的布局。无论您使用的是英寸、厘米还是点，本教程都向您展示了如何轻松控制文档的格式。
+就这样！按照以下步骤，您可以轻松配置 Aspose.Words for .NET 中的测量单位功能，以确保在转换过程中保留文档的布局。无论您使用的是英寸、厘米还是点，本教程都会向您展示如何轻松控制文档的格式。
 
 ## 常见问题解答
 

@@ -2,7 +2,7 @@
 title: वेब एक्सटेंशन के साथ दस्तावेज़ कार्यक्षमता का विस्तार करना
 linktitle: वेब एक्सटेंशन के साथ दस्तावेज़ कार्यक्षमता का विस्तार करना
 second_title: Aspose.Words पायथन दस्तावेज़ प्रबंधन API
-description: Python के लिए Aspose.Words का उपयोग करके वेब एक्सटेंशन के साथ दस्तावेज़ कार्यक्षमता को विस्तारित करना सीखें। सहज एकीकरण के लिए स्रोत कोड के साथ चरण-दर-चरण मार्गदर्शिका।
+description: जानें कि Python के लिए Aspose.Words का उपयोग करके वेब एक्सटेंशन के साथ दस्तावेज़ कार्यक्षमता को कैसे बढ़ाया जाए। सहज एकीकरण के लिए स्रोत कोड के साथ चरण-दर-चरण मार्गदर्शिका।
 type: docs
 weight: 13
 url: /hi/python-net/document-options-and-settings/document-functionality-web-extensions/

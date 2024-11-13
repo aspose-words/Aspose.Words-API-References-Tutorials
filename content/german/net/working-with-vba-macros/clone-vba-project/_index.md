@@ -19,7 +19,7 @@ Bevor wir beginnen, stellen wir sicher, dass Sie alles vorbereitet haben:
 1.  Aspose.Words für .NET-Bibliothek: Sie benötigen die neueste Version von Aspose.Words für .NET. Wenn Sie dies noch nicht getan haben, können Sie[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Eine .NET-Entwicklungsumgebung wie Visual Studio ist zum Schreiben und Testen Ihres Codes unerlässlich.
 3. Grundlegende C#-Kenntnisse: Grundlegende Kenntnisse in C# helfen Ihnen dabei, den Codeausschnitten zu folgen.
-4.  Beispiel eines Word-Dokuments:[Word-Dokument](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm)(.docm) mit einem VBA-Projekt, mit dem Sie sofort arbeiten können. Sie können Ihr eigenes erstellen oder ein vorhandenes verwenden.
+4.  Beispiel eines Word-Dokuments:[Word-Dokument](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm)(.docm) mit einem VBA-Projekt, mit dem Sie arbeiten können. Sie können Ihr eigenes erstellen oder ein vorhandenes verwenden.
 
 ## Namespaces importieren
 

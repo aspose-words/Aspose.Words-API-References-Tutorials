@@ -47,7 +47,7 @@ Document doc = new Document("sample.docx");
 Aspose.Words poskytuje různé možnosti ukládání obrázků pro ovládání výstupního formátu a kvality. Tyto možnosti můžeme inicializovat podle našich požadavků. V tomto příkladu uložíme stránky dokumentu jako obrázky PNG.
 
 ```java
-// Inicializovat možnosti uložení obrázku
+// Inicializujte možnosti uložení obrázku
 ImageSaveOptions options = new ImageSaveOptions(SaveFormat.PNG);
 ```
 

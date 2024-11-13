@@ -2,7 +2,7 @@
 title: Word दस्तावेज़ में TCField डालें
 linktitle: Word दस्तावेज़ में TCField डालें
 second_title: Aspose.Words दस्तावेज़ प्रसंस्करण API
-description: .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ में TC फ़ील्ड सम्मिलित करना सीखें। निर्बाध दस्तावेज़ स्वचालन के लिए हमारे चरण-दर-चरण मार्गदर्शिका का पालन करें।
+description: Aspose.Words for .NET का उपयोग करके Word दस्तावेज़ में TC फ़ील्ड सम्मिलित करना सीखें। निर्बाध दस्तावेज़ स्वचालन के लिए हमारे चरण-दर-चरण मार्गदर्शिका का पालन करें।
 type: docs
 weight: 10
 url: /hi/net/add-content-using-documentbuilder/insert-tcfield/
@@ -42,7 +42,7 @@ Install-Package Aspose.Words
 
 ## चरण 2: नया दस्तावेज़ बनाएँ
 
- ठीक है, चलिए एक नया वर्ड डॉक्यूमेंट बनाकर शुरू करते हैं। हम इसका उपयोग करेंगे`Document`और`DocumentBuilder` Aspose.Words से क्लासेस का उपयोग करके काम शुरू किया।
+ ठीक है, चलिए एक नया वर्ड डॉक्यूमेंट बनाकर शुरू करते हैं। हम इसका उपयोग करेंगे`Document` और`DocumentBuilder` Aspose.Words से क्लासेस का उपयोग करके काम शुरू करें।
 
 ```csharp
 // दस्तावेज़ निर्देशिका का पथ.
@@ -75,7 +75,7 @@ builder.InsertField("TC \"Entry Text\" \\f t");
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertTCField.docx");
 ```
 
-धमाका! आपने अभी-अभी TC फ़ील्ड वाला एक Word दस्तावेज़ बनाया है। यह कितना शानदार है?
+धमाका! आपने अभी-अभी TC फ़ील्ड वाला एक वर्ड डॉक्यूमेंट बनाया है। यह कितना शानदार है?
 
 ## निष्कर्ष
 

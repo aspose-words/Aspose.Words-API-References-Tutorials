@@ -1,5 +1,5 @@
 ---
-title: Nastavit pozici poznámky pod čarou a konec poznámky
+title: Nastavte pozici poznámky pod čarou a vysvětlivky
 linktitle: Nastavit pozici poznámky pod čarou a konec poznámky
 second_title: Aspose.Words API pro zpracování dokumentů
 description: Naučte se, jak nastavit pozice poznámek pod čarou a vysvětlivky v dokumentech aplikace Word pomocí Aspose.Words for .NET pomocí tohoto podrobného průvodce krok za krokem.
@@ -37,7 +37,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- V tomto kódu nahraďte`"YOUR DOCUMENT DIRECTORY"`se skutečnou cestou, kde se váš dokument nachází.
+ tomto kódu nahraďte`"YOUR DOCUMENT DIRECTORY"`se skutečnou cestou, kde se váš dokument nachází.
 
 ## Krok 2: Nastavte pozici poznámky pod čarou
 
@@ -93,4 +93,4 @@ Aspose.Words for .NET je navržen pro aplikace .NET, ale můžete jej použít s
 
 ### Kde najdu podrobnější dokumentaci k Aspose.Words pro .NET?
 
- K dispozici je podrobná dokumentace[zde](https://reference.aspose.com/words/net/).
+ dispozici je podrobná dokumentace[zde](https://reference.aspose.com/words/net/).

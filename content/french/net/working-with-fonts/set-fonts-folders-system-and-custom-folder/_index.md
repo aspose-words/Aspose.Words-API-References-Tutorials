@@ -1,23 +1,23 @@
 ---
-title: Définir le système de dossiers de polices et le dossier personnalisé
-linktitle: Définir le système de dossiers de polices et le dossier personnalisé
+title: Définir les dossiers de polices Système et dossier personnalisé
+linktitle: Définir les dossiers de polices Système et dossier personnalisé
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment définir des dossiers de polices système et personnalisées dans les documents Word à l'aide d'Aspose.Words for .NET, garantissant ainsi que vos documents s'affichent correctement dans différents environnements.
+description: Découvrez comment définir des dossiers de polices système et personnalisés dans des documents Word à l'aide d'Aspose.Words pour .NET, en garantissant que vos documents s'affichent correctement dans différents environnements.
 type: docs
 weight: 10
 url: /fr/net/working-with-fonts/set-fonts-folders-system-and-custom-folder/
 ---
 ## Introduction
 
-Imaginez que vous créez un document avec un style de police unique, pour découvrir ensuite que les polices ne s'affichent pas correctement sur une autre machine. Frustrant, non ? C'est là qu'intervient la configuration des dossiers de polices. Avec Aspose.Words pour .NET, vous pouvez définir des dossiers de polices système et personnalisées pour garantir que vos documents aient toujours l'apparence prévue. Voyons comment vous pouvez y parvenir.
+Imaginez que vous rédigez un document avec un style de police unique et que vous découvrez que les polices ne s'affichent pas correctement sur une autre machine. Frustrant, n'est-ce pas ? C'est là qu'entre en jeu la configuration des dossiers de polices. Avec Aspose.Words pour .NET, vous pouvez définir des dossiers de polices système et personnalisés pour garantir que vos documents s'affichent toujours comme prévu. Voyons comment vous pouvez y parvenir.
 
-## Conditions préalables
+## Prérequis
 
-Avant de commencer, assurez-vous d'avoir les éléments suivants :
+Avant de commencer, assurez-vous de disposer des éléments suivants :
 
 -  Bibliothèque Aspose.Words pour .NET : si vous ne l'avez pas déjà fait, téléchargez-la[ici](https://releases.aspose.com/words/net/).
-- Environnement de développement : un IDE comme Visual Studio.
-- Connaissance de base de C# : la familiarité avec C# vous aidera à suivre les exemples de code.
+- Environnement de développement : un IDE comme Visual Studio.
+- Connaissances de base de C# : la familiarité avec C# vous aidera à suivre les exemples de code.
 
 ## Importer des espaces de noms
 
@@ -32,18 +32,18 @@ using Aspose.Words.Fonts;
 
 Maintenant, décomposons le processus en étapes simples.
 
-## Étape 1 : Charger le document
+## Étape 1 : Charger le document
 
- Pour commencer, chargez votre document Word dans un Aspose.Words`Document` objet. Ce document sera celui dans lequel vous souhaitez définir les dossiers de polices.
+ Pour commencer, chargez votre document Word dans un fichier Aspose.Words`Document` objet. Ce document sera celui dans lequel vous souhaitez définir les dossiers de polices.
 
 ```csharp
-// Chemin d'accès à votre répertoire de documents
+// Chemin vers votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
-## Étape 2 : initialiser les paramètres de police
+## Étape 2 : Initialiser les paramètres de police
 
  Créer une nouvelle instance de`FontSettings`. Cet objet vous permettra de gérer les sources de polices.
 
@@ -51,9 +51,9 @@ Document doc = new Document(dataDir + "Rendering.docx");
 FontSettings fontSettings = new FontSettings();
 ```
 
-## Étape 3 : Récupérer les sources de polices système
+## Étape 3 : Récupérer les sources des polices système
 
-Récupérez les sources de polices système par défaut. Sur une machine Windows, cela inclut généralement le fichier "Windows\Fonts\"répertoire.
+Récupérez les sources de polices système par défaut. Sur une machine Windows, cela inclut généralement le répertoire « Windows\Fonts »\" répertoire.
 
 ```csharp
 List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFontsSources());
@@ -61,25 +61,25 @@ List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFont
 
 ## Étape 4 : ajouter un dossier de polices personnalisé
 
-Ajoutez un dossier personnalisé contenant vos polices supplémentaires. Ceci est utile si des polices spécifiques ne sont pas installées dans le répertoire des polices système.
+Ajoutez un dossier personnalisé contenant vos polices supplémentaires. Cela est utile si vous avez des polices spécifiques qui ne sont pas installées dans le répertoire des polices système.
 
 ```csharp
 FolderFontSource folderFontSource = new FolderFontSource("C:\\MyFonts\\", true);
 fontSources.Add(folderFontSource);
 ```
 
-## Étape 5 : Mettre à jour les sources de polices
+## Étape 5 : mettre à jour les sources de polices
 
- Reconvertissez la liste des sources de polices en un tableau et définissez-la sur`FontSettings` objet.
+ Convertissez la liste des sources de polices en un tableau et définissez-le sur`FontSettings` objet.
 
 ```csharp
 FontSourceBase[] updatedFontSources = fontSources.ToArray();
 fontSettings.SetFontsSources(updatedFontSources);
 ```
 
-## Étape 6 : appliquer les paramètres de police au document
+## Étape 6 : Appliquer les paramètres de police au document
 
- Enfin, appliquez le configuré`FontSettings` à votre document et enregistrez-le dans le format souhaité, tel que PDF.
+ Enfin, appliquez la configuration`FontSettings` dans votre document et enregistrez-le dans le format souhaité, tel que PDF.
 
 ```csharp
 doc.FontSettings = fontSettings;
@@ -92,22 +92,22 @@ Et voilà ! En suivant ces étapes, vous pouvez vous assurer que vos documents W
 
 ## FAQ
 
-### Que se passe-t-il si une police est manquante dans les dossiers système et personnalisé ?
+### Que se passe-t-il si une police est manquante dans les dossiers système et personnalisés ?
 
-Aspose.Words utilisera une police par défaut pour remplacer la police manquante, garantissant ainsi que le document reste lisible.
+Aspose.Words utilisera une police par défaut pour remplacer la police manquante, garantissant que le document reste lisible.
 
-### Puis-je ajouter plusieurs dossiers de polices personnalisées ?
+### Puis-je ajouter plusieurs dossiers de polices personnalisés ?
 
- Oui, vous pouvez ajouter plusieurs dossiers de polices personnalisées en répétant le processus de création`FolderFontSource` objets et en les ajoutant à la liste des sources de polices.
+ Oui, vous pouvez ajouter plusieurs dossiers de polices personnalisés en répétant le processus de création`FolderFontSource` objets et les ajouter à la liste des sources de polices.
 
-### Est-il possible d'utiliser des chemins réseau pour les dossiers de polices personnalisées ?
+### Est-il possible d'utiliser des chemins réseau pour les dossiers de polices personnalisés ?
 
  Oui, vous pouvez spécifier un chemin réseau dans le`FolderFontSource` constructeur.
 
-### Quels formats de fichiers Aspose.Words prend-il en charge pour enregistrer des documents ?
+### Quels formats de fichiers Aspose.Words prend-il en charge pour l'enregistrement de documents ?
 
 Aspose.Words prend en charge divers formats, notamment DOCX, PDF, HTML, etc.
 
 ### Comment gérer les notifications de substitution de police ?
 
- Vous pouvez gérer les notifications de substitution de police à l'aide de l'outil`FontSettings` la classe`FontSubstitutionWarning`événement.
+ Vous pouvez gérer les notifications de substitution de police en utilisant le`FontSettings` classe`FontSubstitutionWarning`événement.

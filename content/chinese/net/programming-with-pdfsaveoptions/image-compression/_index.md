@@ -92,7 +92,7 @@ PdfSaveOptions saveOptionsA2U = new PdfSaveOptions
     Compliance = PdfCompliance.PdfA2u,
 	//使用 JPEG 压缩
     ImageCompression = PdfImageCompression.Jpeg,
-	//调整 JPEG 质量以控制压缩级别
+	//调整 JPEG 质量来控制压缩级别
     JpegQuality = 100 
 };
 ```
@@ -124,7 +124,7 @@ Aspose.Words for .NET 提供`PdfSaveOptions`类，允许您设置各种图像压
 是的，Aspose.Words 支持 PDF/A 兼容性，允许您以符合档案和长期保存标准的格式保存文档。
 
 ### JPEG 质量对 PDF 文件大小有何影响？
-较高的 JPEG 质量设置可获得较好的图像质量，但文件大小也较大；而较低的质量设置可减小文件大小，但可能会影响图像清晰度。
+较高的 JPEG 质量设置可获得更好的图像质量，但文件大小较大，而较低的质量设置可减小文件大小，但可能会影响图像清晰度。
 
 ### 在哪里可以找到有关 Aspose.Words for .NET 的更多信息？
 您可以在其上了解有关 Aspose.Words for .NET 的更多信息[文档](https://reference.aspose.com/words/net/), [支持](https://forum.aspose.com/c/words/8)， 和[下载](https://releases.aspose.com/words/net/)页。

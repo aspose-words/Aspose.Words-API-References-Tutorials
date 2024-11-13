@@ -73,7 +73,7 @@ public void insertOleObjectAsIcon() throws Exception
 }
 ```
 
-In diesem Code fügen wir ein OLE-Objekt als Symbol ein, das für eine optisch ansprechendere Darstellung des eingebetteten Inhalts sorgt.
+In diesem Code fügen wir ein OLE-Objekt als Symbol ein, um eine optisch ansprechendere Darstellung des eingebetteten Inhalts zu gewährleisten.
 
 ### Lesen der Eigenschaften von ActiveX-Steuerelementen
 

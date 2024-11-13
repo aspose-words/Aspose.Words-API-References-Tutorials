@@ -18,7 +18,7 @@ Bevor wir uns in den Code stürzen, gehen wir durch, was Sie brauchen:
 
 1.  Aspose.Words für .NET-Bibliothek: Stellen Sie sicher, dass Sie die neueste Version haben. Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Eine .NET-kompatible IDE wie Visual Studio reicht aus.
-3. Grundkenntnisse in C#: Wenn Sie die C#-Syntax verstehen, können Sie problemlos folgen.
+3. Grundkenntnisse in C#: Das Verständnis der C#-Syntax wird Ihnen helfen, problemlos mitzukommen.
 4. Ein Beispiel-Word-Dokument: Obwohl wir ein Dokument von Grund auf neu erstellen, kann ein Beispiel für Testzwecke nützlich sein.
 
 ## Namespaces importieren
@@ -34,7 +34,7 @@ Diese Namespaces ermöglichen uns das Erstellen und Bearbeiten von Word-Dokument
 
 ## Schritt 1: Neues Dokument erstellen
 
-Als Erstes erstellen wir ein neues Word-Dokument. Dieses Dokument dient als Leinwand zum Hinzufügen von Abschnitten.
+Zunächst erstellen wir ein neues Word-Dokument. Dieses Dokument dient als Leinwand zum Hinzufügen von Abschnitten.
 
 ### Initialisieren des Dokuments
 

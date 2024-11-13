@@ -43,7 +43,7 @@ public void ownerDocument() throws Exception
     System.out.println("Paragraph has no parent node: " + (para.getParentNode() == null));
     // लेकिन पैराग्राफ नोड अपने दस्तावेज़ को जानता है।
     System.out.println("Both nodes' documents are the same: " + (para.getDocument() == doc));
-    // पैराग्राफ के लिए शैलियाँ निर्धारित करना.
+    // पैराग्राफ के लिए शैलियाँ सेट करना.
     para.getParagraphFormat().setStyleName("Heading 1");
     // प्रथम खंड के मुख्य पाठ में पैराग्राफ जोड़ना।
     doc.getFirstSection().getBody().appendChild(para);
@@ -87,7 +87,7 @@ public void recurseAllNodes() throws Exception
 ```
 
 ## 7. पैराग्राफ़ नोड्स बनाना और जोड़ना
-आइए एक दस्तावेज़ अनुभाग में एक पैराग्राफ नोड बनाएं और जोड़ें:
+आइए दस्तावेज़ अनुभाग में एक पैराग्राफ नोड बनाएं और जोड़ें:
 
 ```java
 @Test
@@ -109,7 +109,7 @@ public void createAndAddParagraphNode() throws Exception
 Aspose.Words for Java एक जावा लाइब्रेरी है जो डेवलपर्स को प्रोग्रामेटिक रूप से Word दस्तावेज़ों को बनाने, उनमें परिवर्तन करने और उन्हें परिवर्तित करने की अनुमति देती है।
 
 ### प्रश्न 2. मैं Java के लिए Aspose.Words कैसे स्थापित कर सकता हूँ?
-आप Aspose.Words for Java को यहां से डाउनलोड और इंस्टॉल कर सकते हैं[यहाँ](https://releases.aspose.com/words/java/).
+ आप Aspose.Words for Java को यहां से डाउनलोड और इंस्टॉल कर सकते हैं[यहाँ](https://releases.aspose.com/words/java/).
 
 ### प्रश्न 3. क्या कोई निःशुल्क परीक्षण उपलब्ध है?
  हां, आप Java के लिए Aspose.Words का निःशुल्क परीक्षण प्राप्त कर सकते हैं[यहाँ](https://releases.aspose.com/).

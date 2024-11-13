@@ -88,7 +88,7 @@ Sie können den extrahierten Text nach Bedarf weiterverarbeiten. Dies kann Texta
 
 ## Abschluss
 
-Mit Aspose.Words für Java können Sie Inhalte aus Dokumenten ganz einfach aufteilen und extrahieren. Egal, ob Sie ein großes Dokument in kleinere Teile aufteilen oder Text zur Analyse extrahieren müssen, diese API vereinfacht den Vorgang. Wenn Sie die in diesem Handbuch beschriebenen Schritte befolgen, sind Sie gut gerüstet, um das volle Potenzial von Aspose.Words für Java auszuschöpfen.
+Mit Aspose.Words für Java können Sie Inhalte aus Dokumenten ganz einfach aufteilen und extrahieren. Egal, ob Sie ein großes Dokument in kleinere Teile aufteilen oder Text zur Analyse extrahieren müssen, diese API vereinfacht den Vorgang. Wenn Sie die in diesem Handbuch beschriebenen Schritte befolgen, sind Sie bestens gerüstet, um das volle Potenzial von Aspose.Words für Java auszuschöpfen.
 
 ## Häufig gestellte Fragen
 

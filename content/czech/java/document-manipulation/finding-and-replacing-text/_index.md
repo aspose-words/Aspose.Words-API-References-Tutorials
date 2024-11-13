@@ -22,7 +22,7 @@ Než se ponoříme do podrobností o hledání a nahrazování textu, ujistěte 
 
  Knihovnu Aspose.Words for Java si můžete stáhnout z[zde](https://releases.aspose.com/words/java/).
 
-## Hledání a nahrazování jednoduchého textu
+## Vyhledání a nahrazení jednoduchého textu
 
 ```java
 // Vložte dokument
@@ -51,7 +51,7 @@ Document doc = new Document("your-document.docx");
 // Vytvořte DocumentBuilder
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// K vyhledání a nahrazení textu použijte regulární výrazy
+// Používejte regulární výrazy pro hledání a nahrazování textu
 Pattern regex = Pattern.compile("your-pattern");
 builder.getRange().replace(regex, "replacement-text", new FindReplaceOptions());
 
@@ -180,11 +180,11 @@ Document doc = new Document("your-document.docx");
 // Získejte první sekci
 Section firstPageSection = doc.getFirstSection();
 
-// Vytvořte instanci FindReplaceOptions a použijte ji na rozsah dokumentu
+//Vytvořte instanci FindReplaceOptions a použijte ji na rozsah dokumentu
 FindReplaceOptions options = new FindReplaceOptions();
 options.setReplacingCallback(new ReplaceLog());
 
-//Nahraďte text, který ovlivňuje pořadí záhlaví a zápatí
+// Nahraďte text, který ovlivňuje pořadí záhlaví a zápatí
 doc.getRange().replace(Pattern.compile("(header|footer)"), "", options);
 
 // Uložte upravený dokument
@@ -243,7 +243,7 @@ Aspose.Words for Java umožňuje nahradit text pomocí regulárních výrazů.
 // Vložte dokument
 Document doc = new Document("your-document.docx");
 
-// K vyhledání a nahrazení textu použijte regulární výrazy
+// Používejte regulární výrazy pro hledání a nahrazování textu
 doc.getRange().replace(Pattern.compile("[s|m]ad"), "bad", new FindReplaceOptions());
 
 // Uložte upravený dokument
@@ -260,7 +260,7 @@ Pomocí Aspose.Words for Java můžete rozpoznat a provést substituce v rámci 
 // Vložte dokument
 Document doc = new Document("your-document.docx");
 
-//Vytvořte instanci FindReplaceOptions s UseSubstitutions nastavenou na hodnotu true
+// Vytvořte instanci FindReplaceOptions s UseSubstitutions nastavenou na hodnotu true
 FindReplaceOptions options = new FindReplaceOptions();
 options.setUseSubstitutions(true);
 
@@ -322,7 +322,7 @@ Document doc = new Document("your-document.docx");
 // Získejte konkrétní tabulku (např. první tabulku)
 Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
 
-// K nahrazení textu v tabulce použijte FindReplaceOptions
+// nahrazení textu v tabulce použijte FindReplaceOptions
 table.getRange().replace("old-text", "new-text", new FindReplaceOptions());
 
 // Uložte upravený dokument
@@ -347,7 +347,7 @@ Ano, v Aspose.Words for Java můžete použít regulární výrazy pro nahrazen�
 
 ### Jak mohu při výměně ignorovat text uvnitř polí?
 
- Chcete-li ignorovat text uvnitř polí během nahrazování, můžete nastavit`IgnoreFields` vlastnictvím`FindReplaceOptions` na`true`To zajistí, že text v polích, jako jsou slučovací pole, bude vyloučen z nahrazování.
+Chcete-li ignorovat text uvnitř polí během nahrazování, můžete nastavit`IgnoreFields` vlastnictví`FindReplaceOptions` na`true`. To zajistí, že text v polích, jako jsou slučovací pole, bude vyloučen z nahrazování.
 
 ### Mohu nahradit text uvnitř záhlaví a zápatí?
 
@@ -355,4 +355,4 @@ Ano, v Aspose.Words for Java můžete použít regulární výrazy pro nahrazen�
 
 ### K čemu slouží možnost UseLegacyOrder?
 
- The`UseLegacyOrder` možnost v`FindReplaceOptions` umožňuje použít starší pořadí při provádění operací hledání a nahrazování. To může být užitečné v určitých scénářích, kde je požadováno chování starší objednávky.
+The`UseLegacyOrder` možnost v`FindReplaceOptions` umožňuje použít starší pořadí při provádění operací hledání a nahrazování. To může být užitečné v určitých scénářích, kde je požadováno chování starší objednávky.

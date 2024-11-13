@@ -1,27 +1,27 @@
 ---
-title: Maak een bladwijzer van tabelkolommen in een Word-document
-linktitle: Maak een bladwijzer van tabelkolommen in een Word-document
-second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u tabelkolommen in een Word-document kunt bookmarken met Aspose.Words voor .NET met deze uitgebreide, stapsgewijze zelfstudie.
+title: Bladwijzertabelkolommen in Word-document
+linktitle: Bladwijzertabelkolommen in Word-document
+second_title: Aspose.Words API voor documentverwerking
+description: Leer hoe u tabelkolommen in een Word-document kunt markeren met Aspose.Words voor .NET met deze uitgebreide, stapsgewijze zelfstudie.
 type: docs
 weight: 10
 url: /nl/net/programming-with-bookmarks/bookmark-table-columns/
 ---
 ## Invoering
 
-Als u uw vaardigheden op het gebied van documentautomatisering wilt verbeteren, staat u een traktatie te wachten. Deze zelfstudie leidt u door het proces van het maken van bladwijzers voor tabelkolommen in een Word-document met behulp van Aspose.Words voor .NET. Klaar om erin te duiken? Laten we beginnen!
+Als u uw vaardigheden voor documentautomatisering wilt verbeteren, dan staat u een traktatie te wachten. Deze tutorial begeleidt u door het proces van het bookmarken van tabelkolommen in een Word-document met Aspose.Words voor .NET. Klaar om erin te duiken? Laten we beginnen!
 
 ## Vereisten
 
-Voordat we ingaan op de code, zijn er een paar dingen die u moet regelen:
+Voordat we met de code aan de slag gaan, zijn er een paar dingen die je moet regelen:
 
-1.  Aspose.Words voor .NET: Zorg ervoor dat Aspose.Words voor .NET is geïnstalleerd. Je kunt het downloaden[hier](https://releases.aspose.com/words/net/).
-2. Ontwikkelomgeving: Zet een ontwikkelomgeving zoals Visual Studio op.
-3. Basiskennis van C#: Bekendheid met programmeren in C# kan nuttig zijn.
+1.  Aspose.Words voor .NET: Zorg ervoor dat je Aspose.Words voor .NET hebt geïnstalleerd. Je kunt het downloaden[hier](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: Stel een ontwikkelomgeving in, zoals Visual Studio.
+3. Basiskennis van C#: Kennis van C#-programmering is nuttig.
 
 ## Naamruimten importeren
 
-Om te beginnen moet u de benodigde naamruimten in uw C#-project importeren:
+Om te beginnen moet u de benodigde naamruimten importeren in uw C#-project:
 
 ```csharp
 using System;
@@ -33,7 +33,7 @@ Laten we het proces nu in gedetailleerde stappen opsplitsen.
 
 ## Stap 1: Initialiseer het document en DocumentBuilder
 
- Eerst moeten we een nieuw Word-document maken en het`DocumentBuilder` om ermee te werken.
+ Eerst moeten we een nieuw Word-document maken en het initialiseren`DocumentBuilder` om ermee te werken.
 
 ```csharp
 Document doc = new Document();
@@ -42,7 +42,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Stap 2: Start de tabel en voeg de eerste cel in
 
-Begin met het maken van een tabel en voeg de eerste cel in waar we de bladwijzer beginnen.
+Begin met het maken van een tabel en voeg de eerste cel in waar we de bladwijzer gaan plaatsen.
 
 ```csharp
 builder.StartTable();
@@ -60,7 +60,7 @@ builder.Write("This is row 1 cell 1");
 
 ## Stap 4: Voeg extra cellen in en beëindig de rij
 
-Voeg nog een cel toe aan de eerste rij en voltooi de eerste rij.
+Voeg nog een cel toe aan de eerste rij en maak de eerste rij af.
 
 ```csharp
 builder.InsertCell();
@@ -68,9 +68,9 @@ builder.Write("This is row 1 cell 2");
 builder.EndRow();
 ```
 
-## Stap 5: Voeg cellen in voor de tweede rij
+## Stap 5: Cellen invoegen voor de tweede rij
 
-Ga verder door cellen toe te voegen voor de tweede rij.
+Ga door met het toevoegen van cellen voor de tweede rij.
 
 ```csharp
 builder.InsertCell();
@@ -83,15 +83,15 @@ builder.EndTable();
 
 ## Stap 6: Beëindig de bladwijzer
 
-Beëindig de bladwijzer nadat u de tabel hebt voltooid.
+Sluit de bladwijzer af nadat u de tabel hebt afgemaakt.
 
 ```csharp
 builder.EndBookmark("MyBookmark");
 ```
 
-## Stap 7: Blader door bladwijzers en geef informatie weer
+## Stap 7: Door bladwijzers en weergave-informatie itereren
 
-Blader ten slotte door de bladwijzers in het document en geef informatie over elke bladwijzer weer.
+Loop ten slotte door de bladwijzers in het document en geef informatie over elke bladwijzer weer.
 
 ```csharp
 foreach (Bookmark bookmark in doc.Range.Bookmarks)
@@ -107,21 +107,21 @@ foreach (Bookmark bookmark in doc.Range.Bookmarks)
 
 ## Conclusie
 
-En daar heb je het! U hebt met succes een bladwijzer gemaakt voor tabelkolommen in een Word-document met Aspose.Words voor .NET. Dit proces helpt niet alleen bij het organiseren van uw document, maar maakt het ook gemakkelijker om door specifieke secties te navigeren en deze te manipuleren. Bladwijzers maken is een krachtige functie die uw mogelijkheden voor documentbeheer aanzienlijk kan verbeteren.
+En daar heb je het! Je hebt succesvol tabelkolommen in een Word-document gemarkeerd met Aspose.Words voor .NET. Dit proces helpt niet alleen bij het organiseren van je document, maar maakt het ook gemakkelijker om te navigeren en specifieke secties te manipuleren. Bladwijzers zijn een krachtige functie die je documentbeheermogelijkheden aanzienlijk kan verbeteren.
 
 ## Veelgestelde vragen
 
 ### Wat is Aspose.Words voor .NET?
-Aspose.Words voor .NET is een krachtige bibliotheek voor het programmatisch werken met Word-documenten. Hiermee kunt u documenten maken, wijzigen en converteren zonder dat u Microsoft Word hoeft te installeren.
+Aspose.Words voor .NET is een krachtige bibliotheek voor het programmatisch werken met Word-documenten. Hiermee kunt u documenten maken, wijzigen en converteren zonder dat Microsoft Word geïnstalleerd hoeft te zijn.
 
 ### Hoe installeer ik Aspose.Words voor .NET?
- U kunt Aspose.Words voor .NET downloaden van de[website](https://releases.aspose.com/words/net/). Volg de meegeleverde installatie-instructies.
+ U kunt Aspose.Words voor .NET downloaden van de[website](https://releases.aspose.com/words/net/)Volg de meegeleverde installatie-instructies.
 
 ### Kan ik Aspose.Words voor .NET gebruiken met andere programmeertalen?
-Ja, Aspose.Words voor .NET kan worden gebruikt met elke door .NET ondersteunde taal, inclusief C#, VB.NET en F#.
+Ja, Aspose.Words voor .NET kan worden gebruikt met elke door .NET ondersteunde taal, waaronder C#, VB.NET en F#.
 
 ### Hoe kan ik ondersteuning krijgen voor Aspose.Words voor .NET?
- U kunt ondersteuning krijgen van de Aspose-gemeenschap en experts door naar de[ondersteuningsforum](https://forum.aspose.com/c/words/8).
+ U kunt ondersteuning krijgen van de Aspose-community en experts door de website te bezoeken[ondersteuningsforum](https://forum.aspose.com/c/words/8).
 
 ### Is er een proefversie van Aspose.Words voor .NET beschikbaar?
- Ja, u kunt een gratis proefperiode krijgen van[hier](https://releases.aspose.com/).
+ Ja, u kunt een gratis proefversie krijgen van[hier](https://releases.aspose.com/).

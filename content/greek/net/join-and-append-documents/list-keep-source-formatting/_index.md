@@ -1,6 +1,6 @@
 ---
-title: List Keep Μορφοποίηση πηγής
-linktitle: List Keep Μορφοποίηση πηγής
+title: Μορφοποίηση πηγής διατήρησης λίστας
+linktitle: Μορφοποίηση πηγής διατήρησης λίστας
 second_title: Aspose.Words Document Processing API
 description: Μάθετε πώς να συγχωνεύετε έγγραφα του Word διατηρώντας παράλληλα τη μορφοποίηση χρησιμοποιώντας το Aspose.Words για .NET. Αυτό το σεμινάριο παρέχει οδηγίες βήμα προς βήμα για απρόσκοπτη συγχώνευση εγγράφων.
 type: docs

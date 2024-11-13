@@ -77,7 +77,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.ShowGrammaticalAndSpel
 
 ## 結論
 
-現在你就得到它了！只需幾個簡單的步驟，您就學會如何使用 Aspose.Words for .NET 自動顯示 Word 文件中的語法和拼字錯誤。這不僅可以節省您的時間，還可以確保您的文件沒有錯誤且專業。
+現在你就擁有了！只需幾個簡單的步驟，您就學會如何使用 Aspose.Words for .NET 自動顯示 Word 文件中的語法和拼字錯誤。這不僅可以節省您的時間，還可以確保您的文件沒有錯誤且專業。
 
 順便說一下，如果您還沒有嘗試過 Aspose.Words for .NET，您可以下載免費試用版[這裡](https://releases.aspose.com/)。如果您需要購買許可證，您可以這樣做[這裡](https://purchase.aspose.com/buy)。如果您需要支持，請隨時訪問他們的[論壇](https://forum.aspose.com/c/words/8).
 

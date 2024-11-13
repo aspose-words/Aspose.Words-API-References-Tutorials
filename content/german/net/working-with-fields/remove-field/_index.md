@@ -9,7 +9,7 @@ url: /de/net/working-with-fields/remove-field/
 ---
 ## Einführung
 
-Haben Sie schon einmal versucht, unerwünschte Felder aus Ihren Word-Dokumenten zu entfernen? Wenn Sie mit Aspose.Words für .NET arbeiten, haben Sie Glück! In diesem Tutorial tauchen wir tief in die Welt der Feldentfernung ein. Egal, ob Sie ein Dokument bereinigen oder nur ein wenig Ordnung schaffen müssen, ich werde Sie Schritt für Schritt durch den Vorgang führen. Also, schnallen Sie sich an und legen Sie los!
+Haben Sie schon einmal versucht, unerwünschte Felder aus Ihren Word-Dokumenten zu entfernen? Wenn Sie mit Aspose.Words für .NET arbeiten, haben Sie Glück! In diesem Tutorial tauchen wir tief in die Welt der Feldentfernung ein. Egal, ob Sie ein Dokument bereinigen oder nur ein wenig Ordnung schaffen müssen, ich werde Sie Schritt für Schritt durch den Prozess führen. Also, schnallen Sie sich an und legen Sie los!
 
 ## Voraussetzungen
 
@@ -31,7 +31,7 @@ Gut, nachdem wir nun die Grundlagen abgedeckt haben, tauchen wir in die Schritt-
 
 ## Schritt 1: Richten Sie Ihr Dokumentverzeichnis ein
 
-Stellen Sie sich Ihr Dokumentverzeichnis als Schatzkarte vor, die zu Ihrem Word-Dokument führt. Dies müssen Sie zuerst einrichten.
+Stellen Sie sich Ihr Dokumentverzeichnis als Schatzkarte vor, die zu Ihrem Word-Dokument führt. Dieses müssen Sie zunächst einrichten.
 
 ```csharp
 // Der Pfad zum Dokumentverzeichnis.
@@ -70,7 +70,7 @@ Und da haben Sie es! Sie haben erfolgreich ein Feld aus Ihrem Word-Dokument mit 
 
 ## Abschluss
 
-Und das war’s! Sie haben gelernt, wie Sie mit Aspose.Words für .NET Felder aus einem Word-Dokument entfernen. Es ist ein einfaches, aber leistungsstarkes Tool, mit dem Sie jede Menge Zeit und Mühe sparen können. Jetzt können Sie diese Dokumente wie ein Profi aufräumen!
+Und das war’s! Sie haben gelernt, wie Sie mit Aspose.Words für .NET Felder aus einem Word-Dokument entfernen. Es ist ein einfaches, aber leistungsstarkes Tool, das Ihnen jede Menge Zeit und Mühe ersparen kann. Jetzt können Sie diese Dokumente wie ein Profi aufräumen!
 
 ## Häufig gestellte Fragen
 

@@ -9,7 +9,7 @@ url: /zh/net/programming-with-rtfloadoptions/recognize-utf8-text/
 ---
 ## 介绍
 
-准备好深入研究一些很棒的技术了吗？今天，我们将使用 Aspose.Words for .NET 解决识别 Word 文档中的 UTF-8 文本的问题。如果您使用多种语言或特殊字符，它将改变游戏规则。所以，系好安全带，让我们开始吧！
+准备好深入了解一些很棒的技术了吗？今天，我们将使用 Aspose.Words for .NET 解决识别 Word 文档中的 UTF-8 文本的问题。如果您使用多种语言或特殊字符，它将改变游戏规则。所以，系好安全带，让我们开始吧！
 
 ## 先决条件
 

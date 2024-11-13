@@ -38,7 +38,7 @@ new_doc = Document()
 
 ## 修改文档结构
 
-Aspose.Words 可让您轻松操作文档结构。您可以添加章节、段落、页眉、页脚等：
+Aspose.Words 可让您轻松操纵文档的结构。您可以添加章节、段落、页眉、页脚等：
 
 ```python
 from aspose.words import Section, Paragraph
@@ -177,7 +177,7 @@ for data in dataset:
 ## 最佳实践和技巧
 
 - 通过使用执行不同文档操作任务的函数来保持代码井然有序。
-- 利用异常处理来妥善处理文档处理期间的错误。
+- 利用异常处理来妥善处理文档处理过程中的错误。
 - 检查[Aspose.Words 文档](https://reference.aspose.com/words/python-net/)以获取详细的 API 参考和示例。
 
 ## 结论

@@ -24,7 +24,7 @@ url: /zh/net/working-with-hyphenation/hyphenation-callback/
 
 ## 导入命名空间
 
-首先，让我们导入必要的命名空间。这确保我们的代码可以访问 Aspose.Words 中我们需要的所有类和方法。
+首先，让我们导入必要的命名空间。这确保我们的代码可以访问 Aspose.Words 中所需的所有类和方法。
 
 ```csharp
 using Aspose.Words;
@@ -137,7 +137,7 @@ public class CustomHyphenationCallback : IHyphenationCallback
 Aspose.Words for .NET 是一个强大的文档操作库，允许开发人员以编程方式创建、修改和转换文档。
 
 ### 为什么连字符在文档格式化中很重要？
-连字符通过在适当的位置断开单词来改善文本布局，确保文档更具可读性和视觉吸引力。
+连字通过在适当的位置断开单词来改善文本布局，确保文档更具可读性和视觉吸引力。
 
 ### 我可以免费使用 Aspose.Words 吗？
  Aspose.Words 提供免费试用。您可以获取[这里](https://releases.aspose.com/).

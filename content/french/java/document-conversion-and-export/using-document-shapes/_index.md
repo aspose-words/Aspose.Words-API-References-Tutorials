@@ -1,8 +1,8 @@
 ---
-title: Utilisation de formes de document dans Aspose.Words pour Java
-linktitle: Utiliser des formes de document
+title: Utilisation des formes de document dans Aspose.Words pour Java
+linktitle: Utilisation des formes de document
 second_title: API de traitement de documents Java Aspose.Words
-description: Libérez la puissance des formes de documents dans Aspose.Words pour Java. Apprenez à créer des documents visuellement attrayants avec des exemples étape par étape.
+description: Exploitez la puissance des formes de documents dans Aspose.Words pour Java. Apprenez à créer des documents visuellement attrayants avec des exemples étape par étape.
 type: docs
 weight: 14
 url: /fr/java/document-conversion-and-export/using-document-shapes/
@@ -10,17 +10,17 @@ url: /fr/java/document-conversion-and-export/using-document-shapes/
 
 ## Introduction à l'utilisation des formes de document dans Aspose.Words pour Java
 
-Dans ce guide complet, nous plongerons dans le monde des formes de documents dans Aspose.Words pour Java. Les formes sont des éléments essentiels lorsqu’il s’agit de créer des documents visuellement attrayants et interactifs. Que vous ayez besoin d'ajouter des légendes, des boutons, des images ou des filigranes, Aspose.Words for Java fournit les outils nécessaires pour le faire efficacement. Explorons comment utiliser ces formes étape par étape avec des exemples de code source.
+Dans ce guide complet, nous allons nous plonger dans le monde des formes de documents dans Aspose.Words pour Java. Les formes sont des éléments essentiels pour créer des documents visuellement attrayants et interactifs. Que vous ayez besoin d'ajouter des légendes, des boutons, des images ou des filigranes, Aspose.Words pour Java fournit les outils pour le faire efficacement. Explorons comment utiliser ces formes étape par étape avec des exemples de code source.
 
-## Premiers pas avec les formes de document
+## Premiers pas avec les formes de documents
 
- Avant de passer au code, configurons notre environnement. Assurez-vous que Aspose.Words pour Java est intégré à votre projet. Si vous ne l'avez pas déjà fait, vous pouvez le télécharger depuis le site Aspose.[Télécharger Aspose.Words pour Java](https://releases.aspose.com/words/java/)
+Avant de passer au code, configurons notre environnement. Assurez-vous d'avoir intégré Aspose.Words for Java à votre projet. Si ce n'est pas déjà fait, vous pouvez le télécharger depuis le site Web d'Aspose[Télécharger Aspose.Words pour Java](https://releases.aspose.com/words/java/)
 
 ## Ajout de formes aux documents
 
-### Insérer une forme de groupe
+### Insérer une GroupShape
 
- UN`GroupShape` vous permet de regrouper plusieurs formes ensemble. Voici comment créer et insérer un`GroupShape`:
+ UN`GroupShape` vous permet de regrouper plusieurs formes ensemble. Voici comment vous pouvez créer et insérer un`GroupShape`:
 
 ```java
 Document doc = new Document();
@@ -52,7 +52,7 @@ doc.save("Your Directory Path" + "WorkingWithShapes.AddGroupShape.docx");
 
 ### Insertion d'une forme de zone de texte
 
- Pour insérer une forme de zone de texte, vous pouvez utiliser le`insertShape` méthode comme indiqué dans l’exemple ci-dessous :
+ Pour insérer une forme de zone de texte, vous pouvez utiliser le`insertShape` méthode comme indiqué dans l'exemple ci-dessous :
 
 ```java
 Document doc = new Document();
@@ -75,9 +75,9 @@ doc.save("Your Directory Path" + "WorkingWithShapes.InsertShape.docx", saveOptio
 
 ## Manipulation des propriétés de forme
 
-### Gestion des proportions
+### Gestion du rapport hauteur/largeur
 
-Vous pouvez contrôler si les proportions d’une forme sont verrouillées ou non. Voici comment déverrouiller les proportions d'une forme :
+Vous pouvez contrôler si le rapport hauteur/largeur d'une forme est verrouillé ou non. Voici comment déverrouiller le rapport hauteur/largeur d'une forme :
 
 ```java
 Document doc = new Document();
@@ -91,7 +91,7 @@ doc.save("Your Directory Path" + "WorkingWithShapes.AspectRatioLocked.docx");
 
 ### Placer une forme dans une cellule de tableau
 
-Si vous devez placer une forme à l’intérieur d’une cellule de tableau, vous pouvez y parvenir avec le code suivant :
+Si vous devez placer une forme à l'intérieur d'une cellule de tableau, vous pouvez y parvenir avec le code suivant :
 
 ```java
 Document doc = new Document();
@@ -114,7 +114,7 @@ builder.endTable();
 Shape watermark = new Shape(doc, ShapeType.TEXT_PLAIN_TEXT);
 watermark.setRelativeHorizontalPosition(RelativeHorizontalPosition.PAGE);
 watermark.setRelativeVerticalPosition(RelativeVerticalPosition.PAGE);
-watermark.isLayoutInCell(true); // Affichez la forme à l'extérieur de la cellule du tableau si elle doit être placée dans une cellule.
+watermark.isLayoutInCell(true); // Afficher la forme en dehors de la cellule du tableau si elle doit être placée dans une cellule.
 watermark.setWidth(300.0);
 watermark.setHeight(70.0);
 watermark.setHorizontalAlignment(HorizontalAlignment.CENTER);
@@ -139,7 +139,7 @@ doc.save("Your Directory Path" + "WorkingWithShapes.LayoutInCell.docx");
 
 ### Détection des formes SmartArt
 
-Vous pouvez détecter les formes SmartArt dans un document à l'aide du code suivant :
+Vous pouvez détecter des formes SmartArt dans un document à l’aide du code suivant :
 
 ```java
 Document doc = new Document("Your Directory Path" + "SmartArt.docx");
@@ -162,26 +162,26 @@ for (Shape shape : (Iterable<Shape>) doc.getChildNodes(NodeType.SHAPE, true)) {
 
 ## Conclusion
 
-Dans ce guide, nous avons exploré le monde des formes de documents dans Aspose.Words pour Java. Vous avez appris à ajouter diverses formes à vos documents, à manipuler leurs propriétés et à utiliser des formes SmartArt. Grâce à ces connaissances, vous pouvez facilement créer des documents visuellement attrayants et interactifs.
+Dans ce guide, nous avons exploré le monde des formes de document dans Aspose.Words pour Java. Vous avez appris à ajouter diverses formes à vos documents, à manipuler leurs propriétés et à travailler avec des formes SmartArt. Grâce à ces connaissances, vous pouvez créer facilement des documents visuellement attrayants et interactifs.
 
 ## FAQ
 
-### Qu’est-ce qu’Aspose.Words pour Java ?
+### Qu'est-ce que Aspose.Words pour Java ?
 
-Aspose.Words for Java est une bibliothèque Java qui permet aux développeurs de créer, modifier et convertir des documents Word par programme. Il fournit une large gamme de fonctionnalités et d'outils pour travailler avec des documents dans différents formats.
+Aspose.Words for Java est une bibliothèque Java qui permet aux développeurs de créer, modifier et convertir des documents Word par programmation. Elle offre une large gamme de fonctionnalités et d'outils pour travailler avec des documents dans divers formats.
 
 ### Comment puis-je télécharger Aspose.Words pour Java ?
 
- Vous pouvez télécharger Aspose.Words pour Java depuis le site Web Aspose en suivant ce lien :[Télécharger Aspose.Words pour Java](https://releases.aspose.com/words/java/)
+ Vous pouvez télécharger Aspose.Words pour Java à partir du site Web d'Aspose en suivant ce lien :[Télécharger Aspose.Words pour Java](https://releases.aspose.com/words/java/)
 
-### Quels sont les avantages de l’utilisation des formes de document ?
+### Quels sont les avantages de l’utilisation de formes de document ?
 
-Les formes de document ajoutent des éléments visuels et de l'interactivité à vos documents, les rendant plus attrayants et informatifs. Avec les formes, vous pouvez créer des légendes, des boutons, des images, des filigranes et bien plus encore, améliorant ainsi l'expérience utilisateur globale.
+Les formes de document ajoutent des éléments visuels et de l'interactivité à vos documents, les rendant ainsi plus attrayants et informatifs. Avec les formes, vous pouvez créer des légendes, des boutons, des images, des filigranes et bien plus encore, améliorant ainsi l'expérience utilisateur globale.
 
 ### Puis-je personnaliser l’apparence des formes ?
 
-Oui, vous pouvez personnaliser l'apparence des formes en ajustant leurs propriétés telles que la taille, la position, la rotation et la couleur de remplissage. Aspose.Words for Java fournit des options étendues pour la personnalisation des formes.
+Oui, vous pouvez personnaliser l'apparence des formes en ajustant leurs propriétés telles que la taille, la position, la rotation et la couleur de remplissage. Aspose.Words pour Java offre de nombreuses options de personnalisation des formes.
 
 ### Aspose.Words pour Java est-il compatible avec SmartArt ?
 
-Oui, Aspose.Words for Java prend en charge les formes SmartArt, vous permettant de travailler avec des diagrammes et des graphiques complexes dans vos documents.
+Oui, Aspose.Words pour Java prend en charge les formes SmartArt, vous permettant de travailler avec des diagrammes et des graphiques complexes dans vos documents.

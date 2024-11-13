@@ -26,7 +26,7 @@ Začněte vytvořením nového projektu Java ve vašem oblíbeném IDE. Nezapome
 
 ## Načítání dokumentu aplikace Word
 
-kódu Java budete muset načíst dokument Word, který chcete exportovat do PDF. K tomu použijte následující fragment kódu:
+V kódu Java budete muset načíst dokument Word, který chcete exportovat do PDF. K tomu použijte následující fragment kódu:
 
 ```java
 // Načtěte dokument aplikace Word

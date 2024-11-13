@@ -10,11 +10,11 @@ url: /cs/java/document-conversion-and-export/using-document-shapes/
 
 ## Úvod do používání tvarů dokumentů v Aspose.Words pro Javu
 
-tomto komplexním průvodci se ponoříme do světa tvarů dokumentů v Aspose.Words for Java. Tvary jsou základními prvky, pokud jde o vytváření vizuálně přitažlivých a interaktivních dokumentů. Ať už potřebujete přidat popisky, tlačítka, obrázky nebo vodoznaky, Aspose.Words pro Java poskytuje nástroje, jak to udělat efektivně. Pojďme prozkoumat, jak tyto tvary používat krok za krokem s příklady zdrojového kódu.
+V tomto komplexním průvodci se ponoříme do světa tvarů dokumentů v Aspose.Words for Java. Tvary jsou základními prvky, pokud jde o vytváření vizuálně přitažlivých a interaktivních dokumentů. Ať už potřebujete přidat popisky, tlačítka, obrázky nebo vodoznaky, Aspose.Words pro Java poskytuje nástroje, jak to udělat efektivně. Pojďme prozkoumat, jak tyto tvary používat krok za krokem s příklady zdrojového kódu.
 
 ## Začínáme s tvary dokumentů
 
- Než se pustíme do kódu, nastavíme naše prostředí. Ujistěte se, že máte Aspose.Words for Java integrovanou do vašeho projektu. Pokud jste tak ještě neučinili, můžete si jej stáhnout z webu Aspose[Stáhněte si Aspose.Words pro Java](https://releases.aspose.com/words/java/)
+Než se pustíme do kódu, nastavíme naše prostředí. Ujistěte se, že máte Aspose.Words for Java integrovanou do vašeho projektu. Pokud jste tak ještě neučinili, můžete si jej stáhnout z webu Aspose[Stáhněte si Aspose.Words pro Java](https://releases.aspose.com/words/java/)
 
 ## Přidávání tvarů do dokumentů
 

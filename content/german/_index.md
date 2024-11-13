@@ -8,12 +8,13 @@ url: /de/
 is_root: true
 ---
 
-## Aspose.Words-Dokumentenverarbeitungstutorials für .NET
+## Aspose.Words-Tutorials zur Dokumentverarbeitung für .NET
 {{% alert color="primary" %}}
 Diese Tutorials bieten klare und detaillierte Anweisungen zum programmgesteuerten Arbeiten mit Microsoft Word-Dokumenten und decken ein breites Spektrum an Funktionen ab. Von einfachen Aufgaben wie dem Erstellen und Bearbeiten von Dokumenten bis hin zu erweiterten Funktionen wie Seriendruck, Dokumentkonvertierung und Dokumentverschlüsselung finden Entwickler praktische Beispiele und Codeausschnitte, die sie in ihre Projekte implementieren können. Durch das Befolgen dieser Tutorials können .NET-Entwickler ihre Anwendungen mit leistungsstarken Dokumentverarbeitungsfunktionen erweitern und so eine effiziente und nahtlose Verarbeitung von Word-Dokumenten in ihren Softwarelösungen sicherstellen. 
 {{% /alert %}}
 
 Dies sind Links zu einigen nützlichen Ressourcen:
+- [KI-gestützte Dokumentenverarbeitung](./net/ai-powered-document-processing/)
 - [Lizenz beantragen](./net/apply-license/)   
 - [Aktivieren Sie OpenType-Funktionen](./net/enable-opentype-features/)   
 - [Arbeiten mit Kommentaren](./net/working-with-comments/)   
@@ -62,7 +63,7 @@ Dies sind Links zu einigen nützlichen Ressourcen:
 
 ## Aspose.Words-Dokumentenverwaltungs-Tutorials für Python
 {{% alert color="primary" %}}
-Diese Tutorials bieten eine Schritt-für-Schritt-Anleitung zum programmgesteuerten Arbeiten mit Microsoft Word-Dokumenten, einschließlich Dokumenterstellung, -bearbeitung und verschiedenen Sicherheitsfunktionen wie Verschlüsselung und Kennwortschutz. Mithilfe dieser Ressource können Entwickler mithilfe von Aspose.Words Dokumentverarbeitungsfunktionen effizient in ihre Python-Anwendungen implementieren, wodurch die Produktivität gesteigert und die Dokumentsicherheit gewährleistet wird. 
+Diese Tutorials bieten eine Schritt-für-Schritt-Anleitung zum programmgesteuerten Arbeiten mit Microsoft Word-Dokumenten, einschließlich Dokumenterstellung, Bearbeitung und verschiedenen Sicherheitsfunktionen wie Verschlüsselung und Kennwortschutz. Mithilfe dieser Ressource können Entwickler mithilfe von Aspose.Words Dokumentverarbeitungsfunktionen effizient in ihre Python-Anwendungen implementieren, wodurch die Produktivität gesteigert und die Dokumentsicherheit gewährleistet wird. 
 {{% /alert %}}
 
 Dies sind Links zu einigen nützlichen Ressourcen:

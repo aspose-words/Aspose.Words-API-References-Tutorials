@@ -2,7 +2,7 @@
 title: 获取表格周围文本之间的距离
 linktitle: 获取表格周围文本之间的距离
 second_title: Aspose.Words 文档处理 API
-description: 了解如何使用 Aspose.Words for .NET 检索 Word 文档中表格与周围文本之间的距离。使用本指南改善文档布局。
+description: 了解如何使用 Aspose.Words for .NET 检索 Word 文档中表格与周围文本之间的距离。使用本指南改善您的文档布局。
 type: docs
 weight: 10
 url: /zh/net/programming-with-table-styles-and-formatting/get-distance-between-table-surrounding-text/
@@ -83,7 +83,7 @@ Console.WriteLine("Distance from Left: " + table.DistanceLeft);
 ## 常见问题解答
 
 ### 我可以通过编程调整距离吗？
-是的，您可以使用 Aspose.Words 通过设置以编程方式调整距离`DistanceTop`, `DistanceBottom`, `DistanceRight`， 和`DistanceLeft`的属性`Table`目的。
+是的，您可以使用 Aspose.Words 通过设置`DistanceTop`, `DistanceBottom`, `DistanceRight`， 和`DistanceLeft`的属性`Table`目的。
 
 ### 如果我的文档有多个表格怎么办？
 您可以循环遍历文档的子节点，并将相同的方法应用于每个表。使用`GetChildNodes(NodeType.Table, true)`获取所有表格。

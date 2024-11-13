@@ -1,13 +1,13 @@
 ---
 title: Verwalten von Dokumentabschnitten und Layout
 linktitle: Verwalten von Dokumentabschnitten und Layout
-second_title: Aspose.Words Python-API zur Dokumentenverwaltung
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
 description: Erfahren Sie, wie Sie Dokumentabschnitte und -layouts mit Aspose.Words für Python verwalten. Erstellen und ändern Sie Abschnitte, passen Sie Layouts an und mehr. Jetzt loslegen!
 type: docs
 weight: 24
 url: /de/python-net/document-structure-and-content-manipulation/document-sections/
 ---
-Im Bereich der Dokumentbearbeitung ist Aspose.Words für Python ein leistungsstarkes Tool zur mühelosen Verwaltung von Dokumentabschnitten und -layouts. Dieses Tutorial führt Sie durch die wesentlichen Schritte der Verwendung der Aspose.Words Python-API zur Bearbeitung von Dokumentabschnitten, Änderung von Layouts und Verbesserung Ihres Dokumentverarbeitungs-Workflows.
+Im Bereich der Dokumentbearbeitung ist Aspose.Words für Python ein leistungsstarkes Tool zur mühelosen Verwaltung von Dokumentabschnitten und -layouts. Dieses Tutorial führt Sie durch die wesentlichen Schritte der Verwendung der Aspose.Words Python-API, um Dokumentabschnitte zu bearbeiten, Layouts zu ändern und Ihren Dokumentverarbeitungs-Workflow zu verbessern.
 
 ## Einführung in die Aspose.Words Python-Bibliothek
 
@@ -89,14 +89,14 @@ Weitere Informationen und detaillierte API-Referenzen finden Sie im[Aspose.Words
 ### Wie kann ich Aspose.Words für Python installieren?
  Sie können Aspose.Words für Python mit pip installieren. Führen Sie einfach aus`pip install aspose-words` in Ihrem Terminal.
 
-### Kann ich innerhalb eines einzelnen Dokuments unterschiedliche Layouts anwenden?
+### Kann ich innerhalb eines Dokuments unterschiedliche Layouts anwenden?
 Ja, Sie können in einem Dokument mehrere Abschnitte mit jeweils eigenen Layouteinstellungen haben. So können Sie je nach Bedarf verschiedene Layouts anwenden.
 
 ### Ist Aspose.Words mit verschiedenen Word-Formaten kompatibel?
 Ja, Aspose.Words unterstützt verschiedene Word-Formate, darunter DOC, DOCX, RTF und mehr.
 
 ### Wie füge ich Kopf- oder Fußzeilen Bilder hinzu?
- Sie können die`Shape` Klasse zum Hinzufügen von Bildern zu Kopf- oder Fußzeilen. Detaillierte Anleitungen finden Sie in der API-Dokumentation.
+ Sie können die`Shape` Klasse zum Hinzufügen von Bildern zu Kopf- oder Fußzeilen. Ausführliche Anleitungen finden Sie in der API-Dokumentation.
 
 ### Wo kann ich die neueste Version von Aspose.Words für Python herunterladen?
  Sie können die neueste Version von Aspose.Words für Python herunterladen von der[Aspose.Words veröffentlicht Seite](https://releases.aspose.com/words/python/).

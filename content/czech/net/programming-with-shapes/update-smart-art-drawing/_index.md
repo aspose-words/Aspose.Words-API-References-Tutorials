@@ -75,12 +75,12 @@ foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))
 Proč je tento krok důležitý:
 Identifikace tvarů Smart Art zajišťuje, že se pokusíte aktualizovat pouze grafiku, která to skutečně vyžaduje, a vyhnete se tak zbytečným operacím.
 
-## 3. Aktualizujte Smart Art kresby
+## 3. Aktualizujte Smart Art Kresby
 
 Nadpis: Aktualizujte grafiku Smart Art Graphics
 
 Vysvětlení:
- The`UpdateSmartArtDrawing` metoda obnoví grafiku Smart Art a zajistí, že bude odrážet jakékoli změny v datech nebo rozvržení dokumentu. Tato metoda musí být vyvolána u každého tvaru Smart Art identifikovaného v předchozím kroku.
+The`UpdateSmartArtDrawing` metoda obnoví grafiku Smart Art a zajistí, že bude odrážet jakékoli změny v datech nebo rozvržení dokumentu. Tato metoda musí být vyvolána u každého tvaru Smart Art identifikovaného v předchozím kroku.
 
 ```csharp
 // Aktualizujte kresbu Smart Art pro každý tvar Smart Art

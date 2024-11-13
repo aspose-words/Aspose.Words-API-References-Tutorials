@@ -22,7 +22,7 @@ Bevor wir beginnen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
 
 ## Namespaces importieren
 
-Als Erstes importieren wir die erforderlichen Namespaces. So stellen wir sicher, dass wir alle erforderlichen Tools zur Hand haben.
+Als Erstes importieren wir die erforderlichen Namespaces. So stellen wir sicher, dass wir alle benötigten Tools zur Hand haben.
 
 ```csharp
 using System;
@@ -30,7 +30,7 @@ using Aspose.Words;
 using Aspose.Words.Importing;
 ```
 
-Lassen Sie uns das Beispiel in einzelne Schritte aufschlüsseln.
+Lassen Sie uns das Beispiel in detaillierte Schritte aufteilen.
 
 ## Schritt 1: Laden Sie das Dokument und initialisieren Sie die Variablen
 

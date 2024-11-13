@@ -1,7 +1,7 @@
 ---
 title: Verwalten digitaler Signaturen und Authentizität
 linktitle: Verwalten digitaler Signaturen und Authentizität
-second_title: Aspose.Words Python-API zur Dokumentenverwaltung
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für Python digitale Signaturen verwalten und die Authentizität von Dokumenten sicherstellen. Schritt-für-Schritt-Anleitung mit Quellcode.
 type: docs
 weight: 17
@@ -111,4 +111,4 @@ Aspose.Words unterstützt X.509-Zertifikate, einschließlich PFX-Dateien, die h�
 
 ### Sind digitale Signaturen rechtsgültig?
 
-Ja, digitale Signaturen sind in vielen Ländern rechtsgültig und werden oft als handschriftliche Unterschriften gleichwertig angesehen.
+Ja, digitale Signaturen sind in vielen Ländern rechtsgültig und werden oft als handschriftlichen Unterschriften gleichwertig angesehen.

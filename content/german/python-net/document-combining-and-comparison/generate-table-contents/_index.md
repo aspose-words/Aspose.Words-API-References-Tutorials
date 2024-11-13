@@ -1,7 +1,7 @@
 ---
 title: Erstellen eines umfassenden Inhaltsverzeichnisses für Word-Dokumente
 linktitle: Erstellen eines umfassenden Inhaltsverzeichnisses für Word-Dokumente
-second_title: Aspose.Words Python-API zur Dokumentenverwaltung
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
 description: Erstellen Sie mit Aspose.Words für Python ein leserfreundliches Inhaltsverzeichnis. Erfahren Sie, wie Sie die Struktur Ihres Dokuments nahtlos generieren, anpassen und aktualisieren.
 type: docs
 weight: 15
@@ -126,7 +126,7 @@ for entry in toc_body.get_child_nodes(asposewords.NodeType.PARAGRAPH, False):
 
 ## Abschluss
 
-Das Erstellen eines umfassenden Inhaltsverzeichnisses mit Aspose.Words für Python kann die Benutzerfreundlichkeit Ihrer Dokumente erheblich verbessern. Indem Sie diese Schritte befolgen, können Sie die Navigation in Dokumenten verbessern, schnellen Zugriff auf wichtige Abschnitte ermöglichen und Ihre Inhalte übersichtlicher und leserfreundlicher präsentieren.
+Das Erstellen eines umfassenden Inhaltsverzeichnisses mit Aspose.Words für Python kann die Benutzerfreundlichkeit Ihrer Dokumente erheblich verbessern. Indem Sie diese Schritte befolgen, können Sie die Navigation in Dokumenten verbessern, schnellen Zugriff auf wichtige Abschnitte ermöglichen und Ihre Inhalte besser organisiert und leserfreundlicher präsentieren.
 
 ## Häufig gestellte Fragen
 
@@ -140,8 +140,8 @@ Auf jeden Fall! Passen Sie den Stil „Inhaltsverzeichniseinträge“ an, indem 
 
 ### Ist es möglich, für bestehende Dokumente ein Inhaltsverzeichnis zu generieren?
 
-Ja, Sie können ein Inhaltsverzeichnis für vorhandene Dokumente generieren. Laden Sie das Dokument einfach mit Aspose.Words, befolgen Sie die in diesem Tutorial beschriebenen Schritte und aktualisieren Sie das Inhaltsverzeichnis nach Bedarf.
+Ja, Sie können ein Inhaltsverzeichnis für vorhandene Dokumente generieren. Laden Sie das Dokument einfach mit Aspose.Words, folgen Sie den in diesem Tutorial beschriebenen Schritten und aktualisieren Sie das Inhaltsverzeichnis nach Bedarf.
 
 ### Wie entferne ich das Inhaltsverzeichnis aus meinem Dokument?
 
-Wenn Sie das Inhaltsverzeichnis entfernen möchten, löschen Sie einfach den Abschnitt mit dem Inhaltsverzeichnis. Vergessen Sie nicht, die restlichen Seitenzahlen entsprechend den Änderungen zu aktualisieren.
+Wenn Sie das Inhaltsverzeichnis entfernen möchten, löschen Sie einfach den Abschnitt mit dem Inhaltsverzeichnis. Vergessen Sie nicht, die verbleibenden Seitenzahlen entsprechend den Änderungen zu aktualisieren.

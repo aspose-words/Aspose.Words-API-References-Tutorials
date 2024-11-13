@@ -1,6 +1,6 @@
 ---
 title: Vergleichen von Dokumenten in Aspose.Words für Java
-linktitle: Dokumente vergleichen
+linktitle: Vergleichen von Dokumenten
 second_title: Aspose.Words Java-API zur Dokumentverarbeitung
 description: Erfahren Sie, wie Sie Dokumente in Aspose.Words für Java vergleichen, einer leistungsstarken Java-Bibliothek für effiziente Dokumentanalyse.
 type: docs
@@ -14,11 +14,11 @@ Beim Dokumentenvergleich werden zwei Dokumente analysiert und Unterschiede ident
 
 ## Einrichten Ihrer Umgebung
 
- Bevor wir uns in den Dokumentenvergleich vertiefen, stellen Sie sicher, dass Sie Aspose.Words für Java installiert haben. Sie können die Bibliothek von der[Aspose.Words für Java-Versionen](https://releases.aspose.com/words/java/) Seite. Nach dem Download fügen Sie es in Ihr Java-Projekt ein.
+ Bevor wir uns in den Dokumentenvergleich vertiefen, stellen Sie sicher, dass Sie Aspose.Words für Java installiert haben. Sie können die Bibliothek von der[Aspose.Words für Java-Versionen](https://releases.aspose.com/words/java/) Seite. Sobald es heruntergeladen ist, fügen Sie es in Ihr Java-Projekt ein.
 
 ## Grundlegender Dokumentenvergleich
 
- Beginnen wir mit den Grundlagen des Dokumentenvergleichs. Wir verwenden zwei Dokumente,`docA`Und`docB`, und vergleichen Sie sie.
+ Beginnen wir mit den Grundlagen des Dokumentenvergleichs. Wir verwenden zwei Dokumente,`docA` Und`docB`, und vergleichen Sie sie.
 
 ```java
 Document docA = new Document("Your Directory Path" + "Document.docx");
@@ -27,7 +27,7 @@ docA.compare(docB, "user", new Date());
 System.out.println(docA.getRevisions().getCount() == 0 ? "Documents are equal" : "Documents are not equal");
 ```
 
-In diesem Codeausschnitt laden wir zwei Dokumente,`docA`Und`docB` und verwenden Sie dann die`compare` Methode, um sie zu vergleichen. Wir geben den Autor als „Benutzer“ an und der Vergleich wird durchgeführt. Abschließend prüfen wir, ob es Revisionen gibt, die auf Unterschiede zwischen den Dokumenten hinweisen.
+In diesem Codeausschnitt laden wir zwei Dokumente,`docA` Und`docB` und verwenden Sie dann die`compare` Methode, um sie zu vergleichen. Wir geben den Autor als „Benutzer“ an und der Vergleich wird durchgeführt. Abschließend prüfen wir, ob es Revisionen gibt, die auf Unterschiede zwischen den Dokumenten hinweisen.
 
 ## Anpassen des Vergleichs mit Optionen
 
@@ -109,7 +109,7 @@ Ja, Aspose.Words für Java bietet Optionen zum Vergleichen von Dokumenten mit ko
 
 Auf jeden Fall. Dank der Dokumentvergleichsfunktionen von Aspose.Words für Java eignet es sich gut für Dokumentenverwaltungssysteme, bei denen Versionskontrolle und Änderungsverfolgung von entscheidender Bedeutung sind.
 
-### Gibt es Einschränkungen beim Dokumentvergleich in Aspose.Words für Java?
+### Gibt es irgendwelche Einschränkungen beim Dokumentvergleich in Aspose.Words für Java?
 
 Obwohl Aspose.Words für Java umfangreiche Funktionen zum Dokumentvergleich bietet, ist es wichtig, die Dokumentation zu überprüfen und sicherzustellen, dass sie Ihren spezifischen Anforderungen entspricht.
 

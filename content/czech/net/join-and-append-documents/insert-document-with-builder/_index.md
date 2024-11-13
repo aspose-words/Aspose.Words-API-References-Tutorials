@@ -54,7 +54,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 
 ## Krok 3: Vytvoření objektu DocumentBuilder
 
- The`DocumentBuilder` class je mocný nástroj v knihovně Aspose.Words. Umožňuje nám procházet a manipulovat s dokumentem.
+The`DocumentBuilder` class je mocný nástroj v knihovně Aspose.Words. Umožňuje nám procházet a manipulovat s dokumentem.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(dstDoc);
@@ -104,7 +104,7 @@ Uložením dokumentu dokončíme proces sloučení obou dokumentů. Váš nový 
 
 ## Závěr
 
-A tady to máte! Úspěšně jste vložili jeden dokument do druhého pomocí Aspose.Words for .NET. Tato metoda je nejen efektivní, ale také zachovává formátování obou dokumentů a zajišťuje bezproblémové sloučení. Ať už pracujete na jednorázovém projektu nebo potřebujete automatizovat zpracování dokumentů, Aspose.Words pro .NET vám pomůže.
+tady to máte! Úspěšně jste vložili jeden dokument do druhého pomocí Aspose.Words for .NET. Tato metoda je nejen efektivní, ale také zachovává formátování obou dokumentů a zajišťuje bezproblémové sloučení. Ať už pracujete na jednorázovém projektu nebo potřebujete automatizovat zpracování dokumentů, Aspose.Words pro .NET vám pomůže.
 
 ## FAQ
 
@@ -121,4 +121,4 @@ Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vyt
 Absolutně! Popsaný způsob může být začleněn do větších aplikací pro automatizaci úloh zpracování dokumentů.
 
 ### Kde najdu další zdroje a podporu?  
-Pro více informací můžete zkontrolovat[dokumentace](https://reference.aspose.com/words/net/) nebo navštivte[fórum podpory](https://forum.aspose.com/c/words/8) o pomoc.
+ Pro více informací můžete zkontrolovat[dokumentace](https://reference.aspose.com/words/net/) nebo navštivte[fórum podpory](https://forum.aspose.com/c/words/8) o pomoc.

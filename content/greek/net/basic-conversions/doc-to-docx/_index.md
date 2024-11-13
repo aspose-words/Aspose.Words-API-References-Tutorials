@@ -42,7 +42,7 @@ Document doc = new Document(dataDir + "Document.doc");
 
 Στη συνέχεια, αποθηκεύστε το φορτωμένο έγγραφο σε μορφή DOCX:
 ```csharp
-// Αποθηκεύστε το έγγραφο ως DOCX
+//Αποθηκεύστε το έγγραφο ως DOCX
 doc.Save(dataDir + "ConvertedDocument.docx", SaveFormat.Docx);
 ```
 

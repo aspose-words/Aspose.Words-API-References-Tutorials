@@ -55,7 +55,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Βήμα 2: Αρχικοποιήστε το Document και το DocumentBuilder
 
- Στη συνέχεια, πρέπει να δημιουργήσετε ένα νέο έγγραφο του Word και να αρχικοποιήσετε το`DocumentBuilder`τάξη, η οποία βοηθά στη δημιουργία του εγγράφου.
+ Στη συνέχεια, πρέπει να δημιουργήσετε ένα νέο έγγραφο του Word και να αρχικοποιήσετε το`DocumentBuilder` τάξη, η οποία βοηθά στη δημιουργία του εγγράφου.
 
 Δημιουργία νέου εγγράφου
 
@@ -64,7 +64,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-- `Document doc = new Document();` δημιουργεί ένα νέο έγγραφο του Word.
+- `Document doc = new Document();`δημιουργεί ένα νέο έγγραφο του Word.
 - `DocumentBuilder builder = new DocumentBuilder(doc);` αρχικοποιεί το DocumentBuilder με το δημιουργημένο έγγραφο.
 
 ## Βήμα 3: Ενεργοποιήστε το Snap to Grid για παραγράφους
@@ -104,7 +104,7 @@ builder.Writeln("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 par.Runs[0].Font.SnapToGrid = true;
 ```
 
-- `par.Runs[0].Font.SnapToGrid = true;`διασφαλίζει ότι η γραμματοσειρά που χρησιμοποιείται στην παράγραφο ευθυγραμμίζεται με το πλέγμα.
+- `par.Runs[0].Font.SnapToGrid = true;` διασφαλίζει ότι η γραμματοσειρά που χρησιμοποιείται στην παράγραφο ευθυγραμμίζεται με το πλέγμα.
 
 ## Βήμα 6: Αποθηκεύστε το έγγραφο
 
@@ -137,4 +137,4 @@ doc.Save(dataDir + "Paragraph.SnapToGrid.docx");
 Όχι, η ενεργοποίηση του Snap to Grid δεν επηρεάζει σημαντικά την απόδοση του εγγράφου.
 
 ### Πού μπορώ να βρω περισσότερες πληροφορίες για το Aspose.Words για .NET;
- Επισκεφθείτε το[απόδειξη με έγγραφα](https://reference.aspose.com/words/net/)για λεπτομερείς πληροφορίες και παραδείγματα.
+ Επισκεφθείτε το[απόδειξη με έγγραφα](https://reference.aspose.com/words/net/) για λεπτομερείς πληροφορίες και παραδείγματα.

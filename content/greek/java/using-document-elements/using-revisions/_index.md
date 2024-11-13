@@ -91,7 +91,7 @@ Paragraph para = body.getFirstParagraph();
 para.appendChild(new Run(doc, "Paragraph 1. "));
 body.appendParagraph("Paragraph 2. ");
 body.appendParagraph("Paragraph 3. ");
-//Έχουμε τρεις παραγράφους, καμία από τις οποίες δεν έχει καταχωρηθεί ως οποιοδήποτε είδος αναθεώρησης
+// Έχουμε τρεις παραγράφους, καμία από τις οποίες δεν έχει καταχωρηθεί ως οποιοδήποτε είδος αναθεώρησης
 // Εάν προσθέσουμε/αφαιρέσουμε οποιοδήποτε περιεχόμενο στο έγγραφο κατά την παρακολούθηση των αναθεωρήσεων,
 // θα εμφανίζονται ως τέτοια στο έγγραφο και μπορούν να γίνουν αποδεκτά/απορριφθέντα.
 doc.startTrackRevisions("John Doe", new Date());
@@ -112,7 +112,7 @@ doc.acceptAllRevisions();
 Assert.assertEquals(3, paragraphs.getCount());
 Assert.assertEquals(para.getRuns().getCount(), 0); //ήταν Is.Empty
 // Η διακοπή της παρακολούθησης των αναθεωρήσεων κάνει αυτό το κείμενο να εμφανίζεται ως κανονικό κείμενο.
-// Οι αναθεωρήσεις δεν υπολογίζονται όταν αλλάζει το έγγραφο.
+//Οι αναθεωρήσεις δεν υπολογίζονται όταν αλλάζει το έγγραφο.
 doc.stopTrackRevisions();
 // Αποθηκεύστε το έγγραφο.
 doc.save(outPath + "WorkingWithRevisions.AcceptRevisions.docx");

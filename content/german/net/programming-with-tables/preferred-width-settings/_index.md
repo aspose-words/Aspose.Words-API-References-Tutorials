@@ -53,14 +53,13 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Hier geben Sie das Verzeichnis an, in dem das Dokument gespeichert wird und initialisieren den`Document`Und`DocumentBuilder` Objekte.
+ Hier geben Sie das Verzeichnis an, in dem das Dokument gespeichert wird und initialisieren den`Document` Und`DocumentBuilder` Objekte.
 
 ## Schritt 2: Einfügen der ersten Tabellenzelle mit absoluter Breite
 
 Fügen Sie die erste Zelle mit einer festen Breite von 40 Punkt in die Tabelle ein. Dadurch wird sichergestellt, dass diese Zelle unabhängig von der Tabellengröße immer eine Breite von 40 Punkt beibehält.
 
 ```csharp
-
 // Fügen Sie eine Zelle mit absoluter Größe ein.
 builder.InsertCell();
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPoints(40);
@@ -68,7 +67,7 @@ builder.CellFormat.Shading.BackgroundPatternColor = Color.LightYellow;
 builder.Writeln("Cell at 40 points width");
 ```
 
-In diesem Schritt beginnen Sie mit der Erstellung der Tabelle und fügen eine Zelle mit absoluter Breite ein. Die`PreferredWidth.FromPoints(40)` Die Methode setzt die Breite der Zelle auf 40 Punkte und`Shading.BackgroundPatternColor` wendet eine hellgelbe Hintergrundfarbe an.
+In diesem Schritt beginnen Sie mit dem Erstellen der Tabelle und fügen eine Zelle mit absoluter Breite ein. Die`PreferredWidth.FromPoints(40)` Die Methode setzt die Breite der Zelle auf 40 Punkte und`Shading.BackgroundPatternColor` wendet eine hellgelbe Hintergrundfarbe an.
 
 ## Schritt 3: Einfügen einer Zelle mit relativer Größe
 
@@ -97,7 +96,7 @@ builder.Writeln("Cell automatically sized. The size of this cell is calculated f
 builder.Writeln("In this case the cell will fill up the rest of the available space.");
 ```
 
- Der`PreferredWidth.Auto` Mit dieser Einstellung kann diese Zelle je nach dem verbleibenden Platz nach Berücksichtigung der anderen Zellen erweitert oder verkleinert werden. Dadurch wird sichergestellt, dass das Tabellenlayout ausgewogen und professionell aussieht.
+Der`PreferredWidth.Auto` Mit dieser Einstellung kann diese Zelle je nach dem verbleibenden Platz nach Berücksichtigung der anderen Zellen erweitert oder verkleinert werden. Dadurch wird sichergestellt, dass das Tabellenlayout ausgewogen und professionell aussieht.
 
 ## Schritt 5: Dokument fertigstellen und speichern
 
@@ -108,18 +107,18 @@ Wenn Sie alle Zellen eingefügt haben, vervollständigen Sie die Tabelle und spe
 doc.Save(dataDir + "WorkingWithTables.PreferredWidthSettings.docx");
 ```
 
-Dieser Schritt finalisiert die Tabelle und speichert das Dokument unter dem Dateinamen „WorkingWithTables.PreferredWidthSettings.docx“ in Ihrem angegebenen Verzeichnis.
+Dieser Schritt finalisiert die Tabelle und speichert das Dokument unter dem Dateinamen „WorkingWithTables.PreferredWidthSettings.docx“ im von Ihnen angegebenen Verzeichnis.
 
 ## Abschluss
 
-Das Erstellen von Tabellen mit bevorzugten Breiteneinstellungen in Aspose.Words für .NET ist unkompliziert, wenn Sie die verschiedenen verfügbaren Größenoptionen kennen. Unabhängig davon, ob Sie feste, relative oder automatische Zellenbreiten benötigen, bietet Aspose.Words die Flexibilität, verschiedene Tabellenlayout-Szenarien effizient zu handhaben. Indem Sie die in diesem Handbuch beschriebenen Schritte befolgen, können Sie sicherstellen, dass Ihre Tabellen in Ihren Word-Dokumenten gut strukturiert und optisch ansprechend sind.
+Das Erstellen von Tabellen mit bevorzugten Breiteneinstellungen in Aspose.Words für .NET ist unkompliziert, wenn Sie die verschiedenen verfügbaren Größenoptionen verstanden haben. Unabhängig davon, ob Sie feste, relative oder automatische Zellenbreiten benötigen, bietet Aspose.Words die Flexibilität, verschiedene Tabellenlayout-Szenarien effizient zu handhaben. Indem Sie die in diesem Handbuch beschriebenen Schritte befolgen, können Sie sicherstellen, dass Ihre Tabellen in Ihren Word-Dokumenten gut strukturiert und optisch ansprechend sind.
 
 ## Häufig gestellte Fragen
 
 ### Was ist der Unterschied zwischen absoluter und relativer Zellenbreite?
 Absolute Zellenbreiten sind fest und ändern sich nicht, während relative Breiten basierend auf der Gesamtbreite der Tabelle angepasst werden.
 
-### Kann ich negative Prozentsätze für relative Breiten verwenden?
+### Kann ich für relative Breiten negative Prozentsätze verwenden?
 Nein, negative Prozentwerte sind für die Zellenbreite nicht gültig. Nur positive Prozentwerte sind zulässig.
 
 ### Wie funktioniert die automatische Größenanpassung?

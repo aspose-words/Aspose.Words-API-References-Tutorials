@@ -29,7 +29,7 @@ Bevor Sie mit dem Zusammenführen von Dokumenten beginnen, stellen Sie sicher, d
 Um Dokumente zusammenzuführen, müssen wir ein neues Dokument erstellen, in das wir unseren Inhalt einfügen. So können Sie das tun:
 
 ```java
-// Initialisieren Sie das Document-Objekt
+// Initialisieren Sie das Dokumentobjekt
 Document doc = new Document();
 
 // Initialisieren des DocumentBuilder

@@ -47,7 +47,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## चरण 2: वर्ड दस्तावेज़ लोड करें
 
- इसके बाद, चलिए उस Word दस्तावेज़ को लोड करते हैं जिसे आप HTML में बदलना चाहते हैं। इस ट्यूटोरियल के लिए, हम नाम के एक दस्तावेज़ का उपयोग करेंगे`Rendering.docx`.
+ अब, चलिए उस Word दस्तावेज़ को लोड करते हैं जिसे आप HTML में बदलना चाहते हैं। इस ट्यूटोरियल के लिए, हम नाम के एक दस्तावेज़ का उपयोग करेंगे`Rendering.docx`.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");

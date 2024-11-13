@@ -83,7 +83,7 @@ Und da haben Sie es! Sie haben gerade gelernt, wie Sie mit Aspose.Words für .NE
 
 ### Kann ich bestimmte Bilder in einer PDF selektiv überspringen?
 
- Nein, die`SkipPdfImages` überspringt alle Bilder im PDF. Wenn Sie eine selektive Kontrolle benötigen, sollten Sie eine Vorverarbeitung des PDF in Betracht ziehen.
+ Nein, die`SkipPdfImages` Mit dieser Option werden alle Bilder im PDF übersprungen. Wenn Sie eine selektive Kontrolle benötigen, sollten Sie eine Vorverarbeitung des PDF in Betracht ziehen.
 
 ### Hat diese Funktion Auswirkungen auf den Text im PDF?
 
@@ -91,7 +91,7 @@ Nein, das Überspringen von Bildern wirkt sich nur auf die Bilder aus. Der Text 
 
 ### Kann ich diese Funktion mit anderen Dokumentformaten verwenden?
 
- Der`SkipPdfImages` ist speziell für PDF-Dokumente. Für andere Formate stehen andere Optionen und Methoden zur Verfügung.
+Der`SkipPdfImages` ist speziell für PDF-Dokumente. Für andere Formate stehen andere Optionen und Methoden zur Verfügung.
 
 ### Wie kann ich überprüfen, ob Bilder übersprungen wurden?
 

@@ -49,7 +49,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Schritt 3: HTML-Speicheroptionen konfigurieren
 
-Jetzt passiert die Magie. Wir müssen die HTML-Speicheroptionen einrichten und insbesondere die Eigenschaft ExportRoundtripInformation aktivieren. Dadurch wird sichergestellt, dass alle Roundtrip-Informationen während der Konvertierung erhalten bleiben.
+Und jetzt geschieht die Magie. Wir müssen die HTML-Speicheroptionen einrichten und insbesondere die Eigenschaft ExportRoundtripInformation aktivieren. Dadurch wird sichergestellt, dass alle Roundtrip-Informationen während der Konvertierung erhalten bleiben.
 
 ```csharp
 HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportRoundtripInformation = true };
@@ -57,7 +57,7 @@ HtmlSaveOptions saveOptions = new HtmlSaveOptions { ExportRoundtripInformation =
 
 ## Schritt 4: Speichern Sie das Dokument als HTML
 
-Speichern Sie das Dokument abschließend mit den konfigurierten Speicheroptionen als HTML-Datei. Mit diesem Schritt wird sichergestellt, dass das Dokument bei der Konvertierung in HTML und zurück nach Word alle Formatierungen und Daten behält.
+Speichern Sie das Dokument abschließend als HTML-Datei mit den konfigurierten Speicheroptionen. Dieser Schritt stellt sicher, dass das Dokument bei der Konvertierung in HTML und zurück nach Word alle Formatierungen und Daten behält.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ExportRoundtripInformation.html", saveOptions);

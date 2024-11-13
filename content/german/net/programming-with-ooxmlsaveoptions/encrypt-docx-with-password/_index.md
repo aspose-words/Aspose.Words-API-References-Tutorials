@@ -9,7 +9,7 @@ url: /de/net/programming-with-ooxmlsaveoptions/encrypt-docx-with-password/
 ---
 ## Einführung
 
-Im heutigen digitalen Zeitalter ist die Sicherung vertraulicher Informationen wichtiger denn je. Ob persönliche Dokumente, Geschäftsdateien oder akademische Arbeiten – der Schutz Ihrer Word-Dokumente vor unbefugtem Zugriff ist von entscheidender Bedeutung. Hier kommt die Verschlüsselung ins Spiel. Indem Sie Ihre DOCX-Dateien mit einem Kennwort verschlüsseln, können Sie sicherstellen, dass nur Personen mit dem richtigen Kennwort Ihre Dokumente öffnen und lesen können. In diesem Tutorial führen wir Sie durch den Prozess der Verschlüsselung einer DOCX-Datei mit Aspose.Words für .NET. Machen Sie sich keine Sorgen, wenn Sie neu darin sind – unsere Schritt-für-Schritt-Anleitung macht es Ihnen leicht, den Schritten zu folgen und Ihre Dateien im Handumdrehen zu sichern.
+Im heutigen digitalen Zeitalter ist der Schutz vertraulicher Informationen wichtiger denn je. Ob persönliche Dokumente, Geschäftsdateien oder akademische Arbeiten: Der Schutz Ihrer Word-Dokumente vor unbefugtem Zugriff ist von entscheidender Bedeutung. Hier kommt die Verschlüsselung ins Spiel. Indem Sie Ihre DOCX-Dateien mit einem Kennwort verschlüsseln, können Sie sicherstellen, dass nur Personen mit dem richtigen Kennwort Ihre Dokumente öffnen und lesen können. In diesem Tutorial führen wir Sie durch den Prozess der Verschlüsselung einer DOCX-Datei mit Aspose.Words für .NET. Machen Sie sich keine Sorgen, wenn Sie neu darin sind – unsere Schritt-für-Schritt-Anleitung macht es Ihnen leicht, den Schritten zu folgen und Ihre Dateien im Handumdrehen zu sichern.
 
 ## Voraussetzungen
 
@@ -54,7 +54,7 @@ Als nächstes müssen wir die Optionen zum Speichern des Dokuments einrichten. H
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions { Password = "password" };
 ```
 
- Der`OoxmlSaveOptions`Klasse können wir verschiedene Optionen zum Speichern von DOCX-Dateien angeben. Hier setzen wir die`Password`Eigentum an`"password"` . Sie können ersetzen`"password"` mit einem beliebigen Passwort Ihrer Wahl. Dieses Passwort wird zum Öffnen der verschlüsselten DOCX-Datei benötigt.
+Der`OoxmlSaveOptions`Klasse können wir verschiedene Optionen zum Speichern von DOCX-Dateien angeben. Hier setzen wir die`Password`Eigentum an`"password"` . Sie können ersetzen`"password"` mit einem beliebigen Passwort Ihrer Wahl. Dieses Passwort wird zum Öffnen der verschlüsselten DOCX-Datei benötigt.
 
 ## Schritt 3: Speichern Sie das verschlüsselte Dokument
 
@@ -65,7 +65,7 @@ Abschließend speichern wir das Dokument mit den im vorherigen Schritt konfiguri
 doc.Save(dataDir + "WorkingWithOoxmlSaveOptions.EncryptDocxWithPassword.docx", saveOptions);
 ```
 
- Der`Save` Methode der`Document` Klasse wird zum Speichern des Dokuments verwendet. Wir geben den Pfad und den Dateinamen für das verschlüsselte Dokument an, zusammen mit der`saveOptions` wir zuvor konfiguriert haben. Das Dokument wird nun als verschlüsselte DOCX-Datei gespeichert.
+Der`Save` Methode der`Document` Klasse wird zum Speichern des Dokuments verwendet. Wir geben den Pfad und den Dateinamen für das verschlüsselte Dokument an, zusammen mit der`saveOptions` wir zuvor konfiguriert haben. Das Dokument wird nun als verschlüsselte DOCX-Datei gespeichert.
 
 ## Abschluss
 

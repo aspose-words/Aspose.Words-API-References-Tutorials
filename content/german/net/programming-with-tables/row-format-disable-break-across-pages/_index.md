@@ -47,7 +47,7 @@ Greifen Sie auf die erste Tabelle im Dokument zu. Dabei wird davon ausgegangen, 
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 ```
 
-## Schritt 3: Seitenumbruch für alle Zeilen deaktivieren
+## Schritt 3: Seitenumbrüche für alle Zeilen deaktivieren
 
  Durchlaufen Sie jede Zeile in der Tabelle und legen Sie den`AllowBreakAcrossPages`Eigentum an`false`. Dadurch wird sichergestellt, dass die Zeilen nicht über mehrere Seiten hinweg umbrochen werden.
 

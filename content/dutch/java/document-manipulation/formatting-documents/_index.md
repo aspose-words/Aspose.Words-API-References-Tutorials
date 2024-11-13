@@ -1,8 +1,8 @@
 ---
 title: Documenten opmaken in Aspose.Words voor Java
 linktitle: Documenten opmaken
-second_title: Aspose.Words Java-documentverwerkings-API
-description: Leer de kunst van het opmaken van documenten in Aspose.Words voor Java met onze uitgebreide handleiding. Ontdek krachtige functies en verbeter uw vaardigheden op het gebied van documentverwerking.
+second_title: Aspose.Words Java Documentverwerkings-API
+description: Leer de kunst van het formatteren van documenten in Aspose.Words voor Java met onze uitgebreide gids. Ontdek krachtige functies en verbeter uw vaardigheden in documentverwerking.
 type: docs
 weight: 29
 url: /nl/java/document-manipulation/formatting-documents/
@@ -10,11 +10,11 @@ url: /nl/java/document-manipulation/formatting-documents/
 
 ## Inleiding tot het opmaken van documenten in Aspose.Words voor Java
 
-In de wereld van Java-documentverwerking staat Aspose.Words voor Java als een robuust en veelzijdig hulpmiddel. Of u nu werkt aan het genereren van rapporten, het maken van facturen of het maken van complexe documenten, Aspose.Words voor Java heeft de oplossing voor u. In deze uitgebreide handleiding verdiepen we ons in de kunst van het opmaken van documenten met behulp van deze krachtige Java API. Laten we deze reis stap voor stap beginnen.
+In de wereld van Java-documentverwerking is Aspose.Words voor Java een robuuste en veelzijdige tool. Of u nu werkt aan het genereren van rapporten, het opstellen van facturen of het maken van complexe documenten, Aspose.Words voor Java heeft u gedekt. In deze uitgebreide gids duiken we in de kunst van het formatteren van documenten met behulp van deze krachtige Java API. Laten we deze reis stap voor stap beginnen.
 
 ## Uw omgeving instellen
 
- Voordat we ingaan op de fijne kneepjes van het opmaken van documenten, is het van cruciaal belang dat u uw omgeving inricht. Zorg ervoor dat Aspose.Words voor Java correct is geïnstalleerd en geconfigureerd in uw project. Je kunt het downloaden van[hier](https://releases.aspose.com/words/java/).
+ Voordat we ingaan op de complexiteit van het formatteren van documenten, is het cruciaal om uw omgeving in te stellen. Zorg ervoor dat u Aspose.Words voor Java correct hebt geïnstalleerd en geconfigureerd in uw project. U kunt het downloaden van[hier](https://releases.aspose.com/words/java/).
 
 ## Een eenvoudig document maken
 
@@ -27,9 +27,9 @@ builder.writeln("Hello, Aspose.Words for Java!");
 doc.save("MyDocument.docx");
 ```
 
-## De ruimte tussen Aziatische en Latijnse tekst aanpassen
+## Ruimte tussen Aziatische en Latijnse tekst aanpassen
 
-Aspose.Words voor Java biedt krachtige functies voor het omgaan met tekstafstand. U kunt de ruimte tussen Aziatische en Latijnse tekst automatisch aanpassen, zoals hieronder weergegeven:
+Aspose.Words voor Java biedt krachtige functies voor het verwerken van tekstafstand. U kunt automatisch de ruimte tussen Aziatische en Latijnse tekst aanpassen zoals hieronder weergegeven:
 
 ```java
 Document doc = new Document();
@@ -44,7 +44,7 @@ doc.save("SpaceBetweenAsianAndLatinText.docx");
 
 ## Werken met Aziatische typografie
 
-Bekijk het volgende codefragment om de instellingen voor Aziatische typografie te beheren:
+Om de instellingen voor Aziatische typografie te beheren, kunt u het volgende codefragment gebruiken:
 
 ```java
 Document doc = new Document("AsianTypography.docx");
@@ -72,16 +72,16 @@ builder.writeln("I'm another nice formatted paragraph. I'm intended to demonstra
 doc.save("ParagraphFormatting.docx");
 ```
 
-## Lijstopmaak op meerdere niveaus
+## Opmaak van meervoudige lijst
 
-Het maken van lijsten met meerdere niveaus is een veel voorkomende vereiste bij het formatteren van documenten. Aspose.Words voor Java vereenvoudigt deze taak:
+Het maken van multilevellijsten is een veelvoorkomende vereiste bij het formatteren van documenten. Aspose.Words voor Java vereenvoudigt deze taak:
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.getListFormat().applyNumberDefault();
 builder.writeln("Item 1");
-// Voeg hier meer artikelen toe...
+// Voeg hier meer items toe...
 doc.save("MultilevelListFormatting.docx");
 ```
 
@@ -97,9 +97,9 @@ builder.write("Hello, Styled Paragraph!");
 doc.save("ApplyParagraphStyle.docx");
 ```
 
-## Randen en arcering toevoegen aan alinea's
+## Randen en schaduw toevoegen aan alinea's
 
-Verbeter de visuele aantrekkingskracht van uw document door randen en arcering toe te voegen:
+Vergroot de visuele aantrekkingskracht van uw document door randen en schaduw toe te voegen:
 
 ```java
 Document doc = new Document();
@@ -112,9 +112,9 @@ builder.write("I'm a formatted paragraph with double border and nice shading.");
 doc.save("ApplyBordersAndShadingToParagraph.docx");
 ```
 
-## Aziatische alinea-afstand en inspringingen wijzigen
+## Wijzigen van Aziatische alinea-afstand en inspringingen
 
-Pas de alinea-afstand en inspringingen aan voor Aziatische tekst:
+Pas de alinea-afstand en inspringingen voor Aziatische tekst nauwkeurig aan:
 
 ```java
 Document doc = new Document("AsianTypography.docx");
@@ -127,9 +127,9 @@ format.setLineUnitAfter(10.0);
 doc.save("ChangeAsianParagraphSpacingAndIndents.docx");
 ```
 
-## Naar het raster snappen
+## Vastklikken op het raster
 
-Optimaliseer de lay-out bij het werken met Aziatische tekens door naar het raster te snappen:
+Optimaliseer de lay-out bij het werken met Aziatische tekens door deze op het raster vast te klikken:
 
 ```java
 Document doc = new Document();
@@ -141,9 +141,9 @@ par.getRuns().get(0).getFont().setSnapToGrid(true);
 doc.save("SnapToGrid.docx");
 ```
 
-## Alineastijlscheidingstekens detecteren
+## Het detecteren van scheidingstekens in alineastijlen
 
-Als u stijlscheidingstekens in uw document wilt vinden, kunt u de volgende code gebruiken:
+Als u stijlscheidingstekens in uw document nodig hebt, kunt u de volgende code gebruiken:
 
 ```java
 Document doc = new Document("Document.docx");
@@ -159,13 +159,13 @@ for (Paragraph paragraph : (Iterable<Paragraph>) doc.getChildNodes(NodeType.PARA
 
 ## Conclusie
 
- In dit artikel hebben we verschillende aspecten van het opmaken van documenten in Aspose.Words voor Java onderzocht. Gewapend met deze inzichten kunt u prachtig opgemaakte documenten maken voor uw Java-toepassingen. Vergeet niet te verwijzen naar de[Aspose.Words voor Java-documentatie](https://reference.aspose.com/words/java/) voor meer diepgaande begeleiding.
+ In dit artikel hebben we verschillende aspecten van het formatteren van documenten in Aspose.Words voor Java onderzocht. Gewapend met deze inzichten kunt u prachtig geformatteerde documenten voor uw Java-applicaties maken. Vergeet niet om de[Aspose.Words voor Java-documentatie](https://reference.aspose.com/words/java/) voor meer diepgaande begeleiding.
 
 ## Veelgestelde vragen
 
 ### Hoe kan ik Aspose.Words voor Java downloaden?
 
- U kunt Aspose.Words voor Java downloaden van[deze koppeling](https://releases.aspose.com/words/java/).
+ U kunt Aspose.Words voor Java downloaden van[deze link](https://releases.aspose.com/words/java/).
 
 ### Is Aspose.Words voor Java geschikt voor het maken van complexe documenten?
 

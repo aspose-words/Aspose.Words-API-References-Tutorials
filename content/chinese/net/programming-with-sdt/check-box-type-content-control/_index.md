@@ -15,7 +15,7 @@ url: /zh/net/programming-with-sdt/check-box-type-content-control/
 
 在深入编码部分之前，让我们确保您已准备好开始所需的一切：
 
-1.  Aspose.Words for .NET：确保您拥有最新版本的 Aspose.Words for .NET。您可以从以下网址下载[这里](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET：确保您拥有最新版本的 Aspose.Words for .NET。您可以从以下位置下载[这里](https://releases.aspose.com/words/net/).
 2. 开发环境：您的机器上安装的 Visual Studio 或任何其他 C# IDE。
 3. C# 基础知识：需要熟悉 C# 编程才能跟随本教程。
 4. 文档目录：保存 Word 文档的目录。

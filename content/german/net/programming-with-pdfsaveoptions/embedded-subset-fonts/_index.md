@@ -17,7 +17,7 @@ Bevor wir beginnen, stellen Sie sicher, dass Sie Folgendes haben:
 
 -  Aspose.Words für .NET: Sie können es herunterladen[Hier](https://releases.aspose.com/words/net/).
 - .NET-Umgebung: Stellen Sie sicher, dass Sie über eine funktionierende .NET-Entwicklungsumgebung verfügen.
-- Grundkenntnisse in C#: Kenntnisse in der C#-Programmierung erleichtern Ihnen das Folgen.
+- Grundkenntnisse in C#: Kenntnisse in der C#-Programmierung erleichtern Ihnen den Lernprozess.
 
 ## Namespaces importieren
 

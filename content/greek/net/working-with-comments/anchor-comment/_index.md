@@ -79,8 +79,7 @@ doc.FirstSection.Body.AppendChild(para2);
 ```csharp
 // Δημιουργήστε ένα νέο σχόλιο
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
-comment.Paragraphs.Add(new Paragraph(doc));
-comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
+comment.SetText("Comment text.");
 ```
 
  Σε αυτό το βήμα, δημιουργούμε ένα`Comment` αντικείμενο και προσθέστε μια παράγραφο και μια εκτέλεση με το κείμενο σχολίου.
@@ -102,7 +101,7 @@ run3.ParentNode.InsertAfter(commentRangeEnd, run3);
 commentRangeEnd.ParentNode.InsertAfter(comment, commentRangeEnd);
 ```
 
- Εδώ, δημιουργούμε`CommentRangeStart`και`CommentRangeEnd` αντικείμενα, συνδέοντάς τα με το σχόλιο με το αναγνωριστικό του. Στη συνέχεια, εισάγουμε αυτές τις περιοχές στο έγγραφο, ουσιαστικά αγκυρώνοντας το σχόλιό μας στο καθορισμένο κείμενο.
+ Εδώ, δημιουργούμε`CommentRangeStart` και`CommentRangeEnd` αντικείμενα, συνδέοντάς τα με το σχόλιο με το αναγνωριστικό του. Στη συνέχεια, εισάγουμε αυτές τις περιοχές στο έγγραφο, ουσιαστικά αγκυρώνοντας το σχόλιό μας στο καθορισμένο κείμενο.
 
 ## Βήμα 5: Αποθηκεύστε το έγγραφο
 

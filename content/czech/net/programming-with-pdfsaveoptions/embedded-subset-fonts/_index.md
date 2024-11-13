@@ -39,7 +39,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Tento fragment kódu načte dokument umístěný na adrese`dataDir` . Nezapomeňte vyměnit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k vašemu dokumentu.
+ Tento fragment kódu načte dokument umístěný na`dataDir` . Nezapomeňte vyměnit`"YOUR DOCUMENT DIRECTORY"` se skutečnou cestou k vašemu dokumentu.
 
 ## Krok 2: Nakonfigurujte možnosti uložení PDF
 

@@ -2,7 +2,7 @@
 title: Přístup k záložkám v dokumentu aplikace Word
 linktitle: Přístup k záložkám v dokumentu aplikace Word
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se přistupovat k záložkám v dokumentech aplikace Word a jak s nimi manipulovat pomocí Aspose.Words for .NET pomocí tohoto podrobného průvodce krok za krokem.
+description: Naučte se, jak přistupovat k záložkám v dokumentech aplikace Word a jak s nimi manipulovat pomocí Aspose.Words for .NET, pomocí tohoto podrobného průvodce krok za krokem.
 type: docs
 weight: 10
 url: /cs/net/programming-with-bookmarks/access-bookmarks/
@@ -69,7 +69,7 @@ Vysvětlení:
 - `doc.Range.Bookmarks["MyBookmark3"]`: Toto zpřístupní záložku s názvem "MyBookmark3".
 - `Bookmark bookmark2 = doc.Range.Bookmarks["MyBookmark3"];` : Toto uloží zpřístupněnou záložku do`bookmark2` variabilní.
 
-## Krok 4: Manipulujte s obsahem záložek
+## Krok 4: Manipulujte s obsahem záložky
 
 Jakmile vstoupíte do záložky, můžete manipulovat s jejím obsahem. Můžete například aktualizovat text v záložce.
 

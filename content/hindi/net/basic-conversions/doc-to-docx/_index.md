@@ -1,6 +1,6 @@
 ---
-title: Docx में परिवर्तित करें
-linktitle: Docx में परिवर्तित करें
+title: Docx को Docx में बदलें
+linktitle: Docx को Docx में बदलें
 second_title: Aspose.Words दस्तावेज़ प्रसंस्करण API
 description: .NET के लिए Aspose.Words का उपयोग करके DOC को DOCX में बदलने का तरीका जानें। कोड उदाहरणों के साथ चरण-दर-चरण मार्गदर्शिका। डेवलपर्स के लिए बिल्कुल सही।
 type: docs
@@ -25,7 +25,7 @@ url: /hi/net/basic-conversions/doc-to-docx/
 using Aspose.Words;
 ```
 
-यह नामस्थान Aspose.Words API तक पहुंच प्रदान करता है, जिससे आप अपने अनुप्रयोग में Word दस्तावेज़ों के साथ काम करने में सक्षम हो जाते हैं।
+यह नामस्थान Aspose.Words API तक पहुंच प्रदान करता है, जिससे आप अपने अनुप्रयोग में Word दस्तावेज़ों के साथ काम कर सकते हैं।
 
 ## चरण 1: DOC फ़ाइल लोड करें
 
@@ -42,7 +42,7 @@ Document doc = new Document(dataDir + "Document.doc");
 
 इसके बाद, लोड किए गए दस्तावेज़ को DOCX प्रारूप में सहेजें:
 ```csharp
-// दस्तावेज़ को DOCX के रूप में सहेजें
+//दस्तावेज़ को DOCX के रूप में सहेजें
 doc.Save(dataDir + "ConvertedDocument.docx", SaveFormat.Docx);
 ```
 

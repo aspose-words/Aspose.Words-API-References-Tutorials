@@ -9,7 +9,7 @@ url: /de/net/working-with-fonts/check-drawingml-text-effect/
 ---
 ## Einführung
 
-Willkommen zu einem weiteren ausführlichen Tutorial zur Arbeit mit Aspose.Words für .NET! Heute tauchen wir in die faszinierende Welt der DrawingML-Texteffekte ein. Egal, ob Sie Ihre Word-Dokumente mit Schatten, Reflexionen oder 3D-Effekten verbessern möchten, diese Anleitung zeigt Ihnen, wie Sie mit Aspose.Words für .NET nach diesen Texteffekten in Ihren Dokumenten suchen. Lassen Sie uns anfangen!
+Willkommen zu einem weiteren ausführlichen Tutorial zur Arbeit mit Aspose.Words für .NET! Heute tauchen wir in die faszinierende Welt der DrawingML-Texteffekte ein. Egal, ob Sie Ihre Word-Dokumente mit Schatten, Reflexionen oder 3D-Effekten verbessern möchten, diese Anleitung zeigt Ihnen, wie Sie mit Aspose.Words für .NET nach diesen Texteffekten in Ihren Dokumenten suchen. Lassen Sie uns loslegen!
 
 ## Voraussetzungen
 

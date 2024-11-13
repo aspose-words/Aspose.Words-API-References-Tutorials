@@ -9,7 +9,7 @@ url: /de/net/find-and-replace-text/ignore-text-inside-insert-revisions/
 ---
 ## Einführung
 
-In diesem umfassenden Leitfaden befassen wir uns mit der Verwendung von Aspose.Words für .NET zur effektiven Verwaltung von Dokumentrevisionen. Egal, ob Sie Entwickler oder Technikbegeisterter sind: Wenn Sie wissen, wie Sie Text in eingefügten Revisionen ignorieren, können Sie Ihre Dokumentverarbeitungsabläufe optimieren. Dieses Tutorial vermittelt Ihnen die erforderlichen Fähigkeiten, um die leistungsstarken Funktionen von Aspose.Words zur nahtlosen Verwaltung von Dokumentrevisionen zu nutzen.
+In diesem umfassenden Leitfaden werden wir uns mit der Verwendung von Aspose.Words für .NET befassen, um Dokumentrevisionen effektiv zu verwalten. Egal, ob Sie Entwickler oder Technikbegeisterter sind, das Wissen, wie Sie Text in eingefügten Revisionen ignorieren, kann Ihre Dokumentverarbeitungsabläufe optimieren. Dieses Tutorial vermittelt Ihnen die notwendigen Fähigkeiten, um die leistungsstarken Funktionen von Aspose.Words für die nahtlose Verwaltung von Dokumentrevisionen zu nutzen.
 
 ## Voraussetzungen
 
@@ -85,7 +85,7 @@ Wenn Sie die Technik beherrschen, Text in eingefügten Revisionen mit Aspose.Wor
 ### Welchen Vorteil bietet das Ignorieren eingefügten Textes bei Dokumentrevisionen?
 Durch das Ignorieren von eingefügtem Text bleibt der Fokus auf dem Kerninhalt erhalten, während Dokumentänderungen effizient verwaltet werden.
 
-### Kann ich in Aspose.Words für .NET ignorierten eingefügten Text auf seinen Originaltext zurücksetzen?
+### Kann ich ignorierten eingefügten Text in Aspose.Words für .NET auf seinen Originaltext zurücksetzen?
 Ja, Sie können ignorierten eingefügten Text mit den entsprechenden FindReplaceOptions-Einstellungen rückgängig machen.
 
 ### Wo finde ich weitere Dokumentation zu Aspose.Words für .NET?

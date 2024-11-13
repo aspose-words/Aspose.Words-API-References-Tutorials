@@ -30,7 +30,7 @@ using Aspose.Words.Tables;
 
 ## Schritt 1: Dokument laden
 
-Beginnen wir mit dem Laden des Dokuments, das die Tabelle enthält, die Sie teilen möchten. Achten Sie darauf, den richtigen Pfad zu Ihrem Dokument anzugeben.
+Beginnen wir mit dem Laden des Dokuments, das die Tabelle enthält, die Sie teilen möchten. Stellen Sie sicher, dass Sie den richtigen Pfad zu Ihrem Dokument angeben.
 
 ```csharp
 // Pfad zu Ihrem Dokumentverzeichnis
@@ -71,7 +71,7 @@ Fügen Sie den neuen Tabellencontainer direkt nach der Originaltabelle in das Do
 firstTable.ParentNode.InsertAfter(table, firstTable);
 ```
 
-## Schritt 6: Fügen Sie einen Pufferabsatz hinzu
+## Schritt 6: Einen Pufferabsatz hinzufügen
 
 Fügen Sie zwischen den beiden Tabellen einen Pufferabsatz hinzu, um sicherzustellen, dass sie getrennt bleiben.
 

@@ -93,7 +93,7 @@ DigitalSignatureUtil.Sign(dataDir + "Digitally signed.docx",
 
 ## Abschluss
 
-Und da haben Sie es! Sie haben erfolgreich eine Signaturanbieter-ID in einem Word-Dokument mit Aspose.Words für .NET festgelegt. Dieser Vorgang sichert nicht nur Ihre Dokumente, sondern stellt auch sicher, dass sie den Standards für digitale Signaturen entsprechen. Probieren Sie es jetzt mit Ihren Dokumenten aus. Haben Sie Fragen? Lesen Sie die FAQs unten oder besuchen Sie die[Aspose-Supportforum](https://forum.aspose.com/c/words/8).
+Und da haben Sie es! Sie haben erfolgreich eine Signaturanbieter-ID in einem Word-Dokument mit Aspose.Words für .NET festgelegt. Dieser Vorgang sichert nicht nur Ihre Dokumente, sondern stellt auch sicher, dass sie den Standards für digitale Signaturen entsprechen. Probieren Sie es jetzt mit Ihren Dokumenten aus. Haben Sie Fragen? Lesen Sie die FAQs unten oder rufen Sie die[Aspose-Supportforum](https://forum.aspose.com/c/words/8).
 
 ## Häufig gestellte Fragen
 

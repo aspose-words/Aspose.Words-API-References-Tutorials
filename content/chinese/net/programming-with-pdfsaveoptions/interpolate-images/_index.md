@@ -59,10 +59,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 为了确保图像被插值，您需要配置`PdfSaveOptions`。此类允许您设置将文档保存为 PDF 的各种选项。具体来说，您需要启用图像插值。
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions 
-{ 
-	InterpolateImages = true
-};
+PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
 这`InterpolateImages`属性设置为`true`确保 PDF 中的图像被插值，从而提高其质量。
@@ -101,6 +98,6 @@ Aspose.Words 主要支持 PDF 的图像插值。对于其他格式，请查看�
 
 你可以[下载免费试用版](https://releases.aspose.com/) Aspose.Words 来测试图像插值和其他功能。
 
-### 如果我遇到问题，可以在哪里获得帮助？
+### 如果我遇到问题，可以去哪里获取帮助？
 
 如需帮助，请访问[Aspose 支持论坛](https://forum.aspose.com/c/words/8)您可以在这里获得社区和 Aspose 专家的帮助。

@@ -35,7 +35,7 @@ Nachdem wir nun unsere Ladeoptionen konfiguriert haben, können wir ein RTF-Doku
 Document doc = new Document("Your Directory Path" + "UTF-8 characters.rtf", loadOptions);
 ```
 
- Ersetzen Sie unbedingt`"Your Directory Path"` mit dem entsprechenden Pfad zu Ihrem Dokumentverzeichnis.
+ Ersetzen Sie unbedingt`"Your Directory Path"` durch den entsprechenden Pfad zu Ihrem Dokumentverzeichnis.
 
 ## Schritt 3: Speichern des Dokuments
 
@@ -74,7 +74,7 @@ doc.save("Your Directory Path" + "WorkingWithRtfLoadOptions.RecognizeUtf8Text.rt
 
 ### Kann ich das Dokument nach dem Laden mit diesen Optionen ändern?
 
-Ja, Sie können nach dem Laden mit den angegebenen Optionen verschiedene Änderungen am Dokument vornehmen. Aspose.Words bietet eine breite Palette von Funktionen für die Arbeit mit Dokumentinhalten, Formatierungen und Strukturen.
+Ja, Sie können nach dem Laden des Dokuments mit den angegebenen Optionen verschiedene Änderungen daran vornehmen. Aspose.Words bietet eine breite Palette von Funktionen für die Arbeit mit Dokumentinhalten, Formatierungen und Strukturen.
 
 ### Wo finde ich weitere Informationen zu Aspose.Words für Java?
 

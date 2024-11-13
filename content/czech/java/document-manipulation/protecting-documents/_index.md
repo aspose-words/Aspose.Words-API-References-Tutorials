@@ -32,7 +32,7 @@ Document doc = new Document("Your Directory Path" + "Document.docx");
 doc.unprotect();
 ```
 
- The`unprotect` metoda odstraní veškerou ochranu použitou na dokument a zpřístupní jej bez hesla.
+The`unprotect` metoda odstraní veškerou ochranu použitou na dokument a zpřístupní jej bez hesla.
 
 ## Kontrola typu ochrany dokumentu
 
@@ -43,7 +43,7 @@ Document doc = new Document("Your Directory Path" + "Document.docx");
 int protectionType = doc.getProtectionType();
 ```
 
- The`getProtectionType` metoda vrací celé číslo představující typ ochrany použitý na dokument.
+The`getProtectionType` metoda vrací celé číslo představující typ ochrany použitý na dokument.
 
 
 ## Závěr

@@ -17,7 +17,7 @@ url: /zh-hant/net/programming-with-imagesaveoptions/get-jpeg-page-range/
 
 -  Aspose.Words for .NET：請確定您已安裝 Aspose.Words for .NET。你可以[在這裡下載](https://releases.aspose.com/words/net/).
 - 開發環境：AC#開發環境，如Visual Studio。
-- 範例文件：要使用的 Word 文件。您可以在本教學中使用任何 .docx 檔案。
+- 範例文件：要使用的 Word 文件。您可以在本教程中使用任何 .docx 檔案。
 - 基本 C# 知識：熟悉 C# 程式設計。
 
 準備好這些後，我們就開始吧！
@@ -66,7 +66,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.GetJpegPageRange.jpeg", options)
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 透過自訂設定成功將 Word 文件的特定頁面轉換為 JPEG 文件。此過程可根據各種需求進行客製化，無論您是為網站準備圖像、建立文件預覽還是其他用途。
+現在你就擁有了！您已使用 Aspose.Words for .NET 透過自訂設定成功將 Word 文件的特定頁面轉換為 JPEG 文件。此過程可根據各種需求進行客製化，無論您是為網站準備圖像、建立文件預覽還是其他用途。
 
 ## 常見問題解答
 

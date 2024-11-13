@@ -66,7 +66,7 @@ Tím se nastaví nový prázdný dokument.
 2. Získejte první odstavec v dokumentu:
 
 ```csharp
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+Paragraph para = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
 To zajišťuje, že máme odstavec, se kterým můžeme pracovat.
@@ -140,7 +140,7 @@ Ano, můžete použít DocumentBuilder k vložení pokročilých polí, ale tent
 
 ### Kde najdu další příklady použití Aspose.Words?
 
- Komplexní dokumentaci a příklady naleznete na[Aspose.Words pro dokumentaci .NET](https://reference.aspose.com/words/net/) strana.
+ Kompletní dokumentaci a příklady naleznete na[Aspose.Words pro dokumentaci .NET](https://reference.aspose.com/words/net/) strana.
 
 ### Je Aspose.Words for .NET zdarma k použití?
 

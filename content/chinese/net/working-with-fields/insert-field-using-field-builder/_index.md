@@ -2,7 +2,7 @@
 title: 使用字段生成器插入字段
 linktitle: 使用字段生成器插入字段
 second_title: Aspose.Words 文档处理 API
-description: 通过本分步指南了解如何使用 Aspose.Words for .NET 将动态字段插入 Word 文档。非常适合开发人员。
+description: 通过本分步指南学习如何使用 Aspose.Words for .NET 将动态字段插入 Word 文档。非常适合开发人员。
 type: docs
 weight: 10
 url: /zh/net/working-with-fields/insert-field-using-field-builder/
@@ -38,7 +38,7 @@ using Aspose.Words.Fields;
 Install-Package Aspose.Words
 ```
 
-## 步骤 2：创建新文档
+## 第 2 步：创建新文档
 
 首先创建一个新的 Word 文档。此文档将作为我们插入字段的画布。
 
@@ -79,7 +79,7 @@ fieldBuilder.AddArgument(
 
 ## 步骤 5：将字段插入文档
 
-FieldBuilder 全部设置完毕后，是时候将字段插入到我们的文档中了。我们将通过定位第一节的第一段来实现这一点。
+在 FieldBuilder 全部设置完毕后，是时候将字段插入到我们的文档中了。我们将通过定位第一节的第一段来实现这一点。
 
 ```csharp
 //将 IF 字段插入文档。

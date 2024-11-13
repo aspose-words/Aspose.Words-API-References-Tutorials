@@ -1,99 +1,133 @@
 ---
-title: Udržujte zdroj pohromadě
-linktitle: Udržujte zdroj pohromadě
+title: Udržujte stůl pohromadě
+linktitle: Udržujte stůl pohromadě
 second_title: Aspose.Words API pro zpracování dokumentů
-description: Naučte se sloučit dokumenty aplikace Word pomocí Aspose.Words for .NET při zachování formátování. Tento komplexní průvodce pokrývá vše od nastavení až po provedení.
+description: Naučte se, jak zabránit rozbití tabulek na stránkách pomocí Aspose.Words for .NET pomocí tohoto podrobného průvodce. Zajistěte úhledné, profesionálně vypadající dokumenty Word
 type: docs
 weight: 10
 url: /cs/net/join-and-append-documents/keep-source-together/
 ---
 ## Zavedení
 
-V dnešní digitální době je programová manipulace s dokumenty Wordu zásadní v různých odvětvích. Aspose.Words for .NET umožňuje vývojářům efektivně automatizovat úlohy manipulace s dokumenty. Tento komplexní průvodce vás provede procesem slučování dokumentů při zachování formátování zdroje pomocí Aspose.Words for .NET.
+Tabulky jsou nezbytnou součástí mnoha dokumentů aplikace Word, ale někdy se můžete dostat do situace, kdy se tabulka rozpadne na dvě stránky. To může narušit tok vašeho dokumentu a ovlivnit jeho čitelnost. Nebylo by hezké, kdyby existoval způsob, jak udržet celou tabulku pohromadě na jedné stránce? S Aspose.Words pro .NET existuje snadné řešení tohoto problému! V tomto tutoriálu si projdeme, jak zabránit rozdělení tabulek na stránky a zajistit, aby váš dokument vypadal elegantně a profesionálně.
 
 ## Předpoklady
 
-Než se pustíte do sloučení dokumentů s Aspose.Words pro .NET, ujistěte se, že máte následující:
+Než se pustíme do výukového programu, ujistěte se, že máte vše, co potřebujete, abyste mohli plynule pokračovat.
 
-- Visual Studio: Integrované vývojové prostředí (IDE) pro vývoj .NET.
-- Aspose.Words for .NET: Instalováno a nastaveno ve vašem vývojovém prostředí.
-- Znalost C#: Základní znalost programovacího jazyka C#.
+### Aspose.Words pro knihovnu .NET
 
-## Importovat jmenné prostory
+Nejprve budete muset mít nainstalovanou aplikaci Aspose.Words for .NET. Toto je výkonná knihovna, která vám umožňuje programově pracovat s dokumenty aplikace Word.
 
-Chcete-li začít, importujte potřebné jmenné prostory:
+- [Stáhněte si Aspose.Words pro .NET](https://releases.aspose.com/words/net/)
+
+### Vývojové prostředí
+
+Měli byste mít nastavené vývojové prostředí pro spouštění kódu C#, například:
+
+- Visual Studio (jakákoli nejnovější verze)
+- .NET Framework 2.0 nebo novější
+
+### Dokument aplikace Word s tabulkou
+
+ Budete potřebovat dokument aplikace Word, který obsahuje tabulku. V tomto tutoriálu budeme pracovat s ukázkovým dokumentem s názvem`"Table spanning two pages.docx"`. Tento soubor obsahuje tabulku, která aktuálně zahrnuje dvě stránky.
+
+### Dočasná licence (volitelné)
+
+ Zatímco Aspose.Words přichází s bezplatnou zkušební verzí, možná budete chtít použít a[dočasná licence](https://purchase.aspose.com/temporary-license/) odemknout plný potenciál knihovny.
+
+## Importujte balíčky
+
+Před napsáním jakéhokoli kódu musíme naimportovat potřebné jmenné prostory pro práci s Aspose.Words for .NET. Na začátek souboru kódu přidejte následující importy:
 
 ```csharp
 using Aspose.Words;
-using Aspose.Words.DocumentBuilder;
+using Aspose.Words.Tables;
 ```
 
-## Krok 1: Vložte dokumenty
+ Tyto jmenné prostory vám umožňují přístup k třídám, jako je`Document`, `Table`, `Cell`, a další, které použijeme v tomto tutoriálu.
 
- Nejprve načtěte zdrojové a cílové dokumenty do Aspose.Words`Document` objektů.
+## Krok 1: Vložte dokument
+
+ První věc, kterou musíme udělat, je načíst dokument aplikace Word, který obsahuje tabulku. K tomu použijeme`Document` třídy z Aspose.Words. Tato třída umožňuje programově otevírat a manipulovat se soubory aplikace Word.
 
 ```csharp
-// Cesta k vašemu adresáři dokumentů
-string dataDir = "YOUR_DOCUMENT_DIRECTORY/";
+// Cesta k adresáři dokumentů.
+string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Načtěte zdrojové a cílové dokumenty
-Document srcDoc = new Document(dataDir + "Document source.docx");
-Document dstDoc = new Document(dataDir + "Document destination with list.docx");
+Document doc = new Document(dataDir + "Table spanning two pages.docx");
 ```
 
-## Krok 2: Nastavte začátek sekce
+ V tomto fragmentu kódu určujeme umístění našeho dokumentu. Nahradit`"YOUR DOCUMENTS DIRECTORY"` se skutečným adresářem, kde je váš dokument uložen.
 
-Nakonfigurujte začátek sekce, abyste zajistili, že obsah zdrojového dokumentu bude plynule pocházet za cílovým dokumentem.
+## Krok 2: Přístup k tabulce
+
+Jakmile je dokument načten, dalším krokem je přístup k tabulce, kterou chceme mít pohromadě. V tomto příkladu předpokládáme, že tabulka je první tabulkou v dokumentu.
 
 ```csharp
-// Nastavte zdrojový dokument tak, aby se zobrazil přímo za obsahem cílového dokumentu
-srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
+Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 ```
 
-## Krok 3: Udržujte odstavce pohromadě
+ Tento řádek kódu najde první tabulku v dokumentu. The`GetChild` metoda načte určitý typ uzlu, což v tomto případě je`NodeType.Table` . The`0` znamená, že chceme první tabulku a`true`flag zajišťuje, že prohledáváme rekurzivně ve všech podřízených uzlech.
 
-Chcete-li zachovat integritu formátování, označte každý odstavec ve zdrojovém dokumentu, aby zůstal u dalšího odstavce.
+## Krok 3: Procházení buněk tabulky
+
+Nyní musíme projít každou buňku v tabulce. Vzhledem k tomu, že tabulka obsahuje více řádků a každý řádek obsahuje více buněk, projdeme každou buňku a zajistíme, aby se nerozbila na stránkách.
 
 ```csharp
-foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
+foreach (Cell cell in table.GetChildNodes(NodeType.Cell, true))
 {
-    para.ParagraphFormat.KeepWithNext = true;
-}
+    cell.EnsureMinimum();
 ```
 
-## Krok 4: Připojte dokumenty
+ Zde,`GetChildNodes` načte všechny buňky v tabulce a procházíme každou z nich. The`EnsureMinimum()` metoda zajišťuje, že každá buňka obsahuje alespoň jeden odstavec, protože prázdná buňka by mohla později způsobit problémy.
 
- Sloučit dokumenty pomocí`AppendDocument` způsob, který zajistí zachování formátování zdrojového dokumentu.
+## Krok 4: Nastavte vlastnost KeepWithNext
+
+ Aby se zabránilo rozbití tabulky přes stránky, musíme nastavit`KeepWithNext` vlastnost pro každý odstavec v tabulce. Tato vlastnost zajišťuje, že odstavec zůstane s dalším odstavcem, čímž účinně zabrání zalomení stránek mezi nimi.
 
 ```csharp
-dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
+    foreach (Paragraph para in cell.Paragraphs)
+        if (!(cell.ParentRow.IsLastRow && para.IsEndOfCell))
+            para.ParagraphFormat.KeepWithNext = true;
 ```
 
-## Krok 5: Uložte sloučený dokument
+ Tato smyčka kontroluje každý odstavec uvnitř každé buňky. Podmínka zajišťuje, že nepoužijeme`KeepWithNext`vlastnost do posledního odstavce v posledním řádku. Jinak by vlastnost neměla žádný účinek, protože neexistuje žádný další odstavec.
 
-Nakonec uložte sloučený dokument do požadovaného umístění.
+## Krok 5: Uložte dokument
+
+ Nakonec po aplikaci`KeepWithNext` vlastnost, musíme upravený dokument uložit.
 
 ```csharp
-dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
+doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 ```
+
+Tento řádek uloží aktualizovaný dokument pod novým názvem a zachová původní soubor. Nyní můžete otevřít výsledný soubor a uvidíte, že tabulka již není rozdělena na dvě stránky!
 
 ## Závěr
 
-Závěrem lze říci, že Aspose.Words for .NET zjednodušuje úkol slučování dokumentů aplikace Word a zároveň bezproblémově zachovává původní formátování. Tato schopnost je klíčová pro aplikace vyžadující automatizované zpracování dokumentů.
+A tady to máte! Pomocí těchto jednoduchých kroků můžete snadno zabránit rozbití tabulek na stránkách v dokumentech aplikace Word pomocí Aspose.Words for .NET. Ať už pracujete na zprávách, smlouvách nebo jiných dokumentech, udržování nedotčených tabulek zajišťuje uhlazenější a profesionálnější vzhled.
+
+Krása Aspose.Words spočívá v její flexibilitě a snadném použití, což vám umožňuje programově manipulovat s dokumenty aplikace Word, aniž byste na vašem počítači potřebovali nainstalovaný Microsoft Word. Nyní, když už umíte držet stoly pohromadě, prozkoumejte další funkce knihovny a posuňte své dovednosti ve zpracování dokumentů na další úroveň!
 
 ## FAQ
 
-### Může Aspose.Words for .NET sloučit dokumenty různých formátů?
-Ano, dokáže sloučit dokumenty bez ohledu na jejich formát, přičemž zachová zdrojové formátování.
+### Proč se moje tabulka po použití tohoto kódu stále láme na různých stránkách?
 
-### Podporuje Aspose.Words pro .NET efektivní slučování velkých dokumentů?
-Rozhodně zvládne velké dokumenty s optimálním výkonem.
+ Pokud se váš stůl stále láme, ujistěte se, že jste použili`KeepWithNext` vlastnost správně. Znovu zkontrolujte, že všechny odstavce kromě posledního v každé buňce mají tuto vlastnost nastavenou.
 
-### Je k dispozici zkušební verze pro Aspose.Words pro .NET?
- Ano, můžete si stáhnout bezplatnou zkušební verzi[zde](https://releases.aspose.com/).
+### Mohu mít pohromadě pouze určité řádky?
 
-### Jak mohu získat technickou podporu pro Aspose.Words pro .NET?
- Technická podpora je k dispozici prostřednictvím[Fórum Aspose.Words](https://forum.aspose.com/c/words/8).
+ Ano, můžete selektivně použít`KeepWithNext` vlastnost na konkrétní řádky nebo odstavce v tabulce, abyste mohli řídit, které části by měly zůstat pohromadě.
 
-### Mohu si zakoupit dočasnou licenci pro Aspose.Words pro .NET?
- Ano, můžete získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
+### Funguje tato metoda s velkými tabulkami?
+
+velmi velkých tabulek je může Word stále rozdělit na stránky, pokud není dostatek místa, aby se celá tabulka vešla na jednu stránku. Zvažte úpravu formátování nebo okrajů tabulky tak, aby vyhovovala větším tabulkám.
+
+### Mohu tuto metodu použít s jinými formáty dokumentů?
+
+Ano! Aspose.Words for .NET podporuje mnoho formátů jako DOC, DOCX, PDF a další. Stejná metoda funguje ve všech formátech, které podporují tabulky.
+
+### Je Aspose.Words for .NET bezplatná knihovna?
+
+ Aspose.Words for .NET nabízí bezplatnou zkušební verzi, ale pro plný přístup ke všem funkcím si budete muset zakoupit licenci. Možnosti licencování můžete prozkoumat na[Aspose nákupní stránku](https://purchase.aspose.com/buy).

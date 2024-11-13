@@ -20,7 +20,7 @@ Bevor wir uns in die Codebeispiele vertiefen, stellen Sie sicher, dass Sie Aspos
 
 ```java
 public static ArrayList<Paragraph> paragraphsByStyleName(Document doc, String styleName) {
-    // Erstellen Sie ein Array, um Absätze des angegebenen Stils zu sammeln.
+    // Erstellen Sie ein Array zum Sammeln von Absätzen im angegebenen Stil.
     ArrayList<Paragraph> paragraphsWithStyle = new ArrayList<Paragraph>();
     NodeCollection paragraphs = doc.getChildNodes(NodeType.PARAGRAPH, true);
 
@@ -58,7 +58,7 @@ public static ArrayList<Node> extractContentBetweenNodes(Node startNode, Node en
     Node originalEndNode = endNode;
 
     //Extrahieren Sie Inhalte basierend auf Knoten auf Blockebene (Absätze und Tabellen). Durchsuchen Sie übergeordnete Knoten, um sie zu finden.
-    // Wir werden den Inhalt des ersten und letzten Knotens aufteilen, je nachdem, ob die Markierungsknoten eingebettet sind.
+    // Wir werden den Inhalt des ersten und letzten Knotens aufteilen, je nachdem, ob die Markierungsknoten inline sind.
     startNode = getAncestorInBody(startNode);
     endNode = getAncestorInBody(endNode);
     boolean isExtracting = true;

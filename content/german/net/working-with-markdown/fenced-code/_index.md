@@ -35,7 +35,7 @@ Lassen Sie uns den Prozess nun Schritt für Schritt aufschlüsseln.
 Bevor wir in unserem Word-Dokument schöne, formatierte Codeblöcke erstellen können, müssen wir in Visual Studio ein neues Projekt einrichten.
 
 1. Erstellen Sie ein neues Projekt: Öffnen Sie Visual Studio und erstellen Sie eine neue C#-Konsolenanwendung.
-2. Aspose.Words-Referenz hinzufügen: Installieren Sie Aspose.Words über den NuGet-Paket-Manager. Klicken Sie dazu im Solution Explorer mit der rechten Maustaste auf Ihr Projekt, wählen Sie „NuGet-Pakete verwalten“ und suchen Sie nach Aspose.Words.
+2. Aspose.Words-Referenz hinzufügen: Installieren Sie Aspose.Words über den NuGet-Paket-Manager. Sie können dies tun, indem Sie im Solution Explorer mit der rechten Maustaste auf Ihr Projekt klicken, „NuGet-Pakete verwalten“ auswählen und nach Aspose.Words suchen.
 
 ## Schritt 2: Initialisieren Sie den DocumentBuilder
 
@@ -69,7 +69,7 @@ builder.Writeln("This is a fenced code block");
 
 ## Schritt 5: Erstellen Sie einen Stil für eingezäunten Code mit Info-String
 
-Manchmal möchten Sie vielleicht die Programmiersprache angeben oder Ihrem Codeblock zusätzliche Informationen hinzufügen. Lassen Sie uns dafür einen Stil erstellen.
+Manchmal möchten Sie möglicherweise die Programmiersprache angeben oder Ihrem Codeblock zusätzliche Informationen hinzufügen. Lassen Sie uns dafür einen Stil erstellen.
 
 ```csharp
 Style fencedCodeWithInfo = builder.Document.Styles.Add(StyleType.Paragraph, "FencedCode.C#");

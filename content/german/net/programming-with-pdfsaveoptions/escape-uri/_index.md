@@ -57,7 +57,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 Fügen wir nun einen Hyperlink in das Dokument ein. Dieser Hyperlink steht im Mittelpunkt unseres URI-Escape-Prozesses.
 
 ```csharp
-builder.InsertHyperlink("Testlink", "https://www.google.com/search?q=aspose", false);
+builder.InsertHyperlink("Testlink", "https://www.google.com/search?q= aspose", false);
 ```
 
  In dieser Zeile`"Testlink"` ist der Anzeigetext für den Hyperlink und`"https://www.google.com/search?q= aspose"` ist die URL. Die`false` Der Parameter gibt an, dass der Link nicht als Hyperlink formatiert werden soll (d. h. er wird nicht unterstrichen und blau dargestellt).

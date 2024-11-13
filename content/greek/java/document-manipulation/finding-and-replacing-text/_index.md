@@ -180,11 +180,11 @@ Document doc = new Document("your-document.docx");
 // Αποκτήστε την πρώτη ενότητα
 Section firstPageSection = doc.getFirstSection();
 
-// Δημιουργήστε μια παρουσία FindReplaceOptions και εφαρμόστε την στην περιοχή του εγγράφου
+//Δημιουργήστε μια παρουσία FindReplaceOptions και εφαρμόστε την στην περιοχή του εγγράφου
 FindReplaceOptions options = new FindReplaceOptions();
 options.setReplacingCallback(new ReplaceLog());
 
-//Αντικαταστήστε το κείμενο που επηρεάζει τις παραγγελίες κεφαλίδων και υποσέλιδων
+// Αντικαταστήστε το κείμενο που επηρεάζει τις παραγγελίες κεφαλίδων και υποσέλιδων
 doc.getRange().replace(Pattern.compile("(header|footer)"), "", options);
 
 // Αποθηκεύστε το τροποποιημένο έγγραφο
@@ -260,7 +260,7 @@ doc.save("modified-document.docx");
 // Φορτώστε το έγγραφο
 Document doc = new Document("your-document.docx");
 
-//Δημιουργήστε μια παρουσία FindReplaceOptions με το UseSubstitutions να έχει οριστεί σε true
+// Δημιουργήστε μια παρουσία FindReplaceOptions με το UseSubstitutions να έχει οριστεί σε true
 FindReplaceOptions options = new FindReplaceOptions();
 options.setUseSubstitutions(true);
 
@@ -322,7 +322,7 @@ Document doc = new Document("your-document.docx");
 // Αποκτήστε έναν συγκεκριμένο πίνακα (π.χ. τον πρώτο πίνακα)
 Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
 
-// Χρησιμοποιήστε το FindReplaceOptions για να αντικαταστήσετε το κείμενο στον πίνακα
+//Χρησιμοποιήστε το FindReplaceOptions για να αντικαταστήσετε το κείμενο στον πίνακα
 table.getRange().replace("old-text", "new-text", new FindReplaceOptions());
 
 // Αποθηκεύστε το τροποποιημένο έγγραφο
@@ -347,7 +347,7 @@ doc.save("modified-document.docx");
 
 ### Πώς μπορώ να αγνοήσω το κείμενο μέσα στα πεδία κατά την αντικατάσταση;
 
- Για να αγνοήσετε το κείμενο μέσα στα πεδία κατά την αντικατάσταση, μπορείτε να ορίσετε το`IgnoreFields` ιδιοκτησία του`FindReplaceOptions` να`true`Αυτό διασφαλίζει ότι το κείμενο εντός πεδίων, όπως τα πεδία συγχώνευσης, εξαιρείται από την αντικατάσταση.
+Για να αγνοήσετε το κείμενο μέσα στα πεδία κατά την αντικατάσταση, μπορείτε να ορίσετε το`IgnoreFields` ιδιοκτησία του`FindReplaceOptions` να`true`. Αυτό διασφαλίζει ότι το κείμενο εντός πεδίων, όπως τα πεδία συγχώνευσης, εξαιρείται από την αντικατάσταση.
 
 ### Μπορώ να αντικαταστήσω το κείμενο μέσα στις κεφαλίδες και τα υποσέλιδα;
 
@@ -355,4 +355,4 @@ doc.save("modified-document.docx");
 
 ### Σε τι χρησιμεύει η επιλογή UseLegacyOrder;
 
- Ο`UseLegacyOrder` επιλογή σε`FindReplaceOptions` σας επιτρέπει να χρησιμοποιείτε παραγγελίες παλαιού τύπου όταν εκτελείτε λειτουργίες εύρεσης και αντικατάστασης. Αυτό μπορεί να είναι χρήσιμο σε ορισμένα σενάρια όπου είναι επιθυμητή η συμπεριφορά παραγγελιών παλαιού τύπου.
+Ο`UseLegacyOrder` επιλογή σε`FindReplaceOptions` σας επιτρέπει να χρησιμοποιείτε παραγγελίες παλαιού τύπου όταν εκτελείτε λειτουργίες εύρεσης και αντικατάστασης. Αυτό μπορεί να είναι χρήσιμο σε ορισμένα σενάρια όπου είναι επιθυμητή η συμπεριφορά παραγγελιών παλαιού τύπου.

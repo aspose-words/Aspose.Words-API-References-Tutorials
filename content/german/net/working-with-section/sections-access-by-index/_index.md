@@ -97,7 +97,7 @@ Speichern Sie abschließend das Dokument, um sicherzustellen, dass unsere Änder
 doc.Save(dataDir + "ModifiedDocument.docx");
 ```
 
-- `doc.Save(dataDir + "ModifiedDocument.docx");` Speichert das geänderte Dokument unter einem neuen Namen.
+- `doc.Save(dataDir + "ModifiedDocument.docx");` speichert das geänderte Dokument unter einem neuen Namen.
 
 ## Abschluss
 

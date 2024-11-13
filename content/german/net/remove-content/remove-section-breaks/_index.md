@@ -53,7 +53,7 @@ Document doc = new Document(dataDir + "your-document.docx");
 
 ## Schritt 3: Abschnitte durchlaufen
 
-Der Schlüssel zum Entfernen von Abschnittsumbrüchen besteht darin, die Abschnitte im Dokument zu durchlaufen, beginnend beim vorletzten Abschnitt und in Richtung des ersten Abschnitts.
+Der Schlüssel zum Entfernen von Abschnittsumbrüchen besteht darin, die Abschnitte im Dokument zu durchlaufen, beginnend mit dem vorletzten Abschnitt und sich in Richtung des ersten Abschnitts bewegend.
 
 1. Durch Abschnitte schleifen: Erstellen Sie eine Schleife, die beim vorletzten Abschnitt beginnt und rückwärts verläuft.
 ```csharp
@@ -104,7 +104,7 @@ Nein, Aspose.Words kann Dokumente mit einer großen Anzahl von Abschnitten verar
 Auf jeden Fall! Sie können ein Skript erstellen, um mehrere Dokumente zu durchlaufen und diese Methode anzuwenden.
 
 ### Hat das Entfernen von Abschnittsumbrüchen Auswirkungen auf die Dokumentformatierung?
-Im Allgemeinen ist dies nicht der Fall. Überprüfen Sie Ihr Dokument jedoch nach Änderungen immer, um sicherzustellen, dass die Formatierung erhalten bleibt.
+Im Allgemeinen ist dies nicht der Fall. Überprüfen Sie Ihr Dokument jedoch immer nach Änderungen, um sicherzustellen, dass die Formatierung erhalten bleibt.
 
 ### Beispielquellcode zum Entfernen von Abschnittsumbrüchen mit Aspose.Words für .NET
  

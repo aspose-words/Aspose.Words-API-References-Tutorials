@@ -30,7 +30,7 @@ using Aspose.Words;
 using System;
 ```
 
-Okay, lassen Sie uns den Prozess in überschaubare Schritte unterteilen. Jeder Schritt wird ausführlich erklärt, damit Sie an jedem Punkt verstehen, was passiert.
+Okay, lassen Sie uns den Prozess in überschaubare Schritte unterteilen. Jeder Schritt wird ausführlich erklärt, damit Sie jederzeit verstehen, was passiert.
 
 ## Schritt 1: Initialisieren Sie das Dokument
 

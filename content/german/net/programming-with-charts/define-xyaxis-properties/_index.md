@@ -78,7 +78,7 @@ Nun ist es an der Zeit, die Eigenschaften für die X-Achse zu definieren. Dazu g
 ChartAxis xAxis = chart.AxisX;
 xAxis.CategoryType = AxisCategoryType.Category;
 xAxis.Crosses = AxisCrosses.Custom;
-xAxis.CrossesAt = 3; //Gemessen in Anzeigeeinheiten der Y-Achse (Hunderter).
+xAxis.CrossesAt = 3; // Gemessen in Anzeigeeinheiten der Y-Achse (Hunderter).
 xAxis.ReverseOrder = true;
 xAxis.MajorTickMark = AxisTickMark.Cross;
 xAxis.MinorTickMark = AxisTickMark.Outside;
@@ -117,7 +117,7 @@ Das Erstellen und Anpassen von Diagrammen in Word-Dokumenten mit Aspose.Words f�
 Sie können verschiedene Diagrammtypen erstellen, darunter Flächen-, Balken-, Linien-, Kreisdiagramme und mehr.
 
 ### Wie installiere ich Aspose.Words für .NET?
- Sie können Aspose.Words für .NET herunterladen von[Hier](https://releases.aspose.com/words/net/) und befolgen Sie die bereitgestellten Installationsanweisungen.
+ Sie können Aspose.Words für .NET herunterladen von[Hier](https://releases.aspose.com/words/net/)und befolgen Sie die bereitgestellten Installationsanweisungen.
 
 ### Kann ich das Erscheinungsbild meiner Diagramme anpassen?
 Ja, Aspose.Words für .NET ermöglicht eine umfassende Anpassung von Diagrammen, einschließlich Farben, Schriftarten und Achseneigenschaften.

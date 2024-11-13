@@ -2,7 +2,7 @@
 title: लीगेसी नियंत्रण वर्ण रखें
 linktitle: लीगेसी नियंत्रण वर्ण रखें
 second_title: Aspose.Words दस्तावेज़ प्रसंस्करण API
-description: इस चरण-दर-चरण मार्गदर्शिका के साथ .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ों में विरासत नियंत्रण वर्णों को संरक्षित करने का तरीका जानें।
+description: इस चरण-दर-चरण मार्गदर्शिका के साथ .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ों में विरासत नियंत्रण वर्णों को संरक्षित करना सीखें।
 type: docs
 weight: 10
 url: /hi/net/programming-with-ooxmlsaveoptions/keep-legacy-control-chars/
@@ -95,7 +95,7 @@ using Aspose.Words.Saving;
 
 ### क्या मुझे .NET के लिए Aspose.Words का उपयोग करने के लिए लाइसेंस की आवश्यकता है?
 
- हां, आपको वैध लाइसेंस की आवश्यकता है। आप मूल्यांकन उद्देश्यों के लिए अस्थायी लाइसेंस प्राप्त कर सकते हैं[यहाँ](https://purchase.aspose.com/temporary-license/).
+ हां, आपको वैध लाइसेंस की आवश्यकता है। आप मूल्यांकन उद्देश्यों के लिए एक अस्थायी लाइसेंस प्राप्त कर सकते हैं[यहाँ](https://purchase.aspose.com/temporary-license/).
 
 ### मैं .NET के लिए Aspose.Words पर अधिक दस्तावेज़ कहां पा सकता हूं?
 

@@ -64,21 +64,20 @@ builder.Write("Some text is added.");
 Comment comment = new Comment(doc, "Awais Hafeez", "AH", DateTime.Today);
 ```
 
-## 步骤 5：将注释附加到段落
+## 步骤 5：向评论添加内容
+
+最后，我们将向评论添加内容。我们将创建一个新的 Paragraph 和 Run 来保存评论文本，然后将它们添加到评论中。
+
+```csharp
+comment.SetText("Comment text.");
+```
+
+## 步骤 6：将注释附加到段落
 
 我们需要将评论附加到我们添加文本的当前段落。这可以通过将评论附加到段落来完成。
 
 ```csharp
 builder.CurrentParagraph.AppendChild(comment);
-```
-
-## 步骤 6：向评论添加内容
-
-最后，我们将向评论添加内容。我们将创建一个新的 Paragraph 和 Run 来保存评论文本，然后将它们添加到评论中。
-
-```csharp
-comment.Paragraphs.Add(new Paragraph(doc));
-comment.FirstParagraph.Runs.Add(new Run(doc, "Comment text."));
 ```
 
 ## 步骤 7：保存文档

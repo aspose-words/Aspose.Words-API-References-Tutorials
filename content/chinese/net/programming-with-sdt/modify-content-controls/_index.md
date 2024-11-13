@@ -21,7 +21,7 @@ url: /zh/net/programming-with-sdt/modify-content-controls/
 
 3. .NET 开发环境：您应该有一个像 Visual Studio 这样的 IDE 来运行 .NET 应用程序。
 
-4. 示例文档：我们将使用包含各种 SDT 的示例 Word 文档。您可以使用示例中的文档或创建自己的文档。
+4. 示例文档：我们将使用包含各种 SDT 的示例 Word 文档。您可以使用示例中的文档，也可以创建自己的文档。
 
 5. 访问 Aspose 文档：有关更多详细信息，请查看[Aspose.Words 文档](https://reference.aspose.com/words/net/).
 
@@ -59,7 +59,7 @@ foreach (StructuredDocumentTag sdt in doc.GetChildNodes(NodeType.StructuredDocum
 
 ## 步骤 3：修改纯文本 SDT
 
-如果SDT是纯文本类型，则可以替换其内容。首先，清除现有内容，然后添加新文本。
+如果SDT是纯文本类型，则可以替换其内容。首先清除现有内容，然后添加新文本。
 
 ```csharp
 if (sdt.SdtType == SdtType.PlainText)

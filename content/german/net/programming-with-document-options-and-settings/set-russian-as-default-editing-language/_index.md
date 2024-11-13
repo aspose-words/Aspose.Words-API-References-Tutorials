@@ -34,7 +34,7 @@ using Aspose.Words.Loading;
 
  Zuerst müssen wir die`LoadOptions` um die Standardbearbeitungssprache auf Russisch einzustellen. Dieser Schritt beinhaltet das Erstellen einer Instanz von`LoadOptions` und die Einstellung`LanguagePreferences.DefaultEditingLanguage` Eigentum.
 
-### Erstellen einer LoadOptions-Instanz
+### LoadOptions-Instanz erstellen
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions();
@@ -46,11 +46,11 @@ LoadOptions loadOptions = new LoadOptions();
 loadOptions.LanguagePreferences.DefaultEditingLanguage = EditingLanguage.Russian;
 ```
 
- In diesem Schritt erstellen Sie eine Instanz von`LoadOptions` und setzen Sie seine`DefaultEditingLanguage`Eigentum an`EditingLanguage.Russian`. Dies weist Aspose.Words an, Russisch als Standardbearbeitungssprache zu behandeln, wenn ein Dokument mit diesen Optionen geladen wird.
+ In diesem Schritt erstellen Sie eine Instanz von`LoadOptions` und setzen Sie seine`DefaultEditingLanguage`Eigentum an`EditingLanguage.Russian`. Dadurch wird Aspose.Words angewiesen, Russisch als Standardbearbeitungssprache zu behandeln, wenn ein Dokument mit diesen Optionen geladen wird.
 
 ## Schritt 2: Laden Sie das Dokument
 
- Als nächstes müssen wir das Word-Dokument mit dem`LoadOptions` im vorherigen Schritt konfiguriert. Dazu müssen Sie den Pfad zu Ihrem Dokument angeben und den`LoadOptions` Instanz an die`Document` Konstruktor.
+ Als nächstes müssen wir das Word-Dokument mit dem`LoadOptions` im vorherigen Schritt konfiguriert. Dazu müssen Sie den Pfad zu Ihrem Dokument angeben und die`LoadOptions` Instanz an die`Document` Konstruktor.
 
 ### Dokumentpfad angeben
 
@@ -111,6 +111,6 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek für die programmgest
 
  Ja, Sie können jede von Aspose.Words unterstützte Sprache einstellen, indem Sie die entsprechende`EditingLanguage` Wert auf`DefaultEditingLanguage`.
 
-### Wie erhalte ich Support für Aspose.Words für .NET?
+### Wie kann ich Support für Aspose.Words für .NET erhalten?
 
  Unterstützung erhalten Sie vom[Aspose-Unterstützung](https://forum.aspose.com/c/words/8) Forum, wo Sie Fragen stellen und Hilfe von der Community und den Aspose-Entwicklern erhalten können.

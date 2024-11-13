@@ -11,7 +11,7 @@ Die Aspose.Words für .NET-Tutorials zur Textverarbeitung mit Formen bieten eine
 
 In diesen Tutorials erfahren Sie, wie Sie Ihren Dokumenten Formen wie Rechtecke, Kreise, Linien und Pfeile hinzufügen, um das Layout und die Informationsvisualisierung zu verbessern. Sie erfahren auch, wie Sie Formeigenschaften wie Drehung, Transparenz und Füllung Ihren spezifischen Anforderungen entsprechend bearbeiten.
 
-Wenn Sie Aspose.Words für .NET verwenden und diese Tutorials befolgen, beherrschen Sie die Manipulation von Formen in Ihren Word-Dokumenten und können optisch ansprechende und professionell aussehende Dokumente erstellen. Egal, ob Sie Anfänger oder erfahrener Entwickler sind, diese Tutorials führen Sie durch den Prozess und helfen Ihnen, das volle Potenzial der Formmanipulation in Aspose.Words für .NET auszuschöpfen.
+Wenn Sie Aspose.Words für .NET verwenden und diese Tutorials befolgen, können Sie die Bearbeitung von Formen in Ihren Word-Dokumenten meistern und optisch ansprechende und professionell aussehende Dokumente erstellen. Egal, ob Sie Anfänger oder erfahrener Entwickler sind, diese Tutorials führen Sie durch den Prozess und helfen Ihnen, das volle Potenzial der Formbearbeitung in Aspose.Words für .NET auszuschöpfen.
 
  ## Anleitungen
 | Titel | Beschreibung |

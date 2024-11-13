@@ -71,7 +71,7 @@ if (sdt.SdtType == SdtType.PlainText)
 }
 ```
 
- Vysvětlení: Zde,`RemoveAllChildren()`vymaže stávající obsah SDT. Poté vytvoříme nový`Paragraph`a`Run` objekt pro vložení nového textu.
+ Vysvětlení: Zde,`RemoveAllChildren()`vymaže stávající obsah SDT. Poté vytvoříme nový`Paragraph` a`Run` objekt pro vložení nového textu.
 
 ## Krok 4: Upravte SDT rozevíracího seznamu
 

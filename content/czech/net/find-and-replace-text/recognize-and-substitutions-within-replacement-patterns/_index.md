@@ -40,7 +40,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- The`Document` objekt je jádrem Aspose.Words. Představuje celý dokument aplikace Word.
+The`Document` objekt je jádrem Aspose.Words. Představuje celý dokument aplikace Word.
 
 ## Krok 2: Přidejte text do dokumentu
 
@@ -50,7 +50,7 @@ Dále do dokumentu přidáme nějaký text. Tento text bude cílem našich náhr
 builder.Write("Jason give money to Paul.");
 ```
 
- The`DocumentBuilder` class je výkonný nástroj pro přidávání textu a dalších prvků do vašeho dokumentu.
+The`DocumentBuilder` class je výkonný nástroj pro přidávání textu a dalších prvků do vašeho dokumentu.
 
 ## Krok 3: Definujte vzor regulárního výrazu
 
@@ -70,7 +70,7 @@ Aspose.Words vám umožňuje používat substituce ve vašich náhradách. Tyto 
 FindReplaceOptions options = new FindReplaceOptions { UseSubstitutions = true };
 ```
 
- The`FindReplaceOptions` class poskytuje různé možnosti pro přizpůsobení operací hledání a nahrazování.
+The`FindReplaceOptions` class poskytuje různé možnosti pro přizpůsobení operací hledání a nahrazování.
 
 ## Krok 5: Proveďte výměnu
 
@@ -80,7 +80,7 @@ Nyní provedeme operaci výměny. Tady se děje kouzlo!
 doc.Range.Replace(regex, @"$2 take money from $1", options);
 ```
 
- Zde,`$2`a`$1` jsou substituční vzory.`$2` odkazuje na druhou zachycenou skupinu (Paul) a`$1` odkazuje na první zachycenou skupinu (Jason). Výsledkem bude "Paul si vezme peníze od Jasona."
+ Zde,`$2` a`$1` jsou substituční vzory.`$2` odkazuje na druhou zachycenou skupinu (Paul) a`$1` odkazuje na první zachycenou skupinu (Jason). Výsledkem bude "Paul si vezme peníze od Jasona."
 
 ## Krok 6: Uložte dokument
 
@@ -108,7 +108,7 @@ Aspose.Words for .NET je výkonná knihovna pro práci s dokumenty Wordu v aplik
 Ano, Aspose.Words podporuje regulární výrazy pro operace hledání a nahrazování, což umožňuje složité manipulace s textem.
 
 ### Co jsou substituční vzory v regulárním výrazu?
- Substituční vzorce, jako`$1`a`$2`, odkazují na zachycené skupiny v regulárním výrazu. Používají se k přeuspořádání nebo opětovnému použití částí shodného textu v náhradním řetězci.
+ Substituční vzorce, jako`$1` a`$2`, odkazují na zachycené skupiny v regulárním výrazu. Používají se k přeuspořádání nebo opětovnému použití částí shodného textu v náhradním řetězci.
 
 ### Jak získám podporu pro Aspose.Words for .NET?
  Podporu můžete získat na fórech komunity Aspose[zde](https://forum.aspose.com/c/words/8).

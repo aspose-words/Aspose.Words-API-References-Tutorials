@@ -55,7 +55,7 @@ Als Erstes müssen wir das Word-Dokument laden, das wir in HTML konvertieren mö
 
 ### Schritt 2.1: Dokumentpfad festlegen
 
- Richten Sie den Pfad zu Ihrem Dokumentverzeichnis ein. Für dieses Tutorial gehen wir davon aus, dass sich Ihr Dokument in einem Ordner namens`Documents` in Ihrem Projektverzeichnis.
+ Richten Sie den Pfad zu Ihrem Dokumentverzeichnis ein. Für dieses Tutorial nehmen wir an, dass sich Ihr Dokument in einem Ordner namens`Documents` in Ihrem Projektverzeichnis.
 
 ```csharp
 string dataDir = @"C:\YourProject\Documents\";
@@ -105,7 +105,7 @@ doc.Save(dataDir + "WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html", save
 
 ## Schritt 5: Überprüfen der Ausgabe
 
- Navigieren Sie nach dem Ausführen Ihres Projekts zu Ihrem`Documents` Ordner. Sie sollten eine HTML-Datei mit dem Namen finden`WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html` . Öffnen Sie diese Datei in einem Texteditor oder Browser, um zu überprüfen, ob die CSS-Klassen das Präfix haben`pfx_`.
+ Navigieren Sie nach dem Ausführen Ihres Projekts zu Ihrem`Documents` Ordner. Sie sollten eine HTML-Datei mit dem Namen finden`WorkingWithHtmlSaveOptions.AddCssClassNamePrefix.html` Öffnen Sie diese Datei in einem Texteditor oder Browser, um zu überprüfen, ob die CSS-Klassen das Präfix haben`pfx_`.
 
 ## Abschluss
 
@@ -117,7 +117,7 @@ Und da haben Sie es! Indem Sie diese Schritte befolgen, haben Sie Ihrer HTML-Aus
  Ja, Sie können das Präfix bei jedem Speichern eines Dokuments anpassen, indem Sie das`CssClassNamePrefix` Eigentum.
 
 ### Unterstützt diese Methode Inline-CSS?
- Der`CssClassNamePrefix`-Eigenschaft funktioniert mit externem CSS. Für Inline-CSS benötigen Sie einen anderen Ansatz.
+Der`CssClassNamePrefix`-Eigenschaft funktioniert mit externem CSS. Für Inline-CSS benötigen Sie einen anderen Ansatz.
 
 ### Wie kann ich andere HTML-Speicheroptionen einbinden?
  Sie können verschiedene Eigenschaften von`HtmlSaveOptions` um Ihre HTML-Ausgabe anzupassen. Überprüfen Sie die[Dokumentation](https://reference.aspose.com/words/net/) für weitere Details.

@@ -2,7 +2,7 @@
 title: Vergleichsgranularität im Word-Dokument
 linktitle: Vergleichsgranularität im Word-Dokument
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie mehr über die Funktion „Granularität in Word-Dokumenten vergleichen“ von Aspose.Words für .NET, mit der Dokumente Zeichen für Zeichen verglichen und die vorgenommenen Änderungen gemeldet werden können.
+description: Erfahren Sie mehr über die Funktion „Granularität vergleichen“ in Word-Dokumenten von Aspose.Words für .NET, mit der Dokumente Zeichen für Zeichen verglichen und die vorgenommenen Änderungen gemeldet werden können.
 type: docs
 weight: 10
 url: /de/net/compare-documents/comparison-granularity/
@@ -56,11 +56,11 @@ Vergleichen wir nun die Dokumente mit der Compare-Methode der Document-Klasse. �
 builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOptions);
 ```
 
- Der`Compare`Methode vergleicht Dokument A mit Dokument B und speichert die Änderungen an Dokument A. Sie können den Namen des Autors und das Datum des Vergleichs als Referenz angeben.
+Der`Compare`Methode vergleicht Dokument A mit Dokument B und speichert die Änderungen an Dokument A. Sie können den Namen des Autors und das Datum des Vergleichs als Referenz angeben.
 
 ## Abschluss
 
-In diesem Artikel haben wir die Funktion „Granularität vergleichen“ von Aspose.Words für .NET untersucht. Mit dieser Funktion können Sie Dokumente auf Zeichenebene vergleichen und Änderungen melden. Sie können dieses Wissen nutzen, um detaillierte Dokumentvergleiche in Ihren Projekten durchzuführen.
+In diesem Artikel haben wir die Funktion „Granularität vergleichen“ von Aspose.Words für .NET untersucht. Mit dieser Funktion können Sie Dokumente auf Zeichenebene vergleichen und Änderungen melden. Sie können dieses Wissen nutzen, um in Ihren Projekten detaillierte Dokumentvergleiche durchzuführen.
 
 ### Beispielquellcode für Vergleichsgranularität mit Aspose.Words für .NET
 
@@ -95,7 +95,7 @@ A: Um die Vergleichsgranularität in Aspose.Words für .NET zu verwenden, folgen
 2. Fügen Sie Ihrem Projekt die erforderlichen Assemblys hinzu, indem Sie auf Aspose.Words verweisen.
 3.  Erstellen Sie die zu vergleichenden Dokumente mit dem`DocumentBuilder` Klasse.
 4.  Konfigurieren Sie die Vergleichsoptionen durch die Erstellung eines`CompareOptions` Objekt und Festlegen der`Granularity` Eigenschaft auf das gewünschte Niveau (z. B.`Granularity.CharLevel` für den Vergleich auf Zeichenebene).
-5.  Verwenden Sie die`Compare`Methode auf einem Dokument, Übergeben des anderen Dokuments und der`CompareOptions` Objekt als Parameter. Diese Methode vergleicht die Dokumente basierend auf der angegebenen Granularität und speichert die Änderungen im ersten Dokument.
+5.  Verwenden Sie die`Compare`Methode auf einem Dokument, Übergabe des anderen Dokuments und der`CompareOptions` Objekt als Parameter. Diese Methode vergleicht die Dokumente basierend auf der angegebenen Granularität und speichert die Änderungen im ersten Dokument.
 
 #### F: Welche Vergleichsgranularitätsebenen sind in Aspose.Words für .NET verfügbar?
 

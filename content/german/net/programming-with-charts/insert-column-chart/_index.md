@@ -9,7 +9,7 @@ url: /de/net/programming-with-charts/insert-column-chart/
 ---
 ## Einführung
 
-In diesem Tutorial erfahren Sie, wie Sie Ihre Word-Dokumente verbessern, indem Sie mit Aspose.Words für .NET optisch ansprechende Säulendiagramme einfügen. Säulendiagramme eignen sich gut zum Visualisieren von Datentrends und -vergleichen und machen Ihre Dokumente informativer und ansprechender.
+In diesem Tutorial erfahren Sie, wie Sie Ihre Word-Dokumente verbessern, indem Sie mit Aspose.Words für .NET optisch ansprechende Säulendiagramme einfügen. Säulendiagramme eignen sich gut zur Visualisierung von Datentrends und -vergleichen und machen Ihre Dokumente informativer und ansprechender.
 
 ## Voraussetzungen
 
@@ -84,6 +84,6 @@ Sie können Ihr Säulendiagramm dynamisch mit Daten füllen, indem Sie Daten aus
 ### Kann ich das Word-Dokument mit dem eingefügten Diagramm als PDF oder in andere Formate exportieren?
 Ja, mit Aspose.Words für .NET können Sie Dokumente mit Diagrammen in verschiedenen Formaten speichern, darunter PDF, HTML und Bilder.
 
-### Wo erhalte ich weiteren Support oder Hilfe für Aspose.Words für .NET?
+### Wo kann ich weiteren Support oder Hilfe für Aspose.Words für .NET erhalten?
  Weitere Hilfe erhalten Sie im[Aspose.Words für .NET-Forum](https://forum.aspose.com/c/words/8) oder wenden Sie sich an den Aspose-Support.
 

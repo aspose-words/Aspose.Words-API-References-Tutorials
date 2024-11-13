@@ -73,7 +73,7 @@ DocSaveOptions saveOptions = new DocSaveOptions { Password = "password" };
 
 ## 步驟 4：儲存文檔
 
-最後，讓我們使用指定的選項來儲存文件。這就像將鎖好的日記存放在安全的地方一樣。
+最後，讓我們使用指定的選項來儲存文件。這就像將鎖定的日記存放在安全的地方一樣。
 
 ```csharp
 doc.Save(dataDir + "WorkingWithDocSaveOptions.EncryptDocumentWithPassword.docx", saveOptions);
@@ -86,7 +86,7 @@ doc.Save(dataDir + "WorkingWithDocSaveOptions.EncryptDocumentWithPassword.docx",
 
 ## 結論
 
-現在你就得到它了！您剛剛學習如何使用 Aspose.Words for .NET 使用密碼加密文件。這就像成為數位鎖匠，確保您的文件安全無虞。無論您是要保護敏感的業務報告還是個人筆記，此方法都提供了簡單而有效的解決方案。
+現在你就擁有了！您剛剛學習如何使用 Aspose.Words for .NET 使用密碼加密文件。這就像成為數位鎖匠，確保您的文件安全無虞。無論您是要保護敏感的業務報告還是個人筆記，此方法都提供了簡單而有效的解決方案。
 
 ## 常見問題解答
 

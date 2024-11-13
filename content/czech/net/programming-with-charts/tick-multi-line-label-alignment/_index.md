@@ -52,7 +52,7 @@ Document doc = new Document();
 
 ## Krok 3: Použijte DocumentBuilder
 
- The`DocumentBuilder` class v Aspose.Words je mocný nástroj, který pomáhá při vytváření dokumentů. Použijeme jej k vložení grafu do našeho dokumentu.
+The`DocumentBuilder` class v Aspose.Words je mocný nástroj, který pomáhá při vytváření dokumentů. Použijeme jej k vložení grafu do našeho dokumentu.
 
  Inicializujte instanci souboru`DocumentBuilder` třídy, předá náš objekt dokumentu jeho konstruktoru.
 

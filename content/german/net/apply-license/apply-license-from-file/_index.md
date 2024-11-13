@@ -29,7 +29,7 @@ using Aspose.Words;
 using System;
 ```
 
-Gut, jetzt unterteilen wir den Prozess in überschaubare Schritte.
+Gut, lassen Sie uns den Prozess nun in überschaubare Schritte unterteilen.
 
 ## Schritt 1: Richten Sie Ihr Projekt ein
 
@@ -65,7 +65,7 @@ catch (Exception e)
 
 ## Schritt 4: Überprüfen der Lizenz
 
- Nachdem Sie die Lizenz eingerichtet haben, sollten Sie überprüfen, ob sie korrekt angewendet wurde. Dies können Sie tun, indem Sie das`IsLicensed` Eigentum der`License` Klasse.
+Nachdem Sie die Lizenz eingerichtet haben, sollten Sie überprüfen, ob sie korrekt angewendet wurde. Dies können Sie tun, indem Sie die`IsLicensed` Eigentum der`License` Klasse.
 
 ```csharp
 if (license.IsLicensed)

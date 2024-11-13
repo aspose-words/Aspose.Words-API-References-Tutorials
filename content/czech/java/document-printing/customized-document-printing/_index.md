@@ -1,6 +1,6 @@
 ---
-title: Tisk dokumentů na míru
-linktitle: Tisk dokumentů na míru
+title: Tisk dokumentů na zakázku
+linktitle: Tisk dokumentů na zakázku
 second_title: Aspose.Words Java Document Processing API
 description: Naučte se, jak snadno dosáhnout přizpůsobeného tisku dokumentů pomocí Aspose.Words for Java. Tento podrobný průvodce pokrývá vše od nastavení až po pokročilé přizpůsobení.
 type: docs
@@ -29,7 +29,7 @@ Než začneme, ujistěte se, že máte splněny následující předpoklady:
 Začněme vytvořením prázdného dokumentu pomocí Aspose.Words for Java:
 
 ```java
-//Java kód pro vytvoření prázdného dokumentu
+// Java kód pro vytvoření prázdného dokumentu
 Document doc = new Document();
 ```
 
@@ -43,17 +43,6 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, Aspose.Words!");
 ```
 
-## Přizpůsobení prvků dokumentu
-
-Můžete přizpůsobit různé prvky dokumentu, jako jsou písma, styly a formátování. Zde je příklad změny velikosti písma:
-
-```java
-// Java kód pro změnu velikosti písma
-Run run = (Run) doc.getChildNodes(NodeType.RUN, true).get(0);
-Font font = run.getFont();
-font.setSize(14);
-```
-
 ## Tisk dokumentu
 
 Tisk vašeho přizpůsobeného dokumentu je jednoduchý s Aspose.Words pro Java:
@@ -65,7 +54,7 @@ doc.print("printerName");
 
 ## Pokročilé přizpůsobení
 
-Aspose.Words for Java nabízí pokročilé možnosti přizpůsobení, včetně záhlaví, zápatí a nastavení stránky. Další podrobnosti najdete v dokumentaci k rozhraní API.
+Aspose.Words for Java nabízí pokročilé možnosti přizpůsobení, včetně záhlaví, zápatí a nastavení stránky. Další podrobnosti najdete v dokumentaci API.
 
 ## Odstraňování problémů
 
@@ -79,7 +68,7 @@ Přizpůsobený tisk dokumentů pomocí Aspose.Words for Java umožňuje podnik�
 
 ### Jak mohu nainstalovat Aspose.Words pro Java?
 
- Chcete-li nainstalovat Aspose.Words for Java, stáhněte si knihovnu z[zde](https://releases.aspose.com/words/java/) a postupujte podle dodaných pokynů k instalaci.
+ Chcete-li nainstalovat Aspose.Words for Java, stáhněte si knihovnu z[zde](https://releases.aspose.com/words/java/) postupujte podle dodaných pokynů k instalaci.
 
 ### Mohu upravit rozvržení dokumentu?
 

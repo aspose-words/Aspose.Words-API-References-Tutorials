@@ -114,7 +114,7 @@ doc.Save("LinkedTextBoxes.docx");
 
 ## 結論
 
-現在你就得到它了！ 🎉 您已使用 Aspose.Words for .NET 在 Word 文件中成功建立並連結了文字方塊。本教學指導您設定環境、建立和連結文字方塊以及儲存文件。借助這些技能，您可以透過動態內容流增強您的 Word 文檔，並使您的文檔更具互動性和使用者友善性。
+現在你就擁有了！ 🎉 您已使用 Aspose.Words for .NET 在 Word 文件中成功建立並連結了文字方塊。本教學指導您設定環境、建立和連結文字方塊以及儲存文件。借助這些技能，您可以透過動態內容流增強您的 Word 文檔，並使您的文檔更具互動性和使用者友善性。
 
 有關更多詳細資訊和高級功能，請務必查看[Aspose.Words API 文檔](https://reference.aspose.com/words/net/)。如果您有任何疑問或遇到問題，[支援論壇](https://forum.aspose.com/c/words/8)是一個很好的資源。
 

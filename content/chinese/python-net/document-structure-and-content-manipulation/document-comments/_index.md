@@ -144,7 +144,7 @@ pip install aspose-words
 
 ### 是否可以使用 API 以编程方式隐藏或显示评论？
 
-是的，您可以使用`comment.visible`Aspose.Words for Python 中的属性。
+是的，你可以使用`comment.visible`Aspose.Words for Python 中的属性。
 
 ### Aspose.Words for Python 是否支持向特定范围的文本添加注释？
 

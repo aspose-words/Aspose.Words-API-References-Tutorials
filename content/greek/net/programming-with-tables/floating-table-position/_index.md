@@ -85,7 +85,7 @@ table.RelativeVerticalAlignment = VerticalAlignment.Center;
 doc.Save(dataDir + "WorkingWithTables.FloatingTablePosition.docx");
 ```
 
-Αυτό είναι σαν να πατάτε "Αποθήκευση" στο επεξεργασμένο έγγραφό σας. Όλες οι αλλαγές σας διατηρούνται πλέον.
+Αυτό είναι σαν να πατάτε "Αποθήκευση" στο επεξεργασμένο έγγραφό σας. Όλες οι αλλαγές σας έχουν πλέον διατηρηθεί.
 
 ## Σύναψη
 

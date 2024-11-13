@@ -9,7 +9,7 @@ url: /de/net/document-formatting/space-between-asian-and-latin-text/
 ---
 ## Einführung
 
-Hallo! Haben Sie schon einmal diesen frustrierenden Moment erlebt, in dem Sie mit einem Word-Dokument arbeiten und der Abstand zwischen asiatischem und lateinischem Text einfach nicht richtig aussieht? Es ist, als würde man versuchen, Puzzleteile aus verschiedenen Sets zusammenzufügen, und es kann jeden in den Wahnsinn treiben! Aber keine Sorge, ich habe das im Griff. Heute tauchen wir in die Welt von Aspose.Words für .NET ein, um genau dieses Problem anzugehen. Am Ende dieses Tutorials wissen Sie genau, wie Sie den Abstand zwischen asiatischem und lateinischem Text in Ihren Word-Dokumenten automatisch wie ein Profi anpassen.
+Hallo! Haben Sie schon einmal diesen frustrierenden Moment erlebt, in dem Sie mit einem Word-Dokument arbeiten und der Abstand zwischen asiatischem und lateinischem Text einfach nicht richtig aussieht? Es ist, als würde man versuchen, Puzzleteile aus verschiedenen Sets zusammenzufügen, und es kann jeden in den Wahnsinn treiben! Aber keine Sorge, ich habe das im Griff. Heute tauchen wir in die Welt von Aspose.Words für .NET ein, um genau dieses Problem anzugehen. Am Ende dieses Tutorials wissen Sie genau, wie Sie den Abstand zwischen asiatischem und lateinischem Text in Ihren Word-Dokumenten wie ein Profi automatisch anpassen.
 
 ## Voraussetzungen
 
@@ -55,7 +55,7 @@ paragraphFormat.AddSpaceBetweenFarEastAndAlpha = true;
 paragraphFormat.AddSpaceBetweenFarEastAndDigit = true;
 ```
 
- Durch die Einstellung`AddSpaceBetweenFarEastAndAlpha`Und`AddSpaceBetweenFarEastAndDigit` Zu`true`weisen wir Aspose.Words an, den Abstand zwischen asiatischen Zeichen und lateinischen Buchstaben oder Ziffern automatisch anzupassen.
+ Durch die Einstellung`AddSpaceBetweenFarEastAndAlpha` Und`AddSpaceBetweenFarEastAndDigit` Zu`true`weisen wir Aspose.Words an, den Abstand zwischen asiatischen Zeichen und lateinischen Buchstaben oder Ziffern automatisch anzupassen.
 
 ## Schritt 3: Text zum Dokument hinzufügen
 
@@ -66,7 +66,7 @@ builder.Writeln("Automatically adjust space between Asian and Latin text");
 builder.Writeln("Automatically adjust space between Asian text and numbers");
 ```
 
-Hier fügen wir dem Dokument zwei Textzeilen hinzu. Die erste Zeile enthält sowohl asiatische Zeichen als auch lateinischen Text, während die zweite Zeile asiatische Zeichen und Ziffern enthält. So können wir die Abstandsanpassungen deutlich erkennen.
+Hier fügen wir dem Dokument zwei Textzeilen hinzu. Die erste Zeile enthält sowohl asiatische Schriftzeichen als auch lateinischen Text, während die zweite Zeile asiatische Schriftzeichen und Ziffern enthält. So können wir die Abstandsanpassungen deutlich erkennen.
 
 ## Schritt 4: Speichern des Dokuments
 
@@ -76,7 +76,7 @@ Zum Schluss müssen wir unser Dokument speichern. Das ist so, als würden Sie Ih
 doc.Save(dataDir + "DocumentFormatting.SpaceBetweenAsianAndLatinText.docx");
 ```
 
-Mit dieser Codezeile speichern wir unser Dokument im angegebenen Verzeichnis unter einem beschreibenden Namen. Und voilà! Ihr Dokument ist fertig, mit perfekt angepasstem Abstand zwischen asiatischem und lateinischem Text.
+Mit dieser Codezeile speichern wir unser Dokument im angegebenen Verzeichnis unter einem aussagekräftigen Namen. Und voilà! Ihr Dokument ist fertig, mit perfekt angepasstem Abstand zwischen asiatischem und lateinischem Text.
 
 ## Abschluss
 
@@ -102,4 +102,4 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Entwickler W
 
 ### Wo erhalte ich Unterstützung, wenn Probleme auftreten?
 
- Sie können Unterstützung von der Aspose-Community erhalten auf deren[Foren](https://forum.aspose.com/c/words/8). Sie haben eine hilfreiche Community und ein engagiertes Supportteam, das Ihnen zur Seite steht.
+ Sie können Unterstützung von der Aspose-Community erhalten über deren[Foren](https://forum.aspose.com/c/words/8). Sie haben eine hilfreiche Community und ein engagiertes Supportteam, das Ihnen zur Seite steht.

@@ -70,7 +70,7 @@ Install-Package Aspose.Words
     doc.Save(dataDir + "BaseConversions.PdfToJpeg.jpeg");
     ```
 
-2. कोड चलाएँ: अपना प्रोजेक्ट निष्पादित करें, और देखिए! आपका PDF अब एक चमकदार नई JPEG है।
+2. कोड चलाएँ: अपना प्रोजेक्ट निष्पादित करें, और देखिए! अब आपकी PDF एक चमकदार नई JPEG बन गई है।
 
 ## निष्कर्ष
 

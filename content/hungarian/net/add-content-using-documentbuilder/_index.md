@@ -1,5 +1,5 @@
 ---
-title: Tartalom hozzáadása a Documentbuilder segítségével
+title: Tartalom hozzáadása a DocumentBuilder segítségével
 linktitle: Tartalom hozzáadása a Documentbuilder segítségével
 second_title: Aspose.Words Document Processing API
 description: Ismerje meg, hogyan adhat tartalmat Word-dokumentumaihoz a DocumentBuilder és az Aspose.Words for .NET használatával. Gyakorlati oktatóanyagok részletes kódpéldákkal.

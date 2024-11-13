@@ -189,7 +189,7 @@ for (String fileName : listFiles) {
 
 ### Πώς μπορώ να εγκαταστήσω το Aspose.Words για Java;
 
- Μπορείτε να κάνετε λήψη του Aspose.Words για Java από το[εδώ](https://releases.aspose.com/words/java/) και ακολουθήστε τις οδηγίες εγκατάστασης που παρέχονται.
+ Μπορείτε να κάνετε λήψη του Aspose.Words για Java από το[εδώ](https://releases.aspose.com/words/java/)και ακολουθήστε τις οδηγίες εγκατάστασης που παρέχονται.
 
 ### Ποιες είναι οι υποστηριζόμενες μορφές εγγράφων;
 

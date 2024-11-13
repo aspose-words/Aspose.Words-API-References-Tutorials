@@ -10,7 +10,7 @@ url: /cs/net/working-with-section/clone-section/
 
 ## Zavedení
 
-Ahoj, kolegové kodéři! 🚀 Už jste se někdy ocitli po kolena v projektu dokumentu Word a přáli si, abyste mohli jen naklonovat sekci, než abyste předělávali všechnu tu tvrdou práci? Hádej co? S Aspose.Words for .NET můžete snadno klonovat sekce ve svých dokumentech aplikace Word. Tento tutoriál vás provede procesem krok za krokem, takže replikace sekcí ve vašich dokumentech bude hračkou. Pojďme se tedy ponořit a usnadnit si práci s dokumenty mnohem jednodušší!
+Ahoj, kolegové kodéři! 🚀 Už jste se někdy ocitli po kolena v projektu dokumentu Word a přáli si, abyste mohli jen naklonovat sekci, než abyste předělávali všechnu tu tvrdou práci? No, hádejte co? S Aspose.Words for .NET můžete snadno klonovat sekce ve svých dokumentech aplikace Word. Tento tutoriál vás provede procesem krok za krokem, takže replikace sekcí ve vašich dokumentech bude hračkou. Pojďme se tedy ponořit a usnadnit si práci s dokumenty mnohem jednodušší!
 
 ## Předpoklady
 
@@ -152,7 +152,7 @@ Ano, můžete klonovat více sekcí procházením kolekce sekcí a klonováním 
 
 ### Jak přizpůsobím klonovanou sekci?
 
- Klonovanou sekci můžete upravit úpravou jejích vlastností a obsahu po klonování. Použijte`Section` třídy a vlastnosti k provádění změn.
+ Klonovanou sekci můžete upravit úpravou jejích vlastností a obsahu po klonování. Použijte`Section` metody a vlastnosti třídy k provádění změn.
 
 ### Je Aspose.Words kompatibilní s různými verzemi Wordu?
 

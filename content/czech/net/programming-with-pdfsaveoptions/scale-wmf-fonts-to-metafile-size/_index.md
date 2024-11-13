@@ -55,7 +55,7 @@ MetafileRenderingOptions metafileRenderingOptions = new MetafileRenderingOptions
 };
 ```
 
- The`MetafileRenderingOptions` class poskytuje možnosti, jak se metasoubory (jako WMF) vykreslují. Nastavením`ScaleWmfFontsToMetafileSize` na`false`, dáváte Aspose.Words pokyn, aby neměnil velikost písem podle velikosti metasouboru, což může pomoci při zmenšení celkové velikosti PDF.
+The`MetafileRenderingOptions` class poskytuje možnosti, jak se metasoubory (jako WMF) vykreslují. Nastavením`ScaleWmfFontsToMetafileSize` na`false`, dáváte Aspose.Words pokyn, aby neměnil velikost písem podle velikosti metasouboru, což může pomoci při zmenšení celkové velikosti PDF.
 
 ## Krok 3: Nastavte možnosti uložení PDF
 
@@ -69,7 +69,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- The`PdfSaveOptions` class umožňuje určit různá nastavení pro uložení dokumentu jako PDF. Přiřazením dříve nakonfigurovaného`MetafileRenderingOptions` k`MetafileRenderingOptions` vlastnictví`PdfSaveOptions`, zajistíte, že se dokument uloží podle požadovaného nastavení vykreslování metasouboru.
+The`PdfSaveOptions` class umožňuje určit různá nastavení pro uložení dokumentu jako PDF. Přiřazením dříve nakonfigurovaného`MetafileRenderingOptions` k`MetafileRenderingOptions` vlastnictví`PdfSaveOptions`, zajistíte, že se dokument uloží podle požadovaného nastavení vykreslování metasouboru.
 
 ## Krok 4: Uložte dokument jako PDF
 

@@ -33,7 +33,7 @@ Nyní si rozeberme proces vytváření tučného textu v dokumentu aplikace Word
 
 ## Krok 1: Inicializujte DocumentBuilder
 
- The`DocumentBuilder` class poskytuje rychlý a snadný způsob přidávání obsahu do vašeho dokumentu. Pojďme to inicializovat.
+The`DocumentBuilder` class poskytuje rychlý a snadný způsob přidávání obsahu do vašeho dokumentu. Pojďme to inicializovat.
 
 ```csharp
 // K přidání obsahu do dokumentu použijte tvůrce dokumentů.
@@ -42,7 +42,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## Krok 2: Udělejte text tučným
 
- Nyní přichází ta zábavná část – udělat text tučným. Nastavíme`Bold` vlastnictvím`Font` namítat proti`true` a napište náš tučný text.
+ Nyní přichází ta zábavná část – udělat text tučným. Nastavíme`Bold` vlastnictví`Font` namítat proti`true` a napište náš tučný text.
 
 ```csharp
 // Udělejte text tučným písmem.
@@ -63,7 +63,7 @@ A tady to máte! Úspěšně jste pomocí Aspose.Words for .NET vytvořili tučn
  Absolutně! Můžete použít`builder.Font.Color`vlastnost pro nastavení barvy textu.
 
 ### Mohu použít více stylů písma najednou?
- Ano, můžete. Můžete například nastavit text na tučný a kurzívu současně, a nanastavením obou`builder.Font.Bold`a`builder.Font.Italic` to `true`.
+ Ano, můžete. Můžete například nastavit text na tučný a kurzívu současně, a nanastavením obou`builder.Font.Bold` a`builder.Font.Italic` to `true`.
 
 ### Jaké další možnosti formátování textu jsou k dispozici?
 Aspose.Words poskytuje širokou škálu možností formátování textu, jako je velikost písma, podtržení, přeškrtnutí a další.

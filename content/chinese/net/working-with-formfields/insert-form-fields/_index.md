@@ -40,7 +40,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-在此步骤中，我们创建`Document`类。此实例表示 Word 文档。然后我们创建`DocumentBuilder`类，它提供将内容插入文档的方法。
+在此步骤中，我们创建`Document`类。此实例表示 Word 文档。然后我们创建`DocumentBuilder`类，它提供了将内容插入文档的方法。
 
 ## 步骤 2：定义组合框项
 

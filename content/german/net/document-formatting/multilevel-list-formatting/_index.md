@@ -2,7 +2,7 @@
 title: Mehrstufige Listenformatierung im Word-Dokument
 linktitle: Mehrstufige Listenformatierung im Word-Dokument
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie in unserer Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET die mehrstufige Listenformatierung in Word-Dokumenten meistern. Verbessern Sie mühelos die Dokumentstruktur.
+description: Erfahren Sie in unserer Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET mehrstufige Listenformatierungen in Word-Dokumenten meistern. Verbessern Sie mühelos die Dokumentstruktur.
 type: docs
 weight: 10
 url: /de/net/document-formatting/multilevel-list-formatting/
@@ -78,7 +78,7 @@ Nun haben Sie eine Liste der dritten Ebene unter „Punkt 2.2“.
 
 ## Schritt 5: Ausrücken, um zu höheren Ebenen zurückzukehren
 
- Um zu einer höheren Ebene zurückzukehren, verwenden Sie die`ListOutdent` -Methode. Dadurch wird das Element auf die vorherige Listenebene zurückgesetzt.
+ Um zu einer höheren Ebene zurückzukehren, verwenden Sie die`ListOutdent` -Methode. Dadurch wird das Element auf die vorherige Listenebene zurückversetzt.
 
 ```csharp
 builder.ListFormat.ListOutdent();
@@ -111,7 +111,7 @@ Dadurch wird Ihr schön formatiertes Dokument mit mehrstufigen Listen gespeicher
 
 ## Abschluss
 
-Und da haben Sie es! Sie haben erfolgreich eine mehrstufige Liste in einem Word-Dokument mit Aspose.Words für .NET erstellt. Mit dieser leistungsstarken Bibliothek können Sie komplexe Dokumentformatierungsaufgaben mühelos automatisieren. Denken Sie daran, dass die Beherrschung dieser Tools nicht nur Zeit spart, sondern auch Konsistenz und Professionalität in Ihrem Dokumenterstellungsprozess gewährleistet.
+Und da haben Sie es! Sie haben erfolgreich eine mehrstufige Liste in einem Word-Dokument mit Aspose.Words für .NET erstellt. Mit dieser leistungsstarken Bibliothek können Sie komplexe Dokumentformatierungsaufgaben mühelos automatisieren. Denken Sie daran, dass die Beherrschung dieser Tools nicht nur Zeit spart, sondern auch Konsistenz und Professionalität bei der Dokumenterstellung gewährleistet.
 
 ## Häufig gestellte Fragen
 
@@ -122,10 +122,10 @@ Und da haben Sie es! Sie haben erfolgreich eine mehrstufige Liste in einem Word-
  Sie können Aufzählungszeichen hinzufügen, indem Sie das`ApplyBulletDefault` Methode anstelle von`ApplyNumberDefault`.
 
 ### Ist es möglich, die Nummerierung einer vorherigen Liste fortzusetzen?
- Ja, Sie können die Nummerierung fortsetzen, indem Sie die`ListFormat.List` Eigenschaft zum Verknüpfen mit einer vorhandenen Liste.
+ Ja, Sie können die Nummerierung fortsetzen, indem Sie`ListFormat.List` Eigenschaft zum Verknüpfen mit einer vorhandenen Liste.
 
 ### Wie ändere ich die Einrückungsebene dynamisch?
- Sie können die Einrückungsebene dynamisch ändern, indem Sie`ListIndent`Und`ListOutdent` Methoden nach Bedarf.
+ Sie können die Einrückungsebene dynamisch ändern, indem Sie`ListIndent` Und`ListOutdent` Methoden nach Bedarf.
 
 ### Kann ich mehrstufige Listen in anderen Dokumentformaten wie PDF erstellen?
 Ja, Aspose.Words unterstützt das Speichern von Dokumenten in verschiedenen Formaten, einschließlich PDF, unter Beibehaltung der Formatierung.

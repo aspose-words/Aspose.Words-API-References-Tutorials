@@ -13,7 +13,7 @@ Willkommen zu unserem umfassenden Leitfaden zur Verwendung von Aspose.Words für
 
 ## Voraussetzungen
 
-Bevor Sie sich in Aspose.Words vertiefen, stellen Sie sicher, dass Sie Folgendes eingerichtet haben:
+Bevor Sie in Aspose.Words eintauchen, stellen Sie sicher, dass Sie Folgendes eingerichtet haben:
 - Auf Ihrem Computer installiertes Visual Studio
 - Grundkenntnisse der Programmiersprache C#
 -  Zugriff auf die Aspose.Words für .NET-Bibliothek (Download-Link)[Hier](https://releases.aspose.com/words/net/))
@@ -80,7 +80,7 @@ Herzlichen Glückwunsch! Sie haben gelernt, wie Sie Diagramme mit Aspose.Words f
 ## Häufig gestellte Fragen
 
 ### Was ist Aspose.Words für .NET?
-Aspose.Words für .NET ist eine Dokumentverarbeitungsbibliothek, die es Entwicklern ermöglicht, Word-Dokumente innerhalb von .NET-Anwendungen zu erstellen, zu ändern und zu konvertieren.
+Aspose.Words für .NET ist eine Dokumentverarbeitungsbibliothek, mit der Entwickler Word-Dokumente innerhalb von .NET-Anwendungen erstellen, ändern und konvertieren können.
 
 ### Wo finde ich Dokumentation für Aspose.Words für .NET?
  Eine ausführliche Dokumentation finden Sie[Hier](https://reference.aspose.com/words/net/).

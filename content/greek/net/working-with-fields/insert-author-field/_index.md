@@ -69,7 +69,7 @@ Document doc = new Document();
 2. Προσθήκη παραγράφου: Στη συνέχεια, θα προσθέσουμε μια παράγραφο στο έγγραφο.
 
 ```csharp
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+Paragraph para = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
 Αυτή η παράγραφος θα είναι όπου εισάγουμε το πεδίο συντάκτη μας.

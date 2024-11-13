@@ -87,7 +87,7 @@ doc.save("document_with_accepted_changes.docx");
 
 ### 我可以自訂文件中追蹤更改的外觀嗎？
 
-是的，您可以透過修改修訂版本的格式選項來自訂修訂的外觀。
+是的，您可以透過修改修訂的格式選項來自訂修訂的外觀。
 
 ### Aspose.Words for Java 是否與不同的 Word 文件格式相容？
 

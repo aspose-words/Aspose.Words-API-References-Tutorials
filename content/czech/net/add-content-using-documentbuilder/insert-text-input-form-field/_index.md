@@ -49,7 +49,7 @@ Document doc = new Document();
 
 ## Krok 3: Inicializujte DocumentBuilder
 
- The`DocumentBuilder` class je náš primární nástroj pro přidávání obsahu do dokumentu. Představte si to jako pero, které píše na plátno dokumentu aplikace Word.
+The`DocumentBuilder` class je náš primární nástroj pro přidávání obsahu do dokumentu. Představte si to jako pero, které píše na plátno dokumentu aplikace Word.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);
@@ -57,7 +57,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Krok 4: Vložení textového vstupního pole formuláře
 
- Tady se děje kouzlo. Použijeme`InsertTextInput` metoda`DocumentBuilder` třídy přidat pole formuláře pro zadávání textu. Toto pole formuláře umožní uživatelům zadávat text do dokumentu.
+ Tady se děje kouzlo. Použijeme`InsertTextInput` metoda`DocumentBuilder` třídy a přidejte pole formuláře pro zadávání textu. Toto pole formuláře umožní uživatelům zadávat text do dokumentu.
 
 ```csharp
 builder.InsertTextInput("TextInput", TextFormFieldType.Regular, "", "Hello", 0);

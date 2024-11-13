@@ -86,7 +86,7 @@ Nakonec každý nový dokument uložíme s jedinečným názvem. Tento krok zaji
 newDoc.Save(dataDir + $"SplitDocument.BySections_{i}.docx");
 ```
 
- The`Save` metoda uloží nový dokument do zadaného adresáře s jedinečným názvem na základě indexu sekce.
+The`Save` metoda uloží nový dokument do zadaného adresáře s jedinečným názvem na základě indexu sekce.
 
 ## Závěr
 

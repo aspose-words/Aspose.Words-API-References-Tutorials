@@ -1,17 +1,17 @@
 ---
-title: Traitement de mots avec Markdownsaveoptions
-linktitle: Traitement de mots avec Markdownsaveoptions
+title: Traitement de texte avec Markdownsaveoptions
+linktitle: Traitement de texte avec Markdownsaveoptions
 second_title: API de traitement de documents Aspose.Words
-description: Apprenez le traitement des mots avec MarkdownSaveOptions dans Aspose.Words pour .NET. Tutoriels détaillés avec un exemple de code pour enregistrer des documents Word au format Markdown.
+description: Apprenez le traitement de texte avec MarkdownSaveOptions dans Aspose.Words pour .NET. Tutoriels détaillés avec exemple de code pour enregistrer des documents Word au format Markdown.
 type: docs
 weight: 1640
 url: /fr/net/programming-with-markdownsaveoptions/
 ---
 
-Le traitement de mots avec MarkdownSaveOptions est une ressource détaillée qui vous guide dans le traitement de mots avec MarkdownSaveOptions à l'aide de la bibliothèque Aspose.Words pour .NET. Les didacticiels vous fournissent des explications étape par étape, un code source complet et des exemples pratiques pour comprendre et utiliser MarkdownSaveOptions pour exporter des documents Word au format Markdown. Vous apprendrez à personnaliser les options d'exportation, telles que la gestion des images, l'alignement du contenu des tableaux, la conversion des styles, etc. Cette ressource est essentielle pour les développeurs cherchant à intégrer la fonctionnalité d'exportation Markdown dans leurs applications à l'aide d'Aspose.Words pour .NET.
+Words Processing with MarkdownSaveOptions est une ressource approfondie qui vous guide à travers Words Processing with MarkdownSaveOptions à l'aide de la bibliothèque Aspose.Words pour .NET. Les didacticiels vous fournissent des explications étape par étape, un code source complet et des exemples pratiques pour comprendre et utiliser MarkdownSaveOptions pour exporter des documents Word au format Markdown. Vous apprendrez à personnaliser les options d'exportation, telles que la gestion des images, l'alignement du contenu des tableaux, la conversion des styles, etc. Cette ressource est essentielle pour les développeurs qui cherchent à intégrer la fonctionnalité d'exportation Markdown dans leurs applications à l'aide d'Aspose.Words pour .NET.
 
  ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Exporter vers Markdown avec l'alignement du contenu du tableau](./export-into-markdown-with-table-content-alignment/) | Découvrez comment exporter des documents Word vers Markdown avec des tableaux alignés à l'aide d'Aspose.Words pour .NET. Suivez notre guide étape par étape pour des tableaux Markdown parfaits. |
-| [Définir le dossier d'images](./set-images-folder/) | Convertissez des documents Word en Markdown avec un alignement approprié des tableaux à l'aide d'Aspose.Words pour .NET. Suivez notre guide détaillé pour des résultats parfaits. |
+| [Exporter vers Markdown avec alignement du contenu du tableau](./export-into-markdown-with-table-content-alignment/) | Découvrez comment exporter des documents Word vers Markdown avec des tableaux alignés à l'aide d'Aspose.Words pour .NET. Suivez notre guide étape par étape pour des tableaux Markdown parfaits. |
+| [Définir le dossier d'images](./set-images-folder/) | Convertissez des documents Word en Markdown avec un alignement de tableau approprié à l'aide d'Aspose.Words pour .NET. Suivez notre guide détaillé pour des résultats parfaits. |

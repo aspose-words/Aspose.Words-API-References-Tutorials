@@ -78,7 +78,7 @@ doc.Save(dataDir + "SplitDocument.ByHeadingsHtml.html", options);
 
 ## 結論
 
-現在你就得到它了！您已成功使用 Aspose.Words for .NET 按標題拆分 Word 文件並將其儲存為 HTML。此方法對於組織大型文件和建立分段 HTML 輸出非常有效，使您的內容更易於管理和存取。
+現在你就擁有了！您已成功使用 Aspose.Words for .NET 按標題拆分 Word 文件並將其儲存為 HTML。此方法對於組織大型文件和建立分段 HTML 輸出非常有效，使您的內容更易於管理和存取。
 
 ## 常見問題解答
 

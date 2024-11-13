@@ -18,7 +18,7 @@ Bevor wir mit dem Tutorial beginnen, stellen wir sicher, dass Sie alles haben, w
 -  Aspose.Words für .NET-Bibliothek: Sie können[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 - Visual Studio: Hier schreiben und führen wir unseren Code aus.
 - .NET Framework: Stellen Sie sicher, dass es auf Ihrem Computer installiert ist.
-- Grundkenntnisse in C#: Kenntnisse in der C#-Programmierung erleichtern Ihnen das Folgen.
+- Grundkenntnisse in C#: Kenntnisse in der C#-Programmierung erleichtern Ihnen den Lernprozess.
 
 Sobald diese Voraussetzungen erfüllt sind, können wir beginnen.
 
@@ -69,7 +69,7 @@ Document doc = new Document();
 2. Einen Absatz hinzufügen: Als Nächstes fügen wir dem Dokument einen Absatz hinzu.
 
 ```csharp
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+Paragraph para = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
 In diesem Absatz fügen wir unser Autorenfeld ein.
@@ -78,7 +78,7 @@ In diesem Absatz fügen wir unser Autorenfeld ein.
 
 Jetzt ist es Zeit, das Autorenfeld in unser Dokument einzufügen.
 
-### Anhängen des Autorenfelds
+### Anhängen des Autorfelds
 
 1.  Feld einfügen: Verwenden Sie die`AppendField` Methode zum Einfügen des Autorenfelds in den Absatz.
 

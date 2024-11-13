@@ -23,7 +23,7 @@ Než se ponoříme do toho nejhrubšího z kultury terénních aktualizací, je 
 
 4.  Aspose License: Pro plnou funkčnost budete možná potřebovat licenci. Můžete si jeden zakoupit[zde](https://purchase.aspose.com/buy) nebo získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
 
-5.  Přístup k dokumentaci a podpoře: Další pomoc získáte na[Aspose Documentation](https://reference.aspose.com/words/net/)a[Fórum podpory](https://forum.aspose.com/c/words/8) jsou skvělé zdroje.
+5.  Přístup k dokumentaci a podpoře: Další pomoc získáte na[Aspose Documentation](https://reference.aspose.com/words/net/) a[Fórum podpory](https://forum.aspose.com/c/words/8) jsou skvělé zdroje.
 
 ## Importovat jmenné prostory
 
@@ -75,7 +75,52 @@ doc.FieldOptions.FieldUpdateCultureProvider = new FieldUpdateCultureProvider();
 - `FieldUpdateCultureSource.FieldCode` říká Aspose.Words, aby pro aktualizace použil kulturu zadanou v kódu pole.
 - `FieldUpdateCultureProvider` umožňuje určit poskytovatele kultury pro aktualizace pole. Pokud potřebujete implementovat vlastního poskytovatele, můžete tuto třídu rozšířit.
 
-## Krok 4: Uložte dokument
+## Krok 4: Implementace poskytovatele vlastní kultury
+
+Nyní musíme implementovat poskytovatele vlastní jazykové verze, který bude řídit, jak se při aktualizaci pole použijí nastavení kultury, jako jsou formáty data.
+
+Vytvoříme třídu tzv`FieldUpdateCultureProvider` která implementuje`IFieldUpdateCultureProvider` rozhraní. Tato třída vrátí různé formáty kultury podle regionu. V tomto příkladu nakonfigurujeme nastavení ruské a americké kultury.
+
+```csharp
+private class FieldUpdateCultureProvider : IFieldUpdateCultureProvider
+{
+    public CultureInfo GetCulture(string name, Field field)
+    {
+        switch (name)
+        {
+            case "ru-RU":
+                CultureInfo culture = new CultureInfo(name, false);
+                DateTimeFormatInfo format = culture.DateTimeFormat;
+
+                format.MonthNames = new[] { "месяц 1", "месяц 2", "месяц 3", "месяц 4", "месяц 5", "месяц 6", "месяц 7", "месяц 8", "месяц 9", "месяц 10", "месяц 11", "месяц 12", "" };
+                format.MonthGenitiveNames = format.MonthNames;
+                format.AbbreviatedMonthNames = new[] { "мес 1", "мес 2", "мес 3", "мес 4", "мес 5", "мес 6", "мес 7", "мес 8", "мес 9", "мес 10", "мес 11", "мес 12", "" };
+                format.AbbreviatedMonthGenitiveNames = format.AbbreviatedMonthNames;
+
+                format.DayNames = new[] { "день недели 7", "день недели 1", "день недели 2", "день недели 3", "день недели 4", "день недели 5", "день недели 6" };
+                format.AbbreviatedDayNames = new[] { "день 7", "день 1", "день 2", "день 3", "день 4", "день 5", "день 6" };
+                format.ShortestDayNames = new[] { "д7", "д1", "д2", "д3", "д4", "д5", "д6" };
+
+                format.AMDesignator = "До полудня";
+                format.PMDesignator = "После полудня";
+
+                const string pattern = "yyyy MM (MMMM) dd (dddd) hh:mm:ss tt";
+                format.LongDatePattern = pattern;
+                format.LongTimePattern = pattern;
+                format.ShortDatePattern = pattern;
+                format.ShortTimePattern = pattern;
+
+                return culture;
+            case "en-US":
+                return new CultureInfo(name, false);
+            default:
+                return null;
+        }
+    }
+}
+```
+
+## Krok 5: Uložte dokument
 
 Nakonec uložte dokument do určeného adresáře. Tím zajistíte, že všechny vaše změny zůstanou zachovány.
 

@@ -41,7 +41,7 @@ public class DocumentCombination {
 
 ## Krok 2: Načtěte zdrojové dokumenty
 
-Dále budete muset načíst zdrojové dokumenty, které chcete zkombinovat. Můžete načíst více dokumentů do samostatných instancí souboru`Document` třída.
+ Dále budete muset načíst zdrojové dokumenty, které chcete zkombinovat. Můžete načíst více dokumentů do samostatných instancí souboru`Document` třída.
 
 ```java
 // Načíst zdrojové dokumenty

@@ -53,10 +53,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
  Musíme nakonfigurovat možnosti uložení PDF, abychom aktualizovali poslední vytištěnou vlastnost. Vytvořte novou instanci`PdfSaveOptions` a nastavte`UpdateLastPrintedProperty`majetek do`true`.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions 
-{ 
-	UpdateLastPrintedProperty = true 
-};
+PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
 ## Krok 5: Uložte dokument jako PDF

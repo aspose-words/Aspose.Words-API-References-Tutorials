@@ -2,7 +2,7 @@
 title: वर्ड डॉक्यूमेंट में ब्रेक डालें
 linktitle: वर्ड डॉक्यूमेंट में ब्रेक डालें
 second_title: Aspose.Words दस्तावेज़ प्रसंस्करण API
-description: इस विस्तृत गाइड के साथ .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ में ब्रेक डालना सीखें। दस्तावेज़ हेरफेर में महारत हासिल करने की चाहत रखने वाले डेवलपर्स के लिए बिल्कुल सही।
+description: इस विस्तृत गाइड के साथ .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ में ब्रेक कैसे डालें, यह जानें। दस्तावेज़ हेरफेर में महारत हासिल करने की चाहत रखने वाले डेवलपर्स के लिए यह बिल्कुल सही है।
 type: docs
 weight: 10
 url: /hi/net/add-content-using-documentbuilder/insert-break/
@@ -68,7 +68,7 @@ builder.Writeln("This is page 1.");
 
 ## चरण 5: पेज ब्रेक सम्मिलित करना
 
- अब आता है मज़ेदार हिस्सा। हमें अगले पेज पर जाने के लिए पेज ब्रेक डालना होगा। यह कॉल करने जितना ही सरल है`InsertBreak` तरीका।
+ अब आता है मज़ेदार हिस्सा। हमें अगले पेज पर जाने के लिए पेज ब्रेक डालना होगा। यह कॉल करने जितना ही सरल है।`InsertBreak` तरीका।
 
 ```csharp
 builder.InsertBreak(BreakType.PageBreak);
@@ -90,7 +90,7 @@ builder.Writeln("This is page 2.");
 builder.InsertBreak(BreakType.PageBreak);
 ```
 
-## चरण 8: तीसरे पृष्ठ के लिए सामग्री लिखना
+## चरण 8: तीसरे पेज के लिए सामग्री लिखना
 
 अंत में, आइए तीसरे पृष्ठ पर कुछ सामग्री जोड़ें।
 
@@ -106,7 +106,7 @@ builder.Writeln("This is page 3.");
 doc.Save(dataDir + "AddContentUsingDocumentBuilder.InsertBreak.docx");
 ```
 
-और बस, अब आपने Aspose.Words for .NET का उपयोग करके सफलतापूर्वक एक Word दस्तावेज़ बना लिया है और पेज ब्रेक डाल दिया है।
+और बस हो गया! आपने Aspose.Words for .NET का उपयोग करके सफलतापूर्वक एक Word दस्तावेज़ बना लिया है और पेज ब्रेक डाल दिया है।
 
 ## निष्कर्ष
 

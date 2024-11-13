@@ -9,7 +9,7 @@ url: /de/net/working-with-node/create-and-add-paragraph-node/
 ---
 ## Einführung
 
-Hallo, liebe Programmierer! Seid ihr bereit, in die wunderbare Welt der Dokumentbearbeitung mit Aspose.Words für .NET einzutauchen? Heute werden wir uns einer wichtigen Aufgabe widmen: Erstellen und Hinzufügen eines Absatzknotens zu Ihrem Dokument. Dies ist eine grundlegende Fähigkeit für jeden, der dynamische Dokumente programmgesteuert erstellen möchte. Egal, ob Sie Berichte erstellen, Rechnungen generieren oder schicke Word-Dokumente zusammenschustern, Sie müssen wissen, wie man mit Absätzen umgeht. Also krempeln wir die Ärmel hoch und legen los!
+Hallo, liebe Programmierer! Seid ihr bereit, in die wunderbare Welt der Dokumentbearbeitung mit Aspose.Words für .NET einzutauchen? Heute werden wir uns einer wichtigen Aufgabe widmen: Erstellen und Hinzufügen eines Absatzknotens zu Ihrem Dokument. Dies ist eine grundlegende Fähigkeit für jeden, der dynamische Dokumente programmgesteuert erstellen möchte. Egal, ob Sie Berichte erstellen, Rechnungen generieren oder schicke Word-Dokumente zusammenschustern, Sie müssen wissen, wie man mit Absätzen umgeht. Also, krempeln wir die Ärmel hoch und legen los!
 
 ## Voraussetzungen
 

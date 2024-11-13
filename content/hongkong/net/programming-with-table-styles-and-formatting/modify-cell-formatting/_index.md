@@ -53,7 +53,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-在這裡，我們使用的是`GetChild`方法取得文件中的第一個表。這`NodeType.Table`參數指定我們正在尋找一個表，並且`0`表示第一個表。這`true`參數確保搜尋深度，這意味著它將查找所有子節點。
+在這裡，我們使用的是`GetChild`方法取得文件中的第一個表格。這`NodeType.Table`參數指定我們正在尋找一個表，並且`0`表示第一個表。這`true`參數確保搜尋深度，這意味著它將查找所有子節點。
 
 ## 第 3 步：選擇第一個儲存格
 
@@ -97,7 +97,7 @@ firstCell.CellFormat.Shading.ForegroundPatternColor = Color.LightGreen;
 
 ## 結論
 
-現在你就得到它了！我們已經使用 Aspose.Words for .NET 成功修改了 Word 文件中的儲存格格式。從載入文件到應用程式陰影，每個步驟對於使文件看起來如您所願都至關重要。請記住，這些只是單元格格式可以執行的操作的幾個範例。 Aspose.Words for .NET 提供了大量其他功能可供探索。
+現在你就擁有了！我們已經使用 Aspose.Words for .NET 成功修改了 Word 文件中的儲存格格式。從載入文件到應用程式陰影，每個步驟對於使文件看起來如您所願都至關重要。請記住，這些只是單元格格式可以執行的操作的幾個範例。 Aspose.Words for .NET 提供了大量其他功能可供探索。
 
 ## 常見問題解答
 

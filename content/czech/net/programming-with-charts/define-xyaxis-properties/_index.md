@@ -78,7 +78,7 @@ Nyní je čas definovat vlastnosti pro osu X. To zahrnuje nastavení typu katego
 ChartAxis xAxis = chart.AxisX;
 xAxis.CategoryType = AxisCategoryType.Category;
 xAxis.Crosses = AxisCrosses.Custom;
-xAxis.CrossesAt = 3; //Měřeno v zobrazovacích jednotkách osy Y (stovky).
+xAxis.CrossesAt = 3; // Měřeno v zobrazovacích jednotkách osy Y (stovky).
 xAxis.ReverseOrder = true;
 xAxis.MajorTickMark = AxisTickMark.Cross;
 xAxis.MinorTickMark = AxisTickMark.Outside;
@@ -117,7 +117,7 @@ Vytváření a přizpůsobení grafů v dokumentech aplikace Word pomocí Aspose
 Můžete vytvářet různé typy grafů, včetně plošných, sloupcových, spojnicových, výsečových a dalších.
 
 ### Jak nainstaluji Aspose.Words for .NET?
- Aspose.Words for .NET si můžete stáhnout z[zde](https://releases.aspose.com/words/net/) a postupujte podle dodaných pokynů k instalaci.
+ Aspose.Words for .NET si můžete stáhnout z[zde](https://releases.aspose.com/words/net/) postupujte podle dodaných pokynů k instalaci.
 
 ### Mohu si přizpůsobit vzhled svých grafů?
 Ano, Aspose.Words for .NET umožňuje rozsáhlé přizpůsobení grafů, včetně barev, písem a vlastností os.

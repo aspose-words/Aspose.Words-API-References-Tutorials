@@ -100,13 +100,13 @@ Manchmal kann ein Textfeld Teil einer Kette sein, auf die andere Felder verweise
 textBox.Previous?.BreakForwardLink();
 ```
 
- Der`?.` Operator stellt sicher, dass die Methode nur aufgerufen wird, wenn`Previous` ist nicht null, wodurch potenzielle Laufzeitfehler vermieden werden.
+Der`?.` Operator stellt sicher, dass die Methode nur aufgerufen wird, wenn`Previous` ist nicht null, wodurch potenzielle Laufzeitfehler vermieden werden.
 
 ## Abschluss
 
 Und da haben Sie es! 🎉 Sie haben erfolgreich gelernt, wie Sie mit Aspose.Words für .NET Vorwärtslinks in Textfeldern unterbrechen. Egal, ob Sie ein Dokument bereinigen, es für ein neues Format vorbereiten oder einfach nur experimentieren, diese Schritte helfen Ihnen, Ihre Textfelder präzise zu verwalten. Links zu unterbrechen ist wie einen Knoten zu entwirren – manchmal notwendig, um die Dinge ordentlich und aufgeräumt zu halten. 
 
- Wenn Sie mehr darüber erfahren möchten, was Aspose.Words leisten kann,[Dokumentation](https://reference.aspose.com/words/net/) ist eine wahre Fundgrube an Informationen. Viel Spaß beim Programmieren und möge Ihre Dokumentation stets gut organisiert sein!
+ Wenn Sie mehr über die Möglichkeiten von Aspose.Words erfahren möchten,[Dokumentation](https://reference.aspose.com/words/net/) ist eine wahre Fundgrube an Informationen. Viel Spaß beim Programmieren und möge Ihre Dokumentation stets gut organisiert sein!
 
 ## FAQs
 
@@ -128,4 +128,4 @@ Das Unterbrechen von Links kann möglicherweise das Layout beeinträchtigen, ins
 
 ### Wo finde ich weitere Ressourcen zur Arbeit mit Aspose.Words?
 
- Weitere Informationen und Ressourcen finden Sie unter[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/)Und[Support-Forum](https://forum.aspose.com/c/words/8).
+ Weitere Informationen und Ressourcen finden Sie unter[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/) Und[Support-Forum](https://forum.aspose.com/c/words/8).

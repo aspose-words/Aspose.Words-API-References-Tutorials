@@ -64,7 +64,7 @@ builder.Writeln("This is an H1 tag");
 Po přidání našeho nadpisu musíme styly resetovat, abychom zajistili, že se nepřenesou do dalšího odstavce.
 
 ```csharp
-// Obnovte styly z předchozího odstavce, aby se styly mezi odstavci nekombinovaly.
+//Obnovte styly z předchozího odstavce, aby se styly mezi odstavci nekombinovaly.
 builder.Font.Bold = false;
 builder.Font.Italic = false;
 ```
@@ -94,7 +94,7 @@ builder.Writeln("This is an H3 tag");
 Stejně jako předtím musíme resetovat styly, abychom se vyhnuli nechtěnému formátování.
 
 ```csharp
-// Obnovte styly z předchozího odstavce, aby se styly mezi odstavci nekombinovaly.
+//Obnovte styly z předchozího odstavce, aby se styly mezi odstavci nekombinovaly.
 builder.Font.Bold = false;
 builder.Font.Italic = false;
 ```

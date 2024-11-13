@@ -134,7 +134,7 @@ class MultipagePrintDocument implements Printable
                     // ज्ञात स्केल फैक्टर का उपयोग करके स्केल किए गए पृष्ठ के चारों ओर बॉर्डर बनाएं।
                     g.setColor(Color.black);
                     g.drawRect(leftPos, topPos, (int) (pageSize.x * scale), (int) (pageSize.y * scale));
-                    // थम्बनेल प्लेसहोल्डर के चारों ओर बॉर्डर बनाएं.
+                    // थम्बनेल प्लेसहोल्डर के चारों ओर बॉर्डर बनाएं।
                     g.setColor(Color.red);
                     g.drawRect(leftPos, topPos, (int) thumbSize.x, (int) thumbSize.y);
                 }

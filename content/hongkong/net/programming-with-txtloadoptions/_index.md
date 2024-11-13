@@ -16,6 +16,6 @@ Aspose.Words for .NET 教學課程將引導您了解使用 Aspose.Words（一個
  ## 教學
 | 標題 | 描述 |
 | --- | --- |
-| [檢測帶有空格的編號](./detect-numbering-with-whitespaces/) | 了解如何使用 Aspose.Words for .NET 偵測純文字文件中帶有空格的編號，並確保正確識別您的清單。 |
+| [檢測帶有空格的編號](./detect-numbering-with-whitespaces/) | 了解如何使用 Aspose.Words for .NET 偵測純文字文件中帶有空格的編號並確保正確識別您的清單。 |
 | [處理空間選項](./handle-spaces-options/) | 了解如何使用 Aspose.Words for .NET 處理文字文件中的前導空格和尾隨空格。本教程提供了清理文字格式的指南。 |
 | [文檔文字方向](./document-text-direction/) | 透過此逐步指南，了解如何使用 Aspose.Words for .NET 在 Word 中設定文件文字方向。非常適合處理從右到左的語言。 |

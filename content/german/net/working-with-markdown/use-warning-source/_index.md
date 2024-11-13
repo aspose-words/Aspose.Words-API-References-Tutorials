@@ -2,7 +2,7 @@
 title: Warnquelle verwenden
 linktitle: Warnquelle verwenden
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Meistern Sie Aspose.Words für .NET mit dieser Schritt-für-Schritt-Anleitung zur Verwendung der WarningSource-Klasse zum Verarbeiten von Markdown-Warnungen. Perfekt für C#-Entwickler.
+description: Meistern Sie Aspose.Words für .NET mit dieser Schritt-für-Schritt-Anleitung zur Verwendung der WarningSource-Klasse zur Behandlung von Markdown-Warnungen. Perfekt für C#-Entwickler.
 type: docs
 weight: 10
 url: /de/net/working-with-markdown/use-warning-source/
@@ -102,7 +102,7 @@ Aspose.Words für .NET ist eine Bibliothek für die programmgesteuerte Arbeit mi
  Warnungsquellen geben den Ursprung von Warnungen an, die während der Dokumentverarbeitung generiert werden. Beispiel:`WarningSource.Markdown` zeigt eine Warnung bezüglich der Markdown-Verarbeitung an.
 
 ### Kann ich die Warnungsbehandlung in Aspose.Words anpassen?
- Ja, Sie können die Warnungsbehandlung anpassen, indem Sie Folgendes implementieren:`IWarningCallback`Schnittstelle und setzen Sie es auf die`WarningCallback` Eigentum.
+ Ja, Sie können die Warnungsbehandlung anpassen, indem Sie Folgendes implementieren:`IWarningCallback`Schnittstelle und Einstellung auf die des Dokuments`WarningCallback` Eigentum.
 
 ### Wie speichere ich mit Aspose.Words ein Dokument in verschiedenen Formaten?
- Sie können ein Dokument in verschiedenen Formaten (wie DOCX, PDF, Markdown) speichern mit dem`Save` Methode der`Document` Klasse, wobei das gewünschte Format als Parameter angegeben wird.
+ Sie können ein Dokument in verschiedenen Formaten (wie DOCX, PDF, Markdown) speichern, indem Sie`Save` Methode der`Document` Klasse, wobei das gewünschte Format als Parameter angegeben wird.

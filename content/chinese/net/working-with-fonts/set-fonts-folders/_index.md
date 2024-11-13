@@ -80,7 +80,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFolders.pdf");
 
 ## 结论
 
-就这样！您已成功在 Aspose.Words for .NET 中设置自定义字体文件夹，并使用这些自定义字体将文档保存为 PDF。很酷，对吧？自定义字体可以极大地改变文档的外观，现在您知道该怎么做了。祝您编码愉快！
+就这样！您已成功在 Aspose.Words for .NET 中设置自定义字体文件夹，并将文档保存为包含这些自定义字体的 PDF。很酷，对吧？自定义字体可以极大地改变文档的外观，现在您知道该怎么做了。祝您编码愉快！
 
 ## 常见问题解答
 

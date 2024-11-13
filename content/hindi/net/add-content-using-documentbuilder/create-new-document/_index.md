@@ -2,7 +2,7 @@
 title: नया वर्ड दस्तावेज़ बनाएँ
 linktitle: नया वर्ड दस्तावेज़ बनाएँ
 second_title: Aspose.Words दस्तावेज़ प्रसंस्करण API
-description: जानें कि .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ कैसे बनाएं। यह चरण-दर-चरण मार्गदर्शिका आपको प्रक्रिया के माध्यम से ले जाएगी, जिससे दस्तावेज़ स्वचालन आसान हो जाएगा।
+description: जानें कि .NET के लिए Aspose.Words का उपयोग करके Word दस्तावेज़ कैसे बनाएँ। यह चरण-दर-चरण मार्गदर्शिका आपको प्रक्रिया के माध्यम से ले जाएगी, जिससे दस्तावेज़ स्वचालन आसान हो जाएगा।
 type: docs
 weight: 10
 url: /hi/net/add-content-using-documentbuilder/create-new-document/

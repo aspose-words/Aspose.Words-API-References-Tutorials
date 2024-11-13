@@ -27,8 +27,8 @@ Naučte se exportovat dokumenty do PDF pomocí Aspose.Words for Java. Tento podr
 ### [Převod dokumentů do různých formátů](./converting-documents-different-formats/)
 Naučte se převádět dokumenty do různých formátů pomocí Aspose.Words for Java. Podrobný průvodce pro efektivní převod dokumentů.
 ### [Převod HTML na dokumenty](./converting-html-documents/)
-Naučte se, jak převést HTML na dokumenty Word v Javě pomocí Aspose.Words. Postupujte podle našeho podrobného průvodce pro bezproblémové zpracování dokumentů.
+Pomocí Aspose.Words for Java můžete snadno převádět dokumenty z HTML do Wordu. Naučte se, jak tuto konverzi provést v několika krocích, pomocí našeho komplexního průvodce.
 ### [Konverze dokumentů pomocí SaveOptions](./document-conversion-saveoptions/)
-Naučte se konverzi dokumentů pomocí Aspose.Words v Javě. Podrobný průvodce, příklady kódu a často kladené otázky pro bezproblémový převod Wordu do PDF.
+Efektivně převádějte DOCX na EPUB pomocí Aspose.Words for Java. V tomto podrobném průvodci se dozvíte, jak přizpůsobit možnosti ukládání, rozdělit obsah a exportovat vlastnosti dokumentu.
 ### [Převod dokumentů na obrázky](./converting-documents-images/)
-Naučte se převádět dokumenty na obrázky pomocí Aspose.Words for Java. Podrobný průvodce pro vývojáře Java.
+Naučte se převádět dokumenty aplikace Word na obrázky pomocí Aspose.Words for Java. Podrobný průvodce, doplněný příklady kódu a často kladenými dotazy.

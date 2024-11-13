@@ -32,7 +32,7 @@ Lassen Sie uns den Prozess in leicht verständliche Schritte unterteilen.
 
 ## Schritt 1: Initialisieren Sie das Dokument
 
-Der erste Schritt besteht darin, Ihr Word-Dokument zu laden. So geht's:
+Der erste Schritt besteht darin, Ihr Word-Dokument zu laden. So können Sie es tun:
 
 ```csharp
 // Der Pfad zum Dokumentverzeichnis.
@@ -52,7 +52,7 @@ saveOptions.OutlineOptions.DefaultBookmarksOutlineLevel = 1;
 saveOptions.HeaderFooterBookmarksExportMode = HeaderFooterBookmarksExportMode.First;
 ```
 
- Hier richten wir die`PdfSaveOptions` . Der`DefaultBookmarksOutlineLevel` Eigenschaft legt die Gliederungsebene für Lesezeichen fest, und die`HeaderFooterBookmarksExportMode` -Eigenschaft stellt sicher, dass nur das erste Vorkommen von Lesezeichen in Kopf- und Fußzeilen exportiert wird.
+ Hier richten wir die`PdfSaveOptions` . Der`DefaultBookmarksOutlineLevel` legt die Gliederungsebene für Lesezeichen fest, und die`HeaderFooterBookmarksExportMode` -Eigenschaft stellt sicher, dass nur das erste Vorkommen von Lesezeichen in Kopf- und Fußzeilen exportiert wird.
 
 ## Schritt 3: Speichern Sie das Dokument als PDF
 
@@ -66,7 +66,7 @@ In diesem Schritt speichern Sie das Dokument mit den von Ihnen konfigurierten Op
 
 ## Abschluss
 
-Und da haben Sie es! Indem Sie diese Schritte befolgen, können Sie Lesezeichen aus den Kopf- und Fußzeilen eines Word-Dokuments mit Aspose.Words für .NET problemlos in ein PDF exportieren. Diese Methode stellt sicher, dass wichtige Navigationshilfen in Ihrem Dokument im PDF-Format erhalten bleiben, was den Lesern die Navigation durch Ihr Dokument erleichtert.
+Und da haben Sie es! Indem Sie diese Schritte befolgen, können Sie Lesezeichen aus den Kopf- und Fußzeilen eines Word-Dokuments mit Aspose.Words für .NET problemlos in ein PDF exportieren. Diese Methode stellt sicher, dass wichtige Navigationshilfen in Ihrem Dokument im PDF-Format erhalten bleiben, sodass die Leser leichter durch Ihr Dokument navigieren können.
 
 ## Häufig gestellte Fragen
 

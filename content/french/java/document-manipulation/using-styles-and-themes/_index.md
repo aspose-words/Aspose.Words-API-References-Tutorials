@@ -1,8 +1,8 @@
 ---
-title: Utilisation de styles et de thèmes dans Aspose.Words pour Java
-linktitle: Utiliser des styles et des thèmes
+title: Utilisation des styles et des thèmes dans Aspose.Words pour Java
+linktitle: Utilisation des styles et des thèmes
 second_title: API de traitement de documents Java Aspose.Words
-description: Découvrez comment améliorer le formatage des documents avec Aspose.Words pour Java. Explorez les styles, les thèmes et bien plus encore dans ce guide complet avec des exemples de code source.
+description: Découvrez comment améliorer la mise en forme des documents avec Aspose.Words pour Java. Explorez les styles, les thèmes et bien plus encore dans ce guide complet avec des exemples de code source.
 type: docs
 weight: 20
 url: /fr/java/document-manipulation/using-styles-and-themes/
@@ -10,16 +10,16 @@ url: /fr/java/document-manipulation/using-styles-and-themes/
 
 ## Introduction à l'utilisation des styles et des thèmes dans Aspose.Words pour Java
 
-Dans ce guide, nous explorerons comment utiliser les styles et les thèmes dans Aspose.Words for Java pour améliorer le formatage et l'apparence de vos documents. Nous aborderons des sujets tels que la récupération de styles, la copie de styles, la gestion de thèmes et l'insertion de séparateurs de style. Commençons !
+Dans ce guide, nous allons découvrir comment travailler avec des styles et des thèmes dans Aspose.Words pour Java pour améliorer la mise en forme et l'apparence de vos documents. Nous aborderons des sujets tels que la récupération de styles, la copie de styles, la gestion de thèmes et l'insertion de séparateurs de styles. Commençons !
 
-## Récupération de styles
+## Récupération des styles
 
-Pour récupérer les styles d'un document, vous pouvez utiliser l'extrait de code Java suivant :
+Pour récupérer les styles d’un document, vous pouvez utiliser l’extrait de code Java suivant :
 
 ```java
 Document doc = new Document();
 String styleName = "";
-//Récupère la collection de styles à partir du document.
+//Obtenir la collection de styles à partir du document.
 StyleCollection styles = doc.getStyles();
 for (Style style : styles)
 {
@@ -38,9 +38,9 @@ for (Style style : styles)
 
 Ce code récupère les styles définis dans le document et imprime leurs noms.
 
-## Copie de styles
+## Copier les styles
 
- Pour copier des styles d'un document à un autre, vous pouvez utiliser l'outil`copyStylesFromTemplate` méthode comme indiqué ci-dessous :
+ Pour copier des styles d'un document à un autre, vous pouvez utiliser le`copyStylesFromTemplate` méthode comme indiqué ci-dessous :
 
 ```java
 @Test
@@ -57,7 +57,7 @@ Ce code copie les styles d'un document modèle vers le document actuel.
 
 ## Gestion des thèmes
 
-Les thèmes sont essentiels pour définir l’apparence générale de votre document. Vous pouvez récupérer et définir les propriétés du thème comme illustré dans le code suivant :
+Les thèmes sont essentiels pour définir l'apparence générale de votre document. Vous pouvez récupérer et définir les propriétés du thème comme illustré dans le code suivant :
 
 ```java
 @Test
@@ -84,7 +84,7 @@ Ces extraits montrent comment récupérer et modifier les propriétés du thème
 
 ## Insertion de séparateurs de style
 
-Les séparateurs de style sont utiles pour appliquer différents styles dans un seul paragraphe. Voici un exemple de la façon d'insérer des séparateurs de style :
+Les séparateurs de style sont utiles pour appliquer différents styles dans un même paragraphe. Voici un exemple d'insertion de séparateurs de style :
 
 ```java
 @Test
@@ -96,18 +96,18 @@ public void insertStyleSeparator() throws Exception
     paraStyle.getFont().setBold(false);
     paraStyle.getFont().setSize(8.0);
     paraStyle.getFont().setName("Arial");
-    // Ajoutez du texte avec le style « Titre 1 ».
+    // Ajoutez du texte avec le style « Titre 1 ».
     builder.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_1);
     builder.write("Heading 1");
     builder.insertStyleSeparator();
-    // Ajoutez du texte avec un autre style.
+    // Ajouter du texte avec un autre style.
     builder.getParagraphFormat().setStyleName(paraStyle.getName());
     builder.write("This is text with some other formatting ");
     doc.save("Your Directory Path" + "WorkingWithStylesAndThemes.InsertStyleSeparator.docx");
 }
 ```
 
-Dans ce code, nous créons un style de paragraphe personnalisé et insérons un séparateur de style pour changer de style au sein du même paragraphe.
+Dans ce code, nous créons un style de paragraphe personnalisé et insérons un séparateur de style pour changer de style dans le même paragraphe.
 
 ## Conclusion
 
@@ -120,10 +120,10 @@ Ce guide a couvert les bases de l'utilisation des styles et des thèmes dans Asp
 
 Vous pouvez récupérer les propriétés du thème en accédant à l'objet thème et à ses propriétés.
 
-### Comment puis-je définir les propriétés du thème, telles que les polices et les couleurs ?
+### Comment puis-je définir les propriétés du thème, telles que les polices et les couleurs ?
 
 Vous pouvez définir les propriétés du thème en modifiant les propriétés de l'objet thème.
 
-### Comment puis-je utiliser des séparateurs de style pour changer de style dans un même paragraphe ?
+### Comment puis-je utiliser des séparateurs de style pour changer de style dans le même paragraphe ?
 
- Vous pouvez insérer des séparateurs de style à l'aide de l'outil`insertStyleSeparator` méthode du`DocumentBuilder` classe.
+ Vous pouvez insérer des séparateurs de style à l'aide de la`insertStyleSeparator` méthode de la`DocumentBuilder` classe.

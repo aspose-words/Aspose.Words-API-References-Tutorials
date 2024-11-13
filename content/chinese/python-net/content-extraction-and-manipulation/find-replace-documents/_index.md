@@ -2,7 +2,7 @@
 title: Word 文档中的高级查找和替换技术
 linktitle: Word 文档中的高级查找和替换技术
 second_title: Aspose.Words Python 文档管理 API
-description: 学习使用 Aspose.Words for Python 在 Word 文档中进行高级查找和替换的技术。替换文本、使用正则表达式、格式化等。
+description: 学习使用 Aspose.Words for Python 在 Word 文档中高级查找和替换技术。替换文本、使用正则表达式、格式化等。
 type: docs
 weight: 12
 url: /zh/python-net/content-extraction-and-manipulation/find-replace-documents/
@@ -62,7 +62,7 @@ replacement = "XXX-XX-XXXX"
 doc.range.replace(aw.Regex(pattern), replacement)
 ```
 
-## 第五步：有条件替换
+## 第 5 步：有条件替换
 
 根据具体情况进行更换：
 
@@ -106,7 +106,7 @@ doc.save("path/to/save/document.docx")
 
 ### 我可以仅替换特定页面范围内的文本吗？
 
-是的，你可以。在执行替换之前，请使用`doc.get_child_nodes()`方法获取特定页面的内容。
+是的，你可以。在执行替换之前，使用`doc.get_child_nodes()`方法获取特定页面的内容。
 
 ### 是否可以撤消查找和替换操作？
 

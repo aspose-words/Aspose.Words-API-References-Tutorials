@@ -114,7 +114,7 @@ Tím se dokument uloží se zadaným názvem a zajistí se zachování grafu s f
 
 ## Závěr
 
-Formátování štítků dat v grafu pomocí Aspose.Words for .NET může výrazně zlepšit čitelnost a profesionalitu vašich dokumentů aplikace Word. Podle tohoto podrobného průvodce byste nyní měli být schopni vytvořit graf, přidat datové řady a formátovat štítky dat tak, aby vyhovovaly vašim potřebám. Aspose.Words for .NET je výkonný nástroj, který umožňuje rozsáhlé přizpůsobení a automatizaci dokumentů aplikace Word, což z něj činí neocenitelnou výhodu pro vývojáře .NET.
+Formátování štítků dat v grafu pomocí Aspose.Words for .NET může výrazně zlepšit čitelnost a profesionalitu vašich dokumentů aplikace Word. Podle tohoto podrobného průvodce byste nyní měli být schopni vytvořit graf, přidat datové řady a formátovat štítky dat tak, aby vyhovovaly vašim potřebám. Aspose.Words for .NET je výkonný nástroj, který umožňuje rozsáhlé přizpůsobení a automatizaci dokumentů aplikace Word, což z něj činí neocenitelný přínos pro vývojáře .NET.
 
 ## FAQ
 
@@ -125,7 +125,7 @@ Aspose.Words for .NET je výkonná knihovna pro vytváření, manipulaci a konve
 Ano, Aspose.Words for .NET podporuje různé typy grafů, včetně pruhových, sloupcových, výsečových a dalších.
 
 ### Jak získám dočasnou licenci pro Aspose.Words for .NET?
- Můžete získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
+Můžete získat dočasnou licenci[zde](https://purchase.aspose.com/temporary-license/).
 
 ### Je možné propojit datové štítky se zdrojovými buňkami v Excelu?
 Ano, můžete propojit datové štítky se zdrojovými buňkami, což umožňuje zdědění číselného formátu ze zdrojové buňky.

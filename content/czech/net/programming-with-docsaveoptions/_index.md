@@ -1,6 +1,6 @@
 ---
-title: Zpracování textu s možnostmi Docsave
-linktitle: Zpracování textu s možnostmi Docsave
+title: Zpracování textu s DocSaveOptions
+linktitle: Zpracování textu s DocSaveOptions
 second_title: Aspose.Words API pro zpracování dokumentů
 description: Naučte se, jak upravit možnosti ukládání pro dokumenty Word pomocí Aspose.Words for .NET. Výukové programy vás provedou různými dostupnými možnostmi, jako je formát souboru, komprese, ochrana heslem.
 type: docs

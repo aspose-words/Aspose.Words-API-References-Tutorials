@@ -112,7 +112,7 @@ Egal, ob Sie eine komplexe Lösung zur Dokumentenautomatisierung entwickeln oder
 Ja, Aspose.Words für .NET ist mit jeder .NET-Sprache kompatibel, einschließlich VB.NET und F#.
 
 ### Ist Aspose.Words für .NET kostenlos?
-Aspose.Words für .NET bietet eine kostenlose Testversion, aber für die volle Funktionalität müssen Sie eine Lizenz erwerben. Sie können eine temporäre Lizenz erhalten[Hier](https://purchase.aspose.com/temporary-license/).
+Aspose.Words für .NET bietet eine kostenlose Testversion, für die volle Funktionalität müssen Sie jedoch eine Lizenz erwerben. Sie können eine temporäre Lizenz erhalten[Hier](https://purchase.aspose.com/temporary-license/).
 
 ### Kann ich mit Aspose.Words für .NET andere Elemente in einem Word-Dokument bearbeiten?
 Auf jeden Fall! Mit Aspose.Words für .NET können Sie Text, Bilder, Tabellen und viele andere Elemente in einem Word-Dokument bearbeiten.

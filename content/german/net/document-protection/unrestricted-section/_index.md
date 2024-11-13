@@ -2,14 +2,14 @@
 title: Uneingeschränkter Abschnitt im Word-Dokument
 linktitle: Uneingeschränkter Abschnitt im Word-Dokument
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Entsperren Sie mit dieser Schritt-für-Schritt-Anleitung bestimmte Abschnitte in Ihrem Word-Dokument mit Aspose.Words für .NET. Perfekt zum Schutz vertraulicher Inhalte.
+description: Entsperren Sie mit Aspose.Words für .NET mit dieser Schritt-für-Schritt-Anleitung bestimmte Abschnitte in Ihrem Word-Dokument. Perfekt zum Schutz vertraulicher Inhalte.
 type: docs
 weight: 10
 url: /de/net/document-protection/unrestricted-section/
 ---
 ## Einführung
 
-Hallo! Bereit, in die Welt von Aspose.Words für .NET einzutauchen? Heute beschäftigen wir uns mit etwas ganz Praktischem: Wie Sie bestimmte Abschnitte in einem Word-Dokument entsperren und gleichzeitig andere Teile schützen können. Wenn Sie schon einmal einige Abschnitte Ihres Dokuments schützen, andere aber zum Bearbeiten offen lassen mussten, ist dieses Tutorial genau das Richtige für Sie. Lassen Sie uns anfangen!
+Hallo! Bereit, in die Welt von Aspose.Words für .NET einzutauchen? Heute beschäftigen wir uns mit etwas ganz Praktischem: Wie Sie bestimmte Abschnitte in einem Word-Dokument entsperren und gleichzeitig andere Teile schützen. Wenn Sie schon einmal einige Abschnitte Ihres Dokuments schützen, andere aber zum Bearbeiten offen lassen mussten, ist dieses Tutorial genau das Richtige für Sie. Lassen Sie uns anfangen!
 
 ## Voraussetzungen
 
@@ -30,7 +30,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Lassen Sie es uns jetzt Schritt für Schritt aufschlüsseln!
+Lassen Sie es uns nun Schritt für Schritt aufschlüsseln!
 
 ## Schritt 1: Richten Sie Ihr Projekt ein
 
@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Der`Document` Klasse initialisiert ein neues Dokument und die`DocumentBuilder` hilft uns, unserem Dokument einfach Inhalte hinzuzufügen.
+Der`Document` Klasse initialisiert ein neues Dokument und die`DocumentBuilder` hilft uns, unserem Dokument einfach Inhalte hinzuzufügen.
 
 ## Schritt 2: Abschnitte einfügen
 
@@ -76,7 +76,7 @@ builder.InsertBreak(BreakType.SectionBreakContinuous);
 builder.Writeln("Section 2. Protected.");
 ```
 
- Der`InsertBreak` Methode fügt einen fortlaufenden Abschnittsumbruch ein, sodass wir für jeden Abschnitt unterschiedliche Einstellungen vornehmen können.
+Der`InsertBreak` Methode fügt einen fortlaufenden Abschnittsumbruch ein, sodass wir für jeden Abschnitt unterschiedliche Einstellungen vornehmen können.
 
 ## Schritt 3: Schützen Sie das Dokument
 

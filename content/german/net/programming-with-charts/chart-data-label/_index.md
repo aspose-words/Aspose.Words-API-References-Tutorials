@@ -1,6 +1,6 @@
 ---
-title: Diagrammdatenbeschriftung anpassen
-linktitle: Diagrammdatenbeschriftung anpassen
+title: Anpassen der Diagrammdatenbeschriftung
+linktitle: Anpassen der Diagrammdatenbeschriftung
 second_title: Aspose.Words Dokumentverarbeitungs-API
 description: Erfahren Sie in einer Schritt-für-Schritt-Anleitung, wie Sie Diagrammdatenbeschriftungen mit Aspose.Words für .NET anpassen. Perfekt für .NET-Entwickler.
 type: docs

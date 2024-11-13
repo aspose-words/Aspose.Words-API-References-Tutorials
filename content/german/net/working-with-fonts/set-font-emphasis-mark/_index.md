@@ -50,7 +50,7 @@ DocumentBuilder builder = new DocumentBuilder(document);
 Wenn der DocumentBuilder bereit ist, können Sie nun das Hervorhebungszeichen für die Schriftart festlegen. In diesem Beispiel verwenden wir das Hervorhebungszeichen „UnderSolidCircle“.
 
 ```csharp
-// Festlegen des Hervorhebungszeichens für die Schriftart
+// Festlegen des Hervorhebungszeichens für die Schrift
 builder.Font.EmphasisMark = EmphasisMark.UnderSolidCircle;
 
 // Schreiben Sie Text mit dem Hervorhebungszeichen
@@ -97,7 +97,7 @@ Hervorhebungszeichen sind spezielle Symbole, die einem Text hinzugefügt werden,
 
  Aspose.Words für .NET erfordert eine Lizenz für die volle Funktionalität. Sie können eine kostenlose Testversion erhalten[Hier](https://releases.aspose.com/) oder eine Lizenz erwerben[Hier](https://purchase.aspose.com/buy).
 
-### Wie erhalte ich Support für Aspose.Words für .NET?
+### Wie kann ich Support für Aspose.Words für .NET erhalten?
 
  Sie können Unterstützung von der Aspose-Community und dem Support-Team erhalten, indem Sie deren[Support-Forum](https://forum.aspose.com/c/words/8).
 

@@ -44,7 +44,7 @@ In dieser Anleitung führen wir Sie durch den Prozess zum Abrufen von Designeige
 Document doc = new Document();
 ```
 
- Erstellen eines neuen`Document` Das Objekt initialisiert ein leeres Word-Dokument, das für den Abruf seiner Designeigenschaften wichtig ist.
+ Erstellen eines neuen`Document` Das Objekt initialisiert ein leeres Word-Dokument, was für den Abruf seiner Designeigenschaften wichtig ist.
 
 ## Schritt 2: Zugriff auf das Designobjekt
 
@@ -64,7 +64,7 @@ Designs in Word-Dokumenten enthalten häufig Einstellungen für verschiedene Sch
 Console.WriteLine(theme.MajorFonts.Latin);
 ```
 
- Der`MajorFonts` -Eigenschaft bietet Zugriff auf die wichtigsten Schriftarteinstellungen. In diesem Beispiel rufen wir speziell die im Design verwendete lateinische Schriftart ab. Sie können ähnlichen Code verwenden, um andere wichtige Schriftarten wie ostasiatische oder komplexe Skriptschriftarten abzurufen.
+Der`MajorFonts` -Eigenschaft bietet Zugriff auf die wichtigsten Schriftarteinstellungen. In diesem Beispiel rufen wir speziell die im Design verwendete lateinische Schriftart ab. Sie können ähnlichen Code verwenden, um andere wichtige Schriftarten wie ostasiatische oder komplexe Skriptschriftarten abzurufen.
 
 ## Schritt 4: Kleinere Schriftarten abrufen
 
@@ -74,7 +74,7 @@ Zusätzlich zu den Hauptschriften definieren Designs auch Nebenschriften für ve
 Console.WriteLine(theme.MinorFonts.EastAsian);
 ```
 
- Durch den Zugriff`MinorFonts`können Sie Details zu den Schriftarten abrufen, die für die verschiedenen Sprachskripte verwendet werden. So können Sie einen konsistenten Stil in verschiedenen Sprachen sicherstellen.
+ Durch den Zugriff`MinorFonts`können Sie Details zu den Schriftarten abrufen, die für die verschiedenen Sprachskripte verwendet werden. Dies hilft Ihnen dabei, einen konsistenten Stil in verschiedenen Sprachen sicherzustellen.
 
 ## Schritt 5: Akzentfarben abrufen
 
@@ -84,7 +84,7 @@ Designs definieren auch verschiedene Farben, die für Akzente im Dokument verwen
 Console.WriteLine(theme.Colors.Accent1);
 ```
 
- Der`Colors` Eigentum der`Theme` Mit der Klasse können Sie verschiedene im Design definierte Farbakzente abrufen und so einheitliche Farbschemata in Ihren Dokumenten verwalten und anwenden.
+Der`Colors` Eigentum der`Theme` Mit der Klasse können Sie verschiedene im Design definierte Farbakzente abrufen und so einheitliche Farbschemata in Ihren Dokumenten verwalten und anwenden.
 
 ## Abschluss
 

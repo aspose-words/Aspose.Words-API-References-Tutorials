@@ -1,6 +1,6 @@
 ---
-title: Změňte styl obsahu v dokumentu aplikace Word
-linktitle: Změňte styl obsahu v dokumentu aplikace Word
+title: Změnit styl obsahu v dokumentu aplikace Word
+linktitle: Změnit styl obsahu v dokumentu aplikace Word
 second_title: Aspose.Words API pro zpracování dokumentů
 description: Naučte se, jak změnit styl obsahu v dokumentech aplikace Word pomocí Aspose.Words for .NET, pomocí tohoto podrobného průvodce. Přizpůsobte si svůj TOC bez námahy.
 type: docs

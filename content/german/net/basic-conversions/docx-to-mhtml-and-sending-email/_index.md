@@ -1,6 +1,6 @@
 ---
-title: Docx in Mhtml konvertieren und E-Mail senden
-linktitle: Docx in Mhtml konvertieren und E-Mail senden
+title: Konvertieren Sie Docx in Mhtml und senden Sie eine E-Mail
+linktitle: Konvertieren Sie Docx in Mhtml und senden Sie eine E-Mail
 second_title: Aspose.Words Dokumentverarbeitungs-API
 description: Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie DOCX in MHTML konvertieren und E-Mails mit Aspose.Words für .NET versenden. Steigern Sie Ihre Produktivität mit einfacher Automatisierung.
 type: docs
@@ -9,13 +9,13 @@ url: /de/net/basic-conversions/docx-to-mhtml-and-sending-email/
 ---
 ## Einführung
 
-Im heutigen digitalen Zeitalter ist das Konvertieren von Dokumenten von einem Format in ein anderes und deren Versand per E-Mail eine gängige Aufgabe. Dieser Artikel führt Sie durch den Prozess der Konvertierung einer DOCX-Datei in das MHTML-Format und des anschließenden Versands per E-Mail mit Aspose.Words für .NET. Wir werden jeden Schritt in einer detaillierten, leicht verständlichen Anleitung aufschlüsseln, damit Sie den Prozess von Anfang bis Ende verstehen. Lassen Sie uns eintauchen!
+Im heutigen digitalen Zeitalter ist das Konvertieren von Dokumenten von einem Format in ein anderes und das Versenden per E-Mail eine gängige Aufgabe. Dieser Artikel führt Sie durch den Prozess der Konvertierung einer DOCX-Datei in das MHTML-Format und des anschließenden Versendens als E-Mail mit Aspose.Words für .NET. Wir werden jeden Schritt in einer detaillierten, leicht verständlichen Anleitung aufschlüsseln, damit Sie den Prozess von Anfang bis Ende verstehen. Lassen Sie uns eintauchen!
 
 ## Voraussetzungen
 
 Bevor wir beginnen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
-1. Aspose.Words für .NET: Laden Sie die Aspose.Words für .NET-Bibliothek herunter und installieren Sie sie von der[Aspose-Veröffentlichungsseite](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET: Laden Sie die Aspose.Words für .NET-Bibliothek herunter und installieren Sie sie von der[Aspose-Veröffentlichungsseite](https://releases.aspose.com/words/net/).
 2.  Aspose.Email für .NET: Laden Sie die Aspose.Email für .NET-Bibliothek herunter und installieren Sie sie von der[Aspose-Veröffentlichungsseite](https://releases.aspose.com/email/net/).
 3. .NET Framework: Stellen Sie sicher, dass .NET Framework auf Ihrem Computer installiert ist.
 4. SMTP-Server: Sie benötigen Zugriff auf einen SMTP-Server, um E-Mails zu senden.
@@ -58,7 +58,7 @@ stream.Position = 0;
 
 ## Schritt 3: Erstellen Sie eine E-Mail-Nachricht
 
-Erstellen Sie nun eine E-Mail-Nachricht aus dem MHTML-Stream mit Aspose.Email. Sie verwenden die`MailMessage` Klasse für diesen Zweck.
+ Erstellen Sie nun eine E-Mail-Nachricht aus dem MHTML-Stream mit Aspose.Email. Sie verwenden die`MailMessage` Klasse für diesen Zweck.
 
 ```csharp
 // Erstellen Sie eine Aspose.Email MIME-E-Mail-Nachricht aus dem Stream.
@@ -70,7 +70,7 @@ message.Subject = "Aspose.Words + Aspose.Email MHTML Test Message";
 
 ## Schritt 4: Senden Sie die E-Mail
 
- Senden Sie die E-Mail abschließend mit einem SMTP-Client. Konfigurieren Sie den SMTP-Client mit Ihren SMTP-Serverdetails und verwenden Sie die`Send` Methode zum Senden der Nachricht.
+Senden Sie die E-Mail abschließend mit einem SMTP-Client. Konfigurieren Sie den SMTP-Client mit Ihren SMTP-Serverdetails und verwenden Sie die`Send` Methode zum Senden der Nachricht.
 
 ```csharp
 // Senden Sie die Nachricht mit Aspose.Email.
@@ -89,13 +89,13 @@ Herzlichen Glückwunsch! Sie haben ein DOCX-Dokument erfolgreich in MHTML konver
 Ja, Aspose.Words unterstützt verschiedene Formate und Sie können Dokumente wie DOC, DOCX, RTF und mehr in MHTML konvertieren.
 
 ### Wie kann ich der E-Mail Anhänge hinzufügen?
- Sie können die`Attachments` Eigentum der`MailMessage`Klasse, um Ihrer E-Mail Anhänge hinzuzufügen.
+ Sie können die`Attachments` Eigentum der`MailMessage` Klasse, um Ihrer E-Mail Anhänge hinzuzufügen.
 
 ### Ist Aspose.Words mit .NET Core kompatibel?
 Ja, Aspose.Words ist mit .NET Core kompatibel. Sie können es auch in .NET Core-Anwendungen verwenden.
 
 ### Benötige ich eine Lizenz für Aspose.Words und Aspose.Email?
- Ja, beide Bibliotheken benötigen Lizenzen. Sie können eine temporäre Lizenz von der[Aspose-Kaufseite](https://purchase.aspose.com/temporary-license/) zu Auswertungszwecken.
+Ja, beide Bibliotheken benötigen Lizenzen. Sie können eine temporäre Lizenz von der[Aspose-Kaufseite](https://purchase.aspose.com/temporary-license/) zu Auswertungszwecken.
 
 ### Wo finde ich weitere Dokumentation?
  Eine ausführliche Dokumentation zu Aspose.Words finden Sie[Hier](https://reference.aspose.com/words/net/) und für Aspose.Email[Hier](https://reference.aspose.com/email/net/).

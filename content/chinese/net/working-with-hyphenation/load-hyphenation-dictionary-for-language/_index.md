@@ -42,7 +42,7 @@ using Aspose.Words.Hyphenation;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-代替`"YOUR DOCUMENT DIRECTORY"`使用包含您的文件的目录的路径。
+代替`"YOUR DOCUMENT DIRECTORY"`使用包含文件的目录路径。
 
 ## 步骤 2：加载文档
 

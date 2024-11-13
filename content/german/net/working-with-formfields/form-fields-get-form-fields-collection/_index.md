@@ -39,7 +39,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Form fields.docx");
 ```
 
- Erläuterung: Hier`dataDir` ist der Pfad zu Ihrem Verzeichnis, das das Word-Dokument enthält. Wir erstellen ein neues`Document` Objekt und laden Sie die Datei`Form fields.docx`.
+ Erläuterung: Hier`dataDir` ist der Pfad zu Ihrem Verzeichnis, in dem sich das Word-Dokument befindet. Wir erstellen ein neues`Document` Objekt und laden Sie die Datei`Form fields.docx`.
 
 ## Schritt 2: Holen Sie sich die Formularfelder-Sammlung
 

@@ -53,10 +53,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
  Πρέπει να διαμορφώσουμε τις επιλογές αποθήκευσης PDF για να ενημερώσουμε την τελευταία εκτυπωμένη ιδιότητα. Δημιουργήστε μια νέα παρουσία του`PdfSaveOptions` και ρυθμίστε το`UpdateLastPrintedProperty`ιδιοκτησία σε`true`.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions 
-{ 
-	UpdateLastPrintedProperty = true 
-};
+PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
 ## Βήμα 5: Αποθηκεύστε το Έγγραφο ως PDF

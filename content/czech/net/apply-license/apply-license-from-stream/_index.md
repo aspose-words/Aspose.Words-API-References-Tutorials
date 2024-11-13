@@ -80,7 +80,7 @@ catch (Exception e)
 
 ## Závěr
 
- tady to máte! Použití licence ze streamu v Aspose.Words for .NET je jednoduchý proces, jakmile znáte kroky. Budete-li se řídit tímto průvodcem, zajistíte, že vaše aplikace bude moci využívat všechny možnosti Aspose.Words bez jakýchkoli omezení. Pokud narazíte na nějaké problémy, neváhejte se podívat na[dokumentace](https://reference.aspose.com/words/net/) nebo vyhledejte pomoc na[fórum podpory](https://forum.aspose.com/c/words/8). Šťastné kódování!
+ A tady to máte! Použití licence ze streamu v Aspose.Words for .NET je jednoduchý proces, jakmile znáte kroky. Budete-li se řídit tímto průvodcem, zajistíte, že vaše aplikace bude moci využívat všechny možnosti Aspose.Words bez jakýchkoli omezení. Pokud narazíte na nějaké problémy, neváhejte se podívat na[dokumentace](https://reference.aspose.com/words/net/) nebo vyhledejte pomoc na[fórum podpory](https://forum.aspose.com/c/words/8). Šťastné kódování!
 
 ## FAQ
 

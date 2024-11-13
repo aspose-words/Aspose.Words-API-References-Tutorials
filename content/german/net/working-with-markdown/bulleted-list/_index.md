@@ -90,7 +90,7 @@ Experimentieren Sie mit verschiedenen Listenstilen und -formaten, um Ihren Anfor
     Verwenden Sie die`ListIndent` Methode, um weitere Ebenen hinzuzufügen und`ListOutdent` um auf eine höhere Ebene zurückzukehren.
 
 ### Ist es möglich, Aufzählungs- und Nummerierungslisten zu mischen?
-   Auf jeden Fall! Sie können zwischen Aufzählungszeichen- und Nummerierungsformaten wechseln, indem Sie`ApplyNumberDefault`Und`ApplyBulletDefault` Methoden.
+   Auf jeden Fall! Sie können zwischen Aufzählungszeichen- und Nummerierungsformaten wechseln, indem Sie`ApplyNumberDefault` Und`ApplyBulletDefault` Methoden.
 
 ### Kann ich den Text in den Listenelementen formatieren?
     Ja, Sie können verschiedene Stile, Schriftarten und Formatierungen auf den Text in Listenelementen anwenden, indem Sie`Font` Eigentum der`DocumentBuilder`.

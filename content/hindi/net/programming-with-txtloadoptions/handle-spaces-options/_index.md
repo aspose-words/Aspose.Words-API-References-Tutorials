@@ -17,7 +17,7 @@ url: /hi/net/programming-with-txtloadoptions/handle-spaces-options/
 
 -  .NET के लिए Aspose.Words: आपको अपने .NET वातावरण में इस लाइब्रेरी को स्थापित करना होगा। आप इसे यहाँ से प्राप्त कर सकते हैं[Aspose वेबसाइट](https://releases.aspose.com/words/net/).
 - विज़ुअल स्टूडियो: कोडिंग के लिए एक एकीकृत विकास वातावरण (IDE)। विज़ुअल स्टूडियो .NET प्रोजेक्ट्स के साथ काम करना आसान बनाता है।
-- C# का बुनियादी ज्ञान: C# प्रोग्रामिंग से परिचित होना उपयोगी होगा क्योंकि हम कुछ कोड लिखेंगे।
+- C# का मूलभूत ज्ञान: C# प्रोग्रामिंग से परिचित होना उपयोगी होगा क्योंकि हम कुछ कोड लिखेंगे।
 
 ## नामस्थान आयात करें
 
@@ -67,10 +67,10 @@ TxtLoadOptions loadOptions = new TxtLoadOptions
 ```
 
 इस कॉन्फ़िगरेशन में:
-- `LeadingSpacesOptions = TxtLeadingSpacesOptions.Trim`यह सुनिश्चित करता है कि पंक्ति के आरंभ में कोई रिक्त स्थान न हो।
+- `LeadingSpacesOptions = TxtLeadingSpacesOptions.Trim`यह सुनिश्चित करता है कि पंक्ति के आरंभ में कोई रिक्त स्थान हटा दिया जाए।
 - `TrailingSpacesOptions = TxtTrailingSpacesOptions.Trim` यह सुनिश्चित करता है कि पंक्ति के अंत में कोई रिक्त स्थान न हो।
 
-यह सेटअप टेक्स्ट फाइलों को प्रोसेस करने या सेव करने से पहले उन्हें साफ करने के लिए आवश्यक है।
+यह सेटअप टेक्स्ट फ़ाइलों को प्रोसेस करने या सेव करने से पहले उन्हें साफ करने के लिए आवश्यक है।
 
 ## चरण 4: विकल्पों के साथ टेक्स्ट दस्तावेज़ लोड करें
 
@@ -90,7 +90,7 @@ Document doc = new Document(new MemoryStream(Encoding.UTF8.GetBytes(textDoc)), l
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.HandleSpacesOptions.docx");
 ```
 
- यह कोड साफ़ किए गए रिक्त स्थानों के साथ दस्तावेज़ को नामक फ़ाइल में सहेजता है`WorkingWithTxtLoadOptions.HandleSpacesOptions.docx` अपनी निर्दिष्ट निर्देशिका में.
+ यह कोड साफ़ किए गए रिक्त स्थानों के साथ दस्तावेज़ को नामित फ़ाइल में सहेजता है`WorkingWithTxtLoadOptions.HandleSpacesOptions.docx` अपनी निर्दिष्ट निर्देशिका में.
 
 ## निष्कर्ष
 

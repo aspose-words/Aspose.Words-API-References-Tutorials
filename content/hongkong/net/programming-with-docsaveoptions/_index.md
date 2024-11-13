@@ -1,6 +1,6 @@
 ---
-title: 使用 Docsaveoptions 進行文字處理
-linktitle: 使用 Docsaveoptions 進行文字處理
+title: 使用 DocSaveOptions 進行文字處理
+linktitle: 使用 DocSaveOptions 進行文字處理
 second_title: Aspose.Words 文件處理 API
 description: 了解如何使用 Aspose.Words for .NET 自訂 Word 文件的儲存選項。這些教學將引導您了解各種可用的選項，例如檔案格式、壓縮、密碼保護。
 type: docs

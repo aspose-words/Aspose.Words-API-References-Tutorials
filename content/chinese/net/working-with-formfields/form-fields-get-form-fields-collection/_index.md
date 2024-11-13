@@ -13,7 +13,7 @@ url: /zh/net/working-with-formfields/form-fields-get-form-fields-collection/
 
 ## 先决条件
 
-在我们开始讨论代码之前，让我们先确保您已经准备好开始所需的一切。
+在我们开始讨论代码之前，让我们先确保您拥有开始所需的一切。
 
 1.  Aspose.Words for .NET：确保您已安装最新版本的 Aspose.Words for .NET。您可以从以下位置下载[这里](https://releases.aspose.com/words/net/).
 2. 开发环境：像 Visual Studio 这样的 IDE，用于编写和运行 .NET 代码。
@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "Form fields.docx");
 
 ## 步骤 2：获取表单字段集合
 
-文档加载完成后，下一步是访问表单字段集合。此集合允许您根据需要操作单个表单字段。
+一旦文档加载完毕，下一步就是访问表单字段集合。此集合允许您根据需要操作单个表单字段。
 
 ```csharp
 FormFieldCollection formFields = doc.Range.FormFields;

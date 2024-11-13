@@ -2,7 +2,7 @@
 title: 檢測帶有空格的編號
 linktitle: 檢測帶有空格的編號
 second_title: Aspose.Words 文件處理 API
-description: 了解如何使用 Aspose.Words for .NET 偵測純文字文件中帶有空格的編號，並確保正確識別您的清單。
+description: 了解如何使用 Aspose.Words for .NET 偵測純文字文件中帶有空格的編號並確保正確識別您的清單。
 type: docs
 weight: 10
 url: /zh-hant/net/programming-with-txtloadoptions/detect-numbering-with-whitespaces/
@@ -90,7 +90,7 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DetectNumberingWithWhitespaces.doc
 
 ## 結論
 
-現在你就得到它了！只需幾行程式碼，您就掌握了使用 Aspose.Words for .NET 檢測純文字文件中帶有空格的編號的技巧。在處理各種文字格式並確保您的清單在 Word 文件中準確表示時，此功能非常方便。因此，下次當您遇到這些棘手的清單時，您就會知道該怎麼做。
+現在你就擁有了！只需幾行程式碼，您就掌握了使用 Aspose.Words for .NET 檢測純文字文件中帶有空格的編號的技巧。在處理各種文字格式並確保您的清單在 Word 文件中準確表示時，此功能非常方便。因此，下次當您遇到這些棘手的清單時，您就會知道該怎麼做。
 
 ## 常見問題解答
 

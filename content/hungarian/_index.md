@@ -14,11 +14,12 @@ Ezek az oktatóanyagok világos és részletes útmutatást adnak a Microsoft Wo
 {{% /alert %}}
 
 Ezek a linkek néhány hasznos forráshoz:
+- [AI-alapú dokumentumfeldolgozás](./net/ai-powered-document-processing/)
 - [Licenc alkalmazása](./net/apply-license/)   
 - [Engedélyezze az OpenType funkciókat](./net/enable-opentype-features/)   
 - [Munka a megjegyzésekkel](./net/working-with-comments/)   
 - [Mezőkkel való munka](./net/working-with-fields/)   
-- [lábjegyzet és a végjegyzet használata](./net/working-with-footnote-and-endnote/)   
+- [A lábjegyzet és a végjegyzet használata](./net/working-with-footnote-and-endnote/)   
 - [A FormFields használata](./net/working-with-formfields/)   
 - [Fejlécek és láblécek használata](./net/working-with-headers-and-footers/)   
 - [Az elválasztás használata](./net/working-with-hyphenation/)   

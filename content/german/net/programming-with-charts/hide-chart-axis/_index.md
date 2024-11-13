@@ -109,7 +109,7 @@ Herzlichen Glückwunsch! Sie haben erfolgreich gelernt, wie Sie mit Aspose.Words
 Aspose.Words für .NET ist eine leistungsstarke API zum Erstellen, Bearbeiten, Konvertieren und Bearbeiten von Word-Dokumenten innerhalb von .NET-Anwendungen.
 
 ### Kann ich sowohl die X- als auch die Y-Achse in einem Diagramm ausblenden?
- Ja, Sie können beide Achsen ausblenden, indem Sie die`Hidden` Eigentum beider`AxisX`Und`AxisY` Zu`true`.
+ Ja, Sie können beide Achsen ausblenden, indem Sie die`Hidden` Eigentum beider`AxisX` Und`AxisY` Zu`true`.
 
 ### Gibt es eine kostenlose Testversion für Aspose.Words für .NET?
  Ja, Sie können eine kostenlose Testversion erhalten[Hier](https://releases.aspose.com/).
@@ -117,5 +117,5 @@ Aspose.Words für .NET ist eine leistungsstarke API zum Erstellen, Bearbeiten, K
 ### Wo finde ich weitere Dokumentation?
  Eine ausführliche Dokumentation finden Sie auf der Aspose.Words for .NET[Hier](https://reference.aspose.com/words/net/).
 
-### Wie erhalte ich Support für Aspose.Words für .NET?
+### Wie kann ich Support für Aspose.Words für .NET erhalten?
  Sie können Unterstützung von der Aspose-Community erhalten[Hier](https://forum.aspose.com/c/words/8).

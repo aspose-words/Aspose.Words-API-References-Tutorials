@@ -62,7 +62,7 @@ Vkládání objektů OLE do dokumentů aplikace Word pomocí Aspose.Words for .N
 ## FAQ
 
 ### Jaké typy objektů OLE mohu vložit pomocí Aspose.Words for .NET?
-Můžete vkládat různé typy objektů OLE, včetně souborů HTML, tabulek Excel, prezentací PowerPoint a dalšího obsahu kompatibilního s OLE.
+Můžete vložit různé typy objektů OLE, včetně souborů HTML, tabulek Excel, prezentací PowerPoint a dalšího obsahu kompatibilního s OLE.
 
 ### Mohu zobrazit objekt OLE jako ikonu místo jeho skutečného obsahu?
  Ano, můžete si zvolit zobrazení objektu OLE jako ikonu nastavením`asIcon` parametr k`true`.

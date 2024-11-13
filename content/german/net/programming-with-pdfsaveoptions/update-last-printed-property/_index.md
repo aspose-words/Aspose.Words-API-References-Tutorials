@@ -33,7 +33,7 @@ Lassen Sie uns den Prozess in einfache, überschaubare Schritte unterteilen.
 
 ## Schritt 1: Richten Sie Ihr Projekt ein
 
-Zunächst richten wir Ihr Projekt ein. Öffnen Sie Visual Studio, erstellen Sie eine neue Konsolenanwendung (.NET Framework oder .NET Core) und geben Sie ihr einen aussagekräftigen Namen wie „UpdateLastPrintedPropertyPDF“.
+Als Erstes richten wir Ihr Projekt ein. Öffnen Sie Visual Studio, erstellen Sie eine neue Konsolenanwendung (.NET Framework oder .NET Core) und geben Sie ihr einen aussagekräftigen Namen wie „UpdateLastPrintedPropertyPDF“.
 
 ## Schritt 2: Installieren Sie Aspose.Words für .NET
 
@@ -50,13 +50,10 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Schritt 4: PDF-Speicheroptionen konfigurieren
 
- Wir müssen die PDF-Speicheroptionen so konfigurieren, dass die zuletzt gedruckte Eigenschaft aktualisiert wird. Erstellen Sie eine neue Instanz von`PdfSaveOptions` und legen Sie die`UpdateLastPrintedProperty`Eigentum an`true`.
+ Wir müssen die PDF-Speicheroptionen konfigurieren, um die zuletzt gedruckte Eigenschaft zu aktualisieren. Erstellen Sie eine neue Instanz von`PdfSaveOptions` und legen Sie die`UpdateLastPrintedProperty`Eigentum an`true`.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions 
-{ 
-	UpdateLastPrintedProperty = true 
-};
+PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
 ## Schritt 5: Speichern Sie das Dokument als PDF

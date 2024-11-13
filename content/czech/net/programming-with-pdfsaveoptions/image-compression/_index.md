@@ -114,7 +114,7 @@ Zmenšení velikosti dokumentů PDF komprimací obrázků je zásadním krokem p
 
 ## FAQ
 
-### Co je to komprese obrázků v PDF?
+### Co je komprese obrázků v PDF?
 Komprese obrázků snižuje velikost souboru dokumentů PDF snížením kvality obrázků, což pomáhá při optimalizaci úložiště a výkonu.
 
 ### Jak Aspose.Words for .NET zvládá kompresi obrázků?

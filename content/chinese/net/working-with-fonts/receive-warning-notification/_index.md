@@ -13,7 +13,7 @@ url: /zh/net/working-with-fonts/receive-warning-notification/
 
 ## 先决条件
 
-在深入研究之前，请确保您已准备好以下内容：
+在深入研究之前，请确保您已具备以下条件：
 
 - C# 基础知识：熟悉 C# 将帮助您理解和执行这些步骤。
 -  Aspose.Words for .NET Library：从以下位置下载并安装[下载链接](https://releases.aspose.com/words/net/).

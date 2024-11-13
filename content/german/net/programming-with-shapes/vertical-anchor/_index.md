@@ -62,7 +62,7 @@ Und hier geschieht die Magie! Sie können die vertikale Ausrichtung des Textes i
 textBox.TextBox.VerticalAnchor = TextBoxAnchor.Bottom;
 ```
 
- In diesem Fall,`TextBoxAnchor.Bottom`sorgt dafür, dass der Text unten im Textfeld verankert wird. Wenn Sie ihn zentriert oder oben ausgerichtet haben möchten, verwenden Sie`TextBoxAnchor.Center` oder`TextBoxAnchor.Top`, jeweils.
+ In diesem Fall,`TextBoxAnchor.Bottom`sorgt dafür, dass der Text am unteren Rand des Textfelds verankert wird. Wenn Sie ihn zentriert oder oben ausgerichtet haben möchten, verwenden Sie`TextBoxAnchor.Center` oder`TextBoxAnchor.Top`, jeweils.
 
 ## Schritt 4: Text zum Textfeld hinzufügen
 
@@ -93,7 +93,7 @@ Und da haben Sie es! Sie haben gerade gelernt, wie Sie die vertikale Ausrichtung
 Die vertikale Verankerung steuert die Position des Textes innerhalb eines Textfelds, beispielsweise die Ausrichtung oben, mittig oder unten.
 
 ### Kann ich außer Textfeldern auch andere Formen verwenden?
-Ja, Sie können die vertikale Verankerung mit anderen Formen verwenden, Textfelder sind jedoch der häufigste Anwendungsfall.
+Ja, Sie können die vertikale Verankerung mit anderen Formen verwenden, der häufigste Anwendungsfall sind jedoch Textfelder.
 
 ### Wie ändere ich den Ankerpunkt, nachdem ich das Textfeld erstellt habe?
  Sie können den Ankerpunkt ändern, indem Sie den`VerticalAnchor` -Eigenschaft des Textfeld-Formobjekts.

@@ -1,28 +1,28 @@
 ---
-title: Indeling in cel
-linktitle: Indeling in cel
-second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u de lay-out in cellen instelt met Aspose.Words voor .NET met deze uitgebreide handleiding. Perfect voor ontwikkelaars die Word-documenten willen aanpassen.
+title: Lay-out in cel
+linktitle: Lay-out in cel
+second_title: Aspose.Words API voor documentverwerking
+description: Leer hoe u de lay-out in een cel instelt met Aspose.Words voor .NET met deze uitgebreide gids. Perfect voor ontwikkelaars die Word-documenten willen aanpassen.
 type: docs
 weight: 10
 url: /nl/net/programming-with-shapes/layout-in-cell/
 ---
 ## Invoering
 
-Als u ooit de lay-out van uw tabelcellen in Word-documenten programmatisch wilt verfijnen, bent u hier op de juiste plek. Vandaag gaan we dieper in op het instellen van de lay-out in cellen met Aspose.Words voor .NET. We lopen door een praktisch voorbeeld en splitsen het stap voor stap op, zodat u het gemakkelijk kunt volgen.
+Als u ooit de lay-out van uw tabelcellen in Word-documenten programmatisch wilde verfijnen, bent u hier aan het juiste adres. Vandaag duiken we in hoe u de lay-out in cellen instelt met Aspose.Words voor .NET. We nemen een praktisch voorbeeld door en breken het stap voor stap af, zodat u het gemakkelijk kunt volgen.
 
 ## Vereisten
 
-Voordat we ingaan op de code, zorgen we ervoor dat je alles hebt wat je nodig hebt:
+Voordat we in de code duiken, controleren we of je alles hebt wat je nodig hebt:
 
-1.  Aspose.Words voor .NET: Zorg ervoor dat de Aspose.Words voor .NET-bibliotheek is geïnstalleerd. Als je dat nog niet hebt gedaan, kun je dat doen[download het hier](https://releases.aspose.com/words/net/).
-2. Ontwikkelomgeving: Je hebt een ontwikkelomgeving nodig die is opgezet met .NET. Visual Studio is een goede keuze als u op zoek bent naar aanbevelingen.
-3. Basiskennis van C#: Hoewel ik elke stap zal uitleggen, zal een basiskennis van C# je helpen gemakkelijker te volgen.
-4.  Documentmap: bereid een mappad voor waar u uw documenten opslaat. We zullen dit noemen als`YOUR DOCUMENT DIRECTORY`.
+1.  Aspose.Words voor .NET: Zorg ervoor dat u de Aspose.Words voor .NET-bibliotheek hebt geïnstalleerd. Als u dat niet hebt gedaan, kunt u[download het hier](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: U hebt een ontwikkelomgeving nodig die is ingesteld met .NET. Visual Studio is een goede keuze als u op zoek bent naar aanbevelingen.
+3. Basiskennis van C#: Ik zal elke stap uitleggen, maar een basiskennis van C# helpt u het proces gemakkelijker te volgen.
+4.  Document Directory: Bereid een directorypad voor waar u uw documenten opslaat. We noemen dit`YOUR DOCUMENT DIRECTORY`.
 
 ## Naamruimten importeren
 
-Zorg er om te beginnen voor dat u de benodigde naamruimten in uw project importeert:
+Om te beginnen moet u ervoor zorgen dat u de benodigde naamruimten in uw project importeert:
 
 ```csharp
 using System;
@@ -36,7 +36,7 @@ Laten we het proces opsplitsen in beheersbare stappen.
 
 ## Stap 1: Maak een nieuw document
 
- Eerst maken we een nieuw Word-document en initialiseren we een`DocumentBuilder` bezwaar maken om ons te helpen onze inhoud te construeren.
+ Eerst maken we een nieuw Word-document en initialiseren we een`DocumentBuilder` object om ons te helpen onze inhoud samen te stellen.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -46,7 +46,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Stap 2: Start een tabel en stel de rijopmaak in
 
-We beginnen met het construeren van een tabel en specificeren de hoogte- en hoogteregel voor de rijen.
+We beginnen met het maken van een tabel en specificeren de hoogte en hoogteregel voor de rijen.
 
 ```csharp
 builder.StartTable();
@@ -54,9 +54,9 @@ builder.RowFormat.Height = 100;
 builder.RowFormat.HeightRule = HeightRule.Exactly;
 ```
 
-## Stap 3: cellen invoegen en inhoud vullen
+## Stap 3: Cellen invoegen en vullen met inhoud
 
-Vervolgens maken we een lus om cellen in de tabel in te voegen. Voor elke zeven cellen beëindigen we de rij om een nieuwe te maken.
+Vervolgens maken we een lus om cellen in de tabel in te voegen. Voor elke 7 cellen beëindigen we de rij om een nieuwe te maken.
 
 ```csharp
 for (int i = 0; i < 31; i++)
@@ -86,9 +86,9 @@ Shape watermark = new Shape(doc, ShapeType.TextPlainText)
 };
 ```
 
-## Stap 5: Pas de weergave van het watermerk aan
+## Stap 5: Pas het uiterlijk van het watermerk aan
 
-We zullen het uiterlijk van het watermerk verder aanpassen door de kleur- en teksteigenschappen in te stellen.
+We gaan het uiterlijk van het watermerk verder aanpassen door de kleur en de teksteigenschappen in te stellen.
 
 ```csharp
 watermark.FillColor = Color.Gray;
@@ -99,7 +99,7 @@ watermark.Name = $"WaterMark_{Guid.NewGuid()}";
 watermark.WrapType = WrapType.None;
 ```
 
-## Stap 6: Voeg een watermerk in het document in
+## Stap 6: Watermerk in document invoegen
 
 We zoeken de laatste run in het document en voegen het watermerk op die positie in.
 
@@ -109,7 +109,7 @@ builder.MoveTo(run);
 builder.InsertNode(watermark);
 ```
 
-## Stap 7: Document optimaliseren voor Word 2010
+## Stap 7: Optimaliseer het document voor Word 2010
 
 Om compatibiliteit te garanderen, optimaliseren we het document voor Word 2010.
 
@@ -117,7 +117,7 @@ Om compatibiliteit te garanderen, optimaliseren we het document voor Word 2010.
 doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2010);
 ```
 
-## Stap 8: Bewaar het document
+## Stap 8: Sla het document op
 
 Ten slotte slaan we ons document op in de opgegeven map.
 
@@ -127,21 +127,21 @@ doc.Save(dataDir + "WorkingWithShapes.LayoutInCell.docx");
 
 ## Conclusie
 
-En daar heb je het! U hebt met succes een Word-document gemaakt met een aangepaste tabelindeling en een watermerk toegevoegd met Aspose.Words voor .NET. Deze tutorial was bedoeld om u een duidelijke, stapsgewijze handleiding te bieden waarmee u elk onderdeel van het proces kunt begrijpen. Met deze vaardigheden kunt u nu programmatisch geavanceerdere en aangepaste Word-documenten maken.
+En daar heb je het! Je hebt met succes een Word-document gemaakt met een aangepaste tabelindeling en een watermerk toegevoegd met Aspose.Words voor .NET. Deze tutorial was bedoeld om een duidelijke, stapsgewijze handleiding te bieden om je te helpen elk onderdeel van het proces te begrijpen. Met deze vaardigheden kun je nu geavanceerdere en aangepaste Word-documenten programmatisch maken.
 
 ## Veelgestelde vragen
 
 ### Kan ik een ander lettertype gebruiken voor de watermerktekst?
- Ja, u kunt het lettertype wijzigen door de`watermark.TextPath.FontFamily` eigenschap naar het gewenste lettertype.
+ Ja, u kunt het lettertype wijzigen door de`watermark.TextPath.FontFamily` eigenschap aan het gewenste lettertype.
 
 ### Hoe pas ik de positie van het watermerk aan?
- U kunt de`RelativeHorizontalPosition`, `RelativeVerticalPosition`, `HorizontalAlignment` , En`VerticalAlignment` eigenschappen om de positie van het watermerk aan te passen.
+ U kunt de`RelativeHorizontalPosition`, `RelativeVerticalPosition`, `HorizontalAlignment` , En`VerticalAlignment` Eigenschappen om de positie van het watermerk aan te passen.
 
-### Is het mogelijk om een afbeelding in plaats van tekst voor het watermerk te gebruiken?
- Absoluut! U kunt een`Shape` met de soort`ShapeType.Image` en stel de afbeelding in met behulp van de`ImageData.SetImage` methode.
+### Is het mogelijk om een afbeelding te gebruiken in plaats van tekst voor het watermerk?
+ Absoluut! Je kunt een`Shape` met het type`ShapeType.Image` en stel zijn afbeelding in met behulp van de`ImageData.SetImage` methode.
 
-### Kan ik tabellen maken met verschillende rijhoogtes?
+### Kan ik tabellen met verschillende rijhoogtes maken?
 Ja, u kunt voor elke rij verschillende hoogtes instellen door de`RowFormat.Height` eigenschap voordat u cellen in die rij invoegt.
 
 ### Hoe verwijder ik een watermerk uit het document?
- U kunt het watermerk verwijderen door het in de vormenverzameling van het document te zoeken en het bestand`Remove` methode.
+ U kunt het watermerk verwijderen door het in de vormenverzameling van het document te zoeken en de`Remove` methode.

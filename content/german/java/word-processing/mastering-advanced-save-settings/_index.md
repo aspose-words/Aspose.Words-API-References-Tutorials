@@ -108,7 +108,7 @@ doc.save("watermarked_document.docx", SaveFormat.DOCX);
 Große Dokumentdateien können unhandlich sein. Entdecken Sie Techniken zur Optimierung der Dokumentgröße ohne Qualitätseinbußen.
 
 ```java
-// Optimieren Sie die Dokumentgröße
+// Optimieren der Dokumentgröße
 Document doc = new Document("large_document.docx");
 doc.cleanup();
 doc.save("optimized_document.docx", SaveFormat.DOCX);
@@ -175,13 +175,13 @@ doc1.compare(doc2, "comparison_result.docx");
 
 ## Fehlerbehebung bei allgemeinen Problemen
 
-Selbst die besten Entwickler stoßen auf Probleme. In diesem Abschnitt werden häufige Probleme und ihre Lösungen behandelt.
+Selbst die besten Entwickler stoßen auf Probleme. In diesem Abschnitt werden häufige Probleme und deren Lösungen behandelt.
 
 ## Häufig gestellte Fragen (FAQs)
 
 ### Wie stelle ich die Seitengröße auf A4 ein?
 
- Um die Seitengröße auf A4 einzustellen, können Sie die`PageSetup` Klasse und geben Sie das Papierformat wie folgt an:
+ Um die Seitengröße auf A4 einzustellen, können Sie die`PageSetup` Klasse und geben Sie die Papiergröße wie folgt an:
 
 ```java
 Document doc = new Document();

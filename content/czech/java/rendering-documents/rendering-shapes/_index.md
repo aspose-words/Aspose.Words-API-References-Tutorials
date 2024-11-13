@@ -97,6 +97,6 @@ Ano, Aspose.Words for Java podporuje širokou škálu formátů dokumentů, vče
 
 ### Otázka 5: Kde mohu vyhledat podporu nebo se zeptat na otázky týkající se Aspose.Words for Java?
 
- V případě jakýchkoli dotazů nebo podpory navštivte stránku[Aspose.Words for Java forum](https://forum.aspose.com/).
+ případě jakýchkoli dotazů nebo podpory navštivte stránku[Aspose.Words for Java forum](https://forum.aspose.com/).
 
 Nyní, když jste zvládli vykreslování tvarů pomocí Aspose.Words for Java, jste připraveni využít plný potenciál tohoto všestranného rozhraní API ve svých projektech zpracování dokumentů. Šťastné kódování!

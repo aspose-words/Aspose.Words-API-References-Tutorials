@@ -62,7 +62,7 @@ StructuredDocumentTag sdt = (StructuredDocumentTag) doc.GetChild(NodeType.Struct
 Style style = doc.Styles[StyleIdentifier.Quote];
 ```
 
- Ο`Styles` ιδιοκτησία του`Document` class μας δίνει πρόσβαση σε όλα τα στυλ που είναι διαθέσιμα στο έγγραφο. Χρησιμοποιούμε το`StyleIdentifier.Quote`για να επιλέξετε το στυλ προσφοράς.
+Ο`Styles` ιδιοκτησία του`Document` class μας δίνει πρόσβαση σε όλα τα στυλ που είναι διαθέσιμα στο έγγραφο. Χρησιμοποιούμε το`StyleIdentifier.Quote`για να επιλέξετε το στυλ προσφοράς.
 
 ## Βήμα 4: Εφαρμόστε το στυλ στην ετικέτα δομημένου εγγράφου
 

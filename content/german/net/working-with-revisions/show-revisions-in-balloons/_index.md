@@ -44,7 +44,7 @@ Document doc = new Document(dataDir + "Revisions.docx");
 
 ## Schritt 2: Revisionsoptionen konfigurieren
 
-Als Nächstes konfigurieren wir die Revisionsoptionen, um eingefügte Revisionen inline anzuzeigen und gelöschte und formatierte Revisionen in Sprechblasen anzuzeigen. Dadurch können die verschiedenen Revisionstypen leichter unterschieden werden.
+Als Nächstes konfigurieren wir die Revisionsoptionen, um eingefügte Revisionen inline anzuzeigen und gelöschte und formatierte Revisionen in Sprechblasen anzuzeigen. Dies erleichtert die Unterscheidung zwischen verschiedenen Revisionstypen.
 
 ```csharp
 // Rendert, fügt Revisionen inline ein und löscht und formatiert Revisionen in Sprechblasen.
@@ -82,7 +82,7 @@ Ja, Aspose.Words ermöglicht es Ihnen, die Farbe der Revisionsleisten nach Ihren
 Auf jeden Fall. Sie können Aspose.Words so konfigurieren, dass in Sprechblasen nur bestimmte Revisionstypen angezeigt werden, z. B. Löschungen oder Formatierungsänderungen.
 
 ### Wie erhalte ich eine temporäre Lizenz für Aspose.Words?
- Sie können eine temporäre Lizenz erhalten[Hier](https://purchase.aspose.com/temporary-license/).
+Sie können eine temporäre Lizenz erhalten[Hier](https://purchase.aspose.com/temporary-license/).
 
 ### Kann ich Aspose.Words für .NET mit anderen Programmiersprachen verwenden?
 Aspose.Words ist in erster Linie für .NET konzipiert, Sie können es jedoch mit jeder .NET-unterstützten Sprache verwenden, einschließlich VB.NET und C.++/CLI.

@@ -13,7 +13,7 @@ url: /de/net/working-with-node/use-node-type/
 
 ## Voraussetzungen
 
-Bevor wir uns in das Tutorial stürzen, stellen wir sicher, dass Sie alles haben, was Sie brauchen, um mitzumachen:
+Bevor wir uns in das Tutorial stürzen, stellen wir sicher, dass Sie alles haben, was Sie brauchen, um dem Tutorial zu folgen:
 
 1.  Aspose.Words für .NET: Sie müssen Aspose.Words für .NET installiert haben. Wenn Sie es noch nicht haben, können Sie es hier herunterladen:[Hier](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Visual Studio oder eine andere .NET-kompatible IDE.
@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## Schritt 2: Zugriff auf die NodeType-Eigenschaft
 
- Der`NodeType` ist eine grundlegende Funktion in Aspose.Words. Sie ermöglicht es Ihnen, den Knotentyp zu identifizieren, mit dem Sie arbeiten. Um auf diese Eigenschaft zuzugreifen, verwenden Sie einfach den folgenden Code:
+Der`NodeType` ist eine grundlegende Funktion in Aspose.Words. Sie ermöglicht es Ihnen, den Knotentyp zu identifizieren, mit dem Sie arbeiten. Um auf diese Eigenschaft zuzugreifen, verwenden Sie einfach den folgenden Code:
 
 ```csharp
 NodeType type = doc.NodeType;
@@ -63,7 +63,7 @@ Console.WriteLine("The NodeType of the document is: " + type);
 
 ###  Was ist der`NodeType` property in Aspose.Words?
 
- Der`NodeType` -Eigenschaft identifiziert den Knotentyp innerhalb eines Dokuments, beispielsweise Dokument, Abschnitt, Absatz, Ausführung oder Tabelle.
+Der`NodeType` -Eigenschaft identifiziert den Knotentyp innerhalb eines Dokuments, beispielsweise Dokument, Abschnitt, Absatz, Ausführung oder Tabelle.
 
 ###  Wie überprüfe ich die`NodeType` of a node?
 

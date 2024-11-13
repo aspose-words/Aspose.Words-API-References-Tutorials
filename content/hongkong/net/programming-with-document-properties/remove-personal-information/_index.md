@@ -66,7 +66,7 @@ doc.Save(dataDir + "DocumentPropertiesAndVariables.RemovePersonalInformation.doc
 
 ## 結論
 
-現在你就得到它了！只需幾個簡單的步驟，我們就使用 Aspose.Words for .NET 從文件中刪除了個人資訊。這只是這個強大的庫可以做的事情的冰山一角。無論您是要自動化報告、管理大量文檔，還是只是讓您的工作流程更加順暢，Aspose.Words 都能滿足您的需求。
+現在你就擁有了！只需幾個簡單的步驟，我們就使用 Aspose.Words for .NET 從文件中刪除了個人資訊。這只是這個強大的庫可以做的事情的冰山一角。無論您是要自動化報告、管理大量文檔，還是只是讓您的工作流程更加順暢，Aspose.Words 都能滿足您的需求。
 
 ## 常見問題解答
 

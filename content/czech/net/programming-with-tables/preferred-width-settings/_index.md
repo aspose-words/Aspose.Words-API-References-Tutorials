@@ -53,14 +53,13 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Zde určíte adresář, kam bude dokument uložen, a inicializujete jej`Document`a`DocumentBuilder` objektů.
+ Zde určíte adresář, kam bude dokument uložen, a inicializujete jej`Document` a`DocumentBuilder` objektů.
 
 ## Krok 2: Vložte první buňku tabulky s absolutní šířkou
 
 Vložte první buňku do tabulky s pevnou šířkou 40 bodů. To zajistí, že tato buňka si vždy zachová šířku 40 bodů bez ohledu na velikost tabulky.
 
 ```csharp
-
 // Vložte buňku absolutní velikosti.
 builder.InsertCell();
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPoints(40);
@@ -97,7 +96,7 @@ builder.Writeln("Cell automatically sized. The size of this cell is calculated f
 builder.Writeln("In this case the cell will fill up the rest of the available space.");
 ```
 
- The`PreferredWidth.Auto` nastavení umožňuje, aby se tato buňka roztahovala nebo smršťovala na základě prostoru, který zbyde po započtení ostatních buněk. To zajišťuje, že rozložení stolu vypadá vyváženě a profesionálně.
+The`PreferredWidth.Auto` nastavení umožňuje, aby se tato buňka roztahovala nebo smršťovala na základě prostoru, který zbyde po započtení ostatních buněk. To zajišťuje, že rozložení stolu vypadá vyváženě a profesionálně.
 
 ## Krok 5: Dokončete a uložte dokument
 

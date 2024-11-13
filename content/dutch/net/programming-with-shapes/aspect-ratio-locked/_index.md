@@ -1,7 +1,7 @@
 ---
 title: Beeldverhouding vergrendeld
 linktitle: Beeldverhouding vergrendeld
-second_title: Aspose.Words-API voor documentverwerking
+second_title: Aspose.Words API voor documentverwerking
 description: Leer hoe u de beeldverhouding van vormen in Word-documenten kunt vergrendelen met Aspose.Words voor .NET. Volg deze stapsgewijze handleiding om uw afbeeldingen en vormen proportioneel te houden.
 type: docs
 weight: 10
@@ -9,19 +9,19 @@ url: /nl/net/programming-with-shapes/aspect-ratio-locked/
 ---
 ## Invoering
 
-Heeft u zich ooit afgevraagd hoe u de perfecte verhoudingen van afbeeldingen en vormen in uw Word-documenten kunt behouden? Soms moet u ervoor zorgen dat uw afbeeldingen en vormen niet vervormd raken als u het formaat wijzigt. Dit is waar het vergrendelen van de beeldverhouding van pas komt. In deze zelfstudie onderzoeken we hoe u de beeldverhouding voor vormen in Word-documenten kunt instellen met Aspose.Words voor .NET. We splitsen het op in eenvoudig te volgen stappen, zodat u deze vaardigheden met vertrouwen op uw projecten kunt toepassen.
+Heb je je ooit afgevraagd hoe je de perfecte verhoudingen van afbeeldingen en vormen in je Word-documenten kunt behouden? Soms moet je ervoor zorgen dat je afbeeldingen en vormen niet vervormd raken wanneer je de grootte wijzigt. Dit is waar het vergrendelen van de beeldverhouding van pas komt. In deze tutorial onderzoeken we hoe je de beeldverhouding voor vormen in Word-documenten instelt met Aspose.Words voor .NET. We splitsen het op in eenvoudig te volgen stappen, zodat je deze vaardigheden met vertrouwen op je projecten kunt toepassen.
 
 ## Vereisten
 
-Voordat we in de code duiken, laten we eens kijken wat u nodig heeft om aan de slag te gaan:
+Voordat we in de code duiken, leggen we eerst uit wat je nodig hebt om te beginnen:
 
-- Aspose.Words voor .NET-bibliotheek: Aspose.Words voor .NET moet geïnstalleerd zijn. Als je dat nog niet hebt gedaan, dan kan dat[download het hier](https://releases.aspose.com/words/net/).
+- Aspose.Words voor .NET-bibliotheek: U moet Aspose.Words voor .NET geïnstalleerd hebben. Als u dat nog niet hebt gedaan, kunt u[download het hier](https://releases.aspose.com/words/net/).
 - Ontwikkelomgeving: Zorg ervoor dat u een .NET-ontwikkelomgeving hebt ingesteld. Visual Studio is een populaire keuze.
-- Basiskennis van C#: Enige bekendheid met programmeren in C# zal nuttig zijn.
+- Basiskennis van C#: enige kennis van C#-programmering is nuttig.
 
 ## Naamruimten importeren
 
-Laten we eerst de benodigde naamruimten importeren. Deze naamruimten geven ons toegang tot de klassen en methoden die we nodig hebben om met Word-documenten en -vormen te werken.
+Laten we eerst de benodigde namespaces importeren. Deze namespaces geven ons toegang tot de klassen en methoden die we nodig hebben om met Word-documenten en -vormen te werken.
 
 ```csharp
 using Aspose.Words;
@@ -30,27 +30,27 @@ using Aspose.Words.Drawing;
 
 ## Stap 1: Stel uw documentenmap in
 
- Voordat we vormen gaan manipuleren, moeten we een map opzetten waarin onze documenten worden opgeslagen. Voor de eenvoud gebruiken we een tijdelijke aanduiding`YOUR DOCUMENT DIRECTORY`. Vervang dit door het daadwerkelijke pad naar uw documentmap.
+ Voordat we beginnen met het manipuleren van vormen, moeten we een directory instellen waar onze documenten worden opgeslagen. Voor de eenvoud gebruiken we een tijdelijke aanduiding`YOUR DOCUMENT DIRECTORY`Vervang dit door het daadwerkelijke pad naar uw documentmap.
 
 ```csharp
-// Pad naar uw documentmap
+// Pad naar uw documentenmap
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
 ## Stap 2: Maak een nieuw document
 
-Vervolgens maken we een nieuw Word-document met Aspose.Words. Dit document zal dienen als ons canvas voor het toevoegen van vormen en afbeeldingen.
+Vervolgens maken we een nieuw Word-document met Aspose.Words. Dit document dient als canvas voor het toevoegen van vormen en afbeeldingen.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Hier maken we een exemplaar van de`Document` klasse en gebruik een`DocumentBuilder` om ons te helpen de documentinhoud op te bouwen.
+ Hier maken we een instantie van de`Document` klasse en gebruik een`DocumentBuilder` om ons te helpen de inhoud van het document te maken.
 
-## Stap 3: Voeg een afbeelding in
+## Stap 3: Een afbeelding invoegen
 
- Laten we nu een afbeelding in ons document invoegen. Wij gebruiken de`InsertImage` werkwijze van de`DocumentBuilder`klas. Zorg ervoor dat u een afbeelding in de door u opgegeven map heeft.
+ Laten we nu een afbeelding in ons document invoegen. We gebruiken de`InsertImage` methode van de`DocumentBuilder`klasse. Zorg ervoor dat u een afbeelding in de opgegeven directory hebt.
 
 ```csharp
 Shape shape = builder.InsertImage(dataDir + "Transparent background logo.png");
@@ -60,17 +60,17 @@ Shape shape = builder.InsertImage(dataDir + "Transparent background logo.png");
 
 ## Stap 4: Vergrendel de beeldverhouding
 
-Zodra de afbeelding is ingevoegd, kunnen we de beeldverhouding vergrendelen. Het vergrendelen van de beeldverhouding zorgt ervoor dat de verhoudingen van de afbeelding constant blijven bij het wijzigen van het formaat.
+Zodra de afbeelding is ingevoegd, kunnen we de beeldverhouding vergrendelen. Het vergrendelen van de beeldverhouding zorgt ervoor dat de verhoudingen van de afbeelding constant blijven bij het wijzigen van de grootte.
 
 ```csharp
 shape.AspectRatioLocked = true;
 ```
 
- Instelling`AspectRatioLocked` naar`true` zorgt ervoor dat de afbeelding de oorspronkelijke beeldverhouding behoudt.
+ Instelling`AspectRatioLocked` naar`true` zorgt ervoor dat de afbeelding zijn oorspronkelijke beeldverhouding behoudt.
 
-## Stap 5: Bewaar het document
+## Stap 5: Sla het document op
 
-Ten slotte slaan we het document op in de opgegeven map. Met deze stap worden alle wijzigingen geschreven die we in het documentbestand hebben aangebracht.
+Ten slotte slaan we het document op in de opgegeven directory. Deze stap schrijft alle wijzigingen die we hebben aangebracht naar het documentbestand.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithShapes.AspectRatioLocked.docx");
@@ -78,18 +78,18 @@ doc.Save(dataDir + "WorkingWithShapes.AspectRatioLocked.docx");
 
 ## Conclusie
 
-Gefeliciteerd! U hebt met succes geleerd hoe u de beeldverhouding voor vormen in Word-documenten kunt instellen met Aspose.Words voor .NET. Door deze stappen te volgen, kunt u ervoor zorgen dat uw afbeeldingen en vormen hun verhoudingen behouden, waardoor uw documenten er professioneel en verzorgd uitzien. Experimenteer gerust met verschillende afbeeldingen en vormen om te zien hoe de vergrendelingsfunctie voor de beeldverhouding in verschillende scenario's werkt.
+Gefeliciteerd! U hebt succesvol geleerd hoe u de beeldverhouding voor vormen in Word-documenten instelt met Aspose.Words voor .NET. Door deze stappen te volgen, kunt u ervoor zorgen dat uw afbeeldingen en vormen hun verhoudingen behouden, waardoor uw documenten er professioneel en gepolijst uitzien. Experimenteer gerust met verschillende afbeeldingen en vormen om te zien hoe de functie voor het vergrendelen van de beeldverhouding in verschillende scenario's werkt.
 
 ## Veelgestelde vragen
 
 ### Kan ik de beeldverhouding ontgrendelen nadat ik deze heb vergrendeld?
-Ja, u kunt de beeldverhouding ontgrendelen door in te stellen`shape.AspectRatioLocked = false`.
+Ja, u kunt de beeldverhouding ontgrendelen door`shape.AspectRatioLocked = false`.
 
-### Wat gebeurt er als ik het formaat van een afbeelding met een vergrendelde beeldverhouding wijzig?
-Het formaat van de afbeelding wordt proportioneel aangepast, waarbij de oorspronkelijke breedte-hoogteverhouding behouden blijft.
+### Wat gebeurt er als ik de grootte van een afbeelding wijzig met een vergrendelde beeldverhouding?
+De afbeelding wordt proportioneel vergroot of verkleind, waarbij de oorspronkelijke breedte-hoogteverhouding behouden blijft.
 
-### Kan ik dit naast afbeeldingen ook op andere vormen toepassen?
-Absoluut! De functie voor het vergrendelen van de beeldverhouding kan op elke vorm worden toegepast, inclusief rechthoeken, cirkels en meer.
+### Kan ik dit toepassen op andere vormen dan afbeeldingen?
+Absoluut! De aspect ratio locking feature kan worden toegepast op elke vorm, inclusief rechthoeken, cirkels en meer.
 
 ### Is Aspose.Words voor .NET compatibel met .NET Core?
 Ja, Aspose.Words voor .NET ondersteunt zowel .NET Framework als .NET Core.

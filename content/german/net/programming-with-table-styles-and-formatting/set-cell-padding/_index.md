@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
-Lassen Sie uns den Prozess in einfache, überschaubare Schritte unterteilen. Bereit? Los geht‘s!
+Lassen Sie uns den Prozess in einfache, überschaubare Schritte unterteilen. Bereit? Dann los!
 
 ## Schritt 1: Neues Dokument erstellen
 
@@ -97,7 +97,7 @@ Die Polsterungswerte werden in Punkten angegeben. Ein Zoll entspricht 72 Punkten
 Ja, Sie können die Polsterung für die linke, obere, rechte und untere Seite einzeln angeben.
 
 ### Gibt es eine Grenze für die Polsterung, die ich festlegen kann?
-Es gibt keine konkrete Beschränkung, aber eine übermäßige Polsterung kann das Layout Ihrer Tabelle und Ihres Dokuments beeinträchtigen.
+Es gibt keine bestimmte Begrenzung, aber eine übermäßige Polsterung kann das Layout Ihrer Tabelle und Ihres Dokuments beeinträchtigen.
 
 ### Kann ich mit Microsoft Word die Zellenfüllung festlegen?
 Ja, Sie können die Zellenauffüllung in Microsoft Word festlegen, aber die Verwendung von Aspose.Words für .NET ermöglicht eine automatisierte und programmierbare Dokumentbearbeitung.

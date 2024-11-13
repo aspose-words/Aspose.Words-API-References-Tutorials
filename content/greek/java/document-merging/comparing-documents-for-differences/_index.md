@@ -36,7 +36,7 @@ Document docOriginal = new Document("original_document.docx");
 Document docModified = new Document("modified_document.docx");
 ```
 
- Αντικαθιστώ`"original_document.docx"`και`"modified_document.docx"` με τις διαδρομές προς τα δικά σας έγγραφα.
+ Αντικαθιστώ`"original_document.docx"` και`"modified_document.docx"` με τις διαδρομές προς τα δικά σας έγγραφα.
 
 ## Βήμα 2: Συγκρίνετε έγγραφα
 
@@ -69,7 +69,7 @@ comparer.save("comparison_result.docx");
 
 ### Πώς μπορώ να εγκαταστήσω το Aspose.Words για Java;
 
- Για να εγκαταστήσετε το Aspose.Words για Java, επισκεφτείτε τη σελίδα λήψης[εδώ](https://releases.aspose.com/words/java/) και ακολουθήστε τις οδηγίες εγκατάστασης που παρέχονται.
+ Για να εγκαταστήσετε το Aspose.Words για Java, επισκεφτείτε τη σελίδα λήψης[εδώ](https://releases.aspose.com/words/java/)και ακολουθήστε τις οδηγίες εγκατάστασης που παρέχονται.
 
 ### Μπορώ να συγκρίνω έγγραφα με διαφορετικές μορφές, όπως DOCX και PDF;
 

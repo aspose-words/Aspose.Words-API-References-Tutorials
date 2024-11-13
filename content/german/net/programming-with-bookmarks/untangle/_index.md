@@ -32,8 +32,6 @@ using Aspose.Words.Tables;
 
 Der erste Schritt besteht darin, das Word-Dokument zu laden, mit dem Sie arbeiten möchten. Dieses Dokument enthält die Lesezeichen, die Sie entwirren müssen.
 
-Schritt 1 Überschrift: Das Dokument laden
-
 ```csharp
 Document doc = new Document("path/to/your/document.docx");
 ```
@@ -43,8 +41,6 @@ In dieser Zeile laden wir das Dokument einfach von einem angegebenen Pfad. Stell
 ## Schritt 2: Durch Lesezeichen iterieren
 
 Als nächstes müssen wir alle Lesezeichen im Dokument durchlaufen. Dadurch können wir auf jedes Lesezeichen und seine Eigenschaften zugreifen.
-
-Schritt 2 Überschrift: Durch Lesezeichen iterieren
 
 ```csharp
 foreach (Bookmark bookmark in doc.Range.Bookmarks)
@@ -59,8 +55,6 @@ foreach (Bookmark bookmark in doc.Range.Bookmarks)
 
 Für jedes Lesezeichen müssen wir die Zeilen finden, die den Anfang und das Ende des Lesezeichens enthalten. Dies ist entscheidend, um festzustellen, ob sich das Lesezeichen über benachbarte Zeilen erstreckt.
 
-Schritt 3 Überschrift: Zeilen identifizieren
-
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
 Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
@@ -71,8 +65,6 @@ Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 ## Schritt 4: Auf benachbarte Zeilen prüfen
 
 Bevor wir das Lesezeichenende verschieben, müssen wir sicherstellen, dass sich Anfang und Ende des Lesezeichens in benachbarten Zeilen befinden. Diese Voraussetzung ist wichtig, um das Lesezeichen richtig zu entwirren.
-
-Schritt 4 Überschrift: Zeilenangrenzung prüfen
 
 ```csharp
 if (row1 != null && row2 != null && row1.NextSibling == row2)
@@ -87,17 +79,15 @@ if (row1 != null && row2 != null && row1.NextSibling == row2)
 
 Wenn die Bedingungen erfüllt sind, verschieben wir schließlich den Lesezeichen-Endknoten an das Ende des letzten Absatzes in der letzten Zelle der obersten Zeile. Dieser Schritt entwirrt das Lesezeichen effektiv.
 
-Schritt 5 Überschrift: Verschieben des Lesezeichenendes
-
 ```csharp
 row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);
 ```
 
- In diesem Schritt verwenden wir die`AppendChild` Methode zum Verschieben des Lesezeichen-Endknotens. Indem wir ihn an den letzten Absatz der letzten Zelle der obersten Zeile anhängen, stellen wir sicher, dass das Lesezeichen richtig entwirrt wird.
+ In diesem Schritt verwenden wir die`AppendChild`Methode zum Verschieben des Lesezeichen-Endknotens. Indem wir ihn an den letzten Absatz der letzten Zelle der obersten Zeile anhängen, stellen wir sicher, dass das Lesezeichen richtig entwirrt wird.
 
 ## Abschluss
 
-Das Entwirren von Lesezeichen in einem Word-Dokument mit Aspose.Words für .NET kann entmutigend erscheinen, aber durch die Aufteilung in überschaubare Schritte wird der Prozess viel klarer. Wir haben das Laden eines Dokuments, das Durchlaufen von Lesezeichen, das Identifizieren relevanter Zeilen, das Überprüfen auf Aneinanderreihung und schließlich das Verschieben des Lesezeichen-Endknotens durchlaufen. Mit dieser Anleitung sollten Sie Lesezeichen in Ihren Word-Dokumenten effektiver handhaben können.
+Das Entwirren von Lesezeichen in einem Word-Dokument mit Aspose.Words für .NET kann entmutigend erscheinen, aber durch die Aufteilung in überschaubare Schritte wird der Prozess viel klarer. Wir haben das Laden eines Dokuments, das Durchlaufen von Lesezeichen, das Identifizieren relevanter Zeilen, das Überprüfen auf Aneinanderreihung und schließlich das Verschieben des Lesezeichen-Endknotens durchlaufen. Mit dieser Anleitung sollten Sie in der Lage sein, Lesezeichen in Ihren Word-Dokumenten effektiver zu handhaben.
 
 ## Häufig gestellte Fragen
 
@@ -107,13 +97,13 @@ Ja, Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Sie eine
 
 ### Was passiert, wenn das Lesezeichen mehr als zwei Zeilen umfasst?
 
-In diesem Tutorial geht es um Lesezeichen, die sich über zwei nebeneinanderliegende Zeilen erstrecken. In komplexeren Fällen wäre zusätzliche Logik erforderlich, um Lesezeichen zu verarbeiten, die sich über mehrere Zeilen oder Abschnitte erstrecken.
+Dieses Tutorial behandelt Lesezeichen, die sich über zwei nebeneinanderliegende Zeilen erstrecken. In komplexeren Fällen wäre zusätzliche Logik erforderlich, um Lesezeichen zu verarbeiten, die sich über mehrere Zeilen oder Abschnitte erstrecken.
 
 ### Gibt es eine Testversion von Aspose.Words für .NET?
 
  Ja, das können Sie[Kostenlose Testversion herunterladen](https://releases.aspose.com/) von der Aspose-Website, um die Funktionen der Bibliothek zu erkunden.
 
-### Wie kann ich Unterstützung erhalten, wenn ich auf Probleme stoße?
+### Wie erhalte ich Unterstützung, wenn Probleme auftreten?
 
  Besuchen Sie die[Aspose-Supportforum](https://forum.aspose.com/c/words/8) für Hilfe bei allen Problemen oder Fragen, die Sie haben.
 

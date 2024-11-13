@@ -26,7 +26,7 @@ Um Aspose.Words für Java zu verwenden, müssen Sie die Aspose.Words JAR-Datei z
 
 2. Fügen Sie Ihrem Projekt JAR hinzu: Fügen Sie die heruntergeladene JAR-Datei in den Klassenpfad Ihres Projekts ein.
 
-## Laden verschiedener Dokumentformate
+## Laden unterschiedlicher Dokumentformate
 
 Eine der wichtigsten Stärken von Aspose.Words für Java ist die Fähigkeit, verschiedene Dokumentformate mühelos zu laden. Egal, ob Sie mit Microsoft Word-Dokumenten, PDFs oder anderen Formaten arbeiten, Aspose.Words vereinfacht den Prozess.
 
@@ -122,7 +122,7 @@ Aspose.Words für Java ist ein robustes Tool zur Handhabung verschiedener Dokume
 
  Sie können Aspose.Words für Java von der Aspose-Website herunterladen[Hier](https://releases.aspose.com/words/java/).
 
-### Kann ich mit Aspose.Words für Java ein Word-Dokument in PDF konvertieren?
+### Kann ich ein Word-Dokument mit Aspose.Words für Java in PDF konvertieren?
 
 Ja, Aspose.Words für Java bietet einfache Methoden zum Konvertieren von Word-Dokumenten in PDF und umgekehrt, wie in diesem Handbuch gezeigt.
 

@@ -60,7 +60,6 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 將第一個儲存格插入表格中，固定寬度為 40 磅。這將確保該單元格始終保持 40 磅的寬度，無論表格大小如何。
 
 ```csharp
-
 //插入絕對大小的儲存格。
 builder.InsertCell();
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPoints(40);

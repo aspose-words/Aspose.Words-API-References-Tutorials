@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithComments.AddRemoveCommentReply.docx");
 
 ## 常见问题解答
 
-### 如何对一条评论添加多个回复？
+### 如何对一条评论添加多条回复？
 
 您可以通过调用`AddReply`对同一个评论对象多次调用该方法。
 

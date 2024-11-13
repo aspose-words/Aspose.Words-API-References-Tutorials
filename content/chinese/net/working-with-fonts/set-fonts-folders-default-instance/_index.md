@@ -50,7 +50,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 FontSettings.DefaultInstance.SetFontsFolder("C:\\MyFonts\\", true);
 ```
 
-在这条线中，`"C:\\MyFonts\\"`是自定义字体文件夹的路径。第二个参数，`true`，表示要递归扫描此文件夹中的字体。
+在这条线中，`"C:\\MyFonts\\"`是自定义字体文件夹的路径。第二个参数`true`，表示要递归扫描此文件夹中的字体。
 
 ## 步骤 3：加载文档
 
@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersDefaultInstance.pdf");
 
 ## 结论
 
-就这样！将 Aspose.Words for .NET 中默认实例的字体文件夹设置成几个简单的步骤就变得轻而易举。按照本指南操作，您可以确保您的 Word 文档看起来完全符合您的要求，并且所有自定义字体都已设置到位。所以，继续尝试，让您的文档大放异彩吧！
+就这样！将 Aspose.Words for .NET 中的默认实例的字体文件夹设置成几个简单的步骤就变得轻而易举了。按照本指南操作，您可以确保您的 Word 文档看起来完全符合您的要求，并且所有自定义字体都已到位。所以，继续尝试，让您的文档大放异彩吧！
 
 ## 常见问题解答
 

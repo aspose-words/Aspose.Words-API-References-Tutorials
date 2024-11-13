@@ -7,7 +7,7 @@ type: docs
 weight: 20
 url: /cs/java/using-document-elements/using-nodes/
 ---
-V tomto obsáhlém tutoriálu se ponoříme do světa práce s uzly v Aspose.Words for Java. Uzly jsou základními prvky struktury dokumentu a pochopení toho, jak s nimi manipulovat, je zásadní pro úlohy zpracování dokumentů. Prozkoumáme různé aspekty, včetně získávání nadřazených uzlů, výčtu podřízených uzlů a vytváření a přidávání uzlů odstavců.
+tomto obsáhlém tutoriálu se ponoříme do světa práce s uzly v Aspose.Words for Java. Uzly jsou základními prvky struktury dokumentu a pochopení toho, jak s nimi manipulovat, je zásadní pro úlohy zpracování dokumentů. Prozkoumáme různé aspekty, včetně získávání nadřazených uzlů, výčtu podřízených uzlů a vytváření a přidávání uzlů odstavců.
 
 ## 1. Úvod
 Aspose.Words for Java je výkonná knihovna pro programovou práci s dokumenty Wordu. Uzly představují různé prvky v dokumentu aplikace Word, jako jsou odstavce, běhy, oddíly a další. V tomto tutoriálu prozkoumáme, jak efektivně manipulovat s těmito uzly.
@@ -109,7 +109,7 @@ V tomto tutoriálu jsme probrali základní aspekty práce s uzly v Aspose.Words
 Aspose.Words for Java je knihovna Java, která umožňuje vývojářům vytvářet, manipulovat a převádět dokumenty aplikace Word programově.
 
 ### Q2. Jak mohu nainstalovat Aspose.Words pro Java?
-Aspose.Words for Java si můžete stáhnout a nainstalovat z[zde](https://releases.aspose.com/words/java/).
+ Aspose.Words for Java si můžete stáhnout a nainstalovat z[zde](https://releases.aspose.com/words/java/).
 
 ### Q3. Je k dispozici bezplatná zkušební verze?
  Ano, můžete získat bezplatnou zkušební verzi Aspose.Words for Java[zde](https://releases.aspose.com/).
@@ -118,6 +118,6 @@ Aspose.Words for Java si můžete stáhnout a nainstalovat z[zde](https://releas
  Můžete získat dočasnou licenci pro Aspose.Words for Java[zde](https://purchase.aspose.com/temporary-license/).
 
 ### Q5. Kde najdu podporu pro Aspose.Words pro Java?
- Pro podporu a diskuse navštivte[Aspose.Words for Java forum](https://forum.aspose.com/).
+ Pro podporu a diskuze navštivte[Aspose.Words for Java forum](https://forum.aspose.com/).
 
 Začněte s Aspose.Words pro Java nyní a odemkněte plný potenciál zpracování dokumentů!

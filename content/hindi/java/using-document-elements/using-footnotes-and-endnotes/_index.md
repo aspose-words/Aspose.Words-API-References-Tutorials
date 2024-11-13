@@ -2,7 +2,7 @@
 title: जावा के लिए Aspose.Words में फ़ुटनोट्स और एंडनोट्स का उपयोग करना
 linktitle: फ़ुटनोट्स और एंडनोट्स का उपयोग करना
 second_title: Aspose.Words जावा दस्तावेज़ प्रसंस्करण एपीआई
-description: Aspose.Words for Java में फ़ुटनोट्स और एंडनोट्स का प्रभावी ढंग से उपयोग करना सीखें। अपने दस्तावेज़ स्वरूपण कौशल को आज ही बढ़ाएँ!
+description: Aspose.Words for Java में फ़ुटनोट्स और एंडनोट्स का प्रभावी ढंग से उपयोग करना सीखें। आज ही अपने दस्तावेज़ स्वरूपण कौशल को बेहतर बनाएँ!
 type: docs
 weight: 13
 url: /hi/java/using-document-elements/using-footnotes-and-endnotes/

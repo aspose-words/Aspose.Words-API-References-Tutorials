@@ -10,7 +10,7 @@ url: /cs/net/programming-with-loadoptions/update-dirty-fields/
 
 ## Zavedení
 
-Byli jste někdy v situaci, kdy máte dokument Wordu plný polí, která je třeba aktualizovat, ale dělat to ručně je jako běžet maraton naboso? Tak to máš štěstí! S Aspose.Words pro .NET můžete tato pole automaticky aktualizovat, což vám ušetří spoustu času a úsilí. Tento průvodce vás provede procesem krok za krokem a zajistí vám, že se v něm rychle zorientujete.
+Byli jste někdy v situaci, kdy máte dokument Wordu plný polí, která je třeba aktualizovat, ale dělat to ručně vám připadá jako běžet maraton naboso? Tak to máš štěstí! S Aspose.Words pro .NET můžete tato pole automaticky aktualizovat, což vám ušetří spoustu času a úsilí. Tento průvodce vás provede procesem krok za krokem a zajistí vám, že se v něm rychle zorientujete.
 
 ## Předpoklady
 

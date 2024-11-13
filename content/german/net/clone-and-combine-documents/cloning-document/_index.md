@@ -22,7 +22,7 @@ Bevor wir mit dem Programmieren beginnen, stellen wir sicher, dass wir alles hab
 
 ## Namespaces importieren
 
-Bevor Sie die Aspose.Words für .NET-Bibliothek verwenden können, müssen Sie die erforderlichen Namespaces in Ihr Projekt einbinden. Das ist, als würden Sie Ihrem Code sagen: „Hey, ich muss ein paar Spezialwerkzeuge verwenden, also lass sie uns einbinden.“
+Bevor Sie die Aspose.Words-Bibliothek für .NET verwenden können, müssen Sie die erforderlichen Namespaces in Ihr Projekt einbinden. Das ist, als würden Sie Ihrem Code sagen: „Hey, ich muss ein paar Spezialwerkzeuge verwenden, also lass sie uns einbinden.“
 
 ```csharp
 using Aspose.Words;
@@ -88,7 +88,7 @@ Wenn alles an seinem Platz ist, ist es Zeit, Ihren Code auszuführen und die Erg
 
 Lassen Sie uns abschließend überprüfen, ob unser geklontes Dokument Ihren Erwartungen entspricht:
 
-1.  Navigieren Sie zu Ihrem Dokumentenverzeichnis: Öffnen Sie das`Documents` Ordner und suchen Sie das geklonte Dokument mit dem Namen`CloneAndCombineDocuments.CloningDocument.docx`.
+1.  Navigieren Sie zu Ihrem Dokumentenverzeichnis: Öffnen Sie das`Documents` und suchen Sie das geklonte Dokument mit dem Namen`CloneAndCombineDocuments.CloningDocument.docx`.
 2.  Öffnen Sie das geklonte Dokument: Doppelklicken Sie, um es in Microsoft Word zu öffnen und überprüfen Sie, ob es eine exakte Kopie des Originals ist.`Document.docx`.
 
 ## Abschluss

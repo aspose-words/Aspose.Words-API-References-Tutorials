@@ -49,7 +49,7 @@ Sie können Wasserzeichen weiter anpassen, indem Sie Schriftart, Größe, Farbe 
 
 ### Seitengröße und -ausrichtung
 
-Die Seiteneinrichtung ist bei der Dokumentformatierung von entscheidender Bedeutung. Aspose.Words für Java bietet vollständige Kontrolle über Seitengröße und -ausrichtung:
+Die Seiteneinrichtung ist entscheidend für die Dokumentformatierung. Aspose.Words für Java bietet vollständige Kontrolle über Seitengröße und -ausrichtung:
 
 ```java
 // Laden Sie das Dokument

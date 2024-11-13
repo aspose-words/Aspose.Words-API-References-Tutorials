@@ -17,7 +17,7 @@ url: /zh/net/working-with-revisions/shape-revision/
 
 -  Aspose.Words for .NET：确保已安装 Aspose.Words 库。您可以[点击下载](https://releases.aspose.com/words/net/).
 - 开发环境：您应该设置一个开发环境，例如 Visual Studio。
-- 对 C# 的基本了解：熟悉 C# 编程语言和面向对象编程的基本概念。
+- 对 C# 的基本理解：熟悉 C# 编程语言和面向对象编程的基本概念。
 - Word 文档：要使用的 Word 文档，或者您可以在教程期间创建一个。
 
 ## 导入命名空间
@@ -63,7 +63,7 @@ doc.FirstSection.Body.FirstParagraph.AppendChild(shape);
 
 ## 步骤 4：开始跟踪修订
 
-为了跟踪文档中的更改，我们需要启用修订跟踪。这对于识别对形状所做的修改至关重要。
+要跟踪文档中的更改，我们需要启用修订跟踪。这对于识别对形状所做的修改至关重要。
 
 ```csharp
 doc.StartTrackRevisions("John Doe");

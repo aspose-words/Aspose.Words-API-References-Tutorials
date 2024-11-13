@@ -99,7 +99,7 @@ doc.Save(outputPath);
 
 ## Závěr
 
-Gratuluji! Úspěšně jste nahráli soubor CHM do dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato výkonná knihovna usnadňuje integraci různých formátů souborů do dokumentů aplikace Word a poskytuje robustní řešení pro vaše potřeby v oblasti dokumentace.
+Gratuluji! Úspěšně jste nahráli soubor CHM do dokumentu aplikace Word pomocí Aspose.Words for .NET. Tato výkonná knihovna usnadňuje integraci různých formátů souborů do dokumentů aplikace Word a poskytuje robustní řešení pro vaše potřeby dokumentace.
 
 ## FAQ
 

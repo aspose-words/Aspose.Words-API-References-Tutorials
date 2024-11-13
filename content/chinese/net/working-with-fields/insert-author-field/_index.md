@@ -17,7 +17,7 @@ url: /zh/net/working-with-fields/insert-author-field/
 
 -  Aspose.Words for .NET 库：您可以[点击下载](https://releases.aspose.com/words/net/).
 - Visual Studio：这是我们编写和运行代码的地方。
-- .NET Framework：确保您的机器上已安装它。
+- .NET Framework：确保您的机器上安装了它。
 - C# 基础知识：熟悉 C# 编程将帮助您跟上。
 
 一旦准备好这些先决条件，我们就可以开始了。
@@ -42,7 +42,7 @@ using Aspose.Words.Fields;
 1. 打开 Visual Studio：在您的计算机上启动 Visual Studio。
 2. 创建新项目：单击“创建新项目”。
 3. 选择项目类型：选择“控制台应用程序”，语言为 C#。
-4. 配置您的项目：命名您的项目并选择保存位置。单击“创建”。
+4. 配置您的项目：命名您的项目并选择保存位置。点击“创建”。
 
 ### 安装 Aspose.Words for .NET
 
@@ -69,7 +69,7 @@ Document doc = new Document();
 2. 添加段落：接下来，我们将在文档中添加一个段落。
 
 ```csharp
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+Paragraph para = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
 我们将在此段落中插入作者字段。
@@ -80,7 +80,7 @@ Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
 
 ### 附加作者字段
 
-1. 插入字段：使用`AppendField`方法将作者字段插入到段落中。
+1. 插入字段：使用`AppendField`方法将作者字段插入段落。
 
 ```csharp
 FieldAuthor field = (FieldAuthor)para.AppendField(FieldType.FieldAuthor, false);

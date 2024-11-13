@@ -15,7 +15,7 @@ url: /zh/net/working-with-list/restart-list-at-each-section/
 
 在开始之前，请确保您已准备好以下内容：
 
-1.  Aspose.Words for .NET：从以下网址下载并安装最新版本[Aspose 版本](https://releases.aspose.com/words/net/)页。
+1.  Aspose.Words for .NET：从以下网站下载并安装最新版本[Aspose 版本](https://releases.aspose.com/words/net/)页。
 2. .NET 环境：安装 .NET 后设置您的开发环境。
 3. 对 C# 的基本了解：建议熟悉 C# 编程语言。
 4.  Aspose 许可证：您可以选择[临时执照](https://purchase.aspose.com/temporary-license/)如果你没有。
@@ -51,7 +51,7 @@ doc.Lists.Add(ListTemplate.NumberDefault);
 
 ## 步骤 3：访问列表并设置重新启动属性
 
-检索刚刚创建的列表并设置其`IsRestartAtEachSection`财产`true`这可确保列表在每个新部分重新开始编号。
+检索刚刚创建的列表并设置其`IsRestartAtEachSection`财产`true`.这确保列表在每个新部分重新开始编号。
 
 ```csharp
 List list = doc.Lists[0];
@@ -87,7 +87,7 @@ for (int i = 1; i < 45; i++)
 
 ```csharp
 OoxmlSaveOptions options = new OoxmlSaveOptions { Compliance = OoxmlCompliance.Iso29500_2008_Transitional };
-doc.Save(dataDir + "ResetListAtEachSection.docx", options);
+doc.Save(dataDir + "WorkingWithList.RestartListAtEachSection.docx", options);		
 ```
 
 ## 结论

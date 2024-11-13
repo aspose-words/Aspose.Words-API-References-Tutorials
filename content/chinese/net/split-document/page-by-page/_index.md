@@ -13,7 +13,7 @@ url: /zh/net/split-document/page-by-page/
 
 ## 先决条件
 
-在深入学习本教程之前，请确保您已准备好开始所需的一切：
+在深入学习本教程之前，请确保您已准备好开始使用所需的一切：
 
 1. Aspose.Words for .NET：确保已安装 Aspose.Words 库。您可以从[Aspose 发布页面](https://releases.aspose.com/words/net/).
 2. 开发环境：您需要一个使用 .NET 设置的开发环境。Visual Studio 是一个流行的选择。

@@ -15,7 +15,7 @@ Mussten Sie schon einmal eine Tabelle aus HTML in ein Word-Dokument einfügen? E
 
 Bevor wir uns mit den Einzelheiten des Einfügens einer Tabelle aus HTML befassen, stellen Sie sicher, dass die folgenden Voraussetzungen erfüllt sind:
 
-1. Aspose.Words für .NET: Laden Sie die Aspose.Words für .NET-Bibliothek herunter und installieren Sie sie von der[Download-Seite](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET: Laden Sie die Aspose.Words für .NET-Bibliothek herunter und installieren Sie sie von der[Download-Seite](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Jede .NET-kompatible Entwicklungsumgebung wie Visual Studio.
 3. Grundkenntnisse in C#: Verständnis der grundlegenden C#-Programmierkonzepte.
 4. HTML-Tabellencode: Der HTML-Code für die Tabelle, die Sie einfügen möchten.
@@ -43,7 +43,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Schritt 2: Neues Dokument erstellen
 
-Als Nächstes erstellen Sie ein neues Word-Dokument. Dieses Dokument dient als Arbeitsfläche, auf der Sie Ihre HTML-Tabelle einfügen.
+Als Nächstes erstellen Sie ein neues Word-Dokument. Dieses Dokument dient als Leinwand, auf der Sie Ihre HTML-Tabelle einfügen.
 
 ```csharp
 Document doc = new Document();
@@ -98,4 +98,4 @@ Auf jeden Fall! Aspose.Words für .NET unterstützt eine breite Palette von HTML
 Aspose.Words für .NET verarbeitet große Tabellen automatisch und stellt sicher, dass sie im Word-Dokument ordnungsgemäß auf mehrere Seiten aufgeteilt werden.
 
 ### Kann ich Aspose.Words für .NET in einer Webanwendung verwenden?
-Ja, Aspose.Words für .NET kann sowohl in Desktop- als auch in Webanwendungen verwendet werden, was es zu einem vielseitigen Tool zur Dokumentbearbeitung macht.
+Ja, Aspose.Words für .NET kann sowohl in Desktop- als auch in Webanwendungen verwendet werden und ist damit ein vielseitiges Tool zur Dokumentbearbeitung.

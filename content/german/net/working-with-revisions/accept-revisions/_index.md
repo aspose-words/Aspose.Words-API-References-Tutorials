@@ -89,7 +89,7 @@ In diesem Schritt wird der dritte Absatz entfernt. Aufgrund der Revisionsverfolg
 
 ## Schritt 5: Alle Revisionen akzeptieren
 
-Akzeptieren wir abschließend alle nachverfolgten Revisionen, um die Änderungen im Dokument zu festigen.
+Lassen Sie uns abschließend alle verfolgten Revisionen akzeptieren und so die Änderungen im Dokument festigen.
 
 ```csharp
 // Akzeptieren Sie alle Überarbeitungen.
@@ -105,7 +105,7 @@ doc.AcceptAllRevisions();
 Zum Abschluss können wir die Revisionsverfolgung deaktivieren, um die Aufzeichnung weiterer Änderungen zu beenden.
 
 ```csharp
-// Beenden Sie die Verfolgung von Revisionen.
+// Beenden Sie die Revisionsverfolgung.
 doc.StopTrackRevisions();
 ```
 

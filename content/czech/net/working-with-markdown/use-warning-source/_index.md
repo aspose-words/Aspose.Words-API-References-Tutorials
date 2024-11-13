@@ -32,7 +32,7 @@ using Aspose.Words.Saving;
 
 ## Krok 1: Nastavení adresáře dokumentů
 
-Každý projekt potřebuje pevné základy, že? Začněme nastavením cesty k našemu adresáři dokumentů.
+Každý projekt potřebuje pevné základy, ne? Začněme nastavením cesty k našemu adresáři dokumentů.
 
 ```csharp
 // Cesta k adresáři dokumentů.

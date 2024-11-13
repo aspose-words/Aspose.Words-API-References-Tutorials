@@ -1,27 +1,27 @@
 ---
 title: Documentwatermerken en pagina-instelling
 linktitle: Documentwatermerken en pagina-instelling
-second_title: Aspose.Words Java-documentverwerkings-API
-description: Leer hoe u watermerken kunt toepassen en paginaconfiguraties kunt instellen met Aspose.Words voor Java. Een uitgebreide handleiding met broncode.
+second_title: Aspose.Words Java Documentverwerkings-API
+description: Leer hoe u watermerken toepast en paginaconfiguraties instelt met Aspose.Words voor Java. Een uitgebreide gids met broncode.
 type: docs
 weight: 13
 url: /nl/java/document-styling/document-watermarking-page-setup/
 ---
 ## Invoering
 
-Op het gebied van documentmanipulatie is Aspose.Words voor Java een krachtig hulpmiddel waarmee ontwikkelaars controle kunnen uitoefenen over elk aspect van documentverwerking. In deze uitgebreide handleiding gaan we dieper in op de fijne kneepjes van het watermerken van documenten en het instellen van pagina's met behulp van Aspose.Words voor Java. Of u nu een doorgewinterde ontwikkelaar bent of net de wereld van Java-documentverwerking betreedt, deze stapsgewijze handleiding voorziet u van de kennis en broncode die u nodig heeft.
+Op het gebied van documentmanipulatie is Aspose.Words voor Java een krachtig hulpmiddel, waarmee ontwikkelaars controle kunnen uitoefenen over elk aspect van documentverwerking. In deze uitgebreide gids duiken we in de complexiteit van documentwatermerken en pagina-instellingen met Aspose.Words voor Java. Of u nu een doorgewinterde ontwikkelaar bent of net de wereld van Java-documentverwerking betreedt, deze stapsgewijze gids zal u voorzien van de kennis en broncode die u nodig hebt.
 
 ## Documentwatermerken
 
 ### Watermerken toevoegen
 
-Het toevoegen van watermerken aan documenten kan van cruciaal belang zijn voor de branding of beveiliging van uw inhoud. Aspose.Words voor Java maakt deze taak eenvoudig. Hier ziet u hoe:
+Het toevoegen van watermerken aan documenten kan cruciaal zijn voor branding of het beveiligen van uw content. Aspose.Words voor Java maakt deze taak eenvoudig. Dit is hoe:
 
 ```java
 // Laad het document
 Document doc = new Document("document.docx");
 
-// Maak een watermerk
+// Een watermerk maken
 Shape watermark = new Shape(doc, ShapeType.TEXT_PLAIN_TEXT);
 watermark.getTextPath().setText("Confidential");
 watermark.setWidth(300);
@@ -34,10 +34,10 @@ watermark.setWrapType(WrapType.NONE);
 watermark.setVerticalAlignment(VerticalAlignment.CENTER);
 watermark.setHorizontalAlignment(HorizontalAlignment.CENTER);
 
-// Plaats het watermerk
+// Voeg het watermerk in
 doc.getFirstSection().getBody().getFirstParagraph().appendChild(watermark);
 
-// Bewaar het document
+// Sla het document op
 doc.save("document_with_watermark.docx");
 ```
 
@@ -47,19 +47,19 @@ U kunt watermerken verder aanpassen door het lettertype, de grootte, de kleur en
 
 ## Pagina-instelling
 
-### Paginagrootte en richting
+### Paginaformaat en -oriëntatie
 
-Pagina-instelling is cruciaal bij de documentopmaak. Aspose.Words voor Java biedt volledige controle over paginagrootte en -oriëntatie:
+Pagina-instelling is cruciaal bij het formatteren van documenten. Aspose.Words voor Java biedt volledige controle over de paginagrootte en -oriëntatie:
 
 ```java
 // Laad het document
 Document doc = new Document("document.docx");
 
-// Stel het paginaformaat in op A4
+// Stel paginaformaat in op A4
 doc.getFirstSection().getPageSetup().setPageWidth(595.0);
 doc.getFirstSection().getPageSetup().setPageHeight(842.0);
 
-// Wijzig de paginarichting naar liggend
+// Wijzig de pagina-oriëntatie naar liggend
 doc.getFirstSection().getPageSetup().setOrientation(Orientation.LANDSCAPE);
 
 // Sla het gewijzigde document op
@@ -68,7 +68,7 @@ doc.save("formatted_document.docx");
 
 ### Marges en paginanummering
 
-Nauwkeurige controle over marges en paginanummering is essentieel voor professionele documenten. Bereik dit met Aspose.Words voor Java:
+Precieze controle over marges en paginanummering is essentieel voor professionele documenten. Bereik dit met Aspose.Words voor Java:
 
 ```java
 // Laad het document
@@ -93,7 +93,7 @@ doc.save("formatted_document.docx");
 
 ### Hoe kan ik een watermerk uit een document verwijderen?
 
-Als u een watermerk uit een document wilt verwijderen, kunt u de vormen van het document doorlopen en de vormen verwijderen die watermerken vertegenwoordigen. Hier is een fragment:
+Om een watermerk uit een document te verwijderen, kunt u door de vormen van het document itereren en de vormen verwijderen die watermerken vertegenwoordigen. Hier is een fragment:
 
 ```java
 Document doc = new Document("document_with_watermark.docx");
@@ -111,9 +111,9 @@ doc.save("document_without_watermark.docx");
 
 Ja, u kunt meerdere watermerken aan een document toevoegen door extra Shape-objecten te maken en deze naar wens te positioneren.
 
-### Hoe wijzig ik het paginaformaat naar Legal in liggende richting?
+### Hoe verander ik het paginaformaat naar legaal in liggende stand?
 
-Om het paginaformaat in liggende richting in te stellen op Legal, wijzigt u de paginabreedte en -hoogte als volgt:
+Om het paginaformaat in liggende stand op legaal in te stellen, wijzigt u de paginabreedte en -hoogte als volgt:
 
 ```java
 doc.getFirstSection().getPageSetup().setPageWidth(842.0);
@@ -126,7 +126,7 @@ Het standaardlettertype voor watermerken is Calibri met een lettergrootte van 36
 
 ### Hoe kan ik paginanummers toevoegen vanaf een specifieke pagina?
 
-U kunt dit bereiken door het startpaginanummer in uw document als volgt in te stellen:
+U kunt dit bereiken door het startpaginanummer van uw document als volgt in te stellen:
 
 ```java
 doc.getFirstSection().getPageSetup().setPageStartingNumber(5);
@@ -134,10 +134,10 @@ doc.getFirstSection().getPageSetup().setPageStartingNumber(5);
 
 ### Hoe kan ik tekst in de kop- of voettekst centreren?
 
-U kunt tekst in de kop- of voettekst centreren met behulp van de setAlignment-methode voor het Paragraph-object in de kop- of voettekst.
+U kunt tekst in de kop- of voettekst centreren met behulp van de methode setAlignment op het object Paragraph in de kop- of voettekst.
 
 ## Conclusie
 
-In deze uitgebreide handleiding hebben we de kunst van het watermerken van documenten en het instellen van pagina's onderzocht met behulp van Aspose.Words voor Java. Gewapend met de meegeleverde broncodefragmenten en inzichten beschikt u nu over de tools om uw documenten met finesse te manipuleren en op te maken. Met Aspose.Words voor Java kunt u professionele, merkdocumenten maken die zijn afgestemd op uw exacte specificaties.
+In deze uitgebreide gids hebben we de kunst van documentwatermerken en pagina-instellingen met Aspose.Words voor Java verkend. Gewapend met de meegeleverde broncodefragmenten en inzichten, beschikt u nu over de tools om uw documenten met finesse te manipuleren en op te maken. Aspose.Words voor Java stelt u in staat om professionele, merkgebonden documenten te maken die zijn afgestemd op uw exacte specificaties.
 
 Het beheersen van documentmanipulatie is een waardevolle vaardigheid voor ontwikkelaars, en Aspose.Words voor Java is uw vertrouwde metgezel op deze reis. Begin vandaag nog met het maken van verbluffende documenten!

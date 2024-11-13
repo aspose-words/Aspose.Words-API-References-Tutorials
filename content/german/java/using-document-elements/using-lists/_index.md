@@ -12,7 +12,7 @@ In diesem umfassenden Tutorial erfahren Sie, wie Sie Listen in Aspose.Words für
 
 ## Einführung in Aspose.Words für Java
 
-Bevor wir mit der Arbeit mit Listen beginnen, machen wir uns mit Aspose.Words für Java vertraut. Diese API bietet Entwicklern die Tools zum Erstellen, Ändern und Bearbeiten von Word-Dokumenten in einer Java-Umgebung. Es ist eine vielseitige Lösung für Aufgaben von der einfachen Dokumenterstellung bis hin zur komplexen Formatierung und Inhaltsverwaltung.
+Bevor wir mit der Arbeit mit Listen beginnen, machen wir uns mit Aspose.Words für Java vertraut. Diese API bietet Entwicklern die Tools zum Erstellen, Ändern und Bearbeiten von Word-Dokumenten in einer Java-Umgebung. Es ist eine vielseitige Lösung für Aufgaben, die von der einfachen Dokumenterstellung bis hin zur komplexen Formatierung und Inhaltsverwaltung reichen.
 
 ### Einrichten Ihrer Umgebung
 
@@ -181,7 +181,7 @@ Indem Sie diese Schritte befolgen, können Sie Dokumente mit benutzerdefinierten
             builder.getListFormat().setListLevelNumber(i);
             builder.writeln("Level " + i);
         }
-        // Auf diese Weise können Sie die Listenformatierung beenden.
+        // Auf diese Weise können Sie die Listenformatierung stoppen.
         builder.getListFormat().setList(null);
         builder.getDocument().save(outPath + "WorkingWithList.SpecifyListLevel.docx");
     }
@@ -233,4 +233,4 @@ Ja, Sie können Aspose.Words für Java so konfigurieren, dass es verschiedenen W
 Absolut! Aspose.Words für Java unterstützt erweiterte Dokumentformatierung, einschließlich Tabellen, Bilder und mehr. Beispiele finden Sie in der Dokumentation.
 
 ### Wo kann ich eine temporäre Lizenz für Aspose.Words für Java erhalten?
- Sie können eine temporäre Lizenz erhalten[Hier](https://purchase.aspose.com/temporary-license/).
+Sie können eine temporäre Lizenz erhalten[Hier](https://purchase.aspose.com/temporary-license/).

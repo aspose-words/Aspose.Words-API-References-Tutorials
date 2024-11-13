@@ -2,35 +2,35 @@
 title: Travailler avec des listes de documents
 linktitle: Travailler avec des listes de documents
 second_title: API de traitement de documents Java Aspose.Words
-description: Apprenez à utiliser des listes de documents en Java à l'aide d'Aspose.Words pour Java. Ce guide étape par étape comprend des exemples de code source pour une manipulation efficace des documents.
+description: Apprenez à travailler avec des listes de documents en Java à l'aide d'Aspose.Words pour Java. Ce guide étape par étape comprend des exemples de code source pour une manipulation efficace des documents.
 type: docs
 weight: 11
 url: /fr/java/table-processing/working-with-document-lists/
 ---
 
-Êtes-vous prêt à plonger dans le monde de la manipulation de documents en Java avec Aspose.Words ? Dans ce guide complet, nous explorerons les subtilités de l'utilisation de listes de documents à l'aide d'Aspose.Words pour Java. Nous vous fournirons des instructions étape par étape et des exemples de code source pour vous aider à exploiter toute la puissance de cette API Java polyvalente. Commençons !
+Êtes-vous prêt à plonger dans le monde de la manipulation de documents en Java avec Aspose.Words ? Dans ce guide complet, nous explorerons les subtilités du travail avec des listes de documents à l'aide d'Aspose.Words pour Java. Nous vous fournirons des instructions étape par étape et des exemples de code source pour vous aider à exploiter toute la puissance de cette API Java polyvalente. Commençons !
 
 ## Introduction
 
-Aspose.Words for Java est une API robuste qui permet aux développeurs Java de travailler avec divers aspects du traitement des documents. Dans ce guide, nous nous concentrerons sur la gestion des listes de documents, une tâche fondamentale dans l'automatisation des documents. Que vous ayez besoin de créer, modifier ou extraire des informations à partir de listes de documents, Aspose.Words for Java est là pour vous.
+Aspose.Words pour Java est une API robuste qui permet aux développeurs Java de travailler sur divers aspects du traitement de documents. Dans ce guide, nous nous concentrerons sur la gestion des listes de documents, une tâche fondamentale dans l'automatisation des documents. Que vous ayez besoin de créer, de modifier ou d'extraire des informations à partir de listes de documents, Aspose.Words pour Java est là pour vous.
 
 ## Premiers pas avec Aspose.Words pour Java
 
-Avant d'entrer dans les détails de l'utilisation des listes de documents, assurons-nous que tout est correctement configuré :
+Avant de plonger dans les détails du travail avec les listes de documents, assurons-nous que tout est correctement configuré :
 
-### Conditions préalables
+### Prérequis
 
 - Kit de développement Java (JDK) installé sur votre système.
 - Bibliothèque Aspose.Words pour Java téléchargée et ajoutée à votre projet.
 
-## Création d'une liste de documents
+## Créer une liste de documents
 
 Pour créer une liste de documents, procédez comme suit :
 
 1. Importez les packages nécessaires.
-2. Initialisez un objet Document.
+2. Initialiser un objet Document.
 3. Ajoutez des éléments de liste au document.
-4. Enregistrez le document.
+4. Sauvegarder le document.
 
 Voici un exemple d'extrait de code pour vous aider à démarrer :
 
@@ -51,7 +51,7 @@ public class DocumentListExample {
         list.getListItems().add("Item 2");
         list.getListItems().add("Item 3");
 
-        // Enregistrez le document
+        // Enregistrer le document
         doc.save("DocumentListExample.docx");
     }
 }
@@ -59,12 +59,12 @@ public class DocumentListExample {
 
 ## Modification d'une liste de documents
 
-Une fois que vous avez créé une liste de documents, vous devrez peut-être la modifier en ajoutant, supprimant ou mettant à jour des éléments de liste. Voici comment procéder :
+Une fois que vous avez créé une liste de documents, vous devrez peut-être la modifier en ajoutant, en supprimant ou en mettant à jour des éléments de liste. Voici comment procéder :
 
 1. Charger un document existant.
 2. Accédez à la liste que vous souhaitez modifier.
-3. Effectuez les opérations souhaitées.
-4. Enregistrez le document.
+3. Effectuer les opérations souhaitées.
+4. Sauvegarder le document.
 
 Voici un extrait de code pour modifier une liste de documents :
 
@@ -80,21 +80,21 @@ public class ModifyDocumentListExample {
         // Ajouter un nouvel élément
         list.getListItems().add("New Item");
 
-        // Enregistrez le document modifié
+        // Enregistrer le document modifié
         doc.save("ModifiedDocumentListExample.docx");
     }
 }
 ```
 
-## Extraire des informations d'une liste de documents
+## Extraction d'informations à partir d'une liste de documents
 
 Dans certains cas, vous devrez peut-être extraire des informations d'une liste de documents, par exemple récupérer tous les éléments de la liste ou des éléments spécifiques en fonction de critères. Voici comment procéder :
 
 1. Chargez le document contenant la liste.
-2. Accédez à la liste.
+2. Accéder à la liste.
 3. Parcourez les éléments de la liste et extrayez les informations souhaitées.
 
-Voici un extrait de code pour extraire des informations d'une liste de documents :
+Voici un extrait de code permettant d’extraire des informations d’une liste de documents :
 
 ```java
 public class ExtractListItemsExample {
@@ -113,23 +113,23 @@ public class ExtractListItemsExample {
 }
 ```
 
-## Foire aux questions (FAQ)
+## Questions fréquemment posées (FAQ)
 
-### Comment ajouter des puces à une liste de documents ?
- Pour ajouter des puces à une liste de documents, utilisez le ListTemplate approprié lors de la création de la liste. Par exemple, utilisez`ListTemplate.BULLET_DEFAULT` au lieu de`ListTemplate.NUMBER_DEFAULT`.
+### Comment ajouter des puces à une liste de documents ?
+ Pour ajouter des puces à une liste de documents, utilisez le modèle de liste approprié lors de la création de la liste. Par exemple, utilisez`ListTemplate.BULLET_DEFAULT` au lieu de`ListTemplate.NUMBER_DEFAULT`.
 
-### Puis-je modifier le formatage des éléments de la liste ?
-Oui, vous pouvez personnaliser le formatage des éléments de liste, notamment la police, la taille, la couleur, etc., à l'aide des fonctionnalités de formatage d'Aspose.Words pour Java.
+### Puis-je modifier la mise en forme des éléments de la liste ?
+Oui, vous pouvez personnaliser la mise en forme des éléments de liste, y compris la police, la taille, la couleur, etc., à l'aide des fonctionnalités de mise en forme d'Aspose.Words pour Java.
 
-### Aspose.Words for Java est-il compatible avec différents formats de documents ?
-Absolument! Aspose.Words for Java prend en charge un large éventail de formats de documents, notamment DOCX, PDF, HTML, etc.
+### Aspose.Words pour Java est-il compatible avec différents formats de documents ?
+Absolument ! Aspose.Words pour Java prend en charge une large gamme de formats de documents, notamment DOCX, PDF, HTML, etc.
 
-### Comment puis-je convertir une liste de documents en PDF ?
-Pour convertir une liste de documents en PDF, chargez simplement le document à l'aide d'Aspose.Words for Java et enregistrez-le au format PDF. C'est aussi simple que ça !
+### Comment puis-je convertir une liste de documents en PDF ?
+Pour convertir une liste de documents en PDF, il suffit de charger le document à l'aide d'Aspose.Words pour Java et de l'enregistrer au format PDF. C'est aussi simple que ça !
 
-### Aspose.Words for Java prend-il en charge l'utilisation de tableaux dans des documents ?
-Oui, Aspose.Words for Java offre une prise en charge étendue pour travailler avec des tableaux, vous permettant de créer, modifier et extraire des données tabulaires sans effort.
+### Aspose.Words pour Java prend-il en charge le travail avec des tableaux dans les documents ?
+Oui, Aspose.Words pour Java fournit une prise en charge étendue du travail avec des tableaux, vous permettant de créer, modifier et extraire des données tabulaires sans effort.
 
 ## Conclusion
 
-Dans ce guide complet, nous avons exploré le monde de l'utilisation des listes de documents à l'aide d'Aspose.Words pour Java. Vous avez appris à créer, modifier et extraire des informations à partir de listes de documents, le tout avec la puissance et la flexibilité d'Aspose.Words pour Java. Commencez dès aujourd'hui à mettre en œuvre ces techniques dans vos projets Java et rationalisez vos tâches d'automatisation de documents.
+Dans ce guide complet, nous avons exploré le monde du travail avec les listes de documents à l'aide d'Aspose.Words pour Java. Vous avez appris à créer, modifier et extraire des informations à partir de listes de documents, le tout avec la puissance et la flexibilité d'Aspose.Words pour Java. Commencez dès aujourd'hui à implémenter ces techniques dans vos projets Java et rationalisez vos tâches d'automatisation de documents.

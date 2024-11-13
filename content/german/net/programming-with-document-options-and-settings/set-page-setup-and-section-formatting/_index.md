@@ -31,7 +31,7 @@ using Aspose.Words.Saving;
 
 ## Schritt 1: Initialisieren Sie das Dokument und den DocumentBuilder
 
- Beginnen wir mit der Initialisierung des`Document`Und`DocumentBuilder` Objekte. Die`DocumentBuilder` ist eine Hilfsklasse, die die Dokumenterstellung und -bearbeitung vereinfacht.
+ Beginnen wir mit der Initialisierung des`Document` Und`DocumentBuilder` Objekte. Die`DocumentBuilder` ist eine Hilfsklasse, die die Dokumenterstellung und -bearbeitung vereinfacht.
 
 ```csharp
 // Der Pfad zum Dokumentverzeichnis.

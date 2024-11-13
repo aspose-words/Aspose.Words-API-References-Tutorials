@@ -1,7 +1,7 @@
 ---
 title: Erweitern der Dokumentfunktionalität mit Weberweiterungen
 linktitle: Erweitern der Dokumentfunktionalität mit Weberweiterungen
-second_title: Aspose.Words Python-API zur Dokumentenverwaltung
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
 description: Erfahren Sie, wie Sie die Dokumentfunktionalität mit Weberweiterungen mithilfe von Aspose.Words für Python erweitern. Schritt-für-Schritt-Anleitung mit Quellcode für nahtlose Integration.
 type: docs
 weight: 13

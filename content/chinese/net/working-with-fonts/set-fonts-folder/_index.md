@@ -13,7 +13,7 @@ url: /zh/net/working-with-fonts/set-fonts-folder/
 
 ## 先决条件
 
-在开始之前，请确保您已准备好以下内容：
+在开始之前，请确保您已准备好以下物品：
 
 - 您的计算机上安装了 Visual Studio
 - .NET Framework 设置

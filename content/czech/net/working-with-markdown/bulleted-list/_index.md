@@ -66,7 +66,7 @@ builder.Writeln("Item 2");
 
 ## Krok 5: Přidejte podpoložky
 
-Aby to bylo zajímavější, přidejte některé podpoložky pod „Položka 2“. To pomáhá při organizování dílčích bodů.
+Aby to bylo zajímavější, přidejte některé podpoložky pod „Položka 2“. To pomáhá při organizaci dílčích bodů.
 
 ```csharp
 builder.ListFormat.ListIndent();
@@ -90,10 +90,10 @@ Nebojte se experimentovat s různými styly a formáty seznamů, aby vyhovovaly 
     Použijte`ListIndent` způsob přidání dalších úrovní a`ListOutdent` vrátit se na vyšší úroveň.
 
 ### Je možné kombinovat seznamy odrážek a čísel?
-   Absolutně! Mezi formáty odrážek a čísel můžete přepínat pomocí`ApplyNumberDefault`a`ApplyBulletDefault` metody.
+   Absolutně! Mezi formáty odrážek a čísel můžete přepínat pomocí`ApplyNumberDefault` a`ApplyBulletDefault` metody.
 
 ### Mohu upravit styl textu v položkách seznamu?
-    Ano, na text v položkách seznamu můžete použít různé styly, fonty a formátování pomocí`Font` vlastnictvím`DocumentBuilder`.
+    Ano, na text v položkách seznamu můžete použít různé styly, fonty a formátování pomocí`Font` vlastnictví`DocumentBuilder`.
 
 ### Jak mohu vytvořit vícesloupcový seznam s odrážkami?
    Formátování tabulky můžete použít k vytvoření vícesloupcových seznamů, kde každá buňka obsahuje samostatný seznam s odrážkami.

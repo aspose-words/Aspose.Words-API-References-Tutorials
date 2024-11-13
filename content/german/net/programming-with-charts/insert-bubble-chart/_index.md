@@ -29,7 +29,7 @@ using Aspose.Words.Drawing;
 using Aspose.Words.Drawing.Charts;
 ```
 
-Lassen Sie uns den Prozess in überschaubare Schritte unterteilen. Befolgen Sie die Schritte sorgfältig, und Ihr Blasendiagramm ist im Handumdrehen fertig.
+Lassen Sie uns den Prozess in überschaubare Schritte unterteilen. Befolgen Sie diese sorgfältig, und Ihr Blasendiagramm ist im Handumdrehen fertig.
 
 ## Schritt 1: Richten Sie Ihr Dokumentverzeichnis ein
 
@@ -75,7 +75,7 @@ chart.Series.Add("Aspose Series 1", new double[] { 0.7, 1.8, 2.6 }, new double[]
 
 ## Schritt 6: Speichern Sie das Dokument
 
-Zum Schluss speichern wir unser Dokument mit dem Blasendiagramm im angegebenen Verzeichnis. Damit ist der Vorgang abgeschlossen.
+Abschließend speichern wir unser Dokument mit dem Blasendiagramm im angegebenen Verzeichnis. Damit ist der Vorgang abgeschlossen.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.InsertBubbleChart.docx");

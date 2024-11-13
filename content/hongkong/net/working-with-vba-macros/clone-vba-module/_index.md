@@ -10,7 +10,7 @@ url: /zh-hant/net/working-with-vba-macros/clone-vba-module/
 
 ## 介紹
 
-嘿，開發人員朋友們！您準備好進入 Aspose.Words for .NET 的世界了嗎？無論您是剛開始文件操作還是經驗豐富的編碼員，本指南都將引導您完成有關在 Word 文件中使用 VBA 專案所需了解的所有資訊。從克隆模組到保存文檔，我們將在一個簡單的分步教程中介紹這一切。所以，拿起你最喜歡的飲料，坐下來，讓我們開始吧！
+嘿，開發人員朋友們！您準備好進入 Aspose.Words for .NET 的世界了嗎？無論您是剛開始文件操作還是經驗豐富的編碼員，本指南都將引導您了解有關在 Word 文件中使用 VBA 專案所需了解的所有資訊。從克隆模組到保存文檔，我們將在一個簡單的分步教程中介紹這一切。所以，拿起你最喜歡的飲料，坐下來，讓我們開始吧！
 
 ## 先決條件
 
@@ -105,7 +105,7 @@ destDoc.Save(dataDir + "WorkingWithVba.CloneVbaModule.docm");
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 成功將 VBA 模組從一個 Word 文件複製到另一個 Word 文件。這個強大的函式庫讓操作 Word 文件變得異常容易，我們所介紹的步驟只是冰山一角。無論您是自動建立文件、修改內容或管理 VBA 項目，Aspose.Words 都能滿足您的需求。
+現在你就擁有了！您已使用 Aspose.Words for .NET 成功將 VBA 模組從一個 Word 文件複製到另一個 Word 文件。這個強大的函式庫讓操作 Word 文件變得異常容易，我們所介紹的步驟只是冰山一角。無論您是自動建立文件、修改內容或管理 VBA 項目，Aspose.Words 都能滿足您的需求。
 
 如果您有興趣探索更多功能，請查看[API文件](https://reference.aspose.com/words/net/)。需要幫助嗎？參觀[支援論壇](https://forum.aspose.com/c/words/8)尋求幫助。
 

@@ -2,7 +2,7 @@
 title: Εκκαθάριση διπλότυπου στυλ
 linktitle: Εκκαθάριση διπλότυπου στυλ
 second_title: Aspose.Words Document Processing API
-description: Μάθετε πώς να καθαρίζετε διπλότυπα στυλ στα έγγραφα του Word χρησιμοποιώντας το Aspose.Words για .NET με τον αναλυτικό οδηγό μας βήμα προς βήμα.
+description: Μάθετε πώς να καθαρίζετε τα διπλότυπα στυλ στα έγγραφα του Word χρησιμοποιώντας το Aspose.Words για .NET με τον αναλυτικό οδηγό μας βήμα προς βήμα.
 type: docs
 weight: 10
 url: /el/net/programming-with-document-options-and-settings/cleanup-duplicate-style/

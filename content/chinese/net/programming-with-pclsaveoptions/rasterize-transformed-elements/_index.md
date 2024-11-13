@@ -96,4 +96,4 @@ Aspose.Words 支持多种格式，包括 PDF、HTML、EPUB 等。查看[文档](
 确保您拥有最新版本的 Aspose.Words，并检查文档以了解任何特定的转换问题。此外，[支持论坛](https://forum.aspose.com/c/words/8)是寻求帮助的好地方。
 
 ### Aspose.Words for .NET 试用版有什么限制吗？  
-试用版有一些限制，例如评估水印。若要获得完整功能体验，请考虑购买[临时执照](https://purchase.aspose.com/temporary-license/).
+试用版有一些限制，例如评估水印。若要获得完整的功能体验，请考虑购买[临时执照](https://purchase.aspose.com/temporary-license/).

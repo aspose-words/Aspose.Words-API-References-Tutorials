@@ -35,7 +35,7 @@ Lassen Sie uns das Beispiel in eine detaillierte Schritt-für-Schritt-Anleitung 
 
 ## Schritt 1: Initialisieren Sie Ihre Umgebung
 
-Bevor Sie in den Code eintauchen, stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek installiert und zwei Beispiel-Word-Dokumente bereit haben.
+Bevor Sie sich in den Code vertiefen, stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek installiert und zwei Beispiel-Word-Dokumente bereit haben.
 
 1.  Herunterladen und Installieren von Aspose.Words: Hol es dir[Hier](https://releases.aspose.com/words/net/).
 2. Richten Sie Ihr Projekt ein: Öffnen Sie Visual Studio und erstellen Sie ein neues .NET-Projekt.
@@ -87,7 +87,7 @@ Speichern Sie abschließend Ihr Zieldokument, um sicherzustellen, dass alle Änd
 dstDoc.Save(dataDir + "WorkingWithSection.CopySection.docx");
 ```
 
- Ersetzen`dataDir + "WorkingWithSection.CopySection.docx"` durch den tatsächlichen Pfad, in dem Sie Ihr Dokument speichern möchten. Diese Codezeile speichert Ihre Ziel-Word-Datei mit dem kopierten Abschnitt.
+ Ersetzen`dataDir + "WorkingWithSection.CopySection.docx"` durch den tatsächlichen Pfad, in dem Sie Ihr Dokument speichern möchten. Diese Codezeile speichert Ihre Word-Zieldatei mit dem kopierten Abschnitt.
 
 ## Abschluss
 

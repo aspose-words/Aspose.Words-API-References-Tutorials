@@ -21,7 +21,7 @@ Rendern Sie Dokumente mühelos mit den Tutorials von Aspose.Words für Java zum 
 ## Tutorials zum Dokument-Rendering
 ### [ Master-Dokument-Rendering](./master-document-rendering/)
 Lernen Sie die Dokumentdarstellung mit Aspose.Words für Java! Schritt-für-Schritt-Anleitung, Quellcode enthalten. Verbessern Sie Apps mit nahtloser Dokumentverarbeitung.
-### [Rendern von Dokumentseiten als Bilder](./rendering-document-pages-images/)
+### [Dokumentseiten als Bilder rendern](./rendering-document-pages-images/)
 Erfahren Sie, wie Sie mit Aspose.Words für Java Dokumentseiten als Bilder rendern. Schritt-für-Schritt-Anleitung mit Codebeispielen für eine effiziente Dokumentkonvertierung.
 ### [Dokument-Miniaturansichten erstellen](./document-thumbnail-generation/)
 Erfahren Sie, wie Sie mit Aspose.Words für Java Miniaturansichten von Dokumenten erstellen. Verbessern Sie das Benutzererlebnis mit visuellen Vorschauen.

@@ -17,7 +17,7 @@ Bevor wir uns in den Code vertiefen, stellen wir sicher, dass Sie alles haben, w
 
 1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die neueste Version installiert haben. Sie können sie herunterladen von[Hier](https://releases.aspose.com/words/net/).
 2. .NET-Entwicklungsumgebung: Jede .NET-kompatible IDE wie Visual Studio.
-3. Grundkenntnisse in C#: Kenntnisse in der C#-Programmierung erleichtern Ihnen das Folgen.
+3. Grundkenntnisse in C#: Kenntnisse in der C#-Programmierung erleichtern Ihnen den Lernprozess.
 
 ## Namespaces importieren
 
@@ -110,4 +110,4 @@ FieldIncludeText funktioniert speziell mit Word-Dokumenten. Für andere Formate 
 Ja, Aspose.Words für .NET unterstützt .NET Framework, .NET Core und .NET 5/6.
 
 ### Wie kann ich eine kostenlose Testversion von Aspose.Words für .NET erhalten?  
- Sie können eine kostenlose Testversion erhalten von[Hier](https://releases.aspose.com/).
+ Eine kostenlose Testversion erhalten Sie bei[Hier](https://releases.aspose.com/).

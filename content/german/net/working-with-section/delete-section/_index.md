@@ -55,7 +55,7 @@ doc.FirstSection.Remove();
 ## Häufig gestellte Fragen
 
 ### Kann ich mehrere Abschnitte gleichzeitig löschen?
-Ja, das können Sie. Gehen Sie dazu einfach die Abschnitte durch, die Sie löschen möchten, und entfernen Sie sie nacheinander.
+Ja, das können Sie. Gehen Sie einfach die Abschnitte durch, die Sie löschen möchten, und entfernen Sie sie nacheinander.
 
 ### Ist Aspose.Words für .NET kostenlos?
  Aspose.Words bietet eine kostenlose Testversion an, die Sie erhalten können[Hier](https://releases.aspose.com/) Für den vollen Funktionsumfang müssen Sie eine Lizenz erwerben[Hier](https://purchase.aspose.com/buy).

@@ -1,14 +1,14 @@
 ---
 title: Verwenden von Structured Document Tags (SDTs) für strukturierte Daten
 linktitle: Verwenden von Structured Document Tags (SDTs) für strukturierte Daten
-second_title: Aspose.Words Python-API zur Dokumentenverwaltung
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
 description: Nutzen Sie die Leistungsfähigkeit von Structured Document Tags (SDTs) zum Organisieren von Inhalten. Erfahren Sie, wie Sie Aspose.Words für Python zum Implementieren von SDTs verwenden.
 type: docs
 weight: 13
 url: /de/python-net/document-combining-and-comparison/document-sdts/
 ---
 
-## Einführung in Structured Document Tags (SDTs)
+## Einführung in strukturierte Dokument-Tags (SDTs)
 
 Strukturierte Dokument-Tags, oft auch als Inhaltssteuerelemente bezeichnet, sind Elemente innerhalb eines Dokuments, die dem darin enthaltenen Inhalt Struktur verleihen. Sie ermöglichen eine einheitliche Formatierung und die programmgesteuerte Bearbeitung von Inhalten. SDTs können verschiedene Arten von Inhalten umfassen, z. B. einfachen Text, Rich Text, Bilder, Kontrollkästchen und mehr.
 
@@ -48,7 +48,7 @@ Bevor wir uns mit der Verwendung von SDTs befassen, beginnen wir mit Aspose.Word
 
 Das Hinzufügen von SDTs zu einem Dokument umfasst einige einfache Schritte:
 
-1.  Erstellen eines SDT: Verwenden Sie die`StructuredDocumentTag` Klasse zum Erstellen einer SDT-Instanz.
+1.  SDT erstellen: Verwenden Sie die`StructuredDocumentTag` Klasse zum Erstellen einer SDT-Instanz.
 
    ```python
    sdt = aspose.words.StructuredDocumentTag(doc, aspose.words.SdtType.PLAIN_TEXT)

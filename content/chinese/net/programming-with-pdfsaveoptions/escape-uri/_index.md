@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 代替`"YOUR DOCUMENT DIRECTORY"`与您想要保存 PDF 文档的实际路径。
 
-## 步骤 2：创建新文档
+## 第 2 步：创建新文档
 
 接下来，我们将使用 Aspose.Words 创建一个新文档。该文档将作为我们插入超链接的画布。
 
@@ -57,7 +57,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 现在，让我们在文档中插入一个超链接。此超链接将成为我们 URI 转义过程的焦点。
 
 ```csharp
-builder.InsertHyperlink("Testlink", "https://www.google.com/search?q=aspose", false);
+builder.InsertHyperlink("Testlink", "https://www.google.com/search?q= aspose", false);
 ```
 
 在这条线中，`"Testlink"`是超链接的显示文本，并且`"https://www.google.com/search?q= aspose"`是 URL。`false`参数表示链接不应被格式化为超链接（即，它不会带有下划线和蓝色）。

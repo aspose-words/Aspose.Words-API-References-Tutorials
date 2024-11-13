@@ -1,6 +1,6 @@
 ---
-title: Ověřte šifrovaný dokument Word
-linktitle: Ověřte šifrovaný dokument Word
+title: Ověřte zašifrovaný dokument aplikace Word
+linktitle: Ověřte zašifrovaný dokument aplikace Word
 second_title: Aspose.Words API pro zpracování dokumentů
 description: V tomto podrobném průvodci se dozvíte, jak ověřit stav šifrování dokumentu aplikace Word pomocí Aspose.Words for .NET.
 type: docs
@@ -46,7 +46,7 @@ FileFormatInfo info = FileFormatUtil.DetectFileFormat(dataDir + "Encrypted.docx"
 
 ## Krok 3: Zkontrolujte, zda je dokument zašifrován
 
- Používáme`IsEncrypted` vlastnictvím`FileFormatInfo` objekt pro kontrolu, zda je dokument zašifrován. Tato vlastnost se vrací`true` pokud je dokument zašifrován, jinak se vrátí`false`. Výsledek zobrazíme v konzole.
+ Používáme`IsEncrypted` vlastnictví`FileFormatInfo` objekt pro kontrolu, zda je dokument zašifrován. Tato vlastnost se vrací`true` pokud je dokument zašifrován, jinak se vrátí`false`. Výsledek zobrazíme v konzole.
 
 ```csharp
 Console.WriteLine(info.IsEncrypted);
@@ -73,4 +73,4 @@ Ano, Aspose.Words for .NET je kompatibilní s .NET Framework i .NET Core.
  Ano, můžete si stáhnout bezplatnou zkušební verzi z[zde](https://releases.aspose.com/).
 
 ### Kde najdu další příklady a dokumentaci?
- Komplexní dokumentaci a příklady naleznete na[Stránka dokumentace Aspose.Words for .NET](https://reference.aspose.com/words/net/).
+ Kompletní dokumentaci a příklady naleznete na[Stránka dokumentace Aspose.Words for .NET](https://reference.aspose.com/words/net/).

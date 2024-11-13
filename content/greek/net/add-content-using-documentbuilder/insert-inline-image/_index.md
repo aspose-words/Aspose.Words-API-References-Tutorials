@@ -2,7 +2,7 @@
 title: Εισαγάγετε ενσωματωμένη εικόνα στο έγγραφο του Word
 linktitle: Εισαγάγετε ενσωματωμένη εικόνα στο έγγραφο του Word
 second_title: Aspose.Words Document Processing API
-description: Μάθετε πώς να εισάγετε ενσωματωμένες εικόνες σε έγγραφα του Word χρησιμοποιώντας το Aspose.Words για .NET. Οδηγός βήμα προς βήμα με παραδείγματα κώδικα και Συχνές ερωτήσεις που περιλαμβάνονται.
+description: Μάθετε πώς να εισάγετε ενσωματωμένες εικόνες σε έγγραφα του Word χρησιμοποιώντας το Aspose.Words για .NET. Οδηγός βήμα προς βήμα με παραδείγματα κώδικα και Συχνές ερωτήσεις.
 type: docs
 weight: 10
 url: /el/net/add-content-using-documentbuilder/insert-inline-image/

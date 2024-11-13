@@ -18,7 +18,7 @@ url: /hi/net/working-with-fields/insert-advance-field-with-out-document-builder/
 -  Aspose.Words for .NET लाइब्रेरी: आप इसे डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/words/net/).
 - विजुअल स्टूडियो: कोई भी नवीनतम संस्करण चलेगा।
 - C# का बुनियादी ज्ञान: यह ट्यूटोरियल मानता है कि आपको C# प्रोग्रामिंग की बुनियादी समझ है।
--  Aspose.Words लाइसेंस: एक अस्थायी लाइसेंस प्राप्त करें[यहाँ](https://purchase.aspose.com/temporary-license/) यदि आपके पास एक नहीं है.
+-  Aspose.Words लाइसेंस: एक अस्थायी लाइसेंस प्राप्त करें[यहाँ](https://purchase.aspose.com/temporary-license/) यदि आपके पास नहीं है.
 
 ## नामस्थान आयात करें
 
@@ -66,7 +66,7 @@ Document doc = new Document();
 2. दस्तावेज़ का पहला पैराग्राफ प्राप्त करें:
 
 ```csharp
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+Paragraph para = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
 इससे यह सुनिश्चित हो जाता है कि हमारे पास काम करने के लिए एक पैराग्राफ है।

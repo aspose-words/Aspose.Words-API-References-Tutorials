@@ -105,7 +105,7 @@ doc.save("output.pdf", aw.SaveFormat.PDF)
 
 ## 結論：
 
-Aspose.Words for Python 使開發人員能夠有效管理文件選項和設置，從而對文件建立和操作的各個方面提供精細控制。其直覺的 API 和豐富的文件使其成為文件相關任務的寶貴工具。
+Aspose.Words for Python 使開發人員能夠有效地管理文件選項和設置，從而對文件建立和操作的各個方面提供精細控制。其直覺的 API 和豐富的文件使其成為文件相關任務的寶貴工具。
 
 ## 常見問題解答
 

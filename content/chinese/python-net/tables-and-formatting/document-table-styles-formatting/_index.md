@@ -26,7 +26,7 @@ url: /zh/python-net/tables-and-formatting/document-table-styles-formatting/
     import aspose.words
     ```
 
-3. 加载文档：使用 Aspose.Words API 加载现有文档或创建新文档。
+3. 加载文档：加载现有文档或使用 Aspose.Words API 创建新文档。
 
 ## 创建表格并将其插入文档
 
@@ -157,7 +157,7 @@ Aspose.Words for Python提供了一系列样式选项，使您的表格更具视
     cell.cell_format.shading.background_pattern_color = aspose.words.Color.from_rgb(230, 230, 230)
     ```
 
-## 处理单元格内容和对齐
+## 使用单元格内容和对齐
 
 有效管理单元格内容和对齐，以提高可读性：
 

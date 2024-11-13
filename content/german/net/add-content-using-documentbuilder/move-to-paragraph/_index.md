@@ -62,7 +62,7 @@ builder.MoveToParagraph(2, 0);
 
 In diesem Beispiel bewegen wir uns zum dritten Absatz (da der Index nullbasiert ist) und zum Anfang dieses Absatzes.
 
-## Schritt 4: Fügen Sie dem Absatz Text hinzu
+## Schritt 4: Text zum Absatz hinzufügen
 
 Jetzt, da wir beim gewünschten Absatz sind, fügen wir etwas Text hinzu. Hier können Sie Ihrer Kreativität freien Lauf lassen!
 

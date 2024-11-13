@@ -22,9 +22,9 @@ Die Tutorials konzentrieren sich auf die Versionskontrolle und die Verwaltung de
 
 Entwickler erhalten Einblicke in die Automatisierung von Revisionsaufgaben mit Aspose.Words für Java. Die Tutorials behandeln Techniken zur programmgesteuerten Verwaltung von Revisionen, zur Automatisierung der Revisionsannahme oder -ablehnung und zur Generierung von Revisionsberichten. Durch die Automatisierung von Revisionsaufgaben können Entwickler ihre Dokumentverarbeitungsabläufe verbessern und ein effizientes Revisionsmanagement sicherstellen.
 
-Durch die Beherrschung der Dokumentrevision mit Aspose.Words für Java können Entwickler ihre Textverarbeitungs- und Dokumentverarbeitungsfunktionen optimieren. Die Tutorials bieten praktische Beispiele und Schritt-für-Schritt-Anleitungen und ermöglichen Entwicklern die Implementierung einer robusten Revisionsverfolgung und Versionskontrolle in ihren Java-Anwendungen. Nutzen Sie diese Tutorials, um Dokumentrevisionsprozesse zu optimieren und genaue, aktuelle Dokumente zu erhalten.
+Durch die Beherrschung der Dokumentrevision mit Aspose.Words für Java können Entwickler ihre Textverarbeitungs- und Dokumentverarbeitungsfunktionen optimieren. Die Tutorials bieten praktische Beispiele und Schritt-für-Schritt-Anleitungen, mit denen Entwickler eine robuste Revisionsverfolgung und Versionskontrolle in ihren Java-Anwendungen implementieren können. Nutzen Sie diese Tutorials, um Dokumentrevisionsprozesse zu optimieren und genaue, aktuelle Dokumente zu erhalten.
 
-## Tutorials zur Dokumentrevision
+## Tutorials zur Dokumentüberarbeitung
 ### [Der ultimative Leitfaden zur Dokumentrevision](./guide-document-revision/)
 Meistern Sie die Dokumentrevision mit Aspose.Words für Java! Verwalten Sie Änderungen effizient, akzeptieren/lehnen Sie Revisionen ab und arbeiten Sie nahtlos zusammen. Jetzt loslegen!
 ### [Nachverfolgen und Verwalten von Dokumentrevisionen](./tracking-managing-document-revisions/)

@@ -9,7 +9,7 @@ url: /cs/net/add-content-using-documentbuilder/insert-horizontal-rule/
 ---
 ## Zavedení
 
-Ahoj, kolegové vývojáři! Ocitli jste se někdy po kolena v projektu dokumentu Word a pomysleli jste si: „Člověče, opravdu sem potřebuji vložit horizontální pravidlo, abych věci rozbil“? Hádej co? Máte štěstí! V dnešním tutoriálu se ponoříme do toho, jak vložit vodorovné pravítko do dokumentu aplikace Word pomocí Aspose.Words for .NET. Toto není jen tak obyčejný tutoriál – je nabitý podrobnými kroky, poutavými vysvětleními a špetkou zábavy. Takže se připoutejte a připravte se na to, abyste se stali profesionálem ve zpracování Aspose.Words pro .NET!
+Ahoj, kolegové vývojáři! Ocitli jste se někdy po kolena v projektu dokumentu Word a pomysleli jste si: „Člověče, opravdu sem potřebuji vložit horizontální pravidlo, abych věci rozbil“? No, hádejte co? Máte štěstí! V dnešním tutoriálu se ponoříme do toho, jak vložit vodorovné pravítko do dokumentu aplikace Word pomocí Aspose.Words for .NET. Toto není jen tak obyčejný tutoriál – je nabitý podrobnými kroky, poutavými vysvětleními a špetkou zábavy. Takže se připoutejte a připravte se na to, abyste se stali profesionálem ve zpracování Aspose.Words pro .NET!
 
 ## Předpoklady
 
@@ -121,7 +121,7 @@ Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vyt
 
 ### Kde najdu další návody na Aspose.Words pro .NET?
 
- The[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) je skvělé místo, kde najdete podrobné návody a příklady.
+The[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) je skvělé místo, kde najdete podrobné návody a příklady.
 
 ### Jak mohu získat podporu, pokud narazím na problémy?
 

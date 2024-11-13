@@ -1,6 +1,6 @@
 ---
-title: 通过降低图像采样率来减小 PDF 文档大小
-linktitle: 通过降低图像采样率来减小 PDF 文档大小
+title: 通过对图像进行下采样来减小 PDF 文档大小
+linktitle: 通过对图像进行下采样来减小 PDF 文档大小
 second_title: Aspose.Words 文档处理 API
 description: 使用 Aspose.Words for .NET 对图像进行下采样，从而减小 PDF 文档大小。优化您的 PDF，以加快上传和下载时间。
 type: docs
@@ -66,7 +66,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.DownsamplingImages.pdf", saveOptions);
 ```
 
-在这最后一步中，我们将使用指定的下采样选项将文档保存为同一目录中的 PDF。
+在此最后一步中，我们将使用指定的下采样选项将文档保存为同一目录中的 PDF。
 
 ## 结论
 

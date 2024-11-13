@@ -62,7 +62,7 @@ Hier konfigurieren wir die Speicheroptionen so, dass für die Listeneinrückung 
 
 ## Schritt 3: Speichern Sie das Dokument als Text
 
-Nachdem wir nun die Textspeicheroptionen definiert haben, können wir das Dokument als Textdatei speichern. Der folgende Code zeigt, wie das geht:
+Nachdem wir nun die Optionen zum Speichern des Textes definiert haben, können wir das Dokument als Textdatei speichern. Der folgende Code zeigt, wie das geht:
 
 ```java
 doc.save("output.txt", saveOptions);

@@ -107,7 +107,7 @@ doc.Save(dataDir + "FindAndReplace.MetaCharactersInSearchPattern.docx");
  आप इसे यहाँ से डाउनलोड कर सकते हैं[Aspose रिलीज़ पेज](https://releases.aspose.com/words/net/)दिए गए इंस्टॉलेशन निर्देशों का पालन करें।
 
 ### क्या मैं अन्य प्रोग्रामिंग भाषाओं के साथ .NET के लिए Aspose.Words का उपयोग कर सकता हूँ?
-Aspose.Words for .NET खास तौर पर C# जैसी .NET भाषाओं के लिए डिज़ाइन किया गया है। हालाँकि, Aspose अन्य प्लेटफ़ॉर्म के लिए भी लाइब्रेरी प्रदान करता है।
+Aspose.Words for .NET को खास तौर पर C# जैसी .NET भाषाओं के लिए डिज़ाइन किया गया है। हालाँकि, Aspose अन्य प्लेटफ़ॉर्म के लिए भी लाइब्रेरी प्रदान करता है।
 
 ### मैं .NET के लिए Aspose.Words हेतु अस्थायी लाइसेंस कैसे प्राप्त करूं?
  आप यहां से अस्थायी लाइसेंस प्राप्त कर सकते हैं[यहाँ](https://purchase.aspose.com/temporary-license/).

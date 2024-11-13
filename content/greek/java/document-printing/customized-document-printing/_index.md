@@ -29,7 +29,7 @@ url: /el/java/document-printing/customized-document-printing/
 Ας ξεκινήσουμε δημιουργώντας ένα κενό έγγραφο χρησιμοποιώντας το Aspose.Words για Java:
 
 ```java
-//Κώδικας Java για τη δημιουργία κενού εγγράφου
+// Κώδικας Java για τη δημιουργία κενού εγγράφου
 Document doc = new Document();
 ```
 
@@ -41,17 +41,6 @@ Document doc = new Document();
 // Κώδικας Java για προσθήκη περιεχομένου στο έγγραφο
 DocumentBuilder builder = new DocumentBuilder(doc);
 builder.write("Hello, Aspose.Words!");
-```
-
-## Προσαρμογή στοιχείων εγγράφου
-
-Μπορείτε να προσαρμόσετε διάφορα στοιχεία εγγράφου, όπως γραμματοσειρές, στυλ και μορφοποίηση. Ακολουθεί ένα παράδειγμα αλλαγής του μεγέθους της γραμματοσειράς:
-
-```java
-// Κώδικας Java για αλλαγή μεγέθους γραμματοσειράς
-Run run = (Run) doc.getChildNodes(NodeType.RUN, true).get(0);
-Font font = run.getFont();
-font.setSize(14);
 ```
 
 ## Εκτύπωση του Εγγράφου
@@ -79,7 +68,7 @@ doc.print("printerName");
 
 ### Πώς μπορώ να εγκαταστήσω το Aspose.Words για Java;
 
- Για να εγκαταστήσετε το Aspose.Words για Java, πραγματοποιήστε λήψη της βιβλιοθήκης από[εδώ](https://releases.aspose.com/words/java/) και ακολουθήστε τις οδηγίες εγκατάστασης που παρέχονται.
+ Για να εγκαταστήσετε το Aspose.Words για Java, πραγματοποιήστε λήψη της βιβλιοθήκης από[εδώ](https://releases.aspose.com/words/java/)και ακολουθήστε τις οδηγίες εγκατάστασης που παρέχονται.
 
 ### Μπορώ να προσαρμόσω τη διάταξη του εγγράφου;
 

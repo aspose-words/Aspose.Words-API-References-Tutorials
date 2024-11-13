@@ -79,7 +79,7 @@ In diesem Artikel haben wir gelernt, wie man HTML-Dokumente mit Aspose.Words fü
 
 ### Wie installiere ich Aspose.Words für Java?
 
- Aspose.Words für Java kann heruntergeladen werden von[Hier](https://releases.aspose.com/words/java/)Befolgen Sie die Installationsanweisungen auf der Website, um es in Ihrem Java-Projekt einzurichten.
+ Aspose.Words für Java kann heruntergeladen werden von[Hier](https://releases.aspose.com/words/java/). Befolgen Sie die Installationsanweisungen auf der Website, um es in Ihrem Java-Projekt einzurichten.
 
 ### Kann ich mit Aspose.Words komplexe HTML-Dokumente laden?
 
@@ -95,4 +95,4 @@ Absolut! Aspose.Words ist eine robuste Lösung, die von Unternehmen weltweit zur
 
 ### Wo finde ich weitere Dokumentation und Beispiele für Aspose.Words für Java?
 
-Ausführliche Dokumentationen, Codebeispiele und Tutorials finden Sie auf der Dokumentationswebsite von Aspose.Words für Java:[Aspose.Words für Java-Dokumentation](https://reference.aspose.com/words/java/).
+ Ausführliche Dokumentationen, Codebeispiele und Tutorials finden Sie auf der Dokumentationswebsite von Aspose.Words für Java:[Aspose.Words für Java-Dokumentation](https://reference.aspose.com/words/java/).

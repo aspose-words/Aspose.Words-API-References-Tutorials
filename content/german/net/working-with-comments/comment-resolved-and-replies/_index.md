@@ -100,7 +100,7 @@ Ja, Sie können verschiedene Aufgaben wie das Hinzufügen, Löschen und Ändern 
 Ja, Aspose.Words für .NET unterstützt sowohl .NET Framework als auch .NET Core.
 
 ### Wie kann ich eine kostenlose Testversion von Aspose.Words für .NET erhalten?  
- Sie können eine kostenlose Testversion herunterladen unter[Hier](https://releases.aspose.com/).
+ Sie können eine kostenlose Testversion herunterladen von[Hier](https://releases.aspose.com/).
 
 ### Kann ich Aspose.Words für .NET verwenden, um mit anderen Dokumenttypen zu arbeiten?  
 Ja, Aspose.Words unterstützt verschiedene Formate, darunter DOCX, PDF, HTML und mehr.

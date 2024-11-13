@@ -9,7 +9,7 @@ url: /de/net/working-with-fields/insert-field-using-field-builder/
 ---
 ## Einführung
 
-Hallo! Haben Sie sich schon einmal am Kopf gekratzt und sich gefragt, wie Sie dynamische Felder programmgesteuert in Ihre Word-Dokumente einfügen können? Nun, machen Sie sich keine Sorgen mehr! In diesem Tutorial tauchen wir in die Wunder von Aspose.Words für .NET ein, einer leistungsstarken Bibliothek, mit der Sie Word-Dokumente nahtlos erstellen, bearbeiten und transformieren können. Insbesondere zeigen wir Ihnen, wie Sie Felder mit dem Field Builder einfügen. Lassen Sie uns anfangen!
+Hallo! Haben Sie sich schon einmal den Kopf zerbrochen und sich gefragt, wie Sie dynamische Felder programmgesteuert in Ihre Word-Dokumente einfügen können? Nun, keine Sorge mehr! In diesem Tutorial tauchen wir in die Wunder von Aspose.Words für .NET ein, einer leistungsstarken Bibliothek, mit der Sie Word-Dokumente nahtlos erstellen, bearbeiten und transformieren können. Insbesondere zeigen wir Ihnen, wie Sie Felder mit dem Field Builder einfügen. Lassen Sie uns anfangen!
 
 ## Voraussetzungen
 
@@ -21,7 +21,7 @@ Bevor wir ins Detail gehen, stellen wir sicher, dass Sie alles haben, was Sie br
 
 ## Namespaces importieren
 
-Als Erstes importieren wir die erforderlichen Namespaces. Dazu gehören die Kern-Namespaces von Aspose.Words, die wir in unserem gesamten Tutorial verwenden werden.
+Als Erstes importieren wir die erforderlichen Namespaces. Dazu gehören die zentralen Aspose.Words-Namespaces, die wir in unserem gesamten Tutorial verwenden werden.
 
 ```csharp
 using Aspose.Words;
@@ -32,7 +32,7 @@ Okay, lassen Sie uns den Prozess Schritt für Schritt durchgehen. Am Ende sind S
 
 ## Schritt 1: Richten Sie Ihr Projekt ein
 
-Bevor wir mit dem Codieren beginnen, stellen Sie sicher, dass Ihr Projekt richtig eingerichtet ist. Erstellen Sie in Ihrer Entwicklungsumgebung ein neues C#-Projekt und installieren Sie das Paket Aspose.Words über den NuGet-Paket-Manager.
+Bevor wir mit dem Codieren beginnen, stellen Sie sicher, dass Ihr Projekt richtig eingerichtet ist. Erstellen Sie in Ihrer Entwicklungsumgebung ein neues C#-Projekt und installieren Sie das Paket Aspose.Words über den NuGet Package Manager.
 
 ```bash
 Install-Package Aspose.Words
@@ -55,7 +55,7 @@ Document doc = new Document();
 Der FieldBuilder ist hier der Schlüsselspieler. Er ermöglicht uns, Felder dynamisch zu erstellen.
 
 ```csharp
-//Aufbau des IF-Feldes mittels FieldBuilder.
+//Aufbau des IF-Feldes mit FieldBuilder.
 FieldBuilder fieldBuilder = new FieldBuilder(FieldType.FieldIf)
     .AddArgument("left expression")
     .AddArgument("=")

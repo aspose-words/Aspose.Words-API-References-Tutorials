@@ -89,4 +89,4 @@ originalDocument.save("compared_document.docx");
 
 ### Πού μπορώ να έχω πρόσβαση στην τεκμηρίωση του Aspose.Words for Java;
 
-Μπορείτε να βρείτε ολοκληρωμένη τεκμηρίωση για το Aspose.Words για Java στη διεύθυνση[εδώ](https://reference.aspose.com/words/java/).
+ Μπορείτε να βρείτε ολοκληρωμένη τεκμηρίωση για το Aspose.Words για Java στη διεύθυνση[εδώ](https://reference.aspose.com/words/java/).

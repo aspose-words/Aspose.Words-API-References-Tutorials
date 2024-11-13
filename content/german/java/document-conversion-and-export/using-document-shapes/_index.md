@@ -2,7 +2,7 @@
 title: Verwenden von Dokumentformen in Aspose.Words für Java
 linktitle: Verwenden von Dokumentformen
 second_title: Aspose.Words Java-API zur Dokumentverarbeitung
-description: Nutzen Sie die Leistungsfähigkeit von Dokumentformen in Aspose.Words für Java. Lernen Sie anhand schrittweiser Beispiele, visuell ansprechende Dokumente zu erstellen.
+description: Nutzen Sie die Leistungsfähigkeit von Dokumentformen in Aspose.Words für Java. Lernen Sie anhand von Schritt-für-Schritt-Beispielen, visuell ansprechende Dokumente zu erstellen.
 type: docs
 weight: 14
 url: /de/java/document-conversion-and-export/using-document-shapes/
@@ -14,7 +14,7 @@ In diesem umfassenden Leitfaden tauchen wir in die Welt der Dokumentformen in As
 
 ## Erste Schritte mit Dokumentformen
 
- Bevor wir uns in den Code stürzen, richten wir unsere Umgebung ein. Stellen Sie sicher, dass Sie Aspose.Words für Java in Ihr Projekt integriert haben. Falls noch nicht geschehen, können Sie es von der Aspose-Website herunterladen.[Laden Sie Aspose.Words für Java herunter](https://releases.aspose.com/words/java/)
+Bevor wir uns in den Code stürzen, richten wir unsere Umgebung ein. Stellen Sie sicher, dass Sie Aspose.Words für Java in Ihr Projekt integriert haben. Falls noch nicht geschehen, können Sie es von der Aspose-Website herunterladen.[Laden Sie Aspose.Words für Java herunter](https://releases.aspose.com/words/java/)
 
 ## Hinzufügen von Formen zu Dokumenten
 

@@ -32,7 +32,7 @@ using Aspose.Words;
 using Aspose.Words.Saving;
 ```
 
-好吧，让我们把它分解成小步骤，以便您轻松跟进。
+好吧，让我们把它分解成几个小步骤，以便您轻松跟进。
 
 ## 步骤 1：设置你的项目
 

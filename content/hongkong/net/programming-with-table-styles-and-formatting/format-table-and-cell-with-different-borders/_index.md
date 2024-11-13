@@ -127,7 +127,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.FormatTableAndCellWithDi
 
 ## 結論
 
-現在你就得到它了！您剛剛學習如何使用 Aspose.Words for .NET 設定具有不同邊框的表格和儲存格格式。透過自訂表格邊框和儲存格底紋，您可以顯著增強文件的視覺吸引力。因此，請繼續嘗試不同的樣式，讓您的文件脫穎而出！
+現在你就擁有了！您剛剛學習如何使用 Aspose.Words for .NET 設定具有不同邊框的表格和儲存格格式。透過自訂表格邊框和儲存格底紋，您可以顯著增強文件的視覺吸引力。因此，請繼續嘗試不同的樣式，讓您的文件脫穎而出！
 
 ## 常見問題解答
 

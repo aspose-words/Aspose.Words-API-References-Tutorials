@@ -48,7 +48,7 @@ Lassen Sie uns jetzt die Aspose.Words-Bibliothek in unser Projekt integrieren.
 
 ## Schritt 2: Laden eines Word-Dokuments
 
- Lassen Sie uns ein Word-Dokument in unsere Anwendung laden. Wir verwenden ein einfaches`Document` Objekt, dies zu tun.
+ Lassen Sie uns ein Word-Dokument in unsere Anwendung laden. Wir verwenden eine einfache`Document` Objekt, dies zu tun.
 
 1. Erstellen Sie eine neue Zeichenfolgenvariable, um den Pfad zu Ihrem Dokumentverzeichnis zu speichern:
     ```csharp

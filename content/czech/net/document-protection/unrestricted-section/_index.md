@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- The`Document` třída inicializuje nový dokument a`DocumentBuilder` nám pomáhá snadno přidávat obsah do našeho dokumentu.
+The`Document` třída inicializuje nový dokument a`DocumentBuilder` nám pomáhá snadno přidávat obsah do našeho dokumentu.
 
 ## Krok 2: Vložte sekce
 
@@ -76,7 +76,7 @@ builder.InsertBreak(BreakType.SectionBreakContinuous);
 builder.Writeln("Section 2. Protected.");
 ```
 
- The`InsertBreak` metoda vkládá souvislý konec sekce, což nám umožňuje mít různá nastavení pro každou sekci.
+The`InsertBreak` metoda vkládá souvislý konec sekce, což nám umožňuje mít různá nastavení pro každou sekci.
 
 ## Krok 3: Chraňte dokument
 

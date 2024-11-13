@@ -59,13 +59,10 @@ Document doc = new Document(dataDir + "Rendering.docx");
 Um sicherzustellen, dass Bilder interpoliert werden, müssen Sie die`PdfSaveOptions`. Mit dieser Klasse können Sie verschiedene Optionen festlegen, wie Ihr Dokument als PDF gespeichert wird. Insbesondere möchten Sie die Bildinterpolation aktivieren.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions 
-{ 
-	InterpolateImages = true
-};
+PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
- Der`InterpolateImages` Die Eigenschaft ist auf`true` um sicherzustellen, dass die Bilder in Ihrem PDF interpoliert werden, was ihre Qualität verbessert.
+Der`InterpolateImages` Die Eigenschaft ist auf`true` um sicherzustellen, dass die Bilder in Ihrem PDF interpoliert werden, was ihre Qualität verbessert.
 
 ## Schritt 4: Speichern Sie das Dokument als PDF
 
@@ -103,4 +100,4 @@ Aspose.Words unterstützt in erster Linie die Bildinterpolation für PDFs. Infor
 
 ### Wo bekomme ich Hilfe, wenn ich auf Probleme stoße?
 
- Weitere Hilfe erhalten Sie unter[Aspose Support Forum](https://forum.aspose.com/c/words/8)wo Sie Hilfe von der Community und Aspose-Experten erhalten können.
+ Weitere Informationen finden Sie im[Aspose Support Forum](https://forum.aspose.com/c/words/8)wo Sie Hilfe von der Community und Aspose-Experten erhalten können.

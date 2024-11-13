@@ -66,13 +66,13 @@ for (Paragraph para : (Iterable<Paragraph>) doc.getChildNodes(NodeType.PARAGRAPH
     if (para.getParagraphFormat().getStyle().getStyleIdentifier() >= StyleIdentifier.TOC_1 &&
         para.getParagraphFormat().getStyle().getStyleIdentifier() <= StyleIdentifier.TOC_9)
     {
-        //Αποκτήστε την πρώτη καρτέλα που χρησιμοποιείται σε αυτήν την παράγραφο, η οποία ευθυγραμμίζει τους αριθμούς σελίδων.
+        // Αποκτήστε την πρώτη καρτέλα που χρησιμοποιείται σε αυτήν την παράγραφο, η οποία ευθυγραμμίζει τους αριθμούς σελίδων.
         TabStop tab = para.getParagraphFormat().getTabStops().get(0);
         
         // Αφαιρέστε την παλιά καρτέλα.
         para.getParagraphFormat().getTabStops().removeByPosition(tab.getPosition());
         
-        // Εισαγάγετε μια νέα καρτέλα σε μια τροποποιημένη θέση (π.χ. 50 μονάδες προς τα αριστερά).
+        //Εισαγάγετε μια νέα καρτέλα σε μια τροποποιημένη θέση (π.χ. 50 μονάδες προς τα αριστερά).
         para.getParagraphFormat().getTabStops().add(tab.getPosition() - 50.0, tab.getAlignment(), tab.getLeader());
     }
 }

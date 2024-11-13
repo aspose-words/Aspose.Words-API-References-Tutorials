@@ -28,7 +28,7 @@ string outPath = "Your Output Directory";
 Document doc = new Document(dataDir + "Mail merge destinations - Fax.docx");
 ```
 
- Αντικαθιστώ`"Your Document Directory"`και`"Your Output Directory"` με τα κατάλληλα μονοπάτια.
+ Αντικαθιστώ`"Your Document Directory"` και`"Your Output Directory"` με τα κατάλληλα μονοπάτια.
 
 ## 4. Προσαρμογή συγχώνευσης αλληλογραφίας
 

@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 步驟2：建立帶有文檔方向設定的TxtLoadOptions
 
-接下來，您需要建立一個實例`TxtLoadOptions`並設定其`DocumentDirection`財產。這告訴 Aspose.Words 如何處理文件中文字的方向。
+接下來，您需要建立一個實例`TxtLoadOptions`並設置其`DocumentDirection`財產。這告訴 Aspose.Words 如何處理文件中文字的方向。
 
 ```csharp
 TxtLoadOptions loadOptions = new TxtLoadOptions { DocumentDirection = DocumentDirection.Auto };

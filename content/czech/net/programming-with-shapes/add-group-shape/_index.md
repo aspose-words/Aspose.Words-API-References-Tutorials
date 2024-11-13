@@ -128,7 +128,7 @@ Přidání skupinových tvarů do dokumentů aplikace Word nemusí být složit�
  Absolutně! Každý tvar lze individuálně stylovat pomocí vlastností dostupných v`Shape` třída.
 
 ### Jak umístím GroupShape v dokumentu?
- Můžete umístit`GroupShape` nastavením jeho`Left`a`Top` vlastnosti.
+ Můžete umístit`GroupShape` nastavením jeho`Left` a`Top` vlastnosti.
 
 ### Mohu přidat text do obrazců v rámci GroupShape?
  Ano, k tvarům můžete přidat text pomocí`AppendChild` způsob přidání a`Paragraph` obsahující`Run` uzly s textem.

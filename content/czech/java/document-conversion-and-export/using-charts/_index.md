@@ -10,7 +10,7 @@ url: /cs/java/document-conversion-and-export/using-charts/
 
 ## Úvod do používání grafů v Aspose.Words pro Javu
 
-tomto tutoriálu prozkoumáme, jak pracovat s grafy pomocí Aspose.Words for Java. Dozvíte se, jak vytvářet různé typy grafů, přizpůsobovat vlastnosti os, formátovat štítky dat a další. Pojďme se ponořit!
+V tomto tutoriálu prozkoumáme, jak pracovat s grafy pomocí Aspose.Words for Java. Dozvíte se, jak vytvářet různé typy grafů, přizpůsobovat vlastnosti os, formátovat štítky dat a další. Pojďme se ponořit!
 
 ## Vytvoření spojnicového grafu
 
@@ -82,7 +82,7 @@ ChartAxis yAxis = chart.getAxisY();
 // Změňte osu X na kategorii namísto data.
 xAxis.setCategoryType(AxisCategoryType.CATEGORY);
 xAxis.setCrosses(AxisCrosses.CUSTOM);
-xAxis.setCrossesAt(3.0); //Měřeno v zobrazovacích jednotkách osy Y (stovky).
+xAxis.setCrossesAt(3.0); // Měřeno v zobrazovacích jednotkách osy Y (stovky).
 xAxis.setReverseOrder(true);
 xAxis.setMajorTickMark(AxisTickMark.CROSS);
 xAxis.setMinorTickMark(AxisTickMark.OUTSIDE);
@@ -121,7 +121,7 @@ Své grafy můžete dále přizpůsobit úpravou hranic, jednotek intervalu mezi
 
 ## Závěr
 
-V tomto tutoriálu jsme prozkoumali, jak pracovat s grafy pomocí Aspose.Words for Java. Naučili jste se vytvářet různé typy grafů, přizpůsobovat vlastnosti os, formátovat popisky dat a další. Aspose.Words for Java poskytuje výkonné nástroje pro přidávání vizuálních reprezentací dat do vašich dokumentů, čímž zlepšuje způsob, jakým prezentujete informace.
+tomto tutoriálu jsme prozkoumali, jak pracovat s grafy pomocí Aspose.Words for Java. Naučili jste se vytvářet různé typy grafů, přizpůsobovat vlastnosti os, formátovat popisky dat a další. Aspose.Words for Java poskytuje výkonné nástroje pro přidávání vizuálních reprezentací dat do vašich dokumentů, čímž zlepšuje způsob, jakým prezentujete informace.
 
 ## FAQ
 
@@ -131,7 +131,7 @@ V tomto tutoriálu jsme prozkoumali, jak pracovat s grafy pomocí Aspose.Words f
 
 ### Jak mohu formátovat datové štítky pomocí vlastních číselných formátů?
 
-Datové štítky můžete formátovat přístupem k`DataLabels` vlastnosti řady a pomocí nastavení požadovaného formátu kódu`getNumberFormat().setFormatCode()`.
+ Datové štítky můžete formátovat přístupem k`DataLabels` vlastnosti řady a pomocí nastavení požadovaného formátu kódu`getNumberFormat().setFormatCode()`.
 
 ### Jak přizpůsobím vlastnosti os v grafu?
 
@@ -139,7 +139,7 @@ Datové štítky můžete formátovat přístupem k`DataLabels` vlastnosti řady
 
 ### Jak mohu vytvořit jiné typy grafů, jako jsou bodové nebo plošné grafy?
 
- Můžete vytvořit různé typy grafů zadáním příslušných`ChartType` při vkládání grafu pomocí`builder.insertChart(ChartType.TYPE, width, height)`.
+Můžete vytvořit různé typy grafů zadáním příslušných`ChartType` při vkládání grafu pomocí`builder.insertChart(ChartType.TYPE, width, height)`.
 
 ### Jak mohu skrýt osu grafu?
 

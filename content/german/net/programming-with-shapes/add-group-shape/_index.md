@@ -31,7 +31,7 @@ using Aspose.Words.Drawing;
 
 ## Schritt 1: Initialisieren Sie das Dokument
 
-Zunächst einmal initialisieren wir ein neues Word-Dokument. Stellen Sie sich das so vor, als würden wir eine leere Leinwand erstellen, auf der wir unsere Gruppenformen hinzufügen.
+Zunächst einmal initialisieren wir ein neues Word-Dokument. Stellen Sie sich das so vor, als würden Sie eine leere Leinwand erstellen, auf der wir unsere Gruppenformen hinzufügen.
 
 ```csharp
 // Pfad zu Ihrem Dokumentverzeichnis
@@ -122,13 +122,13 @@ Das Hinzufügen von Gruppenformen zu Ihren Word-Dokumenten muss kein kompliziert
 ## Häufig gestellte Fragen
 
 ### Kann ich einer Gruppenform mehr als zwei Formen hinzufügen?
- Ja, Sie können beliebig viele Formen zu einem`GroupShape` . Nutzen Sie einfach die`AppendChild` Methode für jede Form.
+ Ja, Sie können beliebig viele Formen zu einem`GroupShape` . Benutzen Sie einfach die`AppendChild` Methode für jede Form.
 
 ### Ist es möglich, die Formen innerhalb einer Gruppenform zu gestalten?
  Absolut! Jede Form kann individuell gestaltet werden, indem man die Eigenschaften verwendet, die im`Shape` Klasse.
 
 ### Wie positioniere ich die Gruppenform innerhalb des Dokuments?
- Sie können die`GroupShape` durch Einstellen seiner`Left`Und`Top` Eigenschaften.
+ Sie können die`GroupShape` durch Einstellen seiner`Left` Und`Top` Eigenschaften.
 
 ### Kann ich den Formen innerhalb der Gruppenform Text hinzufügen?
  Ja, Sie können Text zu Formen hinzufügen mit dem`AppendChild` Methode zum Hinzufügen eines`Paragraph` enthaltend`Run` Knoten mit Text.

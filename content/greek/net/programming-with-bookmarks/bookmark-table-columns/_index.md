@@ -33,7 +33,7 @@ using Aspose.Words.Tables;
 
 ## Βήμα 1: Αρχικοποιήστε το Document και το DocumentBuilder
 
- Αρχικά, πρέπει να δημιουργήσουμε ένα νέο έγγραφο του Word και να αρχικοποιήσουμε το`DocumentBuilder` να δουλέψεις μαζί του.
+ Αρχικά, πρέπει να δημιουργήσουμε ένα νέο έγγραφο του Word και να αρχικοποιήσουμε το`DocumentBuilder` να δουλέψει μαζί του.
 
 ```csharp
 Document doc = new Document();

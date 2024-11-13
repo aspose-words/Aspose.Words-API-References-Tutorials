@@ -15,7 +15,7 @@ url: /zh/net/working-with-oleobjects-and-activex/read-active-xcontrol-properties
 
 在开始之前，请确保您已准备好以下物品：
 
-1.  Aspose.Words for .NET 库：您可以从以下位置下载[这里](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET 库：你可以从以下网址下载[这里](https://releases.aspose.com/words/net/).
 2. Visual Studio 或任何 C# IDE：编写和执行您的代码。
 3. 带有 ActiveX 控件的 Word 文档：例如“ActiveX controls.docx”。
 4. C# 基础知识：需要熟悉 C# 编程才能继续学习。
@@ -103,7 +103,7 @@ Console.WriteLine("\n" + properties);
 
 ## 结论
 
-就这样！您已成功学会了如何使用 Aspose.Words for .NET 从 Word 文档中读取 ActiveX 控件属性。本教程涵盖了加载文档、遍历形状以及从 ActiveX 控件中提取属性。通过遵循这些步骤，您可以自动从 Word 文档中提取重要数据，从而提高工作流程效率。
+就这样！您已成功学会了如何使用 Aspose.Words for .NET 从 Word 文档中读取 ActiveX 控件属性。本教程介绍了如何加载文档、遍历形状以及从 ActiveX 控件中提取属性。通过遵循这些步骤，您可以自动从 Word 文档中提取重要数据，从而提高工作流程效率。
 
 ## 常见问题解答
 

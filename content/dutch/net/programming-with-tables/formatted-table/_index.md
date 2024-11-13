@@ -1,7 +1,7 @@
 ---
-title: Opgemaakte tabel
-linktitle: Opgemaakte tabel
-second_title: Aspose.Words-API voor documentverwerking
+title: Geformatteerde tabel
+linktitle: Geformatteerde tabel
+second_title: Aspose.Words API voor documentverwerking
 description: Leer hoe u tabellen in Word-documenten kunt maken en opmaken met Aspose.Words voor .NET met deze gedetailleerde stapsgewijze handleiding.
 type: docs
 weight: 10
@@ -9,14 +9,14 @@ url: /nl/net/programming-with-tables/formatted-table/
 ---
 ## Invoering
 
-Het programmatisch maken en opmaken van tabellen in Word-documenten kan een hele klus lijken, maar met Aspose.Words voor .NET wordt het eenvoudig en beheersbaar. In deze zelfstudie laten we u zien hoe u een opgemaakte tabel in een Word-document kunt maken met Aspose.Words voor .NET. We behandelen alles, van het instellen van uw omgeving tot het opslaan van uw document met een prachtig opgemaakte tabel.
+Het maken en formatteren van tabellen in Word-documenten via een programma lijkt misschien een lastige klus, maar met Aspose.Words voor .NET wordt het eenvoudig en beheersbaar. In deze tutorial laten we je zien hoe je een geformatteerde tabel in een Word-document maakt met Aspose.Words voor .NET. We behandelen alles, van het instellen van je omgeving tot het opslaan van je document met een prachtig geformatteerde tabel.
 
 ## Vereisten
 
-Voordat we in de code duiken, zorgen we ervoor dat je alles hebt wat je nodig hebt:
+Voordat we in de code duiken, controleren we of je alles hebt wat je nodig hebt:
 
-1. Aspose.Words voor .NET Library: Download het van[hier](https://releases.aspose.com/words/net/).
-2. Ontwikkelomgeving: een IDE zoals Visual Studio.
+1. Aspose.Words voor .NET-bibliotheek: Download het van[hier](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: Een IDE zoals Visual Studio.
 3. .NET Framework: Zorg ervoor dat .NET Framework op uw computer is geïnstalleerd.
 
 ## Naamruimten importeren
@@ -32,7 +32,7 @@ using Aspose.Words.Tables;
 
 ## Stap 1: Stel uw documentenmap in
 
-Eerst moet u het pad definiëren waar uw document zal worden opgeslagen.
+Eerst moet u het pad definiëren waar uw document wordt opgeslagen.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -49,9 +49,9 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- De`DocumentBuilder` is een helperklasse die het proces van het maken van documenten vereenvoudigt.
+De`DocumentBuilder` is een hulpklasse die het proces van het maken van documenten vereenvoudigt.
 
-## Stap 3: Start de tabel
+## Stap 3: Start de tafel
 
  Begin vervolgens met het maken van de tabel met behulp van de`StartTable` methode.
 
@@ -60,19 +60,19 @@ Table table = builder.StartTable();
 builder.InsertCell();
 ```
 
-Het invoegen van een cel is noodzakelijk om de tabel te starten.
+Het invoegen van een cel is noodzakelijk om de tabel te beginnen.
 
-## Stap 4: Pas tabelbrede opmaak toe
+## Stap 4: Tabelbrede opmaak toepassen
 
-U kunt opmaak toepassen die van invloed is op de hele tabel. Als u bijvoorbeeld de linkerinspringing instelt:
+U kunt opmaak toepassen die van invloed is op de gehele tabel. Bijvoorbeeld door de linkerinspringing in te stellen:
 
 ```csharp
 table.LeftIndent = 20.0;
 ```
 
-## Stap 5: Formatteer de koprij
+## Stap 5: De koptekstrij opmaken
 
-Stel de hoogte, uitlijning en andere eigenschappen voor de koprij in.
+Stel de hoogte, uitlijning en andere eigenschappen voor de koptekstrij in.
 
 ```csharp
 builder.RowFormat.Height = 40.0;
@@ -88,9 +88,9 @@ builder.Write("Header Row,\n Cell 1");
 
 In deze stap zorgen we ervoor dat de koptekstrij opvalt door een achtergrondkleur, lettergrootte en uitlijning in te stellen.
 
-## Stap 6: Voeg extra kopcellen in
+## Stap 6: Extra koptekstcellen invoegen
 
-Voeg meer cellen in voor de koprij:
+Voeg meer cellen in voor de koptekstrij:
 
 ```csharp
 builder.InsertCell();
@@ -101,9 +101,9 @@ builder.Write("Header Row,\n Cell 3");
 builder.EndRow();
 ```
 
-## Stap 7: Formatteer de lichaamsrijen
+## Stap 7: Formatteer de hoofdrijen
 
-Nadat u de koptekst heeft ingesteld, formatteert u de hoofdtekst van de tabel:
+Nadat u de koptekst hebt ingesteld, formatteert u de hoofdtekst van de tabel:
 
 ```csharp
 builder.CellFormat.Shading.BackgroundPatternColor = Color.White;
@@ -113,7 +113,7 @@ builder.RowFormat.Height = 30.0;
 builder.RowFormat.HeightRule = HeightRule.Auto;
 ```
 
-## Stap 8: Lichaamsrijen invoegen
+## Stap 8: Bodyrijen invoegen
 
 Voeg de hoofdrijen met inhoud in:
 
@@ -130,7 +130,7 @@ builder.Write("Row 1, Cell 3 Content");
 builder.EndRow();
 ```
 
-Herhaal voor extra rijen:
+Herhaal dit voor extra rijen:
 
 ```csharp
 builder.InsertCell();
@@ -147,7 +147,7 @@ builder.EndTable();
 
 ## Stap 9: Sla het document op
 
-Sla het document ten slotte op in de opgegeven map:
+Sla het document ten slotte op in de opgegeven directory:
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTables.FormattedTable.docx");
@@ -157,7 +157,7 @@ Hiermee wordt een Word-document met de opgemaakte tabel gemaakt en opgeslagen.
 
 ## Conclusie
 
-En daar heb je het! Door deze stappen te volgen, kunt u met Aspose.Words voor .NET een goed opgemaakte tabel in een Word-document maken. Deze krachtige bibliotheek maakt het eenvoudig om Word-documenten programmatisch te manipuleren, waardoor u tijd en moeite bespaart.
+En daar heb je het! Door deze stappen te volgen, kun je een goed geformatteerde tabel maken in een Word-document met Aspose.Words voor .NET. Deze krachtige bibliotheek maakt het eenvoudig om Word-documenten programmatisch te manipuleren, wat je tijd en moeite bespaart.
 
 ## Veelgestelde vragen
 
@@ -165,13 +165,13 @@ En daar heb je het! Door deze stappen te volgen, kunt u met Aspose.Words voor .N
 Aspose.Words voor .NET is een krachtige bibliotheek voor het programmatisch maken, bewerken en converteren van Word-documenten.
 
 ### Kan ik verschillende kleuren gebruiken voor verschillende rijen?
-Ja, u kunt verschillende opmaak, inclusief kleuren, toepassen op verschillende rijen of cellen.
+Ja, u kunt verschillende opmaak, waaronder kleuren, toepassen op verschillende rijen of cellen.
 
 ### Is Aspose.Words voor .NET gratis?
- Aspose.Words voor .NET is een betaalde bibliotheek, maar je kunt ook een .NET-bibliotheek krijgen[gratis proefperiode](https://releases.aspose.com/).
+ Aspose.Words voor .NET is een betaalde bibliotheek, maar je kunt een[gratis proefperiode](https://releases.aspose.com/).
 
 ### Hoe krijg ik ondersteuning voor Aspose.Words voor .NET?
- U kunt ondersteuning krijgen van de[Stel communityforums voor](https://forum.aspose.com/c/words/8).
+ U kunt ondersteuning krijgen van de[Aspose-communityforums](https://forum.aspose.com/c/words/8).
 
-### Kan ik andere soorten documenten maken met Aspose.Words voor .NET?
+### Kan ik andere typen documenten maken met Aspose.Words voor .NET?
 Ja, Aspose.Words voor .NET ondersteunt verschillende documentformaten, waaronder PDF, HTML en TXT.

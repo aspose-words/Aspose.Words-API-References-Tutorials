@@ -38,7 +38,7 @@ Install-Package Aspose.Words
 
 ## Schritt 2: Laden Sie Ihre Dokumente
 
- Als nächstes müssen Sie die Word-Dokumente laden, die Sie vergleichen möchten. Für dieses Beispiel gehen wir davon aus, dass Sie zwei Dokumente mit dem Namen haben`Document.docx`Und`Document2.docx` befindet sich in Ihrem Dokumentverzeichnis.
+ Als nächstes müssen Sie die Word-Dokumente laden, die Sie vergleichen möchten. Für dieses Beispiel gehen wir davon aus, dass Sie zwei Dokumente mit dem Namen haben`Document.docx` Und`Document2.docx` befindet sich in Ihrem Dokumentverzeichnis.
 
 ```csharp
 // Der Pfad zum Dokumentverzeichnis.
@@ -49,7 +49,7 @@ Document docB = new Document(dataDir + "Document2.docx");
 
 ## Schritt 3: Klonen Sie eines der Dokumente
 
- Um die Dokumente zu vergleichen, klonen Sie eines davon. Dies ist notwendig, da die`Compare` Methode ändert das Dokument und Sie möchten das Originaldokument möglicherweise für andere Zwecke unverändert lassen.
+ Um die Dokumente zu vergleichen, klonen Sie eines davon. Dies ist notwendig, da die`Compare`Methode ändert das Dokument und Sie möchten das Originaldokument möglicherweise für andere Zwecke unverändert lassen.
 
 ```csharp
 Document docBClone = docB.Clone();
@@ -57,7 +57,7 @@ Document docBClone = docB.Clone();
 
 ## Schritt 4: Führen Sie den Vergleich durch
 
- Jetzt können Sie die Dokumente vergleichen.`Compare`Methode hebt die Unterschiede zwischen den beiden Dokumenten hervor. Sie können den Benutzer angeben, der den Vergleich durchführt, und das Datum des Vergleichs.
+ Jetzt können Sie die Dokumente vergleichen.`Compare` Methode hebt die Unterschiede zwischen den beiden Dokumenten hervor. Sie können den Benutzer angeben, der den Vergleich durchführt, und das Datum des Vergleichs.
 
 ```csharp
 docA.Compare(docBClone, "user", DateTime.Now);
@@ -73,7 +73,7 @@ Console.WriteLine(docA.Revisions.Count == 0 ? "Documents are equal" : "Documents
 
 ## Abschluss
 
-Das Vergleichen von Word-Dokumenten auf Gleichheit mit Aspose.Words für .NET ist ein unkomplizierter Vorgang, der Ihnen viel Zeit und Mühe sparen kann. Indem Sie die in diesem Handbuch beschriebenen Schritte befolgen, können Sie schnell Unterschiede zwischen Dokumenten erkennen und deren Integrität sicherstellen. Unabhängig davon, ob Sie juristische Dokumente, technische Dokumentationen oder eine andere Art von Word-Datei verwalten, bietet Aspose.Words für .NET die Tools, die Sie für einen effizienten und genauen Dokumentvergleich benötigen.
+Das Vergleichen von Word-Dokumenten auf Gleichheit mit Aspose.Words für .NET ist ein unkomplizierter Vorgang, der Ihnen viel Zeit und Mühe sparen kann. Indem Sie die in diesem Handbuch beschriebenen Schritte befolgen, können Sie Unterschiede zwischen Dokumenten schnell erkennen und deren Integrität sicherstellen. Unabhängig davon, ob Sie juristische Dokumente, technische Dokumentationen oder eine andere Art von Word-Datei verwalten, bietet Aspose.Words für .NET die Tools, die Sie für einen effizienten und genauen Dokumentvergleich benötigen.
 
 ## FAQs
 

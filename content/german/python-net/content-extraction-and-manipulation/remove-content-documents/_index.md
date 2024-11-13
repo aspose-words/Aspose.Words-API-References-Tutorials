@@ -1,7 +1,7 @@
 ---
 title: Entfernen und Optimieren von Inhalten in Word-Dokumenten
 linktitle: Entfernen und Optimieren von Inhalten in Word-Dokumenten
-second_title: Aspose.Words Python-API zur Dokumentenverwaltung
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für Python Inhalte in Word-Dokumenten effizient entfernen und verfeinern. Schritt-für-Schritt-Anleitung mit Quellcodebeispielen.
 type: docs
 weight: 13
@@ -74,7 +74,7 @@ for shape in doc.get_child_nodes(aw.NodeType.SHAPE, True):
         shape.remove()
 ```
 
-## Neuformatierungsstile
+## Formatierungsstile neu formatieren
 
 Zum Verfeinern von Inhalten kann auch die Neuformatierung von Stilen gehören. Angenommen, Sie möchten die Schriftart bestimmter Absätze ändern:
 
@@ -156,9 +156,9 @@ Um Aspose.Words für Python zu installieren, verwenden Sie den folgenden Befehl:
 pip install aspose-words
 ```
 
-### Kann ich zum Suchen und Ersetzen reguläre Ausdrücke verwenden?
+### Kann ich reguläre Ausdrücke zum Suchen und Ersetzen verwenden?
 
-Ja, Sie können reguläre Ausdrücke für Such- und Ersetzungsvorgänge verwenden. Dies bietet eine flexible Möglichkeit, Inhalte zu suchen und zu ändern.
+Ja, Sie können reguläre Ausdrücke für Such- und Ersetzungsvorgänge verwenden. Dies bietet eine flexible Möglichkeit zum Suchen und Ändern von Inhalten.
 
 ### Ist es möglich, mit nachverfolgten Änderungen zu arbeiten?
 

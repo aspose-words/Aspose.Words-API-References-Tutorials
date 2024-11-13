@@ -8,7 +8,7 @@ weight: 780
 url: /de/net/working-with-list/
 ---
 
-„Wortverarbeitung mit Listen“ ist eine umfassende Ressource, die Sie durch die Wortverarbeitung mit Listen in Word-Dokumenten mithilfe der Aspose.Words für .NET-Bibliothek führt. Die Tutorials bieten schrittweise Erklärungen, vollständigen Quellcode und praktische Beispiele zum Erstellen, Anpassen und Verwalten verschiedener Listentypen, einschließlich Aufzählungslisten, nummerierten Listen und mehrstufigen Listen. Sie erfahren auch, wie Sie Elemente hinzufügen, Listen formatieren, das Erscheinungsbild und die Einrückung ändern und andere erweiterte Vorgänge ausführen. Diese Ressource ist unverzichtbar für Entwickler, die die Erstellung und Verwaltung von Listen in ihren Word-Dokumenten mithilfe von Aspose.Words für .NET automatisieren möchten.
+„Wortverarbeitung mit Listen“ ist eine umfassende Ressource, die Sie durch die Wortverarbeitung mit Listen in Word-Dokumenten mithilfe der Bibliothek Aspose.Words für .NET führt. Die Tutorials bieten schrittweise Erklärungen, vollständigen Quellcode und praktische Beispiele zum Erstellen, Anpassen und Verwalten verschiedener Listentypen, einschließlich Aufzählungslisten, nummerierten Listen und mehrstufigen Listen. Sie erfahren auch, wie Sie Elemente hinzufügen, Listen formatieren, das Erscheinungsbild und die Einrückung ändern und andere erweiterte Vorgänge ausführen. Diese Ressource ist unverzichtbar für Entwickler, die die Erstellung und Verwaltung von Listen in ihren Word-Dokumenten mithilfe von Aspose.Words für .NET automatisieren möchten.
 
  ## Anleitungen
 | Titel | Beschreibung |

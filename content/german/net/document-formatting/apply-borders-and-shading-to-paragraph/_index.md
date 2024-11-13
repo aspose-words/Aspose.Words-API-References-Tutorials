@@ -31,7 +31,7 @@ using Aspose.Words.Drawing;
 using System.Drawing;
 ```
 
-Lassen Sie uns den Prozess nun in mundgerechte Schritte unterteilen. Jeder Schritt hat eine Überschrift und eine ausführliche Erklärung. Bereit? Los geht‘s!
+Lassen Sie uns den Prozess nun in mundgerechte Schritte unterteilen. Jeder Schritt hat eine Überschrift und eine ausführliche Erklärung. Bereit? Dann los!
 
 ## Schritt 1: Richten Sie Ihr Dokumentverzeichnis ein
 
@@ -53,7 +53,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Der`Document` Objekt repräsentiert unser gesamtes Word-Dokument, und das`DocumentBuilder` hilft uns, Inhalte hinzuzufügen und zu formatieren.
+Der`Document` Objekt repräsentiert unser gesamtes Word-Dokument, und das`DocumentBuilder` hilft uns, Inhalte hinzuzufügen und zu formatieren.
 
 ## Schritt 3: Absatzränder definieren
 
@@ -95,7 +95,7 @@ Diese Zeile fügt unseren Text in das Dokument ein. Einfach, aber jetzt ist er i
 
 ## Schritt 6: Speichern Sie das Dokument
 
-Schließlich ist es Zeit, unsere Arbeit zu speichern. Speichern wir das Dokument im angegebenen Verzeichnis unter einem beschreibenden Namen.
+Schließlich ist es Zeit, unsere Arbeit zu speichern. Speichern wir das Dokument im angegebenen Verzeichnis unter einem aussagekräftigen Namen.
 
 ```csharp
 doc.Save(dataDir + "DocumentFormatting.ApplyBordersAndShadingToParagraph.doc");

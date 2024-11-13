@@ -60,7 +60,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 
 ## Schritt 3: Speichern Sie das Dokument als PDF
 
-Abschließend speichern wir das Dokument mit den angegebenen Speicheroptionen als PDF.
+Abschließend speichern wir das Dokument mit den angegebenen Speicheroptionen als PDF ab.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.Dml3DEffectsRendering.pdf", saveOptions);

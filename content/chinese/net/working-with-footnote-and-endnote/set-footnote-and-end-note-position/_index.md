@@ -1,5 +1,5 @@
 ---
-title: 设置脚注和尾注位置
+title: 设置脚注和尾注的位置
 linktitle: 设置脚注和尾注位置
 second_title: Aspose.Words 文档处理 API
 description: 通过详细的分步指南了解如何使用 Aspose.Words for .NET 在 Word 文档中设置脚注和尾注的位置。
@@ -15,7 +15,7 @@ url: /zh/net/working-with-footnote-and-endnote/set-footnote-and-end-note-positio
 
 在深入学习本教程之前，请确保您已准备好以下内容：
 
--  Aspose.Words for .NET 库：您可以从以下位置下载[这里](https://releases.aspose.com/words/net/).
+-  Aspose.Words for .NET 库：你可以从以下网址下载[这里](https://releases.aspose.com/words/net/).
 - Visual Studio：任何最新版本都可以运行。
 - C# 基础知识：了解基础知识将帮助您轻松地跟上。
 

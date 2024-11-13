@@ -1,7 +1,7 @@
 ---
 title: Erweiterte Suchen- und Ersetzen-Techniken in Word-Dokumenten
 linktitle: Erweiterte Suchen- und Ersetzen-Techniken in Word-Dokumenten
-second_title: Aspose.Words Python-API zur Dokumentenverwaltung
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
 description: Lernen Sie erweiterte Such- und Ersetzungstechniken in Word-Dokumenten mit Aspose.Words für Python. Ersetzen Sie Text, verwenden Sie reguläre Ausdrücke, Formatierungen und mehr.
 type: docs
 weight: 12

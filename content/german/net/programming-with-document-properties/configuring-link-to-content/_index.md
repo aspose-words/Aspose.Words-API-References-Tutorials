@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.Properties;
 ```
 
-Lassen Sie uns nun den Vorgang zum Konfigurieren eines Links zu Inhalten in einem Word-Dokument in leicht verständliche Schritte aufteilen.
+Lassen Sie uns nun den Vorgang zum Konfigurieren eines Links zu Inhalten in einem Word-Dokument in leicht verständliche Schritte aufschlüsseln.
 
 ## Schritt 1: Initialisieren Sie das Dokument und den DocumentBuilder
 

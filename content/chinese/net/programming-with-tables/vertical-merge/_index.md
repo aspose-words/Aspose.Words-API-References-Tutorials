@@ -98,12 +98,12 @@ doc.Save(dataDir + "WorkingWithTables.VerticalMerge.docx");
 
 ## 结论
 
-就这样！按照这些步骤，您已成功使用 Aspose.Words for .NET 在 Word 文档中实现垂直合并。此功能可以显著增强文档的可读性和组织性，使其更专业且更易于浏览。无论您处理的是简单表格还是复杂的数据结构，掌握垂直合并都会让您在文档格式方面占据优势。
+就这样！通过以下步骤，您已成功使用 Aspose.Words for .NET 在 Word 文档中实现垂直合并。此功能可以显著增强文档的可读性和组织性，使其更专业且更易于浏览。无论您处理的是简单表格还是复杂的数据结构，掌握垂直合并都会让您在文档格式方面占据优势。
 
 ## 常见问题解答
 
 ### Word 表格中的垂直合并是什么？
-垂直合并允许您将一列中的多个单元格合并为一个单元格，从而创建更简化、更有序的表格布局。
+垂直合并允许您将一列中的多个单元格合并为一个单元格，从而创建更精简、更有序的表格布局。
 
 ### 我可以垂直和水平合并单元格吗？
 是的，Aspose.Words for .NET 支持表格中单元格的垂直和水平合并。
@@ -112,7 +112,7 @@ doc.Save(dataDir + "WorkingWithTables.VerticalMerge.docx");
 是的，Aspose.Words for .NET 与各种版本的 Microsoft Word 兼容，确保您的文档在不同平台上无缝运行。
 
 ### 我需要安装 Microsoft Word 才能使用 Aspose.Words for .NET 吗？
-不，Aspose.Words for .NET 独立于 Microsoft Word 运行。您无需在机器上安装 Word 即可创建或操作 Word 文档。
+不，Aspose.Words for .NET 独立于 Microsoft Word 运行。您无需在计算机上安装 Word 即可创建或操作 Word 文档。
 
 ### 我可以使用 Aspose.Words for .NET 来操作现有的 Word 文档吗？
 当然！Aspose.Words for .NET 允许您轻松创建、修改和管理现有的 Word 文档。

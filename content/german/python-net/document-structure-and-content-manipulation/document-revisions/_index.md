@@ -1,7 +1,7 @@
 ---
 title: Nachverfolgen und Überprüfen von Dokumentrevisionen
 linktitle: Nachverfolgen und Überprüfen von Dokumentrevisionen
-second_title: Aspose.Words Python-API zur Dokumentenverwaltung
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
 description: Erfahren Sie, wie Sie Dokumentrevisionen mit Aspose.Words für Python verfolgen und überprüfen. Schritt-für-Schritt-Anleitung mit Quellcode für effiziente Zusammenarbeit. Verbessern Sie noch heute Ihr Dokumentenmanagement!
 type: docs
 weight: 23
@@ -81,14 +81,14 @@ paragraph.insert_before(comment, paragraph.runs[0])
 
 ## Anpassen des Erscheinungsbilds von Revisionen
 
-Sie können anpassen, wie Überarbeitungen im Dokument angezeigt werden, z. B. indem Sie die Farbe von eingefügtem und gelöschtem Text ändern:
+Sie können die Anzeige von Überarbeitungen im Dokument anpassen und beispielsweise die Farbe von eingefügtem und gelöschtem Text ändern:
 
 ```python
 doc.revision_options.inserted_color = asposewords.Color.RED
 doc.revision_options.deleted_color = asposewords.Color.BLUE
 ```
 
-## Dokumente speichern und freigeben
+## Speichern und Freigeben von Dokumenten
 
 Nachdem Sie die Änderungen überprüft und akzeptiert haben, speichern Sie das Dokument:
 
@@ -102,7 +102,7 @@ Geben Sie das endgültige Dokument für weiteres Feedback an Mitarbeiter weiter.
 
 1. Kennzeichnen Sie Revisionen deutlich mit aussagekräftigen Kommentaren.
 2. Kommunizieren Sie die Revisionsrichtlinien an alle Mitarbeiter.
-3. Überprüfen und akzeptieren bzw. lehnen Sie Revisionen regelmäßig ab.
+3. Überprüfen und akzeptieren/ablehnen Sie Revisionen regelmäßig.
 4. Verwenden Sie die Vergleichsfunktion von Aspose.Words für eine umfassende Dokumentanalyse.
 
 ## Abschluss

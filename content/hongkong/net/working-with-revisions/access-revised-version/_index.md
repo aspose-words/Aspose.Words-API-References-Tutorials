@@ -118,7 +118,7 @@ Console.WriteLine(paragraph.ListFormat.ListLevel);
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 成功存取了文件的修訂版本。透過執行以下步驟，您可以輕鬆管理和顯示文件修訂。無論您是在處理協作專案還是只是需要追蹤更改，Aspose.Words for .NET 都能滿足您的需求。
+現在你就擁有了！您已使用 Aspose.Words for .NET 成功存取了文件的修訂版本。透過執行以下步驟，您可以輕鬆管理和顯示文件修訂。無論您是在處理協作專案還是只是需要追蹤更改，Aspose.Words for .NET 都能滿足您的需求。
 
 ## 常見問題解答
 

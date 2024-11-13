@@ -2,7 +2,7 @@
 title: Schreiben Sie alle CSS-Regeln in eine einzige Datei
 linktitle: Schreiben Sie alle CSS-Regeln in eine einzige Datei
 second_title: Aspose.Words Dokumentverarbeitungs-API
-description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Word-Dokumente mit allen CSS-Regeln in einer einzigen Datei in HTML konvertieren, um saubereren Code und einfachere Wartung zu erzielen.
+description: Erfahren Sie, wie Sie mit Aspose.Words für .NET Word-Dokumente in HTML konvertieren, mit allen CSS-Regeln in einer einzigen Datei für saubereren Code und einfachere Wartung.
 type: docs
 weight: 10
 url: /de/net/programming-with-htmlfixedsaveoptions/write-all-css-rules-in-single-file/
@@ -17,7 +17,7 @@ Bevor wir uns ins Detail stürzen, wollen wir erst einmal alles vorbereiten. Fol
 
 1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Bibliothek Aspose.Words für .NET haben. Wenn Sie sie noch nicht haben, können Sie[Laden Sie es hier herunter](https://releases.aspose.com/words/net/).
 2. .NET-Entwicklungsumgebung: Sie benötigen eine .NET-Entwicklungsumgebung auf Ihrem Computer. Visual Studio ist eine beliebte Wahl.
-3. Grundkenntnisse in C#: Grundkenntnisse der C#-Programmierung sind hilfreich.
+3. Grundkenntnisse in C#: Grundlegende Kenntnisse der C#-Programmierung sind hilfreich.
 4. Ein Word-Dokument: Halten Sie ein Word-Dokument (.docx) bereit, das Sie konvertieren möchten.
 
 ## Namespaces importieren
@@ -63,10 +63,10 @@ HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions
 
 ## Schritt 4: Dokument in festes HTML konvertieren
 
-Abschließend speichern wir das Dokument mit den konfigurierten Speicheroptionen als HTML-Datei. Dieser Schritt stellt sicher, dass alle CSS-Regeln in einer einzigen Datei festgehalten werden.
+Abschließend speichern wir das Dokument mit den konfigurierten Speicheroptionen als HTML-Datei. Dieser Schritt stellt sicher, dass alle CSS-Regeln in einer einzigen Datei geschrieben werden.
 
 ```csharp
-//Dokument in festes HTML konvertieren
+// Dokument in festes HTML konvertieren
 doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile.html", saveOptions);
 ```
 
@@ -80,7 +80,7 @@ Und da haben Sie es! Mit nur wenigen Codezeilen haben Sie Ihr Word-Dokument erfo
 Die Verwendung einer einzigen CSS-Datei vereinfacht die Verwaltung und Wartung Ihrer Stile. Dadurch wird Ihr HTML übersichtlicher und effizienter.
 
 ### Kann ich die CSS-Regeln für Schriftarten bei Bedarf trennen?
- Ja, durch die Einstellung`SaveFontFaceCssSeparately` Zu`true`können Sie die CSS-Regeln für Schriftarten in eine andere Datei auslagern.
+ Ja, durch die Einstellung`SaveFontFaceCssSeparately` Zu`true`, Sie können die CSS-Regeln für Schriftarten in eine andere Datei auslagern.
 
 ### Ist die Nutzung von Aspose.Words für .NET kostenlos?
  Aspose.Words bietet eine kostenlose Testversion an, die Sie[hier herunterladen](https://releases.aspose.com/) . Für die weitere Nutzung sollten Sie den Kauf einer Lizenz in Erwägung ziehen[Hier](https://purchase.aspose.com/buy).
@@ -89,4 +89,4 @@ Die Verwendung einer einzigen CSS-Datei vereinfacht die Verwaltung und Wartung I
 Aspose.Words für .NET unterstützt verschiedene Formate, darunter PDF, TXT und Bildformate wie JPEG und PNG.
 
 ### Wo finde ich weitere Ressourcen zu Aspose.Words für .NET?
- Schauen Sie sich die[Dokumentation](https://reference.aspose.com/words/net/) für umfassende Anleitungen und API-Referenzen.
+ Schauen Sie sich die[Dokumentation](https://reference.aspose.com/words/net/)für umfassende Anleitungen und API-Referenzen.

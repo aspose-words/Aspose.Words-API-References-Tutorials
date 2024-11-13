@@ -12,7 +12,7 @@ In der Welt der Dokumentenverarbeitung spielen Präzision und Ästhetik eine ent
 
 ## 1. Einführung in die Silbentrennung
 
-Bei der Silbentrennung werden Wörter in Silben aufgeteilt und am Ende der Zeilen Bindestriche eingefügt, um die Textausrichtung in Dokumenten zu verbessern. Dies ist besonders wichtig, wenn Sie mit Sprachen arbeiten, die komplexe Wortstrukturen aufweisen.
+Bei der Silbentrennung werden Wörter in Silben aufgeteilt und am Ende der Zeilen Bindestriche eingefügt, um die Textausrichtung in Dokumenten zu verbessern. Dies ist besonders wichtig, wenn es um Sprachen mit komplexen Wortstrukturen geht.
 
 ## 2. Einrichten Ihrer Umgebung
 
@@ -72,7 +72,7 @@ Ja, Aspose.Words für Java bietet eine benutzerfreundliche API, die die Integrat
 
 ### 4. Wo finde ich weitere Ressourcen und Support für Aspose.Words für Java?
 
- Besuchen Sie die[Aspose.Words API-Dokumentation](https://reference.aspose.com/words/java/) für detaillierte Informationen. Für Support und Diskussionen besuchen Sie bitte die[Aspose.Words Forum](https://forum.aspose.com/).
+ Besuchen Sie die[Aspose.Words API-Dokumentation](https://reference.aspose.com/words/java/) für detaillierte Informationen. Für Support und Diskussionen besuchen Sie die[Aspose.Words Forum](https://forum.aspose.com/).
 
 ### 5. Wie erhalte ich Zugriff auf Aspose.Words für Java?
 

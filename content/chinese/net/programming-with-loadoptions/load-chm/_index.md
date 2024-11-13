@@ -9,7 +9,7 @@ url: /zh/net/programming-with-loadoptions/load-chm/
 ---
 ## 介绍
 
-当需要将 CHM 文件集成到 Word 文档时，Aspose.Words for .NET 提供了无缝解决方案。无论您是创建技术文档还是将各种资源整合到单个文档中，本教程都将以清晰且引人入胜的方式指导您完成每个步骤。
+当需要将 CHM 文件集成到 Word 文档中时，Aspose.Words for .NET 提供了无缝解决方案。无论您是创建技术文档还是将各种资源整合到单个文档中，本教程都将以清晰且引人入胜的方式指导您完成每个步骤。
 
 ## 先决条件
 
@@ -60,7 +60,7 @@ LoadOptions loadOptions = new LoadOptions { Encoding = Encoding.GetEncoding("win
 
 ## 步骤 3：加载 CHM 文件
 
-配置完加载选项后，下一步是将 CHM 文件加载到 Aspose.Words 文档对象中。
+配置好加载选项后，下一步是将 CHM 文件加载到 Aspose.Words 文档对象中。
 
 1. 创建文档对象：使用`Document`类使用指定的选项加载您的 CHM 文件。
 
@@ -111,7 +111,7 @@ doc.Save(outputPath);
 
 您可以使用`LoadOptions`类，如教程中所示。确保设置与您的 CHM 文件匹配的正确编码。
 
-### 是否可以在将加载的 CHM 内容保存为 Word 文档之前对其进行编辑？
+### 在将加载的 CHM 内容保存为 Word 文档之前，可以对其进行编辑吗？
 
 当然！一旦 CHM 文件被加载到`Document`对象，您可以使用 Aspose.Words 丰富的 API 来操作内容。
 

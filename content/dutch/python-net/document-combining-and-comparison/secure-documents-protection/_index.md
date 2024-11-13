@@ -1,8 +1,8 @@
 ---
-title: Documenten beveiligen met geavanceerde beveiligingstechnieken
-linktitle: Documenten beveiligen met geavanceerde beveiligingstechnieken
-second_title: Aspose.Words Python Documentbeheer-API
-description: Beveilig uw documenten met geavanceerde bescherming met Aspose.Words voor Python. Leer hoe u wachtwoorden toevoegt, inhoud versleutelt, digitale handtekeningen toepast en meer.
+title: Documenten beveiligen met geavanceerde beschermingstechnieken
+linktitle: Documenten beveiligen met geavanceerde beschermingstechnieken
+second_title: Aspose.Words Python-API voor documentbeheer
+description: Beveilig uw documenten met geavanceerde bescherming met Aspose.Words voor Python. Leer hoe u wachtwoorden toevoegt, content versleutelt, digitale handtekeningen toepast en meer.
 type: docs
 weight: 16
 url: /nl/python-net/document-combining-and-comparison/secure-documents-protection/
@@ -10,11 +10,11 @@ url: /nl/python-net/document-combining-and-comparison/secure-documents-protectio
 
 ## Invoering
 
-In dit digitale tijdperk zijn datalekken en ongeoorloofde toegang tot gevoelige informatie veelvoorkomende problemen. Aspose.Words voor Python biedt een robuuste oplossing om documenten tegen dergelijke risico's te beveiligen. In deze handleiding wordt gedemonstreerd hoe u Aspose.Words kunt gebruiken om geavanceerde beveiligingstechnieken voor uw documenten te implementeren.
+In dit digitale tijdperk zijn datalekken en ongeautoriseerde toegang tot gevoelige informatie veelvoorkomende zorgen. Aspose.Words voor Python biedt een robuuste oplossing voor het beveiligen van documenten tegen dergelijke risico's. Deze gids laat zien hoe u Aspose.Words kunt gebruiken om geavanceerde beschermingstechnieken voor uw documenten te implementeren.
 
 ## Aspose.Words voor Python installeren
 
-Om aan de slag te gaan, moet je Aspose.Words voor Python installeren. Je kunt het eenvoudig installeren met pip:
+Om te beginnen moet je Aspose.Words voor Python installeren. Je kunt het eenvoudig installeren met pip:
 
 ```python
 pip install aspose-words
@@ -22,7 +22,7 @@ pip install aspose-words
 
 ## Basisdocumentverwerking
 
-Laten we beginnen met het laden van een document met Aspose.Words:
+Laten we beginnen met het laden van een document met behulp van Aspose.Words:
 
 ```python
 import aspose.words as aw
@@ -38,18 +38,18 @@ kunt een wachtwoord aan uw document toevoegen om de toegang te beperken:
 protection = doc.protect(aw.ProtectionType.READ_ONLY, "your_password")
 ```
 
-## Bewerkingsrechten beperken
+## Beperken van bewerkingsrechten
 
-Om te bepalen wie wijzigingen in het document kan aanbrengen, kunt u bewerkingsrechten instellen:
+Om te bepalen wie wijzigingen in het document mag aanbrengen, kunt u bewerkingsrechten instellen:
 
 ```python
 protection = doc.protect(aw.ProtectionType.ALLOW_ONLY_REVISIONS, "password")
 protection.set_editing_groups(["Editors"])
 ```
 
-## Documentinhoud coderen
+## Documentinhoud versleutelen
 
-Het coderen van de inhoud van het document verbetert de beveiliging:
+Door de inhoud van het document te versleutelen, verbetert u de beveiliging:
 
 ```python
 doc.encrypt("encryption_password", aw.EncryptionType.AES_256)
@@ -75,7 +75,7 @@ doc.first_section.headers_footers.first_header.paragraphs.add(watermark)
 
 ## Gevoelige informatie redigeren
 
-Gevoelige informatie permanent verwijderen:
+Om gevoelige informatie permanent te verwijderen:
 
 ```python
 redaction_opts = aw.redaction.RedactionOptions(aw.redaction.RedactionType.CONTENT)
@@ -84,25 +84,25 @@ doc.redact([("Social Security Number", "XXX-XX-XXXX")], redaction_opts)
 
 ## Conclusie
 
-Aspose.Words voor Python stelt u in staat uw documenten te beveiligen met behulp van geavanceerde technieken. Van wachtwoordbeveiliging en encryptie tot digitale handtekeningen en redactie: deze functies zorgen ervoor dat uw documenten vertrouwelijk en fraudebestendig blijven.
+Aspose.Words for Python stelt u in staat uw documenten te beveiligen met geavanceerde technieken. Van wachtwoordbeveiliging en encryptie tot digitale handtekeningen en redactie, deze functies zorgen ervoor dat uw documenten vertrouwelijk en fraudebestendig blijven.
 
 ## Veelgestelde vragen
 
 ### Hoe kan ik Aspose.Words voor Python installeren?
 
- Je kunt het installeren met pip door het volgende uit te voeren:`pip install aspose-words`.
+ U kunt het installeren met behulp van pip door het volgende uit te voeren:`pip install aspose-words`.
 
-### Kan ik het bewerken beperken voor specifieke groepen?
+### Kan ik het bewerken beperken tot specifieke groepen?
 
  Ja, u kunt bewerkingsrechten voor specifieke groepen instellen met behulp van`protection.set_editing_groups(["Editors"])`.
 
-### Welke versleutelingsopties biedt Aspose.Words?
+### Welke encryptieopties biedt Aspose.Words?
 
-Aspose.Words biedt coderingsopties zoals AES_256 om de inhoud van documenten te beveiligen.
+Aspose.Words biedt encryptieopties zoals AES_256 om de inhoud van documenten te beveiligen.
 
-### Hoe verbeteren digitale handtekeningen de documentbeveiliging?
+### Hoe verbeteren digitale handtekeningen de beveiliging van documenten?
 
-Digitale handtekeningen garanderen de authenticiteit en integriteit van documenten, waardoor het voor ongeautoriseerde partijen moeilijker wordt om met de inhoud te knoeien.
+Digitale handtekeningen garanderen de authenticiteit en integriteit van documenten, waardoor het voor onbevoegden moeilijker wordt om de inhoud te manipuleren.
 
 ### Hoe kan ik gevoelige informatie permanent uit een document verwijderen?
 

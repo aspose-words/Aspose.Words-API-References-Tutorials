@@ -10,11 +10,11 @@ url: /zh/net/programming-with-shapes/detect-smart-art-shape/
 
 ## 介绍
 
-嗨！您是否曾经需要以编程方式处理 Word 文档中的 SmartArt？无论您是自动化报告、创建动态文档还是只是深入文档处理，Aspose.Words for .NET 都能满足您的需求。在本教程中，我们将探索如何使用 Aspose.Words for .NET 检测 Word 文档中的 SmartArt 形状。我们将在详细、易于遵循的指南中分解每个步骤。在本文结束时，您将能够轻松识别任何 Word 文档中的 SmartArt 形状！
+嗨！您是否曾经需要以编程方式使用 Word 文档中的 SmartArt？无论您是自动化报告、创建动态文档还是只是深入文档处理，Aspose.Words for .NET 都能满足您的需求。在本教程中，我们将探索如何使用 Aspose.Words for .NET 检测 Word 文档中的 SmartArt 形状。我们将在详细、易于遵循的指南中分解每个步骤。在本文结束时，您将能够轻松识别任何 Word 文档中的 SmartArt 形状！
 
 ## 先决条件
 
-在深入了解细节之前，让我们先确保您已完成所有设置：
+在深入了解细节之前，让我们确保您已完成所有设置：
 
 1. C# 基础知识：您应该熟悉 C# 语法和概念。
 2.  Aspose.Words for .NET：下载[这里](https://releases.aspose.com/words/net/) 。如果您只是在探索，您可以从[免费试用](https://releases.aspose.com/).
@@ -58,7 +58,7 @@ Document doc = new Document(dataDir + "Smart Art.docx");
 
 ## 步骤 3：检测 SmartArt 形状
 
-现在到了最激动人心的部分——检测文档中的 SmartArt 形状。我们将计算包含 SmartArt 的形状的数量。
+现在到了最激动人心的部分——检测文档中的 SmartArt 形状。我们将计算包含 SmartArt 的形状数量。
 
 ```csharp
 int count = doc.GetChildNodes(NodeType.Shape, true).Cast<Shape>().Count(shape => shape.HasSmartArt);
@@ -90,7 +90,7 @@ Aspose.Words for .NET 是一个功能强大的库，允许开发人员以编程�
 
 ### 2. 我可以免费使用 Aspose.Words for .NET 吗？
 
-您可以使用以下方式尝试 Aspose.Words for .NET[免费试用](https://releases.aspose.com/)。如需长期使用，您需要购买许可证。
+您可以使用以下方式尝试 Aspose.Words for .NET[免费试用](https://releases.aspose.com/)。如需长期使用，则需要购买许可证。
 
 ### 3. 如何检测文档中的其他类型的形状？
 

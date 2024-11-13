@@ -15,7 +15,7 @@ url: /zh/net/programming-with-ooxmlsaveoptions/keep-legacy-control-chars/
 
 在开始之前，请确保您已准备好以下内容：
 
-1.  Aspose.Words for .NET：从以下网址下载并安装[这里](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET：下载并安装[这里](https://releases.aspose.com/words/net/).
 2. 有效的 Aspose 许可证：您可以获取临时许可证[这里](https://purchase.aspose.com/temporary-license/).
 3. 开发环境：Visual Studio 或任何其他支持.NET 的 IDE。
 4. C# 基础知识：熟悉 C# 编程语言将会有所帮助。
@@ -77,7 +77,7 @@ using Aspose.Words.Saving;
 
 ## 结论
 
-就这样！按照这些步骤，您可以确保在 Aspose.Words for .NET 中处理 Word 文档时保留旧控制字符。此功能可以拯救您的生命，尤其是在处理控制字符起着关键作用的复杂文档时。 
+就这样！按照这些步骤，您可以确保在 Aspose.Words for .NET 中处理 Word 文档时保留旧版控制字符。此功能可以拯救您的生命，尤其是在处理控制字符起着关键作用的复杂文档时。 
 
 ## 常见问题解答
 

@@ -100,4 +100,4 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.UnlinkHeadersFooters.docx");
 Απολύτως! Το Aspose.Words για .NET μπορεί να χρησιμοποιηθεί με οποιαδήποτε γλώσσα .NET, συμπεριλαμβανομένων των VB.NET και F#.
 
 ### Πού μπορώ να βρω περισσότερη τεκμηρίωση και υποστήριξη για το Aspose.Words για .NET;  
- Μπορείτε να βρείτε ολοκληρωμένη τεκμηρίωση για το[Σελίδα τεκμηρίωσης Aspose.Words για .NET](https://reference.aspose.com/words/net/) και η υποστήριξη είναι διαθέσιμη στο[Aspose φόρουμ](https://forum.aspose.com/c/words/8).
+ Μπορείτε να βρείτε ολοκληρωμένη τεκμηρίωση για το[Σελίδα τεκμηρίωσης Aspose.Words για .NET](https://reference.aspose.com/words/net/) , και η υποστήριξη είναι διαθέσιμη στο[Aspose φόρουμ](https://forum.aspose.com/c/words/8).

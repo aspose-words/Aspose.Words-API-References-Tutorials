@@ -9,7 +9,7 @@ url: /de/net/join-and-append-documents/smart-style-behavior/
 ---
 ## Einführung
 
-Hallo, Word-Zauberer! Haben Sie sich schon einmal damit herumgeschlagen, Dokumente zusammenzuführen und dabei den Stil beizubehalten? Stellen Sie sich vor, Sie haben zwei Word-Dokumente, jedes mit seinem eigenen Flair, und Sie müssen sie zusammenführen, ohne den einzigartigen Touch zu verlieren. Klingt knifflig, oder? Heute tauchen wir in die magische Welt von Aspose.Words für .NET ein, um Ihnen zu zeigen, wie Sie dies mit Smart Style Behavior mühelos erreichen. Am Ende dieses Tutorials sind Sie ein Profi im Zusammenführen von Dokumenten wie ein stilbewusster Zauberer!
+Hallo, Word-Zauberer! Haben Sie sich schon einmal mit dem mühsamen Zusammenführen von Dokumenten beschäftigt, ohne den Stil zu verlieren? Stellen Sie sich vor, Sie haben zwei Word-Dokumente, jedes mit seinem eigenen Flair, und Sie müssen sie zusammenführen, ohne den einzigartigen Touch zu verlieren. Klingt knifflig, oder? Heute tauchen wir in die magische Welt von Aspose.Words für .NET ein, um Ihnen zu zeigen, wie Sie dies mit Smart Style Behavior mühelos erreichen. Am Ende dieses Tutorials sind Sie ein Profi im Zusammenführen von Dokumenten wie ein stilbewusster Zauberer!
 
 ## Voraussetzungen
 
@@ -57,7 +57,7 @@ DocumentBuilder builder = new DocumentBuilder(dstDoc);
 ```
 
 Erläuterung:
- Der`DocumentBuilder` ist ein praktisches Tool, das Methoden zum Navigieren und Ändern des Dokuments bereitstellt. Hier verknüpfen wir es mit unserem Zieldokument.
+Der`DocumentBuilder` ist ein praktisches Tool, das Methoden zum Navigieren und Ändern des Dokuments bereitstellt. Hier verknüpfen wir es mit unserem Zieldokument.
 
 ## Schritt 3: Zum Dokumentende wechseln und einen Seitenumbruch einfügen
 

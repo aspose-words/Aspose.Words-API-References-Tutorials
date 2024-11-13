@@ -15,7 +15,7 @@ url: /zh/net/working-with-fields/field-update-culture/
 
 在我们深入探讨现场更新文化的细节之前，您需要先做以下几件事：
 
-1. Aspose.Words for .NET：确保已安装 Aspose.Words for .NET 库。如果没有，您可以下载[这里](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET：请确保您已安装 Aspose.Words for .NET 库。如果没有，您可以下载它[这里](https://releases.aspose.com/words/net/).
 
 2. Visual Studio：本教程假设您使用 Visual Studio 或支持 .NET 开发的类似 IDE。
 
@@ -38,7 +38,7 @@ using Aspose.Words.Fields;
 
 ## 步骤 1：设置文档和 DocumentBuilder
 
-首先，你需要创建一个新文档和一个`DocumentBuilder`对象。`DocumentBuilder`是一个方便的类，允许您轻松地创建和修改 Word 文档。
+首先，你需要创建一个新文档和一个`DocumentBuilder`对象。`DocumentBuilder`是一个方便的类，可以让您轻松地创建和修改 Word 文档。
 
 ```csharp
 //文档目录的路径。
@@ -75,7 +75,52 @@ doc.FieldOptions.FieldUpdateCultureProvider = new FieldUpdateCultureProvider();
 - `FieldUpdateCultureSource.FieldCode`告诉 Aspose.Words 使用字段代码中指定的文化进行更新。
 - `FieldUpdateCultureProvider`允许您为字段更新指定文化提供程序。如果您需要实现自定义提供程序，可以扩展此类。
 
-## 步骤 4：保存文档
+## 步骤 4：实现自定义文化提供程序
+
+我们现在需要实现自定义文化提供程序，它将控制在更新字段时如何应用文化设置（例如日期格式）。
+
+我们将创建一个名为`FieldUpdateCultureProvider`实现`IFieldUpdateCultureProvider`接口。该类将根据地区返回不同的文化格式。在本例中，我们将配置俄罗斯和美国文化设置。
+
+```csharp
+private class FieldUpdateCultureProvider : IFieldUpdateCultureProvider
+{
+    public CultureInfo GetCulture(string name, Field field)
+    {
+        switch (name)
+        {
+            case "ru-RU":
+                CultureInfo culture = new CultureInfo(name, false);
+                DateTimeFormatInfo format = culture.DateTimeFormat;
+
+                format.MonthNames = new[] { "месяц 1", "месяц 2", "месяц 3", "месяц 4", "месяц 5", "месяц 6", "месяц 7", "месяц 8", "месяц 9", "месяц 10", "месяц 11", "месяц 12", "" };
+                format.MonthGenitiveNames = format.MonthNames;
+                format.AbbreviatedMonthNames = new[] { "мес 1", "мес 2", "мес 3", "мес 4", "мес 5", "мес 6", "мес 7", "мес 8", "мес 9", "мес 10", "мес 11", "мес 12", "" };
+                format.AbbreviatedMonthGenitiveNames = format.AbbreviatedMonthNames;
+
+                format.DayNames = new[] { "день недели 7", "день недели 1", "день недели 2", "день недели 3", "день недели 4", "день недели 5", "день недели 6" };
+                format.AbbreviatedDayNames = new[] { "день 7", "день 1", "день 2", "день 3", "день 4", "день 5", "день 6" };
+                format.ShortestDayNames = new[] { "д7", "д1", "д2", "д3", "д4", "д5", "д6" };
+
+                format.AMDesignator = "До полудня";
+                format.PMDesignator = "После полудня";
+
+                const string pattern = "yyyy MM (MMMM) dd (dddd) hh:mm:ss tt";
+                format.LongDatePattern = pattern;
+                format.LongTimePattern = pattern;
+                format.ShortDatePattern = pattern;
+                format.ShortTimePattern = pattern;
+
+                return culture;
+            case "en-US":
+                return new CultureInfo(name, false);
+            default:
+                return null;
+        }
+    }
+}
+```
+
+## 步骤 5：保存文档
 
 最后，将文档保存到指定目录。这可确保您的所有更改都得到保存。
 
@@ -102,7 +147,7 @@ doc.Save(dataDir + "UpdateCultureChamps.pdf");
 
 ### 我是否需要特定的许可证才能使用 Aspose.Words 中的字段更新文化功能？
 
-要获得完整功能，您可能需要有效的 Aspose 许可证。您可以通过以下方式获取许可证[Aspose 的购买页面](https://purchase.aspose.com/buy)或使用临时执照[这里](https://purchase.aspose.com/temporary-license/).
+要获得完整功能，您可能需要有效的 Aspose 许可证。您可以通过以下方式获取许可证[Aspose 的购买页面](https://purchase.aspose.com/buy)或使用临时驾照[这里](https://purchase.aspose.com/temporary-license/).
 
 ### 我如何进一步定制字段更新文化？
 

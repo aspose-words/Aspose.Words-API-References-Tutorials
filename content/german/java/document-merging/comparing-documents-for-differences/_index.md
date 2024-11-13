@@ -36,11 +36,11 @@ Document docOriginal = new Document("original_document.docx");
 Document docModified = new Document("modified_document.docx");
 ```
 
- Ersetzen`"original_document.docx"`Und`"modified_document.docx"` mit den Pfaden zu Ihren eigenen Dokumenten.
+ Ersetzen`"original_document.docx"` Und`"modified_document.docx"` mit den Pfaden zu Ihren eigenen Dokumenten.
 
 ## Schritt 2: Dokumente vergleichen
 
-Nachdem Sie die Dokumente geladen haben, ist es an der Zeit, sie zu vergleichen. Aspose.Words bietet eine praktische Methode zum Vergleichen von Dokumenten. So können Sie es tun:
+Nachdem Sie die Dokumente geladen haben, ist es an der Zeit, sie zu vergleichen. Aspose.Words bietet eine praktische Methode zum Vergleichen von Dokumenten. So können Sie vorgehen:
 
 ```java
 // Vergleichen Sie die beiden Dokumente
@@ -59,7 +59,7 @@ comparer.save("comparison_result.docx");
 
 ## Schritt 4: Überprüfen Sie die Unterschiede
 
-Nachdem Sie das Vergleichsergebnis gespeichert haben, können Sie die Unterschiede zwischen dem Originaldokument und dem geänderten Dokument überprüfen. Öffnen Sie „Vergleichsergebnis.docx“, um die hervorgehobenen Änderungen anzuzeigen.
+Nachdem Sie das Vergleichsergebnis gespeichert haben, können Sie die Unterschiede zwischen dem Originaldokument und den geänderten Dokumenten überprüfen. Öffnen Sie „Vergleichsergebnis.docx“, um die hervorgehobenen Änderungen anzuzeigen.
 
 ## Abschluss
 
@@ -69,7 +69,7 @@ Das Vergleichen von Dokumenten auf Unterschiede mit Aspose.Words für Java ist e
 
 ### Wie installiere ich Aspose.Words für Java?
 
- Um Aspose.Words für Java zu installieren, besuchen Sie die Download-Seite[Hier](https://releases.aspose.com/words/java/) und befolgen Sie die bereitgestellten Installationsanweisungen.
+ Um Aspose.Words für Java zu installieren, besuchen Sie die Download-Seite[Hier](https://releases.aspose.com/words/java/)und befolgen Sie die bereitgestellten Installationsanweisungen.
 
 ### Kann ich Dokumente mit unterschiedlichen Formaten wie DOCX und PDF vergleichen?
 

@@ -117,5 +117,5 @@ Und da haben Sie es! Mit nur wenigen Codezeilen können Sie mit Aspose.Words fü
 ### Kann ich diese Methode für vorhandene Tabellen in einem Dokument verwenden?
  Ja, Sie können vorhandene Tabellen ändern, indem Sie auf sie zugreifen über`Document` Objekt und Anwenden einer ähnlichen Formatierung.
 
-### Welche anderen Tabellenformatierungsoptionen sind in Aspose.Words für .NET verfügbar?
+### Welche anderen Optionen zur Tabellenformatierung sind in Aspose.Words für .NET verfügbar?
  Aspose.Words für .NET bietet eine breite Palette an Optionen zur Tabellenformatierung, einschließlich Zellzusammenführung, Rahmeneinstellungen und Tabellenausrichtung. Schauen Sie sich die[Dokumentation](https://reference.aspose.com/words/net/) für weitere Details.

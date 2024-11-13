@@ -55,14 +55,14 @@ builder.Writeln("Outer Table Cell 1");
 
 ### Schritt 2.2: Einfügen der zweiten Zelle der äußeren Tabelle
 
-Als Nächstes fügen wir die zweite Zelle ein und fügen Inhalt hinzu.
+Als Nächstes fügen wir die zweite Zelle ein und fügen etwas Inhalt hinzu.
 
 ```csharp
 builder.InsertCell();
 builder.Writeln("Outer Table Cell 2");
 ```
 
-### Schritt 2.3: Beenden der äußeren Tabelle
+### Schritt 2.3: Äußere Tabelle beenden
 
 Das Beenden der Tabelle an dieser Stelle ist wichtig, da wir so die verschachtelte Tabelle innerhalb der ersten Zelle beginnen können.
 
@@ -136,6 +136,6 @@ Ja, Sie können mehrere Ebenen verschachtelter Tabellen erstellen, indem Sie den
 
 Aspose.Words für .NET ist mit einer Vielzahl von Word-Dokumentformaten kompatibel, darunter DOC, DOCX, RTF und mehr.
 
-### Wie erhalte ich Support für Aspose.Words für .NET?
+### Wie kann ich Support für Aspose.Words für .NET erhalten?
 
  Unterstützung erhalten Sie vom[Aspose.Words Support Forum](https://forum.aspose.com/c/words/8).

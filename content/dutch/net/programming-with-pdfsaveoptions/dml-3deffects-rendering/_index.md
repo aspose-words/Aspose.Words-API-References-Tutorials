@@ -1,31 +1,31 @@
 ---
-title: Geef 3D DML 3DE-effecten weer in een PDF-document
-linktitle: Geef 3D DML 3DE-effecten weer in een PDF-document
-second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u verbluffende 3D DML-effecten in PDF-documenten kunt weergeven met Aspose.Words voor .NET met deze uitgebreide stapsgewijze handleiding.
+title: Render 3D DML 3DEffects in een PDF-document
+linktitle: Render 3D DML 3DEffects in een PDF-document
+second_title: Aspose.Words API voor documentverwerking
+description: Leer hoe u verbluffende 3D DML-effecten kunt renderen in PDF-documenten met Aspose.Words voor .NET met deze uitgebreide stapsgewijze handleiding.
 type: docs
 weight: 10
 url: /nl/net/programming-with-pdfsaveoptions/dml-3deffects-rendering/
 ---
 ## Invoering
 
-Heeft u ooit verbluffende PDF-documenten met 3D-effecten willen maken van uw Word-bestanden? Nou, je hebt geluk! Vandaag duiken we in hoe je 3D DrawingML (DML)-effecten in PDF-documenten kunt weergeven met Aspose.Words voor .NET. Aspose.Words is een krachtige bibliotheek waarmee u Word-documenten programmatisch kunt manipuleren, en dankzij de robuuste functies kunt u uw documenten eenvoudig met geavanceerde 3D-effecten exporteren naar PDF-indeling. Deze stapsgewijze handleiding leidt u door alles wat u moet weten, van het instellen van uw omgeving tot het uitvoeren van de code. Laten we dus aan de slag gaan en uw documenten laten opvallen met 3D-effecten!
+Heb je ooit verbluffende PDF-documenten met 3D-effecten willen maken van je Word-bestanden? Nou, dan heb je geluk! Vandaag duiken we in hoe je 3D DrawingML (DML)-effecten in PDF-documenten kunt renderen met Aspose.Words voor .NET. Aspose.Words is een krachtige bibliotheek waarmee je Word-documenten programmatisch kunt manipuleren en met zijn robuuste functies kun je je documenten met geavanceerde 3D-effecten eenvoudig exporteren naar PDF-formaat. Deze stapsgewijze handleiding leidt je door alles wat je moet weten, van het instellen van je omgeving tot het uitvoeren van de code. Dus laten we beginnen en je documenten laten knallen met 3D-effecten!
 
 ## Vereisten
 
-Voordat we in de code duiken, zorgen we ervoor dat je alles hebt wat je nodig hebt. Hier is een lijst met vereisten om u op weg te helpen:
+Voordat we in de code duiken, zorgen we ervoor dat je alles hebt wat je nodig hebt. Hier is een lijst met vereisten om je op weg te helpen:
 
-1.  Aspose.Words voor .NET: Zorg ervoor dat u over de Aspose.Words voor .NET-bibliotheek beschikt. Je kunt het downloaden[hier](https://releases.aspose.com/words/net/).
-2. .NET Framework: .NET Framework moet op uw computer zijn geïnstalleerd.
+1.  Aspose.Words voor .NET: Zorg ervoor dat u de Aspose.Words voor .NET-bibliotheek hebt. U kunt deze downloaden[hier](https://releases.aspose.com/words/net/).
+2. .NET Framework: .NET Framework moet op uw computer geïnstalleerd zijn.
 3. Ontwikkelomgeving: Een ontwikkelomgeving zoals Visual Studio.
-4. Word-document: een Word-document met 3D-effecten dat u naar PDF wilt converteren.
-5.  Tijdelijke licentie: voor volledige functionaliteit heeft u mogelijk een tijdelijke licentie van Aspose nodig, die u kunt verkrijgen[hier](https://purchase.aspose.com/temporary-license/).
+4. Word-document: Een Word-document met 3D-effecten dat u naar PDF wilt converteren.
+5.  Tijdelijke licentie: voor volledige mogelijkheden hebt u mogelijk een tijdelijke licentie van Aspose nodig, die u kunt krijgen[hier](https://purchase.aspose.com/temporary-license/).
 
 Als u aan deze vereisten voldoet, bent u helemaal klaar om 3D-effecten in uw PDF-documenten weer te geven.
 
 ## Naamruimten importeren
 
-Laten we eerst de benodigde naamruimten in uw project importeren. Dit is van cruciaal belang omdat u hierdoor de klassen en methoden van Aspose.Words kunt gebruiken.
+Laten we eerst de benodigde namespaces importeren in uw project. Dit is cruciaal omdat het u in staat stelt de klassen en methoden te gebruiken die door Aspose.Words worden geleverd.
 
 ```csharp
 using System;
@@ -35,7 +35,7 @@ using Aspose.Words.Saving;
 
 ## Stap 1: Laad uw Word-document
 
-De eerste stap is het laden van uw Word-document. Dit document moet de 3D-effecten bevatten die u in de PDF wilt weergeven.
+De eerste stap is om uw Word-document te laden. Dit document moet de 3D-effecten bevatten die u in de PDF wilt renderen.
 
 ```csharp
 // Het pad naar de documentenmap.
@@ -43,9 +43,9 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Rendering.docx");
 ```
 
- Hier definiëren we het pad naar uw documentmap en laden we het Word-document met behulp van de`Document` klas. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw directory.
+ Hier definiëren we het pad naar uw documentmap en laden we het Word-document met behulp van de`Document` klasse. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het werkelijke pad naar uw directory.
 
-## Stap 2: Configureer de PDF-opslagopties
+## Stap 2: PDF-opslagopties configureren
 
 Vervolgens moeten we de opslagopties configureren om ervoor te zorgen dat de 3D-effecten correct worden weergegeven in de PDF.
 
@@ -56,7 +56,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 };
 ```
 
- We maken een exemplaar van`PdfSaveOptions` en stel de`Dml3DEffectsRenderingMode` naar`Advanced`. Dit vertelt Aspose.Words om de 3D-effecten weer te geven met behulp van geavanceerde instellingen, zodat ze er zo indrukwekkend mogelijk uitzien in de PDF.
+ We maken een exemplaar van`PdfSaveOptions` en stel de`Dml3DEffectsRenderingMode` naar`Advanced`Hiermee krijgt Aspose.Words de opdracht om de 3D-effecten te renderen met behulp van geavanceerde instellingen, zodat ze er in de PDF zo indrukwekkend mogelijk uitzien.
 
 ## Stap 3: Sla het document op als PDF
 
@@ -66,29 +66,29 @@ Ten slotte slaan we het document op als PDF met behulp van de opgegeven opslagop
 doc.Save(dataDir + "WorkingWithPdfSaveOptions.Dml3DEffectsRendering.pdf", saveOptions);
 ```
 
- Wij gebruiken de`Save` werkwijze van de`Document` klasse om het Word-document als PDF op te slaan. De opslagopties die we eerder hebben geconfigureerd, worden doorgegeven als parameter om ervoor te zorgen dat de 3D-effecten correct worden weergegeven.
+ Wij gebruiken de`Save` methode van de`Document` klasse om het Word-document op te slaan als een PDF. De opslagopties die we eerder hebben geconfigureerd, worden doorgegeven als een parameter om ervoor te zorgen dat de 3D-effecten correct worden weergegeven.
 
 ## Conclusie
 
-Gefeliciteerd! U hebt met succes 3D DML-effecten weergegeven in een PDF-document met Aspose.Words voor .NET. Door deze eenvoudige stappen te volgen, kunt u uw Word-documenten met geavanceerde 3D-effecten converteren naar verbluffende PDF's, waardoor uw documenten aantrekkelijker en visueel aantrekkelijker worden. Deze krachtige functie van Aspose.Words kan de presentatiekwaliteit van uw documenten aanzienlijk verbeteren.
+Gefeliciteerd! U hebt met succes 3D DML-effecten gerenderd in een PDF-document met Aspose.Words voor .NET. Door deze eenvoudige stappen te volgen, kunt u uw Word-documenten met geavanceerde 3D-effecten omzetten in verbluffende PDF's, waardoor uw documenten aantrekkelijker en visueel aantrekkelijker worden. Deze krachtige functie van Aspose.Words kan de presentatiekwaliteit van uw documenten aanzienlijk verbeteren.
 
 ## Veelgestelde vragen
 
-### Kan ik andere effecten in PDF's weergeven met Aspose.Words?
+### Kan ik andere effecten in PDF's renderen met Aspose.Words?
 
-Ja, Aspose.Words ondersteunt het weergeven van verschillende effecten, waaronder schaduwen, reflecties en meer, bij het exporteren naar PDF.
+Ja, Aspose.Words ondersteunt het renderen van diverse effecten, waaronder schaduwen, reflecties en meer, bij het exporteren naar PDF.
 
 ### Is een tijdelijke licentie nodig voor het renderen van 3D-effecten?
 
-Een tijdelijke licentie wordt aanbevolen voor toegang tot de volledige functies van Aspose.Words, inclusief geavanceerde weergaveopties.
+Voor toegang tot alle functies van Aspose.Words, inclusief geavanceerde renderingopties, wordt een tijdelijke licentie aanbevolen.
 
-### Wat moet ik doen als mijn Word-document geen 3D-effecten heeft?
+### Wat als mijn Word-document geen 3D-effecten heeft?
 
-Als uw document geen 3D-effecten heeft, kunt u het nog steeds naar PDF converteren, maar zijn de speciale weergaveopties niet van toepassing.
+Als uw document geen 3D-effecten heeft, kunt u het nog steeds converteren naar PDF, maar de speciale renderingopties zijn dan niet van toepassing.
 
 ### Kan ik andere aspecten van de PDF-export aanpassen?
 
-Absoluut! Aspose.Words biedt een breed scala aan opties om de PDF-uitvoer aan te passen, inclusief pagina-indeling, compressie-instellingen en meer.
+Absoluut! Aspose.Words biedt een breed scala aan opties om de PDF-uitvoer aan te passen, waaronder pagina-indeling, compressie-instellingen en meer.
 
 ### Waar kan ik meer gedetailleerde documentatie vinden?
 

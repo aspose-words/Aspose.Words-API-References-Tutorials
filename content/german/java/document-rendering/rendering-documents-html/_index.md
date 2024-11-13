@@ -23,7 +23,7 @@ Beginnen wir nun mit dem Schritt-für-Schritt-Prozess.
 
 ## Schritt 1: Einrichten Ihres Java-Projekts
 
-Erstellen Sie zunächst ein neues Java-Projekt in Ihrer bevorzugten integrierten Entwicklungsumgebung (IDE). Stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek für Java in die Abhängigkeiten Ihres Projekts aufnehmen.
+Erstellen Sie zunächst ein neues Java-Projekt in Ihrer bevorzugten integrierten Entwicklungsumgebung (IDE). Stellen Sie sicher, dass Sie die Bibliothek Aspose.Words für Java in die Abhängigkeiten Ihres Projekts aufnehmen.
 
 ## Schritt 2: Laden des Dokuments
 

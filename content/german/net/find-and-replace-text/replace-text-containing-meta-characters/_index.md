@@ -73,7 +73,7 @@ findReplaceOptions.ApplyParagraphFormat.Alignment = ParagraphAlignment.Center;
 
 ## Schritt 4: Text durch Metazeichen ersetzen
 
-In diesem Schritt geschieht die Magie! Wir ersetzen das Wort „Absatz“ gefolgt durch einen Absatzumbruch und fügen eine Unterstreichung hinzu.
+In diesem Schritt geschieht die Magie! Wir ersetzen das Wort „Abschnitt“ gefolgt durch einen Absatzumbruch und fügen eine Unterstreichung hinzu.
 
 ```csharp
 // Verdoppeln Sie jeden Absatzumbruch nach dem Wort „Abschnitt“, fügen Sie eine Art Unterstreichung hinzu und zentrieren Sie ihn.
@@ -87,7 +87,7 @@ In diesem Code ersetzen wir den Text „Absatz“ gefolgt von einem Absatzumbruc
 Als Nächstes ersetzen wir ein benutzerdefiniertes Text-Tag durch einen Abschnittsumbruch. Das ist, als würden Sie einen Platzhalter durch etwas Funktionaleres ersetzen.
 
 ```csharp
-// Fügen Sie einen Abschnittsumbruch anstelle eines benutzerdefinierten Texttags ein.
+// Fügen Sie anstelle eines benutzerdefinierten Texttags einen Abschnittsumbruch ein.
 count = doc.Range.Replace("{insert-section}", "&b", findReplaceOptions);
 ```
 
@@ -105,7 +105,7 @@ doc.Save(dataDir + "FindAndReplace.ReplaceTextContainingMetaCharacters.docx");
 
 ## Abschluss
 
-Und da haben Sie es! Sie beherrschen jetzt die Kunst, Text mit Metazeichen in einem Word-Dokument mithilfe von Aspose.Words für .NET zu ersetzen. Von der Einrichtung Ihrer Umgebung bis zum Speichern Ihres endgültigen Dokuments ist jeder Schritt darauf ausgelegt, Ihnen die Kontrolle über Ihre Textbearbeitung zu geben. Tauchen Sie also in Ihre Dokumente ein und nehmen Sie diese Ersetzungen selbstbewusst vor!
+Und da haben Sie es! Sie beherrschen jetzt die Kunst, Text mit Metazeichen in einem Word-Dokument mithilfe von Aspose.Words für .NET zu ersetzen. Von der Einrichtung Ihrer Umgebung bis zum Speichern Ihres endgültigen Dokuments ist jeder Schritt darauf ausgelegt, Ihnen die Kontrolle über Ihre Textbearbeitung zu geben. Tauchen Sie also ein in Ihre Dokumente und nehmen Sie diese Ersetzungen selbstbewusst vor!
 
 ## Häufig gestellte Fragen
 
@@ -119,7 +119,7 @@ Auf jeden Fall! Sie können die Ersetzungszeichenfolge ändern, um bei Bedarf an
  Sie können mehrere`Replace` Aufrufe zum Verarbeiten verschiedener Tags oder Muster in Ihrem Dokument.
 
 ### Ist es möglich, andere Schriftarten und Formatierungen zu verwenden?
-Ja, Sie können Schriftarten und andere Formatierungsoptionen anpassen mit dem`DocumentBuilder`Und`FindReplaceOptions` Objekte.
+Ja, Sie können Schriftarten und andere Formatierungsoptionen anpassen mit dem`DocumentBuilder` Und`FindReplaceOptions` Objekte.
 
 ### Wo finde ich weitere Informationen zu Aspose.Words für .NET?
  Besuchen Sie die[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/) für weitere Einzelheiten und Beispiele.

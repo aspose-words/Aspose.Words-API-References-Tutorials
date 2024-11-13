@@ -1,18 +1,18 @@
 ---
-title: Kop- en voetteksten manipuleren in Word-documenten
-linktitle: Kop- en voetteksten manipuleren in Word-documenten
-second_title: Aspose.Words Python Documentbeheer-API
-description: Leer kop- en voetteksten in Word-documenten manipuleren met Aspose.Words voor Python. Stapsgewijze handleiding met broncode voor het aanpassen, toevoegen, verwijderen en meer. Verbeter nu uw documentopmaak!
+title: Kop- en voetteksten in Word-documenten manipuleren
+linktitle: Kop- en voetteksten in Word-documenten manipuleren
+second_title: Aspose.Words Python-API voor documentbeheer
+description: Leer hoe u headers en footers in Word-documenten kunt bewerken met Aspose.Words voor Python. Stapsgewijze handleiding met broncode voor aanpassen, toevoegen, verwijderen en meer. Verbeter nu uw documentopmaak!
 type: docs
 weight: 16
 url: /nl/python-net/document-structure-and-content-manipulation/document-headers-footers/
 ---
-Kop- en voetteksten in Word-documenten spelen een cruciale rol bij het bieden van context, branding en aanvullende informatie aan uw inhoud. Het manipuleren van deze elementen met behulp van de Aspose.Words voor Python API kan het uiterlijk en de functionaliteit van uw documenten aanzienlijk verbeteren. In deze stapsgewijze handleiding onderzoeken we hoe u met kop- en voetteksten kunt werken met Aspose.Words voor Python.
+Kop- en voetteksten in Word-documenten spelen een cruciale rol bij het bieden van context, branding en aanvullende informatie aan uw content. Het manipuleren van deze elementen met behulp van de Aspose.Words voor Python API kan het uiterlijk en de functionaliteit van uw documenten aanzienlijk verbeteren. In deze stapsgewijze handleiding onderzoeken we hoe u met kop- en voetteksten kunt werken met behulp van Aspose.Words voor Python.
 
 
 ## Aan de slag met Aspose.Words voor Python
 
-Voordat u in kop- en voettekstmanipulatie duikt, moet u Aspose.Words voor Python instellen. Volg deze stappen:
+Voordat u aan de slag gaat met header- en footermanipulatie, moet u Aspose.Words voor Python instellen. Volg deze stappen:
 
 1. Installatie: Installeer Aspose.Words voor Python met behulp van pip.
 
@@ -20,7 +20,7 @@ Voordat u in kop- en voettekstmanipulatie duikt, moet u Aspose.Words voor Python
 pip install aspose-words
 ```
 
-2. De module importeren: Importeer de vereiste module in uw Python-script.
+2. De module importeren: importeer de vereiste module in uw Python-script.
 
 ```python
 import aspose.words
@@ -36,7 +36,7 @@ Volg deze stappen om een eenvoudige kop- en voettekst aan uw Word-document toe t
 doc = aspose.words.Document()
 ```
 
-2.  Kop- en voettekst toevoegen: gebruik de`sections` eigenschap van het document om toegang te krijgen tot secties. Maak dan gebruik van de`headers_footers` eigenschap om kop- en voetteksten toe te voegen.
+2.  Kop- en voettekst toevoegen: gebruik de`sections` eigenschap van het document om toegang te krijgen tot secties. Gebruik vervolgens de`headers_footers` eigenschap om kop- en voetteksten toe te voegen.
 
 ```python
 section = doc.sections[0]
@@ -64,7 +64,7 @@ doc.save("document_with_header_footer.docx")
 
 ## Kop- en voettekstinhoud aanpassen
 
-U kunt de kop- en voettekstinhoud aanpassen door afbeeldingen, tabellen en dynamische velden toe te voegen. Bijvoorbeeld:
+U kunt de inhoud van de header en footer aanpassen door afbeeldingen, tabellen en dynamische velden toe te voegen. Bijvoorbeeld:
 
 1. Afbeeldingen toevoegen: Voeg afbeeldingen in de kop- of voettekst in.
 
@@ -73,7 +73,7 @@ image_path = "path_to_your_image.png"
 header_run.add_picture(image_path)
 ```
 
-2. Tabellen toevoegen: Voeg tabellen toe voor tabellarische informatie.
+2. Tabellen toevoegen: Voeg tabellen toe voor tabelvormige informatie.
 
 ```python
 footer_table = footer.add_table(1, 2)
@@ -87,11 +87,11 @@ footer_table.rows[0].cells[1].text = "All rights reserved."
 footer_run.text = "Page number: {PAGE} of {NUMPAGES} - Document created on {DATE}"
 ```
 
-## Verschillende kop- en voetteksten voor oneven en even pagina's
+## Verschillende kop- en voetteksten voor even en oneven pagina's
 
-Het maken van verschillende kop- en voetteksten voor oneven en even pagina's kan een professioneel tintje aan uw documenten geven. Hier ziet u hoe:
+Het maken van verschillende headers en footers voor oneven en even pagina's kan een professionele touch toevoegen aan uw documenten. Dit is hoe:
 
-1. Lay-out van oneven en even pagina's instellen: Definieer de lay-out om verschillende kop- en voetteksten voor oneven en even pagina's toe te staan.
+1. Instellen van de indeling voor even en oneven pagina's: Definieer de indeling om verschillende kop- en voetteksten voor even en oneven pagina's toe te staan.
 
 ```python
 section = doc.sections[0]
@@ -99,7 +99,7 @@ section.page_setup.different_first_page_header_footer = True
 section.page_setup.odd_and_even_pages_header_footer = True
 ```
 
-2. Kop- en voetteksten toevoegen: Voeg kop- en voetteksten toe voor de eerste pagina, oneven pagina's en even pagina's.
+2. Kopteksten en voetteksten toevoegen: Voeg kopteksten en voetteksten toe voor de eerste pagina, oneven pagina's en even pagina's.
 
 ```python
 header_first = section.headers_footers[aspose.words.HeaderFooterType.HEADER_FIRST]
@@ -110,20 +110,20 @@ header_even = section.headers_footers[aspose.words.HeaderFooterType.HEADER_ODD]
 footer_even = section.headers_footers[aspose.words.HeaderFooterType.FOOTER_ODD]
 ```
 
-3. Pas indien nodig aan: pas elke kop- en voettekst aan volgens uw vereisten.
+3. Aanpassen naar behoefte: pas elke kop- en voettekst aan volgens uw wensen.
 
 ## Kop- en voetteksten verwijderen
 
 Kop- en voetteksten uit een Word-document verwijderen:
 
-1. Kop- en voetteksten verwijderen: Wis de inhoud van kop- en voetteksten.
+1. Kopteksten en voetteksten verwijderen: Wis de inhoud van kopteksten en voetteksten.
 
 ```python
 header.clear_content()
 footer.clear_content()
 ```
 
-2. Verschillende kop- en voetteksten uitschakelen: Schakel indien nodig verschillende kop- en voetteksten uit voor oneven en even pagina's.
+2. Verschillende kop- en voetteksten uitschakelen: Schakel indien nodig verschillende kop- en voetteksten uit voor even en oneven pagina's.
 
 ```python
 section.page_setup.different_first_page_header_footer = False
@@ -132,21 +132,21 @@ section.page_setup.odd_and_even_pages_header_footer = False
 
 ## Veelgestelde vragen
 
-### Hoe krijg ik toegang tot kop- en voettekstinhoud?
+### Hoe krijg ik toegang tot de inhoud van de kop- en voettekst?
 
- Om toegang te krijgen tot kop- en voettekstinhoud, gebruikt u de`headers_footers` eigenschap van de sectie van het document.
+ Om toegang te krijgen tot de inhoud van de kop- en voettekst, gebruikt u de`headers_footers` Eigenschap van de sectie van het document.
 
 ### Kan ik afbeeldingen toevoegen aan kop- en voetteksten?
 
  Ja, u kunt afbeeldingen toevoegen aan kop- en voetteksten met behulp van de`add_picture` methode.
 
-### Is het mogelijk om verschillende headers te hebben voor oneven en even pagina's?
+### Is het mogelijk om verschillende headers te gebruiken voor even en oneven pagina's?
 
-Absoluut, u kunt verschillende kop- en voetteksten maken voor oneven en even pagina's door de juiste instellingen in te schakelen.
+Jazeker, u kunt verschillende kop- en voetteksten maken voor even en oneven pagina's door de juiste instellingen in te schakelen.
 
 ### Kan ik kop- en voetteksten van specifieke pagina's verwijderen?
 
-Ja, u kunt de inhoud van kop- en voetteksten wissen om deze effectief te verwijderen.
+Ja, u kunt de inhoud van kop- en voetteksten wissen om ze effectief te verwijderen.
 
 ### Waar kan ik meer leren over Aspose.Words voor Python?
 

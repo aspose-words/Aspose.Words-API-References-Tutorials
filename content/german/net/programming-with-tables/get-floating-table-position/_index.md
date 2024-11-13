@@ -1,6 +1,6 @@
 ---
-title: Schwebende Tabellenposition abrufen
-linktitle: Schwebende Tabellenposition abrufen
+title: Position der schwebenden Tabelle abrufen
+linktitle: Position der schwebenden Tabelle abrufen
 second_title: Aspose.Words Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie mit Aspose.Words für .NET schwebende Tabellenpositionen in Word-Dokumenten erhalten. Diese detaillierte Schritt-für-Schritt-Anleitung führt Sie durch alles, was Sie wissen müssen.
 type: docs
@@ -16,7 +16,7 @@ Sind Sie bereit, in die Welt von Aspose.Words für .NET einzutauchen? Heute nehm
 Bevor wir uns auf den spaßigen Teil stürzen, müssen Sie ein paar Dinge vorbereitet haben:
 
 1.  Aspose.Words für .NET: Wenn Sie es noch nicht getan haben, laden Sie Aspose.Words für .NET herunter und installieren Sie es von der[Aspose-Veröffentlichungsseite](https://releases.aspose.com/words/net/).
-2. Entwicklungsumgebung: Stellen Sie sicher, dass Sie eine .NET-Entwicklungsumgebung eingerichtet haben. Visual Studio ist eine gute Option.
+2. Entwicklungsumgebung: Stellen Sie sicher, dass Sie eine .NET-Entwicklungsumgebung eingerichtet haben. Visual Studio ist eine großartige Option.
 3. Beispieldokument: Sie benötigen ein Word-Dokument mit einer schwebenden Tabelle. Sie können eins erstellen oder ein vorhandenes Dokument verwenden. 
 
 ## Namespaces importieren
@@ -41,7 +41,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Table wrapped by text.docx");
 ```
 
- In diesem Schritt teilen Sie Aspose.Words im Wesentlichen mit, wo Ihr Dokument zu finden ist. Achten Sie darauf,`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zu Ihrem Dokument.
+ In diesem Schritt teilen Sie Aspose.Words im Wesentlichen mit, wo Ihr Dokument zu finden ist. Ersetzen Sie unbedingt`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zu Ihrem Dokument.
 
 ## Schritt 2: Zugriff auf die Tabellen im Dokument
 

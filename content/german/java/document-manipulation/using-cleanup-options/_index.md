@@ -150,7 +150,7 @@ Bereinigungsoptionen in Aspose.Words für Java sind Einstellungen, mit denen Sie
 
 ###  Was ist der Zweck der`REMOVE_UNUSED_REGIONS` cleanup option?
 
- Der`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` Mit dieser Option können Sie während des Seriendrucks Bereiche in einem Dokument entfernen, die keine entsprechenden Daten enthalten. Sie hilft Ihnen, Ihr Dokument übersichtlich zu halten, indem Sie nicht verwendete Platzhalter entfernen.
+Der`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` Mit dieser Option können Sie während des Seriendrucks Bereiche in einem Dokument entfernen, die keine entsprechenden Daten enthalten. Sie hilft Ihnen, Ihr Dokument übersichtlich zu halten, indem Sie nicht verwendete Platzhalter entfernen.
 
 ### Kann ich mit Aspose.Words für Java leere Tabellenzeilen aus einem Dokument entfernen?
 
@@ -166,11 +166,11 @@ Bereinigungsoptionen in Aspose.Words für Java sind Einstellungen, mit denen Sie
 
 ###  Was ist der Unterschied zwischen`REMOVE_EMPTY_FIELDS` and `REMOVE_UNUSED_FIELDS` cleanup options?
 
- Der`REMOVE_EMPTY_FIELDS` entfernt Seriendruckfelder, die keine Daten enthalten oder leer sind, während des Seriendruckprozesses. Andererseits wird mit der`REMOVE_UNUSED_FIELDS`Mit dieser Option werden Seriendruckfelder entfernt, die während des Zusammenführens nicht mit Daten gefüllt werden. Die Auswahl zwischen diesen Feldern hängt davon ab, ob Sie Felder ohne Inhalt oder solche entfernen möchten, die bei dem jeweiligen Zusammenführungsvorgang nicht verwendet werden.
+Der`REMOVE_EMPTY_FIELDS` entfernt Seriendruckfelder, die keine Daten enthalten oder leer sind, während des Seriendruckprozesses. Andererseits wird mit der`REMOVE_UNUSED_FIELDS`Mit dieser Option werden Seriendruckfelder entfernt, die während des Zusammenführens nicht mit Daten gefüllt werden. Die Auswahl zwischen diesen Feldern hängt davon ab, ob Sie Felder ohne Inhalt oder solche entfernen möchten, die bei dem jeweiligen Zusammenführungsvorgang nicht verwendet werden.
 
 ### Wie kann ich das Entfernen von Absätzen mit Satzzeichen aktivieren?
 
- Um das Entfernen von Absätzen mit Satzzeichen zu ermöglichen, können Sie die`cleanupParagraphsWithPunctuationMarks` auf „true“ und geben Sie die Satzzeichen an, die bei der Bereinigung berücksichtigt werden sollen. Auf diese Weise können Sie ein verfeinertes Dokument erstellen, indem Sie unnötige Absätze entfernen, die nur aus Satzzeichen bestehen.
+ Um das Entfernen von Absätzen mit Satzzeichen zu ermöglichen, können Sie die`cleanupParagraphsWithPunctuationMarks` auf true und geben Sie die Satzzeichen an, die bei der Bereinigung berücksichtigt werden sollen. Auf diese Weise können Sie ein verfeinertes Dokument erstellen, indem Sie unnötige Absätze entfernen, die nur aus Satzzeichen bestehen.
 
 ### Kann ich die Bereinigungsoptionen in Aspose.Words für Java anpassen?
 

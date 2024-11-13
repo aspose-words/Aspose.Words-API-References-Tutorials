@@ -53,10 +53,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
  हमें अंतिम मुद्रित प्रॉपर्टी को अपडेट करने के लिए पीडीएफ सेव विकल्पों को कॉन्फ़िगर करने की आवश्यकता है।`PdfSaveOptions` और सेट करें`UpdateLastPrintedProperty`संपत्ति को`true`.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions 
-{ 
-	UpdateLastPrintedProperty = true 
-};
+PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
 ## चरण 5: दस्तावेज़ को PDF के रूप में सहेजें

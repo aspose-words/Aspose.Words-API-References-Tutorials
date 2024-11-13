@@ -15,7 +15,7 @@ Haben Sie sich schon einmal gefragt, wie Sie Ihre PDF-Dokumente mit einer digita
 
 Bevor wir beginnen, benötigen Sie einige Dinge:
 
-1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie Aspose.Words für .NET installiert haben. Sie können es herunterladen von der[Aspose-Website](https://releases.aspose.com/words/net/).
+1.  Aspose.Words für .NET: Stellen Sie sicher, dass Sie Aspose.Words für .NET installiert haben. Sie können es von der[Aspose-Website](https://releases.aspose.com/words/net/).
 2. Eine Zertifikatsdatei: Sie benötigen eine PFX-Zertifikatsdatei, um das PDF zu signieren. Wenn Sie keine haben, können Sie zu Testzwecken ein selbstsigniertes Zertifikat erstellen.
 3. Visual Studio: Dieses Tutorial setzt voraus, dass Sie Visual Studio als Entwicklungsumgebung verwenden.
 4. Grundkenntnisse in C#: Vertrautheit mit der C#- und .NET-Programmierung ist unbedingt erforderlich.
@@ -38,7 +38,7 @@ Erstellen Sie in Visual Studio ein neues C#-Projekt. Fügen Sie einen Verweis au
 
 ## Schritt 2: Laden oder Erstellen eines Dokuments
 
-Sie benötigen ein Dokument zum Unterschreiben. Sie können entweder ein vorhandenes Dokument laden oder ein neues erstellen. Für dieses Tutorial erstellen wir ein neues Dokument und fügen Beispieltext hinzu.
+Sie benötigen ein Dokument zum Unterzeichnen. Sie können entweder ein vorhandenes Dokument laden oder ein neues erstellen. Für dieses Tutorial erstellen wir ein neues Dokument und fügen Beispieltext hinzu.
 
 ```csharp
 // Der Pfad zum Dokumentverzeichnis.

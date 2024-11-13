@@ -2,7 +2,7 @@
 title: Verwenden von Lesezeichen in Aspose.Words für Java
 linktitle: Lesezeichen verwenden
 second_title: Aspose.Words Java-API zur Dokumentverarbeitung
-description: Optimieren Sie Ihre Dokumentverarbeitung mit Aspose.Words für Java. In dieser Schritt-für-Schritt-Anleitung erfahren Sie, wie Sie Lesezeichen für eine effiziente Inhaltsnavigation und -bearbeitung verwenden.
+description: Optimieren Sie Ihre Dokumentverarbeitung mit Aspose.Words für Java. Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie Lesezeichen für eine effiziente Inhaltsnavigation und -bearbeitung verwenden.
 type: docs
 weight: 17
 url: /de/java/document-manipulation/using-bookmarks/
@@ -109,7 +109,7 @@ Sie können eine Zeile anhand ihres Lesezeichens löschen, indem Sie zuerst die 
 
 ### Was sind einige gängige Anwendungsfälle für Lesezeichen?
 
-Lesezeichen werden häufig zum Erstellen von Inhaltsverzeichnissen, zum Extrahieren bestimmter Inhalte und zum Automatisieren von Dokumenterstellungsprozessen verwendet.
+Lesezeichen werden häufig zum Erstellen von Inhaltsverzeichnissen, Extrahieren bestimmter Inhalte und Automatisieren von Dokumenterstellungsprozessen verwendet.
 
 ### Wo finde ich weitere Informationen zu Aspose.Words für Java?
 

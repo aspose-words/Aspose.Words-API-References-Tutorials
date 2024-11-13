@@ -112,4 +112,4 @@ Absolutně! Můžete vytvořit skript pro automatizaci tohoto procesu pro více 
 
 ### Kde mohu získat pomoc, pokud narazím na problémy?
 
- The[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8) je skvělým místem pro získání pomoci a řešení běžných problémů.
+The[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8) je skvělým místem pro získání pomoci a řešení běžných problémů.

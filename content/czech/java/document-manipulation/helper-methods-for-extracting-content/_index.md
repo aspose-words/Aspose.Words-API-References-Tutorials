@@ -57,7 +57,7 @@ public static ArrayList<Node> extractContentBetweenNodes(Node startNode, Node en
     Node originalStartNode = startNode;
     Node originalEndNode = endNode;
 
-    //Extrahujte obsah na základě uzlů na úrovni bloku (odstavců a tabulek). Procházejte nadřazené uzly, abyste je našli.
+    //Extrahujte obsah na základě uzlů na úrovni bloku (odstavců a tabulek). Procházejte nadřazené uzly a najděte je.
     // Rozdělíme obsah prvního a posledního uzlu v závislosti na tom, zda jsou uzly značek v řadě.
     startNode = getAncestorInBody(startNode);
     endNode = getAncestorInBody(endNode);

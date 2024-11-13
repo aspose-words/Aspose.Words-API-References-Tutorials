@@ -1,25 +1,25 @@
 ---
-title: Stel lettertype-fallback-instellingen in
-linktitle: Stel lettertype-fallback-instellingen in
-second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u Font Fallback-instellingen in Aspose.Words voor .NET instelt. Deze uitgebreide handleiding zorgt ervoor dat alle tekens in uw documenten correct worden weergegeven.
+title: Stel de instellingen voor het terugvallen van lettertypen in
+linktitle: Stel de instellingen voor het terugvallen van lettertypen in
+second_title: Aspose.Words API voor documentverwerking
+description: Leer hoe u de lettertype-fallbackinstellingen in Aspose.Words voor .NET instelt. Deze uitgebreide handleiding zorgt ervoor dat alle tekens in uw documenten correct worden weergegeven.
 type: docs
 weight: 10
 url: /nl/net/working-with-fonts/set-font-fallback-settings/
 ---
 ## Invoering
 
-Wanneer u werkt met documenten die diverse tekstelementen bevatten, zoals verschillende talen of speciale tekens, is het van cruciaal belang ervoor te zorgen dat deze elementen correct worden weergegeven. Aspose.Words voor .NET biedt een krachtige functie genaamd Font Fallback Settings, die helpt bij het definiëren van regels voor het vervangen van lettertypen wanneer het originele lettertype bepaalde tekens niet ondersteunt. In deze handleiding onderzoeken we in een stapsgewijze zelfstudie hoe u Font Fallback-instellingen kunt instellen met Aspose.Words voor .NET.
+Bij het werken met documenten die verschillende tekstelementen bevatten, zoals verschillende talen of speciale tekens, is het cruciaal om ervoor te zorgen dat deze elementen correct worden weergegeven. Aspose.Words voor .NET biedt een krachtige functie genaamd Font Fallback Settings, die helpt bij het definiëren van regels voor het vervangen van lettertypen wanneer het oorspronkelijke lettertype bepaalde tekens niet ondersteunt. In deze handleiding onderzoeken we hoe u Font Fallback Settings instelt met Aspose.Words voor .NET in een stapsgewijze zelfstudie.
 
 ## Vereisten
 
-Voordat u in de zelfstudie duikt, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
+Voordat u met de tutorial begint, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
 
-- Basiskennis van C#: Bekendheid met de programmeertaal C# en het .NET-framework.
--  Aspose.Words voor .NET: downloaden en installeren vanaf de[downloadlink](https://releases.aspose.com/words/net/).
-- Ontwikkelomgeving: Een opstelling zoals Visual Studio om uw code te schrijven en uit te voeren.
--  Voorbeelddocument: zorg dat u een voorbeelddocument hebt (bijv.`Rendering.docx`) klaar om te testen.
-- XML voor lettertype-fallback-regels: bereid een XML-bestand voor waarin de fallback-regels voor lettertypen worden gedefinieerd.
+- Basiskennis van C#: Kennis van de programmeertaal C# en het .NET Framework.
+-  Aspose.Words voor .NET: Downloaden en installeren vanaf de[downloadlink](https://releases.aspose.com/words/net/).
+- Ontwikkelomgeving: Een omgeving zoals Visual Studio om uw code te schrijven en uit te voeren.
+-  Voorbeeld document: Heb een voorbeeld document (bijv.`Rendering.docx`) klaar om te testen.
+- XML-regels voor lettertype-fallback: maak een XML-bestand waarin de lettertype-fallbackregels worden gedefinieerd.
 
 ## Naamruimten importeren
 
@@ -31,9 +31,9 @@ using Aspose.Words.Fonts;
 using System;
 ```
 
-## Stap 1: Definieer de documentmap
+## Stap 1: Definieer de documentdirectory
 
-Definieer eerst de map waarin uw document is opgeslagen. Dit is essentieel voor het lokaliseren en verwerken van uw document.
+Definieer eerst de directory waar uw document is opgeslagen. Dit is essentieel voor het vinden en verwerken van uw document.
 
 ```csharp
 // Het pad naar de documentenmap
@@ -42,7 +42,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Stap 2: Laad het document
 
- Laad uw document in een Aspose.Words`Document` voorwerp. Met deze stap kunt u programmatisch met het document werken.
+ Laad uw document in een Aspose.Words`Document` object. Met deze stap kunt u programmatisch met het document werken.
 
 ```csharp
 Document doc = new Document(dataDir + "Rendering.docx");
@@ -50,32 +50,32 @@ Document doc = new Document(dataDir + "Rendering.docx");
 
 ## Stap 3: Configureer lettertype-instellingen
 
- Maak een nieuwe`FontSettings` object en laad de fallback-instellingen voor lettertypen vanuit een XML-bestand. Dit XML-bestand bevat de regels voor het terugvallen van lettertypen.
+Maak een nieuwe`FontSettings` object en laad de font fallback-instellingen van een XML-bestand. Dit XML-bestand bevat de regels voor font fallback.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
 fontSettings.FallbackSettings.Load(dataDir + "Font fallback rules.xml");
 ```
 
-## Stap 4: Pas lettertype-instellingen toe op het document
+## Stap 4: Lettertype-instellingen toepassen op het document
 
- Wijs de geconfigureerde toe`FontSettings`naar het document. Dit zorgt ervoor dat de fallback-regels voor lettertypen worden toegepast bij het renderen van het document.
+ Wijs de geconfigureerde toe`FontSettings`aan het document. Dit zorgt ervoor dat de regels voor lettertype-fallback worden toegepast bij het renderen van het document.
 
 ```csharp
 doc.FontSettings = fontSettings;
 ```
 
-## Stap 5: Bewaar het document
+## Stap 5: Sla het document op
 
-Sla ten slotte het document op. De fallback-instellingen voor het lettertype worden tijdens de opslagbewerking gebruikt om een juiste lettertypevervanging te garanderen.
+Sla ten slotte het document op. De font fallback-instellingen worden gebruikt tijdens de opslagbewerking om correcte fontvervanging te garanderen.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFonts.SetFontFallbackSettings.pdf");
 ```
 
-## XML-bestand: Fallback-regels voor lettertypen
+## XML-bestand: regels voor lettertype-fallback
 
-Hier is een voorbeeld van hoe uw XML-bestand waarin de fallback-regels voor lettertypen worden gedefinieerd, eruit zou moeten zien:
+Hier ziet u een voorbeeld van hoe uw XML-bestand met de fallback-regels voor lettertypen eruit moet zien:
 
 ```xml
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
@@ -93,26 +93,26 @@ Hier is een voorbeeld van hoe uw XML-bestand waarin de fallback-regels voor lett
 
 ## Conclusie
 
-Door deze stappen te volgen, kunt u Font Fallback-instellingen effectief instellen en gebruiken in Aspose.Words voor .NET. Dit zorgt ervoor dat uw documenten alle tekens correct weergeven, zelfs als het originele lettertype bepaalde tekens niet ondersteunt. Het implementeren van deze instellingen zal de kwaliteit en leesbaarheid van uw documenten aanzienlijk verbeteren.
+Door deze stappen te volgen, kunt u effectief Font Fallback Settings instellen en gebruiken in Aspose.Words voor .NET. Dit zorgt ervoor dat uw documenten alle tekens correct weergeven, zelfs als het originele lettertype bepaalde tekens niet ondersteunt. Het implementeren van deze instellingen zal de kwaliteit en leesbaarheid van uw documenten aanzienlijk verbeteren.
 
 ## Veelgestelde vragen
 
-### Vraag 1: Wat is lettertype-fallback?
+### V1: Wat is Font Fallback?
 
-Font Fallback is een functie waarmee lettertypen kunnen worden vervangen wanneer het originele lettertype bepaalde tekens niet ondersteunt, waardoor een juiste weergave van alle tekstelementen wordt gegarandeerd.
+Met Font Fallback kunt u lettertypen vervangen als het oorspronkelijke lettertype bepaalde tekens niet ondersteunt. Zo wordt gezorgd voor een correcte weergave van alle tekstelementen.
 
-### V2: Kan ik meerdere reservelettertypen opgeven?
+### V2: Kan ik meerdere fallback-lettertypen opgeven?
 
-Ja, u kunt meerdere reservelettertypen opgeven in de XML-regels. Aspose.Words controleert elk lettertype in de aangegeven volgorde totdat er een wordt gevonden die het teken ondersteunt.
+Ja, u kunt meerdere fallback-lettertypen opgeven in de XML-regels. Aspose.Words controleert elk lettertype in de opgegeven volgorde totdat er een wordt gevonden die het teken ondersteunt.
 
 ### V3: Waar kan ik Aspose.Words voor .NET downloaden?
 
- Je kunt het downloaden van de[Aspose-downloadpagina](https://releases.aspose.com/words/net/).
+ Je kunt het downloaden van de[Aspose downloadpagina](https://releases.aspose.com/words/net/).
 
 ### V4: Hoe maak ik het XML-bestand voor de fallback-regels voor lettertypen?
 
-Het XML-bestand kan met elke teksteditor worden gemaakt. Het moet de structuur volgen die wordt weergegeven in het voorbeeld in deze zelfstudie.
+Het XML-bestand kan worden gemaakt met elke teksteditor. Het moet de structuur volgen die wordt getoond in het voorbeeld in deze tutorial.
 
 ### V5: Is er ondersteuning beschikbaar voor Aspose.Words?
 
- Ja, u kunt ondersteuning vinden op de[Aspose.Words-ondersteuningsforum](https://forum.aspose.com/c/words/8).
+ Ja, u kunt ondersteuning vinden op de[Aspose.Words ondersteuningsforum](https://forum.aspose.com/c/words/8).

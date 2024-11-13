@@ -48,7 +48,7 @@ doc.getFirstSection().getBody().getFirstParagraph().appendChild(shape);
 
 ## Einfügen von Bildern
 
-Bilder können Ihre Dokumente erheblich aufwerten. Mit Aspose.Words für Java können Sie ganz einfach Bilder einfügen:
+Bilder können Ihre Dokumente deutlich aufwerten. Mit Aspose.Words für Java können Sie ganz einfach Bilder einfügen:
 
 ```java
 // Laden einer Bilddatei
@@ -139,7 +139,7 @@ Durch die Verbesserung Ihrer Dokumente mit Formen und Grafiken können Sie deren
 
 ### Wie kann ich die Größe einer Form in meinem Dokument ändern?
 
- Um die Größe einer Form zu ändern, verwenden Sie das`setWidth`Und`setHeight` Methoden für das Formobjekt. So erstellen Sie beispielsweise eine Form mit einer Breite von 150 Pixeln und einer Höhe von 75 Pixeln:
+ Um die Größe einer Form zu ändern, verwenden Sie das`setWidth` Und`setHeight` Methoden für das Formobjekt. So erstellen Sie beispielsweise eine Form mit einer Breite von 150 Pixeln und einer Höhe von 75 Pixeln:
 
 ```java
 shape.setWidth(150);

@@ -84,7 +84,7 @@ DigitalSignatureUtil.Sign(
 
 ## Abschluss
 
-Und da haben Sie es! Sie haben erfolgreich eine vorhandene Signaturzeile in einem Word-Dokument mit Aspose.Words für .NET signiert. Nicht allzu schwierig, oder? Mit diesen Schritten können Sie Dokumente jetzt digital signieren und so eine zusätzliche Ebene an Authentizität und Professionalität hinzufügen. Wenn Ihnen also das nächste Mal jemand ein Dokument zum Unterschreiben schickt, wissen Sie genau, was zu tun ist!
+Und da haben Sie es! Sie haben erfolgreich eine vorhandene Signaturzeile in einem Word-Dokument mit Aspose.Words für .NET signiert. Nicht allzu schwierig, oder? Mit diesen Schritten können Sie Dokumente jetzt digital signieren und so eine zusätzliche Ebene an Authentizität und Professionalität hinzufügen. Wenn Ihnen also das nächste Mal jemand ein Dokument zum Signieren schickt, wissen Sie genau, was zu tun ist!
 
 ## Häufig gestellte Fragen
 

@@ -17,7 +17,7 @@ url: /zh/net/working-with-node/enumerate-child-nodes/
 
 1. 开发环境：确保您已安装 Visual Studio 或其他与 .NET 兼容的 IDE。
 2.  Aspose.Words for .NET：从以下位置下载 Aspose.Words for .NET 库[发布页面](https://releases.aspose.com/words/net/).
-3. 许可证：从获取免费试用版或临时许可证[这里](https://purchase.aspose.com/temporary-license/).
+3. 许可证：从以下网站获取免费试用版或临时许可证[这里](https://purchase.aspose.com/temporary-license/).
 
 ## 导入命名空间
 
@@ -99,7 +99,7 @@ foreach (Node child in children)
 是的，您可以通过检查其来操作各种节点类型，如形状、注释等。`NodeType`.
 
 ### 我需要许可证才能使用 Aspose.Words for .NET 吗？
-您可以从免费试用开始，或从以下位置获取临时许可证[这里](https://purchase.aspose.com/temporary-license/).
+您可以从免费试用开始，也可以从以下位置获取临时许可证[这里](https://purchase.aspose.com/temporary-license/).
 
 ### 在哪里可以找到更多示例和文档？
 访问[Aspose.Words for .NET API 文档](https://reference.aspose.com/words/net/)了解更多示例和详细文档。

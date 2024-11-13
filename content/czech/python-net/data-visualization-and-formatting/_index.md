@@ -16,7 +16,7 @@ Vítejte v oblasti výukových programů Aspose.Words se zaměřením na vizuali
 
 dnešním světě založeném na datech je schopnost vizualizace a formátování dat prvořadá. Efektivní vizualizace dat transformuje složité datové sady na srozumitelné náhledy, což zúčastněným stranám usnadňuje uchopení a interpretaci informací. Stejně tak formátování dokumentů důsledně zajišťuje profesionalitu a čitelnost. Ať už vytváříte obchodní zprávy, akademické práce nebo jakýkoli jiný typ dokumentu, zvládnutí vizualizace dat a formátování pomocí Aspose.Words výrazně pozvedne vaše projekty.
 
-## Co vás čeká
+## Co Vás čeká
 
 V této sérii výukových programů vás provedeme různými aspekty vizualizace a formátování dat v Aspose.Words. Budete se ponořit do témat, jako jsou:
 

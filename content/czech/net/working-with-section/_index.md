@@ -21,7 +21,7 @@ Podle těchto výukových programů budete moci snadno spravovat sekce v dokumen
 | [Přidat sekci](./add-section/) | Naučte se přidávat oddíly do dokumentů aplikace Word pomocí Aspose.Words for .NET. Tato příručka pokrývá vše od vytvoření dokumentu po přidávání a správu oddílů. |
 | [Smazat sekci](./delete-section/) | Manipulace s hlavním dokumentem pomocí Aspose.Words pro .NET. V několika jednoduchých krocích se dozvíte, jak odstranit sekce z dokumentů aplikace Word. |
 | [Smazat všechny sekce](./delete-all-sections/) | Naučte se, jak odstranit všechny oddíly v dokumentu aplikace Word pomocí Aspose.Words for .NET, pomocí tohoto snadno srozumitelného průvodce krok za krokem. |
-| [Připojit část Slovní obsah](./append-section-content/) | V tomto kurzu se dozvíte, jak přidat obsah slov do konkrétních částí dokumentu aplikace Word pomocí Aspose.Words for .NET.  |
+| [Připojit část Obsah slova](./append-section-content/) | V tomto kurzu se dozvíte, jak přidat obsah slov do konkrétních částí dokumentu aplikace Word pomocí Aspose.Words for .NET.  |
 | [Sekce klonů](./clone-section/) | Naučte se klonovat sekce v dokumentech aplikace Word pomocí Aspose.Words for .NET. Tato příručka obsahuje podrobné pokyny pro efektivní manipulaci s dokumenty. |
 | [Kopírovat sekci](./copy-section/) | Naučte se kopírovat sekce mezi dokumenty aplikace Word pomocí Aspose.Words for .NET. Tato příručka obsahuje podrobné pokyny pro efektivní správu dokumentů. |
 | [Smazat obsah záhlaví a zápatí](./delete-header-footer-content/) | Přečtěte si, jak odstranit záhlaví a zápatí v dokumentech aplikace Word pomocí Aspose.Words for .NET. Tento průvodce krok za krokem zajišťuje efektivní správu dokumentů.  |

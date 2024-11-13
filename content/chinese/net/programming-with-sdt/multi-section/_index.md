@@ -23,7 +23,7 @@ url: /zh/net/programming-with-sdt/multi-section/
 
 4. 带有结构化文档标签的文档：在本教程中，您需要一个包含结构化文档标签的 Word 文档。您可以使用示例文档或使用 SDT 创建文档进行测试。
 
-5.  Aspose.Words 文档：保留[Aspose.Words 文档](https://reference.aspose.com/words/net/)方便提供额外的参考和详细信息。
+5.  Aspose.Words 文档：保留[Aspose.Words 文档](https://reference.aspose.com/words/net/)方便获得更多参考和详细信息。
 
 ## 导入命名空间
 
@@ -90,7 +90,7 @@ foreach (StructuredDocumentTagRangeStart tag in tags)
 结构化文档标签 (SDT) 是 Word 文档中的占位符，可以包含各种类型的内容，包括文本、图像和表单字段。
 
 ### 如何使用 SDT 创建 Word 文档？
-您可以使用 Microsoft Word 通过从开发人员选项卡插入内容控件来创建 SDT。保存文档并将其与 Aspose.Words for .NET 一起使用。
+您可以使用 Microsoft Word 通过从“开发人员”选项卡插入内容控件来创建 SDT。保存文档并将其与 Aspose.Words for .NET 一起使用。
 
 ### 我可以使用 Aspose.Words 修改 SDT 的内容吗？
 是的，您可以通过 Aspose.Words API 访问和更新 SDT 的属性来修改 SDT 的内容。

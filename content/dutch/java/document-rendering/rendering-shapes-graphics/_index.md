@@ -1,8 +1,8 @@
 ---
 title: Vormen en afbeeldingen in documenten weergeven
 linktitle: Vormen en afbeeldingen in documenten weergeven
-second_title: Aspose.Words Java-documentverwerkings-API
-description: Leer hoe u uw documenten kunt verfraaien met vormen en afbeeldingen met Aspose.Words voor Java. Creëer moeiteloos visueel verbluffende inhoud.
+second_title: Aspose.Words Java Documentverwerkings-API
+description: Leer hoe u uw documenten kunt verbeteren met vormen en afbeeldingen met Aspose.Words voor Java. Maak moeiteloos visueel verbluffende content.
 type: docs
 weight: 12
 url: /nl/java/document-rendering/rendering-shapes-graphics/
@@ -10,11 +10,11 @@ url: /nl/java/document-rendering/rendering-shapes-graphics/
 
 ## Invoering
 
-In dit digitale tijdperk moeten documenten vaak meer zijn dan alleen platte tekst. Door vormen en afbeeldingen toe te voegen, kunt u informatie effectiever overbrengen en uw documenten visueel aantrekkelijk maken. Aspose.Words voor Java is een krachtige Java-API waarmee u Word-documenten kunt manipuleren, inclusief het toevoegen en aanpassen van vormen en afbeeldingen.
+In dit digitale tijdperk moeten documenten vaak meer zijn dan alleen platte tekst. Door vormen en afbeeldingen toe te voegen, kunt u informatie effectiever overbrengen en uw documenten visueel aantrekkelijker maken. Aspose.Words voor Java is een krachtige Java API waarmee u Word-documenten kunt bewerken, inclusief het toevoegen en aanpassen van vormen en afbeeldingen.
 
 ## Aan de slag met Aspose.Words voor Java
 
-Voordat we dieper ingaan op het toevoegen van vormen en afbeeldingen, gaan we aan de slag met Aspose.Words voor Java. U moet uw ontwikkelomgeving instellen en de Aspose.Words-bibliotheek toevoegen. Hier zijn de stappen om te beginnen:
+Voordat we in het toevoegen van vormen en afbeeldingen duiken, beginnen we met Aspose.Words voor Java. U moet uw ontwikkelomgeving instellen en de Aspose.Words-bibliotheek opnemen. Dit zijn de stappen om te beginnen:
 
 ```java
 // Voeg Aspose.Words toe aan uw Maven-project
@@ -28,12 +28,12 @@ Voordat we dieper ingaan op het toevoegen van vormen en afbeeldingen, gaan we aa
 Document doc = new Document();
 ```
 
-## Vormen aan documenten toevoegen
+## Vormen toevoegen aan documenten
 
 Vormen kunnen variëren van eenvoudige rechthoeken tot complexe diagrammen. Aspose.Words voor Java biedt een verscheidenheid aan vormtypen, waaronder lijnen, rechthoeken en cirkels. Gebruik de volgende code om een vorm aan uw document toe te voegen:
 
 ```java
-// Creëer een nieuwe vorm
+// Een nieuwe vorm maken
 Shape shape = new Shape(doc, ShapeType.RECTANGLE);
 
 // Pas de vorm aan
@@ -51,7 +51,7 @@ doc.getFirstSection().getBody().getFirstParagraph().appendChild(shape);
 Afbeeldingen kunnen uw documenten aanzienlijk verbeteren. Met Aspose.Words voor Java kunt u eenvoudig afbeeldingen invoegen:
 
 ```java
-// Laad een afbeeldingsbestand
+// Een afbeeldingsbestand laden
 byte[] imageBytes = Files.readAllBytes(Paths.get("path/to/your/image.png"));
 Shape imageShape = new Shape(doc, ShapeType.IMAGE);
 imageShape.getImageData().setImage(imageBytes);
@@ -60,7 +60,7 @@ doc.getFirstSection().getBody().getFirstParagraph().appendChild(imageShape);
 
 ## Vormen aanpassen
 
-U kunt vormen verder aanpassen door de kleuren, randen en andere eigenschappen ervan te wijzigen. Hier is een voorbeeld van hoe u dit moet doen:
+U kunt vormen verder aanpassen door hun kleuren, randen en andere eigenschappen te wijzigen. Hier is een voorbeeld van hoe u dat doet:
 
 ```java
 shape.setStrokeColor(Color.BLUE);
@@ -69,9 +69,9 @@ shape.getStroke().setWeight(2.0);
 shape.setShadowEnabled(true);
 ```
 
-## Positionering en maatvoering
+## Positionering en grootte
 
-Nauwkeurige positionering en grootte van vormen zijn cruciaal voor de lay-out van het document. Aspose.Words voor Java biedt methoden om deze eigenschappen in te stellen:
+Precieze positionering en grootte van vormen zijn cruciaal voor de lay-out van het document. Aspose.Words voor Java biedt methoden om deze eigenschappen in te stellen:
 
 ```java
 shape.setLeft(100);
@@ -80,9 +80,9 @@ shape.setWidth(150);
 shape.setHeight(75);
 ```
 
-## Werken met tekst in vormen
+## Werken met tekst binnen vormen
 
-Vormen kunnen ook tekst bevatten. U kunt tekst in vormen toevoegen en opmaken met Aspose.Words voor Java:
+Vormen kunnen ook tekst bevatten. U kunt tekst toevoegen en opmaken in vormen met Aspose.Words voor Java:
 
 ```java
 shape.getTextPath().setText("This is some text within the shape");
@@ -92,7 +92,7 @@ shape.getTextPath().setFontSize(12);
 
 ## Vormen groeperen
 
-Als u complexere diagrammen of arrangementen wilt maken, kunt u vormen groeperen:
+Om complexere diagrammen of opstellingen te maken, kunt u vormen groeperen:
 
 ```java
 ShapeCollection group = new ShapeCollection(doc);
@@ -103,43 +103,43 @@ doc.getFirstSection().getBody().getFirstParagraph().appendChild(group);
 
 ## Z-volgorde van vormen
 
-U kunt de volgorde bepalen waarin vormen worden weergegeven met behulp van de Z-volgorde:
+Met de Z-volgorde kunt u de volgorde bepalen waarin vormen worden weergegeven:
 
 ```java
 shape1.setZOrder(1); // Naar voren brengen
-shape2.setZOrder(0); // Stuur naar terug
+shape2.setZOrder(0); // Terugsturen
 ```
 
 ## Het document opslaan
 
-Nadat u uw vormen en afbeeldingen heeft toegevoegd en aangepast, slaat u het document op:
+Nadat u de vormen en afbeeldingen hebt toegevoegd en aangepast, slaat u het document op:
 
 ```java
 doc.save("output.docx");
 ```
 
-## Veelvoorkomende gebruiksscenario's
+## Veelvoorkomende gebruiksgevallen
 
 Aspose.Words voor Java is veelzijdig en kan in verschillende scenario's worden gebruikt:
 
 - Rapporten genereren met grafieken en diagrammen.
-- Het maken van brochures met opvallende afbeeldingen.
-- Het ontwerpen van certificaten en onderscheidingen.
-- Annotaties en toelichtingen toevoegen aan documenten.
+- Brochures maken met opvallende afbeeldingen.
+- Ontwerpen van certificaten en onderscheidingen.
+- Aantekeningen en toelichtingen toevoegen aan documenten.
 
-## Tips voor het oplossen van problemen
+## Tips voor probleemoplossing
 
-Als u problemen ondervindt bij het werken met vormen en afbeeldingen, raadpleeg dan de Aspose.Words voor Java-documentatie of communityforums voor oplossingen. Veelvoorkomende problemen zijn onder meer de compatibiliteit van afbeeldingsformaten en problemen met lettertypen.
+Als u problemen ondervindt bij het werken met vormen en afbeeldingen, raadpleeg dan de Aspose.Words for Java-documentatie of communityforums voor oplossingen. Veelvoorkomende problemen zijn onder andere compatibiliteit van afbeeldingsindelingen en lettertypegerelateerde problemen.
 
 ## Conclusie
 
-Het verbeteren van uw documenten met vormen en afbeeldingen kan de visuele aantrekkingskracht en effectiviteit bij het overbrengen van informatie aanzienlijk verbeteren. Aspose.Words voor Java biedt een robuuste set tools om deze taak naadloos uit te voeren. Begin vandaag nog met het maken van visueel verbluffende documenten!
+Het verbeteren van uw documenten met vormen en afbeeldingen kan hun visuele aantrekkingskracht en effectiviteit bij het overbrengen van informatie aanzienlijk verbeteren. Aspose.Words voor Java biedt een robuuste set tools om deze taak naadloos uit te voeren. Begin vandaag nog met het maken van visueel verbluffende documenten!
 
 ## Veelgestelde vragen
 
-### Hoe kan ik het formaat van een vorm in mijn document wijzigen?
+### Hoe kan ik de grootte van een vorm in mijn document wijzigen?
 
- Om het formaat van een vorm te wijzigen, gebruikt u de`setWidth`En`setHeight` methoden op het vormobject. Om bijvoorbeeld een vorm van 150 pixels breed en 75 pixels hoog te maken:
+ Om de grootte van een vorm te wijzigen, gebruikt u de`setWidth` En`setHeight` methoden op het shape-object. Om bijvoorbeeld een shape 150 pixels breed en 75 pixels hoog te maken:
 
 ```java
 shape.setWidth(150);
@@ -148,11 +148,11 @@ shape.setHeight(75);
 
 ### Kan ik meerdere vormen aan een document toevoegen?
 
-Ja, u kunt meerdere vormen aan een document toevoegen. Maak eenvoudig meerdere vormobjecten en voeg deze toe aan de hoofdtekst van het document of aan een specifieke alinea.
+Ja, u kunt meerdere vormen toevoegen aan een document. Maak eenvoudig meerdere vormobjecten en voeg ze toe aan de hoofdtekst van het document of een specifieke alinea.
 
 ### Hoe verander ik de kleur van een vorm?
 
-U kunt de kleur van een vorm wijzigen door de lijnkleur en de vulkleureigenschappen van het vormobject in te stellen. Om bijvoorbeeld de lijnkleur in te stellen op blauw en de vulkleur op groen:
+U kunt de kleur van een vorm wijzigen door de eigenschappen van de lijnkleur en de vulkleur van het vormobject in te stellen. Om bijvoorbeeld de lijnkleur in te stellen op blauw en de vulkleur op groen:
 
 ```java
 shape.setStrokeColor(Color.BLUE);
@@ -161,8 +161,8 @@ shape.setFillColor(Color.GREEN);
 
 ### Kan ik tekst in een vorm toevoegen?
 
- Ja, u kunt tekst in een vorm toevoegen. Gebruik de`getTextPath` eigenschap van de vorm om de tekst in te stellen en de opmaak ervan aan te passen.
+ Ja, u kunt tekst toevoegen in een vorm. Gebruik de`getTextPath` eigenschap van de vorm om de tekst in te stellen en de opmaak ervan aan te passen.
 
-### Hoe kan ik vormen in een specifieke volgorde rangschikken?
+### Hoe kan ik vormen in een bepaalde volgorde rangschikken?
 
- U kunt de volgorde van vormen bepalen met behulp van de eigenschap Z-order. Stel de`ZOrder` eigenschap van een vorm om de positie ervan in de stapel vormen te bepalen. Lagere waarden worden naar achteren gestuurd, terwijl hogere waarden naar voren worden gebracht.
+ U kunt de volgorde van vormen bepalen met de eigenschap Z-order. Stel de`ZOrder` eigenschap van een vorm om de positie ervan in de stapel vormen te bepalen. Lagere waarden worden naar achteren gestuurd, terwijl hogere waarden naar voren worden gebracht.

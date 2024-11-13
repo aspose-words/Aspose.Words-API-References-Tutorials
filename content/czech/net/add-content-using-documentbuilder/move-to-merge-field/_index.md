@@ -118,4 +118,4 @@ Aspose.Words for .NET je výkonná knihovna, která umožňuje vývojářům vyt
  Dočasnou licenci můžete získat od[tento odkaz](https://purchase.aspose.com/temporary-license/).
 
 ### Kde najdu další příklady a podporu pro Aspose.Words pro .NET?
- Další příklady a podporu naleznete na adrese[Aspose.Words for .NET fórum](https://forum.aspose.com/c/words/8).
+ Další příklady a podporu naleznete na[Aspose.Words for .NET fórum](https://forum.aspose.com/c/words/8).

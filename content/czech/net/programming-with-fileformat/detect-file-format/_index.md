@@ -171,4 +171,4 @@ Aspose.Words dokáže detekovat širokou škálu formátů včetně DOC, DOCX, R
  Dočasnou licenci můžete získat od[Aspose Nákup](https://purchase.aspose.com/temporary-license/) strana.
 
 ### Kde najdu dokumentaci k Aspose.Words?
- Dokumentaci k Aspose.Words lze nalézt[zde](https://reference.aspose.com/words/net/).
+ Dokumentaci pro Aspose.Words lze nalézt[zde](https://reference.aspose.com/words/net/).

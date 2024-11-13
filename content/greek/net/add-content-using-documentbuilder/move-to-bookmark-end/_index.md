@@ -82,7 +82,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ### Κατανόηση του MoveToBookmark
 
- Ο`MoveToBookmark`Η μέθοδος σάς επιτρέπει να πλοηγηθείτε σε έναν συγκεκριμένο σελιδοδείκτη στο έγγραφό σας. Η υπογραφή της μεθόδου είναι:
+Ο`MoveToBookmark`Η μέθοδος σάς επιτρέπει να πλοηγηθείτε σε έναν συγκεκριμένο σελιδοδείκτη στο έγγραφό σας. Η υπογραφή της μεθόδου είναι:
 
 ```csharp
 bool MoveToBookmark(string bookmarkName, bool isBookmarkStart, bool isBookmarkEnd);
@@ -130,7 +130,7 @@ doc.Save(dataDir + "UpdatedBookmarks.docx");
 
 ### 1. Μπορώ να μετακινηθώ στην αρχή ενός σελιδοδείκτη αντί στο τέλος;
 
- Απολύτως! Απλώς ρυθμίστε το`isBookmarkStart` παράμετρος σε`true`και`isBookmarkEnd` να`false` στο`MoveToBookmark` μέθοδος.
+ Απολύτως! Απλώς ρυθμίστε το`isBookmarkStart` παράμετρος σε`true` και`isBookmarkEnd` να`false` στο`MoveToBookmark` μέθοδος.
 
 ### 2. Τι γίνεται αν το όνομα του σελιδοδείκτη μου είναι λανθασμένο;
 

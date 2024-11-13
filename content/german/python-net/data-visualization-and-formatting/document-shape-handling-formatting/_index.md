@@ -1,7 +1,7 @@
 ---
 title: Erstellen optisch beeindruckender Dokumentformen und -layouts
 linktitle: Erstellen optisch beeindruckender Dokumentformen und -layouts
-second_title: Aspose.Words Python-API zur Dokumentenverwaltung
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
 description: Erstellen Sie visuell beeindruckende Dokumentlayouts mit Aspose.Words für Python. Erfahren Sie, wie Sie Formen hinzufügen, Stile anpassen, Bilder einfügen, den Textfluss verwalten und die Attraktivität steigern.
 type: docs
 weight: 13
@@ -55,7 +55,7 @@ shape.left = aw.drawing.Length.from_inch(1.5)
 shape.top = aw.drawing.Length.from_inch(2)
 ```
 
-## Verbessern der visuellen Attraktivität mit Bildern
+## Verbessern der visuellen Attraktivität durch Bilder
 
 Bilder sind leistungsstarke Tools zur Verbesserung der Attraktivität von Dokumenten. So können Sie mit Aspose.Words für Python ein Bild zu Ihrem Dokument hinzufügen:
 
@@ -65,7 +65,7 @@ image_path = "image.jpg"
 image = paragraph.append_image(image_path)
 ```
 
-## Verwalten des Textflusses und des Umbruchs
+## Verwalten des Textflusses und des Textumbruchs
 
 Textfluss und Umbruch spielen eine entscheidende Rolle beim Dokumentlayout. Aspose.Words für Python bietet Optionen zur Steuerung des Textflusses um Formen und Bilder. Sehen wir uns an, wie:
 

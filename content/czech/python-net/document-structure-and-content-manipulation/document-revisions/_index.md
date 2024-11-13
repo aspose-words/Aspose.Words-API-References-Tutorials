@@ -22,7 +22,7 @@ Revize dokumentu zahrnují sledování změn provedených v dokumentu v průběh
 import asposewords
 ```
 
-## Načtení a zobrazení dokumentu
+## Načítání a zobrazení dokumentu
 
 Chcete-li pracovat s dokumentem, musíte jej nejprve načíst do aplikace Python. K načtení dokumentu a zobrazení jeho obsahu použijte následující fragment kódu:
 

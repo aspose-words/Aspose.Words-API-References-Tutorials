@@ -8,9 +8,9 @@ weight: 22
 url: /hi/java/document-loading-and-saving/saving-documents-as-pdf/
 ---
 
-## Java के लिए Aspose.Words में दस्तावेज़ों को PDF के रूप में सहेजने का परिचय
+## जावा के लिए Aspose.Words में दस्तावेज़ों को PDF के रूप में सहेजने का परिचय
 
-इस चरण-दर-चरण मार्गदर्शिका में, हम यह पता लगाएंगे कि Java के लिए Aspose.Words का उपयोग करके दस्तावेज़ों को PDF के रूप में कैसे सहेजा जाए। हम PDF रूपांतरण के विभिन्न पहलुओं को कवर करेंगे और प्रक्रिया को आसान बनाने के लिए कोड उदाहरण प्रदान करेंगे।
+इस चरण-दर-चरण मार्गदर्शिका में, हम Java के लिए Aspose.Words का उपयोग करके PDF के रूप में दस्तावेज़ों को सहेजने का तरीका जानेंगे। हम PDF रूपांतरण के विभिन्न पहलुओं को कवर करेंगे और प्रक्रिया को आसान बनाने के लिए कोड उदाहरण प्रदान करेंगे।
 
 ## आवश्यक शर्तें
 
@@ -19,7 +19,7 @@ url: /hi/java/document-loading-and-saving/saving-documents-as-pdf/
 - आपके सिस्टम पर जावा डेवलपमेंट किट (JDK) स्थापित है।
 -  Aspose.Words for Java लाइब्रेरी। आप इसे यहाँ से डाउनलोड कर सकते हैं[यहाँ](https://releases.aspose.com/words/java/).
 
-## दस्तावेज़ को PDF में परिवर्तित करना
+## दस्तावेज़ को पीडीएफ में परिवर्तित करना
 
 किसी Word दस्तावेज़ को PDF में बदलने के लिए, आप निम्नलिखित कोड स्निपेट का उपयोग कर सकते हैं:
 
@@ -131,7 +131,7 @@ doc.save("output.pdf", saveOptions);
 
 ### क्या मैं Java के लिए Aspose.Words द्वारा उत्पन्न पीडीएफ में फ़ॉन्ट एम्बेड कर सकता हूँ?
 
- हां, आप सेटिंग करके पीडीएफ में फ़ॉन्ट एम्बेड कर सकते हैं`setEmbedFullFonts` विकल्प`true` में`PdfSaveOptions`. यहाँ एक उदाहरण है:
+ हां, आप सेटिंग करके पीडीएफ में फ़ॉन्ट एम्बेड कर सकते हैं`setEmbedFullFonts` विकल्प`true` में`PdfSaveOptions`यहाँ एक उदाहरण है:
 
 ```java
 PdfSaveOptions saveOptions = new PdfSaveOptions();
@@ -141,7 +141,7 @@ doc.save("output.pdf", saveOptions);
 
 ### मैं उत्पन्न पीडीएफ में दस्तावेज़ गुणों को कैसे अनुकूलित कर सकता हूं?
 
- आप पीडीएफ में दस्तावेज़ गुणों को अनुकूलित कर सकते हैं`setCustomPropertiesExport` विकल्प में`PdfSaveOptions`। उदाहरण के लिए:
+ आप PDF में दस्तावेज़ गुणों को अनुकूलित कर सकते हैं`setCustomPropertiesExport` विकल्प में`PdfSaveOptions`। उदाहरण के लिए:
 
 ```java
 PdfSaveOptions saveOptions = new PdfSaveOptions();

@@ -89,7 +89,7 @@ Nastavení směru textu v dokumentech aplikace Word je s Aspose.Words pro .NET j
 
 ###  Co je`DocumentDirection` property used for?
 
- The`DocumentDirection` majetek v`TxtLoadOptions` určuje směr textu dokumentu. Dá se nastavit na`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` nebo`DocumentDirection.RightToLeft`.
+The`DocumentDirection` majetek v`TxtLoadOptions` určuje směr textu dokumentu. Dá se nastavit na`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` nebo`DocumentDirection.RightToLeft`.
 
 ### Mohu nastavit směr textu pro konkrétní odstavce místo celého dokumentu?
 

@@ -1,6 +1,6 @@
 ---
-title: Επεξεργασία λέξεων με Docsaveoptions
-linktitle: Επεξεργασία λέξεων με Docsaveoptions
+title: Επεξεργασία λέξεων με DocSaveOptions
+linktitle: Επεξεργασία λέξεων με DocSaveOptions
 second_title: Aspose.Words Document Processing API
 description: Μάθετε πώς να προσαρμόζετε τις επιλογές αποθήκευσης για έγγραφα του Word χρησιμοποιώντας το Aspose.Words για .NET. Τα σεμινάρια σας καθοδηγούν στις διάφορες διαθέσιμες επιλογές, όπως μορφή αρχείου, συμπίεση, προστασία με κωδικό πρόσβασης.
 type: docs

@@ -91,7 +91,7 @@ Paragraph para = body.getFirstParagraph();
 para.appendChild(new Run(doc, "Paragraph 1. "));
 body.appendParagraph("Paragraph 2. ");
 body.appendParagraph("Paragraph 3. ");
-//हमारे पास तीन पैराग्राफ हैं, जिनमें से किसी में भी किसी प्रकार का संशोधन दर्ज नहीं है
+// हमारे पास तीन पैराग्राफ हैं, जिनमें से किसी में भी किसी प्रकार का संशोधन दर्ज नहीं है
 // यदि हम संशोधनों पर नज़र रखते हुए दस्तावेज़ में कोई सामग्री जोड़ते/हटाते हैं,
 // वे दस्तावेज़ में उसी रूप में प्रदर्शित किये जायेंगे तथा उन्हें स्वीकार/अस्वीकार किया जा सकेगा।
 doc.startTrackRevisions("John Doe", new Date());
@@ -112,7 +112,7 @@ doc.acceptAllRevisions();
 Assert.assertEquals(3, paragraphs.getCount());
 Assert.assertEquals(para.getRuns().getCount(), 0); //था Is.खाली
 // संशोधनों की ट्रैकिंग रोकने से यह पाठ सामान्य पाठ के रूप में दिखाई देता है।
-// दस्तावेज़ में परिवर्तन होने पर संशोधनों की गणना नहीं की जाती।
+//दस्तावेज़ में परिवर्तन होने पर संशोधनों की गणना नहीं की जाती।
 doc.stopTrackRevisions();
 // दस्तावेज़ सहेजें.
 doc.save(outPath + "WorkingWithRevisions.AcceptRevisions.docx");

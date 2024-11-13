@@ -27,8 +27,8 @@ Ismerje meg, hogyan exportálhat dokumentumokat PDF-be az Aspose.Words for Java 
 ### [Dokumentumok konvertálása különböző formátumokra](./converting-documents-different-formats/)
 Ismerje meg, hogyan konvertálhat dokumentumokat különböző formátumokba az Aspose.Words for Java segítségével. Útmutató lépésről lépésre a hatékony dokumentumátalakításhoz.
 ### [HTML konvertálása dokumentumokká](./converting-html-documents/)
-Ismerje meg, hogyan konvertálhat HTML-t Word dokumentumokká Java nyelven az Aspose.Words használatával. Kövesse lépésenkénti útmutatónkat a zökkenőmentes dokumentumfeldolgozás érdekében.
+Az Aspose.Words for Java segítségével könnyedén konvertálhat HTML-t Word-dokumentummá. Átfogó útmutatónk segítségével megtudhatja, hogyan hajthatja végre ezt az átalakítást néhány lépésben.
 ### [Dokumentumkonverzió a SaveOptions segítségével](./document-conversion-saveoptions/)
-Tanuljon meg dokumentumkonvertálást az Aspose.Words segítségével Java nyelven. Lépésről lépésre, kódpéldák és GYIK a zökkenőmentes Word-ből PDF konvertáláshoz.
+A DOCX hatékony konvertálása EPUB formátumba az Aspose.Words for Java használatával. Ebben a lépésenkénti útmutatóban megtudhatja, hogyan szabhatja testre a mentési beállításokat, hogyan oszthatja fel a tartalmat, és hogyan exportálhatja a dokumentum tulajdonságait.
 ### [Dokumentumok konvertálása képekké](./converting-documents-images/)
-Ismerje meg, hogyan konvertálhat dokumentumokat képekké az Aspose.Words for Java használatával. Lépésről lépésre útmutató Java fejlesztőknek.
+Ismerje meg, hogyan konvertálhat Word dokumentumokat képekké az Aspose.Words for Java használatával. Lépésről lépésre, kódpéldákkal és GYIK-vel kiegészítve.

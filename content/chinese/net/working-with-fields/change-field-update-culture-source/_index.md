@@ -43,7 +43,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## 步骤 2：插入具有特定语言环境的字段
 
-接下来，我们需要在文档中插入字段。在本例中，我们将插入两个日期字段。我们将字体的区域设置为德语 (LocaleId = 1031)，以演示文化如何影响日期格式。
+接下来，我们需要在文档中插入字段。在本例中，我们将插入两个日期字段。我们将字体的语言环境设置为德语 (LocaleId = 1031)，以演示文化如何影响日期格式。
 
 ```csharp
 builder.Font.LocaleId = 1031; //德语

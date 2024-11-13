@@ -109,12 +109,12 @@ public void createAndAddParagraphNode() throws Exception
 Το Aspose.Words για Java είναι μια βιβλιοθήκη Java που επιτρέπει στους προγραμματιστές να δημιουργούν, να χειρίζονται και να μετατρέπουν έγγραφα του Word μέσω προγραμματισμού.
 
 ### Ε2. Πώς μπορώ να εγκαταστήσω το Aspose.Words για Java;
-Μπορείτε να κατεβάσετε και να εγκαταστήσετε το Aspose.Words για Java από[εδώ](https://releases.aspose.com/words/java/).
+ Μπορείτε να κατεβάσετε και να εγκαταστήσετε το Aspose.Words για Java από[εδώ](https://releases.aspose.com/words/java/).
 
 ### Ε3. Υπάρχει δωρεάν δοκιμή διαθέσιμη;
  Ναι, μπορείτε να λάβετε μια δωρεάν δοκιμή του Aspose.Words για Java[εδώ](https://releases.aspose.com/).
 
-### Q4. Πού μπορώ να πάρω μια προσωρινή άδεια;
+### Ε4. Πού μπορώ να πάρω μια προσωρινή άδεια;
  Μπορείτε να αποκτήσετε μια προσωρινή άδεια χρήσης για το Aspose.Words για Java[εδώ](https://purchase.aspose.com/temporary-license/).
 
 ### Q5. Πού μπορώ να βρω υποστήριξη για το Aspose.Words για Java;

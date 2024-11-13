@@ -80,7 +80,7 @@ Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 ```
 
- Ο`AppendDocument` Η μέθοδος παίρνει δύο παραμέτρους:
+Ο`AppendDocument` Η μέθοδος παίρνει δύο παραμέτρους:
 1. Έγγραφο πηγής: Το έγγραφο που θέλετε να προσαρτήσετε.
 2.  Λειτουργία μορφοποίησης εισαγωγής: Αυτή η παράμετρος υπαγορεύει τον τρόπο χειρισμού της μορφοποίησης. Εδώ, χρησιμοποιούμε`KeepSourceFormatting` για να διατηρήσετε τη μορφοποίηση του εγγράφου προέλευσης.
 

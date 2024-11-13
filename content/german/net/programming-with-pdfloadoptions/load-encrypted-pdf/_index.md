@@ -30,7 +30,7 @@ using Aspose.Words.Saving;
 using Aspose.Words.Loading;
 ```
 
-Lassen Sie uns diesen Prozess in überschaubare Schritte unterteilen. Wir gehen vom Einrichten Ihrer Umgebung bis zum erfolgreichen Laden einer verschlüsselten PDF-Datei.
+Lassen Sie uns diesen Prozess in überschaubare Schritte unterteilen. Wir führen Sie von der Einrichtung Ihrer Umgebung bis zum erfolgreichen Laden einer verschlüsselten PDF-Datei durch.
 
 ## Schritt 1: Einrichten Ihres Dokumentverzeichnisses
 
@@ -91,7 +91,7 @@ doc = new Document(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", l
 
 Und da haben Sie es! Das Laden einer verschlüsselten PDF-Datei mit Aspose.Words für .NET ist nicht nur einfach, sondern macht auch richtig Spaß. Wenn Sie diese Schritte befolgen, können Sie PDF-Verschlüsselung wie ein Profi handhaben. Denken Sie daran, dass der Schlüssel zur Beherrschung jedes Tools Übung ist. Scheuen Sie sich also nicht, zu experimentieren und zu erkunden.
 
- Wenn Sie Fragen haben oder weitere Hilfe benötigen,[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/)Und[Support-Forum](https://forum.aspose.com/c/words/8) sind ein guter Ausgangspunkt.
+ Wenn Sie Fragen haben oder weitere Hilfe benötigen,[Aspose.Words-Dokumentation](https://reference.aspose.com/words/net/) Und[Support-Forum](https://forum.aspose.com/c/words/8) sind ein guter Ausgangspunkt.
 
 ## Häufig gestellte Fragen
 
@@ -108,4 +108,4 @@ Absolut! Aspose.Words für .NET ist mit jeder .NET-Sprache kompatibel, einschlie
 Ohne das richtige Passwort lässt sich das PDF leider nicht entschlüsseln. Bewahren Sie Ihre Passwörter daher immer gut auf.
 
 ### Wie erhalte ich eine kostenlose Testversion von Aspose.Words für .NET?
- Sie können eine kostenlose Testversion herunterladen unter[Hier](https://releases.aspose.com/).
+ Sie können eine kostenlose Testversion herunterladen von[Hier](https://releases.aspose.com/).

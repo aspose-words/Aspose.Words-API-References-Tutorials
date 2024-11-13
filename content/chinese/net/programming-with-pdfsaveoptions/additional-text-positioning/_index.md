@@ -75,7 +75,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.AdditionalTextPositioning.pdf", sa
 
 ## 结论
 
-就这样！按照这些步骤，您已成功使用 Aspose.Words for .NET 改进了 PDF 中的文本定位。此强大功能可确保您的 PDF 看起来清晰专业，文本定位准确。
+就这样！通过以下步骤，您已成功使用 Aspose.Words for .NET 改进了 PDF 中的文本定位。此强大功能可确保您的 PDF 看起来清晰专业，文本定位准确。
 
 ## 常见问题解答
 

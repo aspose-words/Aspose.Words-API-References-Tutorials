@@ -88,9 +88,9 @@ doc.Save(dataDir + "WorkingWithTables.CombineRows.docx");
 
 ## 结论
 
-将多个表中的行合并为一个可以大大简化您的文档处理任务。使用 Aspose.Words for .NET，此任务变得简单而高效。通过遵循此分步指南，您可以轻松合并表格并简化您的工作流程。
+将多个表中的行合并为一个可以大大简化您的文档处理任务。使用 Aspose.Words for .NET，此任务变得简单而高效。通过遵循此分步指南，您可以轻松合并表格并简化工作流程。
 
-如果您需要更多信息或有任何疑问，[Aspose.Words 文档](https://reference.aspose.com/words/net/)是一个很好的资源。您还可以探索购买选项[这里](https://purchase.aspose.com/buy)或者得到[临时执照](https://purchase.aspose.com/temporary-license/)进行测试。
+如果你需要更多信息或有任何疑问，[Aspose.Words 文档](https://reference.aspose.com/words/net/)是一个很好的资源。您还可以探索购买选项[这里](https://purchase.aspose.com/buy)或者得到[临时执照](https://purchase.aspose.com/temporary-license/)进行测试。
 
 ## 常见问题解答
 
@@ -110,6 +110,6 @@ doc.Save(dataDir + "WorkingWithTables.CombineRows.docx");
 
 当然可以！您可以创建一个脚本来自动执行多个文档的此过程。
 
-### 如果我遇到问题，可以在哪里获得帮助？
+### 如果我遇到问题，可以去哪里获取帮助？
 
 这[Aspose.Words 支持论坛](https://forum.aspose.com/c/words/8)是获得帮助和寻找常见问题解决方案的好地方。

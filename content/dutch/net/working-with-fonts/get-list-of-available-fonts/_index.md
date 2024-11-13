@@ -1,24 +1,24 @@
 ---
-title: Krijg een lijst met beschikbare lettertypen
-linktitle: Krijg een lijst met beschikbare lettertypen
-second_title: Aspose.Words-API voor documentverwerking
-description: Ontdek hoe u een lijst met beschikbare lettertypen kunt krijgen met Aspose.Words voor .NET in deze gedetailleerde stapsgewijze zelfstudie. Verbeter uw vaardigheden op het gebied van lettertypebeheer.
+title: Lijst met beschikbare lettertypen ophalen
+linktitle: Lijst met beschikbare lettertypen ophalen
+second_title: Aspose.Words API voor documentverwerking
+description: Ontdek hoe u een lijst met beschikbare lettertypen kunt krijgen met Aspose.Words voor .NET in deze gedetailleerde stapsgewijze tutorial. Verbeter uw vaardigheden in lettertypebeheer.
 type: docs
 weight: 10
 url: /nl/net/working-with-fonts/get-list-of-available-fonts/
 ---
 ## Invoering
 
-Heeft u ooit moeite gehad met het beheren van lettertypen in uw Word-documenten? Als u een .NET-ontwikkelaar bent, is Aspose.Words voor .NET hier om u te redden! Deze krachtige bibliotheek helpt u niet alleen programmatisch Word-documenten te maken en te manipuleren, maar biedt ook uitgebreide mogelijkheden voor lettertypebeheer. In deze handleiding leiden we u stapsgewijs door een zelfstudie over hoe u een lijst met beschikbare lettertypen kunt krijgen met Aspose.Words voor .NET. We zullen het opsplitsen in begrijpelijke stappen, zodat u het gemakkelijk kunt volgen. Dus laten we erin duiken en lettertypebeheer een fluitje van een cent maken!
+Heb je ooit moeite gehad met het beheren van lettertypen in je Word-documenten? Als je een .NET-ontwikkelaar bent, is Aspose.Words voor .NET er om je te redden! Deze krachtige bibliotheek helpt je niet alleen om Word-documenten programmatisch te maken en te bewerken, maar biedt ook uitgebreide mogelijkheden voor lettertypebeheer. In deze gids leiden we je door een stapsgewijze tutorial over hoe je een lijst met beschikbare lettertypen kunt krijgen met Aspose.Words voor .NET. We splitsen het op in begrijpelijke stappen, zodat je het gemakkelijk kunt volgen. Dus, laten we erin duiken en lettertypebeheer een fluitje van een cent maken!
 
 ## Vereisten
 
-Voordat we beginnen, zijn er een paar dingen die je nodig hebt:
+Voordat we beginnen, heb je een paar dingen nodig:
 
--  Aspose.Words voor .NET: Zorg ervoor dat de Aspose.Words voor .NET-bibliotheek is geïnstalleerd. Je kunt het downloaden van[hier](https://releases.aspose.com/words/net/).
-- Visual Studio: In dit voorbeeld wordt Visual Studio als ontwikkelomgeving gebruikt.
+-  Aspose.Words voor .NET: Zorg ervoor dat u de Aspose.Words voor .NET-bibliotheek hebt geïnstalleerd. U kunt deze downloaden van[hier](https://releases.aspose.com/words/net/).
+- Visual Studio: In dit voorbeeld wordt Visual Studio gebruikt als ontwikkelomgeving.
 - .NET Framework: Zorg ervoor dat .NET Framework op uw computer is geïnstalleerd.
-- Documentmap: een mappad waar uw documenten worden opgeslagen.
+- Documentmap: Een map waarin uw documenten zijn opgeslagen.
 
 ## Naamruimten importeren
 
@@ -43,29 +43,29 @@ List<FontSourceBase> fontSources = new List<FontSourceBase>(fontSettings.GetFont
 - FontSettings: Deze klasse wordt gebruikt om de instellingen voor lettertypevervanging en lettertypebronnen op te geven.
 - fontSources: We maken een lijst met bestaande lettertypebronnen op basis van de huidige lettertype-instellingen.
 
-## Stap 2: Definieer de documentmap
+## Stap 2: Documentdirectory definiëren
 
-Geef vervolgens het pad naar uw documentmap op. Dit is waar Aspose.Words naar lettertypen zoekt.
+Geef vervolgens het pad naar uw documentdirectory op. Dit is waar Aspose.Words naar lettertypen zal zoeken.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
--  dataDir: Deze stringvariabele bevat het pad naar de map waar uw lettertypen zich bevinden. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad.
+-  dataDir: Deze tekenreeksvariabele bevat het pad naar de map waarin uw lettertypen zich bevinden. Vervangen`"YOUR DOCUMENT DIRECTORY"` met het werkelijke pad.
 
-## Stap 3: Voeg een aangepaste lettertypemap toe
+## Stap 3: Aangepaste lettertypemap toevoegen
 
-Voeg nu een nieuwe mapbron toe om Aspose.Words te instrueren om in deze map naar lettertypen te zoeken.
+Voeg nu een nieuwe mapbron toe om Aspose.Words de opdracht te geven om in deze map naar lettertypen te zoeken.
 
 ```csharp
 FolderFontSource folderFontSource = new FolderFontSource(dataDir, true);
 ```
 
-- FolderFontSource: deze klasse vertegenwoordigt een maplettertypebron. De tweede parameter (`true`) geeft aan of er recursief naar lettertypen in submappen moet worden gezocht.
+- FolderFontSource: Deze klasse vertegenwoordigt een bron voor een maplettertype. De tweede parameter (`true`) geeft aan of er recursief naar lettertypen in submappen moet worden gezocht.
 
-## Stap 4: Update lettertypebronnen
+## Stap 4: Lettertypebronnen bijwerken
 
-Voeg de aangepaste lettertypemap toe aan de lijst met bestaande lettertypebronnen en werk de lettertype-instellingen bij.
+Voeg de map met aangepaste lettertypen toe aan de lijst met bestaande lettertypebronnen en werk de lettertype-instellingen bij.
 
 ```csharp
 fontSources.Add(folderFontSource);
@@ -73,7 +73,7 @@ FontSourceBase[] updatedFontSources = fontSources.ToArray();
 ```
 
 - fontSources.Add(folderFontSource): Voegt de aangepaste lettertypemap toe aan de bestaande lettertypebronnen.
-- bijgewerktFontSources: Converteert de lijst met lettertypebronnen naar een array.
+- updatedFontSources: converteert de lijst met lettertypebronnen naar een array.
 
 ## Stap 5: Lettertypen ophalen en weergeven
 
@@ -90,11 +90,11 @@ foreach (PhysicalFontInfo fontInfo in updatedFontSources[0].GetAvailableFonts())
 ```
 
 - GetAvailableFonts(): Haalt de lijst met beschikbare lettertypen op uit de eerste lettertypebron in de bijgewerkte lijst.
--  fontInfo: een exemplaar van`PhysicalFontInfo` met details over elk lettertype.
+-  fontInfo: Een exemplaar van`PhysicalFontInfo` met details over elk lettertype.
 
 ## Conclusie
 
-Gefeliciteerd! U hebt met succes een lijst met beschikbare lettertypen opgehaald met Aspose.Words voor .NET. In deze zelfstudie wordt u door elke stap geleid, van het initialiseren van de lettertype-instellingen tot het weergeven van lettertypedetails. Met deze kennis kunt u nu eenvoudig lettertypen in uw Word-documenten beheren. Vergeet niet dat Aspose.Words voor .NET een krachtig hulpmiddel is dat uw documentverwerkingsmogelijkheden aanzienlijk kan verbeteren. Ga dus aan de slag en ontdek meer functies om uw ontwikkelingsproces nog efficiënter te maken.
+Gefeliciteerd! U hebt met succes een lijst met beschikbare lettertypen opgehaald met Aspose.Words voor .NET. Deze tutorial heeft u door elke stap geleid, van het initialiseren van lettertype-instellingen tot het weergeven van lettertypedetails. Met deze kennis kunt u nu eenvoudig lettertypen in uw Word-documenten beheren. Vergeet niet dat Aspose.Words voor .NET een krachtige tool is die uw documentverwerkingsmogelijkheden aanzienlijk kan verbeteren. Ga dus verder en ontdek meer functies om uw ontwikkelingsproces nog efficiënter te maken.
 
 ## Veelgestelde vragen
 
@@ -102,13 +102,13 @@ Gefeliciteerd! U hebt met succes een lijst met beschikbare lettertypen opgehaald
 Ja, Aspose.Words voor .NET is compatibel met verschillende .NET-frameworks, waaronder .NET Core en .NET 5+.
 
 ### Hoe installeer ik Aspose.Words voor .NET?
-U kunt het installeren via NuGet Package Manager in Visual Studio door te zoeken naar "Aspose.Words".
+U kunt het installeren via NuGet Package Manager in Visual Studio door te zoeken naar 'Aspose.Words'.
 
 ### Is het mogelijk om meerdere aangepaste lettertypemappen toe te voegen?
- Ja, u kunt meerdere aangepaste lettertypemappen toevoegen door er meerdere te maken`FolderFontSource` exemplaren en voeg ze toe aan de lijst met lettertypebronnen.
+ Ja, u kunt meerdere aangepaste lettertypemappen toevoegen door meerdere mappen te maken.`FolderFontSource` exemplaren en deze toevoegen aan de lijst met lettertypebronnen.
 
-### Kan ik lettertypedetails ophalen uit een specifieke lettertypebron?
- Ja, u kunt lettertypedetails uit elke lettertypebron ophalen door de index van de lettertypebron op te geven in het`updatedFontSources` reeks.
+### Kan ik lettertypegegevens ophalen uit een specifieke lettertypebron?
+ Ja, u kunt lettertypegegevens ophalen uit elke lettertypebron door de index van de lettertypebron op te geven in de`updatedFontSources` reeks.
 
 ### Ondersteunt Aspose.Words voor .NET lettertypevervanging?
-Ja, het ondersteunt lettertypevervanging om ervoor te zorgen dat tekst correct wordt weergegeven, zelfs als het originele lettertype niet beschikbaar is.
+Ja, het ondersteunt lettertypevervanging om ervoor te zorgen dat tekst correct wordt weergegeven, zelfs als het oorspronkelijke lettertype niet beschikbaar is.

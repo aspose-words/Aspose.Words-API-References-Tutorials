@@ -16,7 +16,7 @@ Export uživatelských vlastností v dokumentu PDF může být neuvěřitelně u
 Než se ponoříte do kódu, ujistěte se, že máte následující:
 
 -  Aspose.Words for .NET nainstalován. Pokud jste jej ještě nenainstalovali, můžete si jej stáhnout[zde](https://releases.aspose.com/words/net/).
-- Vývojové prostředí jako Visual Studio.
+- Vývojové prostředí, jako je Visual Studio.
 - Základní znalost programování v C#.
 
 ## Importovat jmenné prostory

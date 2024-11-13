@@ -56,7 +56,7 @@ Nyní porovnejme dokumenty pomocí metody Compare třídy Document. Změny budou
 builderA.Document.Compare(builderB.Document, "author", DateTime.Now, compareOptions);
 ```
 
- The`Compare`metoda porovná dokument A s dokumentem B a uloží změny do dokumentu A. Pro referenci můžete zadat jméno autora a datum porovnání.
+The`Compare`metoda porovná dokument A s dokumentem B a uloží změny do dokumentu A. Pro referenci můžete zadat jméno autora a datum porovnání.
 
 ## Závěr
 

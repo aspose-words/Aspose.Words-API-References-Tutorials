@@ -17,7 +17,7 @@ Bevor wir uns in die Welt des typisierten Zugriffs stürzen, stellen wir sicher,
 
 -  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die neueste Version haben. Wenn nicht, können Sie sie herunterladen[Hier](https://releases.aspose.com/words/net/).
 - Entwicklungsumgebung: Visual Studio oder jede andere IDE, die .NET unterstützt.
-- Grundlegende Kenntnisse in C#: Dieses Tutorial setzt voraus, dass Sie über grundlegende Kenntnisse in C# und .NET verfügen.
+- Grundkenntnisse in C#: Dieses Tutorial setzt voraus, dass Sie über Grundkenntnisse in C# und .NET verfügen.
 -  Aspose.Words Lizenz: Sie können eine[Kostenlose Testversion](https://releases.aspose.com/) oder erhalten Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/).
 
 ## Namespaces importieren
@@ -97,7 +97,7 @@ Und da haben Sie es! Eine Schritt-für-Schritt-Anleitung zur Verwendung von Type
 ## Häufig gestellte Fragen
 
 ### Was ist typisierter Zugriff in Aspose.Words für .NET?
-Mit typisiertem Zugriff können Sie schnell auf bestimmte Knotentypen in einem Word-Dokument (z. B. Tabellen und Zeilen) zugreifen und diese bearbeiten, ohne sich in komplexen Code vertiefen zu müssen.
+Mit typisiertem Zugriff können Sie schnell auf bestimmte Knotentypen in einem Word-Dokument zugreifen und diese bearbeiten, z. B. Tabellen und Zeilen, ohne sich in komplexen Code vertiefen zu müssen.
 
 ### Kann ich Typed Access mit anderen Elementen als Tabellen verwenden?
 Ja, Typed Access kann mit verschiedenen Elementen wie Absätzen, Abschnitten usw. verwendet werden, was die Dokumentbearbeitung vereinfacht.

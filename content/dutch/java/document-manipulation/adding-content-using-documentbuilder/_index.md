@@ -1,20 +1,20 @@
 ---
 title: Inhoud toevoegen met DocumentBuilder in Aspose.Words voor Java
 linktitle: Inhoud toevoegen met DocumentBuilder
-second_title: Aspose.Words Java-documentverwerkings-API
-description: Masterdocumentcreatie met Aspose.Words voor Java. Een stapsgewijze handleiding voor het toevoegen van tekst, tabellen, afbeeldingen en meer. Maak moeiteloos prachtige Word-documenten.
+second_title: Aspose.Words Java Documentverwerkings-API
+description: Master Document Creation met Aspose.Words voor Java. Een stapsgewijze handleiding voor het toevoegen van tekst, tabellen, afbeeldingen en meer. Maak moeiteloos verbluffende Word-documenten.
 type: docs
 weight: 26
 url: /nl/java/document-manipulation/adding-content-using-documentbuilder/
 ---
 
-## Inleiding tot het toevoegen van inhoud met behulp van DocumentBuilder in Aspose.Words voor Java
+## Inleiding tot het toevoegen van inhoud met DocumentBuilder in Aspose.Words voor Java
 
-In deze stapsgewijze handleiding onderzoeken we hoe u Aspose.Words voor Java's DocumentBuilder kunt gebruiken om verschillende soorten inhoud aan een Word-document toe te voegen. We behandelen het invoegen van tekst, tabellen, horizontale regels, formuliervelden, HTML, hyperlinks, inhoudsopgave, inline en zwevende afbeeldingen, alinea's en meer. Laten we beginnen!
+In deze stapsgewijze handleiding gaan we onderzoeken hoe je Aspose.Words voor Java's DocumentBuilder kunt gebruiken om verschillende soorten content toe te voegen aan een Word-document. We behandelen het invoegen van tekst, tabellen, horizontale regels, formuliervelden, HTML, hyperlinks, inhoudsopgaven, inline en zwevende afbeeldingen, alinea's en meer. Laten we beginnen!
 
 ## Vereisten
 
- Voordat u begint, moet u ervoor zorgen dat de Aspose.Words voor Java-bibliotheek in uw project is ingesteld. Je kunt het downloaden van[hier](https://releases.aspose.com/words/java/).
+ Voordat u begint, moet u ervoor zorgen dat u de Aspose.Words for Java-bibliotheek in uw project hebt ingesteld. U kunt deze downloaden van[hier](https://releases.aspose.com/words/java/).
 
 ## Tekst toevoegen
 
@@ -25,7 +25,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 // Voeg een eenvoudige tekstparagraaf in
 builder.write("This is a simple text paragraph.");
 
-// Bewaar het document
+// Sla het document op
 doc.save("path/to/your/document.docx");
 ```
 
@@ -35,20 +35,20 @@ doc.save("path/to/your/document.docx");
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Begin een tafel
+// Start een tabel
 Table table = builder.startTable();
 
-// Voeg cellen en inhoud in
+// Cellen en inhoud invoegen
 builder.insertCell();
 builder.write("Cell 1");
 
 builder.insertCell();
 builder.write("Cell 2");
 
-// Beëindig de tafel
+// Maak de tafel af
 builder.endTable();
 
-// Bewaar het document
+// Sla het document op
 doc.save("path/to/your/document.docx");
 ```
 
@@ -58,54 +58,54 @@ doc.save("path/to/your/document.docx");
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Voeg een horizontale regel in
+// Een horizontale regel invoegen
 builder.insertHorizontalRule();
 
-// Bewaar het document
+// Sla het document op
 doc.save("path/to/your/document.docx");
 ```
 
 ## Formuliervelden toevoegen
 
-### Veld voor tekstinvoerformulier
+### Tekst invoerformulier veld
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Voeg een tekstinvoerformulierveld in
+// Een tekstinvoerveld invoegen
 builder.insertTextInput("TextInput", TextFormFieldType.REGULAR, "", "Default text", 0);
 
-// Bewaar het document
+// Sla het document op
 doc.save("path/to/your/document.docx");
 ```
 
-### Selectievakje formulierveld
+### Selectievakje Formulierveld
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Voeg een formulierveld voor een selectievakje in
+// Een selectievakje in een formulierveld invoegen
 builder.insertCheckBox("CheckBox", true, true, 0);
 
-// Bewaar het document
+// Sla het document op
 doc.save("path/to/your/document.docx");
 ```
 
-### Formulierveld met invoervak
+### Keuzelijst met invoervakformulierveld
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Definieer items voor de keuzelijst met invoervak
+// Items voor de keuzelijst definiëren
 String[] items = { "Option 1", "Option 2", "Option 3" };
 
-// Voeg een formulierveld met keuzelijst met invoervak in
+// Een keuzelijst met invoervak invoegen
 builder.insertComboBox("DropDown", items, 0);
 
-// Bewaar het document
+// Sla het document op
 doc.save("path/to/your/document.docx");
 ```
 
@@ -118,7 +118,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 // HTML-inhoud invoegen
 builder.insertHtml("<p>This is an HTML paragraph.</p>");
 
-// Bewaar het document
+// Sla het document op
 doc.save("path/to/your/document.docx");
 ```
 
@@ -128,15 +128,15 @@ doc.save("path/to/your/document.docx");
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Voeg een hyperlink in
+// Een hyperlink invoegen
 builder.write("Visit ");
 builder.getFont().setColor(Color.BLUE);
 builder.getFont().setUnderline(Underline.SINGLE);
-builder.insertHyperlink("Aspose Website", "http://www.aspose.com", false);
+builder.insertHyperlink("Aspose Website", "http://www.aspose.com", onwaar);
 builder.getFont().clearFormatting();
 builder.write(" for more information.");
 
-// Bewaar het document
+// Sla het document op
 doc.save("path/to/your/document.docx");
 ```
 
@@ -152,10 +152,10 @@ builder.insertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 // Documentinhoud toevoegen
 // ...
 
-// Werk de inhoudsopgave bij
+// Inhoudsopgave bijwerken
 doc.updateFields();
 
-// Bewaar het document
+// Sla het document op
 doc.save("path/to/your/document.docx");
 ```
 
@@ -167,23 +167,23 @@ doc.save("path/to/your/document.docx");
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Voeg een inlineafbeelding in
+// Een inline-afbeelding invoegen
 builder.insertImage("path/to/your/image.png");
 
-// Bewaar het document
+// Sla het document op
 doc.save("path/to/your/document.docx");
 ```
 
-### Zwevend beeld
+### Zwevende afbeelding
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Voeg een zwevende afbeelding in
+// Een zwevende afbeelding invoegen
 builder.insertImage("path/to/your/image.png", RelativeHorizontalPosition.MARGIN, 100.0, RelativeVerticalPosition.MARGIN, 100.0, 200.0, 100.0, WrapType.SQUARE);
 
-// Bewaar het document
+// Sla het document op
 doc.save("path/to/your/document.docx");
 ```
 
@@ -206,42 +206,42 @@ paragraphFormat.setFirstLineIndent(8.0);
 paragraphFormat.setAlignment(ParagraphAlignment.JUSTIFY);
 paragraphFormat.setKeepTogether(true);
 
-// Voeg een alinea in
+// Een alinea invoegen
 builder.writeln("This is a formatted paragraph.");
 
-// Bewaar het document
+// Sla het document op
 doc.save("path/to/your/document.docx");
 ```
 
 ## Stap 10: De cursor verplaatsen
 
- U kunt de cursorpositie binnen het document op verschillende manieren bepalen, zoals`moveToParagraph`, `moveToCell`en meer. Hier is een voorbeeld:
+ U kunt de cursorpositie binnen het document op verschillende manieren regelen, zoals:`moveToParagraph`, `moveToCell`en meer. Hier is een voorbeeld:
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Verplaats de cursor naar een specifieke paragraaf
+// Verplaats de cursor naar een specifieke alinea
 builder.moveToParagraph(2, 0);
 
 // Voeg inhoud toe op de nieuwe cursorpositie
 builder.writeln("This is the 3rd paragraph.");
 ```
 
-Dit zijn enkele algemene bewerkingen die u kunt uitvoeren met Aspose.Words voor Java's DocumentBuilder. Verken de documentatie van de bibliotheek voor meer geavanceerde functies en aanpassingsopties. Veel succes met het maken van documenten!
+Dit zijn enkele veelvoorkomende bewerkingen die u kunt uitvoeren met Aspose.Words voor Java's DocumentBuilder. Bekijk de documentatie van de bibliotheek voor meer geavanceerde functies en aanpassingsopties. Veel plezier met het maken van documenten!
 
 
 ## Conclusie
 
-In deze uitgebreide handleiding hebben we de mogelijkheden van Aspose.Words voor Java's DocumentBuilder onderzocht om verschillende soorten inhoud aan Word-documenten toe te voegen. We hebben tekst, tabellen, horizontale regels, formuliervelden, HTML, hyperlinks, inhoudsopgave, afbeeldingen, alinea's en cursorbeweging behandeld.
+In deze uitgebreide gids hebben we de mogelijkheden van Aspose.Words voor Java's DocumentBuilder onderzocht om verschillende soorten content toe te voegen aan Word-documenten. We hebben tekst, tabellen, horizontale regels, formuliervelden, HTML, hyperlinks, inhoudsopgaven, afbeeldingen, paragrafen en cursorbewegingen behandeld.
 
 ## Veelgestelde vragen
 
-### Vraag: Wat is Aspose.Words voor Java?
+### V: Wat is Aspose.Words voor Java?
 
-A: Aspose.Words voor Java is een Java-bibliotheek waarmee ontwikkelaars Microsoft Word-documenten programmatisch kunnen maken, wijzigen en manipuleren. Het biedt een breed scala aan functies voor het genereren, formatteren en invoegen van inhoud.
+A: Aspose.Words voor Java is een Java-bibliotheek waarmee ontwikkelaars Microsoft Word-documenten programmatisch kunnen maken, wijzigen en manipuleren. Het biedt een breed scala aan functies voor het genereren, opmaken en invoegen van inhoud van documenten.
 
-### Vraag: Hoe kan ik een inhoudsopgave aan mijn document toevoegen?
+### V: Hoe kan ik een inhoudsopgave aan mijn document toevoegen?
 
 A: Om een inhoudsopgave toe te voegen, gebruikt u de`DocumentBuilder` om een inhoudsopgaveveld in uw document in te voegen. Zorg ervoor dat u de velden in het document bijwerkt nadat u inhoud hebt toegevoegd om de inhoudsopgave te vullen. Hier is een voorbeeld:
 
@@ -255,13 +255,13 @@ builder.insertTableOfContents("\\o \"1-3\" \\h \\z \\u");
 // Documentinhoud toevoegen
 // ...
 
-// Werk de inhoudsopgave bij
+// Inhoudsopgave bijwerken
 doc.updateFields();
 ```
 
-### Vraag: Hoe voeg ik afbeeldingen in een document in met Aspose.Words voor Java?
+### V: Hoe voeg ik afbeeldingen in een document in met Aspose.Words voor Java?
 
- A: U kunt afbeeldingen invoegen, zowel inline als zwevend, met behulp van de`DocumentBuilder`. Hier zijn voorbeelden van beide:
+ A: U kunt afbeeldingen invoegen, zowel inline als zwevend, met behulp van de`DocumentBuilder`Hier zijn voorbeelden van beide:
 
 #### Inline-afbeelding:
 
@@ -269,7 +269,7 @@ doc.updateFields();
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Voeg een inlineafbeelding in
+// Een inline-afbeelding invoegen
 builder.insertImage("path/to/your/image.png");
 ```
 
@@ -279,11 +279,11 @@ builder.insertImage("path/to/your/image.png");
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Voeg een zwevende afbeelding in
+// Een zwevende afbeelding invoegen
 builder.insertImage("path/to/your/image.png", RelativeHorizontalPosition.MARGIN, 100.0, RelativeVerticalPosition.MARGIN, 100.0, 200.0, 100.0, WrapType.SQUARE);
 ```
 
-### Vraag: Kan ik tekst en alinea's opmaken wanneer ik inhoud toevoeg?
+### V: Kan ik tekst en alinea's opmaken wanneer ik inhoud toevoeg?
 
  A: Ja, u kunt tekst en alinea's opmaken met behulp van de`DocumentBuilder`. U kunt lettertype-eigenschappen, alinea-uitlijning, inspringing en meer instellen. Hier is een voorbeeld:
 
@@ -291,7 +291,7 @@ builder.insertImage("path/to/your/image.png", RelativeHorizontalPosition.MARGIN,
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Stel het lettertype en de alineaopmaak in
+// Lettertype en alinea-opmaak instellen
 Font font = builder.getFont();
 font.setSize(16.0);
 font.setBold(true);
@@ -304,23 +304,23 @@ paragraphFormat.setFirstLineIndent(8.0);
 paragraphFormat.setAlignment(ParagraphAlignment.JUSTIFY);
 paragraphFormat.setKeepTogether(true);
 
-// Voeg een opgemaakte alinea in
+// Een opgemaakte alinea invoegen
 builder.writeln("This is a formatted paragraph.");
 ```
 
-### Vraag: Hoe kan ik de cursor naar een specifieke locatie in het document verplaatsen?
+### V: Hoe kan ik de cursor naar een specifieke locatie in het document verplaatsen?
 
- A: U kunt de cursorpositie besturen met behulp van methoden zoals`moveToParagraph`, `moveToCell`en meer. Hier is een voorbeeld:
+ A: U kunt de cursorpositie regelen met behulp van methoden zoals`moveToParagraph`, `moveToCell`en meer. Hier is een voorbeeld:
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 
-// Verplaats de cursor naar een specifieke paragraaf
+// Verplaats de cursor naar een specifieke alinea
 builder.moveToParagraph(2, 0);
 
 // Voeg inhoud toe op de nieuwe cursorpositie
 builder.writeln("This is the 3rd paragraph.");
 ```
 
-Dit zijn enkele veelgestelde vragen en antwoorden om u op weg te helpen met Aspose.Words voor Java's DocumentBuilder. Als u meer vragen heeft of verdere hulp nodig heeft, raadpleegt u de[documentatie van de bibliotheek](https://reference.aspose.com/words/java/) of zoek hulp bij de Aspose.Words-gemeenschap en ondersteunende bronnen.
+Dit zijn enkele veelvoorkomende vragen en antwoorden om u te helpen aan de slag te gaan met Aspose.Words voor Java's DocumentBuilder. Als u meer vragen hebt of verdere assistentie nodig hebt, raadpleeg dan de[documentatie van de bibliotheek](https://reference.aspose.com/words/java/) of zoek hulp bij de Aspose.Words-community en ondersteuningsbronnen.

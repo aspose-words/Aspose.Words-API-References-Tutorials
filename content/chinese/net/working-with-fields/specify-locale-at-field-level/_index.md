@@ -43,7 +43,7 @@ string dataDir = "YOUR_DOCUMENT_DIRECTORY";
 
 代替`"YOUR_DOCUMENT_DIRECTORY"`与您的目录的实际路径一致。
 
-## 步骤 2：初始化 DocumentBuilder
+## 第 2 步：初始化 DocumentBuilder
 
 接下来，我们将创建一个新的实例`DocumentBuilder`.这就像我们用来创建和编辑Word文档的笔和纸。
 

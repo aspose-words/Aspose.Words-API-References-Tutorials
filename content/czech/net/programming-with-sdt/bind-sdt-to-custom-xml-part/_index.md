@@ -62,7 +62,7 @@ Zde vytvoříme novou vlastní část XML s jedinečným identifikátorem a při
 Po přidání vlastní části XML vytvoříme SDT pro zobrazení dat XML.
 
 ```csharp
-// Vytvoření značky strukturovaného dokumentu (SDT)
+//Vytvoření značky strukturovaného dokumentu (SDT)
 StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Block);
 doc.FirstSection.Body.AppendChild(sdt);
 ```
@@ -104,7 +104,7 @@ Značka strukturovaného dokumentu (SDT) je prvek pro řízení obsahu v dokumen
 Ano, můžete svázat více SDT s různými částmi XML ve stejném dokumentu, což umožňuje složité šablony řízené daty.
 
 ### Jak aktualizuji data XML ve vlastní části XML?
- Data XML můžete aktualizovat přístupem k`CustomXmlPart` objekt a přímo upravovat jeho obsah XML.
+ Data XML můžete aktualizovat přístupem k`CustomXmlPart` objekt a přímou úpravu jeho obsahu XML.
 
 ### Je možné svázat SDT s atributy XML namísto prvků?
 Ano, SDT můžete svázat s atributy XML zadáním příslušného výrazu XPath, který cílí na požadovaný atribut.

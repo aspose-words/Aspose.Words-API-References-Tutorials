@@ -67,7 +67,7 @@ extractedPages.Save(dataDir + "SplitDocument.ByPageRange.docx");
 
 ## 结论
 
-使用 Aspose.Words for .NET 按页面范围拆分 Word 文档是一个简单的过程，可以为您节省大量时间和麻烦。无论您需要提取特定部分进行协作，还是只想更有效地管理文档，本指南都提供了您入门所需的所有步骤。祝您编码愉快！
+使用 Aspose.Words for .NET 按页面范围拆分 Word 文档是一个简单的过程，可以为您节省大量时间和麻烦。无论您需要提取特定部分以进行协作，还是只想更有效地管理文档，本指南都提供了您入门所需的所有步骤。祝您编码愉快！
 
 ## 常见问题解答
 

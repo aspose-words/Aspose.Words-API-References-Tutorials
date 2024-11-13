@@ -8,7 +8,7 @@ weight: 14
 url: /de/java/document-splitting/document-splitting-extraction-techniques/
 ---
 
-In der Welt der Dokumentbearbeitung und -extraktion ist Aspose.Words für Java ein leistungsstarkes Tool. Diese umfassende Anleitung führt Sie durch die wesentlichen Schritte zum Aufteilen und Extrahieren von Dokumenten mit Aspose.Words für Java. Egal, ob Sie ein erfahrener Entwickler sind oder gerade erst mit dieser Bibliothek beginnen, diese Schritt-für-Schritt-Anleitung mit Quellcodebeispielen hilft Ihnen, die Kunst der Dokumentbearbeitung zu meistern.
+In der Welt der Dokumentbearbeitung und -extraktion sticht Aspose.Words für Java als leistungsstarkes Tool hervor. Diese umfassende Anleitung führt Sie durch die wesentlichen Schritte zum Aufteilen und Extrahieren von Dokumenten mit Aspose.Words für Java. Egal, ob Sie ein erfahrener Entwickler sind oder gerade erst mit dieser Bibliothek beginnen, diese Schritt-für-Schritt-Anleitung mit Quellcodebeispielen hilft Ihnen, die Kunst der Dokumentbearbeitung zu meistern.
 
 ## Einführung
 
@@ -94,7 +94,7 @@ Tabellen in Word-Dokumenten enthalten oft wertvolle Daten. So können Sie Tabell
 // Laden des Quelldokuments
 Document doc = new Document("input.docx");
 
-// Tabellen aus dem Dokument extrahieren
+// Extrahieren von Tabellen aus dem Dokument
 NodeList<Table> tables = doc.getChildNodes(NodeType.TABLE, true);
 
 // Tabellen durchlaufen und verarbeiten

@@ -91,7 +91,7 @@ Paragraph para = body.getFirstParagraph();
 para.appendChild(new Run(doc, "Paragraph 1. "));
 body.appendParagraph("Paragraph 2. ");
 body.appendParagraph("Paragraph 3. ");
-//Máme tři odstavce, z nichž žádný není registrován jako jakýkoli typ revize
+// Máme tři odstavce, z nichž žádný není registrován jako jakýkoli typ revize
 // Pokud při sledování revizí přidáme/odebereme jakýkoli obsah v dokumentu,
 // budou jako takové zobrazeny v dokumentu a lze je přijmout/odmítnout.
 doc.startTrackRevisions("John Doe", new Date());
@@ -112,7 +112,7 @@ doc.acceptAllRevisions();
 Assert.assertEquals(3, paragraphs.getCount());
 Assert.assertEquals(para.getRuns().getCount(), 0); //byl Is.Empty
 // Zastavení sledování revizí způsobí, že se tento text zobrazí jako normální text.
-// Při změně dokumentu se revize nepočítají.
+//Při změně dokumentu se revize nepočítají.
 doc.stopTrackRevisions();
 // Uložte dokument.
 doc.save(outPath + "WorkingWithRevisions.AcceptRevisions.docx");

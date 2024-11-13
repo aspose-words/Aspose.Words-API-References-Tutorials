@@ -28,7 +28,7 @@ using Aspose.Words;
 using Aspose.Words.Drawing;
 ```
 
-现在，让我们将流程分解为简单的步骤。每个步骤都会有一个标题和详细的说明，以确保您顺利完成。
+现在，让我们将流程分解为简单的步骤。每个步骤都会有一个标题和详细说明，以确保您顺利完成。
 
 ## 步骤 1：初始化 DocumentBuilder
 

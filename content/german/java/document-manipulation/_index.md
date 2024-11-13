@@ -21,7 +21,7 @@ Aspose.Words für Java ist eine leistungsstarke und vielseitige API, mit der Ent
 
 ### Installation und Setup
 
-Der erste Schritt auf Ihrem Weg zum Dokumentenbearbeitungsprofi ist die Einrichtung von Aspose.Words für Java. Unser umfassendes Tutorial führt Sie durch den Installationsprozess und sorgt dafür, dass Sie die API in kürzester Zeit einsatzbereit haben.
+Der erste Schritt auf Ihrem Weg zum Dokumentenbearbeitungsprofi ist die Einrichtung von Aspose.Words für Java. Unser umfassendes Tutorial führt Sie durch den Installationsprozess und sorgt dafür, dass Sie die API in kürzester Zeit zum Laufen bringen.
 
 ### Erstellen und Ändern von Dokumenten
 
@@ -63,7 +63,7 @@ Erfahren Sie, wie Sie mit Aspose.Words für Java Text in Word-Dokumenten suchen 
 ### [Entfernen von Inhalten aus Dokumenten in Aspose.Words für Java](./removing-content-from-documents/)
 Erfahren Sie, wie Sie mit Aspose.Words für Java Inhalte aus Word-Dokumenten in Java entfernen. Entfernen Sie Seitenumbrüche, Abschnittsumbrüche und mehr. Optimieren Sie Ihre Dokumentverarbeitung.
 ### [Verwenden von Lesezeichen in Aspose.Words für Java](./using-bookmarks/)
-Optimieren Sie Ihre Dokumentverarbeitung mit Aspose.Words für Java. In dieser Schritt-für-Schritt-Anleitung erfahren Sie, wie Sie Lesezeichen für eine effiziente Inhaltsnavigation und -bearbeitung verwenden.
+Optimieren Sie Ihre Dokumentverarbeitung mit Aspose.Words für Java. Erfahren Sie in dieser Schritt-für-Schritt-Anleitung, wie Sie Lesezeichen für eine effiziente Inhaltsnavigation und -bearbeitung verwenden.
 ### [Verwenden von Dokumentbereichen in Aspose.Words für Java](./using-document-ranges/)
 Meistern Sie die Dokumentbereichsmanipulation in Aspose.Words für Java. Lernen Sie mit diesem umfassenden Handbuch, Text zu löschen, zu extrahieren und zu formatieren.
 ### [Verwenden von Structured Document Tags (SDT) in Aspose.Words für Java](./using-structured-document-tags/)

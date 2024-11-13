@@ -1,28 +1,28 @@
 ---
-title: Verwijder de inhoudsopgave in een Word-document
-linktitle: Verwijder de inhoudsopgave in een Word-document
-second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u een inhoudsopgave (TOC) uit Word-documenten verwijdert met Aspose.Words voor .NET met deze eenvoudig te volgen zelfstudie.
+title: Inhoudsopgave verwijderen uit Word-document
+linktitle: Inhoudsopgave verwijderen uit Word-document
+second_title: Aspose.Words API voor documentverwerking
+description: Leer hoe u een inhoudsopgave (TOC) verwijdert uit Word-documenten met Aspose.Words voor .NET met deze eenvoudig te volgen tutorial.
 type: docs
 weight: 10
 url: /nl/net/remove-content/remove-table-of-contents/
 ---
 ## Invoering
 
-Bent u het beu om met een ongewenste inhoudsopgave (TOC) in uw Word-documenten te kampen? We hebben het allemaal meegemaakt; soms is de TOC gewoon niet nodig. Gelukkig voor jou maakt Aspose.Words voor .NET het gemakkelijk om een inhoudsopgave programmatisch te verwijderen. In deze tutorial leid ik je stap voor stap door het proces, zodat je het binnen de kortste keren onder de knie hebt. Laten we er meteen in duiken!
+Bent u het zat om te moeten omgaan met een ongewenste inhoudsopgave (TOC) in uw Word-documenten? We hebben het allemaal wel eens meegemaakt: soms is de TOC gewoon niet nodig. Gelukkig voor u maakt Aspose.Words voor .NET het eenvoudig om een TOC programmatisch te verwijderen. In deze tutorial zal ik u stap voor stap door het proces leiden, zodat u het in een mum van tijd onder de knie hebt. Laten we er meteen induiken!
 
 ## Vereisten
 
-Voordat we aan de slag gaan, zorgen we ervoor dat u over alles beschikt wat u nodig heeft:
+Voordat we beginnen, willen we ervoor zorgen dat u alles heeft wat u nodig hebt:
 
-1.  Aspose.Words voor .NET-bibliotheek: als u dat nog niet heeft gedaan, downloadt en installeert u de Aspose.Words voor .NET-bibliotheek van de[Aspose.Releases](https://releases.aspose.com/words/net/).
-2. Ontwikkelomgeving: Een IDE zoals Visual Studio maakt het coderen eenvoudiger.
-3. .NET Framework: Zorg ervoor dat .NET Framework is geïnstalleerd.
-4. Word-document: Zorg voor een Word-document (.docx) met een inhoudsopgave die u wilt verwijderen.
+1.  Aspose.Words voor .NET-bibliotheek: Als u dit nog niet hebt gedaan, downloadt en installeert u de Aspose.Words voor .NET-bibliotheek van de[Aspose.Releases](https://releases.aspose.com/words/net/).
+2. Ontwikkelomgeving: Een IDE zoals Visual Studio maakt coderen eenvoudiger.
+3. .NET Framework: Zorg ervoor dat u .NET Framework hebt geïnstalleerd.
+4. Word-document: U hebt een Word-document (.docx) met een inhoudsopgave die u wilt verwijderen.
 
 ## Naamruimten importeren
 
-Laten we eerst de benodigde naamruimten importeren. Hiermee wordt de omgeving ingesteld voor het gebruik van Aspose.Words.
+Laten we eerst de benodigde namespaces importeren. Dit zet de omgeving op voor het gebruik van Aspose.Words.
 
 ```csharp
 using System;
@@ -31,11 +31,11 @@ using Aspose.Words;
 using Aspose.Words.Fields;
 ```
 
-Laten we nu het proces van het verwijderen van een inhoudsopgave uit een Word-document opsplitsen in duidelijke, beheersbare stappen.
+Laten we het proces voor het verwijderen van een inhoudsopgave uit een Word-document opsplitsen in duidelijke, beheersbare stappen.
 
 ## Stap 1: Stel uw documentenmap in
 
-Voordat we uw document kunnen manipuleren, moeten we definiëren waar het zich bevindt. Dit is het pad naar uw documentmap.
+Voordat we uw document kunnen bewerken, moeten we definiëren waar het zich bevindt. Dit is het pad van uw documentdirectory.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -51,7 +51,7 @@ Vervolgens moeten we het Word-document in onze applicatie laden. Aspose.Words ma
 Document doc = new Document(dataDir + "your-document.docx");
 ```
 
- Vervangen`"your-document.docx"` met de naam van uw bestand. Met deze coderegel wordt uw document geladen, zodat we eraan kunnen gaan werken.
+ Vervangen`"your-document.docx"` met de naam van uw bestand. Deze regel code laadt uw document, zodat we eraan kunnen gaan werken.
 
 ## Stap 3: Identificeer en verwijder het TOC-veld
 
@@ -63,9 +63,9 @@ doc.Range.Fields.Where(f => f.Type == FieldType.FieldTOC).ToList()
 ```
 
 Dit is wat er gebeurt:
-- `doc.Range.Fields`: Hiermee heeft u toegang tot alle velden in het document.
-- `.Where(f => f.Type == FieldType.FieldTOC)`Hiermee worden de velden gefilterd om alleen de inhoudsopgaven te vinden.
-- `.ToList().ForEach(f => f.Remove())`: Dit converteert de gefilterde velden naar een lijst en verwijdert ze allemaal.
+- `doc.Range.Fields`: Hiermee krijgt u toegang tot alle velden in het document.
+- `.Where(f => f.Type == FieldType.FieldTOC)`Hiermee worden de velden gefilterd, zodat alleen de velden worden gevonden die inhoudsopgaven zijn.
+- `.ToList().ForEach(f => f.Remove())`: Hiermee worden de gefilterde velden omgezet in een lijst en worden ze stuk voor stuk verwijderd.
 
 ## Stap 4: Sla het gewijzigde document op
 
@@ -75,21 +75,21 @@ Ten slotte moeten we onze wijzigingen opslaan. U kunt het document onder een nie
 doc.Save(dataDir + "modified-document.docx", SaveFormat.Docx);
 ```
 
- Op deze regel wordt uw document opgeslagen met de aangebrachte wijzigingen. Vervangen`"modified-document.docx"` met uw gewenste bestandsnaam.
+ Met deze regel slaat u uw document op met de aangebrachte wijzigingen. Vervangen`"modified-document.docx"` met de gewenste bestandsnaam.
 
 ## Conclusie
 
-En daar heb je het! Het verwijderen van een inhoudsopgave uit een Word-document met Aspose.Words voor .NET is eenvoudig als u het in deze eenvoudige stappen opsplitst. Deze krachtige bibliotheek helpt niet alleen bij het verwijderen van inhoudsopgaven, maar kan ook een groot aantal andere documentmanipulaties aan. Dus ga je gang en probeer het eens!
+En daar heb je het! Het verwijderen van een TOC uit een Word-document met Aspose.Words voor .NET is eenvoudig als je het opsplitst in deze eenvoudige stappen. Deze krachtige bibliotheek helpt niet alleen bij het verwijderen van TOC's, maar kan ook een groot aantal andere documentmanipulaties aan. Dus ga je gang en probeer het eens!
 
 ## Veelgestelde vragen
 
 ### Wat is Aspose.Words voor .NET?
 
-Aspose.Words voor .NET is een robuuste .NET-bibliotheek voor documentmanipulatie, waarmee ontwikkelaars Word-documenten programmatisch kunnen maken, wijzigen en converteren.
+Aspose.Words voor .NET is een robuuste .NET-bibliotheek voor documentmanipulatie, waarmee ontwikkelaars programmatisch Word-documenten kunnen maken, wijzigen en converteren.
 
 ### Kan ik Aspose.Words gratis gebruiken?
 
- Ja, je kunt Aspose.Words gebruiken met een[gratis proefperiode](https://releases.aspose.com/) of krijg een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/).
+ Ja, je kunt Aspose gebruiken. Woorden met een[gratis proefperiode](https://releases.aspose.com/) of krijg een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/).
 
 ### Is het mogelijk om andere velden te verwijderen met Aspose.Words?
 
@@ -97,7 +97,7 @@ Absoluut! U kunt elk veld verwijderen door het type ervan op te geven in de filt
 
 ### Heb ik Visual Studio nodig om Aspose.Words te gebruiken?
 
-Hoewel Visual Studio ten zeerste wordt aanbevolen vanwege het gemak van de ontwikkeling, kunt u elke IDE gebruiken die .NET ondersteunt.
+Hoewel Visual Studio sterk wordt aanbevolen vanwege het gebruiksgemak bij de ontwikkeling, kunt u elke IDE gebruiken die .NET ondersteunt.
 
 ### Waar kan ik meer informatie vinden over Aspose.Words?
 

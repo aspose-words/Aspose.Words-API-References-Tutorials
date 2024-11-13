@@ -31,7 +31,7 @@ using Aspose.Words.Rendering;
 using System;
 ```
 
-## Schritt 1: Dokumentverzeichnis definieren
+## Schritt 1: Definieren Sie das Dokumentverzeichnis
 
 Definieren Sie zunächst das Verzeichnis, in dem Ihr Dokument gespeichert ist. Dies ist wichtig, damit Sie Ihr Dokument finden und verarbeiten können.
 
@@ -48,7 +48,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "WMF with image.docx");
 ```
 
-## Schritt 3: Konfigurieren der Optionen für die Metadateiwiedergabe
+## Schritt 3: Konfigurieren der Metadatei-Rendering-Optionen
 
 Richten Sie die Optionen zum Rendern von Metadateien ein, um zu bestimmen, wie Metadateien (z. B. WMF-Dateien) während des Renderns verarbeitet werden.
 
@@ -73,7 +73,7 @@ PdfSaveOptions saveOptions = new PdfSaveOptions
 
 ## Schritt 5: Implementieren des Warn-Callbacks
 
- Erstellen Sie eine Klasse, die das implementiert`IWarningCallback` Schnittstelle zur Behandlung aller während der Dokumentverarbeitung generierten Warnungen.
+ Erstellen Sie eine Klasse, die das`IWarningCallback` Schnittstelle zur Behandlung aller während der Dokumentverarbeitung generierten Warnungen.
 
 ```csharp
 public class HandleDocumentWarnings : IWarningCallback
@@ -96,7 +96,7 @@ public class HandleDocumentWarnings : IWarningCallback
 
 ## Schritt 6: Warn-Callback zuweisen und Dokument speichern
 
-Weisen Sie dem Dokument den Warn-Callback zu und speichern Sie es als PDF. Alle Warnungen, die während des Speichervorgangs auftreten, werden vom Callback gesammelt und verarbeitet.
+Weisen Sie dem Dokument den Warn-Callback zu und speichern Sie es als PDF. Eventuelle Warnungen, die während des Speichervorgangs auftreten, werden vom Callback erfasst und verarbeitet.
 
 ```csharp
 HandleDocumentWarnings callback = new HandleDocumentWarnings();

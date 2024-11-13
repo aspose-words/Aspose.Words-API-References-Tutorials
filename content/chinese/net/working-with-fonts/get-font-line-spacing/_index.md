@@ -9,7 +9,7 @@ url: /zh/net/working-with-fonts/get-font-line-spacing/
 ---
 ## 介绍
 
-Aspose.Words for .NET 是一个功能强大的库，允许您以编程方式创建、操作和转换 Word 文档。您可能需要执行的一项常见任务是检索文档中特定字体的行距。在本教程中，我们将逐步引导您完成该过程，确保您可以使用 Aspose.Words for .NET 轻松获取字体行距。 
+Aspose.Words for .NET 是一个功能强大的库，允许您以编程方式创建、操作和转换 Word 文档。您可能需要执行的一项常见任务是检索文档中特定字体的行距。在本教程中，我们将逐步指导您完成该过程，确保您可以使用 Aspose.Words for .NET 轻松获取字体行距。 
 
 ## 先决条件
 
@@ -39,7 +39,7 @@ using Aspose.Words.Fonts;
 Document doc = new Document();
 ```
 
-## 步骤 2：初始化 DocumentBuilder
+## 第 2 步：初始化 DocumentBuilder
 
 接下来，我们需要初始化`DocumentBuilder`对象。该对象将帮助我们构建和操作文档内容。
 

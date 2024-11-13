@@ -21,14 +21,14 @@ Převod dokumentů může být složitý proces, zejména pokud se jedná o růz
 ## Rozsáhlá podpora formátů: 
 Aspose.Words podporuje širokou škálu formátů dokumentů, včetně DOCX, DOC, RTF, PDF, EPUB, HTML a dalších. To znamená, že můžete snadno převádět dokumenty do az různých formátů.
 
-## High Fidelity konverze: 
+## Vysoce věrná konverze: 
 Při převodu dokumentů je zásadní zachování věrnosti obsahu. Aspose.Words zajišťuje, že převedené dokumenty přesně zachovávají původní formátování, styly, obrázky a další prvky.
 
 ## Sloučení dokumentů: 
 Aspose.Words umožňuje sloučit více dokumentů do jednoho, což usnadňuje správu a distribuci informací.
 
 ## Funkce zpracování textu: 
-Aspose.Words můžete provádět pokročilé úlohy zpracování textu, jako je vyhledávání a nahrazování textu, práce s odstavci a tabulkami a manipulace s metadaty dokumentu.
+S Aspose.Words můžete provádět pokročilé úlohy zpracování textu, jako je vyhledávání a nahrazování textu, práce s odstavci a tabulkami a manipulace s metadaty dokumentu.
 
 ## Nezávislost na platformě: 
 Aspose.Words je nezávislý na platformě, což znamená, že bezproblémově funguje na různých operačních systémech, díky čemuž je univerzální a přizpůsobitelný pro různá vývojová prostředí.
@@ -84,34 +84,12 @@ doc.save("output.html", SaveFormat.HTML);
 doc.save("output.epub", SaveFormat.EPUB);
 ```
 
-## Krok 5: Zpracování náhrady písem
-
-Náhrada písem je běžným problémem při převodu dokumentů. Aspose.Words poskytuje mechanismus pro zpracování náhrady písem, aby byla zajištěna vizuální konzistence převedeného dokumentu:
-
-```java
-// Povolit nahrazování písem
-FontSettings.setFontsFolder("/path/to/fonts", true);
-```
-
-## Krok 6: Přizpůsobení procesu převodu
-
-Aspose.Words nabízí širokou škálu možností přizpůsobení procesu převodu dokumentu. Můžete například nastavit rozsah stránek pro převod nebo určit rozlišení obrázku při ukládání do PDF:
-
-```java
-// Nastavte rozsah stránek pro převod (převeďte stránky 1 na 3)
-PdfSaveOptions options = new PdfSaveOptions();
-options.setPageSet(new PageSet(1, 3));
-
-// Nastavte rozlišení obrazu na 300 DPI
-options.setJpegQuality(300);
-```
-
 ## Tipy pro efektivní převod dokumentů
 
 Chcete-li zajistit hladký a efektivní proces převodu dokumentů, zvažte následující tipy:
 
 ## Kompatibilita formátu dokumentu: 
- Ujistěte se, že zdrojový a cílový formát jsou kompatibilní s Aspose.Words.[Aspose.Words Java API Reference](https://reference.aspose.com/words/java/) pro podporované formáty.
+Ujistěte se, že zdrojový a cílový formát jsou kompatibilní s Aspose.Words.[Aspose.Words Java API Reference](https://reference.aspose.com/words/java/) pro podporované formáty.
 
 ## Manipulační výjimky: 
 Při práci s velkým počtem dokumentů může během procesu převodu dojít k chybám. Implementujte správné zpracování výjimek, abyste tyto problémy mohli elegantně identifikovat a řešit.

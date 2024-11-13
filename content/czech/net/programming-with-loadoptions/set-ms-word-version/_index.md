@@ -60,7 +60,7 @@ Document doc = new Document(dataDir + "Document.docx", loadOptions);
 
 ## Krok 4: Uložte dokument
 
-Nakonec, jakmile je váš dokument načten a jsou provedeny všechny požadované manipulace, uložíte jej. Je to jako stisknout tlačítko Uložit po provedení změn ve Wordu.
+Nakonec, jakmile je váš dokument načten a jsou provedeny požadované manipulace, uložíte jej. Je to jako stisknout tlačítko Uložit po provedení změn ve Wordu.
 
 ```csharp
 // Uložte dokument

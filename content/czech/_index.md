@@ -14,6 +14,7 @@ Tyto výukové programy nabízejí jasné a podrobné pokyny, jak programově pr
 {{% /alert %}}
 
 Zde jsou odkazy na některé užitečné zdroje:
+- [Zpracování dokumentů s technologií AI](./net/ai-powered-document-processing/)
 - [Použít licenci](./net/apply-license/)   
 - [Povolit funkce OpenType](./net/enable-opentype-features/)   
 - [Práce s komentáři](./net/working-with-comments/)   
@@ -22,7 +23,7 @@ Zde jsou odkazy na některé užitečné zdroje:
 - [Práce s FormFields](./net/working-with-formfields/)   
 - [Práce se záhlavím a zápatím](./net/working-with-headers-and-footers/)   
 - [Práce s dělením slov](./net/working-with-hyphenation/)   
-- [Práce se Seznamem](./net/working-with-list/)   
+- [Práce se seznamem](./net/working-with-list/)   
 - [Práce s Markdown](./net/working-with-markdown/)   
 - [Práce s Node](./net/working-with-node/)   
 - [Práce s revizemi](./net/working-with-revisions/)   

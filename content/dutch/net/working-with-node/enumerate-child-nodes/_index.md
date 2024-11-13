@@ -1,27 +1,27 @@
 ---
-title: Onderliggende knooppunten opsommen
-linktitle: Onderliggende knooppunten opsommen
-second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u onderliggende knooppunten in een Word-document kunt opsommen met behulp van Aspose.Words voor .NET met deze stapsgewijze zelfstudie.
+title: Opsomming van onderliggende knooppunten
+linktitle: Opsomming van onderliggende knooppunten
+second_title: Aspose.Words API voor documentverwerking
+description: Leer hoe u onderliggende knooppunten in een Word-document kunt nummeren met Aspose.Words voor .NET met deze stapsgewijze zelfstudie.
 type: docs
 weight: 10
 url: /nl/net/working-with-node/enumerate-child-nodes/
 ---
 ## Invoering
 
-Programmatisch met documenten werken kan een fluitje van een cent zijn met de juiste tools. Aspose.Words voor .NET is zo'n krachtige bibliotheek waarmee ontwikkelaars gemakkelijk Word-documenten kunnen manipuleren. Vandaag doorlopen we het proces van het opsommen van onderliggende knooppunten binnen een Word-document met behulp van Aspose.Words voor .NET. Deze stapsgewijze handleiding behandelt alles, van de vereisten tot praktische voorbeelden, zodat u een goed begrip van het proces krijgt.
+Met de juiste tools kan programmatisch werken met documenten een fluitje van een cent zijn. Aspose.Words voor .NET is zo'n krachtige bibliotheek waarmee ontwikkelaars Word-documenten eenvoudig kunnen bewerken. Vandaag doorlopen we het proces van het opsommen van onderliggende knooppunten in een Word-document met Aspose.Words voor .NET. Deze stapsgewijze handleiding behandelt alles van vereisten tot praktische voorbeelden, zodat u het proces goed begrijpt.
 
 ## Vereisten
 
-Voordat we in de code duiken, bespreken we eerst de essentiële vereisten om een soepele ervaring te garanderen:
+Voordat we in de code duiken, bespreken we de essentiële vereisten om een soepele ervaring te garanderen:
 
 1. Ontwikkelomgeving: Zorg ervoor dat Visual Studio of een andere .NET-compatibele IDE is geïnstalleerd.
-2.  Aspose.Words voor .NET: Download de Aspose.Words voor .NET-bibliotheek van de[pagina vrijgeven](https://releases.aspose.com/words/net/).
-3.  Licentie: Verkrijg een gratis proefversie of een tijdelijke licentie van[hier](https://purchase.aspose.com/temporary-license/).
+2.  Aspose.Words voor .NET: Download de Aspose.Words voor .NET-bibliotheek van de[vrijgavepagina](https://releases.aspose.com/words/net/).
+3.  Licentie: Ontvang een gratis proefversie of een tijdelijke licentie van[hier](https://purchase.aspose.com/temporary-license/).
 
 ## Naamruimten importeren
 
-Voordat u begint met coderen, moet u ervoor zorgen dat u de benodigde naamruimten importeert. Hierdoor hebt u naadloos toegang tot de Aspose.Words-klassen en -methoden.
+Voordat u begint met coderen, moet u ervoor zorgen dat u de benodigde namespaces importeert. Dit zal u in staat stellen om naadloos toegang te krijgen tot de Aspose.Words-klassen en -methoden.
 
 ```csharp
 using System;
@@ -30,41 +30,41 @@ using Aspose.Words;
 
 ## Stap 1: Initialiseer het document
 
-De eerste stap omvat het maken van een nieuw Word-document of het laden van een bestaand document. Dit document zal dienen als uitgangspunt voor de opsomming.
+De eerste stap is het maken van een nieuw Word-document of het laden van een bestaand document. Dit document zal dienen als ons startpunt voor de opsomming.
 
 ```csharp
 Document doc = new Document();
 ```
 
-In dit voorbeeld beginnen we met een leeg document, maar u kunt een bestaand document laden met:
+In dit voorbeeld beginnen we met een leeg document, maar u kunt een bestaand document laden met behulp van:
 
 ```csharp
 Document doc = new Document("path/to/your/document.docx");
 ```
 
-## Stap 2: Open de eerste alinea
+## Stap 2: Toegang tot de eerste alinea
 
-Vervolgens moeten we toegang krijgen tot een specifieke paragraaf in het document. Voor de eenvoud nemen we de eerste alinea.
+Vervolgens moeten we een specifieke paragraaf binnen het document benaderen. Voor de eenvoud nemen we de eerste paragraaf.
 
 ```csharp
 Paragraph paragraph = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
-Deze code haalt het eerste alineaknooppunt in het document op. Als uw document specifieke alinea's bevat waarop u zich wilt richten, past u de index dienovereenkomstig aan.
+Deze code haalt de eerste alinea-node in het document op. Als uw document specifieke alinea's heeft die u wilt targeten, past u de index dienovereenkomstig aan.
 
-## Stap 3: Onderliggende knooppunten ophalen
+## Stap 3: Child Nodes ophalen
 
-Nu we onze paragraaf hebben, is het tijd om de onderliggende knooppunten op te halen. Onderliggende knooppunten kunnen reeksen, vormen of andere soorten knooppunten binnen de alinea zijn.
+Nu we onze paragraaf hebben, is het tijd om de onderliggende knooppunten op te halen. Onderliggende knooppunten kunnen runs, vormen of andere typen knooppunten binnen de paragraaf zijn.
 
 ```csharp
 NodeCollection children = paragraph.GetChildNodes(NodeType.Any, false);
 ```
 
-Deze coderegel verzamelt alle onderliggende knooppunten van elk type binnen de opgegeven paragraaf.
+Deze coderegel verzamelt alle onderliggende knooppunten van elk type binnen de opgegeven alinea.
 
-## Stap 4: Herhaal de onderliggende knooppunten
+## Stap 4: Itereren door onderliggende knooppunten
 
-Met de onderliggende knooppunten in de hand kunnen we ze doorlopen om specifieke acties uit te voeren op basis van hun typen. In dit geval drukken we de tekst van alle gevonden runknooppunten af.
+Met de child nodes in de hand kunnen we erdoorheen itereren om specifieke acties uit te voeren op basis van hun typen. In dit geval printen we de tekst van alle gevonden run nodes.
 
 ```csharp
 foreach (Node child in children)
@@ -79,24 +79,24 @@ foreach (Node child in children)
 
 ## Stap 5: Voer uw code uit en test deze
 
-Compileer en voer uw toepassing uit. Als je alles correct hebt ingesteld, zou je de tekst van elk runknooppunt in de eerste alinea moeten zien, afgedrukt op de console.
+Compileer en voer uw applicatie uit. Als u alles correct hebt ingesteld, zou u de tekst van elke run node in de eerste alinea op de console moeten zien.
 
 ## Conclusie
 
-Het opsommen van onderliggende knooppunten in een Word-document met Aspose.Words voor .NET is eenvoudig zodra u de basisstappen begrijpt. Door het document te initialiseren, toegang te krijgen tot specifieke alinea's, onderliggende knooppunten op te halen en deze te doorlopen, kunt u Word-documenten gemakkelijk programmatisch manipuleren. Aspose.Words biedt een robuuste API om verschillende documentelementen te verwerken, waardoor het een onmisbaar hulpmiddel is voor .NET-ontwikkelaars.
+Het opsommen van onderliggende knooppunten in een Word-document met Aspose.Words voor .NET is eenvoudig zodra u de basisstappen begrijpt. Door het document te initialiseren, specifieke paragrafen te openen, onderliggende knooppunten op te halen en erdoorheen te itereren, kunt u Word-documenten eenvoudig programmatisch manipuleren. Aspose.Words biedt een robuuste API om verschillende documentelementen te verwerken, waardoor het een onmisbaar hulpmiddel is voor .NET-ontwikkelaars.
 
- Voor meer gedetailleerde documentatie en geavanceerd gebruik, bezoek de[Aspose.Words voor .NET API-documentatie](https://reference.aspose.com/words/net/) . Als je extra ondersteuning nodig hebt, bekijk dan de[ondersteuningsforums](https://forum.aspose.com/c/words/8).
+ Voor meer gedetailleerde documentatie en geavanceerd gebruik, bezoek de[Aspose.Words voor .NET API-documentatie](https://reference.aspose.com/words/net/) Als u extra ondersteuning nodig hebt, bekijk dan de[ondersteuningsforums](https://forum.aspose.com/c/words/8).
 
 ## Veelgestelde vragen
 
-### Welke soorten knooppunten kan een alinea bevatten?
-Een alinea kan knooppunten bevatten zoals reeksen, vormen, opmerkingen en andere inline-elementen.
+### Welke typen knooppunten kan een alinea bevatten?
+Een alinea kan knooppunten bevatten, zoals runs, vormen, opmerkingen en andere inline-elementen.
 
 ### Hoe kan ik een bestaand Word-document laden?
- U kunt een bestaand document laden met`Document doc = new Document("path/to/your/document.docx");`.
+ U kunt een bestaand document laden met behulp van`Document doc = new Document("path/to/your/document.docx");`.
 
-### Kan ik naast Run ook andere knooppunttypen manipuleren?
- Ja, u kunt verschillende knooppunttypen, zoals vormen, opmerkingen en meer, manipuleren door hun aan te vinken`NodeType`.
+### Kan ik andere knooppunttypen dan Run manipuleren?
+ Ja, u kunt verschillende knooppunttypen zoals vormen, opmerkingen en meer manipuleren door hun`NodeType`.
 
 ### Heb ik een licentie nodig om Aspose.Words voor .NET te gebruiken?
  U kunt beginnen met een gratis proefperiode of een tijdelijke licentie verkrijgen via[hier](https://purchase.aspose.com/temporary-license/).

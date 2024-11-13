@@ -59,13 +59,10 @@ Document doc = new Document(dataDir + "Rendering.docx");
 Για να διασφαλίσετε ότι οι εικόνες παρεμβάλλονται, πρέπει να ρυθμίσετε τις παραμέτρους του`PdfSaveOptions`. Αυτή η κλάση σάς επιτρέπει να ορίσετε διάφορες επιλογές για τον τρόπο αποθήκευσης του εγγράφου σας ως PDF. Συγκεκριμένα, θέλετε να ενεργοποιήσετε την παρεμβολή εικόνας.
 
 ```csharp
-PdfSaveOptions saveOptions = new PdfSaveOptions 
-{ 
-	InterpolateImages = true
-};
+PdfSaveOptions saveOptions = new PdfSaveOptions { InterpolateImages = true };
 ```
 
- Ο`InterpolateImages` ιδιοκτησία έχει οριστεί σε`true` για να διασφαλίσετε ότι οι εικόνες στο PDF σας παρεμβάλλονται, βελτιώνοντας την ποιότητά τους.
+Ο`InterpolateImages` ιδιοκτησία έχει οριστεί σε`true` για να διασφαλίσετε ότι οι εικόνες στο PDF σας παρεμβάλλονται, βελτιώνοντας την ποιότητά τους.
 
 ## Βήμα 4: Αποθηκεύστε το Έγγραφο ως PDF
 

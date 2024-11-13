@@ -124,7 +124,7 @@ doc = new Document(dataDir + "DocumentProtection.UnrestrictedSection.docx");
 
 ## 結論
 
-現在你就得到它了！透過執行這些步驟，您已使用 Aspose.Words for .NET 成功建立了一個包含受保護和未受保護部分的 Word 文件。當您需要鎖定文件的某些部分，同時保持其他部分可編輯時，此方法非常有用。
+現在你就擁有了！透過執行這些步驟，您已使用 Aspose.Words for .NET 成功建立了一個包含受保護和未受保護部分的 Word 文件。當您需要鎖定文件的某些部分，同時保持其他部分可編輯時，此方法非常有用。
 
 ## 常見問題解答
 

@@ -10,7 +10,7 @@ url: /zh-hant/java/using-document-elements/using-footnotes-and-endnotes/
 
 在本教程中，我們將引導您完成在 Aspose.Words for Java 中使用腳註和尾註的過程。腳註和尾註是文件格式中的基本元素，通常用於引文、參考文獻和附加資訊。 Aspose.Words for Java 提供了強大的功能來無縫處理腳註和尾註。
 
-## 1. 註腳和尾註簡介
+## 1. 註腳和尾註介紹
 
 腳註和尾註是文件中提供補充資訊或引文的註釋。腳註出現在頁面底部，而尾註則收集在章節或文件的末尾。它們通常用於學術論文、報告和法律文件中以引用來源或澄清內容。
 

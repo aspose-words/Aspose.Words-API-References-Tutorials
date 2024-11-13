@@ -75,11 +75,11 @@ builder.InsertOleObjectAsIcon(stream, "Package", "Path_to_your_directory/Logo ic
 doc.Save(dataDir + "WorkingWithOleObjectsAndActiveX.InsertOleObjectAsIconUsingStream.docx");
 ```
 
-這一步驟就像將完成的畫放在框架中並將其掛在牆上。您的文件現在可以使用了！
+這一步就像是將完成的畫放入畫框並掛在牆上。您的文件現在可以使用了！
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 成功將 OLE 物件作為圖示嵌入到 Word 文件中。這項強大的功能可以幫助您輕鬆建立動態和互動式文件。無論您是嵌入簡報、電子表格或其他文件，Aspose.Words 都能讓一切變得輕而易舉。因此，請繼續嘗試一下，看看它可以為您的文件帶來什麼改變！
+現在你就擁有了！您已使用 Aspose.Words for .NET 成功將 OLE 物件作為圖示嵌入到 Word 文件中。這項強大的功能可以幫助您輕鬆建立動態和互動式文件。無論您是嵌入簡報、電子表格或其他文件，Aspose.Words 都能讓一切變得輕而易舉。因此，請繼續嘗試一下，看看它可以為您的文件帶來什麼改變！
 
 ## 常見問題解答
 

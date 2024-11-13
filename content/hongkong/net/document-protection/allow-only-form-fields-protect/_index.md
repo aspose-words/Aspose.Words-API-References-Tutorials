@@ -81,7 +81,7 @@ doc.Save(dataDir + "DocumentProtection.AllowOnlyFormFieldsProtect.docx");
 
 ## 結論
 
-現在你就得到它了！您剛剛學習如何保護 Word 文檔，以便只能使用 Aspose.Words for .NET 編輯表單欄位。當您需要確保文件的某些部分保持不變同時允許填寫特定欄位時，這是一個方便的功能。
+現在你就擁有了！您剛剛學習如何保護 Word 文檔，以便只能使用 Aspose.Words for .NET 編輯表單欄位。當您需要確保文件的某些部分保持不變同時允許填寫特定欄位時，這是一個方便的功能。
 
 ## 常見問題解答
 
@@ -94,7 +94,7 @@ doc.Save(dataDir + "DocumentProtection.AllowOnlyFormFieldsProtect.docx");
 ###	 是否可以為不同的部分使用不同的密碼？  
 不，Aspose.Words 中的文件級保護適用於整個文件。您不能為不同的部分指派不同的密碼。
 
-###	 如果使用了錯誤的密碼會怎樣？  
+###	 如果使用錯誤的密碼會怎樣？  
 如果使用的密碼不正確，文件將保持受保護狀態，並且不會套用指定的變更。
 
 ###	 我可以以程式方式檢查文件是否受到保護嗎？  

@@ -48,7 +48,7 @@ Document doc = new Document();
 
 ## Krok 2: Přístup k objektu tématu
 
- Jakmile máte objekt dokumentu, dalším krokem je přístup k jeho motivu. The`Theme` vlastnictvím`Document`class poskytuje přístup k různým nastavením motivů.
+ Jakmile máte objekt dokumentu, dalším krokem je přístup k jeho motivu. The`Theme` vlastnictví`Document`class poskytuje přístup k různým nastavením motivů.
 
 ```csharp
 Aspose.Words.Themes.Theme theme = doc.Theme;
@@ -64,7 +64,7 @@ Motivy v dokumentech aplikace Word často obsahují nastavení pro různé typy 
 Console.WriteLine(theme.MajorFonts.Latin);
 ```
 
- The`MajorFonts` vlastnost poskytuje přístup k hlavním nastavením písma. V tomto příkladu konkrétně načítáme latinské písmo použité v motivu. Podobný kód můžete použít k získání dalších hlavních písem, jako jsou písma východní Asie nebo písma Complex Script.
+The`MajorFonts` vlastnost poskytuje přístup k hlavním nastavením písma. V tomto příkladu konkrétně načítáme latinské písmo použité v motivu. Podobný kód můžete použít k získání dalších hlavních písem, jako jsou písma východní Asie nebo písma Complex Script.
 
 ## Krok 4: Načtěte malá písma
 
@@ -84,7 +84,7 @@ Motivy také definují různé barvy použité pro akcenty v dokumentu. Chcete-l
 Console.WriteLine(theme.Colors.Accent1);
 ```
 
- The`Colors` vlastnictvím`Theme` class umožňuje načíst různé barevné akcenty definované v motivu, což umožňuje spravovat a používat konzistentní barevná schémata ve vašich dokumentech.
+The`Colors` vlastnictví`Theme` class umožňuje načíst různé barevné akcenty definované v motivu, což umožňuje spravovat a používat konzistentní barevná schémata ve vašich dokumentech.
 
 ## Závěr
 

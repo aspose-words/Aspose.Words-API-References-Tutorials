@@ -40,7 +40,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Krok 2: Inicializujte Document a DocumentBuilder
 
- Dále inicializujeme novou instanci`Document` třída. Tato instance představuje náš dokument aplikace Word. Vytvoříme také instanci`DocumentBuilder` třídy, která nám pomůže sestavit obsah dokumentu.
+ Dále inicializujeme novou instanci`Document` třída. Tato instance představuje náš dokument aplikace Word. Vytvoříme také instanci`DocumentBuilder` třídy, které nám pomohou sestavit obsah dokumentu.
 
 ```csharp
 Document doc = new Document();

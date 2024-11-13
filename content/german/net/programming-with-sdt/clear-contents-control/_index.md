@@ -31,7 +31,7 @@ using Aspose.Words;
 using Aspose.Words.Markup;
 ```
 
-Lassen Sie uns den Vorgang zum Löschen der Inhaltskontrolle in einzelne Schritte unterteilen.
+Lassen Sie uns den Vorgang zum Löschen der Inhaltskontrolle in detaillierte Schritte unterteilen.
 
 ## Schritt 1: Richten Sie Ihr Projekt ein
 
@@ -68,7 +68,7 @@ Greifen wir nun innerhalb des Dokuments auf das strukturierte Dokument-Tag (SDT)
 
 ## Schritt 4: Inhalt von SDT löschen
 
-Löscht den Inhalt des Tags für strukturierte Dokumente.
+Löschen Sie den Inhalt des strukturierten Dokumenttags.
 
 1.  SDT-Inhalte löschen: Verwenden Sie die`Clear` Methode zum Entfernen des Inhalts.
    ```csharp

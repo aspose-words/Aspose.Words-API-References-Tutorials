@@ -1,7 +1,7 @@
 ---
-title: Update Smart Art-tekening
-linktitle: Update Smart Art-tekening
-second_title: Aspose.Words-API voor documentverwerking
+title: Smart Art-tekening bijwerken
+linktitle: Smart Art-tekening bijwerken
+second_title: Aspose.Words API voor documentverwerking
 description: Leer hoe u Smart Art-tekeningen in Word-documenten kunt bijwerken met Aspose.Words voor .NET met deze stapsgewijze handleiding. Zorg ervoor dat uw beelden altijd accuraat zijn.
 type: docs
 weight: 10
@@ -9,40 +9,40 @@ url: /nl/net/programming-with-shapes/update-smart-art-drawing/
 ---
 ## Invoering
 
-Smart Art-afbeeldingen zijn een fantastische manier om informatie in Word-documenten visueel weer te geven. Of u nu een bedrijfsrapport, een educatief artikel of een presentatie opstelt, Smart Art kan complexe gegevens beter verteerbaar maken. Naarmate documenten evolueren, moeten de Smart Art-afbeeldingen daarin mogelijk worden bijgewerkt om de nieuwste wijzigingen weer te geven. Als u Aspose.Words voor .NET gebruikt, kunt u dit proces programmatisch stroomlijnen. In deze zelfstudie leert u hoe u Smart Art-tekeningen in Word-documenten kunt bijwerken met Aspose.Words voor .NET, waardoor het eenvoudiger wordt om uw beelden actueel en nauwkeurig te houden.
+Smart Art-afbeeldingen zijn een fantastische manier om informatie in Word-documenten visueel weer te geven. Of u nu een bedrijfsrapport, een educatief artikel of een presentatie opstelt, Smart Art kan complexe gegevens beter verteerbaar maken. Naarmate documenten evolueren, moeten de Smart Art-afbeeldingen erin echter mogelijk worden bijgewerkt om de laatste wijzigingen weer te geven. Als u Aspose.Words voor .NET gebruikt, kunt u dit proces programmatisch stroomlijnen. Deze tutorial leidt u door het bijwerken van Smart Art-tekeningen in Word-documenten met Aspose.Words voor .NET, waardoor het gemakkelijker wordt om uw beelden fris en nauwkeurig te houden.
 
 ## Vereisten
 
-Voordat u in de stappen duikt, moet u ervoor zorgen dat u over het volgende beschikt:
+Voordat u met de stappen begint, moet u ervoor zorgen dat u het volgende heeft:
 
-1.  Aspose.Words voor .NET: Zorg ervoor dat Aspose.Words voor .NET is geïnstalleerd. Je kunt het downloaden van de[Aspose-releasespagina](https://releases.aspose.com/words/net/).
+1.  Aspose.Words voor .NET: Zorg ervoor dat u Aspose.Words voor .NET hebt geïnstalleerd. U kunt het downloaden van de[Aspose Releases-pagina](https://releases.aspose.com/words/net/).
 
 2. .NET-omgeving: U moet een .NET-ontwikkelomgeving hebben ingesteld, zoals Visual Studio.
 
-3. Basiskennis van C#: Bekendheid met C# zal nuttig zijn, aangezien de tutorial codering omvat.
+3. Basiskennis van C#: Kennis van C# is nuttig omdat de tutorial coderen omvat.
 
-4. Voorbeelddocument: een Word-document met Smart Art dat u wilt bijwerken. Voor deze tutorial gebruiken we een document met de naam "SmartArt.docx".
+4. Voorbeelddocument: Een Word-document met Smart Art dat u wilt bijwerken. Voor deze tutorial gebruiken we een document met de naam "SmartArt.docx".
 
 ## Naamruimten importeren
 
-Als u met Aspose.Words voor .NET wilt werken, moet u de juiste naamruimten in uw project opnemen. Zo importeer je ze:
+Om met Aspose.Words voor .NET te werken, moet u de juiste naamruimten in uw project opnemen. Zo importeert u ze:
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Drawing;
 ```
 
-Deze naamruimten bieden de noodzakelijke klassen en methoden voor interactie met Word-documenten en Smart Art.
+Deze naamruimten bieden de benodigde klassen en methoden voor interactie met Word-documenten en Smart Art.
 
 ## 1. Initialiseer uw document
 
 Kop: Laad het document
 
 Uitleg:
- Eerst moet u het Word-document laden dat de Smart Art-afbeeldingen bevat. Dit wordt gedaan door een exemplaar te maken van de`Document` klasse en geef het pad naar uw document op.
+ Eerst moet u het Word-document laden dat de Smart Art-afbeeldingen bevat. Dit doet u door een instantie van de`Document` klasse en het pad naar uw document opgeven.
 
 ```csharp
-// Pad naar uw documentmap
+// Pad naar uw documentenmap
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 // Laad het document
@@ -50,14 +50,14 @@ Document doc = new Document(dataDir + "SmartArt.docx");
 ```
 
 Waarom deze stap belangrijk is:
-Door het document te laden, wordt uw werkomgeving ingesteld, zodat u de inhoud van het document programmatisch kunt manipuleren.
+Wanneer u het document laadt, wordt uw werkomgeving ingesteld, zodat u de inhoud van het document programmatisch kunt bewerken.
 
 ## 2. Identificeer slimme kunstvormen
 
 Kop: Zoek Smart Art Graphics
 
 Uitleg:
-Zodra het document is geladen, moet u bepalen welke vormen Smart Art zijn. Dit wordt bereikt door alle vormen in het document te doorlopen en te controleren of het Smart Art is.
+Zodra het document is geladen, moet u identificeren welke vormen Smart Art zijn. Dit doet u door alle vormen in het document te doorlopen en te controleren of ze Smart Art zijn.
 
 ```csharp
 // Doorloop alle vormen in het document
@@ -66,24 +66,24 @@ foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))
     // Controleer of de vorm Smart Art is
     if (shape.HasSmartArt)
     {
-        // Update Smart Art-tekening
+        // Smart Art-tekening bijwerken
         shape.UpdateSmartArtDrawing();
     }
 }
 ```
 
 Waarom deze stap belangrijk is:
-Door Smart Art-vormen te identificeren, zorgt u ervoor dat u alleen afbeeldingen probeert bij te werken die dit daadwerkelijk nodig hebben, waardoor onnodige bewerkingen worden vermeden.
+Door Smart Art-vormen te identificeren, weet u zeker dat u alleen afbeeldingen bijwerkt die dat ook daadwerkelijk nodig hebben. Zo vermijdt u onnodige bewerkingen.
 
-## 3. Update Smart Art-tekeningen
+## 3. Smart Art-tekeningen bijwerken
 
-Rubriek: Smart Art Graphics vernieuwen
+Kop: Smart Art Graphics vernieuwen
 
 Uitleg:
- De`UpdateSmartArtDrawing` -methode vernieuwt de Smart Art-afbeelding en zorgt ervoor dat deze eventuele wijzigingen in de gegevens of lay-out van het document weerspiegelt. Deze methode moet worden aangeroepen voor elke Smart Art-vorm die in de vorige stap is geïdentificeerd.
+De`UpdateSmartArtDrawing` methode vernieuwt de Smart Art-afbeelding, zodat deze alle wijzigingen in de gegevens of lay-out van het document weerspiegelt. Deze methode moet worden aangeroepen voor elke Smart Art-vorm die in de vorige stap is geïdentificeerd.
 
 ```csharp
-// Update de Smart Art-tekening voor elke Smart Art-vorm
+// Smart Art-tekening voor elke Smart Art-vorm bijwerken
 if (shape.HasSmartArt)
 {
     shape.UpdateSmartArtDrawing();
@@ -91,14 +91,14 @@ if (shape.HasSmartArt)
 ```
 
 Waarom deze stap belangrijk is:
-Het updaten van de Smart Art zorgt ervoor dat de beelden actueel en nauwkeurig zijn, waardoor de kwaliteit en professionaliteit van uw document wordt verbeterd.
+Door de Smart Art bij te werken, weet u zeker dat de beelden actueel en nauwkeurig zijn. Dit verbetert de kwaliteit en professionaliteit van uw document.
 
 ## 4. Sla het document op
 
 Kop: Sla het bijgewerkte document op
 
 Uitleg:
-Nadat u de Smart Art hebt bijgewerkt, slaat u het document op om de wijzigingen te behouden. Deze stap zorgt ervoor dat alle wijzigingen naar het bestand worden geschreven.
+Sla het document op nadat u de Smart Art hebt bijgewerkt om de wijzigingen te behouden. Deze stap zorgt ervoor dat alle wijzigingen naar het bestand worden geschreven.
 
 ```csharp
 // Sla het bijgewerkte document op
@@ -106,11 +106,11 @@ doc.Save(dataDir + "UpdatedSmartArt.docx");
 ```
 
 Waarom deze stap belangrijk is:
-Door het document op te slaan, worden uw wijzigingen definitief gemaakt, zodat de bijgewerkte Smart Art-afbeeldingen worden opgeslagen en klaar zijn voor gebruik.
+Als u het document opslaat, worden uw wijzigingen definitief gemaakt. Zo zijn de bijgewerkte Smart Art-afbeeldingen opgeslagen en klaar voor gebruik.
 
 ## Conclusie
 
-Het bijwerken van Smart Art-tekeningen in Word-documenten met Aspose.Words voor .NET is een eenvoudig proces dat de kwaliteit van uw documenten aanzienlijk kan verbeteren. Door de stappen in deze zelfstudie te volgen, kunt u ervoor zorgen dat uw Smart Art-afbeeldingen altijd up-to-date zijn en uw nieuwste gegevens nauwkeurig weergeven. Dit verbetert niet alleen de visuele aantrekkingskracht van uw documenten, maar zorgt er ook voor dat uw informatie duidelijk en professioneel wordt gepresenteerd.
+Smart Art-tekeningen bijwerken in Word-documenten met Aspose.Words voor .NET is een eenvoudig proces dat de kwaliteit van uw documenten aanzienlijk kan verbeteren. Door de stappen in deze tutorial te volgen, kunt u ervoor zorgen dat uw Smart Art-afbeeldingen altijd up-to-date zijn en uw nieuwste gegevens nauwkeurig weergeven. Dit verbetert niet alleen de visuele aantrekkingskracht van uw documenten, maar zorgt er ook voor dat uw informatie duidelijk en professioneel wordt gepresenteerd.
 
 ## Veelgestelde vragen
 
@@ -118,13 +118,13 @@ Het bijwerken van Smart Art-tekeningen in Word-documenten met Aspose.Words voor 
 Smart Art is een functie in Microsoft Word waarmee u visueel aantrekkelijke diagrammen en afbeeldingen kunt maken om informatie en gegevens weer te geven.
 
 ### Waarom moet ik Smart Art-tekeningen bijwerken?
-Door Smart Art bij te werken, zorgt u ervoor dat de afbeeldingen de laatste wijzigingen in uw document weerspiegelen, waardoor de nauwkeurigheid en presentatie worden verbeterd.
+Door Smart Art bij te werken, weet u zeker dat de afbeeldingen de laatste wijzigingen in uw document weergeven. Dit verbetert de nauwkeurigheid en presentatie.
 
 ### Kan ik Smart Art-afbeeldingen in een batch documenten bijwerken?
-Ja, u kunt het proces voor het bijwerken van Smart Art in meerdere documenten automatiseren door een verzameling bestanden te doorlopen en dezelfde stappen toe te passen.
+Ja, u kunt het proces voor het bijwerken van Smart Art in meerdere documenten automatiseren door over een verzameling bestanden te itereren en dezelfde stappen toe te passen.
 
-### Heb ik een speciale licentie nodig voor Aspose.Words om deze functies te gebruiken?
- Voor het gebruik van de functies na de evaluatieperiode is een geldige Aspose.Words-licentie vereist. U kunt een tijdelijke licentie krijgen[hier](https://purchase.aspose.com/temporary-license/).
+### Heb ik een speciale licentie voor Aspose.Words nodig om deze functies te gebruiken?
+ Een geldige Aspose.Words-licentie is vereist voor het gebruik van de functies na de evaluatieperiode. U kunt een tijdelijke licentie krijgen[hier](https://purchase.aspose.com/temporary-license/).
 
 ### Waar kan ik meer documentatie over Aspose.Words vinden?
- U heeft toegang tot de documentatie[hier](https://reference.aspose.com/words/net/).
+ U kunt de documentatie raadplegen[hier](https://reference.aspose.com/words/net/).

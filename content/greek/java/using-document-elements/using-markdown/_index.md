@@ -115,10 +115,10 @@ doc.save(outPath + "WorkingWithMarkdown.CreateMarkdownDocument.md");
 string outPath = "Your Output Directory";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
-//Καθορίστε το στυλ "Επικεφαλίδα 1" για την παράγραφο.
+// Καθορίστε το στυλ "Επικεφαλίδα 1" για την παράγραφο.
 builder.getParagraphFormat().setStyleName("Heading 1");
 builder.writeln("Heading 1");
-// Επαναφέρετε τα στυλ από την προηγούμενη παράγραφο για να μην συνδυάζονται στυλ μεταξύ παραγράφων.
+//Επαναφέρετε τα στυλ από την προηγούμενη παράγραφο για να μην συνδυάζονται στυλ μεταξύ παραγράφων.
 builder.getParagraphFormat().setStyleName("Normal");
 // Εισαγάγετε τον οριζόντιο κανόνα.
 builder.insertHorizontalRule();

@@ -15,7 +15,7 @@ Willkommen in der Welt der Dokumentenautomatisierung mit Aspose.Words für .NET!
 
 Bevor wir beginnen, stellen Sie sicher, dass Sie Folgendes haben:
 
-1.  Aspose.Words für .NET: Sie können[Laden Sie hier die neueste Version herunter](https://releases.aspose.com/words/net/) Wenn Sie eine Lizenz erwerben müssen, können Sie dies tun[Hier](https://purchase.aspose.com/buy) Alternativ können Sie eine[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) oder probieren Sie es mit einem[Kostenlose Testversion](https://releases.aspose.com/).
+1.  Aspose.Words für .NET: Sie können[Laden Sie hier die neueste Version herunter](https://releases.aspose.com/words/net/) Wenn Sie eine Lizenz erwerben müssen, können Sie dies tun[Hier](https://purchase.aspose.com/buy) Alternativ können Sie ein[vorläufige Lizenz](https://purchase.aspose.com/temporary-license/) oder probieren Sie es mit einem[Kostenlose Testversion](https://releases.aspose.com/).
 2. Entwicklungsumgebung: Visual Studio oder eine andere C#-IDE.
 3. Grundkenntnisse in C#: Wenn Sie mit der C#-Programmierung vertraut sind, wird dieses Tutorial zum Kinderspiel.
 

@@ -67,7 +67,7 @@ if (table.TextWrapping == TextWrapping.Around)
 }
 ```
 
-此条件检查表格的文本环绕样式是否设置为“Around”，这表示它是一个浮动表格。
+此条件检查表格的文本环绕样式是否设置为“Around”，这表明它是一个浮动表格。
 
 ## 步骤 4：打印定位属性
 

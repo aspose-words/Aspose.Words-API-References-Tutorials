@@ -1,27 +1,27 @@
 ---
 title: Pas enkele grafiekreeksen in een grafiek aan
 linktitle: Pas enkele grafiekreeksen in een grafiek aan
-second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u afzonderlijke diagramreeksen in een Word-document kunt aanpassen met Aspose.Words voor .NET. Volg onze stapsgewijze handleiding voor een naadloze ervaring.
+second_title: Aspose.Words API voor documentverwerking
+description: Leer hoe u enkele grafiekreeksen in een Word-document kunt aanpassen met Aspose.Words voor .NET. Volg onze stapsgewijze handleiding voor een naadloze ervaring.
 type: docs
 weight: 10
 url: /nl/net/programming-with-charts/single-chart-series/
 ---
 ## Invoering
 
-Hé daar! Heb je ooit je Word-documenten willen opfleuren met een paar hippe grafieken? Nou, je bent op de juiste plek! Vandaag duiken we in de wereld van Aspose.Words voor .NET om afzonderlijke diagramreeksen in een diagram aan te passen. Of u nu een doorgewinterde professional bent of net begint, deze gids begeleidt u stap voor stap door het hele proces. Dus, doe je gordel om en laten we in kaart brengen!
+Hallo! Heb je ooit je Word-documenten willen opfleuren met wat flitsende grafieken? Nou, dan ben je hier aan het juiste adres! Vandaag duiken we in de wereld van Aspose.Words voor .NET om enkele grafiekseries in een grafiek aan te passen. Of je nu een doorgewinterde professional bent of net begint, deze gids leidt je stap voor stap door het hele proces. Dus, gesp je vast en laten we grafieken maken!
 
 ## Vereisten
 
-Voordat we beginnen, moeten we ervoor zorgen dat we alles hebben wat we nodig hebben. Hier is een korte checklist:
+Voordat we beginnen, zorgen we ervoor dat we alles hebben wat we nodig hebben. Hier is een snelle checklist:
 
-1.  Aspose.Words voor .NET-bibliotheek: u kunt het downloaden van[hier](https://releases.aspose.com/words/net/).
-2. Visual Studio: Elke recente versie zou voldoende moeten zijn.
-3. Een basiskennis van C#: Niets bijzonders, alleen de basis is voldoende.
+1.  Aspose.Words voor .NET-bibliotheek: U kunt het downloaden van[hier](https://releases.aspose.com/words/net/).
+2. Visual Studio: Elke recente versie zou moeten volstaan.
+3. Basiskennis van C#: Niets bijzonders, alleen de basis is voldoende.
 
 ## Naamruimten importeren
 
-Allereerst moeten we de benodigde naamruimten importeren. Dit is hetzelfde als het voorbereiden van de grote show.
+Allereerst moeten we de benodigde namespaces importeren. Dit is alsof we het podium klaarzetten voor de grote show.
 
 ```csharp
 using Aspose.Words;
@@ -34,23 +34,23 @@ using Aspose.Words.Drawing.Charts;
 Laten we beginnen met het opzetten van een nieuw Word-document. Dit is waar alle magie zal gebeuren.
 
 ```csharp
-string dataDir = "YOUR DOCUMENT DIRECTORY"; // Pad naar uw documentmap
+string dataDir = "YOUR DOCUMENT DIRECTORY"; // Pad naar uw documentenmap
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Stap 2: Voeg een diagram in
+## Stap 2: Een grafiek invoegen
 
-Vervolgens voegen we een lijndiagram in ons document in. Zie dit als het toevoegen van een canvas waarop we ons meesterwerk zullen schilderen.
+Vervolgens voegen we een lijndiagram toe aan ons document. Zie dit als het toevoegen van een canvas waarop we ons meesterwerk schilderen.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
 Chart chart = shape.Chart;
 ```
 
-## Stap 3: Toegang tot kaartseries
+## Stap 3: Toegang tot grafiekreeksen
 
-Laten we nu naar de kaartserie gaan. Dit is waar we beginnen met aanpassen.
+Laten we nu naar de grafiekserie gaan. Dit is waar we beginnen met aanpassen.
 
 ```csharp
 ChartSeries series0 = chart.Series[0];
@@ -59,7 +59,7 @@ ChartSeries series1 = chart.Series[1];
 
 ## Stap 4: Hernoem de grafiekreeks
 
-Laten we onze kaartenserie een aantal betekenisvolle namen geven. Dit is hetzelfde als het labelen van je penselen voordat je begint met schilderen.
+Laten we onze grafiekserie een aantal betekenisvolle namen geven. Dit is alsof je je penselen labelt voordat je gaat schilderen.
 
 ```csharp
 series0.Name = "Chart Series Name 1";
@@ -68,16 +68,16 @@ series1.Name = "Chart Series Name 2";
 
 ## Stap 5: Maak de lijnen glad
 
-Wilt u dat die lijnen er glad en strak uitzien? Laten we dat doen met behulp van Catmull-Rom-splines.
+Wil je dat die lijnen er glad en strak uitzien? Laten we dat doen met Catmull-Rom splines.
 
 ```csharp
 series0.Smooth = true;
 series1.Smooth = true;
 ```
 
-## Stap 6: Omgaan met negatieve waarden
+## Stap 6: Negatieve waarden verwerken
 
-Soms kunnen gegevens negatief zijn. Laten we ervoor zorgen dat ons diagram daar op een elegante manier mee omgaat.
+Soms kunnen data negatief zijn. Laten we ervoor zorgen dat onze grafiek daar netjes mee omgaat.
 
 ```csharp
 series0.InvertIfNegative = true;
@@ -85,7 +85,7 @@ series0.InvertIfNegative = true;
 
 ## Stap 7: Markeringen aanpassen
 
-Markeringen zijn als kleine puntjes op onze lijnen. Laten we ze laten opvallen.
+Markers zijn als kleine puntjes op onze lijnen. Laten we ze laten opvallen.
 
 ```csharp
 series0.Marker.Symbol = MarkerSymbol.Circle;
@@ -94,9 +94,9 @@ series1.Marker.Symbol = MarkerSymbol.Star;
 series1.Marker.Size = 10;
 ```
 
-## Stap 8: Bewaar uw document
+## Stap 8: Sla uw document op
 
-Laten we tot slot ons document opslaan. Hier bewonderen wij ons werk.
+Laten we tot slot ons document opslaan. Dit is waar we ons werk bewonderen.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithCharts.SingleChartSeries.docx");
@@ -104,21 +104,21 @@ doc.Save(dataDir + "WorkingWithCharts.SingleChartSeries.docx");
 
 ## Conclusie
 
-En daar heb je het! U hebt met succes een enkele diagramserie in een Word-document aangepast met Aspose.Words voor .NET. Best cool, toch? Dit is slechts het topje van de ijsberg; er is zoveel meer dat je kunt doen met Aspose.Words. Blijf dus experimenteren en geweldige documenten maken!
+En daar heb je het! Je hebt succesvol een enkele grafiekserie aangepast in een Word-document met Aspose.Words voor .NET. Best cool, toch? Dit is nog maar het topje van de ijsberg; er is nog zoveel meer dat je kunt doen met Aspose.Words. Blijf dus experimenteren en maak geweldige documenten!
 
 ## Veelgestelde vragen
 
 ### Wat is Aspose.Words voor .NET?
-Aspose.Words voor .NET is een krachtige bibliotheek waarmee u Word-documenten programmatisch kunt maken, bewerken, converteren en manipuleren.
+Aspose.Words voor .NET is een krachtige bibliotheek waarmee u programmatisch Word-documenten kunt maken, bewerken, converteren en manipuleren.
 
 ### Kan ik Aspose.Words gratis gebruiken?
- Ja, je kunt beginnen met a[gratis proefperiode](https://releases.aspose.com/).
+ Ja, je kunt beginnen met een[gratis proefperiode](https://releases.aspose.com/).
 
 ### Hoe krijg ik ondersteuning voor Aspose.Words?
- U kunt ondersteuning krijgen van de Aspose-gemeenschap op hun[forum](https://forum.aspose.com/c/words/8).
+ U kunt ondersteuning krijgen van de Aspose-community op hun[forum](https://forum.aspose.com/c/words/8).
 
-### Is het mogelijk om andere diagramtypen aan te passen?
-Absoluut! Aspose.Words ondersteunt verschillende diagramtypen, zoals staaf-, cirkel- en spreidingsdiagrammen.
+### Is het mogelijk om andere grafiektypen aan te passen?
+Absoluut! Aspose.Words ondersteunt verschillende grafiektypen, zoals staaf-, cirkel- en spreidingsdiagrammen.
 
 ### Waar kan ik meer documentatie vinden?
  Bekijk de[documentatie](https://reference.aspose.com/words/net/) voor meer gedetailleerde handleidingen en voorbeelden.

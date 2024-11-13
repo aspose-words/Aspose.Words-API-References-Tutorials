@@ -132,4 +132,4 @@ Aspose.Words for .NET 是一個功能強大的文件處理庫，可讓開發人�
 是的，Aspose.Words for .NET 與 .NET Core、.NET Standard 和 .NET Framework 相容。
 
 ### 在哪裡可以獲得 Aspose.Words for .NET 支援？
-您可以訪問[支援論壇](https://forum.aspose.com/c/words/8)尋求 Aspose 社區和專家的幫助和幫助。
+您可以訪問[支援論壇](https://forum.aspose.com/c/words/8)尋求 Aspose 社區和專家的幫助和協助。

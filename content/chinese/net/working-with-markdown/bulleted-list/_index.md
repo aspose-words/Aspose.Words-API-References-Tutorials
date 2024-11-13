@@ -57,7 +57,7 @@ builder.ListFormat.List.ListLevels[0].NumberFormat = "-";
 
 ## 步骤 4：添加列表项
 
-现在，让我们将一些项目添加到项目符号列表中。在这里您可以发挥创意并添加所需的任何内容。
+现在，让我们将一些项目添加到项目符号列表中。在这里，您可以发挥创意并添加所需的任何内容。
 
 ```csharp
 builder.Writeln("Item 1");
@@ -87,7 +87,7 @@ builder.ListFormat.ListOutdent(); //返回主列表层级
    是的，您可以通过更改`NumberFormat`财产。
 
 ### 如何添加更多级别的缩进？
-   使用`ListIndent`添加更多级别的方法和`ListOutdent`回到更高的层次。
+   使用`ListIndent`方法添加更多级别和`ListOutdent`回到更高的层次。
 
 ### 可以混合使用项目符号列表和数字列表吗？
    当然！您可以使用`ApplyNumberDefault`和`ApplyBulletDefault`方法。

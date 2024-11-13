@@ -39,7 +39,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- The`dataDir` proměnná je zástupný symbol pro adresář, kam uložíte soubor Markdown. Nezapomeňte nahradit „VÁŠ ADRESÁŘ DOKUMENTŮ“ skutečnou cestou.
+The`dataDir` proměnná je zástupný symbol pro adresář, kam uložíte soubor Markdown. Nezapomeňte nahradit „VÁŠ ADRESÁŘ DOKUMENTŮ“ skutečnou cestou.
 
 ## Krok 2: Psaní běžného textu
 
@@ -54,7 +54,7 @@ builder.Write("You can write ");
 
 ## Krok 3: Přidání tučného textu
 
- Chcete-li do Markdown přidat tučný text, zalomte požadovaný text do dvojitých hvězdiček (``). V Aspose.Words pro .NET toho můžete dosáhnout nastavením`Bold` vlastnictvím`Font` namítat proti`true`.
+ Chcete-li do Markdown přidat tučný text, zalomte požadovaný text do dvojitých hvězdiček (``). V Aspose.Words pro .NET toho můžete dosáhnout nastavením`Bold` vlastnictví`Font` namítat proti`true`.
 
 ```csharp
 builder.Font.Bold = true;
@@ -67,7 +67,7 @@ Tento úryvek kódu nastaví text „tučný“ na tučný a poté se vrátí zp
 
 ## Krok 4: Přidání textu kurzívou
 
-Kurzíva v Markdown je zabalena do jednoduchých hvězdiček (`*` ). Podobně nastavte`Italic` vlastnictvím`Font` namítat proti`true`.
+Kurzíva v Markdown je zabalena do jednoduchých hvězdiček (`*` ). Podobně nastavte`Italic` vlastnictví`Font` namítat proti`true`.
 
 ```csharp
 builder.Font.Italic = true;
@@ -80,7 +80,7 @@ Tím se vykreslí "kurzíva" ve stylu kurzívy, po níž bude následovat běžn
 
 ## Krok 5: Kombinace tučného a kurzívy
 
-Styly tučného písma a kurzívy můžete kombinovat zalomením textu do tří hvězdiček (`*` ). Nastavte obojí`Bold`a`Italic` vlastnosti do`true`.
+Styly tučného písma a kurzívy můžete kombinovat zalomením textu do tří hvězdiček (`*` ). Nastavte obojí`Bold` a`Italic` vlastnosti do`true`.
 
 ```csharp
 builder.Write("You can also write ");
@@ -114,7 +114,7 @@ tady to máte! Nyní jste zvládli, jak vytvořit zvýrazněný text v Markdown 
 Ano, můžete použít jiné styly, jako jsou záhlaví, seznamy a bloky kódu. Aspose.Words for .NET podporuje širokou škálu možností formátování Markdown.
 
 ### Jak mohu nainstalovat Aspose.Words pro .NET?
- Knihovnu si můžete stáhnout z[Aspose stránku vydání](https://releases.aspose.com/words/net/) a postupujte podle dodaných pokynů k instalaci.
+ Knihovnu si můžete stáhnout z[Aspose stránku vydání](https://releases.aspose.com/words/net/) postupujte podle dodaných pokynů k instalaci.
 
 ### Je k dispozici bezplatná zkušební verze pro Aspose.Words pro .NET?
  Ano, můžete si stáhnout a[zkušební verze zdarma](https://releases.aspose.com/) vyzkoušet funkce Aspose.Words pro .NET.

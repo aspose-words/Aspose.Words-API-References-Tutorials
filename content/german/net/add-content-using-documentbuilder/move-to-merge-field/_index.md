@@ -50,7 +50,7 @@ Field field = builder.InsertField("MERGEFIELD field");
 builder.Write(" Text after the field.");
 ```
 
-Hier fügen wir ein Seriendruckfeld mit dem Namen "Feld" ein und fügen direkt dahinter einen Text hinzu. Dieser Text hilft uns später dabei, die Position des Feldes zu identifizieren.
+Hier fügen wir ein Seriendruckfeld mit dem Namen "Feld" ein und fügen direkt dahinter einen Text hinzu. Dieser Text hilft uns später dabei, die Position des Felds zu identifizieren.
 
 ## Schritt 3: Bewegen Sie den Cursor an das Ende des Dokuments
 

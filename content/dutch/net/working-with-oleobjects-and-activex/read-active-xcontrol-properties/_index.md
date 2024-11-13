@@ -1,24 +1,24 @@
 ---
-title: Lees Active XControl-eigenschappen uit een Word-bestand
-linktitle: Lees Active XControl-eigenschappen uit een Word-bestand
-second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u de eigenschappen van ActiveX-besturingselementen uit Word-bestanden kunt lezen met behulp van Aspose.Words voor .NET in een stapsgewijze handleiding. Verbeter uw vaardigheden op het gebied van documentautomatisering.
+title: Eigenschappen van Active XControl lezen uit Word-bestand
+linktitle: Eigenschappen van Active XControl lezen uit Word-bestand
+second_title: Aspose.Words API voor documentverwerking
+description: Leer hoe u ActiveX-besturingselementeigenschappen uit Word-bestanden kunt lezen met Aspose.Words voor .NET in een stapsgewijze handleiding. Verbeter uw vaardigheden op het gebied van documentautomatisering.
 type: docs
 weight: 10
 url: /nl/net/working-with-oleobjects-and-activex/read-active-xcontrol-properties/
 ---
 ## Invoering
 
-In het huidige digitale tijdperk is automatisering de sleutel tot het verhogen van de productiviteit. Als u werkt met Word-documenten die ActiveX-besturingselementen bevatten, moet u mogelijk de eigenschappen ervan voor verschillende doeleinden lezen. ActiveX-besturingselementen, zoals selectievakjes en knoppen, kunnen belangrijke gegevens bevatten. Met Aspose.Words voor .NET kunt u deze gegevens efficiënt programmatisch extraheren en manipuleren.
+In het digitale tijdperk van vandaag is automatisering de sleutel tot het verbeteren van de productiviteit. Als u werkt met Word-documenten die ActiveX-besturingselementen bevatten, moet u mogelijk hun eigenschappen voor verschillende doeleinden lezen. ActiveX-besturingselementen, zoals selectievakjes en knoppen, kunnen belangrijke gegevens bevatten. Met Aspose.Words voor .NET kunt u deze gegevens efficiënt extraheren en programmatisch bewerken.
 
 ## Vereisten
 
-Voordat we beginnen, zorg ervoor dat u over het volgende beschikt:
+Voordat we beginnen, zorg ervoor dat u het volgende heeft:
 
-1.  Aspose.Words voor .NET-bibliotheek: u kunt het downloaden van[hier](https://releases.aspose.com/words/net/).
-2. Visual Studio of een C# IDE: om uw code te schrijven en uit te voeren.
-3. Een Word-document met ActiveX-besturingselementen: bijvoorbeeld 'ActiveX-controls.docx'.
-4. Basiskennis van C#: Bekendheid met programmeren in C# is noodzakelijk om mee te kunnen doen.
+1.  Aspose.Words voor .NET-bibliotheek: U kunt het downloaden van[hier](https://releases.aspose.com/words/net/).
+2. Visual Studio of een andere C# IDE: om uw code te schrijven en uit te voeren.
+3. Een Word-document met ActiveX-besturingselementen, bijvoorbeeld 'ActiveX-besturingselementen.docx'.
+4. Basiskennis van C#: Kennis van C#-programmering is noodzakelijk om de cursus te kunnen volgen.
 
 ## Naamruimten importeren
 
@@ -36,7 +36,7 @@ using System;
 Om te beginnen moet u het Word-document laden dat de ActiveX-besturingselementen bevat.
 
 ```csharp
-// Pad naar uw documentmap
+// Pad naar uw documentenmap
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "ActiveX controls.docx");
 ```
@@ -49,9 +49,9 @@ Initialiseer vervolgens een lege tekenreeks om de eigenschappen van de ActiveX-b
 string properties = "";
 ```
 
-## Stap 3: Herhaal de vormen in het document
+## Stap 3: Door de vormen in het document itereren
 
-We moeten alle vormen in het document doorlopen om de ActiveX-besturingselementen te vinden.
+We moeten door alle vormen in het document itereren om de ActiveX-besturingselementen te vinden.
 
 ```csharp
 foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))
@@ -61,14 +61,14 @@ foreach (Shape shape in doc.GetChildNodes(NodeType.Shape, true))
     OleControl oleControl = shape.OleFormat.OleControl;
     if (oleControl.IsForms2OleControl)
     {
-        // Verwerk het ActiveX-besturingselement
+        // ActiveX-besturingselement verwerken
     }
 }
 ```
 
-## Stap 4: Eigenschappen extraheren uit ActiveX-besturingselementen
+## Stap 4: Eigenschappen uit ActiveX-besturingselementen extraheren
 
-Controleer binnen de lus of het besturingselement een Forms2OleControl is. Als dit het geval is, cast u het en extraheert u de eigenschappen.
+Controleer binnen de lus of de besturing een Forms2OleControl is. Als dat zo is, cast het dan en extraheer de eigenschappen.
 
 ```csharp
 Forms2OleControl checkBox = (Forms2OleControl) oleControl;
@@ -93,9 +93,9 @@ Nadat u alle vormen hebt doorlopen, telt u het totale aantal gevonden ActiveX-be
 properties += "\nTotal ActiveX Controls found: " + doc.GetChildNodes(NodeType.Shape, true).Count;
 ```
 
-## Stap 6: Geef de eigenschappen weer
+## Stap 6: De eigenschappen weergeven
 
-Druk ten slotte de geëxtraheerde eigenschappen af naar de console.
+Druk ten slotte de geëxtraheerde eigenschappen af op de console.
 
 ```csharp
 Console.WriteLine("\n" + properties);
@@ -103,21 +103,21 @@ Console.WriteLine("\n" + properties);
 
 ## Conclusie
 
-En daar heb je het! U hebt met succes geleerd hoe u ActiveX-besturingselementeigenschappen uit een Word-document kunt lezen met behulp van Aspose.Words voor .NET. Deze tutorial behandelde het laden van een document, het doorlopen van vormen en het extraheren van eigenschappen uit ActiveX-besturingselementen. Door deze stappen te volgen, kunt u de extractie van belangrijke gegevens uit uw Word-documenten automatiseren, waardoor uw workflow-efficiëntie wordt verbeterd.
+En daar heb je het! Je hebt succesvol geleerd hoe je ActiveX-besturingselementeigenschappen uit een Word-document kunt lezen met Aspose.Words voor .NET. Deze tutorial behandelde het laden van een document, itereren door vormen en het extraheren van eigenschappen uit ActiveX-besturingselementen. Door deze stappen te volgen, kun je de extractie van belangrijke gegevens uit je Word-documenten automatiseren, waardoor je workflow efficiënter wordt.
 
 ## Veelgestelde vragen
 
 ### Wat zijn ActiveX-besturingselementen in Word-documenten?
-ActiveX-besturingselementen zijn interactieve objecten die zijn ingebed in Word-documenten, zoals selectievakjes, knoppen en tekstvelden, die worden gebruikt om formulieren te maken en taken te automatiseren.
+ActiveX-besturingselementen zijn interactieve objecten die zijn ingesloten in Word-documenten, zoals selectievakjes, knoppen en tekstvelden. Ze worden gebruikt om formulieren te maken en taken te automatiseren.
 
 ### Kan ik de eigenschappen van ActiveX-besturingselementen wijzigen met Aspose.Words voor .NET?
 Ja, met Aspose.Words voor .NET kunt u de eigenschappen van ActiveX-besturingselementen programmatisch wijzigen.
 
 ### Is Aspose.Words voor .NET gratis te gebruiken?
- Aspose.Words voor .NET biedt een gratis proefperiode, maar voor voortgezet gebruik moet u een licentie aanschaffen. U kunt een gratis proefperiode krijgen[hier](https://releases.aspose.com/).
+ Aspose.Words voor .NET biedt een gratis proefversie, maar u moet een licentie kopen voor voortgezet gebruik. U kunt een gratis proefversie krijgen[hier](https://releases.aspose.com/).
 
 ### Kan ik Aspose.Words voor .NET gebruiken met andere .NET-talen dan C#?
-Ja, Aspose.Words voor .NET kan worden gebruikt met elke .NET-taal, inclusief VB.NET en F#.
+Ja, Aspose.Words voor .NET kan met elke .NET-taal worden gebruikt, inclusief VB.NET en F#.
 
 ### Waar kan ik meer documentatie vinden over Aspose.Words voor .NET?
- U kunt gedetailleerde documentatie vinden[hier](https://reference.aspose.com/words/net/).
+ Gedetailleerde documentatie vindt u hier[hier](https://reference.aspose.com/words/net/).

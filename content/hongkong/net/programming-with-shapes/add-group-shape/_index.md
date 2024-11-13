@@ -113,7 +113,7 @@ builder.InsertNode(groupShape);
 doc.Save(dataDir + "WorkingWithShapes.AddGroupShape.docx");
 ```
 
-現在你就得到它了！您的帶有群組形狀的文檔已準備就緒。
+現在你就擁有了！您的帶有群組形狀的文檔已準備就緒。
 
 ## 結論
 

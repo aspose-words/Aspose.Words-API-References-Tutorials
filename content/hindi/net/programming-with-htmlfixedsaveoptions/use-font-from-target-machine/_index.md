@@ -33,7 +33,7 @@ using Aspose.Words.Saving;
 
 ## चरण 1: वर्ड दस्तावेज़ लोड करें
 
- हमारे ट्यूटोरियल में पहला कदम वर्ड डॉक्यूमेंट को लोड करना है। यहीं से सब कुछ शुरू होता है। हम इसका इस्तेमाल करेंगे`Document` इसे प्राप्त करने के लिए Aspose.Words लाइब्रेरी से .
+ हमारे ट्यूटोरियल में पहला कदम वर्ड डॉक्यूमेंट को लोड करना है। यहीं से सब कुछ शुरू होता है। हम इसका इस्तेमाल करेंगे`Document` इस लक्ष्य को प्राप्त करने के लिए Aspose.Words लाइब्रेरी से .
 
 ### चरण 1.1: दस्तावेज़ पथ परिभाषित करें
 
@@ -74,7 +74,7 @@ HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions
  हम इसका उपयोग करेंगे`Save` कॉन्फ़िगर किए गए सहेजें विकल्पों के साथ दस्तावेज़ को सहेजने की विधि।
 
 ```csharp
-//दस्तावेज़ को निश्चित HTML में बदलें
+// दस्तावेज़ को निश्चित HTML में बदलें
 doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html", saveOptions);
 ```
 
@@ -89,7 +89,7 @@ doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.htm
 System.Diagnostics.Process.Start(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html");
 ```
 
-और बस, अब आपने यह कर लिया! आपने .NET के लिए Aspose.Words का उपयोग करके अपने Word दस्तावेज़ में लक्ष्य मशीन से फ़ॉन्ट का सफलतापूर्वक उपयोग कर लिया है।
+और बस, अब आपने Aspose.Words for .NET का उपयोग करके अपने Word दस्तावेज़ में लक्ष्य मशीन से फ़ॉन्ट का सफलतापूर्वक उपयोग कर लिया है।
 
 ## निष्कर्ष
 

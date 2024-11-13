@@ -49,7 +49,7 @@ Document doc = new Document();
 在 Word 文档中，内容被组织成节点。我们需要访问第一个段落节点，我们将在其中插入 ASK 字段：
 
 ```csharp
-Paragraph para = (Paragraph)doc.GetChildNodes(NodeType.Paragraph, true)[0];
+Paragraph para = (Paragraph)doc.GetChild(NodeType.Paragraph, 0, true);
 ```
 
 这行代码检索文档中的第一个段落，为插入 ASK 字段做好准备。

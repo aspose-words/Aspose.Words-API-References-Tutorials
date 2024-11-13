@@ -1,44 +1,44 @@
 ---
-title: Samenvoegveld invoegen met DOM
-linktitle: Samenvoegveld invoegen met DOM
-second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u samenvoegvelden in Word-documenten invoegt en configureert met Aspose.Words voor .NET met deze uitgebreide, stapsgewijze zelfstudie.
+title: Samenvoegveld invoegen met behulp van DOM
+linktitle: Samenvoegveld invoegen met behulp van DOM
+second_title: Aspose.Words API voor documentverwerking
+description: Leer hoe u samenvoegvelden in Word-documenten kunt invoegen en configureren met Aspose.Words voor .NET met deze uitgebreide, stapsgewijze zelfstudie.
 type: docs
 weight: 10
 url: /nl/net/working-with-fields/insert-merge-field-using-dom/
 ---
 ## Invoering
 
-Als u met documentverwerking in .NET werkt, bent u waarschijnlijk Aspose.Words tegengekomen. Deze krachtige bibliotheek biedt een breed scala aan functies voor het programmatisch manipuleren van Word-documenten. In deze zelfstudie concentreren we ons op één specifieke functie: het invoegen van een samenvoegveld met behulp van het Document Object Model (DOM) in Aspose.Words voor .NET. Deze handleiding begeleidt u bij elke stap, van het opzetten van uw omgeving tot het invoegen en bijwerken van een samenvoegveld in een Word-document.
+Als u met documentverwerking in .NET werkt, bent u waarschijnlijk Aspose.Words tegengekomen. Deze krachtige bibliotheek biedt een breed scala aan functies voor het programmatisch manipuleren van Word-documenten. In deze tutorial richten we ons op één specifieke functie: het invoegen van een samenvoegveld met behulp van het Document Object Model (DOM) in Aspose.Words voor .NET. Deze gids leidt u door elke stap, van het instellen van uw omgeving tot het invoegen en bijwerken van een samenvoegveld in een Word-document.
 
 ## Vereisten
 
-Voordat we in de code duiken, zorgen we ervoor dat je alles hebt wat je nodig hebt om deze tutorial te volgen.
+Voordat we in de code duiken, controleren we of je alles hebt wat je nodig hebt om deze tutorial te volgen.
 
-1. Basiskennis van C#: U moet vertrouwd zijn met programmeren in C#.
-2. Visual Studio geïnstalleerd: Zorg ervoor dat Visual Studio of een andere C# IDE op uw computer is geïnstalleerd.
-3.  Aspose.Words voor .NET: Download en installeer de nieuwste versie van Aspose.Words voor .NET vanaf de[Releases](https://releases.aspose.com/words/net/).
-4.  Geldige licentie: Als u geen licentie heeft, kunt u een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/) voor evaluatie.
+1. Basiskennis van C#: U moet vertrouwd zijn met C#-programmering.
+2. Visual Studio geïnstalleerd: zorg ervoor dat Visual Studio of een andere C# IDE op uw computer is geïnstalleerd.
+3.  Aspose.Words voor .NET: Download en installeer de nieuwste versie van Aspose.Words voor .NET van de[Vrijgaven](https://releases.aspose.com/words/net/).
+4.  Geldige licentie: Als u geen licentie hebt, kunt u een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/) voor evaluatie.
 
 ## Stap 1: Stel uw project in
 
-Laten we eerst een nieuw project opzetten in Visual Studio.
+Laten we eerst een nieuw project in Visual Studio opzetten.
 
-1. Open Visuele Studio.
+1. Open Visual Studio.
 2. Maak een nieuw project: Ga naar Bestand > Nieuw > Project. Selecteer een C# Console-app.
-3. Geef uw project een naam: geef uw project een betekenisvolle naam en klik op Maken.
+3. Geef uw project een naam: Geef uw project een betekenisvolle naam en klik op Maken.
 
-## Stap 2: Installeer Aspose.Words
+## Stap 2: Aspose.Words installeren
 
-Om Aspose.Words te gebruiken, moet u het aan uw project toevoegen. Dit kan gedaan worden via NuGet Package Manager.
+Om Aspose.Words te gebruiken, moet u het toevoegen aan uw project. Dit kan via NuGet Package Manager.
 
-1. Open NuGet Package Manager: Klik met de rechtermuisknop op uw project in de Solution Explorer en selecteer vervolgens NuGet-pakketten beheren.
-2. Zoeken naar Aspose.Words: Zoek in NuGet Package Manager naar "Aspose.Words".
+1. Open NuGet Package Manager: klik met de rechtermuisknop op uw project in Solution Explorer en selecteer vervolgens NuGet-pakketten beheren.
+2. Zoeken naar Aspose.Words: Zoek in de NuGet Package Manager naar "Aspose.Words".
 3. Installeer het pakket: Klik op Installeren om Aspose.Words aan uw project toe te voegen.
 
 ## Stap 3: Naamruimten importeren
 
-Om Aspose.Words te gaan gebruiken, moet u de benodigde naamruimten in uw project importeren. Hier ziet u hoe u het kunt doen:
+Om Aspose.Words te kunnen gebruiken, moet u de benodigde namespaces importeren in uw project. Dit is hoe u dat kunt doen:
 
 ```csharp
 using System;
@@ -48,7 +48,7 @@ using Aspose.Words.Fields;
 
 ## Stap 4: Initialiseer uw document
 
-Nu alles is ingesteld, gaan we een nieuw Word-document maken en de DocumentBuilder initialiseren.
+Nu alles is ingesteld, kunnen we een nieuw Word-document maken en de DocumentBuilder initialiseren.
 
 ```csharp
 // Het pad naar de documentenmap.
@@ -61,7 +61,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Stap 5: Verplaats de cursor naar een specifieke alinea
 
-Vervolgens moeten we de cursor naar een specifieke paragraaf in het document verplaatsen waar we het samenvoegveld willen invoegen.
+Vervolgens moeten we de cursor verplaatsen naar een specifieke alinea in het document waar we het samenvoegveld willen invoegen.
 
 ```csharp
 Paragraph para = (Paragraph) doc.GetChild(NodeType.Paragraph, 0, true);
@@ -70,16 +70,16 @@ builder.MoveTo(para);
 
 ## Stap 6: Voeg het samenvoegveld in
 
- Het invoegen van een samenvoegveld is eenvoudig. Wij zullen gebruik maken van de`InsertField` werkwijze van de`DocumentBuilder` klas.
+ Het invoegen van een samenvoegveld is eenvoudig. We gebruiken de`InsertField` methode van de`DocumentBuilder` klas.
 
 ```csharp
-// Veldsamenvoegveld invoegen.
+// Voeg een samenvoegveld in.
 FieldMergeField field = (FieldMergeField)builder.InsertField(FieldType.FieldMergeField, false);
 ```
 
 ## Stap 7: Configureer het samenvoegveld
 
-Nadat u het samenvoegveld hebt ingevoegd, kunt u verschillende eigenschappen instellen om het naar uw wensen te configureren.
+Nadat u het samenvoegveld hebt ingevoegd, kunt u verschillende eigenschappen instellen om het veld naar uw wensen te configureren.
 
 ```csharp
 field.FieldName = "Test1";
@@ -89,21 +89,21 @@ field.IsMapped = true;
 field.IsVerticalFormatting = true;
 ```
 
-## Stap 8: Werk het document bij en sla het op
+## Stap 8: Het document bijwerken en opslaan
 
-Werk ten slotte het veld bij om ervoor te zorgen dat alle instellingen worden toegepast en sla het document op.
+Werk ten slotte het veld bij om er zeker van te zijn dat alle instellingen zijn toegepast en sla het document op.
 
 ```csharp
 // Werk het veld bij.
 field.Update();
 
-// Bewaar het document.
+// Sla het document op.
 doc.Save(dataDir + "InsertionChampMergeChamp.docx");
 ```
 
 ## Conclusie
 
-Door deze stappen te volgen, kunt u eenvoudig samenvoegvelden in een Word-document invoegen en configureren met behulp van Aspose.Words voor .NET. In deze zelfstudie werden de essentiële stappen behandeld, vanaf het instellen van uw omgeving tot het opslaan van het definitieve document. Met Aspose.Words kunt u complexe documentverwerkingstaken automatiseren, waardoor uw .NET-applicaties krachtiger en efficiënter worden.
+Door deze stappen te volgen, kunt u eenvoudig samenvoegvelden invoegen en configureren in een Word-document met Aspose.Words voor .NET. Deze tutorial behandelde de essentiële stappen van het instellen van uw omgeving tot het opslaan van het uiteindelijke document. Met Aspose.Words kunt u complexe documentverwerkingstaken automatiseren, waardoor uw .NET-toepassingen krachtiger en efficiënter worden.
 
 ## Veelgestelde vragen
 
@@ -111,7 +111,7 @@ Door deze stappen te volgen, kunt u eenvoudig samenvoegvelden in een Word-docume
 Een samenvoegveld is een tijdelijke aanduiding in een document die dynamisch kan worden vervangen door gegevens uit een gegevensbron, zoals een database of een CSV-bestand.
 
 ###  Kan ik Aspose.Words gratis gebruiken?
- Aspose.Words biedt een gratis proefversie die u kunt downloaden[hier](https://releases.aspose.com/). Voor langdurig gebruik moet u een licentie aanschaffen.
+ Aspose.Words biedt een gratis proefversie aan die u kunt downloaden[hier](https://releases.aspose.com/)Voor langdurig gebruik dient u een licentie aan te schaffen.
 
 ###  Hoe krijg ik een tijdelijke licentie voor Aspose.Words?
  U kunt een tijdelijke licentie verkrijgen via de Aspose-website[hier](https://purchase.aspose.com/temporary-license/).

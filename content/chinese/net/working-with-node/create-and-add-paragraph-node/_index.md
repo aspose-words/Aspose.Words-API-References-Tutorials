@@ -16,7 +16,7 @@ url: /zh/net/working-with-node/create-and-add-paragraph-node/
 在我们开始编写代码之前，让我们先确保我们已经准备好了所有需要的东西。以下是您的检查清单：
 
 1. 已安装 Visual Studio：确保您的计算机上已安装 Visual Studio。您可以从[地点](https://visualstudio.microsoft.com/).
-2. Aspose.Words for .NET：如果您还没有下载并安装 Aspose.Words for .NET，请从以下网址获取[这里](https://releases.aspose.com/words/net/)。如果您刚刚开始，可以使用免费试用版。
+2. Aspose.Words for .NET：如果您还没有下载并安装 Aspose.Words for .NET，可以从以下位置获取[这里](https://releases.aspose.com/words/net/)。如果您刚刚开始，可以使用免费试用版。
 3. 基本 C# 知识：对 C# 编程的基本了解将会有所帮助。
 
 一切都搞定了？太棒了！让我们继续导入必要的命名空间。

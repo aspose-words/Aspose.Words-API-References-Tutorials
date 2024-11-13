@@ -44,7 +44,7 @@ Tyto jmenné prostory vám poskytují přístup ke třídám a metodám, které 
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
- The`DocumentBuilder` class je vaší bránou k vytváření a přizpůsobení vašeho dokumentu. Berte to jako kouzelnou hůlku pro vytváření dokumentů aplikace Word!
+The`DocumentBuilder` class je vaší bránou k vytváření a přizpůsobení vašeho dokumentu. Berte to jako kouzelnou hůlku pro vytváření dokumentů aplikace Word!
 
 ## Krok 2: Přidejte blokovou nabídku
 

@@ -61,7 +61,7 @@ Nyní přichází klíčová část – nastavení složek písem. Zde zadávát
 fontSettings.SetFontsFolders(new[] { @"C:\MyFonts\", @"D:\Misc\Fonts\" }, true);
 ```
 
-Druhý parametr (`true` ) znamená, že tyto složky přepíší všechny výchozí zdroje písem. Pokud chcete zachovat i systémové zdroje písem, můžete použít kombinaci`GetFontSources`a`SetFontSources`.
+Druhý parametr (`true` ) znamená, že tyto složky přepíší všechny výchozí zdroje písem. Pokud chcete zachovat i systémové zdroje písem, můžete použít kombinaci`GetFontSources` a`SetFontSources`.
 
 ## Krok 4: Použijte nastavení písma na dokument
 
@@ -91,7 +91,7 @@ Správa písem ve vašich dokumentech se může zdát jako skličující úkol, 
 Ano, pro složky písem můžete použít síťové cesty. Jen se ujistěte, že cesty jsou přístupné z vaší aplikace.
 
 ### Co se stane, když v zadaných složkách chybí písmo?
-Pokud písmo chybí, Aspose.Words přejde zpět na zadané výchozí písmo nebo použije náhradní písmo.
+Pokud písmo chybí, Aspose.Words se vrátí k výchozímu zadanému písmu nebo použije náhradní písmo.
 
 ### Mohu přidat složky písem bez přepsání systémových písem?
  Absolutně! Použití`FontSettings.GetFontSources` k načtení existujících zdrojů a jejich zkombinování s vašimi vlastními složkami pomocí`FontSettings.SetFontSources`.

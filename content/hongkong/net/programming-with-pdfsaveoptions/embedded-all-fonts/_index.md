@@ -76,7 +76,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.EmbeddedFontsInPdf.pdf", saveOptio
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 成功將字體嵌入到 PDF 文件中。有了這些知識，您就可以確保您的 PDF 保留其預期的外觀，無論在哪裡查看。這不是很酷嗎？現在，用您自己的文件來嘗試。
+現在你就擁有了！您已使用 Aspose.Words for .NET 成功將字體嵌入到 PDF 文件中。有了這些知識，您就可以確保您的 PDF 保留其預期的外觀，無論在哪裡查看。那不是很酷嗎？現在，用您自己的文件來嘗試。
 
 ## 常見問題解答
 

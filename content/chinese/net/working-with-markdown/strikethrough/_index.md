@@ -2,7 +2,7 @@
 title: 删除线
 linktitle: 删除线
 second_title: Aspose.Words 文档处理 API
-description: 通过我们的分步指南学习如何使用 Aspose.Words for .NET 将删除线格式应用于文本。提高您的文档处理技能。
+description: 通过我们的分步指南学习如何使用 Aspose.Words for .NET 将删除线格式应用于文本。增强您的文档处理技能。
 type: docs
 weight: 10
 url: /zh/net/working-with-markdown/strikethrough/
@@ -13,7 +13,7 @@ url: /zh/net/working-with-markdown/strikethrough/
 
 ## 先决条件
 
-在开始之前，请确保您已准备好以下内容：
+在开始之前，请确保您已准备好以下物品：
 
 -  Aspose.Words for .NET：下载[这里](https://releases.aspose.com/words/net/).
 - .NET Framework：确保您的系统上安装了 .NET Framework。

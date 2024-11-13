@@ -17,7 +17,7 @@ url: /zh/net/working-with-markdown/autolink/
 
 -  Aspose.Words for .NET：从以下网址下载并安装最新版本[这里](https://releases.aspose.com/words/net/).
 - 开发环境：像 Visual Studio 这样的 IDE。
-- .NET Framework：确保您已安装适当的版本。
+- .NET Framework：确保您安装了适当的版本。
 - C# 基础知识：熟悉 C# 编程将会有所帮助。
 
 ## 导入命名空间
@@ -68,10 +68,8 @@ builder.InsertHyperlink("Contact Support", "mailto:support@aspose.com", false);
 可以自定义超链接以适应文档的样式。您可以使用`Font`DocumentBuilder 的属性。
 
 ```csharp
-//自定义超链接的外观。
-builder.Font.Color = System.Drawing.Color.Blue;
-builder.Font.Underline = Underline.Single;
-builder.InsertHyperlink("Styled Link", "https://www.aspose.com", 错误);
+builder.Font.Style = doc.Styles[StyleIdentifier.Hyperlink];
+builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", 错误);
 ```
 
 此代码片段将插入一个蓝色下划线的超链接，使其在您的文档中脱颖而出。

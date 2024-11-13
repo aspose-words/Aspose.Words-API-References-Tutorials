@@ -24,10 +24,10 @@ url: /hi/java/document-conversion-and-export/using-watermarks-to-documents/
 
 ## टेक्स्ट वॉटरमार्क जोड़ना
 
-जब आप अपने दस्तावेज़ों में पाठ्य जानकारी जोड़ना चाहते हैं तो टेक्स्ट वॉटरमार्क एक आम विकल्प है। यहाँ बताया गया है कि आप Aspose.Words for Java का उपयोग करके टेक्स्ट वॉटरमार्क कैसे जोड़ सकते हैं:
+जब आप अपने दस्तावेज़ों में पाठ्य जानकारी जोड़ना चाहते हैं तो टेक्स्ट वॉटरमार्क एक आम विकल्प है। यहाँ बताया गया है कि आप Java के लिए Aspose.Words का उपयोग करके टेक्स्ट वॉटरमार्क कैसे जोड़ सकते हैं:
 
 ```java
-//दस्तावेज़ इंस्टेंस बनाएँ
+// दस्तावेज़ इंस्टेंस बनाएँ
 Document doc = new Document("Document.docx");
 
 // टेक्स्टवॉटरमार्कविकल्प परिभाषित करें
@@ -38,7 +38,7 @@ options.setColor(Color.BLACK);
 options.setLayout(WatermarkLayout.HORIZONTAL);
 options.setSemitransparent(false);
 
-// वॉटरमार्क टेक्स्ट और विकल्प सेट करें
+//वॉटरमार्क टेक्स्ट और विकल्प सेट करें
 doc.getWatermark().setText("Test", options);
 
 // दस्तावेज़ को वॉटरमार्क के साथ सहेजें
@@ -50,7 +50,7 @@ doc.save("DocumentWithWatermark.docx");
 टेक्स्ट वॉटरमार्क के अलावा, आप अपने दस्तावेज़ों में इमेज वॉटरमार्क भी जोड़ सकते हैं। इमेज वॉटरमार्क जोड़ने का तरीका इस प्रकार है:
 
 ```java
-//दस्तावेज़ इंस्टेंस बनाएँ
+// दस्तावेज़ इंस्टेंस बनाएँ
 Document doc = new Document("Document.docx");
 
 // वॉटरमार्क के लिए छवि लोड करें
@@ -80,7 +80,7 @@ doc.save("DocumentWithImageWatermark.docx");
 किसी दस्तावेज़ से वॉटरमार्क हटाने के लिए आप निम्नलिखित कोड का उपयोग कर सकते हैं:
 
 ```java
-//दस्तावेज़ इंस्टेंस बनाएँ
+// दस्तावेज़ इंस्टेंस बनाएँ
 Document doc = new Document("DocumentWithWatermark.docx");
 
 // वॉटरमार्क हटाएँ

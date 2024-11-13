@@ -62,7 +62,7 @@ CustomXmlPart xmlPart = doc.CustomXmlParts.Add(Guid.NewGuid().ToString("B"), "<r
 Αφού προσθέσουμε το προσαρμοσμένο τμήμα XML, δημιουργούμε ένα SDT για την εμφάνιση των δεδομένων XML.
 
 ```csharp
-// Δημιουργία μιας ετικέτας δομημένου εγγράφου (SDT)
+//Δημιουργία μιας ετικέτας δομημένου εγγράφου (SDT)
 StructuredDocumentTag sdt = new StructuredDocumentTag(doc, SdtType.PlainText, MarkupLevel.Block);
 doc.FirstSection.Body.AppendChild(sdt);
 ```

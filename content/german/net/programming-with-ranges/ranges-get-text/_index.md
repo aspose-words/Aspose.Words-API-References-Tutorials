@@ -67,7 +67,7 @@ Text extrahieren
 string text = doc.Range.Text;
 ```
 
- Der`Range.Text` -Eigenschaft gibt Ihnen den gesamten Text an, der im Bereich des Dokuments enthalten ist. Dies umfasst Text aus allen Abschnitten, Kopfzeilen, Fußzeilen und dem Hauptteil.
+Der`Range.Text` -Eigenschaft gibt Ihnen den gesamten Text an, der im Bereich des Dokuments enthalten ist. Dies umfasst Text aus allen Abschnitten, Kopfzeilen, Fußzeilen und dem Hauptteil.
 
 ## Schritt 4: Den extrahierten Text anzeigen
 

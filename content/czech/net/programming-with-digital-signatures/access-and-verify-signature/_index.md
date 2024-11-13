@@ -29,7 +29,7 @@ using Aspose.Words;
 using Aspose.Words.DigitalSignatures;
 ```
 
-Dobře, pojďme si to rozdělit na zvládnutelné kroky. Každý krok vás provede určitou částí procesu. Připraveni? Jdeme na to!
+Dobře, pojďme si to rozdělit na zvládnutelné kroky. Každý krok vás provede určitou částí procesu. Připraveni? Jdeme!
 
 ## Krok 1: Nastavte svůj projekt
 

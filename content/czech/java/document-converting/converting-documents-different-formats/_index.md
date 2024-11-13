@@ -18,7 +18,7 @@ Než se ponoříme do podrobností o převodu dokumentů, začněme s Aspose.Wor
 
 ## Krok 1: Instalace
 
- Chcete-li začít, musíte si stáhnout a nainstalovat Aspose.Words for Java. Můžete si jej stáhnout z webu:[Stáhněte si Aspose.Words pro Java](https://releases.aspose.com/words/java/).
+ Chcete-li začít, musíte si stáhnout a nainstalovat Aspose.Words for Java. Stáhnout si ho můžete z webu:[Stáhněte si Aspose.Words pro Java](https://releases.aspose.com/words/java/).
 
 ## Krok 2: Nastavení vašeho projektu Java
 
@@ -50,18 +50,6 @@ Nyní je čas převést načtený dokument do zvoleného výstupního formátu. 
 doc.save("output.pdf", SaveFormat.PDF);
 ```
 
-## Krok 6: Zpracování výjimek
-
-Při práci s dokumenty je nezbytné zacházet s výjimkami s grácií. Aspose.Words for Java poskytuje mechanismy zpracování výjimek, které zajistí hladký chod vaší aplikace.
-
-```java
-try {
-    // Zde proveďte konverzi dokumentů
-} catch (Exception e) {
-    // Ošetřete výjimky
-}
-```
-
 ## Závěr
 
 V této příručce jsme prozkoumali, jak používat Aspose.Words pro Java k převodu dokumentů do různých formátů. Toto výkonné rozhraní API zjednodušuje proces převodu dokumentů a zpřístupňuje jej vývojářům v jazyce Java. Nyní můžete snadno efektivně převádět dokumenty ve svých aplikacích Java.
@@ -86,4 +74,4 @@ Ano, Aspose.Words for Java je vhodný pro osobní i komerční projekty. Můžet
 
 ### Kde mohu získat přístup k dokumentaci Aspose.Words for Java?
 
-Komplexní dokumentaci k Aspose.Words for Java naleznete na adrese[Aspose.Words for Java API Reference](https://reference.aspose.com/words/java/).
+ Komplexní dokumentaci k Aspose.Words for Java naleznete na adrese[Aspose.Words for Java API Reference](https://reference.aspose.com/words/java/).

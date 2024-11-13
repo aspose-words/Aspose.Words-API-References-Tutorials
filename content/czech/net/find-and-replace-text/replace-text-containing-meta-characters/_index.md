@@ -29,7 +29,7 @@ using Aspose.Words;
 using Aspose.Words.Replacing;
 ```
 
-Nyní si tento proces rozdělíme na stravitelné kroky. Připraveni? Jdeme na to!
+Nyní si tento proces rozdělíme na stravitelné kroky. Připraveni? Jdeme!
 
 ## Krok 1: Nastavte své prostředí
 
@@ -119,7 +119,7 @@ Absolutně! Náhradní řetězec můžete upravit tak, aby podle potřeby obsaho
  Můžete řetězit více`Replace` volání pro zpracování různých značek nebo vzorů ve vašem dokumentu.
 
 ### Je možné použít jiné fonty a formátování?
-Ano, můžete přizpůsobit písma a další možnosti formátování pomocí`DocumentBuilder`a`FindReplaceOptions` objektů.
+Ano, můžete přizpůsobit písma a další možnosti formátování pomocí`DocumentBuilder` a`FindReplaceOptions` objektů.
 
 ### Kde najdu další informace o Aspose.Words pro .NET?
  Můžete navštívit[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) pro další podrobnosti a příklady.

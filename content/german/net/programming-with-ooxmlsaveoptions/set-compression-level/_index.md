@@ -9,7 +9,7 @@ url: /de/net/programming-with-ooxmlsaveoptions/set-compression-level/
 ---
 ## Einführung
 
-Sind Sie bereit, in die Welt der Dokumentkomprimierung mit Aspose.Words für .NET einzutauchen? Egal, ob Sie Ihren Dokumentspeicher optimieren oder die Verarbeitungszeit beschleunigen möchten, das Einstellen der Komprimierungsstufe kann einen großen Unterschied machen. In diesem Tutorial gehen wir den Prozess zum Einstellen der Komprimierungsstufe für ein Word-Dokument mit Aspose.Words für .NET durch. Am Ende dieses Leitfadens sind Sie ein Profi darin, Ihre Dokumente schlanker und übersichtlicher zu gestalten.
+Sind Sie bereit, in die Welt der Dokumentkomprimierung mit Aspose.Words für .NET einzutauchen? Egal, ob Sie Ihren Dokumentspeicher optimieren oder die Verarbeitungszeit beschleunigen möchten, das Einstellen der Komprimierungsstufe kann einen großen Unterschied machen. In diesem Tutorial führen wir Sie durch den Prozess zum Einstellen der Komprimierungsstufe für ein Word-Dokument mit Aspose.Words für .NET. Am Ende dieses Leitfadens sind Sie ein Profi darin, Ihre Dokumente schlanker und übersichtlicher zu gestalten.
 
 ## Voraussetzungen
 

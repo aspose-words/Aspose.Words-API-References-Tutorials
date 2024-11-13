@@ -13,9 +13,9 @@ Das Erstellen eines Tabellenfelds (TOA) in einem Word-Dokument kann sich anfühl
 
 ## Voraussetzungen
 
-Bevor wir uns in das Tutorial vertiefen, wollen wir uns mit den wichtigsten Dingen befassen, die Sie benötigen:
+Bevor wir uns in das Tutorial vertiefen, besprechen wir die wichtigsten Dinge, die Sie benötigen:
 
--  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die neueste Version installiert haben. Sie können sie herunterladen von der[Aspose-Website](https://releases.aspose.com/words/net/).
+-  Aspose.Words für .NET: Stellen Sie sicher, dass Sie die neueste Version installiert haben. Sie können sie von der[Aspose-Website](https://releases.aspose.com/words/net/).
 - Entwicklungsumgebung: Eine .NET-kompatible IDE wie Visual Studio.
 - Grundlegende C#-Kenntnisse: Das Verständnis der grundlegenden C#-Syntax und -Konzepte ist hilfreich.
 - Beispiel-Word-Dokument: Erstellen Sie ein Beispieldokument oder halten Sie ein solches bereit, in das Sie das TOA-Feld einfügen möchten.
@@ -63,7 +63,7 @@ doc.FirstSection.Body.AppendChild(para);
 
 Hier ist eine Aufschlüsselung:
 - Absatz para = neuer Absatz(doc);: Erstellt einen neuen Absatz innerhalb des Dokuments.
--  FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTOAEntry, false);: Fügt dem Absatz ein TA-Feld hinzu. Das`FieldType.FieldTOAEntry` gibt an, dass dies ein TOA-Eingabefeld ist.
+-  FieldTA fieldTA = (FieldTA) para.AppendField(FieldType.FieldTOAEntry, false);: Fügt dem Absatz ein TA-Feld hinzu. Der`FieldType.FieldTOAEntry` gibt an, dass dies ein TOA-Eingabefeld ist.
 - fieldTA.EntryCategory = "1";: Legt die Eintragskategorie fest. Dies ist nützlich, um verschiedene Arten von Einträgen zu kategorisieren.
 - fieldTA.LongCitation = "Wert 0";: Gibt den langen Zitattext an. Dies ist der Text, der im TOA angezeigt wird.
 - doc.FirstSection.Body.AppendChild(para);: Fügt den Absatz mit dem TA-Feld an den Hauptteil des Dokuments an.

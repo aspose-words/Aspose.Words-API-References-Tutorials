@@ -12,7 +12,7 @@ In diesem Tutorial führen wir Sie durch den Prozess der Verwendung von Fußnote
 
 ## 1. Einführung zu Fußnoten und Endnoten
 
-Fußnoten und Endnoten sind Anmerkungen, die zusätzliche Informationen oder Zitate innerhalb eines Dokuments enthalten. Fußnoten erscheinen am unteren Seitenrand, während Endnoten am Ende eines Abschnitts oder des Dokuments stehen. Sie werden häufig in akademischen Arbeiten, Berichten und juristischen Dokumenten verwendet, um auf Quellen zu verweisen oder Inhalte zu erläutern.
+Fußnoten und Endnoten sind Anmerkungen, die zusätzliche Informationen oder Zitate innerhalb eines Dokuments enthalten. Fußnoten erscheinen am unteren Ende der Seite, während Endnoten am Ende eines Abschnitts oder des Dokuments stehen. Sie werden häufig in akademischen Arbeiten, Berichten und juristischen Dokumenten verwendet, um auf Quellen zu verweisen oder Inhalte zu erläutern.
 
 ## 2. Einrichten Ihrer Umgebung
 
@@ -34,7 +34,7 @@ public void getFootnoteOptions(){
 }
 ```
 
-## 4. Ändern der Fußnotenoptionen
+## 4. Fußnotenoptionen ändern
 
 Sie können Fußnotenoptionen ändern, um deren Aussehen und Verhalten anzupassen. So geht's:
 ```java

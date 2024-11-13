@@ -89,7 +89,7 @@ foreach (Revision revision in doc.Revisions)
 
 ## 結論
 
-現在你就得到它了！透過執行這些步驟，您可以使用 Aspose.Words for .NET 輕鬆取得 Word 文件修訂的詳細資訊。這個強大的工具使管理和追蹤變更變得輕而易舉，確保您的協作專案順利運作。
+現在你就擁有了！透過執行這些步驟，您可以使用 Aspose.Words for .NET 輕鬆取得 Word 文件修訂的詳細資訊。這個強大的工具使管理和追蹤變更變得輕而易舉，確保您的協作專案順利運作。
 
 ## 常見問題解答
 

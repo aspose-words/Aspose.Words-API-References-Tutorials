@@ -71,7 +71,7 @@ Erläuterung:
 
 ## Schritt 4: Speichern des Dokuments als HTML
 
-Abschließend speichern wir das Dokument mit den konfigurierten Speicheroptionen als HTML-Datei ab.
+Abschließend speichern wir das Dokument mit den konfigurierten Speicheroptionen als HTML-Datei.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithHtmlSaveOptions.ResolveFontNames.html", saveOptions);

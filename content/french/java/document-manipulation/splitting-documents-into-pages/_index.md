@@ -1,22 +1,22 @@
 ---
-title: Fractionner des documents en pages dans Aspose.Words pour Java
+title: Diviser des documents en pages dans Aspose.Words pour Java
 linktitle: Diviser des documents en pages
 second_title: API de traitement de documents Java Aspose.Words
-description: Découvrez comment diviser des documents en pages à l'aide d'Aspose.Words pour Java. Guide étape par étape avec code source pour un traitement efficace des documents.
+description: Apprenez à diviser des documents en pages à l'aide d'Aspose.Words pour Java. Guide étape par étape avec code source pour un traitement efficace des documents.
 type: docs
 weight: 23
 url: /fr/java/document-manipulation/splitting-documents-into-pages/
 ---
 
-Si vous travaillez avec le traitement de documents en Java, Aspose.Words for Java est une API puissante qui peut vous aider à diviser efficacement des documents en pages distinctes. Dans ce didacticiel étape par étape, nous vous guiderons tout au long du processus de fractionnement de documents à l'aide du code source fourni. À la fin de ce didacticiel, vous serez en mesure de diviser facilement des documents, améliorant ainsi vos capacités de gestion de documents.
+Si vous travaillez avec le traitement de documents en Java, Aspose.Words pour Java est une API puissante qui peut vous aider à diviser efficacement des documents en pages distinctes. Dans ce didacticiel étape par étape, nous vous guiderons tout au long du processus de division de documents à l'aide du code source fourni. À la fin de ce didacticiel, vous serez en mesure de diviser des documents en toute simplicité, améliorant ainsi vos capacités de gestion de documents.
 
 ## 1. Introduction
 
-Aspose.Words for Java est une bibliothèque Java qui vous permet de manipuler des documents Word par programme. Une tâche courante consiste à diviser un document en pages distinctes, ce qui peut être utile à diverses fins, telles que l'archivage, l'impression ou le traitement de documents.
+Aspose.Words for Java est une bibliothèque Java qui vous permet de manipuler des documents Word par programmation. Une tâche courante consiste à diviser un document en pages distinctes, ce qui peut être utile à diverses fins, telles que l'archivage, l'impression ou le traitement de documents.
 
 ## 2. Conditions préalables
 
-Avant de plonger dans le code, assurez-vous que les conditions préalables suivantes sont en place :
+Avant de plonger dans le code, assurez-vous que les conditions préalables suivantes sont remplies :
 
 - Kit de développement Java (JDK) installé sur votre système.
 -  Bibliothèque Aspose.Words pour Java, que vous pouvez télécharger[ici](https://releases.aspose.com/words/java/).
@@ -26,11 +26,11 @@ Avant de plonger dans le code, assurez-vous que les conditions préalables suiva
 Pour commencer, configurez votre environnement de développement comme suit :
 
 - Créez un projet Java dans votre environnement de développement intégré (IDE) préféré.
-- Ajoutez la bibliothèque Aspose.Words pour Java à votre projet. Vous pouvez vous référer au[documentation](https://reference.aspose.com/words/java/) pour des instructions détaillées.
+- Ajoutez la bibliothèque Aspose.Words pour Java à votre projet. Vous pouvez vous référer à la[documentation](https://reference.aspose.com/words/java/) pour des instructions détaillées.
 
 ## 4. Comprendre le code source
 
-Le code source que vous avez fourni est conçu pour diviser un document en pages distinctes. Décomposons les éléments clés :
+Le code source que vous avez fourni est conçu pour diviser un document en pages distinctes. Décomposons les composants clés :
 
 ```java
 String fileName = FilenameUtils.getBaseName(docName);
@@ -39,10 +39,10 @@ System.out.println("Processing document: " + fileName + "." + extensionName);
 Document doc = new Document(docName);
 ```
 
-- Nous extrayons le nom de base et l'extension du document d'entrée.
+- Nous extrayons le nom de base et l’extension du document d’entrée.
 - Nous chargeons le document en utilisant Aspose.Words pour Java.
 
-## 5. Fractionner des documents étape par étape
+## 5. Fractionnement des documents étape par étape
 
 ### 5.1. Chargement du document
 
@@ -50,17 +50,17 @@ Document doc = new Document(docName);
 Document doc = new Document(docName);
 ```
 
- Dans cette étape, nous chargeons le document d'entrée dans un`Document` objet, qui nous permet de travailler avec le contenu du document.
+ Dans cette étape, nous chargeons le document d'entrée dans un`Document` objet qui nous permet de travailler avec le contenu du document.
 
-### 5.2. Initialisation de DocumentPageSplitter
+### 5.2. Initialisation du DocumentPageSplitter
 
 ```java
 DocumentPageSplitter splitter = new DocumentPageSplitter(doc);
 ```
 
- On initialise un`DocumentPageSplitter` objet avec notre document chargé. Cette classe est fournie par Aspose.Words pour Java et nous aide à diviser le document en pages.
+ Nous initialisons un`DocumentPageSplitter` objet avec notre document chargé. Cette classe est fournie par Aspose.Words pour Java et nous aide à diviser le document en pages.
 
-### 5.3. Enregistrer chaque page
+### 5.3. Sauvegarde de chaque page
 
 ```java
 for (int page = 1; page <= doc.getPageCount(); page++) {
@@ -69,26 +69,26 @@ for (int page = 1; page <= doc.getPageCount(); page++) {
 }
 ```
 
-Au cours de cette étape, nous parcourons chaque page du document et l'enregistrons en tant que document distinct. Vous pouvez spécifier le chemin du répertoire dans lequel les pages fractionnées seront enregistrées.
+Dans cette étape, nous parcourons chaque page du document et l'enregistrons en tant que document distinct. Vous pouvez spécifier le chemin du répertoire dans lequel les pages séparées seront enregistrées.
 
 ## 6. Exécution du code
 
-Pour exécuter ce code avec succès, assurez-vous d'avoir configuré votre environnement et ajouté la bibliothèque Aspose.Words for Java à votre projet. Ensuite, exécutez le code et votre document sera divisé en pages distinctes.
+Pour exécuter ce code avec succès, assurez-vous d'avoir configuré votre environnement et ajouté la bibliothèque Aspose.Words pour Java à votre projet. Ensuite, exécutez le code et votre document sera divisé en pages distinctes.
 
 ## Code source de DocumentPageSplitter
 
 ```java
 /// <résumé>
 /// Divise un document en plusieurs documents, un par page.
-/// </résumé>
+/// </summary>
 class DocumentPageSplitter
 {
 private PageNumberFinder pageNumberFinder;
 /// <résumé>
 /// Initialise une nouvelle instance de la classe <see cref="DocumentPageSplitter"/>.
-/// Cette méthode divise le document en sections afin que chaque page commence et se termine à une limite de section.
+/// Cette méthode divise le document en sections de sorte que chaque page commence et se termine à une limite de section.
 /// Il est recommandé de ne pas modifier le document par la suite.
-/// </résumé>
+/// </summary>
 /// <param name="source">Document source</param>
 public DocumentPageSplitter(Document source) throws Exception
 {
@@ -98,10 +98,10 @@ private Document getDocument() {
 	return pageNumberFinder.getDocument();
 }
 /// <résumé>
-/// Récupère le document d'une page.
-/// </résumé>
+/// Obtient le document d'une page.
+/// </summary>
 /// <param name="pageIndex">
-/// Index basé sur 1 d'une page.
+/// index basé sur 1 d'une page.
 /// </param>
 /// <retourne>
 /// Le <see cref="Document"/>.
@@ -110,8 +110,8 @@ public Document getDocumentOfPage(int pageIndex) throws Exception {
 	return getDocumentOfPageRange(pageIndex, pageIndex);
 }
 /// <résumé>
-/// Récupère le document d'une plage de pages.
-/// </résumé>
+/// Obtient le document d'une plage de pages.
+/// </summary>
 //<param name="startIndex">
 /// Index basé sur 1 de la page de démarrage.
 /// </param>
@@ -132,20 +132,20 @@ public Document getDocumentOfPageRange(int startIndex, int endIndex) throws Exce
 }
 /// <résumé>
 /// Fournit des méthodes pour extraire les nœuds d'un document qui sont rendus sur des pages spécifiées.
-/// </résumé>
+/// </summary>
 class PageNumberFinder
 {
-// Mappe le nœud aux numéros de page de début/fin.
-// Ceci est utilisé pour remplacer les numéros de page de base fournis par le collecteur lorsque le document est fractionné.
+// Mappe le nœud vers les numéros de page de début/fin.
+// Ceci est utilisé pour remplacer les numéros de page de base fournis par le collecteur lorsque le document est divisé.
 private Map<Node, Integer> nodeStartPageLookup = new HashMap<>();
 private Map<Node, Integer> nodeEndPageLookup = new HashMap<>();
 private LayoutCollector collector;
-// Mappe le numéro de page à une liste de nœuds trouvés sur cette page.
+// Associe le numéro de page à une liste de nœuds trouvés sur cette page.
 private Map<Integer, ArrayList<Node>> reversePageLookup;
 /// <résumé>
 /// Initialise une nouvelle instance de la classe <see cref="PageNumberFinder"/>.
-/// </résumé>
-/// <param name="collector">Une instance de collecteur qui possède des enregistrements de modèle de présentation pour le document.</param>
+/// </summary>
+/// <param name="collector">Une instance de collecteur qui possède des enregistrements de modèle de mise en page pour le document.</param>
 public PageNumberFinder(LayoutCollector collector)
 {
 	this.collector = collector;
@@ -155,8 +155,8 @@ public Document getDocument()
 	return collector.getDocument();
 }
 /// <résumé>
-/// Récupère l'index de base 1 d'une page sur laquelle commence le nœud.
-/// </résumé>
+/// Récupère l'index basé sur 1 d'une page sur laquelle le nœud commence.
+/// </summary>
 /// <param name="node">
 /// Le nœud.
 /// </param>
@@ -169,8 +169,8 @@ public int getPage(Node node) throws Exception {
 		: collector.getStartPageIndex(node);
 }
 /// <résumé>
-/// Récupère l'index de base 1 d'une page sur laquelle le nœud se termine.
-/// </résumé>
+/// Récupère l'index basé sur 1 d'une page sur laquelle se termine le nœud.
+/// </summary>
 /// <param name="node">
 /// Le nœud.
 /// </param>
@@ -183,8 +183,8 @@ public int getPageEnd(Node node) throws Exception {
 		: collector.getEndPageIndex(node);
 }
 /// <résumé>
-//Renvoie le nombre de pages sur lesquelles le nœud spécifié s'étend. Renvoie 1 si le nœud est contenu dans une seule page.
-/// </résumé>
+//Renvoie le nombre de pages sur lesquelles s'étend le nœud spécifié. Renvoie 1 si le nœud est contenu dans une seule page.
+/// </summary>
 /// <param name="node">
 /// Le nœud.
 /// </param>
@@ -195,10 +195,10 @@ public int pageSpan(Node node) throws Exception {
 	return getPageEnd(node) - getPage(node) + 1;
 }
 /// <résumé>
-/// Renvoie une liste de nœuds contenus n'importe où sur la ou les pages spécifiées qui correspondent au type de nœud spécifié.
-/// </résumé>
+/// Renvoie une liste de nœuds contenus n'importe où sur la page spécifiée ou les pages qui correspondent au type de nœud spécifié.
+/// </summary>
 /// <param name="startPage">
-/// La page d'accueil.
+/// La page de démarrage.
 /// </param>
 /// <param name="endPage">
 /// La page de fin.
@@ -241,9 +241,9 @@ public ArrayList<Node> retrieveAllNodesOnPages(int startPage, int endPage, /*Nod
 	return pageNodes;
 }
 /// <résumé>
-/// Divise les nœuds qui apparaissent sur deux pages ou plus en nœuds séparés afin qu'ils apparaissent toujours de la même manière
+/// Divise les nœuds qui apparaissent sur deux pages ou plus en nœuds distincts afin qu'ils apparaissent toujours de la même manière
 /// mais n'apparaissent plus sur une page.
-/// </résumé>
+/// </summary>
 public void splitNodesAcrossPages() throws Exception
 {
 	for (Paragraph paragraph : (Iterable<Paragraph>) collector.getDocument().getChildNodes(NodeType.PARAGRAPH, true))
@@ -254,17 +254,17 @@ public void splitNodesAcrossPages() throws Exception
 		}
 	}
 	clearCollector();
-	// Visitez tous les composites éventuellement répartis sur plusieurs pages et divisez-les en nœuds distincts.
+	// Visitez tous les composites qui sont éventuellement divisés sur plusieurs pages et divisez-les en nœuds distincts.
 	collector.getDocument().accept(new SectionSplitter(this));
 }
 /// <résumé>
-/// Ceci est appelé par <see cref="SectionSplitter"/> pour mettre à jour les numéros de page des nœuds fractionnés.
-/// </résumé>
+/// Ceci est appelé par <see cref="SectionSplitter"/> pour mettre à jour les numéros de page des nœuds divisés.
+/// </summary>
 /// <param name="node">
 /// Le nœud.
 /// </param>
 /// <param name="startPage">
-/// La page d'accueil.
+/// La page de démarrage.
 /// </param>
 /// <param name="endPage">
 /// La page de fin.
@@ -345,7 +345,7 @@ private static String[] reverseWord(String str) {
 /// <résumé>
 /// Divise le texte de l'exécution spécifiée en deux exécutions.
 /// Insère la nouvelle exécution juste après l'exécution spécifiée.
-/// </résumé>
+/// </summary>
 private void splitRun(Run run, int position)
 {
 	Run afterRun = (Run) run.deepClone(true);
@@ -374,7 +374,7 @@ public static PageNumberFinder create(Document document) throws Exception
 }
 /// <résumé>
 /// Divise un document en plusieurs sections afin que chaque page commence et se termine à une limite de section.
-/// </résumé>
+/// </summary>
 class SectionSplitter extends DocumentVisitor
 {
 private PageNumberFinder pageNumberFinder;
@@ -402,8 +402,8 @@ public int visitSmartTagStart(SmartTag smartTag) throws Exception {
 }
 public int visitSectionStart(Section section) throws Exception {
 	Section previousSection = (Section) section.getPreviousSibling();
-	// S'il existe une section précédente, essayez de copier tous les pieds de page d'en-tête liés.
-	// Dans le cas contraire, ils n'apparaîtront pas dans un document extrait si la section précédente est manquante.
+	// S'il existe une section précédente, essayez de copier tous les en-têtes et pieds de page liés.
+	// Sinon, ils n'apparaîtront pas dans un document extrait si la section précédente est manquante.
 	if (previousSection != null)
 	{
 		HeaderFooterCollection previousHeaderFooters = previousSection.getHeadersFooters();
@@ -446,7 +446,7 @@ public int visitTableEnd(Table table) throws Exception {
 	return VisitorAction.CONTINUE;
 }
 public int visitParagraphEnd(Paragraph paragraph) throws Exception {
-	// Si le paragraphe ne contient qu'un saut de section, ajoutez un faux passage.
+	// Si le paragraphe contient uniquement un saut de section, ajoutez un faux saut.
 	if (paragraph.isEndOfSection() && paragraph.getChildNodes().getCount() == 1 &&
 		"\f".equals(paragraph.getChildNodes().get(0).getText()))
 	{
@@ -458,7 +458,7 @@ public int visitParagraphEnd(Paragraph paragraph) throws Exception {
 	for (Node cloneNode : splitComposite(paragraph))
 	{
 		Paragraph clonePara = (Paragraph) cloneNode;
-		// Supprimez la numérotation de la liste du paragraphe cloné mais laissez le retrait inchangé
+		// Supprimer la numérotation de la liste du paragraphe cloné mais laisser le retrait identique
 		// car le paragraphe est censé faire partie de l'élément précédent.
 		if (paragraph.isListItem())
 		{
@@ -508,7 +508,7 @@ private ArrayList<Node> splitComposite(CompositeNode composite) throws Exception
 	return splitNodes;
 }
 private Iterable<Node> findChildSplitPositions(CompositeNode node) throws Exception {
-	// Un nœud peut s'étendre sur plusieurs pages, donc une liste de positions fractionnées est renvoyée.
+	// Un nœud peut s'étendre sur plusieurs pages, une liste de positions divisées est donc renvoyée.
 	//Le nœud divisé est le premier nœud de la page suivante.
 	ArrayList<Node> splitList = new ArrayList<Node>();
 	int startingPage = pageNumberFinder.getPage(node);
@@ -522,7 +522,7 @@ private Iterable<Node> findChildSplitPositions(CompositeNode node) throws Except
 		{
 			pageNum = pageNumberFinder.getPageEnd(childNode);
 		}
-		// Si la page du nœud enfant a changé, il s'agit alors de la position divisée.
+		// Si la page du nœud enfant a changé, il s'agit de la position de division.
 		// Ajoutez ceci à la liste.
 		if (pageNum > startingPage)
 		{
@@ -534,7 +534,7 @@ private Iterable<Node> findChildSplitPositions(CompositeNode node) throws Except
 			pageNumberFinder.addPageNumbersForNode(childNode, pageNum, pageNum);
 		}
 	}
-	// Divisez les composites vers l’arrière afin que les nœuds clonés soient insérés dans le bon ordre.
+	// Divisez les composites vers l'arrière, de sorte que les nœuds clonés soient insérés dans le bon ordre.
 	Collections.reverse(splitList);
 	return splitList;
 }
@@ -588,10 +588,10 @@ private CompositeNode splitCompositeAtNode(CompositeNode baseNode, Node targetNo
 			}
 		}
 	}
-	// Insérez le nœud divisé après l'original.
+	// Insérer le nœud divisé après l’original.
 	baseNode.getParentNode().insertAfter(cloneNode, baseNode);
 	// Mettez à jour les nouveaux numéros de page du nœud de base et du nœud cloné, y compris ses descendants.
-	// Il ne s'agira que d'une seule page car le composite cloné est divisé pour être sur une seule page.
+	// Il ne s'agira que d'une seule page car le composite cloné est divisé pour figurer sur une seule page.
 	int currentEndPageNum = pageNumberFinder.getPageEnd(baseNode);
 	pageNumberFinder.addPageNumbersForNode(baseNode, currentPageNum, currentEndPageNum - 1);
 	pageNumberFinder.addPageNumbersForNode(cloneNode, currentEndPageNum, currentEndPageNum);
@@ -663,34 +663,34 @@ private static void removePageBreak(Run run)
 ## Conclusion
 
 Vous avez maintenant appris à diviser un document en pages distinctes à l'aide d'Aspose.Words pour Java. Ce guide fournit un didacticiel complet étape par étape avec des exemples de code source. Vous pouvez personnaliser et étendre davantage ce code pour répondre à vos besoins spécifiques lorsque vous travaillez avec des documents.
-Certainement! Ajoutons une section FAQ à notre guide sur la division des documents en pages à l'aide d'Aspose.Words pour Java.
+Bien sûr ! Ajoutons une section FAQ à notre guide sur la division de documents en pages à l'aide d'Aspose.Words pour Java.
 
 ## FAQ
 
-### Comment ajouter Aspose.Words pour Java à mon projet ?
+### Comment ajouter Aspose.Words pour Java à mon projet ?
 
-Pour ajouter Aspose.Words pour Java à votre projet, procédez comme suit :
+Pour ajouter Aspose.Words pour Java à votre projet, suivez ces étapes :
 
-1.  Téléchargez la bibliothèque Aspose.Words pour Java à partir de[ici](https://releases.aspose.com/words/java/).
-2. Ajoutez le fichier JAR téléchargé au chemin de classe de votre projet.
+1.  Téléchargez la bibliothèque Aspose.Words pour Java depuis[ici](https://releases.aspose.com/words/java/).
+2. Ajoutez le fichier JAR téléchargé au classpath de votre projet.
 3. Vous pouvez maintenant commencer à utiliser Aspose.Words pour Java dans votre projet.
 
-### Puis-je diviser des documents dans d'autres formats, tels que PDF ou DOCX ?
+### Puis-je diviser des documents dans d’autres formats, tels que PDF ou DOCX ?
 
-Non, ce guide couvre spécifiquement le fractionnement de documents au format DOC à l'aide d'Aspose.Words pour Java. Si vous devez diviser des documents dans d'autres formats, vous devrez peut-être explorer d'autres bibliothèques ou outils prenant en charge ces formats.
+Non, ce guide traite spécifiquement du fractionnement de documents au format DOC à l'aide d'Aspose.Words pour Java. Si vous devez fractionner des documents dans d'autres formats, vous devrez peut-être explorer d'autres bibliothèques ou outils prenant en charge ces formats.
 
-### Aspose.Words for Java est-il une bibliothèque gratuite ?
+### Aspose.Words pour Java est-elle une bibliothèque gratuite ?
 
- Non, Aspose.Words for Java n'est pas une bibliothèque gratuite. Il s'agit d'un produit commercial moyennant des frais de licence. Vous pouvez visiter le[Page de tarification d'Aspose.Words pour Java](https://purchase.aspose.com/words/java) pour plus d’informations sur les licences et les tarifs.
+ Non, Aspose.Words for Java n'est pas une bibliothèque gratuite. Il s'agit d'un produit commercial avec des frais de licence. Vous pouvez visiter le site[Page de tarification d'Aspose.Words pour Java](https://purchase.aspose.com/words/java) pour plus d'informations sur les détails des licences et des prix.
 
 ### Puis-je diviser des documents en tailles et formats de page personnalisés ?
 
-Oui, vous pouvez personnaliser les tailles et formats de page des documents fractionnés en modifiant les propriétés de mise en page dans Aspose.Words pour Java. Reportez-vous à la documentation Aspose.Words pour plus de détails sur la façon de personnaliser les paramètres de page en fonction de vos besoins.
+Oui, vous pouvez personnaliser les tailles et les formats de page des documents fractionnés en modifiant les propriétés de configuration de page dans Aspose.Words pour Java. Reportez-vous à la documentation Aspose.Words pour plus de détails sur la personnalisation des paramètres de page en fonction de vos besoins.
 
-### Existe-t-il des limites quant au nombre de pages pouvant être divisées ?
+### Existe-t-il des limites quant au nombre de pages pouvant être divisées ?
 
-Aspose.Words for Java n'impose pas de limitations spécifiques sur le nombre de pages que vous pouvez diviser. Gardez toutefois à l’esprit que les documents très volumineux peuvent nécessiter plus de mémoire et de temps de traitement. Soyez attentif aux ressources système lorsque vous travaillez avec des documents volumineux.
+Aspose.Words pour Java n'impose pas de limites spécifiques quant au nombre de pages que vous pouvez diviser. Cependant, gardez à l'esprit que les documents très volumineux peuvent nécessiter davantage de mémoire et de temps de traitement. Soyez attentif aux ressources système lorsque vous travaillez avec des documents volumineux.
 
 ### Comment puis-je gérer les en-têtes et les pieds de page lors du fractionnement de documents ?
 
-Les en-têtes et pieds de page peuvent être gérés lors du fractionnement de documents à l'aide de la bibliothèque Aspose.Words pour Java. Vous pouvez copier le contenu de l'en-tête et du pied de page du document d'origine vers les documents fractionnés, en vous assurant qu'ils sont correctement conservés. Vous devrez peut-être personnaliser ce processus en fonction de vos exigences spécifiques en matière d'en-tête et de pied de page.
+Les en-têtes et les pieds de page peuvent être gérés lors du fractionnement de documents à l'aide de la bibliothèque Aspose.Words pour Java. Vous pouvez copier le contenu de l'en-tête et du pied de page du document d'origine vers les documents fractionnés, en vous assurant qu'ils sont correctement conservés. Vous devrez peut-être personnaliser ce processus en fonction de vos exigences spécifiques en matière d'en-tête et de pied de page.

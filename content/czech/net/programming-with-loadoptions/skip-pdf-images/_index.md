@@ -91,7 +91,7 @@ Ne, přeskakování obrázků má vliv pouze na obrázky. Text zůstává nedot�
 
 ### Mohu tuto funkci použít s jinými formáty dokumentů?
 
- The`SkipPdfImages` možnost je speciálně pro dokumenty PDF. Pro jiné formáty jsou k dispozici různé možnosti a metody.
+The`SkipPdfImages` možnost je speciálně pro dokumenty PDF. Pro jiné formáty jsou k dispozici různé možnosti a metody.
 
 ### Jak mohu ověřit, že byly obrázky přeskočeny?
 

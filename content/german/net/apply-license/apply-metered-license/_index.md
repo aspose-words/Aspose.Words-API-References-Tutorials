@@ -16,7 +16,7 @@ Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Sie in Ihren
 Bevor wir uns in den Code stürzen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
 
 1.  Aspose.Words für .NET: Falls noch nicht geschehen, laden Sie die Bibliothek von der[Aspose-Website](https://releases.aspose.com/words/net/).
-2. Gültige Zählerlizenzschlüssel: Sie benötigen die Schlüssel, um die Zählerlizenz zu aktivieren. Diese erhalten Sie im[Aspose-Kaufseite](https://purchase.aspose.com/buy).
+2.  Gültige Zählerlizenzschlüssel: Sie benötigen die Schlüssel, um die Zählerlizenz zu aktivieren. Diese erhalten Sie im[Aspose-Kaufseite](https://purchase.aspose.com/buy).
 3. Entwicklungsumgebung: Stellen Sie sicher, dass Sie eine .NET-Entwicklungsumgebung eingerichtet haben. Visual Studio ist eine beliebte Wahl, Sie können jedoch jede IDE verwenden, die .NET unterstützt.
 
 ## Namespaces importieren
@@ -46,7 +46,7 @@ Metered metered = new Metered();
 metered.SetMeteredKey("your_public_key", "your_private_key");
 ```
 
- Ersetzen`"your_public_key"`Und`"your_private_key"`mit den tatsächlichen Schlüsseln, die Sie von Aspose erhalten haben. Dieser Schritt teilt Aspose im Wesentlichen mit, dass Sie eine gemessene Lizenz verwenden möchten.
+ Ersetzen`"your_public_key"` Und`"your_private_key"` mit den tatsächlichen Schlüsseln, die Sie von Aspose erhalten haben. Dieser Schritt teilt Aspose im Wesentlichen mit, dass Sie eine gemessene Lizenz verwenden möchten.
 
 ## Schritt 3: Laden Sie Ihr Dokument
 

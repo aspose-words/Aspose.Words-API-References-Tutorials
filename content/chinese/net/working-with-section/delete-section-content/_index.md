@@ -99,7 +99,7 @@ foreach (Section section in doc.Sections)
 }
 ```
 
-### 我可以清除内容而不影响部分格式吗？
+### 我可以清除内容而不影响章节格式吗？
 
 是的，`ClearContent()`仅删除部分内的内容并保留部分结构和格式。
 

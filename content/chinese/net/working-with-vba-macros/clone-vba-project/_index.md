@@ -10,7 +10,7 @@ url: /zh/net/working-with-vba-macros/clone-vba-project/
 
 ## 介绍
 
-各位开发人员，大家好！您是否曾发现自己陷入了以编程方式操作 Word 文档的复杂性中？好吧，您有福了！在本指南中，我们将引导您完成使用 Aspose.Words for .NET 将 VBA 项目从一个 Word 文档克隆到另一个 Word 文档的过程。无论您是想自动创建文档还是管理复杂的 VBA 脚本，本教程都能满足您的需求。所以，让我们开始吧，让文档操作变得像周日早上一样简单！
+各位开发人员，大家好！您是否曾发现自己被以编程方式操作 Word 文档的复杂性所困扰？好吧，您有福了！在本指南中，我们将引导您完成使用 Aspose.Words for .NET 将 VBA 项目从一个 Word 文档克隆到另一个 Word 文档的过程。无论您是想自动创建文档还是管理复杂的 VBA 脚本，本教程都能满足您的需求。所以，让我们开始吧，让文档操作变得像周日早上一样简单！
 
 ## 先决条件
 
@@ -36,7 +36,7 @@ using Aspose.Words.Vba;
 
 ## 步骤 1：设置文档目录
 
-首先，我们需要定义文档目录的路径。这是源 Word 文档和新文档的保存位置。
+首先，我们需要定义文档目录的路径。这是保存源 Word 文档和新文档的位置。
 
 ### 定义路径
 
@@ -46,7 +46,7 @@ using Aspose.Words.Vba;
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
-代替`"YOUR DOCUMENT DIRECTORY"`替换为 Word 文档的实际存储路径。此目录将成为本教程的工作区。
+代替`"YOUR DOCUMENT DIRECTORY"`替换为 Word 文档的实际存储路径。此目录将作为本教程的工作区。
 
 ## 第 2 步：加载 Word 文档
 

@@ -9,7 +9,7 @@ url: /zh/net/programming-with-table-styles-and-formatting/expand-formatting-on-c
 ---
 ## 介绍
 
-您是否需要在 Word 文档的表格中应用一致的样式？手动调整每个单元格可能很繁琐，而且容易出错。这时 Aspose.Words for .NET 就派上用场了。本教程将指导您完成从表格样式扩展单元格和行格式的过程，确保您的文档看起来精致而专业，而无需额外的麻烦。
+您是否需要在 Word 文档的表格中应用一致的样式？手动调整每个单元格可能很繁琐，而且容易出错。这时 Aspose.Words for .NET 就派上用场了。本教程将指导您完成从表格样式扩展单元格和行格式的过程，确保您的文档看起来精美而专业，而无需额外的麻烦。
 
 ## 先决条件
 

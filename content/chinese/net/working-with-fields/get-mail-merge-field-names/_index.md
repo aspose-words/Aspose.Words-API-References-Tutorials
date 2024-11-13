@@ -25,7 +25,7 @@ url: /zh/net/working-with-fields/get-mail-merge-field-names/
 
 ## 导入命名空间
 
-首先，您需要在 C# 代码中导入必要的命名空间。这样您就可以访问 Aspose.Words 功能。以下是如何包含它们：
+首先，您需要在 C# 代码中导入必要的命名空间。这样您就可以访问 Aspose.Words 功能。以下是如何添加它们：
 
 ```csharp
 using Aspose.Words;
@@ -38,7 +38,7 @@ using System;
 
 ## 步骤 1：定义文档目录
 
-标题：指定文档路径
+标题：指定文档的路径
 
 首先，您需要设置 Word 文档所在目录的路径。这很重要，因为它会告诉您的应用程序在哪里找到该文件。操作方法如下：
 
@@ -97,7 +97,7 @@ Console.WriteLine("\nDocument contains " + fieldNames.Length + " merge fields.")
 ## 常见问题解答
 
 ### 什么是 Aspose.Words for .NET？
-Aspose.Words for .NET 是一个功能强大的库，允许开发人员在.NET 应用程序中以编程方式创建、修改和管理 Word 文档。
+Aspose.Words for .NET 是一个功能强大的库，允许开发人员在 .NET 应用程序中以编程方式创建、修改和管理 Word 文档。
 
 ### 如何免费试用 Aspose.Words？
 您可以通过访问获取免费试用[Aspose 发布页面](https://releases.aspose.com/).

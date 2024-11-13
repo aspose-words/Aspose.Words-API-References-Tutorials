@@ -71,7 +71,7 @@ builder.StartBookmark("FineBookmark");
 builder.Writeln("This is just a fine bookmark.");
 ```
 
- Ο`Writeln` μέθοδος προσθέτει μια νέα παράγραφο με το καθορισμένο κείμενο στο έγγραφο.
+Ο`Writeln` μέθοδος προσθέτει μια νέα παράγραφο με το καθορισμένο κείμενο στο έγγραφο.
 
 ## Βήμα 5: Τερματίστε τον σελιδοδείκτη
 
@@ -81,7 +81,7 @@ builder.Writeln("This is just a fine bookmark.");
 builder.EndBookmark("FineBookmark");
 ```
 
- Ο`EndBookmark` μέθοδος ολοκληρώνει τον σελιδοδείκτη που ξεκινήσαμε νωρίτερα.
+Ο`EndBookmark` μέθοδος ολοκληρώνει τον σελιδοδείκτη που ξεκινήσαμε νωρίτερα.
 
 ## Βήμα 6: Αποθηκεύστε το έγγραφο
 

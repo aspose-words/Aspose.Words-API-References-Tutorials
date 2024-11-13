@@ -1,30 +1,30 @@
 ---
-title: Formatteer het aantal gegevenslabels in een grafiek
-linktitle: Formatteer het aantal gegevenslabels in een grafiek
-second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u gegevenslabels in diagrammen kunt opmaken met Aspose.Words voor .NET met deze stapsgewijze handleiding. Verbeter moeiteloos uw Word-documenten.
+title: Formaat Aantal Gegevenslabels In Een Grafiek
+linktitle: Formaat Aantal Gegevenslabels In Een Grafiek
+second_title: Aspose.Words API voor documentverwerking
+description: Leer hoe u gegevenslabels in diagrammen kunt opmaken met Aspose.Words voor .NET met deze stapsgewijze handleiding. Verbeter uw Word-documenten moeiteloos.
 type: docs
 weight: 10
 url: /nl/net/programming-with-charts/format-number-of-data-label/
 ---
 ## Invoering
 
-Bij het maken van boeiende en informatieve documenten gaat het vaak om het opnemen van diagrammen met goed opgemaakte gegevenslabels. Als u een .NET-ontwikkelaar bent en uw Word-documenten wilt uitbreiden met geavanceerde grafieken, is Aspose.Words voor .NET een fantastische bibliotheek om u daarbij te helpen. In deze zelfstudie wordt u stap voor stap door het proces geleid van het opmaken van nummerlabels in een diagram met Aspose.Words voor .NET.
+Het maken van boeiende en informatieve documenten omvat vaak het opnemen van grafieken met goed geformatteerde gegevenslabels. Als u een .NET-ontwikkelaar bent die uw Word-documenten wilt verbeteren met geavanceerde grafieken, is Aspose.Words voor .NET een fantastische bibliotheek om u daarbij te helpen. Deze tutorial leidt u stap voor stap door het proces van het formatteren van nummerlabels in een grafiek met behulp van Aspose.Words voor .NET.
 
 ## Vereisten
 
-Voordat je in de code duikt, zijn er een paar vereisten die je moet hebben:
+Voordat u aan de slag gaat met de code, moet u aan een aantal voorwaarden voldoen:
 
--  Aspose.Words voor .NET: Zorg ervoor dat de Aspose.Words voor .NET-bibliotheek is geïnstalleerd. Als je het nog niet hebt geïnstalleerd, dan kan dat[download het hier](https://releases.aspose.com/words/net/).
-- Ontwikkelomgeving: U moet een .NET-ontwikkelomgeving hebben ingesteld. Visual Studio wordt sterk aanbevolen.
-- Basiskennis van C#: Bekendheid met programmeren in C# is essentieel, aangezien deze tutorial het schrijven en begrijpen van C#-code omvat.
--  Tijdelijke licentie: om Aspose.Words zonder enige beperking te gebruiken, kunt u een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/).
+-  Aspose.Words voor .NET: Zorg ervoor dat u de Aspose.Words voor .NET-bibliotheek hebt geïnstalleerd. Als u deze nog niet hebt geïnstalleerd, kunt u[download het hier](https://releases.aspose.com/words/net/).
+- Ontwikkelomgeving: U dient een .NET-ontwikkelomgeving in te stellen. Visual Studio wordt sterk aanbevolen.
+- Basiskennis van C#: Kennis van C#-programmering is essentieel, aangezien deze tutorial het schrijven en begrijpen van C#-code inhoudt.
+-  Tijdelijke licentie: Om Aspose.Words zonder enige beperking te gebruiken, kunt u een[tijdelijke licentie](https://purchase.aspose.com/temporary-license/).
 
-Laten we nu eens kijken naar het stapsgewijze proces van het opmaken van nummerlabels in een diagram.
+Laten we nu eens kijken naar het stapsgewijze proces voor het opmaken van nummerlabels in een grafiek.
 
 ## Naamruimten importeren
 
-Allereerst moeten we de benodigde naamruimten importeren om met Aspose.Words voor .NET te kunnen werken. Voeg de volgende regels toe bovenaan uw C#-bestand:
+Allereerst moeten we de benodigde naamruimten importeren om te werken met Aspose.Words voor .NET. Voeg de volgende regels toe bovenaan uw C#-bestand:
 
 ```csharp
 using Aspose.Words;
@@ -34,26 +34,26 @@ using Aspose.Words.Drawing.Charts;
 
 ## Stap 1: Stel uw documentenmap in
 
-Voordat u uw Word-document kunt gaan manipuleren, moet u de map opgeven waar uw document zal worden opgeslagen. Dit is essentieel voor de latere opslagbewerking.
+Voordat u kunt beginnen met het manipuleren van uw Word-document, moet u de directory opgeven waar uw document wordt opgeslagen. Dit is essentieel voor de opslagbewerking later.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw documentmap.
+ Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw documentenmap.
 
 ## Stap 2: Initialiseer het document en DocumentBuilder
 
- De volgende stap is het initialiseren van een nieuw`Document` en een`DocumentBuilder` . De`DocumentBuilder` is een helperklasse waarmee we de documentinhoud kunnen construeren.
+ De volgende stap is het initialiseren van een nieuwe`Document` en een`DocumentBuilder` . De`DocumentBuilder` is een hulpklasse waarmee we de inhoud van het document kunnen samenstellen.
 
 ```csharp
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
-## Stap 3: Voeg een diagram in het document in
+## Stap 3: Een grafiek in het document invoegen
 
- Laten we nu een diagram in het document invoegen met behulp van de`DocumentBuilder`. In deze zelfstudie gebruiken we een lijndiagram als voorbeeld.
+ Laten we nu een grafiek in het document invoegen met behulp van de`DocumentBuilder`In deze tutorial gebruiken we een lijndiagram als voorbeeld.
 
 ```csharp
 Shape shape = builder.InsertChart(ChartType.Line, 432, 252);
@@ -61,17 +61,17 @@ Chart chart = shape.Chart;
 chart.Title.Text = "Data Labels With Different Number Format";
 ```
 
-Hier voegen we een lijndiagram in met een specifieke breedte en hoogte en stellen we de diagramtitel in.
+Hier voegen we een lijndiagram in met een specifieke breedte en hoogte en stellen we de grafiektitel in.
 
-## Stap 4: Wis de standaardreeks en voeg een nieuwe reeks toe
+## Stap 4: Standaardreeks wissen en nieuwe reeks toevoegen
 
-Standaard bevat het diagram een aantal vooraf gegenereerde reeksen. We moeten deze wissen en onze eigen reeksen met specifieke gegevenspunten toevoegen.
+Standaard bevat de grafiek een aantal vooraf gegenereerde series. We moeten deze wissen en onze eigen series met specifieke datapunten toevoegen.
 
 ```csharp
-// Verwijder standaard gegenereerde reeksen.
+// Standaard gegenereerde series verwijderen.
 chart.Series.Clear();
 
-// Voeg nieuwe reeksen toe met aangepaste gegevenspunten.
+// Voeg een nieuwe reeks toe met aangepaste datapunten.
 ChartSeries series1 = chart.Series.Add("Aspose Series 1", 
 	new string[] { "Category 1", "Category 2", "Category 3" }, 
 	new double[] { 2.5, 1.5, 3.5 });
@@ -79,30 +79,30 @@ ChartSeries series1 = chart.Series.Add("Aspose Series 1",
 
 ## Stap 5: Gegevenslabels inschakelen
 
-Om de gegevenslabels in het diagram weer te geven, moeten we ze inschakelen voor onze reeksen.
+Om de gegevenslabels in de grafiek weer te geven, moeten we ze voor onze reeks inschakelen.
 
 ```csharp
 series1.HasDataLabels = true;
 series1.DataLabels.ShowValue = true;
 ```
 
-## Stap 6: Gegevenslabels formatteren
+## Stap 6: Gegevenslabels opmaken
 
-De kern van deze zelfstudie is het opmaken van de gegevenslabels. Op elk gegevenslabel kunnen wij verschillende getalformaten toepassen.
+De kern van deze tutorial is het formatteren van de datalabels. We kunnen verschillende nummerformaten toepassen op elk datalabel afzonderlijk.
 
 ```csharp
-series1.DataLabels[0].NumberFormat.FormatCode = "\"$\"#,##0.00"; // Valuta-indeling
-series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy"; // Datumformaat
+series1.DataLabels[0].NumberFormat.FormatCode = "\"$\"#,##0.00"; // Valutaformaat
+series1.DataLabels[1].NumberFormat.FormatCode = "dd/mm/yyyy"; // Datumnotatie
 series1.DataLabels[2].NumberFormat.FormatCode = "0.00%"; // Percentage-indeling
 ```
 
- Bovendien kunt u de indeling van een gegevenslabel aan een broncel koppelen. Wanneer gekoppeld, wordt de`NumberFormat` wordt teruggezet naar algemeen en overgenomen van de broncel.
+ Bovendien kunt u de opmaak van een gegevenslabel koppelen aan een broncel. Wanneer gekoppeld,`NumberFormat` wordt teruggezet naar algemeen en overgenomen van de broncel.
 
 ```csharp
 series1.DataLabels[2].NumberFormat.IsLinkedToSource = true;
 ```
 
-## Stap 7: Bewaar het document
+## Stap 7: Sla het document op
 
 Sla het document ten slotte op in de opgegeven map.
 
@@ -110,25 +110,25 @@ Sla het document ten slotte op in de opgegeven map.
 doc.Save(dataDir + "WorkingWithCharts.FormatNumberOfDataLabel.docx");
 ```
 
-Hierdoor wordt uw document opgeslagen met de opgegeven naam en wordt ervoor gezorgd dat uw diagram met opgemaakte gegevenslabels behouden blijft.
+Hiermee wordt uw document met de opgegeven naam opgeslagen en blijft uw grafiek met opgemaakte gegevenslabels behouden.
 
 ## Conclusie
 
-Het opmaken van gegevenslabels in een diagram met Aspose.Words voor .NET kan de leesbaarheid en professionaliteit van uw Word-documenten aanzienlijk verbeteren. Door deze stapsgewijze handleiding te volgen, zou u nu een diagram moeten kunnen maken, gegevensreeksen toevoegen en de gegevenslabels opmaken om aan uw behoeften te voldoen. Aspose.Words voor .NET is een krachtig hulpmiddel dat uitgebreide aanpassing en automatisering van Word-documenten mogelijk maakt, waardoor het van onschatbare waarde is voor .NET-ontwikkelaars.
+Het formatteren van gegevenslabels in een diagram met Aspose.Words voor .NET kan de leesbaarheid en professionaliteit van uw Word-documenten aanzienlijk verbeteren. Door deze stapsgewijze handleiding te volgen, zou u nu een diagram moeten kunnen maken, gegevensreeksen moeten kunnen toevoegen en de gegevenslabels moeten kunnen formatteren om aan uw behoeften te voldoen. Aspose.Words voor .NET is een krachtige tool die uitgebreide aanpassing en automatisering van Word-documenten mogelijk maakt, waardoor het een onschatbare hulpbron is voor .NET-ontwikkelaars.
 
 ## Veelgestelde vragen
 
 ### Wat is Aspose.Words voor .NET?
-Aspose.Words voor .NET is een krachtige bibliotheek voor het programmatisch maken, manipuleren en converteren van Word-documenten met behulp van C#.
+Aspose.Words voor .NET is een krachtige bibliotheek voor het programmatisch maken, bewerken en converteren van Word-documenten met behulp van C#.
 
-### Kan ik andere typen diagrammen opmaken met Aspose.Words voor .NET?
-Ja, Aspose.Words voor .NET ondersteunt verschillende diagramtypen, waaronder staaf-, kolom-, cirkel- en meer.
+### Kan ik andere soorten grafieken opmaken met Aspose.Words voor .NET?
+Ja, Aspose.Words voor .NET ondersteunt verschillende grafiektypen, waaronder staaf-, kolom-, cirkeldiagrammen en meer.
 
 ### Hoe krijg ik een tijdelijke licentie voor Aspose.Words voor .NET?
- U kunt een tijdelijke licentie verkrijgen[hier](https://purchase.aspose.com/temporary-license/).
+ kunt een tijdelijke licentie verkrijgen[hier](https://purchase.aspose.com/temporary-license/).
 
 ### Is het mogelijk om gegevenslabels te koppelen aan broncellen in Excel?
-Ja, u kunt gegevenslabels aan broncellen koppelen, waardoor de getalnotatie van de broncel kan worden overgenomen.
+Ja, u kunt gegevenslabels koppelen aan broncellen, zodat de getalnotatie van de broncel kan worden overgenomen.
 
 ### Waar kan ik meer gedetailleerde documentatie vinden voor Aspose.Words voor .NET?
  U kunt uitgebreide documentatie vinden[hier](https://reference.aspose.com/words/net/).

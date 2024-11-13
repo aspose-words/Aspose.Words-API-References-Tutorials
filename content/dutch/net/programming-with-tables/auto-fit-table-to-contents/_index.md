@@ -1,45 +1,45 @@
 ---
-title: Tabel automatisch aanpassen aan inhoud
-linktitle: Tabel automatisch aanpassen aan inhoud
-second_title: Aspose.Words-API voor documentverwerking
-description: Leer in deze handleiding hoe u tabellen automatisch aan de inhoud van Word-documenten kunt aanpassen met behulp van Aspose.Words voor .NET. Perfect voor dynamische en nette documentopmaak.
+title: Automatisch aanpassen van de inhoudsopgave
+linktitle: Automatisch aanpassen van de inhoudsopgave
+second_title: Aspose.Words API voor documentverwerking
+description: Leer hoe u automatisch tabellen aan de inhoud van Word-documenten kunt aanpassen met Aspose.Words voor .NET met deze gids. Perfect voor dynamische en nette documentopmaak.
 type: docs
 weight: 10
 url: /nl/net/programming-with-tables/auto-fit-table-to-contents/
 ---
 ## Invoering
 
-Heeft u ooit moeite gehad met tabellen die eruit zien alsof ze in uw Word-document zijn geperst, waardoor de tekst krap is en de kolommen niet goed zijn uitgelijnd? Als dat zo is, ben je niet de enige! Het beheren van tabelopmaak kan een heel gedoe zijn, vooral als het om dynamische inhoud gaat. Maar maak je geen zorgen; Aspose.Words voor .NET staat voor u klaar. In deze handleiding duiken we in de handige functie van het automatisch aanpassen van tabellen aan de inhoud. Deze functionaliteit zorgt ervoor dat uw tabellen zich perfect aanpassen aan de inhoud, waardoor uw documenten er met minimale inspanning verzorgd en professioneel uitzien. Klaar om aan de slag te gaan? Laten we uw tafels harder voor u laten werken!
+Heb je ooit moeite gehad met tabellen die eruit zagen alsof ze in je Word-document waren gepropt, waardoor de tekst te krap werd en de kolommen niet goed uitgelijnd waren? Dan ben je niet de enige! Het beheren van tabelopmaak kan een heel gedoe zijn, vooral als je met dynamische content werkt. Maar maak je geen zorgen; Aspose.Words voor .NET heeft je rug. In deze gids duiken we in de handige functie van het automatisch aanpassen van tabellen aan de inhoud. Deze functionaliteit zorgt ervoor dat je tabellen zich perfect aanpassen aan hun inhoud, waardoor je documenten er met minimale inspanning gepolijst en professioneel uitzien. Klaar om te beginnen? Laten we je tabellen harder voor je laten werken!
 
 ## Vereisten
 
-Voordat we ingaan op de code, is dit wat je nodig hebt:
+Voordat we met de code beginnen, moet u het volgende regelen:
 
-1.  Aspose.Words voor .NET: Zorg ervoor dat de Aspose.Words-bibliotheek is geïnstalleerd. Je kunt het downloaden[hier](https://releases.aspose.com/words/net/).
-2. Visual Studio: Een ontwikkelomgeving zoals Visual Studio voor het schrijven en testen van uw code.
-3. Basiskennis van C#: Bekendheid met programmeren in C# zal nuttig zijn, aangezien we het zullen gebruiken om Word-documenten te manipuleren.
+1.  Aspose.Words voor .NET: Zorg ervoor dat u de Aspose.Words-bibliotheek hebt geïnstalleerd. U kunt deze downloaden[hier](https://releases.aspose.com/words/net/).
+2. Visual Studio: een ontwikkelomgeving zoals Visual Studio voor het schrijven en testen van uw code.
+3. Basiskennis van C#: Kennis van C#-programmering is nuttig, aangezien we dit programma gaan gebruiken om Word-documenten te bewerken.
 
 ## Naamruimten importeren
 
-Om met Aspose.Words te gaan werken, moet u de benodigde naamruimten in uw C#-project opnemen. Zo doe je het:
+Om te beginnen met Aspose.Words, moet u de benodigde namespaces in uw C#-project opnemen. Dit is hoe u dat doet:
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Tables;
 ```
 
- De`Aspose.Words` naamruimte biedt de kernfunctionaliteit voor het verwerken van Word-documenten, terwijl`Aspose.Words.Tables` omvat de lessen specifiek voor het werken met tabellen.
+De`Aspose.Words` De naamruimte biedt de kernfunctionaliteit voor het verwerken van Word-documenten, terwijl`Aspose.Words.Tables` bevat de klassen die specifiek bedoeld zijn voor het werken met tabellen.
 
 ## Stap 1: Stel uw documentenmap in
 
-Definieer eerst het pad waar uw document is opgeslagen. Dit zal uw startpunt zijn voor het laden en opslaan van bestanden.
+Definieer eerst het pad waar uw document is opgeslagen. Dit is uw startpunt voor het laden en opslaan van bestanden.
 
 ```csharp
-// Pad naar uw documentmap
+// Pad naar uw documentenmap
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Vervangen`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad waar uw document zich bevindt. Dit is hetzelfde als het inrichten van uw werkruimte voordat u aan een project begint.
+ Vervangen`"YOUR DOCUMENT DIRECTORY"` met het werkelijke pad waar uw document zich bevindt. Dit is hetzelfde als het instellen van uw werkruimte voordat u aan een project begint.
 
 ## Stap 2: Laad uw document
 
@@ -49,19 +49,19 @@ Laten we nu het Word-document laden dat de tabel bevat die u wilt opmaken.
 Document doc = new Document(dataDir + "Tables.docx");
 ```
 
- In deze stap openen we een document met de naam`Tables.docx`Zorg ervoor dat het bestand in de opgegeven map staat, anders krijgt u een foutmelding. Beschouw dit als het openen van een bestand in uw favoriete teksteditor voordat u wijzigingen aanbrengt.
+ In deze stap openen we een document met de naam`Tables.docx`Zorg ervoor dat het bestand in de opgegeven directory staat, anders krijg je een foutmelding. Zie dit als het openen van een bestand in je favoriete teksteditor voordat je wijzigingen aanbrengt.
 
 ## Stap 3: Toegang tot de tabel
 
-Vervolgens moeten we toegang krijgen tot de tabel in het document. Zo krijgt u de eerste tabel in het document:
+Vervolgens moeten we toegang krijgen tot de tabel in het document. Zo krijg je de eerste tabel in het document:
 
 ```csharp
 Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 ```
 
-Deze code haalt de eerste tabel op die wordt gevonden. Als uw document meerdere tabellen bevat, moet u dit mogelijk aanpassen om een specifieke tabel te targeten. Stel je voor dat je in een bestandsmap reikt om een specifiek document van een stapel te pakken.
+Deze code haalt de eerste tabel op die het vindt. Als uw document meerdere tabellen bevat, moet u dit mogelijk aanpassen om een specifieke tabel te targeten. Stel u voor dat u in een bestandsmap grijpt om een specifiek document uit een stapel te pakken.
 
-## Stap 4: Pas de tafel automatisch aan
+## Stap 4: De tabel automatisch aanpassen
 
 Nu komt het magische gedeelte: de tabel automatisch aanpassen aan de inhoud:
 
@@ -69,9 +69,9 @@ Nu komt het magische gedeelte: de tabel automatisch aanpassen aan de inhoud:
 table.AutoFit(AutoFitBehavior.AutoFitToContents);
 ```
 
-Deze coderegel vertelt Aspose.Words om de kolommen en rijen van de tabel aan te passen, zodat ze perfect bij de inhoud passen. Het is alsof je een automatisch formaathulpmiddel gebruikt dat ervoor zorgt dat alles precies goed past, waardoor handmatige aanpassingen niet meer nodig zijn.
+Deze regel code vertelt Aspose.Words om de tabelkolommen en -rijen aan te passen zodat ze perfect bij de inhoud passen. Het is alsof je een automatische formaataanpassingstool gebruikt die ervoor zorgt dat alles precies goed past, waardoor handmatige aanpassingen niet meer nodig zijn.
 
-## Stap 5: Bewaar het document
+## Stap 5: Sla het document op
 
 Sla ten slotte de wijzigingen op in een nieuw document:
 
@@ -79,25 +79,25 @@ Sla ten slotte de wijzigingen op in een nieuw document:
 doc.Save(dataDir + "WorkingWithTables.AutoFitTableToContents.docx");
 ```
 
-Met deze stap wordt uw bijgewerkte document opgeslagen onder een nieuwe naam, zodat u het oorspronkelijke bestand niet overschrijft. Het is vergelijkbaar met het opslaan van een nieuwe versie van uw document om het origineel te behouden terwijl u wijzigingen toepast.
+Met deze stap slaat u uw bijgewerkte document op met een nieuwe naam, zodat u het originele bestand niet overschrijft. Het is vergelijkbaar met het opslaan van een nieuwe versie van uw document om het origineel te behouden terwijl u wijzigingen toepast.
 
 ## Conclusie
 
-Het automatisch aanpassen van tabellen aan de inhoud met Aspose.Words voor .NET is een eenvoudig proces dat het uiterlijk van uw Word-documenten aanzienlijk kan verbeteren. Door de hierboven beschreven stappen te volgen, kunt u ervoor zorgen dat uw tabellen zich automatisch aanpassen aan hun inhoud, waardoor u tijd en moeite bespaart bij het opmaken. Of u nu te maken heeft met grote datasets of gewoon wilt dat uw tabellen er netjes uitzien, deze functie is een echte game-changer. Veel codeerplezier!
+Automatisch tabellen aanpassen aan de inhoud met Aspose.Words voor .NET is een eenvoudig proces dat het uiterlijk van uw Word-documenten aanzienlijk kan verbeteren. Door de hierboven beschreven stappen te volgen, kunt u ervoor zorgen dat uw tabellen automatisch worden aangepast aan de inhoud, waardoor u tijd en moeite bespaart bij het opmaken. Of u nu met grote datasets werkt of gewoon wilt dat uw tabellen er netjes uitzien, deze functie is een echte game-changer. Veel plezier met coderen!
 
 ## Veelgestelde vragen
 
-### Kan ik alleen specifieke kolommen in een tabel automatisch aanpassen?
- De`AutoFit` methode geldt voor de hele tabel. Als u specifieke kolommen moet aanpassen, moet u mogelijk de kolombreedten handmatig instellen.
+### Kan ik alleen specifieke kolommen in een tabel automatisch laten aanpassen?
+De`AutoFit` methode is van toepassing op de gehele tabel. Als u specifieke kolommen moet aanpassen, moet u mogelijk de kolombreedtes handmatig instellen.
 
-### Wat moet ik doen als mijn document meerdere tabellen bevat?
- U kunt door alle tabellen in het document bladeren met behulp van`doc.GetChildNodes(NodeType.Table, true)` en pas auto-fit toe indien nodig.
+### Wat als mijn document meerdere tabellen bevat?
+ U kunt door alle tabellen in het document heen lussen met behulp van`doc.GetChildNodes(NodeType.Table, true)` en pas indien nodig automatisch aanpassen toe.
 
-### Hoe kan ik de wijzigingen indien nodig ongedaan maken?
-Bewaar een back-up van uw originele document voordat u wijzigingen aanbrengt, of sla verschillende versies van uw document op terwijl u werkt.
+### Hoe kan ik de wijzigingen ongedaan maken indien nodig?
+Maak een reservekopie van uw originele document voordat u wijzigingen aanbrengt. U kunt ook verschillende versies van uw document opslaan terwijl u eraan werkt.
 
-### Is het mogelijk om tabellen automatisch aan te passen in beveiligde documenten?
-Ja, maar zorg ervoor dat u over de benodigde machtigingen beschikt om het document te wijzigen.
+### Is het mogelijk om tabellen automatisch aan te passen aan beveiligde documenten?
+Ja, maar zorg ervoor dat u over de benodigde rechten beschikt om het document te kunnen wijzigen.
 
-### Hoe weet ik of de auto-fit succesvol was?
-Open het opgeslagen document en controleer de tabelindeling. Het moet worden aangepast aan de inhoud.
+### Hoe weet ik of de automatische aanpassing succesvol is?
+Open het opgeslagen document en controleer de tabelindeling. Deze zou zich moeten aanpassen aan de inhoud.

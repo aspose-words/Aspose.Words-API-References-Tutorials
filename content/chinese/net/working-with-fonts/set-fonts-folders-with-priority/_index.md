@@ -17,7 +17,7 @@ url: /zh/net/working-with-fonts/set-fonts-folders-with-priority/
 
 -  Aspose.Words for .NET：您需要安装此库。如果您还没有安装，您可以[点击下载](https://releases.aspose.com/words/net/).
 - 开发环境：确保您有一个可运行的 .NET 开发环境，例如 Visual Studio。
-- 文档目录：确保你有一个文档目录。在我们的示例中，我们将使用`"YOUR DOCUMENT DIRECTORY"`作为此路径的占位符。
+- 文档目录：确保您的文档有一个目录。在我们的示例中，我们将使用`"YOUR DOCUMENT DIRECTORY"`作为此路径的占位符。
 
 ## 导入命名空间
 

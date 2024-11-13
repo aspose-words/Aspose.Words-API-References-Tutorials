@@ -9,7 +9,7 @@ url: /de/net/programming-with-document-properties/remove-personal-information/
 ---
 ## Einführung
 
-Hallo! Haben Sie sich schon einmal in Dokumentenverwaltungsaufgaben verstrickt? Das kennen wir alle. Ob Sie mit Verträgen, Berichten oder einfach nur mit dem täglichen Papierkram zu tun haben, ein Tool, das den Prozess vereinfacht, ist ein Lebensretter. Hier kommt Aspose.Words für .NET ins Spiel. Mit diesem Juwel einer Bibliothek können Sie die Erstellung, Bearbeitung und Konvertierung von Dokumenten wie ein Profi automatisieren. Heute führen wir Sie durch eine äußerst praktische Funktion: das Entfernen persönlicher Informationen aus einem Dokument. Tauchen wir ein!
+Hallo! Haben Sie sich schon einmal in Dokumentenverwaltungsaufgaben verstrickt? Das kennen wir alle. Ob Sie mit Verträgen, Berichten oder einfach nur mit dem täglichen Papierkram zu tun haben, ein Tool, das den Prozess vereinfacht, ist ein Lebensretter. Hier kommt Aspose.Words für .NET ins Spiel. Mit diesem Juwel einer Bibliothek können Sie die Erstellung, Bearbeitung und Konvertierung von Dokumenten wie ein Profi automatisieren. Heute führen wir Sie durch eine äußerst praktische Funktion: das Entfernen persönlicher Informationen aus einem Dokument. Lassen Sie uns eintauchen!
 
 ## Voraussetzungen
 
@@ -50,7 +50,7 @@ Document doc = new Document(dataDir + "Properties.docx");
 
 ### 2.1 Aktivieren Sie die Funktion
 
-Aspose.Words macht es einfach, persönliche Informationen aus Ihrem Dokument zu entfernen. Alles, was Sie dazu brauchen, ist eine einzige Codezeile.
+Mit Aspose.Words können Sie ganz einfach persönliche Informationen aus Ihrem Dokument entfernen. Dazu ist nur eine einzige Codezeile erforderlich.
 
 ```csharp
 doc.RemovePersonalInformation = true;
@@ -84,7 +84,7 @@ Auf jeden Fall! Aspose.Words unterstützt eine Vielzahl von Formaten, darunter D
 
 ### Wie erhalte ich Unterstützung, wenn Probleme auftreten?
 
- Sie können Aspose.Words besuchen[Support-Forum](https://forum.aspose.com/c/words/8) für Hilfe bei allen Problemen oder Fragen, die Sie haben könnten.
+ Sie können Aspose.Words besuchen[Support-Forum](https://forum.aspose.com/c/words/8) für Hilfe bei allen Problemen oder Fragen, die Sie möglicherweise haben.
 
 ### Welche weiteren Funktionen bietet Aspose.Words?
 

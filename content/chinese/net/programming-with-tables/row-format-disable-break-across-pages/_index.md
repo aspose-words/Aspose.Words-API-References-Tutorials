@@ -9,7 +9,7 @@ url: /zh/net/programming-with-tables/row-format-disable-break-across-pages/
 ---
 ## 介绍
 
-在处理 Word 文档中的表格时，您可能希望确保行不会跨页中断，这对于维护文档的可读性和格式至关重要。Aspose.Words for .NET 提供了一种简单的方法来禁用跨页中断。
+在处理 Word 文档中的表格时，您可能希望确保行不会跨页中断，这对于维护文档的可读性和格式至关重要。Aspose.Words for .NET 提供了一种简单的方法来禁用跨页的行中断。
 
 在本教程中，我们将引导您完成使用 Aspose.Words for .NET 在 Word 文档中禁用跨页换行的过程。
 
@@ -74,7 +74,7 @@ doc.Save(dataDir + "WorkingWithTables.RowFormatDisableBreakAcrossPages.docx");
 ### 我可以针对特定行（而不是所有行）禁用跨页换行吗？  
 是的，您可以通过访问所需行并设置其`AllowBreakAcrossPages`财产`false`.
 
-### 此方法对具有合并单元格的表格有效吗？  
+### 此方法对带有合并单元格的表格有效吗？  
 是的，此方法适用于包含合并单元格的表格。属性`AllowBreakAcrossPages`适用于整行，无论单元格是否合并。
 
 ### 如果表嵌套在另一个表中，这种方法是否有效？  

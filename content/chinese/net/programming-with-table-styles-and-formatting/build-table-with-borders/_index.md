@@ -9,7 +9,7 @@ url: /zh/net/programming-with-table-styles-and-formatting/build-table-with-borde
 ---
 ## 介绍
 
-在 Word 文档中创建带有自定义边框的表格可以使您的内容在视觉上更具吸引力且井井有条。使用 Aspose.Words for .NET，您可以轻松构建和格式化表格，并精确控制边框、样式和颜色。本教程将逐步指导您完成该过程，确保您详细了解代码的每个部分。
+在 Word 文档中创建带有自定义边框的表格可以使您的内容在视觉上更具吸引力且井井有条。使用 Aspose.Words for .NET，您可以轻松构建和格式化表格，并精确控制边框、样式和颜色。本教程将逐步指导您完成整个过程，确保您详细了解代码的每个部分。
 
 ## 先决条件
 
@@ -54,7 +54,7 @@ Document doc = new Document(dataDir + "Tables.docx");
 Table table = (Table)doc.GetChild(NodeType.Table, 0, true);
 ```
 
-在这里，我们访问文档中的第一个表。`NodeType.Table`确保我们获取的是表节点和索引`0`表示我们想要第一个表。
+在这里，我们访问文档中的第一个表。`NodeType.Table`确保我们获取的是表节点，以及索引`0`表示我们想要第一个表。
 
 ## 步骤 3：清除现有边界
 

@@ -88,5 +88,5 @@ Aspose.Words for .NET 支持多种 Word 文档格式，确保与各种版本的 
 ### 我可以使用 Aspose.Words for .NET 自动执行 Word 文档中的其他任务吗？
 当然！Aspose.Words for .NET 提供了一套丰富的功能用于自动化和操作 Word 文档，包括格式化、合并等。
 
-### 在哪里可以找到更多有关 Aspose.Words for .NET 的教程和示例？
+### 在哪里可以找到更多 Aspose.Words for .NET 的教程和示例？
 您可以在[Aspose.Words for .NET 文档](https://reference.aspose.com/words/net/).

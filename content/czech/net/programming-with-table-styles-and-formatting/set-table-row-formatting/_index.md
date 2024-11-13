@@ -103,10 +103,10 @@ A tady to máte! Úspěšně jste vytvořili formátovanou tabulku v dokumentu a
  Absolutně! Do buněk tabulky můžete vkládat obrázky, tvary a další prvky pomocí`DocumentBuilder` třída.
 
 ### Jak změním zarovnání textu v buňkách tabulky?
- Zarovnání textu můžete změnit nastavením`ParagraphFormat.Alignment` vlastnictvím`DocumentBuilder` objekt.
+ Zarovnání textu můžete změnit nastavením`ParagraphFormat.Alignment` vlastnictví`DocumentBuilder` objekt.
 
 ### Mohu sloučit buňky v tabulce pomocí Aspose.Words for .NET?
- Ano, buňky můžete sloučit pomocí`CellFormat.HorizontalMerge`a`CellFormat.VerticalMerge` vlastnosti.
+ Ano, buňky můžete sloučit pomocí`CellFormat.HorizontalMerge` a`CellFormat.VerticalMerge` vlastnosti.
 
 ### Existuje způsob, jak stylizovat tabulku pomocí předdefinovaných stylů?
  Ano, Aspose.Words for .NET vám umožňuje použít předdefinované styly tabulek pomocí`Table.Style` vlastnictví.

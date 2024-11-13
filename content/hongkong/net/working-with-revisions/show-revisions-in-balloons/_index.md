@@ -71,7 +71,7 @@ doc.Save(dataDir + "WorkingWithRevisions.ShowRevisionsInBalloons.pdf");
 
 ## 結論
 
-現在你就得到它了！遵循這些簡單的步驟，您可以使用 Aspose.Words for .NET 在氣球中輕鬆顯示修訂。這使得文件的審查和協作變得輕而易舉，確保所有變更都清晰可見且井井有條。快樂編碼！
+現在你就擁有了！遵循這些簡單的步驟，您可以使用 Aspose.Words for .NET 在氣球中輕鬆顯示修訂。這使得文件的審查和協作變得輕而易舉，確保所有變更都清晰可見且井井有條。快樂編碼！
 
 ## 常見問題解答
 

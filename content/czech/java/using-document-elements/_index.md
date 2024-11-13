@@ -42,7 +42,7 @@ Naučte se efektivně používat pole Aspose.Words pro Java v tomto podrobném t
 ### [Použití písem v Aspose.Words pro Javu](./using-fonts/)
 Prozkoumejte formátování písem v Aspose.Words pro Java: velikost, styl, barva a další. Snadno vytvářejte krásně formátované dokumenty.
 ### [Použití poznámek pod čarou a vysvětlivky v Aspose.Words pro Java](./using-footnotes-and-endnotes/)
-Naučte se efektivně používat poznámky pod čarou a vysvětlivky v Aspose.Words pro Java. Vylepšete své dovednosti v oblasti formátování dokumentů ještě dnes!
+Naučte se efektivně používat poznámky pod čarou a vysvětlivky v Aspose.Words for Java. Vylepšete své dovednosti v oblasti formátování dokumentů ještě dnes!
 ### [Použití formulářových polí v Aspose.Words pro Java](./using-form-fields/)
 "Naučte se používat Aspose.Words for Java k vytváření interaktivních dokumentů Wordu s poli formuláře. Začněte hned!"
 ### [Použití HarfBuzz v Aspose.Words pro Java](./using-harfbuzz/)

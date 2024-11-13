@@ -39,7 +39,7 @@ using System;
 string dataDir = "YOUR_DIRECTORY_OF_DOCUMENTS";
 ```
 
-## 步骤 2：创建新文档
+## 第 2 步：创建新文档
 
 创建新文档和`DocumentBuilder`以方便添加内容。
 

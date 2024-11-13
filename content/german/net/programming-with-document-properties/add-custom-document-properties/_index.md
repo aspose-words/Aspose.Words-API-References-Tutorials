@@ -17,7 +17,7 @@ Bevor wir uns in den Code stürzen, stellen wir sicher, dass Sie alles haben, wa
 
 1.  Aspose.Words für .NET-Bibliothek: Stellen Sie sicher, dass Sie die Aspose.Words für .NET-Bibliothek haben. Sie können sie herunterladen[Hier](https://releases.aspose.com/words/net/).
 2. Entwicklungsumgebung: Eine IDE wie Visual Studio.
-3. Grundlegende Kenntnisse in C#: Dieses Tutorial setzt voraus, dass Sie über grundlegende Kenntnisse in C# und .NET verfügen.
+3. Grundkenntnisse in C#: Dieses Tutorial setzt voraus, dass Sie über Grundkenntnisse in C# und .NET verfügen.
 4.  Beispieldokument: Halten Sie ein Beispiel-Word-Dokument mit dem Namen bereit`Properties.docx`, die Sie ändern werden.
 
 ## Namespaces importieren
@@ -53,7 +53,7 @@ Auf diese Weise erhalten wir einen Überblick über die Sammlung benutzerdefinie
 
 ## Schritt 3: Auf vorhandene Eigenschaften prüfen
 
-Bevor Sie neue Eigenschaften hinzufügen, sollten Sie prüfen, ob eine bestimmte Eigenschaft bereits vorhanden ist. Dadurch vermeiden Sie unnötige Duplikate.
+Bevor Sie neue Eigenschaften hinzufügen, sollten Sie prüfen, ob eine bestimmte Eigenschaft bereits vorhanden ist. Dadurch werden unnötige Duplikate vermieden.
 
 ```csharp
 if (customDocumentProperties["Authorized"] != null) return;

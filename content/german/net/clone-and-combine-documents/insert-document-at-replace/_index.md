@@ -17,7 +17,7 @@ Bevor wir uns in den Code stürzen, müssen einige Dinge bereitstehen:
 
 -  Visual Studio: Stellen Sie sicher, dass Visual Studio auf Ihrem Computer installiert ist. Wenn Sie es noch nicht haben, können Sie es hier herunterladen:[Hier](https://visualstudio.microsoft.com/).
 -  Aspose.Words für .NET: Sie benötigen die Aspose.Words-Bibliothek. Sie erhalten sie von[Aspose-Website](https://releases.aspose.com/words/net/).
-- Grundlegende C#-Kenntnisse: Grundlegende Kenntnisse von C# und .NET helfen Ihnen dabei, diesem Tutorial zu folgen.
+- Grundlegende C#-Kenntnisse: Grundlegende Kenntnisse von C# und .NET helfen Ihnen, diesem Tutorial zu folgen.
 
 Gut, nachdem wir das geklärt haben, machen wir uns mit etwas Code die Hände schmutzig!
 
@@ -111,36 +111,40 @@ Das letzte Teil unseres Puzzles ist die Methode, die das Dokument tatsächlich a
 ```csharp
 private static void InsertDocument(Node insertionDestination, Document docToInsert)
 {
-	if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
-	{
-		CompositeNode destinationParent = insertionDestination.ParentNode;
+    // Überprüfen Sie, ob das Einfügeziel ein Absatz oder eine Tabelle ist
+    if (insertionDestination.NodeType == NodeType.Paragraph || insertionDestination.NodeType == NodeType.Table)
+    {
+        CompositeNode destinationParent = insertionDestination.ParentNode;
 
-		NodeImporter importer =
-			new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
+        // Erstellen Sie einen NodeImporter, um Knoten aus dem Quelldokument zu importieren
+        NodeImporter importer = new NodeImporter(docToInsert, insertionDestination.Document, ImportFormatMode.KeepSourceFormatting);
 
-		// Durchlaufen Sie alle Knoten auf Blockebene im Hauptteil des Abschnitts.
-		// klonen und fügen Sie dann jeden Knoten ein, der nicht der letzte leere Absatz eines Abschnitts ist.
-		foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
-		foreach (Node srcNode in srcSection.Body)
-		{
-			if (srcNode.NodeType == NodeType.Paragraph)
-			{
-				Paragraph para = (Paragraph)srcNode;
-				if (para.IsEndOfSection && !para.HasChildNodes)
-					continue;
-			}
+        // Durchlaufen Sie alle Knoten auf Blockebene in den Abschnitten des Quelldokuments
+        foreach (Section srcSection in docToInsert.Sections.OfType<Section>())
+        {
+            foreach (Node srcNode in srcSection.Body)
+            {
+                // Überspringen Sie den letzten leeren Absatz eines Abschnitts
+                if (srcNode.NodeType == NodeType.Paragraph)
+                {
+                    Paragraph para = (Paragraph)srcNode;
+                    if (para.IsEndOfSection && !para.HasChildNodes)
+                        continue;
+                }
 
-			Node newNode = importer.ImportNode(srcNode, true);
-
-			destinationParent.InsertAfter(newNode, insertionDestination);
-			insertionDestination = newNode;
-		}
-	}
-	else
-	{
-		throw new ArgumentException("The destination node should be either a paragraph or table.");
-	}
+                // Importieren und fügen Sie den Knoten in das Ziel ein
+                Node newNode = importer.ImportNode(srcNode, true);
+                destinationParent.InsertAfter(newNode, insertionDestination);
+                insertionDestination = newNode;
+            }
+        }
+    }
+    else
+    {
+        throw new ArgumentException("The destination node should be either a paragraph or table.");
+    }
 }
+
 ```
 
 Bei dieser Methode werden die einzufügenden Knoten aus dem Dokument importiert und an der richtigen Stelle im Hauptdokument platziert.
@@ -161,7 +165,7 @@ Ja, Sie können den Rückrufhandler so ändern, dass er mehrere Einfügungen ver
  Auf jeden Fall! Sie können eine kostenlose Testversion herunterladen unter[Hier](https://releases.aspose.com/).
 
 ### Wie erhalte ich Support für Aspose.Words?
-Sie erhalten Unterstützung unter[Aspose.Words-Forum](https://forum.aspose.com/c/words/8).
+Sie erhalten Unterstützung durch den Besuch der[Aspose.Words-Forum](https://forum.aspose.com/c/words/8).
 
 ### Kann ich die Formatierung des eingefügten Dokuments beibehalten?
  Ja, die`NodeImporter` Mit der Klasse können Sie angeben, wie die Formatierung beim Importieren von Knoten von einem Dokument in ein anderes gehandhabt wird.

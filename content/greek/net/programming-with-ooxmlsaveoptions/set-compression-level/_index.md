@@ -15,7 +15,7 @@ url: /el/net/programming-with-ooxmlsaveoptions/set-compression-level/
 
 Προτού περάσουμε στο νήπιο, ας βεβαιωθούμε ότι έχετε όλα όσα χρειάζεστε για να ακολουθήσετε μαζί με αυτό το σεμινάριο:
 
-1.  Aspose.Words για .NET: Βεβαιωθείτε ότι έχετε εγκαταστήσει τη βιβλιοθήκη Aspose.Words για .NET. Μπορείτε να το κατεβάσετε από το[Aspose Releases Page](https://releases.aspose.com/words/net/).
+1.  Aspose.Words για .NET: Βεβαιωθείτε ότι έχετε εγκαταστήσει τη βιβλιοθήκη Aspose.Words για .NET. Μπορείτε να το κατεβάσετε από το[Σελίδα εκδόσεων Aspose](https://releases.aspose.com/words/net/).
 
 2. Περιβάλλον ανάπτυξης: Θα πρέπει να έχετε ρυθμίσει ένα περιβάλλον ανάπτυξης, όπως το Visual Studio.
 

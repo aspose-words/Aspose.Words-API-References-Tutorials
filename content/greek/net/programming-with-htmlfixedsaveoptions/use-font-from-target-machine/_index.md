@@ -74,7 +74,7 @@ HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions
  Θα χρησιμοποιήσουμε το`Save` μέθοδο αποθήκευσης του εγγράφου με τις διαμορφωμένες επιλογές αποθήκευσης.
 
 ```csharp
-//Μετατροπή εγγράφου σε σταθερό HTML
+// Μετατροπή εγγράφου σε σταθερό HTML
 doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.UseFontFromTargetMachine.html", saveOptions);
 ```
 

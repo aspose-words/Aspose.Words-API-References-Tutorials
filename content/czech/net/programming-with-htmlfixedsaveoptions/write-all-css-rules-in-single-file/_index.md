@@ -16,7 +16,7 @@ Stalo se vám, že jste se při převodu dokumentů Wordu do HTML zapletli do s�
 Než se ponoříme do hlíny, dáme si kachny do řady. Zde je to, co potřebujete, abyste mohli začít:
 
 1.  Aspose.Words for .NET: Ujistěte se, že máte knihovnu Aspose.Words for .NET. Pokud ho ještě nemáte, můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
-2. Vývojové prostředí .NET: Na svém počítači budete potřebovat vývojové prostředí .NET. Visual Studio je oblíbenou volbou.
+2. Vývojové prostředí .NET: Na vašem počítači budete potřebovat vývojové prostředí .NET. Visual Studio je oblíbenou volbou.
 3. Základní znalost C#: Základní znalost programování v C# bude užitečná.
 4. Dokument aplikace Word: Připravte si dokument aplikace Word (.docx), který chcete převést.
 
@@ -66,7 +66,7 @@ HtmlFixedSaveOptions saveOptions = new HtmlFixedSaveOptions
 Nakonec dokument uložíme jako soubor HTML pomocí nakonfigurovaných možností uložení. Tento krok zajistí, že všechna pravidla CSS budou zapsána do jednoho souboru.
 
 ```csharp
-//Převést dokument do pevného HTML
+// Převést dokument do pevného HTML
 doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile.html", saveOptions);
 ```
 
@@ -89,4 +89,4 @@ Použití jediného souboru CSS zjednodušuje správu a údržbu vašich stylů.
 Aspose.Words for .NET podporuje různé formáty včetně PDF, TXT a obrazových formátů jako JPEG a PNG.
 
 ### Kde najdu další zdroje na Aspose.Words pro .NET?
- Podívejte se na[dokumentace](https://reference.aspose.com/words/net/) pro komplexní průvodce a reference API.
+ Podívejte se na[dokumentace](https://reference.aspose.com/words/net/)pro komplexní průvodce a reference API.

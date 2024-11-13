@@ -9,7 +9,7 @@ url: /de/net/working-with-list/specify-list-level/
 ---
 ## Einführung
 
-Hallo, Programmiererkollege! Wenn Sie jemals mit dem Erstellen dynamischer und komplexer Listen in Word-Dokumenten mit .NET zu kämpfen hatten, erwartet Sie eine echte Freude. Heute tauchen wir in die Welt von Aspose.Words für .NET ein. Insbesondere konzentrieren wir uns auf das Festlegen von Listenebenen. Betrachten Sie es als eine Verbesserung Ihrer Dokumentfähigkeiten, mit der Sie mühelos professionelle, ausgefeilte Listen erstellen können. Am Ende dieses Handbuchs verfügen Sie über einen klaren Weg zum Erstellen von nummerierten und Aufzählungslisten mit mehreren Ebenen. Bereit? Lassen Sie uns direkt loslegen!
+Hallo, Programmiererkollege! Wenn Sie jemals mit dem Erstellen dynamischer und komplexer Listen in Word-Dokumenten mit .NET zu kämpfen hatten, erwartet Sie eine echte Freude. Heute tauchen wir in die Welt von Aspose.Words für .NET ein. Insbesondere konzentrieren wir uns auf das Festlegen von Listenebenen. Betrachten Sie es als eine Verbesserung Ihrer Dokumentfähigkeiten, mit der Sie mühelos professionelle, ausgefeilte Listen erstellen können. Am Ende dieses Handbuchs verfügen Sie über einen klaren Weg zum Erstellen sowohl nummerierter als auch Aufzählungslisten mit mehreren Ebenen. Bereit? Lassen Sie uns direkt loslegen!
 
 ## Voraussetzungen
 

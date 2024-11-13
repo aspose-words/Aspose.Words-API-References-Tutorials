@@ -112,7 +112,7 @@ Ja, Aspose.Words unterstützt alle .NET-Sprachen, einschließlich VB.NET, F# und
 ### Kann ich mit Aspose.Words andere Arten von Umbrüchen (wie Abschnittsumbrüche) entfernen?
 Ja, Sie können mit Aspose.Words verschiedene Arten von Umbrüchen in einem Dokument bearbeiten.
 
-### Wie kann ich Unterstützung erhalten, wenn ich auf Probleme stoße?
+### Wie erhalte ich Unterstützung, wenn Probleme auftreten?
  Sie erhalten Unterstützung von der Aspose-Community und den Foren unter[Aspose-Unterstützung](https://forum.aspose.com/c/words/8).
 
 ### Welche Dateiformate unterstützt Aspose.Words?

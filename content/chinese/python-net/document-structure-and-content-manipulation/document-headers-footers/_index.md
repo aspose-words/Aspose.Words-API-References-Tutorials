@@ -73,7 +73,7 @@ image_path = "path_to_your_image.png"
 header_run.add_picture(image_path)
 ```
 
-2. 添加表格：合并表格信息。
+2. 添加表格：合并表格以获取表格信息。
 
 ```python
 footer_table = footer.add_table(1, 2)

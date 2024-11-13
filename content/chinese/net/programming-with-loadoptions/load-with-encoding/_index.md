@@ -84,7 +84,7 @@ UTF-7（7 位 Unicode 转换格式）是一种使用 ASCII 字符序列表示 Un
  Aspose.Words 提供免费试用版，您可以下载[这里](https://releases.aspose.com/)。如需完整功能，您需要从购买许可证[Aspose](https://purchase.aspose.com/buy).
 
 ### 我可以从流而不是文件路径加载文档吗？
-当然可以！Aspose.Words 支持从流中加载文档。您只需将流和加载选项传递给`Document`构造函数。
+当然！Aspose.Words 支持从流中加载文档。您只需将流和加载选项传递给`Document`构造函数。
 
 ### 如果我遇到问题，可以在哪里获得支持？
 您可以访问[Aspose.Words 支持论坛](https://forum.aspose.com/c/words/8)寻求社区和 Aspose 支持团队的帮助。

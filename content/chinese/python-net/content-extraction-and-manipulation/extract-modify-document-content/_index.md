@@ -62,7 +62,7 @@ run.get_font().set_color(255, 0, 0)
 
 ## 替换文本
 
-可以使用以下方法替换文本：`replace`方法：
+可以使用以下方法替换文本`replace`方法：
 
 ```python
 doc.get_range().replace("old_text", "new_text", False, False)

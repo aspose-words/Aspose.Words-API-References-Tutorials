@@ -78,7 +78,7 @@ showHideBookmarkedContent(doc, "MyBookmark1", false);
 doc.save("Your Directory Path" + "WorkingWithBookmarks.ShowHideBookmarks.docx");
 ```
 
-## Βήμα 6: Ξεμπλέξιμο σελιδοδεικτών σειράς
+## Βήμα 6: Ξεμπέρδεμα σελιδοδεικτών σειρών
 
 Το ξεμπέρδεμα σελιδοδεικτών σειρών σάς επιτρέπει να εργάζεστε με αυτούς πιο αποτελεσματικά:
 

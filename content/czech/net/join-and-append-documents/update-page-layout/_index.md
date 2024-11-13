@@ -110,7 +110,7 @@ Aktualizace rozvržení stránek v dokumentech aplikace Word pomocí Aspose.Word
 
 ## FAQ
 
-### čemu slouží Aspose.Words for .NET?  
+### K čemu slouží Aspose.Words for .NET?  
 Aspose.Words for .NET je knihovna používaná k vytváření, úpravě a převodu dokumentů aplikace Word programově.
 
 ### Potřebuji licenci k používání Aspose.Words pro .NET?  

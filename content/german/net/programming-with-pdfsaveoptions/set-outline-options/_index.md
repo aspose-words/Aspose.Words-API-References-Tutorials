@@ -52,7 +52,7 @@ Legen wir nun die Gliederungsoptionen fest.
 
 ### Gliederungsebenen für Überschriften festlegen
 
- Der`HeadingsOutlineLevels` Die Eigenschaft definiert, wie viele Überschriftenebenen in der PDF-Gliederung enthalten sein sollen. Wenn Sie den Wert beispielsweise auf 3 setzen, werden bis zu drei Überschriftenebenen in die PDF-Gliederung aufgenommen.
+Der`HeadingsOutlineLevels` Die Eigenschaft definiert, wie viele Überschriftenebenen in der PDF-Gliederung enthalten sein sollen. Wenn Sie den Wert beispielsweise auf 3 setzen, werden bis zu drei Überschriftenebenen in die PDF-Gliederung aufgenommen.
 
 ```csharp
 saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
@@ -60,7 +60,7 @@ saveOptions.OutlineOptions.HeadingsOutlineLevels = 3;
 
 ### Erweiterte Gliederungsebenen festlegen
 
- Der`ExpandedOutlineLevels`Diese Eigenschaft steuert, wie viele Gliederungsebenen standardmäßig erweitert werden sollen, wenn die PDF-Datei geöffnet wird. Wenn Sie diese Eigenschaft auf 1 setzen, werden die Überschriften der obersten Ebene erweitert, sodass die Hauptabschnitte klarer zu sehen sind.
+Der`ExpandedOutlineLevels`Diese Eigenschaft steuert, wie viele Gliederungsebenen standardmäßig erweitert werden sollen, wenn die PDF-Datei geöffnet wird. Wenn Sie diese Eigenschaft auf 1 setzen, werden die Überschriften der obersten Ebene erweitert, sodass die Hauptabschnitte klarer zu sehen sind.
 
 ```csharp
 saveOptions.OutlineOptions.ExpandedOutlineLevels = 1;

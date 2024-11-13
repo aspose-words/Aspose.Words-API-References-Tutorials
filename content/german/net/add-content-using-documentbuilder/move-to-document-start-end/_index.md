@@ -41,7 +41,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Hier erstellen wir eine Instanz von`Document`Und`DocumentBuilder` Denken Sie an`Document` als Ihr leeres Word-Dokument und`DocumentBuilder` als Ihr Stift.
+ Hier erstellen wir eine Instanz von`Document` Und`DocumentBuilder` Denken Sie an`Document` als Ihr leeres Word-Dokument und`DocumentBuilder` als Ihr Stift.
 
 ## Schritt 2: Zum Dokumentanfang wechseln
 
@@ -67,12 +67,12 @@ Console.WriteLine("\nThis is the end of the document.");
 
 ## Abschluss
 
-Und da haben Sie es! Wenn Sie wissen, wie es geht, ist das Wechseln zum Anfang und Ende eines Dokuments in Aspose.Words für .NET ein Kinderspiel. Diese einfache, aber leistungsstarke Funktion kann Ihnen viel Zeit sparen, insbesondere bei der Arbeit mit größeren Dokumenten. Wenn Sie also das nächste Mal in Ihrem Dokument hin- und herspringen müssen, wissen Sie genau, was zu tun ist!
+Und da haben Sie es! Wenn Sie wissen, wie es geht, ist das Wechseln zum Anfang und Ende eines Dokuments in Aspose.Words für .NET ein Kinderspiel. Diese einfache, aber leistungsstarke Funktion kann Ihnen jede Menge Zeit sparen, insbesondere bei der Arbeit mit größeren Dokumenten. Wenn Sie also das nächste Mal in Ihrem Dokument hin- und herspringen müssen, wissen Sie genau, was zu tun ist!
 
 ## Häufig gestellte Fragen
 
 ### Was ist Aspose.Words für .NET?  
-Aspose.Words für .NET ist eine leistungsstarke Bibliothek zum programmgesteuerten Erstellen, Bearbeiten und Bearbeiten von Word-Dokumenten in C#.
+Aspose.Words für .NET ist eine leistungsstarke Bibliothek zum programmgesteuerten Erstellen, Bearbeiten und Manipulieren von Word-Dokumenten in C#.
 
 ### Kann ich Aspose.Words für .NET mit anderen .NET-Sprachen verwenden?  
 Absolut! Obwohl in diesem Handbuch C# verwendet wird, können Sie Aspose.Words für .NET mit jeder .NET-Sprache wie VB.NET verwenden.

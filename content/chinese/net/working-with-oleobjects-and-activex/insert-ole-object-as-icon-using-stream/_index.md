@@ -1,6 +1,6 @@
 ---
-title: 使用流插入 Ole 对象作为图标
-linktitle: 使用流插入 Ole 对象作为图标
+title: 使用流将 Ole 对象作为图标插入
+linktitle: 使用流将 Ole 对象作为图标插入
 second_title: Aspose.Words 文档处理 API
 description: 在本详细的分步教程中学习如何使用 Aspose.Words for .NET 的流将 OLE 对象作为图标插入。
 type: docs
@@ -54,7 +54,7 @@ using (MemoryStream stream = new MemoryStream(File.ReadAllBytes("Path_to_your_di
 {
 ```
 
-这一步就像把颜料涂到画笔上一样。我们正在准备嵌入文件。
+这一步就像把颜料装到画笔上一样。我们正在准备嵌入文件。
 
 ## 步骤 3：将 OLE 对象作为图标插入
 

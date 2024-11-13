@@ -14,7 +14,7 @@ url: /zh-hant/java/document-manipulation/using-fields/
 
 ## 先決條件
 
-開始之前，請確保您已安裝 Aspose.Words for Java。您可以從以下位置下載：[這裡](https://releases.aspose.com/words/java/).
+開始之前，請確保已安裝 Aspose.Words for Java。您可以從以下位置下載：[這裡](https://releases.aspose.com/words/java/).
 
 ## 基本欄位合併
 
@@ -75,7 +75,7 @@ doc.save("MergedDocumentWithImages.docx");
 
 ## 交替行格式
 
-您可以設定表中交替行的格式。操作方法如下：
+您可以設定表格中交替行的格式。操作方法如下：
 
 ```java
 Document doc = new Document("AlternatingRowsTemplate.docx");

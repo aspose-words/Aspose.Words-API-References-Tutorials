@@ -26,7 +26,7 @@ Než se ponoříme do specifik stylů a formátování tabulek dokumentů, ujist
     import aspose.words
     ```
 
-3. Načíst dokument: Načtěte existující dokument nebo vytvořte nový pomocí rozhraní API Aspose.Words.
+3. Načíst dokument: Načtěte existující dokument nebo vytvořte nový pomocí Aspose.Words API.
 
 ## Vytváření a vkládání tabulek do dokumentů
 
@@ -39,7 +39,7 @@ Chcete-li vytvořit a vložit tabulky do dokumentů pomocí Aspose.Words pro Pyt
     table = builder.start_table()
     ```
 
-2.  Vložit data: Přidejte data do tabulky pomocí stavitele`insert_cell`a`write` metody.
+2.  Vložit data: Přidejte data do tabulky pomocí stavitele`insert_cell` a`write` metody.
 
     ```python
     builder.insert_cell()
@@ -59,7 +59,7 @@ Chcete-li vytvořit a vložit tabulky do dokumentů pomocí Aspose.Words pro Pyt
 
 ## Použití základního formátování tabulky
 
- Základní formátování tabulky lze dosáhnout pomocí metod, které poskytuje`Table`a`Cell` třídy. Zde je návod, jak můžete vylepšit vzhled vašeho stolu:
+ Základní formátování tabulky lze dosáhnout pomocí metod, které poskytuje`Table` a`Cell` třídy. Zde je návod, jak můžete vylepšit vzhled vašeho stolu:
 
 1. Nastavení šířky sloupců: Upravte šířku sloupců, abyste zajistili správné zarovnání a vizuální přitažlivost.
 
@@ -108,7 +108,7 @@ Aspose.Words pro Python nabízí řadu možností stylingu, aby byly vaše tabul
     run.font.color = aspose.words.Color.from_rgb(0, 0, 0)
     ```
 
-## Slučování a rozdělování buněk pro komplexní rozvržení
+## Slučování a dělení buněk pro komplexní rozvržení
 
 Vytváření složitých rozložení tabulek často vyžaduje sloučení a rozdělení buněk:
 

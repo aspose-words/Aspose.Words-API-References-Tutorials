@@ -103,4 +103,4 @@ Zpětné volání upozornění vám umožňuje zachytit a zpracovat varování, 
 Upozornění mohou zahrnovat problémy související s nepodporovanými funkcemi, nekonzistencemi formátování nebo jinými problémy specifickými pro dokument.
 
 ### Kde najdu další informace o Aspose.Words pro .NET?
- Můžete odkazovat na[dokumentace](https://reference.aspose.com/words/net/)pro podrobné informace a příklady.
+ Můžete odkazovat na[dokumentace](https://reference.aspose.com/words/net/) pro podrobné informace a příklady.

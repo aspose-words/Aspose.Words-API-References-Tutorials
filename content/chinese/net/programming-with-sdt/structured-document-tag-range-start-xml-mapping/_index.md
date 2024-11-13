@@ -85,7 +85,7 @@ StructuredDocumentTagRangeStart sdtRangeStart = (StructuredDocumentTagRangeStart
 
 现在，是时候将 XML 部分绑定到 SDT 了。通过设置 XML 映射，我们可以指定 XML 数据的哪一部分应显示在 SDT 中。
 
- XPath 指向我们想要显示的 XML 部分中的特定元素。这里，我们指向第二个`<text>`元素内的`<root>`元素。
+ XPath 指向我们要显示的 XML 部分中的特定元素。这里，我们指向第二个`<text>`元素内的`<root>`元素。
 
 ```csharp
 //为我们的 StructuredDocumentTag 设置映射
@@ -116,7 +116,7 @@ doc.Save(dataDir + "WorkingWithSdt.StructuredDocumentTagRangeStartXmlMapping.doc
 是的，您可以将多个 XML 部分绑定到同一文档中的不同 SDT。每个 SDT 都可以拥有自己独特的 XML 部分和 XPath 映射。
 
 ### 是否可以将复杂的 XML 结构映射到 SDT？
-当然可以！您可以使用详细的 XPath 表达式将复杂的 XML 结构映射到 SDT，这些表达式可以准确指向 XML 部分中的所需元素。
+当然！您可以使用详细的 XPath 表达式将复杂的 XML 结构映射到 SDT，这些表达式可以准确指向 XML 部分中的所需元素。
 
 ### 如何从文档中删除 XML 部分？
 您可以通过调用`Remove`方法`CustomXmlParts`收集，传递`xmlPartId`您想要删除的 XML 部分。

@@ -9,7 +9,7 @@ url: /de/net/working-with-fonts/set-fonts-folders-with-priority/
 ---
 ## Einführung
 
-In der Welt der Dokumentbearbeitung kann das Festlegen benutzerdefinierter Schriftartordner einen großen Unterschied machen, um sicherzustellen, dass Ihre Dokumente perfekt dargestellt werden, unabhängig davon, wo sie angezeigt werden. Heute werden wir uns damit befassen, wie Sie mit Aspose.Words für .NET Schriftartordner mit Priorität in Ihren Word-Dokumenten festlegen können. Diese umfassende Anleitung führt Sie durch jeden Schritt und macht den Prozess so reibungslos wie möglich.
+In der Welt der Dokumentbearbeitung kann das Festlegen benutzerdefinierter Schriftartordner einen großen Unterschied machen, um sicherzustellen, dass Ihre Dokumente perfekt dargestellt werden, unabhängig davon, wo sie angezeigt werden. Heute werden wir uns damit befassen, wie Sie mit Aspose.Words für .NET Schriftartordner mit Priorität in Ihren Word-Dokumenten festlegen können. Diese umfassende Anleitung führt Sie durch jeden Schritt und macht den Vorgang so reibungslos wie möglich.
 
 ## Voraussetzungen
 
@@ -89,4 +89,4 @@ Wenn eine Schriftart in allen angegebenen Quellen fehlt, verwendet Aspose.Words 
 Die Systemschriftarten sind standardmäßig immer enthalten, Sie können jedoch ihre Priorität relativ zu Ihren benutzerdefinierten Schriftartordnern festlegen.
 
 ### Ist es möglich, Netzwerkpfade für benutzerdefinierte Schriftartordner zu verwenden?
-Ja, Sie können Netzwerkpfade als benutzerdefinierte Schriftartenordner angeben und so Schriftartenressourcen an einem Netzwerkspeicherort zentralisieren.
+Ja, Sie können Netzwerkpfade als benutzerdefinierte Schriftartordner angeben und so Schriftartressourcen an einem Netzwerkspeicherort zentralisieren.

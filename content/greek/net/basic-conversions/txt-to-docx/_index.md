@@ -65,4 +65,4 @@ doc.Save(dataDir + "ConvertedDocument.docx", SaveFormat.Docx);
 Ναι, μπορείτε να επεξεργαστείτε ομαδικά πολλά αρχεία κειμένου χρησιμοποιώντας τα API Aspose.Words για να βελτιστοποιήσετε τις εργασίες μετατροπής εγγράφων σας.
 
 ### Πού μπορώ να βρω περισσότερους πόρους και υποστήριξη για το Aspose.Words;
- Επισκεφθείτε το[Aspose.Words τεκμηρίωση](https://reference.aspose.com/words/net/)και[φόρουμ υποστήριξης](https://forum.aspose.com/c/words/8) για περισσότερες πληροφορίες και βοήθεια.
+ Επισκεφθείτε το[Aspose.Words τεκμηρίωση](https://reference.aspose.com/words/net/) και[φόρουμ υποστήριξης](https://forum.aspose.com/c/words/8) για περισσότερες πληροφορίες και βοήθεια.

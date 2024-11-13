@@ -126,7 +126,7 @@ Ja, Aspose.Words für .NET unterstützt verschiedene Programmiersprachen, die au
 ### Gibt es eine kostenlose Testversion für Aspose.Words für .NET?
  Ja, Sie können eine kostenlose Testversion herunterladen von[Hier](https://releases.aspose.com/).
 
-### Wie erhalte ich Support für Aspose.Words für .NET?
+### Wie kann ich Support für Aspose.Words für .NET erhalten?
  Sie können Unterstützung erhalten, indem Sie die Aspose.Words besuchen[Support-Forum](https://forum.aspose.com/c/words/8).
 
 ### Wo finde ich ausführlichere Dokumentation für Aspose.Words für .NET?

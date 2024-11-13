@@ -54,7 +54,7 @@ Document doc = new Document(dataDir + "SmartArt.docx");
 
 ## 2. 识别智能艺术形状
 
-标题：查找 Smart Art Graphics
+标题：找到 Smart Art Graphics
 
 解释：
 文档加载完成后，您需要确定哪些形状是 Smart Art。这可以通过遍历文档中的所有形状并检查它们是否是 Smart Art 来实现。
@@ -95,7 +95,7 @@ if (shape.HasSmartArt)
 
 ## 4.保存文档
 
-标题：保存更新后的文档
+标题：保存更新的文档
 
 解释：
 更新 Smart Art 后，保存文档以保留更改。此步骤可确保所有修改都写入文件。

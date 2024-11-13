@@ -72,7 +72,7 @@ doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile
 
 ## 結論
 
-現在你就得到它了！只需幾行程式碼，您就可以成功地將 Word 文件轉換為 HTML，並將所有 CSS 規則整齊地組織在一個檔案中。這種方法不僅簡化了 CSS 管理，還增強了 HTML 文件的可維護性。因此，下次您執行轉換 Word 文件的任務時，您就知道如何保持文件整潔！
+現在你就擁有了！只需幾行程式碼，您就可以成功地將 Word 文件轉換為 HTML，並將所有 CSS 規則整齊地組織在一個檔案中。這種方法不僅簡化了 CSS 管理，還增強了 HTML 文件的可維護性。因此，下次您執行轉換 Word 文件的任務時，您就知道如何保持文件整潔！
 
 ## 常見問題解答
 
@@ -88,5 +88,5 @@ doc.Save(dataDir + "WorkingWithHtmlFixedSaveOptions.WriteAllCssRulesInSingleFile
 ### Aspose.Words for .NET 還可以轉換為哪些其他格式？
 Aspose.Words for .NET 支援各種格式，包括 PDF、TXT 以及 JPEG 和 PNG 等圖片格式。
 
-### 在哪裡可以找到更多有關 Aspose.Words for .NET 的資源？
+### 在哪裡可以找到更多關於 Aspose.Words for .NET 的資源？
 查看[文件](https://reference.aspose.com/words/net/)取得全面的指南和 API 參考。

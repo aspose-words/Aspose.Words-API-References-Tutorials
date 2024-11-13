@@ -210,4 +210,4 @@ V tomto tutoriálu jsme se ponořili do různých aspektů práce s možnostmi n
 
 ###  Jaký je účel`setTempFolder` method in Load Options?
 
- The`setTempFolder`umožňuje určit složku, do které se ukládají dočasné soubory během zpracování dokumentu.
+The`setTempFolder`umožňuje určit složku, do které se ukládají dočasné soubory během zpracování dokumentu.

@@ -1,5 +1,5 @@
 ---
-title: Nastavit sloupce poznámek pod nohama
+title: Nastavit sloupce poznámek pod čarou
 linktitle: Nastavit sloupce poznámek pod nohama
 second_title: Aspose.Words API pro zpracování dokumentů
 description: Naučte se, jak nastavit sloupce poznámek pod čarou v dokumentech aplikace Word pomocí Aspose.Words for .NET. Snadno si přizpůsobte rozvržení poznámky pod čarou pomocí našeho podrobného průvodce.

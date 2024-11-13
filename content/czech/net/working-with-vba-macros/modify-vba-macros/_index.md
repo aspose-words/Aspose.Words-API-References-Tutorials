@@ -18,7 +18,7 @@ Než se pustíme do kódu, ujistěte se, že máte vše, co potřebujete:
 1.  Aspose.Words for .NET Library: Ujistěte se, že máte nejnovější verzi Aspose.Words for .NET. Můžete[stáhněte si jej zde](https://releases.aspose.com/words/net/).
 2. Vývojové prostředí: Vývojové prostředí .NET, jako je Visual Studio, je nezbytné pro psaní a testování kódu.
 3. Základní znalost C#: Základní znalost C# vám pomůže sledovat úryvky kódu.
-4.  Ukázkový dokument Word: Mít a[Word dokument](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) s připravenými stávajícími makry VBA. Toto bude náš testovací předmět pro úpravu maker.
+4.  Ukázkový dokument Word: Mít a[Word dokument](https://github.com/aspose-words/Aspose.Words-for-.NET/raw/99ba2a2d8b5d650deb40106225f383376b8b4bc6/Examples/Data/VBA%20project.docm) (.docm) s připravenými existujícími makry VBA. Toto bude náš testovací předmět pro úpravu maker.
 
 ## Importovat jmenné prostory
 
@@ -122,7 +122,7 @@ Aspose.Words for .NET je komplexní knihovna, která umožňuje vývojářům vy
 ### Mohu upravit makra VBA v dokumentech aplikace Word pomocí Aspose.Words?  
 Ano, Aspose.Words poskytuje funkce pro přístup a úpravu maker VBA v dokumentech aplikace Word. Můžete změnit kód makra, přidat nové moduly a další.
 
-### Jak mohu otestovat svá upravená makra VBA?  
+### Jak otestuji svá upravená makra VBA?  
 Chcete-li otestovat upravená makra VBA, otevřete uložený dokument aplikace Word v aplikaci Microsoft Word, přejděte na kartu Vývojář a spusťte makra. Můžete je také ladit přímo v editoru VBA.
 
 ### Co se stane, když uložím dokument bez povolení maker?  

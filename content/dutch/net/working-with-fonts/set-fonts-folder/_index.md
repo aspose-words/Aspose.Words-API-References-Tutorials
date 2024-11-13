@@ -1,67 +1,67 @@
 ---
-title: Stel de map Lettertypen in
-linktitle: Stel de map Lettertypen in
-second_title: Aspose.Words-API voor documentverwerking
-description: Leer hoe u een map met aangepaste lettertypen in Aspose.Words voor .NET instelt om ervoor te zorgen dat uw Word-documenten correct worden weergegeven zonder dat er lettertypen ontbreken.
+title: Map met lettertypen instellen
+linktitle: Map met lettertypen instellen
+second_title: Aspose.Words API voor documentverwerking
+description: Leer hoe u een aangepaste lettertypemap instelt in Aspose.Words voor .NET, zodat uw Word-documenten correct worden weergegeven en er geen lettertypen ontbreken.
 type: docs
 weight: 10
 url: /nl/net/working-with-fonts/set-fonts-folder/
 ---
 ## Invoering
 
-Heeft u ooit problemen ondervonden met ontbrekende lettertypen tijdens het werken met Word-documenten in uw .NET-toepassing? Nou, je bent niet de enige. Het instellen van de juiste map met lettertypen kan dit probleem naadloos oplossen. In deze handleiding laten we u zien hoe u de map met lettertypen instelt met Aspose.Words voor .NET. Laten we erin duiken!
+Heb je ooit problemen gehad met ontbrekende lettertypen tijdens het werken met Word-documenten in je .NET-applicatie? Nou, je bent niet de enige. Het instellen van de juiste lettertypemap kan dit probleem naadloos oplossen. In deze handleiding laten we je zien hoe je de lettertypemap instelt met Aspose.Words voor .NET. Laten we beginnen!
 
 ## Vereisten
 
-Voordat we beginnen, zorg ervoor dat u over het volgende beschikt:
+Voordat we beginnen, zorg ervoor dat u het volgende heeft:
 
-- Visual Studio is op uw computer geïnstalleerd
-- .NET Framework ingesteld
--  Aspose.Words voor .NET-bibliotheek. Als u dat nog niet heeft gedaan, kunt u deze downloaden van[hier](https://releases.aspose.com/words/net/).
+- Visual Studio geïnstalleerd op uw machine
+- .NET Framework instellen
+-  Aspose.Words voor .NET-bibliotheek. Als u dat nog niet hebt gedaan, kunt u het downloaden van[hier](https://releases.aspose.com/words/net/).
 
 ## Naamruimten importeren
 
-Eerst moet u de benodigde naamruimten importeren om met Aspose.Words te kunnen werken. Voeg de volgende regels toe bovenaan uw codebestand:
+Eerst moet u de benodigde naamruimten importeren om met Aspose.Words te werken. Voeg de volgende regels toe bovenaan uw codebestand:
 
 ```csharp
 using Aspose.Words;
 using Aspose.Words.Fonts;
 ```
 
-Het instellen van de map met lettertypen is eenvoudig als u deze stappen zorgvuldig volgt.
+Het instellen van de lettertypemap is eenvoudig als u deze stappen zorgvuldig volgt.
 
-## Stap 1: Definieer de documentmap
+## Stap 1: Definieer de documentdirectory
 
-Definieer eerst het pad naar uw documentmap. Deze map bevat uw Word-documenten en de lettertypen die u wilt gebruiken.
+Definieer eerst het pad naar uw documentdirectory. Deze directory bevat uw Word-documenten en de lettertypen die u wilt gebruiken.
 
 ```csharp
-// Pad naar uw documentmap
+// Pad naar uw documentenmap
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Zorg ervoor dat u vervangt`"YOUR DOCUMENT DIRECTORY"` met het daadwerkelijke pad naar uw directory.
+ Zorg ervoor dat u vervangt`"YOUR DOCUMENT DIRECTORY"` met het werkelijke pad naar uw directory.
 
 ## Stap 2: Initialiseer FontSettings
 
- Nu moet u de`FontSettings` voorwerp. Met dit object kunt u aangepaste lettertypemappen opgeven.
+ Nu moet u de`FontSettings` object. Met dit object kunt u aangepaste lettertypemappen opgeven.
 
 ```csharp
 FontSettings fontSettings = new FontSettings();
 ```
 
-## Stap 3: Stel de map Lettertypen in
+## Stap 3: Stel de lettertypemap in
 
- Met behulp van de`SetFontsFolder` werkwijze van de`FontSettings` object, geeft u de map op waarin uw aangepaste lettertypen zijn opgeslagen.
+ Met behulp van de`SetFontsFolder` methode van de`FontSettings` object, geeft u de map op waar uw aangepaste lettertypen zijn opgeslagen.
 
 ```csharp
 fontSettings.SetFontsFolder(dataDir + "Fonts", false);
 ```
 
- Hier,`dataDir + "Fonts"` verwijst naar de map met de naam "Fonts" in uw documentmap. De tweede parameter,`false`, geeft aan dat de map niet recursief is.
+ Hier,`dataDir + "Fonts"` verwijst naar de map met de naam "Fonts" in uw documentdirectory. De tweede parameter,`false`, geeft aan dat de map niet recursief is.
 
-## Stap 4: Maak LoadOptions aan
+## Stap 4: LoadOptions maken
 
- Maak vervolgens een exemplaar van de`LoadOptions` klas. Deze klasse helpt u bij het laden van het document met de opgegeven lettertype-instellingen.
+ Maak vervolgens een exemplaar van de`LoadOptions` klasse. Deze klasse helpt u het document te laden met de opgegeven lettertype-instellingen.
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions();
@@ -76,25 +76,25 @@ loadOptions.FontSettings = fontSettings;
 Document doc = new Document(dataDir + "Rendering.docx", loadOptions);
 ```
 
- Zorg ervoor dat`"Rendering.docx"` is de naam van uw Word-document. U kunt het vervangen door de naam van uw bestand.
+ Zorg ervoor dat`"Rendering.docx"` is de naam van uw Word-document. U kunt dit vervangen door de naam van uw bestand.
 
 ## Conclusie
 
-En daar heb je het! Door deze stappen te volgen, kunt u eenvoudig een map met aangepaste lettertypen instellen in Aspose.Words voor .NET, zodat u zeker weet dat al uw lettertypen correct worden weergegeven. Deze eenvoudige installatie kan u veel kopzorgen besparen en ervoor zorgen dat uw documenten er precies zo uitzien als u dat wilt.
+En daar heb je het! Door deze stappen te volgen, kun je eenvoudig een aangepaste lettertypemap instellen in Aspose.Words voor .NET, zodat al je lettertypen correct worden weergegeven. Deze eenvoudige installatie kan je een hoop hoofdpijn besparen en ervoor zorgen dat je documenten er precies zo uitzien als je wilt.
 
 ## Veelgestelde vragen
 
-### Waarom moet ik een map met aangepaste lettertypen instellen?
-Als u een map met aangepaste lettertypen instelt, zorgt u ervoor dat alle lettertypen die in uw Word-documenten worden gebruikt, correct worden weergegeven, waardoor problemen met ontbrekende lettertypen worden voorkomen.
+### Waarom moet ik een aangepaste lettertypemap instellen?
+Door een aangepaste lettertypemap in te stellen, zorgt u ervoor dat alle lettertypen die in uw Word-documenten worden gebruikt, correct worden weergegeven. Zo voorkomt u problemen met ontbrekende lettertypen.
 
 ### Kan ik meerdere lettertypemappen instellen?
- Ja, u kunt gebruik maken van de`SetFontsFolders` methode om meerdere mappen op te geven.
+ Ja, u kunt de`SetFontsFolders` Methode om meerdere mappen op te geven.
 
 ### Wat gebeurt er als een lettertype niet wordt gevonden?
-Aspose.Words zal proberen het ontbrekende lettertype te vervangen door een soortgelijk lettertype uit de systeemlettertypen.
+Aspose.Words probeert het ontbrekende lettertype te vervangen door een vergelijkbaar lettertype uit de systeemlettertypen.
 
 ### Is Aspose.Words compatibel met .NET Core?
-Ja, Aspose.Words ondersteunt .NET Core samen met .NET Framework.
+Ja, Aspose.Words ondersteunt .NET Core en .NET Framework.
 
 ### Waar kan ik ondersteuning krijgen als ik problemen ondervind?
- U kunt ondersteuning krijgen van de[Aspose.Words-ondersteuningsforum](https://forum.aspose.com/c/words/8).
+ U kunt ondersteuning krijgen van de[Aspose.Words ondersteuningsforum](https://forum.aspose.com/c/words/8).

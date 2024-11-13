@@ -93,7 +93,7 @@ doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
 
 ### 我可以为特定段落而不是整个文档设置文本方向吗？
 
-是的，您可以使用`ParagraphFormat.Bidi`财产，但`TxtLoadOptions.DocumentDirection`属性设置整个文档的默认方向。
+是的，你可以使用`ParagraphFormat.Bidi`财产，但`TxtLoadOptions.DocumentDirection`属性设置整个文档的默认方向。
 
 ### 支持加载哪些文件格式`TxtLoadOptions`?
 

@@ -15,7 +15,7 @@ url: /zh-hant/net/apply-license/apply-license-from-stream/
 
 在我們動手之前，讓我們確保您擁有所需的一切：
 
-1.  Aspose.Words for .NET：確保您已安裝程式庫。如果沒有，你可以[在這裡下載](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET：確保您已安裝程式庫。如果沒有，您可以[在這裡下載](https://releases.aspose.com/words/net/).
 2. 許可證文件：您需要有效的許可證文件。如果您沒有，您可以獲得一個[臨時執照](https://purchase.aspose.com/temporary-license/)用於測試目的。
 3. 基本 C# 知識：假設您對 C# 程式設計有基本了解。
 
@@ -80,7 +80,7 @@ catch (Exception e)
 
 ## 結論
 
-現在你就得到它了！一旦您了解了步驟，從 Aspose.Words for .NET 中的串流應用程式授權是一個簡單的過程。遵循本指南，您可以確保您的應用程式可以不受任何限制地利用 Aspose.Words 的全部功能。如果您遇到任何問題，請隨時查看[文件](https://reference.aspose.com/words/net/)或尋求協助[支援論壇](https://forum.aspose.com/c/words/8)。快樂編碼！
+現在你就擁有了！一旦您了解了步驟，從 Aspose.Words for .NET 中的串流應用程式授權是一個簡單的過程。遵循本指南，您可以確保您的應用程式可以不受任何限制地利用 Aspose.Words 的全部功能。如果您遇到任何問題，請隨時查看[文件](https://reference.aspose.com/words/net/)或尋求協助[支援論壇](https://forum.aspose.com/c/words/8)。快樂編碼！
 
 ## 常見問題解答
 

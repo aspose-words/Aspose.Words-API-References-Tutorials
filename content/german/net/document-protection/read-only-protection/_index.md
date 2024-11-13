@@ -30,7 +30,7 @@ using Aspose.Words.Saving;
 
 ## Schritt 1: Einrichten des Dokuments
 
-In diesem Schritt erstellen wir ein neues Dokument und einen Dokumentgenerator. Dies bildet die Grundlage für unsere Operationen.
+In diesem Schritt erstellen wir ein neues Dokument und einen Dokumentgenerator. Dies bildet die Grundlage für unsere Vorgänge.
 
 ```csharp
 // Der Pfad zum Dokumentverzeichnis.
@@ -59,7 +59,7 @@ doc.WriteProtection.SetPassword("MyPassword");
 
 Erläuterung:
 
--  Der`SetPassword` -Methode wird aufgerufen auf`WriteProtection` Eigenschaft des Dokuments.
+- Der`SetPassword` -Methode wird aufgerufen auf`WriteProtection` Eigenschaft des Dokuments.
 - Wir stellen ein Passwort bereit (in diesem Fall „MyPassword“), das zum Aufheben des Schutzes erforderlich ist.
 
 ## Schritt 3: Schreibgeschützte Empfehlung aktivieren
@@ -73,7 +73,7 @@ doc.WriteProtection.ReadOnlyRecommended = true;
 
 Erläuterung:
 
--  Der`ReadOnlyRecommended` Die Eigenschaft ist auf`true`.
+- Der`ReadOnlyRecommended` Die Eigenschaft ist auf`true`.
 - Dadurch werden Benutzer aufgefordert, das Dokument im schreibgeschützten Modus zu öffnen. Sie können diese Empfehlung jedoch auch ignorieren.
 
 ## Schritt 4: Schreibschutz anwenden
@@ -87,7 +87,7 @@ doc.Protect(ProtectionType.ReadOnly);
 
 Erläuterung:
 
--  Der`Protect` -Methode wird für das Dokument aufgerufen mit`ProtectionType.ReadOnly` als Argument.
+- Der`Protect` -Methode wird für das Dokument aufgerufen mit`ProtectionType.ReadOnly` als Argument.
 - Diese Methode erzwingt den Nur-Lese-Schutz und verhindert jegliche Änderungen am Dokument ohne Kennwort.
 
 ## Schritt 5: Speichern Sie das Dokument
@@ -101,7 +101,7 @@ doc.Save(dataDir + "DocumentProtection.ReadOnlyProtection.docx");
 
 Erläuterung:
 
--  Der`Save` Die Methode wird für das Dokument aufgerufen und gibt den Pfad und den Namen der Datei an.
+- Der`Save` Die Methode wird für das Dokument aufgerufen und gibt den Pfad und den Namen der Datei an.
 - Das Dokument wird mit aktiviertem Leseschutz gespeichert.
 
 ## Abschluss
@@ -114,7 +114,7 @@ Und da haben Sie es! Sie haben erfolgreich ein schreibgeschütztes Word-Dokument
 Aspose.Words für .NET ist eine leistungsstarke Bibliothek, mit der Entwickler Word-Dokumente programmgesteuert mit C# oder anderen .NET-Sprachen erstellen, ändern, konvertieren und schützen können.
 
 ### Kann ich den Leseschutz von einem Dokument entfernen?
- Ja, Sie können den Nur-Lese-Schutz entfernen, indem Sie den`Unprotect` Methode und Eingabe des richtigen Passworts.
+ Ja, Sie können den Nur-Lese-Schutz entfernen, indem Sie den`Unprotect` Methode und geben Sie das richtige Passwort ein.
 
 ### Ist das im Dokument festgelegte Passwort verschlüsselt?
 Ja, Aspose.Words verschlüsselt das Passwort, um die Sicherheit des geschützten Dokuments zu gewährleisten.

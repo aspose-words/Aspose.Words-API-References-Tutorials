@@ -99,7 +99,7 @@ Und da haben Sie es! Das Entfernen des Schutzes aus einem Word-Dokument mit Aspo
 
 ### Was passiert, wenn ich das falsche Passwort eingebe?
 
-Wenn Sie ein falsches Passwort angeben, löst Aspose.Words eine Ausnahme aus. Stellen Sie sicher, dass Sie das richtige Passwort verwenden, um den Schutz aufzuheben.
+Wenn Sie ein falsches Passwort angeben, wird Aspose.Words eine Ausnahme auslösen. Stellen Sie sicher, dass Sie das richtige Passwort verwenden, um den Schutz aufzuheben.
 
 ### Kann ich den Schutz für mehrere Dokumente gleichzeitig aufheben?
 

@@ -56,7 +56,7 @@ Document doc = new Document(dataDir + "Rendering.docx");
 Konfigurieren wir nun die HTML-Speicheroptionen, um anzugeben, dass das Dokument nach Überschriften aufgeteilt werden soll.
 
 1.  HtmlSaveOptions erstellen: Instanziieren Sie die`HtmlSaveOptions` Klasse.
-2.  Kriterien für die Dokumentenaufteilung festlegen: Verwenden Sie die`DocumentSplitCriteria` -Eigenschaft, um anzugeben, dass das Dokument nach Überschriftenabsätzen aufgeteilt werden soll.
+2.  Kriterien für die Dokumentenaufteilung festlegen: Verwenden Sie die`DocumentSplitCriteria` , um anzugeben, dass das Dokument nach Überschriftenabsätzen aufgeteilt werden soll.
 
 ```csharp
 HtmlSaveOptions options = new HtmlSaveOptions
@@ -78,7 +78,7 @@ doc.Save(dataDir + "SplitDocument.ByHeadingsHtml.html", options);
 
 ## Abschluss
 
-Und da haben Sie es! Sie haben ein Word-Dokument erfolgreich nach Überschriften aufgeteilt und es mit Aspose.Words für .NET als HTML gespeichert. Diese Methode ist äußerst effektiv, um große Dokumente zu organisieren und segmentierte HTML-Ausgaben zu erstellen, wodurch Ihre Inhalte besser verwaltbar und zugänglicher werden.
+Und da haben Sie es! Sie haben ein Word-Dokument erfolgreich nach Überschriften aufgeteilt und es mit Aspose.Words für .NET als HTML gespeichert. Diese Methode ist äußerst effektiv, um große Dokumente zu organisieren und segmentierte HTML-Ausgaben zu erstellen, wodurch Ihre Inhalte besser verwaltbar und zugänglich werden.
 
 ## Häufig gestellte Fragen
 

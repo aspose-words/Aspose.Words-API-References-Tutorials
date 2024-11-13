@@ -9,17 +9,17 @@ url: /fr/net/programming-with-sdt/rich-text-box-content-control/
 ---
 ## Introduction
 
-Dans le monde du traitement de documents, la possibilité d'ajouter des éléments interactifs à vos documents Word peut grandement améliorer leurs fonctionnalités. L'un de ces éléments interactifs est le contrôle de contenu de la zone de texte enrichi. En utilisant Aspose.Words pour .NET, vous pouvez facilement insérer et personnaliser une zone de texte enrichi dans vos documents. Ce guide vous guidera pas à pas tout au long du processus, vous assurant de comprendre comment mettre en œuvre cette fonctionnalité efficacement.
+Dans le monde du traitement de documents, la possibilité d'ajouter des éléments interactifs à vos documents Word peut grandement améliorer leurs fonctionnalités. L'un de ces éléments interactifs est le contrôle de contenu de la zone de texte enrichi. Grâce à Aspose.Words pour .NET, vous pouvez facilement insérer et personnaliser une zone de texte enrichi dans vos documents. Ce guide vous guidera pas à pas tout au long du processus, en vous permettant de comprendre comment mettre en œuvre efficacement cette fonctionnalité.
 
-## Conditions préalables
+## Prérequis
 
-Avant de plonger dans le didacticiel, assurez-vous d'avoir les éléments suivants :
+Avant de plonger dans le didacticiel, assurez-vous de disposer des éléments suivants :
 
-1.  Aspose.Words pour .NET : assurez-vous que Aspose.Words pour .NET est installé. Si vous ne l'avez pas encore fait, vous pouvez le télécharger depuis[ici](https://releases.aspose.com/words/net/).
+1.  Aspose.Words pour .NET : assurez-vous d'avoir installé Aspose.Words pour .NET. Si ce n'est pas encore le cas, vous pouvez le télécharger à partir de[ici](https://releases.aspose.com/words/net/).
 
 2. Visual Studio : un environnement de développement comme Visual Studio vous aidera à écrire et à exécuter le code.
 
-3. Connaissance de base de C# : Une connaissance de la programmation C# et .NET sera bénéfique car nous écrirons du code dans ce langage.
+3. Connaissances de base de C# : une familiarité avec la programmation C# et .NET sera bénéfique car nous écrirons du code dans ce langage.
 
 4. .NET Framework : assurez-vous que votre projet cible une version compatible du .NET Framework.
 
@@ -33,30 +33,30 @@ using Aspose.Words.Saving;
 using System.Drawing;
 ```
 
-Maintenant, décomposons le processus d'ajout d'un contrôle de contenu de zone de texte enrichi à votre document Word.
+Maintenant, décomposons le processus d’ajout d’un contrôle de contenu de zone de texte enrichi à votre document Word.
 
-## Étape 1 : définissez le chemin d'accès à votre répertoire de documents
+## Étape 1 : définissez le chemin d’accès à votre répertoire de documents
 
-Tout d’abord, spécifiez le chemin où vous souhaitez enregistrer votre document. C'est ici que le fichier généré sera stocké.
+Tout d'abord, indiquez le chemin où vous souhaitez enregistrer votre document. C'est là que le fichier généré sera stocké.
 
 ```csharp
-// Chemin d'accès à votre répertoire de documents
+// Chemin vers votre répertoire de documents
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
  Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel où vous souhaitez enregistrer votre document.
 
-## Étape 2 : Créer un nouveau document
+## Étape 2 : Créer un nouveau document
 
- Créer un nouveau`Document` objet, qui servira de base à votre document Word.
+Créer un nouveau`Document` objet, qui servira de base à votre document Word.
 
 ```csharp
 Document doc = new Document();
 ```
 
-Cela initialise un document Word vide dans lequel vous ajouterez votre contenu.
+Ceci initialise un document Word vide dans lequel vous ajouterez votre contenu.
 
-## Étape 3 : Créer une balise de document structuré pour le texte enrichi
+## Étape 3 : créer une balise de document structurée pour le texte enrichi
 
  Pour ajouter une zone de texte enrichi, vous devez créer un`StructuredDocumentTag` (SDT) de type`RichText`.
 
@@ -79,7 +79,7 @@ para.Runs.Add(run);
 sdtRichText.ChildNodes.Add(para);
 ```
 
-Dans cet exemple, nous ajoutons un paragraphe contenant le texte « Hello World » avec une police de couleur verte à la zone de texte enrichi.
+Dans cet exemple, nous ajoutons un paragraphe contenant le texte « Hello World » avec une couleur de police verte à la zone de texte enrichi.
 
 ## Étape 5 : ajouter la zone de texte enrichi au document
 
@@ -91,7 +91,7 @@ doc.FirstSection.Body.AppendChild(sdtRichText);
 
 Cette étape garantit que la zone de texte enrichi est incluse dans le contenu du document.
 
-## Étape 6 : Enregistrez le document
+## Étape 6 : Enregistrer le document
 
 Enfin, enregistrez le document dans le répertoire spécifié.
 
@@ -99,7 +99,7 @@ Enfin, enregistrez le document dans le répertoire spécifié.
 doc.Save(dataDir + "WorkingWithSdt.RichTextBoxContentControl.docx");
 ```
 
-Cela créera un nouveau document Word avec votre contrôle de contenu Rich Text Box.
+Cela créera un nouveau document Word avec votre contrôle de contenu de zone de texte enrichi.
 
 ## Conclusion
 
@@ -107,17 +107,17 @@ L'ajout d'un contrôle de contenu de zone de texte enrichi à l'aide d'Aspose.Wo
 
 ## FAQ
 
-### Qu'est-ce qu'une balise de document structuré (SDT) ?
+### Qu'est-ce qu'une balise de document structurée (SDT) ?
 Une balise de document structuré (SDT) est un type de contrôle de contenu dans les documents Word utilisé pour ajouter des éléments interactifs tels que des zones de texte et des listes déroulantes.
 
 ### Puis-je personnaliser l’apparence de la zone de texte enrichi ?
- Oui, vous pouvez personnaliser l'apparence en modifiant les propriétés du`Run`objet, comme la couleur, la taille et le style de la police.
+ Oui, vous pouvez personnaliser l'apparence en modifiant les propriétés du`Run`objet, tel que la couleur, la taille et le style de la police.
 
 ### Quels autres types de SDT puis-je utiliser avec Aspose.Words ?
-Outre le texte enrichi, Aspose.Words prend en charge d'autres types SDT tels que le texte brut, le sélecteur de date et la liste déroulante.
+Outre le texte enrichi, Aspose.Words prend en charge d'autres types de SDT tels que le texte brut, le sélecteur de date et la liste déroulante.
 
 ### Comment ajouter plusieurs zones de texte enrichi à un document ?
- Vous pouvez créer plusieurs`StructuredDocumentTag` instances et ajoutez-les séquentiellement au corps du document.
+ Vous pouvez créer plusieurs`StructuredDocumentTag` instances et les ajouter séquentiellement au corps du document.
 
 ### Puis-je utiliser Aspose.Words pour modifier des documents existants ?
 Oui, Aspose.Words vous permet d'ouvrir, de modifier et d'enregistrer des documents Word existants, y compris l'ajout ou la mise à jour de SDT.

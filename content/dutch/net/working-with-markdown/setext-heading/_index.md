@@ -1,7 +1,7 @@
 ---
 title: Setext-kop
 linktitle: Setext-kop
-second_title: Aspose.Words-API voor documentverwerking
+second_title: Aspose.Words API voor documentverwerking
 description: Leer hoe u Aspose.Words voor .NET kunt gebruiken om het maken en opmaken van Word-documenten te automatiseren met deze uitgebreide, stapsgewijze zelfstudie.
 type: docs
 weight: 10
@@ -9,22 +9,22 @@ url: /nl/net/working-with-markdown/setext-heading/
 ---
 ## Invoering
 
-Ooit geprobeerd met documentautomatisering in .NET te spelen en het gevoel te hebben dat je tegen een muur liep? Vandaag duiken we in Aspose.Words voor .NET, een krachtige bibliotheek die het manipuleren van Word-documenten een fluitje van een cent maakt. Of u nu documenten programmatisch wilt maken, wijzigen of converteren, Aspose.Words staat voor u klaar. In deze zelfstudie leiden we u stap voor stap door het hele proces, zodat u Aspose.Words met een gerust hart kunt gebruiken om velden in te voegen met behulp van de Field Builder en om adresblokken voor samenvoegbewerkingen als een professional af te handelen.
+Heb je ooit geprobeerd te rommelen met documentautomatisering in .NET en had je het gevoel dat je tegen een muur liep? Vandaag duiken we in Aspose.Words voor .NET, een krachtige bibliotheek die het manipuleren van Word-documenten een fluitje van een cent maakt. Of je nu documenten programmatisch wilt maken, wijzigen of converteren, Aspose.Words staat voor je klaar. In deze tutorial leiden we je stap voor stap door het hele proces, zodat je Aspose.Words vol vertrouwen kunt gebruiken om velden in te voegen met behulp van de Field Builder en mail merge-adresblokken als een pro kunt verwerken.
 
 ## Vereisten
 
-Voordat we in de code duiken, moeten we ervoor zorgen dat we alles hebben wat we nodig hebben:
+Voordat we met de code beginnen, controleren we of we alles hebben wat we nodig hebben:
 
 1. Ontwikkelomgeving: Visual Studio (of een andere gewenste IDE).
-2. .NET Framework: Zorg ervoor dat .NET Framework 4.0 of hoger is geïnstalleerd.
-3.  Aspose.Words voor .NET: dat kan[download de nieuwste versie](https://releases.aspose.com/words/net/) of krijg een[gratis proefperiode](https://releases.aspose.com/).
-4. Basiskennis van C#: Bekendheid met de C#-syntaxis en basisprogrammeerconcepten zal nuttig zijn.
+2. .NET Framework: Zorg ervoor dat u .NET Framework 4.0 of hoger hebt geïnstalleerd.
+3.  Aspose.Words voor .NET: Je kunt[download de nieuwste versie](https://releases.aspose.com/words/net/) of krijg een[gratis proefperiode](https://releases.aspose.com/).
+4. Basiskennis van C#: Kennis van de C#-syntaxis en basisprogrammeerconcepten is nuttig.
 
-Zodra u deze op hun plaats heeft, zijn we klaar om te gaan!
+Zodra u dit allemaal geregeld hebt, kunnen we aan de slag!
 
 ## Naamruimten importeren
 
-Voordat we beginnen met coderen, moeten we de benodigde naamruimten importeren. Hiermee krijgen we toegang tot de Aspose.Words-klassen en -methoden die we gaan gebruiken.
+Voordat we beginnen met coderen, moeten we de benodigde namespaces importeren. Hiermee krijgen we toegang tot de Aspose.Words-klassen en -methoden die we gaan gebruiken.
 
 ```csharp
 using Aspose.Words;
@@ -32,7 +32,7 @@ using Aspose.Words.Fields;
 using Aspose.Words.Saving;
 ```
 
-## Stap 1: De documentmap instellen
+## Stap 1: De documentenmap instellen
 
 Allereerst moeten we het pad naar onze documentenmap opgeven. Dit is waar onze Word-documenten worden opgeslagen.
 
@@ -43,16 +43,16 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## Stap 2: Een documentbouwer maken
 
- Vervolgens maken we een exemplaar van de`DocumentBuilder` klas. Deze klasse helpt ons inhoud toe te voegen aan ons Word-document.
+ Vervolgens maken we een instantie van de`DocumentBuilder` klasse. Deze klasse helpt ons inhoud toe te voegen aan ons Word-document.
 
 ```csharp
-// Gebruik een documentbuilder om inhoud aan het document toe te voegen.
+// Gebruik een documentbouwer om inhoud aan het document toe te voegen.
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
-## Stap 3: Een kop 1-tag toevoegen
+## Stap 3: Een Heading 1-tag toevoegen
 
-Laten we beginnen met het toevoegen van een Heading 1-tag aan ons document. Dit wordt onze hoofdtitel.
+Laten we beginnen met het toevoegen van een Heading 1 tag aan ons document. Dit wordt onze hoofdtitel.
 
 ```csharp
 builder.ParagraphFormat.StyleName = "Heading 1";
@@ -61,10 +61,10 @@ builder.Writeln("This is an H1 tag");
 
 ## Stap 4: Alineastijlen opnieuw instellen
 
-Nadat we onze kop hebben toegevoegd, moeten we de stijlen opnieuw instellen om ervoor te zorgen dat ze niet worden overgedragen naar de volgende paragraaf.
+Nadat we de kop hebben toegevoegd, moeten we de stijlen opnieuw instellen om te voorkomen dat ze worden overgenomen in de volgende alinea.
 
 ```csharp
-// Stijlen uit de vorige alinea opnieuw instellen om stijlen tussen alinea's niet te combineren.
+//Stel de stijlen van de vorige alinea opnieuw in, zodat stijlen tussen alinea's niet worden gecombineerd.
 builder.Font.Bold = false;
 builder.Font.Italic = false;
 ```
@@ -80,9 +80,9 @@ builder.Document.Styles["SetextHeading1"].BaseStyleName = "Heading 1";
 builder.Writeln("Setext Heading level 1");
 ```
 
-## Stap 6: Een kop 3-tag toevoegen
+## Stap 6: Een Heading 3-tag toevoegen
 
-Laten we vervolgens een Heading 3-tag aan ons document toevoegen. Dit zal fungeren als een subkop.
+Vervolgens voegen we een Heading 3-tag toe aan ons document. Dit zal fungeren als een subheading.
 
 ```csharp
 builder.ParagraphFormat.Style = builder.Document.Styles["Heading 3"];
@@ -94,42 +94,42 @@ builder.Writeln("This is an H3 tag");
 Net als voorheen moeten we de stijlen opnieuw instellen om ongewenste opmaak te voorkomen.
 
 ```csharp
-// Stijlen uit de vorige alinea opnieuw instellen om stijlen tussen alinea's niet te combineren.
+//Stel de stijlen van de vorige alinea opnieuw in, zodat stijlen tussen alinea's niet worden gecombineerd.
 builder.Font.Bold = false;
 builder.Font.Italic = false;
 ```
 
-## Stap 8: Een Setext-kopniveau 2 toevoegen
+## Stap 8: Een Setext-kop toevoegen op niveau 2
 
-Ten slotte voegen we een Setext Heading Level 2 toe. Dit is handig om onze documentstructuur verder op te splitsen.
+Tot slot voegen we een Setext Heading Level 2 toe. Dit is handig om de structuur van ons document verder op te splitsen.
 
 ```csharp
 Style setexHeading2 = builder.Document.Styles.Add(StyleType.Paragraph, "SetextHeading2");
 builder.ParagraphFormat.Style = setexHeading2;
 builder.Document.Styles["SetextHeading2"].BaseStyleName = "Heading 3";
 
-// Het Setex-kopniveau wordt opnieuw ingesteld op 2 als de basisparagraaf een kopniveau groter dan 2 heeft.
+// Het Setex-kopniveau wordt teruggezet naar 2 als de basisalinea een kopniveau heeft dat groter is dan 2.
 builder.Writeln("Setext Heading level 2");
 ```
 
 ## Stap 9: Het document opslaan
 
-Nu we onze inhoud hebben toegevoegd en opgemaakt, is het tijd om het document op te slaan.
+Nu we de inhoud hebben toegevoegd en opgemaakt, is het tijd om het document op te slaan.
 
 ```csharp
 builder.Document.Save(dataDir + "Test.md");
 ```
 
-En dat is het! U hebt zojuist een Word-document gemaakt met Aspose.Words voor .NET, compleet met kopteksten en opgemaakte tekst.
+En dat is alles! U hebt zojuist een Word-document gemaakt met Aspose.Words voor .NET, compleet met koppen en opgemaakte tekst.
 
 ## Conclusie
 
-Daar heb je het, mensen! Met Aspose.Words voor .NET is het programmatisch manipuleren van Word-documenten een fluitje van een cent. Van het instellen van uw documentmap tot het toevoegen van verschillende koppen en het opmaken van tekst, Aspose.Words biedt een uitgebreide en flexibele API die aan al uw behoeften op het gebied van documentautomatisering voldoet. Of u nu rapporten genereert, sjablonen maakt of samenvoegingen afhandelt, deze bibliotheek heeft alles voor u. Dus ga je gang en probeer het eens; je zult versteld staan van wat je kunt bereiken!
+Daar heb je het, mensen! Met Aspose.Words voor .NET is het programmatisch manipuleren van Word-documenten een fluitje van een cent. Van het instellen van je documentdirectory tot het toevoegen van verschillende koppen en het opmaken van tekst, Aspose.Words biedt een uitgebreide en flexibele API die aan al je behoeften voor documentautomatisering voldoet. Of je nu rapporten genereert, sjablonen maakt of mailmerges verwerkt, deze bibliotheek heeft alles wat je nodig hebt. Dus ga je gang en probeer het eens uit. Je zult versteld staan van wat je kunt bereiken!
 
 ## Veelgestelde vragen
 
 ### Wat is Aspose.Words voor .NET?
-Aspose.Words voor .NET is een krachtige bibliotheek waarmee ontwikkelaars Word-documenten programmatisch kunnen maken, wijzigen en converteren met behulp van C# of VB.NET.
+Aspose.Words voor .NET is een krachtige bibliotheek waarmee ontwikkelaars programmatisch Word-documenten kunnen maken, wijzigen en converteren met behulp van C# of VB.NET.
 
 ### Hoe installeer ik Aspose.Words voor .NET?
  U kunt de nieuwste versie downloaden van de[Aspose-website](https://releases.aspose.com/words/net/) of krijg een[gratis proefperiode](https://releases.aspose.com/).
@@ -138,7 +138,7 @@ Aspose.Words voor .NET is een krachtige bibliotheek waarmee ontwikkelaars Word-d
 Ja, Aspose.Words voor .NET ondersteunt .NET Core, zodat u het in platformonafhankelijke toepassingen kunt gebruiken.
 
 ### Bestaat er een gratis versie van Aspose.Words voor .NET?
- Aspose biedt een[gratis proefperiode](https://releases.aspose.com/) die u kunt gebruiken om de bibliotheek te evalueren voordat u een licentie aanschaft.
+ Aspose biedt een[gratis proefperiode](https://releases.aspose.com/) waarmee u de bibliotheek kunt evalueren voordat u een licentie koopt.
 
 ### Waar kan ik ondersteuning krijgen voor Aspose.Words voor .NET?
- U kunt ondersteuning krijgen van de Aspose-gemeenschap op hun[ondersteuningsforum](https://forum.aspose.com/c/words/8).
+ U kunt ondersteuning krijgen van de Aspose-community op hun[ondersteuningsforum](https://forum.aspose.com/c/words/8).

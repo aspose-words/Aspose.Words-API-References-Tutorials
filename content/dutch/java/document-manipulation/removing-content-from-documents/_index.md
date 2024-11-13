@@ -1,7 +1,7 @@
 ---
 title: Inhoud verwijderen uit documenten in Aspose.Words voor Java
 linktitle: Inhoud uit documenten verwijderen
-second_title: Aspose.Words Java-documentverwerkings-API
+second_title: Aspose.Words Java Documentverwerkings-API
 description: Leer hoe u inhoud uit Word-documenten in Java verwijdert met Aspose.Words voor Java. Verwijder pagina-einden, sectie-einden en meer. Optimaliseer uw documentverwerking.
 type: docs
 weight: 16
@@ -10,11 +10,11 @@ url: /nl/java/document-manipulation/removing-content-from-documents/
 
 ## Inleiding tot Aspose.Words voor Java
 
-Voordat we dieper ingaan op de verwijderingstechnieken, stellen we Aspose.Words voor Java kort voor. Het is een Java API die uitgebreide functies biedt voor het werken met Word-documenten. Met deze bibliotheek kunt u naadloos Word-documenten maken, bewerken, converteren en manipuleren.
+Voordat we ingaan op de verwijderingstechnieken, introduceren we kort Aspose.Words voor Java. Het is een Java API die uitgebreide functies biedt voor het werken met Word-documenten. U kunt Word-documenten naadloos maken, bewerken, converteren en manipuleren met behulp van deze bibliotheek.
 
 ## Pagina-einden verwijderen
 
-Pagina-einden worden vaak gebruikt om de lay-out van een document te bepalen. Er kunnen echter gevallen zijn waarin u ze moet verwijderen. Zo kunt u pagina-einden verwijderen met Aspose.Words voor Java:
+Pagina-einden worden vaak gebruikt om de lay-out van een document te bepalen. Er kunnen echter gevallen zijn waarin u ze moet verwijderen. Hier leest u hoe u pagina-einden kunt verwijderen met Aspose.Words voor Java:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Document.docx");
@@ -32,7 +32,7 @@ for (Paragraph para : (Iterable<Paragraph>) paragraphs) {
 doc.save("Your Directory Path" + "RemoveContent.RemovePageBreaks.docx");
 ```
 
-Dit codefragment loopt door de paragrafen in het document, controleert op pagina-einden en verwijdert deze.
+Dit codefragment doorloopt de alinea's in het document, controleert op pagina-einden en verwijdert deze.
 
 ## Sectie-einden verwijderen
 
@@ -45,11 +45,11 @@ for (int i = doc.getSections().getCount() - 2; i >= 0; i--) {
 }
 ```
 
-Deze code doorloopt secties in omgekeerde volgorde, waarbij de inhoud van de huidige sectie wordt gecombineerd met de laatste en vervolgens de gekopieerde sectie wordt verwijderd.
+Deze code doorloopt de secties in omgekeerde volgorde, waarbij de inhoud van de huidige sectie wordt gecombineerd met de vorige sectie en vervolgens de gekopieerde sectie wordt verwijderd.
 
 ## Voetteksten verwijderen
 
-Voetteksten in Word-documenten bevatten vaak paginanummers, datums of andere informatie. Als u ze wilt verwijderen, kunt u de volgende code gebruiken:
+Voetteksten in Word-documenten bevatten vaak paginanummers, datums of andere informatie. Als u deze wilt verwijderen, kunt u de volgende code gebruiken:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Header and footer types.docx");
@@ -64,11 +64,11 @@ for (Section section : doc.getSections()) {
 doc.save("Your Directory Path" + "RemoveContent.RemoveFooters.docx");
 ```
 
-Deze code verwijdert alle soorten voetteksten (eerste, primaire en even) uit elke sectie in het document.
+Met deze code worden alle soorten voetteksten (eerste, primaire en even) uit elke sectie in het document verwijderd.
 
 ## Inhoudsopgave verwijderen
 
-Inhoudsopgavevelden (TOC) genereren een dynamische tabel met koppen en hun paginanummers. Om een inhoudsopgave te verwijderen, kunt u de volgende code gebruiken:
+Inhoudsopgave (TOC)-velden genereren een dynamische tabel met koppen en hun paginanummers. Om een TOC te verwijderen, kunt u de volgende code gebruiken:
 
 ```java
 Document doc = new Document("Your Directory Path" + "Table of contents.docx");
@@ -81,22 +81,22 @@ doc.save("Your Directory Path" + "RemoveContent.RemoveToc.doc");
 
 ## Conclusie
 
-In dit artikel hebben we onderzocht hoe u verschillende soorten inhoud uit Word-documenten kunt verwijderen met Aspose.Words voor Java. Of het nu gaat om pagina-einden, sectie-einden, voetteksten of inhoudsopgave, Aspose.Words biedt de hulpmiddelen om uw documenten effectief te manipuleren.
+In dit artikel hebben we onderzocht hoe u verschillende soorten inhoud uit Word-documenten verwijdert met Aspose.Words voor Java. Of het nu gaat om pagina-einden, sectie-einden, voetteksten of inhoudsopgaven, Aspose.Words biedt de tools om uw documenten effectief te manipuleren.
 
 ## Veelgestelde vragen
 
 ### Hoe kan ik specifieke pagina-einden verwijderen?
 
-Om specifieke pagina-einden te verwijderen, loopt u door de alinea's in uw document en wist u het pagina-einde-attribuut voor de gewenste alinea's.
+Als u specifieke pagina-einden wilt verwijderen, doorloopt u de alinea's in uw document en wist u het kenmerk voor pagina-einden voor de gewenste alinea's.
 
-### Kan ik kopteksten samen met voetteksten verwijderen?
+### Kan ik kopteksten en voetteksten verwijderen?
 
-Ja, u kunt zowel kop- als voetteksten uit uw document verwijderen door een vergelijkbare aanpak te volgen als weergegeven in het artikel over voetteksten.
+Ja, u kunt zowel kopteksten als voetteksten uit uw document verwijderen door een soortgelijke aanpak te volgen als beschreven in het artikel over voetteksten.
 
 ### Is Aspose.Words voor Java compatibel met de nieuwste Word-documentformaten?
 
-Ja, Aspose.Words voor Java ondersteunt de nieuwste Word-documentformaten, waardoor compatibiliteit met moderne documenten wordt gegarandeerd.
+Ja, Aspose.Words voor Java ondersteunt de nieuwste Word-documentformaten, waardoor compatibiliteit met moderne documenten is gegarandeerd.
 
 ### Welke andere functies voor documentmanipulatie biedt Aspose.Words voor Java?
 
-Aspose.Words voor Java biedt een breed scala aan functies, waaronder het maken, bewerken, converteren en meer van documenten. U kunt de documentatie raadplegen voor gedetailleerde informatie.
+Aspose.Words voor Java biedt een breed scala aan functies, waaronder het maken, bewerken, converteren van documenten en meer. U kunt de documentatie ervan bekijken voor gedetailleerde informatie.

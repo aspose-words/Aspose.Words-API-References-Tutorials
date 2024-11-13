@@ -17,7 +17,7 @@ Bevor wir uns in die Einzelheiten stürzen, müssen Sie ein paar Dinge vorbereit
 
 - Aspose.Words für .NET: Stellen Sie sicher, dass Sie die Aspose.Words-Bibliothek installiert haben. Wenn Sie dies noch nicht getan haben, können Sie sie herunterladen[Hier](https://releases.aspose.com/words/net/).
 - Entwicklungsumgebung: Sie benötigen eine Entwicklungsumgebung wie Visual Studio.
-- Grundkenntnisse in C#: Obwohl wir alles erklären, sind Grundkenntnisse in C# von Vorteil.
+- Grundkenntnisse in C#: Obwohl wir alles erklären, sind grundlegende Kenntnisse in C# von Vorteil.
 - Word-Dokument mit asiatischer Typografie: Sie benötigen ein Word-Dokument mit asiatischer Typografie. Dies wird unsere Arbeitsdatei sein.
 
 Alles erledigt? Super! Fahren wir mit der Einrichtung Ihres Projekts fort.
@@ -43,7 +43,7 @@ Document doc = new Document(dataDir + "Asian typography.docx");
 
 ## Schritt 2: Zugriff auf das Absatzformat
 
-Als nächstes müssen wir auf das Absatzformat des ersten Absatzes in Ihrem Dokument zugreifen. Hier nehmen wir die erforderlichen Anpassungen an den Typografie-Einstellungen vor.
+Als nächstes müssen wir auf das Absatzformat des ersten Absatzes in Ihrem Dokument zugreifen. Hier nehmen wir die erforderlichen Anpassungen an den Typografieeinstellungen vor.
 
 ```csharp
 ParagraphFormat format = doc.FirstSection.Body.Paragraphs[0].ParagraphFormat;
@@ -67,7 +67,7 @@ format.WordWrap = true;
 
 ## Schritt 5: Hängende Interpunktion deaktivieren
 
-Hängende Satzzeichen können manchmal den Textfluss stören, insbesondere in der asiatischen Typografie. Wenn Sie sie deaktivieren, wird Ihr Dokument übersichtlicher.
+Hängende Satzzeichen können manchmal den Textfluss stören, insbesondere bei asiatischer Typografie. Wenn Sie sie deaktivieren, wird Ihr Dokument übersichtlicher.
 
 ```csharp
 format.HangingPunctuation = false;
@@ -91,7 +91,7 @@ Und da haben Sie es! Mit nur wenigen Codezeilen beherrschen Sie die Kunst, Zeile
 Die fernöstliche Zeilenumbruchsteuerung ist eine Einstellung, die den Textumbruch in asiatischen Sprachen verwaltet und so die richtige Formatierung und Lesbarkeit sicherstellt.
 
 ### Warum sollte ich hängende Satzzeichen deaktivieren?
-Durch das Deaktivieren der hängenden Interpunktion wird ein sauberes und professionelles Erscheinungsbild bewahrt, insbesondere bei Dokumenten mit asiatischer Typografie.
+Durch das Deaktivieren der hängenden Interpunktion können Sie insbesondere bei Dokumenten mit asiatischer Typografie ein sauberes und professionelles Erscheinungsbild beibehalten.
 
 ### Kann ich diese Einstellungen auf mehrere Absätze anwenden?
 Ja, Sie können alle Absätze im Dokument durchlaufen und diese Einstellungen nach Bedarf anwenden.

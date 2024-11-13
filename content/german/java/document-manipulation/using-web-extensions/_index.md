@@ -10,7 +10,7 @@ url: /de/java/document-manipulation/using-web-extensions/
 
 ## Einführung in die Verwendung von Web-Erweiterungen in Aspose.Words für Java
 
-In diesem Tutorial erfahren Sie, wie Sie mit Web-Erweiterungen in Aspose.Words für Java die Funktionalität Ihres Dokuments verbessern können. Mit Web-Erweiterungen können Sie webbasierte Inhalte und Anwendungen direkt in Ihre Dokumente integrieren. Wir zeigen Ihnen die Schritte zum Hinzufügen eines Web-Erweiterungsaufgabenbereichs zu einem Dokument, zum Festlegen seiner Eigenschaften und zum Abrufen von Informationen darüber.
+In diesem Tutorial erfahren Sie, wie Sie Web-Erweiterungen in Aspose.Words für Java verwenden, um die Funktionalität Ihres Dokuments zu verbessern. Mit Web-Erweiterungen können Sie webbasierte Inhalte und Anwendungen direkt in Ihre Dokumente integrieren. Wir behandeln die Schritte zum Hinzufügen eines Web-Erweiterungsaufgabenbereichs zu einem Dokument, zum Festlegen seiner Eigenschaften und zum Abrufen von Informationen darüber.
 
 ## Voraussetzungen
 
@@ -77,7 +77,7 @@ Dieser Codeausschnitt ruft Informationen zu jedem Aufgabenbereich der Web-Erweit
 
 ## Abschluss
 
-In diesem Tutorial haben Sie gelernt, wie Sie Web-Erweiterungen in Aspose.Words für Java verwenden, um Ihre Dokumente mit webbasierten Inhalten und Anwendungen zu erweitern. Sie können jetzt Aufgabenbereiche für Web-Erweiterungen hinzufügen, ihre Eigenschaften festlegen und Informationen über sie abrufen. Erkunden Sie die Funktionen weiter und integrieren Sie Web-Erweiterungen, um dynamische und interaktive Dokumente zu erstellen, die auf Ihre Anforderungen zugeschnitten sind.
+In diesem Tutorial haben Sie gelernt, wie Sie Web-Erweiterungen in Aspose.Words für Java verwenden, um Ihre Dokumente mit webbasierten Inhalten und Anwendungen zu erweitern. Sie können jetzt Aufgabenbereiche für Web-Erweiterungen hinzufügen, ihre Eigenschaften festlegen und Informationen über sie abrufen. Erkunden Sie die Seite weiter und integrieren Sie Web-Erweiterungen, um dynamische und interaktive Dokumente zu erstellen, die auf Ihre Bedürfnisse zugeschnitten sind.
 
 ## Häufig gestellte Fragen
 
@@ -103,4 +103,4 @@ Obwohl Aspose.Words für Java eine robuste Unterstützung für Weberweiterungen 
 
 ### Wie finde ich weitere Informationen und Ressourcen zur Verwendung von Web-Erweiterungen in Aspose.Words für Java?
 
- Ausführliche Dokumentation und Ressourcen zur Verwendung von Web-Erweiterungen in Aspose.Words für Java finden Sie in der Aspose-Dokumentation unter[Hier](https://reference.aspose.com/words/java/). Es bietet ausführliche Informationen, Beispiele und Richtlinien für die Arbeit mit Web-Erweiterungen, um die Funktionalität Ihres Dokuments zu verbessern.
+ Ausführliche Dokumentation und Ressourcen zur Verwendung von Web-Erweiterungen in Aspose.Words für Java finden Sie in der Aspose-Dokumentation unter[Hier](https://reference.aspose.com/words/java/). Es bietet ausführliche Informationen, Beispiele und Richtlinien für die Arbeit mit Weberweiterungen, um die Funktionalität Ihres Dokuments zu verbessern.

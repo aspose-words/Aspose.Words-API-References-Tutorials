@@ -47,7 +47,7 @@ builder.InsertField(@"MERGEFIELD MyMergeField1 \* MERGEFORMAT");
 builder.InsertField(@"MERGEFIELD MyMergeField2 \* MERGEFORMAT");
 ```
 
- Εδώ, δημιουργούμε ένα νέο έγγραφο και χρησιμοποιούμε το`DocumentBuilder` κλάση για να εισαγάγετε δύο πεδία συγχώνευσης:`MyMergeField1`και`MyMergeField2`.
+ Εδώ, δημιουργούμε ένα νέο έγγραφο και χρησιμοποιούμε το`DocumentBuilder` κλάση για να εισαγάγετε δύο πεδία συγχώνευσης:`MyMergeField1` και`MyMergeField2`.
 
 ## Βήμα 2: Επανάληψη μέσω των πεδίων και μετονομασία τους
 

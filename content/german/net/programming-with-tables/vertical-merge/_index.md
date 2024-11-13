@@ -58,7 +58,7 @@ builder.Write("Text in merged cells.");
 
 ## Schritt 3: Einfügen der zweiten Zelle in derselben Zeile
 
-Als nächstes fügen wir eine weitere Zelle in die gleiche Zeile ein, führen sie aber nicht vertikal zusammen.
+Als nächstes fügen wir eine weitere Zelle in die gleiche Zeile ein, verbinden sie aber nicht vertikal.
 
 ```csharp
 builder.InsertCell();

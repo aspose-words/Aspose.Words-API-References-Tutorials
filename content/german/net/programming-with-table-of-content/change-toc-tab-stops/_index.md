@@ -9,7 +9,7 @@ url: /de/net/programming-with-table-of-content/change-toc-tab-stops/
 ---
 ## Einführung
 
-Haben Sie sich schon einmal gefragt, wie Sie das Inhaltsverzeichnis (TOC) in Ihren Word-Dokumenten aufpeppen können? Vielleicht möchten Sie, dass die Tabstopps perfekt ausgerichtet sind, um dem Dokument einen professionellen Touch zu verleihen. Dann sind Sie hier richtig! Heute tauchen wir tief in die Frage ein, wie Sie die Tabstopps im Inhaltsverzeichnis mit Aspose.Words für .NET ändern können. Bleiben Sie dran, und ich verspreche Ihnen, dass Sie am Ende alles wissen, um Ihr Inhaltsverzeichnis schick und ordentlich aussehen zu lassen.
+Haben Sie sich schon einmal gefragt, wie Sie das Inhaltsverzeichnis (TOC) in Ihren Word-Dokumenten aufpeppen können? Vielleicht möchten Sie, dass die Tabstopps perfekt ausgerichtet sind, um dem Dokument einen professionellen Touch zu verleihen. Dann sind Sie hier richtig! Heute tauchen wir tief in die Frage ein, wie Sie die Tabstopps im Inhaltsverzeichnis mit Aspose.Words für .NET ändern können. Bleiben Sie dran, und ich verspreche Ihnen, dass Sie mit dem gesamten Know-how, das Sie brauchen, um Ihr Inhaltsverzeichnis schick und ordentlich aussehen zu lassen, abschließen können.
 
 ## Voraussetzungen
 
@@ -99,7 +99,7 @@ Wie? Speichern Sie das Dokument unter einem neuen Namen, damit das Original erha
 doc.Save(dataDir + "WorkingWithTableOfContent.ChangeTocTabStops.docx");
 ```
 
-Und voilà! Ihr Inhaltsverzeichnis hat jetzt die Tabulatoren genau dort, wo Sie sie haben möchten.
+Und voilà! Ihr Inhaltsverzeichnis hat jetzt die Tabstopps genau dort, wo Sie sie haben möchten.
 
 ## Abschluss
 
@@ -113,7 +113,7 @@ Ja, das können Sie! Überprüfen Sie einfach die einzelnen TOC-Ebenen (TOC1, TO
 ### Was ist, wenn mein Dokument mehrere Inhaltsverzeichnisse hat?
 Der Code sucht nach allen Absätzen im Inhaltsverzeichnisstil und ändert daher alle im Dokument vorhandenen Inhaltsverzeichnisse.
 
-### Ist es möglich, in einem Inhaltsverzeichniseintrag mehrere Tabstopps hinzuzufügen?
+### Ist es möglich, in einen Inhaltsverzeichniseintrag mehrere Tabstopps einzufügen?
  Auf jeden Fall! Sie können so viele Tabstopps hinzufügen wie nötig, indem Sie die`para.ParagraphFormat.TabStops` Sammlung.
 
 ### Kann ich die Tabulatorausrichtung und den Füllstil ändern?

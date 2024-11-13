@@ -13,7 +13,7 @@ Nutzen Sie die Leistungsfähigkeit von Aspose.Words für Java, um Ihre Dokumente
 
 ## Einführung
 
-In der heutigen digitalen Welt ist Datensicherheit von größter Bedeutung. Egal, ob Sie vertrauliche Geschäftsdokumente oder persönliche Dateien verarbeiten, es ist entscheidend, sicherzustellen, dass nur autorisierte Personen auf Ihre Dokumente zugreifen können. Diese Schritt-für-Schritt-Anleitung zeigt Ihnen, wie Sie mit Aspose.Words für Java Ihren Dokumenten durch die Verwendung von Passwörtern eine robuste Sicherheitsebene hinzufügen.
+In der heutigen digitalen Welt ist Datensicherheit von größter Bedeutung. Unabhängig davon, ob Sie vertrauliche Geschäftsdokumente oder persönliche Dateien verarbeiten, ist es von entscheidender Bedeutung, sicherzustellen, dass nur autorisierte Personen auf Ihre Dokumente zugreifen können. Diese Schritt-für-Schritt-Anleitung zeigt Ihnen, wie Sie mit Aspose.Words für Java Ihren Dokumenten durch die Verwendung von Passwörtern eine robuste Sicherheitsebene hinzufügen.
 
 ## Einrichten von Aspose.Words für Java
 

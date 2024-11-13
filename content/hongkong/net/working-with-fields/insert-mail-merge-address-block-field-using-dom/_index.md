@@ -9,7 +9,7 @@ url: /zh-hant/net/working-with-fields/insert-mail-merge-address-block-field-usin
 ---
 ## 介紹
 
-您是否想知道如何以程式設計方式有效地管理和操作 Word 文件？無論您是嘗試自動產生文件的愛好者還是負責複雜文件處理的開發人員，使用像 Aspose.Words for .NET 這樣強大的函式庫都可以改變遊戲規則。今天，我們將深入研究一個令人興奮的功能：如何使用文件物件模型 (DOM) 插入郵件合併位址區塊欄位。請係好安全帶，取得逐步指南，這將使此過程變得輕而易舉！
+您是否想知道如何以程式設計方式有效地管理和操作 Word 文件？無論您是嘗試自動產生文件的愛好者，還是負責複雜文件處理的開發人員，使用像 Aspose.Words for .NET 這樣強大的函式庫都可以改變遊戲規則。今天，我們將深入研究一個令人興奮的功能：如何使用文件物件模型 (DOM) 插入郵件合併位址區塊欄位。請係好安全帶，取得逐步指南，這將使此過程變得輕而易舉！
 
 ## 先決條件
 
@@ -105,7 +105,7 @@ doc.Save(dataDir + "WorkingWithFields.InsertMailMergeAddressBlockFieldUsingDOM.d
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 成功將郵件合併位址區塊欄位插入 Word 文件中。這個強大的程式庫使您可以輕鬆地以程式設計方式操作 Word 文檔，從而節省您的時間和精力。繼續嘗試 Aspose.Words 的其他功能，以釋放更多文件處理任務的潛力。
+現在你就擁有了！您已使用 Aspose.Words for .NET 成功將郵件合併位址區塊欄位插入 Word 文件中。這個強大的程式庫使您可以輕鬆地以程式設計方式操作 Word 文檔，從而節省您的時間和精力。繼續嘗試 Aspose.Words 的其他功能，以釋放更多文件處理任務的潛力。
 
 ## 常見問題解答
 

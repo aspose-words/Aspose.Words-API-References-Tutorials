@@ -9,7 +9,7 @@ url: /de/net/remove-content/remove-table-of-contents/
 ---
 ## Einführung
 
-Sind Sie es leid, sich mit einem unerwünschten Inhaltsverzeichnis (TOC) in Ihren Word-Dokumenten herumzuschlagen? Das kennen wir alle – manchmal ist das Inhaltsverzeichnis einfach nicht notwendig. Zum Glück können Sie mit Aspose.Words für .NET ein Inhaltsverzeichnis ganz einfach programmgesteuert entfernen. In diesem Tutorial führe ich Sie Schritt für Schritt durch den Vorgang, damit Sie ihn im Handumdrehen beherrschen. Lassen Sie uns direkt loslegen!
+Sind Sie es leid, sich mit einem unerwünschten Inhaltsverzeichnis (TOC) in Ihren Word-Dokumenten herumzuschlagen? Das kennen wir alle – manchmal ist das Inhaltsverzeichnis einfach nicht nötig. Zum Glück können Sie mit Aspose.Words für .NET ein Inhaltsverzeichnis ganz einfach programmgesteuert entfernen. In diesem Tutorial führe ich Sie Schritt für Schritt durch den Vorgang, damit Sie ihn im Handumdrehen beherrschen. Lassen Sie uns direkt loslegen!
 
 ## Voraussetzungen
 
@@ -31,7 +31,7 @@ using Aspose.Words;
 using Aspose.Words.Fields;
 ```
 
-Lassen Sie uns nun den Vorgang zum Entfernen eines Inhaltsverzeichnisses aus einem Word-Dokument in klare, überschaubare Schritte aufteilen.
+Lassen Sie uns nun den Vorgang zum Entfernen eines Inhaltsverzeichnisses aus einem Word-Dokument in klare, überschaubare Schritte unterteilen.
 
 ## Schritt 1: Richten Sie Ihr Dokumentverzeichnis ein
 

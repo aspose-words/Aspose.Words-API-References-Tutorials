@@ -10,7 +10,7 @@ url: /cs/java/document-conversion-and-export/using-watermarks-to-documents/
 
 ## Úvod do přidávání vodoznaků do dokumentů v Aspose.Words pro Javu
 
-V tomto tutoriálu prozkoumáme, jak přidat vodoznaky do dokumentů pomocí Aspose.Words for Java API. Vodoznaky jsou užitečným způsobem, jak označit dokumenty textem nebo grafikou, která označí jejich stav, důvěrnost nebo jiné relevantní informace. V této příručce se budeme zabývat textovými i obrázkovými vodoznaky.
+tomto tutoriálu prozkoumáme, jak přidat vodoznaky do dokumentů pomocí Aspose.Words for Java API. Vodoznaky jsou užitečným způsobem, jak označit dokumenty textem nebo grafikou, která označí jejich stav, důvěrnost nebo jiné relevantní informace. V této příručce se budeme zabývat textovými i obrázkovými vodoznaky.
 
 ## Nastavení Aspose.Words pro Java
 
@@ -27,7 +27,7 @@ Nyní, když máme knihovnu nastavenou, přistoupíme k přidání vodoznaků.
 Textové vodoznaky jsou běžnou volbou, když chcete do dokumentů přidat textové informace. Zde je návod, jak můžete přidat textový vodoznak pomocí Aspose.Words pro Java:
 
 ```java
-//Vytvořte instanci dokumentu
+// Vytvořte instanci dokumentu
 Document doc = new Document("Document.docx");
 
 // Definujte možnosti TextWatermark
@@ -38,7 +38,7 @@ options.setColor(Color.BLACK);
 options.setLayout(WatermarkLayout.HORIZONTAL);
 options.setSemitransparent(false);
 
-// Nastavte text a možnosti vodoznaku
+//Nastavte text a možnosti vodoznaku
 doc.getWatermark().setText("Test", options);
 
 // Uložte dokument s vodoznakem
@@ -50,7 +50,7 @@ doc.save("DocumentWithWatermark.docx");
 Kromě textových vodoznaků můžete do dokumentů přidat také obrázkové vodoznaky. Zde je návod, jak přidat vodoznak obrázku:
 
 ```java
-//Vytvořte instanci dokumentu
+// Vytvořte instanci dokumentu
 Document doc = new Document("Document.docx");
 
 // Načtěte obrázek pro vodoznak
@@ -80,7 +80,7 @@ Vodoznaky můžete přizpůsobit úpravou jejich vzhledu a polohy. U textových 
 Chcete-li odstranit vodoznak z dokumentu, můžete použít následující kód:
 
 ```java
-//Vytvořte instanci dokumentu
+// Vytvořte instanci dokumentu
 Document doc = new Document("DocumentWithWatermark.docx");
 
 // Odstraňte vodoznak

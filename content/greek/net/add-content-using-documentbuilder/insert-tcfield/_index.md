@@ -42,7 +42,7 @@ Install-Package Aspose.Words
 
 ## Βήμα 2: Δημιουργήστε ένα νέο έγγραφο
 
- Εντάξει, ας ξεκινήσουμε δημιουργώντας ένα νέο έγγραφο του Word. Θα χρησιμοποιήσουμε το`Document`και`DocumentBuilder` μαθήματα από το Aspose.Words to get things rolling.
+ Εντάξει, ας ξεκινήσουμε δημιουργώντας ένα νέο έγγραφο του Word. Θα χρησιμοποιήσουμε το`Document` και`DocumentBuilder` μαθήματα από το Aspose.Words to get things rolling.
 
 ```csharp
 // Η διαδρομή προς τον κατάλογο εγγράφων.

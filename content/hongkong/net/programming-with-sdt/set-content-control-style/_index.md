@@ -86,7 +86,7 @@ doc.Save(dataDir + "WorkingWithSdt.SetContentControlStyle.docx");
 
 ## 結論
 
-現在你就得到它了！您剛剛學習如何使用 Aspose.Words for .NET 在 Word 文件中設定內容控制項樣式。透過執行這些簡單的步驟，您可以輕鬆自訂 Word 文件的外觀，使其更具吸引力和專業性。不斷嘗試不同的樣式和文件元素，以充分釋放 Aspose.Words 的強大功能。
+現在你就擁有了！您剛剛學習如何使用 Aspose.Words for .NET 在 Word 文件中設定內容控制項樣式。透過執行這些簡單的步驟，您可以輕鬆自訂 Word 文件的外觀，使其更具吸引力和專業性。不斷嘗試不同的樣式和文件元素，以充分釋放 Aspose.Words 的強大功能。
 
 ## 常見問題解答
 

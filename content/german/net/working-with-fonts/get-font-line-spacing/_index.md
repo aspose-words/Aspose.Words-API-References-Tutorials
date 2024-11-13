@@ -41,7 +41,7 @@ Document doc = new Document();
 
 ## Schritt 2: DocumentBuilder initialisieren
 
-Als nächstes müssen wir initialisieren die`DocumentBuilder` Objekt. Dieses Objekt hilft uns, den Dokumentinhalt zu erstellen und zu bearbeiten.
+Als nächstes müssen wir den`DocumentBuilder` Objekt. Dieses Objekt hilft uns, den Dokumentinhalt zu erstellen und zu bearbeiten.
 
 ```csharp
 DocumentBuilder builder = new DocumentBuilder(doc);

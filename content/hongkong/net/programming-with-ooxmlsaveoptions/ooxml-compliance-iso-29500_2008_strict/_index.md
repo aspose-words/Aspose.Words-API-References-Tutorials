@@ -70,7 +70,7 @@ doc.CompatibilityOptions.OptimizeFor(MsWordVersion.Word2016);
 OoxmlSaveOptions saveOptions = new OoxmlSaveOptions() { Compliance = OoxmlCompliance.Iso29500_2008_Strict };
 ```
 
-說明：我們建立一個實例`OoxmlSaveOptions`並設定其`Compliance`財產給`OoxmlCompliance.Iso29500_2008_Strict`。這可確保依照 ISO 29500_2008_Strict 標準儲存文件。
+說明：我們建立一個實例`OoxmlSaveOptions`並設置其`Compliance`財產給`OoxmlCompliance.Iso29500_2008_Strict`。這可確保依照 ISO 29500_2008_Strict 標準儲存文件。
 
 ## 第 5 步：儲存文檔
 
@@ -100,5 +100,5 @@ OOXML 合規性可確保您的文件與各種版本的 Microsoft Word 相容，�
 ### 我需要針對 Word 2016 進行最佳化嗎？
 雖然不是強制性的，但針對特定 Word 版本進行最佳化可以增強相容性和效能。
 
-### 在哪裡可以找到更多有關 Aspose.Words for .NET 的資源？
+### 在哪裡可以找到更多關於 Aspose.Words for .NET 的資源？
 您可以找到更多資源和文檔[這裡](https://reference.aspose.com/words/net/).

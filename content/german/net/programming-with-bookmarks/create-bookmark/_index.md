@@ -127,9 +127,9 @@ Auf jeden Fall! Sie können beliebig viele Lesezeichen anlegen und deren Hierarc
 
  Ja, Sie können ein Lesezeichen löschen mit dem`Bookmarks.Remove` Methode, indem Sie den Namen des Lesezeichens angeben.
 
-### Kann ich Lesezeichen in anderen Formaten als PDF erstellen?
+### Kann ich Lesezeichen auch in anderen Formaten als PDF erstellen?
 
-Ja, Aspose.Words unterstützt Lesezeichen in verschiedenen Formaten, einschließlich DOCX, HTML und EPUB.
+Ja, Aspose.Words unterstützt Lesezeichen in verschiedenen Formaten, darunter DOCX, HTML und EPUB.
 
 ### Wie kann ich sicherstellen, dass die Lesezeichen im PDF korrekt angezeigt werden?
 

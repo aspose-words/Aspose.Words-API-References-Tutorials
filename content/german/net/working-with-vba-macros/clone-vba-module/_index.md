@@ -87,7 +87,7 @@ VbaModule copyModule = doc.VbaProject.Modules["Module1"].Clone();
 destDoc.VbaProject.Modules.Add(copyModule);
 ```
 
-In der ersten Zeile klonen wir das Modul mit dem Namen „Modul1“ aus dem VBA-Projekt des Originaldokuments. In der zweiten Zeile fügen wir dieses geklonte Modul dem VBA-Projekt des neuen Dokuments hinzu.
+In der ersten Zeile klonen wir das Modul mit dem Namen „Module1“ aus dem VBA-Projekt des Originaldokuments. In der zweiten Zeile fügen wir dieses geklonte Modul dem VBA-Projekt des neuen Dokuments hinzu.
 
 ## Schritt 5: Speichern des neuen Dokuments
 
@@ -105,7 +105,7 @@ Diese Zeile speichert das neue Dokument mit dem Namen "WorkingWithVba.CloneVbaMo
 
 ## Abschluss
 
-Und da haben Sie es! Sie haben erfolgreich ein VBA-Modul von einem Word-Dokument in ein anderes geklont, indem Sie Aspose.Words für .NET verwendet haben. Diese leistungsstarke Bibliothek macht es unglaublich einfach, Word-Dokumente zu bearbeiten, und die Schritte, die wir beschrieben haben, sind nur die Spitze des Eisbergs. Egal, ob Sie die Dokumenterstellung automatisieren, Inhalte ändern oder VBA-Projekte verwalten, Aspose.Words bietet alles.
+Und da haben Sie es! Sie haben erfolgreich ein VBA-Modul von einem Word-Dokument in ein anderes geklont, indem Sie Aspose.Words für .NET verwendet haben. Diese leistungsstarke Bibliothek macht es unglaublich einfach, Word-Dokumente zu bearbeiten, und die Schritte, die wir beschrieben haben, sind nur die Spitze des Eisbergs. Egal, ob Sie die Dokumenterstellung automatisieren, Inhalte ändern oder VBA-Projekte verwalten, Aspose.Words bietet alles, was Sie brauchen.
 
  Wenn Sie weitere Funktionen entdecken möchten, schauen Sie sich die[API-Dokumentation](https://reference.aspose.com/words/net/) . Brauchen Sie Hilfe? Besuchen Sie die[Support-Forum](https://forum.aspose.com/c/words/8) um Hilfe.
 

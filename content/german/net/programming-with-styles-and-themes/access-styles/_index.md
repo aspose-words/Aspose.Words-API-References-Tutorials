@@ -1,6 +1,6 @@
 ---
-title: Dokumentformatvorlagen in Word abrufen
-linktitle: Dokumentformatvorlagen in Word abrufen
+title: Dokumentformate in Word abrufen
+linktitle: Dokumentformate in Word abrufen
 second_title: Aspose.Words Dokumentverarbeitungs-API
 description: Erfahren Sie in diesem ausführlichen Schritt-für-Schritt-Tutorial, wie Sie mit Aspose.Words für .NET Dokumentformate in Word erhalten. Greifen Sie in Ihren .NET-Anwendungen programmgesteuert auf Formatvorlagen zu und verwalten Sie sie.
 type: docs
@@ -74,7 +74,7 @@ Hier ist eine Aufschlüsselung der Funktion dieses Codes:
 
 -  Initialisieren`styleName`: Wir beginnen mit einer leeren Zeichenfolge, um unsere Liste mit Stilnamen zu erstellen.
 -  Schleife durch die Stile: Die`foreach` Schleife iteriert über jeden`Style` im`styles` Sammlung.
-- Aktualisieren und Anzeigen`styleName` : Für jeden Stil hängen wir seinen Namen an`styleName` und drucken Sie es aus.
+- Aktualisieren und Anzeigen`styleName` : Für jeden Stil fügen wir seinen Namen an`styleName` und drucken Sie es aus.
 
 ## Schritt 4: Ausgabe anpassen
 

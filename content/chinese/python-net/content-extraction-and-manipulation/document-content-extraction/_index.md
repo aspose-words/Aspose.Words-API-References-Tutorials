@@ -58,7 +58,7 @@ for shape in doc.get_child_nodes(doc.is_shape, True):
 
 ## 管理格式
 
-提取期间保留格式：
+提取过程中保留格式：
 
 ```python
 for run in doc.get_child_nodes(doc.is_run, True):
@@ -115,7 +115,7 @@ for section in doc.sections:
 
 是的，您可以使用提供的代码片段提取图像和文本。
 
-### Aspose.Words 是否适合处理复杂的格式？
+### Aspose.Words 适合处理复杂的格式吗？
 
 当然。Aspose.Words 在内容提取过程中保持格式的完整性。
 

@@ -60,7 +60,6 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 将第一个单元格插入到表格中，固定宽度为 40 点。这将确保无论表格大小如何，此单元格的宽度始终为 40 点。
 
 ```csharp
-
 //插入绝对大小的单元格。
 builder.InsertCell();
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPoints(40);

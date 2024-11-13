@@ -15,7 +15,7 @@ url: /zh/net/programming-with-pdfloadoptions/load-encrypted-pdf/
 
 在我们深入讨论细节之前，您需要准备一些东西：
 
-1.  Aspose.Words for .NET：如果你还没有，请下载[这里](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET：如果您还没有，请下载[这里](https://releases.aspose.com/words/net/).
 2. 有效许可证：要无限制地访问所有功能，请考虑购买许可证[这里](https://purchase.aspose.com/buy)。或者，您可以使用[临时执照](https://purchase.aspose.com/temporary-license/).
 3. 开发环境：任何与 .NET 兼容的 IDE（例如 Visual Studio）都可以。
 4. C# 基础知识：熟悉 C# 和 .NET 框架者优先。
@@ -105,7 +105,7 @@ doc = new Document(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", l
 当然！Aspose.Words for .NET 与任何 .NET 语言兼容，包括 VB.NET。
 
 ### 如果我忘记了加密 PDF 的密码怎么办？
-不幸的是，如果没有正确的密码，PDF 就无法解密。请始终妥善保存您的密码记录。
+遗憾的是，如果没有正确的密码，PDF 就无法解密。请始终妥善保存密码记录。
 
 ### 如何获得 Aspose.Words for .NET 的免费试用版？
 您可以从下载免费试用版[这里](https://releases.aspose.com/).

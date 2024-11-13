@@ -115,14 +115,14 @@ doc.save(outPath + "WorkingWithMarkdown.CreateMarkdownDocument.md");
 string outPath = "Your Output Directory";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
-//Geben Sie den Stil „Überschrift 1“ für den Absatz an.
+// Geben Sie den Stil „Überschrift 1“ für den Absatz an.
 builder.getParagraphFormat().setStyleName("Heading 1");
 builder.writeln("Heading 1");
-// Setzen Sie die Stile aus dem vorherigen Absatz zurück, um Stile zwischen Absätzen nicht zu kombinieren.
+//Setzen Sie die Stile aus dem vorherigen Absatz zurück, um Stile zwischen Absätzen nicht zu kombinieren.
 builder.getParagraphFormat().setStyleName("Normal");
 // Horizontale Linie einfügen.
 builder.insertHorizontalRule();
-// Geben Sie die sortierte Liste an.
+// Geben Sie die geordnete Liste an.
 builder.insertParagraph();
 builder.getListFormat().applyNumberDefault();
 // Geben Sie die kursive Hervorhebung des Textes an.

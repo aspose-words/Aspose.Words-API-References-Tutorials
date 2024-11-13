@@ -65,7 +65,7 @@ Table table = doc.FirstSection.Body.Tables[0];
 table.AbsoluteHorizontalDistance = 10;
 ```
 
-想象一下，这就像在文档中水平移动表格一样。`AbsoluteHorizontalDistance`是距左边缘的精确距离。
+想象一下，在文档中水平移动表格。`AbsoluteHorizontalDistance`是距左边缘的精确距离。
 
 ## 步骤 4：设置垂直对齐
 
@@ -99,7 +99,7 @@ doc.Save(dataDir + "WorkingWithTables.FloatingTablePosition.docx");
 
 ### 如何将表格与文档的右侧对齐？
 
-要使表格右对齐，您可以设置`HorizontalAlignment`表的属性`HorizontalAlignment.Right`.
+要将表格右对齐，您可以设置`HorizontalAlignment`表的属性`HorizontalAlignment.Right`.
 
 ### 是否可以在同一个文档中以不同的方式定位多个表格？
 

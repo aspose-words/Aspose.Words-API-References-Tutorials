@@ -84,7 +84,7 @@ doc.Save(dataDir + "WorkingWithFields.RemoveField.docx");
 Aspose.Words for .NET 提供免费试用，但要使用完整功能，您可能需要购买许可证。
 
 ### 我可以撤消字段删除吗？
-一旦删除并保存文档，您将无法撤消此操作。务必保留备份！
+一旦删除并保存文档，您将无法撤消此操作。请务必保留备份！
 
 ### 此方法适用于所有 Word 文档格式吗？
 是的，它适用于 DOCX、DOC 以及 Aspose.Words 支持的其他 Word 格式。

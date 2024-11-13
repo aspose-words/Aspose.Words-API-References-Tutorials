@@ -32,8 +32,6 @@ using Aspose.Words.Tables;
 
 第一步是載入您要使用的 Word 文件。該文件將包含您需要解開的書籤。
 
-步驟 1 標題：載入文檔
-
 ```csharp
 Document doc = new Document("path/to/your/document.docx");
 ```
@@ -43,8 +41,6 @@ Document doc = new Document("path/to/your/document.docx");
 ## 第 2 步：遍歷書籤
 
 接下來，我們需要迭代文件中的所有書籤。這允許我們訪問每個書籤及其屬性。
-
-步驟 2 標題：遍歷書籤
 
 ```csharp
 foreach (Bookmark bookmark in doc.Range.Bookmarks)
@@ -59,8 +55,6 @@ foreach (Bookmark bookmark in doc.Range.Bookmarks)
 
 對於每個書籤，我們需要找到包含書籤開頭和結尾的行。這對於確定書籤是否跨越相鄰行至關重要。
 
-步驟 3 標題：識別行
-
 ```csharp
 Row row1 = (Row)bookmark.BookmarkStart.GetAncestor(typeof(Row));
 Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
@@ -71,8 +65,6 @@ Row row2 = (Row)bookmark.BookmarkEnd.GetAncestor(typeof(Row));
 ## 第 4 步：檢查相鄰行
 
 在行動書籤結尾之前，我們需要確保書籤開頭和結尾位於相鄰行。此條件對於正確解開書籤至關重要。
-
-步驟 4 標題：檢查行相鄰性
 
 ```csharp
 if (row1 != null && row2 != null && row1.NextSibling == row2)
@@ -86,8 +78,6 @@ if (row1 != null && row2 != null && row1.NextSibling == row2)
 ## 第5步：行動書籤末端
 
 最後，如果滿足條件，我們將書籤結束節點移到頂行最後一個單元格中最後一段的末尾。此步驟有效解開書籤。
-
-步驟 5 標題：行動書籤末端
 
 ```csharp
 row1.LastCell.LastParagraph.AppendChild(bookmark.BookmarkEnd);

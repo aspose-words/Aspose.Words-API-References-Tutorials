@@ -11,7 +11,7 @@ Sicherlich! Hier finden Sie eine Schritt-für-Schritt-Anleitung zur Dokumentvers
 
 # Dokumentenverschlüsselung und -entschlüsselung mit Aspose.Words für Java
 
-In diesem Tutorial erfahren Sie, wie Sie Dokumente mit Aspose.Words für Java verschlüsseln und entschlüsseln. Die Dokumentverschlüsselung stellt sicher, dass Ihre vertraulichen Daten sicher bleiben und nur autorisierte Benutzer darauf zugreifen können.
+In diesem Tutorial erfahren Sie, wie Sie Dokumente mit Aspose.Words für Java verschlüsseln und entschlüsseln. Die Dokumentenverschlüsselung stellt sicher, dass Ihre vertraulichen Daten sicher bleiben und nur autorisierte Benutzer darauf zugreifen können.
 
 ## Voraussetzungen
 
@@ -22,7 +22,7 @@ Bevor wir beginnen, stellen Sie sicher, dass Sie Folgendes haben:
 
 ## Schritt 1: Erstellen Sie ein Java-Projekt
 
-Beginnen wir mit der Erstellung eines neuen Java-Projekts in Ihrer bevorzugten integrierten Entwicklungsumgebung (IDE). Stellen Sie sicher, dass Sie die Aspose.Words-JAR-Dateien zum Klassenpfad Ihres Projekts hinzugefügt haben.
+Beginnen wir mit der Erstellung eines neuen Java-Projekts in Ihrer bevorzugten integrierten Entwicklungsumgebung (IDE). Stellen Sie sicher, dass Sie die Aspose.Words JAR-Dateien zum Klassenpfad Ihres Projekts hinzugefügt haben.
 
 ## Schritt 2: Ein Dokument verschlüsseln
 
@@ -95,7 +95,7 @@ Wenn Sie das Verschlüsselungskennwort vergessen, können Sie das Dokument nicht
 
 In diesem Tutorial haben wir den Prozess der Dokumentenverschlüsselung und -entschlüsselung mit Aspose.Words für Java untersucht. Die Gewährleistung der Sicherheit Ihrer vertraulichen Dokumente ist von entscheidender Bedeutung, und Aspose.Words bietet eine robuste und unkomplizierte Möglichkeit, dies zu erreichen.
 
-Wir begannen mit der Einrichtung unseres Java-Projekts und stellten sicher, dass die erforderlichen Voraussetzungen erfüllt waren, einschließlich der Aspose.Words-Bibliothek. Anschließend führten wir die Schritte zum Verschlüsseln eines Dokuments durch und fügten eine zusätzliche Schutzebene hinzu, um unbefugten Zugriff zu verhindern. Wir lernten auch, wie man das verschlüsselte Dokument bei Bedarf mit dem angegebenen Kennwort entschlüsselt.
+Wir begannen mit der Einrichtung unseres Java-Projekts und stellten sicher, dass die erforderlichen Voraussetzungen erfüllt waren, darunter die Aspose.Words-Bibliothek. Anschließend führten wir die Schritte zum Verschlüsseln eines Dokuments durch und fügten eine zusätzliche Schutzebene hinzu, um unbefugten Zugriff zu verhindern. Außerdem lernten wir, wie man das verschlüsselte Dokument bei Bedarf mit dem angegebenen Passwort entschlüsselt.
 
 Denken Sie daran, dass die Dokumentverschlüsselung eine wertvolle Sicherheitsmaßnahme ist, Sie jedoch auch die Verantwortung haben, das Verschlüsselungskennwort sicher aufzubewahren. Wenn Sie das Kennwort vergessen, können Sie den Inhalt des Dokuments nicht wiederherstellen.
 

@@ -72,7 +72,7 @@ doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersWithPriority.pdf");
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 成功設定了優先字體資料夾。透過指定自訂字型資料夾和優先級，您可以確保文件呈現一致，無論在何處查看。這在預設情況下未安裝特定字體的環境中特別有用。
+現在你就擁有了！您已使用 Aspose.Words for .NET 成功設定了優先字體資料夾。透過指定自訂字型資料夾和優先級，您可以確保文件呈現一致，無論在何處查看。這在預設情況下未安裝特定字體的環境中特別有用。
 
 ## 常見問題解答
 

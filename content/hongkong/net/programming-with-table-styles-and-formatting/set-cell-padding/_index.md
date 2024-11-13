@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithTableStylesAndFormatting.SetCellPadding.docx");
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 在 Word 文件中成功設定儲存格填滿。這個簡單而強大的功能可以顯著提高表格的可讀性和美觀性。無論您是經驗豐富的開發人員還是新手，我們都希望本指南對您有所幫助且易於遵循。快樂編碼！
+現在你就擁有了！您已使用 Aspose.Words for .NET 在 Word 文件中成功設定儲存格填滿。這個簡單而強大的功能可以顯著提高表格的可讀性和美觀性。無論您是經驗豐富的開發人員還是新手，我們都希望本指南對您有所幫助且易於遵循。快樂編碼！
 
 ## 常見問題解答
 

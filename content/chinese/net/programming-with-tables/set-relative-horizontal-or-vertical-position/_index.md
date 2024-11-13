@@ -88,7 +88,7 @@ doc.Save(dataDir + "WorkingWithTables.SetFloatingTablePosition.docx");
 ## 常见问题解答
 
 ### 我可以相对于其他元素定位表格吗？  
-是的，Aspose.Words 允许您根据边距、页面、列等各种元素定位表格。
+是的，Aspose.Words 允许您根据各种元素（如边距、页面、列等）定位表格。
 
 ### 我需要许可证才能使用 Aspose.Words for .NET 吗？  
 是的，您可以购买许可证[这里](https://purchase.aspose.com/buy)或获得临时执照[这里](https://purchase.aspose.com/temporary-license/).
@@ -97,7 +97,7 @@ doc.Save(dataDir + "WorkingWithTables.SetFloatingTablePosition.docx");
 当然可以！您可以下载免费试用版[这里](https://releases.aspose.com/).
 
 ### 我可以将 Aspose.Words 与其他编程语言一起使用吗？  
-Aspose.Words 主要为.NET 设计，但也有适用于 Java、Python 和其他平台的版本。
+Aspose.Words 主要为 .NET 设计，但也有适用于 Java、Python 和其他平台的版本。
 
 ### 在哪里可以找到更详细的文档？  
 有关更多详细信息，请查看 Aspose.Words 文档[这里](https://reference.aspose.com/words/net/).

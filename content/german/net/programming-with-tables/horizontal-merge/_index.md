@@ -9,7 +9,7 @@ url: /de/net/programming-with-tables/horizontal-merge/
 ---
 ## Einführung
 
-Hallo! Sind Sie bereit, in die Welt von Aspose.Words für .NET einzutauchen? Heute werden wir uns mit einer äußerst nützlichen Funktion befassen: horizontales Zusammenführen in Tabellen. Das mag ein wenig technisch klingen, aber keine Sorge, ich kümmere mich darum. Am Ende dieses Tutorials sind Sie ein Profi darin, Zellen in Ihren Word-Dokumenten programmgesteuert zusammenzuführen. Also krempeln wir die Ärmel hoch und legen los!
+Hallo! Bereit, in die Welt von Aspose.Words für .NET einzutauchen? Heute werden wir uns mit einer äußerst nützlichen Funktion befassen: horizontales Zusammenführen in Tabellen. Das mag ein wenig technisch klingen, aber keine Sorge, ich kümmere mich darum. Am Ende dieses Tutorials sind Sie ein Profi darin, Zellen in Ihren Word-Dokumenten programmgesteuert zusammenzuführen. Also, krempeln wir die Ärmel hoch und legen los!
 
 ## Voraussetzungen
 
@@ -48,7 +48,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Schritt 2: Einsetzen der ersten Zelle
 
-Als nächstes beginnen wir mit dem Einfügen der ersten Zelle und markieren sie für die horizontale Zusammenführung:
+Als nächstes fügen wir die erste Zelle ein und markieren sie für die horizontale Zusammenführung:
 
 ```csharp
 builder.InsertCell();

@@ -30,7 +30,7 @@ Office Math 是 Microsoft Office 中的一项功能，允许用户在文档、�
 
 ## 创建简单的数学方程
 
-首先，我们向文档中添加一个简单的数学公式。我们将创建一个新文档，并使用 Aspose.Words API 插入一个公式：
+首先，向文档添加一个简单的数学公式。我们将创建一个新文档，并使用 Aspose.Words API 插入一个公式：
 
 ```python
 # Initialize the API client
@@ -144,7 +144,7 @@ download_link = "https://releases.aspose.com/words/python/" + save_response.save
 
 ### 我可以使用 Aspose.Words API 格式化数学方程式吗？
 
-是的，您可以使用字体大小和粗体等格式选项来格式化方程式。
+是的，您可以使用字体大小和粗体等格式选项来格式化公式。
 
 ### Office Math 是否适用于所有 Microsoft Office 应用程序？
 

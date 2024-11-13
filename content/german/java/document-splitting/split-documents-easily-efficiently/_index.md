@@ -18,7 +18,7 @@ Aspose.Words für Java ist eine Java-API, mit der Entwickler mühelos Word-Dokum
 
 Bevor wir uns mit der Dokumentaufteilung befassen, wollen wir kurz erläutern, wie Sie Aspose.Words für Java in Ihrem Java-Projekt einrichten:
 
-1. Laden Sie die Aspose.Words für Java-Bibliothek herunter und installieren Sie sie: Beginnen Sie mit dem Herunterladen der Aspose.Words für Java-Bibliothek aus dem Aspose.Releases (https://releases.aspose.com/words/java). Nach dem Herunterladen fügen Sie die Bibliothek in Ihr Java-Projekt ein.
+1. Laden Sie die Aspose.Words für Java-Bibliothek herunter und installieren Sie sie: Beginnen Sie mit dem Herunterladen der Aspose.Words für Java-Bibliothek aus dem Aspose.Releases (https://releases.aspose.com/words/java). Nach dem Herunterladen binden Sie die Bibliothek in Ihr Java-Projekt ein.
 
 2. Initialisieren Sie die Aspose.Words-Lizenz: Um Aspose.Words für Java in vollem Umfang nutzen zu können, müssen Sie eine gültige Lizenz einrichten. Ohne Lizenz funktioniert die Bibliothek in einem eingeschränkten Evaluierungsmodus.
 
@@ -110,7 +110,7 @@ for (int i = 0; i < doc.getSections().getCount(); i++) {
 }
 ```
 
-## 8. Fortgeschrittene Techniken zur Dokumentenaufteilung
+## 8. Erweiterte Techniken zur Dokumentaufteilung
 
 ### 8.1 Aufteilen bestimmter Abschnitte in separate Dokumente
 

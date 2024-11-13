@@ -65,7 +65,7 @@ catch (Exception e)
 
 ## Krok 4: Ověřte licenci
 
- Jakmile licenci nastavíte, je dobré ověřit, zda byla správně aplikována. Můžete to udělat zaškrtnutím`IsLicensed` vlastnictvím`License` třída.
+Jakmile licenci nastavíte, je dobré ověřit, zda byla správně aplikována. Můžete to udělat zaškrtnutím`IsLicensed` vlastnictví`License` třída.
 
 ```csharp
 if (license.IsLicensed)

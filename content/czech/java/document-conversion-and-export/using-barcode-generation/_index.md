@@ -10,7 +10,7 @@ url: /cs/java/document-conversion-and-export/using-barcode-generation/
 
 ## Úvod do používání generování čárových kódů v Aspose.Words pro Javu
 
-oblasti zpracování a automatizace dokumentů představuje Aspose.Words pro Java všestrannou a výkonnou knihovnu. Tento článek vás provede procesem generování čárových kódů pomocí Aspose.Words for Java. Prozkoumáme, jak začlenit generování čárových kódů do vašich aplikací Java krok za krokem. Takže, pojďme se rovnou ponořit!
+V oblasti zpracování a automatizace dokumentů představuje Aspose.Words pro Java všestrannou a výkonnou knihovnu. Tento článek vás provede procesem generování čárových kódů pomocí Aspose.Words for Java. Prozkoumáme, jak začlenit generování čárových kódů do vašich aplikací Java krok za krokem. Takže, pojďme se rovnou ponořit!
 
 ## Předpoklady
 
@@ -38,7 +38,7 @@ Document doc = new Document("Field sample - BARCODE.docx");
 
 ## Nastavte Generátor čárových kódů
 
- Nastavte vlastní generátor čárových kódů pomocí`FieldOptions` třída. V tomto příkladu předpokládáme, že jste implementovali a`CustomBarcodeGenerator`třídy pro vygenerování čárového kódu. Nahradit`CustomBarcodeGenerator` s vaší skutečnou logikou generování čárového kódu:
+ Nastavte vlastní generátor čárových kódů pomocí`FieldOptions` třída. V tomto příkladu předpokládáme, že jste implementovali a`CustomBarcodeGenerator` třídy pro vygenerování čárového kódu. Nahradit`CustomBarcodeGenerator` s vaší skutečnou logikou generování čárového kódu:
 
 ```java
 doc.getFieldOptions().setBarcodeGenerator(new CustomBarcodeGenerator());

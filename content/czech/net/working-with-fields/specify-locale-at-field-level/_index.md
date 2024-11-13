@@ -69,7 +69,7 @@ field.LocaleId = 1049;
 
 ## Krok 5: Uložte dokument
 
-Nakonec náš dokument uložíme. Tímto krokem jsou dokončeny všechny změny, které jsme provedli.
+Nakonec náš dokument uložíme. Tento krok dokončuje všechny změny, které jsme provedli.
 
 ```csharp
 builder.Document.Save(dataDir + "WorkingWithFields.SpecifyLocaleAtFieldLevel.docx");

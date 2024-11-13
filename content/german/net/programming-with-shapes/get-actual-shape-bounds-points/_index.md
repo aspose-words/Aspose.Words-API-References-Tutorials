@@ -9,7 +9,7 @@ url: /de/net/programming-with-shapes/get-actual-shape-bounds-points/
 ---
 ## Einführung
 
-Haben Sie schon einmal versucht, Formen in Ihren Word-Dokumenten zu bearbeiten, und sich über deren genaue Abmessungen gewundert? Die Kenntnis der genauen Grenzen von Formen kann für verschiedene Aufgaben beim Bearbeiten und Formatieren von Dokumenten von entscheidender Bedeutung sein. Egal, ob Sie einen ausführlichen Bericht, einen schicken Newsletter oder einen anspruchsvollen Flyer erstellen, das Verständnis der Formabmessungen sorgt dafür, dass Ihr Design genau richtig aussieht. In diesem Handbuch erfahren Sie, wie Sie mit Aspose.Words für .NET die tatsächlichen Grenzen von Formen in Punkten ermitteln. Sind Sie bereit, Ihre Formen bildschön zu gestalten? Dann legen wir los!
+Haben Sie schon einmal versucht, Formen in Ihren Word-Dokumenten zu bearbeiten, und sich über ihre genauen Abmessungen gewundert? Die Kenntnis der genauen Grenzen von Formen kann für verschiedene Aufgaben beim Bearbeiten und Formatieren von Dokumenten von entscheidender Bedeutung sein. Egal, ob Sie einen ausführlichen Bericht, einen schicken Newsletter oder einen anspruchsvollen Flyer erstellen, das Verständnis der Formabmessungen sorgt dafür, dass Ihr Design genau richtig aussieht. In diesem Handbuch erfahren Sie, wie Sie mit Aspose.Words für .NET die tatsächlichen Grenzen von Formen in Punkten ermitteln. Sind Sie bereit, Ihre Formen bildschön zu gestalten? Dann legen wir los!
 
 ## Voraussetzungen
 
@@ -69,11 +69,11 @@ Console.Write("\nGets the actual bounds of the shape in points: ");
 Console.WriteLine(shape.GetShapeRenderer().BoundsInPoints);
 ```
 
- Der`GetShapeRenderer` Methode stellt einen Renderer für die Form bereit und`BoundsInPoints` gibt uns die genauen Maße.
+Der`GetShapeRenderer` Methode stellt einen Renderer für die Form bereit und`BoundsInPoints` gibt uns die genauen Maße.
 
 ## Abschluss
 
-Und da haben Sie es! Sie haben erfolgreich die tatsächlichen Grenzen einer Form in Punkten mithilfe von Aspose.Words für .NET abgerufen. Mit diesem Wissen können Sie Formen präzise bearbeiten und positionieren und sicherstellen, dass Ihre Dokumente genau so aussehen, wie Sie es sich vorstellen. Egal, ob Sie komplexe Layouts entwerfen oder einfach nur ein Element optimieren müssen, das Verständnis der Formgrenzen ist von entscheidender Bedeutung.
+Und da haben Sie es! Sie haben die tatsächlichen Grenzen einer Form erfolgreich in Punkten mithilfe von Aspose.Words für .NET abgerufen. Mit diesem Wissen können Sie Formen präzise bearbeiten und positionieren und so sicherstellen, dass Ihre Dokumente genau so aussehen, wie Sie es sich vorstellen. Egal, ob Sie komplexe Layouts entwerfen oder einfach nur ein Element optimieren müssen, das Verständnis der Formgrenzen ist von entscheidender Bedeutung.
 
 ## Häufig gestellte Fragen
 

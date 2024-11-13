@@ -33,7 +33,7 @@ using Aspose.Words.Saving;
 
 ## चरण 1: दस्तावेज़ और दस्तावेज़बिल्डर को आरंभ करें
 
- सबसे पहले, एक नया उदाहरण आरंभ करें`Document` वर्ग और`DocumentBuilder` अपने दस्तावेज़ का निर्माण शुरू करने के लिए कक्षा में जाएँ।
+ सबसे पहले, एक नया उदाहरण आरंभ करें`Document` वर्ग और`DocumentBuilder` अपना दस्तावेज़ बनाना शुरू करने के लिए कक्षा में जाएँ।
 
 ```csharp
 string dataDir = "YOUR_DOCUMENT_DIRECTORY";

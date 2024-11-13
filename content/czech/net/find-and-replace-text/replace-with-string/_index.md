@@ -40,7 +40,7 @@ Pro začátek potřebujeme adresář, kde budou umístěny naše dokumenty. To j
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
- Nahradit`"YOUR DOCUMENT DIRECTORY"` s cestou k vašemu adresáři dokumentů. Toto je domovská základna pro naše soubory.
+ Nahradit`"YOUR DOCUMENT DIRECTORY"` s cestou k adresáři s dokumenty. Toto je domovská základna pro naše soubory.
 
 ## Krok 2: Inicializujte dokument a tvůrce
 
@@ -71,7 +71,7 @@ Zde se odehrává skutečná akce. Najdeme slovo „smutný“ a nahradíme ho s
 doc.Range.Replace("sad", "bad", new FindReplaceOptions(FindReplaceDirection.Forward));
 ```
 
- The`Replace`metoda je přímočará. Uvádíme slovo, které se má najít, náhradní slovo a volby pro operaci najít a nahradit.
+The`Replace`metoda je přímočará. Uvádíme slovo, které se má najít, náhradní slovo a volby pro operaci najít a nahradit.
 
 ## Krok 5: Uložte dokument
 
@@ -93,7 +93,7 @@ Tady to máš! S Aspose.Words pro .NET je nahrazení řetězců v dokumentu apli
 Ano, můžete zřetězit více operací nahrazení nebo použít regulární výrazy ke spárování a nahrazení více vzorů.
 
 ### Je Aspose.Words for .NET zdarma?
- Aspose.Words for .NET je placená knihovna, ale můžete získat a[zkušební verze zdarma](https://releases.aspose.com/) vyzkoušet jeho vlastnosti.
+ Aspose.Words for .NET je placená knihovna, ale můžete získat a[zkušební verze zdarma](https://releases.aspose.com/) otestovat jeho vlastnosti.
 
 ### Mohu nahradit text formátovaným obsahem?
 Absolutně! Aspose.Words umožňuje nahradit text formátovaným obsahem, včetně různých písem, barev a stylů.

@@ -73,7 +73,7 @@ Dieser Schritt ist nützlich zum Debuggen und Überprüfen, ob die Textrichtung 
 
 ## Schritt 5: Speichern Sie das Dokument mit den neuen Einstellungen
 
-Speichern Sie abschließend das Dokument, um die Änderungen anzuwenden und beizubehalten.
+Speichern Sie das Dokument abschließend, um die Änderungen anzuwenden und beizubehalten.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithTxtLoadOptions.DocumentTextDirection.docx");
@@ -89,7 +89,7 @@ Das Festlegen der Textrichtung in Word-Dokumenten ist mit Aspose.Words für .NET
 
 ###  Was ist der`DocumentDirection` property used for?
 
- Der`DocumentDirection` Immobilien in`TxtLoadOptions` bestimmt die Textrichtung für das Dokument. Sie kann eingestellt werden auf`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , oder`DocumentDirection.RightToLeft`.
+Der`DocumentDirection` Immobilien in`TxtLoadOptions` bestimmt die Textrichtung für das Dokument. Sie kann eingestellt werden auf`DocumentDirection.Auto`, `DocumentDirection.LeftToRight` , oder`DocumentDirection.RightToLeft`.
 
 ### Kann ich die Textrichtung für bestimmte Absätze statt für das gesamte Dokument festlegen?
 
@@ -105,4 +105,4 @@ Das Festlegen der Textrichtung in Word-Dokumenten ist mit Aspose.Words für .NET
 
 ### Wo finde ich weitere Informationen zu Aspose.Words für .NET?
 
- Weitere Einzelheiten finden Sie im[Aspose.Words für .NET-Dokumentation](https://reference.aspose.com/words/net/) . Sie können auch zusätzliche Ressourcen erkunden wie[Download-Link](https://releases.aspose.com/words/net/), [Kaufen](https://purchase.aspose.com/buy), [Kostenlose Testversion](https://releases.aspose.com/), [Temporäre Lizenz](https://purchase.aspose.com/temporary-license/) , Und[Unterstützung](https://forum.aspose.com/c/words/8).
+ Weitere Einzelheiten finden Sie im[Aspose.Words für .NET-Dokumentation](https://reference.aspose.com/words/net/) Sie können auch zusätzliche Ressourcen erkunden wie[Download-Link](https://releases.aspose.com/words/net/), [Kaufen](https://purchase.aspose.com/buy), [Kostenlose Testversion](https://releases.aspose.com/), [Temporäre Lizenz](https://purchase.aspose.com/temporary-license/) , Und[Unterstützung](https://forum.aspose.com/c/words/8).

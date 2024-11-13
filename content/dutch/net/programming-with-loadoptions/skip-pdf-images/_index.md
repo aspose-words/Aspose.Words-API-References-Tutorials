@@ -1,7 +1,7 @@
 ---
-title: Sla pdf-afbeeldingen over
-linktitle: Sla pdf-afbeeldingen over
-second_title: Aspose.Words-API voor documentverwerking
+title: PDF-afbeeldingen overslaan
+linktitle: PDF-afbeeldingen overslaan
+second_title: Aspose.Words API voor documentverwerking
 description: Leer hoe u afbeeldingen kunt overslaan bij het laden van PDF-documenten met Aspose.Words voor .NET. Volg deze stapsgewijze handleiding voor naadloze tekstextractie.
 type: docs
 weight: 10
@@ -9,16 +9,16 @@ url: /nl/net/programming-with-loadoptions/skip-pdf-images/
 ---
 ## Invoering
 
-Hallo daar, Aspose.Words-enthousiastelingen! Vandaag duiken we in een fantastische functie van Aspose.Words voor .NET: hoe je PDF-afbeeldingen kunt overslaan bij het laden van een document. Deze tutorial begeleidt u door het proces, zodat u elke stap gemakkelijk kunt begrijpen. Dus doe je gordel om en maak je klaar om deze handige truc onder de knie te krijgen.
+Hallo, Aspose.Words-enthousiastelingen! Vandaag duiken we in een fantastische functie van Aspose.Words voor .NET: hoe PDF-afbeeldingen over te slaan bij het laden van een document. Deze tutorial leidt je door het proces en zorgt ervoor dat je elke stap met gemak begrijpt. Dus gesp je vast en maak je klaar om deze handige truc onder de knie te krijgen.
 
 ## Vereisten
 
-Voordat we beginnen, zorgen we ervoor dat u alles heeft wat u nodig heeft:
+Voordat we beginnen, controleren we of je alles hebt wat je nodig hebt:
 
 -  Aspose.Words voor .NET: Download de nieuwste versie[hier](https://releases.aspose.com/words/net/).
-- Visual Studio: Elke recente versie zou goed moeten werken.
-- Basiskennis van C#: U hoeft geen professional te zijn, maar een basiskennis kan wel helpen.
-- PDF-document: Zorg ervoor dat u een voorbeeld-PDF-document gereed heeft om te testen.
+- Visual Studio: Elke recente versie zou prima moeten werken.
+- Basiskennis van C#: U hoeft geen professional te zijn, maar een basiskennis is wel handig.
+- PDF-document: Zorg dat u een voorbeeld-PDF-document bij de hand hebt om te testen.
 
 ## Naamruimten importeren
 
@@ -29,25 +29,25 @@ using Aspose.Words;
 using Aspose.Words.Loading;
 ```
 
-Oké, laten we het stap voor stap opsplitsen. Elke stap begeleidt u door het proces, waardoor het gemakkelijk te volgen en te implementeren is.
+Oké, laten we het stap voor stap uitleggen. Elke stap leidt je door het proces, waardoor het makkelijk te volgen en te implementeren is.
 
 ## Stap 1: Stel uw project in
 
-### Maak een nieuw project
+### Een nieuw project maken
 
-Open eerst Visual Studio en maak een nieuw C# Console Application-project. Noem het zoiets als "AsposeSkipPdfImages" om alles georganiseerd te houden.
+Allereerst, open Visual Studio en maak een nieuw C# Console Application-project. Geef het een naam als 'AsposeSkipPdfImages' om alles georganiseerd te houden.
 
 ### Voeg Aspose.Words-referentie toe
 
-Vervolgens moet u een verwijzing toevoegen naar Aspose.Words voor .NET. U kunt dit doen via NuGet Package Manager:
+Vervolgens moet u een referentie toevoegen aan Aspose.Words voor .NET. U kunt dit doen via NuGet Package Manager:
 
 1. Klik met de rechtermuisknop op uw project in Solution Explorer.
-2. Selecteer "NuGet-pakketten beheren".
+2. Selecteer 'NuGet-pakketten beheren'.
 3. Zoek naar "Aspose.Words" en installeer het.
 
 ## Stap 2: Laadopties configureren
 
-### Definieer de gegevensmap
+### Definieer de gegevensdirectory
 
  In uw project`Program.cs` bestand, begin met het definiëren van het pad naar uw documentenmap. Dit is waar uw PDF-bestand zich bevindt.
 
@@ -65,9 +65,9 @@ Configureer nu de PDF-laadopties om afbeeldingen over te slaan. Dit is waar de m
 PdfLoadOptions loadOptions = new PdfLoadOptions { SkipPdfImages = true };
 ```
 
-## Stap 3: Laad het PDF-document
+## Stap 3: Het PDF-document laden
 
-Als de laadopties zijn ingesteld, bent u klaar om het PDF-document te laden. Deze stap is cruciaal omdat Aspose.Words hierdoor wordt geïnformeerd dat de afbeeldingen in de PDF moeten worden overgeslagen.
+Met de laadopties ingesteld, bent u klaar om het PDF-document te laden. Deze stap is cruciaal omdat het Aspose.Words vertelt om de afbeeldingen in de PDF over te slaan.
 
 ```csharp
 Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
@@ -77,13 +77,13 @@ Document doc = new Document(dataDir + "Pdf Document.pdf", loadOptions);
 
 ## Conclusie
 
-En daar heb je het! U hebt zojuist geleerd hoe u afbeeldingen in een PDF-document kunt overslaan met Aspose.Words voor .NET. Deze functie is ongelooflijk handig als u PDF's met veel tekst moet verwerken zonder de wirwar van afbeeldingen. Vergeet niet dat oefening kunst baart, dus experimenteer met verschillende PDF's om te zien hoe deze functie in verschillende scenario's werkt.
+En daar heb je het! Je hebt net geleerd hoe je afbeeldingen in een PDF-document kunt overslaan met Aspose.Words voor .NET. Deze functie is ongelooflijk handig wanneer je PDF's met veel tekst moet verwerken zonder de rommel van afbeeldingen. Vergeet niet, oefening baart kunst, dus probeer te experimenteren met verschillende PDF's om te zien hoe deze functie in verschillende scenario's werkt.
 
 ## Veelgestelde vragen
 
 ### Kan ik bepaalde afbeeldingen in een PDF selectief overslaan?
 
- Nee, de`SkipPdfImages` optie slaat alle afbeeldingen in de PDF over. Als u selectieve controle nodig heeft, kunt u overwegen de PDF voor te verwerken.
+ Nee, de`SkipPdfImages` optie slaat alle afbeeldingen in de PDF over. Als u selectieve controle nodig hebt, overweeg dan om de PDF vooraf te verwerken.
 
 ### Heeft deze functie invloed op de tekst in de PDF?
 
@@ -91,12 +91,12 @@ Nee, het overslaan van afbeeldingen heeft alleen invloed op de afbeeldingen. De 
 
 ### Kan ik deze functie gebruiken met andere documentformaten?
 
- De`SkipPdfImages` optie is specifiek voor PDF-documenten. Voor andere formaten zijn er verschillende opties en methoden beschikbaar.
+De`SkipPdfImages` optie is specifiek voor PDF-documenten. Voor andere formaten zijn verschillende opties en methoden beschikbaar.
 
-### Hoe kan ik verifiëren dat afbeeldingen zijn overgeslagen?
+### Hoe kan ik controleren of afbeeldingen zijn overgeslagen?
 
-U kunt het uitvoerdocument openen in een tekstverwerker om de afwezigheid van afbeeldingen visueel te bevestigen.
+U kunt het uitvoerdocument openen in een tekstverwerker om visueel te bevestigen dat er geen afbeeldingen in staan.
 
 ### Wat gebeurt er als de PDF geen afbeeldingen bevat?
 
- Het document wordt zoals gewoonlijk geladen, zonder gevolgen voor het proces. De`SkipPdfImages` optie heeft in dit geval eenvoudigweg geen effect.
+ Het document wordt zoals gewoonlijk geladen, zonder dat dit invloed heeft op het proces.`SkipPdfImages` optie heeft in dit geval gewoon geen effect.

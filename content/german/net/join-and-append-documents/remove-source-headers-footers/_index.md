@@ -29,7 +29,7 @@ using Aspose.Words;
 
 ## Schritt 1: Laden Sie das Quelldokument
 
-Zuerst müssen Sie das Quelldokument laden, aus dem Sie Kopf- und Fußzeilen entfernen möchten. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zu Ihrem Dokumentverzeichnis, in dem sich das Quelldokument befindet.
+ Zuerst müssen Sie das Quelldokument laden, aus dem Sie Kopf- und Fußzeilen entfernen möchten. Ersetzen Sie`"YOUR DOCUMENT DIRECTORY"` durch den tatsächlichen Pfad zu Ihrem Dokumentverzeichnis, in dem sich das Quelldokument befindet.
 
 ```csharp
 string dataDir = "YOUR DOCUMENT DIRECTORY";
@@ -73,7 +73,7 @@ dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
 
 ## Schritt 6: Speichern Sie das resultierende Dokument
 
-Speichern Sie das endgültige Dokument mit entfernten Kopf- und Fußzeilen in dem von Ihnen angegebenen Verzeichnis.
+Speichern Sie das endgültige Dokument mit entfernten Kopf- und Fußzeilen in Ihrem angegebenen Verzeichnis.
 
 ```csharp
 dstDoc.Save(dataDir + "JoinAndAppendDocuments.RemoveSourceHeadersFooters.docx");
@@ -81,7 +81,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.RemoveSourceHeadersFooters.docx");
 
 ## Abschluss
 
-Das Entfernen von Kopf- und Fußzeilen aus einem Word-Dokument mit Aspose.Words für .NET ist ein unkomplizierter Vorgang, der die Dokumentenverwaltung erheblich erleichtern kann. Indem Sie die oben beschriebenen Schritte befolgen, können Sie Dokumente effizient bereinigen und ihnen ein elegantes, professionelles Erscheinungsbild verleihen.
+Das Entfernen von Kopf- und Fußzeilen aus einem Word-Dokument mit Aspose.Words für .NET ist ein unkomplizierter Vorgang, der die Dokumentenverwaltungsaufgaben erheblich verbessern kann. Indem Sie die oben beschriebenen Schritte befolgen, können Sie Dokumente effizient bereinigen und ihnen ein elegantes, professionelles Erscheinungsbild verleihen.
 
 ## Häufig gestellte Fragen
 
@@ -89,7 +89,7 @@ Das Entfernen von Kopf- und Fußzeilen aus einem Word-Dokument mit Aspose.Words 
 Ja, Sie können Abschnitte durchlaufen und Kopf- und Fußzeilen nach Bedarf selektiv löschen.
 
 ### Unterstützt Aspose.Words für .NET das Entfernen von Kopf- und Fußzeilen in mehreren Dokumenten?
-Natürlich können Sie mit Aspose.Words für .NET Kopf- und Fußzeilen in mehreren Dokumenten bearbeiten.
+Natürlich können Sie mit Aspose.Words für .NET Kopf- und Fußzeilen über mehrere Dokumente hinweg bearbeiten.
 
 ###  Was passiert, wenn ich vergesse,`LinkToPrevious` to `false`?
 Kopf- und Fußzeilen des Quelldokuments werden möglicherweise im Zieldokument übernommen.

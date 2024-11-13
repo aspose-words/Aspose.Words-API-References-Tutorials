@@ -7,7 +7,7 @@ type: docs
 weight: 21
 url: /cs/java/using-document-elements/using-ole-objects-and-activex/
 ---
-tomto tutoriálu prozkoumáme, jak pracovat s objekty OLE (Object Linking and Embedding) a ovládacími prvky ActiveX v Aspose.Words for Java. Objekty OLE a ovládací prvky ActiveX jsou výkonné nástroje, které umožňují vylepšit vaše dokumenty vložením nebo propojením externího obsahu, jako jsou tabulky, multimediální soubory nebo interaktivní ovládací prvky. Pokračujte, jak se ponoříme do příkladů kódu a naučíme se, jak tyto funkce efektivně používat.
+V tomto tutoriálu prozkoumáme, jak pracovat s objekty OLE (Object Linking and Embedding) a ovládacími prvky ActiveX v Aspose.Words for Java. Objekty OLE a ovládací prvky ActiveX jsou výkonné nástroje, které umožňují vylepšit vaše dokumenty vložením nebo propojením externího obsahu, jako jsou tabulky, multimediální soubory nebo interaktivní ovládací prvky. Pokračujte, jak se ponoříme do příkladů kódu a naučíme se, jak tyto funkce efektivně používat.
 
 ### Předpoklady
 
@@ -56,7 +56,7 @@ public void insertOleObjectWithOlePackage() throws Exception
 }
 ```
 
-V tomto příkladu vložíme objekt OLE pomocí balíčku OlePackage, který vám umožní zahrnout externí soubory jako vložené objekty.
+tomto příkladu vložíme objekt OLE pomocí balíčku OlePackage, který vám umožní zahrnout externí soubory jako vložené objekty.
 
 ### Vložení objektu OLE jako ikony
 

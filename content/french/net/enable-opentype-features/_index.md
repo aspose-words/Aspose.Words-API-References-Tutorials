@@ -7,9 +7,9 @@ type: docs
 weight: 40
 url: /fr/net/enable-opentype-features/
 ---
-Découvrez comment activer les fonctionnalités OpenType dans vos documents Word avec Aspose.Words pour .NET. Ce didacticiel détaillé vous guide étape par étape dans l'utilisation des fonctionnalités OpenType telles que les ligatures, les alternatives stylistiques, les substitutions contextuelles, etc. Découvrez comment activer ces fonctionnalités pour améliorer la typographie et l’apparence de vos documents Word.
+Découvrez comment activer les fonctionnalités OpenType dans vos documents Word avec Aspose.Words pour .NET. Ce didacticiel détaillé vous guide étape par étape dans l'utilisation des fonctionnalités OpenType telles que les ligatures, les alternatives stylistiques, les substitutions contextuelles, etc. Découvrez comment activer ces fonctionnalités pour améliorer la typographie et l'apparence de vos documents Word.
 
  ## Tutoriels
 | Titre | Description |
 | --- | --- |
-| [Caractéristiques de type ouvert](./open-type-features/) | Découvrez comment activer les fonctionnalités OpenType dans les documents Word à l'aide d'Aspose.Words for .NET avec ce guide détaillé étape par étape. |
+| [Fonctionnalités de type ouvert](./open-type-features/) | Découvrez comment activer les fonctionnalités OpenType dans les documents Word à l'aide d'Aspose.Words pour .NET avec ce guide détaillé étape par étape. |

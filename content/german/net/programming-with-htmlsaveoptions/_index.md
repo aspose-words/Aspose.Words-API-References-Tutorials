@@ -9,7 +9,7 @@ url: /de/net/programming-with-htmlsaveoptions/
 ---
 Aspose.Words für .NET ist eine leistungsstarke Bibliothek zum Bearbeiten und Generieren von Word-Dokumenten in .NET-Anwendungen. Die Tutorials auf der Referenzseite von Aspose.Words für .NET sind eine wertvolle Ressource für Entwickler, die diese Bibliothek beherrschen und ihre Funktionalität voll ausschöpfen möchten.
 
-Das Tutorial „Textverarbeitung mit HtmlSaveOptions“ konzentriert sich auf die Verwendung von HTML-Speicheroptionen in Aspose.Words für .NET. Dieses Tutorial führt Entwickler durch die verschiedenen verfügbaren Optionen zum Anpassen der Konvertierung von Word-Dokumenten in HTML. Detaillierte Codebeispiele demonstrieren die Verwendung dieser Optionen und erzielen die gewünschten Konvertierungsergebnisse.
+Das Tutorial „Textverarbeitung mit HtmlSaveOptions“ konzentriert sich auf die Verwendung von HTML-Speicheroptionen in Aspose.Words für .NET. Dieses Tutorial führt Entwickler durch die verschiedenen verfügbaren Optionen zum Anpassen der Konvertierung von Word-Dokumenten in HTML. Detaillierte Codebeispiele demonstrieren die Verwendung dieser Optionen und ermöglichen das Erreichen der gewünschten Konvertierungsergebnisse.
 
 Egal, ob Sie Word-Dokumente zur Anzeige im Web in HTML konvertieren, HTML-Inhalte in Ihre Word-Dokumente einbetten oder die HTML-Wiedergabe anpassen möchten, dieses Tutorial vermittelt Ihnen das Wissen und die Fähigkeiten dazu. Dank detaillierter Erklärungen und praktischer Beispiele können Sie die HTML-Konvertierungsfunktionen von Aspose.Words für .NET in Ihren Entwicklungsprojekten voll ausnutzen.
 
@@ -17,7 +17,7 @@ Egal, ob Sie Word-Dokumente zur Anzeige im Web in HTML konvertieren, HTML-Inhalt
 | Titel | Beschreibung |
 | --- | --- |
 | [Informationen zum Exportieren von Roundtrips](./export-roundtrip-information/) | Erfahren Sie, wie Sie Roundtrip-Informationen mit Aspose.Words für .NET exportieren. Bewahren Sie die Integrität und Formatierung Ihres Dokuments während der Konvertierung. |
-| [Schriftarten als Base 64 exportieren](./export-fonts-as-base-64/) | Erfahren Sie in diesem ausführlichen Tutorial, wie Sie Schriftarten mit Aspose.Words für .NET als Base64 exportieren. Stellen Sie sicher, dass Schriftarten in HTML-Dateien eingebettet und korrekt angezeigt werden. |
+| [Schriftarten als Base 64 exportieren](./export-fonts-as-base-64/) | In diesem ausführlichen Tutorial erfahren Sie, wie Sie Schriftarten mit Aspose.Words für .NET als Base64 exportieren. Stellen Sie sicher, dass Schriftarten in HTML-Dateien eingebettet und korrekt angezeigt werden. |
 | [Ressourcen exportieren](./export-resources/) | Erfahren Sie, wie Sie Ressourcen wie CSS und Schriftarten exportieren, während Sie Word-Dokumente mit Aspose.Words für .NET als HTML speichern. Folgen Sie unserer Schritt-für-Schritt-Anleitung. |
 | [Metadateien in EMF oder WMF konvertieren](./convert-metafiles-to-emf-or-wmf/) | Schritt-für-Schritt-Anleitung zum Konvertieren von Metadateien in die Formate EMF oder WMF bei der Konvertierung eines Dokuments in HTML mit Aspose.Words für .NET. |
 | [Metadateien in SVG konvertieren](./convert-metafiles-to-svg/) | Konvertieren Sie Metadateien in Word-Dokumenten mit Aspose.Words für .NET in SVG mit dieser detaillierten Schritt-für-Schritt-Anleitung. Perfekt für Entwickler aller Niveaus. |

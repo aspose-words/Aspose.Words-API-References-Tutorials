@@ -15,7 +15,7 @@ url: /el/net/basic-conversions/docx-to-mhtml-and-sending-email/
 
 Πριν ξεκινήσουμε, βεβαιωθείτε ότι έχετε τις ακόλουθες προϋποθέσεις:
 
-1. Aspose.Words για .NET: Κατεβάστε και εγκαταστήστε τη βιβλιοθήκη Aspose.Words για .NET από το[Σελίδα εκδόσεων Aspose](https://releases.aspose.com/words/net/).
+1.  Aspose.Words για .NET: Κατεβάστε και εγκαταστήστε τη βιβλιοθήκη Aspose.Words για .NET από το[Σελίδα εκδόσεων Aspose](https://releases.aspose.com/words/net/).
 2.  Aspose.Email για .NET: Λήψη και εγκατάσταση της βιβλιοθήκης Aspose.Email για .NET από τη[Σελίδα εκδόσεων Aspose](https://releases.aspose.com/email/net/).
 3. .NET Framework: Βεβαιωθείτε ότι έχετε εγκαταστήσει το .NET Framework στον υπολογιστή σας.
 4. Διακομιστής SMTP: Χρειάζεστε πρόσβαση σε διακομιστή SMTP για να στείλετε μηνύματα ηλεκτρονικού ταχυδρομείου.
@@ -58,7 +58,7 @@ stream.Position = 0;
 
 ## Βήμα 3: Δημιουργήστε ένα μήνυμα ηλεκτρονικού ταχυδρομείου
 
-Τώρα, δημιουργήστε ένα μήνυμα email από τη ροή MHTML χρησιμοποιώντας το Aspose.Email. Θα χρησιμοποιήσετε το`MailMessage` τάξη για το σκοπό αυτό.
+ Τώρα, δημιουργήστε ένα μήνυμα email από τη ροή MHTML χρησιμοποιώντας το Aspose.Email. Θα χρησιμοποιήσετε το`MailMessage` τάξη για το σκοπό αυτό.
 
 ```csharp
 // Δημιουργήστε ένα μήνυμα ηλεκτρονικού ταχυδρομείου Aspose.Email MIME από τη ροή.
@@ -70,7 +70,7 @@ message.Subject = "Aspose.Words + Aspose.Email MHTML Test Message";
 
 ## Βήμα 4: Στείλτε το email
 
- Τέλος, στείλτε το email χρησιμοποιώντας έναν πελάτη SMTP. Διαμορφώστε τον πελάτη SMTP με τα στοιχεία του διακομιστή SMTP και χρησιμοποιήστε το`Send` τρόπο αποστολής του μηνύματος.
+Τέλος, στείλτε το email χρησιμοποιώντας έναν πελάτη SMTP. Διαμορφώστε τον πελάτη SMTP με τα στοιχεία του διακομιστή SMTP και χρησιμοποιήστε το`Send` τρόπο αποστολής του μηνύματος.
 
 ```csharp
 // Στείλτε το μήνυμα χρησιμοποιώντας το Aspose.Email.
@@ -89,13 +89,13 @@ client.Send(message);
 Ναι, το Aspose.Words υποστηρίζει διάφορες μορφές και μπορείτε να μετατρέψετε έγγραφα όπως DOC, DOCX, RTF και άλλα σε MHTML.
 
 ### Πώς μπορώ να προσθέσω συνημμένα στο email;
- Μπορείτε να χρησιμοποιήσετε το`Attachments` ιδιοκτησία του`MailMessage`τάξη για να προσθέσετε συνημμένα στο email σας.
+ Μπορείτε να χρησιμοποιήσετε το`Attachments` ιδιοκτησία του`MailMessage` τάξη για να προσθέσετε συνημμένα στο email σας.
 
 ### Είναι το Aspose.Words συμβατό με .NET Core;
 Ναι, το Aspose.Words είναι συμβατό με .NET Core. Μπορείτε να το χρησιμοποιήσετε και σε εφαρμογές .NET Core.
 
 ### Χρειάζομαι άδεια για το Aspose.Words και το Aspose.Email;
- Ναι, και οι δύο βιβλιοθήκες απαιτούν άδειες. Μπορείτε να πάρετε μια προσωρινή άδεια από το[Σελίδα αγοράς Aspose](https://purchase.aspose.com/temporary-license/) για σκοπούς αξιολόγησης.
+Ναι, και οι δύο βιβλιοθήκες απαιτούν άδειες. Μπορείτε να πάρετε μια προσωρινή άδεια από το[Σελίδα αγοράς Aspose](https://purchase.aspose.com/temporary-license/) για σκοπούς αξιολόγησης.
 
 ### Πού μπορώ να βρω περισσότερα έγγραφα;
  Μπορείτε να βρείτε αναλυτική τεκμηρίωση για το Aspose.Words[εδώ](https://reference.aspose.com/words/net/) και για το Aspose.Email[εδώ](https://reference.aspose.com/email/net/).

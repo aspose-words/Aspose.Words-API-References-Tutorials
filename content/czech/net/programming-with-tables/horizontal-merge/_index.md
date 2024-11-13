@@ -98,7 +98,7 @@ Tento fragment kódu dokončí tabulku a uloží dokument do určeného adresá�
 
 ## Závěr
 
-A tady to máte! Právě jste zvládli umění horizontálního slučování buněk v dokumentu aplikace Word pomocí Aspose.Words for .NET. Pomocí těchto kroků můžete snadno vytvářet složité struktury tabulek. Pokračujte v experimentování a zkoumání možností Aspose.Words, aby byly vaše dokumenty tak dynamické a flexibilní, jak potřebujete. Šťastné kódování!
+A tady to máte! Právě jste zvládli umění horizontálního slučování buněk v dokumentu aplikace Word pomocí Aspose.Words for .NET. Podle těchto kroků můžete snadno vytvářet složité struktury tabulek. Pokračujte v experimentování a zkoumání možností Aspose.Words, aby byly vaše dokumenty tak dynamické a flexibilní, jak potřebujete. Šťastné kódování!
 
 ## FAQ
 

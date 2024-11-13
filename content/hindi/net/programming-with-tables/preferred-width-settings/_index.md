@@ -53,14 +53,13 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- यहां, आप उस निर्देशिका को निर्दिष्ट करते हैं जहां दस्तावेज़ सहेजा जाएगा और प्रारंभ किया जाएगा`Document`और`DocumentBuilder` वस्तुएं.
+ यहां, आप वह निर्देशिका निर्दिष्ट करते हैं जहां दस्तावेज़ सहेजा जाएगा और प्रारंभ किया जाएगा`Document` और`DocumentBuilder` वस्तुएं.
 
 ## चरण 2: पूर्ण चौड़ाई के साथ पहला टेबल सेल डालें
 
 तालिका में पहले सेल को 40 पॉइंट की निश्चित चौड़ाई के साथ डालें। इससे यह सुनिश्चित होगा कि तालिका के आकार की परवाह किए बिना यह सेल हमेशा 40 पॉइंट की चौड़ाई बनाए रखेगा।
 
 ```csharp
-
 // एक पूर्ण आकार का सेल डालें.
 builder.InsertCell();
 builder.CellFormat.PreferredWidth = PreferredWidth.FromPoints(40);

@@ -15,7 +15,7 @@ url: /zh/net/programming-with-styles-and-themes/insert-style-separator/
 
 在深入研究代码之前，请确保您已具备以下条件：
 
-1.  Aspose.Words for .NET 库：您需要在项目中安装 Aspose.Words 库。如果您还没有，可以从[Aspose.Words for .NET 发布页面](https://releases.aspose.com/words/net/).
+1.  Aspose.Words for .NET 库：您需要在项目中安装 Aspose.Words 库。如果您还没有安装，可以从[Aspose.Words for .NET 发布页面](https://releases.aspose.com/words/net/).
    
 2. 开发环境：确保您已经设置了 .NET 开发环境，例如 Visual Studio。
 
@@ -67,9 +67,9 @@ paraStyle.Font.Name = "Arial";
 
 ## 步骤 3：插入带标题样式的文本
 
-标题：添加“标题 1”样式的文本
+标题：添加具有“标题 1”样式的文本
 
-解释：使用`DocumentBuilder`插入“标题 1”样式的文本。此步骤有助于在视觉上区分文档的不同部分。
+解释：使用`DocumentBuilder`插入采用“标题 1”样式的文本。此步骤有助于在视觉上区分文档的不同部分。
 
 ```csharp
 //附加具有“标题 1”样式的文本。

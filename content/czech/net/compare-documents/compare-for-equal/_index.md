@@ -38,7 +38,7 @@ Install-Package Aspose.Words
 
 ## Krok 2: Vložte své dokumenty
 
- Dále budete muset načíst dokumenty aplikace Word, které chcete porovnat. V tomto příkladu budeme předpokládat, že máte dva pojmenované dokumenty`Document.docx`a`Document2.docx` umístěný v adresáři vašich dokumentů.
+ Dále budete muset načíst dokumenty aplikace Word, které chcete porovnat. V tomto příkladu budeme předpokládat, že máte dva pojmenované dokumenty`Document.docx` a`Document2.docx` umístěný v adresáři vašich dokumentů.
 
 ```csharp
 // Cesta k adresáři dokumentů.
@@ -49,7 +49,7 @@ Document docB = new Document(dataDir + "Document2.docx");
 
 ## Krok 3: Klonujte jeden z dokumentů
 
- Chcete-li dokumenty porovnat, jeden z nich naklonujte. To je nutné, protože`Compare` metoda upraví dokument a možná budete chtít zachovat původní dokument nezměněný pro jiné účely.
+ Chcete-li dokumenty porovnat, jeden z nich naklonujte. To je nutné, protože`Compare`metoda upraví dokument a možná budete chtít zachovat původní dokument nezměněný pro jiné účely.
 
 ```csharp
 Document docBClone = docB.Clone();
@@ -57,7 +57,7 @@ Document docBClone = docB.Clone();
 
 ## Krok 4: Proveďte srovnání
 
- Nyní jste připraveni porovnat dokumenty. The`Compare`metoda zvýrazní rozdíly mezi těmito dvěma dokumenty. Můžete zadat uživatele, který provádí porovnání, a datum porovnání.
+ Nyní jste připraveni porovnat dokumenty. The`Compare` metoda zvýrazní rozdíly mezi těmito dvěma dokumenty. Můžete zadat uživatele, který provádí porovnání, a datum porovnání.
 
 ```csharp
 docA.Compare(docBClone, "user", DateTime.Now);

@@ -2,27 +2,27 @@
 title: Utilisation des volets de tâches d'extension Web
 linktitle: Utilisation des volets de tâches d'extension Web
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment ajouter et configurer des volets de tâches d'extension Web dans des documents Word à l'aide d'Aspose.Words pour .NET dans ce didacticiel détaillé étape par étape.
+description: Découvrez comment ajouter et configurer des volets de tâches d'extension Web dans des documents Word à l'aide d'Aspose.Words pour .NET dans ce didacticiel détaillé, étape par étape.
 type: docs
 weight: 10
 url: /fr/net/programming-with-webextension/using-web-extension-task-panes/
 ---
 ## Introduction
 
-Bienvenue dans ce didacticiel approfondi sur l'utilisation des volets de tâches d'extension Web dans un document Word à l'aide d'Aspose.Words pour .NET. Si vous avez toujours souhaité améliorer vos documents Word avec des volets de tâches interactifs, vous êtes au bon endroit. Ce guide vous guidera à travers chaque étape pour y parvenir en toute transparence.
+Bienvenue dans ce didacticiel détaillé sur l'utilisation des volets de tâches d'extension Web dans un document Word à l'aide d'Aspose.Words pour .NET. Si vous avez toujours voulu améliorer vos documents Word avec des volets de tâches interactifs, vous êtes au bon endroit. Ce guide vous guidera à travers chaque étape pour y parvenir en toute transparence.
 
-## Conditions préalables
+## Prérequis
 
-Avant de plonger dans le vif du sujet, assurons-nous que vous disposez de tout ce dont vous avez besoin :
+Avant de commencer, assurons-nous que vous avez tout ce dont vous avez besoin :
 
--  Aspose.Words pour .NET : vous pouvez le télécharger[ici](https://releases.aspose.com/words/net/).
+-  Aspose.Words pour .NET : vous pouvez le télécharger[ici](https://releases.aspose.com/words/net/).
 - Environnement de développement .NET : Visual Studio ou tout autre IDE de votre choix.
-- Connaissance de base de C# : cela vous aidera à suivre les exemples de code.
--  Licence pour Aspose.Words : vous pouvez en acheter une[ici](https://purchase.aspose.com/buy) ou obtenir un permis temporaire[ici](https://purchase.aspose.com/temporary-license/).
+- Connaissances de base de C# : cela vous aidera à suivre les exemples de code.
+-  Licence pour Aspose.Words : Vous pouvez en acheter une[ici](https://purchase.aspose.com/buy) ou obtenir un permis temporaire[ici](https://purchase.aspose.com/temporary-license/).
 
 ## Importer des espaces de noms
 
-Avant de commencer le codage, assurez-vous que les espaces de noms suivants sont importés dans votre projet :
+Avant de commencer à coder, assurez-vous que les espaces de noms suivants sont importés dans votre projet :
 
 ```csharp
 using Aspose.Words;
@@ -33,20 +33,20 @@ using Aspose.Words.WebExtensions;
 
 Maintenant, décomposons le processus en étapes faciles à suivre.
 
-### Étape 1 : configuration de votre répertoire de documents
+### Étape 1 : Configuration de votre répertoire de documents
 
-Tout d’abord, nous devons configurer le chemin d’accès à votre répertoire de documents. C'est ici que votre document Word sera enregistré.
+Tout d’abord, nous devons définir le chemin d’accès à votre répertoire de documents. C’est là que votre document Word sera enregistré.
 
 ```csharp
-// Le chemin d'accès au répertoire des documents.
+// Le chemin vers le répertoire des documents.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 ```
 
  Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel vers votre dossier de documents.
 
-### Étape 2 : Création d'un nouveau document
+### Étape 2 : Créer un nouveau document
 
-Ensuite, nous créerons un nouveau document Word en utilisant Aspose.Words.
+Ensuite, nous allons créer un nouveau document Word en utilisant Aspose.Words.
 
 ```csharp
 Document doc = new Document();
@@ -54,18 +54,18 @@ Document doc = new Document();
 
  Cette ligne initialise une nouvelle instance du`Document` classe, qui représente un document Word.
 
-### Étape 3 : ajout d'un volet de tâches
+### Étape 3 : Ajout d'un volet des tâches
 
-Maintenant, nous allons ajouter un volet de tâches à notre document. Les volets de tâches sont utiles pour fournir des fonctionnalités et des outils supplémentaires dans un document Word.
+Nous allons maintenant ajouter un volet de tâches à notre document. Les volets de tâches sont utiles pour fournir des fonctionnalités et des outils supplémentaires dans un document Word.
 
 ```csharp
 TaskPane taskPane = new TaskPane();
 doc.WebExtensionTaskPanes.Add(taskPane);
 ```
 
- Ici, nous créons un nouveau`TaskPane` objet et ajoutez-le au document`WebExtensionTaskPanes` collection.
+ Ici, nous créons un nouveau`TaskPane` objet et l'ajouter au document`WebExtensionTaskPanes` collection.
 
-### Étape 4 : configuration du volet des tâches
+### Étape 4 : Configuration du volet des tâches
 
 Pour rendre notre volet des tâches visible et définir ses propriétés, nous utilisons le code suivant :
 
@@ -75,13 +75,13 @@ taskPane.IsVisible = true;
 taskPane.Width = 300;
 ```
 
-- `DockState` définit l'endroit où le volet des tâches apparaîtra. Dans ce cas, c'est à droite.
+- `DockState` définit l'emplacement où le volet des tâches apparaît. Dans ce cas, il se trouve à droite.
 - `IsVisible` garantit que le volet des tâches est visible.
 - `Width` définit la largeur du volet des tâches.
 
-### Étape 5 : Configuration de la référence de l'extension Web
+### Étape 5 : Configuration de la référence d'extension Web
 
-Ensuite, nous configurons la référence de l'extension Web qui inclut l'ID, la version, le type de magasin et le magasin.
+Ensuite, nous configurons la référence d’extension Web qui inclut l’ID, la version, le type de magasin et le magasin.
 
 ```csharp
 taskPane.WebExtension.Reference.Id = "wa102923726";
@@ -93,9 +93,9 @@ taskPane.WebExtension.Reference.Store = "th-TH";
 - `Id`est un identifiant unique pour l'extension Web.
 - `Version` spécifie la version de l'extension.
 - `StoreType` indique le type de magasin (dans ce cas, OMEX).
-- `Store` précise le code langue/culture du magasin.
+- `Store` spécifie le code langue/culture du magasin.
 
-### Étape 6 : ajout de propriétés à l'extension Web
+### Étape 6 : Ajout de propriétés à l’extension Web
 
 Vous pouvez ajouter des propriétés à votre extension Web pour définir son comportement ou son contenu.
 
@@ -105,7 +105,7 @@ taskPane.WebExtension.Properties.Add(new WebExtensionProperty("mailchimpCampaign
 
  Ici, nous ajoutons une propriété nommée`mailchimpCampaign`.
 
-### Étape 7 : Liaison de l'extension Web
+### Étape 7 : lier l'extension Web
 
 Enfin, nous ajoutons des liaisons à notre extension Web. Les liaisons vous permettent de lier l'extension à des parties spécifiques du document.
 
@@ -114,10 +114,10 @@ taskPane.WebExtension.Bindings.Add(new WebExtensionBinding("UnnamedBinding_0_150
 ```
 
 - `UnnamedBinding_0_1506535429545` est le nom de la liaison.
-- `WebExtensionBindingType.Text` indique que la liaison est de type texte.
+- `WebExtensionBindingType.Text` indique que la reliure est de type texte.
 - `194740422` est l'ID de la partie du document à laquelle l'extension est liée.
 
-### Étape 8 : Sauvegarde du document
+### Étape 8 : enregistrement du document
 
 Après avoir tout configuré, enregistrez votre document.
 
@@ -129,7 +129,7 @@ Cette ligne enregistre le document dans le répertoire spécifié avec le nom de
 
 ### Étape 9 : Chargement et affichage des informations du volet des tâches
 
-Pour vérifier et afficher les informations du volet de tâches, nous chargeons le document et parcourons les volets de tâches.
+Pour vérifier et afficher les informations du volet des tâches, nous chargeons le document et parcourons les volets des tâches.
 
 ```csharp
 doc = new Document(dataDir + "WorkingWithWebExtension.UsingWebExtensionTaskPanes.docx");
@@ -143,25 +143,25 @@ foreach (TaskPane taskPaneInfo in doc.WebExtensionTaskPanes)
 }
 ```
 
-Ce code charge le document et imprime le fournisseur, la version et l'identifiant du catalogue de chaque volet de tâches dans la console.
+Ce code charge le document et imprime le fournisseur, la version et l'identifiant de catalogue de chaque volet des tâches dans la console.
 
 ## Conclusion
 
-Et c'est tout ! Vous avez ajouté et configuré avec succès un volet de tâches d'extension Web dans un document Word à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité puissante peut améliorer considérablement vos documents Word en fournissant des fonctionnalités supplémentaires directement dans le document. 
+Et voilà ! Vous avez ajouté et configuré avec succès un volet de tâches d'extension Web dans un document Word à l'aide d'Aspose.Words pour .NET. Cette fonctionnalité puissante peut améliorer considérablement vos documents Word en fournissant des fonctionnalités supplémentaires directement dans le document. 
 
 ## FAQ
 
-### Qu’est-ce qu’un volet de tâches dans Word ?
-Un volet de tâches est un élément d'interface qui fournit des outils et des fonctionnalités supplémentaires dans un document Word, améliorant ainsi l'interaction et la productivité de l'utilisateur.
+### Qu’est-ce qu’un volet des tâches dans Word ?
+Un volet des tâches est un élément d'interface qui fournit des outils et des fonctionnalités supplémentaires dans un document Word, améliorant ainsi l'interaction et la productivité de l'utilisateur.
 
-### Puis-je personnaliser l'apparence du volet des tâches ?
+### Puis-je personnaliser l’apparence du volet des tâches ?
  Oui, vous pouvez personnaliser l'apparence du volet des tâches en définissant des propriétés telles que`DockState`, `IsVisible` , et`Width`.
 
-### Que sont les propriétés des extensions Web ?
+### Que sont les propriétés d’extension Web ?
 Les propriétés d'extension Web sont des propriétés personnalisées que vous pouvez ajouter à une extension Web pour définir son comportement ou son contenu.
 
-### Comment lier une extension Web à une partie du document ?
- Vous pouvez lier une extension Web à une partie du document à l'aide de l'option`WebExtensionBinding` classe, en spécifiant le type de liaison et l’ID cible.
+### Comment lier une extension Web à une partie du document ?
+ Vous pouvez lier une extension Web à une partie du document à l'aide de l'`WebExtensionBinding` classe, spécifiant le type de liaison et l'ID cible.
 
-### Où puis-je trouver plus d’informations sur Aspose.Words pour .NET ?
- Vous pouvez trouver une documentation détaillée[ici](https://reference.aspose.com/words/net/).
+### Où puis-je trouver plus d'informations sur Aspose.Words pour .NET ?
+ Vous trouverez une documentation détaillée[ici](https://reference.aspose.com/words/net/).

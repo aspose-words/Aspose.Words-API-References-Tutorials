@@ -66,47 +66,6 @@ builder.ParagraphFormat.StyleName = "Heading 3";
 builder.Writeln("Details");
 ```
 
-## Προσθήκη περισσότερων προσαρμογών
-
-### Προσαρμογή γραμματοσειράς και παραγράφων
-
-Μπορείτε να προσαρμόσετε περαιτέρω τις ρυθμίσεις γραμματοσειράς και παραγράφου ανάλογα με τις ανάγκες σας. Για παράδειγμα, αλλαγή του μεγέθους της γραμματοσειράς, του χρώματος και της ευθυγράμμισης.
-
-```csharp
-builder.Font.Size = 14;
-builder.Font.Color = System.Drawing.Color.Blue;
-builder.ParagraphFormat.Alignment = ParagraphAlignment.Center;
-builder.Writeln("Centered Blue Heading");
-```
-
-### Εισαγωγή πίνακα περιεχομένων
-
-Ένα καλά δομημένο έγγραφο συχνά περιλαμβάνει έναν πίνακα περιεχομένων. Δείτε πώς μπορείτε να εισαγάγετε ένα χρησιμοποιώντας το Aspose.Words για .NET.
-
-```csharp
-builder.InsertTableOfContents("\\o \"1-3\" \\h \\z \\u");
-doc.UpdateFields();
-```
-
-### Προσθήκη εικόνων
-
-Οι εικόνες μπορούν να κάνουν το έγγραφό σας πιο ελκυστικό. Ας προσθέσουμε μια εικόνα στο έγγραφό μας.
-
-```csharp
-builder.InsertImage("YOUR DOCUMENT DIRECTORY/image.png");
-```
-
-### Χρήση ενοτήτων εγγράφων
-
-Οι ενότητες βοηθούν στην οργάνωση του περιεχομένου, ειδικά όταν χρειάζεστε διαφορετική μορφοποίηση για διαφορετικά μέρη του εγγράφου.
-
-```csharp
-Section section = doc.Sections.Add();
-DocumentBuilder sectionBuilder = new DocumentBuilder(section);
-sectionBuilder.ParagraphFormat.StyleName = "Heading 1";
-sectionBuilder.Writeln("New Section Heading");
-```
-
 ## Σύναψη
 
 Η δημιουργία ενός καλά διαμορφωμένου εγγράφου δεν αφορά μόνο την αισθητική. ενισχύει επίσης την αναγνωσιμότητα και τον επαγγελματισμό. Με το Aspose.Words για .NET, έχετε ένα ισχυρό εργαλείο στη διάθεσή σας για να το πετύχετε αυτό χωρίς κόπο. Ακολουθήστε αυτόν τον οδηγό, πειραματιστείτε με διαφορετικές ρυθμίσεις και σύντομα θα είστε επαγγελματίας στη μορφοποίηση εγγράφων!

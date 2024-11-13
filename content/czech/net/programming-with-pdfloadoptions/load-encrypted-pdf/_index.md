@@ -91,7 +91,7 @@ doc = new Document(dataDir + "WorkingWithPdfLoadOptions.LoadEncryptedPdf.pdf", l
 
 A tady to máte! Načítání zašifrovaného PDF pomocí Aspose.Words for .NET není jen snadné – je to přímo zábava. Pomocí těchto kroků jste odemkli možnost zacházet se šifrováním PDF jako profesionál. Pamatujte, že klíčem ke zvládnutí jakéhokoli nástroje je praxe, takže neváhejte experimentovat a zkoumat.
 
- Pokud máte nějaké dotazy nebo potřebujete další pomoc, na[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/)a[fórum podpory](https://forum.aspose.com/c/words/8) jsou skvělá místa, kde začít.
+ Pokud máte nějaké dotazy nebo potřebujete další pomoc, na[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) a[fórum podpory](https://forum.aspose.com/c/words/8) jsou skvělá místa, kde začít.
 
 ## FAQ
 

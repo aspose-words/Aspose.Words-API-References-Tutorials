@@ -9,7 +9,7 @@ url: /zh-hant/net/basic-conversions/docx-to-markdown/
 ---
 ## 介紹
 
-在 .NET 開發領域，以程式設計方式操作 Word 文件可以大幅提高工作效率和功能。 Aspose.Words for .NET 是一個功能強大的 API，它使開發人員能夠將文件處理功能無縫整合到他們的應用程式中。無論您想要轉換、建立、修改，甚至從頭開始產生文檔，Aspose.Words 都提供了強大的工具來高效地簡化這些任務。
+在 .NET 開發領域，以程式設計方式操作 Word 文件可以大大提高生產力和功能。 Aspose.Words for .NET 是一個功能強大的 API，它使開發人員能夠將文件處理功能無縫整合到他們的應用程式中。無論您想要轉換、建立、修改，甚至從頭開始產生文檔，Aspose.Words 都提供了強大的工具來高效地簡化這些任務。
 
 ## 先決條件
 
@@ -38,23 +38,7 @@ string dataDir = "YOUR_DOCUMENT_DIRECTORY_PATH";
 Document doc = new Document(dataDir + "YourDocument.docx");
 ```
 
-## 第2步：建立DocumentBuilder對象
-
-接下來，創建一個`DocumentBuilder`物件以方便文檔操作。
-
-```csharp
-DocumentBuilder builder = new DocumentBuilder(doc);
-```
-
-## 第 3 步：操縱文檔內容
-
-使用`DocumentBuilder`對像根據需要操縱內容。例如，新增文字或格式。
-
-```csharp
-builder.Writeln("Insert your text or content manipulation code here!");
-```
-
-## 第 4 步：另存為 Markdown
+## 第 2 步：另存為 Markdown
 
 最後將修改後的文件儲存為Markdown格式。
 

@@ -1,6 +1,6 @@
 ---
-title: Verbessern Sie die Positionierung von PDF-Texten mit zusätzlicher Textpositionierung
-linktitle: Verbessern Sie die Positionierung von PDF-Texten mit zusätzlicher Textpositionierung
+title: Verbessern Sie die PDF-Textpositionierung mit zusätzlicher Textpositionierung
+linktitle: Verbessern Sie die PDF-Textpositionierung mit zusätzlicher Textpositionierung
 second_title: Aspose.Words Dokumentverarbeitungs-API
 description: Erfahren Sie, wie Sie die Positionierung von PDF-Texten mit Aspose.Words für .NET in wenigen einfachen Schritten verbessern. Verbessern Sie das Erscheinungsbild Ihres Dokuments.
 type: docs

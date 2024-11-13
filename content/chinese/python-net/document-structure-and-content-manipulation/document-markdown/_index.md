@@ -12,7 +12,7 @@ url: /zh/python-net/document-structure-and-content-manipulation/document-markdow
 
 ## Aspose.Words for Python 简介
 
-Aspose.Words for Python 是一个多功能库，允许开发人员以编程方式操作 Word 文档。它提供了一套用于创建、编辑和格式化文档的广泛功能，包括添加 Markdown 格式的功能。
+Aspose.Words for Python 是一个多功能库，允许开发人员以编程方式操作 Word 文档。它提供了一组用于创建、编辑和格式化文档的广泛功能，包括添加 Markdown 格式的功能。
 
 ## 设置你的环境
 
@@ -104,7 +104,7 @@ pip install aspose-words
 
 ### 我可以向我的 Markdown 格式的文档添加图像吗？
 
-当然可以！您可以使用 Markdown 语法在文档中插入图像。
+当然！您可以使用 Markdown 语法在文档中插入图像。
 
 ### 是否可以通过编程调整页面布局和边距？
 
@@ -114,6 +114,6 @@ pip install aspose-words
 
 是的，Aspose.Words 支持以各种格式保存文档，例如 DOCX、PDF、HTML 等。
 
-### 我可以在哪里访问 Aspose.Words for Python 文档？
+### 在哪里可以访问 Aspose.Words for Python 文档？
 
 您可以在此处找到全面的文档和参考资料[Aspose.Words for Python API 参考](https://reference.aspose.com/words/python-net/).

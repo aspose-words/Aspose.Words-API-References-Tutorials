@@ -66,13 +66,13 @@ for (Paragraph para : (Iterable<Paragraph>) doc.getChildNodes(NodeType.PARAGRAPH
     if (para.getParagraphFormat().getStyle().getStyleIdentifier() >= StyleIdentifier.TOC_1 &&
         para.getParagraphFormat().getStyle().getStyleIdentifier() <= StyleIdentifier.TOC_9)
     {
-        //Získejte první kartu použitou v tomto odstavci, která zarovnává čísla stránek.
+        // Získejte první kartu použitou v tomto odstavci, která zarovnává čísla stránek.
         TabStop tab = para.getParagraphFormat().getTabStops().get(0);
         
         // Odstraňte starou kartu.
         para.getParagraphFormat().getTabStops().removeByPosition(tab.getPosition());
         
-        // Vložte novou záložku na upravenou pozici (např. 50 jednotek vlevo).
+        //Vložte novou záložku na upravenou pozici (např. 50 jednotek vlevo).
         para.getParagraphFormat().getTabStops().add(tab.getPosition() - 50.0, tab.getAlignment(), tab.getLeader());
     }
 }

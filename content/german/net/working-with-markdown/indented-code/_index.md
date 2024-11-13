@@ -29,7 +29,7 @@ Alles bereit? Super! Kommen wir nun zum spaßigen Teil.
 
 ## Namespaces importieren
 
-Um mit Aspose.Words in Ihrem .NET-Projekt zu beginnen, müssen Sie die erforderlichen Namespaces importieren. Dieser Schritt stellt sicher, dass Ihr Projekt auf alle von der Aspose.Words-Bibliothek bereitgestellten Klassen und Methoden zugreifen kann. So können Sie es tun:
+Um mit Aspose.Words in Ihrem .NET-Projekt zu beginnen, müssen Sie die erforderlichen Namespaces importieren. Dieser Schritt stellt sicher, dass Ihr Projekt auf alle Klassen und Methoden zugreifen kann, die von der Aspose.Words-Bibliothek bereitgestellt werden. So können Sie es tun:
 
 ```csharp
 using Aspose.Words;
@@ -48,7 +48,7 @@ Lassen Sie uns nun den Vorgang zum Hinzufügen und Formatieren eines eingerückt
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
- Hier erstellen wir ein neues Dokument und verwenden`DocumentBuilder` um mit dem Hinzufügen von Inhalten zu beginnen.
+Hier erstellen wir ein neues Dokument und verwenden`DocumentBuilder` um mit dem Hinzufügen von Inhalten zu beginnen.
 
 ## Schritt 2: Definieren Sie den benutzerdefinierten Stil
 
@@ -76,7 +76,7 @@ Hier legen wir das Absatzformat auf unseren benutzerdefinierten Stil fest und sc
 
 ## Abschluss
 
-Und da haben Sie es – eine einfache, aber effektive Möglichkeit, eingerückte Codeblöcke in Ihren Word-Dokumenten mit Aspose.Words für .NET hinzuzufügen und zu formatieren. Indem Sie diese Schritte befolgen, können Sie die Lesbarkeit von Codeausschnitten verbessern und Ihren Dokumenten einen professionellen Touch verleihen. Egal, ob Sie technische Berichte, Codedokumentation oder andere Arten von Inhalten erstellen, die formatierten Code erfordern, Aspose.Words bietet die Tools, die Sie benötigen, um die Arbeit effizient zu erledigen.
+Und da haben Sie es – eine einfache, aber effektive Möglichkeit, eingerückte Codeblöcke in Ihren Word-Dokumenten mit Aspose.Words für .NET hinzuzufügen und zu formatieren. Indem Sie diese Schritte befolgen, können Sie die Lesbarkeit von Codeausschnitten verbessern und Ihren Dokumenten einen professionellen Touch verleihen. Egal, ob Sie technische Berichte, Codedokumentation oder andere Inhalte erstellen, die formatierten Code erfordern, Aspose.Words bietet die Tools, die Sie benötigen, um die Arbeit effizient zu erledigen.
 
 Experimentieren Sie ruhig mit verschiedenen Stilen und Einstellungen, um das Erscheinungsbild Ihrer Codeblöcke an Ihre Bedürfnisse anzupassen. Viel Spaß beim Programmieren!
 
@@ -86,7 +86,7 @@ Experimentieren Sie ruhig mit verschiedenen Stilen und Einstellungen, um das Ers
  Ja, Sie können die`LeftIndent` Eigenschaft des Stils, um den Einzug zu vergrößern oder zu verkleinern.
 
 ### Wie kann ich die für den Codeblock verwendete Schriftart ändern?  
- Sie können die`Font.Name`-Eigenschaft auf eine beliebige Monospace-Schriftart Ihrer Wahl, beispielsweise „Courier New“ oder „Consolas“.
+ Sie können die`Font.Name` -Eigenschaft auf eine beliebige Monospace-Schriftart Ihrer Wahl, beispielsweise „Courier New“ oder „Consolas“.
 
 ### Ist es möglich, mehrere Codeblöcke mit unterschiedlichen Stilen hinzuzufügen?  
 Auf jeden Fall! Sie können mehrere Stile mit unterschiedlichen Namen definieren und diese nach Bedarf auf verschiedene Codeblöcke anwenden.

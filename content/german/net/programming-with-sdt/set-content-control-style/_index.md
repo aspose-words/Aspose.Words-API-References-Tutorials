@@ -62,7 +62,7 @@ StructuredDocumentTag sdt = (StructuredDocumentTag) doc.GetChild(NodeType.Struct
 Style style = doc.Styles[StyleIdentifier.Quote];
 ```
 
- Der`Styles` Eigentum der`Document` Klasse gibt uns Zugriff auf alle im Dokument verfügbaren Stile. Wir verwenden die`StyleIdentifier.Quote` um den Zitatstil auszuwählen.
+Der`Styles` Eigentum der`Document` Klasse gibt uns Zugriff auf alle im Dokument verfügbaren Stile. Wir verwenden die`StyleIdentifier.Quote` um den Zitatstil auszuwählen.
 
 ## Schritt 4: Den Stil auf das strukturierte Dokument-Tag anwenden
 
@@ -97,7 +97,7 @@ Ja, Sie können benutzerdefinierte Stile erstellen und anwenden. Definieren Sie 
  Sie können alle Tags mit einem`foreach` Schleife und wende auf jeden einzeln Stile an.
 
 ### Ist es möglich, Änderungen am ursprünglichen Stil rückgängig zu machen?  
-Ja, Sie können den ursprünglichen Stil vor dem Vornehmen von Änderungen speichern und ihn bei Bedarf erneut anwenden.
+Ja, Sie können den ursprünglichen Stil speichern, bevor Sie Änderungen vornehmen, und ihn bei Bedarf erneut anwenden.
 
 ### Kann ich diese Methode für andere Dokumentelemente wie Absätze oder Tabellen verwenden?  
 Auf jeden Fall! Diese Methode funktioniert für verschiedene Dokumentelemente. Passen Sie einfach den Code an, um das gewünschte Element anzusprechen.

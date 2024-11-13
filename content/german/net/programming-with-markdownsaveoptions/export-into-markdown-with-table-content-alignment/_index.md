@@ -85,7 +85,7 @@ doc.Save(dataDir + "CenterTableContentAlignment.md", saveOptions);
 
 ## Schritt 4: Automatische Ausrichtung des Tabelleninhalts verwenden
 
- Der`Auto`Die Ausrichtungsoption übernimmt die Ausrichtung aus dem ersten Absatz in der entsprechenden Tabellenspalte. Dies kann praktisch sein, wenn Sie in einer einzelnen Tabelle gemischte Ausrichtungen haben.
+Der`Auto`Die Ausrichtungsoption übernimmt die Ausrichtung aus dem ersten Absatz in der entsprechenden Tabellenspalte. Dies kann praktisch sein, wenn Sie in einer einzelnen Tabelle gemischte Ausrichtungen haben.
 
 ```csharp
 // Stellen Sie die Ausrichtung auf „Auto“.

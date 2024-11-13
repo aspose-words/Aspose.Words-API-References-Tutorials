@@ -1,7 +1,7 @@
 ---
 title: Word-Automatisierung leicht gemacht
 linktitle: Word-Automatisierung leicht gemacht
-second_title: Aspose.Words Python-API zur Dokumentenverwaltung
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
 description: Automatisieren Sie die Textverarbeitung mühelos mit Aspose.Words für Python. Erstellen, formatieren und bearbeiten Sie Dokumente programmgesteuert. Steigern Sie jetzt Ihre Produktivität!
 type: docs
 weight: 10
@@ -88,7 +88,7 @@ shape.image_data.set_image("path/to/image.jpg")
 paragraph = doc.get_child_nodes(aw.NodeType.PARAGRAPH, True).add(shape)
 ```
 
-## Dokumentabschnitte verwalten
+## Verwalten von Dokumentabschnitten
 
 Aspose.Words ermöglicht es uns, unsere Dokumente in Abschnitte mit jeweils eigenen Eigenschaften zu unterteilen.
 

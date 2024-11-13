@@ -79,7 +79,7 @@ doc.FontSettings = fontSettings;
 doc.Save(dataDir + "WorkingWithFonts.SetFontsFoldersMultipleFolders.pdf");
 ```
 
-現在你就得到它了！您已成功為文件設定多個字型資料夾。
+現在你就擁有了！您已成功為文件設定多個字型資料夾。
 
 ## 結論
 

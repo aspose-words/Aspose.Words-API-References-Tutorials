@@ -9,7 +9,7 @@ url: /de/net/programming-with-charts/number-format-for-axis/
 ---
 ## Einführung
 
-Hallo! Haben Sie schon einmal mit Diagrammen in Ihren Dokumenten gearbeitet und sich gewünscht, Sie könnten die Zahlen auf Ihren Achsen formatieren, damit sie professioneller aussehen? Nun, Sie haben Glück! In diesem Tutorial werden wir uns eingehend damit befassen, wie Sie genau das mit Aspose.Words für .NET erreichen können. Mit dieser leistungsstarken Bibliothek können Sie Word-Dokumente kinderleicht bearbeiten. Und heute konzentrieren wir uns darauf, diesen Diagrammachsen mit benutzerdefinierten Zahlenformaten ein neues Aussehen zu verleihen.
+Hallo! Haben Sie schon einmal mit Diagrammen in Ihren Dokumenten gearbeitet und sich gewünscht, Sie könnten die Zahlen auf Ihren Achsen formatieren, damit sie professioneller aussehen? Nun, Sie haben Glück! In diesem Tutorial werden wir uns eingehend damit befassen, wie Sie genau das mit Aspose.Words für .NET erreichen können. Mit dieser leistungsstarken Bibliothek können Sie Word-Dokumente kinderleicht handhaben. Und heute konzentrieren wir uns darauf, diesen Diagrammachsen mit benutzerdefinierten Zahlenformaten ein neues Aussehen zu verleihen.
 
 ## Voraussetzungen
 
@@ -22,7 +22,7 @@ Bevor wir beginnen, stellen wir sicher, dass Sie alles haben, was Sie brauchen. 
 
 ## Namespaces importieren
 
-Als Erstes müssen Sie die erforderlichen Namespaces in Ihr Projekt importieren. Das ist, als würde man das Fundament legen, bevor man ein Haus baut. Fügen Sie oben in Ihrer Codedatei die folgenden using-Direktiven hinzu:
+Als Erstes müssen Sie die erforderlichen Namespaces in Ihr Projekt importieren. Das ist, als würde man das Fundament legen, bevor man ein Haus baut. Fügen Sie am Anfang Ihrer Codedatei die folgenden using-Direktiven hinzu:
 
 ```csharp
 using System;
@@ -46,7 +46,7 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Hier,`dataDir` ist der Pfad zu Ihrem Dokumentverzeichnis, in dem Sie die endgültige Datei speichern.`Document`Und`DocumentBuilder` sind Klassen von Aspose.Words, die Ihnen beim Erstellen und Bearbeiten von Word-Dokumenten helfen.
+ Hier,`dataDir` ist der Pfad zu Ihrem Dokumentverzeichnis, in dem Sie die endgültige Datei speichern.`Document` Und`DocumentBuilder` sind Klassen von Aspose.Words, die Ihnen beim Erstellen und Bearbeiten von Word-Dokumenten helfen.
 
 ## Schritt 2: Einfügen eines Diagramms
 
@@ -59,7 +59,7 @@ Shape shape = builder.InsertChart(ChartType.Column, 432, 252);
 Chart chart = shape.Chart;
 ```
 
- Der`InsertChart` Die Methode fügt ein Diagramm des angegebenen Typs (in diesem Fall „Spalte“) und der angegebenen Dimensionen in das Dokument ein.
+Der`InsertChart` Die Methode fügt ein Diagramm des angegebenen Typs (in diesem Fall „Spalte“) und der angegebenen Dimensionen in das Dokument ein.
 
 ## Schritt 3: Anpassen der Diagrammserie
 
@@ -86,7 +86,7 @@ Zum Schluss formatieren wir die Zahlen auf der Y-Achse, um sie lesbarer zu mache
 chart.AxisY.NumberFormat.FormatCode = "#,##0";
 ```
 
- Der`FormatCode` Mit dieser Eigenschaft können Sie ein benutzerdefiniertes Format für die Zahlen auf der Achse festlegen. In diesem Beispiel`#,##0`sorgt dafür, dass große Zahlen mit Tausenderkommas angezeigt werden.
+Der`FormatCode` Mit dieser Eigenschaft können Sie ein benutzerdefiniertes Format für die Zahlen auf der Achse festlegen. In diesem Beispiel`#,##0`sorgt dafür, dass große Zahlen mit Tausenderkommas angezeigt werden.
 
 ## Schritt 5: Speichern des Dokuments
 

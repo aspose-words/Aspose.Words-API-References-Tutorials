@@ -65,7 +65,7 @@ doc.Save(dataDir + "WorkingWithDocumentOptionsAndSettings.OptimizeForMsWord.docx
 
 ## 結論
 
-現在你就得到它了！只需幾行程式碼，您就可以使用 Aspose.Words for .NET 針對 MS Word 2016 最佳化文件。這可以確保無論您的受眾使用哪個版本的 Word，您的文件看起來都很棒。就是這麼簡單明了。所以，繼續嘗試吧！您的文件將會感謝您。
+現在你就擁有了！只需幾行程式碼，您就可以使用 Aspose.Words for .NET 針對 MS Word 2016 最佳化文件。這可以確保無論您的受眾使用哪個版本的 Word，您的文件看起來都很棒。就是這麼簡單明了。所以，繼續嘗試吧！您的文件將會感謝您。
 
 ## 常見問題解答
 

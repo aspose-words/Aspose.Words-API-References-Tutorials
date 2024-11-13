@@ -81,7 +81,7 @@ Aspose.Words for .NET je výkonná knihovna, která umožňuje vytvářet, uprav
 Aspose.Words dokáže detekovat různé typy ochrany, jako je NoProtection, ReadOnly, AllowOnlyRevisions, AllowOnlyComments a AllowOnlyFormFields.
 
 ### Jak mohu získat podporu, pokud narazím na problémy?
- V případě jakýchkoli problémů můžete navštívit[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8) pomoc.
+ případě jakýchkoli problémů můžete navštívit[Fórum podpory Aspose.Words](https://forum.aspose.com/c/words/8) o pomoc.
 
 ### Je Aspose.Words kompatibilní s .NET Core?
 Ano, Aspose.Words je kompatibilní s .NET Framework i .NET Core.

@@ -84,7 +84,7 @@ doc.Save(dataDir + "WorkingWithOleObjectsAndActiveX.InsertOleObjectWithOlePackag
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 成功將 OLE 物件嵌入到 Word 文件中。這就像在文件中添加一顆隱藏的寶石，可以隨時揭開面紗。該技術對於從技術文件到動態報告的各種應用都非常有用。 
+現在你就擁有了！您已使用 Aspose.Words for .NET 成功將 OLE 物件嵌入到 Word 文件中。這就像在文件中添加一顆隱藏的寶石，可以隨時揭開面紗。該技術對於從技術文件到動態報告的各種應用都非常有用。 
 
 ## 常見問題解答
 

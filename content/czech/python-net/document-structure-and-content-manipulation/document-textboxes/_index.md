@@ -56,7 +56,7 @@ textbox.paragraphs[0].runs[0].font.color.rgb = aw.Color.blue
 
 ## Umístění textových polí
 
- Kontrola polohy textových polí je zásadní pro dosažení požadovaného rozvržení. Polohu můžete nastavit pomocí`left`a`top` vlastnosti. Například:
+ Kontrola polohy textových polí je zásadní pro dosažení požadovaného rozvržení. Polohu můžete nastavit pomocí`left` a`top` vlastnosti. Například:
 
 ```python
 textbox.left = aw.ConvertUtil.inch_to_points(1.5)
@@ -98,7 +98,7 @@ V této příručce jsme prozkoumali proces vylepšování vizuálního obsahu p
 
 ### Jak změním velikost textového pole?
 
- Chcete-li změnit velikost textového pole, můžete upravit jeho vlastnosti šířky a výšky pomocí`width`a`height` atributy.
+ Chcete-li změnit velikost textového pole, můžete upravit jeho vlastnosti šířky a výšky pomocí`width` a`height` atributy.
 
 ### Mohu otočit textové pole?
 

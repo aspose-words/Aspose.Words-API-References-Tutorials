@@ -10,7 +10,7 @@ url: /zh/python-net/document-combining-and-comparison/merge-compare-documents/
 
 ## Aspose.Words for Python 简介
 
-Aspose.Words 是一个多功能库，允许您以编程方式创建、编辑和操作 Word 文档。它提供了广泛的功能，包括文档合并和比较，可以大大简化文档管理任务。
+Aspose.Words 是一个多功能库，允许您以编程方式创建、编辑和操作 Word 文档。它提供各种功能，包括文档合并和比较，可显著简化文档管理任务。
 
 ## 安装和设置 Aspose.Words
 

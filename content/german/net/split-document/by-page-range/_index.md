@@ -57,7 +57,7 @@ Nachdem das Dokument geladen wurde, können Sie nun die benötigten Seiten extra
 Document extractedPages = doc.ExtractPages(3, 6);
 ```
 
-## Schritt 5: Speichern Sie die extrahierten Seiten
+## Schritt 5: Speichern der extrahierten Seiten
 
 Speichern Sie abschließend die extrahierten Seiten als neues Dokument:
 

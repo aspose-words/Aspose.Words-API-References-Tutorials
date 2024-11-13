@@ -1,5 +1,5 @@
 ---
-title: Position von Fußnote und Endnote festlegen
+title: Festlegen der Position von Fußnoten und Endnoten
 linktitle: Position von Fußnote und Endnote festlegen
 second_title: Aspose.Words Dokumentverarbeitungs-API
 description: Erfahren Sie in dieser ausführlichen Schritt-für-Schritt-Anleitung, wie Sie mit Aspose.Words für .NET Fußnoten- und Endnotenpositionen in Word-Dokumenten festlegen.
@@ -37,7 +37,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 Document doc = new Document(dataDir + "Document.docx");
 ```
 
- Ersetzen Sie in diesem Code`"YOUR DOCUMENT DIRECTORY"`durch den tatsächlichen Pfad, in dem sich Ihr Dokument befindet.
+Ersetzen Sie in diesem Code`"YOUR DOCUMENT DIRECTORY"`durch den tatsächlichen Pfad, in dem sich Ihr Dokument befindet.
 
 ## Schritt 2: Fußnotenposition festlegen
 
@@ -93,4 +93,4 @@ Aspose.Words für .NET ist für .NET-Anwendungen konzipiert, Sie können es aber
 
 ### Wo finde ich ausführlichere Dokumentation für Aspose.Words für .NET?
 
- Detaillierte Dokumentation ist verfügbar[Hier](https://reference.aspose.com/words/net/).
+Detaillierte Dokumentation ist verfügbar[Hier](https://reference.aspose.com/words/net/).

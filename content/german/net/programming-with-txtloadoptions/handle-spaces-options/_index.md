@@ -21,7 +21,7 @@ Bevor wir beginnen, stellen Sie sicher, dass Sie Folgendes haben:
 
 ## Namespaces importieren
 
-Um mit Aspose.Words in Ihrem .NET-Projekt zu arbeiten, müssen Sie zunächst die erforderlichen Namespaces importieren. Fügen Sie oben in Ihrer C#-Datei die folgenden using-Direktiven hinzu:
+Um mit Aspose.Words in Ihrem .NET-Projekt zu arbeiten, müssen Sie zunächst die erforderlichen Namespaces importieren. Fügen Sie am Anfang Ihrer C#-Datei die folgenden using-Direktiven hinzu:
 
 ```csharp
 using Aspose.Words;

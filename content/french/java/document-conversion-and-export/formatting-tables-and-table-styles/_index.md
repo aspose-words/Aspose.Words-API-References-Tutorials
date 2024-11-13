@@ -1,287 +1,188 @@
 ---
-title: Formatage des tableaux et des styles de tableau dans Aspose.Words pour Java
-linktitle: Formatage des tableaux et des styles de tableaux
+title: Formatage des tableaux et styles de tableau
+linktitle: Formatage des tableaux et styles de tableau
 second_title: API de traitement de documents Java Aspose.Words
-description: Découvrez comment formater des tableaux et appliquer des styles de tableau dans Aspose.Words pour Java. Explorez des guides étape par étape avec le code source pour un formatage efficace des tableaux. Améliorez la mise en page de votre document avec Aspose.Words.
+description: Découvrez comment formater des tableaux et appliquer des styles à l'aide d'Aspose.Words pour Java. Ce guide étape par étape couvre la définition des bordures, l'ombrage des cellules et l'application de styles de tableau.
 type: docs
 weight: 17
 url: /fr/java/document-conversion-and-export/formatting-tables-and-table-styles/
 ---
 
-## Introduction au formatage des tableaux et des styles de tableaux dans Aspose.Words pour Java
+## Introduction
 
-Les tableaux jouent un rôle crucial dans la structuration et l’organisation des informations dans les documents. Aspose.Words for Java fournit des fonctionnalités puissantes pour formater les tableaux et appliquer des styles de tableau afin d'améliorer l'attrait visuel de vos documents. Dans ce guide étape par étape, nous explorerons divers aspects du formatage des tableaux et de l'application de styles de tableau à l'aide d'Aspose.Words pour Java.
+En matière de mise en forme de documents, les tableaux jouent un rôle crucial dans l'organisation et la présentation claire des données. Si vous travaillez avec Java et Aspose.Words, vous disposez d'outils puissants pour créer et mettre en forme des tableaux dans vos documents. Que vous conceviez un tableau simple ou que vous appliquiez des styles avancés, Aspose.Words pour Java propose une gamme de fonctionnalités pour vous aider à obtenir des résultats professionnels.
 
-## Conditions préalables
+Dans ce guide, nous vous expliquerons le processus de mise en forme des tableaux et d'application des styles de tableau à l'aide d'Aspose.Words pour Java. Vous apprendrez à définir les bordures des tableaux, à appliquer l'ombrage des cellules et à utiliser les styles de tableau pour améliorer l'apparence de vos documents. À la fin, vous aurez les compétences nécessaires pour créer des tableaux bien formatés qui mettent en valeur vos données.
 
-Avant d'entrer dans les détails, assurez-vous que la bibliothèque Aspose.Words for Java est intégrée à votre projet. Vous pouvez le télécharger sur le site Aspose :[Télécharger Aspose.Words pour Java](https://releases.aspose.com/words/java/).
+## Prérequis
 
-## Obtenir la distance entre le tableau et le texte environnant
+Avant de commencer, vous devez mettre en place quelques éléments :
 
-Pour commencer, explorons comment récupérer la distance entre un tableau et le texte environnant dans un document.
+1. Kit de développement Java (JDK) : assurez-vous que JDK 8 ou version ultérieure est installé. Aspose.Words for Java nécessite un JDK compatible pour fonctionner correctement.
+2. Environnement de développement intégré (IDE) : un IDE tel qu'IntelliJ IDEA ou Eclipse vous aidera à gérer vos projets Java et à rationaliser votre processus de développement.
+3.  Bibliothèque Aspose.Words pour Java : téléchargez la dernière version d'Aspose.Words pour Java[ici](https://releases.aspose.com/words/java/) et l'inclure dans votre projet.
+4. Exemple de code : nous utiliserons quelques exemples d'extraits de code, alors assurez-vous d'avoir une compréhension de base de la programmation Java et de la manière d'intégrer des bibliothèques dans votre projet.
 
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-System.out.println("Distance Top: " + table.getDistanceTop());
-System.out.println("Distance Bottom: " + table.getDistanceBottom());
-System.out.println("Distance Right: " + table.getDistanceRight());
-System.out.println("Distance Left: " + table.getDistanceLeft());
-```
+## Paquets d'importation
 
-## Appliquer une bordure de contour à un tableau
-
-Vous pouvez aligner un tableau au centre de la page, effacer les bordures existantes et définir une bordure de contour personnalisée avec ce code :
+Pour travailler avec Aspose.Words pour Java, vous devez importer les packages appropriés dans votre projet. Ces packages fournissent les classes et les méthodes nécessaires à la manipulation et au formatage des documents.
 
 ```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-table.setAlignment(TableAlignment.CENTER);
-table.clearBorders();
-table.setBorder(BorderType.LEFT, LineStyle.SINGLE, 1.5, Color.GREEN, true);
-table.setBorder(BorderType.RIGHT, LineStyle.SINGLE, 1.5, Color.GREEN, true);
-table.setBorder(BorderType.TOP, LineStyle.SINGLE, 1.5, Color.GREEN, true);
-table.setBorder(BorderType.BOTTOM, LineStyle.SINGLE, 1.5, Color.GREEN, true);
-table.setShading(TextureIndex.TEXTURE_SOLID, Color.lightGray, new Color(0, true));
+import com.aspose.words.*;
 ```
 
-## Construire un tableau avec des bordures
+Cette instruction d'importation vous donne accès à toutes les classes essentielles requises pour créer et formater des tableaux dans vos documents.
 
-Cet extrait de code montre comment créer un tableau et définir des bordures pour le tableau et ses cellules :
+## Étape 1 : Formatage des tableaux
 
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-table.clearBorders();
-table.setBorders(LineStyle.SINGLE, 1.5, Color.GREEN);
-```
+La mise en forme des tableaux dans Aspose.Words pour Java implique la définition des bordures, l'ombrage des cellules et l'application de diverses options de mise en forme. Voici comment procéder :
 
-## Modifier le formatage des lignes
-
-Découvrez comment modifier le formatage d'une ligne spécifique dans un tableau :
-
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-Row firstRow = table.getFirstRow();
-firstRow.getRowFormat().getBorders().setLineStyle(LineStyle.NONE);
-firstRow.getRowFormat().setHeightRule(HeightRule.AUTO);
-firstRow.getRowFormat().setAllowBreakAcrossPages(true);
-```
-
-## Appliquer le formatage des lignes
-
-Cet exemple montre comment appliquer une mise en forme à une ligne entière d'un tableau :
+### Charger le document
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+```
+
+### Créer et formater le tableau
+
+```java
 Table table = builder.startTable();
 builder.insertCell();
-RowFormat rowFormat = builder.getRowFormat();
-rowFormat.setHeight(100.0);
-rowFormat.setHeightRule(HeightRule.EXACTLY);
-table.setLeftPadding(30.0);
-table.setRightPadding(30.0);
-table.setTopPadding(30.0);
-table.setBottomPadding(30.0);
-builder.writeln("I'm a wonderfully formatted row.");
-```
 
-## Définir le remplissage des cellules
-
-Découvrez comment définir le remplissage de cellules individuelles dans un tableau :
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.startTable();
-builder.insertCell();
-builder.getCellFormat().setPaddings(30.0, 50.0, 30.0, 50.0);
-builder.writeln("I'm a wonderfully formatted cell.");
-```
-
-## Modifier le formatage des cellules
-
-Découvrez comment modifier la mise en forme d'une cellule spécifique au sein d'un tableau :
-
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-Cell firstCell = table.getFirstRow().getFirstCell();
-firstCell.getCellFormat().setWidth(30.0);
-firstCell.getCellFormat().setOrientation(TextOrientation.DOWNWARD);
-firstCell.getCellFormat().getShading().setForegroundPatternColor(Color.GREEN);
-```
-
-## Formater le tableau et la cellule avec des bordures différentes
-
-Découvrez comment définir différentes bordures pour des cellules individuelles dans un tableau :
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-Table table = builder.startTable();
-// Définir les bordures du tableau
+// Définissez les bordures de l’ensemble du tableau.
 table.setBorders(LineStyle.SINGLE, 2.0, Color.BLACK);
-// Définir l'ombrage des cellules pour des cellules individuelles
+        
+// Définissez l'ombrage de cellule pour cette cellule.
 builder.getCellFormat().getShading().setBackgroundPatternColor(Color.RED);
-// Ajouter du contenu aux cellules
 builder.writeln("Cell #1");
+
 builder.insertCell();
+        
+// Spécifiez un ombrage de cellule différent pour la deuxième cellule.
 builder.getCellFormat().getShading().setBackgroundPatternColor(Color.GREEN);
 builder.writeln("Cell #2");
-// Effacer le formatage des cellules pour la ligne suivante
+
+builder.endRow();
+```
+
+### Personnaliser les bordures des cellules
+
+```java
+// Effacer la mise en forme des cellules des opérations précédentes.
 builder.getCellFormat().clearFormatting();
-// Créez des bordures plus grandes pour la première cellule de cette ligne
+
+builder.insertCell();
+
+//Créez des bordures plus grandes pour la première cellule de cette ligne.
 builder.getCellFormat().getBorders().getLeft().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getRight().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getTop().setLineWidth(4.0);
 builder.getCellFormat().getBorders().getBottom().setLineWidth(4.0);
 builder.writeln("Cell #3");
+
 builder.insertCell();
 builder.getCellFormat().clearFormatting();
 builder.writeln("Cell #4");
+        
+doc.save("FormatTableAndCellWithDifferentBorders.docx");
 ```
 
-## Définir le titre et la description du tableau
+### Explication
 
-Ajoutez un titre et une description à votre tableau :
+Dans cet exemple :
+- Définir les bordures : nous définissons les bordures de l’ensemble du tableau sur un style de ligne unique avec une épaisseur de 2,0 points.
+- Ombrage des cellules : la première cellule est ombrée en rouge et la deuxième en vert. Cela permet de différencier visuellement les cellules.
+- Bordures de cellule : pour la troisième cellule, nous créons des bordures plus épaisses pour la mettre en valeur différemment des autres.
 
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-table.setTitle("Test title");
-table.setDescription("Test description");
-```
+## Étape 2 : Application des styles de tableau
 
-## Étape 10 : Autoriser l'espacement des cellules
+Les styles de tableau dans Aspose.Words pour Java vous permettent d'appliquer des options de formatage prédéfinies aux tableaux, ce qui facilite l'obtention d'un aspect cohérent. Voici comment appliquer un style à votre tableau :
 
-Autoriser l'espacement des cellules et définir sa valeur pour un tableau :
-
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-table.setAllowCellSpacing(true);
-table.setCellSpacing(2.0);
-```
-
-## Étape 11 : Construire une table avec style
-
-Créez un tableau avec un style prédéfini :
+### Créer le document et le tableau
 
 ```java
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
+
 Table table = builder.startTable();
+        
+// Nous devons d’abord insérer au moins une ligne avant de définir un formatage de tableau.
+builder.insertCell();
+```
+
+### Appliquer le style du tableau
+
+```java
+// Définissez le style du tableau en fonction d’un identifiant de style unique.
 table.setStyleIdentifier(StyleIdentifier.MEDIUM_SHADING_1_ACCENT_1);
+        
+// Appliquer les fonctionnalités qui doivent être formatées par le style.
 table.setStyleOptions(TableStyleOptions.FIRST_COLUMN | TableStyleOptions.ROW_BANDS | TableStyleOptions.FIRST_ROW);
+table.autoFit(AutoFitBehavior.AUTO_FIT_TO_CONTENTS);
+```
+
+### Ajouter des données de tableau
+
+```java
 builder.writeln("Item");
 builder.getCellFormat().setRightPadding(40.0);
 builder.insertCell();
 builder.writeln("Quantity (kg)");
-```
+builder.endRow();
 
-## Étape 12 : Développez le formatage des cellules et des lignes à partir du style
-
-Découvrez comment développer les styles de tableau pour appliquer une mise en forme aux cellules et aux lignes :
-
-```java
-Document doc = new Document("Your Directory Path" + "Tables.docx");
-Table table = (Table) doc.getChild(NodeType.TABLE, 0, true);
-Cell firstCell = table.getFirstRow().getFirstCell();
-Color cellShadingBefore = firstCell.getCellFormat().getShading().getBackgroundPatternColor();
-doc.expandTableStylesToDirectFormatting();
-Color cellShadingAfter = firstCell.getCellFormat().getShading().getBackgroundPatternColor();
-```
-
-## Étape 13 : Créer un style de tableau
-
-Créez un style de tableau personnalisé avec une mise en forme spécifique :
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-Table table = builder.startTable();
-table.setStyleIdentifier(StyleIdentifier.MEDIUM_SHADING_1_ACCENT_1);
-table.setStyleOptions(TableStyleOptions.FIRST_COLUMN | TableStyleOptions.ROW_BANDS | TableStyleOptions.FIRST_ROW);
-builder.writeln("Item");
-builder.getCellFormat().setRightPadding(40.0);
 builder.insertCell();
-builder.writeln("Quantity (kg)");
-```
-
-## Étape 14 : Définir la mise en forme conditionnelle
-
-Appliquez une mise en forme conditionnelle aux lignes d'un tableau :
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-Table table = builder.startTable();
-TableStyle tableStyle = (TableStyle) doc.getStyles().add(StyleType.TABLE, "MyTableStyle1");
-tableStyle.getConditionalStyles().getFirstRow().getShading().setBackgroundPatternColor(Color.yellow);
-table.setStyle(tableStyle);
-```
-
-## Étape 15 : Définir le formatage de TableCell
-
-Définissez une mise en forme spécifique pour les cellules individuelles :
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-builder.startTable();
+builder.writeln("Apples");
 builder.insertCell();
-CellFormat cellFormat = builder.getCellFormat();
-cellFormat.setWidth(250.0);
-cellFormat.setLeftPadding(30.0);
-cellFormat.setRightPadding(30.0);
-cellFormat.setTopPadding(30.0);
-cellFormat.setBottomPadding(30.0);
-builder.writeln("I'm a wonderfully formatted cell.");
+builder.writeln("20");
+builder.endRow();
+
+builder.insertCell();
+builder.writeln("Bananas");
+builder.insertCell();
+builder.writeln("40");
+builder.endRow();
+
+builder.insertCell();
+builder.writeln("Carrots");
+builder.insertCell();
+builder.writeln("50");
+builder.endRow();
+
+doc.save("BuildTableWithStyle.docx");
 ```
 
-## Étape 16 : Définir le formatage de TableRow
+### Explication
 
-Appliquez une mise en forme à des lignes entières d'un tableau :
-
-```java
-Document doc = new Document();
-DocumentBuilder builder = new DocumentBuilder(doc);
-Table table = builder.startTable();
-RowFormat rowFormat = builder.getRowFormat();
-rowFormat.setHeight(100.0);
-rowFormat.setHeightRule(HeightRule.EXACTLY);
-table.setLeftPadding(30.0);
-table.setRightPadding(30.0);
-table.setTopPadding(30.0);
-table.setBottomPadding(30.0);
-builder.writeln("I'm a wonderfully formatted row.");
-```
+Dans cet exemple :
+- Définir le style de la table : Nous appliquons un style prédéfini (`MEDIUM_SHADING_1_ACCENT_1`) au tableau. Ce style inclut la mise en forme des différentes parties du tableau.
+- Options de style : nous spécifions que la première colonne, les bandes de lignes et la première ligne doivent être formatées selon les options de style.
+-  AutoFit : nous utilisons`AUTO_FIT_TO_CONTENTS` pour garantir que le tableau ajuste sa taille en fonction du contenu.
 
 ## Conclusion
 
-Aspose.Words for Java vous permet de formater des tableaux et d'appliquer des styles de tableau avec précision. De la modification du formatage de cellules individuelles à la création de styles de tableau personnalisés, vous disposez des outils nécessaires pour rendre vos documents visuellement attrayants et organisés.
+Et voilà ! Vous avez réussi à formater des tableaux et à appliquer des styles à l'aide d'Aspose.Words pour Java. Grâce à ces techniques, vous pouvez créer des tableaux qui sont non seulement fonctionnels mais aussi visuellement attrayants. Un formatage efficace des tableaux peut grandement améliorer la lisibilité et l'aspect professionnel de vos documents.
+
+Aspose.Words pour Java est un outil robuste qui offre de nombreuses fonctionnalités pour la manipulation de documents. En maîtrisant le formatage et les styles de tableaux, vous vous rapprochez de la pleine puissance de cette bibliothèque.
 
 ## FAQ
 
-### Comment télécharger Aspose.Words pour Java ?
+### 1. Puis-je utiliser des styles de tableau personnalisés non inclus dans les options par défaut ?
 
- Vous pouvez télécharger Aspose.Words pour Java à partir du site Web Aspose :[Télécharger Aspose.Words pour Java](https://releases.aspose.com/words/java/).
+Oui, vous pouvez définir et appliquer des styles personnalisés à vos tableaux à l'aide d'Aspose.Words pour Java. Vérifiez le[documentation](https://reference.aspose.com/words/java/) pour plus de détails sur la création de styles personnalisés.
 
-### Puis-je appliquer des bordures différentes à des cellules individuelles dans un tableau ?
+### 2. Comment puis-je appliquer une mise en forme conditionnelle aux tableaux ?
 
-Oui, vous pouvez définir différentes bordures pour les cellules individuelles d'un tableau à l'aide d'Aspose.Words for Java, comme démontré dans ce guide.
+Aspose.Words pour Java vous permet d'ajuster par programmation la mise en forme des tableaux en fonction des conditions. Cela peut être fait en vérifiant des critères spécifiques dans votre code et en appliquant la mise en forme en conséquence.
 
-### Quel est le but de définir un titre et une description de tableau ?
+### 3. Puis-je formater des cellules fusionnées dans un tableau ?
 
-La définition d'un titre et d'une description de tableau améliore l'accessibilité et l'organisation de votre document, permettant ainsi aux lecteurs et aux technologies d'assistance de comprendre plus facilement le contenu.
+Oui, vous pouvez formater les cellules fusionnées comme des cellules normales. Veillez à appliquer la mise en forme après la fusion des cellules pour voir les modifications appliquées.
 
-### Comment puis-je appliquer une mise en forme conditionnelle à des lignes spécifiques d’un tableau ?
+### 4. Est-il possible d'ajuster la disposition du tableau de manière dynamique ?
 
-Vous pouvez appliquer une mise en forme conditionnelle à des lignes spécifiques d'un tableau en définissant des styles de tableau personnalisés avec des règles de mise en forme conditionnelle, comme indiqué dans ce guide.
+Oui, vous pouvez ajuster la disposition du tableau de manière dynamique en modifiant la taille des cellules, la largeur du tableau et d'autres propriétés en fonction du contenu ou de la saisie de l'utilisateur.
 
-### Où puis-je trouver plus de documentation et de ressources pour Aspose.Words pour Java ?
+### 5. Où puis-je obtenir plus d’informations sur le formatage des tableaux ?
 
- Pour une documentation complète et des ressources supplémentaires, veuillez consulter la documentation Aspose.Words pour Java :[Documentation Aspose.Words pour Java](https://reference.aspose.com/words/java/).
+ Pour des exemples et des options plus détaillés, visitez le[Documentation de l'API Aspose.Words](https://reference.aspose.com/words/java/).

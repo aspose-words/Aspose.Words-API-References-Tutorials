@@ -60,7 +60,7 @@ fontSettings.SetFontsFolder(@"C:\MyFonts\", false);
 
 ## Schritt 4: Schrifteinstellungen auf das Dokument anwenden
 
-Nachdem wir unsere Schrifteinstellungen konfiguriert haben, wenden wir diese nun auf unser Dokument an. Dieser Schritt ist entscheidend, um sicherzustellen, dass unser Dokument die angegebenen Schriftarten verwendet.
+Nachdem wir unsere Schriftarteinstellungen konfiguriert haben, wenden wir diese nun auf unser Dokument an. Dieser Schritt ist entscheidend, um sicherzustellen, dass unser Dokument die angegebenen Schriftarten verwendet.
 
 ```csharp
 // Festlegen der Schrifteinstellungen
@@ -77,18 +77,18 @@ doc.Save(dataDir + "WorkingWithFonts.SetTrueTypeFontsFolder.pdf");
 
 ## Abschluss
 
-Und da haben Sie es! Sie haben mit Aspose.Words für .NET erfolgreich einen True Type Fonts-Ordner für Ihre Word-Dokumente eingerichtet. Dadurch wird sichergestellt, dass Ihre Dokumente auf allen Plattformen einheitlich und professionell aussehen. Die Schriftartenverwaltung ist ein entscheidender Aspekt der Dokumenterstellung und mit Aspose.Words ist sie unglaublich unkompliziert.
+Und da haben Sie es! Sie haben erfolgreich einen True Type Fonts-Ordner für Ihre Word-Dokumente mit Aspose.Words für .NET eingerichtet. Dadurch wird sichergestellt, dass Ihre Dokumente auf allen Plattformen einheitlich und professionell aussehen. Die Schriftartenverwaltung ist ein entscheidender Aspekt der Dokumenterstellung und mit Aspose.Words ist sie unglaublich unkompliziert.
 
 ## Häufig gestellte Fragen
 
 ### Kann ich mehrere Schriftartenordner verwenden?
- Ja, Sie können mehrere Schriftartenordner verwenden, indem Sie sie kombinieren`FontSettings.GetFontSources`Und`FontSettings.SetFontSources`.
+ Ja, Sie können mehrere Schriftartenordner verwenden, indem Sie sie kombinieren`FontSettings.GetFontSources` Und`FontSettings.SetFontSources`.
 
 ### Was passiert, wenn der angegebene Schriftartenordner nicht existiert?
 Wenn der angegebene Schriftartenordner nicht vorhanden ist, kann Aspose.Words die Schriftarten nicht finden und stattdessen werden die Standardsystemschriftarten verwendet.
 
 ### Kann ich zu den Standardschrifteinstellungen zurückkehren?
- Ja, Sie können die Standardschrifteinstellungen wiederherstellen, indem Sie die`FontSettings` Beispiel.
+ Ja, Sie können die Standardschriftarteinstellungen wiederherstellen, indem Sie die`FontSettings` Beispiel.
 
 ### Ist es möglich, Schriftarten in das Dokument einzubetten?
 Ja, Aspose.Words ermöglicht Ihnen das Einbetten von Schriftarten in das Dokument, um die Konsistenz auf verschiedenen Geräten sicherzustellen.

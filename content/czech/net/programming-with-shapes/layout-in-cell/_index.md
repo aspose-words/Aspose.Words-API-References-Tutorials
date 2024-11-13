@@ -140,7 +140,7 @@ A tady to máte! Úspěšně jste vytvořili dokument aplikace Word s přizpůso
 ### Je možné pro vodoznak použít místo textu obrázek?
  Absolutně! Můžete vytvořit a`Shape` s typem`ShapeType.Image` a nastavte jeho obrázek pomocí`ImageData.SetImage` metoda.
 
-### Mohu vytvářet tabulky s různou výškou řádků?
+### Mohu vytvořit tabulky s různou výškou řádků?
 Ano, můžete nastavit různé výšky pro každý řádek změnou`RowFormat.Height` vlastnost před vložením buněk do tohoto řádku.
 
 ### Jak odstraním vodoznak z dokumentu?

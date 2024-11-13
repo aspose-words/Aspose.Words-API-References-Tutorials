@@ -10,7 +10,7 @@ url: /cs/java/document-conversion-and-export/generating-custom-barcode-labels/
 
 ## Úvod do generování vlastních štítků s čárovým kódem v Aspose.Words pro Javu
 
-tomto komplexním průvodci se ponoříme do procesu generování vlastních štítků s čárovými kódy pomocí Aspose.Words pro Java. Aspose.Words for Java je výkonné API, které umožňuje vývojářům programově manipulovat s dokumenty Wordu. Jednou z jeho pozoruhodných vlastností je schopnost pracovat se štítky s čárovými kódy, což z něj činí cenný nástroj pro podniky a organizace, které vyžadují přizpůsobená řešení čárových kódů.
+V tomto komplexním průvodci se ponoříme do procesu generování vlastních štítků s čárovými kódy pomocí Aspose.Words pro Java. Aspose.Words for Java je výkonné API, které umožňuje vývojářům programově manipulovat s dokumenty Wordu. Jednou z jeho pozoruhodných vlastností je schopnost pracovat se štítky s čárovými kódy, což z něj činí cenný nástroj pro podniky a organizace, které vyžadují přizpůsobená řešení čárových kódů.
 
 ## Předpoklady
 
@@ -81,7 +81,7 @@ private static float convertScalingFactor(String scalingFactor) throws Exception
 
 ## Implementace metody GetBarCodeImage().
 
- V tomto kroku implementujeme`getBarcodeImage` způsob, který generuje obrázek čárového kódu na základě poskytnutých parametrů. Poradíme si s různými typy čárových kódů, nastavíme barvy, upravíme rozměry a další. Zde je kód pro tuto metodu:
+ V tomto kroku implementujeme`getBarcodeImage`způsob, který generuje obrázek čárového kódu na základě poskytnutých parametrů. Poradíme si s různými typy čárových kódů, nastavíme barvy, upravíme rozměry a další. Zde je kód pro tuto metodu:
 
 ```java
 /// <souhrn>
@@ -121,7 +121,7 @@ public BufferedImage getBarcodeImage(BarcodeParameters parameters) throws Except
 		generator.getParameters().setAutoSizeMode(AutoSizeMode.NONE);
 	}
 	
-	//Přizpůsobte umístění textu kódu
+	// Přizpůsobte umístění textu kódu
 	generator.getParameters().getBarcode().getCodeTextParameters().setLocation(CodeLocation.NONE);
 	if (parameters.getDisplayText())
 		generator.getParameters().getBarcode().getCodeTextParameters().setLocation(CodeLocation.BELOW);
@@ -160,7 +160,7 @@ public BufferedImage getBarcodeImage(BarcodeParameters parameters) throws Except
 
 ## Implementace metody GetOldBarcodeImage().
 
- V tomto kroku implementujeme`getOldBarcodeImage` metoda, která generuje obrázky čárových kódů pro staromódní čárové kódy. Zde se budeme zabývat konkrétním typem čárového kódu, jako je POSTNET. Zde je kód pro tuto metodu:
+ V tomto kroku implementujeme`getOldBarcodeImage`metoda, která generuje obrázky čárových kódů pro staromódní čárové kódy. Zde se budeme zabývat konkrétním typem čárového kódu, jako je POSTNET. Zde je kód pro tuto metodu:
 
 ```java
 /// <souhrn>

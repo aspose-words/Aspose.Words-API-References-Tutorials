@@ -33,7 +33,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## Styl vašeho dokumentu
 
-V této části probereme, jak aplikovat styly na váš dokument Markdown. Pokryjeme nadpisy, důraz, seznamy a další.
+této části probereme, jak aplikovat styly na váš dokument Markdown. Pokryjeme nadpisy, důraz, seznamy a další.
 
 ### Nadpisy
 
@@ -115,10 +115,10 @@ doc.save(outPath + "WorkingWithMarkdown.CreateMarkdownDocument.md");
 string outPath = "Your Output Directory";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
-//Určete styl "Nadpis 1" pro odstavec.
+// Určete styl "Nadpis 1" pro odstavec.
 builder.getParagraphFormat().setStyleName("Heading 1");
 builder.writeln("Heading 1");
-// Obnovte styly z předchozího odstavce, aby se styly mezi odstavci nekombinovaly.
+//Obnovte styly z předchozího odstavce, aby se styly mezi odstavci nekombinovaly.
 builder.getParagraphFormat().setStyleName("Normal");
 // Vložte vodorovné pravítko.
 builder.insertHorizontalRule();
@@ -167,7 +167,7 @@ doc.save(outPath + "WorkingWithMarkdown.CreateMarkdownDocument.md");
 
 ## Závěr
 
-tomto tutoriálu jsme probrali základy používání Markdown v Aspose.Words for Java. Naučili jste se, jak nastavit prostředí, použít styly, přidat tabulky a uložit dokument Markdown. S těmito znalostmi můžete začít používat Aspose.Words for Java k efektivnímu generování dokumentů Markdown.
+V tomto tutoriálu jsme probrali základy používání Markdown v Aspose.Words for Java. Naučili jste se, jak nastavit prostředí, použít styly, přidat tabulky a uložit dokument Markdown. S těmito znalostmi můžete začít používat Aspose.Words for Java k efektivnímu generování dokumentů Markdown.
 
 ### Nejčastější dotazy
 

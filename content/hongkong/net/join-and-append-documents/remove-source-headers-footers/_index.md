@@ -86,7 +86,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.RemoveSourceHeadersFooters.docx");
 ## 常見問題解答
 
 ### 我可以只刪除特定部分的頁首和頁尾嗎？
-是的，您可以遍歷各個部分，並根據需要選擇性地清除頁首和頁尾。
+是的，您可以遍歷各個部分並根據需要選擇性地清除頁首和頁尾。
 
 ### Aspose.Words for .NET 是否支援刪除多個文件中的頁首和頁尾？
 當然，您可以使用 Aspose.Words for .NET 跨多個文件操作頁首和頁尾。

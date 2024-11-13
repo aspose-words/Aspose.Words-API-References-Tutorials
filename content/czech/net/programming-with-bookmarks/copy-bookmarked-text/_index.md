@@ -112,7 +112,7 @@ A je to! Úspěšně jste zkopírovali text označený záložkou z jednoho doku
 Ano, můžete iterovat přes více záložek a použít stejnou metodu ke zkopírování každé z nich.
 
 ### Co se stane, když záložka nebude nalezena?
- The`Range.Bookmarks` majetek se vrátí`null`, takže se ujistěte, že tento případ řešíte, abyste se vyhnuli výjimkám.
+The`Range.Bookmarks` majetek se vrátí`null`, takže se ujistěte, že tento případ řešíte, abyste se vyhnuli výjimkám.
 
 ### Mohu zachovat formátování původní záložky?
  Absolutně! Použití`ImportFormatMode.KeepSourceFormatting` zajišťuje zachování původního formátování.

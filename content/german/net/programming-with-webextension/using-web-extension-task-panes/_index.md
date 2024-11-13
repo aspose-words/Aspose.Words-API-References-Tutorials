@@ -9,7 +9,7 @@ url: /de/net/programming-with-webextension/using-web-extension-task-panes/
 ---
 ## Einführung
 
-Willkommen zu diesem ausführlichen Tutorial zur Verwendung von Web Extension Task Panes in einem Word-Dokument mit Aspose.Words für .NET. Wenn Sie Ihre Word-Dokumente schon immer mit interaktiven Aufgabenbereichen erweitern wollten, sind Sie hier richtig. Diese Anleitung führt Sie durch jeden Schritt, um dies nahtlos zu erreichen.
+Willkommen zu diesem ausführlichen Tutorial zur Verwendung von Web Extension Task Panes in einem Word-Dokument mit Aspose.Words für .NET. Wenn Sie Ihre Word-Dokumente schon immer mit interaktiven Aufgabenbereichen erweitern wollten, sind Sie hier richtig. Diese Anleitung führt Sie Schritt für Schritt durch dies.
 
 ## Voraussetzungen
 

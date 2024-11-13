@@ -50,7 +50,7 @@ Document srcDoc = new Document(dataDir + "Document source.docx");
 Document dstDoc = new Document(dataDir + "Northwind traders.docx");
 ```
 
-在這裡，我們使用的是`Document`Aspose.Words 庫中的類別來載入我們的文件。確保檔案名稱與目錄中的檔案名稱相符。
+在這裡，我們使用的是`Document` Aspose.Words 庫中的類別來載入我們的文件。確保檔案名稱與目錄中的檔案名稱相符。
 
 ## 第 3 步：建立 DocumentBuilder 對象
 
@@ -104,7 +104,7 @@ builder.Document.Save(dataDir + "JoinAndAppendDocuments.InsertDocumentWithBuilde
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 成功將一個文件插入到另一個文件中。這種方法不僅高效，而且保留了兩個文件的格式，確保無縫合併。無論您正在處理一次性專案還是需要自動化文件處理，Aspose.Words for .NET 都能滿足您的需求。
+現在你就擁有了！您已使用 Aspose.Words for .NET 成功將一個文件插入到另一個文件中。這種方法不僅高效，而且保留了兩個文件的格式，確保無縫合併。無論您正在處理一次性專案還是需要自動化文件處理，Aspose.Words for .NET 都能滿足您的需求。
 
 ## 常見問題解答
 

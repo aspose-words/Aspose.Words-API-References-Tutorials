@@ -83,7 +83,7 @@ doc.Save(dataDir + "WorkingWithImageSaveOptions.GetTiffPageRange.tiff", saveOpti
 
 ## 結論
 
-現在你就得到它了！透過執行這些簡單的步驟，您已使用 Aspose.Words for .NET 成功將特定頁面範圍從 Word 文件轉換為 TIFF 檔案。這個強大的程式庫使操作和轉換文件變得輕而易舉，為您的專案提供了無限的可能性。因此，請嘗試一下，看看它如何增強您的工作流程！
+現在你就擁有了！透過執行這些簡單的步驟，您已使用 Aspose.Words for .NET 成功將特定頁面範圍從 Word 文件轉換為 TIFF 檔案。這個強大的程式庫使操作和轉換文件變得輕而易舉，為您的專案提供了無限的可能性。因此，請嘗試一下，看看它如何增強您的工作流程！
 
 ## 常見問題解答
 

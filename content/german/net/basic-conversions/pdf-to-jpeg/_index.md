@@ -13,7 +13,7 @@ Waren Sie schon einmal in einer Situation, in der Sie eine PDF-Datei in ein JPEG
 
 ## Voraussetzungen
 
-Bevor wir uns ins Detail stürzen, sollten wir sicherstellen, dass alles in Ordnung ist. Folgendes brauchen Sie:
+Bevor wir uns ins Detail stürzen, sollten wir sicherstellen, dass alles in Ordnung ist. Folgendes benötigen Sie:
 
 1. Aspose.Words für .NET: Stellen Sie sicher, dass Sie diese leistungsstarke Bibliothek installiert haben. Wenn nicht, können Sie sie herunterladen[Hier](https://releases.aspose.com/words/net/).
 2. .NET Framework: Stellen Sie sicher, dass die .NET-Umgebung auf Ihrem Computer eingerichtet ist.

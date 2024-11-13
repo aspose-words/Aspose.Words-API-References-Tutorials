@@ -60,7 +60,7 @@ Pole v dokumentech aplikace Word mohou být dynamická, což znamená, že nemus
 document.UpdateFields();
 ```
 
- The`UpdateFields` metoda iteruje všechna pole v dokumentu a aktualizuje je nejnovějšími daty. Tento krok je zásadní, pokud vaše pole závisí na dynamickém obsahu, jako jsou data nebo výpočty.
+The`UpdateFields` metoda iteruje všechna pole v dokumentu a aktualizuje je nejnovějšími daty. Tento krok je zásadní, pokud vaše pole závisí na dynamickém obsahu, jako jsou data nebo výpočty.
 
 ## Krok 3: Zobrazení výsledků pole
 
@@ -76,7 +76,7 @@ foreach (Field field in document.Range.Fields)
 }
 ```
 
- The`DisplayResult` vlastnictvím`Field` class vrátí formátovanou hodnotu pole. The`foreach` smyčka prochází všechna pole v dokumentu a vytiskne jejich výsledky.
+The`DisplayResult` vlastnictví`Field` class vrátí formátovanou hodnotu pole. The`foreach` smyčka prochází všechna pole v dokumentu a vytiskne jejich výsledky.
 
 ## Závěr
 
@@ -88,7 +88,7 @@ Aktualizace a zobrazení výsledků polí v dokumentech aplikace Word pomocí As
 Můžete aktualizovat různé typy polí, včetně polí data, vlastností dokumentu a polí vzorců.
 
 ### Musím dokument po aktualizaci polí uložit?  
- Ne, volám`UpdateFields` neuloží dokument automaticky. Použijte`Save` způsob uložení jakýchkoli změn.
+ Ne, volám`UpdateFields` neuloží dokument automaticky. Použijte`Save` způsob uložení změn.
 
 ### Mohu aktualizovat pole v konkrétní části dokumentu?  
  Ano, můžete použít`Document.Sections` pro přístup ke konkrétním sekcím a aktualizaci polí v nich.
@@ -97,4 +97,4 @@ Můžete aktualizovat různé typy polí, včetně polí data, vlastností dokum
 Pole vyžadující vstup uživatele (jako pole formuláře) bude nutné vyplnit ručně nebo pomocí dodatečného kódu.
 
 ### Je možné zobrazit výsledky polí v jiném formátu?  
- The`DisplayResult` vlastnost poskytuje formátovaný výstup. Pokud potřebujete jiný formát, zvažte další zpracování na základě vašich požadavků.
+The`DisplayResult` vlastnost poskytuje formátovaný výstup. Pokud potřebujete jiný formát, zvažte další zpracování na základě vašich požadavků.

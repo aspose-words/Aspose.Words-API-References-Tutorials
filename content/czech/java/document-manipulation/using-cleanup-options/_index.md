@@ -150,7 +150,7 @@ Možnosti čištění v Aspose.Words for Java jsou nastavení, která vám umož
 
 ###  Jaký je účel`REMOVE_UNUSED_REGIONS` cleanup option?
 
- The`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` Tato možnost se používá k odstranění oblastí v dokumentu, které nemají žádná odpovídající data během procesu hromadné korespondence. Pomáhá udržovat váš dokument uklizený tím, že se zbavuje nepoužívaných zástupných symbolů.
+The`MailMergeCleanupOptions.REMOVE_UNUSED_REGIONS` Tato možnost se používá k odstranění oblastí v dokumentu, které nemají žádná odpovídající data během procesu hromadné korespondence. Pomáhá udržovat váš dokument uklizený tím, že se zbavuje nepoužívaných zástupných symbolů.
 
 ### Mohu odstranit prázdné řádky tabulky z dokumentu pomocí Aspose.Words for Java?
 
@@ -166,7 +166,7 @@ Možnosti čištění v Aspose.Words for Java jsou nastavení, která vám umož
 
 ###  Jaký je rozdíl mezi`REMOVE_EMPTY_FIELDS` and `REMOVE_UNUSED_FIELDS` cleanup options?
 
- The`REMOVE_EMPTY_FIELDS` Odebere slučovací pole, která nemají žádná data nebo jsou během procesu hromadné korespondence prázdná. Na druhou stranu,`REMOVE_UNUSED_FIELDS`Odebere slučovací pole, která nejsou během slučování naplněna daty. Volba mezi nimi závisí na tom, zda chcete odebrat pole bez obsahu nebo ta, která se nepoužívají v konkrétní operaci sloučení.
+The`REMOVE_EMPTY_FIELDS` Odebere slučovací pole, která nemají žádná data nebo jsou během procesu hromadné korespondence prázdná. Na druhou stranu,`REMOVE_UNUSED_FIELDS`Odebere slučovací pole, která nejsou během slučování naplněna daty. Volba mezi nimi závisí na tom, zda chcete odebrat pole bez obsahu nebo ta, která se nepoužívají v konkrétní operaci sloučení.
 
 ### Jak mohu povolit odstranění odstavců s interpunkčními znaménky?
 

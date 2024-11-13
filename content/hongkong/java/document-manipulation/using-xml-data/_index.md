@@ -75,4 +75,4 @@ doc.save("Your Directory Path" + "MustacheSyntaxUsingDataSet.docx");
 
 ### Mustache 語法是什麼？
 
- Mustache 語法可讓您以更靈活的方式格式化郵件合併欄位。使用`doc.getMailMerge().setUseNonMergeFields(true)`啟用 Mustache 語法。
+ Mustache 語法可讓您以更靈活的方式設定郵件合併欄位的格式。使用`doc.getMailMerge().setUseNonMergeFields(true)`啟用 Mustache 語法。

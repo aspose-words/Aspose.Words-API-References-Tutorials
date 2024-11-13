@@ -45,7 +45,7 @@ using Aspose.Words.Tables;
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
- Ο`DocumentBuilder` Η class είναι ένα ευέλικτο εργαλείο που σας επιτρέπει να δημιουργήσετε και να τροποποιήσετε το έγγραφο.
+Ο`DocumentBuilder` Η class είναι ένα ευέλικτο εργαλείο που σας επιτρέπει να δημιουργήσετε και να τροποποιήσετε το έγγραφο.
 
 ## Βήμα 2: Εισαγάγετε υπερσύνδεσμο
 

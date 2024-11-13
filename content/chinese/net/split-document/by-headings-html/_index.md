@@ -9,7 +9,7 @@ url: /zh/net/split-document/by-headings-html/
 ---
 ## 介绍
 
-按标题拆分 Word 文档可能会改变管理大型文档或创建分段 HTML 输出的方式。Aspose.Words for .NET 提供了一种实现此目的的简单方法。在本教程中，我们将引导您完成整个过程，确保您掌握过程中的每一个细节。
+按标题拆分 Word 文档可能会改变管理大型文档或创建分段 HTML 输出的方式。Aspose.Words for .NET 提供了一种实现此目的的简单方法。在本教程中，我们将引导您完成整个过程，确保您掌握每个细节。
 
 ## 先决条件
 

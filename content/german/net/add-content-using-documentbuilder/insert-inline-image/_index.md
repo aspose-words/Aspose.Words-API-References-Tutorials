@@ -51,11 +51,11 @@ string imagePath = "PATH_TO_YOUR_IMAGE_FILE";
 builder.InsertImage(imagePath);
 ```
 
- Ersetzen`"PATH_TO_YOUR_IMAGE_FILE"` durch den tatsächlichen Pfad zu Ihrer Bilddatei. Bei dieser Methode wird das Bild nahtlos in das Dokument integriert.
+ Ersetzen`"PATH_TO_YOUR_IMAGE_FILE"` durch den tatsächlichen Pfad zu Ihrer Bilddatei. Diese Methode integriert das Bild nahtlos in das Dokument.
 
 ## Schritt 3: Speichern Sie das Dokument
 
- Speichern Sie das Dokument abschließend am gewünschten Ort mit dem`Save` Methode der`Document` Klasse.
+ Speichern Sie das Dokument abschließend am gewünschten Speicherort mit dem`Save` Methode der`Document` Klasse.
 
 ```csharp
 doc.Save(dataDir + "InsertInlineImage.docx");
@@ -79,7 +79,7 @@ Ja, Aspose.Words für .NET unterstützt das Einfügen von Bildern mit transparen
  Sie können die Größe eines Bildes ändern, indem Sie die Breiten- und Höheneigenschaften des`Shape` Objekt zurückgegeben von`builder.InsertImage`.
 
 ### Ist es möglich, mit Aspose.Words für .NET ein Inline-Bild an einer bestimmten Stelle im Dokument zu positionieren?
- Ja, Sie können die Position eines Inline-Bildes mithilfe der Cursorposition des Dokument-Generators festlegen, bevor Sie`builder.InsertImage`.
+ Ja, Sie können die Position eines Inline-Bildes über die Cursorposition des Dokument-Generators festlegen, bevor Sie`builder.InsertImage`.
 
 ### Kann ich mit Aspose.Words für .NET Bilder von URLs in ein Word-Dokument einbetten?
 Ja, Sie können mithilfe von .NET-Bibliotheken Bilder von URLs herunterladen und sie dann mit Aspose.Words für .NET in ein Word-Dokument einfügen.

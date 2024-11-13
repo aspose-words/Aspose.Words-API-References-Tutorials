@@ -81,7 +81,7 @@ doc.FirstSection.Body.AppendChild(para);
 ```
 
 在這一步中：
-- FieldToa fieldToa = (FieldToa) para.AppendField(FieldType.FieldTOA, false);：在段落中加入 TOA 欄位。
+- FieldToa fieldToa = (FieldToa) para.AppendField(FieldType.FieldTOA, false);：將 TOA 欄位新增至段落。
 - fieldToa.EntryCategory = "1";：過濾條目以僅包含那些標記為類別「1」的條目。
 
 ## 第 4 步：更新 TOA 字段
@@ -106,7 +106,7 @@ doc.Save(dataDir + "WorkingWithFields.InsertTOAFieldWithoutDocumentBuilder.docx"
 
 ## 結論
 
-現在你就得到它了！您已成功將 TOA 欄位新增至 Word 文檔，而無需使用文檔產生器。透過執行這些步驟，您可以有效地管理引文並在法律文件中建立全面的授權表。 Aspose.Words for .NET 讓這個過程變得順暢和高效，為您提供了輕鬆處理複雜文件任務的工具。
+現在你就擁有了！您已成功將 TOA 欄位新增至 Word 文檔，而無需使用文檔產生器。透過執行這些步驟，您可以有效地管理引文並在法律文件中建立全面的授權表。 Aspose.Words for .NET 讓這個過程變得順暢和高效，為您提供了輕鬆處理複雜文件任務的工具。
 
 ## 常見問題解答
 

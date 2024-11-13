@@ -1,6 +1,6 @@
 ---
-title: In horizontal verbundene Zellen konvertieren
-linktitle: In horizontal verbundene Zellen konvertieren
+title: In horizontal verbundene Zellen umwandeln
+linktitle: In horizontal verbundene Zellen umwandeln
 second_title: Aspose.Words Dokumentverarbeitungs-API
 description: Konvertieren Sie vertikal verbundene Zellen in horizontal verbundene Zellen in Word-Dokumenten mit Aspose.Words für .NET. Schritt-für-Schritt-Anleitung für ein nahtloses Tabellenlayout.
 type: docs
@@ -73,7 +73,7 @@ Aspose.Words für .NET ist in erster Linie für .NET-Sprachen wie C# konzipiert.
 ### Gibt es eine kostenlose Testversion für Aspose.Words für .NET?  
  Ja, Sie können ein[Kostenlose Testversion](https://releases.aspose.com/) von der Aspose-Website.
 
-### Wie kann ich Unterstützung erhalten, wenn ich auf Probleme stoße?  
+### Wie erhalte ich Unterstützung, wenn Probleme auftreten?  
  Besuchen Sie die[Aspose-Supportforum](https://forum.aspose.com/c/words/8) um Hilfe.
 
 ### Kann ich eine Lizenz aus einer Datei oder einem Stream anwenden?  

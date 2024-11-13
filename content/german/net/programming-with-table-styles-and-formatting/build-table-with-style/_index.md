@@ -9,14 +9,14 @@ url: /de/net/programming-with-table-styles-and-formatting/build-table-with-style
 ---
 ## Einführung
 
-Zum Erstellen stilvoller, professioneller Dokumente ist oft mehr als nur einfacher Text erforderlich. Tabellen sind eine fantastische Möglichkeit, Daten zu organisieren, aber sie ansprechend aussehen zu lassen, ist eine ganz andere Herausforderung. Hier kommt Aspose.Words für .NET ins Spiel! In diesem Tutorial erfahren Sie, wie Sie eine Tabelle mit Stil erstellen, damit Ihre Word-Dokumente elegant und professionell aussehen.
+Zum Erstellen stilvoller, professioneller Dokumente ist oft mehr als nur einfacher Text erforderlich. Tabellen sind eine fantastische Möglichkeit, Daten zu organisieren, aber sie ansprechend aussehen zu lassen, ist eine ganz andere Herausforderung. Hier kommt Aspose.Words für .NET ins Spiel! In diesem Tutorial erfahren Sie, wie Sie eine stilvolle Tabelle erstellen, die Ihren Word-Dokumenten ein elegantes und professionelles Aussehen verleiht.
 
 ## Voraussetzungen
 
 Bevor wir mit der Schritt-für-Schritt-Anleitung beginnen, stellen wir sicher, dass Sie alles haben, was Sie brauchen:
 
 1.  Aspose.Words für .NET: Falls noch nicht geschehen, laden Sie herunter und installieren Sie[Aspose.Words für .NET](https://releases.aspose.com/words/net/).
-2. Entwicklungsumgebung: Sie sollten eine Entwicklungsumgebung eingerichtet haben. Visual Studio ist für dieses Tutorial eine gute Option.
+2. Entwicklungsumgebung: Sie sollten eine Entwicklungsumgebung eingerichtet haben. Visual Studio ist eine gute Option für dieses Tutorial.
 3. Grundkenntnisse in C#: Wenn Sie mit der C#-Programmierung vertraut sind, können Sie den Anweisungen leichter folgen.
 
 ## Namespaces importieren
@@ -76,7 +76,7 @@ table.StyleOptions = TableStyleOptions.FirstColumn | TableStyleOptions.RowBands 
 
 ## Schritt 6: Tabelle an Inhalt anpassen
 
- Um sicherzustellen, dass unser Tisch ordentlich und aufgeräumt aussieht, können wir die`AutoFit` Methode, um die Tabelle an ihren Inhalt anzupassen.
+Um sicherzustellen, dass unser Tisch ordentlich und aufgeräumt aussieht, können wir die`AutoFit` Methode, um die Tabelle an ihren Inhalt anzupassen.
 
 ```csharp
 table.AutoFit(AutoFitBehavior.AutoFitToContents);

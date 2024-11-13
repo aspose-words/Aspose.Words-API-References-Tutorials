@@ -32,7 +32,7 @@ Lassen Sie uns den Vorgang nun in mehrere Schritte unterteilen, um sicherzustell
 
 ## Schritt 1: Richten Sie Ihr Projekt ein
 
-Zunächst müssen Sie ein neues Projekt erstellen oder ein vorhandenes verwenden. Öffnen Sie Ihre Entwicklungsumgebung und richten Sie ein Projekt ein.
+Zuerst müssen Sie ein neues Projekt erstellen oder ein vorhandenes verwenden. Öffnen Sie Ihre Entwicklungsumgebung und richten Sie ein Projekt ein.
 
 1. Erstellen Sie ein neues Projekt: Öffnen Sie Visual Studio und erstellen Sie eine neue C#-Konsolenanwendung.
 2.  Installieren Sie Aspose.Words: Verwenden Sie den NuGet Package Manager, um Aspose.Words zu installieren. Klicken Sie mit der rechten Maustaste auf Ihr Projekt, wählen Sie „NuGet-Pakete verwalten“ und suchen Sie nach`Aspose.Words`. Installieren Sie die neueste Version.

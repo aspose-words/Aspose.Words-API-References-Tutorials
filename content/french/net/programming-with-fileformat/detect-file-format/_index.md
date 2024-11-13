@@ -1,23 +1,23 @@
 ---
-title: Détecter le format de fichier de document
-linktitle: Détecter le format de fichier de document
+title: Détecter le format du fichier de document
+linktitle: Détecter le format du fichier de document
 second_title: API de traitement de documents Aspose.Words
-description: Apprenez à détecter les formats de fichiers de documents à l'aide d'Aspose.Words for .NET avec ce guide complet étape par étape.
+description: Découvrez comment détecter les formats de fichiers de documents à l'aide d'Aspose.Words pour .NET avec ce guide complet, étape par étape.
 type: docs
 weight: 10
 url: /fr/net/programming-with-fileformat/detect-file-format/
 ---
 ## Introduction
 
-Dans le monde numérique d’aujourd’hui, la gestion efficace des différents formats de documents est cruciale. Que vous manipuliez Word, PDF, HTML ou d'autres formats, être capable de détecter et de traiter correctement ces fichiers peut vous faire gagner beaucoup de temps et d'efforts. Dans ce didacticiel, nous verrons comment détecter les formats de fichiers de documents à l'aide d'Aspose.Words pour .NET. Ce guide vous guidera à travers tout ce que vous devez savoir, des prérequis à un guide détaillé étape par étape.
+Dans le monde numérique d'aujourd'hui, il est essentiel de gérer efficacement différents formats de documents. Que vous utilisiez des formats Word, PDF, HTML ou autres, la capacité à détecter et à traiter correctement ces fichiers peut vous faire gagner beaucoup de temps et d'efforts. Dans ce didacticiel, nous découvrirons comment détecter les formats de fichiers de documents à l'aide d'Aspose.Words pour .NET. Ce guide vous expliquera tout ce que vous devez savoir, des prérequis à un guide détaillé étape par étape.
 
-## Conditions préalables
+## Prérequis
 
 Avant de plonger dans le code, assurons-nous que vous disposez de tout ce dont vous avez besoin :
 
--  Aspose.Words pour .NET : vous pouvez le télécharger depuis[ici](https://releases.aspose.com/words/net/) . Assurez-vous d'avoir une licence valide. Sinon, vous pouvez obtenir un[permis temporaire](https://purchase.aspose.com/temporary-license/).
+-  Aspose.Words pour .NET : vous pouvez le télécharger à partir de[ici](https://releases.aspose.com/words/net/) . Assurez-vous d'avoir un permis valide. Sinon, vous pouvez obtenir un[permis temporaire](https://purchase.aspose.com/temporary-license/).
 - Visual Studio : toute version récente fonctionnera correctement.
-- .NET Framework : assurez-vous que la version correcte est installée.
+- .NET Framework : assurez-vous que la bonne version est installée.
 
 ## Importer des espaces de noms
 
@@ -33,14 +33,14 @@ using System.IO;
 using System.Linq;
 ```
 
-Décomposons l'exemple en plusieurs étapes pour le rendre plus facile à suivre.
+Décomposons l’exemple en plusieurs étapes pour le rendre plus facile à suivre.
 
-## Étape 1 : Configurer les répertoires
+## Étape 1 : Configurer les répertoires
 
-Tout d’abord, nous devons créer des répertoires dans lesquels les fichiers seront triés en fonction de leur format.
+Tout d’abord, nous devons configurer des répertoires dans lesquels les fichiers seront triés en fonction de leur format.
 
 ```csharp
-// Le chemin d'accès au répertoire des documents.
+// Le chemin vers le répertoire des documents.
 string dataDir = "YOUR DOCUMENT DIRECTORY";
 string supportedDir = dataDir + "Supported";
 string unknownDir = dataDir + "Unknown";
@@ -58,9 +58,9 @@ if (!Directory.Exists(pre97Dir))
     Directory.CreateDirectory(pre97Dir);
 ```
 
-## Étape 2 : Obtenez la liste des fichiers
+## Étape 2 : Obtenir la liste des fichiers
 
-Ensuite, nous obtiendrons une liste des fichiers du répertoire, à l'exclusion de tout document corrompu.
+Ensuite, nous obtiendrons une liste de fichiers du répertoire, à l’exclusion de tous les documents corrompus.
 
 ```csharp
 IEnumerable<string> fileList = Directory.GetFiles(dataDir).Where(name => !name.EndsWith("Corrupted document.docx"));
@@ -154,21 +154,21 @@ foreach (string fileName in fileList)
 
 ## Conclusion
 
-La détection des formats de fichiers de documents à l'aide d'Aspose.Words pour .NET est un processus simple. En configurant vos répertoires, en obtenant votre liste de fichiers et en utilisant Aspose.Words pour détecter les formats de fichiers, vous pouvez organiser et gérer efficacement vos documents. Cette approche permet non seulement de gagner du temps, mais garantit également que vous gérez correctement les différents formats de documents.
+La détection des formats de fichiers de documents à l'aide d'Aspose.Words pour .NET est un processus simple. En configurant vos répertoires, en obtenant votre liste de fichiers et en utilisant Aspose.Words pour détecter les formats de fichiers, vous pouvez organiser et gérer efficacement vos documents. Cette approche permet non seulement de gagner du temps, mais également de garantir que vous gérez correctement les différents formats de documents.
 
 ## FAQ
 
-### Qu’est-ce qu’Aspose.Words pour .NET ?
-Aspose.Words for .NET est une bibliothèque puissante permettant de travailler avec des documents Word par programmation. Il permet aux développeurs de créer, modifier et convertir des documents dans différents formats.
+### Qu'est-ce que Aspose.Words pour .NET ?
+Aspose.Words pour .NET est une bibliothèque puissante permettant de travailler avec des documents Word par programmation. Elle permet aux développeurs de créer, modifier et convertir des documents dans divers formats.
 
-### Aspose.Words peut-il détecter les documents cryptés ?
+### Aspose.Words peut-il détecter des documents cryptés ?
 Oui, Aspose.Words peut détecter si un document est crypté et vous pouvez gérer ces documents en conséquence.
 
-### Quels formats Aspose.Words peut-il détecter ?
-Aspose.Words peut détecter un large éventail de formats, notamment DOC, DOCX, RTF, HTML, MHTML, ODT et bien d'autres.
+### Quels formats Aspose.Words peut-il détecter ?
+Aspose.Words peut détecter une large gamme de formats, notamment DOC, DOCX, RTF, HTML, MHTML, ODT et bien d'autres.
 
-### Comment puis-je obtenir une licence temporaire pour Aspose.Words ?
- Vous pouvez obtenir une licence temporaire auprès du[Asposez l'achat](https://purchase.aspose.com/temporary-license/) page.
+### Comment puis-je obtenir une licence temporaire pour Aspose.Words ?
+ Vous pouvez obtenir une licence temporaire auprès du[Achat Aspose](https://purchase.aspose.com/temporary-license/) page.
 
-### Où puis-je trouver la documentation pour Aspose.Words ?
- La documentation pour Aspose.Words peut être trouvée[ici](https://reference.aspose.com/words/net/).
+### Où puis-je trouver la documentation d'Aspose.Words ?
+ La documentation d'Aspose.Words peut être trouvée[ici](https://reference.aspose.com/words/net/).

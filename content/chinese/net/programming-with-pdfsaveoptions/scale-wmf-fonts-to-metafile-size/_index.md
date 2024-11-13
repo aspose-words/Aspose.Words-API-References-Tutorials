@@ -15,7 +15,7 @@ url: /zh/net/programming-with-pdfsaveoptions/scale-wmf-fonts-to-metafile-size/
 
 在开始以下步骤之前，请确保您已准备好以下内容：
 
-1. Aspose.Words for .NET：请确保您已安装 Aspose.Words 库。如果没有，您可以[点击下载](https://releases.aspose.com/words/net/).
+1. Aspose.Words for .NET：确保已安装 Aspose.Words 库。如果没有，您可以[点击下载](https://releases.aspose.com/words/net/).
 2. 开发环境：本教程假设您已经建立了 .NET 开发环境（如 Visual Studio），您可以在其中编写和执行 C# 代码。
 3. 对 .NET 编程的基本了解：熟悉基本的 .NET 编程概念和 C# 语法将会有所帮助。
 4. 包含 WMF 图形的 Word 文档：您需要一个包含 WMF 图形的 Word 文档。您可以使用自己的文档或创建一个用于测试的文档。
@@ -85,7 +85,7 @@ doc.Save(dataDir + "WorkingWithPdfSaveOptions.ScaleWmfFontsToMetafileSize.pdf", 
 
 ## 结论
 
-通过将 WMF 字体缩放到图元文件大小，您可以显著减小从 Word 文档生成的 PDF 文件的大小。此技术有助于优化文档存储和分发，而不会影响视觉内容的质量。遵循上述步骤可确保您的 PDF 文件更易于管理且尺寸更紧凑。
+通过将 WMF 字体缩放到图元文件大小，您可以显著减小从 Word 文档生成的 PDF 文件的大小。此技术有助于优化文档存储和分发，而不会损害视觉内容的质量。遵循上述步骤可确保您的 PDF 文件更易于管理且大小更高效。
 
 ## 常见问题解答
 
@@ -103,7 +103,7 @@ WMF（Windows 图元文件）是 Microsoft Windows 中使用的一种图形格�
 
 ### 此技术适用于所有类型的 Word 文档吗？
 
-是的，该技术可以应用于任何包含 WMF 图形的 Word 文档，有助于优化生成的 PDF 的大小。
+是的，此技术可以应用于任何包含 WMF 图形的 Word 文档，有助于优化生成的 PDF 的大小。
 
 ### 在哪里可以找到有关 Aspose.Words 的更多信息？
 

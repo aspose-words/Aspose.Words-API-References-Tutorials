@@ -1,7 +1,7 @@
 ---
 title: Dokumenteigenschaften und Metadatenverwaltung
 linktitle: Dokumenteigenschaften und Metadatenverwaltung
-second_title: Aspose.Words Python-API zur Dokumentenverwaltung
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
 description: Erfahren Sie, wie Sie Dokumenteigenschaften und Metadaten mit Aspose.Words für Python verwalten. Schritt-für-Schritt-Anleitung mit Quellcode.
 type: docs
 weight: 12
@@ -132,7 +132,7 @@ Ja, Sie können Metadatenaktualisierungen mit Aspose.Words automatisieren. Sie k
 
 ### Wie kann ich vertrauliche Informationen in Metadaten schützen?
 
- Um vertrauliche Informationen in Metadaten zu schützen, können Sie bestimmte Eigenschaften entfernen mit dem`remove` Verfahren.
+ Um vertrauliche Informationen in Metadaten zu schützen, können Sie bestimmte Eigenschaften entfernen. Dazu verwenden Sie den`remove` Verfahren.
 
 ### Was sind die Best Practices zum Verwalten von Dokumenteigenschaften?
 

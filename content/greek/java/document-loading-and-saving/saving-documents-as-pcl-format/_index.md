@@ -48,7 +48,7 @@ PclSaveOptions saveOptions = new PclSaveOptions();
 doc.save("Your Directory Path" + "YourPCLDocument.pcl", saveOptions);
 ```
 
- Αντικαθιστώ`"YourPCLDocument.pcl"` με το επιθυμητό όνομα για το αρχείο PCL σας.
+ Αντικαθιστώ`"YourPCLDocument.pcl"` με το επιθυμητό όνομα για το αρχείο PCL.
 
 ## Πλήρης κώδικας πηγής για αποθήκευση εγγράφων ως μορφή PCL στο Aspose.Words για Java
 

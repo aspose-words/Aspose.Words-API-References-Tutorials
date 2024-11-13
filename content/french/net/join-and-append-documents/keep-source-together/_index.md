@@ -1,99 +1,133 @@
 ---
-title: Gardez la source ensemble
-linktitle: Gardez la source ensemble
+title: Gardez la table ensemble
+linktitle: Gardez la table ensemble
 second_title: API de traitement de documents Aspose.Words
-description: Découvrez comment fusionner des documents Word à l'aide d'Aspose.Words pour .NET tout en préservant le formatage. Ce guide complet couvre tout, de la configuration à l'exécution.
+description: Découvrez comment empêcher les tableaux de se diviser en plusieurs pages à l'aide d'Aspose.Words pour .NET grâce à ce guide étape par étape. Assurez-vous de documents Word soignés et professionnels
 type: docs
 weight: 10
 url: /fr/net/join-and-append-documents/keep-source-together/
 ---
 ## Introduction
 
-À l’ère numérique d’aujourd’hui, la manipulation de documents Word par programmation est essentielle dans divers secteurs. Aspose.Words for .NET permet aux développeurs d'automatiser efficacement les tâches de gestion des documents. Ce guide complet vous guidera tout au long du processus de fusion de documents tout en préservant le formatage source à l'aide d'Aspose.Words for .NET.
+Les tableaux sont un élément essentiel de nombreux documents Word, mais il peut arriver que votre tableau soit réparti sur deux pages. Cela peut perturber le flux de votre document et affecter sa lisibilité. Ne serait-il pas agréable de pouvoir conserver l'intégralité du tableau sur une seule page ? Eh bien, avec Aspose.Words pour .NET, il existe une solution simple à ce problème ! Dans ce didacticiel, nous verrons comment empêcher les tableaux de se diviser sur plusieurs pages, garantissant ainsi que votre document soit soigné et professionnel.
 
-## Conditions préalables
+## Prérequis
 
-Avant de vous lancer dans la fusion de documents avec Aspose.Words for .NET, assurez-vous de disposer des éléments suivants :
+Avant de passer au didacticiel, assurons-nous que vous disposez de tout ce dont vous avez besoin pour le suivre en douceur.
 
-- Visual Studio : environnement de développement intégré (IDE) pour le développement .NET.
-- Aspose.Words pour .NET : installé et configuré dans votre environnement de développement.
-- Familiarité avec C# : Compréhension de base du langage de programmation C#.
+### Bibliothèque Aspose.Words pour .NET
 
-## Importer des espaces de noms
+Tout d'abord, vous devez avoir installé Aspose.Words pour .NET. Il s'agit de la puissante bibliothèque qui vous permet de travailler avec des documents Word par programmation.
 
-Pour commencer, importez les espaces de noms nécessaires :
+- [Télécharger Aspose.Words pour .NET](https://releases.aspose.com/words/net/)
+
+### Environnement de développement
+
+Vous devez disposer d'un environnement de développement configuré pour exécuter du code C#, tel que :
+
+- Visual Studio (toute version récente)
+- .NET Framework 2.0 ou version ultérieure
+
+### Un document Word avec un tableau
+
+ Vous aurez besoin d'un document Word contenant un tableau. Dans ce tutoriel, nous travaillerons avec un exemple de document appelé`"Table spanning two pages.docx"`Ce fichier contient un tableau qui s'étend actuellement sur deux pages.
+
+### Licence temporaire (facultatif)
+
+ Bien qu'Aspose.Words soit fourni avec un essai gratuit, vous souhaiterez peut-être utiliser un[permis temporaire](https://purchase.aspose.com/temporary-license/) pour exploiter pleinement le potentiel de la bibliothèque.
+
+## Paquets d'importation
+
+Avant d'écrire du code, nous devons importer les espaces de noms nécessaires pour travailler avec Aspose.Words pour .NET. Ajoutez les importations suivantes en haut de votre fichier de code :
 
 ```csharp
 using Aspose.Words;
-using Aspose.Words.DocumentBuilder;
+using Aspose.Words.Tables;
 ```
 
-## Étape 1 : Charger les documents
+ Ces espaces de noms vous donnent accès à des classes telles que`Document`, `Table`, `Cell`, et d'autres que nous utiliserons dans ce tutoriel.
 
- Tout d'abord, chargez les documents source et de destination dans Aspose.Words`Document` objets.
+## Étape 1 : Charger le document
+
+ La première chose que nous devons faire est de charger le document Word qui contient le tableau. Pour cela, nous utiliserons le`Document` classe de Aspose.Words. Cette classe vous permet d'ouvrir et de manipuler des fichiers Word par programmation.
 
 ```csharp
-// Chemin d'accès à votre répertoire de documents
-string dataDir = "YOUR_DOCUMENT_DIRECTORY/";
+// Le chemin vers le répertoire des documents.
+string dataDir = "YOUR DOCUMENTS DIRECTORY";
 
-// Charger les documents source et destination
-Document srcDoc = new Document(dataDir + "Document source.docx");
-Document dstDoc = new Document(dataDir + "Document destination with list.docx");
+Document doc = new Document(dataDir + "Table spanning two pages.docx");
 ```
 
-## Étape 2 : Définir le début de la section
+ Dans cet extrait de code, nous spécifions l'emplacement de notre document. Remplacer`"YOUR DOCUMENTS DIRECTORY"` avec le répertoire réel où votre document est stocké.
 
-Configurez le début de la section pour garantir que le contenu du document source circule en continu après le document de destination.
+## Étape 2 : Accéder au tableau
+
+Une fois le document chargé, l'étape suivante consiste à accéder au tableau que nous souhaitons conserver. Dans cet exemple, nous supposons que le tableau est le premier tableau du document.
 
 ```csharp
-// Définir le document source pour qu'il apparaisse juste après le contenu du document de destination
-srcDoc.FirstSection.PageSetup.SectionStart = SectionStart.Continuous;
+Table table = (Table) doc.GetChild(NodeType.Table, 0, true);
 ```
 
-## Étape 3 : Gardez les paragraphes ensemble
+ Cette ligne de code recherche le premier tableau du document.`GetChild` la méthode récupère un type spécifique de nœud, qui dans ce cas est`NodeType.Table` . Le`0` indique que nous voulons la première table, et la`true`flag garantit que nous recherchons de manière récursive dans tous les nœuds enfants.
 
-Pour conserver l'intégrité du formatage, marquez chaque paragraphe du document source pour conserver le paragraphe suivant.
+## Étape 3 : Parcourir les cellules du tableau
+
+Nous devons maintenant parcourir chaque cellule du tableau. Étant donné qu'un tableau contient plusieurs lignes et que chaque ligne contient plusieurs cellules, nous allons parcourir chaque cellule et nous assurer qu'elle ne se divise pas en plusieurs pages.
 
 ```csharp
-foreach (Paragraph para in srcDoc.GetChildNodes(NodeType.Paragraph, true))
+foreach (Cell cell in table.GetChildNodes(NodeType.Cell, true))
 {
-    para.ParagraphFormat.KeepWithNext = true;
-}
+    cell.EnsureMinimum();
 ```
 
-## Étape 4 : Joindre des documents
+ Ici,`GetChildNodes` récupère toutes les cellules du tableau et nous parcourons chacune d'elles.`EnsureMinimum()` La méthode garantit que chaque cellule contient au moins un paragraphe, car une cellule vide pourrait causer des problèmes plus tard.
 
- Fusionnez les documents à l'aide du`AppendDocument` méthode, en veillant à conserver la mise en forme du document source.
+## Étape 4 : définir la propriété KeepWithNext
+
+ Pour éviter que le tableau ne soit réparti sur plusieurs pages, nous devons définir le`KeepWithNext` propriété pour chaque paragraphe du tableau. Cette propriété garantit que le paragraphe reste avec le paragraphe suivant, empêchant ainsi efficacement les sauts de page entre eux.
 
 ```csharp
-dstDoc.AppendDocument(srcDoc, ImportFormatMode.KeepSourceFormatting);
+    foreach (Paragraph para in cell.Paragraphs)
+        if (!(cell.ParentRow.IsLastRow && para.IsEndOfCell))
+            para.ParagraphFormat.KeepWithNext = true;
 ```
 
-## Étape 5 : Enregistrer le document fusionné
+ Cette boucle vérifie chaque paragraphe à l'intérieur de chaque cellule. La condition garantit que nous n'appliquons pas la`KeepWithNext`propriété au dernier paragraphe de la dernière ligne. Sinon, la propriété n'aurait aucun effet puisqu'il n'y a pas de paragraphe suivant.
 
-Enfin, enregistrez le document fusionné à l'emplacement souhaité.
+## Étape 5 : Enregistrer le document
+
+ Enfin, après avoir appliqué le`KeepWithNext` propriété, nous devons enregistrer le document modifié.
 
 ```csharp
-dstDoc.Save(dataDir + "JoinAndAppendDocuments.KeepSourceTogether.docx");
+doc.Save(dataDir + "WorkingWithTables.KeepTableTogether.docx");
 ```
+
+Cette ligne enregistre le document mis à jour sous un nouveau nom, en préservant le fichier d'origine. Vous pouvez maintenant ouvrir le fichier résultant et constater que le tableau n'est plus divisé sur deux pages !
 
 ## Conclusion
 
-En conclusion, Aspose.Words for .NET simplifie la tâche de fusion de documents Word tout en préservant de manière transparente le formatage d'origine. Cette capacité est cruciale pour les applications nécessitant un traitement automatisé des documents.
+Et voilà ! En suivant ces étapes simples, vous pouvez facilement empêcher les tableaux de se diviser en plusieurs pages dans les documents Word à l'aide d'Aspose.Words pour .NET. Que vous travailliez sur des rapports, des contrats ou d'autres documents, le fait de conserver les tableaux intacts garantit un aspect plus soigné et professionnel.
+
+La beauté d'Aspose.Words réside dans sa flexibilité et sa facilité d'utilisation, qui vous permettent de manipuler des documents Word par programmation sans avoir besoin d'installer Microsoft Word sur votre machine. Maintenant que vous savez comment organiser des tableaux, explorez d'autres fonctionnalités de la bibliothèque pour faire passer vos compétences en matière de traitement de documents au niveau supérieur !
 
 ## FAQ
 
-### Aspose.Words for .NET peut-il fusionner des documents de différents formats ?
-Oui, il peut fusionner des documents quel que soit leur format, en conservant le formatage source.
+### Pourquoi mon tableau continue-t-il à se décomposer sur plusieurs pages après avoir utilisé ce code ?
 
-### Aspose.Words for .NET prend-il en charge la fusion efficace de documents volumineux ?
-Absolument, il gère les documents volumineux avec des performances optimales.
+ Si votre table continue à se casser, assurez-vous d'avoir appliqué le`KeepWithNext` propriété correctement. Vérifiez que tous les paragraphes, sauf le dernier de chaque cellule, ont cette propriété définie.
 
-### Existe-t-il une version d’essai disponible pour Aspose.Words pour .NET ?
- Oui, vous pouvez télécharger un essai gratuit[ici](https://releases.aspose.com/).
+### Puis-je conserver uniquement des lignes spécifiques ensemble ?
 
-### Comment puis-je obtenir une assistance technique pour Aspose.Words pour .NET ?
- L'assistance technique est disponible via le[Forum Aspose.Words](https://forum.aspose.com/c/words/8).
+ Oui, vous pouvez appliquer de manière sélective le`KeepWithNext` propriété sur des lignes ou des paragraphes spécifiques dans le tableau pour contrôler les parties qui doivent rester ensemble.
 
-### Puis-je acheter une licence temporaire pour Aspose.Words pour .NET ?
- Oui, vous pouvez acquérir une licence temporaire[ici](https://purchase.aspose.com/temporary-license/).
+### Cette méthode fonctionne-t-elle avec de grandes tables ?
+
+Pour les tableaux très volumineux, Word peut toujours les diviser sur plusieurs pages s'il n'y a pas assez d'espace pour contenir l'intégralité du tableau sur une seule page. Pensez à ajuster la mise en forme ou les marges de votre tableau pour qu'il puisse accueillir des tableaux plus grands.
+
+### Puis-je utiliser cette méthode avec d’autres formats de documents ?
+
+Oui ! Aspose.Words pour .NET prend en charge de nombreux formats tels que DOC, DOCX, PDF et autres. La même méthode fonctionne sur tous les formats prenant en charge les tableaux.
+
+### Aspose.Words pour .NET est-elle une bibliothèque gratuite ?
+
+ Aspose.Words pour .NET propose un essai gratuit, mais pour un accès complet à toutes les fonctionnalités, vous devrez acheter une licence. Vous pouvez explorer les options de licence sur le site[Page d'achat Aspose](https://purchase.aspose.com/buy).

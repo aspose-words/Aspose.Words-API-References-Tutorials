@@ -43,7 +43,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
 ## 步骤 2：创建文档生成器
 
-接下来，我们将创建一个实例`DocumentBuilder`类。该类可帮助我们向 Word 文档添加内容。
+接下来，我们将创建一个实例`DocumentBuilder`类。此类可帮助我们向 Word 文档添加内容。
 
 ```csharp
 //使用文档生成器向文档添加内容。
@@ -52,7 +52,7 @@ DocumentBuilder builder = new DocumentBuilder();
 
 ## 步骤 3：添加标题 1 标签
 
-首先，在文档中添加一个 Heading 1 标签。这将是我们的主要标题。
+首先，为文档添加一个 Heading 1 标签。这将是我们的主要标题。
 
 ```csharp
 builder.ParagraphFormat.StyleName = "Heading 1";

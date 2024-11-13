@@ -48,7 +48,7 @@ Nyní si projdeme proces přidávání a stylování odsazeného bloku kódu do 
 DocumentBuilder builder = new DocumentBuilder();
 ```
 
- Zde vytváříme nový dokument a používáme`DocumentBuilder` začít přidávat obsah.
+Zde vytváříme nový dokument a používáme`DocumentBuilder` začít přidávat obsah.
 
 ## Krok 2: Definujte vlastní styl
 
@@ -76,7 +76,7 @@ Zde nastavujeme formát odstavce na náš vlastní styl a píšeme řádek textu
 
 ## Závěr
 
-A tady to máte – jednoduchý, ale účinný způsob, jak přidávat a upravovat odsazené bloky kódu v dokumentech aplikace Word pomocí Aspose.Words for .NET. Pomocí těchto kroků můžete zlepšit čitelnost úryvků kódu a dodat svým dokumentům profesionální vzhled. Ať už připravujete technické zprávy, dokumentaci ke kódu nebo jakýkoli jiný typ obsahu, který vyžaduje formátovaný kód, Aspose.Words poskytuje nástroje, které potřebujete k efektivnímu provedení práce.
+tady to máte – jednoduchý, ale účinný způsob, jak přidávat a upravovat odsazené bloky kódu v dokumentech aplikace Word pomocí Aspose.Words for .NET. Pomocí těchto kroků můžete zlepšit čitelnost úryvků kódu a dodat svým dokumentům profesionální vzhled. Ať už připravujete technické zprávy, dokumentaci ke kódu nebo jakýkoli jiný typ obsahu, který vyžaduje formátovaný kód, Aspose.Words poskytuje nástroje, které potřebujete k efektivnímu provedení práce.
 
 Nebojte se experimentovat s různými styly a nastaveními, abyste přizpůsobili vzhled a dojem z bloků kódu tak, aby vyhovovaly vašim potřebám. Šťastné kódování!
 
@@ -86,7 +86,7 @@ Nebojte se experimentovat s různými styly a nastaveními, abyste přizpůsobil
  Ano, můžete upravit`LeftIndent` vlastnost stylu zvětšit nebo zmenšit odsazení.
 
 ### Jak mohu změnit písmo použité pro blok kódu?  
- Můžete nastavit`Font.Name`vlastnost libovolnému písmu s proměnnou mezerou podle vašeho výběru, jako je „Courier New“ nebo „Consolas“.
+ Můžete nastavit`Font.Name` vlastnost libovolnému písmu s proměnnou mezerou podle vašeho výběru, jako je „Courier New“ nebo „Consolas“.
 
 ### Je možné přidat více bloků kódu s různými styly?  
 Absolutně! Můžete definovat více stylů s různými názvy a podle potřeby je aplikovat na různé bloky kódu.

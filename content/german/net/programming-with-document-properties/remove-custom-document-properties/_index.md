@@ -48,7 +48,7 @@ Laden wir nun das Dokument in unseren Code. Hier kommt Aspose.Words für .NET in
 Document doc = new Document(dataDir + "Properties.docx");
 ```
 
-## Schritt 2: Entfernen benutzerdefinierter Dokumenteigenschaften
+## Schritt 2: Benutzerdefinierte Dokumenteigenschaften entfernen
 
 Wenn das Dokument geladen ist, ist es an der Zeit, diese lästigen benutzerdefinierten Eigenschaften zu entfernen. Hier erfahren Sie, wie Sie dabei Schritt für Schritt vorgehen.
 
@@ -62,7 +62,7 @@ var customProperties = doc.CustomDocumentProperties;
 
 ### Schritt 2.2: Entfernen der spezifischen Eigenschaft
 
-Entfernen Sie als Nächstes die spezifische benutzerdefinierte Eigenschaft anhand ihres Namens. In diesem Beispiel entfernen wir „Autorisiertes Datum“.
+Entfernen Sie als Nächstes die spezifische benutzerdefinierte Eigenschaft anhand ihres Namens. In diesem Beispiel entfernen wir „Autorisierungsdatum“.
 
 ```csharp
 customProperties.Remove("Authorized Date");
@@ -70,9 +70,9 @@ customProperties.Remove("Authorized Date");
 
 ## Schritt 3: Speichern des Dokuments
 
-Nach dem Entfernen der benutzerdefinierten Eigenschaft besteht der letzte Schritt darin, das Dokument zu speichern. Dadurch wird sichergestellt, dass Ihre Änderungen übernommen werden.
+Nachdem Sie die benutzerdefinierte Eigenschaft entfernt haben, müssen Sie das Dokument abschließend speichern. Dadurch wird sichergestellt, dass Ihre Änderungen übernommen werden.
 
-### Schritt 3.1: Speicherpfad festlegen
+### Schritt 3.1: Definieren Sie den Speicherpfad
 
 Legen Sie fest, wo Sie das geänderte Dokument speichern möchten.
 

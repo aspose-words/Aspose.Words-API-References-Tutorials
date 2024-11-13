@@ -30,7 +30,7 @@ using Aspose.Words.Fonts;
 
 Das Einrichten des Schriftartenordners ist unkompliziert, wenn Sie diese Schritte sorgfältig befolgen.
 
-## Schritt 1: Dokumentverzeichnis definieren
+## Schritt 1: Definieren Sie das Dokumentverzeichnis
 
 Definieren Sie zunächst den Pfad zu Ihrem Dokumentverzeichnis. In diesem Verzeichnis werden Ihre Word-Dokumente und die Schriftarten gespeichert, die Sie verwenden möchten.
 
@@ -61,7 +61,7 @@ fontSettings.SetFontsFolder(dataDir + "Fonts", false);
 
 ## Schritt 4: LoadOptions erstellen
 
- Erstellen Sie als nächstes eine Instanz des`LoadOptions` Klasse. Diese Klasse hilft Ihnen, das Dokument mit den angegebenen Schrifteinstellungen zu laden.
+ Als nächstes erstellen Sie eine Instanz des`LoadOptions` Klasse. Diese Klasse hilft Ihnen, das Dokument mit den angegebenen Schrifteinstellungen zu laden.
 
 ```csharp
 LoadOptions loadOptions = new LoadOptions();

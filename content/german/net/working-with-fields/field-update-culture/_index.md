@@ -23,7 +23,7 @@ Bevor wir uns in die Einzelheiten der Feldaktualisierungskultur vertiefen, gibt 
 
 4.  Aspose-Lizenz: Für die volle Funktionalität benötigen Sie möglicherweise eine Lizenz. Sie können eine erwerben[Hier](https://purchase.aspose.com/buy) oder holen Sie sich eine temporäre Lizenz[Hier](https://purchase.aspose.com/temporary-license/).
 
-5.  Zugriff auf Dokumentation und Support: Für weitere Hilfe steht Ihnen die[Aspose-Dokumentation](https://reference.aspose.com/words/net/)Und[Support Forum](https://forum.aspose.com/c/words/8) sind großartige Ressourcen.
+5.  Zugriff auf Dokumentation und Support: Für weitere Hilfe steht Ihnen die[Aspose-Dokumentation](https://reference.aspose.com/words/net/) Und[Support Forum](https://forum.aspose.com/c/words/8) sind großartige Ressourcen.
 
 ## Namespaces importieren
 
@@ -34,7 +34,7 @@ using Aspose.Words;
 using Aspose.Words.Fields;
 ```
 
-Nachdem Sie nun eingerichtet sind, unterteilen wir den Vorgang zum Konfigurieren der Feldaktualisierungskultur in überschaubare Schritte.
+Nachdem Sie nun eingerichtet sind, unterteilen wir den Prozess der Konfiguration der Feldaktualisierungskultur in überschaubare Schritte.
 
 ## Schritt 1: Richten Sie Ihr Dokument und DocumentBuilder ein
 
@@ -75,9 +75,54 @@ doc.FieldOptions.FieldUpdateCultureProvider = new FieldUpdateCultureProvider();
 - `FieldUpdateCultureSource.FieldCode` weist Aspose.Words an, für Aktualisierungen die im Feldcode angegebene Kultur zu verwenden.
 - `FieldUpdateCultureProvider` ermöglicht Ihnen, einen Kulturanbieter für Feldaktualisierungen anzugeben. Wenn Sie einen benutzerdefinierten Anbieter implementieren müssen, können Sie diese Klasse erweitern.
 
-## Schritt 4: Speichern Sie das Dokument
+## Schritt 4: Implementieren des benutzerdefinierten Kulturanbieters
 
-Speichern Sie Ihr Dokument abschließend im angegebenen Verzeichnis. So bleiben alle Änderungen erhalten.
+Jetzt müssen wir den benutzerdefinierten Kulturanbieter implementieren, der steuert, wie Kultureinstellungen wie Datumsformate angewendet werden, wenn das Feld aktualisiert wird.
+
+Wir erstellen eine Klasse namens`FieldUpdateCultureProvider` das implementiert die`IFieldUpdateCultureProvider` Schnittstelle. Diese Klasse gibt je nach Region unterschiedliche Kulturformate zurück. Für dieses Beispiel konfigurieren wir die russischen und US-amerikanischen Kultureinstellungen.
+
+```csharp
+private class FieldUpdateCultureProvider : IFieldUpdateCultureProvider
+{
+    public CultureInfo GetCulture(string name, Field field)
+    {
+        switch (name)
+        {
+            case "ru-RU":
+                CultureInfo culture = new CultureInfo(name, false);
+                DateTimeFormatInfo format = culture.DateTimeFormat;
+
+                format.MonthNames = new[] { "месяц 1", "месяц 2", "месяц 3", "месяц 4", "месяц 5", "месяц 6", "месяц 7", "месяц 8", "месяц 9", "месяц 10", "месяц 11", "месяц 12", "" };
+                format.MonthGenitiveNames = format.MonthNames;
+                format.AbbreviatedMonthNames = new[] { "мес 1", "мес 2", "мес 3", "мес 4", "мес 5", "мес 6", "мес 7", "мес 8", "мес 9", "мес 10", "мес 11", "мес 12", "" };
+                format.AbbreviatedMonthGenitiveNames = format.AbbreviatedMonthNames;
+
+                format.DayNames = new[] { "день недели 7", "день недели 1", "день недели 2", "день недели 3", "день недели 4", "день недели 5", "день недели 6" };
+                format.AbbreviatedDayNames = new[] { "день 7", "день 1", "день 2", "день 3", "день 4", "день 5", "день 6" };
+                format.ShortestDayNames = new[] { "д7", "д1", "д2", "д3", "д4", "д5", "д6" };
+
+                format.AMDesignator = "До полудня";
+                format.PMDesignator = "После полудня";
+
+                const string pattern = "yyyy MM (MMMM) dd (dddd) hh:mm:ss tt";
+                format.LongDatePattern = pattern;
+                format.LongTimePattern = pattern;
+                format.ShortDatePattern = pattern;
+                format.ShortTimePattern = pattern;
+
+                return culture;
+            case "en-US":
+                return new CultureInfo(name, false);
+            default:
+                return null;
+        }
+    }
+}
+```
+
+## Schritt 5: Speichern Sie das Dokument
+
+Speichern Sie Ihr Dokument abschließend im angegebenen Verzeichnis. So stellen Sie sicher, dass alle Ihre Änderungen erhalten bleiben.
 
 ```csharp
 // Speichern Sie das Dokument.

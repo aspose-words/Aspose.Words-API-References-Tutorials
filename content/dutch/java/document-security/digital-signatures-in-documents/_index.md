@@ -1,36 +1,36 @@
 ---
 title: Digitale handtekeningen in documenten
 linktitle: Digitale handtekeningen in documenten
-second_title: Aspose.Words Java-documentverwerkings-API
+second_title: Aspose.Words Java Documentverwerkings-API
 description: Leer hoe u veilige digitale handtekeningen in documenten implementeert met Aspose.Words voor Java. Zorg voor documentintegriteit met stapsgewijze begeleiding en broncode
 type: docs
 weight: 13
 url: /nl/java/document-security/digital-signatures-in-documents/
 ---
 
-Digitale handtekeningen spelen een cruciale rol bij het waarborgen van de authenticiteit en integriteit van digitale documenten. Ze bieden een manier om te verifiëren dat er niet met een document is geknoeid en dat het inderdaad is gemaakt of goedgekeurd door de aangegeven ondertekenaar. In deze stapsgewijze handleiding onderzoeken we hoe u digitale handtekeningen in documenten kunt implementeren met behulp van Aspose.Words voor Java. We behandelen alles, van het opzetten van de omgeving tot het toevoegen van digitale handtekeningen aan uw documenten. Laten we beginnen!
+Digitale handtekeningen spelen een cruciale rol bij het waarborgen van de authenticiteit en integriteit van digitale documenten. Ze bieden een manier om te verifiëren dat er niet met een document is geknoeid en dat het inderdaad is gemaakt of goedgekeurd door de aangegeven ondertekenaar. In deze stapsgewijze handleiding onderzoeken we hoe u digitale handtekeningen in documenten implementeert met Aspose.Words voor Java. We behandelen alles van het instellen van de omgeving tot het toevoegen van digitale handtekeningen aan uw documenten. Laten we beginnen!
 
 ## Vereisten
 
-Voordat we ingaan op de implementatie, moet u ervoor zorgen dat u aan de volgende vereisten voldoet:
+Voordat we met de implementatie beginnen, moet u ervoor zorgen dat de volgende vereisten aanwezig zijn:
 
 -  Aspose.Words voor Java: Download en installeer Aspose.Words voor Java van[hier](https://releases.aspose.com/words/java/).
 
-## Uw project opzetten
+## Uw project instellen
 
-1. Maak een nieuw Java-project in de Integrated Development Environment (IDE) van uw voorkeur.
+1. Maak een nieuw Java-project in uw favoriete Integrated Development Environment (IDE).
 
-2. Voeg de Aspose.Words voor Java-bibliotheek toe aan uw project door het JAR-bestand in uw klassenpad op te nemen.
+2. Voeg de Aspose.Words voor Java-bibliotheek toe aan uw project door het JAR-bestand in uw classpath op te nemen.
 
 ## Een digitale handtekening toevoegen
 
-Laten we nu verder gaan met het toevoegen van een digitale handtekening aan een document:
+Laten we nu een digitale handtekening aan een document toevoegen:
 
 ```java
 // Initialiseer Aspose.Words
 com.aspose.words.Document doc = new com.aspose.words.Document("your_document.docx");
 
-// Maak een DigitalSignature-object
+// Een DigitalSignature-object maken
 com.aspose.words.digitalSignatures.DigitalSignature digitalSignature = new com.aspose.words.digitalSignatures.DigitalSignature();
 
 // Stel het certificaatpad in
@@ -42,7 +42,7 @@ digitalSignature.setPassword("your_password");
 // Onderteken het document
 doc.getDigitalSignatures().add(digitalSignature);
 
-// Bewaar het document
+// Sla het document op
 doc.save("signed_document.docx");
 ```
 
@@ -71,7 +71,7 @@ if (signedDoc.getDigitalSignatures().getCount() > 0) {
 
 ## Conclusie
 
-In deze handleiding hebben we geleerd hoe u digitale handtekeningen in documenten kunt implementeren met behulp van Aspose.Words voor Java. Dit is een cruciale stap bij het waarborgen van de authenticiteit en integriteit van uw digitale documenten. Door de hier beschreven stappen te volgen, kunt u vol vertrouwen digitale handtekeningen toevoegen en verifiëren in uw Java-toepassingen.
+In deze gids hebben we geleerd hoe u digitale handtekeningen in documenten implementeert met Aspose.Words voor Java. Dit is een cruciale stap om de authenticiteit en integriteit van uw digitale documenten te waarborgen. Door de hier beschreven stappen te volgen, kunt u vol vertrouwen digitale handtekeningen toevoegen en verifiëren in uw Java-applicaties.
 
 ## Veelgestelde vragen
 
@@ -89,7 +89,7 @@ Ja, Aspose.Words voor Java ondersteunt verschillende documentformaten, waaronder
 
 ### Hoe kan ik een digitaal certificaat verkrijgen voor het ondertekenen van documenten?
 
-U kunt een digitaal certificaat verkrijgen van een vertrouwde certificeringsinstantie (CA) of een zelfondertekend certificaat maken met behulp van tools zoals OpenSSL.
+U kunt een digitaal certificaat verkrijgen bij een vertrouwde certificeringsinstantie (CA) of een zelfondertekend certificaat maken met behulp van hulpmiddelen zoals OpenSSL.
 
 ### Zijn digitale handtekeningen juridisch bindend?
 

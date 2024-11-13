@@ -22,7 +22,7 @@ Bevor wir uns mit dem Code beschäftigen, stellen wir sicher, dass Sie alles hab
 
 ## Namespaces importieren
 
-Als Erstes müssen wir sicherstellen, dass unser Projekt bereit ist. Wir müssen die erforderlichen Namespaces importieren. Das ist, als würde man die Bühne vor der Hauptvorstellung vorbereiten.
+Als Erstes müssen wir sicherstellen, dass unser Projekt bereit ist. Wir müssen die erforderlichen Namespaces importieren. Das ist, als würde man die Bühne vor der Hauptaufführung vorbereiten.
 
 ```csharp
 using Aspose.Words;
@@ -65,13 +65,13 @@ Wir haben eine einfache Textzeile hinzugefügt, mit der wir arbeiten werden. Sie
 
 ## Schritt 4: Führen Sie den Such- und Ersetzungsvorgang durch
 
-Hier geschieht die eigentliche Aktion. Wir werden das Wort „traurig“ finden und es durch „schlecht“ ersetzen.
+Hier geschieht die eigentliche Aktion. Wir werden das Wort „traurig“ finden und durch „schlecht“ ersetzen.
 
 ```csharp
 doc.Range.Replace("sad", "bad", new FindReplaceOptions(FindReplaceDirection.Forward));
 ```
 
- Der`Replace`Methode ist unkompliziert. Wir geben das zu suchende Wort, das Ersatzwort und die Optionen für die Such- und Ersetzungsoperation an.
+Der`Replace`Methode ist unkompliziert. Wir geben das zu suchende Wort, das Ersatzwort und die Optionen für die Such- und Ersetzungsoperation an.
 
 ## Schritt 5: Speichern Sie das Dokument
 

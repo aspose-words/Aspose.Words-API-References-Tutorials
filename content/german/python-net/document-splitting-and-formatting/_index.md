@@ -1,7 +1,7 @@
 ---
 title: Dokumentaufteilung und -formatierung
 linktitle: Dokumentaufteilung und -formatierung
-second_title: Aspose.Words Python-API zur Dokumentenverwaltung
+second_title: Aspose.Words Python-Dokumentenverwaltungs-API
 description: Entdecken Sie die Aspose.Words-Tutorials zum Aufteilen und Formatieren von Dokumenten in Python und .NET. Lernen Sie, Dokumente effizient aufzuteilen und zu formatieren und so Ihre Dokumentverarbeitungsaufgaben zu verbessern.
 type: docs
 weight: 13
@@ -29,13 +29,13 @@ In dieser Tutorial-Reihe vertiefen Sie sich in die Feinheiten der Dokumentauftei
 - Kopf- und Fußzeilen: Erkunden Sie die Anpassung von Kopf- und Fußzeilen für Branding und Navigation.
 - Inhaltsverzeichnis: Erfahren Sie, wie Sie ein Inhaltsverzeichnis zur Dokumentnavigation erstellen und formatieren.
 
-In diesen Tutorials erhalten Sie praktische Einblicke, Zugriff auf Quellcodebeispiele und eine Schritt-für-Schritt-Anleitung. Am Ende dieser Reihe sind Sie in der Lage, Dokumente effizient aufzuteilen und zu formatieren und so Ihre Dokumentenverwaltungsprozesse zu optimieren.
+In diesen Tutorials erhalten Sie praktische Einblicke, Zugriff auf Quellcodebeispiele und schrittweise Anleitungen. Am Ende dieser Reihe sind Sie in der Lage, Dokumente effizient aufzuteilen und zu formatieren und so Ihre Dokumentenverwaltungsprozesse zu optimieren.
 
 ## Tutorials zum Aufteilen und Formatieren von Dokumenten
 ### [Effiziente Strategien zur Dokumentaufteilung und -formatierung](./split-format-documents/)
-Erfahren Sie, wie Sie Dokumente mit Aspose.Words für Python effizient aufteilen und formatieren. Dieses Tutorial bietet eine Schritt-für-Schritt-Anleitung und Quellcodebeispiele.
+Erfahren Sie, wie Sie mit Aspose.Words für Python Dokumente effizient aufteilen und formatieren. Dieses Tutorial bietet eine Schritt-für-Schritt-Anleitung und Quellcodebeispiele.
 ### [Dokumente mit Content Builder für Präzision aufteilen](./divide-documents-content-builder/)
-Teilen und bearbeiten Sie Ihre Dokumente präzise mit Aspose.Words für Python. Erfahren Sie, wie Sie Content Builder zur effizienten Inhaltsextraktion und -organisation nutzen können.
+Teilen und bearbeiten Sie Ihre Dokumente präzise mit Aspose.Words für Python. Erfahren Sie, wie Sie Content Builder zur effizienten Extraktion und Organisation von Inhalten nutzen können.
 ### [Kombinieren und Klonen von Dokumenten für komplexe Arbeitsabläufe](./combine-clone-documents/)
 Erfahren Sie, wie Sie mit Aspose.Words für Python Dokumente effizient kombinieren und klonen. Schritt-für-Schritt-Anleitung mit Quellcode zur Dokumentbearbeitung. Verbessern Sie noch heute Ihre Dokument-Workflows!
 ### [Vergleichen von Dokumentversionen für eine effektive Revisionskontrolle](./compare-document-versions/)

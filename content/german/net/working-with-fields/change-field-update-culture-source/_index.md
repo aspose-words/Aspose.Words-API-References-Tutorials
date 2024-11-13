@@ -21,7 +21,7 @@ Bevor wir in den Code einsteigen, stellen Sie sicher, dass Sie über Folgendes v
 
 ## Namespaces importieren
 
-Importieren wir zunächst die erforderlichen Namespaces für unser Projekt. Dadurch wird sichergestellt, dass wir Zugriff auf alle erforderlichen Klassen und Methoden haben, die von Aspose.Words bereitgestellt werden.
+Importieren wir zunächst die erforderlichen Namespaces für unser Projekt. Dadurch wird sichergestellt, dass wir Zugriff auf alle erforderlichen Klassen und Methoden von Aspose.Words haben.
 
 ```csharp
 using System;
@@ -29,7 +29,7 @@ using Aspose.Words;
 using Aspose.Words.Fields;
 ```
 
-Lassen Sie uns das Beispiel nun in mehrere Schritte aufteilen, damit Sie verstehen, wie Sie die Kulturquelle der Feldaktualisierung in Aspose.Words für .NET ändern.
+Lassen Sie uns das Beispiel nun in mehrere Schritte aufteilen, damit Sie verstehen, wie Sie die Kulturquelle für die Feldaktualisierung in Aspose.Words für .NET ändern.
 
 ## Schritt 1: Initialisieren Sie das Dokument
 
@@ -70,7 +70,7 @@ doc.MailMerge.Execute(new string[] { "Date2" }, new object[] { new DateTime(2011
 
 ## Schritt 5: Speichern Sie das Dokument
 
-Abschließend speichern wir das Dokument im angegebenen Verzeichnis. Damit ist die Änderung der Kulturquelle für die Feldaktualisierung abgeschlossen.
+Abschließend speichern wir das Dokument im angegebenen Verzeichnis. Damit ist die Änderung der Kulturquelle für das Feldupdate abgeschlossen.
 
 ```csharp
 doc.Save(dataDir + "WorkingWithFields.ChangeFieldUpdateCultureSource.docx");
@@ -83,7 +83,7 @@ Und da haben Sie es! Sie haben die Kulturquelle für die Feldaktualisierung in A
 ## Häufig gestellte Fragen
 
 ###  Was ist der Zweck der Festlegung der`LocaleId`?
- Der`LocaleId` Gibt die Kultureinstellungen für den Text an, die sich auf die Formatierung von Datumsangaben und anderen gebietsschemaabhängigen Daten auswirken.
+Der`LocaleId` Gibt die Kultureinstellungen für den Text an, die sich auf die Formatierung von Datumsangaben und anderen gebietsschemaabhängigen Daten auswirken.
 
 ### Kann ich ein anderes Gebietsschema als Deutsch verwenden?
  Ja, Sie können die`LocaleId`zu jedem gültigen Gebietsschemabezeichner. Zum Beispiel 1033 für Englisch (USA).

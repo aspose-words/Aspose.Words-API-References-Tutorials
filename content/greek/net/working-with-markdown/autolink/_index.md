@@ -68,10 +68,8 @@ builder.InsertHyperlink("Contact Support", "mailto:support@aspose.com", false);
 Οι υπερσύνδεσμοι μπορούν να προσαρμοστούν για να ταιριάζουν στο στυλ του εγγράφου σας. Μπορείτε να αλλάξετε το χρώμα, το μέγεθος και άλλα χαρακτηριστικά της γραμματοσειράς χρησιμοποιώντας το`Font` ιδιοκτησία του DocumentBuilder.
 
 ```csharp
-// Προσαρμόστε την εμφάνιση της υπερ-σύνδεσης.
-builder.Font.Color = System.Drawing.Color.Blue;
-builder.Font.Underline = Underline.Single;
-builder.InsertHyperlink("Styled Link", "https://www.aspose.com", false);
+builder.Font.Style = doc.Styles[StyleIdentifier.Hyperlink];
+builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", false);
 ```
 
 Αυτό το απόσπασμα θα εισαγάγει έναν μπλε, υπογραμμισμένο υπερσύνδεσμο, κάνοντάς τον να ξεχωρίζει στο έγγραφό σας.
@@ -89,7 +87,7 @@ builder.InsertHyperlink("Styled Link", "https://www.aspose.com", false);
  Μπορείτε να αφαιρέσετε έναν υπερσύνδεσμο χρησιμοποιώντας το`Remove` μέθοδο στον κόμβο υπερσύνδεσης.
 
 ### Μπορώ να προσθέσω συμβουλές εργαλείων σε υπερσυνδέσμους;
-Ναι, μπορείτε να προσθέσετε συμβουλές εργαλείων ορίζοντας το`ScreenTip` ιδιοκτησία της υπερ-σύνδεσης.
+ Ναι, μπορείτε να προσθέσετε συμβουλές εργαλείων ορίζοντας το`ScreenTip`ιδιοκτησία της υπερ-σύνδεσης.
 
 ### Είναι δυνατόν να διαμορφώσετε διαφορετικά στυλ υπερσυνδέσμων σε όλο το έγγραφο;
  Ναι, μπορείτε να διαμορφώσετε τους υπερσυνδέσμους με διαφορετικό τρόπο ορίζοντας το`Font` ιδιότητες πριν από την εισαγωγή κάθε υπερ-σύνδεσης.

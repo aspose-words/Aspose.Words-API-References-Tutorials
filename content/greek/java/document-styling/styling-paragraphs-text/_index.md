@@ -130,7 +130,7 @@ Paragraph para = new Paragraph(doc);
 
 // Προσθέστε κείμενο με προσαρμοσμένο μέγεθος γραμματοσειράς και χρώμα
 Run run = new Run(doc, "Customized Text");
-run.getFont().setSize(18); // Ορίστε το μέγεθος της γραμματοσειράς σε 18 σημεία
+run.getFont().setSize(18); // Ορίστε το μέγεθος γραμματοσειράς σε 18 σημεία
 run.getFont().setColor(Color.BLUE); // Ορίστε το χρώμα του κειμένου σε μπλε
 
 para.appendChild(run);

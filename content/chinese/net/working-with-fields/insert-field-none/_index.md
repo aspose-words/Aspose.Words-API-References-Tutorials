@@ -15,7 +15,7 @@ url: /zh/net/working-with-fields/insert-field-none/
 
 在我们进入令人兴奋的 Aspose.Words for .NET 世界之前，您需要做好以下几件事：
 
-1.  Visual Studio：确保您的计算机上安装了 Visual Studio。如果您还没有，可以从以下位置下载[这里](https://visualstudio.microsoft.com/downloads/).
+1.  Visual Studio：确保您的计算机上安装了 Visual Studio。如果尚未安装，可以从以下位置下载[这里](https://visualstudio.microsoft.com/downloads/).
 2. Aspose.Words for .NET：您需要 Aspose.Words 库。您可以从[下载页面](https://releases.aspose.com/words/net/).
 3. .NET Framework：确保您的项目针对兼容的 .NET Framework 版本。Aspose.Words 支持 .NET Framework 2.0 或更高版本、.NET Core 和 .NET 5.0 或更高版本。
 4. 基本 C# 知识：对 C# 编程的基本了解将帮助您理解示例。
@@ -74,7 +74,7 @@ doc.Save(dataDir + "InsertionFieldNone.docx");
 
 ## 结论
 
-各位，您已经掌握了！我们已经了解了使用 Aspose.Words for .NET 自动化文档创建和操作的基础知识。从设置环境到插入字段和保存文档，每一步都是为了掌握这个强大的工具。无论您是想简化工作流程还是创建动态文档，Aspose.Words for .NET 都能满足您的需求。所以，继续尝试吧。谁知道呢？您可能会发现自己有额外的时间去探索新的冒险。祝您编码愉快！
+各位，现在就讲到这里！我们已经了解了使用 Aspose.Words for .NET 自动化文档创建和操作的基础知识。从设置环境到插入字段和保存文档，每一步都是为了掌握这个强大的工具。无论您是想简化工作流程还是创建动态文档，Aspose.Words for .NET 都能满足您的需求。所以，继续尝试吧。谁知道呢？您可能会发现自己有额外的时间去探索新的冒险。祝您编码愉快！
 
 ## 常见问题解答
 

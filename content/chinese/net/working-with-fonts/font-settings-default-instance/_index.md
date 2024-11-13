@@ -9,13 +9,13 @@ url: /zh/net/working-with-fonts/font-settings-default-instance/
 ---
 ## 介绍
 
-欢迎阅读本篇关于使用 Aspose.Words for .NET 管理字体设置的深入教程。如果您在文档中遇到字体处理方面的挑战，本指南将引导您了解有效自定义和管理字体所需的一切知识。
+欢迎阅读本篇关于使用 Aspose.Words for .NET 管理字体设置的深入教程。如果您在文档中遇到字体处理难题，本指南将引导您了解有效自定义和管理字体所需的一切知识。
 
 ## 先决条件
 
 在开始之前，请确保您已准备好以下物品：
 
-- C# 基础知识：熟悉 C# 编程将帮助您顺利理解和执行这些步骤。
+- C# 基础知识：熟悉 C# 编程将帮助您顺利理解和执行步骤。
 -  Aspose.Words for .NET 库：从以下位置下载并安装 Aspose.Words for .NET[下载链接](https://releases.aspose.com/words/net/).
 - 开发环境：像 Visual Studio 这样的适合编写和执行代码的环境。
 - 样本文档：样本文档（例如，`Rendering.docx`) 应用字体设置。

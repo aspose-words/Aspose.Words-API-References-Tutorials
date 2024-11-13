@@ -89,7 +89,7 @@ if (textBox.Next == null && textBox.Previous != null)
 - `textBox.Next`: Ukazuje na další textové pole v pořadí.
 - `textBox.Previous`: Ukazuje na předchozí textové pole v sekvenci.
 
- Tento kód kontroluje vlastnosti`Next`a`Previous` k určení pozice textového pole v sekvenci.
+ Tento kód kontroluje vlastnosti`Next` a`Previous` k určení pozice textového pole v sekvenci.
 
 ## Krok 4: Propojení textových polí (volitelné)
 
@@ -151,4 +151,4 @@ Ano, textová pole lze propojit v libovolném pořadí, včetně nelineárních 
 Ano, můžete stylovat text v každém textovém poli nezávisle, což vám poskytuje flexibilitu při návrhu a formátování.
 
 ### Kde najdu další zdroje o práci s textovými poli v Aspose.Words?
- Pro více informací se podívejte na[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/)a[fórum podpory](https://forum.aspose.com/c/words/8).
+ Pro více informací se podívejte na[Dokumentace Aspose.Words](https://reference.aspose.com/words/net/) a[fórum podpory](https://forum.aspose.com/c/words/8).

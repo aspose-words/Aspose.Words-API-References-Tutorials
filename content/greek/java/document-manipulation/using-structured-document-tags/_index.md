@@ -142,7 +142,7 @@ doc.save("RichTextDocument.docx");
 Document doc = new Document("WorkingWithSDT.docx");
 StructuredDocumentTag sdt = (StructuredDocumentTag) doc.getChild(NodeType.STRUCTURED_DOCUMENT_TAG, 0, true);
 
-//Εφαρμόστε ένα προσαρμοσμένο στυλ
+// Εφαρμόστε ένα προσαρμοσμένο στυλ
 Style style = doc.getStyles().getByStyleIdentifier(StyleIdentifier.QUOTE);
 sdt.setStyle(style);
 

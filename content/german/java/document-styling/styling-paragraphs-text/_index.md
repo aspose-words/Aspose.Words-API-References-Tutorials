@@ -17,7 +17,7 @@ Aspose.Words für Java ist eine Java-Bibliothek, die es Entwicklern ermöglicht,
 
 ## Einrichten Ihrer Entwicklungsumgebung
 
-Bevor wir uns mit den Codierungsaspekten befassen, ist es wichtig, Ihre Entwicklungsumgebung einzurichten. Stellen Sie sicher, dass Java installiert ist, und laden Sie dann die Aspose.Words-Bibliothek für Java herunter und konfigurieren Sie sie. Detaillierte Installationsanweisungen finden Sie im[Dokumentation](https://reference.aspose.com/words/java/).
+Bevor wir uns mit den Programmieraspekten befassen, müssen Sie unbedingt Ihre Entwicklungsumgebung einrichten. Stellen Sie sicher, dass Java installiert ist, und laden Sie dann die Bibliothek Aspose.Words für Java herunter und konfigurieren Sie sie. Detaillierte Installationsanweisungen finden Sie im[Dokumentation](https://reference.aspose.com/words/java/).
 
 ## Erstellen eines neuen Dokuments
 
@@ -47,7 +47,7 @@ Paragraph para = new Paragraph(doc);
 // Legen Sie die Ausrichtung des Absatzes fest
 para.getParagraphFormat().setAlignment(ParagraphAlignment.CENTER);
 
-// Fügen Sie dem Absatz Text hinzu
+// Hinzufügen von Text zum Absatz
 Run run = new Run(doc, "This is a centered paragraph.");
 para.appendChild(run);
 
@@ -104,7 +104,7 @@ Paragraph para = new Paragraph(doc);
 // Anwenden eines vordefinierten Stils
 para.getParagraphFormat().setStyleIdentifier(StyleIdentifier.HEADING_1);
 
-// Fügen Sie dem Absatz Text hinzu
+// Hinzufügen von Text zum Absatz
 Run run = new Run(doc, "Heading 1 Style");
 para.appendChild(run);
 

@@ -2,26 +2,26 @@
 title: Tableau formaté
 linktitle: Tableau formaté
 second_title: API de traitement de documents Aspose.Words
-description: Apprenez à créer et formater des tableaux dans des documents Word à l'aide d'Aspose.Words for .NET avec ce guide détaillé étape par étape.
+description: Découvrez comment créer et formater des tableaux dans des documents Word à l'aide d'Aspose.Words pour .NET avec ce guide détaillé étape par étape.
 type: docs
 weight: 10
 url: /fr/net/programming-with-tables/formatted-table/
 ---
 ## Introduction
 
-La création et le formatage de tableaux dans des documents Word par programmation peuvent sembler une tâche ardue, mais avec Aspose.Words pour .NET, cela devient simple et gérable. Dans ce didacticiel, nous vous expliquerons comment créer un tableau formaté dans un document Word à l'aide d'Aspose.Words pour .NET. Nous couvrirons tout, de la configuration de votre environnement à l'enregistrement de votre document avec un tableau magnifiquement formaté.
+Créer et formater des tableaux dans des documents Word par programmation peut sembler une tâche ardue, mais avec Aspose.Words pour .NET, cela devient simple et gérable. Dans ce didacticiel, nous vous expliquerons comment créer un tableau formaté dans un document Word à l'aide d'Aspose.Words pour .NET. Nous aborderons tout, de la configuration de votre environnement à l'enregistrement de votre document avec un tableau magnifiquement formaté.
 
-## Conditions préalables
+## Prérequis
 
-Avant de plonger dans le code, assurons-nous que vous disposez de tout ce dont vous avez besoin :
+Avant de plonger dans le code, assurons-nous que vous avez tout ce dont vous avez besoin :
 
-1. Aspose.Words pour la bibliothèque .NET : téléchargez-la depuis[ici](https://releases.aspose.com/words/net/).
-2. Environnement de développement : un IDE comme Visual Studio.
+1. Bibliothèque Aspose.Words pour .NET : téléchargez-la depuis[ici](https://releases.aspose.com/words/net/).
+2. Environnement de développement : un IDE comme Visual Studio.
 3. .NET Framework : assurez-vous que .NET Framework est installé sur votre ordinateur.
 
 ## Importer des espaces de noms
 
-Avant d'écrire le code proprement dit, vous devez importer les espaces de noms nécessaires :
+Avant d'écrire le code réel, vous devez importer les espaces de noms nécessaires :
 
 ```csharp
 using System;
@@ -40,7 +40,7 @@ string dataDir = "YOUR DOCUMENT DIRECTORY";
 
  Remplacer`"YOUR DOCUMENT DIRECTORY"` avec le chemin réel où vous souhaitez enregistrer le document.
 
-## Étape 2 : initialiser le document et DocumentBuilder
+## Étape 2 : Initialiser le document et DocumentBuilder
 
 Maintenant, initialisez un nouveau document et un objet DocumentBuilder.
 
@@ -49,11 +49,11 @@ Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
 ```
 
- Le`DocumentBuilder` est une classe d'assistance qui simplifie le processus de création de documents.
+Le`DocumentBuilder` est une classe d'aide qui simplifie le processus de création de documents.
 
-## Étape 3 : démarrer la table
+## Étape 3 : Commencez la table
 
- Ensuite, commencez à créer le tableau en utilisant le`StartTable` méthode.
+ Ensuite, commencez à créer la table en utilisant le`StartTable` méthode.
 
 ```csharp
 Table table = builder.StartTable();
@@ -62,17 +62,17 @@ builder.InsertCell();
 
 L'insertion d'une cellule est nécessaire pour commencer le tableau.
 
-## Étape 4 : Appliquer le formatage à l’échelle du tableau
+## Étape 4 : Appliquer la mise en forme à l'échelle du tableau
 
-Vous pouvez appliquer une mise en forme qui affecte l'ensemble du tableau. Par exemple, en définissant le retrait à gauche :
+Vous pouvez appliquer une mise en forme qui affecte l'ensemble du tableau. Par exemple, définir le retrait à gauche :
 
 ```csharp
 table.LeftIndent = 20.0;
 ```
 
-## Étape 5 : Formater la ligne d'en-tête
+## Étape 5 : formater la ligne d’en-tête
 
-Définissez la hauteur, l'alignement et d'autres propriétés de la ligne d'en-tête.
+Définissez la hauteur, l’alignement et d’autres propriétés de la ligne d’en-tête.
 
 ```csharp
 builder.RowFormat.Height = 40.0;
@@ -86,11 +86,11 @@ builder.CellFormat.Width = 100.0;
 builder.Write("Header Row,\n Cell 1");
 ```
 
-Dans cette étape, nous faisons ressortir la ligne d'en-tête en définissant une couleur d'arrière-plan, une taille de police et un alignement.
+Dans cette étape, nous faisons ressortir la ligne d’en-tête en définissant une couleur d’arrière-plan, une taille de police et un alignement.
 
-## Étape 6 : Insérer des cellules d'en-tête supplémentaires
+## Étape 6 : insérer des cellules d'en-tête supplémentaires
 
-Insérez plus de cellules pour la ligne d'en-tête :
+Insérer plus de cellules pour la ligne d’en-tête :
 
 ```csharp
 builder.InsertCell();
@@ -101,7 +101,7 @@ builder.Write("Header Row,\n Cell 3");
 builder.EndRow();
 ```
 
-## Étape 7 : Formater les lignes du corps
+## Étape 7 : formater les lignes du corps
 
 Après avoir configuré l'en-tête, formatez le corps du tableau :
 
@@ -113,9 +113,9 @@ builder.RowFormat.Height = 30.0;
 builder.RowFormat.HeightRule = HeightRule.Auto;
 ```
 
-## Étape 8 : Insérer des lignes de corps
+## Étape 8 : Insérer les lignes du corps
 
-Insérez les lignes du corps avec le contenu :
+Insérer les lignes du corps avec le contenu :
 
 ```csharp
 builder.InsertCell();
@@ -130,7 +130,7 @@ builder.Write("Row 1, Cell 3 Content");
 builder.EndRow();
 ```
 
-Répétez l'opération pour les lignes supplémentaires :
+Répétez pour les lignes supplémentaires :
 
 ```csharp
 builder.InsertCell();
@@ -145,7 +145,7 @@ builder.EndRow();
 builder.EndTable();
 ```
 
-## Étape 9 : Enregistrez le document
+## Étape 9 : Enregistrer le document
 
 Enfin, enregistrez le document dans le répertoire spécifié :
 
@@ -157,21 +157,21 @@ Cela créera et enregistrera un document Word avec le tableau formaté.
 
 ## Conclusion
 
-Et voilà ! En suivant ces étapes, vous pouvez créer un tableau bien formaté dans un document Word à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite la manipulation par programmation de documents Word, vous permettant ainsi d'économiser du temps et des efforts.
+Et voilà ! En suivant ces étapes, vous pouvez créer un tableau bien formaté dans un document Word à l'aide d'Aspose.Words pour .NET. Cette puissante bibliothèque facilite la manipulation programmatique des documents Word, vous faisant ainsi gagner du temps et des efforts.
 
 ## FAQ
 
-### Qu’est-ce qu’Aspose.Words pour .NET ?
-Aspose.Words for .NET est une bibliothèque puissante permettant de créer, modifier et convertir des documents Word par programme.
+### Qu'est-ce que Aspose.Words pour .NET ?
+Aspose.Words pour .NET est une bibliothèque puissante permettant de créer, d'éditer et de convertir des documents Word par programmation.
 
-### Puis-je utiliser différentes couleurs pour différentes lignes ?
-Oui, vous pouvez appliquer différentes mises en forme, notamment des couleurs, à différentes lignes ou cellules.
+### Puis-je utiliser différentes couleurs pour différentes rangées ?
+Oui, vous pouvez appliquer différentes mises en forme, y compris des couleurs, à différentes lignes ou cellules.
 
-### Aspose.Words pour .NET est-il gratuit ?
- Aspose.Words for .NET est une bibliothèque payante, mais vous pouvez obtenir un[essai gratuit](https://releases.aspose.com/).
+### Aspose.Words pour .NET est-il gratuit ?
+ Aspose.Words pour .NET est une bibliothèque payante, mais vous pouvez obtenir un[essai gratuit](https://releases.aspose.com/).
 
-### Comment puis-je obtenir une assistance pour Aspose.Words pour .NET ?
- Vous pouvez bénéficier du soutien du[Forums communautaires Aspose](https://forum.aspose.com/c/words/8).
+### Comment obtenir de l'assistance pour Aspose.Words pour .NET ?
+ Vous pouvez obtenir de l'aide auprès de[Forums communautaires Aspose](https://forum.aspose.com/c/words/8).
 
-### Puis-je créer d’autres types de documents avec Aspose.Words pour .NET ?
-Oui, Aspose.Words for .NET prend en charge divers formats de documents, notamment PDF, HTML et TXT.
+### Puis-je créer d’autres types de documents avec Aspose.Words pour .NET ?
+Oui, Aspose.Words pour .NET prend en charge divers formats de documents, notamment PDF, HTML et TXT.

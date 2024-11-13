@@ -33,7 +33,7 @@ DocumentBuilder builder = new DocumentBuilder(doc);
 
 ## अपने दस्तावेज़ को स्टाइल करना
 
-इस अनुभाग में, हम चर्चा करेंगे कि अपने मार्कडाउन दस्तावेज़ में शैलियाँ कैसे लागू करें। हम शीर्षक, जोर, सूचियाँ और बहुत कुछ कवर करेंगे।
+इस अनुभाग में, हम चर्चा करेंगे कि अपने मार्कडाउन दस्तावेज़ में शैलियाँ कैसे लागू करें। हम शीर्षक, जोर, सूचियाँ, और बहुत कुछ कवर करेंगे।
 
 ### शीर्षकों
 
@@ -115,10 +115,10 @@ doc.save(outPath + "WorkingWithMarkdown.CreateMarkdownDocument.md");
 string outPath = "Your Output Directory";
 Document doc = new Document();
 DocumentBuilder builder = new DocumentBuilder(doc);
-//पैराग्राफ के लिए "शीर्षक 1" शैली निर्दिष्ट करें।
+// पैराग्राफ के लिए "शीर्षक 1" शैली निर्दिष्ट करें।
 builder.getParagraphFormat().setStyleName("Heading 1");
 builder.writeln("Heading 1");
-// पैराग्राफों के बीच शैलियों को संयोजित न करने के लिए पिछले पैराग्राफ से शैलियों को रीसेट करें।
+//पैराग्राफों के बीच शैलियों को संयोजित न करने के लिए पिछले पैराग्राफ से शैलियों को रीसेट करें।
 builder.getParagraphFormat().setStyleName("Normal");
 // क्षैतिज नियम डालें.
 builder.insertHorizontalRule();
@@ -186,5 +186,5 @@ doc.save(outPath + "WorkingWithMarkdown.CreateMarkdownDocument.md");
 ### मैं Java के लिए Aspose.Words का समर्थन कहां से प्राप्त कर सकता हूं? 
     समर्थन और सहायता के लिए, आप यहां जा सकते हैं[Aspose.Words जावा मंच के लिए](https://forum.aspose.com/).
 
-अब जब आपने मूल बातें सीख ली हैं, तो अपने दस्तावेज़ प्रसंस्करण परियोजनाओं में Java के लिए Aspose.Words का उपयोग करने की अंतहीन संभावनाओं की खोज शुरू करें।
+अब जब आप मूल बातें सीख चुके हैं, तो अपने दस्तावेज़ प्रसंस्करण परियोजनाओं में Java के लिए Aspose.Words का उपयोग करने की अंतहीन संभावनाओं की खोज शुरू करें।
    

@@ -77,9 +77,9 @@ header.appendChild(field);
 
 ## Bewährte Methoden
 
-Um ein nahtloses Erlebnis beim Gestalten von Kopf- und Fußzeilen von Dokumenten zu gewährleisten, beachten Sie die folgenden bewährten Methoden:
+Um ein nahtloses Erlebnis beim Gestalten von Dokumentkopf- und -fußzeilen zu gewährleisten, beachten Sie die folgenden bewährten Methoden:
 
-- Halten Sie Kopf- und Fußzeilen präzise und passend zum Inhalt Ihres Dokuments.
+- Halten Sie Kopf- und Fußzeilen kurz und passend zum Inhalt Ihres Dokuments.
 - Verwenden Sie in Kopf- und Fußzeilen eine einheitliche Formatierung, beispielsweise hinsichtlich Schriftgröße und -stil.
 - Testen Sie Ihr Dokument auf verschiedenen Geräten und in verschiedenen Formaten, um eine ordnungsgemäße Darstellung sicherzustellen.
 
@@ -93,7 +93,7 @@ Sie können Kopf- oder Fußzeilen aus bestimmten Abschnitten entfernen, indem Si
 header.removeAllChildren();
 ```
 
-### Kann ich für gerade und ungerade Seiten unterschiedliche Kopf- und Fußzeilen haben?
+### Kann ich für ungerade und gerade Seiten unterschiedliche Kopf- und Fußzeilen haben?
 
 Ja, Sie können unterschiedliche Kopf- und Fußzeilen für gerade und ungerade Seiten haben. Aspose.Words für Java ermöglicht Ihnen, separate Kopf- und Fußzeilen für unterschiedliche Seitentypen anzugeben, z. B. für gerade, ungerade und erste Seiten.
 
@@ -115,7 +115,7 @@ Ja, Sie können benutzerdefinierte Felder zu Kopf- oder Fußzeilen hinzufügen. 
 
 ### Ist Aspose.Words für Java mit verschiedenen Dokumentformaten kompatibel?
 
-Aspose.Words für Java unterstützt eine Vielzahl von Dokumentformaten, darunter DOC, DOCX, PDF und mehr. Sie können damit Kopf- und Fußzeilen in Dokumenten verschiedener Formate gestalten.
+Aspose.Words für Java unterstützt eine Vielzahl von Dokumentformaten, darunter DOC, DOCX, PDF und mehr. Sie können damit Kopf- und Fußzeilen in Dokumenten verschiedener Formate formatieren.
 
 ## Abschluss
 

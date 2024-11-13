@@ -47,7 +47,7 @@ builder.InsertField(@"MERGEFIELD MyMergeField1 \* MERGEFORMAT");
 builder.InsertField(@"MERGEFIELD MyMergeField2 \* MERGEFORMAT");
 ```
 
- Hier erstellen wir ein neues Dokument und verwenden die`DocumentBuilder` Klasse zum Einfügen von zwei Seriendruckfeldern:`MyMergeField1`Und`MyMergeField2`.
+ Hier erstellen wir ein neues Dokument und verwenden die`DocumentBuilder` Klasse zum Einfügen von zwei Seriendruckfeldern:`MyMergeField1` Und`MyMergeField2`.
 
 ## Schritt 2: Durch die Felder iterieren und sie umbenennen
 

@@ -105,4 +105,4 @@ doc.Save(dataDir + "WorkingWithCharts.InsertBubbleChart.docx");
 
 ### Πού μπορώ να βρω περισσότερα σεμινάρια και υποστήριξη για το Aspose.Words για .NET;
 
- Για περισσότερα μαθήματα και υποστήριξη, επισκεφθείτε το[Φόρουμ υποστήριξης Aspose.Words](https://forum.aspose.com/c/words/8).
+ Για περισσότερα σεμινάρια και υποστήριξη, επισκεφθείτε το[Φόρουμ υποστήριξης Aspose.Words](https://forum.aspose.com/c/words/8).

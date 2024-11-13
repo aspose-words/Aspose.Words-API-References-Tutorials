@@ -68,10 +68,8 @@ builder.InsertHyperlink("Contact Support", "mailto:support@aspose.com", false);
 Hypertextové odkazy lze upravit tak, aby odpovídaly stylu vašeho dokumentu. Můžete změnit barvu písma, velikost a další atributy pomocí`Font` vlastnost DocumentBuilderu.
 
 ```csharp
-// Přizpůsobte vzhled hypertextového odkazu.
-builder.Font.Color = System.Drawing.Color.Blue;
-builder.Font.Underline = Underline.Single;
-builder.InsertHyperlink("Styled Link", "https://www.aspose.com", nepravda);
+builder.Font.Style = doc.Styles[StyleIdentifier.Hyperlink];
+builder.InsertHyperlink("Aspose Website", "http://www.aspose.com", nepravda);
 ```
 
 Tento úryvek vloží modrý, podtržený hypertextový odkaz, díky kterému bude v dokumentu vyčnívat.
@@ -89,7 +87,7 @@ Ano, můžete vložit hypertextové odkazy na jiné dokumenty zadáním cesty k 
  Hypertextový odkaz můžete odstranit pomocí`Remove` metoda na uzlu hypertextového odkazu.
 
 ### Mohu k hypertextovým odkazům přidat popisky?
-Ano, můžete přidat popisky nastavením`ScreenTip` vlastnost hypertextového odkazu.
+ Ano, můžete přidat popisky nastavením`ScreenTip`vlastnost hypertextového odkazu.
 
 ### Je možné v dokumentu různě stylovat hypertextové odkazy?
  Ano, můžete styly hypertextových odkazů odlišně nastavením`Font` vlastnosti před vložením každého hypertextového odkazu.

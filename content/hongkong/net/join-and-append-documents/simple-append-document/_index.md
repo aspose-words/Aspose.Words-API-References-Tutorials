@@ -96,7 +96,7 @@ dstDoc.Save(dataDir + "JoinAndAppendDocuments.SimpleAppendDocument.docx");
 
 ## 結論
 
-現在你就得到它了！您已使用 Aspose.Words for .NET 成功將一個 Word 文件附加到另一個文件。這種簡單的方法可以節省您大量的時間和精力，特別是在處理大型文件或複雜的格式時。因此，請繼續在您的專案中嘗試。快樂編碼！
+現在你就擁有了！您已使用 Aspose.Words for .NET 成功將一個 Word 文件附加到另一個文件。這種簡單的方法可以節省您大量的時間和精力，特別是在處理大型文件或複雜的格式時。因此，請繼續在您的專案中嘗試。快樂編碼！
 
 ## 常見問題解答
 
